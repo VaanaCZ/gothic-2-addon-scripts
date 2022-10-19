@@ -631,15 +631,15 @@ func int DIA_Bosper_BogenRunning_Condition ()
 };
 func void DIA_Bosper_BogenRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_LukRunning_15_00"); //
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_01"); //
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_02"); //
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_03"); //
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_04"); //
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_05"); //
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_06"); //
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_07"); //
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_08"); //
+	AI_Output (other, self, "DIA_Bosper_LukRunning_15_00"); //Slyšel jsem, že tê prý nêkdo okradl.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_01"); //Kdo ti to âekl? Nejspíš Bartok, že? To ti nemohl povêdêt nic lepšího? No tak jo.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_02"); //Âeknu ti, aã se ten hajzl modlí, abych ho nedostal do ruky!
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_03"); //Jen na chvilièku jsem odešel z krámu a když jsem se vrátil, spatâil jsem jenom, jak utíká - s mým lukem na rameni.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_04"); //Okamžitê jsem zavolal stráže, ale ten lump bêžel smêrem k pâístavu. A tam se jim ztratil.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_05"); //Trochu jsem jim pâipálil koudel u zadku, takže prohledali celou pâístavní ètvrã, ale nenašli vùbec nic.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_06"); //Jsou to prostê mamlasové!
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_07"); //Vsadím se, že mùj luk bude poâád ještê nêkde ve mêstê. Informoval jsem strážné u obou mêstských bran, a tak by nikoho s mým lukem ven nepustili.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_08"); //Kdybych jen toho šmejda dostal do rukou...
 
 	Log_CreateTopic (TOPIC_BosperBogen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BosperBogen,LOG_RUNNING);
@@ -667,15 +667,15 @@ func int DIA_Bosper_BogenSuccess_Condition ()
 };
 func void DIA_Bosper_BogenSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_00"); //
+	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_00"); //Mám pocit, že tenhle luk je tvùj.
 	
 	B_GiveInvItems (other, self, ItRw_Bow_L_03_MIS,1);
 	
-	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_01"); //
-	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_02"); //
-	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_03"); //
-	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_04"); //
-	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_05"); //
+	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_01"); //Mùj luk! Kdes ho našel?
+	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_02"); //V èerné díâe plné krys.
+	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_03"); //Doufám, žes s tím nemêl nêjaké trable.
+	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_04"); //Ne - s takovými vêcmi už jsem se vypoâádal dâív.
+	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_05"); //Hm, aã je to, jak chce, dêkuji ti. Jsem tvým dlužníkem!
 	 
 	MIS_Bosper_Bogen = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Bosper_Bogen);

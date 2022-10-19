@@ -79,8 +79,8 @@ func void DIA_Grimbald_HALLO_Was ()
 };
 func void DIA_Grimbald_HALLO_Was_neinnein ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neInnosiin_15_00"); //
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neInnosiin_07_01"); //
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neInnosiin_15_00"); //Se mnou nepoèítej.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neInnosiin_07_01"); //Tak to vypadni, babo.
 	Grimbald_PissOff = TRUE;
 	Info_ClearChoices	(DIA_Grimbald_HALLO);
 };
