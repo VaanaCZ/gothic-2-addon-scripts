@@ -1,0 +1,358 @@
+//---------------------------------------------------------------------
+var int Scatty_Start;
+//	Info EXIT 
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_EXIT   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 999;
+	condition   = DIA_Addon_Scatty_EXIT_Condition;
+	information = DIA_Addon_Scatty_EXIT_Info;
+	permanent   = TRUE;
+	description = DIALOG_ENDE;
+};
+FUNC INT DIA_Addon_Scatty_EXIT_Condition()	
+	{
+		return TRUE;
+	};
+FUNC VOID DIA_Addon_Scatty_EXIT_Info()
+{
+	AI_StopProcessInfos (self);
+	
+	if (Scatty_Start == FALSE)
+	{
+		Npc_ExchangeRoutine (self, "START");
+		Scatty_Start = TRUE;
+	};
+};
+// ************************************************************
+// 			  				PICK POCKET
+// ************************************************************
+INSTANCE DIA_Addon_Scatty_PICKPOCKET (C_INFO)
+{
+	npc			= BDT_1086_Addon_Scatty;
+	nr			= 900;
+	condition	= DIA_Addon_Scatty_PICKPOCKET_Condition;
+	information	= DIA_Addon_Scatty_PICKPOCKET_Info;
+	permanent	= TRUE;
+	description = Pickpocket_60;
+};                       
+FUNC INT DIA_Addon_Scatty_PICKPOCKET_Condition()
+{
+	C_Beklauen (60, 90);
+};
+ 
+FUNC VOID DIA_Addon_Scatty_PICKPOCKET_Info()
+{	
+	Info_ClearChoices	(DIA_Addon_Scatty_PICKPOCKET);
+	Info_AddChoice		(DIA_Addon_Scatty_PICKPOCKET, DIALOG_BACK 		,DIA_Addon_Scatty_PICKPOCKET_BACK);
+	Info_AddChoice		(DIA_Addon_Scatty_PICKPOCKET, DIALOG_PICKPOCKET	,DIA_Addon_Scatty_PICKPOCKET_DoIt);
+};
+
+func void DIA_Addon_Scatty_PICKPOCKET_DoIt()
+{
+	B_Beklauen ();
+	Info_ClearChoices (DIA_Addon_Scatty_PICKPOCKET);
+};
+	
+func void DIA_Addon_Scatty_PICKPOCKET_BACK()
+{
+	Info_ClearChoices (DIA_Addon_Scatty_PICKPOCKET);
+};
+//---------------------------------------------------------------------
+//	Info Hi
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_Hi   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 2;
+	condition   = DIA_Addon_Scatty_Hi_Condition;
+	information = DIA_Addon_Scatty_Hi_Info;
+	permanent   = FALSE;
+	description = "Jak jdou obchody?";
+};
+FUNC INT DIA_Addon_Scatty_Hi_Condition()
+{	
+	return TRUE;
+};
+FUNC VOID DIA_Addon_Scatty_Hi_Info()
+{
+	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Jak jdou kšefty?
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_01");//Od tý doby, co se otevøela ta hrobka, se nikdo po zboží moc neshání.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Havran už nemá pro otroky využití, proto teï dolují zlato. Na Bloodwynùv rozkaz.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//A kopáèi si z toho nic nedìlaj. (mumlá) Bezstarostný kopáèi nejsou dobrý pro obchod.
+	
+	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
+	B_LogEntry (Topic_Addon_BDT_Trader,"Scatty prodává rùzné zboží.");
+};
+/*
+	Ich bin hier auch sowas wie der Proviantmeister. Wenn du was brauchst, kannst du mit mir handeln. 
+	(lacht) Vom Arenameister zum Proviantmeister. Ist das ein Auf-  oder ein Abstieg? 
+*/
+//---------------------------------------------------------------------
+//	Info last
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_last   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 2;
+	condition   = DIA_Addon_Scatty_last_Condition;
+	information = DIA_Addon_Scatty_last_Info;
+	permanent   = FALSE;
+	description = "Bloodwyn? On to tady vede?";
+};
+FUNC INT DIA_Addon_Scatty_last_Condition()
+{	
+	if Npc_KnowsInfo (other, DIA_Addon_Scatty_Hi)
+	&& !Npc_IsDead (Bloodwyn)
+	{	
+		return TRUE;
+	};
+};
+FUNC VOID DIA_Addon_Scatty_last_Info()
+{
+	AI_Output (other, self, "DIA_Addon_Scatty_last_15_00");//Bloodwyn? On to tu vede?
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Dohlíží na dùl, ale sem dolù skoro nikdy nechodí. Vìtšinou bývá v chrámu s Havranem.
+	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//Co pøesnì myslíš tím "skoro nikdy"?
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//Naposledy jsem ho vidìl, když vyšel z hrobky.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//(rychle) ...ne, vlastnì poèkej! Naposledy tu byl, když poslal otroky dolovat zlato.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//Na rozdíl od Havrana ho totiž zlato nesmírnì zajímá.
+};
+//---------------------------------------------------------------------
+//	Info Gruft
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_Gruft   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 2;
+	condition   = DIA_Addon_Scatty_Gruft_Condition;
+	information = DIA_Addon_Scatty_Gruft_Info;
+	permanent   = FALSE;
+	description = "Co je to za hrobku?";
+};
+FUNC INT DIA_Addon_Scatty_Gruft_Condition()
+{	
+	if Npc_KnowsInfo (other, DIA_Addon_Scatty_HI)
+	{	
+		return TRUE;
+	};
+};
+FUNC VOID DIA_Addon_Scatty_Gruft_Info()
+{
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//Z jaké hrobky?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//Z prokletý hrobky! Její strážci zabili spoustu lidí!
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//Strážci? To mluvíš o tìch kamenných obludách? Celkem placatí, s kulatou hlavou?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//Jo, to je pøesnì ono! Vynoøovali se z kamene po tuctech.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//Už od zaèátku jsem vìdìl, že jsme tu hrobku mìli nechat na pokoji.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//Jenže Havran byl tím kopáním pøímo posedlej. A když jsme hrobku koneènì odkryli, napochodoval tam i se svejma strážema.
+};
+//---------------------------------------------------------------------
+//	Info GruftAgain
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_GruftAgain   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 2;
+	condition   = DIA_Addon_Scatty_GruftAgain_Condition;
+	information = DIA_Addon_Scatty_GruftAgain_Info;
+	permanent   = FALSE;
+	description = "A co chtìl Havran v hrobce?";
+};
+FUNC INT DIA_Addon_Scatty_GruftAgain_Condition()
+{	
+	if Npc_KnowsInfo (other, DIA_Addon_Scatty_Gruft)
+	{	
+		return TRUE;
+	};
+};
+FUNC VOID DIA_Addon_Scatty_GruftAgain_Info()
+{
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Co Havran v té hrobce chtìl?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//(zarazí se) Hmm, seš pìknì zvìdavej. Pøipomínáš mi jednoho chlápka, kterýho jsem kdysi znával.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//Ten byl taky tak zvìdavej. Až ho to nakonec znièilo.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Mluv k vìci, co se stalo v té hrobce?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//No, ehm... mám dìsnì vyschlo v hubì...
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//Hele, Scatty, TEÏ NE. Tohle je dùležitý! Co tam Havran chtìl?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//No dobøe. (zhluboka se nadechne) On... nìco... nìco vyvolal. Poøád pøitom hulákal òákou cizí øeèí.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Najednou hrobku osvítilo jasný svìtlo a pak jsem slyšel výkøik, kterej byl jak rána do hlavy - démonickej výkøik.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_08");//A pak?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//Víc už nevím. Pak z tý hrobky vylez Bloodwyn a øek mi, abych vypadnul. A to jsem taky udìlal.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Netrvalo douho a Havran i jeho chlapi zmizeli zpátky v chrámu. Od tý doby už Havrana nikdo nevidìl.
+};
+//---------------------------------------------------------------------
+//	Info Trinken
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_Trinken   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 99;
+	condition   = DIA_Addon_Scatty_Trinken_Condition;
+	information = DIA_Addon_Scatty_Trinken_Info;
+	permanent   = FALSE;
+	description = "Nedal by sis nìco k pití?";
+};
+FUNC INT DIA_Addon_Scatty_Trinken_Condition()
+{	
+	if Npc_KnowsInfo (other,DIA_Addon_Scatty_GruftAgain)
+	{	
+			return TRUE;
+	};
+};
+FUNC VOID DIA_Addon_Scatty_Trinken_Info()
+{
+	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Dal by sis nìco k pití?
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Pivo by bodlo, ale tady v táboøe asi tìžko òáký bude.
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//Možná že Lucia ještì nìjaký korblík má.
+};
+//---------------------------------------------------------------------
+//	Info Bier geben
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_Bier   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 99;
+	condition   = DIA_Addon_Scatty_Bier_Condition;
+	information = DIA_Addon_Scatty_Bier_Info;
+	permanent   = FALSE;
+	description = "Na zdraví. (pøedat pivo)";
+};
+FUNC INT DIA_Addon_Scatty_Bier_Condition()
+{	
+	if Npc_KnowsInfo (other, DIA_Addon_Scatty_Trinken)
+	&& Npc_HasItems (other, ItFo_beer) 
+	{	
+			return TRUE;
+	};
+};
+FUNC VOID DIA_Addon_Scatty_Bier_Info()
+{
+	AI_Output (other, self, "DIA_Addon_Scatty_Bier_15_00");//Tady máš.
+	
+	if B_GiveInvItems (other, self, ItFo_Beer, 1)
+	{
+		AI_UseItem (self, ItFo_Beer);
+	};
+	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//Mmm, to je dobrý. Díky, seš mùj hrdina.
+	
+	B_GivePlayerXP (XP_Ambient* 5);
+};
+
+//---------------------------------------------------------------------
+//	Info Gold
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_Gold   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 2;
+	condition   = DIA_Addon_Scatty_Gold_Condition;
+	information = DIA_Addon_Scatty_Gold_Info;
+	permanent   = FALSE;
+	description = DIALOG_ADDON_GOLD_DESCRIPTION;
+};
+FUNC INT DIA_Addon_Scatty_Gold_Condition()
+{	
+	return TRUE;
+};
+FUNC VOID DIA_Addon_Scatty_Gold_Info()
+{
+	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Vzít krumpáè a rubat zlato, to umí každej.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//Ale spousta nuggetù se tímhle zpùsobem rozbije. A proto by to mìli dìlat jenom ti, kteøí dolování trochu rozumìj.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//Až budeš trochu zkušenìjší, mùžu tì nauèit víc.
+
+	B_Upgrade_Hero_HackChance(5);
+};
+//---------------------------------------------------------------------
+//	Info teach
+//---------------------------------------------------------------------
+var int Scatty_teach_perm;
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_teach   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 2;
+	condition   = DIA_Addon_Scatty_teach_Condition;
+	information = DIA_Addon_Scatty_teach_Info;
+	permanent   = TRUE;
+	description = "Nauèit se dolovat zlato (Cena: 2 VB/10 procent)";
+};
+FUNC INT DIA_Addon_Scatty_teach_Condition()
+{	
+	if Npc_KnowsInfo (other, DIA_Addon_Scatty_Gold)
+	&& (Scatty_teach_perm == FALSE)
+	{	
+		return TRUE;
+	};
+};
+FUNC VOID DIA_Addon_Scatty_teach_Info()
+{
+	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//Povìz mi nìco víc o dolování zlata.
+	
+	if (other.lp >= 1)  
+	{
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Pøedevším bys mìl vìdìt, že zlato není ruda. Je mìkký jako máslo. Když udeøíš moc tvrdì, všecko se rozsype.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//Každej kopáè má vlastní triky, jak z kamene dostat co nejvìtší zlatý valouny.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//Tyhle triky koneckoncù dìlaj rozdíl mezi obyèejným kopáèem a dobrým kopáèem.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//A hlavnì platí, že uèení dìlá mistra. Jedinì když budeš nìjakou chvíli kopat, pùjde ti to líp.
+		
+		other.lp = (other.lp -1);
+		B_Upgrade_Hero_HackChance(10);
+		Scatty_teach_perm = TRUE;
+	}
+	else
+	{
+		B_Say (self, other, "$NOLEARNNOPOINTS");
+	};	
+};
+
+//---------------------------------------------------------------------
+//	Info tot
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_tot   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 2;
+	condition   = DIA_Addon_Scatty_tot_Condition;
+	information = DIA_Addon_Scatty_tot_Info;
+	permanent   = FALSE;
+	description = "Bloodwyn je mrtvý.";
+};
+FUNC INT DIA_Addon_Scatty_tot_Condition()
+{	
+	if Npc_IsDead (Bloodwyn)
+	{	
+		return TRUE;
+	};
+};
+FUNC VOID DIA_Addon_Scatty_tot_Info()
+{
+	AI_Output (other, self, "DIA_Addon_Scatty_tot_15_00");//Bloodwyn je mrtvej.
+	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hm, moc lidem bych to nepøál, ale Bloodwyn je lepší mrtvej..
+};
+//---------------------------------------------------------------------
+//	Info trade
+//---------------------------------------------------------------------
+INSTANCE DIA_Addon_Scatty_trade   (C_INFO)
+{
+	npc         = BDT_1086_Addon_Scatty;
+	nr          = 99;
+	condition   = DIA_Addon_Scatty_trade_Condition;
+	information = DIA_Addon_Scatty_trade_Info;
+	permanent   = TRUE;
+	trade		= TRUE;
+	description = DIALOG_TRADE;
+};
+FUNC INT DIA_Addon_Scatty_trade_Condition()
+{	
+	if Npc_KnowsInfo (other, DIA_Addon_Scatty_Hi)
+	{	
+		return TRUE;
+	};
+};
+FUNC VOID DIA_Addon_Scatty_trade_Info()
+{
+	B_GiveTradeInv (self);
+	B_Say (other,self,"$TRADE_1");
+};
+
+
