@@ -223,7 +223,7 @@ func void DIA_Lee_DI_UndeadDragonDead_Info ()
 			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Vezmeš mê na pevninu, že?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Ano. Khorinis to bez tebe zvládne.
 			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem König endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
-			AI_Output (self ,other, "DIA_Lee_Add_04_2&"); //
+			AI_Output (self ,other, "DIA_Lee_Add_04_2&"); //Pak budu moct koneènê navštívit krále, což už dlouho odkládám.
 			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //Na tuhle chvíli jsem èekal strašnê dlouho.
 			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Co myslíš? Nemêla by být trpêlivost nakonec odmênêna?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //Trpêlivost a pár pádných argumentù.
