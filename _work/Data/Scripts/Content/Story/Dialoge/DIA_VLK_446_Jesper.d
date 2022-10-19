@@ -306,10 +306,10 @@ FUNC INT DIA_Jesper_Bogen_Condition()
 };
 FUNC VOID DIA_Jesper_Bogen_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Luk_15_00");//
-	AI_Output (self, other, "DIA_Jesper_Luk_09_01");//
-	AI_Output (self, other, "DIA_Jesper_Luk_09_02");//
-	AI_Output (self, other, "DIA_Jesper_Luk_09_03");//
+	AI_Output (other, self, "DIA_Jesper_Luk_15_00");//Hele, co víš o Bosperovì luku?
+	AI_Output (self, other, "DIA_Jesper_Luk_09_01");//Myslíš ten luk od šípaøe? Jo, mám ho nìkde zahrabanej nahoøe v truhle.
+	AI_Output (self, other, "DIA_Jesper_Luk_09_02");//Ale pobíhá tam kolem spousta krys. Mùžeš si pro nìj dojít, jestli ti ty potvory nevadìj.
+	AI_Output (self, other, "DIA_Jesper_Luk_09_03");//Ta truhla je pochopitelnì zamèená. Musíš se do ní vloupat. (chechtá se) S trochou štìstí ti budou tvoje paklíèe staèit.
 	
 	Wld_InsertNpc (Giant_Rat, "NW_CITY_KANAL_ROOM_01_01");	
 	Wld_InsertNpc (Giant_Rat, "NW_CITY_KANAL_ROOM_01_02");	
