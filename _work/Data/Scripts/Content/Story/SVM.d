@@ -7,7 +7,7 @@ CLASS C_SVM
 	// ------ B_Say_GuildGreetings ------
 	var string MILGreetings;				//Miliz grüßt Miliz oer Paladin
 	var string PALGreetings;				//Paladin grüßt Paladin oder Magier
-	var string Weather;						//Tempo schifoso!
+	var string Weather;						//So ein Mistwetter!
 	
 	// ------ B_Say_AttackReason ------
 	var string IGetYouStill;				//Upset-NSC sieht Spieler währned seiner Angry-Time wieder. Greift mit altem AttackReason an.
@@ -137,34 +137,34 @@ CLASS C_SVM
 	var string TOUGHGUY_PLAYERATTACK;		//Spieler hat einen ToughGuy angegriffen und den Kampf abgebrochen	
 	
 	// ------ GOLD ------
-	var string GOLD_1000;					//1000 monete d'oro.
-	var string GOLD_950;					//950 monete d'oro.
-	var string GOLD_900;					//900 monete d'oro.
-	var string GOLD_850;					//850 monete d'oro.
-	var string GOLD_800;					//800 monete d'oro.
-	var string GOLD_750;					//750 monete d'oro.
-	var string GOLD_700;					//700 monete d'oro.
-	var string GOLD_650;					//650 monete d'oro.
+	var string GOLD_1000;					//1000 Goldstücke.
+	var string GOLD_950;					//950 Goldstücke.
+	var string GOLD_900;					//900 Goldstücke.
+	var string GOLD_850;					//850 Goldstücke.
+	var string GOLD_800;					//800 Goldstücke.
+	var string GOLD_750;					//750 Goldstücke.
+	var string GOLD_700;					//700 Goldstücke.
+	var string GOLD_650;					//650 Goldstücke.
 	var string GOLD_600;					//600 GOldstücke.
-	var string GOLD_550;					//550 monete d'oro.
-	var string GOLD_500;					//500 monete d'oro.
-	var string GOLD_450;					//450 monete d'oro.
-	var string GOLD_400;					//400 monete d'oro.
-	var string GOLD_350;					//350 monete d'oro.
-	var string GOLD_300;					//300 monete d'oro.
-	var string GOLD_250;					//250 monete d'oro.
-	var string GOLD_200;					//200 monete d'oro.
-	var string GOLD_150;					//150 monete d'oro.
-	var string GOLD_100;					//100 monete d'oro.
-	var string GOLD_90;						//90 monete d'oro.
-	var string GOLD_80;						//80 monete d'oro.
-	var string GOLD_70;						//70 monete d'oro.
-	var string GOLD_60;						//60 monete d'oro.
-	var string GOLD_50;						//50 monete d'oro.
-	var string GOLD_40;						//40 monete d'oro.
-	var string GOLD_30;						//30 monete d'oro.
-	var string GOLD_20;						//20 monete d'oro.
-	var string GOLD_10;						//10 monete d'oro.
+	var string GOLD_550;					//550 Goldstücke.
+	var string GOLD_500;					//500 Goldstücke.
+	var string GOLD_450;					//450 Goldstücke.
+	var string GOLD_400;					//400 Goldstücke.
+	var string GOLD_350;					//350 Goldstücke.
+	var string GOLD_300;					//300 Goldstücke.
+	var string GOLD_250;					//250 Goldstücke.
+	var string GOLD_200;					//200 Goldstücke.
+	var string GOLD_150;					//150 Goldstücke.
+	var string GOLD_100;					//100 Goldstücke.
+	var string GOLD_90;						//90 Goldstücke.
+	var string GOLD_80;						//80 Goldstücke.
+	var string GOLD_70;						//70 Goldstücke.
+	var string GOLD_60;						//60 Goldstücke.
+	var string GOLD_50;						//50 Goldstücke.
+	var string GOLD_40;						//40 Goldstücke.
+	var string GOLD_30;						//30 Goldstücke.
+	var string GOLD_20;						//20 Goldstücke.
+	var string GOLD_10;						//10 Goldstücke.
 	
 	// ------ B_Say_Smalltalk (TA_Smalltalk) ------
 	VAR	string Smalltalk01;				// ...wenn Du meinst...
