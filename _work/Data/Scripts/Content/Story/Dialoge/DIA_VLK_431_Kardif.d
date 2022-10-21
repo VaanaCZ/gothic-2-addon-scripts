@@ -1,0 +1,884 @@
+///////////////////////////////////////////////////////////////////////
+//	Info EXIT 
+///////////////////////////////////////////////////////////////////////
+INSTANCE DIA_Kardif_EXIT   (C_INFO)
+{
+	npc         = VLK_431_Kardif;
+	nr          = 999;
+	condition   = DIA_Kardif_EXIT_Condition;
+	information = DIA_Kardif_EXIT_Info;
+	permanent   = TRUE;
+	description = DIALOG_ENDE;
+};
+
+FUNC INT DIA_Kardif_EXIT_Condition()
+{
+	if (Kardif_OneQuestion == FALSE)
+	{
+		return TRUE;
+	};
+};
+
+FUNC VOID DIA_Kardif_EXIT_Info()
+{
+	AI_StopProcessInfos (self);
+};
+// ************************************************************
+// 			  				PICK POCKET
+// ************************************************************
+INSTANCE DIA_Kardif_PICKPOCKET (C_INFO)
+{
+	npc			= VLK_431_Kardif;
+	nr			= 900;
+	condition	= DIA_Kardif_PICKPOCKET_Condition;
+	information	= DIA_Kardif_PICKPOCKET_Info;
+	permanent	= TRUE;
+	description = Pickpocket_60;
+};                       
+
+FUNC INT DIA_Kardif_PICKPOCKET_Condition()
+{
+	C_Beklauen (55, 85);
+};
+ 
+FUNC VOID DIA_Kardif_PICKPOCKET_Info()
+{	
+	Info_ClearChoices	(DIA_Kardif_PICKPOCKET);
+	Info_AddChoice		(DIA_Kardif_PICKPOCKET, DIALOG_BACK 		,DIA_Kardif_PICKPOCKET_BACK);
+	Info_AddChoice		(DIA_Kardif_PICKPOCKET, DIALOG_PICKPOCKET	,DIA_Kardif_PICKPOCKET_DoIt);
+};
+
+func void DIA_Kardif_PICKPOCKET_DoIt()
+{
+	B_Beklauen ();
+	Info_ClearChoices (DIA_Kardif_PICKPOCKET);
+};
+	
+func void DIA_Kardif_PICKPOCKET_BACK()
+{
+	Info_ClearChoices (DIA_Kardif_PICKPOCKET);
+};
+///////////////////////////////////////////////////////////////////////
+//	Info Hallo
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Hi		(C_INFO)
+{
+	npc		 	 = 	VLK_431_Kardif;
+	nr			 =  2;
+	condition	 = 	DIA_Kardif_Hi_Condition;
+	information	 = 	DIA_Kardif_Hi_Info;
+	permanent    =  FALSE;
+	description	 = 	"Jak to jde?";
+};
+func int DIA_Kardif_Hi_Condition ()
+{
+	if (Kardif_OneQuestion == FALSE)	
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_Hi_Info ()
+{
+	AI_Output (other, self, "DIA_Kardif_Hi_15_00"); //Jak se vede?
+	AI_Output (self, other, "DIA_Kardif_Hi_14_01"); //Jestli chceš nìco k pití, musíš si to objednat.
+	
+	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
+	B_LogEntry (Topic_CityTrader,"Kardif prodává v pøístavní krèmì nápoje.");
+};	
+	
+///////////////////////////////////////////////////////////////////////
+//	Info Hallo
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Hallo		(C_INFO)
+{
+	npc		 	 = 	VLK_431_Kardif;
+	nr			 =  2;
+	condition	 = 	DIA_Kardif_Hallo_Condition;
+	information	 = 	DIA_Kardif_Hallo_Info;
+	permanent    =  FALSE;
+	description	 = 	"Poèítám, e tady zaslechneš spoustu vìcí...";
+};
+func int DIA_Kardif_Hallo_Condition ()
+{	
+	if Npc_KnowsInfo (other,DIA_Kardif_Hi)
+	&& (Kardif_Deal == 0)
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_Hallo_Info ()
+{
+	AI_Output (other, self, "DIA_Kardif_Hallo_15_00"); //Poèítám, e tady zaslechneš spoustu vìcí.
+	AI_Output (self, other, "DIA_Kardif_Hallo_14_01"); //Jo, a co je ti po tom?
+	AI_Output (other, self, "DIA_Kardif_Hallo_15_02"); //Nové zprávy vdycky vítám s otevøenou náruèí.
+	AI_Output (self, other, "DIA_Kardif_Hallo_14_03"); //A je stejnì otevøená i tvoje penìenka?
+	AI_Output (self, other, "DIA_Kardif_Hallo_14_04"); //Kadá informace, kterou ti dám, tì bude stát 10 zlaákù.
+	
+	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
+	B_LogEntry (Topic_CityTrader,"Kardif, hospodskı z pøístavní krèmy, prodává krom koøalky i informace.");
+	
+	Info_ClearChoices (DIA_Kardif_Hallo);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"Nedám ti za informaci víc ne 5 zlaákù.",DIA_Kardif_Hallo_Angebot);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"Zapomeò na to - najdu si je jinde.",DIA_Kardif_Hallo_Hart);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"No dobøe, souhlasím.",DIA_Kardif_Hallo_Zehn);	
+};
+FUNC VOID DIA_Kardif_Hallo_Zehn()
+{
+	AI_Output (other, self, "DIA_Kardif_Hallo_Zehn_15_00"); //No dobøe, souhlasím.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Zehn_14_01"); //Umíš dobøe smlouvat (usmìje se). Jsem ti vdycky k slubám.
+	
+	Kardif_Deal = 10;
+	Info_ClearChoices (DIA_Kardif_Hallo);
+};
+FUNC VOID DIA_Kardif_Hallo_Angebot()
+{
+	AI_Output (other, self, "DIA_Kardif_Hallo_Angebot_15_00"); //Nedám ti za informaci víc ne 5 zlaákù.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Angebot_14_01"); //Coe, 5 zlaákù? Chceš mì oebraèit? (krátce se zamyslí) Tak to zaokrouhleme na 7.
+	
+	Info_ClearChoices (DIA_Kardif_Hallo);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"Ne, takhle to nefunguje. Øeknìme 6.",DIA_Kardif_Hallo_KeinDeal);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"OK, 7 zlaákù zní rozumnì.",DIA_Kardif_Hallo_Sieben);
+};
+FUNC VOID DIA_Kardif_Hallo_Hart()
+{
+	AI_Output (other, self, "DIA_Kardif_Hallo_Hart_15_00"); //Zapomeò na to - najdu si informace jinde.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Hart_14_01"); //No dobrá, dobrá... slevím tedy na 7.
+	
+	Info_ClearChoices (DIA_Kardif_Hallo);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"OK, 7 zlaákù zní rozumnì.",DIA_Kardif_Hallo_Sieben);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"Ne, ty tvé informace vlastnì a tak nutnì nepotøebuji.",DIA_Kardif_Hallo_Ablehnen);
+};
+FUNC VOID DIA_Kardif_Hallo_Sieben()
+{
+	AI_Output (other, self, "DIA_Kardif_Hallo_Sieben_15_00"); //Fajn, 7 zlaákù zní rozumnì.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Sieben_14_01"); //(zazubí se) To je moudré rozhodnutí. Take a budeš nìco potøebovat, klidnì se mì zeptej.
+	
+	Kardif_Deal = 7;
+	Info_ClearChoices (DIA_Kardif_Hallo);
+};
+FUNC VOID DIA_Kardif_Hallo_Ablehnen()
+{
+	AI_Output (other, self, "DIA_Kardif_Hallo_Ablehnen_15_00"); //Ne, ty tvé informace vlastnì a tak nutnì nepotøebuji.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Ablehnen_14_01"); //Hej, poèkej... (povzdech) - dobrá, 5 zlaákù, ale to je moje poslední nabídka!
+	
+	Info_ClearChoices (DIA_Kardif_Hallo);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"A proè jsi to neøekl hned?",DIA_Kardif_Hallo_Fuenf);
+
+};
+FUNC VOID DIA_Kardif_Hallo_Fuenf()
+{
+	AI_Output (other, self, "DIA_Kardif_Hallo_Fuenf_15_00"); //A proè jsi to neøekl hned?
+	AI_Output (self, other, "DIA_Kardif_Hallo_Fuenf_14_01"); //Ále, prostì nejsem úplnì fit. Ale a je to, jak chce, u jsme se dohodli.
+	Kardif_Deal = 5;
+	Info_ClearChoices (DIA_Kardif_Hallo);
+};
+FUNC VOID DIA_Kardif_Hallo_KeinDeal()
+{
+	AI_Output (other, self, "DIA_Kardif_Hallo_KeinDeal_15_00"); //Ne, takhle to nefunguje. Øeknìme 6.
+	AI_Output (self, other, "DIA_Kardif_Hallo_KeinDeal_14_01"); //Ty jsi pìknı lump, víš to? No, kdy na tom trváš, tak øeknìme 6 zlaákù za kadou informaci.
+	Kardif_Deal = 6;
+	Info_ClearChoices (DIA_Kardif_Hallo);
+};
+///////////////////////////////////////////////////////////////////////
+//	Info Trade
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_TRADE		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  2;
+	condition	 = 	DIA_Kardif_TRADE_Condition;
+	information	 = 	DIA_Kardif_TRADE_Info;
+	permanent	 = 	TRUE;
+	trade		 = 	TRUE;
+	description	 = 	"Rád bych si dal nìco k pití.";
+};
+
+func int DIA_Kardif_TRADE_Condition ()
+{
+	if (Kardif_OneQuestion == FALSE)	
+	{
+		return TRUE;
+	};
+};
+
+func void DIA_Kardif_TRADE_Info ()
+{
+	B_GiveTradeInv (self);
+	AI_Output (other, self, "DIA_Kardif_TRADE_15_00"); //Rád bych si dal nìco k pití.
+};
+///////////////////////////////////////////////////////////////////////
+//	Info 
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_TradeInfo		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  2;
+	condition	 = 	DIA_Kardif_TradeInfo_Condition;
+	information	 = 	DIA_Kardif_TradeInfo_Info;
+	permanent	 = 	TRUE;
+	description	 = 	"Potøebuju nìjaké informace.";
+};
+
+func int DIA_Kardif_TradeInfo_Condition ()
+{
+	if (Kardif_OneQuestion == FALSE)
+	&& (Kardif_Deal > 0)	
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_TradeInfo_Info ()
+{
+	AI_Output (other, self, "DIA_Kardif_TradeInfo_15_00"); //Potøebuji informace.
+
+	Kardif_OneQuestion = TRUE;
+};
+///////////////////////////////////////////////////////////////////////
+//	Kardif's Infos werden verkauft! 
+///////////////////////////////////////////////////////////////////////
+FUNC VOID B_SayKardifZuwenigGold()
+{
+	AI_Output (self,other, "B_SayKardifZuwenigGold_14_00");//Vra se, a budeš mít dost zlata.
+};
+instance DIA_Kardif_Buerger		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Kardif_Buerger_Condition;
+	information	 = 	DIA_Kardif_Buerger_Info;
+	permanent    =  TRUE;
+	description	 = 	"Kdo patøí mezi nejvlivnìjší obèany tohoto mìsta?";
+};
+//-------------------------------------------
+var int DIA_Kardif_Buerger_permanent;
+//-------------------------------------------
+func int DIA_Kardif_Buerger_Condition ()
+{	
+	if (DIA_Kardif_Buerger_permanent == FALSE)
+	&& (Kardif_OneQuestion == TRUE)
+	{
+		return TRUE;
+	};
+
+};
+func void DIA_Kardif_Buerger_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Kardif_Buerger_15_00"); //Kdo patøí mezi nejvlivnìjší obèany tohoto mìsta?
+		AI_Output (self, other, "DIA_Kardif_Buerger_14_01"); //Tady dole v pøístavu nenajdeš nikoho. Jedinı zdejší mocnı mu je Lehmar.
+		AI_Output (self, other, "DIA_Kardif_Buerger_14_02"); //Lichváø není zrovna populární, ale má zlato a pár jinıch vlivnıch mìšanù mu dluí peníze.
+		AI_Output (self, other, "DIA_Kardif_Buerger_14_03"); //Kupci a øemeslníci mají také dost velkı vliv - a moc velkı, øekl bych.
+		
+		
+		DIA_Kardif_Buerger_permanent = TRUE;
+	}
+	else 
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+
+// *****************************************************
+//						Lehmar
+// *****************************************************
+
+instance DIA_Kardif_Lehmar	(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Kardif_Lehmar_Condition;
+	information	 = 	DIA_Kardif_Lehmar_Info;
+	permanent    =  TRUE;
+	description	 = 	"Kdo všechno Lehmarovi nìco dluí?";
+};
+//-------------------------------------------
+var int DIA_Kardif_Lehmar_permanent;
+//-------------------------------------------
+func int DIA_Kardif_Lehmar_Condition ()
+{	
+	if (DIA_Kardif_Lehmar_permanent == FALSE)
+	&& (Kardif_OneQuestion == TRUE)
+	&& (DIA_Kardif_Buerger_permanent == TRUE) //(Knows perm Info)
+	{
+		return TRUE;
+	};
+
+};
+func void DIA_Kardif_Lehmar_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Kardif_Add_15_00"); //Kdo všechno Lehmarovi nìco dluí?
+		AI_Output (self, other, "DIA_Kardif_Add_14_01"); //(smìje se) Jestli to chceš zjistit, mìl bys nahlédnout do jeho úèetní knihy.
+		AI_Output (self, other, "DIA_Kardif_Add_14_02"); //Akorát urèitì nebude snadné tam jen tak nepozorovanì nakouknout.
+		AI_Output (self, other, "DIA_Kardif_Add_14_03"); //Pokud vím, vdycky ji nosí u sebe.
+		
+		DIA_Kardif_Lehmar_permanent = TRUE;
+	}
+	else 
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+
+
+
+///////////////////////////////////////////////////////////////////////
+//	Kardif's Infos werden verkauft! 
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Arbeit		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Kardif_Arbeit_Condition;
+	information	 = 	DIA_Kardif_Arbeit_Info;
+	permanent    =  TRUE;
+	description	 = 	"Kde bych mohl najít práci?";
+};
+//-------------------------------------------
+var int DIA_Kardif_Arbeit_permanent;
+//-------------------------------------------
+func int DIA_Kardif_Arbeit_Condition ()
+{	
+	if (DIA_Kardif_Arbeit_permanent == FALSE)
+	&& (Kardif_OneQuestion == TRUE)
+	{
+		return TRUE;
+	};
+
+};
+func void DIA_Kardif_Arbeit_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Kardif_Arbeit_15_00"); //Kde bych mohl najít práci?
+		AI_Output (self, other, "DIA_Kardif_Arbeit_14_01"); //Tady v pøístavu práci asi jen tak nenajdeš. Budeš muset zajít za øemeslníky v dolní èásti mìsta.
+		AI_Output (self, other, "DIA_Kardif_Arbeit_14_02"); //Ale jestli máš trochu slušnı meè, mùeš zkusit vyzvat na souboj Alrika. Bije se za peníze - najdeš ho za skladištìm.
+			
+	DIA_Kardif_Arbeit_permanent = TRUE;
+	}
+	else 
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+
+///////////////////////////////////////////////////////////////////////
+//	Kardif's Infos werden verkauft! 
+///////////////////////////////////////////////////////////////////////
+instance DIA_Addon_Kardif_MissingPeople		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Addon_Kardif_MissingPeople_Condition;
+	information	 = 	DIA_Addon_Kardif_MissingPeople_Info;
+	permanent    =  TRUE;
+	description	 = 	"Co víš o tìch pohøešovanıch lidech?";
+};
+//-------------------------------------------
+var int DIA_Addon_Kardif_MissingPeople_permanent;
+//-------------------------------------------
+func int DIA_Addon_Kardif_MissingPeople_Condition ()
+{	
+	if (DIA_Addon_Kardif_MissingPeople_permanent == FALSE)
+	&& (Kardif_OneQuestion == TRUE)
+	&& (SC_HearedAboutMissingPeople == TRUE)
+	{
+		return TRUE;
+	};
+};
+func void DIA_Addon_Kardif_MissingPeople_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Addon_Kardif_MissingPeople_15_00"); //Víš nìco o tìch pohøešovanıch lidech z mìsta?
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_01"); //Vím jenom to, e za posledních pár dní tu nìjací lidé zmizeli.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_02"); //Tady v pøístavu je to prej nejhorší. Moná bys to tu mohl trochu obhlídnout.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_03"); //A pár pøípadù bylo i v dolní èásti mìsta.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_04"); //Jestli chceš vìdìt víc, promluv si s Coragonem.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_05"); //Má hospodu v dolní èásti mìsta a leccos se doslechne.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_06"); //A Halvor, obchodník s rybami dole u mola, by taky mohl vìdìt nìco zajímavého. Poøád tam za ním nìkdo chodí.
+		
+	 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
+		Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
+		B_LogEntry (TOPIC_Addon_WhoStolePeople,"Kardif mi poradil, e na pohøešované lidi bych se mìl zeptat hospodského Coragona, kterı má krèmu dole ve mìstì, a obchodníka s rybami Halvora."); 
+
+		DIA_Addon_Kardif_MissingPeople_permanent = TRUE;
+	}
+	else 
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+
+///////////////////////////////////////////////////////////////////////
+//	Kardif's Infos werden verkauft! 
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Lernen		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Kardif_Lernen_Condition;
+	information	 = 	DIA_Kardif_Lernen_Info;
+	permanent    =  TRUE;
+	description	 = 	"Kdo mì tady mùe nìco nauèit?";
+};
+//-------------------------------------------
+var int DIA_Kardif_Lernen_permanent;
+//-------------------------------------------
+func int DIA_Kardif_Lernen_Condition ()
+{	
+	if (DIA_Kardif_Lernen_permanent == FALSE)
+	&& (Kardif_OneQuestion == TRUE)
+	{
+		return TRUE;
+	};
+
+};
+func void DIA_Kardif_Lernen_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Kardif_Lernen_15_00"); //Kdo mì tady mùe nìco nauèit?
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_01"); //Tady v pøístavišti najdeš pár schopnıch lidí.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_02"); //Kováø Carl je poøádnı silák. Vsadím se, e s jeho pomocí si mùeš zvıšit sílu.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_03"); //Alrik toho ví spoustu o boji a Lares je prohnanı lump. Nìkdy ho mùeš najít i tady v pøístavu.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_04"); //A jestli jsi dostateènì praštìnı, zastav se u starého Ignaze - ví všechno o tuhlecté aleche... almich... o lektvarech.
+		AI_Output (other, self, "DIA_Kardif_Lernen_15_05"); //Kde bych je všechny našel?
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_06"); //(mruèí) Hochu, ne bych ti to vysvìtlil, tak by král vyhrál celou tuhle válku proti skøetùm.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_07"); //Prostì se porozhlédni po pøístavní ètvrti a musíš je najít. A pokud to tu moc neznáš, stav se u Brahima a kup si od nìj mapu.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_08"); //JEHO najdeš snadno. Má chıši hned vedle mé hospody. (mruèí) Za tohle bych si mìl úètovat dvojnásobek.
+		
+		Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
+		
+		
+		B_LogEntry (Topic_CityTeacher,"Carl, kováø z pøístavní ètvrti, mi mùe pomoci vylepšit sílu.");
+		B_LogEntry (Topic_CityTeacher,"Lares mi vylepší obratnost.");
+		B_LogEntry (Topic_CityTeacher,"Alrik mì vycvièí v boji jednoruèními zbranìmi. Potlouká se kdesi za skladištìm v pøístavní ètvrti.");
+		B_LogEntry (Topic_CityTeacher,"Ignaz mi ukáe nìkteré recepty na míchání lektvarù. ije v pøístavní ètvrti.");
+	
+		Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
+		B_LogEntry (Topic_CityTrader,"Brahim kreslí a prodává mapy. Bydlí poblí pøístavu.");
+		
+		
+	DIA_Kardif_Lernen_permanent = TRUE;
+	}
+	else 
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+///////////////////////////////////////////////////////////////////////
+//	Kardif's Infos werden verkauft! 
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Diebeswerk		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Kardif_Diebeswerk_Condition;
+	information	 = 	DIA_Kardif_Diebeswerk_Info;
+	permanent    =  TRUE;
+	description	 = 	"Mùu dostat tøeba nìjakou 'zvláštní' práci?";
+};
+//-------------------------------------------
+var int DIA_Kardif_Diebeswerk_permanent;
+//-------------------------------------------
+func int DIA_Kardif_Diebeswerk_Condition ()
+{	
+	if (DIA_Kardif_Diebeswerk_permanent == FALSE)
+	&& (DIA_Kardif_Arbeit_permanent     == TRUE)
+	&& (Kardif_OneQuestion == TRUE)
+	//&& (other.guild == GIL_NONE) 
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_Diebeswerk_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Kardif_Diebeswerk_15_00"); //Mùu dostat tøeba nìjakou "zvláštní" práci, abych mohl rychle pøijít k nìjakım penìzùm?
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk_14_01"); //Nìco zvláštního øíkáš? Hmmmm...
+		AI_PlayAni(self, "T_SEARCH");
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk_14_02"); //...tak si zkus promluvit s Nagurem, moná ti pomùe.
+	
+		DIA_Kardif_Diebeswerk_permanent = TRUE;
+		
+	}
+	else 
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+///////////////////////////////////////////////////////////////////////
+//	Kardif's Infos werden verkauft! 
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Diebeswerk2		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Kardif_Diebeswerk2_Condition;
+	information	 = 	DIA_Kardif_Diebeswerk2_Info;
+	permanent    =  TRUE;
+	description	 = 	"Máš pro mì nìjakou 'zvláštní' práci?";
+};
+//-------------------------------------------
+var int DIA_Kardif_Diebeswerk2_permanent;
+//-------------------------------------------
+func int DIA_Kardif_Diebeswerk2_Condition ()
+{	
+	if (DIA_Kardif_Diebeswerk2_permanent == FALSE)
+	&& (DIA_Kardif_Diebeswerk_permanent == TRUE) //andere Info
+	&& (DIA_Kardif_Arbeit_permanent     == TRUE)
+	&& (Kardif_OneQuestion == TRUE)
+	&& (other.guild != GIL_KDF) 
+	&& (other.guild != GIL_NOV)
+	&& (other.guild != GIL_MIL)
+	&& (other.guild != GIL_PAL)
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_Diebeswerk2_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_00"); //Máš pro mì nìjakou "zvláštní" práci?
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_01"); //Nìco pro tebe mám - ale to tì bude zajímat jenom tehdy, pokud jsi opravdu všestrannı.
+		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_02"); //Co máš?
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_03"); //No, Zuris, co prodává na trišti lektvary, má zrovna u sebe hosta - mága ohnì Darona.
+		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_04"); //A?
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_05"); //Tesaø Thorben mu zvláš vyrobil novou truhlu.
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_06"); //A ten Daron mu prı pøinesl spoustu cenného zboí. Ale nic jsi ode mì neslyšel, rozumíš?
+		
+		DIA_Kardif_Diebeswerk2_permanent = TRUE;
+		
+	}
+	else 
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+///////////////////////////////////////////////////////////////////////
+//	Kardif's ich will doch keine Info kaufen 
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Zurueck		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Kardif_Zurueck_Condition;
+	information	 = 	DIA_Kardif_Zurueck_Info;
+	permanent    =  TRUE;
+	description	 = 	DIALOG_BACK;
+};
+func int DIA_Kardif_Zurueck_Condition ()
+{	
+	if (Kardif_OneQuestion == TRUE)
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_Zurueck_Info ()
+{
+	Kardif_OneQuestion = FALSE;
+	Info_ClearChoices (DIA_Kardif_Zurueck);
+};
+///////////////////////////////////////////////////////////////////////
+//	Info DOPE
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_DOPE		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  5;
+	condition	 = 	DIA_Kardif_DOPE_Condition;
+	information	 = 	DIA_Kardif_DOPE_Info;
+	permanent    =  TRUE;
+	description	 = 	"Kde bych tu koupil nìjakou trávu?";
+};
+var int DIA_Kardif_DOPE_perm;
+func int DIA_Kardif_DOPE_Condition ()
+{
+	if 	(MIS_Andre_REDLIGHT == LOG_RUNNING)
+	&&  (Kardif_OneQuestion == TRUE)
+	&&  (DIA_Kardif_DOPE_perm == FALSE)
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_DOPE_Info ()
+{
+	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
+	
+	AI_Output (other, self, "DIA_Kardif_DOPE_15_01"); //Kde bych tu koupil nìjakou trávu?
+	
+	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
+	{
+		AI_Output (self, other, "DIA_Kardif_DOPE_14_00"); //Urèitì ne tady - s takovımi vìcmi nechci nic mít.
+	}
+	else
+	{
+		AI_Output (self, other, "DIA_Kardif_DOPE_14_02"); //Urèitì ne tady.
+		AI_Output (other, self, "DIA_Kardif_DOPE_15_03"); //A kde tedy?
+		AI_Output (self, other, "DIA_Kardif_DOPE_14_04"); //Bıt tebou, promluvím si s Meldorem - ten hulí od rána do veèera.
+		
+		DIA_Kardif_DOPE_perm = TRUE;
+	};
+	
+};
+///////////////////////////////////////////////////////////////////////
+//	Info Paket
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Paket		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  3;
+	condition	 = 	DIA_Kardif_Paket_Condition;
+	information	 = 	DIA_Kardif_Paket_Info;
+	permanent	 =  TRUE;
+	description	 = 	"Co víš o balíku trávy z bain?";
+};
+var int DIA_Kardif_Paket_perm;
+func int DIA_Kardif_Paket_Condition ()
+{
+	if 	(MIS_ANDRE_WAREHOUSE == LOG_RUNNING)
+	&&  (Kardif_OneQuestion == TRUE)
+	&& (DIA_Kardif_Paket_perm == FALSE)
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_Paket_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Kardif_Paket_15_00"); //Co víš o balíku trávy z bain?
+		AI_Output (self, other, "DIA_Kardif_Paket_14_01"); //Ten, kdo takovı balík má, je boháè. A nejspíš je taky tìce v pohodì!
+		AI_Output (other, self, "DIA_Kardif_Paket_15_02"); //Nesna se mì oblbnout. Ty nìco víš, tak to vyklop!
+		AI_Output (self, other, "DIA_Kardif_Paket_14_03"); //Nojo, nojo - takovı chlápek ke mnì onehdá pøišel. Patøil k oldákùm.
+		AI_Output (self, other, "DIA_Kardif_Paket_14_04"); //e prı v pøístavu prodal balík trávy z bain, ale samozøejmì byl totálnì zhulenı. Víc nevím.
+		
+		DIA_Kardif_Paket_perm = TRUE;
+		
+		B_LogEntry (TOPIC_WAREHOUSE,"Kardif hovoøil s oldnéøem, kterı se snail prodat balík trávy z bain.");
+	}
+	else
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+///////////////////////////////////////////////////////////////////////
+//	Info SendAttila
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_SENDATTILA		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr			 =  2;
+	condition	 = 	DIA_Kardif_SENDATTILA_Condition;
+	information	 = 	DIA_Kardif_SENDATTILA_Info;
+	important	 = 	TRUE;
+};
+
+func int DIA_Kardif_SENDATTILA_Condition ()
+{
+	if (MIS_ThiefGuild_sucked == TRUE)
+	|| (Diebesgilde_Okay >= 3)
+	&& (Npc_IsInState (self, ZS_Talk))
+	{
+		return TRUE;
+	};
+};
+func void DIA_Kardif_SENDATTILA_Info ()
+{
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_00"); //Hej ty, pojï sem. Nìco pro tebe mám.
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_01"); //Jeden chlápek tu s tebou chtìl mermomocí mluvit.
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_02"); //Kdy tì tu nezastihl, nechal tu pro tebe vzkaz.
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_03"); //Chce se s tebou sejít. Za Halvorovım obchodem s rybami.
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_04"); //Tahle informace je zadarmo - to je ale vıjimka, hochu! Všecko ostatní tì zase bude nìco stát.
+	AI_Output (other, self, "DIA_Kardif_SENDATTILA_15_05"); //Jak ten chlápek vypadal?
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_06"); //To ti mùu øíct, ale napøed za to musíš zaplatit, kámo. (zašklebí se)
+	
+	if (Kardif_Deal == 0)
+	{
+		AI_Output (self, other, "DIA_Kardif_Hallo_14_04"); //Kadá informace, kterou ti dám, tì bude stát 10 zlaákù.
+		Kardif_Deal = 10;
+	};
+	Wld_InsertNpc (VLK_494_Attila, "NW_CITY_ENTRANCE_01");
+};
+///////////////////////////////////////////////////////////////////////
+//	Info DefeatedAttila
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_Kerl		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr 			 =  2; 
+	condition	 = 	DIA_Kardif_Kerl_Condition;
+	information	 = 	DIA_Kardif_Kerl_Info;
+	permanent    =  TRUE;
+	description	 = 	"Jak ten chlápek vypadal?";
+};
+//----------------------------------
+var int DIA_Kardif_Kerl_permanent;
+//----------------------------------
+func int DIA_Kardif_Kerl_Condition ()
+{
+	if (Npc_KnowsInfo(other, DIA_Kardif_SENDATTILA)
+	&& (Attila.aivar[AIV_TalkedToPlayer] == FALSE)
+	&& (Kardif_OneQuestion == TRUE)
+	&& (DIA_Kardif_Kerl_permanent == FALSE))
+	{
+		return TRUE;
+	};
+};
+
+func void DIA_Kardif_Kerl_Info ()
+{
+	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
+	{
+		AI_Output (other, self, "DIA_Kardif_Kerl_15_00"); //Jak ten chlápek vypadal?
+		AI_Output (self, other, "DIA_Kardif_Kerl_14_01"); //No, byl pomìrnì vysokı, silnı a mìl tmavou ple - ale ádnou uniformu. Pùsobil tak nìjak... hrozivì.
+		AI_Output (other, self, "DIA_Kardif_Kerl_15_02"); //A jeho tváø?
+		AI_Output (self, other, "DIA_Kardif_Kerl_14_03"); //Tváø? Kdy se na mì podíval, byl jsem rád, e si nepøišel pro mì.
+		AI_Output (self, other, "DIA_Kardif_Kerl_14_04"); //Z oèí mu koukala dìsná zloba - ale i tak bys za ním mìl zajít. Urèitì to bude zajímavé.
+		AI_Output (other, self, "DIA_Kardif_Kerl_15_05"); //Ale otázkou je pro koho.
+		
+		DIA_Kardif_Kerl_permanent = TRUE;
+	}
+	else
+	{
+		B_SayKardifZuwenigGold();
+	};
+};
+///////////////////////////////////////////////////////////////////////
+//	Info DefeatedAttila
+///////////////////////////////////////////////////////////////////////
+instance DIA_Kardif_DEFEATEDATTILA		(C_INFO)
+{
+	npc			 = 	VLK_431_Kardif;
+	nr 			 =  2; 
+	condition	 = 	DIA_Kardif_DEFEATEDATTILA_Condition;
+	information	 = 	DIA_Kardif_DEFEATEDATTILA_Info;
+	permanent    =  FALSE;
+	description	 = 	"Ten bastard se mì snail zabít!";
+};
+
+func int DIA_Kardif_DEFEATEDATTILA_Condition ()
+{
+	if (Npc_KnowsInfo(other, DIA_Attila_Hallo))
+	{
+		return TRUE;
+	};
+};
+
+func void DIA_Kardif_DEFEATEDATTILA_Info ()
+{
+	AI_Output (other, self, "DIA_Kardif_DEFEATEDATTILA_15_00"); //Ten bastard se mì snail zabít!
+	AI_Output (self, other, "DIA_Kardif_DEFEATEDATTILA_14_01"); //Hele, já za to pøece nemùu! Já ti jenom pøedal informaci!
+	AI_Output (self, other, "DIA_Kardif_DEFEATEDATTILA_14_02"); //Jestli ti nìkdo šlape na paty, pak k tomu má nejspíš své dùvody.
+
+	B_GivePlayerXP (XP_Kardif_Blame4Attila);
+	
+	B_KillNpc	(Attila);
+	Npc_RemoveInvItem	(Attila, ItMi_OldCoin);
+};
+///////////////////////////////////////////////////////////////////////
+//	Info Diebeszeichen
+///////////////////////////////////////////////////////////////////////
+INSTANCE DIA_Kardif_Zeichen   (C_INFO)
+{
+	npc         = VLK_431_Kardif;
+	nr          = 2;
+	condition   = DIA_Kardif_Zeichen_Condition;
+	information = DIA_Kardif_Zeichen_Info;
+	permanent   = FALSE;
+	description = "(Pøedvést zlodìjskı signál.)";
+};
+
+FUNC INT DIA_Kardif_Zeichen_Condition()
+{
+	if (Knows_SecretSign == TRUE)
+	{
+		return TRUE;
+	};
+};
+FUNC VOID DIA_Kardif_Zeichen_Info()
+{
+	AI_PlayAni (other, "T_YES");
+	AI_Output (self, other, "DIA_Kardif_Zeichen_14_00");//Aha, ty ses zapletl s tím gangem. No dobøe, v tom pøípadì tu pro tebe nìco mám.
+	AI_Output (self, other, "DIA_Kardif_Zeichen_14_01");//(tiše) Kdy budeš potøebovat nìjaké paklíèe, pøijï za mnou, pár jich tu ještì mám. A staèí, kdy si øekneš o nìco k pití.
+	
+	CreateInvItems (self, ItKe_Lockpick, 20);
+};
+
+//###########################
+//##
+//##	Kapitel 5
+//##
+//###########################
+
+///////////////////////////////////////////////////////////////////////
+//	Info Crew
+///////////////////////////////////////////////////////////////////////
+INSTANCE DIA_Kardif_Crew   (C_INFO)
+{
+	npc         = VLK_431_Kardif;
+	nr          = 51;
+	condition   = DIA_Kardif_Crew_Condition;
+	information = DIA_Kardif_Crew_Info;
+	permanent   = FALSE;
+	description = "Ještì poøád potøebuji pár námoøníkù.";
+};
+
+FUNC INT DIA_Kardif_Crew_Condition()
+{
+	if (MIS_SCKnowsWayToIrdorath == TRUE)
+	{
+		return TRUE;
+	};
+};
+FUNC VOID DIA_Kardif_Crew_Info()
+{
+	AI_Output (other,self , "DIA_Kardif_Crew_15_00");//Ještì poøád potøebuji pár námoøníkù.
+	AI_Output (self, other, "DIA_Kardif_Crew_14_01");//Èasy jsou zlé, pøíteli. V celém Khorinidu asi dost námoøníkù neseeneš - vìtšina z nich z mìsta odešla.
+	AI_Output (self, other, "DIA_Kardif_Crew_14_02");//Ale kdy si najdeš dobrého kapitána, posádku seeneš celkem rychle - pár chytrıch chlápkù se tu vdycky najde.
+	AI_Output (other,self , "DIA_Kardif_Crew_15_03");//Kde bych našel kapitána?
+	AI_Output (self, other, "DIA_Kardif_Crew_14_04");//To se neptáš toho nepravého, já jenom vedu tuhle hospodu.
+	if (Npc_IsDead (Jack) == FALSE)
+	{
+		if (SCGoTCaptain == FALSE)
+		{
+			Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                           
+			Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                         
+			B_LogEntry (TOPIC_Captain,"Kardif mì poslal ke starému Jackovi, kterı mi nejspíš mùe pomoci.");
+	    };
+		AI_Output (self, other, "DIA_Kardif_Crew_14_05");//Promluv si se starım Jackem. Bloumá tu po pøístavu u hezky dlouho. Kdy pøijde na námoønictví, je to tvùj mu.
+	};
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

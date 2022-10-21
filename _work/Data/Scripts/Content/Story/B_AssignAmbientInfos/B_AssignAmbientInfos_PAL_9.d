@@ -1,0 +1,162 @@
+// *************************************************************************
+// 									EXIT
+// *************************************************************************
+INSTANCE DIA_PAL_9_EXIT(C_INFO)
+{
+	nr			= 999;
+	condition	= DIA_PAL_9_EXIT_Condition;
+	information	= DIA_PAL_9_EXIT_Info;
+	permanent	= TRUE;
+	description = DIALOG_ENDE;
+};                       
+
+FUNC INT DIA_PAL_9_EXIT_Condition()
+{
+	return TRUE;
+};
+
+FUNC VOID DIA_PAL_9_EXIT_Info()
+{	
+	AI_StopProcessInfos	(self);
+};
+
+// *************************************************************************
+// 									JOIN
+// *************************************************************************
+INSTANCE DIA_PAL_9_JOIN(C_INFO)
+{
+	nr			= 4;
+	condition	= DIA_PAL_9_JOIN_Condition;
+	information	= DIA_PAL_9_JOIN_Info;
+	permanent	= TRUE;
+	description = "Jak se mohu st·t paladinem?";
+};                       
+
+FUNC INT DIA_PAL_9_JOIN_Condition()
+{
+	if (other.guild == GIL_NONE)
+	{
+		return TRUE;
+	};
+};
+
+FUNC VOID DIA_PAL_9_JOIN_Info()
+{	
+	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //Jak se mohu st·t paladinem?
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Jen ten, kdo v Innosov˝ch Ëi kr·lov˝ch sluûb·ch prok·ûe, ûe je toho hoden, se m˘ûe st·t vyvolen˝m!
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //Jinak ¯eËeno: Vybr·ni mohou b˝t jen ti nejlepöÌ. Ale TY do toho m·ö hodnÏ daleko, hochu!
+};
+
+// *************************************************************************
+// 									PEOPLE
+// *************************************************************************
+INSTANCE DIA_PAL_9_PEOPLE(C_INFO)
+{
+	nr			= 3;
+	condition	= DIA_PAL_9_PEOPLE_Condition;
+	information	= DIA_PAL_9_PEOPLE_Info;
+	permanent	= TRUE;
+	description = "Kdo tomu tady velÌ?";
+};                       
+
+FUNC INT DIA_PAL_9_PEOPLE_Condition()
+{
+	if (other.guild != GIL_PAL)
+	{
+		return TRUE;
+	};
+};
+
+FUNC VOID DIA_PAL_9_PEOPLE_Info()
+{	
+	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_00"); //Kdo tomu tady velÌ?
+	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_01"); //Lord Hagen.
+	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_02"); //A?
+	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //A nikdo dalöÌ. Lord Hagen je nejvyööÌm velitelem celÈho ostrova.
+};
+
+// *************************************************************************
+// 									LOCATION
+// *************************************************************************
+INSTANCE DIA_PAL_9_LOCATION(C_INFO)
+{
+	nr			= 2;
+	condition	= DIA_PAL_9_LOCATION_Condition;
+	information	= DIA_PAL_9_LOCATION_Info;
+	permanent	= TRUE;
+	description = "ProË paladinovÈ p¯iöli do Khorinidu?";
+};                       
+
+FUNC INT DIA_PAL_9_LOCATION_Condition()
+{
+	if (Kapitel == 1)
+	{
+		return TRUE;
+	};
+};
+
+FUNC VOID DIA_PAL_9_LOCATION_Info()
+{	
+	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //ProË jste vy, paladinovÈ, p¯iöli do Khorinidu?
+	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //Do toho ti nic nenÌ, p¯Ìteli! MusÌ ti staËit, ûe jsme tu v Innosov˝ch a kr·lov˝ch sluûb·ch!
+};
+
+// *************************************************************************
+// 									NEWS
+// *************************************************************************
+INSTANCE DIA_PAL_9_STANDARD(C_INFO)
+{
+	nr			= 1;
+	condition	= DIA_PAL_9_STANDARD_Condition;
+	information	= DIA_PAL_9_STANDARD_Info;
+	permanent	= TRUE;
+	description = "Jak to jde?";
+};
+                       
+func INT DIA_PAL_9_STANDARD_Condition()
+{
+	return TRUE;
+};
+
+FUNC VOID DIA_PAL_9_STANDARD_Info()
+{	
+	AI_Output (other, self, "DIA_PAL_9_STANDARD_15_00"); //Co se stalo?
+
+	if (other.guild == GIL_PAL)
+	|| (other.guild == GIL_KDF)
+	{
+		if (Kapitel <= 4)
+		{
+			if (MIS_OLDWORLD == LOG_SUCCESS)
+			{
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //TeÔ kdyû vÌme, ûe m·me co do ËinÏnÌ s draky, zaËne n·ö velitel urËitÏ brzy nÏco dÏlat.
+			}
+			else
+			{
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //JeötÏ st·le nem·me û·dnÈ zpr·vy od naöich muû˘ z HornickÈho ˙dolÌ. To je velmi znepokojivÈ.
+			};
+		};
+
+		if (Kapitel >= 5)
+		{
+			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //DÌky Innosovi! DraËÌ hrozba byla zaûehn·na. TeÔ uû se musÌme jen vypo¯·dat s tÏmi sk¯ety a cesta k rudÏ je voln·.
+		};
+	}
+	else //KEIN Paladin
+	{
+		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //Jestli je to vöechno, co mi m˘ûeö ¯Ìct, tak uû se ztraù, p¯Ìteli!
+	};
+};
+
+
+// *************************************************************************
+// -------------------------------------------------------------------------
+
+FUNC VOID B_AssignAmbientInfos_PAL_9 (var c_NPC slf)
+{
+	DIA_PAL_9_EXIT.npc					= Hlp_GetInstanceID(slf);
+	DIA_PAL_9_JOIN.npc					= Hlp_GetInstanceID(slf);
+	DIA_PAL_9_PEOPLE.npc				= Hlp_GetInstanceID(slf);
+	DIA_PAL_9_LOCATION.npc				= Hlp_GetInstanceID(slf);
+	DIA_PAL_9_STANDARD.npc				= Hlp_GetInstanceID(slf);
+};
