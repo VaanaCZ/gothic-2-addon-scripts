@@ -73,7 +73,7 @@ INSTANCE StandardBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Libro normal, página 1"	);
+					Doc_PrintLines	( nDocID,  0, "Libro normal, pÃ¡gina 1"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla"					);
@@ -82,10 +82,10 @@ INSTANCE StandardBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Libro normal, página 2"	);
+					Doc_PrintLines	( nDocID,  1, "Libro normal, pÃ¡gina 2"	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla"	);
@@ -270,17 +270,17 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Arte de la defensa meridional"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Los sureños usan menos fuerza física que la gente del norte y se apoyan más en la agilidad. Como viven en un clima cálido prefieren llevar armaduras ligeras, lo que les permite moverse con más libertad. Por estas razones, el sureño ha desarrollado un estilo de lucha completamente diferente al que estamos acostumbrados. "					);
+					Doc_PrintLines	( nDocID,  0, "Los sureÃ±os usan menos fuerza fÃ­sica que la gente del norte y se apoyan mÃ¡s en la agilidad. Como viven en un clima cÃ¡lido prefieren llevar armaduras ligeras, lo que les permite moverse con mÃ¡s libertad. Por estas razones, el sureÃ±o ha desarrollado un estilo de lucha completamente diferente al que estamos acostumbrados. "					);
 					
 					
 
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Es probable que la maniobra más famosa que usan los sureños es la parada con paso atrás. El paso hacia atrás permite amortiguar el golpe del atacante a la vez que coloca al defensor en una estupenda posición para el contraataque."	);
+					Doc_PrintLines	( nDocID,  1, "Es probable que la maniobra mÃ¡s famosa que usan los sureÃ±os es la parada con paso atrÃ¡s. El paso hacia atrÃ¡s permite amortiguar el golpe del atacante a la vez que coloca al defensor en una estupenda posiciÃ³n para el contraataque."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					
 					
@@ -291,7 +291,7 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 //---------------------------------------------------------------------------------------------------------------------------
 INSTANCE ItWr_ZweihandBuch (C_ITEM)
 {
-	name 					=	"Tácticas de combate";
+	name 					=	"TÃ¡cticas de combate";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -337,9 +337,9 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "La parada del arma del enemigo con un arma a dos manos es un método que usan los guerreros fuertes para parar el ímpetu de los ataques y obligar a los asaltantes a terminar sus combinaciones de ataque. "					);
+					Doc_PrintLines	( nDocID,  0, "La parada del arma del enemigo con un arma a dos manos es un mÃ©todo que usan los guerreros fuertes para parar el Ã­mpetu de los ataques y obligar a los asaltantes a terminar sus combinaciones de ataque. "					);
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, ""	);

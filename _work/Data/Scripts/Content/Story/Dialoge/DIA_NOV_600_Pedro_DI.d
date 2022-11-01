@@ -20,7 +20,7 @@ FUNC VOID DIA_Pedro_DI_EXIT_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Verräter
+//	Info VerrÃ¤ter
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pedro_DI_YOU		(C_INFO)
 {
@@ -29,7 +29,7 @@ instance DIA_Pedro_DI_YOU		(C_INFO)
 	condition	 = 	DIA_Pedro_DI_YOU_Condition;
 	information	 = 	DIA_Pedro_DI_YOU_Info;
 	
-	description	 = 	"¡Traidor!";
+	description	 = 	"Â¡Traidor!";
 	
 };
 func int DIA_Pedro_DI_YOU_Condition ()
@@ -39,7 +39,7 @@ func int DIA_Pedro_DI_YOU_Condition ()
 
 func void DIA_Pedro_DI_YOU_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_00"); //¡Traidor! Por fin te he encontrado.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_00"); //Â¡Traidor! Por fin te he encontrado.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
@@ -48,33 +48,33 @@ func void DIA_Pedro_DI_YOU_Info ()
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_02"); //Muchos de los mercenarios han vendido las almas a Beliar, y a menudo tengo remordimientos al matarlos como si tal cosa. Pero en tu caso, escoria, haré una excepción.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_02"); //Muchos de los mercenarios han vendido las almas a Beliar, y a menudo tengo remordimientos al matarlos como si tal cosa. Pero en tu caso, escoria, harÃ© una excepciÃ³n.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_03"); //De todos los bastardos desalmados con los que me he topado en mi vida, tú eres el peor. Eres una vergüenza para la orden.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_03"); //De todos los bastardos desalmados con los que me he topado en mi vida, tÃº eres el peor. Eres una vergÃ¼enza para la orden.
 		};
 
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_04"); //Debería matarte ahora mismo.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_05"); //Basta, te lo suplico. Me han hechizado. Jamás habría traicionado al monasterio por mi propia voluntad.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_06"); //No tienes ni idea de lo que he sufrido estos últimos días. Me han metido una voz en la cabeza y no podía defenderme de ella.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_07"); //El coronel orco me interrogó durante días y no dejó de pegarme. Perdóname la vida. Soy inocente. Tienes que creerme.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_04"); //DeberÃ­a matarte ahora mismo.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_05"); //Basta, te lo suplico. Me han hechizado. JamÃ¡s habrÃ­a traicionado al monasterio por mi propia voluntad.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_06"); //No tienes ni idea de lo que he sufrido estos Ãºltimos dÃ­as. Me han metido una voz en la cabeza y no podÃ­a defenderme de ella.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_07"); //El coronel orco me interrogÃ³ durante dÃ­as y no dejÃ³ de pegarme. PerdÃ³name la vida. Soy inocente. Tienes que creerme.
 	
 	Info_ClearChoices	(DIA_Pedro_DI_YOU);
 	Info_AddChoice	(DIA_Pedro_DI_YOU, "Entonces, dime lo que sabes.", DIA_Pedro_DI_YOU_verschon );
 	Info_AddChoice	(DIA_Pedro_DI_YOU, "No tengo que hacer nada. Voy a matarte ahora mismo.", DIA_Pedro_DI_YOU_tot );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Dame solo una razón para que te crea.", DIA_Pedro_DI_YOU_grund );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "Dame solo una razÃ³n para que te crea.", DIA_Pedro_DI_YOU_grund );
 	if (MIS_Gorax_KillPedro == LOG_RUNNING)
 	{
-		Info_AddChoice	(DIA_Pedro_DI_YOU, "Serpentes me ordenó que te matara.", DIA_Pedro_DI_YOU_Serpentes );
+		Info_AddChoice	(DIA_Pedro_DI_YOU, "Serpentes me ordenÃ³ que te matara.", DIA_Pedro_DI_YOU_Serpentes );
 	};
 };
 
 func void DIA_Pedro_DI_YOU_grund ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_grund_15_00"); //Dame solo una razón para que te crea.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_grund_09_01"); //(Suplicante) Déjame vivir. Puedo darte información que te ayudará a salir de aquí. Tienes que escucharme.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_grund_15_00"); //Dame solo una razÃ³n para que te crea.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_grund_09_01"); //(Suplicante) DÃ©jame vivir. Puedo darte informaciÃ³n que te ayudarÃ¡ a salir de aquÃ­. Tienes que escucharme.
 
 };
 var int PedroDI_Flee;
@@ -92,29 +92,29 @@ func void DIA_Pedro_DI_YOU_tot ()
 
 func void DIA_Pedro_DI_YOU_Serpentes ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_Serpentes_15_00"); //Serpentes me ordenó que te matara y, por cuestión de principios, obedezco.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(Suplicante) No, por favor. No lo hagas. Aún te puedo ser útil, ya verás.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_Serpentes_15_00"); //Serpentes me ordenÃ³ que te matara y, por cuestiÃ³n de principios, obedezco.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(Suplicante) No, por favor. No lo hagas. AÃºn te puedo ser Ãºtil, ya verÃ¡s.
 
 	B_GivePlayerXP (XP_Pedro_SerpentesMission);
-	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heißen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
+	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heiÃŸen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
 
 };
 
 func void DIA_Pedro_DI_YOU_verschon ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_YOU_verschon_15_00"); //Entonces, dime lo que sabes.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_verschon_09_01"); //(Aliviado) Sí, por supuesto. Te diré todo lo que quieras saber... con una condición. Tienes que sacarme de esta isla maldita, ¿me oyes?
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_verschon_09_01"); //(Aliviado) SÃ­, por supuesto. Te dirÃ© todo lo que quieras saber... con una condiciÃ³n. Tienes que sacarme de esta isla maldita, Â¿me oyes?
 	
 	Info_ClearChoices	(DIA_Pedro_DI_YOU);
 	Info_AddChoice	(DIA_Pedro_DI_YOU, "No tengo que hacer nada. Voy a matarte ahora mismo.", DIA_Pedro_DI_YOU_tot );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "De acuerdo. Sígueme, te llevaré al barco.", DIA_Pedro_DI_YOU_FollowShip );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "De acuerdo. SÃ­gueme, te llevarÃ© al barco.", DIA_Pedro_DI_YOU_FollowShip );
 
 };
 
 var int MIS_Pedro_DI_FollowShip;
 func void DIA_Pedro_DI_YOU_FollowShip ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_FollowShip_15_00"); //De acuerdo. Sígueme, te llevaré al barco.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_FollowShip_15_00"); //De acuerdo. SÃ­gueme, te llevarÃ© al barco.
 	AI_Output			(self, other, "DIA_Pedro_DI_YOU_FollowShip_09_01"); //Gracias. No te vas a arrepentir.
 	
 	AI_StopProcessInfos (self);
@@ -134,7 +134,7 @@ instance DIA_Pedro_DI_ArrivedAtShip		(C_INFO)
 	condition	 = 	DIA_Pedro_DI_ArrivedAtShip_Condition;
 	information	 = 	DIA_Pedro_DI_ArrivedAtShip_Info;
 
-	description	= "¡Aquí está!";	
+	description	= "Â¡AquÃ­ estÃ¡!";	
 };
 
 func int DIA_Pedro_DI_ArrivedAtShip_Condition ()
@@ -148,25 +148,25 @@ func int DIA_Pedro_DI_ArrivedAtShip_Condition ()
 
 func void DIA_Pedro_DI_ArrivedAtShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_00"); //¡Aquí está!
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_00"); //Â¡AquÃ­ estÃ¡!
 	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_01"); //Tienes un barco impresionante. Desde luego, eres un gran general.
 	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_02"); //Deja de balbucear y dime lo que quiero saber.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_03"); //Eh... claro. ¿Por dónde empiezo?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_03"); //Eh... claro. Â¿Por dÃ³nde empiezo?
 	
 	Info_ClearChoices	(DIA_Pedro_DI_ArrivedAtShip);
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Ya he oído bastante.", DIA_Pedro_DI_ArrivedAtShip_Back );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "¿Cómo se va al interior de la isla?", DIA_Pedro_DI_ArrivedAtShip_Innere );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "¿Qué otros monstruos frecuentan esta isla?", DIA_Pedro_DI_ArrivedAtShip_Monster );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "¿Qué hay de ese coronel orco?", DIA_Pedro_DI_ArrivedAtShip_OrkOberst );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Ya he oÃ­do bastante.", DIA_Pedro_DI_ArrivedAtShip_Back );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Â¿CÃ³mo se va al interior de la isla?", DIA_Pedro_DI_ArrivedAtShip_Innere );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Â¿QuÃ© otros monstruos frecuentan esta isla?", DIA_Pedro_DI_ArrivedAtShip_Monster );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Â¿QuÃ© hay de ese coronel orco?", DIA_Pedro_DI_ArrivedAtShip_OrkOberst );
 
 
 };
 func void DIA_Pedro_DI_ArrivedAtShip_OrkOberst ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_15_00"); //¿Qué hay de ese coronel orco?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_01"); //Me arrebató la última pizca de esperanza de volver a ver mi tierra natal.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_02"); //Desde que llegué, me ha estado interrogando acerca del posicionamiento estratégico de los paladines en Khorinis.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_03"); //Por supuesto, no le dije gran cosa. ¿Cómo iba a hacerlo, maldita sea? Soy un novicio del fuego.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_15_00"); //Â¿QuÃ© hay de ese coronel orco?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_01"); //Me arrebatÃ³ la Ãºltima pizca de esperanza de volver a ver mi tierra natal.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_02"); //Desde que lleguÃ©, me ha estado interrogando acerca del posicionamiento estratÃ©gico de los paladines en Khorinis.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_03"); //Por supuesto, no le dije gran cosa. Â¿CÃ³mo iba a hacerlo, maldita sea? Soy un novicio del fuego.
 	
 	if ((Npc_IsDead(OrkElite_AntiPaladinOrkOberst_DI)))
 	{
@@ -176,34 +176,34 @@ func void DIA_Pedro_DI_ArrivedAtShip_OrkOberst ()
 
 func void DIA_Pedro_DI_ArrivedAtShip_Monster ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Monster_15_00"); //¿Qué otros monstruos frecuentan esta isla?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_01"); //Durante el día se suele ver al pueblo lagarto caminando hacia la costa. A menudo llevan huevos muy grandes.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_02"); //Desde mi celda no veía demasiado, pero creo que se están preparando para marcharse de la isla.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Monster_15_00"); //Â¿QuÃ© otros monstruos frecuentan esta isla?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_01"); //Durante el dÃ­a se suele ver al pueblo lagarto caminando hacia la costa. A menudo llevan huevos muy grandes.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_02"); //Desde mi celda no veÃ­a demasiado, pero creo que se estÃ¡n preparando para marcharse de la isla.
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Innere ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Innere_15_00"); //¿Cómo se va al interior de la isla?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_01"); //Hay un pasadizo secreto en el salón del trono del coronel orco.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02"); //Me arrastraban hasta allí cada vez que querían interrogarme, y lo vi.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03"); //Uno de los chamanes ponía en marcha un mecanismo al tirar de las antorchas colgadas en las paredes del salón.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04"); //Um... creo que primero tiraba de la antorcha de la izquierda y luego de la que está a la derecha, pero no me acuerdo bien.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05"); //En la parte de atrás se abría de pronto un pasadizo secreto que se adentraba en la montaña.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06"); //No sé dónde acaba el pasadizo.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Innere_15_00"); //Â¿CÃ³mo se va al interior de la isla?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_01"); //Hay un pasadizo secreto en el salÃ³n del trono del coronel orco.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02"); //Me arrastraban hasta allÃ­ cada vez que querÃ­an interrogarme, y lo vi.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03"); //Uno de los chamanes ponÃ­a en marcha un mecanismo al tirar de las antorchas colgadas en las paredes del salÃ³n.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04"); //Um... creo que primero tiraba de la antorcha de la izquierda y luego de la que estÃ¡ a la derecha, pero no me acuerdo bien.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05"); //En la parte de atrÃ¡s se abrÃ­a de pronto un pasadizo secreto que se adentraba en la montaÃ±a.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06"); //No sÃ© dÃ³nde acaba el pasadizo.
 
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_OberstTot ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_15_00"); //El coronel orco ha muerto.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_09_01"); //¿Muerto? Alabado sea Innos. Jamás olvidaré su repugnante rostro.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_09_01"); //Â¿Muerto? Alabado sea Innos. JamÃ¡s olvidarÃ© su repugnante rostro.
 
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Back ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Back_15_00"); //Ya he oído bastante. Búscate un puesto en mi barco. Aún tienes cosas que hacer.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Back_09_01"); //Que el poder de Innos te acompañe. Rezaré por ti.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Back_15_00"); //Ya he oÃ­do bastante. BÃºscate un puesto en mi barco. AÃºn tienes cosas que hacer.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Back_09_01"); //Que el poder de Innos te acompaÃ±e. RezarÃ© por ti.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Ship");
@@ -222,7 +222,7 @@ instance DIA_Pedro_DI_PERM		(C_INFO)
 	information	 = 	DIA_Pedro_DI_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Estás cansado?";
+	description	 = 	"Â¿EstÃ¡s cansado?";
 };
 var int PedroDI_TalkNomore;
 func int DIA_Pedro_DI_PERM_Condition ()
@@ -235,14 +235,14 @@ func int DIA_Pedro_DI_PERM_Condition ()
 };
 func void DIA_Pedro_DI_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_00"); //¿Estás cansado?
+	AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_00"); //Â¿EstÃ¡s cansado?
 
 	if (Npc_GetDistToWP(self,"SHIP_DECK_05")<1000) 
 	{	
 		if (PedroDI_Flee == LOG_RUNNING)
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_01"); //¿Quieres que te traiga una almohada?
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_02"); //Déjame, por favor. Me quedaré muy quieto y no haré ruido.
+			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_01"); //Â¿Quieres que te traiga una almohada?
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_02"); //DÃ©jame, por favor. Me quedarÃ© muy quieto y no harÃ© ruido.
 			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_03"); //Um.
 			B_GivePlayerXP (XP_Ambient);
 			PedroDI_Flee = LOG_SUCCESS;
@@ -250,8 +250,8 @@ func void DIA_Pedro_DI_PERM_Info ()
 		else if (Npc_IsDead(Dragon_Undead))
 		{
 			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_04"); //Estoy agotado.
-			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_05"); //Métete en el sobre. Pronto zarparemos.
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_06"); //Gracias, tío. Pensaba que me iba a caer de este banco. Buenas noches.
+			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_05"); //MÃ©tete en el sobre. Pronto zarparemos.
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_06"); //Gracias, tÃ­o. Pensaba que me iba a caer de este banco. Buenas noches.
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"SleepShip");
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -265,7 +265,7 @@ func void DIA_Pedro_DI_PERM_Info ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_08"); //Por favor. ¡Déjame vivir!
+		AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_08"); //Por favor. Â¡DÃ©jame vivir!
 		AI_StopProcessInfos (self);
 	};
 };

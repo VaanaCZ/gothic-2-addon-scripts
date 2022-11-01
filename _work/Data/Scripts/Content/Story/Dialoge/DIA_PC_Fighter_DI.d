@@ -33,7 +33,7 @@ INSTANCE DIA_Gorn_DI_Hallo (C_INFO)
 	information	= DIA_Gorn_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "¿Todo en orden?";
+	description = "Â¿Todo en orden?";
 };                       
 
 FUNC INT DIA_Gorn_DI_Hallo_Condition()
@@ -46,15 +46,15 @@ FUNC INT DIA_Gorn_DI_Hallo_Condition()
 
 FUNC VOID DIA_Gorn_DI_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_Gorn_DI_Hallo_15_00"); //¿Todo en orden?
+	AI_Output (other,self ,"DIA_Gorn_DI_Hallo_15_00"); //Â¿Todo en orden?
 
 	if (ORkSturmDI == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_01"); //Hasta ahora sí. Recuerda que quiero combatir.
+			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_01"); //Hasta ahora sÃ­. Recuerda que quiero combatir.
 		}
 	else
 		{
-			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_02"); //¿Hay más orcos ahí arriba? Mándamelos. Ya he acabado con los ejercicios de calentamiento.
+			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_02"); //Â¿Hay mÃ¡s orcos ahÃ­ arriba? MÃ¡ndamelos. Ya he acabado con los ejercicios de calentamiento.
 		};
 };
 
@@ -97,7 +97,7 @@ FUNC VOID DIA_Gorn_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 100))
 	{
-		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_1_12_00"); //Bien. Solías ser mejor.
+		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_1_12_00"); //Bien. SolÃ­as ser mejor.
 	};
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -109,7 +109,7 @@ FUNC VOID DIA_Gorn_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Tienes que elevar más el arma. Un ciego podría atravesar tu guardia con su bastón.
+		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Tienes que elevar mÃ¡s el arma. Un ciego podrÃ­a atravesar tu guardia con su bastÃ³n.
 	};
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -133,7 +133,7 @@ instance DIA_Gorn_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Gorn_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"¿Te has quedado con la nave?";
+	description = 	"Â¿Te has quedado con la nave?";
 };
 
 func int DIA_Gorn_DI_UndeadDragonDead_Condition ()
@@ -147,34 +147,34 @@ func int DIA_Gorn_DI_UndeadDragonDead_Condition ()
 var int DIA_Gorn_DI_UndeadDragonDead_OneTime;
 func void DIA_Gorn_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_00"); //¿Te has quedado en la nave?
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Claro. Imagínate lo que haríamos si no estuviese aquí.
+	AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_00"); //Â¿Te has quedado en la nave?
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Claro. ImagÃ­nate lo que harÃ­amos si no estuviese aquÃ­.
 
 	if (DIA_Gorn_DI_UndeadDragonDead_OneTime == FALSE)
 		{
 			if (hero.guild == GIL_DJG)
 			{
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_02"); //¿Y ahora qué pasa?
-				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_03"); //Nada más. Quiero irme a casa.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(Se ríe) ¿A casa? ¿Dónde está? Según tengo entendido, no tienes nada parecido a una casa.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //Permíteme hacerte una sugerencia. Metámonos en la próxima taberna que encontremos y cojámonos una borrachera de órdago.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_02"); //Â¿Y ahora quÃ© pasa?
+				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_03"); //Nada mÃ¡s. Quiero irme a casa.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(Se rÃ­e) Â¿A casa? Â¿DÃ³nde estÃ¡? SegÃºn tengo entendido, no tienes nada parecido a una casa.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //PermÃ­teme hacerte una sugerencia. MetÃ¡monos en la prÃ³xima taberna que encontremos y cojÃ¡monos una borrachera de Ã³rdago.
 				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_06"); //Um. Tal vez.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //¡Eh, no digas tonterías, tío! Se acabó.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //Â¡Eh, no digas tonterÃ­as, tÃ­o! Se acabÃ³.
 			};
 			DIA_Gorn_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 	
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_plunder))
 			{
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_08"); //Alguien tiene que decírselo a Biff. Si no, se pudrirá en esta isla.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_08"); //Alguien tiene que decÃ­rselo a Biff. Si no, se pudrirÃ¡ en esta isla.
 
 				if (Npc_IsDead(Biff_DI)== FALSE)
 					{
-						AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_09"); //Llegará a tiempo.
+						AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_09"); //LlegarÃ¡ a tiempo.
 					};
 			};			
 	
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //Aquí no queda nada para nosotros. Dile al capitán que abandone el barco.
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //AquÃ­ no queda nada para nosotros. Dile al capitÃ¡n que abandone el barco.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

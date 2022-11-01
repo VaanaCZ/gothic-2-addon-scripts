@@ -32,7 +32,7 @@ INSTANCE DIA_Bennet_DI_Hello (C_INFO)
 	information	= DIA_Bennet_DI_Hello_Info;
 	permanent	 = 	TRUE;
 
-	description = "¿Va todo bien?";
+	description = "Â¿Va todo bien?";
 };    
                    
 FUNC INT DIA_Bennet_DI_Hello_Condition()
@@ -45,15 +45,15 @@ FUNC INT DIA_Bennet_DI_Hello_Condition()
 
 FUNC VOID DIA_Bennet_DI_Hello_Info()
 {	
-	AI_Output	(other ,self,"DIA_Bennet_DI_Hello_15_00");	//¿Va todo bien?
+	AI_Output	(other ,self,"DIA_Bennet_DI_Hello_15_00");	//Â¿Va todo bien?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//La forja del barco está oxidada por la sal marina. Puede que sea difícil crear algo decente aquí, pero aparte de eso...
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//La forja del barco estÃ¡ oxidada por la sal marina. Puede que sea difÃ­cil crear algo decente aquÃ­, pero aparte de eso...
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_02");	//Sí, siempre que los orcos no vuelvan.
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_02");	//SÃ­, siempre que los orcos no vuelvan.
 	};
 };
   
@@ -69,7 +69,7 @@ instance DIA_Bennet_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"¿Qué armas puedes venderme?";
+	description	 = 	"Â¿QuÃ© armas puedes venderme?";
 };
 
 func int DIA_Bennet_DI_TRADE_Condition ()
@@ -82,7 +82,7 @@ func int DIA_Bennet_DI_TRADE_Condition ()
 
 func void DIA_Bennet_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //¿Qué armas puedes venderme?
+	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //Â¿QuÃ© armas puedes venderme?
 	B_GiveTradeInv (self);
 	AI_Output			(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Solo las mejores, ya lo sabes.
 };
@@ -97,7 +97,7 @@ instance DIA_Bennet_DI_Smith		(C_INFO)
 	condition	 = 	DIA_Bennet_DI_Smith_Condition;
 	information	 = 	DIA_Bennet_DI_Smith_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Me puedes enseñar tu arte?";
+	description	 = 	"Â¿Me puedes enseÃ±ar tu arte?";
 };
 
 func int DIA_Bennet_DI_Smith_Condition ()
@@ -111,7 +111,7 @@ func int DIA_Bennet_DI_Smith_Condition ()
 
 func void DIA_Bennet_DI_Smith_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_Smith_15_00"); //¿Me puedes enseñar tu arte?
+	AI_Output			(other, self, "DIA_Bennet_DI_Smith_15_00"); //Â¿Me puedes enseÃ±ar tu arte?
 	AI_Output			(self, other, "DIA_Bennet_DI_Smith_06_01"); //Depende de lo que quieras hacer.
 
 	Info_ClearChoices (DIA_Bennet_DI_Smith);
@@ -233,7 +233,7 @@ FUNC INT DIA_Bennet_TeachSTR_Condition()
  
 FUNC VOID DIA_Bennet_TeachSTR_Info()
 {	
-	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Quiero ser más fuerte.
+	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Quiero ser mÃ¡s fuerte.
 	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //En estos tiempos, lo que hace falta es un brazo fuerte.
 	
 	Info_ClearChoices (DIA_Bennet_TeachSTR);
@@ -269,7 +269,7 @@ instance DIA_Bennet_DI_DragonEgg		(C_INFO)
 	condition	 = 	DIA_Bennet_DI_DragonEgg_Condition;
 	information	 = 	DIA_Bennet_DI_DragonEgg_Info;
 
-	description	 = 	"Tengo aquí un huevo de dragón.";
+	description	 = 	"Tengo aquÃ­ un huevo de dragÃ³n.";
 };
 
 func int DIA_Bennet_DI_DragonEgg_Condition ()
@@ -282,10 +282,10 @@ func int DIA_Bennet_DI_DragonEgg_Condition ()
 
 func void DIA_Bennet_DI_DragonEgg_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //Tengo aquí un huevo de dragón.
-	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //¿Y bien?
-	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //Bueno, pensé...
-	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //Sé lo que estás pensando. Olvídalo, quédate esa cosa. No la quiero.
+	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //Tengo aquÃ­ un huevo de dragÃ³n.
+	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //Â¿Y bien?
+	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //Bueno, pensÃ©...
+	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //SÃ© lo que estÃ¡s pensando. OlvÃ­dalo, quÃ©date esa cosa. No la quiero.
 	B_GivePlayerXP (XP_Ambient);
 };
 	
@@ -300,7 +300,7 @@ instance DIA_Bennet_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Bennet_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Hemos hecho todo lo que teníamos que hacer.";
+	description	 = 	"Hemos hecho todo lo que tenÃ­amos que hacer.";
 };
 
 func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
@@ -313,8 +313,8 @@ func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
 
 func void DIA_Bennet_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Ya hemos hecho todo lo que teníamos que hacer.
-	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //Me alegra oír eso. Ya estaba harto de esta vieja forja. Necesito poner los pies en tierra firme.
+	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Ya hemos hecho todo lo que tenÃ­amos que hacer.
+	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //Me alegra oÃ­r eso. Ya estaba harto de esta vieja forja. Necesito poner los pies en tierra firme.
 	AI_StopProcessInfos (self);
 };
 

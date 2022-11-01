@@ -77,11 +77,11 @@ FUNC INT DIA_Ignaz_Hallo_Condition()
 };
 FUNC VOID DIA_Ignaz_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_00");//Ah, has llegado a tiempo. Necesito un ayudante para un experimento mágico.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_00");//Ah, has llegado a tiempo. Necesito un ayudante para un experimento mÃ¡gico.
 	AI_Output (self, other, "DIA_Ignaz_Hallo_14_01");//Estoy seguro de que deseas hacerme un favor en aras de la ciencia.
-	AI_Output (other, self, "DIA_Ignaz_Hallo_15_02");//Tranquilo, amigo. Primero dime de qué va todo esto.
+	AI_Output (other, self, "DIA_Ignaz_Hallo_15_02");//Tranquilo, amigo. Primero dime de quÃ© va todo esto.
 	AI_Output (self, other, "DIA_Ignaz_Hallo_14_03");//He desarrollado un nuevo conjuro. Un conjuro de olvido.
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_04");//Ya he realizado con éxito unas cuantas aplicaciones prácticas, pero no tengo tiempo para realizar la prueba definitiva.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_04");//Ya he realizado con Ã©xito unas cuantas aplicaciones prÃ¡cticas, pero no tengo tiempo para realizar la prueba definitiva.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Lerninhalte Traenke
@@ -93,7 +93,7 @@ INSTANCE DIA_Ignaz_Traenke   (C_INFO)
 	condition   = DIA_Ignaz_Traenke_Condition;
 	information = DIA_Ignaz_Traenke_Info;
 	permanent   = FALSE;
-	description = "¿Qué obtengo yo si te ayudo?";
+	description = "Â¿QuÃ© obtengo yo si te ayudo?";
 };
 
 FUNC INT DIA_Ignaz_Traenke_Condition()
@@ -105,10 +105,10 @@ FUNC INT DIA_Ignaz_Traenke_Condition()
 };
 FUNC VOID DIA_Ignaz_Traenke_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Traenke_15_00");//¿Qué obtengo yo si te ayudo?
-	AI_Output (self, other, "DIA_Ignaz_Traenke_14_01");//Podría enseñarte a hacer pociones.
-	AI_Output (self, other, "DIA_Ignaz_Traenke_14_02");//Conozco las recetas de esencias curativas y de maná y de pociones de velocidad.
-	//AI_Output (self, other, "DIA_Ignaz_Traenke_14_03");//Außerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
+	AI_Output (other, self, "DIA_Ignaz_Traenke_15_00");//Â¿QuÃ© obtengo yo si te ayudo?
+	AI_Output (self, other, "DIA_Ignaz_Traenke_14_01");//PodrÃ­a enseÃ±arte a hacer pociones.
+	AI_Output (self, other, "DIA_Ignaz_Traenke_14_02");//Conozco las recetas de esencias curativas y de manÃ¡ y de pociones de velocidad.
+	//AI_Output (self, other, "DIA_Ignaz_Traenke_14_03");//AuÃŸerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -121,7 +121,7 @@ INSTANCE DIA_Ignaz_Experiment   (C_INFO)
 	condition   = DIA_Ignaz_Experiment_Condition;
 	information = DIA_Ignaz_Experiment_Info;
 	permanent   = FALSE;
-	description = "Cuéntame más sobre el experimento y el hechizo.";
+	description = "CuÃ©ntame mÃ¡s sobre el experimento y el hechizo.";
 };
 
 FUNC INT DIA_Ignaz_Experiment_Condition()
@@ -130,16 +130,16 @@ FUNC INT DIA_Ignaz_Experiment_Condition()
 };
 FUNC VOID DIA_Ignaz_Experiment_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Experiment_15_00");//Cuéntame más sobre el experimento y el conjuro.
+	AI_Output (other, self, "DIA_Ignaz_Experiment_15_00");//CuÃ©ntame mÃ¡s sobre el experimento y el conjuro.
 	AI_Output (self, other, "DIA_Ignaz_Experiment_14_01");//El conjuro sirve para hacer que alguien olvide varios eventos.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_02");//Hasta ahora solo he conseguido que funcione cuando la persona en cuestión está enfadada. Por ejemplo, cuando acaba de ser golpeada o robada.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_03");//Incluso aunque solo haya presenciado dicho acto, lo borrará de su memoria.
-	AI_Output (other, self, "DIA_Ignaz_Experiment_15_04");//¿Entonces se supone que debo tumbar a alguien y luego hechizarlo?
-	//AI_Output (other, self, "DIA_Ignaz_Add_15_00"); //Eso tendría sentido sólo si siguiera furioso DE VERDAD después de aporrearlo.
-	//AI_Output (other, self, "DIA_Ignaz_Add_15_01"); //(para sí) Pero las peleas son algo frecuente en la zona del puerto. Supongo que debería  buscar a mi víctima en otro lugar
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_05");//Sí, creo que lo has comprendido. Pero para hacer que alguien se enfade, basta con atacarlo. No hace falta que lo tumbes.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_06");//Así que debes encontrar a alguien que esté solo. Si hay otros alrededor, te meterás en problemas con lord Andre.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_07");//Además, no tiene sentido lanzar el conjuro sobre alguien que está justo atacándote. Espera al momento adecuado.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_02");//Hasta ahora solo he conseguido que funcione cuando la persona en cuestiÃ³n estÃ¡ enfadada. Por ejemplo, cuando acaba de ser golpeada o robada.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_03");//Incluso aunque solo haya presenciado dicho acto, lo borrarÃ¡ de su memoria.
+	AI_Output (other, self, "DIA_Ignaz_Experiment_15_04");//Â¿Entonces se supone que debo tumbar a alguien y luego hechizarlo?
+	//AI_Output (other, self, "DIA_Ignaz_Add_15_00"); //Eso tendrÃ­a sentido sÃ³lo si siguiera furioso DE VERDAD despuÃ©s de aporrearlo.
+	//AI_Output (other, self, "DIA_Ignaz_Add_15_01"); //(para sÃ­) Pero las peleas son algo frecuente en la zona del puerto. Supongo que deberÃ­a  buscar a mi vÃ­ctima en otro lugar
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_05");//SÃ­, creo que lo has comprendido. Pero para hacer que alguien se enfade, basta con atacarlo. No hace falta que lo tumbes.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_06");//AsÃ­ que debes encontrar a alguien que estÃ© solo. Si hay otros alrededor, te meterÃ¡s en problemas con lord Andre.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_07");//AdemÃ¡s, no tiene sentido lanzar el conjuro sobre alguien que estÃ¡ justo atacÃ¡ndote. Espera al momento adecuado.
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info teilnhemen
@@ -151,7 +151,7 @@ INSTANCE DIA_Ignaz_teilnehmen   (C_INFO)
 	condition   = DIA_Ignaz_teilnehmen_Condition;
 	information = DIA_Ignaz_teilnehmen_Info;
 	permanent   = FALSE;
-	description = "Muy bien, probaré ese hechizo.";
+	description = "Muy bien, probarÃ© ese hechizo.";
 };
 
 FUNC INT DIA_Ignaz_teilnehmen_Condition()
@@ -163,17 +163,17 @@ FUNC INT DIA_Ignaz_teilnehmen_Condition()
 };
 FUNC VOID DIA_Ignaz_teilnehmen_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_teilnehmen_15_00");//Muy bien, probaré ese conjuro.
+	AI_Output (other, self, "DIA_Ignaz_teilnehmen_15_00");//Muy bien, probarÃ© ese conjuro.
 	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_01");//Pues toma este pergamino de conjuro y encuentra un conejillo de indias adecuado.
-	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_02");//Cuando hayas terminado, regresa y me cuentas cómo ha ido.
+	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_02");//Cuando hayas terminado, regresa y me cuentas cÃ³mo ha ido.
 	
 	B_GiveInvItems (self, other, ITSC_Charm,1);
 	MIS_Ignaz_Charm = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Ignaz,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Ignaz,LOG_RUNNING);
-	B_LogEntry (TOPIC_Ignaz,"Tengo que probar un nuevo conjuro por encargo de Ignaz. Es el conjuro olvido. Cuando alguien se enfade por una pelea o por cualquier otra razón, no volverá a hablarme jamás. Este parece un buen momento para lanzarlo.");
-	B_LogEntry (TOPIC_Ignaz,"Éste es el momento ideal para probar ese conjuro. Se olvidará también de haber informado del asunto. No creo que nadie del distrito del puerto se preocupe si me encargo de él.");
+	B_LogEntry (TOPIC_Ignaz,"Tengo que probar un nuevo conjuro por encargo de Ignaz. Es el conjuro olvido. Cuando alguien se enfade por una pelea o por cualquier otra razÃ³n, no volverÃ¡ a hablarme jamÃ¡s. Este parece un buen momento para lanzarlo.");
+	B_LogEntry (TOPIC_Ignaz,"Ã‰ste es el momento ideal para probar ese conjuro. Se olvidarÃ¡ tambiÃ©n de haber informado del asunto. No creo que nadie del distrito del puerto se preocupe si me encargo de Ã©l.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -201,8 +201,8 @@ FUNC INT DIA_Ignaz_Running_Condition()
 FUNC VOID DIA_Ignaz_Running_Info()
 {
 	AI_Output (other, self, "DIA_Ignaz_Running_15_00");//Acerca del experimento...
-	AI_Output (self, other, "DIA_Ignaz_Running_14_01");//¿Has tenido éxito entonces? ¿O has desperdiciado el pergamino de conjuro? ¿Eh?
-	AI_Output (self, other, "DIA_Ignaz_Running_14_02");//Si necesitas más pergaminos de conjuros, puedes comprármelos a mí.
+	AI_Output (self, other, "DIA_Ignaz_Running_14_01");//Â¿Has tenido Ã©xito entonces? Â¿O has desperdiciado el pergamino de conjuro? Â¿Eh?
+	AI_Output (self, other, "DIA_Ignaz_Running_14_02");//Si necesitas mÃ¡s pergaminos de conjuros, puedes comprÃ¡rmelos a mÃ­.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -215,7 +215,7 @@ INSTANCE DIA_Ignaz_Danach   (C_INFO)
 	condition   = DIA_Ignaz_Danach_Condition;
 	information = DIA_Ignaz_Danach_Info;
 	permanent   = FALSE;
-	description = "Usé el pergamino de conjuro.";
+	description = "UsÃ© el pergamino de conjuro.";
 };
 FUNC INT DIA_Ignaz_Danach_Condition()
 {	
@@ -227,20 +227,20 @@ FUNC INT DIA_Ignaz_Danach_Condition()
 };
 FUNC VOID DIA_Ignaz_Danach_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Danach_15_00");//Usé el pergamino de conjuro.
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_01");//Bien, bien. ¿Y tuviste éxito?
-	AI_Output (other, self, "DIA_Ignaz_Danach_15_02");//Sí, funcionó.
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_03");//Excelente. Un pequeño éxito para la ciencia, ¡pero uno grande para mí!
+	AI_Output (other, self, "DIA_Ignaz_Danach_15_00");//UsÃ© el pergamino de conjuro.
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_01");//Bien, bien. Â¿Y tuviste Ã©xito?
+	AI_Output (other, self, "DIA_Ignaz_Danach_15_02");//SÃ­, funcionÃ³.
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_03");//Excelente. Un pequeÃ±o Ã©xito para la ciencia, Â¡pero uno grande para mÃ­!
 	AI_Output (self, other, "DIA_Ignaz_Danach_14_04");//Ahora puedo usar mi tiempo en instruirte en el arte de la alquimia.
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_05");//También podría darte unas cuantas cosas útiles, si quieres.
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_05");//TambiÃ©n podrÃ­a darte unas cuantas cosas Ãºtiles, si quieres.
 	
 	Ignaz_TeachAlchemy = TRUE;
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Ignaz me puede mostrar fórmulas para destilar pociones. Vive en el distrito de los muelles.");
+	B_LogEntry (Topic_CityTeacher,"Ignaz me puede mostrar fÃ³rmulas para destilar pociones. Vive en el distrito de los muelles.");
 	MIS_Ignaz_Charm = LOG_SUCCESS;
 	B_GivePlayerXP (XP_MIS_Ignaz_Charm);
 	
-	//PATCH fallls alle Scrolls aufgekauft oder geplündert wurden
+	//PATCH fallls alle Scrolls aufgekauft oder geplÃ¼ndert wurden
 	CreateInvItems (self,ITSC_Charm		, 3);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -254,7 +254,7 @@ INSTANCE DIA_Ignaz_Trade   (C_INFO)
 	information = DIA_Ignaz_Trade_Info;
 	permanent   = TRUE;
 	trade 		= TRUE;
-	description = "Enséñame tu mercancía.";
+	description = "EnsÃ©Ã±ame tu mercancÃ­a.";
 };
 FUNC INT DIA_Ignaz_Trade_Condition()
 {	
@@ -267,7 +267,7 @@ FUNC INT DIA_Ignaz_Trade_Condition()
 FUNC VOID DIA_Ignaz_Trade_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Ignaz_Trade_15_00");//Enséñame tu mercancía.
+	AI_Output (other, self, "DIA_Ignaz_Trade_15_00");//EnsÃ©Ã±ame tu mercancÃ­a.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -280,7 +280,7 @@ INSTANCE DIA_Ignaz_Teach   (C_INFO)
 	condition   = DIA_Ignaz_Teach_Condition;
 	information = DIA_Ignaz_Teach_Info;
 	permanent   = TRUE;
-	description = "Instrúyeme en el arte de la alquimia.";
+	description = "InstrÃºyeme en el arte de la alquimia.";
 };
 //----------------------------------------
 var int DIA_Ignaz_Teach_permanent;
@@ -298,7 +298,7 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Ignaz_Teach_15_00");//Instrúyeme en el arte de la alquimia.
+	AI_Output (other, self,"DIA_Ignaz_Teach_15_00");//InstrÃºyeme en el arte de la alquimia.
 	
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
@@ -311,38 +311,38 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Poción de velocidad", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)),DIA_Ignaz_Teach_Speed);
+		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("PociÃ³n de velocidad", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)),DIA_Ignaz_Teach_Speed);
 		talente = (talente + 1);
 	};
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Esencia de maná", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Ignaz_Teach_Mana);
+		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Esencia de manÃ¡", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Ignaz_Teach_Mana);
 		talente = (talente + 1);
 	};
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Esencia de curación", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)) ,DIA_Ignaz_Teach_Health);
+		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Esencia de curaciÃ³n", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)) ,DIA_Ignaz_Teach_Health);
 		talente = (talente + 1);
 	};
 	if (talente > 0)
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_01"); //Para preparar una poción en la mesa del alquimista, necesitas un frasco de laboratorio.
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_02"); //Y necesitarás distintas plantas y otros ingredientes para cada poción.
-			//AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benötigten Pflanzen dafür sehr selten sind.
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_01"); //Para preparar una pociÃ³n en la mesa del alquimista, necesitas un frasco de laboratorio.
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_02"); //Y necesitarÃ¡s distintas plantas y otros ingredientes para cada pociÃ³n.
+			//AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benÃ¶tigten Pflanzen dafÃ¼r sehr selten sind.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_04"); //¿Qué quieres saber?
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_04"); //Â¿QuÃ© quieres saber?
 		};
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Ignaz_Teach_14_05"); //Ya has aprendido todo lo que puedo enseñarte.
+		AI_Output (self, other,"DIA_Ignaz_Teach_14_05"); //Ya has aprendido todo lo que puedo enseÃ±arte.
 		DIA_Ignaz_Teach_permanent = TRUE;
 	};
 };

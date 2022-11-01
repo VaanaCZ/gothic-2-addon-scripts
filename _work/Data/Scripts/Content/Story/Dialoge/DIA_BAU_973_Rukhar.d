@@ -32,7 +32,7 @@ instance DIA_Rukhar_HALLO		(C_INFO)
 	condition	 = 	DIA_Rukhar_HALLO_Condition;
 	information	 = 	DIA_Rukhar_HALLO_Info;
 
-	description	 = 	"¿La cerveza es buena?";
+	description	 = 	"Â¿La cerveza es buena?";
 };
 
 func int DIA_Rukhar_HALLO_Condition ()
@@ -42,7 +42,7 @@ func int DIA_Rukhar_HALLO_Condition ()
 
 func void DIA_Rukhar_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_HALLO_15_00"); //¿La cerveza es buena?
+	AI_Output			(other, self, "DIA_Rukhar_HALLO_15_00"); //Â¿La cerveza es buena?
 	AI_Output			(self, other, "DIA_Rukhar_HALLO_12_01"); //No es la mejor, pero en estos tiempos funestos no se puede ser quisquilloso.
 
 };
@@ -57,7 +57,7 @@ instance DIA_Rukhar_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Rukhar_WASMACHSTDU_Condition;
 	information	 = 	DIA_Rukhar_WASMACHSTDU_Info;
 
-	description	 = 	"¿Qué estás haciendo aquí?";
+	description	 = 	"Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 
 func int DIA_Rukhar_WASMACHSTDU_Condition ()
@@ -70,11 +70,11 @@ func int DIA_Rukhar_WASMACHSTDU_Condition ()
 
 func void DIA_Rukhar_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_WASMACHSTDU_15_00"); //¿Qué haces aquí?
+	AI_Output			(other, self, "DIA_Rukhar_WASMACHSTDU_15_00"); //Â¿QuÃ© haces aquÃ­?
 	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_01"); //Hasta hace unas semanas, trabajaba como un esclavo en los campos del terrateniente.
-	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_02"); //Un día me harté y me largué de inmediato.
-	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_03"); //Ahora soy mi propio jefe. Todo lo que tengo está en este arcón. Y no necesito nada más.
-	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_04"); //¿Te interesa participar en un concurso?
+	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_02"); //Un dÃ­a me hartÃ© y me larguÃ© de inmediato.
+	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_03"); //Ahora soy mi propio jefe. Todo lo que tengo estÃ¡ en este arcÃ³n. Y no necesito nada mÃ¡s.
+	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_04"); //Â¿Te interesa participar en un concurso?
 	Log_CreateTopic (TOPIC_Wettsaufen, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Wettsaufen, LOG_RUNNING);
 	B_LogEntry (TOPIC_Wettsaufen,"En la taberna se realizan apuestas."); 
@@ -92,7 +92,7 @@ instance DIA_Rukhar_WETTKAMPF		(C_INFO)
 	condition	 = 	DIA_Rukhar_WETTKAMPF_Condition;
 	information	 = 	DIA_Rukhar_WETTKAMPF_Info;
 
-	description	 = 	"¿En qué tipo de concurso?";
+	description	 = 	"Â¿En quÃ© tipo de concurso?";
 };
 
 func int DIA_Rukhar_WETTKAMPF_Condition ()
@@ -105,13 +105,13 @@ func int DIA_Rukhar_WETTKAMPF_Condition ()
 
 func void DIA_Rukhar_WETTKAMPF_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_00"); //¿En qué tipo de concurso?
+	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_00"); //Â¿En quÃ© tipo de concurso?
 	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_01"); //Yo lo llamo HASTA EL FONDO.
 	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_02"); //Las reglas son muy sencillas.
 	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_03"); //Nos vamos turnando a la hora de pedir jarras de la mejor cerveza que tiene este vejestorio.
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_04"); //Hay que apurar del todo la jarra, y si la damos la vuelta sobre la mesa no puede dejar círculo.
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_05"); //Gana el último que quede en pie. El perdedor paga la cuenta y lo que nos apostemos. ¿Y bien? ¿Qué te parece?
-	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_06"); //Quizá en otra ocasión, cuando no tenga prisa.
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_04"); //Hay que apurar del todo la jarra, y si la damos la vuelta sobre la mesa no puede dejar cÃ­rculo.
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_05"); //Gana el Ãºltimo que quede en pie. El perdedor paga la cuenta y lo que nos apostemos. Â¿Y bien? Â¿QuÃ© te parece?
+	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_06"); //QuizÃ¡ en otra ocasiÃ³n, cuando no tenga prisa.
 
 };
 
@@ -125,7 +125,7 @@ instance DIA_Rukhar_HOLERANDOLPH		(C_INFO)
 	condition	 = 	DIA_Rukhar_HOLERANDOLPH_Condition;
 	information	 = 	DIA_Rukhar_HOLERANDOLPH_Info;
 
-	description	 = 	"¿Puedo apostar por otro?";
+	description	 = 	"Â¿Puedo apostar por otro?";
 };
 
 func int DIA_Rukhar_HOLERANDOLPH_Condition ()
@@ -138,11 +138,11 @@ func int DIA_Rukhar_HOLERANDOLPH_Condition ()
 
 func void DIA_Rukhar_HOLERANDOLPH_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_HOLERANDOLPH_15_00"); //¿Puedo apostar por otro?
-	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_01"); //Desde luego. Si encuentras a alguien con agallas para enfrentarse a mí, apostaré contigo.
-	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_02"); //Todos ponen el mismo dinero en un bote, y el ganador se lo lleva todo. La cuantía de la apuesta depende de lo que tengas.
+	AI_Output			(other, self, "DIA_Rukhar_HOLERANDOLPH_15_00"); //Â¿Puedo apostar por otro?
+	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_01"); //Desde luego. Si encuentras a alguien con agallas para enfrentarse a mÃ­, apostarÃ© contigo.
+	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_02"); //Todos ponen el mismo dinero en un bote, y el ganador se lo lleva todo. La cuantÃ­a de la apuesta depende de lo que tengas.
 	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_03"); //Si me traes a alguien que se atreva a competir conmigo, puedes apostar.
-	B_LogEntry (TOPIC_Wettsaufen,"Rukhar llama a su pequeño juego AL CENTRO Y PA DENTRO. No, gracias, no me interesa. Encontraré a otro de quien pueda reírse."); 
+	B_LogEntry (TOPIC_Wettsaufen,"Rukhar llama a su pequeÃ±o juego AL CENTRO Y PA DENTRO. No, gracias, no me interesa. EncontrarÃ© a otro de quien pueda reÃ­rse."); 
 
 };
 
@@ -177,12 +177,12 @@ func int DIA_Rukhar_RANDOLPHWILL_Condition ()
 func void DIA_Rukhar_RANDOLPHWILL_Info ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_15_00"); //Tengo a alguien que quiere competir contigo.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_01"); //¿De quién se trata?
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_01"); //Â¿De quiÃ©n se trata?
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_15_02"); //De Randolph.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_03"); //Jo, jo. ¿Randolph el fanfarrón? Muy bien. ¿Por qué no?
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_04"); //Mándame a ese alfeñique. El trato sigue en pie.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_05"); //Recógele dentro de dos días. ¿Quién sabe? A lo mejor tienes suerte y es capaz de levantarse para entonces.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_06"); //¿Cuánto te apuestas?
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_03"); //Jo, jo. Â¿Randolph el fanfarrÃ³n? Muy bien. Â¿Por quÃ© no?
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_04"); //MÃ¡ndame a ese alfeÃ±ique. El trato sigue en pie.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_05"); //RecÃ³gele dentro de dos dÃ­as. Â¿QuiÃ©n sabe? A lo mejor tienes suerte y es capaz de levantarse para entonces.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_06"); //Â¿CuÃ¡nto te apuestas?
 
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
 
@@ -195,7 +195,7 @@ func void DIA_Rukhar_RANDOLPHWILL_Info ()
 func void DIA_Rukhar_RANDOLPHWILL_annehmen ()
 {
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_annehmen_12_00"); //Me guardo tu apuesta hasta que acabe el concurso, ¿vale?
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_annehmen_12_00"); //Me guardo tu apuesta hasta que acabe el concurso, Â¿vale?
 	DIA_Rukhar_RANDOLPHWILL_noPerm = TRUE;
 };
 
@@ -214,7 +214,7 @@ func void DIA_Rukhar_RANDOLPHWILL_mehr ()
 func void DIA_Rukhar_RANDOLPHWILL_nix ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_nix_15_00"); //Nada.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_nix_12_01"); //Entonces será mejor que lo olvidemos.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_nix_12_01"); //Entonces serÃ¡ mejor que lo olvidemos.
 
 	AI_StopProcessInfos (self);
 };
@@ -222,7 +222,7 @@ func void DIA_Rukhar_RANDOLPHWILL_nix ()
 func void DIA_Rukhar_RANDOLPHWILL_10 ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_10_15_00"); //10 monedas de oro.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_10_12_01"); //Venga, me tomas el pelo. No te vas a morir si apuestas unas monedas más.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_10_12_01"); //Venga, me tomas el pelo. No te vas a morir si apuestas unas monedas mÃ¡s.
 
 	Rukhar_Einsatz = 10;
 	Rukhar_Gewinn = 20;
@@ -248,7 +248,7 @@ func void DIA_Rukhar_RANDOLPHWILL_20 ()
 func void DIA_Rukhar_RANDOLPHWILL_50 ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_50_15_00"); //50
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_50_12_01"); //No tan tímido. Atrévete.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_50_12_01"); //No tan tÃ­mido. AtrÃ©vete.
 
 	Rukhar_Einsatz = 50;
 	Rukhar_Gewinn = 100;
@@ -261,7 +261,7 @@ func void DIA_Rukhar_RANDOLPHWILL_50 ()
 func void DIA_Rukhar_RANDOLPHWILL_100 ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_100_15_00"); //100
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_100_12_01"); //Así me gusta.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_100_12_01"); //AsÃ­ me gusta.
 	
 	Rukhar_Einsatz = 100;
 	Rukhar_Gewinn = 200;
@@ -282,7 +282,7 @@ instance DIA_Rukhar_ICHSEHEDICH		(C_INFO)
 	information	 = 	DIA_Rukhar_ICHSEHEDICH_Info;
 	permanent	 = 	TRUE;
 	
-	description	=	"Aquí está mi apuesta.";
+	description	=	"AquÃ­ estÃ¡ mi apuesta.";
 };
 
 var int DIA_Rukhar_ICHSEHEDICH_noPerm;
@@ -301,18 +301,18 @@ func int DIA_Rukhar_ICHSEHEDICH_Condition ()
 
 func void DIA_Rukhar_ICHSEHEDICH_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_ICHSEHEDICH_15_00"); //Aquí está mi apuesta.
+	AI_Output			(other, self, "DIA_Rukhar_ICHSEHEDICH_15_00"); //AquÃ­ estÃ¡ mi apuesta.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold, Rukhar_Einsatz))
 		{
-			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_01"); //Muy bien. No tardes en traer a Randolph, ¿me oyes?
+			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_01"); //Muy bien. No tardes en traer a Randolph, Â¿me oyes?
 			DIA_Rukhar_ICHSEHEDICH_noPerm = TRUE;
 			MIS_Rukhar_Wettkampf = LOG_RUNNING; 
 			B_GivePlayerXP (XP_Ambient);
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_02"); //Qué gracioso. Vuelve cuando tengas suficiente dinero.
+			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_02"); //QuÃ© gracioso. Vuelve cuando tengas suficiente dinero.
 		};
 	AI_StopProcessInfos (self);
 };
@@ -346,7 +346,7 @@ func int DIA_Rukhar_GELDZURUECK_Condition ()
 func void DIA_Rukhar_GELDZURUECK_Info ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_GELDZURUECK_15_00"); //Quiero recuperar mi dinero.
-	AI_Output			(self, other, "DIA_Rukhar_GELDZURUECK_12_01"); //Las deudas de juego son deudas de honor, amigo. Tenías que habértelo pensado antes.
+	AI_Output			(self, other, "DIA_Rukhar_GELDZURUECK_12_01"); //Las deudas de juego son deudas de honor, amigo. TenÃ­as que habÃ©rtelo pensado antes.
 
 	AI_StopProcessInfos (self);
 };
@@ -363,7 +363,7 @@ instance DIA_Rukhar_HAENSELN		(C_INFO)
 	information	 = 	DIA_Rukhar_HAENSELN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Parece que has tratado de abarcar más de lo que puedes.";
+	description	 = 	"Parece que has tratado de abarcar mÃ¡s de lo que puedes.";
 };
 
 func int DIA_Rukhar_HAENSELN_Condition ()
@@ -381,11 +381,11 @@ var int DIA_Rukhar_HAENSELN_nureimalgeld;
 
 func void DIA_Rukhar_HAENSELN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_HAENSELN_15_00"); //Parece que has tratado de abarcar más de lo que puedes.
+	AI_Output			(other, self, "DIA_Rukhar_HAENSELN_15_00"); //Parece que has tratado de abarcar mÃ¡s de lo que puedes.
 
 	if	(DIA_Rukhar_HAENSELN_nureimalgeld == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Rukhar_HAENSELN_12_01"); //Ten tu dinero, y no digas ni una palabra más.
+			AI_Output			(self, other, "DIA_Rukhar_HAENSELN_12_01"); //Ten tu dinero, y no digas ni una palabra mÃ¡s.
 			B_GivePlayerXP (XP_Rukhar_Lost);
 
 			IntToFloat (Rukhar_Gewinn);
@@ -397,7 +397,7 @@ func void DIA_Rukhar_HAENSELN_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Rukhar_HAENSELN_12_02"); //Ya me las pagarás, dalo por descontado.
+			AI_Output			(self, other, "DIA_Rukhar_HAENSELN_12_02"); //Ya me las pagarÃ¡s, dalo por descontado.
 		};
 
 	AI_StopProcessInfos (self);
@@ -413,7 +413,7 @@ instance DIA_Rukhar_Perm		(C_INFO)
 	condition	 = 	DIA_Rukhar_Perm_Condition;
 	information	 = 	DIA_Rukhar_Perm_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Ha pasado alguna otra cosa de interés?";
+	description	 = 	"Â¿Ha pasado alguna otra cosa de interÃ©s?";
 };
 
 func int DIA_Rukhar_Perm_Condition ()
@@ -425,7 +425,7 @@ func int DIA_Rukhar_Perm_Condition ()
 };
 func void DIA_Rukhar_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Rukhar_Perm_15_00"); //¿Ha pasado alguna otra cosa de interés?
+	AI_Output (other, self, "DIA_Rukhar_Perm_15_00"); //Â¿Ha pasado alguna otra cosa de interÃ©s?
 	AI_Output (self, other, "DIA_Rukhar_Perm_12_01"); //No que yo sepa. Nadie me cuenta nada.
 };
 

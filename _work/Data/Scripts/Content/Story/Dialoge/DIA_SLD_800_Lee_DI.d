@@ -31,7 +31,7 @@ instance DIA_Lee_DI_Hallo		(C_INFO)
 	condition	 = 	DIA_Lee_DI_Hallo_Condition;
 	information	 = 	DIA_Lee_DI_Hallo_Info;
 
-	description	 = 	"¿De qué trabajo te harás cargo?";
+	description	 = 	"Â¿De quÃ© trabajo te harÃ¡s cargo?";
 };
 func int DIA_Lee_DI_Hallo_Condition ()
 {	
@@ -43,8 +43,8 @@ func int DIA_Lee_DI_Hallo_Condition ()
 
 func void DIA_Lee_DI_Hallo_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //¿De qué trabajo te harás cargo?
-	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Alguien tiene que vigilar el barco. Me quedaré aquí y me aseguraré de que cuando vuelvas, todo esté en orden.
+	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //Â¿De quÃ© trabajo te harÃ¡s cargo?
+	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Alguien tiene que vigilar el barco. Me quedarÃ© aquÃ­ y me asegurarÃ© de que cuando vuelvas, todo estÃ© en orden.
 	
 };
 
@@ -60,7 +60,7 @@ instance DIA_Lee_DI_PERM6		(C_INFO)
 	information	 = 	DIA_Lee_DI_PERM6_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Qué tal está el barco?";
+	description	 = 	"Â¿QuÃ© tal estÃ¡ el barco?";
 };
 
 func int DIA_Lee_DI_PERM6_Condition ()
@@ -74,7 +74,7 @@ func int DIA_Lee_DI_PERM6_Condition ()
 
 func void DIA_Lee_DI_PERM6_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //¿Qué tal está el barco?
+	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //Â¿QuÃ© tal estÃ¡ el barco?
 
 	if (ORkSturmDI == FALSE)
 	{
@@ -82,7 +82,7 @@ func void DIA_Lee_DI_PERM6_Info ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Todo va bien. Esos miserables orcos pueden venir cuando quieran. Si lo hacen, se llevarán una buena paliza.
+		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Todo va bien. Esos miserables orcos pueden venir cuando quieran. Si lo hacen, se llevarÃ¡n una buena paliza.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -114,7 +114,7 @@ FUNC INT DIA_Lee_DI_Teach_Condition()
 FUNC VOID DIA_Lee_DI_Teach_Info()
 {	
 	AI_Output (other,self ,"DIA_Lee_DI_Teach_15_00"); //Necesito entrenamiento.
-	AI_Output (self,other ,"DIA_Lee_DI_Teach_04_01"); //¿Qué es lo que quieres entrenar?
+	AI_Output (self,other ,"DIA_Lee_DI_Teach_04_01"); //Â¿QuÃ© es lo que quieres entrenar?
 	
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -128,7 +128,7 @@ FUNC VOID DIA_Lee_DI_Teach_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //Tu defensa es lamentable, pero tendrá que servir.
+			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //Tu defensa es lamentable, pero tendrÃ¡ que servir.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -143,7 +143,7 @@ FUNC VOID DIA_Lee_DI_Teach_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 100))
 	{
-			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_5_04_00"); //Tus muñecas están demasiado agarrotadas. Tienes que sostener el arma con más suavidad.
+			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_5_04_00"); //Tus muÃ±ecas estÃ¡n demasiado agarrotadas. Tienes que sostener el arma con mÃ¡s suavidad.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -158,7 +158,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 100))
 	{
-		AI_Output(self,other,"DIA_DIA_Lee_DI_Teach_2H_1_04_00"); //Recuerda en todo momento que la estocada sale de la cadera, no de las muñecas.
+		AI_Output(self,other,"DIA_DIA_Lee_DI_Teach_2H_1_04_00"); //Recuerda en todo momento que la estocada sale de la cadera, no de las muÃ±ecas.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //El golpe más poderoso no sirve de nada si no se acierta a nada. Utiliza la fuerza con inteligencia.
+		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //El golpe mÃ¡s poderoso no sirve de nada si no se acierta a nada. Utiliza la fuerza con inteligencia.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -215,23 +215,23 @@ var int DIA_Lee_DI_UndeadDragonDead_OneTime;
 func void DIA_Lee_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //Ahora podemos seguir nuestro camino. El enemigo ha muerto.
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //Muy bien. Entonces dile al capitán que leve anclas.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //Muy bien. Entonces dile al capitÃ¡n que leve anclas.
 
 	if (DIA_Lee_DI_UndeadDragonDead_OneTime == FALSE)
 	&& (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Me llevarás al continente, ¿verdad?
-			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Sí. Khorinis sobrevivirá sin ti.
-			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem König endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
-			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Entonces por fin podré realizar la visita de cortesía al Rey que he esperado tanto tiempo.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Me llevarÃ¡s al continente, Â¿verdad?
+			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //SÃ­. Khorinis sobrevivirÃ¡ sin ti.
+			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem KÃ¶nig endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
+			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Entonces por fin podrÃ© realizar la visita de cortesÃ­a al Rey que he esperado tanto tiempo.
 			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //Llevo mucho tiempo esperando este momento...
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //¿Qué te parece? ¿No debía ser recompensada mi paciencia?
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Â¿QuÃ© te parece? Â¿No debÃ­a ser recompensada mi paciencia?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //La paciencia y unas buenas razones.
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(Se ríe) Sí. No funcionará sin una fuerza armada. Ha sido un honor combatir a tu lado.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(Se rÃ­e) SÃ­. No funcionarÃ¡ sin una fuerza armada. Ha sido un honor combatir a tu lado.
 			DIA_Lee_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //Que nuestros caminos se vuelvan a cruzar después de esta aventura.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //Que nuestros caminos se vuelvan a cruzar despuÃ©s de esta aventura.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

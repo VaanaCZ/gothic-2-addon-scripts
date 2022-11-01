@@ -78,7 +78,7 @@ FUNC INT DIA_Thorben_angepisst_Condition()
 };
 FUNC VOID DIA_Thorben_angepisst_Info()
 {	
-	AI_Output (self, other,"DIA_Thorben_angepisst_06_00"); //Has asesinado a mi Gritta. Nunca te lo perdonaré. ¡Fuera de mi vista, asesino!
+	AI_Output (self, other,"DIA_Thorben_angepisst_06_00"); //Has asesinado a mi Gritta. Nunca te lo perdonarÃ©. Â¡Fuera de mi vista, asesino!
 	AI_StopProcessInfos (self);
 };
 
@@ -105,9 +105,9 @@ FUNC INT DIA_Thorben_Hallo_Condition()
 };
 FUNC VOID DIA_Thorben_Hallo_Info()
 {	
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_00"); //¡Ah! Una cara nueva. Tú no eres de Khorinis, ¿verdad?
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_01"); //No es una buena época para viajar. Hay bandidos por todas partes, no hay trabajo y ahora los granjeros también se han sublevado.
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_02"); //¿Qué vientos te han traído por aquí?
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_00"); //Â¡Ah! Una cara nueva. TÃº no eres de Khorinis, Â¿verdad?
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_01"); //No es una buena Ã©poca para viajar. Hay bandidos por todas partes, no hay trabajo y ahora los granjeros tambiÃ©n se han sublevado.
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_02"); //Â¿QuÃ© vientos te han traÃ­do por aquÃ­?
 };
 
 // ************************************************************
@@ -129,16 +129,16 @@ FUNC INT DIA_Thorben_Arbeit_Condition()
 FUNC VOID DIA_Thorben_Arbeit_Info()
 {	
 	AI_Output (other, self,"DIA_Thorben_Arbeit_15_00"); //Busco trabajo.
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_01"); //¿Sabes algo sobre carpintería?
-	AI_Output (other, self,"DIA_Thorben_Arbeit_15_02"); //Lo único que sé hacer con madera es fuego.
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_03"); //¿Y sobre cerraduras?
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_01"); //Â¿Sabes algo sobre carpinterÃ­a?
+	AI_Output (other, self,"DIA_Thorben_Arbeit_15_02"); //Lo Ãºnico que sÃ© hacer con madera es fuego.
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_03"); //Â¿Y sobre cerraduras?
 	AI_Output (other, self,"DIA_Thorben_Arbeit_15_04"); //Bueeeenoo...
 	AI_Output (self, other,"DIA_Thorben_Arbeit_06_05"); //Lo siento pero no me vales si no sabes nada de mi oficio.
 	AI_Output (self, other,"DIA_Thorben_Arbeit_06_06"); //Y yo no tengo dinero para pagar a un aprendiz.
 	
 	Log_CreateTopic (TOPIC_Lehrling,LOG_MISSION); 
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling, "Thorben no me aceptará como su aprendiz.");
+	B_LogEntry (TOPIC_Lehrling, "Thorben no me aceptarÃ¡ como su aprendiz.");
 };
 
 // ************************************************************
@@ -151,7 +151,7 @@ INSTANCE DIA_Thorben_OtherMasters(C_INFO)
 	condition	= DIA_Thorben_OtherMasters_Condition;
 	information	= DIA_Thorben_OtherMasters_Info;
 	permanent	= FALSE;
-	description = "¿Y si quiero ser aprendiz de uno de los otros maestros de aquí?";
+	description = "Â¿Y si quiero ser aprendiz de uno de los otros maestros de aquÃ­?";
 };                       
 FUNC INT DIA_Thorben_OtherMasters_Condition()
 {	
@@ -163,10 +163,10 @@ FUNC INT DIA_Thorben_OtherMasters_Condition()
 };
 FUNC VOID DIA_Thorben_OtherMasters_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_OtherMasters_15_00"); //¿Y si quiero ser aprendiz de uno de los otros maestros de aquí?
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_01"); //De acuerdo, te daré mi aprobación.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_02"); //Pero será mejor que primero obtengas la bendición de los dioses.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_03"); //Así que, ¿eres un hombre de fe?
+	AI_Output (other, self,"DIA_Thorben_OtherMasters_15_00"); //Â¿Y si quiero ser aprendiz de uno de los otros maestros de aquÃ­?
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_01"); //De acuerdo, te darÃ© mi aprobaciÃ³n.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_02"); //Pero serÃ¡ mejor que primero obtengas la bendiciÃ³n de los dioses.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_03"); //AsÃ­ que, Â¿eres un hombre de fe?
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
 	if (other.guild != GIL_KDF)
@@ -175,30 +175,30 @@ FUNC VOID DIA_Thorben_OtherMasters_Info()
 	{
 		Info_AddChoice (DIA_Thorben_OtherMasters, "Bueno, si te refieres a eso, rezo mis oraciones regularmente...", DIA_Thorben_OtherMasters_Naja);
 	};
-	Info_AddChoice (DIA_Thorben_OtherMasters, "Sí. Un sirviente de lo más humilde, maestro Thorben.", DIA_Thorben_OtherMasters_Devoutly);
+	Info_AddChoice (DIA_Thorben_OtherMasters, "SÃ­. Un sirviente de lo mÃ¡s humilde, maestro Thorben.", DIA_Thorben_OtherMasters_Devoutly);
 };
 
 func void B_Thorben_GetBlessings()
 {
-	AI_Output (self, other,"B_Thorben_GetBlessings_06_00"); //Pues habla con Vatras, el sacerdote de Adanos, y haz que te dé su bendición.
+	AI_Output (self, other,"B_Thorben_GetBlessings_06_00"); //Pues habla con Vatras, el sacerdote de Adanos, y haz que te dÃ© su bendiciÃ³n.
 	if (other.guild != GIL_KDF)
 	&& (other.guild != GIL_NOV)
 	&& (other.guild != GIL_PAL)
 	{
-		AI_Output (self, other,"B_Thorben_GetBlessings_06_01"); //Él te dirá dónde puedes encontrar a un sacerdote de Innos. También deberías obtener su bendición.
+		AI_Output (self, other,"B_Thorben_GetBlessings_06_01"); //Ã‰l te dirÃ¡ dÃ³nde puedes encontrar a un sacerdote de Innos. TambiÃ©n deberÃ­as obtener su bendiciÃ³n.
 	};
-	AI_Output (self, other,"B_Thorben_GetBlessings_06_02"); //Cuando tengas la bendición de los dioses, votaré a tu favor.
+	AI_Output (self, other,"B_Thorben_GetBlessings_06_02"); //Cuando tengas la bendiciÃ³n de los dioses, votarÃ© a tu favor.
 	
 	MIS_Thorben_GetBlessings = LOG_RUNNING;
 	
 	Log_CreateTopic(TOPIC_Thorben,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Thorben,LOG_RUNNING);
-	B_LogEntry (TOPIC_Thorben,"Thorben me dará su consentimiento, si un sacerdote de Adanos y otro de Innos me bendicen.");
+	B_LogEntry (TOPIC_Thorben,"Thorben me darÃ¡ su consentimiento, si un sacerdote de Adanos y otro de Innos me bendicen.");
 };
 
 func void DIA_Thorben_OtherMasters_Devoutly()
 {
-	AI_Output (other, self,"DIA_Thorben_OtherMasters_Devoutly_15_00"); //Sí. Un sirviente de lo más humilde, maestro Thorben.
+	AI_Output (other, self,"DIA_Thorben_OtherMasters_Devoutly_15_00"); //SÃ­. Un sirviente de lo mÃ¡s humilde, maestro Thorben.
 	B_Thorben_GetBlessings();
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
@@ -207,9 +207,9 @@ func void DIA_Thorben_OtherMasters_Devoutly()
 func void DIA_Thorben_OtherMasters_Naja()
 {
 	AI_Output (other, self,"DIA_Thorben_OtherMasters_Naja_15_00"); //Bueno, si te refieres a eso, rezo mis oraciones regularmente...
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_01"); //¡Ya veo!
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_02"); //Un hombre que no ejerce su oficio con la bendición de los dioses nunca recibirá mi aprobación.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_03"); //Pide perdón a los dioses por tus transgresiones.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_01"); //Â¡Ya veo!
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_02"); //Un hombre que no ejerce su oficio con la bendiciÃ³n de los dioses nunca recibirÃ¡ mi aprobaciÃ³n.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_03"); //Pide perdÃ³n a los dioses por tus transgresiones.
 	B_Thorben_GetBlessings();
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
@@ -225,7 +225,7 @@ INSTANCE DIA_Thorben_ZUSTIMMUNG(C_INFO)
 	condition	= DIA_Thorben_ZUSTIMMUNG_Condition;
 	information	= DIA_Thorben_ZUSTIMMUNG_Info;
 	permanent	= TRUE;
-	description = "¿Qué hay de tu aprobación, maestro?";
+	description = "Â¿QuÃ© hay de tu aprobaciÃ³n, maestro?";
 };                       
 FUNC INT DIA_Thorben_ZUSTIMMUNG_Condition()
 {	
@@ -237,43 +237,43 @@ FUNC INT DIA_Thorben_ZUSTIMMUNG_Condition()
 };
 FUNC VOID DIA_Thorben_ZUSTIMMUNG_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_00"); //¿Qué hay de tu aprobación, maestro?
-	AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_01"); //¿Te ha dado Vatras su bendición?
+	AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_00"); //Â¿QuÃ© hay de tu aprobaciÃ³n, maestro?
+	AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_01"); //Â¿Te ha dado Vatras su bendiciÃ³n?
 	
 	if (Vatras_Segen == TRUE)
 	{
-		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_02"); //Sí.
-		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_03"); //¿Y también recibiste la bendición de un sacerdote de Innos?
+		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_02"); //SÃ­.
+		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_03"); //Â¿Y tambiÃ©n recibiste la bendiciÃ³n de un sacerdote de Innos?
 		
 		if (Daron_Segen == TRUE)
 		|| (Isgaroth_Segen == TRUE)
 		|| (other.guild == GIL_KDF)
 		{
-			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_04"); //Sí.
-			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_05"); //Pues entonces también recibirás mi bendición. No importa el camino que elijas seguir, ¡enorgullécete de hacer un buen trabajo, hijo mío!
+			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_04"); //SÃ­.
+			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_05"); //Pues entonces tambiÃ©n recibirÃ¡s mi bendiciÃ³n. No importa el camino que elijas seguir, Â¡enorgullÃ©cete de hacer un buen trabajo, hijo mÃ­o!
 			
 			MIS_Thorben_GetBlessings = LOG_SUCCESS;
 			B_GivePlayerXP (XP_Zustimmung);
 			
 			Log_CreateTopic (TOPIC_Lehrling,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-			B_LogEntry (TOPIC_Lehrling,"Thorben me dará su consentimiento si quiero trabajar como aprendiz.");
+			B_LogEntry (TOPIC_Lehrling,"Thorben me darÃ¡ su consentimiento si quiero trabajar como aprendiz.");
 		}
 		else
 		{
-			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_06"); //No, todavía no...
-			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_07"); //Ya conoces mis condiciones. Solo deberías dedicarte a tu oficio con la bendición de los dioses.
+			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_06"); //No, todavÃ­a no...
+			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_07"); //Ya conoces mis condiciones. Solo deberÃ­as dedicarte a tu oficio con la bendiciÃ³n de los dioses.
 		};
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_08"); //Aún no...
-		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_09"); //Pues entonces no sé por qué me estás preguntando otra vez. Ya sabes mis condiciones.
+		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_08"); //AÃºn no...
+		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_09"); //Pues entonces no sÃ© por quÃ© me estÃ¡s preguntando otra vez. Ya sabes mis condiciones.
 	};
 };
 
 // ************************************************************
-// 		Was weißt du über Schlösser?		//E2
+// 		Was weiÃŸt du Ã¼ber SchlÃ¶sser?		//E2
 // ************************************************************
 INSTANCE DIA_Thorben_Locksmith(C_INFO)
 {
@@ -282,7 +282,7 @@ INSTANCE DIA_Thorben_Locksmith(C_INFO)
 	condition	= DIA_Thorben_Locksmith_Condition;
 	information	= DIA_Thorben_Locksmith_Info;
 	permanent	= FALSE;
-	description = "¿Así que sabes mucho sobre cerraduras?";
+	description = "Â¿AsÃ­ que sabes mucho sobre cerraduras?";
 };                       
 FUNC INT DIA_Thorben_Locksmith_Condition()
 {	
@@ -293,10 +293,10 @@ FUNC INT DIA_Thorben_Locksmith_Condition()
 };
 FUNC VOID DIA_Thorben_Locksmith_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Locksmith_15_00"); //¿Así que sabes mucho sobre cerraduras?
-	AI_Output (self, other,"DIA_Thorben_Locksmith_06_01"); //¿De qué sirve un buen cofre sin una buena cerradura?
+	AI_Output (other, self,"DIA_Thorben_Locksmith_15_00"); //Â¿AsÃ­ que sabes mucho sobre cerraduras?
+	AI_Output (self, other,"DIA_Thorben_Locksmith_06_01"); //Â¿De quÃ© sirve un buen cofre sin una buena cerradura?
 	AI_Output (self, other,"DIA_Thorben_Locksmith_06_02"); //Hago mis propias cerraduras. De esa forma, al menos puedo estar seguro de no haber hecho mis cofres tan resistentes para nada.
-	AI_Output (self, other,"DIA_Thorben_Locksmith_06_03"); //Una cerradura mal hecha es fácil de abrir. Y hay montones de ladrones rondando por Khorinis. ¡Sobre todo últimamente!
+	AI_Output (self, other,"DIA_Thorben_Locksmith_06_03"); //Una cerradura mal hecha es fÃ¡cil de abrir. Y hay montones de ladrones rondando por Khorinis. Â¡Sobre todo Ãºltimamente!
 };
 
 // ************************************************************
@@ -309,7 +309,7 @@ INSTANCE DIA_Thorben_Schuldenbuch(C_INFO)
 	condition	= DIA_Thorben_Schuldenbuch_Condition;
 	information	= DIA_Thorben_Schuldenbuch_Info;
 	permanent	= FALSE;
-	description = "Tengo el libro de cuentas de Lehmar justo aquí...";
+	description = "Tengo el libro de cuentas de Lehmar justo aquÃ­...";
 };                       
 FUNC INT DIA_Thorben_Schuldenbuch_Condition()
 {	
@@ -320,18 +320,18 @@ FUNC INT DIA_Thorben_Schuldenbuch_Condition()
 };
 FUNC VOID DIA_Thorben_Schuldenbuch_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_00"); //Tengo el libro de cuentas de Lehmar justo aquí...
-	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_01"); //(Suspicaz) ¿De dónde has sacado eso?
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_02"); //Eso no debería importarte tanto como el hecho de que tu nombre esté en él.
-	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_03"); //¡Dámelo!
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_00"); //Tengo el libro de cuentas de Lehmar justo aquÃ­...
+	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_01"); //(Suspicaz) Â¿De dÃ³nde has sacado eso?
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_02"); //Eso no deberÃ­a importarte tanto como el hecho de que tu nombre estÃ© en Ã©l.
+	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_03"); //Â¡DÃ¡melo!
 	B_GiveInvItems (other, self, ItWr_Schuldenbuch, 1);
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_04"); //¿Y tú qué me darías a mí?
-	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_05"); //No tengo dinero que gastar y no puedo darte más que mi más sentida gratitud.
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_04"); //Â¿Y tÃº quÃ© me darÃ­as a mÃ­?
+	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_05"); //No tengo dinero que gastar y no puedo darte mÃ¡s que mi mÃ¡s sentida gratitud.
 	B_GivePlayerXP (XP_Schuldenbuch);
 };
 
 // ************************************************************
-// 		Kann ich Schlösser knacken lernen		//E3
+// 		Kann ich SchlÃ¶sser knacken lernen		//E3
 // ************************************************************
 INSTANCE DIA_Thorben_PleaseTeach(C_INFO)
 {
@@ -340,7 +340,7 @@ INSTANCE DIA_Thorben_PleaseTeach(C_INFO)
 	condition	= DIA_Thorben_PleaseTeach_Condition;
 	information	= DIA_Thorben_PleaseTeach_Info;
 	permanent	= TRUE;
-	description = "¿Puedes enseñarme a abrir cerraduras?";
+	description = "Â¿Puedes enseÃ±arme a abrir cerraduras?";
 };                       
 FUNC INT DIA_Thorben_PleaseTeach_Condition()
 {	
@@ -353,56 +353,56 @@ FUNC INT DIA_Thorben_PleaseTeach_Condition()
 };
 FUNC VOID DIA_Thorben_PleaseTeach_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_00"); //¿Puedes enseñarme a abrir cerraduras?
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_00"); //Â¿Puedes enseÃ±arme a abrir cerraduras?
 		
 	if (Npc_HasItems (self, ItWr_Schuldenbuch) > 0)
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_01"); //Si no fuera por ti, estaría pagando a Lehmar durante el resto de mi vida.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_02"); //Te enseñaré lo que quieres saber.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_01"); //Si no fuera por ti, estarÃ­a pagando a Lehmar durante el resto de mi vida.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_02"); //Te enseÃ±arÃ© lo que quieres saber.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else if (Thorben_GotGold == TRUE) //100 Gold bekommen
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_03"); //Me has traído las 100 monedas de oro. Eso ha sido muy honrado por tu parte.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_04"); //Casi me avergüenza, pero debo pedirte algo más.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_05"); //Si no puedo saldar pronto mi deuda con Lehmar, enviará a sus secuaces a por mí.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_06"); //Dame otras 100 monedas de oro y te instruiré.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_03"); //Me has traÃ­do las 100 monedas de oro. Eso ha sido muy honrado por tu parte.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_04"); //Casi me avergÃ¼enza, pero debo pedirte algo mÃ¡s.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_05"); //Si no puedo saldar pronto mi deuda con Lehmar, enviarÃ¡ a sus secuaces a por mÃ­.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_06"); //Dame otras 100 monedas de oro y te instruirÃ©.
 
 		Info_ClearChoices (DIA_Thorben_PleaseTeach);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "¿Cuánto cobras?", DIA_Thorben_PleaseTeach_Later);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "Bien. Aquí tienes 100 monedas de oro.", DIA_Thorben_PleaseTeach_Pay100);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "Â¿CuÃ¡nto cobras?", DIA_Thorben_PleaseTeach_Later);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "Bien. AquÃ­ tienes 100 monedas de oro.", DIA_Thorben_PleaseTeach_Pay100);
 	}
 	else if (MIS_Matteo_Gold == LOG_SUCCESS) //Grittas Schulden bezahlt
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_07"); //Has pagado la deuda de Gritta con Matteo. Pareces un tipo decente. Te enseñaré lo que quieres saber.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_08"); //Sin embargo, no puedo hacerlo gratis. Aún tengo una montaña de deudas y necesito el dinero.
-		AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_09"); //¿Cuánto cobras?
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_07"); //Has pagado la deuda de Gritta con Matteo. Pareces un tipo decente. Te enseÃ±arÃ© lo que quieres saber.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_08"); //Sin embargo, no puedo hacerlo gratis. AÃºn tengo una montaÃ±a de deudas y necesito el dinero.
+		AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_09"); //Â¿CuÃ¡nto cobras?
 		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_10"); //200 monedas de oro.
 		
 		Info_ClearChoices (DIA_Thorben_PleaseTeach);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "¿Cuánto cobras?", DIA_Thorben_PleaseTeach_Later);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "Bien. Aquí tienes 200 monedas de oro.", DIA_Thorben_PleaseTeach_Pay200);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "Â¿CuÃ¡nto cobras?", DIA_Thorben_PleaseTeach_Later);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "Bien. AquÃ­ tienes 200 monedas de oro.", DIA_Thorben_PleaseTeach_Pay200);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_11"); //Mmm... No sé si eres de confianza o no.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_12"); //Por lo que sé, podrías ser uno de esos holgazanes que solo vienen a la ciudad a vaciar los cofres de las personas honestas.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_13"); //No voy a enseñarte nada hasta que esté convencido de que eres un tipo honesto.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_11"); //Mmm... No sÃ© si eres de confianza o no.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_12"); //Por lo que sÃ©, podrÃ­as ser uno de esos holgazanes que solo vienen a la ciudad a vaciar los cofres de las personas honestas.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_13"); //No voy a enseÃ±arte nada hasta que estÃ© convencido de que eres un tipo honesto.
 	};
 };
 
 func void DIA_Thorben_PleaseTeach_Pay200()
 {
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay200_15_00"); //Bien. Aquí tienes 200 monedas de oro.
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay200_15_00"); //Bien. AquÃ­ tienes 200 monedas de oro.
 	
 	if (B_GiveInvItems (other, self, ItMi_Gold, 200))
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_01"); //Este dinero me va a venir muy bien. Podemos empezar tan pronto como estés preparado.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_01"); //Este dinero me va a venir muy bien. Podemos empezar tan pronto como estÃ©s preparado.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_02"); //Aún te faltan unas monedas para 200. Necesito ese dinero.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_02"); //AÃºn te faltan unas monedas para 200. Necesito ese dinero.
 	};
 	
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
@@ -410,16 +410,16 @@ func void DIA_Thorben_PleaseTeach_Pay200()
 
 func void DIA_Thorben_PleaseTeach_Pay100()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay100_15_00"); //Bien. Aquí tienes 100 monedas de oro.
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay100_15_00"); //Bien. AquÃ­ tienes 100 monedas de oro.
 		
 	if (B_GiveInvItems (other, self, ItMi_Gold, 100))
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_01"); //En ese caso, podemos empezar cuando estés listo.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_01"); //En ese caso, podemos empezar cuando estÃ©s listo.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_02"); //Oye, aún te faltan unas monedas para llegar a 100.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_02"); //Oye, aÃºn te faltan unas monedas para llegar a 100.
 	};
 	
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
@@ -427,13 +427,13 @@ func void DIA_Thorben_PleaseTeach_Pay100()
 	
 func void DIA_Thorben_PleaseTeach_Later()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Later_15_00"); //A lo mejor más tarde...
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Later_15_00"); //A lo mejor mÃ¡s tarde...
 
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
 };
 
 // ************************************************************
-// 		Schlösser knacken lernen		//E4
+// 		SchlÃ¶sser knacken lernen		//E4
 // ************************************************************
 INSTANCE DIA_Thorben_Teach(C_INFO)
 {
@@ -442,7 +442,7 @@ INSTANCE DIA_Thorben_Teach(C_INFO)
 	condition	= DIA_Thorben_Teach_Condition;
 	information	= DIA_Thorben_Teach_Info;
 	permanent	= TRUE;
-	description = B_BuildLearnString("¡Enséñame a abrir una cerradura!", B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1));
+	description = B_BuildLearnString("Â¡EnsÃ©Ã±ame a abrir una cerradura!", B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1));
 };                       
 FUNC INT DIA_Thorben_Teach_Condition()
 {	
@@ -454,13 +454,13 @@ FUNC INT DIA_Thorben_Teach_Condition()
 };
 FUNC VOID DIA_Thorben_Teach_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Teach_15_00"); //¡Enséñame a abrir una cerradura!
+	AI_Output (other, self,"DIA_Thorben_Teach_15_00"); //Â¡EnsÃ©Ã±ame a abrir una cerradura!
 	
 	if B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK)
 	{
-		AI_Output (self, other,"DIA_Thorben_Teach_06_01"); //Lo único que necesitas es una ganzúa. Si la mueves con cuidado a la izquierda y a la derecha en la cerradura, puedes abrir el mecanismo.
-		AI_Output (self, other,"DIA_Thorben_Teach_06_02"); //Pero si lo mueves mucho o demasiado rápido en la dirección equivocada, se partirá al momento.
-		AI_Output (self, other,"DIA_Thorben_Teach_06_03"); //Cuanta más práctica tengas, menos ganzúas necesitarás. Eso es todo. En serio.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_01"); //Lo Ãºnico que necesitas es una ganzÃºa. Si la mueves con cuidado a la izquierda y a la derecha en la cerradura, puedes abrir el mecanismo.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_02"); //Pero si lo mueves mucho o demasiado rÃ¡pido en la direcciÃ³n equivocada, se partirÃ¡ al momento.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_03"); //Cuanta mÃ¡s prÃ¡ctica tengas, menos ganzÃºas necesitarÃ¡s. Eso es todo. En serio.
 	};
 };
 
@@ -474,7 +474,7 @@ INSTANCE DIA_Thorben_TRADE(C_INFO)
 	condition	= DIA_Thorben_TRADE_Condition;
 	information	= DIA_Thorben_TRADE_Info;
 	permanent	= TRUE;
-	description = "¿Puedes venderme unas ganzúas?";
+	description = "Â¿Puedes venderme unas ganzÃºas?";
 	trade		= TRUE;
 };                       
 FUNC INT DIA_Thorben_TRADE_Condition()
@@ -486,7 +486,7 @@ FUNC INT DIA_Thorben_TRADE_Condition()
 };
 FUNC VOID DIA_Thorben_TRADE_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_TRADE_15_00"); //¿Puedes venderme algunas ganzúas?
+	AI_Output (other, self,"DIA_Thorben_TRADE_15_00"); //Â¿Puedes venderme algunas ganzÃºas?
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_PICKLOCK) > 0)
 	{
@@ -494,7 +494,7 @@ FUNC VOID DIA_Thorben_TRADE_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_TRADE_06_02"); //Bueno, de acuerdo. Pero no te van a servir de nada mientras no sepas cómo funcionan.
+		AI_Output (self, other,"DIA_Thorben_TRADE_06_02"); //Bueno, de acuerdo. Pero no te van a servir de nada mientras no sepas cÃ³mo funcionan.
 	};
 	
 	if (Npc_HasItems (self, ITke_Lockpick) == 0) 
@@ -504,7 +504,7 @@ FUNC VOID DIA_Thorben_TRADE_Info()
 		Dietrichgeben = Dietrichgeben +1;
 	};
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"El carpintero Throben vende ganzúas."); 
+	B_LogEntry (Topic_CityTrader,"El carpintero Throben vende ganzÃºas."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -517,7 +517,7 @@ instance DIA_Addon_Thorben_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Thorben_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Thorben_MissingPeople_Info;
 
-	description	 = 	"¿Has tenido algún aprendiz?";
+	description	 = 	"Â¿Has tenido algÃºn aprendiz?";
 };
 
 func int DIA_Addon_Thorben_MissingPeople_Condition ()
@@ -532,11 +532,11 @@ func int DIA_Addon_Thorben_MissingPeople_Condition ()
 
 func void DIA_Addon_Thorben_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_00"); //¿Has tenido algún aprendiz?
-	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_01"); //Sí, no hace mucho.
-	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_02"); //¿Y? ¿Qué ocurrió?
+	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_00"); //Â¿Has tenido algÃºn aprendiz?
+	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_01"); //SÃ­, no hace mucho.
+	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_02"); //Â¿Y? Â¿QuÃ© ocurriÃ³?
 	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_03"); //Se llama Elvrich. Es mi sobrino.
-	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_04"); //Estaba encantado con él, la verdad, pero un buen día no vino a trabajar.
+	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_04"); //Estaba encantado con Ã©l, la verdad, pero un buen dÃ­a no vino a trabajar.
 	
 	MIS_Thorben_BringElvrichBack = LOG_RUNNING;
 
@@ -546,9 +546,9 @@ func void DIA_Addon_Thorben_MissingPeople_Info ()
 	
 	Info_ClearChoices	(DIA_Addon_Thorben_MissingPeople);
 	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, DIALOG_BACK, DIA_Addon_Thorben_MissingPeople_Back );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "¿Has informado a la milicia?", DIA_Addon_Thorben_MissingPeople_Mil );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "¿Cuánto hace que no lo ves?", DIA_Addon_Thorben_MissingPeople_wann );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "¿Dónde está ahora Elvrich?", DIA_Addon_Thorben_MissingPeople_where );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Â¿Has informado a la milicia?", DIA_Addon_Thorben_MissingPeople_Mil );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Â¿CuÃ¡nto hace que no lo ves?", DIA_Addon_Thorben_MissingPeople_wann );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Â¿DÃ³nde estÃ¡ ahora Elvrich?", DIA_Addon_Thorben_MissingPeople_where );
 };
 
 func void DIA_Addon_Thorben_MissingPeople_Back ()
@@ -558,23 +558,23 @@ func void DIA_Addon_Thorben_MissingPeople_Back ()
 
 func void DIA_Addon_Thorben_MissingPeople_wann ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_wann_15_00"); //¿Cuánto hace que no lo ves?
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_wann_15_00"); //Â¿CuÃ¡nto hace que no lo ves?
 	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_wann_06_01"); //Debe de hacer unas 2 semanas.
 };
 
 func void DIA_Addon_Thorben_MissingPeople_where ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_where_15_00"); //¿Dónde está ahora Elvrich?
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_01"); //¿Cómo quieres que lo sepa? Frecuentaba ese burdel apestoso junto al puerto.
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_02"); //No me sorprendería que andara calentando la cama de alguna de esas chicas.
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_where_15_00"); //Â¿DÃ³nde estÃ¡ ahora Elvrich?
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_01"); //Â¿CÃ³mo quieres que lo sepa? Frecuentaba ese burdel apestoso junto al puerto.
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_02"); //No me sorprenderÃ­a que andara calentando la cama de alguna de esas chicas.
 };
 
 func void DIA_Addon_Thorben_MissingPeople_Mil ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_00"); //¿Has informado a la milicia?
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_01"); //Claro que sí. Se suponía que tenían que cogerlo y ocuparse de que ese holgazán cumpliera con su trabajo. Pero ahora me arrepiento.
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_02"); //Que haga lo que quiera. Tarde o temprano se dará cuenta de que no llegará a nada en Khorinis sin un trabajo honrado.
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_03"); //(cínicamente) Si tú lo dices
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_00"); //Â¿Has informado a la milicia?
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_01"); //Claro que sÃ­. Se suponÃ­a que tenÃ­an que cogerlo y ocuparse de que ese holgazÃ¡n cumpliera con su trabajo. Pero ahora me arrepiento.
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_02"); //Que haga lo que quiera. Tarde o temprano se darÃ¡ cuenta de que no llegarÃ¡ a nada en Khorinis sin un trabajo honrado.
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_03"); //(cÃ­nicamente) Si tÃº lo dices
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -587,7 +587,7 @@ instance DIA_Addon_Thorben_ElvrichIsBack		(C_INFO)
 	condition	 = 	DIA_Addon_Thorben_ElvrichIsBack_Condition;
 	information	 = 	DIA_Addon_Thorben_ElvrichIsBack_Info;
 
-	description	 = 	"Elvrich volverá a trabajar para ti a partir de hoy.";
+	description	 = 	"Elvrich volverÃ¡ a trabajar para ti a partir de hoy.";
 };
 
 func int DIA_Addon_Thorben_ElvrichIsBack_Condition ()
@@ -601,7 +601,7 @@ func int DIA_Addon_Thorben_ElvrichIsBack_Condition ()
 
 func void DIA_Addon_Thorben_ElvrichIsBack_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Thorben_ElvrichIsBack_15_00"); //Elvrich volverá a trabajar para ti a partir de hoy.
+	AI_Output	(other, self, "DIA_Addon_Thorben_ElvrichIsBack_15_00"); //Elvrich volverÃ¡ a trabajar para ti a partir de hoy.
 	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_01"); //Espero que no vuelva a desaparecer en cuanto se le contonee la siguiente fresca.
 	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_02"); //Acepta este oro como recompensa por devolverme a mi aprendiz.
 	CreateInvItems (self, ItMi_Gold, 200);									
@@ -620,7 +620,7 @@ INSTANCE DIA_Thorben_Paladine(C_INFO)
 	condition	= DIA_Thorben_Paladine_Condition;
 	information	= DIA_Thorben_Paladine_Info;
 	permanent	= FALSE;
-	description = "¿Qué sabes de los paladines?";
+	description = "Â¿QuÃ© sabes de los paladines?";
 };                       
 FUNC INT DIA_Thorben_Paladine_Condition()
 {	
@@ -631,12 +631,12 @@ FUNC INT DIA_Thorben_Paladine_Condition()
 };
 FUNC VOID DIA_Thorben_Paladine_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Paladine_15_00"); //¿Qué sabes de los paladines?
+	AI_Output (other, self,"DIA_Thorben_Paladine_15_00"); //Â¿QuÃ© sabes de los paladines?
 	AI_Output (self, other,"DIA_Thorben_Paladine_06_01"); //No mucho. Llegaron en barco desde el continente hace dos semanas.
 	AI_Output (self, other,"DIA_Thorben_Paladine_06_02"); //Desde entonces, se han recluido en la parte alta de la ciudad.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_03"); //Aquí nadie sabe exactamente por qué han venido.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_03"); //AquÃ­ nadie sabe exactamente por quÃ© han venido.
 	AI_Output (self, other,"DIA_Thorben_Paladine_06_04"); //Muchos tienen miedo de un ataque de los orcos.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_05"); //Sin embargo, supongo que están aquí para sofocar la rebelión de los granjeros.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_05"); //Sin embargo, supongo que estÃ¡n aquÃ­ para sofocar la rebeliÃ³n de los granjeros.
 };
 
 // ************************************************************
@@ -649,7 +649,7 @@ INSTANCE DIA_Thorben_Bauernaufstand(C_INFO)
 	condition	= DIA_Thorben_Bauernaufstand_Condition;
 	information	= DIA_Thorben_Bauernaufstand_Info;
 	permanent	= FALSE;
-	description = "¿Sabes algo sobre la rebelión de los campesinos?";
+	description = "Â¿Sabes algo sobre la rebeliÃ³n de los campesinos?";
 };                       
 FUNC INT DIA_Thorben_Bauernaufstand_Condition()
 {	
@@ -662,12 +662,12 @@ FUNC INT DIA_Thorben_Bauernaufstand_Condition()
 };
 FUNC VOID DIA_Thorben_Bauernaufstand_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Bauernaufstand_15_00"); //¿Sabes algo sobre la rebelión de los campesinos?
+	AI_Output (other, self,"DIA_Thorben_Bauernaufstand_15_00"); //Â¿Sabes algo sobre la rebeliÃ³n de los campesinos?
 	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_01"); //Los rumores dicen que Onar, el terrateniente, ha contratado a mercenarios para mantener apartadas a las tropas del Rey.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_02"); //Probablemente se cansó de tener que desperdiciar su cosecha y su ganado entregándoselos a los paladines y a la milicia.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_03"); //Lo único que notamos en esta ciudad es que los precios de la comida siguen subiendo.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_04"); //La granja de Onar está lejos, al este de aquí. Si hubiera algún enfrentamiento allí, no nos enteraríamos.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_05"); //Si quieres saber más, pregunta a los comerciantes del mercado. Se mueven por la isla más que yo.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_02"); //Probablemente se cansÃ³ de tener que desperdiciar su cosecha y su ganado entregÃ¡ndoselos a los paladines y a la milicia.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_03"); //Lo Ãºnico que notamos en esta ciudad es que los precios de la comida siguen subiendo.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_04"); //La granja de Onar estÃ¡ lejos, al este de aquÃ­. Si hubiera algÃºn enfrentamiento allÃ­, no nos enterarÃ­amos.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_05"); //Si quieres saber mÃ¡s, pregunta a los comerciantes del mercado. Se mueven por la isla mÃ¡s que yo.
 };
 
 // ************************************************************
@@ -693,17 +693,17 @@ FUNC INT DIA_Thorben_Gritta_Condition()
 FUNC VOID DIA_Thorben_Gritta_Info()
 {	
 	AI_Output (other, self,"DIA_Thorben_Gritta_15_00"); //He venido por Gritta...
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_01"); //¿Mi sobrina? ¿Y qué tienes que ver tú con ella? Esto no es por dinero, ¿no?
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_01"); //Â¿Mi sobrina? Â¿Y quÃ© tienes que ver tÃº con ella? Esto no es por dinero, Â¿no?
 	AI_Output (other, self,"DIA_Thorben_Gritta_15_02"); //Debe 100 monedas de oro al comerciante Matteo.
 	
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_03"); //Dime que no es verdad. Desde que esa buena pieza se vino a vivir conmigo, ¡no he tenido más que problemas!
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_04"); //Está en deuda con prácticamente todos y cada uno de los comerciantes de la ciudad.
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_05"); //¡Tuve que pedir prestadas 200 monedas de oro a Lehmar el prestamista para saldar sus deudas! ¡Y ahora esto!
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_03"); //Dime que no es verdad. Desde que esa buena pieza se vino a vivir conmigo, Â¡no he tenido mÃ¡s que problemas!
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_04"); //EstÃ¡ en deuda con prÃ¡cticamente todos y cada uno de los comerciantes de la ciudad.
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_05"); //Â¡Tuve que pedir prestadas 200 monedas de oro a Lehmar el prestamista para saldar sus deudas! Â¡Y ahora esto!
 	if (Npc_GetDistToWP(self, "NW_CITY_MERCHANT_SHOP01_FRONT_01") < 500)
 	{
-		AI_Output (self, other,"DIA_Thorben_Gritta_06_06"); //Gritta debería estar en casa.
+		AI_Output (self, other,"DIA_Thorben_Gritta_06_06"); //Gritta deberÃ­a estar en casa.
 	};
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_07"); //Adelante, pregúntale. Pero ya te aviso: no tiene NI UNA moneda de oro.
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_07"); //Adelante, pregÃºntale. Pero ya te aviso: no tiene NI UNA moneda de oro.
 	if (Npc_HasItems(Gritta, itmi_gold) >= 100)
 	{
 		AI_Output (other, self,"DIA_Thorben_Gritta_15_08"); //Ya veremos...
@@ -720,7 +720,7 @@ INSTANCE DIA_Thorben_GrittaHatteGold(C_INFO)
 	condition	= DIA_Thorben_GrittaHatteGold_Condition;
 	information	= DIA_Thorben_GrittaHatteGold_Info;
 	permanent	= FALSE;
-	description = "Tu sobrina tenía 100 monedas de oro.";
+	description = "Tu sobrina tenÃ­a 100 monedas de oro.";
 };                       
 FUNC INT DIA_Thorben_GrittaHatteGold_Condition()
 {	
@@ -733,23 +733,23 @@ FUNC INT DIA_Thorben_GrittaHatteGold_Condition()
 };
 FUNC VOID DIA_Thorben_GrittaHatteGold_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_15_00"); //Tu sobrina tenía 100 monedas de oro.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_01"); //¿QUÉ? Esa serpiente descarada... ¡ese oro era MÍO! Lo cogió de mi cofre.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_02"); //¡Devuélvemelo! Tengo que pagar primero a Lehmar. ¡Matteo recibirá su dinero después!
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_15_00"); //Tu sobrina tenÃ­a 100 monedas de oro.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_01"); //Â¿QUÃ‰? Esa serpiente descarada... Â¡ese oro era MÃO! Lo cogiÃ³ de mi cofre.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_02"); //Â¡DevuÃ©lvemelo! Tengo que pagar primero a Lehmar. Â¡Matteo recibirÃ¡ su dinero despuÃ©s!
 
 	Info_ClearChoices (DIA_Thorben_GrittaHatteGold);
 	if (MIS_Matteo_Gold == LOG_SUCCESS)
 	{
-		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "¡Ya he dado a Matteo su oro!", DIA_Thorben_GrittaHatteGold_MatteoHatEs);
+		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "Â¡Ya he dado a Matteo su oro!", DIA_Thorben_GrittaHatteGold_MatteoHatEs);
 	}
 	else
 	{
-		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "No. Yo le devolveré a Matteo su dinero.", DIA_Thorben_GrittaHatteGold_MatteoSollHaben);
+		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "No. Yo le devolverÃ© a Matteo su dinero.", DIA_Thorben_GrittaHatteGold_MatteoSollHaben);
 	};
 
 	if (Npc_HasItems(other, itmi_gold) >= 100)
 	{
-		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "Aquí tienes tu oro.", DIA_Thorben_GrittaHatteGold_HereItIs);
+		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "AquÃ­ tienes tu oro.", DIA_Thorben_GrittaHatteGold_HereItIs);
 	};
 };
 
@@ -757,16 +757,16 @@ func void B_Thorben_DeletePetzCrimeGritta()
 {
 	if (Gritta_GoldGiven == FALSE)
 	{
-		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_00"); //Y por lo que conozco a esta viborilla, ¡seguro que irá directo a la guardia de la ciudad y te acusará también!
-		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_01"); //Me encargaré de que el asunto se solucione.
+		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_00"); //Y por lo que conozco a esta viborilla, Â¡seguro que irÃ¡ directo a la guardia de la ciudad y te acusarÃ¡ tambiÃ©n!
+		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_01"); //Me encargarÃ© de que el asunto se solucione.
 		B_DeletePetzCrime (Gritta);
 	};
 };
 
 func void DIA_Thorben_GrittaHatteGold_MatteoHatEs()
 {
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_15_00"); //¡Ya he dado a Matteo su oro!
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_06_01"); //¡Maldita sea! Bueno, en fin, una deuda es una deuda. Por lo menos no te quedaste con el dinero. Supongo que debería agradecértelo.
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_15_00"); //Â¡Ya he dado a Matteo su oro!
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_06_01"); //Â¡Maldita sea! Bueno, en fin, una deuda es una deuda. Por lo menos no te quedaste con el dinero. Supongo que deberÃ­a agradecÃ©rtelo.
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	
@@ -775,9 +775,9 @@ func void DIA_Thorben_GrittaHatteGold_MatteoHatEs()
 
 func void DIA_Thorben_GrittaHatteGold_MatteoSollHaben()
 {
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_15_00"); //No. Yo le devolveré a Matteo su dinero.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_01"); //Así me estás metiendo en un buen lío. Lehmar no es muy generoso en lo que respecta a las deudas.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_02"); //Pero al menos planeas pagar las deudas de mi sobrina. Supongo que debería agradecértelo.
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_15_00"); //No. Yo le devolverÃ© a Matteo su dinero.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_01"); //AsÃ­ me estÃ¡s metiendo en un buen lÃ­o. Lehmar no es muy generoso en lo que respecta a las deudas.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_02"); //Pero al menos planeas pagar las deudas de mi sobrina. Supongo que deberÃ­a agradecÃ©rtelo.
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	
@@ -786,10 +786,10 @@ func void DIA_Thorben_GrittaHatteGold_MatteoSollHaben()
 
 func void DIA_Thorben_GrittaHatteGold_HereItIs()
 {
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_HereItIs_15_00"); //Aquí tienes tu oro.
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_HereItIs_15_00"); //AquÃ­ tienes tu oro.
 	B_GiveInvItems(other, self, itmi_gold, 100);
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_01"); //¡Gracias! Ahora al menos tengo parte del dinero que debo a Lehmar.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_02"); //¡No me puedo creer que tuviera la audacia de coger mi dinero!
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_01"); //Â¡Gracias! Ahora al menos tengo parte del dinero que debo a Lehmar.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_02"); //Â¡No me puedo creer que tuviera la audacia de coger mi dinero!
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	

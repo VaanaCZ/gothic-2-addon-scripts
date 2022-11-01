@@ -50,7 +50,7 @@ FUNC VOID DIA_Addon_Telbor_Hi_Info()
 	{
 		if (Pardos_Geheilt == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_01");//Pero Pardos est· hecho polvo.
+			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_01");//Pero Pardos est√° hecho polvo.
 		}
 		else
 		{

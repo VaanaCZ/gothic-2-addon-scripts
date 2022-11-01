@@ -62,7 +62,7 @@ INSTANCE MENUITEM_AUDIO_SFXVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Vol. efectos ";
-	text[1]		= "Volumen de los efectos de sonido y los diálogos"; // Kommentar
+	text[1]		= "Volumen de los efectos de sonido y los diÃ¡logos"; // Kommentar
 
 	// Position und Dimension
 	posx		= 1000;		posy		= MENU_START_SOUND_Y + MENU_SOUND_DY*0;
@@ -97,8 +97,8 @@ INSTANCE MENUITEM_AUDIO_SFXVOL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Vol. música";
-	text[1]		= "Volumen de la música de fondo"; // Kommentar
+	text[0]		= "Vol. mÃºsica";
+	text[1]		= "Volumen de la mÃºsica de fondo"; // Kommentar
 
 	// Position und Dimension
 	posx		= 1000;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*1;
@@ -133,8 +133,8 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Música ";
-	text[1]		= "Activar/desactivar música de fondo"; // Kommentar
+	text[0]		= "MÃºsica ";
+	text[1]		= "Activar/desactivar mÃºsica de fondo"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*2;
@@ -243,7 +243,7 @@ instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Eco ambiental";
-	text[1]		= "¿Quieres escuchar eco en las cuevas, etc?"; // Kommentar
+	text[1]		= "Â¿Quieres escuchar eco en las cuevas, etc?"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*5;
@@ -275,8 +275,8 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB_SPEECH(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Eco diálogos";
-	text[1]		= "¿Quieres que el eco afecte a los diálogos?";
+	text[0]		= "Eco diÃ¡logos";
+	text[1]		= "Â¿Quieres que el eco afecte a los diÃ¡logos?";
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6;
@@ -342,7 +342,7 @@ instance MENUITEM_AUDIO_SAMPLERATE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atrás";
+	text[0]		=	"AtrÃ¡s";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

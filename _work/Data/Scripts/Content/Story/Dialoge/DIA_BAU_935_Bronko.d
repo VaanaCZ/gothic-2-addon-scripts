@@ -40,47 +40,47 @@ func int DIA_Bronko_HALLO_Condition ()
 
 func void DIA_Bronko_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Bronko_HALLO_06_00"); //(Paternal) Entonces, ¿adónde vamos?
-	AI_Output			(other, self, "DIA_Bronko_HALLO_15_01"); //¿Eres el capataz?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_06_00"); //(Paternal) Entonces, Â¿adÃ³nde vamos?
+	AI_Output			(other, self, "DIA_Bronko_HALLO_15_01"); //Â¿Eres el capataz?
 
 	if (hero.guild == GIL_NONE)
 		{
 			AI_Output			(self, other, "DIA_Bronko_HALLO_06_02"); //Voy a darte un guantazo, granuja.
 		};
 		
-	AI_Output			(self, other, "DIA_Bronko_HALLO_06_03"); //Si quieres deambular por mis tierras, tendrás que pagarme 5 monedas de oro. Si no, te vas a llevar una buena paliza.
+	AI_Output			(self, other, "DIA_Bronko_HALLO_06_03"); //Si quieres deambular por mis tierras, tendrÃ¡s que pagarme 5 monedas de oro. Si no, te vas a llevar una buena paliza.
 	
 	Info_ClearChoices	(DIA_Bronko_HALLO);
 
 	Info_AddChoice	(DIA_Bronko_HALLO, "Ni hablar. No vas a sacarme nada.", DIA_Bronko_HALLO_vergisses );
-	Info_AddChoice	(DIA_Bronko_HALLO, "Si no me queda más remedio, te pagaré.", DIA_Bronko_HALLO_hiergeld );
-	Info_AddChoice	(DIA_Bronko_HALLO, "¿Tus tierras? ¿Eres el granjero?", DIA_Bronko_HALLO_deinland );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Si no me queda mÃ¡s remedio, te pagarÃ©.", DIA_Bronko_HALLO_hiergeld );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Â¿Tus tierras? Â¿Eres el granjero?", DIA_Bronko_HALLO_deinland );
 
 };
 
 func void DIA_Bronko_HALLO_deinland ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_deinland_15_00"); //¿Tus tierras? ¿Eres el granjero?
-	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_01"); //Por supuesto. De lo contrario, ¿por qué iba a exigirte peaje?
-	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_02"); //Me da lo mismo si le preguntas a los demás por mí. ¡Je, je!
+	AI_Output			(other, self, "DIA_Bronko_HALLO_deinland_15_00"); //Â¿Tus tierras? Â¿Eres el granjero?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_01"); //Por supuesto. De lo contrario, Â¿por quÃ© iba a exigirte peaje?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_02"); //Me da lo mismo si le preguntas a los demÃ¡s por mÃ­. Â¡Je, je!
 
 };
 
 func void DIA_Bronko_HALLO_hiergeld ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_hiergeld_15_00"); //Si no me queda más remedio, te pagaré.
+	AI_Output			(other, self, "DIA_Bronko_HALLO_hiergeld_15_00"); //Si no me queda mÃ¡s remedio, te pagarÃ©.
 
 	if ((Npc_HasItems (other,ItMi_Gold)) >= 5)
 		{
 			B_GiveInvItems (other, self, ItMi_Gold, 5);						
 
-			AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_01"); //(Con picardía) Gracias. Que te vaya bien.
+			AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_01"); //(Con picardÃ­a) Gracias. Que te vaya bien.
 		
 			AI_StopProcessInfos (self);	 
 		}
 	else
 		{
-		 	AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_02"); //Ni siquiera tienes 5 monedas de oro. Intentas hacerme una jugarreta, ¿eh?
+		 	AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_02"); //Ni siquiera tienes 5 monedas de oro. Intentas hacerme una jugarreta, Â¿eh?
 		 	
 		 	AI_StopProcessInfos (self);	 	
 		 	B_Attack (self, other, AR_NONE, 1);	
@@ -99,24 +99,24 @@ func void DIA_Bronko_HALLO_vergisses ()
 		{
 			if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 			{
-				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_02"); //Los chicos de la guardia de la ciudad andáis cortos de dinero, ¿eh?
+				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_02"); //Los chicos de la guardia de la ciudad andÃ¡is cortos de dinero, Â¿eh?
 			};
 	
 			if (hero.guild == GIL_KDF)
 			{
-				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_03"); //Me da igual si eres mago. Tendrás que pagar, ¿te enteras?
+				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_03"); //Me da igual si eres mago. TendrÃ¡s que pagar, Â¿te enteras?
 			};		
 		};
 
 	Info_ClearChoices	(DIA_Bronko_HALLO);
 
-	Info_AddChoice	(DIA_Bronko_HALLO, "Si no me queda más remedio, te pagaré.", DIA_Bronko_HALLO_hiergeld );
-	Info_AddChoice	(DIA_Bronko_HALLO, "Entonces, inténtalo.", DIA_Bronko_HALLO_attack );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Si no me queda mÃ¡s remedio, te pagarÃ©.", DIA_Bronko_HALLO_hiergeld );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Entonces, intÃ©ntalo.", DIA_Bronko_HALLO_attack );
 };
 
 func void DIA_Bronko_HALLO_attack ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_attack_15_00"); //Entonces, inténtalo.
+	AI_Output			(other, self, "DIA_Bronko_HALLO_attack_15_00"); //Entonces, intÃ©ntalo.
 	AI_Output			(self, other, "DIA_Bronko_HALLO_attack_06_01"); //Bueno, en ese caso...
 
 	AI_StopProcessInfos (self);	 	
@@ -134,7 +134,7 @@ instance DIA_Bronko_KEINBAUER		(C_INFO)
 	information	 = 	DIA_Bronko_KEINBAUER_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Tú el granjero? No me hagas reír.";
+	description	 = 	"Â¿TÃº el granjero? No me hagas reÃ­r.";
 };
 
 var int DIA_Bronko_KEINBAUER_noPerm;
@@ -153,8 +153,8 @@ func int DIA_Bronko_KEINBAUER_Condition ()
 
 func void DIA_Bronko_KEINBAUER_Info ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_15_00"); //¿Tú, el granjero? No me hagas reír. La verdad es que eres un don nadie.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_06_01"); //¿Quéeee? ¿Quieres que te parta la cara?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_15_00"); //Â¿TÃº, el granjero? No me hagas reÃ­r. La verdad es que eres un don nadie.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_06_01"); //Â¿QuÃ©eee? Â¿Quieres que te parta la cara?
 
 	Info_ClearChoices	(DIA_Bronko_KEINBAUER);
 
@@ -166,12 +166,12 @@ func void DIA_Bronko_KEINBAUER_Info ()
 				};
 			if (MIS_Sekob_Bronko_eingeschuechtert == LOG_RUNNING)
 				{	
-					Info_AddChoice	(DIA_Bronko_KEINBAUER, "Sekob es el granjero, y tú no eres más que un tunante de poca monta.", DIA_Bronko_KEINBAUER_sekobderbauer );
+					Info_AddChoice	(DIA_Bronko_KEINBAUER, "Sekob es el granjero, y tÃº no eres mÃ¡s que un tunante de poca monta.", DIA_Bronko_KEINBAUER_sekobderbauer );
 				};
 		};
 
 	Info_AddChoice	(DIA_Bronko_KEINBAUER, "A ver si tienes lo que hay que tener.", DIA_Bronko_KEINBAUER_attack );
-	Info_AddChoice	(DIA_Bronko_KEINBAUER, "¿A ti que te importa?", DIA_Bronko_KEINBAUER_schongut );
+	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Â¿A ti que te importa?", DIA_Bronko_KEINBAUER_schongut );
 
 };
 
@@ -186,32 +186,32 @@ func void DIA_Bronko_KEINBAUER_attack ()
 
 func void DIA_Bronko_KEINBAUER_sekobderbauer ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_00"); //Sekob es el granjero, y tú no eres más que un tunante de poca monta que intenta sacarle dinero a la gente.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_01"); //¿Quién lo dice?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_00"); //Sekob es el granjero, y tÃº no eres mÃ¡s que un tunante de poca monta que intenta sacarle dinero a la gente.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_01"); //Â¿QuiÃ©n lo dice?
 	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_02"); //Lo digo yo. Sekob quiere que vuelvas al trabajo y que dejes de haraganear.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_03"); //¿Y qué? ¿Ahora qué vas a hacer?
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_03"); //Â¿Y quÃ©? Â¿Ahora quÃ© vas a hacer?
 };
 
 func void DIA_Bronko_KEINBAUER_schongut ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_schongut_15_00"); //¿A ti que te importa?
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_schongut_06_01"); //¡Lárgate!
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_schongut_15_00"); //Â¿A ti que te importa?
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_schongut_06_01"); //Â¡LÃ¡rgate!
 
  	AI_StopProcessInfos (self);	 	
 };
 
 func void DIA_Bronko_KEINBAUER_SLD ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_00"); //Muy bien, entonces tendré que decir al terrateniente Onar que hay un granjero fanfarrón que se niega a pagar la renta.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_01"); //Ejem. Espera un momento. Onar me mandará a todos los mercenarios.
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_02"); //¿Y qué?
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_03"); //Vale, vale. Te daré lo que quieras, pero no metas a los mercenarios, ¿eh?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_00"); //Muy bien, entonces tendrÃ© que decir al terrateniente Onar que hay un granjero fanfarrÃ³n que se niega a pagar la renta.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_01"); //Ejem. Espera un momento. Onar me mandarÃ¡ a todos los mercenarios.
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_02"); //Â¿Y quÃ©?
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_03"); //Vale, vale. Te darÃ© lo que quieras, pero no metas a los mercenarios, Â¿eh?
 
 	if (B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self,ItMi_Gold)))
 	{
 		AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_04"); //Ten, voy a darte todo mi oro.
 	};
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_05"); //Y me volveré al campo. No quiero saber nada de los mercenarios.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_05"); //Y me volverÃ© al campo. No quiero saber nada de los mercenarios.
 
 	AI_StopProcessInfos (self);	 	
 	DIA_Bronko_KEINBAUER_noPerm = TRUE;
@@ -250,20 +250,20 @@ func void DIA_Bronko_FLEISSIG_Info ()
 	
 	if (MIS_Sekob_Bronko_eingeschuechtert == LOG_SUCCESS)
 		{
-			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_00"); //¿Qué pasa? ¿Sigues tan ocupado?
+			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_00"); //Â¿QuÃ© pasa? Â¿Sigues tan ocupado?
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_01"); //¿Qué pasa? ¿Sigues teniendo esa bocaza?
+			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_01"); //Â¿QuÃ© pasa? Â¿Sigues teniendo esa bocaza?
 		};
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_02"); //Eres mercenario, ¿verdad? Me lo tenía que haber imaginado.
+			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_02"); //Eres mercenario, Â¿verdad? Me lo tenÃ­a que haber imaginado.
 		}
 	else if (MIS_Sekob_Bronko_eingeschuechtert == LOG_SUCCESS)
 		{
-			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_03"); //(Temeroso) No vas a traer a los mercenarios, ¿eh?
+			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_03"); //(Temeroso) No vas a traer a los mercenarios, Â¿eh?
 		};
 
 	if 	(
@@ -275,7 +275,7 @@ func void DIA_Bronko_FLEISSIG_Info ()
 				AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_04"); //No me pegues, por favor.
 			};
 
-	AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_05"); //También volveré al trabajo, ¿vale?
+	AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_05"); //TambiÃ©n volverÃ© al trabajo, Â¿vale?
 
 	MIS_Sekob_Bronko_eingeschuechtert	= LOG_SUCCESS;
 	AI_StopProcessInfos (self);	 

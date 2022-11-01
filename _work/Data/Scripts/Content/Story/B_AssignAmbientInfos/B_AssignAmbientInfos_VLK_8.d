@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_8_JOIN(C_INFO)
 	condition	= DIA_VLK_8_JOIN_Condition;
 	information	= DIA_VLK_8_JOIN_Info;
 	permanent	= TRUE;
-	description = "¡Quiero convertirme en ciudadano!";
+	description = "Â¡Quiero convertirme en ciudadano!";
 };                       
 
 FUNC INT DIA_VLK_8_JOIN_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_VLK_8_JOIN_Condition()
 
 FUNC VOID DIA_VLK_8_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_JOIN_15_00"); //¡Quiero convertirme en ciudadano!
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01"); //¿Y a mí qué me cuentas? Ve a ver a uno de los maestros artesanos de la parte baja de la ciudad. Si tienes suerte, a lo mejor uno de ellos busca un aprendiz.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02"); //Si no, tendrás que ir a ver al gobernador e inscribirte como ciudadano.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03"); //No obstante, olvídate del asunto. Desde la llegada de los paladines, el gobernador ha dejado de estar al cargo.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04"); //Y seguro que su líder, lord Hagen, no tiene tiempo para cosas así.
+	AI_Output (other, self, "DIA_VLK_8_JOIN_15_00"); //Â¡Quiero convertirme en ciudadano!
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01"); //Â¿Y a mÃ­ quÃ© me cuentas? Ve a ver a uno de los maestros artesanos de la parte baja de la ciudad. Si tienes suerte, a lo mejor uno de ellos busca un aprendiz.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02"); //Si no, tendrÃ¡s que ir a ver al gobernador e inscribirte como ciudadano.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03"); //No obstante, olvÃ­date del asunto. Desde la llegada de los paladines, el gobernador ha dejado de estar al cargo.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04"); //Y seguro que su lÃ­der, lord Hagen, no tiene tiempo para cosas asÃ­.
 };
 
 // *************************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_VLK_8_PEOPLE(C_INFO)
 	condition	= DIA_VLK_8_PEOPLE_Condition;
 	information	= DIA_VLK_8_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quiénes son los ciudadanos más importantes?";
+	description = "Â¿QuiÃ©nes son los ciudadanos mÃ¡s importantes?";
 };                       
 
 FUNC INT DIA_VLK_8_PEOPLE_Condition()
@@ -69,8 +69,8 @@ FUNC INT DIA_VLK_8_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_8_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_PEOPLE_15_00"); //¿Quiénes son los ciudadanos más importantes?
-	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01"); //Además de los paladines... los maestros artesanos de la parte baja de la ciudad. Todos ellos son muy importantes.
+	AI_Output (other, self, "DIA_VLK_8_PEOPLE_15_00"); //Â¿QuiÃ©nes son los ciudadanos mÃ¡s importantes?
+	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01"); //AdemÃ¡s de los paladines... los maestros artesanos de la parte baja de la ciudad. Todos ellos son muy importantes.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_8_LOCATION(C_INFO)
 	condition	= DIA_VLK_8_LOCATION_Condition;
 	information	= DIA_VLK_8_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Qué cosas interesantes hay aquí para ver?";
+	description = "Â¿QuÃ© cosas interesantes hay aquÃ­ para ver?";
 };                       
 
 FUNC INT DIA_VLK_8_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_8_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_8_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00"); //¿Qué cosas interesantes hay aquí para ver?
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01"); //En el puerto está el gran barco en el que llegaron los paladines. ¡Es un navío enorme! Merece la pena echarle un vistazo.
+	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00"); //Â¿QuÃ© cosas interesantes hay aquÃ­ para ver?
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01"); //En el puerto estÃ¡ el gran barco en el que llegaron los paladines. Â¡Es un navÃ­o enorme! Merece la pena echarle un vistazo.
 	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_02"); //No obstante, no creo que te dejen subir a bordo. Los paladines vigilan el barco como si fuesen las joyas de la corona.
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03"); //No me extraña. Es el único barco en condiciones de navegar en muchos kilómetros a la redonda.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03"); //No me extraÃ±a. Es el Ãºnico barco en condiciones de navegar en muchos kilÃ³metros a la redonda.
 };
 
 // *************************************************************************
@@ -107,7 +107,7 @@ INSTANCE DIA_VLK_8_STANDARD(C_INFO)
 	condition	= DIA_VLK_8_STANDARD_Condition;
 	information	= DIA_VLK_8_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Qué hay de nuevo?";
+	description = "Â¿QuÃ© hay de nuevo?";
 };                       
 func INT DIA_VLK_8_STANDARD_Condition()
 {
@@ -115,12 +115,12 @@ func INT DIA_VLK_8_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_8_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_STANDARD_15_00"); //¿Qué hay de nuevo?
+	AI_Output (other, self, "DIA_VLK_8_STANDARD_15_00"); //Â¿QuÃ© hay de nuevo?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_00"); //Todo el mundo anda preocupado últimamente.
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_01"); //Por si no bastara con que los paladines se hayan acomodado aquí, ahora empieza a desaparecer gente de la forma más extraña.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_00"); //Todo el mundo anda preocupado Ãºltimamente.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_01"); //Por si no bastara con que los paladines se hayan acomodado aquÃ­, ahora empieza a desaparecer gente de la forma mÃ¡s extraÃ±a.
 		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_02"); //Ya es hora de que la milicia haga algo al respecto.
 			if (SC_HearedAboutMissingPeople == FALSE)
 			{
@@ -133,25 +133,25 @@ FUNC VOID DIA_VLK_8_STANDARD_Info()
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_01"); //Todo el mundo espera a que los paladines anuncien a qué han venido. Sospecho que es por los orcos. ¡Seguro que atacan pronto!
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_02"); //Puede que los paladines cuenten con la bendición de Innos, pero cuando aparezcan las hordas orcas, llegará nuestro fin.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_01"); //Todo el mundo espera a que los paladines anuncien a quÃ© han venido. Sospecho que es por los orcos. Â¡Seguro que atacan pronto!
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_02"); //Puede que los paladines cuenten con la bendiciÃ³n de Innos, pero cuando aparezcan las hordas orcas, llegarÃ¡ nuestro fin.
 	};
 	
 	if (Kapitel == 3)
 	{
 		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_03"); //Se rumorea que los paladines solo han venido para llevarse todo el mineral de la isla. Se dice que es para la guerra en el continente.
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_04"); //¿Sabes lo que significa eso? Al rey le importa un bledo que muramos miserablemente cuando ataquen los orcos.
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_05"); //Cuando los paladines leven anclas, me aseguraré de estar a bordo del barco.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_04"); //Â¿Sabes lo que significa eso? Al rey le importa un bledo que muramos miserablemente cuando ataquen los orcos.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_05"); //Cuando los paladines leven anclas, me asegurarÃ© de estar a bordo del barco.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_06"); //¡Se rumorea que los orcos vienen a lomos de dragones tan grandes como la mitad de la ciudad! ¡No tenemos ninguna oportunidad!
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_06"); //Â¡Se rumorea que los orcos vienen a lomos de dragones tan grandes como la mitad de la ciudad! Â¡No tenemos ninguna oportunidad!
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_07"); //La gente dice que los dragones han sido vencidos. ¿Será verdad?
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_07"); //La gente dice que los dragones han sido vencidos. Â¿SerÃ¡ verdad?
 	};
 };
 

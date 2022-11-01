@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Rock_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Basta de charla. Se ha agotado tu poder temporal. El Ojo ha perdido su fuerza. Prepárate para morir.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Basta de charla. Se ha agotado tu poder temporal. El Ojo ha perdido su fuerza. PrepÃ¡rate para morir.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -54,12 +54,12 @@ FUNC INT DIA_Dragon_Rock_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Rock_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Otro individuo presuntuoso que osa escalar mi roca. Los hombrecillos sois valientes, pero muy frágiles.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Otro individuo presuntuoso que osa escalar mi roca. Los hombrecillos sois valientes, pero muy frÃ¡giles.
 	if (Mis_KilledDragons == 0)
 	{
 		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Anda, si sabes hablar.
 	};
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Te arrancaré las entrañas y se las echaré a las ratas.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Te arrancarÃ© las entraÃ±as y se las echarÃ© a las ratas.
 	AI_Output (other, self, "DIA_Dragon_Rock_Add_15_00"); //No tan deprisa. Llevo encima el Ojo de Innos. Vas a obedecerme y a responder mis preguntas.
 	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //(Brama) Arrh. Pregunta.
 
@@ -75,7 +75,7 @@ instance DIA_Dragon_Rock_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Rock_WERBISTDU_Info;
 
-	description	 = 	"¿Quién eres tú?";
+	description	 = 	"Â¿QuiÃ©n eres tÃº?";
 };
 
 func int DIA_Dragon_Rock_WERBISTDU_Condition ()
@@ -88,7 +88,7 @@ func int DIA_Dragon_Rock_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Rock_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //¿Quién eres tú?
+	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Â¿QuiÃ©n eres tÃº?
 	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Me llaman Pedrakhan y cuando te coja voy a despellejarte muy despacio.
 
 };
@@ -103,7 +103,7 @@ instance DIA_Dragon_Rock_HIERARCHIE		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_HIERARCHIE_Condition;
 	information	 = 	DIA_Dragon_Rock_HIERARCHIE_Info;
 
-	description	 = 	"¿Quién es el dragón más fuerte?";
+	description	 = 	"Â¿QuiÃ©n es el dragÃ³n mÃ¡s fuerte?";
 };
 
 func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
@@ -116,12 +116,12 @@ func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
 
 func void DIA_Dragon_Rock_HIERARCHIE_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //¿Quién es el dragón más fuerte?
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //Nuestro poder procede de los elementos de este mundo. Su jerarquía es evidente.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //La tierra da la vida a todas las criaturas que ilumina el sol, pero se abrirá y te tragará si te acercas demasiado a ella.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //La roca, que prefiere quebrarse a ceder, se eleva con orgullo y entierra bajo ella a los incautos. Aun así, es la mejor protección ante las mareas.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Los fuegos de las entrañas del mundo albergan la chispa de la vida, aunque el fuego lo abrasa todo en un suspiro y no deja más que cenizas.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Todos nuestros elementos preservan y destruyen. No obstante, solo en agua que se ha vuelto dura y maciza como una roca todo se transformará en un pilar eterno de sal donde la vida apenas podrá subsistir.
+	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Â¿QuiÃ©n es el dragÃ³n mÃ¡s fuerte?
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //Nuestro poder procede de los elementos de este mundo. Su jerarquÃ­a es evidente.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //La tierra da la vida a todas las criaturas que ilumina el sol, pero se abrirÃ¡ y te tragarÃ¡ si te acercas demasiado a ella.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //La roca, que prefiere quebrarse a ceder, se eleva con orgullo y entierra bajo ella a los incautos. Aun asÃ­, es la mejor protecciÃ³n ante las mareas.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Los fuegos de las entraÃ±as del mundo albergan la chispa de la vida, aunque el fuego lo abrasa todo en un suspiro y no deja mÃ¡s que cenizas.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Todos nuestros elementos preservan y destruyen. No obstante, solo en agua que se ha vuelto dura y maciza como una roca todo se transformarÃ¡ en un pilar eterno de sal donde la vida apenas podrÃ¡ subsistir.
 
 };
 

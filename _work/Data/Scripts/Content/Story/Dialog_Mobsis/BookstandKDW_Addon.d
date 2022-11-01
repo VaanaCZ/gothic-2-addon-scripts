@@ -20,9 +20,9 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Los Círculos de Agua"					);
+					Doc_PrintLine	( nDocID,  0, "Los CÃ­rculos de Agua"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Las runas de agua e ingredientes necesarios para su creación.");
+					Doc_PrintLines	( nDocID,  0, "Las runas de agua e ingredientes necesarios para su creaciÃ³n.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					Doc_PrintLine	( nDocID,  0, "Torbellino");
@@ -33,7 +33,7 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  0, "Cuarzo glacial");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Géiser");
+					Doc_PrintLine	( nDocID,  0, "GÃ©iser");
 					Doc_PrintLine	( nDocID,  0, "Aguamarina");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -42,7 +42,7 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  0, "Alas de mosca de sangre");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Puño de agua");
+					Doc_PrintLine	( nDocID,  0, "PuÃ±o de agua");
 					Doc_PrintLine	( nDocID,  0, "Aguamarina");
 					Doc_PrintLine	( nDocID,  0, "Cristal de roca");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -51,11 +51,11 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre hará falta UNO de los ingredientes listados."					);
+					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre harÃ¡ falta UNO de los ingredientes listados."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la fórmula del conjuro y tener una piedra rúnica virgen, así como un pergamino de conjuro para el conjuro deseado."					);
+					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la fÃ³rmula del conjuro y tener una piedra rÃºnica virgen, asÃ­ como un pergamino de conjuro para el conjuro deseado."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa rúnica."					);
+					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa rÃºnica."					);
 					Doc_Show		( nDocID );
 	};
 };

@@ -31,7 +31,7 @@ INSTANCE DIA_Garvell_PICKPOCKET (C_INFO)
 	condition	= DIA_Garvell_PICKPOCKET_Condition;
 	information	= DIA_Garvell_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Robar su bolsa sería un juego de niños)";
+	description = "(Robar su bolsa serÃ­a un juego de niÃ±os)";
 };                       
 
 FUNC INT DIA_Garvell_PICKPOCKET_Condition()
@@ -83,7 +83,7 @@ instance DIA_Garvell_GREET		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Garvell_GREET_Condition;
 	information	 = 	DIA_Garvell_GREET_Info;
-	description	 = 	"¿Qué estás haciendo aquí?";
+	description	 = 	"Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 func int DIA_Garvell_GREET_Condition ()
 {	
@@ -94,9 +94,9 @@ func int DIA_Garvell_GREET_Condition ()
 };
 func void DIA_Garvell_GREET_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_GREET_15_00"); //¿Qué estás haciendo aquí?
-	AI_Output (self, other, "DIA_Garvell_GREET_04_01"); //Construyo un barco porque quiero salir de aquí. Lo antes que pueda.
-	AI_Output (self, other, "DIA_Garvell_GREET_04_02"); //Pero, por el aspecto que tiene ahora, este barco nunca estará acabado.
+	AI_Output (other, self, "DIA_Garvell_GREET_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
+	AI_Output (self, other, "DIA_Garvell_GREET_04_01"); //Construyo un barco porque quiero salir de aquÃ­. Lo antes que pueda.
+	AI_Output (self, other, "DIA_Garvell_GREET_04_02"); //Pero, por el aspecto que tiene ahora, este barco nunca estarÃ¡ acabado.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info eilig
@@ -107,7 +107,7 @@ instance DIA_Garvell_eilig		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Garvell_eilig_Condition;
 	information	 = 	DIA_Garvell_eilig_Info;
-	description	 = 	"¿Por qué tienes tanta prisa?";
+	description	 = 	"Â¿Por quÃ© tienes tanta prisa?";
 };
 func int DIA_Garvell_eilig_Condition ()
 {	
@@ -118,11 +118,11 @@ func int DIA_Garvell_eilig_Condition ()
 };
 func void DIA_Garvell_eilig_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_eilig_15_00"); //¿Por qué tienes tanta prisa?
-	AI_Output (self, other, "DIA_Garvell_eilig_04_01"); //Pronto llegarán los orcos y arrasarán la ciudad.
-	AI_Output (other, self, "DIA_Garvell_eilig_15_02"); //¿Qué te hace pensar eso?
-	AI_Output (self, other, "DIA_Garvell_eilig_04_03"); //Chico, ¿no has visto a los paladines corriendo por todas partes? ¿Por qué crees que están aquí?
-	AI_Output (self, other, "DIA_Garvell_eilig_04_04"); //Te digo que están aquí porque los orcos van a atacar pronto. Y no será un espectáculo agradable.
+	AI_Output (other, self, "DIA_Garvell_eilig_15_00"); //Â¿Por quÃ© tienes tanta prisa?
+	AI_Output (self, other, "DIA_Garvell_eilig_04_01"); //Pronto llegarÃ¡n los orcos y arrasarÃ¡n la ciudad.
+	AI_Output (other, self, "DIA_Garvell_eilig_15_02"); //Â¿QuÃ© te hace pensar eso?
+	AI_Output (self, other, "DIA_Garvell_eilig_04_03"); //Chico, Â¿no has visto a los paladines corriendo por todas partes? Â¿Por quÃ© crees que estÃ¡n aquÃ­?
+	AI_Output (self, other, "DIA_Garvell_eilig_04_04"); //Te digo que estÃ¡n aquÃ­ porque los orcos van a atacar pronto. Y no serÃ¡ un espectÃ¡culo agradable.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -134,7 +134,7 @@ instance DIA_Garvell_Schiff		(C_INFO)
 	nr			 = 	99;
 	condition	 = 	DIA_Garvell_Schiff_Condition;
 	information	 = 	DIA_Garvell_Schiff_Info;
-	description	 = 	"¿Por qué no puedes terminar tu barco?";
+	description	 = 	"Â¿Por quÃ© no puedes terminar tu barco?";
 };
 func int DIA_Garvell_Schiff_Condition ()
 {	
@@ -145,12 +145,12 @@ func int DIA_Garvell_Schiff_Condition ()
 };
 func void DIA_Garvell_Schiff_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_Schiff_15_00"); //¿Por qué no puedes terminar tu barco?
-	AI_Output (self, other, "DIA_Garvell_Schiff_04_01"); //(Quitándole importancia) Oh, tenemos miles de problemas. El casco aún no es estable y le faltan montones de tablas.
-	AI_Output (self, other, "DIA_Garvell_Schiff_04_02"); //Pero casi no me queda oro con el que comprar nuevos materiales y el último envío tenía carcoma.
-	AI_Output (self, other, "DIA_Garvell_Schiff_04_03"); //Mis chicos no son muy productivos. Uno quiere un barco que sea sobre todo rápido ¡y el otro está preocupado por el mascarón de proa!
-	AI_Output (self, other, "DIA_Garvell_Schiff_04_04"); //¡Como si no tuviéramos cosas más importantes que hacer!
-	AI_Output (self, other, "DIA_Addon_Garvell_Schiff_04_00"); //Además, uno de mis hombres ha dejado de venir a trabajar. Estoy empezando a temer que eso retrase aún más la construcción.
+	AI_Output (other, self, "DIA_Garvell_Schiff_15_00"); //Â¿Por quÃ© no puedes terminar tu barco?
+	AI_Output (self, other, "DIA_Garvell_Schiff_04_01"); //(QuitÃ¡ndole importancia) Oh, tenemos miles de problemas. El casco aÃºn no es estable y le faltan montones de tablas.
+	AI_Output (self, other, "DIA_Garvell_Schiff_04_02"); //Pero casi no me queda oro con el que comprar nuevos materiales y el Ãºltimo envÃ­o tenÃ­a carcoma.
+	AI_Output (self, other, "DIA_Garvell_Schiff_04_03"); //Mis chicos no son muy productivos. Uno quiere un barco que sea sobre todo rÃ¡pido Â¡y el otro estÃ¡ preocupado por el mascarÃ³n de proa!
+	AI_Output (self, other, "DIA_Garvell_Schiff_04_04"); //Â¡Como si no tuviÃ©ramos cosas mÃ¡s importantes que hacer!
+	AI_Output (self, other, "DIA_Addon_Garvell_Schiff_04_00"); //AdemÃ¡s, uno de mis hombres ha dejado de venir a trabajar. Estoy empezando a temer que eso retrase aÃºn mÃ¡s la construcciÃ³n.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -163,7 +163,7 @@ instance DIA_Addon_Garvell_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Garvell_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Garvell_MissingPeople_Info;
 
-	description	 = 	"¿Te falta un trabajador?";
+	description	 = 	"Â¿Te falta un trabajador?";
 };
 
 func int DIA_Addon_Garvell_MissingPeople_Condition ()
@@ -178,32 +178,32 @@ func int DIA_Addon_Garvell_MissingPeople_Condition ()
 
 func void DIA_Addon_Garvell_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Garvell_MissingPeople_15_00"); //¿Te falta un trabajador?
-	AI_Output	(self, other, "DIA_Addon_Garvell_MissingPeople_04_01"); //Sí. Se llama Monty. Se lo ha tragado la tierra.
-	AI_Output	(self, other, "DIA_Addon_Garvell_MissingPeople_04_02"); //Ese cerdo holgazán estará dándose la buena vida en alguna granja. No debería haberle pagado por adelantado.
+	AI_Output	(other, self, "DIA_Addon_Garvell_MissingPeople_15_00"); //Â¿Te falta un trabajador?
+	AI_Output	(self, other, "DIA_Addon_Garvell_MissingPeople_04_01"); //SÃ­. Se llama Monty. Se lo ha tragado la tierra.
+	AI_Output	(self, other, "DIA_Addon_Garvell_MissingPeople_04_02"); //Ese cerdo holgazÃ¡n estarÃ¡ dÃ¡ndose la buena vida en alguna granja. No deberÃ­a haberle pagado por adelantado.
 	
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Garvell se queja de que su empleado Monty lleva un día sin aparecer en el trabajo. Garvell cree que Monty está viviendo a lo grande con los granjeros."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Garvell se queja de que su empleado Monty lleva un dÃ­a sin aparecer en el trabajo. Garvell cree que Monty estÃ¡ viviendo a lo grande con los granjeros."); 
 
 	Info_ClearChoices	(DIA_Addon_Garvell_MissingPeople);
-	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "He oído que también  ha desaparecido más gente.", DIA_Addon_Garvell_MissingPeople_more );
+	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "He oÃ­do que tambiÃ©n  ha desaparecido mÃ¡s gente.", DIA_Addon_Garvell_MissingPeople_more );
 	if (SCKnowsFarimAsWilliamsFriend == FALSE)
 	{
-	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "¿Cuándo fue la última vez que viste a Monty?", DIA_Addon_Garvell_MissingPeople_wo );
+	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "Â¿CuÃ¡ndo fue la Ãºltima vez que viste a Monty?", DIA_Addon_Garvell_MissingPeople_wo );
 	};
 };
 func void DIA_Addon_Garvell_MissingPeople_more ()
 {
-	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_more_15_00"); //He oído que también  ha desaparecido más gente.
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_01"); //Lo que yo decía. Así empieza la semilla del mal.
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_02"); //Farim, el pescador, me contó algo parecido. Su amigo William ya no está.
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_03"); //Apuesto a que los orcos andan detrás de esto.
+	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_more_15_00"); //He oÃ­do que tambiÃ©n  ha desaparecido mÃ¡s gente.
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_01"); //Lo que yo decÃ­a. AsÃ­ empieza la semilla del mal.
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_02"); //Farim, el pescador, me contÃ³ algo parecido. Su amigo William ya no estÃ¡.
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_03"); //Apuesto a que los orcos andan detrÃ¡s de esto.
 	SCKnowsFarimAsWilliamsFriend = TRUE;
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"El pescador Farim parece saber algo de la desaparición de su amigo William."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"El pescador Farim parece saber algo de la desapariciÃ³n de su amigo William."); 
 	
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
@@ -213,7 +213,7 @@ func void DIA_Addon_Garvell_MissingPeople_more ()
 
 	if (Farim.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "¿Dónde puedo encontrar a Farim?", DIA_Addon_Garvell_MissingPeople_Farim );
+	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "Â¿DÃ³nde puedo encontrar a Farim?", DIA_Addon_Garvell_MissingPeople_Farim );
 	};
 };
 func void DIA_Addon_Garvell_MissingPeople_BACK ()
@@ -222,15 +222,15 @@ func void DIA_Addon_Garvell_MissingPeople_BACK ()
 };
 func void DIA_Addon_Garvell_MissingPeople_Farim ()
 {
-	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_Farim_15_00"); //¿Dónde puedo encontrar a Farim?
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_Farim_04_01"); //Es pescador. Creo que su cabaña está cerca de la tienda de provisiones de los paladines, pero no estoy seguro.
+	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_Farim_15_00"); //Â¿DÃ³nde puedo encontrar a Farim?
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_Farim_04_01"); //Es pescador. Creo que su cabaÃ±a estÃ¡ cerca de la tienda de provisiones de los paladines, pero no estoy seguro.
 
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"La cabaña de Farim está cerca del almacén de los paladines."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"La cabaÃ±a de Farim estÃ¡ cerca del almacÃ©n de los paladines."); 
 };
 func void DIA_Addon_Garvell_MissingPeople_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_wo_15_00"); //¿Cuándo fue la última vez que viste a Monty?
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_wo_04_01"); //(enfadado) Lleva sin aparecer en el trabajo por lo menos dos días.
+	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_wo_15_00"); //Â¿CuÃ¡ndo fue la Ãºltima vez que viste a Monty?
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_wo_04_01"); //(enfadado) Lleva sin aparecer en el trabajo por lo menos dos dÃ­as.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ReturnMonty
@@ -241,7 +241,7 @@ instance DIA_Garvell_ReturnMonty		(C_INFO)
 	nr			 = 	99;
 	condition	 = 	DIA_Garvell_ReturnMonty_Condition;
 	information	 = 	DIA_Garvell_ReturnMonty_Info;
-	description	 = 	"¿Y qué tal todo AHORA?";
+	description	 = 	"Â¿Y quÃ© tal todo AHORA?";
 };
 func int DIA_Garvell_ReturnMonty_Condition ()
 {	
@@ -253,9 +253,9 @@ func int DIA_Garvell_ReturnMonty_Condition ()
 };
 func void DIA_Garvell_ReturnMonty_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Garvell_ReturnMonty_15_00"); //¿Y qué tal todo AHORA?
-	AI_Output (self, other, "DIA_Addon_Garvell_ReturnMonty_04_01"); //¡Monty ha vuelto! Ha estado ocupado estudiando los planos.
-	AI_Output (self, other, "DIA_Addon_Garvell_ReturnMonty_04_02"); //Quizá ahora podamos construir el barco
+	AI_Output (other, self, "DIA_Addon_Garvell_ReturnMonty_15_00"); //Â¿Y quÃ© tal todo AHORA?
+	AI_Output (self, other, "DIA_Addon_Garvell_ReturnMonty_04_01"); //Â¡Monty ha vuelto! Ha estado ocupado estudiando los planos.
+	AI_Output (self, other, "DIA_Addon_Garvell_ReturnMonty_04_02"); //QuizÃ¡ ahora podamos construir el barco
 	B_GivePlayerXP (XP_Ambient);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -268,7 +268,7 @@ instance DIA_Garvell_MISSION		(C_INFO)
 	condition	 = 	DIA_Garvell_MISSION_Condition;
 	information	 = 	DIA_Garvell_MISSION_Info;
 	permanent    =  FALSE;
-	description	 = 	"¿Puedo ayudarte de alguna manera?";
+	description	 = 	"Â¿Puedo ayudarte de alguna manera?";
 };
 
 func int DIA_Garvell_MISSION_Condition ()
@@ -281,27 +281,27 @@ func int DIA_Garvell_MISSION_Condition ()
 };
 func void DIA_Garvell_MISSION_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_MISSION_15_00"); //¿Puedo ayudarte de alguna forma?
-	AI_Output (self, other, "DIA_Garvell_MISSION_04_01"); //Sí que puedes. Averigua lo que planean los paladines. Quiero saber por qué están aquí.
-	AI_Output (self, other, "DIA_Garvell_MISSION_04_02"); //Y tengo que saber si los orcos van a atacar y a qué distancia de la ciudad están.
+	AI_Output (other, self, "DIA_Garvell_MISSION_15_00"); //Â¿Puedo ayudarte de alguna forma?
+	AI_Output (self, other, "DIA_Garvell_MISSION_04_01"); //SÃ­ que puedes. Averigua lo que planean los paladines. Quiero saber por quÃ© estÃ¡n aquÃ­.
+	AI_Output (self, other, "DIA_Garvell_MISSION_04_02"); //Y tengo que saber si los orcos van a atacar y a quÃ© distancia de la ciudad estÃ¡n.
 	AI_Output (self, other, "DIA_Garvell_MISSION_04_03"); //Uno de los bastardos fue avistado justo fuera de la ciudad.
-	AI_Output (self, other, "DIA_Garvell_MISSION_04_04"); //Basta con que me traigas toda la información que puedas obtener.
-	AI_Output (self ,other, "DIA_Garvell_Add_04_00"); //Necesito saber cuánto tiempo me queda para terminar el barco.
+	AI_Output (self, other, "DIA_Garvell_MISSION_04_04"); //Basta con que me traigas toda la informaciÃ³n que puedas obtener.
+	AI_Output (self ,other, "DIA_Garvell_Add_04_00"); //Necesito saber cuÃ¡nto tiempo me queda para terminar el barco.
 
 	MIS_Garvell_Infos = LOG_RUNNING;
 	Knows_Ork = TRUE;
 	
 	Log_CreateTopic (TOPIC_Garvell,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Garvell,LOG_RUNNING);
-	B_LogEntry (TOPIC_Garvell,"Garvell quiere información de los orcos, además de saber por qué están los paladines en la ciudad.");
+	B_LogEntry (TOPIC_Garvell,"Garvell quiere informaciÃ³n de los orcos, ademÃ¡s de saber por quÃ© estÃ¡n los paladines en la ciudad.");
 };
 FUNC VOID B_GarvellWeiter()
 {
-	AI_Output (self, other, "DIA_Garvell_Weiter_04_00"); //Vale. Si te enteras de más, avísame.
+	AI_Output (self, other, "DIA_Garvell_Weiter_04_00"); //Vale. Si te enteras de mÃ¡s, avÃ­same.
 };
 FUNC VOID B_GarvellSuccess()
 {
-	AI_Output (self, other, "DIA_Garvell_Success_04_00"); //Gracias por la información. Por lo que parece, tenemos todo el tiempo del mundo para construir nuestro barco.
+	AI_Output (self, other, "DIA_Garvell_Success_04_00"); //Gracias por la informaciÃ³n. Por lo que parece, tenemos todo el tiempo del mundo para construir nuestro barco.
 	MIS_Garvell_Infos = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -315,7 +315,7 @@ instance DIA_Garvell_Orks		(C_INFO)
 	condition	 = 	DIA_Garvell_Orks_Condition;
 	information	 = 	DIA_Garvell_Orks_Info;
 	permanent    =  FALSE;
-	description	 = 	"Tengo cierta información sobre los orcos.";
+	description	 = 	"Tengo cierta informaciÃ³n sobre los orcos.";
 };
 func int DIA_Garvell_Orks_Condition ()
 {	
@@ -327,10 +327,10 @@ func int DIA_Garvell_Orks_Condition ()
 };
 func void DIA_Garvell_Orks_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_Orks_15_00"); //Tengo cierta información sobre los orcos.
-	AI_Output (self, other, "DIA_Garvell_Orks_04_01"); //Oigámosla.
-	AI_Output (other, self, "DIA_Garvell_Orks_15_02"); //Están bloqueados en el Valle de las Minas y parece que van a seguir ahí.
-	AI_Output (other, self, "DIA_Garvell_Orks_15_03"); //Para asegurarse, los paladines están vigilando el paso.
+	AI_Output (other, self, "DIA_Garvell_Orks_15_00"); //Tengo cierta informaciÃ³n sobre los orcos.
+	AI_Output (self, other, "DIA_Garvell_Orks_04_01"); //OigÃ¡mosla.
+	AI_Output (other, self, "DIA_Garvell_Orks_15_02"); //EstÃ¡n bloqueados en el Valle de las Minas y parece que van a seguir ahÃ­.
+	AI_Output (other, self, "DIA_Garvell_Orks_15_03"); //Para asegurarse, los paladines estÃ¡n vigilando el paso.
 
 	Tell_Garvell = (Tell_Garvell +1);
 	B_GivePlayerXP (XP_Ambient);
@@ -354,7 +354,7 @@ instance DIA_Garvell_Paladine		(C_INFO)
 	condition	 = 	DIA_Garvell_Paladine_Condition;
 	information	 = 	DIA_Garvell_Paladine_Info;
 	permanent    =  FALSE;
-	description	 = 	"Sé por qué los paladines están aquí.";
+	description	 = 	"SÃ© por quÃ© los paladines estÃ¡n aquÃ­.";
 };
 func int DIA_Garvell_Paladine_Condition ()
 {	
@@ -366,10 +366,10 @@ func int DIA_Garvell_Paladine_Condition ()
 };
 func void DIA_Garvell_Paladine_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_Paladine_15_00"); //Sé por qué los paladines están aquí.
-	AI_Output (self, other, "DIA_Garvell_Paladine_04_01"); //¿En serio? ¡Cuéntame!
-	AI_Output (other, self, "DIA_Garvell_Paladine_15_02"); //Los paladines están aquí para hacerse con el mineral mágico del Valle de las Minas, no porque esperen que los orcos vayan a atacar la ciudad.
-	AI_Output (other, self, "DIA_Garvell_Paladine_15_03"); //En cuanto tengan el mineral, volverán al continente.
+	AI_Output (other, self, "DIA_Garvell_Paladine_15_00"); //SÃ© por quÃ© los paladines estÃ¡n aquÃ­.
+	AI_Output (self, other, "DIA_Garvell_Paladine_04_01"); //Â¿En serio? Â¡CuÃ©ntame!
+	AI_Output (other, self, "DIA_Garvell_Paladine_15_02"); //Los paladines estÃ¡n aquÃ­ para hacerse con el mineral mÃ¡gico del Valle de las Minas, no porque esperen que los orcos vayan a atacar la ciudad.
+	AI_Output (other, self, "DIA_Garvell_Paladine_15_03"); //En cuanto tengan el mineral, volverÃ¡n al continente.
 
 	Tell_Garvell = (Tell_Garvell +1);
 	B_GivePlayerXP (XP_Ambient);
@@ -406,8 +406,8 @@ func int DIA_Garvell_City_Condition ()
 func void DIA_Garvell_City_Info ()
 {
 	AI_Output (other, self, "DIA_Garvell_City_15_00"); //Y en cuanto a ese orco en el exterior de la ciudad...
-	AI_Output (self, other, "DIA_Garvell_City_04_01"); //¿Sí...?
-	AI_Output (other, self, "DIA_Garvell_City_15_02"); //No te preocupes por él. La guardia de la ciudad se ocupará del tema.
+	AI_Output (self, other, "DIA_Garvell_City_04_01"); //Â¿SÃ­...?
+	AI_Output (other, self, "DIA_Garvell_City_15_02"); //No te preocupes por Ã©l. La guardia de la ciudad se ocuparÃ¡ del tema.
 	
 
 	Tell_Garvell = (Tell_Garvell +1);
@@ -432,7 +432,7 @@ instance DIA_Garvell_Perm		(C_INFO)
 	condition	 = 	DIA_Garvell_Perm_Condition;
 	information	 = 	DIA_Garvell_Perm_Info;
 	permanent    =  TRUE;
-	description	 = 	"¿Qué ocurre en el puerto?";
+	description	 = 	"Â¿QuÃ© ocurre en el puerto?";
 };
 func int DIA_Garvell_Perm_Condition ()
 {	
@@ -443,18 +443,18 @@ func int DIA_Garvell_Perm_Condition ()
 };
 func void DIA_Garvell_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_Perm_15_00"); //¿Qué ocurre en el puerto?
+	AI_Output (other, self, "DIA_Garvell_Perm_15_00"); //Â¿QuÃ© ocurre en el puerto?
 	
 	if (MIS_Garvell_Infos != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Garvell_Perm_04_01"); //Tenemos a los orcos respirándonos en el cogote y ¿tú preguntas por el puerto?
-		AI_Output (other, self, "DIA_Garvell_Perm_15_02"); //Solo quería...
-		AI_Output (self, other, "DIA_Garvell_Perm_04_03"); //El mayor problema que tenemos es que no hay barcos suficientes en el puerto para sacarnos de aquí.
-		AI_Output (self, other, "DIA_Garvell_Perm_04_04"); //Para ser honesto, solo hay un barco aquí, y pertenece a los paladines. Evidentemente, no van a dejarnos salir de aquí con él.
+		AI_Output (self, other, "DIA_Garvell_Perm_04_01"); //Tenemos a los orcos respirÃ¡ndonos en el cogote y Â¿tÃº preguntas por el puerto?
+		AI_Output (other, self, "DIA_Garvell_Perm_15_02"); //Solo querÃ­a...
+		AI_Output (self, other, "DIA_Garvell_Perm_04_03"); //El mayor problema que tenemos es que no hay barcos suficientes en el puerto para sacarnos de aquÃ­.
+		AI_Output (self, other, "DIA_Garvell_Perm_04_04"); //Para ser honesto, solo hay un barco aquÃ­, y pertenece a los paladines. Evidentemente, no van a dejarnos salir de aquÃ­ con Ã©l.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Garvell_Perm_04_05"); //Mira a tu alrededor. Aquí no pasa nada.
+		AI_Output (self, other, "DIA_Garvell_Perm_04_05"); //Mira a tu alrededor. AquÃ­ no pasa nada.
 	};
 };
 

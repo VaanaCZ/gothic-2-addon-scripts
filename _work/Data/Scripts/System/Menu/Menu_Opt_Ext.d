@@ -10,8 +10,8 @@
 // Ambient Vobs			(ZTOGGLE RENDERAMBIENTVOBS)
 // Env Mapping			(ZTOGGLE ENVMAP)
 
-// optional vielleicht sp‰ter noch
-// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nˆtig auf ‰lteren Karten und evtl. Performance Gewinn (TEST!)
+// optional vielleicht sp√§ter noch
+// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht n√∂tig auf √§lteren Karten und evtl. Performance Gewinn (TEST!)
 // Wolkenschatten		(TODO):     bisher nur in der INI einstellbar, bringt Performance wenn aus und es regnet
 
 INSTANCE MENU_OPT_EXT(C_MENU_DEF)
@@ -52,7 +52,7 @@ INSTANCE MENU_OPT_EXT(C_MENU_DEF)
 
 INSTANCE MENUITEM_EXT_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"ConfiguraciÛn extendida";
+	text[0]		=	"Configuraci√≥n extendida";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -85,7 +85,7 @@ instance MENUITEM_EXT_FFT_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sÌ";
+	text[0]		= 	"no|s√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*0 + MENU_CHOICE_YPLUS;
@@ -116,7 +116,7 @@ instance MENUITEM_EXT_WATERFADE_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sÌ";
+	text[0]		= 	"no|s√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*1 + MENU_CHOICE_YPLUS;
@@ -147,7 +147,7 @@ instance MENUITEM_EXT_OBJWIND_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sÌ";
+	text[0]		= 	"no|s√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*2 + MENU_CHOICE_YPLUS;
@@ -179,7 +179,7 @@ instance MENUITEM_EXT_AMBIENTOBJ_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sÌ";
+	text[0]		= 	"no|s√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -212,7 +212,7 @@ instance MENUITEM_EXT_CLOUDSHADOW_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sÌ";
+	text[0]		= 	"no|s√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -230,7 +230,7 @@ INSTANCE MENUITEM_EXT_AMBIENTPFX(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"FX ambiente";
-	text[1]		= 	"Activar y desactivar efectos de partÌculas innecesarios"; // Kommentar
+	text[1]		= 	"Activar y desactivar efectos de part√≠culas innecesarios"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -244,7 +244,7 @@ instance MENUITEM_EXT_AMBIENTPFX_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sÌ";
+	text[0]		= 	"no|s√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*4 + MENU_CHOICE_YPLUS;
@@ -276,7 +276,7 @@ instance MENUITEM_EXT_ENVMAP_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sÌ";
+	text[0]		= 	"no|s√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*5 + MENU_CHOICE_YPLUS;
@@ -308,7 +308,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sÌ";
+	text[0]		= 	"no|s√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*6 + MENU_CHOICE_YPLUS;
@@ -326,7 +326,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atr·s";
+	text[0]		=	"Atr√°s";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

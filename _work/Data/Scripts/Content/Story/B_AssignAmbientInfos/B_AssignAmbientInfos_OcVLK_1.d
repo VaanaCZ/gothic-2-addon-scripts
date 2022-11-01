@@ -30,7 +30,7 @@ INSTANCE DIA_OCVLK_1_PEOPLE(C_INFO)
 	condition	= DIA_OCVLK_1_PEOPLE_Condition;
 	information	= DIA_OCVLK_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
@@ -44,8 +44,8 @@ FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
 
 FUNC VOID DIA_OCVLK_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //¿Quién está al mando?
-	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //El comandante Garond, aunque desde que ha empeorado la situación, no se le ha visto salir del salón del trono. Me temo que la cosa va a acabar mal.
+	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //El comandante Garond, aunque desde que ha empeorado la situaciÃ³n, no se le ha visto salir del salÃ³n del trono. Me temo que la cosa va a acabar mal.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_OCVLK_1_LOCATION(C_INFO)
 	condition	= DIA_OCVLK_1_LOCATION_Condition;
 	information	= DIA_OCVLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Qué sabes del Valle de las Minas?";
+	description = "Â¿QuÃ© sabes del Valle de las Minas?";
 };                       
 
 FUNC INT DIA_OCVLK_1_LOCATION_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_OCVLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_OCVLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //¿Qué sabes del Valle de las Minas?
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //Que yo sepa, algunos de los nuestros están en las minas y siguen prospectando.
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //No me gustaría estar en su lugar. Todo el valle está infestado de orcos, por no mencionar a los dragones.
+	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Â¿QuÃ© sabes del Valle de las Minas?
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //Que yo sepa, algunos de los nuestros estÃ¡n en las minas y siguen prospectando.
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //No me gustarÃ­a estar en su lugar. Todo el valle estÃ¡ infestado de orcos, por no mencionar a los dragones.
 };
 
 // *************************************************************************
@@ -85,7 +85,7 @@ INSTANCE DIA_OCVLK_1_STANDARD(C_INFO)
 	condition	= DIA_OCVLK_1_STANDARD_Condition;
 	information	= DIA_OCVLK_1_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Cómo van las cosas?";
+	description = "Â¿CÃ³mo van las cosas?";
 };                       
 func INT DIA_OCVLK_1_STANDARD_Condition()
 {
@@ -93,11 +93,11 @@ func INT DIA_OCVLK_1_STANDARD_Condition()
 };
 FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_STANDARD_15_00"); //¿Cómo van las cosas?
+	AI_Output (other, self, "DIA_OCVLK_1_STANDARD_15_00"); //Â¿CÃ³mo van las cosas?
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //¡Los orcos nos tienen donde quieren! Sin refuerzos, no va a quedar ningún superviviente. Me sorprende que los dragones no nos hayan aniquilado.
+		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Â¡Los orcos nos tienen donde quieren! Sin refuerzos, no va a quedar ningÃºn superviviente. Me sorprende que los dragones no nos hayan aniquilado.
 	};
 	
 	if (Kapitel == 4)
@@ -108,7 +108,7 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //¿Dices que han muerto todos los dragones? ¡Gracias a Innos!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //Â¿Dices que han muerto todos los dragones? Â¡Gracias a Innos!
 		};
 	};
 
@@ -116,11 +116,11 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Maldito mineral. Deberíamos tirar por las almenas todas las reservas de mineral. Con eso, a lo mejor conseguimos que los orcos nos dejen en paz.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Maldito mineral. DeberÃ­amos tirar por las almenas todas las reservas de mineral. Con eso, a lo mejor conseguimos que los orcos nos dejen en paz.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //¡Estas cajas ridículas que han apilado al tun tun delante de la entrada no van a servir para detener a los orcos!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Â¡Estas cajas ridÃ­culas que han apilado al tun tun delante de la entrada no van a servir para detener a los orcos!
 		};
 	};
 };

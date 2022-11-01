@@ -30,7 +30,7 @@ instance DIA_Vatras_DI_HEAL		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_HEAL_Condition;
 	information	 = 	DIA_Vatras_DI_HEAL_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Cúrame.";
+	description	 = 	"CÃºrame.";
 };
 
 func int DIA_Vatras_DI_HEAL_Condition ()
@@ -43,17 +43,17 @@ func int DIA_Vatras_DI_HEAL_Condition ()
 
 func void DIA_Vatras_DI_HEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_HEAL_15_00"); //Cúrame.
+	AI_Output			(other, self, "DIA_Vatras_DI_HEAL_15_00"); //CÃºrame.
 	
 	if hero.attribute [ATR_HITPOINTS] < hero.attribute[ATR_HITPOINTS_MAX]
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_01"); //(Devotamente) Que Adanos bendiga este cuerpo. Está destinado a devolver el equilibrio del mundo.
+		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_01"); //(Devotamente) Que Adanos bendiga este cuerpo. EstÃ¡ destinado a devolver el equilibrio del mundo.
 		hero.attribute [ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 		PrintScreen (PRINT_FullyHealed, - 1, - 1, FONT_Screen, 2);   
 	}
 	else 
 	{	
-		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_02"); //En este momento tu cuerpo está indemne.
+		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_02"); //En este momento tu cuerpo estÃ¡ indemne.
 	};	
 };
  
@@ -69,7 +69,7 @@ instance DIA_Vatras_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"¿Puedes venderme algo?";
+	description	 = 	"Â¿Puedes venderme algo?";
 };
 
 func int DIA_Vatras_DI_TRADE_Condition ()
@@ -82,9 +82,9 @@ func int DIA_Vatras_DI_TRADE_Condition ()
 
 func void DIA_Vatras_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_TRADE_15_00"); //¿Puedes venderme algo?
+	AI_Output			(other, self, "DIA_Vatras_DI_TRADE_15_00"); //Â¿Puedes venderme algo?
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Vatras_DI_TRADE_05_01"); //¿Qué necesitas?
+	AI_Output			(self, other, "DIA_Vatras_DI_TRADE_05_01"); //Â¿QuÃ© necesitas?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -98,7 +98,7 @@ instance DIA_Vatras_DI_OBSESSION		(C_INFO)
 	information	 = 	DIA_Vatras_DI_OBSESSION_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ayúdame. ¡Estoy poseído!";
+	description	 = 	"AyÃºdame. Â¡Estoy poseÃ­do!";
 };
 
 func int DIA_Vatras_DI_OBSESSION_Condition ()
@@ -112,7 +112,7 @@ func int DIA_Vatras_DI_OBSESSION_Condition ()
 var int DIA_Vatras_DI_OBSESSION_Info_OneTime;
 func void DIA_Vatras_DI_OBSESSION_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_OBSESSION_15_00"); //Ayúdame. ¡Estoy poseído!
+	AI_Output			(other, self, "DIA_Vatras_DI_OBSESSION_15_00"); //AyÃºdame. Â¡Estoy poseÃ­do!
 
 	if (Got_HealObsession_Day<=(Wld_GetDay()-2))  
 		{
@@ -124,19 +124,19 @@ func void DIA_Vatras_DI_OBSESSION_Info ()
 		
 			if (Npc_HasItems (self,ItPo_HealObsession_MIS))
 			{
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_01"); //Toma esta poción de salvación. Pyrokar me ha dado algunos de sus elixires de curación, tal y como le pedí.
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_02"); //Sin embargo, recuerda siempre: mis métodos de librarte de tus pesadillas son limitados.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_01"); //Toma esta pociÃ³n de salvaciÃ³n. Pyrokar me ha dado algunos de sus elixires de curaciÃ³n, tal y como le pedÃ­.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_02"); //Sin embargo, recuerda siempre: mis mÃ©todos de librarte de tus pesadillas son limitados.
 				B_GiveInvItems (self, other, ItPo_HealObsession_MIS, 1);
 				Got_HealObsession_Day = Wld_GetDay(); 
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_03"); //Los suministros de Pyrokar están agotados. Lo siento mucho, amigo mío. Ya no puedo ayudarte más.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_03"); //Los suministros de Pyrokar estÃ¡n agotados. Lo siento mucho, amigo mÃ­o. Ya no puedo ayudarte mÃ¡s.
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_04"); //No me arriesgaré a darte otro vial en tan poco tiempo. Regresa más tarde, amigo.
+			AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_04"); //No me arriesgarÃ© a darte otro vial en tan poco tiempo. Regresa mÃ¡s tarde, amigo.
 		};
 };
 
@@ -150,7 +150,7 @@ instance DIA_Vatras_DI_RAT		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_RAT_Condition;
 	information	 = 	DIA_Vatras_DI_RAT_Info;
 
-	description	 = 	"¿Qué consejo puedes darme?";
+	description	 = 	"Â¿QuÃ© consejo puedes darme?";
 };
 
 func int DIA_Vatras_DI_RAT_Condition ()
@@ -163,15 +163,15 @@ func int DIA_Vatras_DI_RAT_Condition ()
 };
 func void DIA_Vatras_DI_RAT_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_00"); //¿Qué consejo puedes darme?
-	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_01"); //Mantente alejado de los buscadores. Recuerda que su mirada oscura puede hacerte mucho daño aquí, tan lejos del monasterio.
+	AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_00"); //Â¿QuÃ© consejo puedes darme?
+	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_01"); //Mantente alejado de los buscadores. Recuerda que su mirada oscura puede hacerte mucho daÃ±o aquÃ­, tan lejos del monasterio.
 
 	if (Npc_HasItems (other,ItAm_Prot_BlackEye_Mis))
 	{
-		AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_02"); //No te preocupes, tengo el amuleto de convocación de almas.
+		AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_02"); //No te preocupes, tengo el amuleto de convocaciÃ³n de almas.
 	};
 
-	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_03"); //Si, aún así, te ocurre algo, ven a verme. Veré lo que puedo hacer.
+	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_03"); //Si, aÃºn asÃ­, te ocurre algo, ven a verme. VerÃ© lo que puedo hacer.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -204,21 +204,21 @@ func void DIA_Vatras_DI_PEDROTOT_Info ()
 	if (MIS_Gorax_KillPedro == LOG_SUCCESS)
 	&& (Npc_IsDead(Pedro_DI)) 
 	{
-		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_01"); //Está muerto.
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_02"); //Estoy sumamente decepcionado. No habría imaginado esto de ti.
-		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_03"); //¿Qué quieres decir?
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_04"); //Conozco tu repugnante acuerdo con Serpentes. Estoy profundamente perturbado por haberme equivocado, después de todo.
+		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_01"); //EstÃ¡ muerto.
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_02"); //Estoy sumamente decepcionado. No habrÃ­a imaginado esto de ti.
+		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_03"); //Â¿QuÃ© quieres decir?
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_04"); //Conozco tu repugnante acuerdo con Serpentes. Estoy profundamente perturbado por haberme equivocado, despuÃ©s de todo.
 		DIA_Vatras_DI_PEDROTOT_VatrasSucked = TRUE;
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_05"); //Pues tráelo aquí al barco. Se lo entregaremos a las autoridades legales de Khorinis.
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_05"); //Pues trÃ¡elo aquÃ­ al barco. Se lo entregaremos a las autoridades legales de Khorinis.
 
 		if (Npc_IsDead(Pedro_DI)) 
 		{
-			AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_06"); //Es un poco demasiado tarde para eso. Está muerto.
-			AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_07"); //(Sorprendido) Oh. Eso es una pena. Rezaré por su alma desdichada.
+			AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_06"); //Es un poco demasiado tarde para eso. EstÃ¡ muerto.
+			AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_07"); //(Sorprendido) Oh. Eso es una pena. RezarÃ© por su alma desdichada.
 		}
 		else
 		{
@@ -254,7 +254,7 @@ func int DIA_Vatras_DI_VatrasSucked_Condition ()
 
 func void DIA_Vatras_DI_VatrasSucked_Info ()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_VatrasSucked_05_00"); //Apártate de mi vista, asesino. No obtendrás más ayuda de mí.
+	AI_Output			(self, other, "DIA_Vatras_DI_VatrasSucked_05_00"); //ApÃ¡rtate de mi vista, asesino. No obtendrÃ¡s mÃ¡s ayuda de mÃ­.
 	AI_StopProcessInfos (self);
 };
 
@@ -269,7 +269,7 @@ INSTANCE DIA_Vatras_DI_Talente (C_INFO)
 	information		= DIA_Vatras_DI_Talente_Info;
 	permanent		= TRUE;
 
-	description		= "Enséñame tus habilidades."; 
+	description		= "EnsÃ©Ã±ame tus habilidades."; 
 };
 
 FUNC INT DIA_Vatras_DI_Talente_Condition()
@@ -281,15 +281,15 @@ FUNC INT DIA_Vatras_DI_Talente_Condition()
 };
 FUNC VOID DIA_Vatras_DI_Talente_Info ()
 {	
-	AI_Output			(other, self, "DIA_Vatras_DI_Talente_15_00"); //Enséñame tus habilidades.
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_05_01"); //Haré lo que esté en mi mano.
+	AI_Output			(other, self, "DIA_Vatras_DI_Talente_15_00"); //EnsÃ©Ã±ame tus habilidades.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_05_01"); //HarÃ© lo que estÃ© en mi mano.
 	
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	Info_AddChoice	  (DIA_Vatras_DI_Talente, DIALOG_BACK, DIA_Vatras_DI_Talente_BACK);
 
 	if (hero.guild == GIL_KDF) 
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, "Círculos de magia", DIA_Vatras_DI_Talente_CIRCLES);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, "CÃ­rculos de magia", DIA_Vatras_DI_Talente_CIRCLES);
 	};
 	Info_AddChoice	  (DIA_Vatras_DI_Talente, "Alquimia, el arte de destilar pociones", DIA_Vatras_DI_Talente_ALCHIMIE);
 };
@@ -305,27 +305,27 @@ FUNC VOID DIA_Vatras_DI_Talente_CIRCLES()
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) < 1) 
 	{ 
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Primer círculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 1))			,DIA_Vatras_DI_Talente_Circle_1);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Primer cÃ­rculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 1))			,DIA_Vatras_DI_Talente_Circle_1);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 1)
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Segundo círculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 2))			,DIA_Vatras_DI_Talente_Circle_2);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Segundo cÃ­rculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 2))			,DIA_Vatras_DI_Talente_Circle_2);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 2)
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Tercer círculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 3))			,DIA_Vatras_DI_Talente_Circle_3);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Tercer cÃ­rculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 3))			,DIA_Vatras_DI_Talente_Circle_3);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 3)
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Cuarto círculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 4))			,DIA_Vatras_DI_Talente_Circle_4);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Cuarto cÃ­rculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 4))			,DIA_Vatras_DI_Talente_Circle_4);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 4)	
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Quinto círculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 5))			,DIA_Vatras_DI_Talente_Circle_5);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Quinto cÃ­rculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 5))			,DIA_Vatras_DI_Talente_Circle_5);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 5)
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Sexto círculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 6))			,DIA_Vatras_DI_Talente_Circle_6);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("Sexto cÃ­rculo de magia"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 6))			,DIA_Vatras_DI_Talente_Circle_6);
 	};
 };
 
@@ -340,35 +340,35 @@ FUNC VOID DIA_Vatras_DI_Talente_ALCHIMIE ()
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Esencia de curación", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Vatras_DI_Talente_POTION_Health_01);	  
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Esencia de curaciÃ³n", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Vatras_DI_Talente_POTION_Health_01);	  
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Extracto de curación", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), DIA_Vatras_DI_Talente_POTION_Health_02);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Extracto de curaciÃ³n", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), DIA_Vatras_DI_Talente_POTION_Health_02);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixir de curación", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), DIA_Vatras_DI_Talente_POTION_Health_03);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixir de curaciÃ³n", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), DIA_Vatras_DI_Talente_POTION_Health_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Esencia de maná", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), DIA_Vatras_DI_Talente_POTION_Mana_01);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Esencia de manÃ¡", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), DIA_Vatras_DI_Talente_POTION_Mana_01);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Extracto de maná", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), DIA_Vatras_DI_Talente_POTION_Mana_02);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Extracto de manÃ¡", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), DIA_Vatras_DI_Talente_POTION_Mana_02);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixir de maná", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), DIA_Vatras_DI_Talente_POTION_Mana_03);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixir de manÃ¡", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), DIA_Vatras_DI_Talente_POTION_Mana_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Poción de velocidad"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)), DIA_Vatras_DI_Talente_POTION_Speed);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("PociÃ³n de velocidad"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)), DIA_Vatras_DI_Talente_POTION_Speed);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE)
 	{
@@ -381,7 +381,7 @@ FUNC VOID DIA_Vatras_DI_Talente_ALCHIMIE ()
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixir de espíritu"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), DIA_Vatras_DI_Talente_POTION_Perm_Mana);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixir de espÃ­ritu"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), DIA_Vatras_DI_Talente_POTION_Perm_Mana);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE)
@@ -416,14 +416,14 @@ FUNC VOID DIA_Vatras_DI_Talente_Circle_4()
 };
 FUNC VOID DIA_Vatras_DI_Talente_Circle_5()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_5_05_00"); //Ahora eres un mago del quinto círculo. Usa los conjuros que has aprendido con prudencia.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_5_05_00"); //Ahora eres un mago del quinto cÃ­rculo. Usa los conjuros que has aprendido con prudencia.
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	B_TeachMagicCircle (self, other, 5);
 };
 FUNC VOID DIA_Vatras_DI_Talente_Circle_6()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_00"); //Ahora tienes acceso al más alto poder mágico.
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_01"); //Que la razón te guíe y controle tus debilidades humanas. Ellas pueden nublar tu vista.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_00"); //Ahora tienes acceso al mÃ¡s alto poder mÃ¡gico.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_01"); //Que la razÃ³n te guÃ­e y controle tus debilidades humanas. Ellas pueden nublar tu vista.
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	B_TeachMagicCircle (self, other, 6);
 };
@@ -494,7 +494,7 @@ instance DIA_Vatras_DI_DementorObsessionBook		(C_INFO)
 	information	 = 	DIA_Vatras_DI_DementorObsessionBook_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Aquí tengo un Almanáque del poseído.";
+	description	 = 	"AquÃ­ tengo un AlmanÃ¡que del poseÃ­do.";
 };
 
 func int DIA_Vatras_DI_DementorObsessionBook_Condition ()
@@ -508,16 +508,16 @@ func int DIA_Vatras_DI_DementorObsessionBook_Condition ()
 var int DIA_Vatras_DI_DementorObsessionBook_OneTime;
 func void DIA_Vatras_DI_DementorObsessionBook_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_DementorObsessionBook_15_00"); //Tengo un Almanaque de los poseídos aquí.
+	AI_Output			(other, self, "DIA_Vatras_DI_DementorObsessionBook_15_00"); //Tengo un Almanaque de los poseÃ­dos aquÃ­.
 	if (DIA_Vatras_DI_DementorObsessionBook_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_01"); //Mm. Creo que sería mejor que se lo llevase a Pyrokar al monasterio, si volvemos a salir de aquí.
+		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_01"); //Mm. Creo que serÃ­a mejor que se lo llevase a Pyrokar al monasterio, si volvemos a salir de aquÃ­.
 		
 		DIA_Vatras_DI_DementorObsessionBook_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_02"); //¿Tienes más? Trae todos los que encuentres.
+		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_02"); //Â¿Tienes mÃ¡s? Trae todos los que encuentres.
 	};
 	B_GiveInvItems (other, self, ITWR_DementorObsessionBook_MIS,1);
 	B_GivePlayerXP (XP_Ambient);
@@ -533,7 +533,7 @@ instance DIA_Vatras_DI_UndeadDragonDead		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_UndeadDragonDead_Condition;
 	information	 = 	DIA_Vatras_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Ya está.";
+	description	 = 	"Ya estÃ¡.";
 };
 
 func int DIA_Vatras_DI_UndeadDragonDead_Condition ()
@@ -547,37 +547,37 @@ func int DIA_Vatras_DI_UndeadDragonDead_Condition ()
 var int DIA_Vatras_DI_UndeadDragonDead_OneTime;
 func void DIA_Vatras_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_UndeadDragonDead_15_00"); //Ya está.
+	AI_Output			(other, self, "DIA_Vatras_DI_UndeadDragonDead_15_00"); //Ya estÃ¡.
 
 	if (DIA_Vatras_DI_UndeadDragonDead_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_01"); //Lo sé, puedo sentirlo.
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_02"); //Has asestado un golpe a Beliar que le mantendrá ocupado durante un tiempo.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_01"); //Lo sÃ©, puedo sentirlo.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_02"); //Has asestado un golpe a Beliar que le mantendrÃ¡ ocupado durante un tiempo.
 	
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (other, self, "DIA_Vatras_DI_UndeadDragonDead_15_03"); //¿Puedo retirarme ahora? ¿O vosotros los magos tenéis otro esqueleto en el armario que haya que expulsar de este mundo?
+			AI_Output (other, self, "DIA_Vatras_DI_UndeadDragonDead_15_03"); //Â¿Puedo retirarme ahora? Â¿O vosotros los magos tenÃ©is otro esqueleto en el armario que haya que expulsar de este mundo?
 		}
 		else
 		{
 			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_04"); //Pero recuerda que esto solo ha sido un episodio en la eterna batalla entre el bien y el mal.
 		};
 		
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_05"); //El mal siempre encuentra una forma de entrar en este mundo. La guerra nunca terminará.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_05"); //El mal siempre encuentra una forma de entrar en este mundo. La guerra nunca terminarÃ¡.
 		
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_06"); //Como guerrero del bien, deberías saberlo.
+			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_06"); //Como guerrero del bien, deberÃ­as saberlo.
 		};
 			
-		AI_Output (self, other, "DIA_Vatras_Add_05_15"); //¡Solo Adanos se interpone entre los dioses enfrentados para mantener el equilibrio!
-		AI_Output (other, self, "DIA_Vatras_Add_15_16"); //Debería haberme ayudado a mí en su lugar.
-		AI_Output (self, other, "DIA_Vatras_Add_05_17"); //(Pícaramente) Pero lo hizo. Puedes estar seguro de eso.
+		AI_Output (self, other, "DIA_Vatras_Add_05_15"); //Â¡Solo Adanos se interpone entre los dioses enfrentados para mantener el equilibrio!
+		AI_Output (other, self, "DIA_Vatras_Add_15_16"); //DeberÃ­a haberme ayudado a mÃ­ en su lugar.
+		AI_Output (self, other, "DIA_Vatras_Add_05_17"); //(PÃ­caramente) Pero lo hizo. Puedes estar seguro de eso.
 					
 		DIA_Vatras_DI_UndeadDragonDead_OneTime = TRUE;
 	};	
 
-	AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_09"); //Dile al capitán que debería levar anclas lo antes posible. La momentánea paz puede resultar engañosa.
+	AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_09"); //Dile al capitÃ¡n que deberÃ­a levar anclas lo antes posible. La momentÃ¡nea paz puede resultar engaÃ±osa.
 };
  
 ///////////////////////////////////////////////////////////////////////

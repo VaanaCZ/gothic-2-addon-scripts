@@ -31,7 +31,7 @@ instance DIA_Valentino_HALLO		(C_INFO)
 	condition	= DIA_Valentino_HALLO_Condition;
 	information	= DIA_Valentino_HALLO_Info;
 	permanent 	= FALSE;
-	description	= "Vaya, ¿qué tenemos aquí?";
+	description	= "Vaya, Â¿quÃ© tenemos aquÃ­?";
 };
 
 func int DIA_Valentino_HALLO_Condition ()
@@ -41,21 +41,21 @@ func int DIA_Valentino_HALLO_Condition ()
 
 func void DIA_Valentino_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Valentino_HALLO_15_00"); //Vaya, ¿qué tenemos aquí?
+	AI_Output			(other, self, "DIA_Valentino_HALLO_15_00"); //Vaya, Â¿quÃ© tenemos aquÃ­?
 	//AI_Output (other, self, "DIA_Valentino_Add_15_00"); //Hey, wer bist du denn?
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_01"); //Me llamo Valentino. Estoy intentando no profanar, trabajando, este día que me ha concedido Innos.
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_01"); //Me llamo Valentino. Estoy intentando no profanar, trabajando, este dÃ­a que me ha concedido Innos.
 		AI_Output			(other, self, "DIA_Valentino_HALLO_15_02"); //Modera tu lenguaje.
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_03"); //Oh, perdóname, no pretendía ofender a nuestro señor. Perdóname, señor.
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_03"); //Oh, perdÃ³name, no pretendÃ­a ofender a nuestro seÃ±or. PerdÃ³name, seÃ±or.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_04"); //¿No tienes modales? ¡Qué desagradable!
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_05"); //Siempre esta cháchara inmunda. ¿No tienes un trabajo en el que debas estar?
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_06"); //Pero supongo que nadie echaría de menos a un tiparraco como tú, ¿no?
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_07"); //Bueno, si tuvieras tanto oro como yo, tampoco tendrías que trabajar. Pero tú nunca serás tan rico.
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_04"); //Â¿No tienes modales? Â¡QuÃ© desagradable!
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_05"); //Siempre esta chÃ¡chara inmunda. Â¿No tienes un trabajo en el que debas estar?
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_06"); //Pero supongo que nadie echarÃ­a de menos a un tiparraco como tÃº, Â¿no?
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_07"); //Bueno, si tuvieras tanto oro como yo, tampoco tendrÃ­as que trabajar. Pero tÃº nunca serÃ¡s tan rico.
 		AI_Output			(other, self, "DIA_Valentino_HALLO_15_08"); //Veo que me lo voy a pasar muy bien contigo.
 	};
 };
@@ -71,7 +71,7 @@ instance DIA_Valentino_WhoAgain		(C_INFO)
 	condition	= DIA_Valentino_WhoAgain_Condition;
 	information	= DIA_Valentino_WhoAgain_Info;
 	permanent 	= FALSE;
-	description	= "¡Te he preguntado quién eres!";
+	description	= "Â¡Te he preguntado quiÃ©n eres!";
 };
 
 func int DIA_Valentino_WhoAgain_Condition ()
@@ -86,11 +86,11 @@ func int DIA_Valentino_WhoAgain_Condition ()
 
 func void DIA_Valentino_WhoAgain_Info ()
 {
-	AI_Output (other, self, "DIA_Valentino_Add_15_01"); //¡Te he preguntado quién eres!
+	AI_Output (other, self, "DIA_Valentino_Add_15_01"); //Â¡Te he preguntado quiÃ©n eres!
 	//AI_Output			(other, self, "DIA_Valentino_HALLO_wasmachstdu_15_00"); //Was macht jemand wie du in der Stadt?
 	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_01"); //Soy Valentino el guapo. Vividor y hombre de mujeres.
-	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_02"); //Pobre en preocupaciones, rico en dinero y sabiduría, y las mujeres se lanzan a mis brazos.
-	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_03"); //Si tienes problemas, quédatelos. Yo no los necesito.
+	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_02"); //Pobre en preocupaciones, rico en dinero y sabidurÃ­a, y las mujeres se lanzan a mis brazos.
+	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_03"); //Si tienes problemas, quÃ©datelos. Yo no los necesito.
 };
 
 // ********************************************************
@@ -104,7 +104,7 @@ instance DIA_Valentino_Manieren		(C_INFO)
 	condition	= DIA_Valentino_Manieren_Condition;
 	information	= DIA_Valentino_Manieren_Info;
 	permanent 	= FALSE;
-	description	= "¡Parece que tendré que enseñarte modales!";
+	description	= "Â¡Parece que tendrÃ© que enseÃ±arte modales!";
 };
 
 func int DIA_Valentino_Manieren_Condition ()
@@ -119,10 +119,10 @@ func int DIA_Valentino_Manieren_Condition ()
 
 func void DIA_Valentino_Manieren_Info ()
 {
-	AI_Output (other, self, "DIA_Valentino_Add_15_02"); //¡Parece que tendré que enseñarte modales!
-	//AI_Output			(other, self, "DIA_Valentino_HALLO_klappe_15_00"); //Für deine dünnen Ärmchen hast du 'ne ganz schön große Klappe!
-	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_01"); //¡No me importa! Pégame todo lo que quieras. Cuando me levante mañana, volveré a estar bien.
-	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_02"); //Pero tú tendrás que cargar toda la vida con esas jarras.
+	AI_Output (other, self, "DIA_Valentino_Add_15_02"); //Â¡Parece que tendrÃ© que enseÃ±arte modales!
+	//AI_Output			(other, self, "DIA_Valentino_HALLO_klappe_15_00"); //FÃ¼r deine dÃ¼nnen Ã„rmchen hast du 'ne ganz schÃ¶n groÃŸe Klappe!
+	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_01"); //Â¡No me importa! PÃ©game todo lo que quieras. Cuando me levante maÃ±ana, volverÃ© a estar bien.
+	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_02"); //Pero tÃº tendrÃ¡s que cargar toda la vida con esas jarras.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -140,7 +140,7 @@ instance DIA_Valentino_WASNUETZLICHES		(C_INFO)
 	condition	= DIA_Valentino_WASNUETZLICHES_Condition;
 	information	= DIA_Valentino_WASNUETZLICHES_Info;
 	permanent	= TRUE;
-	description	= "¿Tienes algo más que decirme?";
+	description	= "Â¿Tienes algo mÃ¡s que decirme?";
 };
 
 func int DIA_Valentino_WASNUETZLICHES_Condition ()
@@ -153,8 +153,8 @@ func int DIA_Valentino_WASNUETZLICHES_Condition ()
 
 func void DIA_Valentino_WASNUETZLICHES_Info ()
 {
-	AI_Output (other, self, "DIA_Valentino_Add_15_03"); //(Con calma) ¿Tienes algo más que decirme?
-	//AI_Output			(other, self, "DIA_Valentino_WASNUETZLICHES_15_00"); //Kannst du mir was Nützliches über die Stadt erzählen?
+	AI_Output (other, self, "DIA_Valentino_Add_15_03"); //(Con calma) Â¿Tienes algo mÃ¡s que decirme?
+	//AI_Output			(other, self, "DIA_Valentino_WASNUETZLICHES_15_00"); //Kannst du mir was NÃ¼tzliches Ã¼ber die Stadt erzÃ¤hlen?
 	
 	if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
@@ -165,14 +165,14 @@ func void DIA_Valentino_WASNUETZLICHES_Info ()
 	&& (other.guild != GIL_KDF)
 	{
 		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_01"); //Hazte popular, no prometas nunca nada a nadie, coge lo que puedas y ten cuidado y no te metas en peleas con la milicia.
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_02"); //O con maridos celosos, naturalmente. Permíteme decirte que son lo peor.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_02"); //O con maridos celosos, naturalmente. PermÃ­teme decirte que son lo peor.
 		Valentino_Lo_Perm = TRUE;
 	}
 	else if (Valentino_Hi_Perm == FALSE)
 	&& ( (other.guild == GIL_PAL) || (other.guild == GIL_KDF) )
 	{
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_03"); //Para un hombre de tu posición, cualquier cosa es posible. Solo tienes que reconocer cuándo es el momento de actuar.
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_04"); //Así que no pierdas ni un momento y actúa.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_03"); //Para un hombre de tu posiciÃ³n, cualquier cosa es posible. Solo tienes que reconocer cuÃ¡ndo es el momento de actuar.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_04"); //AsÃ­ que no pierdas ni un momento y actÃºa.
 		Valentino_Hi_Perm = TRUE;
 	}
 	else
@@ -192,7 +192,7 @@ INSTANCE DIA_Valentino_PICKPOCKET (C_INFO)
 	condition	= DIA_Valentino_PICKPOCKET_Condition;
 	information	= DIA_Valentino_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Sería sencillo robar su llave)";
+	description = "(SerÃ­a sencillo robar su llave)";
 };                       
 
 FUNC INT DIA_Valentino_PICKPOCKET_Condition()

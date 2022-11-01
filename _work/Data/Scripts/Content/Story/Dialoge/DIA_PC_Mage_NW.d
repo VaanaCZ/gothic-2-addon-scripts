@@ -89,28 +89,28 @@ FUNC VOID DIA_MiltenNW_KAP3_Hello_Info()
 {	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_00"); //(Incrédulo) No me lo puedo creer. ¿Ahora eres paladín?
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_00"); //(IncrÃ©dulo) No me lo puedo creer. Â¿Ahora eres paladÃ­n?
 		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_01"); //Resulta evidente.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_02"); //(Eufórico) Si alguien como tú está con los paladines, será mejor que los matones de Beliar se anden con ojo.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_03"); //Si te cargaste al Durmiente, ese puñado de orcos no deberían suponer ningún problema.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_04"); //Esto no tiene que ver únicamente con los orcos.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_05"); //Ya lo sé, pero está muy bien tenerte en nuestro bando.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_02"); //(EufÃ³rico) Si alguien como tÃº estÃ¡ con los paladines, serÃ¡ mejor que los matones de Beliar se anden con ojo.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_03"); //Si te cargaste al Durmiente, ese puÃ±ado de orcos no deberÃ­an suponer ningÃºn problema.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_04"); //Esto no tiene que ver Ãºnicamente con los orcos.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_05"); //Ya lo sÃ©, pero estÃ¡ muy bien tenerte en nuestro bando.
 		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_06"); //Bueno.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_07"); //¿Qué haces en el monasterio? A ver si lo adivino. Quieres que te instruyan en las artes mágicas.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_08"); //Quizá.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_09"); //Lo sabía. Será mejor que hables con Marduk, el que está al cargo de vosotros, los paladines. Lo encontrarás delante de la capilla.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_07"); //Â¿QuÃ© haces en el monasterio? A ver si lo adivino. Quieres que te instruyan en las artes mÃ¡gicas.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_08"); //QuizÃ¡.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_09"); //Lo sabÃ­a. SerÃ¡ mejor que hables con Marduk, el que estÃ¡ al cargo de vosotros, los paladines. Lo encontrarÃ¡s delante de la capilla.
 	};
 	if (hero.guild == GIL_DJG)
 	{
 		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_10"); //Veo que los rumores son ciertos.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_11"); //¿Qué rumores?
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_11"); //Â¿QuÃ© rumores?
 		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_12"); //Que te has enrolado en los cazadores de dragones.
 		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_13"); //Bueno, nunca fuiste un hombre de la iglesia. No obstante, defiendes nuestra causa y eso es lo que cuenta.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_14"); //¿Eso es todo?
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_14"); //Â¿Eso es todo?
 		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_15"); //Me alegro, por supuesto, y deduzco de tu aspecto que todos los orcos te van a tener miedo.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_16"); //Esto no tiene que ver únicamente con los orcos.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_16"); //Esto no tiene que ver Ãºnicamente con los orcos.
 		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_17"); //Ya, pero no dejan de ser un problema. Eres importante.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_18"); //Derrotaste al Durmiente. Es posible que algún día necesitemos tu ayuda.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_18"); //Derrotaste al Durmiente. Es posible que algÃºn dÃ­a necesitemos tu ayuda.
 		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_19"); //Bueno.
 	};		
 };	
@@ -126,7 +126,7 @@ INSTANCE DIA_MiltenNW_Monastery(C_INFO)
 	condition	= DIA_MiltenNW_Monastery_Condition;
 	information	= DIA_MiltenNW_Monastery_Info;
 	permanent	= FALSE;
-	description = "¿Cómo llegaste tan rápido hasta el monasterio?";
+	description = "Â¿CÃ³mo llegaste tan rÃ¡pido hasta el monasterio?";
 };                       
 FUNC INT DIA_MiltenNW_Monastery_Condition()
 {
@@ -137,9 +137,9 @@ FUNC INT DIA_MiltenNW_Monastery_Condition()
 };
 FUNC VOID DIA_MiltenNW_Monastery_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_Monastery_15_00"); //¿Cómo llegaste tan rápido hasta el monasterio?
-	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_01"); //¿Qué clase de pregunta es ésa? Me escabullí a través del paso y fui directamente al monasterio.
-	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_02"); //Hay que reconocer que no me resultó fácil eludir a todos los monstruos que se han instalado en este lado del valle, pero al final me encontré con menos problemas de lo que me esperaba.
+	AI_Output (other,self ,"DIA_MiltenNW_Monastery_15_00"); //Â¿CÃ³mo llegaste tan rÃ¡pido hasta el monasterio?
+	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_01"); //Â¿QuÃ© clase de pregunta es Ã©sa? Me escabullÃ­ a travÃ©s del paso y fui directamente al monasterio.
+	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_02"); //Hay que reconocer que no me resultÃ³ fÃ¡cil eludir a todos los monstruos que se han instalado en este lado del valle, pero al final me encontrÃ© con menos problemas de lo que me esperaba.
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ INSTANCE DIA_MiltenNW_FourFriends(C_INFO)
 	condition	= DIA_MiltenNW_FourFriends_Condition;
 	information	= DIA_MiltenNW_FourFriends_Info;
 	permanent	= FALSE;
-	description = "¿No sabes dónde están los demás?";
+	description = "Â¿No sabes dÃ³nde estÃ¡n los demÃ¡s?";
 };                       
 FUNC INT DIA_MiltenNW_FourFriends_Condition()
 {
@@ -164,33 +164,33 @@ FUNC INT DIA_MiltenNW_FourFriends_Condition()
 };
 FUNC VOID DIA_MiltenNW_FourFriends_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_00"); //¿No sabes dónde están los demás?
+	AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_00"); //Â¿No sabes dÃ³nde estÃ¡n los demÃ¡s?
 	if (Npc_IsDead (PC_FIGHTER_NW_vor_DJG) == FALSE)
 	{
 		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_01"); //Parece que Gorn se ha tomado muy bien su estancia en la mazmorra de Garond.
 		
 		if (MIS_RescueGorn != LOG_SUCCESS)
 		{
-			AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_02"); //¿Cómo salió?
+			AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_02"); //Â¿CÃ³mo saliÃ³?
 			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_03"); //Tuve que mentirle a Garond para que retirara los cargos.
-			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_04"); //Pero que se quede entre nosotros, ¿vale?
+			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_04"); //Pero que se quede entre nosotros, Â¿vale?
 		};
 		
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_05"); //En cualquier caso, quería ir a ver a Lee y comprobar lo que pasaba en la granja.
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_06"); //Con la bazofia que sirven en el calabozo, seguro que se está dando un atracón y poniendo a prueba las provisiones de los mercenarios.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_05"); //En cualquier caso, querÃ­a ir a ver a Lee y comprobar lo que pasaba en la granja.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_06"); //Con la bazofia que sirven en el calabozo, seguro que se estÃ¡ dando un atracÃ³n y poniendo a prueba las provisiones de los mercenarios.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_07"); //Gorn no lo logró.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_07"); //Gorn no lo logrÃ³.
 	};
 	if (Npc_IsDead (PC_THIEF_NW) == FALSE)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_08"); //Diego murmuró no se qué de un ajuste de cuentas. No sé a qué se refería.
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_09"); //No obstante, sospecho que está en la ciudad. Ya lo conoces. Siempre anda por donde pueda haber algún botín.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_08"); //Diego murmurÃ³ no se quÃ© de un ajuste de cuentas. No sÃ© a quÃ© se referÃ­a.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_09"); //No obstante, sospecho que estÃ¡ en la ciudad. Ya lo conoces. Siempre anda por donde pueda haber algÃºn botÃ­n.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_10"); //Diego ha muerto. Parece que la barrera finalmente acabó con él.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_10"); //Diego ha muerto. Parece que la barrera finalmente acabÃ³ con Ã©l.
 	};
 };
 //*************************************************************
@@ -204,7 +204,7 @@ INSTANCE DIA_MiltenNW_KAP3_Entry(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_Entry_Condition;
 	information	= DIA_MiltenNW_KAP3_Entry_Info;
 	permanent	= TRUE;
-	description = "Tengo que entrar en el monasterio, ¡es urgente!";
+	description = "Tengo que entrar en el monasterio, Â¡es urgente!";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_Entry_Condition()
 {
@@ -217,10 +217,10 @@ FUNC INT DIA_MiltenNW_KAP3_Entry_Condition()
 };
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_15_00"); //Tengo que entrar al monasterio. ¡Es urgente!
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_15_00"); //Tengo que entrar al monasterio. Â¡Es urgente!
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self,other,"DIA_MiltenNW_KAP3_Entry_03_01"); //Sí, claro. Aquí tienes la llave.
+		AI_Output (self,other,"DIA_MiltenNW_KAP3_Entry_03_01"); //SÃ­, claro. AquÃ­ tienes la llave.
 		
 		CreateInvItems (self,ItKe_Innos_Mis,1);
 		B_GiveInvItems (self,other,ItKe_Innos_Mis,1); 
@@ -229,7 +229,7 @@ FUNC VOID DIA_MiltenNW_KAP3_Entry_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_02"); //No puedo dejar que entres al monasterio. Te meterás en un lío con el Concilio Supremo.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_02"); //No puedo dejar que entres al monasterio. Te meterÃ¡s en un lÃ­o con el Concilio Supremo.
 		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_03"); //Sin permiso de mis superiores, no puedo dejar pasar a nadie al monasterio.
 	
 		Info_ClearChoices (DIA_MiltenNW_KAP3_Entry);
@@ -250,8 +250,8 @@ FUNC VOID DIA_MiltenNW_KAP3_Entry_BACK ()
 
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Important ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Important_15_00"); //¡Es importante!
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Important_03_01"); //No es posible. Pyrokar me cortaría la cabeza.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Important_15_00"); //Â¡Es importante!
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Important_03_01"); //No es posible. Pyrokar me cortarÃ­a la cabeza.
 	
 	Info_ClearChoices (DIA_MiltenNW_KAP3_Entry);
 };
@@ -259,12 +259,12 @@ FUNC VOID DIA_MiltenNW_KAP3_Entry_Important ()
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Permit ()
 {
 	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Permit_15_00"); //Tengo una carta de lord Hagen.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_01"); //Enséñamela.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_01"); //EnsÃ©Ã±amela.
 	
 	B_GiveInvItems (other,self,ItWr_PermissionToWearInnosEye_MIS,1);
 	B_UseFakeScroll ();	
 	
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_02"); //(Dubitativo) De acuerdo. Aquí tienes la llave del monasterio. Pyrokar está en la iglesia.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_02"); //(Dubitativo) De acuerdo. AquÃ­ tienes la llave del monasterio. Pyrokar estÃ¡ en la iglesia.
 	
 	CreateInvItems (self,ItKe_Innos_Mis,1);
 	B_GiveInvItems (self,other,ItKe_Innos_Mis,1); 
@@ -286,7 +286,7 @@ INSTANCE DIA_MiltenNW_KAP3_NovizenChase(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_NovizenChase_Condition;
 	information	= DIA_MiltenNW_KAP3_NovizenChase_Info;
 	permanent	= FALSE;
-	description = "¿Sabes dónde está Pedro?";
+	description = "Â¿Sabes dÃ³nde estÃ¡ Pedro?";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_NovizenChase_Condition()
 {
@@ -300,15 +300,15 @@ FUNC INT DIA_MiltenNW_KAP3_NovizenChase_Condition()
 
 FUNC VOID DIA_MiltenNW_KAP3_NovizenChase_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_NovizenChase_15_00"); //¿Sabes dónde está Pedro?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_01"); //¿Crees que estaría aquí cruzado de brazos si supiera dónde se esconde el renegado?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_02"); //Tiene que pagar sus fechorías. Espero que consigamos recuperar el Ojo.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_03"); //Tienes que ayudarnos. Encuéntralo y recupera el Ojo de Innos.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_NovizenChase_15_00"); //Â¿Sabes dÃ³nde estÃ¡ Pedro?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_01"); //Â¿Crees que estarÃ­a aquÃ­ cruzado de brazos si supiera dÃ³nde se esconde el renegado?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_02"); //Tiene que pagar sus fechorÃ­as. Espero que consigamos recuperar el Ojo.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_03"); //Tienes que ayudarnos. EncuÃ©ntralo y recupera el Ojo de Innos.
 	//Joly: AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_04"); //Ich werde sehen, was ich tun kann.
 };	
 
 //***************************************************************
-//	Weißt du etwas über die vermummten Gestalten?
+//	WeiÃŸt du etwas Ã¼ber die vermummten Gestalten?
 //***************************************************************
 
 INSTANCE DIA_MiltenNW_KAP3_Perm(C_INFO)
@@ -318,7 +318,7 @@ INSTANCE DIA_MiltenNW_KAP3_Perm(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_Perm_Condition;
 	information	= DIA_MiltenNW_KAP3_Perm_Info;
 	permanent	= FALSE;
-	description = "¿Sabes algo de las figuras encapuchadas?";
+	description = "Â¿Sabes algo de las figuras encapuchadas?";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_Perm_Condition()
 {
@@ -330,7 +330,7 @@ FUNC INT DIA_MiltenNW_KAP3_Perm_Condition()
 
 FUNC VOID DIA_MiltenNW_KAP3_Perm_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Perm_15_00"); //¿Sabes algo de las figuras encapuchadas?
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Perm_15_00"); //Â¿Sabes algo de las figuras encapuchadas?
 	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_01"); //No, pero esos tipos me dan mala espina.
 	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_02"); //Si te topas con ellos, ten cuidado.
 };	
@@ -378,7 +378,7 @@ INSTANCE DIA_MiltenNW_KAP4_PERM(C_INFO)
 	condition	= DIA_MiltenNW_KAP4_PERM_Condition;
 	information	= DIA_MiltenNW_KAP4_PERM_Info;
 	permanent	= TRUE;
-	description = "¿Alguna novedad?";
+	description = "Â¿Alguna novedad?";
 };                       
 FUNC INT DIA_MiltenNW_KAP4_PERM_Condition()
 {
@@ -389,28 +389,28 @@ FUNC INT DIA_MiltenNW_KAP4_PERM_Condition()
 };
 FUNC VOID DIA_MiltenNW_KAP4_PERM_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_00"); //¿Alguna novedad?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_01"); //Soy yo el que debería hacerte esa pregunta. Seguimos muy preocupados.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_00"); //Â¿Alguna novedad?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_01"); //Soy yo el que deberÃ­a hacerte esa pregunta. Seguimos muy preocupados.
 	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_02"); //El Concilio Supremo intenta predecir el siguiente movimiento del enemigo.
-	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_03"); //¿Algo más?
+	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_03"); //Â¿Algo mÃ¡s?
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_04"); //Recientemente se han recibido noticias de más ataques de orcos, incluso fuera del Valle de las Minas.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_04"); //Recientemente se han recibido noticias de mÃ¡s ataques de orcos, incluso fuera del Valle de las Minas.
 		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_05"); //Esto no me gusta. No creo que nos quede mucho tiempo.
 	}
 	else if (hero.guild == GIL_DJG)
 	{
 		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_06"); //Un granjero ha informado que unas criaturas escamosas rondan su granja.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_07"); //No sé qué puede significar, pero me parece que el enemigo planea algo.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_07"); //No sÃ© quÃ© puede significar, pero me parece que el enemigo planea algo.
 	}
 	else if (MIS_FindTheObesessed == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_08"); //Cada vez hay más informes de gente poseída. El enemigo se ha hecho más fuerte, mucho más de lo que esperábamos.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_08"); //Cada vez hay mÃ¡s informes de gente poseÃ­da. El enemigo se ha hecho mÃ¡s fuerte, mucho mÃ¡s de lo que esperÃ¡bamos.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_09"); //No, la situación sigue siendo grave. No podemos más que confiar en Innos.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_09"); //No, la situaciÃ³n sigue siendo grave. No podemos mÃ¡s que confiar en Innos.
 	};
 };
 
@@ -446,7 +446,7 @@ FUNC VOID DIA_MiltenNW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  				   Ich habe alle Drachen getötet. (Perm Kap 5)
+// 	  				   Ich habe alle Drachen getÃ¶tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_MiltenNW_AllDragonsDead(C_INFO)
@@ -468,14 +468,14 @@ FUNC INT DIA_MiltenNW_AllDragonsDead_Condition()
 FUNC VOID DIA_MiltenNW_AllDragonsDead_Info()
 {	
 	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_00"); //He matado a todos los dragones.
-	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_01"); //¿De verdad? Entonces se puede atisbar un rayo de esperanza. Ahora todo lo que tenemos que hacer es cercenar la cabeza del mal.
+	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_01"); //Â¿De verdad? Entonces se puede atisbar un rayo de esperanza. Ahora todo lo que tenemos que hacer es cercenar la cabeza del mal.
 	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_02"); //Si de verdad lo has hecho, entonces ganaremos la guerra.
-	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_03"); //¿Quién? ¿Yo?
-	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_04"); //Tú, claro. ¿Quién si no?
+	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_03"); //Â¿QuiÃ©n? Â¿Yo?
+	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_04"); //TÃº, claro. Â¿QuiÃ©n si no?
 	
 	if (MiltenNW_IsOnBoard	 == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_05"); //Tenemos que partir pronto. Si no, podría ser demasiado tarde.
+		AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_05"); //Tenemos que partir pronto. Si no, podrÃ­a ser demasiado tarde.
 	};
 };
 
@@ -500,7 +500,7 @@ func int DIA_MiltenNW_SCWasInLib_Condition ()
 };
 func void DIA_MiltenNW_SCWasInLib_Info ()
 {
-	AI_Output			(self, other, "DIA_MiltenNW_SCWasInLib_03_00"); //Eh, he oído que has pasado mucho tiempo en los sótanos del monasterio. ¿Qué has encontrado?
+	AI_Output			(self, other, "DIA_MiltenNW_SCWasInLib_03_00"); //Eh, he oÃ­do que has pasado mucho tiempo en los sÃ³tanos del monasterio. Â¿QuÃ© has encontrado?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -513,7 +513,7 @@ instance DIA_MiltenNW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_MiltenNW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_MiltenNW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Sé dónde se esconde el enemigo.";
+	description	 = 	"SÃ© dÃ³nde se esconde el enemigo.";
 };
 
 func int DIA_MiltenNW_KnowWhereEnemy_Condition ()
@@ -527,53 +527,53 @@ func int DIA_MiltenNW_KnowWhereEnemy_Condition ()
 var int SCToldMiltenHeKnowWhereEnemy;
 func void DIA_MiltenNW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_KnowWhereEnemy_15_00"); //Sé dónde se esconde el enemigo. Es una pequeña isla, no lejos de aquí.
-	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_01"); //Ésta es nuestra mejor oportunidad. Tenemos que partir de inmediato y acabar con el mal para siempre.
+	AI_Output			(other, self, "DIA_MiltenNW_KnowWhereEnemy_15_00"); //SÃ© dÃ³nde se esconde el enemigo. Es una pequeÃ±a isla, no lejos de aquÃ­.
+	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_01"); //Ã‰sta es nuestra mejor oportunidad. Tenemos que partir de inmediato y acabar con el mal para siempre.
 	SCToldMiltenHeKnowWhereEnemy = TRUE;
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);  
   	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING);
   	if ((Npc_IsDead(DiegoNW))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_02"); //¿Has hablado de esto con Diego? Creo que querría acompañarte.
- 		B_LogEntry (TOPIC_Crew,"Diego podría ser de gran ayuda. Nunca se ha quedado mucho tiempo en ningún lugar.");
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_02"); //Â¿Has hablado de esto con Diego? Creo que querrÃ­a acompaÃ±arte.
+ 		B_LogEntry (TOPIC_Crew,"Diego podrÃ­a ser de gran ayuda. Nunca se ha quedado mucho tiempo en ningÃºn lugar.");
  	};
 
   	if ((Npc_IsDead(GornNW_nach_DJG))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_03"); //¿Qué hay de Gorn? Habla con él. He oído que ha vuelto del Valle de las Minas.
- 		B_LogEntry (TOPIC_Crew,"Está claro que Gorn podría ser de gran ayuda. Nunca es malo tener un buen guerrero al lado. Quizá pueda entrenarme.");
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_03"); //Â¿QuÃ© hay de Gorn? Habla con Ã©l. He oÃ­do que ha vuelto del Valle de las Minas.
+ 		B_LogEntry (TOPIC_Crew,"EstÃ¡ claro que Gorn podrÃ­a ser de gran ayuda. Nunca es malo tener un buen guerrero al lado. QuizÃ¡ pueda entrenarme.");
  	};
 	
 	if ((Npc_IsDead(Lester))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_04"); //Y no te olvides de Lester. Si no le sacas de su valle, se pudrirá allí.
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_04"); //Y no te olvides de Lester. Si no le sacas de su valle, se pudrirÃ¡ allÃ­.
  		B_LogEntry (TOPIC_Crew,"Si no llevo a Lester conmigo, probablemente nunca salga de este valle.");
  	};
 	
-	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_05"); //También conozco mi papel en todo esto. Puedo aumentar tu maná y te puedo ayudar a crear runas una vez que nos enfrentemos al enemigo. ¿Cuándo empezamos?
+	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_05"); //TambiÃ©n conozco mi papel en todo esto. Puedo aumentar tu manÃ¡ y te puedo ayudar a crear runas una vez que nos enfrentemos al enemigo. Â¿CuÃ¡ndo empezamos?
 	
-	B_LogEntry (TOPIC_Crew,"Si Milten viene conmigo, me podrá enseñar a crear runas y a aumentar mi maná.");
+	B_LogEntry (TOPIC_Crew,"Si Milten viene conmigo, me podrÃ¡ enseÃ±ar a crear runas y a aumentar mi manÃ¡.");
 	
 	if (crewmember_count >= Max_Crew)
 	{
 		AI_Output			(other,self , "DIA_MiltenNW_KnowWhereEnemy_15_06"); //No tan deprisa, ya tengo gente suficiente.
-		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_07"); //Sabes que iría contigo. Si cambias de idea, estaré aquí, esperándote.
+		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_07"); //Sabes que irÃ­a contigo. Si cambias de idea, estarÃ© aquÃ­, esperÃ¡ndote.
 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_08"); //Buena suerte y que Innos extienda sobre ti su mano protectora.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_MiltenNW_KnowWhereEnemy);
 		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"Por el momento no me resultas de utilidad.",DIA_MiltenNW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"¡Bienvenido a bordo!",DIA_MiltenNW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"Â¡Bienvenido a bordo!",DIA_MiltenNW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_MiltenNW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_00"); //¡Bienvenido a bordo!
-	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_01"); //Nos vemos en el puerto. Espérame allí.
-	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_Yes_03_02"); //Bien. Estaré allí cuando estés listo.
+	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_00"); //Â¡Bienvenido a bordo!
+	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_01"); //Nos vemos en el puerto. EspÃ©rame allÃ­.
+	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_Yes_03_02"); //Bien. EstarÃ© allÃ­ cuando estÃ©s listo.
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	MiltenNW_IsOnBoard	 = LOG_SUCCESS;
@@ -597,7 +597,7 @@ FUNC VOID DIA_MiltenNW_KnowWhereEnemy_Yes ()
 FUNC VOID DIA_MiltenNW_KnowWhereEnemy_No ()
 {
 	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_No_15_00"); //Por el momento no me resultas de utilidad.
-	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_No_03_01"); //Sabes que me quedaría contigo hasta el final. Si cambias de idea, estaré aquí esperándote.
+	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_No_03_01"); //Sabes que me quedarÃ­a contigo hasta el final. Si cambias de idea, estarÃ© aquÃ­ esperÃ¡ndote.
 
 	MiltenNW_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_MiltenNW_KnowWhereEnemy);
@@ -613,7 +613,7 @@ instance DIA_MiltenNW_WhereCaptain		(C_INFO)
 	condition	 = 	DIA_MiltenNW_WhereCaptain_Condition;
 	information	 = 	DIA_MiltenNW_WhereCaptain_Info;
 	
-	description	 = 	"¿Dónde busco un capitán?";
+	description	 = 	"Â¿DÃ³nde busco un capitÃ¡n?";
 
 };
 func int DIA_MiltenNW_WhereCaptain_Condition ()
@@ -627,14 +627,14 @@ func int DIA_MiltenNW_WhereCaptain_Condition ()
 };
 func void DIA_MiltenNW_WhereCaptain_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_WhereCaptain_15_00"); //¿Dónde busco al capitán?
-	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_01"); //Pregunta a Jurgen, después de todo es marinero. Debería seguir en el monasterio.
-	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_02"); //Pero si no puede ayudarte, tendrás que buscar a alguien en las granjas o en la ciudad que te ayude a gobernar la nave.
+	AI_Output			(other, self, "DIA_MiltenNW_WhereCaptain_15_00"); //Â¿DÃ³nde busco al capitÃ¡n?
+	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_01"); //Pregunta a Jurgen, despuÃ©s de todo es marinero. DeberÃ­a seguir en el monasterio.
+	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_02"); //Pero si no puede ayudarte, tendrÃ¡s que buscar a alguien en las granjas o en la ciudad que te ayude a gobernar la nave.
 	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_03"); //Lo mejor es hablar con Lee o ir al puerto de Khorinis. Ahora mismo no se me ocurre nada mejor.
  
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                                                            
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                                                          
-	B_LogEntry (TOPIC_Captain,"Podría llevar conmigo a Jorgen, como capitán. Aún debería estar en el monasterio. Aparte de eso, tiene que haber más candidatos en las granjas o en la ciudad. Puede que deba hablar con Lee o preguntarle acerca del puerto.");
+	B_LogEntry (TOPIC_Captain,"PodrÃ­a llevar conmigo a Jorgen, como capitÃ¡n. AÃºn deberÃ­a estar en el monasterio. Aparte de eso, tiene que haber mÃ¡s candidatos en las granjas o en la ciudad. Puede que deba hablar con Lee o preguntarle acerca del puerto.");
 	
 };
 
@@ -648,7 +648,7 @@ instance DIA_MiltenNW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_MiltenNW_LeaveMyShip_Condition;
 	information	 = 	DIA_MiltenNW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Después de todo no puedo llevarte.";
+	description	 = 	"DespuÃ©s de todo no puedo llevarte.";
 };
 func int DIA_MiltenNW_LeaveMyShip_Condition ()
 {	
@@ -660,8 +660,8 @@ func int DIA_MiltenNW_LeaveMyShip_Condition ()
 };
 func void DIA_MiltenNW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_LeaveMyShip_15_00"); //Después de todo no puedo llevarte.
-	AI_Output			(self, other, "DIA_MiltenNW_LeaveMyShip_03_01"); //Tú sabrás quién te puede ayudar. Si cambias de idea, te esperaré en el monasterio.
+	AI_Output			(other, self, "DIA_MiltenNW_LeaveMyShip_15_00"); //DespuÃ©s de todo no puedo llevarte.
+	AI_Output			(self, other, "DIA_MiltenNW_LeaveMyShip_03_01"); //TÃº sabrÃ¡s quiÃ©n te puede ayudar. Si cambias de idea, te esperarÃ© en el monasterio.
 	
 	MiltenNW_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -670,7 +670,7 @@ func void DIA_MiltenNW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_MiltenNW_StillNeedYou		(C_INFO)
 {
@@ -683,7 +683,7 @@ instance DIA_MiltenNW_StillNeedYou		(C_INFO)
 };
 func int DIA_MiltenNW_StillNeedYou_Condition ()
 {	
-	if ((MiltenNW_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natürlich nur eine variable abfragen
+	if ((MiltenNW_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natÃ¼rlich nur eine variable abfragen
 	|| (MiltenNW_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{
@@ -694,8 +694,8 @@ func void DIA_MiltenNW_StillNeedYou_Info ()
 {
 	AI_Output			(other, self, "DIA_MiltenNW_StillNeedYou_15_00"); //Te necesito.
 
-	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_01"); //Tu decisión me honra. Vamos, no tenemos tiempo que perder.
-	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_02"); //Iré al puerto. Nos encontraremos allí.
+	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_01"); //Tu decisiÃ³n me honra. Vamos, no tenemos tiempo que perder.
+	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_02"); //IrÃ© al puerto. Nos encontraremos allÃ­.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	MiltenNW_IsOnBoard	 = LOG_SUCCESS;
@@ -725,7 +725,7 @@ INSTANCE DIA_MiltenNW_Teach(C_INFO)
 	condition	= DIA_MiltenNW_Teach_Condition;
 	information	= DIA_MiltenNW_Teach_Info;
 	permanent	= TRUE;
-	description = "Quiero aprender más conjuros.";
+	description = "Quiero aprender mÃ¡s conjuros.";
 };                       
 
 FUNC INT DIA_MiltenNW_Teach_Condition()
@@ -737,7 +737,7 @@ FUNC INT DIA_MiltenNW_Teach_Condition()
 }; 
 FUNC VOID DIA_MiltenNW_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_Teach_15_00");//Quiero aprender más conjuros.
+	AI_Output (other,self ,"DIA_MiltenNW_Teach_15_00");//Quiero aprender mÃ¡s conjuros.
 	
 	if  (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 2)
 	{
@@ -759,7 +759,7 @@ FUNC VOID DIA_MiltenNW_Teach_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_Teach_03_01");//Todavía no has alcanzado el segundo círculo de magia. No te puedo enseñar nada.
+		AI_Output (self ,other,"DIA_MiltenNW_Teach_03_01");//TodavÃ­a no has alcanzado el segundo cÃ­rculo de magia. No te puedo enseÃ±ar nada.
 	};
 };	
 FUNC VOID DIA_MiltenNW_Teach_BACK()
@@ -788,7 +788,7 @@ instance DIA_MiltenNW_Mana		(C_INFO)
 	condition	 = 	DIA_MiltenNW_Mana_Condition;
 	information	 = 	DIA_MiltenNW_Mana_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Quiero aumentar mis poderes mágicos.";
+	description	 = 	"Quiero aumentar mis poderes mÃ¡gicos.";
 };
 func int DIA_MiltenNW_Mana_Condition ()
 {	
@@ -799,7 +799,7 @@ func int DIA_MiltenNW_Mana_Condition ()
 };
 func void DIA_MiltenNW_Mana_Info ()
 {
-	AI_Output (other, self, "DIA_MiltenNW_Mana_15_00"); //Quiero aumentar mis poderes mágicos.
+	AI_Output (other, self, "DIA_MiltenNW_Mana_15_00"); //Quiero aumentar mis poderes mÃ¡gicos.
 	
 	Info_ClearChoices   (DIA_MiltenNW_Mana);
 	Info_AddChoice 		(DIA_MiltenNW_Mana, DIALOG_BACK, DIA_MiltenNW_Mana_BACK);
@@ -811,7 +811,7 @@ func void DIA_MiltenNW_Mana_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "DIA_MiltenNW_Mana_03_00"); //Tu poder mágico es grande, demasiado como para que pueda ayudarte a aumentarlo.
+		AI_Output (self, other, "DIA_MiltenNW_Mana_03_00"); //Tu poder mÃ¡gico es grande, demasiado como para que pueda ayudarte a aumentarlo.
 	};
 	Info_ClearChoices (DIA_MiltenNW_Mana);
 };

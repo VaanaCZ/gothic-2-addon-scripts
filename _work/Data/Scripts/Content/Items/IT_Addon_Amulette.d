@@ -249,7 +249,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		//aktuelle Hitpoints werden nicht gesteigert. (Sonst Heilmaschine)
 	};
 //---------------------------------------------------------------------------------------------------------
-	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //Höhle zum Canyon
+	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //HÃ¶hle zum Canyon
 {
 	name 			=	NAME_Ring;
 
@@ -513,9 +513,9 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		
 	};
 //------------------------------------------------------------------------------------------
-// Kumulatives Stärke Amulett (Maya) 
+// Kumulatives StÃ¤rke Amulett (Maya) 
 //------------------------------------------------------------------------------------------
-	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranhöhle strand
+	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranhÃ¶hle strand
 {
 	name 			=	NAME_Amulett;
 

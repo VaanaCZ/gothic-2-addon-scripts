@@ -47,7 +47,7 @@ func void EVT_ORKOBERST ()
 		
 		ORkSturmDI  = TRUE;
 		
-		B_LogEntry (TOPIC_HallenVonIrdorath,"El coronel orco no es pieza fácil. En algún lugar de su salón del trono tiene que estar la manera de seguir adelante."); 
+		B_LogEntry (TOPIC_HallenVonIrdorath,"El coronel orco no es pieza fÃ¡cil. En algÃºn lugar de su salÃ³n del trono tiene que estar la manera de seguir adelante."); 
 
 		EVT_ORKOBERST_OneTime = TRUE;
 	};

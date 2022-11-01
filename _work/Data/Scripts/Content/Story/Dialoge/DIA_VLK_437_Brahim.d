@@ -6,7 +6,7 @@ FUNC VOID B_BrahimNewMaps ()
 {
 	if (Brahim_ShowedMaps == TRUE)
 	{
-		AI_Output			(self, other, "B_BrahimNewMaps_07_00"); //Vuelve más tarde. Seguro que entonces tendré algo nuevo para ti.
+		AI_Output			(self, other, "B_BrahimNewMaps_07_00"); //Vuelve mÃ¡s tarde. Seguro que entonces tendrÃ© algo nuevo para ti.
 	};
 };
 INSTANCE DIA_Brahim_EXIT   (C_INFO)
@@ -78,7 +78,7 @@ instance DIA_Brahim_GREET		(C_INFO)
 	condition	 = 	DIA_Brahim_GREET_Condition;
 	information	 = 	DIA_Brahim_GREET_Info;
 	permanent	 =  FALSE;
-	description	 = 	"¿Qué estás haciendo aquí?";
+	description	 = 	"Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 func int DIA_Brahim_GREET_Condition ()
 {
@@ -86,10 +86,10 @@ func int DIA_Brahim_GREET_Condition ()
 };
 func void DIA_Brahim_GREET_Info ()
 {
-	AI_Output (other, self, "DIA_Brahim_GREET_15_00"); //¿Qué estás haciendo aquí?
+	AI_Output (other, self, "DIA_Brahim_GREET_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
 	AI_Output (self, other, "DIA_Brahim_GREET_07_01"); //Me llamo Brahim. Dibujo mapas y los vendo.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Como eres nuevo aquí, quizá te vendría bien un mapa de la ciudad.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Es bastante barato, y muy útil hasta que aprendas a orientarte.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Como eres nuevo aquÃ­, quizÃ¡ te vendrÃ­a bien un mapa de la ciudad.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Es bastante barato, y muy Ãºtil hasta que aprendas a orientarte.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Brahim dibuja y vende mapas cerca del puerto.");
@@ -105,7 +105,7 @@ instance DIA_Addon_Brahim_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Brahim_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Brahim_MissingPeople_Info;
 
-	description	 = 	"¿Es cierto que ha desaparecido gente, sin más?";
+	description	 = 	"Â¿Es cierto que ha desaparecido gente, sin mÃ¡s?";
 };
 
 func int DIA_Addon_Brahim_MissingPeople_Condition ()
@@ -119,10 +119,10 @@ func int DIA_Addon_Brahim_MissingPeople_Condition ()
 
 func void DIA_Addon_Brahim_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //¿Es cierto que ha desaparecido gente, sin más?
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //Eso he oído. Pero no tengo muy claro si es verdad.
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Echa un vistazo. ¿Este agujero de ratas te parece el típico lugar al que vendrías a pasar tus mejores años?
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //No me extraña que la gente se esté largando.
+	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //Â¿Es cierto que ha desaparecido gente, sin mÃ¡s?
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //Eso he oÃ­do. Pero no tengo muy claro si es verdad.
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Echa un vistazo. Â¿Este agujero de ratas te parece el tÃ­pico lugar al que vendrÃ­as a pasar tus mejores aÃ±os?
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //No me extraÃ±a que la gente se estÃ© largando.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -162,7 +162,7 @@ instance DIA_Brahim_BUY		(C_INFO)
 	information	 = 	DIA_Brahim_BUY_Info;
 	permanent 	 =  TRUE;
 	trade 		 =  TRUE;
-	description	 = 	"Enséñame tus mapas.";
+	description	 = 	"EnsÃ©Ã±ame tus mapas.";
 };
 
 func int DIA_Brahim_BUY_Condition ()
@@ -175,15 +175,15 @@ func int DIA_Brahim_BUY_Condition ()
 func void DIA_Brahim_BUY_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Brahim_BUY_15_00"); //Enséñame tus mapas.
+	AI_Output (other, self, "DIA_Brahim_BUY_15_00"); //EnsÃ©Ã±ame tus mapas.
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other, "DIA_Brahim_BUY_07_01"); //No encontrarás nada mejor en ese monasterio tuyo.
+		AI_Output (self ,other, "DIA_Brahim_BUY_07_01"); //No encontrarÃ¡s nada mejor en ese monasterio tuyo.
 	};
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other, "DIA_Brahim_BUY_07_02"); //Los buenos mapas son importantes. Especialmente para la gente que llega del continente, Sr. Paladín.
+		AI_Output (self ,other, "DIA_Brahim_BUY_07_02"); //Los buenos mapas son importantes. Especialmente para la gente que llega del continente, Sr. PaladÃ­n.
 	};
 	Brahim_ShowedMaps = TRUE;
 };
@@ -250,15 +250,15 @@ FUNC INT DIA_Brahim_Kap3_First_EXIT_Condition()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_Info()
 {
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_00"); //Sabía que éste te interesaría.
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_15_01"); //¿A cuál te refieres?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_00"); //SabÃ­a que Ã©ste te interesarÃ­a.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_15_01"); //Â¿A cuÃ¡l te refieres?
 	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_02"); //Bueno, ese viejo mapa que acabas de comprar.
-	AI_Output (self, other,"DIA_Brahim_Kap3_First_EXIT_07_03"); //Conozco a los de tu calaña. No dejas escapar una oportunidad de encontrar tesoros.
+	AI_Output (self, other,"DIA_Brahim_Kap3_First_EXIT_07_03"); //Conozco a los de tu calaÃ±a. No dejas escapar una oportunidad de encontrar tesoros.
 	Info_ClearChoices (DIA_Brahim_Kap3_First_EXIT);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,DIALOG_BACK,DIA_Brahim_Kap3_First_EXIT_BACK);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"¿Dónde has conseguido ese documento?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"¿Qué tipo de documento es ese?",DIA_Brahim_Kap3_First_EXIT_Content);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"¿Por qué no te lo quedas?",DIA_Brahim_Kap3_First_EXIT_KeepIt);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Â¿DÃ³nde has conseguido ese documento?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Â¿QuÃ© tipo de documento es ese?",DIA_Brahim_Kap3_First_EXIT_Content);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Â¿Por quÃ© no te lo quedas?",DIA_Brahim_Kap3_First_EXIT_KeepIt);
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_BACK ()
@@ -268,23 +268,23 @@ FUNC VOID DIA_Brahim_Kap3_First_EXIT_BACK ()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_WhereGetIt ()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //¿De dónde sacaste este mapa?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //Oh, lo encontré entre una pila de mapas que compré recientemente.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //Se le debió de traspapelar al vendedor.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //Â¿De dÃ³nde sacaste este mapa?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //Oh, lo encontrÃ© entre una pila de mapas que comprÃ© recientemente.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //Se le debiÃ³ de traspapelar al vendedor.
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_Content ()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //¿Qué clase de mapa es?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //Parece ser un mapa del tesoro o algo así.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //Pero me pareces la clase de persona que llegará al fondo de este asunto.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //Â¿QuÃ© clase de mapa es?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //Parece ser un mapa del tesoro o algo asÃ­.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //Pero me pareces la clase de persona que llegarÃ¡ al fondo de este asunto.
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_KeepIt()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //¿Por qué no te lo quedas?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Soy un hombre viejo y ya hace mucho que pasó la época en la que salía de viaje.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //Se lo dejo a los jóvenes.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //Â¿Por quÃ© no te lo quedas?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Soy un hombre viejo y ya hace mucho que pasÃ³ la Ã©poca en la que salÃ­a de viaje.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //Se lo dejo a los jÃ³venes.
 };
 
 

@@ -79,7 +79,7 @@ FUNC VOID DIA_Wirt_Hallo_Info()
 	var int randy;
 	randy = Hlp_Random (2);
 	
-	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Oye, acércate. Tómate un descanso y bebe un sorbo de cerveza fresca.
+	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Oye, acÃ©rcate. TÃ³mate un descanso y bebe un sorbo de cerveza fresca.
 	
 	if (self.aivar [AIV_TalkedToPlayer] == FALSE) 
 	{
@@ -88,26 +88,26 @@ FUNC VOID DIA_Wirt_Hallo_Info()
 	}
 	else if (randy == 0)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//No hay nada mejor que una pinta fría después del trabajo.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//No hay nada mejor que una pinta frÃ­a despuÃ©s del trabajo.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 1)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//Los paladines lo arreglarán todo. Así que tómate otra jarra y disfruta.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//Los paladines lo arreglarÃ¡n todo. AsÃ­ que tÃ³mate otra jarra y disfruta.
 		
 		B_GiveInvItems (self, other, ItFo_Beer,1);
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 2)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//Puedes decir lo que quieras de Khorinis, pero nuestro 'Paladín oscuro' es simplemente el mejor de Myrtana.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//Puedes decir lo que quieras de Khorinis, pero nuestro 'PaladÃ­n oscuro' es simplemente el mejor de Myrtana.
 		AI_StopProcessInfos (self);
 	};
 };
 
 /*
-	Wenn du ein Problem hast und es lässt sich lösen, dann denk nicht weiter drüber nach.
-	Und wenn du es nicht lösen kannst, dann brauchst du auch nicht weiter drüber nachzudenken. 
+	Wenn du ein Problem hast und es lÃ¤sst sich lÃ¶sen, dann denk nicht weiter drÃ¼ber nach.
+	Und wenn du es nicht lÃ¶sen kannst, dann brauchst du auch nicht weiter drÃ¼ber nachzudenken. 
 */
 
 

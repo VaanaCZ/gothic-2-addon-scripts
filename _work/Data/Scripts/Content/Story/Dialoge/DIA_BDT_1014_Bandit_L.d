@@ -41,7 +41,7 @@ func int DIA_BDT_1014_BANDIT_KILLER_Condition ()
 };
 func void DIA_BDT_1014_BANDIT_KILLER_Info ()
 {
-	AI_Output (self, other, "DIA_BDT_1014_BANDIT_KILLER_06_00"); //¡Claro que es él! ¡Vamos a darle una buena!
+	AI_Output (self, other, "DIA_BDT_1014_BANDIT_KILLER_06_00"); //Â¡Claro que es Ã©l! Â¡Vamos a darle una buena!
 	
 	AI_StopProcessInfos (self);
 

@@ -34,9 +34,9 @@ FUNC VOID PC_SmithWeapon_End_Info()
 
 
 // *****************
-// Amboﬂ-Dialoge
+// Ambo√ü-Dialoge
 // -------------
-// h‰ngen am Spieler
+// h√§ngen am Spieler
 // *****************
 
 
@@ -575,8 +575,8 @@ FUNC VOID PC_ItMw_2H_Special_04_Info ()
 // ****************************************************
 // SMITHWEAPON_S1
 // --------------
-// Funktion wird durch Amboﬂ-Mobsi-Benutzung aufgerufen!
-// benˆtigtes Item daf¸r: ItMiSwordrawhot
+// Funktion wird durch Ambo√ü-Mobsi-Benutzung aufgerufen!
+// ben√∂tigtes Item daf√ºr: ItMiSwordrawhot
 // *****************************************************
 
 FUNC VOID SMITHWEAPON_S1 ()

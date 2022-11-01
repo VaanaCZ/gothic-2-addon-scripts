@@ -29,7 +29,7 @@ INSTANCE DIA_OCVLK_6_PEOPLE(C_INFO)
 	condition	= DIA_OCVLK_6_PEOPLE_Condition;
 	information	= DIA_OCVLK_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT DIA_OCVLK_6_PEOPLE_Condition()
@@ -39,12 +39,12 @@ FUNC INT DIA_OCVLK_6_PEOPLE_Condition()
 
 FUNC VOID DIA_OCVLK_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_6_PEOPLE_15_00"); //¿Quién está al mando?
-	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_01"); //Garond está al mando de todo el fuerte... o de lo que queda de él.
-	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_02"); //Pero no se ocupa de casi nada... salvo cuando uno de los suyos se mete en algún lío.
+	AI_Output (other, self, "DIA_OCVLK_6_PEOPLE_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_01"); //Garond estÃ¡ al mando de todo el fuerte... o de lo que queda de Ã©l.
+	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_02"); //Pero no se ocupa de casi nada... salvo cuando uno de los suyos se mete en algÃºn lÃ­o.
 	if (Npc_IsDead (Engor) == FALSE)
 	{
-		AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_03"); //Si quieres equipo, tendrías que haber ido a ver a Engor. Lo encontrarás en la casa que está enfrente de la de Garond.
+		AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_03"); //Si quieres equipo, tendrÃ­as que haber ido a ver a Engor. Lo encontrarÃ¡s en la casa que estÃ¡ enfrente de la de Garond.
 	};
 };
 
@@ -57,7 +57,7 @@ INSTANCE DIA_OCVLK_6_LOCATION(C_INFO)
 	condition	= DIA_OCVLK_6_LOCATION_Condition;
 	information	= DIA_OCVLK_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Qué puedes contarme de la situación del Valle de las Minas?";
+	description = "Â¿QuÃ© puedes contarme de la situaciÃ³n del Valle de las Minas?";
 };                       
 
 FUNC INT DIA_OCVLK_6_LOCATION_Condition()
@@ -71,11 +71,11 @@ FUNC INT DIA_OCVLK_6_LOCATION_Condition()
 
 FUNC VOID DIA_OCVLK_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_6_LOCATION_15_00"); //¿Qué puedes contarme de la situación del Valle de las Minas?
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_01"); //Me preocupa la muralla protectora de los orcos. No quiero imaginarme lo que esconden allí detrás.
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_02"); //Al principio solo había unos pocos y construyeron la muralla. Luego, una noche, trajeron las máquinas de asedio.
+	AI_Output (other, self, "DIA_OCVLK_6_LOCATION_15_00"); //Â¿QuÃ© puedes contarme de la situaciÃ³n del Valle de las Minas?
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_01"); //Me preocupa la muralla protectora de los orcos. No quiero imaginarme lo que esconden allÃ­ detrÃ¡s.
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_02"); //Al principio solo habÃ­a unos pocos y construyeron la muralla. Luego, una noche, trajeron las mÃ¡quinas de asedio.
 	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_03"); //Tuvimos suerte y conseguimos repeler el ataque.
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_04"); //Tras la muralla está el mar. Si llegan más orcos en otros barcos, no tendremos ninguna oportunidad.
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_04"); //Tras la muralla estÃ¡ el mar. Si llegan mÃ¡s orcos en otros barcos, no tendremos ninguna oportunidad.
 };
 
 // *************************************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_OCVLK_6_STANDARD(C_INFO)
 	condition	= DIA_OCVLK_6_STANDARD_Condition;
 	information	= DIA_OCVLK_6_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Qué tal va todo?";
+	description = "Â¿QuÃ© tal va todo?";
 };                       
 func INT DIA_OCVLK_6_STANDARD_Condition()
 {
@@ -95,24 +95,24 @@ func INT DIA_OCVLK_6_STANDARD_Condition()
 };
 FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_6_STANDARD_15_00"); //¿Cómo va todo?
+	AI_Output (other, self, "DIA_OCVLK_6_STANDARD_15_00"); //Â¿CÃ³mo va todo?
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_01"); //Dicen que una vez que te enrolas en el ejército, te das a la buena vida. Fíjate.
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_02"); //Ahora está prohibido, so pena de muerte, acercarse siquiera a las provisiones. Parece que Garond tiene miedo de que asaltemos las vituallas y nos larguemos (risa amarga).
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_03"); //¡Nos vamos a morir de hambre, si es que no nos matan antes esos malditos dragones!
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_01"); //Dicen que una vez que te enrolas en el ejÃ©rcito, te das a la buena vida. FÃ­jate.
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_02"); //Ahora estÃ¡ prohibido, so pena de muerte, acercarse siquiera a las provisiones. Parece que Garond tiene miedo de que asaltemos las vituallas y nos larguemos (risa amarga).
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_03"); //Â¡Nos vamos a morir de hambre, si es que no nos matan antes esos malditos dragones!
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_04"); //Cazadores de dragones. ¡No me hagas reír! No van a cambiar nada.
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_04"); //Cazadores de dragones. Â¡No me hagas reÃ­r! No van a cambiar nada.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_05"); //¡Se dice que los dragones han muerto! ¡Ahora sí tenemos alguna oportunidad!
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_05"); //Â¡Se dice que los dragones han muerto! Â¡Ahora sÃ­ tenemos alguna oportunidad!
 		};
 	};
 
@@ -120,11 +120,11 @@ FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_06"); //Maldito mineral. Deberíamos tirar por las almenas todas las reservas de mineral. Con eso, a lo mejor conseguimos que los orcos nos dejen en paz.
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_06"); //Maldito mineral. DeberÃ­amos tirar por las almenas todas las reservas de mineral. Con eso, a lo mejor conseguimos que los orcos nos dejen en paz.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_07"); //¡Estas cajas ridículas que han apilado al tun tun delante de la entrada no van a servir para detener a los orcos!
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_07"); //Â¡Estas cajas ridÃ­culas que han apilado al tun tun delante de la entrada no van a servir para detener a los orcos!
 		};
 	};
 };

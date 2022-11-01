@@ -46,7 +46,7 @@ const int TwoHStonePlate 		= 7;
 const int BowStonePlate 		= 8;
 const int CrsBowStonePlate 		= 9;
 
-const string StPl_MagicAuraText = "La tablilla de piedra tiene un aura m·gica.";
+const string StPl_MagicAuraText = "La tablilla de piedra tiene un aura m√°gica.";
 const string StPl_StandardText 	= "";
 
 //------------------------------------------------------------------------------------------
@@ -412,7 +412,7 @@ func void Use_DexStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_HitPointStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Tablilla de piedra de EnergÌa vital I";
+	description 		=	"Tablilla de piedra de Energ√≠a vital I";
 	on_state[0]			=   Use_HitPointStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -423,7 +423,7 @@ func void Use_HitPointStonePlate1 ()
 };
 instance ItWr_HitPointStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablilla de piedra de EnergÌa vital III";
+	description 		=	"Tablilla de piedra de Energ√≠a vital III";
 	on_state[0]			=   Use_HitPointStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -434,7 +434,7 @@ func void Use_HitPointStonePlate2 ()
 };
 instance ItWr_HitPointStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablilla de piedra de EnergÌa vital III";
+	description 		=	"Tablilla de piedra de Energ√≠a vital III";
 	on_state[0]			=   Use_HitPointStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };

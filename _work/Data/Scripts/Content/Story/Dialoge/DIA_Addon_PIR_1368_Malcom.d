@@ -24,9 +24,9 @@ func VOID DIA_Addon_Malcom_EXIT_Info()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_03"); //°Eh! Cuando llegues a nuestro campamento, dale un mensaje a Henry.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //Estos ·rboles de aquÌ son muy duros.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //La madera a˙n tardar· un poco. DÌselo.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_03"); //¬°Eh! Cuando llegues a nuestro campamento, dale un mensaje a Henry.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //Estos √°rboles de aqu√≠ son muy duros.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //La madera a√∫n tardar√° un poco. D√≠selo.
 		MalcomBotschaft = TRUE;
 	};
 	
@@ -92,7 +92,7 @@ func int DIA_Addon_Malcom_Hello_Condition ()
 
 func void DIA_Addon_Malcom_Hello_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_01"); //No eres de por aquÌ, øverdad?
+	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_01"); //No eres de por aqu√≠, ¬øverdad?
 	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_02"); //Parece que vienes de lejos.
 };
 
@@ -106,7 +106,7 @@ instance DIA_Addon_Malcom_WasMachen		(C_INFO)
 	condition	= DIA_Addon_Malcom_WasMachen_Condition;
 	information	= DIA_Addon_Malcom_WasMachen_Info;
 
-	description	= "øOcupado?";
+	description	= "¬øOcupado?";
 };
 func int DIA_Addon_Malcom_WasMachen_Condition ()
 {
@@ -114,20 +114,20 @@ func int DIA_Addon_Malcom_WasMachen_Condition ()
 };
 func void DIA_Addon_Malcom_WasMachen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_00"); //øOcupado?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_01"); //Ni lo preguntes. Henry quiere que corte todos estos ·rboles.
+	AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_00"); //¬øOcupado?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_01"); //Ni lo preguntes. Henry quiere que corte todos estos √°rboles.
 	if (Henry.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_02"); //øHenry?
-		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //Es el lÌder de nuestra tropa.
+		AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_02"); //¬øHenry?
+		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //Es el l√≠der de nuestra tropa.
 	};
 	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_04"); //Siempre anda por la entrada del campamento, fanfarroneando.
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Quiere un servicio m·s dedicado a la comunidad y cosas de esas.
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_06"); //Pero Èl no mueve ni un dedo.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Quiere un servicio m√°s dedicado a la comunidad y cosas de esas.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_06"); //Pero √©l no mueve ni un dedo.
 };
 
 // ************************************************************
-// 					Holz - Nachricht f¸r Henry
+// 					Holz - Nachricht f√ºr Henry
 // ************************************************************
 instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 {
@@ -136,7 +136,7 @@ instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 	condition	 = 	DIA_Addon_Malcom_Entertrupp_Condition;
 	information	 = 	DIA_Addon_Malcom_Entertrupp_Info;
 
-	description	 = 	"øHenry es tu lÌder?";
+	description	 = 	"¬øHenry es tu l√≠der?";
 };
 func int DIA_Addon_Malcom_Entertrupp_Condition ()
 {
@@ -147,12 +147,12 @@ func int DIA_Addon_Malcom_Entertrupp_Condition ()
 };
 func void DIA_Addon_Malcom_Entertrupp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //øHenry es tu lÌder?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //SÌ, es el capit·n de nuestro grupo de asalto.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //Nuestro CAPIT¡N es Greg.
+	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //¬øHenry es tu l√≠der?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //S√≠, es el capit√°n de nuestro grupo de asalto.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //Nuestro CAPIT√ÅN es Greg.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //Pero ahora no est·.
+		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //Pero ahora no est√°.
 	};
 };
 
@@ -166,7 +166,7 @@ instance DIA_Addon_Malcom_Lager		(C_INFO)
 	condition	= DIA_Addon_Malcom_Lager_Condition;
 	information	= DIA_Addon_Malcom_Lager_Info;
 
-	description	= "øDÛnde est· tu campamento?";
+	description	= "¬øD√≥nde est√° tu campamento?";
 };
 func int DIA_Addon_Malcom_Lager_Condition ()
 {
@@ -177,8 +177,8 @@ func int DIA_Addon_Malcom_Lager_Condition ()
 };
 func void DIA_Addon_Malcom_Lager_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_Lager_15_00"); //øDÛnde est· tu campamento?
+	AI_Output	(other, self, "DIA_Addon_Malcom_Lager_15_00"); //¬øD√≥nde est√° tu campamento?
 	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_01"); //Sigue por este sendero, hacia el oeste.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_02"); //Pronto ver·s a Henry por allÌ.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_02"); //Pronto ver√°s a Henry por all√≠.
 };
 

@@ -32,7 +32,7 @@ instance DIA_Balthasar_HALLO		(C_INFO)
 	condition	 = 	DIA_Balthasar_HALLO_Condition;
 	information	 = 	DIA_Balthasar_HALLO_Info;
 
-	description	 = 	"¿Qué pasa?";
+	description	 = 	"Â¿QuÃ© pasa?";
 };
 
 func int DIA_Balthasar_HALLO_Condition ()
@@ -42,11 +42,11 @@ func int DIA_Balthasar_HALLO_Condition ()
 
 func void DIA_Balthasar_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_HALLO_15_00"); //¿Cómo van las cosas?
-	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_01"); //Ah, un rostro nuevo en la granja. ¿Me ha mandado un aprendiz el viejo tacaño?
+	AI_Output			(other, self, "DIA_Balthasar_HALLO_15_00"); //Â¿CÃ³mo van las cosas?
+	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_01"); //Ah, un rostro nuevo en la granja. Â¿Me ha mandado un aprendiz el viejo tacaÃ±o?
 	AI_Output			(other, self, "DIA_Balthasar_HALLO_15_02"); //No soy un aprendiz.
-	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_03"); //Oh, entiendo. Ya no soy tan joven y llevo años esperando un sustituto.
-	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_04"); //No habrás venido por las quejas de los vecinos, ¿no?
+	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_03"); //Oh, entiendo. Ya no soy tan joven y llevo aÃ±os esperando un sustituto.
+	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_04"); //No habrÃ¡s venido por las quejas de los vecinos, Â¿no?
 	
 
 };
@@ -61,7 +61,7 @@ instance DIA_Balthasar_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Balthasar_WASMACHSTDU_Condition;
 	information	 = 	DIA_Balthasar_WASMACHSTDU_Info;
 
-	description	 = 	"¿A qué te dedicas?";
+	description	 = 	"Â¿A quÃ© te dedicas?";
 };
 
 func int DIA_Balthasar_WASMACHSTDU_Condition ()
@@ -74,9 +74,9 @@ func int DIA_Balthasar_WASMACHSTDU_Condition ()
 
 func void DIA_Balthasar_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_WASMACHSTDU_15_00"); //¿A qué te dedicas?
-	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_01"); //Oh, vigilo las ovejas, y llevo haciéndolo desde que tengo memoria.
-	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_02"); //Los animales son muy leales e inteligentes. Si los tratas bien, te seguirán toda la vida.
+	AI_Output			(other, self, "DIA_Balthasar_WASMACHSTDU_15_00"); //Â¿A quÃ© te dedicas?
+	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_01"); //Oh, vigilo las ovejas, y llevo haciÃ©ndolo desde que tengo memoria.
+	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_02"); //Los animales son muy leales e inteligentes. Si los tratas bien, te seguirÃ¡n toda la vida.
 
 };
 
@@ -90,7 +90,7 @@ instance DIA_Addon_Balthasar_Rangerbandits		(C_INFO)
 	condition	 = 	DIA_Addon_Balthasar_Rangerbandits_Condition;
 	information	 = 	DIA_Addon_Balthasar_Rangerbandits_Info;
 
-	description	 = 	"¿Has visto pasar por aquí bandidos?";
+	description	 = 	"Â¿Has visto pasar por aquÃ­ bandidos?";
 };
 
 func int DIA_Addon_Balthasar_Rangerbandits_Condition ()
@@ -107,17 +107,17 @@ func int DIA_Addon_Balthasar_Rangerbandits_Condition ()
 
 func void DIA_Addon_Balthasar_Rangerbandits_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Balthasar_Rangerbandits_15_00"); //¿Has visto pasar por aquí a algún bandido?
-	AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_01"); //Claro que sí. Pasaron junto al terreno que hay cerca de la granja de Sekob y entraron en el bosque hacia el norte.
+	AI_Output	(other, self, "DIA_Addon_Balthasar_Rangerbandits_15_00"); //Â¿Has visto pasar por aquÃ­ a algÃºn bandido?
+	AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_01"); //Claro que sÃ­. Pasaron junto al terreno que hay cerca de la granja de Sekob y entraron en el bosque hacia el norte.
 	
 	if (MIS_Vatras_FindTheBanditTrader == LOG_RUNNING)	
 	{
-		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_02"); //Llevaban montones de armas. Parecían dispuestos a ganar la guerra contra los orcos.
+		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_02"); //Llevaban montones de armas. ParecÃ­an dispuestos a ganar la guerra contra los orcos.
 	};
 	
 	if (SC_KnowsLuciaCaughtByBandits == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_03"); //Si la vista no me falla, también se llevaban al bosque a una chica joven.
+		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_03"); //Si la vista no me falla, tambiÃ©n se llevaban al bosque a una chica joven.
 		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_04"); //Espero que la liberaran.
 	};
 	B_GivePlayerXP (XP_Ambient);
@@ -134,7 +134,7 @@ instance DIA_Balthasar_AERGERMITNACHBARN		(C_INFO)
 	condition	 = 	DIA_Balthasar_AERGERMITNACHBARN_Condition;
 	information	 = 	DIA_Balthasar_AERGERMITNACHBARN_Info;
 
-	description	 = 	"¿Qué problemas tienes con los vecinos?";
+	description	 = 	"Â¿QuÃ© problemas tienes con los vecinos?";
 };
 
 func int DIA_Balthasar_AERGERMITNACHBARN_Condition ()
@@ -155,11 +155,11 @@ func int DIA_Balthasar_AERGERMITNACHBARN_Condition ()
 
 func void DIA_Balthasar_AERGERMITNACHBARN_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_AERGERMITNACHBARN_15_00"); //¿Qué problemas tienes con los vecinos?
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_01"); //La hierba de este lado del campo siempre está seca y es raquítica. Por eso suelo ir a los prados de los otros granjeros.
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_02"); //Al terrateniente no le importa, pero Bengar, el granjero de los prados altos, siempre monta un follón cuando llevo allí los animales.
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_03"); //Dice que Sekob debería pagar si llevo los animales a la pradera de Bengar.
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_04"); //Pero Sekob no quiere gastarse ni una mísera moneda, y por eso ya no puedo subir a la meseta.
+	AI_Output			(other, self, "DIA_Balthasar_AERGERMITNACHBARN_15_00"); //Â¿QuÃ© problemas tienes con los vecinos?
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_01"); //La hierba de este lado del campo siempre estÃ¡ seca y es raquÃ­tica. Por eso suelo ir a los prados de los otros granjeros.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_02"); //Al terrateniente no le importa, pero Bengar, el granjero de los prados altos, siempre monta un follÃ³n cuando llevo allÃ­ los animales.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_03"); //Dice que Sekob deberÃ­a pagar si llevo los animales a la pradera de Bengar.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_04"); //Pero Sekob no quiere gastarse ni una mÃ­sera moneda, y por eso ya no puedo subir a la meseta.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -172,7 +172,7 @@ instance DIA_Balthasar_WOBENGAR		(C_INFO)
 	condition	 = 	DIA_Balthasar_WOBENGAR_Condition;
 	information	 = 	DIA_Balthasar_WOBENGAR_Info;
 
-	description	 = 	"¿Dónde puedo encontrar la pradera alta y la granja de Bengar?";
+	description	 = 	"Â¿DÃ³nde puedo encontrar la pradera alta y la granja de Bengar?";
 };
 
 func int DIA_Balthasar_WOBENGAR_Condition ()
@@ -186,9 +186,9 @@ func int DIA_Balthasar_WOBENGAR_Condition ()
 
 func void DIA_Balthasar_WOBENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_WOBENGAR_15_00"); //¿Dónde puedo encontrar la pradera alta y la granja de Bengar?
+	AI_Output			(other, self, "DIA_Balthasar_WOBENGAR_15_00"); //Â¿DÃ³nde puedo encontrar la pradera alta y la granja de Bengar?
 	AI_Output			(self, other, "DIA_Balthasar_WOBENGAR_05_01"); //Sigue este camino y cruza la encrucijada grande.
-	AI_Output			(self, other, "DIA_Balthasar_WOBENGAR_05_02"); //Si vas por la derecha, verás un gran afloramiento rocoso. Detrás, a la derecha, está la pradera alta y el desfiladero.
+	AI_Output			(self, other, "DIA_Balthasar_WOBENGAR_05_02"); //Si vas por la derecha, verÃ¡s un gran afloramiento rocoso. DetrÃ¡s, a la derecha, estÃ¡ la pradera alta y el desfiladero.
 };
 
 
@@ -202,7 +202,7 @@ instance DIA_Balthasar_TALKTOBENGAR		(C_INFO)
 	condition	 = 	DIA_Balthasar_TALKTOBENGAR_Condition;
 	information	 = 	DIA_Balthasar_TALKTOBENGAR_Info;
 
-	description	 = 	"Tal vez debería hablar con Bengar.";
+	description	 = 	"Tal vez deberÃ­a hablar con Bengar.";
 };
 
 func int DIA_Balthasar_TALKTOBENGAR_Condition ()
@@ -223,8 +223,8 @@ func int DIA_Balthasar_TALKTOBENGAR_Condition ()
 
 func void DIA_Balthasar_TALKTOBENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_TALKTOBENGAR_15_00"); //Tal vez debería hablar con Bengar.
-	AI_Output			(self, other, "DIA_Balthasar_TALKTOBENGAR_05_01"); //¿Me harías ese favor? ¿Y qué vas a decirle? Bueno, no quiero líos, ¿me oyes?
+	AI_Output			(other, self, "DIA_Balthasar_TALKTOBENGAR_15_00"); //Tal vez deberÃ­a hablar con Bengar.
+	AI_Output			(self, other, "DIA_Balthasar_TALKTOBENGAR_05_01"); //Â¿Me harÃ­as ese favor? Â¿Y quÃ© vas a decirle? Bueno, no quiero lÃ­os, Â¿me oyes?
 	AI_Output			(other, self, "DIA_Balthasar_TALKTOBENGAR_15_02"); //Ya veremos.
 
 	Log_CreateTopic (TOPIC_BalthasarsSchafe, LOG_MISSION);
@@ -265,8 +265,8 @@ func int DIA_Balthasar_BENGARUEBERREDET_Condition ()
 
 func void DIA_Balthasar_BENGARUEBERREDET_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_BENGARUEBERREDET_15_00"); //Puedes volver a llevar las ovejas a la pradera de Bengar. Ya he hablado con él.
-	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_01"); //Gracias. Me pondré en camino.
+	AI_Output			(other, self, "DIA_Balthasar_BENGARUEBERREDET_15_00"); //Puedes volver a llevar las ovejas a la pradera de Bengar. Ya he hablado con Ã©l.
+	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_01"); //Gracias. Me pondrÃ© en camino.
 	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_02"); //Ten, acepta estas pieles de cordero como muestra de mi agradecimiento.
 
 	B_GiveInvItems (self, other, ItAt_SheepFur, 10);  
@@ -317,7 +317,7 @@ instance DIA_Balthasar_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Balthasar_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Va bien todo lo demás?";
+	description	 = 	"Â¿Va bien todo lo demÃ¡s?";
 };
 
 func int DIA_Balthasar_PERMKAP1_Condition ()
@@ -330,7 +330,7 @@ func int DIA_Balthasar_PERMKAP1_Condition ()
 
 func void DIA_Balthasar_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_PERMKAP1_15_00"); //¿Va bien todo lo demás?
+	AI_Output			(other, self, "DIA_Balthasar_PERMKAP1_15_00"); //Â¿Va bien todo lo demÃ¡s?
 	
 	Npc_PerceiveAll(self);
 	if 	(
@@ -349,10 +349,10 @@ func void DIA_Balthasar_PERMKAP1_Info ()
 				}
 	else
 			{
-				AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_02"); //Corren malos tiempos. ¡No encuentro a mis ovejas!
+				AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_02"); //Corren malos tiempos. Â¡No encuentro a mis ovejas!
 				if (Npc_IsDead(Sekob)== FALSE)
 				{
-					AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_03"); //Supongo que tendré que confesárselo a Sekob.
+					AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_03"); //Supongo que tendrÃ© que confesÃ¡rselo a Sekob.
 				};
 				AI_StopProcessInfos (self);
 				Npc_ExchangeRoutine	(self,"Start"); //Joly: falls er auf der 2. Weide bei Bengar ist.

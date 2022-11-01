@@ -41,7 +41,7 @@ instance DIA_Talbin_NW		(C_INFO)
 	condition	 = 	DIA_Talbin_NW_Condition;
 	information	 = 	DIA_Talbin_NW_Info;
 
-	description	 = 	"El paso no estaba tan mal, ¿no?";
+	description	 = 	"El paso no estaba tan mal, Â¿no?";
 };
 
 func int DIA_Talbin_NW_Condition ()
@@ -51,13 +51,13 @@ func int DIA_Talbin_NW_Condition ()
 
 func void DIA_Talbin_NW_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //El paso no estaba tan mal, ¿no?
+	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //El paso no estaba tan mal, Â¿no?
 	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //Gracias por rescatarme.
-	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Toma. Encontré esta piedra tosca en el paso. Creo que te puede servir de algo.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Toma. EncontrÃ© esta piedra tosca en el paso. Creo que te puede servir de algo.
 
 	if (hero.guild == GIL_KDF)
 	{
-	AI_Output			(self, other, "DIA_Talbin_NW_07_03"); //Supongo que es una piedra rúnica.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_03"); //Supongo que es una piedra rÃºnica.
 	CreateInvItems (self, ItMi_RuneBlank, 1);									
 	B_GiveInvItems (self, other, ItMi_RuneBlank, 1);					
 	}
@@ -89,7 +89,7 @@ instance DIA_Talbin_NW_PERM		(C_INFO)
 	information	 = 	DIA_Talbin_NW_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Va todo bien?";
+	description	 = 	"Â¿Va todo bien?";
 };
 
 func int DIA_Talbin_NW_PERM_Condition ()
@@ -102,8 +102,8 @@ func int DIA_Talbin_NW_PERM_Condition ()
 
 func void DIA_Talbin_NW_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_NW_PERM_15_00"); //¿Va todo bien?
-	AI_Output			(self, other, "DIA_Talbin_NW_PERM_07_01"); //Sí, gracias. Ahora vete. Estaré bien.
+	AI_Output			(other, self, "DIA_Talbin_NW_PERM_15_00"); //Â¿Va todo bien?
+	AI_Output			(self, other, "DIA_Talbin_NW_PERM_07_01"); //SÃ­, gracias. Ahora vete. EstarÃ© bien.
 	AI_StopProcessInfos (self);
 };
 

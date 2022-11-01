@@ -42,7 +42,7 @@ func int DIA_Cedric_Hallo_Condition ()
 };
 func void DIA_Cedric_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Soy Cedric el maestro de armas, paladÌn del rey.
+	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Soy Cedric el maestro de armas, palad√≠n del rey.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ instance DIA_Cedric_CanTeach		(C_INFO)
 	condition	 = 	DIA_Cedric_CanTeach_Condition;
 	information	 = 	DIA_Cedric_CanTeach_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"øPodrÌas entrenarme?";
+	description	 = 	"¬øPodr√≠as entrenarme?";
 };
 func int DIA_Cedric_CanTeach_Condition ()
 {	
@@ -66,13 +66,13 @@ func int DIA_Cedric_CanTeach_Condition ()
 };
 func void DIA_Cedric_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Cedric_CanTeach_15_00"); //øPuedes entrenarme?
+	AI_Output (other, self, "DIA_Cedric_CanTeach_15_00"); //¬øPuedes entrenarme?
 	
 	if (other.guild == GIL_PAL)
 	{
 		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //Te puedo entrenar en el combate con armas a una mano,
 		Cedric_Teach1H = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Cedric, el paladÌn, puede enseÒarme a luchar con armas a una mano.");
+		B_LogEntry (TOPIC_CityTeacher,"Cedric, el palad√≠n, puede ense√±arme a luchar con armas a una mano.");
 	}
 	else
 	{
@@ -110,7 +110,7 @@ FUNC VOID DIA_Cedric_Teach_Info()
 	
 	if (other.HitChance[NPC_TALENT_1H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Lo has aprendido todo acerca de la lucha a espada. No puedo enseÒarte m·s.
+		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Lo has aprendido todo acerca de la lucha a espada. No puedo ense√±arte m√°s.
 	}
 	else
 	{

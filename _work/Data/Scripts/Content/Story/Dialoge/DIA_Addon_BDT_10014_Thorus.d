@@ -41,8 +41,8 @@ FUNC VOID DIA_Addon_Thorus_Hi_Info()
 {	
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_00");//Ya conoces la norma. Nadie entra a la mina sin una tablilla de piedra roja.
 	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Hi_15_01");//Olvida la mina. Tengo que ver a Raven.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_02");//Aún así. Aquí tenemos normas, y son para todos. Incluso para ti.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_03");//Vuelve. Si intentas entrar a la plaza de arriba sin permiso, los otros guardias te matarán. ESAS son las normas.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_02");//AÃºn asÃ­. AquÃ­ tenemos normas, y son para todos. Incluso para ti.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_03");//Vuelve. Si intentas entrar a la plaza de arriba sin permiso, los otros guardias te matarÃ¡n. ESAS son las normas.
 	
 	if !Npc_IsDead (Esteban)
 	{
@@ -61,7 +61,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Raven   (C_INFO)
 	condition   = DIA_Addon_Thorus_Raven_Condition;
 	information = DIA_Addon_Thorus_Raven_Info;
 	permanent   = FALSE;
-	description = "Tengo que dar con Raven…";
+	description = "Tengo que dar con Ravenâ€¦";
 };
 FUNC INT DIA_Addon_Thorus_Raven_Condition()
 {	
@@ -73,13 +73,13 @@ FUNC INT DIA_Addon_Thorus_Raven_Condition()
 FUNC VOID DIA_Addon_Thorus_Raven_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raven_15_00");//Es importante que visite a Raven
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_01");//¿Ah, sí? ¿De verdad crees que podrás llegar hasta él?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_02");//Sus guardias tienen orden de no dejar pasar a NADIE. Te matarán antes de que puedas verle.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_03");//Quítate esa idea de la cabeza.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_01");//Â¿Ah, sÃ­? Â¿De verdad crees que podrÃ¡s llegar hasta Ã©l?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_02");//Sus guardias tienen orden de no dejar pasar a NADIE. Te matarÃ¡n antes de que puedas verle.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_03");//QuÃ­tate esa idea de la cabeza.
 
 	Log_CreateTopic (TOPIC_Addon_RavenKDW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RavenKDW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RavenKDW,"Raven es el líder de los bandidos. Tendré que deshacerme de unos cuantos para llegar a él."); 
+	B_LogEntry (TOPIC_Addon_RavenKDW,"Raven es el lÃ­der de los bandidos. TendrÃ© que deshacerme de unos cuantos para llegar a Ã©l."); 
 };
 //----------------------------------------------------------------------
 //	Info Zeit
@@ -91,7 +91,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Zeit   (C_INFO)
 	condition   = DIA_Addon_Thorus_Zeit_Condition;
 	information = DIA_Addon_Thorus_Zeit_Info;
 	permanent   = FALSE;
-	description = "¿No me reconoces? Del Campamento Viejo.";
+	description = "Â¿No me reconoces? Del Campamento Viejo.";
 };
 FUNC INT DIA_Addon_Thorus_Zeit_Condition()
 {	
@@ -102,16 +102,16 @@ FUNC INT DIA_Addon_Thorus_Zeit_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Zeit_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Zeit_15_00");//¿Me recuerdas? Del Campamento Viejo
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_01");//¿Eres uno de los prisioneros? Quizá fueras de mi guardia. ¿Y? ¿Eso nos convierte en aliados?
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Zeit_15_00");//Â¿Me recuerdas? Del Campamento Viejo
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_01");//Â¿Eres uno de los prisioneros? QuizÃ¡ fueras de mi guardia. Â¿Y? Â¿Eso nos convierte en aliados?
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_02");//Pues no.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_03");//Quizá tú fuiste quien echó abajo la Barrera, o tal vez mataste a mis compañeros.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_04");//¿Y qué?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_03");//QuizÃ¡ tÃº fuiste quien echÃ³ abajo la Barrera, o tal vez mataste a mis compaÃ±eros.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_04");//Â¿Y quÃ©?
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_05");//Esos tiempos se han acabado.
 	
 	if !Npc_IsDead (Esteban)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_06");//¿Quieres entrar? Pues consigue una piedra roja y no me hagas perder el tiempo.
+		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_06");//Â¿Quieres entrar? Pues consigue una piedra roja y no me hagas perder el tiempo.
 	};
 };
 
@@ -127,7 +127,7 @@ instance DIA_Addon_BDT_10014_Thorus_GoodOldPerm  (C_INFO)
 	condition   = DIA_Addon_Thorus_GoodOldPerm_Condition;
 	information = DIA_Addon_Thorus_GoodOldPerm_Info;
 	permanent   = TRUE;
-	description = "Vamos, déjame pasar. Por los viejos tiempos.";
+	description = "Vamos, dÃ©jame pasar. Por los viejos tiempos.";
 };
 FUNC INT DIA_Addon_Thorus_GoodOldPerm_Condition()
 {	
@@ -140,18 +140,18 @@ FUNC INT DIA_Addon_Thorus_GoodOldPerm_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_GoodOldPerm_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Thorus_Add_15_00"); //Vamos, déjame pasar. Por los viejos tiempos.
+	AI_Output (other, self, "DIA_Addon_Thorus_Add_15_00"); //Vamos, dÃ©jame pasar. Por los viejos tiempos.
 	if (Thorus_GoodOldPerm == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_01"); //Deja que te explique algo. ¿Sabes por qué sigo con vida?
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_01"); //Deja que te explique algo. Â¿Sabes por quÃ© sigo con vida?
 		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_02"); //Porque siempre he sido fiel a mi gente.
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_03"); //No tengo que darle la razón a quien se la dé Raven, pero me atengo a las normas. 
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_04"); //¡Y eso harás tú!
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_03"); //No tengo que darle la razÃ³n a quien se la dÃ© Raven, pero me atengo a las normas. 
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_04"); //Â¡Y eso harÃ¡s tÃº!
 		Thorus_GoodOldPerm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_05"); //(firme) ¡No!
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_05"); //(firme) Â¡No!
 	};
 };
 
@@ -181,7 +181,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Stein   (C_INFO)
 	condition   = DIA_Addon_Thorus_Stein_Condition;
 	information = DIA_Addon_Thorus_Stein_Info;
 	permanent   = TRUE;
-	description = "Tengo una tablilla de piedra roja…";
+	description = "Tengo una tablilla de piedra rojaâ€¦";
 };
 FUNC INT DIA_Addon_Thorus_Stein_Condition()
 {	
@@ -196,7 +196,7 @@ FUNC INT DIA_Addon_Thorus_Stein_Condition()
 FUNC VOID DIA_Addon_Thorus_Stein_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Stein_15_00");//Tengo una tablilla de piedra roja
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Stein_12_01");//No es la piedra correcta. Sólo valen las rojas.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Stein_12_01");//No es la piedra correcta. SÃ³lo valen las rojas.
 };
 //----------------------------------------------------------------------
 //	Info Rein
@@ -208,7 +208,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Rein   (C_INFO)
 	condition   = DIA_Addon_Thorus_Rein_Condition;
 	information = DIA_Addon_Thorus_Rein_Info;
 	permanent   = FALSE;
-	description = "Tengo una tablilla de piedra roja…";
+	description = "Tengo una tablilla de piedra rojaâ€¦";
 };
 FUNC INT DIA_Addon_Thorus_Rein_Condition()
 {	
@@ -222,11 +222,11 @@ FUNC VOID DIA_Addon_Thorus_Rein_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_00");//Tengo una tablilla de piedra roja
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_01");//Vale.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_02");//Mataste a Esteban, así que TÚ harás su trabajo.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_02");//Mataste a Esteban, asÃ­ que TÃš harÃ¡s su trabajo.
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_03");//Tienen problemas con los reptadores de la mina.
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_04");//Ya lo han comprado tres cavadores. Tu deber es proporcionar repuestos.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_05");//¿Y cuándo podré entrar en la mina maldita?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_06");//Haz tu trabajo y luego podrás hacer lo que quieras.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_05");//Â¿Y cuÃ¡ndo podrÃ© entrar en la mina maldita?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_06");//Haz tu trabajo y luego podrÃ¡s hacer lo que quieras.
 	
 	MIS_Send_Buddler = LOG_RUNNING;
 	Log_CreateTopic (Topic_Addon_Buddler,LOG_MISSION);
@@ -256,7 +256,7 @@ FUNC INT DIA_Addon_Thorus_Sent_Condition()
 FUNC VOID DIA_Addon_Thorus_Sent_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Sent_15_00");//He enviado a tres tipos.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Sent_12_01");//Muy bien. Por lo que a mí respecta, puedes pasar.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Sent_12_01");//Muy bien. Por lo que a mÃ­ respecta, puedes pasar.
 
 	MIS_Send_Buddler = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
@@ -271,7 +271,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Armor   (C_INFO)
 	condition   = DIA_Addon_Thorus_Armor_Condition;
 	information = DIA_Addon_Thorus_Armor_Info;
 	permanent   = FALSE;
-	description = "Eh, ¿qué armadura es esa? ¿Dónde puedo conseguir una igual?";
+	description = "Eh, Â¿quÃ© armadura es esa? Â¿DÃ³nde puedo conseguir una igual?";
 };
 FUNC INT DIA_Addon_Thorus_Armor_Condition()
 {	
@@ -282,9 +282,9 @@ FUNC INT DIA_Addon_Thorus_Armor_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Armor_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Armor_15_00");//Eh, ¿qué armadura es esa? ¿Dónde puedo conseguir una igual?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_01");//No puedes. Está reservada para la guardia de Raven.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_02");//No creo que haya examen de admisión para nuevos candidatos. Pero la decisión final no depende de mí, sino de Raven.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Armor_15_00");//Eh, Â¿quÃ© armadura es esa? Â¿DÃ³nde puedo conseguir una igual?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_01");//No puedes. EstÃ¡ reservada para la guardia de Raven.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_02");//No creo que haya examen de admisiÃ³n para nuevos candidatos. Pero la decisiÃ³n final no depende de mÃ­, sino de Raven.
 };
 //----------------------------------------------------------------------
 //	Info Gefangene
@@ -296,7 +296,7 @@ INSTANCE DIA_Addon_Thorus_Gefangene   (C_INFO)
 	condition   = DIA_Addon_Thorus_Gefangene_Condition;
 	information = DIA_Addon_Thorus_Gefangene_Info;
 	permanent   = FALSE;
-	description = "¿Cómo están los prisioneros?";
+	description = "Â¿CÃ³mo estÃ¡n los prisioneros?";
 };
 FUNC INT DIA_Addon_Thorus_Gefangene_Condition()
 {	
@@ -308,13 +308,13 @@ FUNC INT DIA_Addon_Thorus_Gefangene_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Gefangene_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_00");//¿Cómo están los prisioneros?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_01");//Mmh, han hecho su trabajo. Que yo sepa, se supone que están extrayendo oro.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_02");//¿Y si escapan…?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_03");//…Bloodwyn enviará a sus guardias tras ellos. Pero no creo que sean tan inconscientes como para tratar de escapar.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_00");//Â¿CÃ³mo estÃ¡n los prisioneros?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_01");//Mmh, han hecho su trabajo. Que yo sepa, se supone que estÃ¡n extrayendo oro.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_02");//Â¿Y si escapanâ€¦?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_03");//â€¦Bloodwyn enviarÃ¡ a sus guardias tras ellos. Pero no creo que sean tan inconscientes como para tratar de escapar.
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_04");//A menos que
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_05");//¿A menos que qué…?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_06");//…alguien les incite. Pero no conozco a nadie tan estúpido para hacerlo… al menos, mientras Bloodwyn esté aquí.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_05");//Â¿A menos que quÃ©â€¦?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_06");//â€¦alguien les incite. Pero no conozco a nadie tan estÃºpido para hacerloâ€¦ al menos, mientras Bloodwyn estÃ© aquÃ­.
 	B_Say (other, self,"$VERSTEHE");
 };
 //----------------------------------------------------------------------
@@ -339,23 +339,23 @@ FUNC INT DIA_Addon_Thorus_Speech_Condition()
 FUNC VOID DIA_Addon_Thorus_Speech_Info()
 {	
 	
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_00");//¿Qué estás planeando?
-	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_01");//¿¿Qué??
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_00");//Â¿QuÃ© estÃ¡s planeando?
+	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_01");//Â¿Â¿QuÃ©??
 	
 	if (RavenIsDead == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_02");//Ya te has deshecho de Bloodwyn también. Me pregunto quién será el siguiente. ¿Raven? ¿Yo?
-		AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_03");//¿Tienes miedo?
-		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_04");//No me asusta luchar, pero sí las consecuencias de tus actos.
+		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_02");//Ya te has deshecho de Bloodwyn tambiÃ©n. Me pregunto quiÃ©n serÃ¡ el siguiente. Â¿Raven? Â¿Yo?
+		AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_03");//Â¿Tienes miedo?
+		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_04");//No me asusta luchar, pero sÃ­ las consecuencias de tus actos.
 	};
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_05");//Este campamento es lo único que nos queda.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_06");//Puede que no siempre funcione a la perfección, pero FUNCIONA.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_05");//Este campamento es lo Ãºnico que nos queda.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_06");//Puede que no siempre funcione a la perfecciÃ³n, pero FUNCIONA.
 	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_07");//Y con cada persona que matas, una parte de nuestra comunidad se quiebra.
 	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_08");//Somos bandidos. Desterrados, criminales, desesperados.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_09");//Allá donde vayamos, nos persiguen, nos encierran y nos matan.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_09");//AllÃ¡ donde vayamos, nos persiguen, nos encierran y nos matan.
 	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_10");//No hay mejor lugar para nosotros que este, ni mejor momento que ahora.
-	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_11");//¿A dónde quieres llegar?
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_12");//Esos hombres necesitan a alguien que les lidere. ¿Quién será el elegido? ¿Tú? ¿Tú, que no paras de ir de un sitio a otro?
+	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_11");//Â¿A dÃ³nde quieres llegar?
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_12");//Esos hombres necesitan a alguien que les lidere. Â¿QuiÃ©n serÃ¡ el elegido? Â¿TÃº? Â¿TÃº, que no paras de ir de un sitio a otro?
 };
 //----------------------------------------------------------------------
 //	Info Answer
@@ -367,7 +367,7 @@ INSTANCE DIA_Addon_Thorus_Answer   (C_INFO)
 	condition   = DIA_Addon_Thorus_Answer_Condition;
 	information = DIA_Addon_Thorus_Answer_Info;
 	permanent   = FALSE;
-	description = "Así que tú te ocupas de dirigir el campamento.";
+	description = "AsÃ­ que tÃº te ocupas de dirigir el campamento.";
 };
 FUNC INT DIA_Addon_Thorus_Answer_Condition()
 {	
@@ -378,25 +378,25 @@ FUNC INT DIA_Addon_Thorus_Answer_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Answer_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_00");//Entonces asume tú el liderazgo del campamento.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_00");//Entonces asume tÃº el liderazgo del campamento.
 	
 	if (RavenIsDead == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_01");//Vale, ¿pero qué pasa con Raven?
-		AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_02");//Raven pronto tendrá otras preocupaciones. Yo me ocuparé de él.
+		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_01");//Vale, Â¿pero quÃ© pasa con Raven?
+		AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_02");//Raven pronto tendrÃ¡ otras preocupaciones. Yo me ocuparÃ© de Ã©l.
 	};
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_03");//Ah, vale, y asegúrate de que los prisioneros pueden irse en paz del campamento.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_04");//Muy bien. Me ocuparé de todos los guardias de aquí fuera.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_03");//Ah, vale, y asegÃºrate de que los prisioneros pueden irse en paz del campamento.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_04");//Muy bien. Me ocuparÃ© de todos los guardias de aquÃ­ fuera.
 	
-	B_LogEntry (Topic_Addon_Sklaven,"Bloodwyn ha muerto y Thorus se asegurará de que los esclavos  dejen el campamento."); 
+	B_LogEntry (Topic_Addon_Sklaven,"Bloodwyn ha muerto y Thorus se asegurarÃ¡ de que los esclavos  dejen el campamento."); 
 	
 	if !Npc_IsDead (PrisonGuard)
 	{
-		B_LogEntry (Topic_Addon_Sklaven,"Ahora volveré a hablar con el 'guardia esclavo', así que Patrick y sus hombres pueden irse."); 
+		B_LogEntry (Topic_Addon_Sklaven,"Ahora volverÃ© a hablar con el 'guardia esclavo', asÃ­ que Patrick y sus hombres pueden irse."); 
 	}
 	else
 	{
-		B_LogEntry (Topic_Addon_Sklaven,"El asunto del 'guardia esclavo' está solucionado, Patrick y los suyos pueden irse."); 
+		B_LogEntry (Topic_Addon_Sklaven,"El asunto del 'guardia esclavo' estÃ¡ solucionado, Patrick y los suyos pueden irse."); 
 	};
 };
 //----------------------------------------------------------------------
@@ -409,7 +409,7 @@ INSTANCE DIA_Addon_Thorus_Raventot   (C_INFO)
 	condition   = DIA_Addon_Thorus_Raventot_Condition;
 	information = DIA_Addon_Thorus_Raventot_Info;
 	permanent   = FALSE;
-	description = "Lo he hecho. Raven está acabado.";
+	description = "Lo he hecho. Raven estÃ¡ acabado.";
 };
 FUNC INT DIA_Addon_Thorus_Raventot_Condition()
 {	
@@ -420,13 +420,13 @@ FUNC INT DIA_Addon_Thorus_Raventot_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Raventot_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_00");//Lo he hecho. Raven está acabado.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_01");//Eso significa que le has dado a Beliar un buen puntapié.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_02");//¿Entonces seguirás adelante?
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_03");//Mi trabajo en el valle ha terminado. Me vendrían bien unos días de descanso.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_04");//(risas) Sí, tú no paras nunca, ¿verdad? (serio) Que tengas buen viaje.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_05");//Quién sabe, quizá volvamos a encontrarnos.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_06");//Quién sabe. Tendrás que atravesar miles de puertas y pasadizos, y quizá me encuentres en uno de ellos
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_00");//Lo he hecho. Raven estÃ¡ acabado.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_01");//Eso significa que le has dado a Beliar un buen puntapiÃ©.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_02");//Â¿Entonces seguirÃ¡s adelante?
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_03");//Mi trabajo en el valle ha terminado. Me vendrÃ­an bien unos dÃ­as de descanso.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_04");//(risas) SÃ­, tÃº no paras nunca, Â¿verdad? (serio) Que tengas buen viaje.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_05");//QuiÃ©n sabe, quizÃ¡ volvamos a encontrarnos.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_06");//QuiÃ©n sabe. TendrÃ¡s que atravesar miles de puertas y pasadizos, y quizÃ¡ me encuentres en uno de ellos
 	
 	AI_StopProcessInfos (self);
 	

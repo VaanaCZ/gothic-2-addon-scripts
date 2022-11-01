@@ -44,17 +44,17 @@ func int DIA_Serpentes_NOTALK_Condition ()
 };
 func void DIA_Serpentes_NOTALK_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_10_00"); //(Con sorna) ¿Osas dirigirme la palabra, novicio? Vuelve al trabajo.
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_10_00"); //(Con sorna) Â¿Osas dirigirme la palabra, novicio? Vuelve al trabajo.
 	
 	Info_ClearChoices (DIA_Serpentes_NOTALK);
 	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"Solo iba (FINAL)",DIA_Serpentes_NOTALK_EXIT);
-	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"Tengo una pregunta más...",DIA_Serpentes_NOTALK_QUESTION);
+	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"Tengo una pregunta mÃ¡s...",DIA_Serpentes_NOTALK_QUESTION);
 };
 FUNC VOID DIA_Serpentes_NOTALK_QUESTION()
 {
-	AI_Output (other, self, "DIA_Serpentes_NOTALK_QUESTION_15_00"); //Tengo una pregunta más...
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_01"); //(Furioso) Parece que no quieres entenderlo. Yo decido cuando considero adecuado hablar contigo. ¿Quién te crees que eres?
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_02"); //¡Y ahora vuelve al trabajo!
+	AI_Output (other, self, "DIA_Serpentes_NOTALK_QUESTION_15_00"); //Tengo una pregunta mÃ¡s...
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_01"); //(Furioso) Parece que no quieres entenderlo. Yo decido cuando considero adecuado hablar contigo. Â¿QuiÃ©n te crees que eres?
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_02"); //Â¡Y ahora vuelve al trabajo!
 	
 	AI_StopProcessInfos (self);
 };
@@ -86,7 +86,7 @@ func int DIA_Serpentes_GOAWAY_Condition ()
 };
 func void DIA_Serpentes_GOAWAY_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_GOAWAY_10_00"); //¡Tu presencia aquí no solo demuestra tu falta de respeto, sino también tu estupidez, novicio!
+	AI_Output (self, other, "DIA_Serpentes_GOAWAY_10_00"); //Â¡Tu presencia aquÃ­ no solo demuestra tu falta de respeto, sino tambiÃ©n tu estupidez, novicio!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -99,7 +99,7 @@ instance DIA_Serpentes_YOURSTORY		(C_INFO)
 	condition	 = 	DIA_Serpentes_YOURSTORY_Condition;
 	information	 = 	DIA_Serpentes_YOURSTORY_Info;
 	permanent	 =  FALSE;
-	description	 = 	"He oído que has superado la prueba del fuego.";
+	description	 = 	"He oÃ­do que has superado la prueba del fuego.";
 };
 func int DIA_Serpentes_YOURSTORY_Condition ()
 {	
@@ -113,11 +113,11 @@ func int DIA_Serpentes_YOURSTORY_Condition ()
 };
 func void DIA_Serpentes_YOURSTORY_Info ()
 {
-	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_00"); //He oído que has superado la prueba del fuego.
+	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_00"); //He oÃ­do que has superado la prueba del fuego.
 	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_01"); //(Con suficiencia) Te digo una cosa, con toda humildad. Todo el que lo ha intentado ha muerto.
-	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_02"); //(Condescendiente) No deberías someterte a esta prueba. Tu espíritu es débil. Es mejor que sirvas en el monasterio y quizás serás elegido en unos cuantos años.
+	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_02"); //(Condescendiente) No deberÃ­as someterte a esta prueba. Tu espÃ­ritu es dÃ©bil. Es mejor que sirvas en el monasterio y quizÃ¡s serÃ¡s elegido en unos cuantos aÃ±os.
 	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_03"); //Voy a superar la prueba.
-	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_04"); //Si es voluntad de Innos lo harás. Pero si no... fracasarás.
+	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_04"); //Si es voluntad de Innos lo harÃ¡s. Pero si no... fracasarÃ¡s.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEST
@@ -142,11 +142,11 @@ func int DIA_Serpentes_TEST_Condition ()
 func void DIA_Serpentes_TEST_Info ()
 {
 	AI_Output (other, self, "DIA_Serpentes_TEST_15_00"); //Estoy listo para afrontar tu prueba, maestro.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_01"); //Así que quieres someterte a la prueba. Solo un novicio valiente exige la prueba, pero hace falta algo más que valor.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_02"); //¿Eres lo bastante inteligente para superar la prueba? ¿Eres lo bastante fuerte para afrontar los peligros que te aguardan?
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_03"); //Si no, lo pagarás con la vida.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_04"); //Y ahora, presta atención a la prueba: en el Lugar de las Piedras, busca al nonato. Encuentra al que antaño fue convocado.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_05"); //Vence al que no puede ser vencido (mídete contra la roca viva, lucha con la piedra imperecedera) y destrúyelo.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_01"); //AsÃ­ que quieres someterte a la prueba. Solo un novicio valiente exige la prueba, pero hace falta algo mÃ¡s que valor.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_02"); //Â¿Eres lo bastante inteligente para superar la prueba? Â¿Eres lo bastante fuerte para afrontar los peligros que te aguardan?
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_03"); //Si no, lo pagarÃ¡s con la vida.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_04"); //Y ahora, presta atenciÃ³n a la prueba: en el Lugar de las Piedras, busca al nonato. Encuentra al que antaÃ±o fue convocado.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_05"); //Vence al que no puede ser vencido (mÃ­dete contra la roca viva, lucha con la piedra imperecedera) y destrÃºyelo.
 	
 	//----- Der Magische Golem ----
 	Wld_InsertNpc 	(MagicGolem, 			"FP_MAGICGOLEM");
@@ -168,7 +168,7 @@ instance DIA_Serpentes_NOIDEA		(C_INFO)
 	condition	 = 	DIA_Serpentes_NOIDEA_Condition;
 	information	 = 	DIA_Serpentes_NOIDEA_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"¿Qué tipo de criatura sería esa?";
+	description	 = 	"Â¿QuÃ© tipo de criatura serÃ­a esa?";
 };
 func int DIA_Serpentes_NOIDEA_Condition ()
 {	
@@ -180,9 +180,9 @@ func int DIA_Serpentes_NOIDEA_Condition ()
 };
 func void DIA_Serpentes_NOIDEA_Info ()
 {
-	AI_Output (other, self, "DIA_Serpentes_NOIDEA_15_00"); //¿Roca viva...? ¿Qué clase de criatura puede ser?
-	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_01"); //Ya te he contado todo. (burlón) ¿Encuentras demasiado difícil esta prueba?
-	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_02"); //Ahora sabrás lo que significa someterme a la prueba del fuego: no responderé más preguntas.
+	AI_Output (other, self, "DIA_Serpentes_NOIDEA_15_00"); //Â¿Roca viva...? Â¿QuÃ© clase de criatura puede ser?
+	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_01"); //Ya te he contado todo. (burlÃ³n) Â¿Encuentras demasiado difÃ­cil esta prueba?
+	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_02"); //Ahora sabrÃ¡s lo que significa someterme a la prueba del fuego: no responderÃ© mÃ¡s preguntas.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ func int DIA_Serpentes_NOHELP_Condition ()
 };
 func void DIA_Serpentes_NOHELP_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_NOHELP_10_00"); //(Con desprecio) ¡Ve a llevar a cabo tu cometido, novicio!
+	AI_Output (self, other, "DIA_Serpentes_NOHELP_10_00"); //(Con desprecio) Â¡Ve a llevar a cabo tu cometido, novicio!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -225,7 +225,7 @@ instance DIA_Serpentes_SUCCESS		(C_INFO)
 	condition	 = 	DIA_Serpentes_SUCCESS_Condition;
 	information	 = 	DIA_Serpentes_SUCCESS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"He derrotado al gólem.";
+	description	 = 	"He derrotado al gÃ³lem.";
 };
 func int DIA_Serpentes_SUCCESS_Condition ()
 {	
@@ -241,13 +241,13 @@ func void DIA_Serpentes_SUCCESS_Info ()
 	var C_NPC garwig;
 	garwig = Hlp_GetNpc (NOV_608_Garwig);
 	
-	AI_Output (other, self, "DIA_Serpentes_SUCCESS_15_00"); //He derrotado al gólem.
-	AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_01"); //¿Qué? ¿Lo has conseguido? Pero sin el martillo de Innos, es imposible que hayas destruido al gólem.
+	AI_Output (other, self, "DIA_Serpentes_SUCCESS_15_00"); //He derrotado al gÃ³lem.
+	AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_01"); //Â¿QuÃ©? Â¿Lo has conseguido? Pero sin el martillo de Innos, es imposible que hayas destruido al gÃ³lem.
 	
 	if (Npc_IsDead (garwig))
 	{
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_02"); //(Triunfante) ¡Te has traicionado! ¡Tú mataste a Garwig!
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_03"); //¡¡¡Sufre el castigo que merece el asesino de un siervo de Innos!!!
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_02"); //(Triunfante) Â¡Te has traicionado! Â¡TÃº mataste a Garwig!
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_03"); //Â¡Â¡Â¡Sufre el castigo que merece el asesino de un siervo de Innos!!!
 		
 		AI_StopProcessInfos (self);
 		B_Attack  (self, other, AR_HumanMurderedHuman, 0);
@@ -258,7 +258,7 @@ func void DIA_Serpentes_SUCCESS_Info ()
 	};
 	if (Npc_HasItems (other, Holy_Hammer_Mis) >= 1)
 	{
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_05"); //Y será mejor que me quede con el martillo.
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_05"); //Y serÃ¡ mejor que me quede con el martillo.
 		
 		Npc_RemoveInvItems (other, Holy_Hammer_MIS,1); 
 		Wld_InsertItem (Holy_Hammer_MIS,"FP_HAMMER");
@@ -280,7 +280,7 @@ INSTANCE DIA_Serpentes_PERM   (C_INFO)
 	information = DIA_Serpentes_PERM_Info;
 	permanent   = TRUE;
 
-	description = "¿Quieres contarme algo más?";
+	description = "Â¿Quieres contarme algo mÃ¡s?";
 };
 FUNC INT DIA_Serpentes_PERM_Condition()
 {	
@@ -292,7 +292,7 @@ FUNC INT DIA_Serpentes_PERM_Condition()
 };
 FUNC VOID DIA_Serpentes_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Serpentes_PERM_15_00"); //¿Quieres contarme algo más?
+	AI_Output (other, self, "DIA_Serpentes_PERM_15_00"); //Â¿Quieres contarme algo mÃ¡s?
 
 		if (hero.guild == GIL_KDF)
 		{
@@ -392,63 +392,63 @@ func int DIA_Serpentes_MinenAnteile_Condition ()
 
 func void DIA_Serpentes_MinenAnteile_Info ()
 {
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_00"); //No tan deprisa. Tengo otra misión para ti.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_00"); //No tan deprisa. Tengo otra misiÃ³n para ti.
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_15_01"); //(Suspira) ¿Cuál es?
+		AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_15_01"); //(Suspira) Â¿CuÃ¡l es?
 		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_02"); //Ahora que eres miembro de la Hermandad del Fuego, debes cumplir con las obligaciones que conlleva la pertenencia a la iglesia.
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_03"); //La iglesia no solo se ocupa de asuntos mágicos. Como bien sabes, también es la autoridad máxima en la administración de justicia.
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_04"); //El último caso que nos han planteado abre un abismo insondable y ha de solucionarse de una vez por todas.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_03"); //La iglesia no solo se ocupa de asuntos mÃ¡gicos. Como bien sabes, tambiÃ©n es la autoridad mÃ¡xima en la administraciÃ³n de justicia.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_04"); //El Ãºltimo caso que nos han planteado abre un abismo insondable y ha de solucionarse de una vez por todas.
 		
 		Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Ya tengo bastantes problemas. Búscate a otro.", DIA_Serpentes_MinenAnteile_nein );
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "¿De qué va esto?", DIA_Serpentes_MinenAnteile_was );
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "¿No es asunto de la milicia?", DIA_Serpentes_MinenAnteile_miliz );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Ya tengo bastantes problemas. BÃºscate a otro.", DIA_Serpentes_MinenAnteile_nein );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Â¿De quÃ© va esto?", DIA_Serpentes_MinenAnteile_was );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Â¿No es asunto de la milicia?", DIA_Serpentes_MinenAnteile_miliz );
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_05"); //En este asunto podría venirnos bien un mercenario a sueldo de tu calaña.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_05"); //En este asunto podrÃ­a venirnos bien un mercenario a sueldo de tu calaÃ±a.
 		
 		Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Ya tengo bastantes problemas. Búscate a otro.", DIA_Serpentes_MinenAnteile_nein );
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "¿A quién debo matar?", DIA_Serpentes_MinenAnteile_KillSLD );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Ya tengo bastantes problemas. BÃºscate a otro.", DIA_Serpentes_MinenAnteile_nein );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Â¿A quiÃ©n debo matar?", DIA_Serpentes_MinenAnteile_KillSLD );
 	};
 };
 func void DIA_Serpentes_MinenAnteile_miliz ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_miliz_15_00"); //¿No es asunto de la milicia?
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_miliz_15_00"); //Â¿No es asunto de la milicia?
 	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_miliz_10_01"); //La milicia solo es responsable de la ciudad. Este asunto tiene repercusiones de mayor alcance.
 
 };
 
 func void DIA_Serpentes_MinenAnteile_nein ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_nein_15_00"); //Ya tengo bastantes problemas. Búscate a otro.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_01"); //(Con enojo) Esto es indignante. Si no estás dispuesto a servir a la Hermandad, jamás alcanzarás los círculos superiores de la magia.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_02"); //Considérate amonestado. Espero que no vuelva a suceder, o te irá mal.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_nein_15_00"); //Ya tengo bastantes problemas. BÃºscate a otro.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_01"); //(Con enojo) Esto es indignante. Si no estÃ¡s dispuesto a servir a la Hermandad, jamÃ¡s alcanzarÃ¡s los cÃ­rculos superiores de la magia.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_02"); //ConsidÃ©rate amonestado. Espero que no vuelva a suceder, o te irÃ¡ mal.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Serpentes_MinenAnteile_was ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_15_00"); //¿De qué va esto?
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_15_00"); //Â¿De quÃ© va esto?
 	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_01"); //En la ciudad, alguien ha vendido participaciones falsas de las minas de la antigua colonia penal.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_02"); //La verdad es que estos papeles carecen de valor y de importancia, pero pueden armar líos entre la gente, y no nos lo podemos permitir ahora mismo.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_03"); //Se supone que el estafador ha abordado a todos los comerciantes honrados de la ciudad y del país, y a algunos ha conseguido venderles las participaciones falsas.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_04"); //Encuentra a este malhechor y tráele ante este tribunal. En tiempos tan malos hay que erradicar a los estafadores y a los saqueadores.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_02"); //La verdad es que estos papeles carecen de valor y de importancia, pero pueden armar lÃ­os entre la gente, y no nos lo podemos permitir ahora mismo.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_03"); //Se supone que el estafador ha abordado a todos los comerciantes honrados de la ciudad y del paÃ­s, y a algunos ha conseguido venderles las participaciones falsas.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_04"); //Encuentra a este malhechor y trÃ¡ele ante este tribunal. En tiempos tan malos hay que erradicar a los estafadores y a los saqueadores.
 	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_05"); //Debemos darle un castigo ejemplar para disuadir al resto de la chusma.
 	
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Intentaré solucionar el asunto.", DIA_Serpentes_MinenAnteile_was_ja );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "IntentarÃ© solucionar el asunto.", DIA_Serpentes_MinenAnteile_was_ja );
 
 };
 func void DIA_Serpentes_MinenAnteile_was_ja ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_00"); //Intentaré solucionar el asunto.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_01"); //Una cosa más. Cuando visites a los comerciantes, que no se enteren que buscas participaciones de las minas.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_02"); //Creo que querrán venderlas, y no te las ofrecerían si se percataran de tu relación con la iglesia, ¿entiendes?
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_03"); //Sí.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_04"); //En ese caso, ponte manos a la obra. Ojalá tengas éxito, hermano.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_00"); //IntentarÃ© solucionar el asunto.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_01"); //Una cosa mÃ¡s. Cuando visites a los comerciantes, que no se enteren que buscas participaciones de las minas.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_02"); //Creo que querrÃ¡n venderlas, y no te las ofrecerÃ­an si se percataran de tu relaciÃ³n con la iglesia, Â¿entiendes?
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_03"); //SÃ­.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_04"); //En ese caso, ponte manos a la obra. OjalÃ¡ tengas Ã©xito, hermano.
 	Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
 	
 	MIS_Serpentes_MinenAnteil_KDF = LOG_RUNNING;	
@@ -502,26 +502,26 @@ func void DIA_Serpentes_MinenAnteile_was_ja ()
 
 	Log_CreateTopic (TOPIC_MinenAnteile, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_MinenAnteile, LOG_RUNNING);
-	B_LogEntry (TOPIC_MinenAnteile,"Alguien está vendiendo concesiones ilegales de minas de mineral, y se enriquece. Debo descubrir quién las está vendiendo a los mercaderes de por aquí. Serpentes quiere todos los documentos falsificados."); 
+	B_LogEntry (TOPIC_MinenAnteile,"Alguien estÃ¡ vendiendo concesiones ilegales de minas de mineral, y se enriquece. Debo descubrir quiÃ©n las estÃ¡ vendiendo a los mercaderes de por aquÃ­. Serpentes quiere todos los documentos falsificados."); 
 };
 
 func void DIA_Serpentes_MinenAnteile_KillSLD ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_Kill_15_00"); //¿A quién debo matar?
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_01"); //Por el amor de Innos. A nadie, desde luego. El asunto requiere un poco más de tacto, patán.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_Kill_15_00"); //Â¿A quiÃ©n debo matar?
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_01"); //Por el amor de Innos. A nadie, desde luego. El asunto requiere un poco mÃ¡s de tacto, patÃ¡n.
 	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_02"); //Salandril, el alquimista de la parte alta de la ciudad, es culpable de un delito grave y tiene que ser castigado por ello.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_03"); //Sin embargo, se ha negado a venir al monasterio para ser juzgado. Tráelo.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_04"); //Nos da igual cómo lo logres. Por supuesto, se te recompensará.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_03"); //Sin embargo, se ha negado a venir al monasterio para ser juzgado. TrÃ¡elo.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_04"); //Nos da igual cÃ³mo lo logres. Por supuesto, se te recompensarÃ¡.
 	
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "¿No es asunto de la milicia?", DIA_Serpentes_MinenAnteile_miliz );
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "No hay problema. Me ocuparé de ello.", DIA_Serpentes_MinenAnteile_was_jaSLD );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Â¿No es asunto de la milicia?", DIA_Serpentes_MinenAnteile_miliz );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "No hay problema. Me ocuparÃ© de ello.", DIA_Serpentes_MinenAnteile_was_jaSLD );
 };
 
 var int MIS_Serpentes_BringSalandril_SLD;
 func void DIA_Serpentes_MinenAnteile_was_jaSLD ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_jaSLD_15_00"); //No hay problema. Me ocuparé de ello.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_jaSLD_10_01"); //Bien. Esperamos tener noticias tuyas en unos días.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_jaSLD_15_00"); //No hay problema. Me ocuparÃ© de ello.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_jaSLD_10_01"); //Bien. Esperamos tener noticias tuyas en unos dÃ­as.
 	MIS_Serpentes_BringSalandril_SLD = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
 
@@ -567,7 +567,7 @@ func void DIA_Serpentes_MinenAnteileBringen_Info ()
 
 		 if (SerpentesMinenAnteilCount == 1)
 			{
-				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_00"); //He logrado hacerme con una participación de las minas.
+				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_00"); //He logrado hacerme con una participaciÃ³n de las minas.
 				B_GivePlayerXP (XP_BringSerpentesMinenAnteil);
 				B_GiveInvItems (other, self, ItWr_MinenAnteil_Mis,1);
 				SerpentesMinenAnteilCounter = SerpentesMinenAnteilCounter + 1;
@@ -594,20 +594,20 @@ func void DIA_Serpentes_MinenAnteileBringen_Info ()
 
 		if (SerpentesMinenAnteilCounter < SalandrilVerteilteMinenAnteil)
 		{
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_02"); //Muy bien. Debes retirarlas a todas de la circulación, pues son un veneno para la gente. Tráemelas todas.
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_03"); //Ten. Te proporcionaré los medios pertinentes.
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_02"); //Muy bien. Debes retirarlas a todas de la circulaciÃ³n, pues son un veneno para la gente. TrÃ¡emelas todas.
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_03"); //Ten. Te proporcionarÃ© los medios pertinentes.
 		}
 		else if (SerpentesMinenAnteilCounter == SalandrilVerteilteMinenAnteil) //Joly:kein Exploid
 		{
-			AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_04"); //Creo que ésas eran todas.
+			AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_04"); //Creo que Ã©sas eran todas.
 			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_05"); //Muy bien. Te has ganado una recompensa.
-			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_06"); //Toma este amuleto protector. Te ayudará en los caminos que recorrerás en el futuro.
+			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_06"); //Toma este amuleto protector. Te ayudarÃ¡ en los caminos que recorrerÃ¡s en el futuro.
 			CreateInvItems (self, ItAm_Prot_Mage_01, 1); 
 			B_GiveInvItems (self, other, ItAm_Prot_Mage_01, 1);
 		}
 		else	//Joly: zur Sicherheit!
 		{
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_07"); //Ésta ya es la última, ¿no?
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_07"); //Ã‰sta ya es la Ãºltima, Â¿no?
 		};
 		
 		SerpentesMinenAnteilGeld	= (SerpentesMinenAnteilCount * SerpentesMinenAnteilOffer);
@@ -626,7 +626,7 @@ instance DIA_Serpentes_GOTSalandril		(C_INFO)
 	condition	 = 	DIA_Serpentes_GOTSalandril_Condition;
 	information	 = 	DIA_Serpentes_GOTSalandril_Info;
 
-	description	 = 	"Sé quien puso en circulación las participaciones de las minas.";
+	description	 = 	"SÃ© quien puso en circulaciÃ³n las participaciones de las minas.";
 };
 
 func int DIA_Serpentes_GOTSalandril_Condition ()
@@ -640,8 +640,8 @@ func int DIA_Serpentes_GOTSalandril_Condition ()
 
 func void DIA_Serpentes_GOTSalandril_Info ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_GOTSalandril_15_00"); //Sé quien puso en circulación las participaciones de las minas. Lo hizo Salandril, el alquimista de la parte alta de la ciudad.
-	AI_Output			(self, other, "DIA_Serpentes_GOTSalandril_10_01"); //Entonces tráelo. Tenemos que hablar con él.
+	AI_Output			(other, self, "DIA_Serpentes_GOTSalandril_15_00"); //SÃ© quien puso en circulaciÃ³n las participaciones de las minas. Lo hizo Salandril, el alquimista de la parte alta de la ciudad.
+	AI_Output			(self, other, "DIA_Serpentes_GOTSalandril_10_01"); //Entonces trÃ¡elo. Tenemos que hablar con Ã©l.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -656,7 +656,7 @@ instance DIA_Serpentes_SalandrilHERE		(C_INFO)
 	condition	 = 	DIA_Serpentes_SalandrilHERE_Condition;
 	information	 = 	DIA_Serpentes_SalandrilHERE_Info;
 
-	description	 = 	"Salandril está aquí, en el monasterio.";
+	description	 = 	"Salandril estÃ¡ aquÃ­, en el monasterio.";
 };
 
 func int DIA_Serpentes_SalandrilHERE_Condition ()
@@ -681,12 +681,12 @@ func int DIA_Serpentes_SalandrilHERE_Condition ()
 
 func void DIA_Serpentes_SalandrilHERE_Info ()
 {
-	AI_Output		(other, self, "DIA_Serpentes_SalandrilHERE_15_00"); //Salandril está aquí, en el monasterio.
-	AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_01"); //Muy bien. Luego nos ocuparemos de él.
+	AI_Output		(other, self, "DIA_Serpentes_SalandrilHERE_15_00"); //Salandril estÃ¡ aquÃ­, en el monasterio.
+	AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_01"); //Muy bien. Luego nos ocuparemos de Ã©l.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_02"); //Aquí tienes tu recompensa. Y no digas ni una palabra de esto, ¿entiendes?
+		AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_02"); //AquÃ­ tienes tu recompensa. Y no digas ni una palabra de esto, Â¿entiendes?
 		CreateInvItems (self, ItMi_Gold, 400);									
 		B_GiveInvItems (self, other, ItMi_Gold, 400);					
 	};

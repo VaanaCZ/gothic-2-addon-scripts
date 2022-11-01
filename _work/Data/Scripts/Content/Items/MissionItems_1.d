@@ -1,5 +1,5 @@
 //****************************************************************************
-//			Schl¸ssel f¸r Xardas Truhe
+//			Schl√ºssel f√ºr Xardas Truhe
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Xardas(C_Item)
@@ -21,7 +21,7 @@ INSTANCE ItKe_Xardas(C_Item)
 	
 };
 //**********************************************************************************
-//	Canthars Kompromittierender Brief f¸r Sarah die H‰ndlerin
+//	Canthars Kompromittierender Brief f√ºr Sarah die H√§ndlerin
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_Canthars_KomproBrief_MIS		(C_Item)
@@ -50,18 +50,18 @@ func void Use_Canthars_KomproBrief ()
 					Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "     ⁄ltimo aviso"								);
+					Doc_PrintLine	(nDocID,  0, "     √öltimo aviso"								);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, "        Te he recordado ya varias"				);
-					Doc_PrintLine	(nDocID,  0, "        veces, en los tÈrminos m·s"				);
+					Doc_PrintLine	(nDocID,  0, "        veces, en los t√©rminos m√°s"				);
 					Doc_PrintLine	(nDocID,  0, "        amables, que necesito con"				);
 					Doc_PrintLine	(nDocID,  0, "        urgencia las armas que te"			);
-					Doc_PrintLine	(nDocID,  0, "        encarguÈ hace una seman·."										);
+					Doc_PrintLine	(nDocID,  0, "        encargu√© hace una seman√°."										);
 					Doc_PrintLine	(nDocID,  0, "        Si no recibo noticias tuyas"		);
-					Doc_PrintLine	(nDocID,  0, "        pronto, Sarah, tendrÈ que"			);
+					Doc_PrintLine	(nDocID,  0, "        pronto, Sarah, tendr√© que"			);
 					Doc_PrintLine	(nDocID,  0, "       cambiar mi actitud hacia ti. Candelabro de oro"			);
-					Doc_PrintLine	(nDocID,  0, "        °°Espero que lleguemos a un entendimiento!!"					);
+					Doc_PrintLine	(nDocID,  0, "        ¬°¬°Espero que lleguemos a un entendimiento!!"					);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "            Onar"										);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -122,7 +122,7 @@ INSTANCE ItMi_CoragonsSilber (C_Item)
 };
 
 //*******************************
-//P‰ckchen f¸r Thekla von Sagitta
+//P√§ckchen f√ºr Thekla von Sagitta
 //*******************************
 INSTANCE ItMi_TheklasPaket (C_Item)
 {
@@ -169,7 +169,7 @@ instance ItMi_MariasGoldPlate (C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"El plato tiene grabados los"; 
-	TEXT[3]				= 	"nombres Onar y MarÌa.";
+	TEXT[3]				= 	"nombres Onar y Mar√≠a.";
 	
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
@@ -225,7 +225,7 @@ INSTANCE ItRi_ValentinosRing(C_Item) //bei Cassia als Belohnung
 	};
 
 //****************************************************************************
-//			Schl¸ssel f¸r Dexter Truhe
+//			Schl√ºssel f√ºr Dexter Truhe
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Dexter(C_Item)
@@ -247,7 +247,7 @@ INSTANCE ItKe_Dexter(C_Item)
 	
 };
 //**********************************************************************************
-//	Constantinos Kr‰uterliste
+//	Constantinos Kr√§uterliste
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_Kraeuterliste (C_Item)
@@ -276,24 +276,24 @@ func void Use_Kraeuterliste ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 	
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Hierbas alquÌmicas"	);
+					Doc_PrintLine	( nDocID,  0, "Hierbas alqu√≠micas"	);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "RaÌz de fuego"	);
+					Doc_PrintLine	( nDocID,  0, "Ra√≠z de fuego"	);
 					Doc_PrintLine	( nDocID,  0, "Planta curativa"	);
 					Doc_PrintLine	( nDocID,  0, "Hierba curativa"    );
 					Doc_PrintLine	( nDocID,  0, "Hierba del pantano"  );
 					Doc_PrintLine	( nDocID,  0, "Ortiga de fuego"  );
 					Doc_PrintLine	( nDocID,  0, "Hierba del fuego"  );
 					Doc_PrintLine	( nDocID,  0, "Baya de trasgo"     );
-					Doc_PrintLine	( nDocID,  0, "RaÌz de dragÛn");
-					Doc_PrintLine	( nDocID,  0, "RaÌz de dragÛn"   );
+					Doc_PrintLine	( nDocID,  0, "Ra√≠z de drag√≥n");
+					Doc_PrintLine	( nDocID,  0, "Ra√≠z de drag√≥n"   );
 					Doc_PrintLine	( nDocID,  0, "Baya de las llanuras"      	);
 					Doc_PrintLine	( nDocID,  0, "Maleza de llanura"       );
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Nota: Deja que un posible aprendiz se encargue de recoger las plantas. AsÌ podr·s saber si es bueno. "						);
+					Doc_PrintLines	( nDocID,  0, "Nota: Deja que un posible aprendiz se encargue de recoger las plantas. As√≠ podr√°s saber si es bueno. "						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Saludos, Zuris"						);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 }; 
@@ -303,7 +303,7 @@ func void Use_Kraeuterliste ()
 
 INSTANCE ItWr_ManaRezept (C_Item)
 {
-	name 				=	"FÛrmula";
+	name 				=	"F√≥rmula";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -314,7 +314,7 @@ INSTANCE ItWr_ManaRezept (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_ManaRezept;
 	scemeName			=	"MAP";
-	description			= 	"FÛrmula para esencia m·gica.";
+	description			= 	"F√≥rmula para esencia m√°gica.";
 };
 func void Use_ManaRezept ()
 {   
@@ -327,18 +327,18 @@ func void Use_ManaRezept ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 	
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Pociones m·gicas"	);
+					Doc_PrintLine	( nDocID,  0, "Pociones m√°gicas"	);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Para destilar pociones m·gicas, un alquimista competente necesita:");
+					Doc_PrintLines	( nDocID,  0, "Para destilar pociones m√°gicas, un alquimista competente necesita:");
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Hierba del pantano");
 					Doc_PrintLine	( nDocID,  0, "Ortiga de fuego");
 					Doc_PrintLine	( nDocID,  0, "Hierba del fuego");
-					Doc_PrintLines	( nDocID,  0, "TambiÈn necesita una planta de"						);
+					Doc_PrintLines	( nDocID,  0, "Tambi√©n necesita una planta de"						);
 					Doc_PrintLine	( nDocID,  0, "Baya de las llanuras"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Maestro Neoras"						);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 }; 
@@ -395,7 +395,7 @@ func void UsePassierschein ()
 };
 
 //****************************************************************************
-//				Kraut Paket f¸r MIS_ANDRE_WAREHOUSE 
+//				Kraut Paket f√ºr MIS_ANDRE_WAREHOUSE 
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItMi_HerbPaket(C_Item)
@@ -420,12 +420,12 @@ INSTANCE ItMi_HerbPaket(C_Item)
 	
 };
 //****************************************************************************
-//				Lagerhaus Schl¸ssel f¸r MIS_ANDRE_WAREHOUSE 
+//				Lagerhaus Schl√ºssel f√ºr MIS_ANDRE_WAREHOUSE 
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Storage(C_Item)
 {
-	name 				=	"Llave del almacÈn";
+	name 				=	"Llave del almac√©n";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -437,7 +437,7 @@ INSTANCE ItKe_Storage(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"La llave del almacÈn";
+	TEXT[2]				=	"La llave del almac√©n";
 	TEXT[3]				=   "del puerto.";
 	
 };
@@ -475,7 +475,7 @@ INSTANCE ItFo_SmellyFish (C_Item)
 //****************************************************************************
 INSTANCE ItFo_HalvorFish_MIS (C_Item)
 {	
-	name 				=	"Pescado extraÒo";
+	name 				=	"Pescado extra√±o";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -487,7 +487,7 @@ INSTANCE ItFo_HalvorFish_MIS (C_Item)
 	scemeName			=	"MAPSEALED";
 	on_state[0]			=	Use_HalvorFish;
 
-	description			= 	"Un pez de aspecto extraÒo.";
+	description			= 	"Un pez de aspecto extra√±o.";
 	TEXT[2]				= 	"Hay algo raro en este pez.";		
 	TEXT[3]				= 	"Parece como si hubiera sido cosido...";
 };
@@ -533,9 +533,9 @@ func void UseHalvorMessage ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "    °Pasad inadvertidos, muchachos! "				);
+					Doc_PrintLine	(nDocID,  0, "    ¬°Pasad inadvertidos, muchachos! "				);
 					Doc_PrintLine	(nDocID,  0, "    La milicia empieza a sospechar."				);
-					Doc_PrintLine	(nDocID,  0, "    °No hag·is nada hasta que sep·is de mÌ!");
+					Doc_PrintLine	(nDocID,  0, "    ¬°No hag√°is nada hasta que sep√°is de m√≠!");
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "                                                   Halvor");
 					Doc_Show		(nDocID);
@@ -646,8 +646,8 @@ func void UseVatrasMessage ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
 					Doc_PrintLine	( nDocID,  0, "Apreciado Isgaroth,"					);
 					Doc_PrintLines	( nDocID,  0, "Siento la presencia creciente de otra fuerza."					);
-					Doc_PrintLines	( nDocID,  0, "Hasta ahora no sabemos nada de ella. øPuede ser que haya cerca vasallos de Beliar?"					);
-					Doc_PrintLines	( nDocID,  0, "PodrÌa equivocarme, pero el padre Pyrokar harÌa bien en encargarse del asunto. "					);
+					Doc_PrintLines	( nDocID,  0, "Hasta ahora no sabemos nada de ella. ¬øPuede ser que haya cerca vasallos de Beliar?"					);
+					Doc_PrintLines	( nDocID,  0, "Podr√≠a equivocarme, pero el padre Pyrokar har√≠a bien en encargarse del asunto. "					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Que nuestras plegarias reciban respuesta."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -656,7 +656,7 @@ func void UseVatrasMessage ()
 }; 
 //****************************************************************************
 //				Botschaft von Vatras an die Magier des Feuers
-//				Das Siegel wurde geˆffnet		
+//				Das Siegel wurde ge√∂ffnet		
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItWr_VatrasMessage_Open	(C_Item)
@@ -690,8 +690,8 @@ func void UseVatrasMessageOpen ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
 					Doc_PrintLine	( nDocID,  0, "Apreciado Isgaroth,"					);
 					Doc_PrintLines	( nDocID,  0, "Siento la presencia creciente de otra fuerza."					);
-					Doc_PrintLines	( nDocID,  0, "Hasta ahora no sabemos nada de ella. øPuede ser que haya cerca vasallos de Beliar?"					);
-					Doc_PrintLines	( nDocID,  0, "PodrÌa equivocarme, pero el padre Pyrokar harÌa bien en encargarse del asunto. "					);
+					Doc_PrintLines	( nDocID,  0, "Hasta ahora no sabemos nada de ella. ¬øPuede ser que haya cerca vasallos de Beliar?"					);
+					Doc_PrintLines	( nDocID,  0, "Podr√≠a equivocarme, pero el padre Pyrokar har√≠a bien en encargarse del asunto. "					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Que nuestras plegarias reciban respuesta."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -699,11 +699,11 @@ func void UseVatrasMessageOpen ()
 					Doc_Show		( nDocID );
 }; 
 //****************************************************
-//		Hotelschl¸ssel
+//		Hotelschl√ºssel
 //****************************************************
 INSTANCE ItKe_Hotel(C_Item)
 {
-	name 				=	"Llave de habitaciÛn";
+	name 				=	"Llave de habitaci√≥n";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -715,12 +715,12 @@ INSTANCE ItKe_Hotel(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"La llave de la habitaciÛn";
+	TEXT[2]				=	"La llave de la habitaci√≥n";
 	TEXT[3]				=   "del hotel.";
 	
 };
 //****************************************************
-//		Schl¸ssel zur Diebesgilde
+//		Schl√ºssel zur Diebesgilde
 //****************************************************
 INSTANCE ItKe_ThiefGuildKey_MIS (C_Item)
 {
@@ -736,11 +736,11 @@ INSTANCE ItKe_ThiefGuildKey_MIS (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Esta llave ha sido daÒada por el agua salada del mar.";
+	TEXT[2]				=	"Esta llave ha sido da√±ada por el agua salada del mar.";
 	
 };
 //****************************************************
-//		Schl¸ssel zur Diebesgilde vom Hotel
+//		Schl√ºssel zur Diebesgilde vom Hotel
 //****************************************************
 INSTANCE ItKe_ThiefGuildKey_Hotel_MIS (C_Item)
 {
@@ -756,11 +756,11 @@ INSTANCE ItKe_ThiefGuildKey_Hotel_MIS (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"La llave del sÛtano del hotel.";
+	TEXT[2]				=	"La llave del s√≥tano del hotel.";
 	
 };
 //****************************************************
-//		Pfortenschl¸ssel Tempel von Innos
+//		Pfortenschl√ºssel Tempel von Innos
 //****************************************************
 INSTANCE ItKe_Innos_MIS(C_Item)
 {
@@ -781,7 +781,7 @@ INSTANCE ItKe_Innos_MIS(C_Item)
 	
 };
 //****************************************************************************
-//			Schl¸ssel Vorratskammer Kloster
+//			Schl√ºssel Vorratskammer Kloster
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_KlosterSchatz(C_Item)
@@ -803,7 +803,7 @@ INSTANCE ItKe_KlosterSchatz(C_Item)
 	
 };
 //****************************************************************************
-//			Schl¸ssel Vorratskammer Kloster
+//			Schl√ºssel Vorratskammer Kloster
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_KlosterStore(C_Item)
@@ -825,7 +825,7 @@ INSTANCE ItKe_KlosterStore(C_Item)
 	
 };
 //****************************************************************************
-//			Schl¸ssel Schlafgemach Player
+//			Schl√ºssel Schlafgemach Player
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_KDFPlayer(C_Item)
@@ -842,12 +842,12 @@ INSTANCE ItKe_KDFPlayer(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"La llave de la c·mara";
+	TEXT[2]				=	"La llave de la c√°mara";
 	TEXT[3]				=   "del monasterio.";
 	
 };
 //****************************************************************************
-//			Schl¸ssel Bibliothek Kloster
+//			Schl√ºssel Bibliothek Kloster
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_KlosterBibliothek(C_Item)
@@ -914,7 +914,7 @@ INSTANCE ItPo_Perm_LittleMana(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION"; 
 
-	description		= 	"Esencia del espÌritu";
+	description		= 	"Esencia del esp√≠ritu";
 	TEXT[1]			= 	NAME_Bonus_ManaMax;			
 	COUNT[1]		= 	3;
 	TEXT[5]			= 	NAME_Value;					
@@ -927,7 +927,7 @@ INSTANCE ItPo_Perm_LittleMana(C_Item)
 		Npc_ChangeAttribute	(self, ATR_MANA,	3);
 	};
 //****************************************************
-//		Hammer Innos, f¸r Golem Pr¸fung 
+//		Hammer Innos, f√ºr Golem Pr√ºfung 
 //****************************************************
 INSTANCE Holy_Hammer_MIS (C_Item)
 {	
@@ -951,7 +951,7 @@ INSTANCE Holy_Hammer_MIS (C_Item)
 
 	description			=  name;
 	//FIXME_Noki: TAB
-	TEXT[2]				=  "DaÒo:                 ??";
+	TEXT[2]				=  "Da√±o:                 ??";
 	TEXT[3] 			=  "Fuerza necesaria:        ??";
 	TEXT[4] 			=  "Arma de dos manos";
 	TEXT[5]				=  "Valor:  imposible determinarlo";					
@@ -968,7 +968,7 @@ INSTANCE Holy_Hammer_MIS (C_Item)
 };
 
 //****************************************************************************
-//			Schl¸ssel f¸r die Truhe in der Magierhˆhle
+//			Schl√ºssel f√ºr die Truhe in der Magierh√∂hle
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_MagicChest(C_Item)
@@ -990,7 +990,7 @@ INSTANCE ItKe_MagicChest(C_Item)
 	TEXT[4]				=	"un candado.";
 };
 //****************************************************************************
-//			gef‰lschter Passierschein von Lee 
+//			gef√§lschter Passierschein von Lee 
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItWr_Passage_MIS	(C_Item)
@@ -1007,7 +1007,7 @@ INSTANCE ItWr_Passage_MIS	(C_Item)
 	on_state[0]			=   UsePassage;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[3]				=	"Con esta nota deberÌa poder";
+	TEXT[3]				=	"Con esta nota deber√≠a poder";
 	TEXT[4]				=   "ver a lord Hagen.";
 };
 func void UsePassage ()
@@ -1025,15 +1025,15 @@ func void UsePassage ()
 					Doc_PrintLine	( nDocID,  0, ""								);
 					Doc_PrintLine	( nDocID,  0, "Honorable lord Hagen,"			);
 					Doc_PrintLine	( nDocID,  0, ""								);
-					Doc_PrintLines	( nDocID,  0, "Ambos somos conscientes de su situaciÛn. Por ello le propongo el siguiente compromiso:" 	);
-					Doc_PrintLines	( nDocID,  0, "GarantÌceme a mÌ a y mis hombres inmunidad total ante Innos y ante el Rey."				);
+					Doc_PrintLines	( nDocID,  0, "Ambos somos conscientes de su situaci√≥n. Por ello le propongo el siguiente compromiso:" 	);
+					Doc_PrintLines	( nDocID,  0, "Garant√≠ceme a m√≠ a y mis hombres inmunidad total ante Innos y ante el Rey."				);
 					Doc_PrintLines	( nDocID,  0, "A cambio, le ofrecemos ayuda en la defensa de la ciudad y las tierras circundantes." );
-					Doc_PrintLines	( nDocID,  0, "Adem·s, me encargarÈ personalmente de que mis hombres se mantengan alejados de las granjas de los alrededores a excepciÛn, por supuesto, de la de Onar, donde continuaremos acampados." );
-					Doc_PrintLines	( nDocID,  0, "Tengo entendido que en la nave que enviar· hacia el continente hay sitio suficiente para mÌ y algunos de mis hombres. Cuando parta, quiero estar a bordo." );
-					Doc_PrintLines	( nDocID,  0, "Ortiga de fuego Os lo suplico, tome la decisiÛn con la sabidurÌa que se le ha otorgado." );
+					Doc_PrintLines	( nDocID,  0, "Adem√°s, me encargar√© personalmente de que mis hombres se mantengan alejados de las granjas de los alrededores a excepci√≥n, por supuesto, de la de Onar, donde continuaremos acampados." );
+					Doc_PrintLines	( nDocID,  0, "Tengo entendido que en la nave que enviar√° hacia el continente hay sitio suficiente para m√≠ y algunos de mis hombres. Cuando parta, quiero estar a bordo." );
+					Doc_PrintLines	( nDocID,  0, "Ortiga de fuego Os lo suplico, tome la decisi√≥n con la sabidur√≠a que se le ha otorgado." );
 					Doc_PrintLine	( nDocID,  0, ""								);
 					Doc_PrintLine	( nDocID,  0, "Firmado general Lee"		);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   				);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   				);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -1071,7 +1071,7 @@ func void UseBanditLetter ()
 		
 			Log_CreateTopic (Topic_Bandits,LOG_MISSION);
 			Log_SetTopicStatus (Topic_Bandits,LOG_RUNNING);
-			B_LogEntry (Topic_Bandits,"Der Anf¸hrer der Banditen ist Dexter. Er versteckt sich bei einer Mine, beim Groﬂbauer.");
+			B_LogEntry (Topic_Bandits,"Der Anf√ºhrer der Banditen ist Dexter. Er versteckt sich bei einer Mine, beim Gro√übauer.");
 			MIS_Steckbriefe = LOG_RUNNING;
 		};
 		*/
@@ -1084,18 +1084,18 @@ func void UseBanditLetter ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, "Detengan a todos los hombres"							);
-					Doc_PrintLine	(nDocID,  0, " que vengan de las montaÒas."						);
+					Doc_PrintLine	(nDocID,  0, " que vengan de las monta√±as."						);
 					Doc_PrintLine	(nDocID,  0, "Si alguien viene por el paso"				);
 					Doc_PrintLine	(nDocID,  0, " probablemente sea un viejo."			);
-					Doc_PrintLine	(nDocID,  0, "No se dejen engaÒar,"				);
+					Doc_PrintLine	(nDocID,  0, "No se dejen enga√±ar,"				);
 					Doc_PrintLine	(nDocID,  0, "    es un peligroso hechicero.   "				);
 					Doc_PrintLine	(nDocID,  0, "Mantenedlo vigilado."						);
 					Doc_PrintLine	(nDocID,  0, "     "											);
 					Doc_PrintLine	(nDocID,  0, "Es posible que el tipo que buscamos"		);
-					Doc_PrintLine	(nDocID,  0, "    contacte con Èl.    "						);
+					Doc_PrintLine	(nDocID,  0, "    contacte con √©l.    "						);
 					Doc_PrintLine	(nDocID,  0, "Con esta carta te mando"				);
 					Doc_PrintLine	(nDocID,  0, "    treinta piezas de oro."							);
-					Doc_PrintLine	(nDocID,  0, "DarÈ otras treinta al que"				);
+					Doc_PrintLine	(nDocID,  0, "Dar√© otras treinta al que"				);
 					Doc_PrintLine	(nDocID,  0, "    mate al hombre."							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "Traed su cabeza a la mina, cerca de la hacienda.");
@@ -1123,7 +1123,7 @@ INSTANCE ItWr_Poster_MIS	(C_Item)
 	on_state[0]			=   UsePoster;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[3]				=	"°Un retrato mÌo!";
+	TEXT[3]				=	"¬°Un retrato m√≠o!";
 	TEXT[4]				=   "";
 };
 FUNC VOID UsePoster()
@@ -1135,7 +1135,7 @@ FUNC VOID UsePoster()
 	Doc_Show (nDocID);
 };
 //****************************************************************************
-//				Banditen Truhen Schl¸ssel 
+//				Banditen Truhen Schl√ºssel 
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Bandit(C_Item)
@@ -1152,7 +1152,7 @@ INSTANCE ItKe_Bandit(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"La llave pertenecÌa";
+	TEXT[2]				=	"La llave pertenec√≠a";
 	TEXT[3]				=   "a un bandido.";
 	
 };
@@ -1208,7 +1208,7 @@ INSTANCE ItRi_Prot_Point_01_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				=  "ProtecciÛn de madera";
+	description				=  "Protecci√≥n de madera";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint;
@@ -1250,21 +1250,21 @@ INSTANCE ItMi_EddasStatue (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				= 	"Innos, seÒor de la justicia";
-	TEXT[3]				= 	"bendÌceme, gu·rdame";
-	TEXT[4]				= 	"y cuÌdame de todo mal.";
+	TEXT[2]				= 	"Innos, se√±or de la justicia";
+	TEXT[3]				= 	"bend√≠ceme, gu√°rdame";
+	TEXT[4]				= 	"y cu√≠dame de todo mal.";
 	
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
 };
 
 //****************************************************************************
-//				Crypta-Schl¸ssel
+//				Crypta-Schl√ºssel
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_EVT_CRYPT_01(C_Item)
 {
-	name 				=	"Llave de latÛn antigua";
+	name 				=	"Llave de lat√≥n antigua";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -1276,13 +1276,13 @@ INSTANCE ItKe_EVT_CRYPT_01(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"La llave del esqueleto de la habitaciÛn 1";
+	TEXT[2]				=	"La llave del esqueleto de la habitaci√≥n 1";
 	
 };
 
 INSTANCE ItKe_EVT_CRYPT_02(C_Item)
 {
-	name 				=	"Llave de latÛn antigua";
+	name 				=	"Llave de lat√≥n antigua";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -1294,13 +1294,13 @@ INSTANCE ItKe_EVT_CRYPT_02(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"La llave del esqueleto de la habitaciÛn 2";
+	TEXT[2]				=	"La llave del esqueleto de la habitaci√≥n 2";
 	
 };
 
 INSTANCE ItKe_EVT_CRYPT_03(C_Item)
 {
-	name 				=	"Llave de latÛn antigua";
+	name 				=	"Llave de lat√≥n antigua";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -1312,7 +1312,7 @@ INSTANCE ItKe_EVT_CRYPT_03(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"La llave del esqueleto de la habitaciÛn 3";
+	TEXT[2]				=	"La llave del esqueleto de la habitaci√≥n 3";
 	
 };
 
@@ -1359,7 +1359,7 @@ INSTANCE ITAR_PAL_SKEL (C_Item)
 };
 
 //****************************************************************************
-//				Schl¸ssel zu Valentinos Truhe
+//				Schl√ºssel zu Valentinos Truhe
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Valentino(C_Item)
@@ -1381,7 +1381,7 @@ INSTANCE ItKe_Valentino(C_Item)
 	
 };
 //****************************************************************************
-//				Schl¸ssel zur Truhe OV Noname Typen
+//				Schl√ºssel zur Truhe OV Noname Typen
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Buerger(C_Item)
@@ -1398,12 +1398,12 @@ INSTANCE ItKe_Buerger(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Estaba en el alfÈizar de una ventana.";
+	TEXT[2]				=	"Estaba en el alf√©izar de una ventana.";
 	TEXT[3]				=   "";
 	
 };
 //****************************************************************************
-//				Schl¸ssel Richter Truhe
+//				Schl√ºssel Richter Truhe
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Richter(C_Item)
@@ -1425,7 +1425,7 @@ INSTANCE ItKe_Richter(C_Item)
 	
 };
 //****************************************************************************
-//				Schl¸ssel Salandril
+//				Schl√ºssel Salandril
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Salandril(C_Item)
@@ -1448,7 +1448,7 @@ INSTANCE ItKe_Salandril(C_Item)
 };
 
 //****************************************************************************
-//				Schl¸ssel Truhe ...wo die Paladine schlafen
+//				Schl√ºssel Truhe ...wo die Paladine schlafen
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_PaladinTruhe(C_Item)
@@ -1465,7 +1465,7 @@ INSTANCE ItKe_PaladinTruhe(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Una pequeÒa llave de latÛn de";
+	TEXT[2]				=	"Una peque√±a llave de lat√≥n de";
 	TEXT[3]				=   "la casa de los paladines.";
 	
 };
@@ -1487,10 +1487,10 @@ INSTANCE ItKe_ThiefTreasure(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Una llave pequeÒa.";
+	TEXT[2]				=	"Una llave peque√±a.";
 };
 //****************************************************************************
-//				Diebsgilde Fingers T¸r
+//				Diebsgilde Fingers T√ºr
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Fingers(C_Item)
@@ -1564,7 +1564,7 @@ INSTANCE ItWr_Schuldenbuch (C_ITEM)
 					Doc_PrintLine	( nDocID,  0, ""					);
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					//Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 					//Doc_PrintLine	( nDocID,  1, ""					);										
 					//Doc_PrintLines( nDocID,  1, "StandardBuch Seite 2"	);
@@ -1586,7 +1586,7 @@ INSTANCE ItWr_Schuldenbuch (C_ITEM)
 
 INSTANCE ItPl_Sagitta_Herb_MIS (C_Item)
 {	
-	name 				=	"¡loe solar";
+	name 				=	"√Åloe solar";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1605,12 +1605,12 @@ INSTANCE ItPl_Sagitta_Herb_MIS (C_Item)
 
 
 //****************************************************************************
-//			Schl¸ssel f¸r die obernen Schlafzimmer in der Taverne (MITTE DER WELT!)
+//			Schl√ºssel f√ºr die obernen Schlafzimmer in der Taverne (MITTE DER WELT!)
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ITKE_ORLAN_HOTELZIMMER(C_Item)
 {
-	name 				=	"Llave de habitaciÛn";
+	name 				=	"Llave de habitaci√≥n";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -1622,7 +1622,7 @@ INSTANCE ITKE_ORLAN_HOTELZIMMER(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"de la taberna ''La arpÌa muerta''.";
+	TEXT[2]				=	"de la taberna ''La arp√≠a muerta''.";
 	TEXT[3]				=   "";
 	
 };

@@ -39,7 +39,7 @@ instance MENU_STATUS (C_MENU_DEF)
 	items[21]	= "MENU_ITEM_ATTRIBUTE_4";
 
 
-	// Rüstungswerte
+	// RÃ¼stungswerte
 	
 	items[22]	= "MENU_ITEM_ARMOR_HEADING";
 	// ---------------------------------------------
@@ -125,7 +125,7 @@ const int STAT_B_X4 = 7700; //Ende der B-Spalte (zum zentrieren der Headings)
 // ----- Zeilen / Blockanfang ------
 // 1. Spalte
 const int STAT_PLYHEAD_Y	= 1000;
-const int STAT_PLY_Y 		= 1450; //Gilde / Punkteblock (1000 + 300 Fonthöhe + 150 Abstand)
+const int STAT_PLY_Y 		= 1450; //Gilde / Punkteblock (1000 + 300 FonthÃ¶he + 150 Abstand)
 
 const int STAT_ATRHEAD_Y  	= 3250; 
 const int STAT_ATR_Y 		= 3700; //Attributsblock
@@ -137,7 +137,7 @@ const int STAT_ARM_Y 		= 5650; //Armorblock
 const int STAT_TALHEAD_Y  	= 1000;
 const int STAT_TAL_Y  		= 1450; //2. Spalte - Talentblock
 
-// ----- Zeilengrösse ------
+// ----- ZeilengrÃ¶sse ------
 const int STAT_DY =  300;
 
 
@@ -191,7 +191,7 @@ instance MENU_ITEM_TALENT_7_TITLE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_TALENT_7_CIRCLE(C_MENU_ITEM_DEF) 
 {
 	posx 		= STAT_A_X2;				posy = STAT_PLY_Y + STAT_DY*1;	
-	text[0]		= "Círc."; 
+	text[0]		= "CÃ­rc."; 
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE; 
 };
@@ -264,7 +264,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
 
-// ------ Stärke ------
+// ------ StÃ¤rke ------
 INSTANCE MENU_ITEM_ATTRIBUTE_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*0;
@@ -300,7 +300,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_2(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*2;
-	text[0]		= "Maná";
+	text[0]		= "ManÃ¡";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -330,7 +330,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_4(C_MENU_ITEM_DEF)
 
 
 // --------------
-// Rüstungsschutz
+// RÃ¼stungsschutz
 // --------------
 
 INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
@@ -378,7 +378,7 @@ INSTANCE MENU_ITEM_ARMOR_2(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*2;
-	text[0]		= "Fuego de dragón";
+	text[0]		= "Fuego de dragÃ³n";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };

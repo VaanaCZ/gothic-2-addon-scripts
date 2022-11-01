@@ -77,10 +77,10 @@ FUNC INT DIA_Addon_10008_Bandit_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//¡NO lo despiertes!
-	AI_Output (other, self, "DIA_Addon_10008_Bandit_Hi_15_01");//¿¿¿Qué???
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//Â¡NO lo despiertes!
+	AI_Output (other, self, "DIA_Addon_10008_Bandit_Hi_15_01");//Â¿Â¿Â¿QuÃ©???
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Si quieres hacerte un favor a ti mismo, no te acerques a Skinner.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Ese tipo es impredecible. Mató al último que se atrevió a despertarle.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Ese tipo es impredecible. MatÃ³ al Ãºltimo que se atreviÃ³ a despertarle.
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Que duerma, por el bien de todos.
 };
 //--------------------------------------------------------------------
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_10008_Bandit_soup   (C_INFO)
 	condition   = DIA_Addon_10008_Bandit_soup_Condition;
 	information = DIA_Addon_10008_Bandit_soup_Info;
 	permanent   = FALSE;
-	description = "¿Eres un cavador?";
+	description = "Â¿Eres un cavador?";
 };
 FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 {	
@@ -101,11 +101,11 @@ FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_soup_Info()
 {
-	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//¿Eres un cavador?
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//¿Por los pantalones? No, los llevo porque son muy cómodos.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Yo sólo me dedico a preparar estofado de carne. Toma, pruébalo, te revitalizará.
+	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//Â¿Eres un cavador?
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//Â¿Por los pantalones? No, los llevo porque son muy cÃ³modos.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Yo sÃ³lo me dedico a preparar estofado de carne. Toma, pruÃ©balo, te revitalizarÃ¡.
 	B_GiveInvItems (self, other, ItFo_Addon_Meatsoup,1);
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Es importante entrenar tu fuerza, aquí acechan muchos peligros.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Es importante entrenar tu fuerza, aquÃ­ acechan muchos peligros.
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Si quieres, puedo ayudarte a fortalecerte.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
@@ -122,7 +122,7 @@ INSTANCE DIA_Addon_10008_Bandit_Teach(C_INFO)
 	condition	= DIA_Addon_10008_Bandit_Teach_Condition;
 	information	= DIA_Addon_10008_Bandit_Teach_Info;
 	permanent	= TRUE;
-	description = "Quiero hacerme más fuerte.";
+	description = "Quiero hacerme mÃ¡s fuerte.";
 };                       
 
 FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
@@ -134,7 +134,7 @@ FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //Quiero ser más fuerte.
+	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //Quiero ser mÃ¡s fuerte.
 
 	Info_ClearChoices 	(DIA_Addon_10008_Bandit_Teach);
 	Info_AddChoice		(DIA_Addon_10008_Bandit_Teach, DIALOG_BACK, DIA_Addon_10008_Bandit_Teach_Back);

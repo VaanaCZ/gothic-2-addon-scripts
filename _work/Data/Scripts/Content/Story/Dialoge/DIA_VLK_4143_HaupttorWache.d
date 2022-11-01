@@ -32,7 +32,7 @@ instance DIA_Haupttorwache_AUFGABE		(C_INFO)
 	information	 = 	DIA_Haupttorwache_AUFGABE_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿A qué te dedicas?";
+	description	 = 	"Â¿A quÃ© te dedicas?";
 };
 
 func int DIA_Haupttorwache_AUFGABE_Condition ()
@@ -42,7 +42,7 @@ func int DIA_Haupttorwache_AUFGABE_Condition ()
 
 func void DIA_Haupttorwache_AUFGABE_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //¿Cuál es tu misión?
+	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Â¿CuÃ¡l es tu misiÃ³n?
 	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Mi labor es simple. Se supone que debo asegurarme de que los orcos permanezcan al menos a 10 metros de la puerta.
 	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Si intentan atravesar el rastrillo, hago sonar la alarma. Eso es todo.
 };
@@ -58,7 +58,7 @@ instance DIA_Haupttorwache_TOROEFFNEN		(C_INFO)
 	information	 = 	DIA_Haupttorwache_TOROEFFNEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Qué tendría que hacer uno para abrir la puerta principal?";
+	description	 = 	"Â¿QuÃ© tendrÃ­a que hacer uno para abrir la puerta principal?";
 };
 
 func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
@@ -70,8 +70,8 @@ func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
 };
 func void DIA_Haupttorwache_TOROEFFNEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //¿Qué tendría que hacer uno para abrir la puerta principal?
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Por todos los santos. ¿Para qué querrías saberlo?
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Â¿QuÃ© tendrÃ­a que hacer uno para abrir la puerta principal?
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Por todos los santos. Â¿Para quÃ© querrÃ­as saberlo?
 
 	self.flags = 0;//Joly:zur sicherheit
 
@@ -83,18 +83,18 @@ func void DIA_Haupttorwache_TOROEFFNEN_Info ()
 func void DIA_Haupttorwache_TOROEFFNEN_sicherheit ()
 {
 	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Me preocupa la seguridad del castillo.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //Y a mí. Todo el tiempo, créeme.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //Y dado que soy un guardián tan fiel, Garond por fin me ha confiado la llave de la cámara de la puerta.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(Orgulloso) Es una gran responsabilidad. La protegeré bien. Tuve que jurárselo a Garond.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Sí. Imagínate que alguien entrase y levantara la palanca que abre la puerta y que esa vieja reja de acero oxidado se quedase atascada.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Entonces nadie podría cerrar la puerta. No debo pensar en lo que pasaría después. Menos mal que nadie sabe que tengo la llave.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //Y a mÃ­. Todo el tiempo, crÃ©eme.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //Y dado que soy un guardiÃ¡n tan fiel, Garond por fin me ha confiado la llave de la cÃ¡mara de la puerta.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(Orgulloso) Es una gran responsabilidad. La protegerÃ© bien. Tuve que jurÃ¡rselo a Garond.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //SÃ­. ImagÃ­nate que alguien entrase y levantara la palanca que abre la puerta y que esa vieja reja de acero oxidado se quedase atascada.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Entonces nadie podrÃ­a cerrar la puerta. No debo pensar en lo que pasarÃ­a despuÃ©s. Menos mal que nadie sabe que tengo la llave.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Haupttorwache_TOROEFFNEN_frage ()
 {
 	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //No importa. Solo preguntaba.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //No atraigas problemas hablando así. Las cosas ya son suficientemente complicadas. Ahora vete. Estoy ocupado.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //No atraigas problemas hablando asÃ­. Las cosas ya son suficientemente complicadas. Ahora vete. Estoy ocupado.
 	AI_StopProcessInfos (self);
 };
 
@@ -109,7 +109,7 @@ INSTANCE DIA_Haupttorwache_PICKPOCKET (C_INFO)
 	condition	= DIA_Haupttorwache_PICKPOCKET_Condition;
 	information	= DIA_Haupttorwache_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Robar su llave sería un juego de niños)";
+	description = "(Robar su llave serÃ­a un juego de niÃ±os)";
 };                       
 
 FUNC INT DIA_Haupttorwache_PICKPOCKET_Condition()

@@ -31,7 +31,7 @@ instance DIA_Sylvio_Hallo		(C_INFO)
 	condition	= DIA_Sylvio_Hallo_Condition;
 	information	= DIA_Sylvio_Hallo_Info;
 	permanent	= TRUE;
-	description	= "¿Qué pasa?";
+	description	= "Â¿QuÃ© pasa?";
 };
 
 func int DIA_Sylvio_Hallo_Condition ()
@@ -41,8 +41,8 @@ func int DIA_Sylvio_Hallo_Condition ()
 
 func void DIA_Sylvio_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Hallo_15_00"); //¿Cómo va todo?
-	AI_Output (self, other, "DIA_Sylvio_Hallo_09_01"); //¿Te he dado permiso para dirigirte a mí?
+	AI_Output (other, self, "DIA_Sylvio_Hallo_15_00"); //Â¿CÃ³mo va todo?
+	AI_Output (self, other, "DIA_Sylvio_Hallo_09_01"); //Â¿Te he dado permiso para dirigirte a mÃ­?
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -72,9 +72,9 @@ func int DIA_Sylvio_Thekla_Condition ()
 func void DIA_Sylvio_Thekla_Info ()
 {
 	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //Thekla tiene un problema contigo.
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //¿Y bien? ¿Cuál es el problema de la querida señora? ¿Y por qué no viene ella misma?
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //Â¿Y bien? Â¿CuÃ¡l es el problema de la querida seÃ±ora? Â¿Y por quÃ© no viene ella misma?
 	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //Lo sabes de sobra...
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(Cínicamente amistoso) ¿Por que no lo discutes un rato con mi amigo Bullco?
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(CÃ­nicamente amistoso) Â¿Por que no lo discutes un rato con mi amigo Bullco?
 
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -117,7 +117,7 @@ instance DIA_Sylvio_AboutLee (C_INFO)
 	condition	= DIA_Sylvio_AboutLee_Condition;
 	information	= DIA_Sylvio_AboutLee_Info;
 	permanent	= FALSE;
-	description	= "¿Qué opinas de Lee?";
+	description	= "Â¿QuÃ© opinas de Lee?";
 };
 
 func int DIA_Sylvio_AboutLee_Condition ()
@@ -127,8 +127,8 @@ func int DIA_Sylvio_AboutLee_Condition ()
 
 func void DIA_Sylvio_AboutLee_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //¿Qué opinas de Lee?
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(Con algo de ironía) Oh, es un buen guerrero. No me gustaría enfrentarme a él.
+	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Â¿QuÃ© opinas de Lee?
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(Con algo de ironÃ­a) Oh, es un buen guerrero. No me gustarÃ­a enfrentarme a Ã©l.
 	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(Con frialdad) A menos, claro, que no pudiera evitarlo.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
@@ -167,9 +167,9 @@ func int DIA_Sylvio_MenDefeated_Condition ()
 
 func void DIA_Sylvio_MenDefeated_Info ()
 {
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //¡Me he enterado de que vienes a buscar bronca con mis chicos!
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //Y, por lo que sé, eres uno de los protegidos de Lee.
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //¡Te lo advierto! Aquí no van a tardar en cambiar las cosas, ¡y entonces volveremos a hablar de esto!
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //Â¡Me he enterado de que vienes a buscar bronca con mis chicos!
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //Y, por lo que sÃ©, eres uno de los protegidos de Lee.
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //Â¡Te lo advierto! AquÃ­ no van a tardar en cambiar las cosas, Â¡y entonces volveremos a hablar de esto!
 	
 	Sylvio_MenDefeated = TRUE;
 	
@@ -186,7 +186,7 @@ instance DIA_Sylvio_Asshole (C_INFO)
 	condition	= DIA_Sylvio_Asshole_Condition;
 	information	= DIA_Sylvio_Asshole_Info;
 	permanent	= FALSE;
-	description	= "Oye, imbécil...";
+	description	= "Oye, imbÃ©cil...";
 };
 
 func int DIA_Sylvio_Asshole_Condition ()
@@ -199,8 +199,8 @@ func int DIA_Sylvio_Asshole_Condition ()
 
 func void DIA_Sylvio_Asshole_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Asshole_15_00"); //Oye, imbécil...
-	AI_Output (self, other, "DIA_Sylvio_Asshole_09_01"); //¿No creerás de verdad que me voy a medir en duelo contigo?
+	AI_Output (other, self, "DIA_Sylvio_Asshole_15_00"); //Oye, imbÃ©cil...
+	AI_Output (self, other, "DIA_Sylvio_Asshole_09_01"); //Â¿No creerÃ¡s de verdad que me voy a medir en duelo contigo?
 	AI_Output (self, other, "DIA_Sylvio_Asshole_09_02"); //Vuelve a meterte debajo de una roca.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;

@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Monty_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Monty_NW_Hi_Condition;
 	information = DIA_Addon_Monty_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "¿Y? De vuelta al trabajo, ¿no?";
+	description = "Â¿Y? De vuelta al trabajo, Â¿no?";
 };
 FUNC INT DIA_Addon_Monty_NW_Hi_Condition()
 {		
@@ -36,10 +36,10 @@ FUNC INT DIA_Addon_Monty_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Monty_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_00");//¿Y? De vuelta al trabajo, ¿no?
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//Ah, tío, no han hecho nada mientras yo estaba fuera. Ahora tengo que volver a organizar los planes de construcción.
+	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_00");//Â¿Y? De vuelta al trabajo, Â¿no?
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//Ah, tÃ­o, no han hecho nada mientras yo estaba fuera. Ahora tengo que volver a organizar los planes de construcciÃ³n.
 	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Vaya, entonces no te entretengo.
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//(ríe) Vale. Que tengas buen viaje.
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//(rÃ­e) Vale. Que tengas buen viaje.
 };
 // ************************************************************
 // 			  				PICK POCKET

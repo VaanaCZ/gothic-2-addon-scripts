@@ -46,14 +46,14 @@ func int DIA_Biff_DI_HALLO_Condition ()
 
 func void DIA_Biff_DI_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //¿Y bien? ¿Dónde están las riquezas que me prometiste?
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //Â¿Y bien? Â¿DÃ³nde estÃ¡n las riquezas que me prometiste?
 
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_ORKS)==FALSE)
 		{
-				AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_01"); //¿Qué te dije antes, en el mar?
+				AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_01"); //Â¿QuÃ© te dije antes, en el mar?
 		};
 
-	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //Por ahora, tu obligación es vigilar este barco.
+	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //Por ahora, tu obligaciÃ³n es vigilar este barco.
 	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //No me apetece volver nadando.
 	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //Mierda. Si llego a saberlo, me hubiera quedado en Khorinis.
 	AI_StopProcessInfos (self);
@@ -70,7 +70,7 @@ instance DIA_Biff_DI_perm		(C_INFO)
 	information	 = 	DIA_Biff_DI_perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Todo va bien a bordo?";
+	description	 = 	"Â¿Todo va bien a bordo?";
 };
 
 func int DIA_Biff_DI_perm_Condition ()
@@ -84,8 +84,8 @@ func int DIA_Biff_DI_perm_Condition ()
 
 func void DIA_Biff_DI_perm_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_DI_perm_15_00"); //¿Todo va bien a bordo?
-	AI_Output			(self, other, "DIA_Biff_DI_perm_07_01"); //(Molesto) Sí, sí. Todo está tranquilo.
+	AI_Output			(other, self, "DIA_Biff_DI_perm_15_00"); //Â¿Todo va bien a bordo?
+	AI_Output			(self, other, "DIA_Biff_DI_perm_07_01"); //(Molesto) SÃ­, sÃ­. Todo estÃ¡ tranquilo.
 	AI_StopProcessInfos (self);
 };
 
@@ -114,9 +114,9 @@ func int DIA_Biff_DI_ORKS_Condition ()
 
 func void DIA_Biff_DI_ORKS_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_00"); //¡Bestias asquerosas!
-	AI_Output			(other, self, "DIA_Biff_DI_ORKS_15_01"); //Maldita sea, ¿qué haces aquí arriba? Se supone que tienes que vigilar el barco.
-	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_02"); //No va a hundirse, tío.
+	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_00"); //Â¡Bestias asquerosas!
+	AI_Output			(other, self, "DIA_Biff_DI_ORKS_15_01"); //Maldita sea, Â¿quÃ© haces aquÃ­ arriba? Se supone que tienes que vigilar el barco.
+	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_02"); //No va a hundirse, tÃ­o.
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -145,10 +145,10 @@ func int DIA_Biff_DI_UNDEADDRGDEAD_Condition ()
 
 func void DIA_Biff_DI_UNDEADDRGDEAD_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //Entonces, ¿eso era todo?
-	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Por ahora sí.
-	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //¿Puedo...?
-	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //Por lo que a mí respecta, puedes saquear toda la isla.
+	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //Entonces, Â¿eso era todo?
+	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Por ahora sÃ­.
+	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //Â¿Puedo...?
+	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //Por lo que a mÃ­ respecta, puedes saquear toda la isla.
 	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //Genial.
 	
 	AI_StopProcessInfos (self);

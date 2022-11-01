@@ -10,11 +10,11 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_1 ()
 {
 	if (EnterOW_Kapitel1 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 		
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		// ------ Respawn ------
 
@@ -29,11 +29,11 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_2 ()
 {
 	if (EnterOW_Kapitel2 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 		
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 		//------------- Steht unten am Weg 1. Charakter in Oldworld---------------------------------------------------------
 	// ------ Respawn ------
 	
@@ -48,16 +48,16 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_3 ()
 {
 	if (EnterOW_Kapitel3 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 		
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 		
 		// ------ Tote NSCs -----
 		B_RemoveNpc		(PC_Mage_OW); //Milten ist in der NW!!!
 		B_RemoveNpc		(PC_Fighter_OW); //Milten ist in der NW!!!
 		B_RemoveNpc		(PC_ThiefOW); //Milten ist in der NW!!!
 		
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		// ------ SPAWN ------
 		
@@ -143,11 +143,11 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_3 ()
 	var int EnterOW_Kapitel4;
 FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 {
-	if (EnterOW_Kapitel4 == FALSE)	// Inserten der Drachenjäger wenn Drachenjagd eröffnet
+	if (EnterOW_Kapitel4 == FALSE)	// Inserten der DrachenjÃ¤ger wenn Drachenjagd erÃ¶ffnet
 		{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 		
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 		if ((Npc_IsDead(Engrom)) == FALSE)
 			{
 			B_StartOtherRoutine (Engrom,"Obsessed");
@@ -161,8 +161,8 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 		// ------ Tote NSCs ------ 
 		B_RemoveNpc		(STRF_1115_Geppert); 	//Joly: Platz machen im DJG Vorposten		
 		B_RemoveNpc		(STRF_1116_Kervo); 		
-		B_RemoveNpc		(VLK_4106_Dobar);		//Joly: Platz machen für neue DJG Schmiede		
-		B_RemoveNpc		(VLK_4107_Parlaf);		//Joly: Platz machen für neue DJG Schmiede		
+		B_RemoveNpc		(VLK_4106_Dobar);		//Joly: Platz machen fÃ¼r neue DJG Schmiede		
+		B_RemoveNpc		(VLK_4107_Parlaf);		//Joly: Platz machen fÃ¼r neue DJG Schmiede		
 
 		//Sengrath
 		//--------
@@ -178,7 +178,7 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 				B_KillNpc     	(Sengrath);
 			};
 
-		//Tote Drachenjäger
+		//Tote DrachenjÃ¤ger
 		//-----------------
 		Wld_InsertNpc		(DJG_730_ToterDrachenjaeger, "OC1"); B_KillNpc (DJG_730_ToterDrachenjaeger);
 		Wld_InsertNpc		(DJG_731_ToterDrachenjaeger, "OC1"); B_KillNpc (DJG_731_ToterDrachenjaeger);
@@ -192,7 +192,7 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 		Wld_InsertNpc		(DJG_739_ToterDrachenjaeger, "OC1"); B_KillNpc (DJG_739_ToterDrachenjaeger);
 		Wld_InsertNpc		(DJG_740_ToterDrachenjaeger, "OC1"); B_KillNpc (DJG_740_ToterDrachenjaeger);	//Joly: hat schwarze Perle in der Tasche
 		
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 		Npc_ExchangeRoutine	(Brutus,"Meatbugs");  
 		Wld_InsertNpc		(Meatbug_Brutus1,"OC_FOLTER_SHARP");	
 		Wld_InsertNpc		(Meatbug_Brutus2,"OC_FOLTER_SHARP");	
@@ -411,11 +411,11 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 		Wld_InsertNpc		(Snapper,"SPAWN_OW_WARAN_OC_PSI3");
 		Wld_InsertNpc		(Snapper,"SPAWN_OW_WARAN_OC_PSI3");
 
-	// Kapitel2 Canyon "Gilbert´s Höhle"
+	// Kapitel2 Canyon "GilbertÂ´s HÃ¶hle"
 		
 		Wld_InsertNpc	(OrcWarrior_Roam,"FP_ROAM_OW_SNAPPER_OW_ORC5"); 
 		Wld_InsertNpc	(OrcShaman_Sit,"FP_ROAM_OW_SNAPPER_OW_ORC_MOVE");
-		Wld_InsertNpc	(OrcShaman_Sit,"LOCATION_16_IN");	//Gilberts ehem. Höhle
+		Wld_InsertNpc	(OrcShaman_Sit,"LOCATION_16_IN");	//Gilberts ehem. HÃ¶hle
 	
 		Wld_InsertNpc	(OrcWarrior_Roam,"FP_ROAM_OW_SNAPPER_OW_ORC3");
 		Wld_InsertNpc	(OrcWarrior_Roam,"FP_ROAM_OW_SNAPPER_OW_ORC3");
@@ -445,7 +445,7 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 		Wld_InsertNpc	(Warg,"CASTLE_4");
 		Wld_InsertNpc	(OrcWarrior_Roam,"OW_PATH_109");
 		
-		// Nähe alter DT
+		// NÃ¤he alter DT
 		Wld_InsertNpc	(DragonSnapper,"FP_ROAM_OW_SNAPPER_02_06");
 		Wld_InsertNpc	(DragonSnapper,"FP_ROAM_OW_SNAPPER_02_11");
 		Wld_InsertNpc	(DragonSnapper,"FP_ROAM_OW_SNAPPER_02_05");
@@ -470,7 +470,7 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 		
 		Wld_InsertNpc	(DMT_DementorAmbient,"OW_PATH_093");
 		
-		//Nähe Newmine
+		//NÃ¤he Newmine
 		
 		Wld_InsertNpc	(Warg,"OW_PATH_195");
 		Wld_InsertNpc	(Warg,"OW_PATH_195");
@@ -568,7 +568,7 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 
 		Log_CreateTopic (TOPIC_Dragonhunter, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Dragonhunter, LOG_RUNNING);
-		B_LogEntry (TOPIC_Dragonhunter,"La caza del gran dragón ha empezado y atraerá al Valle de las Minas muchos aspirantes de aventureros. Espero que no se interpongan en mi camino."); 
+		B_LogEntry (TOPIC_Dragonhunter,"La caza del gran dragÃ³n ha empezado y atraerÃ¡ al Valle de las Minas muchos aspirantes de aventureros. Espero que no se interpongan en mi camino."); 
 		
 		
 		IntroduceChapter (KapWechsel_4,KapWechsel_4_Text,"chapter4.tga","chapter_01.wav", 6000);
@@ -587,7 +587,7 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_4 ()
 			else if (Talbin_FollowsThroughPass == LOG_SUCCESS)
 				{
 					B_RemoveNpc 	(VLK_4130_Talbin);
-					Talbin_FollowsThroughPass = LOG_FAILED;	//Joly: absoluter Schluß
+					Talbin_FollowsThroughPass = LOG_FAILED;	//Joly: absoluter SchluÃŸ
 				};
 };
 
@@ -599,11 +599,11 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_5 ()
 {
 	if  (EnterOW_Kapitel5 == FALSE)
 	 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 		
 		// ------ Respawn ------
 			
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 		VLK_4143_HaupttorWache.flags = 0;									
 		CreateInvItems (VLK_4143_HaupttorWache, ITKE_OC_MAINGATE_MIS, 1);
 
@@ -611,7 +611,7 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_5 ()
 		{
 			CreateInvItems (VLK_4100_Brutus, ITWR_DementorObsessionBook_MIS, 1 );	
 		};
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		
 		if 	(TschuessBilgot == TRUE) // Bilgots (NewMine) Flucht aus der OW 
@@ -636,11 +636,11 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_6 ()
 {
 	if (EnterOW_Kapitel6 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 		
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		// ------ Respawn ------
 
@@ -648,7 +648,7 @@ FUNC VOID B_ENTER_OLDWORLD_Kapitel_6 ()
 	};
 };
 // ******************************************************************************************************************************************************************
-// B_ENTER_OLDWORLD			 (wird über INIT_OLDWORLD in der OW beim Betreten aufgerufen (Beispiel: für DJG, die erst nach dem 1.Betreten der OW eingesetzt werden))
+// B_ENTER_OLDWORLD			 (wird Ã¼ber INIT_OLDWORLD in der OW beim Betreten aufgerufen (Beispiel: fÃ¼r DJG, die erst nach dem 1.Betreten der OW eingesetzt werden))
 // ******************************************************************************************************************************************************************
 
 FUNC VOID B_ENTER_OLDWORLD ()	

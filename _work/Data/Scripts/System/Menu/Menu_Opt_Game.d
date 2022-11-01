@@ -11,7 +11,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[1]		= "MENUITEM_GAME_SUB_TITLES";
 	items[2]		= "MENUITEM_GAME_SUB_TITLES_CHOICE";
 	
-//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch über die ini tunebar
+//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch Ã¼ber die ini tunebar
 //	items[4]		= "MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE";
 
 	items[3]		= "MENUITEM_GAME_FIGHTFOCUS";
@@ -29,7 +29,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[11]		= "MENUITEM_MSENSITIVITY";
 	items[12]		= "MENUITEM_MSENSITIVITY_SLIDER";
 	
-	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch über die ini tunebar
+	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch Ã¼ber die ini tunebar
 	//items[12]		= "MENUITEM_GAME_BLOOD_CHOICE";
 	
 	items[13]		= "MENUITEM_GAME_OLDCONTROLS";
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_GAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_SUB_TITLES(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Subtítulos";
-	text[1]		= 	"Activar y desactivar los subtítulos durante los diálogos"; // Kommentar
+	text[0]		=	"SubtÃ­tulos";
+	text[1]		= 	"Activar y desactivar los subtÃ­tulos durante los diÃ¡logos"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*0;
 	dimx		=	4000;	dimy		=	750;
@@ -76,7 +76,7 @@ instance MENUITEM_GAME_SUB_TITLES_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sí";
+	text[0]		= 	"no|sÃ­";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_SOUND_DY*0 + MENU_CHOICE_YPLUS;
@@ -112,7 +112,7 @@ instance MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"no|sí";
+	text[0]		= 	"no|sÃ­";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_SOUND_DY*1 + MENU_CHOICE_YPLUS;
@@ -176,7 +176,7 @@ instance MENUITEM_GAME_INTERACTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"no|sí";
+	text[0]		= 	"no|sÃ­";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_SOUND_DY*2 + MENU_CHOICE_YPLUS;
@@ -200,8 +200,8 @@ instance MENUITEM_GAME_INTERACTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_LOOKAROUND_INVERSE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Invertir cámara";
-	text[1]		= 	"Activar y desactivar el movimiento invertido de la cámara"; // Kommentar
+	text[0]		=	"Invertir cÃ¡mara";
+	text[1]		= 	"Activar y desactivar el movimiento invertido de la cÃ¡mara"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
 	dimx		=	4000;	dimy		=	750;
@@ -215,7 +215,7 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"no|sí";
+	text[0]		= 	"no|sÃ­";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_SOUND_DY*3 + MENU_CHOICE_YPLUS;
@@ -236,8 +236,8 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_M(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ratón";
-	text[1]		= 	"Activar y desactivar controles del ratón"; // Kommentar
+	text[0]		=	"ratÃ³n";
+	text[1]		= 	"Activar y desactivar controles del ratÃ³n"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*4;
 	dimx		=	4000;	dimy		=	750;
@@ -305,7 +305,7 @@ instance MENUITEM_MSENSITIVITY_SLIDER(C_MENU_ITEM_DEF)
 
 
 //
-// Bluteffekte deaktivert in Gothic 2 (nur noch über die INI tunebar)
+// Bluteffekte deaktivert in Gothic 2 (nur noch Ã¼ber die INI tunebar)
 //
 /*
 INSTANCE MENUITEM_GAME_BLOOD(C_MENU_ITEM_DEF)
@@ -380,7 +380,7 @@ INSTANCE MENUITEM_GAME_OLDCONTROLS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atrás";
+	text[0]		=	"AtrÃ¡s";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

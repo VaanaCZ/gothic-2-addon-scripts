@@ -73,18 +73,18 @@ func void DIA_Addon_BDT_10018_Torwache_FirstWarn_Info()
 	
 	if ( BDT_100018_Tells == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_00"); //°Eh, tranquilo! °No vas a entrar aquÌ, asÌ que largo!
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_00"); //¬°Eh, tranquilo! ¬°No vas a entrar aqu√≠, as√≠ que largo!
 		AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_FirstWarn_15_01"); //Aparta de mi camino, tengo que ver a Raven.
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_02"); //Nadie entra en este lugar. ”rdenes directas del propio Raven.
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_02"); //Nadie entra en este lugar. √ìrdenes directas del propio Raven.
 		BDT_100018_Tells = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_Tempel,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Tempel,LOG_RUNNING);
-		B_LogEntry (Topic_Addon_Tempel,"El centinela de la puerta del templo no me deja pasar. TendrÈ que encontrar el modo de entrar.");
+		B_LogEntry (Topic_Addon_Tempel,"El centinela de la puerta del templo no me deja pasar. Tendr√© que encontrar el modo de entrar.");
 	}
 	else
 	{	
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_03"); //øT˙ de nuevo? °Me vas a hacer perder la paciencia!
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_03"); //¬øT√∫ de nuevo? ¬°Me vas a hacer perder la paciencia!
 		//AI_StopProcessInfos(self);
 	};			
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,BDT_10018_Checkpoint);
@@ -117,7 +117,7 @@ FUNC INT DIA_Addon_BDT_10018_Torwache_SecondWarn_Condition()
 
 func void DIA_Addon_BDT_10018_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_SecondWarn_04_00"); //°Un paso m·s y ser· el ˙ltimo que des!
+	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_SecondWarn_04_00"); //¬°Un paso m√°s y ser√° el √∫ltimo que des!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_10018_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -155,7 +155,7 @@ func void DIA_Addon_BDT_10018_Torwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_Attack_04_00"); //°Por Raven!
+	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_Attack_04_00"); //¬°Por Raven!
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -179,9 +179,9 @@ FUNC INT DIA_Addon_10018_Torwache_Hi_Condition()
 FUNC VOID DIA_Addon_10018_Torwache_Hi_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Hi_15_00");//Es imprescindible que lo vea.
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Hi_04_01");//No, no lo es. SÛlo Bloodwyn tiene permiso para estar aquÌ.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Hi_04_01");//No, no lo es. S√≥lo Bloodwyn tiene permiso para estar aqu√≠.
 	
-	B_LogEntry (Topic_Addon_Tempel,"SÛlo Bloodwyn puede quedarse en el templo. Quiz· pueda pasar con su mediaciÛn.");
+	B_LogEntry (Topic_Addon_Tempel,"S√≥lo Bloodwyn puede quedarse en el templo. Quiz√° pueda pasar con su mediaci√≥n.");
 };
 //----------------------------------------------------------------------
 //	Info Bloodwyn
@@ -193,7 +193,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Bloodwyn   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Bloodwyn_Condition;
 	information = DIA_Addon_10018_Torwache_Bloodwyn_Info;
 	permanent   = FALSE;
-	description = "øBloodwyn? øPero no estaba muerto?";
+	description = "¬øBloodwyn? ¬øPero no estaba muerto?";
 };
 FUNC INT DIA_Addon_10018_Torwache_Bloodwyn_Condition()
 {	
@@ -205,8 +205,8 @@ FUNC INT DIA_Addon_10018_Torwache_Bloodwyn_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Bloodwyn_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_15_00");//øBloodwyn? øPero no estaba muerto?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_04_01");//Est· m·s fuerte que nunca. Y si se entera de que alguien anda causando problemas aquÌ fuera, te har· picadillo.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_15_00");//¬øBloodwyn? ¬øPero no estaba muerto?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_04_01");//Est√° m√°s fuerte que nunca. Y si se entera de que alguien anda causando problemas aqu√≠ fuera, te har√° picadillo.
 };
 //----------------------------------------------------------------------
 //	Info Bribe
@@ -218,7 +218,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Bribe   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Bribe_Condition;
 	information = DIA_Addon_10018_Torwache_Bribe_Info;
 	permanent   = FALSE;
-	description = "Te darÈ 1000 monedas de oro si me dejas pasar.";
+	description = "Te dar√© 1000 monedas de oro si me dejas pasar.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Bribe_Condition()
 {	
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Drin   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Drin_Condition;
 	information = DIA_Addon_10018_Torwache_Drin_Info;
 	permanent   = FALSE;
-	description = "øBloodwyn est· dentro? Que salga, entonces.";
+	description = "¬øBloodwyn est√° dentro? Que salga, entonces.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Drin_Condition()
 {	
@@ -255,14 +255,14 @@ FUNC INT DIA_Addon_10018_Torwache_Drin_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Drin_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Drin_15_00");//øBloodwyn est· dentro? Pues s·calo.
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_01");//°Ja! øCrees de verdad que pienso hacerlo?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_02");//Puede que ahora seas alguien importante en el campamento, pero tu poder termina JUSTO AQUÕ. øEntendido?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_03");//Ve a la mina a extraer oro o lo que quieras, °pero largo de mi vista!
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Drin_15_00");//¬øBloodwyn est√° dentro? Pues s√°calo.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_01");//¬°Ja! ¬øCrees de verdad que pienso hacerlo?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_02");//Puede que ahora seas alguien importante en el campamento, pero tu poder termina JUSTO AQU√ç. ¬øEntendido?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_03");//Ve a la mina a extraer oro o lo que quieras, ¬°pero largo de mi vista!
 	
 	MIS_BloodwynRaus = LOG_RUNNING;
 
-	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn est· en el templo, pero yo no pienso seguir adelante. Quiz· deberÌa inspeccionar la mina.");
+	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn est√° en el templo, pero yo no pienso seguir adelante. Quiz√° deber√≠a inspeccionar la mina.");
 };
 //----------------------------------------------------------------------
 //	Info kopf
@@ -274,7 +274,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_kopf   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_kopf_Condition;
 	information = DIA_Addon_10018_Torwache_kopf_Info;
 	permanent   = FALSE;
-	description = "(enseÒa la cabeza de Bloodwyn)";
+	description = "(ense√±a la cabeza de Bloodwyn)";
 };
 FUNC INT DIA_Addon_10018_Torwache_kopf_Condition()
 {	
@@ -285,9 +285,9 @@ FUNC INT DIA_Addon_10018_Torwache_kopf_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_kopf_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_kopf_15_00");//°Toma! ø°A˙n quieres detenerme!?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_01");//øEsÖ esÖ Bloodwyn? Vaya, es
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_02");//UhÖsÌ, uh, no. Digooo... uh... Puedes entrar...
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_kopf_15_00");//¬°Toma! ¬ø¬°A√∫n quieres detenerme!?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_01");//¬øEs‚Ä¶ es‚Ä¶ Bloodwyn? Vaya, es
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_02");//Uh‚Ä¶s√≠, uh, no. Digooo... uh... Puedes entrar...
 	
 	MIS_BloodwynRaus = LOG_SUCCESS;
 	

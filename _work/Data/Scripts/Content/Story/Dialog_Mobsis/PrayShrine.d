@@ -144,7 +144,7 @@ FUNC VOID PC_PrayShrine_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 }; 
 //*******************************************************
-//Für das Heil der Paladine beten
+//FÃ¼r das Heil der Paladine beten
 //*******************************************************
 INSTANCE PC_PrayShrine_Paladine (C_Info)
 {
@@ -153,7 +153,7 @@ INSTANCE PC_PrayShrine_Paladine (C_Info)
 	condition		= PC_PrayShrine_Paladine_Condition;
 	information		= PC_PrayShrine_Paladine_Info;
 	permanent		= FALSE;
-	description		= "Rezar una oración por los paladines."; 
+	description		= "Rezar una oraciÃ³n por los paladines."; 
 };
 
 FUNC INT PC_PrayShrine_Paladine_Condition ()

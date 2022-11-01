@@ -2,8 +2,8 @@
 // C_DropUnconscious
 // -----------------
 // self und other hier vom Programm initialisiert:
-// self ist immer der NPC, für den diese Funktion den Check macht
-// other ist immer der Täter (der den Treffer gelandet hat)
+// self ist immer der NPC, fÃ¼r den diese Funktion den Check macht
+// other ist immer der TÃ¤ter (der den Treffer gelandet hat)
 // **************************************************************
 
 func int C_DropUnconscious()
@@ -14,7 +14,7 @@ func int C_DropUnconscious()
 	//	return TRUE;
 	//};
 	
-	// ------ Folgende NSCs töten immer ------
+	// ------ Folgende NSCs tÃ¶ten immer ------
 	if (other.guild > GIL_SEPERATOR_HUM)
 	|| (other.guild == GIL_DMT)
 	|| (other.guild == GIL_BDT)
@@ -23,7 +23,7 @@ func int C_DropUnconscious()
 		return FALSE;
 	};
 		
-	// ------ nur echte Humans können Unconscious werden ------
+	// ------ nur echte Humans kÃ¶nnen Unconscious werden ------
 	if (self.guild < GIL_SEPERATOR_HUM)
 	{
 		if (self.guild != GIL_DMT)

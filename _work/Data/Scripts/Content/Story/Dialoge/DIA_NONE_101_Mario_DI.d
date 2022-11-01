@@ -33,7 +33,7 @@ INSTANCE DIA_NONE_101_MARIO_DI_Job (C_INFO)
 	information = DIA_NONE_101_MARIO_DI_Job_Info;
 	permanent   = TRUE;
 
-	description	= "Ésta es tu oportunidad de demostrar tus aptitudes marciales.";
+	description	= "Ã‰sta es tu oportunidad de demostrar tus aptitudes marciales.";
 };
 
 FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
@@ -47,10 +47,10 @@ FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_Job_Info()
 {
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //Ésta es tu oportunidad de demostrar tus aptitudes marciales.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //Ã‰sta es tu oportunidad de demostrar tus aptitudes marciales.
 	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_01"); //Poco a poco. Todo a su tiempo.
 	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_02"); //Um. No me esperaba menos de ti.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_03"); //Ya verás.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_03"); //Ya verÃ¡s.
 };
 
 //*********************************************************************
@@ -75,10 +75,10 @@ FUNC INT DIA_NONE_101_MARIO_DI_ambush_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_ambush_Info()
 {
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //Acércate. Amigo mío, enséñame lo que sabes hacer.
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //¿Qué quieres decir con eso?
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //AcÃ©rcate. Amigo mÃ­o, ensÃ©Ã±ame lo que sabes hacer.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Â¿QuÃ© quieres decir con eso?
 	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //Es muy sencillo. El amo se ha hartado de ti.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //Debería haberte matado antes, pero mis amigos y yo corregiremos ese error ahora mismo.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //DeberÃ­a haberte matado antes, pero mis amigos y yo corregiremos ese error ahora mismo.
 	
 	Info_ClearChoices	(DIA_NONE_101_MARIO_DI_ambush);
 	Info_AddChoice	(DIA_NONE_101_MARIO_DI_ambush, DIALOG_ENDE, DIA_NONE_101_MARIO_DI_ambush_ambush );

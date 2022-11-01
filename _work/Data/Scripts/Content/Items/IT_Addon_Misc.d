@@ -28,7 +28,7 @@ INSTANCE ItMi_GoldNugget_Addon(C_Item)
 	
 };
 //---------------------------------------------------------------------
-//	Weiße Perle
+//	WeiÃŸe Perle
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_WhitePearl (C_Item)
 {
@@ -49,7 +49,7 @@ INSTANCE ItMi_Addon_WhitePearl (C_Item)
 	INV_ZBIAS			= INVCAM_ENTF_MISC_STANDARD;
 };
 //---------------------------------------------------------------------
-//	Grüner Novize
+//	GrÃ¼ner Novize
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Joint_01(C_Item)
 {
@@ -93,7 +93,7 @@ func void Use_Addon_Joint_01()
 //****************************************************************************
 INSTANCE ItMi_BaltramPaket(C_Item)
 {
-	name 				=	"Envío de Baltram";
+	name 				=	"EnvÃ­o de Baltram";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -112,7 +112,7 @@ INSTANCE ItMi_BaltramPaket(C_Item)
 };
 
 //****************************************************************************
-//				Baltrams Lieferung für Skip
+//				Baltrams Lieferung fÃ¼r Skip
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
@@ -148,7 +148,7 @@ INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[2]				= 	"El nombre 'Bromor' está";
+	TEXT[2]				= 	"El nombre 'Bromor' estÃ¡";
 	TEXT[3]				=	"grabado en el fondo";
 	TEXT[4]				=	"del bol con un objeto afilado.";
 	TEXT[5]				= 	NAME_Value;	
@@ -186,7 +186,7 @@ FUNC VOID Use_CavalornsBeutel ()
 		SC_OpenedCavalornsBeutel = TRUE;
 		Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CavalornTheHut,"Encontré una bolsa con un trozo de mineral cerca de la cabaña de Cavalorn en el Valle de las Minas. Ese viejo bandido de Cavalorn debe de haberla olvidado aquí.");
+		B_LogEntry (TOPIC_Addon_CavalornTheHut,"EncontrÃ© una bolsa con un trozo de mineral cerca de la cabaÃ±a de Cavalorn en el Valle de las Minas. Ese viejo bandido de Cavalorn debe de haberla olvidado aquÃ­.");
 };
 
 //**************************************
@@ -413,7 +413,7 @@ func void Use_Harfe()
 
 INSTANCE ItMi_IELaute(C_Item)
 {
-	name 				=	"Laúd";
+	name 				=	"LaÃºd";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -452,9 +452,9 @@ INSTANCE ItMi_Addon_Lennar_Paket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Hay ganzúas dentro";
+	TEXT[2]				= 	"Hay ganzÃºas dentro";
 	TEXT[3]				=	"";
-	TEXT[4]				=	"Muchas ganzúas";
+	TEXT[4]				=	"Muchas ganzÃºas";
 	
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	value;

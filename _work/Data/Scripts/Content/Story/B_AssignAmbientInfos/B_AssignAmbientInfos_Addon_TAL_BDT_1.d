@@ -28,7 +28,7 @@ instance DIA_Addon_TAL_BDT_1_Hi(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Hi_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Hi_Info;
 	permanent	= TRUE;
-	description = "°Wie sieht's aus?   °<<FTSTAMP005737017_CINFODESCRIPTION>>";
+	description = "Â°Wie sieht's aus?   Â°<<FTSTAMP005737017_CINFODESCRIPTION>>";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Hi_Condition()
@@ -38,15 +38,15 @@ FUNC INT DIA_Addon_TAL_BDT_1_Hi_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00");//°Wie sieht's aus?   °<<FTSTAMP005738060_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//°Ich warte, bis sie einen Neuen anfordern und ich an die Reihe komme.   °<<FTSTAMP005739060_AIOUTPUT>>
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00");//Â°Wie sieht's aus?   Â°<<FTSTAMP005738060_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//Â°Ich warte, bis sie einen Neuen anfordern und ich an die Reihe komme.   Â°<<FTSTAMP005739060_AIOUTPUT>>
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//°Von allen Leuten, die hier draußen sind, kommt nur Franco rein.   °<<FTSTAMP005740061_AIOUTPUT>>
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Â°Von allen Leuten, die hier drauÃŸen sind, kommt nur Franco rein.   Â°<<FTSTAMP005740061_AIOUTPUT>>
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//°Jetzt, da Franco tot ist, habe ich hoffentlich bessere Chancen.   °<<FTSTAMP005741061_AIOUTPUT>>
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//Â°Jetzt, da Franco tot ist, habe ich hoffentlich bessere Chancen.   Â°<<FTSTAMP005741061_AIOUTPUT>>
 	};
 };
 // *************************************************************************
@@ -58,7 +58,7 @@ instance DIA_Addon_TAL_BDT_1_Lager(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Lager_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Lager_Info;
 	permanent	= TRUE;
-	description = "°Was kannst du mir über das Lager erzählen?   °<<FTSTAMP005742017_CINFODESCRIPTION>>";
+	description = "Â°Was kannst du mir Ã¼ber das Lager erzÃ¤hlen?   Â°<<FTSTAMP005742017_CINFODESCRIPTION>>";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
@@ -68,9 +68,9 @@ FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//°Was kannst du mir über das Lager erzählen?   °<<FTSTAMP005743063_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//°Pass bloß auf, mit wem du dich anlegst! Wenn du grundlos einen Kampf anfängst, hast du schnell alle gegen dich!   °<<FTSTAMP005744063_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//°Die meisten haben Angst um ihr Gold und einige der Jungs beschützen sich untereinander.   °<<FTSTAMP005745063_AIOUTPUT>>
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//Â°Was kannst du mir Ã¼ber das Lager erzÃ¤hlen?   Â°<<FTSTAMP005743063_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//Â°Pass bloÃŸ auf, mit wem du dich anlegst! Wenn du grundlos einen Kampf anfÃ¤ngst, hast du schnell alle gegen dich!   Â°<<FTSTAMP005744063_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//Â°Die meisten haben Angst um ihr Gold und einige der Jungs beschÃ¼tzen sich untereinander.   Â°<<FTSTAMP005745063_AIOUTPUT>>
 };
 // *************************************************************************
 // 							News
@@ -81,7 +81,7 @@ instance DIA_Addon_TAL_BDT_1_Raven(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Raven_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Raven_Info;
 	permanent	= TRUE;
-	description = "°Was weißt du über Raven?   °<<FTSTAMP005746017_CINFODESCRIPTION>>";
+	description = "Â°Was weiÃŸt du Ã¼ber Raven?   Â°<<FTSTAMP005746017_CINFODESCRIPTION>>";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
@@ -91,10 +91,10 @@ FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Raven_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//°Was weißt du über Raven?   °<<FTSTAMP005747063_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//°Er ist der Typ, der hier mit seinen Jungs als erster aufgetaucht ist.   °<<FTSTAMP005748063_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//°Er der Anführer des Lagers. Mit ihm ist nicht gut Kirschen essen, glaube ich.   °<<FTSTAMP005749063_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//°Einmal haben sie fünf neue Leute angefordert, weil er seine Wut an seinen eigenen Leuten ausgelassen hat.   °<<FTSTAMP005750063_AIOUTPUT>>
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Â°Was weiÃŸt du Ã¼ber Raven?   Â°<<FTSTAMP005747063_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//Â°Er ist der Typ, der hier mit seinen Jungs als erster aufgetaucht ist.   Â°<<FTSTAMP005748063_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//Â°Er der AnfÃ¼hrer des Lagers. Mit ihm ist nicht gut Kirschen essen, glaube ich.   Â°<<FTSTAMP005749063_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Â°Einmal haben sie fÃ¼nf neue Leute angefordert, weil er seine Wut an seinen eigenen Leuten ausgelassen hat.   Â°<<FTSTAMP005750063_AIOUTPUT>>
 };
 FUNC VOID B_AssignAmbientInfos_Addon_TAL_BDT_1(var C_NPC slf)
 {

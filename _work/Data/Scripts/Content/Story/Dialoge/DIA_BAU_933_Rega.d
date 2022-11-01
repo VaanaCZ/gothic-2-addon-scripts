@@ -31,7 +31,7 @@ instance DIA_Rega_HALLO		(C_INFO)
 	condition	 = 	DIA_Rega_HALLO_Condition;
 	information	 = 	DIA_Rega_HALLO_Info;
 
-	description	 = 	"¿Qué tal va todo?";
+	description	 = 	"Â¿QuÃ© tal va todo?";
 };
 
 func int DIA_Rega_HALLO_Condition ()
@@ -41,34 +41,34 @@ func int DIA_Rega_HALLO_Condition ()
 
 func void DIA_Rega_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_HALLO_15_00"); //¿Cómo va todo?
+	AI_Output			(other, self, "DIA_Rega_HALLO_15_00"); //Â¿CÃ³mo va todo?
 	
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //Eres de la ciudad, ¿verdad?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //Eres de la ciudad, Â¿verdad?
 		}
 	else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_02"); //Eres uno de los mercenarios de Onar, ¿verdad?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_02"); //Eres uno de los mercenarios de Onar, Â¿verdad?
 		}
 	else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_03"); //Eres mago, ¿verdad?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_03"); //Eres mago, Â¿verdad?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_04"); //No eres uno de los nuestros, ¿eh?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_04"); //No eres uno de los nuestros, Â¿eh?
 
 		};
 		
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //Yo en tu lugar me largaría de aquí.
-	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //¿Por qué?
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //Antes esto no era un paraíso, pero al menos nos dejaban en paz si hacíamos nuestro trabajo para Sekob.
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Pero últimamente la situación es insoportable.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //Yo en tu lugar me largarÃ­a de aquÃ­.
+	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //Â¿Por quÃ©?
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //Antes esto no era un paraÃ­so, pero al menos nos dejaban en paz si hacÃ­amos nuestro trabajo para Sekob.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Pero Ãºltimamente la situaciÃ³n es insoportable.
 	if (Kapitel < 3)
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //Hay bandidos por todas partes, los incursores de campo destruyen las cosechas y el terrateniente se está acostumbrando a comportarse de manera cruel.
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //Hay bandidos por todas partes, los incursores de campo destruyen las cosechas y el terrateniente se estÃ¡ acostumbrando a comportarse de manera cruel.
 		};
 };
 
@@ -83,7 +83,7 @@ instance DIA_Rega_ONAR		(C_INFO)
 	condition	 = 	DIA_Rega_ONAR_Condition;
 	information	 = 	DIA_Rega_ONAR_Info;
 
-	description	 = 	"¿Tienes miedo al terrateniente?";
+	description	 = 	"Â¿Tienes miedo al terrateniente?";
 };
 
 func int DIA_Rega_ONAR_Condition ()
@@ -98,8 +98,8 @@ func int DIA_Rega_ONAR_Condition ()
 
 func void DIA_Rega_ONAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //¿Tienes miedo al terrateniente?
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Desde luego. Si al terrateniente no la gusta la cara de alguien, envía a los mercenarios y no se le vuelve a ver.
+	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //Â¿Tienes miedo al terrateniente?
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Desde luego. Si al terrateniente no la gusta la cara de alguien, envÃ­a a los mercenarios y no se le vuelve a ver.
 	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //Por eso preferimos mantener la boca cerrada.
 
 };
@@ -116,7 +116,7 @@ instance DIA_Rega_SLD		(C_INFO)
 	condition	 = 	DIA_Rega_SLD_Condition;
 	information	 = 	DIA_Rega_SLD_Info;
 
-	description	 = 	"¿No pueden ocuparse los mercenarios de los incursores de campo?";
+	description	 = 	"Â¿No pueden ocuparse los mercenarios de los incursores de campo?";
 };
 
 func int DIA_Rega_SLD_Condition ()
@@ -131,8 +131,8 @@ func int DIA_Rega_SLD_Condition ()
 
 func void DIA_Rega_SLD_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //¿No pueden ocuparse los mercenarios de los incursores de campo?
-	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //No sé para qué les pagan, pero desde luego no es para ayudar a la plebe.
+	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //Â¿No pueden ocuparse los mercenarios de los incursores de campo?
+	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //No sÃ© para quÃ© les pagan, pero desde luego no es para ayudar a la plebe.
 	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //El problema de los incursores de campo queda en manos de los granjeros que arriendan sus tierras.
 
 };
@@ -148,7 +148,7 @@ instance DIA_Rega_BANDITEN		(C_INFO)
 	condition	 = 	DIA_Rega_BANDITEN_Condition;
 	information	 = 	DIA_Rega_BANDITEN_Info;
 
-	description	 = 	"¿Cómo os protegéis de los bandidos?";
+	description	 = 	"Â¿CÃ³mo os protegÃ©is de los bandidos?";
 };
 
 func int DIA_Rega_BANDITEN_Condition ()
@@ -161,8 +161,8 @@ func int DIA_Rega_BANDITEN_Condition ()
 
 func void DIA_Rega_BANDITEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BANDITEN_15_00"); //¿Cómo os protegéis de los bandidos?
-	AI_Output			(self, other, "DIA_Rega_BANDITEN_17_01"); //No lo hacemos. Huimos. ¿Qué otra cosa podríamos hacer?
+	AI_Output			(other, self, "DIA_Rega_BANDITEN_15_00"); //Â¿CÃ³mo os protegÃ©is de los bandidos?
+	AI_Output			(self, other, "DIA_Rega_BANDITEN_17_01"); //No lo hacemos. Huimos. Â¿QuÃ© otra cosa podrÃ­amos hacer?
 
 };
 
@@ -193,8 +193,8 @@ func int DIA_Rega_BRONKO_Condition ()
 
 func void DIA_Rega_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //¿Quién es ese tipo antipático?
-	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //No me malinterpretes, pero no quiero meterme en líos. Pregúntale a otro.
+	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //Â¿QuiÃ©n es ese tipo antipÃ¡tico?
+	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //No me malinterpretes, pero no quiero meterme en lÃ­os. PregÃºntale a otro.
 
 	AI_StopProcessInfos (self);
 };
@@ -211,7 +211,7 @@ instance DIA_Rega_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Rega_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¡Ánimo!";
+	description	 = 	"Â¡Ãnimo!";
 };
 
 func int DIA_Rega_PERMKAP1_Condition ()
@@ -224,23 +224,23 @@ func int DIA_Rega_PERMKAP1_Condition ()
 
 func void DIA_Rega_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_PERMKAP1_15_00"); //¡Ánimo!
+	AI_Output			(other, self, "DIA_Rega_PERMKAP1_15_00"); //Â¡Ãnimo!
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //Para ti es fácil decirlo. Al fin y al cabo, vives en la ciudad.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //Para ti es fÃ¡cil decirlo. Al fin y al cabo, vives en la ciudad.
 		}
 		else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Si los mercenarios no fuerais tan insoportables, lo demás no sería tan malo.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Si los mercenarios no fuerais tan insoportables, lo demÃ¡s no serÃ­a tan malo.
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //Cada vez hay menos magos. Espero que no seas el último. Te necesitamos más que nunca.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //Cada vez hay menos magos. Espero que no seas el Ãºltimo. Te necesitamos mÃ¡s que nunca.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //Eso no es tan fácil si trabajas para Sekob el negrero.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //Eso no es tan fÃ¡cil si trabajas para Sekob el negrero.
 		};
 	AI_StopProcessInfos (self);
 };

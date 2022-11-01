@@ -20,7 +20,7 @@ instance VLK_413_Bosper (Npc_Default)
 	EquipItem			(self, ItRw_SLD_Bow);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 
 		
 	// ------ visuals ------																			

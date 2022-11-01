@@ -37,14 +37,14 @@ func int DIA_PAL_262_GREET_Condition ()
 };
 func void DIA_PAL_262_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_PAL_262_GREET_10_00"); //Alto, ¿quién eres?
-	AI_Output (other, self, "DIA_PAL_262_GREET_15_01"); //Lo que importa es de dónde vengo. He venido por el paso.
-	AI_Output (other, self, "DIA_PAL_262_GREET_15_02"); //Así que, ¿vas a pararme o puedo pasar?
-	AI_Output (self, other, "DIA_PAL_262_GREET_10_03"); //Bueno, no lo sabía. Claro que puedes pasar.
+	AI_Output (self, other, "DIA_PAL_262_GREET_10_00"); //Alto, Â¿quiÃ©n eres?
+	AI_Output (other, self, "DIA_PAL_262_GREET_15_01"); //Lo que importa es de dÃ³nde vengo. He venido por el paso.
+	AI_Output (other, self, "DIA_PAL_262_GREET_15_02"); //AsÃ­ que, Â¿vas a pararme o puedo pasar?
+	AI_Output (self, other, "DIA_PAL_262_GREET_10_03"); //Bueno, no lo sabÃ­a. Claro que puedes pasar.
 
 	/*
 	AI_Output (self, other, "DIA_Addon_PAL_262_GREET_10_00"); //Halt - wer bist du?
-	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_01"); //Viel wichtiger ist die Frage, wo ich herkomme. Ich bin über den Pass gekommen.
+	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_01"); //Viel wichtiger ist die Frage, wo ich herkomme. Ich bin Ã¼ber den Pass gekommen.
 	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_02"); //Also willst du mich jetzt aufhalten oder kann ich rein?
 	AI_Output (self, other, "DIA_Addon_PAL_262_GREET_10_03"); //Konnte ich ja nicht wissen. Klar kannst du rein.
 	*/
@@ -61,7 +61,7 @@ instance DIA_Wache_PERM		(C_INFO)
 	condition	 = 	DIA_Wache_PERM_Condition;
 	information	 = 	DIA_Wache_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Quién está al mando?";
+	description	 = 	"Â¿QuiÃ©n estÃ¡ al mando?";
 };
 
 func int DIA_Wache_PERM_Condition ()
@@ -76,11 +76,11 @@ func void DIA_Wache_PERM_Info ()
 	/* obskur
 	AI_Output (other, self, "DIA_Wache_PERM_15_00"); //Wer hat hier das Sagen?
 	AI_Output (self, other, "DIA_Wache_PERM_10_01"); //Unser Kommandant Garond und seine beiden Berater, die Paladine Oric und Parcival.
-	AI_Output (self, other, "DIA_Wache_PERM_10_02"); //Geh einfach rein. Tagsüber halten sie sich im Thronsaal im Erdgeschoss auf.
+	AI_Output (self, other, "DIA_Wache_PERM_10_02"); //Geh einfach rein. TagsÃ¼ber halten sie sich im Thronsaal im Erdgeschoss auf.
 	*/
-	AI_Output (other, self, "DIA_Addon_Wache_PERM_15_00"); //¿Quién es aquí el encargado?
+	AI_Output (other, self, "DIA_Addon_Wache_PERM_15_00"); //Â¿QuiÃ©n es aquÃ­ el encargado?
 	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_01"); //Nuestro comandante Garond y sus dos consejeros, los paladines Oric y Parcival.
-	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_02"); //Entra. Durante el día los encontrarás en la sala del trono de la planta baja.
+	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_02"); //Entra. Durante el dÃ­a los encontrarÃ¡s en la sala del trono de la planta baja.
 };
 
 

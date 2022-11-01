@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_16_JOIN(C_INFO)
 	condition	= DIA_BAU_16_JOIN_Condition;
 	information	= DIA_BAU_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "¡Cuéntame algo más de esos mercenarios!";
+	description = "Â¡CuÃ©ntame algo mÃ¡s de esos mercenarios!";
 };                       
 
 FUNC INT DIA_BAU_16_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //¡Cuéntame algo más de esos mercenarios!
-	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //Se tiran todo el día holgazaneando en la granja, se pelean de vez en cuando y creen que es para morirse de risa.
+	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //Â¡CuÃ©ntame algo mÃ¡s de esos mercenarios!
+	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //Se tiran todo el dÃ­a holgazaneando en la granja, se pelean de vez en cuando y creen que es para morirse de risa.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_BAU_16_PEOPLE(C_INFO)
 	condition	= DIA_BAU_16_PEOPLE_Condition;
 	information	= DIA_BAU_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT DIA_BAU_16_PEOPLE_Condition()
@@ -65,8 +65,8 @@ FUNC INT DIA_BAU_16_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_16_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //¿Quién está al mando?
-	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //En mi opinión, los mercenarios.
+	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //En mi opiniÃ³n, los mercenarios.
 	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_02"); //Onar les paga, pero casi todos hacen lo que les da la gana.
 };
 
@@ -79,7 +79,7 @@ INSTANCE DIA_BAU_16_LOCATION(C_INFO)
 	condition	= DIA_BAU_16_LOCATION_Condition;
 	information	= DIA_BAU_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Qué me cuentas de este lugar?";
+	description = "Â¿QuÃ© me cuentas de este lugar?";
 };                       
 
 FUNC INT DIA_BAU_16_LOCATION_Condition()
@@ -89,9 +89,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //¿Qué me cuentas de este lugar?
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //Aquí hay tres granjas. La de Onar está al este y la de Sekob en el extremo norte del valle.
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //Hay un sendero que lleva a la meseta del sudoeste, donde está la granja de Bengar.
+	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Â¿QuÃ© me cuentas de este lugar?
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //AquÃ­ hay tres granjas. La de Onar estÃ¡ al este y la de Sekob en el extremo norte del valle.
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //Hay un sendero que lleva a la meseta del sudoeste, donde estÃ¡ la granja de Bengar.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_BAU_16_STANDARD(C_INFO)
 	condition	= DIA_BAU_16_STANDARD_Condition;
 	information	= DIA_BAU_16_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Qué hay de nuevo?";
+	description = "Â¿QuÃ© hay de nuevo?";
 };                       
 func INT DIA_BAU_16_STANDARD_Condition()
 {
@@ -111,31 +111,31 @@ func INT DIA_BAU_16_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_16_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //¿Qué hay de nuevo?
+	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Â¿QuÃ© hay de nuevo?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //¡Las tropas de la ciudad ya no nos quitan las cosechas ni el ganado! Nos defendemos y ya no nos dejamos.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Â¡Las tropas de la ciudad ya no nos quitan las cosechas ni el ganado! Nos defendemos y ya no nos dejamos.
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //Se dice que se está movilizando un ejército en el Valle de las Minas. No tardarán en venir.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //Se dice que se estÃ¡ movilizando un ejÃ©rcito en el Valle de las Minas. No tardarÃ¡n en venir.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //Se rumorea que hay dragones en el Valle de las Minas. No le doy mucho crédito.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //Se rumorea que hay dragones en el Valle de las Minas. No le doy mucho crÃ©dito.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_04"); //Algunos mercenarios se han marchado. No sé si es algo bueno o malo.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_04"); //Algunos mercenarios se han marchado. No sÃ© si es algo bueno o malo.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //Mira que enviar a los paladines al Valle de las Minas. ¿De qué va todo esto?
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //Mira que enviar a los paladines al Valle de las Minas. Â¿De quÃ© va todo esto?
 	};
 };
 

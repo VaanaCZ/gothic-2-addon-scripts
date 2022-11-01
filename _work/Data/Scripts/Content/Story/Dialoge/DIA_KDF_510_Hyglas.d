@@ -45,7 +45,7 @@ func int DIA_Hyglas_Feuer_Condition ()
 func void DIA_Hyglas_Feuer_Info ()
 {
 	AI_Output (other, self, "DIA_Hyglas_Feuer_15_00"); //Exijo someterme a la prueba del fuego.
-	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01"); //La prueba del fuego procede de la antigüedad y hace mucho tiempo que no se lleva a cabo.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01"); //La prueba del fuego procede de la antigÃ¼edad y hace mucho tiempo que no se lleva a cabo.
 	AI_Output (self, other, "DIA_Hyglas_Feuer_14_02"); //Solicitas algo demasiado peligroso. No vuelvas a pensar en ello.
 };    
 ///////////////////////////////////////////////////////////////////////
@@ -69,12 +69,12 @@ func int DIA_Hyglas_Hallo_Condition ()
 };
 func void DIA_Hyglas_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Hyglas_Hallo_14_00"); //Soy el maestro Hyglas, guardián del fuego y custodio del conocimiento.
+	AI_Output (self, other, "DIA_Hyglas_Hallo_14_00"); //Soy el maestro Hyglas, guardiÃ¡n del fuego y custodio del conocimiento.
 	
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Hyglas_Hallo_14_01"); //Así que el maestro Parlan te ha dado permiso para estudiar las escrituras.
-		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02"); //Está en tu mano hacer justamente eso. Estudia y encuentra el conocimiento en las escrituras.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_01"); //AsÃ­ que el maestro Parlan te ha dado permiso para estudiar las escrituras.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02"); //EstÃ¡ en tu mano hacer justamente eso. Estudia y encuentra el conocimiento en las escrituras.
 	};
 };    
 ///////////////////////////////////////////////////////////////////////
@@ -87,7 +87,7 @@ instance DIA_Hyglas_JOB		(C_INFO)
 	condition	 = 	DIA_Hyglas_JOB_Condition;
 	information	 = 	DIA_Hyglas_JOB_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"¿Qué estudias, maestro?";
+	description	 = 	"Â¿QuÃ© estudias, maestro?";
 };
 func int DIA_Hyglas_JOB_Condition ()
 {	
@@ -95,13 +95,13 @@ func int DIA_Hyglas_JOB_Condition ()
 };
 func void DIA_Hyglas_JOB_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_JOB_15_00"); //¿Qué estudias, maestro?
-	AI_Output (self, other, "DIA_Hyglas_JOB_14_01"); //Mi investigación se centra en el fuego, el poder de Innos.
-	AI_Output (self, other, "DIA_Hyglas_JOB_14_02"); //Es su don y, al mismo tiempo, un arma poderosa. Además, creo runas que contienen su poder.
+	AI_Output (other, self, "DIA_Hyglas_JOB_15_00"); //Â¿QuÃ© estudias, maestro?
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_01"); //Mi investigaciÃ³n se centra en el fuego, el poder de Innos.
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_02"); //Es su don y, al mismo tiempo, un arma poderosa. AdemÃ¡s, creo runas que contienen su poder.
 	
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (other, self, "DIA_Hyglas_JOB_15_03"); //Muy instructivo. ¿Puedes enseñarme a hacerlo?
+		AI_Output (other, self, "DIA_Hyglas_JOB_15_03"); //Muy instructivo. Â¿Puedes enseÃ±arme a hacerlo?
 		AI_Output (self, other, "DIA_Hyglas_JOB_14_04"); //Innos es quien concede la magia, y solo sus siervos, los magos del fuego, pueden aprender a esgrimir su poder.
 	};
 };    
@@ -126,13 +126,13 @@ func int DIA_Hyglas_CONTEST_Condition ()
 };
 func void DIA_Hyglas_CONTEST_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_00"); //He pedido someterme a la prueba del fuego. Ulthar me encargó que creara una runa de flecha de fuego.
-	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_01"); //¿Y quieres que te enseñe la fórmula?
-	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_02"); //No sé que otra cosa podría hacer.
+	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_00"); //He pedido someterme a la prueba del fuego. Ulthar me encargÃ³ que creara una runa de flecha de fuego.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_01"); //Â¿Y quieres que te enseÃ±e la fÃ³rmula?
+	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_02"); //No sÃ© que otra cosa podrÃ­a hacer.
 	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_03"); //Um...
-	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04"); //De acuerdo, te enseñaré la fórmula, pero antes tienes que encontrar todos los componentes necesarios.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04"); //De acuerdo, te enseÃ±arÃ© la fÃ³rmula, pero antes tienes que encontrar todos los componentes necesarios.
 	
-	B_LogEntry (TOPIC_Rune,"Hyglas está dispuesto a enseñarme la fórmula de la flecha de fuego, en cuanto tenga todos los ingredientes.");
+	B_LogEntry (TOPIC_Rune,"Hyglas estÃ¡ dispuesto a enseÃ±arme la fÃ³rmula de la flecha de fuego, en cuanto tenga todos los ingredientes.");
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info FIREBOLT
@@ -144,7 +144,7 @@ instance DIA_Hyglas_FIREBOLT		(C_INFO)
 	condition	 = 	DIA_Hyglas_FIREBOLT_Condition;
 	information	 = 	DIA_Hyglas_FIREBOLT_Info;
 	permanent	 =  FALSE;
-	description	 = 	"¿Qué componentes necesito para una runa de flecha de fuego?";
+	description	 = 	"Â¿QuÃ© componentes necesito para una runa de flecha de fuego?";
 };
 func int DIA_Hyglas_FIREBOLT_Condition ()
 {	
@@ -157,8 +157,8 @@ func int DIA_Hyglas_FIREBOLT_Condition ()
 };
 func void DIA_Hyglas_FIREBOLT_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_FIREBOLT_15_00"); //¿Qué componentes necesito para una runa de flecha de fuego?
-	AI_Output (self, other, "DIA_Hyglas_FIREBOLT_14_01"); //Documéntate. Está en los libros.
+	AI_Output (other, self, "DIA_Hyglas_FIREBOLT_15_00"); //Â¿QuÃ© componentes necesito para una runa de flecha de fuego?
+	AI_Output (self, other, "DIA_Hyglas_FIREBOLT_14_01"); //DocumÃ©ntate. EstÃ¡ en los libros.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TALENT_FIREBOLT
@@ -170,7 +170,7 @@ instance DIA_Hyglas_TALENT_FIREBOLT		(C_INFO)
 	condition	 = 	DIA_Hyglas_TALENT_FIREBOLT_Condition;
 	information	 = 	DIA_Hyglas_TALENT_FIREBOLT_Info;
 	permanent 	 =  TRUE; 
-	description	 = 	"Enséñame a crear la runa de flecha de fuego.";
+	description	 = 	"EnsÃ©Ã±ame a crear la runa de flecha de fuego.";
 
 };
 func int DIA_Hyglas_TALENT_FIREBOLT_Condition ()
@@ -186,13 +186,13 @@ func int DIA_Hyglas_TALENT_FIREBOLT_Condition ()
 };
 func void DIA_Hyglas_TALENT_FIREBOLT_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_TALENT_FIREBOLT_15_00"); //Enséñame a crear la runa de flecha de fuego.
+	AI_Output (other, self, "DIA_Hyglas_TALENT_FIREBOLT_15_00"); //EnsÃ©Ã±ame a crear la runa de flecha de fuego.
 	
 	if (B_TeachPlayerTalentRunes (self, other, SPL_Firebolt))	
 	{
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_01"); //Para crear una runa de flecha de fuego, tienes que incorporar azufre a la piedra rúnica en la mesa rúnica.
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02"); //El poder del pergamino con el conjuro de flecha de fuego fluirá al interior de la runa, y contarás con un instrumento de Innos.
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_03"); //Por lo tanto, en cuanto tengas todas las materias primas, ve a la mesa rúnica y crea la runa.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_01"); //Para crear una runa de flecha de fuego, tienes que incorporar azufre a la piedra rÃºnica en la mesa rÃºnica.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02"); //El poder del pergamino con el conjuro de flecha de fuego fluirÃ¡ al interior de la runa, y contarÃ¡s con un instrumento de Innos.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_03"); //Por lo tanto, en cuanto tengas todas las materias primas, ve a la mesa rÃºnica y crea la runa.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -205,7 +205,7 @@ instance DIA_Hyglas_BLANK_RUNE		(C_INFO)
 	condition	 = 	DIA_Hyglas_BLANK_RUNE_Condition;
 	information	 = 	DIA_Hyglas_BLANK_RUNE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"¿Dónde encuentro una piedra rúnica?";
+	description	 = 	"Â¿DÃ³nde encuentro una piedra rÃºnica?";
 };
 func int DIA_Hyglas_BLANK_RUNE_Condition ()
 {	
@@ -219,8 +219,8 @@ func int DIA_Hyglas_BLANK_RUNE_Condition ()
 };
 func void DIA_Hyglas_BLANK_RUNE_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_BLANK_RUNE_15_00"); //¿Dónde encuentro una piedra rúnica?
-	AI_Output (self, other, "DIA_Hyglas_BLANK_RUNE_14_01"); //Eh, fuiste tú el que exigió someterse a la prueba del fuego, no yo. Averiguarlo forma parte de la prueba.
+	AI_Output (other, self, "DIA_Hyglas_BLANK_RUNE_15_00"); //Â¿DÃ³nde encuentro una piedra rÃºnica?
+	AI_Output (self, other, "DIA_Hyglas_BLANK_RUNE_14_01"); //Eh, fuiste tÃº el que exigiÃ³ someterse a la prueba del fuego, no yo. Averiguarlo forma parte de la prueba.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info GOTRUNE
@@ -247,7 +247,7 @@ func void DIA_Hyglas_GOTRUNE_Info ()
 {
 	AI_Output (other, self, "DIA_Hyglas_GOTRUNE_15_00"); //He creado la runa.
 	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_01"); //Vaya, vaya. Parece que has superado esta prueba. De todos modos, no era tan complicada.
-	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_02"); //Pues ve a ver a Ulthar y muéstrale tu obra.
+	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_02"); //Pues ve a ver a Ulthar y muÃ©strale tu obra.
 	
 	B_LogEntry (TOPIC_Rune,"He creado una runa de flecha de fuego."); 
 };
@@ -261,7 +261,7 @@ instance DIA_Hyglas_TEACH		(C_INFO)
 	condition	 = 	DIA_Hyglas_TEACH_Condition;
 	information	 = 	DIA_Hyglas_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Enséñame.";
+	description	 = 	"EnsÃ©Ã±ame.";
 };
 func int DIA_Hyglas_TEACH_Condition ()
 {	
@@ -276,7 +276,7 @@ func void DIA_Hyglas_TEACH_Info ()
 	var int abletolearn;
 	
 	abletolearn = 0;
-	AI_Output (other, self, "DIA_Hyglas_TEACH_15_00"); //Enséñame.
+	AI_Output (other, self, "DIA_Hyglas_TEACH_15_00"); //EnsÃ©Ã±ame.
 	
 	
 	Info_ClearChoices (DIA_Hyglas_TEACH);
@@ -416,7 +416,7 @@ INSTANCE DIA_Hyglas_BringBook   (C_INFO)
 	condition   = DIA_Hyglas_BringBook_Condition;
 	information = DIA_Hyglas_BringBook_Info;
 	permanent   = FALSE;
-	description = "¿Alguna novedad?";
+	description = "Â¿Alguna novedad?";
 };
 FUNC INT DIA_Hyglas_BringBook_Condition()
 {
@@ -429,26 +429,26 @@ FUNC INT DIA_Hyglas_BringBook_Condition()
 };
 FUNC VOID DIA_Hyglas_BringBook_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_00"); //¿Alguna novedad?
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_01"); //Um, sí. Probablemente hayas advertido la presencia de esas figuras de atuendo negro.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_00"); //Â¿Alguna novedad?
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_01"); //Um, sÃ­. Probablemente hayas advertido la presencia de esas figuras de atuendo negro.
 	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_02"); //Me he topado con ellos.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_03"); //Esto nos lleva al meollo del asunto. En este momento, observamos una constelación de estrellas muy peculiar.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_04"); //Para ser más exactos, el signo del Buey se encuentra en correlación directa con el signo del Guerrero. Supongo que sabes lo que significa eso.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_03"); //Esto nos lleva al meollo del asunto. En este momento, observamos una constelaciÃ³n de estrellas muy peculiar.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_04"); //Para ser mÃ¡s exactos, el signo del Buey se encuentra en correlaciÃ³n directa con el signo del Guerrero. Supongo que sabes lo que significa eso.
 	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_05"); //Um. Bueno, si te digo la verdad...
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_06"); //Sí, bueno, ya veo. No te puedo explicar todos los detalles, pero significa que van a producirse grandes cambios. Y los cambios no me gustan.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_07"); //Por lo tanto, quiero que me traigas un libro de la ciudad. Se llama ''El poder divino de las estrellas''. Tendrás que rebuscar un poco, pero estoy seguro de que lo encontrarás.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_06"); //SÃ­, bueno, ya veo. No te puedo explicar todos los detalles, pero significa que van a producirse grandes cambios. Y los cambios no me gustan.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_07"); //Por lo tanto, quiero que me traigas un libro de la ciudad. Se llama ''El poder divino de las estrellas''. TendrÃ¡s que rebuscar un poco, pero estoy seguro de que lo encontrarÃ¡s.
 	
 	Info_ClearChoices (DIA_Hyglas_BringBook);
-	Info_AddChoice (DIA_Hyglas_BringBook,"Ve tú a por el libro.",DIA_Hyglas_BringBook_GetItYourself);
-	Info_AddChoice (DIA_Hyglas_BringBook,"¿Qué obtengo yo a cambio?",DIA_Hyglas_BringBook_GetForIt);
-	Info_AddChoice (DIA_Hyglas_BringBook,"Veré si puedo encontrarlo.",DIA_Hyglas_BringBook_Yes);
+	Info_AddChoice (DIA_Hyglas_BringBook,"Ve tÃº a por el libro.",DIA_Hyglas_BringBook_GetItYourself);
+	Info_AddChoice (DIA_Hyglas_BringBook,"Â¿QuÃ© obtengo yo a cambio?",DIA_Hyglas_BringBook_GetForIt);
+	Info_AddChoice (DIA_Hyglas_BringBook,"VerÃ© si puedo encontrarlo.",DIA_Hyglas_BringBook_Yes);
 };
 
 FUNC VOID DIA_Hyglas_BringBook_GetItYourself()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetItYourself_15_00"); //Ve tú a por el libro.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_01"); //¿Cómo osas hablarme en este tono? Tu actitud no demuestra el respeto que me debes.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_02"); //Lárgate y medita acerca de tu actitud.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetItYourself_15_00"); //Ve tÃº a por el libro.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_01"); //Â¿CÃ³mo osas hablarme en este tono? Tu actitud no demuestra el respeto que me debes.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_02"); //LÃ¡rgate y medita acerca de tu actitud.
 	
 	MIS_HyglasBringBook = LOG_OBSOLETE;
 	
@@ -457,17 +457,17 @@ FUNC VOID DIA_Hyglas_BringBook_GetItYourself()
 
 FUNC VOID DIA_Hyglas_BringBook_GetForIt()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_00"); //¿Y qué gano yo?
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_01"); //¿Qué quieres decir?
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_02"); //Me gustaría saber qué me darás si te traigo el libro.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_03"); //Nada. ¿Qué esperabas? Si tienes tiempo para hacerme un recado en la ciudad, ayudarme es tu obligación.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_00"); //Â¿Y quÃ© gano yo?
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_01"); //Â¿QuÃ© quieres decir?
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_02"); //Me gustarÃ­a saber quÃ© me darÃ¡s si te traigo el libro.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_03"); //Nada. Â¿QuÃ© esperabas? Si tienes tiempo para hacerme un recado en la ciudad, ayudarme es tu obligaciÃ³n.
 	
 	Info_ClearChoices (DIA_Hyglas_BringBook); 
 };
 
 FUNC VOID DIA_Hyglas_BringBook_Yes()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_Yes_15_00"); //Veré si puedo encontrarlo.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_Yes_15_00"); //VerÃ© si puedo encontrarlo.
 	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_01"); //Muy bien. Eso me deja tiempo libre para seguir otras pistas.
 	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_02"); //Pero no tardes. Me temo que no nos sobra el tiempo.
 	
@@ -477,7 +477,7 @@ FUNC VOID DIA_Hyglas_BringBook_Yes()
 	
 	Log_CreateTopic (TOPIC_HyglasBringBook,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HyglasBringBook,LOG_RUNNING);
-	B_LogEntry (TOPIC_HyglasBringBook,"Hyglas quiere que le consiga el libro ''El poder divino de las estrellas''. Iré a buscarlo entre los mercaderes de la ciudad.");
+	B_LogEntry (TOPIC_HyglasBringBook,"Hyglas quiere que le consiga el libro ''El poder divino de las estrellas''. IrÃ© a buscarlo entre los mercaderes de la ciudad.");
 };
 
 //*********************************************************************
@@ -491,7 +491,7 @@ INSTANCE DIA_Hyglas_HaveBook   (C_INFO)
 	condition   = DIA_Hyglas_HaveBook_Condition;
 	information = DIA_Hyglas_HaveBook_Info;
 	permanent   = FALSE;
-	description = "Te he traído el libro.";
+	description = "Te he traÃ­do el libro.";
 };
 FUNC INT DIA_Hyglas_HaveBook_Condition()
 {
@@ -503,15 +503,15 @@ FUNC INT DIA_Hyglas_HaveBook_Condition()
 };
 FUNC VOID DIA_Hyglas_HaveBook_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_HaveBook_15_00"); //Te he traído el libro.
+	AI_Output (other,self ,"DIA_Hyglas_HaveBook_15_00"); //Te he traÃ­do el libro.
 	
 	IF Mis_HyglasBringBook == LOG_RUNNING
 	{
-		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_01"); //Muy bien, dámelo.
+		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_01"); //Muy bien, dÃ¡melo.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_02"); //Así que al final cambiaste de idea. Muy bien. ¿Dónde tienes el libro?
+		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_02"); //AsÃ­ que al final cambiaste de idea. Muy bien. Â¿DÃ³nde tienes el libro?
 	};		
 		
 	B_GiveInvItems (other,self,ItWr_Astronomy_Mis,1);
@@ -564,7 +564,7 @@ INSTANCE DIA_Hyglas_Kap4_PERM   (C_INFO)
 	condition   = DIA_Hyglas_Kap4_PERM_Condition;
 	information = DIA_Hyglas_Kap4_PERM_Info;
 	permanent   = TRUE;
-	description = "¿Has averiguado algo?";
+	description = "Â¿Has averiguado algo?";
 };
 FUNC INT DIA_Hyglas_Kap4_PERM_Condition()
 {
@@ -575,14 +575,14 @@ FUNC INT DIA_Hyglas_Kap4_PERM_Condition()
 };
 FUNC VOID DIA_Hyglas_Kap4_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_00"); //¿Has averiguado algo?
+	AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_00"); //Â¿Has averiguado algo?
 	
 	if (Mis_HyglasBringBook == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_01"); //No estoy seguro del todo, pero la constelación actual de las estrellas parece indicar muchos peligros.
-		AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_02"); //¿Qué tipo de peligros?
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_03"); //Bueno, la estructura entre los mundos parece muy débil. Solo hace falta una pequeña fracción del poder que en otras circunstancias sería necesario para abrir un agujero en esta estructura.
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_04"); //Los demonios podrían valerse de estos portales para entrar en nuestro mundo sin encontrar resistencia.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_01"); //No estoy seguro del todo, pero la constelaciÃ³n actual de las estrellas parece indicar muchos peligros.
+		AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_02"); //Â¿QuÃ© tipo de peligros?
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_03"); //Bueno, la estructura entre los mundos parece muy dÃ©bil. Solo hace falta una pequeÃ±a fracciÃ³n del poder que en otras circunstancias serÃ­a necesario para abrir un agujero en esta estructura.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_04"); //Los demonios podrÃ­an valerse de estos portales para entrar en nuestro mundo sin encontrar resistencia.
 		
 		Hyglas_SendsToKarras = TRUE;
 	}
@@ -592,7 +592,7 @@ FUNC VOID DIA_Hyglas_Kap4_PERM_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_06"); //Ya te dije que sigo investigando, pero tardaré más si no cuento con los materiales adecuados.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_06"); //Ya te dije que sigo investigando, pero tardarÃ© mÃ¡s si no cuento con los materiales adecuados.
 	};
 	
 };

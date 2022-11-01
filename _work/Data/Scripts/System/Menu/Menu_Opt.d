@@ -31,7 +31,7 @@ const int MENU_OPT_START_Y	= 2000;
 
 INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Configuraci髇";
+	text[0]		=	"Configuraci贸n";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Visualizaci髇";
-	text[1]		= "Alcance de la visi髇, detalles y efectos";  // Kommentar
+	text[0]		= "Visualizaci贸n";
+	text[1]		= "Alcance de la visi贸n, detalles y efectos";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -78,8 +78,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"Opciones de gr醘icos";
-	text[1]		=	"Tarjeta gr醘ica, resoluci髇, brillo y contraste";  // Kommentar
+	text[0]		=	"Opciones de gr谩ficos";
+	text[1]		=	"Tarjeta gr谩fica, resoluci贸n, brillo y contraste";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -96,7 +96,7 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Audio";
-	text[1]		= "M鷖ica, conversaciones y efectos de sonido";  // Kommentar
+	text[1]		= "M煤sica, conversaciones y efectos de sonido";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -114,7 +114,7 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Controles";
-	text[1]		= "Configura el teclado y el rat髇";  // Kommentar
+	text[1]		= "Configura el teclado y el rat贸n";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*4;
@@ -130,7 +130,7 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Configuraci髇 extendida";
+	text[0]		= "Configuraci贸n extendida";
 	text[1]		= "Opciones adicionales";  // Kommentar
 
 	// Position und Dimension
@@ -185,7 +185,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atr醩";
+	text[0]		=	"Atr谩s";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y+300;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

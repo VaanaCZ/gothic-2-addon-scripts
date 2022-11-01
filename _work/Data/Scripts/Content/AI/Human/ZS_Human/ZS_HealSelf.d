@@ -25,7 +25,7 @@ func int ZS_HealSelf_Loop ()
 	
 	// LOOP FUNC
 	
-	// ------ Großen Heiltrank nehmen ------
+	// ------ GroÃŸen Heiltrank nehmen ------
 	if (Npc_HasItems(self,ItPo_Health_03) >0)			
 	{
 		AI_UseItem (self, ItPo_Health_03);

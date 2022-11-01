@@ -36,16 +36,16 @@ FUNC INT DIA_Addon_10019_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10019_Wache_Hi_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//¿Te diriges a la mina?
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//Â¿Te diriges a la mina?
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"En realidad, quiero ver a Raven.",DIA_Addon_BDT_10019_Wache_Hi_Raven);
-	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"Sí.",DIA_Addon_BDT_10019_Wache_Hi_Ja);
+	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"SÃ­.",DIA_Addon_BDT_10019_Wache_Hi_Ja);
 };
 FUNC VOID B_Say_Wache_kaputt()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//¿Por qué están muertos?
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(ríe maliciosamente) Se han matado trabajando.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//Â¿Por quÃ© estÃ¡n muertos?
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(rÃ­e maliciosamente) Se han matado trabajando.
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 };
@@ -60,8 +60,8 @@ FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 };
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Ja()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Ja_15_00");//Sí.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Pues ve con cuidado. Con más cuidado que estos tipos que ahora están muertos por el suelo.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Ja_15_00");//SÃ­.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Pues ve con cuidado. Con mÃ¡s cuidado que estos tipos que ahora estÃ¡n muertos por el suelo.
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);

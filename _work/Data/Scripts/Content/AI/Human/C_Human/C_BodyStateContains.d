@@ -6,17 +6,17 @@
 //
 // 		if (Npc_GetBodyState(self) == BS_SIT) 
 //
-// werden false ergeben, wenn zus‰tzlich zu BS_SIT auch noch
+// werden false ergeben, wenn zus√§tzlich zu BS_SIT auch noch
 // BS_MOD_BURNING oder andere gesetzt sind (Charakter sitzt UND brennt)
-// Abfragen auf Bodystates m¸ssen also so aussehen:
+// Abfragen auf Bodystates m√ºssen also so aussehen:
 //
 // 		if (C_BodyStateContains(self,BS_SIT))
 // ********************************************************************
 
 func int C_BodyStateContains (var C_NPC slf, var int bodystate)
 {
-	//SN: Finger weg von dieser Formel!!! Ich weiﬂ genau was ich tue!
-	if ((Npc_GetBodyState(slf)&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS)) == (bodystate&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS)))			// sowohl bei der Abfrage als auch beim Vergleichswert die hˆheren Bits ausmaskieren!
+	//SN: Finger weg von dieser Formel!!! Ich wei√ü genau was ich tue!
+	if ((Npc_GetBodyState(slf)&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS)) == (bodystate&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS)))			// sowohl bei der Abfrage als auch beim Vergleichswert die h√∂heren Bits ausmaskieren!
 	{
 		return TRUE;
 	}

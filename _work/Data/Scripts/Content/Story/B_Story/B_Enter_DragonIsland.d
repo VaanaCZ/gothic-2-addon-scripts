@@ -15,9 +15,9 @@ FUNC VOID STARTUP_NEWWORLD_PART_DRAGON_ISLAND_01 ()
 	//----- Die Orks -----
 
 	Wld_InsertNpc 	(Troll_DI, 	"DI_ORKAREA_TROLL");		
-	Wld_InsertItem	(ItMi_DarkPearl , "FP_ITEM_DI_ENTER_03"); //Joly: Zutat für ItPo_MegaDrink
-	Wld_InsertItem	(ItMi_Sulfur 	, "FP_ITEM_DI_ENTER_07"); //Joly: Zutat für ItPo_MegaDrink
-	Wld_InsertItem	(ItWr_ZugBruecke_MIS, "FP_ITEM_DI_ENTER_09"); //Joly: Hinweis, die ZugbrückenProblematik zu lösen.
+	Wld_InsertItem	(ItMi_DarkPearl , "FP_ITEM_DI_ENTER_03"); //Joly: Zutat fÃ¼r ItPo_MegaDrink
+	Wld_InsertItem	(ItMi_Sulfur 	, "FP_ITEM_DI_ENTER_07"); //Joly: Zutat fÃ¼r ItPo_MegaDrink
+	Wld_InsertItem	(ItWr_ZugBruecke_MIS, "FP_ITEM_DI_ENTER_09"); //Joly: Hinweis, die ZugbrÃ¼ckenProblematik zu lÃ¶sen.
 
 	Wld_InsertNpc 	(OrcWarrior_Rest, 	"FP_ROAM_DI_ORK_01");	
 	Wld_InsertNpc 	(OrcWarrior_Rest, 	"FP_ROAM_DI_ORK_02");	
@@ -201,7 +201,7 @@ FUNC VOID STARTUP_DRAGONISLAND ()
 	Angar_IsOnBoard = LOG_SUCCESS;
 	Girion_IsOnBoard = LOG_SUCCESS;		*/	
 	
-//----- Die Kapitäne -----
+//----- Die KapitÃ¤ne -----
 	
 	if ( JorgenIsCaptain == TRUE)	//Jorgen
 	{
@@ -320,7 +320,7 @@ FUNC VOID STARTUP_DRAGONISLAND ()
 	
 	Log_CreateTopic (TOPIC_HallenVonIrdorath, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HallenVonIrdorath, LOG_RUNNING);
-	Log_AddEntry (TOPIC_HallenVonIrdorath,"Hemos encontrado la isla del enemigo. Solo Innos sabe qué criaturas me esperan dentro de esa montaña."); 
+	Log_AddEntry (TOPIC_HallenVonIrdorath,"Hemos encontrado la isla del enemigo. Solo Innos sabe quÃ© criaturas me esperan dentro de esa montaÃ±a."); 
 
 	B_Kapitelwechsel (6, DRAGONISLAND_ZEN);
 };
@@ -337,7 +337,7 @@ FUNC VOID INIT_DRAGONISLAND ()
 	//----- Levelchange verbarrikadieren --------
 	if (Npc_HasItems (hero,ITKE_SHIP_LEVELCHANGE_MIS))
 	{
-		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die Tür wieder zu!!!!
+		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die TÃ¼r wieder zu!!!!
 	};
 	B_InitNpcGlobals (); 
 };

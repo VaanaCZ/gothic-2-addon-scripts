@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Nefarius_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Nefarius_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Nefarius_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Nefarius_ADW_PICKPOCKET_Condition()
@@ -95,11 +95,11 @@ func int DIA_Addon_Nefarius_ADWHello_Condition ()
 func void DIA_Addon_Nefarius_ADWHello_Info ()
 {
 	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_00"); //Menos mal que has conseguido llegar ileso.
-	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_01"); //¿Por qué habéis llegado antes que yo?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_02"); //Hemos viajado a través de una extraña dimensión. Quién sabe qué desvío tomaste.
-	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_03"); //¿Y ahora? ¿Puedo volver a usar el portal?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_04"); //Llegamos aquí directamente. Obviamente, ha funcionado a la perfección.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_05"); //Por supuesto, si sospecho el más mínimo falló, te lo haré saber.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_01"); //Â¿Por quÃ© habÃ©is llegado antes que yo?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_02"); //Hemos viajado a travÃ©s de una extraÃ±a dimensiÃ³n. QuiÃ©n sabe quÃ© desvÃ­o tomaste.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_03"); //Â¿Y ahora? Â¿Puedo volver a usar el portal?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_04"); //Llegamos aquÃ­ directamente. Obviamente, ha funcionado a la perfecciÃ³n.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_05"); //Por supuesto, si sospecho el mÃ¡s mÃ­nimo fallÃ³, te lo harÃ© saber.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -112,7 +112,7 @@ instance DIA_Addon_Nefarius_Neues		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_Neues_Condition;
 	information	 = 	DIA_Addon_Nefarius_Neues_Info;
 
-	description	 = 	"¿Qué has hecho aquí hasta ahora?";
+	description	 = 	"Â¿QuÃ© has hecho aquÃ­ hasta ahora?";
 };
 
 func int DIA_Addon_Nefarius_Neues_Condition ()
@@ -125,25 +125,25 @@ func int DIA_Addon_Nefarius_Neues_Condition ()
 
 func void DIA_Addon_Nefarius_Neues_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_Neues_15_00"); //¿Qué has hecho aquí hasta ahora?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_01"); //Estoy estudiando la historia de los constructores y trato de comprender por qué cerraron el portal.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_Neues_15_00"); //Â¿QuÃ© has hecho aquÃ­ hasta ahora?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_01"); //Estoy estudiando la historia de los constructores y trato de comprender por quÃ© cerraron el portal.
 	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_02"); //Parece como si quisieran esconder la ciudad hundida del resto del mundo.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_03"); //Aquí pasaron cosas terribles hace años. Algo escalofriante se apoderó de ellos.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_04"); //Hubo una guerra civil terrible poco antes de la caída de la ciudad, si los datos registrados son correctos.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_05"); //El fuego recorría las calles y una corriente de agua que devoraba todo a su paso acabó sellando el destino de los constructores.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_03"); //AquÃ­ pasaron cosas terribles hace aÃ±os. Algo escalofriante se apoderÃ³ de ellos.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_04"); //Hubo una guerra civil terrible poco antes de la caÃ­da de la ciudad, si los datos registrados son correctos.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_05"); //El fuego recorrÃ­a las calles y una corriente de agua que devoraba todo a su paso acabÃ³ sellando el destino de los constructores.
 	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_06"); //Los pocos que sobrevivieron al infierno cerraron esa parte de la isla con la esperanza de aislar el caos.
 	
 	Info_ClearChoices	(DIA_Addon_Nefarius_Neues);
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "¿Qué crees que encontraremos aquí?", DIA_Addon_Nefarius_Neues_find );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Â¿QuÃ© crees que encontraremos aquÃ­?", DIA_Addon_Nefarius_Neues_find );
 	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Y nosotros, pobres necios, hemos vuelto a abrir el portal.", DIA_Addon_Nefarius_Neues_auf );
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "¿Qué pudo molestar a los constructores?", DIA_Addon_Nefarius_Neues_was );
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "¿Has dicho que hubo una inundación?", DIA_Addon_Nefarius_Neues_flut );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Â¿QuÃ© pudo molestar a los constructores?", DIA_Addon_Nefarius_Neues_was );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Â¿Has dicho que hubo una inundaciÃ³n?", DIA_Addon_Nefarius_Neues_flut );
 };
 func void DIA_Addon_Nefarius_Neues_find ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_find_15_00"); //¿Qué crees que encontraremos aquí?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_01"); //Sólo puedo hacer suposiciones. Deberías hablar con Saturas.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_02"); //Él sabe algo más.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_find_15_00"); //Â¿QuÃ© crees que encontraremos aquÃ­?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_01"); //SÃ³lo puedo hacer suposiciones. DeberÃ­as hablar con Saturas.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_02"); //Ã‰l sabe algo mÃ¡s.
 	
 	Log_CreateTopic (TOPIC_Addon_Flut, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Flut, LOG_RUNNING);
@@ -154,24 +154,24 @@ func void DIA_Addon_Nefarius_Neues_find ()
 };
 func void DIA_Addon_Nefarius_Neues_flut ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_flut_15_00"); //¿Has dicho que hubo una inundación?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_01"); //El propio Adanos se les apareció para acabar con su locura.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_02"); //Arrasó toda la ciudad.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_flut_15_00"); //Â¿Has dicho que hubo una inundaciÃ³n?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_01"); //El propio Adanos se les apareciÃ³ para acabar con su locura.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_02"); //ArrasÃ³ toda la ciudad.
 };
 func void DIA_Addon_Nefarius_Neues_was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_was_15_00"); //¿Qué hicieron los constructores?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_01"); //Uno de ellos se había entregado al mal. Era un gran comandante llamado Quarhodron.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_02"); //Volviendo de una batalla victoriosa fuera la ciudad, trajo el mal con él.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_03"); //Todos sus seguidores perdieron el juicio poco tiempo después y comenzaron a luchar con los ciudadanos de a pie.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_was_15_00"); //Â¿QuÃ© hicieron los constructores?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_01"); //Uno de ellos se habÃ­a entregado al mal. Era un gran comandante llamado Quarhodron.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_02"); //Volviendo de una batalla victoriosa fuera la ciudad, trajo el mal con Ã©l.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_03"); //Todos sus seguidores perdieron el juicio poco tiempo despuÃ©s y comenzaron a luchar con los ciudadanos de a pie.
 	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_04"); //La consiguiente guerra civil redujo todo a cenizas.
 };
 func void DIA_Addon_Nefarius_Neues_auf ()
 {
 	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_auf_15_00"); //Y nosotros, pobres necios, hemos vuelto a abrir el portal.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_01"); //No te creas que me siento orgulloso, créeme.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_02"); //Pero ¿qué otra opción teníamos?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_03"); //Si no podemos detener lo que está ocurriendo aquí, Khorinis sufrirá la misma suerte que los constructores de la antigua ciudad.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_01"); //No te creas que me siento orgulloso, crÃ©eme.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_02"); //Pero Â¿quÃ© otra opciÃ³n tenÃ­amos?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_03"); //Si no podemos detener lo que estÃ¡ ocurriendo aquÃ­, Khorinis sufrirÃ¡ la misma suerte que los constructores de la antigua ciudad.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -185,7 +185,7 @@ instance DIA_Addon_Nefarius_PermADW		(C_INFO)
 	information	 = 	DIA_Addon_Nefarius_PermADW_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿El viaje a través del portal es seguro?";
+	description	 = 	"Â¿El viaje a travÃ©s del portal es seguro?";
 };
 func int DIA_Addon_Nefarius_PermADW_Condition ()
 {
@@ -193,8 +193,8 @@ func int DIA_Addon_Nefarius_PermADW_Condition ()
 };
 func void DIA_Addon_Nefarius_PermADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_PermADW_15_00"); //¿El viaje a través del portal es seguro?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_PermADW_05_01"); //Hasta ahora, no ha habido ningún problema.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_PermADW_15_00"); //Â¿El viaje a travÃ©s del portal es seguro?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_PermADW_05_01"); //Hasta ahora, no ha habido ningÃºn problema.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -207,7 +207,7 @@ instance DIA_Addon_Nefarius_PreTeach		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_PreTeach_Condition;
 	information	 = 	DIA_Addon_Nefarius_PreTeach_Info;
 
-	description	 = 	"¿Podrías transmitirme tus conocimientos de magia?";
+	description	 = 	"Â¿PodrÃ­as transmitirme tus conocimientos de magia?";
 };
 
 func int DIA_Addon_Nefarius_PreTeach_Condition ()
@@ -221,8 +221,8 @@ func int DIA_Addon_Nefarius_PreTeach_Condition ()
 
 func void DIA_Addon_Nefarius_PreTeach_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_PreTeach_15_00"); //¿Podrías transmitirme tus conocimientos de magia?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_01"); //Puedo enseñarte la creación de las runas y Cronos te venderá las fórmulas que necesites para ello.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_PreTeach_15_00"); //Â¿PodrÃ­as transmitirme tus conocimientos de magia?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_01"); //Puedo enseÃ±arte la creaciÃ³n de las runas y Cronos te venderÃ¡ las fÃ³rmulas que necesites para ello.
 	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_02"); //Siempre lleva consigo su libro de runas.
 	
 	Nefarius_Addon_TeachRunes = TRUE;
@@ -241,7 +241,7 @@ INSTANCE DIA_Addon_Nefarius_ADW_Runen (C_INFO)
 	condition	= DIA_Addon_Nefarius_ADW_Runen_Condition;
 	information	= DIA_Addon_Nefarius_ADW_Runen_Info;
 	permanent	= TRUE;
-	description = "Instrúyeme (crear runas)";
+	description = "InstrÃºyeme (crear runas)";
 };                       
 
 FUNC INT DIA_Addon_Nefarius_ADW_Runen_Condition()
@@ -258,27 +258,27 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Info()
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 6)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Sexto círculo de magia",DIA_Addon_Nefarius_ADW_Runen_6);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Sexto cÃ­rculo de magia",DIA_Addon_Nefarius_ADW_Runen_6);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 5)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Quinto círculo de magia",DIA_Addon_Nefarius_ADW_Runen_5);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Quinto cÃ­rculo de magia",DIA_Addon_Nefarius_ADW_Runen_5);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 4)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Cuarto círculo de magia",DIA_Addon_Nefarius_ADW_Runen_4);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Cuarto cÃ­rculo de magia",DIA_Addon_Nefarius_ADW_Runen_4);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 3)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Tercer círculo de magia",DIA_Addon_Nefarius_ADW_Runen_3);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Tercer cÃ­rculo de magia",DIA_Addon_Nefarius_ADW_Runen_3);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 2)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Segundo círculo de magia",DIA_Addon_Nefarius_ADW_Runen_2);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Segundo cÃ­rculo de magia",DIA_Addon_Nefarius_ADW_Runen_2);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 1)
 	{ 
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Primer círculo de magia",DIA_Addon_Nefarius_ADW_Runen_1);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"Primer cÃ­rculo de magia",DIA_Addon_Nefarius_ADW_Runen_1);
 	};
 };
 //**********************************************************
@@ -442,7 +442,7 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_4()
 };
 
 //**********************************************************
-// Fünfter Kreis 
+// FÃ¼nfter Kreis 
 //--------------------------
 //**********************************************************
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_5()

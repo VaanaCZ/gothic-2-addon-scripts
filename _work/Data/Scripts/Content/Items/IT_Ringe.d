@@ -62,7 +62,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Anillo de protección contra las llamas";
+	description				= "Anillo de protecciÃ³n contra las llamas";
 	
 	TEXT[2]					= NAME_Prot_Fire;
 	COUNT[2]				= Ri_ProtFire;
@@ -219,7 +219,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //Höhle OW//PassNW bei den Orks
+	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //HÃ¶hle OW//PassNW bei den Orks
 {
 	name 					=	NAME_Ring;
 
@@ -330,7 +330,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Anillo de espíritu";
+	description				= "Anillo de espÃ­ritu";
 	
 	TEXT[2]					= NAME_Prot_Magic;
 	COUNT[2]				= Ri_ProtMage;
@@ -356,7 +356,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordhütte OW
+	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordhÃ¼tte OW
 {
 	name 					=	NAME_Ring;
 
@@ -561,7 +561,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW Nähe Alter DT
+	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW NÃ¤he Alter DT
 {
 	name 					=	NAME_Ring;
 
@@ -932,7 +932,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Anillo de Iluminación";
+	description				= "Anillo de IluminaciÃ³n";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_HpMana_Mana;

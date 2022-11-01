@@ -42,7 +42,7 @@ instance DIA_RodDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_RodDJG_HALLO_Condition;
 	information	 = 	DIA_RodDJG_HALLO_Info;
 
-	description	 = 	"¿Todo va bien?";
+	description	 = 	"Â¿Todo va bien?";
 };
 
 func int DIA_RodDJG_HALLO_Condition ()
@@ -55,8 +55,8 @@ func int DIA_RodDJG_HALLO_Condition ()
 
 func void DIA_RodDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_HALLO_15_00"); //¿Todo va bien?
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_01"); //¡Estas botas me matan! La armadura nueva es estupenda, pero ¿por qué aprietan tanto las correas de estas botas?
+	AI_Output			(other, self, "DIA_RodDJG_HALLO_15_00"); //Â¿Todo va bien?
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_01"); //Â¡Estas botas me matan! La armadura nueva es estupenda, pero Â¿por quÃ© aprietan tanto las correas de estas botas?
 	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_02"); //Si las aflojo, las botas se me caen.
 
 	if 	(
@@ -64,22 +64,22 @@ func void DIA_RodDJG_HALLO_Info ()
 		&& (DJG_SwampParty == FALSE)
 		)
 			{
-			Info_AddChoice	(DIA_RodDJG_HALLO, "¿A qué esperas?", DIA_RodDJG_HALLO_warten );
+			Info_AddChoice	(DIA_RodDJG_HALLO, "Â¿A quÃ© esperas?", DIA_RodDJG_HALLO_warten );
 			};
-	Info_AddChoice	(DIA_RodDJG_HALLO, "¿Dónde conseguiste esas botas?", DIA_RodDJG_HALLO_Woher );
+	Info_AddChoice	(DIA_RodDJG_HALLO, "Â¿DÃ³nde conseguiste esas botas?", DIA_RodDJG_HALLO_Woher );
 
 };
 func void DIA_RodDJG_HALLO_Woher ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_HALLO_Woher_15_00"); //¿Dónde conseguiste esas botas?
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_01"); //El veterano Bennet nos las hizo a los cazadores de dragones y nos obligó a pagarle un buen dinero por esa basura.
+	AI_Output			(other, self, "DIA_RodDJG_HALLO_Woher_15_00"); //Â¿DÃ³nde conseguiste esas botas?
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_01"); //El veterano Bennet nos las hizo a los cazadores de dragones y nos obligÃ³ a pagarle un buen dinero por esa basura.
 	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_02"); //Como le ponga la mano encima, voy a hacer que se las trague y que me devuelva el dinero.
 
 };
 
 func void DIA_RodDJG_HALLO_warten ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_15_00"); //¿A qué esperas?
+	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_15_00"); //Â¿A quÃ© esperas?
 	
 	Info_ClearChoices	(DIA_RodDJG_HALLO);
 
@@ -90,18 +90,18 @@ func void DIA_RodDJG_HALLO_warten ()
 		}
 		else
 		{
-		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_02"); //He estado pensando en echar un vistazo a esa zona pantanosa de ahí.
-		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_03"); //¿Qué te parece? ¿Vamos juntos a ver qué encontramos?
+		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_02"); //He estado pensando en echar un vistazo a esa zona pantanosa de ahÃ­.
+		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_03"); //Â¿QuÃ© te parece? Â¿Vamos juntos a ver quÃ© encontramos?
 
-		Info_AddChoice	(DIA_RodDJG_HALLO, "Iré yo solo.", DIA_RodDJG_HALLO_warten_allein );
-		Info_AddChoice	(DIA_RodDJG_HALLO, "¿Qué sabes del pantano?", DIA_RodDJG_HALLO_warten_wasweisstdu );
+		Info_AddChoice	(DIA_RodDJG_HALLO, "IrÃ© yo solo.", DIA_RodDJG_HALLO_warten_allein );
+		Info_AddChoice	(DIA_RodDJG_HALLO, "Â¿QuÃ© sabes del pantano?", DIA_RodDJG_HALLO_warten_wasweisstdu );
 		Info_AddChoice	(DIA_RodDJG_HALLO, "Vayamos juntos.", DIA_RodDJG_HALLO_warten_zusammen );
 		};
 };
 func void DIA_RodDJG_HALLO_warten_zusammen ()
 {
 	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_zusammen_15_00"); //Vayamos juntos.
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_zusammen_06_01"); //De acuerdo. Sígueme.
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_zusammen_06_01"); //De acuerdo. SÃ­gueme.
 
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -112,14 +112,14 @@ func void DIA_RodDJG_HALLO_warten_zusammen ()
 
 func void DIA_RodDJG_HALLO_warten_wasweisstdu ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_wasweisstdu_15_00"); //¿Qué sabes del pantano?
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_wasweisstdu_06_01"); //Solo que huele que apesta, y que probablemente haya un montón de oro. ¿No basta con eso?
+	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_wasweisstdu_15_00"); //Â¿QuÃ© sabes del pantano?
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_wasweisstdu_06_01"); //Solo que huele que apesta, y que probablemente haya un montÃ³n de oro. Â¿No basta con eso?
 
 };
 
 func void DIA_RodDJG_HALLO_warten_allein ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_allein_15_00"); //Iré yo solo.
+	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_allein_15_00"); //IrÃ© yo solo.
 	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_allein_06_01"); //Muy bien. Que tengas suerte.
 
 	AI_StopProcessInfos (self);
@@ -137,7 +137,7 @@ instance DIA_RodDJG_WARTEMAL		(C_INFO)
 	information	 = 	DIA_RodDJG_WARTEMAL_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Qué es lo que no está bien?";
+	description	 = 	"Â¿QuÃ© es lo que no estÃ¡ bien?";
 };
 
 func int DIA_RodDJG_WARTEMAL_Condition ()
@@ -151,14 +151,14 @@ func int DIA_RodDJG_WARTEMAL_Condition ()
 
 func void DIA_RodDJG_WARTEMAL_Info ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_WARTEMAL_15_00"); //¿Qué pasa contigo?
+	AI_Output			(other, self, "DIA_RodDJG_WARTEMAL_15_00"); //Â¿QuÃ© pasa contigo?
 
 	if 	(
 		((DJG_SwampParty == TRUE) || (Npc_GetDistToWP(self,"OW_DJG_SWAMP_WAIT2_02")<1000))
 		&& (Npc_IsDead(DJG_Cipher))
 		)
 		{
-			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_01"); //Mira, creo que esto se nos está yendo de las manos. Creo que me voy a escabullir.
+			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_01"); //Mira, creo que esto se nos estÃ¡ yendo de las manos. Creo que me voy a escabullir.
 			DJG_SwampParty = FALSE;
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
 			AI_StopProcessInfos (self);
@@ -166,13 +166,13 @@ func void DIA_RodDJG_WARTEMAL_Info ()
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_02"); //(Maldice) ¡Las botas! ¡Malditas botas!
+			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_02"); //(Maldice) Â¡Las botas! Â¡Malditas botas!
 		};
 
 	if 	(Npc_IsDead(SwampDragon))
 		{
-			AI_Output			(other, self, "DIA_RodDJG_WARTEMAL_15_03"); //¿Y ahora qué vas a hacer?
-			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_04"); //¡Menudas preguntitas! ¡Lo primero, comprarme botas nuevas!
+			AI_Output			(other, self, "DIA_RodDJG_WARTEMAL_15_03"); //Â¿Y ahora quÃ© vas a hacer?
+			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_04"); //Â¡Menudas preguntitas! Â¡Lo primero, comprarme botas nuevas!
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,	"Start");

@@ -22,7 +22,7 @@ FUNC VOID DIA_Gestath_EXIT_Info()
 	
 	if (Hlp_IsItem (heroArmor, ITAR_DJG_Crawler) == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //(Secamente) ¡Bonita armadura!
+		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //(Secamente) Â¡Bonita armadura!
 	};
 	AI_StopProcessInfos (self);
 };
@@ -37,7 +37,7 @@ instance DIA_Gestath_HALLO		(C_INFO)
 	condition	 = 	DIA_Gestath_HALLO_Condition;
 	information	 = 	DIA_Gestath_HALLO_Info;
 
-	description	 = 	"¿Qué pasa?";
+	description	 = 	"Â¿QuÃ© pasa?";
 };
 
 func int DIA_Gestath_HALLO_Condition ()
@@ -47,47 +47,47 @@ func int DIA_Gestath_HALLO_Condition ()
 
 func void DIA_Gestath_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_15_00"); //¿Cómo va todo?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(Secamente) Qué atrevido por tu parte venir aquí. Te perdiste, ¿eh?
+	AI_Output			(other, self, "DIA_Gestath_HALLO_15_00"); //Â¿CÃ³mo va todo?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(Secamente) QuÃ© atrevido por tu parte venir aquÃ­. Te perdiste, Â¿eh?
 	Gestath_TeachAnimalTrophy = TRUE;
 	Info_ClearChoices	(DIA_Gestath_HALLO);
-	Info_AddChoice	(DIA_Gestath_HALLO, "¿Qué hay para ver aquí?", DIA_Gestath_HALLO_waszusehen );
-	Info_AddChoice	(DIA_Gestath_HALLO, "¿Qué estás haciendo aquí arriba?", DIA_Gestath_HALLO_was );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Â¿QuÃ© hay para ver aquÃ­?", DIA_Gestath_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Â¿QuÃ© estÃ¡s haciendo aquÃ­ arriba?", DIA_Gestath_HALLO_was );
 };
 func void DIA_Gestath_HALLO_plate ()
 {
 	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //Vaya armadura que llevas.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Sí. Difícil de encontrar. Está hecha de placas de reptador de la mina. Un tipo llamado Wolf me la hizo.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Yo era convicto, aquí en la colonia. Le di un par de placas de reptador de la mina y, unos días después, ya la había terminado. Es un tipo majo.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //SÃ­. DifÃ­cil de encontrar. EstÃ¡ hecha de placas de reptador de la mina. Un tipo llamado Wolf me la hizo.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Yo era convicto, aquÃ­ en la colonia. Le di un par de placas de reptador de la mina y, unos dÃ­as despuÃ©s, ya la habÃ­a terminado. Es un tipo majo.
 
 	Wolf_ProduceCrawlerArmor = TRUE;
 	
 	Info_AddChoice	(DIA_Gestath_HALLO, DIALOG_BACK, DIA_Gestath_HALLO_Back );
-	Info_AddChoice	(DIA_Gestath_HALLO, "¿Dónde está ahora este Wolf?", DIA_Gestath_HALLO_plate_woWolf );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Â¿DÃ³nde estÃ¡ ahora este Wolf?", DIA_Gestath_HALLO_plate_woWolf );
 };
 func void DIA_Gestath_HALLO_plate_woWolf ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //¿Dónde está ahora este Wolf?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Hace tiempo que no lo veo. Antes era mercenario, aquí en la colonia.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Supongo que sigue por ahí con los chicos.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Â¿DÃ³nde estÃ¡ ahora este Wolf?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Hace tiempo que no lo veo. Antes era mercenario, aquÃ­ en la colonia.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Supongo que sigue por ahÃ­ con los chicos.
 };
 
 func void DIA_Gestath_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //¿Qué estás haciendo aquí arriba?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Estoy aquí para ganar dinero.
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //¿Aquí, en mitad de la nada?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Soy un cazador. Me especializo en casos difíciles.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Lagartos de fuego, reptadores de la mina, dragones chasqueadores... cualquier cosa que nadie más cace. Eso es lo que da dinero.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­ arriba?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Estoy aquÃ­ para ganar dinero.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Â¿AquÃ­, en mitad de la nada?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Soy un cazador. Me especializo en casos difÃ­ciles.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Lagartos de fuego, reptadores de la mina, dragones chasqueadores... cualquier cosa que nadie mÃ¡s cace. Eso es lo que da dinero.
 	
 	Info_AddChoice	(DIA_Gestath_HALLO, "Vaya armadura que llevas.", DIA_Gestath_HALLO_plate );
 };
 
 func void DIA_Gestath_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //¿Qué hay para ver aquí?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Un puñado de lagartos de fuego, orcos y no sé qué más. No he subido mucho a la meseta.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //Te recomiendo que no lo intentes. Las cosas que viven ahí arriba no parecen muy amistosas.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Â¿QuÃ© hay para ver aquÃ­?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Un puÃ±ado de lagartos de fuego, orcos y no sÃ© quÃ© mÃ¡s. No he subido mucho a la meseta.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //Te recomiendo que no lo intentes. Las cosas que viven ahÃ­ arriba no parecen muy amistosas.
 };
 
 func void DIA_Gestath_HALLO_Back ()
@@ -106,7 +106,7 @@ instance DIA_Gestath_Drachen		(C_INFO)
 	information	 = 	DIA_Gestath_Drachen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿También destripas dragones?";
+	description	 = 	"Â¿TambiÃ©n destripas dragones?";
 };
 var int Gestath_DragonTrophy;
 
@@ -121,14 +121,14 @@ func int DIA_Gestath_Drachen_Condition ()
 
 func void DIA_Gestath_Drachen_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //¿También destripas dragones?
+	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Â¿TambiÃ©n destripas dragones?
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(Se ríe) Avísame en otro momento, cuando estés preparado para algo así, ¿vale?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(Se rÃ­e) AvÃ­same en otro momento, cuando estÃ©s preparado para algo asÃ­, Â¿vale?
 	}
 	else
 	{	
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //Claro. ¿Por qué no?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //Claro. Â¿Por quÃ© no?
 		Gestath_DragonTrophy = TRUE;
 	};
 };
@@ -143,7 +143,7 @@ instance DIA_Gestath_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Gestath_TEACHHUNTING_Condition;
 	information	 = 	DIA_Gestath_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Enséñame a desollar animales.";
+	description	 = 	"EnsÃ©Ã±ame a desollar animales.";
 };
 
 func int DIA_Gestath_TEACHHUNTING_Condition ()
@@ -157,7 +157,7 @@ func int DIA_Gestath_TEACHHUNTING_Condition ()
 var int DIA_Gestath_TEACHHUNTING_OneTime;
 func void DIA_Gestath_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //Enséñame a desollar animales.
+	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //EnsÃ©Ã±ame a desollar animales.
 	if 	(
 			(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
@@ -174,12 +174,12 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 			{
 				if (DIA_Gestath_TEACHHUNTING_OneTime == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //¿Por qué no? Tengo suficientes por ahora.
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //Â¿Por quÃ© no? Tengo suficientes por ahora.
 						DIA_Gestath_TEACHHUNTING_OneTime = TRUE;
 					}
 				else
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //¿Qué es lo que quieres saber?
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Â¿QuÃ© es lo que quieres saber?
 					};
 	
 				Info_AddChoice		(DIA_Gestath_TEACHHUNTING, DIALOG_BACK, DIA_Gestath_TEACHHUNTING_BACK);
@@ -194,28 +194,28 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Quitar mandíbulas",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Gestath_TEACHHUNTING_Mandibles	);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Quitar mandÃ­bulas",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Gestath_TEACHHUNTING_Mandibles	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Cuerno de dragón chasqueador",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gestath_TEACHHUNTING_DrgSnapperHorn);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Cuerno de dragÃ³n chasqueador",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gestath_TEACHHUNTING_DrgSnapperHorn);
 				};
 				
 				if (Gestath_DragonTrophy == TRUE)
 				{	
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Quitar escamas de dragón",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Quitar escamas de dragÃ³n",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
 					};
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Recoger sangre de dragón",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  DIA_Gestath_TEACHHUNTING_DragonBlood);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Recoger sangre de dragÃ³n",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  DIA_Gestath_TEACHHUNTING_DragonBlood);
 					};
 				};			
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //En este momento no sé lo que me queda por enseñarte.
+				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //En este momento no sÃ© lo que me queda por enseÃ±arte.
 			};
 };
 
@@ -246,7 +246,7 @@ func void DIA_Gestath_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Las mandíbulas de los incursores de campo y de los reptadores de la mina están ancladas profundamente en su cráneo. Cuesta un poco soltarlas.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Las mandÃ­bulas de los incursores de campo y de los reptadores de la mina estÃ¡n ancladas profundamente en su crÃ¡neo. Cuesta un poco soltarlas.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -255,7 +255,7 @@ func void DIA_Gestath_TEACHHUNTING_DrgSnapperHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //El mejor lugar para soltar el cuerno de un dragón chasqueador de su cráneo es por la parte superior de su frente. Usa una navaja resistente.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //El mejor lugar para soltar el cuerno de un dragÃ³n chasqueador de su crÃ¡neo es por la parte superior de su frente. Usa una navaja resistente.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -264,7 +264,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Las escamas de dragón son realmente robustas, pero cuando crees que no podrás soltarlas, se separan de su espalda.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Las escamas de dragÃ³n son realmente robustas, pero cuando crees que no podrÃ¡s soltarlas, se separan de su espalda.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };

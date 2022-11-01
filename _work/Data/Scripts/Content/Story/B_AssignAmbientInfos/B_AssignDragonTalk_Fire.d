@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Fire_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //El Ojo ha perdido su poder y tú no vas a ver amanecer.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //El Ojo ha perdido su poder y tÃº no vas a ver amanecer.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -61,16 +61,16 @@ FUNC INT DIA_Dragon_Fire_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //No me creo que siga habiendo gente que dé la vida para ver un dragón en carne y hueso.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //No me creo que siga habiendo gente que dÃ© la vida para ver un dragÃ³n en carne y hueso.
 	if (Mis_KilledDragons == 0)
 	{	
 		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Para ser un monstruo tan corpulento, te expresas muy bien.
 	};
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //No he venido solo para verte. Me temo que tenía en mente algo más radical.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //¿Te refieres a que quieres desafiarme?
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ja, ja, ja. Voy a partirte tu pescuezo escuálido.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //No tan deprisa, amigo mío. Llevo encima el Ojo de Innos y no puedes resistirte a mi voluntad. Responde mis preguntas, o sufrirás un dolor insoportable.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(Brama) Arrh. Entonces plantea tus preguntas ridículas mientras puedas. Tu poder no durará mucho.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //No he venido solo para verte. Me temo que tenÃ­a en mente algo mÃ¡s radical.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Â¿Te refieres a que quieres desafiarme?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ja, ja, ja. Voy a partirte tu pescuezo escuÃ¡lido.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //No tan deprisa, amigo mÃ­o. Llevo encima el Ojo de Innos y no puedes resistirte a mi voluntad. Responde mis preguntas, o sufrirÃ¡s un dolor insoportable.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(Brama) Arrh. Entonces plantea tus preguntas ridÃ­culas mientras puedas. Tu poder no durarÃ¡ mucho.
 
 };
 
@@ -84,7 +84,7 @@ instance DIA_Dragon_Fire_WerBistDu		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_WerBistDu_Condition;
 	information	 = 	DIA_Dragon_Fire_WerBistDu_Info;
 
-	description	 = 	"¿Quién eres tú?";
+	description	 = 	"Â¿QuiÃ©n eres tÃº?";
 };
 
 func int DIA_Dragon_Fire_WerBistDu_Condition ()
@@ -97,8 +97,8 @@ func int DIA_Dragon_Fire_WerBistDu_Condition ()
 
 func void DIA_Dragon_Fire_WerBistDu_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //¿Quién eres tú?
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Me llamo Feomathar, y eso es todo lo que vas a saber de mí.
+	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Â¿QuiÃ©n eres tÃº?
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Me llamo Feomathar, y eso es todo lo que vas a saber de mÃ­.
 	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //En cuanto me libre del hechizo del Ojo, vas a arder.
 
 };
@@ -112,7 +112,7 @@ instance DIA_Dragon_Fire_HORT		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_HORT_Condition;
 	information	 = 	DIA_Dragon_Fire_HORT_Info;
 
-	description	 = 	"¿Y dónde está tu tesoro?";
+	description	 = 	"Â¿Y dÃ³nde estÃ¡ tu tesoro?";
 };
 
 func int DIA_Dragon_Fire_HORT_Condition ()
@@ -125,9 +125,9 @@ func int DIA_Dragon_Fire_HORT_Condition ()
 
 func void DIA_Dragon_Fire_HORT_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //Todos los dragones guardan su tesoro en algún lugar. ¿Dónde está tu tesoro?
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //En un lugar al que no podrás acceder en cuanto me libre de las cadenas del Ojo.
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Guardo mi tesoro en lo alto de los barrancos abrasadores, a los que no puede llegar un humano sin alas como tú.
+	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //Todos los dragones guardan su tesoro en algÃºn lugar. Â¿DÃ³nde estÃ¡ tu tesoro?
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //En un lugar al que no podrÃ¡s acceder en cuanto me libre de las cadenas del Ojo.
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Guardo mi tesoro en lo alto de los barrancos abrasadores, a los que no puede llegar un humano sin alas como tÃº.
 
 };
 

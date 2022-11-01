@@ -14,7 +14,7 @@ var int Animals_2_permanent;
 var int Animals_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals1_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -34,12 +34,12 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 					Doc_PrintLine	( nDocID,  0, "Caza y presa"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Toda bestia o criatura posee algún trofeo que constituye la riqueza y la fama de los cazadores experimentados."						);
+					Doc_PrintLines	( nDocID,  0, "Toda bestia o criatura posee algÃºn trofeo que constituye la riqueza y la fama de los cazadores experimentados."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Un cazador con experiencia lo sabe todo acerca de los trofeos de sus presas y, también, cómo obtenerlos de los cadáveres.");
+					Doc_PrintLines	( nDocID,  0, "Un cazador con experiencia lo sabe todo acerca de los trofeos de sus presas y, tambiÃ©n, cÃ³mo obtenerlos de los cadÃ¡veres.");
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Quitar dientes"						);
-					Doc_PrintLines	( nDocID,  0, "Los dientes son las armas de muchas bestias y criaturas. Si sabes cómo extraerlos, los lobos, chasqueadores, bestias de la sombra, tiburones de la ciénaga y trolls son los mejores objetivos."						);
+					Doc_PrintLines	( nDocID,  0, "Los dientes son las armas de muchas bestias y criaturas. Si sabes cÃ³mo extraerlos, los lobos, chasqueadores, bestias de la sombra, tiburones de la ciÃ©naga y trolls son los mejores objetivos."						);
 				
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
@@ -47,7 +47,7 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, "Despellejar"						);
 					Doc_PrintLines	( nDocID,  1, "Un talento que los cazadores con experiencia tienen en gran estima, ya que muchos animales tienen pieles. Por ejemplo, ovejas, lobos y bestias de la sombra."						); 
-					Doc_PrintLines	( nDocID,  1, "Un cazador con esta habilidad también puede despellejar a tiburones de la ciénaga y acechadores."						);
+					Doc_PrintLines	( nDocID,  1, "Un cazador con esta habilidad tambiÃ©n puede despellejar a tiburones de la ciÃ©naga y acechadores."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, "Quitar garras"						);
@@ -63,7 +63,7 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 	};
 };
 
-FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals2_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -82,23 +82,23 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 					Doc_PrintLine	( nDocID,  0, "Caza y presa"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Toda bestia o criatura posee algún trofeo que constituye la riqueza y la fama de los cazadores experimentados."						);
+					Doc_PrintLines	( nDocID,  0, "Toda bestia o criatura posee algÃºn trofeo que constituye la riqueza y la fama de los cazadores experimentados."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Moscas de Sangre"			);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLines	( nDocID,  0, "Dos habilidades especiales que son necesarias para destripar a estos diablos voladores."					); 
 					Doc_PrintLines	( nDocID,  0, "Sus alas se pueden quitar y sus aguijones se pueden extraer." );
-					Doc_PrintLines	( nDocID,  0, "Los dos son artes que deberían usar cazadores experimentados para así reclamar sus trofeos."	);
+					Doc_PrintLines	( nDocID,  0, "Los dos son artes que deberÃ­an usar cazadores experimentados para asÃ­ reclamar sus trofeos."	);
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Los incursores de campo y los reptadores de la mina atacan usando las mandíbulas. Las de los reptadores"						);
-					Doc_PrintLines	( nDocID,  1, "son especialmente valiosas, ya que contienen una secreción que aumenta los poderes mágicos."						);
-					Doc_PrintLines	( nDocID,  1, "Sin embargo, deben usarse con moderación, ya que, con el tiempo, el cuerpo humano deja de reaccionar ante ellas."						);   
-					Doc_PrintLines	( nDocID,  1, "Las placas de reptador también son productos populares. Se pueden usar para fabricar armaduras."						);
+					Doc_PrintLines	( nDocID,  1, "Los incursores de campo y los reptadores de la mina atacan usando las mandÃ­bulas. Las de los reptadores"						);
+					Doc_PrintLines	( nDocID,  1, "son especialmente valiosas, ya que contienen una secreciÃ³n que aumenta los poderes mÃ¡gicos."						);
+					Doc_PrintLines	( nDocID,  1, "Sin embargo, deben usarse con moderaciÃ³n, ya que, con el tiempo, el cuerpo humano deja de reaccionar ante ellas."						);   
+					Doc_PrintLines	( nDocID,  1, "Las placas de reptador tambiÃ©n son productos populares. Se pueden usar para fabricar armaduras."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, " "						);
 					Doc_Show		( nDocID );
@@ -112,7 +112,7 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 	};
 };
 
-FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals3_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -132,11 +132,11 @@ FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
 					Doc_PrintLine	( nDocID,  0, "Caza y presa"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Toda bestia o criatura posee algún trofeo que aumenta la riqueza y la fama de los cazadores experimentados."						);
+					Doc_PrintLines	( nDocID,  0, "Toda bestia o criatura posee algÃºn trofeo que aumenta la riqueza y la fama de los cazadores experimentados."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Lagarto de fuego"						);
 					Doc_PrintLines	( nDocID,  0, "Esta bestia es un lagarto, pero puede escupir fuego que mata a cualquiera que se acerque demasiado."						);
-					Doc_PrintLines	( nDocID,  0, "Solo los que disponen de protección contra el fuego pueden enfrentarse a estas bestias y hacerse con sus valiosas lenguas."	);		
+					Doc_PrintLines	( nDocID,  0, "Solo los que disponen de protecciÃ³n contra el fuego pueden enfrentarse a estas bestias y hacerse con sus valiosas lenguas."	);		
 			
 					
 					
@@ -145,7 +145,7 @@ FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
 					Doc_PrintLine	( nDocID,  1, "La bestia de sombra"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, "La bestia de sombra es una criatura ancestral y solitaria que vive escondida en los bosques."						); 
-					Doc_PrintLines	( nDocID,  1, "Quedan muy pocas, por lo que no significan ningún peligro para los humanos, a menos que éstos se aventuren en sus cotos de caza."						);
+					Doc_PrintLines	( nDocID,  1, "Quedan muy pocas, por lo que no significan ningÃºn peligro para los humanos, a menos que Ã©stos se aventuren en sus cotos de caza."						);
 					Doc_PrintLines	( nDocID,  1, "El cuerno de la bestia de sombra se considera un valioso trofeo de caza. Para reclamarlo, un cazador tiene"						);
 					Doc_PrintLines	( nDocID,  1, "que aprender a quitarlo."						);
 					Doc_PrintLine	( nDocID,  1, ""						);

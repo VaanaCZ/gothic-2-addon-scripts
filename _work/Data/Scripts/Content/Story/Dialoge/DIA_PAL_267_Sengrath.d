@@ -41,11 +41,11 @@ FUNC INT DIA_Sengrath_Hello_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //¡Lo sabía! ¡Sabía que alguien lo conseguiría!
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //¿Has venido por el paso? ¿Entonces nuestro mensajero consiguió pasar?
-	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //No, no lo consiguió. He venido por orden de lord Hagen.
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(Gruñendo) Malditos orcos...
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Bien, seguro que el comandante Garond quiere hablar contigo. Lo encontrarás en el edificio grande que está vigilado por dos caballeros.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //Â¡Lo sabÃ­a! Â¡SabÃ­a que alguien lo conseguirÃ­a!
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Â¿Has venido por el paso? Â¿Entonces nuestro mensajero consiguiÃ³ pasar?
+	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //No, no lo consiguiÃ³. He venido por orden de lord Hagen.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(GruÃ±endo) Malditos orcos...
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Bien, seguro que el comandante Garond quiere hablar contigo. Lo encontrarÃ¡s en el edificio grande que estÃ¡ vigilado por dos caballeros.
 };
 // ************************************************************
 // 			  	Equipment 
@@ -57,7 +57,7 @@ INSTANCE DIA_Sengrath_Equipment (C_INFO)
 	condition	= DIA_Sengrath_Equipment_Condition;
 	information	= DIA_Sengrath_Equipment_Info;
 	permanent	= FALSE;
-	description = "Y por aquí, ¿dónde puedo encontrar equipo?";
+	description = "Y por aquÃ­, Â¿dÃ³nde puedo encontrar equipo?";
 };                       
 
 FUNC INT DIA_Sengrath_Equipment_Condition()
@@ -66,10 +66,10 @@ FUNC INT DIA_Sengrath_Equipment_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Equipment_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Y por aquí, ¿dónde puedo encontrar equipo?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //De las armas se encarga Tandor. De todo lo demás, Engor, el senescal.
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //¿Y material mágico?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //Tenemos pergaminos de conjuros. Si quieres alguno, házmelo saber.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Y por aquÃ­, Â¿dÃ³nde puedo encontrar equipo?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //De las armas se encarga Tandor. De todo lo demÃ¡s, Engor, el senescal.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //Â¿Y material mÃ¡gico?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //Tenemos pergaminos de conjuros. Si quieres alguno, hÃ¡zmelo saber.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
 	B_LogEntry (TOPIC_Trader_OC,"Sengrath vende pergaminos de conjuros en el castillo.");
@@ -84,7 +84,7 @@ INSTANCE DIA_Sengrath_Perm (C_INFO)
 	condition	= DIA_Sengrath_Perm_Condition;
 	information	= DIA_Sengrath_Perm_Info;
 	permanent	= FALSE;
-	description = "¿Quién puede enseñarme algo aquí?";
+	description = "Â¿QuiÃ©n puede enseÃ±arme algo aquÃ­?";
 };                       
 
 FUNC INT DIA_Sengrath_Perm_Condition()
@@ -93,16 +93,16 @@ FUNC INT DIA_Sengrath_Perm_Condition()
 };
 FUNC VOID DIA_Sengrath_Perm_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //¿Quién me puede enseñar algo?
+	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //Â¿QuiÃ©n me puede enseÃ±ar algo?
 	
 	if (other.guild == GIL_KDF)
 	&& (Kapitel == 2)
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_01"); //Habla con Milten, es el único mago que hay por aquí.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_01"); //Habla con Milten, es el Ãºnico mago que hay por aquÃ­.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Pregunta a Keroloth. Entrena a los chicos en el combate con espada. Quizá te pueda enseñar también a ti.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Pregunta a Keroloth. Entrena a los chicos en el combate con espada. QuizÃ¡ te pueda enseÃ±ar tambiÃ©n a ti.
 		
 		Log_CreateTopic (TOPIC_Teacher_OC,LOG_NOTE);
 		B_LogEntry (TOPIC_Teacher_OC,"Kelroth entrena espadachines en el castillo.");
@@ -119,7 +119,7 @@ INSTANCE DIA_Sengrath_Scrolls (C_INFO)
 	information	= DIA_Sengrath_Scrolls_Info;
 	permanent	= TRUE;
 	trade		= TRUE;
-	description = "Enséñame tus pergaminos de conjuro.";
+	description = "EnsÃ©Ã±ame tus pergaminos de conjuro.";
 
 };                       
 
@@ -133,7 +133,7 @@ FUNC INT DIA_Sengrath_Scrolls_Condition()
 FUNC VOID DIA_Sengrath_Scrolls_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Sengrath_Scrolls_15_00"); //Enséñame tus pergaminos de conjuros.
+	AI_Output (other ,self,"DIA_Sengrath_Scrolls_15_00"); //EnsÃ©Ã±ame tus pergaminos de conjuros.
 };
 
 // ************************************************************

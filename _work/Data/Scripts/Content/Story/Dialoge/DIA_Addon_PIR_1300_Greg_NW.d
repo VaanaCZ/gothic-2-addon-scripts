@@ -53,29 +53,29 @@ func int DIA_Addon_Greg_NW_Hallo_Condition ()
 func void DIA_Addon_Greg_NW_Hallo_Info ()
 {
 
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_00"); //Psst. Eh, t˙. Ven.
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_Hallo_15_01"); //øQuÈ ocurre?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_02"); //øVas a la ciudad? Y se te ve ocupado.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_03"); //(falso) Mira, me pareces un tipo inteligente. Veo que llegar·s lejos en la vida.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_04"); //No te dejas engaÒar por nadie, eso se ve a leguas.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_05"); //Dime, no te importarÌa ganarte un par de monedas, øverdad?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_00"); //Psst. Eh, t√∫. Ven.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_Hallo_15_01"); //¬øQu√© ocurre?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_02"); //¬øVas a la ciudad? Y se te ve ocupado.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_03"); //(falso) Mira, me pareces un tipo inteligente. Veo que llegar√°s lejos en la vida.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_04"); //No te dejas enga√±ar por nadie, eso se ve a leguas.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_05"); //Dime, no te importar√≠a ganarte un par de monedas, ¬øverdad?
 
 	PlayerTalkedToGregNW	= TRUE;
 	SC_MeetsGregTime = 1; //Joly: erste Mal getroffen.
 
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Hallo);
 	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Me tengo que ir.", DIA_Addon_Greg_NW_Hallo_weg );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "DÈjate de tonterÌas. Dime quÈ quieres.", DIA_Addon_Greg_NW_Hallo_schleim );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "D√©jate de tonter√≠as. Dime qu√© quieres.", DIA_Addon_Greg_NW_Hallo_schleim );
 	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "No tienes aspecto de tener mucho oro.", DIA_Addon_Greg_NW_Hallo_vorsicht );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "øTe escondes de alguien?", DIA_Addon_Greg_NW_Hallo_hide );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "øPor quÈ?", DIA_Addon_Greg_NW_Hallo_ja );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "¬øTe escondes de alguien?", DIA_Addon_Greg_NW_Hallo_hide );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "¬øPor qu√©?", DIA_Addon_Greg_NW_Hallo_ja );
 
 };
 
 func void DIA_Addon_Greg_NW_Hallo_weg ()
 {
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_weg_15_00"); //Me tengo que ir.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_weg_01_01"); //(molesto) AsÌ que no piensas ayudarme. Lo recordarÈ, amigo. Nos volveremos a ver.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_weg_01_01"); //(molesto) As√≠ que no piensas ayudarme. Lo recordar√©, amigo. Nos volveremos a ver.
 
 	AI_StopProcessInfos (self);
 	MIS_Addon_Greg_BringMeToTheCity = LOG_FAILED;
@@ -83,12 +83,12 @@ func void DIA_Addon_Greg_NW_Hallo_weg ()
 
 func void DIA_Addon_Greg_NW_Hallo_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_ja_15_00"); //øPor quÈ no?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_01"); //Tendr·s que perdonar a este viejo marinero ignorante, soy nuevo en esta zona y no conozco bien las normas.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_02"); //TendrÈ que aprender por las malas que los forasteros no son bien recibidos en esta ciudad portuaria.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_03"); //(compadeciÈndose a sÌ mismo exageradamente) Ahora me quedarÈ aquÌ, sin saber cÛmo entrar en la ciudad.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_04"); //Tengo pendiente un asunto de suma importancia y mi cliente no admite retrasos, øentiendes?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_05"); //Me ayudar·s a encontrar el modo de superar a la guardia de la ciudad, øverdad?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_ja_15_00"); //¬øPor qu√© no?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_01"); //Tendr√°s que perdonar a este viejo marinero ignorante, soy nuevo en esta zona y no conozco bien las normas.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_02"); //Tendr√© que aprender por las malas que los forasteros no son bien recibidos en esta ciudad portuaria.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_03"); //(compadeci√©ndose a s√≠ mismo exageradamente) Ahora me quedar√© aqu√≠, sin saber c√≥mo entrar en la ciudad.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_04"); //Tengo pendiente un asunto de suma importancia y mi cliente no admite retrasos, ¬øentiendes?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_05"); //Me ayudar√°s a encontrar el modo de superar a la guardia de la ciudad, ¬øverdad?
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Hallo);
 	
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
@@ -101,26 +101,26 @@ func void DIA_Addon_Greg_NW_Hallo_ja ()
 func void DIA_Addon_Greg_NW_Hallo_vorsicht ()
 {
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_vorsicht_15_00"); //No tienes aspecto de tener mucho oro.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_01"); //(exageradamente modesto) Bueno, claro, no me muevo por los mismos cÌrculos que t˙.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_02"); //Pero no rechazar·s mi modesta contribuciÛn a tu indudable gran fortuna, øverdad?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_03"); //Bien, øquÈ me dices? øPuedo contar contigo?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_01"); //(exageradamente modesto) Bueno, claro, no me muevo por los mismos c√≠rculos que t√∫.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_02"); //Pero no rechazar√°s mi modesta contribuci√≥n a tu indudable gran fortuna, ¬øverdad?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_03"); //Bien, ¬øqu√© me dices? ¬øPuedo contar contigo?
 
 };
 
 func void DIA_Addon_Greg_NW_Hallo_schleim ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_schleim_15_00"); //DÈjate de tonterÌas. Dime quÈ quieres.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_01"); //øVes? A eso me refiero.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_02"); //Nadie consigue nada contigo sÛlo con buenas palabras.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_03"); //Lo sabÌa. Estoy tratando con un hueso duro de roer.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_04"); //Eres comerciante, asÌ que estar·s interesado en ganarte algo de dinero, øverdad?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_schleim_15_00"); //D√©jate de tonter√≠as. Dime qu√© quieres.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_01"); //¬øVes? A eso me refiero.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_02"); //Nadie consigue nada contigo s√≥lo con buenas palabras.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_03"); //Lo sab√≠a. Estoy tratando con un hueso duro de roer.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_04"); //Eres comerciante, as√≠ que estar√°s interesado en ganarte algo de dinero, ¬øverdad?
 };
 
 func void DIA_Addon_Greg_NW_Hallo_hide ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_hide_15_00"); //øTe escondes de alguien?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_01"); //Claro que no. QuÈ estupidez. Disfruto agazapado entre los ·rboles, para que el viento no me dÈ en la cara.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_02"); //øY quÈ me dices de ti? øTe interesa el trabajo?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_hide_15_00"); //¬øTe escondes de alguien?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_01"); //Claro que no. Qu√© estupidez. Disfruto agazapado entre los √°rboles, para que el viento no me d√© en la cara.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_02"); //¬øY qu√© me dices de ti? ¬øTe interesa el trabajo?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -134,7 +134,7 @@ instance DIA_Addon_Greg_NW_Stadtwachen		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_Stadtwachen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Sobre los guardias de la ciudadÖ";
+	description	 = 	"Sobre los guardias de la ciudad‚Ä¶";
 };
 
 func int DIA_Addon_Greg_NW_Stadtwachen_Condition ()
@@ -153,14 +153,14 @@ VAR int DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino;
 func void DIA_Addon_Greg_NW_Stadtwachen_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_Stadtwachen_15_00"); //Sobre los guardias de la ciudad
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Stadtwachen_01_01"); //øSÌ? øAlguna idea?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Stadtwachen_01_01"); //¬øS√≠? ¬øAlguna idea?
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Stadtwachen);
 	Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Tengo que meditar al respecto.", DIA_Addon_Greg_NW_Stadtwachen_nochnicht );
 
 	if (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_geld == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "øY quÈ hay del soborno?", DIA_Addon_Greg_NW_Stadtwachen_geld );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "¬øY qu√© hay del soborno?", DIA_Addon_Greg_NW_Stadtwachen_geld );
 	};
 
 	if (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_Schein == FALSE)
@@ -172,18 +172,18 @@ func void DIA_Addon_Greg_NW_Stadtwachen_Info ()
 	if (MIS_Addon_Lester_PickForConstantino != 0)
 	&& (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "PodrÌas entrar en la ciudad como recolector de hierba.", DIA_Addon_Greg_NW_Stadtwachen_constantino );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Podr√≠as entrar en la ciudad como recolector de hierba.", DIA_Addon_Greg_NW_Stadtwachen_constantino );
 	};
 
 	IF	((Npc_HasItems (other,ItAr_BAU_L)) || (Npc_HasItems (other,ItAr_BAU_M)))
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "DeberÌan dejarte pasar si llevas esta ropa de granjero.", DIA_Addon_Greg_NW_Stadtwachen_klamotten );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Deber√≠an dejarte pasar si llevas esta ropa de granjero.", DIA_Addon_Greg_NW_Stadtwachen_klamotten );
 	};
 };
 
 func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_00"); //DeberÌan dejarte pasar si llevas esta ropa de granjero.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_00"); //Deber√≠an dejarte pasar si llevas esta ropa de granjero.
 
 	if (Npc_HasItems (other,ItAr_BAU_L))
 	{
@@ -194,8 +194,8 @@ func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 		B_GiveInvItems 		(other, self, ITAR_BAU_M,1);
 	};
 
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_01"); //Justo lo que necesito. Eh, sabÌa que podÌa contar contigo.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_02"); //(maliciosamente) Nadie me molestar· disfrazado como un paleto local, jaja.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_01"); //Justo lo que necesito. Eh, sab√≠a que pod√≠a contar contigo.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_02"); //(maliciosamente) Nadie me molestar√° disfrazado como un paleto local, jaja.
 
 	if (Npc_HasItems (self,ItAr_BAU_L))
 	{
@@ -206,47 +206,47 @@ func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 		AI_EquipArmor 		(self,ITAR_BAU_M);
 	};
 	
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_03"); //Excelente. Lo has hecho muy bien. AquÌ tienes tu recompensa.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_03"); //Excelente. Lo has hecho muy bien. Aqu√≠ tienes tu recompensa.
 	
 	CreateInvItems (self, ItMi_Gold, 50);									
 	B_GiveInvItems (self, other, ItMi_Gold, 50);	
 	B_GivePlayerXP (XP_Greg_NW_GiveBauArmor);				
 	
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_04"); //(molesto) øQuÈ? ø50 mÌseras monedas de oro? No hablar·s en serio.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_05"); //(condescendiente) El oro no lo es todo, amigo. AcÈptalo de momento.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_06"); //Me da la impresiÛn de que pronto volveremos a vernos.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_07"); //øY quiÈn sabe? Quiz· te devuelva el favor. CuÌdate.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_04"); //(molesto) ¬øQu√©? ¬ø50 m√≠seras monedas de oro? No hablar√°s en serio.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_05"); //(condescendiente) El oro no lo es todo, amigo. Ac√©ptalo de momento.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_06"); //Me da la impresi√≥n de que pronto volveremos a vernos.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_07"); //¬øY qui√©n sabe? Quiz√° te devuelva el favor. Cu√≠date.
 	AI_StopProcessInfos (self);
 
 	Npc_ExchangeRoutine	(self,"Markt");
 
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Le he dado ropa de granjero. Con ella, podr· pasar por delante de los guardias."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Le he dado ropa de granjero. Con ella, podr√° pasar por delante de los guardias."); 
 
 	MIS_Addon_Greg_BringMeToTheCity = LOG_SUCCESS;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_15_00"); //TendrÈ que pensarlo antes.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_15_00"); //Tendr√© que pensarlo antes.
 	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_01_01"); //(serio) Muy bien. Pero date prisa. No tengo tiempo que perder.
 	AI_StopProcessInfos (self);
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_Schein ()
 {
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_Schein_15_00"); //Tengo un pase para la ciudad.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_01"); //(cÌnico) Ah, ya veo. øSe supone que debo fingir que soy ciudadano de la ciudad o quÈ?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_02"); //(molesto) MÌrame a los ojos, chico. Nadie va a trag·rselo.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_01"); //(c√≠nico) Ah, ya veo. ¬øSe supone que debo fingir que soy ciudadano de la ciudad o qu√©?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_02"); //(molesto) M√≠rame a los ojos, chico. Nadie va a trag√°rselo.
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_Schein = TRUE;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_constantino ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_constantino_15_00"); //PodrÌas entrar en la ciudad como recolector de hierba.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_constantino_01_01"); //(molesto) øQuÈ? øTengo pinta de ir recogiendo flores por el bosque?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_constantino_15_00"); //Podr√≠as entrar en la ciudad como recolector de hierba.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_constantino_01_01"); //(molesto) ¬øQu√©? ¬øTengo pinta de ir recogiendo flores por el bosque?
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino = TRUE;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_geld ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_geld_15_00"); //øY quÈ hay del soborno?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_geld_01_01"); //(bruscamente) Si eso funcionara conmigo, ya lo habrÌa intentado.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_geld_15_00"); //¬øY qu√© hay del soborno?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_geld_01_01"); //(bruscamente) Si eso funcionara conmigo, ya lo habr√≠a intentado.
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_geld = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -260,7 +260,7 @@ instance DIA_Addon_Greg_NW_PERM		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Una cosa m·s...";
+	description	 = 	"Una cosa m√°s...";
 };
 func int DIA_Addon_Greg_NW_PERM_Condition ()
 {
@@ -272,9 +272,9 @@ func int DIA_Addon_Greg_NW_PERM_Condition ()
 };
 func void DIA_Addon_Greg_NW_PERM_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_PERM_15_00"); //Una cosa m·s
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_PERM_15_00"); //Una cosa m√°s
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_01"); //(arrogante) Escucha, chaval. Tengo cosas importantes que hacer.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_02"); //(amenazante) Ya volveremos a hablar, øde acuerdo?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_02"); //(amenazante) Ya volveremos a hablar, ¬øde acuerdo?
 	AI_StopProcessInfos (self);
 };
 
@@ -308,7 +308,7 @@ func int DIA_Addon_Greg_NW_MeetGregSecondTime_Condition ()
 
 func void DIA_Addon_Greg_NW_MeetGregSecondTime_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_00"); //Mira quiÈn ha venido.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_00"); //Mira qui√©n ha venido.
 
 	if (MIS_Addon_Greg_BringMeToTheCity == LOG_SUCCESS)
 	{
@@ -316,13 +316,13 @@ func void DIA_Addon_Greg_NW_MeetGregSecondTime_Info ()
 	}
 	else if (MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_02"); //El tipo que pasÛ de mÌ descaradamente. Volvemos a encontrarnos, øeh?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_02"); //El tipo que pas√≥ de m√≠ descaradamente. Volvemos a encontrarnos, ¬øeh?
 	}
 	else if (MIS_Addon_Greg_BringMeToTheCity == LOG_RUNNING)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_03"); //(enfadado) CreÌa que querÌas ayudarme. Y en vez de eso, te largaste.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_04"); //Pensabas que me quedarÌa aquÌ para siempre, øverdad?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_05"); //Pues ahora ver·s. Ay˙date t˙, porque nadie m·s lo har·. No pienso dejar que esto quede impune.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_03"); //(enfadado) Cre√≠a que quer√≠as ayudarme. Y en vez de eso, te largaste.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_04"); //Pensabas que me quedar√≠a aqu√≠ para siempre, ¬øverdad?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_05"); //Pues ahora ver√°s. Ay√∫date t√∫, porque nadie m√°s lo har√°. No pienso dejar que esto quede impune.
 	};
 
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_06"); //Llegas justo a tiempo.
@@ -339,7 +339,7 @@ instance DIA_Addon_Greg_NW_wer		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_wer_Condition;
 	information	 = 	DIA_Addon_Greg_NW_wer_Info;
 
-	description	 = 	"øY t˙ quiÈn eres?";
+	description	 = 	"¬øY t√∫ qui√©n eres?";
 };
 
 func int DIA_Addon_Greg_NW_wer_Condition ()
@@ -352,9 +352,9 @@ func int DIA_Addon_Greg_NW_wer_Condition ()
 
 func void DIA_Addon_Greg_NW_wer_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_wer_15_00"); //øY t˙ quiÈn eres?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_wer_15_00"); //¬øY t√∫ qui√©n eres?
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_01"); //Eso no te concierne.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_02"); //Si quisiera decirte quiÈn soy, ya lo hubiera hecho, ølo captas?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_02"); //Si quisiera decirte qui√©n soy, ya lo hubiera hecho, ¬ølo captas?
 
 	
 };
@@ -369,7 +369,7 @@ instance DIA_Addon_Greg_NW_was		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_was_Condition;
 	information	 = 	DIA_Addon_Greg_NW_was_Info;
 
-	description	 = 	"øQuÈ quieres de mÌ?";
+	description	 = 	"¬øQu√© quieres de m√≠?";
 };
 
 func int DIA_Addon_Greg_NW_was_Condition ()
@@ -382,9 +382,9 @@ func int DIA_Addon_Greg_NW_was_Condition ()
 
 func VOID B_Greg_Search_Dexter ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_00"); //Estoy buscando a alguien. No hay rastro de Èl en la ciudad y estos perdedores de aquÌ tampoco tienen ni idea.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_00"); //Estoy buscando a alguien. No hay rastro de √©l en la ciudad y estos perdedores de aqu√≠ tampoco tienen ni idea.
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_01"); //Es delgado, de pelo oscuro y suele llevar armadura roja.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_02"); //Por lo que sÈ, era prisionero en la colonia. Creo que su nombre empieza por D.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_02"); //Por lo que s√©, era prisionero en la colonia. Creo que su nombre empieza por D.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
@@ -395,12 +395,12 @@ func VOID B_Greg_Search_Dexter ()
 
 func void DIA_Addon_Greg_NW_was_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_00"); //øQuÈ quieres de mÌ?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_00"); //¬øQu√© quieres de m√≠?
 
 	if (MIS_Addon_Greg_BringMeToTheCity != 0)
 	{
-		AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_01"); //øA˙n tienes problemas con los guardias de la ciudad?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_was_01_02"); //(amenazante) Yo te DAR… problemas, granuja.
+		AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_01"); //¬øA√∫n tienes problemas con los guardias de la ciudad?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_was_01_02"); //(amenazante) Yo te DAR√â problemas, granuja.
 	};	
 
 	B_Greg_Search_Dexter ();
@@ -411,46 +411,46 @@ func void DIA_Addon_Greg_NW_was_Info ()
 	if (Bdt13_Dexter_verraten == TRUE) 
 	|| (Ranger_SCKnowsDexter == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_was, "øNo se llamar· Dexter?", DIA_Addon_Greg_NW_was_Dexter );
+		Info_AddChoice	(DIA_Addon_Greg_NW_was, "¬øNo se llamar√° Dexter?", DIA_Addon_Greg_NW_was_Dexter );
 	};
 	
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "No conozco a nadie que concuerde con esa descripciÛn.", DIA_Addon_Greg_NW_was_no );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "No conozco a nadie que concuerde con esa descripci√≥n.", DIA_Addon_Greg_NW_was_no );
 };
 
 func void DIA_Addon_Greg_NW_was_GregUnsicher ()
 {
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_00"); //Puede ser que se llame asÌ. No estoy seguro.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_00"); //Puede ser que se llame as√≠. No estoy seguro.
 	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_01"); //Probablemente lo sepa cuando lo vea, no antes.
 };
 
 func void DIA_Addon_Greg_NW_was_UnNun ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_UnNun_15_00"); //øAlgo m·s?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_01"); //(enfadado) SÌ, bocazas. Hay algo m·s.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_02"); //Necesito armas. Necesito provisiones. Algo de oro tampoco me vendrÌa mal.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_UnNun_15_00"); //¬øAlgo m√°s?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_01"); //(enfadado) S√≠, bocazas. Hay algo m√°s.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_02"); //Necesito armas. Necesito provisiones. Algo de oro tampoco me vendr√≠a mal.
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_was);
 	Info_AddChoice	(DIA_Addon_Greg_NW_was, "No puedo ayudarte.", DIA_Addon_Greg_NW_was_NoHelp );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "øProvisiones? Est·s en una taberna.", DIA_Addon_Greg_NW_was_Orlan );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "øArmas? Los mercenarios tienen armas.", DIA_Addon_Greg_NW_was_SLD );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "¬øProvisiones? Est√°s en una taberna.", DIA_Addon_Greg_NW_was_Orlan );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "¬øArmas? Los mercenarios tienen armas.", DIA_Addon_Greg_NW_was_SLD );
 	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Toma, 10 monedas de oro.", DIA_Addon_Greg_NW_was_HierGold );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "øNo has encontrado un mercader de armas en la ciudad?", DIA_Addon_Greg_NW_was_Waffenhaendler );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "øOro? Todos queremos oro.", DIA_Addon_Greg_NW_was_Gold );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "¬øNo has encontrado un mercader de armas en la ciudad?", DIA_Addon_Greg_NW_was_Waffenhaendler );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "¬øOro? Todos queremos oro.", DIA_Addon_Greg_NW_was_Gold );
 };
 
 func void DIA_Addon_Greg_NW_was_NoHelp ()
 {
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_NoHelp_15_00"); //No puedo ayudarte.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_01"); //(enfadado) Ser· que no QUIERES.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_01"); //(enfadado) Ser√° que no QUIERES.
 	
 	if ((MIS_Addon_Greg_BringMeToTheCity == LOG_RUNNING) || (MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED))
 	{
 		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_02"); //Es la segunda vez que me dejas colgado.
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_03"); //DÈjame darte un buen consejo: procura que no volvamos a encontrarnos.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_03"); //D√©jame darte un buen consejo: procura que no volvamos a encontrarnos.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_04"); //Lo recordarÈ. Cuenta con ello.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_04"); //Lo recordar√©. Cuenta con ello.
 	};	
 	
 	MIS_Addon_Greg_RakeCave = LOG_OBSOLETE;
@@ -463,25 +463,25 @@ func void DIA_Addon_Greg_NW_was_NoHelp ()
 
 func void DIA_Addon_Greg_NW_was_Gold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_00"); //øOro? Todos queremos oro.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_01"); //PodrÌa ser. øY t˙ quÈ harÌas con Èl? Beberte lo que pillaras en la taberna o gast·rtelo en el burdel, o eso creo yo.
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_02"); //øY t˙ tienes un plan mejor?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_03"); //(enfadado) Verg¸enza te darÌa hablar si supieras lo que he hecho.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_04"); //AsÌ que no hables tanto o tendrÈ que cerrarte esa bocaza.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_00"); //¬øOro? Todos queremos oro.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_01"); //Podr√≠a ser. ¬øY t√∫ qu√© har√≠as con √©l? Beberte lo que pillaras en la taberna o gast√°rtelo en el burdel, o eso creo yo.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_02"); //¬øY t√∫ tienes un plan mejor?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_03"); //(enfadado) Verg√ºenza te dar√≠a hablar si supieras lo que he hecho.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_04"); //As√≠ que no hables tanto o tendr√© que cerrarte esa bocaza.
 };
 
 func void DIA_Addon_Greg_NW_was_Waffenhaendler ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Waffenhaendler_15_00"); //øNo has encontrado un mercader de armas en la ciudad?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Waffenhaendler_01_01"); //°No hablar·s en serio! No tienen nada bueno.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Waffenhaendler_15_00"); //¬øNo has encontrado un mercader de armas en la ciudad?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Waffenhaendler_01_01"); //¬°No hablar√°s en serio! No tienen nada bueno.
 };
 
 func void DIA_Addon_Greg_NW_was_HierGold ()
 {
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_HierGold_15_00"); //Toma, 10 monedas de oro.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_01"); //(rÌe) Maldito desgraciado, gu·rdate lo tuyo. Tengo una idea mejor.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_02"); //°Hay una cueva cerca de aquÌ! Yo ya he estado en ese lugar y he enterrado mis cosas en varios sitios.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_03"); //La cueva es demasiado peligrosa para ir yo solo. NecesitarÌa que me ayudaras.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_01"); //(r√≠e) Maldito desgraciado, gu√°rdate lo tuyo. Tengo una idea mejor.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_02"); //¬°Hay una cueva cerca de aqu√≠! Yo ya he estado en ese lugar y he enterrado mis cosas en varios sitios.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_03"); //La cueva es demasiado peligrosa para ir yo solo. Necesitar√≠a que me ayudaras.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
@@ -493,21 +493,21 @@ func void DIA_Addon_Greg_NW_was_HierGold ()
 
 func void DIA_Addon_Greg_NW_was_SLD ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_SLD_15_00"); //øArmas? Los mercenarios tienen armas.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_01"); //Interesante. He oÌdo que el granjero Onar ha contratado a los chicos.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_02"); //(rÌe) No est· mal para ese lobo de mar.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_03"); //No es mala idea. DeberÌa hacerles una visita.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_SLD_15_00"); //¬øArmas? Los mercenarios tienen armas.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_01"); //Interesante. He o√≠do que el granjero Onar ha contratado a los chicos.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_02"); //(r√≠e) No est√° mal para ese lobo de mar.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_03"); //No es mala idea. Deber√≠a hacerles una visita.
 };
 func void DIA_Addon_Greg_NW_was_Orlan ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Orlan_15_00"); //øProvisiones? Est·s en una taberna.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Orlan_01_01"); //Ese est˙pido camarero no va a decirte nada a menos que pagues por ello.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Orlan_15_00"); //¬øProvisiones? Est√°s en una taberna.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Orlan_01_01"); //Ese est√∫pido camarero no va a decirte nada a menos que pagues por ello.
 };
 
 func void DIA_Addon_Greg_NW_was_no ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_no_15_00"); //No conozco a nadie que concuerde con esa descripciÛn.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_no_01_01"); //DeberÌa habÈrmelo imaginado.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_no_15_00"); //No conozco a nadie que concuerde con esa descripci√≥n.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_no_01_01"); //Deber√≠a hab√©rmelo imaginado.
 	DIA_Addon_Greg_NW_was_UnNun ();
 };
 
@@ -520,7 +520,7 @@ func void DIA_Addon_Greg_NW_was_Diego ()
 
 func void DIA_Addon_Greg_NW_was_Dexter ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Dexter_15_00"); //øNo se llamar· Dexter?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Dexter_15_00"); //¬øNo se llamar√° Dexter?
 	DIA_Addon_Greg_NW_was_GregUnsicher ();
 	DIA_Addon_Greg_NW_was_UnNun ();
 };
@@ -562,7 +562,7 @@ func void DIA_Addon_Greg_NW_RakeCaveLos_Info ()
 ///////////////////////////////////////////////////////////////////////
 	func void B_Greg_GoNow()
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_03"); //(ordenando) øA quÈ esperas? MÈtete y saca todo.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_03"); //(ordenando) ¬øA qu√© esperas? M√©tete y saca todo.
 	};
 // --------------------------------------------------------------------
 
@@ -589,17 +589,17 @@ func int DIA_Addon_Greg_NW_RakeCaveThere_Condition ()
 
 func void DIA_Addon_Greg_NW_RakeCaveThere_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_00"); //Muy bien, amigo. AquÌ est· la cueva.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_01"); //Y aquÌ tienes una pica.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_00"); //Muy bien, amigo. Aqu√≠ est√° la cueva.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_01"); //Y aqu√≠ tienes una pica.
 	B_GiveInvItems (self, other, itmw_2h_Axe_L_01, 1); //Spitzhacke	
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_02"); //He enterrado mis cosas ahÌ dentro. El lugar est· marcado con una X.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_02"); //He enterrado mis cosas ah√≠ dentro. El lugar est√° marcado con una X.
 	B_Greg_GoNow();
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveThere_15_04"); //øY quÈ pasa contigo?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveThere_15_04"); //¬øY qu√© pasa contigo?
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_05"); //Alguien tiene que cubrirnos las espaldas. Y ahora, adentro.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Quiere que busque sus cosas en la cueva. Lo enterrÛ todo y marcÛ el lugar con una cruz. Me ha dado una pica para la misiÛn. "); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Quiere que busque sus cosas en la cueva. Lo enterr√≥ todo y marc√≥ el lugar con una cruz. Me ha dado una pica para la misi√≥n. "); 
 
 	MIS_Addon_Greg_RakeCave_Day = Wld_GetDay(); 
 };
@@ -630,11 +630,11 @@ func int DIA_Addon_Greg_NW_RakeCavePlundered_Condition ()
 
 func void DIA_Addon_Greg_NW_RakeCavePlundered_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_01_00"); //øPor quÈ has tardado tanto? øHas encontrado algo?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_01_00"); //¬øPor qu√© has tardado tanto? ¬øHas encontrado algo?
 	
 	if (RAKEPLACE[Greg_FirstSecret] == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "SÌ. He encontrado una bolsita de oro.", DIA_Addon_Greg_NW_RakeCavePlundered_gold );
+		Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "S√≠. He encontrado una bolsita de oro.", DIA_Addon_Greg_NW_RakeCavePlundered_gold );
 	};
 	Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "No.", DIA_Addon_Greg_NW_RakeCavePlundered_No );
 };
@@ -643,10 +643,10 @@ func void DIA_Addon_Greg_NW_RakeCavePlundered_No ()
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_00"); //No.
 	if (RAKEPLACE[Greg_FirstSecret] == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_01"); //Me tomas el pelo, øno es asÌ?
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_02"); //(haciÈndose el inocente) No habÌa nada DENTRO.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_01"); //Me tomas el pelo, ¬øno es as√≠?
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_02"); //(haci√©ndose el inocente) No hab√≠a nada DENTRO.
 	};	
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_03"); //Mierda. Lo sabÌa. Esos buitres me han vuelto a coger la delantera.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_03"); //Mierda. Lo sab√≠a. Esos buitres me han vuelto a coger la delantera.
 	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_04"); //Oh, vaya. Tranquilo, amigo. Tengo que irme. Nos vemos.
 	AI_StopProcessInfos (self);
 	GregLocation = Greg_Bigcross;
@@ -656,40 +656,40 @@ func void DIA_Addon_Greg_NW_RakeCavePlundered_No ()
 var int B_Greg_RakePlaceBriefing_OneTime;
 func void B_Greg_RakePlaceBriefing ()
 {
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_00"); //Veamos. En el pequeÒo lago con las dos cascadas hay una isleta, allÌ deberÌa haber un escondite mÌo.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_01"); //He enterrado cosas en dos lugares m·s, en los altos pastos.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_02"); //Uno de los sitios est· allÌ arriba, tras la granja, y el otro, junto a la entrada al paso de las cascadas.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_00"); //Veamos. En el peque√±o lago con las dos cascadas hay una isleta, all√≠ deber√≠a haber un escondite m√≠o.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_01"); //He enterrado cosas en dos lugares m√°s, en los altos pastos.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_02"); //Uno de los sitios est√° all√≠ arriba, tras la granja, y el otro, junto a la entrada al paso de las cascadas.
 	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_03"); //Hay unas escaleras que bajan desde las tierras del granjero a las del propietario.
 	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_04"); //Hay otro alijo en la hondonada del final de las escaleras.
 
 	if (B_Greg_RakePlaceBriefing_OneTime == FALSE)
 	{
-		B_LogEntry (TOPIC_Addon_Greg_NW,"EnterrÛ sus cosas en m·s de un sitio. 1) En la pequeÒa isla, en el lago con dos cascadas. 2) Arriba, en los altos pastos detr·s de la granja. 3) Cerca de la entrada al paso de las cataratas. 4) En la hondonada que hay detr·s de las escaleras que van de los altos pastos de las tierras del granjero a los del propietario. Se supone que debo conseguirle lo que enterrÛ. …l esperar· lejos, en el cruce que hay entre las tierras.");
+		B_LogEntry (TOPIC_Addon_Greg_NW,"Enterr√≥ sus cosas en m√°s de un sitio. 1) En la peque√±a isla, en el lago con dos cascadas. 2) Arriba, en los altos pastos detr√°s de la granja. 3) Cerca de la entrada al paso de las cataratas. 4) En la hondonada que hay detr√°s de las escaleras que van de los altos pastos de las tierras del granjero a los del propietario. Se supone que debo conseguirle lo que enterr√≥. √âl esperar√° lejos, en el cruce que hay entre las tierras.");
 		B_Greg_RakePlaceBriefing_OneTime = TRUE;
 	};
 };                                                                                             
                                                                                                
 func void DIA_Addon_Greg_NW_RakeCavePlundered_gold ()                                          
 {                                                                                              
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_00"); //SÌ. He desenterrado una bolsita de oro.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_01"); //(con avaricia) D·mela.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_00"); //S√≠. He desenterrado una bolsita de oro.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_01"); //(con avaricia) D√°mela.
 
 	if ((Npc_HasItems (other,ItSe_GoldPocket25))||(Npc_HasItems (other,ItMi_Gold)>= 25))
 		{	
 			if (B_GiveInvItems (other, self, ItSe_GoldPocket25,1))
 				{
-					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_02"); //AquÌ tienes.
+					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_02"); //Aqu√≠ tienes.
 				}
 			else if (B_GiveInvItems (other, self, ItMi_Gold,25))
 				{
-					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_03"); //HabÌa 25 monedas de oro dentro. Toma, quÈdatelas.
+					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_03"); //Hab√≠a 25 monedas de oro dentro. Toma, qu√©datelas.
 				};
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_04"); //Fant·stico, siguen ahÌ.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_05"); //No eres tan in˙til, despuÈs de todo.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_06"); //Muy bien, escucha. He enterrado a˙n m·s. Y quiero que me lo consigas.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_04"); //Fant√°stico, siguen ah√≠.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_05"); //No eres tan in√∫til, despu√©s de todo.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_06"); //Muy bien, escucha. He enterrado a√∫n m√°s. Y quiero que me lo consigas.
 			B_Greg_RakePlaceBriefing ();
 			Greg_SuchWeiter = TRUE;
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_07"); //Te esperarÈ en el cruce que hay junto a las tierras del propietario. No me falles. Lo lamentarÌas, cazarrecompensas.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_07"); //Te esperar√© en el cruce que hay junto a las tierras del propietario. No me falles. Lo lamentar√≠as, cazarrecompensas.
 			AI_StopProcessInfos (self);
 			GregLocation = Greg_Bigcross;
 			Npc_ExchangeRoutine	(self,"Bigcross");
@@ -698,7 +698,7 @@ func void DIA_Addon_Greg_NW_RakeCavePlundered_gold ()
 	else
 		{
 			AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_08"); //Ya no lo tengo.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_09"); //MaldiciÛn. øQuieres que te lo saque a palos?
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_09"); //Maldici√≥n. ¬øQuieres que te lo saque a palos?
 			AI_StopProcessInfos (self);
 			MIS_Addon_Greg_RakeCave = LOG_FAILED;//Joly:SC hat Greg angeschissen.
 			GregLocation = Greg_Bigcross;
@@ -749,7 +749,7 @@ instance DIA_Addon_Greg_NW_WhereTreasures		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_WhereTreasures_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Dime otra vez dÛnde enterraste exactamente tus cosas.";
+	description	 = 	"Dime otra vez d√≥nde enterraste exactamente tus cosas.";
 };
 
 func int DIA_Addon_Greg_NW_WhereTreasures_Condition ()
@@ -763,7 +763,7 @@ func int DIA_Addon_Greg_NW_WhereTreasures_Condition ()
 
 func void DIA_Addon_Greg_NW_WhereTreasures_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhereTreasures_15_00"); //RepÌteme dÛnde has enterrado tus cosas.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhereTreasures_15_00"); //Rep√≠teme d√≥nde has enterrado tus cosas.
 	B_Greg_RakePlaceBriefing ();
 };
 
@@ -778,7 +778,7 @@ instance DIA_Addon_Greg_NW_PermTaverne		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_PermTaverne_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Una cosa m·s...";
+	description	 = 	"Una cosa m√°s...";
 };
 
 func int DIA_Addon_Greg_NW_PermTaverne_Condition ()
@@ -799,7 +799,7 @@ func int DIA_Addon_Greg_NW_PermTaverne_Condition ()
 
 func void DIA_Addon_Greg_NW_PermTaverne_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_PermTaverne_15_00"); //Una cosa m·s
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_PermTaverne_15_00"); //Una cosa m√°s
 
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
@@ -835,7 +835,7 @@ instance DIA_Addon_Greg_NW_Bigcross		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_Bigcross_Condition;
 	information	 = 	DIA_Addon_Greg_NW_Bigcross_Info;
 
-	description	 = 	"øVa todo bien?";
+	description	 = 	"¬øVa todo bien?";
 };
 
 func int DIA_Addon_Greg_NW_Bigcross_Condition ()
@@ -851,18 +851,18 @@ func void DIA_Addon_Greg_NW_Bigcross_Info ()
 {
 	if ((MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED)||(MIS_Addon_Greg_RakeCave == LOG_FAILED))
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_00"); //Mira, la traiciÛn personificada.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_00"); //Mira, la traici√≥n personificada.
 	};
 
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_01"); //øQuÈ tal todo?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_01"); //¬øQu√© tal todo?
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_02"); //Regular. Esos mercenarios no son de gran ayuda, la verdad.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_03"); //Esperaba que al menos tuvieran m·s agallas.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_04"); //Pero no son m·s que unos fanfarrones y unos bocazas, por si te interesa.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_03"); //Esperaba que al menos tuvieran m√°s agallas.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_04"); //Pero no son m√°s que unos fanfarrones y unos bocazas, por si te interesa.
 	
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_05"); //øQuÈ ha pasado con todo lo que enterrÈ? øLo has encontrado ya?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_05"); //¬øQu√© ha pasado con todo lo que enterr√©? ¬øLo has encontrado ya?
 		if (RAKEPLACE[1]==FALSE)
 		|| (RAKEPLACE[2]==FALSE)
 		|| (RAKEPLACE[3]==FALSE)
@@ -870,7 +870,7 @@ func void DIA_Addon_Greg_NW_Bigcross_Info ()
 		|| (RAKEPLACE[5]==FALSE)
 		{
 			AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_06"); //No, no todo.
-			AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_07"); //Pues date prisa, øno? No puede ser tan difÌcil.
+			AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_07"); //Pues date prisa, ¬øno? No puede ser tan dif√≠cil.
 		};
 	};	
 };
@@ -885,7 +885,7 @@ instance DIA_Addon_Greg_NW_WhatWantFromSLD		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_WhatWantFromSLD_Condition;
 	information	 = 	DIA_Addon_Greg_NW_WhatWantFromSLD_Info;
 
-	description	 = 	"øPor quÈ te interesan los mercenarios?";
+	description	 = 	"¬øPor qu√© te interesan los mercenarios?";
 };
 
 func int DIA_Addon_Greg_NW_WhatWantFromSLD_Condition ()
@@ -900,7 +900,7 @@ func int DIA_Addon_Greg_NW_WhatWantFromSLD_Condition ()
 
 func void DIA_Addon_Greg_NW_WhatWantFromSLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhatWantFromSLD_15_00"); //øPor quÈ te interesan los mercenarios?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhatWantFromSLD_15_00"); //¬øPor qu√© te interesan los mercenarios?
 	
 	if (SC_KnowsGregsSearchsDexter == FALSE)
 	{
@@ -909,7 +909,7 @@ func void DIA_Addon_Greg_NW_WhatWantFromSLD_Info ()
 	else
 	{
 		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_01"); //Ya te lo he dicho. Ando buscando a un tipo con armadura roja.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_02"); //Pero estos idiotas de aquÌ no tienen ni idea de lo que hablo.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_02"); //Pero estos idiotas de aqu√≠ no tienen ni idea de lo que hablo.
 	};	
 };
 
@@ -939,12 +939,12 @@ func int DIA_Addon_Greg_NW_DexterFound_Condition ()
 func void DIA_Addon_Greg_NW_DexterFound_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_DexterFound_15_00"); //Supongo que hablas de alguien llamado Dexter.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_DexterFound_01_01"); //Maldita sea. øCÛmo quieres que sepa el nombre del tipo?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_DexterFound_01_01"); //Maldita sea. ¬øC√≥mo quieres que sepa el nombre del tipo?
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_DexterFound);
 	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Se me ha ocurrido.", DIA_Addon_Greg_NW_DexterFound_weg );
-	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Tan vez deberÌamos ir juntos a buscarle.", DIA_Addon_Greg_NW_DexterFound_together );
-	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Yo sÈ dÛnde puedes encontrarlo.", DIA_Addon_Greg_NW_DexterFound_wo );
+	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Tan vez deber√≠amos ir juntos a buscarle.", DIA_Addon_Greg_NW_DexterFound_together );
+	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Yo s√© d√≥nde puedes encontrarlo.", DIA_Addon_Greg_NW_DexterFound_wo );
 };
 func void DIA_Addon_Greg_NW_DexterFound_weg ()
 {
@@ -954,22 +954,22 @@ func void DIA_Addon_Greg_NW_DexterFound_weg ()
 
 func void DIA_Addon_Greg_NW_DexterFound_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_00"); //Yo sÈ dÛnde puedes encontrarlo.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_01"); //(sorprendido) øEn serio? °DÕMELO!
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_02"); //No anda lejos de aquÌ.
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_03"); //Al parecer, es el lÌder de una banda de bandidos.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_04"); //(con sorna) JA. SÌ, es Èl.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_05"); //SabÌa que ese viejo lobo de mar andaba por aquÌ.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_06"); //Ahora sÛlo tengo que registrar todos los escondrijos y ratoneras de la zona.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_07"); //EncontrarÈ a ese bastardo, no necesito tu ayuda.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_00"); //Yo s√© d√≥nde puedes encontrarlo.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_01"); //(sorprendido) ¬øEn serio? ¬°D√çMELO!
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_02"); //No anda lejos de aqu√≠.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_03"); //Al parecer, es el l√≠der de una banda de bandidos.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_04"); //(con sorna) JA. S√≠, es √©l.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_05"); //Sab√≠a que ese viejo lobo de mar andaba por aqu√≠.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_06"); //Ahora s√≥lo tengo que registrar todos los escondrijos y ratoneras de la zona.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_07"); //Encontrar√© a ese bastardo, no necesito tu ayuda.
 	Info_ClearChoices	(DIA_Addon_Greg_NW_DexterFound);
 	B_GivePlayerXP (XP_Ambient);
 };
 
 func void DIA_Addon_Greg_NW_DexterFound_together ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_together_15_00"); //Tan vez deberÌamos ir juntos a buscarle.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_together_01_01"); //A˙n tengo un asunto pendiente con Èl. Puedo ocuparme solo.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_together_15_00"); //Tan vez deber√≠amos ir juntos a buscarle.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_together_01_01"); //A√∫n tengo un asunto pendiente con √©l. Puedo ocuparme solo.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1003,8 +1003,8 @@ func int DIA_Addon_Greg_NW_CaughtDexter_Condition ()
 
 func void DIA_Addon_Greg_NW_CaughtDexter_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_00"); //(en alto) øDÛnde est· ese cerdo?
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter_15_01"); //øQuiÈn? øEl capit·n? AquÌ mismo.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_00"); //(en alto) ¬øD√≥nde est√° ese cerdo?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter_15_01"); //¬øQui√©n? ¬øEl capit√°n? Aqu√≠ mismo.
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_02"); //(en alto) Pues aparta de mi camino.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"DexterHouseRun");
@@ -1034,9 +1034,9 @@ func int DIA_Addon_Greg_NW_WodennNu_Condition ()
 
 func void DIA_Addon_Greg_NW_WodennNu_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_00"); //(enfadado) øY ahora dÛnde se ha metido?
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WodennNu_15_01"); //Estaba aquÌ.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_02"); //(ordenando) °Bueno, pues ve a buscarlo!
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_00"); //(enfadado) ¬øY ahora d√≥nde se ha metido?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WodennNu_15_01"); //Estaba aqu√≠.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_02"); //(ordenando) ¬°Bueno, pues ve a buscarlo!
 	AI_StopProcessInfos (self);
 };
 
@@ -1063,8 +1063,8 @@ func int DIA_Addon_Greg_NW_CaughtDexter2_Condition ()
 
 func void DIA_Addon_Greg_NW_CaughtDexter2_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_00"); //Ah, Dexter est· acabado, øverdad?
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter2_15_01"); //Parece que est· muerto.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_00"); //Ah, Dexter est√° acabado, ¬øverdad?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter2_15_01"); //Parece que est√° muerto.
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_02"); //Ya tardaba. Comprueba si lleva algo encima.
 	Npc_ExchangeRoutine	(self,"DexterHouseWalk");
 	B_GivePlayerXP (XP_Ambient);
@@ -1080,7 +1080,7 @@ instance DIA_Addon_Greg_NW_RavensLetter		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_RavensLetter_Condition;
 	information	 = 	DIA_Addon_Greg_NW_RavensLetter_Info;
 
-	description	 = 	"Lo ˙nico que Dexter llevaba era esta carta.";
+	description	 = 	"Lo √∫nico que Dexter llevaba era esta carta.";
 };
 
 func int DIA_Addon_Greg_NW_RavensLetter_Condition ()
@@ -1096,24 +1096,24 @@ func int DIA_Addon_Greg_NW_RavensLetter_Condition ()
 
 func void DIA_Addon_Greg_NW_RavensLetter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_00"); //Lo ˙nico que Dexter llevaba era esta carta.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_01"); //EnsÈÒamela.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_00"); //Lo √∫nico que Dexter llevaba era esta carta.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_01"); //Ens√©√±amela.
 	B_UseFakeScroll ();
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_02"); //Ag, mierda, no me sirve para nada.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_03"); //No deberÌamos haberle dejado palmarla asÌ.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_04"); //No sabr·s como cruzar las montaÒas que hay al noreste de Khorinis
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_03"); //No deber√≠amos haberle dejado palmarla as√≠.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_04"); //No sabr√°s como cruzar las monta√±as que hay al noreste de Khorinis
 	
 	if (Nefarius_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	&& (Saturas_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_05"); //Tal vez por un t˙nel subterr·neo. Los Magos de Agua est·n estudiando un portal que conduce a las montaÒas del noreste.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_06"); //(enfadado) øQuÈ tonterÌa es esa?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_07"); //(burl·ndose) Bah, Magos de Agua. øNo se te ocurre un plan mejor?
+		AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_05"); //Tal vez por un t√∫nel subterr√°neo. Los Magos de Agua est√°n estudiando un portal que conduce a las monta√±as del noreste.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_06"); //(enfadado) ¬øQu√© tonter√≠a es esa?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_07"); //(burl√°ndose) Bah, Magos de Agua. ¬øNo se te ocurre un plan mejor?
 	};
 	
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_08"); //No.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_09"); //(suspirando resignado) AsÌ que estoy atrapado.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_10"); //Dexter era mi ˙ltima esperanza.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_09"); //(suspirando resignado) As√≠ que estoy atrapado.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_10"); //Dexter era mi √∫ltima esperanza.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1126,7 +1126,7 @@ instance DIA_Addon_Greg_NW_WasWillstDu		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_WasWillstDu_Condition;
 	information	 = 	DIA_Addon_Greg_NW_WasWillstDu_Info;
 
-	description	 = 	"øQuÈ querÌas de Dexter?";
+	description	 = 	"¬øQu√© quer√≠as de Dexter?";
 };
 
 func int DIA_Addon_Greg_NW_WasWillstDu_Condition ()
@@ -1140,33 +1140,33 @@ func int DIA_Addon_Greg_NW_WasWillstDu_Condition ()
 
 func void DIA_Addon_Greg_NW_WasWillstDu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WasWillstDu_15_00"); //øQuÈ querÌas de Dexter?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_01"); //Vengo de m·s all· de las montaÒas al noreste de esta isla. Y quiero volver.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_02"); //Esperaba que ese cretino supiera cÛmo salir de aquÌ sin una embarcaciÛn.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WasWillstDu_15_00"); //¬øQu√© quer√≠as de Dexter?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_01"); //Vengo de m√°s all√° de las monta√±as al noreste de esta isla. Y quiero volver.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_02"); //Esperaba que ese cretino supiera c√≥mo salir de aqu√≠ sin una embarcaci√≥n.
 
 	Npc_ExchangeRoutine	(self,"DexterThrone");	
 
 	Info_ClearChoices	(DIA_Addon_Greg_NW_WasWillstDu);
-	Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "øQuÈ hay m·s all· de esas montaÒas?", DIA_Addon_Greg_NW_WasWillstDu_da );
+	Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "¬øQu√© hay m√°s all√° de esas monta√±as?", DIA_Addon_Greg_NW_WasWillstDu_da );
 	
 	if (Skip_NW.aivar[AIV_TalkedToPlayer]==TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "Vi a un pirata llamado Skip cerca del puerto marÌtimo.", DIA_Addon_Greg_NW_WasWillstDu_Skip );
+		Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "Vi a un pirata llamado Skip cerca del puerto mar√≠timo.", DIA_Addon_Greg_NW_WasWillstDu_Skip );
 	};
 };
 
 func void DIA_Addon_Greg_NW_WasWillstDu_da ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_da_15_00"); //øQuÈ hay m·s all· de esas montaÒas?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_01"); //M·s vale que no intentes ir allÌ.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_02"); //Son tierras peligrosas. Un enclenque como t˙ no durarÌa mucho.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_da_15_00"); //¬øQu√© hay m√°s all√° de esas monta√±as?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_01"); //M√°s vale que no intentes ir all√≠.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_02"); //Son tierras peligrosas. Un enclenque como t√∫ no durar√≠a mucho.
 };
 
 func void DIA_Addon_Greg_NW_WasWillstDu_Skip ()
 {
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_Skip_15_00"); //He visto un pirata llamado Skip cerca del puerto.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_01"); //Ese imbÈcil. Llevo esper·ndolo 3 dÌas. øPor quÈ llega tan tarde?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_02"); //Cuando recupere las fuerzas, le darÈ su merecido.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_01"); //Ese imb√©cil. Llevo esper√°ndolo 3 d√≠as. ¬øPor qu√© llega tan tarde?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_02"); //Cuando recupere las fuerzas, le dar√© su merecido.
 	SC_KnowsConnectionSkipGreg = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -1202,7 +1202,7 @@ func int DIA_Addon_Greg_NW_FoundTreasure_Condition ()
 func void DIA_Addon_Greg_NW_FoundTreasure_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_FoundTreasure_15_00"); //He encontrado tus cosas enterradas.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_FoundTreasure_01_01"); //Entonces deber·s llevar encima unas 100 monedas de oro, un c·liz de oro, un plato de plata y un amuleto, todo mÌo. D·melo.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_FoundTreasure_01_01"); //Entonces deber√°s llevar encima unas 100 monedas de oro, un c√°liz de oro, un plato de plata y un amuleto, todo m√≠o. D√°melo.
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_FoundTreasure);	
 	Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "Resulta que no lo llevo encima.", DIA_Addon_Greg_NW_FoundTreasure_not );
@@ -1212,12 +1212,12 @@ func void DIA_Addon_Greg_NW_FoundTreasure_Info ()
 	&& (Npc_HasItems (other,ItMi_SilverChalice))
 	&& (Npc_HasItems (other,ItAm_Prot_Point_01))
 		{
-			Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "AquÌ lo tienes.", DIA_Addon_Greg_NW_FoundTreasure_ja );
+			Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "Aqu√≠ lo tienes.", DIA_Addon_Greg_NW_FoundTreasure_ja );
 		};
 };
 func void DIA_Addon_Greg_NW_FoundTreasure_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_00"); //AquÌ lo tienes.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_00"); //Aqu√≠ lo tienes.
 
 	if (B_GiveInvItems (other, self, ItSe_GoldPocket100,1))
 	{
@@ -1230,7 +1230,7 @@ func void DIA_Addon_Greg_NW_FoundTreasure_ja ()
 
 	if (B_GiveInvItems (other, self, ItMi_GoldCup,1))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_03"); //Un c·liz de oro.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_03"); //Un c√°liz de oro.
 	};
 	if (B_GiveInvItems (other, self, ItMi_SilverChalice,1))
 	{
@@ -1240,8 +1240,8 @@ func void DIA_Addon_Greg_NW_FoundTreasure_ja ()
 	{
 		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_05"); //Y un amuleto.
 	};
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_06"); //Muy bien. Tienes suerte de haber sido tan est˙pido como para huir con el botÌn.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_07"); //AquÌ tienes tu parte.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_06"); //Muy bien. Tienes suerte de haber sido tan est√∫pido como para huir con el bot√≠n.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_07"); //Aqu√≠ tienes tu parte.
 
 	B_GiveInvItems (self, other, ItMi_gold,30);
 	
@@ -1254,7 +1254,7 @@ func void DIA_Addon_Greg_NW_FoundTreasure_ja ()
 func void DIA_Addon_Greg_NW_FoundTreasure_not ()
 {
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_not_15_00"); //No lo llevo encima.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_not_01_01"); //Entonces consÌgueme todo antes de que me vuelva loco.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_not_01_01"); //Entonces cons√≠gueme todo antes de que me vuelva loco.
 	AI_StopProcessInfos (self);
 };
 

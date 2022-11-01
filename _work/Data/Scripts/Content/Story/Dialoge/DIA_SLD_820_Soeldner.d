@@ -47,44 +47,44 @@ FUNC INT DIA_Sld_820_Halt_Condition()
 
 FUNC VOID DIA_Sld_820_Halt_Info()
 {	
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_00"); //¿Adónde te crees que vas?
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_00"); //Â¿AdÃ³nde te crees que vas?
 	AI_Output (other, self, "DIA_Sld_820_Halt_15_01"); //A la casa, claro.
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_02"); //¡Onar nos paga para que no dejemos entrenar a tipos como tú!
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_02"); //Â¡Onar nos paga para que no dejemos entrenar a tipos como tÃº!
 
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Sld_820_Halt_07_03"); //¡No dejéis que entre la milicia! Ésas fueron sus palabras exactas.
+		AI_Output (self, other, "DIA_Sld_820_Halt_07_03"); //Â¡No dejÃ©is que entre la milicia! Ã‰sas fueron sus palabras exactas.
 	};
 
-	AI_Output (other, self, "DIA_Sld_820_Halt_15_04"); //¡Quiero hablar con Lee!
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_05"); //¿Qué quieres de él?
+	AI_Output (other, self, "DIA_Sld_820_Halt_15_04"); //Â¡Quiero hablar con Lee!
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_05"); //Â¿QuÃ© quieres de Ã©l?
 	
 	Info_ClearChoices (DIA_Sld_820_Halt);
 	Info_AddChoice (DIA_Sld_820_Halt, "Nos conocemos de hace bastante...", DIA_Sld_820_Halt_KenneLee);
 	if (other.guild == GIL_NONE)
 	{
-		Info_AddChoice (DIA_Sld_820_Halt, "¡Quiero unirme a los mercenarios!", DIA_Sld_820_Halt_WannaJoin);
+		Info_AddChoice (DIA_Sld_820_Halt, "Â¡Quiero unirme a los mercenarios!", DIA_Sld_820_Halt_WannaJoin);
 	};
 };
 
 func void B_Sld_820_LeeIsRight()
 {
-	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Lee está en el ala derecha. ¡Ni se te ocurra rondar por otro lado!
+	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Lee estÃ¡ en el ala derecha. Â¡Ni se te ocurra rondar por otro lado!
 };
 
 func void DIA_Sld_820_Halt_WannaJoin()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //¡Quiero unirme a los mercenarios!
-	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //¡Ah, más carne de cañón! Entonces, entra.
+	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //Â¡Quiero unirme a los mercenarios!
+	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //Â¡Ah, mÃ¡s carne de caÃ±Ã³n! Entonces, entra.
 	B_Sld_820_LeeIsRight();
-	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //Pero, lo más importante, ¡deja a Onar en paz! No le gusta que le hable la gente si no les pregunta. Especialmente los tipos como tú.
+	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //Pero, lo mÃ¡s importante, Â¡deja a Onar en paz! No le gusta que le hable la gente si no les pregunta. Especialmente los tipos como tÃº.
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Sld_820_Halt_KenneLee()
 {
 	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //Nos conocemos de hace bastante...
-	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //¿ERES colega de Lee? ¡No me lo creo! Pero sigue, si no te reconoce, te darás cuenta... (se ríe).
+	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //Â¿ERES colega de Lee? Â¡No me lo creo! Pero sigue, si no te reconoce, te darÃ¡s cuenta... (se rÃ­e).
 	B_Sld_820_LeeIsRight();
 	AI_StopProcessInfos	(self);
 };
@@ -100,7 +100,7 @@ INSTANCE DIA_Sld_820_PERM(C_INFO)
 	condition	= DIA_Sld_820_PERM_Condition;
 	information	= DIA_Sld_820_PERM_Info;
 	permanent	= TRUE;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };                       
 
 FUNC INT DIA_Sld_820_PERM_Condition()
@@ -110,7 +110,7 @@ FUNC INT DIA_Sld_820_PERM_Condition()
 
 FUNC VOID DIA_Sld_820_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Sld_820_PERM_15_00"); //¿Cómo va todo?
+	AI_Output (other, self, "DIA_Sld_820_PERM_15_00"); //Â¿CÃ³mo va todo?
 	AI_Output (self, other, "DIA_Sld_820_PERM_07_01"); //Sigue si quieres, me no me des la tabarra.
 	AI_StopProcessInfos	(self);
 };

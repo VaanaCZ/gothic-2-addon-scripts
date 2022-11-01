@@ -3,8 +3,8 @@
 // ***************************************************
 func void B_AssignSchiffswachenGuard (var C_NPC Schiffswache)
 {	
-	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt auf´s Schiff!!!!
-	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: Für die Kurzzeitige Erlaubnis, das Schiff zu besuchen! Muß nach der Aktion wieder geändert werden, z. B = 0;
+	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt aufÂ´s Schiff!!!!
+	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: FÃ¼r die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuÃŸ nach der Aktion wieder geÃ¤ndert werden, z. B = 0;
 	{
 			if (Schiffswache.voice == 4)
 			{
@@ -12,11 +12,11 @@ func void B_AssignSchiffswachenGuard (var C_NPC Schiffswache)
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //No te metas en líos mientras estés aquí.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //No te metas en lÃ­os mientras estÃ©s aquÃ­.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Ni se te ocurra robar nada, ¿te enteras?
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Ni se te ocurra robar nada, Â¿te enteras?
 			};
 		AI_StopProcessInfos (Schiffswache);
 		Npc_SetRefuseTalk 	(Schiffswache,60);
@@ -58,18 +58,18 @@ func void B_AssignSchiffswachenInfos (var C_NPC Schiffswache)
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Como cojamos al traidor que abrió la puerta principal del castillo, nos lo cargamos.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Como cojamos al traidor que abriÃ³ la puerta principal del castillo, nos lo cargamos.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //No podemos esperar mucho más. Los muchachos del Valle de las Minas necesitan nuestra ayuda antes de que ataque la siguiente oleada de orcos.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //No podemos esperar mucho mÃ¡s. Los muchachos del Valle de las Minas necesitan nuestra ayuda antes de que ataque la siguiente oleada de orcos.
 			};
 		}
 	else
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond ha ordenado una movilización general. No tardaremos en ir al Valle de las Minas.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond ha ordenado una movilizaciÃ³n general. No tardaremos en ir al Valle de las Minas.
 			};
 			if (Schiffswache.voice == 9)
 			{

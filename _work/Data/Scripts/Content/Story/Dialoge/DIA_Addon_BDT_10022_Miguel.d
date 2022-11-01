@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Miguel_Hi   (C_INFO)
 	condition   = DIA_Addon_Miguel_Hi_Condition;
 	information = DIA_Addon_Miguel_Hi_Info;
 	permanent   = FALSE;
-	description = "¿Qué estás haciendo aquí?";
+	description = "Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 FUNC INT DIA_Addon_Miguel_Hi_Condition()
 {		
@@ -72,20 +72,20 @@ FUNC INT DIA_Addon_Miguel_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_00");//¿Qué estás haciendo aquí?
+	AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_00");//Â¿QuÃ© estÃ¡s haciendo aquÃ­?
 	
 	if Wld_IsTime (06,00,22,00)
 	{
-		AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_01");//¿Buscas algo?
+		AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_01");//Â¿Buscas algo?
 		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_02");//Plantas. Estoy buscando plantas.
 	}
 	else
 	{
 		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//Suelo buscar plantas.
 	};
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Casi todo lo que crece aquí sirve para algo.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Casi todo lo que crece aquÃ­ sirve para algo.
 	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//Muchas plantas tienen propiedades curativas, puedes fumar cigarros de hierba del pantano.
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//Antes de mis días tras la Barrera, trabajé como alquimista.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//Antes de mis dÃ­as tras la Barrera, trabajÃ© como alquimista.
 };
 //---------------------------------------------------------------------
 //	Info Story
@@ -97,7 +97,7 @@ INSTANCE DIA_Addon_Miguel_Story   (C_INFO)
 	condition   = DIA_Addon_Miguel_Story_Condition;
 	information = DIA_Addon_Miguel_Story_Info;
 	permanent   = FALSE;
-	description = "¿Por qué te han dejado al otro lado de la Barrera?";
+	description = "Â¿Por quÃ© te han dejado al otro lado de la Barrera?";
 };
 FUNC INT DIA_Addon_Miguel_Story_Condition()
 {	
@@ -108,11 +108,11 @@ FUNC INT DIA_Addon_Miguel_Story_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Story_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//¿Por qué te trajeron al otro lado de la Barrera?
+	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//Â¿Por quÃ© te trajeron al otro lado de la Barrera?
 	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//Trabajaba con muchas pociones que alteraban la mente.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//Una tarde, mi maestro Ignaz se bebió mi experimento en vez su vino.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//Eso lo volvió temporalmente… eh… impredecible, y desde entonces se encuentra confuso.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//(maliciosamente) Los magos me desterraron por ello tras la Barrera. Por 'experimentar con conocimientos prohibidos', según ellos.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//Una tarde, mi maestro Ignaz se bebiÃ³ mi experimento en vez su vino.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//Eso lo volviÃ³ temporalmenteâ€¦ ehâ€¦ impredecible, y desde entonces se encuentra confuso.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//(maliciosamente) Los magos me desterraron por ello tras la Barrera. Por 'experimentar con conocimientos prohibidos', segÃºn ellos.
 };
 
 //---------------------------------------------------------------------
@@ -125,7 +125,7 @@ INSTANCE DIA_Addon_Miguel_Lager   (C_INFO)
 	condition   = DIA_Addon_Miguel_Lager_Condition;
 	information = DIA_Addon_Miguel_Lager_Info;
 	permanent   = FALSE;
-	description = "¿Qué puedes contarme sobre el campamento?";
+	description = "Â¿QuÃ© puedes contarme sobre el campamento?";
 };
 FUNC INT DIA_Addon_Miguel_Lager_Condition()
 {	
@@ -133,9 +133,9 @@ FUNC INT DIA_Addon_Miguel_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Lager_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //¿Qué puedes contarme sobre el campamento?
+	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Â¿QuÃ© puedes contarme sobre el campamento?
 	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_01"); //No mucho. Yo nunca he ido.
-	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //Sólo la gente de Raven lleva allí desde el principio. Los que vinieron luego, como yo, tienen que esperar hasta que necesiten más personal.
+	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //SÃ³lo la gente de Raven lleva allÃ­ desde el principio. Los que vinieron luego, como yo, tienen que esperar hasta que necesiten mÃ¡s personal.
 };
 
 //-----------------------------------------
@@ -148,7 +148,7 @@ instance DIA_Addon_Miguel_WhereFrom (C_INFO)
 	condition   = DIA_Addon_Miguel_WhereFrom_Condition;
 	information = DIA_Addon_Miguel_WhereFrom_Info;
 	permanent   = FALSE;
-	description = "¿De dónde vienes tú?";
+	description = "Â¿De dÃ³nde vienes tÃº?";
 };
 FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 {	
@@ -160,9 +160,9 @@ FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_WhereFrom_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //¿De dónde vienes tú?
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //Pues del mismo lugar que tú, supongo. Del mar, con los piratas.
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Este valle está completamente aislado. No hay conexión con el resto de territorios.
+	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Â¿De dÃ³nde vienes tÃº?
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //Pues del mismo lugar que tÃº, supongo. Del mar, con los piratas.
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Este valle estÃ¡ completamente aislado. No hay conexiÃ³n con el resto de territorios.
 	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(pensativo) Cierto.
 };
 
@@ -176,7 +176,7 @@ instance DIA_Addon_Miguel_Angefordert (C_INFO)
 	condition   = DIA_Addon_Miguel_Angefordert_Condition;
 	information = DIA_Addon_Miguel_Angefordert_Info;
 	permanent   = FALSE;
-	description = "¿Cuándo necesitan gente nueva?";
+	description = "Â¿CuÃ¡ndo necesitan gente nueva?";
 };
 FUNC INT DIA_Addon_Miguel_Angefordert_Condition()
 {	
@@ -187,12 +187,12 @@ FUNC INT DIA_Addon_Miguel_Angefordert_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Angefordert_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //¿Cuándo necesitan gente nueva?
+	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //Â¿CuÃ¡ndo necesitan gente nueva?
 	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //Bueno, pues cuando pierden personal.
 	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Si un reptador de las minas devora a un cavador, entra otro a sustituirle.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //A veces también se matan entre ellos. Pero últimamente ya no tanto.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Raven ha controlado el acceso a la mina, así que ahora no puede pasar quien quiera a la vez.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Pero no sé exactamente cómo funciona. Nunca he entrado.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //A veces tambiÃ©n se matan entre ellos. Pero Ãºltimamente ya no tanto.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Raven ha controlado el acceso a la mina, asÃ­ que ahora no puede pasar quien quiera a la vez.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Pero no sÃ© exactamente cÃ³mo funciona. Nunca he entrado.
 };
 
 //---------------------------------------------------------------------
@@ -205,7 +205,7 @@ INSTANCE DIA_Addon_Miguel_Fortuno   (C_INFO)
 	condition   = DIA_Addon_Miguel_Fortuno_Condition;
 	information = DIA_Addon_Miguel_Fortuno_Info;
 	permanent   = FALSE;
-	description = "Sobre Fotuno…";
+	description = "Sobre Fotunoâ€¦";
 };
 FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 {	
@@ -216,17 +216,17 @@ FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Fortuno_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//Fortuno está bastante confuso y necesitaría una poción para recuperar su memoria.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//¿Fortuno? Es siervo de Raven, ¿no?
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_02");//Era. Ahora sólo es un lunático. Y por culpa de Raven.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//¿Raven? Hasta ahora, lo tenía bien considerado. Hm, de acuerdo. Pero aquí, en el pantano, no puedo preparar pociones.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//Podría preparar la poción. Hay una mesa de trabajo de alquimista en el campamento. Sólo necesito la fórmula.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//Cuidado con esta fórmula. Prepararla es peligroso.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//Fortuno estÃ¡ bastante confuso y necesitarÃ­a una pociÃ³n para recuperar su memoria.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//Â¿Fortuno? Es siervo de Raven, Â¿no?
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_02");//Era. Ahora sÃ³lo es un lunÃ¡tico. Y por culpa de Raven.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Â¿Raven? Hasta ahora, lo tenÃ­a bien considerado. Hm, de acuerdo. Pero aquÃ­, en el pantano, no puedo preparar pociones.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//PodrÃ­a preparar la pociÃ³n. Hay una mesa de trabajo de alquimista en el campamento. SÃ³lo necesito la fÃ³rmula.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//Cuidado con esta fÃ³rmula. Prepararla es peligroso.
 	B_GiveInvItems (self, other, ITWr_Addon_MCELIXIER_01,1);
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Si algo sale mal en la preparación o confundes uno de los ingredientes, la poción es mortal.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//Tendré cuidado.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Si algo sale mal en la preparaciÃ³n o confundes uno de los ingredientes, la pociÃ³n es mortal.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//TendrÃ© cuidado.
 	
-	B_LogEntry (Topic_Addon_Fortuno,"Miguel me ha dado la fórmula de una poción que ayudará a recordar a Fortuno. Sólo debo prepararla cuando esté familiarizado con todos los ingredientes. Si no, puede ser letal.");
+	B_LogEntry (Topic_Addon_Fortuno,"Miguel me ha dado la fÃ³rmula de una pociÃ³n que ayudarÃ¡ a recordar a Fortuno. SÃ³lo debo prepararla cuando estÃ© familiarizado con todos los ingredientes. Si no, puede ser letal.");
 };
 
 //---------------------------------------------------------------------
@@ -239,7 +239,7 @@ INSTANCE DIA_Addon_Miguel_BRAU   (C_INFO)
 	condition   = DIA_Addon_Miguel_BRAU_Condition;
 	information = DIA_Addon_Miguel_BRAU_Info;
 	permanent   = FALSE;
-	description = "¿Puedes enseñarme algo?";
+	description = "Â¿Puedes enseÃ±arme algo?";
 };
 FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 {	
@@ -250,9 +250,9 @@ FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_BRAU_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//¿Puedes enseñarme algo?
+	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//Â¿Puedes enseÃ±arme algo?
 	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//No tengo tiempo. He venido a conseguir oro. Y mientras no pueda entrar al campamento, tengo que vivir de vender mis hierbas.
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//Pero si necesitas pociones, aún me quedan algunas.
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//Pero si necesitas pociones, aÃºn me quedan algunas.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_BDT_Trader,"Puedo comprarle pociones y plantas a Miguel.");

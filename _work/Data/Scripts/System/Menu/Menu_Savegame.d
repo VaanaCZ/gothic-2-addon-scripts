@@ -203,7 +203,7 @@ instance MENUITEM_LOADSAVE_DATETIME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_GAMETIME(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "duraciÛn:";
+	text[0]		= "duraci√≥n:";
 	posx		= SAVEGAME_X2;
 	posy		= 6200;
 	fontName	= MENU_FONT_SMALL;
@@ -246,8 +246,8 @@ instance MENUITEM_LOADSAVE_PLAYTIME_VALUE(C_MENU_ITEM_DEF)
 
 instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Atr·s";
-	text[1]		=	"Atr·s";
+	text[0]		=	"Atr√°s";
+	text[1]		=	"Atr√°s";
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 21*SAVEGAME_DY;
 };
@@ -262,7 +262,7 @@ instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_LOAD_BACK(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Atr·s";
+	text[0]		=	"Atr√°s";
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 21*SAVEGAME_DY;
 };
@@ -638,7 +638,7 @@ INSTANCE MENUITEM_SAVE_SLOT20(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT1(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "desconocido";
-	text[1]		=   "Espacio 1: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 1: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 0 * SAVEGAME_DY;
@@ -651,7 +651,7 @@ INSTANCE MENUITEM_LOAD_SLOT1(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT2(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "desconocido";
-	text[1]		=   "Espacio 2: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 2: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 1 * SAVEGAME_DY;
@@ -664,7 +664,7 @@ INSTANCE MENUITEM_LOAD_SLOT2(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT3(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "desconocido";
-	text[1]		=   "Espacio 3: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 3: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 2 * SAVEGAME_DY;
@@ -677,7 +677,7 @@ INSTANCE MENUITEM_LOAD_SLOT3(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT4(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "desconocido";
-	text[1]		=   "Espacio 4: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 4: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 3 * SAVEGAME_DY;
@@ -690,7 +690,7 @@ INSTANCE MENUITEM_LOAD_SLOT4(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT5(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "desconocido";
-	text[1]		=   "Espacio 5: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 5: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 4 * SAVEGAME_DY;
@@ -703,7 +703,7 @@ INSTANCE MENUITEM_LOAD_SLOT5(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT6(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "desconocido";
-	text[1]		=   "Espacio 6: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 6: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 5 * SAVEGAME_DY;
@@ -716,7 +716,7 @@ INSTANCE MENUITEM_LOAD_SLOT6(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT7(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "desconocido";
-	text[1]		=   "Espacio 7: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 7: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 6 * SAVEGAME_DY;
@@ -729,7 +729,7 @@ INSTANCE MENUITEM_LOAD_SLOT7(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT8(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 8: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 8: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 7 * SAVEGAME_DY;
@@ -742,7 +742,7 @@ INSTANCE MENUITEM_LOAD_SLOT8(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT9(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 9: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 9: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 8 * SAVEGAME_DY;
@@ -755,7 +755,7 @@ INSTANCE MENUITEM_LOAD_SLOT9(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT10(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 10: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 10: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 9 * SAVEGAME_DY;
@@ -771,7 +771,7 @@ INSTANCE MENUITEM_LOAD_SLOT10(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT11(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 11: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 11: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 10 * SAVEGAME_DY;
@@ -784,7 +784,7 @@ INSTANCE MENUITEM_LOAD_SLOT11(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT12(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 12: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 12: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 11 * SAVEGAME_DY;
@@ -797,7 +797,7 @@ INSTANCE MENUITEM_LOAD_SLOT12(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT13(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 13: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 13: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 12 * SAVEGAME_DY;
@@ -810,7 +810,7 @@ INSTANCE MENUITEM_LOAD_SLOT13(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT14(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 14: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 14: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 13 * SAVEGAME_DY;
@@ -823,7 +823,7 @@ INSTANCE MENUITEM_LOAD_SLOT14(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT15(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 15: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 15: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 14 * SAVEGAME_DY;
@@ -837,7 +837,7 @@ INSTANCE MENUITEM_LOAD_SLOT15(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT16(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 16: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 16: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 15 * SAVEGAME_DY;
@@ -850,7 +850,7 @@ INSTANCE MENUITEM_LOAD_SLOT16(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT17(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 17: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 17: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 16 * SAVEGAME_DY;
@@ -863,7 +863,7 @@ INSTANCE MENUITEM_LOAD_SLOT17(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT18(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 18: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 18: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 17 * SAVEGAME_DY;
@@ -876,7 +876,7 @@ INSTANCE MENUITEM_LOAD_SLOT18(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT19(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 19: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 19: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 18 * SAVEGAME_DY;
@@ -889,7 +889,7 @@ INSTANCE MENUITEM_LOAD_SLOT19(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT20(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Espacio 20: ATR¡S para cargar la partida."; // Kommentar
+	text[1]		=   "Espacio 20: ATR√ÅS para cargar la partida."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 19 * SAVEGAME_DY;
@@ -903,7 +903,7 @@ INSTANCE MENUITEM_LOAD_SLOT20(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_LOAD_SLOT0(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "- Guardado r·pido -";
+	text[0]		=   "- Guardado r√°pido -";
 	text[1]		=   "pulsa INTRO para cargar la partida seleccionada"; // Kommentar
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 20 * SAVEGAME_DY;

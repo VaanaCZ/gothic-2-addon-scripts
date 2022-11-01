@@ -33,7 +33,7 @@ INSTANCE DIA_PC_Thief_DI_Hallo (C_INFO)
 	condition	= DIA_PC_Thief_DI_Hallo_Condition;
 	information	= DIA_PC_Thief_DI_Hallo_Info;
 
-	description = "Allá vamos.";
+	description = "AllÃ¡ vamos.";
 };                       
 FUNC INT DIA_PC_Thief_DI_Hallo_Condition()
 {
@@ -44,13 +44,13 @@ FUNC INT DIA_PC_Thief_DI_Hallo_Condition()
 };
 FUNC VOID DIA_PC_Thief_DI_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Thief_DI_Hallo_15_00"); //Allá vamos.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_01"); //Esta isla no está tan lejos del Khorinis como creía.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_02"); //No lo sabía. Pero ahora, por supuesto, hay unas cuantas cosas que se están aclarando.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_03"); //Siempre me había preguntado cómo eran capaces los orcos de abastecerse tan deprisa.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_04"); //Con este puesto avanzado, es un juego de niños.
+	AI_Output (other,self ,"DIA_PC_Thief_DI_Hallo_15_00"); //AllÃ¡ vamos.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_01"); //Esta isla no estÃ¡ tan lejos del Khorinis como creÃ­a.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_02"); //No lo sabÃ­a. Pero ahora, por supuesto, hay unas cuantas cosas que se estÃ¡n aclarando.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_03"); //Siempre me habÃ­a preguntado cÃ³mo eran capaces los orcos de abastecerse tan deprisa.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_04"); //Con este puesto avanzado, es un juego de niÃ±os.
 	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_05"); //En tu camino hacia el interior de la isla, seguramente te encuentres con un par de trampas.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_06"); //Si crees que te quedas atascado en algún punto, ven a verme. Puede que mi experiencia te sirva de ayuda.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_06"); //Si crees que te quedas atascado en algÃºn punto, ven a verme. Puede que mi experiencia te sirva de ayuda.
 };
 
 // ************************************************************
@@ -86,22 +86,22 @@ FUNC VOID DIA_PC_Thief_DI_RAT_Info()
 	if (Npc_IsDead(OrkElite_AntiPaladinOrkOberst_DI))
 	&& (EVT_ORKOBERST_SWITCH_FOUND == FALSE)
 	{
-		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_01"); //Un coronel orco tiene su cuartel general allí arriba. Desde allí no puedo avanzar más hacia el interior.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_02"); //Los orcos son criaturas astutas. A menudo se las subestima, pero seguro que tienen algún tipo de pasadizo secreto. Busca interruptores en los muros.
+		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_01"); //Un coronel orco tiene su cuartel general allÃ­ arriba. Desde allÃ­ no puedo avanzar mÃ¡s hacia el interior.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_02"); //Los orcos son criaturas astutas. A menudo se las subestima, pero seguro que tienen algÃºn tipo de pasadizo secreto. Busca interruptores en los muros.
 		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_03"); //Pero recuerda que a menudo los interruptores deben pulsarse en cierto orden antes de que surtan efecto.
 		 
 	}
 	else if	(Npc_IsDead(FireDragonIsland))
 	&& (EVT_DIBRIDGE_OPENED == FALSE)
 	{
-		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_04"); //He luchado con un dragón y ahora me enfrento a un abismo con puente levadizo. El puente está levantado y no puedo cruzar.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_05"); //Mmm. ¿Has probado ya con un arma a distancia? Quizá el mecanismo se pueda activar de un disparo.
+		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_04"); //He luchado con un dragÃ³n y ahora me enfrento a un abismo con puente levadizo. El puente estÃ¡ levantado y no puedo cruzar.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_05"); //Mmm. Â¿Has probado ya con un arma a distancia? QuizÃ¡ el mecanismo se pueda activar de un disparo.
 	}
 	else if	(Npc_IsDead(Skeleton_Lord_Archol))
 	&& ((Npc_KnowsInfo(other, DIA_Schwarzmagier_HELLO)) == FALSE)
 	{
 		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_06"); //Me estoy enfrentando a un grupo de muertos vivientes y a sus complicadas trampas.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_07"); //Lo siento, no tengo experiencia con muertos vivientes. Esta vez estás solo.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_07"); //Lo siento, no tengo experiencia con muertos vivientes. Esta vez estÃ¡s solo.
 	}
 	else
 	{
@@ -110,7 +110,7 @@ FUNC VOID DIA_PC_Thief_DI_RAT_Info()
 		 if (ORkSturmDI == TRUE)
 		 && (DIA_PC_Thief_DI_RAT_OneTime2 == FALSE)
 			{
-				AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_09"); //Una cosa más. Preferiría que no atrajeras al barco a todas las criaturas que andan por aquí. ¡Espero que el asalto orco sea el último ataque que tenga que rechazar!
+				AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_09"); //Una cosa mÃ¡s. PreferirÃ­a que no atrajeras al barco a todas las criaturas que andan por aquÃ­. Â¡Espero que el asalto orco sea el Ãºltimo ataque que tenga que rechazar!
 				B_GivePlayerXP (XP_Ambient);
 				DIA_PC_Thief_DI_RAT_OneTime2 = TRUE;
 			};	
@@ -130,7 +130,7 @@ instance DIA_Diego_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Necesito munición.";
+	description	 = 	"Necesito municiÃ³n.";
 };
 
 func int DIA_Diego_DI_TRADE_Condition ()
@@ -143,7 +143,7 @@ func int DIA_Diego_DI_TRADE_Condition ()
 
 func void DIA_Diego_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Diego_DI_TRADE_15_00"); //Necesito munición.
+	AI_Output			(other, self, "DIA_Diego_DI_TRADE_15_00"); //Necesito municiÃ³n.
 	B_GiveTradeInv (self);
 
 	//Joly: Mc ArrowBolt
@@ -160,7 +160,7 @@ func void DIA_Diego_DI_TRADE_Info ()
 	//////////////////////////////////////////////////////////////////////////////////////
 
 
-	AI_Output			(self, other, "DIA_Diego_DI_TRADE_11_01"); //Quizá pueda ayudarte.
+	AI_Output			(self, other, "DIA_Diego_DI_TRADE_11_01"); //QuizÃ¡ pueda ayudarte.
 };
 
 // ************************************************************
@@ -175,7 +175,7 @@ INSTANCE DIA_PC_Thief_DI_Training_Talente (C_INFO)
 	information	= DIA_PC_Thief_DI_Training_Talente_Info;
 	permanent	 = 	TRUE;
 
-	description = "Entréname.";
+	description = "EntrÃ©name.";
 };                       
 FUNC INT DIA_PC_Thief_DI_Training_Talente_Condition()
 {
@@ -188,8 +188,8 @@ FUNC INT DIA_PC_Thief_DI_Training_Talente_Condition()
 
 FUNC VOID DIA_PC_Thief_DI_Training_Talente_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Thief_DI_Training_15_00"); //Entréname.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Training_11_01"); //¿Qué es lo que necesitas?
+	AI_Output (other,self ,"DIA_PC_Thief_DI_Training_15_00"); //EntrÃ©name.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Training_11_01"); //Â¿QuÃ© es lo que necesitas?
 	
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
 	Info_AddChoice	  (DIA_PC_Thief_DI_Training_Talente, DIALOG_BACK, DIA_PC_Thief_DI_Training_Talente_BACK);
@@ -214,7 +214,7 @@ func void DIA_PC_Thief_DI_Training_DEX_1 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 1, T_MAX))
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_DEX_1_11_00"); //La vida te sería mucho más sencilla si intentaras alejarte de la línea de fuego.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_DEX_1_11_00"); //La vida te serÃ­a mucho mÃ¡s sencilla si intentaras alejarte de la lÃ­nea de fuego.
 	};
 
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
@@ -240,7 +240,7 @@ func void DIA_PC_Thief_DI_Training_DEX_5 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 5, T_MAX))
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_DEX_5_11_00"); //Cuando te muevas, ten siempre en mente la agilidad de un gato. El resto vendrá por añadidura.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_DEX_5_11_00"); //Cuando te muevas, ten siempre en mente la agilidad de un gato. El resto vendrÃ¡ por aÃ±adidura.
 	};
 
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
@@ -289,7 +289,7 @@ func void DIA_PC_Thief_DI_Training_Combat_BOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 5, 100))
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_Combat_BOW_5_11_00"); //Para que tu mano sea más firme, respira lentamente mientras apuntas.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_Combat_BOW_5_11_00"); //Para que tu mano sea mÃ¡s firme, respira lentamente mientras apuntas.
 	};
 
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
@@ -360,14 +360,14 @@ FUNC INT DIA_PC_Thief_DI_UndeadDragonDead_Condition()
 var int DIA_PC_Thief_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_PC_Thief_DI_UndeadDragonDead_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_00"); //Se ha terminado. Vámonos de aquí.
+	AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_00"); //Se ha terminado. VÃ¡monos de aquÃ­.
 
 	if ((Npc_GetDistToWP(self,"WP_UNDEAD_MIDDLE_01")<4000) )
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_01"); //Echa un vistazo a esto. En mi vida había visto una edificación así.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_02"); //¿Cómo diablos has conseguido superar esa cosa?
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_01"); //Echa un vistazo a esto. En mi vida habÃ­a visto una edificaciÃ³n asÃ­.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_02"); //Â¿CÃ³mo diablos has conseguido superar esa cosa?
 		AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_03"); //Supongo que tuve suerte.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_04"); //(Risas) Si tú lo dices.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_04"); //(Risas) Si tÃº lo dices.
 	}
 	else
 	{
@@ -376,20 +376,20 @@ FUNC VOID DIA_PC_Thief_DI_UndeadDragonDead_Info()
 
 	if (DIA_PC_Thief_DI_UndeadDragonDead_OneTime == FALSE )
 	{
-		AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_06"); //¿Qué vas a hacer ahora?
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_07"); //Es una buena pregunta. Creo que lo primero que haré será volver a Khorinis.
-		//AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_08"); //Wäre doch gelacht, wenn ich aus dem Dreckloch nicht wieder eine gescheite Stadt ohne Korruption machen kann.
+		AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_06"); //Â¿QuÃ© vas a hacer ahora?
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_07"); //Es una buena pregunta. Creo que lo primero que harÃ© serÃ¡ volver a Khorinis.
+		//AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_08"); //WÃ¤re doch gelacht, wenn ich aus dem Dreckloch nicht wieder eine gescheite Stadt ohne Korruption machen kann.
 		if (Diebesgilde_Verraten == TRUE)
 		|| (MIS_Andre_GuildOfThieves == LOG_SUCCESS)
 		{
-			AI_Output (self ,other,"DIA_DiegoDI_Add_11_00"); //Allí ya no hay ninguna cofradía de ladrones. Eso sugiere interesantes posibilidades.
+			AI_Output (self ,other,"DIA_DiegoDI_Add_11_00"); //AllÃ­ ya no hay ninguna cofradÃ­a de ladrones. Eso sugiere interesantes posibilidades.
 		};
-		//AI_Output (self ,other,"DIA_DiegoDI_Add_11_01"); //Für Bromors Haus kann ich bestimmt noch was rausschlagen - vorausgesetzt ich finde einen Käufer...
+		//AI_Output (self ,other,"DIA_DiegoDI_Add_11_01"); //FÃ¼r Bromors Haus kann ich bestimmt noch was rausschlagen - vorausgesetzt ich finde einen KÃ¤ufer...
 		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_09"); //Mmm. O puede que me limite a hacerme con el negocio de Bromor. Con eso siempre se gana dinero. Dinero limpio
 		DIA_PC_Thief_DI_UndeadDragonDead_OneTime = TRUE;
 	};
 
-	AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_10"); //Ve con el capitán de una vez y salgamos de aquí.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_10"); //Ve con el capitÃ¡n de una vez y salgamos de aquÃ­.
 	AI_StopProcessInfos (self);
 
 	if ( Lares_IsOnBoard != LOG_SUCCESS) 

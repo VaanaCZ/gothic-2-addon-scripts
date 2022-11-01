@@ -72,28 +72,28 @@ func void DIA_AmbientDementor_Info ()
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino3))
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino4)))
 		{	
-			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //¿Has venido para interrumpir el ritual? Su alma nos pertenece. Ya no puedes salvarlo, mago.
+			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Â¿Has venido para interrumpir el ritual? Su alma nos pertenece. Ya no puedes salvarlo, mago.
 		}
 	else if (CurrentLevel == DRAGONISLAND_ZEN)
 		{
 			if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DragonIsle_Keymaster))
 				{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //(Se ríe) ¿Has venido a retarme y a desafiar mi obra? Estás condenado a fracasar.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //(Se rÃ­e) Â¿Has venido a retarme y a desafiar mi obra? EstÃ¡s condenado a fracasar.
 						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Nadie ha conseguido atravesar mi cripta. Date la vuelta, ya que no vas a llegar a los sagrados salones de Irdorath.
 				}
 				else
 				{	
 				 	if (randy == 0)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //Ya has avanzado demasiado, vil gusano. Jamás llegarás a nuestro santuario.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //Ya has avanzado demasiado, vil gusano. JamÃ¡s llegarÃ¡s a nuestro santuario.
 					};
 					if (randy == 1)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_04"); //Quieto. No des ni un paso más.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_04"); //Quieto. No des ni un paso mÃ¡s.
 					};
 					if (randy == 2)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_05"); //Has llegado hasta aquí, pero no voy a dejarte pasar.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_05"); //Has llegado hasta aquÃ­, pero no voy a dejarte pasar.
 					};
 					if (randy == 3)
 					{
@@ -105,7 +105,7 @@ func void DIA_AmbientDementor_Info ()
 		{
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Magicucho de pacotilla, jamás estarás a la altura del poder del maestro.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Magicucho de pacotilla, jamÃ¡s estarÃ¡s a la altura del poder del maestro.
 			};
 			if (randy == 1)
 			{
@@ -113,18 +113,18 @@ func void DIA_AmbientDementor_Info ()
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //Aunque seas mago, no podrás detenernos.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //Aunque seas mago, no podrÃ¡s detenernos.
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Mi maestro te destruirá. Tu penosa magia de salón no va a salvarte.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Mi maestro te destruirÃ¡. Tu penosa magia de salÃ³n no va a salvarte.
 			};
 		}
 	else
 		{	
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //Ríndete mientras puedas. No tienes escapatoria.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //RÃ­ndete mientras puedas. No tienes escapatoria.
 			};
 			if (randy == 1)
 			{
@@ -136,7 +136,7 @@ func void DIA_AmbientDementor_Info ()
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_14"); //Has caído en nuestra trampa, y ahora acabaremos contigo.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_14"); //Has caÃ­do en nuestra trampa, y ahora acabaremos contigo.
 			};
 		};
 };

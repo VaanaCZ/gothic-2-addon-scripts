@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_7_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //En los últimos tiempos la zona se ha vuelto mucho más peligrosa y los incursores de campo son una auténtica plaga.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //En los Ãºltimos tiempos la zona se ha vuelto mucho mÃ¡s peligrosa y los incursores de campo son una autÃ©ntica plaga.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Tenemos que pagar el tributo a la ciudad si no queremos líos con los paladines.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Tenemos que pagar el tributo a la ciudad si no queremos lÃ­os con los paladines.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //La rebelión de Onar va a tener graves repercusiones. Prefiero mantenerme al margen.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //La rebeliÃ³n de Onar va a tener graves repercusiones. Prefiero mantenerme al margen.
 	};
 	
 	AI_StopProcessInfos	(self);

@@ -54,17 +54,17 @@ func void DIA_Ingmar_Hallo_Info ()
 	&& (LordHagen.aivar[AIV_TalkedToPlayer] == TRUE)
 	{ 
 		AI_Output (self, other, "DIA_Ingmar_Hallo_06_00"); //De acuerdo con los informes que he recibido, el Valle de las Minas es un lugar peligroso.
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_01"); //Asegúrate de equiparte adecuadamente antes de salir para allá.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_01"); //AsegÃºrate de equiparte adecuadamente antes de salir para allÃ¡.
 	}
 	else if (MIS_OLDWORLD == LOG_SUCCESS)
 	&& 		(LordHagen.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_02"); //La situación en el Valle de las Minas es bastante preocupante. Pero planearemos algo para superar los peligros y sacar de allí a nuestros muchachos con el mineral.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_02"); //La situaciÃ³n en el Valle de las Minas es bastante preocupante. Pero planearemos algo para superar los peligros y sacar de allÃ­ a nuestros muchachos con el mineral.
 		DIA_Ingmar_Hallo_permanent = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_03"); //Creía que habías venido a hablar con lord Hagen. Deberías hacerlo.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_03"); //CreÃ­a que habÃ­as venido a hablar con lord Hagen. DeberÃ­as hacerlo.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ instance DIA_Ingmar_Krieg		(C_INFO)
 	condition	 = 	DIA_Ingmar_Krieg_Condition;
 	information	 = 	DIA_Ingmar_Krieg_Info;
 	permanent    =  FALSE;
-	description	 =  "¿Qué tal van las cosas en el continente?";
+	description	 =  "Â¿QuÃ© tal van las cosas en el continente?";
 };
 func int DIA_Ingmar_Krieg_Condition ()
 {	
@@ -88,9 +88,9 @@ func int DIA_Ingmar_Krieg_Condition ()
 };
 func void DIA_Ingmar_Krieg_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_Krieg_15_00"); //¿Qué tal van las cosas en el continente?
-	AI_Output (self, other, "DIA_Ingmar_Krieg_06_01"); //La guerra todavía no se ha ganado, aunque las tropas reales ya están haciendo retroceder a los orcos.
-	AI_Output (self, other, "DIA_Ingmar_Krieg_06_02"); //No obstante, hay pequeñas bandas de orcos que se congregan e varios lugares e intentan dividir nuestro ejército.
+	AI_Output (other, self, "DIA_Ingmar_Krieg_15_00"); //Â¿QuÃ© tal van las cosas en el continente?
+	AI_Output (self, other, "DIA_Ingmar_Krieg_06_01"); //La guerra todavÃ­a no se ha ganado, aunque las tropas reales ya estÃ¡n haciendo retroceder a los orcos.
+	AI_Output (self, other, "DIA_Ingmar_Krieg_06_02"); //No obstante, hay pequeÃ±as bandas de orcos que se congregan e varios lugares e intentan dividir nuestro ejÃ©rcito.
 	AI_Output (self, other, "DIA_Ingmar_Krieg_06_03"); //Luchan sin honor y sin fe. Por ello, al final, acabaremos ganando.
 };	
 
@@ -104,7 +104,7 @@ instance DIA_Ingmar_CanTeach		(C_INFO)
 	condition	 = 	DIA_Ingmar_CanTeach_Condition;
 	information	 = 	DIA_Ingmar_CanTeach_Info;
 	permanent    =  TRUE;
-	description	 = 	"¿Puedes enseñarme?";
+	description	 = 	"Â¿Puedes enseÃ±arme?";
 };
 
 func int DIA_Ingmar_CanTeach_Condition ()
@@ -116,13 +116,13 @@ func int DIA_Ingmar_CanTeach_Condition ()
 };
 func void DIA_Ingmar_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_CanTeach_15_00"); //¿Puedes enseñarme?
+	AI_Output (other, self, "DIA_Ingmar_CanTeach_15_00"); //Â¿Puedes enseÃ±arme?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_01"); //Te puedo enseñar a reforzar los brazos para que así puedas blandir las armas con mayor efectividad.
+		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_01"); //Te puedo enseÃ±ar a reforzar los brazos para que asÃ­ puedas blandir las armas con mayor efectividad.
 			Ingmar_TeachSTR = TRUE;
-			B_LogEntry (TOPIC_CityTeacher,"Ingmar, el paladín, puede ayudarme a ser más fuerte.");
+			B_LogEntry (TOPIC_CityTeacher,"Ingmar, el paladÃ­n, puede ayudarme a ser mÃ¡s fuerte.");
 	}
 	else 
 	{
@@ -150,7 +150,7 @@ func int DIA_Ingmar_Teach_Condition ()
 };
 func void DIA_Ingmar_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_Teach_15_00"); //Quiero ser más fuerte.
+	AI_Output (other, self, "DIA_Ingmar_Teach_15_00"); //Quiero ser mÃ¡s fuerte.
 	
 	
 	Info_ClearChoices   (DIA_Ingmar_Teach);
@@ -163,7 +163,7 @@ func void DIA_Ingmar_Teach_BACK()
 {
 	if (other.attribute [ATR_STRENGTH] >= T_MAX)
 	{
-		AI_Output (self, other, "DIA_Ingmar_Teach_06_00"); //Eres fuerte como un troll. No te puedo enseñar nada más.
+		AI_Output (self, other, "DIA_Ingmar_Teach_06_00"); //Eres fuerte como un troll. No te puedo enseÃ±ar nada mÃ¡s.
 	};
 	Info_ClearChoices (DIA_Ingmar_TEACH);
 };
@@ -271,7 +271,7 @@ instance DIA_Ingmar_ORKELITE		(C_INFO)
 	condition	 = 	DIA_Ingmar_ORKELITE_Condition;
 	information	 = 	DIA_Ingmar_ORKELITE_Info;
 
-	description	 = 	"Los orcos están planeando una gran ofensiva.";
+	description	 = 	"Los orcos estÃ¡n planeando una gran ofensiva.";
 };
 
 func int DIA_Ingmar_ORKELITE_Condition ()
@@ -286,56 +286,56 @@ func int DIA_Ingmar_ORKELITE_Condition ()
 func void DIA_Ingmar_ORKELITE_Info ()
 {
 
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_00"); //Los orcos están planeando una gran ofensiva.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_01"); //¿De veras? ¡Qué interesante! ¿Y cómo dices que los sabes?
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_00"); //Los orcos estÃ¡n planeando una gran ofensiva.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_01"); //Â¿De veras? Â¡QuÃ© interesante! Â¿Y cÃ³mo dices que los sabes?
 
 	if (TalkedTo_AntiPaladin == TRUE)
 	{
 	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_02"); //He hablado con ellos.
 	};
 
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_03"); //Algunos de sus líderes están por esta zona.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_04"); //Mmm. Eso no parece la estrategia típica de los orcos.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_03"); //Algunos de sus lÃ­deres estÃ¡n por esta zona.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_04"); //Mmm. Eso no parece la estrategia tÃ­pica de los orcos.
 
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Sería mejor que se te ocurriera una forma de acabar con ellos.", DIA_Ingmar_ORKELITE_loswerden );
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "¿Qué deberíamos hacer ahora?", DIA_Ingmar_ORKELITE_wasTun );
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "¿Qué quieres decir con eso?", DIA_Ingmar_ORKELITE_wieso );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "SerÃ­a mejor que se te ocurriera una forma de acabar con ellos.", DIA_Ingmar_ORKELITE_loswerden );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Â¿QuÃ© deberÃ­amos hacer ahora?", DIA_Ingmar_ORKELITE_wasTun );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Â¿QuÃ© quieres decir con eso?", DIA_Ingmar_ORKELITE_wieso );
 
 	Log_CreateTopic (TOPIC_OrcElite, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_OrcElite, LOG_RUNNING);
-	B_LogEntry (TOPIC_OrcElite,"Ingmar estaba muy interesado en la historia de los guerreros de élite orcos."); 
+	B_LogEntry (TOPIC_OrcElite,"Ingmar estaba muy interesado en la historia de los guerreros de Ã©lite orcos."); 
 
 	MIS_KillOrkOberst = LOG_RUNNING;
 };
 func void DIA_Ingmar_ORKELITE_loswerden ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_loswerden_15_00"); //Sería mejor que se te ocurriera la forma de acabar con ellos.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_loswerden_06_01"); //Bastaría con que dispusiéramos de más información. Mandaré a alguien a explorar los alrededores.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_loswerden_15_00"); //SerÃ­a mejor que se te ocurriera la forma de acabar con ellos.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_loswerden_06_01"); //BastarÃ­a con que dispusiÃ©ramos de mÃ¡s informaciÃ³n. MandarÃ© a alguien a explorar los alrededores.
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
 };
 
 func void DIA_Ingmar_ORKELITE_wieso ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wieso_15_00"); //¿Y eso qué significa?
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wieso_15_00"); //Â¿Y eso quÃ© significa?
 	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_01"); //Si lo que dices es cierto, significa que esperan debilitarnos desde dentro, atacando con sus mejores guerreros.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_02"); //Lo normal es que haya un señor de la guerra liderando cada horda de guerreros orcos. Es raro ver a dos o más juntos.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_03"); //Lo hacen por una razón. Sus líderes son la clave de su estrategia de combate y suelen ir rodeados de guerreros orcos.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_04"); //Por eso es difícil acercarse a ellos si antes no te enfrentas a una horda de, al menos, 30 guerreros.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_02"); //Lo normal es que haya un seÃ±or de la guerra liderando cada horda de guerreros orcos. Es raro ver a dos o mÃ¡s juntos.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_03"); //Lo hacen por una razÃ³n. Sus lÃ­deres son la clave de su estrategia de combate y suelen ir rodeados de guerreros orcos.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_04"); //Por eso es difÃ­cil acercarse a ellos si antes no te enfrentas a una horda de, al menos, 30 guerreros.
 	
-	B_LogEntry (TOPIC_OrcElite,"Ingmar ha dicho algo acerca de un líder de los señores de la guerra orcos."); 
+	B_LogEntry (TOPIC_OrcElite,"Ingmar ha dicho algo acerca de un lÃ­der de los seÃ±ores de la guerra orcos."); 
 };
 
 func void DIA_Ingmar_ORKELITE_wasTun ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wasTun_15_00"); //¿Qué deberíamos hacer ahora?
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_01"); //Cuando se los ve en estas cantidades suelen formar una patrulla de incursión liderada por el de rango más elevado.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wasTun_15_00"); //Â¿QuÃ© deberÃ­amos hacer ahora?
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_01"); //Cuando se los ve en estas cantidades suelen formar una patrulla de incursiÃ³n liderada por el de rango mÃ¡s elevado.
 	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_02"); //Este caudillo establece el cuartel general y se retira a alguna cueva, desde la que manda sus tropas a la batalla.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_03"); //Si pudiéramos hacernos con ese líder, la ventaja que obtendríamos sería decisiva.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_04"); //A los líderes orcos les gusta estar cerca de sus enemigos. Sería buena idea buscar su cueva en algún lugar no muy lejano de la ciudad.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_03"); //Si pudiÃ©ramos hacernos con ese lÃ­der, la ventaja que obtendrÃ­amos serÃ­a decisiva.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_04"); //A los lÃ­deres orcos les gusta estar cerca de sus enemigos. SerÃ­a buena idea buscar su cueva en algÃºn lugar no muy lejano de la ciudad.
 	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_05"); //Se han visto orcos cerca de la granja de Lobart. Puede que sea un buen sitio para empezar a buscar.
 
-	B_LogEntry (TOPIC_OrcElite,"De acuerdo con Ingmar, debería encontrar al coronel orco en una cueva, en algún lugar cerca de la granja de Lobart. Ingmar quiere que lo encuentre y lo elimine."); 
+	B_LogEntry (TOPIC_OrcElite,"De acuerdo con Ingmar, deberÃ­a encontrar al coronel orco en una cueva, en algÃºn lugar cerca de la granja de Lobart. Ingmar quiere que lo encuentre y lo elimine."); 
 	
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
 };
@@ -365,10 +365,10 @@ func int DIA_Ingmar_HAUPTQUARTIER_Condition ()
 
 func void DIA_Ingmar_HAUPTQUARTIER_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_HAUPTQUARTIER_15_00"); //He podido encontrar el cuartel general de los orcos. Su caudillo ha caído.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_01"); //Es una noticia estupenda. Eso va a tener ocupados a los orcos durante algún tiempo.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_02"); //No está mal. Si tuviera más caballeros de tu valía, la batalla que nos espera sería pan comido.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_03"); //Toma. Llévate nuestro oro y úsalo para equiparte.
+	AI_Output (other, self, "DIA_Ingmar_HAUPTQUARTIER_15_00"); //He podido encontrar el cuartel general de los orcos. Su caudillo ha caÃ­do.
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_01"); //Es una noticia estupenda. Eso va a tener ocupados a los orcos durante algÃºn tiempo.
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_02"); //No estÃ¡ mal. Si tuviera mÃ¡s caballeros de tu valÃ­a, la batalla que nos espera serÃ­a pan comido.
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_03"); //Toma. LlÃ©vate nuestro oro y Ãºsalo para equiparte.
 
 	B_GivePlayerXP (XP_KilledOrkOberst);
 	CreateInvItems (self, ItMi_Gold, 300);									
@@ -457,7 +457,7 @@ INSTANCE DIA_Ingmar_PICKPOCKET (C_INFO)
 	condition	= DIA_Ingmar_PICKPOCKET_Condition;
 	information	= DIA_Ingmar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Sería casi imposible robar su pergamino)";
+	description = "(SerÃ­a casi imposible robar su pergamino)";
 };                       
 
 FUNC INT DIA_Ingmar_PICKPOCKET_Condition()

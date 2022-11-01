@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Telbor_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Telbor_NW_Hi_Condition;
 	information = DIA_Addon_Telbor_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "¿Así que vuelves a trabajar en el campo?";
+	description = "Â¿AsÃ­ que vuelves a trabajar en el campo?";
 };
 FUNC INT DIA_Addon_Telbor_NW_Hi_Condition()
 {		
@@ -72,8 +72,8 @@ FUNC INT DIA_Addon_Telbor_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Telbor_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Telbor_NW_Hi_15_00");//¿Así que vuelves a trabajar en el campo?
-	AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_01");//¡Eh, el tipo que me salvó la vida! Sí, ahora trabajo más duro.
+	AI_Output (other, self, "DIA_Addon_Telbor_NW_Hi_15_00");//Â¿AsÃ­ que vuelves a trabajar en el campo?
+	AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_01");//Â¡Eh, el tipo que me salvÃ³ la vida! SÃ­, ahora trabajo mÃ¡s duro.
 	
 	if !Npc_IsDead (Egill)
 	&& !Npc_IsDead (Ehnim)

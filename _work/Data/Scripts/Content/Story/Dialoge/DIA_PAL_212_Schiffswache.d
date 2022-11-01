@@ -29,7 +29,7 @@ instance DIA_Pal_212_Schiffswache_WERSEIDIHR		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Info;
 
-	description	 = 	"¿Quién eres tú?";
+	description	 = 	"Â¿QuiÃ©n eres tÃº?";
 };
 
 func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
@@ -42,8 +42,8 @@ func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WERSEIDIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //¿Quién eres tú?
-	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Somos emisarios del rey Khobar, los sirvientes de Innos. Comúnmente se nos conoce como paladines.
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Â¿QuiÃ©n eres tÃº?
+	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Somos emisarios del rey Khobar, los sirvientes de Innos. ComÃºnmente se nos conoce como paladines.
 };
 
 
@@ -56,7 +56,7 @@ instance DIA_Pal_212_Schiffswache_WASMACHSTDU2		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info;
 
-	description	 = 	"¿Qué estás haciendo aquí?";
+	description	 = 	"Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 
 func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()
@@ -66,22 +66,22 @@ func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_15_00"); //¿Qué hacéis aquí?
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_15_00"); //Â¿QuÃ© hacÃ©is aquÃ­?
 
 	if (MIS_ShipIsFree == FALSE)
 	{
 		if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //No vais a subir a la nave. Eso es todo lo que tenéis que saber.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //No vais a subir a la nave. Eso es todo lo que tenÃ©is que saber.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Nos han asignado aquí, como guardias. Nadie puede entrar en la nave. Tú, tampoco, lo sentimos.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Nos han asignado aquÃ­, como guardias. Nadie puede entrar en la nave. TÃº, tampoco, lo sentimos.
 		};
 	}
 	else
 	{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //Me hacéis perder el tiempo. Preferiría estar con nuestros hermanos en el Valle de las Minas.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //Me hacÃ©is perder el tiempo. PreferirÃ­a estar con nuestros hermanos en el Valle de las Minas.
 	};
 	AI_StopProcessInfos (self);
 };

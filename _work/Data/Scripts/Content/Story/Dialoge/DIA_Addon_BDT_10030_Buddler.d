@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10030_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10030_Buddler_Hi_Condition;
 	information = DIA_Addon_10030_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "¿Todo va bien?";
+	description = "Â¿Todo va bien?";
 };
 FUNC INT DIA_Addon_10030_Buddler_Hi_Condition()
 {	
@@ -36,12 +36,12 @@ FUNC INT DIA_Addon_10030_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10030_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00");//¿Estás bien?
+	AI_Output (other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00");//Â¿EstÃ¡s bien?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Los esclavos están quitando de en medio los trozos grandes.
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(sonríe) Entonces recogeremos la fruta dorada después.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Los esclavos estÃ¡n quitando de en medio los trozos grandes.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(sonrÃ­e) Entonces recogeremos la fruta dorada despuÃ©s.
 	}
 	else
 	{

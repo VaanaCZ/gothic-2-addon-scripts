@@ -23,7 +23,7 @@ FUNC VOID DIA_Isgaroth_EXIT_Info()
 	AI_StopProcessInfos (self);
 };
 //****************************************************************************
-//	Begrüssung
+//	BegrÃ¼ssung
 //****************************************************************************
 
 INSTANCE DIA_Isgaroth_Hello   (C_INFO)
@@ -44,7 +44,7 @@ FUNC INT DIA_Isgaroth_Hello_Condition()
 };
 FUNC VOID DIA_Isgaroth_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Isgaroth_Hello_01_00"); //Que Innos te acompañe. ¿En qué puedo ayudarte, peregrino?
+	AI_Output (self ,other,"DIA_Isgaroth_Hello_01_00"); //Que Innos te acompaÃ±e. Â¿En quÃ© puedo ayudarte, peregrino?
 }; 
 //****************************************************************************
 //	Segen
@@ -56,7 +56,7 @@ INSTANCE DIA_Isgaroth_Segen   (C_INFO)
 	condition   = DIA_Isgaroth_Segen_Condition;
 	information = DIA_Isgaroth_Segen_Info;
 	permanent   = TRUE;
-	description	= "¡Bendíceme!";
+	description	= "Â¡BendÃ­ceme!";
 };
 FUNC INT DIA_Isgaroth_Segen_Condition()
 {
@@ -64,8 +64,8 @@ FUNC INT DIA_Isgaroth_Segen_Condition()
 };
 FUNC VOID DIA_Isgaroth_Segen_Info()
 {
-	AI_Output (other ,self,"DIA_Isgaroth_Segen_15_00"); //¡Bendíceme!
-	AI_Output (self ,other,"DIA_Isgaroth_Segen_01_01"); //Te bendigo en el nombre de Innos. Que el fuego del Señor arda en tu corazón y te dé fuerzas para actuar según su justicia.
+	AI_Output (other ,self,"DIA_Isgaroth_Segen_15_00"); //Â¡BendÃ­ceme!
+	AI_Output (self ,other,"DIA_Isgaroth_Segen_01_01"); //Te bendigo en el nombre de Innos. Que el fuego del SeÃ±or arda en tu corazÃ³n y te dÃ© fuerzas para actuar segÃºn su justicia.
 	
 	Isgaroth_Segen = TRUE;
 }; 
@@ -79,7 +79,7 @@ INSTANCE DIA_Isgaroth_Wolf   (C_INFO)
 	condition   = DIA_Isgaroth_Wolf_Condition;
 	information = DIA_Isgaroth_Wolf_Info;
 	permanent   = FALSE;
-	description	= "Me envía Sergio...";
+	description	= "Me envÃ­a Sergio...";
 };
 FUNC INT DIA_Isgaroth_Wolf_Condition()
 {	
@@ -92,11 +92,11 @@ FUNC INT DIA_Isgaroth_Wolf_Condition()
 };
 FUNC VOID DIA_Isgaroth_Wolf_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_Wolf_15_00"); //Me manda Sergio. Me he hecho cargo de su misión. ¿En qué consiste?
-	AI_Output (self ,other,"DIA_Isgaroth_Wolf_01_01"); //Últimamente se ha visto a un lobo oscuro rondando por la zona. Encuéntralo y mátalo.
+	AI_Output (other,self ,"DIA_Isgaroth_Wolf_15_00"); //Me manda Sergio. Me he hecho cargo de su misiÃ³n. Â¿En quÃ© consiste?
+	AI_Output (self ,other,"DIA_Isgaroth_Wolf_01_01"); //Ãšltimamente se ha visto a un lobo oscuro rondando por la zona. EncuÃ©ntralo y mÃ¡talo.
 
 	MIS_IsgarothWolf = LOG_RUNNING;
-	B_LogEntry (Topic_IsgarothWolf,"Hay un lobo oscuro merodeando por el altar. Debería encontrarlo y matarlo.");
+	B_LogEntry (Topic_IsgarothWolf,"Hay un lobo oscuro merodeando por el altar. DeberÃ­a encontrarlo y matarlo.");
 	
 };
 //********************************************************************************
@@ -124,7 +124,7 @@ FUNC INT DIA_Isgaroth_tot_Condition()
 FUNC VOID DIA_Isgaroth_tot_Info()
 {
 	AI_Output (other,self ,"DIA_Isgaroth_tot_15_00"); //He matado al lobo.
-	AI_Output (self ,other,"DIA_Isgaroth_tot_01_01"); //Buen trabajo, novicio. Eres un hombre valiente. Ahora vuelve al monasterio y ocúpate de tus obligaciones.
+	AI_Output (self ,other,"DIA_Isgaroth_tot_01_01"); //Buen trabajo, novicio. Eres un hombre valiente. Ahora vuelve al monasterio y ocÃºpate de tus obligaciones.
 	
 	MIS_IsgarothWolf = LOG_SUCCESS;
 	B_GivePlayerXP (XP_IsgarothWolf);
@@ -142,7 +142,7 @@ INSTANCE DIA_Isgaroth_Job   (C_INFO)
 	condition   = DIA_Isgaroth_Job_Condition;
 	information = DIA_Isgaroth_Job_Info;
 	permanent   = FALSE;
-	description	= "¿Qué estás haciendo aquí?";
+	description	= "Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 FUNC INT DIA_Isgaroth_Job_Condition()
 {
@@ -153,14 +153,14 @@ FUNC INT DIA_Isgaroth_Job_Condition()
 };
 FUNC VOID DIA_Isgaroth_Job_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_Job_15_00"); //¿Qué haces aquí?
+	AI_Output (other,self ,"DIA_Isgaroth_Job_15_00"); //Â¿QuÃ© haces aquÃ­?
 	AI_Output (self ,other,"DIA_Isgaroth_Job_01_01"); //Soy un mago del fuego, un sacerdote de nuestro dios Innos.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_02"); //Este santuario está consagrado a él, el dios supremo, creador del fuego y señor de la justicia.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_03"); //La gente viene a verme para rezarle a Innos y recibir mi bendición.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_04"); //Y a cambio de un modesto donativo, te puedo proporcionar muchas cosas útiles.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_02"); //Este santuario estÃ¡ consagrado a Ã©l, el dios supremo, creador del fuego y seÃ±or de la justicia.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_03"); //La gente viene a verme para rezarle a Innos y recibir mi bendiciÃ³n.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_04"); //Y a cambio de un modesto donativo, te puedo proporcionar muchas cosas Ãºtiles.
 	
 	Log_CreateTopic (Topic_KlosterTrader,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTrader,"El maestro Isgaroth trafica con objetos mágicos, en el altar que está frente al monasterio.");
+	B_LogEntry (Topic_KlosterTrader,"El maestro Isgaroth trafica con objetos mÃ¡gicos, en el altar que estÃ¡ frente al monasterio.");
 };
 //****************************************************************************
 //	Trade
@@ -173,7 +173,7 @@ INSTANCE DIA_Isgaroth_Trade   (C_INFO)
 	information = DIA_Isgaroth_Trade_Info;
 	permanent   = TRUE;
 	trade		= TRUE;
-	description	= "Enséñame tu mercancía.";
+	description	= "EnsÃ©Ã±ame tu mercancÃ­a.";
 };
 FUNC INT DIA_Isgaroth_Trade_Condition()
 {	
@@ -185,7 +185,7 @@ FUNC INT DIA_Isgaroth_Trade_Condition()
 FUNC VOID DIA_Isgaroth_Trade_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Isgaroth_Trade_15_00"); //Muéstrame tu mercancía.
+	AI_Output (other ,self,"DIA_Isgaroth_Trade_15_00"); //MuÃ©strame tu mercancÃ­a.
 };
 //********************************************************************************
 //	Kloster
@@ -197,7 +197,7 @@ INSTANCE DIA_Isgaroth_Kloster   (C_INFO)
 	condition   = DIA_Isgaroth_Kloster_Condition;
 	information = DIA_Isgaroth_Kloster_Info;
 	permanent   = FALSE;
-	description	= "¿Adónde me lleva este sendero?";
+	description	= "Â¿AdÃ³nde me lleva este sendero?";
 };
 FUNC INT DIA_Isgaroth_Kloster_Condition()
 {	
@@ -209,8 +209,8 @@ FUNC INT DIA_Isgaroth_Kloster_Condition()
 };
 FUNC VOID DIA_Isgaroth_Kloster_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_Kloster_15_00"); //¿Adónde me lleva este sendero?
-	AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_01"); //El sendero lleva al monasterio de los magos del fuego. No obstante, en él solo pueden entrar los discípulos de Innos.
+	AI_Output (other,self ,"DIA_Isgaroth_Kloster_15_00"); //Â¿AdÃ³nde me lleva este sendero?
+	AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_01"); //El sendero lleva al monasterio de los magos del fuego. No obstante, en Ã©l solo pueden entrar los discÃ­pulos de Innos.
 	
 	if (other.guild == GIL_NONE)
 	{
@@ -223,7 +223,7 @@ FUNC VOID DIA_Isgaroth_Kloster_Info()
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_03"); //Como ya has decidido ingresar en otro grupo, te prohibirán la entrada.
+		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_03"); //Como ya has decidido ingresar en otro grupo, te prohibirÃ¡n la entrada.
 	};
 };
 
@@ -253,7 +253,7 @@ FUNC INT DIA_Isgaroth_Vatras_Condition()
 FUNC VOID DIA_Isgaroth_Vatras_Info()
 {
 	AI_Output (other,self ,"DIA_ISgaroth_Vatras_15_00"); //Traigo un mensaje de Vatras.
-	AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_01"); //¿Cuál es el mensaje?
+	AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_01"); //Â¿CuÃ¡l es el mensaje?
 	AI_Output (other,self ,"DIA_Isgaroth_Vatras_15_02"); //Es una carta. Ten.
 	
 	if (Npc_HasItems (other,ItWr_VatrasMessage) == 1)
@@ -265,7 +265,7 @@ FUNC VOID DIA_Isgaroth_Vatras_Info()
 		B_UseFakeScroll();
 	
 		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_03"); //Bien. Dile a Vatras que he recibido el mensaje.
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_04"); //Toma estas pociones como recompensa por tus servicios. Seguro que te son útiles.
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_04"); //Toma estas pociones como recompensa por tus servicios. Seguro que te son Ãºtiles.
 		
 		CreateInvItems (self, ItPo_Health_02,2);
 		B_GiveInvItems (self,other,ItPo_Health_02,2);
@@ -281,7 +281,7 @@ FUNC VOID DIA_Isgaroth_Vatras_Info()
 		};
 		B_UseFakeScroll ();
 	
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_05"); //El sello está roto. ¿En qué estabas pensando, necio?
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_05"); //El sello estÃ¡ roto. Â¿En quÃ© estabas pensando, necio?
 		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_06"); //Ve a decirle a Vatras que he recibido su mensaje.
 		AI_StopProcessInfos (self);
 	};	

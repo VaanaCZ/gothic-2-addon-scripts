@@ -38,11 +38,11 @@ func int DIA_328_Miliz_Hi_Condition ()
 };
 func void DIA_328_Miliz_Hi_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Eh, aquí no pintas nada, ¿te enteras?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //¿Quién eres?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //¿A ti que te importa? Soy el jefe, ¿vale?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //¿El jefe? ¿De qué? ¿De estos baúles?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Oye, el almacén está bajo mi supervisión, ¿te enteras? Lárgate si no quieres que te parta la cabeza.
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Eh, aquÃ­ no pintas nada, Â¿te enteras?
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Â¿QuiÃ©n eres?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Â¿A ti que te importa? Soy el jefe, Â¿vale?
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Â¿El jefe? Â¿De quÃ©? Â¿De estos baÃºles?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Oye, el almacÃ©n estÃ¡ bajo mi supervisiÃ³n, Â¿te enteras? LÃ¡rgate si no quieres que te parta la cabeza.
 	
 	AI_StopProcessInfos (self);
 	
@@ -69,8 +69,8 @@ func int DIA_328_Miliz_Kill_Condition ()
 };
 func void DIA_328_Miliz_Kill_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Sigues aquí. ¿No te he dicho que te largases?
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //¡Te voy a enseñar quién manda!
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Sigues aquÃ­. Â¿No te he dicho que te largases?
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //Â¡Te voy a enseÃ±ar quiÃ©n manda!
 	
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);

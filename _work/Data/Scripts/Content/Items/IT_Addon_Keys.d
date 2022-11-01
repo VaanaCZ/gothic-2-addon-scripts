@@ -32,7 +32,7 @@ INSTANCE ITKE_Greg_ADDON_MIS (C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"La llave del tesoro";
-	TEXT[3]				=   "CabaÒa del capit·n";
+	TEXT[3]				=   "Caba√±a del capit√°n";
 	TEXT[4]				=   "Greg";	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -114,7 +114,7 @@ INSTANCE ITKE_CANYONLIBRARY_HIERARCHY_BOOKS_ADDON (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"desde el cham·n orco del campamento de los orcos";
+	TEXT[2]				=	"desde el cham√°n orco del campamento de los orcos";
 	TEXT[3]				=   "a la puerta de la Biblioteca de Eruditos";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;

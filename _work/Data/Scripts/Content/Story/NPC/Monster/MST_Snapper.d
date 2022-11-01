@@ -132,11 +132,11 @@ INSTANCE NewMine_Snapper8	(Mst_Default_Snapper)
 	Npc_SetToFistMode(self);
 };
 
-INSTANCE NewMine_LeadSnapper	(Mst_Default_Snapper)	//OW NewMineMission Kill_Snapper: Bilgot weiﬂ von einem Leittier, das muﬂ tot -> Fajeths Auftrag erledigt! 
+INSTANCE NewMine_LeadSnapper	(Mst_Default_Snapper)	//OW NewMineMission Kill_Snapper: Bilgot wei√ü von einem Leittier, das mu√ü tot -> Fajeths Auftrag erledigt! 
 {
 	B_SetVisuals_Snapper();
 	Npc_SetToFistMode(self);
-	name	=	"LÌder de man·da";
+	name	=	"L√≠der de man√°da";
 	
 	//----- Attribute ----	
 	attribute	[ATR_STRENGTH]		=	60;

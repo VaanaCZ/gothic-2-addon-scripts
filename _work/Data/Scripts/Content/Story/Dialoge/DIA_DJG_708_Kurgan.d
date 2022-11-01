@@ -42,10 +42,10 @@ func int DIA_Kurgan_HELLO_Condition ()
 
 func void DIA_Kurgan_HELLO_Info ()
 {
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_00"); //¡Eh, tú! Los tipos como tú deberían tener cuidado de adónde van.
-	AI_Output			(other,self , "DIA_Kurgan_HELLO_15_01"); //¿Qué tratas de decirme?
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_02"); //Me refiero a que este aire no es saludable. La región está infestada de orcos y monstruos.
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_03"); //Por no hablar de los dragones. No es más que una advertencia bienintencionada.
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_00"); //Â¡Eh, tÃº! Los tipos como tÃº deberÃ­an tener cuidado de adÃ³nde van.
+	AI_Output			(other,self , "DIA_Kurgan_HELLO_15_01"); //Â¿QuÃ© tratas de decirme?
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_02"); //Me refiero a que este aire no es saludable. La regiÃ³n estÃ¡ infestada de orcos y monstruos.
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_03"); //Por no hablar de los dragones. No es mÃ¡s que una advertencia bienintencionada.
 	B_LogEntry (TOPIC_Dragonhunter,"Un grupo de cazadores de dragones me ha recibido en la entrada del Valle de las Minas. Parecen bien armados, pero me temo que no saben mucho de dragones.");
 };
 
@@ -58,7 +58,7 @@ instance DIA_Kurgan_ELSE		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_ELSE_Condition;
 	information	= 	DIA_Kurgan_ELSE_Info;
-	description	= 	"¿Puedes contarme algo que aún no sepa?";
+	description	= 	"Â¿Puedes contarme algo que aÃºn no sepa?";
 
 };
 
@@ -69,15 +69,15 @@ func int DIA_Kurgan_ELSE_Condition ()
 
 func void DIA_Kurgan_ELSE_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_ELSE_15_00"); //¿Puedes contarme algo que aún no sepa?
+	AI_Output			(other,self , "DIA_Kurgan_ELSE_15_00"); //Â¿Puedes contarme algo que aÃºn no sepa?
 	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_01"); //Puedo darte un buen consejo, y es gratis.
-	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_02"); //Aquí no nos resulta útil alguien que se desmaya en cuanto un dragón se tira un pedo.
-	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_03"); //Vete a casa, éste es un trabajo para hombres de verdad.
+	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_02"); //AquÃ­ no nos resulta Ãºtil alguien que se desmaya en cuanto un dragÃ³n se tira un pedo.
+	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_03"); //Vete a casa, Ã©ste es un trabajo para hombres de verdad.
 	
 };
 
 //**************************************************************************
-//	Bist du hier der Anführer?
+//	Bist du hier der AnfÃ¼hrer?
 //**************************************************************************
 
 instance DIA_Kurgan_Leader		(C_INFO)
@@ -85,7 +85,7 @@ instance DIA_Kurgan_Leader		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_Leader_Condition;
 	information	= 	DIA_Kurgan_Leader_Info;
-	description	= 	"¿Eres el jefe?";
+	description	= 	"Â¿Eres el jefe?";
 
 };
 
@@ -96,15 +96,15 @@ func int DIA_Kurgan_Leader_Condition ()
 
 func void DIA_Kurgan_Leader_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_Leader_15_00"); //¿Eres el jefe?
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_01"); //¿Lo parezco? Claro que no. No necesitamos que un fantoche engreído nos mandonee.
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_02"); //Cuando Sylvio intentó comportarse como si fuera el jefe, tanto a él como a sus amigos les dejamos claro lo que opinábamos al respecto.
+	AI_Output			(other,self , "DIA_Kurgan_Leader_15_00"); //Â¿Eres el jefe?
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_01"); //Â¿Lo parezco? Claro que no. No necesitamos que un fantoche engreÃ­do nos mandonee.
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_02"); //Cuando Sylvio intentÃ³ comportarse como si fuera el jefe, tanto a Ã©l como a sus amigos les dejamos claro lo que opinÃ¡bamos al respecto.
 	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_03"); //Hubo una pelea, y al final se largaron.
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_04"); //Espero que Sylvio acabe en la sopera de algún orco.
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_04"); //Espero que Sylvio acabe en la sopera de algÃºn orco.
 };
 
 //**************************************************************************
-//	Wolltet ihr nicht ein paar Drachen töten?
+//	Wolltet ihr nicht ein paar Drachen tÃ¶ten?
 //**************************************************************************
 
 instance DIA_Kurgan_KillDragon		(C_INFO)
@@ -112,7 +112,7 @@ instance DIA_Kurgan_KillDragon		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_KillDragon_Condition;
 	information	= 	DIA_Kurgan_KillDragon_Info;
-	description	= 	"¿Así que quieres matar dragones?";
+	description	= 	"Â¿AsÃ­ que quieres matar dragones?";
 
 };
 
@@ -126,19 +126,19 @@ func int DIA_Kurgan_KillDragon_Condition ()
 var int Kurgan_KillDragon_Day;
 func void DIA_Kurgan_KillDragon_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_00"); //(Burlón) ¿Quieres matar dragones?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_01"); //Listillo. ¿Así que sabes matar dragones?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_02"); //¿Crees que el animal se queda cruzado de brazos mientras le cortas la cabeza?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_03"); //Algo así se tiene que planificar con cuidado, y luego hay que actuar con decisión.
-	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_04"); //Entiendo. Y, ¿cómo vais a hacerlo?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_05"); //En primer lugar, descubriremos la posición de las bestias.
+	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_00"); //(BurlÃ³n) Â¿Quieres matar dragones?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_01"); //Listillo. Â¿AsÃ­ que sabes matar dragones?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_02"); //Â¿Crees que el animal se queda cruzado de brazos mientras le cortas la cabeza?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_03"); //Algo asÃ­ se tiene que planificar con cuidado, y luego hay que actuar con decisiÃ³n.
+	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_04"); //Entiendo. Y, Â¿cÃ³mo vais a hacerlo?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_05"); //En primer lugar, descubriremos la posiciÃ³n de las bestias.
 	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_06"); //Solo entonces pensaremos en la mejor manera de atacar.
 
 	
 	Kurgan_KillDragon_Day = Wld_GetDay(); 
 
-	Info_AddChoice	(DIA_Kurgan_KillDragon, "Me encantaría ver cómo lo hacéis, pero tengo que ponerme en camino.", DIA_Kurgan_KillDragon_weg );
-	Info_AddChoice	(DIA_Kurgan_KillDragon, "¿Como vais a hacer que los orcos os dejen pasar?"					, DIA_Kurgan_KillDragon_orks );
+	Info_AddChoice	(DIA_Kurgan_KillDragon, "Me encantarÃ­a ver cÃ³mo lo hacÃ©is, pero tengo que ponerme en camino.", DIA_Kurgan_KillDragon_weg );
+	Info_AddChoice	(DIA_Kurgan_KillDragon, "Â¿Como vais a hacer que los orcos os dejen pasar?"					, DIA_Kurgan_KillDragon_orks );
 	Info_AddChoice	(DIA_Kurgan_KillDragon, "Creo que no sois capaces de encontrar ni a una oveja ciega.", DIA_Kurgan_KillDragon_spott );
 
 
@@ -146,7 +146,7 @@ func void DIA_Kurgan_KillDragon_Info ()
 func void DIA_Kurgan_KillDragon_spott ()
 {
 	AI_Output			(other, self, "DIA_Kurgan_KillDragon_spott_15_00"); //Creo que no sois capaces de encontrar ni a una oveja ciega.
-	AI_Output			(self, other, "DIA_Kurgan_KillDragon_spott_01_01"); //¿Qué? ¿Quieres que te parta esa cara de imbécil?
+	AI_Output			(self, other, "DIA_Kurgan_KillDragon_spott_01_01"); //Â¿QuÃ©? Â¿Quieres que te parta esa cara de imbÃ©cil?
 	AI_StopProcessInfos (self);
 
 	B_Attack (self, other, AR_NONE, 1);	
@@ -154,14 +154,14 @@ func void DIA_Kurgan_KillDragon_spott ()
 
 func void DIA_Kurgan_KillDragon_orks ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_KillDragon_orks_15_00"); //¿Como vais a hacer que los orcos os dejen pasar?
-	AI_Output			(self, other, "DIA_Kurgan_KillDragon_orks_01_01"); //Ya nos ocuparemos de estos detalles más adelante.
+	AI_Output			(other, self, "DIA_Kurgan_KillDragon_orks_15_00"); //Â¿Como vais a hacer que los orcos os dejen pasar?
+	AI_Output			(self, other, "DIA_Kurgan_KillDragon_orks_01_01"); //Ya nos ocuparemos de estos detalles mÃ¡s adelante.
 
 };
 
 func void DIA_Kurgan_KillDragon_weg ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_KillDragon_weg_15_00"); //Me encantaría ver cómo lo hacéis, pero tengo que ponerme en camino.
+	AI_Output			(other, self, "DIA_Kurgan_KillDragon_weg_15_00"); //Me encantarÃ­a ver cÃ³mo lo hacÃ©is, pero tengo que ponerme en camino.
 	AI_Output			(self, other, "DIA_Kurgan_KillDragon_weg_01_01"); //Vuelve por el desfiladero si no quieres perder un par de extremidades.
 
 	AI_StopProcessInfos (self);
@@ -177,7 +177,7 @@ instance DIA_Kurgan_SEENDRAGON		(C_INFO)
 	information	 = 	DIA_Kurgan_SEENDRAGON_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Habéis visto ya a algún dragón?";
+	description	 = 	"Â¿HabÃ©is visto ya a algÃºn dragÃ³n?";
 };
 
 func int DIA_Kurgan_SEENDRAGON_Condition ()
@@ -190,7 +190,7 @@ func int DIA_Kurgan_SEENDRAGON_Condition ()
 
 func void DIA_Kurgan_SEENDRAGON_Info ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_SEENDRAGON_15_00"); //¿Habéis visto ya a algún dragón?
+	AI_Output			(other, self, "DIA_Kurgan_SEENDRAGON_15_00"); //Â¿HabÃ©is visto ya a algÃºn dragÃ³n?
 	AI_Output			(self, other, "DIA_Kurgan_SEENDRAGON_01_01"); //Por ahora no, pero esas bestias no van a poder esconderse eternamente.
 };
 
@@ -204,7 +204,7 @@ INSTANCE DIA_Kurgan_AllDragonsDead   (C_INFO)
 	condition   = DIA_Kurgan_AllDragonsDead_Condition;
 	information = DIA_Kurgan_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Los dragones están muertos.";
+	description	= "Los dragones estÃ¡n muertos.";
 				
 };
 
@@ -218,10 +218,10 @@ FUNC INT DIA_Kurgan_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Kurgan_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Kurgan_AllDragonsDead_15_00"); //Los dragones están muertos.
-	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_01"); //Ja, y ¿quién se supone que los ha matado? ¿Los paladines?
+	AI_Output	(other,self ,"DIA_Kurgan_AllDragonsDead_15_00"); //Los dragones estÃ¡n muertos.
+	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_01"); //Ja, y Â¿quiÃ©n se supone que los ha matado? Â¿Los paladines?
 	AI_Output 	(other,self ,"DIA_Kurgan_AllDragonsDead_15_02"); //He sido yo.
-	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_03"); //(Se ríe) Ja. Ni tú te lo crees. No me cabrees.
+	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_03"); //(Se rÃ­e) Ja. Ni tÃº te lo crees. No me cabrees.
 };
 
 

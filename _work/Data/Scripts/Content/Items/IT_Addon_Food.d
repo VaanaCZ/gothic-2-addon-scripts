@@ -118,7 +118,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 //	Lou's Hammer (mit Manaessenz)
 //-----------------------------
 
-var int Hammer_Once;	//damit der Magier sich nicht für 30 Gold superviel MANA kauft!!
+var int Hammer_Once;	//damit der Magier sich nicht fÃ¼r 30 Gold superviel MANA kauft!!
 
 INSTANCE ItFo_Addon_LousHammer (C_Item)
 {
@@ -172,7 +172,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 
 	description		= 	"Martillo doble";
 	
-	TEXT[1]			= 	"Tumba hasta a los bebedores más expertos…";				
+	TEXT[1]			= 	"Tumba hasta a los bebedores mÃ¡s expertosâ€¦";				
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchlafHammer;
@@ -206,7 +206,7 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 	on_state[0]		=	UseSchnellerHering;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"¡Parece peligroso!";
+	description		= 	"Â¡Parece peligroso!";
 	
 	TEXT[1]			= 	"Efecto: desconocido.";				
 	TEXT[2]			=	"Posibles efectos secundarios";
@@ -246,12 +246,12 @@ INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 
 	material 			=	MAT_LEATHER;
 		
-	description			= 	"Pimienta roja lacrimógena";
+	description			= 	"Pimienta roja lacrimÃ³gena";
 	
 	TEXT[0]				= 	"De las islas del sur";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
-	TEXT[3]				= 	"¡CUIDADO, QUEMA!";
+	TEXT[3]				= 	"Â¡CUIDADO, QUEMA!";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -283,7 +283,7 @@ INSTANCE ItFo_Addon_FireStew (C_Item)
 		B_RaiseAttribute 	(self,	ATR_STRENGTH,	STR_FireStew);
 		Npc_ChangeAttribute	(self,	ATR_HITPOINTS_MAX,	HP_FireStew);
 		
-		PrintScreen ("¡Aumenta la energía vital y la fuerza!", -1, 34, FONT_ScreenSmall,2); 
+		PrintScreen ("Â¡Aumenta la energÃ­a vital y la fuerza!", -1, 34, FONT_ScreenSmall,2); 
 	};
 //-------------------------------------------------------
 // Fleischsuppe

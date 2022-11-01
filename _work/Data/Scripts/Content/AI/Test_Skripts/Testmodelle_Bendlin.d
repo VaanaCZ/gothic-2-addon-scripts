@@ -144,7 +144,7 @@ instance DIA_Aya_WarteHier(C_Info)
 	condition	= DIA_Aya_WarteHier_Condition;
 	information	= DIA_Aya_WarteHier_Info;
 	permanent	= TRUE;
-	description	= "Ich fürchte, ich muss mich von dir trennen.";
+	description	= "Ich fÃ¼rchte, ich muss mich von dir trennen.";
 };
 func int DIA_Aya_WarteHier_Condition()
 {
@@ -155,7 +155,7 @@ func int DIA_Aya_WarteHier_Condition()
 };
 func void DIA_Aya_WarteHier_Info()
 {
-	AI_Output(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");  //Ich fürchte, ich muss mich von dir trennen.
+	AI_Output(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");  //Ich fÃ¼rchte, ich muss mich von dir trennen.
 	B_Say(self, other, "$YESGOOUTOFHERE");
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "Start");

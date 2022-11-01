@@ -28,7 +28,7 @@ instance DIA_PAL_298_Pass		(C_INFO)
 	condition	 = 	DIA_PAL_298_Pass_Condition;
 	information	 = 	DIA_PAL_298_Pass_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"¿A dónde lleva este camino?";
+	description	 = 	"Â¿A dÃ³nde lleva este camino?";
 };
 func int DIA_PAL_298_Pass_Condition ()
 {	
@@ -39,10 +39,10 @@ func int DIA_PAL_298_Pass_Condition ()
 };
 func void DIA_PAL_298_Pass_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//¿Adónde lleva este camino?
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Detrás de la puerta está el paso que lleva al Valle de las Minas.
+	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//Â¿AdÃ³nde lleva este camino?
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//DetrÃ¡s de la puerta estÃ¡ el paso que lleva al Valle de las Minas.
 	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//Estamos en este lado. Al otro se han emboscado unos cuantos orcos.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Será mejor que vuelvas, no puedes pasar por aquí.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//SerÃ¡ mejor que vuelvas, no puedes pasar por aquÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRESPASS
@@ -65,9 +65,9 @@ func int DIA_PAL_298_TRESPASS_Condition ()
 };
 func void DIA_PAL_298_TRESPASS_Info ()
 {
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//¿Estás seguro de que quieres entrar aquí? Me temo que no llegarás muy lejos. Al otro lado están los orcos.
-	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Si hay una forma de entrar en el Valle de las Minas, la encontraré.
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//Bien, entonces ve. Que Innos te acompañe.
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//Â¿EstÃ¡s seguro de que quieres entrar aquÃ­? Me temo que no llegarÃ¡s muy lejos. Al otro lado estÃ¡n los orcos.
+	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Si hay una forma de entrar en el Valle de las Minas, la encontrarÃ©.
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//Bien, entonces ve. Que Innos te acompaÃ±e.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 
@@ -79,7 +79,7 @@ instance DIA_PAL_298_Perm1		(C_INFO)
 	condition	 = 	DIA_PAL_298_Perm1_Condition;
 	information	 = 	DIA_PAL_298_Perm1_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Y si voy por mi cuenta y riesgo?";
+	description	 = 	"Â¿Y si voy por mi cuenta y riesgo?";
 };
 func int DIA_PAL_298_Perm1_Condition ()
 {	
@@ -91,8 +91,8 @@ func int DIA_PAL_298_Perm1_Condition ()
 };
 func void DIA_PAL_298_Perm1_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//¿Y si voy por mi cuenta y riesgo?
-	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Entonces morirás. Por eso estamos aquí, para que no tengas ideas descabelladas.
+	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//Â¿Y si voy por mi cuenta y riesgo?
+	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Entonces morirÃ¡s. Por eso estamos aquÃ­, para que no tengas ideas descabelladas.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 
@@ -104,7 +104,7 @@ instance DIA_PAL_298_Perm2		(C_INFO)
 	condition	 = 	DIA_PAL_298_Perm2_Condition;
 	information	 = 	DIA_PAL_298_Perm2_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Cómo van las cosas?";
+	description	 = 	"Â¿CÃ³mo van las cosas?";
 };
 func int DIA_PAL_298_Perm2_Condition ()
 {	
@@ -115,8 +115,8 @@ func int DIA_PAL_298_Perm2_Condition ()
 };
 func void DIA_PAL_298_Perm2_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Perm2_15_00");//¿Cuál es la situación?
-	AI_Output (self, other, "DIA_PAL_298_Perm2_09_01");//Todo está tranquilo. Tenemos la situación bajo control.
+	AI_Output (other, self, "DIA_PAL_298_Perm2_15_00");//Â¿CuÃ¡l es la situaciÃ³n?
+	AI_Output (self, other, "DIA_PAL_298_Perm2_09_01");//Todo estÃ¡ tranquilo. Tenemos la situaciÃ³n bajo control.
 };
 
 

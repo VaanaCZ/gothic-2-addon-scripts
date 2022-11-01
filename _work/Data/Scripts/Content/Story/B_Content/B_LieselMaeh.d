@@ -1,5 +1,5 @@
 func void B_LieselMaeh ()
 {
-	AI_Output (self ,other,"DIA_Liesel_15_00");	//¡Määäh!
+	AI_Output (self ,other,"DIA_Liesel_15_00");	//Â¡MÃ¤Ã¤Ã¤h!
 };
 

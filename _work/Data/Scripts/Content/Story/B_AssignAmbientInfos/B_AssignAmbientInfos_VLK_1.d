@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_1_JOIN(C_INFO)
 	condition	= DIA_VLK_1_JOIN_Condition;
 	information	= DIA_VLK_1_JOIN_Info;
 	permanent	= TRUE;
-	description = "¿Cómo puedo convertirme en ciudadano?";
+	description = "Â¿CÃ³mo puedo convertirme en ciudadano?";
 };                       
 
 FUNC INT DIA_VLK_1_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_1_JOIN_Condition()
 
 FUNC VOID DIA_VLK_1_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //¿Cómo puedo convertirme en ciudadano?
-	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //¡Búscate un trabajo honrado! Todo el que tiene un empleo fijo es ciudadano de Khorinis.
+	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //Â¿CÃ³mo puedo convertirme en ciudadano?
+	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //Â¡BÃºscate un trabajo honrado! Todo el que tiene un empleo fijo es ciudadano de Khorinis.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_VLK_1_PEOPLE(C_INFO)
 	condition	= DIA_VLK_1_PEOPLE_Condition;
 	information	= DIA_VLK_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quiénes son las personalidades?";
+	description = "Â¿QuiÃ©nes son las personalidades?";
 };                       
 
 FUNC INT DIA_VLK_1_PEOPLE_Condition()
@@ -66,11 +66,11 @@ FUNC INT DIA_VLK_1_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //¿Quiénes son las personalidades?
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //(Se ríe) Hasta hace poco el gobernador y el juez, pero desde que llegaron los paladines, tomaron el control de la ciudad.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //Lord Hagen es su líder. Es el nuevo gobernador, más o menos.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Lord Andre es su mano derecha. Dirige la guardia de la ciudad y también hace las veces de juez.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //En la ciudad, todo el que sea culpable de algo tiene que responder ante él.
+	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //Â¿QuiÃ©nes son las personalidades?
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //(Se rÃ­e) Hasta hace poco el gobernador y el juez, pero desde que llegaron los paladines, tomaron el control de la ciudad.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //Lord Hagen es su lÃ­der. Es el nuevo gobernador, mÃ¡s o menos.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Lord Andre es su mano derecha. Dirige la guardia de la ciudad y tambiÃ©n hace las veces de juez.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //En la ciudad, todo el que sea culpable de algo tiene que responder ante Ã©l.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_1_LOCATION(C_INFO)
 	condition	= DIA_VLK_1_LOCATION_Condition;
 	information	= DIA_VLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Qué hay interesante en la ciudad?";
+	description = "Â¿QuÃ© hay interesante en la ciudad?";
 };                       
 
 FUNC INT DIA_VLK_1_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //¿Qué hay interesante en la ciudad?
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //Aquí puedes comprar todo lo que se te pase por la imaginación, en la parte baja de la ciudad o a los comerciantes del mercado.
+	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Â¿QuÃ© hay interesante en la ciudad?
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //AquÃ­ puedes comprar todo lo que se te pase por la imaginaciÃ³n, en la parte baja de la ciudad o a los comerciantes del mercado.
 	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //Pero casi todo es bastante caro.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Si no tienes bastante dinero, tal vez pueda ayudarte el prestamista Lehmar. Su casa está al principio del distrito portuario según vas desde la parte baja de la ciudad.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Si no tienes bastante dinero, tal vez pueda ayudarte el prestamista Lehmar. Su casa estÃ¡ al principio del distrito portuario segÃºn vas desde la parte baja de la ciudad.
 };
 
 // *************************************************************************
@@ -107,7 +107,7 @@ INSTANCE DIA_VLK_1_STANDARD(C_INFO)
 	condition	= DIA_VLK_1_STANDARD_Condition;
 	information	= DIA_VLK_1_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Qué hay de nuevo?";
+	description = "Â¿QuÃ© hay de nuevo?";
 };                       
 func INT DIA_VLK_1_STANDARD_Condition()
 {
@@ -115,31 +115,31 @@ func INT DIA_VLK_1_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_STANDARD_15_00"); //¿Qué hay de nuevo?
+	AI_Output (other, self, "DIA_VLK_1_STANDARD_15_00"); //Â¿QuÃ© hay de nuevo?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Desde el colapso de la barrera, se ha interrumpido de manera brusca el comercio con el terrateniente. A saber lo que planea. Para mí que hay gato encerrado.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Desde el colapso de la barrera, se ha interrumpido de manera brusca el comercio con el terrateniente. A saber lo que planea. Para mÃ­ que hay gato encerrado.
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar se está pasando .No abastece a la ciudad y, si la milicia no interviene enseguida, los demás granjeros no tardarán en hacer lo que les dé la gana.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar se estÃ¡ pasando .No abastece a la ciudad y, si la milicia no interviene enseguida, los demÃ¡s granjeros no tardarÃ¡n en hacer lo que les dÃ© la gana.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //He oído que los bandidos han hecho causa común con unos magos poderosos de túnicas negras. Juraría que anoche vi uno en la ciudad.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //He oÃ­do que los bandidos han hecho causa comÃºn con unos magos poderosos de tÃºnicas negras. JurarÃ­a que anoche vi uno en la ciudad.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_04"); //He oído que algunos de los mercenarios de Onar han ido a matar a los dragones. ¡Por fin hacen algo útil!
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_04"); //He oÃ­do que algunos de los mercenarios de Onar han ido a matar a los dragones. Â¡Por fin hacen algo Ãºtil!
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_05"); //¡Se dice que los dragones han sido derrotados! Lord Hagen ha movilizado a sus hombres para expulsar a las demás criaturas del Valle de las Minas.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_05"); //Â¡Se dice que los dragones han sido derrotados! Lord Hagen ha movilizado a sus hombres para expulsar a las demÃ¡s criaturas del Valle de las Minas.
 	};
 };
 

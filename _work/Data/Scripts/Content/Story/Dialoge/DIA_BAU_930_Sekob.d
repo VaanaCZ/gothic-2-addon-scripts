@@ -48,9 +48,9 @@ func int DIA_Sekob_HALLO_Condition ()
 
 func void DIA_Sekob_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Sekob_HALLO_01_00"); //¿Qué haces en mis tierras? Aquí no hay nada que puedas robar. Largo.
-	AI_Output (other, self, "DIA_Sekob_HALLO_15_01"); //¿No hay una sola parcela de este maldito país que no pertenezca a nadie?
-	AI_Output (self, other, "DIA_Sekob_HALLO_01_02"); //Si trabajas, a lo mejor algún día puedes hacerte con una parcela. Hasta entonces, ten la bondad de haraganear en otro lugar.
+	AI_Output (self, other, "DIA_Sekob_HALLO_01_00"); //Â¿QuÃ© haces en mis tierras? AquÃ­ no hay nada que puedas robar. Largo.
+	AI_Output (other, self, "DIA_Sekob_HALLO_15_01"); //Â¿No hay una sola parcela de este maldito paÃ­s que no pertenezca a nadie?
+	AI_Output (self, other, "DIA_Sekob_HALLO_01_02"); //Si trabajas, a lo mejor algÃºn dÃ­a puedes hacerte con una parcela. Hasta entonces, ten la bondad de haraganear en otro lugar.
 };
 
 // ************************************************************
@@ -78,7 +78,7 @@ func int DIA_Sekob_PermVorMis_Condition ()
 func void DIA_Sekob_PermVorMis_Info ()
 {
 	AI_Output (other, self, "DIA_Sekob_PermVorMis_15_00"); //Mira...
-	AI_Output (self, other, "DIA_Sekob_PermVorMis_01_01"); //Ahora mismo no tengo trabajo para ti. ¡Vete!
+	AI_Output (self, other, "DIA_Sekob_PermVorMis_01_01"); //Ahora mismo no tengo trabajo para ti. Â¡Vete!
 };
 
 // ************************************************************
@@ -104,9 +104,9 @@ func int DIA_Sekob_ZAHLPACHT_Condition ()
 
 func void DIA_Sekob_ZAHLPACHT_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_ZAHLPACHT_15_00"); //Estas tierras pertenecen al terrateniente. Tú no eres más que el arrendatario y Onar quiere que pagues la renta de una vez. Llevas varias semanas de retraso.
-	AI_Output (self, other, "DIA_Sekob_ZAHLPACHT_01_01"); //¿Qué? ¿Y envía a un villano como tú? Ni tú te lo crees.
-	AI_Output (self, other, "DIA_Sekob_ZAHLPACHT_01_02"); //Márchate antes de que pierda el control.
+	AI_Output (other, self, "DIA_Sekob_ZAHLPACHT_15_00"); //Estas tierras pertenecen al terrateniente. TÃº no eres mÃ¡s que el arrendatario y Onar quiere que pagues la renta de una vez. Llevas varias semanas de retraso.
+	AI_Output (self, other, "DIA_Sekob_ZAHLPACHT_01_01"); //Â¿QuÃ©? Â¿Y envÃ­a a un villano como tÃº? Ni tÃº te lo crees.
+	AI_Output (self, other, "DIA_Sekob_ZAHLPACHT_01_02"); //MÃ¡rchate antes de que pierda el control.
 	
 	self.aivar[AIV_DefeatedByPlayer] = FALSE; //WICHTIG
 };
@@ -136,7 +136,7 @@ func int DIA_Sekob_KohleRaus_Condition ()
 func void DIA_Sekob_KohleRaus_Info ()
 {
 	AI_Output (other, self, "DIA_Sekob_KohleRaus_15_00"); //Suelta la pasta o te parto la cara
-	AI_Output (self, other, "DIA_Sekob_KohleRaus_01_01"); //No me vas a quitar el dinero, criminal. ¡Tú no!
+	AI_Output (self, other, "DIA_Sekob_KohleRaus_01_01"); //No me vas a quitar el dinero, criminal. Â¡TÃº no!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);	
 };
@@ -151,7 +151,7 @@ instance DIA_Sekob_InformOnar		(C_INFO)
 	condition	= DIA_Sekob_InformOnar_Condition;
 	information	= DIA_Sekob_InformOnar_Info;
 	permanent	= FALSE;
-	description	= "Entonces tendré que contárselo a Onar.";
+	description	= "Entonces tendrÃ© que contÃ¡rselo a Onar.";
 };
 
 func int DIA_Sekob_InformOnar_Condition ()
@@ -165,8 +165,8 @@ func int DIA_Sekob_InformOnar_Condition ()
 
 func void DIA_Sekob_InformOnar_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_InformOnar_15_00"); //Entonces tendré que contárselo a Onar.
-	AI_Output (self, other, "DIA_Sekob_InformOnar_01_01"); //¡Me da igual! Puedes decirle a Onar que no tengo nada. Es la triste realidad.
+	AI_Output (other, self, "DIA_Sekob_InformOnar_15_00"); //Entonces tendrÃ© que contÃ¡rselo a Onar.
+	AI_Output (self, other, "DIA_Sekob_InformOnar_01_01"); //Â¡Me da igual! Puedes decirle a Onar que no tengo nada. Es la triste realidad.
 	MIS_Sekob_RedeMitOnar = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 };
@@ -182,7 +182,7 @@ instance DIA_Sekob_Defeated		(C_INFO)
 	condition	= DIA_Sekob_Defeated_Condition;
 	information	= DIA_Sekob_Defeated_Info;
 	permanent	= FALSE;
-	description	= "¡¿¡Dónde tienes el dinero!?!";
+	description	= "Â¡Â¿Â¡DÃ³nde tienes el dinero!?!";
 };
 
 func int DIA_Sekob_Defeated_Condition ()
@@ -197,21 +197,21 @@ func int DIA_Sekob_Defeated_Condition ()
 
 func void DIA_Sekob_Defeated_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_Defeated_15_00"); //¡¿¡Dónde tienes el dinero!?!
-	AI_Output (self, other, "DIA_Sekob_Defeated_01_01"); //Por favor, no me vuelvas a pegar. Haré lo que me pidas.
-	AI_Output (other, self, "DIA_Sekob_Defeated_15_02"); //Entonces págame la renta.
-	AI_Output (self, other, "DIA_Sekob_Defeated_01_03"); //(Quejica) Pero señor, no tengo nada. Soy un pobre desgraciado y medio muerto de hambre.
-	AI_Output (self, other, "DIA_Sekob_Defeated_01_04"); //Mi última cosecha se secó entera. Quiero pagar la renta, pero no tengo nada. Tenga piedad.
+	AI_Output (other, self, "DIA_Sekob_Defeated_15_00"); //Â¡Â¿Â¡DÃ³nde tienes el dinero!?!
+	AI_Output (self, other, "DIA_Sekob_Defeated_01_01"); //Por favor, no me vuelvas a pegar. HarÃ© lo que me pidas.
+	AI_Output (other, self, "DIA_Sekob_Defeated_15_02"); //Entonces pÃ¡game la renta.
+	AI_Output (self, other, "DIA_Sekob_Defeated_01_03"); //(Quejica) Pero seÃ±or, no tengo nada. Soy un pobre desgraciado y medio muerto de hambre.
+	AI_Output (self, other, "DIA_Sekob_Defeated_01_04"); //Mi Ãºltima cosecha se secÃ³ entera. Quiero pagar la renta, pero no tengo nada. Tenga piedad.
 
 	Info_ClearChoices	(DIA_Sekob_Defeated);
 	Info_AddChoice	(DIA_Sekob_Defeated, "Si no me pagas la renta, te mato.", DIA_Sekob_Defeated_hart);
-	Info_AddChoice	(DIA_Sekob_Defeated, "Muy bien, hablaré con Onar.", DIA_Sekob_Defeated_weich);
+	Info_AddChoice	(DIA_Sekob_Defeated, "Muy bien, hablarÃ© con Onar.", DIA_Sekob_Defeated_weich);
 };
 
 func void DIA_Sekob_Defeated_Weich()
 {
-	AI_Output (other, self, "DIA_Sekob_Defeated_weich_15_00"); //Muy bien, hablaré con Onar.
-	AI_Output (self, other, "DIA_Sekob_Defeated_weich_01_01"); //Gracias, señor. ¡Mil gracias!
+	AI_Output (other, self, "DIA_Sekob_Defeated_weich_15_00"); //Muy bien, hablarÃ© con Onar.
+	AI_Output (self, other, "DIA_Sekob_Defeated_weich_01_01"); //Gracias, seÃ±or. Â¡Mil gracias!
 	MIS_Sekob_RedeMitOnar = LOG_RUNNING;
 	
 	AI_StopProcessInfos (self);
@@ -219,10 +219,10 @@ func void DIA_Sekob_Defeated_Weich()
 
 			func void B_Sekob_Kassieren()
 			{
-				AI_Output (other, self, "DIA_Sekob_Kassieren_15_00"); //Basta de pamplinas. Por aquí llueve mucho y tienes la despensa llena. Si no me pagas la renta, te mato.
-				AI_Output (self, other, "DIA_Sekob_Kassieren_01_01"); //(Servil) No, por favor, toma el oro. Si me dejas vivir, añadiré una gratificación.
+				AI_Output (other, self, "DIA_Sekob_Kassieren_15_00"); //Basta de pamplinas. Por aquÃ­ llueve mucho y tienes la despensa llena. Si no me pagas la renta, te mato.
+				AI_Output (self, other, "DIA_Sekob_Kassieren_01_01"); //(Servil) No, por favor, toma el oro. Si me dejas vivir, aÃ±adirÃ© una gratificaciÃ³n.
 				B_GiveInvItems (self, other, ItMi_Gold, 60);
-				AI_Output (other, self, "DIA_Sekob_Kassieren_15_02"); //¿Ves? Tampoco era tan difícil.
+				AI_Output (other, self, "DIA_Sekob_Kassieren_15_02"); //Â¿Ves? Tampoco era tan difÃ­cil.
 				AI_Output (self ,other, "DIA_Sekob_Kassieren_01_03"); //(Desesperado) Estoy arruinado.
 				Sekob_Pachtbezahlt = TRUE;
 			
@@ -261,7 +261,7 @@ func int DIA_Sekob_Again_Condition ()
 func void DIA_Sekob_Again_Info ()
 {
 	AI_Output (other, self, "DIA_Sekob_Again_15_00"); //Hablando de tu renta...
-	AI_Output (self, other, "DIA_Sekob_Again_01_01"); //Vas a hablar con Onar, ¿no?
+	AI_Output (self, other, "DIA_Sekob_Again_01_01"); //Vas a hablar con Onar, Â¿no?
 	
 	Info_ClearChoices	(DIA_Sekob_Again);
 	Info_AddChoice	(DIA_Sekob_Again, "He cambiado de idea.", DIA_Sekob_Again_Nein);
@@ -285,7 +285,7 @@ func void DIA_Sekob_Again_Nein()
 func void DIA_Sekob_Again_Ja()
 {
 	AI_Output (other, self, "DIA_Sekob_Again_Ja_15_00"); //Claro.
-	AI_Output (self ,other, "DIA_Sekob_Again_Ja_01_01"); //Tú puedes.
+	AI_Output (self ,other, "DIA_Sekob_Again_Ja_01_01"); //TÃº puedes.
 	
 	AI_StopProcessInfos (self);
 };
@@ -294,11 +294,11 @@ func void DIA_Sekob_Again_verarscht()
 {
 	MIS_Sekob_RedeMitOnar = LOG_SUCCESS;
 	AI_Output (other, self, "DIA_Sekob_Again_verarscht_15_00"); //Ya lo he hecho...
-	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_01"); //¿Y? ¿Qué te dijo?
+	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_01"); //Â¿Y? Â¿QuÃ© te dijo?
 	AI_Output (other, self, "DIA_Sekob_Again_verarscht_15_02"); //Lo siento, pero me veo obligado a arrancarte la cabeza.
-	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_03"); //Pero, ¿por qué? ¿Qué he hecho?
+	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_03"); //Pero, Â¿por quÃ©? Â¿QuÃ© he hecho?
 	AI_Output (other, self, "DIA_Sekob_Again_verarscht_15_04"); //Me has estado tomando el pelo.
-	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_05"); //Te dije la verdad, ¡en serio!
+	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_05"); //Te dije la verdad, Â¡en serio!
 	B_Sekob_Kassieren();
 };
 
@@ -312,7 +312,7 @@ instance DIA_Sekob_PERMKAP1		(C_INFO)
 	condition	 = 	DIA_Sekob_PERMKAP1_Condition;
 	information	 = 	DIA_Sekob_PERMKAP1_Info;
 	permanent	 =  TRUE;
-	description	 = 	"La próxima vez pagarás a tiempo, ¿te enteras?";
+	description	 = 	"La prÃ³xima vez pagarÃ¡s a tiempo, Â¿te enteras?";
 };
 
 func int DIA_Sekob_PERMKAP1_Condition ()
@@ -326,8 +326,8 @@ func int DIA_Sekob_PERMKAP1_Condition ()
 
 func void DIA_Sekob_PERMKAP1_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_PERMKAP1_15_00"); //La próxima vez pagarás a tiempo, ¿te enteras?
-	AI_Output (self, other, "DIA_Sekob_PERMKAP1_01_01"); //(Para sí) Qué he hecho yo para merecer esto...
+	AI_Output (other, self, "DIA_Sekob_PERMKAP1_15_00"); //La prÃ³xima vez pagarÃ¡s a tiempo, Â¿te enteras?
+	AI_Output (self, other, "DIA_Sekob_PERMKAP1_01_01"); //(Para sÃ­) QuÃ© he hecho yo para merecer esto...
 	AI_StopProcessInfos (self);
 };
 
@@ -375,7 +375,7 @@ instance DIA_Sekob_DMT		(C_INFO)
 	condition	 = 	DIA_Sekob_DMT_Condition;
 	information	 = 	DIA_Sekob_DMT_Info;
 
-	description	 = 	"¿Ha pasado algo?";
+	description	 = 	"Â¿Ha pasado algo?";
 };
 
 func int DIA_Sekob_DMT_Condition ()
@@ -388,26 +388,26 @@ func int DIA_Sekob_DMT_Condition ()
 
 func void DIA_Sekob_DMT_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_DMT_15_00"); //¿Ha pasado algo?
-	AI_Output			(self, other, "DIA_Sekob_DMT_01_01"); //Tienes que ayudarme. Los de las túnicas negras han invadido mi casa.
+	AI_Output			(other, self, "DIA_Sekob_DMT_15_00"); //Â¿Ha pasado algo?
+	AI_Output			(self, other, "DIA_Sekob_DMT_01_01"); //Tienes que ayudarme. Los de las tÃºnicas negras han invadido mi casa.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output	(self, other, "DIA_Sekob_DMT_01_02"); //Se supone que los miembros de la guardia real tenéis que ocuparos del bienestar de todos, ¿no?
+			AI_Output	(self, other, "DIA_Sekob_DMT_01_02"); //Se supone que los miembros de la guardia real tenÃ©is que ocuparos del bienestar de todos, Â¿no?
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output	(self, other, "DIA_Sekob_DMT_01_03"); //Sé que los mercenarios no sois muy caritativos, pero os pagaría.
+			AI_Output	(self, other, "DIA_Sekob_DMT_01_03"); //SÃ© que los mercenarios no sois muy caritativos, pero os pagarÃ­a.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Sekob_DMT_01_04"); //Tienes que ayudarme, honorable señor mago.
+			AI_Output			(self, other, "DIA_Sekob_DMT_01_04"); //Tienes que ayudarme, honorable seÃ±or mago.
 		};
 
-	AI_Output			(self, other, "DIA_Sekob_DMT_01_05"); //Esos tipos dijeron que buscaban algo, pero seguro que no está en mi casa.
-	AI_Output			(self, other, "DIA_Sekob_DMT_01_06"); //Por favor, ayúdame. Haz que se vayan.
+	AI_Output			(self, other, "DIA_Sekob_DMT_01_05"); //Esos tipos dijeron que buscaban algo, pero seguro que no estÃ¡ en mi casa.
+	AI_Output			(self, other, "DIA_Sekob_DMT_01_06"); //Por favor, ayÃºdame. Haz que se vayan.
 
 	Log_CreateTopic (TOPIC_SekobDMT, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_SekobDMT, LOG_RUNNING);
@@ -424,7 +424,7 @@ instance DIA_Sekob_DMTWEG		(C_INFO)
 	condition	 = 	DIA_Sekob_DMTWEG_Condition;
 	information	 = 	DIA_Sekob_DMTWEG_Info;
 
-	description	 = 	"Tu casa está vacía.";
+	description	 = 	"Tu casa estÃ¡ vacÃ­a.";
 };
 
 func int DIA_Sekob_DMTWEG_Condition ()
@@ -442,21 +442,21 @@ func int DIA_Sekob_DMTWEG_Condition ()
 
 func void DIA_Sekob_DMTWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_DMTWEG_15_00"); //Tu casa está vacía. Los de las túnicas negras se han ido.
+	AI_Output			(other, self, "DIA_Sekob_DMTWEG_15_00"); //Tu casa estÃ¡ vacÃ­a. Los de las tÃºnicas negras se han ido.
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output	(self, other, "DIA_Sekob_DMTWEG_01_01"); //Sabía que podía contar con la guardia.
+			AI_Output	(self, other, "DIA_Sekob_DMTWEG_01_01"); //SabÃ­a que podÃ­a contar con la guardia.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output	(self, other, "DIA_Sekob_DMTWEG_01_02"); //Has hecho un trabajo magnífico. Onar puede considerarse afortunado de tener gente como tú a su lado.
+			AI_Output	(self, other, "DIA_Sekob_DMTWEG_01_02"); //Has hecho un trabajo magnÃ­fico. Onar puede considerarse afortunado de tener gente como tÃº a su lado.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Sekob_DMTWEG_01_03"); //Gracias, honorable señor mago. ¿Qué sería de nosotros sin la mano protectora del clero?
+			AI_Output			(self, other, "DIA_Sekob_DMTWEG_01_03"); //Gracias, honorable seÃ±or mago. Â¿QuÃ© serÃ­a de nosotros sin la mano protectora del clero?
 		};
 	TOPIC_END_SekobDMT = TRUE;
 	B_GivePlayerXP (XP_SekobDMTWEG);
@@ -493,7 +493,7 @@ instance DIA_Sekob_BELOHNUNG		(C_INFO)
 	condition	 = 	DIA_Sekob_BELOHNUNG_Condition;
 	information	 = 	DIA_Sekob_BELOHNUNG_Info;
 
-	description	 = 	"No tan deprisa, amigo mío.";
+	description	 = 	"No tan deprisa, amigo mÃ­o.";
 };
 
 func int DIA_Sekob_BELOHNUNG_Condition ()
@@ -507,33 +507,33 @@ func int DIA_Sekob_BELOHNUNG_Condition ()
 
 func void DIA_Sekob_BELOHNUNG_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_00"); //No tan deprisa, amigo mío.
+	AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_00"); //No tan deprisa, amigo mÃ­o.
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
 			if (Npc_KnowsInfo(other, DIA_Rosi_WASMACHSTDU))
 				{
-					AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_01"); //A partir de ahora, si no te dejas de asuntos sucios y no buscas el bien de todos, volveré.
+					AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_01"); //A partir de ahora, si no te dejas de asuntos sucios y no buscas el bien de todos, volverÃ©.
 				};		
-			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_02"); //No te entiendo. ¿Qué más quieres?
+			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_02"); //No te entiendo. Â¿QuÃ© mÃ¡s quieres?
 		};
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_03"); //Decías no se qué de una recompensa, ¿verdad? ¿O me lo estaba imaginando?
+			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_03"); //DecÃ­as no se quÃ© de una recompensa, Â¿verdad? Â¿O me lo estaba imaginando?
 		};
 
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_04"); //Solo me interesa una cosa. ¿Qué buscaban los de las túnicas negras en tu casa?
-			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_05"); //No me lo explico, honorable señor mago. Quizá tenga que...
-			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_06"); //¿Qué?
-			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_07"); //Lo siento. Hace varios años juré que no hablaría de ello y no quiero faltar a mi juramento.
+			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_04"); //Solo me interesa una cosa. Â¿QuÃ© buscaban los de las tÃºnicas negras en tu casa?
+			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_05"); //No me lo explico, honorable seÃ±or mago. QuizÃ¡ tenga que...
+			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_06"); //Â¿QuÃ©?
+			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_07"); //Lo siento. Hace varios aÃ±os jurÃ© que no hablarÃ­a de ello y no quiero faltar a mi juramento.
 		};
 
 	AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_08"); //Solo puedo darte un poco de oro y pedirte que me perdones la vida.
-	AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_09"); //Entonces dámelo. Tengo prisa.
-	AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_10"); //Aquí tienes...
+	AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_09"); //Entonces dÃ¡melo. Tengo prisa.
+	AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_10"); //AquÃ­ tienes...
 	CreateInvItems (self, ItMi_Gold, 250);									
 	B_GiveInvItems (self, other, ItMi_Gold, 250);
 	AI_StopProcessInfos (self);					
@@ -551,7 +551,7 @@ instance DIA_Sekob_PERM		(C_INFO)
 	information	 = 	DIA_Sekob_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Entretanto, ¿ha ocurrido algo?";
+	description	 = 	"Entretanto, Â¿ha ocurrido algo?";
 };
 
 func int DIA_Sekob_PERM_Condition ()
@@ -573,11 +573,11 @@ func void DIA_Sekob_PERM_Info ()
 		}
 	else
 		{
-			AI_Output		(other, self, "DIA_Sekob_PERM_15_00"); //Entretanto, ¿ha ocurrido algo?
+			AI_Output		(other, self, "DIA_Sekob_PERM_15_00"); //Entretanto, Â¿ha ocurrido algo?
 			
 			if (MIS_bringRosiBackToSekob == LOG_FAILED)
 			{
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_01"); //Lárgate.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_01"); //LÃ¡rgate.
 			}
 			else if (MIS_bringRosiBackToSekob == LOG_SUCCESS)
 			{
@@ -586,9 +586,9 @@ func void DIA_Sekob_PERM_Info ()
 			else if (Kapitel >= 5)
 			&& (MIS_bringRosiBackToSekob != LOG_SUCCESS)
 			{
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_03"); //Mi esposa ha desaparecido. Al principio no me di cuenta y desapareció de repente.
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_04"); //Sospecho que huyó al bosque para huir de los incursores de campo.
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_05"); //Si la encuentras, hazme el favor de devolvérmela sana y salva.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_03"); //Mi esposa ha desaparecido. Al principio no me di cuenta y desapareciÃ³ de repente.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_04"); //Sospecho que huyÃ³ al bosque para huir de los incursores de campo.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_05"); //Si la encuentras, hazme el favor de devolvÃ©rmela sana y salva.
 				MIS_bringRosiBackToSekob = LOG_RUNNING;
 				Log_CreateTopic (TOPIC_bringRosiBackToSekob, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_bringRosiBackToSekob, LOG_RUNNING);
@@ -699,16 +699,16 @@ func void DIA_Sekob_Heilung_Info ()
 
 	if (DIA_Sekob_Heilung_oneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Sekob_Heilung_01_01"); //Sí, es cierto. Mi problema eres tú, mago asqueroso. Como no te largues, te despellejo.
-		AI_Output			(other, self, "DIA_Sekob_Heilung_15_02"); //(Para sí) Un caso difícil.
+		AI_Output			(self, other, "DIA_Sekob_Heilung_01_01"); //SÃ­, es cierto. Mi problema eres tÃº, mago asqueroso. Como no te largues, te despellejo.
+		AI_Output			(other, self, "DIA_Sekob_Heilung_15_02"); //(Para sÃ­) Un caso difÃ­cil.
 	
 		B_NpcClearObsessionByDMT (self);
 		DIA_Sekob_Heilung_oneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Sekob_Heilung_01_03"); //No me haces ni caso, ¿eh?
-		AI_Output			(other, self, "DIA_Sekob_Heilung_15_04"); //(Para sí) Un caso desesperado.
+		AI_Output			(self, other, "DIA_Sekob_Heilung_01_03"); //No me haces ni caso, Â¿eh?
+		AI_Output			(other, self, "DIA_Sekob_Heilung_15_04"); //(Para sÃ­) Un caso desesperado.
 		B_NpcClearObsessionByDMT (self);
 		B_Attack (self, other, AR_NONE, 1);
 	};
@@ -779,9 +779,9 @@ func int DIA_Sekob_ROSINEVERBACK_Condition ()
 func void DIA_Sekob_ROSINEVERBACK_Info ()
 {
 	AI_Output			(other, self, "DIA_Sekob_ROSINEVERBACK_15_00"); //Rosi no va a volver contigo. La he llevado a un lugar seguro.
-	AI_Output			(self, other, "DIA_Sekob_ROSINEVERBACK_01_01"); //Un lugar seguro. ¿De qué la proteges?
+	AI_Output			(self, other, "DIA_Sekob_ROSINEVERBACK_01_01"); //Un lugar seguro. Â¿De quÃ© la proteges?
 	AI_Output			(other, self, "DIA_Sekob_ROSINEVERBACK_15_02"); //De ti.
-	AI_Output			(self, other, "DIA_Sekob_ROSINEVERBACK_01_03"); //Te arrepentirás, cerdo.
+	AI_Output			(self, other, "DIA_Sekob_ROSINEVERBACK_01_03"); //Te arrepentirÃ¡s, cerdo.
 	B_NpcClearObsessionByDMT (self);
 	B_Attack (self, other, AR_NONE, 1);
 	B_GivePlayerXP (XP_Ambient);

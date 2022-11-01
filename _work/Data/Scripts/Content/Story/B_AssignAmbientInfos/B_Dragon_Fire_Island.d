@@ -51,22 +51,22 @@ FUNC INT DIA_Dragon_Fire_Island_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //Quieto, humano. Mis sentidos me dicen que tengo ante mÌ al asesino de los de mi propia carne y sangre.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //øDe verdad? øA quiÈn llamas asesino, engendro infernal?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //Quieto, humano. Mis sentidos me dicen que tengo ante m√≠ al asesino de los de mi propia carne y sangre.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //¬øDe verdad? ¬øA qui√©n llamas asesino, engendro infernal?
 	
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //øNo te bastÛ con matar a casi todos nuestros v·stagos?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //¬øNo te bast√≥ con matar a casi todos nuestros v√°stagos?
 	};
 	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //Mi hermano Feomathar pesa en tu conciencia y pagar·s por ello.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //Mi hermano Feomathar pesa en tu conciencia y pagar√°s por ello.
 
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //TambiÈn acabarÈ con el resto de tu repugnante estirpe.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Arrh. Ser· un placer quemarte vivo.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //Tambi√©n acabar√© con el resto de tu repugnante estirpe.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Arrh. Ser√° un placer quemarte vivo.
 	};
 
 	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //Deja de hacer tanto ruido. Entremos en materia.
@@ -76,7 +76,7 @@ FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 	AI_StopProcessInfos	(self);
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Otro dragÛn de fuego. Estoy empezando a hartarme de esas bestias. Lo que quiero es cruzar el abismo que se abre tras el dragÛn."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"Otro drag√≥n de fuego. Estoy empezando a hartarme de esas bestias. Lo que quiero es cruzar el abismo que se abre tras el drag√≥n."); 
 
 	DragonTalk_Exit_Free  = FALSE;
 	self.flags =  0;

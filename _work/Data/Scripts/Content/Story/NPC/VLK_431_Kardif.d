@@ -23,7 +23,7 @@ instance VLK_431_Kardif (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart04, BodyTex_N,ITAR_Smith );	
 	Mdl_SetModelFatness	(self,2);

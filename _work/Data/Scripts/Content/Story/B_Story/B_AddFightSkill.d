@@ -1,10 +1,10 @@
 // ******************************************************************
 // B_AddFightSkill
 // ---------------
-// setzt die Kampftalent-Ani abhängig von TrefferChance% 
+// setzt die Kampftalent-Ani abhÃ¤ngig von TrefferChance% 
 // (ab 30% und ab 60%)
 // wird aus NPC_SetFightSkills aufgerufen (um FightSkill in NSC-Instanzen zu setzen)
-// und aus B_TeachFightTalentPercent (um Player-Skill zu erhöhen)
+// und aus B_TeachFightTalentPercent (um Player-Skill zu erhÃ¶hen)
 // ******************************************************************
 
 func void B_AddFightSkill (var C_NPC slf, var int talent, var int percent)

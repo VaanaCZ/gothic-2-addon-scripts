@@ -80,7 +80,7 @@ INSTANCE Bloodfly	(Mst_Default_Bloodfly)
 
 INSTANCE YBloodfly	(Mst_Default_Bloodfly)
 {
-	name							=	"Mosca de sangre pequeña";
+	name							=	"Mosca de sangre pequeÃ±a";
 	
 	level							=	3;
 	

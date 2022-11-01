@@ -54,17 +54,17 @@ func void DIA_Brutus_AFTER_FIGHT_Info ()
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_00"); //Entonces, ¿sigues teniendo todos tus dientes?
-		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_01"); //Tío, ¡tú sí que eres duro! No me gustaría enfrentarme a ti en la batalla.
+		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_00"); //Entonces, Â¿sigues teniendo todos tus dientes?
+		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_01"); //TÃ­o, Â¡tÃº sÃ­ que eres duro! No me gustarÃ­a enfrentarme a ti en la batalla.
 	}
 	else if  (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
 		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_02"); //Creo que me rompiste todas y cada una de mis costillas.
-		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_03"); //Y ni siquiera te di tan fuerte. Bueno, da igual, me gustan los tíos que pueden aguantar un par de golpes.
+		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_03"); //Y ni siquiera te di tan fuerte. Bueno, da igual, me gustan los tÃ­os que pueden aguantar un par de golpes.
 		
 		if (Brutus_einmalig == FALSE)
 		{
-			AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_04"); //Esta poción te ayudará a volver a ponerte en pie. ¡También hace maravillas con tus intestinos!
+			AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_04"); //Esta pociÃ³n te ayudarÃ¡ a volver a ponerte en pie. Â¡TambiÃ©n hace maravillas con tus intestinos!
 		
 			CreateInvItems (self, ItPo_Health_01,1);
 			B_GiveInvItems (self, hero, ItPo_Health_01,1); 
@@ -87,7 +87,7 @@ instance DIA_Brutus_PRISONER		(C_INFO)
 	nr		     = 	2;
 	condition	 = 	DIA_Brutus_PRISONER_Condition;
 	information	 = 	DIA_Brutus_PRISONER_Info;
-	description	 = 	"¿A qué te dedicas?";
+	description	 = 	"Â¿A quÃ© te dedicas?";
 };
 
 func int DIA_Brutus_PRISONER_Condition ()
@@ -100,10 +100,10 @@ func int DIA_Brutus_PRISONER_Condition ()
 };
 func void DIA_Brutus_PRISONER_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_PRISONER_15_00"); //¿Cuál es tu tarea aquí?
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_01"); //¿Mi trabajo? Entreno a los muchachos. Les enseño a conseguir músculos de acero.
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_02"); //También me ocupo de los prisioneros. Soy como un maldito padre para esos bastardos.
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_03"); //Pero mi talento especial es hacerles hablar. Y, créeme, tengo maneras de hacer hablar a cualquiera.
+	AI_Output (other, self, "DIA_Brutus_PRISONER_15_00"); //Â¿CuÃ¡l es tu tarea aquÃ­?
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_01"); //Â¿Mi trabajo? Entreno a los muchachos. Les enseÃ±o a conseguir mÃºsculos de acero.
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_02"); //TambiÃ©n me ocupo de los prisioneros. Soy como un maldito padre para esos bastardos.
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_03"); //Pero mi talento especial es hacerles hablar. Y, crÃ©eme, tengo maneras de hacer hablar a cualquiera.
 	AI_Output (other, self, "DIA_Brutus_PRISONER_15_04"); //Suena terriblemente interesante...
 	AI_Output (self, other, "DIA_Brutus_PRISONER_06_05"); //Pero, de todas formas, esos tarugos pulgosos que tenemos encerrados, ahora no tienen mucho que contar.
 	
@@ -126,7 +126,7 @@ instance DIA_Brutus_PERM		(C_INFO)
 	condition	 = 	DIA_Brutus_PERM_Condition;
 	information	 = 	DIA_Brutus_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Alguna novedad?";
+	description	 = 	"Â¿Alguna novedad?";
 };
 
 func int DIA_Brutus_PERM_Condition ()
@@ -140,7 +140,7 @@ func int DIA_Brutus_PERM_Condition ()
 };
 func void DIA_Brutus_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_PERM_15_00"); //¿Alguna novedad?
+	AI_Output (other, self, "DIA_Brutus_PERM_15_00"); //Â¿Alguna novedad?
 	AI_Output (self, other, "DIA_Brutus_PERM_06_01"); //Todo parece tranquilo. No hay nuevos prisioneros, nadie que necesite ayuda para encontrar la palabra adecuada. Una pena.
 	B_NpcClearObsessionByDMT (self);
 };
@@ -154,7 +154,7 @@ instance DIA_Brutus_Kasse		(C_INFO)
 	condition	 = 	DIA_Brutus_Kasse_Condition;
 	information	 = 	DIA_Brutus_Kasse_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"¿Podrías entrenarme?";
+	description	 = 	"Â¿PodrÃ­as entrenarme?";
 };
 
 func int DIA_Brutus_Kasse_Condition ()
@@ -168,20 +168,20 @@ func int DIA_Brutus_Kasse_Condition ()
 };
 func void DIA_Brutus_Kasse_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_00"); //¿Podrías entrenarme?
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_01"); //Claro que puedo ayudarte a ser más fuerte, pero yo no regalo nada.
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_02"); //¿Cuánto quieres?
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_03"); //Mmm... tu andas por los alrededores del castillo, ¿no? Te sugiero esto.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_04"); //Mi ayudante, Den, se esfumó durante el último ataque, el muy cobarde.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_05"); //Pero no se marchó con las manos vacías. Se llevó el contenido de nuestra caja de dinero con él.
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_06"); //¿Qué caja de dinero?
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_00"); //Â¿PodrÃ­as entrenarme?
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_01"); //Claro que puedo ayudarte a ser mÃ¡s fuerte, pero yo no regalo nada.
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_02"); //Â¿CuÃ¡nto quieres?
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_03"); //Mmm... tu andas por los alrededores del castillo, Â¿no? Te sugiero esto.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_04"); //Mi ayudante, Den, se esfumÃ³ durante el Ãºltimo ataque, el muy cobarde.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_05"); //Pero no se marchÃ³ con las manos vacÃ­as. Se llevÃ³ el contenido de nuestra caja de dinero con Ã©l.
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_06"); //Â¿QuÃ© caja de dinero?
 	AI_Output (self, other, "DIA_Brutus_Kasse_06_07"); //Tenemos un cofre en el que guardamos las cosas que hemos ido... esto... recogiendo, a lo largo del tiempo.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_08"); //Y era una bonita cantidad. El cofre contenía 200 monedas de oro, además de ciertas joyas preciosas.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_09"); //Si me traes el oro de vuelta, te puedes quedar con las joyas, y yo te entrenaré.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_08"); //Y era una bonita cantidad. El cofre contenÃ­a 200 monedas de oro, ademÃ¡s de ciertas joyas preciosas.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_09"); //Si me traes el oro de vuelta, te puedes quedar con las joyas, y yo te entrenarÃ©.
 	
 	Log_CreateTopic (TopicBrutusKasse,LOG_MISSION);
 	Log_SetTopicStatus (TopicBrutusKasse,LOG_RUNNING);
-	B_LogEntry (TopicBrutusKasse,"El compañero de Brutus, Den, se ha escapado con 200 monedas de oro y algunas joyas. Si le llevo 200 monedas de oro, me ayudará a hacerme más fuerte.");
+	B_LogEntry (TopicBrutusKasse,"El compaÃ±ero de Brutus, Den, se ha escapado con 200 monedas de oro y algunas joyas. Si le llevo 200 monedas de oro, me ayudarÃ¡ a hacerme mÃ¡s fuerte.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wo ist Den?
@@ -193,7 +193,7 @@ instance DIA_Brutus_Den		(C_INFO)
 	condition	 = 	DIA_Brutus_Den_Condition;
 	information	 = 	DIA_Brutus_Den_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"¿Sabes hacia dónde se dirigía Den?";
+	description	 = 	"Â¿Sabes hacia dÃ³nde se dirigÃ­a Den?";
 };
 
 func int DIA_Brutus_Den_Condition ()
@@ -207,12 +207,12 @@ func int DIA_Brutus_Den_Condition ()
 };
 func void DIA_Brutus_Den_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_Den_15_00"); //¿Sabes hacia dónde se dirigía Den?
-	AI_Output (self, other, "DIA_Brutus_Den_06_01"); //Lo más lejos posible de aquí. Supongo que puede haber intentado cruzar el paso.
-	AI_Output (other, self, "DIA_Brutus_Den_15_02"); //Gracias, eso me servirá mucho.
-	AI_Output (self, other, "DIA_Brutus_Den_06_03"); //Bueno, ¿qué puedo decir? No tengo ni idea de dónde ha ido.
+	AI_Output (other, self, "DIA_Brutus_Den_15_00"); //Â¿Sabes hacia dÃ³nde se dirigÃ­a Den?
+	AI_Output (self, other, "DIA_Brutus_Den_06_01"); //Lo mÃ¡s lejos posible de aquÃ­. Supongo que puede haber intentado cruzar el paso.
+	AI_Output (other, self, "DIA_Brutus_Den_15_02"); //Gracias, eso me servirÃ¡ mucho.
+	AI_Output (self, other, "DIA_Brutus_Den_06_03"); //Bueno, Â¿quÃ© puedo decir? No tengo ni idea de dÃ³nde ha ido.
 	
-	B_LogEntry (TopicBrutusKasse,"Den quería probar a cruzar el paso.");
+	B_LogEntry (TopicBrutusKasse,"Den querÃ­a probar a cruzar el paso.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gold
@@ -245,12 +245,12 @@ func void DIA_Brutus_Gold_Info ()
 		AI_Output (self, other, "DIA_Brutus_Gold_06_01"); //Excelente. Puedo entrenarte, si quieres.
 		Brutus_TeachSTR = TRUE;
 		Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-		B_LogEntry		(TOPIC_Teacher_OC, "Brutus me puede ayudar a hacerme más fuerte.");
+		B_LogEntry		(TOPIC_Teacher_OC, "Brutus me puede ayudar a hacerme mÃ¡s fuerte.");
 		B_GivePlayerXP  (XP_Ambient);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Brutus_Gold_06_02"); //Escucha, basta con que me traigas 200 monedas de oro. Me da igual de dónde las saques, mientras sean de oro.
+		AI_Output (self, other, "DIA_Brutus_Gold_06_02"); //Escucha, basta con que me traigas 200 monedas de oro. Me da igual de dÃ³nde las saques, mientras sean de oro.
 	};
 };
 //*******************************************
@@ -263,7 +263,7 @@ INSTANCE DIA_Brutus_Teach(C_INFO)
 	condition	= DIA_Brutus_Teach_Condition;
 	information	= DIA_Brutus_Teach_Info;
 	permanent	= TRUE;
-	description = "Quiero hacerme más fuerte.";
+	description = "Quiero hacerme mÃ¡s fuerte.";
 };                       
 
 FUNC INT DIA_Brutus_Teach_Condition()
@@ -277,7 +277,7 @@ FUNC INT DIA_Brutus_Teach_Condition()
  
 FUNC VOID DIA_Brutus_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Brutus_Teach_15_00"); //Quiero hacerme más fuerte.
+	AI_Output (other,self ,"DIA_Brutus_Teach_15_00"); //Quiero hacerme mÃ¡s fuerte.
 
 	Info_ClearChoices (DIA_Brutus_Teach);
 	Info_AddChoice		(DIA_Brutus_Teach, DIALOG_BACK, DIA_Brutus_Teach_Back);
@@ -353,7 +353,7 @@ instance DIA_Brutus_DUSCHONWIEDER		(C_INFO)
 	condition	 = 	DIA_Brutus_DUSCHONWIEDER_Condition;
 	information	 = 	DIA_Brutus_DUSCHONWIEDER_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Has torturado hoy a alguien?";
+	description	 = 	"Â¿Has torturado hoy a alguien?";
 };
 
 func int DIA_Brutus_DUSCHONWIEDER_Condition ()
@@ -367,8 +367,8 @@ func int DIA_Brutus_DUSCHONWIEDER_Condition ()
 
 func void DIA_Brutus_DUSCHONWIEDER_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_DUSCHONWIEDER_15_00"); //¿Has torturado hoy a alguien?
-	AI_Output (self, other, "DIA_Brutus_DUSCHONWIEDER_06_01"); //¿No ves que estoy ocupado? Vuelve más tarde.
+	AI_Output (other, self, "DIA_Brutus_DUSCHONWIEDER_15_00"); //Â¿Has torturado hoy a alguien?
+	AI_Output (self, other, "DIA_Brutus_DUSCHONWIEDER_06_01"); //Â¿No ves que estoy ocupado? Vuelve mÃ¡s tarde.
 
 	B_NpcClearObsessionByDMT (self);
 };
@@ -419,7 +419,7 @@ instance DIA_Brutus_WARUMNICHTARBBEIT		(C_INFO)
 	condition	 = 	DIA_Brutus_WARUMNICHTARBBEIT_Condition;
 	information	 = 	DIA_Brutus_WARUMNICHTARBBEIT_Info;
 
-	description	 = 	"¿Por qué no estás trabajando?";
+	description	 = 	"Â¿Por quÃ© no estÃ¡s trabajando?";
 };
 
 func int DIA_Brutus_WARUMNICHTARBBEIT_Condition ()
@@ -434,15 +434,15 @@ func int DIA_Brutus_WARUMNICHTARBBEIT_Condition ()
 
 func void DIA_Brutus_WARUMNICHTARBBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Brutus_WARUMNICHTARBBEIT_15_00"); //¿Por qué no estás trabajando?
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_01"); //(Impactado) ¡Pero qué horror!
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_02"); //¿Has echado un vistazo a mi cámara? Esas asquerosas sabandijas de carne están por todas partes.
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_03"); //No tengo ni idea de quién se asentó ahí antes, pero no voy a volver a esa pocilga inmunda.
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_04"); //Odio a esas bestias. Y deja de sonreír como un idiota.
+	AI_Output			(other, self, "DIA_Brutus_WARUMNICHTARBBEIT_15_00"); //Â¿Por quÃ© no estÃ¡s trabajando?
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_01"); //(Impactado) Â¡Pero quÃ© horror!
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_02"); //Â¿Has echado un vistazo a mi cÃ¡mara? Esas asquerosas sabandijas de carne estÃ¡n por todas partes.
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_03"); //No tengo ni idea de quiÃ©n se asentÃ³ ahÃ­ antes, pero no voy a volver a esa pocilga inmunda.
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_04"); //Odio a esas bestias. Y deja de sonreÃ­r como un idiota.
 
 	Log_CreateTopic (TOPIC_BrutusMeatbugs, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BrutusMeatbugs, LOG_RUNNING);
-	B_LogEntry (TOPIC_BrutusMeatbugs,"Brutus, el torturador del castillo, dijo algo de que las inofensivas sabandijas de carne de la cámara de tortura le daban miedo. Es todo un machote."); 
+	B_LogEntry (TOPIC_BrutusMeatbugs,"Brutus, el torturador del castillo, dijo algo de que las inofensivas sabandijas de carne de la cÃ¡mara de tortura le daban miedo. Es todo un machote."); 
 
 };
 
@@ -478,7 +478,7 @@ func int DIA_Brutus_MEATBUGSWEG_Condition ()
 func void DIA_Brutus_MEATBUGSWEG_Info ()
 {
 	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_00"); //Ya no hay sabandijas de carne. Puedes volver a pulir tus empulgueras o lo que sea.
-	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_01"); //¿Seguro que ya no queda ni uno solo de esos monstruos?
+	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_01"); //Â¿Seguro que ya no queda ni uno solo de esos monstruos?
 	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_02"); //Totalmente.
 	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_03"); //De acuerdo, entonces. Toma, coge este oro como muestra de mi gratitud.
 	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_04"); //Bah, no me hagas llorar.
@@ -505,7 +505,7 @@ instance DIA_Brutus_PERM4		(C_INFO)
 	information	 = 	DIA_Brutus_PERM4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Estás loco?";
+	description	 = 	"Â¿EstÃ¡s loco?";
 };
 
 func int DIA_Brutus_PERM4_Condition ()
@@ -530,17 +530,17 @@ func void DIA_Brutus_PERM4_Info ()
 		}
 		else 
  		{
-			AI_Output			(other, self, "DIA_Brutus_PERM4_15_00"); //¿Estás bien?
-			AI_Output			(self, other, "DIA_Brutus_PERM4_06_01"); //(Con aprehensión) ¿Y estás seguro de que esas sabandijas de carne se han ido?
-			AI_Output			(other, self, "DIA_Brutus_PERM4_15_02"); //Esto... mira, hay una justo detrás de ti.
-			AI_Output			(self, other, "DIA_Brutus_PERM4_06_03"); //(Ruge) ¿Qué?
+			AI_Output			(other, self, "DIA_Brutus_PERM4_15_00"); //Â¿EstÃ¡s bien?
+			AI_Output			(self, other, "DIA_Brutus_PERM4_06_01"); //(Con aprehensiÃ³n) Â¿Y estÃ¡s seguro de que esas sabandijas de carne se han ido?
+			AI_Output			(other, self, "DIA_Brutus_PERM4_15_02"); //Esto... mira, hay una justo detrÃ¡s de ti.
+			AI_Output			(self, other, "DIA_Brutus_PERM4_06_03"); //(Ruge) Â¿QuÃ©?
 		
 			B_NpcClearObsessionByDMT (self);
 			
 			
 			Npc_SetTarget 		(self, other);
 			
-			self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (böse) Flag nicht zurückgesetzt wird 
+			self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bÃ¶se) Flag nicht zurÃ¼ckgesetzt wird 
 			other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 			AI_StartState 		(self, ZS_Flee, 0, "");
@@ -558,7 +558,7 @@ instance DIA_Brutus_BESSEN		(C_INFO)
 	information	 = 	DIA_Brutus_BESSEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¡Estás poseído!";
+	description	 = 	"Â¡EstÃ¡s poseÃ­do!";
 };
 
 func int DIA_Brutus_BESSEN_Condition ()
@@ -572,24 +572,24 @@ func int DIA_Brutus_BESSEN_Condition ()
 
 func void DIA_Brutus_BESSEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_00"); //¡Estás poseído!
+	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_00"); //Â¡EstÃ¡s poseÃ­do!
 
 	if (hero.guild == GIL_KDF)
 		||(hero.guild == GIL_PAL)
 	{
 	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_01"); //Ve al monasterio y haz que te curen.
-	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_02"); //No tengo salvación. ¡Vete!
+	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_02"); //No tengo salvaciÃ³n. Â¡Vete!
 	B_NpcClearObsessionByDMT (self);
 	}
 	else
 	{
 	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_03"); //Alguien tiene que sacarte esos demonios de dentro.
-	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_04"); //(Grita) ¡NO!
+	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_04"); //(Grita) Â¡NO!
 	B_NpcClearObsessionByDMT (self);
 		
 	Npc_SetTarget 		(self, other);
 	
-	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (böse) Flag nicht zurückgesetzt wird 
+	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bÃ¶se) Flag nicht zurÃ¼ckgesetzt wird 
 	other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 	AI_StartState 		(self, ZS_Flee, 0, "");	

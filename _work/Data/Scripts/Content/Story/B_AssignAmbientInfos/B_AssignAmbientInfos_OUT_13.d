@@ -47,7 +47,7 @@ FUNC VOID DIA_OUT_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_00"); //Hasta ahora, hemos podido mantener a raya a los orcos, pero cada vez hay m·s.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_00"); //Hasta ahora, hemos podido mantener a raya a los orcos, pero cada vez hay m√°s.
 	};
 	if (randy == 1)
 	{
@@ -55,7 +55,7 @@ FUNC VOID DIA_OUT_13_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar est· loco enfrent·ndose a la ciudad cuando los paladines est·n allÌ.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar est√° loco enfrent√°ndose a la ciudad cuando los paladines est√°n all√≠.
 	};
 	
 	AI_StopProcessInfos	(self);

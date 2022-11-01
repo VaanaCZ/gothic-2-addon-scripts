@@ -28,7 +28,7 @@ INSTANCE  ItMi_InnosEye_MIS (C_ITEM)
 	on_equip			=	Equip_InnosEye;
 	on_unequip			=	UnEquip_InnosEye;
 
-	TEXT	[0]			=	"La energía late a través del Ojo.";
+	TEXT	[0]			=	"La energÃ­a late a travÃ©s del Ojo.";
 
 	INV_ZBIAS				= INVCAM_ENTF_AMULETTE_STANDARD;
 	
@@ -76,7 +76,7 @@ INSTANCE ItMi_InnosEye_Discharged_Mis (C_Item)
 
 	description			= 	name;
 	on_equip			=	Equip_ItMi_InnosEye_Discharged_Mis;
-	TEXT	[0]			=	"El Ojo está apagado y no brilla.";
+	TEXT	[0]			=	"El Ojo estÃ¡ apagado y no brilla.";
 	
 	INV_ZBIAS				= INVCAM_ENTF_AMULETTE_STANDARD;
 	
@@ -114,12 +114,12 @@ func void Equip_ItMi_InnosEye_Broken_Mis()
 	Snd_Play 	("MFX_FEAR_CAST" );
 };
 //**********************************************************************************
-//	Ermächtigungsschreiben für SC für Pyrokar, das Auge Innos rauszurücken.
+//	ErmÃ¤chtigungsschreiben fÃ¼r SC fÃ¼r Pyrokar, das Auge Innos rauszurÃ¼cken.
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_PermissionToWearInnosEye_MIS		(C_Item)
 {
-	name 				=	"Carta de autorización";
+	name 				=	"Carta de autorizaciÃ³n";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -130,7 +130,7 @@ INSTANCE ItWr_PermissionToWearInnosEye_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_PermissionToWearInnosEye;
 	scemeName			=	"MAP";
-	description			= "Carta de autorización para Pyrokar.";
+	description			= "Carta de autorizaciÃ³n para Pyrokar.";
 };
 func void Use_PermissionToWearInnosEye ()
 {   
@@ -145,10 +145,10 @@ func void Use_PermissionToWearInnosEye ()
 						Doc_PrintLine	(nDocID,  0, ""												);
 						Doc_PrintLine	(nDocID,  0, ""												);
 						Doc_PrintLine	(nDocID,  0, ""												);
-						Doc_PrintLines	(nDocID,  0, "El portador de esta nota está autorizado a entrar en las salas sagradas del monasterio.");
-						Doc_PrintLines	(nDocID,  0, "Sus deseos en relación a la posesión del Ojo de Innos deberán satisfacerse de inmediato.");
-						Doc_PrintLines	(nDocID,  0, "Estas órdenes deben considerarse válidas por mi autoridad como señor de la isla y representante del Rey, así como por el tratado de la división de la Iglesia de Innos en el año 2 del fuego.");
-						Doc_PrintLines	(nDocID,  0, "No hablaré más de este tema y espero que mis instrucciones se cumplan.");
+						Doc_PrintLines	(nDocID,  0, "El portador de esta nota estÃ¡ autorizado a entrar en las salas sagradas del monasterio.");
+						Doc_PrintLines	(nDocID,  0, "Sus deseos en relaciÃ³n a la posesiÃ³n del Ojo de Innos deberÃ¡n satisfacerse de inmediato.");
+						Doc_PrintLines	(nDocID,  0, "Estas Ã³rdenes deben considerarse vÃ¡lidas por mi autoridad como seÃ±or de la isla y representante del Rey, asÃ­ como por el tratado de la divisiÃ³n de la Iglesia de Innos en el aÃ±o 2 del fuego.");
+						Doc_PrintLines	(nDocID,  0, "No hablarÃ© mÃ¡s de este tema y espero que mis instrucciones se cumplan.");
 						Doc_PrintLine	(nDocID,  0, ""												);
 						Doc_PrintLine	(nDocID,  0, "Que Innos bendiga al Rey."						);
 						Doc_PrintLine	(nDocID,  0, ""												);
@@ -189,7 +189,7 @@ FUNC VOID Use_XardasBookForPyrokar()
 
 
 //**********************************************************************************
-//	ItKe_CHEST_SEKOB_XARDASBOOK_MIS 		Xardas Schlüssel für die Truhe auf Sekobs Hof
+//	ItKe_CHEST_SEKOB_XARDASBOOK_MIS 		Xardas SchlÃ¼ssel fÃ¼r die Truhe auf Sekobs Hof
 //**********************************************************************************
 
 INSTANCE ItKe_CHEST_SEKOB_XARDASBOOK_MIS (C_Item)
@@ -249,15 +249,15 @@ INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM)
 					Doc_SetFont 	( nDocID,  -1, FONT_Book	   			); 	// -1 -> all pages 
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels					
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Si Larius sigue así, tendré que buscar otra posición.");
+					Doc_PrintLines	( nDocID,  0, "Si Larius sigue asÃ­, tendrÃ© que buscar otra posiciÃ³n.");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Anoche me pasó algo extraño. Recibí en casa la visita de uno de esos tipos con capuchas negras de los que tanto hemos oído hablar últimamente. Lo cierto es que no estaba nervioso, aunque se supone que son malvados. Casi se puede sentir el poder que tienen. Pero la voz era tranquila y hacía que confiaras en el tipo.");
+					Doc_PrintLines	( nDocID,  0, "Anoche me pasÃ³ algo extraÃ±o. RecibÃ­ en casa la visita de uno de esos tipos con capuchas negras de los que tanto hemos oÃ­do hablar Ãºltimamente. Lo cierto es que no estaba nervioso, aunque se supone que son malvados. Casi se puede sentir el poder que tienen. Pero la voz era tranquila y hacÃ­a que confiaras en el tipo.");
 
 					//2.Seite
 					Doc_SetMargins	( nDocID,  -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Me ofreció 20.000 piezas de oro para asegurarse de que uno de los mercenarios fuera encerrado. Dijo que sabría lo que quería decir cuando ocurriera."	);
-					Doc_PrintLines	( nDocID,  1, "Por supuesto, acepté de inmediato. De todas maneras esos mercenarios no se merecen nada mejor. Si no llega a ser por ellos, todo me iría bien. El oro me garantizará una jubilación acomodada."					);
+					Doc_PrintLines	( nDocID,  1, "Me ofreciÃ³ 20.000 piezas de oro para asegurarse de que uno de los mercenarios fuera encerrado. Dijo que sabrÃ­a lo que querÃ­a decir cuando ocurriera."	);
+					Doc_PrintLines	( nDocID,  1, "Por supuesto, aceptÃ© de inmediato. De todas maneras esos mercenarios no se merecen nada mejor. Si no llega a ser por ellos, todo me irÃ­a bien. El oro me garantizarÃ¡ una jubilaciÃ³n acomodada."					);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLines	( nDocID,  1, "Ha ocurrido, han detenido a uno de los mercenarios. No me va a costar mantener mi palabra.");
 					Doc_Show		( nDocID );
@@ -268,12 +268,12 @@ INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM)
 };
 
 //**********************************************************************************
-//	ITWR_DementorObsessionBook_MIS 			//Joly: DementorBuch, der Bessenheit, Ein NSC trägt dieses Buch mit sich, wenn er von einem Dementor kurzzeitig übernommen wurde.)
+//	ITWR_DementorObsessionBook_MIS 			//Joly: DementorBuch, der Bessenheit, Ein NSC trÃ¤gt dieses Buch mit sich, wenn er von einem Dementor kurzzeitig Ã¼bernommen wurde.)
 //**********************************************************************************
 
 INSTANCE ITWR_DementorObsessionBook_MIS (C_ITEM) 
 {	
-	name 					=	"Almanáque de los poseídos";
+	name 					=	"AlmanÃ¡que de los poseÃ­dos";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MULTI|ITEM_MISSION;
@@ -326,7 +326,7 @@ INSTANCE ITWR_DementorObsessionBook_MIS (C_ITEM)
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "em piratoram endro"					);
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
@@ -370,7 +370,7 @@ INSTANCE ITWR_DementorObsessionBook_MIS (C_ITEM)
 
 INSTANCE ItWr_PyrokarsObsessionList		(C_Item)
 {
-	name 				=	"Carta mágica de Pyrokar";
+	name 				=	"Carta mÃ¡gica de Pyrokar";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -392,7 +392,7 @@ func void Use_PyrokarsObsessionList ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "El poseído"					);
+					Doc_PrintLine	( nDocID,  0, "El poseÃ­do"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 	
 					if (Kapitel >= 3)
@@ -434,7 +434,7 @@ func void Use_PyrokarsObsessionList ()
 
 
 /******************************************************************************************/
-//	Heiltrank für Hilda																	//
+//	Heiltrank fÃ¼r Hilda																	//
 /******************************************************************************************/
 INSTANCE ItPo_HealHilda_MIS(C_Item)
 {
@@ -505,7 +505,7 @@ INSTANCE ItMw_MalethsGehstock_MIS (C_Item)
 
 INSTANCE ItMi_MalethsBanditGold(C_Item)
 {
-	name 				=	"¡Una bolsa llena de oro!";
+	name 				=	"Â¡Una bolsa llena de oro!";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -527,7 +527,7 @@ FUNC VOID Use_MalethsBanditGold ()
 
 
 // *****************************************************
-// 		MoleratFett für "die Winde klemmt"
+// 		MoleratFett fÃ¼r "die Winde klemmt"
 // *****************************************************
 
 INSTANCE ItMi_Moleratlubric_MIS (C_Item)
@@ -577,7 +577,7 @@ func void Use_BabosLetter ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "Querido Babo,"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Seguro que te preguntas cómo hemos logrado escribirte esta carta. Le llevamos todos nuestros ahorros al maestro Marlas y le pedimos que te escribiese estas líneas. Te deseamos lo mejor para el futuro y te enviamos un dibujo como regalo de despedida, para que nos recuerdes durante las largas noches en el monasterio.");
+					Doc_PrintLines	( nDocID,  0, "Seguro que te preguntas cÃ³mo hemos logrado escribirte esta carta. Le llevamos todos nuestros ahorros al maestro Marlas y le pedimos que te escribiese estas lÃ­neas. Te deseamos lo mejor para el futuro y te enviamos un dibujo como regalo de despedida, para que nos recuerdes durante las largas noches en el monasterio.");
 					Doc_PrintLines	( nDocID,  0, "Buena suerte. Esperamos que te guste el dibujo.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Feht y Bonka");
@@ -647,7 +647,7 @@ func void Use_BabosDocs ()
 };
 
 //*************************************************************
-//	igaraz Schlüssel
+//	igaraz SchlÃ¼ssel
 //*************************************************************
 
 INSTANCE ItKe_IgarazChest_Mis(C_Item)
@@ -714,12 +714,12 @@ FUNC VOID Use_Astronomy()
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels					
 					Doc_PrintLine	( nDocID,  0, ""					);										
 					Doc_PrintLines	( nDocID,  0, "... Pero cuando la fuerza de un toro se combina con los ideales de un guerrero, cuidado con lo que pueda acontecer.");
-					Doc_PrintLines	( nDocID,  0, "La fuerza desencadenada del toro y la perseverancia de un guerrero pueden acabar con el antiguo equilibrio de poderes. Las fronteras cósmicas de las dimensiones se debilitan, tanto que a las criaturas sombrías de Beliar les resulta sencillo entrar en nuestro mundo.");
+					Doc_PrintLines	( nDocID,  0, "La fuerza desencadenada del toro y la perseverancia de un guerrero pueden acabar con el antiguo equilibrio de poderes. Las fronteras cÃ³smicas de las dimensiones se debilitan, tanto que a las criaturas sombrÃ­as de Beliar les resulta sencillo entrar en nuestro mundo.");
 					//2.Seite
 					Doc_SetMargins	( nDocID,  -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Lo que sucedería a partir de ese momento lo podemos ver en las guerras de los tiempos antiguos, cuando el vínculo entre los mundos aún era fuerte. Los seguidores del mal trajeron la muerte y la destrucción al mundo, solo la ayuda de Innos y del Elegido pudo alejar al mal de la humanidad."	);
-					Doc_PrintLines	( nDocID,  1, "Si volviera a existir una amenaza así, que Innos nos proteja, ya que desde hace más de cien años no ha habido ningún Elegido de Innos."					);
+					Doc_PrintLines	( nDocID,  1, "Lo que sucederÃ­a a partir de ese momento lo podemos ver en las guerras de los tiempos antiguos, cuando el vÃ­nculo entre los mundos aÃºn era fuerte. Los seguidores del mal trajeron la muerte y la destrucciÃ³n al mundo, solo la ayuda de Innos y del Elegido pudo alejar al mal de la humanidad."	);
+					Doc_PrintLines	( nDocID,  1, "Si volviera a existir una amenaza asÃ­, que Innos nos proteja, ya que desde hace mÃ¡s de cien aÃ±os no ha habido ningÃºn Elegido de Innos."					);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLines	( nDocID,  1, "");
 					Doc_Show		( nDocID );
@@ -748,7 +748,7 @@ INSTANCE ItPo_HealObsession_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Curación de posesión";
+	description		= 	"CuraciÃ³n de posesiÃ³n";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;
@@ -772,7 +772,7 @@ INSTANCE ItPo_HealObsession_MIS(C_Item)
 
 INSTANCE ItSe_Golemchest_Mis	(C_Item)
 {
-	name 				=	"Bolsón de cuero";
+	name 				=	"BolsÃ³n de cuero";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -788,7 +788,7 @@ INSTANCE ItSe_Golemchest_Mis	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Está llena de monedas.";
+	TEXT[2]				= 	"EstÃ¡ llena de monedas.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -876,11 +876,11 @@ func void Use_DiegosLetter_Mis ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "Gerbrandt,");
-					Doc_PrintLines	( nDocID,  0, "lo sabes, deberías haberme matado.");
-					Doc_PrintLines	( nDocID,  0, "He vuelto a la ciudad y te estoy buscando. Y cuando te encuentre, te voy a hacer rodajitas, como si fueras un salchichón. Me conoces lo suficiente como para tener claro que no se me engaña sin consecuencias."); 
-					Doc_PrintLines	( nDocID,  0, "Supongo que cuando hiciste que me arrojaran al otro lado de la barrera no te imaginabas que podría volver. Pues bien, te equivocaste.");
+					Doc_PrintLines	( nDocID,  0, "lo sabes, deberÃ­as haberme matado.");
+					Doc_PrintLines	( nDocID,  0, "He vuelto a la ciudad y te estoy buscando. Y cuando te encuentre, te voy a hacer rodajitas, como si fueras un salchichÃ³n. Me conoces lo suficiente como para tener claro que no se me engaÃ±a sin consecuencias."); 
+					Doc_PrintLines	( nDocID,  0, "Supongo que cuando hiciste que me arrojaran al otro lado de la barrera no te imaginabas que podrÃ­a volver. Pues bien, te equivocaste.");
 					Doc_PrintLines	( nDocID,  0, "He venido a por lo que me pertenece.");
-					Doc_PrintLines	( nDocID,  0, "Tú única oportunidad de seguir vivo es que te largues cuanto antes y me dejes a mí tu negocio. Eso nos dejaría en paz.");				
+					Doc_PrintLines	( nDocID,  0, "TÃº Ãºnica oportunidad de seguir vivo es que te largues cuanto antes y me dejes a mÃ­ tu negocio. Eso nos dejarÃ­a en paz.");				
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Diego");
 					Doc_Show		( nDocID );
@@ -893,7 +893,7 @@ func void Use_DiegosLetter_Mis ()
 
 INSTANCE ItSe_DiegosTreasure_Mis(C_Item)
 {
-	name 				=	"Bolsón de cuero lleno";
+	name 				=	"BolsÃ³n de cuero lleno";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -942,7 +942,7 @@ INSTANCE ItMi_UltharsHolyWater_Mis (C_Item)
 var int ItWr_MinenAnteil_Mis_OneTime;
 INSTANCE ItWr_MinenAnteil_Mis		(C_Item)
 {
-	name 				=	"Concesión de mina de mineral de Khorinis";
+	name 				=	"ConcesiÃ³n de mina de mineral de Khorinis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION | ITEM_MULTI;
@@ -967,13 +967,13 @@ func void Use_MinenAnteil_Mis ()
 					Doc_SetPage		(nDocID,  0, "letters.TGA", 0);
 					Doc_SetFont		(nDocID,  0, FONT_BookHeadline);
 					Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
-					Doc_PrintLine	(nDocID,  0, "Concesión de mina de mineral"									);
+					Doc_PrintLine	(nDocID,  0, "ConcesiÃ³n de mina de mineral"									);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "Por el decreto de propiedad del Rey obtenido de tierras reales, el portador del presente documento ha recibido derechos de prospección en las tierras del rey.");
-					Doc_PrintLines	(nDocID,  0, "Deberá limitarse al área de una pequeña parcela real.");
-					Doc_PrintLines	(nDocID,  0, "De acuerdo con el decreto de medidas de tierras mineras, una pequeña parcela real se compone de 16 pasos en horizontal y 3 en vertical.");
-					Doc_PrintLines	(nDocID,  0, "El prospector del reino no está sujeto a las obligaciones relacionadas con el acceso libre y la protección de prospecciones.");
+					Doc_PrintLines	(nDocID,  0, "Por el decreto de propiedad del Rey obtenido de tierras reales, el portador del presente documento ha recibido derechos de prospecciÃ³n en las tierras del rey.");
+					Doc_PrintLines	(nDocID,  0, "DeberÃ¡ limitarse al Ã¡rea de una pequeÃ±a parcela real.");
+					Doc_PrintLines	(nDocID,  0, "De acuerdo con el decreto de medidas de tierras mineras, una pequeÃ±a parcela real se compone de 16 pasos en horizontal y 3 en vertical.");
+					Doc_PrintLines	(nDocID,  0, "El prospector del reino no estÃ¡ sujeto a las obligaciones relacionadas con el acceso libre y la protecciÃ³n de prospecciones.");
 					Doc_PrintLines	(nDocID,  0, "Si el propietario no puede pagar la renta, todos los derechos sobre la tierra revierten en el reino.");
 					Doc_PrintLine	(nDocID,  0, "         firmado"									);
 					Doc_PrintLine	(nDocID,  0, "      Prospector del rey"						);
@@ -985,11 +985,11 @@ func void Use_MinenAnteil_Mis ()
 
 	if (ItWr_MinenAnteil_Mis_OneTime == FALSE)
 	{
-		B_LogEntry (TOPIC_MinenAnteile,"El tipo que vendió las concesiones de la mina a los mercaderes se llama Salandril. Probablemente le encontraré en el barrio alto de Khorinis, a menos que ya haya huido de la justicia."); 
+		B_LogEntry (TOPIC_MinenAnteile,"El tipo que vendiÃ³ las concesiones de la mina a los mercaderes se llama Salandril. Probablemente le encontrarÃ© en el barrio alto de Khorinis, a menos que ya haya huido de la justicia."); 
 	
 		if (Npc_IsDead(Salandril))
 		{
-			B_LogEntry (TOPIC_MinenAnteile,"Salandril ha muerto. Voy a tener que decírselo a Serpentes."); 
+			B_LogEntry (TOPIC_MinenAnteile,"Salandril ha muerto. Voy a tener que decÃ­rselo a Serpentes."); 
 		};
 		ItWr_MinenAnteil_Mis_OneTime = TRUE;
 	};
@@ -1001,7 +1001,7 @@ func void Use_MinenAnteil_Mis ()
 
 INSTANCE  ItAm_Prot_BlackEye_Mis (C_Item)
 {
-	name 			=	"Amuleto de convocación de almas";
+	name 			=	"Amuleto de convocaciÃ³n de almas";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET|ITEM_MISSION;
@@ -1020,7 +1020,7 @@ INSTANCE  ItAm_Prot_BlackEye_Mis (C_Item)
 	
 	TEXT[2]			= "";
 	
-	TEXT[3] 		= "Protección contra la mirada oscura";
+	TEXT[3] 		= "ProtecciÃ³n contra la mirada oscura";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -1029,7 +1029,7 @@ INSTANCE  ItAm_Prot_BlackEye_Mis (C_Item)
 		
 };
 //**********************************************************************************
-//	Gestein aus gesegneter Erde für das Schutzamulett gegen den Schwarzen Blick
+//	Gestein aus gesegneter Erde fÃ¼r das Schutzamulett gegen den Schwarzen Blick
 //**********************************************************************************
 
 INSTANCE  ItMi_KarrasBlessedStone_Mis (C_Item)
@@ -1057,7 +1057,7 @@ INSTANCE  ItMi_KarrasBlessedStone_Mis (C_Item)
 };
 
 //**********************************************************************************
-//	Komprobrief für Lee
+//	Komprobrief fÃ¼r Lee
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_RichterKomproBrief_MIS		(C_Item)
@@ -1088,11 +1088,11 @@ func void Use_RichterKomproBrief ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Morgahard, eres un desgraciado inútil. Cumple mis órdenes o tendré que cambiar de idea y arrestaros a todos.");
-					Doc_PrintLines	( nDocID,  0, "Tiene que ser mañana por la noche. Larius empieza a recelar.");
-					Doc_PrintLines	( nDocID,  0, "Si no le sacamos ahora el dinero de los bolsillos, puede que sea demasiado tarde. Me aseguraré de que lo encuentras esta noche en el mercado.");
-					Doc_PrintLines	( nDocID,  0, "Pero no hagas de esto un espectáculo o tendrás encima a la milicia antes de que te enteres.");
-					Doc_PrintLines	( nDocID,  0, "Por cierto: si por un casual estira la pata, me parecerá estupendo."									);
+					Doc_PrintLines	( nDocID,  0, "Morgahard, eres un desgraciado inÃºtil. Cumple mis Ã³rdenes o tendrÃ© que cambiar de idea y arrestaros a todos.");
+					Doc_PrintLines	( nDocID,  0, "Tiene que ser maÃ±ana por la noche. Larius empieza a recelar.");
+					Doc_PrintLines	( nDocID,  0, "Si no le sacamos ahora el dinero de los bolsillos, puede que sea demasiado tarde. Me asegurarÃ© de que lo encuentras esta noche en el mercado.");
+					Doc_PrintLines	( nDocID,  0, "Pero no hagas de esto un espectÃ¡culo o tendrÃ¡s encima a la milicia antes de que te enteres.");
+					Doc_PrintLines	( nDocID,  0, "Por cierto: si por un casual estira la pata, me parecerÃ¡ estupendo."									);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "          Juez jefe y"		);
 					Doc_PrintLine	( nDocID,  0, "          secretario del Rey"		);
@@ -1135,8 +1135,8 @@ func void Use_MorgahardTip ()
 					Doc_PrintLines	(nDocID,  0, ""													);
 					Doc_PrintLines	(nDocID,  0, ""													);
 					Doc_PrintLines	(nDocID,  0, "He seguido adelante. Espero que volvamos a vernos cuando las cosas se calmen un poco.");
-					Doc_PrintLines	(nDocID,  0, "No os preocupéis, chicos. Si todo lo demás falla, le pediré a Onar que se encargue de ello.");
-					Doc_PrintLines	(nDocID,  0, "Todo irá bien."					);
+					Doc_PrintLines	(nDocID,  0, "No os preocupÃ©is, chicos. Si todo lo demÃ¡s falla, le pedirÃ© a Onar que se encargue de ello.");
+					Doc_PrintLines	(nDocID,  0, "Todo irÃ¡ bien."					);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "                           M."											);
@@ -1194,7 +1194,7 @@ instance ItWr_Map_Shrine_MIS (C_Item)
 
 INSTANCE ItWr_VinosKellergeister_Mis (C_ITEM)
 {
-	name 					=	"El espíritu del vino";
+	name 					=	"El espÃ­ritu del vino";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1230,22 +1230,22 @@ INSTANCE ItWr_VinosKellergeister_Mis (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "... En mis tiempos probé muchas, pero esta fruta que me trajeron del extranjero la semaná pasada ha superado todas mis expectativas..."					);
+					Doc_PrintLines	( nDocID,  0, "... En mis tiempos probÃ© muchas, pero esta fruta que me trajeron del extranjero la semanÃ¡ pasada ha superado todas mis expectativas..."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "... El zumo de esta uva es más afrutado que cualquiera que se pueda encontrar en esta parte del país..."					);
+					Doc_PrintLines	( nDocID,  0, "... El zumo de esta uva es mÃ¡s afrutado que cualquiera que se pueda encontrar en esta parte del paÃ­s..."					);
 					Doc_PrintLines	( nDocID,  0, "");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "... Hasta aquí todo bien. Pero me preocupa qué pueda pasar si me pillan en mi alambique secreto. No tengo ni idea de lo que me haría la milicia si me encuentra aquí. Podrían arrojarme al otro lado de la barrera..."	);
+					Doc_PrintLines	( nDocID,  1, "... Hasta aquÃ­ todo bien. Pero me preocupa quÃ© pueda pasar si me pillan en mi alambique secreto. No tengo ni idea de lo que me harÃ­a la milicia si me encuentra aquÃ­. PodrÃ­an arrojarme al otro lado de la barrera..."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "... Sospechan. Voy a dejarlo todo hasta que las cosas se calmen un poco, y volveré al trabajo cuando esté seguro de que no andan tras de mí...");
+					Doc_PrintLines	( nDocID,  1, "... Sospechan. Voy a dejarlo todo hasta que las cosas se calmen un poco, y volverÃ© al trabajo cuando estÃ© seguro de que no andan tras de mÃ­...");
 					Doc_Show		( nDocID );
 };
 

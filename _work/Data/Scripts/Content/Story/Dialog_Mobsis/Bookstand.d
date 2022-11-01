@@ -1,15 +1,15 @@
 //##########################################################################
 //##
-//##	Hier stehen alle Buchst‰ndermobsiscripte
+//##	Hier stehen alle Buchst√§ndermobsiscripte
 //##
 //##########################################################################
 
 
 //*************************************
-//	Buchst‰nder in der Klosterbibliothek
+//	Buchst√§nder in der Klosterbibliothek
 //*************************************
 
-FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
+FUNC VOID Use_Bookstand_01_S1()		//Buchst√§nder in der Magierbibliothek
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -17,11 +17,11 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 	{	
 	if  (hero.guild == GIL_NOV)
 		{
-			KNOWS_FIRE_CONTEST = TRUE; //f¸r die Pr¸fung des Feuers 
+			KNOWS_FIRE_CONTEST = TRUE; //f√ºr die Pr√ºfung des Feuers 
 			
 			Log_CreateTopic (TOPIC_FireContest,LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_FireContest,LOG_RUNNING);
-			B_LogEntry (TOPIC_FireContest,"Como novicio, tengo el derecho de solicitar la prueba del fuego. Eso significa que cada uno de los tres magos del concilio supremo me pondr· una prueba. Si supero los desafÌos, se me aceptar· en el CÌrculo de fuego.");
+			B_LogEntry (TOPIC_FireContest,"Como novicio, tengo el derecho de solicitar la prueba del fuego. Eso significa que cada uno de los tres magos del concilio supremo me pondr√° una prueba. Si supero los desaf√≠os, se me aceptar√° en el C√≠rculo de fuego.");
 		};
 	
 		var int nDocID;
@@ -40,7 +40,7 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Aunque un novicio se sienta preparado para someterse a la prueba de la magia, no tiene por quÈ ser escogido. Por otro lado, si tiene muy clara su decisiÛn e insiste, tiene derecho a exigir la prueba y ning˙n mago puede neg·rselo. Pero no podr· limitarse a pasar la prueba de la magia, tambiÈn tendr· que alcanzar la iluminaciÛn mediante el fuego. Si insiste ante el concilio supremo, tendr· que afrontar LA PRUEBA DEL FUEGO.");
+					Doc_PrintLines	( nDocID,  0, "Aunque un novicio se sienta preparado para someterse a la prueba de la magia, no tiene por qu√© ser escogido. Por otro lado, si tiene muy clara su decisi√≥n e insiste, tiene derecho a exigir la prueba y ning√∫n mago puede neg√°rselo. Pero no podr√° limitarse a pasar la prueba de la magia, tambi√©n tendr√° que alcanzar la iluminaci√≥n mediante el fuego. Si insiste ante el concilio supremo, tendr√° que afrontar LA PRUEBA DEL FUEGO.");
 			
 					
 					
@@ -48,10 +48,10 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "La prueba deberÌa servir para examinar la sabidurÌa, fuerza y destreza del novicio. Por lo tanto, deber· superar tres pruebas, cada una de ellas pensada por un mago del concilio supremo, antes de poder realizar el juramento del fuego para unirse al pacto con el fuego."); 
+					Doc_PrintLines	( nDocID,  1, "La prueba deber√≠a servir para examinar la sabidur√≠a, fuerza y destreza del novicio. Por lo tanto, deber√° superar tres pruebas, cada una de ellas pensada por un mago del concilio supremo, antes de poder realizar el juramento del fuego para unirse al pacto con el fuego."); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "…sa es la voluntad de Innos y asÌ debe hacerse."					);
+					Doc_PrintLines	( nDocID,  1, "√âsa es la voluntad de Innos y as√≠ debe hacerse."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "El concilio supremo"					);
@@ -62,13 +62,13 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 };
 
 //*************************************
-//	Buchst‰nder in der Geheimen Bibliothek
+//	Buchst√§nder in der Geheimen Bibliothek
 //*************************************
 //--------------------------------------
 var int FinalDragonEquipment_Once;
 //--------------------------------------
 
-FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothek 
+FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst√§nder in der geheimen Bibliothek 
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -86,7 +86,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 						Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  	
 	
 						Doc_PrintLine	( nDocID,  0, "");
-						Doc_PrintLines	( nDocID,  0, "... espero que el domo pueda proteger el mineral de la amenaza de Beliar. El Rey es suficientemente ingenuo como para creer que construimos el domo como protecciÛn contra huidas. Bien, mientras esos ardides nos sirvan para completar metas m·s importantes, que asÌ sea. Solo espero que tengamos tiempo suficiente para preparar la lucha. En cuanto se haya erigido el domo sobre el Valle de las Minas, usarÈ todos los poderes de que dispongo para intervenir en la lucha.");
+						Doc_PrintLines	( nDocID,  0, "... espero que el domo pueda proteger el mineral de la amenaza de Beliar. El Rey es suficientemente ingenuo como para creer que construimos el domo como protecci√≥n contra huidas. Bien, mientras esos ardides nos sirvan para completar metas m√°s importantes, que as√≠ sea. Solo espero que tengamos tiempo suficiente para preparar la lucha. En cuanto se haya erigido el domo sobre el Valle de las Minas, usar√© todos los poderes de que dispongo para intervenir en la lucha.");
 						Doc_PrintLines	( nDocID,  0, "");
 			
 					
@@ -96,15 +96,15 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 		{	
 			PlayerGetsAmulettOfDeath = TRUE;
 			PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] = TRUE; 
-			B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''proyectil m·gico'': 1 agua bendita, ning˙n pergamino de conjuro.");
+			B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''proyectil m√°gico'': 1 agua bendita, ning√∫n pergamino de conjuro.");
 			
 			
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "... SeguÌ las instrucciones y solo pude llegar a verter agua bendita de Innos sobre una piedra r˙nica virgen, sobre una mesa r˙nica. La piedra r˙nica fue destruida. Sospecho que este conjuro solo es posible para el Elegido."); 
-						Doc_PrintLines	( nDocID,  1, "He dejado la sagrada aura de Innos bajo la protecciÛn del monasterio. El abad se encargar· de ella hasta que el Elegido se de a conocer."	);
-						Doc_PrintLines	( nDocID,  1, "Las L·grimas de Innos pueden ser una parte fundamental de la lucha que nos espera. Pero es demasiado peligroso dejarlas a la vista de todos. Lo mejor ser· que las dejÈ aquÌ, en la biblioteca."	);
+						Doc_PrintLines	( nDocID,  1, "... Segu√≠ las instrucciones y solo pude llegar a verter agua bendita de Innos sobre una piedra r√∫nica virgen, sobre una mesa r√∫nica. La piedra r√∫nica fue destruida. Sospecho que este conjuro solo es posible para el Elegido."); 
+						Doc_PrintLines	( nDocID,  1, "He dejado la sagrada aura de Innos bajo la protecci√≥n del monasterio. El abad se encargar√° de ella hasta que el Elegido se de a conocer."	);
+						Doc_PrintLines	( nDocID,  1, "Las L√°grimas de Innos pueden ser una parte fundamental de la lucha que nos espera. Pero es demasiado peligroso dejarlas a la vista de todos. Lo mejor ser√° que las dej√© aqu√≠, en la biblioteca."	);
 						Doc_Show		( nDocID );
 						
 						
@@ -116,7 +116,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 			PrintScreen	(PRINT_LearnPalTeleportSecret, -1, -1, FONT_Screen, 2);
 			
 			Log_CreateTopic (TOPIC_TalentRunes,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentRunes,"Para crear una runa necesito ingredientes, especÌficos para cada una. Con esos ingredientes y una piedra r˙nica virgen, podrÈ crear la runa deseada en una mesa r˙nica.");
+			B_LogEntry (TOPIC_TalentRunes,"Para crear una runa necesito ingredientes, espec√≠ficos para cada una. Con esos ingredientes y una piedra r√∫nica virgen, podr√© crear la runa deseada en una mesa r√∫nica.");
 			B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'teletransporte secreto': 1 agua bendita");
 			
 			
@@ -124,9 +124,9 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Tienes que crear una runa de teletransporte para llegar hasta el lugar secreto. Para ello necesitas una piedra r˙nica virgen y una pequeÒa botella de agua bendita. Se puede usar la runa para teletransportarse hasta la habitaciÛn."); 
+						Doc_PrintLines	( nDocID,  1, "Tienes que crear una runa de teletransporte para llegar hasta el lugar secreto. Para ello necesitas una piedra r√∫nica virgen y una peque√±a botella de agua bendita. Se puede usar la runa para teletransportarse hasta la habitaci√≥n."); 
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Estoy razonablemente convencido de que las L·grimas de Innos eran lo que los paladines de la antig¸edad usaban en el olvidado ritual de consagraciÛn de la espada. Eso significa que deberÌa poder usar la botellita que encontrÈ para dar poder adicional a un arma consagrada."	);
+						Doc_PrintLines	( nDocID,  1, "Estoy razonablemente convencido de que las L√°grimas de Innos eran lo que los paladines de la antig√ºedad usaban en el olvidado ritual de consagraci√≥n de la espada. Eso significa que deber√≠a poder usar la botellita que encontr√© para dar poder adicional a un arma consagrada."	);
 						Doc_PrintLine	( nDocID,  1, "");
 						Doc_Show		( nDocID );
 		}
@@ -138,20 +138,20 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 			PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 			Npc_SetTalentSkill 	(self, NPC_TALENT_SMITH, 1);
 			Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentSmith,"Para forjar un arma primero hace falta acero en bruto. Se tiene que calentar en un fuego de herrero hasta que se ponga al rojo, molde·ndolo entonces en el yunque. En las armas especiales se suelen emplear ciertas substancias que les otorgan caracterÌsticas especiales.");
-			B_LogEntry (TOPIC_TalentSmith,"Si aÒado 4 unidades de mineral y 5 de sangre de dragÛn, puedo forjar una EXTERMINADORA DE DRAGONES DE MINERAL.");
-			B_LogEntry (TOPIC_TalentSmith,"Si aÒado 5 unidades de mineral y 5 de sangre de dragÛn, puedo forjar una EXTERMINADORA DE DRAGONES GRANDE DE MINERAL.");
+			B_LogEntry (TOPIC_TalentSmith,"Para forjar un arma primero hace falta acero en bruto. Se tiene que calentar en un fuego de herrero hasta que se ponga al rojo, molde√°ndolo entonces en el yunque. En las armas especiales se suelen emplear ciertas substancias que les otorgan caracter√≠sticas especiales.");
+			B_LogEntry (TOPIC_TalentSmith,"Si a√±ado 4 unidades de mineral y 5 de sangre de drag√≥n, puedo forjar una EXTERMINADORA DE DRAGONES DE MINERAL.");
+			B_LogEntry (TOPIC_TalentSmith,"Si a√±ado 5 unidades de mineral y 5 de sangre de drag√≥n, puedo forjar una EXTERMINADORA DE DRAGONES GRANDE DE MINERAL.");
 			PlayerGetsFinalDJGArmor = TRUE;
 		
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "De: Armas del seÒor de los dragones."); 
-						Doc_PrintLines	( nDocID,  1, "Para realizar una armadura de escamas de dragÛn, tan dura como sea posible, las escamas deben cubrirse con una fina capa de mineral del valle de la isla Karynis."					);
+						Doc_PrintLines	( nDocID,  1, "De: Armas del se√±or de los dragones."); 
+						Doc_PrintLines	( nDocID,  1, "Para realizar una armadura de escamas de drag√≥n, tan dura como sea posible, las escamas deben cubrirse con una fina capa de mineral del valle de la isla Karynis."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Para crear un arma digna de un seÒor de los dragones, la hoja deber· impregnarse de sangre de dragÛn. Incluso 5 ampollas de sangre pueden otorgar al acero una fuerza y un filo inigualables."					);
+						Doc_PrintLines	( nDocID,  1, "Para crear un arma digna de un se√±or de los dragones, la hoja deber√° impregnarse de sangre de drag√≥n. Incluso 5 ampollas de sangre pueden otorgar al acero una fuerza y un filo inigualables."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Nota: ''Karynis'' probablemente se referÌa a lo que conocemos como Khorinis.");
+						Doc_PrintLines	( nDocID,  1, "Nota: ''Karynis'' probablemente se refer√≠a a lo que conocemos como Khorinis.");
 						Doc_Show		( nDocID );
 		};
 		

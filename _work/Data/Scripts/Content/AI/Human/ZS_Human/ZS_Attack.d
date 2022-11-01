@@ -9,7 +9,7 @@ func void B_AssessSurprise()
 {
 	Npc_SetTarget (self, other); //Ziel wechseln
 	
-	// ------ HACK: AR ändern wegen B_Says, mögl. GateGuards, mögl. Mörder, etc. -------
+	// ------ HACK: AR Ã¤ndern wegen B_Says, mÃ¶gl. GateGuards, mÃ¶gl. MÃ¶rder, etc. -------
 	self.aivar[AIV_ATTACKREASON] = AR_GuildEnemy;
 };
 
@@ -17,7 +17,7 @@ func void ZS_Attack ()
 {
 	Perception_Set_Minimal();				//alle diese Wahrnehmungen werden den ZS_Attack NICHT verlassen
 
-	// ------ lokale Wahrnehmung für verwandelten SC ------
+	// ------ lokale Wahrnehmung fÃ¼r verwandelten SC ------
 	Npc_PercEnable (self, PERC_ASSESSSURPRISE , B_AssessSurprise);
 
 	B_ValidateOther();
@@ -76,8 +76,8 @@ func void ZS_Attack ()
 	// ------ wie oft bin ich von Nicht-Target getroffen worden ------
 	self.aivar[AIV_HitByOtherNpc] = 0;
 	
-	// ------ Für Magier ------
-	self.aivar[AIV_SelectSpell] = 0; //Für Magier;
+	// ------ FÃ¼r Magier ------
+	self.aivar[AIV_SelectSpell] = 0; //FÃ¼r Magier;
 };
 
 func int ZS_Attack_Loop ()
@@ -128,7 +128,7 @@ func int ZS_Attack_Loop ()
 		// ------ einmal pro Sekunde ------	
 		if (Npc_GetStateTime (self) > self.aivar[AIV_StateTime])
 		{
-			// ------ Feind kommt zurück ODER bleibt stehen ------
+			// ------ Feind kommt zurÃ¼ck ODER bleibt stehen ------
 			if (Npc_GetDistToNpc(self, other) < self.aivar[AIV_Dist])
 			|| ( (!C_BodyStateContains(other,BS_RUN)) && (!C_BodyStateContains(other, BS_JUMP)) )
 			{
@@ -213,7 +213,7 @@ func int ZS_Attack_Loop ()
 	};
 	
 	// ------ ggf. Munition generieren ------
-	B_CreateAmmo(self);							//muß VOR SelectWeapon kommen, weil sonst Bogen bei fehlender Muni nicht gezogen wird
+	B_CreateAmmo(self);							//muÃŸ VOR SelectWeapon kommen, weil sonst Bogen bei fehlender Muni nicht gezogen wird
 
 	// ------ immer volles MANA ------
 	//wird in B_ReadySpell gemacht
@@ -227,7 +227,7 @@ func int ZS_Attack_Loop ()
 	{
 		if (other.aivar[AIV_INVINCIBLE] == FALSE) // Nur NSCs angreifen, die NICHT im Talk sind
 		{
-												//führt Angriff mit Waffe oder Spell aus (Aktion wird durch FAI bestimmt)
+												//fÃ¼hrt Angriff mit Waffe oder Spell aus (Aktion wird durch FAI bestimmt)
 			AI_Attack (self);		 			//In der Funktion, in der AI_Attack aufgerufen wird DARF KEIN AI_ Befehl VOR AI_Attack kommen, da sonst AI_Attack ignoriert wird
 												//(AI-Attack funktioniert NUR, wenn die AIqueue leer ist!)
 		}
@@ -240,9 +240,9 @@ func int ZS_Attack_Loop ()
 		
 		return LOOP_CONTINUE;
 	}
-	else //target ungültig (tot) oder down		// falls NPC_GetTarget(self) == FALSE --> other hier automatisch gelöscht
+	else //target ungÃ¼ltig (tot) oder down		// falls NPC_GetTarget(self) == FALSE --> other hier automatisch gelÃ¶scht
 	{
-		// ------ noch in der Queue befindliche Attacks löschen ------
+		// ------ noch in der Queue befindliche Attacks lÃ¶schen ------
 		Npc_ClearAIQueue(self);
 		
 		// ------ wenn Spieler niedergeschlagen, temp_att (upset) resetten ------
@@ -253,10 +253,10 @@ func int ZS_Attack_Loop ()
 			Npc_SetTempAttitude(self, Npc_GetPermAttitude(self,hero));
 		};
 		
-		// ------ NUR neues Ziel wählen, wenn AR NICHT Kill ------
+		// ------ NUR neues Ziel wÃ¤hlen, wenn AR NICHT Kill ------
 		if (self.aivar [AIV_ATTACKREASON] != AR_KILL)
 		{
-			Npc_PerceiveAll	(self);					// nötig, da Npc_GetNextTarget() auf der Liste der zuletzt Wahrgenommenen VOBs beruht, und das kann hier schon ne Weile her sein, denn ZS_Attack hat keine aktiven Wahrnehmungen
+			Npc_PerceiveAll	(self);					// nÃ¶tig, da Npc_GetNextTarget() auf der Liste der zuletzt Wahrgenommenen VOBs beruht, und das kann hier schon ne Weile her sein, denn ZS_Attack hat keine aktiven Wahrnehmungen
 			Npc_GetNextTarget (self);
 		};
 		
@@ -287,7 +287,7 @@ func int ZS_Attack_Loop ()
 			
 			return LOOP_CONTINUE;
 		}
-		else 									// wenn false, wird other gelöscht!
+		else 									// wenn false, wird other gelÃ¶scht!
 		{
 			Npc_ClearAIQueue(self);
 			
@@ -304,7 +304,7 @@ func int ZS_Attack_Loop ()
 
 func void ZS_Attack_End ()
 {
-	// ------ other wieder holen, ist hier auf jeden Fall gelöscht! ------
+	// ------ other wieder holen, ist hier auf jeden Fall gelÃ¶scht! ------
 	other = Hlp_GetNpc(self.aivar[AIV_LASTTARGET]);	
 	
 	// ----- Nachbereitung bei Verfolgungsabbruch ------
@@ -328,7 +328,7 @@ func void ZS_Attack_End ()
 	// ------ Kampf zuende ------
 	if (self.aivar[AIV_PursuitEnd] == FALSE)
 	{
-		// ------ wenn Spieler während der Verfolgung Absolution erlangt hat ------
+		// ------ wenn Spieler wÃ¤hrend der Verfolgung Absolution erlangt hat ------
 		if (B_GetCurrentAbsolutionLevel(self) > self.aivar[AIV_LastAbsolutionLevel])
 		{
 			B_Say (self, other , "$WISEMOVE");
@@ -339,7 +339,7 @@ func void ZS_Attack_End ()
 		};
 	};
 	
-	// ------ mein Gegner vom Spieler getötet ------
+	// ------ mein Gegner vom Spieler getÃ¶tet ------
 	if (other.aivar[AIV_KilledByPlayer] == TRUE)
 	&& (Wld_GetGuildAttitude(self.guild, hero.guild) != ATT_HOSTILE)
 	{
@@ -358,13 +358,13 @@ func void ZS_Attack_End ()
 
 
 	
-	// ------ Plündern ------
+	// ------ PlÃ¼ndern ------
 	if (C_NpcIsDown(other))
 	&& (C_WantToRansack(self))
 	&& ( (other.aivar[AIV_RANSACKED] == FALSE) || C_NpcRansacksAlways(self) )
 	&& (Npc_GetDistToNpc(self, other) < PERC_DIST_INTERMEDIAT)
 	{
-		// ------ Opfer wird markiert, damit nur EINER plündert - abgefragt vor Aufruf von ZS_RansackBody -------
+		// ------ Opfer wird markiert, damit nur EINER plÃ¼ndert - abgefragt vor Aufruf von ZS_RansackBody -------
 		other.aivar[AIV_RANSACKED] = TRUE;						//FALSE gesetzt in ZS_Unconcious_End und ZS_Dead
 		
 		if (other.guild < GIL_SEPERATOR_HUM)	

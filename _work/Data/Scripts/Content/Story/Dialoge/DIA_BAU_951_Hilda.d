@@ -50,11 +50,11 @@ func void DIA_Hilda_Hallo_Info ()
 {
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_Hallo_17_00"); //Eh, ¿quién te ha invitado? Sal ahora mismo de la casa. Aquí no damos limosnas.
+			AI_Output (self, other, "DIA_Hilda_Hallo_17_00"); //Eh, Â¿quiÃ©n te ha invitado? Sal ahora mismo de la casa. AquÃ­ no damos limosnas.
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Hilda_Hallo_17_01"); //Sí, ¿qué es?
+			AI_Output (self, other, "DIA_Hilda_Hallo_17_01"); //SÃ­, Â¿quÃ© es?
 		};
 		
 	AI_StopProcessInfos (self);
@@ -70,7 +70,7 @@ instance DIA_Hilda_WasZuEssen (C_INFO)
 	condition	= DIA_Hilda_WasZuEssen_Condition;
 	information	= DIA_Hilda_WasZuEssen_Info;
 	permanent	= TRUE;
-	description = "¿Me das algo de comer?";
+	description = "Â¿Me das algo de comer?";
 };
 
 func int DIA_Hilda_WasZuEssen_Condition ()
@@ -88,7 +88,7 @@ func void DIA_Hilda_WasZuEssen_Info ()
 		{
 			var int Rueben_TagNull;
 			
-			AI_Output (other, self, "DIA_Hilda_WasZuEssen_15_00"); //¿Me das algo de comer?
+			AI_Output (other, self, "DIA_Hilda_WasZuEssen_15_00"); //Â¿Me das algo de comer?
 				
 			if (MIS_Lobart_Rueben == LOG_SUCCESS)
 				{
@@ -106,28 +106,28 @@ func void DIA_Hilda_WasZuEssen_Info ()
 						else if (Wld_GetDay() == 0)
 						&& 		(Rueben_TagNull == FALSE)
 						{
-							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_02"); //Mañana vuelve a por más.
+							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_02"); //MaÃ±ana vuelve a por mÃ¡s.
 							B_GiveInvItems (self, other, ItFo_Stew, 1);
 							Hilda_Stew_Day = Wld_GetDay();
 							Rueben_TagNull = TRUE;
 							
 							Log_CreateTopic (Topic_Bonus,LOG_NOTE);
-							B_LogEntry (Topic_Bonus,"Hilda me puede dar todos los días algo de estofado de nabos.");
+							B_LogEntry (Topic_Bonus,"Hilda me puede dar todos los dÃ­as algo de estofado de nabos.");
 						}
 						else //heute schon bekommen
 						{
-							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_03"); //¡Hoy ya te has tomado tu ración! Vuelve luego.
+							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_03"); //Â¡Hoy ya te has tomado tu raciÃ³n! Vuelve luego.
 						};
 					}
-					else //Pfanne zu spät
+					else //Pfanne zu spÃ¤t
 					{
-						AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_04"); //Aquí no alimentamos a los vagos. ¡Largo!
+						AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_04"); //AquÃ­ no alimentamos a los vagos. Â¡Largo!
 						AI_StopProcessInfos (self); 
 					};
 				}
 				else
 				{
-					AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_05"); //¡Aquí solo comen los que trabajan!
+					AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_05"); //Â¡AquÃ­ solo comen los que trabajan!
 				};
 		}
 	else
@@ -138,7 +138,7 @@ func void DIA_Hilda_WasZuEssen_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Rüben bringen
+//	RÃ¼ben bringen
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hilda_BringBeet (C_INFO)
 {
@@ -168,9 +168,9 @@ func void DIA_Hilda_BringBeet_Info ()
 	{
 		B_GiveInvItems (other, self, ItPl_Beet, Npc_HasItems (other,ItPl_Beet));
 		
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_01"); //¡Estupendo! (se ríe) ¡Deberían bastar para cebar a estos chicos!
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_02"); //Ya que estás aquí... hace unos minutos vi que pasaba un viajante.
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_03"); //Creo que se detuvo de camino a la ciudad. Ve a ver si tiene una sartén en condiciones.
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_01"); //Â¡Estupendo! (se rÃ­e) Â¡DeberÃ­an bastar para cebar a estos chicos!
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_02"); //Ya que estÃ¡s aquÃ­... hace unos minutos vi que pasaba un viajante.
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_03"); //Creo que se detuvo de camino a la ciudad. Ve a ver si tiene una sartÃ©n en condiciones.
 				
 		MIS_Lobart_RuebenToHilda = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Ambient);//damit der Logeintrag verschwindet
@@ -179,14 +179,14 @@ func void DIA_Hilda_BringBeet_Info ()
 	{
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_BringBeet_17_04"); //¡¿Qué?! ¿Se supone que eso es todo?
+			AI_Output (self, other, "DIA_Hilda_BringBeet_17_04"); //Â¡Â¿QuÃ©?! Â¿Se supone que eso es todo?
 		}
 		else
 		{
 			AI_Output (self, other, "DIA_Hilda_BringBeet_17_05"); //No es suficiente.
 		};
 		
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_06"); //¡Ve al campo y tráeme más! ¡Los hombres están muertos de hambre!
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_06"); //Â¡Ve al campo y trÃ¡eme mÃ¡s! Â¡Los hombres estÃ¡n muertos de hambre!
 		AI_StopProcessInfos (self);
 	};
 };
@@ -202,7 +202,7 @@ instance DIA_Hilda_Einkaufen (C_INFO)
 	condition	= DIA_Hilda_Einkaufen_Condition;
 	information	= DIA_Hilda_Einkaufen_Info;
 	permanent	= FALSE;
-	description	= "Dame el oro e iré a ver al mercader...";
+	description	= "Dame el oro e irÃ© a ver al mercader...";
 };
 
 func int DIA_Hilda_Einkaufen_Condition ()
@@ -216,11 +216,11 @@ func int DIA_Hilda_Einkaufen_Condition ()
 
 func void DIA_Hilda_Einkaufen_Info ()
 {
-	AI_Output (other, self, "DIA_Hilda_Einkaufen_15_00"); //Dame el oro e iré a ver al mercader...
+	AI_Output (other, self, "DIA_Hilda_Einkaufen_15_00"); //Dame el oro e irÃ© a ver al mercader...
 		
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_Einkaufen_17_01"); //¿Dices que me fíe de ti? No te gastes el dinero en bebida, ¿me oyes?
+			AI_Output (self, other, "DIA_Hilda_Einkaufen_17_01"); //Â¿Dices que me fÃ­e de ti? No te gastes el dinero en bebida, Â¿me oyes?
 		};
 		
 	B_GiveInvItems (self, other, ItMi_Gold, 20); 
@@ -230,7 +230,7 @@ func void DIA_Hilda_Einkaufen_Info ()
 	
 	Log_CreateTopic (TOPIC_Hilda,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Hilda,LOG_RUNNING);
-	B_LogEntry (TOPIC_Hilda,"Hilda, la esposa de Lobart, el granjero, quiere que vaya le compre una sartén al buhonero.");
+	B_LogEntry (TOPIC_Hilda,"Hilda, la esposa de Lobart, el granjero, quiere que vaya le compre una sartÃ©n al buhonero.");
 };
 
 
@@ -244,7 +244,7 @@ instance DIA_Hilda_PfanneGeholt (C_INFO)
 	condition	= DIA_Hilda_PfanneGeholt_Condition;
 	information	= DIA_Hilda_PfanneGeholt_Info;
 	permanent	= FALSE;
-	description	= "Aquí tienes la sartén.";
+	description	= "AquÃ­ tienes la sartÃ©n.";
 };
 
 func int DIA_Hilda_PfanneGeholt_Condition ()
@@ -259,7 +259,7 @@ func int DIA_Hilda_PfanneGeholt_Condition ()
 
 func void DIA_Hilda_PfanneGeholt_Info ()
 {
-	AI_Output (other, self, "DIA_Hilda_PfanneGeholt_15_00"); //Aquí tienes la sartén.
+	AI_Output (other, self, "DIA_Hilda_PfanneGeholt_15_00"); //AquÃ­ tienes la sartÃ©n.
 	B_GiveInvItems (other, self, itmi_pan, 1);
 	AI_Output (self, other, "DIA_Hilda_PfanneGeholt_17_01"); //Muy bien. Veamos si es buena...
 	
@@ -271,7 +271,7 @@ func void DIA_Hilda_PfanneGeholt_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Pfanne zu spät
+//	Pfanne zu spÃ¤t
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hilda_PfanneTooLate (C_INFO)
 {
@@ -297,20 +297,20 @@ func void DIA_Hilda_PfanneTooLate_Info ()
 {
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_00"); //¿Cómo te atreves a volver? ¿Qué has hecho con mi dinero, haragán?
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_00"); //Â¿CÃ³mo te atreves a volver? Â¿QuÃ© has hecho con mi dinero, haragÃ¡n?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_01"); //Has tenido tiempo más que de sobra. ¿Dónde está el dinero que te di para la sartén?
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_01"); //Has tenido tiempo mÃ¡s que de sobra. Â¿DÃ³nde estÃ¡ el dinero que te di para la sartÃ©n?
 		};
 		
 	if (Npc_HasItems(other, itmi_pan) > 0)
 	{
-		AI_Output (other, self, "DIA_Hilda_PfanneTooLate_15_02"); //Siento haber tardado tanto. Aquí tienes la sartén.
+		AI_Output (other, self, "DIA_Hilda_PfanneTooLate_15_02"); //Siento haber tardado tanto. AquÃ­ tienes la sartÃ©n.
 	
 		B_GiveInvItems (other, self, itmi_pan, 1);
 	
-		AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_03"); //Arrh, dámela. Menuda cara... ¡es increíble!
+		AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_03"); //Arrh, dÃ¡mela. Menuda cara... Â¡es increÃ­ble!
 	
 		MIS_Hilda_PfanneKaufen = LOG_SUCCESS;
 		B_GivePlayerXP (XP_HildaHolPfanne/2);
@@ -322,14 +322,14 @@ func void DIA_Hilda_PfanneTooLate_Info ()
 	{
 		if (Npc_HasItems(other, itmi_gold) >= 20)
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_04"); //¡Ah! ¡Todavía lo tienes! Devuélvemelo ahora mismo.
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_04"); //Â¡Ah! Â¡TodavÃ­a lo tienes! DevuÃ©lvemelo ahora mismo.
 			B_GiveInvItems (other, self, ItMi_Gold, 20); 
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_05"); //Menuda cara... ¡es increíble!
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_05"); //Menuda cara... Â¡es increÃ­ble!
 		}
 		else //kein Gold
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_06"); //¡No lo tienes! ¡Te di 20 monedas de oro!
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_07"); //¡Fuera de aquí, ladrón asqueroso!
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_06"); //Â¡No lo tienes! Â¡Te di 20 monedas de oro!
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_07"); //Â¡Fuera de aquÃ­, ladrÃ³n asqueroso!
 			
 			B_MemorizePlayerCrime (self, other, CRIME_THEFT);
 		};
@@ -368,8 +368,8 @@ func int DIA_Hilda_TruheRumgemacht_Condition ()
 
 func void DIA_Hilda_TruheRumgemacht_Info ()
 {
-	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_00"); //Denk´ bloss nicht, ich hätte nicht gesehen, wie du an der Kiste 'rumgemacht hast.
-	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_01"); //Raus hier aber schnell. Sonst hol´ ich meinen Mann!
+	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_00"); //DenkÂ´ bloss nicht, ich hÃ¤tte nicht gesehen, wie du an der Kiste 'rumgemacht hast.
+	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_01"); //Raus hier aber schnell. Sonst holÂ´ ich meinen Mann!
 	
 	AI_StopProcessInfos(self);
 };
@@ -420,7 +420,7 @@ instance DIA_Hilda_KRANK		(C_INFO)
 	information	 = 	DIA_Hilda_KRANK_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Te sientes mal?";
+	description	 = 	"Â¿Te sientes mal?";
 };
 
 func int DIA_Hilda_KRANK_Condition ()
@@ -435,15 +435,15 @@ func int DIA_Hilda_KRANK_Condition ()
 var int DIA_Hilda_KRANK_OnTime;
 func void DIA_Hilda_KRANK_Info ()
 {
-	AI_Output			(other, self, "DIA_Hilda_KRANK_15_00"); //¿Te sientes mal?
-	AI_Output			(self, other, "DIA_Hilda_KRANK_17_01"); //La verdad es que sí. Otra vez me ha dado fiebre.
-	AI_Output			(self, other, "DIA_Hilda_KRANK_17_02"); //Debería ir a ver al curandero de la ciudad, pero estoy muy débil.
+	AI_Output			(other, self, "DIA_Hilda_KRANK_15_00"); //Â¿Te sientes mal?
+	AI_Output			(self, other, "DIA_Hilda_KRANK_17_01"); //La verdad es que sÃ­. Otra vez me ha dado fiebre.
+	AI_Output			(self, other, "DIA_Hilda_KRANK_17_02"); //DeberÃ­a ir a ver al curandero de la ciudad, pero estoy muy dÃ©bil.
 
 	if (DIA_Hilda_KRANK_OnTime == FALSE)
 	{
 		Info_ClearChoices	(DIA_Hilda_KRANK);
-		Info_AddChoice	(DIA_Hilda_KRANK, "Mejórate. Tengo que irme.", DIA_Hilda_KRANK_besserung );
-		Info_AddChoice	(DIA_Hilda_KRANK, "¿Puedo ayudar?", DIA_Hilda_KRANK_helfen );
+		Info_AddChoice	(DIA_Hilda_KRANK, "MejÃ³rate. Tengo que irme.", DIA_Hilda_KRANK_besserung );
+		Info_AddChoice	(DIA_Hilda_KRANK, "Â¿Puedo ayudar?", DIA_Hilda_KRANK_helfen );
 		
 		DIA_Hilda_KRANK_OnTime = TRUE;
 	};
@@ -452,20 +452,20 @@ func void DIA_Hilda_KRANK_Info ()
 };
 func void DIA_Hilda_KRANK_besserung ()
 {
-	AI_Output			(other, self, "DIA_Hilda_KRANK_besserung_15_00"); //Mejórate. Tengo que irme.
+	AI_Output			(other, self, "DIA_Hilda_KRANK_besserung_15_00"); //MejÃ³rate. Tengo que irme.
 	AI_Output			(self, other, "DIA_Hilda_KRANK_besserung_17_01"); //Espero que las cosas mejoren.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Hilda_KRANK_helfen ()
 {
-	AI_Output			(other, self, "DIA_Hilda_KRANK_helfen_15_00"); //¿Puedo ayudar?
-	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_01"); //Sería estupendo que fueras a ver a Vatras y me trajeras mi medicina.
-	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_02"); //¡Él sabrá lo que hay que hacer! Yo ya no puedo.
+	AI_Output			(other, self, "DIA_Hilda_KRANK_helfen_15_00"); //Â¿Puedo ayudar?
+	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_01"); //SerÃ­a estupendo que fueras a ver a Vatras y me trajeras mi medicina.
+	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_02"); //Â¡Ã‰l sabrÃ¡ lo que hay que hacer! Yo ya no puedo.
 
 	Log_CreateTopic (TOPIC_HealHilda, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HealHilda, LOG_RUNNING);
-	B_LogEntry (TOPIC_HealHilda,"La esposa de Lobart, Hilda, está enferma, pero Vatras tiene algo que puede curarla."); 
+	B_LogEntry (TOPIC_HealHilda,"La esposa de Lobart, Hilda, estÃ¡ enferma, pero Vatras tiene algo que puede curarla."); 
 	AI_StopProcessInfos (self);
 };
 
@@ -494,7 +494,7 @@ func void DIA_Hilda_HEILUNGBRINGEN_Info ()
 {
 	AI_Output			(other, self, "DIA_Hilda_HEILUNGBRINGEN_15_00"); //Tengo tu medicina.
 	B_GiveInvItems 		(other, self, ItPo_HealHilda_MIS,1);
-	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_01"); //De verdad que nuestra sociedad necesita más gente como tú. Muchas gracias.
+	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_01"); //De verdad que nuestra sociedad necesita mÃ¡s gente como tÃº. Muchas gracias.
 	B_UseItem 			(self,ItPo_HealHilda_MIS);
 	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_02"); //Espero que estas pocas monedas basten.
 	CreateInvItems 		(self, ItMi_Gold, 50);									
@@ -515,7 +515,7 @@ instance DIA_Hilda_DISTURB		(C_INFO)
 	information	 = 	DIA_Hilda_DISTURB_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Qué tal estás?";
+	description	 = 	"Â¿QuÃ© tal estÃ¡s?";
 };
 
 func int DIA_Hilda_DISTURB_Condition ()
@@ -534,7 +534,7 @@ func void DIA_Hilda_DISTURB_Info ()
 {
 	if (MIS_HealHilda == LOG_SUCCESS)
 	{
-	AI_Output	(other, self, "DIA_Hilda_DISTURB_15_00"); //¿Qué tal estás?
+	AI_Output	(other, self, "DIA_Hilda_DISTURB_15_00"); //Â¿QuÃ© tal estÃ¡s?
 	AI_Output	(self, other, "DIA_Hilda_DISTURB_17_01"); //Gracias a ti, ya me siento algo mejor.
 	}
 	else

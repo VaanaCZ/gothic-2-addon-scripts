@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10029_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10029_Buddler_Hi_Condition;
 	information = DIA_Addon_10029_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "¿Qué tal va todo?";
+	description = "Â¿QuÃ© tal va todo?";
 };
 FUNC INT DIA_Addon_10029_Buddler_Hi_Condition()
 {	
@@ -36,7 +36,7 @@ FUNC INT DIA_Addon_10029_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10029_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10029_Buddler_Hi_15_00");//¿Qué tal todo?
+	AI_Output (other, self, "DIA_Addon_BDT_10029_Buddler_Hi_15_00");//Â¿QuÃ© tal todo?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
@@ -68,7 +68,7 @@ FUNC VOID DIA_Addon_10029_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
 	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_00");//Las piernas, la clave son las piernas.
-	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_01");//La fuerza y el compás vienen de las piernas.
+	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_01");//La fuerza y el compÃ¡s vienen de las piernas.
 	
 	B_Upgrade_Hero_HackChance(5);
 	

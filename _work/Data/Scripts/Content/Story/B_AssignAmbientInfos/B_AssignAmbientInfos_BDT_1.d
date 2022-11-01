@@ -47,15 +47,15 @@ FUNC VOID DIA_BDT_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_00"); //¡Fuera de aquí!
+		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_00"); //Â¡Fuera de aquÃ­!
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_01"); //¿Buscas bronca?
+		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_01"); //Â¿Buscas bronca?
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_02"); //¡Márchate mientras puedas!
+		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_02"); //Â¡MÃ¡rchate mientras puedas!
 	};
 	
 	AI_StopProcessInfos	(self);

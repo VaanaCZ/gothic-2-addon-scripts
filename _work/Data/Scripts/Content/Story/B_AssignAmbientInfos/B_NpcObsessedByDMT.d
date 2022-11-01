@@ -28,7 +28,7 @@ func void B_DMTWurm ()
 // B_NpcClearObsessionByDMT	steht bei allen NSCs statt der AI_StopProcessInfos (self);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT muﬂ in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
+func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT mu√ü in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
 {														
 	AI_StopProcessInfos	(medium);
 
@@ -91,7 +91,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			{
 				if (MIS_OCGateOpen == TRUE)
 					{
-						AI_Output	(self, other, "DIA_Brutus_ObsessedByDMT_19_00"); //Abrir la puerta fue un gran servicio para nuestro amo, dÈbil mortal. Erigiremos un altar en su honor sobre tu tumba.
+						AI_Output	(self, other, "DIA_Brutus_ObsessedByDMT_19_00"); //Abrir la puerta fue un gran servicio para nuestro amo, d√©bil mortal. Erigiremos un altar en su honor sobre tu tumba.
 					}
 					else
 					{
@@ -115,7 +115,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Vino))
 			{
-				AI_Output	(self, other, "DIA_Vino_ObsessedByDMT_19_00"); //Dentro de poco los controlaremos a todos. Tu triste capacidad m·gica y t˙ no suponÈis ninguna amenaza para nosotros.
+				AI_Output	(self, other, "DIA_Vino_ObsessedByDMT_19_00"); //Dentro de poco los controlaremos a todos. Tu triste capacidad m√°gica y t√∫ no supon√©is ninguna amenaza para nosotros.
 				NpcObsessedByDMT_Vino = TRUE;
 			}		
 
@@ -124,7 +124,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Malak))
 			{
-				AI_Output	(self, other, "DIA_Malak_ObsessedByDMT_19_00"); //No vas a poder salvar su alma, mago. Jam·s volver· a ser el mismo.
+				AI_Output	(self, other, "DIA_Malak_ObsessedByDMT_19_00"); //No vas a poder salvar su alma, mago. Jam√°s volver√° a ser el mismo.
 				NpcObsessedByDMT_Malak = TRUE;
 			}		
 		
@@ -133,7 +133,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Sekob))
 			{
-				AI_Output	(self, other, "DIA_Sekob_ObsessedByDMT_19_00"); //RÌndete, mago. No puedes vencer.
+				AI_Output	(self, other, "DIA_Sekob_ObsessedByDMT_19_00"); //R√≠ndete, mago. No puedes vencer.
 				NpcObsessedByDMT_Sekob = TRUE;
 			}		
 	
@@ -142,11 +142,11 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Randolph))
 			{
-				AI_Output	(self, other, "DIA_Randolph_ObsessedByDMT_19_00"); //No te preocupes por los dÈbiles. Los esclavizaremos a todos.
+				AI_Output	(self, other, "DIA_Randolph_ObsessedByDMT_19_00"); //No te preocupes por los d√©biles. Los esclavizaremos a todos.
 				NpcObsessedByDMT_Randolph = TRUE;
 			}	
 				
-			else //Joly: f¸r alle anderen
+			else //Joly: f√ºr alle anderen
 			{
 				B_DMTWurm ();
 				if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Bromor))

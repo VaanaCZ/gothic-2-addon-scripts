@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesveränderung (unwissend zusammengebraut)																		//
+//	Trank der GeistesverÃ¤nderung (unwissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_01(C_Item)
 {
@@ -18,9 +18,9 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Poción de alteración mental";
+	description		= 	"PociÃ³n de alteraciÃ³n mental";
 	
-	TEXT[2]			=   "¡Tomar PRECAUCIONES antes de usar!";
+	TEXT[2]			=   "Â¡Tomar PRECAUCIONES antes de usar!";
 	
 	TEXT[3]			= 	"Puede perturbar fuertemente las facultades mentales";	
 	TEXT[4]			= 	"o causar la muerte";
@@ -36,7 +36,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 		self.attribute[ATR_HITPOINTS] = (self.attribute[ATR_HITPOINTS] -1000);
 	};
 /******************************************************************************************/
-//	Trank der Geistesveränderung (wissend zusammengebraut)																		//
+//	Trank der GeistesverÃ¤nderung (wissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_02(C_Item)
 {
@@ -55,9 +55,9 @@ INSTANCE ItPo_Addon_Geist_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Poción de alteración mental";
+	description		= 	"PociÃ³n de alteraciÃ³n mental";
 	
-	TEXT[2]			=   "¡Tomar PRECAUCIONES antes de usar!";
+	TEXT[2]			=   "Â¡Tomar PRECAUCIONES antes de usar!";
 	
 	TEXT[3]			= 	"Puede perturbar fuertemente las facultades mentales";	
 	TEXT[4]			= 	"o causar la muerte";
@@ -93,10 +93,10 @@ INSTANCE ItPo_Health_Addon_04(C_Item)
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
 
-	description		= 	"Energía vital pura";
+	description		= 	"EnergÃ­a vital pura";
 	
 	//TEXT[1]			= 	NAME_Bonus_HP;				
-	TEXT[2]			= 	"Regeneración completa";
+	TEXT[2]			= 	"RegeneraciÃ³n completa";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_HpTrunk;
@@ -126,10 +126,10 @@ INSTANCE ItPo_Mana_Addon_04(C_Item)
 	effect			=	"SPELLFX_MANAPOTION"; 
 
 
-	description		= 	"Maná puro";
+	description		= 	"ManÃ¡ puro";
 	
 	//TEXT[1]			= 	NAME_Bonus_Mana;				
-	TEXT[2]			= 	"Regeneración de maná completa";
+	TEXT[2]			= 	"RegeneraciÃ³n de manÃ¡ completa";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaTrunk;

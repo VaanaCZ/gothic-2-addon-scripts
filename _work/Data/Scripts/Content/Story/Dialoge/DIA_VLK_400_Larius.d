@@ -46,7 +46,7 @@ FUNC INT DIA_Larius_Hello_Condition()
 
 FUNC VOID DIA_Larius_Hello_Info()
 {	
-	AI_Output (self,other,"DIA_Larius_Hello_01_00"); //¿Qué se te ha perdido aquí? Si quieres algo, pide una cita.
+	AI_Output (self,other,"DIA_Larius_Hello_01_00"); //Â¿QuÃ© se te ha perdido aquÃ­? Si quieres algo, pide una cita.
 
 };
 
@@ -61,7 +61,7 @@ INSTANCE DIA_Larius_WhoAreYou(C_INFO)
 	condition	= DIA_Larius_WhoAreYou_Condition;
 	information	= DIA_Larius_WhoAreYou_Info;
 	permanent	= FALSE;
-	description	= "¿Quién eres tú?";
+	description	= "Â¿QuiÃ©n eres tÃº?";
 };                       
 
 FUNC INT DIA_Larius_WhoAreYou_Condition()
@@ -71,12 +71,12 @@ FUNC INT DIA_Larius_WhoAreYou_Condition()
 
 FUNC VOID DIA_Larius_WhoAreYou_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_00"); //¿Quién eres tú?
+	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_00"); //Â¿QuiÃ©n eres tÃº?
 	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_01"); //Soy Larius, el gobernador local.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //Aunque en este momento no lo parezca, soy el hombre más poderoso de la ciudad.
-	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //Así que ¿tú estás al mando aquí?
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //Bueno... en este momento, mis manos están atadas.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //Ese lord Hagen está al mando aquí, al menos, mientras esté en la ciudad.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //Aunque en este momento no lo parezca, soy el hombre mÃ¡s poderoso de la ciudad.
+	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //AsÃ­ que Â¿tÃº estÃ¡s al mando aquÃ­?
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //Bueno... en este momento, mis manos estÃ¡n atadas.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //Ese lord Hagen estÃ¡ al mando aquÃ­, al menos, mientras estÃ© en la ciudad.
 		
 };
 
@@ -91,7 +91,7 @@ INSTANCE DIA_Larius_Disturb(C_INFO)
 	condition	= DIA_Larius_Disturb_Condition;
 	information	= DIA_Larius_Disturb_Info;
 	permanent	= TRUE;
-	description	= "No quería entrometerme.";
+	description	= "No querÃ­a entrometerme.";
 };                       
 
 FUNC INT DIA_Larius_Disturb_Condition()
@@ -101,8 +101,8 @@ FUNC INT DIA_Larius_Disturb_Condition()
 
 FUNC VOID DIA_Larius_Disturb_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_Disturb_15_00"); //No quería entrometerme.
-	AI_Output (self ,other,"DIA_Larius_Disturb_01_01"); //Pues has fallado completamente. Así que ¡lárgate!
+	AI_Output (other,self ,"DIA_Larius_Disturb_15_00"); //No querÃ­a entrometerme.
+	AI_Output (self ,other,"DIA_Larius_Disturb_01_01"); //Pues has fallado completamente. AsÃ­ que Â¡lÃ¡rgate!
 };
 
 // ************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_Larius_DieLage(C_INFO)
 	condition	= DIA_Larius_DieLage_Condition;
 	information	= DIA_Larius_DieLage_Info;
 	permanent	= TRUE;
-	description	= "¿Qué pasa?";
+	description	= "Â¿QuÃ© pasa?";
 };                       
 
 FUNC INT DIA_Larius_DieLage_Condition()
@@ -126,8 +126,8 @@ FUNC INT DIA_Larius_DieLage_Condition()
 
 FUNC VOID DIA_Larius_DieLage_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_DieLage_15_00"); //¿Cómo va todo?
-	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //¿Y a ti qué te importa? Mientras los paladines estén en la ciudad, Lord Hagen se ocupará de todos los problemas que le conciernen.
+	AI_Output (other,self ,"DIA_Larius_DieLage_15_00"); //Â¿CÃ³mo va todo?
+	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //Â¿Y a ti quÃ© te importa? Mientras los paladines estÃ©n en la ciudad, Lord Hagen se ocuparÃ¡ de todos los problemas que le conciernen.
 };
 
 
@@ -142,7 +142,7 @@ INSTANCE DIA_Larius_Richterueberfall(C_INFO)
 	condition	= DIA_Larius_Richterueberfall_Condition;
 	information	= DIA_Larius_Richterueberfall_Info;
 
-	description	= "El juez contrató a varios matones para asaltarte.";
+	description	= "El juez contratÃ³ a varios matones para asaltarte.";
 };                       
 
 FUNC INT DIA_Larius_Richterueberfall_Condition()
@@ -155,8 +155,8 @@ FUNC INT DIA_Larius_Richterueberfall_Condition()
 
 FUNC VOID DIA_Larius_Richterueberfall_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_Richterueberfall_15_00"); //El juez contrató a varios matones para asaltarte. Puedo demostrarlo.
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_01"); //No digas bobadas, ¿o quieres que te encadene?
+	AI_Output (other,self ,"DIA_Larius_Richterueberfall_15_00"); //El juez contratÃ³ a varios matones para asaltarte. Puedo demostrarlo.
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_01"); //No digas bobadas, Â¿o quieres que te encadene?
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
 			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_02"); //Aunque seas un guerrero de Innos...
@@ -165,7 +165,7 @@ FUNC VOID DIA_Larius_Richterueberfall_Info()
 		{
 			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_03"); //Aunque seas un mago ordenado...
 		};
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //Mi palabra sigue pesando en esta ciudad. ¡No te atrevas a ensuciar el honorable nombre del juez nunca más!
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //Mi palabra sigue pesando en esta ciudad. Â¡No te atrevas a ensuciar el honorable nombre del juez nunca mÃ¡s!
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 };

@@ -32,7 +32,7 @@ INSTANCE DIA_Addon_Monty_Hi   (C_INFO)
 	condition   = DIA_Addon_Monty_Hi_Condition;
 	information = DIA_Addon_Monty_Hi_Info;
 	permanent   = FALSE;
-	description = "Eh, ¿qué pasa?";
+	description = "Eh, Â¿quÃ© pasa?";
 };
 FUNC INT DIA_Addon_Monty_Hi_Condition()
 {	
@@ -40,8 +40,8 @@ FUNC INT DIA_Addon_Monty_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Monty_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Eh, ¿qué tal todo?
-	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Estoy vivo, eso es lo único que importa.
+	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Eh, Â¿quÃ© tal todo?
+	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Estoy vivo, eso es lo Ãºnico que importa.
 	
 	if (Monty_einmal == FALSE)
 	{
@@ -68,7 +68,7 @@ FUNC INT DIA_Addon_Monty_Hacken_Condition()
 FUNC VOID DIA_Addon_Monty_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Mira, el ángulo de golpeo es crucial para una correcta extracción.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Mira, el Ã¡ngulo de golpeo es crucial para una correcta extracciÃ³n.
 	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Ni muy plano ni muy inclinado, para poder sacar pepitas y sostener bien tu pica.
 	
 	B_Upgrade_Hero_HackChance(5);
