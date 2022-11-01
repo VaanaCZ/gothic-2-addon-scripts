@@ -38,11 +38,11 @@ func int DIA_328_Miliz_Hi_Condition ()
 };
 func void DIA_328_Miliz_Hi_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Hele, tady nemáš co dêlat. Rozumíš?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Hele, tady nemÃ¡Å¡ co dÄ™lat. RozumÃ­Å¡?
 	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Kdo jsi?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Po tom ti vùbec nic není! Šéfuju tomu tady, jasný?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Šéfuješ? Èemu? Têm bednám?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Hele, skladištê spadá pod mùj dohled, jasný? Tak vypadni, nebo si poneseš zuby v klobouku.
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Po tom ti vÅ¯bec nic nenÃ­! Å Ã©fuju tomu tady, jasnÃ½?
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Å Ã©fujeÅ¡? ÄŒemu? TÄ™m bednÃ¡m?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Hele, skladiÅ¡tÄ™ spadÃ¡ pod mÅ¯j dohled, jasnÃ½? Tak vypadni, nebo si poneseÅ¡ zuby v klobouku.
 	
 	AI_StopProcessInfos (self);
 	
@@ -69,8 +69,8 @@ func int DIA_328_Miliz_Kill_Condition ()
 };
 func void DIA_328_Miliz_Kill_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Hej, ty jsi poâád ještê tady. Neâíkal jsem ti, že máš vypadnout?
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //Teë ti ukážu, kdo je tady šéf!
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Hej, ty jsi poÃ¢Ã¡d jeÅ¡tÄ™ tady. NeÃ¢Ã­kal jsem ti, Å¾e mÃ¡Å¡ vypadnout?
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //TeÃ« ti ukÃ¡Å¾u, kdo je tady Å¡Ã©f!
 	
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);

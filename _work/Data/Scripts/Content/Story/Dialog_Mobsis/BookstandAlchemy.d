@@ -14,7 +14,7 @@ var int ALchemy_2_permanent;
 var int ALchemy_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY1_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -33,18 +33,18 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Magické lektvary");
-					Doc_PrintLine	( nDocID,  0, "a pâísady"						);
+					Doc_PrintLine	( nDocID,  0, "MagickÃ© lektvary");
+					Doc_PrintLine	( nDocID,  0, "a pÃ¢Ã­sady"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Esence many"						);
-					Doc_PrintLine	( nDocID,  0, "2 ohnivé kopâivy"						);
+					Doc_PrintLine	( nDocID,  0, "2 ohnivÃ© kopÃ¢ivy"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Extrakt many"						);
-					Doc_PrintLine	( nDocID,  0, "2 ohnivé bılí"						);
+					Doc_PrintLine	( nDocID,  0, "2 ohnivÃ© bÃ½lÃ­"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Elixír many"						);
-					Doc_PrintLine	( nDocID,  0, "2 ohnivé koâeny"						);
+					Doc_PrintLine	( nDocID,  0, "ElixÃ­r many"						);
+					Doc_PrintLine	( nDocID,  0, "2 ohnivÃ© koÃ¢eny"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
@@ -52,13 +52,13 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Alchymista ke své práci vdy potâebuje laboratorní lahvièku, do které pak nalije hotovı lektvar."	); 
+					Doc_PrintLines	( nDocID,  1, "Alchymista ke svÃ© prÃ¡ci vÅ¾dy potÃ¢ebuje laboratornÃ­ lahviÄku, do kterÃ© pak nalije hotovÃ½ lektvar."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "K namíchání léèivého lektvaru nebo elixíru posilujícího magickou moc potâebuješ zvláštní pâísadu a rostlinu:"			);
-					Doc_PrintLine	( nDocID,  1, "Luèní pohanka"		);
+					Doc_PrintLines	( nDocID,  1, "K namÃ­chÃ¡nÃ­ lÃ©ÄivÃ©ho lektvaru nebo elixÃ­ru posilujÃ­cÃ­ho magickou moc potÃ¢ebujeÅ¡ zvlÃ¡Å¡tnÃ­ pÃ¢Ã­sadu a rostlinu:"			);
+					Doc_PrintLine	( nDocID,  1, "LuÄnÃ­ pohanka"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "K namíchání lektvarù trvale mênících nêkterou z duševních èi têlesnıch vlastností potâebuješ urèitou rostlinu:"						);
-					Doc_PrintLines	( nDocID,  1, "Královskı šãovík"		);
+					Doc_PrintLines	( nDocID,  1, "K namÃ­chÃ¡nÃ­ lektvarÅ¯ trvale mÄ™nÃ­cÃ­ch nÄ™kterou z duÅ¡evnÃ­ch Äi tÄ™lesnÃ½ch vlastnostÃ­ potÃ¢ebujeÅ¡ urÄitou rostlinu:"						);
+					Doc_PrintLines	( nDocID,  1, "KrÃ¡lovskÃ½ Å¡ÄƒovÃ­k"		);
 					Doc_Show		( nDocID );
 					
 					if (ALchemy_1_permanent == FALSE)
@@ -70,7 +70,7 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY2_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -89,18 +89,18 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Léèivé lektvary");
-					Doc_PrintLine	( nDocID,  0, "a pâísady"						);
+					Doc_PrintLine	( nDocID,  0, "LÃ©ÄivÃ© lektvary");
+					Doc_PrintLine	( nDocID,  0, "a pÃ¢Ã­sady"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Esence hojivé síly"						);
-					Doc_PrintLine	( nDocID,  0, "2 léèivé rostliny"						);
+					Doc_PrintLine	( nDocID,  0, "Esence hojivÃ© sÃ­ly"						);
+					Doc_PrintLine	( nDocID,  0, "2 lÃ©ÄivÃ© rostliny"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Extrakt hojivé síly"						);
-					Doc_PrintLine	( nDocID,  0, "2 léèivé byliny"						);
+					Doc_PrintLine	( nDocID,  0, "Extrakt hojivÃ© sÃ­ly"						);
+					Doc_PrintLine	( nDocID,  0, "2 lÃ©ÄivÃ© byliny"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Elixír hojivé síly"						);
-					Doc_PrintLine	( nDocID,  0, "2 léèivé koâeny"						);
+					Doc_PrintLine	( nDocID,  0, "ElixÃ­r hojivÃ© sÃ­ly"						);
+					Doc_PrintLine	( nDocID,  0, "2 lÃ©ÄivÃ© koÃ¢eny"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
@@ -108,13 +108,13 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Alchymista ke své práci vdy potâebuje laboratorní lahvièku, do které pak nalije hotovı lektvar."	); 
+					Doc_PrintLines	( nDocID,  1, "Alchymista ke svÃ© prÃ¡ci vÅ¾dy potÃ¢ebuje laboratornÃ­ lahviÄku, do kterÃ© pak nalije hotovÃ½ lektvar."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "K namíchání léèivého lektvaru nebo elixíru posilujícího magickou moc potâebuješ zvláštní pâísadu a rostlinu:"			);
-					Doc_PrintLine	( nDocID,  1, "Luèní pohanka"		);
+					Doc_PrintLines	( nDocID,  1, "K namÃ­chÃ¡nÃ­ lÃ©ÄivÃ©ho lektvaru nebo elixÃ­ru posilujÃ­cÃ­ho magickou moc potÃ¢ebujeÅ¡ zvlÃ¡Å¡tnÃ­ pÃ¢Ã­sadu a rostlinu:"			);
+					Doc_PrintLine	( nDocID,  1, "LuÄnÃ­ pohanka"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "K namíchání lektvarù trvale mênících nêkterou z duševních èi têlesnıch vlastností potâebuješ urèitou rostlinu:"						);
-					Doc_PrintLines	( nDocID,  1, "Královskı šãovík"		);
+					Doc_PrintLines	( nDocID,  1, "K namÃ­chÃ¡nÃ­ lektvarÅ¯ trvale mÄ™nÃ­cÃ­ch nÄ™kterou z duÅ¡evnÃ­ch Äi tÄ™lesnÃ½ch vlastnostÃ­ potÃ¢ebujeÅ¡ urÄitou rostlinu:"						);
+					Doc_PrintLines	( nDocID,  1, "KrÃ¡lovskÃ½ Å¡ÄƒovÃ­k"		);
 					Doc_Show		( nDocID );
 					
 					if (ALchemy_2_permanent == FALSE)
@@ -126,7 +126,7 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY3_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -144,32 +144,32 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Lektvary pro trvalé zmêny");
-					Doc_PrintLine	( nDocID,  0, "a pâísady"						);
+					Doc_PrintLines	( nDocID,  0, "Lektvary pro trvalÃ© zmÄ™ny");
+					Doc_PrintLine	( nDocID,  0, "a pÃ¢Ã­sady"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Elixír obratnosti"						);
-					Doc_PrintLine	( nDocID,  0, "1 gobliní bobule"						);
+					Doc_PrintLine	( nDocID,  0, "ElixÃ­r obratnosti"						);
+					Doc_PrintLine	( nDocID,  0, "1 goblinÃ­ bobule"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Lektvar rychlosti"						);
-					Doc_PrintLines	( nDocID,  0, "1 chàapavèí bılí - k vırobê tohoto lektvaru nepotâebuješ královskı šãovík, nıbr luèní pohanku."						);
+					Doc_PrintLines	( nDocID,  0, "1 chÅ•apavÄÃ­ bÃ½lÃ­ - k vÃ½robÄ™ tohoto lektvaru nepotÃ¢ebujeÅ¡ krÃ¡lovskÃ½ Å¡ÄƒovÃ­k, nÃ½brÅ¾ luÄnÃ­ pohanku."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Elixír síly"						);
-					Doc_PrintLine	( nDocID,  0, "1 draèí koâen"						);
+					Doc_PrintLine	( nDocID,  0, "ElixÃ­r sÃ­ly"						);
+					Doc_PrintLine	( nDocID,  0, "1 draÄÃ­ koÃ¢en"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Elixír ivota"						);
-					Doc_PrintLine	( nDocID,  0, "1 léèivı koâen"						);
+					Doc_PrintLines	( nDocID,  0, "ElixÃ­r Å¾ivota"						);
+					Doc_PrintLine	( nDocID,  0, "1 lÃ©ÄivÃ½ koÃ¢en"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Elixír ducha"						);
-					Doc_PrintLine	( nDocID,  0, "1 ohnivı koâen"						);
+					Doc_PrintLines	( nDocID,  0, "ElixÃ­r ducha"						);
+					Doc_PrintLine	( nDocID,  0, "1 ohnivÃ½ koÃ¢en"						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Tyto lektvary mùe namíchat jen skuteènı mistr alchymie. Jednou z pâísad do têchto vzácnıch elixírù bıvá obvykle královskı šãovík."); 
+					Doc_PrintLines	( nDocID,  1, "Tyto lektvary mÅ¯Å¾e namÃ­chat jen skuteÄnÃ½ mistr alchymie. Jednou z pÃ¢Ã­sad do tÄ™chto vzÃ¡cnÃ½ch elixÃ­rÅ¯ bÃ½vÃ¡ obvykle krÃ¡lovskÃ½ Å¡ÄƒovÃ­k."); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Lektvar rychlosti namícháš mnohem snáze, zvláštê proto, e k jeho vytvoâení nepotâebuješ královskı šãovík."						);
+					Doc_PrintLines	( nDocID,  1, "Lektvar rychlosti namÃ­chÃ¡Å¡ mnohem snÃ¡ze, zvlÃ¡Å¡tÄ™ proto, Å¾e k jeho vytvoÃ¢enÃ­ nepotÃ¢ebujeÅ¡ krÃ¡lovskÃ½ Å¡ÄƒovÃ­k."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					
 					

@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_7_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //Poslední dobou je to tu èím dál tím nebezpeènêjší. A polní škùdci se stali opravdovou pohromou.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //PoslednÃ­ dobou je to tu ÄÃ­m dÃ¡l tÃ­m nebezpeÄnÄ™jÅ¡Ã­. A polnÃ­ Å¡kÅ¯dci se stali opravdovou pohromou.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Musíme mêstu zaplatit danê. Kdy to neudêláme, budeme mít poâádné problémy s paladiny.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //MusÃ­me mÄ™stu zaplatit danÄ™. KdyÅ¾ to neudÄ™lÃ¡me, budeme mÃ­t poÃ¢Ã¡dnÃ© problÃ©my s paladiny.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //Onarova vzpoura bude mít váné následky. Radêji bych se do toho nepletl.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //Onarova vzpoura bude mÃ­t vÃ¡Å¾nÃ© nÃ¡sledky. RadÄ™ji bych se do toho nepletl.
 	};
 	
 	AI_StopProcessInfos	(self);

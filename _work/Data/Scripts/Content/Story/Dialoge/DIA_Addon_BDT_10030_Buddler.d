@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10030_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10030_Buddler_Hi_Condition;
 	information = DIA_Addon_10030_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "Jsi v poâádku?";
+	description = "Jsi v poÃ¢Ã¡dku?";
 };
 FUNC INT DIA_Addon_10030_Buddler_Hi_Condition()
 {	
@@ -36,16 +36,16 @@ FUNC INT DIA_Addon_10030_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10030_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00");//Jsi v poâádku?
+	AI_Output (other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00");//Jsi v poÃ¢Ã¡dku?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Otroci nám z cesty odstraàujou velký kusy.
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(šklebí se) A my tak mùžem mnohem líp sklízet zlatý ovoce.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Otroci nÃ¡m z cesty odstraÅ•ujou velkÃ½ kusy.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(Å¡klebÃ­ se) A my tak mÅ¯Å¾em mnohem lÃ­p sklÃ­zet zlatÃ½ ovoce.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03");//A teë si posbíráme svý zlatý štêstí.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03");//A teÃ« si posbÃ­rÃ¡me svÃ½ zlatÃ½ Å¡tÄ™stÃ­.
 		AI_StopProcessInfos(self);
 	};
 };

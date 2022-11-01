@@ -40,12 +40,12 @@ func int DIA_Bosper_HALLO_Condition ()
 };
 func void DIA_Bosper_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Bosper_HALLO_11_00"); //Vítej v mém obchodê, cizinèe.
-	AI_Output (self, other, "DIA_Bosper_HALLO_11_01"); //Jmenuji se Bosper. Vyrábím luky a obchoduji s koešinami.
-	AI_Output (self, other, "DIA_Bosper_HALLO_11_02"); //Co tê pâivádí do Khorinidu?
+	AI_Output (self, other, "DIA_Bosper_HALLO_11_00"); //VÃ­tej v mÃ©m obchodÄ™, cizinÄe.
+	AI_Output (self, other, "DIA_Bosper_HALLO_11_01"); //Jmenuji se Bosper. VyrÃ¡bÃ­m luky a obchoduji s koÅ¾eÅ¡inami.
+	AI_Output (self, other, "DIA_Bosper_HALLO_11_02"); //Co tÄ™ pÃ¢ivÃ¡dÃ­ do Khorinidu?
 	
 	Log_CreateTopic	(TOPIC_CityTrader,LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader,"Bosper vyrábí luky a obchoduje s kùemi. Jeho obchod najdu v dolní èásti mêsta, u vıchodní brány.");
+	B_LogEntry (TOPIC_CityTrader,"Bosper vyrÃ¡bÃ­ luky a obchoduje s kÅ¯Å¾emi. Jeho obchod najdu v dolnÃ­ ÄÃ¡sti mÄ™sta, u vÃ½chodnÃ­ brÃ¡ny.");
 };
 
 // ***********************************************************
@@ -58,7 +58,7 @@ instance DIA_Bosper_IntoOV		(C_INFO)
 	condition	= DIA_Bosper_IntoOV_Condition;
 	information = DIA_Bosper_IntoOV_Info;
 	permanent   = FALSE;
-	description = "Musím se dostat do horní ètvrti...";
+	description = "MusÃ­m se dostat do hornÃ­ Ätvrti...";
 };
 func int DIA_Bosper_IntoOV_Condition ()
 {	
@@ -70,10 +70,10 @@ func int DIA_Bosper_IntoOV_Condition ()
 };
 func void DIA_Bosper_IntoOV_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_IntoOV_15_00"); //Musím se dostat do horní ètvrti.
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_01"); //Tam, kde sídlí paladinové? Tak na to rovnou zapomeà.
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_02"); //Nejdâív se musíš stát ctihodnım mêšãanem, nebo si aspoà najít slušné zamêstnání.
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_03"); //Jako cizinec se tam rozhodnê dostat nemùeš.
+	AI_Output (other, self, "DIA_Bosper_IntoOV_15_00"); //MusÃ­m se dostat do hornÃ­ Ätvrti.
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_01"); //Tam, kde sÃ­dlÃ­ paladinovÃ©? Tak na to rovnou zapomeÅ•.
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_02"); //NejdÃ¢Ã­v se musÃ­Å¡ stÃ¡t ctihodnÃ½m mÄ™Å¡Äƒanem, nebo si aspoÅ• najÃ­t sluÅ¡nÃ© zamÄ™stnÃ¡nÃ­.
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_03"); //Jako cizinec se tam rozhodnÄ™ dostat nemÅ¯Å¾eÅ¡.
 	if (Torwache_305.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
 		AI_Output (other, self, "DIA_Bosper_IntoOV_15_04"); //To jsem taky zjistil.
@@ -81,7 +81,7 @@ func void DIA_Bosper_IntoOV_Info ()
 
 	Log_CreateTopic (TOPIC_OV,LOG_MISSION);
 	Log_SetTopicStatus	(TOPIC_OV,LOG_RUNNING);
-	B_LogEntry (TOPIC_OV,"Pokud se chci dostat do horní ètvrti, musím se stát buëto váenım obèanem, nebo si najít práci.");
+	B_LogEntry (TOPIC_OV,"Pokud se chci dostat do hornÃ­ Ätvrti, musÃ­m se stÃ¡t buÃ«to vÃ¡Å¾enÃ½m obÄanem, nebo si najÃ­t prÃ¡ci.");
 };
 
 // ***********************************************************
@@ -94,7 +94,7 @@ instance DIA_Bosper_SeekWork		(C_INFO)
 	condition	= DIA_Bosper_SeekWork_Condition;
 	information = DIA_Bosper_SeekWork_Info;
 	permanent   = FALSE;
-	description = "Hledám práci.";
+	description = "HledÃ¡m prÃ¡ci.";
 };
 func int DIA_Bosper_SeekWork_Condition ()
 {	
@@ -102,23 +102,23 @@ func int DIA_Bosper_SeekWork_Condition ()
 };
 func void DIA_Bosper_SeekWork_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_SeekWork_15_00"); //Hledám práci!
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_01"); //Hmm - novı uèedník by se mi hodil.
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_02"); //Ten poslední to vzdal zrovna pâedevèírem.
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_03"); //Víš aspoà nêco o lovu?
+	AI_Output (other, self, "DIA_Bosper_SeekWork_15_00"); //HledÃ¡m prÃ¡ci!
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_01"); //Hmm - novÃ½ uÄednÃ­k by se mi hodil.
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_02"); //Ten poslednÃ­ to vzdal zrovna pÃ¢edevÄÃ­rem.
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_03"); //VÃ­Å¡ aspoÅ• nÄ™co o lovu?
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
 		AI_Output (other, self, "DIA_Bosper_SeekWork_15_04"); //Noooo...
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_05"); //Mùu tê nauèit, jak stahovat zvíâata.
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_06"); //Za kadou kùi, kterou mi pâineseš, ti dobâe zaplatím.
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_05"); //MÅ¯Å¾u tÄ™ nauÄit, jak stahovat zvÃ­Ã¢ata.
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_06"); //Za kaÅ¾dou kÅ¯Å¾i, kterou mi pÃ¢ineseÅ¡, ti dobÃ¢e zaplatÃ­m.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Bosper_SeekWork_15_07"); //Mùu ti dát pár kùí, jestli o nê máš zájem.
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_08"); //Vıbornê! Pâines mi tolik zvíâecích kùi, kolik mùeš - koupím je od tebe za dobrou cenu.
+		AI_Output (other, self, "DIA_Bosper_SeekWork_15_07"); //MÅ¯Å¾u ti dÃ¡t pÃ¡r kÅ¯Å¾Ã­, jestli o nÄ™ mÃ¡Å¡ zÃ¡jem.
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_08"); //VÃ½bornÄ™! PÃ¢ines mi tolik zvÃ­Ã¢ecÃ­ch kÅ¯Å¾i, kolik mÅ¯Å¾eÅ¡ - koupÃ­m je od tebe za dobrou cenu.
 	};
 	
-  B_LogEntry (TOPIC_Lehrling,"Bosper hledá nového uèedníka - mohl bych u nêj zaèít pracovat.");	
+  B_LogEntry (TOPIC_Lehrling,"Bosper hledÃ¡ novÃ©ho uÄednÃ­ka - mohl bych u nÄ™j zaÄÃ­t pracovat.");	
  
 };
 
@@ -137,7 +137,7 @@ instance DIA_Bosper_LEHRLING		(C_INFO)
 	condition	= DIA_Bosper_LEHRLING_Condition;
 	information = DIA_Bosper_LEHRLING_Info;
 	permanent   = TRUE;
-	description = "Chci se stát tvım uèedníkem!";
+	description = "Chci se stÃ¡t tvÃ½m uÄednÃ­kem!";
 };
 func int DIA_Bosper_LEHRLING_Condition ()
 {	
@@ -152,12 +152,12 @@ func void DIA_Bosper_LEHRLING_Info ()
 	var int stimmen;
 	stimmen = 0;
 	
-	AI_Output (other, self, "DIA_Bosper_LEHRLING_15_00"); //Chci se stát tvım uèedníkem!
+	AI_Output (other, self, "DIA_Bosper_LEHRLING_15_00"); //Chci se stÃ¡t tvÃ½m uÄednÃ­kem!
 
 	if (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	{
 		// ------ Bosper ------
-		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_01"); //(zakâení se) Skvêlé! Âekl bych, e základy u máš.
+		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_01"); //(zakÃ¢enÃ­ se) SkvÄ™lÃ©! Ã‚ekl bych, Å¾e zÃ¡klady uÅ¾ mÃ¡Å¡.
 		stimmen = stimmen + 1;
 		
 		// ------ Harad ------
@@ -166,17 +166,17 @@ func void DIA_Bosper_LEHRLING_Info ()
 			if (MIS_Harad_Orc == LOG_SUCCESS)
 			|| (MIS_HakonBandits == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_02"); //Harad si myslí, e jsi dobrı èlovêk.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_02"); //Harad si myslÃ­, Å¾e jsi dobrÃ½ ÄlovÄ™k.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_03"); //Ale Harad není o tvıch schopnostech zrovna pâesvêdèen.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_03"); //Ale Harad nenÃ­ o tvÃ½ch schopnostech zrovna pÃ¢esvÄ™dÄen.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_04"); //Ale Harad tê prı ještê vùbec nevidêl.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_04"); //Ale Harad tÄ™ prÃ½ jeÅ¡tÄ™ vÅ¯bec nevidÄ™l.
 		};
 		
 		// ------ Thorben ------
@@ -184,17 +184,17 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (MIS_Thorben_GetBlessings == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_05"); //Thorben ti dal svùj hlas. Já sice nejsem tak pobonı, ale váím si toho.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_05"); //Thorben ti dal svÅ¯j hlas. JÃ¡ sice nejsem tak poboÅ¾nÃ½, ale vÃ¡Å¾Ã­m si toho.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_06"); //Thorben ti dá svolení jen tehdy, pokud si vyprosíš poehnání do bohù.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_06"); //Thorben ti dÃ¡ svolenÃ­ jen tehdy, pokud si vyprosÃ­Å¡ poÅ¾ehnÃ¡nÃ­ do bohÅ¯.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_07"); //Thorben nemá ponêtí, kdo jsi.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_07"); //Thorben nemÃ¡ ponÄ™tÃ­, kdo jsi.
 		};
 		
 		// ------ Constantino ------
@@ -202,18 +202,18 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (B_GetGreatestPetzCrime (self) == CRIME_NONE)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_08"); //Constantino prohlašuje, e se mùeš zapsat, u koho chceš.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_08"); //Constantino prohlaÅ¡uje, Å¾e se mÅ¯Å¾eÅ¡ zapsat, u koho chceÅ¡.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_09"); //Constantino prohlašuje, es byl obvinên ze zloèinu - doufám, e šlo jen o nêjakou banalitu.
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_10"); //Sna se to co nejdâív urovnat.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_09"); //Constantino prohlaÅ¡uje, Å¾es byl obvinÄ™n ze zloÄinu - doufÃ¡m, Å¾e Å¡lo jen o nÄ™jakou banalitu.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_10"); //SnaÅ¾ se to co nejdÃ¢Ã­v urovnat.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_11"); //Constantino o tobê ještê ani neslyšel.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_11"); //Constantino o tobÄ™ jeÅ¡tÄ™ ani neslyÅ¡el.
 		};
 				
 		// ------ Matteo ------
@@ -221,21 +221,21 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (MIS_Matteo_Gold == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_12"); //A Matteo se nechal slyšet, e by tê mêli vyvaovat zlatem.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_12"); //A Matteo se nechal slyÅ¡et, Å¾e by tÄ™ mÄ™li vyvaÅ¾ovat zlatem.
 				stimmen = stimmen + 1;
 			}
 			else if (MIS_Matteo_Gold == LOG_RUNNING)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_13"); //A Matteo se zmínil o nêjaké pùjèce - aã u tím myslel cokoliv, mêl by sis s ním radši promluvit.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_13"); //A Matteo se zmÃ­nil o nÄ™jakÃ© pÅ¯jÄce - aÄƒ uÅ¾ tÃ­m myslel cokoliv, mÄ™l by sis s nÃ­m radÅ¡i promluvit.
 			}
 			else	
 			{	
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_14"); //Matteo tvrdí, e s tebou o téhle vêci zatím nemluvil.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_14"); //Matteo tvrdÃ­, Å¾e s tebou o tÃ©hle vÄ™ci zatÃ­m nemluvil.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_15"); //Matteo tvrdí, e tê nikdy v ivotê nevidêl.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_15"); //Matteo tvrdÃ­, Å¾e tÄ™ nikdy v Å¾ivotÄ™ nevidÄ™l.
 		};		
 
 		// ------ AUSWERTUNG ------
@@ -243,32 +243,32 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (stimmen == 5)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_16"); //To znamená, es získal doporuèení ode všech mistrù!
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_16"); //To znamenÃ¡, Å¾es zÃ­skal doporuÄenÃ­ ode vÅ¡ech mistrÅ¯!
 			}
 			else // == 4
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_17"); //Nyní tê doporuèují ètyâi mistâi - to postaèí, abys mohl k nêkomu vstoupit do uèení.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_17"); //NynÃ­ tÄ™ doporuÄujÃ­ ÄtyÃ¢i mistÃ¢i - to postaÄÃ­, abys mohl k nÄ™komu vstoupit do uÄenÃ­.
 			};
 			
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_18"); //Mùeš pro mê zaèít pracovat, kdykoliv budeš chtít.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_18"); //MÅ¯Å¾eÅ¡ pro mÄ™ zaÄÃ­t pracovat, kdykoliv budeÅ¡ chtÃ­t.
 			
 			Info_ClearChoices (DIA_Bosper_LEHRLING);
-			Info_AddChoice (DIA_Bosper_LEHRLING, "Dobâe - rozmyslím si to.", DIA_Bosper_LEHRLING_Later);
+			Info_AddChoice (DIA_Bosper_LEHRLING, "DobÃ¢e - rozmyslÃ­m si to.", DIA_Bosper_LEHRLING_Later);
 			Info_AddChoice (DIA_Bosper_LEHRLING, "Jdu do toho!", DIA_Bosper_LEHRLING_OK);
 		}
 		else // stimmen < 4
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_19"); //Chceš-li k nêkomu v dolní èásti mêsta vstoupit do uèení, potâebuješ souhlas alespoà ètyâ mistrù.
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_20"); //Take by sis mêl promluvit se všemi, kteâí ti zatím souhlas nedali.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_19"); //ChceÅ¡-li k nÄ™komu v dolnÃ­ ÄÃ¡sti mÄ™sta vstoupit do uÄenÃ­, potÃ¢ebujeÅ¡ souhlas alespoÅ• ÄtyÃ¢ mistrÅ¯.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_20"); //TakÅ¾e by sis mÄ™l promluvit se vÅ¡emi, kteÃ¢Ã­ ti zatÃ­m souhlas nedali.
 		};
 	}
 	else //keine WolfFurs
 	{
-		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_21"); //Ještê ne tê pâijmu, musím samozâejmê vêdêt, jestli jsi aspoà k nêèemu dobrı.
+		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_21"); //JeÅ¡tÄ™ neÅ¾ tÄ™ pÃ¢ijmu, musÃ­m samozÃ¢ejmÄ™ vÄ™dÄ™t, jestli jsi aspoÅ• k nÄ™Äemu dobrÃ½.
 		
 		if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_LEHRLING_11_22"); //Vrátil jsi mi mùj luk, ale to o tvém loveckém talentu moc nevypovídá.
+			AI_Output (self, other, "DIA_Bosper_LEHRLING_11_22"); //VrÃ¡til jsi mi mÅ¯j luk, ale to o tvÃ©m loveckÃ©m talentu moc nevypovÃ­dÃ¡.
 		};
 		Bosper_HintToJob = TRUE;
 	};	
@@ -277,7 +277,7 @@ func void DIA_Bosper_LEHRLING_Info ()
 func void DIA_Bosper_LEHRLING_OK()
 {
 	AI_Output (other, self, "DIA_Bosper_LEHRLING_OK_15_00"); //Jdu do toho!
-	AI_Output (self, other, "DIA_Bosper_LEHRLING_OK_11_01"); //Nebudeš toho litovat! Myslím, e se nám bude dobâe spolupracovat.
+	AI_Output (self, other, "DIA_Bosper_LEHRLING_OK_11_01"); //NebudeÅ¡ toho litovat! MyslÃ­m, Å¾e se nÃ¡m bude dobÃ¢e spolupracovat.
 	
 	Player_IsApprentice = APP_BOSPER;
 	Npc_ExchangeRoutine (Lothar, "START");
@@ -288,15 +288,15 @@ func void DIA_Bosper_LEHRLING_OK()
 	Wld_AssignRoomToGuild ("gritta", GIL_NONE);	// = Bospers Ladem
 	MIS_Apprentice = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Lehrling);
-	B_LogEntry (Topic_Bonus,"Bosper mê pâijal za uèedníka. Nyní mám pâístup do horní ètvrti.");
+	B_LogEntry (Topic_Bonus,"Bosper mÄ™ pÃ¢ijal za uÄednÃ­ka. NynÃ­ mÃ¡m pÃ¢Ã­stup do hornÃ­ Ätvrti.");
 	
 	Info_ClearChoices (DIA_Bosper_LEHRLING);
 };
 
 func void DIA_Bosper_LEHRLING_Later()
 {
-	AI_Output (other, self, "DIA_Bosper_LEHRLING_Later_15_00"); //Dobâe - rozmyslím si to.
-	AI_Output (self, other, "DIA_Bosper_LEHRLING_Later_11_01"); //Jen se nerozhodni špatnê! Byl bys pro mê úplnê ideální.
+	AI_Output (other, self, "DIA_Bosper_LEHRLING_Later_15_00"); //DobÃ¢e - rozmyslÃ­m si to.
+	AI_Output (self, other, "DIA_Bosper_LEHRLING_Later_11_01"); //Jen se nerozhodni Å¡patnÄ™! Byl bys pro mÄ™ ÃºplnÄ™ ideÃ¡lnÃ­.
 	
 	Info_ClearChoices (DIA_Bosper_LEHRLING);
 };
@@ -312,7 +312,7 @@ instance DIA_Bosper_OtherMasters (C_INFO)
 	condition	= DIA_Bosper_OtherMasters_Condition;
 	information = DIA_Bosper_OtherMasters_Info;
 	permanent   = FALSE;
-	description = "Co kdy se budu chtít zapsat u nêkterého z ostatních mistrù?";
+	description = "Co kdyÅ¾ se budu chtÃ­t zapsat u nÄ™kterÃ©ho z ostatnÃ­ch mistrÅ¯?";
 };
 func int DIA_Bosper_OtherMasters_Condition ()
 {	
@@ -324,13 +324,13 @@ func int DIA_Bosper_OtherMasters_Condition ()
 };
 func void DIA_Bosper_OtherMasters_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_OtherMasters_15_00"); //Co kdy se budu chtít zapsat u nêkterého z ostatních mistrù?
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_01"); //(mrzutê) Nesmysl!
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_02"); //Harad a Matteo u uèedníky mají.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_03"); //Alchymista Constantino je starı samotáâ - ten ádného uèedníka nepâijal u celé roky.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_04"); //A co se tıèe Thorbena, tak o nêm kadı ví, e je úplnê švorc - nejspíš by ti nemohl zaplatit ani mêëák.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_05"); //Ovšem já velmi nutnê potâebuji uèedníka - a taky dobâe platím.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_06"); //Ale aã u se chceš zapsat u kohokoliv, budeš k tomu potâebovat souhlas všech ostatních mistrù z dolní èásti mêsta.
+	AI_Output (other, self, "DIA_Bosper_OtherMasters_15_00"); //Co kdyÅ¾ se budu chtÃ­t zapsat u nÄ™kterÃ©ho z ostatnÃ­ch mistrÅ¯?
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_01"); //(mrzutÄ™) Nesmysl!
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_02"); //Harad a Matteo uÅ¾ uÄednÃ­ky majÃ­.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_03"); //Alchymista Constantino je starÃ½ samotÃ¡Ã¢ - ten Å¾Ã¡dnÃ©ho uÄednÃ­ka nepÃ¢ijal uÅ¾ celÃ© roky.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_04"); //A co se tÃ½Äe Thorbena, tak o nÄ™m kaÅ¾dÃ½ vÃ­, Å¾e je ÃºplnÄ™ Å¡vorc - nejspÃ­Å¡ by ti nemohl zaplatit ani mÄ™Ã«Ã¡k.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_05"); //OvÅ¡em jÃ¡ velmi nutnÄ™ potÃ¢ebuji uÄednÃ­ka - a taky dobÃ¢e platÃ­m.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_06"); //Ale aÄƒ uÅ¾ se chceÅ¡ zapsat u kohokoliv, budeÅ¡ k tomu potÃ¢ebovat souhlas vÅ¡ech ostatnÃ­ch mistrÅ¯ z dolnÃ­ ÄÃ¡sti mÄ™sta.
 	
 	
 	
@@ -346,7 +346,7 @@ instance DIA_Bosper_Bartok (C_INFO)
 	condition	= DIA_Bosper_Bartok_Condition;
 	information = DIA_Bosper_Bartok_Info;
 	permanent   = FALSE;
-	description = "Proè to tvùj minulı uèedník vzdal?";
+	description = "ProÄ to tvÅ¯j minulÃ½ uÄednÃ­k vzdal?";
 };
 func int DIA_Bosper_Bartok_Condition ()
 {	
@@ -357,11 +357,11 @@ func int DIA_Bosper_Bartok_Condition ()
 };
 func void DIA_Bosper_Bartok_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Bartok_15_00"); //Proè to tvùj minulı uèedník vzdal?
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_01"); //Nechal se slyšet, e je tu poslední dobou pâíliš nebezpeèno.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_02"); //Jestli tê to ale opravdu zajímá, mùeš se ho zeptat sám.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_03"); //Jmenuje se Bartok a nejspíš se bude potloukat kolem Coragonovy krèmy.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_04"); //Kdy z kovárny vyjdeš podchodem, ocitneš se skoro pâímo pâed hospodou.
+	AI_Output (other, self, "DIA_Bosper_Bartok_15_00"); //ProÄ to tvÅ¯j minulÃ½ uÄednÃ­k vzdal?
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_01"); //Nechal se slyÅ¡et, Å¾e je tu poslednÃ­ dobou pÃ¢Ã­liÅ¡ nebezpeÄno.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_02"); //Jestli tÄ™ to ale opravdu zajÃ­mÃ¡, mÅ¯Å¾eÅ¡ se ho zeptat sÃ¡m.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_03"); //Jmenuje se Bartok a nejspÃ­Å¡ se bude potloukat kolem Coragonovy krÄmy.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_04"); //KdyÅ¾ z kovÃ¡rny vyjdeÅ¡ podchodem, ocitneÅ¡ se skoro pÃ¢Ã­mo pÃ¢ed hospodou.
 };
 
 // ***********************************************************
@@ -375,7 +375,7 @@ instance DIA_Bosper_ZUSTIMMUNG (C_INFO)
 	condition	= DIA_Bosper_ZUSTIMMUNG_Condition;
 	information = DIA_Bosper_ZUSTIMMUNG_Info;
 	permanent   = TRUE;
-	description = "Dáš mi svùj souhlas, abych se mohl zapsat u jiného mistra?";
+	description = "DÃ¡Å¡ mi svÅ¯j souhlas, abych se mohl zapsat u jinÃ©ho mistra?";
 };
 func int DIA_Bosper_ZUSTIMMUNG_Condition ()
 {	
@@ -390,36 +390,36 @@ var int Bosper_Zustimmung_Once;
 
 func void DIA_Bosper_ZUSTIMMUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_00"); //Dáš mi svùj souhlas, abych se mohl zapsat u jiného mistra?
+	AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_00"); //DÃ¡Å¡ mi svÅ¯j souhlas, abych se mohl zapsat u jinÃ©ho mistra?
 	if (MIS_Bosper_Bogen == LOG_SUCCESS)
 	|| (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_01"); //(zklamanê) Doufal jsem, e se rozhodneš pro mê.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_02"); //Ale kdy to chceš takhle...
-		AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_03"); //Tím mi chceš naznaèit, e mê nedoporuèíš?
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_04"); //Kdy ostatní mistâi nebudou proti, pak ano.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_01"); //(zklamanÄ™) Doufal jsem, Å¾e se rozhodneÅ¡ pro mÄ™.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_02"); //Ale kdyÅ¾ to chceÅ¡ takhle...
+		AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_03"); //TÃ­m mi chceÅ¡ naznaÄit, Å¾e mÄ™ nedoporuÄÃ­Å¡?
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_04"); //KdyÅ¾ ostatnÃ­ mistÃ¢i nebudou proti, pak ano.
 		if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_05"); //Kdy u nic jiného, aspoà jsi mi vrátil luk.
+			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_05"); //KdyÅ¾ uÅ¾ nic jinÃ©ho, aspoÅ• jsi mi vrÃ¡til luk.
 		};
 		if (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_06"); //Ale urèitê by z tebe byl dobrı lovec.
+			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_06"); //Ale urÄitÄ™ by z tebe byl dobrÃ½ lovec.
 		};
 		if Bosper_Zustimmung_Once == FALSE
 		{
 			B_GivePlayerXP (XP_Zustimmung);
 			Bosper_Zustimmung_Once = TRUE;
 		};	
-		B_LogEntry (Topic_Lehrling,"Bosper mi dá doporuèení, kdy se budu chtít stát uèedníkem u nêkoho jiného.");
+		B_LogEntry (Topic_Lehrling,"Bosper mi dÃ¡ doporuÄenÃ­, kdyÅ¾ se budu chtÃ­t stÃ¡t uÄednÃ­kem u nÄ™koho jinÃ©ho.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_07"); //(povzdychne si) No dobâe! Pâimluvím se za tebe - ale s jednou podmínkou.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_08"); //Pracuj pro mê, alespoà chvíli.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_09"); //Tak zjistíš, jestli se ti moje âemeslo zamlouvá, nebo ne.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_10"); //A kdo ví - moná se ti zalíbí natolik, e zùstaneš u mê.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_11"); //A kdy jsi dost dobrı, abych tê pâijal JÁ, urèitê si povedeš dobâe i u ostatních.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_07"); //(povzdychne si) No dobÃ¢e! PÃ¢imluvÃ­m se za tebe - ale s jednou podmÃ­nkou.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_08"); //Pracuj pro mÄ™, alespoÅ• chvÃ­li.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_09"); //Tak zjistÃ­Å¡, jestli se ti moje Ã¢emeslo zamlouvÃ¡, nebo ne.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_10"); //A kdo vÃ­ - moÅ¾nÃ¡ se ti zalÃ­bÃ­ natolik, Å¾e zÅ¯staneÅ¡ u mÄ™.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_11"); //A kdyÅ¾ jsi dost dobrÃ½, abych tÄ™ pÃ¢ijal JÃ, urÄitÄ™ si povedeÅ¡ dobÃ¢e i u ostatnÃ­ch.
 		Bosper_HintToJob = TRUE;
 	};	
 };
@@ -434,7 +434,7 @@ instance DIA_Bosper_Job (C_INFO)
 	condition	= DIA_Bosper_Job_Condition;
 	information = DIA_Bosper_Job_Info;
 	permanent   = FALSE;
-	description = "Co mám pro tebe udêlat?";
+	description = "Co mÃ¡m pro tebe udÄ™lat?";
 };
 func int DIA_Bosper_Job_Condition ()
 {	
@@ -445,36 +445,36 @@ func int DIA_Bosper_Job_Condition ()
 };
 func void DIA_Bosper_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Job_15_00"); //Co mám pro tebe udêlat?
+	AI_Output (other, self, "DIA_Bosper_Job_15_00"); //Co mÃ¡m pro tebe udÄ™lat?
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_01"); //Nauèím tê, jak stahovat kùi ze zvíâat, a ty mi pak pâineseš, âeknême, pùl tuctu vlèích kùí.
+		AI_Output (self, other, "DIA_Bosper_Job_11_01"); //NauÄÃ­m tÄ™, jak stahovat kÅ¯Å¾i ze zvÃ­Ã¢at, a ty mi pak pÃ¢ineseÅ¡, Ã¢eknÄ™me, pÅ¯l tuctu vlÄÃ­ch kÅ¯Å¾Ã­.
 		
 		Log_CreateTopic (TOPIC_CityTeacher,LOG_NOTE);
-		B_LogEntry	(TOPIC_CityTeacher,"Bosper mê nauèí stahovat zvíâecí kùe.");
+		B_LogEntry	(TOPIC_CityTeacher,"Bosper mÄ™ nauÄÃ­ stahovat zvÃ­Ã¢ecÃ­ kÅ¯Å¾e.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_02"); //Pâines mi pùl tuctu vlèích kùí.
+		AI_Output (self, other, "DIA_Bosper_Job_11_02"); //PÃ¢ines mi pÅ¯l tuctu vlÄÃ­ch kÅ¯Å¾Ã­.
 	};
 	
-	AI_Output (self, other, "DIA_Bosper_Job_11_03"); //Tak poznám, e ses své âemeslo nauèil.
-	AI_Output (self, other, "DIA_Bosper_Job_11_04"); //Pokud ti to nepotrvá vêènost a jestli ty kùe budou ve slušném stavu, pâijmu tê, kdy budeš chtít.
+	AI_Output (self, other, "DIA_Bosper_Job_11_03"); //Tak poznÃ¡m, Å¾e ses svÃ© Ã¢emeslo nauÄil.
+	AI_Output (self, other, "DIA_Bosper_Job_11_04"); //Pokud ti to nepotrvÃ¡ vÄ™Änost a jestli ty kÅ¯Å¾e budou ve sluÅ¡nÃ©m stavu, pÃ¢ijmu tÄ™, kdyÅ¾ budeÅ¡ chtÃ­t.
 	if (Npc_KnowsInfo(other, DIA_Bosper_OtherMasters))
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_05"); //Nebo (povzdech) mùeš zaèít u nêkterého z ostatních mistrù - budeš-li si to opravdu pâát.
+		AI_Output (self, other, "DIA_Bosper_Job_11_05"); //Nebo (povzdech) mÅ¯Å¾eÅ¡ zaÄÃ­t u nÄ™kterÃ©ho z ostatnÃ­ch mistrÅ¯ - budeÅ¡-li si to opravdu pÃ¢Ã¡t.
 	};
 	
 	MIS_Bosper_WolfFurs = LOG_RUNNING;
 	
 	Log_CreateTopic(TOPIC_BosperWolf,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BosperWolf,LOG_RUNNING);
-	B_LogEntry (TOPIC_BosperWolf,"Musím Bosperovi pâinést šest vlèích kùí - pak pro nêj budu moci pracovat, nebo mê doporuèí do uèení u jiného mistra.");
+	B_LogEntry (TOPIC_BosperWolf,"MusÃ­m Bosperovi pÃ¢inÃ©st Å¡est vlÄÃ­ch kÅ¯Å¾Ã­ - pak pro nÄ™j budu moci pracovat, nebo mÄ™ doporuÄÃ­ do uÄenÃ­ u jinÃ©ho mistra.");
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		B_LogEntry (TOPIC_BosperWolf,"Mêl bych ho pâimêt, aby mê nauèil stahovat zvíâecí kùe.");
+		B_LogEntry (TOPIC_BosperWolf,"MÄ™l bych ho pÃ¢imÄ™t, aby mÄ™ nauÄil stahovat zvÃ­Ã¢ecÃ­ kÅ¯Å¾e.");
 	};
 };
 
@@ -488,7 +488,7 @@ instance DIA_Bosper_BringFur (C_INFO)
 	condition	= DIA_Bosper_BringFur_Condition;
 	information = DIA_Bosper_BringFur_Info;
 	permanent   = TRUE;
-	description = "Co se tıèe têch vlèích kùí...";
+	description = "Co se tÃ½Äe tÄ™ch vlÄÃ­ch kÅ¯Å¾Ã­...";
 };
 func int DIA_Bosper_BringFur_Condition ()
 {	
@@ -499,29 +499,29 @@ func int DIA_Bosper_BringFur_Condition ()
 };
 func void DIA_Bosper_BringFur_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_BringFur_15_00"); //Co se tıèe têch vlèích kùí...
+	AI_Output (other, self, "DIA_Bosper_BringFur_15_00"); //Co se tÃ½Äe tÄ™ch vlÄÃ­ch kÅ¯Å¾Ã­...
 	
 	if (Player_IsApprentice > APP_NONE)
 	{
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_01"); //U jsi vstoupil do uèení k jinému mistrovi. Kùe od tebe proto odkoupím za bênou cenu.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_01"); //UÅ¾ jsi vstoupil do uÄenÃ­ k jinÃ©mu mistrovi. KÅ¯Å¾e od tebe proto odkoupÃ­m za bÄ™Å¾nou cenu.
 		MIS_Bosper_WolfFurs = LOG_OBSOLETE;
 		return;
 	};
 	
 	if (B_GiveInvItems (other, self, ItAt_WolfFur, 6))		
 	{
-		AI_Output (other, self, "DIA_Bosper_BringFur_15_02"); //Mám je - tady.
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_03"); //Skvêlé! Já vêdêl, e se pro tuhle práci hodíš!
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_04"); //Tady máš peníze, jak jsem ti slíbil.
+		AI_Output (other, self, "DIA_Bosper_BringFur_15_02"); //MÃ¡m je - tady.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_03"); //SkvÄ™lÃ©! JÃ¡ vÄ™dÄ™l, Å¾e se pro tuhle prÃ¡ci hodÃ­Å¡!
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_04"); //Tady mÃ¡Å¡ penÃ­ze, jak jsem ti slÃ­bil.
 		B_GiveInvItems (self, other, itmi_gold, (Value_WolfFur * 6));
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_05"); //No a? Co si myslíš? Není to lepší práce ne celé dny mlátit do kovadliny nebo se v nevêtraném kutlochu patlat s nêjakımi lahvièkami?
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_05"); //No a? Co si myslÃ­Å¡? NenÃ­ to lepÅ¡Ã­ prÃ¡ce neÅ¾ celÃ© dny mlÃ¡tit do kovadliny nebo se v nevÄ™tranÃ©m kutlochu patlat s nÄ™jakÃ½mi lahviÄkami?
 		
 		MIS_Bosper_WolfFurs = LOG_SUCCESS;
-		B_LogEntry (Topic_Lehrling,"Bosper mê pâijme do uèení, pokud s tím budou souhlasit i ostatní z mistrù.");
+		B_LogEntry (Topic_Lehrling,"Bosper mÄ™ pÃ¢ijme do uÄenÃ­, pokud s tÃ­m budou souhlasit i ostatnÃ­ z mistrÅ¯.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_06"); //Dohodli jsme se na pùltuctu - ještê máš ale èas. Pokraèuj a opatâi mi ty kùe.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_06"); //Dohodli jsme se na pÅ¯ltuctu - jeÅ¡tÄ™ mÃ¡Å¡ ale Äas. PokraÄuj a opatÃ¢i mi ty kÅ¯Å¾e.
 	};
 
 };
@@ -536,7 +536,7 @@ instance DIA_Bosper_TeachFUR (C_INFO)
 	condition	= DIA_Bosper_TeachFUR_Condition;
 	information = DIA_Bosper_TeachFUR_Info;
 	permanent   = TRUE;
-	description = "Vysvêtli mi, jak stahovat zvíâata z kùe!";
+	description = "VysvÄ™tli mi, jak stahovat zvÃ­Ã¢ata z kÅ¯Å¾e!";
 };
 func int DIA_Bosper_TeachFUR_Condition ()
 {	
@@ -548,16 +548,16 @@ func int DIA_Bosper_TeachFUR_Condition ()
 };
 func void DIA_Bosper_TeachFUR_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_TeachFUR_15_00"); //Vysvêtli mi, jak stahovat zvíâata z kùe!
+	AI_Output (other, self, "DIA_Bosper_TeachFUR_15_00"); //VysvÄ™tli mi, jak stahovat zvÃ­Ã¢ata z kÅ¯Å¾e!
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 	{
-		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_01"); //No tak poslouchej, je to jednoduché, opravdu.
-		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_02"); //Staèí vzít ostrı nù a rozâíznout zvíâeti bâicho. Pak po stranách trochu naâízni kùi na nohou a mùeš celou koešinu smêle stáhnout.
+		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_01"); //No tak poslouchej, je to jednoduchÃ©, opravdu.
+		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_02"); //StaÄÃ­ vzÃ­t ostrÃ½ nÅ¯Å¾ a rozÃ¢Ã­znout zvÃ­Ã¢eti bÃ¢icho. Pak po stranÃ¡ch trochu naÃ¢Ã­zni kÅ¯Å¾i na nohou a mÅ¯Å¾eÅ¡ celou koÅ¾eÅ¡inu smÄ™le stÃ¡hnout.
 		if (MIS_Bosper_WolfFurs == LOG_RUNNING)
 		{
-			AI_Output (self, other, "DIA_Bosper_TeachFUR_11_03"); //Pâines mi vlèí kùe a pak se uvidí.
-			B_LogEntry (TOPIC_BosperWolf,"Bosper mê nauèil stahovat zvíâecí kùe.");
+			AI_Output (self, other, "DIA_Bosper_TeachFUR_11_03"); //PÃ¢ines mi vlÄÃ­ kÅ¯Å¾e a pak se uvidÃ­.
+			B_LogEntry (TOPIC_BosperWolf,"Bosper mÄ™ nauÄil stahovat zvÃ­Ã¢ecÃ­ kÅ¯Å¾e.");
 		};
 	};
 };
@@ -572,7 +572,7 @@ instance DIA_Bosper_Trade		(C_INFO)
 	condition	 = 	DIA_Bosper_Trade_Condition;
 	information	 = 	DIA_Bosper_Trade_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Uka mi své zboí.";
+	description	 = 	"UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 };
 func int DIA_Bosper_Trade_Condition ()
 {
@@ -585,7 +585,7 @@ func int DIA_Bosper_Trade_Condition ()
 };
 func void DIA_Bosper_Trade_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Trade_15_00"); //Uka mi své zboí.
+	AI_Output (other, self, "DIA_Bosper_Trade_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 	
 	if (DIA_Bosper_Trade.trade == TRUE)
 	{
@@ -605,13 +605,13 @@ func void DIA_Bosper_Trade_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_Trade_11_01"); //Nejsi tady, aby sis prohlíel moje zboí - máš mi pâece pâinést ty kùe!
-		AI_Output (self, other, "DIA_Bosper_Trade_11_02"); //Tak pokraèuj!
+		AI_Output (self, other, "DIA_Bosper_Trade_11_01"); //Nejsi tady, aby sis prohlÃ­Å¾el moje zboÅ¾Ã­ - mÃ¡Å¡ mi pÃ¢ece pÃ¢inÃ©st ty kÅ¯Å¾e!
+		AI_Output (self, other, "DIA_Bosper_Trade_11_02"); //Tak pokraÄuj!
 	};
 };
 
 // **************************************************************
-// 						Von Bogen gehört
+// 						Von Bogen gehÃ¶rt
 // **************************************************************
 instance DIA_Bosper_BogenRunning (C_INFO)
 {
@@ -620,7 +620,7 @@ instance DIA_Bosper_BogenRunning (C_INFO)
 	condition	 = 	DIA_Bosper_BogenRunning_Condition;
 	information	 = 	DIA_Bosper_BogenRunning_Info;
 	permanent	 = 	FALSE;
-	description	 = "Slyšel jsem, e tê prı nêkdo okradl.";
+	description	 = "SlyÅ¡el jsem, Å¾e tÄ™ prÃ½ nÄ™kdo okradl.";
 };
 func int DIA_Bosper_BogenRunning_Condition ()
 {	
@@ -631,19 +631,19 @@ func int DIA_Bosper_BogenRunning_Condition ()
 };
 func void DIA_Bosper_BogenRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_LukRunning_15_00"); //Slyšel jsem, e tê prı nêkdo okradl.
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_01"); //Kdo ti to âekl? Nejspíš Bartok, e? To ti nemohl povêdêt nic lepšího? No tak jo.
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_02"); //Âeknu ti, aã se ten hajzl modlí, abych ho nedostal do ruky!
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_03"); //Jen na chvilièku jsem odešel z krámu a kdy jsem se vrátil, spatâil jsem jenom, jak utíká - s mım lukem na rameni.
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_04"); //Okamitê jsem zavolal stráe, ale ten lump bêel smêrem k pâístavu. A tam se jim ztratil.
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_05"); //Trochu jsem jim pâipálil koudel u zadku, take prohledali celou pâístavní ètvrã, ale nenašli vùbec nic.
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_06"); //Jsou to prostê mamlasové!
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_07"); //Vsadím se, e mùj luk bude poâád ještê nêkde ve mêstê. Informoval jsem stráné u obou mêstskıch bran, a tak by nikoho s mım lukem ven nepustili.
-	AI_Output (self, other, "DIA_Bosper_LukRunning_11_08"); //Kdybych jen toho šmejda dostal do rukou...
+	AI_Output (other, self, "DIA_Bosper_LukRunning_15_00"); //SlyÅ¡el jsem, Å¾e tÄ™ prÃ½ nÄ™kdo okradl.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_01"); //Kdo ti to Ã¢ekl? NejspÃ­Å¡ Bartok, Å¾e? To ti nemohl povÄ™dÄ™t nic lepÅ¡Ã­ho? No tak jo.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_02"); //Ã‚eknu ti, aÄƒ se ten hajzl modlÃ­, abych ho nedostal do ruky!
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_03"); //Jen na chviliÄku jsem odeÅ¡el z krÃ¡mu a kdyÅ¾ jsem se vrÃ¡til, spatÃ¢il jsem jenom, jak utÃ­kÃ¡ - s mÃ½m lukem na rameni.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_04"); //OkamÅ¾itÄ™ jsem zavolal strÃ¡Å¾e, ale ten lump bÄ™Å¾el smÄ™rem k pÃ¢Ã­stavu. A tam se jim ztratil.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_05"); //Trochu jsem jim pÃ¢ipÃ¡lil koudel u zadku, takÅ¾e prohledali celou pÃ¢Ã­stavnÃ­ ÄtvrÄƒ, ale nenaÅ¡li vÅ¯bec nic.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_06"); //Jsou to prostÄ™ mamlasovÃ©!
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_07"); //VsadÃ­m se, Å¾e mÅ¯j luk bude poÃ¢Ã¡d jeÅ¡tÄ™ nÄ™kde ve mÄ™stÄ™. Informoval jsem strÃ¡Å¾nÃ© u obou mÄ™stskÃ½ch bran, a tak by nikoho s mÃ½m lukem ven nepustili.
+	AI_Output (self, other, "DIA_Bosper_LukRunning_11_08"); //Kdybych jen toho Å¡mejda dostal do rukou...
 
 	Log_CreateTopic (TOPIC_BosperBogen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BosperBogen,LOG_RUNNING);
-	B_LogEntry	(TOPIC_BosperBogen,"Bosperovi nêkdo ukradl luk. Zlodêj uprchl do pâístavu, ale pak nêkam zmizel. Domobrana prohledala celou ètvrã, ale nikdo nic nenašel, i kdy luk musí bıt stále ještê kdesi ve mêstê.");
+	B_LogEntry	(TOPIC_BosperBogen,"Bosperovi nÄ™kdo ukradl luk. ZlodÄ™j uprchl do pÃ¢Ã­stavu, ale pak nÄ™kam zmizel. Domobrana prohledala celou ÄtvrÄƒ, ale nikdo nic nenaÅ¡el, i kdyÅ¾ luk musÃ­ bÃ½t stÃ¡le jeÅ¡tÄ™ kdesi ve mÄ™stÄ™.");
 };
 
 // **************************************************************
@@ -656,7 +656,7 @@ instance DIA_Bosper_BogenSuccess (C_INFO)
 	condition	 = 	DIA_Bosper_BogenSuccess_Condition;
 	information	 = 	DIA_Bosper_BogenSuccess_Info;
 	permanent	 = 	FALSE;
-	description	 = "Mám pocit, e tenhle luk je tvùj.";
+	description	 = "MÃ¡m pocit, Å¾e tenhle luk je tvÅ¯j.";
 };
 func int DIA_Bosper_BogenSuccess_Condition ()
 {	
@@ -667,15 +667,15 @@ func int DIA_Bosper_BogenSuccess_Condition ()
 };
 func void DIA_Bosper_BogenSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_00"); //Mám pocit, e tenhle luk je tvùj.
+	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_00"); //MÃ¡m pocit, Å¾e tenhle luk je tvÅ¯j.
 	
 	B_GiveInvItems (other, self, ItRw_Bow_L_03_MIS,1);
 	
-	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_01"); //Mùj luk! Kdes ho našel?
-	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_02"); //V èerné díâe plné krys.
-	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_03"); //Doufám, es s tím nemêl nêjaké trable.
-	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_04"); //Ne - s takovımi vêcmi u jsem se vypoâádal dâív.
-	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_05"); //Hm, aã je to, jak chce, dêkuji ti. Jsem tvım dluníkem!
+	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_01"); //MÅ¯j luk! Kdes ho naÅ¡el?
+	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_02"); //V ÄernÃ© dÃ­Ã¢e plnÃ© krys.
+	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_03"); //DoufÃ¡m, Å¾es s tÃ­m nemÄ™l nÄ™jakÃ© trable.
+	AI_Output (other, self, "DIA_Bosper_LukSuccess_15_04"); //Ne - s takovÃ½mi vÄ™cmi uÅ¾ jsem se vypoÃ¢Ã¡dal dÃ¢Ã­v.
+	AI_Output (self, other, "DIA_Bosper_LukSuccess_11_05"); //Hm, aÄƒ je to, jak chce, dÄ™kuji ti. Jsem tvÃ½m dluÅ¾nÃ­kem!
 	 
 	MIS_Bosper_Bogen = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Bosper_Bogen);
@@ -696,7 +696,7 @@ instance DIA_Bosper_PERM		(C_INFO)
 	condition	 = 	DIA_Bosper_PERM_Condition;
 	information	 = 	DIA_Bosper_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co novıho ve mêstê?";
+	description	 = 	"Co novÃ½ho ve mÄ™stÄ™?";
 };
 func int DIA_Bosper_PERM_Condition ()
 {
@@ -707,20 +707,20 @@ func int DIA_Bosper_PERM_Condition ()
 };
 func void DIA_Bosper_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_PERM_15_00"); //Co novıho ve mêstê?
+	AI_Output (other, self, "DIA_Bosper_PERM_15_00"); //Co novÃ½ho ve mÄ™stÄ™?
 	
 	if (Bosper_Island == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bosper_PERM_11_01"); //Jestli nás skâeti opravdu obklíèí, zaène to tu bıt velmi nepâíjemné.
-		AI_Output (self, other, "DIA_Bosper_PERM_11_02"); //Jediná loë, která tu kotví, patâí paladinùm, a ti si ji taky poâádnê hlídají. A nemyslím, e by ji pouili na záchranu mêšãanù.
-		AI_Output (other, self, "DIA_Bosper_PERM_15_03"); //Nedá se odsud dostat ještê nêjak jinak?
-		AI_Output (self, other, "DIA_Bosper_PERM_11_04"); //Ne, nikdo z nás odsud bez lodi neunikne.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_01"); //Jestli nÃ¡s skÃ¢eti opravdu obklÃ­ÄÃ­, zaÄne to tu bÃ½t velmi nepÃ¢Ã­jemnÃ©.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_02"); //JedinÃ¡ loÃ«, kterÃ¡ tu kotvÃ­, patÃ¢Ã­ paladinÅ¯m, a ti si ji taky poÃ¢Ã¡dnÄ™ hlÃ­dajÃ­. A nemyslÃ­m, Å¾e by ji pouÅ¾ili na zÃ¡chranu mÄ™Å¡ÄƒanÅ¯.
+		AI_Output (other, self, "DIA_Bosper_PERM_15_03"); //NedÃ¡ se odsud dostat jeÅ¡tÄ™ nÄ™jak jinak?
+		AI_Output (self, other, "DIA_Bosper_PERM_11_04"); //Ne, nikdo z nÃ¡s odsud bez lodi neunikne.
 		
 		Bosper_Island = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Bosper_PERM_11_05"); //Zatím se nic nového nepâihodilo. Stav se pozdêji.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_05"); //ZatÃ­m se nic novÃ©ho nepÃ¢ihodilo. Stav se pozdÄ™ji.
 	};
 };
 
@@ -756,8 +756,8 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_MIL)
 	&& (Bosper_MILKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_00"); //Take ty ses pâidal k domobranê?
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_01"); //Ne e by mi to nêjak vadilo. Kromê skâetù a banditù mùeš vdycky ulovit i pár vlkù (ušklíbne se).
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_00"); //TakÅ¾e ty ses pÃ¢idal k domobranÄ™?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_01"); //Ne Å¾e by mi to nÄ™jak vadilo. KromÄ™ skÃ¢etÅ¯ a banditÅ¯ mÅ¯Å¾eÅ¡ vÅ¾dycky ulovit i pÃ¡r vlkÅ¯ (uÅ¡klÃ­bne se).
 		Bosper_MILKommentar = TRUE;
 	}
 	
@@ -765,8 +765,8 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_PAL)
 	&& (Bosper_PALKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_02"); //Koukám, e tvoje kariéra letí rychle vzhùru, královskı paladine!
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_03"); //Aã u odsud pùjdeš kamkoliv, nezapomeà na svého starého mistra.
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_02"); //KoukÃ¡m, Å¾e tvoje kariÃ©ra letÃ­ rychle vzhÅ¯ru, krÃ¡lovskÃ½ paladine!
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_03"); //AÄƒ uÅ¾ odsud pÅ¯jdeÅ¡ kamkoliv, nezapomeÅ• na svÃ©ho starÃ©ho mistra.
 		Bosper_PALKommentar = TRUE;
 	}
 	
@@ -775,7 +775,7 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_KDF)
 	&& (Bosper_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_04"); //Tak tys vstoupil do kláštera, jo? Doufám, e tê obèas taky pustí ven, abys mê mohl i nadále zásobovat kùemi.
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_04"); //Tak tys vstoupil do klÃ¡Å¡tera, jo? DoufÃ¡m, Å¾e tÄ™ obÄas taky pustÃ­ ven, abys mÄ™ mohl i nadÃ¡le zÃ¡sobovat kÅ¯Å¾emi.
 		Bosper_INNOSKommentar = TRUE;
 	}
 	
@@ -783,14 +783,14 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (other.guild != GIL_PAL)
 	&& (other.guild != GIL_KDF)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_05"); //Kde ses tak dlouho flákal?
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_06"); //Potâebuji další kùe, pâinesls mi je?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_05"); //Kde ses tak dlouho flÃ¡kal?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_06"); //PotÃ¢ebuji dalÅ¡Ã­ kÅ¯Å¾e, pÃ¢inesls mi je?
 		Bosper_Lehrling_Day = Wld_GetDay();
 	}
 	
 	else
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_07"); //Tak tê tu máme zas...
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_07"); //Tak tÄ™ tu mÃ¡me zas...
 		Bosper_Lehrling_Day = Wld_GetDay();
 	};
 };
@@ -805,7 +805,7 @@ instance DIA_Bosper_Aufgaben (C_INFO)
 	condition	= DIA_Bosper_Aufgaben_Condition;
 	information	= DIA_Bosper_Aufgaben_Info;
 	permanent	= FALSE;
-	description	= "Jaké mám jako uèedník povinnosti?";
+	description	= "JakÃ© mÃ¡m jako uÄednÃ­k povinnosti?";
 };
 func int DIA_Bosper_Aufgaben_Condition ()
 {
@@ -816,18 +816,18 @@ func int DIA_Bosper_Aufgaben_Condition ()
 };
 func void DIA_Bosper_Aufgaben_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Aufgaben_15_00"); //Jaké mám jako uèedník povinnosti?
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_01"); //Je to jednoduché - pâines mi co nejvíc koešin.
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_02"); //Zaplatím ti za nê daleko lepší cenu, ne jakou by ti mohli nabídnout ostatní obchodníci.
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_03"); //Kromê toho se nemusíš v obchodê moc ukazovat - zvládnu to klidnê všechno sám.
+	AI_Output (other, self, "DIA_Bosper_Aufgaben_15_00"); //JakÃ© mÃ¡m jako uÄednÃ­k povinnosti?
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_01"); //Je to jednoduchÃ© - pÃ¢ines mi co nejvÃ­c koÅ¾eÅ¡in.
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_02"); //ZaplatÃ­m ti za nÄ™ daleko lepÅ¡Ã­ cenu, neÅ¾ jakou by ti mohli nabÃ­dnout ostatnÃ­ obchodnÃ­ci.
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_03"); //KromÄ™ toho se nemusÃ­Å¡ v obchodÄ™ moc ukazovat - zvlÃ¡dnu to klidnÄ™ vÅ¡echno sÃ¡m.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (other, self, "DIA_Bosper_Aufgaben_15_04"); //A kde mám spát?
-		AI_Output (self, other, "DIA_Bosper_Aufgaben_11_05"); //Bohuel tu pro tebe nemám ádnı volnı pokoj. Ale v hostinci na trišti tê nêkam uloit musí.
+		AI_Output (other, self, "DIA_Bosper_Aufgaben_15_04"); //A kde mÃ¡m spÃ¡t?
+		AI_Output (self, other, "DIA_Bosper_Aufgaben_11_05"); //BohuÅ¾el tu pro tebe nemÃ¡m Å¾Ã¡dnÃ½ volnÃ½ pokoj. Ale v hostinci na trÅ¾iÅ¡ti tÄ™ nÄ™kam uloÅ¾it musÃ­.
 	};
 	
 	Log_CreateTopic (Topic_Bonus,LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Bosper mi za zvíâecí kùe zaplatí velmi pâíznivou cenu.");
+	B_LogEntry (Topic_Bonus,"Bosper mi za zvÃ­Ã¢ecÃ­ kÅ¯Å¾e zaplatÃ­ velmi pÃ¢Ã­znivou cenu.");
 };
 
 // *******************************************************
@@ -844,7 +844,7 @@ instance DIA_Bosper_SellFur (C_INFO)
 	condition	= DIA_Bosper_SellFur_Condition;
 	information	= DIA_Bosper_SellFur_Info;
 	permanent	= TRUE;
-	description	= "Mám tu pro tebe pár kùí.";
+	description	= "MÃ¡m tu pro tebe pÃ¡r kÅ¯Å¾Ã­.";
 };
 func int DIA_Bosper_SellFur_Condition ()
 {
@@ -855,7 +855,7 @@ func int DIA_Bosper_SellFur_Condition ()
 };
 func void DIA_Bosper_SellFur_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_SellFur_15_00"); //Mám tu pro tebe pár kùí.
+	AI_Output (other, self, "DIA_Bosper_SellFur_15_00"); //MÃ¡m tu pro tebe pÃ¡r kÅ¯Å¾Ã­.
 	
 	if (Npc_HasItems(other, ItAt_SheepFur) > 0)
 	|| (Npc_HasItems(other, ItAt_WolfFur) > 0)
@@ -875,8 +875,8 @@ func void DIA_Bosper_SellFur_Info ()
 		
 		if (Npc_HasItems(other, ItAt_SheepFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_01"); //Ovèí kùe? Doufám, es tu ovci nezabil nêjakému sedlákovi na pastvê.
-			AI_Output (other, self, "DIA_Bosper_SellFur_15_02"); //To by mê ani ve snu nenapadlo.
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_01"); //OvÄÃ­ kÅ¯Å¾e? DoufÃ¡m, Å¾es tu ovci nezabil nÄ™jakÃ©mu sedlÃ¡kovi na pastvÄ™.
+			AI_Output (other, self, "DIA_Bosper_SellFur_15_02"); //To by mÄ™ ani ve snu nenapadlo.
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_SheepFur) * Value_SheepFur) );
 			B_GiveInvItems(other, self, ItAt_SheepFur, Npc_HasItems(other, ItAt_SheepFur));
 				
@@ -884,21 +884,21 @@ func void DIA_Bosper_SellFur_Info ()
 		
 		if (Npc_HasItems(other, ItAt_WolfFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_03"); //Vlèí kùe, ty jsou dobré.
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_03"); //VlÄÃ­ kÅ¯Å¾e, ty jsou dobrÃ©.
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_WolfFur) * Value_WolfFur) );
 			B_GiveInvItems(other, self, ItAt_WolfFur, Npc_HasItems(other, ItAt_WolfFur));
 		};
 		
 		if (Npc_HasItems(other, ItAt_WargFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_04"); //Kùe ze skâetího psa? To jsou pêkné bestie.
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_04"); //KÅ¯Å¾e ze skÃ¢etÃ­ho psa? To jsou pÄ™knÃ© bestie.
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_WargFur) * Value_WargFur) );
 			B_GiveInvItems(other, self, ItAt_WargFur, Npc_HasItems(other, ItAt_WargFur));
 		};
 		
 		if (Npc_HasItems(other, ItAt_ShadowFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_05"); //Páni, dokonce kùe stínové šelmy - ty jsou velmi cenné.
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_05"); //PÃ¡ni, dokonce kÅ¯Å¾e stÃ­novÃ© Å¡elmy - ty jsou velmi cennÃ©.
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_ShadowFur) * Value_ShadowFur) );
 			B_GiveInvItems(other, self, ItAt_ShadowFur, Npc_HasItems(other, ItAt_ShadowFur));
 		};
@@ -908,15 +908,15 @@ func void DIA_Bosper_SellFur_Info ()
 		{
 			if (Bosper_TrollFurSold == FALSE)
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_06"); //A co je ksakru TOHLE za kùi?
-				AI_Output (other, self, "DIA_Bosper_SellFur_15_07"); //Tu jsem stáhl z trola.
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_08"); //Ta... ta má cenu celého jmêní!
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_06"); //A co je ksakru TOHLE za kÅ¯Å¾i?
+				AI_Output (other, self, "DIA_Bosper_SellFur_15_07"); //Tu jsem stÃ¡hl z trola.
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_08"); //Ta... ta mÃ¡ cenu celÃ©ho jmÄ™nÃ­!
 				Bosper_TrollFurSold == TRUE;
 			}
 			else //TRUE
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_09"); //Další velká trolí kùe - tos ty potvory vánê zabil?
-				AI_Output (other, self, "DIA_Bosper_SellFur_15_10"); //To víš - kdy narazím na nêjakou nestvùru, prostê chytím pâíleitost za paèesy.
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_09"); //DalÅ¡Ã­ velkÃ¡ trolÃ­ kÅ¯Å¾e - tos ty potvory vÃ¡Å¾nÄ™ zabil?
+				AI_Output (other, self, "DIA_Bosper_SellFur_15_10"); //To vÃ­Å¡ - kdyÅ¾ narazÃ­m na nÄ™jakou nestvÅ¯ru, prostÄ™ chytÃ­m pÃ¢Ã­leÅ¾itost za paÄesy.
 			};
 			
 			if (Npc_HasItems(other, ItAt_TrollFur) > 0)
@@ -926,17 +926,17 @@ func void DIA_Bosper_SellFur_Info ()
 			};
 			if (Npc_HasItems(other, ItAt_TrollBlackFur) > 0)
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_11"); //A dokonce kùe z èerného trola!
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_11"); //A dokonce kÅ¯Å¾e z ÄernÃ©ho trola!
 				B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_TrollBlackFur) * Value_TrollBlackFur) );
 				B_GiveInvItems(other, self, ItAt_TrollBlackFur, Npc_HasItems(other, ItAt_TrollBlackFur));
 			};
 		};
 		
-		AI_Output (self, other, "DIA_Bosper_SellFur_11_12"); //Dobrá práce. Pâijë zase, a seeneš další.
+		AI_Output (self, other, "DIA_Bosper_SellFur_11_12"); //DobrÃ¡ prÃ¡ce. PÃ¢ijÃ« zase, aÅ¾ seÅ¾eneÅ¡ dalÅ¡Ã­.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_SellFur_11_13"); //Ale vdyã víš, e mê zajímají pouze kùe z vlkù, stínovıch šelem a tak podobnê.
+		AI_Output (self, other, "DIA_Bosper_SellFur_11_13"); //Ale vÅ¾dyÄƒ vÃ­Å¡, Å¾e mÄ™ zajÃ­majÃ­ pouze kÅ¯Å¾e z vlkÅ¯, stÃ­novÃ½ch Å¡elem a tak podobnÄ™.
 	};
 };
 
@@ -950,7 +950,7 @@ INSTANCE DIA_Bosper_Minenanteil (C_INFO)
 	condition	= DIA_Bosper_Minenanteil_Condition;
 	information	= DIA_Bosper_Minenanteil_Info;
 
-	description = "Vidím, e máš na prodej nêjaké dùlní akcie.";
+	description = "VidÃ­m, Å¾e mÃ¡Å¡ na prodej nÄ™jakÃ© dÅ¯lnÃ­ akcie.";
 };   
                     
 FUNC INT DIA_Bosper_Minenanteil_Condition()
@@ -964,8 +964,8 @@ FUNC INT DIA_Bosper_Minenanteil_Condition()
 
 FUNC VOID DIA_Bosper_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Bosper_Minenanteil_15_00"); //Vidím, e máš na prodej nêjaké dùlní akcie.
-	AI_Output (self, other, "DIA_Bosper_Minenanteil_11_01"); //Ehm, o tom nic nevím. Klidnê si je vezmi, jestli chceš.
+	AI_Output (other, self, "DIA_Bosper_Minenanteil_15_00"); //VidÃ­m, Å¾e mÃ¡Å¡ na prodej nÄ™jakÃ© dÅ¯lnÃ­ akcie.
+	AI_Output (self, other, "DIA_Bosper_Minenanteil_11_01"); //Ehm, o tom nic nevÃ­m. KlidnÄ™ si je vezmi, jestli chceÅ¡.
 	B_GivePlayerXP (XP_Ambient);
 };	
 

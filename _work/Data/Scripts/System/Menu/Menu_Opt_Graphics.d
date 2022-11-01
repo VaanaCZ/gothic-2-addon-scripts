@@ -31,7 +31,7 @@ INSTANCE MENU_OPT_GRAPHICS(C_MENU_DEF)
 
 INSTANCE MENUITEM_GRA_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"ZOBRAZENÕ";
+	text[0]		=	"ZOBRAZEN√ç";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -50,7 +50,7 @@ INSTANCE MENUITEM_GRA_TEXQUAL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Detaily textur";
-	text[1]		= 	"⁄rove‡ detail˘ textur"; // Kommentar
+	text[1]		= 	"√örove≈ï detail≈Ø textur"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -84,8 +84,8 @@ INSTANCE MENUITEM_GRA_TEXQUAL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_MODEL_DETAIL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Detaily model˘";
-	text[1]		= 	"⁄rove‡ detail˘ model˘"; // Kommentar
+	text[0]		=	"Detaily model≈Ø";
+	text[1]		= 	"√örove≈ï detail≈Ø model≈Ø"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -122,7 +122,7 @@ instance MENUITEM_GRA_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Dohled";
-	text[1]		= "UrËi mÌru dohledu (v procentech)"; // Kommentar
+	text[1]		= "Urƒçi m√≠ru dohledu (v procentech)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -144,7 +144,7 @@ INSTANCE MENUITEM_GRA_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 	dimx = MENU_SLIDER_DX;dimy = MENU_CHOICE_DY;
 	// Aktionen	
 	onChgSetOption													= "sightValue";
-	onChgSetOptionSection 											= "V›KON";
+	onChgSetOptionSection 											= "V√ùKON";
 	// Weitere Eigenschaften	
 	flags		= flags & ~IT_SELECTABLE;	
 	flags		= flags | IT_PERF_OPTION | IT_TXT_CENTER;
@@ -153,8 +153,8 @@ INSTANCE MENUITEM_GRA_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VOB_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Zv˝r. objekt˘";
-	text[1]		= "Vzd·lenost zobrazovan˝ch objekt˘"; // Kommentar
+	text[0]		= "Zv√Ωr. objekt≈Ø";
+	text[1]		= "Vzd√°lenost zobrazovan√Ωch objekt≈Ø"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3000;	dimy		=	750;
@@ -191,7 +191,7 @@ INSTANCE MENUITEM_GRA_SKY_EFFECTS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Ef. na obloze";
-	text[1]		= 	"Zapnout Ëi vypnout efekty na obloze"; // Kommentar
+	text[1]		= 	"Zapnout ƒçi vypnout efekty na obloze"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -223,7 +223,7 @@ instance MENUITEM_GRA_SKY_EFFECTS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZP T";
+	text[0]		=	"ZPƒòT";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y + 300;
 	dimx		=	6192;		dimy		=	MENU_DY;

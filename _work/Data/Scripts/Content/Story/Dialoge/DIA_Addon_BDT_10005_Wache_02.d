@@ -72,7 +72,7 @@ FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 FUNC VOID DIA_Addon_Wache_02_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//Jak se vede?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//PoËkej chvilku, nezn·me se n·hodou odnÍkud?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Poƒçkej chvilku, nezn√°me se n√°hodou odnƒôkud?
 	B_UseFakeScroll ();
 	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Hmm... ne. To nejsi ty. No tak, vypadni.
 };
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Wache_02_Attentat   (C_INFO)
 	condition   = DIA_Addon_Wache_02_Attentat_Condition;
 	information = DIA_Addon_Wache_02_Attentat_Info;
 	permanent   = FALSE;
-	description = "Co vÌö o tom ˙toku?";
+	description = "Co v√≠≈° o tom √∫toku?";
 };
 FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 {	
@@ -98,9 +98,9 @@ FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Co vÌö o tom ˙toku?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Co o nÍm vÌm? (smÍje se) Zp‚el·mal jsem tomu chlapovi hn·ty.
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(v˝hruûnÍ) A to sam˝ se stane kaûd˝mu, kdo se pokusÌ napadnout Estebana.
+	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Co v√≠≈° o tom √∫toku?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Co o nƒôm v√≠m? (smƒôje se) Zp√¢el√°mal jsem tomu chlapovi hn√°ty.
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(v√Ωhru≈ænƒô) A to sam√Ω se stane ka≈æd√Ωmu, kdo se pokus√≠ napadnout Estebana.
 };
 //--------------------------------------------------------------------
 //	Info perm
@@ -124,11 +124,11 @@ FUNC INT DIA_Addon_Wache_02_perm_Condition()
 FUNC VOID DIA_Addon_Wache_02_perm_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//Jak se vede?
-	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//ZatÌm je klid.
+	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//Zat√≠m je klid.
 	
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Ty najdi zr·dce a my se o nÍj pak postar·me.
+		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Ty najdi zr√°dce a my se o nƒôj pak postar√°me.
 	};
 };
 

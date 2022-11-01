@@ -31,7 +31,7 @@ instance DIA_Babera_HALLO		(C_INFO)
 	condition	 = 	DIA_Babera_HALLO_Condition;
 	information	 = 	DIA_Babera_HALLO_Info;
 
-	description	 = 	"HalÛ, kr·sn· panÌ sluûebn·.";
+	description	 = 	"Hal√≥, kr√°sn√° pan√≠ slu≈æebn√°.";
 };
 
 func int DIA_Babera_HALLO_Condition ()
@@ -41,8 +41,8 @@ func int DIA_Babera_HALLO_Condition ()
 
 func void DIA_Babera_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //HalÛ, kr·sn· panÌ sluûebn·.
-	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //P‚esta‡ s tÍmi sladk˝mi ‚eËiËkami, hochu. ¬ekni, co chceö. M·m pr·ci.
+	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //Hal√≥, kr√°sn√° pan√≠ slu≈æebn√°.
+	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //P√¢esta≈ï s tƒômi sladk√Ωmi √¢eƒçiƒçkami, hochu. √Çekni, co chce≈°. M√°m pr√°ci.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ instance DIA_Babera_WIESIEHTSAUS		(C_INFO)
 	condition	 = 	DIA_Babera_WIESIEHTSAUS_Condition;
 	information	 = 	DIA_Babera_WIESIEHTSAUS_Info;
 
-	description	 = 	"Jak pokraËujou polnÌ pr·ce?";
+	description	 = 	"Jak pokraƒçujou poln√≠ pr√°ce?";
 };
 
 func int DIA_Babera_WIESIEHTSAUS_Condition ()
@@ -68,32 +68,32 @@ func int DIA_Babera_WIESIEHTSAUS_Condition ()
 
 func void DIA_Babera_WIESIEHTSAUS_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //Jak pokraËujou polnÌ pr·ce?
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //PodÌvej se na ty obrovsk˝ l·ny, co musÌme obdÍl·vat, a bude ti to jasnÈ.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Hled·ö snad rolnickou pr·ci?
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //Jak pokraƒçujou poln√≠ pr√°ce?
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Pod√≠vej se na ty obrovsk√Ω l√°ny, co mus√≠me obdƒôl√°vat, a bude ti to jasn√©.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Hled√°≈° snad rolnickou pr√°ci?
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 
 	if (hero.guild == GIL_NONE)
 		{
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Ne. VlastnÍ se chci st·t ûold·kem.", DIA_Babera_WIESIEHTSAUS_Nein );
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Moûn·.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Ne. Vlastnƒô se chci st√°t ≈æold√°kem.", DIA_Babera_WIESIEHTSAUS_Nein );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Mo≈æn√°.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
 		};
 };
 func void DIA_Babera_WIESIEHTSAUS_Vielleicht ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Moûn·.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //V tom p‚ÌpadÍ bys mÍl zajÌt za Sekobem, tÌm star˝m otrok·‚em. Moûn· pro tebe nÍco bude mÌt.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Taky m˘ûeö samoz‚ejmÍ zkusit Onarovu farmu na konci tÈhle dlouhÈ cesty.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Ale dej si pozor na ûold·ky. Nemaj r·di cizince.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Mo≈æn√°.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //V tom p√¢√≠padƒô bys mƒôl zaj√≠t za Sekobem, t√≠m star√Ωm otrok√°√¢em. Mo≈æn√° pro tebe nƒôco bude m√≠t.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Taky m≈Ø≈æe≈° samoz√¢ejmƒô zkusit Onarovu farmu na konci t√©hle dlouh√© cesty.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Ale dej si pozor na ≈æold√°ky. Nemaj r√°di cizince.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
 
 func void DIA_Babera_WIESIEHTSAUS_Nein ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Ne. VlastnÍ se chci st·t ûold·kem.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Tak to tady jsi öpatnÍ. éold·ky najdeö na farmÍ velkostatk·‚e.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Ne. Vlastnƒô se chci st√°t ≈æold√°kem.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Tak to tady jsi ≈°patnƒô. ≈Ωold√°ky najde≈° na farmƒô velkostatk√°√¢e.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
@@ -124,20 +124,20 @@ func int DIA_Babera_BRONKO_Condition ()
 
 func void DIA_Babera_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //¬ekni, ten hnusnej chl·pek tamhle...
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //To je Bronco. Co s nÌm?
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //To je farm·‚?
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(smÌch) Tak tohle ti ‚ekl? Farm·‚ je tu Sekob. Bronco nenÌ nic neû povaleË a budiûkniËemu. Ale je silnej jako bejk.
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Proto mu taky nikdo nic ne‚ekne, kdyû nic nedÍl·.
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //√Çekni, ten hnusnej chl√°pek tamhle...
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //To je Bronco. Co s n√≠m?
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //To je farm√°√¢?
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(sm√≠ch) Tak tohle ti √¢ekl? Farm√°√¢ je tu Sekob. Bronco nen√≠ nic ne≈æ povaleƒç a budi≈ækniƒçemu. Ale je silnej jako bejk.
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Proto mu taky nikdo nic ne√¢ekne, kdy≈æ nic nedƒôl√°.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Babera_BRONKO_16_05"); //NebojÌ se nikoho jinÈho neû v·s, ûoldnÈ‚˘.
+			AI_Output			(self, other, "DIA_Babera_BRONKO_16_05"); //Neboj√≠ se nikoho jin√©ho ne≈æ v√°s, ≈æoldn√©√¢≈Ø.
 
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Babera_BRONKO_16_06"); //Jedinej, kdo ho m˘ûe p‚imÍt k pr·ci, je nÍkdo od ûold·k˘. BojÌ se jich.
+			AI_Output			(self, other, "DIA_Babera_BRONKO_16_06"); //Jedinej, kdo ho m≈Ø≈æe p√¢imƒôt k pr√°ci, je nƒôkdo od ≈æold√°k≈Ø. Boj√≠ se jich.
 
 		};
 	Babera_BronkoKeinBauer = TRUE;
@@ -169,9 +169,9 @@ func int DIA_Babera_Rosi_Condition ()
 func void DIA_Babera_Rosi_Info ()
 {
 	AI_Output			(other, self, "DIA_Babera_Rosi_15_00"); //Kde je Rosi?
-	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //Uû to tu nemohla d˝l vydrûet, tak odeöla na sever, do lesa.
-	B_LogEntry (TOPIC_RosisFlucht,"Rosi uprchla ze Sekobova statku. Podle Babery mÌ‚ila na sever, do les˘."); 
-	B_LogEntry (TOPIC_bringRosiBackToSekob,"Rosi uprchla ze Sekobova statku. Podle Babery mÌ‚ila na sever, do les˘."); 
+	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //U≈æ to tu nemohla d√Ωl vydr≈æet, tak ode≈°la na sever, do lesa.
+	B_LogEntry (TOPIC_RosisFlucht,"Rosi uprchla ze Sekobova statku. Podle Babery m√≠√¢ila na sever, do les≈Ø."); 
+	B_LogEntry (TOPIC_bringRosiBackToSekob,"Rosi uprchla ze Sekobova statku. Podle Babery m√≠√¢ila na sever, do les≈Ø."); 
 };
 
 
@@ -186,7 +186,7 @@ instance DIA_Babera_DUSTOERST		(C_INFO)
 	information	 = 	DIA_Babera_DUSTOERST_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"A kromÍ toho?";
+	description	 = 	"A kromƒô toho?";
 };
 
 func int DIA_Babera_DUSTOERST_Condition ()
@@ -199,8 +199,8 @@ func int DIA_Babera_DUSTOERST_Condition ()
 
 func void DIA_Babera_DUSTOERST_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_DUSTOERST_15_00"); //A kromÍ toho?
-	AI_Output			(self, other, "DIA_Babera_DUSTOERST_16_01"); //M·m pr·ci.
+	AI_Output			(other, self, "DIA_Babera_DUSTOERST_15_00"); //A kromƒô toho?
+	AI_Output			(self, other, "DIA_Babera_DUSTOERST_16_01"); //M√°m pr√°ci.
 	AI_StopProcessInfos (self);
 };
 

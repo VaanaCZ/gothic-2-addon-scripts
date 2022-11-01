@@ -34,7 +34,7 @@ instance DIA_Khaled_Hallo		(C_INFO)
 	condition	= DIA_Khaled_Hallo_Condition;
 	information	= DIA_Khaled_Hallo_Info;
 	permanent	= TRUE;
-	description	= "Jsi v po‚·dku?";
+	description	= "Jsi v po√¢√°dku?";
 };
 
 func int DIA_Khaled_Hallo_Condition ()
@@ -47,17 +47,17 @@ func int DIA_Khaled_Hallo_Condition ()
 
 func void DIA_Khaled_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_Hallo_15_00"); //Jsi v po‚·dku?
+	AI_Output (other, self, "DIA_Khaled_Hallo_15_00"); //Jsi v po√¢√°dku?
 	if (Npc_KnowsInfo (other, DIA_Lee_WannaJoin))
 	{
-		AI_Output (self, other, "DIA_Khaled_Hallo_11_01"); //Tak co, chceö se k n·m tedy p‚idat? M·ö aspo‡ nÍjakou zbra‡?
+		AI_Output (self, other, "DIA_Khaled_Hallo_11_01"); //Tak co, chce≈° se k n√°m tedy p√¢idat? M√°≈° aspo≈ï nƒôjakou zbra≈ï?
 		Khaled_weiter = TRUE;
 		Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTrader,"Khaled prod·v· zbranÍ.");
+		B_LogEntry (Topic_SoldierTrader,"Khaled prod√°v√° zbranƒô.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Khaled_Hallo_11_02"); //Jestli je to d˘leûitÈ, promluv si s Leem. Jinak mi dej pokoj.
+		AI_Output (self, other, "DIA_Khaled_Hallo_11_02"); //Jestli je to d≈Øle≈æit√©, promluv si s Leem. Jinak mi dej pokoj.
 		AI_StopProcessInfos (self);
 	};	
 };
@@ -72,7 +72,7 @@ instance DIA_Khaled_TRADE		(C_INFO)
 	condition	= DIA_Khaled_TRADE_Condition;
 	information	= DIA_Khaled_TRADE_Info;
 	permanent	= TRUE;
-	description	= "JakÈ zbranÍ mi m˘ûeö nabÌdnout?";
+	description	= "Jak√© zbranƒô mi m≈Ø≈æe≈° nab√≠dnout?";
 	trade		= TRUE;
 };
 
@@ -86,9 +86,9 @@ func int DIA_Khaled_TRADE_Condition ()
 
 func void DIA_Khaled_TRADE_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_TRADE_15_00"); //JakÈ zbranÍ mi m˘ûeö nabÌdnout?
+	AI_Output (other, self, "DIA_Khaled_TRADE_15_00"); //Jak√© zbranƒô mi m≈Ø≈æe≈° nab√≠dnout?
 	B_GiveTradeInv (self);
-	AI_Output (self, other, "DIA_Khaled_TRADE_11_01"); //Jenom ty nejlepöÌ, jen si je prohlÌdni!
+	AI_Output (self, other, "DIA_Khaled_TRADE_11_01"); //Jenom ty nejlep≈°√≠, jen si je prohl√≠dni!
 };
 
 // ************************************************************
@@ -101,7 +101,7 @@ instance DIA_Khaled_WannaJoin		(C_INFO)
 	condition	= DIA_Khaled_WannaJoin_Condition;
 	information	= DIA_Khaled_WannaJoin_Info;
 	permanent	= TRUE;
-	description	= "Nevadilo by ti, kdybych se k v·m p‚idal?";
+	description	= "Nevadilo by ti, kdybych se k v√°m p√¢idal?";
 };
 
 func int DIA_Khaled_WannaJoin_Condition ()
@@ -115,12 +115,12 @@ func int DIA_Khaled_WannaJoin_Condition ()
 
 func void DIA_Khaled_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_WannaJoin_15_00"); //Nevadilo by ti, kdybych se k v·m p‚idal?
-	AI_Output (self, other, "DIA_Khaled_WannaJoin_11_01"); //Jestli jsi proöel zkouökou, klidnÍ se za tebe p‚imluvÌm.
+	AI_Output (other, self, "DIA_Khaled_WannaJoin_15_00"); //Nevadilo by ti, kdybych se k v√°m p√¢idal?
+	AI_Output (self, other, "DIA_Khaled_WannaJoin_11_01"); //Jestli jsi pro≈°el zkou≈°kou, klidnƒô se za tebe p√¢imluv√≠m.
 	if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	|| (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (other, self, "DIA_Khaled_WannaJoin_15_02"); //Uû jsem vöechno splnil.
+		AI_Output (other, self, "DIA_Khaled_WannaJoin_15_02"); //U≈æ jsem v≈°echno splnil.
 		AI_Output (self, other, "DIA_Khaled_WannaJoin_11_03"); //No, tak je to teda v cajku.
 	};
 };
@@ -135,7 +135,7 @@ instance DIA_Khaled_Woher		(C_INFO)
 	condition	= DIA_Khaled_Woher_Condition;
 	information	= DIA_Khaled_Woher_Info;
 	permanent	= FALSE;
-	description	= "Jak jsi skoncoval s tÍmi ûold·ky?";
+	description	= "Jak jsi skoncoval s tƒômi ≈æold√°ky?";
 };
 
 func int DIA_Khaled_Woher_Condition ()
@@ -148,8 +148,8 @@ func int DIA_Khaled_Woher_Condition ()
 
 func void DIA_Khaled_Woher_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_Woher_15_00"); //Jak jsi skoncoval s tÍmi ûold·ky?
-	AI_Output (self, other, "DIA_Khaled_Woher_11_01"); //P‚iöel jsem z jihu spolu se Sylviem. Pat‚ili jsme k ûoldnÈ‚skÈ arm·dÍ, kter· bojovala proti sk‚et˘m.
+	AI_Output (other, self, "DIA_Khaled_Woher_15_00"); //Jak jsi skoncoval s tƒômi ≈æold√°ky?
+	AI_Output (self, other, "DIA_Khaled_Woher_11_01"); //P√¢i≈°el jsem z jihu spolu se Sylviem. Pat√¢ili jsme k ≈æoldn√©√¢sk√© arm√°dƒô, kter√° bojovala proti sk√¢et≈Øm.
 };
 
 // ************************************************************
@@ -162,7 +162,7 @@ instance DIA_Khaled_AboutSylvio		(C_INFO)
 	condition	= DIA_Khaled_AboutSylvio_Condition;
 	information	= DIA_Khaled_AboutSylvio_Info;
 	permanent	= FALSE;
-	description	= "Co si myslÌö o Sylviovi?";
+	description	= "Co si mysl√≠≈° o Sylviovi?";
 };
 
 func int DIA_Khaled_AboutSylvio_Condition ()
@@ -175,8 +175,8 @@ func int DIA_Khaled_AboutSylvio_Condition ()
 
 func void DIA_Khaled_AboutSylvio_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_AboutSylvio_15_00"); //Co si myslÌö o Sylviovi?
-	AI_Output (self, other, "DIA_Khaled_AboutSylvio_11_01"); //Je to nebezpeËn˝ chl·pek! A spousta ûold·k˘, co p‚iöla s nÌm, ho po‚·d poslouch·. Radöi by ses s nÌm nemÍl pouötÍt do k‚Ìûku.
+	AI_Output (other, self, "DIA_Khaled_AboutSylvio_15_00"); //Co si mysl√≠≈° o Sylviovi?
+	AI_Output (self, other, "DIA_Khaled_AboutSylvio_11_01"); //Je to nebezpeƒçn√Ω chl√°pek! A spousta ≈æold√°k≈Ø, co p√¢i≈°la s n√≠m, ho po√¢√°d poslouch√°. Rad≈°i by ses s n√≠m nemƒôl pou≈°tƒôt do k√¢√≠≈æku.
 };
 
 // ************************************************************
@@ -189,7 +189,7 @@ instance DIA_Khaled_AboutLee		(C_INFO)
 	condition	= DIA_Khaled_AboutLee_Condition;
 	information	= DIA_Khaled_AboutLee_Info;
 	permanent	= FALSE;
-	description	= "Co si myslÌö o Leeovi?";
+	description	= "Co si mysl√≠≈° o Leeovi?";
 };
 
 func int DIA_Khaled_AboutLee_Condition ()
@@ -202,11 +202,11 @@ func int DIA_Khaled_AboutLee_Condition ()
 
 func void DIA_Khaled_AboutLee_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_AboutLee_15_00"); //Jak˝ m·ö n·zor na Leeho?
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_01"); //MyslÌm, ûe jedinÍ Lee se opravdu star·, abychom se dostali z tohohle ostrova.
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_02"); //Chce se vydat na pevninu, ale nejspÌö si tu chce jeötÍ s nÍk˝m nÍco vy‚Ìdit.
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_03"); //V kaûdÈm p‚ÌpadÍ dÍl· svou pr·ci daleko lÌp, neû by to kdy dok·zal Sylvio.
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_04"); //Krom toho je to dobr˝ v˘dce. VÍtöinou si tu m˘ûeme dÍlat, co chceme.
+	AI_Output (other, self, "DIA_Khaled_AboutLee_15_00"); //Jak√Ω m√°≈° n√°zor na Leeho?
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_01"); //Mysl√≠m, ≈æe jedinƒô Lee se opravdu star√°, abychom se dostali z tohohle ostrova.
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_02"); //Chce se vydat na pevninu, ale nejsp√≠≈° si tu chce je≈°tƒô s nƒôk√Ωm nƒôco vy√¢√≠dit.
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_03"); //V ka≈æd√©m p√¢√≠padƒô dƒôl√° svou pr√°ci daleko l√≠p, ne≈æ by to kdy dok√°zal Sylvio.
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_04"); //Krom toho je to dobr√Ω v≈Ødce. Vƒôt≈°inou si tu m≈Ø≈æeme dƒôlat, co chceme.
 };
 
 

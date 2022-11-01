@@ -83,7 +83,7 @@ func int DIA_Brian_HALLO_Condition ()
 
 func void DIA_Brian_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Brian_HALLO_04_00"); //Jsi ve mêstê novı, co? Jsem Brian! Jsem uèedník mistra Harada.
+	AI_Output (self, other, "DIA_Brian_HALLO_04_00"); //Jsi ve mÄ™stÄ™ novÃ½, co? Jsem Brian! Jsem uÄednÃ­k mistra Harada.
 };
 
 // *****************************************************
@@ -96,7 +96,7 @@ instance DIA_Brian_AboutLehrling (C_INFO)
 	condition	= DIA_Brian_AboutLehrling_Condition;
 	information	= DIA_Brian_AboutLehrling_Info;
 	permanent 	= FALSE;
-	description = "Co obnáší bıt kováâskım uèedníkem?";
+	description = "Co obnÃ¡Å¡Ã­ bÃ½t kovÃ¡Ã¢skÃ½m uÄednÃ­kem?";
 };
 
 func int DIA_Brian_AboutLehrling_Condition ()
@@ -110,11 +110,11 @@ func int DIA_Brian_AboutLehrling_Condition ()
 
 func void DIA_Brian_AboutLehrling_Info ()
 {
-	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_00"); //Co obnáší bıt kováâskım uèedníkem?
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_01"); //Proè se ptáš? Chceš se stát mım nástupcem?
-	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_02"); //Moná.
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_03"); //Proè ne... Já u se brzy vyuèím a pak opustím mêsto.
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_04"); //Ale ne kvùli Haradovi. Je to dobrı mistr - hodnê jsem se od nêho nauèil.
+	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_00"); //Co obnÃ¡Å¡Ã­ bÃ½t kovÃ¡Ã¢skÃ½m uÄednÃ­kem?
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_01"); //ProÄ se ptÃ¡Å¡? ChceÅ¡ se stÃ¡t mÃ½m nÃ¡stupcem?
+	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_02"); //MoÅ¾nÃ¡.
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_03"); //ProÄ ne... JÃ¡ uÅ¾ se brzy vyuÄÃ­m a pak opustÃ­m mÄ™sto.
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_04"); //Ale ne kvÅ¯li Haradovi. Je to dobrÃ½ mistr - hodnÄ™ jsem se od nÄ™ho nauÄil.
 	
 };
 
@@ -128,7 +128,7 @@ instance DIA_Brian_WhyLeave (C_INFO)
 	condition	= DIA_Brian_WhyLeave_Condition;
 	information	= DIA_Brian_WhyLeave_Info;
 	permanent 	= FALSE;
-	description = "Proè chceš opustit mêsto?";
+	description = "ProÄ chceÅ¡ opustit mÄ™sto?";
 };
 
 func int DIA_Brian_WhyLeave_Condition ()
@@ -141,11 +141,11 @@ func int DIA_Brian_WhyLeave_Condition ()
 
 func void DIA_Brian_WhyLeave_Info ()
 {
-	AI_Output (other,self , "DIA_Brian_WhyLeave_15_00"); //Proè chceš opustit mêsto?
-	AI_Output (self,other , "DIA_Brian_WhyLeave_04_00"); //Protoe mi ti lidé tady lezou na nervy! Hlavnê ostatní mistâi.
-	AI_Output (self, other, "DIA_Brian_WhyLeave_04_01"); //Ještê si pamatuju, co bylo kolem mého pâijetí za uèedníka u Harada povyku.
-	AI_Output (self, other, "DIA_Brian_WhyLeave_04_02"); //Vánê, kadej z têch šaškù do toho musel kecat.
-	AI_Output (self, other, "DIA_Brian_WhyLeave_04_03"); //Chci se rozhodovat sám, ke komu pùjdu, nebo nepùjdu dêlat uèedníka.
+	AI_Output (other,self , "DIA_Brian_WhyLeave_15_00"); //ProÄ chceÅ¡ opustit mÄ™sto?
+	AI_Output (self,other , "DIA_Brian_WhyLeave_04_00"); //ProtoÅ¾e mi ti lidÃ© tady lezou na nervy! HlavnÄ™ ostatnÃ­ mistÃ¢i.
+	AI_Output (self, other, "DIA_Brian_WhyLeave_04_01"); //JeÅ¡tÄ™ si pamatuju, co bylo kolem mÃ©ho pÃ¢ijetÃ­ za uÄednÃ­ka u Harada povyku.
+	AI_Output (self, other, "DIA_Brian_WhyLeave_04_02"); //VÃ¡Å¾nÄ™, kaÅ¾dej z tÄ™ch Å¡aÅ¡kÅ¯ do toho musel kecat.
+	AI_Output (self, other, "DIA_Brian_WhyLeave_04_03"); //Chci se rozhodovat sÃ¡m, ke komu pÅ¯jdu, nebo nepÅ¯jdu dÄ™lat uÄednÃ­ka.
 };
 
 // *****************************************************
@@ -158,7 +158,7 @@ instance DIA_Brian_OtherMasters (C_INFO)
 	condition	= DIA_Brian_OtherMasters_Condition;
 	information	= DIA_Brian_OtherMasters_Info;
 	permanent 	= FALSE;
-	description = "Kdo jsou ostatní mistâi?";
+	description = "Kdo jsou ostatnÃ­ mistÃ¢i?";
 };
 func int DIA_Brian_OtherMasters_Condition ()
 {
@@ -171,17 +171,17 @@ func int DIA_Brian_OtherMasters_Condition ()
 
 func void DIA_Brian_OtherMasters_Info ()
 {
-	AI_Output (other, self, "DIA_Brian_Add_15_00"); //Kdo jsou ostatní mistâi?
-	AI_Output (self ,other, "DIA_Brian_Add_04_01"); //No, je to tesaâ Thorben, vırobce lukù Bosper, alchymista Constantino a Matteo.
-	AI_Output (self ,other, "DIA_Brian_Add_04_02"); //Prodává zbroje, ale je pâedevším kupcem.
-	AI_Output (self ,other, "DIA_Brian_Add_04_03"); //Všichni mistâi mají své obchody tady v téhle ulici.
-	AI_Output (self ,other, "DIA_Brian_Add_04_04"); //A Constantinova dílna je v prùchodu ke chrámu.
+	AI_Output (other, self, "DIA_Brian_Add_15_00"); //Kdo jsou ostatnÃ­ mistÃ¢i?
+	AI_Output (self ,other, "DIA_Brian_Add_04_01"); //No, je to tesaÃ¢ Thorben, vÃ½robce lukÅ¯ Bosper, alchymista Constantino a Matteo.
+	AI_Output (self ,other, "DIA_Brian_Add_04_02"); //ProdÃ¡vÃ¡ zbroje, ale je pÃ¢edevÅ¡Ã­m kupcem.
+	AI_Output (self ,other, "DIA_Brian_Add_04_03"); //VÅ¡ichni mistÃ¢i majÃ­ svÃ© obchody tady v tÃ©hle ulici.
+	AI_Output (self ,other, "DIA_Brian_Add_04_04"); //A Constantinova dÃ­lna je v prÅ¯chodu ke chrÃ¡mu.
 };
 
 
 
 // *****************************************************
-// 					Über Meister Harad
+// 					Ãœber Meister Harad
 // *****************************************************
 instance DIA_Brian_AboutHarad (C_INFO)
 {
@@ -190,7 +190,7 @@ instance DIA_Brian_AboutHarad (C_INFO)
 	condition	= DIA_Brian_AboutHarad_Condition;
 	information	= DIA_Brian_AboutHarad_Info;
 	permanent 	= FALSE;
-	description = "Âekni mi nêco víc o mistru Haradovi.";
+	description = "Ã‚ekni mi nÄ™co vÃ­c o mistru Haradovi.";
 };
 
 func int DIA_Brian_AboutHarad_Condition ()
@@ -203,11 +203,11 @@ func int DIA_Brian_AboutHarad_Condition ()
 
 func void DIA_Brian_AboutHarad_Info ()
 {
-	AI_Output (other, self, "DIA_Brian_AboutHarad_15_00"); //Âekni mi nêco víc o mistru Haradovi.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_01"); //Teë zrovna nemá moc dobrou náladu.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_02"); //Pâed nêkolika dny za ním pâišli paladinové s rozkazem ukovat nêjaké meèe.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_03"); //Zakázali mu prodávat meèe komukoli jinému.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_04"); //Teë dâe celé dny a noci, jen aby tu zakázku dokonèil co nejdâíve.
+	AI_Output (other, self, "DIA_Brian_AboutHarad_15_00"); //Ã‚ekni mi nÄ™co vÃ­c o mistru Haradovi.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_01"); //TeÃ« zrovna nemÃ¡ moc dobrou nÃ¡ladu.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_02"); //PÃ¢ed nÄ™kolika dny za nÃ­m pÃ¢iÅ¡li paladinovÃ© s rozkazem ukovat nÄ™jakÃ© meÄe.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_03"); //ZakÃ¡zali mu prodÃ¡vat meÄe komukoli jinÃ©mu.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_04"); //TeÃ« dÃ¢e celÃ© dny a noci, jen aby tu zakÃ¡zku dokonÄil co nejdÃ¢Ã­ve.
 };
 
 // *****************************************************
@@ -220,7 +220,7 @@ instance DIA_Brian_NEEDWEAPONS		(C_INFO)
 	condition	= DIA_Brian_NEEDWEAPONS_Condition;
 	information	= DIA_Brian_NEEDWEAPONS_Info;
 	permanent 	= FALSE;
-	description	= "Mohu si od tebe koupit nêjaké zbranê?";
+	description	= "Mohu si od tebe koupit nÄ™jakÃ© zbranÄ™?";
 };
 
 func int DIA_Brian_NEEDWEAPONS_Condition ()
@@ -230,10 +230,10 @@ func int DIA_Brian_NEEDWEAPONS_Condition ()
 
 func void DIA_Brian_NEEDWEAPONS_Info ()
 {
-	AI_Output (other, self, "DIA_Brian_NEEDWEAPONS_15_00"); //Mohu si od tebe koupit nêjaké zbranê?
-	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_01"); //Vánê ne. Jsem jen pomocník.
-	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_02"); //Ty zbranê, co se vyrábêjí tady v kovárnê, sebere domobrana a odnese je do vêí.
-	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_03"); //Ale kdybys mêl zájem o nêco, co potâebuješ v kovárnê, moná bych ti mohl pomoct.
+	AI_Output (other, self, "DIA_Brian_NEEDWEAPONS_15_00"); //Mohu si od tebe koupit nÄ™jakÃ© zbranÄ™?
+	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_01"); //VÃ¡Å¾nÄ™ ne. Jsem jen pomocnÃ­k.
+	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_02"); //Ty zbranÄ™, co se vyrÃ¡bÄ™jÃ­ tady v kovÃ¡rnÄ™, sebere domobrana a odnese je do vÄ™Å¾Ã­.
+	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_03"); //Ale kdybys mÄ™l zÃ¡jem o nÄ™co, co potÃ¢ebujeÅ¡ v kovÃ¡rnÄ™, moÅ¾nÃ¡ bych ti mohl pomoct.
 };
 
 
@@ -251,7 +251,7 @@ instance DIA_Brian_WASKAUFEN		(C_INFO)
 	condition	= DIA_Brian_WASKAUFEN_Condition;
 	information	= DIA_Brian_WASKAUFEN_Info;
 	permanent	= TRUE;
-	description	= "Co od tebe mùu získat?";
+	description	= "Co od tebe mÅ¯Å¾u zÃ­skat?";
 	trade		= TRUE;
 };
 
@@ -265,28 +265,28 @@ func int DIA_Brian_WASKAUFEN_Condition ()
 
 func void DIA_Brian_WASKAUFEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Brian_WASKAUFEN_15_00"); //Co od tebe mùu získat?
+	AI_Output			(other, self, "DIA_Brian_WASKAUFEN_15_00"); //Co od tebe mÅ¯Å¾u zÃ­skat?
 	B_GiveTradeInv (self);
 
 	if (Npc_IsDead(Harad))
 	{
-		AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_01"); //Jeliko ještê poâád mám nêkolik ocelovıch prutù, mùou bıt tvoje. Obávám se, e to je všechno.
+		AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_01"); //JelikoÅ¾ jeÅ¡tÄ™ poÃ¢Ã¡d mÃ¡m nÄ™kolik ocelovÃ½ch prutÅ¯, mÅ¯Å¾ou bÃ½t tvoje. ObÃ¡vÃ¡m se, Å¾e to je vÅ¡echno.
 		
 		if (MIS_Jack_NewLighthouseOfficer == 0)
 		{
-			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_02"); //Jeliko u tu není Harad, dává na mê domobrana pozor.
-			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_03"); //Já kovárnu nedokáu dál vést. Mají strach, e to celé prodám a prásknu do bot.
+			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_02"); //JelikoÅ¾ uÅ¾ tu nenÃ­ Harad, dÃ¡vÃ¡ na mÄ™ domobrana pozor.
+			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_03"); //JÃ¡ kovÃ¡rnu nedokÃ¡Å¾u dÃ¡l vÃ©st. MajÃ­ strach, Å¾e to celÃ© prodÃ¡m a prÃ¡sknu do bot.
 		};
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_05"); //Mùu ti prodat pár ocelovıch prutù.
+		AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_05"); //MÅ¯Å¾u ti prodat pÃ¡r ocelovÃ½ch prutÅ¯.
 	};
 	
 	if (Brian_Trade_Einmal == FALSE)
 	{
 		Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-		B_LogEntry (Topic_CityTrader,"Haradùv uèedník Brian prodává ocelové pruty."); 
+		B_LogEntry (Topic_CityTrader,"HaradÅ¯v uÄednÃ­k Brian prodÃ¡vÃ¡ ocelovÃ© pruty."); 
 		Brian_Trade_Einmal = TRUE;
 	};
 	Npc_RemoveInvItems (self,ItMiSwordblade,Npc_HasItems (self,ItMiSwordblade));
@@ -329,7 +329,7 @@ FUNC VOID DIA_Brian_KAP3_EXIT_Info()
 
 
 //*********************************************************************
-//	Kannst du auch Schmuckstücke reparieren?
+//	Kannst du auch SchmuckstÃ¼cke reparieren?
 //*********************************************************************
 instance DIA_Brian_RepairNecklace		(C_INFO)
 {
@@ -338,7 +338,7 @@ instance DIA_Brian_RepairNecklace		(C_INFO)
 	condition	 = 	DIA_Brian_RepairNecklace_Condition;
 	information	 = 	DIA_Brian_RepairNecklace_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Umíš opravit i klenoty?";
+	description	 = 	"UmÃ­Å¡ opravit i klenoty?";
 };
 
 func int DIA_Brian_RepairNecklace_Condition ()
@@ -357,12 +357,12 @@ func int DIA_Brian_RepairNecklace_Condition ()
 
 func void DIA_Brian_RepairNecklace_Info ()
 {
-	AI_Output (other,self ,"DIA_Brian_RepairNecklace_15_00"); //Umíš opravit i klenoty?
-	AI_Output (self	,other,"DIA_Brian_RepairNecklace_04_01"); //Jsem jen pomocník, budu rád, kdy nêkdy dokáu ukovat alespoà nêjakı nù.
+	AI_Output (other,self ,"DIA_Brian_RepairNecklace_15_00"); //UmÃ­Å¡ opravit i klenoty?
+	AI_Output (self	,other,"DIA_Brian_RepairNecklace_04_01"); //Jsem jen pomocnÃ­k, budu rÃ¡d, kdyÅ¾ nÄ™kdy dokÃ¡Å¾u ukovat alespoÅ• nÄ™jakÃ½ nÅ¯Å¾.
 	
 	if ((Npc_IsDead (Harad))== FALSE)
 	{
-		AI_Output (self ,other,"DIA_Brian_RepairNecklace_04_02"); //Šperky? Mêl by ses zeptat mistra.
+		AI_Output (self ,other,"DIA_Brian_RepairNecklace_04_02"); //Å perky? MÄ™l by ses zeptat mistra.
 	};
 	
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE; 	
@@ -448,7 +448,7 @@ instance DIA_Brian_NEWLIGHTHOUSEOFFICER		(C_INFO)
 	condition	 = 	DIA_Brian_NEWLIGHTHOUSEOFFICER_Condition;
 	information	 = 	DIA_Brian_NEWLIGHTHOUSEOFFICER_Info;
 
-	description	 = 	"Zaslechl jsem, e ses zajímal o Jackùv starı maják.";
+	description	 = 	"Zaslechl jsem, Å¾e ses zajÃ­mal o JackÅ¯v starÃ½ majÃ¡k.";
 };
 
 func int DIA_Brian_NEWLIGHTHOUSEOFFICER_Condition ()
@@ -463,12 +463,12 @@ func int DIA_Brian_NEWLIGHTHOUSEOFFICER_Condition ()
 
 func void DIA_Brian_NEWLIGHTHOUSEOFFICER_Info ()
 {
-	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_00"); //Zaslechl jsem, e ses zajímal o Jackùv starı maják.
-	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_01"); //Jack uvauje o tom, e by se vrátil na moâe. Ale jeho maják pak nebude mít kdo hlídat.
-	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_02"); //Ale snad je Jackovi jasné, e si tam u majáku zaâídím kovárnu, kdy tam u nebude.
-	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_03"); //Je v tom nêjakı problém?
-	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_04"); //(smích) Pro mê ne. Stejnê se mi nechce zùstávat u Harada. ádnej problém.
-	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_05"); //Souhlas. Uvidíme se u Jacka.
+	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_00"); //Zaslechl jsem, Å¾e ses zajÃ­mal o JackÅ¯v starÃ½ majÃ¡k.
+	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_01"); //Jack uvaÅ¾uje o tom, Å¾e by se vrÃ¡til na moÃ¢e. Ale jeho majÃ¡k pak nebude mÃ­t kdo hlÃ­dat.
+	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_02"); //Ale snad je Jackovi jasnÃ©, Å¾e si tam u majÃ¡ku zaÃ¢Ã­dÃ­m kovÃ¡rnu, kdyÅ¾ tam uÅ¾ nebude.
+	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_03"); //Je v tom nÄ™jakÃ½ problÃ©m?
+	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_04"); //(smÃ­ch) Pro mÄ™ ne. StejnÄ™ se mi nechce zÅ¯stÃ¡vat u Harada. Å½Ã¡dnej problÃ©m.
+	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_05"); //Souhlas. UvidÃ­me se u Jacka.
 	MIS_Jack_NewLighthouseOfficer = LOG_SUCCESS;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Lighthouse");
@@ -487,7 +487,7 @@ instance DIA_Brian_LIGHTHOUSEFREE		(C_INFO)
 	permanent	 = 	TRUE;
 
 
-	description	 = 	"Tak co tomu âíkáš?";
+	description	 = 	"Tak co tomu Ã¢Ã­kÃ¡Å¡?";
 };
 
 func int DIA_Brian_LIGHTHOUSEFREE_Condition ()
@@ -502,8 +502,8 @@ func int DIA_Brian_LIGHTHOUSEFREE_Condition ()
 
 func void DIA_Brian_LIGHTHOUSEFREE_Info ()
 {
-	AI_Output			(other, self, "DIA_Brian_LIGHTHOUSEFREE_15_00"); //A co jsi âíkal?
-	AI_Output			(self, other, "DIA_Brian_LIGHTHOUSEFREE_04_01"); //No nazdar, takovej bordel. Jack to tu nepozná, a s tím budu hotov.
+	AI_Output			(other, self, "DIA_Brian_LIGHTHOUSEFREE_15_00"); //A co jsi Ã¢Ã­kal?
+	AI_Output			(self, other, "DIA_Brian_LIGHTHOUSEFREE_04_01"); //No nazdar, takovej bordel. Jack to tu nepoznÃ¡, aÅ¾ s tÃ­m budu hotov.
 };
 
 

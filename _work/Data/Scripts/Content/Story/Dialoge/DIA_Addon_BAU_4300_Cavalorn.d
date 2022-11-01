@@ -45,7 +45,7 @@ INSTANCE DIA_Addon_Cavalorn_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Cavalorn_PICKPOCKET_Condition;
 	information	= DIA_Addon_Cavalorn_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Ukrást tento toulec se šípy je tak snadné jako vzít dítêti bonbón.)";
+	description = "(UkrÃ¡st tento toulec se Å¡Ã­py je tak snadnÃ© jako vzÃ­t dÃ­tÄ™ti bonbÃ³n.)";
 };                       
 
 FUNC INT DIA_Addon_Cavalorn_PICKPOCKET_Condition()
@@ -112,12 +112,12 @@ func void DIA_Addon_Cavalorn_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Cavalorn_MeetingIsRunning_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_MeetingIsRunning_08_00"); //Vítej do 'kruhu', pâíteli.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_MeetingIsRunning_08_00"); //VÃ­tej do 'kruhu', pÃ¢Ã­teli.
 		DIA_Addon_Cavalorn_MeetingIsRunning_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_08_01"); //Vatras ti svêâí novı úkol.
+		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_08_01"); //Vatras ti svÄ™Ã¢Ã­ novÃ½ Ãºkol.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -132,7 +132,7 @@ instance DIA_Addon_Cavalorn_HALLO		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_HALLO_Condition;
 	information	 = 	DIA_Addon_Cavalorn_HALLO_Info;
 
-	description	 = 	"Máš problém?";
+	description	 = 	"MÃ¡Å¡ problÃ©m?";
 };
 
 func int DIA_Addon_Cavalorn_HALLO_Condition ()
@@ -142,66 +142,66 @@ func int DIA_Addon_Cavalorn_HALLO_Condition ()
 
 func void DIA_Addon_Cavalorn_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_15_00"); //Problémy?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_01"); //(naštvanê) Sakra. Netuším, kde se schovávaj. Zabiješ jednoho a za chvíli tu máš zase všechny.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_02"); //(potutelnê) Ale moment, dyk já tê znám! Ty seš ten chlápek, co na mê v Hornickım údolí furt ebral šípy!
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_15_00"); //ProblÃ©my?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_01"); //(naÅ¡tvanÄ™) Sakra. NetuÅ¡Ã­m, kde se schovÃ¡vaj. ZabijeÅ¡ jednoho a za chvÃ­li tu mÃ¡Å¡ zase vÅ¡echny.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_02"); //(potutelnÄ™) Ale moment, dyk jÃ¡ tÄ™ znÃ¡m! Ty seÅ¡ ten chlÃ¡pek, co na mÄ™ v HornickÃ½m ÃºdolÃ­ furt Å¾ebral Å¡Ã­py!
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Ty se jmenuješ Cavalorn, e?", DIA_Addon_Cavalorn_HALLO_Ja );
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Manê si vzpomínám...?", DIA_Addon_Cavalorn_HALLO_weissNicht );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Ty se jmenujeÅ¡ Cavalorn, Å¾e?", DIA_Addon_Cavalorn_HALLO_Ja );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "ManÄ™ si vzpomÃ­nÃ¡m...?", DIA_Addon_Cavalorn_HALLO_weissNicht );
 
 };
 func void DIA_Addon_Cavalorn_HALLO_weissNicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_weissNicht_15_00"); //No, matnê se na nêco pamatuju.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_weissNicht_08_01"); //Ale no tak. Ve svı chajdê v Hornickım údolí jsem tê pâece uèil stâílet z luku a plíit se. U si vzpomínáš?
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_weissNicht_15_00"); //No, matnÄ™ se na nÄ™co pamatuju.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_weissNicht_08_01"); //Ale no tak. Ve svÃ½ chajdÄ™ v HornickÃ½m ÃºdolÃ­ jsem tÄ™ pÃ¢ece uÄil stÃ¢Ã­let z luku a plÃ­Å¾it se. UÅ¾ si vzpomÃ­nÃ¡Å¡?
 
 };
 
 func void DIA_Addon_Cavalorn_HALLO_Ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Ja_15_00"); //Ty jsi Cavalorn, e jo?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_01"); //Á, vidím, e jsi na mê nezapomnêl, i kdy u jsme z tı hnusnı kolonie pryè.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_02"); //Kam máš namíâeno?
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Ja_15_00"); //Ty jsi Cavalorn, Å¾e jo?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_01"); //Ã, vidÃ­m, Å¾e jsi na mÄ™ nezapomnÄ™l, i kdyÅ¾ uÅ¾ jsme z tÃ½ hnusnÃ½ kolonie pryÄ.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_02"); //Kam mÃ¡Å¡ namÃ­Ã¢eno?
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Nemám ádnı urèitı úkol.", DIA_Addon_Cavalorn_HALLO_keinZiel );
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Zpátky do Hornického údolí.", DIA_Addon_Cavalorn_HALLO_Bauern );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "NemÃ¡m Å¾Ã¡dnÃ½ urÄitÃ½ Ãºkol.", DIA_Addon_Cavalorn_HALLO_keinZiel );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "ZpÃ¡tky do HornickÃ©ho ÃºdolÃ­.", DIA_Addon_Cavalorn_HALLO_Bauern );
 
 	if (Mil_310_Stadtwache.aivar[AIV_PASSGATE] == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Do mêsta.", DIA_Addon_Cavalorn_HALLO_Stadt );
+		Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Do mÄ™sta.", DIA_Addon_Cavalorn_HALLO_Stadt );
 	};
 };
 func void DIA_Addon_Cavalorn_HALLO_Stadt ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_HALLO_Stadt_15_00"); //Do mêsta.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_01"); //(smêje se) Jo tak do mêsta!
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_02"); //Mùeš se dostat do problémù se stráema - jen tak nêkoho do mêsta nepustí. Potlouká se tu toti plno banditù.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_03"); //Poslední dobou sem zaèal chodit jeden z têch bejvalejch psionikù z Hornickıho údolí. Prı chodí poâád do Khorinidu a ven.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_04"); //Vešel do údolí pod tou velkou vêí. Vchod musí bejt nêkde tam u toho vodopádu.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_05"); //Snad by sis mêl s tím chlápkem promluvit.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_HALLO_Stadt_15_00"); //Do mÄ™sta.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_01"); //(smÄ™je se) Jo tak do mÄ™sta!
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_02"); //MÅ¯Å¾eÅ¡ se dostat do problÃ©mÅ¯ se strÃ¡Å¾ema - jen tak nÄ™koho do mÄ™sta nepustÃ­. PotloukÃ¡ se tu totiÅ¾ plno banditÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_03"); //PoslednÃ­ dobou sem zaÄal chodit jeden z tÄ™ch bejvalejch psionikÅ¯ z HornickÃ½ho ÃºdolÃ­. PrÃ½ chodÃ­ poÃ¢Ã¡d do Khorinidu a ven.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_04"); //VeÅ¡el do ÃºdolÃ­ pod tou velkou vÄ™Å¾Ã­. Vchod musÃ­ bejt nÄ™kde tam u toho vodopÃ¡du.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_05"); //Snad by sis mÄ™l s tÃ­m chlÃ¡pkem promluvit.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
 
 func void DIA_Addon_Cavalorn_HALLO_Bauern ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Bauern_15_00"); //Zpátky do Hornického údolí.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_01"); //(pâekvapenê) Vánê? Hmm, moc rád bych tam šel s tebou, ale napâed musím dodêlat, co mám.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_02"); //A budeš v Hornickém údolí, nemohl by ses mrknout, jestli náhodou ještê nestojí moje stará chajda? Rád bych se tam ještê nêkdy vrátil.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Bauern_15_00"); //ZpÃ¡tky do HornickÃ©ho ÃºdolÃ­.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_01"); //(pÃ¢ekvapenÄ™) VÃ¡Å¾nÄ™? Hmm, moc rÃ¡d bych tam Å¡el s tebou, ale napÃ¢ed musÃ­m dodÄ™lat, co mÃ¡m.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_02"); //AÅ¾ budeÅ¡ v HornickÃ©m ÃºdolÃ­, nemohl by ses mrknout, jestli nÃ¡hodou jeÅ¡tÄ™ nestojÃ­ moje starÃ¡ chajda? RÃ¡d bych se tam jeÅ¡tÄ™ nÄ™kdy vrÃ¡til.
 	
 	MIS_Addon_Cavalorn_TheHut = LOG_RUNNING;	
 	Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_CavalornTheHut,"Cavalorn chce, abych zjistil, zda jeho stará chıše v Hornickém údolí ještê stojí. Pokud si vzpomínám, bıvala v kopcích západnê od pùvodního Starého tábora. Poèítám, e tam nêco nechal.");
+	B_LogEntry (TOPIC_Addon_CavalornTheHut,"Cavalorn chce, abych zjistil, zda jeho starÃ¡ chÃ½Å¡e v HornickÃ©m ÃºdolÃ­ jeÅ¡tÄ™ stojÃ­. Pokud si vzpomÃ­nÃ¡m, bÃ½vala v kopcÃ­ch zÃ¡padnÄ™ od pÅ¯vodnÃ­ho StarÃ©ho tÃ¡bora. PoÄÃ­tÃ¡m, Å¾e tam nÄ™co nechal.");
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
 
 func void DIA_Addon_Cavalorn_HALLO_keinZiel ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_keinZiel_15_00"); //Nemám na mysli nic urèitého.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_keinZiel_08_01"); //Kdy mi to nechceš âíct, tak si to nech pro sebe.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_keinZiel_15_00"); //NemÃ¡m na mysli nic urÄitÃ©ho.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_keinZiel_08_01"); //KdyÅ¾ mi to nechceÅ¡ Ã¢Ã­ct, tak si to nech pro sebe.
 
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
@@ -216,7 +216,7 @@ instance DIA_Addon_Cavalorn_Beutel		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Beutel_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Beutel_Info;
 
-	description	 = 	"Dostal jsem se do té tvé chıše v Hornickém údolí.";
+	description	 = 	"Dostal jsem se do tÃ© tvÃ© chÃ½Å¡e v HornickÃ©m ÃºdolÃ­.";
 };
 
 func int DIA_Addon_Cavalorn_Beutel_Condition ()
@@ -230,72 +230,72 @@ func int DIA_Addon_Cavalorn_Beutel_Condition ()
 
 func void DIA_Addon_Cavalorn_Beutel_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_00"); //Byl jsem v té tvé chatrèi v Hornickém údolí.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_01"); //Take poâád ještê stojí.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_00"); //Byl jsem v tÃ© tvÃ© chatrÄi v HornickÃ©m ÃºdolÃ­.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_01"); //TakÅ¾e poÃ¢Ã¡d jeÅ¡tÄ™ stojÃ­.
 	if (MIS_Addon_Cavalorn_TheHut == LOG_RUNNING)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_02"); //Jo, a taky u vím, co jsi tam chtêl.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_02"); //Jo, a taky uÅ¾ vÃ­m, co jsi tam chtÄ™l.
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_03"); //Take jsi nêco našel?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_04"); //Jestli myslíš ten váèek s rudou, tak jo, ten mám.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_05"); //Ty seš ale lišák!
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_03"); //TakÅ¾e jsi nÄ™co naÅ¡el?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_04"); //Jestli myslÃ­Å¡ ten vÃ¡Äek s rudou, tak jo, ten mÃ¡m.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_05"); //Ty seÅ¡ ale liÅ¡Ã¡k!
 	if (MIS_Addon_Cavalorn_TheHut == LOG_RUNNING)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_06"); //Co jiného bys mohl z té chatrèe chtít? Jinak tam nebylo nic.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_06"); //Co jinÃ©ho bys mohl z tÃ© chatrÄe chtÃ­t? Jinak tam nebylo nic.
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_07"); //A máš ho s sebou? Dám ti za nêj 100 zlaãákù.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_07"); //A mÃ¡Å¡ ho s sebou? DÃ¡m ti za nÄ™j 100 zlaÄƒÃ¡kÅ¯.
 	TOPIC_End_CavalornTheHut = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 
 	if (Npc_HasItems (other,ItSe_ADDON_CavalornsBeutel))
 	{
-		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Jasnê.", DIA_Addon_Cavalorn_Beutel_ja );
+		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "JasnÄ™.", DIA_Addon_Cavalorn_Beutel_ja );
 	}
 	else if  (Npc_HasItems (other,ItMi_Nugget))
 	{
-		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Ne, ale mám tu hrudku rudy.", DIA_Addon_Cavalorn_Beutel_jaerz );
+		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Ne, ale mÃ¡m tu hrudku rudy.", DIA_Addon_Cavalorn_Beutel_jaerz );
 	};
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Ne.", DIA_Addon_Cavalorn_Beutel_no );
 };
 func void DIA_Addon_Cavalorn_Beutel_back ()
 {
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_back_08_00"); //Doufám, e se tam brzo vrátím.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_back_08_00"); //DoufÃ¡m, Å¾e se tam brzo vrÃ¡tÃ­m.
 };
 func void DIA_Addon_Cavalorn_Beutel_jaerz ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_jaerz_15_00"); //Ne, ale mám tu kousek rudy.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_jaerz_08_01"); //Taky dobâe.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_jaerz_15_00"); //Ne, ale mÃ¡m tu kousek rudy.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_jaerz_08_01"); //Taky dobÃ¢e.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Proè jsi to tam vùbec nechával?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "ProÄ jsi to tam vÅ¯bec nechÃ¡val?", DIA_Addon_Cavalorn_Beutel_why );
 };
 func void DIA_Addon_Cavalorn_Beutel_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_ja_15_00"); //Jasnê.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_ja_08_01"); //Paráda.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_ja_15_00"); //JasnÄ™.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_ja_08_01"); //ParÃ¡da.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Proè jsi to napâed nechal tady?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "ProÄ jsi to napÃ¢ed nechal tady?", DIA_Addon_Cavalorn_Beutel_why );
 };
 
 func void DIA_Addon_Cavalorn_Beutel_no ()
 {
 	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_00"); //Ne.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_no_08_01"); //Tak mi ho VRAÃ. Beztak u jsem se mêl vrátit do toho proklatıho Hornickıho údolí.
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_02"); //Málem jsi mê rozbreèel.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_no_08_01"); //Tak mi ho VRAÄ‚. Beztak uÅ¾ jsem se mÄ™l vrÃ¡tit do toho proklatÃ½ho HornickÃ½ho ÃºdolÃ­.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_02"); //MÃ¡lem jsi mÄ™ rozbreÄel.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Proè jsi to napâed nechal tady?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "ProÄ jsi to napÃ¢ed nechal tady?", DIA_Addon_Cavalorn_Beutel_why );
 };
 
 func void DIA_Addon_Cavalorn_Beutel_why ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_why_15_00"); //Proè jsi to tam vùbec nechával?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_01"); //Netušil jsem, e ruda bude mít tady v Khorinidu takovou cenu.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_why_15_00"); //ProÄ jsi to tam vÅ¯bec nechÃ¡val?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_01"); //NetuÅ¡il jsem, Å¾e ruda bude mÃ­t tady v Khorinidu takovou cenu.
 	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_02"); //Dyk v kolonii sis za mizernej kousek rudy nekoupil ani pitomej nocleh.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_03"); //A tady v pâístavním mêstê by ti tu pro ten samej kousek rozmlátili lebku.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_03"); //A tady v pÃ¢Ã­stavnÃ­m mÄ™stÄ™ by ti tu pro ten samej kousek rozmlÃ¡tili lebku.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -308,7 +308,7 @@ instance DIA_Addon_Cavalorn_ErzGeben		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_ErzGeben_Condition;
 	information	 = 	DIA_Addon_Cavalorn_ErzGeben_Info;
 
-	description	 = 	"Dej mi 100 zlatıch a já ti tu tvou rudu pâinesu.";
+	description	 = 	"Dej mi 100 zlatÃ½ch a jÃ¡ ti tu tvou rudu pÃ¢inesu.";
 };
 
 func int DIA_Addon_Cavalorn_ErzGeben_Condition ()
@@ -322,8 +322,8 @@ func int DIA_Addon_Cavalorn_ErzGeben_Condition ()
 
 func void DIA_Addon_Cavalorn_ErzGeben_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_ErzGeben_15_00"); //Dej mi 100 zlaãákù a vrátím ti tvou rudu.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_01"); //Dobâe, tady máš.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_ErzGeben_15_00"); //Dej mi 100 zlaÄƒÃ¡kÅ¯ a vrÃ¡tÃ­m ti tvou rudu.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_01"); //DobÃ¢e, tady mÃ¡Å¡.
 	CreateInvItems (self, ItMi_Gold, 100);									
 	B_GiveInvItems (self, other, ItMi_Gold, 100);		
 
@@ -331,7 +331,7 @@ func void DIA_Addon_Cavalorn_ErzGeben_Info ()
 		{
 			B_GiveInvItems (other, self, ItMi_Nugget,1);
 		};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_02"); //Seš vánê kámoš, díky moc.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_02"); //SeÅ¡ vÃ¡Å¾nÄ™ kÃ¡moÅ¡, dÃ­ky moc.
 	MIS_Addon_Cavalorn_TheHut = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_CavalornsBeutel);
 };
@@ -346,7 +346,7 @@ instance DIA_Addon_Cavalorn_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_WASMACHSTDU_Condition;
 	information	 = 	DIA_Addon_Cavalorn_WASMACHSTDU_Info;
 
-	description	 = 	"Co tady dêláš?";
+	description	 = 	"Co tady dÄ™lÃ¡Å¡?";
 };
 
 func int DIA_Addon_Cavalorn_WASMACHSTDU_Condition ()
@@ -360,8 +360,8 @@ func int DIA_Addon_Cavalorn_WASMACHSTDU_Condition ()
 
 func void DIA_Addon_Cavalorn_WASMACHSTDU_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_WASMACHSTDU_15_00"); //Co tu vlastnê dêláš?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_WASMACHSTDU_08_01"); //Sedím tu jako pecka. Nebejt têch zatracenejch banditù, nebyl bych tady.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_WASMACHSTDU_15_00"); //Co tu vlastnÄ™ dÄ™lÃ¡Å¡?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_WASMACHSTDU_08_01"); //SedÃ­m tu jako pecka. Nebejt tÄ™ch zatracenejch banditÅ¯, nebyl bych tady.
 	
 };
 
@@ -375,7 +375,7 @@ instance DIA_Addon_Cavalorn_Banditen		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Banditen_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Banditen_Info;
 
-	description	 = 	"Co to bylo s têmi bandity?";
+	description	 = 	"Co to bylo s tÄ™mi bandity?";
 };
 
 func int DIA_Addon_Cavalorn_Banditen_Condition ()
@@ -390,14 +390,14 @@ func int DIA_Addon_Cavalorn_Banditen_Condition ()
 func void DIA_Addon_Cavalorn_Banditen_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_00"); //Co bylo s bandity?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_01"); //Copak jsi posledních pár tıdnù prospal nebo co?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_01"); //Copak jsi poslednÃ­ch pÃ¡r tÃ½dnÅ¯ prospal nebo co?
 	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_02"); //No...
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_03"); //Mluvím o tı lùze z trestaneckı kolonie, co se tady usadila. Rabujou a zabíjejí, co jim síly staèí.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_04"); //(povzdychne si) Nejspíš mám kliku, e mê nezabili. Jen jsem se chvíli nesoustâedil a u jsem chytil jednu zezadu.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_03"); //MluvÃ­m o tÃ½ lÅ¯ze z trestaneckÃ½ kolonie, co se tady usadila. Rabujou a zabÃ­jejÃ­, co jim sÃ­ly staÄÃ­.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_04"); //(povzdychne si) NejspÃ­Å¡ mÃ¡m kliku, Å¾e mÄ™ nezabili. Jen jsem se chvÃ­li nesoustÃ¢edil a uÅ¾ jsem chytil jednu zezadu.
 	
 	if (C_BragoBanditsDead () == FALSE) 
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_05"); //Netuším, jak teë dostanu zpátky svı vêci.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_05"); //NetuÅ¡Ã­m, jak teÃ« dostanu zpÃ¡tky svÃ½ vÄ™ci.
 	};
 };
 
@@ -427,10 +427,10 @@ func int DIA_Addon_Cavalorn_ARTEFAKT_Condition ()
 
 func void DIA_Addon_Cavalorn_ARTEFAKT_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_ARTEFAKT_15_00"); //Ti banditi tê okradli?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_01"); //(vztekle) Jo. Zmlátili mê a pak mê hodili goblinùm, aã si mê seerou.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_02"); //A byly to sakra dùleitı vêci. Dopis a všecky mı prachy. Absolutnê netuším, jak je dostat zpátky.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_03"); //Kdy mi ale nikdo nebude krejt záda, nemùu se tam vrátit. Ta zbabêlá chátra!
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_ARTEFAKT_15_00"); //Ti banditi tÄ™ okradli?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_01"); //(vztekle) Jo. ZmlÃ¡tili mÄ™ a pak mÄ™ hodili goblinÅ¯m, aÄƒ si mÄ™ seÅ¾erou.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_02"); //A byly to sakra dÅ¯leÅ¾itÃ½ vÄ™ci. Dopis a vÅ¡ecky mÃ½ prachy. AbsolutnÄ™ netuÅ¡Ã­m, jak je dostat zpÃ¡tky.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_03"); //KdyÅ¾ mi ale nikdo nebude krejt zÃ¡da, nemÅ¯Å¾u se tam vrÃ¡tit. Ta zbabÄ™lÃ¡ chÃ¡tra!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -443,7 +443,7 @@ instance DIA_Addon_Cavalorn_HELFEN		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_HELFEN_Condition;
 	information	 = 	DIA_Addon_Cavalorn_HELFEN_Info;
 
-	description	 = 	"Mùu ti s têmi bandity nêjak pomoct?";
+	description	 = 	"MÅ¯Å¾u ti s tÄ™mi bandity nÄ™jak pomoct?";
 };
 
 func int DIA_Addon_Cavalorn_HELFEN_Condition ()
@@ -459,24 +459,24 @@ func int DIA_Addon_Cavalorn_HELFEN_Condition ()
 
 func void DIA_Addon_Cavalorn_HELFEN_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_HELFEN_15_00"); //Mùu ti s têmi bandity nêjak pomoct?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_HELFEN_15_00"); //MÅ¯Å¾u ti s tÄ™mi bandity nÄ™jak pomoct?
 
 	if (Npc_HasEquippedArmor(other) == FALSE)
 	&& (hero.guild == GIL_NONE) 
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_01"); //(potutelnê) Moná. Ale seš pêknı tintítko, urèitê u jsi celı tıdny nemêl v ruce poâádnej meè.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_01"); //(potutelnÄ™) MoÅ¾nÃ¡. Ale seÅ¡ pÄ™knÃ½ tintÃ­tko, urÄitÄ™ uÅ¾ jsi celÃ½ tÃ½dny nemÄ™l v ruce poÃ¢Ã¡dnej meÄ.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_02"); //No, ale nemám na vıbêr, a tak musím souhlasit. Èas kvapí.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_03"); //Tak dávej pozor. Dole na cestê najdeš jednu z têch špinavejch dêr, kde se tak rádi ukrejvaj banditi.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_04"); //Jsou to ti samí, co mi èmajzli mı vêci.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_05"); //Dej mi vêdêt, a budeš chtít vyrazit. Ukáem têm šupákùm, zaè je toho loket.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_02"); //No, ale nemÃ¡m na vÃ½bÄ™r, a tak musÃ­m souhlasit. ÄŒas kvapÃ­.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_03"); //Tak dÃ¡vej pozor. Dole na cestÄ™ najdeÅ¡ jednu z tÄ™ch Å¡pinavejch dÄ™r, kde se tak rÃ¡di ukrejvaj banditi.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_04"); //Jsou to ti samÃ­, co mi Ämajzli mÃ½ vÄ™ci.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_05"); //Dej mi vÄ™dÄ™t, aÅ¾ budeÅ¡ chtÃ­t vyrazit. UkÃ¡Å¾em tÄ™m Å¡upÃ¡kÅ¯m, zaÄ je toho loket.
 	
 	MIS_Addon_Cavalorn_KillBrago = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_KillBrago, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_KillBrago, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_KillBrago,"Banditi ukradli Cavalornovi nêco cenného. Chce, abychom se s nimi vypoâádali spoleènê."); 
+	B_LogEntry (TOPIC_Addon_KillBrago,"Banditi ukradli Cavalornovi nÄ™co cennÃ©ho. Chce, abychom se s nimi vypoÃ¢Ã¡dali spoleÄnÄ™."); 
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 };
@@ -491,7 +491,7 @@ instance DIA_Addon_Cavalorn_AUSRUESTUNG		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_AUSRUESTUNG_Condition;
 	information	 = 	DIA_Addon_Cavalorn_AUSRUESTUNG_Info;
 
-	description	 = 	"Potâebuji lepší vybavení.";
+	description	 = 	"PotÃ¢ebuji lepÅ¡Ã­ vybavenÃ­.";
 };
 
 func int DIA_Addon_Cavalorn_AUSRUESTUNG_Condition ()
@@ -505,22 +505,22 @@ func int DIA_Addon_Cavalorn_AUSRUESTUNG_Condition ()
 
 func void DIA_Addon_Cavalorn_AUSRUESTUNG_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_00"); //Potâebuju lepší vıbavu.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_00"); //PotÃ¢ebuju lepÅ¡Ã­ vÃ½bavu.
 		
 		if (C_BragoBanditsDead () == FALSE)
 		{
-			AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_01"); //Ty svinê mi toho moc nenechaly.
+			AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_01"); //Ty svinÄ™ mi toho moc nenechaly.
 		};
 		
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_02"); //Mùu ti dát vlèí nù, bude to zatím staèit.
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_03"); //Tomuhle âíkáš nù?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_02"); //MÅ¯Å¾u ti dÃ¡t vlÄÃ­ nÅ¯Å¾, bude to zatÃ­m staÄit.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_03"); //Tomuhle Ã¢Ã­kÃ¡Å¡ nÅ¯Å¾?
 
 	CreateInvItems (self, ItMW_Addon_Knife01, 1);									
 	B_GiveInvItems (self, other, ItMW_Addon_Knife01, 1);					
 	 
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_04"); //A co nêco na léèení?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_05"); //Ještê mi zbyly dva léèivı lektvary, máš zájem?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_06"); //Jasnê, dej je sem.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_04"); //A co nÄ™co na lÃ©ÄenÃ­?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_05"); //JeÅ¡tÄ™ mi zbyly dva lÃ©ÄivÃ½ lektvary, mÃ¡Å¡ zÃ¡jem?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_06"); //JasnÄ™, dej je sem.
 	
 	CreateInvItems (self, ItPo_Health_01, 2);									
 	B_GiveInvItems (self, other, ItPo_Health_01, 2);					
@@ -537,7 +537,7 @@ instance DIA_Addon_Cavalorn_LETSKILLBANDITS		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_LETSKILLBANDITS_Condition;
 	information	 = 	DIA_Addon_Cavalorn_LETSKILLBANDITS_Info;
 
-	description	 = 	"Jdeme na tu chátru.";
+	description	 = 	"Jdeme na tu chÃ¡tru.";
 };
 
 func int DIA_Addon_Cavalorn_LETSKILLBANDITS_Condition ()
@@ -553,9 +553,9 @@ func int DIA_Addon_Cavalorn_LETSKILLBANDITS_Condition ()
 
 func void DIA_Addon_Cavalorn_LETSKILLBANDITS_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_LETSKILLBANDITS_15_00"); //Tak pojëme na tu chátru.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_01"); //Jasná páka. Krej mi záda, jo?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_02"); //Èeká je móc nepâíjemnı pâekvapení.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_LETSKILLBANDITS_15_00"); //Tak pojÃ«me na tu chÃ¡tru.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_01"); //JasnÃ¡ pÃ¡ka. Krej mi zÃ¡da, jo?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_02"); //ÄŒekÃ¡ je mÃ³c nepÃ¢Ã­jemnÃ½ pÃ¢ekvapenÃ­.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"KillBandits");
 
@@ -572,23 +572,23 @@ func void B_Addon_Cavalorn_VatrasBrief ()
 	
 	if (MIS_Addon_Cavalorn_Letter2Vatras != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_00"); //Pak koneènê splním svùj úkol. U takhle jsem ztratil spoustu èasu.
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_01"); //Jakı úkol?
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_02"); //(pro sebe) No, napâed se musím dostat do mêsta a potom...
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_03"); //(povzdychne si) Nevím, jak to všecko stihnu vèas.
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_04"); //(ironicky) A co já?
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_05"); //(odhaduje) Hmm, proè ne. Mùeš do mêsta doruèit dopis.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_00"); //Pak koneÄnÄ™ splnÃ­m svÅ¯j Ãºkol. UÅ¾ takhle jsem ztratil spoustu Äasu.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_01"); //JakÃ½ Ãºkol?
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_02"); //(pro sebe) No, napÃ¢ed se musÃ­m dostat do mÄ™sta a potom...
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_03"); //(povzdychne si) NevÃ­m, jak to vÅ¡ecko stihnu vÄas.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_04"); //(ironicky) A co jÃ¡?
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_05"); //(odhaduje) Hmm, proÄ ne. MÅ¯Å¾eÅ¡ do mÄ™sta doruÄit dopis.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_06"); //A já tím získám èas, abych si sehnal vıbavu.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_06"); //A jÃ¡ tÃ­m zÃ­skÃ¡m Äas, abych si sehnal vÃ½bavu.
 
 	if (MIS_Addon_Cavalorn_Letter2Vatras != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_07"); //Jeden z têch banditù musí mít ten dopis u sebe.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_08"); //Zanes ho do mêsta vodnímu mágu Vatrasovi. Najdeš ho v Adanovê chrámu, celı dny tam káe.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_09"); //Vyâië mu, e jsem to nezvládnul.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_10"); //A kdy se tê zeptá, kde jsem, vyâië mu, e jsem na cestê na místo srazu, jo?
-		B_LogEntry (TOPIC_Addon_KDW,"Vodního mága Vatrase najdu v pâístavu Khorinis. Káe v tamêjším Adanovê chrámu."); 
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_07"); //Jeden z tÄ™ch banditÅ¯ musÃ­ mÃ­t ten dopis u sebe.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_08"); //Zanes ho do mÄ™sta vodnÃ­mu mÃ¡gu Vatrasovi. NajdeÅ¡ ho v AdanovÄ™ chrÃ¡mu, celÃ½ dny tam kÃ¡Å¾e.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_09"); //VyÃ¢iÃ« mu, Å¾e jsem to nezvlÃ¡dnul.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_10"); //A kdyÅ¾ se tÄ™ zeptÃ¡, kde jsem, vyÃ¢iÃ« mu, Å¾e jsem na cestÄ™ na mÃ­sto srazu, jo?
+		B_LogEntry (TOPIC_Addon_KDW,"VodnÃ­ho mÃ¡ga Vatrase najdu v pÃ¢Ã­stavu Khorinis. KÃ¡Å¾e v tamÄ™jÅ¡Ã­m AdanovÄ™ chrÃ¡mu."); 
 	};
 	
 	if (Npc_HasEquippedArmor(other) == FALSE)
@@ -596,8 +596,8 @@ func void B_Addon_Cavalorn_VatrasBrief ()
 	&& (Mil_310_schonmalreingelassen == FALSE)
 	&& (Mil_333_schonmalreingelassen == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_11"); //Jo, a ještê jedna vêc. Napâed si u nêkoho ze sedlákù kup àákı slušnı ošacení.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_12"); //Jinak tê budou povaovat za banditu. Tady máš pár zlaãákù.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_11"); //Jo, a jeÅ¡tÄ™ jedna vÄ™c. NapÃ¢ed si u nÄ™koho ze sedlÃ¡kÅ¯ kup Å•Ã¡kÃ½ sluÅ¡nÃ½ oÅ¡acenÃ­.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_12"); //Jinak tÄ™ budou povaÅ¾ovat za banditu. Tady mÃ¡Å¡ pÃ¡r zlaÄƒÃ¡kÅ¯.
 		CreateInvItems (self, ItMi_Gold, 50);									
 		B_GiveInvItems (self, other, ItMi_Gold, 50);	
 	};
@@ -609,7 +609,7 @@ func void B_Addon_Cavalorn_VatrasBrief ()
 		MIS_Addon_Cavalorn_Letter2Vatras = LOG_RUNNING;
 	};
 
-	Npc_ExchangeRoutine	(self,"Zaèít");
+	Npc_ExchangeRoutine	(self,"ZaÄÃ­t");
 	B_GivePlayerXP (XP_Addon_Cavalorn_KillBrago);
 	
 	Log_CreateTopic (TOPIC_Addon_KDW, LOG_MISSION);
@@ -643,7 +643,7 @@ func int DIA_Addon_Cavalorn_BragoKilled_Condition ()
 
 func void DIA_Addon_Cavalorn_BragoKilled_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_BragoKilled_08_00"); //Tak to bysme mêli. Ha! Nemêli si se mnou nic zaèínat.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_BragoKilled_08_00"); //Tak to bysme mÄ™li. Ha! NemÄ™li si se mnou nic zaÄÃ­nat.
 	
 	B_Addon_Cavalorn_VatrasBrief ();
 	
@@ -659,7 +659,7 @@ instance DIA_Addon_Cavalorn_PCKilledBrago		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_PCKilledBrago_Condition;
 	information	 = 	DIA_Addon_Cavalorn_PCKilledBrago_Info;
 
-	description	 = 	"Banditi u to mají spoèítané.";
+	description	 = 	"Banditi uÅ¾ to majÃ­ spoÄÃ­tanÃ©.";
 };
 
 func int DIA_Addon_Cavalorn_PCKilledBrago_Condition ()
@@ -674,7 +674,7 @@ func int DIA_Addon_Cavalorn_PCKilledBrago_Condition ()
 
 func void DIA_Addon_Cavalorn_PCKilledBrago_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_PCKilledBrago_15_00"); //Banditi u jsou vyâízení.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_PCKilledBrago_15_00"); //Banditi uÅ¾ jsou vyÃ¢Ã­zenÃ­.
 
 	B_Addon_Cavalorn_VatrasBrief ();
 
@@ -690,7 +690,7 @@ instance DIA_Addon_Cavalorn_JUNGS		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_JUNGS_Condition;
 	information	 = 	DIA_Addon_Cavalorn_JUNGS_Info;
 
-	description	 = 	"Ta zbroj, co máš na sobê, je vánê zajímavá.";
+	description	 = 	"Ta zbroj, co mÃ¡Å¡ na sobÄ™, je vÃ¡Å¾nÄ™ zajÃ­mavÃ¡.";
 };
 
 func int DIA_Addon_Cavalorn_JUNGS_Condition ()
@@ -703,16 +703,16 @@ func int DIA_Addon_Cavalorn_JUNGS_Condition ()
 
 func void DIA_Addon_Cavalorn_JUNGS_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_JUNGS_15_00"); //Máš na sobê zajímavou zbroj, ty u nepatâíš ke Stínùm?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_01"); //Ke Stínùm? Ti u neexistují, co padla bariéra.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_02"); //Jakmile jsme koneènê vypadli z Hornickıho údolí, nebyl dùvod, abych se k nim dál hlásil.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_03"); //Teë pracuju pro vodní mágy. Patâím ke kruhu vody.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_JUNGS_15_00"); //MÃ¡Å¡ na sobÄ™ zajÃ­mavou zbroj, ty uÅ¾ nepatÃ¢Ã­Å¡ ke StÃ­nÅ¯m?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_01"); //Ke StÃ­nÅ¯m? Ti uÅ¾ neexistujÃ­, co padla bariÃ©ra.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_02"); //Jakmile jsme koneÄnÄ™ vypadli z HornickÃ½ho ÃºdolÃ­, nebyl dÅ¯vod, abych se k nim dÃ¡l hlÃ¡sil.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_03"); //TeÃ« pracuju pro vodnÃ­ mÃ¡gy. PatÃ¢Ã­m ke kruhu vody.
 	
 	SC_KnowsRanger = TRUE;
 
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Cavalorn mi prozradil, e patâí ke komunitê, která si âíká 'kruh vody'."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Cavalorn mi prozradil, Å¾e patÃ¢Ã­ ke komunitÄ™, kterÃ¡ si Ã¢Ã­kÃ¡ 'kruh vody'."); 
 
 	Cavalorn_RangerHint = TRUE;
 };
@@ -727,7 +727,7 @@ instance DIA_Addon_Cavalorn_Ring		(C_INFO)
 	condition	= DIA_Addon_Cavalorn_Ring_Condition;
 	information	= DIA_Addon_Cavalorn_Ring_Info;
 	permanent 	= FALSE;
-	description	= "Povêz mi o tom kruhu vody nêco víc!";
+	description	= "PovÄ™z mi o tom kruhu vody nÄ™co vÃ­c!";
 };
 func int DIA_Addon_Cavalorn_Ring_Condition ()
 {
@@ -738,12 +738,12 @@ func int DIA_Addon_Cavalorn_Ring_Condition ()
 };
 func void DIA_Addon_Cavalorn_Ring_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_Ring_15_00"); //Povêz mi o tom kruhu vody nêco víc!
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_01"); //Fakt o tom nesmím mluvit.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_02"); //Jedinê tê mùu poslat za Vatrasem, kterej v Khorinidu mágy vody zastupuje.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_03"); //Udêláš dobâe, kdy si s ním promluvíš. Povêz mu, e tê posílám já.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_04"); //Moná tê pâijme mezi nás. Nutnê potâebujeme další dobrı lidi.
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Další informace o kruhu vody mi sdêlí vodní mág Vatras."); 
+	AI_Output (other, self, "DIA_Addon_Cavalorn_Ring_15_00"); //PovÄ™z mi o tom kruhu vody nÄ™co vÃ­c!
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_01"); //Fakt o tom nesmÃ­m mluvit.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_02"); //JedinÄ™ tÄ™ mÅ¯Å¾u poslat za Vatrasem, kterej v Khorinidu mÃ¡gy vody zastupuje.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_03"); //UdÄ™lÃ¡Å¡ dobÃ¢e, kdyÅ¾ si s nÃ­m promluvÃ­Å¡. PovÄ™z mu, Å¾e tÄ™ posÃ­lÃ¡m jÃ¡.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_04"); //MoÅ¾nÃ¡ tÄ™ pÃ¢ijme mezi nÃ¡s. NutnÄ™ potÃ¢ebujeme dalÅ¡Ã­ dobrÃ½ lidi.
+	B_LogEntry (TOPIC_Addon_RingOfWater,"DalÅ¡Ã­ informace o kruhu vody mi sdÄ™lÃ­ vodnÃ­ mÃ¡g Vatras."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Gegner
@@ -755,7 +755,7 @@ instance DIA_Addon_Cavalorn_Feinde (C_INFO)
 	condition	= DIA_Addon_Cavalorn_Feinde_Condition;
 	information	= DIA_Addon_Cavalorn_Feinde_Info;
 	permanent 	= FALSE;
-	description	= "Copak jsi tenkrát se svımi lidmi nepatâil k nepâátelùm vodních mágù?";
+	description	= "Copak jsi tenkrÃ¡t se svÃ½mi lidmi nepatÃ¢il k nepÃ¢Ã¡telÅ¯m vodnÃ­ch mÃ¡gÅ¯?";
 };
 func int DIA_Addon_Cavalorn_Feinde_Condition ()
 {
@@ -766,11 +766,11 @@ func int DIA_Addon_Cavalorn_Feinde_Condition ()
 };
 func void DIA_Addon_Cavalorn_Feinde_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_Feinde_15_00"); //Copak ty a tví lidi nebıvali nepâáteli vodních mágù?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_01"); //Ty bláznivı starı èasy u jsou pryè. U není ádnı Novı ani Starı tábor.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_02"); //Trestanecká kolonie u neexistuje a kadej se musí postarat sám o sebe.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_03"); //Vêtšinu z nás bejvalejch trestancù stejnê ještê poâád pronásledujou.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_04"); //Vodní mágové mi ale zmírnili trest, a tak se tu mùu volnê pohybovat.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_Feinde_15_00"); //Copak ty a tvÃ­ lidi nebÃ½vali nepÃ¢Ã¡teli vodnÃ­ch mÃ¡gÅ¯?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_01"); //Ty blÃ¡znivÃ½ starÃ½ Äasy uÅ¾ jsou pryÄ. UÅ¾ nenÃ­ Å¾Ã¡dnÃ½ NovÃ½ ani StarÃ½ tÃ¡bor.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_02"); //TrestaneckÃ¡ kolonie uÅ¾ neexistuje a kaÅ¾dej se musÃ­ postarat sÃ¡m o sebe.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_03"); //VÄ™tÅ¡inu z nÃ¡s bejvalejch trestancÅ¯ stejnÄ™ jeÅ¡tÄ™ poÃ¢Ã¡d pronÃ¡sledujou.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_04"); //VodnÃ­ mÃ¡govÃ© mi ale zmÃ­rnili trest, a tak se tu mÅ¯Å¾u volnÄ™ pohybovat.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Wo KdW
@@ -782,7 +782,7 @@ instance DIA_Addon_Cavalorn_KdWTask (C_INFO)
 	condition	= DIA_Addon_Cavalorn_KdWTask_Condition;
 	information	= DIA_Addon_Cavalorn_KdWTask_Info;
 	permanent 	= FALSE;
-	description	= "Co mágové vody dêlají teë?";
+	description	= "Co mÃ¡govÃ© vody dÄ™lajÃ­ teÃ«?";
 };
 func int DIA_Addon_Cavalorn_KdWTask_Condition ()
 {
@@ -794,10 +794,10 @@ func int DIA_Addon_Cavalorn_KdWTask_Condition ()
 };
 func void DIA_Addon_Cavalorn_KdWTask_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_00"); //Co vodní mágové dêlají teë?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_01"); //Jdou po nêèem velkım. Má to co dêlat s nêjakou neprozkoumanou èástí tohohle ostrova.
-	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_02"); //Neprozkoumanou èástí? A kde to má bıt?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_03"); //Víc ti âíct nemùu. Bê do Khorinidu a promluv si s Vatrasem.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_00"); //Co vodnÃ­ mÃ¡govÃ© dÄ™lajÃ­ teÃ«?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_01"); //Jdou po nÄ™Äem velkÃ½m. MÃ¡ to co dÄ™lat s nÄ™jakou neprozkoumanou ÄÃ¡stÃ­ tohohle ostrova.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_02"); //Neprozkoumanou ÄÃ¡stÃ­? A kde to mÃ¡ bÃ½t?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_03"); //VÃ­c ti Ã¢Ã­ct nemÅ¯Å¾u. BÄ™Å¾ do Khorinidu a promluv si s Vatrasem.
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -810,7 +810,7 @@ instance DIA_Addon_Cavalorn_BroughtLetter		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_BroughtLetter_Condition;
 	information	 = 	DIA_Addon_Cavalorn_BroughtLetter_Info;
 
-	description	 = 	"Pâedal jsem tvùj dopis Vatrasovi.";
+	description	 = 	"PÃ¢edal jsem tvÅ¯j dopis Vatrasovi.";
 };
 
 func int DIA_Addon_Cavalorn_BroughtLetter_Condition ()
@@ -824,8 +824,8 @@ func int DIA_Addon_Cavalorn_BroughtLetter_Condition ()
 
 func void DIA_Addon_Cavalorn_BroughtLetter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_BroughtLetter_15_00"); //Doruèil jsem Vatrasovi tvùj dopis.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_BroughtLetter_08_01"); //Nic jinıho jsem ani neèekal. Díky.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_BroughtLetter_15_00"); //DoruÄil jsem Vatrasovi tvÅ¯j dopis.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_BroughtLetter_08_01"); //Nic jinÃ½ho jsem ani neÄekal. DÃ­ky.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -840,7 +840,7 @@ instance DIA_Addon_Cavalorn_Ornament		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Ornament_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Ornament_Info;
 
-	description	 = 	"Hledáš nêco?";
+	description	 = 	"HledÃ¡Å¡ nÄ™co?";
 };
 
 func int DIA_Addon_Cavalorn_Ornament_Condition ()
@@ -854,27 +854,27 @@ func int DIA_Addon_Cavalorn_Ornament_Condition ()
 
 func void DIA_Addon_Cavalorn_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_00"); //Hledáš nêco?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_01"); //To je to tak vidêt? Jo, mágové vody mi nakázali hledat nêjakı ztracenı ornament.
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_02"); //To se mi hodí, Nefarius mi zadal úplnê stejnı úkol.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_00"); //HledÃ¡Å¡ nÄ™co?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_01"); //To je to tak vidÄ™t? Jo, mÃ¡govÃ© vody mi nakÃ¡zali hledat nÄ™jakÃ½ ztracenÃ½ ornament.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_02"); //To se mi hodÃ­, Nefarius mi zadal ÃºplnÄ™ stejnÃ½ Ãºkol.
 
 	if (SC_KnowsRanger == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_03"); //Take ty patâíš ke kruhu vody?
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_03"); //TakÅ¾e ty patÃ¢Ã­Å¡ ke kruhu vody?
 		if (SC_IsRanger == TRUE)
 		{
 			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_04"); //Ano.
 		}
 		else
 		{
-			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_05"); //Ještê ne, ale pracuju na tom.
+			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_05"); //JeÅ¡tÄ™ ne, ale pracuju na tom.
 		};
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_06"); //To jsem rád, e v tom nejsem sám.
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_07"); //U jsi našel nêjakı ornament?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_08"); //Zjistil jsem, kde by se jeden mêl nacházet.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_09"); //Tenhle kamennej kruh by mohl bejt jednou z têch staveb, kterou mi Nefarius popsal.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_10"); //Teë jen musíme najít nêjakı mechanismus, po kterım se máme dívat.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_06"); //To jsem rÃ¡d, Å¾e v tom nejsem sÃ¡m.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_07"); //UÅ¾ jsi naÅ¡el nÄ™jakÃ½ ornament?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_08"); //Zjistil jsem, kde by se jeden mÄ™l nachÃ¡zet.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_09"); //Tenhle kamennej kruh by mohl bejt jednou z tÄ™ch staveb, kterou mi Nefarius popsal.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_10"); //TeÃ« jen musÃ­me najÃ­t nÄ™jakÃ½ mechanismus, po kterÃ½m se mÃ¡me dÃ­vat.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Triggered
@@ -886,7 +886,7 @@ instance DIA_Addon_Cavalorn_Triggered		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Triggered_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Triggered_Info;
 
-	description	 = 	"Zkoušel jsem ten mechanismus.";
+	description	 = 	"ZkouÅ¡el jsem ten mechanismus.";
 };
 
 func int DIA_Addon_Cavalorn_Triggered_Condition ()
@@ -901,26 +901,26 @@ func int DIA_Addon_Cavalorn_Triggered_Condition ()
 
 func void DIA_Addon_Cavalorn_Triggered_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Triggered_15_00"); //Vyzkoušel jsem ten mechanismus, a nic to nedêlá.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_01"); //Pak mêli Lobartovi lidi pravdu.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_02"); //Âíkali, e jeden z nich si u tady s têma kamenama hrál.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_03"); //Prej se ze zemê vynoâila nêjaká kamenná obluda a napadla je.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_04"); //Zavolali domobranu, domobrana zavolala paladiny a ti tu potvoru znièili.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_05"); //U jsem to tu celı prohledal. Jestli tu nêjakı ornament byl, pak ho teë mají paladinové.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Triggered_15_00"); //VyzkouÅ¡el jsem ten mechanismus, a nic to nedÄ™lÃ¡.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_01"); //Pak mÄ™li Lobartovi lidi pravdu.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_02"); //Ã‚Ã­kali, Å¾e jeden z nich si uÅ¾ tady s tÄ™ma kamenama hrÃ¡l.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_03"); //Prej se ze zemÄ™ vynoÃ¢ila nÄ™jakÃ¡ kamennÃ¡ obluda a napadla je.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_04"); //Zavolali domobranu, domobrana zavolala paladiny a ti tu potvoru zniÄili.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_05"); //UÅ¾ jsem to tu celÃ½ prohledal. Jestli tu nÄ™jakÃ½ ornament byl, pak ho teÃ« majÃ­ paladinovÃ©.
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Triggered);
-	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "Pak se jeden z nás musí dostat do horní èásti mêsta.", DIA_Addon_Cavalorn_Triggered_Pal );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "Pak k nim zajdu a poádám je, aby mi ten ornament vrátili.", DIA_Addon_Cavalorn_Triggered_OBack );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "Pak se jeden z nÃ¡s musÃ­ dostat do hornÃ­ ÄÃ¡sti mÄ™sta.", DIA_Addon_Cavalorn_Triggered_Pal );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "Pak k nim zajdu a poÅ¾Ã¡dÃ¡m je, aby mi ten ornament vrÃ¡tili.", DIA_Addon_Cavalorn_Triggered_OBack );
 };
 func void B_Cavalorn_Triggered_Wohin ()
 {
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Wohin_08_00"); //Pùjdu teë do mêsta. Sejdeme se u Vatrase.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Wohin_08_00"); //PÅ¯jdu teÃ« do mÄ™sta. Sejdeme se u Vatrase.
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"Mêsto");
+	Npc_ExchangeRoutine	(self,"MÄ™sto");
 	
 	Log_CreateTopic (TOPIC_Addon_Ornament, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Ornament, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Ornament,"Jeden z chybêjících úlomkù ornamentu mají paladinové z horní èásti mêsta."); 
+	B_LogEntry (TOPIC_Addon_Ornament,"Jeden z chybÄ™jÃ­cÃ­ch ÃºlomkÅ¯ ornamentu majÃ­ paladinovÃ© z hornÃ­ ÄÃ¡sti mÄ™sta."); 
 
 	MIS_Addon_Cavalorn_GetOrnamentFromPAL = LOG_RUNNING;
 	self.flags = 0;
@@ -933,8 +933,8 @@ func void DIA_Addon_Cavalorn_Triggered_OBack ()
 	Npc_RemoveInvItems	(self, ITAR_RANGER_Addon,	Npc_HasItems (self, ITAR_RANGER_Addon ) );
 	Npc_RemoveInvItems	(self, ITAR_Fake_RANGER,	Npc_HasItems (self, ITAR_Fake_RANGER ) );
 	AI_EquipBestArmor (self); 
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_OBack_15_00"); //Tak já za nima zajdu a o ten ornament je poádám.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_OBack_08_01"); //Dobâe.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_OBack_15_00"); //Tak jÃ¡ za nima zajdu a o ten ornament je poÅ¾Ã¡dÃ¡m.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_OBack_08_01"); //DobÃ¢e.
 	B_Cavalorn_Triggered_Wohin ();
 };
 
@@ -945,8 +945,8 @@ func void DIA_Addon_Cavalorn_Triggered_Pal ()
 	Npc_RemoveInvItems	(self, ITAR_RANGER_Addon,	Npc_HasItems (self, ITAR_RANGER_Addon ) );
 	Npc_RemoveInvItems	(self, ITAR_Fake_RANGER,	Npc_HasItems (self, ITAR_Fake_RANGER ) );
 	AI_EquipBestArmor (self); 
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_Pal_15_00"); //Pak se jeden z nás musí dostat do horní èásti mêsta.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Pal_08_01"); //Na to nemám èas. To musíš udêlat ty.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_Pal_15_00"); //Pak se jeden z nÃ¡s musÃ­ dostat do hornÃ­ ÄÃ¡sti mÄ™sta.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Pal_08_01"); //Na to nemÃ¡m Äas. To musÃ­Å¡ udÄ™lat ty.
 	B_Cavalorn_Triggered_Wohin ();
 };
 
@@ -960,7 +960,7 @@ instance DIA_Addon_Cavalorn_GotOrnaFromHagen		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_GotOrnaFromHagen_Condition;
 	information	 = 	DIA_Addon_Cavalorn_GotOrnaFromHagen_Info;
 
-	description	 = 	"Získal jsem chybêjící ornament od lorda Hagena.";
+	description	 = 	"ZÃ­skal jsem chybÄ™jÃ­cÃ­ ornament od lorda Hagena.";
 };
 
 func int DIA_Addon_Cavalorn_GotOrnaFromHagen_Condition ()
@@ -973,8 +973,8 @@ func int DIA_Addon_Cavalorn_GotOrnaFromHagen_Condition ()
 
 func void DIA_Addon_Cavalorn_GotOrnaFromHagen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_GotOrnaFromHagen_15_00"); //Lord Hagen mi dal ten chybêjící ornament.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_GotOrnaFromHagen_08_01"); //Vidíš? Já âíkal, e ho budou mít paladinové.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_GotOrnaFromHagen_15_00"); //Lord Hagen mi dal ten chybÄ™jÃ­cÃ­ ornament.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_GotOrnaFromHagen_08_01"); //VidÃ­Å¡? JÃ¡ Ã¢Ã­kal, Å¾e ho budou mÃ­t paladinovÃ©.
 	B_GivePlayerXP (XP_Ambient);
 	MIS_Addon_Cavalorn_GetOrnamentFromPAL = LOG_SUCCESS;
 };
@@ -989,7 +989,7 @@ instance DIA_Addon_Cavalorn_WannaLearn (C_INFO)
 	condition	= DIA_Addon_Cavalorn_WannaLearn_Condition;
 	information	= DIA_Addon_Cavalorn_WannaLearn_Info;
 	permanent 	= FALSE;
-	description	= "Mùeš mê nêèemu nauèit?";
+	description	= "MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 
 func int DIA_Addon_Cavalorn_WannaLearn_Condition ()
@@ -1003,9 +1003,9 @@ func int DIA_Addon_Cavalorn_WannaLearn_Condition ()
 
 func void DIA_Addon_Cavalorn_WannaLearn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_WannaLearn_15_00"); //Mùeš mê nêco nauèit?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_01"); //Jasnê. Ale to ti povím, e tê pêknê zâídili, èlovêèe.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_02"); //Ty si vùbec nic nepamatuješ, co?
+	AI_Output (other, self, "DIA_Addon_Cavalorn_WannaLearn_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nÄ™co nauÄit?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_01"); //JasnÄ™. Ale to ti povÃ­m, Å¾e tÄ™ pÄ™knÄ™ zÃ¢Ã­dili, ÄlovÄ™Äe.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_02"); //Ty si vÅ¯bec nic nepamatujeÅ¡, co?
 	
 	Cavalorn_Addon_TeachPlayer = TRUE;
 	Log_CreateTopic (Topic_OutTeacher,LOG_NOTE);
@@ -1026,7 +1026,7 @@ instance DIA_Addon_Cavalorn_TEACH (C_INFO)
 	condition	= DIA_Addon_Cavalorn_TEACH_Condition;
 	information	= DIA_Addon_Cavalorn_TEACH_Info;
 	permanent 	= TRUE;
-	description	= "Chci se nauèit nêèemu z tvıch dovedností.";
+	description	= "Chci se nauÄit nÄ™Äemu z tvÃ½ch dovednostÃ­.";
 };
 
 func int DIA_Addon_Cavalorn_TEACH_Condition ()
@@ -1044,7 +1044,7 @@ func VOID DIA_Addon_Cavalorn_TEACH_Choices ()
 
 	if (Npc_GetTalentSkill (other,NPC_TALENT_SNEAK) == FALSE) 
 			{
-				Info_AddChoice		(DIA_Addon_Cavalorn_Teach, B_BuildLearnString("Plíení"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,DIA_Addon_Cavalorn_Teach_Sneak);
+				Info_AddChoice		(DIA_Addon_Cavalorn_Teach, B_BuildLearnString("PlÃ­Å¾enÃ­"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,DIA_Addon_Cavalorn_Teach_Sneak);
 			};
 
 	Info_AddChoice (DIA_Addon_Cavalorn_Teach, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))	 ,DIA_Addon_Cavalorn_Teach_Bow_1);
@@ -1055,8 +1055,8 @@ func VOID DIA_Addon_Cavalorn_TEACH_Choices ()
 };
 func void DIA_Addon_Cavalorn_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_TEACH_15_00"); //Chci si osvojit tvé schopnosti.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_TEACH_08_01"); //Jasnê. Co bys rád vêdêl?
+	AI_Output (other, self, "DIA_Addon_Cavalorn_TEACH_15_00"); //Chci si osvojit tvÃ© schopnosti.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_TEACH_08_01"); //JasnÄ™. Co bys rÃ¡d vÄ™dÄ™l?
 	
 	Addon_Cavalorn_Merke_Bow = other.HitChance[NPC_TALENT_BOW];
 	Addon_Cavalorn_Merke_1h =  other.HitChance[NPC_TALENT_1H];
@@ -1068,7 +1068,7 @@ FUNC VOID DIA_Addon_Cavalorn_Teach_Sneak ()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 		{
-			AI_Output			(self, other, "DIA_Addon_Cavalorn_Teach_Sneak_08_00"); //Jestli se chceš k nepâátelùm dostat nepozorovanê, musíš mêkce našlapovat.
+			AI_Output			(self, other, "DIA_Addon_Cavalorn_Teach_Sneak_08_00"); //Jestli se chceÅ¡ k nepÃ¢Ã¡telÅ¯m dostat nepozorovanÄ™, musÃ­Å¡ mÄ™kce naÅ¡lapovat.
 		};
 
 	DIA_Addon_Cavalorn_TEACH_Choices ();
@@ -1107,7 +1107,7 @@ FUNC VOID DIA_Addon_Cavalorn_Teach_Back ()
 	if (Addon_Cavalorn_Merke_Bow < other.HitChance[NPC_TALENT_BOW])
 	|| (Addon_Cavalorn_Merke_1h  < other.HitChance[NPC_TALENT_1H])
 	{
-		AI_Output (self ,other,"DIA_Addon_Cavalorn_Teach_BACK_08_00"); //Takhle je to lepší. Zapomnêl jsi toho spoustu, ale neboj, dáme to zas do kupy.
+		AI_Output (self ,other,"DIA_Addon_Cavalorn_Teach_BACK_08_00"); //Takhle je to lepÅ¡Ã­. ZapomnÄ™l jsi toho spoustu, ale neboj, dÃ¡me to zas do kupy.
 	};
 
 	Info_ClearChoices (DIA_Addon_Cavalorn_Teach);

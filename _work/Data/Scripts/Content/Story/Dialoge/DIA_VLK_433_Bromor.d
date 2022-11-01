@@ -30,7 +30,7 @@ instance DIA_Bromor_GIRLS		(C_INFO)
 	condition	 = 	DIA_Bromor_GIRLS_Condition;
 	information	 = 	DIA_Bromor_GIRLS_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ty to tady vedeš?";
+	description	 = 	"Ty to tady vedeÅ¡?";
 };
 
 func int DIA_Bromor_GIRLS_Condition ()
@@ -43,15 +43,15 @@ func int DIA_Bromor_GIRLS_Condition ()
 func void DIA_Bromor_GIRLS_Info ()
 {
 	//ADDON>
-	AI_Output (other, self, "DIA_Addon_Bromor_GIRLS_15_00"); //Ty patâíš k têm, co to tady vedou?
+	AI_Output (other, self, "DIA_Addon_Bromor_GIRLS_15_00"); //Ty patÃ¢Ã­Å¡ k tÄ™m, co to tady vedou?
 	//ADDON<
 
 	//AI_Output (other, self, "DIA_Bromor_GIRLS_15_00"); //Chci se trochu pobavit.
 	//AI_Output (self, other, "DIA_Bromor_GIRLS_07_01"); //Deshalb bist du ja hergekommen.
 
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_02"); //Jsem Bromor. Tohle je mùj dùm a tohle jsou moje holky. Mám je rád.
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_03"); //A jestli se líbí i tobê, pak za to musíš zaplatit - 50 zlaãákù.
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_04"); //A aã tê ani nenapadne dêlat tu nêjaký bordel.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_02"); //Jsem Bromor. Tohle je mÅ¯j dÅ¯m a tohle jsou moje holky. MÃ¡m je rÃ¡d.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_03"); //A jestli se lÃ­bÃ­ i tobÄ™, pak za to musÃ­Å¡ zaplatit - 50 zlaÄƒÃ¡kÅ¯.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_04"); //A aÄƒ tÄ™ ani nenapadne dÄ™lat tu nÄ™jakÃ½ bordel.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Addon_Bromor_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Bromor_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Bromor_MissingPeople_Info;
 
-	description	 = 	"V tom jsou zahrnuté i všechny tvoje holky?";
+	description	 = 	"V tom jsou zahrnutÃ© i vÅ¡echny tvoje holky?";
 };
 
 func int DIA_Addon_Bromor_MissingPeople_Condition ()
@@ -79,15 +79,15 @@ func int DIA_Addon_Bromor_MissingPeople_Condition ()
 
 func void DIA_Addon_Bromor_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_00"); //A jsou tu i všecky tvý holky?
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_01"); //Samozâejmê. Nebo si myslíš, že se nechám zavâít za to, že jim neplatím?
-	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_02"); //(naštvanê) No, já nemyslel tvou výplatní listinu. Myslím tím, jestli tu všechny JSOU. Nechybí ti nêkterá?
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_03"); //No, vlastnê ano. Jedna z mých holek se odsud vypaâila. Jmenovala se Lucia.
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_04"); //Nahlásil jsem to domobranê, ale tvrdili, že po ní zatím nenašli ani stopu.
+	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_00"); //A jsou tu i vÅ¡ecky tvÃ½ holky?
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_01"); //SamozÃ¢ejmÄ™. Nebo si myslÃ­Å¡, Å¾e se nechÃ¡m zavÃ¢Ã­t za to, Å¾e jim neplatÃ­m?
+	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_02"); //(naÅ¡tvanÄ™) No, jÃ¡ nemyslel tvou vÃ½platnÃ­ listinu. MyslÃ­m tÃ­m, jestli tu vÅ¡echny JSOU. NechybÃ­ ti nÄ™kterÃ¡?
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_03"); //No, vlastnÄ™ ano. Jedna z mÃ½ch holek se odsud vypaÃ¢ila. Jmenovala se Lucia.
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_04"); //NahlÃ¡sil jsem to domobranÄ™, ale tvrdili, Å¾e po nÃ­ zatÃ­m nenaÅ¡li ani stopu.
 	
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Z nevêstince dole v pâístavu zmizela prostitutka jménem Lucia."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Z nevÄ™stince dole v pÃ¢Ã­stavu zmizela prostitutka jmÃ©nem Lucia."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -100,7 +100,7 @@ instance DIA_Addon_Bromor_Lucia		(C_INFO)
 	condition	 = 	DIA_Addon_Bromor_Lucia_Condition;
 	information	 = 	DIA_Addon_Bromor_Lucia_Info;
 
-	description	 = 	"Jak dlouho už Lucii pohâešujete?";
+	description	 = 	"Jak dlouho uÅ¾ Lucii pohÃ¢eÅ¡ujete?";
 };
 
 func int DIA_Addon_Bromor_Lucia_Condition ()
@@ -115,16 +115,16 @@ func int DIA_Addon_Bromor_Lucia_Condition ()
 
 func void DIA_Addon_Bromor_Lucia_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bromor_Lucia_15_00"); //Jak dlouho už Lucii pohâešujete?
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_01"); //Pár dní. Vlastnê ani nevím, jak dlouho.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_02"); //Poèítám, že utekla s nêkterým ze svejch ctitelù.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_03"); //Ta mrcha mi èmajzla i èást mejch úspor. Fakt cennou zlatou mísu.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_04"); //Jestli ji dostanu do pazourù, ukážu jí, zaè je toho loket.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_05"); //A jak jdou kšefty TOBÊ? Dêláš si ze mê šoufky, nebo co?
+	AI_Output	(other, self, "DIA_Addon_Bromor_Lucia_15_00"); //Jak dlouho uÅ¾ Lucii pohÃ¢eÅ¡ujete?
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_01"); //PÃ¡r dnÃ­. VlastnÄ™ ani nevÃ­m, jak dlouho.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_02"); //PoÄÃ­tÃ¡m, Å¾e utekla s nÄ™kterÃ½m ze svejch ctitelÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_03"); //Ta mrcha mi Ämajzla i ÄÃ¡st mejch Ãºspor. Fakt cennou zlatou mÃ­su.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_04"); //Jestli ji dostanu do pazourÅ¯, ukÃ¡Å¾u jÃ­, zaÄ je toho loket.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_05"); //A jak jdou kÅ¡efty TOBÄ˜? DÄ™lÃ¡Å¡ si ze mÄ™ Å¡oufky, nebo co?
 
 	Log_CreateTopic (TOPIC_Addon_BromorsGold, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BromorsGold, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BromorsGold,"Prostitutka Lucia ukradla svému šéfovi Bromorovi zlatou mísu. Bromor ji chce zpátky."); 
+	B_LogEntry (TOPIC_Addon_BromorsGold,"Prostitutka Lucia ukradla svÃ©mu Å¡Ã©fovi Bromorovi zlatou mÃ­su. Bromor ji chce zpÃ¡tky."); 
 
 	MIS_Bromor_LuciaStoleGold = LOG_RUNNING;
 };
@@ -140,7 +140,7 @@ instance DIA_Addon_Bromor_LuciaGold		(C_INFO)
 	information	 = 	DIA_Addon_Bromor_LuciaGold_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Našel jsem tu mísu, co ti Lucia ukradla.";
+	description	 = 	"NaÅ¡el jsem tu mÃ­su, co ti Lucia ukradla.";
 };
 
 func int DIA_Addon_Bromor_LuciaGold_Condition ()
@@ -155,25 +155,25 @@ func int DIA_Addon_Bromor_LuciaGold_Condition ()
 
 func void DIA_Addon_Bromor_LuciaGold_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bromor_LuciaGold_15_00"); //Našel jsem tu zlatou mísu, co ti Lucia ukradla.
-	AI_Output	(self, other, "DIA_Addon_Bromor_LuciaGold_07_01"); //Výbornê! Nejvyšší èas, abych ji dostal zpátky.
+	AI_Output	(other, self, "DIA_Addon_Bromor_LuciaGold_15_00"); //NaÅ¡el jsem tu zlatou mÃ­su, co ti Lucia ukradla.
+	AI_Output	(self, other, "DIA_Addon_Bromor_LuciaGold_07_01"); //VÃ½bornÄ™! NejvyÅ¡Å¡Ã­ Äas, abych ji dostal zpÃ¡tky.
 	
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	if (Bromor_Hausverbot == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "A co takhle nêjakou odmênu?", DIA_Addon_Bromor_LuciaGold_lohn );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "A co takhle nÄ™jakou odmÄ™nu?", DIA_Addon_Bromor_LuciaGold_lohn );
 	};
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Tady máš tu svou mísu.", DIA_Addon_Bromor_LuciaGold_einfachgeben );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Tady mÃ¡Å¡ tu svou mÃ­su.", DIA_Addon_Bromor_LuciaGold_einfachgeben );
 	if (DIA_Addon_Bromor_LuciaGold_lucia_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "To se ani nezeptáš, co se stalo s Lucií?", DIA_Addon_Bromor_LuciaGold_lucia );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "To se ani nezeptÃ¡Å¡, co se stalo s LuciÃ­?", DIA_Addon_Bromor_LuciaGold_lucia );
 	};
 };
 func void DIA_Addon_Bromor_LuciaGold_einfachgeben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_einfachgeben_15_00"); //Tady máš tu svou mísu.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_einfachgeben_15_00"); //Tady mÃ¡Å¡ tu svou mÃ­su.
 	B_GiveInvItems (other, self, ItMi_BromorsGeld_Addon,1);
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_einfachgeben_07_01"); //Díky, to je od tebe velice štêdré. Ještê nêco?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_einfachgeben_07_01"); //DÃ­ky, to je od tebe velice Å¡tÄ™drÃ©. JeÅ¡tÄ™ nÄ™co?
 	MIS_Bromor_LuciaStoleGold = LOG_SUCCESS;
 	Bromor_Hausverbot = FALSE;
 	B_GivePlayerXP (XP_Addon_Bromor_LuciaGold);
@@ -182,44 +182,44 @@ func void DIA_Addon_Bromor_LuciaGold_einfachgeben ()
 var int DIA_Addon_Bromor_LuciaGold_lucia_OneTime;
 func void DIA_Addon_Bromor_LuciaGold_lucia ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lucia_15_00"); //To ani nechceš vêdêt, co se s Lucií stalo?
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_01"); //Ne, proè? Svou mísu jsem dostal zpátky, ne?
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_02"); //Zatím jsem se bez Lucie obešel a obejdu se bez ní i dál. Proè bych se teda mêl starat o to, aby se vrátila?
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lucia_15_00"); //To ani nechceÅ¡ vÄ™dÄ™t, co se s LuciÃ­ stalo?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_01"); //Ne, proÄ? Svou mÃ­su jsem dostal zpÃ¡tky, ne?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_02"); //ZatÃ­m jsem se bez Lucie obeÅ¡el a obejdu se bez nÃ­ i dÃ¡l. ProÄ bych se teda mÄ™l starat o to, aby se vrÃ¡tila?
 	DIA_Addon_Bromor_LuciaGold_lucia_OneTime = TRUE;
 };
 func void DIA_Addon_Bromor_LuciaGold_lohn ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lohn_15_00"); //A co takhle nêjakou odmênu?
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lohn_07_01"); //Mùžeš se pobavit s nêkterou z mých holek - zadarmo. Co ty na to?
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lohn_15_00"); //A co takhle nÄ™jakou odmÄ™nu?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lohn_07_01"); //MÅ¯Å¾eÅ¡ se pobavit s nÄ™kterou z mÃ½ch holek - zadarmo. Co ty na to?
 
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	if (DIA_Addon_Bromor_LuciaGold_lucia_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "To se ani nezeptáš, co se stalo s Lucií?", DIA_Addon_Bromor_LuciaGold_lucia );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "To se ani nezeptÃ¡Å¡, co se stalo s LuciÃ­?", DIA_Addon_Bromor_LuciaGold_lucia );
 	};	
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "To nestaèí.", DIA_Addon_Bromor_LuciaGold_mehr );
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "No dobâe. Tady máš tu svou mísu.", DIA_Addon_Bromor_LuciaGold_geben );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "To nestaÄÃ­.", DIA_Addon_Bromor_LuciaGold_mehr );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "No dobÃ¢e. Tady mÃ¡Å¡ tu svou mÃ­su.", DIA_Addon_Bromor_LuciaGold_geben );
 };
 func void DIA_Addon_Bromor_LuciaGold_mehr ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_mehr_15_00"); //To nestaèí.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_mehr_07_01"); //Ber, anebo už se tu víckrát neukazuj.
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Zapomeà na to.", DIA_Addon_Bromor_LuciaGold_nein );
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_mehr_15_00"); //To nestaÄÃ­.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_mehr_07_01"); //Ber, anebo uÅ¾ se tu vÃ­ckrÃ¡t neukazuj.
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "ZapomeÅ• na to.", DIA_Addon_Bromor_LuciaGold_nein );
 };
 func void DIA_Addon_Bromor_LuciaGold_nein ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_nein_15_00"); //Zapomeà na to.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_01"); //Pak odsud okamžitê vypadni, ty hajzle.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_02"); //A aã tê ani nenapadne dêlat tu nêjaký bordel.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_nein_15_00"); //ZapomeÅ• na to.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_01"); //Pak odsud okamÅ¾itÄ™ vypadni, ty hajzle.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_02"); //A aÄƒ tÄ™ ani nenapadne dÄ™lat tu nÄ™jakÃ½ bordel.
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	Bromor_Hausverbot = TRUE;
 	Bromor_Pay = 0;
 };
 func void DIA_Addon_Bromor_LuciaGold_geben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_geben_15_00"); //Dobrá, tady máš tu mísu.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_geben_15_00"); //DobrÃ¡, tady mÃ¡Å¡ tu mÃ­su.
 	B_GiveInvItems (other, self, ItMi_BromorsGeld_Addon,1);
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_geben_07_01"); //Díky. Bêž za Nadjou, doprovodí tê nahoru.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_geben_07_01"); //DÃ­ky. BÄ™Å¾ za Nadjou, doprovodÃ­ tÄ™ nahoru.
 	Bromor_Pay = 1; 
 	MIS_Bromor_LuciaStoleGold = LOG_SUCCESS;
 	Bromor_Hausverbot = FALSE;
@@ -237,7 +237,7 @@ instance DIA_Bromor_Pay		(C_INFO)
 	condition	 = 	DIA_Bromor_Pay_Condition;
 	information	 = 	DIA_Bromor_Pay_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chci se trochu pobavit (zaplatit 50 zlaãákù).";
+	description	 = 	"Chci se trochu pobavit (zaplatit 50 zlaÄƒÃ¡kÅ¯).";
 };
 
 func int DIA_Bromor_Pay_Condition ()
@@ -259,8 +259,8 @@ func void DIA_Bromor_Pay_Info ()
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 50)
 	{
-		AI_Output (self, other, "DIA_Bromor_Pay_07_01"); //Fajn (zašklebí se). Na následujících pár hodin nejspíš nikdy v životê nezapomeneš.
-		AI_Output (self, other, "DIA_Bromor_Pay_07_02"); //Vyjdi s Nadjou po schodech nahoru a užij si to!
+		AI_Output (self, other, "DIA_Bromor_Pay_07_01"); //Fajn (zaÅ¡klebÃ­ se). Na nÃ¡sledujÃ­cÃ­ch pÃ¡r hodin nejspÃ­Å¡ nikdy v Å¾ivotÄ™ nezapomeneÅ¡.
+		AI_Output (self, other, "DIA_Bromor_Pay_07_02"); //Vyjdi s Nadjou po schodech nahoru a uÅ¾ij si to!
 	
 		if (DIA_Bromor_Pay_OneTime == FALSE)
 		{
@@ -271,7 +271,7 @@ func void DIA_Bromor_Pay_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bromor_Pay_07_03"); //Nesnáším, když si ze mê nêkdo dêlá dobrý den. Jestli nemáš na zaplacení, tak odsud vymajzni.
+		AI_Output (self, other, "DIA_Bromor_Pay_07_03"); //NesnÃ¡Å¡Ã­m, kdyÅ¾ si ze mÄ™ nÄ™kdo dÄ™lÃ¡ dobrÃ½ den. Jestli nemÃ¡Å¡ na zaplacenÃ­, tak odsud vymajzni.
 	};
 	B_NpcClearObsessionByDMT (self);
 };
@@ -285,7 +285,7 @@ instance DIA_Bromor_DOPE		(C_INFO)
 	condition	 = 	DIA_Bromor_DOPE_Condition;
 	information	 = 	DIA_Bromor_DOPE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Mùžu tu dostat i nêjaké 'zvláštní' zboží?";
+	description	 = 	"MÅ¯Å¾u tu dostat i nÄ™jakÃ© 'zvlÃ¡Å¡tnÃ­' zboÅ¾Ã­?";
 };
 
 func int DIA_Bromor_DOPE_Condition ()
@@ -299,9 +299,9 @@ func int DIA_Bromor_DOPE_Condition ()
 };
 func void DIA_Bromor_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Bromor_DOPE_15_00"); //Mùžu tu dostat i nêjaké "zvláštní" zboží?
-	AI_Output (self, other, "DIA_Bromor_DOPE_07_01"); //Jasnê, všechny holky jsou zvláštní (zašklebí se).
-	AI_Output (self, other, "DIA_Bromor_DOPE_07_02"); //Jestli máš dost zlata, mùžeš jít s Nadjou nahoru.
+	AI_Output (other, self, "DIA_Bromor_DOPE_15_00"); //MÅ¯Å¾u tu dostat i nÄ™jakÃ© "zvlÃ¡Å¡tnÃ­" zboÅ¾Ã­?
+	AI_Output (self, other, "DIA_Bromor_DOPE_07_01"); //JasnÄ™, vÅ¡echny holky jsou zvlÃ¡Å¡tnÃ­ (zaÅ¡klebÃ­ se).
+	AI_Output (self, other, "DIA_Bromor_DOPE_07_02"); //Jestli mÃ¡Å¡ dost zlata, mÅ¯Å¾eÅ¡ jÃ­t s Nadjou nahoru.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -314,7 +314,7 @@ instance DIA_Bromor_Obsession		(C_INFO)
 	condition	 = 	DIA_Bromor_Obsession_Condition;
 	information	 = 	DIA_Bromor_Obsession_Info;
 
-	description	 = 	"Jsi v poâádku?";
+	description	 = 	"Jsi v poÃ¢Ã¡dku?";
 };
 
 func int DIA_Bromor_Obsession_Condition ()
@@ -345,7 +345,7 @@ instance DIA_Bromor_Heilung		(C_INFO)
 	information	 = 	DIA_Bromor_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ty jsi posedlý!";
+	description	 = 	"Ty jsi posedlÃ½!";
 };
 
 func int DIA_Bromor_Heilung_Condition ()
@@ -359,8 +359,8 @@ func int DIA_Bromor_Heilung_Condition ()
 
 func void DIA_Bromor_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Bromor_Heilung_15_00"); //Ty jsi posedlý.
-	AI_Output			(self, other, "DIA_Bromor_Heilung_07_01"); //Cože? O èem to mluvíš? Vypadni odsud!
+	AI_Output			(other, self, "DIA_Bromor_Heilung_15_00"); //Ty jsi posedlÃ½.
+	AI_Output			(self, other, "DIA_Bromor_Heilung_07_01"); //CoÅ¾e? O Äem to mluvÃ­Å¡? Vypadni odsud!
 	B_NpcClearObsessionByDMT (self);
 };
 
@@ -375,7 +375,7 @@ INSTANCE DIA_Bromor_PICKPOCKET (C_INFO)
 	condition	= DIA_Bromor_PICKPOCKET_Condition;
 	information	= DIA_Bromor_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Krádež tohoto klíèe by byla riskantní)";
+	description = "(KrÃ¡deÅ¾ tohoto klÃ­Äe by byla riskantnÃ­)";
 };                       
 
 FUNC INT DIA_Bromor_PICKPOCKET_Condition()

@@ -1,5 +1,5 @@
 func void B_IrrlichtBeep ()
 {
-	AI_Output (self ,other,"DIA_Wisp_15_00"); //(bruml·nÌ)
+	AI_Output (self ,other,"DIA_Wisp_15_00"); //(bruml√°n√≠)
 };
 

@@ -31,7 +31,7 @@ instance DIA_Bullco_Hallo		(C_INFO)
 	condition	= DIA_Bullco_Hallo_Condition;
 	information	= DIA_Bullco_Hallo_Info;
 	permanent	= TRUE;
-	description	= "MÍli bysme si spolu promluvit...";
+	description	= "Mƒôli bysme si spolu promluvit...";
 };
 
 func int DIA_Bullco_Hallo_Condition ()
@@ -41,14 +41,14 @@ func int DIA_Bullco_Hallo_Condition ()
 
 func void DIA_Bullco_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_HALLO_15_00"); //MÍli bychom si promluvit.
+	AI_Output (other, self, "DIA_Bullco_HALLO_15_00"); //Mƒôli bychom si promluvit.
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other, "DIA_Bullco_HALLO_06_01"); //Poslyö, vyhr·l jsi! TeÎ mne nech na pokoji.
+		AI_Output (self, other, "DIA_Bullco_HALLO_06_01"); //Posly≈°, vyhr√°l jsi! Te√´ mne nech na pokoji.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_HALLO_06_02"); //NevÍdÍl bych o Ëem.
+		AI_Output (self, other, "DIA_Bullco_HALLO_06_02"); //Nevƒôdƒôl bych o ƒçem.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -77,7 +77,7 @@ func int DIA_Bullco_Quatscher_Condition ()
 
 func void DIA_Bullco_Quatscher_Info ()
 {
-	AI_Output (self, other, "DIA_Bullco_Quatscher_06_00"); //Sylvio se nerad vybavuje. To bys teÎ snad uû mÍl vÍdÍt.
+	AI_Output (self, other, "DIA_Bullco_Quatscher_06_00"); //Sylvio se nerad vybavuje. To bys te√´ snad u≈æ mƒôl vƒôdƒôt.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "PEE");
@@ -114,10 +114,10 @@ func int DIA_Bullco_PleaseLeave_Condition ()
 
 func void DIA_Bullco_PleaseLeave_Info ()
 {
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_00"); //MusÌme si promluvit, ty a j·.
-	AI_Output (other, self, "DIA_Bullco_PleaseLeave_15_01"); //Co chceö?
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_02"); //MyslÌm, ûe nejlepöÌ by bylo, kdyby se tu na farmÍ tv˘j ksicht uû neuk·zal.
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_03"); //DohodnÍme se, ûe od zÌt‚ka tÍ tu uû nikdo neuvidÌ. RozumÌme si?
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_00"); //Mus√≠me si promluvit, ty a j√°.
+	AI_Output (other, self, "DIA_Bullco_PleaseLeave_15_01"); //Co chce≈°?
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_02"); //Mysl√≠m, ≈æe nejlep≈°√≠ by bylo, kdyby se tu na farmƒô tv≈Øj ksicht u≈æ neuk√°zal.
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_03"); //Dohodnƒôme se, ≈æe od z√≠t√¢ka tƒô tu u≈æ nikdo neuvid√≠. Rozum√≠me si?
 
 	Bullco_Leave_Day = B_GetDayPlus();	
 	Bullco_scharf = TRUE;
@@ -155,13 +155,13 @@ func void DIA_Bullco_DailyCheck_Info ()
 {
 	if (Bullco_HitCounter == 0)
 	{
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_00"); //Ty jsi po tom vöem jeötÍ tady?
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_01"); //Myslel jsem, ûe jsme se domluvili na tom, ûe se potichu vypa‚Ìö.
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_02"); //Opravdu jsi mÍ mÍl poslechnout.
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_00"); //Ty jsi po tom v≈°em je≈°tƒô tady?
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_01"); //Myslel jsem, ≈æe jsme se domluvili na tom, ≈æe se potichu vypa√¢√≠≈°.
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_02"); //Opravdu jsi mƒô mƒôl poslechnout.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_03"); //To snad nenÌ pravda! Ten klacek je po‚·d tady!
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_03"); //To snad nen√≠ pravda! Ten klacek je po√¢√°d tady!
 	};
 	
 	Bullco_HitCounter = Bullco_HitCounter + 1;
@@ -200,13 +200,13 @@ func void DIA_Bullco_WontLeave_Info ()
 
 	if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bullco_WontLeave_06_01"); //(povzdech) ¬ekl bych, ûe si o tom budeme muset znovu promluvit.
+		AI_Output (self, other, "DIA_Bullco_WontLeave_06_01"); //(povzdech) √Çekl bych, ≈æe si o tom budeme muset znovu promluvit.
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 1);		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_WontLeave_06_02"); //(mrzutÍ) Jo, jasnÍ, bÍû to ‚Ìct nÍkomu, koho to bude zajÌmat.
+		AI_Output (self, other, "DIA_Bullco_WontLeave_06_02"); //(mrzutƒô) Jo, jasnƒô, bƒô≈æ to √¢√≠ct nƒôkomu, koho to bude zaj√≠mat.
 		Bullco_scharf = FALSE;
 		AI_StopProcessInfos (self);
 	};
@@ -224,7 +224,7 @@ instance DIA_Bullco_PepesSchafe (C_INFO)
 	condition	= DIA_Bullco_PepesSchafe_Condition;
 	information	= DIA_Bullco_PepesSchafe_Info;
 	permanent	= FALSE;
-	description = "P‚ipomÌn· ti nÍco jmÈno Pepe?";
+	description = "P√¢ipom√≠n√° ti nƒôco jm√©no Pepe?";
 };
 
 func int DIA_Bullco_PepesSchafe_Condition ()
@@ -239,17 +239,17 @@ func int DIA_Bullco_PepesSchafe_Condition ()
 
 func void DIA_Bullco_PepesSchafe_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_00"); //P‚ipomÌn· ti nÍco jmÈno Pepe?
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_01"); //NerozumÌm sice tomu, o Ëem to v˘bec kec·ö, ale nelÌbÌ se mi tv˘j tÛn!
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_02"); //MÍl jsi hlÌdat jeho ovce.
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_03"); //ProË se m·m starat o jeho ovce?
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_04"); //Lee se o nÍ star·.
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_00"); //P√¢ipom√≠n√° ti nƒôco jm√©no Pepe?
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_01"); //Nerozum√≠m sice tomu, o ƒçem to v≈Øbec kec√°≈°, ale nel√≠b√≠ se mi tv≈Øj t√≥n!
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_02"); //Mƒôl jsi hl√≠dat jeho ovce.
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_03"); //Proƒç se m√°m starat o jeho ovce?
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_04"); //Lee se o nƒô star√°.
 	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_05"); //O co ti jde?
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_06"); //Jestli mÍ nep‚estaneö ötv·t, dohlÈdnu na to, abys ty ovce zaplatil.
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_07"); //Takûe pokud chceö dostat svoje penÌze, nech mÍ teÎ na pokoji!
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_08"); //(nazlobenÍ) Ty, ty...
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_09"); //(chladnÍ) Ano?
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_10"); //(pro sebe) Uboh˝ mal˝ Ëerve...
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_06"); //Jestli mƒô nep√¢estane≈° ≈°tv√°t, dohl√©dnu na to, abys ty ovce zaplatil.
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_07"); //Tak≈æe pokud chce≈° dostat svoje pen√≠ze, nech mƒô te√´ na pokoji!
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_08"); //(nazlobenƒô) Ty, ty...
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_09"); //(chladnƒô) Ano?
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_10"); //(pro sebe) Uboh√Ω mal√Ω ƒçerve...
 	
 	Bullco_scharf = FALSE;
 	B_GivePlayerXP (XP_Ambient);

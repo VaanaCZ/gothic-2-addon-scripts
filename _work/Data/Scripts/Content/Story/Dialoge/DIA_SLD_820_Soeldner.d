@@ -47,44 +47,44 @@ FUNC INT DIA_Sld_820_Halt_Condition()
 
 FUNC VOID DIA_Sld_820_Halt_Info()
 {	
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_00"); //Kam si myslíš, e jdeš?
-	AI_Output (other, self, "DIA_Sld_820_Halt_15_01"); //Dovnitâ, samozâejmê.
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_02"); //Onar nám neplatí za to, e sem pouštíme takovı otrapy jako ty!
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_00"); //Kam si myslÃ­Å¡, Å¾e jdeÅ¡?
+	AI_Output (other, self, "DIA_Sld_820_Halt_15_01"); //DovnitÃ¢, samozÃ¢ejmÄ™.
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_02"); //Onar nÃ¡m neplatÃ­ za to, Å¾e sem pouÅ¡tÃ­me takovÃ½ otrapy jako ty!
 
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Sld_820_Halt_07_03"); //Nechci tu vidêt nikoho z domobrany! - To jsou jeho vlastní slova.
+		AI_Output (self, other, "DIA_Sld_820_Halt_07_03"); //Nechci tu vidÄ™t nikoho z domobrany! - To jsou jeho vlastnÃ­ slova.
 	};
 
 	AI_Output (other, self, "DIA_Sld_820_Halt_15_04"); //Chci mluvit s Leem!
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_05"); //Co po nêm chceš?
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_05"); //Co po nÄ™m chceÅ¡?
 	
 	Info_ClearChoices (DIA_Sld_820_Halt);
-	Info_AddChoice (DIA_Sld_820_Halt, "Já se s ním znám u hroznê dlouho.", DIA_Sld_820_Halt_KenneLee);
+	Info_AddChoice (DIA_Sld_820_Halt, "JÃ¡ se s nÃ­m znÃ¡m uÅ¾ hroznÄ™ dlouho.", DIA_Sld_820_Halt_KenneLee);
 	if (other.guild == GIL_NONE)
 	{
-		Info_AddChoice (DIA_Sld_820_Halt, "Chci se pâidat k oldnéâùm!", DIA_Sld_820_Halt_WannaJoin);
+		Info_AddChoice (DIA_Sld_820_Halt, "Chci se pÃ¢idat k Å¾oldnÃ©Ã¢Å¯m!", DIA_Sld_820_Halt_WannaJoin);
 	};
 };
 
 func void B_Sld_820_LeeIsRight()
 {
-	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Lee je v pravém kâídle. Aã tê ani nenapadne zabloudit nêkam jinam!
+	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Lee je v pravÃ©m kÃ¢Ã­dle. AÄƒ tÄ™ ani nenapadne zabloudit nÄ™kam jinam!
 };
 
 func void DIA_Sld_820_Halt_WannaJoin()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //Chci se pâidat k oldnéâùm!
-	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //Á, další voják, kterého mùeme obêtovat! Tak pojë dál!
+	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //Chci se pÃ¢idat k Å¾oldnÃ©Ã¢Å¯m!
+	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //Ã, dalÅ¡Ã­ vojÃ¡k, kterÃ©ho mÅ¯Å¾eme obÄ™tovat! Tak pojÃ« dÃ¡l!
 	B_Sld_820_LeeIsRight();
-	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //Ale hlavnê nech na pokoji Onara! Nemá rád, kdy na nêj nêkdo mluví bez vyzvání. Zvlášã kdy jde o nêkoho jako ty.
+	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //Ale hlavnÄ™ nech na pokoji Onara! NemÃ¡ rÃ¡d, kdyÅ¾ na nÄ™j nÄ™kdo mluvÃ­ bez vyzvÃ¡nÃ­. ZvlÃ¡Å¡Äƒ kdyÅ¾ jde o nÄ™koho jako ty.
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Sld_820_Halt_KenneLee()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //Já se s ním znám u hroznê dlouho.
-	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //TY e jsi Leeùv kámoš? Nevêâím ti ani slovo! Ale klidnê pojë dál - jestli se na tebe nebude pamatovat, tak to poznáš hned! (smêje se)
+	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //JÃ¡ se s nÃ­m znÃ¡m uÅ¾ hroznÄ™ dlouho.
+	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //TY Å¾e jsi LeeÅ¯v kÃ¡moÅ¡? NevÄ™Ã¢Ã­m ti ani slovo! Ale klidnÄ™ pojÃ« dÃ¡l - jestli se na tebe nebude pamatovat, tak to poznÃ¡Å¡ hned! (smÄ™je se)
 	B_Sld_820_LeeIsRight();
 	AI_StopProcessInfos	(self);
 };
@@ -111,7 +111,7 @@ FUNC INT DIA_Sld_820_PERM_Condition()
 FUNC VOID DIA_Sld_820_PERM_Info()
 {	
 	AI_Output (other, self, "DIA_Sld_820_PERM_15_00"); //Jak se vede?
-	AI_Output (self, other, "DIA_Sld_820_PERM_07_01"); //Bê dál, jestli chceš, ale svı vásty si nech pro sebe.
+	AI_Output (self, other, "DIA_Sld_820_PERM_07_01"); //BÄ™Å¾ dÃ¡l, jestli chceÅ¡, ale svÃ½ Å¾vÃ¡sty si nech pro sebe.
 	AI_StopProcessInfos	(self);
 };
 

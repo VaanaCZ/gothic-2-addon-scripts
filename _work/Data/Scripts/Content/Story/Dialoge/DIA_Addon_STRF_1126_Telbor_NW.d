@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Telbor_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Telbor_NW_Hi_Condition;
 	information = DIA_Addon_Telbor_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "Tak uû zase mak·ö na poli?";
+	description = "Tak u≈æ zase mak√°≈° na poli?";
 };
 FUNC INT DIA_Addon_Telbor_NW_Hi_Condition()
 {		
@@ -72,13 +72,13 @@ FUNC INT DIA_Addon_Telbor_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Telbor_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Telbor_NW_Hi_15_00");//Tak uû zase pracujeö na polÌch?
-	AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_01");//A hele, to je ten, co mi zachr·nil ûivot! Jo, teÎ musÌm d‚Ìt trochu vÌc.
+	AI_Output (other, self, "DIA_Addon_Telbor_NW_Hi_15_00");//Tak u≈æ zase pracuje≈° na pol√≠ch?
+	AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_01");//A hele, to je ten, co mi zachr√°nil ≈æivot! Jo, te√´ mus√≠m d√¢√≠t trochu v√≠c.
 	
 	if !Npc_IsDead (Egill)
 	&& !Npc_IsDead (Ehnim)
 	{
-		AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_02");//Zvl·ö„ s tÍmahle dvÍma trhlejma br·chama. »oveËe, ti banditi nebyli zas TAK öpatn˝!
+		AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_02");//Zvl√°≈°ƒÉ s tƒômahle dvƒôma trhlejma br√°chama. ƒåoveƒçe, ti banditi nebyli zas TAK ≈°patn√Ω!
 	};
 };
 

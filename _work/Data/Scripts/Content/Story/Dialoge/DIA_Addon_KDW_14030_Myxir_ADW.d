@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Myxir_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_ADW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Myxir_ADWHello		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_ADWHello_Condition;
 	information	 = 	DIA_Addon_Myxir_ADWHello_Info;
 
-	description	 = 	"Objevili jste nêco nového?";
+	description	 = 	"Objevili jste nÄ™co novÃ©ho?";
 };
 
 func int DIA_Addon_Myxir_ADWHello_Condition ()
@@ -94,31 +94,31 @@ func int DIA_Addon_Myxir_ADWHello_Condition ()
 
 func void DIA_Addon_Myxir_ADWHello_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_00"); //Nêjaké nové objevy?
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_01"); //Stavitelé tohoto dávného mêsta mê fascinují!
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_02"); //Škoda e jejich jazyk je stejnê mrtvı jako oni.
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_03"); //(rozvánê) Zachránit je mohly pouze mocné obâady a vyvolávací rituály, které ovládali.
-	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_04"); //Vyvolávací rituály?
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_05"); //Stavitelé byli silnê napojeni na duchovní svêt.
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_06"); //Pokud jsem to dobâe pochopil, vêâili, e jsou v neustálém kontaktu se svımi pâedky.
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_07"); //Pravidelnê poâádali obâady, pâi nich vyvolávali duchy svıch pâedkù a ádali je o radu a osvícení.
+	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_00"); //NÄ™jakÃ© novÃ© objevy?
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_01"); //StavitelÃ© tohoto dÃ¡vnÃ©ho mÄ™sta mÄ™ fascinujÃ­!
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_02"); //Å koda Å¾e jejich jazyk je stejnÄ™ mrtvÃ½ jako oni.
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_03"); //(rozvÃ¡Å¾nÄ™) ZachrÃ¡nit je mohly pouze mocnÃ© obÃ¢ady a vyvolÃ¡vacÃ­ rituÃ¡ly, kterÃ© ovlÃ¡dali.
+	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_04"); //VyvolÃ¡vacÃ­ rituÃ¡ly?
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_05"); //StavitelÃ© byli silnÄ™ napojeni na duchovnÃ­ svÄ™t.
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_06"); //Pokud jsem to dobÃ¢e pochopil, vÄ™Ã¢ili, Å¾e jsou v neustÃ¡lÃ©m kontaktu se svÃ½mi pÃ¢edky.
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_07"); //PravidelnÄ™ poÃ¢Ã¡dali obÃ¢ady, pÃ¢i nichÅ¾ vyvolÃ¡vali duchy svÃ½ch pÃ¢edkÅ¯ a Å¾Ã¡dali je o radu a osvÃ­cenÃ­.
 
 	Info_ClearChoices	(DIA_Addon_Myxir_ADWHello);
-	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "A jak to vyvolávání duchù funguje?", DIA_Addon_Myxir_ADWHello_wie );
-	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "Nemrtví, které znám, toho obvykle moc nenamluví.", DIA_Addon_Myxir_ADWHello_Watt );
+	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "A jak to vyvolÃ¡vÃ¡nÃ­ duchÅ¯ funguje?", DIA_Addon_Myxir_ADWHello_wie );
+	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "NemrtvÃ­, kterÃ© znÃ¡m, toho obvykle moc nenamluvÃ­.", DIA_Addon_Myxir_ADWHello_Watt );
 };
 func void DIA_Addon_Myxir_ADWHello_wie ()
 {
-	AI_Output			(other, self, "DIA_Addon_Myxir_ADWHello_wie_15_00"); //A jak to vyvolávání duchù funguje?
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_wie_12_01"); //Stráci smrti mêli zvláštní formule, kterımi ovládali duchy.
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_wie_12_02"); //Ale nápisy, které jsem tu našel, mê trochu matou. Jen vzácnê v nich najdu jasnou odpovêë na své otázky.
+	AI_Output			(other, self, "DIA_Addon_Myxir_ADWHello_wie_15_00"); //A jak to vyvolÃ¡vÃ¡nÃ­ duchÅ¯ funguje?
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_wie_12_01"); //StrÃ¡Å¾ci smrti mÄ™li zvlÃ¡Å¡tnÃ­ formule, kterÃ½mi ovlÃ¡dali duchy.
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_wie_12_02"); //Ale nÃ¡pisy, kterÃ© jsem tu naÅ¡el, mÄ™ trochu matou. Jen vzÃ¡cnÄ™ v nich najdu jasnou odpovÄ™Ã« na svÃ© otÃ¡zky.
 };
 func void DIA_Addon_Myxir_ADWHello_Watt ()
 {
-	AI_Output			(other, self, "DIA_Addon_Myxir_ADWHello_Watt_15_00"); //Nemrtví, které znám, nikdy nemêli mnoho co âíct.
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_01"); //Stavitelé ale nevytváâeli bezduché nemrtvé jako zombie nebo podobné stvùry.
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_02"); //Šlo o duchy velkıch váleèníkù, knêzù a vládcù.
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_03"); //Zatím nepochybuji, e skuteènê existovali.
+	AI_Output			(other, self, "DIA_Addon_Myxir_ADWHello_Watt_15_00"); //NemrtvÃ­, kterÃ© znÃ¡m, nikdy nemÄ™li mnoho co Ã¢Ã­ct.
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_01"); //StavitelÃ© ale nevytvÃ¡Ã¢eli bezduchÃ© nemrtvÃ© jako zombie nebo podobnÃ© stvÅ¯ry.
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_02"); //Å lo o duchy velkÃ½ch vÃ¡leÄnÃ­kÅ¯, knÄ™zÅ¯ a vlÃ¡dcÅ¯.
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_03"); //ZatÃ­m nepochybuji, Å¾e skuteÄnÄ™ existovali.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -132,7 +132,7 @@ instance DIA_Addon_Myxir_PermADW		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_PermADW_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Kdybych nêkdy nêjakého ducha potkal, dám ti vêdêt.";
+	description	 = 	"Kdybych nÄ™kdy nÄ™jakÃ©ho ducha potkal, dÃ¡m ti vÄ™dÄ™t.";
 };
 func int DIA_Addon_Myxir_PermADW_Condition ()
 {
@@ -144,8 +144,8 @@ func int DIA_Addon_Myxir_PermADW_Condition ()
 };
 func void DIA_Addon_Myxir_PermADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_PermADW_15_00"); //A uvidím ducha, dám ti vêdêt.
-	AI_Output	(self, other, "DIA_Addon_Myxir_PermADW_12_01"); //(smêje se) Ano, na tom trvám.
+	AI_Output	(other, self, "DIA_Addon_Myxir_PermADW_15_00"); //AÅ¾ uvidÃ­m ducha, dÃ¡m ti vÄ™dÄ™t.
+	AI_Output	(self, other, "DIA_Addon_Myxir_PermADW_12_01"); //(smÄ™je se) Ano, na tom trvÃ¡m.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info GeistTafel
@@ -157,7 +157,7 @@ instance DIA_Addon_Myxir_GeistTafel		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_GeistTafel_Condition;
 	information	 = 	DIA_Addon_Myxir_GeistTafel_Info;
 
-	description	 = 	"Posílá mê Saturas.";
+	description	 = 	"PosÃ­lÃ¡ mÄ™ Saturas.";
 };
 
 func int DIA_Addon_Myxir_GeistTafel_Condition ()
@@ -171,63 +171,63 @@ func int DIA_Addon_Myxir_GeistTafel_Condition ()
 
 func void DIA_Addon_Myxir_GeistTafel_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_00"); //Posílá mê Saturas.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_01"); //Havran se dostal do chrámu a zablokoval portál zevnitâ.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_02"); //Saturas si myslí, e informaci o tom chrámu získal od ducha.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_03"); //(zaraenê) Pâi Adanovi! 
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_04"); //Urèitê vyvolal veleknêze Khardimona a ptal se ho na cestu do chrámu.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_05"); //Podle záznamù je jeho hrob v jeskyních pod pevností.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_06"); //A ty udêláš to samé.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_07"); //Ale Khardimona u se dál ptát nemùeš.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_08"); //Hrob prince-váleèníka Quarhodrona by mêl bıt na západê údolí.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_09"); //Budeš ho muset najít a Quarhodrona probudit.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_10"); //Tyto nápisy hovoâí o tom, e ducha mùe vyvolat pouze ten, kdo vêâí v Adana.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_11"); //Vánê myslíš, e to bude fungovat?
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_12"); //U jsem pâeèetl spoustu šílenıch blábolù.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_13"); //Napâíklad záznamy Y'Beriona, vùdce Spáèova bratrstva.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_14"); //Ale autorovi TÊCHTO záznamù vêâím kadé slovo.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_00"); //PosÃ­lÃ¡ mÄ™ Saturas.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_01"); //Havran se dostal do chrÃ¡mu a zablokoval portÃ¡l zevnitÃ¢.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_02"); //Saturas si myslÃ­, Å¾e informaci o tom chrÃ¡mu zÃ­skal od ducha.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_03"); //(zaraÅ¾enÄ™) PÃ¢i Adanovi! 
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_04"); //UrÄitÄ™ vyvolal veleknÄ™ze Khardimona a ptal se ho na cestu do chrÃ¡mu.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_05"); //Podle zÃ¡znamÅ¯ je jeho hrob v jeskynÃ­ch pod pevnostÃ­.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_06"); //A ty udÄ™lÃ¡Å¡ to samÃ©.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_07"); //Ale Khardimona uÅ¾ se dÃ¡l ptÃ¡t nemÅ¯Å¾eÅ¡.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_08"); //Hrob prince-vÃ¡leÄnÃ­ka Quarhodrona by mÄ™l bÃ½t na zÃ¡padÄ™ ÃºdolÃ­.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_09"); //BudeÅ¡ ho muset najÃ­t a Quarhodrona probudit.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_10"); //Tyto nÃ¡pisy hovoÃ¢Ã­ o tom, Å¾e ducha mÅ¯Å¾e vyvolat pouze ten, kdo vÄ™Ã¢Ã­ v Adana.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_11"); //VÃ¡Å¾nÄ™ myslÃ­Å¡, Å¾e to bude fungovat?
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_12"); //UÅ¾ jsem pÃ¢eÄetl spoustu Å¡Ã­lenÃ½ch blÃ¡bolÅ¯.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_13"); //NapÃ¢Ã­klad zÃ¡znamy Y'Beriona, vÅ¯dce SpÃ¡Äova bratrstva.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_14"); //Ale autorovi TÄ˜CHTO zÃ¡znamÅ¯ vÄ™Ã¢Ã­m kaÅ¾dÃ© slovo.
 	
 	MIS_ADDON_Myxir_GeistBeschwoeren = LOG_RUNNING;
 
 	Info_ClearChoices	(DIA_Addon_Myxir_GeistTafel);
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "To myslíš vánê?", DIA_Addon_Myxir_GeistTafel_geist );
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Proè Quarhodron? Proè ne veleknêz Khardimon?", DIA_Addon_Myxir_GeistTafel_Khardimon );
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Bratrstvo Spáèe nehlásalo JENOM li.", DIA_Addon_Myxir_GeistTafel_psi );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "To myslÃ­Å¡ vÃ¡Å¾nÄ™?", DIA_Addon_Myxir_GeistTafel_geist );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "ProÄ Quarhodron? ProÄ ne veleknÄ™z Khardimon?", DIA_Addon_Myxir_GeistTafel_Khardimon );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Bratrstvo SpÃ¡Äe nehlÃ¡salo JENOM lÅ¾i.", DIA_Addon_Myxir_GeistTafel_psi );
 };
 
 func void DIA_Addon_Myxir_GeistTafel_Khardimon ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_Khardimon_15_00"); //Proè Quarhodron? Proè ne veleknêz Khardimon?
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_01"); //Havran tím vyvoláváním Khardimonovu hrobku znesvêtil. To musíme brát v potaz.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_02"); //Budeme se muset poohlédnout po jiném duchovi.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_Khardimon_15_00"); //ProÄ Quarhodron? ProÄ ne veleknÄ™z Khardimon?
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_01"); //Havran tÃ­m vyvolÃ¡vÃ¡nÃ­m Khardimonovu hrobku znesvÄ™til. To musÃ­me brÃ¡t v potaz.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_02"); //Budeme se muset poohlÃ©dnout po jinÃ©m duchovi.
 };
 func void DIA_Addon_Myxir_GeistTafel_psi ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_psi_15_00"); //Spáèovo bratrstvo nešíâilo POUZE li. Spáè opravdu existoval.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_01"); //Ale jejich li nebyly tak nepravdêpodobné jako samotná jejich slova.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_02"); //Byli tak zmatení, e si to ani nedovedeš pâedstavit. Kouâili moc té své trávy z bain.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_03"); //Slova na této kamenné tabulce hovoâí vánê a prozíravê. A to mê utvrzuje v pâesvêdèení, e TENTO èlovêk hovoâil pravdu.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_psi_15_00"); //SpÃ¡Äovo bratrstvo neÅ¡Ã­Ã¢ilo POUZE lÅ¾i. SpÃ¡Ä opravdu existoval.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_01"); //Ale jejich lÅ¾i nebyly tak nepravdÄ™podobnÃ© jako samotnÃ¡ jejich slova.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_02"); //Byli tak zmatenÃ­, Å¾e si to ani nedovedeÅ¡ pÃ¢edstavit. KouÃ¢ili moc tÃ© svÃ© trÃ¡vy z baÅ¾in.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_03"); //Slova na tÃ©to kamennÃ© tabulce hovoÃ¢Ã­ vÃ¡Å¾nÄ™ a prozÃ­ravÄ™. A to mÄ™ utvrzuje v pÃ¢esvÄ™dÄenÃ­, Å¾e TENTO ÄlovÄ™k hovoÃ¢il pravdu.
 };
 func void DIA_Addon_Myxir_GeistTafel_geist ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_geist_15_00"); //To opravdu myslíš vánê?
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_01"); //Chci prošetâit kadou monost.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_02"); //Je to jediná pâíleitost, jak se setkat s jedním ze stavitelù – i kdy je to pouze duch. Tak proè jí nevyuít.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_03"); //Havran to kadopádnê dokázal.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_geist_15_00"); //To opravdu myslÃ­Å¡ vÃ¡Å¾nÄ™?
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_01"); //Chci proÅ¡etÃ¢it kaÅ¾dou moÅ¾nost.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_02"); //Je to jedinÃ¡ pÃ¢Ã­leÅ¾itost, jak se setkat s jednÃ­m ze stavitelÅ¯ â€“ i kdyÅ¾ je to pouze duch. Tak proÄ jÃ­ nevyuÅ¾Ã­t.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_03"); //Havran to kaÅ¾dopÃ¡dnÄ™ dokÃ¡zal.
 	
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Âeknême, e bych chtêl toho ducha vyvolat...", DIA_Addon_Myxir_GeistTafel_wie );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Ã‚eknÄ™me, Å¾e bych chtÄ™l toho ducha vyvolat...", DIA_Addon_Myxir_GeistTafel_wie );
 };
 func void DIA_Addon_Myxir_GeistTafel_wie ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_wie_15_00"); //Co musím udêlat, abych toho ducha vyvolal?
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_01"); //Quarhodronùv hrob najdeš na západê údolí.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_02"); //Jeho ducha lze vyvolat slovy strácù smrti, která jsem ti tu napsal.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_wie_15_00"); //Co musÃ­m udÄ™lat, abych toho ducha vyvolal?
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_01"); //QuarhodronÅ¯v hrob najdeÅ¡ na zÃ¡padÄ™ ÃºdolÃ­.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_02"); //Jeho ducha lze vyvolat slovy strÃ¡Å¾cÅ¯ smrti, kterÃ¡ jsem ti tu napsal.
 	CreateInvItems (self, ItWr_Addon_SUMMONANCIENTGHOST, 1);									
 	B_GiveInvItems (self, other, ItWr_Addon_SUMMONANCIENTGHOST, 1);		
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_03"); //To je všechno. Teë zbıvá u jen najít hrob.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_04"); //Hodnê štêstí, synu.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_03"); //To je vÅ¡echno. TeÃ« zbÃ½vÃ¡ uÅ¾ jen najÃ­t hrob.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_04"); //HodnÄ™ Å¡tÄ™stÃ­, synu.
 
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Myxir chce, abych probudil ducha prince Quarhodrona a poádal ho o radu. Dal mi svitek se zaklínadlem, které mám nahlas pâeèíst u Quarhodronova hrobu na západê."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Myxir chce, abych probudil ducha prince Quarhodrona a poÅ¾Ã¡dal ho o radu. Dal mi svitek se zaklÃ­nadlem, kterÃ© mÃ¡m nahlas pÃ¢eÄÃ­st u Quarhodronova hrobu na zÃ¡padÄ™."); 
 
 	Info_ClearChoices	(DIA_Addon_Myxir_GeistTafel);
 };
@@ -242,7 +242,7 @@ instance DIA_Addon_Myxir_GeistPerm		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_GeistPerm_Condition;
 	information	 = 	DIA_Addon_Myxir_GeistPerm_Info;
 
-	description	 = 	"Mùeš mi ještê zopakovat, co to bylo s tím váleènickım princem Quarhodronem?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mi jeÅ¡tÄ™ zopakovat, co to bylo s tÃ­m vÃ¡leÄnickÃ½m princem Quarhodronem?";
 };
 
 func int DIA_Addon_Myxir_GeistPerm_Condition ()
@@ -255,9 +255,9 @@ func int DIA_Addon_Myxir_GeistPerm_Condition ()
 
 func void DIA_Addon_Myxir_GeistPerm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistPerm_15_00"); //Mùeš mi ještê zopakovat, jak to bylo s princem Quarhodronem?
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_01"); //Musíš najít jeho hrob a slovy strácù smrti vyvolat jeho ducha.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_02"); //Ta slova jsem ti tady zapsal. Staèí je nahlas pâeèíst.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistPerm_15_00"); //MÅ¯Å¾eÅ¡ mi jeÅ¡tÄ™ zopakovat, jak to bylo s princem Quarhodronem?
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_01"); //MusÃ­Å¡ najÃ­t jeho hrob a slovy strÃ¡Å¾cÅ¯ smrti vyvolat jeho ducha.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_02"); //Ta slova jsem ti tady zapsal. StaÄÃ­ je nahlas pÃ¢eÄÃ­st.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -270,7 +270,7 @@ instance DIA_Addon_Myxir_TalkedToGhost		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_TalkedToGhost_Condition;
 	information	 = 	DIA_Addon_Myxir_TalkedToGhost_Info;
 
-	description	 = 	"Hovoâil jsem s Quarhodronem.";
+	description	 = 	"HovoÃ¢il jsem s Quarhodronem.";
 };
 func int DIA_Addon_Myxir_TalkedToGhost_Condition ()
 {
@@ -282,10 +282,10 @@ func int DIA_Addon_Myxir_TalkedToGhost_Condition ()
 };
 func void DIA_Addon_Myxir_TalkedToGhost_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_00"); //Hovoâil jsem s Quarhodronem.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_01"); //(nadšenê) Take jsi ho doopravdy probudil z mrtvıch?
-	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_02"); //To je neuvêâitelné. Ti stavitelé mê èím dál víc pâekvapují.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_03"); //Kdo ví, co mohli dokázat, kdyby ještê existovali.
+	AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_00"); //HovoÃ¢il jsem s Quarhodronem.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_01"); //(nadÅ¡enÄ™) TakÅ¾e jsi ho doopravdy probudil z mrtvÃ½ch?
+	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_02"); //To je neuvÄ™Ã¢itelnÃ©. Ti stavitelÃ© mÄ™ ÄÃ­m dÃ¡l vÃ­c pÃ¢ekvapujÃ­.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_03"); //Kdo vÃ­, co mohli dokÃ¡zat, kdyby jeÅ¡tÄ™ existovali.
 	MIS_ADDON_Myxir_GeistBeschwoeren = LOG_SUCCESS;
 	
 	B_GivePlayerXP (XP_Addon_Myxir_GeistBeschwoeren);
@@ -293,11 +293,11 @@ func void DIA_Addon_Myxir_TalkedToGhost_Info ()
 	if (Saturas_KnowsHow2GetInTempel == FALSE)
 	&&	(Ghost_SCKnowsHow2GetInAdanosTempel == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_04"); //A co ten duch povídal?
-		AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_05"); //Dal mi nêco, co mi pomùe dostat se do Adanova chrámu.
-		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_06"); //Pak bê rovnou za Saturasem. Tvé informace ho urèitê budou zajímat.
+		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_04"); //A co ten duch povÃ­dal?
+		AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_05"); //Dal mi nÄ™co, co mi pomÅ¯Å¾e dostat se do Adanova chrÃ¡mu.
+		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_06"); //Pak bÄ™Å¾ rovnou za Saturasem. TvÃ© informace ho urÄitÄ™ budou zajÃ­mat.
 
-		B_LogEntry (TOPIC_Addon_Quarhodron,"Mêl bych Saturasovi oznámit, e jsem probudil Quarhodrona."); 
+		B_LogEntry (TOPIC_Addon_Quarhodron,"MÄ™l bych Saturasovi oznÃ¡mit, Å¾e jsem probudil Quarhodrona."); 
 	};
 };
 
@@ -310,7 +310,7 @@ instance DIA_Addon_Myxir_ADW_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_ADW_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nauè mê tomu jazyku.";
+	description	 = 	"NauÄ mÄ™ tomu jazyku.";
 };
 
 var int DIA_Addon_Myxir_ADW_Teach_NoPerm;

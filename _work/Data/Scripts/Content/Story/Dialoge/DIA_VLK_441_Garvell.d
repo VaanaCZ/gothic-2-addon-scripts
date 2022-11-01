@@ -31,7 +31,7 @@ INSTANCE DIA_Garvell_PICKPOCKET (C_INFO)
 	condition	= DIA_Garvell_PICKPOCKET_Condition;
 	information	= DIA_Garvell_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Ukrást mu penêenku by mêlo bıt lehké jak hraèka.)";
+	description = "(UkrÃ¡st mu penÄ™Å¾enku by mÄ™lo bÃ½t lehkÃ© jak hraÄka.)";
 };                       
 
 FUNC INT DIA_Garvell_PICKPOCKET_Condition()
@@ -83,7 +83,7 @@ instance DIA_Garvell_GREET		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Garvell_GREET_Condition;
 	information	 = 	DIA_Garvell_GREET_Info;
-	description	 = 	"Co tady dêláš?";
+	description	 = 	"Co tady dÄ™lÃ¡Å¡?";
 };
 func int DIA_Garvell_GREET_Condition ()
 {	
@@ -94,9 +94,9 @@ func int DIA_Garvell_GREET_Condition ()
 };
 func void DIA_Garvell_GREET_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_GREET_15_00"); //Co tady dêláš?
-	AI_Output (self, other, "DIA_Garvell_GREET_04_01"); //Stavím loë, protoe se chci odsud dostat - co nejrychleji to pùjde.
-	AI_Output (self, other, "DIA_Garvell_GREET_04_02"); //Ale jak to tak vypadá, tu loë nikdy nedokonèím.
+	AI_Output (other, self, "DIA_Garvell_GREET_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output (self, other, "DIA_Garvell_GREET_04_01"); //StavÃ­m loÃ«, protoÅ¾e se chci odsud dostat - co nejrychleji to pÅ¯jde.
+	AI_Output (self, other, "DIA_Garvell_GREET_04_02"); //Ale jak to tak vypadÃ¡, tu loÃ« nikdy nedokonÄÃ­m.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info eilig
@@ -107,7 +107,7 @@ instance DIA_Garvell_eilig		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Garvell_eilig_Condition;
 	information	 = 	DIA_Garvell_eilig_Info;
-	description	 = 	"Proè tolik pospícháš?";
+	description	 = 	"ProÄ tolik pospÃ­chÃ¡Å¡?";
 };
 func int DIA_Garvell_eilig_Condition ()
 {	
@@ -118,11 +118,11 @@ func int DIA_Garvell_eilig_Condition ()
 };
 func void DIA_Garvell_eilig_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_eilig_15_00"); //Proè tolik pospícháš?
-	AI_Output (self, other, "DIA_Garvell_eilig_04_01"); //Co nevidêt dorazí skâeti a srovnají mêsto se zemí.
-	AI_Output (other, self, "DIA_Garvell_eilig_15_02"); //Proè si to myslíš?
-	AI_Output (self, other, "DIA_Garvell_eilig_04_03"); //Hochu, copak jsi nevidêl ty paladiny, co pobíhaj všude kolem? Proè si myslíš, ze jsou tady?
-	AI_Output (self, other, "DIA_Garvell_eilig_04_04"); //Âíkám ti, jsou tady, protoe skâeti brzy zaútoèí. A nebude to nic hezkého.
+	AI_Output (other, self, "DIA_Garvell_eilig_15_00"); //ProÄ tolik pospÃ­chÃ¡Å¡?
+	AI_Output (self, other, "DIA_Garvell_eilig_04_01"); //Co nevidÄ™t dorazÃ­ skÃ¢eti a srovnajÃ­ mÄ™sto se zemÃ­.
+	AI_Output (other, self, "DIA_Garvell_eilig_15_02"); //ProÄ si to myslÃ­Å¡?
+	AI_Output (self, other, "DIA_Garvell_eilig_04_03"); //Hochu, copak jsi nevidÄ™l ty paladiny, co pobÃ­haj vÅ¡ude kolem? ProÄ si myslÃ­Å¡, ze jsou tady?
+	AI_Output (self, other, "DIA_Garvell_eilig_04_04"); //Ã‚Ã­kÃ¡m ti, jsou tady, protoÅ¾e skÃ¢eti brzy zaÃºtoÄÃ­. A nebude to nic hezkÃ©ho.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -134,7 +134,7 @@ instance DIA_Garvell_Schiff		(C_INFO)
 	nr			 = 	99;
 	condition	 = 	DIA_Garvell_Schiff_Condition;
 	information	 = 	DIA_Garvell_Schiff_Info;
-	description	 = 	"Proè nemùeš dokonèit loë?";
+	description	 = 	"ProÄ nemÅ¯Å¾eÅ¡ dokonÄit loÃ«?";
 };
 func int DIA_Garvell_Schiff_Condition ()
 {	
@@ -145,12 +145,12 @@ func int DIA_Garvell_Schiff_Condition ()
 };
 func void DIA_Garvell_Schiff_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_Schiff_15_00"); //Proè nemùeš dokonèit loë?
-	AI_Output (self, other, "DIA_Garvell_Schiff_04_01"); //(pohrdavê) Máme milión problémù. Trup ještê není dostateènê pevnı a poâád nám ještê chybí spousta fošen.
-	AI_Output (self, other, "DIA_Garvell_Schiff_04_02"); //Ale na novı materiál u nemám moc zlata, a poslední dodávka byla prolezlá èervotoèem.
-	AI_Output (self, other, "DIA_Garvell_Schiff_04_03"); //Moji chlapi nepracujou poâádnê. Jeden chce jen rychlou loë a druhı se zase zajímá jen o její vızdobu!
-	AI_Output (self, other, "DIA_Garvell_Schiff_04_04"); //Jako kdybychom nemêli dùleitêjší vêci na práci!
-	AI_Output (self, other, "DIA_Addon_Garvell_Schiff_04_00"); //A jeden z mıch lidí najednou úplnê pâestal chodit do práce. Zaèínám mít obavy, e s takovou se naše práce ještê víc opozdí.
+	AI_Output (other, self, "DIA_Garvell_Schiff_15_00"); //ProÄ nemÅ¯Å¾eÅ¡ dokonÄit loÃ«?
+	AI_Output (self, other, "DIA_Garvell_Schiff_04_01"); //(pohrdavÄ™) MÃ¡me miliÃ³n problÃ©mÅ¯. Trup jeÅ¡tÄ™ nenÃ­ dostateÄnÄ™ pevnÃ½ a poÃ¢Ã¡d nÃ¡m jeÅ¡tÄ™ chybÃ­ spousta foÅ¡en.
+	AI_Output (self, other, "DIA_Garvell_Schiff_04_02"); //Ale na novÃ½ materiÃ¡l uÅ¾ nemÃ¡m moc zlata, a poslednÃ­ dodÃ¡vka byla prolezlÃ¡ ÄervotoÄem.
+	AI_Output (self, other, "DIA_Garvell_Schiff_04_03"); //Moji chlapi nepracujou poÃ¢Ã¡dnÄ™. Jeden chce jen rychlou loÃ« a druhÃ½ se zase zajÃ­mÃ¡ jen o jejÃ­ vÃ½zdobu!
+	AI_Output (self, other, "DIA_Garvell_Schiff_04_04"); //Jako kdybychom nemÄ™li dÅ¯leÅ¾itÄ™jÅ¡Ã­ vÄ™ci na prÃ¡ci!
+	AI_Output (self, other, "DIA_Addon_Garvell_Schiff_04_00"); //A jeden z mÃ½ch lidÃ­ najednou ÃºplnÄ™ pÃ¢estal chodit do prÃ¡ce. ZaÄÃ­nÃ¡m mÃ­t obavy, Å¾e s takovou se naÅ¡e prÃ¡ce jeÅ¡tÄ™ vÃ­c opozdÃ­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -163,7 +163,7 @@ instance DIA_Addon_Garvell_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Garvell_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Garvell_MissingPeople_Info;
 
-	description	 = 	"Tobê chybí nêjakı dêlník?";
+	description	 = 	"TobÄ™ chybÃ­ nÄ™jakÃ½ dÄ™lnÃ­k?";
 };
 
 func int DIA_Addon_Garvell_MissingPeople_Condition ()
@@ -178,32 +178,32 @@ func int DIA_Addon_Garvell_MissingPeople_Condition ()
 
 func void DIA_Addon_Garvell_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Garvell_MissingPeople_15_00"); //Ty jsi pâišel o dêlníka?
-	AI_Output	(self, other, "DIA_Addon_Garvell_MissingPeople_04_01"); //Jo. Jmenuje se Monty a zmizel jako pára nad hrncem.
-	AI_Output	(self, other, "DIA_Addon_Garvell_MissingPeople_04_02"); //Ten línej šmejd nejspíš odtáhnul nêkam na statek a tam si ije jako prase v itê. Nikdy jsem mu nemêl platit dopâedu.
+	AI_Output	(other, self, "DIA_Addon_Garvell_MissingPeople_15_00"); //Ty jsi pÃ¢iÅ¡el o dÄ™lnÃ­ka?
+	AI_Output	(self, other, "DIA_Addon_Garvell_MissingPeople_04_01"); //Jo. Jmenuje se Monty a zmizel jako pÃ¡ra nad hrncem.
+	AI_Output	(self, other, "DIA_Addon_Garvell_MissingPeople_04_02"); //Ten lÃ­nej Å¡mejd nejspÃ­Å¡ odtÃ¡hnul nÄ™kam na statek a tam si Å¾ije jako prase v Å¾itÄ™. Nikdy jsem mu nemÄ™l platit dopÃ¢edu.
 	
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Garvell si stêuje, e jeho dêlník Monty se u celı den neukázal v práci. Domnívá se, e si teë ije na vysoké noze nêkde s nêjakımi sedláky."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Garvell si stÄ™Å¾uje, Å¾e jeho dÄ™lnÃ­k Monty se uÅ¾ celÃ½ den neukÃ¡zal v prÃ¡ci. DomnÃ­vÃ¡ se, Å¾e si teÃ« Å¾ije na vysokÃ© noze nÄ™kde s nÄ™jakÃ½mi sedlÃ¡ky."); 
 
 	Info_ClearChoices	(DIA_Addon_Garvell_MissingPeople);
-	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "Slyšel jsem, e se pohâešují i nêjací další lidé.", DIA_Addon_Garvell_MissingPeople_more );
+	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "SlyÅ¡el jsem, Å¾e se pohÃ¢eÅ¡ujÃ­ i nÄ™jacÃ­ dalÅ¡Ã­ lidÃ©.", DIA_Addon_Garvell_MissingPeople_more );
 	if (SCKnowsFarimAsWilliamsFriend == FALSE)
 	{
-	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "Kdy jsi Montyho vidêl naposled?", DIA_Addon_Garvell_MissingPeople_wo );
+	Info_AddChoice	(DIA_Addon_Garvell_MissingPeople, "Kdy jsi Montyho vidÄ™l naposled?", DIA_Addon_Garvell_MissingPeople_wo );
 	};
 };
 func void DIA_Addon_Garvell_MissingPeople_more ()
 {
-	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_more_15_00"); //Slyšel jsem, e tu zmizeli i jiní lidé.
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_01"); //Vdyã to âíkám. Dêjou se tu moc zlı vêci.
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_02"); //Rybáâ Farim mi vyprávêl nêco podobnıho. Po jeho kámoši Williamovi taky jako by se slehla zem.
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_03"); //Vsadím se, e v tom mají prsty skâeti.
+	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_more_15_00"); //SlyÅ¡el jsem, Å¾e tu zmizeli i jinÃ­ lidÃ©.
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_01"); //VÅ¾dyÄƒ to Ã¢Ã­kÃ¡m. DÄ™jou se tu moc zlÃ½ vÄ™ci.
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_02"); //RybÃ¡Ã¢ Farim mi vyprÃ¡vÄ™l nÄ™co podobnÃ½ho. Po jeho kÃ¡moÅ¡i Williamovi taky jako by se slehla zem.
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_more_04_03"); //VsadÃ­m se, Å¾e v tom majÃ­ prsty skÃ¢eti.
 	SCKnowsFarimAsWilliamsFriend = TRUE;
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"O zmizení jeho pâítele Williama by nêco mohl vêdêt rybáâ Farim."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"O zmizenÃ­ jeho pÃ¢Ã­tele Williama by nÄ™co mohl vÄ™dÄ™t rybÃ¡Ã¢ Farim."); 
 	
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
@@ -222,15 +222,15 @@ func void DIA_Addon_Garvell_MissingPeople_BACK ()
 };
 func void DIA_Addon_Garvell_MissingPeople_Farim ()
 {
-	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_Farim_15_00"); //Kde bych našel toho Farima?
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_Farim_04_01"); //Je rybáâ. Myslím, e má chıši nêkde u skladu paladinù, ale nevím to úplnê jistê.
+	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_Farim_15_00"); //Kde bych naÅ¡el toho Farima?
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_Farim_04_01"); //Je rybÃ¡Ã¢. MyslÃ­m, Å¾e mÃ¡ chÃ½Å¡i nÄ™kde u skladu paladinÅ¯, ale nevÃ­m to ÃºplnÄ™ jistÄ™.
 
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Farimova chıše leí kousek od skladu paladinù."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Farimova chÃ½Å¡e leÅ¾Ã­ kousek od skladu paladinÅ¯."); 
 };
 func void DIA_Addon_Garvell_MissingPeople_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_wo_15_00"); //Kdy jsi Montyho vidêl naposled?
-	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_wo_04_01"); //(naštvanê) U se neobtêoval pâijít do práce aspoà dva dny.
+	AI_Output			(other, self, "DIA_Addon_Garvell_MissingPeople_wo_15_00"); //Kdy jsi Montyho vidÄ™l naposled?
+	AI_Output			(self, other, "DIA_Addon_Garvell_MissingPeople_wo_04_01"); //(naÅ¡tvanÄ™) UÅ¾ se neobtÄ™Å¾oval pÃ¢ijÃ­t do prÃ¡ce aspoÅ• dva dny.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ReturnMonty
@@ -241,7 +241,7 @@ instance DIA_Garvell_ReturnMonty		(C_INFO)
 	nr			 = 	99;
 	condition	 = 	DIA_Garvell_ReturnMonty_Condition;
 	information	 = 	DIA_Garvell_ReturnMonty_Info;
-	description	 = 	"A jak se vede TEË?";
+	description	 = 	"A jak se vede TEÃ‹?";
 };
 func int DIA_Garvell_ReturnMonty_Condition ()
 {	
@@ -253,9 +253,9 @@ func int DIA_Garvell_ReturnMonty_Condition ()
 };
 func void DIA_Garvell_ReturnMonty_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Garvell_ReturnMonty_15_00"); //A jak se vede TEË?
-	AI_Output (self, other, "DIA_Addon_Garvell_ReturnMonty_04_01"); //Monty se vrátil! Zrovna peèlivê studuje plány!
-	AI_Output (self, other, "DIA_Addon_Garvell_ReturnMonty_04_02"); //Teë u tu loë snad pâece jenom dostavíme.
+	AI_Output (other, self, "DIA_Addon_Garvell_ReturnMonty_15_00"); //A jak se vede TEÃ‹?
+	AI_Output (self, other, "DIA_Addon_Garvell_ReturnMonty_04_01"); //Monty se vrÃ¡til! Zrovna peÄlivÄ™ studuje plÃ¡ny!
+	AI_Output (self, other, "DIA_Addon_Garvell_ReturnMonty_04_02"); //TeÃ« uÅ¾ tu loÃ« snad pÃ¢ece jenom dostavÃ­me.
 	B_GivePlayerXP (XP_Ambient);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -268,7 +268,7 @@ instance DIA_Garvell_MISSION		(C_INFO)
 	condition	 = 	DIA_Garvell_MISSION_Condition;
 	information	 = 	DIA_Garvell_MISSION_Info;
 	permanent    =  FALSE;
-	description	 = 	"Mùu ti nêjak pomoci?";
+	description	 = 	"MÅ¯Å¾u ti nÄ™jak pomoci?";
 };
 
 func int DIA_Garvell_MISSION_Condition ()
@@ -281,27 +281,27 @@ func int DIA_Garvell_MISSION_Condition ()
 };
 func void DIA_Garvell_MISSION_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_MISSION_15_00"); //Mùu ti nêjak pomoct?
-	AI_Output (self, other, "DIA_Garvell_MISSION_04_01"); //To mùeš. Zjisti, co mají paladinové za lubem. Zajímalo by mê, proè jsou tady.
-	AI_Output (self, other, "DIA_Garvell_MISSION_04_02"); //A taky bych mêl vêdêt, jestli se skâeti chystají zaútoèit - a jak daleko od mêsta jsou.
-	AI_Output (self, other, "DIA_Garvell_MISSION_04_03"); //Jednoho z têch bastardù vidêli hned za mêstem.
-	AI_Output (self, other, "DIA_Garvell_MISSION_04_04"); //Prostê mi dones tolik informací, kolik se ti podaâí získat.
-	AI_Output (self ,other, "DIA_Garvell_Add_04_00"); //Potâebuju vêdêt, kolik èasu mám na dokonèení lodi.
+	AI_Output (other, self, "DIA_Garvell_MISSION_15_00"); //MÅ¯Å¾u ti nÄ™jak pomoct?
+	AI_Output (self, other, "DIA_Garvell_MISSION_04_01"); //To mÅ¯Å¾eÅ¡. Zjisti, co majÃ­ paladinovÃ© za lubem. ZajÃ­malo by mÄ™, proÄ jsou tady.
+	AI_Output (self, other, "DIA_Garvell_MISSION_04_02"); //A taky bych mÄ™l vÄ™dÄ™t, jestli se skÃ¢eti chystajÃ­ zaÃºtoÄit - a jak daleko od mÄ™sta jsou.
+	AI_Output (self, other, "DIA_Garvell_MISSION_04_03"); //Jednoho z tÄ™ch bastardÅ¯ vidÄ™li hned za mÄ™stem.
+	AI_Output (self, other, "DIA_Garvell_MISSION_04_04"); //ProstÄ™ mi dones tolik informacÃ­, kolik se ti podaÃ¢Ã­ zÃ­skat.
+	AI_Output (self ,other, "DIA_Garvell_Add_04_00"); //PotÃ¢ebuju vÄ™dÄ™t, kolik Äasu mÃ¡m na dokonÄenÃ­ lodi.
 
 	MIS_Garvell_Infos = LOG_RUNNING;
 	Knows_Ork = TRUE;
 	
 	Log_CreateTopic (TOPIC_Garvell,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Garvell,LOG_RUNNING);
-	B_LogEntry (TOPIC_Garvell,"Garvell by rád získal nêjaké informace o skâetech a také by ho zajímalo, proè se ve mêstê usadili paladinové.");
+	B_LogEntry (TOPIC_Garvell,"Garvell by rÃ¡d zÃ­skal nÄ™jakÃ© informace o skÃ¢etech a takÃ© by ho zajÃ­malo, proÄ se ve mÄ™stÄ™ usadili paladinovÃ©.");
 };
 FUNC VOID B_GarvellWeiter()
 {
-	AI_Output (self, other, "DIA_Garvell_Weiter_04_00"); //Dobâe. Jestli zjistíš nêco dalšího, dej mi vêdêt.
+	AI_Output (self, other, "DIA_Garvell_Weiter_04_00"); //DobÃ¢e. Jestli zjistÃ­Å¡ nÄ™co dalÅ¡Ã­ho, dej mi vÄ™dÄ™t.
 };
 FUNC VOID B_GarvellSuccess()
 {
-	AI_Output (self, other, "DIA_Garvell_Success_04_00"); //Díky za informace. Takhle to vypadá, e na postavení lodi máme celou vêènost.
+	AI_Output (self, other, "DIA_Garvell_Success_04_00"); //DÃ­ky za informace. Takhle to vypadÃ¡, Å¾e na postavenÃ­ lodi mÃ¡me celou vÄ™Änost.
 	MIS_Garvell_Infos = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -315,7 +315,7 @@ instance DIA_Garvell_Orks		(C_INFO)
 	condition	 = 	DIA_Garvell_Orks_Condition;
 	information	 = 	DIA_Garvell_Orks_Info;
 	permanent    =  FALSE;
-	description	 = 	"Mám nêjaké informace o skâetech.";
+	description	 = 	"MÃ¡m nÄ™jakÃ© informace o skÃ¢etech.";
 };
 func int DIA_Garvell_Orks_Condition ()
 {	
@@ -327,10 +327,10 @@ func int DIA_Garvell_Orks_Condition ()
 };
 func void DIA_Garvell_Orks_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_Orks_15_00"); //Mám nêjaké informace o skâetech.
-	AI_Output (self, other, "DIA_Garvell_Orks_04_01"); //Tak povídej.
-	AI_Output (other, self, "DIA_Garvell_Orks_15_02"); //Zasekli se v Hornickém údolí a vypadá to, e tam chtêjí zùstat.
-	AI_Output (other, self, "DIA_Garvell_Orks_15_03"); //Aby nás udreli v bezpeèí, hlídají paladinové prùsmyk do údolí.
+	AI_Output (other, self, "DIA_Garvell_Orks_15_00"); //MÃ¡m nÄ™jakÃ© informace o skÃ¢etech.
+	AI_Output (self, other, "DIA_Garvell_Orks_04_01"); //Tak povÃ­dej.
+	AI_Output (other, self, "DIA_Garvell_Orks_15_02"); //Zasekli se v HornickÃ©m ÃºdolÃ­ a vypadÃ¡ to, Å¾e tam chtÄ™jÃ­ zÅ¯stat.
+	AI_Output (other, self, "DIA_Garvell_Orks_15_03"); //Aby nÃ¡s udrÅ¾eli v bezpeÄÃ­, hlÃ­dajÃ­ paladinovÃ© prÅ¯smyk do ÃºdolÃ­.
 
 	Tell_Garvell = (Tell_Garvell +1);
 	B_GivePlayerXP (XP_Ambient);
@@ -354,7 +354,7 @@ instance DIA_Garvell_Paladine		(C_INFO)
 	condition	 = 	DIA_Garvell_Paladine_Condition;
 	information	 = 	DIA_Garvell_Paladine_Info;
 	permanent    =  FALSE;
-	description	 = 	"Vím, proè tu paladinové jsou.";
+	description	 = 	"VÃ­m, proÄ tu paladinovÃ© jsou.";
 };
 func int DIA_Garvell_Paladine_Condition ()
 {	
@@ -366,10 +366,10 @@ func int DIA_Garvell_Paladine_Condition ()
 };
 func void DIA_Garvell_Paladine_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_Paladine_15_00"); //Vím, proè tu paladinové jsou.
-	AI_Output (self, other, "DIA_Garvell_Paladine_04_01"); //Vánê? Âekni mi to!
-	AI_Output (other, self, "DIA_Garvell_Paladine_15_02"); //Paladinové jsou tu, aby získali magickou rudu z Hornického údolí, ne proto, e by oèekávali skâetí útok na mêsto.
-	AI_Output (other, self, "DIA_Garvell_Paladine_15_03"); //Jakmile dostanou rudu, vrátí se na pevninu.
+	AI_Output (other, self, "DIA_Garvell_Paladine_15_00"); //VÃ­m, proÄ tu paladinovÃ© jsou.
+	AI_Output (self, other, "DIA_Garvell_Paladine_04_01"); //VÃ¡Å¾nÄ™? Ã‚ekni mi to!
+	AI_Output (other, self, "DIA_Garvell_Paladine_15_02"); //PaladinovÃ© jsou tu, aby zÃ­skali magickou rudu z HornickÃ©ho ÃºdolÃ­, ne proto, Å¾e by oÄekÃ¡vali skÃ¢etÃ­ Ãºtok na mÄ™sto.
+	AI_Output (other, self, "DIA_Garvell_Paladine_15_03"); //Jakmile dostanou rudu, vrÃ¡tÃ­ se na pevninu.
 
 	Tell_Garvell = (Tell_Garvell +1);
 	B_GivePlayerXP (XP_Ambient);
@@ -393,7 +393,7 @@ instance DIA_Garvell_City		(C_INFO)
 	condition	 = 	DIA_Garvell_City_Condition;
 	information	 = 	DIA_Garvell_City_Info;
 	permanent    =  FALSE;
-	description	 = 	"A co se tıká toho skâeta za mêstem...";
+	description	 = 	"A co se tÃ½kÃ¡ toho skÃ¢eta za mÄ™stem...";
 };
 func int DIA_Garvell_City_Condition ()
 {	
@@ -405,9 +405,9 @@ func int DIA_Garvell_City_Condition ()
 };
 func void DIA_Garvell_City_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_City_15_00"); //A ten skâet za mêstem...
+	AI_Output (other, self, "DIA_Garvell_City_15_00"); //A ten skÃ¢et za mÄ™stem...
 	AI_Output (self, other, "DIA_Garvell_City_04_01"); //Anooo...?
-	AI_Output (other, self, "DIA_Garvell_City_15_02"); //Nedêlej si s ním starosti. Mêstská strá to s ním vyâídí.
+	AI_Output (other, self, "DIA_Garvell_City_15_02"); //NedÄ™lej si s nÃ­m starosti. MÄ™stskÃ¡ strÃ¡Å¾ to s nÃ­m vyÃ¢Ã­dÃ­.
 	
 
 	Tell_Garvell = (Tell_Garvell +1);
@@ -432,7 +432,7 @@ instance DIA_Garvell_Perm		(C_INFO)
 	condition	 = 	DIA_Garvell_Perm_Condition;
 	information	 = 	DIA_Garvell_Perm_Info;
 	permanent    =  TRUE;
-	description	 = 	"Jak to jde v pâístavu?";
+	description	 = 	"Jak to jde v pÃ¢Ã­stavu?";
 };
 func int DIA_Garvell_Perm_Condition ()
 {	
@@ -443,18 +443,18 @@ func int DIA_Garvell_Perm_Condition ()
 };
 func void DIA_Garvell_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Garvell_Perm_15_00"); //Jak to jde v pâístavu?
+	AI_Output (other, self, "DIA_Garvell_Perm_15_00"); //Jak to jde v pÃ¢Ã­stavu?
 	
 	if (MIS_Garvell_Infos != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Garvell_Perm_04_01"); //Skâeti nám jdou po krku a ty se ptáš na pâístav?
-		AI_Output (other, self, "DIA_Garvell_Perm_15_02"); //Jen jsem chtêl...
-		AI_Output (self, other, "DIA_Garvell_Perm_04_03"); //Náš nejvêtší problém je v tom, e nemáme dost lodí, abychom se odsud mohli dostat.
-		AI_Output (self, other, "DIA_Garvell_Perm_04_04"); //Vlastnê je tu jen jedna loë, a ta patâí paladinùm. Urèitê ji tu nemají proto, aby nás na ní odsud dostali.
+		AI_Output (self, other, "DIA_Garvell_Perm_04_01"); //SkÃ¢eti nÃ¡m jdou po krku a ty se ptÃ¡Å¡ na pÃ¢Ã­stav?
+		AI_Output (other, self, "DIA_Garvell_Perm_15_02"); //Jen jsem chtÄ™l...
+		AI_Output (self, other, "DIA_Garvell_Perm_04_03"); //NÃ¡Å¡ nejvÄ™tÅ¡Ã­ problÃ©m je v tom, Å¾e nemÃ¡me dost lodÃ­, abychom se odsud mohli dostat.
+		AI_Output (self, other, "DIA_Garvell_Perm_04_04"); //VlastnÄ™ je tu jen jedna loÃ«, a ta patÃ¢Ã­ paladinÅ¯m. UrÄitÄ™ ji tu nemajÃ­ proto, aby nÃ¡s na nÃ­ odsud dostali.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Garvell_Perm_04_05"); //Jen se podívej sám, nic se tu nedêje.
+		AI_Output (self, other, "DIA_Garvell_Perm_04_05"); //Jen se podÃ­vej sÃ¡m, nic se tu nedÄ™je.
 	};
 };
 

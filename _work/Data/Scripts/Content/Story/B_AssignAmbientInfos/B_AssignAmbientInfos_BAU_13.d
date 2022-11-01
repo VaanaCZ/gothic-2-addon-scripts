@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_13_JOIN(C_INFO)
 	condition	= DIA_BAU_13_JOIN_Condition;
 	information	= DIA_BAU_13_JOIN_Info;
 	permanent	= TRUE;
-	description = "Povêz mi víc o têch oldnéâích!";
+	description = "PovÄ™z mi vÃ­c o tÄ™ch Å¾oldnÃ©Ã¢Ã­ch!";
 };                       
 
 FUNC INT DIA_BAU_13_JOIN_Condition()
@@ -42,9 +42,9 @@ FUNC INT DIA_BAU_13_JOIN_Condition()
 
 FUNC VOID DIA_BAU_13_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_13_JOIN_15_00"); //Âekni mi víc o têch oldnéâích!
-	AI_Output (self, other, "DIA_BAU_13_JOIN_13_01"); //Pokud jsi s nima ještê nemêl ádnı problémy, zajdi za Leem. On je ten, pro koho my farmáâi dêláme. Je na svı lidi vánê pâísnej.
-	AI_Output (self, other, "DIA_BAU_13_JOIN_13_02"); //Kdy kdokoli z nich udêlá nêco špatnê, nechá mu to pêknê serat.
+	AI_Output (other, self, "DIA_BAU_13_JOIN_15_00"); //Ã‚ekni mi vÃ­c o tÄ™ch Å¾oldnÃ©Ã¢Ã­ch!
+	AI_Output (self, other, "DIA_BAU_13_JOIN_13_01"); //Pokud jsi s nima jeÅ¡tÄ™ nemÄ™l Å¾Ã¡dnÃ½ problÃ©my, zajdi za Leem. On je ten, pro koho my farmÃ¡Ã¢i dÄ™lÃ¡me. Je na svÃ½ lidi vÃ¡Å¾nÄ™ pÃ¢Ã­snej.
+	AI_Output (self, other, "DIA_BAU_13_JOIN_13_02"); //KdyÅ¾ kdokoli z nich udÄ™lÃ¡ nÄ™co Å¡patnÄ™, nechÃ¡ mu to pÄ™knÄ™ seÅ¾rat.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_BAU_13_PEOPLE(C_INFO)
 	condition	= DIA_BAU_13_PEOPLE_Condition;
 	information	= DIA_BAU_13_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tady tomu velí?";
+	description = "Kdo tady tomu velÃ­?";
 };                       
 
 FUNC INT DIA_BAU_13_PEOPLE_Condition()
@@ -66,9 +66,9 @@ FUNC INT DIA_BAU_13_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_13_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_13_PEOPLE_15_00"); //Kdo tady tomu velí?
-	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_01"); //Kdy to chceš vêdêt, tak oldáci. Jasnê, Onar je platí, ale jen Innos ví, jak dlouho se jim bude ještê chtít poslouchat jeho rozkazy.
-	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_02"); //A si oldáci vzpomenou, e u jim tady k nièemu neni, nechtêl bych bejt v jeho kùi.
+	AI_Output (other, self, "DIA_BAU_13_PEOPLE_15_00"); //Kdo tady tomu velÃ­?
+	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_01"); //KdyÅ¾ to chceÅ¡ vÄ™dÄ™t, tak Å¾oldÃ¡ci. JasnÄ™, Onar je platÃ­, ale jen Innos vÃ­, jak dlouho se jim bude jeÅ¡tÄ™ chtÃ­t poslouchat jeho rozkazy.
+	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_02"); //AÅ¾ si Å¾oldÃ¡ci vzpomenou, Å¾e uÅ¾ jim tady k niÄemu neni, nechtÄ™l bych bejt v jeho kÅ¯Å¾i.
 };
 
 // *************************************************************************
@@ -80,7 +80,7 @@ INSTANCE DIA_BAU_13_LOCATION(C_INFO)
 	condition	= DIA_BAU_13_LOCATION_Condition;
 	information	= DIA_BAU_13_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co mi mùeš âíct o tomhle místê?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ct o tomhle mÃ­stÄ™?";
 };                       
 
 FUNC INT DIA_BAU_13_LOCATION_Condition()
@@ -90,9 +90,9 @@ FUNC INT DIA_BAU_13_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_13_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_13_LOCATION_15_00"); //Co mi mùeš âíct o tomhle místê?
-	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_01"); //Jsou tady tâi farmy. Onarova na vıchodê a Sekobova na severním konci údolí.
-	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_02"); //Po cestê se dostaneš na náhorní planinu na jihovıchodê. Tam je Bengarova farma.
+	AI_Output (other, self, "DIA_BAU_13_LOCATION_15_00"); //Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ct o tomhle mÃ­stÄ™?
+	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_01"); //Jsou tady tÃ¢i farmy. Onarova na vÃ½chodÄ™ a Sekobova na severnÃ­m konci ÃºdolÃ­.
+	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_02"); //Po cestÄ™ se dostaneÅ¡ na nÃ¡hornÃ­ planinu na jihovÃ½chodÄ™. Tam je Bengarova farma.
 };
 
 // *************************************************************************
@@ -104,7 +104,7 @@ INSTANCE DIA_BAU_13_STANDARD(C_INFO)
 	condition	= DIA_BAU_13_STANDARD_Condition;
 	information	= DIA_BAU_13_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_BAU_13_STANDARD_Condition()
 {
@@ -112,31 +112,31 @@ func INT DIA_BAU_13_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_13_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_13_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_BAU_13_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_01"); //Vojáci z mêsta u nám nebudou odvádêt náš dobytek a brát úrodu! Teë, kdy u se mùeme bránit, nêjak ztratili zájem!
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_01"); //VojÃ¡ci z mÄ™sta uÅ¾ nÃ¡m nebudou odvÃ¡dÄ™t nÃ¡Å¡ dobytek a brÃ¡t Ãºrodu! TeÃ«, kdyÅ¾ uÅ¾ se mÅ¯Å¾eme brÃ¡nit, nÄ™jak ztratili zÃ¡jem!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_02"); //Paladinùm ve mêstê jsme my farmáâi úplnê ukradenı. Jestli skâeti zaútoèí, musíme se spolehnout jen sami na sebe.
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_02"); //PaladinÅ¯m ve mÄ™stÄ™ jsme my farmÃ¡Ã¢i ÃºplnÄ™ ukradenÃ½. Jestli skÃ¢eti zaÃºtoÄÃ­, musÃ­me se spolehnout jen sami na sebe.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_03"); //Draci! Proslıchá se, e se v Hornickém údolí objevili draci. Urèitê se brzo dostanou pâes bránu!
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_03"); //Draci! ProslÃ½chÃ¡ se, Å¾e se v HornickÃ©m ÃºdolÃ­ objevili draci. UrÄitÄ™ se brzo dostanou pÃ¢es brÃ¡nu!
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_04"); //U vidêli nêkolik banditù z hor, jak míâí do Hornickıho údolí. To je pro mê moc nebezpeènı.
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_04"); //UÅ¾ vidÄ™li nÄ™kolik banditÅ¯ z hor, jak mÃ­Ã¢Ã­ do HornickÃ½ho ÃºdolÃ­. To je pro mÄ™ moc nebezpeÄnÃ½.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_05"); //Jestli se sníí danê a my dostaneme za svou práci odpovídající odmênu, pak mùeme s mêstem zaèít znovu obchodovat.
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_05"); //Jestli se snÃ­Å¾Ã­ danÄ™ a my dostaneme za svou prÃ¡ci odpovÃ­dajÃ­cÃ­ odmÄ™nu, pak mÅ¯Å¾eme s mÄ™stem zaÄÃ­t znovu obchodovat.
 	};
 };
 

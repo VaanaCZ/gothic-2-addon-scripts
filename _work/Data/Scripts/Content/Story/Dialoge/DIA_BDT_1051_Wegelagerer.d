@@ -42,7 +42,7 @@ INSTANCE DIA_1051_Wegelagerer_Hello   (C_INFO)
 	condition   = DIA_Wegelagerer_Hello_Condition;
 	information = DIA_Wegelagerer_Hello_Info;
 	permanent   = FALSE;
-	description = "Co tady dÍl·ö?";
+	description = "Co tady dƒôl√°≈°?";
 };
 
 FUNC INT DIA_Wegelagerer_Hello_Condition()
@@ -55,7 +55,7 @@ FUNC INT DIA_Wegelagerer_Hello_Condition()
 
 FUNC VOID DIA_Wegelagerer_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Hello_15_00"); //Co tady dÍl·ö?
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Hello_15_00"); //Co tady dƒôl√°≈°?
 	AI_Output (self ,other,"DIA_1051_Wegelagerer_Hello_07_01"); //Co je ti do toho?
 };
 
@@ -69,7 +69,7 @@ INSTANCE DIA_1051_Wegelagerer_Novice   (C_INFO)
 	condition   = DIA_Wegelagerer_Novice_Condition;
 	information = DIA_Wegelagerer_Novice_Info;
 	permanent   = FALSE;
-	description = "Hled·m jednoho novice.";
+	description = "Hled√°m jednoho novice.";
 };
 
 FUNC INT DIA_Wegelagerer_Novice_Condition()
@@ -84,11 +84,11 @@ FUNC INT DIA_Wegelagerer_Novice_Condition()
 
 FUNC VOID DIA_Wegelagerer_Novice_Info()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Novice_15_00"); //Hled·m jednoho novice.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Novice_07_01"); //To je zajÌmavÈ. Taky nÍkoho hled·me.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Novice_15_00"); //Hled√°m jednoho novice.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Novice_07_01"); //To je zaj√≠mav√©. Taky nƒôkoho hled√°me.
 
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Novice,"Koho hled·ö?",DIA_1051_Wegelagerer_Question_Novice_Who);
+	Info_AddChoice (DIA_1051_Wegelagerer_Novice,"Koho hled√°≈°?",DIA_1051_Wegelagerer_Question_Novice_Who);
 	
 };
 
@@ -102,7 +102,7 @@ INSTANCE DIA_1051_Wegelagerer_Question   (C_INFO)
 	condition   = DIA_Wegelagerer_Question_Condition;
 	information = DIA_Wegelagerer_Question_Info;
 	permanent   = FALSE;
-	description = "Jenom se pt·m.";
+	description = "Jenom se pt√°m.";
 };
 
 FUNC INT DIA_Wegelagerer_Question_Condition()
@@ -116,33 +116,33 @@ FUNC INT DIA_Wegelagerer_Question_Condition()
 
 FUNC VOID DIA_Wegelagerer_Question_Info()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_15_00"); //Jenom se pt·m.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_01"); //Jasn˝. Ale co tady dÍl·ö?
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_02"); //Mimochodem, tohle je naöe cesta a nem·me r·di, kdyû n·s tu nÍkdo obtÍûuje.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_15_00"); //Jenom se pt√°m.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_01"); //Jasn√Ω. Ale co tady dƒôl√°≈°?
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_02"); //Mimochodem, tohle je na≈°e cesta a nem√°me r√°di, kdy≈æ n√°s tu nƒôkdo obtƒô≈æuje.
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
 	if (MIS_Novizenchase == LOG_RUNNING)
 		&& (MIS_SCKnowsInnosEyeIsBroken  == FALSE)
 	{
-		Info_AddChoice (DIA_1051_Wegelagerer_Question,"Hled·m jednoho novice.",DIA_1051_Wegelagerer_Question_Novice);
+		Info_AddChoice (DIA_1051_Wegelagerer_Question,"Hled√°m jednoho novice.",DIA_1051_Wegelagerer_Question_Novice);
 	};	
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Do toho ti nic nenÌ.",DIA_1051_Wegelagerer_Question_MyConcern);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Jen se tu kolem trochu rozhlÌûÌm.",DIA_1051_Wegelagerer_Question_LookAround);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Do toho ti nic nen√≠.",DIA_1051_Wegelagerer_Question_MyConcern);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Jen se tu kolem trochu rozhl√≠≈æ√≠m.",DIA_1051_Wegelagerer_Question_LookAround);
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_Novice ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_15_00"); //Hled·m jednoho novice.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_07_01"); //To je zajÌmavÈ. Taky nÍkoho hled·me.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_15_00"); //Hled√°m jednoho novice.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_07_01"); //To je zaj√≠mav√©. Taky nƒôkoho hled√°me.
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Koho hled·ö?",DIA_1051_Wegelagerer_Question_Novice_Who);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Koho hled√°≈°?",DIA_1051_Wegelagerer_Question_Novice_Who);
 
 };	
 
 FUNC VOID DIA_1051_Wegelagerer_Question_Novice_Who ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_Who_15_00"); //A kdo to jako m· b˝t?
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_Who_15_00"); //A kdo to jako m√° b√Ωt?
 	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_Who_07_01"); //Ty!
 	BDT_1051_Wegelagerer_Angriff = TRUE;
 	Npc_SetRefuseTalk (self,40);
@@ -152,27 +152,27 @@ FUNC VOID DIA_1051_Wegelagerer_Question_Novice_Who ()
 
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_15_00"); //Do toho ti nic nenÌ.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_07_01"); //Co tÌm myslÌö? TouûÌö po problÈmech?
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_15_00"); //Do toho ti nic nen√≠.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_07_01"); //Co t√≠m mysl√≠≈°? Tou≈æ√≠≈° po probl√©mech?
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Ne, nic takovÈho. é·dn˝ problÈmy.",DIA_1051_Wegelagerer_Question_MyConcern_No);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Kdyû na tom trv·ö.",DIA_1051_Wegelagerer_Question_MyConcern_Yes);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Ne, nic takov√©ho. ≈Ω√°dn√Ω probl√©my.",DIA_1051_Wegelagerer_Question_MyConcern_No);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Kdy≈æ na tom trv√°≈°.",DIA_1051_Wegelagerer_Question_MyConcern_Yes);
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_No ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_No_15_00"); //Ne, nic takovÈho. é·dn˝ problÈmy.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_No_07_01"); //RozumÌm, nadÍlal sis do kalhot. TeÎ se zdejchni.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_No_15_00"); //Ne, nic takov√©ho. ≈Ω√°dn√Ω probl√©my.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_No_07_01"); //Rozum√≠m, nadƒôlal sis do kalhot. Te√´ se zdejchni.
 	
 	AI_StopProcessInfos (self); //Joly: Ausweg ohne angegriffen zu werden!!!!!!!!!
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_Yes ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_15_00"); //Kdyû na tom trv·ö.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_01"); //Hele, hele, m·ö nÍjak nevym·chanou hubu.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_02"); //Uû je naËase, abych ti ji zav‚el.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_15_00"); //Kdy≈æ na tom trv√°≈°.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_01"); //Hele, hele, m√°≈° nƒôjak nevym√°chanou hubu.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_02"); //U≈æ je naƒçase, abych ti ji zav√¢el.
 
 	BDT_1051_Wegelagerer_Angriff = TRUE;
 	Npc_SetRefuseTalk (self,40);
@@ -181,8 +181,8 @@ FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_Yes ()
 
 FUNC VOID DIA_1051_Wegelagerer_Question_LookAround ()
 {
-	AI_Output	(other,self ,"DIA_1051_Wegelagerer_Question_LookAround_15_00"); //Jen se tu kolem trochu rozhlÌûÌm.
-	AI_Output 	(self ,other,"DIA_1051_Wegelagerer_Question_LookAround_07_01"); //KlidnÍ si v tom pokraËuj, ale p‚esta‡ n·s otravovat.
+	AI_Output	(other,self ,"DIA_1051_Wegelagerer_Question_LookAround_15_00"); //Jen se tu kolem trochu rozhl√≠≈æ√≠m.
+	AI_Output 	(self ,other,"DIA_1051_Wegelagerer_Question_LookAround_07_01"); //Klidnƒô si v tom pokraƒçuj, ale p√¢esta≈ï n√°s otravovat.
 	
 	AI_StopProcessInfos (self); //Joly: Ausweg ohne angegriffen zu werden!!!!!!!!!
 };

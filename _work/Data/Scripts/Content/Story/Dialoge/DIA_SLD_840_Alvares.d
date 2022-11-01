@@ -43,10 +43,10 @@ func int DIA_Alvares_HAUAB_Condition ()
 func void DIA_Alvares_HAUAB_Info ()
 {
 	Akils_SLDStillthere = TRUE;
-	AI_Output (self, other, "DIA_Alvares_HAUAB_11_00"); //Aã u tê sem pâivedlo cokoliv, radši na to zapomeà a bê dál.
+	AI_Output (self, other, "DIA_Alvares_HAUAB_11_00"); //AÄƒ uÅ¾ tÄ™ sem pÃ¢ivedlo cokoliv, radÅ¡i na to zapomeÅ• a bÄ™Å¾ dÃ¡l.
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Akilùv statek ohroují oldáci."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"AkilÅ¯v statek ohroÅ¾ujÃ­ Å¾oldÃ¡ci."); 
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -71,28 +71,28 @@ func int DIA_Alvares_ATTACK_Condition ()
 };
 func void DIA_Alvares_ATTACK_Info ()
 {
-	AI_Output (self, other, "DIA_Alvares_ATTACK_11_00"); //Hej, tys ještê tady? Dal jsem ti na vıbêr, cizinèe: buë vypadni, nebo chcípni.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_11_00"); //Hej, tys jeÅ¡tÄ™ tady? Dal jsem ti na vÃ½bÄ™r, cizinÄe: buÃ« vypadni, nebo chcÃ­pni.
 	
 	Info_ClearChoices (DIA_Alvares_ATTACK);
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Co jste zaè? Párek vtipálkù?",DIA_Alvares_ATTACK_Kerle);
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Chci se k vám pâidat.",DIA_Alvares_ATTACK_Soeldner);
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Teëka odsud hezky rychle vypadnete...",DIA_Alvares_ATTACK_Witz);	 
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Nestojím o ádné problémy.",DIA_Alvares_ATTACK_Aerger);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Co jste zaÄ? PÃ¡rek vtipÃ¡lkÅ¯?",DIA_Alvares_ATTACK_Kerle);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Chci se k vÃ¡m pÃ¢idat.",DIA_Alvares_ATTACK_Soeldner);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"TeÃ«ka odsud hezky rychle vypadnete...",DIA_Alvares_ATTACK_Witz);	 
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"NestojÃ­m o Å¾Ã¡dnÃ© problÃ©my.",DIA_Alvares_ATTACK_Aerger);
 	
 	if (MIS_Baltram_ScoutAkil == LOG_RUNNING)
 	{
-		Info_AddChoice 	  (DIA_Alvares_ATTACK,"Jen jsem si pâišel nêco vyzvednout.",DIA_Alvares_ATTACK_Lieferung);
+		Info_AddChoice 	  (DIA_Alvares_ATTACK,"Jen jsem si pÃ¢iÅ¡el nÄ™co vyzvednout.",DIA_Alvares_ATTACK_Lieferung);
 	};
 	
 	
 };
 FUNC VOID DIA_Alvares_ATTACK_Witz()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_00"); //Hele, kluci, prostê odtuë hnedka zmizíte, jasnı?
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_01"); //A helemese, máme tu nového hrdinu - a je to opravdovı blbec.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_02"); //Víš, co si myslím?
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_03"); //Koho zajímá, co si myslíš?
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_04"); //Myslím, e dobrı hrdina je jedinê mrtvı hrdina. Udêlej mi teda laskavost - chcípni co nejrychlejc!
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_00"); //Hele, kluci, prostÄ™ odtuÃ« hnedka zmizÃ­te, jasnÃ½?
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_01"); //A helemese, mÃ¡me tu novÃ©ho hrdinu - a je to opravdovÃ½ blbec.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_02"); //VÃ­Å¡, co si myslÃ­m?
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_03"); //Koho zajÃ­mÃ¡, co si myslÃ­Å¡?
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_04"); //MyslÃ­m, Å¾e dobrÃ½ hrdina je jedinÄ™ mrtvÃ½ hrdina. UdÄ™lej mi teda laskavost - chcÃ­pni co nejrychlejc!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -100,9 +100,9 @@ FUNC VOID DIA_Alvares_ATTACK_Witz()
 };
 FUNC VOID DIA_Alvares_ATTACK_Kerle()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Kerle_15_00"); //Co jste zaè? Párek vtipálkù?
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_01"); //Tos uhodl. Ale poâádnê se zasmêju, teprve a budeš leet drkou v blátê.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_02"); //(volá) Engardo, do toho! Ty chytni toho sedláka a já se vypoâádám s tímhle šaškem!
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Kerle_15_00"); //Co jste zaÄ? PÃ¡rek vtipÃ¡lkÅ¯?
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_01"); //Tos uhodl. Ale poÃ¢Ã¡dnÄ™ se zasmÄ™ju, teprve aÅ¾ budeÅ¡ leÅ¾et drÅ¾kou v blÃ¡tÄ™.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_02"); //(volÃ¡) Engardo, do toho! Ty chytni toho sedlÃ¡ka a jÃ¡ se vypoÃ¢Ã¡dÃ¡m s tÃ­mhle Å¡aÅ¡kem!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -110,23 +110,23 @@ FUNC VOID DIA_Alvares_ATTACK_Kerle()
 };
 FUNC VOID DIA_Alvares_ATTACK_Aerger()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Aerger_15_00"); //Nestojím o ádné problémy.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_01"); //A my zase máme problémy moc rádi. Urazili jsme pêknı kus cesty, jenom abysme nêjaké vyvolali.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_02"); //Jo, têch problémù nebude zrovna málo. A jestli okamitê nezmizíš, zaèneme rovnou s tebou.
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Aerger_15_00"); //NestojÃ­m o Å¾Ã¡dnÃ© problÃ©my.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_01"); //A my zase mÃ¡me problÃ©my moc rÃ¡di. Urazili jsme pÄ™knÃ½ kus cesty, jenom abysme nÄ™jakÃ© vyvolali.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_02"); //Jo, tÄ™ch problÃ©mÅ¯ nebude zrovna mÃ¡lo. A jestli okamÅ¾itÄ™ nezmizÃ­Å¡, zaÄneme rovnou s tebou.
 	
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Alvares_ATTACK_Lieferung()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Lieferung_15_00"); //Jen jsem si pâišel nêco vyzvednout.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Lieferung_11_01"); //To my taky, a my jsme tu byli první. Take buë vypadneš, nebo ti budu muset ublíit.
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Lieferung_15_00"); //Jen jsem si pÃ¢iÅ¡el nÄ™co vyzvednout.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Lieferung_11_01"); //To my taky, a my jsme tu byli prvnÃ­. TakÅ¾e buÃ« vypadneÅ¡, nebo ti budu muset ublÃ­Å¾it.
 	
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Alvares_ATTACK_Soeldner()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Soeldner_15_00"); //Chci se k vám oldnéâùm pâidat.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Soeldner_11_01"); //Ou, vánê? Tak to koukej mazat, nebo u se nikdy k nikomu nepâidáš.
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Soeldner_15_00"); //Chci se k vÃ¡m Å¾oldnÃ©Ã¢Å¯m pÃ¢idat.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Soeldner_11_01"); //Ou, vÃ¡Å¾nÄ™? Tak to koukej mazat, nebo uÅ¾ se nikdy k nikomu nepÃ¢idÃ¡Å¡.
 	
 	AI_StopProcessInfos (self);
 };
@@ -153,8 +153,8 @@ func int DIA_Alvares_Schluss_Condition ()
 };
 func void DIA_Alvares_Schluss_Info ()
 {
-	AI_Output (self, other, "DIA_Alvares_Schluss_11_00"); //Dostal jsi šanci. Ale vypadá to, e rozumnı dùvody prostê ignoruješ.
-	AI_Output (self, other, "DIA_Alvares_Schluss_11_01"); //Jak chceš - tak to tê prostê teë hned zabiju. (volá) Engardo, oddêlej ho!
+	AI_Output (self, other, "DIA_Alvares_Schluss_11_00"); //Dostal jsi Å¡anci. Ale vypadÃ¡ to, Å¾e rozumnÃ½ dÅ¯vody prostÄ™ ignorujeÅ¡.
+	AI_Output (self, other, "DIA_Alvares_Schluss_11_01"); //Jak chceÅ¡ - tak to tÄ™ prostÄ™ teÃ« hned zabiju. (volÃ¡) Engardo, oddÄ™lej ho!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);	

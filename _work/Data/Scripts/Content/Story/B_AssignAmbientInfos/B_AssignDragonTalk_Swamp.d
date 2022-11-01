@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Swamp_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Moc Oka je vyèerpána. Nit tvého ivota tady konèí, èlovêèe.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Moc Oka je vyÄerpÃ¡na. Nit tvÃ©ho Å¾ivota tady konÄÃ­, ÄlovÄ™Äe.
 
 	Swampdragon = Hlp_GetNpc (dragon_swamp);
 
@@ -72,18 +72,18 @@ FUNC INT DIA_Dragon_Swamp_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Swamp_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Èekají tê jen samé potíe, jestli se odváíš ještê o krok blí!
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //ÄŒekajÃ­ tÄ™ jen samÃ© potÃ­Å¾e, jestli se odvÃ¡Å¾Ã­Å¡ jeÅ¡tÄ™ o krok blÃ­Å¾!
 
 	if (Mis_KilledDragons == 0)
 		{
-			AI_Output	(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ach. Vypadá to, e Innosovo oko funguje.
+			AI_Output	(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ach. VypadÃ¡ to, Å¾e Innosovo oko funguje.
 		};
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //U pâišli mnozí z tvého druhu. Všechny jsem je smetl z povrchu zemského.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Šetâi si dech. Tvá velká slova mê nemohou vydêsit, ty smrdutı zplozenèe pekel.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Âekni mi, co chci vêdêt, nebo tê utopím ve tvé vlastní krvi.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ha, ha, ha. Opovauješ se mi vyhroovat, bídnı èerve? Âekni mi jeden jedinı dùvod, proè bych tê hned teë nemêl rozsekat na tisíc kouskù.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Jsem Innosùv posel a mám u sebe posvátné Innosovo oko. Nemáš na vıbêr. Musíš se podrobit mé vùli, nebo budeš znièen.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //(âve) Arrh. Âekni, co ode mê chceš.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //UÅ¾ pÃ¢iÅ¡li mnozÃ­ z tvÃ©ho druhu. VÅ¡echny jsem je smetl z povrchu zemskÃ©ho.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Å etÃ¢i si dech. TvÃ¡ velkÃ¡ slova mÄ™ nemohou vydÄ™sit, ty smrdutÃ½ zplozenÄe pekel.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Ã‚ekni mi, co chci vÄ™dÄ™t, nebo tÄ™ utopÃ­m ve tvÃ© vlastnÃ­ krvi.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ha, ha, ha. OpovaÅ¾ujeÅ¡ se mi vyhroÅ¾ovat, bÃ­dnÃ½ Äerve? Ã‚ekni mi jeden jedinÃ½ dÅ¯vod, proÄ bych tÄ™ hned teÃ« nemÄ™l rozsekat na tisÃ­c kouskÅ¯.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Jsem InnosÅ¯v posel a mÃ¡m u sebe posvÃ¡tnÃ© Innosovo oko. NemÃ¡Å¡ na vÃ½bÄ™r. MusÃ­Å¡ se podrobit mÃ© vÅ¯li, nebo budeÅ¡ zniÄen.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //(Ã¢ve) Arrh. Ã‚ekni, co ode mÄ™ chceÅ¡.
 };
 
 
@@ -110,7 +110,7 @@ func int DIA_Dragon_Swamp_WERBISTDU_Condition ()
 func void DIA_Dragon_Swamp_WERBISTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //Jmenuju se Pandrodor. A mêl bys sis dobâe rozmyslet, jestli nebude lepší zalézt zpêt mezi skály, odkud jsi pâišel.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //Jmenuju se Pandrodor. A mÄ™l bys sis dobÃ¢e rozmyslet, jestli nebude lepÅ¡Ã­ zalÃ©zt zpÄ™t mezi skÃ¡ly, odkud jsi pÃ¢iÅ¡el.
 	
 };
 
@@ -124,7 +124,7 @@ instance DIA_Dragon_Swamp_WOSINDDIEANDEREN		(C_INFO)
 	condition	 = 	DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition;
 	information	 = 	DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info;
 
-	description	 = 	"Kde najdu zbytek tobê podobnıch odpornıch stvoâení?";
+	description	 = 	"Kde najdu zbytek tobÄ™ podobnÃ½ch odpornÃ½ch stvoÃ¢enÃ­?";
 };
 
 func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
@@ -137,10 +137,10 @@ func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
 
 func void DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Kde najdu zbytek tobê podobnıch odpornıch stvoâení?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Elementy, z nich bylo vše stvoâeno, drí tento svêt pohromadê.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Kadı z nich vyjadâuje schopnost ovládat èást svêta.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Hledej elementy a nalezneš všechny ostatní.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Kde najdu zbytek tobÄ™ podobnÃ½ch odpornÃ½ch stvoÃ¢enÃ­?
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Elementy, z nichÅ¾ bylo vÅ¡e stvoÃ¢eno, drÅ¾Ã­ tento svÄ™t pohromadÄ™.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //KaÅ¾dÃ½ z nich vyjadÃ¢uje schopnost ovlÃ¡dat ÄÃ¡st svÄ™ta.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Hledej elementy a nalezneÅ¡ vÅ¡echny ostatnÃ­.
 };
 
 

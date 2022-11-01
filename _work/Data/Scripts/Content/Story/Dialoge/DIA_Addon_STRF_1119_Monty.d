@@ -41,11 +41,11 @@ FUNC INT DIA_Addon_Monty_Hi_Condition()
 FUNC VOID DIA_Addon_Monty_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Hej, jak to jde?
-	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Jsem naûivu, a to je to hlavnÌ.
+	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Jsem na≈æivu, a to je to hlavn√≠.
 	
 	if (Monty_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Monty_Hi_08_02");//Jestli si chceö o nÍËem promluvit, zajdi za Patrickem.
+		AI_Output (self, other, "DIA_Addon_Monty_Hi_08_02");//Jestli si chce≈° o nƒôƒçem promluvit, zajdi za Patrickem.
 		Monty_einmal = TRUE;
 	};
 };
@@ -68,8 +68,8 @@ FUNC INT DIA_Addon_Monty_Hacken_Condition()
 FUNC VOID DIA_Addon_Monty_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//P‚i dolov·nÌ je nejd˘leûitÍjöÌ ˙hel, jak˝m vedeö r·ny.
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Ne moc naplocho a ne moc prudce ñ tak se nejlÌp dostaneö k nugget˘m.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//P√¢i dolov√°n√≠ je nejd≈Øle≈æitƒôj≈°√≠ √∫hel, jak√Ωm vede≈° r√°ny.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Ne moc naplocho a ne moc prudce ‚Äì tak se nejl√≠p dostane≈° k nugget≈Øm.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

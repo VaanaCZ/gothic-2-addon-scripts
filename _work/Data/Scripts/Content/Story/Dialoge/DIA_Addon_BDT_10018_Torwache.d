@@ -9,7 +9,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_EXIT (C_INFO)
 	condition	= DIA_Addon_BDT_10018_Torwache_EXIT_Condition;
 	information	= DIA_Addon_BDT_10018_Torwache_EXIT_Info;
 	permanent	= TRUE;
-	description	= "JeötÍ si promluvÌme.";
+	description	= "Je≈°tƒô si promluv√≠me.";
 };        
          
 FUNC INT DIA_Addon_BDT_10018_Torwache_EXIT_Condition()
@@ -18,11 +18,11 @@ FUNC INT DIA_Addon_BDT_10018_Torwache_EXIT_Condition()
 };
 FUNC VOID DIA_Addon_BDT_10018_Torwache_EXIT_Info()
 {
-	AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_EXIT_15_00"); //JeötÍ si promluvÌme.
+	AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_EXIT_15_00"); //Je≈°tƒô si promluv√≠me.
 	
 	if (BDT_100018_Einmal == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_EXIT_04_01"); //StejnÍ uû vÌö, co ti teÎ povÌm.
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_EXIT_04_01"); //Stejnƒô u≈æ v√≠≈°, co ti te√´ pov√≠m.
 		BDT_100018_Einmal = TRUE;
 	}
 	else
@@ -73,18 +73,18 @@ func void DIA_Addon_BDT_10018_Torwache_FirstWarn_Info()
 	
 	if ( BDT_100018_Tells == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_00"); //Hele, zpomal! Sem se nedostaneö, takûe vypal!
-		AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_FirstWarn_15_01"); //Jdi mi z cesty - musÌm vidÍt Havrana!
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_02"); //Sem nikdo nesmÌ. P‚Ìm˝ rozkazy vod samotn˝ho Havrana.
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_00"); //Hele, zpomal! Sem se nedostane≈°, tak≈æe vypal!
+		AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_FirstWarn_15_01"); //Jdi mi z cesty - mus√≠m vidƒôt Havrana!
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_02"); //Sem nikdo nesm√≠. P√¢√≠m√Ω rozkazy vod samotn√Ωho Havrana.
 		BDT_100018_Tells = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_Tempel,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Tempel,LOG_RUNNING);
-		B_LogEntry (Topic_Addon_Tempel,"Str·ûce br·ny mÍ do chr·mu nepustÌ. MusÌm najÌt zp˘sob, jak se dostat dovnit‚.");
+		B_LogEntry (Topic_Addon_Tempel,"Str√°≈æce br√°ny mƒô do chr√°mu nepust√≠. Mus√≠m naj√≠t zp≈Øsob, jak se dostat dovnit√¢.");
 	}
 	else
 	{	
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_03"); //To seö zase ty? ZaËÌn·ö mi jÌt pÍknÍ na nervy.
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_03"); //To se≈° zase ty? Zaƒç√≠n√°≈° mi j√≠t pƒôknƒô na nervy.
 		//AI_StopProcessInfos(self);
 	};			
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,BDT_10018_Checkpoint);
@@ -117,7 +117,7 @@ FUNC INT DIA_Addon_BDT_10018_Torwache_SecondWarn_Condition()
 
 func void DIA_Addon_BDT_10018_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_SecondWarn_04_00"); //JeötÍ krok a je po tobÍ.
+	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_SecondWarn_04_00"); //Je≈°tƒô krok a je po tobƒô.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_10018_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -170,7 +170,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Hi   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Hi_Condition;
 	information = DIA_Addon_10018_Torwache_Hi_Info;
 	permanent   = FALSE;
-	description = "ZatracenÍ nutnÍ se k nÍmu pot‚ebuju dostat.";
+	description = "Zatracenƒô nutnƒô se k nƒômu pot√¢ebuju dostat.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Hi_Condition()
 {	
@@ -178,10 +178,10 @@ FUNC INT DIA_Addon_10018_Torwache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Hi_15_00");//MusÌm za nÌm! Je to zatracenÍ d˘leûit˝!
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Hi_04_01");//Ne, nenÌ. Jedinej, kdo m· povolenÌ tu bejt, je Bloodwyn.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Hi_15_00");//Mus√≠m za n√≠m! Je to zatracenƒô d≈Øle≈æit√Ω!
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Hi_04_01");//Ne, nen√≠. Jedinej, kdo m√° povolen√≠ tu bejt, je Bloodwyn.
 	
-	B_LogEntry (Topic_Addon_Tempel,"V chr·mu m˘ûe z˘st·vat pouze Bloodwyn. Snad bych se p‚es nÍj mohl dostat dovnit‚.");
+	B_LogEntry (Topic_Addon_Tempel,"V chr√°mu m≈Ø≈æe z≈Øst√°vat pouze Bloodwyn. Snad bych se p√¢es nƒôj mohl dostat dovnit√¢.");
 };
 //----------------------------------------------------------------------
 //	Info Bloodwyn
@@ -193,7 +193,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Bloodwyn   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Bloodwyn_Condition;
 	information = DIA_Addon_10018_Torwache_Bloodwyn_Info;
 	permanent   = FALSE;
-	description = "Bloodwyn? Copak on nenÌ mrtv˝?";
+	description = "Bloodwyn? Copak on nen√≠ mrtv√Ω?";
 };
 FUNC INT DIA_Addon_10018_Torwache_Bloodwyn_Condition()
 {	
@@ -205,8 +205,8 @@ FUNC INT DIA_Addon_10018_Torwache_Bloodwyn_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Bloodwyn_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_15_00");//Bloodwyn? Copak nenÌ mrtv˝?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_04_01");//Je silnÍjöÌ neû kdy d‚Ìv. A jestli zjistÌ, ûes tu dÍlal rotyku, nadÍl· z tebe prejt.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_15_00");//Bloodwyn? Copak nen√≠ mrtv√Ω?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_04_01");//Je silnƒôj≈°√≠ ne≈æ kdy d√¢√≠v. A jestli zjist√≠, ≈æes tu dƒôlal rotyku, nadƒôl√° z tebe prejt.
 };
 //----------------------------------------------------------------------
 //	Info Bribe
@@ -218,7 +218,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Bribe   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Bribe_Condition;
 	information = DIA_Addon_10018_Torwache_Bribe_Info;
 	permanent   = FALSE;
-	description = "Jestli mÍ pustÌö dovnit‚, d·m ti tisÌc zla„·k˘.";
+	description = "Jestli mƒô pust√≠≈° dovnit√¢, d√°m ti tis√≠c zlaƒÉ√°k≈Ø.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Bribe_Condition()
 {	
@@ -230,8 +230,8 @@ FUNC INT DIA_Addon_10018_Torwache_Bribe_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Bribe_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bribe_15_00");//Kdyû mÍ pustÌö dovnit‚, d·m ti tisÌc zlat˝ch.
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bribe_04_01");//Akor·t mÍ zdrûujeö, uboû·ku.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bribe_15_00");//Kdy≈æ mƒô pust√≠≈° dovnit√¢, d√°m ti tis√≠c zlat√Ωch.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bribe_04_01");//Akor√°t mƒô zdr≈æuje≈°, ubo≈æ√°ku.
 };
 //----------------------------------------------------------------------
 //	Info Drin
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Drin   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Drin_Condition;
 	information = DIA_Addon_10018_Torwache_Drin_Info;
 	permanent   = FALSE;
-	description = "Je tam Bloodwyn? Tak ho dosta‡ ven.";
+	description = "Je tam Bloodwyn? Tak ho dosta≈ï ven.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Drin_Condition()
 {	
@@ -255,14 +255,14 @@ FUNC INT DIA_Addon_10018_Torwache_Drin_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Drin_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Drin_15_00");//Je tam Bloodwyn? No tak ho poöli ven!
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_01");//Ha! To si v·ûnÍ myslÌö, ûe bych nÍco takov˝ho udÍlal?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_02");//Moûn· ûe teÎka jsi v t·bo‚e d˘leûitej, ale tvoje moc konËÌ PR¡V  TADY. Kapiöto?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_03");//Tak si bÍû do dolu a doluj si zlato nebo nÍco jin˝ho, ale tady nep‚ek·ûej!
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Drin_15_00");//Je tam Bloodwyn? No tak ho po≈°li ven!
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_01");//Ha! To si v√°≈ænƒô mysl√≠≈°, ≈æe bych nƒôco takov√Ωho udƒôlal?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_02");//Mo≈æn√° ≈æe te√´ka jsi v t√°bo√¢e d≈Øle≈æitej, ale tvoje moc konƒç√≠ PR√ÅVƒò TADY. Kapi≈°to?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_03");//Tak si bƒô≈æ do dolu a doluj si zlato nebo nƒôco jin√Ωho, ale tady nep√¢ek√°≈æej!
 	
 	MIS_BloodwynRaus = LOG_RUNNING;
 
-	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn je v chr·mu, ale odsud se nedostanu nikam. MÍl bych to spÌö obhlÈdnout kolem dolu.");
+	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn je v chr√°mu, ale odsud se nedostanu nikam. Mƒôl bych to sp√≠≈° obhl√©dnout kolem dolu.");
 };
 //----------------------------------------------------------------------
 //	Info kopf
@@ -274,7 +274,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_kopf   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_kopf_Condition;
 	information = DIA_Addon_10018_Torwache_kopf_Info;
 	permanent   = FALSE;
-	description = "(uk·zat Bloodwynovu hlavu)";
+	description = "(uk√°zat Bloodwynovu hlavu)";
 };
 FUNC INT DIA_Addon_10018_Torwache_kopf_Condition()
 {	
@@ -285,9 +285,9 @@ FUNC INT DIA_Addon_10018_Torwache_kopf_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_kopf_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_kopf_15_00");//Hele! Po‚·d si myslÌö, ûe mÍ zastavÌö?
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_kopf_15_00");//Hele! Po√¢√°d si mysl√≠≈°, ≈æe mƒô zastav√≠≈°?
 	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_01");//To je... to je Bloodwyn? Fuj tajbl, to je...
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_02");//No jo, teda ne... VlastnÍ... no, myslÌm, ûe m˘ûeö jÌt d·l.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_02");//No jo, teda ne... Vlastnƒô... no, mysl√≠m, ≈æe m≈Ø≈æe≈° j√≠t d√°l.
 	
 	MIS_BloodwynRaus = LOG_SUCCESS;
 	

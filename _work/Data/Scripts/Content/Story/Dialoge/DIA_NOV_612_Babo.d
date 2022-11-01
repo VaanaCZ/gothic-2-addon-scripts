@@ -45,13 +45,13 @@ FUNC VOID DIA_Babo_Hello_Info()
 {
 	
 	
-	AI_Output (self ,other,"DIA_Babo_Hello_03_00"); //(ostıchavê) Buë zdráv, ty jsi tady také novı, co?
+	AI_Output (self ,other,"DIA_Babo_Hello_03_00"); //(ostÃ½chavÄ™) BuÃ« zdrÃ¡v, ty jsi tady takÃ© novÃ½, co?
 	AI_Output (other,self ,"DIA_Babo_Hello_15_01"); //Ano. Jak dlouho tady jsi?
-	AI_Output (self ,other,"DIA_Babo_Hello_03_02"); //Zatím tady jsem ètyâi tıdny. Dostal jsi u bojovou tyè?
-	AI_Output (other,self ,"DIA_Babo_Hello_15_03"); //Zatím ne.
-	AI_Output (self ,other,"DIA_Babo_Hello_03_04"); //Tak si vezmi tuhle. Kadı novic dostane vlastní tyè - je symbolem toho, e je schopen se sám ubránit. Umíš bojovat?
-	AI_Output (other,self ,"DIA_Babo_Hello_15_05"); //No, u jsem jednu nebo dvê zbranê v ruce drel.
-	AI_Output (self ,other,"DIA_Babo_Hello_03_06"); //Kdybys chtêl, mùu tê nêco nauèit. Mêl bych ale jednu prosbu...
+	AI_Output (self ,other,"DIA_Babo_Hello_03_02"); //ZatÃ­m tady jsem ÄtyÃ¢i tÃ½dny. Dostal jsi uÅ¾ bojovou tyÄ?
+	AI_Output (other,self ,"DIA_Babo_Hello_15_03"); //ZatÃ­m ne.
+	AI_Output (self ,other,"DIA_Babo_Hello_03_04"); //Tak si vezmi tuhle. KaÅ¾dÃ½ novic dostane vlastnÃ­ tyÄ - je symbolem toho, Å¾e je schopen se sÃ¡m ubrÃ¡nit. UmÃ­Å¡ bojovat?
+	AI_Output (other,self ,"DIA_Babo_Hello_15_05"); //No, uÅ¾ jsem jednu nebo dvÄ™ zbranÄ™ v ruce drÅ¾el.
+	AI_Output (self ,other,"DIA_Babo_Hello_03_06"); //Kdybys chtÄ™l, mÅ¯Å¾u tÄ™ nÄ™co nauÄit. MÄ™l bych ale jednu prosbu...
 
 	B_GiveInvItems (self,other,ITMW_1h_NOV_Mace,1);
 	AI_EquipBestMeleeWeapon (self);
@@ -67,7 +67,7 @@ INSTANCE DIA_Babo_Anliegen   (C_INFO)
 	condition   = DIA_Babo_Anliegen_Condition;
 	information = DIA_Babo_Anliegen_Info;
 	permanent   = FALSE;
-	description	= "Co bys potâeboval?";
+	description	= "Co bys potÃ¢eboval?";
 };
 FUNC INT DIA_Babo_Anliegen_Condition()
 {
@@ -79,14 +79,14 @@ FUNC INT DIA_Babo_Anliegen_Condition()
 };
 FUNC VOID DIA_Babo_Anliegen_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Anliegen_15_00"); //Co bys potâeboval?
-	AI_Output (self ,other,"DIA_Babo_Anliegen_03_01"); //No, jeden z paladinù, Sergio, je momentálnê tady v klášteâe.
-	AI_Output (self ,other,"DIA_Babo_Anliegen_03_02"); //Kdyby se ti podaâilo ho pâemluvit, aby si se mnou párkrát zacvièil, nêco bych tê nauèil.
-	AI_Output (other,self ,"DIA_Babo_Anliegen_15_03"); //Uvidím, co s tím pùjde dêlat.
+	AI_Output (other,self ,"DIA_Babo_Anliegen_15_00"); //Co bys potÃ¢eboval?
+	AI_Output (self ,other,"DIA_Babo_Anliegen_03_01"); //No, jeden z paladinÅ¯, Sergio, je momentÃ¡lnÄ™ tady v klÃ¡Å¡teÃ¢e.
+	AI_Output (self ,other,"DIA_Babo_Anliegen_03_02"); //Kdyby se ti podaÃ¢ilo ho pÃ¢emluvit, aby si se mnou pÃ¡rkrÃ¡t zacviÄil, nÄ™co bych tÄ™ nauÄil.
+	AI_Output (other,self ,"DIA_Babo_Anliegen_15_03"); //UvidÃ­m, co s tÃ­m pÅ¯jde dÄ™lat.
 	
 	Log_CreateTopic (Topic_BaboTrain,LOG_MISSION);
 	Log_SetTopicStatus (Topic_BaboTrain,LOG_RUNNING);
-	B_LogEntry (Topic_BaboTrain,"Jestli se mi podaâí pâesvêdèit paladina Sergia, aby Baba trochu pocvièil v boji, nauèí mê bojovat obouruèními zbranêmi.");
+	B_LogEntry (Topic_BaboTrain,"Jestli se mi podaÃ¢Ã­ pÃ¢esvÄ™dÄit paladina Sergia, aby Baba trochu pocviÄil v boji, nauÄÃ­ mÄ™ bojovat obouruÄnÃ­mi zbranÄ™mi.");
 	
 };
 //***********************************************************************
@@ -99,7 +99,7 @@ INSTANCE DIA_Babo_Sergio   (C_INFO)
 	condition   = DIA_Babo_Sergio_Condition;
 	information = DIA_Babo_Sergio_Info;
 	permanent   = FALSE;
-	description	= "Hovoâil jsem se Sergiem.";
+	description	= "HovoÃ¢il jsem se Sergiem.";
 };
 FUNC INT DIA_Babo_Sergio_Condition()
 {
@@ -113,16 +113,16 @@ FUNC INT DIA_Babo_Sergio_Condition()
 };
 FUNC VOID DIA_Babo_Sergio_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Sergio_15_00"); //Mluvil jsem se Sergiem. Bude tê trénovat dvê hodiny kadé ráno, od pêti hodin.
-	AI_Output (self ,other,"DIA_Babo_Sergio_03_01"); //Díky! Je to pro mê obrovská èest!
-	AI_Output (self ,other,"DIA_Babo_Sergio_03_02"); //Kdybys chtêl, ukáu ti také nêjaké bojové finty.
+	AI_Output (other,self ,"DIA_Babo_Sergio_15_00"); //Mluvil jsem se Sergiem. Bude tÄ™ trÃ©novat dvÄ™ hodiny kaÅ¾dÃ© rÃ¡no, od pÄ™ti hodin.
+	AI_Output (self ,other,"DIA_Babo_Sergio_03_01"); //DÃ­ky! Je to pro mÄ™ obrovskÃ¡ Äest!
+	AI_Output (self ,other,"DIA_Babo_Sergio_03_02"); //Kdybys chtÄ™l, ukÃ¡Å¾u ti takÃ© nÄ™jakÃ© bojovÃ© finty.
 	
 	Babo_TeachPlayer = TRUE;	
 	Babo_Training = TRUE;
 	B_GivePlayerXP ((XP_Ambient)*2);
 	
 	Log_CreateTopic (Topic_KlosterTeacher,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTeacher,"Babo mê mùe vycvièit v obouruèním boji.");
+	B_LogEntry (Topic_KlosterTeacher,"Babo mÄ™ mÅ¯Å¾e vycviÄit v obouruÄnÃ­m boji.");
 };
 //***************************************************************************************
 //			Ich will trainieren
@@ -134,7 +134,7 @@ INSTANCE DIA_Babo_Teach(C_INFO)
 	condition	= DIA_Babo_Teach_Condition;
 	information	= DIA_Babo_Teach_Info;
 	permanent	= TRUE;
-	description = "Jsem pâipraven na vıcvik.";
+	description = "Jsem pÃ¢ipraven na vÃ½cvik.";
 };                       
 //----------------------------------
 var int DIA_Babo_Teach_permanent;
@@ -157,7 +157,7 @@ FUNC VOID DIA_Babo_Teach_Info()
 {	
 	babo_merk2h = other.HitChance [NPC_TALENT_2H]; 
 	
-	AI_Output (other,self ,"DIA_Babo_Teach_15_00"); //Jsem pâipraven na vıcvik.
+	AI_Output (other,self ,"DIA_Babo_Teach_15_00"); //Jsem pÃ¢ipraven na vÃ½cvik.
 	
 	Info_ClearChoices 	(DIA_Babo_Teach);
 	Info_AddChoice 		(DIA_Babo_Teach,	DIALOG_BACK		,DIA_Babo_Teach_Back);
@@ -169,7 +169,7 @@ FUNC VOID DIA_Babo_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_2H] >= 75)
 	{
-		AI_Output (self,other,"DIA_DIA_Babo_Teach_Back_03_00"); //U ses nauèil o boji s obouruèními zbranêmi všechno, co znám.
+		AI_Output (self,other,"DIA_DIA_Babo_Teach_Back_03_00"); //UÅ¾ ses nauÄil o boji s obouruÄnÃ­mi zbranÄ™mi vÅ¡echno, co znÃ¡m.
 		
 		DIA_Babo_Teach_permanent = TRUE;
 	};
@@ -184,19 +184,19 @@ FUNC VOID DIA_Babo_Teach_2H_1 ()
 	{
 		if (Babo_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_00"); //Bojuj za Innose. Innos je náš ivot - a tvá víra ti bude dávat sílu.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_00"); //Bojuj za Innose. Innos je nÃ¡Å¡ Å¾ivot - a tvÃ¡ vÃ­ra ti bude dÃ¡vat sÃ­lu.
 		};
 		if (Babo_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_01"); //Innosùv sluebník nikdy svého protivníka neprovokuje - pâekvapí ho!
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_01"); //InnosÅ¯v sluÅ¾ebnÃ­k nikdy svÃ©ho protivnÃ­ka neprovokuje - pÃ¢ekvapÃ­ ho!
 		};
 		if (Babo_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_02"); //Aã jdeš kamkoliv, mêj svou tyè stále po ruce.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_02"); //AÄƒ jdeÅ¡ kamkoliv, mÄ™j svou tyÄ stÃ¡le po ruce.
 		};
 		if (Babo_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_03"); //Innosùv sluebník je vdycky pâipravenı k boji. Pokud ti nemùe poslouit magie, je tvojí nejvêtší obranou právê hùl.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_03"); //InnosÅ¯v sluÅ¾ebnÃ­k je vÅ¾dycky pÃ¢ipravenÃ½ k boji. Pokud ti nemÅ¯Å¾e poslouÅ¾it magie, je tvojÃ­ nejvÄ™tÅ¡Ã­ obranou prÃ¡vÄ™ hÅ¯l.
 		};
 		
 		Babo_Labercount = Babo_Labercount +1;
@@ -219,19 +219,19 @@ FUNC VOID DIA_Babo_Teach_2H_5 ()
 	{
 		if (Babo_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_00"); //Innosùv sluebník nebojuje jenom tyèí, ale také svım srdcem.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_00"); //InnosÅ¯v sluÅ¾ebnÃ­k nebojuje jenom tyÄÃ­, ale takÃ© svÃ½m srdcem.
 		};
 		if (Babo_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_01"); //Vdycky musíš mít v pamêti místo, kam se mùeš v pâípadê potâeby stáhnout.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_01"); //VÅ¾dycky musÃ­Å¡ mÃ­t v pamÄ™ti mÃ­sto, kam se mÅ¯Å¾eÅ¡ v pÃ¢Ã­padÄ™ potÃ¢eby stÃ¡hnout.
 		};
 		if (Babo_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_02"); //Nezapomeà, e dobâe bojuješ v pâípadê, kdy svého protivníka ovládáš a nedáváš mu šanci, aby se ovládal sám.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_02"); //NezapomeÅ•, Å¾e dobÃ¢e bojujeÅ¡ v pÃ¢Ã­padÄ™, kdy svÃ©ho protivnÃ­ka ovlÃ¡dÃ¡Å¡ a nedÃ¡vÃ¡Å¡ mu Å¡anci, aby se ovlÃ¡dal sÃ¡m.
 		};
 		if (Babo_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_03"); //Prohraješ pouze v pâípadê, kdy se vzdáš.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_03"); //ProhrajeÅ¡ pouze v pÃ¢Ã­padÄ™, kdyÅ¾ se vzdÃ¡Å¡.
 		};
 		
 		Babo_Labercount = Babo_Labercount +1;
@@ -256,7 +256,7 @@ INSTANCE DIA_Babo_Wurst(C_INFO)
 	condition	= DIA_Babo_Wurst_Condition;
 	information	= DIA_Babo_Wurst_Info;
 	permanent	= FALSE;
-	description = "Tady máš klobásu.";
+	description = "Tady mÃ¡Å¡ klobÃ¡su.";
 };                       
 
 FUNC INT DIA_Babo_Wurst_Condition()
@@ -271,11 +271,11 @@ FUNC INT DIA_Babo_Wurst_Condition()
 };
 FUNC VOID DIA_Babo_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Babo_Wurst_15_00"); //Tady máš klobásu.
-	AI_Output (self, other, "DIA_Babo_Wurst_03_01"); //Ach, skopová klobáska, vıbornê! Chutnají vánê vıbornê - hele, dej mi ještê jednu!
-	AI_Output (other, self, "DIA_Babo_Wurst_15_02"); //Pak mi jich u ale nezbude dost pro ostatní.
-	AI_Output (self, other, "DIA_Babo_Wurst_03_03"); //Však jsi stejnê dostal o jednu víc. Tu pro sebe. A co je klobása mezi pâáteli?
-	AI_Output (self, other, "DIA_Babo_Wurst_03_04"); //No tak, dám ti za ní svitek s kouzlem 'ohnivı šíp'.
+	AI_Output (other, self, "DIA_Babo_Wurst_15_00"); //Tady mÃ¡Å¡ klobÃ¡su.
+	AI_Output (self, other, "DIA_Babo_Wurst_03_01"); //Ach, skopovÃ¡ klobÃ¡ska, vÃ½bornÄ™! ChutnajÃ­ vÃ¡Å¾nÄ™ vÃ½bornÄ™ - hele, dej mi jeÅ¡tÄ™ jednu!
+	AI_Output (other, self, "DIA_Babo_Wurst_15_02"); //Pak mi jich uÅ¾ ale nezbude dost pro ostatnÃ­.
+	AI_Output (self, other, "DIA_Babo_Wurst_03_03"); //VÅ¡ak jsi stejnÄ™ dostal o jednu vÃ­c. Tu pro sebe. A co je klobÃ¡sa mezi pÃ¢Ã¡teli?
+	AI_Output (self, other, "DIA_Babo_Wurst_03_04"); //No tak, dÃ¡m ti za nÃ­ svitek s kouzlem 'ohnivÃ½ Å¡Ã­p'.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -290,12 +290,12 @@ FUNC VOID DIA_Babo_Wurst_Info()
 	AI_PrintScreen	(NovizeText, -1, YPOS_GOLDGIVEN, FONT_ScreenSmall, 2);
 	
 	Info_ClearChoices (DIA_Babo_Wurst);
-	Info_AddChoice (DIA_Babo_Wurst,"No dobâe, tak si ještê vezmi.",DIA_Babo_Wurst_JA);
-	Info_AddChoice (DIA_Babo_Wurst,"Ne, to by prostê nešlo.",DIA_Babo_Wurst_NEIN);
+	Info_AddChoice (DIA_Babo_Wurst,"No dobÃ¢e, tak si jeÅ¡tÄ™ vezmi.",DIA_Babo_Wurst_JA);
+	Info_AddChoice (DIA_Babo_Wurst,"Ne, to by prostÄ™ neÅ¡lo.",DIA_Babo_Wurst_NEIN);
 };
 FUNC VOID DIA_Babo_Wurst_JA()
 {
-	AI_Output (other, self, "DIA_Babo_Wurst_JA_15_00"); //No dobâe, tak si ještê vezmi.
+	AI_Output (other, self, "DIA_Babo_Wurst_JA_15_00"); //No dobÃ¢e, tak si jeÅ¡tÄ™ vezmi.
 	AI_Output (self, other, "DIA_Babo_Wurst_JA_03_01"); //Bezva. Tady je ten svitek.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
@@ -305,8 +305,8 @@ FUNC VOID DIA_Babo_Wurst_JA()
 };
 FUNC VOID DIA_Babo_Wurst_NEIN()
 {
-	AI_Output (other, self, "DIA_Babo_Wurst_NEIN_15_00"); //Ne, to by prostê nešlo.
-	AI_Output (self, other, "DIA_Babo_Wurst_NEIN_03_01"); //Chlape, e ty jsi jeden z têch, co berou všechno moc zodpovêdnê?
+	AI_Output (other, self, "DIA_Babo_Wurst_NEIN_15_00"); //Ne, to by prostÄ™ neÅ¡lo.
+	AI_Output (self, other, "DIA_Babo_Wurst_NEIN_03_01"); //Chlape, Å¾e ty jsi jeden z tÄ™ch, co berou vÅ¡echno moc zodpovÄ™dnÄ™?
 	Info_ClearChoices (DIA_Babo_Wurst);
 };
 //***********************************************************************
@@ -335,10 +335,10 @@ FUNC INT DIA_Babo_YouAndAgon_Condition()
 FUNC VOID DIA_Babo_YouAndAgon_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_YouAndAgon_15_00"); //Co se stalo mezi tebou a Agonem?
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_01"); //Ale to víš, trošku jsme se pohádali o to, jak se starat o ohnivé kopâivy.
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_02"); //Agon je zaléval tak moc, e jim jednoho dne uhnily koâeny.
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_03"); //A kdy se to stalo, tak to pak shodil na mê.
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_04"); //Od té doby mê nenechají dêlat nic jiného ne jen zametat dvùr.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_01"); //Ale to vÃ­Å¡, troÅ¡ku jsme se pohÃ¡dali o to, jak se starat o ohnivÃ© kopÃ¢ivy.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_02"); //Agon je zalÃ©val tak moc, Å¾e jim jednoho dne uhnily koÃ¢eny.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_03"); //A kdyÅ¾ se to stalo, tak to pak shodil na mÄ™.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_04"); //Od tÃ© doby mÄ™ nenechajÃ­ dÄ™lat nic jinÃ©ho neÅ¾ jen zametat dvÅ¯r.
 };
 //***********************************************************************
 //	Warum hat Agon das getan?
@@ -350,7 +350,7 @@ INSTANCE DIA_Babo_WhyDidAgon  (C_INFO)
 	condition   = DIA_Babo_WhyDidAgon_Condition;
 	information = DIA_Babo_WhyDidAgon_Info;
 	permanent   = FALSE;
-	description	= "Proè to Agon udêlal?";
+	description	= "ProÄ to Agon udÄ™lal?";
 };
 FUNC INT DIA_Babo_WhyDidAgon_Condition()
 {
@@ -362,8 +362,8 @@ FUNC INT DIA_Babo_WhyDidAgon_Condition()
 };
 FUNC VOID DIA_Babo_WhyDidAgon_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_WhyDidAgon_15_00"); //Proè to Agon udêlal?
-	AI_Output (self ,other,"DIA_Babo_WhyDidAgon_03_01"); //Na to se ho budeš muset zeptat sám. Myslím, e nesnese pomyšlení na to, e by mohl bıt nêkdo lepší ne on.
+	AI_Output (other,self ,"DIA_Babo_WhyDidAgon_15_00"); //ProÄ to Agon udÄ™lal?
+	AI_Output (self ,other,"DIA_Babo_WhyDidAgon_03_01"); //Na to se ho budeÅ¡ muset zeptat sÃ¡m. MyslÃ­m, Å¾e nesnese pomyÅ¡lenÃ­ na to, Å¾e by mohl bÃ½t nÄ™kdo lepÅ¡Ã­ neÅ¾ on.
 };
 //***********************************************************************
 //	Du hast wohl Ahnung von Pflanzen?
@@ -375,7 +375,7 @@ INSTANCE DIA_Babo_PlantLore  (C_INFO)
 	condition   = DIA_Babo_PlantLore_Condition;
 	information = DIA_Babo_PlantLore_Info;
 	permanent   = FALSE;
-	description	= "Zdá se, e se v rostlinách docela vyznáš.";
+	description	= "ZdÃ¡ se, Å¾e se v rostlinÃ¡ch docela vyznÃ¡Å¡.";
 };
 FUNC INT DIA_Babo_PlantLore_Condition()
 {
@@ -387,14 +387,14 @@ FUNC INT DIA_Babo_PlantLore_Condition()
 };
 FUNC VOID DIA_Babo_PlantLore_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_PlantLore_15_00"); //Zdá se, e se v rostlinách docela vyznáš.
-	AI_Output (self ,other,"DIA_Babo_PlantLore_03_01"); //Mùj dêdeèek mêl bylinkovou zahrádku, a tam jsem se pár vêcí nauèil.
-	AI_Output (self ,other,"DIA_Babo_PlantLore_03_02"); //Vánê bych byl rád, kdybych mohl znovu pracovat v zahradê.
+	AI_Output (other,self ,"DIA_Babo_PlantLore_15_00"); //ZdÃ¡ se, Å¾e se v rostlinÃ¡ch docela vyznÃ¡Å¡.
+	AI_Output (self ,other,"DIA_Babo_PlantLore_03_01"); //MÅ¯j dÄ™deÄek mÄ™l bylinkovou zahrÃ¡dku, a tam jsem se pÃ¡r vÄ™cÃ­ nauÄil.
+	AI_Output (self ,other,"DIA_Babo_PlantLore_03_02"); //VÃ¡Å¾nÄ™ bych byl rÃ¡d, kdybych mohl znovu pracovat v zahradÄ™.
 	
 	MIS_HelpBabo = LOG_RUNNING;
 	Log_CreateTopic (Topic_BaboGaertner,LOG_MISSION);
 	Log_SetTopicStatus (Topic_BaboGaertner,LOG_RUNNING);
-	B_LogEntry (Topic_BaboGaertner,"Babo by radši pracoval v bylinkáâské zahradê, ne aby zametal dvùr.");
+	B_LogEntry (Topic_BaboGaertner,"Babo by radÅ¡i pracoval v bylinkÃ¡Ã¢skÃ© zahradÄ™, neÅ¾ aby zametal dvÅ¯r.");
 };
 //***********************************************************************
 //	Fegen
@@ -406,7 +406,7 @@ INSTANCE DIA_Babo_Fegen  (C_INFO)
 	condition   = DIA_Babo_Fegen_Condition;
 	information = DIA_Babo_Fegen_Info;
 	permanent   = FALSE;
-	description	= "Mám za úkol zametat v komnatách novicù.";
+	description	= "MÃ¡m za Ãºkol zametat v komnatÃ¡ch novicÅ¯.";
 };
 FUNC INT DIA_Babo_Fegen_Condition()
 {
@@ -417,12 +417,12 @@ FUNC INT DIA_Babo_Fegen_Condition()
 };
 FUNC VOID DIA_Babo_Fegen_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Fegen_15_00"); //Mám za úkol zametat v komnatách novicù.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_01"); //Tak to ti toho naloili docela dost. Víš co? Já ti pomùu. Sám bys to nikdy nedodêlal.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_02"); //Strašnê nutnê ale potâebuji svitek s kouzlem 'vêtrná pêst'. Víš, mêl jsem štêstí a pâeèetl jsem si o nêm knihu.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_03"); //Teë si pochopitelnê chci to kouzlo vyzkoušet. Pâines mi tedy ten svitek a já ti pomohu.
+	AI_Output (other,self ,"DIA_Babo_Fegen_15_00"); //MÃ¡m za Ãºkol zametat v komnatÃ¡ch novicÅ¯.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_01"); //Tak to ti toho naloÅ¾ili docela dost. VÃ­Å¡ co? JÃ¡ ti pomÅ¯Å¾u. SÃ¡m bys to nikdy nedodÄ™lal.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_02"); //StraÅ¡nÄ™ nutnÄ™ ale potÃ¢ebuji svitek s kouzlem 'vÄ™trnÃ¡ pÄ™st'. VÃ­Å¡, mÄ™l jsem Å¡tÄ™stÃ­ a pÃ¢eÄetl jsem si o nÄ™m knihu.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_03"); //TeÃ« si pochopitelnÄ™ chci to kouzlo vyzkouÅ¡et. PÃ¢ines mi tedy ten svitek a jÃ¡ ti pomohu.
 	
-	B_LogEntry 	(Topic_ParlanFegen,"Babo mi pomùe zamést komnaty novicù, kdy mu pâinesu svitek vêtrné pêsti.");
+	B_LogEntry 	(Topic_ParlanFegen,"Babo mi pomÅ¯Å¾e zamÃ©st komnaty novicÅ¯, kdyÅ¾ mu pÃ¢inesu svitek vÄ™trnÃ© pÄ™sti.");
 };
 //***********************************************************************
 //	Windfaust abgeben
@@ -434,7 +434,7 @@ INSTANCE DIA_Babo_Windfaust  (C_INFO)
 	condition   = DIA_Babo_Windfaust_Condition;
 	information = DIA_Babo_Windfaust_Info;
 	permanent   = TRUE;
-	description	= "Co se tıká toho svitku... (PÂEDAT VÊTRNOU PÊST)";
+	description	= "Co se tÃ½kÃ¡ toho svitku... (PÃ‚EDAT VÄ˜TRNOU PÄ˜ST)";
 };
 //---------------------------------
 var int DIA_Babo_Windfaust_permanent;
@@ -450,13 +450,13 @@ FUNC INT DIA_Babo_Windfaust_Condition()
 };
 FUNC VOID DIA_Babo_Windfaust_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Windfaust_15_00"); //Co se toho svitku tıèe...
-	AI_Output (self ,other,"DIA_Babo_Windfaust_03_01"); //Máš pro mê to kouzlo vêtrná pêst?
+	AI_Output (other,self ,"DIA_Babo_Windfaust_15_00"); //Co se toho svitku tÃ½Äe...
+	AI_Output (self ,other,"DIA_Babo_Windfaust_03_01"); //MÃ¡Å¡ pro mÄ™ to kouzlo vÄ™trnÃ¡ pÄ™st?
 	
 	if B_GiveInvItems (other, self, ItSc_Windfist,1)
 	{ 
-		AI_Output (other,self ,"DIA_Babo_Windfaust_15_02"); //Tady je ten svitek s kouzlem, jak jsi chtêl.
-		AI_Output (self ,other,"DIA_Babo_Windfaust_03_03"); //To je skvêlé. Teë ti pomùu s tím zametáním.
+		AI_Output (other,self ,"DIA_Babo_Windfaust_15_02"); //Tady je ten svitek s kouzlem, jak jsi chtÄ™l.
+		AI_Output (self ,other,"DIA_Babo_Windfaust_03_03"); //To je skvÄ™lÃ©. TeÃ« ti pomÅ¯Å¾u s tÃ­m zametÃ¡nÃ­m.
 		
 		NOV_Helfer = (NOV_Helfer +1);
 		DIA_Babo_Windfaust_permanent = TRUE; 
@@ -464,13 +464,13 @@ FUNC VOID DIA_Babo_Windfaust_Info()
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine (self,"FEGEN");
 		
-		B_LogEntry 	(Topic_ParlanFegen,"Babo mi nyní pomùe zamést cely novicù.");
+		B_LogEntry 	(Topic_ParlanFegen,"Babo mi nynÃ­ pomÅ¯Å¾e zamÃ©st cely novicÅ¯.");
 		
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Babo_Windfaust_15_04"); //Ne, zatím ne.
-		AI_Output (self ,other,"DIA_Babo_Windfaust_03_05"); //V tom pâípadê poèkám, a se ti jej podaâí sehnat.
+		AI_Output (other,self ,"DIA_Babo_Windfaust_15_04"); //Ne, zatÃ­m ne.
+		AI_Output (self ,other,"DIA_Babo_Windfaust_03_05"); //V tom pÃ¢Ã­padÄ™ poÄkÃ¡m, aÅ¾ se ti jej podaÃ¢Ã­ sehnat.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -486,7 +486,7 @@ INSTANCE DIA_Babo_Life   (C_INFO)
 	condition   = DIA_Babo_Life_Condition;
 	information = DIA_Babo_Life_Info;
 	permanent   = TRUE;
-	description	= "Jak jde ivot tady v klášteâe?";
+	description	= "Jak jde Å¾ivot tady v klÃ¡Å¡teÃ¢e?";
 };
 FUNC INT DIA_Babo_Life_Condition()
 {
@@ -497,19 +497,19 @@ FUNC INT DIA_Babo_Life_Condition()
 };
 FUNC VOID DIA_Babo_Life_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Life_15_00"); //Jak jde ivot tady v klášteâe?
-	AI_Output (self ,other,"DIA_Babo_Life_03_01"); //Nerad bych, aby to vypadalo, e si stêuju, ale nikdy mê nenapadlo, e to tady bude tak pâísné. Kdy se nedríš pravidel, èeká tê trest.
-	AI_Output (self ,other,"DIA_Babo_Life_03_02"); //Samozâejmê e spousta novicù chce v knihovnê studovat Innosovu moudrost, aby byli pâipraveni pro pâípad, e by byli vybráni.
-	AI_Output (self ,other,"DIA_Babo_Life_03_03"); //Já si ale myslím, e nejlepší pâípravou ke zkoušce magie je plnit zadané úkoly.
+	AI_Output (other,self ,"DIA_Babo_Life_15_00"); //Jak jde Å¾ivot tady v klÃ¡Å¡teÃ¢e?
+	AI_Output (self ,other,"DIA_Babo_Life_03_01"); //Nerad bych, aby to vypadalo, Å¾e si stÄ™Å¾uju, ale nikdy mÄ™ nenapadlo, Å¾e to tady bude tak pÃ¢Ã­snÃ©. KdyÅ¾ se nedrÅ¾Ã­Å¡ pravidel, ÄekÃ¡ tÄ™ trest.
+	AI_Output (self ,other,"DIA_Babo_Life_03_02"); //SamozÃ¢ejmÄ™ Å¾e spousta novicÅ¯ chce v knihovnÄ™ studovat Innosovu moudrost, aby byli pÃ¢ipraveni pro pÃ¢Ã­pad, Å¾e by byli vybrÃ¡ni.
+	AI_Output (self ,other,"DIA_Babo_Life_03_03"); //JÃ¡ si ale myslÃ­m, Å¾e nejlepÅ¡Ã­ pÃ¢Ã­pravou ke zkouÅ¡ce magie je plnit zadanÃ© Ãºkoly.
 	
 	if (Npc_KnowsInfo (other,DIA_Igaranz_Choosen) == FALSE)
 	{
-		AI_Output (other,self ,"DIA_Babo_Life_15_04"); //Co je to vlastnê kolem toho vyvoleného a zkoušky?
-		AI_Output (self ,other,"DIA_Babo_Life_03_05"); //Promluv si s bratrem Igarazem. Ten o tom ví hodnê.
+		AI_Output (other,self ,"DIA_Babo_Life_15_04"); //Co je to vlastnÄ™ kolem toho vyvolenÃ©ho a zkouÅ¡ky?
+		AI_Output (self ,other,"DIA_Babo_Life_03_05"); //Promluv si s bratrem Igarazem. Ten o tom vÃ­ hodnÄ™.
 	};
 };
 //*********************************************************************
-//		Sc hat Babo den Gärtnerposten verschafft (Kap. 2)
+//		Sc hat Babo den GÃ¤rtnerposten verschafft (Kap. 2)
 //*********************************************************************
 INSTANCE DIA_Babo_HowIsIt   (C_INFO)
 {
@@ -533,12 +533,12 @@ var int Babo_XPgiven;
 //--------------------
 FUNC VOID DIA_Babo_HowIsIt_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_HowIsIt_15_00"); //Jak se máš?
+	AI_Output (other,self ,"DIA_Babo_HowIsIt_15_00"); //Jak se mÃ¡Å¡?
 	
 	if (MIS_HelpBabo == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_01"); //(skromnê) Dêkuji mágùm za svùj údêl.
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_02"); //Jsem rád, e mohou pracovat v zahradê, a doufám, e jsou se mnou mágové spokojeni, mistâe.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_01"); //(skromnÄ™) DÄ™kuji mÃ¡gÅ¯m za svÅ¯j ÃºdÄ™l.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_02"); //Jsem rÃ¡d, Å¾e mohou pracovat v zahradÄ™, a doufÃ¡m, Å¾e jsou se mnou mÃ¡govÃ© spokojeni, mistÃ¢e.
 		
 		if (Babo_XPgiven == FALSE)
 		{
@@ -548,8 +548,8 @@ FUNC VOID DIA_Babo_HowIsIt_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_03"); //(podêšenê) D... d... dobâe, mistâe.
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_04"); //P... pracuji ze všech sil a snaím se nezklamat mágy.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_03"); //(podÄ™Å¡enÄ™) D... d... dobÃ¢e, mistÃ¢e.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_04"); //P... pracuji ze vÅ¡ech sil a snaÅ¾Ã­m se nezklamat mÃ¡gy.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -622,7 +622,7 @@ INSTANCE DIA_Babo_Kap3_Hello   (C_INFO)
 	condition   = DIA_Babo_Kap3_Hello_Condition;
 	information = DIA_Babo_Kap3_Hello_Info;
 	permanent   = FALSE;
-	description = "Co tady dêláš?";
+	description = "Co tady dÄ™lÃ¡Å¡?";
 };
 FUNC INT DIA_Babo_Kap3_Hello_Condition()
 {
@@ -633,15 +633,15 @@ FUNC INT DIA_Babo_Kap3_Hello_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_Hello_15_00"); //Co tady dêláš?
+	AI_Output (other,self ,"DIA_Babo_Kap3_Hello_15_00"); //Co tady dÄ™lÃ¡Å¡?
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_01"); //(rozpaèitê) Snaím se splnit úkoly, které my byly zadány, ku prospêchu kláštera.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_01"); //(rozpaÄitÄ™) SnaÅ¾Ã­m se splnit Ãºkoly, kterÃ© my byly zadÃ¡ny, ku prospÄ™chu klÃ¡Å¡tera.
 	}	
 	else
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_02"); //Nesmím s tebou mluvit. Na rozhovory s cizinci zde není nahlíeno s pochopením.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_02"); //NesmÃ­m s tebou mluvit. Na rozhovory s cizinci zde nenÃ­ nahlÃ­Å¾eno s pochopenÃ­m.
 	}; 
 };
 
@@ -656,7 +656,7 @@ INSTANCE DIA_Babo_Kap3_KeepTheFaith   (C_INFO)
 	condition   = DIA_Babo_Kap3_KeepTheFaith_Condition;
 	information = DIA_Babo_Kap3_KeepTheFaith_Info;
 	permanent   = FALSE;
-	description = "Nikdy nesmíš ztratit víru.";
+	description = "Nikdy nesmÃ­Å¡ ztratit vÃ­ru.";
 };
 FUNC INT DIA_Babo_Kap3_KeepTheFaith_Condition()
 {
@@ -669,16 +669,16 @@ FUNC INT DIA_Babo_Kap3_KeepTheFaith_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_KeepTheFaith_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_00"); //Nikdy nesmíš ztratit víru.
-	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_01"); //(zaskoèen) Ne... tedy, já bych nikdy nic takového neudêlal. Vánê!
-	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_02"); //My všichni èasto stojíme pâed obtínımi zkouškami.
-	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_03"); //Ano, mistâe. Budu si to vdycky pamatovat. Dêkuji ti.
+	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_00"); //Nikdy nesmÃ­Å¡ ztratit vÃ­ru.
+	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_01"); //(zaskoÄen) Ne... tedy, jÃ¡ bych nikdy nic takovÃ©ho neudÄ™lal. VÃ¡Å¾nÄ™!
+	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_02"); //My vÅ¡ichni Äasto stojÃ­me pÃ¢ed obtÃ­Å¾nÃ½mi zkouÅ¡kami.
+	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_03"); //Ano, mistÃ¢e. Budu si to vÅ¾dycky pamatovat. DÄ™kuji ti.
 	
 	B_GivePlayerXP (XP_Ambient); 
 };
 
 //*********************************************
-//	Das klingt aber nicht sehr glücklich.
+//	Das klingt aber nicht sehr glÃ¼cklich.
 //*********************************************
 
 INSTANCE DIA_Babo_Kap3_Unhappy   (C_INFO)
@@ -688,7 +688,7 @@ INSTANCE DIA_Babo_Kap3_Unhappy   (C_INFO)
 	condition   = DIA_Babo_Kap3_Unhappy_Condition;
 	information = DIA_Babo_Kap3_Unhappy_Info;
 	permanent   = FALSE;
-	description = "To nezní zrovna dvakrát šãastnê.";
+	description = "To neznÃ­ zrovna dvakrÃ¡t Å¡ÄƒastnÄ™.";
 };
 FUNC INT DIA_Babo_Kap3_Unhappy_Condition()
 {
@@ -701,102 +701,102 @@ FUNC INT DIA_Babo_Kap3_Unhappy_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_Unhappy_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_15_00"); //To nezní zrovna dvakrát šãastnê.
-	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_01"); //(zaskoèen) No... tedy, všechno je v naprostém poâádku, vánê.
-	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_02"); //Jen... Ne, nechci si stêovat.
+	AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_15_00"); //To neznÃ­ zrovna dvakrÃ¡t Å¡ÄƒastnÄ™.
+	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_01"); //(zaskoÄen) No... tedy, vÅ¡echno je v naprostÃ©m poÃ¢Ã¡dku, vÃ¡Å¾nÄ™.
+	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_02"); //Jen... Ne, nechci si stÄ™Å¾ovat.
 
 	Info_ClearChoices	(DIA_Babo_Kap3_Unhappy);
-	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Tak pâestaà skuhrat.",DIA_Babo_Kap3_Unhappy_Lament); 
-	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Ale no tak, mnê to âíct mùeš.",DIA_Babo_Kap3_Unhappy_TellMe);
+	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Tak pÃ¢estaÅ• skuhrat.",DIA_Babo_Kap3_Unhappy_Lament); 
+	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Ale no tak, mnÄ™ to Ã¢Ã­ct mÅ¯Å¾eÅ¡.",DIA_Babo_Kap3_Unhappy_TellMe);
 };
 
 	FUNC VOID DIA_Babo_Kap3_Unhappy_Lament ()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_00"); //Tak pâestaà skuhrat.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_01"); //(s obavami) Já... já... prosím, neâíkej to mágùm.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_02"); //Nechci, aby mê znovu potrestali.
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_03"); //Budu o tom pâemıšlet.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_00"); //Tak pÃ¢estaÅ• skuhrat.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_01"); //(s obavami) JÃ¡... jÃ¡... prosÃ­m, neÃ¢Ã­kej to mÃ¡gÅ¯m.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_02"); //Nechci, aby mÄ™ znovu potrestali.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_03"); //Budu o tom pÃ¢emÃ½Å¡let.
 		
 		Info_ClearChoices	(DIA_Babo_Kap3_Unhappy);
 	};
 	
 	FUNC VOID DIA_Babo_Kap3_Unhappy_TellMe ()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_00"); //Ale no tak, mnê to âíct mùeš.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_01"); //A vánê to mágùm neâekneš?
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_02"); //Vypadám snad na to?
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_03"); //Dobrá. Mám problém s jedním z novicù. Vyhrouje mi.
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_04"); //No tak u to koneènê vysyp.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_05"); //Igaraz, to je ten novic, našel moje soukromé zápisky.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_06"); //Prı kdy neudêlám to, co chce, tak je pâedá mágùm.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_00"); //Ale no tak, mnÄ™ to Ã¢Ã­ct mÅ¯Å¾eÅ¡.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_01"); //A vÃ¡Å¾nÄ™ to mÃ¡gÅ¯m neÃ¢ekneÅ¡?
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_02"); //VypadÃ¡m snad na to?
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_03"); //DobrÃ¡. MÃ¡m problÃ©m s jednÃ­m z novicÅ¯. VyhroÅ¾uje mi.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_04"); //No tak uÅ¾ to koneÄnÄ™ vysyp.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_05"); //Igaraz, to je ten novic, naÅ¡el moje soukromÃ© zÃ¡pisky.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_06"); //PrÃ½ kdyÅ¾ neudÄ™lÃ¡m to, co chce, tak je pÃ¢edÃ¡ mÃ¡gÅ¯m.
 		
 		MIS_BabosDocs = LOG_RUNNING; 
 		
 		Log_CreateTopic (Topic_BabosDocs,LOG_MISSION);
 		Log_SetTopicStatus (Topic_BabosDocs,LOG_RUNNING);
-		B_LogEntry (Topic_BabosDocs,"Igaraz vydírá novice Baba kvùli nêjakım dokumentùm.");
+		B_LogEntry (Topic_BabosDocs,"Igaraz vydÃ­rÃ¡ novice Baba kvÅ¯li nÄ™jakÃ½m dokumentÅ¯m.");
 		
 		Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Myslím, e to je na mê trošku moc osobní.",DIA_Babo_Kap3_Unhappy_Privat);
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Co jsi pro nêj mêl udêlat?",DIA_Babo_Kap3_Unhappy_ShouldDo);
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"MyslÃ­m, Å¾e to je na mÄ™ troÅ¡ku moc osobnÃ­.",DIA_Babo_Kap3_Unhappy_Privat);
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Co jsi pro nÄ™j mÄ™l udÄ™lat?",DIA_Babo_Kap3_Unhappy_ShouldDo);
 		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Co to je za dokumenty?",DIA_Babo_Kap3_Unhappy_Documents); 
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Moná bych ti mohl pomoct.",DIA_Babo_Kap3_Unhappy_CanHelpYou);
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"MoÅ¾nÃ¡ bych ti mohl pomoct.",DIA_Babo_Kap3_Unhappy_CanHelpYou);
 	};
 
 		FUNC VOID DIA_Babo_Kap3_Unhappy_Privat ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_00"); //Myslím, e to je na mê trošku moc osobní.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Privat_03_01"); //Rozumím, nechceš ádné potíe. Asi si s tím budu muset poradit sám.
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_02"); //Nêjak to urèitê zvládneš.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_00"); //MyslÃ­m, Å¾e to je na mÄ™ troÅ¡ku moc osobnÃ­.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Privat_03_01"); //RozumÃ­m, nechceÅ¡ Å¾Ã¡dnÃ© potÃ­Å¾e. Asi si s tÃ­m budu muset poradit sÃ¡m.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_02"); //NÄ™jak to urÄitÄ™ zvlÃ¡dneÅ¡.
 		
 			Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 		};
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_ShouldDo ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_ShouldDo_15_00"); //Co jsi pro nêj mêl udêlat?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_01"); //Nechce se mi o tom mluvit. Kadopádnê by to asi Innose nepotêšilo.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_02"); //Ani se mi nechce pâemıšlet nad tím, co by se stalo, kdyby to vyšlo na povrch.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_ShouldDo_15_00"); //Co jsi pro nÄ™j mÄ™l udÄ™lat?
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_01"); //Nechce se mi o tom mluvit. KaÅ¾dopÃ¡dnÄ™ by to asi Innose nepotÄ™Å¡ilo.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_02"); //Ani se mi nechce pÃ¢emÃ½Å¡let nad tÃ­m, co by se stalo, kdyby to vyÅ¡lo na povrch.
 		
 		};
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_Documents ()
 		{
 			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_00"); //Co to je za dokumenty?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_01"); //(nejistê) Do toho nikomu nic není. Je to jen moje vêc.
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_02"); //No tak, âekni mi to.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_03"); //Jsou to, ehm... naprosto normální dokumenty. Nic zvláštního.
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_04"); //Dobrá, u se nebudu ptát.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_01"); //(nejistÄ™) Do toho nikomu nic nenÃ­. Je to jen moje vÄ™c.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_02"); //No tak, Ã¢ekni mi to.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_03"); //Jsou to, ehm... naprosto normÃ¡lnÃ­ dokumenty. Nic zvlÃ¡Å¡tnÃ­ho.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_04"); //DobrÃ¡, uÅ¾ se nebudu ptÃ¡t.
 		};
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_CanHelpYou ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_00"); //Moná bych ti mohl pomoci.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_01"); //Udêlal bys to pro mê?
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_02"); //No, pâijde na to.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_03"); //(kvapnê) Samozâejmê e bych ti za to zaplatil.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_00"); //MoÅ¾nÃ¡ bych ti mohl pomoci.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_01"); //UdÄ™lal bys to pro mÄ™?
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_02"); //No, pÃ¢ijde na to.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_03"); //(kvapnÄ™) SamozÃ¢ejmÄ™ Å¾e bych ti za to zaplatil.
 			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_04"); //Kolik?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_05"); //Pochopitelnê nemám moc penêz, ale mohl bych ti dát svitek s kouzlem. Je to léèivé kouzlo.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_05"); //PochopitelnÄ™ nemÃ¡m moc penÄ™z, ale mohl bych ti dÃ¡t svitek s kouzlem. Je to lÃ©ÄivÃ© kouzlo.
 			
 			Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
-			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Radši se do toho nebudu míchat.",DIA_Babo_Kap3_Unhappy_No);
-			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Uvidím, co se dá dêlat.",DIA_Babo_Kap3_Unhappy_Yes);
+			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"RadÅ¡i se do toho nebudu mÃ­chat.",DIA_Babo_Kap3_Unhappy_No);
+			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"UvidÃ­m, co se dÃ¡ dÄ™lat.",DIA_Babo_Kap3_Unhappy_Yes);
 		};
 
 			FUNC VOID DIA_Babo_Kap3_Unhappy_No ()
 			{
-				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_No_15_00"); //Radši se do toho nebudu míchat.
-				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_No_03_01"); //V tom pâípadê nemám na vıbêr, pojedu v tom dál.
+				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_No_15_00"); //RadÅ¡i se do toho nebudu mÃ­chat.
+				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_No_03_01"); //V tom pÃ¢Ã­padÄ™ nemÃ¡m na vÃ½bÄ™r, pojedu v tom dÃ¡l.
 			
 				Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 			};
 			
 			FUNC VOID DIA_Babo_Kap3_Unhappy_Yes ()
 			{
-				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_00"); //Uvidím, co se dá dêlat.
-				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_01"); //(šãastnê) Vánê, urèitê to pùjde. Musí!
-				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_02"); //Take je vlastnê zapotâebí jenom zjistit, kde ty vêci Igaraz má. Pak u mu je nêjak sebereš a všechno bude v poâádku.
-				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_03"); //Uklidni se. Klidnê pracuj dál. O zbytek se postarám sám.
+				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_00"); //UvidÃ­m, co se dÃ¡ dÄ™lat.
+				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_01"); //(Å¡ÄƒastnÄ™) VÃ¡Å¾nÄ™, urÄitÄ™ to pÅ¯jde. MusÃ­!
+				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_02"); //TakÅ¾e je vlastnÄ™ zapotÃ¢ebÃ­ jenom zjistit, kde ty vÄ™ci Igaraz mÃ¡. Pak uÅ¾ mu je nÄ™jak sebereÅ¡ a vÅ¡echno bude v poÃ¢Ã¡dku.
+				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_03"); //Uklidni se. KlidnÄ™ pracuj dÃ¡l. O zbytek se postarÃ¡m sÃ¡m.
 				
 				Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 			};
@@ -812,7 +812,7 @@ INSTANCE DIA_Babo_Kap3_HaveYourDocs   (C_INFO)
 	condition   = DIA_Babo_Kap3_HaveYourDocs_Condition;
 	information = DIA_Babo_Kap3_HaveYourDocs_Info;
 	permanent   = FALSE;
-	description = "Mám ty tvoje dokumenty.";
+	description = "MÃ¡m ty tvoje dokumenty.";
 };
 FUNC INT DIA_Babo_Kap3_HaveYourDocs_Condition()
 {
@@ -826,41 +826,41 @@ FUNC INT DIA_Babo_Kap3_HaveYourDocs_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_00"); //Mám ty tvoje dokumenty.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_01"); //Vánê? Díky, zachránil jsi mê. Ani nevím, jak bych se ti odvdêèil.
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_02"); //Jasnê, jasnê, u se uklidni.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_03"); //(nervóznê) Jsou vánê moje? Jsi si jistı? Uka mi je.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_00"); //MÃ¡m ty tvoje dokumenty.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_01"); //VÃ¡Å¾nÄ™? DÃ­ky, zachrÃ¡nil jsi mÄ™. Ani nevÃ­m, jak bych se ti odvdÄ™Äil.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_02"); //JasnÄ™, jasnÄ™, uÅ¾ se uklidni.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_03"); //(nervÃ³znÄ™) Jsou vÃ¡Å¾nÄ™ moje? Jsi si jistÃ½? UkaÅ¾ mi je.
 	
 	Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Ještê si je chvíli ponechám.",DIA_Babo_Kap3_HaveYourDocs_KeepThem);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"JeÅ¡tÄ™ si je chvÃ­li ponechÃ¡m.",DIA_Babo_Kap3_HaveYourDocs_KeepThem);
 	
 	if (BaboSDocsOpen == TRUE)
 	{
-		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Odvozeno od holıch faktù - cena vzrostla.",DIA_Babo_Kap3_HaveYourDocs_IWantMore);
+		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Odvozeno od holÃ½ch faktÅ¯ - cena vzrostla.",DIA_Babo_Kap3_HaveYourDocs_IWantMore);
 	};
 	
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Tady to máš.",DIA_Babo_Kap3_HaveYourDocs_HereTheyAre);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Tady to mÃ¡Å¡.",DIA_Babo_Kap3_HaveYourDocs_HereTheyAre);
 };
 
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_15_00"); //Ještê si je chvíli ponechám.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_03_01"); //(ohromenê) Coe!? Co to má znamenat? Co chceš dêlat?
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_15_00"); //JeÅ¡tÄ™ si je chvÃ­li ponechÃ¡m.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_03_01"); //(ohromenÄ™) CoÅ¾e!? Co to mÃ¡ znamenat? Co chceÅ¡ dÄ™lat?
 	
 	Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Dêlám si srandu.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"To je èistê moje vêc.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"DÄ™lÃ¡m si srandu.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"To je ÄistÄ™ moje vÄ™c.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern);
 	
 	if (Igaraz_IsPartner == LOG_SUCCESS)
 	{
-		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Igaraz a já jsme partneâi.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner);
+		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Igaraz a jÃ¡ jsme partneÃ¢i.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner);
 	};
 };
 
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_00"); //Dêlám si srandu.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_01"); //(kousavê) Ha, ha, smêju se, a se za bâicho popadám. Tak kde jsou?
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_00"); //DÄ™lÃ¡m si srandu.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_01"); //(kousavÄ™) Ha, ha, smÄ™ju se, aÅ¾ se za bÃ¢icho popadÃ¡m. Tak kde jsou?
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_02"); //Tady.
 		
 		if (Npc_HasItems (other,ItWr_BabosDocs_MIS) >= 1)
@@ -875,8 +875,8 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 		
 		B_UseFakeScroll ();
 		
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_03"); //Nechtêl jsem tê urazit, ale jsem z toho všeho prostê strašnê nervózní.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_04"); //To je v poâádku. Tak si ty svoje DOKUMENTY uij.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_03"); //NechtÄ™l jsem tÄ™ urazit, ale jsem z toho vÅ¡eho prostÄ™ straÅ¡nÄ™ nervÃ³znÃ­.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_04"); //To je v poÃ¢Ã¡dku. Tak si ty svoje DOKUMENTY uÅ¾ij.
 		
 		MIS_BabosDocs = LOG_SUCCESS;
 		B_GivePlayerXP (XP_BabosDocs);
@@ -886,8 +886,8 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 	
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_00"); //To je èistê moje vêc.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_03_01"); //Ty dokumenty jsou moje. Nemáš právo si je nechávat.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_00"); //To je ÄistÄ™ moje vÄ™c.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_03_01"); //Ty dokumenty jsou moje. NemÃ¡Å¡ prÃ¡vo si je nechÃ¡vat.
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_02"); //Nashle.
 		
 		Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
@@ -895,17 +895,17 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 	
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_00"); //Igaraz a já jsme teë partneâi.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_01"); //(nevêâícnê) Coe? To pâece nemùeš.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_02"); //Vypadá to, e mùu. Nechám si ty papíry a všechno zùstane jako dosud.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_03"); //Urovnám tu finanèní záleitost s Igarazem.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_00"); //Igaraz a jÃ¡ jsme teÃ« partneÃ¢i.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_01"); //(nevÄ™Ã¢Ã­cnÄ™) CoÅ¾e? To pÃ¢ece nemÅ¯Å¾eÅ¡.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_02"); //VypadÃ¡ to, Å¾e mÅ¯Å¾u. NechÃ¡m si ty papÃ­ry a vÅ¡echno zÅ¯stane jako dosud.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_03"); //UrovnÃ¡m tu finanÄnÃ­ zÃ¡leÅ¾itost s Igarazem.
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_04"); //No, tak se hezky starej o rostlinky.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_05"); //Jsi svinê. Ubohá, hrabivá svinê. Innos tê potrestá.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_05"); //Jsi svinÄ™. UbohÃ¡, hrabivÃ¡ svinÄ™. Innos tÄ™ potrestÃ¡.
 		
 		Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
 		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,Dialog_Ende,DIA_Babo_Kap3_HaveYourDocs_End);
 		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Pozor na jazyk.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm);
-		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Nemáš co na práci?",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_NothingToDo);
+		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"NemÃ¡Å¡ co na prÃ¡ci?",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_NothingToDo);
 	};
 	
 		FUNC VOID DIA_Babo_Kap3_HaveYourDocs_End ()
@@ -916,43 +916,43 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 		FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm()
 		{
 			AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm_15_00"); //Pozor na jazyk.
-			AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm_03_01"); //Jsem moc mêkkı, jako obvykle.
+			AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm_03_01"); //Jsem moc mÄ™kkÃ½, jako obvykle.
 			
 			AI_StopProcessInfos (self); 
 		};
 						
 		FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_NothingToDo ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_NothingToDo_15_00"); //Nemáš co na práci?
-			AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_NothingToDo_03_01"); //Já ti rozumím, ale mùeš mi vêâit - to ještê bude mít dohru.
+			AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_NothingToDo_15_00"); //NemÃ¡Å¡ co na prÃ¡ci?
+			AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_NothingToDo_03_01"); //JÃ¡ ti rozumÃ­m, ale mÅ¯Å¾eÅ¡ mi vÄ™Ã¢it - to jeÅ¡tÄ™ bude mÃ­t dohru.
 			
 			AI_StopProcessInfos (self); 
 		};
 
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_00"); //Odvozeno od holıch faktù - cena vzrostla.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_01"); //Nejsi o nic lepší ne ostatní. Co chceš?
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_02"); //Co máš?
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_03"); //Mùu ti dát 121 zlatıch, to je všechno, co mám.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_00"); //Odvozeno od holÃ½ch faktÅ¯ - cena vzrostla.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_01"); //Nejsi o nic lepÅ¡Ã­ neÅ¾ ostatnÃ­. Co chceÅ¡?
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_02"); //Co mÃ¡Å¡?
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_03"); //MÅ¯Å¾u ti dÃ¡t 121 zlatÃ½ch, to je vÅ¡echno, co mÃ¡m.
 	
 	Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"To nebude staèit.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Plácneme si.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"To nebude staÄit.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"PlÃ¡cneme si.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough);
 };
 
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_15_00"); //To nebude staèit.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_03_01"); //Ale já víc penêz opravdu nemám. Kdybych nêco takového tušil dâív, nikdy bych do kláštera nevstoupil.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_15_00"); //To nebude staÄit.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_03_01"); //Ale jÃ¡ vÃ­c penÄ™z opravdu nemÃ¡m. Kdybych nÄ™co takovÃ©ho tuÅ¡il dÃ¢Ã­v, nikdy bych do klÃ¡Å¡tera nevstoupil.
 		
 		Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
 	};
 	
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough_15_00"); //Plácneme si.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough_03_01"); //Tady máš peníze a ten svitek.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough_15_00"); //PlÃ¡cneme si.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough_03_01"); //Tady mÃ¡Å¡ penÃ­ze a ten svitek.
 		
 		CreateInvItems (self ,ItSc_MediumHeal,1);
 		CreateInvItems (self ,ItMi_Gold,121);
@@ -967,7 +967,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore()
 
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_HereTheyAre()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_00"); //Tady to máš.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_00"); //Tady to mÃ¡Å¡.
 	
 	if (Npc_HasItems (other,ItWr_BabosDocs_MIS) >= 1)
 	{
@@ -980,11 +980,11 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_HereTheyAre()
 	};
 	
 	B_UseFakeScroll ();
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_01"); //Jo, jsou všechny.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_01"); //Jo, jsou vÅ¡echny.
 	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_02"); //Koukal ses do nich?
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_03"); //Záleí na tom?
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_04"); //Teë, kdy je mám zpátky, tak vlastnê ne.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_05"); //Doufám, e si teë mùu koneènê vydechnout.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_03"); //ZÃ¡leÅ¾Ã­ na tom?
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_04"); //TeÃ«, kdyÅ¾ je mÃ¡m zpÃ¡tky, tak vlastnÄ™ ne.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_05"); //DoufÃ¡m, Å¾e si teÃ« mÅ¯Å¾u koneÄnÄ™ vydechnout.
 	
 	CreateInvItems (self ,ItSc_MediumHeal,1);
 	B_GiveInvItems (self,other,ItSc_MediumHeal,1);
@@ -1006,7 +1006,7 @@ INSTANCE DIA_Babo_Kap3_Perm   (C_INFO)
 	condition   = DIA_Babo_Kap3_Perm_Condition;
 	information = DIA_Babo_Kap3_Perm_Info;
 	permanent   = TRUE;
-	description = "Jsi spokojenı s tím, co dêláš?";
+	description = "Jsi spokojenÃ½ s tÃ­m, co dÄ™lÃ¡Å¡?";
 };
 FUNC INT DIA_Babo_Kap3_Perm_Condition()
 {
@@ -1017,18 +1017,18 @@ FUNC INT DIA_Babo_Kap3_Perm_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_00"); //Jsi spokojenı s tím, co dêláš?
+	AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_00"); //Jsi spokojenÃ½ s tÃ­m, co dÄ™lÃ¡Å¡?
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_01"); //(nepâíliš pâesvêdèivê) Ano, samozâejmê. Moje víra v Innosovu moudrost a moc mi dává sílu.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_02"); //(úhybnê) Nechci bıt nezdvoâilı, ale mám toho dnes hodnê na práci.
-		AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_03"); //Jen pokraèuj.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_04"); //(s úlevou) Díky.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_01"); //(nepÃ¢Ã­liÅ¡ pÃ¢esvÄ™dÄivÄ™) Ano, samozÃ¢ejmÄ™. Moje vÃ­ra v Innosovu moudrost a moc mi dÃ¡vÃ¡ sÃ­lu.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_02"); //(ÃºhybnÄ™) Nechci bÃ½t nezdvoÃ¢ilÃ½, ale mÃ¡m toho dnes hodnÄ™ na prÃ¡ci.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_03"); //Jen pokraÄuj.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_04"); //(s Ãºlevou) DÃ­ky.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_05"); //Jo, jde to, ale musím se vrátit do práce, jinak to dneska nikdy nedodêlám.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_06"); //Nechci zase makat pùlku noci, jen abych splnil, co mi bylo zadáno, a nedostal se tak do potíí.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_05"); //Jo, jde to, ale musÃ­m se vrÃ¡tit do prÃ¡ce, jinak to dneska nikdy nedodÄ™lÃ¡m.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_06"); //Nechci zase makat pÅ¯lku noci, jen abych splnil, co mi bylo zadÃ¡no, a nedostal se tak do potÃ­Å¾Ã­.
 	};
 	
 	AI_StopProcessInfos (self); 

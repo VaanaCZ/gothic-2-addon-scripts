@@ -42,7 +42,7 @@ func int DIA_Sylvio_Hallo_Condition ()
 func void DIA_Sylvio_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Sylvio_Hallo_15_00"); //Jak se vede?
-	AI_Output (self, other, "DIA_Sylvio_Hallo_09_01"); //Dal jsem ti svolenÌ k tomu, abys mÍ oslovil?
+	AI_Output (self, other, "DIA_Sylvio_Hallo_09_01"); //Dal jsem ti svolen√≠ k tomu, abys mƒô oslovil?
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -58,7 +58,7 @@ instance DIA_Sylvio_Thekla		(C_INFO)
 	condition	= DIA_Sylvio_Thekla_Condition;
 	information	= DIA_Sylvio_Thekla_Info;
 	permanent 	= FALSE;
-	description	= "Thekla m· s tebou problÈm.";
+	description	= "Thekla m√° s tebou probl√©m.";
 };
 
 func int DIA_Sylvio_Thekla_Condition ()
@@ -71,10 +71,10 @@ func int DIA_Sylvio_Thekla_Condition ()
 
 func void DIA_Sylvio_Thekla_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //Thekla m· s tebou problÈm.
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //SkuteËnÍ? A jakej m· ta drah· panÌ problÈm? A proË nep‚iöla sama?
-	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //To p‚ece rozhodnÍ vÌö...
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(cynicky p‚·telsky) ProË si nejdeö rovnou promluvit s m˝m p‚Ìtelem Bullcem?
+	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //Thekla m√° s tebou probl√©m.
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //Skuteƒçnƒô? A jakej m√° ta drah√° pan√≠ probl√©m? A proƒç nep√¢i≈°la sama?
+	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //To p√¢ece rozhodnƒô v√≠≈°...
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(cynicky p√¢√°telsky) Proƒç si nejde≈° rovnou promluvit s m√Ωm p√¢√≠telem Bullcem?
 
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -90,7 +90,7 @@ instance DIA_Sylvio_Gossip		(C_INFO)
 	condition	= DIA_Sylvio_Gossip_Condition;
 	information	= DIA_Sylvio_Gossip_Info;
 	permanent	= FALSE;
-	description	= "HodnÍ lidÌ o tobÍ mluvÌ...";
+	description	= "Hodnƒô lid√≠ o tobƒô mluv√≠...";
 };
 
 func int DIA_Sylvio_Gossip_Condition ()
@@ -100,8 +100,8 @@ func int DIA_Sylvio_Gossip_Condition ()
 
 func void DIA_Sylvio_Gossip_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Gossip_15_00"); //HodnÍ lidÌ o tobÍ mluvÌ.
-	AI_Output (self, other, "DIA_Sylvio_Gossip_09_01"); //HodnÍ lidÌ mluvÌ vÌc, neû je zdr·vo.
+	AI_Output (other, self, "DIA_Sylvio_Gossip_15_00"); //Hodnƒô lid√≠ o tobƒô mluv√≠.
+	AI_Output (self, other, "DIA_Sylvio_Gossip_09_01"); //Hodnƒô lid√≠ mluv√≠ v√≠c, ne≈æ je zdr√°vo.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -117,7 +117,7 @@ instance DIA_Sylvio_AboutLee (C_INFO)
 	condition	= DIA_Sylvio_AboutLee_Condition;
 	information	= DIA_Sylvio_AboutLee_Info;
 	permanent	= FALSE;
-	description	= "Co si myslÌö o Leeovi?";
+	description	= "Co si mysl√≠≈° o Leeovi?";
 };
 
 func int DIA_Sylvio_AboutLee_Condition ()
@@ -127,9 +127,9 @@ func int DIA_Sylvio_AboutLee_Condition ()
 
 func void DIA_Sylvio_AboutLee_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Co si myslÌö o Leeovi?
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(trochu ironicky) Jo, je to dobr˝ bojovnÌk. Nikdy bych s nÌm nechtÍl bojovat.
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(chladnÍ) Samoz‚ejmÍ pokud by nebylo vyhnutÌ.
+	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Co si mysl√≠≈° o Leeovi?
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(trochu ironicky) Jo, je to dobr√Ω bojovn√≠k. Nikdy bych s n√≠m nechtƒôl bojovat.
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(chladnƒô) Samoz√¢ejmƒô pokud by nebylo vyhnut√≠.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -167,9 +167,9 @@ func int DIA_Sylvio_MenDefeated_Condition ()
 
 func void DIA_Sylvio_MenDefeated_Info ()
 {
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //Vöiml jsem si, ûe m·ö spadeno na mÈ hochy!
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //A pokud vÌm, jsi jednÌm z Leeov˝ch chr·nÍnc˘.
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //Varuju tÍ! P·r vÍcÌ se tady v brzkÈ dobÍ zmÍnÌ a pak si o tom promluvÌme!
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //V≈°iml jsem si, ≈æe m√°≈° spadeno na m√© hochy!
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //A pokud v√≠m, jsi jedn√≠m z Leeov√Ωch chr√°nƒônc≈Ø.
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //Varuju tƒô! P√°r vƒôc√≠ se tady v brzk√© dobƒô zmƒôn√≠ a pak si o tom promluv√≠me!
 	
 	Sylvio_MenDefeated = TRUE;
 	
@@ -186,7 +186,7 @@ instance DIA_Sylvio_Asshole (C_INFO)
 	condition	= DIA_Sylvio_Asshole_Condition;
 	information	= DIA_Sylvio_Asshole_Info;
 	permanent	= FALSE;
-	description	= "Hej sr·Ëi...";
+	description	= "Hej sr√°ƒçi...";
 };
 
 func int DIA_Sylvio_Asshole_Condition ()
@@ -199,9 +199,9 @@ func int DIA_Sylvio_Asshole_Condition ()
 
 func void DIA_Sylvio_Asshole_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Asshole_15_00"); //Hej, sr·Ëi...
-	AI_Output (self, other, "DIA_Sylvio_Asshole_09_01"); //NemyslÌö si snad, ûe bych se nechal p‚emluvit do souboje s tebou?
-	AI_Output (self, other, "DIA_Sylvio_Asshole_09_02"); //BÍû se radöi odplazit pod sv˘j kamÌnek.
+	AI_Output (other, self, "DIA_Sylvio_Asshole_15_00"); //Hej, sr√°ƒçi...
+	AI_Output (self, other, "DIA_Sylvio_Asshole_09_01"); //Nemysl√≠≈° si snad, ≈æe bych se nechal p√¢emluvit do souboje s tebou?
+	AI_Output (self, other, "DIA_Sylvio_Asshole_09_02"); //Bƒô≈æ se rad≈°i odplazit pod sv≈Øj kam√≠nek.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	

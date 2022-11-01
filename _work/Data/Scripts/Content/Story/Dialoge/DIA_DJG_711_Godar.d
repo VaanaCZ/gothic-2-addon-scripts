@@ -49,7 +49,7 @@ FUNC VOID DIA_Godar_Hello_Info()
 };
 
 //*********************************************************************
-//	Wo kommt ihr ¸berhaupt her? 
+//	Wo kommt ihr √ºberhaupt her? 
 //*********************************************************************
 INSTANCE DIA_Godar_ComeFrom   (C_INFO)
 {
@@ -58,7 +58,7 @@ INSTANCE DIA_Godar_ComeFrom   (C_INFO)
 	condition   = DIA_Godar_ComeFrom_Condition;
 	information = DIA_Godar_ComeFrom_Info;
 	permanent   = FALSE;
-	description	= "Odkud jsi p‚iöel?";
+	description	= "Odkud jsi p√¢i≈°el?";
 };
 
 FUNC INT DIA_Godar_ComeFrom_Condition()
@@ -68,37 +68,37 @@ FUNC INT DIA_Godar_ComeFrom_Condition()
 
 FUNC VOID DIA_Godar_ComeFrom_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_15_00"); //Odkud jste p‚iöli?
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_13_01"); //P‚iöli jsme z... eh, z mÍsta.
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_15_00"); //Odkud jste p√¢i≈°li?
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_13_01"); //P√¢i≈°li jsme z... eh, z mƒôsta.
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 	Info_AddChoice (DIA_Godar_ComeFrom,"Jste banditi!",DIA_Godar_ComeFrom_Bandits);
-	Info_AddChoice (DIA_Godar_ComeFrom,"ProË jsme se p‚edtÌm ve mÍstÍ nikdy nevidÍli?",DIA_Godar_ComeFrom_NotCity);
-	Info_AddChoice (DIA_Godar_ComeFrom,"JasnÍ. Tak teda z mÍsta.",DIA_Godar_ComeFrom_Understand);
+	Info_AddChoice (DIA_Godar_ComeFrom,"Proƒç jsme se p√¢edt√≠m ve mƒôstƒô nikdy nevidƒôli?",DIA_Godar_ComeFrom_NotCity);
+	Info_AddChoice (DIA_Godar_ComeFrom,"Jasnƒô. Tak teda z mƒôsta.",DIA_Godar_ComeFrom_Understand);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_Bandits ()
 {
 	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_15_00"); //Jste banditi!
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_13_01"); //OpatrnÍ! Bereö si p‚Ìliö velkÈ sousto!
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_13_01"); //Opatrnƒô! Bere≈° si p√¢√≠li≈° velk√© sousto!
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
-	Info_AddChoice (DIA_Godar_ComeFrom,"KlÌdek. Nechci v·s pr·sknout.",DIA_Godar_ComeFrom_Bandits_KeepCalm);
-	Info_AddChoice (DIA_Godar_ComeFrom,"MÍ nevydÍsÌö.",DIA_Godar_ComeFrom_Bandits_NoFear);
+	Info_AddChoice (DIA_Godar_ComeFrom,"Kl√≠dek. Nechci v√°s pr√°sknout.",DIA_Godar_ComeFrom_Bandits_KeepCalm);
+	Info_AddChoice (DIA_Godar_ComeFrom,"Mƒô nevydƒôs√≠≈°.",DIA_Godar_ComeFrom_Bandits_NoFear);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_Bandits_KeepCalm ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_KeepCalm_15_00"); //KlÌdek. Nechci v·s pr·sknout.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_KeepCalm_13_01"); //V to douf·m. Ve tvÈm vlastnÌm z·jmu. Jinak jsi mrtv˝!
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_KeepCalm_15_00"); //Kl√≠dek. Nechci v√°s pr√°sknout.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_KeepCalm_13_01"); //V to douf√°m. Ve tv√©m vlastn√≠m z√°jmu. Jinak jsi mrtv√Ω!
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_Bandits_NoFear ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_NoFear_15_00"); //MÍ nevydÍsÌö.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_NoFear_13_01"); //UvidÌme.
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_NoFear_15_00"); //Mƒô nevydƒôs√≠≈°.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_NoFear_13_01"); //Uvid√≠me.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -106,18 +106,18 @@ FUNC VOID DIA_Godar_ComeFrom_Bandits_NoFear ()
 
 FUNC VOID DIA_Godar_ComeFrom_NotCity ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_15_00"); //Nikdy jsem tÍ ve mÍstÍ nevidÍl.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_13_01"); //Nem˘ûu vyst·t lidi, co strkaj nos do vÍcÌ, do kterejch jim nic nenÌ, jasn˝?
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_15_00"); //Nikdy jsem tƒô ve mƒôstƒô nevidƒôl.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_13_01"); //Nem≈Ø≈æu vyst√°t lidi, co strkaj nos do vƒôc√≠, do kterejch jim nic nen√≠, jasn√Ω?
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 	Info_AddChoice (DIA_Godar_ComeFrom,"Houby.",DIA_Godar_ComeFrom_NotCity_CutThroat);
-	Info_AddChoice (DIA_Godar_ComeFrom,"J· vÌm, p‚iöel jsi z mÍsta.",DIA_Godar_ComeFrom_NotCity_Forget);
+	Info_AddChoice (DIA_Godar_ComeFrom,"J√° v√≠m, p√¢i≈°el jsi z mƒôsta.",DIA_Godar_ComeFrom_NotCity_Forget);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_NotCity_Forget ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_Forget_15_00"); //J· vÌm, p‚iöel jsi z mÍsta.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_Forget_13_01"); //P‚esnÍ tak.
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_Forget_15_00"); //J√° v√≠m, p√¢i≈°el jsi z mƒôsta.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_Forget_13_01"); //P√¢esnƒô tak.
 
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 };
@@ -125,7 +125,7 @@ FUNC VOID DIA_Godar_ComeFrom_NotCity_Forget ()
 FUNC VOID DIA_Godar_ComeFrom_NotCity_CutThroat ()
 {
 	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_CutThroat_15_00"); //Houby.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_CutThroat_13_01"); //Tak to bych to mÍl do tebe nahustit.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_CutThroat_13_01"); //Tak to bych to mƒôl do tebe nahustit.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -133,8 +133,8 @@ FUNC VOID DIA_Godar_ComeFrom_NotCity_CutThroat ()
 
 FUNC VOID DIA_Godar_ComeFrom_Understand ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_Understand_15_00"); //JasnÍ. Tak teda z mÍsta.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_01"); //Hele! On rozumÌ!
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_Understand_15_00"); //Jasnƒô. Tak teda z mƒôsta.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_01"); //Hele! On rozum√≠!
 	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_02"); //Tady, lokni si!
 	
 	CreateInvItems (self,ItFo_Beer,1);
@@ -153,7 +153,7 @@ INSTANCE DIA_Godar_Plan   (C_INFO)
 	condition   = DIA_Godar_Plan_Condition;
 	information = DIA_Godar_Plan_Info;
 	permanent   = FALSE;
-	description	= "Co tady dÍl·ö?";
+	description	= "Co tady dƒôl√°≈°?";
 };
 
 FUNC INT DIA_Godar_Plan_Condition()
@@ -163,15 +163,15 @@ FUNC INT DIA_Godar_Plan_Condition()
 
 FUNC VOID DIA_Godar_Plan_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Plan_15_00"); //Co tady dÍl·ö?
-	AI_Output (self ,other,"DIA_Godar_Plan_13_01"); //Zaslechli jsme o lovu drak˘. Tak jsme si sbalili saky paky a p‚iöli sem.
-	AI_Output (self ,other,"DIA_Godar_Plan_13_02"); //Ale abych byl up‚Ìmn˝, o dracÌch nevÌm ani prd. Chci jen zÌskat trochu zlata.
-	AI_Output (self ,other,"DIA_Godar_Plan_13_03"); //Draci majÌ zlato, nebo ne?
-	AI_Output (other,self ,"DIA_Godar_Plan_15_04"); //Samoz‚ejmÍ.
+	AI_Output (other,self ,"DIA_Godar_Plan_15_00"); //Co tady dƒôl√°≈°?
+	AI_Output (self ,other,"DIA_Godar_Plan_13_01"); //Zaslechli jsme o lovu drak≈Ø. Tak jsme si sbalili saky paky a p√¢i≈°li sem.
+	AI_Output (self ,other,"DIA_Godar_Plan_13_02"); //Ale abych byl up√¢√≠mn√Ω, o drac√≠ch nev√≠m ani prd. Chci jen z√≠skat trochu zlata.
+	AI_Output (self ,other,"DIA_Godar_Plan_13_03"); //Draci maj√≠ zlato, nebo ne?
+	AI_Output (other,self ,"DIA_Godar_Plan_15_04"); //Samoz√¢ejmƒô.
 };
 
 //*********************************************************************
-//	Wisst ihr was ¸ber die Drachen? 
+//	Wisst ihr was √ºber die Drachen? 
 //*********************************************************************
 INSTANCE DIA_Godar_DragonLore   (C_INFO)
 {
@@ -180,7 +180,7 @@ INSTANCE DIA_Godar_DragonLore   (C_INFO)
 	condition   = DIA_Godar_DragonLore_Condition;
 	information = DIA_Godar_DragonLore_Info;
 	permanent   = FALSE;
-	description	= "Co vÌö o tÍch dracÌch?";
+	description	= "Co v√≠≈° o tƒôch drac√≠ch?";
 };
 
 FUNC INT DIA_Godar_DragonLore_Condition()
@@ -193,9 +193,9 @@ FUNC INT DIA_Godar_DragonLore_Condition()
 
 FUNC VOID DIA_Godar_DragonLore_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_DragonLore_15_00"); //Co vÌö o tÍch dracÌch?
-	AI_Output (self ,other,"DIA_Godar_DragonLore_13_01"); //Slyöel jsem jen poh·dky pro dÍti.
-	AI_Output (self ,other,"DIA_Godar_DragonLore_13_02"); //Zn·ö to, panny, zlato, ohniv˝ dech a takov˝ vÍci.
+	AI_Output (other,self ,"DIA_Godar_DragonLore_15_00"); //Co v√≠≈° o tƒôch drac√≠ch?
+	AI_Output (self ,other,"DIA_Godar_DragonLore_13_01"); //Sly≈°el jsem jen poh√°dky pro dƒôti.
+	AI_Output (self ,other,"DIA_Godar_DragonLore_13_02"); //Zn√°≈° to, panny, zlato, ohniv√Ω dech a takov√Ω vƒôci.
 };
 
 //*********************************************************************
@@ -208,7 +208,7 @@ INSTANCE DIA_Godar_Destination   (C_INFO)
 	condition   = DIA_Godar_Destination_Condition;
 	information = DIA_Godar_Destination_Info;
 	permanent   = FALSE;
-	description	= "Kam se chyst·te vyrazit?";
+	description	= "Kam se chyst√°te vyrazit?";
 };
 
 FUNC INT DIA_Godar_Destination_Condition()
@@ -221,14 +221,14 @@ FUNC INT DIA_Godar_Destination_Condition()
 
 FUNC VOID DIA_Godar_Destination_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Destination_15_00"); //Kam se chyst·te vyrazit?
-	AI_Output (self ,other,"DIA_Godar_Destination_13_01"); //To netuöÌm. JeötÍ jsme se nerozhodli.
+	AI_Output (other,self ,"DIA_Godar_Destination_15_00"); //Kam se chyst√°te vyrazit?
+	AI_Output (self ,other,"DIA_Godar_Destination_13_01"); //To netu≈°√≠m. Je≈°tƒô jsme se nerozhodli.
 	
 	if ((hero.guild != GIL_MIL) && (hero.guild != GIL_PAL))
 		{
-			AI_Output (other,self ,"DIA_Godar_Destination_15_02"); //MÍli byste zajÌt na hrad.
-			AI_Output (self ,other,"DIA_Godar_Destination_13_03"); //Tam mÍ nikdo nedostane ani p·rem konÌ. Ne k paladin˘m.
-			AI_Output (self ,other,"DIA_Godar_Destination_13_04"); //Nem·m v ˙myslu vr·tit se do vÍzenÌ. Uû jsem tam jednou byl a docela mi to staËÌ.
+			AI_Output (other,self ,"DIA_Godar_Destination_15_02"); //Mƒôli byste zaj√≠t na hrad.
+			AI_Output (self ,other,"DIA_Godar_Destination_13_03"); //Tam mƒô nikdo nedostane ani p√°rem kon√≠. Ne k paladin≈Øm.
+			AI_Output (self ,other,"DIA_Godar_Destination_13_04"); //Nem√°m v √∫myslu vr√°tit se do vƒôzen√≠. U≈æ jsem tam jednou byl a docela mi to staƒç√≠.
 		};
 };
 
@@ -242,7 +242,7 @@ INSTANCE DIA_Godar_Orks   (C_INFO)
 	condition   = DIA_Godar_Orks_Condition;
 	information = DIA_Godar_Orks_Info;
 	permanent   = FALSE;
-	description	= "A co sk‚eti?";
+	description	= "A co sk√¢eti?";
 };
 
 FUNC INT DIA_Godar_Orks_Condition()
@@ -255,11 +255,11 @@ FUNC INT DIA_Godar_Orks_Condition()
 
 FUNC VOID DIA_Godar_Orks_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Orks_15_00"); //A co sk‚eti?
-	AI_Output (self ,other,"DIA_Godar_Orks_13_01"); //OblÈhajÌ cel˝ hrad. Nenechali jedinou skulinu.
-	AI_Output (self ,other,"DIA_Godar_Orks_13_02"); //Pokouöet se tam proplÌûit je naprost˝ nesmysl. Ani nemysli na to, ûe by ses tam prosekal, jinak jsi mrtv˝ muû.
-	AI_Output (self ,other,"DIA_Godar_Orks_13_03"); //Nikomu se jeötÍ nepoda‚ilo tamtudy projÌt.
-	AI_Output (other,self ,"DIA_Godar_Orks_15_04"); //V·ûnÍ.
+	AI_Output (other,self ,"DIA_Godar_Orks_15_00"); //A co sk√¢eti?
+	AI_Output (self ,other,"DIA_Godar_Orks_13_01"); //Obl√©haj√≠ cel√Ω hrad. Nenechali jedinou skulinu.
+	AI_Output (self ,other,"DIA_Godar_Orks_13_02"); //Pokou≈°et se tam propl√≠≈æit je naprost√Ω nesmysl. Ani nemysli na to, ≈æe by ses tam prosekal, jinak jsi mrtv√Ω mu≈æ.
+	AI_Output (self ,other,"DIA_Godar_Orks_13_03"); //Nikomu se je≈°tƒô nepoda√¢ilo tamtudy proj√≠t.
+	AI_Output (other,self ,"DIA_Godar_Orks_15_04"); //V√°≈ænƒô.
 };
 
 //*********************************************************************
@@ -272,7 +272,7 @@ INSTANCE DIA_Godar_Prison   (C_INFO)
 	condition   = DIA_Godar_Prison_Condition;
 	information = DIA_Godar_Prison_Info;
 	permanent   = FALSE;
-	description	= "Za co jsi sedÍl?";
+	description	= "Za co jsi sedƒôl?";
 };
 
 FUNC INT DIA_Godar_Prison_Condition()
@@ -286,33 +286,33 @@ FUNC INT DIA_Godar_Prison_Condition()
 
 FUNC VOID DIA_Godar_Prison_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Prison_15_00"); //Za co jsi sedÍl?
+	AI_Output (other,self ,"DIA_Godar_Prison_15_00"); //Za co jsi sedƒôl?
 
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Godar_Prison_13_01"); //Vypad·m snad, ûe bych se ti to chystal vyklopit, co?
-			AI_Output (self ,other,"DIA_Godar_Prison_13_02"); //Vy m·govÈ jste s paladiny ve spojenÌ. Ne, ne, p‚Ìteli. Zapome‡ na to.
+			AI_Output (self ,other,"DIA_Godar_Prison_13_01"); //Vypad√°m snad, ≈æe bych se ti to chystal vyklopit, co?
+			AI_Output (self ,other,"DIA_Godar_Prison_13_02"); //Vy m√°gov√© jste s paladiny ve spojen√≠. Ne, ne, p√¢√≠teli. Zapome≈ï na to.
 		}
 	else
 		{		
-			AI_Output (self ,other,"DIA_Godar_Prison_13_03"); //Ty hajzlovÈ mÍ zab·sli za pytlaËenÌ. Kv˘li dvÍma zavöivenejm zajÌc˘m!
-			AI_Output (self ,other,"DIA_Godar_Prison_13_04"); //Napa‚ili mi za to 10 let.
-			AI_Output (other,self ,"DIA_Godar_Prison_15_05"); //A to bylo vöechno?
-			AI_Output (self ,other,"DIA_Godar_Prison_13_06"); //No, taky jsem se samoz‚ejmÍ br·nil.
+			AI_Output (self ,other,"DIA_Godar_Prison_13_03"); //Ty hajzlov√© mƒô zab√°sli za pytlaƒçen√≠. Kv≈Øli dvƒôma zav≈°ivenejm zaj√≠c≈Øm!
+			AI_Output (self ,other,"DIA_Godar_Prison_13_04"); //Napa√¢ili mi za to 10 let.
+			AI_Output (other,self ,"DIA_Godar_Prison_15_05"); //A to bylo v≈°echno?
+			AI_Output (self ,other,"DIA_Godar_Prison_13_06"); //No, taky jsem se samoz√¢ejmƒô br√°nil.
 			AI_Output (other,self ,"DIA_Godar_Prison_15_07"); //A?
-			AI_Output (self ,other,"DIA_Godar_Prison_13_08"); //Nemohl jsem nic dÍlat, ten chl·pek zakopnul a zlomil si vaz. V·ûnÍ!
+			AI_Output (self ,other,"DIA_Godar_Prison_13_08"); //Nemohl jsem nic dƒôlat, ten chl√°pek zakopnul a zlomil si vaz. V√°≈ænƒô!
 			
 			Info_ClearChoices (DIA_Godar_Prison);
-			Info_AddChoice (DIA_Godar_Prison,"To znÌ povÍdomÍ.",DIA_Godar_Prison_Court);
-			Info_AddChoice (DIA_Godar_Prison,"NemÍl ses nechat chytit.",DIA_Godar_Prison_Pissoff);
+			Info_AddChoice (DIA_Godar_Prison,"To zn√≠ povƒôdomƒô.",DIA_Godar_Prison_Court);
+			Info_AddChoice (DIA_Godar_Prison,"Nemƒôl ses nechat chytit.",DIA_Godar_Prison_Pissoff);
 		};
 };
 
 FUNC VOID DIA_Godar_Prison_Court ()
 {
-	AI_Output (other,self ,"DIA_Godar_Prison_Court_15_00"); //To znÌ povÍdomÍ.
-	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_01"); //VÌö, co myslÌm. Ty bohat˝ bastardi nemajÌ ani tucha, jak tu s n·ma zach·zeli.
-	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_02"); //V˘bec je to nezajÌmalo.
+	AI_Output (other,self ,"DIA_Godar_Prison_Court_15_00"); //To zn√≠ povƒôdomƒô.
+	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_01"); //V√≠≈°, co mysl√≠m. Ty bohat√Ω bastardi nemaj√≠ ani tucha, jak tu s n√°ma zach√°zeli.
+	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_02"); //V≈Øbec je to nezaj√≠malo.
 	
 	Info_ClearChoices (DIA_Godar_Prison);
 	GodarLikesYou = TRUE;
@@ -320,9 +320,9 @@ FUNC VOID DIA_Godar_Prison_Court ()
 
 FUNC VOID DIA_Godar_Prison_Pissoff ()
 {
-	AI_Output (other,self ,"DIA_Godar_Prison_Pissoff_15_00"); //NemÍl ses nechat chytit.
-	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_01"); //(vztekle) VsadÌm se, ûes nikdy nebyl zav‚enej, co?
-	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_02"); //Tak to bych ti mÍl uk·zat, co se m˘ûe tv˝mu tÍlu ve vÍzenÌ st·t.
+	AI_Output (other,self ,"DIA_Godar_Prison_Pissoff_15_00"); //Nemƒôl ses nechat chytit.
+	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_01"); //(vztekle) Vsad√≠m se, ≈æes nikdy nebyl zav√¢enej, co?
+	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_02"); //Tak to bych ti mƒôl uk√°zat, co se m≈Ø≈æe tv√Ωmu tƒôlu ve vƒôzen√≠ st√°t.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -338,7 +338,7 @@ INSTANCE DIA_Godar_Hunting   (C_INFO)
 	condition   = DIA_Godar_Hunting_Condition;
 	information = DIA_Godar_Hunting_Info;
 	permanent   = FALSE;
-	description	= "M˘ûeö mÍ nauËit nÍco o lovu?";
+	description	= "M≈Ø≈æe≈° mƒô nauƒçit nƒôco o lovu?";
 };
 
 FUNC INT DIA_Godar_Hunting_Condition()
@@ -352,16 +352,16 @@ FUNC INT DIA_Godar_Hunting_Condition()
 
 FUNC VOID DIA_Godar_Hunting_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Hunting_15_00"); //M˘ûeö mÍ nauËit nÍco o lovu?
+	AI_Output (other,self ,"DIA_Godar_Hunting_15_00"); //M≈Ø≈æe≈° mƒô nauƒçit nƒôco o lovu?
 	if (GodarLikesYou == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_01"); //To nemyslÌö v·ûnÍ, co? Zmizni!
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_01"); //To nemysl√≠≈° v√°≈ænƒô, co? Zmizni!
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_03"); //Ze zvÌ‚at se d· zÌskat mnohem vÌc neû jen maso. Koûeöiny a dr·py m˘ûeö pak nÍkde prodat. D· se na tom docela vydÍlat.
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_04"); //Uû se nem˘ûu doËkat, aû si to rozd·m s drakem.
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_03"); //Ze zv√≠√¢at se d√° z√≠skat mnohem v√≠c ne≈æ jen maso. Ko≈æe≈°iny a dr√°py m≈Ø≈æe≈° pak nƒôkde prodat. D√° se na tom docela vydƒôlat.
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_04"); //U≈æ se nem≈Ø≈æu doƒçkat, a≈æ si to rozd√°m s drakem.
 		
 		Godar_TeachAnimalTrophy = TRUE;
 	};	
@@ -377,7 +377,7 @@ INSTANCE DIA_Godar_Dragonstuff   (C_INFO)
 	condition   = DIA_Godar_Dragonstuff_Condition;
 	information = DIA_Godar_Dragonstuff_Info;
 	permanent   = TRUE;
-	description	= "Ukaû mi, jak vyvrhnout draka.";
+	description	= "Uka≈æ mi, jak vyvrhnout draka.";
 };
 var int Godar_TeachDragonStuff;
 FUNC INT DIA_Godar_Dragonstuff_Condition()
@@ -393,20 +393,20 @@ FUNC INT DIA_Godar_Dragonstuff_Condition()
 
 FUNC VOID DIA_Godar_Dragonstuff_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Dragonstuff_15_00"); //Ukaû mi, jak vykuchat draka.
+	AI_Output (other,self ,"DIA_Godar_Dragonstuff_15_00"); //Uka≈æ mi, jak vykuchat draka.
 	
-	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_01"); //Chceö vöechny prachy pro sebe, co?
+	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_01"); //Chce≈° v≈°echny prachy pro sebe, co?
 	
-	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_02"); //No dobr·, ale bude tÍ to st·t 1000 zlat˝ch.
+	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_02"); //No dobr√°, ale bude tƒô to st√°t 1000 zlat√Ωch.
 
 	Info_ClearChoices	(DIA_Godar_Dragonstuff);	
-	Info_AddChoice	(DIA_Godar_Dragonstuff, "Za tolik mi to nestojÌ.", DIA_Godar_Dragonstuff_nein );
-	Info_AddChoice	(DIA_Godar_Dragonstuff, "To je fÈr.", DIA_Godar_Dragonstuff_fair );
+	Info_AddChoice	(DIA_Godar_Dragonstuff, "Za tolik mi to nestoj√≠.", DIA_Godar_Dragonstuff_nein );
+	Info_AddChoice	(DIA_Godar_Dragonstuff, "To je f√©r.", DIA_Godar_Dragonstuff_fair );
 
 };
 func void DIA_Godar_Dragonstuff_fair ()
 {
-	AI_Output			(other, self, "DIA_Godar_Dragonstuff_fair_15_00"); //To je fÈr.
+	AI_Output			(other, self, "DIA_Godar_Dragonstuff_fair_15_00"); //To je f√©r.
 
 		if (B_GiveInvItems (other, self, ItMi_Gold,1000))
 		{
@@ -414,14 +414,14 @@ func void DIA_Godar_Dragonstuff_fair ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Godar_Dragonstuff_fair_13_01"); //Ne bez prach˘. Nejd‚Ìv mi dej ty penÌze.
+			AI_Output			(self, other, "DIA_Godar_Dragonstuff_fair_13_01"); //Ne bez prach≈Ø. Nejd√¢√≠v mi dej ty pen√≠ze.
 		};
 	Info_ClearChoices	(DIA_Godar_Dragonstuff);	
 };
 
 func void DIA_Godar_Dragonstuff_nein ()
 {
-	AI_Output			(other, self, "DIA_Godar_Dragonstuff_nein_15_00"); //Za tolik mi to nestojÌ.
+	AI_Output			(other, self, "DIA_Godar_Dragonstuff_nein_15_00"); //Za tolik mi to nestoj√≠.
 	AI_Output			(self, other, "DIA_Godar_Dragonstuff_nein_13_01"); //Jak je libo.
 	Info_ClearChoices	(DIA_Godar_Dragonstuff);	
 
@@ -437,7 +437,7 @@ INSTANCE DIA_Godar_Teach   (C_INFO)
 	condition   = DIA_Godar_Teach_Condition;
 	information = DIA_Godar_Teach_Info;
 	permanent   = TRUE;
-	description	= "Ukaû mi, jak lovit.";
+	description	= "Uka≈æ mi, jak lovit.";
 };
 
 FUNC INT DIA_Godar_Teach_Condition()
@@ -451,7 +451,7 @@ FUNC INT DIA_Godar_Teach_Condition()
 
 FUNC VOID DIA_Godar_Teach_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Teach_15_00"); //Ukaû mi, jak lovit.
+	AI_Output (other,self ,"DIA_Godar_Teach_15_00"); //Uka≈æ mi, jak lovit.
 	if 	(
 			(Npc_GetTalentSkill (other,NPC_TALENT_SNEAK) == FALSE) 
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
@@ -465,29 +465,29 @@ FUNC VOID DIA_Godar_Teach_Info()
 		
 			if (Npc_GetTalentSkill (other,NPC_TALENT_SNEAK) == FALSE) 
 			{
-				Info_AddChoice		(DIA_Godar_Teach, B_BuildLearnString("PlÌûenÌ"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,DIA_Godar_Teach_Thief_Sneak);
+				Info_AddChoice		(DIA_Godar_Teach, B_BuildLearnString("Pl√≠≈æen√≠"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,DIA_Godar_Teach_Thief_Sneak);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("VyjmutÌ zub˘",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Godar_Teach_TROPHYS_Teeth);
+				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Vyjmut√≠ zub≈Ø",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Godar_Teach_TROPHYS_Teeth);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("éihadla krvav˝ch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Godar_Teach_TROPHYS_BFSting);
+				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("≈Ωihadla krvav√Ωch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Godar_Teach_TROPHYS_BFSting);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("K‚Ìdla krvav˝ch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Godar_Teach_TROPHYS_BFWing);
+				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("K√¢√≠dla krvav√Ωch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Godar_Teach_TROPHYS_BFWing);
 			};
 			if (Godar_TeachDragonStuff == TRUE)
 			{
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("ZÌsk·nÌ draËÌch öupin",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Godar_Teach_TROPHYS_DragonScale);
+					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Z√≠sk√°n√≠ draƒç√≠ch ≈°upin",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Godar_Teach_TROPHYS_DragonScale);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("ZÌsk·nÌ draËÌ krve",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)), DIA_Godar_Teach_TROPHYS_DragonBlood);
+					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Z√≠sk√°n√≠ draƒç√≠ krve",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)), DIA_Godar_Teach_TROPHYS_DragonBlood);
 				};
 			};
 		}
@@ -506,7 +506,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_Teeth ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Teeth_13_00"); //NejlepöÌ zp˘sob, jak zÌskat zuby, je za pomoci po‚·dnÈho noûe.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Teeth_13_00"); //Nejlep≈°√≠ zp≈Øsob, jak z√≠skat zuby, je za pomoci po√¢√°dn√©ho no≈æe.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -515,7 +515,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_BFSting ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFSting_13_00"); //NejrychlejöÌ zp˘sob, jak zÌskat ûihadlo krvavÈ mouchy, je vym·Ëknout ho dozadu p‚ed tÌm, neû ho vy‚Ìzneö.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFSting_13_00"); //Nejrychlej≈°√≠ zp≈Øsob, jak z√≠skat ≈æihadlo krvav√© mouchy, je vym√°ƒçknout ho dozadu p√¢ed t√≠m, ne≈æ ho vy√¢√≠zne≈°.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -524,7 +524,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_BFWing ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFWing_13_00"); //K‚Ìdla krvav˝ch much jsou velmi k‚ehk·. Takûe aû je budeö od‚ez·vat, musÌö b˝t opravdu opatrn˝.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFWing_13_00"); //K√¢√≠dla krvav√Ωch much jsou velmi k√¢ehk√°. Tak≈æe a≈æ je bude≈° od√¢ez√°vat, mus√≠≈° b√Ωt opravdu opatrn√Ω.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -533,7 +533,7 @@ FUNC VOID DIA_Godar_Teach_Thief_Sneak()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Sneak_13_00"); //Kdyû se chceö plÌûit, nazuj si mÍkkÈ boty. Tuh· podr·ûka m˘ûe nadÍlat spoustu hluku.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Sneak_13_00"); //Kdy≈æ se chce≈° pl√≠≈æit, nazuj si mƒôkk√© boty. Tuh√° podr√°≈æka m≈Ø≈æe nadƒôlat spoustu hluku.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -542,7 +542,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonScale_13_00"); //Abys mohl z draka dostat jeho öupiny, budeö pot‚ebovat spoustu sÌly. Ale d· se to zvl·dnout.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonScale_13_00"); //Abys mohl z draka dostat jeho ≈°upiny, bude≈° pot√¢ebovat spoustu s√≠ly. Ale d√° se to zvl√°dnout.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -551,7 +551,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_DragonBlood()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonBlood))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonBlood_13_00"); //Najdi si na draËÌm b‚ichu mÍkkÈ mÌsteËko. Tam je vyjmutÌ öupin nejsnazöÌ.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonBlood_13_00"); //Najdi si na draƒç√≠m b√¢ichu mƒôkk√© m√≠steƒçko. Tam je vyjmut√≠ ≈°upin nejsnaz≈°√≠.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -568,7 +568,7 @@ INSTANCE DIA_Godar_AllDragonsDead   (C_INFO)
 	condition   = DIA_Godar_AllDragonsDead_Condition;
 	information = DIA_Godar_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Zabil jsem vöechny draky.";
+	description	= "Zabil jsem v≈°echny draky.";
 				
 };
 
@@ -582,8 +582,8 @@ FUNC INT DIA_Godar_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Godar_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Godar_AllDragonsDead_15_00"); //Zabil jsem vöechny draky.
-	AI_Output 	(self ,other,"DIA_Godar_AllDragonsDead_13_01"); //No a. Tady v ˙dolÌ n·m toho z˘stalo jeötÍ spousta.
+	AI_Output	(other,self ,"DIA_Godar_AllDragonsDead_15_00"); //Zabil jsem v≈°echny draky.
+	AI_Output 	(self ,other,"DIA_Godar_AllDragonsDead_13_01"); //No a. Tady v √∫dol√≠ n√°m toho z≈Østalo je≈°tƒô spousta.
 };
 
 

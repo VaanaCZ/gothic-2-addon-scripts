@@ -14,14 +14,14 @@ FUNC VOID ZS_Pray_Innos ()
 
 FUNC int ZS_Pray_Innos_Loop ()
 {
-	// ------ Hämmern ------
+	// ------ HÃ¤mmern ------
 	if (!C_BodyStateContains(self, BS_MOBINTERACT_INTERRUPT))
 	&& (Wld_IsMobAvailable(self,"INNOS"))
 	{
 		AI_UseMob (self, "INNOS", 1);
 	};
 	
-	// ------ Random-Ani beim Hämmern ------
+	// ------ Random-Ani beim HÃ¤mmern ------
 	if (Npc_GetStateTime(self) > 5)
 	&& (C_BodyStateContains(self, BS_MOBINTERACT_INTERRUPT))
     {

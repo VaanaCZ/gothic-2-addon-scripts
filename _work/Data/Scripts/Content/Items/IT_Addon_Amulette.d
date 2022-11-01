@@ -76,7 +76,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
 
-	description		=  "Franc˘v amulet";
+	description		=  "Franc≈Øv amulet";
 
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= STR_FRANCO;
@@ -138,7 +138,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "LÈËitelsk˝ amulet";
+	description		=  "L√©ƒçitelsk√Ω amulet";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Amulett_Solo_Bonus;
@@ -203,7 +203,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "LÈËitelsk˝ prsten";
+	description		=  "L√©ƒçitelsk√Ω prsten";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Ring_Solo_Bonus;
@@ -249,7 +249,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		//aktuelle Hitpoints werden nicht gesteigert. (Sonst Heilmaschine)
 	};
 //---------------------------------------------------------------------------------------------------------
-	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //Hˆhle zum Canyon
+	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //H√∂hle zum Canyon
 {
 	name 			=	NAME_Ring;
 
@@ -268,7 +268,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "LÈËitelsk˝ prsten";
+	description		=  "L√©ƒçitelsk√Ω prsten";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Ring_Solo_Bonus;
@@ -336,7 +336,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "KnÍûsk˝ amulet";
+	description		=  "Knƒô≈æsk√Ω amulet";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Amulett_Solo_Bonus;
@@ -401,7 +401,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "KnÍûsk˝ prsten";
+	description		=  "Knƒô≈æsk√Ω prsten";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -466,7 +466,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "KnÍûsk˝ prsten";
+	description		=  "Knƒô≈æsk√Ω prsten";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -513,9 +513,9 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		
 	};
 //------------------------------------------------------------------------------------------
-// Kumulatives St‰rke Amulett (Maya) 
+// Kumulatives St√§rke Amulett (Maya) 
 //------------------------------------------------------------------------------------------
-	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranhˆhle strand
+	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranh√∂hle strand
 {
 	name 			=	NAME_Amulett;
 
@@ -534,7 +534,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "V·leËnick˝ amulet";
+	description		=  "V√°leƒçnick√Ω amulet";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Amulett_Solo_Bonus;
@@ -600,7 +600,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "V·leËnick˝ prsten";
+	description		=  "V√°leƒçnick√Ω prsten";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Ring_Solo_Bonus;
@@ -667,7 +667,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "V·leËnick˝ prsten";
+	description		=  "V√°leƒçnick√Ω prsten";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Ring_Solo_Bonus;

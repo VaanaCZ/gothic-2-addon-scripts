@@ -2,7 +2,7 @@
 instance VLK_442_Arbeiter (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dêlník"; 
+	name 		= "DÄ™lnÃ­k"; 
 	guild 		= GIL_VLK;
 	id 			= 442;
 	voice 		= 6;

@@ -28,7 +28,7 @@ INSTANCE DIA_NOV_8_Fegen(C_INFO)
 	condition	= DIA_NOV_8_Fegen_Condition;
 	information	= DIA_NOV_8_Fegen_Info;
 	permanent	= TRUE;
-	description = "Potâebuju pomoci zamést pokoje novicù.";
+	description = "PotÃ¢ebuju pomoci zamÃ©st pokoje novicÅ¯.";
 };                       
 
 FUNC INT DIA_NOV_8_Fegen_Condition()
@@ -45,14 +45,14 @@ var int Feger3_Permanent;
 //-------------------------------
 FUNC VOID DIA_NOV_8_Fegen_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_8_Fegen_15_00"); //Potâebuju pomoct zamést pokoje novicù.
+	AI_Output (other, self, "DIA_NOV_8_Fegen_15_00"); //PotÃ¢ebuju pomoct zamÃ©st pokoje novicÅ¯.
 	
 	if (Hlp_GetInstanceID (Feger3) == Hlp_GetInstanceID (self))
 	{	
 		if (Feger3_Permanent == FALSE)
 		{
-			AI_Output (self, other, "DIA_NOV_8_Fegen_08_01"); //No nazdar. Právê jsi pâišel a hned ze sebe necháš dêlat uklízeèku?
-			AI_Output (self, other, "DIA_NOV_8_Fegen_08_02"); //Uklidni se, se mnou to bylo to samé, kdy jsem sem poprvé pâišel. A proto se ti chystám pomoct. Asi by se nám pêknê vysmáli, kdybychom to nezvládli.
+			AI_Output (self, other, "DIA_NOV_8_Fegen_08_01"); //No nazdar. PrÃ¡vÄ™ jsi pÃ¢iÅ¡el a hned ze sebe nechÃ¡Å¡ dÄ™lat uklÃ­zeÄku?
+			AI_Output (self, other, "DIA_NOV_8_Fegen_08_02"); //Uklidni se, se mnou to bylo to samÃ©, kdyÅ¾ jsem sem poprvÃ© pÃ¢iÅ¡el. A proto se ti chystÃ¡m pomoct. Asi by se nÃ¡m pÄ™knÄ™ vysmÃ¡li, kdybychom to nezvlÃ¡dli.
 			
 			NOV_Helfer = (NOV_Helfer +1);
 			Feger3_Permanent = TRUE;
@@ -60,18 +60,18 @@ FUNC VOID DIA_NOV_8_Fegen_Info()
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine (self,"FEGEN");
 			
-			B_LogEntry 	(Topic_ParlanFegen,"U jsem narazil na novice, kterı mi s úklidem komnat pomùe.");
+			B_LogEntry 	(Topic_ParlanFegen,"UÅ¾ jsem narazil na novice, kterÃ½ mi s Ãºklidem komnat pomÅ¯Å¾e.");
 		}
 		else //if (Feger3_Permanent == TRUE)
 		{
-			AI_Output (self, other, "DIA_NOV_8_Fegen_08_03"); //Bratâe, jsem obeznámen se situací, do které ses dostal. A u jsem ti âekl, e ti pomohu. A to právê dêlám.
+			AI_Output (self, other, "DIA_NOV_8_Fegen_08_03"); //BratÃ¢e, jsem obeznÃ¡men se situacÃ­, do kterÃ© ses dostal. A uÅ¾ jsem ti Ã¢ekl, Å¾e ti pomohu. A to prÃ¡vÄ™ dÄ™lÃ¡m.
 		};
 	};
 	//-------------------------- alle anderen Novizen mit Stimme 8 -----------------------------------------------------
 	
 	if ((Hlp_GetInstanceID (Feger3) == Hlp_GetInstanceID (self)) == FALSE )
 	{	
-		AI_Output (self, other, "DIA_NOV_8_Fegen_08_04"); //Hele, rád bych, ale fakt nemám èas.
+		AI_Output (self, other, "DIA_NOV_8_Fegen_08_04"); //Hele, rÃ¡d bych, ale fakt nemÃ¡m Äas.
 	};
 };
 // *************************************************************************
@@ -83,7 +83,7 @@ INSTANCE DIA_NOV_8_Wurst(C_INFO)
 	condition	= DIA_NOV_8_Wurst_Condition;
 	information	= DIA_NOV_8_Wurst_Info;
 	permanent	= TRUE;
-	description = "Co takhle jemàouèká skopová klobáska?";
+	description = "Co takhle jemÅ•ouÄkÃ¡ skopovÃ¡ klobÃ¡ska?";
 };                       
 
 FUNC INT DIA_NOV_8_Wurst_Condition()
@@ -99,8 +99,8 @@ FUNC INT DIA_NOV_8_Wurst_Condition()
 
 FUNC VOID DIA_NOV_8_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_8_Wurst_15_00"); //Co takhle jemàouèká skopová klobáska?
-	AI_Output (self, other, "DIA_NOV_8_Wurst_08_01"); //Tak tomu se nedá âíct ne. Díky, chlape, pâesnê to jsem potâeboval.
+	AI_Output (other, self, "DIA_NOV_8_Wurst_15_00"); //Co takhle jemÅ•ouÄkÃ¡ skopovÃ¡ klobÃ¡ska?
+	AI_Output (self, other, "DIA_NOV_8_Wurst_08_01"); //Tak tomu se nedÃ¡ Ã¢Ã­ct ne. DÃ­ky, chlape, pÃ¢esnÄ™ to jsem potÃ¢eboval.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -123,7 +123,7 @@ INSTANCE DIA_NOV_8_JOIN(C_INFO)
 	condition	= DIA_NOV_8_JOIN_Condition;
 	information	= DIA_NOV_8_JOIN_Info;
 	permanent	= TRUE;
-	description = "Co musím udêlat, abych se stal mágem?";
+	description = "Co musÃ­m udÄ™lat, abych se stal mÃ¡gem?";
 };                       
 
 FUNC INT DIA_NOV_8_JOIN_Condition()
@@ -136,9 +136,9 @@ FUNC INT DIA_NOV_8_JOIN_Condition()
 
 FUNC VOID DIA_NOV_8_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_8_JOIN_15_00"); //Co musím udêlat, abych se stal mágem?
-	AI_Output (self, other, "DIA_NOV_8_JOIN_08_01"); //Innosovım vyvolenım se mùeš stát pouze v pâípadê, e k tomu dá svolení nejvyšší rada.
-	AI_Output (self, other, "DIA_NOV_8_JOIN_08_02"); //Jako novicové máme zakázáno studovat runovou magii - a staré posvátné spisy mùeme proèítat jen se svolením mágù.
+	AI_Output (other, self, "DIA_NOV_8_JOIN_15_00"); //Co musÃ­m udÄ™lat, abych se stal mÃ¡gem?
+	AI_Output (self, other, "DIA_NOV_8_JOIN_08_01"); //InnosovÃ½m vyvolenÃ½m se mÅ¯Å¾eÅ¡ stÃ¡t pouze v pÃ¢Ã­padÄ™, Å¾e k tomu dÃ¡ svolenÃ­ nejvyÅ¡Å¡Ã­ rada.
+	AI_Output (self, other, "DIA_NOV_8_JOIN_08_02"); //Jako novicovÃ© mÃ¡me zakÃ¡zÃ¡no studovat runovou magii - a starÃ© posvÃ¡tnÃ© spisy mÅ¯Å¾eme proÄÃ­tat jen se svolenÃ­m mÃ¡gÅ¯.
 };
 
 // *************************************************************************
@@ -150,7 +150,7 @@ INSTANCE DIA_NOV_8_PEOPLE(C_INFO)
 	condition	= DIA_NOV_8_PEOPLE_Condition;
 	information	= DIA_NOV_8_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo vede tenhle klášter?";
+	description = "Kdo vede tenhle klÃ¡Å¡ter?";
 };                       
 
 FUNC INT DIA_NOV_8_PEOPLE_Condition()
@@ -160,9 +160,9 @@ FUNC INT DIA_NOV_8_PEOPLE_Condition()
 
 FUNC VOID DIA_NOV_8_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_8_PEOPLE_15_00"); //Kdo vede tenhle klášter?
-	AI_Output (self, other, "DIA_NOV_8_PEOPLE_08_01"); //Nejvyšší rada, kterou tvoâí tâi nejmocnêjší mágové. Kadodennê se scházejí v kostele.
-	AI_Output (self, other, "DIA_NOV_8_PEOPLE_08_02"); //Innosovi vyvolení jsou všichni mágové. Innos jim poskytl tento dar, a tak mohou na zemi plnit jeho vùli.
+	AI_Output (other, self, "DIA_NOV_8_PEOPLE_15_00"); //Kdo vede tenhle klÃ¡Å¡ter?
+	AI_Output (self, other, "DIA_NOV_8_PEOPLE_08_01"); //NejvyÅ¡Å¡Ã­ rada, kterou tvoÃ¢Ã­ tÃ¢i nejmocnÄ™jÅ¡Ã­ mÃ¡govÃ©. KaÅ¾dodennÄ™ se schÃ¡zejÃ­ v kostele.
+	AI_Output (self, other, "DIA_NOV_8_PEOPLE_08_02"); //Innosovi vyvolenÃ­ jsou vÅ¡ichni mÃ¡govÃ©. Innos jim poskytl tento dar, a tak mohou na zemi plnit jeho vÅ¯li.
 };
 
 // *************************************************************************
@@ -174,7 +174,7 @@ INSTANCE DIA_NOV_8_LOCATION(C_INFO)
 	condition	= DIA_NOV_8_LOCATION_Condition;
 	information	= DIA_NOV_8_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Povêz mi o klášteru nêco víc.";
+	description = "PovÄ™z mi o klÃ¡Å¡teru nÄ™co vÃ­c.";
 };                       
 
 FUNC INT DIA_NOV_8_LOCATION_Condition()
@@ -184,10 +184,10 @@ FUNC INT DIA_NOV_8_LOCATION_Condition()
 
 FUNC VOID DIA_NOV_8_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_8_LOCATION_15_00"); //Âekni mi o klášteru nêco víc.
-	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_01"); //Jeho pùvod sahá hluboko do minulosti. Pochází z dob vlády Rhobara I.
-	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_02"); //Pod klášterem se rozkládají katakomby. Vedou hluboko do hor.
-	//AI_Output (self, other, "DIA_NOV_8_LOCATION_08_03"); //Aber zur untersten Ebene haben nur die höchsten Geweihten Innos' Zutritt.
+	AI_Output (other, self, "DIA_NOV_8_LOCATION_15_00"); //Ã‚ekni mi o klÃ¡Å¡teru nÄ™co vÃ­c.
+	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_01"); //Jeho pÅ¯vod sahÃ¡ hluboko do minulosti. PochÃ¡zÃ­ z dob vlÃ¡dy Rhobara I.
+	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_02"); //Pod klÃ¡Å¡terem se rozklÃ¡dajÃ­ katakomby. Vedou hluboko do hor.
+	//AI_Output (self, other, "DIA_NOV_8_LOCATION_08_03"); //Aber zur untersten Ebene haben nur die hÃ¶chsten Geweihten Innos' Zutritt.
 };
 
 // *************************************************************************
@@ -199,7 +199,7 @@ INSTANCE DIA_NOV_8_STANDARD(C_INFO)
 	condition	= DIA_NOV_8_STANDARD_Condition;
 	information	= DIA_NOV_8_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };
                        
 func INT DIA_NOV_8_STANDARD_Condition()
@@ -209,18 +209,18 @@ func INT DIA_NOV_8_STANDARD_Condition()
 
 FUNC VOID DIA_NOV_8_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_8_STANDARD_15_00"); //Je nêco nového?
+	AI_Output (other, self, "DIA_NOV_8_STANDARD_15_00"); //Je nÄ™co novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
 		if (other.guild == GIL_KDF)
 		{
-			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_01"); //Dalo by se âíct, e ano. U je to víc ne sto let, co byl nêjakı novic tak rychle pâijat do kruhu ohnê.
-			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_02"); //Doufám, e se mi této cti také jednou dostane. Budu na tom tvrdê pracovat.
+			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_01"); //Dalo by se Ã¢Ã­ct, Å¾e ano. UÅ¾ je to vÃ­c neÅ¾ sto let, co byl nÄ™jakÃ½ novic tak rychle pÃ¢ijat do kruhu ohnÄ™.
+			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_02"); //DoufÃ¡m, Å¾e se mi tÃ©to cti takÃ© jednou dostane. Budu na tom tvrdÄ™ pracovat.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_03"); //Nedávno do Khorinidu pâijeli paladinové. Jeden z nich je tady v klášteâe, aby se tu modlil k Innosovi.
+			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_03"); //NedÃ¡vno do Khorinidu pÃ¢ijeli paladinovÃ©. Jeden z nich je tady v klÃ¡Å¡teÃ¢e, aby se tu modlil k Innosovi.
 		};
 	};
 
@@ -230,36 +230,36 @@ FUNC VOID DIA_NOV_8_STANDARD_Info()
 		if (Pedro_Traitor == TRUE)
 		&& (MIS_NovizenChase != LOG_SUCCESS)	//Kap 3b - SC weiss, das Pedro das Auge Innos geklaut hat
 		{
-	 		AI_Output (self,other,"DIA_NOV_3_STANDARD_08_04"); //Poâád tomu nemohu uvêâit. Jeden z nás zradil klášter a ukradl Innosovo oko.
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_05"); //Naším úkolem bylo vybudovat soudrnou spoleènost, ale byli jsme pâíliš slabí. To je jedinı dùvod, proè se mohlo Beliarovi podaâit pâetáhnout jednoho z nás na svou stranu.
+	 		AI_Output (self,other,"DIA_NOV_3_STANDARD_08_04"); //PoÃ¢Ã¡d tomu nemohu uvÄ™Ã¢it. Jeden z nÃ¡s zradil klÃ¡Å¡ter a ukradl Innosovo oko.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_05"); //NaÅ¡Ã­m Ãºkolem bylo vybudovat soudrÅ¾nou spoleÄnost, ale byli jsme pÃ¢Ã­liÅ¡ slabÃ­. To je jedinÃ½ dÅ¯vod, proÄ se mohlo Beliarovi podaÃ¢it pÃ¢etÃ¡hnout jednoho z nÃ¡s na svou stranu.
 		}
 		else if (MIS_NovizenChase == LOG_SUCCESS)	//Kap 3c - Das Auge Innos ist wieder da
 		{
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_06"); //Innos buë pochválen. Podaâilo se nám Oko dostat od nepâítele zpêt.
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_07"); //Tvá odvaha by mohla bıt pâíkladem mnoha zoufalım duším, a pomoci jim tak pâeèkat tyto temné èasy.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_06"); //Innos buÃ« pochvÃ¡len. PodaÃ¢ilo se nÃ¡m Oko dostat od nepÃ¢Ã­tele zpÄ™t.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_07"); //TvÃ¡ odvaha by mohla bÃ½t pÃ¢Ã­kladem mnoha zoufalÃ½m duÅ¡Ã­m, a pomoci jim tak pÃ¢eÄkat tyto temnÃ© Äasy.
 		}
 		else //Kap 2 - 3a
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self,other,"DIA_NOV_8_STANDARD_08_08"); //Zaslechl jsem nêco o dracích a armádê zla. Innos nás opatruj!
+				AI_Output (self,other,"DIA_NOV_8_STANDARD_08_08"); //Zaslechl jsem nÄ™co o dracÃ­ch a armÃ¡dÄ™ zla. Innos nÃ¡s opatruj!
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_NOV_8_STANDARD_08_09"); //Nejvyšší rada má na situaci našich paladinù zvláštní zájem. U nêjakou dobu jsme z Hornického údolí nedostali ádné zprávy.
+				AI_Output (self,other,"DIA_NOV_8_STANDARD_08_09"); //NejvyÅ¡Å¡Ã­ rada mÃ¡ na situaci naÅ¡ich paladinÅ¯ zvlÃ¡Å¡tnÃ­ zÃ¡jem. UÅ¾ nÄ™jakou dobu jsme z HornickÃ©ho ÃºdolÃ­ nedostali Å¾Ã¡dnÃ© zprÃ¡vy.
 			};
 		};
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_10"); //Ne. A jsem za to našemu Pánu vdêènı. S Innosovım okem budeme moci ty draky porazit!
+		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_10"); //Ne. A jsem za to naÅ¡emu PÃ¡nu vdÄ™ÄnÃ½. S InnosovÃ½m okem budeme moci ty draky porazit!
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_11"); //Ano. Dosáhli jsme vítêzství nad draky! Innos nám ukázal, e nikdy nesmíme ztrácet nadêji.
-		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_12"); //V souèasnosti se musíme potıkat se sílou temnoty a bude tâeba zaehnout ještê mnoho ohàù, abychom ji sprovodili ze svêta.
+		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_11"); //Ano. DosÃ¡hli jsme vÃ­tÄ™zstvÃ­ nad draky! Innos nÃ¡m ukÃ¡zal, Å¾e nikdy nesmÃ­me ztrÃ¡cet nadÄ™ji.
+		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_12"); //V souÄasnosti se musÃ­me potÃ½kat se sÃ­lou temnoty a bude tÃ¢eba zaÅ¾ehnout jeÅ¡tÄ™ mnoho ohÅ•Å¯, abychom ji sprovodili ze svÄ™ta.
 	};
 };
 

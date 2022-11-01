@@ -43,9 +43,9 @@ func int DIA_Tengron_First_Condition ()
 };
 func void DIA_Tengron_First_Info ()
 {
-	AI_Output (self, other, "DIA_Tengron_First_07_00"); //Co tady dÍl·ö?
+	AI_Output (self, other, "DIA_Tengron_First_07_00"); //Co tady dƒôl√°≈°?
 	AI_Output (other, self, "DIA_Tengron_First_15_01"); //Vydal jsem se na cestu na rozkaz lorda Hagena.
-	AI_Output (self, other, "DIA_Tengron_First_07_02"); //MusÌö se za vöech okolnostÌ dostat na hrad a promluvit si s velitelem Garondem.
+	AI_Output (self, other, "DIA_Tengron_First_07_02"); //Mus√≠≈° se za v≈°ech okolnost√≠ dostat na hrad a promluvit si s velitelem Garondem.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -70,12 +70,12 @@ func int DIA_Tengron_HALLO_Condition ()
 };
 func void DIA_Tengron_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Tengron_HALLO_07_00"); //Nech„ tÍ Innos doprov·zÌ! P‚in·öÌö zpr·vy z hradu? Uû se blÌûÌ posily?
+	AI_Output (self, other, "DIA_Tengron_HALLO_07_00"); //NechƒÉ tƒô Innos doprov√°z√≠! P√¢in√°≈°√≠≈° zpr√°vy z hradu? U≈æ se bl√≠≈æ√≠ posily?
 	
 	if (Npc_IsDead(Fajeth) == FALSE)
 	{
-		AI_Output (other, self, "DIA_Tengron_HALLO_15_01"); //Nep‚iöel jsem se zpr·vami, ale pro nÍ.
-		AI_Output (self, other, "DIA_Tengron_HALLO_07_02"); //V tom p‚ÌpadÍ si promluv s Fajethem. M· to tady na povel. Ale kdybys mÍl nÍjakÈ zpr·vy z hradu, dej mi vÍdÍt.
+		AI_Output (other, self, "DIA_Tengron_HALLO_15_01"); //Nep√¢i≈°el jsem se zpr√°vami, ale pro nƒô.
+		AI_Output (self, other, "DIA_Tengron_HALLO_07_02"); //V tom p√¢√≠padƒô si promluv s Fajethem. M√° to tady na povel. Ale kdybys mƒôl nƒôjak√© zpr√°vy z hradu, dej mi vƒôdƒôt.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -88,7 +88,7 @@ instance DIA_Tengron_News		(C_INFO)
 	condition	 = 	DIA_Tengron_News_Condition;
 	information	 = 	DIA_Tengron_News_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Co se tÍch zpr·v t˝Ëe...";
+	description	 = 	"Co se tƒôch zpr√°v t√Ωƒçe...";
 };
 
 func int DIA_Tengron_News_Condition ()
@@ -101,36 +101,36 @@ func int DIA_Tengron_News_Condition ()
 
 func void DIA_Tengron_News_Info ()
 {
-	AI_Output (other, self, "DIA_Tengron_News_15_00"); //Co se tÍch zpr·v t˝Ëe...
-	AI_Output (self, other, "DIA_Tengron_News_07_01"); //Ano - jak to vypad· na hradÍ?
-	AI_Output (other, self, "DIA_Tengron_News_15_02"); //JeötÍ po‚·d ho oblÈhajÌ sk‚eti a po‚·d na nÍj mohou za˙toËit draci.
-	AI_Output (self, other, "DIA_Tengron_News_07_03"); //ZatracenÍ, douf·m, ûe se chlapci udrûÌ.
-	AI_Output (self, other, "DIA_Tengron_News_07_04"); //Poslouchej, m·m na hradÍ p‚Ìtele. Jmenuje se Udar. Zn·me se uû dlouhou dobu a bojovali jsme pospolu v nejednÈ bitvÍ.
-	AI_Output (self, other, "DIA_Tengron_News_07_05"); //Chci, abys mu dal tenhle prsten. A„ mi ho pohlÌd·. Vy‚iÎ mu, ûe aû se vr·tÌm, vezmu si ho zpÍt.
+	AI_Output (other, self, "DIA_Tengron_News_15_00"); //Co se tƒôch zpr√°v t√Ωƒçe...
+	AI_Output (self, other, "DIA_Tengron_News_07_01"); //Ano - jak to vypad√° na hradƒô?
+	AI_Output (other, self, "DIA_Tengron_News_15_02"); //Je≈°tƒô po√¢√°d ho obl√©haj√≠ sk√¢eti a po√¢√°d na nƒôj mohou za√∫toƒçit draci.
+	AI_Output (self, other, "DIA_Tengron_News_07_03"); //Zatracenƒô, douf√°m, ≈æe se chlapci udr≈æ√≠.
+	AI_Output (self, other, "DIA_Tengron_News_07_04"); //Poslouchej, m√°m na hradƒô p√¢√≠tele. Jmenuje se Udar. Zn√°me se u≈æ dlouhou dobu a bojovali jsme pospolu v nejedn√© bitvƒô.
+	AI_Output (self, other, "DIA_Tengron_News_07_05"); //Chci, abys mu dal tenhle prsten. AƒÉ mi ho pohl√≠d√°. Vy√¢i√´ mu, ≈æe a≈æ se vr√°t√≠m, vezmu si ho zpƒôt.
 	
 	Info_ClearChoices (DIA_Tengron_News);
 	
-	Info_AddChoice (DIA_Tengron_News,"Na to nem·m Ëas.",DIA_Tengron_News_No);
-	Info_AddChoice (DIA_Tengron_News,"é·dn˝ problÈm...",DIA_Tengron_News_Yes);
+	Info_AddChoice (DIA_Tengron_News,"Na to nem√°m ƒças.",DIA_Tengron_News_No);
+	Info_AddChoice (DIA_Tengron_News,"≈Ω√°dn√Ω probl√©m...",DIA_Tengron_News_Yes);
 };
 FUNC VOID DIA_Tengron_News_No()
 {
-	AI_Output (other, self, "DIA_Tengron_News_No_15_00"); //Na to nem·m Ëas.
-	AI_Output (self, other, "DIA_Tengron_News_No_07_01"); //RozumÌm.
+	AI_Output (other, self, "DIA_Tengron_News_No_15_00"); //Na to nem√°m ƒças.
+	AI_Output (self, other, "DIA_Tengron_News_No_07_01"); //Rozum√≠m.
 	
 	Info_ClearChoices (DIA_Tengron_News);
 };
 FUNC VOID DIA_Tengron_News_Yes()
 {
-	AI_Output (other, self, "DIA_Tengron_News_Yes_15_00"); //é·dn˝ problÈm. Aû se dostanu do hradu, d·m Udarovi ten prsten.
-	AI_Output (self, other, "DIA_Tengron_News_Yes_07_01"); //Dobr·. Magie toho prstenu d· Udarovi novou sÌlu. A ‚ekni mu, ûe aû se vr·tÌm, zase si ho vezmu.
+	AI_Output (other, self, "DIA_Tengron_News_Yes_15_00"); //≈Ω√°dn√Ω probl√©m. A≈æ se dostanu do hradu, d√°m Udarovi ten prsten.
+	AI_Output (self, other, "DIA_Tengron_News_Yes_07_01"); //Dobr√°. Magie toho prstenu d√° Udarovi novou s√≠lu. A √¢ekni mu, ≈æe a≈æ se vr√°t√≠m, zase si ho vezmu.
 	
 	B_GiveInvItems (self,other,ItRi_Tengron,1);
 	Info_ClearChoices (DIA_Tengron_News);
 	
 	Log_CreateTopic (Topic_TengronRing,LOG_MISSION);
 	Log_SetTopicStatus (Topic_TengronRing,LOG_RUNNING);
-	B_LogEntry (Topic_TengronRing,"Tengron mi svÍ‚il prsten, kter˝ m·m na hradÍ p‚edat Udarovi.");
+	B_LogEntry (Topic_TengronRing,"Tengron mi svƒô√¢il prsten, kter√Ω m√°m na hradƒô p√¢edat Udarovi.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Situation
@@ -142,7 +142,7 @@ instance DIA_Tengron_Situation		(C_INFO)
 	condition	 = 	DIA_Tengron_Situation_Condition;
 	information	 = 	DIA_Tengron_Situation_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Jak to tu u v·s vypad·?";
+	description	 = 	"Jak to tu u v√°s vypad√°?";
 };
 func int DIA_Tengron_Situation_Condition ()
 {
@@ -153,9 +153,9 @@ func int DIA_Tengron_Situation_Condition ()
 };
 func void DIA_Tengron_Situation_Info ()
 {
-	AI_Output (other, self, "DIA_Tengron_Situation_15_00"); //Jak to tu u v·s vypad·?
-	AI_Output (self, other, "DIA_Tengron_Situation_07_01"); //Vöude kolem jsou samÈ p‚Ìöery a nevydolovali jsme skoro û·dnou rudu. NavÌc jsme ztratili spoustu dobr˝ch chlap˘.
-	AI_Output (self, other, "DIA_Tengron_Situation_07_02"); //NevÌm, jak dlouho vydrûÌme, ale nevzd·me se!
+	AI_Output (other, self, "DIA_Tengron_Situation_15_00"); //Jak to tu u v√°s vypad√°?
+	AI_Output (self, other, "DIA_Tengron_Situation_07_01"); //V≈°ude kolem jsou sam√© p√¢√≠≈°ery a nevydolovali jsme skoro ≈æ√°dnou rudu. Nav√≠c jsme ztratili spoustu dobr√Ωch chlap≈Ø.
+	AI_Output (self, other, "DIA_Tengron_Situation_07_02"); //Nev√≠m, jak dlouho vydr≈æ√≠me, ale nevzd√°me se!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info NeedYourHelp
@@ -167,7 +167,7 @@ instance DIA_Tengron_HELP		(C_INFO)
 	condition	 = 	DIA_Tengron_HELP_Condition;
 	information	 = 	DIA_Tengron_HELP_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Pot‚eboval bych tvou pomoc..."; 
+	description	 = 	"Pot√¢eboval bych tvou pomoc..."; 
 };
 func int DIA_Tengron_HELP_Condition ()
 {
@@ -179,9 +179,9 @@ func int DIA_Tengron_HELP_Condition ()
 };
 func void DIA_Tengron_HELP_Info ()
 {
-	AI_Output (other, self, "DIA_Tengron_HELP_15_00"); //Mohl bys mi pomoci. Fajeth chce, abych lovil jeötÍry, a...
-	AI_Output (self, other, "DIA_Tengron_HELP_07_01"); //P‚ijÌm·m rozkazy JEN od Fajetha. A moje rozkazy ‚ÌkajÌ, ûe m·m hlÌdat d˘l. A p‚esnÍ to dÍl·m.
-	AI_Output (self, other, "DIA_Tengron_HELP_07_02"); //Moûn· by ti mohl pomoci nÍkdo jin˝.
+	AI_Output (other, self, "DIA_Tengron_HELP_15_00"); //Mohl bys mi pomoci. Fajeth chce, abych lovil je≈°tƒôry, a...
+	AI_Output (self, other, "DIA_Tengron_HELP_07_01"); //P√¢ij√≠m√°m rozkazy JEN od Fajetha. A moje rozkazy √¢√≠kaj√≠, ≈æe m√°m hl√≠dat d≈Øl. A p√¢esnƒô to dƒôl√°m.
+	AI_Output (self, other, "DIA_Tengron_HELP_07_02"); //Mo≈æn√° by ti mohl pomoci nƒôkdo jin√Ω.
 };
 
 

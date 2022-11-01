@@ -42,7 +42,7 @@ FUNC INT DIA_Girion_Hallo_Condition()
 };
 FUNC VOID DIA_Girion_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Girion_Hallo_08_00"); //Jsem Girion, mistr boje s obouruèními zbranêmi a královský paladin. Proè mê rušíš?
+	AI_Output (self, other, "DIA_Girion_Hallo_08_00"); //Jsem Girion, mistr boje s obouruÄnÃ­mi zbranÄ™mi a krÃ¡lovskÃ½ paladin. ProÄ mÄ™ ruÅ¡Ã­Å¡?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Can You Teach Me?
@@ -54,7 +54,7 @@ instance DIA_Girion_CanTeach		(C_INFO)
 	condition	 = 	DIA_Girion_CanTeach_Condition;
 	information	 = 	DIA_Girion_CanTeach_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Mohl bys mê cvièit?";
+	description	 = 	"Mohl bys mÄ™ cviÄit?";
 };
 func int DIA_Girion_CanTeach_Condition ()
 {	
@@ -65,20 +65,20 @@ func int DIA_Girion_CanTeach_Condition ()
 };
 func void DIA_Girion_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Girion_CanTeach_15_00"); //Mùžeš mê uèit?
+	AI_Output (other, self, "DIA_Girion_CanTeach_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ uÄit?
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_01"); //Dobâe èiníš, že se chceš zlepšit v nejvznešenêjším zpùsobu vedení boje. Tak se na Innosova váleèníka sluší a patâí.
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_02"); //Budu tê uèit. Pâijë ke mnê, až budeš pâipraven.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_01"); //DobÃ¢e ÄinÃ­Å¡, Å¾e se chceÅ¡ zlepÅ¡it v nejvzneÅ¡enÄ™jÅ¡Ã­m zpÅ¯sobu vedenÃ­ boje. Tak se na Innosova vÃ¡leÄnÃ­ka sluÅ¡Ã­ a patÃ¢Ã­.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_02"); //Budu tÄ™ uÄit. PÃ¢ijÃ« ke mnÄ™, aÅ¾ budeÅ¡ pÃ¢ipraven.
 		
 		Girion_Teach2H = TRUE;	
-		B_LogEntry (TOPIC_CityTeacher,"Paladin Girion mê vycvièí v používání obouruèních zbraní.");
+		B_LogEntry (TOPIC_CityTeacher,"Paladin Girion mÄ™ vycviÄÃ­ v pouÅ¾Ã­vÃ¡nÃ­ obouruÄnÃ­ch zbranÃ­.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_03"); //Pokud se chceš nêco nauèit, musíš se obrátit na uèitele odjinud než z našeho âádu.
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_04"); //Jsem váleèník, ne uèitel.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_03"); //Pokud se chceÅ¡ nÄ™co nauÄit, musÃ­Å¡ se obrÃ¡tit na uÄitele odjinud neÅ¾ z naÅ¡eho Ã¢Ã¡du.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_04"); //Jsem vÃ¡leÄnÃ­k, ne uÄitel.
 	};
 };
 //**************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_Girion_Teach(C_INFO)
 	condition	= DIA_Girion_Teach_Condition;
 	information	= DIA_Girion_Teach_Info;
 	permanent	= TRUE;
-	description = "Jsem pâipraven na výcvik.";
+	description = "Jsem pÃ¢ipraven na vÃ½cvik.";
 };                       
 //----------------------------------
 var int DIA_Girion_Teach_permanent;
@@ -111,7 +111,7 @@ FUNC VOID DIA_Girion_Teach_Info()
 {	
 	girion_merk2h = other.HitChance[NPC_TALENT_2H];  
 	
-	AI_Output (other,self ,"DIA_Girion_Teach_15_00"); //Jsem pâipraven k výcviku.
+	AI_Output (other,self ,"DIA_Girion_Teach_15_00"); //Jsem pÃ¢ipraven k vÃ½cviku.
 	
 	Info_ClearChoices 	(DIA_Girion_Teach);
 	Info_AddChoice 		(DIA_Girion_Teach,	DIALOG_BACK		,DIA_Girion_Teach_Back);
@@ -123,10 +123,10 @@ FUNC VOID DIA_Girion_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_2H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_00"); //Tvá výuka samozâejmê neskonèila, ale já už ti nemùžu ukázat nic, co bys neznal.
-		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_01"); //Pokud chceš ještê zvýšit svùj talent se zbranêmi, budeš muset vyhledat skuteèného mistra meèe.
-		AI_Output (other,self,"DIA_DIA_Girion_Teach_15_02"); //Kde bych takového èlovêka mohl najít?
-		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_03"); //Lord Hagen je mistr meèe. Urèitê tê nêco nauèí.
+		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_00"); //TvÃ¡ vÃ½uka samozÃ¢ejmÄ™ neskonÄila, ale jÃ¡ uÅ¾ ti nemÅ¯Å¾u ukÃ¡zat nic, co bys neznal.
+		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_01"); //Pokud chceÅ¡ jeÅ¡tÄ™ zvÃ½Å¡it svÅ¯j talent se zbranÄ™mi, budeÅ¡ muset vyhledat skuteÄnÃ©ho mistra meÄe.
+		AI_Output (other,self,"DIA_DIA_Girion_Teach_15_02"); //Kde bych takovÃ©ho ÄlovÄ™ka mohl najÃ­t?
+		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_03"); //Lord Hagen je mistr meÄe. UrÄitÄ™ tÄ™ nÄ™co nauÄÃ­.
 		
 		DIA_Girion_Teach_permanent = TRUE;
 	};
@@ -141,19 +141,19 @@ FUNC VOID DIA_Girion_Teach_2H_1 ()
 	{
 		if (Girion_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_00"); //Bojuj èestnê. Boj je náš život - a co by byl život beze cti?
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_00"); //Bojuj ÄestnÄ™. Boj je nÃ¡Å¡ Å¾ivot - a co by byl Å¾ivot beze cti?
 		};
 		if (Girion_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_01"); //V boji buë obezâetný a rychlý. Pâekvap svého protivníka.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_01"); //V boji buÃ« obezÃ¢etnÃ½ a rychlÃ½. PÃ¢ekvap svÃ©ho protivnÃ­ka.
 		};
 		if (Girion_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_02"); //Nikdy nechoë do boje nepâipraven. Nikdy nevíš, jestli náhodou není poslední.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_02"); //Nikdy nechoÃ« do boje nepÃ¢ipraven. Nikdy nevÃ­Å¡, jestli nÃ¡hodou nenÃ­ poslednÃ­.
 		};
 		if (Girion_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_03"); //Paladin je vždy pâipraven na boj. Ale nikdy se nepouští do bitvy, kterou nemùže vyhrát.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_03"); //Paladin je vÅ¾dy pÃ¢ipraven na boj. Ale nikdy se nepouÅ¡tÃ­ do bitvy, kterou nemÅ¯Å¾e vyhrÃ¡t.
 		};
 		
 		Girion_Labercount = Girion_Labercount +1;
@@ -176,19 +176,19 @@ FUNC VOID DIA_Girion_Teach_2H_5 ()
 	{
 		if (Girion_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_00"); //Paladin nebojuje pouze meèem, ale také vlastní myslí.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_00"); //Paladin nebojuje pouze meÄem, ale takÃ© vlastnÃ­ myslÃ­.
 		};
 		if (Girion_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_01"); //Vždycky musíš mít v pamêti místo, kam se mùžeš v pâípadê potâeby stáhnout.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_01"); //VÅ¾dycky musÃ­Å¡ mÃ­t v pamÄ™ti mÃ­sto, kam se mÅ¯Å¾eÅ¡ v pÃ¢Ã­padÄ™ potÃ¢eby stÃ¡hnout.
 		};
 		if (Girion_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_02"); //Nezapomeà, že dobâe bojuješ v pâípadê, kdy svého protivníka ovládáš a nedáváš mu šanci, aby se ovládal sám.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_02"); //NezapomeÅ•, Å¾e dobÃ¢e bojujeÅ¡ v pÃ¢Ã­padÄ™, kdy svÃ©ho protivnÃ­ka ovlÃ¡dÃ¡Å¡ a nedÃ¡vÃ¡Å¡ mu Å¡anci, aby se ovlÃ¡dal sÃ¡m.
 		};
 		if (Girion_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_03"); //Prohraješ pouze v pâípadê, když se vzdáš.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_03"); //ProhrajeÅ¡ pouze v pÃ¢Ã­padÄ™, kdyÅ¾ se vzdÃ¡Å¡.
 		};
 		
 		Girion_Labercount = Girion_Labercount +1;
@@ -228,7 +228,7 @@ func int DIA_Girion_CATCHPLAYERSTOLENSHIP_Condition ()
 {
 	if (Kapitel >= 5)
 	&& (MIS_ShipIsFree == TRUE) 
-	&& (Npc_GetDistToWP(self,"NW_CITY_WAY_TO_SHIP_25")<1000) //Joly: ist nur hier, wenn SC die Wachen überredet hat, ihm das Schiff zu geben.
+	&& (Npc_GetDistToWP(self,"NW_CITY_WAY_TO_SHIP_25")<1000) //Joly: ist nur hier, wenn SC die Wachen Ã¼berredet hat, ihm das Schiff zu geben.
 	{
 		return TRUE;
 	};
@@ -236,33 +236,33 @@ func int DIA_Girion_CATCHPLAYERSTOLENSHIP_Condition ()
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_Info ()
 {
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_08_00"); //Hej! Mùžeš mi laskavê âíct, co to tady dêláš?
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_08_00"); //Hej! MÅ¯Å¾eÅ¡ mi laskavÄ™ Ã¢Ã­ct, co to tady dÄ™lÃ¡Å¡?
 
 	Info_ClearChoices	(DIA_Girion_CATCHPLAYERSTOLENSHIP);
-	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Nevím, o èem to mluvíš.", DIA_Girion_CATCHPLAYERSTOLENSHIP_no );
-	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Jdi mi z cesty, nebo tê budu muset zabít.", DIA_Girion_CATCHPLAYERSTOLENSHIP_weg );
-	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Potâebuji loë.", DIA_Girion_CATCHPLAYERSTOLENSHIP_ship );
+	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "NevÃ­m, o Äem to mluvÃ­Å¡.", DIA_Girion_CATCHPLAYERSTOLENSHIP_no );
+	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Jdi mi z cesty, nebo tÄ™ budu muset zabÃ­t.", DIA_Girion_CATCHPLAYERSTOLENSHIP_weg );
+	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "PotÃ¢ebuji loÃ«.", DIA_Girion_CATCHPLAYERSTOLENSHIP_ship );
 
 };
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_no ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_15_00"); //Nevím, o èem to mluvíš.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_01"); //Mluvím o tom, co jsi to provedl s lodní stráží. Smrdí mi to na sto honù.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_15_00"); //NevÃ­m, o Äem to mluvÃ­Å¡.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_01"); //MluvÃ­m o tom, co jsi to provedl s lodnÃ­ strÃ¡Å¾Ã­. SmrdÃ­ mi to na sto honÅ¯.
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_02"); //I když jsi mág, stejnê ti nevêâím.
+		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_02"); //I kdyÅ¾ jsi mÃ¡g, stejnÄ™ ti nevÄ™Ã¢Ã­m.
 	};
 };
 var int Girion_WantstoKillSC;
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_weg ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_15_00"); //Jdi mi z cesty, nebo tê budu muset zabít.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_01"); //Možná jsi dokázal ošálit stráže, ale brzo zjistíš, že se mnou to budeš mít kapku têžší, pâítelíèku.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_15_00"); //Jdi mi z cesty, nebo tÄ™ budu muset zabÃ­t.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_01"); //MoÅ¾nÃ¡ jsi dokÃ¡zal oÅ¡Ã¡lit strÃ¡Å¾e, ale brzo zjistÃ­Å¡, Å¾e se mnou to budeÅ¡ mÃ­t kapku tÄ™Å¾Å¡Ã­, pÃ¢Ã­telÃ­Äku.
 	if (hero.guild == GIL_PAL)
 	{
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_02"); //I když jsi jeden z nás, neznamená to, že bys mêl právo krást královský majetek. Zemâi, zrádèe.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_02"); //I kdyÅ¾ jsi jeden z nÃ¡s, neznamenÃ¡ to, Å¾e bys mÄ™l prÃ¡vo krÃ¡st krÃ¡lovskÃ½ majetek. ZemÃ¢i, zrÃ¡dÄe.
 	};
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -271,36 +271,36 @@ func void DIA_Girion_CATCHPLAYERSTOLENSHIP_weg ()
 
 func void B_GirionStayOnShip()
 {
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_09"); //Až s tím skonèíme, zase mi tu loë vrátíš, jasné?
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_09"); //AÅ¾ s tÃ­m skonÄÃ­me, zase mi tu loÃ« vrÃ¡tÃ­Å¡, jasnÃ©?
 };
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_ship ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_00"); //Potâebuju tu loë. Tak si ji vezmu.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_00"); //PotÃ¢ebuju tu loÃ«. Tak si ji vezmu.
 	
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_01"); //To nemùžeš. Transport rudy...
+		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_01"); //To nemÅ¯Å¾eÅ¡. Transport rudy...
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_02"); //Jak se opovažuješ, ty smrdutý...
+		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_02"); //Jak se opovaÅ¾ujeÅ¡, ty smrdutÃ½...
 	};
 	
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_03"); //V Hornickém údolí už není dost rudy na to, aby bylo možné uspokojit královy požadavky. Byl jsem tam. Už tam není nic, co by se mohlo hodit. Hagenova mise je fraška.
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_04"); //Skuteèná hrozba má své koâeny na ostrovê nedaleko odsud. Popluju tam a skoncuju s tím.
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_05"); //Buë se ke mnê pâipojíš, nebo se budu bez tebe muset obejít. Je to na tobê.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_06"); //Hmm. Zdá se, že nemám na výbêr.
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_07"); //Správnê.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_08"); //No dobrá. Pâidám se k tobê, ale jenom pod jednou podmínkou.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_03"); //V HornickÃ©m ÃºdolÃ­ uÅ¾ nenÃ­ dost rudy na to, aby bylo moÅ¾nÃ© uspokojit krÃ¡lovy poÅ¾adavky. Byl jsem tam. UÅ¾ tam nenÃ­ nic, co by se mohlo hodit. Hagenova mise je fraÅ¡ka.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_04"); //SkuteÄnÃ¡ hrozba mÃ¡ svÃ© koÃ¢eny na ostrovÄ™ nedaleko odsud. Popluju tam a skoncuju s tÃ­m.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_05"); //BuÃ« se ke mnÄ™ pÃ¢ipojÃ­Å¡, nebo se budu bez tebe muset obejÃ­t. Je to na tobÄ™.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_06"); //Hmm. ZdÃ¡ se, Å¾e nemÃ¡m na vÃ½bÄ™r.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_07"); //SprÃ¡vnÄ™.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_08"); //No dobrÃ¡. PÃ¢idÃ¡m se k tobÄ™, ale jenom pod jednou podmÃ­nkou.
 
 	B_GirionStayOnShip();
 
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_10"); //To není nic, s èím bych nemohl žít.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_11"); //V tom pâípadê dêlej, co musíš. Poèkám tady na tebe.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_10"); //To nenÃ­ nic, s ÄÃ­m bych nemohl Å¾Ã­t.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_11"); //V tom pÃ¢Ã­padÄ™ dÄ™lej, co musÃ­Å¡. PoÄkÃ¡m tady na tebe.
 	
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"Loë");
+	Npc_ExchangeRoutine	(self,"LoÃ«");
 	crewmember_Count = (Crewmember_Count +1);
 	Girion_IsOnBoard = LOG_SUCCESS;
 };
@@ -329,7 +329,7 @@ FUNC INT DIA_Girion_Verrat_Condition()
 
 FUNC VOID DIA_Girion_Verrat_Info()
 {
-	AI_Output			(self, other, "DIA_Girion_Verrat_08_00"); //Zrádce!
+	AI_Output			(self, other, "DIA_Girion_Verrat_08_00"); //ZrÃ¡dce!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };

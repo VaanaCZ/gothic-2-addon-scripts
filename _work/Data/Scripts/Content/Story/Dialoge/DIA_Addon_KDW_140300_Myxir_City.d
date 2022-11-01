@@ -30,7 +30,7 @@ instance DIA_Addon_Myxir_CITY_HelloCITY		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_CITY_HelloCITY_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Zùstaneš teë ve mêstê?";
+	description	 = 	"ZÅ¯staneÅ¡ teÃ« ve mÄ™stÄ™?";
 };
 
 func int DIA_Addon_Myxir_CITY_HelloCITY_Condition ()
@@ -40,19 +40,19 @@ func int DIA_Addon_Myxir_CITY_HelloCITY_Condition ()
 var int DIA_Addon_Myxir_CITY_HelloCITY_OneTime;
 func void DIA_Addon_Myxir_CITY_HelloCITY_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //Zùstaneš teë ve mêstê?
-	AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //Pokud Vatras odejde z mêsta, musí tu zùstat jeden z nás.
+	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //ZÅ¯staneÅ¡ teÃ« ve mÄ™stÄ™?
+	AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //Pokud Vatras odejde z mÄ™sta, musÃ­ tu zÅ¯stat jeden z nÃ¡s.
 	
 	VatrasAbloeseIstDa = TRUE;
 	
 	if (RavenIsDead == TRUE)
 	&& (DIA_Addon_Myxir_CITY_HelloCITY_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //Ještê jedna vêc.
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //To bylo vánê hrdinské, jak sis vedl v Jharkendaru.
-		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //Bohuel jsem ale ještê neskonèil se vším, co mám udêlat tady v Khorinidu.
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //Pravda, ale ty to všechno urèitê taky zvládneš, Ochránèe.
-		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_06"); //Uvidíme.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //JeÅ¡tÄ™ jedna vÄ™c.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //To bylo vÃ¡Å¾nÄ™ hrdinskÃ©, jak sis vedl v Jharkendaru.
+		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //BohuÅ¾el jsem ale jeÅ¡tÄ™ neskonÄil se vÅ¡Ã­m, co mÃ¡m udÄ™lat tady v Khorinidu.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //Pravda, ale ty to vÅ¡echno urÄitÄ™ taky zvlÃ¡dneÅ¡, OchrÃ¡nÄe.
+		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_06"); //UvidÃ­me.
 		DIA_Addon_Myxir_CITY_HelloCITY_OneTime = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 	};	
@@ -68,7 +68,7 @@ instance DIA_Addon_Myxir_CITY_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_CITY_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nauè mê tomu jazyku.";
+	description	 = 	"NauÄ mÄ™ tomu jazyku.";
 };
 
 var int DIA_Addon_Myxir_CITY_Teach_NoPerm;

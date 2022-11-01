@@ -31,7 +31,7 @@ instance DIA_Wulfgar_Hallo		(C_INFO)
 	condition	 = 	DIA_Wulfgar_Hallo_Condition;
 	information	 = 	DIA_Wulfgar_Hallo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jak jde sluba?";
+	description	 = 	"Jak jde sluÅ¾ba?";
 };
 
 func int DIA_Wulfgar_Hallo_Condition ()
@@ -41,9 +41,9 @@ func int DIA_Wulfgar_Hallo_Condition ()
 
 func void DIA_Wulfgar_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //Jak jde sluba?
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //(pohrdavê) Tihle hoši máchají meèi jako nêjací farmáâi.
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //(rozhodnê) Ale a s nimi skonèím, kadı z nich bude tvrdı, pevnı parchant.
+	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //Jak jde sluÅ¾ba?
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //(pohrdavÄ™) Tihle hoÅ¡i mÃ¡chajÃ­ meÄi jako nÄ™jacÃ­ farmÃ¡Ã¢i.
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //(rozhodnÄ™) Ale aÅ¾ s nimi skonÄÃ­m, kaÅ¾dÃ½ z nich bude tvrdÃ½, pevnÃ½ parchant.
 };
 
 // *************************************************
@@ -56,7 +56,7 @@ instance DIA_Wulfgar_WannaJoin		(C_INFO)
 	condition	 = 	DIA_Wulfgar_WannaJoin_Condition;
 	information	 = 	DIA_Wulfgar_WannaJoin_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Chci se pâidat k domobranê!";
+	description	 = 	"Chci se pÃ¢idat k domobranÄ™!";
 };
 
 func int DIA_Wulfgar_WannaJoin_Condition ()
@@ -70,18 +70,18 @@ func int DIA_Wulfgar_WannaJoin_Condition ()
 
 func void DIA_Wulfgar_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_00"); //Chci se pâidat k domobranê!
-	AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_01"); //No a? Jsi obèanem mêsta?
+	AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_00"); //Chci se pÃ¢idat k domobranÄ™!
+	AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_01"); //No a? Jsi obÄanem mÄ™sta?
 	if (Player_IsApprentice == APP_NONE)
 	{
 		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_02"); //Ne.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //V tom pâípadê tê lord Andre nepâijme.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //Samozâejmê e si s ním mùeš promluvit - ale neâekl bych, e u tebe uèiní vıjimku.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //V tom pÃ¢Ã­padÄ™ tÄ™ lord Andre nepÃ¢ijme.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //SamozÃ¢ejmÄ™ Å¾e si s nÃ­m mÅ¯Å¾eÅ¡ promluvit - ale neÃ¢ekl bych, Å¾e u tebe uÄinÃ­ vÃ½jimku.
 	}
 	else
 	{
 		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_05"); //Ano.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_06"); //V tom pâípadê si promluv s lordem Andrem. On rozhoduje, koho pâijmout a koho ne.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_06"); //V tom pÃ¢Ã­padÄ™ si promluv s lordem Andrem. On rozhoduje, koho pÃ¢ijmout a koho ne.
 	};
 };
 
@@ -95,7 +95,7 @@ instance DIA_Wulfgar_AboutMiliz		(C_INFO)
 	condition	 = 	DIA_Wulfgar_AboutMiliz_Condition;
 	information	 = 	DIA_Wulfgar_AboutMiliz_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jak to vypadá v domobranê?";
+	description	 = 	"Jak to vypadÃ¡ v domobranÄ™?";
 };
 
 func int DIA_Wulfgar_AboutMiliz_Condition ()
@@ -109,12 +109,12 @@ func int DIA_Wulfgar_AboutMiliz_Condition ()
 
 func void DIA_Wulfgar_AboutMiliz_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //Jak to vypadá v domobranê?
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_01"); //Naším velitelem je teë lord Andre.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_02"); //Domobrana se dâív zodpovídala místodrícímu. (smêje se) Ten nemêl ponêtí, co tady dêláme.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //Ale lord Andre dobâe ví, co dêlá. O chlapy se stará vánê dobâe.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //Kadı, kdo tady zaèíná, dostane slušnou zbroj a dobrou zbraà.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_05"); //A kdy odvádíš dobrou práci, dostaneš nêco navíc. Za kadého lapeného kriminálníka dostaneš odmênu.
+	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //Jak to vypadÃ¡ v domobranÄ™?
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_01"); //NaÅ¡Ã­m velitelem je teÃ« lord Andre.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_02"); //Domobrana se dÃ¢Ã­v zodpovÃ­dala mÃ­stodrÅ¾Ã­cÃ­mu. (smÄ™je se) Ten nemÄ™l ponÄ™tÃ­, co tady dÄ™lÃ¡me.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //Ale lord Andre dobÃ¢e vÃ­, co dÄ™lÃ¡. O chlapy se starÃ¡ vÃ¡Å¾nÄ™ dobÃ¢e.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //KaÅ¾dÃ½, kdo tady zaÄÃ­nÃ¡, dostane sluÅ¡nou zbroj a dobrou zbraÅ•.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_05"); //A kdyÅ¾ odvÃ¡dÃ­Å¡ dobrou prÃ¡ci, dostaneÅ¡ nÄ™co navÃ­c. Za kaÅ¾dÃ©ho lapenÃ©ho kriminÃ¡lnÃ­ka dostaneÅ¡ odmÄ™nu.
 };
 
 // *************************************************
@@ -127,7 +127,7 @@ instance DIA_Wulfgar_CanYouTrain		(C_INFO)
 	condition	 = 	DIA_Wulfgar_CanYouTrain_Condition;
 	information	 = 	DIA_Wulfgar_CanYouTrain_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mùeš uèit v boji s meèem i mê?";
+	description	 = 	"MÅ¯Å¾eÅ¡ uÄit v boji s meÄem i mÄ™?";
 };
 
 func int DIA_Wulfgar_CanYouTrain_Condition ()
@@ -141,21 +141,21 @@ func int DIA_Wulfgar_CanYouTrain_Condition ()
 
 func void DIA_Wulfgar_CanYouTrain_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_00"); //Mùeš uèit boji s meèem i mê?
-	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //Lord Andre mi pâikázal, abych cvièil kadého, kdo by mohl bıt schopen bránit mêsto.
+	AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_00"); //MÅ¯Å¾eÅ¡ uÄit boji s meÄem i mÄ™?
+	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //Lord Andre mi pÃ¢ikÃ¡zal, abych cviÄil kaÅ¾dÃ©ho, kdo by mohl bÃ½t schopen brÃ¡nit mÄ™sto.
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_02"); //To ovšem neplatí pro oldáky. Zmiz.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_02"); //To ovÅ¡em neplatÃ­ pro Å¾oldÃ¡ky. Zmiz.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //To ovšem platí jen pro bojovı vıcvik. Všechny ostatní druhy vıcviku jsou vyhrazeny domobranê.
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_04"); //Umíš aspoà trochu ovládat zbraà?
-		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Âekl bych, e ano.
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_06"); //(povzdychne si) Dobrá - mùeme zaèít, a se na to budeš cítit.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //To ovÅ¡em platÃ­ jen pro bojovÃ½ vÃ½cvik. VÅ¡echny ostatnÃ­ druhy vÃ½cviku jsou vyhrazeny domobranÄ™.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_04"); //UmÃ­Å¡ aspoÅ• trochu ovlÃ¡dat zbraÅ•?
+		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Ã‚ekl bych, Å¾e ano.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_06"); //(povzdychne si) DobrÃ¡ - mÅ¯Å¾eme zaÄÃ­t, aÅ¾ se na to budeÅ¡ cÃ­tit.
 		Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-		B_LogEntry (Topic_CityTeacher, "Wulfgar, èlen mêstské gardy, mê mùe vycvièit v jednoruèním i obouruèním boji.");
+		B_LogEntry (Topic_CityTeacher, "Wulfgar, Älen mÄ™stskÃ© gardy, mÄ™ mÅ¯Å¾e vycviÄit v jednoruÄnÃ­m i obouruÄnÃ­m boji.");
 		Wulfgar_Teach1H = TRUE;	
 	};
 };
@@ -170,7 +170,7 @@ instance DIA_Wulfgar_Advantage		(C_INFO)
 	condition	 = 	DIA_Wulfgar_Advantage_Condition;
 	information	 = 	DIA_Wulfgar_Advantage_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jaké jsou vıhody jednoruèních a obouruèních zbraní?";
+	description	 = 	"JakÃ© jsou vÃ½hody jednoruÄnÃ­ch a obouruÄnÃ­ch zbranÃ­?";
 };
 
 func int DIA_Wulfgar_Advantage_Condition ()
@@ -184,9 +184,9 @@ func int DIA_Wulfgar_Advantage_Condition ()
 
 func void DIA_Wulfgar_Advantage_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //Jaké jsou vıhody jednoruèních a obouruèních zbraní?
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //Je to prosté. S jednoruèní zbraní jsi rychlejší. To mùe bıt v bitvê pomêrnê znaèná vıhoda.
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //Obouruèní zbranê jsou têkopádnêjší. Musíš bojovat obezâetnê - pâi zásahu však zpùsobíš mnohem vêtší zranêní.
+	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //JakÃ© jsou vÃ½hody jednoruÄnÃ­ch a obouruÄnÃ­ch zbranÃ­?
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //Je to prostÃ©. S jednoruÄnÃ­ zbranÃ­ jsi rychlejÅ¡Ã­. To mÅ¯Å¾e bÃ½t v bitvÄ™ pomÄ™rnÄ™ znaÄnÃ¡ vÃ½hoda.
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //ObouruÄnÃ­ zbranÄ™ jsou tÄ™Å¾kopÃ¡dnÄ™jÅ¡Ã­. MusÃ­Å¡ bojovat obezÃ¢etnÄ™ - pÃ¢i zÃ¡sahu vÅ¡ak zpÅ¯sobÃ­Å¡ mnohem vÄ™tÅ¡Ã­ zranÄ™nÃ­.
 };
 
 // *************************************************
@@ -199,7 +199,7 @@ instance DIA_Wulfgar_HowToBegin	(C_INFO)
 	condition	 = 	DIA_Wulfgar_HowToBegin_Condition;
 	information	 = 	DIA_Wulfgar_HowToBegin_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"U èeho mám zaèít? U jednoruèních, nebo obouruèních zbraní?";
+	description	 = 	"U Äeho mÃ¡m zaÄÃ­t? U jednoruÄnÃ­ch, nebo obouruÄnÃ­ch zbranÃ­?";
 };
 
 func int DIA_Wulfgar_HowToBegin_Condition ()
@@ -213,13 +213,13 @@ func int DIA_Wulfgar_HowToBegin_Condition ()
 
 func void DIA_Wulfgar_HowToBegin_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_HowToBegin_15_00"); //U èeho mám zaèít? U jednoruèních, nebo obouruèních zbraní?
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_01"); //To je jen a pouze na tobê.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_02"); //Pokud se zamêâíš jen na jeden typ zbraní, budeš se zároveà uèit i ten druhı.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //Jestlie jsi napâíklad dobrı v boji s jednoruèními meèi, ale jsi stále zaèáteèník v boji s obouruèními zbranêmi...
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...tvé dovednosti s obouruèními zbranêmi se zvıší, i kdy trénuješ s jednoruèní zbraní.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //V takovém pâípadê je vıcvik nároènêjší, ne kdy se uèíš s obêma typy zbraní.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_06"); //Zaènême a brzy sám zjistíš, o èem to mluvím.
+	AI_Output (other, self, "DIA_Wulfgar_HowToBegin_15_00"); //U Äeho mÃ¡m zaÄÃ­t? U jednoruÄnÃ­ch, nebo obouruÄnÃ­ch zbranÃ­?
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_01"); //To je jen a pouze na tobÄ™.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_02"); //Pokud se zamÄ™Ã¢Ã­Å¡ jen na jeden typ zbranÃ­, budeÅ¡ se zÃ¡roveÅ• uÄit i ten druhÃ½.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //JestliÅ¾e jsi napÃ¢Ã­klad dobrÃ½ v boji s jednoruÄnÃ­mi meÄi, ale jsi stÃ¡le zaÄÃ¡teÄnÃ­k v boji s obouruÄnÃ­mi zbranÄ™mi...
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...tvÃ© dovednosti s obouruÄnÃ­mi zbranÄ™mi se zvÃ½Å¡Ã­, i kdyÅ¾ trÃ©nujeÅ¡ s jednoruÄnÃ­ zbranÃ­.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //V takovÃ©m pÃ¢Ã­padÄ™ je vÃ½cvik nÃ¡roÄnÄ™jÅ¡Ã­, neÅ¾ kdyÅ¾ se uÄÃ­Å¡ s obÄ™ma typy zbranÃ­.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_06"); //ZaÄnÄ™me a brzy sÃ¡m zjistÃ­Å¡, o Äem to mluvÃ­m.
 };
 
 // *************************************************
@@ -232,7 +232,7 @@ INSTANCE DIA_Wulfgar_Teach(C_INFO)
 	condition	= DIA_Wulfgar_Teach_Condition;
 	information	= DIA_Wulfgar_Teach_Info;
 	permanent	= TRUE;
-	description = "Zaènême s vıcvikem.";
+	description = "ZaÄnÄ™me s vÃ½cvikem.";
 };                       
 
 FUNC INT DIA_Wulfgar_Teach_Condition()
@@ -246,18 +246,18 @@ FUNC INT DIA_Wulfgar_Teach_Condition()
  
 FUNC VOID DIA_Wulfgar_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Wulfgar_Teach_15_00"); //Zaènême s vıcvikem.
+	AI_Output (other,self ,"DIA_Wulfgar_Teach_15_00"); //ZaÄnÄ™me s vÃ½cvikem.
 	
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Wulfgar_Add_04_00"); //oldáky necvièím!
+		AI_Output (self, other, "DIA_Wulfgar_Add_04_00"); //Å½oldÃ¡ky necviÄÃ­m!
 	}
 	else
 	{
 		if (other.guild == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Wulfgar_Add_04_01"); //Jistê, ctihodnosti.
+			AI_Output (self, other, "DIA_Wulfgar_Add_04_01"); //JistÄ™, ctihodnosti.
 		};
 		
 		Info_ClearChoices 	(DIA_Wulfgar_Teach);
@@ -348,11 +348,11 @@ FUNC INT DIA_Wulfgar_AlsMil_Condition()
  
 FUNC VOID DIA_Wulfgar_AlsMil_Info()
 {	
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //Take tê lord Andre pâijal!
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //Pâedpokládám, e sem budeš chodit cvièit pravidelnê.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Ruga tê bude uèit v umêní stâelby z kuše a Mortis ti pomùe zvıšit sílu.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Ale nejdùleitêjší pro tebe je poâádnê se nauèit zacházet s meèem.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //Ještê z tebe udêlám dobrého bijce!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //TakÅ¾e tÄ™ lord Andre pÃ¢ijal!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //PÃ¢edpoklÃ¡dÃ¡m, Å¾e sem budeÅ¡ chodit cviÄit pravidelnÄ™.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Ruga tÄ™ bude uÄit v umÄ™nÃ­ stÃ¢elby z kuÅ¡e a Mortis ti pomÅ¯Å¾e zvÃ½Å¡it sÃ­lu.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Ale nejdÅ¯leÅ¾itÄ™jÅ¡Ã­ pro tebe je poÃ¢Ã¡dnÄ™ se nauÄit zachÃ¡zet s meÄem.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //JeÅ¡tÄ™ z tebe udÄ™lÃ¡m dobrÃ©ho bijce!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -378,9 +378,9 @@ func int DIA_Wulfgar_Bonus_Condition ()
 };
 func void DIA_Wulfgar_Bonus_Info ()
 {
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //Tak brzy a ji na nohou? V tuhle denní dobu tady bıvám vêtšinou sám. Ale kdy u jsi tady, mùeš se nêèemu pâiuèit.
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //Tak dávej pozor. Nêkteré protivníky mùeš zmást, kdy se jejich úderùm vyhneš a pak v pravou chvíli udeâíš.
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //Pamatuj na to ve svém pâíštím boji!
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //Tak brzy a jiÅ¾ na nohou? V tuhle dennÃ­ dobu tady bÃ½vÃ¡m vÄ™tÅ¡inou sÃ¡m. Ale kdyÅ¾ uÅ¾ jsi tady, mÅ¯Å¾eÅ¡ se nÄ™Äemu pÃ¢iuÄit.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //Tak dÃ¡vej pozor. NÄ™kterÃ© protivnÃ­ky mÅ¯Å¾eÅ¡ zmÃ¡st, kdyÅ¾ se jejich ÃºderÅ¯m vyhneÅ¡ a pak v pravou chvÃ­li udeÃ¢Ã­Å¡.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //Pamatuj na to ve svÃ©m pÃ¢Ã­Å¡tÃ­m boji!
 	
 	B_RaiseFightTalent (other, NPC_TALENT_1H, 2);
 };

@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_16_JOIN(C_INFO)
 	condition	= DIA_BAU_16_JOIN_Condition;
 	information	= DIA_BAU_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "PovÍz mi vÌc o tÍch ûoldnÈ‚Ìch!";
+	description = "Povƒôz mi v√≠c o tƒôch ≈æoldn√©√¢√≠ch!";
 };                       
 
 FUNC INT DIA_BAU_16_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //¬ekni mi vÌc o tÍch ûoldnÈ‚Ìch!
-	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //CelÈ dny se poflakujÌ kolem farmy, ml·tÍj se mezi sebou jen tak, aby si zkr·tili dlouhou chvÌli, a myslej si, jak· je to sranda.
+	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //√Çekni mi v√≠c o tƒôch ≈æoldn√©√¢√≠ch!
+	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //Cel√© dny se poflakuj√≠ kolem farmy, ml√°tƒôj se mezi sebou jen tak, aby si zkr√°tili dlouhou chv√≠li, a myslej si, jak√° je to sranda.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_BAU_16_PEOPLE(C_INFO)
 	condition	= DIA_BAU_16_PEOPLE_Condition;
 	information	= DIA_BAU_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tady tomu velÌ?";
+	description = "Kdo tady tomu vel√≠?";
 };                       
 
 FUNC INT DIA_BAU_16_PEOPLE_Condition()
@@ -65,9 +65,9 @@ FUNC INT DIA_BAU_16_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_16_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //Kdo tady tomu velÌ?
-	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //Kdyû se na to pt·ö, tak ûold·ci.
-	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_02"); //Onar je sice platÌ, ale vÍtöina z nich si dÍl·, co se jim zachce.
+	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //Kdo tady tomu vel√≠?
+	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //Kdy≈æ se na to pt√°≈°, tak ≈æold√°ci.
+	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_02"); //Onar je sice plat√≠, ale vƒôt≈°ina z nich si dƒôl√°, co se jim zachce.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_BAU_16_LOCATION(C_INFO)
 	condition	= DIA_BAU_16_LOCATION_Condition;
 	information	= DIA_BAU_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co mi m˘ûeö ‚Ìct o tomhle mÌstÍ?";
+	description = "Co mi m≈Ø≈æe≈° √¢√≠ct o tomhle m√≠stƒô?";
 };                       
 
 FUNC INT DIA_BAU_16_LOCATION_Condition()
@@ -89,9 +89,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Co mi m˘ûeö ‚Ìct o tomhle mÌstÍ?
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //Jsou tu t‚i farmy. Onarova na v˝chodÍ a Sekobova na severnÌm konci ˙dolÌ.
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //Po cestÍ se dostaneö na n·hornÌ planinu na jihov˝chodÍ. Tam je Bengarova farma.
+	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Co mi m≈Ø≈æe≈° √¢√≠ct o tomhle m√≠stƒô?
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //Jsou tu t√¢i farmy. Onarova na v√Ωchodƒô a Sekobova na severn√≠m konci √∫dol√≠.
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //Po cestƒô se dostane≈° na n√°horn√≠ planinu na jihov√Ωchodƒô. Tam je Bengarova farma.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_BAU_16_STANDARD(C_INFO)
 	condition	= DIA_BAU_16_STANDARD_Condition;
 	information	= DIA_BAU_16_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je novÈho?";
+	description = "Co je nov√©ho?";
 };                       
 func INT DIA_BAU_16_STANDARD_Condition()
 {
@@ -111,31 +111,31 @@ func INT DIA_BAU_16_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_16_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Co je novÈho?
+	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Co je nov√©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Voj·ci z mÍsta uû n·m nebudou odv·dÍt n·ö dobytek a br·t ˙rodu! TeÎ, kdyû uû se m˘ûeme br·nit, nÍjak ztratili z·jem!
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Voj√°ci z mƒôsta u≈æ n√°m nebudou odv√°dƒôt n√°≈° dobytek a br√°t √∫rodu! Te√´, kdy≈æ u≈æ se m≈Ø≈æeme br√°nit, nƒôjak ztratili z√°jem!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //¬Ìk· se, ûe se v HornickÈm ˙dolÌ shromaûÎuje ob‚Ì arm·da. Za chvÌli tady budou.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //√Ç√≠k√° se, ≈æe se v Hornick√©m √∫dol√≠ shroma≈æ√´uje ob√¢√≠ arm√°da. Za chv√≠li tady budou.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //Zaslechl jsem nÍjakÈ zvÍsti o tom, ûe jsou v HornickÈm ˙dolÌ draci. StÍûÌ tomu m˘ûu uvÍ‚it.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //Zaslechl jsem nƒôjak√© zvƒôsti o tom, ≈æe jsou v Hornick√©m √∫dol√≠ draci. Stƒô≈æ√≠ tomu m≈Ø≈æu uvƒô√¢it.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_04"); //NÍkte‚Ì ûe ûoldnÈ‚˘ zmizeli. NevÌm, jestli to m·m povaûovat ze dobrou, nebo öpatnou vÍc.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_04"); //Nƒôkte√¢√≠ ≈æe ≈æoldn√©√¢≈Ø zmizeli. Nev√≠m, jestli to m√°m pova≈æovat ze dobrou, nebo ≈°patnou vƒôc.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //PaladinovÈ na taûenÌ do HornickÈho ˙dolÌ - co to vöechno m· znamenat?
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //Paladinov√© na ta≈æen√≠ do Hornick√©ho √∫dol√≠ - co to v≈°echno m√° znamenat?
 	};
 };
 

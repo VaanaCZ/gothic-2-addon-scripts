@@ -58,8 +58,8 @@ func int DIA_Mil_325_Miliz_FirstWarn_Condition()
 
 func void DIA_Mil_325_Miliz_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_00"); //ST¡T!
-	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_01"); //Do skladiötÍ nesmÌ nikdo vstoupit.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_00"); //ST√ÅT!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_01"); //Do skladi≈°tƒô nesm√≠ nikdo vstoupit.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -92,7 +92,7 @@ FUNC INT DIA_Mil_325_Miliz_SecondWarn_Condition()
 
 func void DIA_Mil_325_Miliz_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //Jsi snad hluch˝? JeötÍ jeden krok a nadÍl·m z tebe sekanou!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //Jsi snad hluch√Ω? Je≈°tƒô jeden krok a nadƒôl√°m z tebe sekanou!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -148,7 +148,7 @@ INSTANCE DIA_Mil_325_Miliz_Pass (C_INFO)
 	condition	= DIA_Mil_325_Miliz_Pass_Condition;
 	information	= DIA_Mil_325_Miliz_Pass_Info;
 	permanent	= FALSE;
-	description	= "Pat‚Ìm ke kr·lovskÈ arm·dÍ. Chci si vyzvednout v˝stroj!";
+	description	= "Pat√¢√≠m ke kr√°lovsk√© arm√°dƒô. Chci si vyzvednout v√Ωstroj!";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
@@ -162,18 +162,18 @@ FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
 	
 func void DIA_Mil_325_Miliz_Pass_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //Pat‚Ìm ke kr·lovskÈ arm·dÍ. Chci si vyzvednout v˝stroj!
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //A m·ö k tomu p‚Ìkaz?
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //Pat√¢√≠m ke kr√°lovsk√© arm√°dƒô. Chci si vyzvednout v√Ωstroj!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //A m√°≈° k tomu p√¢√≠kaz?
 	
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "Ne.", DIA_Mil_325_Miliz_Pass_No);
-	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "JasnÍ.", DIA_Mil_325_Miliz_Pass_Yes);
+	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "Jasnƒô.", DIA_Mil_325_Miliz_Pass_Yes);
 };
 
 func void DIA_Mil_325_Miliz_Pass_Yes()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_Yes_15_00"); //JasnÍ.
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_Yes_12_01"); //Dobr·, m˘ûeö dovnit‚!
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_Yes_15_00"); //Jasnƒô.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_Yes_12_01"); //Dobr√°, m≈Ø≈æe≈° dovnit√¢!
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	AI_StopProcessInfos (self);
@@ -199,7 +199,7 @@ INSTANCE DIA_Mil_325_Miliz_PERM (C_INFO)
 	condition	= DIA_Mil_325_Miliz_PERM_Condition;
 	information	= DIA_Mil_325_Miliz_PERM_Info;
 	permanent	= TRUE;
-	description	= "ProË do skladiötÍ nikdo nesmÌ?";
+	description	= "Proƒç do skladi≈°tƒô nikdo nesm√≠?";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
@@ -209,8 +209,8 @@ FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
 	
 func void DIA_Mil_325_Miliz_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //ProË do skladiötÍ nikdo nesmÌ?
-	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //Ctihodn˝ lord Hagen zabavil zboûÌ ve prospÍch kr·lovskÈ arm·dy.
+	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //Proƒç do skladi≈°tƒô nikdo nesm√≠?
+	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //Ctihodn√Ω lord Hagen zabavil zbo≈æ√≠ ve prospƒôch kr√°lovsk√© arm√°dy.
 };
 
 

@@ -81,12 +81,12 @@ FUNC VOID DIA_Nagur_Hallo_Info()
 {
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Nagur_Hallo_08_00");//Hej, nemám èas tady s tebou klábosit. Jestli chceš nêjaké informace, promluv si s Kardifem.
+		AI_Output (self, other, "DIA_Nagur_Hallo_08_00");//Hej, nemÃ¡m Äas tady s tebou klÃ¡bosit. Jestli chceÅ¡ nÄ™jakÃ© informace, promluv si s Kardifem.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Nagur_Hallo_08_01");//Hele, chlape, prostê mê nech na pokoji, dobrá?
+		AI_Output (self, other, "DIA_Nagur_Hallo_08_01");//Hele, chlape, prostÄ™ mÄ™ nech na pokoji, dobrÃ¡?
 		AI_StopProcessInfos (self);
 	};
 };
@@ -106,11 +106,11 @@ FUNC VOID DIA_Nagur_Hallo_Info()
 		&& (Hlp_IsItem (heroArmor, ItAr_KDF_L) == FALSE)
 		&& (Hlp_IsItem (heroArmor, ItAr_KDF_H) == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Nagur_Add_08_02"); //Nemám dojem, e bych tê nepoznal jen proto, e máš jinı hadry!
+			AI_Output (self ,other,"DIA_Nagur_Add_08_02"); //NemÃ¡m dojem, Å¾e bych tÄ™ nepoznal jen proto, Å¾e mÃ¡Å¡ jinÃ½ hadry!
 		};
 		
-		AI_Output (self ,other,"DIA_Nagur_Add_08_03"); //(spiklenecky) Ty rád strkáš nos do vêcí, do kterıch ti nic není, co?!
-		AI_Output (self ,other,"DIA_Nagur_Add_08_04"); //Ztraã se!
+		AI_Output (self ,other,"DIA_Nagur_Add_08_03"); //(spiklenecky) Ty rÃ¡d strkÃ¡Å¡ nos do vÄ™cÃ­, do kterÃ½ch ti nic nenÃ­, co?!
+		AI_Output (self ,other,"DIA_Nagur_Add_08_04"); //ZtraÄƒ se!
 		
 		MIS_Nagur_Bote = LOG_SUCCESS; //HACK: Attila kommt bei 3* Success oder 1* suckt --> nur noch die anderen beiden Missionen sind Trigger
 		NagurHack = TRUE;
@@ -124,7 +124,7 @@ INSTANCE DIA_Nagur_Job   (C_INFO)
 	condition   = DIA_Nagur_Job_Condition;
 	information = DIA_Nagur_Job_Info;
 	permanent   = FALSE;
-	description = "Kardif âíkal, e pro mê moná budeš mít nêjakou práci.";
+	description = "Kardif Ã¢Ã­kal, Å¾e pro mÄ™ moÅ¾nÃ¡ budeÅ¡ mÃ­t nÄ™jakou prÃ¡ci.";
 };
 FUNC INT DIA_Nagur_Job_Condition()
 {	
@@ -135,42 +135,42 @@ FUNC INT DIA_Nagur_Job_Condition()
 };
 FUNC VOID DIA_Nagur_Job_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Job_15_00");//Kardif âíkal, e pro mê moná budeš mít nêjakou práci.
+	AI_Output (other, self, "DIA_Nagur_Job_15_00");//Kardif Ã¢Ã­kal, Å¾e pro mÄ™ moÅ¾nÃ¡ budeÅ¡ mÃ­t nÄ™jakou prÃ¡ci.
 	if (other.guild == GIL_NOV)
 	|| (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Nagur_Add_08_00"); //Tady v pâístavu není pro klášterní panáky na práci vùbec nic (smích).
+		AI_Output (self ,other,"DIA_Nagur_Add_08_00"); //Tady v pÃ¢Ã­stavu nenÃ­ pro klÃ¡Å¡ternÃ­ panÃ¡ky na prÃ¡ci vÅ¯bec nic (smÃ­ch).
 		B_Nagur_Abfertigen();
 	}
 	else if (other.guild == GIL_MIL)
 	|| 		(other.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Nagur_Add_08_01"); //Tady v pâístavu není pro královské vojáky na práci vùbec nic.
+		AI_Output (self ,other,"DIA_Nagur_Add_08_01"); //Tady v pÃ¢Ã­stavu nenÃ­ pro krÃ¡lovskÃ© vojÃ¡ky na prÃ¡ci vÅ¯bec nic.
 		B_Nagur_Abfertigen();
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Nagur_Job_08_01");//(zkoumavê) Dobrá, dobrá, tak ty se poohlííš po nêjaké speciální prácièce. Ale hraje se podle mejch pravidel, jasnı?
-		AI_Output (other, self, "DIA_Nagur_Job_15_02");//Co to znamená?
-		AI_Output (self, other, "DIA_Nagur_Job_08_03");//To znamená to, e udêláš, co ti âeknu, a dostaneš tâetinu zisku.
-		AI_Output (self, other, "DIA_Nagur_Job_08_04");//Jestli se ti to nelíbí, nic pro tebe nemám.
+		AI_Output (self, other, "DIA_Nagur_Job_08_01");//(zkoumavÄ™) DobrÃ¡, dobrÃ¡, tak ty se poohlÃ­Å¾Ã­Å¡ po nÄ™jakÃ© speciÃ¡lnÃ­ prÃ¡ciÄce. Ale hraje se podle mejch pravidel, jasnÃ½?
+		AI_Output (other, self, "DIA_Nagur_Job_15_02");//Co to znamenÃ¡?
+		AI_Output (self, other, "DIA_Nagur_Job_08_03");//To znamenÃ¡ to, Å¾e udÄ™lÃ¡Å¡, co ti Ã¢eknu, a dostaneÅ¡ tÃ¢etinu zisku.
+		AI_Output (self, other, "DIA_Nagur_Job_08_04");//Jestli se ti to nelÃ­bÃ­, nic pro tebe nemÃ¡m.
 	
 		Info_ClearChoices (DIA_Nagur_Job);
-		Info_AddChoice  (DIA_Nagur_Job,"Jsme obchodní partneâi, take hezky fifty-fifty. ",DIA_Nagur_Job_Halbe);
-		Info_AddChoice  (DIA_Nagur_Job,"Dobrá, ty jsi šéf.",DIA_Nagur_Job_Klar);
+		Info_AddChoice  (DIA_Nagur_Job,"Jsme obchodnÃ­ partneÃ¢i, takÅ¾e hezky fifty-fifty. ",DIA_Nagur_Job_Halbe);
+		Info_AddChoice  (DIA_Nagur_Job,"DobrÃ¡, ty jsi Å¡Ã©f.",DIA_Nagur_Job_Klar);
 	};
 };
 FUNC VOID DIA_Nagur_Job_Klar()
 {
-	AI_Output (other, self, "DIA_Nagur_Job_Klar_15_00");//Dobrá, ty jsi šéf.
-	AI_Output (self, other, "DIA_Nagur_Job_Klar_08_01");//Fajn, dej mi vêdêt, a budeš pâipravenej na nahrabání hromady penêz.
+	AI_Output (other, self, "DIA_Nagur_Job_Klar_15_00");//DobrÃ¡, ty jsi Å¡Ã©f.
+	AI_Output (self, other, "DIA_Nagur_Job_Klar_08_01");//Fajn, dej mi vÄ™dÄ™t, aÅ¾ budeÅ¡ pÃ¢ipravenej na nahrabÃ¡nÃ­ hromady penÄ™z.
 	Nagur_Deal = 80;
 	Info_ClearChoices (DIA_Nagur_Job);
 };
 FUNC VOID DIA_Nagur_Job_Halbe()
 {
-	AI_Output (other, self, "DIA_Nagur_Job_Halbe_15_00");//Jsme parãáci, take fifty-fifty.
-	AI_Output (self, other, "DIA_Nagur_Job_Halbe_08_01");//Jo, jasnê, stejnê jsem si myslel, e to tak bude. Samozâejmê e se spravedlivê rozdêlíme.
+	AI_Output (other, self, "DIA_Nagur_Job_Halbe_15_00");//Jsme parÄƒÃ¡ci, takÅ¾e fifty-fifty.
+	AI_Output (self, other, "DIA_Nagur_Job_Halbe_08_01");//Jo, jasnÄ™, stejnÄ™ jsem si myslel, Å¾e to tak bude. SamozÃ¢ejmÄ™ Å¾e se spravedlivÄ™ rozdÄ™lÃ­me.
 	Nagur_Deal = 120;
 	Info_ClearChoices (DIA_Nagur_Job);
 };
@@ -184,7 +184,7 @@ INSTANCE DIA_Nagur_Auftrag   (C_INFO)
 	condition   = DIA_Nagur_Auftrag_Condition;
 	information = DIA_Nagur_Auftrag_Info;
 	permanent   = FALSE;
-	description = "Fajn, jakej je plán?";
+	description = "Fajn, jakej je plÃ¡n?";
 };
 
 FUNC INT DIA_Nagur_Auftrag_Condition()
@@ -197,18 +197,18 @@ FUNC INT DIA_Nagur_Auftrag_Condition()
 };
 FUNC VOID DIA_Nagur_Auftrag_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_15_00");//Fajn, jakej je plán?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_01");//Znáš obchodníka Baltrama, ne? Jestli ne, tak je naèase si s ním promluvit.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_02");//Ten Baltram má poslíèka, kterej ho zásobuje zboím z Akilovy farmy.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_03");//Teda, MÊL poslíèka, dokud jsem ho nepodâíz. A teë si Baltram shání nového. A tím budeš ty.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_04");//Necháš se Baltramem najmout a vezmeš tu dodávku od Akila.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_05");//Pâineseš mi ji a já ji pak prodám jednomu zajímavımu zákazníkovi. Dá nám za to poâádnou sumièku zlata.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_06");//A nepokoušej se to prodat sám. Je ti všechno jasnı?
+	AI_Output (other, self, "DIA_Nagur_Auftrag_15_00");//Fajn, jakej je plÃ¡n?
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_01");//ZnÃ¡Å¡ obchodnÃ­ka Baltrama, ne? Jestli ne, tak je naÄase si s nÃ­m promluvit.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_02");//Ten Baltram mÃ¡ poslÃ­Äka, kterej ho zÃ¡sobuje zboÅ¾Ã­m z Akilovy farmy.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_03");//Teda, MÄ˜L poslÃ­Äka, dokud jsem ho nepodÃ¢Ã­z. A teÃ« si Baltram shÃ¡nÃ­ novÃ©ho. A tÃ­m budeÅ¡ ty.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_04");//NechÃ¡Å¡ se Baltramem najmout a vezmeÅ¡ tu dodÃ¡vku od Akila.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_05");//PÃ¢ineseÅ¡ mi ji a jÃ¡ ji pak prodÃ¡m jednomu zajÃ­mavÃ½mu zÃ¡kaznÃ­kovi. DÃ¡ nÃ¡m za to poÃ¢Ã¡dnou sumiÄku zlata.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_06");//A nepokouÅ¡ej se to prodat sÃ¡m. Je ti vÅ¡echno jasnÃ½?
 	
 	Info_ClearChoices (DIA_Nagur_Auftrag);
-	Info_AddChoice    (DIA_Nagur_Auftrag,"Tak dobrá, jdeme na to. (KONEC)",DIA_Nagur_Auftrag_Okay);
+	Info_AddChoice    (DIA_Nagur_Auftrag,"Tak dobrÃ¡, jdeme na to. (KONEC)",DIA_Nagur_Auftrag_Okay);
 	Info_AddChoice    (DIA_Nagur_Auftrag,"Kde najdu Baltrama?",DIA_Nagur_Auftrag_Baltram);
-	Info_AddChoice    (DIA_Nagur_Auftrag,"Kdy si mám s Baltramem promluvit?",DIA_Nagur_Auftrag_Wann);
+	Info_AddChoice    (DIA_Nagur_Auftrag,"Kdy si mÃ¡m s Baltramem promluvit?",DIA_Nagur_Auftrag_Wann);
 	Info_AddChoice    (DIA_Nagur_Auftrag,"Kde je Akilova farma?",DIA_Nagur_Auftrag_Akil);
 	Info_AddChoice    (DIA_Nagur_Auftrag,"A kolik mi to vynese?",DIA_Nagur_Auftrag_Gewinn);
 
@@ -216,34 +216,34 @@ FUNC VOID DIA_Nagur_Auftrag_Info()
 FUNC VOID DIA_Nagur_Auftrag_Akil()
 {
 	AI_Output (other, self, "DIA_Nagur_Auftrag_Akil_15_00");//Kde je Akilova farma?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_01");//Opustíš mêsto vıchodní branou. Je to ta pâímo u trištê.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_02");//Kdy pùjdeš po cestê napravo, brzo narazíš na nêkolik stupàù vytesanıch do skály.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_03");//Vyjdi po nich a narazíš na Akilovu farmu.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_01");//OpustÃ­Å¡ mÄ™sto vÃ½chodnÃ­ branou. Je to ta pÃ¢Ã­mo u trÅ¾iÅ¡tÄ™.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_02");//KdyÅ¾ pÅ¯jdeÅ¡ po cestÄ™ napravo, brzo narazÃ­Å¡ na nÄ™kolik stupÅ•Å¯ vytesanÃ½ch do skÃ¡ly.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_03");//Vyjdi po nich a narazÃ­Å¡ na Akilovu farmu.
 };
 FUNC VOID DIA_Nagur_Auftrag_Gewinn()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_Gewinn_15_00");//Kolik nám z toho kouká?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Gewinn_08_01");//Pâesnê têko âíct. Ale tak kolem 400 zlatıch.
+	AI_Output (other, self, "DIA_Nagur_Auftrag_Gewinn_15_00");//Kolik nÃ¡m z toho koukÃ¡?
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Gewinn_08_01");//PÃ¢esnÄ™ tÄ™Å¾ko Ã¢Ã­ct. Ale tak kolem 400 zlatÃ½ch.
 };
 FUNC VOID DIA_Nagur_Auftrag_Baltram()
 {
 	AI_Output (other, self, "DIA_Nagur_Auftrag_Baltram_15_00");//Kde najdu Baltrama?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Baltram_08_01");//Má svùj stánek na trišti.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Baltram_08_01");//MÃ¡ svÅ¯j stÃ¡nek na trÅ¾iÅ¡ti.
 };
 FUNC VOID DIA_Nagur_Auftrag_Wann()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_Wann_15_00");//Kdy si mám s Baltramem promluvit?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Wann_08_01");//Mùeš jít hned teë. U by mêl vêdêt, e se jeho poslíèek u nikdy neukáe. (sprostı smích)
+	AI_Output (other, self, "DIA_Nagur_Auftrag_Wann_15_00");//Kdy si mÃ¡m s Baltramem promluvit?
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Wann_08_01");//MÅ¯Å¾eÅ¡ jÃ­t hned teÃ«. UÅ¾ by mÄ™l vÄ™dÄ™t, Å¾e se jeho poslÃ­Äek uÅ¾ nikdy neukÃ¡Å¾e. (sprostÃ½ smÃ­ch)
 };
 FUNC VOID DIA_Nagur_Auftrag_Okay()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_Okay_15_00");//Tak teda dobrá, jdu na to.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Okay_08_01");//Fajn, tak jdi - ale jestli se mê pokusíš podvést, budeš úplnê stejnê mrtvej jako ten poslíèek! Nezapomeà na to!
+	AI_Output (other, self, "DIA_Nagur_Auftrag_Okay_15_00");//Tak teda dobrÃ¡, jdu na to.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Okay_08_01");//Fajn, tak jdi - ale jestli se mÄ™ pokusÃ­Å¡ podvÃ©st, budeÅ¡ ÃºplnÄ™ stejnÄ™ mrtvej jako ten poslÃ­Äek! NezapomeÅ• na to!
 	MIS_Nagur_Bote = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Nagur,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Nagur,LOG_RUNNING);
-	B_LogEntry (TOPIC_Nagur,"Musím Baltrama pâimêt, aby mê pâijal jako nového poslíèka. Pak musím pâebrat zásilku od farmáâe Akila a pâedat ji Nagurovi.");
+	B_LogEntry (TOPIC_Nagur,"MusÃ­m Baltrama pÃ¢imÄ™t, aby mÄ™ pÃ¢ijal jako novÃ©ho poslÃ­Äka. Pak musÃ­m pÃ¢ebrat zÃ¡silku od farmÃ¡Ã¢e Akila a pÃ¢edat ji Nagurovi.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -257,7 +257,7 @@ INSTANCE DIA_Nagur_Success   (C_INFO)
 	condition   = DIA_Nagur_Success_Condition;
 	information = DIA_Nagur_Success_Info;
 	permanent   = FALSE;
-	description = "Pâinesl jsem ten balík.";
+	description = "PÃ¢inesl jsem ten balÃ­k.";
 };
 
 FUNC INT DIA_Nagur_Success_Condition()
@@ -271,10 +271,10 @@ FUNC INT DIA_Nagur_Success_Condition()
 };
 FUNC VOID DIA_Nagur_Success_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Success_15_00");//Pâinesl jsem ten balík.
-	AI_Output (self, other, "DIA_Nagur_Success_08_01");//Dobrá práce. Zkusím to prodat. Vraã se zítra.
+	AI_Output (other, self, "DIA_Nagur_Success_15_00");//PÃ¢inesl jsem ten balÃ­k.
+	AI_Output (self, other, "DIA_Nagur_Success_08_01");//DobrÃ¡ prÃ¡ce. ZkusÃ­m to prodat. VraÄƒ se zÃ­tra.
 	
-	B_LogEntry (TOPIC_Nagur,   "Nagur pâijal zásilku. Zaplatí mi zítra.");
+	B_LogEntry (TOPIC_Nagur,   "Nagur pÃ¢ijal zÃ¡silku. ZaplatÃ­ mi zÃ­tra.");
 	
 	AI_StopProcessInfos (self);
 	
@@ -294,7 +294,7 @@ INSTANCE DIA_Nagur_Deal   (C_INFO)
 	condition   = DIA_Nagur_Deal_Condition;
 	information = DIA_Nagur_Deal_Info;
 	permanent   = TRUE;
-	description = "Prodal jsi teda to zboí?";
+	description = "Prodal jsi teda to zboÅ¾Ã­?";
 };
 //---------------------------------
 var int DIA_Nagur_Deal_permanent; 
@@ -311,16 +311,16 @@ FUNC INT DIA_Nagur_Deal_Condition()
 };
 FUNC VOID DIA_Nagur_Deal_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Deal_15_00");//Prodal jsi teda to zboí?
+	AI_Output (other, self, "DIA_Nagur_Deal_15_00");//Prodal jsi teda to zboÅ¾Ã­?
 	
 	if (B_GetDayPlus() > NagurDay) 
 	{
-		AI_Output (self, other, "DIA_Nagur_Deal_08_01");//Jo, ale za míà, ne jsem myslel. Dostal jsem jen 300 zlatıch.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_02");//Kus z toho je pro moje zamêstnance.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_03");//A Kardif dostane svùj obvyklı podíl - plus zlato na tvoji provizi.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_04");//Co nakonec dêlá 240 zlatıch. Rozdêlíme si to, jak jsme se dohodli. Tady je tvùj díl.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_05");//Odvedl jsi dobrou práci. Nechal jsem na to svıch zamêstnancích.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_06");//Co se na tom vydêlá, u nijak neovlivním.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_01");//Jo, ale za mÃ­Å•, neÅ¾ jsem myslel. Dostal jsem jen 300 zlatÃ½ch.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_02");//Kus z toho je pro moje zamÄ™stnance.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_03");//A Kardif dostane svÅ¯j obvyklÃ½ podÃ­l - plus zlato na tvoji provizi.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_04");//CoÅ¾ nakonec dÄ™lÃ¡ 240 zlatÃ½ch. RozdÄ™lÃ­me si to, jak jsme se dohodli. Tady je tvÅ¯j dÃ­l.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_05");//Odvedl jsi dobrou prÃ¡ci. Nechal jsem na to svÃ½ch zamÄ™stnancÃ­ch.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_06");//Co se na tom vydÄ™lÃ¡, uÅ¾ nijak neovlivnÃ­m.
 		
 		B_GiveInvItems (self,other,ItMi_Gold,Nagur_Deal);
 		MIS_Nagur_Bote = LOG_SUCCESS;
@@ -332,7 +332,7 @@ FUNC VOID DIA_Nagur_Deal_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Nagur_Deal_08_07");//Ne, ještê ne. Tahle vêc chce svùj èas. Chci po tom všem dostat dobrou cenu.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_07");//Ne, jeÅ¡tÄ™ ne. Tahle vÄ™c chce svÅ¯j Äas. Chci po tom vÅ¡em dostat dobrou cenu.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -345,7 +345,7 @@ INSTANCE DIA_Nagur_Auftraggeber   (C_INFO)
 	condition   = DIA_Nagur_Auftraggeber_Condition;
 	information = DIA_Nagur_Auftraggeber_Info;
 	permanent   = FALSE;
-	description = "Kdo jsou tvı zamêstnanci?";
+	description = "Kdo jsou tvÃ½ zamÄ™stnanci?";
 };
 
 FUNC INT DIA_Nagur_Auftraggeber_Condition()
@@ -357,8 +357,8 @@ FUNC INT DIA_Nagur_Auftraggeber_Condition()
 };
 FUNC VOID DIA_Nagur_Auftraggeber_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftraggeber_15_00");//Kdo jsou tví zamêstnanci?
-	AI_Output (self, other, "DIA_Nagur_Auftraggeber_08_01");//Vánê si nemyslíš, e ti to âeknu, e ne?
+	AI_Output (other, self, "DIA_Nagur_Auftraggeber_15_00");//Kdo jsou tvÃ­ zamÄ™stnanci?
+	AI_Output (self, other, "DIA_Nagur_Auftraggeber_08_01");//VÃ¡Å¾nÄ™ si nemyslÃ­Å¡, Å¾e ti to Ã¢eknu, Å¾e ne?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info erneutes ansprechen
@@ -385,7 +385,7 @@ FUNC INT DIA_Nagur_Fazit_Condition()
 };
 FUNC VOID DIA_Nagur_Fazit_Info()
 {	
-	AI_Output (self, other, "DIA_Nagur_Fazit_08_00");//Ten kšeft dopadnul dobâe, ale o svıch lidech nemluvím. Take klídek.
+	AI_Output (self, other, "DIA_Nagur_Fazit_08_00");//Ten kÅ¡eft dopadnul dobÃ¢e, ale o svÃ½ch lidech nemluvÃ­m. TakÅ¾e klÃ­dek.
 	AI_StopProcessInfos  (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -412,7 +412,7 @@ FUNC INT DIA_Nagur_Knast_Condition()
 };
 FUNC VOID DIA_Nagur_Knast_Info()
 {	
-	AI_Output (self, other, "DIA_Nagur_Knast_08_00");//Podvedl jsi mê! To byla velká chyba - jdi do hajzlu!
+	AI_Output (self, other, "DIA_Nagur_Knast_08_00");//Podvedl jsi mÄ™! To byla velkÃ¡ chyba - jdi do hajzlu!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -425,7 +425,7 @@ INSTANCE DIA_Nagur_Sign   (C_INFO)
 	condition   = DIA_Nagur_Sign_Condition;
 	information = DIA_Nagur_Sign_Info;
 	permanent   = FALSE;
-	description	= "(Pâedvést zlodêjskı signál.)";
+	description	= "(PÃ¢edvÃ©st zlodÄ™jskÃ½ signÃ¡l.)";
 };
 
 FUNC INT DIA_Nagur_Sign_Condition()
@@ -439,8 +439,8 @@ FUNC INT DIA_Nagur_Sign_Condition()
 FUNC VOID DIA_Nagur_Sign_Info()
 {	
 	AI_PlayAni (other,"T_YES");
-	AI_Output (self, other, "DIA_Nagur_Sign_08_00");//Dokázals to. Teë víš, kdo jsou mí zamêstnanci.
-	AI_Output (self, other, "DIA_Nagur_Sign_08_01");//Dr se toho, co ti âekla Cassia - nestaráme se o to, kdo jsou ti ostatní. Jsi jedním z nás, a na nièem jinım nesejde.
+	AI_Output (self, other, "DIA_Nagur_Sign_08_00");//DokÃ¡zals to. TeÃ« vÃ­Å¡, kdo jsou mÃ­ zamÄ™stnanci.
+	AI_Output (self, other, "DIA_Nagur_Sign_08_01");//DrÅ¾ se toho, co ti Ã¢ekla Cassia - nestarÃ¡me se o to, kdo jsou ti ostatnÃ­. Jsi jednÃ­m z nÃ¡s, a na niÄem jinÃ½m nesejde.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -467,7 +467,7 @@ FUNC INT DIA_Nagur_Perm_Condition()
 };
 FUNC VOID DIA_Nagur_Perm_Info()
 {	
-	AI_Output (self, other, "DIA_Nagur_Perm_08_00");//Podívej se po nêkom jiném. Potlouká se tu kolem dost lidí. U pro tebe nic dalšího nemám.
+	AI_Output (self, other, "DIA_Nagur_Perm_08_00");//PodÃ­vej se po nÄ™kom jinÃ©m. PotloukÃ¡ se tu kolem dost lidÃ­. UÅ¾ pro tebe nic dalÅ¡Ã­ho nemÃ¡m.
 	AI_StopProcessInfos (self);
 };
 

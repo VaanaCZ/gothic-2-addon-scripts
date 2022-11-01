@@ -8,7 +8,7 @@ INSTANCE DIA_Maleth_EXIT   (C_INFO)
 	condition   = DIA_Maleth_EXIT_Condition;
 	information = DIA_Maleth_EXIT_Info;
 	permanent   = TRUE;
-	description = "MusÌm jÌt!";
+	description = "Mus√≠m j√≠t!";
 };
 FUNC INT DIA_Maleth_EXIT_Condition()
 {
@@ -52,34 +52,34 @@ func int DIA_Maleth_Hallo_Condition ()
 
 func void DIA_Maleth_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Maleth_Hallo_08_00"); //Hej, cizinËe!
+	AI_Output (self, other, "DIA_Maleth_Hallo_08_00"); //Hej, cizinƒçe!
 
 	if (hero.guild == GIL_NONE)
 		{
 		
 			if (Npc_GetDistToWP(self,"NW_FARM1_PATH_CITY_SHEEP_09") < 500)
 			{
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_01"); //VidÍl jsem tÍ p‚ich·zet z hor.
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_01"); //Vidƒôl jsem tƒô p√¢ich√°zet z hor.
 			};
-			AI_Output (self, other, "DIA_Maleth_Hallo_08_02"); //M˘ûeö b˝t r·d, ûes nep‚iöel p‚ed t‚emi t˝dny.
-			AI_Output (self, other, "DIA_Maleth_Hallo_08_03"); //Zatkli bychom tÍ jako uprchlÈho trestance. A udÍlali bychom s tebou kr·tk˝ proces!
+			AI_Output (self, other, "DIA_Maleth_Hallo_08_02"); //M≈Ø≈æe≈° b√Ωt r√°d, ≈æes nep√¢i≈°el p√¢ed t√¢emi t√Ωdny.
+			AI_Output (self, other, "DIA_Maleth_Hallo_08_03"); //Zatkli bychom tƒô jako uprchl√©ho trestance. A udƒôlali bychom s tebou kr√°tk√Ω proces!
 			
 			if (Npc_HasEquippedArmor(other) == FALSE) 
 			{
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_04"); //Vypad·ö ˙plnÍ vyËerpanÍ.
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_04"); //Vypad√°≈° √∫plnƒô vyƒçerpanƒô.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_05"); //Kdyû jsi p‚iöel, vypadal jsi, ûe vypustÌö duöi.
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_06"); //Fajn, teÎ uû vypad·ö skoro jako ËlovÍk!
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_05"); //Kdy≈æ jsi p√¢i≈°el, vypadal jsi, ≈æe vypust√≠≈° du≈°i.
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_06"); //Fajn, te√´ u≈æ vypad√°≈° skoro jako ƒçlovƒôk!
 			};
 		};
 
-	AI_Output (self, other, "DIA_Maleth_Hallo_08_07"); //(ned˘vÍ‚ivÍ) Co tady chceö?
+	AI_Output (self, other, "DIA_Maleth_Hallo_08_07"); //(ned≈Øvƒô√¢ivƒô) Co tady chce≈°?
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Banditen ‹berfall
+//	Banditen √úberfall
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Maleth_BANDITS		(C_INFO) //E1
 {
@@ -88,7 +88,7 @@ instance DIA_Maleth_BANDITS		(C_INFO) //E1
 	condition	= DIA_Maleth_BANDITS_Condition;
 	information	= DIA_Maleth_BANDITS_Info;
 	permanent   = FALSE;
-	description	= "V hor·ch mÍ p‚epadli banditÈ.";
+	description	= "V hor√°ch mƒô p√¢epadli bandit√©.";
 };
 
 func int DIA_Maleth_BANDITS_Condition ()
@@ -102,9 +102,9 @@ func int DIA_Maleth_BANDITS_Condition ()
 
 func void DIA_Maleth_BANDITS_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BANDITS_15_00"); //V hor·ch mÍ p‚epadli banditÈ.
-	AI_Output (self, other, "DIA_Maleth_BANDITS_08_01"); //Ti zatracenÌ mizerovÈ! Moûn· to budou ti, kte‚Ì mi minulou noc ukradli jednu z ovcÌ!
-	AI_Output (self, other, "DIA_Maleth_BANDITS_08_02"); //MÍls obrovskÈ ötÍstÌ. VÍtöina lidÌ se odtamtud nedostala ûiv·.
+	AI_Output (other, self, "DIA_Maleth_BANDITS_15_00"); //V hor√°ch mƒô p√¢epadli bandit√©.
+	AI_Output (self, other, "DIA_Maleth_BANDITS_08_01"); //Ti zatracen√≠ mizerov√©! Mo≈æn√° to budou ti, kte√¢√≠ mi minulou noc ukradli jednu z ovc√≠!
+	AI_Output (self, other, "DIA_Maleth_BANDITS_08_02"); //Mƒôls obrovsk√© ≈°tƒôst√≠. Vƒôt≈°ina lid√≠ se odtamtud nedostala ≈æiv√°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -117,7 +117,7 @@ instance DIA_Maleth_BanditsDEAD	(C_INFO) //E2
 	condition	= DIA_Maleth_BanditsDEAD_Condition;
 	information	= DIA_Maleth_BanditsDEAD_Info;
 	permanent   = FALSE;
-	description	= "Ti banditÈ uû v·m nebudou dÍlat û·dnÈ problÈmy.";
+	description	= "Ti bandit√© u≈æ v√°m nebudou dƒôlat ≈æ√°dn√© probl√©my.";
 };
 
 func int DIA_Maleth_BanditsDEAD_Condition ()
@@ -133,15 +133,15 @@ func int DIA_Maleth_BanditsDEAD_Condition ()
 
 func void DIA_Maleth_BanditsDEAD_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_00"); //Ti banditÈ uû v·m nebudou dÍlat û·dnÈ problÈmy.
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_01"); //ProË? Jsou mrtvÌ?
-	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_02"); //Vyt·hli zbra‡ na öpatnÈho chlapa.
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_03"); //DÌky Innosovi! Tady - nenÌ to sice moc, ale chci, aby sis to vzal!
+	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_00"); //Ti bandit√© u≈æ v√°m nebudou dƒôlat ≈æ√°dn√© probl√©my.
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_01"); //Proƒç? Jsou mrtv√≠?
+	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_02"); //Vyt√°hli zbra≈ï na ≈°patn√©ho chlapa.
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_03"); //D√≠ky Innosovi! Tady - nen√≠ to sice moc, ale chci, aby sis to vzal!
 	B_GiveInvItems (self, other, ItFo_Wine, 3);
 	
 	MIS_Maleth_Bandits = LOG_SUCCESS;
 	B_GivePlayerXP (XP_MalethKillBandits);
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_04"); //¬eknu o tom ostatnÌm!
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_04"); //√Çeknu o tom ostatn√≠m!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -154,7 +154,7 @@ instance DIA_Maleth_BanditsALIVE (C_INFO) //E2
 	condition	= DIA_Maleth_BanditsALIVE_Condition;
 	information	= DIA_Maleth_BanditsALIVE_Info;
 	permanent   = FALSE;
-	description	= "VÌm, kde majÌ banditÈ skr˝ö.";
+	description	= "V√≠m, kde maj√≠ bandit√© skr√Ω≈°.";
 };
 
 func int DIA_Maleth_BanditsALIVE_Condition ()
@@ -173,15 +173,15 @@ func int DIA_Maleth_BanditsALIVE_Condition ()
 
 func void DIA_Maleth_BanditsALIVE_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BanditsALIVE_15_00"); //VÌm, kde majÌ banditÈ skr˝ö.
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_01"); //Chceö na nÍ jÌt? Tak z toho mÍ vynech! Je to moc nebezpeËn˝!
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_02"); //A kromÍ toho, musÌm d·vat pozor na ovce!
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_03"); //Ale jestli si myslÌö, ûe n·s tÈ l˘zy m˘ûeö zbavit, bude ti cel· farma vdÍËn·.
+	AI_Output (other, self, "DIA_Maleth_BanditsALIVE_15_00"); //V√≠m, kde maj√≠ bandit√© skr√Ω≈°.
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_01"); //Chce≈° na nƒô j√≠t? Tak z toho mƒô vynech! Je to moc nebezpeƒçn√Ω!
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_02"); //A kromƒô toho, mus√≠m d√°vat pozor na ovce!
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_03"); //Ale jestli si mysl√≠≈°, ≈æe n√°s t√© l≈Øzy m≈Ø≈æe≈° zbavit, bude ti cel√° farma vdƒôƒçn√°.
 	MIS_Maleth_Bandits = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Maleth,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Maleth,LOG_RUNNING);
-	B_LogEntry (TOPIC_Maleth,"Jestli se mi poda‚Ì pobÌt bandity na cestÍ z Xardasovy vÍûe na Lobart˘v statek, jeho obyvatelÈ mi budou velmi vdÍËnÌ.");
+	B_LogEntry (TOPIC_Maleth,"Jestli se mi poda√¢√≠ pob√≠t bandity na cestƒô z Xardasovy vƒô≈æe na Lobart≈Øv statek, jeho obyvatel√© mi budou velmi vdƒôƒçn√≠.");
 	
 };
 
@@ -196,7 +196,7 @@ instance DIA_Maleth_ToTheCity (C_INFO) //E1
 	condition	= DIA_Maleth_ToTheCity_Condition;
 	information	= DIA_Maleth_ToTheCity_Info;
 	permanent   = FALSE;
-	description	= "Jsem na cestÍ do mÍsta.";
+	description	= "Jsem na cestƒô do mƒôsta.";
 };
 
 func int DIA_Maleth_ToTheCity_Condition ()
@@ -211,30 +211,30 @@ func int DIA_Maleth_ToTheCity_Condition ()
 
 func void DIA_Maleth_ToTheCity_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_00"); //Jsem na cestÍ do mÍsta.
+	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_00"); //Jsem na cestƒô do mƒôsta.
 	
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_01"); //Asi budeö muset podplatit str·ûe, aby ses dostal, kam chceö.
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_02"); //A taky musÌö vÍdÍt, co chtÍjÌ slyöet.
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_01"); //Asi bude≈° muset podplatit str√°≈æe, aby ses dostal, kam chce≈°.
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_02"); //A taky mus√≠≈° vƒôdƒôt, co chtƒôj√≠ sly≈°et.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_03"); //M˘ûou tÍ pustit dovnit‚ - kdyû jim ‚ekneö, co chtÍj slyöet.
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_03"); //M≈Ø≈æou tƒô pustit dovnit√¢ - kdy≈æ jim √¢ekne≈°, co chtƒôj sly≈°et.
 	};
 	
 	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_04"); //A to jako?
-	AI_Output (self, other, "DIA_Maleth_ToTheCity_08_05"); //T‚eba... ûe jsi z Lobartovy farmy a pot‚ebujeö za mÍstsk˝m kov·‚em.
+	AI_Output (self, other, "DIA_Maleth_ToTheCity_08_05"); //T√¢eba... ≈æe jsi z Lobartovy farmy a pot√¢ebuje≈° za mƒôstsk√Ωm kov√°√¢em.
 	
 	Log_CreateTopic (TOPIC_City,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_City,LOG_RUNNING);
-	B_LogEntry (TOPIC_City,"Kdyû str·ûÌm u mÍstsk˝ch bran ‚eknu, ûe p‚ich·zÌm z Lobartova statku a ûe m·m namÌ‚eno ke kov·‚i, pustÌ mÍ dovnit‚.");
+	B_LogEntry (TOPIC_City,"Kdy≈æ str√°≈æ√≠m u mƒôstsk√Ωch bran √¢eknu, ≈æe p√¢ich√°z√≠m z Lobartova statku a ≈æe m√°m nam√≠√¢eno ke kov√°√¢i, pust√≠ mƒô dovnit√¢.");
 	
 	
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_06"); //Ale asi ti to nebude moc platnÈ. Nevypad·ö jako farm·‚.
-		B_LogEntry (TOPIC_City,"Samoz‚ejmÍ ûe nap‚ed musÌm vypadat taky jako sedl·k.");
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_06"); //Ale asi ti to nebude moc platn√©. Nevypad√°≈° jako farm√°√¢.
+		B_LogEntry (TOPIC_City,"Samoz√¢ejmƒô ≈æe nap√¢ed mus√≠m vypadat taky jako sedl√°k.");
 		
 	};
 	
@@ -245,7 +245,7 @@ func void DIA_Maleth_ToTheCity_Info ()
 	
 
 ///////////////////////////////////////////////////////////////////////
-//	Bessere Ausr¸stung
+//	Bessere Ausr√ºstung
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Maleth_Equipment		(C_INFO)
 {
@@ -254,7 +254,7 @@ instance DIA_Maleth_Equipment		(C_INFO)
 	condition	= DIA_Maleth_Equipment_Condition;
 	information	= DIA_Maleth_Equipment_Info;
 	permanent   = FALSE;
-	description	= "Pot‚ebuju lepöÌ vybavenÌ!";
+	description	= "Pot√¢ebuju lep≈°√≠ vybaven√≠!";
 };
 
 func int DIA_Maleth_Equipment_Condition ()
@@ -269,12 +269,12 @@ func int DIA_Maleth_Equipment_Condition ()
 
 func void DIA_Maleth_Equipment_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_Equipment_15_00"); //Pot‚ebuju lepöÌ vybavenÌ!
-	AI_Output (self, other, "DIA_Maleth_Equipment_08_01"); //To ch·pu. Ale ‚eknu ti rovnou: Nem·me nic, co bychom mohli postr·dat!
+	AI_Output (other, self, "DIA_Maleth_Equipment_15_00"); //Pot√¢ebuju lep≈°√≠ vybaven√≠!
+	AI_Output (self, other, "DIA_Maleth_Equipment_08_01"); //To ch√°pu. Ale √¢eknu ti rovnou: Nem√°me nic, co bychom mohli postr√°dat!
 	if (!Npc_IsDead(Lobart))
 	{
-		AI_Output (self, other, "DIA_Maleth_Equipment_08_02"); //Pokud m˘ûeö zaplatit za to, co chceö, Lobart ti nÍco prod·.
-		AI_Output (self, other, "DIA_Maleth_Equipment_08_03"); //Jinak se ho takÈ m˘ûeö zeptat, jestli by pro tebe nemÍl nÍjakou pr·ci.
+		AI_Output (self, other, "DIA_Maleth_Equipment_08_02"); //Pokud m≈Ø≈æe≈° zaplatit za to, co chce≈°, Lobart ti nƒôco prod√°.
+		AI_Output (self, other, "DIA_Maleth_Equipment_08_03"); //Jinak se ho tak√© m≈Ø≈æe≈° zeptat, jestli by pro tebe nemƒôl nƒôjakou pr√°ci.
 	};
 };
 
@@ -289,7 +289,7 @@ instance DIA_Maleth_LOBART		(C_INFO)
 	condition	= DIA_Maleth_LOBART_Condition;
 	information	= DIA_Maleth_LOBART_Info;
 	permanent   = FALSE;
-	description	= "Kde m˘ûu najÌt Lobarta?";
+	description	= "Kde m≈Ø≈æu naj√≠t Lobarta?";
 };
 
 func int DIA_Maleth_LOBART_Condition ()
@@ -304,9 +304,9 @@ func int DIA_Maleth_LOBART_Condition ()
 
 func void DIA_Maleth_LOBART_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_LOBART_15_00"); //Kde m˘ûu najÌt Lobarta?
-	AI_Output (self, other, "DIA_Maleth_LOBART_08_01"); //No, na farmÍ p‚ece! Pat‚Ì mu to tady!
-	AI_Output (self, other, "DIA_Maleth_LOBART_08_02"); //A nezkouöej si s nÌm nÍco zaËÌnat! Uû hodnÍ tul·k˘ od nÍj dostalo nakl·daËku a pak letÍli z farmy.
+	AI_Output (other, self, "DIA_Maleth_LOBART_15_00"); //Kde m≈Ø≈æu naj√≠t Lobarta?
+	AI_Output (self, other, "DIA_Maleth_LOBART_08_01"); //No, na farmƒô p√¢ece! Pat√¢√≠ mu to tady!
+	AI_Output (self, other, "DIA_Maleth_LOBART_08_02"); //A nezkou≈°ej si s n√≠m nƒôco zaƒç√≠nat! U≈æ hodnƒô tul√°k≈Ø od nƒôj dostalo nakl√°daƒçku a pak letƒôli z farmy.
 };
 
 
@@ -355,7 +355,7 @@ instance DIA_Maleth_PROBLEME		(C_INFO)
 	condition	 = 	DIA_Maleth_PROBLEME_Condition;
 	information	 = 	DIA_Maleth_PROBLEME_Info;
 
-	description	 = 	"NÍjak˝ zmÍny poslednÌ dobou?";
+	description	 = 	"Nƒôjak√Ω zmƒôny posledn√≠ dobou?";
 };
 
 func int DIA_Maleth_PROBLEME_Condition ()
@@ -368,78 +368,78 @@ func int DIA_Maleth_PROBLEME_Condition ()
 
 func void DIA_Maleth_PROBLEME_Info ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_15_00"); //NÍjak˝ zmÍny poslednÌ dobou?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_01"); //Sejdi dol˘ po cestÍ k mÍstu a uvidÌö.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_02"); //Aû se potk·ö s Ëernokab·tnÌky, pak uvidÌö, co je novÈho.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_15_00"); //Nƒôjak√Ω zmƒôny posledn√≠ dobou?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_01"); //Sejdi dol≈Ø po cestƒô k mƒôstu a uvid√≠≈°.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_02"); //A≈æ se potk√°≈° s ƒçernokab√°tn√≠ky, pak uvid√≠≈°, co je nov√©ho.
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
 	Info_AddChoice	(DIA_Maleth_PROBLEME, DIALOG_BACK, DIA_Maleth_PROBLEME_Back );
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "Jak se majÌ ovce?", DIA_Maleth_PROBLEME_schafe );
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "Uû tÍ ty ËernÈ k·pÍ navötÌvily?", DIA_Maleth_PROBLEME_beidir );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "Jak se maj√≠ ovce?", DIA_Maleth_PROBLEME_schafe );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "U≈æ tƒô ty ƒçern√© k√°pƒô nav≈°t√≠vily?", DIA_Maleth_PROBLEME_beidir );
 	
 };
 func void DIA_Maleth_PROBLEME_beidir ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_beidir_15_00"); //Uû tÍ ty ËernÈ k·pÍ navötÌvily?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_beidir_08_01"); //Jo. Z˘staly tu nÍkolik dnÌ. Jestli to chceö vÍdÍt, tak p‚iöly rovnou z pekel.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_beidir_15_00"); //U≈æ tƒô ty ƒçern√© k√°pƒô nav≈°t√≠vily?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_beidir_08_01"); //Jo. Z≈Østaly tu nƒôkolik dn√≠. Jestli to chce≈° vƒôdƒôt, tak p√¢i≈°ly rovnou z pekel.
 
 };
 
 func void DIA_Maleth_PROBLEME_schafe ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_15_00"); //Jak se majÌ ovce?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_08_01"); //(vztekle) Jako by tÍ to v˘bec zajÌmalo. M·ö jinÈ problÈmy.
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "ProblÈmy? Co ty o tom vÌö?", DIA_Maleth_PROBLEME_schafe_probleme );
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_15_00"); //Jak se maj√≠ ovce?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_08_01"); //(vztekle) Jako by tƒô to v≈Øbec zaj√≠malo. M√°≈° jin√© probl√©my.
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "Probl√©my? Co ty o tom v√≠≈°?", DIA_Maleth_PROBLEME_schafe_probleme );
 
 };
 func void DIA_Maleth_PROBLEME_schafe_probleme ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_15_00"); //ProblÈmy? Co ty o tom vÌö?
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_15_00"); //Probl√©my? Co ty o tom v√≠≈°?
 	
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_01"); //(stroze) Pat‚Ìö k mÍstsk˝m str·ûÌm, ne? Tak s tÍma bastardama v Ëern˝ch k·pÌch nÍco udÍlej.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_01"); //(stroze) Pat√¢√≠≈° k mƒôstsk√Ωm str√°≈æ√≠m, ne? Tak s tƒôma bastardama v ƒçern√Ωch k√°p√≠ch nƒôco udƒôlej.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_02"); //(vztekle) Vy zatracen˝ ûold·ci myslÌte jen na jedinou vÍc: jak z ostatnÌch dostat co nejvÌc penÍz do vlastnÌ kapsy.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_02"); //(vztekle) Vy zatracen√Ω ≈æold√°ci mysl√≠te jen na jedinou vƒôc: jak z ostatn√≠ch dostat co nejv√≠c penƒôz do vlastn√≠ kapsy.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_03"); //V·ö vzneöen˝ p·n kl·ötera by mÍl s tÍmi postavami v k·pÌch nÍco dÍlat.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_03"); //V√°≈° vzne≈°en√Ω p√°n kl√°≈°tera by mƒôl s tƒômi postavami v k√°p√≠ch nƒôco dƒôlat.
 		};
 
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
 	Info_AddChoice	(DIA_Maleth_PROBLEME, DIALOG_BACK, DIA_Maleth_PROBLEME_Back );
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "Hej, d·vej si bacha na pusu, k·mo.", DIA_Maleth_PROBLEME_schafe_probleme_drohen );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "Hej, d√°vej si bacha na pusu, k√°mo.", DIA_Maleth_PROBLEME_schafe_probleme_drohen );
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			Info_AddChoice	(DIA_Maleth_PROBLEME, "Co m·ö za problÈm?", DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag );
+			Info_AddChoice	(DIA_Maleth_PROBLEME, "Co m√°≈° za probl√©m?", DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag );
 		};
 };
 
 func void DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_00"); //Co m·ö za problÈm?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_01"); //UrËitÍ za to m˘ûe ta Ëern· p·lenka, co mi Vino p‚ed nÍkolika t˝dny podstrËil.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_02"); //Nem˘ûu si na nic vzpomenout, chlape. Jenom vÌm, ûe se mi ztratila moje vych·zkov· h˘l.
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_03"); //A kv˘li tomu dÍl·ö takovej krav·l?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_04"); //TobÍ se to ‚ekne, tvoje nebyla.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_00"); //Co m√°≈° za probl√©m?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_01"); //Urƒçitƒô za to m≈Ø≈æe ta ƒçern√° p√°lenka, co mi Vino p√¢ed nƒôkolika t√Ωdny podstrƒçil.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_02"); //Nem≈Ø≈æu si na nic vzpomenout, chlape. Jenom v√≠m, ≈æe se mi ztratila moje vych√°zkov√° h≈Øl.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_03"); //A kv≈Øli tomu dƒôl√°≈° takovej krav√°l?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_04"); //Tobƒô se to √¢ekne, tvoje nebyla.
 	
 	Log_CreateTopic (TOPIC_MalethsGehstock, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_MalethsGehstock, LOG_RUNNING);
-	B_LogEntry (TOPIC_MalethsGehstock,"Maleth se nÍkde oûral jak dÍlo a ztratil p‚itom vych·zkovou h˘l. Jak ho zn·m, nikdy se z Lobartova statku moc nevzd·lil. Proto by se ta h˘l mÍla v·let nÍkde poblÌû."); 
+	B_LogEntry (TOPIC_MalethsGehstock,"Maleth se nƒôkde o≈æral jak dƒôlo a ztratil p√¢itom vych√°zkovou h≈Øl. Jak ho zn√°m, nikdy se z Lobartova statku moc nevzd√°lil. Proto by se ta h≈Øl mƒôla v√°let nƒôkde pobl√≠≈æ."); 
 
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
 };
 
 func void DIA_Maleth_PROBLEME_schafe_probleme_drohen ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_15_00"); //Hej, d·vej si bacha na pusu, k·mo.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_08_01"); //Jedin˝, co ti jde, jsou ‚eËi. NejlÌp udÍl·ö, kdyû p˘jdeö pryË.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_15_00"); //Hej, d√°vej si bacha na pusu, k√°mo.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_08_01"); //Jedin√Ω, co ti jde, jsou √¢eƒçi. Nejl√≠p udƒôl√°≈°, kdy≈æ p≈Øjde≈° pryƒç.
 };
 
 func void DIA_Maleth_PROBLEME_Back ()
@@ -457,7 +457,7 @@ instance DIA_Maleth_GEHSTOCK		(C_INFO)
 	condition	 = 	DIA_Maleth_GEHSTOCK_Condition;
 	information	 = 	DIA_Maleth_GEHSTOCK_Info;
 
-	description	 = 	"M·m dojem, ûe tahle h˘l pat‚Ì tobÍ.";
+	description	 = 	"M√°m dojem, ≈æe tahle h≈Øl pat√¢√≠ tobƒô.";
 };
 
 func int DIA_Maleth_GEHSTOCK_Condition ()
@@ -471,28 +471,28 @@ func int DIA_Maleth_GEHSTOCK_Condition ()
 
 func void DIA_Maleth_GEHSTOCK_Info ()
 {
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_00"); //M·m dojem, ûe tahle h˘l pat‚Ì tobÍ.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_01"); //To je ohromn˝. J·...
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_02"); //Tak moment. Nejd‚Ìv za ni zapla„.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_03"); //Ale... Moc toho nem·m.
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_04"); //V tom p‚ÌpadÍ na ni zapome‡.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_05"); //DObr·. A co tohle? VËera jsem tu vidÍl bÍûet nÍjak˝ bandity s nÍkolika mÍöci zlata.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_06"); //Kdyû ti ‚eknu, kam schovali svou ko‚ist, vr·tÌö mi za to moji h˘l?
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_00"); //M√°m dojem, ≈æe tahle h≈Øl pat√¢√≠ tobƒô.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_01"); //To je ohromn√Ω. J√°...
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_02"); //Tak moment. Nejd√¢√≠v za ni zaplaƒÉ.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_03"); //Ale... Moc toho nem√°m.
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_04"); //V tom p√¢√≠padƒô na ni zapome≈ï.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_05"); //DObr√°. A co tohle? Vƒçera jsem tu vidƒôl bƒô≈æet nƒôjak√Ω bandity s nƒôkolika mƒô≈°ci zlata.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_06"); //Kdy≈æ ti √¢eknu, kam schovali svou ko√¢ist, vr√°t√≠≈° mi za to moji h≈Øl?
 	TOPIC_END_MalethsGehstock = TRUE;
 	B_GivePlayerXP (XP_FoundMalethsGehstock);
 
 	Info_ClearChoices	(DIA_Maleth_GEHSTOCK);
-	Info_AddChoice	(DIA_Maleth_GEHSTOCK, "Promi‡, ale to mÍ nezajÌm·. Chci zlato.", DIA_Maleth_GEHSTOCK_gold );
-	Info_AddChoice	(DIA_Maleth_GEHSTOCK, "Dobr·.", DIA_Maleth_GEHSTOCK_ok );
+	Info_AddChoice	(DIA_Maleth_GEHSTOCK, "Promi≈ï, ale to mƒô nezaj√≠m√°. Chci zlato.", DIA_Maleth_GEHSTOCK_gold );
+	Info_AddChoice	(DIA_Maleth_GEHSTOCK, "Dobr√°.", DIA_Maleth_GEHSTOCK_ok );
 };
 func void DIA_Maleth_GEHSTOCK_ok ()
 {
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_ok_15_00"); //Dobr·.
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_ok_15_00"); //Dobr√°.
 	B_GiveInvItems 		(other, self, ItMw_MalethsGehstock_MIS,1);
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_01"); //Fajn. Jdi odsud na z·pad k tamtomu kousku lesa. Najdeö tam strû.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_02"); //V t˝ jeskyni urËitÍ nÍco bude.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_01"); //Fajn. Jdi odsud na z√°pad k tamtomu kousku lesa. Najde≈° tam str≈æ.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_02"); //V t√Ω jeskyni urƒçitƒô nƒôco bude.
 
-	B_LogEntry (TOPIC_MalethsGehstock,"Maleth mi vypr·vÍl, ûe v lesÌch z·padnÍ od Lobartova statku se nach·zÌ t·bor bandit˘."); 
+	B_LogEntry (TOPIC_MalethsGehstock,"Maleth mi vypr√°vƒôl, ≈æe v les√≠ch z√°padnƒô od Lobartova statku se nach√°z√≠ t√°bor bandit≈Ø."); 
 	CreateInvItems 		(BDT_1024_MalethsBandit, ItMi_MalethsBanditGold,1);
 	Info_ClearChoices	(DIA_Maleth_GEHSTOCK);
 	AI_StopProcessInfos (self);
@@ -500,8 +500,8 @@ func void DIA_Maleth_GEHSTOCK_ok ()
 
 func void DIA_Maleth_GEHSTOCK_gold ()
 {
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_gold_15_00"); //Promi‡, ale to mÍ nezajÌm·. Chci zlato.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_gold_08_01"); //Tady je vöechno, co m·m. MÍlo by to staËit.
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_gold_15_00"); //Promi≈ï, ale to mƒô nezaj√≠m√°. Chci zlato.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_gold_08_01"); //Tady je v≈°echno, co m√°m. Mƒôlo by to staƒçit.
 	CreateInvItems 		(self, Itmi_Gold, 35);
 	B_GiveInvItems 		(self, other, Itmi_Gold,35);
 	B_GiveInvItems 		(other, self, ItMw_MalethsGehstock_MIS,1);
@@ -519,7 +519,7 @@ instance DIA_Maleth_PERM3		(C_INFO)
 	information	 = 	DIA_Maleth_PERM3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nenech se v˘bec ruöit.";
+	description	 = 	"Nenech se v≈Øbec ru≈°it.";
 };
 
 func int DIA_Maleth_PERM3_Condition ()
@@ -533,8 +533,8 @@ func int DIA_Maleth_PERM3_Condition ()
 
 func void DIA_Maleth_PERM3_Info ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PERM3_15_00"); //Nenech se v˘bec ruöit.
-	AI_Output			(self, other, "DIA_Maleth_PERM3_08_01"); //(rozËilenÍ) Zmizni.
+	AI_Output			(other, self, "DIA_Maleth_PERM3_15_00"); //Nenech se v≈Øbec ru≈°it.
+	AI_Output			(self, other, "DIA_Maleth_PERM3_08_01"); //(rozƒçilenƒô) Zmizni.
 	AI_StopProcessInfos (self);
 };
 

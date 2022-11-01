@@ -80,21 +80,21 @@ func void DIA_Nadja_STANDARD_Info ()
 {
 	if (Nadja_LuciaInfo == TRUE)
 	{
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_00"); //Nap‚ed si promluv s Bromorem, teprve pak se s tebou m˘ûu bavit.
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_00"); //Nap√¢ed si promluv s Bromorem, teprve pak se s tebou m≈Ø≈æu bavit.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Nadja_STANDARD_16_00"); //Hele, teÎ zrovna se ti nem˘ûu vÍnovat, feö·ku. Jestli se chceö pobavit, promluv si s Bromorem.
+		AI_Output (self, other, "DIA_Nadja_STANDARD_16_00"); //Hele, te√´ zrovna se ti nem≈Ø≈æu vƒônovat, fe≈°√°ku. Jestli se chce≈° pobavit, promluv si s Bromorem.
 	};
 	
 	if (SC_HearedAboutMissingPeople == TRUE)
 	&& (SCKnowsMissingPeopleAreInAddonWorld == FALSE)
 	&& (Nadja_LuciaInfo == FALSE) 
 	{
-		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_01"); //Jen jsem ti chtÍl poloûit p·r ot·zek ohlednÍ tÍch zmizel˝ch lidÌ.
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_02"); //NÍco ti ‚Ìct m˘ûu, ale tady ne, zlato.
-		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_03"); //PojÎme nahoru.
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_04"); //Fajn, ale nap‚ed si to urovnej s Bromorem. Nechci mÌt û·dn˝ problÈmy.
+		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_01"); //Jen jsem ti chtƒôl polo≈æit p√°r ot√°zek ohlednƒô tƒôch zmizel√Ωch lid√≠.
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_02"); //Nƒôco ti √¢√≠ct m≈Ø≈æu, ale tady ne, zlato.
+		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_03"); //Poj√´me nahoru.
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_04"); //Fajn, ale nap√¢ed si to urovnej s Bromorem. Nechci m√≠t ≈æ√°dn√Ω probl√©my.
 		Nadja_LuciaInfo = TRUE;
 	};	
 	
@@ -124,7 +124,7 @@ func int DIA_Nadja_Danach_Condition ()
 };
 func void DIA_Nadja_Danach_Info ()
 {
-	AI_Output (self, other, "DIA_Nadja_Danach_16_00"); //P‚ÌötÍ p‚ijÎ zase!
+	AI_Output (self, other, "DIA_Nadja_Danach_16_00"); //P√¢√≠≈°tƒô p√¢ij√´ zase!
 	Nadja_Nacht = FALSE;
 	AI_StopProcessInfos (self);
 };
@@ -139,7 +139,7 @@ instance DIA_Nadja_hochgehen		(C_INFO)
 	information	 = 	DIA_Nadja_hochgehen_Info;
 	important	 = 	FALSE;
 	permanent	 = 	TRUE;
-	description	 =	"PojÎme nahoru!";
+	description	 =	"Poj√´me nahoru!";
 };
 
 func int DIA_Nadja_hochgehen_Condition ()
@@ -151,8 +151,8 @@ func int DIA_Nadja_hochgehen_Condition ()
 };
 func void DIA_Nadja_hochgehen_Info ()
 {
-	AI_Output (other, self, "DIA_Nadja_hochgehen_15_00"); //PojÎme nahoru!
-	AI_Output (self, other, "DIA_Nadja_hochgehen_16_01"); //Dneska m·ö ö„astn˝ den, feö·ku. PojÎme.
+	AI_Output (other, self, "DIA_Nadja_hochgehen_15_00"); //Poj√´me nahoru!
+	AI_Output (self, other, "DIA_Nadja_hochgehen_16_01"); //Dneska m√°≈° ≈°ƒÉastn√Ω den, fe≈°√°ku. Poj√´me.
 	
 	Bromor_Pay = 2;
 	AI_StopProcessInfos (self);
@@ -168,7 +168,7 @@ instance DIA_Addon_Nadja_LuciaInfo		(C_INFO)
 	condition	 = 	DIA_Addon_Nadja_LuciaInfo_Condition;
 	information	 = 	DIA_Addon_Nadja_LuciaInfo_Info;
 
-	description	 = 	"M˘ûeme si teÎ pomluvit?";
+	description	 = 	"M≈Ø≈æeme si te√´ pomluvit?";
 };
 func int DIA_Addon_Nadja_LuciaInfo_Condition ()
 {
@@ -182,55 +182,55 @@ func int DIA_Addon_Nadja_LuciaInfo_Condition ()
 var int Nadja_GaveLuciaInfo;
 func void DIA_Addon_Nadja_LuciaInfo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_15_00"); //Tak TEÀ uû si m˘ûeme promluvit?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_01"); //Tady uû m·me dostateËnÈ soukromÌ.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_02"); //Bromor nem· r·d, kdyû v pr·ci kl·bosÌme s hostama a on z toho nic nem·.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_03"); //Tak ty by ses r·d dozvÍdÍl nÍco o tÍch lidech, co zmizeli tady v p‚Ìstavu?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_04"); //Asi ti moc nepom˘ûu, ale aspo‡ ti m˘ûu ‚Ìct, co se stalo s LuciÌ.
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_15_00"); //Tak TE√ã u≈æ si m≈Ø≈æeme promluvit?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_01"); //Tady u≈æ m√°me dostateƒçn√© soukrom√≠.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_02"); //Bromor nem√° r√°d, kdy≈æ v pr√°ci kl√°bos√≠me s hostama a on z toho nic nem√°.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_03"); //Tak ty by ses r√°d dozvƒôdƒôl nƒôco o tƒôch lidech, co zmizeli tady v p√¢√≠stavu?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_04"); //Asi ti moc nepom≈Ø≈æu, ale aspo≈ï ti m≈Ø≈æu √¢√≠ct, co se stalo s Luci√≠.
 
 	Nadja_GaveLuciaInfo = TRUE;
 	
 	Info_ClearChoices	(DIA_Addon_Nadja_LuciaInfo);
 	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "A kam zmizela?", DIA_Addon_Nadja_LuciaInfo_wo );
-	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Vypr·vÍj mi o Lucii.", DIA_Addon_Nadja_LuciaInfo_lucia );
+	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Vypr√°vƒôj mi o Lucii.", DIA_Addon_Nadja_LuciaInfo_lucia );
 };
 func void DIA_Addon_Nadja_LuciaInfo_lucia ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_00"); //Tak mi povÍz nÍco o Lucii.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_01"); //Nikdo tu nelituje, ûe odeöla.
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_02"); //ProË?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_03"); //MyslÌm, ûe tady nikomu k niËemu nebyla.
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_00"); //Tak mi povƒôz nƒôco o Lucii.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_01"); //Nikdo tu nelituje, ≈æe ode≈°la.
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_02"); //Proƒç?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_03"); //Mysl√≠m, ≈æe tady nikomu k niƒçemu nebyla.
 	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_04"); //Byla to fakt mrcha!
 };
 func void DIA_Addon_Nadja_LuciaInfo_wo ()
 {
 	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_wo_15_00"); //A kam tedy zmizela?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_01"); //»asto se sch·zela s Elvrichem, uËnÍm tesa‚e Thorbena z dolnÌ Ë·sti mÍsta.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_02"); //VsadÌm se, ûe utekla s tÌm mladÌkem.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_01"); //ƒåasto se sch√°zela s Elvrichem, uƒçnƒôm tesa√¢e Thorbena z doln√≠ ƒç√°sti mƒôsta.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_02"); //Vsad√≠m se, ≈æe utekla s t√≠m mlad√≠kem.
 
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Prostitutka Lucia jednÈ noci n·hle zmizela. Vöichni si myslÌ, ûe uprchla s Elvrichem, uËednÌkem tesa‚e Thorbena."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"Prostitutka Lucia jedn√© noci n√°hle zmizela. V≈°ichni si mysl√≠, ≈æe uprchla s Elvrichem, uƒçedn√≠kem tesa√¢e Thorbena."); 
 
 	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "A kam ti dva mohli zmizet?", DIA_Addon_Nadja_LuciaInfo_Elvrich );
 };
 func void DIA_Addon_Nadja_LuciaInfo_Elvrich ()
 {
 	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_Elvrich_15_00"); //A kam se ti dva mohli ztratit?
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_01"); //Jestli je neseûrali vlci, nejspÌö z˘stali u nÍjak˝ho sedl·ka.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_02"); //Kam jinam mohli jÌt?
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_01"); //Jestli je nese≈ærali vlci, nejsp√≠≈° z≈Østali u nƒôjak√Ωho sedl√°ka.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_02"); //Kam jinam mohli j√≠t?
 
-	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "VÌö jeötÍ nÍco dalöÌho?", DIA_Addon_Nadja_LuciaInfo_sonst );
+	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "V√≠≈° je≈°tƒô nƒôco dal≈°√≠ho?", DIA_Addon_Nadja_LuciaInfo_sonst );
 };
 func void DIA_Addon_Nadja_LuciaInfo_sonst ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_sonst_15_00"); //VÌö jeötÍ nÍco dalöÌho?
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_01"); //PovÌd· se, ûe tady v p‚Ìstavu zmizela spousta lidÌ.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_02"); //Ale nevÌm jistÍ, jestli jim vÍ‚it.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_03"); //MÍl by sis promluvit s kupci tady dole.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_04"); //VÌc uû ti bohuûel nepovÌm.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_05"); //A co my dva, zlato? Koneckonc˘ jsi za to zaplatil.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_06"); //Nechceö se trochu pobavit, jeötÍ neû p˘jdeö?
+	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_sonst_15_00"); //V√≠≈° je≈°tƒô nƒôco dal≈°√≠ho?
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_01"); //Pov√≠d√° se, ≈æe tady v p√¢√≠stavu zmizela spousta lid√≠.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_02"); //Ale nev√≠m jistƒô, jestli jim vƒô√¢it.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_03"); //Mƒôl by sis promluvit s kupci tady dole.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_04"); //V√≠c u≈æ ti bohu≈æel nepov√≠m.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_05"); //A co my dva, zlato? Koneckonc≈Ø jsi za to zaplatil.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_06"); //Nechce≈° se trochu pobavit, je≈°tƒô ne≈æ p≈Øjde≈°?
 
 	Info_ClearChoices (DIA_Addon_Nadja_LuciaInfo);
 	
@@ -241,13 +241,13 @@ func void DIA_Addon_Nadja_LuciaInfo_sonst ()
 		
 		Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,PRINT_Addon_NadjaWait,DIA_Addon_Nadja_WAIT);
 	};
-	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"DÌky, ale uû musÌm jÌt.",DIA_Addon_Nadja_LuciaInfo_weiter);
-	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"ProË ne?",DIA_Nadja_Poppen_Start);
+	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"D√≠ky, ale u≈æ mus√≠m j√≠t.",DIA_Addon_Nadja_LuciaInfo_weiter);
+	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"Proƒç ne?",DIA_Nadja_Poppen_Start);
 };
 func void DIA_Addon_Nadja_LuciaInfo_weiter ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_weiter_15_00"); //DÌky, ale uû musÌm jÌt.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_weiter_16_01"); //äkoda. Tak moûn· p‚ÌötÍ.
+	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_weiter_15_00"); //D√≠ky, ale u≈æ mus√≠m j√≠t.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_weiter_16_01"); //≈†koda. Tak mo≈æn√° p√¢√≠≈°tƒô.
 	
 	Bromor_Pay = FALSE;
 	Nadja_Nacht = (Nadja_Nacht +1);
@@ -271,7 +271,7 @@ instance DIA_Nadja_Poppen	(C_INFO)
 	condition	 = 	DIA_Nadja_Poppen_Condition;
 	information	 = 	DIA_Nadja_Poppen_Info;
 	permanent	 = 	TRUE;
-	description  = "(Uûijem si)";
+	description  = "(U≈æijem si)";
 };
 
 func int DIA_Nadja_Poppen_Condition ()
@@ -279,7 +279,7 @@ func int DIA_Nadja_Poppen_Condition ()
 	if (Bromor_Pay == 2)
 	&& (Npc_GetDistToWP (self,"NW_CITY_HABOUR_PUFF_NADJA") < 300) 
 	
-	/* Das ist bˆse - wenn ich direkt mit Bromor spreche passiert nix mehr. M.F.
+	/* Das ist b√∂se - wenn ich direkt mit Bromor spreche passiert nix mehr. M.F.
 	&&  (
 		((Nadja_LuciaInfo != 0) && (Nadja_GaveLuciaInfo == 0))
 		|| (Nadja_GaveLuciaInfo == TRUE)
@@ -292,8 +292,8 @@ func int DIA_Nadja_Poppen_Condition ()
 };
 func void DIA_Nadja_Poppen_Info ()
 {
-	AI_Output (self, other, "DIA_Nadja_Poppen_16_00"); //DalöÌch p·r hodin pat‚Ì jen a jen n·m.
-	AI_Output (self, other, "DIA_Nadja_Poppen_16_01"); //Jen se hezky uvolni. Lehni si a uûij si to!
+	AI_Output (self, other, "DIA_Nadja_Poppen_16_00"); //Dal≈°√≠ch p√°r hodin pat√¢√≠ jen a jen n√°m.
+	AI_Output (self, other, "DIA_Nadja_Poppen_16_01"); //Jen se hezky uvolni. Lehni si a u≈æij si to!
 
 	Info_ClearChoices (DIA_Nadja_Poppen);
 	Info_AddChoice (DIA_Nadja_Poppen,"Fajn...",DIA_Nadja_Poppen_Start);
@@ -343,7 +343,7 @@ instance DIA_Nadja_BUYHERB		(C_INFO)
 	condition	 = 	DIA_Nadja_BUYHERB_Condition;
 	information	 = 	DIA_Nadja_BUYHERB_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Kde bych tu koupil nÍjakou tr·vu?";
+	description	 = 	"Kde bych tu koupil nƒôjakou tr√°vu?";
 };
 func int DIA_Nadja_BUYHERB_Condition ()
 {	
@@ -359,20 +359,20 @@ func void DIA_Nadja_BUYHERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Nadja_BUYHERB_15_00"); //Kde bych tu koupil nÍjakÈ drogy?
+	AI_Output (other, self, "DIA_Nadja_BUYHERB_15_00"); //Kde bych tu koupil nƒôjak√© drogy?
 	
 	if  (Npc_GetDistToWP (self,"NW_CITY_HABOUR_PUFF_NADJA") < 500) 
 	{	
 		if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 		{
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_01"); //Jak to m·m vÍdÍt? A i kdybych to vÍdÍla, urËitÍ bych to ne‚ekla nÍkomu od mÍstskÈ str·ûe.
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_01"); //Jak to m√°m vƒôdƒôt? A i kdybych to vƒôdƒôla, urƒçitƒô bych to ne√¢ekla nƒôkomu od mƒôstsk√© str√°≈æe.
 			Undercover_Failed = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_02"); //Jestli ti v·ûnÍ m·m nÍco ‚Ìct, budeö se muset vytasit s ‡·kou tou ökv·rou.
-			AI_Output (other, self, "DIA_Nadja_BUYHERB_15_03"); //Kolik chceö?
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_04"); //Spravilo by to 50 zla„·k˘.
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_02"); //Jestli ti v√°≈ænƒô m√°m nƒôco √¢√≠ct, bude≈° se muset vytasit s ≈ï√°kou tou ≈°kv√°rou.
+			AI_Output (other, self, "DIA_Nadja_BUYHERB_15_03"); //Kolik chce≈°?
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_04"); //Spravilo by to 50 zlaƒÉ√°k≈Ø.
 			Nadja_Money = TRUE;
 		};
 	}
@@ -391,7 +391,7 @@ instance DIA_Nadja_WANT_HERB		(C_INFO)
 	condition	 = 	DIA_Nadja_WANT_HERB_Condition;
 	information	 = 	DIA_Nadja_WANT_HERB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Tak teÎ mi ‚ekni, kde bych mohl koupit nÍjakou tr·vu (zaplatit 50 zla„·k˘).";
+	description	 = 	"Tak te√´ mi √¢ekni, kde bych mohl koupit nƒôjakou tr√°vu (zaplatit 50 zlaƒÉ√°k≈Ø).";
 };
 func int DIA_Nadja_WANT_HERB_Condition ()
 {	
@@ -405,16 +405,16 @@ func int DIA_Nadja_WANT_HERB_Condition ()
 func void DIA_Nadja_WANT_HERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
-	AI_Output (other, self, "DIA_Nadja_WANT_HERB_15_00"); //A teÎ mi povÍz, kde bych tu drogu koupil.
+	AI_Output (other, self, "DIA_Nadja_WANT_HERB_15_00"); //A te√´ mi povƒôz, kde bych tu drogu koupil.
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_01"); //Je mi lÌto, ale prostÍ si to nepamatuju.
+		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_01"); //Je mi l√≠to, ale prostƒô si to nepamatuju.
 	}
 	else
 	{
 		B_GiveInvItems	(other, self, ItMi_Gold, 50); 
-		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_02"); //Promluv si s Borkou, feö·ku. Ten by pro tebe mohl nÍco mÌt.
+		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_02"); //Promluv si s Borkou, fe≈°√°ku. Ten by pro tebe mohl nƒôco m√≠t.
 		Knows_Borka_Dealer = TRUE;
 	};
 };

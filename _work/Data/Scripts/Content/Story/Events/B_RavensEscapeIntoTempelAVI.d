@@ -8,7 +8,7 @@ func void B_RAVENSESCAPEINTOTEMPELAVI ()
 		
 		Log_CreateTopic (TOPIC_Addon_RavenKDW, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_RavenKDW, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_RavenKDW,"Sice se mi podaâilo proniknout do Havranových komnat, ale stihl mi zmizet za velkými dveâmi, kam jsem se za ním nedostal. Pravdêpodobnê jimi prošel do Adanova chrámu. Musím to ohlásit Saturasovi."); 
+		B_LogEntry (TOPIC_Addon_RavenKDW,"Sice se mi podaÃ¢ilo proniknout do HavranovÃ½ch komnat, ale stihl mi zmizet za velkÃ½mi dveÃ¢mi, kam jsem se za nÃ­m nedostal. PravdÄ™podobnÄ™ jimi proÅ¡el do Adanova chrÃ¡mu. MusÃ­m to ohlÃ¡sit Saturasovi."); 
 		
 		B_RAVENSESCAPEINTOTEMPELAVI_OneTime = TRUE;
 	};

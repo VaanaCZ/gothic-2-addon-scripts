@@ -32,7 +32,7 @@ INSTANCE DIA_Wambo_PICKPOCKET (C_INFO)
 	condition	= DIA_Wambo_PICKPOCKET_Condition;
 	information	= DIA_Wambo_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kr·deû tohoto klÌËe by byla riskantnÌ)";
+	description = "(Kr√°de≈æ tohoto kl√≠ƒçe by byla riskantn√≠)";
 };                       
 
 FUNC INT DIA_Wambo_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ INSTANCE DIA_Wambo_Job(C_INFO)
 	condition	= DIA_Wambo_Job_Condition;
 	information	= DIA_Wambo_Job_Info;
 	permanent	= FALSE;
-	description = "Co tady dÍl·ö?";
+	description = "Co tady dƒôl√°≈°?";
 };                       
 
 FUNC INT DIA_Wambo_Job_Condition()
@@ -94,9 +94,9 @@ FUNC INT DIA_Wambo_Job_Condition()
 
 FUNC VOID DIA_Wambo_Job_Info()
 {	
-	AI_Output (other,self ,"DIA_Wambo_Job_15_00"); //Co tady dÍl·ö?
-	AI_Output (self ,other,"DIA_Wambo_Job_03_01"); //Star·m se o to, aby nikdo neveöel dovnit‚.
-	AI_Output (self ,other,"DIA_Wambo_Job_03_02"); //V˝slovn˝ rozkaz od lorda Hagena. A ani nemysli na to, ûe by ses tomu rozkazu protivil!
+	AI_Output (other,self ,"DIA_Wambo_Job_15_00"); //Co tady dƒôl√°≈°?
+	AI_Output (self ,other,"DIA_Wambo_Job_03_01"); //Star√°m se o to, aby nikdo neve≈°el dovnit√¢.
+	AI_Output (self ,other,"DIA_Wambo_Job_03_02"); //V√Ωslovn√Ω rozkaz od lorda Hagena. A ani nemysli na to, ≈æe by ses tomu rozkazu protivil!
 };
 //*************************************************************
 //		Wie ist die Lage?
@@ -122,7 +122,7 @@ FUNC INT DIA_Wambo_Situation_Condition()
 FUNC VOID DIA_Wambo_Situation_Info()
 {	
 	AI_Output (other,self ,"DIA_Wambo_Situation_15_00"); //Jak se vede?
-	AI_Output (self ,other,"DIA_Wambo_Situation_03_01"); //V tuhle chvÌli je vöechno v klidu.
+	AI_Output (self ,other,"DIA_Wambo_Situation_03_01"); //V tuhle chv√≠li je v≈°echno v klidu.
 };
 //*************************************************************
 //		Ramirez
@@ -134,7 +134,7 @@ INSTANCE DIA_Wambo_Ramirez(C_INFO)
 	condition	= DIA_Wambo_Ramirez_Condition;
 	information	= DIA_Wambo_Ramirez_Info;
 	permanent	= FALSE;
-	description = "P‚ich·zÌm od naöeho spoleËnÈho p‚Ìtele Ramireze.";
+	description = "P√¢ich√°z√≠m od na≈°eho spoleƒçn√©ho p√¢√≠tele Ramireze.";
 };                       
 
 FUNC INT DIA_Wambo_Ramirez_Condition()
@@ -147,12 +147,12 @@ FUNC INT DIA_Wambo_Ramirez_Condition()
 
 FUNC VOID DIA_Wambo_Ramirez_Info()
 {	
-	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_00"); //P‚ich·zÌm od naöeho spoleËnÈho p‚Ìtele Ramireze.
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_01"); //Coûe? Ten Ramirez je pÍkn· krysa. A nenÌ û·dn˝ m˘j p‚Ìtel. To je jedno. P‚in·öÌö mi nÍco?
-	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //To z·leûÌ na tom, co chceö.
+	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_00"); //P√¢ich√°z√≠m od na≈°eho spoleƒçn√©ho p√¢√≠tele Ramireze.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_01"); //Co≈æe? Ten Ramirez je pƒôkn√° krysa. A nen√≠ ≈æ√°dn√Ω m≈Øj p√¢√≠tel. To je jedno. P√¢in√°≈°√≠≈° mi nƒôco?
+	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //To z√°le≈æ√≠ na tom, co chce≈°.
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(tiöe) Dobr·, ‚eknu ti, jak to chodÌ. ZaplatÌö 250 zlat˝ch. Pak tady v noci nebudu.
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //Pokud bys ale byl p‚Ìliö n·padn˝ a j· tady p‚ece jenom byl, tak z obchodu seölo.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(ti≈°e) Dobr√°, √¢eknu ti, jak to chod√≠. Zaplat√≠≈° 250 zlat√Ωch. Pak tady v noci nebudu.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //Pokud bys ale byl p√¢√≠li≈° n√°padn√Ω a j√° tady p√¢ece jenom byl, tak z obchodu se≈°lo.
 };
 //*************************************************************
 //	Deal
@@ -164,7 +164,7 @@ INSTANCE DIA_Wambo_Deal(C_INFO)
 	condition	= DIA_Wambo_Deal_Condition;
 	information	= DIA_Wambo_Deal_Info;
 	permanent	= TRUE;
-	description = "(Zaplatit 250 zla„·k˘)";
+	description = "(Zaplatit 250 zlaƒÉ√°k≈Ø)";
 };                       
 //-----------------------------------
 var int DIA_Wambo_Deal_permanent;
@@ -179,12 +179,12 @@ FUNC INT DIA_Wambo_Deal_Condition()
 };
 FUNC VOID DIA_Wambo_Deal_Info()
 {	
-	AI_Output (other,self ,"DIA_Wambo_Deal_15_00"); //M·m pro tebe ty penÌze...
+	AI_Output (other,self ,"DIA_Wambo_Deal_15_00"); //M√°m pro tebe ty pen√≠ze...
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 250)
 	{
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //Dobr·, tak j· naveËer zmizÌm.
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_02"); //A nezapome‡ - kdybys dÍlal nÍjakÈ problÈmy, tak tÍ nezn·m.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //Dobr√°, tak j√° naveƒçer zmiz√≠m.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_02"); //A nezapome≈ï - kdybys dƒôlal nƒôjak√© probl√©my, tak tƒô nezn√°m.
 		
 		DIA_Wambo_Deal_permanent = TRUE;
 		AI_StopProcessInfos (self);
@@ -193,7 +193,7 @@ FUNC VOID DIA_Wambo_Deal_Info()
 	else
 	{
 		AI_Output (other,self ,"DIA_Wambo_Deal_15_03"); //...ale ne zrovna u sebe.
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_04"); //Nesn·öÌm, kdyû ze mÍ nÍkdo dÍl· öaöka. Tak p‚ines to zlato.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_04"); //Nesn√°≈°√≠m, kdy≈æ ze mƒô nƒôkdo dƒôl√° ≈°a≈°ka. Tak p√¢ines to zlato.
 		AI_StopProcessInfos (self);
 	};
 };

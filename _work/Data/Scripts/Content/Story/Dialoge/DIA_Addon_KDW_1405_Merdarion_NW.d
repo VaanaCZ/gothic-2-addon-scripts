@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Merdarion_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Merdarion_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Merdarion_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre schwierig seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re schwierig seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Merdarion_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Merdarion_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Hallo_Condition;
 	information	 = 	DIA_Addon_Merdarion_Hallo_Info;
 
-	description	 = 	"Máš práci?";
+	description	 = 	"MÃ¡Å¡ prÃ¡ci?";
 };
 
 func int DIA_Addon_Merdarion_Hallo_Condition ()
@@ -94,11 +94,11 @@ func int DIA_Addon_Merdarion_Hallo_Condition ()
 
 func void DIA_Addon_Merdarion_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Hallo_15_00"); //Máš práci?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_01"); //Tyhle hrobky jsou pro mê velkou záhadou. Jen têko si dokáu pâedstavit, e je dosud nikdo nenašel.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_02"); //Vchod jsme objevili bez problémù.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_03"); //Lidé mêli vdycky tolik práce se starostmi všedních dní, e se na tuhle budovu nikdo nikdy blíe nepodíval.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_04"); //Mám pro to jiné vysvêtlení.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Hallo_15_00"); //MÃ¡Å¡ prÃ¡ci?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_01"); //Tyhle hrobky jsou pro mÄ™ velkou zÃ¡hadou. Jen tÄ™Å¾ko si dokÃ¡Å¾u pÃ¢edstavit, Å¾e je dosud nikdo nenaÅ¡el.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_02"); //Vchod jsme objevili bez problÃ©mÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_03"); //LidÃ© mÄ™li vÅ¾dycky tolik prÃ¡ce se starostmi vÅ¡ednÃ­ch dnÃ­, Å¾e se na tuhle budovu nikdo nikdy blÃ­Å¾e nepodÃ­val.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_04"); //MÃ¡m pro to jinÃ© vysvÄ™tlenÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Aufgabe
@@ -110,7 +110,7 @@ instance DIA_Addon_Merdarion_Aufgabe		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Aufgabe_Condition;
 	information	 = 	DIA_Addon_Merdarion_Aufgabe_Info;
 
-	description	 = 	"Co tady máš za úkol?";
+	description	 = 	"Co tady mÃ¡Å¡ za Ãºkol?";
 };
 
 func int DIA_Addon_Merdarion_Aufgabe_Condition ()
@@ -123,18 +123,18 @@ func int DIA_Addon_Merdarion_Aufgabe_Condition ()
 
 func void DIA_Addon_Merdarion_Aufgabe_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Aufgabe_15_00"); //A jakı je tvùj úkol?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_01"); //Snaím se zjistit, kam vede tenhle kulatı portál.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_02"); //A krom toho pomáhám Nefariovi najít chybêjící ornament.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_03"); //Je jisté, e tento portál vede do èásti ostrova, o které jsme dosud nemêli ani tušení.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_04"); //(uválivê) Vùbec si nepamatuju, e bych o nêèem takovém kdy slyšel nebo èetl.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Aufgabe_15_00"); //A jakÃ½ je tvÅ¯j Ãºkol?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_01"); //SnaÅ¾Ã­m se zjistit, kam vede tenhle kulatÃ½ portÃ¡l.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_02"); //A krom toho pomÃ¡hÃ¡m Nefariovi najÃ­t chybÄ™jÃ­cÃ­ ornament.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_03"); //Je jistÃ©, Å¾e tento portÃ¡l vede do ÄÃ¡sti ostrova, o kterÃ© jsme dosud nemÄ™li ani tuÅ¡enÃ­.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_04"); //(uvÃ¡Å¾livÄ™) VÅ¯bec si nepamatuju, Å¾e bych o nÄ™Äem takovÃ©m kdy slyÅ¡el nebo Äetl.
 	
 	Npc_ExchangeRoutine (self, "START");
 	B_StartOtherRoutine (Cronos_NW, "START");
 	
 	if (Nefarius_NW.aivar [AIV_TalkedToPlayer] == FALSE)
 	{
-		B_LogEntry (TOPIC_Addon_KDW,"Nefarius hledá nêjakı ztracenı ornament."); 
+		B_LogEntry (TOPIC_Addon_KDW,"Nefarius hledÃ¡ nÄ™jakÃ½ ztracenÃ½ ornament."); 
 	};	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -147,7 +147,7 @@ instance DIA_Addon_Merdarion_DaDurch		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_DaDurch_Condition;
 	information	 = 	DIA_Addon_Merdarion_DaDurch_Info;
 
-	description	 = 	"To chceš opravdu projít tím portálem?";
+	description	 = 	"To chceÅ¡ opravdu projÃ­t tÃ­m portÃ¡lem?";
 };
 
 func int DIA_Addon_Merdarion_DaDurch_Condition ()
@@ -160,10 +160,10 @@ func int DIA_Addon_Merdarion_DaDurch_Condition ()
 
 func void DIA_Addon_Merdarion_DaDurch_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_DaDurch_15_00"); //Vánê chcete projít portálem?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_01"); //Samozâejmê. Pokud tedy najdeme ten ztracenı ornament.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_02"); //Ale pâiznám se, e je to celé trochu riskantní.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_03"); //Ale rozhodnê musíme zjistit, co pùsobí ta neustálá zemêtâesení.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_DaDurch_15_00"); //VÃ¡Å¾nÄ™ chcete projÃ­t portÃ¡lem?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_01"); //SamozÃ¢ejmÄ™. Pokud tedy najdeme ten ztracenÃ½ ornament.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_02"); //Ale pÃ¢iznÃ¡m se, Å¾e je to celÃ© trochu riskantnÃ­.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_03"); //Ale rozhodnÄ™ musÃ­me zjistit, co pÅ¯sobÃ­ ta neustÃ¡lÃ¡ zemÄ™tÃ¢esenÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Bedrohung
@@ -175,7 +175,7 @@ instance DIA_Addon_Merdarion_Bedrohung		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Bedrohung_Condition;
 	information	 = 	DIA_Addon_Merdarion_Bedrohung_Info;
 
-	description	 = 	"Co víš o têch zemêtâeseních?";
+	description	 = 	"Co vÃ­Å¡ o tÄ™ch zemÄ™tÃ¢esenÃ­ch?";
 };
 
 func int DIA_Addon_Merdarion_Bedrohung_Condition ()
@@ -188,10 +188,10 @@ func int DIA_Addon_Merdarion_Bedrohung_Condition ()
 
 func void DIA_Addon_Merdarion_Bedrohung_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Bedrohung_15_00"); //Co víš o têch zemêtâeseních?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_01"); //Ty zpùsobuje nêco na druhé stranê.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_02"); //A ten samı zdroj nejspíš probouzí i ty kamenné stráce.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_03"); //Ale to není moje práce – o tom ti víc poví Saturas a Cronos.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Bedrohung_15_00"); //Co vÃ­Å¡ o tÄ™ch zemÄ™tÃ¢esenÃ­ch?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_01"); //Ty zpÅ¯sobuje nÄ™co na druhÃ© stranÄ™.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_02"); //A ten samÃ½ zdroj nejspÃ­Å¡ probouzÃ­ i ty kamennÃ© strÃ¡Å¾ce.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_03"); //Ale to nenÃ­ moje prÃ¡ce â€“ o tom ti vÃ­c povÃ­ Saturas a Cronos.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -204,7 +204,7 @@ instance DIA_Addon_Merdarion_Wasdahinter2		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Wasdahinter2_Condition;
 	information	 = 	DIA_Addon_Merdarion_Wasdahinter2_Info;
 
-	description	 = 	"Co si myslíš, e tam najdeš?";
+	description	 = 	"Co si myslÃ­Å¡, Å¾e tam najdeÅ¡?";
 };
 
 func int DIA_Addon_Merdarion_Wasdahinter2_Condition ()
@@ -217,10 +217,10 @@ func int DIA_Addon_Merdarion_Wasdahinter2_Condition ()
 
 func void DIA_Addon_Merdarion_Wasdahinter2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Wasdahinter2_15_00"); //Co si myslíš, e tu najdete?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_01"); //To opravdu nevím.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_02"); //Na druhou stranu ale poèítám, e tam budou podobné budovy jako tahle. A protêjšek k tomuto portálu.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_03"); //Všechno ostatní zjistíme, a se tam dostaneme.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Wasdahinter2_15_00"); //Co si myslÃ­Å¡, Å¾e tu najdete?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_01"); //To opravdu nevÃ­m.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_02"); //Na druhou stranu ale poÄÃ­tÃ¡m, Å¾e tam budou podobnÃ© budovy jako tahle. A protÄ™jÅ¡ek k tomuto portÃ¡lu.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_03"); //VÅ¡echno ostatnÃ­ zjistÃ­me, aÅ¾ se tam dostaneme.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM
@@ -233,7 +233,7 @@ instance DIA_Addon_Merdarion_PERM		(C_INFO)
 	information	 = 	DIA_Addon_Merdarion_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Mùeš mê nauèit nêjaké magii?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ™ nauÄit nÄ™jakÃ© magii?";
 };
 
 func int DIA_Addon_Merdarion_PERM_Condition ()
@@ -246,8 +246,8 @@ func int DIA_Addon_Merdarion_PERM_Condition ()
 
 func void DIA_Addon_Merdarion_PERM_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_PERM_15_00"); //Mùeš mê nauèit nêjakou magii?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_PERM_06_01"); //A tu skonèíme, budu ti k dispozici.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_PERM_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nauÄit nÄ™jakou magii?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_PERM_06_01"); //AÅ¾ tu skonÄÃ­me, budu ti k dispozici.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -260,7 +260,7 @@ instance DIA_Addon_Merdarion_Teleportstein		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Teleportstein_Condition;
 	information	 = 	DIA_Addon_Merdarion_Teleportstein_Info;
 
-	description	 = 	"Jak se nejrychleji dostanu do mêsta?";
+	description	 = 	"Jak se nejrychleji dostanu do mÄ™sta?";
 };
 
 func int DIA_Addon_Merdarion_Teleportstein_Condition ()
@@ -274,38 +274,38 @@ func int DIA_Addon_Merdarion_Teleportstein_Condition ()
 
 func void DIA_Addon_Merdarion_Teleportstein_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_00"); //Jak se nejrychleji dostanu do mêsta?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_01"); //Doporuèuju jít stejnou cestou, jakou jsi pâišel.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_02"); //(rozmıšlí) Ale taky bys mohl... Ne, to by bylo moc nebezpeèné.
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_03"); //Ven s tím.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_04"); //No, stavitelé têchto síní mêli vlastní metodu cestování.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_05"); //Pokud víme, tak se dokázali teleportovat.
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_06"); //To není nic vıjimeèného.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_07"); //Teleportaèní kameny, které jsme našli v Khorinidu, jsou opravdu zvláštní.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_08"); //Zdejší teleportaèní kámen by mêl vést do pâístavního mêsta.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_09"); //Ale nikdo z nás nemá odvahu to vyzkoušet na vlastní kùi.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_00"); //Jak se nejrychleji dostanu do mÄ™sta?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_01"); //DoporuÄuju jÃ­t stejnou cestou, jakou jsi pÃ¢iÅ¡el.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_02"); //(rozmÃ½Å¡lÃ­) Ale taky bys mohl... Ne, to by bylo moc nebezpeÄnÃ©.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_03"); //Ven s tÃ­m.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_04"); //No, stavitelÃ© tÄ™chto sÃ­nÃ­ mÄ™li vlastnÃ­ metodu cestovÃ¡nÃ­.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_05"); //Pokud vÃ­me, tak se dokÃ¡zali teleportovat.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_06"); //To nenÃ­ nic vÃ½jimeÄnÃ©ho.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_07"); //TeleportaÄnÃ­ kameny, kterÃ© jsme naÅ¡li v Khorinidu, jsou opravdu zvlÃ¡Å¡tnÃ­.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_08"); //ZdejÅ¡Ã­ teleportaÄnÃ­ kÃ¡men by mÄ™l vÃ©st do pÃ¢Ã­stavnÃ­ho mÄ™sta.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_09"); //Ale nikdo z nÃ¡s nemÃ¡ odvahu to vyzkouÅ¡et na vlastnÃ­ kÅ¯Å¾i.
 	
 	Info_ClearChoices	(DIA_Addon_Merdarion_Teleportstein);
-	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "A co kdybych to vyzkoušel?", DIA_Addon_Merdarion_Teleportstein_ich );
-	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Kde je ten teleportaèní kámen?", DIA_Addon_Merdarion_Teleportstein_wo );
+	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "A co kdybych to vyzkouÅ¡el?", DIA_Addon_Merdarion_Teleportstein_ich );
+	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Kde je ten teleportaÄnÃ­ kÃ¡men?", DIA_Addon_Merdarion_Teleportstein_wo );
 };
 func void DIA_Addon_Merdarion_Teleportstein_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_wo_15_00"); //Kde je ten teleportaèní kámen?
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_wo_06_01"); //V místnosti s nádrkou jsou dveâe. Kámen je zamèenı za nimi.
-	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Dej mi klíè, chci se na to podívat.", DIA_Addon_Merdarion_Teleportstein_key );
+	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_wo_15_00"); //Kde je ten teleportaÄnÃ­ kÃ¡men?
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_wo_06_01"); //V mÃ­stnosti s nÃ¡drÅ¾kou jsou dveÃ¢e. KÃ¡men je zamÄenÃ½ za nimi.
+	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Dej mi klÃ­Ä, chci se na to podÃ­vat.", DIA_Addon_Merdarion_Teleportstein_key );
 };
 func void DIA_Addon_Merdarion_Teleportstein_ich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_ich_15_00"); //A co kdy bych ho chtêl pouít?
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_ich_06_01"); //Ani nápad. Víme o nêm pâíliš málo a je moné, e bys to nepâeil.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_ich_15_00"); //A co kdyÅ¾ bych ho chtÄ™l pouÅ¾Ã­t?
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_ich_06_01"); //Ani nÃ¡pad. VÃ­me o nÄ™m pÃ¢Ã­liÅ¡ mÃ¡lo a je moÅ¾nÃ©, Å¾e bys to nepÃ¢eÅ¾il.
 };
 func void DIA_Addon_Merdarion_Teleportstein_key ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_key_15_00"); //Dej mi klíè, chtêl bych se na ten kámen podívat.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_01"); //(nejistê) Opravdu? Ale já za to nenesu ádnou zodpovêdnost.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_key_15_00"); //Dej mi klÃ­Ä, chtÄ™l bych se na ten kÃ¡men podÃ­vat.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_01"); //(nejistÄ™) Opravdu? Ale jÃ¡ za to nenesu Å¾Ã¡dnou zodpovÄ™dnost.
 	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_key_15_02"); //Dej mi ho.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_03"); //Kdy to âíkáš – tady je.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_03"); //KdyÅ¾ to Ã¢Ã­kÃ¡Å¡ â€“ tady je.
 	CreateInvItems (self, ITKE_PORTALTEMPELWALKTHROUGH_ADDON, 1);									
 	B_GiveInvItems (self, other, ITKE_PORTALTEMPELWALKTHROUGH_ADDON, 1);		
 
@@ -313,7 +313,7 @@ func void DIA_Addon_Merdarion_Teleportstein_key ()
 
 	Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"Merdarion mi dal klíè k zamèenım dveâím v hrobce u portálu. Za nimi jsem našel teleportaèní kámen, kterı mne pâenese zpátky do pâístavu."); 
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"Merdarion mi dal klÃ­Ä k zamÄenÃ½m dveÃ¢Ã­m v hrobce u portÃ¡lu. Za nimi jsem naÅ¡el teleportaÄnÃ­ kÃ¡men, kterÃ½ mne pÃ¢enese zpÃ¡tky do pÃ¢Ã­stavu."); 
 
 	Info_ClearChoices	(DIA_Addon_Merdarion_Teleportstein);
 };
@@ -328,7 +328,7 @@ instance DIA_Addon_Merdarion_WHereOtherTeleports		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_WHereOtherTeleports_Condition;
 	information	 = 	DIA_Addon_Merdarion_WHereOtherTeleports_Info;
 
-	description	 = 	"Kde jsou další teleportaèní kameny?";
+	description	 = 	"Kde jsou dalÅ¡Ã­ teleportaÄnÃ­ kameny?";
 };
 
 func int DIA_Addon_Merdarion_WHereOtherTeleports_Condition ()
@@ -341,10 +341,10 @@ func int DIA_Addon_Merdarion_WHereOtherTeleports_Condition ()
 
 func void DIA_Addon_Merdarion_WHereOtherTeleports_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_WHereOtherTeleports_15_00"); //Kde jsou ostatní teleportaèní kameny?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_WHereOtherTeleports_06_01"); //Jeden jsme zatím našli kdesi uprostâed Khorinidu.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_WHereOtherTeleports_06_02"); //U hospody U Mrtvé harpyje.
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"Další teleportaèní kámen by mêl bıt nêkde u hospody U Mrtvé harpyje."); 
+	AI_Output	(other, self, "DIA_Addon_Merdarion_WHereOtherTeleports_15_00"); //Kde jsou ostatnÃ­ teleportaÄnÃ­ kameny?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_WHereOtherTeleports_06_01"); //Jeden jsme zatÃ­m naÅ¡li kdesi uprostÃ¢ed Khorinidu.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_WHereOtherTeleports_06_02"); //U hospody U MrtvÃ© harpyje.
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"DalÅ¡Ã­ teleportaÄnÃ­ kÃ¡men by mÄ™l bÃ½t nÄ™kde u hospody U MrtvÃ© harpyje."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -357,7 +357,7 @@ instance DIA_Addon_Merdarion_TeleportsteinSuccess		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_TeleportsteinSuccess_Condition;
 	information	 = 	DIA_Addon_Merdarion_TeleportsteinSuccess_Info;
 
-	description	 = 	"Teleportaèní kámen u hezky funguje.";
+	description	 = 	"TeleportaÄnÃ­ kÃ¡men uÅ¾ hezky funguje.";
 };
 
 func int DIA_Addon_Merdarion_TeleportsteinSuccess_Condition ()
@@ -372,10 +372,10 @@ func int DIA_Addon_Merdarion_TeleportsteinSuccess_Condition ()
 func void DIA_Addon_Merdarion_TeleportsteinSuccess_Info ()
 {
 	B_GivePlayerXP (XP_Ambient);
-	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_00"); //Teleportaèní kameny fungují bez problémù.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_01"); //Tys to opravdu udêlal? Pouil jsi je?
-	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_02"); //Ano, a zjevnê jsou stále funkèní.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_03"); //(fascinovanê) To je neuvêâitelné. Budu to pak muset blíe prozkoumat.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_00"); //TeleportaÄnÃ­ kameny fungujÃ­ bez problÃ©mÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_01"); //Tys to opravdu udÄ™lal? PouÅ¾il jsi je?
+	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_02"); //Ano, a zjevnÄ™ jsou stÃ¡le funkÄnÃ­.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_03"); //(fascinovanÄ™) To je neuvÄ™Ã¢itelnÃ©. Budu to pak muset blÃ­Å¾e prozkoumat.
 };
 
 

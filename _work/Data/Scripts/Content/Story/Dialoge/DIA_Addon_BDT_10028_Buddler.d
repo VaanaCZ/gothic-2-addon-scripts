@@ -40,8 +40,8 @@ FUNC VOID DIA_Addon_10028_Buddler_Hi_Info()
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//P‚ece se nebudu obtÍûovat s dolov·nÌm. Na to tu m·me dost otrok˘.
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//(smÍje se) JeötÍ nikdy jsme tak snadno nep‚iöli ke zlatu.
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//P√¢ece se nebudu obtƒô≈æovat s dolov√°n√≠m. Na to tu m√°me dost otrok≈Ø.
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//(smƒôje se) Je≈°tƒô nikdy jsme tak snadno nep√¢i≈°li ke zlatu.
 	}
 	else
 	{
@@ -68,8 +68,8 @@ FUNC INT DIA_Addon_10028_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10028_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_00");//Vûdycky doluj odspoda nahoru.
-	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_01");//Je to sice makaËka, ale d· se tak z kamene zÌskat mnohem vÌc zlata.
+	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_00");//V≈ædycky doluj odspoda nahoru.
+	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_01");//Je to sice makaƒçka, ale d√° se tak z kamene z√≠skat mnohem v√≠c zlata.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

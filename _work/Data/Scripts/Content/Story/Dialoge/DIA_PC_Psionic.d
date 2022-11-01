@@ -48,48 +48,48 @@ FUNC VOID DIA_Lester_Hello_Info()
 		AI_StandUp (self);
 		B_TurnToNpc (self,other);
 	};
-	AI_Output	(self ,other,"DIA_Lester_Hello_13_00");	//Jsi to TY? - Opravdu! Chlape, ani netušíš, jak rád tê vidím!
+	AI_Output	(self ,other,"DIA_Lester_Hello_13_00");	//Jsi to TY? - Opravdu! Chlape, ani netuÅ¡Ã­Å¡, jak rÃ¡d tÄ™ vidÃ­m!
 
 	Info_ClearChoices	(DIA_Lester_Hello);
 
-	Info_AddChoice		(DIA_Lester_Hello, "Mêl bych tê znát?" 					,DIA_Lester_Hello_YouKnowMe);
+	Info_AddChoice		(DIA_Lester_Hello, "MÄ™l bych tÄ™ znÃ¡t?" 					,DIA_Lester_Hello_YouKnowMe);
 	Info_AddChoice		(DIA_Lester_Hello, "Lestere! Jak ses sem dostal?"		,DIA_Lester_Hello_Lester);
 };
 FUNC VOID DIA_Lester_Hello_Lester()
 {
 	Info_ClearChoices	(DIA_Lester_Hello);
 	AI_Output	(other,self ,"DIA_Lester_Hello_Lester_15_00");	//Lestere! Jak ses sem dostal?
-	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_01");	//Byl to šílený útêk. Když bariéra vybuchla, chvíli jsem se naprosto zmatenê toulal po okolí.
-	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_02");	//Pak jsem se celé dny snažil probojovat skrz tyhle lesy, až jsem koneènê našel tohle údolí.
-	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_03");	//Diego, Milten a Gorn jsou poâád v Hornickém údolí. Aspoà si to myslím.
+	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_01");	//Byl to Å¡Ã­lenÃ½ ÃºtÄ™k. KdyÅ¾ bariÃ©ra vybuchla, chvÃ­li jsem se naprosto zmatenÄ™ toulal po okolÃ­.
+	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_02");	//Pak jsem se celÃ© dny snaÅ¾il probojovat skrz tyhle lesy, aÅ¾ jsem koneÄnÄ™ naÅ¡el tohle ÃºdolÃ­.
+	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_03");	//Diego, Milten a Gorn jsou poÃ¢Ã¡d v HornickÃ©m ÃºdolÃ­. AspoÅ• si to myslÃ­m.
 };
 FUNC VOID DIA_Lester_Hello_YouKnowMe()
 {
 	Info_ClearChoices	(DIA_Lester_Hello);
-	AI_Output	(other,self ,"DIA_Lester_Hello_YouKnowMe_15_00");	//Mêl bych tê znát?
-	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_01");	//Haló? Je nêkdo doma? Riskoval jsem vlastní kùži, abys mohl dostat ten divný kámen.
-	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_02");	//Nêco mi dlužíš. TENTOKRÁT by sis to mêl pamatovat.
-	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_03"); 	//Pamatuješ ještê na Diega, Miltena a Gorna?
+	AI_Output	(other,self ,"DIA_Lester_Hello_YouKnowMe_15_00");	//MÄ™l bych tÄ™ znÃ¡t?
+	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_01");	//HalÃ³? Je nÄ™kdo doma? Riskoval jsem vlastnÃ­ kÅ¯Å¾i, abys mohl dostat ten divnÃ½ kÃ¡men.
+	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_02");	//NÄ™co mi dluÅ¾Ã­Å¡. TENTOKRÃT by sis to mÄ™l pamatovat.
+	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_03"); 	//PamatujeÅ¡ jeÅ¡tÄ™ na Diega, Miltena a Gorna?
 
 	Info_AddChoice		(DIA_Lester_Hello, "Diego, Milten a KDO?" 	,DIA_Lester_Hello_WhoFourFriends);
-	Info_AddChoice		(DIA_Lester_Hello, "Jasnê. Co je s nimi?"	,DIA_Lester_Hello_KnowFourFriends);
+	Info_AddChoice		(DIA_Lester_Hello, "JasnÄ™. Co je s nimi?"	,DIA_Lester_Hello_KnowFourFriends);
 
 };
 FUNC VOID DIA_Lester_Hello_KnowFourFriends()
 {
     Info_ClearChoices	(DIA_Lester_Hello);
-	AI_Output	(other,self ,"DIA_Lester_Hello_KnowFourFriends_15_00");	//Jasnê. Co je s nimi?
-	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_01");	//Pokud vím, tak znièení bariéry mêli pâežít.
-	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_02");	//Nemám ponêtí, kde jdou teë - všichni tâi ještê nejspíš dâepí nêkde v Hornickém údolí.
-	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_03");	//Kdybys na nê náhodou narazil, dej mi vêdêt.
+	AI_Output	(other,self ,"DIA_Lester_Hello_KnowFourFriends_15_00");	//JasnÄ™. Co je s nimi?
+	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_01");	//Pokud vÃ­m, tak zniÄenÃ­ bariÃ©ry mÄ™li pÃ¢eÅ¾Ã­t.
+	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_02");	//NemÃ¡m ponÄ™tÃ­, kde jdou teÃ« - vÅ¡ichni tÃ¢i jeÅ¡tÄ™ nejspÃ­Å¡ dÃ¢epÃ­ nÄ™kde v HornickÃ©m ÃºdolÃ­.
+	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_03");	//Kdybys na nÄ™ nÃ¡hodou narazil, dej mi vÄ™dÄ™t.
 };
 FUNC VOID DIA_Lester_Hello_WhoFourFriends()
 {
     Info_ClearChoices	(DIA_Lester_Hello);
 	AI_Output	(other,self ,"DIA_Lester_Hello_WhoFourFriends_15_00");	//Diego, Milten a KDO?
-	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_01");	//Nesnaž se mi namluvit, že si na to nepamatuješ. Ty ohniskové kameny - ten trol - ta ohromná kupa rudy vodních mágù?
-	AI_Output	(other, self,"DIA_Lester_Hello_WhoFourFriends_15_02");	//Nejsem si jistý...
-	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_03");	//To pâijde. I mnê chvíli trvalo, než jsem si to všechno v hlavê srovnal.
+	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_01");	//NesnaÅ¾ se mi namluvit, Å¾e si na to nepamatujeÅ¡. Ty ohniskovÃ© kameny - ten trol - ta ohromnÃ¡ kupa rudy vodnÃ­ch mÃ¡gÅ¯?
+	AI_Output	(other, self,"DIA_Lester_Hello_WhoFourFriends_15_02");	//Nejsem si jistÃ½...
+	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_03");	//To pÃ¢ijde. I mnÄ™ chvÃ­li trvalo, neÅ¾ jsem si to vÅ¡echno v hlavÄ™ srovnal.
 };
 // ************************************************************
 // 		  				  Was ist passiert?		//E1
@@ -114,13 +114,13 @@ FUNC INT DIA_Lester_WhatHappened_Condition()
 FUNC VOID DIA_Lester_WhatHappened_Info()
 {	
 	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_00");	//Co se stalo?
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_01");	//Co byl Spáè poražen, celé bratrstvo ztratilo hlavu.
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_02");	//Bez vùdce byli jako prázdné skoâápky.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_01");	//Co byl SpÃ¡Ä poraÅ¾en, celÃ© bratrstvo ztratilo hlavu.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_02");	//Bez vÅ¯dce byli jako prÃ¡zdnÃ© skoÃ¢Ã¡pky.
 	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_03");	//A ty? Co bylo s tebou?
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_04");	//Já na tom byl úplnê stejnê. Mêl jsem noèní mùry a dokonce halucinace. Ale jakmile jsem zaèal více ménê pâemýšlet zase normálnê, utekl jsem.
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_05");	//Jednou se mi zdálo, že vidím obrovský èerný stín, jak vyrazil na skupinu uprchlíkù a spálil je na prach.
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_06");	//V tu chvíli jsem si vážnê myslel, že mê pâišel zabít drak.
-	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_07");	//Vidêl jsi ještê nêco?
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_04");	//JÃ¡ na tom byl ÃºplnÄ™ stejnÄ™. MÄ™l jsem noÄnÃ­ mÅ¯ry a dokonce halucinace. Ale jakmile jsem zaÄal vÃ­ce mÃ©nÄ™ pÃ¢emÃ½Å¡let zase normÃ¡lnÄ™, utekl jsem.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_05");	//Jednou se mi zdÃ¡lo, Å¾e vidÃ­m obrovskÃ½ ÄernÃ½ stÃ­n, jak vyrazil na skupinu uprchlÃ­kÅ¯ a spÃ¡lil je na prach.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_06");	//V tu chvÃ­li jsem si vÃ¡Å¾nÄ™ myslel, Å¾e mÄ™ pÃ¢iÅ¡el zabÃ­t drak.
+	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_07");	//VidÄ™l jsi jeÅ¡tÄ™ nÄ™co?
 	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_08");	//Ne - vzal jsem nohy na ramena a utekl!
 };
 // ************************************************************
@@ -133,7 +133,7 @@ INSTANCE DIA_Lester_MineColony (C_INFO)
 	condition	= DIA_Lester_MineColony_Condition;
 	information	= DIA_Lester_MineColony_Info;
 	permanent	= FALSE;
-	description = "Jak dlouho se už ukrýváš v tomhle údolí?";
+	description = "Jak dlouho se uÅ¾ ukrÃ½vÃ¡Å¡ v tomhle ÃºdolÃ­?";
 };                       
 FUNC INT DIA_Lester_MineColony_Condition()
 {
@@ -145,13 +145,13 @@ FUNC INT DIA_Lester_MineColony_Condition()
 };
 FUNC VOID DIA_Lester_MineColony_Info()
 {	
-	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_00");	//Jak dlouho se už ukrýváš v tomhle údolí?
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_01");	//Pâesnê to nevím. Možná týden. Ale napadá mê ještê jedna vêc:
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_02");	//Když jsem sem jednoho veèera pâišel, podíval jsem se na vrcholek hory - bylo tam jenom pár stromù.
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_03");	//A když jsem se tam podíval druhý den ráno, stála tam vêž. Pâísahal bych, že tam pâedtím nebyla. Od té doby jsem z údolí nevytáhl paty.
-	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_04");	//Myslíš Xardasovu vêž? Vêdêl jsem, že je mocný, ale vytvoâit vêž jenom tak...
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_05");	//Nekromant Xardas? To on žije v té vêži? Nevím, jestli se mi to dvakrát zamlouvá.
-	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_06");	//Uklidni se, byl to právê on, kdo mê zachránil ze Spáèova chrámu. Je na naší stranê.
+	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_00");	//Jak dlouho se uÅ¾ ukrÃ½vÃ¡Å¡ v tomhle ÃºdolÃ­?
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_01");	//PÃ¢esnÄ™ to nevÃ­m. MoÅ¾nÃ¡ tÃ½den. Ale napadÃ¡ mÄ™ jeÅ¡tÄ™ jedna vÄ™c:
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_02");	//KdyÅ¾ jsem sem jednoho veÄera pÃ¢iÅ¡el, podÃ­val jsem se na vrcholek hory - bylo tam jenom pÃ¡r stromÅ¯.
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_03");	//A kdyÅ¾ jsem se tam podÃ­val druhÃ½ den rÃ¡no, stÃ¡la tam vÄ™Å¾. PÃ¢Ã­sahal bych, Å¾e tam pÃ¢edtÃ­m nebyla. Od tÃ© doby jsem z ÃºdolÃ­ nevytÃ¡hl paty.
+	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_04");	//MyslÃ­Å¡ Xardasovu vÄ™Å¾? VÄ™dÄ™l jsem, Å¾e je mocnÃ½, ale vytvoÃ¢it vÄ™Å¾ jenom tak...
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_05");	//Nekromant Xardas? To on Å¾ije v tÃ© vÄ™Å¾i? NevÃ­m, jestli se mi to dvakrÃ¡t zamlouvÃ¡.
+	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_06");	//Uklidni se, byl to prÃ¡vÄ™ on, kdo mÄ™ zachrÃ¡nil ze SpÃ¡Äova chrÃ¡mu. Je na naÅ¡Ã­ stranÄ™.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SEND_XARDAS
@@ -163,7 +163,7 @@ instance DIA_Lester_SEND_XARDAS		(C_INFO)
 	condition	 = 	DIA_Lester_SEND_XARDAS_Condition;
 	information	 = 	DIA_Lester_SEND_XARDAS_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"O tom stínu musíš povêdêt Xardasovi...";
+	description	 = 	"O tom stÃ­nu musÃ­Å¡ povÄ™dÄ™t Xardasovi...";
 };
 func int DIA_Lester_SEND_XARDAS_Condition ()
 {	
@@ -176,14 +176,14 @@ func int DIA_Lester_SEND_XARDAS_Condition ()
 };
 func void DIA_Lester_SEND_XARDAS_Info ()
 {
-	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_00"); //Musíš âíct Xardasovi o tom stínu, mohlo by to být dùležité.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_01"); //Ty si nemyslíš, že to byl jen výplod mojí pâedstavivosti? To jako že to doopravdy byl...
+	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_00"); //MusÃ­Å¡ Ã¢Ã­ct Xardasovi o tom stÃ­nu, mohlo by to bÃ½t dÅ¯leÅ¾itÃ©.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_01"); //Ty si nemyslÃ­Å¡, Å¾e to byl jen vÃ½plod mojÃ­ pÃ¢edstavivosti? To jako Å¾e to doopravdy byl...
 	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_02"); //...drak. Ano.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_03"); //Zase se do toho pouštíš po hlavê, že?
-	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_04"); //Neâekl bych, že po hlavê... ještê ne.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_05"); //(povzdychne si) No dobrá, když je to tak dùležité, tak za ním pùjdu - ale ne hned teë.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_06"); //Teë si chci odpoèinout. Ještê poâád jsem úplnê vyèerpaný z toho útêku z trestanecké kolonie.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_07"); //Âekl bych, že máš velké plány. Uvidíme se pozdêji u Xardase.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_03"); //Zase se do toho pouÅ¡tÃ­Å¡ po hlavÄ™, Å¾e?
+	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_04"); //NeÃ¢ekl bych, Å¾e po hlavÄ™... jeÅ¡tÄ™ ne.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_05"); //(povzdychne si) No dobrÃ¡, kdyÅ¾ je to tak dÅ¯leÅ¾itÃ©, tak za nÃ­m pÅ¯jdu - ale ne hned teÃ«.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_06"); //TeÃ« si chci odpoÄinout. JeÅ¡tÄ™ poÃ¢Ã¡d jsem ÃºplnÄ™ vyÄerpanÃ½ z toho ÃºtÄ™ku z trestaneckÃ© kolonie.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_07"); //Ã‚ekl bych, Å¾e mÃ¡Å¡ velkÃ© plÃ¡ny. UvidÃ­me se pozdÄ™ji u Xardase.
 	
 	AI_StopProcessInfos (self);
 	
@@ -200,7 +200,7 @@ instance DIA_Addon_Lester_STADT		(C_INFO)
 	condition	 = 	DIA_Addon_Lester_STADT_Condition;
 	information	 = 	DIA_Addon_Lester_STADT_Info;
 
-	description	 = 	"Mám namíâeno do KHORINIDU! Co bys mi o tom mêstê âekl?";
+	description	 = 	"MÃ¡m namÃ­Ã¢eno do KHORINIDU! Co bys mi o tom mÄ™stÄ™ Ã¢ekl?";
 };
 
 func int DIA_Addon_Lester_STADT_Condition ()
@@ -215,11 +215,11 @@ func int DIA_Addon_Lester_STADT_Condition ()
 
 func void DIA_Addon_Lester_STADT_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_00"); //Mám namíâeno do Khorinidu, víš o tom mêstê nêco zajímavého?
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_01"); //Khorinis? No, to je jen obyèejný pâístav, nic zvláštního.
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_02"); //Proè se ptáš?
-	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_03"); //Musím zajít za paladiny, kteâí se prý ve mêstê usadili.
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_04"); //(smêje se) Vážnê? Haha! Vždyã tê nepustí ani do mêsta, natož do paladinského sídla!
+	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_00"); //MÃ¡m namÃ­Ã¢eno do Khorinidu, vÃ­Å¡ o tom mÄ™stÄ™ nÄ™co zajÃ­mavÃ©ho?
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_01"); //Khorinis? No, to je jen obyÄejnÃ½ pÃ¢Ã­stav, nic zvlÃ¡Å¡tnÃ­ho.
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_02"); //ProÄ se ptÃ¡Å¡?
+	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_03"); //MusÃ­m zajÃ­t za paladiny, kteÃ¢Ã­ se prÃ½ ve mÄ™stÄ™ usadili.
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_04"); //(smÄ™je se) VÃ¡Å¾nÄ™? Haha! VÅ¾dyÄƒ tÄ™ nepustÃ­ ani do mÄ™sta, natoÅ¾ do paladinskÃ©ho sÃ­dla!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -232,7 +232,7 @@ instance DIA_Addon_Lester_Vorschlag		(C_INFO)
 	condition	 = 	DIA_Addon_Lester_Vorschlag_Condition;
 	information	 = 	DIA_Addon_Lester_Vorschlag_Info;
 
-	description	 = 	"Napadá tê, jak bych se do mêsta nejlépe dostal?";
+	description	 = 	"NapadÃ¡ tÄ™, jak bych se do mÄ™sta nejlÃ©pe dostal?";
 };
 
 func int DIA_Addon_Lester_Vorschlag_Condition ()
@@ -247,18 +247,18 @@ func int DIA_Addon_Lester_Vorschlag_Condition ()
 
 func void DIA_Addon_Lester_Vorschlag_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_00"); //A nenapadá tê, jak bych se mohl do mêsta dostat?
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_01"); //Urèitê jo. Pâed èasem jsem tam pracoval pro starého alchymistu Constantina.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_02"); //Má ve mêstê docela vliv a stráže mají nakázáno, že mají bránou vpustit každého, kdo mu bude moci prodat nêjaké vzácné byliny.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_03"); //Takže je to jednoduchý. Nasbíráš hromadu bylin, které tu všude rostou, budeš pâedstírat, že pracuješ pro Constantina, a tak se dostaneš dovnitâ.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_04"); //Ale ne abys sbíral všechno možné. Stráže nejsou moc bystré a o alchymii nemají ani páru.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_05"); //Pustí tê dovnitâ, když uvidí poâádnou hromádku nêjaké rostliny.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_06"); //Myslím, že staèí nasbírat 10 kouskù od jednoho druhu.
-	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_07"); //Díky za tip.
+	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_00"); //A nenapadÃ¡ tÄ™, jak bych se mohl do mÄ™sta dostat?
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_01"); //UrÄitÄ™ jo. PÃ¢ed Äasem jsem tam pracoval pro starÃ©ho alchymistu Constantina.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_02"); //MÃ¡ ve mÄ™stÄ™ docela vliv a strÃ¡Å¾e majÃ­ nakÃ¡zÃ¡no, Å¾e majÃ­ brÃ¡nou vpustit kaÅ¾dÃ©ho, kdo mu bude moci prodat nÄ™jakÃ© vzÃ¡cnÃ© byliny.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_03"); //TakÅ¾e je to jednoduchÃ½. NasbÃ­rÃ¡Å¡ hromadu bylin, kterÃ© tu vÅ¡ude rostou, budeÅ¡ pÃ¢edstÃ­rat, Å¾e pracujeÅ¡ pro Constantina, a tak se dostaneÅ¡ dovnitÃ¢.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_04"); //Ale ne abys sbÃ­ral vÅ¡echno moÅ¾nÃ©. StrÃ¡Å¾e nejsou moc bystrÃ© a o alchymii nemajÃ­ ani pÃ¡ru.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_05"); //PustÃ­ tÄ™ dovnitÃ¢, kdyÅ¾ uvidÃ­ poÃ¢Ã¡dnou hromÃ¡dku nÄ™jakÃ© rostliny.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_06"); //MyslÃ­m, Å¾e staÄÃ­ nasbÃ­rat 10 kouskÅ¯ od jednoho druhu.
+	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_07"); //DÃ­ky za tip.
 	
 	Log_CreateTopic (TOPIC_Addon_PickForConstantino, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_PickForConstantino, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_PickForConstantino,"Lester tvrdí, že pâes mêstské stráže se dostanu, ponesu-li aspoà 10 kouskù nêjaké byliny a âeknu jim, že jsou urèeny pro starého alchymistu Constantina."); 
+	B_LogEntry (TOPIC_Addon_PickForConstantino,"Lester tvrdÃ­, Å¾e pÃ¢es mÄ™stskÃ© strÃ¡Å¾e se dostanu, ponesu-li aspoÅ• 10 kouskÅ¯ nÄ™jakÃ© byliny a Ã¢eknu jim, Å¾e jsou urÄeny pro starÃ©ho alchymistu Constantina."); 
 	
 	MIS_Addon_Lester_PickForConstantino = LOG_RUNNING;
 };
@@ -273,7 +273,7 @@ instance DIA_Addon_Lester_PASSAGEPLANTSSUCCESS		(C_INFO)
 	condition	 = 	DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Condition;
 	information	 = 	DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Info;
 
-	description	 = 	"Ta vêc s bylinami pro Constantina fungovala pâímo zázraènê.";
+	description	 = 	"Ta vÄ™c s bylinami pro Constantina fungovala pÃ¢Ã­mo zÃ¡zraÄnÄ™.";
 };
 
 func int DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Condition ()
@@ -286,8 +286,8 @@ func int DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Condition ()
 
 func void DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_15_00"); //Ta vêc s bylinami pro Constantina fungovala jako kouzlo. Dostal jsem se tak kolem stráží.
-	AI_Output	(self, other, "DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_13_01"); //Jak jsem âekl. Obèas bys mê mohl trochu poslouchat, pâíteli.
+	AI_Output	(other, self, "DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_15_00"); //Ta vÄ™c s bylinami pro Constantina fungovala jako kouzlo. Dostal jsem se tak kolem strÃ¡Å¾Ã­.
+	AI_Output	(self, other, "DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_13_01"); //Jak jsem Ã¢ekl. ObÄas bys mÄ™ mohl trochu poslouchat, pÃ¢Ã­teli.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -301,7 +301,7 @@ INSTANCE DIA_Lester_Perm (C_INFO)
 	condition	= DIA_Lester_Perm_Condition;
 	information	= DIA_Lester_Perm_Info;
 	permanent	= TRUE;
-	description = "Co víš o tomhle místê?";
+	description = "Co vÃ­Å¡ o tomhle mÃ­stÄ™?";
 };                       
 FUNC INT DIA_Lester_Perm_Condition()
 {
@@ -314,9 +314,9 @@ FUNC INT DIA_Lester_Perm_Condition()
 };
 FUNC VOID DIA_Lester_Perm_Info()
 {	
-	AI_Output	(other, self,"DIA_Lester_Perm_15_00");	//Co víš o tomhle místê?
-	AI_Output	(self, other,"DIA_Lester_Perm_13_01");	//Když pùjdeš tudy dolù, dojdeš na farmu. O kousek dál už zaèíná mêsto.
-	AI_Output	(self, other,"DIA_Lester_Perm_13_02");	//Ale buë opatrný. Nepotulují se tam jen vlci a krysy, ale také goblini a banditi!
+	AI_Output	(other, self,"DIA_Lester_Perm_15_00");	//Co vÃ­Å¡ o tomhle mÃ­stÄ™?
+	AI_Output	(self, other,"DIA_Lester_Perm_13_01");	//KdyÅ¾ pÅ¯jdeÅ¡ tudy dolÅ¯, dojdeÅ¡ na farmu. O kousek dÃ¡l uÅ¾ zaÄÃ­nÃ¡ mÄ™sto.
+	AI_Output	(self, other,"DIA_Lester_Perm_13_02");	//Ale buÃ« opatrnÃ½. NepotulujÃ­ se tam jen vlci a krysy, ale takÃ© goblini a banditi!
 };
 // ************************************************************
 // 		  		Sleep
@@ -328,7 +328,7 @@ INSTANCE DIA_Lester_Sleep (C_INFO)
 	condition	= DIA_Lester_Sleep_Condition;
 	information	= DIA_Lester_Sleep_Info;
 	permanent	= TRUE;
-	description = "Ještê poâád jsi unavený?";
+	description = "JeÅ¡tÄ™ poÃ¢Ã¡d jsi unavenÃ½?";
 };                       
 FUNC INT DIA_Lester_Sleep_Condition()
 {
@@ -340,9 +340,9 @@ FUNC INT DIA_Lester_Sleep_Condition()
 };
 FUNC VOID DIA_Lester_Sleep_Info()
 {	
-	AI_Output	(other, self,"DIA_Lester_Sleep_15_00");	//Ještê poâád jsi unavený?
-	AI_Output	(self, other,"DIA_Lester_Sleep_13_01");	//A jak. (zívne si) Âekl jsem Xardasovi všechno. Teë se na chvilku prospím. Tak den...
-	AI_Output	(self, other,"DIA_Lester_Sleep_13_02");	//dva... možná déle.
+	AI_Output	(other, self,"DIA_Lester_Sleep_15_00");	//JeÅ¡tÄ™ poÃ¢Ã¡d jsi unavenÃ½?
+	AI_Output	(self, other,"DIA_Lester_Sleep_13_01");	//A jak. (zÃ­vne si) Ã‚ekl jsem Xardasovi vÅ¡echno. TeÃ« se na chvilku prospÃ­m. Tak den...
+	AI_Output	(self, other,"DIA_Lester_Sleep_13_02");	//dva... moÅ¾nÃ¡ dÃ©le.
 	
 	AI_StopProcessInfos (self);
 };
@@ -400,17 +400,17 @@ func int DIA_Lester_BACKINTOWN_Condition ()
 };
 func void DIA_Lester_BACKINTOWN_Info ()
 {
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_00"); //Hej, koneènê ses vrátil! Musíš jít okamžitê za Xardasem, máme problém.
-	AI_Output			(other, self, "DIA_Lester_BACKINTOWN_15_01"); //Tak tomu naprosto vêâím.
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_02"); //Co jsi odešel, propuklo naprosté peklo.
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_03"); //Promluv si s Xardasem, èeká na tebe!
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_04"); //Xardas mi pro tebe dal tuhle runu. S její pomocí se k nêmu dostaneš rychleji. Setkáme se tam.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_00"); //Hej, koneÄnÄ™ ses vrÃ¡til! MusÃ­Å¡ jÃ­t okamÅ¾itÄ™ za Xardasem, mÃ¡me problÃ©m.
+	AI_Output			(other, self, "DIA_Lester_BACKINTOWN_15_01"); //Tak tomu naprosto vÄ™Ã¢Ã­m.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_02"); //Co jsi odeÅ¡el, propuklo naprostÃ© peklo.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_03"); //Promluv si s Xardasem, ÄekÃ¡ na tebe!
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_04"); //Xardas mi pro tebe dal tuhle runu. S jejÃ­ pomocÃ­ se k nÄ™mu dostaneÅ¡ rychleji. SetkÃ¡me se tam.
 	
 	CreateInvItems 		(self,ItRu_TeleportXardas,1);
 	B_GiveInvItems 		(self,other,ItRu_TeleportXardas,1);
 	
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine (self,"START");	//Joly: Lester geht wieder zurück in sein Tal!
+	Npc_ExchangeRoutine (self,"START");	//Joly: Lester geht wieder zurÃ¼ck in sein Tal!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -424,7 +424,7 @@ instance DIA_Lester_PERM3		(C_INFO)
 	information	 = 	DIA_Lester_PERM3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nevypadáš zrovna nadšenê.";
+	description	 = 	"NevypadÃ¡Å¡ zrovna nadÅ¡enÄ™.";
 };
 
 func int DIA_Lester_PERM3_Condition ()
@@ -439,27 +439,27 @@ func int DIA_Lester_PERM3_Condition ()
 var int DIA_Lester_PERM3_OneTime;
 func void DIA_Lester_PERM3_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_PERM3_15_00"); //Nevypadáš zrovna nadšenê.
+	AI_Output			(other, self, "DIA_Lester_PERM3_15_00"); //NevypadÃ¡Å¡ zrovna nadÅ¡enÄ™.
 	
 	if (hero.guild == GIL_KDF)
 	{
 		if (DIA_Lester_PERM3_OneTime == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_01"); //Taky moc nadšený nejsem, chlape. Jsem úplnê vyâízený a poâád mê bolí hlava.
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_02"); //Pokaždé, když se objeví ty èerné kápê, tak se to zhorší.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_01"); //Taky moc nadÅ¡enÃ½ nejsem, chlape. Jsem ÃºplnÄ™ vyÃ¢Ã­zenÃ½ a poÃ¢Ã¡d mÄ™ bolÃ­ hlava.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_02"); //PokaÅ¾dÃ©, kdyÅ¾ se objevÃ­ ty ÄernÃ© kÃ¡pÄ™, tak se to zhorÅ¡Ã­.
 			
 			if (SC_KnowsMadPsi == TRUE)
 				{
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_03"); //A já ti mùžu pâesnê âíct, proè to tak je.
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_04"); //Jo? Myslím, že to ani nechci vêdêt.
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_05"); //Ty èerné kápê - neboli Pátraèi, jak jim âíkáme my mágové - bývali pâívrženci mocného arcidémona. Neâíká ti to nic?
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_06"); //Hmm. Ne. Leda že by ses mi snažil naznaèit, že...
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_07"); //Ano, pâesnê. Ti Pátraèi byli pâívrženci Spáèe. Odpadlická sekta pomatencù z tábora v bažinách.
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_08"); //Je to tvùj bývalý lid, Lestere. Bývalé bratrstvo Spáèe. Teë z nich jsou pouzí bezduší pâisluhovaèi zla.
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_09"); //Tušil jsem to, ale doufal jsem, že to není pravda. Chceš âíct, že se vrátil? Spáè je zpátky mezi námi?
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_10"); //Dobrá otázka. Jsem si jistý jenom tím, že musím Pátraèe zastavit dâív, než budou pâíliš mocní.
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_11"); //Nelíbí se mi to, ale asi máš pravdu. Je mi líto, ale tohle všechno mi zaèíná lézt na mozek.
-					B_LogEntry (TOPIC_DEMENTOREN,"Má podezâení se potvrdila. Dokonce ani Lester už nepochybuje, že pátraèi patâí ke Spáèovým pâisluhovaèùm ze starého tábora v bažinách."); 
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_03"); //A jÃ¡ ti mÅ¯Å¾u pÃ¢esnÄ™ Ã¢Ã­ct, proÄ to tak je.
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_04"); //Jo? MyslÃ­m, Å¾e to ani nechci vÄ™dÄ™t.
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_05"); //Ty ÄernÃ© kÃ¡pÄ™ - neboli PÃ¡traÄi, jak jim Ã¢Ã­kÃ¡me my mÃ¡govÃ© - bÃ½vali pÃ¢Ã­vrÅ¾enci mocnÃ©ho arcidÃ©mona. NeÃ¢Ã­kÃ¡ ti to nic?
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_06"); //Hmm. Ne. Leda Å¾e by ses mi snaÅ¾il naznaÄit, Å¾e...
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_07"); //Ano, pÃ¢esnÄ™. Ti PÃ¡traÄi byli pÃ¢Ã­vrÅ¾enci SpÃ¡Äe. OdpadlickÃ¡ sekta pomatencÅ¯ z tÃ¡bora v baÅ¾inÃ¡ch.
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_08"); //Je to tvÅ¯j bÃ½valÃ½ lid, Lestere. BÃ½valÃ© bratrstvo SpÃ¡Äe. TeÃ« z nich jsou pouzÃ­ bezduÅ¡Ã­ pÃ¢isluhovaÄi zla.
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_09"); //TuÅ¡il jsem to, ale doufal jsem, Å¾e to nenÃ­ pravda. ChceÅ¡ Ã¢Ã­ct, Å¾e se vrÃ¡til? SpÃ¡Ä je zpÃ¡tky mezi nÃ¡mi?
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_10"); //DobrÃ¡ otÃ¡zka. Jsem si jistÃ½ jenom tÃ­m, Å¾e musÃ­m PÃ¡traÄe zastavit dÃ¢Ã­v, neÅ¾ budou pÃ¢Ã­liÅ¡ mocnÃ­.
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_11"); //NelÃ­bÃ­ se mi to, ale asi mÃ¡Å¡ pravdu. Je mi lÃ­to, ale tohle vÅ¡echno mi zaÄÃ­nÃ¡ lÃ©zt na mozek.
+					B_LogEntry (TOPIC_DEMENTOREN,"MÃ¡ podezÃ¢enÃ­ se potvrdila. Dokonce ani Lester uÅ¾ nepochybuje, Å¾e pÃ¡traÄi patÃ¢Ã­ ke SpÃ¡ÄovÃ½m pÃ¢isluhovaÄÅ¯m ze starÃ©ho tÃ¡bora v baÅ¾inÃ¡ch."); 
 					B_GivePlayerXP (XP_Lester_KnowsMadPsi);
 					DIA_Lester_PERM3_OneTime = TRUE;
 				};
@@ -469,19 +469,19 @@ func void DIA_Lester_PERM3_Info ()
 	{
 		if (Lester_IsOnBOard == LOG_SUCCESS)
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_12"); //Bolest hlavy jen tak neustoupí, ale doufejme, že si jinak s tím problémem dokážeme brzy poradit.
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_13"); //Aã tak nebo tak.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_12"); //Bolest hlavy jen tak neustoupÃ­, ale doufejme, Å¾e si jinak s tÃ­m problÃ©mem dokÃ¡Å¾eme brzy poradit.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_13"); //AÄƒ tak nebo tak.
 		}
 		else if (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_14"); //Ta bolest hlavy zaèíná být nesnesitelná. A teë na mê ještê poâád útoèí ti ještêâi. Musím se sám sebe ptát, odkud se berou.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_14"); //Ta bolest hlavy zaÄÃ­nÃ¡ bÃ½t nesnesitelnÃ¡. A teÃ« na mÄ™ jeÅ¡tÄ™ poÃ¢Ã¡d ÃºtoÄÃ­ ti jeÅ¡tÄ™Ã¢i. MusÃ­m se sÃ¡m sebe ptÃ¡t, odkud se berou.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_15"); //Ta bolest hlavy nechce pâejít. Nêco se chystá.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_15"); //Ta bolest hlavy nechce pÃ¢ejÃ­t. NÄ™co se chystÃ¡.
 		};
 	};
-	AI_Output			(self, other, "DIA_Lester_PERM3_13_16"); //(povzdechne si) Myslím, že si budu muset odpoèinout.
+	AI_Output			(self, other, "DIA_Lester_PERM3_13_16"); //(povzdechne si) MyslÃ­m, Å¾e si budu muset odpoÄinout.
 };
 
 //#####################################################################
@@ -578,19 +578,19 @@ func int DIA_Lester_XARDASWEG_Condition ()
 func void DIA_Lester_XARDASWEG_Info ()
 {
 	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_00"); //Kde je Xardas?
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_01"); //Je pryè a ve své vêži nechal ta démonická stvoâení.
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_02"); //Myslím, že nechce, aby po jeho vêži v jeho nepâítomnosti nêkdo slídil.
-	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_03"); //Kam šel?
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_04"); //To neâíkal. Jenom mê požádal, abych ti pâedal tenhle dopis.
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_01"); //Je pryÄ a ve svÃ© vÄ™Å¾i nechal ta dÃ©monickÃ¡ stvoÃ¢enÃ­.
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_02"); //MyslÃ­m, Å¾e nechce, aby po jeho vÄ™Å¾i v jeho nepÃ¢Ã­tomnosti nÄ™kdo slÃ­dil.
+	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_03"); //Kam Å¡el?
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_04"); //To neÃ¢Ã­kal. Jenom mÄ™ poÅ¾Ã¡dal, abych ti pÃ¢edal tenhle dopis.
 	
 	CreateInvItems 		(self, ItWr_XardasLetterToOpenBook_MIS, 1);					
 	B_GiveInvItems 		(self, other, ItWr_XardasLetterToOpenBook_MIS,1);
 	
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_05"); //Pâeèetl jsem si ho. Omlouvám se. Byl jsem zvêdavý.
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_05"); //PÃ¢eÄetl jsem si ho. OmlouvÃ¡m se. Byl jsem zvÄ™davÃ½.
 	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_06"); //A?
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_07"); //Nemám ponêtí, nerozumêl jsem ani slovu, chlape. Ale jedno mi je jasné: jen tak ho neuvidíme.
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_08"); //Asi mu zaèala hoâet zemê za patama, a tak se vydal do kopcù.
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Xardas zmizel. Lester mi pouze pâedal dopis, který mi mág zanechal."); 
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_07"); //NemÃ¡m ponÄ™tÃ­, nerozumÄ™l jsem ani slovu, chlape. Ale jedno mi je jasnÃ©: jen tak ho neuvidÃ­me.
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_08"); //Asi mu zaÄala hoÃ¢et zemÄ™ za patama, a tak se vydal do kopcÅ¯.
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Xardas zmizel. Lester mi pouze pÃ¢edal dopis, kterÃ½ mi mÃ¡g zanechal."); 
 };
 
 
@@ -604,7 +604,7 @@ instance DIA_Lester_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Lester_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Lester_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Zjistil jsem, kde se ukrývá nepâítel.";
+	description	 = 	"Zjistil jsem, kde se ukrÃ½vÃ¡ nepÃ¢Ã­tel.";
 };
 func int DIA_Lester_KnowWhereEnemy_Condition ()
 {	
@@ -616,31 +616,31 @@ func int DIA_Lester_KnowWhereEnemy_Condition ()
 };
 func void DIA_Lester_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_00"); //Zjistil jsem, kde se ukrývá nepâítel.
-	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_01"); //Neptej se mê proè, ale mám pocit, že bych mêl jít s tebou.
-	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_02"); //Co tím myslíš?
-	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_03"); //Nedokážu to vysvêtlit, ale je mi jasné, že odpovêë se dozvím, jen když pùjdu s tebou.
+	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_00"); //Zjistil jsem, kde se ukrÃ½vÃ¡ nepÃ¢Ã­tel.
+	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_01"); //Neptej se mÄ™ proÄ, ale mÃ¡m pocit, Å¾e bych mÄ™l jÃ­t s tebou.
+	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_02"); //Co tÃ­m myslÃ­Å¡?
+	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_03"); //NedokÃ¡Å¾u to vysvÄ™tlit, ale je mi jasnÃ©, Å¾e odpovÄ™Ã« se dozvÃ­m, jen kdyÅ¾ pÅ¯jdu s tebou.
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Lester_KnowWhereEnemy_15_04"); //Je mi líto, ale loë už je plná.
-		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_05"); //Možná je, možná je mùj osud bezvýznamný v porovnání s vêcmi, které jsou pâed námi.
-		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_06"); //Sám musíš vêdêt, co bys mêl udêlat. Postav se zlu - se mnou si hlavu nelámej.
-		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_07"); //Nejsem nijak dùležitý.
+		AI_Output			(other,self , "DIA_Lester_KnowWhereEnemy_15_04"); //Je mi lÃ­to, ale loÃ« uÅ¾ je plnÃ¡.
+		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_05"); //MoÅ¾nÃ¡ je, moÅ¾nÃ¡ je mÅ¯j osud bezvÃ½znamnÃ½ v porovnÃ¡nÃ­ s vÄ™cmi, kterÃ© jsou pÃ¢ed nÃ¡mi.
+		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_06"); //SÃ¡m musÃ­Å¡ vÄ™dÄ™t, co bys mÄ™l udÄ™lat. Postav se zlu - se mnou si hlavu nelÃ¡mej.
+		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_07"); //Nejsem nijak dÅ¯leÅ¾itÃ½.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Lester_KnowWhereEnemy);
-		Info_AddChoice (DIA_Lester_KnowWhereEnemy,"Nemohu tê vzít s sebou.",DIA_Lester_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Lester_KnowWhereEnemy,"Tak pojë se mnou a najdi své odpovêdi!",DIA_Lester_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Lester_KnowWhereEnemy,"Nemohu tÄ™ vzÃ­t s sebou.",DIA_Lester_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Lester_KnowWhereEnemy,"Tak pojÃ« se mnou a najdi svÃ© odpovÄ™di!",DIA_Lester_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Lester_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_00"); //Tak pojë se mnou a najdi své odpovêdi!
-	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_01"); //Setkáme se v pâístavu. Pâijdu tam, jakmile budu pâipraven.
-	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_Yes_13_02"); //Pospêš si, zaèíná nás tlaèit èas.
+	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_00"); //Tak pojÃ« se mnou a najdi svÃ© odpovÄ™di!
+	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_01"); //SetkÃ¡me se v pÃ¢Ã­stavu. PÃ¢ijdu tam, jakmile budu pÃ¢ipraven.
+	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_Yes_13_02"); //PospÄ™Å¡ si, zaÄÃ­nÃ¡ nÃ¡s tlaÄit Äas.
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Lester_IsOnBoard	 = LOG_SUCCESS;
@@ -660,10 +660,10 @@ FUNC VOID DIA_Lester_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Lester_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_No_15_00"); //Nemohu tê vzít s sebou.
-	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_01"); //Rozumím. Stejnê bych ti asi nebyl žádnou výraznou oporou.
-	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_02"); //Aã už si vezmeš s sebou kohokoliv, ujisti se, že mu mùžeš vêâit.
-	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_03"); //A dávej na sebe pozor.
+	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_No_15_00"); //Nemohu tÄ™ vzÃ­t s sebou.
+	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_01"); //RozumÃ­m. StejnÄ™ bych ti asi nebyl Å¾Ã¡dnou vÃ½raznou oporou.
+	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_02"); //AÄƒ uÅ¾ si vezmeÅ¡ s sebou kohokoliv, ujisti se, Å¾e mu mÅ¯Å¾eÅ¡ vÄ™Ã¢it.
+	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_03"); //A dÃ¡vej na sebe pozor.
 
 	Lester_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Lester_KnowWhereEnemy);
@@ -680,7 +680,7 @@ instance DIA_Lester_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Lester_LeaveMyShip_Condition;
 	information	 = 	DIA_Lester_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Nakonec pro tebe pâece jenom nemám místo.";
+	description	 = 	"Nakonec pro tebe pÃ¢ece jenom nemÃ¡m mÃ­sto.";
 };
 func int DIA_Lester_LeaveMyShip_Condition ()
 {	
@@ -692,9 +692,9 @@ func int DIA_Lester_LeaveMyShip_Condition ()
 };
 func void DIA_Lester_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_LeaveMyShip_15_00"); //Nakonec pro tebe pâece jenom nemám místo.
-	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_01"); //Rozumím ti. Být ve tvé situaci, asi bych udêlal to samé.
-	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_02"); //Kdybys mê potâeboval, pomohu ti. Víš, kde mê hledat.
+	AI_Output			(other, self, "DIA_Lester_LeaveMyShip_15_00"); //Nakonec pro tebe pÃ¢ece jenom nemÃ¡m mÃ­sto.
+	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_01"); //RozumÃ­m ti. BÃ½t ve tvÃ© situaci, asi bych udÄ™lal to samÃ©.
+	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_02"); //Kdybys mÄ™ potÃ¢eboval, pomohu ti. VÃ­Å¡, kde mÄ™ hledat.
 	
 	Lester_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -703,7 +703,7 @@ func void DIA_Lester_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lester_StillNeedYou		(C_INFO)
 {
@@ -712,11 +712,11 @@ instance DIA_Lester_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Lester_StillNeedYou_Condition;
 	information	 = 	DIA_Lester_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Potâebuji pâítele, který by mi pomohl.";
+	description	 = 	"PotÃ¢ebuji pÃ¢Ã­tele, kterÃ½ by mi pomohl.";
 };
 func int DIA_Lester_StillNeedYou_Condition ()
 {	
-	if ((Lester_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natürlich nur eine variable abfragen
+	if ((Lester_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natÃ¼rlich nur eine variable abfragen
 	|| (Lester_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{
@@ -725,12 +725,12 @@ func int DIA_Lester_StillNeedYou_Condition ()
 };
 func void DIA_Lester_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_StillNeedYou_15_00"); //Potâebuji pâítele, který by mi pomohl.
+	AI_Output			(other, self, "DIA_Lester_StillNeedYou_15_00"); //PotÃ¢ebuji pÃ¢Ã­tele, kterÃ½ by mi pomohl.
 	
 	if (Lester_IsOnBoard == LOG_OBSOLETE)
 	{
-		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_01"); //Vêdêl jsem to! Projdeme tím bok po boku, stejnê jako pâedtím.
-		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_02"); //Zlo by se mêlo mít na pozoru. Zaèínáme mu šlapat na paty.
+		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_01"); //VÄ™dÄ™l jsem to! Projdeme tÃ­m bok po boku, stejnÄ™ jako pÃ¢edtÃ­m.
+		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_02"); //Zlo by se mÄ™lo mÃ­t na pozoru. ZaÄÃ­nÃ¡me mu Å¡lapat na paty.
 		
 		self.flags 		 = NPC_FLAG_IMMORTAL;
 		Lester_IsOnBoard	 = LOG_SUCCESS;
@@ -747,7 +747,7 @@ func void DIA_Lester_StillNeedYou_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_03"); //Nakonec bude pâece jenom asi lepší, když tady zùstanu. Hodnê štêstí.
+		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_03"); //Nakonec bude pÃ¢ece jenom asi lepÅ¡Ã­, kdyÅ¾ tady zÅ¯stanu. HodnÄ™ Å¡tÄ™stÃ­.
 	
 		AI_StopProcessInfos (self);
 	};	

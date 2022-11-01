@@ -4,7 +4,7 @@
 
 
 //------------------------------------------------------------------------------------------------
-// Hier müssen die einzelnen Sounds eingetragen werden
+// Hier mÃ¼ssen die einzelnen Sounds eingetragen werden
 //------------------------------------------------------------------------------------------------
 //	 	 Logischer Name					   Dateiname		   Parameter
 
@@ -86,9 +86,9 @@ INSTANCE Piss_End     			    	(C_SFX_DEF) {file= "piss_end.wav";			vol = 10;			}
 				INSTANCE SFX_HealObsession				(C_SFX_DEF) {file= "MFX_BreathOfDeath_Cast.wav";	vol = 50;			};
 				INSTANCE SFX_INNOSEYE					(C_SFX_DEF) {file= "SFX_INNOSEYE.wav";				vol = 50;			};
 				INSTANCE LogEntry						(C_SFX_DEF) {file= "LogEntry.wav";					vol = 80;			};
-				INSTANCE FoundRiddlersBook				(C_SFX_DEF) {file= "Info_CorKalom_BringBook_Success_15_01.wav";	vol = 80;		};//Björn
-				INSTANCE FoundRiddler					(C_SFX_DEF) {file= "theriddle_tot_15_01.wav";					vol = 80;		};//Björn
-				INSTANCE LastDoorEvent					(C_SFX_DEF) {file= "LastDoorEvent.wav";							vol = 100;		};//Björn
+				INSTANCE FoundRiddlersBook				(C_SFX_DEF) {file= "Info_CorKalom_BringBook_Success_15_01.wav";	vol = 80;		};//BjÃ¶rn
+				INSTANCE FoundRiddler					(C_SFX_DEF) {file= "theriddle_tot_15_01.wav";					vol = 80;		};//BjÃ¶rn
+				INSTANCE LastDoorEvent					(C_SFX_DEF) {file= "LastDoorEvent.wav";							vol = 100;		};//BjÃ¶rn
 	
 	//ADDON
 				INSTANCE Ravens_Earthquake1				(C_SFX_DEF) {file= "CS_Prayer_FokusFinal.wav";		vol = 90;			};//ADDON
@@ -1665,7 +1665,7 @@ INSTANCE Piss_End     			    	(C_SFX_DEF) {file= "piss_end.wav";			vol = 10;			}
 				INSTANCE ZOM_Warn						(C_SFX_DEF) {file= "ZOM_Warn01.wav";				vol = 127;			};
 				INSTANCE ZOM_Warn_A1					(C_SFX_DEF) {file= "ZOM_Warn02.wav";				vol = 127;			};		
 		
-/* (A)mbientsounds für die Addon-(ST)einmonster added by Patrick */
+/* (A)mbientsounds fÃ¼r die Addon-(ST)einmonster added by Patrick */
 
 				INSTANCE AST_crumble					(C_SFX_DEF) {file= "AST_crumble.wav";				vol = 100;			};
 				INSTANCE AST_crumble_A1					(C_SFX_DEF) {file= "AST_crumble2.wav";				vol = 100;			};
@@ -1957,7 +1957,7 @@ INSTANCE Piss_End     			    	(C_SFX_DEF) {file= "piss_end.wav";			vol = 10;			}
                                         		                                          
                                         		                                          
 // -------------  Damage ---------------		                                          
-// sollte über das Kollisionssoundsystem         geregelt werden. IAM_ME_FL   etc.        
+// sollte Ã¼ber das Kollisionssoundsystem         geregelt werden. IAM_ME_FL   etc.        
                                                                                           
                                         		                                          
                                         		                                          
@@ -1965,7 +1965,7 @@ INSTANCE Piss_End     			    	(C_SFX_DEF) {file= "piss_end.wav";			vol = 10;			}
 //				INSTANCE FIG_HitFlesh					(C_SFX_DEF) {file= "CS_IAM_UD_FL_01.wav";			vol = 90;			}; 
 //				INSTANCE FIG_HitFlesh_A1				(C_SFX_DEF) {file= "CS_IAM_UD_FL_02.wav";			vol = 90;			}; 
                                             		                                      
-/* final */	    //   nicht löschen !!!                            		                                      
+/* final */	    //   nicht lÃ¶schen !!!                            		                                      
 				INSTANCE FIG_SwordFinal					(C_SFX_DEF) {file= "Sword_Finalhit.wav";			vol = 45;			}; 
                                             		                                      
 /* dummydie */                                                                            
@@ -2062,7 +2062,7 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 
 // Untergrund-SFX_Gobbo
 // !NOTE by KaiRo
-// In der GOBBO.MDS habe ich für den Gobbo die gleichen Untergrund-Sounds genommen, wie für den Human.
+// In der GOBBO.MDS habe ich fÃ¼r den Gobbo die gleichen Untergrund-Sounds genommen, wie fÃ¼r den Human.
 
 
 
@@ -2091,7 +2091,7 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 				CONST STRING CS_AL = "UD ME ST WO EA WA";*/
 				
 				
-// [EDENFELD] In Gothic 2 wird das System drastisch verkürzt, da die Programmlogik für obige Tabelle buggy ist.
+// [EDENFELD] In Gothic 2 wird das System drastisch verkÃ¼rzt, da die Programmlogik fÃ¼r obige Tabelle buggy ist.
 // Niemand versteht diese Geschichten jetzt noch ausser ich, also Finger weg
 
 				CONST STRING CS_MH = "FL LE ME";			// Flesh, Leather, Metal
@@ -2144,11 +2144,11 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 //////////////////////////////////////////////////////////////////////////////
 
 // Defaults (CS_MHL, CS_MHM ...) werden benutzt, wenn der im Game auftauchenden Collisions-Situation
-// kein Script-Sound zugeordnet wurde, bei dem die Materialien (o.ä.) passen.
+// kein Script-Sound zugeordnet wurde, bei dem die Materialien (o.Ã¤.) passen.
 
 //////////////////////////////////////////////////////
 
-// Materialkürzel:
+// MaterialkÃ¼rzel:
 // ---------------
 // WO - Wood
 // ME - Metal
@@ -2162,15 +2162,15 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 // Event-Kategorien:
 // -----------------
 
-// IAI - Item Attacks Item, überwiegend Parade beim Schertkampf
+// IAI - Item Attacks Item, Ã¼berwiegend Parade beim Schertkampf
 // IAM - Item Attacks Model, Spieler drescht mit der Waffe auf einen NPC ein
 // IAL - Item Attacks Level, Spieler haut mit der Waffe vor eine Wand
 // IAO - Item Attacks Object, Spieler haut mit der Waffe auf ein Objekt, meistens die gleichen Waves wie bei IAL
 
-// IHL - Item Hits Level, ein Gegenstand fällt auf den Boden
-// IHO - Item Hits Object, ein Gegenstand fällt auf ein Objekt, meistens Brücken etc.
+// IHL - Item Hits Level, ein Gegenstand fÃ¤llt auf den Boden
+// IHO - Item Hits Object, ein Gegenstand fÃ¤llt auf ein Objekt, meistens BrÃ¼cken etc.
 
-// MAM - Model Attacks Model, Spieler brät seinem Gegenüber im Faustkampf eins über
+// MAM - Model Attacks Model, Spieler brÃ¤t seinem GegenÃ¼ber im Faustkampf eins Ã¼ber
 
 // MAL - ?!?!?!? - Model Attacks Level, Spieler trifft mit dem Fausthieb eine Wand
 // MAO - ?!?!?!? - Model Attacks Object, Spieler boxt vor einen Tisch. Naja...
@@ -2190,8 +2190,8 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 				INSTANCE CS_IAI_ME_ME_A7				(C_SFX_DEF) {file= "CS_IAI_ME_ME_08.wav";			vol = 60;			};
 				
 				
-				// [EDENFELD] neu, die machen vielleicht auch Sinn (Paladin Rüstung)
-				// gibts noch mehr Rüstungmaterialien als Leather und Metal ? Nein ? Dann ist hiermit genug!
+				// [EDENFELD] neu, die machen vielleicht auch Sinn (Paladin RÃ¼stung)
+				// gibts noch mehr RÃ¼stungmaterialien als Leather und Metal ? Nein ? Dann ist hiermit genug!
 				INSTANCE CS_IAI_WO_ME					(C_SFX_DEF) {file= "CS_IHL_WO_ST.wav";				vol = 60;			};
 				INSTANCE CS_IAI_WO_ME_A1				(C_SFX_DEF) {file= "CS_IAI_ME_ME_02.wav";			vol = 60;			};
 				INSTANCE CS_IAI_WO_ME_A2				(C_SFX_DEF) {file= "CS_IAI_ME_ME_03.wav";			vol = 60;			};
@@ -2225,8 +2225,8 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 				INSTANCE CS_IAM_ME_LE					(C_SFX_DEF) {file= "CS_IAM_UD_FL_01.wav";			vol = 80;			};
 				INSTANCE CS_IAM_WO_LE					(C_SFX_DEF) {file= "CS_IAM_UD_FL_01.wav";			vol = 80;			};
 				
-								// [EDENFELD] neu, die machen vielleicht auch Sinn (Paladin Rüstung)
-				// gibts noch mehr Rüstungmaterialien als Leather und Metal ? Nein ? Dann ist hiermit genug!
+								// [EDENFELD] neu, die machen vielleicht auch Sinn (Paladin RÃ¼stung)
+				// gibts noch mehr RÃ¼stungmaterialien als Leather und Metal ? Nein ? Dann ist hiermit genug!
 				INSTANCE CS_IAM_WO_ME					(C_SFX_DEF) {file= "CS_IAM_UD_FL_01.wav";			vol = 80;			};
 				INSTANCE CS_IAM_ME_ME					(C_SFX_DEF) {file= "CS_IAM_UD_FL_01.wav";			vol = 80;			};
 		                                                                                         		             		
@@ -2275,10 +2275,10 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 				INSTANCE CS_IHL_LE_SA					(C_SFX_DEF) {file= "CS_IHL_GL_UD.wav";				vol = 60;			};
                                                   		             		
 				                                                                                		             		
-				// wenn die folgenden 3 blöcke einkommentiert werden, stürzt der parser ab.     		             		
-				// lösung: bei programmieren im debug-mode durchlaufen lassen und im parser     		             		
-				// direkt überprüfen, was er für mucken macht.                                  		
-				// hinweis: die materialkürzel CL und GL tauchen oben in dem string auf, FL hingegen nicht
+				// wenn die folgenden 3 blÃ¶cke einkommentiert werden, stÃ¼rzt der parser ab.     		             		
+				// lÃ¶sung: bei programmieren im debug-mode durchlaufen lassen und im parser     		             		
+				// direkt Ã¼berprÃ¼fen, was er fÃ¼r mucken macht.                                  		
+				// hinweis: die materialkÃ¼rzel CL und GL tauchen oben in dem string auf, FL hingegen nicht
 				                                                                                		
 				/*                                                                              		
 				INSTANCE CS_IHL_GL_ME					(C_SFX_DEF) {file= "CS_IHL_GL_WO.wav";				vol = 80;			};
@@ -2333,7 +2333,7 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 				INSTANCE CS_MAM_A2						(C_SFX_DEF)	{file= "CS_IAM_UD_FL_03.wav";			vol = 60;			};
 				
 				// [EDENFELD] neu
-				// Menschenfaust trifft auf Rüstung
+				// Menschenfaust trifft auf RÃ¼stung
 				INSTANCE CS_MAM_FI_FL					(C_SFX_DEF)	{file= "CS_MAM_FI_FL_01.wav";			vol = 60;			};		// Menschen-Faustkampf
 				INSTANCE CS_MAM_FI_FL_A1				(C_SFX_DEF)	{file= "CS_MAM_FI_FL_01.wav";			vol = 60;			};		// Menschen-Faustkampf
 				INSTANCE CS_MAM_FI_FL_A2				(C_SFX_DEF)	{file= "CS_MAM_FI_FL_01.wav";			vol = 60;			};		// Menschen-Faustkampf
@@ -2344,7 +2344,7 @@ INSTANCE CONTROL_RETURN     	(C_SFX_DEF) {file= "Magic_6.wav" ;					};
 				INSTANCE CS_MAM_FI_WO_A1				(C_SFX_DEF)	{file= "CS_MAM_FI_FL_03.wav";			vol = 60;			};	
 				INSTANCE CS_MAM_FI_WO_A2				(C_SFX_DEF)	{file= "CS_MAM_FI_FL_03.wav";			vol = 60;			};	
 				
-				// Monster trifft auf Rüstung
+				// Monster trifft auf RÃ¼stung
 				INSTANCE CS_MAM_JA_FL					(C_SFX_DEF)	{file= "CS_IAM_UD_FL_01.wav";			vol = 60;			};		// Monster gegen Faust
 				INSTANCE CS_MAM_JA_ME					(C_SFX_DEF)	{file= "CS_IAM_UD_FL_01.wav";			vol = 60;			};	
 				INSTANCE CS_MAM_JA_WO					(C_SFX_DEF)	{file= "CS_IAM_UD_FL_01.wav";			vol = 60;			};	

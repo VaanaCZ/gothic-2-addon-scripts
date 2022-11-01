@@ -33,7 +33,7 @@ INSTANCE DIA_Milten_DI_Hello(C_INFO)
 	condition	= DIA_Milten_DI_Hello_Condition;
 	information	= DIA_Milten_DI_Hello_Info;
 
-	description = "Jako za star˝ch Ëas˘.";
+	description = "Jako za star√Ωch ƒças≈Ø.";
 
 };                       
 
@@ -47,10 +47,10 @@ FUNC INT DIA_Milten_DI_Hello_Condition()
 
 FUNC VOID DIA_Milten_DI_Hello_Info()
 {	
-		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_00"); //Jako za star˝ch Ëas˘.
-		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_01"); //Jak ‚Ìk·ö. Jsem zvÍdav˝, jestli se ti to tentokr·t poda‚Ì.
+		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_00"); //Jako za star√Ωch ƒças≈Ø.
+		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_01"); //Jak √¢√≠k√°≈°. Jsem zvƒôdav√Ω, jestli se ti to tentokr√°t poda√¢√≠.
 		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_02"); //Co?
-		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_03"); //Zachr·nit si zadek d‚Ìv, neû zase propukne peklo.
+		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_03"); //Zachr√°nit si zadek d√¢√≠v, ne≈æ zase propukne peklo.
 	
 };	
  
@@ -66,7 +66,7 @@ instance DIA_Milten_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Nem˘ûeö postr·dat p·r lektvar˘?";
+	description	 = 	"Nem≈Ø≈æe≈° postr√°dat p√°r lektvar≈Ø?";
 };
 
 func int DIA_Milten_DI_TRADE_Condition ()
@@ -80,7 +80,7 @@ func int DIA_Milten_DI_TRADE_Condition ()
 
 func void DIA_Milten_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_TRADE_15_00"); //Nem˘ûeö postr·dat p·r lektvar˘?
+	AI_Output			(other, self, "DIA_Milten_DI_TRADE_15_00"); //Nem≈Ø≈æe≈° postr√°dat p√°r lektvar≈Ø?
 	B_GiveTradeInv (self);
 	//Joly: Mc ManaHealth
 	//////////////////////////////////////////////////////////////////////////////////////
@@ -106,7 +106,7 @@ INSTANCE DIA_Milten_DI_Rat(C_INFO)
 	condition	= DIA_Milten_DI_Rat_Condition;
 	information	= DIA_Milten_DI_Rat_Info;
 
-	description = "Co mi m˘ûeö d·t za radu?";
+	description = "Co mi m≈Ø≈æe≈° d√°t za radu?";
 
 };                       
 FUNC INT DIA_Milten_DI_Rat_Condition()
@@ -120,9 +120,9 @@ FUNC INT DIA_Milten_DI_Rat_Condition()
 
 FUNC VOID DIA_Milten_DI_Rat_Info()
 {	
-	AI_Output (other,self ,"DIA_Milten_DI_Rat_15_00"); //Co mi m˘ûeö d·t za radu?
-	AI_Output (self ,other,"DIA_Milten_DI_Rat_03_01"); //Hmm. Je to velk· Ëest, ûe ze vöech lidÌ se pt·ö na radu pr·vÍ mÍ. Celou dobu myslÌm na jedinou vÍc.
-	AI_Output (self, other, "DIA_Milten_DI_Rat_03_02"); //P‚inesl jsi Innosovo oko?
+	AI_Output (other,self ,"DIA_Milten_DI_Rat_15_00"); //Co mi m≈Ø≈æe≈° d√°t za radu?
+	AI_Output (self ,other,"DIA_Milten_DI_Rat_03_01"); //Hmm. Je to velk√° ƒçest, ≈æe ze v≈°ech lid√≠ se pt√°≈° na radu pr√°vƒô mƒô. Celou dobu mysl√≠m na jedinou vƒôc.
+	AI_Output (self, other, "DIA_Milten_DI_Rat_03_02"); //P√¢inesl jsi Innosovo oko?
 	
 	Info_ClearChoices	(DIA_Milten_DI_Rat);
 
@@ -132,23 +132,23 @@ FUNC VOID DIA_Milten_DI_Rat_Info()
 	}
 	else
 	{
-		Info_AddChoice	(DIA_Milten_DI_Rat, "Samoz‚ejmÍ.", DIA_Milten_DI_Rat_ja );
+		Info_AddChoice	(DIA_Milten_DI_Rat, "Samoz√¢ejmƒô.", DIA_Milten_DI_Rat_ja );
 	};
 };	
 
 func void DIA_Milten_DI_Rat_nein ()
 {
 	AI_Output			(other, self, "DIA_Milten_DI_Rat_nein_15_00"); //Ne.
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_01"); //(pobou‚enÍ) Ty jsi tak... Co udÍl·ö, kdyû tady na ostrovÍ narazÌö na draky?
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_02"); //Copak jsi jeötÍ nedostal rozum? M·me tady dokonce alchymistickou kolonu, abychom tu pitomou vÍc mohli zase nabÌt.
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_03"); //Co to ksakru dÍl·ö? Douf·m, ûe n·s tvoje nedbalost nebude st·t krk.
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_01"); //(pobou√¢enƒô) Ty jsi tak... Co udƒôl√°≈°, kdy≈æ tady na ostrovƒô naraz√≠≈° na draky?
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_02"); //Copak jsi je≈°tƒô nedostal rozum? M√°me tady dokonce alchymistickou kolonu, abychom tu pitomou vƒôc mohli zase nab√≠t.
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_03"); //Co to ksakru dƒôl√°≈°? Douf√°m, ≈æe n√°s tvoje nedbalost nebude st√°t krk.
 	Info_ClearChoices	(DIA_Milten_DI_Rat);
 };
 
 func void DIA_Milten_DI_Rat_ja ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_Rat_ja_15_00"); //Samoz‚ejmÍ.
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_ja_03_01"); //Promi‡, ûe se tak hloupÍ pt·m. Jsem trochu nervÛznÌ.
+	AI_Output			(other, self, "DIA_Milten_DI_Rat_ja_15_00"); //Samoz√¢ejmƒô.
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_ja_03_01"); //Promi≈ï, ≈æe se tak hloupƒô pt√°m. Jsem trochu nerv√≥zn√≠.
  	B_GivePlayerXP (XP_Ambient);
  	Info_ClearChoices	(DIA_Milten_DI_Rat);
 
@@ -164,7 +164,7 @@ instance DIA_Milten_DI_PEDROTOT		(C_INFO)
 	condition	 = 	DIA_Milten_DI_PEDROTOT_Condition;
 	information	 = 	DIA_Milten_DI_PEDROTOT_Info;
 
-	description	 = 	"Naöel jsem Pedra.";
+	description	 = 	"Na≈°el jsem Pedra.";
 };
 
 func int DIA_Milten_DI_PEDROTOT_Condition ()
@@ -177,19 +177,19 @@ func int DIA_Milten_DI_PEDROTOT_Condition ()
 
 func void DIA_Milten_DI_PEDROTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_00"); //Naöel jsem Pedra.
-	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_01"); //(p‚ekvapenÍ) Coûe? Kde? Tady na ostrovÍ? Sakra, to je naprosto k neuvÍ‚enÌ.
-	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_02"); //V·ûnÍ jsem netuöil, ûe to je tak tvrd˝ parchant.
+	AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_00"); //Na≈°el jsem Pedra.
+	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_01"); //(p√¢ekvapenƒô) Co≈æe? Kde? Tady na ostrovƒô? Sakra, to je naprosto k neuvƒô√¢en√≠.
+	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_02"); //V√°≈ænƒô jsem netu≈°il, ≈æe to je tak tvrd√Ω parchant.
 	B_GivePlayerXP (XP_Ambient);
 
 	if (Npc_IsDead(Pedro_DI))
 	{
-		AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_03"); //Je mrtv˝.
-		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_04"); //V·ûnÍ? Dobr·. Pokoj jeho duöi. Nem˘ûu sice ‚Ìct, ûe by mi ho bylo nÍjak lÌto, ale stejnÍ bych s nÌm r·d prohodil slovo.
+		AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_03"); //Je mrtv√Ω.
+		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_04"); //V√°≈ænƒô? Dobr√°. Pokoj jeho du≈°i. Nem≈Ø≈æu sice √¢√≠ct, ≈æe by mi ho bylo nƒôjak l√≠to, ale stejnƒô bych s n√≠m r√°d prohodil slovo.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_05"); //P‚ed ned·vnem jsme se trochu chytili.
+		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_05"); //P√¢ed ned√°vnem jsme se trochu chytili.
 	};
 };
 
@@ -205,7 +205,7 @@ INSTANCE DIA_Milten_DI_TeachMagic(C_INFO)
 	information	= DIA_Milten_DI_TeachMagic_Info;
 	permanent	 = 	TRUE;
 
-	description = "R·d bych si vylepöil svÈ magickÈ schopnosti.";
+	description = "R√°d bych si vylep≈°il sv√© magick√© schopnosti.";
 
 };                       
 FUNC INT DIA_Milten_DI_TeachMagic_Condition()
@@ -220,22 +220,22 @@ FUNC INT DIA_Milten_DI_TeachMagic_Condition()
 var int DIA_Milten_DI_TeachMagic_OneTime;
 FUNC VOID DIA_Milten_DI_TeachMagic_Info()
 {	
-	AI_Output (other,self ,"DIA_Milten_DI_TeachMagic_15_00"); //R·d bych si vylepöil svÈ magickÈ schopnosti.
+	AI_Output (other,self ,"DIA_Milten_DI_TeachMagic_15_00"); //R√°d bych si vylep≈°il sv√© magick√© schopnosti.
 	
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_01"); //UvidÌm, co bude v m˝ch sil·ch.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_01"); //Uvid√≠m, co bude v m√Ωch sil√°ch.
 	}
 	else
 	{
 		if (DIA_Milten_DI_TeachMagic_OneTime == FALSE)
 			{
-				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_02"); //Pom˘ûu ti, ale jen pod podmÌnkou, ûe se postar·ö, aby sk‚eti z˘stali tam, kde jsou.
+				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_02"); //Pom≈Ø≈æu ti, ale jen pod podm√≠nkou, ≈æe se postar√°≈°, aby sk√¢eti z≈Østali tam, kde jsou.
 				DIA_Milten_DI_TeachMagic_OneTime = TRUE;
 			}
 		else
 			{
-				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_03"); //Dobr·. Co pot‚ebujeö?
+				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_03"); //Dobr√°. Co pot√¢ebuje≈°?
 			};
 	};
 	
@@ -256,7 +256,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_1()
 {
 	if (B_TeachAttributePoints (self, other, ATR_MANA_MAX, 1, T_HIGH))
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_1_03_00"); //Nech„ tvÈ kroky vede ruka Innosova.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_1_03_00"); //NechƒÉ tv√© kroky vede ruka Innosova.
 	};
 
 	Info_ClearChoices 	(DIA_Milten_DI_TeachMagic);
@@ -276,7 +276,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_5()
 {
 	if (B_TeachAttributePoints (self, other, ATR_MANA_MAX, 5, T_HIGH))
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_5_03_00"); //Nech„ ti na cestu svÌtÌ svÍtlo Innosovo.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_5_03_00"); //NechƒÉ ti na cestu sv√≠t√≠ svƒôtlo Innosovo.
 	};
 
 	Info_ClearChoices 	(DIA_Milten_DI_TeachMagic);
@@ -296,27 +296,27 @@ FUNC VOID DIA_Milten_DI_TeachMagic_RUNES ()
 	Info_ClearChoices (DIA_Milten_DI_TeachMagic);
 	Info_AddChoice	  (DIA_Milten_DI_TeachMagic, DIALOG_BACK, DIA_Milten_DI_TeachMagic_BACK);
 	
-	AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_00"); //Ale ne! To v·ûnÍ nenÌ m˘j obor, ale nÍjak to holt zvl·dneme.
+	AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_00"); //Ale ne! To v√°≈ænƒô nen√≠ m≈Øj obor, ale nƒôjak to holt zvl√°dneme.
 
 	if (hero.guild == GIL_PAL)
 	{
-		Info_AddChoice	  (DIA_Milten_DI_TeachMagic,"PaladinskÈ runy", DIA_Milten_DI_TeachMagic_Runen_Paladin);
+		Info_AddChoice	  (DIA_Milten_DI_TeachMagic,"Paladinsk√© runy", DIA_Milten_DI_TeachMagic_Runen_Paladin);
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 4)
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," Ëtvrt˝ kruh", DIA_Milten_DI_TeachMagic_Runen_Circle_4);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," ƒçtvrt√Ω kruh", DIA_Milten_DI_TeachMagic_Runen_Circle_4);
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 5)
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," p·t˝ kruh", DIA_Milten_DI_TeachMagic_Runen_Circle_5);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," p√°t√Ω kruh", DIA_Milten_DI_TeachMagic_Runen_Circle_5);
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 6) 
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," öest˝ kruh", DIA_Milten_DI_TeachMagic_Runen_Circle_6);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," ≈°est√Ω kruh", DIA_Milten_DI_TeachMagic_Runen_Circle_6);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_01"); //Aha. JeötÍ po‚·d nejsi ˙plnÍ p‚ipraven. Nejd‚Ìv se nauË vyööÌ kruhy, pak ti budu schopen pomoci.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_01"); //Aha. Je≈°tƒô po√¢√°d nejsi √∫plnƒô p√¢ipraven. Nejd√¢√≠v se nauƒç vy≈°≈°√≠ kruhy, pak ti budu schopen pomoci.
 	};
 };
 
@@ -334,31 +334,31 @@ FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Paladin ()
 	
 	if (PLAYER_TALENT_RUNES [SPL_PalLight] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("SvÍtlo", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLight)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Svƒôtlo", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLight)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight);
 	};
 	if	(PLAYER_TALENT_RUNES [SPL_PalLightHeal] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("LÈËenÌ", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLightHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLightHeal);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("L√©ƒçen√≠", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLightHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLightHeal);
 	};
 	if	(PLAYER_TALENT_RUNES [SPL_PalHolyBolt] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Svat˝ öÌp", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalHolyBolt)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalHolyBolt);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Svat√Ω ≈°√≠p", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalHolyBolt)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalHolyBolt);
 	};
 	if 	(PLAYER_TALENT_RUNES [SPL_PalMediumHeal] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("SilnÈ lÈËenÌ", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalMediumHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalMediumHeal);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Siln√© l√©ƒçen√≠", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalMediumHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalMediumHeal);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalRepelEvil] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Zaûehn·nÌ zla", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalRepelEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalRepelEvil);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Za≈æehn√°n√≠ zla", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalRepelEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalRepelEvil);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalFullHeal] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("VylÈËenÌ", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalFullHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalFullHeal);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Vyl√©ƒçen√≠", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalFullHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalFullHeal);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalDestroyEvil] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("ZniËenÌ zla", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalDestroyEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalDestroyEvil);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Zniƒçen√≠ zla", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalDestroyEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalDestroyEvil);
 	};
 };
 FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight()
@@ -442,7 +442,7 @@ FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Circle_4_SPL_LightningFlash()
 	B_TeachPlayerTalentRunes (self, other, SPL_LightningFlash);		
 };
 //**********************************************************
-// F¸nfter Kreis 
+// F√ºnfter Kreis 
 //--------------------------
 //**********************************************************
 FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Circle_5()
@@ -552,7 +552,7 @@ instance DIA_Milten_DI_DementorObsessionBook		(C_INFO)
 	condition	 = 	DIA_Milten_DI_DementorObsessionBook_Condition;
 	information	 = 	DIA_Milten_DI_DementorObsessionBook_Info;
 
-	description	 = 	"Tahle kniha, Almanach posedl˝ch, ne‚Ìk· ti to nic?";
+	description	 = 	"Tahle kniha, Almanach posedl√Ωch, ne√¢√≠k√° ti to nic?";
 };
 
 func int DIA_Milten_DI_DementorObsessionBook_Condition ()
@@ -565,9 +565,9 @@ func int DIA_Milten_DI_DementorObsessionBook_Condition ()
 
 func void DIA_Milten_DI_DementorObsessionBook_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_DementorObsessionBook_15_00"); //Tahle kniha, Almanach posedl˝ch, ne‚Ìk· ti to nic?
-	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_01"); //Na tenhle druh knih je odbornÌk Pyrokar.
-	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_02"); //Omlouv·m se. VÌm toho p‚Ìliö m·lo na to, abych o nÍËem takovÈm ‚ekl cokoliv smysluplnÈho.
+	AI_Output			(other, self, "DIA_Milten_DI_DementorObsessionBook_15_00"); //Tahle kniha, Almanach posedl√Ωch, ne√¢√≠k√° ti to nic?
+	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_01"); //Na tenhle druh knih je odborn√≠k Pyrokar.
+	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_02"); //Omlouv√°m se. V√≠m toho p√¢√≠li≈° m√°lo na to, abych o nƒôƒçem takov√©m √¢ekl cokoliv smyslupln√©ho.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -581,7 +581,7 @@ instance DIA_Milten_DI_DragonEgg		(C_INFO)
 	condition	 = 	DIA_Milten_DI_DragonEgg_Condition;
 	information	 = 	DIA_Milten_DI_DragonEgg_Info;
 
-	description	 = 	"M·ö zkuöenosti s draËÌmi vejci?";
+	description	 = 	"M√°≈° zku≈°enosti s draƒç√≠mi vejci?";
 };
 
 func int DIA_Milten_DI_DragonEgg_Condition ()
@@ -594,9 +594,9 @@ func int DIA_Milten_DI_DragonEgg_Condition ()
 
 func void DIA_Milten_DI_DragonEgg_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_DragonEgg_15_00"); //M·ö zkuöenosti s draËÌmi vejci?
-	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_01"); //Ne, moc ne. Ale slyöel jsem, ûe jeden chytr˝ alchymista z nich pr˝ dok·zal va‚it mocnÈ lektvary.
-	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_02"); //Recept po mnÍ vöak nechtÍj. NetuöÌm, jak to dÍlal.
+	AI_Output			(other, self, "DIA_Milten_DI_DragonEgg_15_00"); //M√°≈° zku≈°enosti s draƒç√≠mi vejci?
+	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_01"); //Ne, moc ne. Ale sly≈°el jsem, ≈æe jeden chytr√Ω alchymista z nich pr√Ω dok√°zal va√¢it mocn√© lektvary.
+	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_02"); //Recept po mnƒô v≈°ak nechtƒôj. Netu≈°√≠m, jak to dƒôlal.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -627,32 +627,32 @@ FUNC INT DIA_Milten_DI_UndeadDragonDead_Condition()
 var int DIA_Milten_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_Milten_DI_UndeadDragonDead_Info()
 {	
-		AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_00"); //Tak, a je to! Chr·m je teÎ zbaven˝ svÈ sÌly.
+		AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_00"); //Tak, a je to! Chr√°m je te√´ zbaven√Ω sv√© s√≠ly.
 		
 		if (DIA_Milten_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_01"); //Jak ty to vûdycky dÍl·ö?
-			AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_02"); //A„ se propadnu, jestli to vÌm.
-			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_03"); //(se smÌchem) DoËk·me se v˘bec nÍkdy klidu? UrËitÍ bychom si to zaslouûili.
+			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_01"); //Jak ty to v≈ædycky dƒôl√°≈°?
+			AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_02"); //AƒÉ se propadnu, jestli to v√≠m.
+			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_03"); //(se sm√≠chem) Doƒçk√°me se v≈Øbec nƒôkdy klidu? Urƒçitƒô bychom si to zaslou≈æili.
 			
 			if (hero.guild == GIL_KDF)
 				{
-					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_04"); //Co m·ö v pl·nu teÎ?
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_05"); //R·d bych si zaloûil vlastnÌ akademii a k·zal naöi vÌru. Ale moûn· to dopadne trochu jinak.
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_06"); //Nikdy jsem nelitoval, ûe jsem se stal ohniv˝m m·gem. Jak to vidÌö ty?
-					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_07"); //J· si nejsem tak ˙plnÍ jist.
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_08"); //(se smÌchem) Suchar, jako obvykle. Hej, chlape. Pr·vÍ jsi zachr·nil svÍt. Copak to nenÌ d˘vod k oslav·m?
-					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_09"); //Hmm. Moûn·.
+					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_04"); //Co m√°≈° v pl√°nu te√´?
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_05"); //R√°d bych si zalo≈æil vlastn√≠ akademii a k√°zal na≈°i v√≠ru. Ale mo≈æn√° to dopadne trochu jinak.
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_06"); //Nikdy jsem nelitoval, ≈æe jsem se stal ohniv√Ωm m√°gem. Jak to vid√≠≈° ty?
+					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_07"); //J√° si nejsem tak √∫plnƒô jist.
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_08"); //(se sm√≠chem) Suchar, jako obvykle. Hej, chlape. Pr√°vƒô jsi zachr√°nil svƒôt. Copak to nen√≠ d≈Øvod k oslav√°m?
+					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_09"); //Hmm. Mo≈æn√°.
 				};		
 
-			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_10"); //Ale no tak, kamar·de. MyslÌm, ûe pr·vÍ pot‚ebujeme po‚·dn˝ho pan·ka.
+			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_10"); //Ale no tak, kamar√°de. Mysl√≠m, ≈æe pr√°vƒô pot√¢ebujeme po√¢√°dn√Ωho pan√°ka.
 			DIA_Milten_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 		
-		AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_11"); //MÍl bys jÌt rovnou za kapit·nem a ‚Ìct mu, a„ zvedne kotvy.
+		AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_11"); //Mƒôl bys j√≠t rovnou za kapit√°nem a √¢√≠ct mu, aƒÉ zvedne kotvy.
 
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 };	
 
 // ************************************************************

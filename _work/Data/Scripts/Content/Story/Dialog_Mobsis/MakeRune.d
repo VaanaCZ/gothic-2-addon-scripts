@@ -3,7 +3,7 @@
 // MAKERUNE_S1
 // --------------
 // Funktion wird durch Runentisch-Mobsi-Benutzung aufgerufen!
-// benˆtigtes Item daf¸r: ItMi_RuneBlank
+// ben√∂tigtes Item daf√ºr: ItMi_RuneBlank
 // *****************************************************
 FUNC VOID MAKERUNE_S1 ()
 {
@@ -54,7 +54,7 @@ INSTANCE PC_Circle_01 (C_Info)
 	condition		= PC_Circle_01_Condition;
 	information		= PC_Circle_01_Info;
 	permanent		= TRUE;
-	description		= "Vytvo‚it runy 1. kruhu"; 
+	description		= "Vytvo√¢it runy 1. kruhu"; 
 };
 
 FUNC INT PC_Circle_01_Condition ()
@@ -108,7 +108,7 @@ INSTANCE PC_Circle_02 (C_Info)
 	condition		= PC_Circle_02_Condition;
 	information		= PC_Circle_02_Info;
 	permanent		= TRUE;
-	description		= "Vytvo‚it runy 2. kruhu"; 
+	description		= "Vytvo√¢it runy 2. kruhu"; 
 };
 FUNC INT PC_Circle_02_Condition ()
 {
@@ -169,7 +169,7 @@ INSTANCE PC_Circle_03 (C_Info)
 	condition		= PC_Circle_03_Condition;
 	information		= PC_Circle_03_Info;
 	permanent		= TRUE;
-	description		= "Vytvo‚it runy 3. kruhu"; 
+	description		= "Vytvo√¢it runy 3. kruhu"; 
 };
 FUNC INT PC_Circle_03_Condition ()
 {	
@@ -237,7 +237,7 @@ INSTANCE PC_Circle_04 (C_Info)
 	condition		= PC_Circle_04_Condition;
 	information		= PC_Circle_04_Info;
 	permanent		= TRUE;
-	description		= "Vytvo‚it runy 4. kruhu"; 
+	description		= "Vytvo√¢it runy 4. kruhu"; 
 };
 FUNC INT PC_Circle_04_Condition ()
 {	
@@ -289,7 +289,7 @@ INSTANCE PC_Circle_05 (C_Info)
 	condition		= PC_Circle_05_Condition;
 	information		= PC_Circle_05_Info;
 	permanent		= TRUE;
-	description		= "Vytvo‚it runy 5. kruhu"; 
+	description		= "Vytvo√¢it runy 5. kruhu"; 
 };
 FUNC INT PC_Circle_05_Condition ()
 {
@@ -337,7 +337,7 @@ INSTANCE PC_Circle_06 (C_Info)
 	condition		= PC_Circle_06_Condition;
 	information		= PC_Circle_06_Info;
 	permanent		= TRUE;
-	description		= "Vytvo‚it runy 6. kruhu"; 
+	description		= "Vytvo√¢it runy 6. kruhu"; 
 };
 FUNC INT PC_Circle_06_Condition ()
 {	
@@ -390,7 +390,7 @@ INSTANCE PC_SPL_MasterOfDisaster (C_Info)
 	condition		= PC_SPL_MasterOfDisaster_Condition;
 	information		= PC_SPL_MasterOfDisaster_Info;
 	permanent		= TRUE;
-	description		= "Tajn· mÌstnost v knihovnÍ!"; 
+	description		= "Tajn√° m√≠stnost v knihovnƒô!"; 
 };
 FUNC INT PC_SPL_MasterOfDisaster_Condition ()
 {	
@@ -408,7 +408,7 @@ FUNC VOID PC_SPL_MasterOfDisaster_Info()
 	Info_AddChoice 	  (PC_SPL_MasterOfDisaster,DIALOG_BACK,PC_SPL_MasterOfDisaster_BACK);
 	if (PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] == TRUE)
 	{
-		Info_AddChoice 	  (PC_SPL_MasterOfDisaster,"Tajn· mÌstnost v knihovnÍ!",PC_SPL_MasterOfDisaster_Create);
+		Info_AddChoice 	  (PC_SPL_MasterOfDisaster,"Tajn√° m√≠stnost v knihovnƒô!",PC_SPL_MasterOfDisaster_Create);
 	};
 	
 };	
@@ -441,7 +441,7 @@ INSTANCE PC_SPL_PalTeleportSecret (C_Info)
 	condition		= PC_SPL_PalTeleportSecret_Condition;
 	information		= PC_SPL_PalTeleportSecret_Info;
 	permanent		= TRUE;
-	description		= "Vytvo‚it teleportaËnÌ runu"; 
+	description		= "Vytvo√¢it teleportaƒçn√≠ runu"; 
 };
 FUNC INT PC_SPL_PalTeleportSecret_Condition ()
 {	
@@ -459,7 +459,7 @@ FUNC VOID PC_SPL_PalTeleportSecret_Info()
 	Info_AddChoice 	  (PC_SPL_PalTeleportSecret,DIALOG_BACK,PC_SPL_PalTeleportSecret_BACK);
 	if (PLAYER_TALENT_RUNES[SPL_PalTeleportSecret] == TRUE)
 	{
-		Info_AddChoice 	  (PC_SPL_PalTeleportSecret,"Tajn· mÌstnost v knihovnÍ!",PC_SPL_PalTeleportSecret_Create);
+		Info_AddChoice 	  (PC_SPL_PalTeleportSecret,"Tajn√° m√≠stnost v knihovnƒô!",PC_SPL_PalTeleportSecret_Create);
 	};
 	
 };	

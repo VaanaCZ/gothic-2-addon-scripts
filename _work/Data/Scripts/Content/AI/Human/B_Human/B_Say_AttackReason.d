@@ -90,7 +90,7 @@ func void B_Say_AttackReason()
 		return;
 	};
 	
-	// ------ Schaf wurde angegriffen oder getötet (von Mensch oder Monster) ------
+	// ------ Schaf wurde angegriffen oder getÃ¶tet (von Mensch oder Monster) ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_SheepKiller)
 	{
 		if (other.guild < GIL_SEPERATOR_HUM)
@@ -99,7 +99,7 @@ func void B_Say_AttackReason()
 		}
 		else
 		{
-			B_Say_Overlay (self, other, "$SHEEPKILLERMONSTER");		//Das verdammte Mistvieh frißt unsere Schafe!
+			B_Say_Overlay (self, other, "$SHEEPKILLERMONSTER");		//Das verdammte Mistvieh friÃŸt unsere Schafe!
 		};
 		return;
 	};
@@ -107,18 +107,18 @@ func void B_Say_AttackReason()
 	// ------ Mensch hat Mensch ermordet ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_HumanMurderedHuman)
 	{
-		B_Say_Overlay (self, other, "$YOUMURDERER");				//Mörder!
+		B_Say_Overlay (self, other, "$YOUMURDERER");				//MÃ¶rder!
 		Npc_SendPassivePerc	(self, PERC_ASSESSFIGHTSOUND, self, other);
 		return;
 	};
 	
-	// ------ Monster hat Human getötet ------
+	// ------ Monster hat Human getÃ¶tet ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_MonsterMurderedHuman)
 	{
 		return; //kein Kommenatar
 	};
 	
-	// ------ Monster kämpft gegen Human - ich helfe Human ------
+	// ------ Monster kÃ¤mpft gegen Human - ich helfe Human ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_MonsterVsHuman)
 	{
 		B_Say_Overlay (self, other, "$DIEMONSTER");					//Da ist wieder eins von diesen Drecksviechern!
@@ -133,7 +133,7 @@ func void B_Say_AttackReason()
 		return;
 	};
 	
-	// ------ Täter hat mich verletzt ------
+	// ------ TÃ¤ter hat mich verletzt ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_ReactToDamage)
 	{
 		// ------ (N)SC ist Monster ------
@@ -143,14 +143,14 @@ func void B_Say_AttackReason()
 			B_Say_Overlay (self, other, "$YOUASKEDFORIT"); //Du hast es so gewollt!
 			return;
 		}
-		else // Täter = Human
+		else // TÃ¤ter = Human
 		{
 			B_Say_Overlay (self, other, "$YOUDAREHITME"); 			//Na warte, du Mistkerl!
 			return;
 		};
 	};
 	
-	// ------ Täter hat trotz zweimaliger Warnung Waffe nicht weggesteckt ------
+	// ------ TÃ¤ter hat trotz zweimaliger Warnung Waffe nicht weggesteckt ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_ReactToWeapon)
 	{
 		B_Say_Overlay (self, other, "$YOUASKEDFORIT"); 				//Du hast es so gewollt!
@@ -160,7 +160,7 @@ func void B_Say_AttackReason()
 	// ------ Spieler ist unbefugt in meinem Raum ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_ClearRoom)
 	{
-		B_Say_Overlay (self, other, "$THENIBEATYOUOUTOFHERE");		//Dann muss ich dich eben rausPRÜGELN!
+		B_Say_Overlay (self, other, "$THENIBEATYOUOUTOFHERE");		//Dann muss ich dich eben rausPRÃœGELN!
 		return;
 	};
 	
@@ -171,10 +171,10 @@ func void B_Say_AttackReason()
 		return;
 	};
 	
-	// ------ Wache beendet Kampf, greift Täter an ------
+	// ------ Wache beendet Kampf, greift TÃ¤ter an ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_GuardStopsFight)
 	{
-		B_Say_Overlay (self, other, "$WILLYOUSTOPFIGHTING");		//Wollt ihr wohl damit aufhören!?
+		B_Say_Overlay (self, other, "$WILLYOUSTOPFIGHTING");		//Wollt ihr wohl damit aufhÃ¶ren!?
 		return;
 	};
 	

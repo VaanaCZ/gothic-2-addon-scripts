@@ -31,7 +31,7 @@ INSTANCE DIA_Jorgen_DI_Hallo   (C_INFO)
 	information = DIA_Jorgen_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "Je vöechno v po‚·dku?";
+	description = "Je v≈°echno v po√¢√°dku?";
 
 };
 
@@ -45,16 +45,16 @@ FUNC INT DIA_Jorgen_DI_Hallo_Condition()
 
 FUNC VOID DIA_Jorgen_DI_Hallo_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_DI_Hallo_15_00"); //Je vöechno v po‚·dku?
+	AI_Output (other,self ,"DIA_Jorgen_DI_Hallo_15_00"); //Je v≈°echno v po√¢√°dku?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_01"); //JasnÍ ûe jo - aspo‡ dokud se ty potvory od n·s drûÌ d·l.
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_01"); //Jasnƒô ≈æe jo - aspo≈ï dokud se ty potvory od n√°s dr≈æ√≠ d√°l.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //DalöÌ podobn˝ sk‚etÌ ˙tok uû nep‚eûijeme, takûe si pospÍö - musÌme odsud rychle zmizet.
-		B_StartOtherRoutine	(Jorgen_DI,"ZaËÌt");
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //Dal≈°√≠ podobn√Ω sk√¢et√≠ √∫tok u≈æ nep√¢e≈æijeme, tak≈æe si pospƒô≈° - mus√≠me odsud rychle zmizet.
+		B_StartOtherRoutine	(Jorgen_DI,"Zaƒç√≠t");
 	};
 	AI_StopProcessInfos (self);
 }; 
@@ -70,7 +70,7 @@ instance DIA_Jorgen_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Jorgen_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Nep‚Ìtel je uû po smrti.";
+	description = 	"Nep√¢√≠tel je u≈æ po smrti.";
 
 };
 
@@ -83,18 +83,18 @@ func int DIA_Jorgen_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Jorgen_DI_UndeadDragonDead_15_00"); //Nep‚Ìtel je uû po smrti.
-	AI_Output			(self ,other, "DIA_Jorgen_DI_UndeadDragonDead_07_01"); //To je dobr· zpr·va. VÌc uû jsme na tomhle ostrovÍ udÍlat nemÍli?
+	AI_Output			(other ,self, "DIA_Jorgen_DI_UndeadDragonDead_15_00"); //Nep√¢√≠tel je u≈æ po smrti.
+	AI_Output			(self ,other, "DIA_Jorgen_DI_UndeadDragonDead_07_01"); //To je dobr√° zpr√°va. V√≠c u≈æ jsme na tomhle ostrovƒô udƒôlat nemƒôli?
 
 	Info_ClearChoices	(DIA_Jorgen_DI_UndeadDragonDead);
-	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "JeötÍ minutku.", DIA_Jorgen_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Ano, to je ono - pojÎme.", DIA_Jorgen_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Je≈°tƒô minutku.", DIA_Jorgen_DI_UndeadDragonDead_moment );
+	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Ano, to je ono - poj√´me.", DIA_Jorgen_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_moment ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_DI_UndeadDragonDead_moment_15_00"); //JeötÍ minutku - musÌm si tu nÍco za‚Ìdit.
-	AI_Output			(self, other, "DIA_Jorgen_DI_UndeadDragonDead_moment_07_01"); //Tak dob‚e, ale pospÍö si.
+	AI_Output			(other, self, "DIA_Jorgen_DI_UndeadDragonDead_moment_15_00"); //Je≈°tƒô minutku - mus√≠m si tu nƒôco za√¢√≠dit.
+	AI_Output			(self, other, "DIA_Jorgen_DI_UndeadDragonDead_moment_07_01"); //Tak dob√¢e, ale pospƒô≈° si.
 	AI_StopProcessInfos (self);
 };
 

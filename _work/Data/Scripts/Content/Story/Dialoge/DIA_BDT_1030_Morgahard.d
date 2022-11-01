@@ -43,47 +43,47 @@ func int DIA_Morgahard_HALLO_Condition ()
 func void DIA_Morgahard_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_00"); //Ty jsi Morgahard.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_01"); //Odkud znáš moje jméno?
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_02"); //Hledá tê soudce. Utekl jsi z vêzení.
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_03"); //Tak cos teda provedl: Ukradls mu penêenku?
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_04"); //Jemu ne. Místodrícímu. Ale byli jsme v soudcovıch slubách.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_05"); //Potom, co jsme místodrícího obrali, se nechtêl s námi podêlit o koâist, a tak nás strèil za mâíe.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_06"); //Nechtêli jsme se houpat na šibenici, tak jsme utekli.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_07"); //Mám dojem, e ztratili naši stopu. Vypadá to, e je z ní nêkdo svedl.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_01"); //Odkud znÃ¡Å¡ moje jmÃ©no?
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_02"); //HledÃ¡ tÄ™ soudce. Utekl jsi z vÄ™zenÃ­.
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_03"); //Tak cos teda provedl: Ukradls mu penÄ™Å¾enku?
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_04"); //Jemu ne. MÃ­stodrÅ¾Ã­cÃ­mu. Ale byli jsme v soudcovÃ½ch sluÅ¾bÃ¡ch.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_05"); //Potom, co jsme mÃ­stodrÅ¾Ã­cÃ­ho obrali, se nechtÄ™l s nÃ¡mi podÄ™lit o koÃ¢ist, a tak nÃ¡s strÄil za mÃ¢Ã­Å¾e.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_06"); //NechtÄ™li jsme se houpat na Å¡ibenici, tak jsme utekli.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_07"); //MÃ¡m dojem, Å¾e ztratili naÅ¡i stopu. VypadÃ¡ to, Å¾e je z nÃ­ nÄ™kdo svedl.
 
 	Info_ClearChoices	(DIA_Morgahard_HALLO);
-	Info_AddChoice	(DIA_Morgahard_HALLO, "Pâestaà fàukat a radši tas zbraà.", DIA_Morgahard_HALLO_attack );
+	Info_AddChoice	(DIA_Morgahard_HALLO, "PÃ¢estaÅ• fÅ•ukat a radÅ¡i tas zbraÅ•.", DIA_Morgahard_HALLO_attack );
 	Info_AddChoice	(DIA_Morgahard_HALLO, "Co mu provedeme?", DIA_Morgahard_HALLO_richter );
-	Info_AddChoice	(DIA_Morgahard_HALLO, "Soudce mi naâídil, abych tê zabil.", DIA_Morgahard_HALLO_tot );
-	B_LogEntry (TOPIC_RichterLakai,"Našel jsem Morgaharda, vùdce uprchlíkù."); 
+	Info_AddChoice	(DIA_Morgahard_HALLO, "Soudce mi naÃ¢Ã­dil, abych tÄ™ zabil.", DIA_Morgahard_HALLO_tot );
+	B_LogEntry (TOPIC_RichterLakai,"NaÅ¡el jsem Morgaharda, vÅ¯dce uprchlÃ­kÅ¯."); 
 	SCFoundMorgahard = TRUE;
 	B_GivePlayerXP (XP_FoundMorgahard);
 };
 func void DIA_Morgahard_HALLO_tot ()
 {
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_tot_15_00"); //Soudce mi naâídil, abych tê zabil.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_tot_07_01"); //Jo, jasnê. Proto seš tady, ne?
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_tot_15_00"); //Soudce mi naÃ¢Ã­dil, abych tÄ™ zabil.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_tot_07_01"); //Jo, jasnÄ™. Proto seÅ¡ tady, ne?
 
 };
 
 func void DIA_Morgahard_HALLO_richter ()
 {
 	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_00"); //Co mu provedeme?
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_01"); //Vùbec nic. Sedí si v horní èásti mêsta jako pavouk uprostâed sítê a nikdo na nêj nemùe.
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_02"); //Tak jsem to nemyslel. Jen bychom potâebovali nêjakı dùkaz o jeho provinêní v té vêci s místodrícím.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_03"); //Tak dùkaz, âíkáš? Nêco by se u mê i našlo. Ale kdo by poslouchal trestanıho kriminálníka?
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_04"); //Dej mi ten dùkaz a já se postarám o to, aby vás u nechali na pokoji.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_05"); //Urèitê? Tak jo. Tady, vezmi si tenhle dopis. Je na nêm soudcùv podpis.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_01"); //VÅ¯bec nic. SedÃ­ si v hornÃ­ ÄÃ¡sti mÄ™sta jako pavouk uprostÃ¢ed sÃ­tÄ™ a nikdo na nÄ™j nemÅ¯Å¾e.
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_02"); //Tak jsem to nemyslel. Jen bychom potÃ¢ebovali nÄ™jakÃ½ dÅ¯kaz o jeho provinÄ™nÃ­ v tÃ© vÄ™ci s mÃ­stodrÅ¾Ã­cÃ­m.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_03"); //Tak dÅ¯kaz, Ã¢Ã­kÃ¡Å¡? NÄ™co by se u mÄ™ i naÅ¡lo. Ale kdo by poslouchal trestanÃ½ho kriminÃ¡lnÃ­ka?
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_04"); //Dej mi ten dÅ¯kaz a jÃ¡ se postarÃ¡m o to, aby vÃ¡s uÅ¾ nechali na pokoji.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_05"); //UrÄitÄ™? Tak jo. Tady, vezmi si tenhle dopis. Je na nÄ™m soudcÅ¯v podpis.
 	B_GiveInvItems 		(self, other, ItWr_RichterKomproBrief_MIS, 1);					
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_06"); //I kdy mê to nezbaví obvinêní, mêlo by to staèit jako dùkaz jeho spoluúèasti na tı vêci.
-	B_LogEntry (TOPIC_RichterLakai,"Morgahard mi pâedal jistı soudní dokument, kterı jasnê dokazuje, e soudce místodrícího Laria prachsprostê okradl. Myslím, e pâesnê tohle po mnê chtêl Lee."); 
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_06"); //I kdyÅ¾ mÄ™ to nezbavÃ­ obvinÄ™nÃ­, mÄ™lo by to staÄit jako dÅ¯kaz jeho spoluÃºÄasti na tÃ½ vÄ™ci.
+	B_LogEntry (TOPIC_RichterLakai,"Morgahard mi pÃ¢edal jistÃ½ soudnÃ­ dokument, kterÃ½ jasnÄ™ dokazuje, Å¾e soudce mÃ­stodrÅ¾Ã­cÃ­ho Laria prachsprostÄ™ okradl. MyslÃ­m, Å¾e pÃ¢esnÄ™ tohle po mnÄ™ chtÄ™l Lee."); 
 	AI_StopProcessInfos (self);
 };
 var int MorgahardSucked;
 func void DIA_Morgahard_HALLO_attack ()
 {
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_attack_15_00"); //Pâestaà skuèet a chop se zbranê. Skonèíme to hned.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_attack_07_01"); //Máš pravdu, stejnê nemám co ztratit.
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_attack_15_00"); //PÃ¢estaÅ• skuÄet a chop se zbranÄ™. SkonÄÃ­me to hned.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_attack_07_01"); //MÃ¡Å¡ pravdu, stejnÄ™ nemÃ¡m co ztratit.
 	AI_StopProcessInfos (self);
 	MorgahardSucked = TRUE;
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -116,7 +116,7 @@ func int DIA_Morgahard_Perm_Condition ()
 
 func void DIA_Morgahard_Perm_Info ()
 {
-	AI_Output			(self, other, "DIA_Morgahard_Perm_07_00"); //Ta soudnická svinê - jednou se bude houpat na šibenici.
+	AI_Output			(self, other, "DIA_Morgahard_Perm_07_00"); //Ta soudnickÃ¡ svinÄ™ - jednou se bude houpat na Å¡ibenici.
 	AI_StopProcessInfos (self);
 };
 
@@ -144,7 +144,7 @@ func int DIA_Morgahard_Perm2_Condition ()
 };
 func void DIA_Morgahard_Perm2_Info ()
 {
-	AI_Output			(self, other, "DIA_Morgahard_Perm2_07_00"); //Proè se prostê neztratíš?
+	AI_Output			(self, other, "DIA_Morgahard_Perm2_07_00"); //ProÄ se prostÄ™ neztratÃ­Å¡?
 	AI_StopProcessInfos (self);
 };
 

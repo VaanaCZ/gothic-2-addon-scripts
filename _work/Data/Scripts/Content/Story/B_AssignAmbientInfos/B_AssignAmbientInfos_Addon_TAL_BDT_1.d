@@ -39,14 +39,14 @@ FUNC INT DIA_Addon_TAL_BDT_1_Hi_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_1_Hi_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00");//Jak se vede?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//Èekám, až budou chtít nêkoho novýho. Jsem na âadê.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//ÄŒekÃ¡m, aÅ¾ budou chtÃ­t nÄ™koho novÃ½ho. Jsem na Ã¢adÄ™.
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Ze všech lidí, co tu jsou, mùže dovnitâ jenom Franco.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Ze vÅ¡ech lidÃ­, co tu jsou, mÅ¯Å¾e dovnitÃ¢ jenom Franco.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//Snad na tom teë budeme líp, když je Franco mrtvý.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//Snad na tom teÃ« budeme lÃ­p, kdyÅ¾ je Franco mrtvÃ½.
 	};
 };
 // *************************************************************************
@@ -58,7 +58,7 @@ instance DIA_Addon_TAL_BDT_1_Lager(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Lager_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Lager_Info;
 	permanent	= TRUE;
-	description = "Co mi mùžeš âíci o táboâe?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ci o tÃ¡boÃ¢e?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
@@ -68,9 +68,9 @@ FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//Co bys mi âekl o táboâe?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//Buë furt ve stâehu a s nikým se nezaplejtej! Když se bezdùvodnê pustíš do boje, všichni se na tebe okamžitê sesypou!
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//Vêtšina lidí se stejnê furt bojí o svý zlato a chlapi se sledujou navzájem.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//Co bys mi Ã¢ekl o tÃ¡boÃ¢e?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//BuÃ« furt ve stÃ¢ehu a s nikÃ½m se nezaplejtej! KdyÅ¾ se bezdÅ¯vodnÄ™ pustÃ­Å¡ do boje, vÅ¡ichni se na tebe okamÅ¾itÄ™ sesypou!
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//VÄ™tÅ¡ina lidÃ­ se stejnÄ™ furt bojÃ­ o svÃ½ zlato a chlapi se sledujou navzÃ¡jem.
 };
 // *************************************************************************
 // 							News
@@ -81,7 +81,7 @@ instance DIA_Addon_TAL_BDT_1_Raven(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Raven_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Raven_Info;
 	permanent	= TRUE;
-	description = "Co víš o Havranovi?";
+	description = "Co vÃ­Å¡ o Havranovi?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
@@ -91,10 +91,10 @@ FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Raven_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Co bys mi povêdêl o Havranovi?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//To on a jeho chlapi sem pâišli jako první.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//Je velitelem tohohle tábora. Bejt tebou, tak si s ním moc nezahrávám.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Jednou potâebovali pêt novejch chlapù, protože se vzteknul a vodkrouhnul vlastní lidi.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Co bys mi povÄ™dÄ™l o Havranovi?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//To on a jeho chlapi sem pÃ¢iÅ¡li jako prvnÃ­.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//Je velitelem tohohle tÃ¡bora. Bejt tebou, tak si s nÃ­m moc nezahrÃ¡vÃ¡m.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Jednou potÃ¢ebovali pÄ™t novejch chlapÅ¯, protoÅ¾e se vzteknul a vodkrouhnul vlastnÃ­ lidi.
 };
 FUNC VOID B_AssignAmbientInfos_Addon_TAL_BDT_1(var C_NPC slf)
 {

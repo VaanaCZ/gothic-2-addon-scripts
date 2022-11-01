@@ -82,13 +82,13 @@ func void DIA_Fellan_News_Info ()
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		 AI_Output (self, other, "DIA_Fellan_News_06_00"); //Dobr·, tak jsi mÍ dostal. To byl ale hrdinsk˝ kousek.
+		 AI_Output (self, other, "DIA_Fellan_News_06_00"); //Dobr√°, tak jsi mƒô dostal. To byl ale hrdinsk√Ω kousek.
 	
 		 if (MIS_AttackFellan == LOG_RUNNING)
 		 && (FellanGeschlagen == FALSE)
 		 {
-		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //Tak p‚estaneö uû do toho buöit, nebo ti m·m znovu nandat?
-		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //Ne, uû mi neubliûuj. P‚estanu. Ale jestli to tady kolem vöechno spadne, tak je to jen tvoje chyba!
+		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //Tak p√¢estane≈° u≈æ do toho bu≈°it, nebo ti m√°m znovu nandat?
+		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //Ne, u≈æ mi neubli≈æuj. P√¢estanu. Ale jestli to tady kolem v≈°echno spadne, tak je to jen tvoje chyba!
 		 	
 		 	FellanGeschlagen = TRUE;
 		 	Npc_ExchangeRoutine (self,"OHNEHAMMER");
@@ -98,11 +98,11 @@ func void DIA_Fellan_News_Info ()
 	}; 
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
-		AI_Output (self, other, "DIA_Fellan_News_06_03");  //Co se dÍje? Chceö dalöÌ r·nu pÍstÌ?
+		AI_Output (self, other, "DIA_Fellan_News_06_03");  //Co se dƒôje? Chce≈° dal≈°√≠ r√°nu pƒôst√≠?
 	};
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 	{
-		 AI_Output (self, other, "DIA_Fellan_News_06_04"); //Co seö to za bl·zna? Bojuj, nebojuj, ‚ekni - co vlastnÍ chceö?
+		 AI_Output (self, other, "DIA_Fellan_News_06_04"); //Co se≈° to za bl√°zna? Bojuj, nebojuj, √¢ekni - co vlastnƒô chce≈°?
 	};
 	self.aivar[AIV_LastFightComment] = TRUE;
 };
@@ -117,7 +117,7 @@ instance DIA_Fellan_HALLO		(C_INFO)
 	condition	 = 	DIA_Fellan_HALLO_Condition;
 	information	 = 	DIA_Fellan_HALLO_Info;
 	permanent	 =  FALSE;
-	description	 = 	"ProË do toho tak ml·tÌö?";
+	description	 = 	"Proƒç do toho tak ml√°t√≠≈°?";
 };
 func int DIA_Fellan_HALLO_Condition ()
 {	
@@ -128,9 +128,9 @@ func int DIA_Fellan_HALLO_Condition ()
 };
 func void DIA_Fellan_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //ProË tady do toho ml·tÌö?
-	AI_Output (self, other, "DIA_Fellan_HALLO_06_01"); //NÍkolik poslednÌch dnÌ se zoufale snaûÌm zamezit tomu, aby mi zat˝kalo do domu.
-	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //Krov se mi drobÌ pokaûd˝, kdyû p‚ijde vÍtöÌ lij·k. Takûe se mi vöechno rozsejp· pod rukama!
+	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //Proƒç tady do toho ml√°t√≠≈°?
+	AI_Output (self, other, "DIA_Fellan_HALLO_06_01"); //Nƒôkolik posledn√≠ch dn√≠ se zoufale sna≈æ√≠m zamezit tomu, aby mi zat√Ωkalo do domu.
+	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //Krov se mi drob√≠ poka≈æd√Ω, kdy≈æ p√¢ijde vƒôt≈°√≠ lij√°k. Tak≈æe se mi v≈°echno rozsejp√° pod rukama!
 	AI_StopProcessInfos (self);
 };
 
@@ -144,7 +144,7 @@ instance DIA_Fellan_Stop		(C_INFO)
 	condition	 = 	DIA_Fellan_Stop_Condition;
 	information	 = 	DIA_Fellan_Stop_Info;
 	permanent	 =  FALSE;
-	description	 = 	"M˘ûeö s tÌm bouch·nÌm p‚estat?";
+	description	 = 	"M≈Ø≈æe≈° s t√≠m bouch√°n√≠m p√¢estat?";
 };
 
 func int DIA_Fellan_Stop_Condition ()
@@ -156,30 +156,30 @@ func int DIA_Fellan_Stop_Condition ()
 };
 func void DIA_Fellan_Stop_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_15_00"); //M˘ûeö p‚estat s tÌm bouch·nÌm?
-	AI_Output (self, other, "DIA_Fellan_Stop_06_01"); //Ne, musÌm to dodÍlat.
+	AI_Output (other, self, "DIA_Fellan_Stop_15_00"); //M≈Ø≈æe≈° p√¢estat s t√≠m bouch√°n√≠m?
+	AI_Output (self, other, "DIA_Fellan_Stop_06_01"); //Ne, mus√≠m to dodƒôlat.
 	
 	Info_ClearChoices (DIA_Fellan_Stop);
-	Info_AddChoice (DIA_Fellan_Stop,"P‚esta‡ s tÌm, nebo ti zp‚er·ûÌm vöechny kosti v tÍle.",DIA_Fellan_Stop_Bones);
-	Info_AddChoice (DIA_Fellan_Stop,"D·m ti 10 zlat˝ch, kdyû s tÌm r·musem p‚estaneö.",DIA_Fellan_Stop_Gold);
-	Info_AddChoice (DIA_Fellan_Stop,"ProstÍ p‚esta‡ buöit, jasn˝?",DIA_Fellan_Stop_Just);
+	Info_AddChoice (DIA_Fellan_Stop,"P√¢esta≈ï s t√≠m, nebo ti zp√¢er√°≈æ√≠m v≈°echny kosti v tƒôle.",DIA_Fellan_Stop_Bones);
+	Info_AddChoice (DIA_Fellan_Stop,"D√°m ti 10 zlat√Ωch, kdy≈æ s t√≠m r√°musem p√¢estane≈°.",DIA_Fellan_Stop_Gold);
+	Info_AddChoice (DIA_Fellan_Stop,"Prostƒô p√¢esta≈ï bu≈°it, jasn√Ω?",DIA_Fellan_Stop_Just);
 };
 FUNC VOID DIA_Fellan_Stop_Bones()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //P‚esta‡ s tÌm, nebo ti zp‚er·ûÌm vöechny kosti v tÍle.
-	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Zapome‡ na to, nebo ti do tv˝ palice svym kladivem vtluËu alespo‡ trochu rozumu.
+	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //P√¢esta≈ï s t√≠m, nebo ti zp√¢er√°≈æ√≠m v≈°echny kosti v tƒôle.
+	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Zapome≈ï na to, nebo ti do tv√Ω palice svym kladivem vtluƒçu alespo≈ï trochu rozumu.
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Fellan_Stop_Gold()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //D·m ti 10 zlat˝ch, kdyû s tÌm r·musem p‚estaneö.
-	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Hej... To je od tebe opravdu mil˝. Ale jako s tim zlatem, m˘ûeö...
-	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_02"); //...fajn, ty vÌö, co se s tim d· dÍlat.
+	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //D√°m ti 10 zlat√Ωch, kdy≈æ s t√≠m r√°musem p√¢estane≈°.
+	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Hej... To je od tebe opravdu mil√Ω. Ale jako s tim zlatem, m≈Ø≈æe≈°...
+	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_02"); //...fajn, ty v√≠≈°, co se s tim d√° dƒôlat.
 };
 FUNC VOID DIA_Fellan_Stop_Just()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Just_15_00"); //ProstÍ p‚esta‡ buöit, fajn?
-	AI_Output (self, other, "DIA_Fellan_Stop_Just_06_01"); //ProstÍ mÍ zkus neposlouchat, fajn?
+	AI_Output (other, self, "DIA_Fellan_Stop_Just_15_00"); //Prostƒô p√¢esta≈ï bu≈°it, fajn?
+	AI_Output (self, other, "DIA_Fellan_Stop_Just_06_01"); //Prostƒô mƒô zkus neposlouchat, fajn?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Alles klar?
@@ -191,7 +191,7 @@ instance DIA_Fellan_klar		(C_INFO)
 	condition	 = 	DIA_Fellan_klar_Condition;
 	information	 = 	DIA_Fellan_klar_Info;
 	permanent	 =  TRUE;
-	description	 = 	"HalÛÛÛ - jsi v pohodÍ?";
+	description	 = 	"Hal√≥√≥√≥ - jsi v pohodƒô?";
 };
 func int DIA_Fellan_klar_Condition ()
 {	
@@ -202,15 +202,15 @@ func int DIA_Fellan_klar_Condition ()
 };
 func void DIA_Fellan_klar_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_klar_15_00"); //HalÛÛÛ - je ti dob‚e?
+	AI_Output (other, self, "DIA_Fellan_klar_15_00"); //Hal√≥√≥√≥ - je ti dob√¢e?
 	
 	if (FellanGeschlagen == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_01"); //Fajn, jestli se mi poda‚Ì tohle vöechno vËas opravit.
+		AI_Output (self, other, "DIA_Fellan_klar_06_01"); //Fajn, jestli se mi poda√¢√≠ tohle v≈°echno vƒças opravit.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Ta st‚echa je ËÌm d·l tÌm horöÌ. Aû p‚ÌötÍ zapröÌ, bude mi voda tÈct rovnou na hlavu. A za to vöechno m˘ûeö ty!
+		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Ta st√¢echa je ƒç√≠m d√°l t√≠m hor≈°√≠. A≈æ p√¢√≠≈°tƒô zapr≈°√≠, bude mi voda t√©ct rovnou na hlavu. A za to v≈°echno m≈Ø≈æe≈° ty!
 	};
 	AI_StopProcessInfos (self);
 };

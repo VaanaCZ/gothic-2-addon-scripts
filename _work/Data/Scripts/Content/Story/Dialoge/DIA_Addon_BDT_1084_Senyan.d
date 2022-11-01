@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Senyan_EXIT   (C_INFO)
 	condition   = DIA_Addon_Senyan_EXIT_Condition;
 	information = DIA_Addon_Senyan_EXIT_Info;
 	permanent   = TRUE;
-	description = "Tak zatím...";
+	description = "Tak zatÃ­m...";
 };
 FUNC INT DIA_Addon_Senyan_EXIT_Condition()
 {
@@ -18,7 +18,7 @@ FUNC VOID DIA_Addon_Senyan_EXIT_Info()
 {
 	if (Senyan_Erpressung == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Senyan_EXIT_12_00");//Ty víš, co dêlat.
+		AI_Output (self, other, "DIA_Addon_Senyan_EXIT_12_00");//Ty vÃ­Å¡, co dÄ™lat.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -60,8 +60,8 @@ func void DIA_Addon_Senyan_PICKPOCKET_BACK()
 //----------------------------------------------------------------------
 FUNC VOID B_Senyan_Attack()
 {
-	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_00");//(šklebí se) Tak na co tê tu teda eštê mám, ty flákaèi?
-	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_01");//(volá) A heleme se, kohopak to tu máme!
+	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_00");//(Å¡klebÃ­ se) Tak na co tÄ™ tu teda eÅ¡tÄ™ mÃ¡m, ty flÃ¡kaÄi?
+	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_01");//(volÃ¡) A heleme se, kohopak to tu mÃ¡me!
 	
 	Senyan_Called = TRUE;	
 	Senyan_Erpressung = LOG_OBSOLETE;
@@ -73,16 +73,16 @@ FUNC VOID B_Senyan_Attack()
 //----------------------------------------------------------------------
 FUNC VOID B_Senyan_Erpressung()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_00");//Kolik chceš?
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_01");//(pâedstírá ublíení) Ale ne, kdepak! Nechci z tebe mámit ádnı zlato! To by mê v ivotê nenapadlo!
-	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_02");//Tak co chceš?
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_03");//Nedávno se nêkdo pokusil odklidit Estebana, ale on utekl ke svı ochrance.
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_04");//Zajdi za Estebanem a promluv si s ním. Pak si s tebou promluvím i já.
+	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_00");//Kolik chceÅ¡?
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_01");//(pÃ¢edstÃ­rÃ¡ ublÃ­Å¾enÃ­) Ale ne, kdepak! Nechci z tebe mÃ¡mit Å¾Ã¡dnÃ½ zlato! To by mÄ™ v Å¾ivotÄ™ nenapadlo!
+	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_02");//Tak co chceÅ¡?
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_03");//NedÃ¡vno se nÄ™kdo pokusil odklidit Estebana, ale on utekl ke svÃ½ ochrance.
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_04");//Zajdi za Estebanem a promluv si s nÃ­m. Pak si s tebou promluvÃ­m i jÃ¡.
 	
 	AI_StopProcessInfos (self);
 	Log_CreateTopic (Topic_Addon_Senyan,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Senyan,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Senyan,"Senyan mê poznal - ví, kdo jsem. Chce to vyuít ku vlastnímu prospêchu - urèitê má nêco za lubem. Chce, abych si napâed promluvil s Estebanem.");
+	B_LogEntry (Topic_Addon_Senyan,"Senyan mÄ™ poznal - vÃ­, kdo jsem. Chce to vyuÅ¾Ã­t ku vlastnÃ­mu prospÄ™chu - urÄitÄ™ mÃ¡ nÄ™co za lubem. Chce, abych si napÃ¢ed promluvil s Estebanem.");
 };
 //----------------------------------------------------------------------
 //	Info Hi
@@ -110,26 +110,26 @@ FUNC VOID DIA_Addon_Senyan_Hi_Info()
 	
 	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_00");//A hele, kdopak to tu je?
 	B_UseFakeScroll();
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_01");//A heleme se, tak u jsi tady. Mám pro tebe jednu dobrou a jednu špatnou zprávu.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_01");//A heleme se, tak uÅ¾ jsi tady. MÃ¡m pro tebe jednu dobrou a jednu Å¡patnou zprÃ¡vu.
 	
 	Info_ClearChoices (DIA_Addon_BDT_1084_Senyan_Hi);
-	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"Napâed snad radši tu dobrou zprávu.",DIA_Addon_BDT_1084_Senyan_Hi_good);
-	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"Tak to vybal - jaká je ta špatná zpráva?",DIA_Addon_BDT_1084_Senyan_Hi_bad);
+	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"NapÃ¢ed snad radÅ¡i tu dobrou zprÃ¡vu.",DIA_Addon_BDT_1084_Senyan_Hi_good);
+	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"Tak to vybal - jakÃ¡ je ta Å¡patnÃ¡ zprÃ¡va?",DIA_Addon_BDT_1084_Senyan_Hi_bad);
 };
 FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_good()
 {
 	if (Senyan_Msg == FALSE)
 	{
-		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_00");//Napâed chci slyšet tu dobrou.
+		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_00");//NapÃ¢ed chci slyÅ¡et tu dobrou.
 		Senyan_Msg = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_01");//A jaká je ta dobrá zpráva?
+		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_01");//A jakÃ¡ je ta dobrÃ¡ zprÃ¡va?
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_02");//No, vlastnê nevím proè, ale nadêlal sis tu pár pêknê mocnejch nepâátel.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_03");//Máš kliku, e jsem tê poznal já a ne nêkdo jinej.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_04");//Protoe já jsem drunej a mám pochopení.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_02");//No, vlastnÄ™ nevÃ­m proÄ, ale nadÄ™lal sis tu pÃ¡r pÄ™knÄ™ mocnejch nepÃ¢Ã¡tel.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_03");//MÃ¡Å¡ kliku, Å¾e jsem tÄ™ poznal jÃ¡ a ne nÄ™kdo jinej.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_04");//ProtoÅ¾e jÃ¡ jsem druÅ¾nej a mÃ¡m pochopenÃ­.
 	
 	
 	Senyan_Good = TRUE;
@@ -142,25 +142,25 @@ FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_good()
 	}
 	else 
 	{
-		Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"A ta špatná zpráva?",DIA_Addon_BDT_1084_Senyan_Hi_bad);
+		Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"A ta Å¡patnÃ¡ zprÃ¡va?",DIA_Addon_BDT_1084_Senyan_Hi_bad);
 	};
 };
 FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_bad()
 {
 	if (Senyan_Msg == FALSE)
 	{
-		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_00");//Napâed mi povêz tu špatnou zprávu.
+		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_00");//NapÃ¢ed mi povÄ™z tu Å¡patnou zprÃ¡vu.
 		Senyan_Msg = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_01");//A jaká je ta špatná zpráva?
+		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_01");//A jakÃ¡ je ta Å¡patnÃ¡ zprÃ¡va?
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_02");//Havran tê hledá. Teda jeho stráe. Vlastnê tê hledaj všichni banditi.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_03");//A a tê najdou, zabijou tê.
-	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_04");//To u zkusila spousta lidí.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_05");//Pak seš stejnê dobrej bojovník, jako jsi chytrej. Pâijít do tábora s takovımhle brnêním je jako...
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_06");//...jako kdy ovce vleze mezi vlky. Tvùj ivot visí na vlásku, seš v pêknım maléru.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_02");//Havran tÄ™ hledÃ¡. Teda jeho strÃ¡Å¾e. VlastnÄ™ tÄ™ hledaj vÅ¡ichni banditi.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_03");//A aÅ¾ tÄ™ najdou, zabijou tÄ™.
+	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_04");//To uÅ¾ zkusila spousta lidÃ­.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_05");//Pak seÅ¡ stejnÄ™ dobrej bojovnÃ­k, jako jsi chytrej. PÃ¢ijÃ­t do tÃ¡bora s takovÃ½mhle brnÄ™nÃ­m je jako...
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_06");//...jako kdyÅ¾ ovce vleze mezi vlky. TvÅ¯j Å¾ivot visÃ­ na vlÃ¡sku, seÅ¡ v pÄ™knÃ½m malÃ©ru.
 	
 	Senyan_Bad = TRUE;
 	
@@ -172,7 +172,7 @@ FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_bad()
 	}
 	else 
 	{
-		Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"A ta dobrá zpráva?",DIA_Addon_BDT_1084_Senyan_Hi_good);
+		Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"A ta dobrÃ¡ zprÃ¡va?",DIA_Addon_BDT_1084_Senyan_Hi_good);
 	};
 };
 //---------------------------------------------------------------------
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Senyan_unterwegs   (C_INFO)
 	condition   = DIA_Addon_Senyan_unterwegs_Condition;
 	information = DIA_Addon_Senyan_unterwegs_Info;
 	permanent   = TRUE;
-	description	= "Co se tıèe Estebana...";
+	description	= "Co se tÃ½Äe Estebana...";
 };
 FUNC INT DIA_Addon_Senyan_unterwegs_Condition()
 {	
@@ -197,10 +197,10 @@ FUNC INT DIA_Addon_Senyan_unterwegs_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_unterwegs_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_00");//Co se tıèe Estebana...
-	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_01");//U jsi s ním mluvil?
-	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_02");//Ještê ne.
-	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_03");//No, tak bys to mêl brzo udêlat.
+	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_00");//Co se tÃ½Äe Estebana...
+	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_01");//UÅ¾ jsi s nÃ­m mluvil?
+	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_02");//JeÅ¡tÄ™ ne.
+	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_03");//No, tak bys to mÄ™l brzo udÄ™lat.
 };
 //---------------------------------------------------------------------
 //	Info Attentat
@@ -225,40 +225,40 @@ FUNC INT DIA_Addon_Senyan_Attentat_Condition()
 FUNC VOID DIA_Addon_Senyan_Attentat_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_00");//Mluvil jsem s Estebanem.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_01");//A zmínil se o tom útoku?
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_02");//Rozkázal mi, abych zjistil, kdo na nêj toho vraha poslal. Nevíš o tom nêco?
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_03");//O nic víc ne ty. Taky se snaím vypátrat, kdo za tím vêzí. A teë se dostáváme k tomu nejzajímavêjšímu.
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_04");//Tak povídej.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_05");//Chci, abys splnil svùj úkol a splnil ho dobâe. Chci, abys našel toho zrádce.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_06");//(chladnê) A a ho najdeš, tak chci, abys ho za mê zabil.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_07");//Dám ti za to odmênu.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_08");//A nezapomínej, e mám furt ten papír s tvım portrétem a zprávou, e tê hledaj. Tak se koukej snait, jinak urèitê víš, co se stane.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_01");//A zmÃ­nil se o tom Ãºtoku?
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_02");//RozkÃ¡zal mi, abych zjistil, kdo na nÄ™j toho vraha poslal. NevÃ­Å¡ o tom nÄ™co?
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_03");//O nic vÃ­c neÅ¾ ty. Taky se snaÅ¾Ã­m vypÃ¡trat, kdo za tÃ­m vÄ™zÃ­. A teÃ« se dostÃ¡vÃ¡me k tomu nejzajÃ­mavÄ™jÅ¡Ã­mu.
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_04");//Tak povÃ­dej.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_05");//Chci, abys splnil svÅ¯j Ãºkol a splnil ho dobÃ¢e. Chci, abys naÅ¡el toho zrÃ¡dce.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_06");//(chladnÄ™) A aÅ¾ ho najdeÅ¡, tak chci, abys ho za mÄ™ zabil.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_07");//DÃ¡m ti za to odmÄ™nu.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_08");//A nezapomÃ­nej, Å¾e mÃ¡m furt ten papÃ­r s tvÃ½m portrÃ©tem a zprÃ¡vou, Å¾e tÄ™ hledaj. Tak se koukej snaÅ¾it, jinak urÄitÄ™ vÃ­Å¡, co se stane.
 
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
-	Info_AddChoice (DIA_Addon_Senyan_Attentat,"Myslím, e nemám na vybranou.",DIA_Addon_Senyan_Attentat_JA);
-	Info_AddChoice (DIA_Addon_Senyan_Attentat,"Zapomeà!",DIA_Addon_Senyan_Attentat_NO);
+	Info_AddChoice (DIA_Addon_Senyan_Attentat,"MyslÃ­m, Å¾e nemÃ¡m na vybranou.",DIA_Addon_Senyan_Attentat_JA);
+	Info_AddChoice (DIA_Addon_Senyan_Attentat,"ZapomeÅ•!",DIA_Addon_Senyan_Attentat_NO);
 };
 FUNC VOID DIA_Addon_Senyan_Attentat_NO()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_NO_15_00");//Na to zapomeà!
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_NO_15_00");//Na to zapomeÅ•!
 
 	B_Senyan_Attack();
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
 };
 FUNC VOID DIA_Addon_Senyan_Attentat_JA()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_JA_15_00");//Nejspíš nemám na vybranou.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_01");//Já vêdêl, e se dohodnem.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_02");//(úseènê) A zjistíš, kdo to je, zabijem toho hajzla spolu. A teë zmiz!
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_JA_15_00");//NejspÃ­Å¡ nemÃ¡m na vybranou.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_01");//JÃ¡ vÄ™dÄ™l, Å¾e se dohodnem.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_02");//(ÃºseÄnÄ™) AÅ¾ zjistÃ­Å¡, kdo to je, zabijem toho hajzla spolu. A teÃ« zmiz!
 	
 	Senyan_Erpressung = LOG_RUNNING;
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
 	
-	B_LogEntry (Topic_Addon_Senyan,"Senyan chce, abych zjistil, kdo to má na svêdomí, a zabil ho. Pokud se mi to podaâí, èeká na mê odmêna.");
+	B_LogEntry (Topic_Addon_Senyan,"Senyan chce, abych zjistil, kdo to mÃ¡ na svÄ™domÃ­, a zabil ho. Pokud se mi to podaÃ¢Ã­, ÄekÃ¡ na mÄ™ odmÄ™na.");
 };
 
 //----------------------------------------------------------------------
-//	Anders Überlegt
+//	Anders Ãœberlegt
 //----------------------------------------------------------------------
 INSTANCE DIA_Addon_Senyan_ChangePlan   (C_INFO)
 {
@@ -267,7 +267,7 @@ INSTANCE DIA_Addon_Senyan_ChangePlan   (C_INFO)
 	condition   = DIA_Addon_Senyan_ChangePlan_Condition;
 	information = DIA_Addon_Senyan_ChangePlan_Info;
 	permanent   = FALSE;
-	description = "Rozmyslel jsem si to. U s tebou nebudu spolupracovat!";
+	description = "Rozmyslel jsem si to. UÅ¾ s tebou nebudu spolupracovat!";
 };
 FUNC INT DIA_Addon_Senyan_ChangePlan_Condition()
 {	
@@ -279,7 +279,7 @@ FUNC INT DIA_Addon_Senyan_ChangePlan_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_ChangePlan_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Senyan_ChangePlan_15_00"); //Rozmyslel jsem si to. U s tebou nebudu spolupracovat!
+	AI_Output (other, self, "DIA_Addon_Senyan_ChangePlan_15_00"); //Rozmyslel jsem si to. UÅ¾ s tebou nebudu spolupracovat!
 	B_Senyan_Attack(); 
 			
 	AI_StopProcessInfos (self);
@@ -295,7 +295,7 @@ INSTANCE DIA_Addon_BDT_1084_Senyan_Found   (C_INFO)
 	condition   = DIA_Addon_Senyan_Found_Condition;
 	information = DIA_Addon_Senyan_Found_Info;
 	permanent   = FALSE;
-	description = "Našel jsem toho zrádce. Je to Fisk.";
+	description = "NaÅ¡el jsem toho zrÃ¡dce. Je to Fisk.";
 };
 FUNC INT DIA_Addon_Senyan_Found_Condition()
 {	
@@ -307,7 +307,7 @@ FUNC INT DIA_Addon_Senyan_Found_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_Found_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Found_15_00");//Našel jsem toho zrádce. Je to Fisk.
+	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Found_15_00");//NaÅ¡el jsem toho zrÃ¡dce. Je to Fisk.
 	B_Senyan_Attack(); 
 };		
 //----------------------------------------------------------------------
@@ -334,7 +334,7 @@ FUNC INT DIA_Addon_Senyan_derbe_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_derbe_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_derbe_12_00");//(vztekle) Nedodrels naši dohodu.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_derbe_12_00");//(vztekle) NedodrÅ¾els naÅ¡i dohodu.
 	
 	B_Senyan_Attack();		
 };

@@ -45,9 +45,9 @@ func int DIA_Meldor_Hallo_Condition ()
 
 func void DIA_Meldor_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Meldor_Hallo_07_00"); //Co chceš?
-	AI_Output (other, self, "DIA_Meldor_Hallo_15_01"); //Chtêl jsem se tu trochu porozhlédnout.
-	AI_Output (self, other, "DIA_Meldor_Hallo_07_02"); //A kam pâesnê máš namíâeno?
+	AI_Output (self, other, "DIA_Meldor_Hallo_07_00"); //Co chceÅ¡?
+	AI_Output (other, self, "DIA_Meldor_Hallo_15_01"); //ChtÄ™l jsem se tu trochu porozhlÃ©dnout.
+	AI_Output (self, other, "DIA_Meldor_Hallo_07_02"); //A kam pÃ¢esnÄ™ mÃ¡Å¡ namÃ­Ã¢eno?
 };
 
 // ***********************************************************
@@ -60,7 +60,7 @@ instance DIA_Meldor_Interessantes		(C_INFO)
 	condition	= DIA_Meldor_Interessantes_Condition;
 	information	= DIA_Meldor_Interessantes_Info;
 	permanent 	= FALSE;
-	description	= "Co je tu zajímavého k vidêní?";
+	description	= "Co je tu zajÃ­mavÃ©ho k vidÄ™nÃ­?";
 };
 
 func int DIA_Meldor_Interessantes_Condition ()
@@ -70,12 +70,12 @@ func int DIA_Meldor_Interessantes_Condition ()
 
 func void DIA_Meldor_Interessantes_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Interessantes_15_00"); //Co je tu zajímavého k vidêní?
-	AI_Output (self, other, "DIA_Meldor_Interessantes_07_01"); //Najdeš tu nevêstinec i hospodu. Hostinskı se jmenuje Kardif a jestli hledáš nêjaké informace, pak je on ten pravı, s kım si máš promluvit.
-	AI_Output (self, other, "DIA_Meldor_Interessantes_07_02"); //Mimochodem, nepotâebuješ peníze?
+	AI_Output (other, self, "DIA_Meldor_Interessantes_15_00"); //Co je tu zajÃ­mavÃ©ho k vidÄ™nÃ­?
+	AI_Output (self, other, "DIA_Meldor_Interessantes_07_01"); //NajdeÅ¡ tu nevÄ™stinec i hospodu. HostinskÃ½ se jmenuje Kardif a jestli hledÃ¡Å¡ nÄ™jakÃ© informace, pak je on ten pravÃ½, s kÃ½m si mÃ¡Å¡ promluvit.
+	AI_Output (self, other, "DIA_Meldor_Interessantes_07_02"); //Mimochodem, nepotÃ¢ebujeÅ¡ penÃ­ze?
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Kardif, hospodskı z pâístavní krèmy, prodává krom koâalky i informace.");
+	B_LogEntry (Topic_CityTrader,"Kardif, hospodskÃ½ z pÃ¢Ã­stavnÃ­ krÄmy, prodÃ¡vÃ¡ krom koÃ¢alky i informace.");
 };
 
 // ***********************************************************
@@ -88,7 +88,7 @@ instance DIA_Meldor_Lehmar		(C_INFO)
 	condition	= DIA_Meldor_Lehmar_Condition;
 	information	= DIA_Meldor_Lehmar_Info;
 	permanent 	= FALSE;
-	description	= "Ty se jich chceš zbavit?";
+	description	= "Ty se jich chceÅ¡ zbavit?";
 };
 
 func int DIA_Meldor_Lehmar_Condition ()
@@ -101,9 +101,9 @@ func int DIA_Meldor_Lehmar_Condition ()
 
 func void DIA_Meldor_Lehmar_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Lehmar_15_00"); //Ty se jich chceš zbavit?
-	AI_Output (self, other, "DIA_Meldor_Lehmar_07_01"); //(znudênê) Ne, ale pâímo naproti pâes ulici sídlí Lehmar - lichváâ.
-	AI_Output (self, other, "DIA_Meldor_Lehmar_07_02"); //Urèitê ti pár zlaãákù pùjèí, jen bê dál.
+	AI_Output (other, self, "DIA_Meldor_Lehmar_15_00"); //Ty se jich chceÅ¡ zbavit?
+	AI_Output (self, other, "DIA_Meldor_Lehmar_07_01"); //(znudÄ™nÄ™) Ne, ale pÃ¢Ã­mo naproti pÃ¢es ulici sÃ­dlÃ­ Lehmar - lichvÃ¡Ã¢.
+	AI_Output (self, other, "DIA_Meldor_Lehmar_07_02"); //UrÄitÄ™ ti pÃ¡r zlaÄƒÃ¡kÅ¯ pÅ¯jÄÃ­, jen bÄ™Å¾ dÃ¡l.
 	Npc_ExchangeRoutine (self, "START");
 };
 
@@ -118,7 +118,7 @@ instance DIA_Meldor_Arbeitest		(C_INFO)
 	condition	= DIA_Meldor_Arbeitest_Condition;
 	information	= DIA_Meldor_Arbeitest_Info;
 	permanent 	= FALSE;
-	description	= "Ty pro Lehmara pracuješ?";
+	description	= "Ty pro Lehmara pracujeÅ¡?";
 };
 
 func int DIA_Meldor_Arbeitest_Condition ()
@@ -131,7 +131,7 @@ func int DIA_Meldor_Arbeitest_Condition ()
 
 func void DIA_Meldor_Arbeitest_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Arbeitest_15_00"); //Ty pro Lehmara pracuješ?
+	AI_Output (other, self, "DIA_Meldor_Arbeitest_15_00"); //Ty pro Lehmara pracujeÅ¡?
 	AI_Output (self, other, "DIA_Meldor_Arbeitest_07_01"); //Bystrej hoch.
 };
 
@@ -145,7 +145,7 @@ instance DIA_Meldor_InsOV		(C_INFO)
 	condition	= DIA_Meldor_InsOV_Condition;
 	information	= DIA_Meldor_InsOV_Info;
 	permanent 	= FALSE;
-	description	= "Vlastnê jsem mêl namíâeno do horní ètvrti...";
+	description	= "VlastnÄ™ jsem mÄ™l namÃ­Ã¢eno do hornÃ­ Ätvrti...";
 };
 
 func int DIA_Meldor_InsOV_Condition ()
@@ -155,9 +155,9 @@ func int DIA_Meldor_InsOV_Condition ()
 
 func void DIA_Meldor_InsOV_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_InsOV_15_00"); //Vlastnê jsem mêl namíâeno do horní ètvrti.
-	AI_Output (self, other, "DIA_Meldor_InsOV_07_01"); //(sarkasticky) No jasnê. A já si zase chtêl najmout loë, aby mê zavezla pâímo na královskı dvùr k audienci.
-	AI_Output (self, other, "DIA_Meldor_InsOV_07_02"); //Od té doby, co sem pâišli paladinové, nemají takoví jako ty nebo já v horní ètvrti co pohledávat.
+	AI_Output (other, self, "DIA_Meldor_InsOV_15_00"); //VlastnÄ™ jsem mÄ™l namÃ­Ã¢eno do hornÃ­ Ätvrti.
+	AI_Output (self, other, "DIA_Meldor_InsOV_07_01"); //(sarkasticky) No jasnÄ™. A jÃ¡ si zase chtÄ™l najmout loÃ«, aby mÄ™ zavezla pÃ¢Ã­mo na krÃ¡lovskÃ½ dvÅ¯r k audienci.
+	AI_Output (self, other, "DIA_Meldor_InsOV_07_02"); //Od tÃ© doby, co sem pÃ¢iÅ¡li paladinovÃ©, nemajÃ­ takovÃ­ jako ty nebo jÃ¡ v hornÃ­ Ätvrti co pohledÃ¡vat.
 };
 
 // ***********************************************************
@@ -170,7 +170,7 @@ instance DIA_Meldor_Citizen		(C_INFO)
 	condition	= DIA_Meldor_Citizen_Condition;
 	information	= DIA_Meldor_Citizen_Info;
 	permanent 	= FALSE;
-	description	= "Ty jsi obèanem tohoto mêsta?";
+	description	= "Ty jsi obÄanem tohoto mÄ™sta?";
 };
 
 func int DIA_Meldor_Citizen_Condition ()
@@ -183,10 +183,10 @@ func int DIA_Meldor_Citizen_Condition ()
 
 func void DIA_Meldor_Citizen_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Citizen_15_00"); //Ty jsi obèanem tohoto mêsta?
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_01"); //Pokud tím myslíš, jestli tu bydlím, pak ano. Ale stejnê mê do horní ètvrti nepustí.
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_02"); //Tam se mohou dostat jenom nabubâelí hejskové nebo obchodníci a âemeslníci z dolní èásti.
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_03"); //Lidé z pâístavu v Khorinidu nemají velkou moc. Dokonce tu nemáme ani stálou hlídku domobrany.
+	AI_Output (other, self, "DIA_Meldor_Citizen_15_00"); //Ty jsi obÄanem tohoto mÄ™sta?
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_01"); //Pokud tÃ­m myslÃ­Å¡, jestli tu bydlÃ­m, pak ano. Ale stejnÄ™ mÄ™ do hornÃ­ Ätvrti nepustÃ­.
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_02"); //Tam se mohou dostat jenom nabubÃ¢elÃ­ hejskovÃ© nebo obchodnÃ­ci a Ã¢emeslnÃ­ci z dolnÃ­ ÄÃ¡sti.
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_03"); //LidÃ© z pÃ¢Ã­stavu v Khorinidu nemajÃ­ velkou moc. Dokonce tu nemÃ¡me ani stÃ¡lou hlÃ­dku domobrany.
 
 };
 // ***********************************************************
@@ -199,7 +199,7 @@ instance DIA_Meldor_Smoke		(C_INFO)
 	condition	= DIA_Meldor_Smoke_Condition;
 	information	= DIA_Meldor_Smoke_Info;
 	permanent 	= FALSE;
-	description	= "Nevíš, kde bych sehnal nêjaké kuâivo?";
+	description	= "NevÃ­Å¡, kde bych sehnal nÄ™jakÃ© kuÃ¢ivo?";
 };
 
 func int DIA_Meldor_Smoke_Condition ()
@@ -213,15 +213,15 @@ func void DIA_Meldor_Smoke_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Meldor_Smoke_15_00"); //Nevíš, kde bych sehnal nêjaké kuâivo?
+	AI_Output (other, self, "DIA_Meldor_Smoke_15_00"); //NevÃ­Å¡, kde bych sehnal nÄ™jakÃ© kuÃ¢ivo?
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Meldor_Smoke_07_01"); //(odhaduje) Ne, nemám ponêtí.
+		AI_Output (self, other, "DIA_Meldor_Smoke_07_01"); //(odhaduje) Ne, nemÃ¡m ponÄ™tÃ­.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Meldor_Smoke_07_02"); //Hmm, bıt tebou, zkusím štêstí u Èervené lucerny.
+		AI_Output (self, other, "DIA_Meldor_Smoke_07_02"); //Hmm, bÃ½t tebou, zkusÃ­m Å¡tÄ™stÃ­ u ÄŒervenÃ© lucerny.
 	};
 };
 
@@ -238,7 +238,7 @@ instance DIA_Meldor_PERM		(C_INFO)
 	condition	= DIA_Meldor_PERM_Condition;
 	information	= DIA_Meldor_PERM_Info;
 	permanent 	= TRUE;
-	description	= "Stalo se tu poslední dobou nêco zajímavého?";
+	description	= "Stalo se tu poslednÃ­ dobou nÄ™co zajÃ­mavÃ©ho?";
 };
 
 func int DIA_Meldor_PERM_Condition ()
@@ -248,27 +248,27 @@ func int DIA_Meldor_PERM_Condition ()
 
 func void DIA_Meldor_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_PERM_15_00"); //Stalo se v poslední dobê nêco zajímavého?
+	AI_Output (other, self, "DIA_Meldor_PERM_15_00"); //Stalo se v poslednÃ­ dobÄ™ nÄ™co zajÃ­mavÃ©ho?
 	
 	if (Kapitel <= 1)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_01"); //Pâed nedávnem obrátily stráe celou pâístavní ètvrã vzhùru nohama.
-		AI_Output (self, other, "DIA_Meldor_PERM_07_02"); //Hledaly nêjakou odcizenou vêc - poslední dobou se tu krádee dost rozrostly, zvláštê v lepších ètvrtích.
-		AI_Output (self, other, "DIA_Meldor_PERM_07_03"); //Oèividnê se snaí ty chudáky z pâístavu obvinit úplnê ze všeho.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_01"); //PÃ¢ed nedÃ¡vnem obrÃ¡tily strÃ¡Å¾e celou pÃ¢Ã­stavnÃ­ ÄtvrÄƒ vzhÅ¯ru nohama.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_02"); //Hledaly nÄ™jakou odcizenou vÄ™c - poslednÃ­ dobou se tu krÃ¡deÅ¾e dost rozrostly, zvlÃ¡Å¡tÄ™ v lepÅ¡Ã­ch ÄtvrtÃ­ch.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_03"); //OÄividnÄ™ se snaÅ¾Ã­ ty chudÃ¡ky z pÃ¢Ã­stavu obvinit ÃºplnÄ™ ze vÅ¡eho.
 	}
 	else if (Andre_Diebesgilde_aufgeraeumt == TRUE)
 	&&		(Meldor_DGNews == FALSE)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_04"); //Doneslo se mi, e dole ve stokách byl rozprášen nêjakı zlodêjskı klan. Všichni kradáci byli zabiti.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_04"); //Doneslo se mi, Å¾e dole ve stokÃ¡ch byl rozprÃ¡Å¡en nÄ™jakÃ½ zlodÄ™jskÃ½ klan. VÅ¡ichni kradÃ¡ci byli zabiti.
 		Meldor_DGNews = TRUE;
 	}
 	else if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_05"); //V Hornickém údolí jsou prı draci. Zajímalo by mê, jestli odsud teë paladinové vyrazí a pustí se s nimi do boje.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_05"); //V HornickÃ©m ÃºdolÃ­ jsou prÃ½ draci. ZajÃ­malo by mÄ™, jestli odsud teÃ« paladinovÃ© vyrazÃ­ a pustÃ­ se s nimi do boje.
 	}
 	else if (Kapitel == 5)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_06"); //Podle toho, co se âíká, tak u jsou všichni draci mrtví. Nêkdo je vymetl eleznım koštêtem.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_06"); //Podle toho, co se Ã¢Ã­kÃ¡, tak uÅ¾ jsou vÅ¡ichni draci mrtvÃ­. NÄ™kdo je vymetl Å¾eleznÃ½m koÅ¡tÄ™tem.
 	}
 	else
 	{
@@ -301,8 +301,8 @@ func int DIA_Meldor_VonLehmar_Condition ()
 };
 func void DIA_Meldor_VonLehmar_Info ()
 {
-	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_00"); //Hej, poèkej...
-	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_01"); //Nesu ti zprávu od Lehmara.
+	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_00"); //Hej, poÄkej...
+	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_01"); //Nesu ti zprÃ¡vu od Lehmara.
 
 	AI_StopProcessInfos (self);
 

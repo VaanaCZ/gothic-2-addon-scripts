@@ -43,35 +43,35 @@ func void DIA_Mil_309_Stadtwache_Hallo_Info ()
 	|| (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_01"); //Vöechno v pohodÍ. MÍli bychom mÌt oËi na stopk·ch.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_01"); //V≈°echno v pohodƒô. Mƒôli bychom m√≠t oƒçi na stopk√°ch.
 	}
 	else if (Stadtwache_310.aivar[AIV_PASSGATE] == FALSE)
 	&& (MIl_309_News < 1)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02"); //TeÎ poslouchej. Nem˘ûeme tÍ pustit do mÍsta.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03"); //Ale d·m ti tip, a to naprosto zadarmo.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Drû se d·l od toho lesa p‚ed n·mi - potulujÌ se po nÍm lÌtÈ bestie.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02"); //Te√´ poslouchej. Nem≈Ø≈æeme tƒô pustit do mƒôsta.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03"); //Ale d√°m ti tip, a to naprosto zadarmo.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Dr≈æ se d√°l od toho lesa p√¢ed n√°mi - potuluj√≠ se po nƒôm l√≠t√© bestie.
 		
 		MIl_309_News = 1;
 	}
 	else if  (Stadtwache_310.aivar[AIV_PASSGATE] == FALSE)
 	&&		 (MIl_309_News == 1)
 	{	
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_05"); //Zalez zp·tky pod öutr·k, Ëerve!
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_05"); //Zalez zp√°tky pod ≈°utr√°k, ƒçerve!
 	};
 	
 	if  (Stadtwache_310.aivar[AIV_PASSGATE] == TRUE)
 	&&  (MIl_309_News < 2)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //Poslouchej - teÎ m·ö povolen p‚Ìstup do mÍsta. Ale to neznamen·, ûe by sis tady mohl dÍlat, co se ti zlÌbÌ.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Kdyû nebudeö dodrûovat pravidla, p‚ijdeö o vöechna sv· pr·va!
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //Poslouchej - te√´ m√°≈° povolen p√¢√≠stup do mƒôsta. Ale to neznamen√°, ≈æe by sis tady mohl dƒôlat, co se ti zl√≠b√≠.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Kdy≈æ nebude≈° dodr≈æovat pravidla, p√¢ijde≈° o v≈°echna sv√° pr√°va!
 		
 		MIl_309_News = 2;
 	}
 	else if (Stadtwache_310.aivar[AIV_PASSGATE] == TRUE)
 	&& 		(MIl_309_News == 2)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_08"); //Tak bÍû - padej!
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_08"); //Tak bƒô≈æ - padej!
 	};
 	
 	

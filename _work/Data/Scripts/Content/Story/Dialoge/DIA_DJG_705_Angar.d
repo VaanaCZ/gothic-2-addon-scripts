@@ -31,7 +31,7 @@ instance DIA_AngarDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_AngarDJG_HALLO_Condition;
 	information	 = 	DIA_AngarDJG_HALLO_Info;
 
-	description	 = 	"Nezn·me se?";
+	description	 = 	"Nezn√°me se?";
 };
 
 func int DIA_AngarDJG_HALLO_Condition ()
@@ -41,12 +41,12 @@ func int DIA_AngarDJG_HALLO_Condition ()
 
 func void DIA_AngarDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_00"); //Nezn·me se? Ty jsi Cor Angar. B˝val jsi templ·‚em v t·bo‚e v baûin·ch.
-	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_01"); //(rezignovanÍ) ¬Ìkej mi Angar. Ten titul uû nepouûÌv·m. Sp·Ëovo bratrstvo uû neexistuje.
-	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_02"); //ZajÌmavÈ, ale vypad· to, jako bys mÍ uû odnÍkud znal. NÍjak si tÍ nemohu vybavit.
+	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_00"); //Nezn√°me se? Ty jsi Cor Angar. B√Ωval jsi templ√°√¢em v t√°bo√¢e v ba≈æin√°ch.
+	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_01"); //(rezignovanƒô) √Ç√≠kej mi Angar. Ten titul u≈æ nepou≈æ√≠v√°m. Sp√°ƒçovo bratrstvo u≈æ neexistuje.
+	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_02"); //Zaj√≠mav√©, ale vypad√° to, jako bys mƒô u≈æ odnƒôkud znal. Nƒôjak si tƒô nemohu vybavit.
 	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_03"); //Co to s tebou je?
-	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_04"); //(p‚ehlÌûivÍ) Ale, sv˝ho Ëasu jsem v˘bec nemohl sp·t. Po‚·d jsem mÍl noËnÌ m˘ry.
-	B_LogEntry (TOPIC_Dragonhunter,"V HornickÈm ˙dolÌ jsem naöel Angara.");
+	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_04"); //(p√¢ehl√≠≈æivƒô) Ale, sv√Ωho ƒçasu jsem v≈Øbec nemohl sp√°t. Po√¢√°d jsem mƒôl noƒçn√≠ m≈Øry.
+	B_LogEntry (TOPIC_Dragonhunter,"V Hornick√©m √∫dol√≠ jsem na≈°el Angara.");
 };
 
 
@@ -57,9 +57,9 @@ func void B_SCTellsAngarAboutMadPsi ()
 {	
 	if (Angar_KnowsMadPsi == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_00"); //Sp·Ëovo bratrstvo si zotroËilo zlo.
-		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_01"); //TvÌ d‚ÌvÍjöÌ p‚·telÈ ze starÈho t·bora proch·zejÌ zemÌ v Ëern˝ch rÛb·ch a vypadajÌ, ûe je vöechno, co se h˝be, neskuteËnÍ ötve.
-		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi_04_02"); //O Ëem to mluvÌö?
+		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_00"); //Sp√°ƒçovo bratrstvo si zotroƒçilo zlo.
+		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_01"); //Tv√≠ d√¢√≠vƒôj≈°√≠ p√¢√°tel√© ze star√©ho t√°bora proch√°zej√≠ zem√≠ v ƒçern√Ωch r√≥b√°ch a vypadaj√≠, ≈æe je v≈°echno, co se h√Ωbe, neskuteƒçnƒô ≈°tve.
+		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi_04_02"); //O ƒçem to mluv√≠≈°?
 	};
 };
 
@@ -67,8 +67,8 @@ func void B_SCTellsAngarAboutMadPsi2 ()
 {	
 	if (Angar_KnowsMadPsi == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_15_00"); //SlouûÌ nep‚Ìteli a nejsou niËÌm jin˝m neû bezduch˝mi bojovnÌky zla.
-		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_04_01"); //U vöech boh˘. VÍdÍt to, nebyl bych tak zaslepen˝m. Uû se to vÌckr·t nestane, P‚Ìsah·m.
+		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_15_00"); //Slou≈æ√≠ nep√¢√≠teli a nejsou niƒç√≠m jin√Ωm ne≈æ bezduch√Ωmi bojovn√≠ky zla.
+		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_04_01"); //U v≈°ech boh≈Ø. Vƒôdƒôt to, nebyl bych tak zaslepen√Ωm. U≈æ se to v√≠ckr√°t nestane, P√¢√≠sah√°m.
 		B_GivePlayerXP (XP_Angar_KnowsMadPsi);
 		Angar_KnowsMadPsi = TRUE;
 	};
@@ -99,47 +99,47 @@ func int DIA_Angar_WIEKOMMSTDUHIERHER_Condition ()
 func void DIA_Angar_WIEKOMMSTDUHIERHER_Info ()
 {
 	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_15_00"); //Jak ses sem dostal?
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_01"); //PotÈ, co zanikla bariÈra, jsem se ukryl v hor·ch. Pak bylo naËase, abych zaËal nÍco dÍlat.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_02"); //Bloudil jsem nÍkolik dnÌ a pak jsem se n·hle objevil na tomhle hradÍ. Neptej se mÍ, co se stalo. J· to nevÌm.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_03"); //A jako by toho bylo m·lo, jeötÍ jsem ztratil amulet, kter˝ jsem mÍl uû dlouh· lÈta. NejspÌö se zbl·znÌm, kdyû se mi ho nepoda‚Ì znovu nalÈzt.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_01"); //Pot√©, co zanikla bari√©ra, jsem se ukryl v hor√°ch. Pak bylo naƒçase, abych zaƒçal nƒôco dƒôlat.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_02"); //Bloudil jsem nƒôkolik dn√≠ a pak jsem se n√°hle objevil na tomhle hradƒô. Neptej se mƒô, co se stalo. J√° to nev√≠m.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_03"); //A jako by toho bylo m√°lo, je≈°tƒô jsem ztratil amulet, kter√Ω jsem mƒôl u≈æ dlouh√° l√©ta. Nejsp√≠≈° se zbl√°zn√≠m, kdy≈æ se mi ho nepoda√¢√≠ znovu nal√©zt.
 
 	Log_CreateTopic (TOPIC_AngarsAmulett, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AngarsAmulett, LOG_RUNNING);
-	B_LogEntry (TOPIC_AngarsAmulett,"Angar ztratil sv˘j amulet a teÎ se jej zoufale snaûÌ najÌt."); 
+	B_LogEntry (TOPIC_AngarsAmulett,"Angar ztratil sv≈Øj amulet a te√´ se jej zoufale sna≈æ√≠ naj√≠t."); 
 
 
 	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, DIALOG_BACK, DIA_Angar_WIEKOMMSTDUHIERHER_gehen );
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Kde p‚esnÍ jsi ten amulet ztratil?", DIA_Angar_WIEKOMMSTDUHIERHER_amulett );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Kde p√¢esnƒô jsi ten amulet ztratil?", DIA_Angar_WIEKOMMSTDUHIERHER_amulett );
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Sp·Ëovo bratrstvo si zotroËilo zlo.", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Sp√°ƒçovo bratrstvo si zotroƒçilo zlo.", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
 	}
 	else
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Co se stalo s ostatnÌma z t·bora v baûin·ch?", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Co se stalo s ostatn√≠ma z t√°bora v ba≈æin√°ch?", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
 	};
 
 	if (DJG_Angar_SentToStones == FALSE)
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Co budeö dÍlat d·l?", DIA_Angar_WIEKOMMSTDUHIERHER_nun );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Co bude≈° dƒôlat d√°l?", DIA_Angar_WIEKOMMSTDUHIERHER_nun );
 	};
 };
 func void DIA_Angar_WIEKOMMSTDUHIERHER_amulett ()
 {
-	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_15_00"); //Kde p‚esnÍ jsi ten amulet ztratil?
+	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_15_00"); //Kde p√¢esnƒô jsi ten amulet ztratil?
 
 	if (DJG_Angar_SentToStones ==FALSE)
 	{
-		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_01"); //NÍkde na jihu, kr·tce p‚edtÌm, neû jsem se objevil tady na hradÍ.
-		B_LogEntry (TOPIC_AngarsAmulett,"Amulet by mÍl leûet kdesi na jihu. Angar se po nÍm jde podÌvat."); 
+		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_01"); //Nƒôkde na jihu, kr√°tce p√¢edt√≠m, ne≈æ jsem se objevil tady na hradƒô.
+		B_LogEntry (TOPIC_AngarsAmulett,"Amulet by mƒôl le≈æet kdesi na jihu. Angar se po nƒôm jde pod√≠vat."); 
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_02"); //NÍkde musÌ b˝t.
-		B_LogEntry (TOPIC_AngarsAmulett,"Amulet se nach·zÌ u kamennÈ hrobky na jihu HornickÈho ˙dolÌ."); 
+		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_02"); //Nƒôkde mus√≠ b√Ωt.
+		B_LogEntry (TOPIC_AngarsAmulett,"Amulet se nach√°z√≠ u kamenn√© hrobky na jihu Hornick√©ho √∫dol√≠."); 
 	};
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_03"); //BojÌm se, ûe ho nÍkdo ukradl. MusÌm ho za kaûdou cenu dostat zp·tky.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_03"); //Boj√≠m se, ≈æe ho nƒôkdo ukradl. Mus√≠m ho za ka≈ædou cenu dostat zp√°tky.
 };
 
 func void DIA_Angar_WIEKOMMSTDUHIERHER_andere ()
@@ -150,13 +150,13 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_andere ()
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_15_00"); //Co se stalo s ostatnÌma z t·bora v baûin·ch?
+		AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_15_00"); //Co se stalo s ostatn√≠ma z t√°bora v ba≈æin√°ch?
 	};
 	
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_01"); //PoslednÌ vÍc, na kterou si pamatuju, bylo zniËenÌ bariÈry a nervy dr·sajÌcÌ jekot, kter˝ ho doprov·zel.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_02"); //V panickÈ hr˘ze jsme se vrhli k zemi a svÌjeli se bolestÌ. Ten zvuk. A po‚·d sÌlil.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_03"); //A pak, kdyû bylo po vöem, se vöichni zbl·znili a s hlasit˝m ‚evem zmizeli ve tmÍ.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_04"); //Pak uû jsem je nikdy nevidÍl.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_01"); //Posledn√≠ vƒôc, na kterou si pamatuju, bylo zniƒçen√≠ bari√©ry a nervy dr√°saj√≠c√≠ jekot, kter√Ω ho doprov√°zel.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_02"); //V panick√© hr≈Øze jsme se vrhli k zemi a sv√≠jeli se bolest√≠. Ten zvuk. A po√¢√°d s√≠lil.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_03"); //A pak, kdy≈æ bylo po v≈°em, se v≈°ichni zbl√°znili a s hlasit√Ωm √¢evem zmizeli ve tmƒô.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_04"); //Pak u≈æ jsem je nikdy nevidƒôl.
 	
 	if (SC_KnowsMadPsi == TRUE)
 	{
@@ -166,11 +166,11 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_andere ()
 
 func void DIA_Angar_WIEKOMMSTDUHIERHER_nun ()
 {
-	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_15_00"); //Co chceö dÍlat d·l?
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_01"); //Nejd‚Ìv jsem si musel trochu odpoËinout, abych mohl zaËÌt hledat sv˘j ztracen˝ amulet.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_02"); //Zaslechl jsem nÍco o dracÌch.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_03"); //TakÈ se povÌd·, ûe se do HornickÈho ˙dolÌ vydalo mnoho bojovnÌk˘ na jejich lov.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_04"); //Uvaûuju o tom, ûe bych se k nim p‚idal.
+	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_15_00"); //Co chce≈° dƒôlat d√°l?
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_01"); //Nejd√¢√≠v jsem si musel trochu odpoƒçinout, abych mohl zaƒç√≠t hledat sv≈Øj ztracen√Ω amulet.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_02"); //Zaslechl jsem nƒôco o drac√≠ch.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_03"); //Tak√© se pov√≠d√°, ≈æe se do Hornick√©ho √∫dol√≠ vydalo mnoho bojovn√≠k≈Ø na jejich lov.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_04"); //Uva≈æuju o tom, ≈æe bych se k nim p√¢idal.
 
 	Angar_willDJGwerden = TRUE;
 
@@ -191,7 +191,7 @@ instance DIA_Angar_SCTellsAngarAboutMadPsi2		(C_INFO)
 	condition	 = 	DIA_Angar_SCTellsAngarAboutMadPsi2_Condition;
 	information	 = 	DIA_Angar_SCTellsAngarAboutMadPsi2_Info;
 
-	description	 = 	"Sp·Ëovo bratrstvo si zotroËilo zlo."; //Joly: falls erst nach DIA_Angar_WIEKOMMSTDUHIERHER  (SC_KnowsMadPsi == TRUE)
+	description	 = 	"Sp√°ƒçovo bratrstvo si zotroƒçilo zlo."; //Joly: falls erst nach DIA_Angar_WIEKOMMSTDUHIERHER  (SC_KnowsMadPsi == TRUE)
 };
 
 func int DIA_Angar_SCTellsAngarAboutMadPsi2_Condition ()
@@ -220,7 +220,7 @@ instance DIA_Angar_FOUNDAMULETT		(C_INFO)
 	condition	 = 	DIA_Angar_FOUNDAMULETT_Condition;
 	information	 = 	DIA_Angar_FOUNDAMULETT_Info;
 
-	description	 = 	"Naöel jsem tv˘j amulet.";
+	description	 = 	"Na≈°el jsem tv≈Øj amulet.";
 };
 
 func int DIA_Angar_FOUNDAMULETT_Condition ()
@@ -234,8 +234,8 @@ func int DIA_Angar_FOUNDAMULETT_Condition ()
 
 func void B_AngarsAmulettAbgeben()
 {
-	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_15_00"); //Naöel jsem tv˘j amulet.
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_04_01"); //DÌky. Myslel jsem, ûe uû ho nikdy neuvidÌm.
+	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_15_00"); //Na≈°el jsem tv≈Øj amulet.
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_04_01"); //D√≠ky. Myslel jsem, ≈æe u≈æ ho nikdy neuvid√≠m.
 
 	B_GiveInvItems (other, self, ItAm_Mana_Angar_MIS,1);
 	
@@ -247,14 +247,14 @@ func void DIA_Angar_FOUNDAMULETT_Info ()
 {
 	B_AngarsAmulettAbgeben ();
 
-	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "ProË je pro tebe tak d˘leûit˝?", DIA_Angar_FOUNDAMULETT_besonders );
-	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Co budeö dÍlat teÎ?", DIA_Angar_FOUNDAMULETT_nun );
+	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Proƒç je pro tebe tak d≈Øle≈æit√Ω?", DIA_Angar_FOUNDAMULETT_besonders );
+	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Co bude≈° dƒôlat te√´?", DIA_Angar_FOUNDAMULETT_nun );
 };
 
 func void DIA_Angar_FOUNDAMULETT_besonders ()
 {
-	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_00"); //ProË je pro tebe tak d˘leûit˝?
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_besonders_04_01"); //Byl to d·rek.
+	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_00"); //Proƒç je pro tebe tak d≈Øle≈æit√Ω?
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_besonders_04_01"); //Byl to d√°rek.
 	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_02"); //Aha.
 
 
@@ -262,9 +262,9 @@ func void DIA_Angar_FOUNDAMULETT_besonders ()
 
 func void DIA_Angar_FOUNDAMULETT_nun ()
 {
-	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_nun_15_00"); //Co budeö dÍlat teÎ?
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_nun_04_01"); //Vypadnu z tohodle zatracen˝ho ˙dolÌ.
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_nun_04_02"); //Moûn· se jeötÍ nÍkdy setk·me. Sbohem.
+	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_nun_15_00"); //Co bude≈° dƒôlat te√´?
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_nun_04_01"); //Vypadnu z tohodle zatracen√Ωho √∫dol√≠.
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_nun_04_02"); //Mo≈æn√° se je≈°tƒô nƒôkdy setk√°me. Sbohem.
 
 	AI_StopProcessInfos (self);
 	if 	((Npc_GetDistToWP(self,"OC_TO_MAGE")<1000) == FALSE) //Joly: Damit Angar nicht am OC Tor rumkronkelt, wenn er noch im OC ist.
@@ -283,7 +283,7 @@ instance DIA_Angar_DJG_ANWERBEN		(C_INFO)
 	condition	 = 	DIA_Angar_DJG_ANWERBEN_Condition;
 	information	 = 	DIA_Angar_DJG_ANWERBEN_Info;
 
-	description	 = 	"Moûn· bych ti mohl pomoct s nalezenÌm toho amuletu.";
+	description	 = 	"Mo≈æn√° bych ti mohl pomoct s nalezen√≠m toho amuletu.";
 };
 
 func int DIA_Angar_DJG_ANWERBEN_Condition ()
@@ -297,15 +297,15 @@ func int DIA_Angar_DJG_ANWERBEN_Condition ()
 
 func void DIA_Angar_DJG_ANWERBEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_15_00"); //Moûn· bych ti mohl pomoct s nalezenÌm toho amuletu.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_04_01"); //ProË ne. Trocha pomoci nem˘ûe ökodit.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_15_00"); //Mo≈æn√° bych ti mohl pomoct s nalezen√≠m toho amuletu.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_04_01"); //Proƒç ne. Trocha pomoci nem≈Ø≈æe ≈°kodit.
 
 
 	if (DJG_Angar_SentToStones == FALSE)
 		{
-		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Uû musÌm jÌt.", DIA_Angar_DJG_ANWERBEN_gehen );
-		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Kam chceö vyrazit?", DIA_Angar_DJG_ANWERBEN_wo );
-		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Kdy p˘jdeö?", DIA_Angar_DJG_ANWERBEN_wann );
+		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "U≈æ mus√≠m j√≠t.", DIA_Angar_DJG_ANWERBEN_gehen );
+		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Kam chce≈° vyrazit?", DIA_Angar_DJG_ANWERBEN_wo );
+		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Kdy p≈Øjde≈°?", DIA_Angar_DJG_ANWERBEN_wann );
 		};
 	
 	if (Angar_willDJGwerden == TRUE)
@@ -316,27 +316,27 @@ func void DIA_Angar_DJG_ANWERBEN_Info ()
 func void DIA_Angar_DJG_ANWERBEN_DJG ()
 {
 	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_DJG_15_00"); //Co ti drakobijci?
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_DJG_04_01"); //PromluvÌm si s nimi pozdÍji. Moûn· se jim moje silnÈ paûe budou hodit.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_DJG_04_01"); //Promluv√≠m si s nimi pozdƒôji. Mo≈æn√° se jim moje siln√© pa≈æe budou hodit.
 
 };
 
 func void DIA_Angar_DJG_ANWERBEN_wann ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wann_15_00"); //Kdy p˘jdeö?
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wann_04_01"); //Jakmile mi bude lÌp.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wann_15_00"); //Kdy p≈Øjde≈°?
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wann_04_01"); //Jakmile mi bude l√≠p.
 };
 
 func void DIA_Angar_DJG_ANWERBEN_wo ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wo_15_00"); //Kam chceö vyrazit?
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_01"); //MÍl bych se vydat na jih, tam, co jsem byl naposled.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_02"); //Je tam jeskynnÌ hrob, obklopen˝ balvany.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wo_15_00"); //Kam chce≈° vyrazit?
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_01"); //Mƒôl bych se vydat na jih, tam, co jsem byl naposled.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_02"); //Je tam jeskynn√≠ hrob, obklopen√Ω balvany.
 
 };
 func void DIA_Angar_DJG_ANWERBEN_gehen ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_gehen_15_00"); //Uû musÌm jÌt.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_gehen_04_01"); //BuÎ opatrn˝.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_gehen_15_00"); //U≈æ mus√≠m j√≠t.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_gehen_04_01"); //Bu√´ opatrn√Ω.
 	
 	AI_StopProcessInfos (self);
 };
@@ -354,7 +354,7 @@ instance DIA_AngarDJG_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_AngarDJG_WASMACHSTDU_Condition;
 	information	 = 	DIA_AngarDJG_WASMACHSTDU_Info;
 
-	description	 = 	"Stalo se nÍco?";
+	description	 = 	"Stalo se nƒôco?";
 };
 
 func int DIA_AngarDJG_WASMACHSTDU_Condition ()
@@ -371,12 +371,12 @@ func int DIA_AngarDJG_WASMACHSTDU_Condition ()
 
 func void DIA_AngarDJG_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_00"); //NÍco je öpatnÍ?
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_01"); //Slyöels to? JeötÍ nikdy jsem v celÈm svÈm ûivotÍ neslyöel tak p‚Ìöern˝ zvuk!
-	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_02"); //Co myslÌö? Neslyöel jsem ani hl·sku!
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_03"); //Cel· tahle oblast p·chne smrtÌ a zk·zou. Ta zahnÌvajÌcÌ stvo‚enÌ hlÌdajÌ skalnÌ p‚Ìstup do krypty, tam p‚ed n·mi.
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_04"); //Skr˝v· se tam nÍco p‚ÌöernÈho a vysÌl· to svÈ nohsledy na povrch zemÍ.
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_05"); //Jsem si tÈmÍ‚ jist˝, ûe jsem ten amulet ztratil nÍkde tady.
+	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_00"); //Nƒôco je ≈°patnƒô?
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_01"); //Sly≈°els to? Je≈°tƒô nikdy jsem v cel√©m sv√©m ≈æivotƒô nesly≈°el tak p√¢√≠≈°ern√Ω zvuk!
+	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_02"); //Co mysl√≠≈°? Nesly≈°el jsem ani hl√°sku!
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_03"); //Cel√° tahle oblast p√°chne smrt√≠ a zk√°zou. Ta zahn√≠vaj√≠c√≠ stvo√¢en√≠ hl√≠daj√≠ skaln√≠ p√¢√≠stup do krypty, tam p√¢ed n√°mi.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_04"); //Skr√Ωv√° se tam nƒôco p√¢√≠≈°ern√©ho a vys√≠l√° to sv√© nohsledy na povrch zemƒô.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_05"); //Jsem si t√©mƒô√¢ jist√Ω, ≈æe jsem ten amulet ztratil nƒôkde tady.
 
 	if (Angar_willDJGwerden == TRUE)
 	{
@@ -386,8 +386,8 @@ func void DIA_AngarDJG_WASMACHSTDU_Info ()
 func void DIA_AngarDJG_WASMACHSTDU_DJG ()
 {
 	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_DJG_15_00"); //Mluvil jsi s drakobijci?
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_01"); //Ano. Ale oËek·val jsem spoleËenstvo podobnÈ tomu, co jsme mÍli v t·bo‚e v baûin·ch.
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_02"); //Ti chlapi ale nejsou nic vÌc neû jen divok· nesourod· sbÌrka naprost˝ch pitomc˘. To nenÌ nic pro mÍ.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_01"); //Ano. Ale oƒçek√°val jsem spoleƒçenstvo podobn√© tomu, co jsme mƒôli v t√°bo√¢e v ba≈æin√°ch.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_02"); //Ti chlapi ale nejsou nic v√≠c ne≈æ jen divok√° nesourod√° sb√≠rka naprost√Ωch pitomc≈Ø. To nen√≠ nic pro mƒô.
 };
 
 
@@ -401,7 +401,7 @@ instance DIA_AngarDJG_WHATSINTHERE		(C_INFO)
 	condition	 = 	DIA_AngarDJG_WHATSINTHERE_Condition;
 	information	 = 	DIA_AngarDJG_WHATSINTHERE_Info;
 
-	description	 = 	"Co se skr˝v· v tÈ jeskyni ve skal·ch?";
+	description	 = 	"Co se skr√Ωv√° v t√© jeskyni ve skal√°ch?";
 };
 
 func int DIA_AngarDJG_WHATSINTHERE_Condition ()
@@ -415,13 +415,13 @@ func int DIA_AngarDJG_WHATSINTHERE_Condition ()
 
 func void DIA_AngarDJG_WHATSINTHERE_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_WHATSINTHERE_15_00"); //Co se skr˝v· v tÈ jeskyni ve skal·ch?
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_01"); //NÍco mi nechce dovolit se k tÈ jeskyni p‚iblÌûit!
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_02"); //St‚eûÌ ji magick· stvo‚enÌ. VidÍl jsem je v noci, jak prohled·vajÌ okolÌ. Nechutnost sama.
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_03"); //Obr·tila se nazpÍt a zmizela mezi stromy. A tys mÍl pocit, jako by vys·la vöechen ûivot z okolÌ jako houba vys·v· vodu.
+	AI_Output			(other, self, "DIA_AngarDJG_WHATSINTHERE_15_00"); //Co se skr√Ωv√° v t√© jeskyni ve skal√°ch?
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_01"); //Nƒôco mi nechce dovolit se k t√© jeskyni p√¢ibl√≠≈æit!
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_02"); //St√¢e≈æ√≠ ji magick√° stvo√¢en√≠. Vidƒôl jsem je v noci, jak prohled√°vaj√≠ okol√≠. Nechutnost sama.
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_03"); //Obr√°tila se nazpƒôt a zmizela mezi stromy. A tys mƒôl pocit, jako by vys√°la v≈°echen ≈æivot z okol√≠ jako houba vys√°v√° vodu.
 
-	//Log_AddEntry (TOPIC_Dragonhunter,"Ich habe Angar im Minental gefunden. Er vermutet, daﬂ sich in der Felsengruft, wo er sich aufh‰lt, ein Drache befindet, der hier seine untoten Helfer an die Oberfl‰che entsendet.");
-	B_LogEntry (TOPIC_Dragonhunter,"V HornickÈm ˙dolÌ jsem naöel Angara.");
+	//Log_AddEntry (TOPIC_Dragonhunter,"Ich habe Angar im Minental gefunden. Er vermutet, da√ü sich in der Felsengruft, wo er sich aufh√§lt, ein Drache befindet, der hier seine untoten Helfer an die Oberfl√§che entsendet.");
+	B_LogEntry (TOPIC_Dragonhunter,"V Hornick√©m √∫dol√≠ jsem na≈°el Angara.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -434,7 +434,7 @@ instance DIA_AngarDJG_WANTTOGOINTHERE		(C_INFO)
 	condition	 = 	DIA_AngarDJG_WANTTOGOINTHERE_Condition;
 	information	 = 	DIA_AngarDJG_WANTTOGOINTHERE_Info;
 
-	description	 = 	"PojÎme spolu.";
+	description	 = 	"Poj√´me spolu.";
 };
 
 func int DIA_AngarDJG_WANTTOGOINTHERE_Condition ()
@@ -448,8 +448,8 @@ func int DIA_AngarDJG_WANTTOGOINTHERE_Condition ()
 
 func void DIA_AngarDJG_WANTTOGOINTHERE_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_WANTTOGOINTHERE_15_00"); //Jdeme spoleËnÍ.
-	AI_Output			(self, other, "DIA_AngarDJG_WANTTOGOINTHERE_04_01"); //ZkusÌm to. Ale buÎ opatrn˝.
+	AI_Output			(other, self, "DIA_AngarDJG_WANTTOGOINTHERE_15_00"); //Jdeme spoleƒçnƒô.
+	AI_Output			(self, other, "DIA_AngarDJG_WANTTOGOINTHERE_04_01"); //Zkus√≠m to. Ale bu√´ opatrn√Ω.
 
 	AI_StopProcessInfos (self);  
 
@@ -492,7 +492,7 @@ func int DIA_AngarDJG_UndeadMageDead_Condition ()
 
 func void DIA_AngarDJG_UndeadMageDead_Info ()
 {
-	AI_Output			(self, other, "DIA_AngarDJG_UndeadMageDead_04_00"); //(k‚iËÌ) Jenom smrt a zk·za. MusÌm se odsud dostat.
+	AI_Output			(self, other, "DIA_AngarDJG_UndeadMageDead_04_00"); //(k√¢iƒç√≠) Jenom smrt a zk√°za. Mus√≠m se odsud dostat.
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"RunToEntrance");
@@ -527,7 +527,7 @@ func int DIA_AngarDJG_UNDEADMAGECOMES_Condition ()
 
 func void DIA_AngarDJG_UNDEADMAGECOMES_Info ()
 {
-	AI_Output			(self, other, "DIA_AngarDJG_UNDEADMAGECOMES_04_00"); //(öept·) Tady to je! Slyöels to?
+	AI_Output			(self, other, "DIA_AngarDJG_UNDEADMAGECOMES_04_00"); //(≈°ept√°) Tady to je! Sly≈°els to?
 	
 	AI_StopProcessInfos (self);   
  	
@@ -545,7 +545,7 @@ instance DIA_Angar_WASISTLOS		(C_INFO)
 	condition	 = 	DIA_Angar_WASISTLOS_Condition;
 	information	 = 	DIA_Angar_WASISTLOS_Info;
 
-	description	 = 	"Co se dÍje?";
+	description	 = 	"Co se dƒôje?";
 };
 
 func int DIA_Angar_WASISTLOS_Condition ()
@@ -562,23 +562,23 @@ func int DIA_Angar_WASISTLOS_Condition ()
 
 func void DIA_Angar_WASISTLOS_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_WASISTLOS_15_00"); //Co se dÍje?
-	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_01"); //D·l uû s tebou jÌt nem˘ûu.
-	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_02"); //NÍco mi ‚Ìk·, ûe se odsud ûiv˝ nedostanu.
-	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_03"); //Nedok·ûu to vysvÍtlit, ale...
+	AI_Output			(other, self, "DIA_Angar_WASISTLOS_15_00"); //Co se dƒôje?
+	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_01"); //D√°l u≈æ s tebou j√≠t nem≈Ø≈æu.
+	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_02"); //Nƒôco mi √¢√≠k√°, ≈æe se odsud ≈æiv√Ω nedostanu.
+	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_03"); //Nedok√°≈æu to vysvƒôtlit, ale...
 	
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_04"); //MÍl bych se z t˝hle zpropaden˝ zemÍ dostat co nejrychlejö. Jinak mÍ potk· stejn˝ osud jako mÈ bratry.
+		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_04"); //Mƒôl bych se z t√Ωhle zpropaden√Ω zemƒô dostat co nejrychlej≈°. Jinak mƒô potk√° stejn√Ω osud jako m√© bratry.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_05"); //Pokaûd˝, kdyû narazÌm na tyhle... zplozence pekel, m·m pocit, jako bych bojoval proti vlastnÌm lidem.
+		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_05"); //Poka≈æd√Ω, kdy≈æ naraz√≠m na tyhle... zplozence pekel, m√°m pocit, jako bych bojoval proti vlastn√≠m lidem.
 	};
 
 	AI_StopProcessInfos (self);
 
-	B_LogEntry (TOPIC_Dragonhunter,"Angar prostÍ odeöel. P‚i boji se vöemi tÍmi nemrtv˝mi mÍl pocit, jako by bojoval s vlastnÌmi druhy.");
+	B_LogEntry (TOPIC_Dragonhunter,"Angar prostƒô ode≈°el. P√¢i boji se v≈°emi tƒômi nemrtv√Ωmi mƒôl pocit, jako by bojoval s vlastn√≠mi druhy.");
 			
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"LeavingOW");
@@ -594,7 +594,7 @@ instance DIA_Angar_WHYAREYOUHERE		(C_INFO)
 	condition	 = 	DIA_Angar_WHYAREYOUHERE_Condition;
 	information	 = 	DIA_Angar_WHYAREYOUHERE_Info;
 
-	description	 = 	"Angare! Co tady dÍl·ö?";
+	description	 = 	"Angare! Co tady dƒôl√°≈°?";
 };
 
 func int DIA_Angar_WHYAREYOUHERE_Condition ()
@@ -607,11 +607,11 @@ func int DIA_Angar_WHYAREYOUHERE_Condition ()
 
 func void DIA_Angar_WHYAREYOUHERE_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_WHYAREYOUHERE_15_00"); //Angare! Co tady dÍl·ö?
-	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_01"); //Byl jsem na cestÍ k pr˘smyku, kdyû jsem narazil na sk‚ety. Nedok·zal jsem ty bezboûn˝ barbary set‚·st.
-	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_02"); //ZatÌm tady poËk·m a pak projdu pr˘smykem. UvidÌme se na druhÈ stranÍ!
+	AI_Output			(other, self, "DIA_Angar_WHYAREYOUHERE_15_00"); //Angare! Co tady dƒôl√°≈°?
+	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_01"); //Byl jsem na cestƒô k pr≈Øsmyku, kdy≈æ jsem narazil na sk√¢ety. Nedok√°zal jsem ty bezbo≈æn√Ω barbary set√¢√°st.
+	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_02"); //Zat√≠m tady poƒçk√°m a pak projdu pr≈Øsmykem. Uvid√≠me se na druh√© stranƒô!
 
-	B_LogEntry (TOPIC_Dragonhunter,"OpÍt jsem se potkal s Angarem. JeötÍ po‚·d z˘st·v· v HornickÈm ˙dolÌ.");
+	B_LogEntry (TOPIC_Dragonhunter,"Opƒôt jsem se potkal s Angarem. Je≈°tƒô po√¢√°d z≈Øst√°v√° v Hornick√©m √∫dol√≠.");
 	B_GivePlayerXP (XP_AngarDJGAgain); 
 	AI_StopProcessInfos (self);
 };
@@ -626,7 +626,7 @@ instance DIA_Angar_PERMKAP4		(C_INFO)
 	information	 = 	DIA_Angar_PERMKAP4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nechci tÍ tu nechat samotnÈho!";
+	description	 = 	"Nechci tƒô tu nechat samotn√©ho!";
 };
 
 func int DIA_Angar_PERMKAP4_Condition ()
@@ -639,8 +639,8 @@ func int DIA_Angar_PERMKAP4_Condition ()
 
 func void DIA_Angar_PERMKAP4_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_PERMKAP4_15_00"); //V·ûnÍ tÍ m˘ûu nechat samotnÈho?
-	AI_Output			(self, other, "DIA_Angar_PERMKAP4_04_01"); //JasnÍ. Jdi. UvidÌme se.
+	AI_Output			(other, self, "DIA_Angar_PERMKAP4_15_00"); //V√°≈ænƒô tƒô m≈Ø≈æu nechat samotn√©ho?
+	AI_Output			(self, other, "DIA_Angar_PERMKAP4_04_01"); //Jasnƒô. Jdi. Uvid√≠me se.
 
 	AI_StopProcessInfos (self);	
 };

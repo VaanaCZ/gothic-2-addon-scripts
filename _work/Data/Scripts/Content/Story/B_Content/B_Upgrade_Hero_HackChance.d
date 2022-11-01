@@ -9,6 +9,6 @@ FUNC VOID B_Upgrade_Hero_HackChance (var int Wert)
 	
 	Hero_HackChance	= (Hero_HackChance + Wert);
 	
-	Snd_Play ("M�ec");
+	Snd_Play ("Męšec");
 	
 };

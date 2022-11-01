@@ -32,7 +32,7 @@ INSTANCE DIA_None_101_Mario_Job (C_INFO)
 	condition   = DIA_None_101_Mario_Job_Condition;
 	information = DIA_None_101_Mario_Job_Info;
 	permanent   = TRUE;
-	description	= "Co tady dÍl·ö?";
+	description	= "Co tady dƒôl√°≈°?";
 };
 
 FUNC INT DIA_None_101_Mario_Job_Condition()
@@ -47,9 +47,9 @@ FUNC INT DIA_None_101_Mario_Job_Condition()
 
 FUNC VOID DIA_None_101_Mario_Job_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_Job_15_00"); //Co tady dÍl·ö?
-	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_01"); //Douf·m, ûe co nejd‚Ìv p‚ipluje loÎ, kterou bych si mohl pronajmout.
-	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_02"); //Tohle fl·k·nÌ mi uû v·ûnÍ leze na nervy.
+	AI_Output (other,self ,"DIA_None_101_Mario_Job_15_00"); //Co tady dƒôl√°≈°?
+	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_01"); //Douf√°m, ≈æe co nejd√¢√≠v p√¢ipluje lo√´, kterou bych si mohl pronajmout.
+	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_02"); //Tohle fl√°k√°n√≠ mi u≈æ v√°≈ænƒô leze na nervy.
 };
 
 //*********************************************************************
@@ -76,13 +76,13 @@ FUNC INT DIA_None_101_Mario_YouNeedMe_Condition()
 
 FUNC VOID DIA_None_101_Mario_YouNeedMe_Info()
 {
-	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_00"); //Slyöel jsem, ûe hled·ö lidi na svou loÎ?
+	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_00"); //Sly≈°el jsem, ≈æe hled√°≈° lidi na svou lo√´?
 	AI_Output (other,self ,"DIA_None_101_Mario_YouNeedMe_15_01"); //A?
 	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_02"); //Jdu do toho!
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	
-	B_LogEntry (TOPIC_Crew,"V p‚ÌstavnÌ krËmÍ se se mnou dal do ‚eËi b˝val˝ n·mo‚nÌk Mario, kter˝ se chce opÍt dostat na loÎ.");
+	B_LogEntry (TOPIC_Crew,"V p√¢√≠stavn√≠ krƒçmƒô se se mnou dal do √¢eƒçi b√Ωval√Ω n√°mo√¢n√≠k Mario, kter√Ω se chce opƒôt dostat na lo√´.");
 };
 
 //*********************************************************************
@@ -95,7 +95,7 @@ INSTANCE DIA_None_101_Mario_WhyNeedYou   (C_INFO)
 	condition   = DIA_None_101_Mario_WhyNeedYou_Condition;
 	information = DIA_None_101_Mario_WhyNeedYou_Info;
 	permanent   = FALSE;
-	description	= "ProË bych tÍ mÍl s sebou br·t?";
+	description	= "Proƒç bych tƒô mƒôl s sebou br√°t?";
 };
 
 FUNC INT DIA_None_101_Mario_WhyNeedYou_Condition()
@@ -109,12 +109,12 @@ FUNC INT DIA_None_101_Mario_WhyNeedYou_Condition()
 
 FUNC VOID DIA_None_101_Mario_WhyNeedYou_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_WhyNeedYou_15_00"); //ProË bych tÍ mÍl s sebou br·t?
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_01"); //ProstÍ proto, ûe mÍ pot‚ebujeö.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_02"); //Jsem... byl jsem poruËÌkem v kr·lovskÈm n·mo‚nictvu.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_03"); //Slouûil jsem jako n·mo‚nÌk na Kr·li Rhobarovi a ChloubÍ Myrtany.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_04"); //V bitvÍ o V˝chodnÌ souostrovÌ jsem jednou rukou poslal zp·tky do Beliarovy ‚Ìöe dva tucty sk‚et˘.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_05"); //Bohuûel potÈ, co potopili naöi vlajkovou loÎ, n·s zbylo p‚Ìliö m·lo a museli jsme se st·hnout.
+	AI_Output (other,self ,"DIA_None_101_Mario_WhyNeedYou_15_00"); //Proƒç bych tƒô mƒôl s sebou br√°t?
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_01"); //Prostƒô proto, ≈æe mƒô pot√¢ebuje≈°.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_02"); //Jsem... byl jsem poruƒç√≠kem v kr√°lovsk√©m n√°mo√¢nictvu.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_03"); //Slou≈æil jsem jako n√°mo√¢n√≠k na Kr√°li Rhobarovi a Chloubƒô Myrtany.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_04"); //V bitvƒô o V√Ωchodn√≠ souostrov√≠ jsem jednou rukou poslal zp√°tky do Beliarovy √¢√≠≈°e dva tucty sk√¢et≈Ø.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_05"); //Bohu≈æel pot√©, co potopili na≈°i vlajkovou lo√´, n√°s zbylo p√¢√≠li≈° m√°lo a museli jsme se st√°hnout.
 
 };
 
@@ -128,7 +128,7 @@ INSTANCE DIA_None_101_Mario_WhyHere   (C_INFO)
 	condition   = DIA_None_101_Mario_WhyHere_Condition;
 	information = DIA_None_101_Mario_WhyHere_Info;
 	permanent   = FALSE;
-	description	= "Tak proË jsi tady?";
+	description	= "Tak proƒç jsi tady?";
 };
 
 FUNC INT DIA_None_101_Mario_WhyHere_Condition()
@@ -142,9 +142,9 @@ FUNC INT DIA_None_101_Mario_WhyHere_Condition()
 
 FUNC VOID DIA_None_101_Mario_WhyHere_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_WhyHere_15_00"); //Tak proË jsi tady?
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyHere_07_01"); //Flotila je rozpr·öen· a truhlice se ûoldem pr·zdn·.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyHere_07_02"); //Kdyû mÍ propustili, z˘stal jsem trËet v tÈhle dÌ‚e. Tak hled·m nÍjakou dalöÌ pr·ci.
+	AI_Output (other,self ,"DIA_None_101_Mario_WhyHere_15_00"); //Tak proƒç jsi tady?
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyHere_07_01"); //Flotila je rozpr√°≈°en√° a truhlice se ≈æoldem pr√°zdn√°.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyHere_07_02"); //Kdy≈æ mƒô propustili, z≈Østal jsem trƒçet v t√©hle d√≠√¢e. Tak hled√°m nƒôjakou dal≈°√≠ pr√°ci.
 };
 
 //*********************************************************************
@@ -157,7 +157,7 @@ INSTANCE DIA_None_101_Mario_Abilities   (C_INFO)
 	condition   = DIA_None_101_Mario_Abilities_Condition;
 	information = DIA_None_101_Mario_Abilities_Info;
 	permanent   = FALSE;
-	description	= "Co umÌö?";
+	description	= "Co um√≠≈°?";
 };
 
 FUNC INT DIA_None_101_Mario_Abilities_Condition()
@@ -171,11 +171,11 @@ FUNC INT DIA_None_101_Mario_Abilities_Condition()
 
 FUNC VOID DIA_None_101_Mario_Abilities_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_Abilities_15_00"); //Co umÌö?
-	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_01"); //Jsem zkuöen˝ n·mo‚nÌk a bojovnÌk, navÌc dok·ûu sluönÍ zach·zet s lodnÌm dÍlem.
-	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_02"); //UrËitÍ bych tÍ p·r vÍcÌ dok·zal nauËit, neû doplujeme k cÌli.
+	AI_Output (other,self ,"DIA_None_101_Mario_Abilities_15_00"); //Co um√≠≈°?
+	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_01"); //Jsem zku≈°en√Ω n√°mo√¢n√≠k a bojovn√≠k, nav√≠c dok√°≈æu slu≈°nƒô zach√°zet s lodn√≠m dƒôlem.
+	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_02"); //Urƒçitƒô bych tƒô p√°r vƒôc√≠ dok√°zal nauƒçit, ne≈æ doplujeme k c√≠li.
 
-	B_LogEntry (TOPIC_Crew,"Vypad· to, ûe Mario je ve vÍcech n·mo‚nÌch docela zbÍhl˝. Moûn· by se se mnou mohl o p·r zkuöenostÌ podÍlit.");
+	B_LogEntry (TOPIC_Crew,"Vypad√° to, ≈æe Mario je ve vƒôcech n√°mo√¢n√≠ch docela zbƒôhl√Ω. Mo≈æn√° by se se mnou mohl o p√°r zku≈°enost√≠ podƒôlit.");
 };
 
 //*********************************************************************
@@ -188,7 +188,7 @@ INSTANCE DIA_None_101_Mario_YourPrice   (C_INFO)
 	condition   = DIA_None_101_Mario_YourPrice_Condition;
 	information = DIA_None_101_Mario_YourPrice_Info;
 	permanent   = FALSE;
-	description	= "Co za to chceö?";
+	description	= "Co za to chce≈°?";
 };
 
 FUNC INT DIA_None_101_Mario_YourPrice_Condition()
@@ -202,13 +202,13 @@ FUNC INT DIA_None_101_Mario_YourPrice_Condition()
 
 FUNC VOID DIA_None_101_Mario_YourPrice_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_YourPrice_15_00"); //Co za to chceö?
-	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_01"); //Co bych chtÍl? Budu r·d, ûe odsud vypadnu.
-	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_02"); //Pl·cneme si. J· ti pom˘ûu a ty mÍ odsud dostaneö.
+	AI_Output (other,self ,"DIA_None_101_Mario_YourPrice_15_00"); //Co za to chce≈°?
+	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_01"); //Co bych chtƒôl? Budu r√°d, ≈æe odsud vypadnu.
+	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_02"); //Pl√°cneme si. J√° ti pom≈Ø≈æu a ty mƒô odsud dostane≈°.
 };
 
 //*********************************************************************
-//	Die Reise kann gef‰hrlich werden.
+//	Die Reise kann gef√§hrlich werden.
 //*********************************************************************
 INSTANCE DIA_None_101_Mario_CouldBeDangerous   (C_INFO)
 {
@@ -217,7 +217,7 @@ INSTANCE DIA_None_101_Mario_CouldBeDangerous   (C_INFO)
 	condition   = DIA_None_101_Mario_CouldBeDangerous_Condition;
 	information = DIA_None_101_Mario_CouldBeDangerous_Info;
 	permanent   = FALSE;
-	description	= "Ta cesta m˘ûe b˝t nebezpeËn·.";
+	description	= "Ta cesta m≈Ø≈æe b√Ωt nebezpeƒçn√°.";
 };
 
 FUNC INT DIA_None_101_Mario_CouldBeDangerous_Condition()
@@ -231,10 +231,10 @@ FUNC INT DIA_None_101_Mario_CouldBeDangerous_Condition()
 
 FUNC VOID DIA_None_101_Mario_CouldBeDangerous_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_CouldBeDangerous_15_00"); //Ta cesta m˘ûe b˝t nebezpeËn·.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_01"); //Na nebezpeËÌ jsem zvykl˝. Kdyû jsi na mo‚i, je kaûd˝ den nebezpeËn˝.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_02"); //P‚ÌötÌ bou‚e m˘ûe b˝t tvoje smrt a p‚Ìöery z hlubin dok·ûÌ spolknout celou loÎ jako malinu.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_03"); //A o sk‚etÌch galÈr·ch snad ani mluvit nemusÌm, ûe? VÍ‚ mi, nenajde se nic, Ëeho bych se b·l. N·mo‚nÌk, kter˝ se bojÌ, je uû p‚edem mrtv˝.
+	AI_Output (other,self ,"DIA_None_101_Mario_CouldBeDangerous_15_00"); //Ta cesta m≈Ø≈æe b√Ωt nebezpeƒçn√°.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_01"); //Na nebezpeƒç√≠ jsem zvykl√Ω. Kdy≈æ jsi na mo√¢i, je ka≈æd√Ω den nebezpeƒçn√Ω.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_02"); //P√¢√≠≈°t√≠ bou√¢e m≈Ø≈æe b√Ωt tvoje smrt a p√¢√≠≈°ery z hlubin dok√°≈æ√≠ spolknout celou lo√´ jako malinu.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_03"); //A o sk√¢et√≠ch gal√©r√°ch snad ani mluvit nemus√≠m, ≈æe? Vƒô√¢ mi, nenajde se nic, ƒçeho bych se b√°l. N√°mo√¢n√≠k, kter√Ω se boj√≠, je u≈æ p√¢edem mrtv√Ω.
 };
 
 //*********************************************************************
@@ -247,7 +247,7 @@ INSTANCE DIA_None_101_Mario_DontNeedYou   (C_INFO)
 	condition   = DIA_None_101_Mario_DontNeedYou_Condition;
 	information = DIA_None_101_Mario_DontNeedYou_Info;
 	permanent   = FALSE;
-	description	= "K niËemu bys mi nebyl.";
+	description	= "K niƒçemu bys mi nebyl.";
 };
 
 FUNC INT DIA_None_101_Mario_DontNeedYou_Condition()
@@ -261,10 +261,10 @@ FUNC INT DIA_None_101_Mario_DontNeedYou_Condition()
 
 FUNC VOID DIA_None_101_Mario_DontNeedYou_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_DontNeedYou_15_00"); //K niËemu bys mi nebyl.
-	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_01"); //Jsem nejlepöÌ n·mo‚nÌk, kterÈho tady m˘ûeö sehnat.
-	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_02"); //StaËÌ se na tebe podÌvat a hned je jasnÈ, ûe o navigaci nevÌö, co by se za nehet veölo.
-	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_03"); //Takûe radöi vöechno dvakr·t zvaû, neû budeö nÍkomu vÍ‚it.
+	AI_Output (other,self ,"DIA_None_101_Mario_DontNeedYou_15_00"); //K niƒçemu bys mi nebyl.
+	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_01"); //Jsem nejlep≈°√≠ n√°mo√¢n√≠k, kter√©ho tady m≈Ø≈æe≈° sehnat.
+	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_02"); //Staƒç√≠ se na tebe pod√≠vat a hned je jasn√©, ≈æe o navigaci nev√≠≈°, co by se za nehet ve≈°lo.
+	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_03"); //Tak≈æe rad≈°i v≈°echno dvakr√°t zva≈æ, ne≈æ bude≈° nƒôkomu vƒô√¢it.
 };
 
 //*********************************************************************
@@ -277,7 +277,7 @@ INSTANCE DIA_None_101_Mario_NeedGoodMen   (C_INFO)
 	condition   = DIA_None_101_Mario_NeedGoodMen_Condition;
 	information = DIA_None_101_Mario_NeedGoodMen_Info;
 	permanent   = FALSE;
-	description	= "Dob‚Ì pomocnÌci se vûdycky hodÌ.";
+	description	= "Dob√¢√≠ pomocn√≠ci se v≈ædycky hod√≠.";
 };
 
 FUNC INT DIA_None_101_Mario_NeedGoodMen_Condition()
@@ -291,8 +291,8 @@ FUNC INT DIA_None_101_Mario_NeedGoodMen_Condition()
 
 FUNC VOID DIA_None_101_Mario_NeedGoodMen_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_NeedGoodMen_15_00"); //Dob‚Ì pomocnÌci se vûdycky hodÌ.
-	AI_Output (self ,other,"DIA_None_101_Mario_NeedGoodMen_07_01"); //Jasn· vÍc, uvidÌme se na lodi.
+	AI_Output (other,self ,"DIA_None_101_Mario_NeedGoodMen_15_00"); //Dob√¢√≠ pomocn√≠ci se v≈ædycky hod√≠.
+	AI_Output (self ,other,"DIA_None_101_Mario_NeedGoodMen_07_01"); //Jasn√° vƒôc, uvid√≠me se na lodi.
 	
 	B_GivePlayerXP (XP_Crewmember_Success);
 	
@@ -319,7 +319,7 @@ instance DIA_Mario_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Mario_LeaveMyShip_Condition;
 	information	 = 	DIA_Mario_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"P‚ece jenom bys mi k niËemu nebyl!";
+	description	 = 	"P√¢ece jenom bys mi k niƒçemu nebyl!";
 };
 func int DIA_Mario_LeaveMyShip_Condition ()
 {	
@@ -331,8 +331,8 @@ func int DIA_Mario_LeaveMyShip_Condition ()
 };
 func void DIA_Mario_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Mario_LeaveMyShip_15_00"); //P‚ece jenom bys mi k niËemu nebyl!
-	AI_Output			(self, other, "DIA_Mario_LeaveMyShip_07_01"); //Jak je libo. VÌö, kde mÍ najÌt!
+	AI_Output			(other, self, "DIA_Mario_LeaveMyShip_15_00"); //P√¢ece jenom bys mi k niƒçemu nebyl!
+	AI_Output			(self, other, "DIA_Mario_LeaveMyShip_07_01"); //Jak je libo. V√≠≈°, kde mƒô naj√≠t!
 	
 	Mario_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -341,7 +341,7 @@ func void DIA_Mario_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ¸berlegt!
+//	Ich habs mir √ºberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Mario_StillNeedYou		(C_INFO)
 {
@@ -350,11 +350,11 @@ instance DIA_Mario_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Mario_StillNeedYou_Condition;
 	information	 = 	DIA_Mario_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"P‚ece jenom bys mi k nÍËemu mohl b˝t!";
+	description	 = 	"P√¢ece jenom bys mi k nƒôƒçemu mohl b√Ωt!";
 };
 func int DIA_Mario_StillNeedYou_Condition ()
 {	
-	if((Mario_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man nat¸rlich nur eine variable abfragen
+	if((Mario_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man nat√ºrlich nur eine variable abfragen
 	|| (Mario_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{
@@ -363,11 +363,11 @@ func int DIA_Mario_StillNeedYou_Condition ()
 };
 func void DIA_Mario_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_Mario_StillNeedYou_15_00"); //P‚ece jenom bys mi k nÍËemu mohl b˝t!
+	AI_Output			(other, self, "DIA_Mario_StillNeedYou_15_00"); //P√¢ece jenom bys mi k nƒôƒçemu mohl b√Ωt!
 	
 	if (Mario_IsOnBoard == LOG_OBSOLETE)
 	{
-		AI_Output	(self, other, "DIA_Mario_StillNeedYou_07_01"); //VÍdÍl jsem to! UvidÌme se na lodi!
+		AI_Output	(self, other, "DIA_Mario_StillNeedYou_07_01"); //Vƒôdƒôl jsem to! Uvid√≠me se na lodi!
 		
 		Mario_IsOnBoard	 = LOG_SUCCESS;
 		crewmember_Count = (Crewmember_Count +1);
@@ -383,7 +383,7 @@ func void DIA_Mario_StillNeedYou_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Mario_StillNeedYou_07_02"); //Takhle se ke mnÍ chovat nesmÌö. Vykuch·m tÍ!
+		AI_Output	(self, other, "DIA_Mario_StillNeedYou_07_02"); //Takhle se ke mnƒô chovat nesm√≠≈°. Vykuch√°m tƒô!
 	
 		AI_StopProcessInfos (self);
 		

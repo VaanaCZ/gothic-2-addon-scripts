@@ -66,7 +66,7 @@ INSTANCE DIA_Gaertner_Job(C_INFO)
 	condition	= DIA_Gaertner_Job_Condition;
 	information	= DIA_Gaertner_Job_Info;
 	permanent	= FALSE;
-	description = "Co tady dêláš?";
+	description = "Co tady dÄ™lÃ¡Å¡?";
 };                       
 
 FUNC INT DIA_Gaertner_Job_Condition()
@@ -76,13 +76,13 @@ FUNC INT DIA_Gaertner_Job_Condition()
 
 FUNC VOID DIA_Gaertner_Job_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Job_15_00"); //Co tady dêláš?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //Co myslíš? Já jsem zahradník, starám se o zahradu.
-	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //Dá se âíci, e jsi tady sám, e ano?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Ano, a mêlo by to tak zùstat. Jsem rád, e tady mám klid.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //Jednou mê chtêli poslat do trestanecké kolonie, protoe jsem oddêlal jednoho chlápka.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Ale správce Larius potâeboval dalšího zahradníka, take jsem tady mohl zùstat.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Nakonec se tahle zahrada stala mım domovem. A já jsem spokojenı.
+	AI_Output (other,self ,"DIA_Gaertner_Job_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //Co myslÃ­Å¡? JÃ¡ jsem zahradnÃ­k, starÃ¡m se o zahradu.
+	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //DÃ¡ se Ã¢Ã­ci, Å¾e jsi tady sÃ¡m, Å¾e ano?
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Ano, a mÄ™lo by to tak zÅ¯stat. Jsem rÃ¡d, Å¾e tady mÃ¡m klid.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //Jednou mÄ™ chtÄ™li poslat do trestaneckÃ© kolonie, protoÅ¾e jsem oddÄ™lal jednoho chlÃ¡pka.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Ale sprÃ¡vce Larius potÃ¢eboval dalÅ¡Ã­ho zahradnÃ­ka, takÅ¾e jsem tady mohl zÅ¯stat.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Nakonec se tahle zahrada stala mÃ½m domovem. A jÃ¡ jsem spokojenÃ½.
 };
 //*************************************************************
 //		
@@ -94,7 +94,7 @@ INSTANCE DIA_Gaertner_Plants(C_INFO)
 	condition	= DIA_Gaertner_Plants_Condition;
 	information	= DIA_Gaertner_Plants_Info;
 	permanent	= FALSE;
-	description = "Pêstuješ také bylinky?";
+	description = "PÄ™stujeÅ¡ takÃ© bylinky?";
 };                       
 
 FUNC INT DIA_Gaertner_Plants_Condition()
@@ -106,12 +106,12 @@ FUNC INT DIA_Gaertner_Plants_Condition()
 };
 FUNC VOID DIA_Gaertner_Plants_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //Pêstuješ také bylinky?
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Pár. Pêstuju vrbky úzkolisté a ohnivé kopâivy. Taky jsem zkoušel trávu z bain, ale vùbec se jí tady nedaâilo.
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Mno, právê jsem sklidil. Take jestli chceš nêco koupit...
+	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //PÄ™stujeÅ¡ takÃ© bylinky?
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //PÃ¡r. PÄ™stuju vrbky ÃºzkolistÃ© a ohnivÃ© kopÃ¢ivy. Taky jsem zkouÅ¡el trÃ¡vu z baÅ¾in, ale vÅ¯bec se jÃ­ tady nedaÃ¢ilo.
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Mno, prÃ¡vÄ™ jsem sklidil. TakÅ¾e jestli chceÅ¡ nÄ™co koupit...
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Zahradník místodrícího mi mùe prodat nêjaké rostliny.");
+	B_LogEntry (Topic_CityTrader,"ZahradnÃ­k mÃ­stodrÅ¾Ã­cÃ­ho mi mÅ¯Å¾e prodat nÄ™jakÃ© rostliny.");
 };
 //*************************************************************
 //		Trade
@@ -123,7 +123,7 @@ INSTANCE DIA_Gaertner_Trade(C_INFO)
 	condition	= DIA_Gaertner_Trade_Condition;
 	information	= DIA_Gaertner_Trade_Info;
 	permanent	= TRUE;
-	description = "Uka mi své zboí.";
+	description = "UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 	trade		= TRUE;
 };                       
 
@@ -137,7 +137,7 @@ FUNC INT DIA_Gaertner_Trade_Condition()
 FUNC VOID DIA_Gaertner_Trade_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other,self ,"DIA_Gaertner_Trade_15_00"); //Uka mi své zboí.
+	AI_Output (other,self ,"DIA_Gaertner_Trade_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 };
 //*************************************************************
 //		Krautabak
@@ -149,7 +149,7 @@ INSTANCE DIA_Gaertner_Krautabak(C_INFO)
 	condition	= DIA_Gaertner_Krautabak_Condition;
 	information	= DIA_Gaertner_Krautabak_Info;
 	permanent	= FALSE;
-	description = "Obstaral jsem ti nêjakı rostlinnı tabák.";
+	description = "Obstaral jsem ti nÄ™jakÃ½ rostlinnÃ½ tabÃ¡k.";
 };                       
 
 FUNC INT DIA_Gaertner_Krautabak_Condition()
@@ -162,8 +162,8 @@ FUNC INT DIA_Gaertner_Krautabak_Condition()
 };
 FUNC VOID DIA_Gaertner_Krautabak_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //Mám tady tabákové listy. Zakouâíš si?
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //To neznám  - ale jistê, dej to sem. Zkusím to.
+	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //MÃ¡m tady tabÃ¡kovÃ© listy. ZakouÃ¢Ã­Å¡ si?
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //To neznÃ¡m  - ale jistÄ™, dej to sem. ZkusÃ­m to.
 	
 	B_GiveInvItems (other, self, ItMi_SumpfTabak,1);
 	Npc_RemoveInvItems (self,ItMi_SumpfTabak,1);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Gaertner_Krautabak_Info()
 	AI_PlayAni (self, "T_MAGRUN_2_HEASHOOT");
 	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_02"); //Kucky... kuck....
 	AI_PlayAni (self, "T_HEASHOOT_2_STAND");
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //Silnej matroš. Myslím, e u to nikdy kouâit nebudu.
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //Silnej matroÅ¡. MyslÃ­m, Å¾e uÅ¾ to nikdy kouÃ¢it nebudu.
 	
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -187,7 +187,7 @@ INSTANCE DIA_Gaertner_Sign(C_INFO)
 	condition	= DIA_Gaertner_Sign_Condition;
 	information	= DIA_Gaertner_Sign_Info;
 	permanent	= FALSE;
-	description = "(Pâedvést zlodêjskı signál.)";
+	description = "(PÃ¢edvÃ©st zlodÄ™jskÃ½ signÃ¡l.)";
 };                       
 
 FUNC INT DIA_Gaertner_Sign_Condition()
@@ -200,8 +200,8 @@ FUNC INT DIA_Gaertner_Sign_Condition()
 FUNC VOID DIA_Gaertner_Sign_Info()
 {	
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //Tak ty jsi jedním z nás. Mám pro tebe nêkolik uiteènıch informací.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //Nêkolik domù tady nahoâe má tajné skrıše, které je moné otevâít jen pomocí nêjakého ukrytého spínaèe.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //Lidé za nimi schovávají své cennosti.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //Tak ty jsi jednÃ­m z nÃ¡s. MÃ¡m pro tebe nÄ™kolik uÅ¾iteÄnÃ½ch informacÃ­.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //NÄ™kolik domÅ¯ tady nahoÃ¢e mÃ¡ tajnÃ© skrÃ½Å¡e, kterÃ© je moÅ¾nÃ© otevÃ¢Ã­t jen pomocÃ­ nÄ™jakÃ©ho ukrytÃ©ho spÃ­naÄe.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //LidÃ© za nimi schovÃ¡vajÃ­ svÃ© cennosti.
 };
 

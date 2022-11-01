@@ -1,13 +1,13 @@
 func void B_KommMit ()
 {
-	AI_Output (other, self,"DIA_AkilsSchaf_KommMit_15_00");	//PojÎ za mnou!
+	AI_Output (other, self,"DIA_AkilsSchaf_KommMit_15_00");	//Poj√´ za mnou!
 };
 func void B_BIFF_VERARSCHEN ()
 {
-	AI_Output			(self, other, "DIA_Biff_ARBEITEN_lebenlassen_07_01"); //Nem·m zapot‚ebÌ, aby si ze mÍ nÍkdo dÍlal bl·zny.
+	AI_Output			(self, other, "DIA_Biff_ARBEITEN_lebenlassen_07_01"); //Nem√°m zapot√¢eb√≠, aby si ze mƒô nƒôkdo dƒôlal bl√°zny.
 };
 
-func void B_BiffsAnteil_Berechnung() //Joly: Wieviel Kohle muﬂ der SC Biff nun geben:
+func void B_BiffsAnteil_Berechnung() //Joly: Wieviel Kohle mu√ü der SC Biff nun geben:
 {	
 	var int momentanKohle;
 	var int UeberschussKohle;
@@ -26,7 +26,7 @@ func void B_BiffsAnteil_PrintScreen ()
 	BiffsAnteilText	= ConcatStrings(BiffsAnteilText_Teil, PRINT_BiffGold);	
 	AI_PrintScreen	(BiffsAnteilText, -1, 45, FONT_ScreenSmall, 4);
 };
-func void B_Biff_SetRefuseTalk ()	//Joly: Biffs Geld eintreiberei kommt beim HalbeHalbe Deal nicht so h‰ufig.
+func void B_Biff_SetRefuseTalk ()	//Joly: Biffs Geld eintreiberei kommt beim HalbeHalbe Deal nicht so h√§ufig.
 {
 	if (DJG_Biff_HalbeHalbe == TRUE)
 	{
@@ -70,7 +70,7 @@ instance DIA_Biff_HALLO		(C_INFO)
 	condition	 = 	DIA_Biff_HALLO_Condition;
 	information	 = 	DIA_Biff_HALLO_Info;
 
-	description	 = 	"Co tady dÍl·ö?";
+	description	 = 	"Co tady dƒôl√°≈°?";
 };
 
 func int DIA_Biff_HALLO_Condition ()
@@ -80,11 +80,11 @@ func int DIA_Biff_HALLO_Condition ()
 
 func void DIA_Biff_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_15_00"); //Co tady dÍl·ö?
-	AI_Output			(self, other, "DIA_Biff_HALLO_07_01"); //To je ta nejblbÍjöÌ ot·zka, jakou jsem kdy slyöel. Co asi tak myslÌö?
+	AI_Output			(other, self, "DIA_Biff_HALLO_15_00"); //Co tady dƒôl√°≈°?
+	AI_Output			(self, other, "DIA_Biff_HALLO_07_01"); //To je ta nejblbƒôj≈°√≠ ot√°zka, jakou jsem kdy sly≈°el. Co asi tak mysl√≠≈°?
 
-	Info_AddChoice	(DIA_Biff_HALLO, "Z tak p‚iblbl˝ho v˝razu, jakej m·ö ty, se ned· nic poznat.", DIA_Biff_HALLO_spott );
-	Info_AddChoice	(DIA_Biff_HALLO, "Nem·m tucha.", DIA_Biff_HALLO_keineAhnung );
+	Info_AddChoice	(DIA_Biff_HALLO, "Z tak p√¢iblbl√Ωho v√Ωrazu, jakej m√°≈° ty, se ned√° nic poznat.", DIA_Biff_HALLO_spott );
+	Info_AddChoice	(DIA_Biff_HALLO, "Nem√°m tucha.", DIA_Biff_HALLO_keineAhnung );
 	Info_AddChoice	(DIA_Biff_HALLO, "To nic.", DIA_Biff_HALLO_doof );
 };
 
@@ -96,8 +96,8 @@ func void DIA_Biff_HALLO_doof ()
 
 func void DIA_Biff_HALLO_spott ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_spott_15_00"); //Z tak p‚iblbl˝ho v˝razu, jakej m·ö ty, se ned· nic poznat. Proto jsem se taky musel zeptat.
-	AI_Output			(self, other, "DIA_Biff_HALLO_spott_07_01"); //Na m˘j vkus m·ö nÍjak moc velkou hubu. Je naËase, aby ti ji nÍkdo zav‚el.
+	AI_Output			(other, self, "DIA_Biff_HALLO_spott_15_00"); //Z tak p√¢iblbl√Ωho v√Ωrazu, jakej m√°≈° ty, se ned√° nic poznat. Proto jsem se taky musel zeptat.
+	AI_Output			(self, other, "DIA_Biff_HALLO_spott_07_01"); //Na m≈Øj vkus m√°≈° nƒôjak moc velkou hubu. Je naƒçase, aby ti ji nƒôkdo zav√¢el.
 
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -106,39 +106,39 @@ func void DIA_Biff_HALLO_spott ()
 
 func void DIA_Biff_HALLO_keineAhnung ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_15_00"); //Tak o tom nem·m ani tucha.
-	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_07_01"); //»ek·m, co se tu nakonec semele.
+	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_15_00"); //Tak o tom nem√°m ani tucha.
+	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_07_01"); //ƒåek√°m, co se tu nakonec semele.
 
-	Info_AddChoice	(DIA_Biff_HALLO, "Co Ëek·ö, ûe se stane?", DIA_Biff_HALLO_keineAhnung_was );
+	Info_AddChoice	(DIA_Biff_HALLO, "Co ƒçek√°≈°, ≈æe se stane?", DIA_Biff_HALLO_keineAhnung_was );
 };
 func void DIA_Biff_HALLO_keineAhnung_was ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_15_00"); //Co Ëek·ö, ûe se stane?
-	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_07_01"); //Hele chlape, ty sis v·ûnÍ nebyl dvakr·t, kdyû Innos rozd·val rozum. Kdybych to vÍdÍl, na nic bych neËekal.
+	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_15_00"); //Co ƒçek√°≈°, ≈æe se stane?
+	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_07_01"); //Hele chlape, ty sis v√°≈ænƒô nebyl dvakr√°t, kdy≈æ Innos rozd√°val rozum. Kdybych to vƒôdƒôl, na nic bych neƒçekal.
 
-	Info_AddChoice	(DIA_Biff_HALLO, "Tak co se chyst·?", DIA_Biff_HALLO_keineAhnung_was_was2 );
+	Info_AddChoice	(DIA_Biff_HALLO, "Tak co se chyst√°?", DIA_Biff_HALLO_keineAhnung_was_was2 );
 
 };
 func void DIA_Biff_HALLO_keineAhnung_was_was2 ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_15_00"); //Tak co se chyst·?
-	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_07_01"); //Uû mi lezeö na nervy. Hele, nestar·m se o to, co se stane. Aû do t˝ chvÌle, kdy se to stane.
+	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_15_00"); //Tak co se chyst√°?
+	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_07_01"); //U≈æ mi leze≈° na nervy. Hele, nestar√°m se o to, co se stane. A≈æ do t√Ω chv√≠le, kdy se to stane.
 
-	Info_AddChoice	(DIA_Biff_HALLO, "Tak proË nÍco nedÍl·ö?", DIA_Biff_HALLO_keineAhnung_was_was2_was3 );
+	Info_AddChoice	(DIA_Biff_HALLO, "Tak proƒç nƒôco nedƒôl√°≈°?", DIA_Biff_HALLO_keineAhnung_was_was2_was3 );
 
 };
 func void DIA_Biff_HALLO_keineAhnung_was_was2_was3 ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_15_00"); //Tak proË nÍco nedÍl·ö?
-	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_07_01"); //Jestli mi okamûitÍ nep‚estaneö d·vat ty p‚iblbl˝ ot·zky, tak ti tu tvojÌ nevym·chanou hubu rychle zav‚u.
+	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_15_00"); //Tak proƒç nƒôco nedƒôl√°≈°?
+	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_07_01"); //Jestli mi okam≈æitƒô nep√¢estane≈° d√°vat ty p√¢iblbl√Ω ot√°zky, tak ti tu tvoj√≠ nevym√°chanou hubu rychle zav√¢u.
 
 
-	Info_AddChoice	(DIA_Biff_HALLO, "Kdyû tu budeö jen tak Ëekat, nikdy se nic nestane!", DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4 );
+	Info_AddChoice	(DIA_Biff_HALLO, "Kdy≈æ tu bude≈° jen tak ƒçekat, nikdy se nic nestane!", DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4 );
 
 };
 func void DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4 ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4_15_00"); //Kdyû tu budeö jen tak Ëekat, nikdy se nic nestane!
+	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4_15_00"); //Kdy≈æ tu bude≈° jen tak ƒçekat, nikdy se nic nestane!
 	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4_07_01"); //Jo, tak to je!
 
 	AI_StopProcessInfos (self);
@@ -157,7 +157,7 @@ instance DIA_Biff_WASHIERIMTAL		(C_INFO)
 	condition	 = 	DIA_Biff_WASHIERIMTAL_Condition;
 	information	 = 	DIA_Biff_WASHIERIMTAL_Info;
 
-	description	 = 	"Co douf·ö, ûe tu najdeö?";
+	description	 = 	"Co douf√°≈°, ≈æe tu najde≈°?";
 };
 
 func int DIA_Biff_WASHIERIMTAL_Condition ()
@@ -170,26 +170,26 @@ func int DIA_Biff_WASHIERIMTAL_Condition ()
 
 func void DIA_Biff_WASHIERIMTAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_WASHIERIMTAL_15_00"); //Co douf·ö, ûe tu najdeö?
-	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_07_01"); //Sl·vu a zlato. Co vÌc? Aû se vypo‚·d·m s tÍmi draky, budu se topit v penÍzÌch.
-	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_07_02"); //A douf·m, ûe budu mÌt dost na to, abych si mohl do konce ûivota uûÌvat po vöech hospod·ch a nevÍstincÌch v zemi.
+	AI_Output			(other, self, "DIA_Biff_WASHIERIMTAL_15_00"); //Co douf√°≈°, ≈æe tu najde≈°?
+	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_07_01"); //Sl√°vu a zlato. Co v√≠c? A≈æ se vypo√¢√°d√°m s tƒômi draky, budu se topit v penƒôz√≠ch.
+	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_07_02"); //A douf√°m, ≈æe budu m√≠t dost na to, abych si mohl do konce ≈æivota u≈æ√≠vat po v≈°ech hospod√°ch a nevƒôstinc√≠ch v zemi.
 
-	Info_AddChoice	(DIA_Biff_WASHIERIMTAL, "Fajn, tak ti p‚eju hodnÍ ötÍstÌ.", DIA_Biff_WASHIERIMTAL_vielglueck );
-	Info_AddChoice	(DIA_Biff_WASHIERIMTAL, "BuÎ tak, nebo budeö mrtvej!", DIA_Biff_WASHIERIMTAL_ihrtot );
+	Info_AddChoice	(DIA_Biff_WASHIERIMTAL, "Fajn, tak ti p√¢eju hodnƒô ≈°tƒôst√≠.", DIA_Biff_WASHIERIMTAL_vielglueck );
+	Info_AddChoice	(DIA_Biff_WASHIERIMTAL, "Bu√´ tak, nebo bude≈° mrtvej!", DIA_Biff_WASHIERIMTAL_ihrtot );
 
 };
 func void DIA_Biff_WASHIERIMTAL_ihrtot ()
 {
-	AI_Output			(other, self, "DIA_Biff_WASHIERIMTAL_ihrtot_15_00"); //BuÎ tak, nebo budeö mrtvej!
-	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_ihrtot_07_01"); //A co? To k tomu pat‚Ì. Kdyû chceö bejt bohatej, musÌö trochu riskovat.
+	AI_Output			(other, self, "DIA_Biff_WASHIERIMTAL_ihrtot_15_00"); //Bu√´ tak, nebo bude≈° mrtvej!
+	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_ihrtot_07_01"); //A co? To k tomu pat√¢√≠. Kdy≈æ chce≈° bejt bohatej, mus√≠≈° trochu riskovat.
 
 	Info_ClearChoices	(DIA_Biff_WASHIERIMTAL);
 };
 
 func void DIA_Biff_WASHIERIMTAL_vielglueck ()
 {
-	AI_Output			(other, self, "DIA_Biff_WASHIERIMTAL_vielglueck_15_00"); //Fajn, tak ti p‚eju hodnÍ ötÍstÌ.
-	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_vielglueck_07_01"); //Nepot‚ebuju û·dn˝ ötÍstÌ. StaËÌ mi moje sekera.
+	AI_Output			(other, self, "DIA_Biff_WASHIERIMTAL_vielglueck_15_00"); //Fajn, tak ti p√¢eju hodnƒô ≈°tƒôst√≠.
+	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_vielglueck_07_01"); //Nepot√¢ebuju ≈æ√°dn√Ω ≈°tƒôst√≠. Staƒç√≠ mi moje sekera.
 
 	Info_ClearChoices	(DIA_Biff_WASHIERIMTAL);
 };
@@ -205,7 +205,7 @@ instance DIA_Biff_ARBEITEN		(C_INFO)
 	information	 = 	DIA_Biff_ARBEITEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jak by se ti lÌbilo pracovat pro mÍ?";
+	description	 = 	"Jak by se ti l√≠bilo pracovat pro mƒô?";
 };
 
 func int DIA_Biff_ARBEITEN_Condition ()
@@ -219,33 +219,33 @@ func int DIA_Biff_ARBEITEN_Condition ()
 };
 func void DIA_Biff_ARBEITEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_ARBEITEN_15_00"); //Jak by se ti lÌbilo pracovat pro mÍ?
+	AI_Output			(other, self, "DIA_Biff_ARBEITEN_15_00"); //Jak by se ti l√≠bilo pracovat pro mƒô?
 	
-	B_LogEntry (TOPIC_Dragonhunter,"Drakobijec Biff je ûoldnÈ‚ tÍlem i duöÌ. Kdyû mu zaplatÌm, bude bojovat po mÈm boku."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Drakobijec Biff je ≈æoldn√©√¢ tƒôlem i du≈°√≠. Kdy≈æ mu zaplat√≠m, bude bojovat po m√©m boku."); 
 
 	if (DJG_BiffParty_nomore >= 6) //Joly: Biff hat bei 3 die Schnauze voll vom SC
 	{
-		AI_Output			(self, other, "DIA_Biff_ARBEITEN_07_01"); //Uû jsme to jednou zkusili. Moc to nefungovalo. DÌky, nem·m z·jem.
+		AI_Output			(self, other, "DIA_Biff_ARBEITEN_07_01"); //U≈æ jsme to jednou zkusili. Moc to nefungovalo. D√≠ky, nem√°m z√°jem.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
-		AI_Output			(self, other, "DIA_Biff_ARBEITEN_07_02"); //Mmh. ProË ne? Co z toho budu mÌt?
+		AI_Output			(self, other, "DIA_Biff_ARBEITEN_07_02"); //Mmh. Proƒç ne? Co z toho budu m√≠t?
 	};
 	Info_ClearChoices	(DIA_Biff_ARBEITEN);
 	
-	Info_AddChoice	(DIA_Biff_ARBEITEN, "Budeö r·d, kdyû tÍ nech·m naûivu.", DIA_Biff_ARBEITEN_lebenlassen );
-	Info_AddChoice	(DIA_Biff_ARBEITEN, "D·m ti p˘lku ko‚isti.", DIA_Biff_ARBEITEN_HalbeHalbe );
-	Info_AddChoice	(DIA_Biff_ARBEITEN, "D·m ti 100 zlat˝ch.", DIA_Biff_ARBEITEN_100 );
+	Info_AddChoice	(DIA_Biff_ARBEITEN, "Bude≈° r√°d, kdy≈æ tƒô nech√°m na≈æivu.", DIA_Biff_ARBEITEN_lebenlassen );
+	Info_AddChoice	(DIA_Biff_ARBEITEN, "D√°m ti p≈Ølku ko√¢isti.", DIA_Biff_ARBEITEN_HalbeHalbe );
+	Info_AddChoice	(DIA_Biff_ARBEITEN, "D√°m ti 100 zlat√Ωch.", DIA_Biff_ARBEITEN_100 );
 };
 
 func void DIA_Biff_ARBEITEN_100 ()
 {
-	AI_Output			(other, self, "DIA_Biff_ARBEITEN_100_15_00"); //D·m ti 100 zlat˝ch.
+	AI_Output			(other, self, "DIA_Biff_ARBEITEN_100_15_00"); //D√°m ti 100 zlat√Ωch.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,100))
 		{	
-			AI_Output			(self, other, "DIA_Biff_ARBEITEN_100_07_01"); //Tak dobr·. Mimochodem, to je jen pro zaË·tek. Jdeme. P˘jdu za tebou.
+			AI_Output			(self, other, "DIA_Biff_ARBEITEN_100_07_01"); //Tak dobr√°. Mimochodem, to je jen pro zaƒç√°tek. Jdeme. P≈Øjdu za tebou.
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"Follow");
 			B_Biff_SetRefuseTalk ();
@@ -263,9 +263,9 @@ func void DIA_Biff_ARBEITEN_100 ()
 
 func void DIA_Biff_ARBEITEN_HalbeHalbe ()
 {
-	AI_Output			(other, self, "DIA_Biff_ARBEITEN_HalbeHalbe_15_00"); //D·m ti p˘lku ko‚isti.
-	AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_01"); //To znÌ dob‚e. Ale varuju tÍ, nepokouöej se mÍ podvÈst, jinak toho budeö litovat.
-	AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_02"); //A jeötÍ jedna vÍc, nezajÌmajÌ mÍ û·dnÈ zbranÍ ani dalöÌ kr·my, co tady najdeö. Chci jen zlato, jasn˝?
+	AI_Output			(other, self, "DIA_Biff_ARBEITEN_HalbeHalbe_15_00"); //D√°m ti p≈Ølku ko√¢isti.
+	AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_01"); //To zn√≠ dob√¢e. Ale varuju tƒô, nepokou≈°ej se mƒô podv√©st, jinak toho bude≈° litovat.
+	AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_02"); //A je≈°tƒô jedna vƒôc, nezaj√≠maj√≠ mƒô ≈æ√°dn√© zbranƒô ani dal≈°√≠ kr√°my, co tady najde≈°. Chci jen zlato, jasn√Ω?
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Follow");
@@ -281,13 +281,13 @@ func void DIA_Biff_ARBEITEN_HalbeHalbe ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_03"); //Ale co to ‚Ìk·m. Tohle vöechno uû vÌö.
+		AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_03"); //Ale co to √¢√≠k√°m. Tohle v≈°echno u≈æ v√≠≈°.
 	};
 };
 
 func void DIA_Biff_ARBEITEN_lebenlassen ()
 {
-	AI_Output			(other, self, "DIA_Biff_ARBEITEN_lebenlassen_15_00"); //Budeö r·d, kdyû tÍ nech·m naûivu.
+	AI_Output			(other, self, "DIA_Biff_ARBEITEN_lebenlassen_15_00"); //Bude≈° r√°d, kdy≈æ tƒô nech√°m na≈æivu.
 	B_BIFF_VERARSCHEN ();
 	AI_StopProcessInfos (self);
 	DJG_BiffParty_nomore = (DJG_BiffParty_nomore +1);
@@ -312,7 +312,7 @@ func int DIA_Biff_GELDEINTREIBEN_Condition ()
 	if (DJG_Biff_SCGold < Npc_HasItems(hero,ItMi_Gold)-1)
 		&& ((Npc_GetBodyState(hero))!= BS_INVENTORY)				//Joly: wegen Truhen		 
 		&& ((Npc_GetBodyState(hero))!= BS_MOBINTERACT_INTERRUPT)
-		&& (((Npc_GetBodyState(hero))!= BS_STAND)||(BIFF_LABERT_GELDEINTREIBEN == TRUE))//Joly: wegen Pl¸ndern von NSC-Invs	
+		&& (((Npc_GetBodyState(hero))!= BS_STAND)||(BIFF_LABERT_GELDEINTREIBEN == TRUE))//Joly: wegen Pl√ºndern von NSC-Invs	
 		&& (((Npc_GetBodyState(hero))!= BS_ITEMINTERACT)||(BIFF_LABERT_GELDEINTREIBEN == TRUE))//Joly: wegen Geldbeutel	
 		&& (DJG_Biff_HalbeHalbe == TRUE)
 		&& (DJG_BiffParty == TRUE)	
@@ -325,20 +325,20 @@ func int DIA_Biff_GELDEINTREIBEN_Condition ()
 
 func void DIA_Biff_GELDEINTREIBEN_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_07_00"); //PoËkej chvilku! Ne‚Ìkals, ûe p˘lka ko‚isti pat‚Ì mnÍ? Dej to sem!
+	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_07_00"); //Poƒçkej chvilku! Ne√¢√≠kals, ≈æe p≈Ølka ko√¢isti pat√¢√≠ mnƒô? Dej to sem!
 
 	B_BiffsAnteil_Berechnung ();
 	B_BiffsAnteil_PrintScreen ();
 
 	Info_ClearChoices	(DIA_Biff_GELDEINTREIBEN);
 
-	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "To si nem˘ûu dovolit.", DIA_Biff_GELDEINTREIBEN_zuTeuer );
-	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "Tady je tv˘j podÌl.", DIA_Biff_GELDEINTREIBEN_geben );
+	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "To si nem≈Ø≈æu dovolit.", DIA_Biff_GELDEINTREIBEN_zuTeuer );
+	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "Tady je tv≈Øj pod√≠l.", DIA_Biff_GELDEINTREIBEN_geben );
 };
 func void DIA_Biff_GELDEINTREIBEN_geben ()
 {
-	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_geben_15_00"); //Tady je tv˘j podÌl.
-	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_geben_07_01"); //Dobr·. Tak jdeme.
+	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_geben_15_00"); //Tady je tv≈Øj pod√≠l.
+	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_geben_07_01"); //Dobr√°. Tak jdeme.
 	AI_StopProcessInfos (self);
 	B_GiveInvItems (other, self, ItMi_Gold, BiffsAnteil);
 	B_Biff_SetRefuseTalk ();
@@ -348,22 +348,22 @@ func void DIA_Biff_GELDEINTREIBEN_geben ()
 
 func void DIA_Biff_GELDEINTREIBEN_zuTeuer ()
 {
-	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_15_00"); //To si nem˘ûu dovolit.
-	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_zuTeuer_07_01"); //P‚esta‡ do mÍ huËet. Dohodli jsme se na polovinÍ.
+	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_15_00"); //To si nem≈Ø≈æu dovolit.
+	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_zuTeuer_07_01"); //P√¢esta≈ï do mƒô huƒçet. Dohodli jsme se na polovinƒô.
 
 	Info_ClearChoices	(DIA_Biff_GELDEINTREIBEN);
-	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "TeÎ se musÌme rozdÍlit, je mi lÌto.", DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen );
-	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "Tady je tv˘j podÌl.", DIA_Biff_GELDEINTREIBEN_geben );
+	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "Te√´ se mus√≠me rozdƒôlit, je mi l√≠to.", DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen );
+	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "Tady je tv≈Øj pod√≠l.", DIA_Biff_GELDEINTREIBEN_geben );
 
 };
 func void DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen ()
 {
-	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00"); //TeÎ se musÌme rozdÍlit, je mi lÌto.
-	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_07_01"); //Kdyû to ‚Ìk·ö. Tak to si prostÍ vezmu sv˘j podÌl.
+	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00"); //Te√´ se mus√≠me rozdƒôlit, je mi l√≠to.
+	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_07_01"); //Kdy≈æ to √¢√≠k√°≈°. Tak to si prostƒô vezmu sv≈Øj pod√≠l.
 
 	BIFF_LABERT_GELDEINTREIBEN = FALSE;
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 	B_Attack (self, other, AR_NONE, 1);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	DJG_BiffParty = FALSE;
@@ -394,7 +394,7 @@ func int DIA_Biff_ICHBLEIBHIER_Condition ()
 				&& 	(
 						(
 							(
-								//Joly: Biff stˆrt nicht das Drachengespr‰ch!
+								//Joly: Biff st√∂rt nicht das Drachengespr√§ch!
 								((Npc_GetDistToWP(self,"OW_SWAMPDRAGON_01")<4000)	&& (Npc_IsDead(SwampDragon)== FALSE)&& (SwampDragon.flags != 0))
 								||((Npc_GetDistToWP(self,"LOCATION_19_03_PATH_RUIN8")<2000)	&& (Npc_IsDead(RockDragon)== FALSE) && (RockDragon.flags != 0))
 								||((Npc_GetDistToWP(self,"CASTLE_36")<4000)			&& (Npc_IsDead(FireDragon)== FALSE) && (FireDragon.flags != 0))
@@ -412,7 +412,7 @@ func int DIA_Biff_ICHBLEIBHIER_Condition ()
 
 func void DIA_Biff_ICHBLEIBHIER_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_ICHBLEIBHIER_07_00"); //Tohle je v·ûnÍ nebezpeËn· oblast. BÍû dop‚edu. Budu ti krejt z·da.
+	AI_Output			(self, other, "DIA_Biff_ICHBLEIBHIER_07_00"); //Tohle je v√°≈ænƒô nebezpeƒçn√° oblast. Bƒô≈æ dop√¢edu. Budu ti krejt z√°da.
 
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,300);
@@ -456,7 +456,7 @@ instance DIA_Biff_Stay_AwayFromOC		(C_INFO)
 	nr		 	 = 3;
 	permanent	 = 	TRUE;
 
-	description	 = 	"(OpÍt vzÌt Biffa s sebou.)";
+	description	 = 	"(Opƒôt vz√≠t Biffa s sebou.)";
 
 };
 
@@ -508,8 +508,8 @@ func int DIA_Biff_KOHLEWEGGEBEN_Condition ()
 
 func void DIA_Biff_KOHLEWEGGEBEN_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_KOHLEWEGGEBEN_07_00"); //Nerozh·zej to vöechno najednou
-	AI_Output			(self, other, "DIA_Biff_KOHLEWEGGEBEN_07_01"); //Tak to bude lepöÌ, kdyû ho d·ö mnÍ.
+	AI_Output			(self, other, "DIA_Biff_KOHLEWEGGEBEN_07_00"); //Nerozh√°zej to v≈°echno najednou
+	AI_Output			(self, other, "DIA_Biff_KOHLEWEGGEBEN_07_01"); //Tak to bude lep≈°√≠, kdy≈æ ho d√°≈° mnƒô.
 
 	AI_StopProcessInfos (self);
 	DJG_Biff_SCGold = Npc_HasItems(hero,ItMi_Gold);	// Biff merkt sich wieder, wieviel Geld der Spieler jetzt hat.
@@ -527,7 +527,7 @@ instance DIA_Biff_BIFFLOSWERDEN		(C_INFO)
 	information	 = 	DIA_Biff_BIFFLOSWERDEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"M·m dojem, ûe tady by naöe spolupr·ce mÍla skonËit.";
+	description	 = 	"M√°m dojem, ≈æe tady by na≈°e spolupr√°ce mƒôla skonƒçit.";
 };
 
 func int DIA_Biff_BIFFLOSWERDEN_Condition ()
@@ -540,11 +540,11 @@ func int DIA_Biff_BIFFLOSWERDEN_Condition ()
 
 func void DIA_Biff_BIFFLOSWERDEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_BIFFLOSWERDEN_15_00"); //M·m dojem, ûe tady by naöe spolupr·ce mÍla skonËit.
-	AI_Output			(self, other, "DIA_Biff_BIFFLOSWERDEN_07_01"); //Jak je libo. Taky bych mÍl zaËÌt myslet na lepöÌ vÍci. Tak zatÌm.
+	AI_Output			(other, self, "DIA_Biff_BIFFLOSWERDEN_15_00"); //M√°m dojem, ≈æe tady by na≈°e spolupr√°ce mƒôla skonƒçit.
+	AI_Output			(self, other, "DIA_Biff_BIFFLOSWERDEN_07_01"); //Jak je libo. Taky bych mƒôl zaƒç√≠t myslet na lep≈°√≠ vƒôci. Tak zat√≠m.
 
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	DJG_Biff_HalbeHalbe = FALSE;
 	DJG_BiffParty = FALSE;
@@ -576,37 +576,37 @@ func int DIA_Biff_MEHRGELD_Condition ()
 var int DIA_Biff_MEHRGELD_Info_OneTime;
 func void DIA_Biff_MEHRGELD_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_00"); //ZaËÌn·m mÌt dojem, ûe bych z tebe mohl dostat vÌc penÍz.
+	AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_00"); //Zaƒç√≠n√°m m√≠t dojem, ≈æe bych z tebe mohl dostat v√≠c penƒôz.
 
 	if (DJG_Biff_HalbeHalbe == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_01"); //100 zlat˝ch by to mÍlo spravit.
+		AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_01"); //100 zlat√Ωch by to mƒôlo spravit.
 		if (DIA_Biff_MEHRGELD_Info_OneTime == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_02"); //é·dnej problÈm. JasnÍ ûe jsem nezapomnÍl, ûe si m·me rozdÍlit ko‚ist.
-			AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_03"); //Proto jsem tÍ taky tak Ëasto otravoval, abys mi dal vÌc penÍz.
+			AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_02"); //≈Ω√°dnej probl√©m. Jasnƒô ≈æe jsem nezapomnƒôl, ≈æe si m√°me rozdƒôlit ko√¢ist.
+			AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_03"); //Proto jsem tƒô taky tak ƒçasto otravoval, abys mi dal v√≠c penƒôz.
 			DIA_Biff_MEHRGELD_Info_OneTime = TRUE;
 		};
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_04"); //Chci dalöÌch 100 zlat˝ch.
+		AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_04"); //Chci dal≈°√≠ch 100 zlat√Ωch.
 	};
 	
 	Info_ClearChoices	(DIA_Biff_MEHRGELD);
 	
-	Info_AddChoice	(DIA_Biff_MEHRGELD, "To si nem˘ûu dovolit.", DIA_Biff_MEHRGELD_zuTeuer );
-	Info_AddChoice	(DIA_Biff_MEHRGELD, "Dobr·. Za to mi jeötÍ stojÌö.", DIA_Biff_MEHRGELD_ok );
+	Info_AddChoice	(DIA_Biff_MEHRGELD, "To si nem≈Ø≈æu dovolit.", DIA_Biff_MEHRGELD_zuTeuer );
+	Info_AddChoice	(DIA_Biff_MEHRGELD, "Dobr√°. Za to mi je≈°tƒô stoj√≠≈°.", DIA_Biff_MEHRGELD_ok );
 
 };
 
 func void DIA_Biff_MEHRGELD_ok ()
 {
-	AI_Output			(other, self, "DIA_Biff_MEHRGELD_ok_15_00"); //Dobr·. Za to mi jeötÍ stojÌö.
+	AI_Output			(other, self, "DIA_Biff_MEHRGELD_ok_15_00"); //Dobr√°. Za to mi je≈°tƒô stoj√≠≈°.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,100))
 		{
-			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_01"); //D· se to tak ‚Ìct. Tak jdeme.
+			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_01"); //D√° se to tak √¢√≠ct. Tak jdeme.
 
 			AI_StopProcessInfos (self);
 
@@ -618,11 +618,11 @@ func void DIA_Biff_MEHRGELD_ok ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_02"); //Ty mizernej b‚Ìdile, nem˘ûeö ani zaplatit po‚·dn˝ho ozbrojence.
-			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_03"); //M·m dojem, ûe si najdu jin˝ho obchodnÌho partnera.
+			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_02"); //Ty mizernej b√¢√≠dile, nem≈Ø≈æe≈° ani zaplatit po√¢√°dn√Ωho ozbrojence.
+			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_03"); //M√°m dojem, ≈æe si najdu jin√Ωho obchodn√≠ho partnera.
 			
 			AI_StopProcessInfos (self);
-			Npc_ExchangeRoutine	(self,"ZaËÌt");
+			Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
 			DJG_Biff_HalbeHalbe = FALSE;
 			DJG_BiffParty = FALSE;
@@ -632,11 +632,11 @@ func void DIA_Biff_MEHRGELD_ok ()
 
 func void DIA_Biff_MEHRGELD_zuTeuer ()
 {
-	AI_Output			(other, self, "DIA_Biff_MEHRGELD_zuTeuer_15_00"); //To si nem˘ûu dovolit.
-	AI_Output			(self, other, "DIA_Biff_MEHRGELD_zuTeuer_07_01"); //Tak to si teÎka d·l ölapej s·m.
+	AI_Output			(other, self, "DIA_Biff_MEHRGELD_zuTeuer_15_00"); //To si nem≈Ø≈æu dovolit.
+	AI_Output			(self, other, "DIA_Biff_MEHRGELD_zuTeuer_07_01"); //Tak to si te√´ka d√°l ≈°lapej s√°m.
 	
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	DJG_BiffParty = FALSE;
 	DJG_BiffParty_nomore = (DJG_BiffParty_nomore + 2);
@@ -653,7 +653,7 @@ instance DIA_Biff_HEILUNG		(C_INFO)
 	information	 = 	DIA_Biff_HEILUNG_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nepot‚ebujeö nÍjak˝ lÈËiv˝ lektvar?";
+	description	 = 	"Nepot√¢ebuje≈° nƒôjak√Ω l√©ƒçiv√Ω lektvar?";
 };
 
 func int DIA_Biff_HEILUNG_Condition ()
@@ -666,13 +666,13 @@ func int DIA_Biff_HEILUNG_Condition ()
 
 func void DIA_Biff_HEILUNG_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_HEILUNG_15_00"); //Nepot‚ebujeö nÍjak˝ lÈËiv˝ lektvar?
-	AI_Output			(self, other, "DIA_Biff_HEILUNG_07_01"); //JasnÍ. To nem˘ûe bejt na ökodu.
+	AI_Output			(other, self, "DIA_Biff_HEILUNG_15_00"); //Nepot√¢ebuje≈° nƒôjak√Ω l√©ƒçiv√Ω lektvar?
+	AI_Output			(self, other, "DIA_Biff_HEILUNG_07_01"); //Jasnƒô. To nem≈Ø≈æe bejt na ≈°kodu.
 
 	Info_ClearChoices	(DIA_Biff_HEILUNG);
-	Info_AddChoice	(DIA_Biff_HEILUNG, "D·m ti nÍjak˝ pozdÍji.", DIA_Biff_HEILUNG_spaeter );
-	Info_AddChoice	(DIA_Biff_HEILUNG, "(NejmenöÌ lÈËiv˝ lektvar.)", DIA_Biff_HEILUNG_heiltrankLow );
-	Info_AddChoice	(DIA_Biff_HEILUNG, "(NejlepöÌ lÈËiv˝ lektvar.)", DIA_Biff_HEILUNG_heiltrank );
+	Info_AddChoice	(DIA_Biff_HEILUNG, "D√°m ti nƒôjak√Ω pozdƒôji.", DIA_Biff_HEILUNG_spaeter );
+	Info_AddChoice	(DIA_Biff_HEILUNG, "(Nejmen≈°√≠ l√©ƒçiv√Ω lektvar.)", DIA_Biff_HEILUNG_heiltrankLow );
+	Info_AddChoice	(DIA_Biff_HEILUNG, "(Nejlep≈°√≠ l√©ƒçiv√Ω lektvar.)", DIA_Biff_HEILUNG_heiltrank );
 
 };
 func void DIA_Biff_HEILUNG_heiltrank ()
@@ -691,7 +691,7 @@ func void DIA_Biff_HEILUNG_heiltrank ()
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Biff_HEILUNG_heiltrank_07_00"); //H·d·m, ûe si budu muset poËkat, dokud pro mÍ nÍjak˝ nebudeö mÌt.
+	AI_Output			(self, other, "DIA_Biff_HEILUNG_heiltrank_07_00"); //H√°d√°m, ≈æe si budu muset poƒçkat, dokud pro mƒô nƒôjak√Ω nebude≈° m√≠t.
 	};
 
 	AI_StopProcessInfos (self);
@@ -712,15 +712,15 @@ func void DIA_Biff_HEILUNG_heiltrankLow ()
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Biff_HEILUNG_heiltrankLow_07_00"); //Bohuûel, û·dn˝ zrovna nem·ö. JeötÍ se tu pozdÍji pro nÍjak˝ zastavÌm.
+	AI_Output			(self, other, "DIA_Biff_HEILUNG_heiltrankLow_07_00"); //Bohu≈æel, ≈æ√°dn√Ω zrovna nem√°≈°. Je≈°tƒô se tu pozdƒôji pro nƒôjak√Ω zastav√≠m.
 	};
 
 	AI_StopProcessInfos (self);
 };
 func void DIA_Biff_HEILUNG_spaeter ()
 {
-	AI_Output			(other, self, "DIA_Biff_HEILUNG_spaeter_15_00"); //D·m ti nÍjak˝ pozdÍji.
-	AI_Output			(self ,other, "DIA_Biff_HEILUNG_spaeter_07_01"); //Ale nezapome‡.
+	AI_Output			(other, self, "DIA_Biff_HEILUNG_spaeter_15_00"); //D√°m ti nƒôjak√Ω pozdƒôji.
+	AI_Output			(self ,other, "DIA_Biff_HEILUNG_spaeter_07_01"); //Ale nezapome≈ï.
 	
 	AI_StopProcessInfos (self);
 };
@@ -736,7 +736,7 @@ instance DIA_Biff_DRACHENTOT		(C_INFO)
 	condition	 = 	DIA_Biff_DRACHENTOT_Condition;
 	information	 = 	DIA_Biff_DRACHENTOT_Info;
 
-	description	 = 	"Tak, a je to. Vöichni draci jsou mrtvÌ.";
+	description	 = 	"Tak, a je to. V≈°ichni draci jsou mrtv√≠.";
 };
 
 func int DIA_Biff_DRACHENTOT_Condition ()
@@ -749,11 +749,11 @@ func int DIA_Biff_DRACHENTOT_Condition ()
 
 func void DIA_Biff_DRACHENTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_DRACHENTOT_15_00"); //Tak, a je to. Vöichni draci jsou mrtvÌ.
-	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_01"); //Jo. A j· jsem po‚·d tady.
-	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_02"); //Jseö si jistej, ûe tohle byl poslednÌ?
-	AI_Output			(other, self, "DIA_Biff_DRACHENTOT_15_03"); //MyslÌm, ûe jo.
-	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_04"); //To je öpatn˝. Pr·vÍ jsem se rozeh‚·l.
+	AI_Output			(other, self, "DIA_Biff_DRACHENTOT_15_00"); //Tak, a je to. V≈°ichni draci jsou mrtv√≠.
+	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_01"); //Jo. A j√° jsem po√¢√°d tady.
+	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_02"); //Jse≈° si jistej, ≈æe tohle byl posledn√≠?
+	AI_Output			(other, self, "DIA_Biff_DRACHENTOT_15_03"); //Mysl√≠m, ≈æe jo.
+	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_04"); //To je ≈°patn√Ω. Pr√°vƒô jsem se rozeh√¢√°l.
 	B_GivePlayerXP (XP_BiffSurvivedLastDragon);
 };
 
@@ -775,7 +775,7 @@ instance DIA_Biff_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Biff_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Biff_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"NemÍl bys chu„ na menöÌ v˝let kolem svÍta?";
+	description	 = 	"Nemƒôl bys chuƒÉ na men≈°√≠ v√Ωlet kolem svƒôta?";
 };
 func int DIA_Biff_KnowWhereEnemy_Condition ()
 {	
@@ -787,36 +787,36 @@ func int DIA_Biff_KnowWhereEnemy_Condition ()
 };
 func void DIA_Biff_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_KnowWhereEnemy_15_00"); //NemÍl bys chu„ na menöÌ v˝let kolem svÍta?
+	AI_Output			(other, self, "DIA_Biff_KnowWhereEnemy_15_00"); //Nemƒôl bys chuƒÉ na men≈°√≠ v√Ωlet kolem svƒôta?
 	AI_Output			(self, other, "DIA_Biff_KnowWhereEnemy_07_01"); //Co?
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Biff_KnowWhereEnemy_15_02"); //Zapome‡ na to. StejnÍ uû m·m plnou loÎ.
-		AI_Output			(self, other, "DIA_Biff_KnowWhereEnemy_07_03"); //P‚esta‡ si ze mÍ utahovat, chlape.
+		AI_Output			(other,self , "DIA_Biff_KnowWhereEnemy_15_02"); //Zapome≈ï na to. Stejnƒô u≈æ m√°m plnou lo√´.
+		AI_Output			(self, other, "DIA_Biff_KnowWhereEnemy_07_03"); //P√¢esta≈ï si ze mƒô utahovat, chlape.
 	}
 	else 
 	{
-		AI_Output			(other,self , "DIA_Biff_KnowWhereEnemy_15_04"); //Chyst·m se opustit Khorinis a vyrazit na ostrov, abych se tam poohlÈdl po nÍjak˝ch nov˝ch protivnÌcÌch.
+		AI_Output			(other,self , "DIA_Biff_KnowWhereEnemy_15_04"); //Chyst√°m se opustit Khorinis a vyrazit na ostrov, abych se tam poohl√©dl po nƒôjak√Ωch nov√Ωch protivn√≠c√≠ch.
 
 		Info_ClearChoices (DIA_Biff_KnowWhereEnemy);
-		Info_AddChoice (DIA_Biff_KnowWhereEnemy,"ProstÍ jsem si myslel, ûe bych se o tom mÍl zmÌnit.",DIA_Biff_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Biff_KnowWhereEnemy,"Nechceö jÌt taky?",DIA_Biff_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Biff_KnowWhereEnemy,"Prostƒô jsem si myslel, ≈æe bych se o tom mƒôl zm√≠nit.",DIA_Biff_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Biff_KnowWhereEnemy,"Nechce≈° j√≠t taky?",DIA_Biff_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Biff_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_00"); //Nechceö jÌt taky?
-	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_01"); //DalöÌ nep‚·telÈ mÍ neberou. Chci...
-	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_02"); //Tam, kam jedeme, bude vÌc zlata, neû uneseö.
-	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_03"); //Kdyû je to tak, tak to jsem pro. Kam jedeme?
-	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_04"); //Ale nejd‚Ìv tÍ musÌme dostat pryË z HornickÈho ˙dolÌ.
-	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_05"); //é·dn˝ problÈm. Dostanu se odsud. Potk·me se v pr˘smyku.
+	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_00"); //Nechce≈° j√≠t taky?
+	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_01"); //Dal≈°√≠ nep√¢√°tel√© mƒô neberou. Chci...
+	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_02"); //Tam, kam jedeme, bude v√≠c zlata, ne≈æ unese≈°.
+	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_03"); //Kdy≈æ je to tak, tak to jsem pro. Kam jedeme?
+	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_04"); //Ale nejd√¢√≠v tƒô mus√≠me dostat pryƒç z Hornick√©ho √∫dol√≠.
+	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_05"); //≈Ω√°dn√Ω probl√©m. Dostanu se odsud. Potk√°me se v pr≈Øsmyku.
 
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	                       
     Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	                       
-    B_LogEntry (TOPIC_Crew,"Biff se ke mnÍ p‚i vidinÍ nesmÌrnÈho bohatstvÌ p‚idal. Pokud mu poskytnu dost zlata, mohu s nÌm poËÌtat."); 
+    B_LogEntry (TOPIC_Crew,"Biff se ke mnƒô p√¢i vidinƒô nesm√≠rn√©ho bohatstv√≠ p√¢idal. Pokud mu poskytnu dost zlata, mohu s n√≠m poƒç√≠tat."); 
     
     B_GivePlayerXP (XP_Crewmember_Success);   
 
@@ -832,15 +832,15 @@ FUNC VOID DIA_Biff_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Biff_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_No_15_00"); //ProstÍ jsem si myslel, ûe bych se o tom mÍl zmÌnit.
-	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_No_07_01"); //Dobr·, dobr·, tak hodnÍ ötÍstÌ.
+	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_No_15_00"); //Prostƒô jsem si myslel, ≈æe bych se o tom mƒôl zm√≠nit.
+	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_No_07_01"); //Dobr√°, dobr√°, tak hodnƒô ≈°tƒôst√≠.
 
 	Biff_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Biff_KnowWhereEnemy);
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Gleich geht¥s los
+//	Gleich geht¬¥s los
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Biff_Pass		(C_INFO)
 {
@@ -850,7 +850,7 @@ instance DIA_Biff_Pass		(C_INFO)
 	information	 = 	DIA_Biff_Pass_Info;
 	PERMANENT 	 =  TRUE;
 
-	description	 = 	"Dostaneö se p‚es pr˘smyk?";
+	description	 = 	"Dostane≈° se p√¢es pr≈Øsmyk?";
 };
 func int DIA_Biff_Pass_Condition ()
 {	
@@ -862,8 +862,8 @@ func int DIA_Biff_Pass_Condition ()
 };
 func void DIA_Biff_Pass_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_Pass_15_00"); //Dostaneö se p‚es pr˘smyk?
-	AI_Output			(self, other, "DIA_Biff_Pass_07_01"); //P‚esta‡ ûvanit. PokraËuj. Chci uû to koneËnÍ mÌt za sebou.
+	AI_Output			(other, self, "DIA_Biff_Pass_15_00"); //Dostane≈° se p√¢es pr≈Øsmyk?
+	AI_Output			(self, other, "DIA_Biff_Pass_07_01"); //P√¢esta≈ï ≈ævanit. Pokraƒçuj. Chci u≈æ to koneƒçnƒô m√≠t za sebou.
 	AI_StopProcessInfos (self);
 
 };

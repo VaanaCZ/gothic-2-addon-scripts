@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_1_JOIN(C_INFO)
 	condition	= DIA_BAU_1_JOIN_Condition;
 	information	= DIA_BAU_1_JOIN_Info;
 	permanent	= TRUE;
-	description = "Âekni mi víc o têch oldnéâích.";
+	description = "Ã‚ekni mi vÃ­c o tÄ™ch Å¾oldnÃ©Ã¢Ã­ch.";
 };                       
 
 FUNC INT DIA_BAU_1_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_BAU_1_JOIN_Condition()
 
 FUNC VOID DIA_BAU_1_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_JOIN_15_00"); //Povêz mi víc o têch oldnéâích.
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_01"); //Jedinı, co ti mùu poradit, je, aby ses jim zdaleka vyhnul.
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_02"); //Jestli se nêkterımu z nich nebude zamlouvat tvùj ksicht, prostê ti krapet vylepší nos.
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_03"); //Pak si mùeš u Leeho stêovat, ale ten nos u stejnê zùstane zlomenej.
+	AI_Output (other, self, "DIA_BAU_1_JOIN_15_00"); //PovÄ™z mi vÃ­c o tÄ™ch Å¾oldnÃ©Ã¢Ã­ch.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_01"); //JedinÃ½, co ti mÅ¯Å¾u poradit, je, aby ses jim zdaleka vyhnul.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_02"); //Jestli se nÄ™kterÃ½mu z nich nebude zamlouvat tvÅ¯j ksicht, prostÄ™ ti krapet vylepÅ¡Ã­ nos.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_03"); //Pak si mÅ¯Å¾eÅ¡ u Leeho stÄ™Å¾ovat, ale ten nos uÅ¾ stejnÄ™ zÅ¯stane zlomenej.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_BAU_1_PEOPLE(C_INFO)
 	condition	= DIA_BAU_1_PEOPLE_Condition;
 	information	= DIA_BAU_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tady tomu velí?";
+	description = "Kdo tady tomu velÃ­?";
 };                       
 
 FUNC INT DIA_BAU_1_PEOPLE_Condition()
@@ -67,10 +67,10 @@ FUNC INT DIA_BAU_1_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_PEOPLE_15_00"); //Kdo tady tomu velí?
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_01"); //Tohle je Onarova farma. On tady má všechno pod palcem.
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_02"); //Dovol, abych ti dal menší radu: moc ty oldáky neprovokuj. S têmahle není radno si zahrávat.
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_03"); //Sylvio je takovej zkorumpovanej mizera. Ale jejich vùdce, Lee, je docela v klidu.
+	AI_Output (other, self, "DIA_BAU_1_PEOPLE_15_00"); //Kdo tady tomu velÃ­?
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_01"); //Tohle je Onarova farma. On tady mÃ¡ vÅ¡echno pod palcem.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_02"); //Dovol, abych ti dal menÅ¡Ã­ radu: moc ty Å¾oldÃ¡ky neprovokuj. S tÄ™mahle nenÃ­ radno si zahrÃ¡vat.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_03"); //Sylvio je takovej zkorumpovanej mizera. Ale jejich vÅ¯dce, Lee, je docela v klidu.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_BAU_1_LOCATION(C_INFO)
 	condition	= DIA_BAU_1_LOCATION_Condition;
 	information	= DIA_BAU_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "A co je tady poblí dalšího?";
+	description = "A co je tady poblÃ­Å¾ dalÅ¡Ã­ho?";
 };                       
 
 FUNC INT DIA_BAU_1_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_BAU_1_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_LOCATION_15_00"); //A co je tady poblí dalšího?
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_01"); //Jen pole a farmy. A spousta oldákù. Ale vêtšina jich je na vıchodê na Onarovê farmê.
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_02"); //Na sever leí Sekobova farma, ale tam chodí jen vybírat nájem.
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_03"); //Na jihozápadê narazíš na cestu k Bengarovê farmê.
+	AI_Output (other, self, "DIA_BAU_1_LOCATION_15_00"); //A co je tady poblÃ­Å¾ dalÅ¡Ã­ho?
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_01"); //Jen pole a farmy. A spousta Å¾oldÃ¡kÅ¯. Ale vÄ™tÅ¡ina jich je na vÃ½chodÄ™ na OnarovÄ™ farmÄ™.
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_02"); //Na sever leÅ¾Ã­ Sekobova farma, ale tam chodÃ­ jen vybÃ­rat nÃ¡jem.
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_03"); //Na jihozÃ¡padÄ™ narazÃ­Å¡ na cestu k BengarovÄ™ farmÄ™.
 };
 
 // *************************************************************************
@@ -107,7 +107,7 @@ INSTANCE DIA_BAU_1_STANDARD(C_INFO)
 	condition	= DIA_BAU_1_STANDARD_Condition;
 	information	= DIA_BAU_1_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_BAU_1_STANDARD_Condition()
 {
@@ -115,31 +115,31 @@ func INT DIA_BAU_1_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_BAU_1_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_01"); //Onar si najal oldáky, aby udreli domobranu ve mêstê. Jinak by nám odvedli i tu poslední ovci!
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_01"); //Onar si najal Å¾oldÃ¡ky, aby udrÅ¾eli domobranu ve mÄ™stÄ™. Jinak by nÃ¡m odvedli i tu poslednÃ­ ovci!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_02"); //Nic moc. Poâád ty samı problémy. Domobrana, skâeti a polní škùdci.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_02"); //Nic moc. PoÃ¢Ã¡d ty samÃ½ problÃ©my. Domobrana, skÃ¢eti a polnÃ­ Å¡kÅ¯dci.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_03"); //Zaèaly se tu dít divnı vêci. Pâed pár dny jsem v noci zahlídl èernou siluetu. A nebyl to èlovêk.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_03"); //ZaÄaly se tu dÃ­t divnÃ½ vÄ™ci. PÃ¢ed pÃ¡r dny jsem v noci zahlÃ­dl Äernou siluetu. A nebyl to ÄlovÄ™k.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_04"); //Èím dál tím èastêjc tu vídáme skâety. Obèas mám dojem, jako by se jich za kadıho mrtvıho objevilo nêkolik dalších.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_04"); //ÄŒÃ­m dÃ¡l tÃ­m ÄastÄ™jc tu vÃ­dÃ¡me skÃ¢ety. ObÄas mÃ¡m dojem, jako by se jich za kaÅ¾dÃ½ho mrtvÃ½ho objevilo nÄ™kolik dalÅ¡Ã­ch.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_05"); //Paladinové vyrazili do Hornickıho údolí. Co to všechno má znamenat? Nemùeme si dovolit ztratit jedinıho mue, abysme udreli domobranu na uzdê.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_05"); //PaladinovÃ© vyrazili do HornickÃ½ho ÃºdolÃ­. Co to vÅ¡echno mÃ¡ znamenat? NemÅ¯Å¾eme si dovolit ztratit jedinÃ½ho muÅ¾e, abysme udrÅ¾eli domobranu na uzdÄ™.
 	};
 };
 

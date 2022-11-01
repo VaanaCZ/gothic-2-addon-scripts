@@ -40,63 +40,63 @@ FUNC INT DIA_Addon_Raven_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Raven_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_00");//A hele, kdo to pâišel. 
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_00");//A hele, kdo to pÃ¢iÅ¡el. 
 	if (C_BodyStateContains(self, BS_SIT))
 	{
 		NPC_StopAni (self,"T_PRAY_RANDOM");
 		AI_PlayAniBS (self, "T_PRAY_2_STAND",BS_STAND);
 		AI_TurnToNpc (self,	other);
 	};
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_01");//Mùj pán mê varoval, e sem Innos pošle svı poskoky.
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_02");//Jen jsem neèekal, e se tu objevíš tak brzo.
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_03");//Ale kdy u jsi to dokázal tak rychle (smêje se), budeš mít taky rychlou smrt.
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_01");//MÅ¯j pÃ¡n mÄ™ varoval, Å¾e sem Innos poÅ¡le svÃ½ poskoky.
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_02");//Jen jsem neÄekal, Å¾e se tu objevÃ­Å¡ tak brzo.
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_03");//Ale kdyÅ¾ uÅ¾ jsi to dokÃ¡zal tak rychle (smÄ™je se), budeÅ¡ mÃ­t taky rychlou smrt.
 	
 	Info_ClearChoices (DIA_Addon_Raven_Hi);
-	Info_AddChoice (DIA_Addon_Raven_Hi,"Ten, kdo umâe, budeš TY.",DIA_Addon_Raven_Hi_DU);
-	Info_AddChoice (DIA_Addon_Raven_Hi,"Zaprodals duši Beliarovi!",DIA_Addon_Raven_Hi_Soul);
+	Info_AddChoice (DIA_Addon_Raven_Hi,"Ten, kdo umÃ¢e, budeÅ¡ TY.",DIA_Addon_Raven_Hi_DU);
+	Info_AddChoice (DIA_Addon_Raven_Hi,"Zaprodals duÅ¡i Beliarovi!",DIA_Addon_Raven_Hi_Soul);
 };
 FUNC VOID DIA_Addon_Raven_Hi_DU()
 {
-	AI_Output (other, self, "DIA_Addon_Raven_Add_15_00");//Omyl, to TEBE teë èeká smrt.
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_04");//(smêje se) Nejsi pro mê ádná hrozba. Nosím Beliarùv meè.
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_05");//Povedu draky na pevninu. Spolu svrhneme svêt lidí do nehlubších temnot.
+	AI_Output (other, self, "DIA_Addon_Raven_Add_15_00");//Omyl, to TEBE teÃ« ÄekÃ¡ smrt.
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_04");//(smÄ™je se) Nejsi pro mÄ™ Å¾Ã¡dnÃ¡ hrozba. NosÃ­m BeliarÅ¯v meÄ.
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_05");//Povedu draky na pevninu. Spolu svrhneme svÄ™t lidÃ­ do nehlubÅ¡Ã­ch temnot.
 };
 FUNC VOID DIA_Addon_Raven_Hi_Soul()
 {
-	AI_Output (other, self, "DIA_Addon_Raven_Add_15_01");//Ty jsi zaprodal duši Beliarovi!
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_06");//Za dobrou cenu povedu jeho armády jako generál.
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_07");//A co ty? Víš, jakou cenu má TVOJE duše?
+	AI_Output (other, self, "DIA_Addon_Raven_Add_15_01");//Ty jsi zaprodal duÅ¡i Beliarovi!
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_06");//Za dobrou cenu povedu jeho armÃ¡dy jako generÃ¡l.
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_07");//A co ty? VÃ­Å¡, jakou cenu mÃ¡ TVOJE duÅ¡e?
 	
 	Info_ClearChoices (DIA_Addon_Raven_Hi);
-	Info_AddChoice (DIA_Addon_Raven_Hi,"Chápu. Tak to nebudeme zdrovat.",DIA_Addon_Raven_Hi_Attack);
-	Info_AddChoice (DIA_Addon_Raven_Hi,"Dêlám jen to, co je tâeba.",DIA_Addon_Raven_Hi_only);
+	Info_AddChoice (DIA_Addon_Raven_Hi,"ChÃ¡pu. Tak to nebudeme zdrÅ¾ovat.",DIA_Addon_Raven_Hi_Attack);
+	Info_AddChoice (DIA_Addon_Raven_Hi,"DÄ™lÃ¡m jen to, co je tÃ¢eba.",DIA_Addon_Raven_Hi_only);
 
 };
 FUNC VOID DIA_Addon_Raven_Hi_only()
 {
-	AI_Output (other, self, "DIA_Addon_Raven_Add_15_02");//Jen dêlám, co musí bıt vykonáno.
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_08");//(smêje se) Jen si ho poslechnête. Poslali jste mi pokornıho sluebníka Innosova! (nahlas se smêje)
+	AI_Output (other, self, "DIA_Addon_Raven_Add_15_02");//Jen dÄ™lÃ¡m, co musÃ­ bÃ½t vykonÃ¡no.
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_08");//(smÄ™je se) Jen si ho poslechnÄ™te. Poslali jste mi pokornÃ½ho sluÅ¾ebnÃ­ka Innosova! (nahlas se smÄ™je)
 	
 	Info_ClearChoices (DIA_Addon_Raven_Hi);
-	Info_AddChoice (DIA_Addon_Raven_Hi,"Chápu. Tak pojëme na to.",DIA_Addon_Raven_Hi_Attack);
-	Info_AddChoice (DIA_Addon_Raven_Hi,"Vánê si myslíš, e slouím Innosovi?",DIA_Addon_Raven_Hi_Sure);	
+	Info_AddChoice (DIA_Addon_Raven_Hi,"ChÃ¡pu. Tak pojÃ«me na to.",DIA_Addon_Raven_Hi_Attack);
+	Info_AddChoice (DIA_Addon_Raven_Hi,"VÃ¡Å¾nÄ™ si myslÃ­Å¡, Å¾e slouÅ¾Ã­m Innosovi?",DIA_Addon_Raven_Hi_Sure);	
 };
 FUNC VOID DIA_Addon_Raven_Hi_Sure()
 {
-	AI_Output (other, self, "DIA_Addon_Raven_Add_15_03");//A víš tak jistê, e jsem zrovna Innosùv sluebník? 
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_09");//Co? Co to povídáš?
-	AI_Output (other, self, "DIA_Addon_Raven_Add_15_04");//Nezváils nêkdy monost, e bych mohl bıt tâebas i sluebníkem Adana?
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_10");//(smêje se) Nesmysl!
-	AI_Output (other, self, "DIA_Addon_Raven_Add_15_05");//A moná e TAKY slouím Beliarovi – nebo jenom sám sobê. 
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_11");//(ušklíbá se) No, v tom pâípadê pro mê nejseš vhodnım protivníkem.
+	AI_Output (other, self, "DIA_Addon_Raven_Add_15_03");//A vÃ­Å¡ tak jistÄ™, Å¾e jsem zrovna InnosÅ¯v sluÅ¾ebnÃ­k? 
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_09");//Co? Co to povÃ­dÃ¡Å¡?
+	AI_Output (other, self, "DIA_Addon_Raven_Add_15_04");//NezvÃ¡Å¾ils nÄ™kdy moÅ¾nost, Å¾e bych mohl bÃ½t tÃ¢ebas i sluÅ¾ebnÃ­kem Adana?
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_10");//(smÄ™je se) Nesmysl!
+	AI_Output (other, self, "DIA_Addon_Raven_Add_15_05");//A moÅ¾nÃ¡ Å¾e TAKY slouÅ¾Ã­m Beliarovi â€“ nebo jenom sÃ¡m sobÄ™. 
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_11");//(uÅ¡klÃ­bÃ¡ se) No, v tom pÃ¢Ã­padÄ™ pro mÄ™ nejseÅ¡ vhodnÃ½m protivnÃ­kem.
 	
 	Info_ClearChoices (DIA_Addon_Raven_Hi);
-	Info_AddChoice (DIA_Addon_Raven_Hi,"Chápu. Tak pojëme na to.",DIA_Addon_Raven_Hi_Attack);
+	Info_AddChoice (DIA_Addon_Raven_Hi,"ChÃ¡pu. Tak pojÃ«me na to.",DIA_Addon_Raven_Hi_Attack);
 };
 FUNC VOID DIA_Addon_Raven_Hi_Attack()
 {
-	AI_Output (other, self, "DIA_Addon_Raven_Add_15_06");//Chápu. Tak zaènême.
-	AI_Output (self, other, "DIA_Addon_Raven_Add_10_12");//(ušklíbá se) To se vánê tak têšíš na smrt? Ale kdy na tom trváš.
+	AI_Output (other, self, "DIA_Addon_Raven_Add_15_06");//ChÃ¡pu. Tak zaÄnÄ™me.
+	AI_Output (self, other, "DIA_Addon_Raven_Add_10_12");//(uÅ¡klÃ­bÃ¡ se) To se vÃ¡Å¾nÄ™ tak tÄ™Å¡Ã­Å¡ na smrt? Ale kdyÅ¾ na tom trvÃ¡Å¡.
 	
 	AI_StopProcessInfos	(self); 
 	B_Attack (self, other, AR_SuddenEnemyInferno,1);
@@ -104,30 +104,30 @@ FUNC VOID DIA_Addon_Raven_Hi_Attack()
 /*
 --------------
 10 *NEU* DIA_Addon_Raven_Add_10_00 //Seht wer gekommen ist. 
-10 *NEU* DIA_Addon_Raven_Add_10_01 //Mein Meister hat mich davor gewarnt, daß Innos seine Schergen schicken würde.
-10 *NEU* DIA_Addon_Raven_Add_10_02 //Aber das du so früh auftauchst, hätte ich nicht erwartet.
+10 *NEU* DIA_Addon_Raven_Add_10_01 //Mein Meister hat mich davor gewarnt, daÃŸ Innos seine Schergen schicken wÃ¼rde.
+10 *NEU* DIA_Addon_Raven_Add_10_02 //Aber das du so frÃ¼h auftauchst, hÃ¤tte ich nicht erwartet.
 10 *NEU* DIA_Addon_Raven_Add_10_03 //Nun, da du so schnell warst (lacht) werde ich dir auch einen schnellen Tod schenken.
 --------------
 15 *NEU* DIA_Addon_Raven_Add_15_00 //DU bist derjenige der sterben wird.
-10 *NEU* DIA_Addon_Raven_Add_10_04 //(lacht) Du bist keine Bedrohung für mich. Ich trage Beliars Schwert.
-10 *NEU* DIA_Addon_Raven_Add_10_05 //Ich werde die Drachen auf's Festland führen. Zusammen werden wir die Welt der Menschen in tiefste Dunkelheit tauchen.
+10 *NEU* DIA_Addon_Raven_Add_10_04 //(lacht) Du bist keine Bedrohung fÃ¼r mich. Ich trage Beliars Schwert.
+10 *NEU* DIA_Addon_Raven_Add_10_05 //Ich werde die Drachen auf's Festland fÃ¼hren. Zusammen werden wir die Welt der Menschen in tiefste Dunkelheit tauchen.
 --------------
 15 *NEU* DIA_Addon_Raven_Add_15_01 //Du hast deine Seele an Beliar verkauft!
 10 *NEU* DIA_Addon_Raven_Add_10_06 //Zu einem guten Preis. Als General werde ich seine Armeen befehligen.
-10 *NEU* DIA_Addon_Raven_Add_10_07 //Und was ist mit dir? Weißt du wieviel DEINE Seele wert ist?
+10 *NEU* DIA_Addon_Raven_Add_10_07 //Und was ist mit dir? WeiÃŸt du wieviel DEINE Seele wert ist?
 --------------
 15 *NEU* DIA_Addon_Raven_Add_15_02 //Ich mache nur das, was getan werden muss.
-10 *NEU* DIA_Addon_Raven_Add_10_08 //(lacht) Hört ihn euch an. Einen bescheidenen Diener schickst du mir Innos! (Lacht laut)
+10 *NEU* DIA_Addon_Raven_Add_10_08 //(lacht) HÃ¶rt ihn euch an. Einen bescheidenen Diener schickst du mir Innos! (Lacht laut)
 --------------
 15 *NEU* DIA_Addon_Raven_Add_15_03 //Bist du sicher, dass ich ein Diener Innos bin? 
 10 *NEU* DIA_Addon_Raven_Add_10_09 //Was? Was redest du da?
-15 *NEU* DIA_Addon_Raven_Add_15_04 //Hältst du es nicht für möglich das ich ein Diener Adanos bin?
+15 *NEU* DIA_Addon_Raven_Add_15_04 //HÃ¤ltst du es nicht fÃ¼r mÃ¶glich das ich ein Diener Adanos bin?
 10 *NEU* DIA_Addon_Raven_Add_10_10 //(lacht) Unsinn!
 15 *NEU* DIA_Addon_Raven_Add_15_05 //Vielleicht diene auch ICH Beliar - oder nur mir selbst. 
-10 *NEU* DIA_Addon_Raven_Add_10_11 //(höhnt) Nun, in diesem Fall wirst du nicht einmal ein würdiger Gegner für mich sein!
+10 *NEU* DIA_Addon_Raven_Add_10_11 //(hÃ¶hnt) Nun, in diesem Fall wirst du nicht einmal ein wÃ¼rdiger Gegner fÃ¼r mich sein!
 --------------
 15 *NEU* DIA_Addon_Raven_Add_15_06 //Mir reichts jetzt. Lass uns anfangen...
-10 *NEU* DIA_Addon_Raven_Add_10_12 //(höhnt) Hast du es so eilig zu sterben? Ganz, wie du willst...
+10 *NEU* DIA_Addon_Raven_Add_10_12 //(hÃ¶hnt) Hast du es so eilig zu sterben? Ganz, wie du willst...
 --------------
 
 */

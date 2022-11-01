@@ -60,8 +60,8 @@ func void DIA_Addon_Bones_PICKPOCKET_BACK()
 // ************************************************************
 func void B_Addon_Bones_KeineZeit()
 {
-	AI_Output (self ,other,"DIA_Addon_Bones_Train_01_01"); //Je mi líto, ale teë nemám èas.
-	AI_Output (self ,other,"DIA_Addon_Bones_Train_01_02"); //Musím cvièit.
+	AI_Output (self ,other,"DIA_Addon_Bones_Train_01_01"); //Je mi lÃ­to, ale teÃ« nemÃ¡m Äas.
+	AI_Output (self ,other,"DIA_Addon_Bones_Train_01_02"); //MusÃ­m cviÄit.
 };
 // -------------------------------------------------------------
 INSTANCE DIA_Addon_Bones_Anheuern(C_INFO)
@@ -71,7 +71,7 @@ INSTANCE DIA_Addon_Bones_Anheuern(C_INFO)
 	condition	= DIA_Addon_Bones_Anheuern_Condition;
 	information	= DIA_Addon_Bones_Anheuern_Info;
 
-	description = "Kaàon èeká.";
+	description = "KaÅ•on ÄekÃ¡.";
 };                       
 FUNC INT DIA_Addon_Bones_Anheuern_Condition()
 {
@@ -82,7 +82,7 @@ FUNC INT DIA_Addon_Bones_Anheuern_Condition()
 };
 FUNC VOID DIA_Addon_Bones_Anheuern_Info()
 {	
-	AI_Output	(other, self, "DIA_Addon_Bones_Anheuern_15_01"); //Kaàon èeká.
+	AI_Output	(other, self, "DIA_Addon_Bones_Anheuern_15_01"); //KaÅ•on ÄekÃ¡.
 	B_Addon_Bones_KeineZeit();
 };
 
@@ -106,11 +106,11 @@ FUNC INT DIA_Addon_Bones_Hello_Condition()
 FUNC VOID DIA_Addon_Bones_Hello_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Bones_Hello_15_00"); //Jak to jde?
-	AI_Output (self ,other,"DIA_Addon_Bones_Hello_01_01"); //Nemùu si stêovat. Trochu nuda, ale aspoà nemusím makat.
-	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_01"); //Chystám se na další úkol, kterı mi zadal Greg.
-	AI_Output (other,self ,"DIA_Addon_Bones_Work_15_02"); //Jakej úkol?
-	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_03"); //To nesmím âíct.
-	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_04"); //Nic ve zlım, hochu. Ale já si to privilegium dost tvrdê vydâel a u ho nechci ztratit.
+	AI_Output (self ,other,"DIA_Addon_Bones_Hello_01_01"); //NemÅ¯Å¾u si stÄ™Å¾ovat. Trochu nuda, ale aspoÅ• nemusÃ­m makat.
+	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_01"); //ChystÃ¡m se na dalÅ¡Ã­ Ãºkol, kterÃ½ mi zadal Greg.
+	AI_Output (other,self ,"DIA_Addon_Bones_Work_15_02"); //Jakej Ãºkol?
+	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_03"); //To nesmÃ­m Ã¢Ã­ct.
+	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_04"); //Nic ve zlÃ½m, hochu. Ale jÃ¡ si to privilegium dost tvrdÄ™ vydÃ¢el a uÅ¾ ho nechci ztratit.
 	
 	Npc_ExchangeRoutine (self, "START");
 };
@@ -125,7 +125,7 @@ INSTANCE DIA_Addon_Bones_Train(C_INFO)
 	condition	= DIA_Addon_Bones_Train_Condition;
 	information	= DIA_Addon_Bones_Train_Info;
 	permanent	= FALSE;
-	description = "Mùeš mê nêèemu nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };                       
 FUNC INT DIA_Addon_Bones_Train_Condition()
 {
@@ -136,7 +136,7 @@ FUNC INT DIA_Addon_Bones_Train_Condition()
 };
 func VOID DIA_Addon_Bones_Train_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_Train_15_00"); //Mùeš mê nêco nauèit?
+	AI_Output (other,self ,"DIA_Addon_Bones_Train_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nÄ™co nauÄit?
 	B_Addon_Bones_KeineZeit();
 };
 
@@ -150,7 +150,7 @@ INSTANCE DIA_Addon_Bones_Teacher(C_INFO)
 	condition	= DIA_Addon_Bones_Teacher_Condition;
 	information	= DIA_Addon_Bones_Teacher_Info;
 	permanent	= FALSE;
-	description = "Kdo by mê tu tak nêco nauèil?";
+	description = "Kdo by mÄ™ tu tak nÄ™co nauÄil?";
 };                       
 FUNC INT DIA_Addon_Bones_Teacher_Condition()
 {
@@ -161,14 +161,14 @@ FUNC INT DIA_Addon_Bones_Teacher_Condition()
 };
 FUNC VOID DIA_Addon_Bones_Teacher_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_Teacher_15_00"); //Kdo by mê tu nêco nauèil?
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_04"); //Henry a Morgan vedou naše pâepadovı oddíly.
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_05"); //Mùou tê nauèit líp bojovat.
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_07"); //Všichni Henryho lidi bojujou s obouruèníma zbranêma.
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_08"); //Morgan má zas radši rychlejší jednoruèky.
-	AI_Output (other,self ,"DIA_Addon_Bones_Teacher_15_09"); //Kdo dál?
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_10"); //Nevím, vo nic jinıho jsem se nikdy nezajímal.
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_11"); //Ale pár trikù by tê urèitê nauèil i Krokodıl Jack nebo Samuel.
+	AI_Output (other,self ,"DIA_Addon_Bones_Teacher_15_00"); //Kdo by mÄ™ tu nÄ™co nauÄil?
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_04"); //Henry a Morgan vedou naÅ¡e pÃ¢epadovÃ½ oddÃ­ly.
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_05"); //MÅ¯Å¾ou tÄ™ nauÄit lÃ­p bojovat.
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_07"); //VÅ¡ichni Henryho lidi bojujou s obouruÄnÃ­ma zbranÄ™ma.
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_08"); //Morgan mÃ¡ zas radÅ¡i rychlejÅ¡Ã­ jednoruÄky.
+	AI_Output (other,self ,"DIA_Addon_Bones_Teacher_15_09"); //Kdo dÃ¡l?
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_10"); //NevÃ­m, vo nic jinÃ½ho jsem se nikdy nezajÃ­mal.
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_11"); //Ale pÃ¡r trikÅ¯ by tÄ™ urÄitÄ™ nauÄil i KrokodÃ½l Jack nebo Samuel.
 	Knows_HenrysEntertrupp = TRUE;
 	
 	Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
@@ -178,7 +178,7 @@ FUNC VOID DIA_Addon_Bones_Teacher_Info()
 };
 
 // ************************************************************
-// 			  			Was weißt du über Francis?
+// 			  			Was weiÃŸt du Ã¼ber Francis?
 // ************************************************************
 INSTANCE DIA_Addon_Bones_Francis(C_INFO)
 {
@@ -187,7 +187,7 @@ INSTANCE DIA_Addon_Bones_Francis(C_INFO)
 	condition	= DIA_Addon_Bones_Francis_Condition;
 	information	= DIA_Addon_Bones_Francis_Info;
 	permanent	= FALSE;
-	description = "Mùeš mi prozradit nêco o Francisovi?";
+	description = "MÅ¯Å¾eÅ¡ mi prozradit nÄ™co o Francisovi?";
 };                       
 FUNC INT DIA_Addon_Bones_Francis_Condition()
 {
@@ -203,10 +203,10 @@ FUNC INT DIA_Addon_Bones_Francis_Condition()
 
 FUNC VOID DIA_Addon_Bones_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_Francis_15_00"); //Mùeš mi âíct nêco o Francisovi?
-	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_03"); //Jen se kolem sebe rozhlídni. Jedinej, kdo tu maká, je Henry a jeho lidi.
-	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_04"); //Morgan se celı dny válí v posteli nebo nasává jak houba.
-	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_05"); //A na Grega nezkoušej ádnı nesmysly – jestli se nebudeš dret v lati, nakope ti zadek.
+	AI_Output (other,self ,"DIA_Addon_Bones_Francis_15_00"); //MÅ¯Å¾eÅ¡ mi Ã¢Ã­ct nÄ™co o Francisovi?
+	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_03"); //Jen se kolem sebe rozhlÃ­dni. Jedinej, kdo tu makÃ¡, je Henry a jeho lidi.
+	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_04"); //Morgan se celÃ½ dny vÃ¡lÃ­ v posteli nebo nasÃ¡vÃ¡ jak houba.
+	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_05"); //A na Grega nezkouÅ¡ej Å¾Ã¡dnÃ½ nesmysly â€“ jestli se nebudeÅ¡ drÅ¾et v lati, nakope ti zadek.
 };
 
 //*********************************************************
@@ -219,7 +219,7 @@ instance DIA_Addon_Bones_WantArmor(C_INFO)
 	condition	= DIA_Addon_Bones_WantArmor_Condition;
 	information	= DIA_Addon_Bones_WantArmor_Info;
 	permanent	= TRUE;
-	description = "Dej mi tu zbroj banditù.";
+	description = "Dej mi tu zbroj banditÅ¯.";
 };                       
 FUNC INT DIA_Addon_Bones_WantArmor_Condition()
 {
@@ -232,19 +232,19 @@ FUNC INT DIA_Addon_Bones_WantArmor_Condition()
 
 FUNC VOID DIA_Addon_Bones_WantArmor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_WantArmor_15_00"); //Dej mi tu zbroj banditù.
-	AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_01"); //Takovej blázen nejsem. Greg by mi utrhnul hlavu.
-	AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_02"); //Vıslovnê âek, e tu zbroj nikdo nedostane, pokud to von vosobnê nenaâídí.
+	AI_Output (other,self ,"DIA_Addon_Bones_WantArmor_15_00"); //Dej mi tu zbroj banditÅ¯.
+	AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_01"); //Takovej blÃ¡zen nejsem. Greg by mi utrhnul hlavu.
+	AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_02"); //VÃ½slovnÄ™ Ã¢ek, Å¾e tu zbroj nikdo nedostane, pokud to von vosobnÄ™ nenaÃ¢Ã­dÃ­.
 	if (GregIsBack == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_03"); //Nemùu ti ji dát. Zvlášã kdy se Greg ještê nevrátil.
+		AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_03"); //NemÅ¯Å¾u ti ji dÃ¡t. ZvlÃ¡Å¡Äƒ kdyÅ¾ se Greg jeÅ¡tÄ™ nevrÃ¡til.
 	};
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Bones mi nedá zbroj, dokud mu to nepovolí Greg."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Bones mi nedÃ¡ zbroj, dokud mu to nepovolÃ­ Greg."); 
 };
 
 //*********************************************************
-//	Du sollst mir die Rüstung geben.
+//	Du sollst mir die RÃ¼stung geben.
 //*********************************************************
 instance DIA_Addon_Bones_GiveArmor(C_INFO)
 {
@@ -253,7 +253,7 @@ instance DIA_Addon_Bones_GiveArmor(C_INFO)
 	condition	= DIA_Addon_Bones_GiveArmor_Condition;
 	information	= DIA_Addon_Bones_GiveArmor_Info;
 	permanent	= FALSE;
-	description = "Máš mi dát zbroj banditù. Rozkaz od Grega.";
+	description = "MÃ¡Å¡ mi dÃ¡t zbroj banditÅ¯. Rozkaz od Grega.";
 };                       
 FUNC INT DIA_Addon_Bones_GiveArmor_Condition()
 {
@@ -264,18 +264,18 @@ FUNC INT DIA_Addon_Bones_GiveArmor_Condition()
 };
 func VOID DIA_Addon_Bones_GiveArmor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_GiveArmor_15_00"); //Máš mi dát brnêní banditù. Rozkaz pâímo od Grega.
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_01"); //Od Grega? No, u jsem myslel, e tam budu muset jít já.
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_02"); //Dêlat špióna v táboâe banditù je pêknê o drku.
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_03"); //Radši bych Gregovi uklízel v chatrèi, ne abych se nechal zabít vod banditù.
-	AI_Output (other,self ,"DIA_Addon_Bones_GiveArmor_15_04"); //(rozèilenê) A co ta zbroj?
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_05"); //No jo, jasnê, tady je.
+	AI_Output (other,self ,"DIA_Addon_Bones_GiveArmor_15_00"); //MÃ¡Å¡ mi dÃ¡t brnÄ™nÃ­ banditÅ¯. Rozkaz pÃ¢Ã­mo od Grega.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_01"); //Od Grega? No, uÅ¾ jsem myslel, Å¾e tam budu muset jÃ­t jÃ¡.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_02"); //DÄ™lat Å¡piÃ³na v tÃ¡boÃ¢e banditÅ¯ je pÄ™knÄ™ o drÅ¾ku.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_03"); //RadÅ¡i bych Gregovi uklÃ­zel v chatrÄi, neÅ¾ abych se nechal zabÃ­t vod banditÅ¯.
+	AI_Output (other,self ,"DIA_Addon_Bones_GiveArmor_15_04"); //(rozÄilenÄ™) A co ta zbroj?
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_05"); //No jo, jasnÄ™, tady je.
 	B_GiveInvItems (self,other,ItAr_BDT_M,1);
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_06"); //Ale buë vopatrnej, ti banditi jsou pêkná chátra.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_06"); //Ale buÃ« vopatrnej, ti banditi jsou pÄ™knÃ¡ chÃ¡tra.
 	self.flags = 0;
 	PIR_1320_Addon_Greg.flags = 0;
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Rozkaz od Grega dokázal nemoné: nyní mám zbroj banditù!"); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Rozkaz od Grega dokÃ¡zal nemoÅ¾nÃ©: nynÃ­ mÃ¡m zbroj banditÅ¯!"); 
 	
 	B_GivePlayerXP (XP_Bones_GetBDTArmor);
 };

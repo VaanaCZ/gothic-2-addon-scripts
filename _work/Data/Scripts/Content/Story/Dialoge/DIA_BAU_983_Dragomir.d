@@ -43,7 +43,7 @@ FUNC INT DIA_Dragomir_Hello_Condition()
 FUNC VOID DIA_Dragomir_Hello_Info()
 {
 	AI_Output (self,other,"DIA_Dragomir_Hello_12_00"); //Co tak daleko od domova?
-	AI_Output (self,other,"DIA_Dragomir_Hello_12_01"); //Tady musíš bıt opatrnı, zvlášã kdy se mùeš spolehnout jen sám na sebe.
+	AI_Output (self,other,"DIA_Dragomir_Hello_12_01"); //Tady musÃ­Å¡ bÃ½t opatrnÃ½, zvlÃ¡Å¡Äƒ kdyÅ¾ se mÅ¯Å¾eÅ¡ spolehnout jen sÃ¡m na sebe.
 };		 
 	
 // ***********************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_Dragomir_OutHere   (C_INFO)
 	condition   = DIA_Dragomir_OutHere_Condition;
 	information = DIA_Dragomir_OutHere_Info;
 	permanent   = FALSE;
-	description = "Co tady dêláš?";
+	description = "Co tady dÄ™lÃ¡Å¡?";
 };
 FUNC INT DIA_Dragomir_OutHere_Condition()
 {
@@ -64,9 +64,9 @@ FUNC INT DIA_Dragomir_OutHere_Condition()
 };
 FUNC VOID DIA_Dragomir_OutHere_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_OutHere_15_00"); //Co tady dêláš?
-	AI_Output (self ,other,"DIA_Dragomir_OutHere_12_01"); //No, hostinec je pro mê pâíliš drahı, tak jsem se utáboâil tady.
-	AI_Output (self ,other,"DIA_Dragomir_OutHere_12_02"); //Vypadá to, e dâívêjší obyvatelé u to tu nepotâebují.
+	AI_Output (other,self ,"DIA_Dragomir_OutHere_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output (self ,other,"DIA_Dragomir_OutHere_12_01"); //No, hostinec je pro mÄ™ pÃ¢Ã­liÅ¡ drahÃ½, tak jsem se utÃ¡boÃ¢il tady.
+	AI_Output (self ,other,"DIA_Dragomir_OutHere_12_02"); //VypadÃ¡ to, Å¾e dÃ¢Ã­vÄ™jÅ¡Ã­ obyvatelÃ© uÅ¾ to tu nepotÃ¢ebujÃ­.
 };		 		
 
 // ***********************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_Dragomir_Settlers   (C_INFO)
 	condition   = DIA_Dragomir_Settlers_Condition;
 	information = DIA_Dragomir_Settlers_Info;
 	permanent   = FALSE;
-	description = "Kdo tenhle tábor dâív vyuíval?";
+	description = "Kdo tenhle tÃ¡bor dÃ¢Ã­v vyuÅ¾Ã­val?";
 };
 FUNC INT DIA_Dragomir_Settlers_Condition()
 {
@@ -90,8 +90,8 @@ FUNC INT DIA_Dragomir_Settlers_Condition()
 };
 FUNC VOID DIA_Dragomir_Settlers_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Settlers_15_00"); //Kdo tenhle tábor dâív vyuíval?
-	AI_Output (self ,other,"DIA_Dragomir_Settlers_12_01"); //Nemám tušení, asi nêjací lovci. Pâedpokládám, e to tu pro nê zaèalo bıt pâíliš nebezpeèné.
+	AI_Output (other,self ,"DIA_Dragomir_Settlers_15_00"); //Kdo tenhle tÃ¡bor dÃ¢Ã­v vyuÅ¾Ã­val?
+	AI_Output (self ,other,"DIA_Dragomir_Settlers_12_01"); //NemÃ¡m tuÅ¡enÃ­, asi nÄ™jacÃ­ lovci. PÃ¢edpoklÃ¡dÃ¡m, Å¾e to tu pro nÄ™ zaÄalo bÃ½t pÃ¢Ã­liÅ¡ nebezpeÄnÃ©.
 };
 
 
@@ -105,7 +105,7 @@ INSTANCE DIA_Dragomir_Dangerous   (C_INFO)
 	condition   = DIA_Dragomir_Dangerous_Condition;
 	information = DIA_Dragomir_Dangerous_Info;
 	permanent   = FALSE;
-	description = "Není to tu pâíliš nebezpeèné?";
+	description = "NenÃ­ to tu pÃ¢Ã­liÅ¡ nebezpeÄnÃ©?";
 };
 FUNC INT DIA_Dragomir_Dangerous_Condition()
 {
@@ -116,18 +116,18 @@ FUNC INT DIA_Dragomir_Dangerous_Condition()
 };
 FUNC VOID DIA_Dragomir_Dangerous_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Dangerous_15_00"); //Není to tu pâíliš nebezpeèné?
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_01"); //No, ne, kdy se dokáeš bránit. Moje kuše u mi mnohokrát prokázala neocenitelné sluby.
-	AI_Output (other,self ,"DIA_Dragomir_Dangerous_15_02"); //Ta ale není moc velká.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_03"); //Ale staèí. Kdy víš, jak s ní zacházet. Míval jsem vêtší. Bohuel jsem ji však ztratil.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_04"); //Dostal jsem se do hor daleko na severu. Je tam kruh monolitù s obêtním oltáâem.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_05"); //Kdy jsem tam lovil mrchorouty, zaèali z lesa vylézat ti odporní nemrtví a napadli mê.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_06"); //Jediné, co jsem mohl dêlat, bylo vzít nohy na ramena.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_07"); //Jak jsem utíkal, vyklouzla mi ta kuše z rukou. Vsadím se, e se tam ještê poâád u toho podivného kamenného kruhu na severu nêkde povaluje.
+	AI_Output (other,self ,"DIA_Dragomir_Dangerous_15_00"); //NenÃ­ to tu pÃ¢Ã­liÅ¡ nebezpeÄnÃ©?
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_01"); //No, ne, kdyÅ¾ se dokÃ¡Å¾eÅ¡ brÃ¡nit. Moje kuÅ¡e uÅ¾ mi mnohokrÃ¡t prokÃ¡zala neocenitelnÃ© sluÅ¾by.
+	AI_Output (other,self ,"DIA_Dragomir_Dangerous_15_02"); //Ta ale nenÃ­ moc velkÃ¡.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_03"); //Ale staÄÃ­. KdyÅ¾ vÃ­Å¡, jak s nÃ­ zachÃ¡zet. MÃ­val jsem vÄ™tÅ¡Ã­. BohuÅ¾el jsem ji vÅ¡ak ztratil.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_04"); //Dostal jsem se do hor daleko na severu. Je tam kruh monolitÅ¯ s obÄ™tnÃ­m oltÃ¡Ã¢em.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_05"); //KdyÅ¾ jsem tam lovil mrchoÅ¾routy, zaÄali z lesa vylÃ©zat ti odpornÃ­ nemrtvÃ­ a napadli mÄ™.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_06"); //JedinÃ©, co jsem mohl dÄ™lat, bylo vzÃ­t nohy na ramena.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_07"); //Jak jsem utÃ­kal, vyklouzla mi ta kuÅ¡e z rukou. VsadÃ­m se, Å¾e se tam jeÅ¡tÄ™ poÃ¢Ã¡d u toho podivnÃ©ho kamennÃ©ho kruhu na severu nÄ™kde povaluje.
 
 	Log_CreateTopic (TOPIC_DragomirsArmbrust, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DragomirsArmbrust, LOG_RUNNING);
-	B_LogEntry (TOPIC_DragomirsArmbrust,"V podivném kamenném kruhu vysoko v horách na severu ztratil Dragomir kuši."); 
+	B_LogEntry (TOPIC_DragomirsArmbrust,"V podivnÃ©m kamennÃ©m kruhu vysoko v horÃ¡ch na severu ztratil Dragomir kuÅ¡i."); 
 
 	MIS_DragomirsArmbrust = LOG_RUNNING;
 };
@@ -142,7 +142,7 @@ INSTANCE DIA_Dragomir_Armbrust   (C_INFO)
 	condition   = DIA_Dragomir_Armbrust_Condition;
 	information = DIA_Dragomir_Armbrust_Info;
 	permanent   = FALSE;
-	description = "Tady. Našel jsem tvou kuši.";
+	description = "Tady. NaÅ¡el jsem tvou kuÅ¡i.";
 };
 FUNC INT DIA_Dragomir_Armbrust_Condition()
 {
@@ -154,12 +154,12 @@ FUNC INT DIA_Dragomir_Armbrust_Condition()
 };
 FUNC VOID DIA_Dragomir_Armbrust_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Armbrust_15_00"); //Tady. Našel jsem tvou kuši.
+	AI_Output (other,self ,"DIA_Dragomir_Armbrust_15_00"); //Tady. NaÅ¡el jsem tvou kuÅ¡i.
 	B_GiveInvItems (other, self, ItRw_DragomirsArmbrust_MIS, 1);					
-	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_01"); //Opravdu, je to ta moje. Neâíkej, es byl tam nahoâe u kamenného kruhu?!
-	AI_Output (other,self ,"DIA_Dragomir_Armbrust_15_02"); //To si piš!
-	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_03"); //To od tebe byla pêkná lehkovánost. Ale jinak díky.
-	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_04"); //Samozâejmê ti za ni zaplatím. Doufám, e tohle bude staèit.
+	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_01"); //Opravdu, je to ta moje. NeÃ¢Ã­kej, Å¾es byl tam nahoÃ¢e u kamennÃ©ho kruhu?!
+	AI_Output (other,self ,"DIA_Dragomir_Armbrust_15_02"); //To si piÅ¡!
+	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_03"); //To od tebe byla pÄ™knÃ¡ lehkovÃ¡Å¾nost. Ale jinak dÃ­ky.
+	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_04"); //SamozÃ¢ejmÄ™ ti za ni zaplatÃ­m. DoufÃ¡m, Å¾e tohle bude staÄit.
 
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);					
@@ -183,7 +183,7 @@ INSTANCE DIA_Dragomir_Learn   (C_INFO)
 	condition   = DIA_Dragomir_Learn_Condition;
 	information = DIA_Dragomir_Learn_Info;
 	permanent   = TRUE;
-	description = "Mùeš mê nêèemu nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 FUNC INT DIA_Dragomir_Learn_Condition()
 {
@@ -195,20 +195,20 @@ FUNC INT DIA_Dragomir_Learn_Condition()
 };
 FUNC VOID DIA_Dragomir_Learn_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Learn_15_00"); //Mùeš mê nêèemu nauèit?
+	AI_Output (other,self ,"DIA_Dragomir_Learn_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?
 	
 	if (other.attribute[ATR_DEXTERITY] < 30)
 	{
-		AI_Output (self ,other,"DIA_Dragomir_Learn_12_01"); //Ne tê budu moct zaèít cokoli uèit, musíš nejprve posílit svoji obratnost.
+		AI_Output (self ,other,"DIA_Dragomir_Learn_12_01"); //NeÅ¾ tÄ™ budu moct zaÄÃ­t cokoli uÄit, musÃ­Å¡ nejprve posÃ­lit svoji obratnost.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Dragomir_Learn_12_02"); //Jestli na to máš. Jak u jsem âekl, právê se mi ponêkud nedostává hotovosti.
-		AI_Output (other,self ,"DIA_Dragomir_Learn_15_03"); //Kolik chceš?
+		AI_Output (self ,other,"DIA_Dragomir_Learn_12_02"); //Jestli na to mÃ¡Å¡. Jak uÅ¾ jsem Ã¢ekl, prÃ¡vÄ™ se mi ponÄ™kud nedostÃ¡vÃ¡ hotovosti.
+		AI_Output (other,self ,"DIA_Dragomir_Learn_15_03"); //Kolik chceÅ¡?
 		B_Say_Gold (self,other,Dragomir_TeachingCost);
 		
 		Info_ClearChoices (DIA_Dragomir_Learn);
-		Info_AddChoice (DIA_Dragomir_Learn,"Moná pozdêji.",DIA_Dragomir_Learn_Later);
+		Info_AddChoice (DIA_Dragomir_Learn,"MoÅ¾nÃ¡ pozdÄ™ji.",DIA_Dragomir_Learn_Later);
 		if (Npc_HasItems (other,ItMi_Gold) >= Dragomir_TeachingCost)
 		{ 
 			Info_AddChoice (DIA_Dragomir_Learn,"Tady je zlato.",DIA_Dragomir_Learn_Here);
@@ -218,7 +218,7 @@ FUNC VOID DIA_Dragomir_Learn_Info()
 
 FUNC VOID DIA_Dragomir_Learn_Later()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Learn_Later_15_00"); //Moná pozdêji.
+	AI_Output (other,self ,"DIA_Dragomir_Learn_Later_15_00"); //MoÅ¾nÃ¡ pozdÄ™ji.
 	Info_ClearChoices (DIA_Dragomir_Learn);
 };
 
@@ -226,7 +226,7 @@ FUNC VOID DIA_Dragomir_Learn_Here()
 {
 	AI_Output (other,self ,"DIA_Dragomir_Learn_Here_15_00"); //Tady je zlato.
 	B_GiveInvItems (other,self,ItMi_Gold,Dragomir_TeachingCost);
-	AI_Output (self ,other,"DIA_Dragomir_Learn_Here_12_01"); //Vıbornê, jestli se nemılím, mùeme hned zaèít.
+	AI_Output (self ,other,"DIA_Dragomir_Learn_Here_12_01"); //VÃ½bornÄ™, jestli se nemÃ½lÃ­m, mÅ¯Å¾eme hned zaÄÃ­t.
 	
 	Dragomir_TeachPlayer = TRUE;
 	Info_ClearChoices (DIA_Dragomir_Learn);
@@ -247,7 +247,7 @@ INSTANCE DIA_Dragomir_Teach   (C_INFO)
 	condition   = DIA_Dragomir_Teach_Condition;
 	information = DIA_Dragomir_Teach_Info;
 	permanent   = TRUE;
-	description = "Mùeš mê nêèemu nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 FUNC INT DIA_Dragomir_Teach_Condition()
 {
@@ -259,7 +259,7 @@ FUNC INT DIA_Dragomir_Teach_Condition()
 };
 FUNC VOID DIA_Dragomir_Teach_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Teach_15_00"); //Mùeš mê nêèemu nauèit?
+	AI_Output (other,self ,"DIA_Dragomir_Teach_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?
 		
 	Info_ClearChoices 	(DIA_Dragomir_Teach);
 	Info_AddChoice 		(DIA_Dragomir_Teach,	DIALOG_BACK		,DIA_Dragomir_Teach_Back);
@@ -273,7 +273,7 @@ func void DIA_Dragomir_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_CROSSBOW] >= 75)
 	{
-		AI_Output(self,other,"DIA_Dragomir_Teach_12_00"); //U tê nemám èemu uèit. Je naèase, aby sis našel nêkoho zkušenêjšího.
+		AI_Output(self,other,"DIA_Dragomir_Teach_12_00"); //UÅ¾ tÄ™ nemÃ¡m Äemu uÄit. Je naÄase, aby sis naÅ¡el nÄ™koho zkuÅ¡enÄ™jÅ¡Ã­ho.
 		DIA_Dragomir_Teach_permanent = TRUE;
 		
 	};

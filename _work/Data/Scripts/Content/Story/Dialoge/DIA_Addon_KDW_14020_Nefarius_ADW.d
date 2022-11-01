@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Nefarius_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Nefarius_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Nefarius_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Nefarius_ADW_PICKPOCKET_Condition()
@@ -94,12 +94,12 @@ func int DIA_Addon_Nefarius_ADWHello_Condition ()
 };
 func void DIA_Addon_Nefarius_ADWHello_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_00"); //Strašnê se mi ulevilo, e jsi sem v poâádku dorazil.
-	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_01"); //Jak to, e jsi sem dorazil dâív ne já?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_02"); //Cestovali jsme pâes zvláštní dimenzi. Kdo ví, jakımi oklikami jsi to bral ty.
-	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_03"); //A teë? Mùu ten portál pouít znovu?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_04"); //Pâišli jsme sem pâímo. Evidentnê to funguje docela dobâe.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_05"); //Samozâejmê ti dám vêdêt, kdybych mêl nêjaké podezâení, e by to mohlo bıt jinak.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_00"); //StraÅ¡nÄ™ se mi ulevilo, Å¾e jsi sem v poÃ¢Ã¡dku dorazil.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_01"); //Jak to, Å¾e jsi sem dorazil dÃ¢Ã­v neÅ¾ jÃ¡?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_02"); //Cestovali jsme pÃ¢es zvlÃ¡Å¡tnÃ­ dimenzi. Kdo vÃ­, jakÃ½mi oklikami jsi to bral ty.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_03"); //A teÃ«? MÅ¯Å¾u ten portÃ¡l pouÅ¾Ã­t znovu?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_04"); //PÃ¢iÅ¡li jsme sem pÃ¢Ã­mo. EvidentnÄ™ to funguje docela dobÃ¢e.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_05"); //SamozÃ¢ejmÄ™ ti dÃ¡m vÄ™dÄ™t, kdybych mÄ™l nÄ™jakÃ© podezÃ¢enÃ­, Å¾e by to mohlo bÃ½t jinak.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -112,7 +112,7 @@ instance DIA_Addon_Nefarius_Neues		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_Neues_Condition;
 	information	 = 	DIA_Addon_Nefarius_Neues_Info;
 
-	description	 = 	"Co jsi tu dosud dêlal?";
+	description	 = 	"Co jsi tu dosud dÄ™lal?";
 };
 
 func int DIA_Addon_Nefarius_Neues_Condition ()
@@ -125,53 +125,53 @@ func int DIA_Addon_Nefarius_Neues_Condition ()
 
 func void DIA_Addon_Nefarius_Neues_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_Neues_15_00"); //Co jsi tu dosud dêlal?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_01"); //Studuji historii stavitelù a snaím se pochopit, proè uzavâeli ten portál.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_02"); //Vypadá to, jako by se to potopené mêsto snaili ukrıt pâed celım svêtem.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_03"); //Pâed mnoha lety se tu staly dêsivé vêci. Zachvátilo je nêco strašlivého.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_04"); //Pokud se dá vêâit jejich záznamùm, tak nedlouho pâed pádem mêsta tu propukla obèanská válka.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_05"); //Ulice byly v plamenech a nakonec osud stavitelù zpeèetila povodeà, která se vzápêtí pâihnala.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_06"); //Ti nemnozí, kteâí celé to peklo pâeili, uzavâeli tuto èást ostrova v nadêji, e tak celı chaos zastaví.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_Neues_15_00"); //Co jsi tu dosud dÄ™lal?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_01"); //Studuji historii stavitelÅ¯ a snaÅ¾Ã­m se pochopit, proÄ uzavÃ¢eli ten portÃ¡l.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_02"); //VypadÃ¡ to, jako by se to potopenÃ© mÄ™sto snaÅ¾ili ukrÃ½t pÃ¢ed celÃ½m svÄ™tem.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_03"); //PÃ¢ed mnoha lety se tu staly dÄ™sivÃ© vÄ™ci. ZachvÃ¡tilo je nÄ™co straÅ¡livÃ©ho.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_04"); //Pokud se dÃ¡ vÄ™Ã¢it jejich zÃ¡znamÅ¯m, tak nedlouho pÃ¢ed pÃ¡dem mÄ™sta tu propukla obÄanskÃ¡ vÃ¡lka.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_05"); //Ulice byly v plamenech a nakonec osud stavitelÅ¯ zpeÄetila povodeÅ•, kterÃ¡ se vzÃ¡pÄ™tÃ­ pÃ¢ihnala.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_06"); //Ti nemnozÃ­, kteÃ¢Ã­ celÃ© to peklo pÃ¢eÅ¾ili, uzavÃ¢eli tuto ÄÃ¡st ostrova v nadÄ™ji, Å¾e tak celÃ½ chaos zastavÃ­.
 	
 	Info_ClearChoices	(DIA_Addon_Nefarius_Neues);
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Co si myslíš, e tu najdeme?", DIA_Addon_Nefarius_Neues_find );
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "A my hlupáci ten portál znovu otevâeli.", DIA_Addon_Nefarius_Neues_auf );
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Z èeho byli stavitelé tak vydêšeni?", DIA_Addon_Nefarius_Neues_was );
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Zmiàoval ses o povodni?", DIA_Addon_Nefarius_Neues_flut );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Co si myslÃ­Å¡, Å¾e tu najdeme?", DIA_Addon_Nefarius_Neues_find );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "A my hlupÃ¡ci ten portÃ¡l znovu otevÃ¢eli.", DIA_Addon_Nefarius_Neues_auf );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Z Äeho byli stavitelÃ© tak vydÄ™Å¡eni?", DIA_Addon_Nefarius_Neues_was );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "ZmiÅ•oval ses o povodni?", DIA_Addon_Nefarius_Neues_flut );
 };
 func void DIA_Addon_Nefarius_Neues_find ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_find_15_00"); //Co si myslíš, e tu najdeme?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_01"); //O tom se mùu jedinê dohadovat. Mêl by sis promluvit se Saturasem.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_02"); //Má jistı nápad.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_find_15_00"); //Co si myslÃ­Å¡, Å¾e tu najdeme?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_01"); //O tom se mÅ¯Å¾u jedinÄ™ dohadovat. MÄ™l by sis promluvit se Saturasem.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_02"); //MÃ¡ jistÃ½ nÃ¡pad.
 	
 	Log_CreateTopic (TOPIC_Addon_Flut, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Flut, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Flut,"Nefarius tvrdí, e o potopeném mêstê bych si mêl promluvit se Saturasem."); 
+	B_LogEntry (TOPIC_Addon_Flut,"Nefarius tvrdÃ­, Å¾e o potopenÃ©m mÄ™stÄ™ bych si mÄ™l promluvit se Saturasem."); 
 
 	
 	NefariusADW_Talk2Saturas = TRUE;
 };
 func void DIA_Addon_Nefarius_Neues_flut ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_flut_15_00"); //Âíkal jsi, e propukla povodeà?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_01"); //Samotnı Adanos se jim zjevil, aby celé šílenství ukonèil.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_02"); //Znièil celé mêsto do poslední mrtê.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_flut_15_00"); //Ã‚Ã­kal jsi, Å¾e propukla povodeÅ•?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_01"); //SamotnÃ½ Adanos se jim zjevil, aby celÃ© Å¡Ã­lenstvÃ­ ukonÄil.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_02"); //ZniÄil celÃ© mÄ™sto do poslednÃ­ mrtÄ™.
 };
 func void DIA_Addon_Nefarius_Neues_was ()
 {
 	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_was_15_00"); //Co ty stavitele tak znepokojilo?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_01"); //Jeden z nich propadl zlu. Byl to slavnı velitel jménem Quarhodron.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_02"); //Jednou vyjel z ochrannıch hradeb mêsta, kde vybojoval úspêšnou bitvu. Avšak spolu s ním vstoupilo do mêsta velké zlo.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_03"); //Všichni jeho následovníci zakrátko zešíleli a zaèali bojovat proti prostému lidu.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_04"); //Následovala obèanská válka, která vše obrátila v sutiny.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_01"); //Jeden z nich propadl zlu. Byl to slavnÃ½ velitel jmÃ©nem Quarhodron.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_02"); //Jednou vyjel z ochrannÃ½ch hradeb mÄ™sta, kde vybojoval ÃºspÄ™Å¡nou bitvu. AvÅ¡ak spolu s nÃ­m vstoupilo do mÄ™sta velkÃ© zlo.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_03"); //VÅ¡ichni jeho nÃ¡sledovnÃ­ci zakrÃ¡tko zeÅ¡Ã­leli a zaÄali bojovat proti prostÃ©mu lidu.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_04"); //NÃ¡sledovala obÄanskÃ¡ vÃ¡lka, kterÃ¡ vÅ¡e obrÃ¡tila v sutiny.
 };
 func void DIA_Addon_Nefarius_Neues_auf ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_auf_15_00"); //A my blázni jsme ten portál znovu otevâeli.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_01"); //Ani jedno mê netêší, vêâ mi.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_02"); //Ale mêli jsme snad na vybranou?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_03"); //Jestli neuèiníme pâítr tomu, co se tady dêje, pak Khorinis postihne pâesnê stejnı osud, kterı kdysi potkal i stavitele tohoto pradávného mêsta.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_auf_15_00"); //A my blÃ¡zni jsme ten portÃ¡l znovu otevÃ¢eli.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_01"); //Ani jedno mÄ™ netÄ™Å¡Ã­, vÄ™Ã¢ mi.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_02"); //Ale mÄ™li jsme snad na vybranou?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_03"); //Jestli neuÄinÃ­me pÃ¢Ã­trÅ¾ tomu, co se tady dÄ™je, pak Khorinis postihne pÃ¢esnÄ™ stejnÃ½ osud, kterÃ½ kdysi potkal i stavitele tohoto pradÃ¡vnÃ©ho mÄ™sta.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -185,7 +185,7 @@ instance DIA_Addon_Nefarius_PermADW		(C_INFO)
 	information	 = 	DIA_Addon_Nefarius_PermADW_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Je cesta portálem bezpeèná?";
+	description	 = 	"Je cesta portÃ¡lem bezpeÄnÃ¡?";
 };
 func int DIA_Addon_Nefarius_PermADW_Condition ()
 {
@@ -193,8 +193,8 @@ func int DIA_Addon_Nefarius_PermADW_Condition ()
 };
 func void DIA_Addon_Nefarius_PermADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_PermADW_15_00"); //Je cesta skrz portál bezpeèná?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_PermADW_05_01"); //Ještê jsem tím neletêl.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_PermADW_15_00"); //Je cesta skrz portÃ¡l bezpeÄnÃ¡?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_PermADW_05_01"); //JeÅ¡tÄ™ jsem tÃ­m neletÄ™l.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -207,7 +207,7 @@ instance DIA_Addon_Nefarius_PreTeach		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_PreTeach_Condition;
 	information	 = 	DIA_Addon_Nefarius_PreTeach_Info;
 
-	description	 = 	"Mohl by ses se mnou podêlit o své magické vêdêní?";
+	description	 = 	"Mohl by ses se mnou podÄ™lit o svÃ© magickÃ© vÄ™dÄ™nÃ­?";
 };
 
 func int DIA_Addon_Nefarius_PreTeach_Condition ()
@@ -221,9 +221,9 @@ func int DIA_Addon_Nefarius_PreTeach_Condition ()
 
 func void DIA_Addon_Nefarius_PreTeach_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_PreTeach_15_00"); //Mùeš mi pâedat nêjaké magické vêdomosti?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_01"); //Mohu tê nauèit vytváâet runy a Cronos ti k nim mùe prodat magické formule.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_02"); //Poâád s sebou nosí runové knihy.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_PreTeach_15_00"); //MÅ¯Å¾eÅ¡ mi pÃ¢edat nÄ™jakÃ© magickÃ© vÄ™domosti?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_01"); //Mohu tÄ™ nauÄit vytvÃ¡Ã¢et runy a Cronos ti k nim mÅ¯Å¾e prodat magickÃ© formule.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_02"); //PoÃ¢Ã¡d s sebou nosÃ­ runovÃ© knihy.
 	
 	Nefarius_Addon_TeachRunes = TRUE;
 	Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
@@ -241,7 +241,7 @@ INSTANCE DIA_Addon_Nefarius_ADW_Runen (C_INFO)
 	condition	= DIA_Addon_Nefarius_ADW_Runen_Condition;
 	information	= DIA_Addon_Nefarius_ADW_Runen_Info;
 	permanent	= TRUE;
-	description = "Instruuj mê (vytvoâení run)";
+	description = "Instruuj mÄ™ (vytvoÃ¢enÃ­ run)";
 };                       
 
 FUNC INT DIA_Addon_Nefarius_ADW_Runen_Condition()
@@ -442,7 +442,7 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_4()
 };
 
 //**********************************************************
-// Fünfter Kreis 
+// FÃ¼nfter Kreis 
 //--------------------------
 //**********************************************************
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_5()

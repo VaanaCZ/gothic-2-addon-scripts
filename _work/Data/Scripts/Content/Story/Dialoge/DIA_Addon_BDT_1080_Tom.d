@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Tom_HI   (C_INFO)
 	condition   = DIA_Addon_Tom_HI_Condition;
 	information = DIA_Addon_Tom_HI_Info;
 	permanent   = FALSE;
-	description = "ProË tu tak vysed·v·ö?";
+	description = "Proƒç tu tak vysed√°v√°≈°?";
 };
 FUNC INT DIA_Addon_Tom_HI_Condition()
 {	
@@ -71,13 +71,13 @@ FUNC INT DIA_Addon_Tom_HI_Condition()
 };
 FUNC VOID DIA_Addon_Tom_HI_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_HI_15_00"); //ProËpak tu tak vysed·v·ö?
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_01"); //M·m problÈmy. A protoûe je mi ûivot milej, snaûÌm se, abych se v t·bo‚e nÍjakou chvÌli neuk·zal.
-	AI_Output (other,self,"DIA_Addon_Tom_HI_15_02"); //Co se dÍje?
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_03"); //S p·r pir·tama jsem mÍl fakt dobr˝ vztahy, ch·peö?
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_04"); //Vûdycky jsem se s nima sch·zel za t·borem a obchodovali jsme.
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_05"); //Jojo, kupoval jsem vÍci pro p˘lku t·bora. 'Tome, p‚ines mi tohle, Tome, p‚ines mi t·mhleto.'
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_06"); //A pak se do toho vloûil ten hajzl Esteban.
+	AI_Output (other,self,"DIA_Addon_Tom_HI_15_00"); //Proƒçpak tu tak vysed√°v√°≈°?
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_01"); //M√°m probl√©my. A proto≈æe je mi ≈æivot milej, sna≈æ√≠m se, abych se v t√°bo√¢e nƒôjakou chv√≠li neuk√°zal.
+	AI_Output (other,self,"DIA_Addon_Tom_HI_15_02"); //Co se dƒôje?
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_03"); //S p√°r pir√°tama jsem mƒôl fakt dobr√Ω vztahy, ch√°pe≈°?
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_04"); //V≈ædycky jsem se s nima sch√°zel za t√°borem a obchodovali jsme.
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_05"); //Jojo, kupoval jsem vƒôci pro p≈Ølku t√°bora. 'Tome, p√¢ines mi tohle, Tome, p√¢ines mi t√°mhleto.'
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_06"); //A pak se do toho vlo≈æil ten hajzl Esteban.
 };
 //---------------------------------------------------------------------
 //	Info Juan
@@ -101,12 +101,12 @@ FUNC INT DIA_Addon_Tom_Juan_Condition()
 FUNC VOID DIA_Addon_Tom_Juan_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Tom_Juan_15_00"); //Co se stalo?
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_01"); //Esteban poslal Juana ñ to je jeden z jeho hoch˘, aby si na n·s poËÌhal. ämejd jeden.
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_02"); //Zrovna jsem mÍl s pir·tama rozjednanej köeft, kdyû se vyloupnul ze tmy a dvÍma ranama mÍ sejmul!
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_03"); //Byl sakra rychlej, to ti povÌm! Ale ne dost ñ jeötÍ jsem mu staËil zdrhnout.
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_01"); //Esteban poslal Juana ‚Äì to je jeden z jeho hoch≈Ø, aby si na n√°s poƒç√≠hal. ≈†mejd jeden.
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_02"); //Zrovna jsem mƒôl s pir√°tama rozjednanej k≈°eft, kdy≈æ se vyloupnul ze tmy a dvƒôma ranama mƒô sejmul!
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_03"); //Byl sakra rychlej, to ti pov√≠m! Ale ne dost ‚Äì je≈°tƒô jsem mu staƒçil zdrhnout.
 	SC_Knows_JuanMurderedAngus = TRUE;
 	
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Takûe Hankovu a Angusovu vraûdu m· na svÍdomÌ Juan. PoËkal si na oba dva a pak je zabil.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"Tak≈æe Hankovu a Angusovu vra≈ædu m√° na svƒôdom√≠ Juan. Poƒçkal si na oba dva a pak je zabil.");
 };
 
 //---------------------------------------------------------------------
@@ -119,7 +119,7 @@ INSTANCE DIA_Addon_Tom_Esteban   (C_INFO)
 	condition   = DIA_Addon_Tom_Esteban_Condition;
 	information = DIA_Addon_Tom_Esteban_Info;
 	permanent   = FALSE;
-	description = "A od toho p‚epadenÌ se ukr˝v·ö tady?";
+	description = "A od toho p√¢epaden√≠ se ukr√Ωv√°≈° tady?";
 };
 FUNC INT DIA_Addon_Tom_Esteban_Condition()
 {	
@@ -130,11 +130,11 @@ FUNC INT DIA_Addon_Tom_Esteban_Condition()
 };
 FUNC VOID DIA_Addon_Tom_Esteban_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_Esteban_15_00"); //A od toho p‚epadenÌ se ukr˝v·ö tady?
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_01"); //Nap‚ed jsem se vr·til do t·bora a ‚ekl Fiskovi, Hunovi i ostatnÌm, aby se rozlouËili s nov˝m zboûÌm.
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_02"); //A ûe to vöecko spÌskal Esteban.
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_03"); //Jestli Esteban zjistÌ, ûe jsem vöem ‚ek, ûe za tÌm vÍzÌ ON, jsem mrtvej muû.
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_04"); //A proto se nem˘ûu vr·tit do t·bora.
+	AI_Output (other,self,"DIA_Addon_Tom_Esteban_15_00"); //A od toho p√¢epaden√≠ se ukr√Ωv√°≈° tady?
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_01"); //Nap√¢ed jsem se vr√°til do t√°bora a √¢ekl Fiskovi, Hunovi i ostatn√≠m, aby se rozlouƒçili s nov√Ωm zbo≈æ√≠m.
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_02"); //A ≈æe to v≈°ecko sp√≠skal Esteban.
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_03"); //Jestli Esteban zjist√≠, ≈æe jsem v≈°em √¢ek, ≈æe za t√≠m vƒôz√≠ ON, jsem mrtvej mu≈æ.
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_04"); //A proto se nem≈Ø≈æu vr√°tit do t√°bora.
 	
 	Tom_tells = TRUE;
 };
@@ -149,7 +149,7 @@ INSTANCE DIA_Addon_Tom_Dead   (C_INFO)
 	condition   = DIA_Addon_Tom_Dead_Condition;
 	information = DIA_Addon_Tom_Dead_Info;
 	permanent   = FALSE;
-	description = "Esteban je mrtv˝.";
+	description = "Esteban je mrtv√Ω.";
 };
 FUNC INT DIA_Addon_Tom_Dead_Condition()
 {	
@@ -161,11 +161,11 @@ FUNC INT DIA_Addon_Tom_Dead_Condition()
 };
 FUNC VOID DIA_Addon_Tom_Dead_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_00"); //Esteban je mrtv˝.
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_01"); //V·ûnÍ? No ËoveËe, to je ale klika!
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_02"); //Kdo to udÍlal?
-	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_03"); //(zlomyslnÍ) No, ‚eknÍme ûe nÍkdo, koho zn·ö.
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_04"); //DÌk, ûe jsi za mnou zaöel. TeÎ se teda m˘ûu vr·tit do t·bora...
+	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_00"); //Esteban je mrtv√Ω.
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_01"); //V√°≈ænƒô? No ƒçoveƒçe, to je ale klika!
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_02"); //Kdo to udƒôlal?
+	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_03"); //(zlomyslnƒô) No, √¢eknƒôme ≈æe nƒôkdo, koho zn√°≈°.
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_04"); //D√≠k, ≈æe jsi za mnou za≈°el. Te√´ se teda m≈Ø≈æu vr√°tit do t√°bora...
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
@@ -197,17 +197,17 @@ FUNC VOID DIA_Addon_Tom_PERM_Info()
 
 	if (Npc_GetDistToWP (self,"BL_INN_05_B") <= 500)
 	{
-		AI_Output (self,other,"DIA_Addon_Tom_PERM_11_01"); //TeÎ uû m˘ûu zase v klidu popÌjet Luciinu ko‚alku.
+		AI_Output (self,other,"DIA_Addon_Tom_PERM_11_01"); //Te√´ u≈æ m≈Ø≈æu zase v klidu pop√≠jet Luciinu ko√¢alku.
 	}
 	else
 	{	
 		if (Npc_KnowsInfo (other, DIA_Addon_Tom_Dead))
 		{
-			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_02"); //TeÎ uû se zase m˘ûu uk·zat v t·bo‚e!
+			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_02"); //Te√´ u≈æ se zase m≈Ø≈æu uk√°zat v t√°bo√¢e!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_03"); //Jinak? Jinak tu budu sedÍt a poËÌtat öutr·ky.
+			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_03"); //Jinak? Jinak tu budu sedƒôt a poƒç√≠tat ≈°utr√°ky.
 		};
 	};
 };

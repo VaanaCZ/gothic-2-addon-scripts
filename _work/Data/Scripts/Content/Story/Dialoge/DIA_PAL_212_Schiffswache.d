@@ -43,7 +43,7 @@ func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
 func void DIA_Pal_212_Schiffswache_WERSEIDIHR_Info ()
 {
 	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Kdo jste?
-	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Jsme vyslanci kr·le Rhobara, sluûebnÌci Innosovi, jinak takÈ ‚eËenÌ paladini.
+	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Jsme vyslanci kr√°le Rhobara, slu≈æebn√≠ci Innosovi, jinak tak√© √¢eƒçen√≠ paladini.
 };
 
 
@@ -56,7 +56,7 @@ instance DIA_Pal_212_Schiffswache_WASMACHSTDU2		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info;
 
-	description	 = 	"Co tady dÍl·ö?";
+	description	 = 	"Co tady dƒôl√°≈°?";
 };
 
 func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()
@@ -66,22 +66,22 @@ func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_15_00"); //Co tady dÍl·ö?
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_15_00"); //Co tady dƒôl√°≈°?
 
 	if (MIS_ShipIsFree == FALSE)
 	{
 		if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Na tu loÎ nevstoupÌö. To je jedinÈ, co pot‚ebujeö vÍdÍt.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Na tu lo√´ nevstoup√≠≈°. To je jedin√©, co pot√¢ebuje≈° vƒôdƒôt.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Byli jsme sem postaveni jako str·ûe. Nikdo nesmÌ na loÎ vstoupit. Je n·m lÌto, ale ani ty.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Byli jsme sem postaveni jako str√°≈æe. Nikdo nesm√≠ na lo√´ vstoupit. Je n√°m l√≠to, ale ani ty.
 		};
 	}
 	else
 	{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //Mrh·te m˝m Ëasem. Mnohem radÍji bych byl s vaöimi bratry v HornickÈm ˙dolÌ.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //Mrh√°te m√Ωm ƒçasem. Mnohem radƒôji bych byl s va≈°imi bratry v Hornick√©m √∫dol√≠.
 	};
 	AI_StopProcessInfos (self);
 };

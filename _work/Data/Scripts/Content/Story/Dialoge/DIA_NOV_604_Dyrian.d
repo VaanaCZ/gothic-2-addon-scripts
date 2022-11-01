@@ -43,7 +43,7 @@ FUNC INT DIA_Dyrian_Hello_Condition()
 };
 FUNC VOID DIA_Dyrian_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Dyrian_Hello_13_00"); //(smutnÍ) Co chceö?
+	AI_Output (self ,other,"DIA_Dyrian_Hello_13_00"); //(smutnƒô) Co chce≈°?
 };
 // *************************************************************************
 // 							Wurst verteilen
@@ -55,7 +55,7 @@ INSTANCE DIA_Dyrian_Wurst(C_INFO)
 	condition	= DIA_Dyrian_Wurst_Condition;
 	information	= DIA_Dyrian_Wurst_Info;
 	permanent	= FALSE;
-	description = "Nem·m Ëas, musÌm rozdÍlovat klob·sy.";
+	description = "Nem√°m ƒças, mus√≠m rozdƒôlovat klob√°sy.";
 };                       
 
 FUNC INT DIA_Dyrian_Wurst_Condition()
@@ -71,8 +71,8 @@ FUNC INT DIA_Dyrian_Wurst_Condition()
 
 FUNC VOID DIA_Dyrian_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Dyrian_Wurst_15_00"); //Nem·m Ëas, musÌm rozdÍlovat klob·sy.
-	AI_Output (self, other, "DIA_Dyrian_Wurst_13_01"); //DÌky. Douf·m, ûe to nenÌ poslednÌ klob·sa, kterou jsem tu dostal.
+	AI_Output (other, self, "DIA_Dyrian_Wurst_15_00"); //Nem√°m ƒças, mus√≠m rozdƒôlovat klob√°sy.
+	AI_Output (self, other, "DIA_Dyrian_Wurst_13_01"); //D√≠ky. Douf√°m, ≈æe to nen√≠ posledn√≠ klob√°sa, kterou jsem tu dostal.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -96,7 +96,7 @@ INSTANCE DIA_Dyrian_Job   (C_INFO)
 	condition   = DIA_Dyrian_Job_Condition;
 	information = DIA_Dyrian_Job_Info;
 	permanent   = FALSE;
-	description = "Co tady dÍl·ö?";
+	description = "Co tady dƒôl√°≈°?";
 };
 FUNC INT DIA_Dyrian_Job_Condition()
 {	
@@ -110,9 +110,9 @@ FUNC INT DIA_Dyrian_Job_Condition()
 };
 FUNC VOID DIA_Dyrian_Job_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Job_15_00"); //Co tady dÍl·ö?
-	AI_Output (self ,other,"DIA_Dyrian_Job_13_01"); //Poruöil jsem z·kony tohoto spoleËenstvÌ.
-	AI_Output (self ,other,"DIA_Dyrian_Job_13_02"); //TeÎ Ëek·m na rozhodnutÌ nejvyööÌ rady, jestli budu moci z˘stat v kl·öte‚e.
+	AI_Output (other,self ,"DIA_Dyrian_Job_15_00"); //Co tady dƒôl√°≈°?
+	AI_Output (self ,other,"DIA_Dyrian_Job_13_01"); //Poru≈°il jsem z√°kony tohoto spoleƒçenstv√≠.
+	AI_Output (self ,other,"DIA_Dyrian_Job_13_02"); //Te√´ ƒçek√°m na rozhodnut√≠ nejvy≈°≈°√≠ rady, jestli budu moci z≈Østat v kl√°≈°te√¢e.
 };
 //**************************************************************************
 //	Wieso sollst Du das Kloster denn verlassen?
@@ -125,7 +125,7 @@ INSTANCE DIA_Dyrian_WhatDone   (C_INFO)
 	condition   = DIA_Dyrian_WhatDone_Condition;
 	information = DIA_Dyrian_WhatDone_Info;
 	permanent   = FALSE;
-	description = "¬ekni mi, co se stalo.";
+	description = "√Çekni mi, co se stalo.";
 };
 FUNC INT DIA_Dyrian_WhatDone_Condition()
 {
@@ -139,11 +139,11 @@ FUNC INT DIA_Dyrian_WhatDone_Condition()
 };
 FUNC VOID DIA_Dyrian_WhatDone_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_WhatDone_15_00"); //¬ekni mi, co se stalo.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_01"); //Kdyû jsem zametal, vzal jsem knihu z komnat m·g˘, abych si ji mohl pozdÍji p‚eËÌst.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_02"); //Mistr Hyglas si toho samoz‚ejmÍ okamûitÍ vöiml a na tu knihu se mÍ zeptal.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_03"); //Ze strachu p‚ed trestem jsem zalhal - ale pozdÍji mÍ nachytal s tou knihou v mÈ cele.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_04"); //StraönÍ se rozzlobil a ‚ekl o tom nejvyööÌ radÍ. TeÎ probÌrajÌ, jestli mohu z˘stat.
+	AI_Output (other,self ,"DIA_Dyrian_WhatDone_15_00"); //√Çekni mi, co se stalo.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_01"); //Kdy≈æ jsem zametal, vzal jsem knihu z komnat m√°g≈Ø, abych si ji mohl pozdƒôji p√¢eƒç√≠st.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_02"); //Mistr Hyglas si toho samoz√¢ejmƒô okam≈æitƒô v≈°iml a na tu knihu se mƒô zeptal.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_03"); //Ze strachu p√¢ed trestem jsem zalhal - ale pozdƒôji mƒô nachytal s tou knihou v m√© cele.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_04"); //Stra≈°nƒô se rozzlobil a √¢ekl o tom nejvy≈°≈°√≠ radƒô. Te√´ prob√≠raj√≠, jestli mohu z≈Østat.
 };
 
 //**************************************************************************
@@ -156,7 +156,7 @@ INSTANCE DIA_Dyrian_CanHelp   (C_INFO)
 	condition   = DIA_Dyrian_CanHelp_Condition;
 	information = DIA_Dyrian_CanHelp_Info;
 	permanent   = TRUE;
-	description = "M˘ûu ti nÍjak pomoci?";
+	description = "M≈Ø≈æu ti nƒôjak pomoci?";
 };
 FUNC INT DIA_Dyrian_CanHelp_Condition()
 {	
@@ -170,11 +170,11 @@ FUNC INT DIA_Dyrian_CanHelp_Condition()
 };
 FUNC VOID DIA_Dyrian_CanHelp_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_CanHelp_15_00"); //Je nÍco, jak bych ti mohl pomoci?
-	AI_Output (self ,other,"DIA_Dyrian_CanHelp_13_01"); //Ne, odevzdal jsem se na milost Innosovi a m·g˘m.
+	AI_Output (other,self ,"DIA_Dyrian_CanHelp_15_00"); //Je nƒôco, jak bych ti mohl pomoci?
+	AI_Output (self ,other,"DIA_Dyrian_CanHelp_13_01"); //Ne, odevzdal jsem se na milost Innosovi a m√°g≈Øm.
 };
 //**************************************************************************
-//	SC hat die Pr¸fung des Feuers angenommen und mit Hyglas gesprochen
+//	SC hat die Pr√ºfung des Feuers angenommen und mit Hyglas gesprochen
 //**************************************************************************
 INSTANCE DIA_Dyrian_Scroll   (C_INFO)
 {
@@ -196,50 +196,50 @@ FUNC INT DIA_Dyrian_Scroll_Condition()
 };
 FUNC VOID DIA_Dyrian_Scroll_Info()
 {
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_00"); //Hele, v·ûnÍ jsi poûadoval zkouöku ohnÍ?
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_15_01"); //Ano. A m·m v ˙myslu ji sloûit.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_02"); //Dobr· - moûn· bych ti s tÌm mohl pomoci. M˘ûu ti d·t velice uûiteËn˝ kouzeln˝ svitek. Kouzlo SP¡NKU. M·ö z·jem?
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_00"); //Hele, v√°≈ænƒô jsi po≈æadoval zkou≈°ku ohnƒô?
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_15_01"); //Ano. A m√°m v √∫myslu ji slo≈æit.
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_02"); //Dobr√° - mo≈æn√° bych ti s t√≠m mohl pomoci. M≈Ø≈æu ti d√°t velice u≈æiteƒçn√Ω kouzeln√Ω svitek. Kouzlo SP√ÅNKU. M√°≈° z√°jem?
 
 	Info_ClearChoices (DIA_Dyrian_Scroll);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Ne, nepot‚ebuji tvou pomoc.",DIA_Dyrian_Scroll_No);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Co za to chceö?",DIA_Dyrian_Scroll_How);
-	Info_AddChoice (DIA_Dyrian_Scroll,"K Ëemu mi bude?",DIA_Dyrian_Scroll_What);
+	Info_AddChoice (DIA_Dyrian_Scroll,"Ne, nepot√¢ebuji tvou pomoc.",DIA_Dyrian_Scroll_No);
+	Info_AddChoice (DIA_Dyrian_Scroll,"Co za to chce≈°?",DIA_Dyrian_Scroll_How);
+	Info_AddChoice (DIA_Dyrian_Scroll,"K ƒçemu mi bude?",DIA_Dyrian_Scroll_What);
 };
 FUNC VOID DIA_Dyrian_Scroll_What ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_00"); //K Ëemu mi bude?
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_01"); //S pomocÌ tohohle kouzla m˘ûeö kohokoliv na chvÌli uvrhnout do magickÈho sp·nku. Ovöem jenom v p‚ÌpadÍ, ûe je jeho v˘le slaböÌ neû tvoje.
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_02"); //To by se mohlo hodit, pokud budeö nÍkoho pot‚ebovat odklidit z cesty.
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_03"); //A jak zjistÌm, jestli m· ten dotyËn˝ slaböÌ v˘li neû j·?
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_04"); //Ani se to nenam·hej zkouöet na m·gy. Ale vÍtöinu novic˘ bys tak mÍl uspat.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_00"); //K ƒçemu mi bude?
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_01"); //S pomoc√≠ tohohle kouzla m≈Ø≈æe≈° kohokoliv na chv√≠li uvrhnout do magick√©ho sp√°nku. Ov≈°em jenom v p√¢√≠padƒô, ≈æe je jeho v≈Øle slab≈°√≠ ne≈æ tvoje.
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_02"); //To by se mohlo hodit, pokud bude≈° nƒôkoho pot√¢ebovat odklidit z cesty.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_03"); //A jak zjist√≠m, jestli m√° ten dotyƒçn√Ω slab≈°√≠ v≈Øli ne≈æ j√°?
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_04"); //Ani se to nenam√°hej zkou≈°et na m√°gy. Ale vƒôt≈°inu novic≈Ø bys tak mƒôl uspat.
 };
 FUNC VOID DIA_Dyrian_Scroll_No ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_No_15_00"); //Ne, nepot‚ebuji tvou pomoc.
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_No_13_01"); //Pokud bys n·hodou zmÍnil n·zor, m˘ûeö za mnou kdykoliv p‚ijÌt.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_No_15_00"); //Ne, nepot√¢ebuji tvou pomoc.
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_No_13_01"); //Pokud bys n√°hodou zmƒônil n√°zor, m≈Ø≈æe≈° za mnou kdykoliv p√¢ij√≠t.
 	Info_ClearChoices (DIA_Dyrian_Scroll);
 };
 FUNC VOID DIA_Dyrian_Scroll_How ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_How_15_00"); //Co za to chceö?
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_01"); //Kaûd˝ m·g, kter˝ u zkouöky uspÍje, m˘ûe mÌt jedno p‚·nÌ.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_02"); //Pokud se ti opravdu poda‚Ì projÌt zkouökou ohnÍ, moûn· bys mohl za‚Ìdit, abych z˘stal tady v kl·öte‚e.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_How_15_00"); //Co za to chce≈°?
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_01"); //Ka≈æd√Ω m√°g, kter√Ω u zkou≈°ky uspƒôje, m≈Ø≈æe m√≠t jedno p√¢√°n√≠.
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_02"); //Pokud se ti opravdu poda√¢√≠ proj√≠t zkou≈°kou ohnƒô, mo≈æn√° bys mohl za√¢√≠dit, abych z≈Østal tady v kl√°≈°te√¢e.
 	
 	Info_ClearChoices (DIA_Dyrian_Scroll);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Ne, nepot‚ebuji tvou pomoc.",DIA_Dyrian_Scroll_No);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Dobr·, dej mi ten kouzeln˝ svitek.",DIA_Dyrian_Scroll_Yes);
+	Info_AddChoice (DIA_Dyrian_Scroll,"Ne, nepot√¢ebuji tvou pomoc.",DIA_Dyrian_Scroll_No);
+	Info_AddChoice (DIA_Dyrian_Scroll,"Dobr√°, dej mi ten kouzeln√Ω svitek.",DIA_Dyrian_Scroll_Yes);
 	
 };
 FUNC VOID DIA_Dyrian_Scroll_Yes ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_Yes_15_00"); //Dobr·, dej mi ten kouzeln˝ svitek.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_Yes_13_01"); //P‚eji ti hodnÍ ötÍstÌ u zkouöky. A„ je ti Innos n·pomocen.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_Yes_15_00"); //Dobr√°, dej mi ten kouzeln√Ω svitek.
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_Yes_13_01"); //P√¢eji ti hodnƒô ≈°tƒôst√≠ u zkou≈°ky. AƒÉ je ti Innos n√°pomocen.
 	
 	B_GiveInvItems (self,other,ItSc_Sleep,1);
 	MIS_HelpDyrian = LOG_RUNNING;
 	Log_CreateTopic (Topic_DyrianDrin,LOG_MISSION);
 	Log_SetTopicStatus (Topic_DyrianDrin,LOG_RUNNING);
-	B_LogEntry (Topic_DyrianDrin,"Dyrian mi vÍnoval svitek s usp·vacÌm kouzlem. Na opl·tku se m·m - aû budu m·gem - postarat, aby ho v kl·öte‚e nechali i nad·le.");
+	B_LogEntry (Topic_DyrianDrin,"Dyrian mi vƒônoval svitek s usp√°vac√≠m kouzlem. Na opl√°tku se m√°m - a≈æ budu m√°gem - postarat, aby ho v kl√°≈°te√¢e nechali i nad√°le.");
 	Info_ClearChoices (DIA_Dyrian_Scroll);
 	
 };
@@ -253,7 +253,7 @@ INSTANCE DIA_Dyrian_Doch   (C_INFO)
 	condition   = DIA_Dyrian_Doch_Condition;
 	information = DIA_Dyrian_Doch_Info;
 	permanent   = TRUE;
-	description = "ZmÍnil jsem n·zor. Dej mi to usp·vacÌ kouzlo.";
+	description = "Zmƒônil jsem n√°zor. Dej mi to usp√°vac√≠ kouzlo.";
 };
 FUNC INT DIA_Dyrian_Doch_Condition()
 {	
@@ -266,8 +266,8 @@ FUNC INT DIA_Dyrian_Doch_Condition()
 };
 FUNC VOID DIA_Dyrian_Doch_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Doch_15_00"); //ZmÍnil jsem n·zor. Dej mi to usp·vacÌ kouzlo.
-	AI_Output (self ,other,"DIA_Dyrian_Doch_13_01"); //Dobr·, ale kdyû zkouökou projdeö, za‚ÌdÌö, abych mohl z˘stat v kl·öte‚e.
+	AI_Output (other,self ,"DIA_Dyrian_Doch_15_00"); //Zmƒônil jsem n√°zor. Dej mi to usp√°vac√≠ kouzlo.
+	AI_Output (self ,other,"DIA_Dyrian_Doch_13_01"); //Dobr√°, ale kdy≈æ zkou≈°kou projde≈°, za√¢√≠d√≠≈°, abych mohl z≈Østat v kl√°≈°te√¢e.
 	
 	B_GiveInvItems (self,other,ItSc_Sleep,1);
 	MIS_HelpDyrian = LOG_RUNNING;
@@ -295,16 +295,16 @@ FUNC INT DIA_Dyrian_HelloAgain_Condition()
 };
 FUNC VOID DIA_Dyrian_HelloAgain_Info()
 {
-	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_00"); //(radostnÍ) DÌky, zachr·nils mÍ!
-	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_01"); //(ustraöenÍ) Ach, promi‡, mist‚e. NechtÍl jsem se vtÌrat.
-	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_02"); //(zdvo‚ile) DÍkuji ti, ûe mohu z˘stat zde v kl·öte‚e. Od tÈto chvÌle se cel˝ m˘j ûivot zmÍnÌ.
+	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_00"); //(radostnƒô) D√≠ky, zachr√°nils mƒô!
+	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_01"); //(ustra≈°enƒô) Ach, promi≈ï, mist√¢e. Nechtƒôl jsem se vt√≠rat.
+	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_02"); //(zdvo√¢ile) Dƒôkuji ti, ≈æe mohu z≈Østat zde v kl√°≈°te√¢e. Od t√©to chv√≠le se cel√Ω m≈Øj ≈æivot zmƒôn√≠.
 	
 	B_GivePlayerXP (XP_Ambient); 	
 	AI_StopProcessInfos (self); 
 };
 
 //*****************************************************************************
-//			Wie gehts? //Info f¸r Magier Success 
+//			Wie gehts? //Info f√ºr Magier Success 
 //*****************************************************************************
 func void B_Dyrian_PlayerHowIsIt()
 {
@@ -330,12 +330,12 @@ FUNC INT DIA_Dyrian_HowIsIt_Condition()
 FUNC VOID DIA_Dyrian_HowIsIt_Info()
 {
 	B_Dyrian_PlayerHowIsIt();
-	AI_Output (self ,other,"DIA_Dyrian_HowIsIt_13_01"); //Dob‚e. M·m zdejöÌ pr·ci opravdu r·d, mist‚e.
+	AI_Output (self ,other,"DIA_Dyrian_HowIsIt_13_01"); //Dob√¢e. M√°m zdej≈°√≠ pr√°ci opravdu r√°d, mist√¢e.
 	
 	AI_StopProcessInfos (self);	
 };
 //*****************************************************************************
-//			Wie gehts? //Info f¸r alle anderen 
+//			Wie gehts? //Info f√ºr alle anderen 
 //*****************************************************************************
 INSTANCE DIA_Dyrian_other   (C_INFO)
 {
@@ -359,7 +359,7 @@ FUNC INT DIA_Dyrian_other_Condition()
 FUNC VOID DIA_Dyrian_other_Info()
 {
 	B_Dyrian_PlayerHowIsIt();
-	AI_Output (self ,other,"DIA_Dyrian_HowIsIt_13_02"); //DÍkuji Innosovi, ûe mohu b˝t zde v kl·öte‚e.
+	AI_Output (self ,other,"DIA_Dyrian_HowIsIt_13_02"); //Dƒôkuji Innosovi, ≈æe mohu b√Ωt zde v kl√°≈°te√¢e.
 	
 	AI_StopProcessInfos (self);	
 };
@@ -386,21 +386,21 @@ FUNC INT DIA_Dyrian_Kneipe_Condition()
 FUNC VOID DIA_Dyrian_Kneipe_Info()
 {
 	AI_Output (other,self ,"DIA_Dyrian_Kneipe_15_00"); //Jak se vede?
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_13_01"); //Na co se mÍ to pt·ö? Vkl·dal jsem do tebe veökerÈ svÈ nadÍje, a tys mÍ nechal na holiËk·ch.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_13_02"); //TeÎ uû nem·m nic neû pitÌ. A je to tvoje chyba!
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_13_01"); //Na co se mƒô to pt√°≈°? Vkl√°dal jsem do tebe ve≈°ker√© sv√© nadƒôje, a tys mƒô nechal na holiƒçk√°ch.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_13_02"); //Te√´ u≈æ nem√°m nic ne≈æ pit√≠. A je to tvoje chyba!
 	
 	Info_ClearChoices (DIA_Dyrian_Kneipe);
-	Info_AddChoice (DIA_Dyrian_Kneipe,"Tady m·ö 5 zla„·k˘.",DIA_Dyrian_Kneipe_Gold);
-	Info_AddChoice (DIA_Dyrian_Kneipe,"M˘ûu vöechno vysvÍtlit.",DIA_Dyrian_Kneipe_CanExplain);
-	Info_AddChoice (DIA_Dyrian_Kneipe,"PodÌvej, co ‚Ìk·ö.",DIA_Dyrian_Kneipe_ShutUp);
+	Info_AddChoice (DIA_Dyrian_Kneipe,"Tady m√°≈° 5 zlaƒÉ√°k≈Ø.",DIA_Dyrian_Kneipe_Gold);
+	Info_AddChoice (DIA_Dyrian_Kneipe,"M≈Ø≈æu v≈°echno vysvƒôtlit.",DIA_Dyrian_Kneipe_CanExplain);
+	Info_AddChoice (DIA_Dyrian_Kneipe,"Pod√≠vej, co √¢√≠k√°≈°.",DIA_Dyrian_Kneipe_ShutUp);
 		
 };
 
 FUNC VOID DIA_Dyrian_Kneipe_Gold ()
 {
-	AI_Output	(other,self ,"DIA_Dyrian_Kneipe_Gold_15_00"); //Na, tady m·ö 5 zlat˝ch.
-	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_01"); //(nervÛznÍ) 5 zlat˝ch? D·v·ö mi 5 zlat˝ch a chceö se tak revanöovat za to, ûes mi zniËil ûivot?
-	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_02"); //Vezmu si vöechno tvoje zlato!
+	AI_Output	(other,self ,"DIA_Dyrian_Kneipe_Gold_15_00"); //Na, tady m√°≈° 5 zlat√Ωch.
+	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_01"); //(nerv√≥znƒô) 5 zlat√Ωch? D√°v√°≈° mi 5 zlat√Ωch a chce≈° se tak revan≈°ovat za to, ≈æes mi zniƒçil ≈æivot?
+	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_02"); //Vezmu si v≈°echno tvoje zlato!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 0); 
@@ -408,19 +408,19 @@ FUNC VOID DIA_Dyrian_Kneipe_Gold ()
 
 FUNC VOID DIA_Dyrian_Kneipe_CanExplain ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Kneipe_CanExplain_15_00"); //M˘ûu vöechno vysvÍtlit.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_01"); //Nech si svoje lacinÈ v˝mluvy.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_02"); //Lûeö pokaûdÈ, kdyû otev‚eö ˙sta. Nech mÍ b˝t.
+	AI_Output (other,self ,"DIA_Dyrian_Kneipe_CanExplain_15_00"); //M≈Ø≈æu v≈°echno vysvƒôtlit.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_01"); //Nech si svoje lacin√© v√Ωmluvy.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_02"); //L≈æe≈° poka≈æd√©, kdy≈æ otev√¢e≈° √∫sta. Nech mƒô b√Ωt.
 	
 	AI_StopProcessInfos (self);
 };
 
 FUNC VOID DIA_Dyrian_Kneipe_ShutUp ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Kneipe_ShutUp_15_00"); //D·vej si pozor na to, co ‚Ìk·ö.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_01"); //Jo, jen do toho, jen mÍ zastraöuj. To ti nijak nepom˘ûe.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_02"); //¬eknu celÈmu svÍtu, co jsi za pokryteckou svini! Hned jak dopiju tuhle flaöku...
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_03"); //BÍû mi z oËÌ, je mi z tebe nanic!
+	AI_Output (other,self ,"DIA_Dyrian_Kneipe_ShutUp_15_00"); //D√°vej si pozor na to, co √¢√≠k√°≈°.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_01"); //Jo, jen do toho, jen mƒô zastra≈°uj. To ti nijak nepom≈Ø≈æe.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_02"); //√Çeknu cel√©mu svƒôtu, co jsi za pokryteckou svini! Hned jak dopiju tuhle fla≈°ku...
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_03"); //Bƒô≈æ mi z oƒç√≠, je mi z tebe nanic!
 
 	AI_StopProcessInfos (self);
 };
@@ -447,7 +447,7 @@ FUNC INT DIA_Dyrian_nachher_Condition()
 FUNC VOID DIA_Dyrian_nachher_Info()
 {
 	AI_Output (other,self ,"DIA_Dyrian_nachher_15_00"); //Co se stalo?
-	AI_Output (self ,other,"DIA_Dyrian_nachher_13_01"); //Aaa, nech mÍ na pokoji! Uû s tebou nechci mÌt nic spoleËnÈho!
+	AI_Output (self ,other,"DIA_Dyrian_nachher_13_01"); //Aaa, nech mƒô na pokoji! U≈æ s tebou nechci m√≠t nic spoleƒçn√©ho!
 	AI_StopProcessInfos (self);	
 };
  

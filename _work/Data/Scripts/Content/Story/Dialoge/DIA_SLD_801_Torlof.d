@@ -49,7 +49,7 @@ func int DIA_Torlof_HALLO_Condition ()
 
 func void DIA_Torlof_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Torlof_Hallo_01_00"); //(nevrle) Co po mnÍ chceö?
+	AI_Output (self, other, "DIA_Torlof_Hallo_01_00"); //(nevrle) Co po mnƒô chce≈°?
 };
 
 // ************************************************************
@@ -62,7 +62,7 @@ instance DIA_Torlof_WannaJoin (C_INFO)
 	condition	= DIA_Torlof_WannaJoin_Condition;
 	information	= DIA_Torlof_WannaJoin_Info;
 	permanent 	= FALSE;
-	description	= "Chci se p‚idat k ûoldnÈ‚˘m!";
+	description	= "Chci se p√¢idat k ≈æoldn√©√¢≈Øm!";
 };
 
 func int DIA_Torlof_WannaJoin_Condition ()
@@ -75,8 +75,8 @@ func int DIA_Torlof_WannaJoin_Condition ()
 
 func void DIA_Torlof_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_WannaJoin_15_00"); //Chci se p‚idat k ûoldnÈ‚˘m!
-	AI_Output (self, other, "DIA_Torlof_WannaJoin_01_01"); //Hm? A proË si myslÌö, ûe bych mÍl b˝t pro, abychom tÍ sem p‚ijali?
+	AI_Output (other, self, "DIA_Torlof_WannaJoin_15_00"); //Chci se p√¢idat k ≈æoldn√©√¢≈Øm!
+	AI_Output (self, other, "DIA_Torlof_WannaJoin_01_01"); //Hm? A proƒç si mysl√≠≈°, ≈æe bych mƒôl b√Ωt pro, abychom tƒô sem p√¢ijali?
 };
 
 // ************************************************************
@@ -91,7 +91,7 @@ instance DIA_Torlof_Probe (C_INFO)
 	condition	= DIA_Torlof_Probe_Condition;
 	information	= DIA_Torlof_Probe_Info;
 	permanent 	= TRUE;
-	description	= "Nech mÍ projÌt zkouökou!";
+	description	= "Nech mƒô proj√≠t zkou≈°kou!";
 };
 
 func int DIA_Torlof_Probe_Condition ()
@@ -106,26 +106,26 @@ func int DIA_Torlof_Probe_Condition ()
 
 func void DIA_Torlof_Probe_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_Probe_15_00"); //Nech mÍ projÌt zkouökou!
-	AI_Output (self, other, "DIA_Torlof_Probe_01_01"); //Poslal tÍ za mnou Lee?
+	AI_Output (other, self, "DIA_Torlof_Probe_15_00"); //Nech mƒô proj√≠t zkou≈°kou!
+	AI_Output (self, other, "DIA_Torlof_Probe_01_01"); //Poslal tƒô za mnou Lee?
 	
 	if (Npc_KnowsInfo (other, DIA_Lee_OtherSld))
 	{
-		AI_Output (other, self, "DIA_Torlof_Probe_15_02"); //¬ekl, ûe mi pom˘ûeö.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_03"); //(vzdychne si) Fajn. Tak dobr·. Neû se k n·m budeö moct p‚idat, musÌö udÍlat dvÍ vÍci.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_04"); //Za prvÈ - musÌö prok·zat, ûe budeö schopn˝ zvl·dnout ˙koly, kterÈ budeö jako ûoldnÈ‚ dost·vat. S·m tÍ ozkouöÌm.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_05"); //A za druhÈ - musÌö si vyslouûit respekt ostatnÌch ûold·k˘.
+		AI_Output (other, self, "DIA_Torlof_Probe_15_02"); //√Çekl, ≈æe mi pom≈Ø≈æe≈°.
+		AI_Output (self, other, "DIA_Torlof_Probe_01_03"); //(vzdychne si) Fajn. Tak dobr√°. Ne≈æ se k n√°m bude≈° moct p√¢idat, mus√≠≈° udƒôlat dvƒô vƒôci.
+		AI_Output (self, other, "DIA_Torlof_Probe_01_04"); //Za prv√© - mus√≠≈° prok√°zat, ≈æe bude≈° schopn√Ω zvl√°dnout √∫koly, kter√© bude≈° jako ≈æoldn√©√¢ dost√°vat. S√°m tƒô ozkou≈°√≠m.
+		AI_Output (self, other, "DIA_Torlof_Probe_01_05"); //A za druh√© - mus√≠≈° si vyslou≈æit respekt ostatn√≠ch ≈æold√°k≈Ø.
 		Torlof_Go = TRUE;
-		Npc_ExchangeRoutine	(self,"ZaËÌt"); 
+		Npc_ExchangeRoutine	(self,"Zaƒç√≠t"); 
 		
 		Log_CreateTopic (TOPIC_BecomeSLD,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_BecomeSLD,LOG_RUNNING);
-		B_LogEntry (TOPIC_BecomeSLD,"Aby mÍ ûoldnÈ‚i p‚ijali mezi sebe, musÌm podstoupit zkouöku, kterou mi zad· Torlof, a vyslouûit si respekt ostatnÌch.");
+		B_LogEntry (TOPIC_BecomeSLD,"Aby mƒô ≈æoldn√©√¢i p√¢ijali mezi sebe, mus√≠m podstoupit zkou≈°ku, kterou mi zad√° Torlof, a vyslou≈æit si respekt ostatn√≠ch.");
 	}
 	else
 	{
 		AI_Output (other, self, "DIA_Torlof_Probe_15_06"); //Ne.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_07"); //Tak co tady plk·ö?
+		AI_Output (self, other, "DIA_Torlof_Probe_01_07"); //Tak co tady plk√°≈°?
 		AI_StopProcessInfos(self);
 	};
 };
@@ -140,7 +140,7 @@ instance DIA_Torlof_Respekt (C_INFO)
 	condition	= DIA_Torlof_Respekt_Condition;
 	information	= DIA_Torlof_Respekt_Info;
 	permanent 	= FALSE;
-	description	= "Jak si zÌsk·m respekt ostatnÌch ûold·k˘?";
+	description	= "Jak si z√≠sk√°m respekt ostatn√≠ch ≈æold√°k≈Ø?";
 };
 
 func int DIA_Torlof_Respekt_Condition ()
@@ -154,16 +154,16 @@ func int DIA_Torlof_Respekt_Condition ()
 
 func void DIA_Torlof_Respekt_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_Respekt_15_00"); //Jak si vyslouûÌm respekt ostatnÌch ûoldnÈ‚˘?
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_01"); //VÍtöinÍ z nich bude staËit, kdyû splnÌö sv˘j ˙kol a projdeö m˝m testem.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_02"); //NÍkterÈ ale budeö muset p‚esvÍdËit jinak a s·m musÌö zjistit jak.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_03"); //NÍkte‚Ì budou chtÌt vyuûÌt toho, v jakÈ jsi situaci, jin˝m se prostÍ nebude lÌbit tv˘j ksicht.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_04"); //MÍl by ses snaûit najÌt spoleËnou ‚eË s co nejvÌce z nich - ale kdyû nepom˘ûe nic jinÈho, m˘ûeö se vûdycky utkat v souboji.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_05"); //Kdyû vyhrajeö, zÌsk·ö si u vÍtöiny uzn·nÌ. Dej si ale pozor, abys nÍkoho n·hodou nezabil. V tom p‚ÌpadÍ bys byl v pÍknÈ kaöi.
+	AI_Output (other, self, "DIA_Torlof_Respekt_15_00"); //Jak si vyslou≈æ√≠m respekt ostatn√≠ch ≈æoldn√©√¢≈Ø?
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_01"); //Vƒôt≈°inƒô z nich bude staƒçit, kdy≈æ spln√≠≈° sv≈Øj √∫kol a projde≈° m√Ωm testem.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_02"); //Nƒôkter√© ale bude≈° muset p√¢esvƒôdƒçit jinak a s√°m mus√≠≈° zjistit jak.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_03"); //Nƒôkte√¢√≠ budou cht√≠t vyu≈æ√≠t toho, v jak√© jsi situaci, jin√Ωm se prostƒô nebude l√≠bit tv≈Øj ksicht.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_04"); //Mƒôl by ses sna≈æit naj√≠t spoleƒçnou √¢eƒç s co nejv√≠ce z nich - ale kdy≈æ nepom≈Ø≈æe nic jin√©ho, m≈Ø≈æe≈° se v≈ædycky utkat v souboji.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_05"); //Kdy≈æ vyhraje≈°, z√≠sk√°≈° si u vƒôt≈°iny uzn√°n√≠. Dej si ale pozor, abys nƒôkoho n√°hodou nezabil. V tom p√¢√≠padƒô bys byl v pƒôkn√© ka≈°i.
 	
 	Log_CreateTopic (TOPIC_SLDRespekt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_SLDRespekt,LOG_RUNNING);
-	B_LogEntry (TOPIC_SLDRespekt,"SplnÌm-li Torlofovu zkouöku, zÌsk·m si tÌm respekt i u ostatnÌch ûoldnÈ‚˘. TakÈ na nÍ mohu zap˘sobit, pokud nÍkterÈ z nich p‚em˘ûu v souboji.");
+	B_LogEntry (TOPIC_SLDRespekt,"Spln√≠m-li Torlofovu zkou≈°ku, z√≠sk√°m si t√≠m respekt i u ostatn√≠ch ≈æoldn√©√¢≈Ø. Tak√© na nƒô mohu zap≈Øsobit, pokud nƒôkter√© z nich p√¢em≈Ø≈æu v souboji.");
 	
 };
 
@@ -177,7 +177,7 @@ instance DIA_Torlof_Duellregeln (C_INFO)
 	condition	= DIA_Torlof_Duellregeln_Condition;
 	information	= DIA_Torlof_Duellregeln_Info;
 	permanent 	= FALSE;
-	description	= "Jak· jsou pravidla pro souboj?";
+	description	= "Jak√° jsou pravidla pro souboj?";
 };
 
 func int DIA_Torlof_Duellregeln_Condition ()
@@ -191,13 +191,13 @@ func int DIA_Torlof_Duellregeln_Condition ()
 
 func void DIA_Torlof_Duellregeln_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_Duellregeln_15_00"); //Jak· jsou pravidla pro souboj?
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_01"); //Je to prostÈ. P‚ed prvnÌm ˙derem musejÌ mÌt oba soupe‚i moûnost vytasit zbra‡.
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_02"); //Nem˘ûeö jen tak nÍkoho propÌchnout bez varov·nÌ.
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_03"); //MusÌ dojÌt k nÍjakÈ formÍ ˙stnÌ v˝zvy. Ur·ûce, nebo jinÈmu d˘vodu k boji.
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_04"); //Do takovÈho souboje se nebude nikdo jin˝ mÌchat. Leda ûe by bÍhem nÍj nÍkdo z tÍch dvou zem‚el.
+	AI_Output (other, self, "DIA_Torlof_Duellregeln_15_00"); //Jak√° jsou pravidla pro souboj?
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_01"); //Je to prost√©. P√¢ed prvn√≠m √∫derem musej√≠ m√≠t oba soupe√¢i mo≈ænost vytasit zbra≈ï.
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_02"); //Nem≈Ø≈æe≈° jen tak nƒôkoho prop√≠chnout bez varov√°n√≠.
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_03"); //Mus√≠ doj√≠t k nƒôjak√© formƒô √∫stn√≠ v√Ωzvy. Ur√°≈æce, nebo jin√©mu d≈Øvodu k boji.
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_04"); //Do takov√©ho souboje se nebude nikdo jin√Ω m√≠chat. Leda ≈æe by bƒôhem nƒôj nƒôkdo z tƒôch dvou zem√¢el.
 	
-	B_LogEntry (TOPIC_SLDRespekt,"Pravidla souboje: souboj musÌ zaËÌt v˝zvou, aby do nÍj jiû nikdo dalöÌ nezasahoval. TakÈ p‚i nÍm nikdo nesmÌ b˝t zabit.");
+	B_LogEntry (TOPIC_SLDRespekt,"Pravidla souboje: souboj mus√≠ zaƒç√≠t v√Ωzvou, aby do nƒôj ji≈æ nikdo dal≈°√≠ nezasahoval. Tak√© p√¢i nƒôm nikdo nesm√≠ b√Ωt zabit.");
 };
 
 // ************************************************************
@@ -210,7 +210,7 @@ instance DIA_Torlof_DeineStimme (C_INFO)
 	condition	= DIA_Torlof_DeineStimme_Condition;
 	information	= DIA_Torlof_DeineStimme_Info;
 	permanent 	= FALSE;
-	description	= "A co ty? Budeö pro mÍ hlasovat?";
+	description	= "A co ty? Bude≈° pro mƒô hlasovat?";
 };
 
 func int DIA_Torlof_DeineStimme_Condition ()
@@ -226,8 +226,8 @@ func int DIA_Torlof_DeineStimme_Condition ()
 
 func void DIA_Torlof_DeineStimme_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_DeineStimme_15_00"); //A co ty? Budeö pro mÍ hlasovat?
-	AI_Output (self, other, "DIA_Torlof_DeineStimme_01_01"); //Pokud prok·ûeö, ûe jsi schopn˝ plnit ˙koly ûoldnÈ‚e, tak ano.
+	AI_Output (other, self, "DIA_Torlof_DeineStimme_15_00"); //A co ty? Bude≈° pro mƒô hlasovat?
+	AI_Output (self, other, "DIA_Torlof_DeineStimme_01_01"); //Pokud prok√°≈æe≈°, ≈æe jsi schopn√Ω plnit √∫koly ≈æoldn√©√¢e, tak ano.
 };
 
 
@@ -243,7 +243,7 @@ instance DIA_Torlof_RUF (C_INFO)
 	condition	= DIA_Torlof_RUF_Condition;
 	information	= DIA_Torlof_RUF_Info;
 	permanent 	= TRUE;
-	description	= "Jak to vypad· s mojÌ reputacÌ mezi ûoldnÈ‚i?";
+	description	= "Jak to vypad√° s moj√≠ reputac√≠ mezi ≈æoldn√©√¢i?";
 };
 
 func int DIA_Torlof_RUF_Condition ()
@@ -258,8 +258,8 @@ func int DIA_Torlof_RUF_Condition ()
 
 func void DIA_Torlof_RUF_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_RUF_15_00"); //Jak to vypad· s mojÌ reputacÌ mezi ûoldnÈ‚i?
-	AI_Output (self, other, "DIA_Torlof_RUF_01_01"); //Tak se na to podÌvejme...
+	AI_Output (other, self, "DIA_Torlof_RUF_15_00"); //Jak to vypad√° s moj√≠ reputac√≠ mezi ≈æoldn√©√¢i?
+	AI_Output (self, other, "DIA_Torlof_RUF_01_01"); //Tak se na to pod√≠vejme...
 	
 	Points_Sld = 0;
 	
@@ -270,7 +270,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Sld_Wolf.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_02"); //Vlk nem· nic proti tomu, aby ses p‚idal.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_02"); //Vlk nem√° nic proti tomu, aby ses p√¢idal.
 		Points_Sld = Points_Sld + 1;
 	};
 	
@@ -281,13 +281,13 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (MIS_Jarvis_SldKO == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_03"); //Jarvis si myslÌ, ûe stojÌö na spr·vnÈ stranÍ.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_03"); //Jarvis si mysl√≠, ≈æe stoj√≠≈° na spr√°vn√© stranƒô.
 		Points_Sld = Points_Sld + 1;
 	}
 	else if (Jarvis.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_04"); //Jarvis si st·le nenÌ jist˝, jestli stojÌö na spr·vnÈ stranÍ.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_05"); //Nechce, aby nÍkdo dalöÌ tancoval tak, jak Sylvio pÌsk·. Kdyû jsme u toho, tak j· takÈ ne.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_04"); //Jarvis si st√°le nen√≠ jist√Ω, jestli stoj√≠≈° na spr√°vn√© stranƒô.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_05"); //Nechce, aby nƒôkdo dal≈°√≠ tancoval tak, jak Sylvio p√≠sk√°. Kdy≈æ jsme u toho, tak j√° tak√© ne.
 	};
 	
 	// ------ Cord ------
@@ -297,12 +297,12 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Cord_Approved == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_06"); //Cord si myslÌ, ûe bys mohl b˝t dost dobr˝ na to, abychom tÍ p‚ijali.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_06"); //Cord si mysl√≠, ≈æe bys mohl b√Ωt dost dobr√Ω na to, abychom tƒô p√¢ijali.
 		Points_Sld = Points_Sld + 1;
 	}
 	else if (Cord.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_07"); //Podle Cordova n·zoru se budeö muset nejd‚Ìv nauËit po‚·dnÍ zach·zet s meËem, neû se budeö moci p‚idat.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_07"); //Podle Cordova n√°zoru se bude≈° muset nejd√¢√≠v nauƒçit po√¢√°dnƒô zach√°zet s meƒçem, ne≈æ se bude≈° moci p√¢idat.
 	};
 	
 	// ------ Cipher ------
@@ -313,12 +313,12 @@ func void DIA_Torlof_RUF_Info ()
 	else if (MIS_Cipher_Paket == LOG_SUCCESS)
 	|| 		(MIS_Cipher_BringWeed == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_08"); //Cipher ‚Ìk·, ûe pro nÍj bylo od zaË·tku jasnÈ, ûe by ses k n·m mÍl p‚idat. Vypad· to, ûe ho nÍco v·ûnÍ potÍöilo.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_08"); //Cipher √¢√≠k√°, ≈æe pro nƒôj bylo od zaƒç√°tku jasn√©, ≈æe by ses k n√°m mƒôl p√¢idat. Vypad√° to, ≈æe ho nƒôco v√°≈ænƒô potƒô≈°ilo.
 		Points_Sld = Points_Sld + 1;
 	}
 	else if (Cipher.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_09"); //Cipher ‚Ìk·, ûe mu dluûÌö laskavost a ûe vÌö, o Ëem je ‚eË.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_09"); //Cipher √¢√≠k√°, ≈æe mu dlu≈æ√≠≈° laskavost a ≈æe v√≠≈°, o ƒçem je √¢eƒç.
 	};
 	
 	// ------ Rod ------
@@ -328,12 +328,12 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Npc_HasItems (Rod, ItMw_2h_Rod) == 0)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_10"); //Rod chce jen dostat zp·tky sv˘j meË.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_10"); //Rod chce jen dostat zp√°tky sv≈Øj meƒç.
 	}
 	else if (Rod.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| 		(Rod_WetteGewonnen == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_11"); //Zd· se, ûes Roda p‚esvÍdËil o tom, ûe jsi dostateËnÍ siln˝.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_11"); //Zd√° se, ≈æes Roda p√¢esvƒôdƒçil o tom, ≈æe jsi dostateƒçnƒô siln√Ω.
 		if (Rod.aivar[AIV_DefeatedByPlayer] == FALSE)
 		{
 			Points_Sld = Points_Sld + 1; //### sonst Point bei Duell ###
@@ -341,7 +341,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Rod.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_12"); //Rod si myslÌ, ûe jsi slaboch.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_12"); //Rod si mysl√≠, ≈æe jsi slaboch.
 	};
 		
 	// ------ Sentenza -------
@@ -351,13 +351,13 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Npc_HasItems (Sentenza, itmi_gold) >= 50)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_13"); //Sentenza pro tebe ruku zvedne. ¬Ìk·, ûe ses zachoval velice rozumnÍ.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_13"); //Sentenza pro tebe ruku zvedne. √Ç√≠k√°, ≈æe ses zachoval velice rozumnƒô.
 		Points_Sld = Points_Sld + 1;
 		Torlof_SentenzaCounted = TRUE;
 	}
 	else if (Sentenza.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_14"); //Sentenza pro tebe ruku nezvedne. ¬Ìk·, ûe mu st·le dluûÌö 50 zlat˝ch.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_14"); //Sentenza pro tebe ruku nezvedne. √Ç√≠k√°, ≈æe mu st√°le dlu≈æ√≠≈° 50 zlat√Ωch.
 	};
 	
 	// ------ Raoul ------
@@ -367,7 +367,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Raoul.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_15"); //Raoul je proti tobÍ. MyslÌm, ûe tÍ nem˘ûe vyst·t.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_15"); //Raoul je proti tobƒô. Mysl√≠m, ≈æe tƒô nem≈Ø≈æe vyst√°t.
 	};
 	
 	// ------ Sylvio und Bullco ------
@@ -377,7 +377,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Bullco.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_16"); //O Sylviovi a Bullcovi mluvit nemusÌm. Ti dva tupci jsou proti kaûdÈmu.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_16"); //O Sylviovi a Bullcovi mluvit nemus√≠m. Ti dva tupci jsou proti ka≈æd√©mu.
 	};
 	
 	// ------ Buster ------
@@ -387,17 +387,17 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Buster_Duell == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_17"); //Buster ‚Ìk·, ûe jsi v pohodÍ.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_17"); //Buster √¢√≠k√°, ≈æe jsi v pohodƒô.
 		if (Buster.aivar[AIV_DefeatedByPlayer] == FALSE)
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_18"); //I kdyû jsi prohr·l.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_18"); //I kdy≈æ jsi prohr√°l.
 		};
 		//### Point bei Duell ###
 	}
 	else if (Buster.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_19"); //Buster ‚Ìk·, ûe kdyû tÍ vyzval, tak jsi vymÍkl.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_20"); //To nebyl dobr˝ n·pad. Moûn· bys za nÌm mÍl zajÌt a vyzvat ho.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_19"); //Buster √¢√≠k√°, ≈æe kdy≈æ tƒô vyzval, tak jsi vymƒôkl.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_20"); //To nebyl dobr√Ω n√°pad. Mo≈æn√° bys za n√≠m mƒôl zaj√≠t a vyzvat ho.
 	};
 
 	// ------ Dar ------
@@ -407,7 +407,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Dar_LostAgainstCipher == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_21"); //A Dar ‚Ìk·, ûe jsi ûvanil. Ale jeho hlas tady moc neznamen·.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_21"); //A Dar √¢√≠k√°, ≈æe jsi ≈ævanil. Ale jeho hlas tady moc neznamen√°.
 	};
 
 	// ----------------------
@@ -416,23 +416,23 @@ func void DIA_Torlof_RUF_Info ()
 	
 	if (Points_Sld > 0)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_22"); //Zbytek ûoldnÈ‚˘ ne‚ekl nic.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_22"); //Zbytek ≈æoldn√©√¢≈Ø ne√¢ekl nic.
 	};
 	
 	if (MIS_Torlof_HolPachtVonSekob != LOG_SUCCESS)
 	&& (MIS_Torlof_BengarMilizKlatschen != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_23"); //VÍtöina z nich Ëek·, jak si povedeö bÍhem zkouöky.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_23"); //Vƒôt≈°ina z nich ƒçek√°, jak si povede≈° bƒôhem zkou≈°ky.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_24"); //VÍtöinu z nich jsi p‚esvÍdËil tÌm, ûe jsi proöel zkouökou.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_24"); //Vƒôt≈°inu z nich jsi p√¢esvƒôdƒçil t√≠m, ≈æe jsi pro≈°el zkou≈°kou.
 		
 		
 		//ADDON>
 		if (Cord_RangerHelp_TorlofsProbe == TRUE)
 		{
-			AI_Output (self, other, "DIA_Addon_Torlof_RUF_01_00"); //(uöklÌbne se) I kdyû v tom m· trochu prsty Cord.
+			AI_Output (self, other, "DIA_Addon_Torlof_RUF_01_00"); //(u≈°kl√≠bne se) I kdy≈æ v tom m√° trochu prsty Cord.
 			Points_Sld = Points_Sld + 4; 
 		}
 		//ADDON<
@@ -440,32 +440,32 @@ func void DIA_Torlof_RUF_Info ()
 		
 		else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_25"); //I kdyû hodnÍ z nich ‚Ìk·, ûe p‚esvÍdËit farm·‚e, aby zaplatil sv˘j n·jem, bylo na zkouöku moc jednoduchÈ.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_25"); //I kdy≈æ hodnƒô z nich √¢√≠k√°, ≈æe p√¢esvƒôdƒçit farm√°√¢e, aby zaplatil sv≈Øj n√°jem, bylo na zkou≈°ku moc jednoduch√©.
 			Points_Sld = Points_Sld + 3;
 		}
 		else //miliz klatschen
 		{
 			Points_Sld = Points_Sld + 5;
 		};
-		AI_Output (self, other, "DIA_Torlof_RUF_01_26"); //M˘j hlas kaûdop·dnÍ m·ö.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_26"); //M≈Øj hlas ka≈ædop√°dnƒô m√°≈°.
 		Points_Sld = Points_Sld + 1;
 	};
 	
 	// --------------------
 	// ------ Duelle ------
 	// --------------------
-	if (Sld_Duelle_gewonnen >= 3)//ge‰ndert M.F.
+	if (Sld_Duelle_gewonnen >= 3)//ge√§ndert M.F.
 	{
 		Points_Sld = Points_Sld + 1;
 		
-		if (Points_Sld >= 9)//ge‰ndert M.F.
+		if (Points_Sld >= 9)//ge√§ndert M.F.
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_27"); //A vyhr·l jsi nÍkolik Ëestn˝ch souboj˘.
-			AI_Output (self, other, "DIA_Torlof_RUF_01_28"); //To hodnÍ ûoldnÈ‚˘ respektuje.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_27"); //A vyhr√°l jsi nƒôkolik ƒçestn√Ωch souboj≈Ø.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_28"); //To hodnƒô ≈æoldn√©√¢≈Ø respektuje.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_29"); //Kaûdop·dnÍ jsi vyhr·l nÍkolik Ëestn˝ch souboj˘.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_29"); //Ka≈ædop√°dnƒô jsi vyhr√°l nƒôkolik ƒçestn√Ωch souboj≈Ø.
 		};
 	};
 		
@@ -473,21 +473,21 @@ func void DIA_Torlof_RUF_Info ()
 	// ------ ENDABRECHNUNG ------
 	// ---------------------------
 	
-	if (Points_Sld >= 9) //ge‰ndert M.F.					//(Maximal 11 - 13 / insgesamt 6 + 3+1 oder 5+1 + 1 f¸r Duell)
+	if (Points_Sld >= 9) //ge√§ndert M.F.					//(Maximal 11 - 13 / insgesamt 6 + 3+1 oder 5+1 + 1 f√ºr Duell)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_30"); //VÍtöina ûoldnÈ‚˘ stojÌ za tebou - co se n·s t˝Ëe, m˘ûeö u n·s zaËÌt, kdy se ti zlÌbÌ.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_31"); //BÍû za Leem. VysvÍtlÌ ti vöechno pot‚ebnÈ.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_30"); //Vƒôt≈°ina ≈æoldn√©√¢≈Ø stoj√≠ za tebou - co se n√°s t√Ωƒçe, m≈Ø≈æe≈° u n√°s zaƒç√≠t, kdy se ti zl√≠b√≠.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_31"); //Bƒô≈æ za Leem. Vysvƒôtl√≠ ti v≈°echno pot√¢ebn√©.
 		Torlof_GenugStimmen = TRUE;
-		B_LogEntry (TOPIC_BecomeSLD,"Mezi ûoldnÈ‚i uû jsem si vyslouûil dost ˙cty. TeÎ bych mÍl prohodit p·r slov s Leem."); 
+		B_LogEntry (TOPIC_BecomeSLD,"Mezi ≈æoldn√©√¢i u≈æ jsem si vyslou≈æil dost √∫cty. Te√´ bych mƒôl prohodit p√°r slov s Leem."); 
 	}
 	else if (Points_Sld >= 7) 
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_32"); //To je dost, ale po‚·d to nestaËÌ.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_33"); //Budeö se muset s chlapci jeötÍ chvÌli pr·t.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_32"); //To je dost, ale po√¢√°d to nestaƒç√≠.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_33"); //Bude≈° se muset s chlapci je≈°tƒô chv√≠li pr√°t.
 	}
 	else // <7
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_34"); //Nem·ö to ani zdaleka za sebou, chlapËe. Jestli chceö, abychom tÍ p‚ijali mezi sebe, budeö pro to muset udÍlat trochu vÌc.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_34"); //Nem√°≈° to ani zdaleka za sebou, chlapƒçe. Jestli chce≈°, abychom tƒô p√¢ijali mezi sebe, bude≈° pro to muset udƒôlat trochu v√≠c.
 	};
 };
 
@@ -502,7 +502,7 @@ instance DIA_Torlof_Aufgaben (C_INFO)
 	condition	= DIA_Torlof_Aufgaben_Condition;
 	information	= DIA_Torlof_Aufgaben_Info;
 	permanent 	= FALSE;
-	description	= "JakÈ m·m jako ûoldnÈ‚ povinnosti?";
+	description	= "Jak√© m√°m jako ≈æoldn√©√¢ povinnosti?";
 };
 
 func int DIA_Torlof_Aufgaben_Condition ()
@@ -516,23 +516,23 @@ func int DIA_Torlof_Aufgaben_Condition ()
 
 func void DIA_Torlof_Aufgaben_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_Aufgaben_15_00"); //JakÈ m·m jako ûoldnÈ‚ povinnosti?
-	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_01"); //Onar n·s najal ze dvou d˘vod˘: chce, abychom od nÍj drûeli d·l domobranu a udrûovali po‚·dek na jeho farm·ch.
-	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_02"); //To zahrnuje vybÌr·nÌ pachtovnÈho, kdyû nebudou chtÌt drobnÌ farm·‚i zaplatit.
-	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_03"); //Takûe, co to bude?
+	AI_Output (other, self, "DIA_Torlof_Aufgaben_15_00"); //Jak√© m√°m jako ≈æoldn√©√¢ povinnosti?
+	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_01"); //Onar n√°s najal ze dvou d≈Øvod≈Ø: chce, abychom od nƒôj dr≈æeli d√°l domobranu a udr≈æovali po√¢√°dek na jeho farm√°ch.
+	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_02"); //To zahrnuje vyb√≠r√°n√≠ pachtovn√©ho, kdy≈æ nebudou cht√≠t drobn√≠ farm√°√¢i zaplatit.
+	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_03"); //Tak≈æe, co to bude?
 	
 	Info_ClearChoices (DIA_Torlof_Aufgaben);
-	Info_AddChoice (DIA_Torlof_Aufgaben, "Nech mÍ vybrat ten n·jem!", DIA_Torlof_Aufgaben_Pacht);
-	Info_AddChoice (DIA_Torlof_Aufgaben, "Vypo‚·d·m se s domobranou, û·dnÈ obavy!", DIA_Torlof_Aufgaben_Miliz);
+	Info_AddChoice (DIA_Torlof_Aufgaben, "Nech mƒô vybrat ten n√°jem!", DIA_Torlof_Aufgaben_Pacht);
+	Info_AddChoice (DIA_Torlof_Aufgaben, "Vypo√¢√°d√°m se s domobranou, ≈æ√°dn√© obavy!", DIA_Torlof_Aufgaben_Miliz);
 };
 
 func void B_Torlof_HolPachtVonSekob()
 {
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_00"); //Dobr·. Poslouchej. Farm·‚ Sekob uû nÍkolik t˝dn˘ Onarovi nezaplatil n·jem.
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_01"); //Onar po nÍm chce, aby vysolil 50 zlat˝ch. NÍjakÈ ot·zky?
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_00"); //Dobr√°. Poslouchej. Farm√°√¢ Sekob u≈æ nƒôkolik t√Ωdn≈Ø Onarovi nezaplatil n√°jem.
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_01"); //Onar po nƒôm chce, aby vysolil 50 zlat√Ωch. Nƒôjak√© ot√°zky?
 	AI_Output (other, self, "B_Torlof_HolPachtvonSekob_15_02"); //Kde je Sekobova farma?
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_03"); //V severnÌ Ë·sti ˙dolÌ. Kdyû se dÌv·ö odsud, je to napravo u tÈ velkÈ k‚iûovatky.
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_04"); //Kdybys mÍl nÍjakÈ problÈmy, farm·‚i na polÌch ti pom˘ûou najÌt cestu.
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_03"); //V severn√≠ ƒç√°sti √∫dol√≠. Kdy≈æ se d√≠v√°≈° odsud, je to napravo u t√© velk√© k√¢i≈æovatky.
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_04"); //Kdybys mƒôl nƒôjak√© probl√©my, farm√°√¢i na pol√≠ch ti pom≈Ø≈æou naj√≠t cestu.
 	
 	MIS_Torlof_HolPachtVonSekob = LOG_RUNNING;
 	Sekob.flags = 0;
@@ -540,17 +540,17 @@ func void B_Torlof_HolPachtVonSekob()
 	CreateInvItems (sekob,ItMi_Gold,50);
 	Log_CreateTopic (TOPIC_TorlofPacht,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_TorlofPacht,LOG_RUNNING);
-	B_LogEntry (TOPIC_TorlofPacht,"Torlof mÍ poû·dal, abych od sedl·ka Sekoba vyinkasoval n·jemnÈ, kterÈ ËinÌ 50 zla„·k˘.");
+	B_LogEntry (TOPIC_TorlofPacht,"Torlof mƒô po≈æ√°dal, abych od sedl√°ka Sekoba vyinkasoval n√°jemn√©, kter√© ƒçin√≠ 50 zlaƒÉ√°k≈Ø.");
 };
 
 func void B_Torlof_BengarMilizKlatschen()
 {
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_00"); //Farm·‚ Bengar si stÍûoval, ûe mu domobrana z mÍsta v poslednÌ dobÍ leze na nervy.
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_01"); //VyvÌjejÌ na toho farm·‚e n·tlak - nejspÌö chtÍjÌ, aby se otoËil k Onarovi z·dy.
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_02"); //Chci, abys öel na jeho farmu a vyjasnil domobranÍ, ûe tady nemajÌ co pohled·vat! Ot·zky?
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_00"); //Farm√°√¢ Bengar si stƒô≈æoval, ≈æe mu domobrana z mƒôsta v posledn√≠ dobƒô leze na nervy.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_01"); //Vyv√≠jej√≠ na toho farm√°√¢e n√°tlak - nejsp√≠≈° chtƒôj√≠, aby se otoƒçil k Onarovi z√°dy.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_02"); //Chci, abys ≈°el na jeho farmu a vyjasnil domobranƒô, ≈æe tady nemaj√≠ co pohled√°vat! Ot√°zky?
 	AI_Output (other, self, "B_Torlof_BengarMilizKlatschen_15_03"); //Jak najdu Bengarovu farmu?
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_04"); //Na jihoz·padÍ ˙dolÌ je velkÈ schodiötÍ, kterÈ vede na planinu. Tam m· Bengar svou farmu.
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_05"); //Kdyby ses ztratil, zeptej se farm·‚˘ na polÌch, kudy se d·t.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_04"); //Na jihoz√°padƒô √∫dol√≠ je velk√© schodi≈°tƒô, kter√© vede na planinu. Tam m√° Bengar svou farmu.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_05"); //Kdyby ses ztratil, zeptej se farm√°√¢≈Ø na pol√≠ch, kudy se d√°t.
  	
  	MIS_Torlof_BengarMilizKlatschen = LOG_RUNNING;
  	Bengar.flags = 0;
@@ -560,13 +560,13 @@ func void B_Torlof_BengarMilizKlatschen()
 	
 	Log_CreateTopic (TOPIC_TorlofMiliz,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_TorlofMiliz,LOG_RUNNING);
-	B_LogEntry (TOPIC_TorlofMiliz,"Torlof mÍ povÍ‚il, abych na planinÍ ze statku sedl·ka Bengara vyhnal domobranu.");
+	B_LogEntry (TOPIC_TorlofMiliz,"Torlof mƒô povƒô√¢il, abych na planinƒô ze statku sedl√°ka Bengara vyhnal domobranu.");
 };
 
 
 func void DIA_Torlof_Aufgaben_Pacht()
 {
-	AI_Output (other, self, "DIA_Torlof_Aufgaben_Pacht_15_00"); //Nech mÍ vybrat ten n·jem!
+	AI_Output (other, self, "DIA_Torlof_Aufgaben_Pacht_15_00"); //Nech mƒô vybrat ten n√°jem!
 	B_Torlof_HolPachtVonSekob();
 	Torlof_Probe = Probe_Sekob;
 	Info_ClearChoices (DIA_Torlof_Aufgaben);
@@ -574,7 +574,7 @@ func void DIA_Torlof_Aufgaben_Pacht()
 
 func void DIA_Torlof_Aufgaben_Miliz()
 {
-	AI_Output (other, self, "DIA_Torlof_Aufgaben_Miliz_15_00"); //Vypo‚·d·m se s domobranou, û·dnÈ obavy!
+	AI_Output (other, self, "DIA_Torlof_Aufgaben_Miliz_15_00"); //Vypo√¢√°d√°m se s domobranou, ≈æ√°dn√© obavy!
 	B_Torlof_BengarMilizKlatschen();
 	Torlof_Probe = Probe_Bengar;
 	Info_ClearChoices (DIA_Torlof_Aufgaben);
@@ -589,17 +589,17 @@ func void B_Torlof_TheOtherMissionDay()
 {
 	if (Torlof_TheOtherMission_Day < (Wld_GetDay() - 1)) 
 	{
-		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_00"); //Trvalo ti to straönÍ dlouho. Onar nebude mÌt radost.
+		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_00"); //Trvalo ti to stra≈°nƒô dlouho. Onar nebude m√≠t radost.
 		Torlof_TheOtherMission_TooLate = TRUE;
 		
 		if (EnterOW_Kapitel2 == TRUE)
 		{
-			AI_Output (self, other, "DIA_Torlof_Add_01_00"); //A je mu jedno, jestli paladiny nÍco seûere v HornickÈm ˙dolÌ, nebo ne.
+			AI_Output (self, other, "DIA_Torlof_Add_01_00"); //A je mu jedno, jestli paladiny nƒôco se≈æere v Hornick√©m √∫dol√≠, nebo ne.
 		};
 	}
 		else
 	{
-		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_01"); //Dobr· pr·ce! Aû budu mÌt nÍco dalöÌho, d·m ti vÍdÍt.
+		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_01"); //Dobr√° pr√°ce! A≈æ budu m√≠t nƒôco dal≈°√≠ho, d√°m ti vƒôdƒôt.
 	};
 };
 // ------------------------------------------------------------
@@ -610,7 +610,7 @@ instance DIA_Torlof_SekobSuccess (C_INFO)
 	condition	= DIA_Torlof_SekobSuccess_Condition;
 	information	= DIA_Torlof_SekobSuccess_Info;
 	permanent 	= TRUE;
-	description	= "Vybral jsem n·jem od Sekoba.";
+	description	= "Vybral jsem n√°jem od Sekoba.";
 };
 
 func int DIA_Torlof_SekobSuccess_Condition ()
@@ -627,22 +627,22 @@ func int DIA_Torlof_SekobSuccess_Condition ()
 
 func void DIA_Torlof_SekobSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_SekobSuccess_15_00"); //Vybral jsem n·jem od Sekoba.
+	AI_Output (other, self, "DIA_Torlof_SekobSuccess_15_00"); //Vybral jsem n√°jem od Sekoba.
 	if (B_GiveInvItems (other, self, ItMi_Gold, 50))
 	{
-		AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_01"); //A? Zaplatil dobrovolnÍ?
+		AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_01"); //A? Zaplatil dobrovolnƒô?
 		if (Npc_IsDead (Sekob))
 		{
-			AI_Output (other, self, "DIA_Torlof_SekobTot_15_00"); //No, potkal ho smrteln˝ ˙raz...
+			AI_Output (other, self, "DIA_Torlof_SekobTot_15_00"); //No, potkal ho smrteln√Ω √∫raz...
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Torlof_SekobSuccess_15_02"); //Nejd‚Ìv jsem ho musel p‚esvÍdËit.
+			AI_Output (other, self, "DIA_Torlof_SekobSuccess_15_02"); //Nejd√¢√≠v jsem ho musel p√¢esvƒôdƒçit.
 		};
 				
 		if (Torlof_Probe == Probe_Sekob)
 		{
-			AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_03"); //Dobr· pr·ce! Proöel jsi zkouökou. To p‚esvÍdËÌ hodnÍ ûoldnÈ‚˘ o tom, ûe vÌö, co se sluöÌ a pat‚Ì.
+			AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_03"); //Dobr√° pr√°ce! Pro≈°el jsi zkou≈°kou. To p√¢esvƒôdƒç√≠ hodnƒô ≈æoldn√©√¢≈Ø o tom, ≈æe v√≠≈°, co se slu≈°√≠ a pat√¢√≠.
 		}
 		else
 		{
@@ -651,12 +651,12 @@ func void DIA_Torlof_SekobSuccess_Info ()
 
 		MIS_Torlof_HolPachtVonSekob = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Torlof_SekobsKohlebekommen);				
-		B_LogEntry (TOPIC_BecomeSLD,"Splnil jsem ˙kol, kter˝ mi svÍ‚il Torlof."); 
+		B_LogEntry (TOPIC_BecomeSLD,"Splnil jsem √∫kol, kter√Ω mi svƒô√¢il Torlof."); 
 		Torlof_ProbeBestanden = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_04"); //A? Utratil jsi to snad za chlast? P‚ines mi penÌze! A hezky zËerstva!
+		AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_04"); //A? Utratil jsi to snad za chlast? P√¢ines mi pen√≠ze! A hezky zƒçerstva!
 	};
 };
 
@@ -670,7 +670,7 @@ instance DIA_Torlof_BengarSuccess (C_INFO)
 	condition	= DIA_Torlof_BengarSuccess_Condition;
 	information	= DIA_Torlof_BengarSuccess_Info;
 	permanent 	= FALSE;
-	description	= "Postaral jsem se o Bengar˘v problÈm s domobranou.";
+	description	= "Postaral jsem se o Bengar≈Øv probl√©m s domobranou.";
 };
 
 func int DIA_Torlof_BengarSuccess_Condition ()
@@ -685,14 +685,14 @@ func int DIA_Torlof_BengarSuccess_Condition ()
 
 func void DIA_Torlof_BengarSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_00"); //Postaral jsem se o Bengar˘v problÈm s domobranou.
-	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_01"); //Ujistil ses, ûe nebudou zÌtra zase st·t na jeho z·praûÌ?
-	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_02"); //S tÌm by mÍli docela potÌûe...
-	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_03"); //Dobr· pr·ce!
+	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_00"); //Postaral jsem se o Bengar≈Øv probl√©m s domobranou.
+	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_01"); //Ujistil ses, ≈æe nebudou z√≠tra zase st√°t na jeho z√°pra≈æ√≠?
+	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_02"); //S t√≠m by mƒôli docela pot√≠≈æe...
+	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_03"); //Dobr√° pr√°ce!
 		
 	if (Torlof_Probe == Probe_Bengar)
 	{
-		AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_04"); //Proöel jsi zkouökou. Kdyû dok·ûeö zvl·dnout domobranu, vÍtöina tÍ tady bude uzn·vat.
+		AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_04"); //Pro≈°el jsi zkou≈°kou. Kdy≈æ dok√°≈æe≈° zvl√°dnout domobranu, vƒôt≈°ina tƒô tady bude uzn√°vat.
 	}
 	else
 	{
@@ -701,7 +701,7 @@ func void DIA_Torlof_BengarSuccess_Info ()
 	
 	MIS_Torlof_BengarMilizKlatschen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Bengar_MILIZKLATSCHEN);
-	B_LogEntry (TOPIC_BecomeSLD,"Splnil jsem ˙kol, kter˝ mi svÍ‚il Torlof."); 
+	B_LogEntry (TOPIC_BecomeSLD,"Splnil jsem √∫kol, kter√Ω mi svƒô√¢il Torlof."); 
 	Torlof_ProbeBestanden = TRUE;
 };
 
@@ -730,9 +730,9 @@ func int DIA_Torlof_Welcome_Condition ()
 
 func void DIA_Torlof_Welcome_Info ()
 {
-	AI_Output (self, other, "DIA_Torlof_Welcome_01_00"); //VÌtej mezi ûoldnÈ‚i, chlapËe!
-	AI_Output (other, self, "DIA_Torlof_Welcome_15_01"); //DÌky!
-	AI_Output (self, other, "DIA_Torlof_Welcome_01_02"); //Jakmile pro tebe budu mÌt nÍco na pr·ci, d·m ti vÍdÍt.
+	AI_Output (self, other, "DIA_Torlof_Welcome_01_00"); //V√≠tej mezi ≈æoldn√©√¢i, chlapƒçe!
+	AI_Output (other, self, "DIA_Torlof_Welcome_15_01"); //D√≠ky!
+	AI_Output (self, other, "DIA_Torlof_Welcome_01_02"); //Jakmile pro tebe budu m√≠t nƒôco na pr√°ci, d√°m ti vƒôdƒôt.
 };
 
 // ************************************************************
@@ -744,9 +744,9 @@ func void DIA_Torlof_Welcome_Info ()
 	func void B_Torlof_Dragons()
 	{
 		AI_Output (self, other, "DIA_Torlof_Add_01_01"); //Kde jsi byl?
-		AI_Output (other, self, "DIA_Torlof_Add_15_02"); //Byl jsem v HornickÈm ˙dolÌ! Jsou tam draci! Dali paladin˘m pÍknÍ zabrat!
-		AI_Output (self, other, "DIA_Torlof_Add_01_03"); //Fakt? Takûe na vöech tÍch povÌdaËk·ch v·ûnÍ nÍco je!
-		AI_Output (self, other, "DIA_Torlof_Add_01_04"); //Leeho to bude zajÌmat.
+		AI_Output (other, self, "DIA_Torlof_Add_15_02"); //Byl jsem v Hornick√©m √∫dol√≠! Jsou tam draci! Dali paladin≈Øm pƒôknƒô zabrat!
+		AI_Output (self, other, "DIA_Torlof_Add_01_03"); //Fakt? Tak≈æe na v≈°ech tƒôch pov√≠daƒçk√°ch v√°≈ænƒô nƒôco je!
+		AI_Output (self, other, "DIA_Torlof_Add_01_04"); //Leeho to bude zaj√≠mat.
 		Torlof_KnowsDragons = TRUE;
 	};
 
@@ -777,7 +777,7 @@ func void DIA_Torlof_TheOtherMission_Info ()
 		B_Torlof_Dragons();
 	};
 	
-	AI_Output (self, other, "DIA_Torlof_TheOtherMission_01_00"); //Dob‚e ûe jsi tady. M·m pro tebe nÍco na pr·ci.
+	AI_Output (self, other, "DIA_Torlof_TheOtherMission_01_00"); //Dob√¢e ≈æe jsi tady. M√°m pro tebe nƒôco na pr√°ci.
 	AI_Output (other, self, "DIA_Torlof_TheOtherMission_15_01"); //O co jde?
 		
 	if (Torlof_Probe == Probe_Bengar)
@@ -789,7 +789,7 @@ func void DIA_Torlof_TheOtherMission_Info ()
 		B_Torlof_BengarMilizKlatschen();
 	};
 	
-	AI_Output (self, other, "DIA_Torlof_TheOtherMission_01_02"); //A postarej se o to, a„ je to do zÌtra hotovÈ!
+	AI_Output (self, other, "DIA_Torlof_TheOtherMission_01_02"); //A postarej se o to, aƒÉ je to do z√≠tra hotov√©!
 	Torlof_TheOtherMission_Day = Wld_GetDay();
 };
 
@@ -833,7 +833,7 @@ INSTANCE DIA_Torlof_WhatCanYouTeach(C_INFO)
 	condition	= DIA_Torlof_WhatCanYouTeach_Condition;
 	information	= DIA_Torlof_WhatCanYouTeach_Info;
 	permanent	= FALSE;
-	description = "Pomohl bys mi vylepöit moje schopnosti?";
+	description = "Pomohl bys mi vylep≈°it moje schopnosti?";
 };                       
 
 FUNC INT DIA_Torlof_WhatCanYouTeach_Condition()
@@ -843,13 +843,13 @@ FUNC INT DIA_Torlof_WhatCanYouTeach_Condition()
  
 FUNC VOID DIA_Torlof_WhatCanYouTeach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_WhatCanYouTeach_15_00"); //M˘ûeö mi pomoci vylepöit moje schopnosti?
-	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_01"); //Mohl bych ti uk·zat, jak lÈpe vyuûÌt svou sÌlu p‚i boji na blÌzko.
-	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_02"); //Spousta bojovnÌk˘ je straönÍ slab·, protoûe nemajÌ spr·vnou techniku, s jejÌû pomocÌ by spr·vnÍ vyuûÌvali svou sÌlu.
-	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_03"); //To samÈ platÌ u st‚eln˝ch zbranÌ a obratnosti.
+	AI_Output (other,self ,"DIA_Torlof_WhatCanYouTeach_15_00"); //M≈Ø≈æe≈° mi pomoci vylep≈°it moje schopnosti?
+	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_01"); //Mohl bych ti uk√°zat, jak l√©pe vyu≈æ√≠t svou s√≠lu p√¢i boji na bl√≠zko.
+	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_02"); //Spousta bojovn√≠k≈Ø je stra≈°nƒô slab√°, proto≈æe nemaj√≠ spr√°vnou techniku, s jej√≠≈æ pomoc√≠ by spr√°vnƒô vyu≈æ√≠vali svou s√≠lu.
+	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_03"); //To sam√© plat√≠ u st√¢eln√Ωch zbran√≠ a obratnosti.
 
 	Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTeacher,"Torlof mi pom˘ûe vylepöit obratnost a sÌlu.");
+	B_LogEntry (Topic_SoldierTeacher,"Torlof mi pom≈Ø≈æe vylep≈°it obratnost a s√≠lu.");
 };
 
 // *******************************************
@@ -867,7 +867,7 @@ INSTANCE DIA_Torlof_Teach(C_INFO)
 	condition	= DIA_Torlof_Teach_Condition;
 	information	= DIA_Torlof_Teach_Info;
 	permanent	= TRUE;
-	description = "Chci si vylepöit schopnosti!";
+	description = "Chci si vylep≈°it schopnosti!";
 };                       
 
 FUNC INT DIA_Torlof_Teach_Condition()
@@ -880,7 +880,7 @@ FUNC INT DIA_Torlof_Teach_Condition()
  
 FUNC VOID DIA_Torlof_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_Teach_15_00"); //Chci si vylepöit schopnosti!
+	AI_Output (other,self ,"DIA_Torlof_Teach_15_00"); //Chci si vylep≈°it schopnosti!
 	if (other.guild == GIL_SLD) 
 	|| (other.guild == GIL_DJG)
 	|| (other.guild == GIL_NONE)
@@ -897,8 +897,8 @@ FUNC VOID DIA_Torlof_Teach_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Torlof_Teach_01_01"); //¬ekl jsem, ûe bych ti MOHL pomoci, ne ûe ti POMŸéU.
-		AI_Output (self ,other,"DIA_Torlof_Teach_01_02"); //Dokud nejsi jednÌm z n·s, musÌö si najÌt nÍkoho jinÈho, kdo by tÍ uËil!
+		AI_Output (self ,other,"DIA_Torlof_Teach_01_01"); //√Çekl jsem, ≈æe bych ti MOHL pomoci, ne ≈æe ti POM≈Æ≈ΩU.
+		AI_Output (self ,other,"DIA_Torlof_Teach_01_02"); //Dokud nejsi jedn√≠m z n√°s, mus√≠≈° si naj√≠t nƒôkoho jin√©ho, kdo by tƒô uƒçil!
 	};
 };
 
@@ -907,7 +907,7 @@ FUNC VOID DIA_Torlof_Teach_Back ()
 	if (Torlof_Merke_STR < other.attribute[ATR_STRENGTH])
 	|| (Torlof_Merke_DEX < other.attribute[ATR_DEXTERITY])
 	{
-		AI_Output (self, other, "DIA_Torlof_Teach_Back_01_00"); //Dobr·! NynÌ dok·ûeö pouûÌvat svoje schopnosti lÈpe!
+		AI_Output (self, other, "DIA_Torlof_Teach_Back_01_00"); //Dobr√°! Nyn√≠ dok√°≈æe≈° pou≈æ√≠vat svoje schopnosti l√©pe!
 	};
 
 	Info_ClearChoices (DIA_Torlof_Teach);
@@ -1005,7 +1005,7 @@ instance DIA_Torlof_DEMENTOREN		(C_INFO)
 	condition	 = 	DIA_Torlof_DEMENTOREN_Condition;
 	information	 = 	DIA_Torlof_DEMENTOREN_Info;
 
-	description	 = 	"Nem·ö pro mÍ nÍco na pr·ci?";
+	description	 = 	"Nem√°≈° pro mƒô nƒôco na pr√°ci?";
 };
 
 func int DIA_Torlof_DEMENTOREN_Condition ()
@@ -1018,17 +1018,17 @@ func int DIA_Torlof_DEMENTOREN_Condition ()
 
 func void DIA_Torlof_DEMENTOREN_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_DEMENTOREN_15_00"); //Nem·ö pro mÍ nÍco na pr·ci?
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_01"); //VidÍls ty chlapÌky s Ëern˝mi k·pÍmi, co se potulujÌ po okolÌ? ¬eknu ti, bÍh· mi z nich mr·z po z·dech.
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_02"); //Kdyû jsem byl na mo‚i, vidÍl jsem p·r v·ûnÍ divn˝ch vÍcÌ, ale tihle lidi mÍ v·ûnÍ dÍsÌ.
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_03"); //äli smÍrem k t·boru bandit˘, co je v hor·ch na jiûnÌm konci ˙dolÌ.
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_04"); //Moûn· by ses tam mÍl vydat, zjistit, co jsou zaË, a vypo‚·dat se s nimi!
+	AI_Output (other, self, "DIA_Torlof_DEMENTOREN_15_00"); //Nem√°≈° pro mƒô nƒôco na pr√°ci?
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_01"); //Vidƒôls ty chlap√≠ky s ƒçern√Ωmi k√°pƒômi, co se potuluj√≠ po okol√≠? √Çeknu ti, bƒôh√° mi z nich mr√°z po z√°dech.
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_02"); //Kdy≈æ jsem byl na mo√¢i, vidƒôl jsem p√°r v√°≈ænƒô divn√Ωch vƒôc√≠, ale tihle lidi mƒô v√°≈ænƒô dƒôs√≠.
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_03"); //≈†li smƒôrem k t√°boru bandit≈Ø, co je v hor√°ch na ji≈æn√≠m konci √∫dol√≠.
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_04"); //Mo≈æn√° by ses tam mƒôl vydat, zjistit, co jsou zaƒç, a vypo√¢√°dat se s nimi!
 	
 	Wld_InsertNpc		(CastlemineDMT, "FP_STAND_DEMENTOR_KDF_12");
 	
 	Log_CreateTopic (TOPIC_Torlof_Dmt, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Torlof_Dmt, LOG_RUNNING);
-	B_LogEntry (TOPIC_Torlof_Dmt,"P·r tÍch zakuklenc˘ se nejspÌö bude skr˝vat v t·bo‚e bandit˘ v hor·ch jiûnÍ od ˙dolÌ. Torlofovi po‚·dnÍ pijÌ krev - m·m pro nÍj tenhle problÈm vy‚eöit."); 
+	B_LogEntry (TOPIC_Torlof_Dmt,"P√°r tƒôch zakuklenc≈Ø se nejsp√≠≈° bude skr√Ωvat v t√°bo√¢e bandit≈Ø v hor√°ch ji≈ænƒô od √∫dol√≠. Torlofovi po√¢√°dnƒô pij√≠ krev - m√°m pro nƒôj tenhle probl√©m vy√¢e≈°it."); 
 
 	MIS_Torlof_Dmt = LOG_RUNNING;
 };
@@ -1044,7 +1044,7 @@ instance DIA_Torlof_DmtSuccess	(C_INFO)
 	condition	 = 	DIA_Torlof_DmtSuccess_Condition;
 	information	 = 	DIA_Torlof_DmtSuccess_Info;
 
-	description	 = 	"Ti Ëernok·pnÌci z hor uû nejsou mezi n·mi.";
+	description	 = 	"Ti ƒçernok√°pn√≠ci z hor u≈æ nejsou mezi n√°mi.";
 };
 
 func int DIA_Torlof_DmtSuccess_Condition ()
@@ -1058,9 +1058,9 @@ func int DIA_Torlof_DmtSuccess_Condition ()
 
 func void DIA_Torlof_DmtSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_DmtSuccess_15_00"); //Ti Ëernok·pnÌci z hor uû nejsou mezi n·mi.
-	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_01"); //Dok·zal jsi je vy‚Ìdit? Frajer!
-	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_02"); //Ani za m·k jsem tÍm chlapÌk˘m nevÍ‚il. Jenom by dÍlali trable.
+	AI_Output (other, self, "DIA_Torlof_DmtSuccess_15_00"); //Ti ƒçernok√°pn√≠ci z hor u≈æ nejsou mezi n√°mi.
+	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_01"); //Dok√°zal jsi je vy√¢√≠dit? Frajer!
+	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_02"); //Ani za m√°k jsem tƒôm chlap√≠k≈Øm nevƒô√¢il. Jenom by dƒôlali trable.
 	
 	MIS_Torlof_Dmt = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Torlof_DMT);
@@ -1113,7 +1113,7 @@ instance DIA_Torlof_WOISTSYLVIO		(C_INFO)
 	condition	 = 	DIA_Torlof_WOISTSYLVIO_Condition;
 	information	 = 	DIA_Torlof_WOISTSYLVIO_Info;
 
-	description	 = 	"NÍkte‚Ì ûoldnÈ‚i odeöli?";
+	description	 = 	"Nƒôkte√¢√≠ ≈æoldn√©√¢i ode≈°li?";
 };
 
 func int DIA_Torlof_WOISTSYLVIO_Condition ()
@@ -1126,11 +1126,11 @@ func int DIA_Torlof_WOISTSYLVIO_Condition ()
 
 func void DIA_Torlof_WOISTSYLVIO_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_WOISTSYLVIO_15_00"); //NÍkte‚Ì ûoldnÈ‚i odeöli?
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_01"); //Sylvio sebral p·r chlapc˘ a zmizel s nimi na druhou stranu pr˘smyku.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_02"); //PovÌd· se, ûe se tam objevili draci. Kdyû se to doslechl, neölo ho zastavit.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_03"); //Kdo vÌ? Za draËÌ trofej by dostal na trhu hromadu penÍz.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_04"); //To pro mÍ nenÌ. Jsem n·mo‚nÌk. Pat‚Ìm na mo‚e, a ne do nÍjakÈho smradlavÈho draËÌho doupÍte.
+	AI_Output			(other, self, "DIA_Torlof_WOISTSYLVIO_15_00"); //Nƒôkte√¢√≠ ≈æoldn√©√¢i ode≈°li?
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_01"); //Sylvio sebral p√°r chlapc≈Ø a zmizel s nimi na druhou stranu pr≈Øsmyku.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_02"); //Pov√≠d√° se, ≈æe se tam objevili draci. Kdy≈æ se to doslechl, ne≈°lo ho zastavit.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_03"); //Kdo v√≠? Za draƒç√≠ trofej by dostal na trhu hromadu penƒôz.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_04"); //To pro mƒô nen√≠. Jsem n√°mo√¢n√≠k. Pat√¢√≠m na mo√¢e, a ne do nƒôjak√©ho smradlav√©ho draƒç√≠ho doupƒôte.
 
 };
 
@@ -1178,7 +1178,7 @@ instance DIA_Torlof_BEMYCAPTAIN		(C_INFO)
 	condition	 = 	DIA_Torlof_BEMYCAPTAIN_Condition;
 	information	 = 	DIA_Torlof_BEMYCAPTAIN_Info;
 
-	description	 = 	"Ty jsi n·mo‚nÌk?";
+	description	 = 	"Ty jsi n√°mo√¢n√≠k?";
 };
 
 func int DIA_Torlof_BEMYCAPTAIN_Condition ()
@@ -1192,18 +1192,18 @@ func int DIA_Torlof_BEMYCAPTAIN_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_00"); //Ty jsi n·mo‚nÌk?
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_01"); //KoneËnÍ tÍ to trklo? Jo, ksakru, jsem n·mo‚nÌk. ProË se pt·ö?
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_02"); //Hodily by se mi tvoje schopnosti. Pot‚ebuji se dostat na jeden ostrov.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_03"); //(zasmÍje se) Na ostrov? Vûdy„ ani nem·ö loÎ, natoû pos·dku, kter· by ji ‚Ìdila.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_04"); //Ne, chlapËe. Jestli chceö vyuûÌt m˝ch sluûeb jako kapit·na a uËitele sÌly, musÌö mi nejd‚Ìv dok·zat, ûe vÌö, o Ëem mluvÌö.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_05"); //KromÍ toho m·m uû tak dost sv˝ch vlastnÌch starostÌ. PaladinovÈ se nest·hli z mÍsta, jak jsme oËek·vali.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_06"); //Muselo by se st·t nÍco opravdu v·ûnÈho, aby vyklidili pole.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_07"); //BÍû do hradu v HornickÈm ˙dolÌ. Ukradni str·ûÌm klÌË od hlavnÌ br·ny a otev‚i ji. Sk‚eti se uû postarajÌ o zbytek!
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_00"); //Ty jsi n√°mo√¢n√≠k?
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_01"); //Koneƒçnƒô tƒô to trklo? Jo, ksakru, jsem n√°mo√¢n√≠k. Proƒç se pt√°≈°?
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_02"); //Hodily by se mi tvoje schopnosti. Pot√¢ebuji se dostat na jeden ostrov.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_03"); //(zasmƒôje se) Na ostrov? V≈ædyƒÉ ani nem√°≈° lo√´, nato≈æ pos√°dku, kter√° by ji √¢√≠dila.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_04"); //Ne, chlapƒçe. Jestli chce≈° vyu≈æ√≠t m√Ωch slu≈æeb jako kapit√°na a uƒçitele s√≠ly, mus√≠≈° mi nejd√¢√≠v dok√°zat, ≈æe v√≠≈°, o ƒçem mluv√≠≈°.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_05"); //Kromƒô toho m√°m u≈æ tak dost sv√Ωch vlastn√≠ch starost√≠. Paladinov√© se nest√°hli z mƒôsta, jak jsme oƒçek√°vali.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_06"); //Muselo by se st√°t nƒôco opravdu v√°≈æn√©ho, aby vyklidili pole.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_07"); //Bƒô≈æ do hradu v Hornick√©m √∫dol√≠. Ukradni str√°≈æ√≠m kl√≠ƒç od hlavn√≠ br√°ny a otev√¢i ji. Sk√¢eti se u≈æ postaraj√≠ o zbytek!
 
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);      
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);    
-	B_LogEntry (TOPIC_Captain,"JeötÍ neû Torlof p‚ijme funkci kapit·na, musÌm p‚imÍt paladiny, aby opustili mÍsto. Kdyû mu pomohu, spoleËnÍ na hradÍ v HornickÈm ˙dolÌ nastraûÌme malou lest. MusÌm str·ûci ukr·st klÌË od hlavnÌ br·ny a otev‚Ìt ji, aby do hradu mohli proniknout sk‚eti. Torlof douf·, ûe tahle pohroma p‚imÍje paladiny, aby odeöli z mÍsta a vydali se na pomoc sv˝m kamar·d˘m.");
+	B_LogEntry (TOPIC_Captain,"Je≈°tƒô ne≈æ Torlof p√¢ijme funkci kapit√°na, mus√≠m p√¢imƒôt paladiny, aby opustili mƒôsto. Kdy≈æ mu pomohu, spoleƒçnƒô na hradƒô v Hornick√©m √∫dol√≠ nastra≈æ√≠me malou lest. Mus√≠m str√°≈æci ukr√°st kl√≠ƒç od hlavn√≠ br√°ny a otev√¢√≠t ji, aby do hradu mohli proniknout sk√¢eti. Torlof douf√°, ≈æe tahle pohroma p√¢imƒôje paladiny, aby ode≈°li z mƒôsta a vydali se na pomoc sv√Ωm kamar√°d≈Øm.");
 };                                                                                                                                                                                                                                                                                                                                                                                                                   
 ///////////////////////////////////////////////////////////////////////                                                                                                                                                                                                                                                                                                                                              
 //	Info BeMyCaptain2s
@@ -1215,7 +1215,7 @@ instance DIA_Torlof_BEMYCAPTAIN2		(C_INFO)
 	condition	 = 	DIA_Torlof_BEMYCAPTAIN2_Condition;
 	information	 = 	DIA_Torlof_BEMYCAPTAIN2_Info;
 
-	description	 = 	"Br·na od hradu v HornickÈm ˙dolÌ je otev‚ena...";
+	description	 = 	"Br√°na od hradu v Hornick√©m √∫dol√≠ je otev√¢ena...";
 };
 
 func int DIA_Torlof_BEMYCAPTAIN2_Condition ()
@@ -1229,10 +1229,10 @@ func int DIA_Torlof_BEMYCAPTAIN2_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN2_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_00"); //Br·na do hradu v HornickÈm ˙dolÌ je otev‚en· a zaseknut·. Sk‚et˘m uû nic nebr·nÌ v tom, aby vzali hrad ˙tokem.
- 	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_01"); //PaladinovÈ utrpÍli v bitvÍ se sk‚ety v·ûnÈ ztr·ty.
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_02"); //¬ekl bych, ûe uû nebude trvat dlouho, neû se paladinovÈ odsud z mÍsta vydajÌ do HornickÈho ˙dolÌ, aby dostali svÈ kamar·dy pryË z hradu.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN2_01_03"); //To jsou p‚ÌjemnÈ zpr·vy. Takûe uû nic nestojÌ v cestÍ tomu, abych utekl z tohohle prokletÈho kraje.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_00"); //Br√°na do hradu v Hornick√©m √∫dol√≠ je otev√¢en√° a zaseknut√°. Sk√¢et≈Øm u≈æ nic nebr√°n√≠ v tom, aby vzali hrad √∫tokem.
+ 	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_01"); //Paladinov√© utrpƒôli v bitvƒô se sk√¢ety v√°≈æn√© ztr√°ty.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_02"); //√Çekl bych, ≈æe u≈æ nebude trvat dlouho, ne≈æ se paladinov√© odsud z mƒôsta vydaj√≠ do Hornick√©ho √∫dol√≠, aby dostali sv√© kamar√°dy pryƒç z hradu.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN2_01_03"); //To jsou p√¢√≠jemn√© zpr√°vy. Tak≈æe u≈æ nic nestoj√≠ v cestƒô tomu, abych utekl z tohohle proklet√©ho kraje.
 	B_GivePlayerXP (XP_Ambient);
 	
 };
@@ -1247,7 +1247,7 @@ instance DIA_Torlof_BEMYCAPTAIN3		(C_INFO)
 	information	 = 	DIA_Torlof_BEMYCAPTAIN3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"TeÎ uû mi pom˘ûeö dostat se na ten ostrov?";
+	description	 = 	"Te√´ u≈æ mi pom≈Ø≈æe≈° dostat se na ten ostrov?";
 };
 var int Torlof_PaidToBeCaptain;
 func int DIA_Torlof_BEMYCAPTAIN3_Condition ()
@@ -1262,37 +1262,37 @@ func int DIA_Torlof_BEMYCAPTAIN3_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN3_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_15_00"); //TeÎ uû mi pom˘ûeö dostat se na ten ostrov?
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_01"); //No jasnÍ. ChtÍl jsi jet na nÍjak˝ ostrov. Hmm. D·m ti jeden n·vrh.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_02"); //ZaplatÌö mi 2500 zlat˝ch a j· se ujmu velenÌ tvÈ lodi.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_03"); //NavÌc tÍ budu trÈnovat v sÌle a obratnosti, kdykoliv to jen budeö chtÌt.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_15_00"); //Te√´ u≈æ mi pom≈Ø≈æe≈° dostat se na ten ostrov?
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_01"); //No jasnƒô. Chtƒôl jsi jet na nƒôjak√Ω ostrov. Hmm. D√°m ti jeden n√°vrh.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_02"); //Zaplat√≠≈° mi 2500 zlat√Ωch a j√° se ujmu velen√≠ tv√© lodi.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_03"); //Nav√≠c tƒô budu tr√©novat v s√≠le a obratnosti, kdykoliv to jen bude≈° cht√≠t.
 
 	Info_ClearChoices	(DIA_Torlof_BEMYCAPTAIN3);
-	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "To je straön· spousta penÍz.", DIA_Torlof_BEMYCAPTAIN3_zuViel );
-	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "Dobr·. Tady m·ö svÈ penÌze.", DIA_Torlof_BEMYCAPTAIN3_ok );
+	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "To je stra≈°n√° spousta penƒôz.", DIA_Torlof_BEMYCAPTAIN3_zuViel );
+	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "Dobr√°. Tady m√°≈° sv√© pen√≠ze.", DIA_Torlof_BEMYCAPTAIN3_ok );
 
 };
 func void DIA_Torlof_BEMYCAPTAIN3_zuViel ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_zuViel_15_00"); //To je straön· spousta penÍz.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_01"); //To jo. Dobr· pomoc je drah·. Nem·ö na v˝bÍr. Tady v okolÌ nenajdeö nikoho dalöÌho, kdo by velel tvÈ lodi.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_02"); //Tak zapla„ a nedÍlej vlny.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_zuViel_15_00"); //To je stra≈°n√° spousta penƒôz.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_01"); //To jo. Dobr√° pomoc je drah√°. Nem√°≈° na v√Ωbƒôr. Tady v okol√≠ nenajde≈° nikoho dal≈°√≠ho, kdo by velel tv√© lodi.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_02"); //Tak zaplaƒÉ a nedƒôlej vlny.
 	Info_ClearChoices	(DIA_Torlof_BEMYCAPTAIN3);
-	B_LogEntry (TOPIC_Captain,"Torlof je nynÌ ochoten ‚Ìdit loÎ. Bohuûel za to ale poûaduje 2500 zla„·k˘.");     
+	B_LogEntry (TOPIC_Captain,"Torlof je nyn√≠ ochoten √¢√≠dit lo√´. Bohu≈æel za to ale po≈æaduje 2500 zlaƒÉ√°k≈Ø.");     
 };
 
 func void DIA_Torlof_BEMYCAPTAIN3_ok ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_ok_15_00"); //Dobr·. Tady m·ö svÈ penÌze.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_ok_15_00"); //Dobr√°. Tady m√°≈° sv√© pen√≠ze.
 	if (B_GiveInvItems (other, self, ItMi_Gold,	2500))
 	{
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_01"); //N·dhera. TeÎ mi jen p‚esnÍ ‚ekni, co po mnÍ budeö chtÌt.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_01"); //N√°dhera. Te√´ mi jen p√¢esnƒô √¢ekni, co po mnƒô bude≈° cht√≠t.
 		Torlof_PaidToBeCaptain = TRUE;
-		B_LogEntry (TOPIC_Captain,"Potom, co jsem mu p‚edal 2500 zla„·k˘, se Torlof koneËnÍ uvolil dopravit mÍ k cÌli.");     
+		B_LogEntry (TOPIC_Captain,"Potom, co jsem mu p√¢edal 2500 zlaƒÉ√°k≈Ø, se Torlof koneƒçnƒô uvolil dopravit mƒô k c√≠li.");     
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_02"); //SnaûÌö se mÍ oblbnout p·r mincemi? Nejd‚Ìv p‚ines penÌze. Pak uvidÌme.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_02"); //Sna≈æ√≠≈° se mƒô oblbnout p√°r mincemi? Nejd√¢√≠v p√¢ines pen√≠ze. Pak uvid√≠me.
 	};
 	Info_ClearChoices	(DIA_Torlof_BEMYCAPTAIN3);
 };
@@ -1309,7 +1309,7 @@ instance DIA_Torlof_BEMYCAPTAIN4		(C_INFO)
 	information	 = 	DIA_Torlof_BEMYCAPTAIN4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"BuÎ m˝m kapit·nem.";
+	description	 = 	"Bu√´ m√Ωm kapit√°nem.";
 };
 
 func int DIA_Torlof_BEMYCAPTAIN4_Condition ()
@@ -1323,11 +1323,11 @@ func int DIA_Torlof_BEMYCAPTAIN4_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN4_Info ()
 {
-		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_00"); //BuÎ m˝m kapit·nem.
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_01"); //Dobr·. Seûe‡ mi loÎ a dostateËnÍ silnou pos·dku a j· tÍ dostanu na ten tv˘j mizern˝ ostrov.
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_02"); //M·ö n·mo‚nÌ mapy? Bez nich se moc daleko nedostaneme.
-		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_03"); //O to se postar·m. Setk·me se v p‚Ìstavu.
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_04"); //Jsem v·ûnÍ zvÍdav˝, jak to chceö udÍlat.
+		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_00"); //Bu√´ m√Ωm kapit√°nem.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_01"); //Dobr√°. Se≈æe≈ï mi lo√´ a dostateƒçnƒô silnou pos√°dku a j√° tƒô dostanu na ten tv≈Øj mizern√Ω ostrov.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_02"); //M√°≈° n√°mo√¢n√≠ mapy? Bez nich se moc daleko nedostaneme.
+		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_03"); //O to se postar√°m. Setk√°me se v p√¢√≠stavu.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_04"); //Jsem v√°≈ænƒô zvƒôdav√Ω, jak to chce≈° udƒôlat.
 	
 		AI_StopProcessInfos (self);
 		SCGotCaptain = TRUE;
@@ -1350,7 +1350,7 @@ instance DIA_Torlof_LOSFAHREN		(C_INFO)
 	information	 = 	DIA_Torlof_LOSFAHREN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Vzh˘ru na ostrov!";
+	description	 = 	"Vzh≈Øru na ostrov!";
 };
 
 func int DIA_Torlof_LOSFAHREN_Condition ()
@@ -1364,21 +1364,21 @@ func int DIA_Torlof_LOSFAHREN_Condition ()
 
 func void DIA_Torlof_LOSFAHREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_LOSFAHREN_15_00"); //Vzh˘ru na ostrov!
+	AI_Output			(other, self, "DIA_Torlof_LOSFAHREN_15_00"); //Vzh≈Øru na ostrov!
 
 	if ((B_CaptainConditions (self)) == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_01"); //Dobr·. Dej mi mapy a m˘ûeme vyplout.
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_02"); //(zavol·) Vöichni na palubu.
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_03"); //Ujisti se, ûe m·ö opravdu vöechno, co bys mohl pot‚ebovat. Vracet se nem˘ûeme.
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_04"); //Jestli si jsi jist˝, bÍû se nat·hnout do kapit·nskÈ kajuty. Za chvÌli vyrazÌme na cestu.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_01"); //Dobr√°. Dej mi mapy a m≈Ø≈æeme vyplout.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_02"); //(zavol√°) V≈°ichni na palubu.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_03"); //Ujisti se, ≈æe m√°≈° opravdu v≈°echno, co bys mohl pot√¢ebovat. Vracet se nem≈Ø≈æeme.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_04"); //Jestli si jsi jist√Ω, bƒô≈æ se nat√°hnout do kapit√°nsk√© kajuty. Za chv√≠li vyraz√≠me na cestu.
 	AI_StopProcessInfos (self);
 	B_CaptainCallsAllOnBoard (self);
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_05"); //é·dn· loÎ, û·dn· pos·dka, û·dn· mapa, û·dn˝ v˝let, p‚Ìteli.
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_06"); //Chci vidÍt aspo‡ pÍt chlap˘ ochotn˝ch a schopn˝ch plavby.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_05"); //≈Ω√°dn√° lo√´, ≈æ√°dn√° pos√°dka, ≈æ√°dn√° mapa, ≈æ√°dn√Ω v√Ωlet, p√¢√≠teli.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_06"); //Chci vidƒôt aspo≈ï pƒôt chlap≈Ø ochotn√Ωch a schopn√Ωch plavby.
 	AI_StopProcessInfos (self);
 	};
 };
@@ -1394,7 +1394,7 @@ instance DIA_Torlof_PERM5_NOTCAPTAIN		(C_INFO)
 	information	 = 	DIA_Torlof_PERM5_NOTCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Rozhodl jsem se pro jinÈho kapit·na.";
+	description	 = 	"Rozhodl jsem se pro jin√©ho kapit√°na.";
 };
 
 func int DIA_Torlof_PERM5_NOTCAPTAIN_Condition ()
@@ -1409,8 +1409,8 @@ func int DIA_Torlof_PERM5_NOTCAPTAIN_Condition ()
 
 func void DIA_Torlof_PERM5_NOTCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_PERM5_NOTCAPTAIN_15_00"); //Rozhodl jsem se pro jinÈho kapit·na. M˘ûeö mi hned vr·tit mÈ penÌze.
-	AI_Output			(self, other, "DIA_Torlof_PERM5_NOTCAPTAIN_01_01"); //To by neölo. Nic takovÈho. Kdyû mi nejd‚Ìv zaplatÌö a pak nakonec moje sluûby odmÌt·ö, je to tv˘j problÈm.
+	AI_Output			(other, self, "DIA_Torlof_PERM5_NOTCAPTAIN_15_00"); //Rozhodl jsem se pro jin√©ho kapit√°na. M≈Ø≈æe≈° mi hned vr√°tit m√© pen√≠ze.
+	AI_Output			(self, other, "DIA_Torlof_PERM5_NOTCAPTAIN_01_01"); //To by ne≈°lo. Nic takov√©ho. Kdy≈æ mi nejd√¢√≠v zaplat√≠≈° a pak nakonec moje slu≈æby odm√≠t√°≈°, je to tv≈Øj probl√©m.
 	AI_StopProcessInfos (self);
 };
 

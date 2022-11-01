@@ -28,7 +28,7 @@ INSTANCE  ItMi_InnosEye_MIS (C_ITEM)
 	on_equip			=	Equip_InnosEye;
 	on_unequip			=	UnEquip_InnosEye;
 
-	TEXT	[0]			=	"Oko pulzuje tajemnou energií.";
+	TEXT	[0]			=	"Oko pulzuje tajemnou energiÃ­.";
 
 	INV_ZBIAS				= INVCAM_ENTF_AMULETTE_STANDARD;
 	
@@ -76,7 +76,7 @@ INSTANCE ItMi_InnosEye_Discharged_Mis (C_Item)
 
 	description			= 	name;
 	on_equip			=	Equip_ItMi_InnosEye_Discharged_Mis;
-	TEXT	[0]			=	"Oko je ztemnêlé - vùbec nezáâí.";
+	TEXT	[0]			=	"Oko je ztemnÄ™lÃ© - vÅ¯bec nezÃ¡Ã¢Ã­.";
 	
 	INV_ZBIAS				= INVCAM_ENTF_AMULETTE_STANDARD;
 	
@@ -114,12 +114,12 @@ func void Equip_ItMi_InnosEye_Broken_Mis()
 	Snd_Play 	("MFX_FEAR_CAST" );
 };
 //**********************************************************************************
-//	Ermächtigungsschreiben für SC für Pyrokar, das Auge Innos rauszurücken.
+//	ErmÃ¤chtigungsschreiben fÃ¼r SC fÃ¼r Pyrokar, das Auge Innos rauszurÃ¼cken.
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_PermissionToWearInnosEye_MIS		(C_Item)
 {
-	name 				=	"Plná moc";
+	name 				=	"PlnÃ¡ moc";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -130,7 +130,7 @@ INSTANCE ItWr_PermissionToWearInnosEye_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_PermissionToWearInnosEye;
 	scemeName			=	"MAP";
-	description			= "Plná moc pro Pyrokara";
+	description			= "PlnÃ¡ moc pro Pyrokara";
 };
 func void Use_PermissionToWearInnosEye ()
 {   
@@ -145,12 +145,12 @@ func void Use_PermissionToWearInnosEye ()
 						Doc_PrintLine	(nDocID,  0, ""												);
 						Doc_PrintLine	(nDocID,  0, ""												);
 						Doc_PrintLine	(nDocID,  0, ""												);
-						Doc_PrintLines	(nDocID,  0, "Nositel tohoto listu mùe volnê vstoupit do posvátnıch síní kláštera.");
-						Doc_PrintLines	(nDocID,  0, "Nechã je jeho pâáním ohlednê oka Innosova okamitê vyhovêno.");
-						Doc_PrintLines	(nDocID,  0, "Tyto rozkazy udílím na základê svého postu vládce celého ostrova a králova zástupce, stejnê jako smlouvou od Innosova chrámu ze 2. roku ohnê.");
-						Doc_PrintLines	(nDocID,  0, "V této vêci ji neuèiním ádná další prohlášení a oèekávám, e mé rozkazy budete respektovat.");
+						Doc_PrintLines	(nDocID,  0, "Nositel tohoto listu mÅ¯Å¾e volnÄ™ vstoupit do posvÃ¡tnÃ½ch sÃ­nÃ­ klÃ¡Å¡tera.");
+						Doc_PrintLines	(nDocID,  0, "NechÄƒ je jeho pÃ¢Ã¡nÃ­m ohlednÄ™ oka Innosova okamÅ¾itÄ™ vyhovÄ™no.");
+						Doc_PrintLines	(nDocID,  0, "Tyto rozkazy udÃ­lÃ­m na zÃ¡kladÄ™ svÃ©ho postu vlÃ¡dce celÃ©ho ostrova a krÃ¡lova zÃ¡stupce, stejnÄ™ jako smlouvou od Innosova chrÃ¡mu ze 2. roku ohnÄ™.");
+						Doc_PrintLines	(nDocID,  0, "V tÃ©to vÄ™ci jiÅ¾ neuÄinÃ­m Å¾Ã¡dnÃ¡ dalÅ¡Ã­ prohlÃ¡Å¡enÃ­ a oÄekÃ¡vÃ¡m, Å¾e mÃ© rozkazy budete respektovat.");
 						Doc_PrintLine	(nDocID,  0, ""												);
-						Doc_PrintLine	(nDocID,  0, "Nechã Innos poehná králi!"						);
+						Doc_PrintLine	(nDocID,  0, "NechÄƒ Innos poÅ¾ehnÃ¡ krÃ¡li!"						);
 						Doc_PrintLine	(nDocID,  0, ""												);
 						Doc_PrintLine	(nDocID,  0, "        Lord Hagen"								);
 						Doc_Show		(nDocID );				
@@ -163,7 +163,7 @@ func void Use_PermissionToWearInnosEye ()
 
 INSTANCE ItWr_XardasBookForPyrokar_Mis (C_ITEM) 
 {	
-	name 					=	"Irdorathské sínê";
+	name 					=	"IrdorathskÃ© sÃ­nÄ™";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -189,12 +189,12 @@ FUNC VOID Use_XardasBookForPyrokar()
 
 
 //**********************************************************************************
-//	ItKe_CHEST_SEKOB_XARDASBOOK_MIS 		Xardas Schlüssel für die Truhe auf Sekobs Hof
+//	ItKe_CHEST_SEKOB_XARDASBOOK_MIS 		Xardas SchlÃ¼ssel fÃ¼r die Truhe auf Sekobs Hof
 //**********************************************************************************
 
 INSTANCE ItKe_CHEST_SEKOB_XARDASBOOK_MIS (C_Item)
 {
-	name 				=	"Xardasùv klíè" ;
+	name 				=	"XardasÅ¯v klÃ­Ä" ;
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -205,7 +205,7 @@ INSTANCE ItKe_CHEST_SEKOB_XARDASBOOK_MIS (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[0]				=   "od bedny na Sekobovê statku.";
+	TEXT[0]				=   "od bedny na SekobovÄ™ statku.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -215,7 +215,7 @@ INSTANCE ItKe_CHEST_SEKOB_XARDASBOOK_MIS (C_Item)
 
 INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM) 
 {	
-	name 					=	"Deník";
+	name 					=	"DenÃ­k";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -226,8 +226,8 @@ INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Deník";
-	TEXT	[0]				=	"Corneliùv zápisník.";
+	description				= 	"DenÃ­k";
+	TEXT	[0]				=	"CorneliÅ¯v zÃ¡pisnÃ­k.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseCorneliusTagebuch;
@@ -236,7 +236,7 @@ INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM)
 	FUNC VOID UseCorneliusTagebuch()
 	{   
 		Cornelius_IsLiar = TRUE;
-		B_LogEntry (TOPIC_RESCUEBENNET,"Tento zápisník dokazuje, e Bennet je nevinnı.");	
+		B_LogEntry (TOPIC_RESCUEBENNET,"Tento zÃ¡pisnÃ­k dokazuje, Å¾e Bennet je nevinnÃ½.");	
 		
 		var int nDocID;
 		
@@ -249,17 +249,17 @@ INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM)
 					Doc_SetFont 	( nDocID,  -1, FONT_Book	   			); 	// -1 -> all pages 
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels					
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Jestli bude Larius takhle pokraèovat, budu si muset najít jinou pozici.");
+					Doc_PrintLines	( nDocID,  0, "Jestli bude Larius takhle pokraÄovat, budu si muset najÃ­t jinou pozici.");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Vèera veèer se mi stala prapodivná vêc. Pâišel ke mnê jeden z têch èernıch zakuklencù, o kterıch jsme toho v poslední dobê tolik slyšeli. Nebyl jsem moc nervózní, i kdy z tajemného návštêvníka pâímo èišelo nêjaké zlo a jeho moc byla skoro hmatatelná. Mluvil však tak klidnım a pâíjemnım hlasem, e jsem mêl pocit, e mu prostê musím vêâit.");
+					Doc_PrintLines	( nDocID,  0, "VÄera veÄer se mi stala prapodivnÃ¡ vÄ™c. PÃ¢iÅ¡el ke mnÄ™ jeden z tÄ™ch ÄernÃ½ch zakuklencÅ¯, o kterÃ½ch jsme toho v poslednÃ­ dobÄ™ tolik slyÅ¡eli. Nebyl jsem moc nervÃ³znÃ­, i kdyÅ¾ z tajemnÃ©ho nÃ¡vÅ¡tÄ™vnÃ­ka pÃ¢Ã­mo ÄiÅ¡elo nÄ™jakÃ© zlo a jeho moc byla skoro hmatatelnÃ¡. Mluvil vÅ¡ak tak klidnÃ½m a pÃ¢Ã­jemnÃ½m hlasem, Å¾e jsem mÄ™l pocit, Å¾e mu prostÄ™ musÃ­m vÄ™Ã¢it.");
 
 					//2.Seite
 					Doc_SetMargins	( nDocID,  -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Nabídl mi 20 000 zlaãákù, kdy se postarám, aby byl jeden z têch oldákù uznán vinnım. Prı vím, co tím myslí."	);
-					Doc_PrintLines	( nDocID,  1, "Samozâejmê e jsem souhlasil, protoe ta chátra si stejnê nic jiného nezaslouí. Nebıt jich, mêl bych se teë mnohem líp. A zlato, které za to dostanu, mi zajistí slušné ivobytí a do smrti."					);
+					Doc_PrintLines	( nDocID,  1, "NabÃ­dl mi 20 000 zlaÄƒÃ¡kÅ¯, kdyÅ¾ se postarÃ¡m, aby byl jeden z tÄ™ch Å¾oldÃ¡kÅ¯ uznÃ¡n vinnÃ½m. PrÃ½ vÃ­m, co tÃ­m myslÃ­."	);
+					Doc_PrintLines	( nDocID,  1, "SamozÃ¢ejmÄ™ Å¾e jsem souhlasil, protoÅ¾e ta chÃ¡tra si stejnÄ™ nic jinÃ©ho nezaslouÅ¾Ã­. NebÃ½t jich, mÄ™l bych se teÃ« mnohem lÃ­p. A zlato, kterÃ© za to dostanu, mi zajistÃ­ sluÅ¡nÃ© Å¾ivobytÃ­ aÅ¾ do smrti."					);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Jednoho z têch oldákù u mají pod zámkem, take své slovo opravdu hravê splním.");
+					Doc_PrintLines	( nDocID,  1, "Jednoho z tÄ™ch Å¾oldÃ¡kÅ¯ uÅ¾ majÃ­ pod zÃ¡mkem, takÅ¾e svÃ© slovo opravdu hravÄ™ splnÃ­m.");
 					Doc_Show		( nDocID );
 					
 
@@ -268,12 +268,12 @@ INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM)
 };
 
 //**********************************************************************************
-//	ITWR_DementorObsessionBook_MIS 			//Joly: DementorBuch, der Bessenheit, Ein NSC trägt dieses Buch mit sich, wenn er von einem Dementor kurzzeitig übernommen wurde.)
+//	ITWR_DementorObsessionBook_MIS 			//Joly: DementorBuch, der Bessenheit, Ein NSC trÃ¤gt dieses Buch mit sich, wenn er von einem Dementor kurzzeitig Ã¼bernommen wurde.)
 //**********************************************************************************
 
 INSTANCE ITWR_DementorObsessionBook_MIS (C_ITEM) 
 {	
-	name 					=	"Almanach posedlıch";
+	name 					=	"Almanach posedlÃ½ch";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MULTI|ITEM_MISSION;
@@ -326,7 +326,7 @@ INSTANCE ITWR_DementorObsessionBook_MIS (C_ITEM)
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "em piratoram endro"					);
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
@@ -370,7 +370,7 @@ INSTANCE ITWR_DementorObsessionBook_MIS (C_ITEM)
 
 INSTANCE ItWr_PyrokarsObsessionList		(C_Item)
 {
-	name 				=	"Pyrokarùv magickı svitek";
+	name 				=	"PyrokarÅ¯v magickÃ½ svitek";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -392,7 +392,7 @@ func void Use_PyrokarsObsessionList ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Posedlı"					);
+					Doc_PrintLine	( nDocID,  0, "PosedlÃ½"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 	
 					if (Kapitel >= 3)
@@ -434,7 +434,7 @@ func void Use_PyrokarsObsessionList ()
 
 
 /******************************************************************************************/
-//	Heiltrank für Hilda																	//
+//	Heiltrank fÃ¼r Hilda																	//
 /******************************************************************************************/
 INSTANCE ItPo_HealHilda_MIS(C_Item)
 {
@@ -454,7 +454,7 @@ INSTANCE ItPo_HealHilda_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Lék na èernou horeèku";
+	description		= 	"LÃ©k na Äernou horeÄku";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;
@@ -473,7 +473,7 @@ INSTANCE ItPo_HealHilda_MIS(C_Item)
 // *****************************************************
 INSTANCE ItMw_MalethsGehstock_MIS (C_Item)
 {	
-	name 				=	"Vycházková hùl";  
+	name 				=	"VychÃ¡zkovÃ¡ hÅ¯l";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -491,7 +491,7 @@ INSTANCE ItMw_MalethsGehstock_MIS (C_Item)
 
 	description			= 	name;
 	TEXT[0]				= 	"Na rukojeti je vyvedeno";
-	TEXT[1]				= 	"ozdobné písmeno M.";					
+	TEXT[1]				= 	"ozdobnÃ© pÃ­smeno M.";					
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
@@ -505,7 +505,7 @@ INSTANCE ItMw_MalethsGehstock_MIS (C_Item)
 
 INSTANCE ItMi_MalethsBanditGold(C_Item)
 {
-	name 				=	"Mêšec naditı zlatem!";
+	name 				=	"MÄ™Å¡ec naditÃ½ zlatem!";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -527,12 +527,12 @@ FUNC VOID Use_MalethsBanditGold ()
 
 
 // *****************************************************
-// 		MoleratFett für "die Winde klemmt"
+// 		MoleratFett fÃ¼r "die Winde klemmt"
 // *****************************************************
 
 INSTANCE ItMi_Moleratlubric_MIS (C_Item)
 {
-	name 				=	"Tlustı rysec";
+	name 				=	"TlustÃ½ rysec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -575,10 +575,10 @@ func void Use_BabosLetter ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		); 
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Milı Babo,"					);
+					Doc_PrintLine	( nDocID,  0, "MilÃ½ Babo,"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Urèitê se divíš, e ti píšeme. Donesli jsme toti mistru Marlasovi všechny úspory a poádali ho, aby tyto âádky napsal za nás. Pâejeme ti do budoucna jen to nejlepší a jako dárek na rozlouèenou ti posíláme obrázek, abys mêl na co vzpomínat za dlouhıch veèerù v klášteâe.");
-					Doc_PrintLines	( nDocID,  0, "Hodnê štêstí - snad se ti ta malùvka bude líbit.");
+					Doc_PrintLines	( nDocID,  0, "UrÄitÄ™ se divÃ­Å¡, Å¾e ti pÃ­Å¡eme. Donesli jsme totiÅ¾ mistru Marlasovi vÅ¡echny Ãºspory a poÅ¾Ã¡dali ho, aby tyto Ã¢Ã¡dky napsal za nÃ¡s. PÃ¢ejeme ti do budoucna jen to nejlepÅ¡Ã­ a jako dÃ¡rek na rozlouÄenou ti posÃ­lÃ¡me obrÃ¡zek, abys mÄ™l na co vzpomÃ­nat za dlouhÃ½ch veÄerÅ¯ v klÃ¡Å¡teÃ¢e.");
+					Doc_PrintLines	( nDocID,  0, "HodnÄ™ Å¡tÄ™stÃ­ - snad se ti ta malÅ¯vka bude lÃ­bit.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Feht a Bonka");
 					
@@ -594,7 +594,7 @@ func void Use_BabosLetter ()
 
 INSTANCE ItWr_BabosPinUp_MIS		(C_Item)
 {
-	name 				=	"Obrázek eny";
+	name 				=	"ObrÃ¡zek Å¾eny";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -605,7 +605,7 @@ INSTANCE ItWr_BabosPinUp_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_BabosPinUp;
 	scemeName			=	"MAP";
-	description			= "Obrázek nahé eny.";
+	description			= "ObrÃ¡zek nahÃ© Å¾eny.";
 };
 func void Use_BabosPinUp ()
 {   
@@ -635,7 +635,7 @@ INSTANCE ItWr_BabosDocs_MIS	(C_Item)
 	on_state[0]			=   Use_BabosDocs;
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
-	TEXT[2]				=   "Srolované";
+	TEXT[2]				=   "SrolovanÃ©";
 	TEXT[3]				=   "dokumenty.";
 };
 func void Use_BabosDocs ()
@@ -647,12 +647,12 @@ func void Use_BabosDocs ()
 };
 
 //*************************************************************
-//	igaraz Schlüssel
+//	igaraz SchlÃ¼ssel
 //*************************************************************
 
 INSTANCE ItKe_IgarazChest_Mis(C_Item)
 {
-	name 				=	"Klíè od truhlice";
+	name 				=	"KlÃ­Ä od truhlice";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -664,7 +664,7 @@ INSTANCE ItKe_IgarazChest_Mis(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Klíè od Valentinovy";
+	TEXT[2]				=	"KlÃ­Ä od Valentinovy";
 	TEXT[3]				=   "truhlice.";
 	
 }; 
@@ -675,7 +675,7 @@ INSTANCE ItKe_IgarazChest_Mis(C_Item)
 
 INSTANCE ItWr_Astronomy_Mis (C_ITEM) 
 {	
-	name 					=	"Boská moc hvêzd";
+	name 					=	"BoÅ¾skÃ¡ moc hvÄ™zd";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -713,13 +713,13 @@ FUNC VOID Use_Astronomy()
 					Doc_SetFont 	( nDocID,  -1, FONT_Book	   			); 	// -1 -> all pages 
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels					
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "...ale kdy se síla vola spojí s váleènickımi ideály, pak se stâezte událostí, které mohou nastat.");
-					Doc_PrintLines	( nDocID,  0, "Nespoutaná volská síla a vytrvalost váleèníka dokáe narušit pradávnou rovnováhu sil. Hranice mezi dimenzemi pak zaène slábnout - a nakonec bude tak tenká, e k nám ze svêta stínù snadno proniknou Beliarovy nestvùry.");
+					Doc_PrintLines	( nDocID,  0, "...ale kdyÅ¾ se sÃ­la vola spojÃ­ s vÃ¡leÄnickÃ½mi ideÃ¡ly, pak se stÃ¢ezte udÃ¡lostÃ­, kterÃ© mohou nastat.");
+					Doc_PrintLines	( nDocID,  0, "NespoutanÃ¡ volskÃ¡ sÃ­la a vytrvalost vÃ¡leÄnÃ­ka dokÃ¡Å¾e naruÅ¡it pradÃ¡vnou rovnovÃ¡hu sil. Hranice mezi dimenzemi pak zaÄne slÃ¡bnout - aÅ¾ nakonec bude tak tenkÃ¡, Å¾e k nÃ¡m ze svÄ™ta stÃ­nÅ¯ snadno proniknou Beliarovy nestvÅ¯ry.");
 					//2.Seite
 					Doc_SetMargins	( nDocID,  -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Války ze starıch èasù nám budi pâíkladem, jak nêco takového dopadá. I kdy tehdy byla vazba mezi svêty ještê stále pevná, stoupenci zla sem pâinesli smrt a zkázu, pâed kterou lidstvo ochránil pouze Innos a Jeho vyvolenı."	);
-					Doc_PrintLines	( nDocID,  1, "Innos nás chraà, jestli by se mêla podobná hrozba znovu objevit, protoe ádnı další Innosùv vyvolenı nepâišel u víc jak sto let."					);
+					Doc_PrintLines	( nDocID,  1, "VÃ¡lky ze starÃ½ch ÄasÅ¯ nÃ¡m budiÅ¾ pÃ¢Ã­kladem, jak nÄ™co takovÃ©ho dopadÃ¡. I kdyÅ¾ tehdy byla vazba mezi svÄ™ty jeÅ¡tÄ™ stÃ¡le pevnÃ¡, stoupenci zla sem pÃ¢inesli smrt a zkÃ¡zu, pÃ¢ed kterou lidstvo ochrÃ¡nil pouze Innos a Jeho vyvolenÃ½."	);
+					Doc_PrintLines	( nDocID,  1, "Innos nÃ¡s chraÅ•, jestli by se mÄ™la podobnÃ¡ hrozba znovu objevit, protoÅ¾e Å¾Ã¡dnÃ½ dalÅ¡Ã­ InnosÅ¯v vyvolenÃ½ nepÃ¢iÅ¡el uÅ¾ vÃ­c jak sto let."					);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLines	( nDocID,  1, "");
 					Doc_Show		( nDocID );
@@ -748,7 +748,7 @@ INSTANCE ItPo_HealObsession_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Lék pro posedlé";
+	description		= 	"LÃ©k pro posedlÃ©";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;
@@ -772,7 +772,7 @@ INSTANCE ItPo_HealObsession_MIS(C_Item)
 
 INSTANCE ItSe_Golemchest_Mis	(C_Item)
 {
-	name 				=	"Mêšec";
+	name 				=	"MÄ™Å¡ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -784,11 +784,11 @@ INSTANCE ItSe_Golemchest_Mis	(C_Item)
 	material 			=	MAT_METAL;
 	on_state[0]			=   Use_GolemChest;
 	
-	description			= 	"Mêšec.";
+	description			= 	"MÄ™Å¡ec.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Tento váèek je plnı mincí.";
+	TEXT[2]				= 	"Tento vÃ¡Äek je plnÃ½ mincÃ­.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -800,7 +800,7 @@ FUNC VOID Use_GolemChest ()
 		Print (PRINT_FoundGold50);
 		Print (PRINT_FoundRing);
 		CreateInvItems (hero, ItRi_Prot_Total_02,1);
-		Snd_Play ("Mêšec");
+		Snd_Play ("MÄ™Å¡ec");
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -811,7 +811,7 @@ FUNC VOID Use_GolemChest ()
 
 instance ItWr_ShatteredGolem_MIS (C_Item)
 {
-	name 		= "Velmi stará mapa";  // 
+	name 		= "Velmi starÃ¡ mapa";  // 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION;
 
@@ -863,7 +863,7 @@ INSTANCE ItWr_DiegosLetter_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_DiegosLetter_Mis;
 	scemeName			=	"MAP";
-	description			= "Diegùv dopis Gerbrandtovi.";
+	description			= "DiegÅ¯v dopis Gerbrandtovi.";
 };
 func void Use_DiegosLetter_Mis ()
 {   
@@ -876,11 +876,11 @@ func void Use_DiegosLetter_Mis ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "Gerbrandte,");
-					Doc_PrintLines	( nDocID,  0, "Víš, mêl jsi mê radši zabít.");
-					Doc_PrintLines	( nDocID,  0, "Teë jsem zpátky ve mêstê a hledám tê. A a tê najdu, nadêlám z tebe sekanou. Znáš mê u dost dlouho, abys vêdêl, e se jen tak lehce oblbnout nenechám."); 
-					Doc_PrintLines	( nDocID,  0, "Poèítám, e kdy jsi mê házel pâes bariéru, ani ve snu tê nenapadlo, e bych se mohl vrátit. A to byla chyba.");
-					Doc_PrintLines	( nDocID,  0, "Vezmu si zpátky, co mi patâí.");
-					Doc_PrintLines	( nDocID,  0, "Jestli je ti ivot milej, tak si sbalíš fidlátka a svùj obchod pâenecháš mnê. Tím si budeme kvit.");				
+					Doc_PrintLines	( nDocID,  0, "VÃ­Å¡, mÄ™l jsi mÄ™ radÅ¡i zabÃ­t.");
+					Doc_PrintLines	( nDocID,  0, "TeÃ« jsem zpÃ¡tky ve mÄ™stÄ™ a hledÃ¡m tÄ™. A aÅ¾ tÄ™ najdu, nadÄ™lÃ¡m z tebe sekanou. ZnÃ¡Å¡ mÄ™ uÅ¾ dost dlouho, abys vÄ™dÄ™l, Å¾e se jen tak lehce oblbnout nenechÃ¡m."); 
+					Doc_PrintLines	( nDocID,  0, "PoÄÃ­tÃ¡m, Å¾e kdyÅ¾ jsi mÄ™ hÃ¡zel pÃ¢es bariÃ©ru, ani ve snu tÄ™ nenapadlo, Å¾e bych se mohl vrÃ¡tit. A to byla chyba.");
+					Doc_PrintLines	( nDocID,  0, "Vezmu si zpÃ¡tky, co mi patÃ¢Ã­.");
+					Doc_PrintLines	( nDocID,  0, "Jestli je ti Å¾ivot milej, tak si sbalÃ­Å¡ fidlÃ¡tka a svÅ¯j obchod pÃ¢enechÃ¡Å¡ mnÄ™. TÃ­m si budeme kvit.");				
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Diego");
 					Doc_Show		( nDocID );
@@ -893,7 +893,7 @@ func void Use_DiegosLetter_Mis ()
 
 INSTANCE ItSe_DiegosTreasure_Mis(C_Item)
 {
-	name 				=	"Plnı mêšec";
+	name 				=	"PlnÃ½ mÄ™Å¡ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -904,7 +904,7 @@ INSTANCE ItSe_DiegosTreasure_Mis(C_Item)
 	scemename			=	"MAPSEALED";	
 	material 			=	MAT_METAL;
 	on_state[0]			=   Use_DiegosTreasure;
-	description			= 	"Diegùv starı mêšec.";
+	description			= 	"DiegÅ¯v starÃ½ mÄ™Å¡ec.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -921,7 +921,7 @@ FUNC VOID Use_DiegosTreasure ()
 
 INSTANCE ItMi_UltharsHolyWater_Mis (C_Item)
 {
-	name 				=	"Ultharova svêcená voda";
+	name 				=	"Ultharova svÄ™cenÃ¡ voda";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -942,7 +942,7 @@ INSTANCE ItMi_UltharsHolyWater_Mis (C_Item)
 var int ItWr_MinenAnteil_Mis_OneTime;
 INSTANCE ItWr_MinenAnteil_Mis		(C_Item)
 {
-	name 				=	"Akcie khorinidskıch rudnıch dolù";
+	name 				=	"Akcie khorinidskÃ½ch rudnÃ½ch dolÅ¯";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION | ITEM_MULTI;
@@ -967,16 +967,16 @@ func void Use_MinenAnteil_Mis ()
 					Doc_SetPage		(nDocID,  0, "letters.TGA", 0);
 					Doc_SetFont		(nDocID,  0, FONT_BookHeadline);
 					Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
-					Doc_PrintLine	(nDocID,  0, "Akcie rudnıch dolù"									);
+					Doc_PrintLine	(nDocID,  0, "Akcie rudnÃ½ch dolÅ¯"									);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "Tímto dokumentem dává král a vládce této âíše jeho nositeli právo kutat na území pod královskou správou.");
-					Doc_PrintLines	(nDocID,  0, "Svou pùsobnost však musí omezit na jedno malé královské pole.");
-					Doc_PrintLines	(nDocID,  0, "Podle listiny o velikosti dolù èiní jedno malé královské pole 16 yardù na šíâku a 3 yardy na vıšku.");
-					Doc_PrintLines	(nDocID,  0, "Královskı prospektor není povinen zajistit volnı pâístup a ochranu dùlních cel.");
-					Doc_PrintLines	(nDocID,  0, "Nebude-li nájemce moci uhradit nájemné, pâejdou všechna práva zpêt pod správu âíše.");
-					Doc_PrintLine	(nDocID,  0, "         Podepsán"									);
-					Doc_PrintLine	(nDocID,  0, "      Královskı prospektor"						);
+					Doc_PrintLines	(nDocID,  0, "TÃ­mto dokumentem dÃ¡vÃ¡ krÃ¡l a vlÃ¡dce tÃ©to Ã¢Ã­Å¡e jeho nositeli prÃ¡vo kutat na ÃºzemÃ­ pod krÃ¡lovskou sprÃ¡vou.");
+					Doc_PrintLines	(nDocID,  0, "Svou pÅ¯sobnost vÅ¡ak musÃ­ omezit na jedno malÃ© krÃ¡lovskÃ© pole.");
+					Doc_PrintLines	(nDocID,  0, "Podle listiny o velikosti dolÅ¯ ÄinÃ­ jedno malÃ© krÃ¡lovskÃ© pole 16 yardÅ¯ na Å¡Ã­Ã¢ku a 3 yardy na vÃ½Å¡ku.");
+					Doc_PrintLines	(nDocID,  0, "KrÃ¡lovskÃ½ prospektor nenÃ­ povinen zajistit volnÃ½ pÃ¢Ã­stup a ochranu dÅ¯lnÃ­ch cel.");
+					Doc_PrintLines	(nDocID,  0, "Nebude-li nÃ¡jemce moci uhradit nÃ¡jemnÃ©, pÃ¢ejdou vÅ¡echna prÃ¡va zpÄ™t pod sprÃ¡vu Ã¢Ã­Å¡e.");
+					Doc_PrintLine	(nDocID,  0, "         PodepsÃ¡n"									);
+					Doc_PrintLine	(nDocID,  0, "      KrÃ¡lovskÃ½ prospektor"						);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "                Salandril"								);
 					Doc_Show		(nDocID);
@@ -985,11 +985,11 @@ func void Use_MinenAnteil_Mis ()
 
 	if (ItWr_MinenAnteil_Mis_OneTime == FALSE)
 	{
-		B_LogEntry (TOPIC_MinenAnteile,"Ten chlapík, kterı prodal dùlní akcie obchodníkùm, se jmenoval Salandril. Najdu ho nejspíš v horní ètvrti Khorinidu, jestli tedy u pâed spravedlností neutekl nêkam dál."); 
+		B_LogEntry (TOPIC_MinenAnteile,"Ten chlapÃ­k, kterÃ½ prodal dÅ¯lnÃ­ akcie obchodnÃ­kÅ¯m, se jmenoval Salandril. Najdu ho nejspÃ­Å¡ v hornÃ­ Ätvrti Khorinidu, jestli tedy uÅ¾ pÃ¢ed spravedlnostÃ­ neutekl nÄ™kam dÃ¡l."); 
 	
 		if (Npc_IsDead(Salandril))
 		{
-			B_LogEntry (TOPIC_MinenAnteile,"Salandril je mrtev. Musím to oznámit Serpentovi."); 
+			B_LogEntry (TOPIC_MinenAnteile,"Salandril je mrtev. MusÃ­m to oznÃ¡mit Serpentovi."); 
 		};
 		ItWr_MinenAnteil_Mis_OneTime = TRUE;
 	};
@@ -1001,7 +1001,7 @@ func void Use_MinenAnteil_Mis ()
 
 INSTANCE  ItAm_Prot_BlackEye_Mis (C_Item)
 {
-	name 			=	"Amulet pâivolávání duší";
+	name 			=	"Amulet pÃ¢ivolÃ¡vÃ¡nÃ­ duÅ¡Ã­";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET|ITEM_MISSION;
@@ -1020,7 +1020,7 @@ INSTANCE  ItAm_Prot_BlackEye_Mis (C_Item)
 	
 	TEXT[2]			= "";
 	
-	TEXT[3] 		= "Amulet ochrany pâed uhranutím";
+	TEXT[3] 		= "Amulet ochrany pÃ¢ed uhranutÃ­m";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -1029,12 +1029,12 @@ INSTANCE  ItAm_Prot_BlackEye_Mis (C_Item)
 		
 };
 //**********************************************************************************
-//	Gestein aus gesegneter Erde für das Schutzamulett gegen den Schwarzen Blick
+//	Gestein aus gesegneter Erde fÃ¼r das Schutzamulett gegen den Schwarzen Blick
 //**********************************************************************************
 
 INSTANCE  ItMi_KarrasBlessedStone_Mis (C_Item)
 {
-	name 			=	"Kámen ze svaté pùdy";
+	name 			=	"KÃ¡men ze svatÃ© pÅ¯dy";
 
 	mainflag 		=	ITEM_KAT_NONE;
 	flags 			=	ITEM_MISSION|ITEM_MULTI ;
@@ -1057,7 +1057,7 @@ INSTANCE  ItMi_KarrasBlessedStone_Mis (C_Item)
 };
 
 //**********************************************************************************
-//	Komprobrief für Lee
+//	Komprobrief fÃ¼r Lee
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_RichterKomproBrief_MIS		(C_Item)
@@ -1088,14 +1088,14 @@ func void Use_RichterKomproBrief ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Morgaharde, ty mizernı budiknièemu! Buë vyplníš moje rozkazy, nebo se naštvu a nechám vás všechny zavâít, a zèernáte!");
-					Doc_PrintLines	( nDocID,  0, "Musíte to provést dneska v noci, Larius zaèíná nêco tušit.");
-					Doc_PrintLines	( nDocID,  0, "Jestli mu kapsy nevybereme teë, pak u mùe bıt pozdê. Postarám se, aby ses s ním setkal dneska veèer na trhu.");
-					Doc_PrintLines	( nDocID,  0, "Ale ne abys z toho dêlal estrádu, jinak tê stráe zatknou, ne se staèíš rozkoukat.");
-					Doc_PrintLines	( nDocID,  0, "Mimochodem, kdyby pâitom náhodou natáhl brka, docela by se mi to hodilo."									);
+					Doc_PrintLines	( nDocID,  0, "Morgaharde, ty mizernÃ½ budiÅ¾kniÄemu! BuÃ« vyplnÃ­Å¡ moje rozkazy, nebo se naÅ¡tvu a nechÃ¡m vÃ¡s vÅ¡echny zavÃ¢Ã­t, aÅ¾ zÄernÃ¡te!");
+					Doc_PrintLines	( nDocID,  0, "MusÃ­te to provÃ©st dneska v noci, Larius zaÄÃ­nÃ¡ nÄ™co tuÅ¡it.");
+					Doc_PrintLines	( nDocID,  0, "Jestli mu kapsy nevybereme teÃ«, pak uÅ¾ mÅ¯Å¾e bÃ½t pozdÄ™. PostarÃ¡m se, aby ses s nÃ­m setkal dneska veÄer na trhu.");
+					Doc_PrintLines	( nDocID,  0, "Ale ne abys z toho dÄ™lal estrÃ¡du, jinak tÄ™ strÃ¡Å¾e zatknou, neÅ¾ se staÄÃ­Å¡ rozkoukat.");
+					Doc_PrintLines	( nDocID,  0, "Mimochodem, kdyby pÃ¢itom nÃ¡hodou natÃ¡hl brka, docela by se mi to hodilo."									);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "          Královskı soudce"		);
-					Doc_PrintLine	( nDocID,  0, "          a tajemník"		);
+					Doc_PrintLine	( nDocID,  0, "          KrÃ¡lovskÃ½ soudce"		);
+					Doc_PrintLine	( nDocID,  0, "          a tajemnÃ­k"		);
 					Doc_PrintLine	( nDocID,  0, ""			);
 					
 					Doc_Show		( nDocID );
@@ -1134,9 +1134,9 @@ func void Use_MorgahardTip ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLines	(nDocID,  0, ""													);
 					Doc_PrintLines	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "Pokraèuji dál. Doufám, e a se to trochu uklidní, zase se setkáme.");
-					Doc_PrintLines	(nDocID,  0, "ádné strachy, hoši. Kdy sele všechno ostatní, poádám Onara, aby na to dohlédl.");
-					Doc_PrintLines	(nDocID,  0, "To bude v poâádku."					);
+					Doc_PrintLines	(nDocID,  0, "PokraÄuji dÃ¡l. DoufÃ¡m, Å¾e aÅ¾ se to trochu uklidnÃ­, zase se setkÃ¡me.");
+					Doc_PrintLines	(nDocID,  0, "Å½Ã¡dnÃ© strachy, hoÅ¡i. KdyÅ¾ selÅ¾e vÅ¡echno ostatnÃ­, poÅ¾Ã¡dÃ¡m Onara, aby na to dohlÃ©dl.");
+					Doc_PrintLines	(nDocID,  0, "To bude v poÃ¢Ã¡dku."					);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "                           M."											);
@@ -1152,7 +1152,7 @@ func void Use_MorgahardTip ()
 
 instance ItWr_Map_Shrine_MIS (C_Item)
 {
-	name 		= "Mapa oltáâù";  // 
+	name 		= "Mapa oltÃ¡Ã¢Å¯";  // 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
 
@@ -1194,7 +1194,7 @@ instance ItWr_Map_Shrine_MIS (C_Item)
 
 INSTANCE ItWr_VinosKellergeister_Mis (C_ITEM)
 {
-	name 					=	"Duch vína";
+	name 					=	"Duch vÃ­na";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1226,26 +1226,26 @@ INSTANCE ItWr_VinosKellergeister_Mis (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Moc hroznù"	);
+					Doc_PrintLines	( nDocID,  0, "Moc hroznÅ¯"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "...u jsem toho v ivotê vyzkoušel spoustu, ale tohle ovoce, které mi minulı tıden pâivezli z ciziny, pâedèilo všechna má oèekávání..."					);
+					Doc_PrintLines	( nDocID,  0, "...uÅ¾ jsem toho v Å¾ivotÄ™ vyzkouÅ¡el spoustu, ale tohle ovoce, kterÃ© mi minulÃ½ tÃ½den pÃ¢ivezli z ciziny, pÃ¢edÄilo vÅ¡echna mÃ¡ oÄekÃ¡vÃ¡nÃ­..."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "...šãáva z têchto hroznù je daleko vydatnêjší ne cokoliv, co lze získat v têchto konèinách..."					);
+					Doc_PrintLines	( nDocID,  0, "...Å¡ÄƒÃ¡va z tÄ™chto hroznÅ¯ je daleko vydatnÄ™jÅ¡Ã­ neÅ¾ cokoliv, co lze zÃ­skat v tÄ™chto konÄinÃ¡ch..."					);
 					Doc_PrintLines	( nDocID,  0, "");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "...take zatím to jde dobâe. Ale poâád mi nedá spát pomyšlení, co by se mohlo stát, kdyby nêkdo našel mùj tajnı destilaèní aparát. Radši ani nechci vêdêt, co by mi za to drábové provedli - nakonec by mê mohli hodit pâes bariéru..."	);
+					Doc_PrintLines	( nDocID,  1, "...takÅ¾e zatÃ­m to jde dobÃ¢e. Ale poÃ¢Ã¡d mi nedÃ¡ spÃ¡t pomyÅ¡lenÃ­, co by se mohlo stÃ¡t, kdyby nÄ™kdo naÅ¡el mÅ¯j tajnÃ½ destilaÄnÃ­ aparÃ¡t. RadÅ¡i ani nechci vÄ™dÄ™t, co by mi za to drÃ¡bovÃ© provedli - nakonec by mÄ™ mohli hodit pÃ¢es bariÃ©ru..."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "...zaèínají mít podezâení. Radši se odsud uklidím a chvíli poèkám, a se vêci trochu uklidní a budu se moci opêt vrátit k práci. Hlavnê musím mít jistotu, e po mnê u nejdou...");
+					Doc_PrintLines	( nDocID,  1, "...zaÄÃ­najÃ­ mÃ­t podezÃ¢enÃ­. RadÅ¡i se odsud uklidÃ­m a chvÃ­li poÄkÃ¡m, aÅ¾ se vÄ™ci trochu uklidnÃ­ a budu se moci opÄ™t vrÃ¡tit k prÃ¡ci. HlavnÄ™ musÃ­m mÃ­t jistotu, Å¾e po mnÄ™ uÅ¾ nejdou...");
 					Doc_Show		( nDocID );
 };
 

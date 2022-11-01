@@ -79,35 +79,35 @@ FUNC VOID DIA_Wirt_Hallo_Info()
 	var int randy;
 	randy = Hlp_Random (2);
 	
-	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Hej, pojë blí - dej si pauzu a pár lokù dobâe chlazeného piva.
+	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Hej, pojÃ« blÃ­Å¾ - dej si pauzu a pÃ¡r lokÅ¯ dobÃ¢e chlazenÃ©ho piva.
 	
 	if (self.aivar [AIV_TalkedToPlayer] == FALSE) 
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_01");//Lord Andre objednal pár soudkù piva, které toèíme zdarma.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_01");//Lord Andre objednal pÃ¡r soudkÅ¯ piva, kterÃ© toÄÃ­me zdarma.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 0)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//Není nad to, kdy si po práci dáš jednu pintu oroseného.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//NenÃ­ nad to, kdyÅ¾ si po prÃ¡ci dÃ¡Å¡ jednu pintu orosenÃ©ho.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 1)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//Paladinové dají všechno do poâádku, take si klidnê ještê lokni a uij si to.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//PaladinovÃ© dajÃ­ vÅ¡echno do poÃ¢Ã¡dku, takÅ¾e si klidnÄ™ jeÅ¡tÄ™ lokni a uÅ¾ij si to.
 		
 		B_GiveInvItems (self, other, ItFo_Beer,1);
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 2)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//O Khorinidu si âíkej, co chceš, ale náš 'Temnı paladin' je prostê nejlepší z celé Myrtany.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//O Khorinidu si Ã¢Ã­kej, co chceÅ¡, ale nÃ¡Å¡ 'TemnÃ½ paladin' je prostÄ™ nejlepÅ¡Ã­ z celÃ© Myrtany.
 		AI_StopProcessInfos (self);
 	};
 };
 
 /*
-	Wenn du ein Problem hast und es lässt sich lösen, dann denk nicht weiter drüber nach.
-	Und wenn du es nicht lösen kannst, dann brauchst du auch nicht weiter drüber nachzudenken. 
+	Wenn du ein Problem hast und es lÃ¤sst sich lÃ¶sen, dann denk nicht weiter drÃ¼ber nach.
+	Und wenn du es nicht lÃ¶sen kannst, dann brauchst du auch nicht weiter drÃ¼ber nachzudenken. 
 */
 
 

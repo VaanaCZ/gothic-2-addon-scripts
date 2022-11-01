@@ -14,7 +14,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ falscher Parameter ------
 	if (circle < 1) || (circle > 6)
 	{
-		Print ("*** CHYBA: nesprávnı parametr ***");
+		Print ("*** CHYBA: nesprÃ¡vnÃ½ parametr ***");
 		return FALSE;
 	};
 	
@@ -36,13 +36,13 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ Kreis setzen ------
 	Npc_SetTalentSkill (oth, NPC_TALENT_MAGE, circle);
 	Log_CreateTopic (TOPIC_TalentMagicCircle,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentMagicCircle,"Magické runy, ke kterım mám nyní pâístup, jsou rozdêleny do jednotlivıch kruhù. Nemohu pouít kouzlo, je vyaduje vyšší kruh, ne jakı ji ovládám."); 
+	B_LogEntry (TOPIC_TalentMagicCircle,"MagickÃ© runy, ke kterÃ½m mÃ¡m nynÃ­ pÃ¢Ã­stup, jsou rozdÄ™leny do jednotlivÃ½ch kruhÅ¯. Nemohu pouÅ¾Ã­t kouzlo, jeÅ¾ vyÅ¾aduje vyÅ¡Å¡Ã­ kruh, neÅ¾ jakÃ½ jiÅ¾ ovlÃ¡dÃ¡m."); 
 	
 	// ------ 1. Kreis ------
 	if (circle == 1)
 	{
 		PrintScreen	(PRINT_LearnCircle_1, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Kouzla prvního kruhu jsou: svêtlo, ohnivı šíp, malı blesk, léèba lehkıch zranêní a vyvolání gobliního kostlivce.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Kouzla prvnÃ­ho kruhu jsou: svÄ™tlo, ohnivÃ½ Å¡Ã­p, malÃ½ blesk, lÃ©Äba lehkÃ½ch zranÄ™nÃ­ a vyvolÃ¡nÃ­ goblinÃ­ho kostlivce.");
 		return TRUE;
 	};
 	
@@ -50,7 +50,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 2)
 	{
 		PrintScreen	(PRINT_LearnCircle_2, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Ke kouzlùm druhého kruhu patâí: ohnivá koule, ledovı šíp, vyvolání vlka, vêtrná pêst a spánek.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Ke kouzlÅ¯m druhÃ©ho kruhu patÃ¢Ã­: ohnivÃ¡ koule, ledovÃ½ Å¡Ã­p, vyvolÃ¡nÃ­ vlka, vÄ™trnÃ¡ pÄ™st a spÃ¡nek.");
 		return TRUE;
 	};
 	
@@ -58,7 +58,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 3)
 	{
 		PrintScreen	(PRINT_LearnCircle_3, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Kouzla 3. kruhu zahrnují: léèbu stâednê têkıch zranêní, kulovı blesk, malou ohnivou bouâi, vyvolání kostlivce, strach a ledovı blok.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Kouzla 3. kruhu zahrnujÃ­: lÃ©Äbu stÃ¢ednÄ™ tÄ™Å¾kÃ½ch zranÄ™nÃ­, kulovÃ½ blesk, malou ohnivou bouÃ¢i, vyvolÃ¡nÃ­ kostlivce, strach a ledovÃ½ blok.");
 		return TRUE;
 	};
 	
@@ -66,7 +66,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 4)
 	{
 		PrintScreen	(PRINT_LearnCircle_4, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Ke kouzlùm 4. kruhu náleí: blesk, vytvoâení kamenného golema, nièení nemrtvıch a velká ohnivá koule.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Ke kouzlÅ¯m 4. kruhu nÃ¡leÅ¾Ã­: blesk, vytvoÃ¢enÃ­ kamennÃ©ho golema, niÄenÃ­ nemrtvÃ½ch a velkÃ¡ ohnivÃ¡ koule.");
 		return TRUE;
 	};
 	
@@ -74,7 +74,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 5)
 	{
 		PrintScreen	(PRINT_LearnCircle_5, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Kouzla 5. kruhu obsahují: velkou ohnivou bouâi, ledovou vlnu, vyvolání démona a léèbu têkıch zranêní.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Kouzla 5. kruhu obsahujÃ­: velkou ohnivou bouÃ¢i, ledovou vlnu, vyvolÃ¡nÃ­ dÃ©mona a lÃ©Äbu tÄ™Å¾kÃ½ch zranÄ™nÃ­.");
 		return TRUE;
 	};
 	
@@ -82,7 +82,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 6)
 	{
 		PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Kouzla 6. kruhu èítají: ohnivı déšã, dech smrti, vlnu smrti, armádu temnot a zmenšení nestvùry.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Kouzla 6. kruhu ÄÃ­tajÃ­: ohnivÃ½ dÃ©Å¡Äƒ, dech smrti, vlnu smrti, armÃ¡du temnot a zmenÅ¡enÃ­ nestvÅ¯ry.");
 		return TRUE;
 	};
 };

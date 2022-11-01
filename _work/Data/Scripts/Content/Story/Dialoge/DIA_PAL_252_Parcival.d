@@ -24,7 +24,7 @@ FUNC VOID DIA_Parcival_EXIT_Info()
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Sch¸rfer
+//	Info Sch√ºrfer
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Parcival_Schurfer		(C_INFO)
 {
@@ -33,7 +33,7 @@ instance DIA_Parcival_Schurfer		(C_INFO)
 	condition	 = 	DIA_Parcival_Schurfer_Condition;
 	information	 = 	DIA_Parcival_Schurfer_Info;
 	permanent 	 =  FALSE;
-	description	 =	"Co mi m˘ûeö ‚Ìct o hornÌcÌch?";
+	description	 =	"Co mi m≈Ø≈æe≈° √¢√≠ct o horn√≠c√≠ch?";
 };
 func int DIA_Parcival_Schurfer_Condition ()	
 {	
@@ -44,20 +44,20 @@ func int DIA_Parcival_Schurfer_Condition ()
 };
 func void DIA_Parcival_Schurfer_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Schurfer_15_00"); //Co mi m˘ûeö ‚Ìct o hornÌcÌch?
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_01"); //Vypravil jsem t‚i skupiny.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_02"); //Vedou je paladinovÈ Marcos, Fajeth a Silvestro.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_03"); //Marcosova skupina vyrazila smÍrem ke starÈmu dolu - vedl ji star˝ kop·Ë jmÈnem Grimes.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_04"); //DalöÌ dvÍ skupiny öly spoleËnÍ.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_05"); //Podle Jergana, jednoho z naöich zvÍd˘, rozbili t·bor poblÌû velkÈ vÍûe.
+	AI_Output (other, self, "DIA_Parcival_Schurfer_15_00"); //Co mi m≈Ø≈æe≈° √¢√≠ct o horn√≠c√≠ch?
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_01"); //Vypravil jsem t√¢i skupiny.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_02"); //Vedou je paladinov√© Marcos, Fajeth a Silvestro.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_03"); //Marcosova skupina vyrazila smƒôrem ke star√©mu dolu - vedl ji star√Ω kop√°ƒç jm√©nem Grimes.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_04"); //Dal≈°√≠ dvƒô skupiny ≈°ly spoleƒçnƒô.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_05"); //Podle Jergana, jednoho z na≈°ich zvƒôd≈Ø, rozbili t√°bor pobl√≠≈æ velk√© vƒô≈æe.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Kaûd˝ oddÌl kop·Ë˘ vede jeden z paladin˘ - Marcos, Fajeth a Silvestro.");
-	B_LogEntry (TOPIC_ScoutMine,"Marcosova skupina se vydala tam, kde kdysi b˝val star˝ d˘l. Jejich vyzvÍdaËem je Grimes."); 
-	B_LogEntry (TOPIC_ScoutMine,"DalöÌ dvÍ skupiny se spojily dohromady a usadily se poblÌû velkÈ vÍûe."); 
+	B_LogEntry (TOPIC_ScoutMine,"Ka≈æd√Ω odd√≠l kop√°ƒç≈Ø vede jeden z paladin≈Ø - Marcos, Fajeth a Silvestro.");
+	B_LogEntry (TOPIC_ScoutMine,"Marcosova skupina se vydala tam, kde kdysi b√Ωval star√Ω d≈Øl. Jejich vyzvƒôdaƒçem je Grimes."); 
+	B_LogEntry (TOPIC_ScoutMine,"Dal≈°√≠ dvƒô skupiny se spojily dohromady a usadily se pobl√≠≈æ velk√© vƒô≈æe."); 
 	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Sch¸rfer
+//	Info Sch√ºrfer
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Parcival_Diego		(C_INFO)
 {
@@ -66,7 +66,7 @@ instance DIA_Parcival_Diego		(C_INFO)
 	condition	 = 	DIA_Parcival_Diego_Condition;
 	information	 = 	DIA_Parcival_Diego_Info;
 	permanent 	 =  FALSE;
-	description	 =	"K jakÈ skupinÍ se p‚ipojil Diego?";
+	description	 =	"K jak√© skupinƒô se p√¢ipojil Diego?";
 };
 func int DIA_Parcival_Diego_Condition ()	
 {	
@@ -78,10 +78,10 @@ func int DIA_Parcival_Diego_Condition ()
 };
 func void DIA_Parcival_Diego_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Diego_15_00"); //K jakÈ skupinÍ se p‚ipojil Diego?
-	AI_Output (self, other, "DIA_Parcival_Diego_13_01"); //Ten trestanec - Diego? äel se skupinou paladina Silvestra.
+	AI_Output (other, self, "DIA_Parcival_Diego_15_00"); //K jak√© skupinƒô se p√¢ipojil Diego?
+	AI_Output (self, other, "DIA_Parcival_Diego_13_01"); //Ten trestanec - Diego? ≈†el se skupinou paladina Silvestra.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Diego se p‚ipojil ke skupinÍ, kterou vede paladin Silvestro."); 
+	B_LogEntry (TOPIC_ScoutMine,"Diego se p√¢ipojil ke skupinƒô, kterou vede paladin Silvestro."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Weg
@@ -93,7 +93,7 @@ instance DIA_Parcival_Weg		(C_INFO)
 	condition	 = 	DIA_Parcival_Weg_Condition;
 	information	 = 	DIA_Parcival_Weg_Info;
 	permanent 	 =  FALSE;
-	description	 =	"VÌö, jak se dostat k dol˘m?";
+	description	 =	"V√≠≈°, jak se dostat k dol≈Øm?";
 };
 func int DIA_Parcival_Weg_Condition ()	
 {	
@@ -104,11 +104,11 @@ func int DIA_Parcival_Weg_Condition ()
 };
 func void DIA_Parcival_Weg_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Weg_15_00"); //VÌö, jak se dostat k dol˘m?
-	AI_Output (self, other, "DIA_Parcival_Weg_13_01"); //Do toho ˙dolÌ nevede û·dn· bezpeËn· cesta. Ale zd· se mi rozumnÈ nejÌt p‚Ìm˝m smÍrem.
-	AI_Output (self, other, "DIA_Parcival_Weg_13_02"); //Snaû se vyhnout sk‚et˘m a les˘m - a nech„ tÍ Innos ochra‡uje.
+	AI_Output (other, self, "DIA_Parcival_Weg_15_00"); //V√≠≈°, jak se dostat k dol≈Øm?
+	AI_Output (self, other, "DIA_Parcival_Weg_13_01"); //Do toho √∫dol√≠ nevede ≈æ√°dn√° bezpeƒçn√° cesta. Ale zd√° se mi rozumn√© nej√≠t p√¢√≠m√Ωm smƒôrem.
+	AI_Output (self, other, "DIA_Parcival_Weg_13_02"); //Sna≈æ se vyhnout sk√¢et≈Øm a les≈Øm - a nechƒÉ tƒô Innos ochra≈ïuje.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Bude moud‚ejöÌ nejÌt nejkratöÌ cestou, to by mohlo b˝t nebezpeËnÈ. Zvl·ö„ bych se mÍl vyh˝bat les˘m a sk‚et˘m."); 
+	B_LogEntry (TOPIC_ScoutMine,"Bude moud√¢ej≈°√≠ nej√≠t nejkrat≈°√≠ cestou, to by mohlo b√Ωt nebezpeƒçn√©. Zvl√°≈°ƒÉ bych se mƒôl vyh√Ωbat les≈Øm a sk√¢et≈Øm."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -128,10 +128,10 @@ func int DIA_Parcival_DRAGON_Condition ()
 };
 func void DIA_Parcival_DRAGON_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_DRAGON_15_00"); //Jak to vypad·?
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_01"); //T·bor obklÌËili sk‚eti. Doslova se tam zakopali.
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_02"); //Ale mnohem vÌc znepokojujÌcÌ jsou ˙toky drak˘. Zpustoöili uû celÈ vnÍjöÌ opevnÍnÌ.
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_03"); //JeötÍ jeden draËÌ ˙tok a budeme mÌt tÍûkÈ ztr·ty.
+	AI_Output (other, self, "DIA_Parcival_DRAGON_15_00"); //Jak to vypad√°?
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_01"); //T√°bor obkl√≠ƒçili sk√¢eti. Doslova se tam zakopali.
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_02"); //Ale mnohem v√≠c znepokojuj√≠c√≠ jsou √∫toky drak≈Ø. Zpusto≈°ili u≈æ cel√© vnƒôj≈°√≠ opevnƒôn√≠.
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_03"); //Je≈°tƒô jeden draƒç√≠ √∫tok a budeme m√≠t tƒô≈æk√© ztr√°ty.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info DRAGONS
@@ -142,7 +142,7 @@ instance DIA_Parcival_DRAGONS		(C_INFO)
 	nr		 	 = 	2;
 	condition	 = 	DIA_Parcival_DRAGONS_Condition;
 	information	 = 	DIA_Parcival_DRAGONS_Info;
-	description	 = 	"Kolik drak˘ tu je?";
+	description	 = 	"Kolik drak≈Ø tu je?";
 };
 
 func int DIA_Parcival_DRAGONS_Condition ()
@@ -155,10 +155,10 @@ func int DIA_Parcival_DRAGONS_Condition ()
 };
 func void DIA_Parcival_DRAGONS_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_DRAGONS_15_00"); //Kolik drak˘ tu je?
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_01"); //NetuöÌme, kolik jich je dohromady, ale urËitÍ to je vÌc neû jeden.
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_02"); //Ale to nenÌ vöechno. CelÈ HornickÈ ˙dolÌ je plnÈ zl˝ch stv˘r, kterÈ drak˘m slouûÌ.
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_03"); //Co si budeme namlouvat - bez posil zvenËÌ jsou naöe öance dostat se odsud v jednom kuse mizivÈ.
+	AI_Output (other, self, "DIA_Parcival_DRAGONS_15_00"); //Kolik drak≈Ø tu je?
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_01"); //Netu≈°√≠me, kolik jich je dohromady, ale urƒçitƒô to je v√≠c ne≈æ jeden.
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_02"); //Ale to nen√≠ v≈°echno. Cel√© Hornick√© √∫dol√≠ je pln√© zl√Ωch stv≈Ør, kter√© drak≈Øm slou≈æ√≠.
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_03"); //Co si budeme namlouvat - bez posil zvenƒç√≠ jsou na≈°e ≈°ance dostat se odsud v jednom kuse miziv√©.
 	 
 	AI_StopProcessInfos (self); 
 };
@@ -196,21 +196,21 @@ func void DIA_Parcival_BRAVE_Info ()
 		
 		if randy == 0
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_00"); //Vöude panuje klid. To se ale m˘ûe rychle zmÍnit.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_00"); //V≈°ude panuje klid. To se ale m≈Ø≈æe rychle zmƒônit.
 		};
 		if randy == 1
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_01"); //ZkusÌme vydrûet tak dlouho, jak to jen p˘jde.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_01"); //Zkus√≠me vydr≈æet tak dlouho, jak to jen p≈Øjde.
 		};
 		if randy == 2
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_02"); //Innos n·m pom˘ûe. Jeho svÍtlo z·‚Ì v naöich srdcÌch!
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_02"); //Innos n√°m pom≈Ø≈æe. Jeho svƒôtlo z√°√¢√≠ v na≈°ich srdc√≠ch!
 		};
 	
 	}
 	else 
 	{
-	AI_Output			(self, other, "DIA_Parcival_BRAVE_13_03"); //Hej! Nem·ö na pr·ci nic d˘leûitÍjöÌho neû se mnou po‚·d tlachat? Mazej!
+	AI_Output			(self, other, "DIA_Parcival_BRAVE_13_03"); //Hej! Nem√°≈° na pr√°ci nic d≈Øle≈æitƒôj≈°√≠ho ne≈æ se mnou po√¢√°d tlachat? Mazej!
 	B_GivePlayerXP (XP_Ambient);
 	};
 	
@@ -262,7 +262,7 @@ instance DIA_Parcival_ALLESKLAR		(C_INFO)
 	information	 = 	DIA_Parcival_ALLESKLAR_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Je vöechno v po‚·dku?";
+	description	 = 	"Je v≈°echno v po√¢√°dku?";
 };
 
 func int DIA_Parcival_ALLESKLAR_Condition ()
@@ -277,19 +277,19 @@ func int DIA_Parcival_ALLESKLAR_Condition ()
 var int DIA_Parcival_ALLESKLAR_NervCounter;
 func void DIA_Parcival_ALLESKLAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Parcival_ALLESKLAR_15_00"); //Je vöechno v po‚·dku?
+	AI_Output			(other, self, "DIA_Parcival_ALLESKLAR_15_00"); //Je v≈°echno v po√¢√°dku?
 
 	if (DIA_Parcival_ALLESKLAR_NervCounter == 0)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_01"); //ZatÌm jo!
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_01"); //Zat√≠m jo!
 	}	
 	else if (DIA_Parcival_ALLESKLAR_NervCounter == 1)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_02"); //Jo, zatracenÍ.
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_02"); //Jo, zatracenƒô.
 	}	
 	else if (Parcival_BRAVE_LaberCount > 6)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_03"); //(zasmÍje se) Ale. TeÎ ch·pu, co m·ö za lubem. Ne, p‚Ìteli. Tentokr·t ne.
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_03"); //(zasmƒôje se) Ale. Te√´ ch√°pu, co m√°≈° za lubem. Ne, p√¢√≠teli. Tentokr√°t ne.
 	}
 	else
 	{
@@ -344,7 +344,7 @@ instance DIA_Parcival_AnyNews		(C_INFO)
 	condition	 = 	DIA_Parcival_AnyNews_Condition;
 	information	 = 	DIA_Parcival_AnyNews_Info;
 
-	description  =	"Stalo se nÍco d˘leûitÈho?";		
+	description  =	"Stalo se nƒôco d≈Øle≈æit√©ho?";		
 };
 
 func int DIA_Parcival_AnyNews_Condition ()
@@ -357,58 +357,58 @@ func int DIA_Parcival_AnyNews_Condition ()
 };
 func void DIA_Parcival_AnyNews_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_AnyNews_15_00"); //Stalo se nÍco d˘leûitÈho?
+	AI_Output	(other,self ,"DIA_Parcival_AnyNews_15_00"); //Stalo se nƒôco d≈Øle≈æit√©ho?
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_01"); //Ty pat‚Ìö k tÈ spodinÍ, co si ‚Ìk· drakobijci?
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_02"); //V·ûnÍ jsem si myslel, ûe v sobÍ m·ö dost cti, neû aby ses spolËoval s takov˝mi lidmi.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_01"); //Ty pat√¢√≠≈° k t√© spodinƒô, co si √¢√≠k√° drakobijci?
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_02"); //V√°≈ænƒô jsem si myslel, ≈æe v sobƒô m√°≈° dost cti, ne≈æ aby ses spolƒçoval s takov√Ωmi lidmi.
 	
 	}
 	else
 	{
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_03"); //DÍl·m si starosti. VelkÈ starosti.
-		AI_Output 	(other,self ,"DIA_Parcival_AnyNews_15_04"); //Kv˘li Ëemu?
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_05"); //Ned·vno p‚iöli tihle chl·pci. ¬ÌkajÌ si drakobijci.
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_06"); //Jak to vidÌm j·, jsou to povaleËi a zloËinci.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_03"); //Dƒôl√°m si starosti. Velk√© starosti.
+		AI_Output 	(other,self ,"DIA_Parcival_AnyNews_15_04"); //Kv≈Øli ƒçemu?
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_05"); //Ned√°vno p√¢i≈°li tihle chl√°pci. √Ç√≠kaj√≠ si drakobijci.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_06"); //Jak to vid√≠m j√°, jsou to povaleƒçi a zloƒçinci.
 	};
-	AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_07"); //Kdyby z·leûelo na mnÍ, vyhnal bych je z hradu. A„ se o nÍ postarajÌ sk‚eti.
+	AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_07"); //Kdyby z√°le≈æelo na mnƒô, vyhnal bych je z hradu. AƒÉ se o nƒô postaraj√≠ sk√¢eti.
 
 	Info_ClearChoices (DIA_Parcival_AnyNews);
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Ale jsou tady, na rozdÌl od lorda Hagena.",DIA_Parcival_AnyNews_LordHagen); 
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Moûn· bys jim mÍl d·t öanci.",DIA_Parcival_AnyNews_Chance);
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Nezd· se ti, ûe to p‚eh·nÌö?",DIA_Parcival_AnyNews_Overact);
+	Info_AddChoice	(DIA_Parcival_AnyNews,"Ale jsou tady, na rozd√≠l od lorda Hagena.",DIA_Parcival_AnyNews_LordHagen); 
+	Info_AddChoice	(DIA_Parcival_AnyNews,"Mo≈æn√° bys jim mƒôl d√°t ≈°anci.",DIA_Parcival_AnyNews_Chance);
+	Info_AddChoice	(DIA_Parcival_AnyNews,"Nezd√° se ti, ≈æe to p√¢eh√°n√≠≈°?",DIA_Parcival_AnyNews_Overact);
 	
 };
 
 FUNC VOID DIA_Parcival_AnyNews_LordHagen ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_LordHagen_15_00"); //Ale jsou tady, narozdÌl od lorda Hagena.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_01"); //(trpce se zasmÍje) Ano, bohuûel jsou to jedinÈ, co tady m·me.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_02"); //Innos n·s opravdu velice tÍûce zkouöÌ.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_LordHagen_15_00"); //Ale jsou tady, narozd√≠l od lorda Hagena.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_01"); //(trpce se zasmƒôje) Ano, bohu≈æel jsou to jedin√©, co tady m√°me.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_02"); //Innos n√°s opravdu velice tƒô≈æce zkou≈°√≠.
 	
 	Info_ClearChoices (DIA_Parcival_AnyNews);
 };
 
 FUNC VOID DIA_Parcival_AnyNews_Chance ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_Chance_15_00"); //Moûn· bys jim mÍl d·t öanci.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_01"); //Uû ji dostali. Bohuûel.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_02"); //Garond je p‚esvÍdËen, ûe by n·m mohli pomoci.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_03"); //Ale j· z nich nespustÌm oko. M·me uû dost problÈm˘ se sk‚ety, nepot‚ebujeme dalöÌ potÌûe.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_Chance_15_00"); //Mo≈æn√° bys jim mƒôl d√°t ≈°anci.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_01"); //U≈æ ji dostali. Bohu≈æel.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_02"); //Garond je p√¢esvƒôdƒçen, ≈æe by n√°m mohli pomoci.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_03"); //Ale j√° z nich nespust√≠m oko. M√°me u≈æ dost probl√©m≈Ø se sk√¢ety, nepot√¢ebujeme dal≈°√≠ pot√≠≈æe.
 	
 	Info_ClearChoices (DIA_Parcival_AnyNews);  
 };
 
 FUNC VOID DIA_Parcival_AnyNews_Overact ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_Overact_15_00"); //Nezd· se ti, ûe to p‚eh·nÌö?
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_01"); //To rozhodnÍ ne. V naöem postavenÌ pot‚ebujeme muûe, kte‚Ì by st·li p‚Ìkladem.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_02"); //BojovnÌky, kte‚Ì by v srdcÌch naöich voj·k˘ zaûhnuli Innos˘v ohe‡.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_03"); //MÌsto toho tahle sebranka podr˝v· mor·lku naöeho muûstva.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_Overact_15_00"); //Nezd√° se ti, ≈æe to p√¢eh√°n√≠≈°?
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_01"); //To rozhodnƒô ne. V na≈°em postaven√≠ pot√¢ebujeme mu≈æe, kte√¢√≠ by st√°li p√¢√≠kladem.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_02"); //Bojovn√≠ky, kte√¢√≠ by v srdc√≠ch na≈°ich voj√°k≈Ø za≈æhnuli Innos≈Øv ohe≈ï.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_03"); //M√≠sto toho tahle sebranka podr√Ωv√° mor√°lku na≈°eho mu≈æstva.
 };
  
 ///////////////////////////////////////////////////////////////////////
-//	Ich muss mit dir ¸ber Jan reden
+//	Ich muss mit dir √ºber Jan reden
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_Jan		(C_INFO)
@@ -418,7 +418,7 @@ instance DIA_Parcival_Jan		(C_INFO)
 	condition	 = 	DIA_Parcival_Jan_Condition;
 	information	 = 	DIA_Parcival_Jan_Info;
 	permanent	 = 	FALSE;
-	description  =	"MusÌm si s tebou promluvit o Janovi.";		
+	description  =	"Mus√≠m si s tebou promluvit o Janovi.";		
 };
 
 func int DIA_Parcival_Jan_Condition ()
@@ -431,16 +431,16 @@ func int DIA_Parcival_Jan_Condition ()
 };
 func void DIA_Parcival_Jan_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_00"); //MusÌm si s tebou promluvit o Janovi.
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_00"); //Mus√≠m si s tebou promluvit o Janovi.
 	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_01"); //Jan? Kdo je to?
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_02"); //Drakobijec. Je kov·‚.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_03"); //No ano, uû si vzpomÌn·m. Co je s nÌm?
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_04"); //Chce pracovat v kov·rnÍ.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_05"); //Nep‚ipad· v ˙vahu. Je jednÌm z nich a j· jim nevÍ‚Ìm.
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_02"); //Drakobijec. Je kov√°√¢.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_03"); //No ano, u≈æ si vzpom√≠n√°m. Co je s n√≠m?
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_04"); //Chce pracovat v kov√°rnƒô.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_05"); //Nep√¢ipad√° v √∫vahu. Je jedn√≠m z nich a j√° jim nevƒô√¢√≠m.
 }; 
  
 ///////////////////////////////////////////////////////////////////////
-//	Kannst du das mit Jan noch mal ¸berdenken?
+//	Kannst du das mit Jan noch mal √ºberdenken?
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_ThinkAgain		(C_INFO)
@@ -450,7 +450,7 @@ instance DIA_Parcival_ThinkAgain		(C_INFO)
 	condition	 = 	DIA_Parcival_ThinkAgain_Condition;
 	information	 = 	DIA_Parcival_ThinkAgain_Info;
 	permanent	 = 	TRUE;
-	description  =	"Nem˘ûeö tu vÍc s Janem jeötÍ jednou zv·ûit?";		
+	description  =	"Nem≈Ø≈æe≈° tu vƒôc s Janem je≈°tƒô jednou zv√°≈æit?";		
 };
 
 func int DIA_Parcival_ThinkAgain_Condition ()
@@ -463,12 +463,12 @@ func int DIA_Parcival_ThinkAgain_Condition ()
 };
 func void DIA_Parcival_ThinkAgain_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_ThinkAgain_15_00"); //Nem˘ûeö tu vÍc s Janem jeötÍ jednou zv·ûit?
-	AI_Output 	(self ,other,"DIA_Parcival_ThinkAgain_13_01"); //Ne, stojÌm si za sv˝m rozhodnutÌm.
+	AI_Output	(other,self ,"DIA_Parcival_ThinkAgain_15_00"); //Nem≈Ø≈æe≈° tu vƒôc s Janem je≈°tƒô jednou zv√°≈æit?
+	AI_Output 	(self ,other,"DIA_Parcival_ThinkAgain_13_01"); //Ne, stoj√≠m si za sv√Ωm rozhodnut√≠m.
 }; 
  
 ///////////////////////////////////////////////////////////////////////
-//	Garond will, dass Jan die Schmiede ¸bernimmt.
+//	Garond will, dass Jan die Schmiede √ºbernimmt.
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_TalkedGarond		(C_INFO)
@@ -478,7 +478,7 @@ instance DIA_Parcival_TalkedGarond		(C_INFO)
 	condition	 = 	DIA_Parcival_TalkedGarond_Condition;
 	information	 = 	DIA_Parcival_TalkedGarond_Info;
 
-	description  =	"Garond chce, aby se Jan staral o kov·rnu.";		
+	description  =	"Garond chce, aby se Jan staral o kov√°rnu.";		
 };
 
 func int DIA_Parcival_TalkedGarond_Condition ()
@@ -492,9 +492,9 @@ func int DIA_Parcival_TalkedGarond_Condition ()
 };
 func void DIA_Parcival_TalkedGarond_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_TalkedGarond_15_00"); //Garond chce, aby se Jan staral o kov·rnu.
-	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_01"); //Hmm. Pokud to je tak, a„ si tu kov·rnu klidnÍ m·.
-	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_02"); //I kdyû si myslÌm, ûe vÍ‚it tomu Janovi je velk· chyba.
+	AI_Output	(other,self ,"DIA_Parcival_TalkedGarond_15_00"); //Garond chce, aby se Jan staral o kov√°rnu.
+	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_01"); //Hmm. Pokud to je tak, aƒÉ si tu kov√°rnu klidnƒô m√°.
+	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_02"); //I kdy≈æ si mysl√≠m, ≈æe vƒô√¢it tomu Janovi je velk√° chyba.
 };  
 
 ///////////////////////////////////////////////////////////////////////
@@ -508,7 +508,7 @@ instance DIA_Parcival_PERMKAP4		(C_INFO)
 	information	 = 	DIA_Parcival_PERMKAP4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"A kromÍ toho?";
+	description	 = 	"A kromƒô toho?";
 };
 
 func int DIA_Parcival_PERMKAP4_Condition ()
@@ -522,8 +522,8 @@ func int DIA_Parcival_PERMKAP4_Condition ()
 
 func void DIA_Parcival_PERMKAP4_Info ()
 {
-	AI_Output			(other, self, "DIA_Parcival_PERMKAP4_15_00"); //A kromÍ toho?
-	AI_Output			(self, other, "DIA_Parcival_PERMKAP4_13_01"); //Ale, nech mÍ uû b˝t!
+	AI_Output			(other, self, "DIA_Parcival_PERMKAP4_15_00"); //A kromƒô toho?
+	AI_Output			(self, other, "DIA_Parcival_PERMKAP4_13_01"); //Ale, nech mƒô u≈æ b√Ωt!
 
 };
 
@@ -584,8 +584,8 @@ func int DIA_Parcival_VERRAETER_Condition ()
 func void DIA_Parcival_VERRAETER_Info ()
 {
 	
-	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_00"); //Zr·dce! Jsem si jist˝, ûes to byl TY, kdo otev‚el br·nu.
-	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_01"); //Za to zaplatÌö.
+	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_00"); //Zr√°dce! Jsem si jist√Ω, ≈æes to byl TY, kdo otev√¢el br√°nu.
+	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_01"); //Za to zaplat√≠≈°.
 	
 	Npc_SetRefuseTalk (self,30);
 	AI_StopProcessInfos (self);

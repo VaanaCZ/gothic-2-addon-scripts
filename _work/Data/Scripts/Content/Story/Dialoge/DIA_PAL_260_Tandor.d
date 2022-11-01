@@ -44,15 +44,15 @@ func int DIA_Tandor_Hallo_Condition ()
 };
 func void DIA_Tandor_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_00"); //Proöel jsi p‚es pr˘smyk? Dobr· pr·ce. Uû jsme tam ztratili vÌc neû dost dobr˝ch muû˘.
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_01"); //S·m dob‚e vÌm, jak to tam vypad· - jeden Ëas jsem byl u pr˘zkumnÈ jednotky.
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_02"); //M·ö zbra‡? Jestli pot‚ebujeö dobrou zbra‡, tak jsi tady spr·vnÍ.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_00"); //Pro≈°el jsi p√¢es pr≈Øsmyk? Dobr√° pr√°ce. U≈æ jsme tam ztratili v√≠c ne≈æ dost dobr√Ωch mu≈æ≈Ø.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_01"); //S√°m dob√¢e v√≠m, jak to tam vypad√° - jeden ƒças jsem byl u pr≈Øzkumn√© jednotky.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_02"); //M√°≈° zbra≈ï? Jestli pot√¢ebuje≈° dobrou zbra≈ï, tak jsi tady spr√°vnƒô.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Tandor na hradÍ obchoduje se zbranÍmi.");
+	B_LogEntry (TOPIC_Trader_OC,"Tandor na hradƒô obchoduje se zbranƒômi.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Sp‰htrupp
+//	Info Sp√§htrupp
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Tandor_Trupp		(C_INFO)
 {
@@ -73,10 +73,10 @@ func int DIA_Tandor_Trupp_Condition ()
 func void DIA_Tandor_Trupp_Info ()
 {
 	AI_Output (other, self, "DIA_Tandor_Trupp_15_00"); //Co se s tou jednotkou stalo?
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_01"); //Prozkoum·vali jsme oblast a chtÍli se dostat na pob‚eûÌ. Ut·bo‚ili jsme se v jeskyni.
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_02"); //PozdÍ v noci p‚iöli sk‚eti. äturmovali po svahu s pochodnÍmi a bubny - a naöli n·s.
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_03"); //Pokusili jsme se uprchnout, ale byl jsem jedin˝, komu se poda‚ilo odtamtud vyv·znout.
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_04"); //Kr·tce na to postavili sk‚eti svou palis·du, tak jsme se st·hli do hradu.
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_01"); //Prozkoum√°vali jsme oblast a chtƒôli se dostat na pob√¢e≈æ√≠. Ut√°bo√¢ili jsme se v jeskyni.
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_02"); //Pozdƒô v noci p√¢i≈°li sk√¢eti. ≈†turmovali po svahu s pochodnƒômi a bubny - a na≈°li n√°s.
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_03"); //Pokusili jsme se uprchnout, ale byl jsem jedin√Ω, komu se poda√¢ilo odtamtud vyv√°znout.
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_04"); //Kr√°tce na to postavili sk√¢eti svou palis√°du, tak jsme se st√°hli do hradu.
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info Trade
@@ -89,7 +89,7 @@ instance DIA_Tandor_Trade		(C_INFO)
 	information	 = 	DIA_Tandor_Trade_Info;
 	permanent 	 =  TRUE;
 	trade		 =	TRUE;
-	description	 = 	"Ukaû mi svÈ zboûÌ.";
+	description	 = 	"Uka≈æ mi sv√© zbo≈æ√≠.";
 };
 func int DIA_Tandor_Trade_Condition ()
 {
@@ -98,7 +98,7 @@ func int DIA_Tandor_Trade_Condition ()
 func void DIA_Tandor_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Tandor_Trade_15_00"); //Ukaû mi svÈ zboûÌ.
+	AI_Output (other, self, "DIA_Tandor_Trade_15_00"); //Uka≈æ mi sv√© zbo≈æ√≠.
 };		
 ///////////////////////////////////////////////////////////////////////
 //	Info DIA_Tandor_Equipment
@@ -109,7 +109,7 @@ instance DIA_Tandor_Equipment		(C_INFO)
 	nr		 	 =  3;
 	condition	 = 	DIA_Tandor_Equipment_Condition;
 	information	 = 	DIA_Tandor_Equipment_Info;
-	description	 = 	"PosÌl· mÍ Garond - pot‚ebuju vybavit.";
+	description	 = 	"Pos√≠l√° mƒô Garond - pot√¢ebuju vybavit.";
 };
 
 func int DIA_Tandor_Equipment_Condition ()
@@ -123,57 +123,57 @@ func int DIA_Tandor_Equipment_Condition ()
 };
 func void DIA_Tandor_Equipment_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_15_00"); //PosÌl· mÍ Garond - pot‚ebuju se vybavit.
-	AI_Output (self, other, "DIA_Tandor_Equipment_08_01"); //Zbra‡ na blÌzko, nebo na d·lku?
+	AI_Output (other, self, "DIA_Tandor_Equipment_15_00"); //Pos√≠l√° mƒô Garond - pot√¢ebuju se vybavit.
+	AI_Output (self, other, "DIA_Tandor_Equipment_08_01"); //Zbra≈ï na bl√≠zko, nebo na d√°lku?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Na blÌzko.",DIA_Tandor_Equipment_Nah);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Na d·lku.",DIA_Tandor_Equipment_Fern);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"Na bl√≠zko.",DIA_Tandor_Equipment_Nah);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"Na d√°lku.",DIA_Tandor_Equipment_Fern);
 };
 FUNC VOID DIA_Tandor_Equipment_Nah()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Nah_15_00"); //Na blÌzko.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Nah_08_01"); //Bojujeö jednou rukou, nebo obÍma?
+	AI_Output (other, self, "DIA_Tandor_Equipment_Nah_15_00"); //Na bl√≠zko.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Nah_08_01"); //Bojuje≈° jednou rukou, nebo obƒôma?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
 	Info_AddChoice 	  (DIA_Tandor_Equipment,"Jednou rukou.",DIA_Tandor_Equipment_Ein);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"ObÍma rukama.",DIA_Tandor_Equipment_Zwei);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"Obƒôma rukama.",DIA_Tandor_Equipment_Zwei);
 };
 FUNC VOID DIA_Tandor_Equipment_Fern()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Fern_15_00"); //Na d·lku.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Fern_08_01"); //Luk, nebo kuöi?
+	AI_Output (other, self, "DIA_Tandor_Equipment_Fern_15_00"); //Na d√°lku.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Fern_08_01"); //Luk, nebo ku≈°i?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
 	Info_AddChoice 	  (DIA_Tandor_Equipment,"Luk",DIA_Tandor_Equipment_Bow);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Kuöe",DIA_Tandor_Equipment_Crossbow);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"Ku≈°e",DIA_Tandor_Equipment_Crossbow);
 };	
 FUNC VOID DIA_Tandor_Equipment_Ein()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Ein_15_00"); //Jednou rukou.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Ein_08_01"); //Tak si vezmi tohle. Je to dobr· zbra‡.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Ein_08_01"); //Tak si vezmi tohle. Je to dobr√° zbra≈ï.
 	B_GiveInvItems (self,other, ItMw_Steinbrecher,1);
 	Info_ClearChoices (DIA_Tandor_Equipment);
 };
 FUNC VOID DIA_Tandor_Equipment_Zwei()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Zwei_15_00"); //ObÍma rukama.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Zwei_08_01"); //S tÌmhle obouruË·kem bys mÍl b˝t spokojen˝.
+	AI_Output (other, self, "DIA_Tandor_Equipment_Zwei_15_00"); //Obƒôma rukama.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Zwei_08_01"); //S t√≠mhle obouruƒç√°kem bys mƒôl b√Ωt spokojen√Ω.
 	B_GiveInvItems (self,other,ItMw_Zweihaender1 ,1);
 	Info_ClearChoices (DIA_Tandor_Equipment);
 };
 FUNC VOID DIA_Tandor_Equipment_Bow()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Bow_15_00"); //Luk.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Bow_08_01"); //Tenhle loveck˝ luk je pro tebe jako dÍlan˝. D·m ti takÈ nÍjakÈ öÌpy.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Bow_08_01"); //Tenhle loveck√Ω luk je pro tebe jako dƒôlan√Ω. D√°m ti tak√© nƒôjak√© ≈°√≠py.
 	B_GiveInvItems (self,other,ItRw_Bow_L_03 ,1);
 	B_GiveInvItems (self,other, ItRw_Arrow,50);
 	Info_ClearChoices (DIA_Tandor_Equipment);
 };
 FUNC VOID DIA_Tandor_Equipment_Crossbow()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Crossbow_15_00"); //Kuöe.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Crossbow_08_01"); //V tom p‚ÌpadÍ si vezmi tuhle lehkou kuöi. M˘ûu ti d·t takÈ nÍjakÈ öipky.
+	AI_Output (other, self, "DIA_Tandor_Equipment_Crossbow_15_00"); //Ku≈°e.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Crossbow_08_01"); //V tom p√¢√≠padƒô si vezmi tuhle lehkou ku≈°i. M≈Ø≈æu ti d√°t tak√© nƒôjak√© ≈°ipky.
 	B_GiveInvItems (self,other, ItRw_Crossbow_L_02,1);
 	B_GiveInvItems (self,other, ItRw_Bolt,50);
 	Info_ClearChoices (DIA_Tandor_Equipment);
@@ -256,7 +256,7 @@ instance DIA_Tandor_News		(C_INFO)
 	condition	 = 	DIA_Tandor_News_Condition;
 	information	 = 	DIA_Tandor_News_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"NÍco novÈho?";
+	description	 = 	"Nƒôco nov√©ho?";
 };
 
 func int DIA_Tandor_News_Condition ()
@@ -270,16 +270,16 @@ func int DIA_Tandor_News_Condition ()
 
 func void DIA_Tandor_News_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_News_15_00"); //NÍco novÈho?
+	AI_Output (other, self, "DIA_Tandor_News_15_00"); //Nƒôco nov√©ho?
 
 	if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self, other, "DIA_Tandor_News_08_01"); //V poslednÌ dobÍ se stala jedin· vÍc - p‚iöli drakobijci.
+			AI_Output (self, other, "DIA_Tandor_News_08_01"); //V posledn√≠ dobƒô se stala jedin√° vƒôc - p√¢i≈°li drakobijci.
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Tandor_News_08_02"); //P‚ijeli drakobijci.
-			AI_Output (self, other, "DIA_Tandor_News_08_03"); //VypadajÌ jako pÍknÍ tvrdÌ parchanti - a to douf·m jsou, protoûe jinak moc dlouho nevydrûÌ.
+			AI_Output (self, other, "DIA_Tandor_News_08_02"); //P√¢ijeli drakobijci.
+			AI_Output (self, other, "DIA_Tandor_News_08_03"); //Vypadaj√≠ jako pƒôknƒô tvrd√≠ parchanti - a to douf√°m jsou, proto≈æe jinak moc dlouho nevydr≈æ√≠.
 		};
 };
 //#####################################################################
@@ -326,7 +326,7 @@ instance DIA_Tandor_WASISTLOS		(C_INFO)
 	information	 = 	DIA_Tandor_WASISTLOS_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Netv·‚Ìö se zrovna ö„astnÍ.";
+	description	 = 	"Netv√°√¢√≠≈° se zrovna ≈°ƒÉastnƒô.";
 };
 
 func int DIA_Tandor_WASISTLOS_Condition ()
@@ -340,15 +340,15 @@ func int DIA_Tandor_WASISTLOS_Condition ()
 
 func void DIA_Tandor_WASISTLOS_Info ()
 {
-	AI_Output			(other, self, "DIA_Tandor_WASISTLOS_15_00"); //Netv·‚Ìö se zrovna ö„astnÍ.
+	AI_Output			(other, self, "DIA_Tandor_WASISTLOS_15_00"); //Netv√°√¢√≠≈° se zrovna ≈°ƒÉastnƒô.
 
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_01"); //Sk‚et˘ bude st·le vÌc a vÌc. Dokud nebude po n·s.
+	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_01"); //Sk√¢et≈Ø bude st√°le v√≠c a v√≠c. Dokud nebude po n√°s.
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_02"); //Uû t˝den jsem po‚·dnÍ nejedl. M·m hlad jako vlk.
+	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_02"); //U≈æ t√Ωden jsem po√¢√°dnƒô nejedl. M√°m hlad jako vlk.
 	};
 };
 

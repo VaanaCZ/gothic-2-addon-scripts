@@ -49,11 +49,11 @@ FUNC VOID DIA_Lares_DI_Hallo_Info()
 
 	if (ORkSturmDI == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_01"); //PospÍö si. Ti sk‚eti se urËitÍ vr·tÌ.
+		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_01"); //Pospƒô≈° si. Ti sk√¢eti se urƒçitƒô vr√°t√≠.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_02"); //Fajn. Tahle jeskynÍ je fakt straöideln·.
+		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_02"); //Fajn. Tahle jeskynƒô je fakt stra≈°ideln√°.
 	};
 };
 
@@ -69,7 +69,7 @@ INSTANCE DIA_Lares_DI_Training (C_INFO)
 	information	= DIA_Lares_DI_Training_Info;
 	permanent	 = 	TRUE;
 
-	description = "NauË mÍ nÍco z tv˝ch schopnostÌ.";
+	description = "Nauƒç mƒô nƒôco z tv√Ωch schopnost√≠.";
 };                       
 FUNC INT DIA_Lares_DI_Training_Condition()
 {
@@ -81,14 +81,14 @@ FUNC INT DIA_Lares_DI_Training_Condition()
 
 FUNC VOID DIA_Lares_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //NauË mÍ nÍco ze sv˝ch schopnostÌ.
-	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //é·dn˝ problÈm.
+	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //Nauƒç mƒô nƒôco ze sv√Ωch schopnost√≠.
+	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //≈Ω√°dn√Ω probl√©m.
 	
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "NauËit se plÌûenÌ"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Nauƒçit se pl√≠≈æen√≠"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -101,13 +101,13 @@ FUNC VOID DIA_Lares_DI_Training_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //MusÌö pokrËit nohu, co je vp‚edu, a tu druhou udrûovat napjatou. Tak zÌsk·ö pevnÍjöÌ postoj.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //Mus√≠≈° pokrƒçit nohu, co je vp√¢edu, a tu druhou udr≈æovat napjatou. Tak z√≠sk√°≈° pevnƒôj≈°√≠ postoj.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "NauËit se plÌûenÌ"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Nauƒçit se pl√≠≈æen√≠"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -120,13 +120,13 @@ FUNC VOID DIA_Lares_DI_Training_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_5_09_00"); //Z˘sta‡ pruûn˝ v kyËlÌch. To ti umoûnÌ uskoËit p‚ed proti˙tokem.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_5_09_00"); //Z≈Østa≈ï pru≈æn√Ω v kyƒçl√≠ch. To ti umo≈æn√≠ uskoƒçit p√¢ed proti√∫tokem.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "NauËit se plÌûenÌ"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Nauƒçit se pl√≠≈æen√≠"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -144,14 +144,14 @@ func void DIA_Lares_DI_Training_DEX_1 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 1, T_MED))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_1_09_00"); //Tv· hornÌ polovina musÌ pracovat v souladu se zbytkem tÍla.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_1_09_00"); //Tv√° horn√≠ polovina mus√≠ pracovat v souladu se zbytkem tƒôla.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "NauËit se plÌûenÌ"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Nauƒçit se pl√≠≈æen√≠"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -168,14 +168,14 @@ func void DIA_Lares_DI_Training_DEX_5 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 5, T_MED))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_5_09_00"); //Vûdycky by sis mÍl hlÌdat svÈ postavenÌ.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_5_09_00"); //V≈ædycky by sis mƒôl hl√≠dat sv√© postaven√≠.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "NauËit se plÌûenÌ"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Nauƒçit se pl√≠≈æen√≠"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -189,14 +189,14 @@ func void DIA_Lares_DI_Training_SNEAK ()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_SNEAK_09_00"); //P‚i plÌûenÌ vûdycky vyuûÌvej celou plochu sv˝ch chodidel.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_SNEAK_09_00"); //P√¢i pl√≠≈æen√≠ v≈ædycky vyu≈æ√≠vej celou plochu sv√Ωch chodidel.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "NauËit se plÌûenÌ"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Nauƒçit se pl√≠≈æen√≠"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -223,7 +223,7 @@ INSTANCE DIA_Lares_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_Lares_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description = "V·ûnÍ nevypad·ö, ûe by tÍ to vöechno mohlo zajÌmat.";
+	description = "V√°≈ænƒô nevypad√°≈°, ≈æe by tƒô to v≈°echno mohlo zaj√≠mat.";
 };                       
 FUNC INT DIA_Lares_DI_UndeadDragonDead_Condition()
 {
@@ -236,13 +236,13 @@ FUNC INT DIA_Lares_DI_UndeadDragonDead_Condition()
 var int DIA_Lares_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_Lares_DI_UndeadDragonDead_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_00"); //V·ûnÍ nevypad·ö, ûe by tÍ to vöechno mohlo zajÌmat.
-	AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_01"); //No, vûdy„ vÌö. MÍl jsem dojem, ûe ses o to postaral ty.
+	AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_00"); //V√°≈ænƒô nevypad√°≈°, ≈æe by tƒô to v≈°echno mohlo zaj√≠mat.
+	AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_01"); //No, v≈ædyƒÉ v√≠≈°. Mƒôl jsem dojem, ≈æe ses o to postaral ty.
 
 	if (DIA_Lares_DI_UndeadDragonDead_OneTime == FALSE )
 	{
-		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //Co budeö dÍlat d·l?
-		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Nem·m tuöenÌ. H·d·m, ûe p˘jdu s tebou.
+		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //Co bude≈° dƒôlat d√°l?
+		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Nem√°m tu≈°en√≠. H√°d√°m, ≈æe p≈Øjdu s tebou.
 		
 		DIA_Lares_DI_UndeadDragonDead_OneTime = TRUE;
 	};

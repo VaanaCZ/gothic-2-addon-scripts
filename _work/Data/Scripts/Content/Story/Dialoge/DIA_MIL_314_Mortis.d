@@ -44,7 +44,7 @@ func int DIA_Mortis_Hallo_Condition ()
 };
 func void DIA_Mortis_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Mortis_Hallo_13_00"); //Co chceš? Peck tady není. Take nic nedostaneš. Pâijë pozdêji.
+	AI_Output (self, other, "DIA_Mortis_Hallo_13_00"); //Co chceÅ¡? Peck tady nenÃ­. TakÅ¾e nic nedostaneÅ¡. PÃ¢ijÃ« pozdÄ™ji.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -72,8 +72,8 @@ func int DIA_Mortis_Waffe_Condition ()
 func void DIA_Mortis_Waffe_Info ()
 {
 	AI_Output (other, self, "DIA_Mortis_Waffe_15_00"); //Kde je Peck?
-	AI_Output (self, other, "DIA_Mortis_Waffe_13_01"); //Jsi u nás novı, co? V tom pâípadê vítej mezi námi.
-	AI_Output (self, other, "DIA_Mortis_Waffe_13_02"); //Peck u je ve mêstê vánê dost dlouho. Vsadím se, e se zase motá kolem té slaëouèké Vanji u Èervené lucerny.
+	AI_Output (self, other, "DIA_Mortis_Waffe_13_01"); //Jsi u nÃ¡s novÃ½, co? V tom pÃ¢Ã­padÄ™ vÃ­tej mezi nÃ¡mi.
+	AI_Output (self, other, "DIA_Mortis_Waffe_13_02"); //Peck uÅ¾ je ve mÄ™stÄ™ vÃ¡Å¾nÄ™ dost dlouho. VsadÃ­m se, Å¾e se zase motÃ¡ kolem tÃ© slaÃ«ouÄkÃ© Vanji u ÄŒervenÃ© lucerny.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Paket
@@ -85,7 +85,7 @@ instance DIA_Mortis_Paket		(C_INFO)
 	condition	 = 	DIA_Mortis_Paket_Condition;
 	information	 = 	DIA_Mortis_Paket_Info;
 	permanent    =  FALSE;
-	description  =  "Co víš o tom balíku bainného bılí?";
+	description  =  "Co vÃ­Å¡ o tom balÃ­ku baÅ¾innÃ©ho bÃ½lÃ­?";
 };
 
 func int DIA_Mortis_Paket_Condition ()
@@ -97,12 +97,12 @@ func int DIA_Mortis_Paket_Condition ()
 };
 func void DIA_Mortis_Paket_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Paket_15_00"); //Co víš o tom balíku trávy z bain?
-	AI_Output (self, other, "DIA_Mortis_Paket_13_01"); //Hm... kdy jsem byl poslednê v pâístavní krèmê, slyšel jsem, jak se o nêm baví Kardif s nêjakım dalším chlapíkem.
-	AI_Output (other, self, "DIA_Mortis_Paket_15_02"); //Kdo byl ten druhej chlápek?
-	AI_Output (self, other, "DIA_Mortis_Paket_13_03"); //Nemám tušení. Ale âíkal, e pro své rostlinky našel nejlepší moné místo - pak se oba zaèali chlámat jako opilí skâeti.
+	AI_Output (other, self, "DIA_Mortis_Paket_15_00"); //Co vÃ­Å¡ o tom balÃ­ku trÃ¡vy z baÅ¾in?
+	AI_Output (self, other, "DIA_Mortis_Paket_13_01"); //Hm... kdyÅ¾ jsem byl poslednÄ™ v pÃ¢Ã­stavnÃ­ krÄmÄ™, slyÅ¡el jsem, jak se o nÄ™m bavÃ­ Kardif s nÄ™jakÃ½m dalÅ¡Ã­m chlapÃ­kem.
+	AI_Output (other, self, "DIA_Mortis_Paket_15_02"); //Kdo byl ten druhej chlÃ¡pek?
+	AI_Output (self, other, "DIA_Mortis_Paket_13_03"); //NemÃ¡m tuÅ¡enÃ­. Ale Ã¢Ã­kal, Å¾e pro svÃ© rostlinky naÅ¡el nejlepÅ¡Ã­ moÅ¾nÃ© mÃ­sto - pak se oba zaÄali chlÃ¡mat jako opilÃ­ skÃ¢eti.
 	
-	B_LogEntry (TOPIC_WAREHOUSE,"Mortis zaslechl, jak se hospodskı Kardif v pâístavní krèmê domlouvá s nêjakım dalším muem o balíku trávy. Dohadovali se o tom, kde ji uskladnit.");
+	B_LogEntry (TOPIC_WAREHOUSE,"Mortis zaslechl, jak se hospodskÃ½ Kardif v pÃ¢Ã­stavnÃ­ krÄmÄ™ domlouvÃ¡ s nÄ™jakÃ½m dalÅ¡Ã­m muÅ¾em o balÃ­ku trÃ¡vy. Dohadovali se o tom, kde ji uskladnit.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Redlight
@@ -114,7 +114,7 @@ instance DIA_Mortis_Redlight		(C_INFO)
 	condition	 = 	DIA_Mortis_Redlight_Condition;
 	information	 = 	DIA_Mortis_Redlight_Info;
 	permanent    =  FALSE;
-	description  =  "Co víš o pâístavní ètvrti?";
+	description  =  "Co vÃ­Å¡ o pÃ¢Ã­stavnÃ­ Ätvrti?";
 };
 
 func int DIA_Mortis_Redlight_Condition ()
@@ -126,13 +126,13 @@ func int DIA_Mortis_Redlight_Condition ()
 };
 func void DIA_Mortis_Redlight_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Redlight_15_00"); //Co víš o pâístavní ètvrti? Rád bych našel toho, kdo tu trávu z bain prodává.
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_01"); //Nooo, ti chlápci odtamtud toho moc nenamluví, a rozhodnê neâeknou nic nêkomu, kdo je od mêstské stráe.
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_02"); //Jestli chceš tam dole nêco zjistit, mêl bys - ne, MUSÍŠ - si sundat brnêní.
-	AI_Output (other, self, "DIA_Mortis_Redlight_15_03"); //Dobrá, a potom?
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_04"); //Nejlepší asi bude zajít do krèmy a bordelu. Jestli se nêkde nêco dozvíš, tak právê tam.
+	AI_Output (other, self, "DIA_Mortis_Redlight_15_00"); //Co vÃ­Å¡ o pÃ¢Ã­stavnÃ­ Ätvrti? RÃ¡d bych naÅ¡el toho, kdo tu trÃ¡vu z baÅ¾in prodÃ¡vÃ¡.
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_01"); //Nooo, ti chlÃ¡pci odtamtud toho moc nenamluvÃ­, a rozhodnÄ™ neÃ¢eknou nic nÄ™komu, kdo je od mÄ™stskÃ© strÃ¡Å¾e.
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_02"); //Jestli chceÅ¡ tam dole nÄ™co zjistit, mÄ™l bys - ne, MUSÃÅ  - si sundat brnÄ™nÃ­.
+	AI_Output (other, self, "DIA_Mortis_Redlight_15_03"); //DobrÃ¡, a potom?
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_04"); //NejlepÅ¡Ã­ asi bude zajÃ­t do krÄmy a bordelu. Jestli se nÄ™kde nÄ™co dozvÃ­Å¡, tak prÃ¡vÄ™ tam.
 	
-	B_LogEntry (TOPIC_REDLIGHT,"Mortis se domnívá, e kdy si budu chtít v pâístavu koupit trávu, radši bych na sobê nemêl mít ádnou zbroj. Nejspíš bych to mêl zkusit v krèmê nebo v nevêstinci.");
+	B_LogEntry (TOPIC_REDLIGHT,"Mortis se domnÃ­vÃ¡, Å¾e kdyÅ¾ si budu chtÃ­t v pÃ¢Ã­stavu koupit trÃ¡vu, radÅ¡i bych na sobÄ™ nemÄ™l mÃ­t Å¾Ã¡dnou zbroj. NejspÃ­Å¡ bych to mÄ™l zkusit v krÄmÄ™ nebo v nevÄ™stinci.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach
@@ -144,7 +144,7 @@ instance DIA_Mortis_CanTeach		(C_INFO)
 	condition	 = 	DIA_Mortis_CanTeach_Condition;
 	information	 = 	DIA_Mortis_CanTeach_Info;
 	permanent    =  TRUE;
-	description	 = 	"Chci se stát silnêjším.";
+	description	 = 	"Chci se stÃ¡t silnÄ™jÅ¡Ã­m.";
 };
 
 func int DIA_Mortis_CanTeach_Condition ()
@@ -156,20 +156,20 @@ func int DIA_Mortis_CanTeach_Condition ()
 };
 func void DIA_Mortis_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_CanTeach_15_00"); //Chci se stát silnêjším.
+	AI_Output (other, self, "DIA_Mortis_CanTeach_15_00"); //Chci se stÃ¡t silnÄ™jÅ¡Ã­m.
 	
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Mortis_CanTeach_13_01"); //Jasnê. Jestli jsi dost zkušenı, mùu ti pomoci s tréninkem.
+		AI_Output (self, other, "DIA_Mortis_CanTeach_13_01"); //JasnÄ™. Jestli jsi dost zkuÅ¡enÃ½, mÅ¯Å¾u ti pomoci s trÃ©ninkem.
 		Mortis_TeachSTR = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Mortis_CanTeach_13_02"); //Jasnê e bys chtêl. Ale protoe nejsi ani jeden z nás, ani paladin, tak z toho nic nebude.
+		AI_Output (self, other, "DIA_Mortis_CanTeach_13_02"); //JasnÄ™ Å¾e bys chtÄ™l. Ale protoÅ¾e nejsi ani jeden z nÃ¡s, ani paladin, tak z toho nic nebude.
 	};
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Mortis, pâíslušník mêstské gardy, mi mùe pomoci zvıšit sílu.");
+	B_LogEntry (Topic_CityTeacher, "Mortis, pÃ¢Ã­sluÅ¡nÃ­k mÄ™stskÃ© gardy, mi mÅ¯Å¾e pomoci zvÃ½Å¡it sÃ­lu.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -181,7 +181,7 @@ instance DIA_Mortis_Teach		(C_INFO)
 	condition	 = 	DIA_Mortis_Teach_Condition;
 	information	 = 	DIA_Mortis_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chci se stát silnêjším.";
+	description	 = 	"Chci se stÃ¡t silnÄ™jÅ¡Ã­m.";
 };
 func int DIA_Mortis_Teach_Condition ()
 {	
@@ -192,7 +192,7 @@ func int DIA_Mortis_Teach_Condition ()
 };
 func void DIA_Mortis_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Teach_15_00"); //Chci se stát silnêjším.
+	AI_Output (other, self, "DIA_Mortis_Teach_15_00"); //Chci se stÃ¡t silnÄ™jÅ¡Ã­m.
 	
 	Info_ClearChoices   (DIA_Mortis_Teach);
 	Info_AddChoice 		(DIA_Mortis_Teach, DIALOG_BACK, DIA_Mortis_Teach_BACK);
@@ -204,7 +204,7 @@ func void DIA_Mortis_Teach_BACK()
 {
 	if (other.attribute[ATR_STRENGTH] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Mortis_Teach_13_00"); //U jsi dost silnı. Jestli chceš trénovat dál, musíš se poohlédnout po nêkom jiném.
+		AI_Output (self, other, "DIA_Mortis_Teach_13_00"); //UÅ¾ jsi dost silnÃ½. Jestli chceÅ¡ trÃ©novat dÃ¡l, musÃ­Å¡ se poohlÃ©dnout po nÄ™kom jinÃ©m.
 	};
 	Info_ClearChoices (DIA_Mortis_TEACH);
 };

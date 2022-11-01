@@ -40,9 +40,9 @@ func int DIA_PAL_298_Pass_Condition ()
 func void DIA_PAL_298_Pass_Info ()
 {
 	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//Kam vede tahle cesta?
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Za vraty leží prùsmyk do Hornického údolí.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//My jsme na téhle stranê - na té druhé se zakopalo nêkolik skâetù.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Bude lepší, když se vrátíš - tudy neprojdeš.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Za vraty leÅ¾Ã­ prÅ¯smyk do HornickÃ©ho ÃºdolÃ­.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//My jsme na tÃ©hle stranÄ™ - na tÃ© druhÃ© se zakopalo nÄ™kolik skÃ¢etÅ¯.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Bude lepÅ¡Ã­, kdyÅ¾ se vrÃ¡tÃ­Å¡ - tudy neprojdeÅ¡.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRESPASS
@@ -65,9 +65,9 @@ func int DIA_PAL_298_TRESPASS_Condition ()
 };
 func void DIA_PAL_298_TRESPASS_Info ()
 {
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//Vážnê tam chceš jít? Obávám se, že se moc daleko nedostaneš - na druhé stranê jsou skâeti.
-	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Pokud do Hornického údolí vede nêjaká cesta, tak ji najdu.
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//Dobrá, v tom pâípadê bêž. Nechã tê Innos doprovází.
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//VÃ¡Å¾nÄ™ tam chceÅ¡ jÃ­t? ObÃ¡vÃ¡m se, Å¾e se moc daleko nedostaneÅ¡ - na druhÃ© stranÄ™ jsou skÃ¢eti.
+	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Pokud do HornickÃ©ho ÃºdolÃ­ vede nÄ™jakÃ¡ cesta, tak ji najdu.
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//DobrÃ¡, v tom pÃ¢Ã­padÄ™ bÄ™Å¾. NechÄƒ tÄ™ Innos doprovÃ¡zÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 
@@ -79,7 +79,7 @@ instance DIA_PAL_298_Perm1		(C_INFO)
 	condition	 = 	DIA_PAL_298_Perm1_Condition;
 	information	 = 	DIA_PAL_298_Perm1_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"A co když to pâece jenom risknu?";
+	description	 = 	"A co kdyÅ¾ to pÃ¢ece jenom risknu?";
 };
 func int DIA_PAL_298_Perm1_Condition ()
 {	
@@ -91,8 +91,8 @@ func int DIA_PAL_298_Perm1_Condition ()
 };
 func void DIA_PAL_298_Perm1_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//A co když to pâece jenom risknu?
-	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Pak zemâeš. Proto tady jsme. Abychom tê uchránili pâed tak hloupými nápady.
+	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//A co kdyÅ¾ to pÃ¢ece jenom risknu?
+	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Pak zemÃ¢eÅ¡. Proto tady jsme. Abychom tÄ™ uchrÃ¡nili pÃ¢ed tak hloupÃ½mi nÃ¡pady.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 
@@ -115,8 +115,8 @@ func int DIA_PAL_298_Perm2_Condition ()
 };
 func void DIA_PAL_298_Perm2_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Perm2_15_00");//Jak to vypadá?
-	AI_Output (self, other, "DIA_PAL_298_Perm2_09_01");//Všechno v poâádku. Máme situaci pod kontrolou.
+	AI_Output (other, self, "DIA_PAL_298_Perm2_15_00");//Jak to vypadÃ¡?
+	AI_Output (self, other, "DIA_PAL_298_Perm2_09_01");//VÅ¡echno v poÃ¢Ã¡dku. MÃ¡me situaci pod kontrolou.
 };
 
 

@@ -28,7 +28,7 @@ INSTANCE DIA_Garwig_Wurst(C_INFO)
 	condition	= DIA_Garwig_Wurst_Condition;
 	information	= DIA_Garwig_Wurst_Info;
 	permanent	= FALSE;
-	description = "Nedal by sis klobásu?";
+	description = "Nedal by sis klobÃ¡su?";
 };                       
 
 FUNC INT DIA_Garwig_Wurst_Condition()
@@ -44,8 +44,8 @@ FUNC INT DIA_Garwig_Wurst_Condition()
 
 FUNC VOID DIA_Garwig_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Garwig_Wurst_15_00"); //Nedal by sis klobásu?
-	AI_Output (self, other, "DIA_Garwig_Wurst_06_01"); //Hmm - ta je vıborná. Dêkuji ti mockrát, bratâe.
+	AI_Output (other, self, "DIA_Garwig_Wurst_15_00"); //Nedal by sis klobÃ¡su?
+	AI_Output (self, other, "DIA_Garwig_Wurst_06_01"); //Hmm - ta je vÃ½bornÃ¡. DÄ™kuji ti mockrÃ¡t, bratÃ¢e.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -80,9 +80,9 @@ FUNC INT DIA_Garwig_Hello_Condition()
 };
 FUNC VOID DIA_Garwig_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Garwig_Hello_06_00"); //Innos tê doprovázej... Nikdy jsem tê tu nevidêl, jsi tady novı?
-	AI_Output (other ,self,"DIA_Garwig_Hello_15_01"); //Ano, právê jsem sem vstoupil.
-	AI_Output (self ,other,"DIA_Garwig_Hello_06_02"); //V tom pâípadê doufám, e si tady brzy zvykneš. Dej mi vêdêt, kdybys potâeboval s nêèím pomoci.
+	AI_Output (self ,other,"DIA_Garwig_Hello_06_00"); //Innos tÄ™ doprovÃ¡zej... Nikdy jsem tÄ™ tu nevidÄ™l, jsi tady novÃ½?
+	AI_Output (other ,self,"DIA_Garwig_Hello_15_01"); //Ano, prÃ¡vÄ™ jsem sem vstoupil.
+	AI_Output (self ,other,"DIA_Garwig_Hello_06_02"); //V tom pÃ¢Ã­padÄ™ doufÃ¡m, Å¾e si tady brzy zvykneÅ¡. Dej mi vÄ™dÄ™t, kdybys potÃ¢eboval s nÄ™ÄÃ­m pomoci.
 };
 //**************************************************************************
 //	Info Hello 
@@ -94,7 +94,7 @@ INSTANCE DIA_Garwig_Room   (C_INFO)
 	condition   = DIA_Garwig_Room_Condition;
 	information = DIA_Garwig_Room_Info;
 	permanent   = FALSE;
-	description	= "Co je tohle za místnost?";
+	description	= "Co je tohle za mÃ­stnost?";
 };
 FUNC INT DIA_Garwig_Room_Condition()
 {	
@@ -102,10 +102,10 @@ FUNC INT DIA_Garwig_Room_Condition()
 };
 FUNC VOID DIA_Garwig_Room_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Room_15_00"); //Co je tohle za místnost?
-	AI_Output (self ,other,"DIA_Garwig_Room_06_01"); //Zde se uchovávají svaté klášterní relikvie.
-	AI_Output (other,self ,"DIA_Garwig_Room_15_02"); //Jaké relikvie?
-	AI_Output (self ,other,"DIA_Garwig_Room_06_03"); //Je zde uloeno Innosovo kladivo a také Štít ohnê. To jsou nejvıznamnêjší relikvie Innosovy církve nacházející se mimo hlavní mêsto âíše.
+	AI_Output (other,self ,"DIA_Garwig_Room_15_00"); //Co je tohle za mÃ­stnost?
+	AI_Output (self ,other,"DIA_Garwig_Room_06_01"); //Zde se uchovÃ¡vajÃ­ svatÃ© klÃ¡Å¡ternÃ­ relikvie.
+	AI_Output (other,self ,"DIA_Garwig_Room_15_02"); //JakÃ© relikvie?
+	AI_Output (self ,other,"DIA_Garwig_Room_06_03"); //Je zde uloÅ¾eno Innosovo kladivo a takÃ© Å tÃ­t ohnÄ™. To jsou nejvÃ½znamnÄ™jÅ¡Ã­ relikvie Innosovy cÃ­rkve nachÃ¡zejÃ­cÃ­ se mimo hlavnÃ­ mÄ™sto Ã¢Ã­Å¡e.
 };
 //**************************************************************************
 //	Info Hammer 
@@ -117,7 +117,7 @@ INSTANCE DIA_Garwig_Hammer  (C_INFO)
 	condition   = DIA_Garwig_Hammer_Condition;
 	information = DIA_Garwig_Hammer_Info;
 	permanent   = TRUE;
-	description	= "Povêz mi o tom kladivu.";
+	description	= "PovÄ™z mi o tom kladivu.";
 };
 FUNC INT DIA_Garwig_Hammer_Condition()
 {
@@ -128,10 +128,10 @@ FUNC INT DIA_Garwig_Hammer_Condition()
 };
 FUNC VOID DIA_Garwig_Hammer_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Hammer_15_00"); //Povêz mi o tom kladivu.
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_01"); //Je to posvátné Innosovo kladivo. Svatı Rhobar s ním skolil Kamenného stráce.
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_02"); //Posvátné spisy âíkají, e Kamennı stráce byl nezranitelnı. V bitvê stál jako vê a zbranê jeho nepâátel se o jeho kamennou kùi lámaly.
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_03"); //S Innosovım jménem na rtech se Rhobar na tuhle pâíšeru vrhl a znièil ji jedinım mocnım máchnutím svého kladiva.
+	AI_Output (other,self ,"DIA_Garwig_Hammer_15_00"); //PovÄ™z mi o tom kladivu.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_01"); //Je to posvÃ¡tnÃ© Innosovo kladivo. SvatÃ½ Rhobar s nÃ­m skolil KamennÃ©ho strÃ¡Å¾ce.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_02"); //PosvÃ¡tnÃ© spisy Ã¢Ã­kajÃ­, Å¾e KamennÃ½ strÃ¡Å¾ce byl nezranitelnÃ½. V bitvÄ™ stÃ¡l jako vÄ™Å¾ a zbranÄ™ jeho nepÃ¢Ã¡tel se o jeho kamennou kÅ¯Å¾i lÃ¡maly.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_03"); //S InnosovÃ½m jmÃ©nem na rtech se Rhobar na tuhle pÃ¢Ã­Å¡eru vrhl a zniÄil ji jedinÃ½m mocnÃ½m mÃ¡chnutÃ­m svÃ©ho kladiva.
 };
 //**************************************************************************
 //	Info Schild 
@@ -143,7 +143,7 @@ INSTANCE DIA_Garwig_Shield  (C_INFO)
 	condition   = DIA_Garwig_Shield_Condition;
 	information = DIA_Garwig_Shield_Info;
 	permanent   = FALSE;
-	description	= "Povêz mi o tom štítu.";
+	description	= "PovÄ™z mi o tom Å¡tÃ­tu.";
 };
 FUNC INT DIA_Garwig_Shield_Condition()
 {
@@ -154,9 +154,9 @@ FUNC INT DIA_Garwig_Shield_Condition()
 };
 FUNC VOID DIA_Garwig_Shield_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Shield_15_00"); //Povêz mi o tom štítu.
-	AI_Output (self ,other,"DIA_Garwig_Shield_06_01"); //Štít ohnê u sebe mêl Dominique v bitvê o Jiní ostrovy.
-	AI_Output (self ,other,"DIA_Garwig_Shield_06_02"); //Moc tohoto štítu však u nikdy nikdo tâímat nebude - proto jsme jej pâitloukli ke zdi.
+	AI_Output (other,self ,"DIA_Garwig_Shield_15_00"); //PovÄ™z mi o tom Å¡tÃ­tu.
+	AI_Output (self ,other,"DIA_Garwig_Shield_06_01"); //Å tÃ­t ohnÄ™ u sebe mÄ™l Dominique v bitvÄ™ o JiÅ¾nÃ­ ostrovy.
+	AI_Output (self ,other,"DIA_Garwig_Shield_06_02"); //Moc tohoto Å¡tÃ­tu vÅ¡ak uÅ¾ nikdy nikdo tÃ¢Ã­mat nebude - proto jsme jej pÃ¢itloukli ke zdi.
 };
 //**************************************************************************
 //	Info Auge Innos
@@ -168,7 +168,7 @@ INSTANCE DIA_Garwig_Auge  (C_INFO)
 	condition   = DIA_Garwig_Auge_Condition;
 	information = DIA_Garwig_Auge_Info;
 	permanent   = FALSE;
-	description	= "Je tady také Innosovo oko?";
+	description	= "Je tady takÃ© Innosovo oko?";
 };
 FUNC INT DIA_Garwig_Auge_Condition()
 {
@@ -180,8 +180,8 @@ FUNC INT DIA_Garwig_Auge_Condition()
 };
 FUNC VOID DIA_Garwig_Auge_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Auge_15_00"); //Je tady také Innosovo oko?
-	AI_Output (self ,other,"DIA_Garwig_Auge_06_01"); //Samozâejmê e ne. Co to je za podivnı nápad? Nikdo neví, kde je tenhle posvátnı artefakt ukrytı.
+	AI_Output (other,self ,"DIA_Garwig_Auge_15_00"); //Je tady takÃ© Innosovo oko?
+	AI_Output (self ,other,"DIA_Garwig_Auge_06_01"); //SamozÃ¢ejmÄ™ Å¾e ne. Co to je za podivnÃ½ nÃ¡pad? Nikdo nevÃ­, kde je tenhle posvÃ¡tnÃ½ artefakt ukrytÃ½.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SLEEP
@@ -193,7 +193,7 @@ instance DIA_Garwig_SLEEP		(C_INFO)
 	condition	 = 	DIA_Garwig_SLEEP_Condition;
 	information	 = 	DIA_Garwig_SLEEP_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co tady dêláš?";
+	description	 = 	"Co tady dÄ™lÃ¡Å¡?";
 };
 func int DIA_Garwig_SLEEP_Condition ()
 {
@@ -204,14 +204,14 @@ func int DIA_Garwig_SLEEP_Condition ()
 };
 func void DIA_Garwig_SLEEP_Info ()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_15_00"); //Co tady dêláš?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_06_01"); //Jsem stráce posvátnıch artefaktù.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_06_01"); //Jsem strÃ¡Å¾ce posvÃ¡tnÃ½ch artefaktÅ¯.
 	
 	Info_ClearChoices 	(DIA_Garwig_SLEEP);
 	Info_AddChoice 		(DIA_Garwig_SLEEP,DIALOG_BACK,DIA_Garwig_SLEEP_BACK);
-	Info_AddChoice 		(DIA_Garwig_SLEEP,"Mùu to za tebe na chvíli vzít?",DIA_Garwig_SLEEP_EXCHANGE);
-	Info_AddChoice 		(DIA_Garwig_SLEEP,"Proè ty artefakty tolik stâeíte?",DIA_Garwig_SLEEP_THIEF);
-	Info_AddChoice 		(DIA_Garwig_SLEEP,"To nikdy nespíš?",DIA_Garwig_SLEEP_NEVER);
+	Info_AddChoice 		(DIA_Garwig_SLEEP,"MÅ¯Å¾u to za tebe na chvÃ­li vzÃ­t?",DIA_Garwig_SLEEP_EXCHANGE);
+	Info_AddChoice 		(DIA_Garwig_SLEEP,"ProÄ ty artefakty tolik stÃ¢eÅ¾Ã­te?",DIA_Garwig_SLEEP_THIEF);
+	Info_AddChoice 		(DIA_Garwig_SLEEP,"To nikdy nespÃ­Å¡?",DIA_Garwig_SLEEP_NEVER);
 };
 FUNC VOID DIA_Garwig_SLEEP_BACK()
 {
@@ -219,30 +219,30 @@ FUNC VOID DIA_Garwig_SLEEP_BACK()
 };
 FUNC VOID DIA_Garwig_SLEEP_EXCHANGE()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_EXCHANGE_15_00"); //Mùu to za tebe na chvíli vzít?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_01"); //To je nêjaká zkouška? Poslali tê mágové, abys mê pokoušel, co? No jasnê - prokoukl jsem to!
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_02"); //Ale já tímto testem projdu. Âekni svım mágùm, e zde stojím pevnê jako skála a e odolám všem pokušením, protoe jsem dùvêryhodnı stráce.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_EXCHANGE_15_00"); //MÅ¯Å¾u to za tebe na chvÃ­li vzÃ­t?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_01"); //To je nÄ™jakÃ¡ zkouÅ¡ka? Poslali tÄ™ mÃ¡govÃ©, abys mÄ™ pokouÅ¡el, co? No jasnÄ™ - prokoukl jsem to!
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_02"); //Ale jÃ¡ tÃ­mto testem projdu. Ã‚ekni svÃ½m mÃ¡gÅ¯m, Å¾e zde stojÃ­m pevnÄ™ jako skÃ¡la a Å¾e odolÃ¡m vÅ¡em pokuÅ¡enÃ­m, protoÅ¾e jsem dÅ¯vÄ™ryhodnÃ½ strÃ¡Å¾ce.
 };
 FUNC VOID DIA_Garwig_SLEEP_THIEF()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_THIEF_15_00"); //Proè je zapotâebí ty artefakty hlídat? Hrozí snad nebezpeèí, e by je mohl nêkdo ukradnout?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_01"); //Vánê podivná pâedstava. Proè tê to napadlo?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_02"); //Do kláštera mají vstup jen ti, kdo slouí Innosovi. A ádného skuteèného vêâícího by nêco podobného ani nenapadlo.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_THIEF_15_00"); //ProÄ je zapotÃ¢ebÃ­ ty artefakty hlÃ­dat? HrozÃ­ snad nebezpeÄÃ­, Å¾e by je mohl nÄ™kdo ukradnout?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_01"); //VÃ¡Å¾nÄ™ podivnÃ¡ pÃ¢edstava. ProÄ tÄ™ to napadlo?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_02"); //Do klÃ¡Å¡tera majÃ­ vstup jen ti, kdo slouÅ¾Ã­ Innosovi. A Å¾Ã¡dnÃ©ho skuteÄnÃ©ho vÄ™Ã¢Ã­cÃ­ho by nÄ™co podobnÃ©ho ani nenapadlo.
 };
 FUNC VOID DIA_Garwig_SLEEP_NEVER()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_NEVER_15_00"); //To nikdy nespíš?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_01"); //Ponêkud neobvyklá pâedstava. Samozâejmê e nikdy nespím. Samotnı Innos mi dal sílu, s její pomocí se obejdu naprosto bez spánku.
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_02"); //Vdyã jak jinak bych mohl plnit své posvátné povinnosti stráného?
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_NEVER_15_00"); //To nikdy nespÃ­Å¡?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_01"); //PonÄ™kud neobvyklÃ¡ pÃ¢edstava. SamozÃ¢ejmÄ™ Å¾e nikdy nespÃ­m. SamotnÃ½ Innos mi dal sÃ­lu, s jejÃ­Å¾ pomocÃ­ se obejdu naprosto bez spÃ¡nku.
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_02"); //VÅ¾dyÄƒ jak jinak bych mohl plnit svÃ© posvÃ¡tnÃ© povinnosti strÃ¡Å¾nÃ©ho?
 	
 	Info_ClearChoices 	(DIA_Garwig_SLEEP);
-	Info_AddChoice (DIA_Garwig_SLEEP,"Opravdu NIKDY nespíš?",DIA_Garwig_SLEEP_AGAIN);
+	Info_AddChoice (DIA_Garwig_SLEEP,"Opravdu NIKDY nespÃ­Å¡?",DIA_Garwig_SLEEP_AGAIN);
 };
 FUNC VOID DIA_Garwig_SLEEP_AGAIN()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_AGAIN_15_00"); //Opravdu NIKDY nespíš?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_01"); //Ne. Pokud stráce usne, zklamal.
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_02"); //Ale já nezklamu, protoe Innos mi dal sílu a vıdr, take se nikdy neunavím.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_AGAIN_15_00"); //Opravdu NIKDY nespÃ­Å¡?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_01"); //Ne. Pokud strÃ¡Å¾ce usne, zklamal.
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_02"); //Ale jÃ¡ nezklamu, protoÅ¾e Innos mi dal sÃ­lu a vÃ½drÅ¾, takÅ¾e se nikdy neunavÃ­m.
 	
 	
 };
@@ -271,18 +271,18 @@ func void DIA_Garwig_THIEF_Info ()
 					
 	if (Hammer_Taken == TRUE) 
 	{ 
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_00"); //(rozzlobenê) Zlodêji! Pošlapal jsi jméno nejen svoje a moje, ale celého kláštera!
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_01"); //Za tuhle svatokráde zaplatíš. A vùbec - VRAÃ MI TO KLADIVO!!
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_00"); //(rozzlobenÄ™) ZlodÄ™ji! PoÅ¡lapal jsi jmÃ©no nejen svoje a moje, ale celÃ©ho klÃ¡Å¡tera!
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_01"); //Za tuhle svatokrÃ¡deÅ¾ zaplatÃ­Å¡. A vÅ¯bec - VRAÄ‚ MI TO KLADIVO!!
 		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_02"); //(zoufale) Kladivo zmizelo - jak se to jen mohlo stát?
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_03"); //Selhal jsem. Innos mê potrestá!
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_02"); //(zoufale) Kladivo zmizelo - jak se to jen mohlo stÃ¡t?
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_03"); //Selhal jsem. Innos mÄ™ potrestÃ¡!
 	};	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Hammer zurückbringen (immer wenn Spieler den Hammer hat)
+//	Info Hammer zurÃ¼ckbringen (immer wenn Spieler den Hammer hat)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Garwig_Abgeben		(C_INFO)
 {
@@ -291,7 +291,7 @@ instance DIA_Garwig_Abgeben		(C_INFO)
 	condition	 = 	DIA_Garwig_Abgeben_Condition;
 	information	 = 	DIA_Garwig_Abgeben_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Vracím zpátky to kladivo.";
+	description	 =  "VracÃ­m zpÃ¡tky to kladivo.";
 };
 func int DIA_Garwig_Abgeben_Condition ()
 {	
@@ -302,17 +302,17 @@ func int DIA_Garwig_Abgeben_Condition ()
 };
 func void DIA_Garwig_Abgeben_Info ()
 {
-	AI_Output (other, self, "DIA_Garwig_Abgeben_15_00"); //Vracím zpátky to kladivo.
+	AI_Output (other, self, "DIA_Garwig_Abgeben_15_00"); //VracÃ­m zpÃ¡tky to kladivo.
 	
 	if (Hammer_Taken == TRUE)
 	{
-		AI_Output (self, other, "DIA_Garwig_Abgeben_06_01"); //Bídnı zlodêji!
+		AI_Output (self, other, "DIA_Garwig_Abgeben_06_01"); //BÃ­dnÃ½ zlodÄ™ji!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Garwig_Abgeben_06_02"); //Take jsi to byl ty, kdo ho ukradl.
+		AI_Output (self, other, "DIA_Garwig_Abgeben_06_02"); //TakÅ¾e jsi to byl ty, kdo ho ukradl.
 	};
-	AI_Output (self, other, "DIA_Garwig_Abgeben_06_03"); //Ale mnê nepâísluší, abych tê soudil. Innos rozhodne nad tvım osudem a pak na tvá bedra uloí spravedlivı trest!
+	AI_Output (self, other, "DIA_Garwig_Abgeben_06_03"); //Ale mnÄ™ nepÃ¢Ã­sluÅ¡Ã­, abych tÄ™ soudil. Innos rozhodne nad tvÃ½m osudem a pak na tvÃ¡ bedra uloÅ¾Ã­ spravedlivÃ½ trest!
 	
 	B_GiveInvItems (other,self, Holy_Hammer_MIS,1);
 	Hammer_Taken = FALSE;

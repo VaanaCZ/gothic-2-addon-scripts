@@ -19,24 +19,24 @@ FUNC VOID Bookstand_Milten_03_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Uû je pozdÍ."					);
-					Doc_PrintLines	( nDocID,  0, "Z‚ÌcenÌ starÈho dolu p‚ivedlo rudobarony na pokraj zk·zy."	);
-					Doc_PrintLines	( nDocID,  0, "Gomez je jako soudek s prachem, kter˝ co nevidÍt vybuchne."					);
+					Doc_PrintLines	( nDocID,  0, "U≈æ je pozdƒô."					);
+					Doc_PrintLines	( nDocID,  0, "Z√¢√≠cen√≠ star√©ho dolu p√¢ivedlo rudobarony na pokraj zk√°zy."	);
+					Doc_PrintLines	( nDocID,  0, "Gomez je jako soudek s prachem, kter√Ω co nevidƒôt vybuchne."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Corristo");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "MyslÌ si, ûe za vöechno m˘ûe ten nov˝ chl·pek. Je to fakt podivÌn a udÍlal by nejlÌp, kdyby se tu uû vÌckr·t neuk·zal.");
+					Doc_PrintLines	( nDocID,  0, "Mysl√≠ si, ≈æe za v≈°echno m≈Ø≈æe ten nov√Ω chl√°pek. Je to fakt podiv√≠n a udƒôlal by nejl√≠p, kdyby se tu u≈æ v√≠ckr√°t neuk√°zal.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Corristo");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Gomez je jeötÍ naötvanÍjöÌ neû kdy p‚edtÌm a j· myslÌm, ûe vÌm, co m· za lubem. MusÌme varovat m·gy vody, neû bude p‚Ìliö pozdÍ."					);
+					Doc_PrintLines	( nDocID,  1, "Gomez je je≈°tƒô na≈°tvanƒôj≈°√≠ ne≈æ kdy p√¢edt√≠m a j√° mysl√≠m, ≈æe v√≠m, co m√° za lubem. Mus√≠me varovat m√°gy vody, ne≈æ bude p√¢√≠li≈° pozdƒô."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Corristo"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Moûn· m˘ûeme pohromÍ jeötÍ zabr·nit. Radöi ani nemyslet, co by se mohlo st·t, kdyby byl voln˝ d˘l..."					);
+					Doc_PrintLines	( nDocID,  1, "Mo≈æn√° m≈Ø≈æeme pohromƒô je≈°tƒô zabr√°nit. Rad≈°i ani nemyslet, co by se mohlo st√°t, kdyby byl voln√Ω d≈Øl..."					);
 					Doc_Show		( nDocID );
 
 	};
@@ -62,9 +62,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Vyuûil jsem nastalÈ svobody a trochu si to tu zvelebil. Kdo by si pomyslel, ûe jednou budu jedin˝m m·gem v t·bo‚e?"					);
-					Doc_PrintLines	( nDocID,  0, "Ale nem˘ûu ‚Ìct, ûe bych se sem vracel r·d. VlastnÍ bych odsud nejradöi co nejrychleji zase vypadl."	);
-					Doc_PrintLines	( nDocID,  0, "Tahle v˝prava prostÍ nem˘ûe uspÍt."					);
+					Doc_PrintLines	( nDocID,  0, "Vyu≈æil jsem nastal√© svobody a trochu si to tu zvelebil. Kdo by si pomyslel, ≈æe jednou budu jedin√Ωm m√°gem v t√°bo√¢e?"					);
+					Doc_PrintLines	( nDocID,  0, "Ale nem≈Ø≈æu √¢√≠ct, ≈æe bych se sem vracel r√°d. Vlastnƒô bych odsud nejrad≈°i co nejrychleji zase vypadl."	);
+					Doc_PrintLines	( nDocID,  0, "Tahle v√Ωprava prostƒô nem≈Ø≈æe uspƒôt."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");
 			
@@ -74,9 +74,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "VËera odsud odeöli kop·Ëi a vzali s sebou i Diega - v˘bec mÍ nep‚ekvapilo, ûe se taky koukal vypa‚it."					);
-					Doc_PrintLines	( nDocID,  1, "UrËitÍ nikde nebude rubat krump·Ëem."					);
-					Doc_PrintLines	( nDocID,  1, "J· ale vyuûiju chvÌle volna a trochu se pocviËÌm v alchymii."					);
+					Doc_PrintLines	( nDocID,  1, "Vƒçera odsud ode≈°li kop√°ƒçi a vzali s sebou i Diega - v≈Øbec mƒô nep√¢ekvapilo, ≈æe se taky koukal vypa√¢it."					);
+					Doc_PrintLines	( nDocID,  1, "Urƒçitƒô nikde nebude rubat krump√°ƒçem."					);
+					Doc_PrintLines	( nDocID,  1, "J√° ale vyu≈æiju chv√≠le volna a trochu se pocviƒç√≠m v alchymii."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Milten"					);
 					Doc_Show		( nDocID );
@@ -128,36 +128,36 @@ FUNC VOID Bookstand_Engor_01_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "ZboûÌ");
+					Doc_PrintLine	( nDocID,  0, "Zbo≈æ√≠");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Naöli jsme nÍjakÈ zboûÌ, ale nic extra. Tady je seznam:"					);
+					Doc_PrintLines	( nDocID,  0, "Na≈°li jsme nƒôjak√© zbo≈æ√≠, ale nic extra. Tady je seznam:"					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "3 bedny star˝ch hadr˘"	);
+					Doc_PrintLines	( nDocID,  0, "3 bedny star√Ωch hadr≈Ø"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "8 beden rezavÈho ûeleza"					);
+					Doc_PrintLines	( nDocID,  0, "8 beden rezav√©ho ≈æeleza"					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "4 bedny rozbit˝ch brnÍnÌ");
+					Doc_PrintLines	( nDocID,  0, "4 bedny rozbit√Ωch brnƒôn√≠");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "5 beden (zatuchlÈ) k˘ûe a koûiöin");
+					Doc_PrintLines	( nDocID,  0, "5 beden (zatuchl√©) k≈Ø≈æe a ko≈æi≈°in");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "2 bedny krump·Ë˘"					);
+					Doc_PrintLines	( nDocID,  1, "2 bedny krump√°ƒç≈Ø"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "3 bedny dalöÌho n·ËinÌ"					);
+					Doc_PrintLines	( nDocID,  1, "3 bedny dal≈°√≠ho n√°ƒçin√≠"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "16  beden kamenÌ (ruda veöker· û·dn·)"					);
+					Doc_PrintLines	( nDocID,  1, "16  beden kamen√≠ (ruda ve≈°ker√° ≈æ√°dn√°)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 bedna rezav˝ch ûiletek"					);
+					Doc_PrintLines	( nDocID,  1, "1 bedna rezav√Ωch ≈æiletek"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "4 bedny rozbitÈho n·dobÌ"					);
+					Doc_PrintLines	( nDocID,  1, "4 bedny rozbit√©ho n√°dob√≠"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "56 sud˘ na vodu"					);
+					Doc_PrintLines	( nDocID,  1, "56 sud≈Ø na vodu"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 bedna nÍËeho z baûin (a„ to bylo co bylo, teÎ je to shnilÈ)"					);
+					Doc_PrintLines	( nDocID,  1, "1 bedna nƒôƒçeho z ba≈æin (aƒÉ to bylo co bylo, te√´ je to shnil√©)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Engor"					);
 					Doc_Show		( nDocID );

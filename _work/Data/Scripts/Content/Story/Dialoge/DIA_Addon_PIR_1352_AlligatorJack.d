@@ -21,12 +21,12 @@ FUNC VOID DIA_Addon_AlligatorJack_Exit_Info()
 	if (MIS_KrokoJagd == LOG_SUCCESS)
 	&& (DIA_Addon_AlligatorJack_Exit_Info_OneTime == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_Exit_12_00"); //Kdybys mÍ hledal, tak vobvykle bejv·m ve sv˝m t·bo‚e naproti palis·dÍ.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_Exit_12_00"); //Kdybys mƒô hledal, tak vobvykle bejv√°m ve sv√Ωm t√°bo√¢e naproti palis√°dƒô.
 	
 		if (PIR_1354_Addon_Henry.aivar [AIV_TalkedToPlayer] == FALSE)
 		{
-			AI_Output (other ,self,"DIA_Addon_AlligatorJack_Exit_15_01"); //JakÈ palis·dÍ?
-			AI_Output (self ,other,"DIA_Addon_AlligatorJack_Exit_12_02"); //ProstÍ vodsuÎ pokraËuj na z·pad a uvidÌö, co myslÌm.
+			AI_Output (other ,self,"DIA_Addon_AlligatorJack_Exit_15_01"); //Jak√© palis√°dƒô?
+			AI_Output (self ,other,"DIA_Addon_AlligatorJack_Exit_12_02"); //Prostƒô vodsu√´ pokraƒçuj na z√°pad a uvid√≠≈°, co mysl√≠m.
 		};
 		
 		AI_StopProcessInfos	(self);
@@ -95,11 +95,11 @@ FUNC INT DIA_Addon_AlligatorJack_Hello_Condition()
 
 FUNC VOID DIA_Addon_AlligatorJack_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Hello_12_00"); //Kdo pro vöecko na svÍtÍ SEä? Nevypad·ö jak vostatnÌ.
-	AI_Output (other,self ,"DIA_Addon_AlligatorJack_Hello_15_01"); //JacÌ ostatnÌ?
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Hello_12_02"); //No, m·govÈ, co se po‚·d potulujou kolem tÍchhle rozvalin.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Hello_12_03"); //Ty k nim taky pat‚Ìö?
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Hello_12_04"); //To m·ö vodvahu, ûe se tu proch·zÌö jen tak.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Hello_12_00"); //Kdo pro v≈°ecko na svƒôtƒô SE≈†? Nevypad√°≈° jak vostatn√≠.
+	AI_Output (other,self ,"DIA_Addon_AlligatorJack_Hello_15_01"); //Jac√≠ ostatn√≠?
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Hello_12_02"); //No, m√°gov√©, co se po√¢√°d potulujou kolem tƒôchhle rozvalin.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Hello_12_03"); //Ty k nim taky pat√¢√≠≈°?
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Hello_12_04"); //To m√°≈° vodvahu, ≈æe se tu proch√°z√≠≈° jen tak.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -123,11 +123,11 @@ func int DIA_Addon_AlligatorJack_WerBistDu_Condition ()
 func void DIA_Addon_AlligatorJack_WerBistDu_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_AlligatorJack_WerBistDu_15_00"); //Kdo jsi?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_01"); //UrËitÍ uû jsi vo mnÍ slyöel.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_02"); //(hrdÍ) Jsem Krokod˝l Jack.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_03"); //BojÌ se mÍ cel· zem, jsem jeden z nejnebezpeËnÍjöÌch pir·t˘.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_04"); //S kapit·nem Gregem jsme potopili vÌc lodÌ, neû dok·ûem spoËÌtat.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_05"); //Takûe teÎ kouk·ö na ûivoucÌ legendu.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_01"); //Urƒçitƒô u≈æ jsi vo mnƒô sly≈°el.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_02"); //(hrdƒô) Jsem Krokod√Ωl Jack.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_03"); //Boj√≠ se mƒô cel√° zem, jsem jeden z nejnebezpeƒçnƒôj≈°√≠ch pir√°t≈Ø.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_04"); //S kapit√°nem Gregem jsme potopili v√≠c lod√≠, ne≈æ dok√°≈æem spoƒç√≠tat.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_05"); //Tak≈æe te√´ kouk√°≈° na ≈æivouc√≠ legendu.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -140,7 +140,7 @@ instance DIA_Addon_AlligatorJack_Vorschlag		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_Vorschlag_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_Vorschlag_Info;
 
-	description	 = 	"VÌö nÍco o nÍjakÈm manÌkovi jmÈnem Havran?";
+	description	 = 	"V√≠≈° nƒôco o nƒôjak√©m man√≠kovi jm√©nem Havran?";
 };
 
 func int DIA_Addon_AlligatorJack_Vorschlag_Condition ()
@@ -153,41 +153,41 @@ func int DIA_Addon_AlligatorJack_Vorschlag_Condition ()
 };
 func void DIA_Addon_AlligatorJack_Vorschlag_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Vorschlag_15_00"); //Nezn·ö nÍjakÈho Havrana?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_12_01"); //JasnÍ. Je to velitel bandit˘ na v˝chodÍ.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_12_02"); //A co mu chceö?
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Vorschlag_15_00"); //Nezn√°≈° nƒôjak√©ho Havrana?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_12_01"); //Jasnƒô. Je to velitel bandit≈Ø na v√Ωchodƒô.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_12_02"); //A co mu chce≈°?
 	
-	B_LogEntry (TOPIC_Addon_RavenKDW,"Havran se se sv˝mi bandity usadil na v˝chodÍ ˙dolÌ.");
+	B_LogEntry (TOPIC_Addon_RavenKDW,"Havran se se sv√Ωmi bandity usadil na v√Ωchodƒô √∫dol√≠.");
 	
 	Info_ClearChoices	(DIA_Addon_AlligatorJack_Vorschlag);
-	Info_AddChoice	(DIA_Addon_AlligatorJack_Vorschlag, "Chci se k nÍmu p‚idat.", DIA_Addon_AlligatorJack_Vorschlag_join );
-	Info_AddChoice	(DIA_Addon_AlligatorJack_Vorschlag, "Chci ho zabÌt.", DIA_Addon_AlligatorJack_Vorschlag_tot );
+	Info_AddChoice	(DIA_Addon_AlligatorJack_Vorschlag, "Chci se k nƒômu p√¢idat.", DIA_Addon_AlligatorJack_Vorschlag_join );
+	Info_AddChoice	(DIA_Addon_AlligatorJack_Vorschlag, "Chci ho zab√≠t.", DIA_Addon_AlligatorJack_Vorschlag_tot );
 };
 
 func void 	B_AlligatorJack_Besser ()
 {
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Besser_12_00"); //M·m lepöÌ n·pad.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Besser_12_01"); //P‚idej se k n·m.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Besser_12_02"); //Budeö mÌt pak Ëas si to promyslet.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Besser_12_03"); //Kdyû jednou koötneö n·ö dom·cÌ rum, budeö na vÍci koukat jinak.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Besser_12_00"); //M√°m lep≈°√≠ n√°pad.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Besser_12_01"); //P√¢idej se k n√°m.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Besser_12_02"); //Bude≈° m√≠t pak ƒças si to promyslet.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Besser_12_03"); //Kdy≈æ jednou ko≈°tne≈° n√°≈° dom√°c√≠ rum, bude≈° na vƒôci koukat jinak.
 	Info_ClearChoices	(DIA_Addon_AlligatorJack_Vorschlag);
 };
 func void DIA_Addon_AlligatorJack_Vorschlag_tot ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Vorschlag_tot_15_00"); //MusÌm ho zabÌt.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_01"); //(smÍje se) Coûe? TY? A jak si myslÌö, ûe to provedeö?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_02"); //NenÌ to trochu nad tv˝ moûnosti?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_03"); //Dyk se k nÍmu ani nedostaneö. To tÍ jeho banditi d‚Ìv st·hnou zaûiva z k˘ûe.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_04"); //Nedostaneö se ani p‚es jejich prvnÌ z·kladnu.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_05"); //Vypad·ö tak, ûe tÍ banditi zahlÌdnou uû na mÌli daleko.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Vorschlag_tot_15_00"); //Mus√≠m ho zab√≠t.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_01"); //(smƒôje se) Co≈æe? TY? A jak si mysl√≠≈°, ≈æe to provede≈°?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_02"); //Nen√≠ to trochu nad tv√Ω mo≈ænosti?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_03"); //Dyk se k nƒômu ani nedostane≈°. To tƒô jeho banditi d√¢√≠v st√°hnou za≈æiva z k≈Ø≈æe.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_04"); //Nedostane≈° se ani p√¢es jejich prvn√≠ z√°kladnu.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_05"); //Vypad√°≈° tak, ≈æe tƒô banditi zahl√≠dnou u≈æ na m√≠li daleko.
 	
 	B_AlligatorJack_Besser ();
 };
 func void DIA_Addon_AlligatorJack_Vorschlag_join ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Vorschlag_join_15_00"); //Chci se k nÍmu p‚idat.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_join_12_01"); //(mazanÍ) V·ûnÍ?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_join_12_02"); //Ale nevypad·ö jako nÍkdo, kdo by se chtÍl p‚idat k takovejm cvok˘m.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Vorschlag_join_15_00"); //Chci se k nƒômu p√¢idat.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_join_12_01"); //(mazanƒô) V√°≈ænƒô?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Vorschlag_join_12_02"); //Ale nevypad√°≈° jako nƒôkdo, kdo by se chtƒôl p√¢idat k takovejm cvok≈Øm.
 
 	B_AlligatorJack_Besser ();
 };
@@ -202,7 +202,7 @@ instance DIA_Addon_AlligatorJack_BDTRuestung		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_BDTRuestung_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_BDTRuestung_Info;
 
-	description	 = 	"Pot‚ebuju zbroj bandit˘.";
+	description	 = 	"Pot√¢ebuju zbroj bandit≈Ø.";
 };
 
 func int DIA_Addon_AlligatorJack_BDTRuestung_Condition ()
@@ -216,30 +216,30 @@ func int DIA_Addon_AlligatorJack_BDTRuestung_Condition ()
 
 func void DIA_Addon_AlligatorJack_BDTRuestung_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_15_00"); //Pot‚ebuju zbroj bandit˘.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_01"); //A co s nÌ chceö dÍlat?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_02"); //Pokud tÍ v nÌ nÍkdo zahlÌdne, budeö z toho mÌt akor·t polÌzanici.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_03"); //Vöichni tÍ budou povaûovat za banditu a p˘jdou po tobÍ jak slepice po flusu.
-	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_04"); //Auﬂer den Banditen SELBST vielleicht.
-	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_05"); //Die werden dich hˆchstens noch f¸r einen von ihnen halten.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_15_00"); //Pot√¢ebuju zbroj bandit≈Ø.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_01"); //A co s n√≠ chce≈° dƒôlat?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_02"); //Pokud tƒô v n√≠ nƒôkdo zahl√≠dne, bude≈° z toho m√≠t akor√°t pol√≠zanici.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_03"); //V≈°ichni tƒô budou pova≈æovat za banditu a p≈Øjdou po tobƒô jak slepice po flusu.
+	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_04"); //Au√üer den Banditen SELBST vielleicht.
+	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_05"); //Die werden dich h√∂chstens noch f√ºr einen von ihnen halten.
 	
 	Info_ClearChoices	(DIA_Addon_AlligatorJack_BDTRuestung);
-	Info_AddChoice	(DIA_Addon_AlligatorJack_BDTRuestung, "NetuöÌö, kde bych sehnal takovÈhle brnÍnÌ?", DIA_Addon_AlligatorJack_BDTRuestung_wo );
-	Info_AddChoice	(DIA_Addon_AlligatorJack_BDTRuestung, "To znÌ dob‚e...", DIA_Addon_AlligatorJack_BDTRuestung_gut );
+	Info_AddChoice	(DIA_Addon_AlligatorJack_BDTRuestung, "Netu≈°√≠≈°, kde bych sehnal takov√©hle brnƒôn√≠?", DIA_Addon_AlligatorJack_BDTRuestung_wo );
+	Info_AddChoice	(DIA_Addon_AlligatorJack_BDTRuestung, "To zn√≠ dob√¢e...", DIA_Addon_AlligatorJack_BDTRuestung_gut );
 };
 func void DIA_Addon_AlligatorJack_BDTRuestung_gut ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_gut_15_00"); //To znÌ dob‚e.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_gut_12_01"); //Jo, ale jen pro nÍkoho se sebevraûednejma sklonama.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_gut_15_00"); //To zn√≠ dob√¢e.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_gut_12_01"); //Jo, ale jen pro nƒôkoho se sebevra≈æednejma sklonama.
 };
 func void DIA_Addon_AlligatorJack_BDTRuestung_wo ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_wo_15_00"); //NetuöÌö, kde bych takovou zbroj sehnal?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_01"); //Jednu jsme mÌvali v pir·tsk˝m t·bo‚e.
-	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_02"); //Mmh ... Ich denke, die hatte genau deine Grˆﬂe.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_03"); //Ale nevÌm, kde je teÎ.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_wo_15_00"); //Netu≈°√≠≈°, kde bych takovou zbroj sehnal?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_01"); //Jednu jsme m√≠vali v pir√°tsk√Ωm t√°bo√¢e.
+	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_02"); //Mmh ... Ich denke, die hatte genau deine Gr√∂√üe.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_03"); //Ale nev√≠m, kde je te√´.
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Zbroj bandit˘ bych mÍl sehnat u pir·t˘, jenûe Krokod˝l Jack mi ne‚ekne, jestli opravdu existuje."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Zbroj bandit≈Ø bych mƒôl sehnat u pir√°t≈Ø, jen≈æe Krokod√Ωl Jack mi ne√¢ekne, jestli opravdu existuje."); 
 	
 	Info_ClearChoices	(DIA_Addon_AlligatorJack_BDTRuestung);
 };
@@ -254,7 +254,7 @@ instance DIA_Addon_AlligatorJack_Greg		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_Greg_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_Greg_Info;
 
-	description	 = 	"V·ö kapit·n se jmenuje Greg?";
+	description	 = 	"V√°≈° kapit√°n se jmenuje Greg?";
 };
 
 func int DIA_Addon_AlligatorJack_Greg_Condition ()
@@ -268,15 +268,15 @@ func int DIA_Addon_AlligatorJack_Greg_Condition ()
 
 func void DIA_Addon_AlligatorJack_Greg_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Greg_15_00"); //V·ö kapit·n se jmenuje Greg?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_01"); //Jo, je to nejvÍtöÌ pir·t, jak˝ho kdy mo‚e zrodilo.
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Greg_15_02"); //MyslÌm, ûe vaöeho kapit·na zn·m, potkal jsem ho v Khorinidu.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_03"); //(smÍje se) Greg a v Khorinidu? Blbost!
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_04"); //Greg jeötÍ s nÍkolika chlapama vyjel loupit na mo‚e.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_05"); //Jedin˝, co by Grega mohlo p‚it·hnout do Khorinidu, je kr·lovsk· vÍze‡sk· galÈra.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_06"); //Je jednÌm z nejhledanÍjöÌch lidÌ v zemi.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_07"); //Nikdy by dobrovolnÍ nevlez do mÍsta, aby ho kr·lovsk· str·û mohla hned zatknout.
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Greg_15_08"); //Kdyû to ‚Ìk·ö.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Greg_15_00"); //V√°≈° kapit√°n se jmenuje Greg?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_01"); //Jo, je to nejvƒôt≈°√≠ pir√°t, jak√Ωho kdy mo√¢e zrodilo.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Greg_15_02"); //Mysl√≠m, ≈æe va≈°eho kapit√°na zn√°m, potkal jsem ho v Khorinidu.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_03"); //(smƒôje se) Greg a v Khorinidu? Blbost!
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_04"); //Greg je≈°tƒô s nƒôkolika chlapama vyjel loupit na mo√¢e.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_05"); //Jedin√Ω, co by Grega mohlo p√¢it√°hnout do Khorinidu, je kr√°lovsk√° vƒôze≈ïsk√° gal√©ra.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_06"); //Je jedn√≠m z nejhledanƒôj≈°√≠ch lid√≠ v zemi.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_Greg_12_07"); //Nikdy by dobrovolnƒô nevlez do mƒôsta, aby ho kr√°lovsk√° str√°≈æ mohla hned zatknout.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_Greg_15_08"); //Kdy≈æ to √¢√≠k√°≈°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -289,7 +289,7 @@ instance DIA_Addon_AlligatorJack_PIRLager		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_PIRLager_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_PIRLager_Info;
 
-	description	 = 	"Kde leûÌ ten tv˘j pir·tsk˝ t·bor?";
+	description	 = 	"Kde le≈æ√≠ ten tv≈Øj pir√°tsk√Ω t√°bor?";
 };
 
 func int DIA_Addon_AlligatorJack_PIRLager_Condition ()
@@ -303,18 +303,18 @@ func int DIA_Addon_AlligatorJack_PIRLager_Condition ()
 
 func void DIA_Addon_AlligatorJack_PIRLager_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_PIRLager_15_00"); //Kde je ten v·ö pir·tsk˝ t·bor?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_01"); //VidÌö tamhle tu jeskyni? Projdi na druhou stranu a pak pokraËuj k z·padu. D‚Ìv nebo pozdÍjc dorazÌö na naöi pl·û.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_02"); //Tam m·me sv˝ sruby.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_03"); //Kdyû budeö chtÌt, m˘ûu tÍ tam zavÈst, ale nap‚ed vod tebe budu chtÌt jednu laskavost.
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_PIRLager_15_04"); //Co to m· b˝t?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_05"); //Neû se vr·tÌm do t·bora, musÌm chlap˘m vobstarat trochu masa.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_06"); //A ty seö sil·k.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_07"); //Takûe by se mi hodila pomoc p‚i lovu. M·ö z·jem?
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_PIRLager_15_00"); //Kde je ten v√°≈° pir√°tsk√Ω t√°bor?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_01"); //Vid√≠≈° tamhle tu jeskyni? Projdi na druhou stranu a pak pokraƒçuj k z√°padu. D√¢√≠v nebo pozdƒôjc doraz√≠≈° na na≈°i pl√°≈æ.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_02"); //Tam m√°me sv√Ω sruby.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_03"); //Kdy≈æ bude≈° cht√≠t, m≈Ø≈æu tƒô tam zav√©st, ale nap√¢ed vod tebe budu cht√≠t jednu laskavost.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_PIRLager_15_04"); //Co to m√° b√Ωt?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_05"); //Ne≈æ se vr√°t√≠m do t√°bora, mus√≠m chlap≈Øm vobstarat trochu masa.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_06"); //A ty se≈° sil√°k.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_07"); //Tak≈æe by se mi hodila pomoc p√¢i lovu. M√°≈° z√°jem?
 
 	Log_CreateTopic (TOPIC_Addon_RatHunt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_RatHunt,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RatHunt,"Krokod˝l Jack pot‚ebuje pomoci s lovem.");
+	B_LogEntry (TOPIC_Addon_RatHunt,"Krokod√Ωl Jack pot√¢ebuje pomoci s lovem.");
 
 };
 
@@ -328,7 +328,7 @@ instance DIA_Addon_AlligatorJack_WasJagen		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_WasJagen_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_WasJagen_Info;
 
-	description	 = 	"Co lovÌö?";
+	description	 = 	"Co lov√≠≈°?";
 };
 
 func int DIA_Addon_AlligatorJack_WasJagen_Condition ()
@@ -341,15 +341,15 @@ func int DIA_Addon_AlligatorJack_WasJagen_Condition ()
 
 func void DIA_Addon_AlligatorJack_WasJagen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_WasJagen_15_00"); //Co lovÌö?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_01"); //Obvykle jenom krokod˝ly, ale ti se nedajÌ moc jÌst.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_02"); //A beztak uû tu û·dnÌ nezbyli.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_03"); //Takûe teÎ beru, co se d· ñ moË·lov˝ krysy.
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_WasJagen_15_04"); //Coûe?
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_05"); //VÍtöina zdejöÌch potvor chutn· jak öpinav˝ fusekle nebo maj stejnÍ tvrd˝ maso jako krokod˝li.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_06"); //Tlust˝ moË·lov˝ krysy jsou to jedn˝, co se jeötÍ jakû-takû d· ûr·t.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_WasJagen_15_00"); //Co lov√≠≈°?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_01"); //Obvykle jenom krokod√Ωly, ale ti se nedaj√≠ moc j√≠st.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_02"); //A beztak u≈æ tu ≈æ√°dn√≠ nezbyli.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_03"); //Tak≈æe te√´ beru, co se d√° ‚Äì moƒç√°lov√Ω krysy.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_WasJagen_15_04"); //Co≈æe?
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_05"); //Vƒôt≈°ina zdej≈°√≠ch potvor chutn√° jak ≈°pinav√Ω fusekle nebo maj stejnƒô tvrd√Ω maso jako krokod√Ωli.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_06"); //Tlust√Ω moƒç√°lov√Ω krysy jsou to jedn√Ω, co se je≈°tƒô jak≈æ-tak≈æ d√° ≈ær√°t.
 
-	B_LogEntry (TOPIC_Addon_RatHunt,"JedinÈ, co se tu d· aspo‡ trochu jÌst, jsou moË·lovÈ krysy.");
+	B_LogEntry (TOPIC_Addon_RatHunt,"Jedin√©, co se tu d√° aspo≈ï trochu j√≠st, jsou moƒç√°lov√© krysy.");
 };
 
 // ************************************************************
@@ -362,7 +362,7 @@ INSTANCE DIA_Addon_AlligatorJack_Pirates(C_INFO)
 	condition	= DIA_Addon_AlligatorJack_Pirates_Condition;
 	information	= DIA_Addon_AlligatorJack_Pirates_Info;
 	permanent	= FALSE;
-	description	= "PovÍz mi o v·s pir·tech vÌc.";
+	description	= "Povƒôz mi o v√°s pir√°tech v√≠c.";
 };                       
 FUNC INT DIA_Addon_AlligatorJack_Pirates_Condition()
 {
@@ -374,13 +374,13 @@ FUNC INT DIA_Addon_AlligatorJack_Pirates_Condition()
 
 FUNC VOID DIA_Addon_AlligatorJack_Pirates_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_AlligatorJack_Pirates_15_00"); //PovÍz mi o v·s pir·tech nÍco vÌc.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_01"); //Uû tu ûijem cel˝ lÈta. EötÍ p‚ed v·lkou n·s znal kaûdej vodsuÎ aû na pevninu.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_02"); //StaËil jedinej pohled na naöi vlajku a pos·dky kupeckejch lodÌ byly podÍlan˝ hr˘zou.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_03"); //Ale to uû je d·vno pryË. Uû je to p·r tejdn˘, co jsme narazili na nÍjakou kupeckou loÎ.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_04"); //N·ö kapit·n Greg chtÍl zkusit ‡·kou p‚epadnout.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_05"); //My vostatnÌ sedÌme tady v t·bo‚e, chyt·me lelky a Ëek·me, aû se vr·tÌ.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_06"); //Douf·m, ûe p‚iveze tuËnou ko‚ist.
+	AI_Output (other,self ,"DIA_Addon_AlligatorJack_Pirates_15_00"); //Povƒôz mi o v√°s pir√°tech nƒôco v√≠c.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_01"); //U≈æ tu ≈æijem cel√Ω l√©ta. E≈°tƒô p√¢ed v√°lkou n√°s znal ka≈ædej vodsu√´ a≈æ na pevninu.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_02"); //Staƒçil jedinej pohled na na≈°i vlajku a pos√°dky kupeckejch lod√≠ byly podƒôlan√Ω hr≈Øzou.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_03"); //Ale to u≈æ je d√°vno pryƒç. U≈æ je to p√°r tejdn≈Ø, co jsme narazili na nƒôjakou kupeckou lo√´.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_04"); //N√°≈° kapit√°n Greg chtƒôl zkusit ≈ï√°kou p√¢epadnout.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_05"); //My vostatn√≠ sed√≠me tady v t√°bo√¢e, chyt√°me lelky a ƒçek√°me, a≈æ se vr√°t√≠.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Pirates_12_06"); //Douf√°m, ≈æe p√¢iveze tuƒçnou ko√¢ist.
 };
 
 
@@ -394,7 +394,7 @@ INSTANCE DIA_Addon_AlligatorJack_LetsGoHunting(C_INFO)
 	condition	= DIA_Addon_AlligatorJack_LetsGoHunting_Condition;
 	information	= DIA_Addon_AlligatorJack_LetsGoHunting_Info;
 	permanent	= TRUE;
-	description = "Vzh˘ru na lov!";
+	description = "Vzh≈Øru na lov!";
 };                       
 FUNC INT DIA_Addon_AlligatorJack_LetsGoHunting_Condition()
 {
@@ -407,12 +407,12 @@ FUNC INT DIA_Addon_AlligatorJack_LetsGoHunting_Condition()
 };
 FUNC VOID DIA_Addon_AlligatorJack_LetsGoHunting_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_AlligatorJack_LetsGoHunting_15_00"); //Tak pojÎme na lov.
-	AI_Output (self,other ,"DIA_Addon_AlligatorJack_LetsGoHunting_12_01"); //Dob‚e, ve dvou to bude hraËka.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_LetsGoHunting_12_02"); //Jsi p‚ipravenej?
+	AI_Output (other,self ,"DIA_Addon_AlligatorJack_LetsGoHunting_15_00"); //Tak poj√´me na lov.
+	AI_Output (self,other ,"DIA_Addon_AlligatorJack_LetsGoHunting_12_01"); //Dob√¢e, ve dvou to bude hraƒçka.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_LetsGoHunting_12_02"); //Jsi p√¢ipravenej?
 	
 	Info_ClearChoices (DIA_Addon_AlligatorJack_LetsGoHunting);
-	Info_AddChoice (DIA_Addon_AlligatorJack_LetsGoHunting,"Ne, jeötÍ ne.",DIA_Addon_AlligatorJack_LetsGoHunting_No);
+	Info_AddChoice (DIA_Addon_AlligatorJack_LetsGoHunting,"Ne, je≈°tƒô ne.",DIA_Addon_AlligatorJack_LetsGoHunting_No);
 	Info_AddChoice (DIA_Addon_AlligatorJack_LetsGoHunting,"Ano.",DIA_Addon_AlligatorJack_LetsGoHunting_Yes);
 };
 const int AlligatorJack_Inter1 = 1;
@@ -422,7 +422,7 @@ const int AlligatorJack_Canyon = 4;
 FUNC VOID DIA_Addon_AlligatorJack_LetsGoHunting_Yes()
 {
 	AI_Output (other,self ,"DIA_Addon_AlligatorJack_LetsGoHunting_Yes_15_00"); //Ano.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_LetsGoHunting_Yes_12_01"); //SkvÍl˝, tak se drû za mnou.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_LetsGoHunting_Yes_12_01"); //Skvƒôl√Ω, tak se dr≈æ za mnou.
 	
 	AI_StopProcessInfos (self);
 	
@@ -445,8 +445,8 @@ FUNC VOID DIA_Addon_AlligatorJack_LetsGoHunting_Yes()
 
 FUNC VOID DIA_Addon_AlligatorJack_LetsGoHunting_No()
 {
-	AI_Output (other,self ,"DIA_Addon_AlligatorJack_LetsGoHunting_No_15_00"); //Ne, jeötÍ ne.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_LetsGoHunting_No_12_01"); //Tak si pospÍö.
+	AI_Output (other,self ,"DIA_Addon_AlligatorJack_LetsGoHunting_No_15_00"); //Ne, je≈°tƒô ne.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_LetsGoHunting_No_12_01"); //Tak si pospƒô≈°.
 	
 	Info_ClearChoices (DIA_Addon_AlligatorJack_LetsGoHunting);
 };
@@ -475,9 +475,9 @@ func int DIA_Addon_AlligatorJack_AlligatorJackInter1_Condition ()
 
 func void DIA_Addon_AlligatorJack_AlligatorJackInter1_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_00"); //⁄dolÌ.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_01"); //NÍkde by tu nÍjak˝ ty potvory mÍly bejt.
-	AI_Output	(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_02"); //PojÎ za mnou.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_00"); //√ödol√≠.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_01"); //Nƒôkde by tu nƒôjak√Ω ty potvory mƒôly bejt.
+	AI_Output	(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_02"); //Poj√´ za mnou.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "HUNT2");
@@ -486,7 +486,7 @@ func void DIA_Addon_AlligatorJack_AlligatorJackInter1_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Das habe ich bef¸rchtet
+//	Info Das habe ich bef√ºrchtet
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Addon_AlligatorJack_TheHunt		(C_INFO)
@@ -512,32 +512,32 @@ func int DIA_Addon_AlligatorJack_TheHunt_Condition ()
 
 func void DIA_Addon_AlligatorJack_TheHunt_Info ()
 {
-	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_00"); //Toho jsem se b·l.
-	AI_Output 	(other ,self, "DIA_Addon_AlligatorJack_TheHunt_15_01"); //»eho?
-	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_02"); //TÍchhle p·r potvor je tak p˘lka, neû kolik bych pot‚eboval.
-	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_03"); //Budem to muset vzÌt do ka‡onu.
-	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_04"); //D·vej bacha, d·l v ka‡onu je to pÍknÍ o hubu.
-	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_05"); //Jestli je ti ûivot milej, drû se co nejblÌû u mÍ.
+	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_00"); //Toho jsem se b√°l.
+	AI_Output 	(other ,self, "DIA_Addon_AlligatorJack_TheHunt_15_01"); //ƒåeho?
+	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_02"); //Tƒôchhle p√°r potvor je tak p≈Ølka, ne≈æ kolik bych pot√¢eboval.
+	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_03"); //Budem to muset vz√≠t do ka≈ïonu.
+	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_04"); //D√°vej bacha, d√°l v ka≈ïonu je to pƒôknƒô o hubu.
+	AI_Output	(self,other , "DIA_Addon_AlligatorJack_TheHunt_12_05"); //Jestli je ti ≈æivot milej, dr≈æ se co nejbl√≠≈æ u mƒô.
 	
 	Wld_InsertNpc (Waran ,"ADW_ENTRANCE_2_VALLEY_10");
 	Wld_InsertNpc (Waran ,"ADW_ENTRANCE_2_VALLEY_10");
 
 	Info_ClearChoices (DIA_Addon_AlligatorJack_TheHunt);
-	Info_AddChoice (DIA_Addon_AlligatorJack_TheHunt,"A co m· v tom ka‡onu jako b˝t?",DIA_Addon_AlligatorJack_TheHunt_Enough);
-	Info_AddChoice (DIA_Addon_AlligatorJack_TheHunt,"No tak pojÎme.",DIA_Addon_AlligatorJack_TheHunt_Running);
+	Info_AddChoice (DIA_Addon_AlligatorJack_TheHunt,"A co m√° v tom ka≈ïonu jako b√Ωt?",DIA_Addon_AlligatorJack_TheHunt_Enough);
+	Info_AddChoice (DIA_Addon_AlligatorJack_TheHunt,"No tak poj√´me.",DIA_Addon_AlligatorJack_TheHunt_Running);
 };
 
 FUNC VOID DIA_Addon_AlligatorJack_TheHunt_Enough ()
 {
-	AI_Output (other,self ,"DIA_Addon_AlligatorJack_TheHunt_Enough_15_00"); //Co P¬ESN  m· v tom ka‡onu b˝t?
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_TheHunt_Enough_12_01"); //Vyhejb·me se mu, jak jen to jde.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_TheHunt_Enough_12_02"); //éijou tam b‚itovci, a ty jsou fakt tuh˝. Jestli se chceö doûÌt r·na, tak se vod nich drû co nejd·l.
+	AI_Output (other,self ,"DIA_Addon_AlligatorJack_TheHunt_Enough_15_00"); //Co P√ÇESNƒò m√° v tom ka≈ïonu b√Ωt?
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_TheHunt_Enough_12_01"); //Vyhejb√°me se mu, jak jen to jde.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_TheHunt_Enough_12_02"); //≈Ωijou tam b√¢itovci, a ty jsou fakt tuh√Ω. Jestli se chce≈° do≈æ√≠t r√°na, tak se vod nich dr≈æ co nejd√°l.
 };
 
 FUNC VOID DIA_Addon_AlligatorJack_TheHunt_Running ()
 {
-	AI_Output (other,self ,"DIA_Addon_AlligatorJack_TheHunt_Running_15_00"); //Fajn, tak pojÎme.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_TheHunt_Running_12_01"); //Dob‚e.
+	AI_Output (other,self ,"DIA_Addon_AlligatorJack_TheHunt_Running_15_00"); //Fajn, tak poj√´me.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_TheHunt_Running_12_01"); //Dob√¢e.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "HUNT3");
@@ -605,41 +605,41 @@ func void DIA_Addon_AlligatorJack_HuntEnd_Info ()
 {
 	if (AlligatorJack_KrokosKilled == 0)
 	{
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_00"); //Hele, m˘ûeö mi ‚Ìct, proË tÍ tu s sebou vlastnÍ tah·m?
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_01"); //JeötÍ jsi nezabil ani jednu krysu.
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_02"); //No, snad budeö uûiteËnej nÍjak jinak.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_00"); //Hele, m≈Ø≈æe≈° mi √¢√≠ct, proƒç tƒô tu s sebou vlastnƒô tah√°m?
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_01"); //Je≈°tƒô jsi nezabil ani jednu krysu.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_02"); //No, snad bude≈° u≈æiteƒçnej nƒôjak jinak.
 		
 	}
 	else if AlligatorJack_KrokosKilled == 1
 	{
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_03"); //V˝bornÍ, nÍkdo jako ty se n·m vûdycky hodÌ.
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_04"); //Hned napoprv˝ jsi jednu z nich sundal, to nenÌ öpatn˝.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_03"); //V√Ωbornƒô, nƒôkdo jako ty se n√°m v≈ædycky hod√≠.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_04"); //Hned napoprv√Ω jsi jednu z nich sundal, to nen√≠ ≈°patn√Ω.
 	}
 	else	//mehr als 1!!
 	{
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_05"); //Seö schopnej lovec.
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_06"); //T˝ vole! Jestli budeö takhle pokraËovat, tak p‚ÌötÍ rovnou z˘stanu v t·bo‚e.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_05"); //Se≈° schopnej lovec.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_HuntEnd_12_06"); //T√Ω vole! Jestli bude≈° takhle pokraƒçovat, tak p√¢√≠≈°tƒô rovnou z≈Østanu v t√°bo√¢e.
 	};
 	
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_07"); //Odnes prosÌm tohle maso z moË·lovejch krys star˝mu Morganovi.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_08"); //Najdeö ho v naöem t·bo‚e.
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_09"); //NejspÌö si bude d·vat ölofÌka nÍkde na pl·ûi, ale Ëek· na nÍj.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_07"); //Odnes pros√≠m tohle maso z moƒç√°lovejch krys star√Ωmu Morganovi.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_08"); //Najde≈° ho v na≈°em t√°bo√¢e.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_09"); //Nejsp√≠≈° si bude d√°vat ≈°lof√≠ka nƒôkde na pl√°≈æi, ale ƒçek√° na nƒôj.
 	
 	if (PIR_1354_Addon_Henry.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_10"); //Vchod do t·bora vobvykle hlÌd· Henry, drûÌ hlÌdku kv˘li bandit˘m.
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_11"); //Jestli tÍ nepustÌ dovnit‚, ‚ekni mu, ûe tÍ posÌl·m j·.
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_12"); //Pak by mÍl bejt p‚ÌjemnÍjöÌ.
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_13"); //Henry je trochu moc naûhavenej a panovaËnej.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_10"); //Vchod do t√°bora vobvykle hl√≠d√° Henry, dr≈æ√≠ hl√≠dku kv≈Øli bandit≈Øm.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_11"); //Jestli tƒô nepust√≠ dovnit√¢, √¢ekni mu, ≈æe tƒô pos√≠l√°m j√°.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_12"); //Pak by mƒôl bejt p√¢√≠jemnƒôj≈°√≠.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_PassHenry_12_13"); //Henry je trochu moc na≈æhavenej a panovaƒçnej.
 	};
 	
 	MIS_AlligatorJack_BringMeat = LOG_RUNNING;
 
 	Log_CreateTopic (TOPIC_Addon_BringMeat,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_BringMeat,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BringMeat,"Krokod˝l Jack mi dal 10 pl·tk˘ masa, kterÈ m·m donÈst Morganovi.");
+	B_LogEntry (TOPIC_Addon_BringMeat,"Krokod√Ωl Jack mi dal 10 pl√°tk≈Ø masa, kter√© m√°m don√©st Morganovi.");
 
-	B_LogEntry (TOPIC_Addon_RatHunt,"Lov byl ˙spÍön˝. Chytili jsme nÍkolik moË·lov˝ch krys.");
+	B_LogEntry (TOPIC_Addon_RatHunt,"Lov byl √∫spƒô≈°n√Ω. Chytili jsme nƒôkolik moƒç√°lov√Ωch krys.");
 	
 	B_GiveInvItems (self ,other,ItFoMuttonRaw,10);
 	MIS_KrokoJagd = LOG_SUCCESS;
@@ -657,7 +657,7 @@ instance DIA_Addon_AlligatorJack_Angus		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_Angus_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_Angus_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Zn·ö Anguse a jeho kamar·da Hanka?";
+	description	 = 	"Zn√°≈° Anguse a jeho kamar√°da Hanka?";
 
 };
 
@@ -671,10 +671,10 @@ func int DIA_Addon_AlligatorJack_Angus_Condition ()
 
 func void DIA_Addon_AlligatorJack_Angus_Info ()
 {
-	AI_Output	(other,self , "DIA_Addon_AlligatorJack_Angus_15_00"); //Zn·ö Anguse a jeho k·moöe Hanka?
-	AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Angus_12_03"); //Uû jsem je ‡·kou dobu nevidÍl.
-	AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Angus_12_04"); //A ani by mi nevadilo, kdyby se uû nikdy nevr·tili.
-	AI_Output	(other,self , "DIA_Addon_AlligatorJack_Angus_15_05"); //ProË?
+	AI_Output	(other,self , "DIA_Addon_AlligatorJack_Angus_15_00"); //Zn√°≈° Anguse a jeho k√°mo≈°e Hanka?
+	AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Angus_12_03"); //U≈æ jsem je ≈ï√°kou dobu nevidƒôl.
+	AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Angus_12_04"); //A ani by mi nevadilo, kdyby se u≈æ nikdy nevr√°tili.
+	AI_Output	(other,self , "DIA_Addon_AlligatorJack_Angus_15_05"); //Proƒç?
 	AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Angus_12_06"); //Ti dva srabi se furt jenom poflakovali kolem jezera.
 };
 
@@ -688,7 +688,7 @@ instance DIA_Addon_AlligatorJack_Lake		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_Lake_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_Lake_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"JAK… jezero to m· b˝t?";
+	description	 = 	"JAK√â jezero to m√° b√Ωt?";
 };
 
 func int DIA_Addon_AlligatorJack_Lake_Condition ()
@@ -702,23 +702,23 @@ func int DIA_Addon_AlligatorJack_Lake_Condition ()
 
 func void DIA_Addon_AlligatorJack_Lake_Info ()
 {
-	AI_Output	(other,self , "DIA_Addon_AlligatorJack_Lake_15_00"); //Kolem jakÈho jezera?
+	AI_Output	(other,self , "DIA_Addon_AlligatorJack_Lake_15_00"); //Kolem jak√©ho jezera?
 
 	if (MIS_KrokoJagd == LOG_SUCCESS)
 	{
-		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_01"); //Pamatujeö se na ten n·ö lov?
+		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_01"); //Pamatuje≈° se na ten n√°≈° lov?
 		AI_Output	(other,self , "DIA_Addon_AlligatorJack_Lake_15_02"); //Jo.
-		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_03"); //Jezero je v tom ˙dolÌ. A tam jsem je obvykle vÌdal.
+		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_03"); //Jezero je v tom √∫dol√≠. A tam jsem je obvykle v√≠dal.
 	}
 	else
 	{
-		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_04"); //Jezero je v tom velk˝m ˙dolÌ.
-		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_05"); //StaËÌ jÌt z t·bora smÍrem na v˝chod, to ˙dolÌ nem˘ûeö minout.
-		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_06"); //Je tam spousta malejch vodop·d˘.
-		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_07"); //Ale pozor ñ pokud pod nohama ucejtÌö uû jenom suchej pÌsek, tak jsi to p‚eöel a uû jsi v ka‡onu.
+		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_04"); //Jezero je v tom velk√Ωm √∫dol√≠.
+		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_05"); //Staƒç√≠ j√≠t z t√°bora smƒôrem na v√Ωchod, to √∫dol√≠ nem≈Ø≈æe≈° minout.
+		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_06"); //Je tam spousta malejch vodop√°d≈Ø.
+		AI_Output 	(self ,other, "DIA_Addon_AlligatorJack_Lake_12_07"); //Ale pozor ‚Äì pokud pod nohama ucejt√≠≈° u≈æ jenom suchej p√≠sek, tak jsi to p√¢e≈°el a u≈æ jsi v ka≈ïonu.
 	};
 	
-	B_LogEntry	(TOPIC_Addon_SkipsGrog,"JeskynÍ by mÍla b˝t v ˙dolÌ v˝chodnÍ od t·bora, p‚Ìmo u jezera.");
+	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Jeskynƒô by mƒôla b√Ωt v √∫dol√≠ v√Ωchodnƒô od t√°bora, p√¢√≠mo u jezera.");
 };
 	
 ///////////////////////////////////////////////////////////////////////
@@ -731,7 +731,7 @@ instance DIA_Addon_AlligatorJack_CanLearn		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_CanLearn_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_CanLearn_Info;
 	permanent 	 = 	TRUE;
-	description	 = 	"M˘ûeö mÍ nÍËemu nauËit?";
+	description	 = 	"M≈Ø≈æe≈° mƒô nƒôƒçemu nauƒçit?";
 
 };
 
@@ -749,22 +749,22 @@ func int DIA_Addon_AlligatorJack_CanLearn_Condition ()
 
 func void DIA_Addon_AlligatorJack_CanLearn_Info ()
 {
-	AI_Output	(other,self ,"DIA_Addon_AlligatorJack_CanLearn_15_00"); //M˘ûeö mÍ nÍco nauËit?
+	AI_Output	(other,self ,"DIA_Addon_AlligatorJack_CanLearn_15_00"); //M≈Ø≈æe≈° mƒô nƒôco nauƒçit?
 	
 	if MIS_KrokoJagd > LOG_RUNNING
 	{
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_CanLearn_12_01"); //JasnÍ, jsem dobrej lovec a m˘ûu ti uk·zat, jak zvÌ‚at˘m st·hnout k˘ûi a vyndat zuby.
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_CanLearn_12_02"); //Jestli chceö, nauËÌm tÍ to.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_CanLearn_12_01"); //Jasnƒô, jsem dobrej lovec a m≈Ø≈æu ti uk√°zat, jak zv√≠√¢at≈Øm st√°hnout k≈Ø≈æi a vyndat zuby.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_CanLearn_12_02"); //Jestli chce≈°, nauƒç√≠m tƒô to.
 		
 		Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
-		B_LogEntry		(Topic_Addon_PIR_Teacher,"Krokod˝l Jack mi m˘ûe uk·zat, jak stahovat zvÌ‚ata z k˘ûe a jak jim vyjÌmat zuby. Krom toho mÍ takÈ pocviËÌ v lukost‚elbÍ.");
+		B_LogEntry		(Topic_Addon_PIR_Teacher,"Krokod√Ωl Jack mi m≈Ø≈æe uk√°zat, jak stahovat zv√≠√¢ata z k≈Ø≈æe a jak jim vyj√≠mat zuby. Krom toho mƒô tak√© pocviƒç√≠ v lukost√¢elbƒô.");
 		
 		AlligatorJack_Addon_TeachPlayer = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_CanLearn_12_03"); //Ale nap‚ed mi p‚edveÎ, ûe taky umÌö lovit.
-		AI_Output (self ,other,"DIA_Addon_AlligatorJack_CanLearn_12_04"); //Aû si spolu zalovÌme, tak to t‚eba udÍl·m.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_CanLearn_12_03"); //Ale nap√¢ed mi p√¢edve√´, ≈æe taky um√≠≈° lovit.
+		AI_Output (self ,other,"DIA_Addon_AlligatorJack_CanLearn_12_04"); //A≈æ si spolu zalov√≠me, tak to t√¢eba udƒôl√°m.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -775,8 +775,8 @@ FUNC VOID B_AJ_Teach()
 	Info_AddChoice (DIA_Addon_AlligatorJack_Teach,DIALOG_BACK,DIA_Addon_AlligatorJack_Teach_Back);
 	Info_AddChoice (DIA_Addon_AlligatorJack_Teach, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5) ,DIA_Addon_AlligatorJack_Teach_Bow_5);
 	Info_AddChoice (DIA_Addon_AlligatorJack_Teach, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))	 ,DIA_Addon_AlligatorJack_Teach_Bow_1);
-	Info_AddChoice	(DIA_Addon_AlligatorJack_Teach, B_BuildLearnString ("Stahovat zvÌ‚ata",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)),  DIA_Addon_AlligatorJack_Teach_FUR);
-	Info_AddChoice	(DIA_Addon_AlligatorJack_Teach, B_BuildLearnString ("VyjÌmat zuby",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Addon_AlligatorJack_Teach_Teeth);
+	Info_AddChoice	(DIA_Addon_AlligatorJack_Teach, B_BuildLearnString ("Stahovat zv√≠√¢ata",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)),  DIA_Addon_AlligatorJack_Teach_FUR);
+	Info_AddChoice	(DIA_Addon_AlligatorJack_Teach, B_BuildLearnString ("Vyj√≠mat zuby",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Addon_AlligatorJack_Teach_Teeth);
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Unterrichte mich!
@@ -788,7 +788,7 @@ instance DIA_Addon_AlligatorJack_Teach		(C_INFO)
 	condition	 = 	DIA_Addon_AlligatorJack_Teach_Condition;
 	information	 = 	DIA_Addon_AlligatorJack_Teach_Info;
 	permanent 	 = 	TRUE;
-	description	 = 	"NauË mÍ...";
+	description	 = 	"Nauƒç mƒô...";
 };
 func int DIA_Addon_AlligatorJack_Teach_Condition ()
 {
@@ -799,8 +799,8 @@ func int DIA_Addon_AlligatorJack_Teach_Condition ()
 };
 func void DIA_Addon_AlligatorJack_Teach_Info ()
 {
-	AI_Output	(other,self ,"DIA_Addon_AlligatorJack_Teach_15_00"); //NauË mÍ nÍco!
-	AI_Output 	(self ,other,"DIA_Addon_AlligatorJack_Teach_12_01"); //Co bys r·d umÍl?
+	AI_Output	(other,self ,"DIA_Addon_AlligatorJack_Teach_15_00"); //Nauƒç mƒô nƒôco!
+	AI_Output 	(self ,other,"DIA_Addon_AlligatorJack_Teach_12_01"); //Co bys r√°d umƒôl?
 		
 	B_AJ_Teach();
 
@@ -827,7 +827,7 @@ FUNC VOID DIA_Addon_AlligatorJack_Teach_FUR()
 	{
 		if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ReptileSkin))
 		{
-			AI_Output (self, other, "DIA_Addon_AlligatorJack_Teach_Fur_12_00"); //¬ez vûdycky zaËÌnej na b‚iöe, jinak bude v˝sledek nekvalitnÌ.
+			AI_Output (self, other, "DIA_Addon_AlligatorJack_Teach_Fur_12_00"); //√Çez v≈ædycky zaƒç√≠nej na b√¢i≈°e, jinak bude v√Ωsledek nekvalitn√≠.
 		};
 	}
 	else
@@ -859,7 +859,7 @@ FUNC VOID DIA_Addon_AlligatorJack_Teach_Teeth()
 // ------------------------------------------------------------
 func void B_AlliJack_AlliKlar()
 {
-	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Anheuern_12_01"); //No dob‚e.
+	AI_Output (self ,other,"DIA_Addon_AlligatorJack_Anheuern_12_01"); //No dob√¢e.
 };
 // ------------------------------------------------------------
 instance DIA_Addon_AlligatorJack_Anheuern(C_INFO)
@@ -869,7 +869,7 @@ instance DIA_Addon_AlligatorJack_Anheuern(C_INFO)
 	condition	= DIA_Addon_AlligatorJack_Anheuern_Condition;
 	information	= DIA_Addon_AlligatorJack_Anheuern_Info;
 	permanent	= FALSE;
-	description = "Tak vzh˘ru na lov.";
+	description = "Tak vzh≈Øru na lov.";
 };                       
 FUNC INT DIA_Addon_AlligatorJack_Anheuern_Condition()
 {
@@ -880,7 +880,7 @@ FUNC INT DIA_Addon_AlligatorJack_Anheuern_Condition()
 };
 func VOID DIA_Addon_AlligatorJack_Anheuern_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_AlligatorJack_Anheuern_15_00"); //Tak pojÎme lovit.
+	AI_Output (other,self ,"DIA_Addon_AlligatorJack_Anheuern_15_00"); //Tak poj√´me lovit.
 	B_AlliJack_AlliKlar();
 	AI_StopProcessInfos (self);
 	B_Addon_PiratesFollowAgain();
@@ -898,7 +898,7 @@ instance DIA_Addon_AlligatorJack_ComeOn(C_INFO)
 	condition	= 	DIA_Addon_AlligatorJack_ComeOn_Condition;
 	information	= 	DIA_Addon_AlligatorJack_ComeOn_Info;
 	permanent	= 	TRUE;
-	description	= 	"Tak pojÎ.";
+	description	= 	"Tak poj√´.";
 };
 func int DIA_Addon_AlligatorJack_ComeOn_Condition ()
 {
@@ -911,7 +911,7 @@ func int DIA_Addon_AlligatorJack_ComeOn_Condition ()
 };
 func void DIA_Addon_AlligatorJack_ComeOn_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_AlligatorJack_KommMit_15_00"); //PojÎ.
+	AI_Output	(other, self, "DIA_Addon_AlligatorJack_KommMit_15_00"); //Poj√´.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
 		B_Say (self, other, "$NOTNOW");
@@ -936,7 +936,7 @@ INSTANCE DIA_Addon_AlligatorJack_GoHome(C_INFO)
 	condition	= DIA_Addon_AlligatorJack_GoHome_Condition;
 	information	= DIA_Addon_AlligatorJack_GoHome_Info;
 	permanent	= TRUE;
-	description = "Uû tÍ nepot‚ebuju.";
+	description = "U≈æ tƒô nepot√¢ebuju.";
 };                       
 FUNC INT DIA_Addon_AlligatorJack_GoHome_Condition()
 {
@@ -949,7 +949,7 @@ FUNC INT DIA_Addon_AlligatorJack_GoHome_Condition()
 
 FUNC VOID DIA_Addon_AlligatorJack_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_AlligatorJack_DontNeedYou_15_00"); //Uû tÍ nepot‚ebuju.
+	AI_Output (other,self ,"DIA_Addon_AlligatorJack_DontNeedYou_15_00"); //U≈æ tƒô nepot√¢ebuju.
 	B_AlliJack_AlliKlar();
 
 	AI_StopProcessInfos (self); 

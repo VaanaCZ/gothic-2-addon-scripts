@@ -43,10 +43,10 @@ func int DIA_Balthasar_HALLO_Condition ()
 func void DIA_Balthasar_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Balthasar_HALLO_15_00"); //Jak se vede?
-	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_01"); //Ach, nov· tv·‚ na farmÍ. ée by mi nakonec ta star· drûgreöle p‚ece jen sehnala uËednÌka?
-	AI_Output			(other, self, "DIA_Balthasar_HALLO_15_02"); //Nejsem û·dn˝ uËednÌk.
-	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_03"); //Hm, to vidÌm. Nejsem uû tak mlad˝ jako d‚Ìv, vöak vÌö. A uû lÈta Ëek·m na nÍkoho, kdo by to po mnÍ p‚evzal.
-	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_04"); //Ty tu asi nejseö kv˘li tomu, ûe jsou naöi sousedi naötvanÌ, co?
+	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_01"); //Ach, nov√° tv√°√¢ na farmƒô. ≈Ωe by mi nakonec ta star√° dr≈ægre≈°le p√¢ece jen sehnala uƒçedn√≠ka?
+	AI_Output			(other, self, "DIA_Balthasar_HALLO_15_02"); //Nejsem ≈æ√°dn√Ω uƒçedn√≠k.
+	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_03"); //Hm, to vid√≠m. Nejsem u≈æ tak mlad√Ω jako d√¢√≠v, v≈°ak v√≠≈°. A u≈æ l√©ta ƒçek√°m na nƒôkoho, kdo by to po mnƒô p√¢evzal.
+	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_04"); //Ty tu asi nejse≈° kv≈Øli tomu, ≈æe jsou na≈°i sousedi na≈°tvan√≠, co?
 	
 
 };
@@ -61,7 +61,7 @@ instance DIA_Balthasar_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Balthasar_WASMACHSTDU_Condition;
 	information	 = 	DIA_Balthasar_WASMACHSTDU_Info;
 
-	description	 = 	"Co je tvoje pr·ce?";
+	description	 = 	"Co je tvoje pr√°ce?";
 };
 
 func int DIA_Balthasar_WASMACHSTDU_Condition ()
@@ -74,9 +74,9 @@ func int DIA_Balthasar_WASMACHSTDU_Condition ()
 
 func void DIA_Balthasar_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_WASMACHSTDU_15_00"); //Co m·ö na pr·ci?
-	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_01"); //No, hlÌd·m ovce a dÍl·m to tak dlouho, co si jen pamatuju.
-	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_02"); //Ta zvÌ‚ata jsou velmi oddan· a chytr·, vöak vÌö. Kdyû se o nÍ dob‚e star·ö, budou tÍ poslouchat aû do konce ûivota.
+	AI_Output			(other, self, "DIA_Balthasar_WASMACHSTDU_15_00"); //Co m√°≈° na pr√°ci?
+	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_01"); //No, hl√≠d√°m ovce a dƒôl√°m to tak dlouho, co si jen pamatuju.
+	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_02"); //Ta zv√≠√¢ata jsou velmi oddan√° a chytr√°, v≈°ak v√≠≈°. Kdy≈æ se o nƒô dob√¢e star√°≈°, budou tƒô poslouchat a≈æ do konce ≈æivota.
 
 };
 
@@ -90,7 +90,7 @@ instance DIA_Addon_Balthasar_Rangerbandits		(C_INFO)
 	condition	 = 	DIA_Addon_Balthasar_Rangerbandits_Condition;
 	information	 = 	DIA_Addon_Balthasar_Rangerbandits_Info;
 
-	description	 = 	"Nevöiml sis, ûe by tudy proch·zeli nÍjacÌ banditÈ?";
+	description	 = 	"Nev≈°iml sis, ≈æe by tudy proch√°zeli nƒôjac√≠ bandit√©?";
 };
 
 func int DIA_Addon_Balthasar_Rangerbandits_Condition ()
@@ -107,21 +107,21 @@ func int DIA_Addon_Balthasar_Rangerbandits_Condition ()
 
 func void DIA_Addon_Balthasar_Rangerbandits_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Balthasar_Rangerbandits_15_00"); //NevidÍls tudy proch·zet nÍjakÈ bandity?
-	AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_01"); //Samoz‚ejmÍ. äli podÈl pole u Sekobova statku a na severu vstoupili do lesa.
+	AI_Output	(other, self, "DIA_Addon_Balthasar_Rangerbandits_15_00"); //Nevidƒôls tudy proch√°zet nƒôjak√© bandity?
+	AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_01"); //Samoz√¢ejmƒô. ≈†li pod√©l pole u Sekobova statku a na severu vstoupili do lesa.
 	
 	if (MIS_Vatras_FindTheBanditTrader == LOG_RUNNING)	
 	{
-		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_02"); //MÍli s sebou spoustu zbranÌ. Vyzbrojili by tÌm i kr·lovu arm·du.
+		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_02"); //Mƒôli s sebou spoustu zbran√≠. Vyzbrojili by t√≠m i kr√°lovu arm√°du.
 	};
 	
 	if (SC_KnowsLuciaCaughtByBandits == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_03"); //Jestli mÍ neö·lil zrak, tak do lesa t·hli i nÍjakou mladou ûenu.
-		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_04"); //Fakt douf·m, ûe ji nechali b˝t.
+		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_03"); //Jestli mƒô ne≈°√°lil zrak, tak do lesa t√°hli i nƒôjakou mladou ≈æenu.
+		AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_04"); //Fakt douf√°m, ≈æe ji nechali b√Ωt.
 	};
 	B_GivePlayerXP (XP_Ambient);
-	AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_05"); //Ale jsem r·d, ûe se vyhnuli m˝mu statku.
+	AI_Output	(self, other, "DIA_Addon_Balthasar_Rangerbandits_05_05"); //Ale jsem r√°d, ≈æe se vyhnuli m√Ωmu statku.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -134,7 +134,7 @@ instance DIA_Balthasar_AERGERMITNACHBARN		(C_INFO)
 	condition	 = 	DIA_Balthasar_AERGERMITNACHBARN_Condition;
 	information	 = 	DIA_Balthasar_AERGERMITNACHBARN_Info;
 
-	description	 = 	"Co m·ö za problÈmy se sousedy?";
+	description	 = 	"Co m√°≈° za probl√©my se sousedy?";
 };
 
 func int DIA_Balthasar_AERGERMITNACHBARN_Condition ()
@@ -155,11 +155,11 @@ func int DIA_Balthasar_AERGERMITNACHBARN_Condition ()
 
 func void DIA_Balthasar_AERGERMITNACHBARN_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_AERGERMITNACHBARN_15_00"); //Co m·ö za problÈmy se sousedy?
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_01"); //Tr·va na tÈhle stranÍ l·nu je vûdycky zakrsl· a such·. Tak vÍtöinou chodÌm na pastviny jin˝ch farm·‚˘.
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_02"); //Velkostatk·‚i to nevadÌ, ale Bengar, farm·‚ z n·hornÌch pastvin, dÍl· hroznej virv·l, kdyû tam vezmu naöe zvÌ‚ata.
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_03"); //¬Ìk·, ûe by mu mÍl Sekob platit za to, ûe beru ovce na Bengarovy pastviny.
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_04"); //Ale Sekob na to nechce d·t ani zl·manou greöli, takûe uû d·l nem˘ûu nahoru chodit.
+	AI_Output			(other, self, "DIA_Balthasar_AERGERMITNACHBARN_15_00"); //Co m√°≈° za probl√©my se sousedy?
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_01"); //Tr√°va na t√©hle stranƒô l√°nu je v≈ædycky zakrsl√° a such√°. Tak vƒôt≈°inou chod√≠m na pastviny jin√Ωch farm√°√¢≈Ø.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_02"); //Velkostatk√°√¢i to nevad√≠, ale Bengar, farm√°√¢ z n√°horn√≠ch pastvin, dƒôl√° hroznej virv√°l, kdy≈æ tam vezmu na≈°e zv√≠√¢ata.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_03"); //√Ç√≠k√°, ≈æe by mu mƒôl Sekob platit za to, ≈æe beru ovce na Bengarovy pastviny.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_04"); //Ale Sekob na to nechce d√°t ani zl√°manou gre≈°li, tak≈æe u≈æ d√°l nem≈Ø≈æu nahoru chodit.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -172,7 +172,7 @@ instance DIA_Balthasar_WOBENGAR		(C_INFO)
 	condition	 = 	DIA_Balthasar_WOBENGAR_Condition;
 	information	 = 	DIA_Balthasar_WOBENGAR_Info;
 
-	description	 = 	"Kde bych naöel hornÌ pastviny a Bengarovu farmu?";
+	description	 = 	"Kde bych na≈°el horn√≠ pastviny a Bengarovu farmu?";
 };
 
 func int DIA_Balthasar_WOBENGAR_Condition ()
@@ -186,9 +186,9 @@ func int DIA_Balthasar_WOBENGAR_Condition ()
 
 func void DIA_Balthasar_WOBENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_WOBENGAR_15_00"); //Jak se dostanu na hornÌ pastviny a Bengarovu farmu?
-	AI_Output			(self, other, "DIA_Balthasar_WOBENGAR_05_01"); //Jdi po tÈhle cestÍ, aû narazÌö na k‚iûovatku.
-	AI_Output			(self, other, "DIA_Balthasar_WOBENGAR_05_02"); //Kdyû se d·ö napravo, uvidÌö hromadu balvan˘. Napravo za nimi jsou n·hornÌ pastviny a pr˘smyk.
+	AI_Output			(other, self, "DIA_Balthasar_WOBENGAR_15_00"); //Jak se dostanu na horn√≠ pastviny a Bengarovu farmu?
+	AI_Output			(self, other, "DIA_Balthasar_WOBENGAR_05_01"); //Jdi po t√©hle cestƒô, a≈æ naraz√≠≈° na k√¢i≈æovatku.
+	AI_Output			(self, other, "DIA_Balthasar_WOBENGAR_05_02"); //Kdy≈æ se d√°≈° napravo, uvid√≠≈° hromadu balvan≈Ø. Napravo za nimi jsou n√°horn√≠ pastviny a pr≈Øsmyk.
 };
 
 
@@ -202,7 +202,7 @@ instance DIA_Balthasar_TALKTOBENGAR		(C_INFO)
 	condition	 = 	DIA_Balthasar_TALKTOBENGAR_Condition;
 	information	 = 	DIA_Balthasar_TALKTOBENGAR_Info;
 
-	description	 = 	"Moûn· bych si mÍl promluvit s Bengarem.";
+	description	 = 	"Mo≈æn√° bych si mƒôl promluvit s Bengarem.";
 };
 
 func int DIA_Balthasar_TALKTOBENGAR_Condition ()
@@ -223,13 +223,13 @@ func int DIA_Balthasar_TALKTOBENGAR_Condition ()
 
 func void DIA_Balthasar_TALKTOBENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_TALKTOBENGAR_15_00"); //Moûn· bych si mÍl promluvit s Bengarem.
-	AI_Output			(self, other, "DIA_Balthasar_TALKTOBENGAR_05_01"); //Ty bys to pro mÍ udÍlal? Co mu ‚ekneö? Totiû, nechtÍl bych û·dn˝ problÈmy, rozumÌö?
-	AI_Output			(other, self, "DIA_Balthasar_TALKTOBENGAR_15_02"); //UvidÌme.
+	AI_Output			(other, self, "DIA_Balthasar_TALKTOBENGAR_15_00"); //Mo≈æn√° bych si mƒôl promluvit s Bengarem.
+	AI_Output			(self, other, "DIA_Balthasar_TALKTOBENGAR_05_01"); //Ty bys to pro mƒô udƒôlal? Co mu √¢ekne≈°? Toti≈æ, nechtƒôl bych ≈æ√°dn√Ω probl√©my, rozum√≠≈°?
+	AI_Output			(other, self, "DIA_Balthasar_TALKTOBENGAR_15_02"); //Uvid√≠me.
 
 	Log_CreateTopic (TOPIC_BalthasarsSchafe, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BalthasarsSchafe, LOG_RUNNING);
-	B_LogEntry (TOPIC_BalthasarsSchafe,"Sedl·k Bengar zak·zal ovË·ku Balthazarovi, aby svÈ ovce vedl nahoru na pastviny."); 
+	B_LogEntry (TOPIC_BalthasarsSchafe,"Sedl√°k Bengar zak√°zal ovƒç√°ku Balthazarovi, aby sv√© ovce vedl nahoru na pastviny."); 
 	MIS_Balthasar_BengarsWeide = LOG_RUNNING;
 };
 
@@ -243,7 +243,7 @@ instance DIA_Balthasar_BENGARUEBERREDET		(C_INFO)
 	condition	 = 	DIA_Balthasar_BENGARUEBERREDET_Condition;
 	information	 = 	DIA_Balthasar_BENGARUEBERREDET_Info;
 
-	description	 = 	"M˘ûeö svÈ ovce opÍt p‚ivÈst za Bengarovy pastviny.";
+	description	 = 	"M≈Ø≈æe≈° sv√© ovce opƒôt p√¢iv√©st za Bengarovy pastviny.";
 };
 
 func int DIA_Balthasar_BENGARUEBERREDET_Condition ()
@@ -265,9 +265,9 @@ func int DIA_Balthasar_BENGARUEBERREDET_Condition ()
 
 func void DIA_Balthasar_BENGARUEBERREDET_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_BENGARUEBERREDET_15_00"); //Uû zase m˘ûeö svoje ovce br·t na Bengarovy pastviny. Pr·vÍ jsem s nÌm mluvil.
-	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_01"); //DÌky. Hned vyrazÌm na cestu.
-	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_02"); //Tady, vezmi si na d˘kaz mÈ vdÍËnosti tuhle ovËÌ k˘ûi.
+	AI_Output			(other, self, "DIA_Balthasar_BENGARUEBERREDET_15_00"); //U≈æ zase m≈Ø≈æe≈° svoje ovce br√°t na Bengarovy pastviny. Pr√°vƒô jsem s n√≠m mluvil.
+	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_01"); //D√≠ky. Hned vyraz√≠m na cestu.
+	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_02"); //Tady, vezmi si na d≈Økaz m√© vdƒôƒçnosti tuhle ovƒç√≠ k≈Ø≈æi.
 
 	B_GiveInvItems (self, other, ItAt_SheepFur, 10);  
 
@@ -317,7 +317,7 @@ instance DIA_Balthasar_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Balthasar_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"A co jinak. Vöechno v po‚·dku?";
+	description	 = 	"A co jinak. V≈°echno v po√¢√°dku?";
 };
 
 func int DIA_Balthasar_PERMKAP1_Condition ()
@@ -330,7 +330,7 @@ func int DIA_Balthasar_PERMKAP1_Condition ()
 
 func void DIA_Balthasar_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_PERMKAP1_15_00"); //A co jinak. Vöechno v po‚·dku?
+	AI_Output			(other, self, "DIA_Balthasar_PERMKAP1_15_00"); //A co jinak. V≈°echno v po√¢√°dku?
 	
 	Npc_PerceiveAll(self);
 	if 	(
@@ -344,18 +344,18 @@ func void DIA_Balthasar_PERMKAP1_Info ()
 		)
 			
 				{
-					AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_01"); //Nem˘ûu si stÍûovat. DÌky za opt·nÌ.
+					AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_01"); //Nem≈Ø≈æu si stƒô≈æovat. D√≠ky za opt√°n√≠.
 					AI_StopProcessInfos (self);
 				}
 	else
 			{
-				AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_02"); //Jsou to teÎ tÍûkÈ Ëasy. Nem˘ûu najÌt svÈ ovce!
+				AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_02"); //Jsou to te√´ tƒô≈æk√© ƒçasy. Nem≈Ø≈æu naj√≠t sv√© ovce!
 				if (Npc_IsDead(Sekob)== FALSE)
 				{
-					AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_03"); //H·d·m, ûe bych o tom mÍl ‚Ìct Sekobovi.
+					AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_03"); //H√°d√°m, ≈æe bych o tom mƒôl √¢√≠ct Sekobovi.
 				};
 				AI_StopProcessInfos (self);
-				Npc_ExchangeRoutine	(self,"ZaËÌt"); //Joly: falls er auf der 2. Weide bei Bengar ist.
+				Npc_ExchangeRoutine	(self,"Zaƒç√≠t"); //Joly: falls er auf der 2. Weide bei Bengar ist.
 			};
 };
 

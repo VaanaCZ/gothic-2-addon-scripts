@@ -33,7 +33,7 @@ instance DIA_Biff_NW_HAfen		(C_INFO)
 	information	 = 	DIA_Biff_NW_HAfen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Fajn. Ale uû brzy.";
+	description	 = 	"Fajn. Ale u≈æ brzy.";
 };
 
 func int DIA_Biff_NW_HAfen_Condition ()
@@ -43,8 +43,8 @@ func int DIA_Biff_NW_HAfen_Condition ()
 
 func void DIA_Biff_NW_HAfen_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_NW_HAfen_15_00"); //Fajn. Ale uû brzy.
-	AI_Output			(self, other, "DIA_Biff_NW_HAfen_07_01"); //Nem˘ûu Ëekat.
+	AI_Output			(other, self, "DIA_Biff_NW_HAfen_15_00"); //Fajn. Ale u≈æ brzy.
+	AI_Output			(self, other, "DIA_Biff_NW_HAfen_07_01"); //Nem≈Ø≈æu ƒçekat.
 	
 	if (MIS_ReadyforChapter6 == TRUE)
 		{

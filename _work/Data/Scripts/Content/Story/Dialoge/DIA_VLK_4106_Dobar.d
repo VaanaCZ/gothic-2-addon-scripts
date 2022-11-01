@@ -42,7 +42,7 @@ func int DIA_Dobar_HALLO_Condition ()
 func void DIA_Dobar_HALLO_Info ()
 {
 	
-	AI_Output (self, other, "DIA_Dobar_HALLO_08_00"); //(nevrle) Co chceš?
+	AI_Output (self, other, "DIA_Dobar_HALLO_08_00"); //(nevrle) Co chceÅ¡?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ich verstehe mich auf's schmieden.
@@ -54,7 +54,7 @@ instance DIA_Dobar_Talent		(C_INFO)
 	condition	 = 	DIA_Dobar_Talent_Condition;
 	information	 = 	DIA_Dobar_Talent_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Vím pár vêci o kovaâinê.";
+	description	 =  "VÃ­m pÃ¡r vÄ™ci o kovaÃ¢inÄ™.";
 };
 func int DIA_Dobar_Talent_Condition ()
 {	
@@ -65,8 +65,8 @@ func int DIA_Dobar_Talent_Condition ()
 };
 func void DIA_Dobar_Talent_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //Vím pár vêci o kovaâinê.
-	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //Fajn, a co má bıt?
+	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //VÃ­m pÃ¡r vÄ™ci o kovaÃ¢inÄ™.
+	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //Fajn, a co mÃ¡ bÃ½t?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Schmiede
@@ -78,7 +78,7 @@ instance DIA_Dobar_Schmiede		(C_INFO)
 	condition	 = 	DIA_Dobar_Schmiede_Condition;
 	information	 = 	DIA_Dobar_Schmiede_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Mohu si u tebe v kovárnê nêco vyrobit?";
+	description	 = 	"Mohu si u tebe v kovÃ¡rnÄ™ nÄ™co vyrobit?";
 };
 
 func int DIA_Dobar_Schmiede_Condition ()
@@ -90,9 +90,9 @@ func int DIA_Dobar_Schmiede_Condition ()
 };
 func void DIA_Dobar_Schmiede_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Schmiede_15_00"); //Mohu si u tebe v kovárnê nêco vyrobit?
-	AI_Output (self, other, "DIA_Dobar_Schmiede_08_01"); //Teë zrovna nevím, kam dâív skoèit, jenom bychom si tu pâekáeli. Poèkej, a se setmí.
-	AI_Output (self, other, "DIA_Dobar_Schmiede_08_02"); //Pak pùjdeme s Parlafem na kutê a ty budeš mít volné pole pùsobnosti.
+	AI_Output (other, self, "DIA_Dobar_Schmiede_15_00"); //Mohu si u tebe v kovÃ¡rnÄ™ nÄ™co vyrobit?
+	AI_Output (self, other, "DIA_Dobar_Schmiede_08_01"); //TeÃ« zrovna nevÃ­m, kam dÃ¢Ã­v skoÄit, jenom bychom si tu pÃ¢ekÃ¡Å¾eli. PoÄkej, aÅ¾ se setmÃ­.
+	AI_Output (self, other, "DIA_Dobar_Schmiede_08_02"); //Pak pÅ¯jdeme s Parlafem na kutÄ™ a ty budeÅ¡ mÃ­t volnÃ© pole pÅ¯sobnosti.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info beibringen
@@ -104,7 +104,7 @@ instance DIA_Dobar_beibringen		(C_INFO)
 	condition	 = 	DIA_Dobar_beibringen_Condition;
 	information	 = 	DIA_Dobar_beibringen_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Mùeš mê nêèemu nauèit?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 
 func int DIA_Dobar_beibringen_Condition ()
@@ -116,13 +116,13 @@ func int DIA_Dobar_beibringen_Condition ()
 };
 func void DIA_Dobar_beibringen_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //Mùeš mê nêèemu nauèit?
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //Základy u máš. Mùu ti teda ukázat, jak svou práci ještê vylepšit.
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //Pak budeš moci vyrábêt lepší zbranê.
+	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //ZÃ¡klady uÅ¾ mÃ¡Å¡. MÅ¯Å¾u ti teda ukÃ¡zat, jak svou prÃ¡ci jeÅ¡tÄ™ vylepÅ¡it.
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //Pak budeÅ¡ moci vyrÃ¡bÄ™t lepÅ¡Ã­ zbranÄ™.
 	
 	Dobar_Learnsmith = TRUE;
 	Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher_OC, "Dobar mê nauèí kout lepší zbranê.");
+	B_LogEntry		(TOPIC_Teacher_OC, "Dobar mÄ™ nauÄÃ­ kout lepÅ¡Ã­ zbranÄ™.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Teach
@@ -133,7 +133,7 @@ instance DIA_Dobar_Teach		(C_INFO)
 	nr			 = 	3;
 	condition	 = 	DIA_Dobar_Teach_Condition;
 	information	 = 	DIA_Dobar_Teach_Info;
-	description	 = 	B_BuildLearnString ("Uka mi, jak vykovat dobrı meè!", B_GetLearnCostTalent (other, NPC_TALENT_SMITH, WEAPON_1H_Special_01));
+	description	 = 	B_BuildLearnString ("UkaÅ¾ mi, jak vykovat dobrÃ½ meÄ!", B_GetLearnCostTalent (other, NPC_TALENT_SMITH, WEAPON_1H_Special_01));
 	permanent	 =  TRUE;
 };
 func int DIA_Dobar_Teach_Condition ()
@@ -146,13 +146,13 @@ func int DIA_Dobar_Teach_Condition ()
 };
 func void DIA_Dobar_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Teach_15_00"); //Uka mi, jak vykovat dobrı meè!
+	AI_Output (other, self, "DIA_Dobar_Teach_15_00"); //UkaÅ¾ mi, jak vykovat dobrÃ½ meÄ!
 	
 	if B_TeachPlayerTalentSmith	(self, hero, WEAPON_1H_Special_01) 
 	{	
-		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //Pokud má daná zbraà za nêco stát, musíš nejdâív peèlivê a stejnomêrnê rozhavit ocel.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //Kdy to budeš mít na pamêti, èepele, které vykováš, budou tvrdší a ostâejší.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //Víc u vêdêt nepotâebuješ. Jestli chceš tady na hradê nêkde sehnat ocel, promluv si s Engorem.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //Pokud mÃ¡ danÃ¡ zbraÅ• za nÄ™co stÃ¡t, musÃ­Å¡ nejdÃ¢Ã­v peÄlivÄ™ a stejnomÄ™rnÄ™ rozÅ¾havit ocel.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //KdyÅ¾ to budeÅ¡ mÃ­t na pamÄ™ti, Äepele, kterÃ© vykovÃ¡Å¡, budou tvrdÅ¡Ã­ a ostÃ¢ejÅ¡Ã­.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //VÃ­c uÅ¾ vÄ™dÄ™t nepotÃ¢ebujeÅ¡. Jestli chceÅ¡ tady na hradÄ™ nÄ™kde sehnat ocel, promluv si s Engorem.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ instance DIA_Dobar_Waffe		(C_INFO)
 	condition	 = 	DIA_Dobar_Waffe_Condition;
 	information	 = 	DIA_Dobar_Waffe_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mohl bys mi vyrobit zbraà?";
+	description	 = 	"Mohl bys mi vyrobit zbraÅ•?";
 };
 func int DIA_Dobar_Waffe_Condition ()
 {
@@ -173,11 +173,11 @@ func int DIA_Dobar_Waffe_Condition ()
 };
 func void DIA_Dobar_Waffe_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //Mohl bys mi vyrobit zbraà?
-	AI_Output (self, other, "DIA_Dobar_Waffe_08_01"); //Na to nemám èas. Zbranê rozdêluje Tandor - já je pouze vyrábím a Parlaf je pak brousí.
+	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //Mohl bys mi vyrobit zbraÅ•?
+	AI_Output (self, other, "DIA_Dobar_Waffe_08_01"); //Na to nemÃ¡m Äas. ZbranÄ™ rozdÄ™luje Tandor - jÃ¡ je pouze vyrÃ¡bÃ­m a Parlaf je pak brousÃ­.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Tandor na hradê obchoduje se zbranêmi.");
+	B_LogEntry (TOPIC_Trader_OC,"Tandor na hradÄ™ obchoduje se zbranÄ™mi.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm
@@ -189,7 +189,7 @@ instance DIA_Dobar_NEWS		(C_INFO)
 	condition	 = 	DIA_Dobar_NEWS_Condition;
 	information	 = 	DIA_Dobar_NEWS_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Jak jde práce?";
+	description	 = 	"Jak jde prÃ¡ce?";
 };
 func int DIA_Dobar_NEWS_Condition ()
 {
@@ -199,24 +199,24 @@ func void DIA_Dobar_NEWS_Info ()
 {
 	
 	
-	AI_Output (other, self, "DIA_Dobar_NEWS_15_00"); //Jak jde práce?
+	AI_Output (other, self, "DIA_Dobar_NEWS_15_00"); //Jak jde prÃ¡ce?
 	
 	if (Dobar_einmalig == FALSE)
 	{
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_01"); //Zrovna kovám zbranê pro rytíâe na hradê. Od té doby, co jsme tady, se musím èinit, co mi síly staèí.
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_02"); //A taky e je to zapotâebí. Ukáeme têm zatracenım skâetùm, jak ostré jsou naše bâity!
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_01"); //Zrovna kovÃ¡m zbranÄ™ pro rytÃ­Ã¢e na hradÄ™. Od tÃ© doby, co jsme tady, se musÃ­m Äinit, co mi sÃ­ly staÄÃ­.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_02"); //A taky Å¾e je to zapotÃ¢ebÃ­. UkÃ¡Å¾eme tÄ™m zatracenÃ½m skÃ¢etÅ¯m, jak ostrÃ© jsou naÅ¡e bÃ¢ity!
 
 		if ((Npc_IsDead(Parlaf)) == FALSE)
 		{
 			B_TurnToNpc (self, Parlaf);
-			AI_Output (self, other, "DIA_Dobar_NEWS_08_03"); //(volá) Hej, Parlafe - aã jsou tyhle meèe pêkné a ostré! Skâeti jsou sakra tuzí protivníci!
+			AI_Output (self, other, "DIA_Dobar_NEWS_08_03"); //(volÃ¡) Hej, Parlafe - aÄƒ jsou tyhle meÄe pÄ™knÃ© a ostrÃ©! SkÃ¢eti jsou sakra tuzÃ­ protivnÃ­ci!
 			B_TurnToNpc (self, other); 
 		};
 		Dobar_einmalig = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_04"); //Mohlo by to bıt lepší. Kdybys mê furt nerušil, urèitê bych u mêl hotovo aspoà nêco.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_04"); //Mohlo by to bÃ½t lepÅ¡Ã­. Kdybys mÄ™ furt neruÅ¡il, urÄitÄ™ bych uÅ¾ mÄ™l hotovo aspoÅ• nÄ™co.
 	};
 };
 
@@ -232,7 +232,7 @@ INSTANCE DIA_Dobar_PICKPOCKET (C_INFO)
 	condition	= DIA_Dobar_PICKPOCKET_Condition;
 	information	= DIA_Dobar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kráde jeho hrudky rudy by byla dosti riskantní.)";
+	description = "(KrÃ¡deÅ¾ jeho hrudky rudy by byla dosti riskantnÃ­.)";
 };                       
 
 FUNC INT DIA_Dobar_PICKPOCKET_Condition()

@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -7,52 +7,52 @@
 //-------- Addon Missionen ---------
 const string TOPIC_Addon_RatHunt		= 	"Rat hunt";
 const string TOPIC_Addon_BringMeat		=	"Maso pro Morgana";
-const string TOPIC_Addon_BanditsTower 	=	"Vê";
-const string TOPIC_Addon_HolOwen		= 	"Dâevo na palisádu";
-const string TOPIC_Addon_Kompass		=	"Garettùv kompas";
-const string TOPIC_Addon_RoastGrog		=	"Koâalka pro kuchaâe";
-const string TOPIC_Addon_BrandonBooze	=	"Pití pro Brandona";
-const string TOPIC_Addon_MorganBeach	=	"Severní plá";
+const string TOPIC_Addon_BanditsTower 	=	"VÄ™Å¾";
+const string TOPIC_Addon_HolOwen		= 	"DÃ¢evo na palisÃ¡du";
+const string TOPIC_Addon_Kompass		=	"GarettÅ¯v kompas";
+const string TOPIC_Addon_RoastGrog		=	"KoÃ¢alka pro kuchaÃ¢e";
+const string TOPIC_Addon_BrandonBooze	=	"PitÃ­ pro Brandona";
+const string TOPIC_Addon_MorganBeach	=	"SevernÃ­ plÃ¡Å¾";
 const string TOPIC_Addon_AngusHank		=	"Angus a Hank";
 const string TOPIC_Addon_SkipsGrog		=	"Skip je na suchu";
-const string TOPIC_Addon_KillJuan		= 	"Angusùv a Hankùv vrah";
-const string TOPIC_Addon_ClearCanyon	=	"Hon na bâitovce";
-const string TOPIC_Addon_ScoutBandits	=	"Zvêdem u banditù";
+const string TOPIC_Addon_KillJuan		= 	"AngusÅ¯v a HankÅ¯v vrah";
+const string TOPIC_Addon_ClearCanyon	=	"Hon na bÃ¢itovce";
+const string TOPIC_Addon_ScoutBandits	=	"ZvÄ™dem u banditÅ¯";
 const string TOPIC_Addon_MalcomsStunt	=	"Malcom";
 
 
-//-------- Addon Händler -----------
+//-------- Addon HÃ¤ndler -----------
 
-const string Topic_Addon_PIR_Trader  = "Obchod s piráty";	
+const string Topic_Addon_PIR_Trader  = "Obchod s pirÃ¡ty";	
 
 //-------- Addon Lehrer ------------
-const string Topic_Addon_PIR_Teacher = "Uèení u pirátù";
+const string Topic_Addon_PIR_Teacher = "UÄenÃ­ u pirÃ¡tÅ¯";
 
 
 
 //Inhalte:
 
-const string Log_Text_Addon_ScoutBandits	=	"Bandité mají zlatı dùl. Proto sem také pâišli.";
+const string Log_Text_Addon_ScoutBandits	=	"BanditÃ© majÃ­ zlatÃ½ dÅ¯l. Proto sem takÃ© pÃ¢iÅ¡li.";
 
 //Teacher
 
-const string Log_Text_Addon_HenryTeach		=	"Henry mê nauèí bojovat s obouruèními zbranêmi a kušemi.";
-const string Log_Text_Addon_MorganTeach		=	"Morgan mê vycvièí v boji s jednoruèními zbranêmi.";
-const string Log_Text_Addon_BrandonTeach	=	"Brandon mi mùe ukázat, jak se stát silnêjším a obratnêjším.";
+const string Log_Text_Addon_HenryTeach		=	"Henry mÄ™ nauÄÃ­ bojovat s obouruÄnÃ­mi zbranÄ™mi a kuÅ¡emi.";
+const string Log_Text_Addon_MorganTeach		=	"Morgan mÄ™ vycviÄÃ­ v boji s jednoruÄnÃ­mi zbranÄ™mi.";
+const string Log_Text_Addon_BrandonTeach	=	"Brandon mi mÅ¯Å¾e ukÃ¡zat, jak se stÃ¡t silnÄ™jÅ¡Ã­m a obratnÄ™jÅ¡Ã­m.";
 
 //Trader
 
-const string Log_Text_Addon_GarettTrade	=	"Garret je pirátskı obchodník. Mùu u nêj nakoupit všechno kromê pití.";
+const string Log_Text_Addon_GarettTrade	=	"Garret je pirÃ¡tskÃ½ obchodnÃ­k. MÅ¯Å¾u u nÄ™j nakoupit vÅ¡echno kromÄ™ pitÃ­.";
 
-const string Log_Text_Addon_SamuelTrade	=	"Samuel je pokoutní paliè. Prodává snad všechno, co si piják mùe pâát.";
+const string Log_Text_Addon_SamuelTrade	=	"Samuel je pokoutnÃ­ paliÄ. ProdÃ¡vÃ¡ snad vÅ¡echno, co si pijÃ¡k mÅ¯Å¾e pÃ¢Ã¡t.";
 
-//	Sprüche
+//	SprÃ¼che
 
-const string Log_Text_Addon_TalentRune_Whirlwind	="Ingredience pro runu 'vêtrná smršã': 1 kâídlo";
-const string Log_Text_Addon_TalentRune_Icelance		="Ingredience pro runu 'ledovı oštêp': 1 kâemen z ledovce";
-const string Log_Text_Addon_TalentRune_Geyser		="Ingredience pro runu 'gejzír': 1 akvamarín";
-const string Log_Text_Addon_TalentRune_Waterfist	="Ingredience pro runu 'vodní pêst': 1 akvamarín a 1 kâemen z hory";
-const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredience pro runu 'bouâe': 1 kâemen z hory a 1 kâídlo";
+const string Log_Text_Addon_TalentRune_Whirlwind	="Ingredience pro runu 'vÄ™trnÃ¡ smrÅ¡Äƒ': 1 kÃ¢Ã­dlo";
+const string Log_Text_Addon_TalentRune_Icelance		="Ingredience pro runu 'ledovÃ½ oÅ¡tÄ™p': 1 kÃ¢emen z ledovce";
+const string Log_Text_Addon_TalentRune_Geyser		="Ingredience pro runu 'gejzÃ­r': 1 akvamarÃ­n";
+const string Log_Text_Addon_TalentRune_Waterfist	="Ingredience pro runu 'vodnÃ­ pÄ™st': 1 akvamarÃ­n a 1 kÃ¢emen z hory";
+const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredience pro runu 'bouÃ¢e': 1 kÃ¢emen z hory a 1 kÃ¢Ã­dlo";
 
 //##########################################
 //		Gothic 2
@@ -63,10 +63,10 @@ const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredience pro runu 'bouâ
 
 // ------ Kapitel 2 ------
 // ------ Kapitel 3 ------
-const string TOPIC_RescueBennet		=	"Bennet je ve vêzení.";
-const string Topic_Ship				=	"Potâebuji loë.";
-const string Topic_Crew				=	"Bez posádky se nikam nejede."; 
-const string Topic_Captain			=	"Kdo by mêl bıt mım kapitánem?"; 	
+const string TOPIC_RescueBennet		=	"Bennet je ve vÄ™zenÃ­.";
+const string Topic_Ship				=	"PotÃ¢ebuji loÃ«.";
+const string Topic_Crew				=	"Bez posÃ¡dky se nikam nejede."; 
+const string Topic_Captain			=	"Kdo by mÄ™l bÃ½t mÃ½m kapitÃ¡nem?"; 	
 
 // ------ Kapitel 4 ------
 // ------ Kapitel 5 ------

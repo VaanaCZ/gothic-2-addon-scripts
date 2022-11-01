@@ -17,47 +17,47 @@ func int DIA_Schwarzmagier_HELLO_Condition ()
 var int SC_KnowsMadPsi;		
 func void DIA_Schwarzmagier_HELLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_00"); //Tak, ty slizkı èerve, opováil ses pâijít a pâed bránu samotného Pána!
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_15_01"); //To ty tady taháš za provázky?
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_02"); //Jsem strácem Irdorathskıch síní, mocného zdroje Beliarovy síly na zemi. Boská Pánova moc pulzuje nyní mıma rukama.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_03"); //Staèí mi jediné slovo k tomu, abych tê uvrhl do vêèného šílenství.
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_15_04"); //Aha. Hádám, e se budu muset zbavit dalšího prostâedníka.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_00"); //Tak, ty slizkÃ½ Äerve, opovÃ¡Å¾il ses pÃ¢ijÃ­t aÅ¾ pÃ¢ed brÃ¡nu samotnÃ©ho PÃ¡na!
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_15_01"); //To ty tady tahÃ¡Å¡ za provÃ¡zky?
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_02"); //Jsem strÃ¡Å¾cem IrdorathskÃ½ch sÃ­nÃ­, mocnÃ©ho zdroje Beliarovy sÃ­ly na zemi. BoÅ¾skÃ¡ PÃ¡nova moc pulzuje nynÃ­ mÃ½ma rukama.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_03"); //StaÄÃ­ mi jedinÃ© slovo k tomu, abych tÄ™ uvrhl do vÄ™ÄnÃ©ho Å¡Ã­lenstvÃ­.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_15_04"); //Aha. HÃ¡dÃ¡m, Å¾e se budu muset zbavit dalÅ¡Ã­ho prostÃ¢ednÃ­ka.
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Jsem u poslední brány. Klíèem k ní bude nejspíš èernı mág."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"Jsem u poslednÃ­ brÃ¡ny. KlÃ­Äem k nÃ­ bude nejspÃ­Å¡ ÄernÃ½ mÃ¡g."); 
 
 	Info_ClearChoices	(DIA_Schwarzmagier_HELLO);
 	
-	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Zaveë mê ke svému pánovi.", DIA_Schwarzmagier_HELLO_meister );
-	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Kolik tobê podobnıch budu ještê muset zabít?", DIA_Schwarzmagier_HELLO_dmt );
-	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Co je tam za tím velkım portálem?", DIA_Schwarzmagier_HELLO_hinterTor );
-	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Kdo je tvùj pán?", DIA_Schwarzmagier_HELLO_wer );
+	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "ZaveÃ« mÄ™ ke svÃ©mu pÃ¡novi.", DIA_Schwarzmagier_HELLO_meister );
+	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Kolik tobÄ™ podobnÃ½ch budu jeÅ¡tÄ™ muset zabÃ­t?", DIA_Schwarzmagier_HELLO_dmt );
+	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Co je tam za tÃ­m velkÃ½m portÃ¡lem?", DIA_Schwarzmagier_HELLO_hinterTor );
+	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Kdo je tvÅ¯j pÃ¡n?", DIA_Schwarzmagier_HELLO_wer );
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Bıval jsi Spáèovım následovníkem.", DIA_Schwarzmagier_HELLO_schlaefer );
+		Info_AddChoice	(DIA_Schwarzmagier_HELLO, "BÃ½val jsi SpÃ¡ÄovÃ½m nÃ¡sledovnÃ­kem.", DIA_Schwarzmagier_HELLO_schlaefer );
 	};
 };
 func void DIA_Schwarzmagier_HELLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_wer_15_00"); //Kdo je tvùj pán?
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_01"); //Je to poutník mezi svêty. Jeho boská moudrost nám pâináší poznání.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_02"); //Je Beliarovım vyvolenım, kterı zemi zbaví bídnıch Innosovıch následovníkù.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_03"); //Všem, kteâí pochybují o jeho velkoleposti, pâináší smrt.
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_wer_15_04"); //To zní povêdomê.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_wer_15_00"); //Kdo je tvÅ¯j pÃ¡n?
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_01"); //Je to poutnÃ­k mezi svÄ™ty. Jeho boÅ¾skÃ¡ moudrost nÃ¡m pÃ¢inÃ¡Å¡Ã­ poznÃ¡nÃ­.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_02"); //Je BeliarovÃ½m vyvolenÃ½m, kterÃ½ zemi zbavÃ­ bÃ­dnÃ½ch InnosovÃ½ch nÃ¡sledovnÃ­kÅ¯.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_03"); //VÅ¡em, kteÃ¢Ã­ pochybujÃ­ o jeho velkoleposti, pÃ¢inÃ¡Å¡Ã­ smrt.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_wer_15_04"); //To znÃ­ povÄ™domÄ™.
 
 };
 
 func void DIA_Schwarzmagier_HELLO_hinterTor ()
 {
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_hinterTor_15_00"); //Co je tam za tím velkım portálem?
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_hinterTor_09_01"); //(smích) Komnaty mého pána ti zùstanou zapovêzeny. K otevâení té brány ti neposkytnu ádnou pâíleitost.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_hinterTor_15_00"); //Co je tam za tÃ­m velkÃ½m portÃ¡lem?
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_hinterTor_09_01"); //(smÃ­ch) Komnaty mÃ©ho pÃ¡na ti zÅ¯stanou zapovÄ™zeny. K otevÃ¢enÃ­ tÃ© brÃ¡ny ti neposkytnu Å¾Ã¡dnou pÃ¢Ã­leÅ¾itost.
 
 };
 func void DIA_Schwarzmagier_HELLO_schlaefer ()
 {
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_schlaefer_15_00"); //Bıval jsi Spáèovım následovníkem.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_schlaefer_09_01"); //To u je dávno. Pán nám otevâel oèi. Teë u nás nikdo nezastaví.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_schlaefer_09_02"); //Pán nám ukázal jedinou monou cestu, jak se vypoâádat s vámi nevêâícími.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_schlaefer_15_00"); //BÃ½val jsi SpÃ¡ÄovÃ½m nÃ¡sledovnÃ­kem.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_schlaefer_09_01"); //To uÅ¾ je dÃ¡vno. PÃ¡n nÃ¡m otevÃ¢el oÄi. TeÃ« uÅ¾ nÃ¡s nikdo nezastavÃ­.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_schlaefer_09_02"); //PÃ¡n nÃ¡m ukÃ¡zal jedinou moÅ¾nou cestu, jak se vypoÃ¢Ã¡dat s vÃ¡mi nevÄ™Ã¢Ã­cÃ­mi.
 
 	TOPIC_END_DEMENTOREN = TRUE;
 	B_GivePlayerXP (XP_Ambient);
@@ -65,10 +65,10 @@ func void DIA_Schwarzmagier_HELLO_schlaefer ()
 
 func void DIA_Schwarzmagier_HELLO_dmt ()
 {
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_dmt_15_00"); //Kolik tobê podobnıch budu ještê muset zabít?
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_01"); //Je nás hodnê. Nemáš ani ponêtí, kolik je têch, co èekali na tuto chvíli svobody.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_02"); //Bêdnı kâik se šíâí celou zemí, kdy vstupujeme do tohoto svêta.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_03"); //Osvobodíme svêt od barbarù, co si âíkají stráci ohnê. Naše shromádêní tady v chrámu u nebude trvat dlouho.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_dmt_15_00"); //Kolik tobÄ™ podobnÃ½ch budu jeÅ¡tÄ™ muset zabÃ­t?
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_01"); //Je nÃ¡s hodnÄ™. NemÃ¡Å¡ ani ponÄ™tÃ­, kolik je tÄ™ch, co Äekali na tuto chvÃ­li svobody.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_02"); //BÄ™dnÃ½ kÃ¢ik se Å¡Ã­Ã¢Ã­ celou zemÃ­, kdyÅ¾ vstupujeme do tohoto svÄ™ta.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_03"); //OsvobodÃ­me svÄ™t od barbarÅ¯, co si Ã¢Ã­kajÃ­ strÃ¡Å¾ci ohnÄ™. NaÅ¡e shromÃ¡Å¾dÄ™nÃ­ tady v chrÃ¡mu uÅ¾ nebude trvat dlouho.
 	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_dmt_15_04"); //Ano.
 };
 
@@ -79,12 +79,12 @@ func void DIA_Schwarzmagier_HELLO_meister ()
 	Wld_PlayEffect("FX_EarthQuake",  self, self, 0, 0, 0, FALSE );
 	Wld_PlayEffect("SFX_Circle",  self, self, 0, 0, 0, FALSE );
 	AI_PlayAni (self,"T_PRACTICEMAGIC5");	
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_meister_09_00"); //(teatrálnê) Dost u têch blábolù! Znièím tê.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_meister_09_01"); //Tvùj zrak tê opustí a tvá duše zmizí v temnotách.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_meister_09_00"); //(teatrÃ¡lnÄ™) Dost uÅ¾ tÄ™ch blÃ¡bolÅ¯! ZniÄÃ­m tÄ™.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_meister_09_01"); //TvÅ¯j zrak tÄ™ opustÃ­ a tvÃ¡ duÅ¡e zmizÃ­ v temnotÃ¡ch.
 
 	if (Npc_HasItems (other,ItAm_Prot_BlackEye_Mis))
 	{
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_meister_15_02"); //(pro sebe) Bez toho amuletu na vyvolávání duší to teë asi bude trochu problém.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_meister_15_02"); //(pro sebe) Bez toho amuletu na vyvolÃ¡vÃ¡nÃ­ duÅ¡Ã­ to teÃ« asi bude trochu problÃ©m.
 	}
 	else
 	{

@@ -34,7 +34,7 @@ instance DIA_Rosi_HALLO		(C_INFO)
 	condition	 = 	DIA_Rosi_HALLO_Condition;
 	information	 = 	DIA_Rosi_HALLO_Info;
 
-	description	 = 	"Jsi v po‚·dku?";
+	description	 = 	"Jsi v po√¢√°dku?";
 };
 
 func int DIA_Rosi_HALLO_Condition ()
@@ -44,13 +44,13 @@ func int DIA_Rosi_HALLO_Condition ()
 
 func void DIA_Rosi_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_HALLO_15_00"); //Jsi v po‚·dku?
-	AI_Output			(self, other, "DIA_Rosi_HALLO_17_01"); //Dobr·, je to tak, tak. BolÌ mÍ z·da ze vöÌ tÈ tvrdÈ d‚iny. Co tady dÍl·ö? N·vötÍvnÌky tu nem·me p‚Ìliö Ëasto.
+	AI_Output			(other, self, "DIA_Rosi_HALLO_15_00"); //Jsi v po√¢√°dku?
+	AI_Output			(self, other, "DIA_Rosi_HALLO_17_01"); //Dobr√°, je to tak, tak. Bol√≠ mƒô z√°da ze v≈°√≠ t√© tvrd√© d√¢iny. Co tady dƒôl√°≈°? N√°v≈°tƒôvn√≠ky tu nem√°me p√¢√≠li≈° ƒçasto.
 
 	if ((hero.guild != GIL_MIL))
 	{
-		AI_Output			(self, other, "DIA_Rosi_HALLO_17_02"); //Kdyû uû, tak ty hrdlo‚ezy z hor nebo voj·ky z mÍstskÈ domobrany.
-		AI_Output			(self, other, "DIA_Rosi_HALLO_17_03"); //PoslednÌ dobou rabujou naöÌ farmu ËÌm d·l tÌm ËastÍji. Ale ty nevypad·ö jako jeden z nich, nebo se pletu?
+		AI_Output			(self, other, "DIA_Rosi_HALLO_17_02"); //Kdy≈æ u≈æ, tak ty hrdlo√¢ezy z hor nebo voj√°ky z mƒôstsk√© domobrany.
+		AI_Output			(self, other, "DIA_Rosi_HALLO_17_03"); //Posledn√≠ dobou rabujou na≈°√≠ farmu ƒç√≠m d√°l t√≠m ƒçastƒôji. Ale ty nevypad√°≈° jako jeden z nich, nebo se pletu?
 	};
 };
 
@@ -65,7 +65,7 @@ instance DIA_Rosi_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Rosi_WASMACHSTDU_Condition;
 	information	 = 	DIA_Rosi_WASMACHSTDU_Info;
 
-	description	 = 	"Co tady dÍl·ö?";
+	description	 = 	"Co tady dƒôl√°≈°?";
 };
 
 func int DIA_Rosi_WASMACHSTDU_Condition ()
@@ -79,20 +79,20 @@ func int DIA_Rosi_WASMACHSTDU_Condition ()
 
 func void DIA_Rosi_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_WASMACHSTDU_15_00"); //Co tady dÍl·ö?
+	AI_Output			(other, self, "DIA_Rosi_WASMACHSTDU_15_00"); //Co tady dƒôl√°≈°?
 
 	if (Npc_IsDead(Sekob)== FALSE)
 	{
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_01"); //Tak to se pt·m sama sebe uû nÍkolik let. Sekob, m˘j manûel, uû se tady poh·dal snad s kaûd˝m.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_02"); //Vöude m· dluhy. Proto krade zboûÌ z Onarov˝ch z·sob a prod·v· je ve mÍstÍ.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_03"); //A z tÈ svÈ podfuka‚iny uû nast‚·dal celÈ jmÍnÌ.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_04"); //D‚e naöe dÍlnÌky, dokud jim nezniËÌ z·da. Jeho vlastnÌ lidÈ mu uû ne‚eknou jinak neû otrok·‚.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_05"); //Nejsem v˘bec pyön· na to, ûe se m˘ûu naz˝vat Sekobovou ûenou, to mi vÍ‚. ObËas si p‚eju, aby bariÈra byla z˘stala na svÈm mÌstÍ.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_01"); //Tak to se pt√°m sama sebe u≈æ nƒôkolik let. Sekob, m≈Øj man≈æel, u≈æ se tady poh√°dal snad s ka≈æd√Ωm.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_02"); //V≈°ude m√° dluhy. Proto krade zbo≈æ√≠ z Onarov√Ωch z√°sob a prod√°v√° je ve mƒôstƒô.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_03"); //A z t√© sv√© podfuka√¢iny u≈æ nast√¢√°dal cel√© jmƒôn√≠.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_04"); //D√¢e na≈°e dƒôln√≠ky, dokud jim nezniƒç√≠ z√°da. Jeho vlastn√≠ lid√© mu u≈æ ne√¢eknou jinak ne≈æ otrok√°√¢.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_05"); //Nejsem v≈Øbec py≈°n√° na to, ≈æe se m≈Ø≈æu naz√Ωvat Sekobovou ≈æenou, to mi vƒô√¢. Obƒças si p√¢eju, aby bari√©ra byla z≈Østala na sv√©m m√≠stƒô.
 	};
 
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_06"); //Nem·ö z·jem o nÍco k jÌdlu nebo nÍco, co by se ti hodilo pro lov v lesÌch?
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_06"); //Nem√°≈° z√°jem o nƒôco k j√≠dlu nebo nƒôco, co by se ti hodilo pro lov v les√≠ch?
 	Log_CreateTopic (Topic_OutTrader,LOG_NOTE);
-	B_LogEntry (Topic_OutTrader,"Rosi prod·v· na SekobovÍ statku r˘znÈ vÍci.");
+	B_LogEntry (Topic_OutTrader,"Rosi prod√°v√° na Sekobovƒô statku r≈Øzn√© vƒôci.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -106,7 +106,7 @@ instance DIA_Rosi_WAREZ		(C_INFO)
 	information	 = 	DIA_Rosi_WAREZ_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Co mi m˘ûeö nabÌdnout?";
+	description	 = 	"Co mi m≈Ø≈æe≈° nab√≠dnout?";
 };
 
 func int DIA_Rosi_WAREZ_Condition ()
@@ -124,8 +124,8 @@ func int DIA_Rosi_WAREZ_Condition ()
 func void DIA_Rosi_WAREZ_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Rosi_WAREZ_15_00"); //Co mi m˘ûeö nabÌdnout?
-	AI_Output (self, other, "DIA_Rosi_WAREZ_17_01"); //Co chceö?
+	AI_Output (other, self, "DIA_Rosi_WAREZ_15_00"); //Co mi m≈Ø≈æe≈° nab√≠dnout?
+	AI_Output (self, other, "DIA_Rosi_WAREZ_17_01"); //Co chce≈°?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -138,7 +138,7 @@ instance DIA_Rosi_BARRIERE		(C_INFO)
 	condition	 = 	DIA_Rosi_BARRIERE_Condition;
 	information	 = 	DIA_Rosi_BARRIERE_Info;
 
-	description	 = 	"BariÈra?";
+	description	 = 	"Bari√©ra?";
 };
 
 func int DIA_Rosi_BARRIERE_Condition ()
@@ -152,9 +152,9 @@ func int DIA_Rosi_BARRIERE_Condition ()
 
 func void DIA_Rosi_BARRIERE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_BARRIERE_15_00"); //BariÈra?
-	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_01"); //Jo, kopule, kter· uzavÌrala HornickÈ ˙dolÌ.
-	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_02"); //Svrhli tam spoustu lidÌ, co se dopustili nÍjakÈ nez·konnÈ Ëinnosti. A nÍkte‚Ì z nich uû se nikdy nevr·tili zpÍt.
+	AI_Output			(other, self, "DIA_Rosi_BARRIERE_15_00"); //Bari√©ra?
+	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_01"); //Jo, kopule, kter√° uzav√≠rala Hornick√© √∫dol√≠.
+	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_02"); //Svrhli tam spoustu lid√≠, co se dopustili nƒôjak√© nez√°konn√© ƒçinnosti. A nƒôkte√¢√≠ z nich u≈æ se nikdy nevr√°tili zpƒôt.
 
 };
 
@@ -168,7 +168,7 @@ instance DIA_Rosi_DuInBarriere		(C_INFO)
 	condition	 = 	DIA_Rosi_DuInBarriere_Condition;
 	information	 = 	DIA_Rosi_DuInBarriere_Info;
 
-	description	 = 	"Byla jsi nÍkdy za bariÈrou?";
+	description	 = 	"Byla jsi nƒôkdy za bari√©rou?";
 };
 
 func int DIA_Rosi_DuInBarriere_Condition ()
@@ -181,9 +181,9 @@ func int DIA_Rosi_DuInBarriere_Condition ()
 
 func void DIA_Rosi_DuInBarriere_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_DuInBarriere_15_00"); //Byla jsi nÍkdy za bariÈrou?
-	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_01"); //Ne. Jen jsme o nÌ slyöeli. Bengar, farm·‚ z n·hornÌch pastvin, ti o tom urËitÍ povÌ vÌc.
-	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_02"); //Jeho farma nenÌ p‚Ìliö daleko od HornickÈho ˙dolÌ.
+	AI_Output			(other, self, "DIA_Rosi_DuInBarriere_15_00"); //Byla jsi nƒôkdy za bari√©rou?
+	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_01"); //Ne. Jen jsme o n√≠ sly≈°eli. Bengar, farm√°√¢ z n√°horn√≠ch pastvin, ti o tom urƒçitƒô pov√≠ v√≠c.
+	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_02"); //Jeho farma nen√≠ p√¢√≠li≈° daleko od Hornick√©ho √∫dol√≠.
 
 };
 
@@ -213,8 +213,8 @@ func int DIA_Rosi_BENGAR_Condition ()
 func void DIA_Rosi_BENGAR_Info ()
 {
 	AI_Output			(other, self, "DIA_Rosi_BENGAR_15_00"); //Jak se dostanu na Bengarovu farmu?
-	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_01"); //BÍû se zeptat Balthazara. To je n·ö ovË·k. ObËas svoje zvÌ‚ata vodÌ na pastvu nahoru na Bengarovy pozemky.
-	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_02"); //MÍl by b˝t schopen ti ‚Ìct, jak se tam dostat.
+	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_01"); //Bƒô≈æ se zeptat Balthazara. To je n√°≈° ovƒç√°k. Obƒças svoje zv√≠√¢ata vod√≠ na pastvu nahoru na Bengarovy pozemky.
+	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_02"); //Mƒôl by b√Ωt schopen ti √¢√≠ct, jak se tam dostat.
 		
 };
 
@@ -229,7 +229,7 @@ instance DIA_Rosi_Miliz		(C_INFO)
 	condition	 = 	DIA_Rosi_Miliz_Condition;
 	information	 = 	DIA_Rosi_Miliz_Info;
 
-	description	 = 	"ProË v·s domobrana na farmÍ napad·?";
+	description	 = 	"Proƒç v√°s domobrana na farmƒô napad√°?";
 };
 
 func int DIA_Rosi_Miliz_Condition ()
@@ -243,9 +243,9 @@ func int DIA_Rosi_Miliz_Condition ()
 
 func void DIA_Rosi_Miliz_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_Miliz_15_00"); //ProË v·s domobrana na farmÍ napad·?
-	AI_Output			(self, other, "DIA_Rosi_Miliz_17_01"); //Protoûe tu nenÌ nikdo, kdo by zabr·nil tomu, ûe se zboûÌ namÌsto koupenÌ jednoduöe ukradne.
-	AI_Output			(self, other, "DIA_Rosi_Miliz_17_02"); //Kr·l je daleko a n·m nezb˝v· neû d‚Ìt pro Onara a doufat, ûe ten vyd‚iduch poöle pomoc, kdyû to bude opravdu zapot‚ebÌ.
+	AI_Output			(other, self, "DIA_Rosi_Miliz_15_00"); //Proƒç v√°s domobrana na farmƒô napad√°?
+	AI_Output			(self, other, "DIA_Rosi_Miliz_17_01"); //Proto≈æe tu nen√≠ nikdo, kdo by zabr√°nil tomu, ≈æe se zbo≈æ√≠ nam√≠sto koupen√≠ jednodu≈°e ukradne.
+	AI_Output			(self, other, "DIA_Rosi_Miliz_17_02"); //Kr√°l je daleko a n√°m nezb√Ωv√° ne≈æ d√¢√≠t pro Onara a doufat, ≈æe ten vyd√¢iduch po≈°le pomoc, kdy≈æ to bude opravdu zapot√¢eb√≠.
 };
 
 
@@ -259,7 +259,7 @@ instance DIA_Rosi_ONAR		(C_INFO)
 	condition	 = 	DIA_Rosi_ONAR_Condition;
 	information	 = 	DIA_Rosi_ONAR_Info;
 
-	description	 = 	"V Ëem ta Onarova pomoc spoËÌv·?";
+	description	 = 	"V ƒçem ta Onarova pomoc spoƒç√≠v√°?";
 };
 
 func int DIA_Rosi_ONAR_Condition ()
@@ -272,11 +272,11 @@ func int DIA_Rosi_ONAR_Condition ()
 
 func void DIA_Rosi_ONAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_ONAR_15_00"); //V Ëem ta Onarova pomoc spoËÌv·?
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_01"); //ObËas se k n·m dostane varov·nÌ, ûe se k n·m chyst· p·r voj·k˘ z domobrany, aby se n·s pokusili okr·st na vlastnÌ pÍst.
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_02"); //Pak poöleme k velkostatk·‚i nÍkoho pro pomoc.
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_03"); //A pak to obvykle netrv· dlouho, neû se sem ûold·ci dostanou a vypo‚·dajÌ se s domobranou.
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_04"); //Ale kdyû je po vöem, nechovajÌ se ûold·ci o nic lÌp.
+	AI_Output			(other, self, "DIA_Rosi_ONAR_15_00"); //V ƒçem ta Onarova pomoc spoƒç√≠v√°?
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_01"); //Obƒças se k n√°m dostane varov√°n√≠, ≈æe se k n√°m chyst√° p√°r voj√°k≈Ø z domobrany, aby se n√°s pokusili okr√°st na vlastn√≠ pƒôst.
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_02"); //Pak po≈°leme k velkostatk√°√¢i nƒôkoho pro pomoc.
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_03"); //A pak to obvykle netrv√° dlouho, ne≈æ se sem ≈æold√°ci dostanou a vypo√¢√°daj√≠ se s domobranou.
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_04"); //Ale kdy≈æ je po v≈°em, nechovaj√≠ se ≈æold√°ci o nic l√≠p.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -289,7 +289,7 @@ instance DIA_Rosi_PERMKAP1		(C_INFO)
 	condition	 = 	DIA_Rosi_PERMKAP1_Condition;
 	information	 = 	DIA_Rosi_PERMKAP1_Info;
 	permanent	 =	TRUE;
-	description	 = 	"No tak, trochu kur·ûe.";
+	description	 = 	"No tak, trochu kur√°≈æe.";
 };
 
 func int DIA_Rosi_PERMKAP1_Condition ()
@@ -303,16 +303,16 @@ func int DIA_Rosi_PERMKAP1_Condition ()
 
 func void DIA_Rosi_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_PERMKAP1_15_00"); //No tak, trochu kur·ûe.
+	AI_Output			(other, self, "DIA_Rosi_PERMKAP1_15_00"); //No tak, trochu kur√°≈æe.
 
 
 	if ((MIS_bringRosiBackToSekob == LOG_SUCCESS))
 		{
-			AI_Output			(self, other, "DIA_Rosi_PERMKAP1_17_01"); //BÍû si skoËit do jezera.
+			AI_Output			(self, other, "DIA_Rosi_PERMKAP1_17_01"); //Bƒô≈æ si skoƒçit do jezera.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rosi_PERMKAP1_17_02"); //D·vej na sebe pozor a nedej se.
+			AI_Output			(self, other, "DIA_Rosi_PERMKAP1_17_02"); //D√°vej na sebe pozor a nedej se.
 		};
 	AI_StopProcessInfos (self);
 };
@@ -430,7 +430,7 @@ instance DIA_Rosi_FLEEFROMSEKOB		(C_INFO)
 	condition	 = 	DIA_Rosi_FLEEFROMSEKOB_Condition;
 	information	 = 	DIA_Rosi_FLEEFROMSEKOB_Info;
 
-	description	 = 	"Co dÍl·ö tady v divoËinÍ?";
+	description	 = 	"Co dƒôl√°≈° tady v divoƒçinƒô?";
 };
 
 func int DIA_Rosi_FLEEFROMSEKOB_Condition ()
@@ -444,11 +444,11 @@ func int DIA_Rosi_FLEEFROMSEKOB_Condition ()
 
 func void DIA_Rosi_FLEEFROMSEKOB_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_FLEEFROMSEKOB_15_00"); //Co dÍl·ö tady v divoËinÍ?
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_01"); //Na SekobovÍ farmÍ uû se to nedalo vydrûet. Sekob dost·val jeden hysterick˝ z·chvat za druh˝m.
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_02"); //Nakonec uû se s nÌm nedalo v˘bec mluvit. Nakonec na vöechny akor·t ‚val.
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_03"); //Musela jsem se odtamtud dostat, ale nevÌm, kam se vrtnout.
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_04"); //Nem·ö z·jem o menöÌ dohodu?
+	AI_Output			(other, self, "DIA_Rosi_FLEEFROMSEKOB_15_00"); //Co dƒôl√°≈° tady v divoƒçinƒô?
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_01"); //Na Sekobovƒô farmƒô u≈æ se to nedalo vydr≈æet. Sekob dost√°val jeden hysterick√Ω z√°chvat za druh√Ωm.
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_02"); //Nakonec u≈æ se s n√≠m nedalo v≈Øbec mluvit. Nakonec na v≈°echny akor√°t √¢val.
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_03"); //Musela jsem se odtamtud dostat, ale nev√≠m, kam se vrtnout.
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_04"); //Nem√°≈° z√°jem o men≈°√≠ dohodu?
 	B_GivePlayerXP (XP_Ambient);
 	RosiFoundKap5 = TRUE;
 };
@@ -463,7 +463,7 @@ instance DIA_Rosi_HILFE		(C_INFO)
 	condition	 = 	DIA_Rosi_HILFE_Condition;
 	information	 = 	DIA_Rosi_HILFE_Info;
 
-	description	 = 	"Vezmu tÍ odsud pryË.";
+	description	 = 	"Vezmu tƒô odsud pryƒç.";
 };
 
 func int DIA_Rosi_HILFE_Condition ()
@@ -477,35 +477,35 @@ func int DIA_Rosi_HILFE_Condition ()
 
 func void DIA_Rosi_HILFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_HILFE_15_00"); //Vezmu tÍ odsud pryË.
+	AI_Output			(other, self, "DIA_Rosi_HILFE_15_00"); //Vezmu tƒô odsud pryƒç.
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Till.aivar[AIV_PARTYMEMBER] = TRUE;
 	
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_01"); //Mohl bych tÍ vzÌt do mÍsta.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_01"); //Mohl bych tƒô vz√≠t do mƒôsta.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_02"); //Vezmu tÍ na farmu velkostatk·‚e.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_02"); //Vezmu tƒô na farmu velkostatk√°√¢e.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_03"); //Tak odejdi do kl·ötera. Budeö tam vÌt·na.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_03"); //Tak odejdi do kl√°≈°tera. Bude≈° tam v√≠t√°na.
 		};	
 		
-		AI_Output			(self, other, "DIA_Rosi_HILFE_17_04"); //Nikdy ti nezapomenu, cos pro mÍ udÍlal. Samoz‚ejmÍ ti zaplatÌm.
+		AI_Output			(self, other, "DIA_Rosi_HILFE_17_04"); //Nikdy ti nezapomenu, cos pro mƒô udƒôlal. Samoz√¢ejmƒô ti zaplat√≠m.
 
 			if (Npc_IsDead(Till))
 			{
-				AI_Output			(self, other, "DIA_Rosi_HILFE_17_05"); //BÍû prvnÌ, budu tÍ n·sledovat.
+				AI_Output			(self, other, "DIA_Rosi_HILFE_17_05"); //Bƒô≈æ prvn√≠, budu tƒô n√°sledovat.
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Rosi_HILFE_17_06"); //BÍû prvnÌ, budeme tÍ n·sledovat.
+				AI_Output			(self, other, "DIA_Rosi_HILFE_17_06"); //Bƒô≈æ prvn√≠, budeme tƒô n√°sledovat.
 			};
 		
 		AI_StopProcessInfos (self);	
@@ -528,7 +528,7 @@ func void DIA_Rosi_HILFE_Info ()
 		};	
 		Log_CreateTopic (TOPIC_RosisFlucht, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_RosisFlucht, LOG_RUNNING);
-		B_LogEntry (TOPIC_RosisFlucht,"Rosi uû to nemohla na SekobovÍ statku dÈle vydrûet a teÎ nevÌ, kam jÌt. Vyvedu ji ven z divoËiny."); 
+		B_LogEntry (TOPIC_RosisFlucht,"Rosi u≈æ to nemohla na Sekobovƒô statku d√©le vydr≈æet a te√´ nev√≠, kam j√≠t. Vyvedu ji ven z divoƒçiny."); 
 		MIS_RosisFlucht = LOG_RUNNING;
 };
 
@@ -562,15 +562,15 @@ func int DIA_Rosi_ANGEKOMMEN_Condition ()
 
 func void DIA_Rosi_ANGEKOMMEN_Info ()
 {
-	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_00"); //Cestu uû najdu sama.
-	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_01"); //DÌky. NevÌm, co bych si bez tebe poËala.
+	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_00"); //Cestu u≈æ najdu sama.
+	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_01"); //D√≠ky. Nev√≠m, co bych si bez tebe poƒçala.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Till.aivar[AIV_PARTYMEMBER] = FALSE;
 
 	MIS_bringRosiBackToSekob = LOG_OBSOLETE;
 	MIS_RosisFlucht = LOG_SUCCESS;
-		AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_02"); //ProsÌm, vezmi si tenhle skromn˝ d·rek jako vyj·d‚enÌ m˝ch dÌk˘.
+		AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_02"); //Pros√≠m, vezmi si tenhle skromn√Ω d√°rek jako vyj√°d√¢en√≠ m√Ωch d√≠k≈Ø.
 
 		CreateInvItems (Rosi, ItMi_Gold, 650);									
 		B_GiveInvItems (self, other, ItMi_Gold, 450);					
@@ -630,7 +630,7 @@ func int DIA_Rosi_TRAIT_Condition ()
 func void DIA_Rosi_TRAIT_Info ()
 {
 	AI_Output			(other, self, "DIA_Rosi_TRAIT_15_00"); //Tak zase doma, co?
-	AI_Output			(self, other, "DIA_Rosi_TRAIT_17_01"); //Ty jsi ten nejhnusnÍjöÌ k˝bl hnoje, co jsem kdy ve sv˝m ûivotÍ potkala, ty mizern· svinÍ.
+	AI_Output			(self, other, "DIA_Rosi_TRAIT_17_01"); //Ty jsi ten nejhnusnƒôj≈°√≠ k√Ωbl hnoje, co jsem kdy ve sv√Ωm ≈æivotƒô potkala, ty mizern√° svinƒô.
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Till.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -649,7 +649,7 @@ instance DIA_Rosi_MinenAnteil		(C_INFO)
 	condition	 = 	DIA_Rosi_MinenAnteil_Condition;
 	information	 = 	DIA_Rosi_MinenAnteil_Info;
 
-	description	 = 	"Prod·vat neleg·lnÌ d˘lnÌ akcie - nestydÌö se?";
+	description	 = 	"Prod√°vat neleg√°ln√≠ d≈Øln√≠ akcie - nestyd√≠≈° se?";
 };
 
 func int DIA_Rosi_MinenAnteil_Condition ()
@@ -664,8 +664,8 @@ func int DIA_Rosi_MinenAnteil_Condition ()
 
 func void DIA_Rosi_MinenAnteil_Info ()
 {
-	AI_Output (other, self, "DIA_Rosi_Minenanteil_15_00"); //Prod·vat neleg·lnÌ d˘lnÌ akcie - nestydÌö se?
-	AI_Output (self, other, "DIA_Rosi_Minenanteil_17_01"); //Ne. Z nÍËeho ûÌt musÌm. A taky nejsem jedin˝, kdo je pustil do obÍhu.
+	AI_Output (other, self, "DIA_Rosi_Minenanteil_15_00"); //Prod√°vat neleg√°ln√≠ d≈Øln√≠ akcie - nestyd√≠≈° se?
+	AI_Output (self, other, "DIA_Rosi_Minenanteil_17_01"); //Ne. Z nƒôƒçeho ≈æ√≠t mus√≠m. A taky nejsem jedin√Ω, kdo je pustil do obƒôhu.
 	B_GivePlayerXP (XP_Ambient);
 };
 

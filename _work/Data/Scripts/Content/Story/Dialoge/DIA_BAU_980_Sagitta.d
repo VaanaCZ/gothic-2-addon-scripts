@@ -45,13 +45,13 @@ func int DIA_Sagitta_HALLO_Condition ()
 
 func void DIA_Sagitta_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HALLO_15_00"); //Co dêláš tak sama, tady venku?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_17_01"); //Âekni, co ode mê chceš, a pak vypadni. Mám práci.
+	AI_Output			(other, self, "DIA_Sagitta_HALLO_15_00"); //Co dÄ™lÃ¡Å¡ tak sama, tady venku?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_17_01"); //Ã‚ekni, co ode mÄ™ chceÅ¡, a pak vypadni. MÃ¡m prÃ¡ci.
 
 	Info_ClearChoices	(DIA_Sagitta_HALLO);
 	Info_AddChoice	(DIA_Sagitta_HALLO, DIALOG_BACK, DIA_Sagitta_HALLO_ende );
-	Info_AddChoice	(DIA_Sagitta_HALLO, "Mùeš mê vyléèit?", DIA_Sagitta_HALLO_Heil );
-	Info_AddChoice	(DIA_Sagitta_HALLO, "Co tady dêláš?", DIA_Sagitta_HALLO_was );
+	Info_AddChoice	(DIA_Sagitta_HALLO, "MÅ¯Å¾eÅ¡ mÄ™ vylÃ©Äit?", DIA_Sagitta_HALLO_Heil );
+	Info_AddChoice	(DIA_Sagitta_HALLO, "Co tady dÄ™lÃ¡Å¡?", DIA_Sagitta_HALLO_was );
 	Info_AddChoice	(DIA_Sagitta_HALLO, "Kdo jsi?", DIA_Sagitta_HALLO_wer );
 
 };
@@ -59,27 +59,27 @@ func void DIA_Sagitta_HALLO_Info ()
 func void DIA_Sagitta_HALLO_wer ()
 {
 	AI_Output			(other, self, "DIA_Sagitta_HALLO_wer_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_01"); //Tak tys o mnê ještê neslyšel?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_02"); //Bylinkáâka, alespoà se tomu tak âíká. Šarlatánka, nebo tak nêjak mê nazıvají.
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_03"); //Ale kdy je jim zle, vdycky je jim stará Sagitta se svımi léèivımi bylinkami dobrá.
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_01"); //Tak tys o mnÄ™ jeÅ¡tÄ™ neslyÅ¡el?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_02"); //BylinkÃ¡Ã¢ka, alespoÅ• se tomu tak Ã¢Ã­kÃ¡. Å arlatÃ¡nka, nebo tak nÄ™jak mÄ™ nazÃ½vajÃ­.
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_03"); //Ale kdyÅ¾ je jim zle, vÅ¾dycky je jim starÃ¡ Sagitta se svÃ½mi lÃ©ÄivÃ½mi bylinkami dobrÃ¡.
 
 };
 
 func void DIA_Sagitta_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HALLO_was_15_00"); //Co tady dêláš?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_was_17_01"); //iju tady, co se pamatuju, a starám se o svoje bylinky.
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_was_17_02"); //Les je mım pâítelem. Dává mi všechno, co potâebuju.
+	AI_Output			(other, self, "DIA_Sagitta_HALLO_was_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_was_17_01"); //Å½iju tady, co se pamatuju, a starÃ¡m se o svoje bylinky.
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_was_17_02"); //Les je mÃ½m pÃ¢Ã­telem. DÃ¡vÃ¡ mi vÅ¡echno, co potÃ¢ebuju.
 
 };
 
 func void DIA_Sagitta_HALLO_Heil ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HALLO_Heil_15_00"); //Mùeš mê vyléèit?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_Heil_17_01"); //To je ten dùvod, kvùli kterému jsi tady, co? Tak povídej, co je v nepoâádku.
+	AI_Output			(other, self, "DIA_Sagitta_HALLO_Heil_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ vylÃ©Äit?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_Heil_17_01"); //To je ten dÅ¯vod, kvÅ¯li kterÃ©mu jsi tady, co? Tak povÃ­dej, co je v nepoÃ¢Ã¡dku.
 	
 	Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTrader,"U Sagitty za Sekobovou farmou si mohu nakoupit vybavení.");
+	B_LogEntry (Topic_SoldierTrader,"U Sagitty za Sekobovou farmou si mohu nakoupit vybavenÃ­.");
 };
 
 func void DIA_Sagitta_HALLO_ende ()
@@ -98,7 +98,7 @@ instance DIA_Sagitta_TeachAlchemyRequest		(C_INFO)
 	information	 = 	DIA_Sagitta_TeachAlchemyRequest_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Mùeš mê nauèit nêco o bylinkách?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ™ nauÄit nÄ™co o bylinkÃ¡ch?";
 };
 
 func int DIA_Sagitta_TeachAlchemyRequest_Condition ()
@@ -112,60 +112,60 @@ func int DIA_Sagitta_TeachAlchemyRequest_Condition ()
 var int DIA_Sagitta_TeachAlchemyRequest_OneTime;
 func void DIA_Sagitta_TeachAlchemyRequest_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_15_00"); //Mùeš mê nauèit nêco o bylinkách?
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nauÄit nÄ™co o bylinkÃ¡ch?
 
 	if (DIA_Sagitta_TeachAlchemyRequest_OneTime ==FALSE)
 	{
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_01"); //Jak zajímavé. O nêco takového mê lidé neádají zrovna èasto.
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_02"); //Take ty by ses chtêl stát mım studentem? To bys mêl nejdâív prokázat, e to s tím zájmem myslíš vánê.
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_03"); //Právê pâipravuju velmi vzácnı lektvar, kterı vyaduje vybrané bylinky a extrakty.
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_04"); //Kdy mi seeneš jednu ingredienci - velmi vzácnou bylinu, kterou tady bohuel nemám - mùu tê nêèemu nauèit.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_01"); //Jak zajÃ­mavÃ©. O nÄ™co takovÃ©ho mÄ™ lidÃ© neÅ¾Ã¡dajÃ­ zrovna Äasto.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_02"); //TakÅ¾e ty by ses chtÄ™l stÃ¡t mÃ½m studentem? To bys mÄ™l nejdÃ¢Ã­v prokÃ¡zat, Å¾e to s tÃ­m zÃ¡jmem myslÃ­Å¡ vÃ¡Å¾nÄ™.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_03"); //PrÃ¡vÄ™ pÃ¢ipravuju velmi vzÃ¡cnÃ½ lektvar, kterÃ½ vyÅ¾aduje vybranÃ© bylinky a extrakty.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_04"); //KdyÅ¾ mi seÅ¾eneÅ¡ jednu ingredienci - velmi vzÃ¡cnou bylinu, kterou tady bohuÅ¾el nemÃ¡m - mÅ¯Å¾u tÄ™ nÄ™Äemu nauÄit.
 		DIA_Sagitta_TeachAlchemyRequest_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_05"); //U jsem ti âekla, e ano. A mi pâineseš tu vzácnou bylinu.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_05"); //UÅ¾ jsem ti Ã¢ekla, Å¾e ano. AÅ¾ mi pÃ¢ineseÅ¡ tu vzÃ¡cnou bylinu.
 	};
 	
 	Info_ClearChoices	(DIA_Sagitta_TeachAlchemyRequest);
-	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "Promià, nemám zájem.", DIA_Sagitta_TeachAlchemyRequest_nein );
+	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "PromiÅ•, nemÃ¡m zÃ¡jem.", DIA_Sagitta_TeachAlchemyRequest_nein );
 	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "A kde ji najdu?", DIA_Sagitta_TeachAlchemyRequest_wo );
-	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "A o jakou ingredienci se jedná?", DIA_Sagitta_TeachAlchemyRequest_was );
+	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "A o jakou ingredienci se jednÃ¡?", DIA_Sagitta_TeachAlchemyRequest_was );
 	
 };
 func void DIA_Sagitta_TeachAlchemyRequest_was ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_was_15_00"); //A o jakou rostlinu se jedná?
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_was_17_01"); //Je to nesmírnê vzácná bylina - âíká se jí sluneèní aloe. Poznáš ji podle pronikavé mandlové vùnê.
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_was_15_00"); //A o jakou rostlinu se jednÃ¡?
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_was_17_01"); //Je to nesmÃ­rnÄ™ vzÃ¡cnÃ¡ bylina - Ã¢Ã­kÃ¡ se jÃ­ sluneÄnÃ­ aloe. PoznÃ¡Å¡ ji podle pronikavÃ© mandlovÃ© vÅ¯nÄ™.
 	
 };
 
 func void DIA_Sagitta_TeachAlchemyRequest_wo ()
 {
 	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_15_00"); //A kde ji najdu?
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_01"); //Ta bylina, co potâebuju, roste jen na místech, kde má všechny potâebné iviny.
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_02"); //Ty se nacházejí v exkrementech èerného trola.
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_03"); //Co je taky ten dùvod, proè je pro mê tak obtíné tu kytku získat.
-	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "Uvidíme, co se s tím dá dêlat.", DIA_Sagitta_TeachAlchemyRequest_wo_ja );
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_01"); //Ta bylina, co potÃ¢ebuju, roste jen na mÃ­stech, kde mÃ¡ vÅ¡echny potÃ¢ebnÃ© Å¾iviny.
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_02"); //Ty se nachÃ¡zejÃ­ v exkrementech ÄernÃ©ho trola.
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_03"); //CoÅ¾ je taky ten dÅ¯vod, proÄ je pro mÄ™ tak obtÃ­Å¾nÃ© tu kytku zÃ­skat.
+	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "UvidÃ­me, co se s tÃ­m dÃ¡ dÄ™lat.", DIA_Sagitta_TeachAlchemyRequest_wo_ja );
 };
 func void DIA_Sagitta_TeachAlchemyRequest_wo_ja ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_15_00"); //Uvidíme, co se s tím dá dêlat.
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_17_01"); //Dobrá tedy. Tak hodnê štêstí pâi hledání.
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_15_00"); //UvidÃ­me, co se s tÃ­m dÃ¡ dÄ™lat.
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_17_01"); //DobrÃ¡ tedy. Tak hodnÄ™ Å¡tÄ™stÃ­ pÃ¢i hledÃ¡nÃ­.
 	Info_ClearChoices	(DIA_Sagitta_TeachAlchemyRequest);
 	MIS_Sagitta_Herb = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_SagittaHerb,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_SagittaHerb,LOG_RUNNING);
-	B_LogEntry (TOPIC_SagittaHerb,"Sagitta potâebuje zvláštní rostlinu zvanou sluneèní aloe, která roste pouze na exkrementech èerného trola.");
+	B_LogEntry (TOPIC_SagittaHerb,"Sagitta potÃ¢ebuje zvlÃ¡Å¡tnÃ­ rostlinu zvanou sluneÄnÃ­ aloe, kterÃ¡ roste pouze na exkrementech ÄernÃ©ho trola.");
 
 };
 
 
 func void DIA_Sagitta_TeachAlchemyRequest_nein ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_nein_15_00"); //Promià, nemám zájem.
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_nein_17_01"); //Tak pâestaà plıtvat mım èasem s têmi tvımi nesmysly.
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_nein_15_00"); //PromiÅ•, nemÃ¡m zÃ¡jem.
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_nein_17_01"); //Tak pÃ¢estaÅ• plÃ½tvat mÃ½m Äasem s tÄ™mi tvÃ½mi nesmysly.
 	Info_ClearChoices	(DIA_Sagitta_TeachAlchemyRequest);
 };
 
@@ -179,7 +179,7 @@ instance DIA_Sagitta_Sagitta_Herb		(C_INFO)
 	condition	 = 	DIA_Sagitta_Sagitta_Herb_Condition;
 	information	 = 	DIA_Sagitta_Sagitta_Herb_Info;
 
-	description	 = 	"Našel jsem sluneèní aloi.";
+	description	 = 	"NaÅ¡el jsem sluneÄnÃ­ aloi.";
 };
 
 func int DIA_Sagitta_Sagitta_Herb_Condition ()
@@ -193,8 +193,8 @@ func int DIA_Sagitta_Sagitta_Herb_Condition ()
 };
 func void DIA_Sagitta_Sagitta_Herb_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_Sagitta_Herb_15_00"); //Našel jsem sluneèní aloi.
-	AI_Output			(self, other, "DIA_Sagitta_Sagitta_Herb_17_01"); //Díky. A teë se mê ohlednê lektvarù mùeš ptát, na co chceš.
+	AI_Output			(other, self, "DIA_Sagitta_Sagitta_Herb_15_00"); //NaÅ¡el jsem sluneÄnÃ­ aloi.
+	AI_Output			(self, other, "DIA_Sagitta_Sagitta_Herb_17_01"); //DÃ­ky. A teÃ« se mÄ™ ohlednÄ™ lektvarÅ¯ mÅ¯Å¾eÅ¡ ptÃ¡t, na co chceÅ¡.
 	B_GiveInvItems (other,self,ItPl_Sagitta_Herb_MIS,1);
 	Sagitta_TeachAlchemy = TRUE;	
 	MIS_Sagitta_Herb = LOG_SUCCESS;
@@ -212,7 +212,7 @@ INSTANCE DIA_Sagitta_Teach   (C_INFO)
 	condition   = DIA_Sagitta_Teach_Condition;
 	information = DIA_Sagitta_Teach_Info;
 	permanent   = TRUE;
-	description = "Jaké lektvary mê mùeš nauèit pâipravovat?";
+	description = "JakÃ© lektvary mÄ™ mÅ¯Å¾eÅ¡ nauÄit pÃ¢ipravovat?";
 };
 //----------------------------------------
 var int DIA_Sagitta_Teach_permanent;
@@ -231,7 +231,7 @@ FUNC VOID DIA_Sagitta_Teach_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Sagitta_Teach_15_00");//Jaké lektvary mê mùeš nauèit pâipravovat?
+	AI_Output (other, self,"DIA_Sagitta_Teach_15_00");//JakÃ© lektvary mÄ™ mÅ¯Å¾eÅ¡ nauÄit pÃ¢ipravovat?
 
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	|| ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
@@ -248,14 +248,14 @@ FUNC VOID DIA_Sagitta_Teach_Info()
 	};
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Esence hojivé síly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)),DIA_Sagitta_Teach_Health_01);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Esence hojivÃ© sÃ­ly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)),DIA_Sagitta_Teach_Health_01);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Extrakt hojivé síly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Sagitta_Teach_Health_02);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Extrakt hojivÃ© sÃ­ly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Sagitta_Teach_Health_02);
 		talente = (talente + 1);
 	};
 	
@@ -275,20 +275,20 @@ FUNC VOID DIA_Sagitta_Teach_Info()
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Elixír many", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)),DIA_Sagitta_Teach_Mana_03);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("ElixÃ­r many", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)),DIA_Sagitta_Teach_Mana_03);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Elixír ducha", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Sagitta_Teach_Perm_Mana);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("ElixÃ­r ducha", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Sagitta_Teach_Perm_Mana);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Elixír obratnosti", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)),DIA_Sagitta_Teach_Perm_DEX);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("ElixÃ­r obratnosti", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)),DIA_Sagitta_Teach_Perm_DEX);
 		talente = (talente + 1);
 	};
 
@@ -296,20 +296,20 @@ FUNC VOID DIA_Sagitta_Teach_Info()
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_01"); //Pâedtím, ne tê nauèím nêco z mé alchymie, ti musím âíct, co všechno budeš na pâípravu lektvarù potâebovat.
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_02"); //Alchymistická kolona slouí jako kuchyà pro pâípravu lektvarù. Budeš potâebovat prázdné laboratorní baàky, ve kterıch se lektvary uchovávají.
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_03"); //Pak pâidáš ingredience a máš poadovanı lektvar.
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_04"); //Tomu se samozâejmê mùeš ode mê nauèit.
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_01"); //PÃ¢edtÃ­m, neÅ¾ tÄ™ nauÄÃ­m nÄ™co z mÃ© alchymie, ti musÃ­m Ã¢Ã­ct, co vÅ¡echno budeÅ¡ na pÃ¢Ã­pravu lektvarÅ¯ potÃ¢ebovat.
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_02"); //AlchymistickÃ¡ kolona slouÅ¾Ã­ jako kuchyÅ• pro pÃ¢Ã­pravu lektvarÅ¯. BudeÅ¡ potÃ¢ebovat prÃ¡zdnÃ© laboratornÃ­ baÅ•ky, ve kterÃ½ch se lektvary uchovÃ¡vajÃ­.
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_03"); //Pak pÃ¢idÃ¡Å¡ ingredience a mÃ¡Å¡ poÅ¾adovanÃ½ lektvar.
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_04"); //Tomu se samozÃ¢ejmÄ™ mÅ¯Å¾eÅ¡ ode mÄ™ nauÄit.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_05"); //Tak jakı lektvar by to mêl bıt?
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_05"); //Tak jakÃ½ lektvar by to mÄ™l bÃ½t?
 		};
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Sagitta_Teach_17_06"); //U znáš vše, co bych tê mohla nauèit.
+		AI_Output (self, other,"DIA_Sagitta_Teach_17_06"); //UÅ¾ znÃ¡Å¡ vÅ¡e, co bych tÄ™ mohla nauÄit.
 		DIA_Sagitta_Teach_permanent = TRUE;
 	};
 };
@@ -366,11 +366,11 @@ FUNC VOID DIA_Sagitta_Teach_Perm_Dex ()
 instance DIA_Sagitta_HEAL		(C_INFO)
 {
 	npc			 = 	BAU_980_Sagitta;
-	nr          = 	99;	//Joly: braucht ne hohe Nummer, denn wird in den späteren Kapiteln auch verwendet.
+	nr          = 	99;	//Joly: braucht ne hohe Nummer, denn wird in den spÃ¤teren Kapiteln auch verwendet.
 	condition	 = 	DIA_Sagitta_HEAL_Condition;
 	information	 = 	DIA_Sagitta_HEAL_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Vyleè mê.";
+	description	 = 	"VyleÄ mÄ™.";
 };
 
 func int DIA_Sagitta_HEAL_Condition ()
@@ -382,17 +382,17 @@ func int DIA_Sagitta_HEAL_Condition ()
 };
 func void DIA_Sagitta_HEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HEAL_15_00"); //Vyleè mê.
+	AI_Output			(other, self, "DIA_Sagitta_HEAL_15_00"); //VyleÄ mÄ™.
 	
 	if hero.attribute [ATR_HITPOINTS] < hero.attribute[ATR_HITPOINTS_MAX]
 	{
-		AI_Output			(self, other, "DIA_Sagitta_HEAL_17_01"); //Uka, podívám se. Mmh. Na ty nejhorší zranêní by mêla moje mastièka staèit.
+		AI_Output			(self, other, "DIA_Sagitta_HEAL_17_01"); //UkaÅ¾, podÃ­vÃ¡m se. Mmh. Na ty nejhorÅ¡Ã­ zranÄ™nÃ­ by mÄ™la moje mastiÄka staÄit.
 		hero.attribute [ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 		PrintScreen (PRINT_FullyHealed, - 1, - 1, FONT_Screen, 2);   
 	}
 	else 
 	{	
-		AI_Output			(self, other, "DIA_Sagitta_HEAL_17_02"); //V téhle chvíli nepotâebuješ ádné léèení.
+		AI_Output			(self, other, "DIA_Sagitta_HEAL_17_02"); //V tÃ©hle chvÃ­li nepotÃ¢ebujeÅ¡ Å¾Ã¡dnÃ© lÃ©ÄenÃ­.
 	};	
 };
 
@@ -407,7 +407,7 @@ instance DIA_Sagitta_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Jaké zboí mi mùeš nabídnout?";
+	description	 = 	"JakÃ© zboÅ¾Ã­ mi mÅ¯Å¾eÅ¡ nabÃ­dnout?";
 };
 
 func int DIA_Sagitta_TRADE_Condition ()
@@ -420,9 +420,9 @@ func int DIA_Sagitta_TRADE_Condition ()
 
 func void DIA_Sagitta_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TRADE_15_00"); //Jaké zboí mi mùeš nabídnout?
+	AI_Output			(other, self, "DIA_Sagitta_TRADE_15_00"); //JakÃ© zboÅ¾Ã­ mi mÅ¯Å¾eÅ¡ nabÃ­dnout?
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Sagitta_TRADE_17_01"); //Âekni, co chceš.
+	AI_Output			(self, other, "DIA_Sagitta_TRADE_17_01"); //Ã‚ekni, co chceÅ¡.
 };
 
 //#####################################################################
@@ -468,7 +468,7 @@ instance DIA_Sagitta_OBSESSION		(C_INFO)
 	condition	 = 	DIA_Sagitta_OBSESSION_Condition;
 	information	 = 	DIA_Sagitta_OBSESSION_Info;
 
-	description	 = 	"Mám strašné pocity úzkosti, potâebuji pomoc.";
+	description	 = 	"MÃ¡m straÅ¡nÃ© pocity Ãºzkosti, potÃ¢ebuji pomoc.";
 };
 
 func int DIA_Sagitta_OBSESSION_Condition ()
@@ -483,9 +483,9 @@ func int DIA_Sagitta_OBSESSION_Condition ()
 
 func void DIA_Sagitta_OBSESSION_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_OBSESSION_15_00"); //Trpím pocity strachu. Potâebuju pomoc.
-	AI_Output			(self, other, "DIA_Sagitta_OBSESSION_17_01"); //Vidím, e spánek by ti moc nepomohl. Byl jsi vystaven temnému pohledu Pátraèù.
-	AI_Output			(self, other, "DIA_Sagitta_OBSESSION_17_02"); //Zajdi za Pyrokarem, nejvyšším mágem kláštera. Moje skromné monosti na tohle nestaèí.
+	AI_Output			(other, self, "DIA_Sagitta_OBSESSION_15_00"); //TrpÃ­m pocity strachu. PotÃ¢ebuju pomoc.
+	AI_Output			(self, other, "DIA_Sagitta_OBSESSION_17_01"); //VidÃ­m, Å¾e spÃ¡nek by ti moc nepomohl. Byl jsi vystaven temnÃ©mu pohledu PÃ¡traÄÅ¯.
+	AI_Output			(self, other, "DIA_Sagitta_OBSESSION_17_02"); //Zajdi za Pyrokarem, nejvyÅ¡Å¡Ã­m mÃ¡gem klÃ¡Å¡tera. Moje skromnÃ© moÅ¾nosti na tohle nestaÄÃ­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -498,7 +498,7 @@ instance DIA_Sagitta_Thekla		(C_INFO)
 	condition	 = 	DIA_Sagitta_Thekla_Condition;
 	information	 = 	DIA_Sagitta_Thekla_Info;
 
-	description	 = 	"Thekla mê poslala pro nêjakı balík.";
+	description	 = 	"Thekla mÄ™ poslala pro nÄ™jakÃ½ balÃ­k.";
 };
 
 func int DIA_Sagitta_Thekla_Condition ()
@@ -512,9 +512,9 @@ func int DIA_Sagitta_Thekla_Condition ()
 
 func void DIA_Sagitta_Thekla_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_Thekla_15_00"); //Thekla mê poslala pro nêjakı balík.
-	AI_Output			(self, other, "DIA_Sagitta_Thekla_17_01"); //Ach, ano. U jsem ji oèekávala vèera.
-	AI_Output			(self, other, "DIA_Sagitta_Thekla_17_02"); //Tady je ten balík. Dávej na nêj dobrı pozor!
+	AI_Output			(other, self, "DIA_Sagitta_Thekla_15_00"); //Thekla mÄ™ poslala pro nÄ™jakÃ½ balÃ­k.
+	AI_Output			(self, other, "DIA_Sagitta_Thekla_17_01"); //Ach, ano. UÅ¾ jsem ji oÄekÃ¡vala vÄera.
+	AI_Output			(self, other, "DIA_Sagitta_Thekla_17_02"); //Tady je ten balÃ­k. DÃ¡vej na nÄ™j dobrÃ½ pozor!
 	B_GivePlayerXP (XP_AmbientKap3);								
 	B_GiveInvItems (self, other, ItMi_TheklasPaket, 1);					
 };
@@ -564,7 +564,7 @@ instance DIA_Sagitta_HEALRANDOLPH		(C_INFO)
 	information	 = 	DIA_Sagitta_HEALRANDOLPH_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Randolph má absãák.";
+	description	 = 	"Randolph mÃ¡ absÄƒÃ¡k.";
 };
 
 var int DIA_Sagitta_HEALRANDOLPH_GotOne;
@@ -582,51 +582,51 @@ func int DIA_Sagitta_HEALRANDOLPH_Condition ()
 
 func void DIA_Sagitta_HEALRANDOLPH_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_15_00"); //Randolph má absãák.
+	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_15_00"); //Randolph mÃ¡ absÄƒÃ¡k.
 
 	if (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_01"); //Kdy u se ten chlap koneènê pouèí?
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_01"); //Kdy uÅ¾ se ten chlap koneÄnÄ™ pouÄÃ­?
 			DIA_Sagitta_HEALRANDOLPH_KnowsPrice = TRUE;
 		};
 	
 	if(DIA_Sagitta_HEALRANDOLPH_GotOne == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_02"); //U jsem ti pro nêj pâichystala medicínu. Tak se s tím nikde moc nepoflakuj.
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_02"); //UÅ¾ jsem ti pro nÄ™j pÃ¢ichystala medicÃ­nu. Tak se s tÃ­m nikde moc nepoflakuj.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_03"); //Dám mu na to lék. To mu bude na nêkolik dní staèit.
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_03"); //DÃ¡m mu na to lÃ©k. To mu bude na nÄ™kolik dnÃ­ staÄit.
 		};
 
-	AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_04"); //Tak to pâijde na 300 zlatıch.
+	AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_04"); //Tak to pÃ¢ijde na 300 zlatÃ½ch.
 
 	if (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == FALSE)
 	{
 		AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_15_05"); //Co?
-		AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_06"); //Jediná vêc, kterou dostaneš úplnê zadarmo, je smrt, chlapèe.
+		AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_06"); //JedinÃ¡ vÄ™c, kterou dostaneÅ¡ ÃºplnÄ™ zadarmo, je smrt, chlapÄe.
 	};	
 
 	Info_ClearChoices	(DIA_Sagitta_HEALRANDOLPH);
-	Info_AddChoice	(DIA_Sagitta_HEALRANDOLPH, "Pff. Za takové nesmysly utrácet nebudu."	, DIA_Sagitta_HEALRANDOLPH_no );
-	Info_AddChoice	(DIA_Sagitta_HEALRANDOLPH, "Tady jsou peníze."				, DIA_Sagitta_HEALRANDOLPH_geld );
+	Info_AddChoice	(DIA_Sagitta_HEALRANDOLPH, "Pff. Za takovÃ© nesmysly utrÃ¡cet nebudu."	, DIA_Sagitta_HEALRANDOLPH_no );
+	Info_AddChoice	(DIA_Sagitta_HEALRANDOLPH, "Tady jsou penÃ­ze."				, DIA_Sagitta_HEALRANDOLPH_geld );
 };
 
 func void DIA_Sagitta_HEALRANDOLPH_geld ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_geld_15_00"); //Tady jsou peníze.
+	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_geld_15_00"); //Tady jsou penÃ­ze.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,300))
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_01"); //Vıbornê. Vdycky ty peníze mùeš dostat zpátky od nêj.
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_01"); //VÃ½bornÄ™. VÅ¾dycky ty penÃ­ze mÅ¯Å¾eÅ¡ dostat zpÃ¡tky od nÄ™j.
 			CreateInvItems 		(self, ItPo_HealRandolph_MIS, 1);									
 			B_GiveInvItems 		(self, other, ItPo_HealRandolph_MIS, 1);					
 			DIA_Sagitta_HEALRANDOLPH_GotOne = TRUE;
-		B_LogEntry (TOPIC_HealRandolph,"Sagitta mi dala lék pro Randolpha."); 
+		B_LogEntry (TOPIC_HealRandolph,"Sagitta mi dala lÃ©k pro Randolpha."); 
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_02"); //Dokud mi nedáš peníze, nebude ádnej obchod.
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_02"); //Dokud mi nedÃ¡Å¡ penÃ­ze, nebude Å¾Ã¡dnej obchod.
 		};
 
 	Info_ClearChoices	(DIA_Sagitta_HEALRANDOLPH);
@@ -634,8 +634,8 @@ func void DIA_Sagitta_HEALRANDOLPH_geld ()
 
 func void DIA_Sagitta_HEALRANDOLPH_no ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_no_15_00"); //Pff. Za takové nesmysly utrácet nebudu.
-	AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_no_17_01"); //(smích) Nedal ti peníze, co? To je celı on!
+	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_no_15_00"); //Pff. Za takovÃ© nesmysly utrÃ¡cet nebudu.
+	AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_no_17_01"); //(smÃ­ch) Nedal ti penÃ­ze, co? To je celÃ½ on!
 	Info_ClearChoices	(DIA_Sagitta_HEALRANDOLPH);
 };
 

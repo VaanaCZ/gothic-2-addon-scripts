@@ -27,11 +27,11 @@ INSTANCE PC_MageTest(NPC_DEFAULT)
 	Mdl_SetVisualBody (self,	"hum_body_Naked0", 	BodyTex_Player,	0,			"Hum_Head_Pony", 	FACE_N_Player,	0, 			ITAR_PAL_H);
 	
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 			6);
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //h‰ngt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //h√§ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SNEAK, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ACROBAT, 			0);
 	
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//h‰ngt ab von DEX (auf Scriptebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//h√§ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SMITH, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_RUNES, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);
@@ -115,7 +115,7 @@ INSTANCE PC_MageTest(NPC_DEFAULT)
 	PLAYER_TALENT_RUNES[SPL_SuckEnergy] 			= TRUE;
 	PLAYER_TALENT_RUNES[SPL_Skull] 			= TRUE;
 		
-	B_SetFightSkills (self, 100); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	B_SetFightSkills (self, 100); //Grenzen f√ºr Talent-Level liegen bei 30 und 60
 	
 	//-------- inventory --------
 	EquipItem (self, ItMw_2h_Pal_Sword);

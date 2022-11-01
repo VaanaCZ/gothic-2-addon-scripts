@@ -34,7 +34,7 @@ instance DIA_Wolf_Hallo		(C_INFO)
 	condition	= DIA_Wolf_Hallo_Condition;
 	information	= DIA_Wolf_Hallo_Info;
 	permanent 	= FALSE;
-	description	= "Je všechno v poâádku?";
+	description	= "Je vÅ¡echno v poÃ¢Ã¡dku?";
 };
 
 func int DIA_Wolf_Hallo_Condition ()
@@ -44,9 +44,9 @@ func int DIA_Wolf_Hallo_Condition ()
 
 func void DIA_Wolf_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_Hallo_15_00"); //Jsi v poâádku?
-	AI_Output (self, other, "DIA_Wolf_Hallo_08_01"); //Hej, já tê znám! Z kolonie!
-	AI_Output (self, other, "DIA_Wolf_Hallo_08_02"); //Co tady chceš?
+	AI_Output (other, self, "DIA_Wolf_Hallo_15_00"); //Jsi v poÃ¢Ã¡dku?
+	AI_Output (self, other, "DIA_Wolf_Hallo_08_01"); //Hej, jÃ¡ tÄ™ znÃ¡m! Z kolonie!
+	AI_Output (self, other, "DIA_Wolf_Hallo_08_02"); //Co tady chceÅ¡?
 };
 
 // ************************************************************
@@ -59,7 +59,7 @@ instance DIA_Wolf_WannaJoin		(C_INFO)
 	condition	= DIA_Wolf_WannaJoin_Condition;
 	information	= DIA_Wolf_WannaJoin_Info;
 	permanent 	= FALSE;
-	description	= "Pâišel jsem se k vám pâidat.";
+	description	= "PÃ¢iÅ¡el jsem se k vÃ¡m pÃ¢idat.";
 };
 
 func int DIA_Wolf_WannaJoin_Condition ()
@@ -73,15 +73,15 @@ func int DIA_Wolf_WannaJoin_Condition ()
 
 func void DIA_Wolf_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_00"); //Pâišel jsem se k vám pâidat.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_01"); //Proè ne, já proti tobê nic nemám. Vdyã jsi z našeho dolu kdysi vyhnal stráe.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_02"); //Ale nepoèítej s tím, e tê takhle snadno pâijmou i ostatní.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_03"); //Od tı doby sem pâišla spousta novıch lidí a nêkteâí staâí oldáci u si na tebe asi ani nebudou pamatovat.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_04"); //Já tê taky skoro nepoznal, vypadáš nêjak zruchanê.
-	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_05"); //Kdy bariéra padla, sotva jsem si zachránil holı ivot.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_06"); //Tak tos mêl teda štêstí.
+	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_00"); //PÃ¢iÅ¡el jsem se k vÃ¡m pÃ¢idat.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_01"); //ProÄ ne, jÃ¡ proti tobÄ™ nic nemÃ¡m. VÅ¾dyÄƒ jsi z naÅ¡eho dolu kdysi vyhnal strÃ¡Å¾e.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_02"); //Ale nepoÄÃ­tej s tÃ­m, Å¾e tÄ™ takhle snadno pÃ¢ijmou i ostatnÃ­.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_03"); //Od tÃ½ doby sem pÃ¢iÅ¡la spousta novÃ½ch lidÃ­ a nÄ™kteÃ¢Ã­ staÃ¢Ã­ Å¾oldÃ¡ci uÅ¾ si na tebe asi ani nebudou pamatovat.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_04"); //JÃ¡ tÄ™ taky skoro nepoznal, vypadÃ¡Å¡ nÄ™jak zruchanÄ™.
+	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_05"); //KdyÅ¾ bariÃ©ra padla, sotva jsem si zachrÃ¡nil holÃ½ Å¾ivot.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_06"); //Tak tos mÄ™l teda Å¡tÄ™stÃ­.
 	
-	B_LogEntry (TOPIC_SLDRespekt,"Vlkovi nebude vadit, kdy se pâipojím k oldnéâùm.");
+	B_LogEntry (TOPIC_SLDRespekt,"Vlkovi nebude vadit, kdyÅ¾ se pÃ¢ipojÃ­m k Å¾oldnÃ©Ã¢Å¯m.");
 };
 
 // ************************************************************
@@ -94,7 +94,7 @@ instance DIA_Wolf_WannaBuy		(C_INFO)
 	condition	= DIA_Wolf_WannaBuy_Condition;
 	information	= DIA_Wolf_WannaBuy_Info;
 	permanent 	= FALSE;
-	description	= "Nemáš nêco na prodej?";
+	description	= "NemÃ¡Å¡ nÄ™co na prodej?";
 };
 
 func int DIA_Wolf_WannaBuy_Condition ()
@@ -107,12 +107,12 @@ func int DIA_Wolf_WannaBuy_Condition ()
 
 func void DIA_Wolf_WannaBuy_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaBuy_15_00"); //Nemáš nêco na prodej?
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_01"); //Ále, ani se neptej.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_02"); //O zbranê a zbroj se teë stará Bennet, jeden z têch novıch chlápkù.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_03"); //V kolonii jsem vedl celou Leeovu zbrojírnu - a pak si pâijde nêjakı školenı kováâ a bác, jsem bez práce.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_04"); //Zoufale potâebuju novou práci, i kdy tu nedêlám nic jinıho, ne hlídám polnosti.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_05"); //Ale nevadí mi to, aspoà tu nemusím sedêt s rukama v klínê.
+	AI_Output (other, self, "DIA_Wolf_WannaBuy_15_00"); //NemÃ¡Å¡ nÄ™co na prodej?
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_01"); //Ãle, ani se neptej.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_02"); //O zbranÄ™ a zbroj se teÃ« starÃ¡ Bennet, jeden z tÄ™ch novÃ½ch chlÃ¡pkÅ¯.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_03"); //V kolonii jsem vedl celou Leeovu zbrojÃ­rnu - a pak si pÃ¢ijde nÄ™jakÃ½ Å¡kolenÃ½ kovÃ¡Ã¢ a bÃ¡c, jsem bez prÃ¡ce.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_04"); //Zoufale potÃ¢ebuju novou prÃ¡ci, i kdyÅ¾ tu nedÄ™lÃ¡m nic jinÃ½ho, neÅ¾ hlÃ­dÃ¡m polnosti.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_05"); //Ale nevadÃ­ mi to, aspoÅ• tu nemusÃ­m sedÄ™t s rukama v klÃ­nÄ™.
 }; 
 
 // ************************************************************
@@ -125,7 +125,7 @@ instance DIA_Wolf_WannaLearn (C_INFO)
 	condition	= DIA_Wolf_WannaLearn_Condition;
 	information	= DIA_Wolf_WannaLearn_Info;
 	permanent 	= FALSE;
-	description	= "Mùeš mê nêèemu nauèit?";
+	description	= "MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 
 func int DIA_Wolf_WannaLearn_Condition ()
@@ -138,12 +138,12 @@ func int DIA_Wolf_WannaLearn_Condition ()
 
 func void DIA_Wolf_WannaLearn_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaLearn_15_00"); //Mùu se u tebe nêèemu pâiuèit?
-	AI_Output (self, other, "DIA_Wolf_WannaLearn_08_01"); //Jestli chceš, mùu ti poradit pár trikù v zacházení s lukem. Nic lepšího teë stejnê dêlat nemùu.
+	AI_Output (other, self, "DIA_Wolf_WannaLearn_15_00"); //MÅ¯Å¾u se u tebe nÄ™Äemu pÃ¢iuÄit?
+	AI_Output (self, other, "DIA_Wolf_WannaLearn_08_01"); //Jestli chceÅ¡, mÅ¯Å¾u ti poradit pÃ¡r trikÅ¯ v zachÃ¡zenÃ­ s lukem. Nic lepÅ¡Ã­ho teÃ« stejnÄ™ dÄ™lat nemÅ¯Å¾u.
 	
 	Wolf_TeachBow = TRUE;
 	Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTeacher,"Vlk mê nauèí zacházet s luky.");
+	B_LogEntry (Topic_SoldierTeacher,"Vlk mÄ™ nauÄÃ­ zachÃ¡zet s luky.");
 };
 
 // ************************************************************
@@ -159,7 +159,7 @@ instance DIA_Wolf_TEACH (C_INFO)
 	condition	= DIA_Wolf_TEACH_Condition;
 	information	= DIA_Wolf_TEACH_Info;
 	permanent 	= TRUE;
-	description	= "Chtêl bych se trochu vylepšit ve stâelbê.";
+	description	= "ChtÄ™l bych se trochu vylepÅ¡it ve stÃ¢elbÄ™.";
 };
 
 func int DIA_Wolf_TEACH_Condition ()
@@ -172,8 +172,8 @@ func int DIA_Wolf_TEACH_Condition ()
 
 func void DIA_Wolf_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_TEACH_15_00"); //Chtêl bych se trochu vylepšit ve stâelbê.
-	AI_Output (self, other, "DIA_Wolf_TEACH_08_01"); //Co bych tê mêl nauèit?
+	AI_Output (other, self, "DIA_Wolf_TEACH_15_00"); //ChtÄ™l bych se trochu vylepÅ¡it ve stÃ¢elbÄ™.
+	AI_Output (self, other, "DIA_Wolf_TEACH_08_01"); //Co bych tÄ™ mÄ™l nauÄit?
 	
 	Wolf_Merke_Bow = other.HitChance[NPC_TALENT_BOW];
 	
@@ -187,7 +187,7 @@ FUNC VOID DIA_Wolf_Teach_Back ()
 {
 	if (Wolf_Merke_Bow < other.HitChance[NPC_TALENT_BOW])
 	{
-		AI_Output (self ,other,"DIA_Wolf_Teach_BACK_08_00"); //A je to. U máš zase o nêco pâesnêjší mušku.
+		AI_Output (self ,other,"DIA_Wolf_Teach_BACK_08_00"); //A je to. UÅ¾ mÃ¡Å¡ zase o nÄ™co pÃ¢esnÄ™jÅ¡Ã­ muÅ¡ku.
 	};
 	
 	Info_ClearChoices (DIA_Wolf_Teach);
@@ -223,7 +223,7 @@ instance DIA_Wolf_PERM		(C_INFO)
 	condition	= DIA_Wolf_PERM_Condition;
 	information	= DIA_Wolf_PERM_Info;
 	permanent	= TRUE;
-	description	= "Tak co? U sis našel novou práci?";
+	description	= "Tak co? UÅ¾ sis naÅ¡el novou prÃ¡ci?";
 };
 
 func int DIA_Wolf_PERM_Condition ()
@@ -238,8 +238,8 @@ func int DIA_Wolf_PERM_Condition ()
 
 func void DIA_Wolf_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_PERM_15_00"); //Tak co? U sis našel novou práci?
-	AI_Output (self, other, "DIA_Wolf_PERM_08_01"); //Ne, zatím ne. Dej mi vêdêt, jestli na nêco natrefíš.
+	AI_Output (other, self, "DIA_Wolf_PERM_15_00"); //Tak co? UÅ¾ sis naÅ¡el novou prÃ¡ci?
+	AI_Output (self, other, "DIA_Wolf_PERM_08_01"); //Ne, zatÃ­m ne. Dej mi vÄ™dÄ™t, jestli na nÄ™co natrefÃ­Å¡.
 };
 
 // ************************************************************
@@ -252,7 +252,7 @@ instance DIA_Wolf_Stadt		(C_INFO)
 	condition	= DIA_Wolf_Stadt_Condition;
 	information	= DIA_Wolf_Stadt_Info;
 	permanent	= FALSE;
-	description	= "Zkoušel sis nêco najít ve mêstê?";
+	description	= "ZkouÅ¡el sis nÄ™co najÃ­t ve mÄ™stÄ™?";
 };
 
 func int DIA_Wolf_Stadt_Condition ()
@@ -267,10 +267,10 @@ func int DIA_Wolf_Stadt_Condition ()
 
 func void DIA_Wolf_Stadt_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_Stadt_15_00"); //Zkoušel sis nêco najít ve mêstê?
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_01"); //Ve mêstê? (smêje se) Tam by mê nedostali ani párem volù!
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_02"); //Nebo si myslíš, e bych tam mêl dêlat nêjakıho vojáka z domobrany? Nedovedu si pâedstavit, e bych nosil uniformu jako nêjakej dvoâan.
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_03"); //A pak ta slepá poslušnost. Ne, zapomeà na to - moná tady na farmê nemám moc co na práci, ale aspoà si mùu dêlat, co chci.
+	AI_Output (other, self, "DIA_Wolf_Stadt_15_00"); //ZkouÅ¡el sis nÄ™co najÃ­t ve mÄ™stÄ™?
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_01"); //Ve mÄ™stÄ™? (smÄ™je se) Tam by mÄ™ nedostali ani pÃ¡rem volÅ¯!
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_02"); //Nebo si myslÃ­Å¡, Å¾e bych tam mÄ™l dÄ™lat nÄ™jakÃ½ho vojÃ¡ka z domobrany? Nedovedu si pÃ¢edstavit, Å¾e bych nosil uniformu jako nÄ™jakej dvoÃ¢an.
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_03"); //A pak ta slepÃ¡ posluÅ¡nost. Ne, zapomeÅ• na to - moÅ¾nÃ¡ tady na farmÄ™ nemÃ¡m moc co na prÃ¡ci, ale aspoÅ• si mÅ¯Å¾u dÄ™lat, co chci.
 };
 
 
@@ -297,7 +297,7 @@ INSTANCE DIA_Wolf_AboutCrawler(C_INFO)
 	condition	= DIA_Wolf_AboutCrawler_Condition;
 	information	= DIA_Wolf_AboutCrawler_Info;
 	permanent	= FALSE;
-	description = "Slyšel jsem, e umíš vykovat zbroj z èervích krunıâù?";
+	description = "SlyÅ¡el jsem, Å¾e umÃ­Å¡ vykovat zbroj z ÄervÃ­ch krunÃ½Ã¢Å¯?";
 };                       
 FUNC INT DIA_Wolf_AboutCrawler_Condition()
 {
@@ -309,19 +309,19 @@ FUNC INT DIA_Wolf_AboutCrawler_Condition()
 };
 FUNC VOID DIA_Wolf_AboutCrawler_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_00"); //Slyšel jsem, e umíš vykovat zbroj z èervích krunıâù?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_01"); //To je fakt. Od koho ses to dozvêdêl?
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_02"); //Âekl mi to lovec jménem Gestath.
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_03"); //Dokázal bys takovou zbroj vyrobit?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_04"); //Jasnê. Pâines mi 10 èervích krunıâù a já ti ji vyrobím.
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_05"); //A kolik za ni budeš chtít?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_06"); //Na placení zapomeà, udêlám ti ji grátis, na památku starıch dobrıch èasù.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_00"); //SlyÅ¡el jsem, Å¾e umÃ­Å¡ vykovat zbroj z ÄervÃ­ch krunÃ½Ã¢Å¯?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_01"); //To je fakt. Od koho ses to dozvÄ™dÄ™l?
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_02"); //Ã‚ekl mi to lovec jmÃ©nem Gestath.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_03"); //DokÃ¡zal bys takovou zbroj vyrobit?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_04"); //JasnÄ™. PÃ¢ines mi 10 ÄervÃ­ch krunÃ½Ã¢Å¯ a jÃ¡ ti ji vyrobÃ­m.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_05"); //A kolik za ni budeÅ¡ chtÃ­t?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_06"); //Na placenÃ­ zapomeÅ•, udÄ™lÃ¡m ti ji grÃ¡tis, na pamÃ¡tku starÃ½ch dobrÃ½ch ÄasÅ¯.
 	
 	MIS_Wolf_BringCrawlerPlates = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Wolf_BringCrawlerPlates,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Wolf_BringCrawlerPlates,LOG_RUNNING);
-	B_LogEntry (TOPIC_Wolf_BringCrawlerPlates,"Vlk mi z 10 èervích krunıâù vyková zbroj.");
+	B_LogEntry (TOPIC_Wolf_BringCrawlerPlates,"Vlk mi z 10 ÄervÃ­ch krunÃ½Ã¢Å¯ vykovÃ¡ zbroj.");
 };
 
 
@@ -336,7 +336,7 @@ INSTANCE DIA_Wolf_TeachCrawlerPlates(C_INFO)
 	condition	= DIA_Wolf_TeachCrawlerPlates_Condition;
 	information	= DIA_Wolf_TeachCrawlerPlates_Info;
 	permanent	= TRUE;
-	description = B_BuildLearnString ("Vysvêtli mi, jak lze získat èerví krunıâ.", B_GetLearnCostTalent(other, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
+	description = B_BuildLearnString ("VysvÄ™tli mi, jak lze zÃ­skat ÄervÃ­ krunÃ½Ã¢.", B_GetLearnCostTalent(other, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
 };                       
 FUNC INT DIA_Wolf_TeachCrawlerPlates_Condition()
 {
@@ -348,14 +348,14 @@ FUNC INT DIA_Wolf_TeachCrawlerPlates_Condition()
 };
 FUNC VOID DIA_Wolf_TeachCrawlerPlates_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_00"); //Mùeš mê nauèit, jak èerví krunıâe oddêlit?
+	AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nauÄit, jak ÄervÃ­ krunÃ½Ã¢e oddÄ™lit?
 	
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 	{
-		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_01"); //To je jednoduché. Zadní krunıâe jsou toti na têle pevnê pâichycené pouze na okrajích. Staèí je ostrım noem odâíznout a je to.
-		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_02"); //Chápeš?
-		AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_03"); //To je jednoduché.
-		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_04"); //Vdyã to povídám.
+		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_01"); //To je jednoduchÃ©. ZadnÃ­ krunÃ½Ã¢e jsou totiÅ¾ na tÄ™le pevnÄ™ pÃ¢ichycenÃ© pouze na okrajÃ­ch. StaÄÃ­ je ostrÃ½m noÅ¾em odÃ¢Ã­znout a je to.
+		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_02"); //ChÃ¡peÅ¡?
+		AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_03"); //To je jednoduchÃ©.
+		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_04"); //VÅ¾dyÄƒ to povÃ­dÃ¡m.
 	};
 };
 
@@ -370,7 +370,7 @@ INSTANCE DIA_Wolf_BringPlates(C_INFO)
 	condition	= DIA_Wolf_BringPlates_Condition;
 	information	= DIA_Wolf_BringPlates_Info;
 	permanent	= TRUE;
-	description = "Sehnal jsem ty èerví krunıâe na brnêní.";
+	description = "Sehnal jsem ty ÄervÃ­ krunÃ½Ã¢e na brnÄ™nÃ­.";
 };                       
 FUNC INT DIA_Wolf_BringPlates_Condition()
 {
@@ -382,9 +382,9 @@ FUNC INT DIA_Wolf_BringPlates_Condition()
 };
 FUNC VOID DIA_Wolf_BringPlates_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_BringPlates_15_00"); //Sehnal jsem ty èerví krunıâe na brnêní.
+	AI_Output (other, self, "DIA_Wolf_BringPlates_15_00"); //Sehnal jsem ty ÄervÃ­ krunÃ½Ã¢e na brnÄ™nÃ­.
 	B_GiveInvItems (other, self, ItAt_CrawlerPlate, 10);
-	AI_Output (self, other, "DIA_Wolf_BringPlates_08_01"); //Skvêlé, tak je sem dej!
+	AI_Output (self, other, "DIA_Wolf_BringPlates_08_01"); //SkvÄ™lÃ©, tak je sem dej!
 		
 	MIS_Wolf_BringCrawlerPlates = LOG_SUCCESS;
 };
@@ -428,23 +428,23 @@ FUNC VOID DIA_Wolf_ArmorReady_Info()
 		if (Wolf_MakeArmor == TRUE)
 		&& (Wolf_Armor_Day > Wld_GetDay())
 		{
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_01"); //Jen co ji dám dohromady. Vraã se zítra.
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_01"); //Jen co ji dÃ¡m dohromady. VraÄƒ se zÃ­tra.
 		}
 		else
 		{
 			CreateInvItems (self, ItAr_Djg_Crawler, 1);
 			Npc_RemoveInvItems (self, ItAt_CrawlerPlate, 10);
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_02"); //U je hotová - tady je.
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_02"); //UÅ¾ je hotovÃ¡ - tady je.
 			B_GiveInvItems (self, other, ItAr_Djg_Crawler, 1);
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_03"); //Jak tak koukám, to provedení je fakt skvêlé.
-			AI_Output (other, self, "DIA_Wolf_ArmorReady_15_04"); //Díky!
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_05"); //Není zaè.
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_03"); //Jak tak koukÃ¡m, to provedenÃ­ je fakt skvÄ™lÃ©.
+			AI_Output (other, self, "DIA_Wolf_ArmorReady_15_04"); //DÃ­ky!
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_05"); //NenÃ­ zaÄ.
 			Player_GotCrawlerArmor = TRUE;
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Wolf_ArmorReady_08_06"); //Ty vtipálku, nejdâív potâebuju ty èerví krunıâe.
+		AI_Output (self, other, "DIA_Wolf_ArmorReady_08_06"); //Ty vtipÃ¡lku, nejdÃ¢Ã­v potÃ¢ebuju ty ÄervÃ­ krunÃ½Ã¢e.
 		Wolf_MakeArmor = FALSE;
 		MIS_Wolf_BringCrawlerPlates = LOG_RUNNING;
 	};
@@ -495,7 +495,7 @@ instance DIA_Wolf_BENGAR		(C_INFO)
 	information	 = 	DIA_Wolf_BENGAR_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Moná jsem ti našel práci u Bengara na statku.";
+	description	 = 	"MoÅ¾nÃ¡ jsem ti naÅ¡el prÃ¡ci u Bengara na statku.";
 };
 
 func int DIA_Wolf_BENGAR_Condition ()
@@ -514,32 +514,32 @@ var int Wolf_BENGAR_geld;
 
 func void DIA_Wolf_BENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_00"); //Moná jsem ti našel práci u Bengara na statku.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_00"); //MoÅ¾nÃ¡ jsem ti naÅ¡el prÃ¡ci u Bengara na statku.
 
 	if (DIA_Wolf_BENGAR_oneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_01"); //Tak povídej.
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_02"); //Pâímo u Bengarova statku ústí prùsmyk do Hornického údolí, kterım se poâád snaí prodrat nêjaké obludy. Nemusím ani dodávat, e z nich má ten sedlák pêknê têkou hlavu.
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_03"); //Proto je tâeba, aby Bengarùv statek nêkdo stâeil.
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_04"); //Na tom by mohlo nêco bıt. Aspoà budu venku na poli a nebudu muset poâád okounêt tady u kovárny.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_01"); //Tak povÃ­dej.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_02"); //PÃ¢Ã­mo u Bengarova statku ÃºstÃ­ prÅ¯smyk do HornickÃ©ho ÃºdolÃ­, kterÃ½m se poÃ¢Ã¡d snaÅ¾Ã­ prodrat nÄ™jakÃ© obludy. NemusÃ­m ani dodÃ¡vat, Å¾e z nich mÃ¡ ten sedlÃ¡k pÄ™knÄ™ tÄ™Å¾kou hlavu.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_03"); //Proto je tÃ¢eba, aby BengarÅ¯v statek nÄ™kdo stÃ¢eÅ¾il.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_04"); //Na tom by mohlo nÄ™co bÃ½t. AspoÅ• budu venku na poli a nebudu muset poÃ¢Ã¡d okounÄ™t tady u kovÃ¡rny.
 	DIA_Wolf_BENGAR_oneTime = TRUE;
 	};
 	
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_05"); //Souhlasím. A kdy jsi teë jedním z nás, udêlám ti dobrou cenu. Dej mi 300 zlaãákù a já tam hned vyrazím.
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_05"); //SouhlasÃ­m. A kdyÅ¾ jsi teÃ« jednÃ­m z nÃ¡s, udÄ™lÃ¡m ti dobrou cenu. Dej mi 300 zlaÄƒÃ¡kÅ¯ a jÃ¡ tam hned vyrazÃ­m.
 			Wolf_BENGAR_geld = 300;
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_06"); //Dobâe. Dêlá to 800 zlaãákù.
-			AI_Output			(other, self, "DIA_Wolf_BENGAR_15_07"); //To je poâádnı balík.
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_08"); //No, pro nêkoho z nás bych to udêlal za babku, ale pro tebe...
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_06"); //DobÃ¢e. DÄ™lÃ¡ to 800 zlaÄƒÃ¡kÅ¯.
+			AI_Output			(other, self, "DIA_Wolf_BENGAR_15_07"); //To je poÃ¢Ã¡dnÃ½ balÃ­k.
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_08"); //No, pro nÄ™koho z nÃ¡s bych to udÄ™lal za babku, ale pro tebe...
 			Wolf_BENGAR_geld = 800;
 		};
 
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
-	Info_AddChoice	(DIA_Wolf_BENGAR, "Budu o tom pâemıšlet.", DIA_Wolf_BENGAR_nochnicht );
+	Info_AddChoice	(DIA_Wolf_BENGAR, "Budu o tom pÃ¢emÃ½Å¡let.", DIA_Wolf_BENGAR_nochnicht );
 	Info_AddChoice	(DIA_Wolf_BENGAR, "Tady je zlato.", DIA_Wolf_BENGAR_geld );
 };
 func void DIA_Wolf_BENGAR_geld ()
@@ -548,8 +548,8 @@ func void DIA_Wolf_BENGAR_geld ()
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,	Wolf_BENGAR_geld))
 	{
-		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_01"); //Fajn, a teë pùjdu dohlídnout na ty nestvùry. Uvidíme, jestli se mi na té farmê podaâí ještê nêkoho naverbovat.
-		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_02"); //Tak se zatím mêj.
+		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_01"); //Fajn, a teÃ« pÅ¯jdu dohlÃ­dnout na ty nestvÅ¯ry. UvidÃ­me, jestli se mi na tÃ© farmÄ™ podaÃ¢Ã­ jeÅ¡tÄ™ nÄ™koho naverbovat.
+		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_02"); //Tak se zatÃ­m mÄ™j.
 		
 	
 		MIS_BengarsHelpingSLD = LOG_SUCCESS;
@@ -562,15 +562,15 @@ func void DIA_Wolf_BENGAR_geld ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_03"); //No, kdybys mêl dost penêz, u bych byl dávno na cestê.
+		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_03"); //No, kdybys mÄ™l dost penÄ™z, uÅ¾ bych byl dÃ¡vno na cestÄ™.
 	};
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
 };
 
 func void DIA_Wolf_BENGAR_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_nochnicht_15_00"); //Budu o tom pâemıšlet.
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_nochnicht_08_01"); //Fajn, ale ne abys mê shodil.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_nochnicht_15_00"); //Budu o tom pÃ¢emÃ½Å¡let.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_nochnicht_08_01"); //Fajn, ale ne abys mÄ™ shodil.
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
 };
 
@@ -585,7 +585,7 @@ instance DIA_Wolf_PERMKAP3		(C_INFO)
 	information	 = 	DIA_Wolf_PERMKAP3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Je všechno v poâádku?";
+	description	 = 	"Je vÅ¡echno v poÃ¢Ã¡dku?";
 };
 
 func int DIA_Wolf_PERMKAP3_Condition ()
@@ -601,18 +601,18 @@ func int DIA_Wolf_PERMKAP3_Condition ()
 var int DIA_Wolf_PERMKAP3_onetime;
 func void DIA_Wolf_PERMKAP3_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_PERMKAP3_15_00"); //Tak co, všechno v cajku?
+	AI_Output			(other, self, "DIA_Wolf_PERMKAP3_15_00"); //Tak co, vÅ¡echno v cajku?
 
 	if ((Npc_IsDead(Bengar))&&(DIA_Wolf_PERMKAP3_onetime == FALSE))
 	{
-		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_01"); //Mùj zamêstnavatel je mrtvı. No, a já si vdycky pâál mít vlastní statek.
+		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_01"); //MÅ¯j zamÄ™stnavatel je mrtvÃ½. No, a jÃ¡ si vÅ¾dycky pÃ¢Ã¡l mÃ­t vlastnÃ­ statek.
 		AI_StopProcessInfos (self);	
 		Npc_ExchangeRoutine	(self,"BengarDead");
 		DIA_Wolf_PERMKAP3_onetime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_02"); //No jasnê! Všude ticho jako v chrámu!
+		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_02"); //No jasnÄ™! VÅ¡ude ticho jako v chrÃ¡mu!
 	};
 	AI_StopProcessInfos (self);
 };
@@ -698,7 +698,7 @@ instance DIA_Wolf_SHIP		(C_INFO)
 	condition	 = 	DIA_Wolf_SHIP_Condition;
 	information	 = 	DIA_Wolf_SHIP_Info;
 
-	description	 = 	"Chtêl bys odsud odplout?";
+	description	 = 	"ChtÄ™l bys odsud odplout?";
 };
 
 func int DIA_Wolf_SHIP_Condition ()
@@ -712,28 +712,28 @@ func int DIA_Wolf_SHIP_Condition ()
 
 func void DIA_Wolf_SHIP_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_SHIP_15_00"); //Nelíbilo by se ti odsud vyplout na lodi?
+	AI_Output			(other, self, "DIA_Wolf_SHIP_15_00"); //NelÃ­bilo by se ti odsud vyplout na lodi?
 
 	if (MIS_BengarsHelpingSLD == LOG_SUCCESS)
 	&& (!Npc_IsDead (Bengar))
 	{
-	AI_Output			(self, other, "DIA_Wolf_SHIP_08_01"); //Ne, u ne. Koneènê jsem si našel práci. Moná nêkdy jindy.
+	AI_Output			(self, other, "DIA_Wolf_SHIP_08_01"); //Ne, uÅ¾ ne. KoneÄnÄ™ jsem si naÅ¡el prÃ¡ci. MoÅ¾nÃ¡ nÄ™kdy jindy.
 	wolf_SaidNo = TRUE;
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Wolf_SHIP_08_02"); //No jasnê, pojëme odsud. Mùu ti pomoct s obranou lodi. A kam máme namíâeno?
+	AI_Output			(self, other, "DIA_Wolf_SHIP_08_02"); //No jasnÄ™, pojÃ«me odsud. MÅ¯Å¾u ti pomoct s obranou lodi. A kam mÃ¡me namÃ­Ã¢eno?
 	MIS_BengarsHelpingSLD = LOG_OBSOLETE;
 	
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	                                             
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	                                             
-	B_LogEntry (TOPIC_Crew,"Vlk u má tohoto ostrova plné zuby a udêlal by cokoliv, jen aby se odsud dostal. Je to dobrı bojovník."); 
+	B_LogEntry (TOPIC_Crew,"Vlk uÅ¾ mÃ¡ tohoto ostrova plnÃ© zuby a udÄ™lal by cokoliv, jen aby se odsud dostal. Je to dobrÃ½ bojovnÃ­k."); 
 	};
 };
 
 ///////////////////////////////////////////////////////////////////////
-//Ich muß zu einer Insel nicht weit von dieser hier.
+//Ich muÃŸ zu einer Insel nicht weit von dieser hier.
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Wolf_KnowWhereEnemy		(C_INFO)
 {
@@ -757,28 +757,28 @@ func int DIA_Wolf_KnowWhereEnemy_Condition ()
 func void DIA_Wolf_KnowWhereEnemy_Info ()
 {
 	AI_Output			(other, self, "DIA_Wolf_KnowWhereEnemy_15_00"); //Chci se dostat na ostrov nedaleko odsud.
-	AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_01"); //No tak na co ještê èekáme? Na moâi tê mùu trochu pocvièit ve stâelbê z luku a kuše.
+	AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_01"); //No tak na co jeÅ¡tÄ™ ÄekÃ¡me? Na moÃ¢i tÄ™ mÅ¯Å¾u trochu pocviÄit ve stÃ¢elbÄ™ z luku a kuÅ¡e.
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Wolf_KnowWhereEnemy_15_02"); //Vlastnê jsem si zrovna uvêdomil, e u mám dost lidí.
-		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_03"); //(naštvanê) Tak TAKHLE to je! Nejdâív prudíš, aã se pohnu, a pak z toho nic není, co?
-		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_04"); //Jdi do hajzlu! Doufám, e se ta tvoje kocábka brzo potopí.
+		AI_Output			(other,self , "DIA_Wolf_KnowWhereEnemy_15_02"); //VlastnÄ™ jsem si zrovna uvÄ™domil, Å¾e uÅ¾ mÃ¡m dost lidÃ­.
+		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_03"); //(naÅ¡tvanÄ™) Tak TAKHLE to je! NejdÃ¢Ã­v prudÃ­Å¡, aÄƒ se pohnu, a pak z toho nic nenÃ­, co?
+		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_04"); //Jdi do hajzlu! DoufÃ¡m, Å¾e se ta tvoje kocÃ¡bka brzo potopÃ­.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Wolf_KnowWhereEnemy);
-		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"Musím o tom ještê trochu popâemıšlet.",DIA_Wolf_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"Vítej na palubê!",DIA_Wolf_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"MusÃ­m o tom jeÅ¡tÄ™ trochu popÃ¢emÃ½Å¡let.",DIA_Wolf_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"VÃ­tej na palubÄ™!",DIA_Wolf_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Wolf_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_00"); //Vítej na palubê!
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_01"); //Pâijë dolù do pâístavu, u brzo vyplujeme.
-	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_Yes_08_02"); //U jdu.
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_00"); //VÃ­tej na palubÄ™!
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_01"); //PÃ¢ijÃ« dolÅ¯ do pÃ¢Ã­stavu, uÅ¾ brzo vyplujeme.
+	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_Yes_08_02"); //UÅ¾ jdu.
 	
 	B_GivePlayerXP (XP_Crewmember_Success);                                                              
 	                                                                                                     
@@ -801,8 +801,8 @@ FUNC VOID DIA_Wolf_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Wolf_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_No_15_00"); //Musím o tom ještê trochu popâemıšlet.
-	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_No_08_01"); //Hele, víš, co si myslím? e se jenom tak vytahuješ. Nevêâím ti ani slovo, vysmahni!
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_No_15_00"); //MusÃ­m o tom jeÅ¡tÄ™ trochu popÃ¢emÃ½Å¡let.
+	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_No_08_01"); //Hele, vÃ­Å¡, co si myslÃ­m? Å½e se jenom tak vytahujeÅ¡. NevÄ™Ã¢Ã­m ti ani slovo, vysmahni!
 
 	Wolf_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Wolf_KnowWhereEnemy);
@@ -818,7 +818,7 @@ instance DIA_Wolf_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Wolf_LeaveMyShip_Condition;
 	information	 = 	DIA_Wolf_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Stejnê u mi nejsi k nièemu.";
+	description	 = 	"StejnÄ™ uÅ¾ mi nejsi k niÄemu.";
 };
 func int DIA_Wolf_LeaveMyShip_Condition ()
 {	
@@ -830,14 +830,14 @@ func int DIA_Wolf_LeaveMyShip_Condition ()
 };
 func void DIA_Wolf_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_LeaveMyShip_15_00"); //Stejnê u mi nejsi k nièemu.
-	AI_Output			(self, other, "DIA_Wolf_LeaveMyShip_08_01"); //Nejdâív mi dáš nadêji, a pak mê takhle odmítneš. Ty svinê, za tohle zaplatíš!
+	AI_Output			(other, self, "DIA_Wolf_LeaveMyShip_15_00"); //StejnÄ™ uÅ¾ mi nejsi k niÄemu.
+	AI_Output			(self, other, "DIA_Wolf_LeaveMyShip_08_01"); //NejdÃ¢Ã­v mi dÃ¡Å¡ nadÄ™ji, a pak mÄ™ takhle odmÃ­tneÅ¡. Ty svinÄ™, za tohle zaplatÃ­Å¡!
 	
 	Wolf_IsOnBoard	 = LOG_FAILED;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
-	Npc_ExchangeRoutine (self,"Zaèít"); 
+	Npc_ExchangeRoutine (self,"ZaÄÃ­t"); 
 };
 
 ///////////////////////////////////////////////////////////////////////

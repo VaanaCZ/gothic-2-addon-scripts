@@ -32,7 +32,7 @@ instance DIA_Girion_DI_Hallo		(C_INFO)
 	information	 = 	DIA_Girion_DI_Hallo_Info;
 	PERMANENT 	 =  TRUE;
 
-	description	 = 	"Je vöechno v po‚·dku?";
+	description	 = 	"Je v≈°echno v po√¢√°dku?";
 };
 func int DIA_Girion_DI_Hallo_Condition ()
 {	
@@ -43,20 +43,20 @@ func int DIA_Girion_DI_Hallo_Condition ()
 };
 func void DIA_Girion_DI_Hallo_Info ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_Hallo_15_00"); //Je vöechno v po‚·dku?
+	AI_Output			(other, self, "DIA_Girion_DI_Hallo_15_00"); //Je v≈°echno v po√¢√°dku?
 
 	if (ORkSturmDI == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_01"); //Sk‚eti jsou opravdu stateËnÌ, ûe se vydali proti mnÍ.
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_02"); //Jeden by ‚ekl, ûe majÌ dost rozumu na to, aby se postavili paladinovi z kr·lovskÈ str·ûe.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_01"); //Sk√¢eti jsou opravdu stateƒçn√≠, ≈æe se vydali proti mnƒô.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_02"); //Jeden by √¢ekl, ≈æe maj√≠ dost rozumu na to, aby se postavili paladinovi z kr√°lovsk√© str√°≈æe.
 		}
 	else if (hero.guild == GIL_PAL)
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_03"); //¬ekl bych. Zabere ti tv˘j ˙kol tady na ˙tesu hodnÍ Ëasu?
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_03"); //√Çekl bych. Zabere ti tv≈Øj √∫kol tady na √∫tesu hodnƒô ƒçasu?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_04"); //Nechovej se ke mnÍ jako k idiotovi. UdÍlej, co musÌö, a p‚edej mi velenÌ lodi.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_04"); //Nechovej se ke mnƒô jako k idiotovi. Udƒôlej, co mus√≠≈°, a p√¢edej mi velen√≠ lodi.
 		};
 };
 
@@ -70,7 +70,7 @@ INSTANCE DIA_Girion_DI_Teach(C_INFO)
 	condition	= DIA_Girion_DI_Teach_Condition;
 	information	= DIA_Girion_DI_Teach_Info;
 	permanent	= TRUE;
-	description = "Kdyû mÍ vycviËÌö, budeme odsud moci rychleji vypadnout!";
+	description = "Kdy≈æ mƒô vycviƒç√≠≈°, budeme odsud moci rychleji vypadnout!";
 };                       
 
 FUNC INT DIA_Girion_DI_Teach_Condition()
@@ -83,8 +83,8 @@ FUNC INT DIA_Girion_DI_Teach_Condition()
  
 FUNC VOID DIA_Girion_DI_Teach_Info()
 {	
-	AI_Output (other,self 	,"DIA_Girion_DI_Teach_15_00"); //UË mÍ, pak se odsud dostaneme rychleji.
-	AI_Output (self ,other 	,"DIA_Girion_DI_Teach_08_01"); //Zd· se, ûe nem·m na v˝bÍr.
+	AI_Output (other,self 	,"DIA_Girion_DI_Teach_15_00"); //Uƒç mƒô, pak se odsud dostaneme rychleji.
+	AI_Output (self ,other 	,"DIA_Girion_DI_Teach_08_01"); //Zd√° se, ≈æe nem√°m na v√Ωbƒôr.
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -104,7 +104,7 @@ func void DIA_Girion_DI_Teach_CROSSBOW_1()
 {
 	if B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 1, 90)
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_1_08_00"); //Nikdy moc nezvedej lokty. Budeö pak mÌt tuhou muöku a z·konitÍ zkroutÌö zbra‡.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_1_08_00"); //Nikdy moc nezvedej lokty. Bude≈° pak m√≠t tuhou mu≈°ku a z√°konitƒô zkrout√≠≈° zbra≈ï.
 	};
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
@@ -123,7 +123,7 @@ func void DIA_Girion_DI_Teach_CROSSBOW_5()
 {
 	if B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 5, 90)
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_5_08_00"); //P‚ed v˝st‚elem si vûdycky uvolni levou ruku. Bude se ti pak lÈpe mÌ‚it.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_5_08_00"); //P√¢ed v√Ωst√¢elem si v≈ædycky uvolni levou ruku. Bude se ti pak l√©pe m√≠√¢it.
 	};
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
@@ -140,7 +140,7 @@ FUNC VOID DIA_Girion_DI_Teach_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 90))
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_1_08_00"); //Ost‚Ì musÌ letÍt vÍtrem jako r·kos povÍt‚Ìm.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_1_08_00"); //Ost√¢√≠ mus√≠ letƒôt vƒôtrem jako r√°kos povƒôt√¢√≠m.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -157,7 +157,7 @@ FUNC VOID DIA_Girion_DI_Teach_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 90))
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_5_08_00"); //Svou sÌlu pouûÌvej s rozmyslem. Kdyû se bezhlavÍ rozbÍhneö proti nep‚Ìteli, moc ˙spÍch˘ nesklidÌö.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_5_08_00"); //Svou s√≠lu pou≈æ√≠vej s rozmyslem. Kdy≈æ se bezhlavƒô rozbƒôhne≈° proti nep√¢√≠teli, moc √∫spƒôch≈Ø nesklid√≠≈°.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -174,7 +174,7 @@ FUNC VOID DIA_Girion_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 90))
 	{
-		AI_Output(self,other,"DIA_DIA_Girion_DI_Teach_2H_1_08_00"); //NemÍj p‚Ìliö pevnÈ sev‚enÌ, abys mohl p‚esnÍ trefit.
+		AI_Output(self,other,"DIA_DIA_Girion_DI_Teach_2H_1_08_00"); //Nemƒôj p√¢√≠li≈° pevn√© sev√¢en√≠, abys mohl p√¢esnƒô trefit.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -191,7 +191,7 @@ FUNC VOID DIA_Girion_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 90))
 	{
-		AI_Output(self,other,"DIA_Girion_DI_Teach_2H_5_08_00"); //Nezapome‡ se br·nit. NejlepöÌ obranou je vyh˝bat se protivnÌkov˝m ran·m.
+		AI_Output(self,other,"DIA_Girion_DI_Teach_2H_5_08_00"); //Nezapome≈ï se br√°nit. Nejlep≈°√≠ obranou je vyh√Ωbat se protivn√≠kov√Ωm ran√°m.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -220,7 +220,7 @@ instance DIA_Girion_DI_OrcEliteRing		(C_INFO)
 	information	 = 	DIA_Girion_DI_OrcEliteRing_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"M·m prsten sk‚etÌho v˘dce.";
+	description	 = 	"M√°m prsten sk√¢et√≠ho v≈Ødce.";
 };
 
 func int DIA_Girion_DI_OrcEliteRing_Condition ()
@@ -234,24 +234,24 @@ func int DIA_Girion_DI_OrcEliteRing_Condition ()
 var int DIA_Girion_DI_OrcEliteRing_OneTime;
 func void DIA_Girion_DI_OrcEliteRing_Info ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_15_00"); //M·m prsten sk‚etÌho v˘dce.
+	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_15_00"); //M√°m prsten sk√¢et√≠ho v≈Ødce.
 
 	if (DIA_Girion_DI_OrcEliteRing_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_01"); //MyslÌm, ûe by s tÌm mohl lord Hagen nÍco udÍlat.
+		AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_01"); //Mysl√≠m, ≈æe by s t√≠m mohl lord Hagen nƒôco udƒôlat.
 		DIA_Girion_DI_OrcEliteRing_OneTime = TRUE;
 	};
 
 	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_02"); //Dej mi ho. Donesu ho lordu Hagenovi.
 
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
-	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Radöi si ho nech·m.", DIA_Girion_DI_OrcEliteRing_behalten );
+	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Rad≈°i si ho nech√°m.", DIA_Girion_DI_OrcEliteRing_behalten );
 	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Na, vem si tenhle.", DIA_Girion_DI_OrcEliteRing_geben );
 };
 func void DIA_Girion_DI_OrcEliteRing_geben ()
 {
 	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_geben_15_00"); //Na, vem si tenhle.
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_geben_08_01"); //DÌky. StejnÍ si nemyslÌm, ûe by ti mohl k nÍËemu b˝t.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_geben_08_01"); //D√≠ky. Stejnƒô si nemysl√≠m, ≈æe by ti mohl k nƒôƒçemu b√Ωt.
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
 	B_GiveInvItems (other, self, ItRi_OrcEliteRing,1);
 	B_GivePlayerXP (XP_Ambient);
@@ -259,8 +259,8 @@ func void DIA_Girion_DI_OrcEliteRing_geben ()
 
 func void DIA_Girion_DI_OrcEliteRing_behalten ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_behalten_15_00"); //Radöi si ho nech·m.
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_behalten_08_01"); //Jak myslÌö. StejnÍ ti k niËemu nebude.
+	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_behalten_15_00"); //Rad≈°i si ho nech√°m.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_behalten_08_01"); //Jak mysl√≠≈°. Stejnƒô ti k niƒçemu nebude.
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
 };
 
@@ -275,7 +275,7 @@ instance DIA_Girion_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Girion_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"TeÎ m˘ûeme koneËnÍ vyrazit.";
+	description = 	"Te√´ m≈Ø≈æeme koneƒçnƒô vyrazit.";
 };
 
 func int DIA_Girion_DI_UndeadDragonDead_Condition ()
@@ -289,30 +289,30 @@ func int DIA_Girion_DI_UndeadDragonDead_Condition ()
 var int DIA_Girion_DI_UndeadDragonDead_OneTime;
 func void DIA_Girion_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_00"); //TeÎ m˘ûeme koneËnÍ vyrazit.
-	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_01"); //Bylo naËase. Uû jsem si myslel, ûe tady na tomhle ˙tesu zplesnivÌm.
+	AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_00"); //Te√´ m≈Ø≈æeme koneƒçnƒô vyrazit.
+	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_01"); //Bylo naƒçase. U≈æ jsem si myslel, ≈æe tady na tomhle √∫tesu zplesniv√≠m.
 
 	if (DIA_Girion_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_02"); //TeÎ mi okamûitÍ tu loÎ p‚edej.
-			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_03"); //JeötÍ nejsme v Khorinidu. A up‚ÌmnÍ ‚eËeno, zp·tky do Khorinidu se mi moc nechce.
-			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_04"); //Uû jsem tam byl dost dlouho.
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_05"); //Myslel jsem si to. Ale teÎ nenÌ ani spr·vn˝ Ëas, ani spr·vnÈ mÌsto, abychom si nÍco takovÈho vyjas‡ovali. Probereme to, aû budeme zp·tky na lodi.
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_06"); //No a co. StejnÍ jsem r·d, ûe tÍ m·m zp·tky na palubÍ v jednom kuse.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_02"); //Te√´ mi okam≈æitƒô tu lo√´ p√¢edej.
+			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_03"); //Je≈°tƒô nejsme v Khorinidu. A up√¢√≠mnƒô √¢eƒçeno, zp√°tky do Khorinidu se mi moc nechce.
+			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_04"); //U≈æ jsem tam byl dost dlouho.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_05"); //Myslel jsem si to. Ale te√´ nen√≠ ani spr√°vn√Ω ƒças, ani spr√°vn√© m√≠sto, abychom si nƒôco takov√©ho vyjas≈ïovali. Probereme to, a≈æ budeme zp√°tky na lodi.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_06"); //No a co. Stejnƒô jsem r√°d, ≈æe tƒô m√°m zp√°tky na palubƒô v jednom kuse.
 			
 			if (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_07"); //Jsi skuteËn˝ Innos˘v v·leËnÌk. Uû o tom nem·m û·dn˝ch pochyb. Jsem r·d, ûe tÍ m·me na svÈ stranÍ.
+				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_07"); //Jsi skuteƒçn√Ω Innos≈Øv v√°leƒçn√≠k. U≈æ o tom nem√°m ≈æ√°dn√Ωch pochyb. Jsem r√°d, ≈æe tƒô m√°me na sv√© stranƒô.
 			}
 			else
 			{
-				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_08"); //I kdyû jsi lump, zachoval ses nakonec spr·vnÍ.
+				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_08"); //I kdy≈æ jsi lump, zachoval ses nakonec spr√°vnƒô.
 			};
 			
 			DIA_Girion_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 
-	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_09"); //Dobr·. TeÎ jdi za kapit·nem, a„ n·s odsud vyvede.
+	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_09"); //Dobr√°. Te√´ jdi za kapit√°nem, aƒÉ n√°s odsud vyvede.
 	AI_StopProcessInfos (self);
 };
 

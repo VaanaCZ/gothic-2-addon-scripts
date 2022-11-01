@@ -41,11 +41,11 @@ FUNC INT DIA_Sengrath_Hello_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //Vêdêl jsem to! Vêdêl jsem, e se to nêkomu musí podaâit!
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Prošel jsi skrz prùsmyk? Náš posel tedy proklouzl?
-	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //Ne, posel se pâes prùsmyk nedostal. Pâišel jsem na rozkaz lorda Hagena.
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(zavrèí) Prokletí skâeti...
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //No, velitel Garond si s tebou urèitê bude chtít promluvit. Najdeš ho v té velké budovê hlídané dvêma rytíâi.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //VÄ™dÄ™l jsem to! VÄ™dÄ™l jsem, Å¾e se to nÄ™komu musÃ­ podaÃ¢it!
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //ProÅ¡el jsi skrz prÅ¯smyk? NÃ¡Å¡ posel tedy proklouzl?
+	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //Ne, posel se pÃ¢es prÅ¯smyk nedostal. PÃ¢iÅ¡el jsem na rozkaz lorda Hagena.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(zavrÄÃ­) ProkletÃ­ skÃ¢eti...
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //No, velitel Garond si s tebou urÄitÄ™ bude chtÃ­t promluvit. NajdeÅ¡ ho v tÃ© velkÃ© budovÄ™ hlÃ­danÃ© dvÄ™ma rytÃ­Ã¢i.
 };
 // ************************************************************
 // 			  	Equipment 
@@ -57,7 +57,7 @@ INSTANCE DIA_Sengrath_Equipment (C_INFO)
 	condition	= DIA_Sengrath_Equipment_Condition;
 	information	= DIA_Sengrath_Equipment_Info;
 	permanent	= FALSE;
-	description = "Kde tady najdu nêjakou vıbavu?";
+	description = "Kde tady najdu nÄ™jakou vÃ½bavu?";
 };                       
 
 FUNC INT DIA_Sengrath_Equipment_Condition()
@@ -66,13 +66,13 @@ FUNC INT DIA_Sengrath_Equipment_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Equipment_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Kde tady najdu nêjakou vıbavu?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //Zbranê vydává Tandor. Za všechno ostatní zodpovídá správce Engor.
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //A co magické vêci?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //Máme kouzelné svitky. Pokud bys nêjaké chtêl, obraã se na mê.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Kde tady najdu nÄ™jakou vÃ½bavu?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //ZbranÄ™ vydÃ¡vÃ¡ Tandor. Za vÅ¡echno ostatnÃ­ zodpovÃ­dÃ¡ sprÃ¡vce Engor.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //A co magickÃ© vÄ™ci?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //MÃ¡me kouzelnÃ© svitky. Pokud bys nÄ™jakÃ© chtÄ™l, obraÄƒ se na mÄ™.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Sengrath na hradê prodává magické svitky.");
+	B_LogEntry (TOPIC_Trader_OC,"Sengrath na hradÄ™ prodÃ¡vÃ¡ magickÃ© svitky.");
 };
 // ************************************************************
 // 			  	Lehrer
@@ -84,7 +84,7 @@ INSTANCE DIA_Sengrath_Perm (C_INFO)
 	condition	= DIA_Sengrath_Perm_Condition;
 	information	= DIA_Sengrath_Perm_Info;
 	permanent	= FALSE;
-	description = "Kdo mê tady mùe nêco nauèit?";
+	description = "Kdo mÄ™ tady mÅ¯Å¾e nÄ™co nauÄit?";
 };                       
 
 FUNC INT DIA_Sengrath_Perm_Condition()
@@ -93,19 +93,19 @@ FUNC INT DIA_Sengrath_Perm_Condition()
 };
 FUNC VOID DIA_Sengrath_Perm_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //Kdo mê tady mùe nêco nauèit?
+	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //Kdo mÄ™ tady mÅ¯Å¾e nÄ™co nauÄit?
 	
 	if (other.guild == GIL_KDF)
 	&& (Kapitel == 2)
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_01"); //Promluv si s Miltenem - je to náš jedinı mág.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_01"); //Promluv si s Miltenem - je to nÃ¡Å¡ jedinÃ½ mÃ¡g.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Zeptej se Kerolotha. Uèí chlapce bojovat s meèem. Moná by mohl nêco nauèit i tebe.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Zeptej se Kerolotha. UÄÃ­ chlapce bojovat s meÄem. MoÅ¾nÃ¡ by mohl nÄ™co nauÄit i tebe.
 		
 		Log_CreateTopic (TOPIC_Teacher_OC,LOG_NOTE);
-		B_LogEntry (TOPIC_Teacher_OC,"Keroloth na hradê trénuje bojovníky s meèem.");
+		B_LogEntry (TOPIC_Teacher_OC,"Keroloth na hradÄ™ trÃ©nuje bojovnÃ­ky s meÄem.");
 	};
 };
 // ************************************************************
@@ -119,7 +119,7 @@ INSTANCE DIA_Sengrath_Scrolls (C_INFO)
 	information	= DIA_Sengrath_Scrolls_Info;
 	permanent	= TRUE;
 	trade		= TRUE;
-	description = "Uka mi ty svitky.";
+	description = "UkaÅ¾ mi ty svitky.";
 
 };                       
 
@@ -133,7 +133,7 @@ FUNC INT DIA_Sengrath_Scrolls_Condition()
 FUNC VOID DIA_Sengrath_Scrolls_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Sengrath_Scrolls_15_00"); //Uka mi ty svitky.
+	AI_Output (other ,self,"DIA_Sengrath_Scrolls_15_00"); //UkaÅ¾ mi ty svitky.
 };
 
 // ************************************************************

@@ -4,7 +4,7 @@
 //****************************************************************************
 INSTANCE ItWr_SaturasFirstMessage_Addon_Sealed	(C_Item)
 {
-	name 				=	"ZapeËetÍn· zpr·va";
+	name 				=	"Zapeƒçetƒôn√° zpr√°va";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -16,7 +16,7 @@ INSTANCE ItWr_SaturasFirstMessage_Addon_Sealed	(C_Item)
 	on_state[0]			=   Use_SaturasFirstMessage_Sealed;
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
-	TEXT[2]				=   "Tato zpr·va byla peËlivÍ zapeËetÍna.";
+	TEXT[2]				=   "Tato zpr√°va byla peƒçlivƒô zapeƒçetƒôna.";
 
 };
 var int Use_SaturasFirstMessage_OneTime;
@@ -28,18 +28,18 @@ func void Use_SaturasFirstMessage ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 	); 
 					Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
-					Doc_PrintLine	( nDocID,  0, "Mil˝ Vatrasi,"					);
-					Doc_PrintLines	( nDocID,  0, "Dostali jsme se aû k port·lu. MÍl jsi pravdu,"					);
-					Doc_PrintLines	( nDocID,  0, "opravdu to vypad·, ûe ölo o stoupence Adanovy. ProsÌm, vezmi si k ruce mÈ pozn·mky a jeötÍ jednou to ovÍ‚."					);
-					Doc_PrintLines	( nDocID,  0, "Uû p·r dnÌ jsme nezahlÈdli û·dnou z tÍch podivn˝ch kamenn˝ch bytostÌ."					);
-					Doc_PrintLines	( nDocID,  0, "Ale zemÍ se p‚esto st·le bezd˘vodnÍ t‚ese."					);
-					Doc_PrintLines	( nDocID,  0, "MyslÌm, ûe naöe studia n·m brzy p‚inesou dalöÌ osvÌcenÌ."					);
-					Doc_PrintLines	( nDocID,  0, "Ten ornament, kter˝ jsme naöli, je mnohem d˘leûitÍjöÌ, neû jsme si prve mysleli. NejspÌö se jedn· o nÍjak˝ klÌËov˝ artefakt. Ale bohuûel nenÌ dokonËen - musÌme jej d·le studovat a zjistit, k Ëemu skuteËnÍ slouûil."					);
-					Doc_PrintLines	( nDocID,  0, "Vyöli prosÌm nÍkterÈ z dÌtek 'kruhu vody', aby n·m jej p‚ineslo. Ale pokud moûno tÌm nepovÍ‚uj Cavalorna."					);
-					Doc_PrintLines	( nDocID,  0, "MyslÌm, ûe vÍtöÌ ˙kol neû doruËenÌ tohoto dopisu by byl nad jeho sÌly."					);
-					Doc_PrintLines	( nDocID,  0, "Douf·m, ûe dÍl·me spr·vnou vÍc."					);
+					Doc_PrintLine	( nDocID,  0, "Mil√Ω Vatrasi,"					);
+					Doc_PrintLines	( nDocID,  0, "Dostali jsme se a≈æ k port√°lu. Mƒôl jsi pravdu,"					);
+					Doc_PrintLines	( nDocID,  0, "opravdu to vypad√°, ≈æe ≈°lo o stoupence Adanovy. Pros√≠m, vezmi si k ruce m√© pozn√°mky a je≈°tƒô jednou to ovƒô√¢."					);
+					Doc_PrintLines	( nDocID,  0, "U≈æ p√°r dn√≠ jsme nezahl√©dli ≈æ√°dnou z tƒôch podivn√Ωch kamenn√Ωch bytost√≠."					);
+					Doc_PrintLines	( nDocID,  0, "Ale zemƒô se p√¢esto st√°le bezd≈Øvodnƒô t√¢ese."					);
+					Doc_PrintLines	( nDocID,  0, "Mysl√≠m, ≈æe na≈°e studia n√°m brzy p√¢inesou dal≈°√≠ osv√≠cen√≠."					);
+					Doc_PrintLines	( nDocID,  0, "Ten ornament, kter√Ω jsme na≈°li, je mnohem d≈Øle≈æitƒôj≈°√≠, ne≈æ jsme si prve mysleli. Nejsp√≠≈° se jedn√° o nƒôjak√Ω kl√≠ƒçov√Ω artefakt. Ale bohu≈æel nen√≠ dokonƒçen - mus√≠me jej d√°le studovat a zjistit, k ƒçemu skuteƒçnƒô slou≈æil."					);
+					Doc_PrintLines	( nDocID,  0, "Vy≈°li pros√≠m nƒôkter√© z d√≠tek 'kruhu vody', aby n√°m jej p√¢ineslo. Ale pokud mo≈æno t√≠m nepovƒô√¢uj Cavalorna."					);
+					Doc_PrintLines	( nDocID,  0, "Mysl√≠m, ≈æe vƒôt≈°√≠ √∫kol ne≈æ doruƒçen√≠ tohoto dopisu by byl nad jeho s√≠ly."					);
+					Doc_PrintLines	( nDocID,  0, "Douf√°m, ≈æe dƒôl√°me spr√°vnou vƒôc."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Mil˝ Saturasi,"					);
+					Doc_PrintLine	( nDocID,  0, "Mil√Ω Saturasi,"					);
 					Doc_Show		( nDocID );
 		
 		if (Use_SaturasFirstMessage_OneTime == FALSE)
@@ -47,7 +47,7 @@ func void Use_SaturasFirstMessage ()
 		{
 			Log_CreateTopic (TOPIC_Addon_KDW, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Addon_KDW, LOG_RUNNING);
-			B_LogEntry (TOPIC_Addon_KDW,"Tu zpr·vu, kterou mÍl Cavalorn doruËit vodnÌmu m·govi Vatrasovi, jsem sebral jednomu banditovi. Takûe teÎ je to na mnÍ."); 
+			B_LogEntry (TOPIC_Addon_KDW,"Tu zpr√°vu, kterou mƒôl Cavalorn doruƒçit vodn√≠mu m√°govi Vatrasovi, jsem sebral jednomu banditovi. Tak≈æe te√´ je to na mnƒô."); 
 			Use_SaturasFirstMessage_OneTime = TRUE;
 		};
 
@@ -55,14 +55,14 @@ func void Use_SaturasFirstMessage ()
 		{
 			Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-			Log_AddEntry (TOPIC_Addon_RingOfWater,"Jedna zdejöÌ komunita si ‚Ìk· 'kruh vody' a v jejÌm Ëele podle vöeho stojÌ vodnÌ m·govÈ."); 
+			Log_AddEntry (TOPIC_Addon_RingOfWater,"Jedna zdej≈°√≠ komunita si √¢√≠k√° 'kruh vody' a v jej√≠m ƒçele podle v≈°eho stoj√≠ vodn√≠ m√°gov√©."); 
 		};
 
 		if (SC_IsRanger == FALSE)
 		{
 			Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-			Log_AddEntry (TOPIC_Addon_RingOfWater,"Cavalorn pat‚il pr·vÍ k tomutu 'kruhu vody'."); 
+			Log_AddEntry (TOPIC_Addon_RingOfWater,"Cavalorn pat√¢il pr√°vƒô k tomutu 'kruhu vody'."); 
 		};
 	
 		SC_KnowsRanger = TRUE;
@@ -76,12 +76,12 @@ func void Use_SaturasFirstMessage_Sealed ()
 
 //****************************************************************************
 //				Cavalorn's Brief an Vatras von Saturas
-//				Das Siegel wurde geˆffnet		
+//				Das Siegel wurde ge√∂ffnet		
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItWr_SaturasFirstMessage_Addon	(C_Item)
 {
-	name 				=	"Otev‚en· zpr·va";
+	name 				=	"Otev√¢en√° zpr√°va";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -93,12 +93,12 @@ INSTANCE ItWr_SaturasFirstMessage_Addon	(C_Item)
 	on_state[0]			=   Use_SaturasFirstMessage;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[2]				=   "Saturas˘v dopis Vatrasovi";
+	TEXT[2]				=   "Saturas≈Øv dopis Vatrasovi";
 };
 
 
 //****************************************************************************
-//				Portalschl¸sselbruchst¸ck
+//				Portalschl√ºsselbruchst√ºck
 //			---------------------------------------------
 //****************************************************************************
 
@@ -116,7 +116,7 @@ INSTANCE  ItMi_Ornament_Addon (C_ITEM)
 
 	description			= 	name;
 
-	TEXT	[0]			=	"⁄lomek velkÈho zdobenÈho prstenu";
+	TEXT	[0]			=	"√ölomek velk√©ho zdoben√©ho prstenu";
 
 	INV_ZBIAS			= 	INVCAM_ENTF_MISC5_STANDARD;
 };
@@ -135,7 +135,7 @@ INSTANCE  ItMi_Ornament_Addon_Vatras (C_ITEM) //Joly:  gibt Vatras dem SC um ihn
 
 	description			= 	name;
 
-	TEXT	[0]			=	"⁄lomek velkÈho zdobenÈho prstenu";
+	TEXT	[0]			=	"√ölomek velk√©ho zdoben√©ho prstenu";
 
 	INV_ZBIAS			= 	INVCAM_ENTF_MISC5_STANDARD;
 };
@@ -162,8 +162,8 @@ instance ItWr_Map_NewWorld_Ornaments_Addon (C_Item)
 	on_state[0]	= Use_Map_NewWorld_Ornaments;
 
 	description	= name;
-	TEXT[0]		= "Na tÈto mapÍ jsou vyznaËena mÌsta,";
-	TEXT[1]		= "kde se podle Nefaria nach·zejÌ chybÍjÌcÌ ornamenty.";
+	TEXT[0]		= "Na t√©to mapƒô jsou vyznaƒçena m√≠sta,";
+	TEXT[1]		= "kde se podle Nefaria nach√°zej√≠ chybƒôj√≠c√≠ ornamenty.";
 	TEXT[2]		= "";
 	TEXT[5]		= NAME_Value;
 	COUNT[5]	= value;
@@ -194,7 +194,7 @@ instance ItWr_Map_NewWorld_Ornaments_Addon (C_Item)
 
 instance ItWr_Map_NewWorld_Dexter (C_Item)
 {
-	name 		= "Mapa ˙zemÌ Khorinidu";  // 
+	name 		= "Mapa √∫zem√≠ Khorinidu";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -208,8 +208,8 @@ instance ItWr_Map_NewWorld_Dexter (C_Item)
 	on_state[0]	= Use_Map_NewWorld_Dexter;
 
 	description	= name;
-	TEXT[0]		= "Skip mi na mapÍ vyznaËil,";
-	TEXT[1]		= "kde najdu n·ËelnÌka bandit˘.";
+	TEXT[0]		= "Skip mi na mapƒô vyznaƒçil,";
+	TEXT[1]		= "kde najdu n√°ƒçeln√≠ka bandit≈Ø.";
 	TEXT[2]		= "Dexter.";
 	TEXT[5]		= NAME_Value;
 	COUNT[5]	= value;
@@ -239,7 +239,7 @@ instance ItWr_Map_NewWorld_Dexter (C_Item)
 
 PROTOTYPE Rangerring_Prototype (C_ITEM)
 {
-	name 					=	"AkvamarÌnov˝ prsten";
+	name 					=	"Akvamar√≠nov√Ω prsten";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_RING|ITEM_MISSION; //Joly:kein Multiitem. Die ringe sind individuell
@@ -253,7 +253,7 @@ PROTOTYPE Rangerring_Prototype (C_ITEM)
 	on_equip				=	Equip_ItRi_Ranger_Addon;
 	on_unequip				=	UnEquip_ItRi_Ranger_Addon;
 
-	description				= "Pozn·vacÌ znamenÌ 'kruhu vody'.";
+	description				= "Pozn√°vac√≠ znamen√≠ 'kruhu vody'.";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -296,18 +296,18 @@ FUNC VOID UnEquip_ItRi_Ranger_Addon ()
 //Lares Ring
 INSTANCE ItRi_Ranger_Lares_Addon (Rangerring_Prototype)
 {
-	TEXT[1]					= "Tento prsten pat‚i Laresovi";
+	TEXT[1]					= "Tento prsten pat√¢i Laresovi";
 };
 
 //PCs Ring
 INSTANCE ItRi_Ranger_Addon (Rangerring_Prototype)
 {
-	TEXT[1]					= "Tento prsten pat‚Ì mnÍ";
+	TEXT[1]					= "Tento prsten pat√¢√≠ mnƒô";
 };
 //Lance Ring
 INSTANCE ItRi_LanceRing (Rangerring_Prototype)
 {
-	TEXT[1]					= "Tento prsten n·leûÌ Lanceovi";
+	TEXT[1]					= "Tento prsten n√°le≈æ√≠ Lanceovi";
 };
 
 
@@ -319,7 +319,7 @@ INSTANCE ItRi_LanceRing (Rangerring_Prototype)
 
 INSTANCE ItMi_PortalRing_Addon (C_Item)
 {
-	name 				=	"Zdoben˝ prsten";
+	name 				=	"Zdoben√Ω prsten";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -329,17 +329,17 @@ INSTANCE ItMi_PortalRing_Addon (C_Item)
 	visual 				=	"ItMi_PortalRing_01.3DS"; 
 	material 			=	MAT_STONE;
 
-	description			= 	"Tento prsten otevÌr· port·l";
+	description			= 	"Tento prsten otev√≠r√° port√°l";
 	INV_ZBIAS			= 	INVCAM_ENTF_MISC3_STANDARD;
 };
 
 //**********************************************************************************
-//	Empfehlungsschreiben f¸r Andre, Miliz zu werden (von Martin)
+//	Empfehlungsschreiben f√ºr Andre, Miliz zu werden (von Martin)
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_Martin_MilizEmpfehlung_Addon		(C_Item)
 {
-	name 				=	"Martin˘v doporuËujÌcÌ dopis";
+	name 				=	"Martin≈Øv doporuƒçuj√≠c√≠ dopis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -350,10 +350,10 @@ INSTANCE ItWr_Martin_MilizEmpfehlung_Addon		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_MartinMilizEmpfehlung_Addon;
 	scemeName			=	"MAP";
-	description			=  	"DoporuËujÌcÌ dopis pro lorda Andreho";
+	description			=  	"Doporuƒçuj√≠c√≠ dopis pro lorda Andreho";
 	
-	TEXT[2]				= 	"Tento dopis by mi mÍl pomoci";
-	TEXT[3]				= 	"p‚i p‚ijetÌ do ‚ad domobrany.";
+	TEXT[2]				= 	"Tento dopis by mi mƒôl pomoci";
+	TEXT[3]				= 	"p√¢i p√¢ijet√≠ do √¢ad domobrany.";
 
 	
 };
@@ -370,14 +370,14 @@ func void Use_MartinMilizEmpfehlung_Addon ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "Velev·ûen˝ lorde Andre,"								);
+					Doc_PrintLines	(nDocID,  0, "Velev√°≈æen√Ω lorde Andre,"								);
 					Doc_PrintLines	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "Spolu s tÌmto dopisem k V·m posÌl·m i novÈho Ëlena domobrany.");
-					Doc_PrintLines	(nDocID,  0, "Uû nÍkolikr·t mi pomohl v r˘zn˝ch obtÌûn˝ch a d˘leûit˝ch z·leûitostech.");
-					Doc_PrintLines	(nDocID,  0, "Proto se domnÌv·m, ûe stejnÍ dob‚e bude chr·nit kr·le i obËany tohoto kr·snÈho mÍsta.");
-					Doc_PrintLine	(nDocID,  0, "Nech„ Innos ûehn· kr·li!"							);
+					Doc_PrintLines	(nDocID,  0, "Spolu s t√≠mto dopisem k V√°m pos√≠l√°m i nov√©ho ƒçlena domobrany.");
+					Doc_PrintLines	(nDocID,  0, "U≈æ nƒôkolikr√°t mi pomohl v r≈Øzn√Ωch obt√≠≈æn√Ωch a d≈Øle≈æit√Ωch z√°le≈æitostech.");
+					Doc_PrintLines	(nDocID,  0, "Proto se domn√≠v√°m, ≈æe stejnƒô dob√¢e bude chr√°nit kr√°le i obƒçany tohoto kr√°sn√©ho mƒôsta.");
+					Doc_PrintLine	(nDocID,  0, "NechƒÉ Innos ≈æehn√° kr√°li!"							);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "     VrchnÌ intendant Martin"						);
+					Doc_PrintLine	(nDocID,  0, "     Vrchn√≠ intendant Martin"						);
 					Doc_Show		(nDocID);
 		
 };
@@ -415,7 +415,7 @@ func void Use_RavensKidnapperMission_Addon ()
  	{
 	 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_WhoStolePeople,"Tak teÎ uû to m·m ËernÈ na bÌlÈm. Za tÍmi ˙nosy khorinidsk˝ch obyvatel vÍzÌ b˝val˝ rudobaron Havran. Skr˝v· se kdesi za horami severov˝chodnÍ od mÍsta. Tento dokument by mÍl vidÍt Vatras."); 
+		B_LogEntry (TOPIC_Addon_WhoStolePeople,"Tak te√´ u≈æ to m√°m ƒçern√© na b√≠l√©m. Za tƒômi √∫nosy khorinidsk√Ωch obyvatel vƒôz√≠ b√Ωval√Ω rudobaron Havran. Skr√Ωv√° se kdesi za horami severov√Ωchodnƒô od mƒôsta. Tento dokument by mƒôl vidƒôt Vatras."); 
 		Use_RavensKidnapperMission_Addon_OneTime = TRUE;
 	};
 
@@ -430,12 +430,12 @@ func void Use_RavensKidnapperMission_Addon ()
 				Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
 				Doc_PrintLines	(nDocID,  0, "Dextere, ty jeden hajzle!");
 				Doc_PrintLine	(nDocID,  0, ""														);
-				Doc_PrintLines	(nDocID,  0, "Kdyû jsem byl jeötÍ rudobaronem, nebyl jsi tak dÍsnÍ nespolehliv˝!");
-				Doc_PrintLines	(nDocID,  0, "Jestli v nejbliûöÌ dobÍ neuneseö z Khorinidu nÍjak˝ dalöÌ lidi a nepoöleö mi je, Ëekaj tÍ v·ûn˝ potÌûe s hochy z naöÌ z·kladny.");
-				Doc_PrintLines	(nDocID,  0, "NutnÍ pot‚ebuju dalöÌ otroky, nebo budu mÌt brzo na krku vzpouru. A ty urËitÍ vÌö, co to znamen·, viÎ?");
-				Doc_PrintLines	(nDocID,  0, "Uû jsem se skoro dostal do chr·mu, takûe teÎ si rozhodnÍ nem˘ûu dovolit û·dn˝ takov˝hle potÌûe.");
-				Doc_PrintLines	(nDocID,  0, "A jeötÍ jeden problÈm:"								);
-				Doc_PrintLines	(nDocID,  0, "D‚Ìv nebo pozdÍjc se musÌme dostat p‚es ty vysok˝ hory severov˝chodnÍ od Khorinidu. Pir·ti uû n·s moc dlouho p‚epravovat nebudou, jestli jim p‚estaneme platit.");
+				Doc_PrintLines	(nDocID,  0, "Kdy≈æ jsem byl je≈°tƒô rudobaronem, nebyl jsi tak dƒôsnƒô nespolehliv√Ω!");
+				Doc_PrintLines	(nDocID,  0, "Jestli v nejbli≈æ≈°√≠ dobƒô neunese≈° z Khorinidu nƒôjak√Ω dal≈°√≠ lidi a nepo≈°le≈° mi je, ƒçekaj tƒô v√°≈æn√Ω pot√≠≈æe s hochy z na≈°√≠ z√°kladny.");
+				Doc_PrintLines	(nDocID,  0, "Nutnƒô pot√¢ebuju dal≈°√≠ otroky, nebo budu m√≠t brzo na krku vzpouru. A ty urƒçitƒô v√≠≈°, co to znamen√°, vi√´?");
+				Doc_PrintLines	(nDocID,  0, "U≈æ jsem se skoro dostal do chr√°mu, tak≈æe te√´ si rozhodnƒô nem≈Ø≈æu dovolit ≈æ√°dn√Ω takov√Ωhle pot√≠≈æe.");
+				Doc_PrintLines	(nDocID,  0, "A je≈°tƒô jeden probl√©m:"								);
+				Doc_PrintLines	(nDocID,  0, "D√¢√≠v nebo pozdƒôjc se mus√≠me dostat p√¢es ty vysok√Ω hory severov√Ωchodnƒô od Khorinidu. Pir√°ti u≈æ n√°s moc dlouho p√¢epravovat nebudou, jestli jim p√¢estaneme platit.");
 				Doc_PrintLine	(nDocID,  0, ""														);
 				Doc_PrintLine	(nDocID,  0, "     Havran"											);
 				Doc_Show		(nDocID);
@@ -443,12 +443,12 @@ func void Use_RavensKidnapperMission_Addon ()
 };
 
 //**********************************************************************************
-//	Empfehlungsschreiben f¸r Pedro, ins Kloster eingelassen zu werden.
+//	Empfehlungsschreiben f√ºr Pedro, ins Kloster eingelassen zu werden.
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_Vatras_KDFEmpfehlung_Addon		(C_Item)
 {
-	name 				=	"Vatras˘v doporuËujÌcÌ dopis";
+	name 				=	"Vatras≈Øv doporuƒçuj√≠c√≠ dopis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -459,11 +459,11 @@ INSTANCE ItWr_Vatras_KDFEmpfehlung_Addon		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_VatrasKDFEmpfehlung_Addon;
 	scemeName			=	"MAP";
-	description			=  	"Vatras˘v doporuËujÌcÌ dopis";
+	description			=  	"Vatras≈Øv doporuƒçuj√≠c√≠ dopis";
 	
-	TEXT[2]				= 	"S pomocÌ tohoto dopisu bych se mÍl";
-	TEXT[3]				= 	"dostat do kl·ötera ohniv˝ch m·g˘,";
-	TEXT[4]				= 	"aniû bych musel nÍco platit.";
+	TEXT[2]				= 	"S pomoc√≠ tohoto dopisu bych se mƒôl";
+	TEXT[3]				= 	"dostat do kl√°≈°tera ohniv√Ωch m√°g≈Ø,";
+	TEXT[4]				= 	"ani≈æ bych musel nƒôco platit.";
 
 	
 };
@@ -480,11 +480,11 @@ func void Use_VatrasKDFEmpfehlung_Addon ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "N·sledovnÌci ohnÍ.");
+					Doc_PrintLines	( nDocID,  0, "N√°sledovn√≠ci ohnƒô.");
 					Doc_PrintLines	( nDocID,  0, "");					
-					Doc_PrintLines	( nDocID,  0, "Pr·vÍ jsem se dozvÍdÍl, ûe za vstup do vaöich ‚ad vyûadujete nÍjak˝ poplatek.");
-					Doc_PrintLines	( nDocID,  0, "Proto s tÌmto dopisem posÌl·m zboûnÈho muûe, kter˝ by se r·d stal vaöÌm novicem."					);
-					//Doc_PrintLine	( nDocID,  0, "Ich hoffe, dass ich nicht persˆnlich erscheinen muss ihm den Einlass ");
+					Doc_PrintLines	( nDocID,  0, "Pr√°vƒô jsem se dozvƒôdƒôl, ≈æe za vstup do va≈°ich √¢ad vy≈æadujete nƒôjak√Ω poplatek.");
+					Doc_PrintLines	( nDocID,  0, "Proto s t√≠mto dopisem pos√≠l√°m zbo≈æn√©ho mu≈æe, kter√Ω by se r√°d stal va≈°√≠m novicem."					);
+					//Doc_PrintLine	( nDocID,  0, "Ich hoffe, dass ich nicht pers√∂nlich erscheinen muss ihm den Einlass ");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Vatras");
 					Doc_Show		( nDocID );				
@@ -494,7 +494,7 @@ func void Use_VatrasKDFEmpfehlung_Addon ()
 /******************************************************************************************/
 INSTANCE ItMi_LostInnosStatue_Daron (C_Item)
 {
-	name 				=	"Cenn· Innosova soöka";
+	name 				=	"Cenn√° Innosova so≈°ka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -516,7 +516,7 @@ INSTANCE ItMi_LostInnosStatue_Daron (C_Item)
 
 INSTANCE ItWr_LuciasLoveLetter_Addon		(C_Item)
 {
-	name 				=	"Luciin dopis na rozlouËenou";
+	name 				=	"Luciin dopis na rozlouƒçenou";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -535,7 +535,7 @@ func void Use_LuciasLoveLetter_Addon ()
  
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Lucie napsala Elvrichovi dopis na rozlouËenou. To by ho mohlo zajÌmat."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"Lucie napsala Elvrichovi dopis na rozlouƒçenou. To by ho mohlo zaj√≠mat."); 
 	MIS_LuciasLetter = LOG_RUNNING;
 	var int nDocID;
 		
@@ -547,11 +547,11 @@ func void Use_LuciasLoveLetter_Addon ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Milovan˝ Elvrichu.");
+					Doc_PrintLines	( nDocID,  0, "Milovan√Ω Elvrichu.");
 					Doc_PrintLines	( nDocID,  0, "");					
-					Doc_PrintLines	( nDocID,  0, "Nedok·ûeö si p‚edstavit, s jakou bolestÌ ti tohle pÌöu.");
-					Doc_PrintLines	( nDocID,  0, "VÌm, ûe to nepochopÌö, ale hodnÍ jsem p‚em˝ölela a doöla jsem k z·vÍru, ûe bude pro n·s oba lepöÌ, kdyû si najdeö nÍjakou sluönÍjöÌ ûenu, neû jsem j·."					);
-					Doc_PrintLines	( nDocID,  0, "Odch·zÌm a uû se nevr·tÌm. Zapome‡ na mÍ. Holka jako j· se pro sluön˝ho chlapa jako ty prostÍ nehodÌ. Sbohem.");
+					Doc_PrintLines	( nDocID,  0, "Nedok√°≈æe≈° si p√¢edstavit, s jakou bolest√≠ ti tohle p√≠≈°u.");
+					Doc_PrintLines	( nDocID,  0, "V√≠m, ≈æe to nepochop√≠≈°, ale hodnƒô jsem p√¢em√Ω≈°lela a do≈°la jsem k z√°vƒôru, ≈æe bude pro n√°s oba lep≈°√≠, kdy≈æ si najde≈° nƒôjakou slu≈°nƒôj≈°√≠ ≈æenu, ne≈æ jsem j√°."					);
+					Doc_PrintLines	( nDocID,  0, "Odch√°z√≠m a u≈æ se nevr√°t√≠m. Zapome≈ï na mƒô. Holka jako j√° se pro slu≈°n√Ωho chlapa jako ty prostƒô nehod√≠. Sbohem.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "     Lucia");
 					Doc_Show		( nDocID );				
@@ -564,7 +564,7 @@ func void Use_LuciasLoveLetter_Addon ()
 
 PROTOTYPE  EffectItemPrototype_Addon (C_Item)	
 {
-	name 				=	"K·men";
+	name 				=	"K√°men";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -612,8 +612,8 @@ INSTANCE ItMi_Rake (C_Item)
 	on_state[1]			= 	Use_Rake;
 	description			= 	name;
 	
-	//TEXT[3]				=   "(L‰sst sich bei geˆffnetem Inventar benutzen)";
-	//TEXT[4]				=   "('Aktionstaste' + 'Pfeil- Vorne' gedr¸ckt halten)";
+	//TEXT[3]				=   "(L√§sst sich bei ge√∂ffnetem Inventar benutzen)";
+	//TEXT[4]				=   "('Aktionstaste' + 'Pfeil- Vorne' gedr√ºckt halten)";
 	
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
@@ -627,9 +627,9 @@ func void Use_Rake()
 };
 
 /******************************************************************************************/
-INSTANCE ItRi_Addon_BanditTrader(C_Item)	//H‰ndlergildenring
+INSTANCE ItRi_Addon_BanditTrader(C_Item)	//H√§ndlergildenring
 {
-	name 					=	"CechovnÌ prsten";
+	name 					=	"Cechovn√≠ prsten";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_RING;
@@ -641,9 +641,9 @@ INSTANCE ItRi_Addon_BanditTrader(C_Item)	//H‰ndlergildenring
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	description				= 	"Zdoben˝ prsten";
+	description				= 	"Zdoben√Ω prsten";
 	
-	TEXT[2]					= 	"n·mo‚nÍ-obchodnÌho cechu Araxa";
+	TEXT[2]					= 	"n√°mo√¢nƒô-obchodn√≠ho cechu Araxa";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -659,7 +659,7 @@ INSTANCE ItRi_Addon_BanditTrader(C_Item)	//H‰ndlergildenring
 
 INSTANCE ItWr_Addon_BanditTrader		(C_Item)
 {
-	name 				=	"DodacÌ list";
+	name 				=	"Dodac√≠ list";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -672,8 +672,8 @@ INSTANCE ItWr_Addon_BanditTrader		(C_Item)
 	scemeName			=	"MAP";
 	description			=  	name;
 	
-	TEXT[2]				= 	"Tento dopis jsem naöel";
-	TEXT[3]				= 	"u bandit˘ za Sekobov˝m statkem";
+	TEXT[2]				= 	"Tento dopis jsem na≈°el";
+	TEXT[3]				= 	"u bandit≈Ø za Sekobov√Ωm statkem";
 
 	
 };
@@ -690,13 +690,13 @@ func void Use_ItWr_Addon_BanditTrader ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLines	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "15 kr·tk˝ch meË˘");
-					Doc_PrintLines	( nDocID,  0, "20 rapÌr˘"					);
-					Doc_PrintLines	( nDocID,  0, "25 bochnÌk˘ chleba");
-					Doc_PrintLines	( nDocID,  0, "15 lahvÌ vÌna"					);
+					Doc_PrintLines	( nDocID,  0, "15 kr√°tk√Ωch meƒç≈Ø");
+					Doc_PrintLines	( nDocID,  0, "20 rap√≠r≈Ø"					);
+					Doc_PrintLines	( nDocID,  0, "25 bochn√≠k≈Ø chleba");
+					Doc_PrintLines	( nDocID,  0, "15 lahv√≠ v√≠na"					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "To bylo naposledy."					);
-					Doc_PrintLines	( nDocID,  0, "Uû to zaËÌn· b˝t moc o hubu."					);
+					Doc_PrintLines	( nDocID,  0, "U≈æ to zaƒç√≠n√° b√Ωt moc o hubu."					);
 					Doc_PrintLines	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "FERNANDO");
 					Doc_Show		( nDocID );				
@@ -704,7 +704,7 @@ func void Use_ItWr_Addon_BanditTrader ()
 	if (MIS_Vatras_FindTheBanditTrader != 0)
 	&& (Use_ItWr_Addon_BanditTrader_OneTime == FALSE)
 	{
-		B_LogEntry (TOPIC_Addon_BanditTrader,"Naöel jsem dokument s d˘kazem, ûe zbrojÌ‚em, kterÈho hled·m, je Fernando."); 
+		B_LogEntry (TOPIC_Addon_BanditTrader,"Na≈°el jsem dokument s d≈Økazem, ≈æe zbroj√≠√¢em, kter√©ho hled√°m, je Fernando."); 
 		Use_ItWr_Addon_BanditTrader_OneTime = TRUE;
 	};
 };
@@ -715,7 +715,7 @@ func void Use_ItWr_Addon_BanditTrader ()
 //****************************************************************************
 INSTANCE ItWr_Vatras2Saturas_FindRaven	(C_Item)
 {
-	name 				=	"Zpr·va";
+	name 				=	"Zpr√°va";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -727,7 +727,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven	(C_Item)
 	on_state[0]			=   Use_Vatras2Saturas_FindRaven_Sealed;
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
-	TEXT[2]				=   "Vatras˘v dopis Saturasovi";
+	TEXT[2]				=   "Vatras≈Øv dopis Saturasovi";
 
 };
 func void Use_Vatras2Saturas_FindRaven ()
@@ -738,13 +738,13 @@ func void Use_Vatras2Saturas_FindRaven ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 	); 
 					Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
-					Doc_PrintLine	( nDocID,  0, "Mil˝ Saturasi."					);
+					Doc_PrintLine	( nDocID,  0, "Mil√Ω Saturasi."					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Douf·m, ûe brzy dos·hneö svÈho cÌle. Tady ve mÍstÍ je poslednÌ dobou klid, ale bojÌm se, aby to nebylo jen ticho p‚ed bou‚Ì. MÍl by sis pospÌöit, pot‚ebuji tÍ tu."					);
-					Doc_PrintLines	( nDocID,  0, "Prostudoval jsem tvÈ z·znamy a mohu potvrdit tvÈ podez‚enÌ. Ten dopis zcela jistÍ poukazuje na nÍjakou kulturu, kter· uctÌvala Adana. BuÎ opatrn˝ a nenechej se zaslepit faleön˝mi proroky."					);
-					Doc_PrintLines	( nDocID,  0, "ZmizelÌ obËanÈ Khorinidu byli odvleËeni k b˝valÈmu rudobaronovi Havranovi tam, kam pravdÍpodobnÍ ˙stÌ onen port·l."					);
-					Doc_PrintLines	( nDocID,  0, "A jeötÍ jedna vÍc: posÌl·m ti pomoc. DoruËitel tÈto zpr·vy je opravdu v˝jimeËn˝ ËlovÍk. M· v oËÌch zvl·ötnÌ svit - ˙plnÍ jistÍ to ‚Ìci nemohu, ale mohl by to b˝t ON, i kdyû jsme si ho p‚edstavovali ponÍkud jinak."					);
-					Doc_PrintLines	( nDocID,  0, "Vyzkouöej ho a uvidÌö, jestli m·m pravdu."					);
+					Doc_PrintLines	( nDocID,  0, "Douf√°m, ≈æe brzy dos√°hne≈° sv√©ho c√≠le. Tady ve mƒôstƒô je posledn√≠ dobou klid, ale boj√≠m se, aby to nebylo jen ticho p√¢ed bou√¢√≠. Mƒôl by sis posp√≠≈°it, pot√¢ebuji tƒô tu."					);
+					Doc_PrintLines	( nDocID,  0, "Prostudoval jsem tv√© z√°znamy a mohu potvrdit tv√© podez√¢en√≠. Ten dopis zcela jistƒô poukazuje na nƒôjakou kulturu, kter√° uct√≠vala Adana. Bu√´ opatrn√Ω a nenechej se zaslepit fale≈°n√Ωmi proroky."					);
+					Doc_PrintLines	( nDocID,  0, "Zmizel√≠ obƒçan√© Khorinidu byli odvleƒçeni k b√Ωval√©mu rudobaronovi Havranovi tam, kam pravdƒôpodobnƒô √∫st√≠ onen port√°l."					);
+					Doc_PrintLines	( nDocID,  0, "A je≈°tƒô jedna vƒôc: pos√≠l√°m ti pomoc. Doruƒçitel t√©to zpr√°vy je opravdu v√Ωjimeƒçn√Ω ƒçlovƒôk. M√° v oƒç√≠ch zvl√°≈°tn√≠ svit - √∫plnƒô jistƒô to √¢√≠ci nemohu, ale mohl by to b√Ωt ON, i kdy≈æ jsme si ho p√¢edstavovali ponƒôkud jinak."					);
+					Doc_PrintLines	( nDocID,  0, "Vyzkou≈°ej ho a uvid√≠≈°, jestli m√°m pravdu."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Vatras"					);
 					Doc_Show		( nDocID );
@@ -759,7 +759,7 @@ func void Use_Vatras2Saturas_FindRaven_Sealed ()
 }; 
 INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 {
-	name 				=	"Otev‚en˝ dopis";
+	name 				=	"Otev√¢en√Ω dopis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -771,7 +771,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 	on_state[0]			=   Use_Vatras2Saturas_FindRaven;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[2]				=   "Vatras˘v dopis Saturasovi";
+	TEXT[2]				=   "Vatras≈Øv dopis Saturasovi";
 };
 
 //------------------------------------------------------------------------------------------
@@ -796,7 +796,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 	on_equip		=	Equip_WispDetector;
 	on_unequip		=	UnEquip_WispDetector;
 
-	description		=  "Amulet p·tracÌ bludiËky";
+	description		=  "Amulet p√°trac√≠ bludiƒçky";
 
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -845,7 +845,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 	
 INSTANCE ItFo_Addon_Krokofleisch_Mission (C_Item)
 {	
-	name 				=	"Maso z moË·lovÈ krysy";
+	name 				=	"Maso z moƒç√°lov√© krysy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -857,7 +857,7 @@ INSTANCE ItFo_Addon_Krokofleisch_Mission (C_Item)
 	scemeName			=	"MEAT";
 	
 	description			= 	name;
-	TEXT[1]				=	"SmrdÌ trochu jako ryba.";
+	TEXT[1]				=	"Smrd√≠ trochu jako ryba.";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	Value_RawMeat;
@@ -866,7 +866,7 @@ INSTANCE ItFo_Addon_Krokofleisch_Mission (C_Item)
 
 INSTANCE ItRi_Addon_MorgansRing_Mission (C_Item)
 {	
-	name 				=	"Morgan˘v prsten";
+	name 				=	"Morgan≈Øv prsten";
 
 	mainflag 			=	ITEM_KAT_MAGIC;
 	flags 				=	ITEM_RING|ITEM_MISSION;
@@ -885,7 +885,7 @@ INSTANCE ItRi_Addon_MorgansRing_Mission (C_Item)
 	description		= name;
 	
 	
-	TEXT[1]			= "Tento prsten zdobÌ spousta kr·sn˝ch run.";
+	TEXT[1]			= "Tento prsten zdob√≠ spousta kr√°sn√Ωch run.";
 	TEXT[2]			= NAME_ADDON_BONUS_1H;
 	COUNT[2]		= 10;
 	TEXT[5]			= NAME_Value;
@@ -910,7 +910,7 @@ FUNC VOID UnEquip_MorgansRing()
 
 INSTANCE ItMi_Focus (C_Item)
 {
-	name 				=	"Ohniskov˝ k·men";
+	name 				=	"Ohniskov√Ω k√°men";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -927,11 +927,11 @@ INSTANCE ItMi_Focus (C_Item)
 
 };
 //---------------------------------------------------------------------------
-//				Stahl Paket f¸r Huno
+//				Stahl Paket f√ºr Huno
 //---------------------------------------------------------------------------
 INSTANCE ItMi_Addon_Steel_Paket(C_Item)
 {
-	name 				=	"BalÌk s ocelÌ";
+	name 				=	"Bal√≠k s ocel√≠";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -943,8 +943,8 @@ INSTANCE ItMi_Addon_Steel_Paket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Tenhle balÌk je PO¬¡DN  tÍûk˝.";
-	TEXT[3]				=	"Obsahuje znaËnÈ mnoûstvÌ oceli.";
+	TEXT[2]				= 	"Tenhle bal√≠k je PO√Ç√ÅDNƒò tƒô≈æk√Ω.";
+	TEXT[3]				=	"Obsahuje znaƒçn√© mno≈æstv√≠ oceli.";
 	
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	value;
@@ -956,7 +956,7 @@ INSTANCE ItMi_Addon_Steel_Paket(C_Item)
 //------------------------------------------------------------------------------------------
 instance ItWr_StonePlateCommon_Addon (C_Item)
 {
-	name 				=	"Star· kamenn· tabulka";
+	name 				=	"Star√° kamenn√° tabulka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION|ITEM_MULTI;
@@ -974,7 +974,7 @@ instance ItWr_StonePlateCommon_Addon (C_Item)
 	inv_rotz			=   0;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Tabulka ze zaöedlÈho kamene";
+	TEXT[2]				= 	"Tabulka ze za≈°edl√©ho kamene";
 	TEXT[3]				=	"";
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -994,13 +994,13 @@ func void Use_StonePlateCommon ()
 		Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 		Doc_SetMargins	( nDocID, -1, 70, 50, 90, 50, 1   	);  //  0 -> margins are in pixels
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Kasta v·leËnick· na naöe hlavy hnÍv boûÌ seslala.");	
+		Doc_PrintLines	( nDocID,  0, "Kasta v√°leƒçnick√° na na≈°e hlavy hnƒôv bo≈æ√≠ seslala.");	
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Quarhodron˘v n·sledovnÌk RHADEMES byl zapuzen, leË zlomoc jeho i z mÌsta jeho vyhnanstvÌ k n·m pronikla.");
+		Doc_PrintLines	( nDocID,  0, "Quarhodron≈Øv n√°sledovn√≠k RHADEMES byl zapuzen, leƒç zlomoc jeho i z m√≠sta jeho vyhnanstv√≠ k n√°m pronikla.");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Byli jsme proti nÌ zcela bezmocnÌ.");
+		Doc_PrintLines	( nDocID,  0, "Byli jsme proti n√≠ zcela bezmocn√≠.");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "KÈû JHERENDARA hnÍv ADANŸV skl·tÌ!");	
+		Doc_PrintLines	( nDocID,  0, "K√©≈æ JHERENDARA hnƒôv ADAN≈ÆV skl√°t√≠!");	
 	}
 	else //Spieler beherrscht Sprache nicht
 	{
@@ -1031,7 +1031,7 @@ func void Use_StonePlateCommon ()
 
 INSTANCE ItMi_Addon_Stone_01(C_Item) //Esteban und Thorus  //Joly:Die Banditen benutzen diese Steintafeln als Zahlungsmittel.
 {
-	name 				=	"»erven· kamenn· tabulka";
+	name 				=	"ƒåerven√° kamenn√° tabulka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1053,7 +1053,7 @@ INSTANCE ItMi_Addon_Stone_01(C_Item) //Esteban und Thorus  //Joly:Die Banditen b
 	
 	
 	description			= 	name;
-	TEXT[2]				= 	"Tabulka z ËervenÈho kamene.";
+	TEXT[2]				= 	"Tabulka z ƒçerven√©ho kamene.";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1069,7 +1069,7 @@ FUNC VOID Use_Addon_Stone_01()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "My, t‚i poslednÌ v˘dcovÈ z Rady pÍti, jali jsme se v sÌnÌch chr·mov˝ch rozliËnÈ pasti rozmÌstiti a vchod ukr˝ti, by meË jiû nikdy svÍtla dennÌho nespat‚il.");
+		Doc_PrintLines	( nDocID,  0, "My, t√¢i posledn√≠ v≈Ødcov√© z Rady pƒôti, jali jsme se v s√≠n√≠ch chr√°mov√Ωch rozliƒçn√© pasti rozm√≠stiti a vchod ukr√Ωti, by meƒç ji≈æ nikdy svƒôtla denn√≠ho nespat√¢il.");
 	}
 	else
 	{
@@ -1082,9 +1082,9 @@ FUNC VOID Use_Addon_Stone_01()
 //---------------------------------------------------------------------------
 //		Steintafel 5		
 //---------------------------------------------------------------------------
-INSTANCE ItMi_Addon_Stone_05(C_Item) //Valley - Totenw‰chter
+INSTANCE ItMi_Addon_Stone_05(C_Item) //Valley - Totenw√§chter
 {
-	name 				=	"élut· kamenn· tabulka"; 
+	name 				=	"≈Ωlut√° kamenn√° tabulka"; 
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1105,7 +1105,7 @@ INSTANCE ItMi_Addon_Stone_05(C_Item) //Valley - Totenw‰chter
 	inv_rotz			=   0;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Tabulka ze ûlutÈho kamene";
+	TEXT[2]				= 	"Tabulka ze ≈ælut√©ho kamene";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1121,7 +1121,7 @@ FUNC VOID Use_Addon_Stone_05()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "PrvnÌ past vytvo‚il jsem j·, jenû proti rozhodnutÌ T‚Ì jsem brojil. A pouze j· vchodu spr·vnÈho zn·m.");
+		Doc_PrintLines	( nDocID,  0, "Prvn√≠ past vytvo√¢il jsem j√°, jen≈æ proti rozhodnut√≠ T√¢√≠ jsem brojil. A pouze j√° vchodu spr√°vn√©ho zn√°m.");
 	}
 	else
 	{
@@ -1136,7 +1136,7 @@ FUNC VOID Use_Addon_Stone_05()
 //---------------------------------------------------------------------------
 INSTANCE ItMi_Addon_Stone_03(C_Item) //Valley - Priester
 {
-	name 				=	"Modr· kamenn· tabulka";
+	name 				=	"Modr√° kamenn√° tabulka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1157,7 +1157,7 @@ INSTANCE ItMi_Addon_Stone_03(C_Item) //Valley - Priester
 	effect				=	"SPELLFX_WEAKGLIMMER";
 	
 	description			= 	name;
-	TEXT[2]				= 	"Tabulka z modrÈho kamene";
+	TEXT[2]				= 	"Tabulka z modr√©ho kamene";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1173,7 +1173,7 @@ FUNC VOID Use_Addon_Stone_03()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "Druhou past KHARDIMON sestrojil. A pouze on, jenû cestu SvÍtla n·sleduje, do t‚etÌ komnaty nakonec vejde.");
+		Doc_PrintLines	( nDocID,  0, "Druhou past KHARDIMON sestrojil. A pouze on, jen≈æ cestu Svƒôtla n√°sleduje, do t√¢et√≠ komnaty nakonec vejde.");
 	}
 	else
 	{
@@ -1190,7 +1190,7 @@ FUNC VOID Use_Addon_Stone_03()
 //---------------------------------------------------------------------------
 INSTANCE ItMi_Addon_Stone_04(C_Item)  //DAS DING AUS DEM SENAT /SUMPF  //Joly: Haus der Heiler
 {
-	name 				=	"Zelen· kamenn· tabulka"; 
+	name 				=	"Zelen√° kamenn√° tabulka"; 
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1211,7 +1211,7 @@ INSTANCE ItMi_Addon_Stone_04(C_Item)  //DAS DING AUS DEM SENAT /SUMPF  //Joly: H
 	effect				=	"SPELLFX_WEAKGLIMMER";
 	
 	description			= 	name;
-	TEXT[2]				= 	"Tabulka ze zelenÈho kamene";
+	TEXT[2]				= 	"Tabulka ze zelen√©ho kamene";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1227,7 +1227,7 @@ FUNC VOID Use_Addon_Stone_04()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "T‚etÌ past jest dÌlem QUARHODRONOV›M. A pouze on vÌ, jak port·lu otev‚Ìti.");
+		Doc_PrintLines	( nDocID,  0, "T√¢et√≠ past jest d√≠lem QUARHODRONOV√ùM. A pouze on v√≠, jak port√°lu otev√¢√≠ti.");
 	}
 	else
 	{
@@ -1242,7 +1242,7 @@ FUNC VOID Use_Addon_Stone_04()
 //---------------------------------------------------------------------------
 INSTANCE ItMi_Addon_Stone_02(C_Item) //Bibliothek der Erbauer.
 {
-	name 				=	"Fialov· kamenn· tabulka"; 
+	name 				=	"Fialov√° kamenn√° tabulka"; 
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1263,7 +1263,7 @@ INSTANCE ItMi_Addon_Stone_02(C_Item) //Bibliothek der Erbauer.
 	effect				=	"SPELLFX_WEAKGLIMMER";
 	
 	description			= 	name;
-	TEXT[2]				= 	"Tabulka z fialovÈho kamene";
+	TEXT[2]				= 	"Tabulka z fialov√©ho kamene";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1279,11 +1279,11 @@ FUNC VOID Use_Addon_Stone_02()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "A byl to tÈû Quarhodron, kdo s pomocÌ KHARDIMONOVOU vnÍjöÌ br·nu chr·mu uzav‚el. Nikdo z nich ob‚ad nep‚eûil.");
+		Doc_PrintLines	( nDocID,  0, "A byl to t√©≈æ Quarhodron, kdo s pomoc√≠ KHARDIMONOVOU vnƒôj≈°√≠ br√°nu chr√°mu uzav√¢el. Nikdo z nich ob√¢ad nep√¢e≈æil.");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Z˘stal jsem pouze j·, bych v·m cel˝ p‚ÌbÍh vypr·vÍl.");
+		Doc_PrintLines	( nDocID,  0, "Z≈Østal jsem pouze j√°, bych v√°m cel√Ω p√¢√≠bƒôh vypr√°vƒôl.");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Douf·m, ûe RHADEMES navÍky shnije v chr·mu!");
+		Doc_PrintLines	( nDocID,  0, "Douf√°m, ≈æe RHADEMES navƒôky shnije v chr√°mu!");
 	}
 	else
 	{
@@ -1307,7 +1307,7 @@ FUNC VOID Use_Addon_Stone_02()
 
 INSTANCE ItMI_Addon_Kompass_Mis (C_Item)
 {
-	name 				=	"Zlat˝ kompas";
+	name 				=	"Zlat√Ω kompas";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1341,7 +1341,7 @@ INSTANCE ItSE_Addon_FrancisChest	(C_Item)
 	
 	description			= 	"Truhlice s pokladem";
 	
-	TEXT[0]				= 	"Truhlice je velmi tÍûk·.";
+	TEXT[0]				= 	"Truhlice je velmi tƒô≈æk√°.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -1359,13 +1359,13 @@ FUNC VOID FrancisChest ()
 		CreateInvItems (hero,ItMi_SilverNecklace,1);
 		CreateInvItems (hero,ITWR_Addon_FrancisAbrechnung_Mis,1);
 		
-		Snd_Play ("MÍöec");
-		Print ("ZÌsk·v·ö hromadu vÍcÌ!");
+		Snd_Play ("Mƒô≈°ec");
+		Print ("Z√≠sk√°v√°≈° hromadu vƒôc√≠!");
 };
 
 INSTANCE ITWR_Addon_FrancisAbrechnung_Mis (C_ITEM)
 {
-	name 					=	"⁄ËetnÌ kniha";
+	name 					=	"√öƒçetn√≠ kniha";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1397,63 +1397,63 @@ INSTANCE ITWR_Addon_FrancisAbrechnung_Mis (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "ObchodnÌ loÎ 'Mo‚sk· panna'"	);
+					Doc_PrintLine	( nDocID,  0, "Obchodn√≠ lo√´ 'Mo√¢sk√° panna'"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Celkov· ko‚ist: 14560 zlat˝ch");
+					Doc_PrintLine	( nDocID,  0, "Celkov√° ko√¢ist: 14560 zlat√Ωch");
 					Doc_PrintLine	( nDocID,  0, "-----------------------"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Pos·dka: 9840");
-					Doc_PrintLine	( nDocID,  0, "D˘stojnÌci: 2500");
-					Doc_PrintLine	( nDocID,  0, "Kapit·n: 1000");
+					Doc_PrintLine	( nDocID,  0, "Pos√°dka: 9840");
+					Doc_PrintLine	( nDocID,  0, "D≈Østojn√≠ci: 2500");
+					Doc_PrintLine	( nDocID,  0, "Kapit√°n: 1000");
 					Doc_PrintLine	( nDocID,  0, "-----------------------"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "OsobnÌ podÌl: 2220");
+					Doc_PrintLine	( nDocID,  0, "Osobn√≠ pod√≠l: 2220");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "ObchodnÌ loÎ 'Miriam'"	);
+					Doc_PrintLine	( nDocID,  0, "Obchodn√≠ lo√´ 'Miriam'"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Celkov· ko‚ist: 4890 zlat˝ch");
+					Doc_PrintLine	( nDocID,  0, "Celkov√° ko√¢ist: 4890 zlat√Ωch");
 					Doc_PrintLine	( nDocID,  0, "-----------------------"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Pos·dka: 2390");
-					Doc_PrintLine	( nDocID,  0, "D˘stojnÌci: 500");
-					Doc_PrintLine	( nDocID,  0, "Kapit·n: 500");
+					Doc_PrintLine	( nDocID,  0, "Pos√°dka: 2390");
+					Doc_PrintLine	( nDocID,  0, "D≈Østojn√≠ci: 500");
+					Doc_PrintLine	( nDocID,  0, "Kapit√°n: 500");
 					Doc_PrintLine	( nDocID,  0, "----------------------"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "OsobnÌ podÌl: 1000");
+					Doc_PrintLine	( nDocID,  0, "Osobn√≠ pod√≠l: 1000");
 					Doc_PrintLine	( nDocID,  0, "");
 	
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "ObchodnÌ loÎ 'Nico'"	);
+					Doc_PrintLine	( nDocID,  1, "Obchodn√≠ lo√´ 'Nico'"	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "Celkov· ko‚ist: 9970");
+					Doc_PrintLine	( nDocID,  1, "Celkov√° ko√¢ist: 9970");
 					Doc_PrintLine	( nDocID,  1, "----------------------"	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Pos·dka: 5610");
-					Doc_PrintLine	( nDocID,  1, "D˘stojnÌci: 1500");
-					Doc_PrintLine	( nDocID,  1, "Kapit·n: 1000");
+					Doc_PrintLine	( nDocID,  1, "Pos√°dka: 5610");
+					Doc_PrintLine	( nDocID,  1, "D≈Østojn√≠ci: 1500");
+					Doc_PrintLine	( nDocID,  1, "Kapit√°n: 1000");
 					Doc_PrintLine	( nDocID,  1, "----------------------"	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "OsobnÌ podÌl: 1860");
+					Doc_PrintLine	( nDocID,  1, "Osobn√≠ pod√≠l: 1860");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "ObchodnÌ loÎ 'Maria'"	);
+					Doc_PrintLine	( nDocID,  1, "Obchodn√≠ lo√´ 'Maria'"	);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "Celkov· ko‚ist: 7851 zlat˝ch");
+					Doc_PrintLine	( nDocID,  1, "Celkov√° ko√¢ist: 7851 zlat√Ωch");
 					Doc_PrintLine	( nDocID,  1, "----------------------"	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Pos·dka: 4400");
-					Doc_PrintLine	( nDocID,  1, "D˘stojnÌci: 750");
-					Doc_PrintLine	( nDocID,  1, "Kapit·n: 1000");
+					Doc_PrintLine	( nDocID,  1, "Pos√°dka: 4400");
+					Doc_PrintLine	( nDocID,  1, "D≈Østojn√≠ci: 750");
+					Doc_PrintLine	( nDocID,  1, "Kapit√°n: 1000");
 					Doc_PrintLine	( nDocID,  1, "----------------------"	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "OsobnÌ podÌl: 1701");
+					Doc_PrintLine	( nDocID,  1, "Osobn√≠ pod√≠l: 1701");
 					Doc_PrintLine	( nDocID,  1, "");
 					
 					Francis_HasProof = TRUE;
@@ -1470,7 +1470,7 @@ INSTANCE ITWR_Addon_FrancisAbrechnung_Mis (C_ITEM)
 
 INSTANCE ITWR_Addon_GregsLogbuch_Mis (C_ITEM)
 {
-	name 					=	"LodnÌ denÌk";
+	name 					=	"Lodn√≠ den√≠k";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1481,7 +1481,7 @@ INSTANCE ITWR_Addon_GregsLogbuch_Mis (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Greg˘v palubnÌ denÌk";
+	description				= 	"Greg≈Øv palubn√≠ den√≠k";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseGregsLogbuch;
@@ -1501,26 +1501,26 @@ INSTANCE ITWR_Addon_GregsLogbuch_Mis (C_ITEM)
 
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
-					Doc_PrintLines	( nDocID,  0, "Uû m·m tÈ pl·ûe plnÈ zuby. Vöude nic neû pÌsek. Uû se ani po‚·dnÍ nevyspÌm, protoûe mÍ vöecko svÍdÌ. Havran uû by mÍl koneËnÍ navalit zlato za vÍznÍ, abysme mohli znova vyrazit na mo‚e. MusÌm si s tÌm nafrnÍn˝m kretÈnem promluvit.");
+					Doc_PrintLines	( nDocID,  0, "U≈æ m√°m t√© pl√°≈æe pln√© zuby. V≈°ude nic ne≈æ p√≠sek. U≈æ se ani po√¢√°dnƒô nevysp√≠m, proto≈æe mƒô v≈°ecko svƒôd√≠. Havran u≈æ by mƒôl koneƒçnƒô navalit zlato za vƒôznƒô, abysme mohli znova vyrazit na mo√¢e. Mus√≠m si s t√≠m nafrnƒôn√Ωm kret√©nem promluvit.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Co si to ten ömejd dovoluje? Na‚Ìdil tÍm svejm smradlavejm vlezdoprdelk˘m, aby mÍ nepustili do br·ny! Tak tohle si öerednÍ odsk·Ëe! VlastnÌma rukama udÍl·m z toho jeho patolÌzala Bloodwyna ûr·dlo pro ryby!"	);
-					Doc_PrintLines	( nDocID,  0, "Jestli brzo nezaplatÌ, p‚estanu si br·t servÌtky.");
+					Doc_PrintLines	( nDocID,  0, "Co si to ten ≈°mejd dovoluje? Na√¢√≠dil tƒôm svejm smradlavejm vlezdoprdelk≈Øm, aby mƒô nepustili do br√°ny! Tak tohle si ≈°erednƒô odsk√°ƒçe! Vlastn√≠ma rukama udƒôl√°m z toho jeho patol√≠zala Bloodwyna ≈ær√°dlo pro ryby!"	);
+					Doc_PrintLines	( nDocID,  0, "Jestli brzo nezaplat√≠, p√¢estanu si br√°t serv√≠tky.");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
-					Doc_PrintLines	( nDocID,  1, "Ti banditi zaËÌnajÌ b˝t drzÌ jak opice. JeötÍ po‚·d mi nezaplatili za poslednÌ dod·vku. Asi toho jeötÍ dost nevÌme. MusÌm zjistit, co tu ten Havran vlastnÍ chce."	);
+					Doc_PrintLines	( nDocID,  1, "Ti banditi zaƒç√≠naj√≠ b√Ωt drz√≠ jak opice. Je≈°tƒô po√¢√°d mi nezaplatili za posledn√≠ dod√°vku. Asi toho je≈°tƒô dost nev√≠me. Mus√≠m zjistit, co tu ten Havran vlastnƒô chce."	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Vezmu si vÍtöinu pos·dky na pevninu a zmocnÌme se rudy. Francis s p·r lidma zatÌm z˘stane tady a opevnÌ n·ö t·bor."	);
-					Doc_PrintLines	( nDocID,  1, "Abysme neztr·celi Ëas, dal jsem Bonesovi brnÍnÌ. ProplÌûÌ se do t·bora bandit˘ a zjistÌ, co m· Havran za lubem.");
+					Doc_PrintLines	( nDocID,  1, "Vezmu si vƒôt≈°inu pos√°dky na pevninu a zmocn√≠me se rudy. Francis s p√°r lidma zat√≠m z≈Østane tady a opevn√≠ n√°≈° t√°bor."	);
+					Doc_PrintLines	( nDocID,  1, "Abysme neztr√°celi ƒças, dal jsem Bonesovi brnƒôn√≠. Propl√≠≈æ√≠ se do t√°bora bandit≈Ø a zjist√≠, co m√° Havran za lubem.");
 					
 					Greg_GaveArmorToBones = TRUE;
 					
 					Doc_Show		( nDocID );
 };
 //-----------------------------------------------------------------------
-//Bloodwyns Truhenschl¸ssel - Schwere Garder¸stung
+//Bloodwyns Truhenschl√ºssel - Schwere Garder√ºstung
 //-----------------------------------------------------------------------
 INSTANCE ITKE_Addon_Bloodwyn_01 (C_Item)
 {
@@ -1534,15 +1534,15 @@ INSTANCE ITKE_Addon_Bloodwyn_01 (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Bloodwyn˘v klÌË";
+	description			= 	"Bloodwyn≈Øv kl√≠ƒç";
 	
-	TEXT[2]				=	"OtevÌr· truhlici";
+	TEXT[2]				=	"Otev√≠r√° truhlici";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-----------------------------------------------------------------------
-//Heiler Truhenschl¸ssel - 
+//Heiler Truhenschl√ºssel - 
 //-----------------------------------------------------------------------
 INSTANCE ITKE_Addon_Heiler (C_Item)
 {
@@ -1556,10 +1556,10 @@ INSTANCE ITKE_Addon_Heiler (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"KlÌË kamennÈho str·ûce";
+	description			= 	"Kl√≠ƒç kamenn√©ho str√°≈æce";
 	
-	TEXT[2]				=	"OtevÌr· truhlici";
-	TEXT[3]				=   "v podivnÈ starÈ stavbÍ v baûin·ch";
+	TEXT[2]				=	"Otev√≠r√° truhlici";
+	TEXT[3]				=   "v podivn√© star√© stavbƒô v ba≈æin√°ch";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -1569,7 +1569,7 @@ INSTANCE ITKE_Addon_Heiler (C_Item)
 
 INSTANCE  ItMi_TempelTorKey (C_ITEM)
 {	
-	name 				=	"Kamenn· tabulka Quarhodronova";
+	name 				=	"Kamenn√° tabulka Quarhodronova";
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_MULTI;
 
@@ -1580,7 +1580,7 @@ INSTANCE  ItMi_TempelTorKey (C_ITEM)
 	scemeName			=	"MAP";
 	on_state[0]			=	Use_TempelTorKey;
 
-	TEXT[2]		= "KlÌË k Adanovu chr·mu";
+	TEXT[2]		= "Kl√≠ƒç k Adanovu chr√°mu";
 
 };
 func void Use_TempelTorKey ()
@@ -1628,7 +1628,7 @@ INSTANCE ItMi_Addon_Bloodwyn_Kopf (C_Item)
 
 instance ItWR_Addon_TreasureMap (C_Item)
 {
-	name 		= "Mapa poklad˘"; 
+	name 		= "Mapa poklad≈Ø"; 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -1643,7 +1643,7 @@ instance ItWR_Addon_TreasureMap (C_Item)
 
 	description	= name;
 	TEXT[0]		= "";
-	TEXT[1]		= "Na mapÍ jsou vyznaËena nÍkter· mÌsta.";
+	TEXT[1]		= "Na mapƒô jsou vyznaƒçena nƒôkter√° m√≠sta.";
 	TEXT[5]		= NAME_Value;
 	COUNT[5]	= value;
 };
@@ -1669,7 +1669,7 @@ instance ItWR_Addon_TreasureMap (C_Item)
 
 INSTANCE ItMi_Addon_GregsTreasureBottle_MIS	(C_Item)
 {
-	name 				=	"Zpr·va v l·hvi";
+	name 				=	"Zpr√°va v l√°hvi";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -1681,7 +1681,7 @@ INSTANCE ItMi_Addon_GregsTreasureBottle_MIS	(C_Item)
 	on_state[0]			=   Use_GregsBottle;
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
-	TEXT[2]				=   "V l·hvi je srolovan˝ kousek papÌru";
+	TEXT[2]				=   "V l√°hvi je srolovan√Ω kousek pap√≠ru";
 
 };
 func void Use_GregsBottle ()
@@ -1692,7 +1692,7 @@ func void Use_GregsBottle ()
 /******************************************************************************************/
 INSTANCE itmi_erolskelch (C_Item)
 {
-	name 				=	"Poökr·ban˝ st‚Ìbrn˝ poh·r";
+	name 				=	"Po≈°kr√°ban√Ω st√¢√≠brn√Ω poh√°r";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

@@ -46,7 +46,7 @@ FUNC INT DIA_Larius_Hello_Condition()
 
 FUNC VOID DIA_Larius_Hello_Info()
 {	
-	AI_Output (self,other,"DIA_Larius_Hello_01_00"); //Co tady dêláš? Jestli nêco chceš, musíš si nejdâív sjednat schùzku.
+	AI_Output (self,other,"DIA_Larius_Hello_01_00"); //Co tady dÄ™lÃ¡Å¡? Jestli nÄ™co chceÅ¡, musÃ­Å¡ si nejdÃ¢Ã­v sjednat schÅ¯zku.
 
 };
 
@@ -72,11 +72,11 @@ FUNC INT DIA_Larius_WhoAreYou_Condition()
 FUNC VOID DIA_Larius_WhoAreYou_Info()
 {	
 	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_00"); //Kdo jsi?
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_01"); //Jsem Larius, zdejší místodržící.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //I když to tak teë asi nevypadá, jsem nejmocnêjším mužem ve mêstê.
-	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //Takže ty tady vládneš?
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //Já... no... teë zrovna mám svázané ruce.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //Velí tady tomu ten lord Hagen, alespoà po tu dobu, co je ve mêstê.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_01"); //Jsem Larius, zdejÅ¡Ã­ mÃ­stodrÅ¾Ã­cÃ­.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //I kdyÅ¾ to tak teÃ« asi nevypadÃ¡, jsem nejmocnÄ™jÅ¡Ã­m muÅ¾em ve mÄ™stÄ™.
+	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //TakÅ¾e ty tady vlÃ¡dneÅ¡?
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //JÃ¡... no... teÃ« zrovna mÃ¡m svÃ¡zanÃ© ruce.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //VelÃ­ tady tomu ten lord Hagen, alespoÅ• po tu dobu, co je ve mÄ™stÄ™.
 		
 };
 
@@ -91,7 +91,7 @@ INSTANCE DIA_Larius_Disturb(C_INFO)
 	condition	= DIA_Larius_Disturb_Condition;
 	information	= DIA_Larius_Disturb_Info;
 	permanent	= TRUE;
-	description	= "Nechtêl jsem rušit.";
+	description	= "NechtÄ™l jsem ruÅ¡it.";
 };                       
 
 FUNC INT DIA_Larius_Disturb_Condition()
@@ -101,8 +101,8 @@ FUNC INT DIA_Larius_Disturb_Condition()
 
 FUNC VOID DIA_Larius_Disturb_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_Disturb_15_00"); //Nechtêl jsem rušit.
-	AI_Output (self ,other,"DIA_Larius_Disturb_01_01"); //Jenže se ti to vùbec nepovedlo. Takže zmiz!
+	AI_Output (other,self ,"DIA_Larius_Disturb_15_00"); //NechtÄ™l jsem ruÅ¡it.
+	AI_Output (self ,other,"DIA_Larius_Disturb_01_01"); //JenÅ¾e se ti to vÅ¯bec nepovedlo. TakÅ¾e zmiz!
 };
 
 // ************************************************************
@@ -127,7 +127,7 @@ FUNC INT DIA_Larius_DieLage_Condition()
 FUNC VOID DIA_Larius_DieLage_Info()
 {	
 	AI_Output (other,self ,"DIA_Larius_DieLage_15_00"); //Jak se vede?
-	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //Co tady chceš? Dokud jsou paladinové ve mêstê, mají veškeré vêci kolem Khorinidu na starosti oni.
+	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //Co tady chceÅ¡? Dokud jsou paladinovÃ© ve mÄ™stÄ™, majÃ­ veÅ¡kerÃ© vÄ™ci kolem Khorinidu na starosti oni.
 };
 
 
@@ -142,7 +142,7 @@ INSTANCE DIA_Larius_Richterueberfall(C_INFO)
 	condition	= DIA_Larius_Richterueberfall_Condition;
 	information	= DIA_Larius_Richterueberfall_Info;
 
-	description	= "Soudce najal nêjaké lumpy, aby tê napadli.";
+	description	= "Soudce najal nÄ™jakÃ© lumpy, aby tÄ™ napadli.";
 };                       
 
 FUNC INT DIA_Larius_Richterueberfall_Condition()
@@ -155,17 +155,17 @@ FUNC INT DIA_Larius_Richterueberfall_Condition()
 
 FUNC VOID DIA_Larius_Richterueberfall_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_Richterueberfall_15_00"); //Soudce si najal nêjaké bandity, aby tê napadli. Mùžu to prokázat.
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_01"); //Pâestaà plácat takové nesmysly, nebo snad chceš, abych tê nechal vsadit do želez?
+	AI_Output (other,self ,"DIA_Larius_Richterueberfall_15_00"); //Soudce si najal nÄ™jakÃ© bandity, aby tÄ™ napadli. MÅ¯Å¾u to prokÃ¡zat.
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_01"); //PÃ¢estaÅ• plÃ¡cat takovÃ© nesmysly, nebo snad chceÅ¡, abych tÄ™ nechal vsadit do Å¾elez?
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_02"); //I kdybys byl bojovníkem Innose...
+			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_02"); //I kdybys byl bojovnÃ­kem Innose...
 		};
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_03"); //I kdybys by ustanoven mágem...
+			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_03"); //I kdybys by ustanoven mÃ¡gem...
 		};
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //Mé slovo má v tomhle mêstê stále ještê svou váhu. Už se nikdy víc neopovažuj špinit jméno soudce!
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //MÃ© slovo mÃ¡ v tomhle mÄ™stÄ™ stÃ¡le jeÅ¡tÄ™ svou vÃ¡hu. UÅ¾ se nikdy vÃ­c neopovaÅ¾uj Å¡pinit jmÃ©no soudce!
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 };

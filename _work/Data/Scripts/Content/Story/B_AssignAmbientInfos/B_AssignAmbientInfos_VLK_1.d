@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_1_JOIN(C_INFO)
 	condition	= DIA_VLK_1_JOIN_Condition;
 	information	= DIA_VLK_1_JOIN_Info;
 	permanent	= TRUE;
-	description = "Jak se mùu stát obèanem mêsta?";
+	description = "Jak se mÅ¯Å¾u stÃ¡t obÄanem mÄ™sta?";
 };                       
 
 FUNC INT DIA_VLK_1_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_1_JOIN_Condition()
 
 FUNC VOID DIA_VLK_1_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //Jak se mùu stát obèanem mêsta?
-	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //Najdi si slušnou práci! Kadı, kdo je v Khorinidu zamêstnán, je povaován za obèana mêsta.
+	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //Jak se mÅ¯Å¾u stÃ¡t obÄanem mÄ™sta?
+	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //Najdi si sluÅ¡nou prÃ¡ci! KaÅ¾dÃ½, kdo je v Khorinidu zamÄ™stnÃ¡n, je povaÅ¾ovÃ¡n za obÄana mÄ™sta.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_VLK_1_PEOPLE(C_INFO)
 	condition	= DIA_VLK_1_PEOPLE_Condition;
 	information	= DIA_VLK_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tady zastává dùleité funkce?";
+	description = "Kdo tady zastÃ¡vÃ¡ dÅ¯leÅ¾itÃ© funkce?";
 };                       
 
 FUNC INT DIA_VLK_1_PEOPLE_Condition()
@@ -66,11 +66,11 @@ FUNC INT DIA_VLK_1_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //Kdo tady zastává dùleité funkce?
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //(smích) A donedávna to byl místodrící a soudce. Ale pak pâijeli paladinové a pâevzali nad mêstem moc.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //Jejich velitelem je lord Hagen. Je také novım místodrícím, víceménê.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Lord Andre je jeho pravou rukou. Velí mêstské strái a také zastává roli soudce.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //Kadı, kdo se ve mêstê nêèím proviní, se zodpovídá pâímo jemu.
+	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //Kdo tady zastÃ¡vÃ¡ dÅ¯leÅ¾itÃ© funkce?
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //(smÃ­ch) AÅ¾ donedÃ¡vna to byl mÃ­stodrÅ¾Ã­cÃ­ a soudce. Ale pak pÃ¢ijeli paladinovÃ© a pÃ¢evzali nad mÄ™stem moc.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //Jejich velitelem je lord Hagen. Je takÃ© novÃ½m mÃ­stodrÅ¾Ã­cÃ­m, vÃ­cemÃ©nÄ™.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Lord Andre je jeho pravou rukou. VelÃ­ mÄ™stskÃ© strÃ¡Å¾i a takÃ© zastÃ¡vÃ¡ roli soudce.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //KaÅ¾dÃ½, kdo se ve mÄ™stÄ™ nÄ™ÄÃ­m provinÃ­, se zodpovÃ­dÃ¡ pÃ¢Ã­mo jemu.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_1_LOCATION(C_INFO)
 	condition	= DIA_VLK_1_LOCATION_Condition;
 	information	= DIA_VLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Je v tomhle mêstê nêco zajímavého?";
+	description = "Je v tomhle mÄ™stÄ™ nÄ™co zajÃ­mavÃ©ho?";
 };                       
 
 FUNC INT DIA_VLK_1_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Co je ve mêstê zajímavého?
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //Mùeš tu koupit témêâ vše, na co si vzpomeneš. Buë od obchodníkù na trišti, nebo v dolní èásti mêsta.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //Ale taky skoro všechno, co si mùeš koupit, nêco stojí.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Pokud nemáš dost penêz, mùe ti pomoct lichváâ Lehmar. Pokud pùjdeš k dokùm z dolní èásti mêsta, narazíš na jeho dùm hned u vstupu do pâístavní ètvrti.
+	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Co je ve mÄ™stÄ™ zajÃ­mavÃ©ho?
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //MÅ¯Å¾eÅ¡ tu koupit tÃ©mÄ™Ã¢ vÅ¡e, na co si vzpomeneÅ¡. BuÃ« od obchodnÃ­kÅ¯ na trÅ¾iÅ¡ti, nebo v dolnÃ­ ÄÃ¡sti mÄ™sta.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //Ale taky skoro vÅ¡echno, co si mÅ¯Å¾eÅ¡ koupit, nÄ™co stojÃ­.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Pokud nemÃ¡Å¡ dost penÄ™z, mÅ¯Å¾e ti pomoct lichvÃ¡Ã¢ Lehmar. Pokud pÅ¯jdeÅ¡ k dokÅ¯m z dolnÃ­ ÄÃ¡sti mÄ™sta, narazÃ­Å¡ na jeho dÅ¯m hned u vstupu do pÃ¢Ã­stavnÃ­ Ätvrti.
 };
 
 // *************************************************************************
@@ -107,7 +107,7 @@ INSTANCE DIA_VLK_1_STANDARD(C_INFO)
 	condition	= DIA_VLK_1_STANDARD_Condition;
 	information	= DIA_VLK_1_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_VLK_1_STANDARD_Condition()
 {
@@ -115,31 +115,31 @@ func INT DIA_VLK_1_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_VLK_1_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Od té doby, co bariéra vzala za své, se náhle pâerušil obchod s velkımi farmáâi. Kdo ví, co mají za lubem.  Chystá se nêjaká levárna.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Od tÃ© doby, co bariÃ©ra vzala za svÃ©, se nÃ¡hle pÃ¢eruÅ¡il obchod s velkÃ½mi farmÃ¡Ã¢i. Kdo vÃ­, co majÃ­ za lubem.  ChystÃ¡ se nÄ™jakÃ¡ levÃ¡rna.
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar zašel moc daleko. Poâád odmítá zásobovat mêsto. Jestli domobrana brzy nezasáhne, zaènou si i ostatní farmy dêlat, co se jim zlíbí.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar zaÅ¡el moc daleko. PoÃ¢Ã¡d odmÃ­tÃ¡ zÃ¡sobovat mÄ™sto. Jestli domobrana brzy nezasÃ¡hne, zaÄnou si i ostatnÃ­ farmy dÄ™lat, co se jim zlÃ­bÃ­.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //Slyšel jsem, e se oldnéâi spojili s mágy. Mocnımi temnımi mágy v èernıch róbách. Pâísahal bych, e jsem jednoho z nich minulou noc zahlédl ve mêstê.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //SlyÅ¡el jsem, Å¾e se Å¾oldnÃ©Ã¢i spojili s mÃ¡gy. MocnÃ½mi temnÃ½mi mÃ¡gy v ÄernÃ½ch rÃ³bÃ¡ch. PÃ¢Ã­sahal bych, Å¾e jsem jednoho z nich minulou noc zahlÃ©dl ve mÄ™stÄ™.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_04"); //Slyšel jsem, e se nêkteâí z Onarovıch oldnéâù vydali zabít draky. Koneènê zaèali dêlat nêco uiteèného!
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_04"); //SlyÅ¡el jsem, Å¾e se nÄ™kteÃ¢Ã­ z OnarovÃ½ch Å¾oldnÃ©Ã¢Å¯ vydali zabÃ­t draky. KoneÄnÄ™ zaÄali dÄ™lat nÄ™co uÅ¾iteÄnÃ©ho!
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_05"); //Âíká se, e draci byli poraeni! Lord Hagen shromaëuje své mue, aby v Hornickém údolí skoncovali i se zbıvajícími nestvùrami.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_05"); //Ã‚Ã­kÃ¡ se, Å¾e draci byli poraÅ¾eni! Lord Hagen shromaÅ¾Ã«uje svÃ© muÅ¾e, aby v HornickÃ©m ÃºdolÃ­ skoncovali i se zbÃ½vajÃ­cÃ­mi nestvÅ¯rami.
 	};
 };
 

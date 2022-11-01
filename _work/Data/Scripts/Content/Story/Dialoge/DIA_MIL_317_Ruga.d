@@ -31,7 +31,7 @@ INSTANCE DIA_Ruga_PICKPOCKET (C_INFO)
 	condition	= DIA_Ruga_PICKPOCKET_Condition;
 	information	= DIA_Ruga_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento klíè pùjde ukrást snadno.)";
+	description = "(Tento klÃ­Ä pÅ¯jde ukrÃ¡st snadno.)";
 };                       
 
 FUNC INT DIA_Ruga_PICKPOCKET_Condition()
@@ -95,11 +95,11 @@ func int DIA_Ruga_Hallo_Condition ()
 };
 func void DIA_Ruga_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //Co tady dêláš?
-	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //Cvièím chlapy v zacházení s kuší a pomáhám jim bıt trochu obratnêjší.
+	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //CviÄÃ­m chlapy v zachÃ¡zenÃ­ s kuÅ¡Ã­ a pomÃ¡hÃ¡m jim bÃ½t trochu obratnÄ™jÅ¡Ã­.
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Ruga, pâíslušník mêstské gardy, mi vylepší obratnost a nauèí mê pouívat kuši. Musím ale nejdâíve vstoupit do královskıch slueb.");
+	B_LogEntry (Topic_CityTeacher, "Ruga, pÃ¢Ã­sluÅ¡nÃ­k mÄ™stskÃ© gardy, mi vylepÅ¡Ã­ obratnost a nauÄÃ­ mÄ™ pouÅ¾Ã­vat kuÅ¡i. MusÃ­m ale nejdÃ¢Ã­ve vstoupit do krÃ¡lovskÃ½ch sluÅ¾eb.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Train
@@ -111,7 +111,7 @@ instance DIA_Ruga_Train		(C_INFO)
 	condition	 = 	DIA_Ruga_Train_Condition;
 	information	 = 	DIA_Ruga_Train_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Mohl bys mê cvièit?";
+	description	 = 	"Mohl bys mÄ™ cviÄit?";
 };
 
 func int DIA_Ruga_Train_Condition ()
@@ -123,15 +123,15 @@ func int DIA_Ruga_Train_Condition ()
 };
 func void DIA_Ruga_Train_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //Mohl bys mê cvièit?
+	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //Mohl bys mÄ™ cviÄit?
 	
 	if (hero.guild == GIL_MIL)
 	|| (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //Jasná páka. Jestli jsi dostateènê zkušenı, pomohu ti.
-		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //A pamatuj, obratnost a boj na dálku k sobê patâí jako šipka a kuše. Jedno...
-		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //nemá vıznam bez druhého. Chápu.
+		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //JasnÃ¡ pÃ¡ka. Jestli jsi dostateÄnÄ™ zkuÅ¡enÃ½, pomohu ti.
+		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //A pamatuj, obratnost a boj na dÃ¡lku k sobÄ™ patÃ¢Ã­ jako Å¡ipka a kuÅ¡e. Jedno...
+		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //nemÃ¡ vÃ½znam bez druhÃ©ho. ChÃ¡pu.
 	
 		Ruga_TeachCrossbow = TRUE;
 		Ruga_TeachDEX 	   = TRUE;
@@ -139,13 +139,13 @@ func void DIA_Ruga_Train_Info ()
 	else if ((hero.guild == GIL_SLD)
 	|| 		 (hero.guild == GIL_DJG))
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //Táhni mi z oèí, (opovrlivê) oldáku.
+		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //TÃ¡hni mi z oÄÃ­, (opovrÅ¾livÄ™) Å¾oldÃ¡ku.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{	 
-		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Ne, mohu cvièit jen mue v královskıch slubách. Nikoho jiného.
-		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Ale vdycky se nám hodí dobâí chlapi. Take pokud by ses chtêl pâidat k domobranê, bê si promluvit s lordem Andrem.
+		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Ne, mohu cviÄit jen muÅ¾e v krÃ¡lovskÃ½ch sluÅ¾bÃ¡ch. Nikoho jinÃ©ho.
+		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Ale vÅ¾dycky se nÃ¡m hodÃ­ dobÃ¢Ã­ chlapi. TakÅ¾e pokud by ses chtÄ™l pÃ¢idat k domobranÄ™, bÄ™Å¾ si promluvit s lordem Andrem.
 	};     
 };
 //**************************************
@@ -158,7 +158,7 @@ INSTANCE DIA_Ruga_Teach(C_INFO)
 	condition	= DIA_Ruga_Teach_Condition;
 	information	= DIA_Ruga_Teach_Info;
 	permanent	= TRUE;
-	description = "Uka mi, jak pouívat kuši.";
+	description = "UkaÅ¾ mi, jak pouÅ¾Ã­vat kuÅ¡i.";
 };                       
 //-------------------------------------
 var int DIA_Ruga_Teach_permanent;
@@ -174,7 +174,7 @@ FUNC INT DIA_Ruga_Teach_Condition()
  
 FUNC VOID DIA_Ruga_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //Uka mi, jak pouívat kuši.
+	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //UkaÅ¾ mi, jak pouÅ¾Ã­vat kuÅ¡i.
 
 	Info_ClearChoices 	(DIA_Ruga_Teach);
 	Info_AddChoice 		(DIA_Ruga_Teach,	DIALOG_BACK		,DIA_Ruga_Teach_Back);
@@ -186,7 +186,7 @@ FUNC VOID DIA_Ruga_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_CROSSBOW] >= 90)
 	{
-		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //U není nic, co bych tê mohl nauèit. Je naèase, aby sis našel nového uèitele.
+		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //UÅ¾ nenÃ­ nic, co bych tÄ™ mohl nauÄit. Je naÄase, aby sis naÅ¡el novÃ©ho uÄitele.
 		DIA_Ruga_Teach_permanent = TRUE;
 		
 	};
@@ -224,7 +224,7 @@ instance DIA_Ruga_TEACHDEX		(C_INFO)
 	condition	 = 	DIA_Ruga_TEACHDEX_Condition;
 	information	 = 	DIA_Ruga_TEACHDEX_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chtêl bych bıt o nêco obratnêjší.";
+	description	 = 	"ChtÄ™l bych bÃ½t o nÄ™co obratnÄ™jÅ¡Ã­.";
 };
 //------------------------------------
 var int DIA_Ruga_TEACHDEX_permanent;
@@ -239,7 +239,7 @@ func int DIA_Ruga_TEACHDEX_Condition ()
 };
 func void DIA_Ruga_TEACHDEX_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_TEACHDEX_15_00"); //Chtêl bych bıt o nêco obratnêjší.
+	AI_Output (other, self, "DIA_Ruga_TEACHDEX_15_00"); //ChtÄ™l bych bÃ½t o nÄ™co obratnÄ™jÅ¡Ã­.
 	
 	Info_ClearChoices   (DIA_Ruga_TEACHDEX);
 	Info_AddChoice 		(DIA_Ruga_TEACHDEX, DIALOG_BACK, DIA_Ruga_TEACHDEX_BACK);
@@ -251,7 +251,7 @@ func void DIA_Ruga_TEACHDEX_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //To je vše, co tê mùu nauèit. Jestli chceš bıt ještê obratnêjší, najdi si jiného uèitele.
+		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //To je vÅ¡e, co tÄ™ mÅ¯Å¾u nauÄit. Jestli chceÅ¡ bÃ½t jeÅ¡tÄ™ obratnÄ™jÅ¡Ã­, najdi si jinÃ©ho uÄitele.
 		DIA_Ruga_TEACHDEX_permanent = TRUE;
 	};
 	Info_ClearChoices (DIA_Ruga_TEACHDEX);

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Bloodfly(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Krvav· moucha";
+	name							=	"Krvav√° moucha";
 	guild							=	GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_BLOODFLY;
 	level							=	4;
@@ -80,7 +80,7 @@ INSTANCE Bloodfly	(Mst_Default_Bloodfly)
 
 INSTANCE YBloodfly	(Mst_Default_Bloodfly)
 {
-	name							=	"Mal· krvav· moucha";
+	name							=	"Mal√° krvav√° moucha";
 	
 	level							=	3;
 	

@@ -33,7 +33,7 @@ INSTANCE DIA_Richter_Hello(C_INFO)
 	condition	= DIA_Richter_Hello_Condition;
 	information	= DIA_Richter_Hello_Info;
 	permanent	= FALSE;
-	description = "Co tady dêláš?";
+	description = "Co tady dÄ™lÃ¡Å¡?";
 };                       
 
 FUNC INT DIA_Richter_Hello_Condition()
@@ -46,29 +46,29 @@ FUNC INT DIA_Richter_Hello_Condition()
 
 FUNC VOID DIA_Richter_Hello_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_Hello_15_00"); //Co tady dêláš?
-	AI_Output (self ,other,"DIA_Richter_Hello_10_01"); //Proè mê obtêuješ? Kdo vlastnê jsi?
-	AI_Output (other,self ,"DIA_Richter_Hello_15_02"); //Já, ehm...
-	AI_Output (self ,other,"DIA_Richter_Hello_10_03"); //Âekni, neznáme se odnêkud?
+	AI_Output (other,self ,"DIA_Richter_Hello_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output (self ,other,"DIA_Richter_Hello_10_01"); //ProÄ mÄ™ obtÄ™Å¾ujeÅ¡? Kdo vlastnÄ™ jsi?
+	AI_Output (other,self ,"DIA_Richter_Hello_15_02"); //JÃ¡, ehm...
+	AI_Output (self ,other,"DIA_Richter_Hello_10_03"); //Ã‚ekni, neznÃ¡me se odnÄ™kud?
 	
 	Info_ClearChoices (DIA_Richter_Hello);
 	Info_AddChoice (DIA_Richter_Hello,"Co si pamatuju, tak ne.",DIA_Richter_Hello_DontThinkSo);
-	Info_AddChoice (DIA_Richter_Hello,"Moná ano.",DIA_Richter_Hello_MayBe);
+	Info_AddChoice (DIA_Richter_Hello,"MoÅ¾nÃ¡ ano.",DIA_Richter_Hello_MayBe);
 };
 
 FUNC VOID DIA_Richter_Hello_DontThinkSo ()
 {
 	AI_Output (other,self ,"DIA_Richter_Hello_DontThinkSo_15_00"); //Co si pamatuju, tak ne.
-	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_01"); //To je zvláštní. Pâísahal bych, e u jsme se nêkde vidêli.
-	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_02"); //Nevadí, však jsi jen ubohı šupák. Všichni vypadáte stejnê.
+	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_01"); //To je zvlÃ¡Å¡tnÃ­. PÃ¢Ã­sahal bych, Å¾e uÅ¾ jsme se nÄ™kde vidÄ™li.
+	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_02"); //NevadÃ­, vÅ¡ak jsi jen ubohÃ½ Å¡upÃ¡k. VÅ¡ichni vypadÃ¡te stejnÄ™.
 };
 
 FUNC VOID DIA_Richter_Hello_MayBe ()
 {
-	AI_Output (other,self ,"DIA_Richter_Hello_MayBe_15_00"); //Moná ano.
-	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_01"); //Chtêlo by to trochu uctivêjší tón! S kım si vùbec myslíš, e mluvíš?
-	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_02"); //To nejmenší, co mùeš udêlat, je mluvit se mnou odpovídajícím tónem.
-	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_03"); //A teë se mi ztraã z oèí!
+	AI_Output (other,self ,"DIA_Richter_Hello_MayBe_15_00"); //MoÅ¾nÃ¡ ano.
+	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_01"); //ChtÄ™lo by to trochu uctivÄ™jÅ¡Ã­ tÃ³n! S kÃ½m si vÅ¯bec myslÃ­Å¡, Å¾e mluvÃ­Å¡?
+	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_02"); //To nejmenÅ¡Ã­, co mÅ¯Å¾eÅ¡ udÄ™lat, je mluvit se mnou odpovÃ­dajÃ­cÃ­m tÃ³nem.
+	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_03"); //A teÃ« se mi ztraÄƒ z oÄÃ­!
 	
 	AI_StopProcessInfos (self);
 };
@@ -103,17 +103,17 @@ FUNC VOID DIA_Richter_Perm_Info()
 	if (MIS_Lee_JudgeRichter == LOG_RUNNING)
 	&& ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG ))
 	{
-		AI_Output (self ,other,"DIA_Richter_Perm_10_01"); //Radêji bys mêl vypadnout, ty mizernej oldáku, ne zavolám stráe.
-		AI_Output (other,self ,"DIA_Richter_Perm_15_02"); //Klídek. Nepâišel jsem tê okrást. Hledám práci.
-		AI_Output (self ,other,"DIA_Richter_Perm_10_03"); //Á. Tak ty pro mê chceš pracovat. Tak to je samozâejmê jiná.
-		AI_Output (self ,other,"DIA_Richter_Perm_10_04"); //Ale má to jeden háèek. Nevím, jestli ti mohu vêâit. Budeš mi muset nejprve prokázat svou loajalitu.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_01"); //RadÄ™ji bys mÄ™l vypadnout, ty mizernej Å¾oldÃ¡ku, neÅ¾ zavolÃ¡m strÃ¡Å¾e.
+		AI_Output (other,self ,"DIA_Richter_Perm_15_02"); //KlÃ­dek. NepÃ¢iÅ¡el jsem tÄ™ okrÃ¡st. HledÃ¡m prÃ¡ci.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_03"); //Ã. Tak ty pro mÄ™ chceÅ¡ pracovat. Tak to je samozÃ¢ejmÄ™ jinÃ¡.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_04"); //Ale mÃ¡ to jeden hÃ¡Äek. NevÃ­m, jestli ti mohu vÄ™Ã¢it. BudeÅ¡ mi muset nejprve prokÃ¡zat svou loajalitu.
 		SCIstRichtersLakai = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Richter_Perm_10_05"); //Neâekl jsem snad jasnê, e s tebou nechci nic mít?
+		AI_Output (self ,other,"DIA_Richter_Perm_10_05"); //NeÃ¢ekl jsem snad jasnÄ™, Å¾e s tebou nechci nic mÃ­t?
 		AI_Output (other,self ,"DIA_Richter_Perm_15_06"); //Ne, ne tolika slovy.
-		AI_Output (self ,other,"DIA_Richter_Perm_10_07"); //Tak doufám, e ti to došlo teë.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_07"); //Tak doufÃ¡m, Å¾e ti to doÅ¡lo teÃ«.
 	};
 };
 
@@ -128,7 +128,7 @@ INSTANCE DIA_Richter_RichtersLakai (C_INFO)
 	condition	= DIA_Richter_RichtersLakai_Condition;
 	information	= DIA_Richter_RichtersLakai_Info;
 
-	description = "Otestuj si mê.";
+	description = "Otestuj si mÄ™.";
 };                       
 
 FUNC INT DIA_Richter_RichtersLakai_Condition()
@@ -142,29 +142,29 @@ FUNC INT DIA_Richter_RichtersLakai_Condition()
 
 FUNC VOID DIA_Richter_RichtersLakai_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_RichtersLakai_15_00"); //Otestuj si mê.
-	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_01"); //Mmh. Dobrá. Poslouchej. Pâines mi od ohnivıch mágù posvátné kladivo. Ukrıvají ho nêkde v podzemí svého kláštera.
-	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_02"); //Jestli to dokáeš splnit, moná budu uvaovat o tom, e bych si tê najal jako svého osobního stráce.
+	AI_Output (other,self ,"DIA_Richter_RichtersLakai_15_00"); //Otestuj si mÄ™.
+	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_01"); //Mmh. DobrÃ¡. Poslouchej. PÃ¢ines mi od ohnivÃ½ch mÃ¡gÅ¯ posvÃ¡tnÃ© kladivo. UkrÃ½vajÃ­ ho nÄ™kde v podzemÃ­ svÃ©ho klÃ¡Å¡tera.
+	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_02"); //Jestli to dokÃ¡Å¾eÅ¡ splnit, moÅ¾nÃ¡ budu uvaÅ¾ovat o tom, Å¾e bych si tÄ™ najal jako svÃ©ho osobnÃ­ho strÃ¡Å¾ce.
 	
 	Info_ClearChoices	(DIA_Richter_RichtersLakai);
-	Info_AddChoice	(DIA_Richter_RichtersLakai, "To mám jako okrást mágy? Nejsi trochu mimo?", DIA_Richter_RichtersLakai_nein );
-	Info_AddChoice	(DIA_Richter_RichtersLakai, "Dobrá.", DIA_Richter_RichtersLakai_ja );
+	Info_AddChoice	(DIA_Richter_RichtersLakai, "To mÃ¡m jako okrÃ¡st mÃ¡gy? Nejsi trochu mimo?", DIA_Richter_RichtersLakai_nein );
+	Info_AddChoice	(DIA_Richter_RichtersLakai, "DobrÃ¡.", DIA_Richter_RichtersLakai_ja );
 	
-	B_LogEntry (TOPIC_RichterLakai,"Soudce mi nevêâí. Musím mu prokázat svou loajalitu - ukrást ze sklepení kláštera ohnivıch mágù posvátné kladivo a pâinést mu je."); 
+	B_LogEntry (TOPIC_RichterLakai,"Soudce mi nevÄ™Ã¢Ã­. MusÃ­m mu prokÃ¡zat svou loajalitu - ukrÃ¡st ze sklepenÃ­ klÃ¡Å¡tera ohnivÃ½ch mÃ¡gÅ¯ posvÃ¡tnÃ© kladivo a pÃ¢inÃ©st mu je."); 
 
 	MIS_Richter_BringHolyHammer = LOG_RUNNING;
 };
 func void DIA_Richter_RichtersLakai_nein ()
 {
-	AI_Output			(other, self, "DIA_Richter_RichtersLakai_nein_15_00"); //To mám jako okrást mágy? Nejsi trochu mimo?
-	AI_Output			(self, other, "DIA_Richter_RichtersLakai_nein_10_01"); //V tom pâípadê táhni do pekel a pâestaà plıtvat mım èasem.
+	AI_Output			(other, self, "DIA_Richter_RichtersLakai_nein_15_00"); //To mÃ¡m jako okrÃ¡st mÃ¡gy? Nejsi trochu mimo?
+	AI_Output			(self, other, "DIA_Richter_RichtersLakai_nein_10_01"); //V tom pÃ¢Ã­padÄ™ tÃ¡hni do pekel a pÃ¢estaÅ• plÃ½tvat mÃ½m Äasem.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Richter_RichtersLakai_ja ()
 {
-	AI_Output			(other, self, "DIA_Richter_RichtersLakai_ja_15_00"); //Dobrá.
-	AI_Output			(self, other, "DIA_Richter_RichtersLakai_ja_10_01"); //Fajn. Ale pamatuj - jestli tê chytí, nikdy jsem o tobê neslyšel.
+	AI_Output			(other, self, "DIA_Richter_RichtersLakai_ja_15_00"); //DobrÃ¡.
+	AI_Output			(self, other, "DIA_Richter_RichtersLakai_ja_10_01"); //Fajn. Ale pamatuj - jestli tÄ™ chytÃ­, nikdy jsem o tobÄ™ neslyÅ¡el.
 	AI_StopProcessInfos (self);
 };
 
@@ -180,7 +180,7 @@ INSTANCE DIA_Richter_KillMorgahard (C_INFO)
 	condition	= DIA_Richter_KillMorgahard_Condition;
 	information	= DIA_Richter_KillMorgahard_Info;
 
-	description =	"Tady je posvátné kladivo mágù.";
+	description =	"Tady je posvÃ¡tnÃ© kladivo mÃ¡gÅ¯.";
 };                       
 
 FUNC INT DIA_Richter_KillMorgahard_Condition()
@@ -194,16 +194,16 @@ FUNC INT DIA_Richter_KillMorgahard_Condition()
 
 FUNC VOID DIA_Richter_KillMorgahard_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_KillMorgahard_15_00"); //Tady je posvátné kladivo mágù.
+	AI_Output (other,self ,"DIA_Richter_KillMorgahard_15_00"); //Tady je posvÃ¡tnÃ© kladivo mÃ¡gÅ¯.
 	B_GiveInvItems (other, self, Holy_Hammer_MIS,1);
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_01"); //Jsem opravdu pâekvapenı. Ty to myslíš vánê, co? Tady je tvá odmêna.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_01"); //Jsem opravdu pÃ¢ekvapenÃ½. Ty to myslÃ­Å¡ vÃ¡Å¾nÄ™, co? Tady je tvÃ¡ odmÄ™na.
 	CreateInvItems (self, ItMi_Gold, 300);									
 	B_GiveInvItems (self, other, ItMi_Gold, 300);					
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_02"); //Fajn. Kdy se to má takhle, tak to mám pro tebe ještê další úkol.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_03"); //Pâed nêkolika dny uteklo ze zdejšího vêzení pár trestancù.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_04"); //Ti zkurvysyni se schovali v horách. Nêkde smêrem ke Xardasovê nové vêi.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_05"); //Jejich vùdce se jmenuje Morgahard. Chci, abys ho zabil.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_06"); //Pospêš si, ne nám proklouzne.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_02"); //Fajn. KdyÅ¾ se to mÃ¡ takhle, tak to mÃ¡m pro tebe jeÅ¡tÄ™ dalÅ¡Ã­ Ãºkol.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_03"); //PÃ¢ed nÄ™kolika dny uteklo ze zdejÅ¡Ã­ho vÄ™zenÃ­ pÃ¡r trestancÅ¯.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_04"); //Ti zkurvysyni se schovali v horÃ¡ch. NÄ™kde smÄ™rem ke XardasovÄ™ novÃ© vÄ™Å¾i.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_05"); //Jejich vÅ¯dce se jmenuje Morgahard. Chci, abys ho zabil.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_06"); //PospÄ™Å¡ si, neÅ¾ nÃ¡m proklouzne.
 	
 	Wld_InsertNpc	(BDT_1030_Morgahard,"REICH"); 
 	Wld_InsertNpc	(BDT_1031_Fluechtling,"REICH"); 
@@ -216,7 +216,7 @@ FUNC VOID DIA_Richter_KillMorgahard_Info()
 
 	B_GivePlayerXP (XP_BringHolyHammer);
 	MIS_Richter_BringHolyHammer = LOG_SUCCESS;
-	B_LogEntry (TOPIC_RichterLakai,"Nêkteâí vêzni unikli spravedlnosti. Já je mám dostihnout a zabít jejich velitele Morgaharda. Nejspíš se ukrıvají v horách, kdesi smêrem ke Xardasovê nové vêi."); 
+	B_LogEntry (TOPIC_RichterLakai,"NÄ™kteÃ¢Ã­ vÄ™zni unikli spravedlnosti. JÃ¡ je mÃ¡m dostihnout a zabÃ­t jejich velitele Morgaharda. NejspÃ­Å¡ se ukrÃ½vajÃ­ v horÃ¡ch, kdesi smÄ™rem ke XardasovÄ™ novÃ© vÄ™Å¾i."); 
 	MIS_Richter_KillMorgahard = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 };	
@@ -232,7 +232,7 @@ INSTANCE DIA_Richter_KilledMorgahard (C_INFO)
 	condition	= DIA_Richter_KilledMorgahard_Condition;
 	information	= DIA_Richter_KilledMorgahard_Info;
 
-	description =	"Morgahard je mrtvı.";
+	description =	"Morgahard je mrtvÃ½.";
 };                       
 
 FUNC INT DIA_Richter_KilledMorgahard_Condition()
@@ -246,12 +246,12 @@ FUNC INT DIA_Richter_KilledMorgahard_Condition()
 
 FUNC VOID DIA_Richter_KilledMorgahard_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_KilledMorgahard_15_00"); //Morgahard je mrtvı.
-	AI_Output (self ,other,"DIA_Richter_KilledMorgahard_10_01"); //Á. Jsi dobrej chlap. Tady je tvoje odmêna.
+	AI_Output (other,self ,"DIA_Richter_KilledMorgahard_15_00"); //Morgahard je mrtvÃ½.
+	AI_Output (self ,other,"DIA_Richter_KilledMorgahard_10_01"); //Ã. Jsi dobrej chlap. Tady je tvoje odmÄ™na.
 	CreateInvItems (self, ItMi_Gold, 400);									
 	B_GiveInvItems (self, other, ItMi_Gold, 400);					
 	B_GivePlayerXP (XP_KillMorgahard);
-	B_LogEntry (TOPIC_RichterLakai,"Soudce byl zprávou o Morgahardovê smrti oèividnê nadšen. No, nechme ho bıt. Nesmím odboèovat od poslání, kterım mê povêâil Lee."); 
+	B_LogEntry (TOPIC_RichterLakai,"Soudce byl zprÃ¡vou o MorgahardovÄ™ smrti oÄividnÄ™ nadÅ¡en. No, nechme ho bÃ½t. NesmÃ­m odboÄovat od poslÃ¡nÃ­, kterÃ½m mÄ™ povÄ™Ã¢il Lee."); 
 	MIS_Richter_KillMorgahard = LOG_SUCCESS;
 };
 
@@ -267,7 +267,7 @@ INSTANCE DIA_Richter_KilledMorgahardPERM (C_INFO)
 	information	= DIA_Richter_KilledMorgahardPERM_Info;
 	permanent	 = 	TRUE;
 
-	description =	"Mùu pro tebe ještê nêco udêlat?";
+	description =	"MÅ¯Å¾u pro tebe jeÅ¡tÄ™ nÄ™co udÄ™lat?";
 };                       
 
 FUNC INT DIA_Richter_KilledMorgahardPERM_Condition()
@@ -281,8 +281,8 @@ FUNC INT DIA_Richter_KilledMorgahardPERM_Condition()
 
 FUNC VOID DIA_Richter_KilledMorgahardPERM_Info ()
 {	
-	AI_Output (other,self ,"DIA_Richter_KilledMorgahardPERM_15_00"); //Mùu pro tebe ještê nêco udêlat?
-	AI_Output (self ,other,"DIA_Richter_KilledMorgahardPERM_10_01"); //Teë zrovna ne. Moná pozdêji.
+	AI_Output (other,self ,"DIA_Richter_KilledMorgahardPERM_15_00"); //MÅ¯Å¾u pro tebe jeÅ¡tÄ™ nÄ™co udÄ™lat?
+	AI_Output (self ,other,"DIA_Richter_KilledMorgahardPERM_10_01"); //TeÃ« zrovna ne. MoÅ¾nÃ¡ pozdÄ™ji.
 };
 
 // ************************************************************
@@ -296,7 +296,7 @@ INSTANCE DIA_Richter_PermissionForShip (C_INFO)
 	condition	= DIA_Richter_PermissionForShip_Condition;
 	information	= DIA_Richter_PermissionForShip_Info;
 
-	description =	"Dej mi písemné povêâení pro paladinskou loë.";
+	description =	"Dej mi pÃ­semnÃ© povÄ™Ã¢enÃ­ pro paladinskou loÃ«.";
 };                       
 
 FUNC INT DIA_Richter_PermissionForShip_Condition()
@@ -309,17 +309,17 @@ FUNC INT DIA_Richter_PermissionForShip_Condition()
 
 FUNC VOID DIA_Richter_PermissionForShip_Info ()
 {	
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_00"); //Dej mi písemné povêâení pro paladinskou loë.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_01"); //(smích) Ty ses musel zbláznit. Co to po mnê chceš?
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_02"); //Slyšel jsi dobâe. Dej mi to písemné oprávnêní, nebo tê prásknu domobranê.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_03"); //(vrèí) Nenechám se vydírat! Ne od tebe! Nechám tê serat vlkùm, ty mizernej šmejde.
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_04"); //Morgahard napadl místodrícího na tvùj rozkaz. Mám dokument, kterı to dokazuje.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_05"); //(vrèí) Arrh.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_06"); //Toho budeš litovat. Nikdo mê nebude vydírat, ani by z toho vyváznul se zdravou kùí.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_07"); //Tady je to oprávnêní. A teë vypadni. Vyâídím si to s tebou pozdêji.
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_00"); //Dej mi pÃ­semnÃ© povÄ™Ã¢enÃ­ pro paladinskou loÃ«.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_01"); //(smÃ­ch) Ty ses musel zblÃ¡znit. Co to po mnÄ™ chceÅ¡?
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_02"); //SlyÅ¡el jsi dobÃ¢e. Dej mi to pÃ­semnÃ© oprÃ¡vnÄ™nÃ­, nebo tÄ™ prÃ¡sknu domobranÄ™.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_03"); //(vrÄÃ­) NenechÃ¡m se vydÃ­rat! Ne od tebe! NechÃ¡m tÄ™ seÅ¾rat vlkÅ¯m, ty mizernej Å¡mejde.
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_04"); //Morgahard napadl mÃ­stodrÅ¾Ã­cÃ­ho na tvÅ¯j rozkaz. MÃ¡m dokument, kterÃ½ to dokazuje.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_05"); //(vrÄÃ­) Arrh.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_06"); //Toho budeÅ¡ litovat. Nikdo mÄ™ nebude vydÃ­rat, aniÅ¾ by z toho vyvÃ¡znul se zdravou kÅ¯Å¾Ã­.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_07"); //Tady je to oprÃ¡vnÄ™nÃ­. A teÃ« vypadni. VyÃ¢Ã­dÃ­m si to s tebou pozdÄ™ji.
 	CreateInvItems (self,ItWr_ForgedShipLetter_Mis,1);
 	B_GiveInvItems (self,other,ItWr_ForgedShipLetter_Mis,1);
-	B_LogEntry (TOPIC_Ship,"S plnou mocí v kapse mohu získat loë, ne bys âekl švec. Jsem zvêdavı, co tomu âekne Lee."); 
+	B_LogEntry (TOPIC_Ship,"S plnou mocÃ­ v kapse mohu zÃ­skat loÃ«, neÅ¾ bys Ã¢ekl Å¡vec. Jsem zvÄ™davÃ½, co tomu Ã¢ekne Lee."); 
 	MIS_RichtersPermissionForShip = LOG_SUCCESS;
 	B_GivePlayerXP (XP_RichtersPermissionForShip);
 };
@@ -350,7 +350,7 @@ FUNC INT DIA_Richter_perm2_Condition()
 
 FUNC VOID DIA_Richter_perm2_Info ()
 {	
-	AI_Output (self ,other,"DIA_Richter_perm2_10_00"); //Ztraã se mi z oèí.
+	AI_Output (self ,other,"DIA_Richter_perm2_10_00"); //ZtraÄƒ se mi z oÄÃ­.
 	AI_StopProcessInfos (self);
 };
 
@@ -366,7 +366,7 @@ INSTANCE DIA_Richter_PICKPOCKET (C_INFO)
 	condition	= DIA_Richter_PICKPOCKET_Condition;
 	information	= DIA_Richter_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento klíè pùjde ukrást snadno.)";
+	description = "(Tento klÃ­Ä pÅ¯jde ukrÃ¡st snadno.)";
 };                       
 
 FUNC INT DIA_Richter_PICKPOCKET_Condition()

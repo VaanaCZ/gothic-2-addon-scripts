@@ -29,7 +29,7 @@ INSTANCE DIA_OCVLK_6_PEOPLE(C_INFO)
 	condition	= DIA_OCVLK_6_PEOPLE_Condition;
 	information	= DIA_OCVLK_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tady tomu velí?";
+	description = "Kdo tady tomu velÃ­?";
 };                       
 
 FUNC INT DIA_OCVLK_6_PEOPLE_Condition()
@@ -39,12 +39,12 @@ FUNC INT DIA_OCVLK_6_PEOPLE_Condition()
 
 FUNC VOID DIA_OCVLK_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_6_PEOPLE_15_00"); //Kdo tady tomu velí?
-	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_01"); //Garond má velení nad celou pevností - nebo alespoà nad tím, co z ní zbylo.
-	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_02"); //Ale sám se prakticky o nic nestará - leda když se nêkterý z jeho mužù dostane do potíží.
+	AI_Output (other, self, "DIA_OCVLK_6_PEOPLE_15_00"); //Kdo tady tomu velÃ­?
+	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_01"); //Garond mÃ¡ velenÃ­ nad celou pevnostÃ­ - nebo alespoÅ• nad tÃ­m, co z nÃ­ zbylo.
+	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_02"); //Ale sÃ¡m se prakticky o nic nestarÃ¡ - leda kdyÅ¾ se nÄ™kterÃ½ z jeho muÅ¾Å¯ dostane do potÃ­Å¾Ã­.
 	if (Npc_IsDead (Engor) == FALSE)
 	{
-		AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_03"); //Pokud chceš nêjaké vybavení, mêl bys zajít za Engorem. Najdeš ho v budovê naproti Garondovi.
+		AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_03"); //Pokud chceÅ¡ nÄ™jakÃ© vybavenÃ­, mÄ™l bys zajÃ­t za Engorem. NajdeÅ¡ ho v budovÄ™ naproti Garondovi.
 	};
 };
 
@@ -57,7 +57,7 @@ INSTANCE DIA_OCVLK_6_LOCATION(C_INFO)
 	condition	= DIA_OCVLK_6_LOCATION_Condition;
 	information	= DIA_OCVLK_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co mi mùžeš âíct o situaci v Hornickém údolí?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ct o situaci v HornickÃ©m ÃºdolÃ­?";
 };                       
 
 FUNC INT DIA_OCVLK_6_LOCATION_Condition()
@@ -71,11 +71,11 @@ FUNC INT DIA_OCVLK_6_LOCATION_Condition()
 
 FUNC VOID DIA_OCVLK_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_6_LOCATION_15_00"); //Co mi mùžeš âíct o situaci v Hornickém údolí?
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_01"); //Ta skâetí palisáda mi dêlá starosti. Radêji ani nechci vêdêt, co za ní skâeti skrývají.
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_02"); //Nejdâív se jich tu potulovalo jen pár - postavili palisádu. Pak jedné noci pâitáhli i s obléhacími stroji.
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_03"); //Mêli jsme štêstí a podaâilo se nám útok odrazit.
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_04"); //Za tou zdí se rozprostírá moâe. Pokud pâiplujou další lodê se skâety na palubê, nebudeme mít žádnou šanci.
+	AI_Output (other, self, "DIA_OCVLK_6_LOCATION_15_00"); //Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ct o situaci v HornickÃ©m ÃºdolÃ­?
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_01"); //Ta skÃ¢etÃ­ palisÃ¡da mi dÄ™lÃ¡ starosti. RadÄ™ji ani nechci vÄ™dÄ™t, co za nÃ­ skÃ¢eti skrÃ½vajÃ­.
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_02"); //NejdÃ¢Ã­v se jich tu potulovalo jen pÃ¡r - postavili palisÃ¡du. Pak jednÃ© noci pÃ¢itÃ¡hli i s oblÃ©hacÃ­mi stroji.
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_03"); //MÄ™li jsme Å¡tÄ™stÃ­ a podaÃ¢ilo se nÃ¡m Ãºtok odrazit.
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_04"); //Za tou zdÃ­ se rozprostÃ­rÃ¡ moÃ¢e. Pokud pÃ¢iplujou dalÅ¡Ã­ lodÄ™ se skÃ¢ety na palubÄ™, nebudeme mÃ­t Å¾Ã¡dnou Å¡anci.
 };
 
 // *************************************************************************
@@ -99,20 +99,20 @@ FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_01"); //Vstup do armády a bude se ti dobâe daâit, âíkali. A teë tohle.
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_02"); //Teë je pod trestem smrti zakázáno se jen pâiblížit k zásobám potravin. Zdá se, že se Garond bojí, že bychom mohli vyplenit zásoby a pak vzít kramle. (zatrpklý smích)
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_03"); //Všichni pochcípeme hlady, pokud nás teda dâív neusmaží ti zatracení draci!
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_01"); //Vstup do armÃ¡dy a bude se ti dobÃ¢e daÃ¢it, Ã¢Ã­kali. A teÃ« tohle.
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_02"); //TeÃ« je pod trestem smrti zakÃ¡zÃ¡no se jen pÃ¢iblÃ­Å¾it k zÃ¡sobÃ¡m potravin. ZdÃ¡ se, Å¾e se Garond bojÃ­, Å¾e bychom mohli vyplenit zÃ¡soby a pak vzÃ­t kramle. (zatrpklÃ½ smÃ­ch)
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_03"); //VÅ¡ichni pochcÃ­peme hlady, pokud nÃ¡s teda dÃ¢Ã­v neusmaÅ¾Ã­ ti zatracenÃ­ draci!
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_04"); //Drakobijci. Nenech se vysmát! Ti nic nezmùžou.
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_04"); //Drakobijci. Nenech se vysmÃ¡t! Ti nic nezmÅ¯Å¾ou.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_05"); //Âíká se, že všichni draci jsou mrtví! Teë máme šanci!
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_05"); //Ã‚Ã­kÃ¡ se, Å¾e vÅ¡ichni draci jsou mrtvÃ­! TeÃ« mÃ¡me Å¡anci!
 		};
 	};
 
@@ -120,11 +120,11 @@ FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_06"); //Tahle zpropadená ruda. Mêli bysme jí všechnu shodit dolù z cimbuâí. Pak by nás skâeti možná nechali na pokoji.
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_06"); //Tahle zpropadenÃ¡ ruda. MÄ™li bysme jÃ­ vÅ¡echnu shodit dolÅ¯ z cimbuÃ¢Ã­. Pak by nÃ¡s skÃ¢eti moÅ¾nÃ¡ nechali na pokoji.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_07"); //Ty smêšné bedny, které tak nedbale naházeli pâed vchod, nemùžou skâetùm nijak pâekazit jejich plány!
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_07"); //Ty smÄ™Å¡nÃ© bedny, kterÃ© tak nedbale nahÃ¡zeli pÃ¢ed vchod, nemÅ¯Å¾ou skÃ¢etÅ¯m nijak pÃ¢ekazit jejich plÃ¡ny!
 		};
 	};
 };

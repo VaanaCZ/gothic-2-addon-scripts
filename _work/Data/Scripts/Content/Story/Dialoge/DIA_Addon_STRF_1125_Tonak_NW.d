@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Tonak_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Tonak_NW_Hi_Condition;
 	information = DIA_Addon_Tonak_NW_Hi_Info;
 	permanent   = TRUE;
-	description = "Tak uû zase mak·ö na poli?";
+	description = "Tak u≈æ zase mak√°≈° na poli?";
 };
 FUNC INT DIA_Addon_Tonak_NW_Hi_Condition()
 {		
@@ -36,13 +36,13 @@ FUNC INT DIA_Addon_Tonak_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Tonak_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Tonak_NW_Hi_15_00");//Tak co, zase zp·tky na poli?
-	AI_Output (self, other, "DIA_Addon_Tonak_NW_Hi_03_01");//Hele, ten chlap mi zachr·nil ûivot! Jo, teÎ z toho pro mÍ kouk· dalöÌ pr·ce.
+	AI_Output (other, self, "DIA_Addon_Tonak_NW_Hi_15_00");//Tak co, zase zp√°tky na poli?
+	AI_Output (self, other, "DIA_Addon_Tonak_NW_Hi_03_01");//Hele, ten chlap mi zachr√°nil ≈æivot! Jo, te√´ z toho pro mƒô kouk√° dal≈°√≠ pr√°ce.
 	
 	if !Npc_IsDead (Egill)
 	&& !Npc_IsDead (Ehnim)
 	{
-		AI_Output (self, other, "DIA_Addon_Tonak_NW_Hi_03_02");//Zvl·ö„ s tÍmahle dvÍma trhlejma br·chama. »oveËe, ti banditi nebyli zas TAK öpatn˝!
+		AI_Output (self, other, "DIA_Addon_Tonak_NW_Hi_03_02");//Zvl√°≈°ƒÉ s tƒômahle dvƒôma trhlejma br√°chama. ƒåoveƒçe, ti banditi nebyli zas TAK ≈°patn√Ω!
 	};
 };
 // ************************************************************

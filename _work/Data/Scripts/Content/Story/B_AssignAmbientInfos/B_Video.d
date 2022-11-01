@@ -5,90 +5,90 @@
 func void B_Video()
 {
 	// ------ Intro ------
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_00"); //Jedinı vêzeà dokázal zmênit osud stovky ostatních.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_01"); //Zaplatil za to však vysokou cenu.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_02"); //Porazil Spáèe, znièil bariéru...
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_03"); //...ale zatímco ostatní vêzni uprchli, on zùstal pod hromadou suti.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_04"); //Byl jsem to já, kdo jej vyslal proti Spáèi.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_05"); //A jsem to opêt já, kdo jej pâivádí zpêt.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_06"); //Je slabı a mnohé zapomnêl.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_07"); //Ale je naivu...
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_08"); //Je zpátky!
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_00"); //JedinÃ½ vÄ™zeÅ• dokÃ¡zal zmÄ™nit osud stovky ostatnÃ­ch.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_01"); //Zaplatil za to vÅ¡ak vysokou cenu.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_02"); //Porazil SpÃ¡Äe, zniÄil bariÃ©ru...
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_03"); //...ale zatÃ­mco ostatnÃ­ vÄ™zni uprchli, on zÅ¯stal pod hromadou suti.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_04"); //Byl jsem to jÃ¡, kdo jej vyslal proti SpÃ¡Äi.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_05"); //A jsem to opÄ™t jÃ¡, kdo jej pÃ¢ivÃ¡dÃ­ zpÄ™t.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_06"); //Je slabÃ½ a mnohÃ© zapomnÄ™l.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_07"); //Ale je naÅ¾ivu...
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_08"); //Je zpÃ¡tky!
 	
 	// ------ Lagerfeuer ------
-	AI_Output (self, other, "INTRO_DiegoGorn_12_00"); //(u ohnê) Samozâejmê e ije. Cos myslel?
-	AI_Output (self, other, "INTRO_DiegoGorn_11_01"); //Doufejme, e...
-	AI_Output (self, other, "INTRO_DiegoGorn_12_02"); //(zachvêní zemê) Cítils to taky?
+	AI_Output (self, other, "INTRO_DiegoGorn_12_00"); //(u ohnÄ™) SamozÃ¢ejmÄ™ Å¾e Å¾ije. Cos myslel?
+	AI_Output (self, other, "INTRO_DiegoGorn_11_01"); //Doufejme, Å¾e...
+	AI_Output (self, other, "INTRO_DiegoGorn_12_02"); //(zachvÄ™nÃ­ zemÄ™) CÃ­tils to taky?
 	AI_Output (self, other, "INTRO_DiegoGorn_11_03"); //Co?
-	AI_Output (self, other, "INTRO_DiegoGorn_12_04"); //Zemê...
+	AI_Output (self, other, "INTRO_DiegoGorn_12_04"); //ZemÄ™...
 	
 	
 	// ------ Extro ------
-	AI_Output (other, self, "Extro_Tempel_15_01"); //(uasle) Xardasi! Co...
-	AI_Output (other, self, "Extro_Tempel_14_02"); //(naâíkavê) Teë ne...
-	AI_Output (other, self, "Extro_Tempel_14_03"); //(fanaticky) Jsem pâipraven... zvol mê! Ano...
+	AI_Output (other, self, "Extro_Tempel_15_01"); //(uÅ¾asle) Xardasi! Co...
+	AI_Output (other, self, "Extro_Tempel_14_02"); //(naÃ¢Ã­kavÄ™) TeÃ« ne...
+	AI_Output (other, self, "Extro_Tempel_14_03"); //(fanaticky) Jsem pÃ¢ipraven... zvol mÄ™! Ano...
 	AI_Output (other, self, "Extro_Tempel_15_04"); //(pro sebe) Kde je?
 	
 	// ------ Outro ------
-	AI_Output (self, other, "OUTRO_Xardas_14_00"); //(cituje) A èlovêk zabil bestii a ta sestoupila do Beliarovy âíše...
-	AI_Output (other, self, "OUTRO_Xardas_15_01"); //Xardasi! Co se vlastnê pâesnê stalo v Irdorathském chrámu?
-	AI_Output (self, other, "OUTRO_Xardas_14_02"); //S Innosovou pomocí jsi porazil ztêlesnêní zla.
-	AI_Output (self, other, "OUTRO_Xardas_14_03"); //A já si vzal jeho moc.
-	AI_Output (self, other, "OUTRO_Xardas_14_04"); //Byl to mùj jedinı cíl od chvíle, co jsem opustil kruh ohnê.
-	AI_Output (self, other, "OUTRO_Xardas_14_05"); //Abych ho dosáhl, pomáhal jsem ti v cestê za tvım cílem.
-	AI_Output (self, other, "OUTRO_Xardas_14_06"); //Co mi bylo zapovêzeno v chrámu Spáèe, se teë koneènê naplnilo.
-	AI_Output (self, other, "OUTRO_Xardas_14_07"); //Beliar si vybral mê.
-	AI_Output (other, self, "OUTRO_Xardas_15_08"); //Tak to teë nasloucháš bohu zla?
-	AI_Output (self, other, "OUTRO_Xardas_14_09"); //Ne. Neslouím Beliarovi o nic víc, ne ty nasloucháš Innosovi!
-	AI_Output (self, other, "OUTRO_Xardas_14_10"); //Ani bohové sami nevêdí, jakı osud je nám pâedurèen.
-	AI_Output (self, other, "OUTRO_Xardas_14_11"); //A já teprve teë zaèínám chápat, jaké cesty se mi zaèínají otevírat.
-	AI_Output (self, other, "OUTRO_Xardas_14_12"); //Ale jedna vêc je jistá. Ještê se uvidíme...
+	AI_Output (self, other, "OUTRO_Xardas_14_00"); //(cituje) A ÄlovÄ™k zabil bestii a ta sestoupila do Beliarovy Ã¢Ã­Å¡e...
+	AI_Output (other, self, "OUTRO_Xardas_15_01"); //Xardasi! Co se vlastnÄ™ pÃ¢esnÄ™ stalo v IrdorathskÃ©m chrÃ¡mu?
+	AI_Output (self, other, "OUTRO_Xardas_14_02"); //S Innosovou pomocÃ­ jsi porazil ztÄ™lesnÄ™nÃ­ zla.
+	AI_Output (self, other, "OUTRO_Xardas_14_03"); //A jÃ¡ si vzal jeho moc.
+	AI_Output (self, other, "OUTRO_Xardas_14_04"); //Byl to mÅ¯j jedinÃ½ cÃ­l od chvÃ­le, co jsem opustil kruh ohnÄ™.
+	AI_Output (self, other, "OUTRO_Xardas_14_05"); //Abych ho dosÃ¡hl, pomÃ¡hal jsem ti v cestÄ™ za tvÃ½m cÃ­lem.
+	AI_Output (self, other, "OUTRO_Xardas_14_06"); //Co mi bylo zapovÄ™zeno v chrÃ¡mu SpÃ¡Äe, se teÃ« koneÄnÄ™ naplnilo.
+	AI_Output (self, other, "OUTRO_Xardas_14_07"); //Beliar si vybral mÄ™.
+	AI_Output (other, self, "OUTRO_Xardas_15_08"); //Tak to teÃ« naslouchÃ¡Å¡ bohu zla?
+	AI_Output (self, other, "OUTRO_Xardas_14_09"); //Ne. NeslouÅ¾Ã­m Beliarovi o nic vÃ­c, neÅ¾ ty naslouchÃ¡Å¡ Innosovi!
+	AI_Output (self, other, "OUTRO_Xardas_14_10"); //Ani bohovÃ© sami nevÄ™dÃ­, jakÃ½ osud je nÃ¡m pÃ¢edurÄen.
+	AI_Output (self, other, "OUTRO_Xardas_14_11"); //A jÃ¡ teprve teÃ« zaÄÃ­nÃ¡m chÃ¡pat, jakÃ© cesty se mi zaÄÃ­najÃ­ otevÃ­rat.
+	AI_Output (self, other, "OUTRO_Xardas_14_12"); //Ale jedna vÄ™c je jistÃ¡. JeÅ¡tÄ™ se uvidÃ­me...
 	
-	// ------ Outro Xardas Kapitän ------
-	AI_Output (self, other, "OUTRO_Xardas_04_00"); //(volá) Vyplouváme!
+	// ------ Outro Xardas KapitÃ¤n ------
+	AI_Output (self, other, "OUTRO_Xardas_04_00"); //(volÃ¡) VyplouvÃ¡me!
 	
 	// ------ Drachenangriff ------
-	AI_Output (self, other, "Cutscene_Drachen_04_00"); //(dívá se do dálky, nêco vidí) Hmmm?
-	AI_Output (self, other, "Cutscene_Drachen_04_01"); //(huhàá) A do hajzlu!
-	AI_Output (self, other, "Cutscene_Drachen_04_02"); //(kašle, dáví) - (rùzné)
-	AI_Output (self, other, "Cutscene_Drachen_04_03"); //Aaaargh! (rùzné)
-	AI_Output (self, other, "Cutscene_Drachen_04_04"); //(táhlı smrtelnı vıkâik, 4 sekundy)
+	AI_Output (self, other, "Cutscene_Drachen_04_00"); //(dÃ­vÃ¡ se do dÃ¡lky, nÄ™co vidÃ­) Hmmm?
+	AI_Output (self, other, "Cutscene_Drachen_04_01"); //(huhÅ•Ã¡) A do hajzlu!
+	AI_Output (self, other, "Cutscene_Drachen_04_02"); //(kaÅ¡le, dÃ¡vÃ­) - (rÅ¯znÃ©)
+	AI_Output (self, other, "Cutscene_Drachen_04_03"); //Aaaargh! (rÅ¯znÃ©)
+	AI_Output (self, other, "Cutscene_Drachen_04_04"); //(tÃ¡hlÃ½ smrtelnÃ½ vÃ½kÃ¢ik, 4 sekundy)
 	
 	// ------ OrkSturm ------
-	AI_Output (self, other, "Cutscene_OrcSturm_04_00"); //Zavâete bránu!!! (rùzné)
-	AI_Output (self, other, "Cutscene_OrcSturm_04_01"); //Zastavte je!!! (rùzné)
-	AI_Output (self, other, "Cutscene_OrcSturm_04_02"); //Aaaargh! (rùzné)
+	AI_Output (self, other, "Cutscene_OrcSturm_04_00"); //ZavÃ¢ete brÃ¡nu!!! (rÅ¯znÃ©)
+	AI_Output (self, other, "Cutscene_OrcSturm_04_01"); //Zastavte je!!! (rÅ¯znÃ©)
+	AI_Output (self, other, "Cutscene_OrcSturm_04_02"); //Aaaargh! (rÅ¯znÃ©)
 	
 	// ------ Outro Credits ------
-	AI_Output (self, other, "OUTRO_Schiff_12_00"); //Jsme pâetíeni. Mêli bychom nêjaké zlato shodit pâes palubu.
-	AI_Output (other, self, "OUTRO_Schiff_15_01"); //Dej od toho zlata pracky pryè!
-	AI_Output (self, other, "OUTRO_Schiff_12_02"); //Hele, vánê by bylo lepší, kdyby...
-	AI_Output (other, self, "OUTRO_Schiff_15_03"); //U o tom nechci slyšet.
-	AI_Output (self, other, "OUTRO_Schiff_11_04"); //Slyšel jsem, e se válka se skâety vyvíjí špatnê.
+	AI_Output (self, other, "OUTRO_Schiff_12_00"); //Jsme pÃ¢etÃ­Å¾eni. MÄ™li bychom nÄ™jakÃ© zlato shodit pÃ¢es palubu.
+	AI_Output (other, self, "OUTRO_Schiff_15_01"); //Dej od toho zlata pracky pryÄ!
+	AI_Output (self, other, "OUTRO_Schiff_12_02"); //Hele, vÃ¡Å¾nÄ™ by bylo lepÅ¡Ã­, kdyby...
+	AI_Output (other, self, "OUTRO_Schiff_15_03"); //UÅ¾ o tom nechci slyÅ¡et.
+	AI_Output (self, other, "OUTRO_Schiff_11_04"); //SlyÅ¡el jsem, Å¾e se vÃ¡lka se skÃ¢ety vyvÃ­jÃ­ Å¡patnÄ™.
 	AI_Output (other, self, "OUTRO_Schiff_15_05"); //A?
-	AI_Output (self, other, "OUTRO_Schiff_11_06"); //Nejspíš nebude všechno to zlato kde utratit.
-	AI_Output (other, self, "OUTRO_Schiff_15_07"); //To zlato zùstane na palubê!
-	AI_Output (self, other, "OUTRO_Schiff_12_08"); //K èemu nám bude zlato, kdy v první bouâi pùjdeme ke dnu?
-	AI_Output (other, self, "OUTRO_Schiff_15_09"); //Ale já ádnou bouâi nevidím.
-	AI_Output (self, other, "OUTRO_Schiff_12_10"); //Zatím...
-	AI_Output (other, self, "OUTRO_Schiff_15_11"); //Klídek! Všechno dobâe dopadne!
+	AI_Output (self, other, "OUTRO_Schiff_11_06"); //NejspÃ­Å¡ nebude vÅ¡echno to zlato kde utratit.
+	AI_Output (other, self, "OUTRO_Schiff_15_07"); //To zlato zÅ¯stane na palubÄ™!
+	AI_Output (self, other, "OUTRO_Schiff_12_08"); //K Äemu nÃ¡m bude zlato, kdyÅ¾ v prvnÃ­ bouÃ¢i pÅ¯jdeme ke dnu?
+	AI_Output (other, self, "OUTRO_Schiff_15_09"); //Ale jÃ¡ Å¾Ã¡dnou bouÃ¢i nevidÃ­m.
+	AI_Output (self, other, "OUTRO_Schiff_12_10"); //ZatÃ­m...
+	AI_Output (other, self, "OUTRO_Schiff_15_11"); //KlÃ­dek! VÅ¡echno dobÃ¢e dopadne!
 	
 	//ADDON
-	AI_Output	(other, self, "DIA_Addon_AddonIntro_15_00"); //(udivenê) ...lidé?
-	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_01"); //(opovrlivê) Lidé jsou slabí.
-	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_02"); //(opovrlivê) Pâíliš snadno podléhají pokušením.
-	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_03"); //A tak si obvykle zahrávají se silami, kterım nerozumêjí a je nedokáou ovládat.
-	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_04"); //Ti, kdo ve své víâe ještê nezakolísali, u zaèali bojovat s nepâítelem.
+	AI_Output	(other, self, "DIA_Addon_AddonIntro_15_00"); //(udivenÄ™) ...lidÃ©?
+	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_01"); //(opovrÅ¾livÄ™) LidÃ© jsou slabÃ­.
+	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_02"); //(opovrÅ¾livÄ™) PÃ¢Ã­liÅ¡ snadno podlÃ©hajÃ­ pokuÅ¡enÃ­m.
+	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_03"); //A tak si obvykle zahrÃ¡vajÃ­ se silami, kterÃ½m nerozumÄ™jÃ­ a jeÅ¾ nedokÃ¡Å¾ou ovlÃ¡dat.
+	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_04"); //Ti, kdoÅ¾ ve svÃ© vÃ­Ã¢e jeÅ¡tÄ™ nezakolÃ­sali, uÅ¾ zaÄali bojovat s nepÃ¢Ã­telem.
 	
 	//ADDON - NEU
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_00"); //Po pádu bariéry a osvobození Spáèe Beliarùv hnêv ještê vzrostl.
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_01"); //Jak se píše ve starıch posvátnıch knihách, do tohoto svêta se vrátí mocnı artefakt.
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_02"); //(cituje) 'Kdy bùh temnot vyslal na prùzkum své sluebníky.'
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_03"); //A právê to se zrovna stalo. 
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_04"); //To hledání u zaèalo dávno!
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_05"); //Beliarovi sluebníci pâi svém pátrání znesvêcují nejstarší boí svatynê.
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_06"); //Beliarovi sluebníci znesvêcují nejstarší boí svatynê.
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_07"); //A tak se probudili stráci têchto posvátnıch míst. To jejich hnêv otâásá zemí!
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_08"); //Ten hnêv cítí kadı mocnêjší mág na tomto ostrovê. 
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_09"); //A nêkteâí u se pokusili té hrozbê èelit.
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_00"); //Po pÃ¡du bariÃ©ry a osvobozenÃ­ SpÃ¡Äe BeliarÅ¯v hnÄ™v jeÅ¡tÄ™ vzrostl.
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_01"); //Jak se pÃ­Å¡e ve starÃ½ch posvÃ¡tnÃ½ch knihÃ¡ch, do tohoto svÄ™ta se vrÃ¡tÃ­ mocnÃ½ artefakt.
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_02"); //(cituje) 'KdyÅ¾ bÅ¯h temnot vyslal na prÅ¯zkum svÃ© sluÅ¾ebnÃ­ky.'
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_03"); //A prÃ¡vÄ™ to se zrovna stalo. 
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_04"); //To hledÃ¡nÃ­ uÅ¾ zaÄalo dÃ¡vno!
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_05"); //Beliarovi sluÅ¾ebnÃ­ci pÃ¢i svÃ©m pÃ¡trÃ¡nÃ­ znesvÄ™cujÃ­ nejstarÅ¡Ã­ boÅ¾Ã­ svatynÄ™.
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_06"); //Beliarovi sluÅ¾ebnÃ­ci znesvÄ™cujÃ­ nejstarÅ¡Ã­ boÅ¾Ã­ svatynÄ™.
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_07"); //A tak se probudili strÃ¡Å¾ci tÄ™chto posvÃ¡tnÃ½ch mÃ­st. To jejich hnÄ™v otÃ¢Ã¡sÃ¡ zemÃ­!
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_08"); //Ten hnÄ™v cÃ­tÃ­ kaÅ¾dÃ½ mocnÄ™jÅ¡Ã­ mÃ¡g na tomto ostrovÄ™. 
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_09"); //A nÄ™kteÃ¢Ã­ uÅ¾ se pokusili tÃ© hrozbÄ™ Äelit.
 };

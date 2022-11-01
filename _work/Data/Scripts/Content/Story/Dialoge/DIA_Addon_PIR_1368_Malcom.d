@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Malcom_EXIT(C_INFO)
 	condition	= DIA_Addon_Malcom_EXIT_Condition;
 	information	= DIA_Addon_Malcom_EXIT_Info;
 	permanent	= TRUE;
-	description = "MusÌm jÌt.";
+	description = "Mus√≠m j√≠t.";
 };                       
 FUNC INT DIA_Addon_Malcom_EXIT_Condition()
 {
@@ -16,17 +16,17 @@ FUNC INT DIA_Addon_Malcom_EXIT_Condition()
 };
 func VOID DIA_Addon_Malcom_EXIT_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Malcom_perm_15_00"); //MusÌm jÌt.
+	AI_Output (other, self, "DIA_Addon_Malcom_perm_15_00"); //Mus√≠m j√≠t.
 	
 	if (MalcomBotschaft == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Malcom_perm_04_01"); //Nenech se seûrat od tÍch potvor. Tady je to fakt nebezpeËn˝.
+		AI_Output (self, other, "DIA_Addon_Malcom_perm_04_01"); //Nenech se se≈ærat od tƒôch potvor. Tady je to fakt nebezpeƒçn√Ω.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_03"); //Hele, aû dorazÌö do t·bora, vy‚iÎ ode mÍ nÍco Henrymu.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //Tady ty stromy jsou sakra odoln˝.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //Takûe si na d‚evo bude muset jeötÍ ‡·kou chvÌli poËkat. Vy‚iÎ mu to.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_03"); //Hele, a≈æ doraz√≠≈° do t√°bora, vy√¢i√´ ode mƒô nƒôco Henrymu.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //Tady ty stromy jsou sakra odoln√Ω.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //Tak≈æe si na d√¢evo bude muset je≈°tƒô ≈ï√°kou chv√≠li poƒçkat. Vy√¢i√´ mu to.
 		MalcomBotschaft = TRUE;
 	};
 	
@@ -92,8 +92,8 @@ func int DIA_Addon_Malcom_Hello_Condition ()
 
 func void DIA_Addon_Malcom_Hello_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_01"); //Ty nejsi zdejöÌ, co?
-	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_02"); //Kouk·m, ûe jdeö zdaleka.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_01"); //Ty nejsi zdej≈°√≠, co?
+	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_02"); //Kouk√°m, ≈æe jde≈° zdaleka.
 };
 
 // ************************************************************
@@ -106,7 +106,7 @@ instance DIA_Addon_Malcom_WasMachen		(C_INFO)
 	condition	= DIA_Addon_Malcom_WasMachen_Condition;
 	information	= DIA_Addon_Malcom_WasMachen_Info;
 
-	description	= "M·ö pr·ci?";
+	description	= "M√°≈° pr√°ci?";
 };
 func int DIA_Addon_Malcom_WasMachen_Condition ()
 {
@@ -114,20 +114,20 @@ func int DIA_Addon_Malcom_WasMachen_Condition ()
 };
 func void DIA_Addon_Malcom_WasMachen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_00"); //M·ö pr·ci?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_01"); //Ani se neptej. Henry chce, abych tu vyk·cel vöecky stromy.
+	AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_00"); //M√°≈° pr√°ci?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_01"); //Ani se neptej. Henry chce, abych tu vyk√°cel v≈°ecky stromy.
 	if (Henry.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
 		AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_02"); //Henry?
-		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //Velitel naöeho oddÌlu.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //Velitel na≈°eho odd√≠lu.
 	};
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_04"); //Furt post·v· u t·bora a m· plnou hubu kec˘.
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Vo nadöen˝ sluûbÍ naöÌ spoleËnosti a podobn˝ ûv·sty.
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_06"); //Ale s·m nehne ani prstem.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_04"); //Furt post√°v√° u t√°bora a m√° plnou hubu kec≈Ø.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Vo nad≈°en√Ω slu≈æbƒô na≈°√≠ spoleƒçnosti a podobn√Ω ≈æv√°sty.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_06"); //Ale s√°m nehne ani prstem.
 };
 
 // ************************************************************
-// 					Holz - Nachricht f¸r Henry
+// 					Holz - Nachricht f√ºr Henry
 // ************************************************************
 instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 {
@@ -136,7 +136,7 @@ instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 	condition	 = 	DIA_Addon_Malcom_Entertrupp_Condition;
 	information	 = 	DIA_Addon_Malcom_Entertrupp_Info;
 
-	description	 = 	"Henry je v·ö velitel?";
+	description	 = 	"Henry je v√°≈° velitel?";
 };
 func int DIA_Addon_Malcom_Entertrupp_Condition ()
 {
@@ -147,12 +147,12 @@ func int DIA_Addon_Malcom_Entertrupp_Condition ()
 };
 func void DIA_Addon_Malcom_Entertrupp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //Henry je v·ö öÈf?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //Jo, velitel naöÌ n·jezdnick˝ jednotky.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //N·ö KAPIT¡N je Greg.
+	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //Henry je v√°≈° ≈°√©f?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //Jo, velitel na≈°√≠ n√°jezdnick√Ω jednotky.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //N√°≈° KAPIT√ÅN je Greg.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //Ale ten tu teÎ nenÌ.
+		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //Ale ten tu te√´ nen√≠.
 	};
 };
 
@@ -166,7 +166,7 @@ instance DIA_Addon_Malcom_Lager		(C_INFO)
 	condition	= DIA_Addon_Malcom_Lager_Condition;
 	information	= DIA_Addon_Malcom_Lager_Info;
 
-	description	= "Kde je v·ö t·bor?";
+	description	= "Kde je v√°≈° t√°bor?";
 };
 func int DIA_Addon_Malcom_Lager_Condition ()
 {
@@ -177,8 +177,8 @@ func int DIA_Addon_Malcom_Lager_Condition ()
 };
 func void DIA_Addon_Malcom_Lager_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_Lager_15_00"); //Kde je v·ö t·bor?
-	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_01"); //BÍû tady touhle cestou na z·pad a dojdeö tam.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_02"); //Henryho urËitÍ hned uvidÌö, jak tam nÍkde post·v·.
+	AI_Output	(other, self, "DIA_Addon_Malcom_Lager_15_00"); //Kde je v√°≈° t√°bor?
+	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_01"); //Bƒô≈æ tady touhle cestou na z√°pad a dojde≈° tam.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_02"); //Henryho urƒçitƒô hned uvid√≠≈°, jak tam nƒôkde post√°v√°.
 };
 

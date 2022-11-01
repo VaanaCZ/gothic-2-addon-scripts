@@ -5,14 +5,14 @@
 CLASS C_SVM
 {
 	// ------ B_Say_GuildGreetings ------
-	var string MILGreetings;				//Miliz gr¸ﬂt Miliz oer Paladin
-	var string PALGreetings;				//Paladin gr¸ﬂt Paladin oder Magier
+	var string MILGreetings;				//Miliz gr√º√üt Miliz oer Paladin
+	var string PALGreetings;				//Paladin gr√º√üt Paladin oder Magier
 	var string Weather;						//So ein Mistwetter!
 	
 	// ------ B_Say_AttackReason ------
-	var string IGetYouStill;				//Upset-NSC sieht Spieler w‰hrned seiner Angry-Time wieder. Greift mit altem AttackReason an.
+	var string IGetYouStill;				//Upset-NSC sieht Spieler w√§hrned seiner Angry-Time wieder. Greift mit altem AttackReason an.
 	var string DieEnemy;					//Feind wird angegriffen
-	var string DieMonster;					//gef‰hrliches Monster wird angegriffen
+	var string DieMonster;					//gef√§hrliches Monster wird angegriffen
 	var string Addon_DieMonster;
 	var string Addon_DieMonster2;
 	var string DirtyThief;					//Dieb wird angegriffen
@@ -20,42 +20,42 @@ CLASS C_SVM
 	var string SheepKiller;					//Mensch greift Schaf an
 	var string SheepKillerMonster;			//Monster greift Schaf an
 	var string YouMurderer;					//Mensch hat Menschen umgebracht (kein Feind)
-	var string DieStupidBeast;				//Torwachen schlagen ungef‰hliches Monster tot, das versucht durchs Tor zu gehen	
+	var string DieStupidBeast;				//Torwachen schlagen ungef√§hliches Monster tot, das versucht durchs Tor zu gehen	
 	var string YouDareHitMe;				//SC hat NSC geschlagen
 	var	string YouAskedForIt;				//SC hat trotz Aufforderung seine Waffe NICHT weggesteckt
 	var string ThenIBeatYouOutOfHere;		//SC hat trotz Aufforderung Raum NICHT verlassen 
 	var string WhatDidYouDoInThere;			//Wache sieht SC aus einem verbotenen Raum rauskommen und greift an
-	var string WillYouStopFighting;			//Wache beendet Kampf, greift T‰ter an
+	var string WillYouStopFighting;			//Wache beendet Kampf, greift T√§ter an
 	
 	// ------ B_Say_AttackEND ------
 	var string KillEnemy;					//Finishing-Move
-	var string EnemyKilled;					//NSC hat Feind getˆtet
-	var string MonsterKilled;				//NSC hat gef‰hrliches Monster getˆtet
+	var string EnemyKilled;					//NSC hat Feind get√∂tet
+	var string MonsterKilled;				//NSC hat gef√§hrliches Monster get√∂tet
 	var string Addon_MonsterKilled;			
 	var string Addon_MonsterKilled2;	
 	var string ThiefDown;					//NSC hat Item-Dieb niedergeschlagen
 	var string RumfummlerDown;				//NSC hat verbotenes-MOBSI-Benutzer niedergeschlagen
 	var string SheepAttackerDown;			//NSC hat human SheepAttacker oder SheepKiller umgehauen
-	var string KillMurderer;				//Mˆrder finishen
-	var string StupidBeastKilled;			//GateGuards tˆten neutrales Monster, das vorbeikam
+	var string KillMurderer;				//M√∂rder finishen
+	var string StupidBeastKilled;			//GateGuards t√∂ten neutrales Monster, das vorbeikam
 	var string NeverHitMeAgain;				//NSC hat jemand niedergeschlagen, der ihn angegriffen hat
 	var string YouBetterShouldHaveListened;	//NSC hat jemed niedergeschlagen, der die Waffe nicht weggesteckt hat
 	var string GetUpAndBeGone;				//NSC hat einen Eindringling im Portalraum niedergeschlagen
 	var string NeverEnterRoomAgain;			//NSC hat Spieler, der aus verbotenem Portalraum kam niedergeschlagen
-	var string ThereIsNoFightingHere;		//Wache hat T‰ter einer Schl‰gerei (derjenige, der angefangen hat) niedergeschlagen
+	var string ThereIsNoFightingHere;		//Wache hat T√§ter einer Schl√§gerei (derjenige, der angefangen hat) niedergeschlagen
 
 	// ------ C_WantToFlee ------ 
 	var string SpareMe;						//Tu mir nichts!
-	var string RunAway;						//Scheiﬂe! Nichts wie weg!		
+	var string RunAway;						//Schei√üe! Nichts wie weg!		
 
 	// ------ C_WantToCallGuardsForFight ------
 	var	string Alarm;						//Wache ruft Wache
 	var string Guards;						//Harter Bursche ruft Wache
-	var string Help;						//B¸rger ruft Hilfe
+	var string Help;						//B√ºrger ruft Hilfe
 		
 	// ------ B_AssessMurder ------
-	var string GoodMonsterKill;				//Monster getˆtet - NSC findet das toll
-	var string GoodKill;					//Mensch getˆtet - NSC findet das toll (war sein Feind)
+	var string GoodMonsterKill;				//Monster get√∂tet - NSC findet das toll
+	var string GoodKill;					//Mensch get√∂tet - NSC findet das toll (war sein Feind)
 	
 	// ------ B_AssessTalk ------
 	var string NOTNOW;						//wenn RefuseTalk Counter aktiv
@@ -66,7 +66,7 @@ CLASS C_SVM
 	// ------ ZS_ClearRoom ------
 	var string GetOutOfHere;				//Spieler in verbotenem Raum. Harter Bursche: Raus hier!
 	var string WhyAreYouInHere;				//Spieler in verbotenem Raum. Weicher Bursche: Was willst du hier?
-	var string YesGoOutOfHere;				//Spieler verl‰ﬂt verboten Raum artig wieder
+	var string YesGoOutOfHere;				//Spieler verl√§√üt verboten Raum artig wieder
 
 	// ------ ZS_ObservePlayer ------
 	var string WhatsThisSupposedToBe;		//NSC sieht Spieler schleichen
@@ -94,10 +94,10 @@ CLASS C_SVM
 	
 	// ------ ZS_WatchFight ------
 	var	string TheresAFight;				//NSC entdeckt einen Kampf, und findet das toll
-	var string OhMyGodItsAFight;			//NSC entdeckt einen Kampf, und findet das best¸tzend (B¸rger)
+	var string OhMyGodItsAFight;			//NSC entdeckt einen Kampf, und findet das best√ºtzend (B√ºrger)
 	var string GoodVictory;					//Dem Sieger zujubeln
 	var string NotBad;						//'Nicht schlecht...' - Kampfende - Freund wurde von Nicht-Freund besiegt
-	var string OhMyGodHesDown;				//Best¸rzung ¸ber brutales Niederschlagen
+	var string OhMyGodHesDown;				//Best√ºrzung √ºber brutales Niederschlagen
 	var string CheerFriend01;				//Freund landet	einen Treffer. 'Immer in die Fresse!'
 	var string CheerFriend02;
 	var string CheerFriend03;
@@ -110,21 +110,21 @@ CLASS C_SVM
 	
 	// ------ TA_Sleep ------
 	var string GetOutOfMyBed;				//Raus aus meinem Bett!
-	var string Awake;						//NSC wacht aus dem Zustand Sleep wieder auf (Aufwachen, r‰keln)
+	var string Awake;						//NSC wacht aus dem Zustand Sleep wieder auf (Aufwachen, r√§keln)
 	
 	// ------ B_AssignAmbientNEWS ------
-	var string ABS_COMMANDER;				//Ich hˆrte, du warst beim Kommandanten und hast die Sache wieder in Ordnung gebracht.
-	var string ABS_MONASTERY;				//Ich hˆrte, du warst bei Vater Parlan und hast Buﬂe getan.
-	var string ABS_FARM;					//Ich hˆrte, du warst bei Lee und und hast die Sache wieder in Ordnung gebracht.
+	var string ABS_COMMANDER;				//Ich h√∂rte, du warst beim Kommandanten und hast die Sache wieder in Ordnung gebracht.
+	var string ABS_MONASTERY;				//Ich h√∂rte, du warst bei Vater Parlan und hast Bu√üe getan.
+	var string ABS_FARM;					//Ich h√∂rte, du warst bei Lee und und hast die Sache wieder in Ordnung gebracht.
 	var string ABS_GOOD;
 	// ---------------------------------
-	var string SHEEPKILLER_CRIME; 			//Einfach unsere Schafe zu schlachten! Mach, daﬂ du hier wegkommst!
-	var string ATTACK_CRIME;				//Mit miesen Schl‰gern rede ich nicht!
+	var string SHEEPKILLER_CRIME; 			//Einfach unsere Schafe zu schlachten! Mach, da√ü du hier wegkommst!
+	var string ATTACK_CRIME;				//Mit miesen Schl√§gern rede ich nicht!
 	var string THEFT_CRIME;					//Geh mir aus den Augen, dreckiger Dieb!
-	var string MURDER_CRIME;				//Mit gemeinen Mˆrdern rede ich nicht.
+	var string MURDER_CRIME;				//Mit gemeinen M√∂rdern rede ich nicht.
 	// ---------------------------------
-	var string PAL_CITY_CRIME; 				//Du bist eine Schande f¸r deinen Orden! Lord Hagen wird toben vor Wut!
-	var string MIL_CITY_CRIME;				//Du bist eine Schande f¸r die Stadtwache! Lord Andre wird dir das sicher austreiben!
+	var string PAL_CITY_CRIME; 				//Du bist eine Schande f√ºr deinen Orden! Lord Hagen wird toben vor Wut!
+	var string MIL_CITY_CRIME;				//Du bist eine Schande f√ºr die Stadtwache! Lord Andre wird dir das sicher austreiben!
 	var string CITY_CRIME;					//Lord Andre wird von deiner Tat erfahren!
 	// ---------------------------------
 	var string MONA_CRIME;					//Dein Frevel wird Vater Parlan sicherlich nicht erfreuen!
@@ -137,34 +137,34 @@ CLASS C_SVM
 	var string TOUGHGUY_PLAYERATTACK;		//Spieler hat einen ToughGuy angegriffen und den Kampf abgebrochen	
 	
 	// ------ GOLD ------
-	var string GOLD_1000;					//1000 Goldst¸cke.
-	var string GOLD_950;					//950 Goldst¸cke.
-	var string GOLD_900;					//900 Goldst¸cke.
-	var string GOLD_850;					//850 Goldst¸cke.
-	var string GOLD_800;					//800 Goldst¸cke.
-	var string GOLD_750;					//750 Goldst¸cke.
-	var string GOLD_700;					//700 Goldst¸cke.
-	var string GOLD_650;					//650 Goldst¸cke.
-	var string GOLD_600;					//600 GOldst¸cke.
-	var string GOLD_550;					//550 Goldst¸cke.
-	var string GOLD_500;					//500 Goldst¸cke.
-	var string GOLD_450;					//450 Goldst¸cke.
-	var string GOLD_400;					//400 Goldst¸cke.
-	var string GOLD_350;					//350 Goldst¸cke.
-	var string GOLD_300;					//300 Goldst¸cke.
-	var string GOLD_250;					//250 Goldst¸cke.
-	var string GOLD_200;					//200 Goldst¸cke.
-	var string GOLD_150;					//150 Goldst¸cke.
-	var string GOLD_100;					//100 Goldst¸cke.
-	var string GOLD_90;						//90 Goldst¸cke.
-	var string GOLD_80;						//80 Goldst¸cke.
-	var string GOLD_70;						//70 Goldst¸cke.
-	var string GOLD_60;						//60 Goldst¸cke.
-	var string GOLD_50;						//50 Goldst¸cke.
-	var string GOLD_40;						//40 Goldst¸cke.
-	var string GOLD_30;						//30 Goldst¸cke.
-	var string GOLD_20;						//20 Goldst¸cke.
-	var string GOLD_10;						//10 Goldst¸cke.
+	var string GOLD_1000;					//1000 Goldst√ºcke.
+	var string GOLD_950;					//950 Goldst√ºcke.
+	var string GOLD_900;					//900 Goldst√ºcke.
+	var string GOLD_850;					//850 Goldst√ºcke.
+	var string GOLD_800;					//800 Goldst√ºcke.
+	var string GOLD_750;					//750 Goldst√ºcke.
+	var string GOLD_700;					//700 Goldst√ºcke.
+	var string GOLD_650;					//650 Goldst√ºcke.
+	var string GOLD_600;					//600 GOldst√ºcke.
+	var string GOLD_550;					//550 Goldst√ºcke.
+	var string GOLD_500;					//500 Goldst√ºcke.
+	var string GOLD_450;					//450 Goldst√ºcke.
+	var string GOLD_400;					//400 Goldst√ºcke.
+	var string GOLD_350;					//350 Goldst√ºcke.
+	var string GOLD_300;					//300 Goldst√ºcke.
+	var string GOLD_250;					//250 Goldst√ºcke.
+	var string GOLD_200;					//200 Goldst√ºcke.
+	var string GOLD_150;					//150 Goldst√ºcke.
+	var string GOLD_100;					//100 Goldst√ºcke.
+	var string GOLD_90;						//90 Goldst√ºcke.
+	var string GOLD_80;						//80 Goldst√ºcke.
+	var string GOLD_70;						//70 Goldst√ºcke.
+	var string GOLD_60;						//60 Goldst√ºcke.
+	var string GOLD_50;						//50 Goldst√ºcke.
+	var string GOLD_40;						//40 Goldst√ºcke.
+	var string GOLD_30;						//30 Goldst√ºcke.
+	var string GOLD_20;						//20 Goldst√ºcke.
+	var string GOLD_10;						//10 Goldst√ºcke.
 	
 	// ------ B_Say_Smalltalk (TA_Smalltalk) ------
 	VAR	string Smalltalk01;				// ...wenn Du meinst...
@@ -172,25 +172,25 @@ CLASS C_SVM
 	VAR	string Smalltalk03;				// ...war nicht besonders schlau....
 	VAR	string Smalltalk04;				// ...ich halt mich da lieber raus...
 	VAR	string Smalltalk05;				// ...das ist wirklich nicht mein Problem...
-	VAR	string Smalltalk06;				// ...war doch klar, daﬂ das ƒrger gibt...
-	VAR	string Smalltalk07;				// ...aber behalt's f¸r Dich, muﬂ nicht gleich jeder wissen...
+	VAR	string Smalltalk06;				// ...war doch klar, da√ü das √Ñrger gibt...
+	VAR	string Smalltalk07;				// ...aber behalt's f√ºr Dich, mu√ü nicht gleich jeder wissen...
 	VAR	string Smalltalk08;				// ...das passiert mir nicht nochmal...
-	VAR	string Smalltalk09;				// ...an der Gechichte muﬂ wohl doch was dran sein...
-	VAR	string Smalltalk10;				// ...man muﬂ eben aufpassen was man rumerz‰hlt...
+	VAR	string Smalltalk09;				// ...an der Gechichte mu√ü wohl doch was dran sein...
+	VAR	string Smalltalk10;				// ...man mu√ü eben aufpassen was man rumerz√§hlt...
 	VAR	string Smalltalk11;				// ...solange ich damit nichts zu tun habe...
-	VAR	string Smalltalk12;				// ...man darf auch nicht alles glauben, was man hˆrt...
+	VAR	string Smalltalk12;				// ...man darf auch nicht alles glauben, was man h√∂rt...
 	VAR	string Smalltalk13;				// ...in seiner Haut will ich trotzdem nicht stecken...
 	VAR	string Smalltalk14;				// ...immer wieder die selbe Leier...
 	VAR	string Smalltalk15;				// ...manche lernen eben garnichts dazu...
-	VAR	string Smalltalk16;				// ...fr¸her w‰re das ganz anders gelaufen...
+	VAR	string Smalltalk16;				// ...fr√ºher w√§re das ganz anders gelaufen...
 	VAR	string Smalltalk17;				// ...gequatscht wird viel...
-	VAR	string Smalltalk18;				// ...ich hˆr nicht mehr auf das Gefasel...
-	VAR	string Smalltalk19;				// ...verlaﬂ Dich auf jemanden und Du bist verlassen, das ist eben so...
-	VAR	string Smalltalk20;				// ...ich glaube kaum, daﬂ sich daran was ‰ndern wird...
+	VAR	string Smalltalk18;				// ...ich h√∂r nicht mehr auf das Gefasel...
+	VAR	string Smalltalk19;				// ...verla√ü Dich auf jemanden und Du bist verlassen, das ist eben so...
+	VAR	string Smalltalk20;				// ...ich glaube kaum, da√ü sich daran was √§ndern wird...
 	VAR	string Smalltalk21;				// ...wahrscheinlich hast Du recht...
-	VAR	string Smalltalk22;				// ...erstmal abwarten. Es wird nichts so heiﬂ gegessen, wie es gekocht wird...
-	VAR	string Smalltalk23;				// ...ich dachte, das w‰re schon lange gekl‰rt, aber das ist wohl nicht so...
-	VAR	string Smalltalk24;				// ...laﬂ uns lieber ¸ber was anderes reden...
+	VAR	string Smalltalk22;				// ...erstmal abwarten. Es wird nichts so hei√ü gegessen, wie es gekocht wird...
+	VAR	string Smalltalk23;				// ...ich dachte, das w√§re schon lange gekl√§rt, aber das ist wohl nicht so...
+	VAR	string Smalltalk24;				// ...la√ü uns lieber √ºber was anderes reden...
 	//Tough Guy (SLD/MIL/DJG)
 	VAR	string Smalltalk25;				// ...der war doch sturzbetrunken...							
 	VAR	string Smalltalk26;				// ...mit mir kann man sowas nicht machen...			
@@ -198,11 +198,11 @@ CLASS C_SVM
 	//ProInnos (NOV/KDF/PAL)
 	VAR	string Smalltalk28;				// ...so steht es in den heiligen Schriften...							
 	VAR	string Smalltalk29;				// ...ich handle stets in Innos Namen...			
-	VAR	string Smalltalk30;				// ...niemand darf gegen die gˆttliche Ordnung verstoﬂen...
+	VAR	string Smalltalk30;				// ...niemand darf gegen die g√∂ttliche Ordnung versto√üen...
 		
 	// ------ Lehrer-Kommentare ------
 	var string NoLearnNoPoints			;	//NSC-Lehrer verbietet Steigerung - keine Lernpunkte!
-	var string NoLearnOverPersonalMAX	;	//NSC-Lehrer verbietet Steigerung ‹BER sein persˆnliches Lehrer-Maximum
+	var string NoLearnOverPersonalMAX	;	//NSC-Lehrer verbietet Steigerung √úBER sein pers√∂nliches Lehrer-Maximum
 	var string NoLearnYoureBetter		;   //NSC-Lehrer - MAX ist schlechter als oder gleich wie Spieler
 	var string YouLearnedSomething		;   //SC hat etwas gelernt
 
@@ -235,16 +235,16 @@ CLASS C_SVM
 	var string HAFEN_2_UNTERSTADT		;
 
 	// ------ Kampf ------
-	var	string Dead				;			// Tˆdlich verletzt
+	var	string Dead				;			// T√∂dlich verletzt
 	VAR	string Aargh_1			;			// Treffer kassiert im Kampf	
 	VAR	string Aargh_2			;			// Treffer kassiert im Kampf	
 	VAR	string Aargh_3			;			// Treffer kassiert im Kampf	
 	
-	var string ADDON_WRONGARMOR;			//Sc hat unangemessene R¸stung an				//Default
-	var string ADDON_WRONGARMOR_SLD;		//Beide SLD/DJG und falsche R¸stung
-	var string ADDON_WRONGARMOR_MIL;		//Beide MIL/PAL	und falsche R¸stung
-	var string ADDON_WRONGARMOR_KDF;		//Beide KDF und falsche R¸stung
-	var string ADDON_NOARMOR_BDT;			//self ist BAndite und SC hat keine R¸stung an.
+	var string ADDON_WRONGARMOR;			//Sc hat unangemessene R√ºstung an				//Default
+	var string ADDON_WRONGARMOR_SLD;		//Beide SLD/DJG und falsche R√ºstung
+	var string ADDON_WRONGARMOR_MIL;		//Beide MIL/PAL	und falsche R√ºstung
+	var string ADDON_WRONGARMOR_KDF;		//Beide KDF und falsche R√ºstung
+	var string ADDON_NOARMOR_BDT;			//self ist BAndite und SC hat keine R√ºstung an.
 	
 	var string ADDON_DIEBANDIT;				//Stirb du dreckiger Bandit
 	var string ADDON_DIRTYPIRATE;			//Piratenpack
@@ -313,7 +313,7 @@ CLASS C_SVM
 // **********************************
 // NSCs
 // ----
-// SVMs m¸ssen immer "SVM_x" heissen, 
+// SVMs m√ºssen immer "SVM_x" heissen, 
 // wobei x die VoiceNummer ist.	
 // **********************************
 
@@ -326,207 +326,207 @@ instance SVM_0 (C_SVM)
 instance SVM_1 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_1_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_1_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_1_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_1_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_1_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_1_IGetYouStill"				;//Tak jsem tÍ p‚ece jen dostal!
+	IGetYouStill				= 	"SVM_1_IGetYouStill"				;//Tak jsem tƒô p√¢ece jen dostal!
 	DieEnemy					=	"SVM_1_DieEnemy"					;//Proto jsi tady!
-	DieMonster					=	"SVM_1_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_1_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_1_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_1_SheepKiller"					;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_1_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	DieMonster					=	"SVM_1_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_1_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_1_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_1_SheepKiller"					;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_1_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_1_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_1_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_1_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_1_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_1_ThenIBeatYouOutOfHere"		;//Tak to tÍ odsud budu muset VYKOPAT!
-	WhatDidYouDoInThere			=	"SVM_1_WhatDidYouDoInThere"			;//Tak co jsi tam teda dÍlal, no?!
-	WillYouStopFighting			=	"SVM_1_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû!
+	DieStupidBeast				=	"SVM_1_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_1_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_1_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_1_ThenIBeatYouOutOfHere"		;//Tak to tƒô odsud budu muset VYKOPAT!
+	WhatDidYouDoInThere			=	"SVM_1_WhatDidYouDoInThere"			;//Tak co jsi tam teda dƒôlal, no?!
+	WillYouStopFighting			=	"SVM_1_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_1_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_1_EnemyKilled"					;//Trochu velk˝ sousto, co, ty b‚Ìdile!
-	MonsterKilled				=	"SVM_1_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_1_ThiefDown"					;//Uû se mÍ nikdy nepokouöej okr·st!
-	rumfummlerDown				=	"SVM_1_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_1_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_1_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_1_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_1_NeverHitMeAgain"				;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_1_YouBetterShouldHaveListened"	;//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_1_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_1_NeverEnterRoomAgain"			;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_1_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö? Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_1_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_1_EnemyKilled"					;//Trochu velk√Ω sousto, co, ty b√¢√≠dile!
+	MonsterKilled				=	"SVM_1_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_1_ThiefDown"					;//U≈æ se mƒô nikdy nepokou≈°ej okr√°st!
+	rumfummlerDown				=	"SVM_1_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_1_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_1_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_1_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_1_NeverHitMeAgain"				;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_1_YouBetterShouldHaveListened"	;//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_1_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_1_NeverEnterRoomAgain"			;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_1_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°? Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_1_SpareMe"						;//ProstÍ mÍ nech b˝t!
-	RunAway						= 	"SVM_1_RunAway"						;//Do hajzlu! Pad·m pryË!
+	SpareMe						=	"SVM_1_SpareMe"						;//Prostƒô mƒô nech b√Ωt!
+	RunAway						= 	"SVM_1_RunAway"						;//Do hajzlu! Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_1_Alarm"						;//POPLACH!
-	Guards						=	"SVM_1_Guards"						;//STR¡éE!
+	Guards						=	"SVM_1_Guards"						;//STR√Å≈ΩE!
 	Help						=	"SVM_1_Help"						;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_1_GoodMonsterKill"				;//(vol·) Dobr· pr·ce - o jednu öpinavou bestii mÌ‡!
-	GoodKill					= 	"SVM_1_GoodKill"					;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_1_GoodMonsterKill"				;//(vol√°) Dobr√° pr√°ce - o jednu ≈°pinavou bestii m√≠≈ï!
+	GoodKill					= 	"SVM_1_GoodKill"					;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_1_NOTNOW"						;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_1_NOTNOW"						;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_1_RunCoward"					;//(hlasitÍ k‚iËÌ) Hej, st˘j, ty öpinavËe!
+	RunCoward					=	"SVM_1_RunCoward"					;//(hlasitƒô k√¢iƒç√≠) Hej, st≈Øj, ty ≈°pinavƒçe!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_1_GetOutOfHere"				;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_1_WhyAreYouInHere"				;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_1_WhyAreYouInHere"				;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_1_YesGoOutOfHere"				;//Jo, pakuj se odsud!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_1_WhatsThisSupposedToBe"		;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_1_YouDisturbedMySlumber"		;//(probudÌ se) K Ëertu, co se dÍje?
+	WhatsThisSupposedToBe		=	"SVM_1_WhatsThisSupposedToBe"		;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_1_YouDisturbedMySlumber"		;//(probud√≠ se) K ƒçertu, co se dƒôje?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_1_ITookYourGold"				;//Zlato! Fajn, to si vezmu - jen tak pro zaË·tek.
-	ShitNoGold					=	"SVM_1_ShitNoGold"					;//Ten mizera u sebe nem· û·dn˝ zlato.
-	ITakeYourWeapon				=	"SVM_1_ITakeYourWeapon"				;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_1_ITookYourGold"				;//Zlato! Fajn, to si vezmu - jen tak pro zaƒç√°tek.
+	ShitNoGold					=	"SVM_1_ShitNoGold"					;//Ten mizera u sebe nem√° ≈æ√°dn√Ω zlato.
+	ITakeYourWeapon				=	"SVM_1_ITakeYourWeapon"				;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_1_WhatAreYouDoing"				;//(varovnÍ) Hej! Dej si bacha!
+	WhatAreYouDoing				=	"SVM_1_WhatAreYouDoing"				;//(varovnƒô) Hej! Dej si bacha!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_1_LookingForTroubleAgain"		;//(agresivnÍ) JeötÍ nem·ö dost?
-	StopMagic					=	"SVM_1_StopMagic"					;//Nep‚ibliûuj se ke mnÍ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_1_ISaidStopMagic"				;//P‚esta‡ s tou magiÌ! M·ö snad nÍco s uöima!?
-	WeaponDown					=	"SVM_1_WeaponDown"					;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_1_ISaidWeaponDown"				;//Seö snad hluchej, nebo co? ¬ekl jsem: Dej pryË tu zbra‡!
+	LookingForTroubleAgain		=	"SVM_1_LookingForTroubleAgain"		;//(agresivnƒô) Je≈°tƒô nem√°≈° dost?
+	StopMagic					=	"SVM_1_StopMagic"					;//Nep√¢ibli≈æuj se ke mnƒô s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_1_ISaidStopMagic"				;//P√¢esta≈ï s tou magi√≠! M√°≈° snad nƒôco s u≈°ima!?
+	WeaponDown					=	"SVM_1_WeaponDown"					;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_1_ISaidWeaponDown"				;//Se≈° snad hluchej, nebo co? √Çekl jsem: Dej pryƒç tu zbra≈ï!
 	WiseMove					=	"SVM_1_WiseMove"					;//Ani to nebolelo, co?
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_1_NextTimeYoureInForIt"		;//(pro sebe) JeötÍ se uvidÌ.
+	NextTimeYoureInForIt		=	"SVM_1_NextTimeYoureInForIt"		;//(pro sebe) Je≈°tƒô se uvid√≠.
 	OhMyHead					=	"SVM_1_OhMyHead"					;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_1_TheresAFight"				;//(dychtivÍ) KoneËnÍ se nÍco dÍje!
-	OhMyGodItsAFight			=	"SVM_1_OhMyGodItsAFight"			;//(vystraöenÍ) Vyml·tÌ si navz·jem mozky z hlavy.
-	GoodVictory					=	"SVM_1_GoodVictory"					;//(zl˝ smÌch) Koledoval si o to!
-	NotBad						= 	"SVM_1_NotBad"						;//(souhlasnÍ) To nebylo v˘bec öpatnÈ.
-	OhMyGodHesDown				=	"SVM_1_OhMyGodHesDown"				;//(pro sebe) Takov˝ surovec...
+	TheresAFight				=	"SVM_1_TheresAFight"				;//(dychtivƒô) Koneƒçnƒô se nƒôco dƒôje!
+	OhMyGodItsAFight			=	"SVM_1_OhMyGodItsAFight"			;//(vystra≈°enƒô) Vyml√°t√≠ si navz√°jem mozky z hlavy.
+	GoodVictory					=	"SVM_1_GoodVictory"					;//(zl√Ω sm√≠ch) Koledoval si o to!
+	NotBad						= 	"SVM_1_NotBad"						;//(souhlasnƒô) To nebylo v≈Øbec ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_1_OhMyGodHesDown"				;//(pro sebe) Takov√Ω surovec...
 	CheerFriend01				=	"SVM_1_CheerFriend01"				;//Jo, to je ono!
-	CheerFriend02				=	"SVM_1_CheerFriend02"				;//Tak na co Ëek·ö?
-	CheerFriend03				=	"SVM_1_CheerFriend03"				;//V˝bornÍ!
+	CheerFriend02				=	"SVM_1_CheerFriend02"				;//Tak na co ƒçek√°≈°?
+	CheerFriend03				=	"SVM_1_CheerFriend03"				;//V√Ωbornƒô!
 	Ooh01						=	"SVM_1_Ooh01"						;//Jen se z toho nezvencni!
-	Ooh02						=	"SVM_1_Ooh02"						;//Ukaû mu, kdo je tady öÈf!
+	Ooh02						=	"SVM_1_Ooh02"						;//Uka≈æ mu, kdo je tady ≈°√©f!
 	Ooh03						=	"SVM_1_Ooh03"						;//Do hajzlu!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_1_WhatWasThat"					;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_1_WhatWasThat"					;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_1_GetOutOfMyBed"					;//Vypadni z mÈ postele!
-	Awake						= "SVM_1_Awake"							;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_1_GetOutOfMyBed"					;//Vypadni z m√© postele!
+	Awake						= "SVM_1_Awake"							;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_1_ABS_COMMANDER"					;//Slyöel jsem, ûe jsi zaöel za velitelem a dal vÍci do po‚·dku.
-	ABS_MONASTERY				= "SVM_1_ABS_MONASTERY"					;//Slyöel jsem, ûe jsi zaöel za otcem Parlanem a vyzpovÌdal ses mu ze sv˝ch h‚Ìch˘.
-	ABS_FARM					= "SVM_1_ABS_FARM"						;//¬Ìk· se, ûe jsi zaöel za Leem a uklidnil situaci.
-	ABS_GOOD					= "SVM_1_ABS_GOOD"						;//To je dob‚e.
+	ABS_COMMANDER				= "SVM_1_ABS_COMMANDER"					;//Sly≈°el jsem, ≈æe jsi za≈°el za velitelem a dal vƒôci do po√¢√°dku.
+	ABS_MONASTERY				= "SVM_1_ABS_MONASTERY"					;//Sly≈°el jsem, ≈æe jsi za≈°el za otcem Parlanem a vyzpov√≠dal ses mu ze sv√Ωch h√¢√≠ch≈Ø.
+	ABS_FARM					= "SVM_1_ABS_FARM"						;//√Ç√≠k√° se, ≈æe jsi za≈°el za Leem a uklidnil situaci.
+	ABS_GOOD					= "SVM_1_ABS_GOOD"						;//To je dob√¢e.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_1_SHEEPKILLER_CRIME"				;//Takhle vraûdit naöe ovce! Vypadni, vole!
-	ATTACK_CRIME				= "SVM_1_ATTACK_CRIME"					;//S mizernejma gr·zlama se nebavÌm!
-	THEFT_CRIME					= "SVM_1_THEFT_CRIME"					;//Jdi mi z oËÌ, ty öpinavej zlodÍji!
+	SHEEPKILLER_CRIME			= "SVM_1_SHEEPKILLER_CRIME"				;//Takhle vra≈ædit na≈°e ovce! Vypadni, vole!
+	ATTACK_CRIME				= "SVM_1_ATTACK_CRIME"					;//S mizernejma gr√°zlama se nebav√≠m!
+	THEFT_CRIME					= "SVM_1_THEFT_CRIME"					;//Jdi mi z oƒç√≠, ty ≈°pinavej zlodƒôji!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_1_PAL_CITY_CRIME"				;//Jsi ostudou svÈho ‚·du! Lord Hagen se bude zlobit!
-	MIL_CITY_CRIME				= "SVM_1_MIL_CITY_CRIME"				;//Jsi ostudou mÍstsk˝ch str·ûÌ! Lord Andre tÍ jeötÍ nauËÌ zp˘sob˘m!
-	CITY_CRIME					= "SVM_1_CITY_CRIME"					;//Lord Andre se dozvÌ o tom, cos provedl!
+	PAL_CITY_CRIME				= "SVM_1_PAL_CITY_CRIME"				;//Jsi ostudou sv√©ho √¢√°du! Lord Hagen se bude zlobit!
+	MIL_CITY_CRIME				= "SVM_1_MIL_CITY_CRIME"				;//Jsi ostudou mƒôstsk√Ωch str√°≈æ√≠! Lord Andre tƒô je≈°tƒô nauƒç√≠ zp≈Øsob≈Øm!
+	CITY_CRIME					= "SVM_1_CITY_CRIME"					;//Lord Andre se dozv√≠ o tom, cos provedl!
 	// -------------------------
-	MONA_CRIME					= "SVM_1_MONA_CRIME"					;//Otec Parlan nebude nadöen˝, aû uslyöÌ o tv˝ch h‚ÌöÌch!
-	FARM_CRIME					= "SVM_1_FARM_CRIME"					;//Lee ti d· co proto! JeötÍ uvidÌö, co sis nadrobil!
-	OC_CRIME					= "SVM_1_OC_CRIME"						;//Velitel Garond po tobÍ bude chtÌt vysvÍtlenÌ!
+	MONA_CRIME					= "SVM_1_MONA_CRIME"					;//Otec Parlan nebude nad≈°en√Ω, a≈æ usly≈°√≠ o tv√Ωch h√¢√≠≈°√≠ch!
+	FARM_CRIME					= "SVM_1_FARM_CRIME"					;//Lee ti d√° co proto! Je≈°tƒô uvid√≠≈°, co sis nadrobil!
+	OC_CRIME					= "SVM_1_OC_CRIME"						;//Velitel Garond po tobƒô bude cht√≠t vysvƒôtlen√≠!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_1_TOUGHGUY_ATTACKLOST"			;//Tak dobr·, dobr·, vyhr·l jsi. Co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_1_TOUGHGUY_ATTACKWON"			;//(nafoukanÍ) M·m ti znovu uk·zat, kdo je tady p·nem?
-	TOUGHGUY_PLAYERATTACK		= "SVM_1_TOUGHGUY_PLAYERATTACK"			;//ZkouöÌö to na mÍ znovu, co?
+	TOUGHGUY_ATTACKLOST			= "SVM_1_TOUGHGUY_ATTACKLOST"			;//Tak dobr√°, dobr√°, vyhr√°l jsi. Co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_1_TOUGHGUY_ATTACKWON"			;//(nafoukanƒô) M√°m ti znovu uk√°zat, kdo je tady p√°nem?
+	TOUGHGUY_PLAYERATTACK		= "SVM_1_TOUGHGUY_PLAYERATTACK"			;//Zkou≈°√≠≈° to na mƒô znovu, co?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_1_GOLD_1000"						;//1000 zlat˝ch.
-	GOLD_950					= "SVM_1_GOLD_950"						;//950 zlat˝ch.
-	GOLD_900					= "SVM_1_GOLD_900"						;//900 zlat˝ch.
-	GOLD_850					= "SVM_1_GOLD_850"						;//850 zlat˝ch.
-	GOLD_800					= "SVM_1_GOLD_800"						;//800 zlat˝ch.
-	GOLD_750					= "SVM_1_GOLD_750"						;//750 zlat˝ch.
-	GOLD_700					= "SVM_1_GOLD_700"						;//700 zlat˝ch.
-	GOLD_650					= "SVM_1_GOLD_650"						;//650 zlat˝ch.
-	GOLD_600					= "SVM_1_GOLD_600"						;//600 zlat˝ch.
-	GOLD_550					= "SVM_1_GOLD_550"						;//550 zlat˝ch.
-	GOLD_500					= "SVM_1_GOLD_500"						;//500 zlat˝ch.
-	GOLD_450					= "SVM_1_GOLD_450"						;//450 zlat˝ch.
-	GOLD_400					= "SVM_1_GOLD_400"						;//400 zlat˝ch.
-	GOLD_350					= "SVM_1_GOLD_350"						;//350 zlat˝ch.
-	GOLD_300					= "SVM_1_GOLD_300"						;//300 zlat˝ch.
-	GOLD_250					= "SVM_1_GOLD_250"						;//250 zlat˝ch.
-	GOLD_200					= "SVM_1_GOLD_200"						;//200 zlat˝ch.
-	GOLD_150					= "SVM_1_GOLD_150"						;//150 zlat˝ch.
-	GOLD_100					= "SVM_1_GOLD_100"						;//100 zlat˝ch.
-	GOLD_90						= "SVM_1_GOLD_90"						;//90 zlat˝ch.
-	GOLD_80						= "SVM_1_GOLD_80"						;//80 zlat˝ch.
-	GOLD_70						= "SVM_1_GOLD_70"						;//70 zlat˝ch.
-	GOLD_60						= "SVM_1_GOLD_60"						;//60 zlat˝ch.
-	GOLD_50						= "SVM_1_GOLD_50"						;//50 zlat˝ch.
-	GOLD_40						= "SVM_1_GOLD_40"						;//40 zlat˝ch.
-	GOLD_30						= "SVM_1_GOLD_30"						;//30 zlat˝ch.
-	GOLD_20						= "SVM_1_GOLD_20"						;//20 zlat˝ch.
-	GOLD_10						= "SVM_1_GOLD_10"						;//10 zlat˝ch.
+	GOLD_1000					= "SVM_1_GOLD_1000"						;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_1_GOLD_950"						;//950 zlat√Ωch.
+	GOLD_900					= "SVM_1_GOLD_900"						;//900 zlat√Ωch.
+	GOLD_850					= "SVM_1_GOLD_850"						;//850 zlat√Ωch.
+	GOLD_800					= "SVM_1_GOLD_800"						;//800 zlat√Ωch.
+	GOLD_750					= "SVM_1_GOLD_750"						;//750 zlat√Ωch.
+	GOLD_700					= "SVM_1_GOLD_700"						;//700 zlat√Ωch.
+	GOLD_650					= "SVM_1_GOLD_650"						;//650 zlat√Ωch.
+	GOLD_600					= "SVM_1_GOLD_600"						;//600 zlat√Ωch.
+	GOLD_550					= "SVM_1_GOLD_550"						;//550 zlat√Ωch.
+	GOLD_500					= "SVM_1_GOLD_500"						;//500 zlat√Ωch.
+	GOLD_450					= "SVM_1_GOLD_450"						;//450 zlat√Ωch.
+	GOLD_400					= "SVM_1_GOLD_400"						;//400 zlat√Ωch.
+	GOLD_350					= "SVM_1_GOLD_350"						;//350 zlat√Ωch.
+	GOLD_300					= "SVM_1_GOLD_300"						;//300 zlat√Ωch.
+	GOLD_250					= "SVM_1_GOLD_250"						;//250 zlat√Ωch.
+	GOLD_200					= "SVM_1_GOLD_200"						;//200 zlat√Ωch.
+	GOLD_150					= "SVM_1_GOLD_150"						;//150 zlat√Ωch.
+	GOLD_100					= "SVM_1_GOLD_100"						;//100 zlat√Ωch.
+	GOLD_90						= "SVM_1_GOLD_90"						;//90 zlat√Ωch.
+	GOLD_80						= "SVM_1_GOLD_80"						;//80 zlat√Ωch.
+	GOLD_70						= "SVM_1_GOLD_70"						;//70 zlat√Ωch.
+	GOLD_60						= "SVM_1_GOLD_60"						;//60 zlat√Ωch.
+	GOLD_50						= "SVM_1_GOLD_50"						;//50 zlat√Ωch.
+	GOLD_40						= "SVM_1_GOLD_40"						;//40 zlat√Ωch.
+	GOLD_30						= "SVM_1_GOLD_30"						;//30 zlat√Ωch.
+	GOLD_20						= "SVM_1_GOLD_20"						;//20 zlat√Ωch.
+	GOLD_10						= "SVM_1_GOLD_10"						;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_1_Smalltalk01"					;//...v·ûnÍ si myslÌö...
-	Smalltalk02					= "SVM_1_Smalltalk02"					;//...vöechno je moûnÈ...
-	Smalltalk03					= "SVM_1_Smalltalk03"					;//...mÍl si to rozmyslet...
-	Smalltalk04					= "SVM_1_Smalltalk04"					;//...jako bych uû tak nemÍl dost problÈm˘...
-	Smalltalk05					= "SVM_1_Smalltalk05"					;//...kdo to ‚ekl...
-	Smalltalk06					= "SVM_1_Smalltalk06"					;//...z toho budou jen dalöÌ problÈmy...
-	Smalltalk07					= "SVM_1_Smalltalk07"					;//...drbalo se tam o vöem moûnÈm...
-	Smalltalk08					= "SVM_1_Smalltalk08"					;//...nemÍl jsem to dÍlat...
-	Smalltalk09					= "SVM_1_Smalltalk09"					;//...to vöechno jsou jen ‚eËi...
-	Smalltalk10					= "SVM_1_Smalltalk10"					;//...radÍji bys mÍl zjistit, kdo to ‚Ìkal...
-	Smalltalk11					= "SVM_1_Smalltalk11"					;//...chtÍl jsem ti to ‚Ìct d‚Ìv...
-	Smalltalk12					= "SVM_1_Smalltalk12"					;//...nikdo se mÍ neptal...
-	Smalltalk13					= "SVM_1_Smalltalk13"					;//...mÍl bys mÌt soucit s chud·kem...
-	Smalltalk14					= "SVM_1_Smalltalk14"					;//...to nenÌ nic novÈho...
-	Smalltalk15					= "SVM_1_Smalltalk15"					;//...je to ˙plnÍ jasnÈ...
-	Smalltalk16					= "SVM_1_Smalltalk16"					;//...nemÍl ses mÍ pt·t, co...
-	Smalltalk17					= "SVM_1_Smalltalk17"					;//...takhle to nemohlo jÌt vÍËnÍ...
-	Smalltalk18					= "SVM_1_Smalltalk18"					;//...vöak vÌö, co myslÌm...
-	Smalltalk19					= "SVM_1_Smalltalk19"					;//...je to p‚esnÍ tak, jak jsem ‚Ìkal...
-	Smalltalk20					= "SVM_1_Smalltalk20"					;//...uû to nem˘ûe nic zmÍnit...
-	Smalltalk21					= "SVM_1_Smalltalk21"					;//...proË mi o tom nikdo ne‚ekl d‚Ìv...
-	Smalltalk22					= "SVM_1_Smalltalk22"					;//...poËkejme a uvidÌme, co se stane...
-	Smalltalk23					= "SVM_1_Smalltalk23"					;//...nÍkterÈ problÈmy se vy‚eöÌ samy...
-	Smalltalk24					= "SVM_1_Smalltalk24"					;//...uû o tom nechci nic slyöet...
+	Smalltalk01					= "SVM_1_Smalltalk01"					;//...v√°≈ænƒô si mysl√≠≈°...
+	Smalltalk02					= "SVM_1_Smalltalk02"					;//...v≈°echno je mo≈æn√©...
+	Smalltalk03					= "SVM_1_Smalltalk03"					;//...mƒôl si to rozmyslet...
+	Smalltalk04					= "SVM_1_Smalltalk04"					;//...jako bych u≈æ tak nemƒôl dost probl√©m≈Ø...
+	Smalltalk05					= "SVM_1_Smalltalk05"					;//...kdo to √¢ekl...
+	Smalltalk06					= "SVM_1_Smalltalk06"					;//...z toho budou jen dal≈°√≠ probl√©my...
+	Smalltalk07					= "SVM_1_Smalltalk07"					;//...drbalo se tam o v≈°em mo≈æn√©m...
+	Smalltalk08					= "SVM_1_Smalltalk08"					;//...nemƒôl jsem to dƒôlat...
+	Smalltalk09					= "SVM_1_Smalltalk09"					;//...to v≈°echno jsou jen √¢eƒçi...
+	Smalltalk10					= "SVM_1_Smalltalk10"					;//...radƒôji bys mƒôl zjistit, kdo to √¢√≠kal...
+	Smalltalk11					= "SVM_1_Smalltalk11"					;//...chtƒôl jsem ti to √¢√≠ct d√¢√≠v...
+	Smalltalk12					= "SVM_1_Smalltalk12"					;//...nikdo se mƒô neptal...
+	Smalltalk13					= "SVM_1_Smalltalk13"					;//...mƒôl bys m√≠t soucit s chud√°kem...
+	Smalltalk14					= "SVM_1_Smalltalk14"					;//...to nen√≠ nic nov√©ho...
+	Smalltalk15					= "SVM_1_Smalltalk15"					;//...je to √∫plnƒô jasn√©...
+	Smalltalk16					= "SVM_1_Smalltalk16"					;//...nemƒôl ses mƒô pt√°t, co...
+	Smalltalk17					= "SVM_1_Smalltalk17"					;//...takhle to nemohlo j√≠t vƒôƒçnƒô...
+	Smalltalk18					= "SVM_1_Smalltalk18"					;//...v≈°ak v√≠≈°, co mysl√≠m...
+	Smalltalk19					= "SVM_1_Smalltalk19"					;//...je to p√¢esnƒô tak, jak jsem √¢√≠kal...
+	Smalltalk20					= "SVM_1_Smalltalk20"					;//...u≈æ to nem≈Ø≈æe nic zmƒônit...
+	Smalltalk21					= "SVM_1_Smalltalk21"					;//...proƒç mi o tom nikdo ne√¢ekl d√¢√≠v...
+	Smalltalk22					= "SVM_1_Smalltalk22"					;//...poƒçkejme a uvid√≠me, co se stane...
+	Smalltalk23					= "SVM_1_Smalltalk23"					;//...nƒôkter√© probl√©my se vy√¢e≈°√≠ samy...
+	Smalltalk24					= "SVM_1_Smalltalk24"					;//...u≈æ o tom nechci nic sly≈°et...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_1_Smalltalk25"					;//...zaËal pÌt...
+	Smalltalk25					= "SVM_1_Smalltalk25"					;//...zaƒçal p√≠t...
 	Smalltalk26					= "SVM_1_Smalltalk26"					;//...nechci dopadnout takhle...
-	Smalltalk27					= "SVM_1_Smalltalk27"					;//...vöichni utekli jak vyplaöenÌ kr·lÌci, z˘stal jsem ˙plnÍ s·m...
+	Smalltalk27					= "SVM_1_Smalltalk27"					;//...v≈°ichni utekli jak vypla≈°en√≠ kr√°l√≠ci, z≈Østal jsem √∫plnƒô s√°m...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_1_Smalltalk28"					;//...tak stojÌ v PÌsmu...
-	Smalltalk29					= "SVM_1_Smalltalk29"					;//...vûdycky jsem konal ve jmÈnu Innose...
-	Smalltalk30					= "SVM_1_Smalltalk30"					;//... nikdo se nesmÌ protivit v˘li boûÌ...
+	Smalltalk28					= "SVM_1_Smalltalk28"					;//...tak stoj√≠ v P√≠smu...
+	Smalltalk29					= "SVM_1_Smalltalk29"					;//...v≈ædycky jsem konal ve jm√©nu Innose...
+	Smalltalk30					= "SVM_1_Smalltalk30"					;//... nikdo se nesm√≠ protivit v≈Øli bo≈æ√≠...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_1_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_1_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_1_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_1_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_1_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_1_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_1_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_1_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_1_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_1_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_1_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_1_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_1_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_1_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_1_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_1_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_1_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_1_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_1_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_1_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_1_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_1_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_1_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_1_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_1_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_1_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_1_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_1_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_1_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_1_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_1_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_1_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_1_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_1_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_1_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_1_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_1_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_1_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_1_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_1_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_1_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_1_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_1_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_1_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_1_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_1_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_1_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_1_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_1_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_1_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_1_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_1_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_1_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_1_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_1_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_1_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_1_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_1_Aargh_1"					;//Aargh
@@ -535,14 +535,14 @@ instance SVM_1 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_1_Addon_WrongArmor";				//Kdyû nenosÌö n·ö stejnokroj, nebudu se s tebou bavit.
-	ADDON_WRONGARMOR_SLD		= "SVM_1_ADDON_WRONGARMOR_SLD";			//Co to m·ö na sobÍ? ObleË se trochu sluönÍ!
-	ADDON_WRONGARMOR_MIL		= "SVM_1_ADDON_WRONGARMOR_MIL";			//Seö voj·k, tak se taky tak oblÌkej!
-	ADDON_WRONGARMOR_KDF		= "SVM_1_ADDON_WRONGARMOR_KDF";			//NÍco takovÈho by Ëlen naöeho ‚·du nosit nemÍl. BÍû se p‚evlÈknout.
-	ADDON_NOARMOR_BDT			= "SVM_1_ADDON_ADDON_NOARMOR_BDT";		//Dyk na sobÍ nem·ö ani zbroj. Vypadni.
+	ADDON_WRONGARMOR			= "SVM_1_Addon_WrongArmor";				//Kdy≈æ nenos√≠≈° n√°≈° stejnokroj, nebudu se s tebou bavit.
+	ADDON_WRONGARMOR_SLD		= "SVM_1_ADDON_WRONGARMOR_SLD";			//Co to m√°≈° na sobƒô? Obleƒç se trochu slu≈°nƒô!
+	ADDON_WRONGARMOR_MIL		= "SVM_1_ADDON_WRONGARMOR_MIL";			//Se≈° voj√°k, tak se taky tak obl√≠kej!
+	ADDON_WRONGARMOR_KDF		= "SVM_1_ADDON_WRONGARMOR_KDF";			//Nƒôco takov√©ho by ƒçlen na≈°eho √¢√°du nosit nemƒôl. Bƒô≈æ se p√¢evl√©knout.
+	ADDON_NOARMOR_BDT			= "SVM_1_ADDON_ADDON_NOARMOR_BDT";		//Dyk na sobƒô nem√°≈° ani zbroj. Vypadni.
 
-	ADDON_DIEBANDIT				= "SVM_1_ADDON_DIEBANDIT";				//ChcÌpni, ty hnusnej bandito!
-	ADDON_DIRTYPIRATE			= "SVM_1_ADDON_DIRTYPIRATE";			//Ty hajzle pir·tsk·!
+	ADDON_DIEBANDIT				= "SVM_1_ADDON_DIEBANDIT";				//Chc√≠pni, ty hnusnej bandito!
+	ADDON_DIRTYPIRATE			= "SVM_1_ADDON_DIRTYPIRATE";			//Ty hajzle pir√°tsk√°!
 };
 
 INSTANCE SVM_2	(C_SVM)	
@@ -553,207 +553,207 @@ INSTANCE SVM_2	(C_SVM)
 instance SVM_3 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_3_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_3_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_3_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_3_Weather"					;//Zatracen· slota!
+	Weather						= 	"SVM_3_Weather"					;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_3_IGetYouStill"				;//Tak jsem tÍ p‚ece dostal!
-	DieEnemy					=	"SVM_3_DieEnemy"					;//Rozsek·m tÍ na kousky!
-	DieMonster					=	"SVM_3_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_3_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_3_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_3_SheepKiller"				;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_3_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	IGetYouStill				= 	"SVM_3_IGetYouStill"				;//Tak jsem tƒô p√¢ece dostal!
+	DieEnemy					=	"SVM_3_DieEnemy"					;//Rozsek√°m tƒô na kousky!
+	DieMonster					=	"SVM_3_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_3_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_3_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_3_SheepKiller"				;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_3_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_3_YouMurderer"				;//Vrahu!
-	DieStupidBeast				=	"SVM_3_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_3_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_3_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_3_ThenIBeatYouOutOfHere"		;//Tak ty nep˘jdeö? Jak chceö!
-	WhatDidYouDoInThere			=	"SVM_3_WhatDidYouDoInThere"		;//Cos tam pohled·val?
-	WillYouStopFighting			=	"SVM_3_WillYouStopFighting"		;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_3_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_3_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_3_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_3_ThenIBeatYouOutOfHere"		;//Tak ty nep≈Øjde≈°? Jak chce≈°!
+	WhatDidYouDoInThere			=	"SVM_3_WhatDidYouDoInThere"		;//Cos tam pohled√°val?
+	WillYouStopFighting			=	"SVM_3_WillYouStopFighting"		;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_3_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_3_EnemyKilled"				;//Zaslouûil sis to, niËemo!
-	MonsterKilled				=	"SVM_3_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_3_ThiefDown"					;//Uû se mÍ nikdy nepokouöej okr·st!
-	rumfummlerDown				=	"SVM_3_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_3_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_3_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_3_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_3_NeverHitMeAgain"			;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_3_YouBetterShouldHaveListened";//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_3_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_3_NeverEnterRoomAgain"		;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_3_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö? Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_3_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_3_EnemyKilled"				;//Zaslou≈æil sis to, niƒçemo!
+	MonsterKilled				=	"SVM_3_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_3_ThiefDown"					;//U≈æ se mƒô nikdy nepokou≈°ej okr√°st!
+	rumfummlerDown				=	"SVM_3_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_3_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_3_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_3_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_3_NeverHitMeAgain"			;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_3_YouBetterShouldHaveListened";//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_3_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_3_NeverEnterRoomAgain"		;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_3_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°? Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_3_SpareMe"					;//Neubliûuj mi!
+	SpareMe						=	"SVM_3_SpareMe"					;//Neubli≈æuj mi!
 	RunAway						= 	"SVM_3_RunAway"					;//A do hajzlu!!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_3_Alarm"					;//POPLACH!
-	Guards						=	"SVM_3_Guards"					;//STR¡éE!
+	Guards						=	"SVM_3_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_3_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_3_GoodMonsterKill"		;//(vol·) Dobr· pr·ce - o jednu öpinavou bestii mÌ‡!
-	GoodKill					= 	"SVM_3_GoodKill"				;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_3_GoodMonsterKill"		;//(vol√°) Dobr√° pr√°ce - o jednu ≈°pinavou bestii m√≠≈ï!
+	GoodKill					= 	"SVM_3_GoodKill"				;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_3_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_3_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_3_RunCoward"				;//(k‚iËÌ) Jo! UtÌkej, jak nejrychleji m˘ûeö!
+	RunCoward					=	"SVM_3_RunCoward"				;//(k√¢iƒç√≠) Jo! Ut√≠kej, jak nejrychleji m≈Ø≈æe≈°!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_3_GetOutOfHere"			;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_3_WhyAreYouInHere"		;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_3_WhyAreYouInHere"		;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_3_YesGoOutOfHere"			;//Jo, pakuj se odsud!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_3_WhatsThisSupposedToBe"	;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_3_YouDisturbedMySlumber"	;//(probudÌ se) K Ëertu, co se dÍje?
+	WhatsThisSupposedToBe		=	"SVM_3_WhatsThisSupposedToBe"	;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_3_YouDisturbedMySlumber"	;//(probud√≠ se) K ƒçertu, co se dƒôje?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_3_ITookYourGold"			;//DÌky za zlato, ty hrdino!
-	ShitNoGold					=	"SVM_3_ShitNoGold"				;//Ty mizernej vöiv·ku, nem·ö u sebe û·dn˝ zlato!
-	ITakeYourWeapon				=	"SVM_3_ITakeYourWeapon"		;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_3_ITookYourGold"			;//D√≠ky za zlato, ty hrdino!
+	ShitNoGold					=	"SVM_3_ShitNoGold"				;//Ty mizernej v≈°iv√°ku, nem√°≈° u sebe ≈æ√°dn√Ω zlato!
+	ITakeYourWeapon				=	"SVM_3_ITakeYourWeapon"		;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_3_WhatAreYouDoing"		;//(varovnÍ) D·vej si pozor! JeötÍ jednou a nÍjakou ti vrazÌm.
+	WhatAreYouDoing				=	"SVM_3_WhatAreYouDoing"		;//(varovnƒô) D√°vej si pozor! Je≈°tƒô jednou a nƒôjakou ti vraz√≠m.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_3_LookingForTroubleAgain"	;//JeötÍ po‚·d nem·ö dost?
-	StopMagic					=	"SVM_3_StopMagic"				;//P‚esta‡ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_3_ISaidStopMagic"			;//Chceö napr·skat? OkamûitÍ s tÌm p‚esta‡!!!
-	WeaponDown					=	"SVM_3_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_3_ISaidWeaponDown"		;//Tak d·ö tu zatracenou zbra‡ pryË?!
+	LookingForTroubleAgain		=	"SVM_3_LookingForTroubleAgain"	;//Je≈°tƒô po√¢√°d nem√°≈° dost?
+	StopMagic					=	"SVM_3_StopMagic"				;//P√¢esta≈ï s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_3_ISaidStopMagic"			;//Chce≈° napr√°skat? Okam≈æitƒô s t√≠m p√¢esta≈ï!!!
+	WeaponDown					=	"SVM_3_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_3_ISaidWeaponDown"		;//Tak d√°≈° tu zatracenou zbra≈ï pryƒç?!
 	WiseMove					=	"SVM_3_WiseMove"				;//Chytrej kluk!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_3_NextTimeYoureInForIt"	;//(pro sebe) Dobr·, p‚ÌötÍ se uk·ûe.
+	NextTimeYoureInForIt		=	"SVM_3_NextTimeYoureInForIt"	;//(pro sebe) Dobr√°, p√¢√≠≈°tƒô se uk√°≈æe.
 	OhMyHead					=	"SVM_3_OhMyHead"				;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_3_TheresAFight"			;//(nedoËkavÍ) Aaa, boj!
-	OhMyGodItsAFight			=	"SVM_3_OhMyGodItsAFight"		;//(vystraöenÍ) BoûÌnku, boj!
-	GoodVictory					=	"SVM_3_GoodVictory"			;//(zl˝ smÌch) Uk·zals mu, kdo je tady p·nem!
-	NotBad						= 	"SVM_3_NotBad"					;//(souhlasnÍ) To nebylo öpatnÈ.
-	OhMyGodHesDown				=	"SVM_3_OhMyGodHesDown"			;//(pro sebe) M˘j boûe! Takov· krutost...
-	CheerFriend01				=	"SVM_3_CheerFriend01"			;//Tak ho praö„!
-	CheerFriend02				=	"SVM_3_CheerFriend02"			;//Dej to sem vöechno!
-	CheerFriend03				=	"SVM_3_CheerFriend03"			;//Ukaû mu!
-	Ooh01						=	"SVM_3_Ooh01"					;//PoËkej!
-	Ooh02						=	"SVM_3_Ooh02"					;//D·vej pozor!
-	Ooh03						=	"SVM_3_Ooh03"					;//JÛ! To byla trefa!
+	TheresAFight				=	"SVM_3_TheresAFight"			;//(nedoƒçkavƒô) Aaa, boj!
+	OhMyGodItsAFight			=	"SVM_3_OhMyGodItsAFight"		;//(vystra≈°enƒô) Bo≈æ√≠nku, boj!
+	GoodVictory					=	"SVM_3_GoodVictory"			;//(zl√Ω sm√≠ch) Uk√°zals mu, kdo je tady p√°nem!
+	NotBad						= 	"SVM_3_NotBad"					;//(souhlasnƒô) To nebylo ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_3_OhMyGodHesDown"			;//(pro sebe) M≈Øj bo≈æe! Takov√° krutost...
+	CheerFriend01				=	"SVM_3_CheerFriend01"			;//Tak ho pra≈°ƒÉ!
+	CheerFriend02				=	"SVM_3_CheerFriend02"			;//Dej to sem v≈°echno!
+	CheerFriend03				=	"SVM_3_CheerFriend03"			;//Uka≈æ mu!
+	Ooh01						=	"SVM_3_Ooh01"					;//Poƒçkej!
+	Ooh02						=	"SVM_3_Ooh02"					;//D√°vej pozor!
+	Ooh03						=	"SVM_3_Ooh03"					;//J√≥! To byla trefa!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_3_WhatWasThat"				;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_3_WhatWasThat"				;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_3_GetOutOfMyBed"			;//Vypadni z mÈ postele!
-	Awake						= "SVM_3_Awake"					;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_3_GetOutOfMyBed"			;//Vypadni z m√© postele!
+	Awake						= "SVM_3_Awake"					;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_3_ABS_COMMANDER"			;//Pr˝ jsi zaöel za velitelem a dal vÍci do po‚·dku.
-	ABS_MONASTERY				= "SVM_3_ABS_MONASTERY"			;//Pr˝ jsi zaöel za otcem Parlanem, aby ses vyzpovÌdal ze sv˝ch h‚Ìch˘.
-	ABS_FARM					= "SVM_3_ABS_FARM"					;//Pr˝ jsi zaöel za Leem a dal ty vÍci do po‚·dku.
-	ABS_GOOD					= "SVM_3_ABS_GOOD"					;//To je dob‚e.
+	ABS_COMMANDER				= "SVM_3_ABS_COMMANDER"			;//Pr√Ω jsi za≈°el za velitelem a dal vƒôci do po√¢√°dku.
+	ABS_MONASTERY				= "SVM_3_ABS_MONASTERY"			;//Pr√Ω jsi za≈°el za otcem Parlanem, aby ses vyzpov√≠dal ze sv√Ωch h√¢√≠ch≈Ø.
+	ABS_FARM					= "SVM_3_ABS_FARM"					;//Pr√Ω jsi za≈°el za Leem a dal ty vƒôci do po√¢√°dku.
+	ABS_GOOD					= "SVM_3_ABS_GOOD"					;//To je dob√¢e.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_3_SHEEPKILLER_CRIME"		;//Takhle vraûdit naöe ovce!
-	ATTACK_CRIME				= "SVM_3_ATTACK_CRIME"				;//Nech mÍ na pokoji, ty öpinav˝ zvÌ‚e!
-	THEFT_CRIME					= "SVM_3_THEFT_CRIME"				;//Nech mÍ na pokoji, ty mizernej zlodÍji!
+	SHEEPKILLER_CRIME			= "SVM_3_SHEEPKILLER_CRIME"		;//Takhle vra≈ædit na≈°e ovce!
+	ATTACK_CRIME				= "SVM_3_ATTACK_CRIME"				;//Nech mƒô na pokoji, ty ≈°pinav√Ω zv√≠√¢e!
+	THEFT_CRIME					= "SVM_3_THEFT_CRIME"				;//Nech mƒô na pokoji, ty mizernej zlodƒôji!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_3_PAL_CITY_CRIME"			;//Jsi ostudou svÈho ‚·du! PoËkej, aû se o tom dozvÌ lord Hagen!
-	MIL_CITY_CRIME				= "SVM_3_MIL_CITY_CRIME"			;//Jsi ostudou mÍstsk˝ch str·ûÌ! PoËkej, aû se o tom dozvÌ lord Andre!
-	CITY_CRIME					= "SVM_3_CITY_CRIME"				;//PoËkej, aû se o tom dozvÌ lord Andre.
+	PAL_CITY_CRIME				= "SVM_3_PAL_CITY_CRIME"			;//Jsi ostudou sv√©ho √¢√°du! Poƒçkej, a≈æ se o tom dozv√≠ lord Hagen!
+	MIL_CITY_CRIME				= "SVM_3_MIL_CITY_CRIME"			;//Jsi ostudou mƒôstsk√Ωch str√°≈æ√≠! Poƒçkej, a≈æ se o tom dozv√≠ lord Andre!
+	CITY_CRIME					= "SVM_3_CITY_CRIME"				;//Poƒçkej, a≈æ se o tom dozv√≠ lord Andre.
 	// -------------------------
-	MONA_CRIME					= "SVM_3_MONA_CRIME"				;//PoËkej, aû se o tom dozvÌ otec Parlan!
-	FARM_CRIME					= "SVM_3_FARM_CRIME"				;//PoËkej, aû se to donese Leeovi...
-	OC_CRIME					= "SVM_3_OC_CRIME"					;//PoËkej, aû se o tom dozvÌ velitel Garond!
+	MONA_CRIME					= "SVM_3_MONA_CRIME"				;//Poƒçkej, a≈æ se o tom dozv√≠ otec Parlan!
+	FARM_CRIME					= "SVM_3_FARM_CRIME"				;//Poƒçkej, a≈æ se to donese Leeovi...
+	OC_CRIME					= "SVM_3_OC_CRIME"					;//Poƒçkej, a≈æ se o tom dozv√≠ velitel Garond!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_3_TOUGHGUY_ATTACKLOST"		;//Dobr·, dobr·, jsi lepöÌ bojovnÌk neû j·. Co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_3_TOUGHGUY_ATTACKWON"		;//(arogantnÍ) M·m dojem, ûe uû ti musÌ b˝t jasnÈ, kdo je tady ten silnÍjöÌ... Co chceö?
-	TOUGHGUY_PLAYERATTACK		= "SVM_3_TOUGHGUY_PLAYERATTACK"	;//MÍl jsem dojem, ûe ses na mÍ pokouöel vyt·hnout zbra‡. To sis to rozmyslel? Ty spÌö d·v·ö p‚ednost ROZHOVORU, co? (smÌch)
+	TOUGHGUY_ATTACKLOST			= "SVM_3_TOUGHGUY_ATTACKLOST"		;//Dobr√°, dobr√°, jsi lep≈°√≠ bojovn√≠k ne≈æ j√°. Co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_3_TOUGHGUY_ATTACKWON"		;//(arogantnƒô) M√°m dojem, ≈æe u≈æ ti mus√≠ b√Ωt jasn√©, kdo je tady ten silnƒôj≈°√≠... Co chce≈°?
+	TOUGHGUY_PLAYERATTACK		= "SVM_3_TOUGHGUY_PLAYERATTACK"	;//Mƒôl jsem dojem, ≈æe ses na mƒô pokou≈°el vyt√°hnout zbra≈ï. To sis to rozmyslel? Ty sp√≠≈° d√°v√°≈° p√¢ednost ROZHOVORU, co? (sm√≠ch)
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_3_GOLD_1000"				;//1000 zlat˝ch.
-	GOLD_950					= "SVM_3_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_3_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_3_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_3_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_3_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_3_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_3_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_3_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_3_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_3_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_3_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_3_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_3_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_3_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_3_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_3_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_3_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_3_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_3_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_3_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_3_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_3_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_3_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_3_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_3_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_3_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_3_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_3_GOLD_1000"				;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_3_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_3_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_3_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_3_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_3_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_3_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_3_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_3_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_3_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_3_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_3_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_3_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_3_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_3_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_3_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_3_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_3_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_3_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_3_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_3_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_3_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_3_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_3_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_3_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_3_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_3_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_3_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_3_Smalltalk01"				;//...v·ûnÍ si myslÌö...
-	Smalltalk02					= "SVM_3_Smalltalk02"				;//...vöechno je moûnÈ...
-	Smalltalk03					= "SVM_3_Smalltalk03"				;//...mÍl si to rozmyslet...
-	Smalltalk04					= "SVM_3_Smalltalk04"				;//...jako bych nemÍl dost problÈm˘...
-	Smalltalk05					= "SVM_3_Smalltalk05"				;//...kdo ti to ‚ekl...
-	Smalltalk06					= "SVM_3_Smalltalk06"				;//...z toho budou jen dalöÌ problÈmy...
-	Smalltalk07					= "SVM_3_Smalltalk07"				;//...drbalo se tam o vöem moûnÈm...
-	Smalltalk08					= "SVM_3_Smalltalk08"				;//...nemÍl jsem na to nikdy ani pomyslet...
-	Smalltalk09					= "SVM_3_Smalltalk09"				;//...to vöechno jsou jen ‚eËi...
-	Smalltalk10					= "SVM_3_Smalltalk10"				;//...bude lepöÌ zjistit, kdo ti ‚ekl, ûe...
-	Smalltalk11					= "SVM_3_Smalltalk11"				;//...chtÍl jsem ti to ‚Ìct d‚Ìv...
-	Smalltalk12					= "SVM_3_Smalltalk12"				;//...nikdo se mÍ neptal...
-	Smalltalk13					= "SVM_3_Smalltalk13"				;//...mÍl bys mÌt soucit s chud·kem...
-	Smalltalk14					= "SVM_3_Smalltalk14"				;//...to nenÌ nic novÈho...
-	Smalltalk15					= "SVM_3_Smalltalk15"				;//...je to ˙plnÍ jasnÈ...
-	Smalltalk16					= "SVM_3_Smalltalk16"				;//...nemÍl ses mÍ pt·t, co...
-	Smalltalk17					= "SVM_3_Smalltalk17"				;//...takhle to nemohlo jÌt vÍËnÍ...
-	Smalltalk18					= "SVM_3_Smalltalk18"				;//...vöak vÌö, co myslÌm...
-	Smalltalk19					= "SVM_3_Smalltalk19"				;//...je to p‚esnÍ tak, jak jsem ‚Ìkal...
-	Smalltalk20					= "SVM_3_Smalltalk20"				;//...uû to nem˘ûe nic zmÍnit...
-	Smalltalk21					= "SVM_3_Smalltalk21"				;//...proË mi o tom nikdo ne‚ekl d‚Ìv...
-	Smalltalk22					= "SVM_3_Smalltalk22"				;//...poËkejme a uvidÌme, co se stane...
-	Smalltalk23					= "SVM_3_Smalltalk23"				;//...nÍkterÈ problÈmy se vy‚eöÌ samy...
-	Smalltalk24					= "SVM_3_Smalltalk24"				;//...uû o tom nechci nic slyöet...
+	Smalltalk01					= "SVM_3_Smalltalk01"				;//...v√°≈ænƒô si mysl√≠≈°...
+	Smalltalk02					= "SVM_3_Smalltalk02"				;//...v≈°echno je mo≈æn√©...
+	Smalltalk03					= "SVM_3_Smalltalk03"				;//...mƒôl si to rozmyslet...
+	Smalltalk04					= "SVM_3_Smalltalk04"				;//...jako bych nemƒôl dost probl√©m≈Ø...
+	Smalltalk05					= "SVM_3_Smalltalk05"				;//...kdo ti to √¢ekl...
+	Smalltalk06					= "SVM_3_Smalltalk06"				;//...z toho budou jen dal≈°√≠ probl√©my...
+	Smalltalk07					= "SVM_3_Smalltalk07"				;//...drbalo se tam o v≈°em mo≈æn√©m...
+	Smalltalk08					= "SVM_3_Smalltalk08"				;//...nemƒôl jsem na to nikdy ani pomyslet...
+	Smalltalk09					= "SVM_3_Smalltalk09"				;//...to v≈°echno jsou jen √¢eƒçi...
+	Smalltalk10					= "SVM_3_Smalltalk10"				;//...bude lep≈°√≠ zjistit, kdo ti √¢ekl, ≈æe...
+	Smalltalk11					= "SVM_3_Smalltalk11"				;//...chtƒôl jsem ti to √¢√≠ct d√¢√≠v...
+	Smalltalk12					= "SVM_3_Smalltalk12"				;//...nikdo se mƒô neptal...
+	Smalltalk13					= "SVM_3_Smalltalk13"				;//...mƒôl bys m√≠t soucit s chud√°kem...
+	Smalltalk14					= "SVM_3_Smalltalk14"				;//...to nen√≠ nic nov√©ho...
+	Smalltalk15					= "SVM_3_Smalltalk15"				;//...je to √∫plnƒô jasn√©...
+	Smalltalk16					= "SVM_3_Smalltalk16"				;//...nemƒôl ses mƒô pt√°t, co...
+	Smalltalk17					= "SVM_3_Smalltalk17"				;//...takhle to nemohlo j√≠t vƒôƒçnƒô...
+	Smalltalk18					= "SVM_3_Smalltalk18"				;//...v≈°ak v√≠≈°, co mysl√≠m...
+	Smalltalk19					= "SVM_3_Smalltalk19"				;//...je to p√¢esnƒô tak, jak jsem √¢√≠kal...
+	Smalltalk20					= "SVM_3_Smalltalk20"				;//...u≈æ to nem≈Ø≈æe nic zmƒônit...
+	Smalltalk21					= "SVM_3_Smalltalk21"				;//...proƒç mi o tom nikdo ne√¢ekl d√¢√≠v...
+	Smalltalk22					= "SVM_3_Smalltalk22"				;//...poƒçkejme a uvid√≠me, co se stane...
+	Smalltalk23					= "SVM_3_Smalltalk23"				;//...nƒôkter√© probl√©my se vy√¢e≈°√≠ samy...
+	Smalltalk24					= "SVM_3_Smalltalk24"				;//...u≈æ o tom nechci nic sly≈°et...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                    
-	Smalltalk25					= "SVM_3_Smalltalk25"				;//...zaËal pÌt...
+	Smalltalk25					= "SVM_3_Smalltalk25"				;//...zaƒçal p√≠t...
 	Smalltalk26					= "SVM_3_Smalltalk26"				;//...nechci dopadnout takhle...
-	Smalltalk27					= "SVM_3_Smalltalk27"				;//...vöichni utekli jak vyplaöenÌ kr·lÌci, z˘stal jsem ˙plnÍ s·m...
+	Smalltalk27					= "SVM_3_Smalltalk27"				;//...v≈°ichni utekli jak vypla≈°en√≠ kr√°l√≠ci, z≈Østal jsem √∫plnƒô s√°m...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                    
-	Smalltalk28					= "SVM_3_Smalltalk28"				;//...tak stojÌ v PÌsmu...
-	Smalltalk29					= "SVM_3_Smalltalk29"				;//...vûdycky jsem konal ve jmÈnu Innose...
-	Smalltalk30					= "SVM_3_Smalltalk30"				;//...nikdo se nesmÌ protivit v˘li boh˘...
+	Smalltalk28					= "SVM_3_Smalltalk28"				;//...tak stoj√≠ v P√≠smu...
+	Smalltalk29					= "SVM_3_Smalltalk29"				;//...v≈ædycky jsem konal ve jm√©nu Innose...
+	Smalltalk30					= "SVM_3_Smalltalk30"				;//...nikdo se nesm√≠ protivit v≈Øli boh≈Ø...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_3_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_3_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_3_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_3_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_3_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_3_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_3_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_3_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_3_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_3_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_3_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_3_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_3_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_3_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_3_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_3_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_3_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_3_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_3_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_3_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_3_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_3_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_3_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_3_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_3_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_3_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_3_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_3_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_3_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_3_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_3_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_3_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_3_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_3_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_3_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_3_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_3_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_3_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_3_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_3_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_3_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_3_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_3_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_3_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_3_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_3_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_3_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_3_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_3_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_3_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_3_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_3_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_3_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_3_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_3_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_3_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_3_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_3_Aargh_1"					;//Aargh
@@ -762,221 +762,221 @@ instance SVM_3 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_3_Addon_WrongArmor";				//Co to m·ö na sobÍ? V˘bec se to k tobÍ nehodÌ. Dej mi pokoj.
-	ADDON_WRONGARMOR_SLD		= "SVM_3_ADDON_WRONGARMOR_SLD";			//Jestli si chceö promluvit, tak se nap‚ed po‚·dnÍ obleË.
-	ADDON_WRONGARMOR_MIL		= "SVM_3_ADDON_WRONGARMOR_MIL";			//My voj·ci nosÌme sv˘j stejnokroj s hrdostÌ. BÍû se p‚evlÌct.
-	ADDON_WRONGARMOR_KDF		= "SVM_3_ADDON_WRONGARMOR_KDF";			//V naöem ‚·du platÌ, ûe se vöichni oblÈk·me stejnÍ. Tak se koukej p‚evlÈci!
-	ADDON_NOARMOR_BDT			= "SVM_3_ADDON_ADDON_NOARMOR_BDT";		//Ty jsi snad pr·vÍ vylezl z lochu. Nap‚ed si seûe‡ nÍco na sebe!
+	ADDON_WRONGARMOR			= "SVM_3_Addon_WrongArmor";				//Co to m√°≈° na sobƒô? V≈Øbec se to k tobƒô nehod√≠. Dej mi pokoj.
+	ADDON_WRONGARMOR_SLD		= "SVM_3_ADDON_WRONGARMOR_SLD";			//Jestli si chce≈° promluvit, tak se nap√¢ed po√¢√°dnƒô obleƒç.
+	ADDON_WRONGARMOR_MIL		= "SVM_3_ADDON_WRONGARMOR_MIL";			//My voj√°ci nos√≠me sv≈Øj stejnokroj s hrdost√≠. Bƒô≈æ se p√¢evl√≠ct.
+	ADDON_WRONGARMOR_KDF		= "SVM_3_ADDON_WRONGARMOR_KDF";			//V na≈°em √¢√°du plat√≠, ≈æe se v≈°ichni obl√©k√°me stejnƒô. Tak se koukej p√¢evl√©ci!
+	ADDON_NOARMOR_BDT			= "SVM_3_ADDON_ADDON_NOARMOR_BDT";		//Ty jsi snad pr√°vƒô vylezl z lochu. Nap√¢ed si se≈æe≈ï nƒôco na sebe!
 
 	ADDON_DIEBANDIT				= "SVM_3_ADDON_DIEBANDIT";				//POCEM, TY ZATRACENEJ BANDITO!
-	ADDON_DIRTYPIRATE			= "SVM_3_ADDON_DIRTYPIRATE";			//POCEM, TY ZATRACENEJ PIR¡TE!
+	ADDON_DIRTYPIRATE			= "SVM_3_ADDON_DIRTYPIRATE";			//POCEM, TY ZATRACENEJ PIR√ÅTE!
 };
 
 instance SVM_4 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_4_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_4_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_4_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_4_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_4_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_4_IGetYouStill"				;//Uû zase TY!
-	DieEnemy					=	"SVM_4_DieEnemy"					;//Rozsek·m tÍ na kousky!
-	DieMonster					=	"SVM_4_DieMonster"					;//DalöÌ z tÍch vÍcÌ!
-	DirtyThief					=	"SVM_4_DirtyThief"					;//Ty mizernej zlodÍji!
-	HandsOff					=	"SVM_4_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_4_SheepKiller"					;//Hej! Nech naöe ovce na pokoji!
-	SheepKillerMonster			=	"SVM_4_SheepKillerMonster"			;//Ta obluda vraûdÌ naöe ovce!
+	IGetYouStill				= 	"SVM_4_IGetYouStill"				;//U≈æ zase TY!
+	DieEnemy					=	"SVM_4_DieEnemy"					;//Rozsek√°m tƒô na kousky!
+	DieMonster					=	"SVM_4_DieMonster"					;//Dal≈°√≠ z tƒôch vƒôc√≠!
+	DirtyThief					=	"SVM_4_DirtyThief"					;//Ty mizernej zlodƒôji!
+	HandsOff					=	"SVM_4_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_4_SheepKiller"					;//Hej! Nech na≈°e ovce na pokoji!
+	SheepKillerMonster			=	"SVM_4_SheepKillerMonster"			;//Ta obluda vra≈æd√≠ na≈°e ovce!
 	YouMurderer					=	"SVM_4_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_4_DieStupidBeast"				;//Co tam ta bestie prov·dÌ?
-	YouDareHitMe				=	"SVM_4_YouDareHitMe"				;//S·m sis o to ‚ekl!
-	YouAskedForIt				=	"SVM_4_YouAskedForIt"				;//¬ekl sis o to.
-	ThenIBeatYouOutOfHere		=	"SVM_4_ThenIBeatYouOutOfHere"		;//M·m dojem, ûe by nÍkter˝m lidem neuökodilo, kdyby poznali, zaË je toho loket.
-	WhatDidYouDoInThere			=	"SVM_4_WhatDidYouDoInThere"			;//Co tam dÍl·ö, co!?
-	WillYouStopFighting			=	"SVM_4_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû!
+	DieStupidBeast				=	"SVM_4_DieStupidBeast"				;//Co tam ta bestie prov√°d√≠?
+	YouDareHitMe				=	"SVM_4_YouDareHitMe"				;//S√°m sis o to √¢ekl!
+	YouAskedForIt				=	"SVM_4_YouAskedForIt"				;//√Çekl sis o to.
+	ThenIBeatYouOutOfHere		=	"SVM_4_ThenIBeatYouOutOfHere"		;//M√°m dojem, ≈æe by nƒôkter√Ωm lidem neu≈°kodilo, kdyby poznali, zaƒç je toho loket.
+	WhatDidYouDoInThere			=	"SVM_4_WhatDidYouDoInThere"			;//Co tam dƒôl√°≈°, co!?
+	WillYouStopFighting			=	"SVM_4_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_4_KillEnemy"					;//ChcÌpni!
+	KillEnemy					= 	"SVM_4_KillEnemy"					;//Chc√≠pni!
 	EnemyKilled					=	"SVM_4_EnemyKilled"					;//Takovej blbej bastard...
-	MonsterKilled				=	"SVM_4_MonsterKilled"				;//Dobr·, to na tebe bylo trochu moc, co, ty mizern· bestie!
-	ThiefDown					=	"SVM_4_ThiefDown"					;//OkamûitÍ dej ty sv˝ öpinav˝ pracky pryË z mejch vÍcÌ, jasn˝?
-	rumfummlerDown				=	"SVM_4_rumfummlerDown"				;//HlÌdej si ty svoje ukoptÍn˝ prsty!
-	SheepAttackerDown			=	"SVM_4_SheepAttackerDown"			;//OkamûitÍ dej ty svoje umounÍn˝ pracky pryË od naöich ovcÌ!
-	KillMurderer				=	"SVM_4_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_4_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_4_NeverHitMeAgain"				;//Tohle uû nikdy nezkouöej, k·mo!
-	YouBetterShouldHaveListened	=	"SVM_4_YouBetterShouldHaveListened"	;//Douf·m, ûe sis z toho vzal ponauËenÌ.
-	GetUpAndBeGone				=	"SVM_4_GetUpAndBeGone"				;//Vst·vej a vypadni odsud!
-	NeverEnterRoomAgain			=	"SVM_4_NeverEnterRoomAgain"			;//A„ uû tÍ tu nikdy nevidÌm - jasn˝?
-	ThereIsNoFightingHere		=	"SVM_4_ThereIsNoFightingHere"		;//J· jsem ten, kdo tady rozd·v· r·ny, rozumÌö?
+	MonsterKilled				=	"SVM_4_MonsterKilled"				;//Dobr√°, to na tebe bylo trochu moc, co, ty mizern√° bestie!
+	ThiefDown					=	"SVM_4_ThiefDown"					;//Okam≈æitƒô dej ty sv√Ω ≈°pinav√Ω pracky pryƒç z mejch vƒôc√≠, jasn√Ω?
+	rumfummlerDown				=	"SVM_4_rumfummlerDown"				;//Hl√≠dej si ty svoje ukoptƒôn√Ω prsty!
+	SheepAttackerDown			=	"SVM_4_SheepAttackerDown"			;//Okam≈æitƒô dej ty svoje umounƒôn√Ω pracky pryƒç od na≈°ich ovc√≠!
+	KillMurderer				=	"SVM_4_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_4_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_4_NeverHitMeAgain"				;//Tohle u≈æ nikdy nezkou≈°ej, k√°mo!
+	YouBetterShouldHaveListened	=	"SVM_4_YouBetterShouldHaveListened"	;//Douf√°m, ≈æe sis z toho vzal ponauƒçen√≠.
+	GetUpAndBeGone				=	"SVM_4_GetUpAndBeGone"				;//Vst√°vej a vypadni odsud!
+	NeverEnterRoomAgain			=	"SVM_4_NeverEnterRoomAgain"			;//AƒÉ u≈æ tƒô tu nikdy nevid√≠m - jasn√Ω?
+	ThereIsNoFightingHere		=	"SVM_4_ThereIsNoFightingHere"		;//J√° jsem ten, kdo tady rozd√°v√° r√°ny, rozum√≠≈°?
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_4_SpareMe"						;//ProstÍ mÍ nech b˝t!
-	RunAway						= 	"SVM_4_RunAway"						;//Do hajzlu! Pad·m pryË!
+	SpareMe						=	"SVM_4_SpareMe"						;//Prostƒô mƒô nech b√Ωt!
+	RunAway						= 	"SVM_4_RunAway"						;//Do hajzlu! Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_4_Alarm"					;//POPLACH!
-	Guards						=	"SVM_4_Guards"					;//STR¡éE!
+	Guards						=	"SVM_4_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_4_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_4_GoodMonsterKill"			;//(vol·) Jo! Takhle se na to musÌ!
-	GoodKill					= 	"SVM_4_GoodKill"				;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_4_GoodMonsterKill"			;//(vol√°) Jo! Takhle se na to mus√≠!
+	GoodKill					= 	"SVM_4_GoodKill"				;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_4_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_4_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_4_RunCoward"				;//(k‚iËÌ) JeötÍ se uvidÌme!
+	RunCoward					=	"SVM_4_RunCoward"				;//(k√¢iƒç√≠) Je≈°tƒô se uvid√≠me!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_4_GetOutOfHere"			;//Ven!
-	WhyAreYouInHere				=	"SVM_4_WhyAreYouInHere"			;//Co tady chceö?!
+	WhyAreYouInHere				=	"SVM_4_WhyAreYouInHere"			;//Co tady chce≈°?!
 	YesGoOutOfHere				= 	"SVM_4_YesGoOutOfHere"			;//Jen mu nandej!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_4_WhatsThisSupposedToBe"	;//Co tady kolem Ëmuch·ö?
-	YouDisturbedMySlumber		=	"SVM_4_YouDisturbedMySlumber"	;//(vst·v·) Co je?
+	WhatsThisSupposedToBe		=	"SVM_4_WhatsThisSupposedToBe"	;//Co tady kolem ƒçmuch√°≈°?
+	YouDisturbedMySlumber		=	"SVM_4_YouDisturbedMySlumber"	;//(vst√°v√°) Co je?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_4_ITookYourGold"			;//DÌky za zlato, ty hrdino!
-	ShitNoGold					=	"SVM_4_ShitNoGold"				;//Ty mizernej vöiv·ku, nem·ö u sebe û·dn˝ zlato!
-	ITakeYourWeapon				=	"SVM_4_ITakeYourWeapon"			;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_4_ITookYourGold"			;//D√≠ky za zlato, ty hrdino!
+	ShitNoGold					=	"SVM_4_ShitNoGold"				;//Ty mizernej v≈°iv√°ku, nem√°≈° u sebe ≈æ√°dn√Ω zlato!
+	ITakeYourWeapon				=	"SVM_4_ITakeYourWeapon"			;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_4_WhatAreYouDoing"			;//(varovnÍ) D·vej si pozor! JeötÍ jednou a nÍjakou ti vrazÌm.
+	WhatAreYouDoing				=	"SVM_4_WhatAreYouDoing"			;//(varovnƒô) D√°vej si pozor! Je≈°tƒô jednou a nƒôjakou ti vraz√≠m.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_4_LookingForTroubleAgain"	;//(agresivnÍ) Koledujeö si!
+	LookingForTroubleAgain		=	"SVM_4_LookingForTroubleAgain"	;//(agresivnƒô) Koleduje≈° si!
 																	 
-	StopMagic					=	"SVM_4_StopMagic"				;//P‚esta‡ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_4_ISaidStopMagic"			;//Chceö napr·skat? OkamûitÍ s tÌm p‚esta‡!!!
-	WeaponDown					=	"SVM_4_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_4_ISaidWeaponDown"			;//Tak d·ö tu zatracenou zbra‡ pryË?!
+	StopMagic					=	"SVM_4_StopMagic"				;//P√¢esta≈ï s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_4_ISaidStopMagic"			;//Chce≈° napr√°skat? Okam≈æitƒô s t√≠m p√¢esta≈ï!!!
+	WeaponDown					=	"SVM_4_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_4_ISaidWeaponDown"			;//Tak d√°≈° tu zatracenou zbra≈ï pryƒç?!
 	WiseMove					=	"SVM_4_WiseMove"				;//Chytrej kluk!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_4_NextTimeYoureInForIt"	;//(pro sebe) Dobr·, p‚ÌötÍ se uk·ûe.
+	NextTimeYoureInForIt		=	"SVM_4_NextTimeYoureInForIt"	;//(pro sebe) Dobr√°, p√¢√≠≈°tƒô se uk√°≈æe.
 	OhMyHead					=	"SVM_4_OhMyHead"				;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_4_TheresAFight"			;//(dychtivÍ) Aaa, boj!
-	OhMyGodItsAFight			=	"SVM_4_OhMyGodItsAFight"		;//(vystraöenÍ) BoûÌnku, boj!
-	GoodVictory					=	"SVM_4_GoodVictory"				;//(zl˝ smÌch) Uk·zals mu, kdo je tady p·nem!
-	NotBad						= 	"SVM_4_NotBad"					;//(souhlasnÍ) To nebylo öpatnÈ.
-	OhMyGodHesDown				=	"SVM_4_OhMyGodHesDown"			;//(pro sebe) M˘j boûe! Takov· krutost...
+	TheresAFight				=	"SVM_4_TheresAFight"			;//(dychtivƒô) Aaa, boj!
+	OhMyGodItsAFight			=	"SVM_4_OhMyGodItsAFight"		;//(vystra≈°enƒô) Bo≈æ√≠nku, boj!
+	GoodVictory					=	"SVM_4_GoodVictory"				;//(zl√Ω sm√≠ch) Uk√°zals mu, kdo je tady p√°nem!
+	NotBad						= 	"SVM_4_NotBad"					;//(souhlasnƒô) To nebylo ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_4_OhMyGodHesDown"			;//(pro sebe) M≈Øj bo≈æe! Takov√° krutost...
 	CheerFriend01				=	"SVM_4_CheerFriend01"			;//Jo, nandej mu to!
-	CheerFriend02				=	"SVM_4_CheerFriend02"			;//Ukaû mu!
+	CheerFriend02				=	"SVM_4_CheerFriend02"			;//Uka≈æ mu!
 	CheerFriend03				=	"SVM_4_CheerFriend03"			;//Doraz ho!
-	Ooh01						=	"SVM_4_Ooh01"					;//Bra‡ se!
-	Ooh02						=	"SVM_4_Ooh02"					;//PokraËuj, vra„ mu to!
-	Ooh03						=	"SVM_4_Ooh03"					;//Au! Takov· pecka!
+	Ooh01						=	"SVM_4_Ooh01"					;//Bra≈ï se!
+	Ooh02						=	"SVM_4_Ooh02"					;//Pokraƒçuj, vraƒÉ mu to!
+	Ooh03						=	"SVM_4_Ooh03"					;//Au! Takov√° pecka!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_4_WhatWasThat"				;//(pro sebe, vst·v·) Sakra, co zas bylo TOHLE!?
+	WhatWasThat					= "SVM_4_WhatWasThat"				;//(pro sebe, vst√°v√°) Sakra, co zas bylo TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_4_GetOutOfMyBed"				;//Vypadni z mÈ postele!
-	Awake						= "SVM_4_Awake"						;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_4_GetOutOfMyBed"				;//Vypadni z m√© postele!
+	Awake						= "SVM_4_Awake"						;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_4_ABS_COMMANDER"    ;//Tak velitel dal ty vÍci do po‚·dku.
-	ABS_MONASTERY    = "SVM_4_ABS_MONASTERY"    ;//Tak ty jsi uËinil pok·nÌ u otce Parlana...
-	ABS_FARM       = "SVM_4_ABS_FARM"        ;//Slyöel jsem, ûe Lee dal ty vÍci do po‚·dku.
-	ABS_GOOD       = "SVM_4_ABS_GOOD"       ;//Dobr·.
+	ABS_COMMANDER     = "SVM_4_ABS_COMMANDER"    ;//Tak velitel dal ty vƒôci do po√¢√°dku.
+	ABS_MONASTERY    = "SVM_4_ABS_MONASTERY"    ;//Tak ty jsi uƒçinil pok√°n√≠ u otce Parlana...
+	ABS_FARM       = "SVM_4_ABS_FARM"        ;//Sly≈°el jsem, ≈æe Lee dal ty vƒôci do po√¢√°dku.
+	ABS_GOOD       = "SVM_4_ABS_GOOD"       ;//Dobr√°.
 	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_4_SHEEPKILLER_CRIME"   ;//VraûdÍnÌ ovcÌ uû bylo dost! Ztra„ se!
-	ATTACK_CRIME     = "SVM_4_ATTACK_CRIME"    ;//Jsi gr·zl - ztra„ se!
- 	THEFT_CRIME      = "SVM_4_THEFT_CRIME"    ;//Zatracenej zlodÍji! Uû tÍ m·m pr·vÍ tak dost!
+	SHEEPKILLER_CRIME   = "SVM_4_SHEEPKILLER_CRIME"   ;//Vra≈ædƒôn√≠ ovc√≠ u≈æ bylo dost! ZtraƒÉ se!
+	ATTACK_CRIME     = "SVM_4_ATTACK_CRIME"    ;//Jsi gr√°zl - ztraƒÉ se!
+ 	THEFT_CRIME      = "SVM_4_THEFT_CRIME"    ;//Zatracenej zlodƒôji! U≈æ tƒô m√°m pr√°vƒô tak dost!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_4_PAL_CITY_CRIME"   ;//Od paladina bych oËek·val nÍco jinÈho! To se nebude lordu Hagenovi lÌbit.
- 	MIL_CITY_CRIME     = "SVM_4_MIL_CITY_CRIME"   ;//Jak se nÍkdo jako ty mohl dostat k mÍstsk˝m str·ûÌm? Lord Andre ti to jeötÍ spoËÌt·!
- 	CITY_CRIME       = "SVM_4_CITY_CRIME"    ;//Lord Andre se o tvÈm chov·nÌ dozvÌ!
+ 	PAL_CITY_CRIME     = "SVM_4_PAL_CITY_CRIME"   ;//Od paladina bych oƒçek√°val nƒôco jin√©ho! To se nebude lordu Hagenovi l√≠bit.
+ 	MIL_CITY_CRIME     = "SVM_4_MIL_CITY_CRIME"   ;//Jak se nƒôkdo jako ty mohl dostat k mƒôstsk√Ωm str√°≈æ√≠m? Lord Andre ti to je≈°tƒô spoƒç√≠t√°!
+ 	CITY_CRIME       = "SVM_4_CITY_CRIME"    ;//Lord Andre se o tv√©m chov√°n√≠ dozv√≠!
 	// -------------------------
-	MONA_CRIME       = "SVM_4_MONA_CRIME"    ;//Otec Parlan nebude mÌt z tvÈho poËÌn·nÌ û·dnou radost!
-	FARM_CRIME       = "SVM_4_FARM_CRIME"    ;//Lee to nenech· jen tak!
-	OC_CRIME       = "SVM_4_OC_CRIME"     ;//Velitel Garond nebude mÌt radost, aû to uslyöÌ - za to zaplatÌö!
+	MONA_CRIME       = "SVM_4_MONA_CRIME"    ;//Otec Parlan nebude m√≠t z tv√©ho poƒç√≠n√°n√≠ ≈æ√°dnou radost!
+	FARM_CRIME       = "SVM_4_FARM_CRIME"    ;//Lee to nenech√° jen tak!
+	OC_CRIME       = "SVM_4_OC_CRIME"     ;//Velitel Garond nebude m√≠t radost, a≈æ to usly≈°√≠ - za to zaplat√≠≈°!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_4_TOUGHGUY_ATTACKLOST"		;//M·ö docela sÌlu... co ûes to chtÍl?
-	TOUGHGUY_ATTACKWON			= "SVM_4_TOUGHGUY_ATTACKWON"		;//(dom˝ölivÍ) NÍjakÈ dalöÌ ot·zky?
-	TOUGHGUY_PLAYERATTACK		= "SVM_4_TOUGHGUY_PLAYERATTACK"		;//Uû zase TY!
+	TOUGHGUY_ATTACKLOST			= "SVM_4_TOUGHGUY_ATTACKLOST"		;//M√°≈° docela s√≠lu... co ≈æes to chtƒôl?
+	TOUGHGUY_ATTACKWON			= "SVM_4_TOUGHGUY_ATTACKWON"		;//(dom√Ω≈°livƒô) Nƒôjak√© dal≈°√≠ ot√°zky?
+	TOUGHGUY_PLAYERATTACK		= "SVM_4_TOUGHGUY_PLAYERATTACK"		;//U≈æ zase TY!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_4_GOLD_1000"					;//1000 zlat˝ch.
-	GOLD_950					= "SVM_4_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_4_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_4_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_4_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_4_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_4_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_4_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_4_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_4_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_4_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_4_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_4_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_4_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_4_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_4_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_4_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_4_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_4_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_4_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_4_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_4_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_4_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_4_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_4_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_4_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_4_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_4_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_4_GOLD_1000"					;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_4_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_4_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_4_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_4_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_4_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_4_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_4_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_4_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_4_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_4_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_4_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_4_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_4_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_4_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_4_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_4_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_4_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_4_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_4_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_4_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_4_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_4_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_4_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_4_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_4_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_4_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_4_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_4_Smalltalk01"				;//...v·ûnÍ je to tak...
-	Smalltalk02					= "SVM_4_Smalltalk02"				;//...to nenÌ to, co jsem slyöel...
-	Smalltalk03					= "SVM_4_Smalltalk03"				;//...ne‚Ìkej mi, ûes o tom nevÍdÍl...
-	Smalltalk04					= "SVM_4_Smalltalk04"				;//...v tyhle dny ani nevÌö, komu m·ö vÍ‚it...
-	Smalltalk05					= "SVM_4_Smalltalk05"				;//...vöechno to jsou jen drby...
-	Smalltalk06					= "SVM_4_Smalltalk06"				;//...nejsem o nic ö„astnÍjöÌ...
-	Smalltalk07					= "SVM_4_Smalltalk07"				;//...uû mÍ nem˘ûe nic p‚ekvapit...
-	Smalltalk08					= "SVM_4_Smalltalk08"				;//...to v·ûnÍ nenÌ m˘j problÈm...
-	Smalltalk09					= "SVM_4_Smalltalk09"				;//...opravdu si myslÌö, ûe...
-	Smalltalk10					= "SVM_4_Smalltalk10"				;//...nikdo se ode mÍ nic nedozvÌ...
-	Smalltalk11					= "SVM_4_Smalltalk11"				;//...vöem to bylo jasnÈ...
-	Smalltalk12					= "SVM_4_Smalltalk12"				;//...naslouchal öpatn˝m lidem...
-	Smalltalk13					= "SVM_4_Smalltalk13"				;//...pokud to s·m nevidÌ, nem˘ûu mu nijak pomoct...
-	Smalltalk14					= "SVM_4_Smalltalk14"				;//...ne‚Ìk·m ti nic novÈho...
-	Smalltalk15					= "SVM_4_Smalltalk15"				;//...nikdy by na to s·m nep‚iöel...
-	Smalltalk16					= "SVM_4_Smalltalk16"				;//...to uû se vÌ dlouho...
-	Smalltalk17					= "SVM_4_Smalltalk17"				;//...to je öpatn˝ obchod...
-	Smalltalk18					= "SVM_4_Smalltalk18"				;//...mÍl jsem to udÍlat jinak...
-	Smalltalk19					= "SVM_4_Smalltalk19"				;//...˙plnÍ s tebou souhlasÌm...
-	Smalltalk20					= "SVM_4_Smalltalk20"				;//...to nic nezmÍnÌ...
-	Smalltalk21					= "SVM_4_Smalltalk21"				;//...nikdy by mÍ nenapadlo, ûe...
-	Smalltalk22					= "SVM_4_Smalltalk22"				;//...uû s tÌm nic nenadÍl·ö...
-	Smalltalk23					= "SVM_4_Smalltalk23"				;//...to mÍ nep‚ekvapuje...
-	Smalltalk24					= "SVM_4_Smalltalk24"				;//...ale to ne, on vÍdÍl vöechno nejlÌp...
+	Smalltalk01					= "SVM_4_Smalltalk01"				;//...v√°≈ænƒô je to tak...
+	Smalltalk02					= "SVM_4_Smalltalk02"				;//...to nen√≠ to, co jsem sly≈°el...
+	Smalltalk03					= "SVM_4_Smalltalk03"				;//...ne√¢√≠kej mi, ≈æes o tom nevƒôdƒôl...
+	Smalltalk04					= "SVM_4_Smalltalk04"				;//...v tyhle dny ani nev√≠≈°, komu m√°≈° vƒô√¢it...
+	Smalltalk05					= "SVM_4_Smalltalk05"				;//...v≈°echno to jsou jen drby...
+	Smalltalk06					= "SVM_4_Smalltalk06"				;//...nejsem o nic ≈°ƒÉastnƒôj≈°√≠...
+	Smalltalk07					= "SVM_4_Smalltalk07"				;//...u≈æ mƒô nem≈Ø≈æe nic p√¢ekvapit...
+	Smalltalk08					= "SVM_4_Smalltalk08"				;//...to v√°≈ænƒô nen√≠ m≈Øj probl√©m...
+	Smalltalk09					= "SVM_4_Smalltalk09"				;//...opravdu si mysl√≠≈°, ≈æe...
+	Smalltalk10					= "SVM_4_Smalltalk10"				;//...nikdo se ode mƒô nic nedozv√≠...
+	Smalltalk11					= "SVM_4_Smalltalk11"				;//...v≈°em to bylo jasn√©...
+	Smalltalk12					= "SVM_4_Smalltalk12"				;//...naslouchal ≈°patn√Ωm lidem...
+	Smalltalk13					= "SVM_4_Smalltalk13"				;//...pokud to s√°m nevid√≠, nem≈Ø≈æu mu nijak pomoct...
+	Smalltalk14					= "SVM_4_Smalltalk14"				;//...ne√¢√≠k√°m ti nic nov√©ho...
+	Smalltalk15					= "SVM_4_Smalltalk15"				;//...nikdy by na to s√°m nep√¢i≈°el...
+	Smalltalk16					= "SVM_4_Smalltalk16"				;//...to u≈æ se v√≠ dlouho...
+	Smalltalk17					= "SVM_4_Smalltalk17"				;//...to je ≈°patn√Ω obchod...
+	Smalltalk18					= "SVM_4_Smalltalk18"				;//...mƒôl jsem to udƒôlat jinak...
+	Smalltalk19					= "SVM_4_Smalltalk19"				;//...√∫plnƒô s tebou souhlas√≠m...
+	Smalltalk20					= "SVM_4_Smalltalk20"				;//...to nic nezmƒôn√≠...
+	Smalltalk21					= "SVM_4_Smalltalk21"				;//...nikdy by mƒô nenapadlo, ≈æe...
+	Smalltalk22					= "SVM_4_Smalltalk22"				;//...u≈æ s t√≠m nic nenadƒôl√°≈°...
+	Smalltalk23					= "SVM_4_Smalltalk23"				;//...to mƒô nep√¢ekvapuje...
+	Smalltalk24					= "SVM_4_Smalltalk24"				;//...ale to ne, on vƒôdƒôl v≈°echno nejl√≠p...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                    
-	Smalltalk25					= "SVM_4_Smalltalk25"				;//...situace je v·ûn·, tak mi ne‚Ìkej, ûe...
-	Smalltalk26					= "SVM_4_Smalltalk26"				;//...jeötÍ ani nevÍdÍl, jak po‚·dnÍ drûet meË...
-	Smalltalk27					= "SVM_4_Smalltalk27"				;//...jo, v·ûnÍ ‚ekl, ûe...
+	Smalltalk25					= "SVM_4_Smalltalk25"				;//...situace je v√°≈æn√°, tak mi ne√¢√≠kej, ≈æe...
+	Smalltalk26					= "SVM_4_Smalltalk26"				;//...je≈°tƒô ani nevƒôdƒôl, jak po√¢√°dnƒô dr≈æet meƒç...
+	Smalltalk27					= "SVM_4_Smalltalk27"				;//...jo, v√°≈ænƒô √¢ekl, ≈æe...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                    
-	Smalltalk28					= "SVM_4_Smalltalk28"				;//...za tohle nÍkdo zaplatÌ...
-	Smalltalk29					= "SVM_4_Smalltalk29"				;//...Innos nenech· v nevÍdomosti nikoho, kdo rozpozn· jeho moudrost...
-	Smalltalk30					= "SVM_4_Smalltalk30"				;//...spravedlnost nakonec zvÌtÍzÌ...
+	Smalltalk28					= "SVM_4_Smalltalk28"				;//...za tohle nƒôkdo zaplat√≠...
+	Smalltalk29					= "SVM_4_Smalltalk29"				;//...Innos nenech√° v nevƒôdomosti nikoho, kdo rozpozn√° jeho moudrost...
+	Smalltalk30					= "SVM_4_Smalltalk30"				;//...spravedlnost nakonec zv√≠tƒôz√≠...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_4_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_4_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_4_NoLearnYoureBetter"		;//Uû tÍ nem˘ûu nauËit nic dalöÌho. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_4_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_4_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_4_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_4_NoLearnYoureBetter"		;//U≈æ tƒô nem≈Ø≈æu nauƒçit nic dal≈°√≠ho. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_4_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_4_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_4_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_4_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_4_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_4_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_4_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_4_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_4_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_4_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_4_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_4_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_4_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_4_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_4_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_4_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_4_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_4_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_4_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_4_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_4_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_4_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_4_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_4_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_4_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_4_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_4_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_4_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_4_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_4_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_4_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_4_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_4_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_4_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_4_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_4_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_4_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_4_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_4_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_4_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_4_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_4_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_4_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_4_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_4_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_4_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_4_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_4_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_4_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_4_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_4_Aargh_1"					;//Aargh
@@ -985,220 +985,220 @@ instance SVM_4 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_4_Addon_WrongArmor";				//Nap‚ed se sluönÍ obleË a pak si promluvÌme.
-	ADDON_WRONGARMOR_SLD		= "SVM_4_ADDON_WRONGARMOR_SLD";			//Nap‚ed si oblÌkni zbroj, jinak se s tebou nebudu bavit.
-	ADDON_WRONGARMOR_MIL		= "SVM_4_ADDON_WRONGARMOR_MIL";			//Copak ti nikdo nedal naöi zbroj? No tak si ji obleË!
-	ADDON_WRONGARMOR_KDF		= "SVM_4_ADDON_WRONGARMOR_KDF";			//Kde m·ö roucho? BÍû se p‚evlÈct, jinak se s tebou nebudu bavit.
-	ADDON_NOARMOR_BDT			= "SVM_4_ADDON_ADDON_NOARMOR_BDT";		//Co jsi to za chud·ka? Vra„ se, aû si budeö moct dovolit aspo‡ zbroj!
+	ADDON_WRONGARMOR			= "SVM_4_Addon_WrongArmor";				//Nap√¢ed se slu≈°nƒô obleƒç a pak si promluv√≠me.
+	ADDON_WRONGARMOR_SLD		= "SVM_4_ADDON_WRONGARMOR_SLD";			//Nap√¢ed si obl√≠kni zbroj, jinak se s tebou nebudu bavit.
+	ADDON_WRONGARMOR_MIL		= "SVM_4_ADDON_WRONGARMOR_MIL";			//Copak ti nikdo nedal na≈°i zbroj? No tak si ji obleƒç!
+	ADDON_WRONGARMOR_KDF		= "SVM_4_ADDON_WRONGARMOR_KDF";			//Kde m√°≈° roucho? Bƒô≈æ se p√¢evl√©ct, jinak se s tebou nebudu bavit.
+	ADDON_NOARMOR_BDT			= "SVM_4_ADDON_ADDON_NOARMOR_BDT";		//Co jsi to za chud√°ka? VraƒÉ se, a≈æ si bude≈° moct dovolit aspo≈ï zbroj!
 
-	ADDON_DIEBANDIT				= "SVM_4_ADDON_DIEBANDIT";				//DalöÌ bandita!
-	ADDON_DIRTYPIRATE			= "SVM_4_ADDON_DIRTYPIRATE";			//Ty öpinavej pir·te!
+	ADDON_DIEBANDIT				= "SVM_4_ADDON_DIEBANDIT";				//Dal≈°√≠ bandita!
+	ADDON_DIRTYPIRATE			= "SVM_4_ADDON_DIRTYPIRATE";			//Ty ≈°pinavej pir√°te!
 };
 
 instance SVM_5 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_5_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_5_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_5_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_5_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_5_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_5_IGetYouStill"				;//Tak jsem tÍ p‚ece jen dostal!
-	DieEnemy					=	"SVM_5_DieEnemy"					;//S·m sis o to ‚ekl!
-	DieMonster					=	"SVM_5_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_5_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_5_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_5_SheepKiller"					;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_5_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	IGetYouStill				= 	"SVM_5_IGetYouStill"				;//Tak jsem tƒô p√¢ece jen dostal!
+	DieEnemy					=	"SVM_5_DieEnemy"					;//S√°m sis o to √¢ekl!
+	DieMonster					=	"SVM_5_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_5_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_5_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_5_SheepKiller"					;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_5_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_5_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_5_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_5_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_5_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_5_ThenIBeatYouOutOfHere"		;//Tak to tÍ odsud budu muset VYKOPAT!
-	WhatDidYouDoInThere			=	"SVM_5_WhatDidYouDoInThere"			;//Tak co jsi tam teda dÍlal, no?!
-	WillYouStopFighting			=	"SVM_5_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_5_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_5_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_5_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_5_ThenIBeatYouOutOfHere"		;//Tak to tƒô odsud budu muset VYKOPAT!
+	WhatDidYouDoInThere			=	"SVM_5_WhatDidYouDoInThere"			;//Tak co jsi tam teda dƒôlal, no?!
+	WillYouStopFighting			=	"SVM_5_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_5_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_5_EnemyKilled"					;//Trochu velk˝ sousto, co, ty b‚Ìdile!
-	MonsterKilled				=	"SVM_5_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_5_ThiefDown"					;//Uû se nikdy nepokouöej mÍ okr·st!
-	rumfummlerDown				=	"SVM_5_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_5_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_5_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_5_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_5_NeverHitMeAgain"				;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_5_YouBetterShouldHaveListened"	;//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_5_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_5_NeverEnterRoomAgain"			;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_5_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö? Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_5_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_5_EnemyKilled"					;//Trochu velk√Ω sousto, co, ty b√¢√≠dile!
+	MonsterKilled				=	"SVM_5_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_5_ThiefDown"					;//U≈æ se nikdy nepokou≈°ej mƒô okr√°st!
+	rumfummlerDown				=	"SVM_5_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_5_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_5_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_5_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_5_NeverHitMeAgain"				;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_5_YouBetterShouldHaveListened"	;//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_5_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_5_NeverEnterRoomAgain"			;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_5_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°? Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_5_SpareMe"						;//ProstÍ mÍ nech b˝t!
-	RunAway						= 	"SVM_5_RunAway"						;//Do hajzlu! Pad·m pryË!
+	SpareMe						=	"SVM_5_SpareMe"						;//Prostƒô mƒô nech b√Ωt!
+	RunAway						= 	"SVM_5_RunAway"						;//Do hajzlu! Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_5_Alarm"						;//POPLACH!
-	Guards						=	"SVM_5_Guards"						;//STR¡éE!
+	Guards						=	"SVM_5_Guards"						;//STR√Å≈ΩE!
 	Help						=	"SVM_5_Help"						;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_5_GoodMonsterKill"				;//(vol·) Dobr· pr·ce - o jednu öpinavou bestii mÌ‡!
-	GoodKill					= 	"SVM_5_GoodKill"					;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_5_GoodMonsterKill"				;//(vol√°) Dobr√° pr√°ce - o jednu ≈°pinavou bestii m√≠≈ï!
+	GoodKill					= 	"SVM_5_GoodKill"					;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_5_NOTNOW"						;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_5_NOTNOW"						;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_5_RunCoward"					;//(hlasitÍ k‚iËÌ) Hej, st˘j, ty öpinavËe!
+	RunCoward					=	"SVM_5_RunCoward"					;//(hlasitƒô k√¢iƒç√≠) Hej, st≈Øj, ty ≈°pinavƒçe!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_5_GetOutOfHere"				;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_5_WhyAreYouInHere"				;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_5_WhyAreYouInHere"				;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_5_YesGoOutOfHere"				;//Jo, pakuj se odsud!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_5_WhatsThisSupposedToBe"		;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_5_YouDisturbedMySlumber"		;//(probudÌ se) K Ëertu, co se dÍje?
+	WhatsThisSupposedToBe		=	"SVM_5_WhatsThisSupposedToBe"		;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_5_YouDisturbedMySlumber"		;//(probud√≠ se) K ƒçertu, co se dƒôje?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_5_ITookYourGold"				;//Zlato! Fajn, to si vezmu - jen tak pro zaË·tek.
-	ShitNoGold					=	"SVM_5_ShitNoGold"					;//Ty u sebe nem·ö û·dnÈ zlato?
-	ITakeYourWeapon				=	"SVM_5_ITakeYourWeapon"				;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_5_ITookYourGold"				;//Zlato! Fajn, to si vezmu - jen tak pro zaƒç√°tek.
+	ShitNoGold					=	"SVM_5_ShitNoGold"					;//Ty u sebe nem√°≈° ≈æ√°dn√© zlato?
+	ITakeYourWeapon				=	"SVM_5_ITakeYourWeapon"				;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_5_WhatAreYouDoing"				;//(varovnÍ) Hej! Dej si bacha!
+	WhatAreYouDoing				=	"SVM_5_WhatAreYouDoing"				;//(varovnƒô) Hej! Dej si bacha!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_5_LookingForTroubleAgain"		;//(agresivnÍ) JeötÍ nem·ö dost?
-	StopMagic					=	"SVM_5_StopMagic"					;//Nep‚ibliûuj se ke mnÍ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_5_ISaidStopMagic"				;//P‚esta‡ s tou magiÌ! M·ö snad nÍco s uöima!?
-	WeaponDown					=	"SVM_5_WeaponDown"					;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_5_ISaidWeaponDown"				;//Seö snad hluchej, nebo co? ¬ekl jsem: Dej pryË tu zbra‡!
+	LookingForTroubleAgain		=	"SVM_5_LookingForTroubleAgain"		;//(agresivnƒô) Je≈°tƒô nem√°≈° dost?
+	StopMagic					=	"SVM_5_StopMagic"					;//Nep√¢ibli≈æuj se ke mnƒô s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_5_ISaidStopMagic"				;//P√¢esta≈ï s tou magi√≠! M√°≈° snad nƒôco s u≈°ima!?
+	WeaponDown					=	"SVM_5_WeaponDown"					;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_5_ISaidWeaponDown"				;//Se≈° snad hluchej, nebo co? √Çekl jsem: Dej pryƒç tu zbra≈ï!
 	WiseMove					=	"SVM_5_WiseMove"					;//Ani to nebolelo, co?
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_5_NextTimeYoureInForIt"		;//(pro sebe) JeötÍ se uvidÌ.
+	NextTimeYoureInForIt		=	"SVM_5_NextTimeYoureInForIt"		;//(pro sebe) Je≈°tƒô se uvid√≠.
 	OhMyHead					=	"SVM_5_OhMyHead"					;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_5_TheresAFight"				;//(dychtivÍ) KoneËnÍ se nÍco dÍje!
-	OhMyGodItsAFight			=	"SVM_5_OhMyGodItsAFight"			;//(vystraöenÍ) Ale vûdy„ si navz·jem vytluËou mozek z hlavy.
-	GoodVictory					=	"SVM_5_GoodVictory"					;//(zl˝ smÌch) Koledoval si o to!
-	NotBad						= 	"SVM_5_NotBad"						;//(souhlasnÍ) To nebylo v˘bec öpatnÈ.
-	OhMyGodHesDown				=	"SVM_5_OhMyGodHesDown"				;//(pro sebe) Takov˝ surovec...
+	TheresAFight				=	"SVM_5_TheresAFight"				;//(dychtivƒô) Koneƒçnƒô se nƒôco dƒôje!
+	OhMyGodItsAFight			=	"SVM_5_OhMyGodItsAFight"			;//(vystra≈°enƒô) Ale v≈ædyƒÉ si navz√°jem vytluƒçou mozek z hlavy.
+	GoodVictory					=	"SVM_5_GoodVictory"					;//(zl√Ω sm√≠ch) Koledoval si o to!
+	NotBad						= 	"SVM_5_NotBad"						;//(souhlasnƒô) To nebylo v≈Øbec ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_5_OhMyGodHesDown"				;//(pro sebe) Takov√Ω surovec...
 	CheerFriend01				=	"SVM_5_CheerFriend01"				;//Jo, to je ono!
-	CheerFriend02				=	"SVM_5_CheerFriend02"				;//Tak na co Ëek·ö?
-	CheerFriend03				=	"SVM_5_CheerFriend03"				;//V˝bornÍ!
+	CheerFriend02				=	"SVM_5_CheerFriend02"				;//Tak na co ƒçek√°≈°?
+	CheerFriend03				=	"SVM_5_CheerFriend03"				;//V√Ωbornƒô!
 	Ooh01						=	"SVM_5_Ooh01"						;//Jen se z toho nezvencni!
-	Ooh02						=	"SVM_5_Ooh02"						;//Ukaû mu, kdo je tady öÈf!
+	Ooh02						=	"SVM_5_Ooh02"						;//Uka≈æ mu, kdo je tady ≈°√©f!
 	Ooh03						=	"SVM_5_Ooh03"						;//Do hajzlu!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_5_WhatWasThat"					;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_5_WhatWasThat"					;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_5_GetOutOfMyBed"					;//Vypadni z mÈ postele!
-	Awake						= "SVM_5_Awake"							;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_5_GetOutOfMyBed"					;//Vypadni z m√© postele!
+	Awake						= "SVM_5_Awake"							;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_5_ABS_COMMANDER"					;//Slyöel jsem, ûe jsi zaöel za velitelem a dal vÍci do po‚·dku.
-	ABS_MONASTERY				= "SVM_5_ABS_MONASTERY"					;//Slyöel jsem, ûe jsi zaöel za otcem Parlanem a uËinil pok·nÌ.
-	ABS_FARM					= "SVM_5_ABS_FARM"						;//Slyöel jsem, ûe jsi zaöel za Leem a uklidnil situaci.
-	ABS_GOOD					= "SVM_5_ABS_GOOD"						;//To je dob‚e.
+	ABS_COMMANDER				= "SVM_5_ABS_COMMANDER"					;//Sly≈°el jsem, ≈æe jsi za≈°el za velitelem a dal vƒôci do po√¢√°dku.
+	ABS_MONASTERY				= "SVM_5_ABS_MONASTERY"					;//Sly≈°el jsem, ≈æe jsi za≈°el za otcem Parlanem a uƒçinil pok√°n√≠.
+	ABS_FARM					= "SVM_5_ABS_FARM"						;//Sly≈°el jsem, ≈æe jsi za≈°el za Leem a uklidnil situaci.
+	ABS_GOOD					= "SVM_5_ABS_GOOD"						;//To je dob√¢e.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_5_SHEEPKILLER_CRIME"				;//Takhle vraûdit naöe ovce! Vypadni, vole!
-	ATTACK_CRIME				= "SVM_5_ATTACK_CRIME"					;//S mizernejma gr·zlama se nebavim!
-	THEFT_CRIME					= "SVM_5_THEFT_CRIME"					;//Jdi mi z oËÌ, ty öpinavej zlodÍji!
+	SHEEPKILLER_CRIME			= "SVM_5_SHEEPKILLER_CRIME"				;//Takhle vra≈ædit na≈°e ovce! Vypadni, vole!
+	ATTACK_CRIME				= "SVM_5_ATTACK_CRIME"					;//S mizernejma gr√°zlama se nebavim!
+	THEFT_CRIME					= "SVM_5_THEFT_CRIME"					;//Jdi mi z oƒç√≠, ty ≈°pinavej zlodƒôji!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_5_PAL_CITY_CRIME"				;//Jsi ostudou svÈho ‚·du! Lord Hagen se bude zlobit!
-	MIL_CITY_CRIME				= "SVM_5_MIL_CITY_CRIME"				;//Jsi ostudou mÍstsk˝ch str·ûÌ! Lord Andre tÍ jeötÍ nauËÌ zp˘sob˘m!
-	CITY_CRIME					= "SVM_5_CITY_CRIME"					;//Lord Andre se dozvÌ o tom, cos provedl!
+	PAL_CITY_CRIME				= "SVM_5_PAL_CITY_CRIME"				;//Jsi ostudou sv√©ho √¢√°du! Lord Hagen se bude zlobit!
+	MIL_CITY_CRIME				= "SVM_5_MIL_CITY_CRIME"				;//Jsi ostudou mƒôstsk√Ωch str√°≈æ√≠! Lord Andre tƒô je≈°tƒô nauƒç√≠ zp≈Øsob≈Øm!
+	CITY_CRIME					= "SVM_5_CITY_CRIME"					;//Lord Andre se dozv√≠ o tom, cos provedl!
 	// -------------------------
-	MONA_CRIME					= "SVM_5_MONA_CRIME"					;//Otec Parlan nebude nadöen˝, aû uslyöÌ o tv˝ch h‚ÌöÌch!
-	FARM_CRIME					= "SVM_5_FARM_CRIME"					;//Lee ti d· co proto! JeötÍ uvidÌö, co sis nadrobil!
-	OC_CRIME					= "SVM_5_OC_CRIME"						;//Velitel Garond po tobÍ bude chtÌt vysvÍtlenÌ!
+	MONA_CRIME					= "SVM_5_MONA_CRIME"					;//Otec Parlan nebude nad≈°en√Ω, a≈æ usly≈°√≠ o tv√Ωch h√¢√≠≈°√≠ch!
+	FARM_CRIME					= "SVM_5_FARM_CRIME"					;//Lee ti d√° co proto! Je≈°tƒô uvid√≠≈°, co sis nadrobil!
+	OC_CRIME					= "SVM_5_OC_CRIME"						;//Velitel Garond po tobƒô bude cht√≠t vysvƒôtlen√≠!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_5_TOUGHGUY_ATTACKLOST"			;//Tak dobr·, dobr·, vyhr·l jsi. Co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_5_TOUGHGUY_ATTACKWON"			;//(nafoukanÍ) M·m ti znovu uk·zat, kdo je tady p·nem?
-	TOUGHGUY_PLAYERATTACK		= "SVM_5_TOUGHGUY_PLAYERATTACK"			;//ZkouöÌö to na mÍ znovu, co?
+	TOUGHGUY_ATTACKLOST			= "SVM_5_TOUGHGUY_ATTACKLOST"			;//Tak dobr√°, dobr√°, vyhr√°l jsi. Co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_5_TOUGHGUY_ATTACKWON"			;//(nafoukanƒô) M√°m ti znovu uk√°zat, kdo je tady p√°nem?
+	TOUGHGUY_PLAYERATTACK		= "SVM_5_TOUGHGUY_PLAYERATTACK"			;//Zkou≈°√≠≈° to na mƒô znovu, co?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_5_GOLD_1000"						;//1000 zlat˝ch.
-	GOLD_950					= "SVM_5_GOLD_950"						;//950 zlat˝ch.
-	GOLD_900					= "SVM_5_GOLD_900"						;//900 zlat˝ch.
-	GOLD_850					= "SVM_5_GOLD_850"						;//850 zlat˝ch.
-	GOLD_800					= "SVM_5_GOLD_800"						;//800 zlat˝ch.
-	GOLD_750					= "SVM_5_GOLD_750"						;//750 zlat˝ch.
-	GOLD_700					= "SVM_5_GOLD_700"						;//700 zlat˝ch.
-	GOLD_650					= "SVM_5_GOLD_650"						;//650 zlat˝ch.
-	GOLD_600					= "SVM_5_GOLD_600"						;//600 zlat˝ch.
-	GOLD_550					= "SVM_5_GOLD_550"						;//550 zlat˝ch.
-	GOLD_500					= "SVM_5_GOLD_500"						;//500 zlat˝ch.
-	GOLD_450					= "SVM_5_GOLD_450"						;//450 zlat˝ch.
-	GOLD_400					= "SVM_5_GOLD_400"						;//400 zlat˝ch.
-	GOLD_350					= "SVM_5_GOLD_350"						;//350 zlat˝ch.
-	GOLD_300					= "SVM_5_GOLD_300"						;//300 zlat˝ch.
-	GOLD_250					= "SVM_5_GOLD_250"						;//250 zlat˝ch.
-	GOLD_200					= "SVM_5_GOLD_200"						;//200 zlat˝ch.
-	GOLD_150					= "SVM_5_GOLD_150"						;//150 zlat˝ch.
-	GOLD_100					= "SVM_5_GOLD_100"						;//100 zlat˝ch.
-	GOLD_90						= "SVM_5_GOLD_90"						;//90 zlat˝ch.
-	GOLD_80						= "SVM_5_GOLD_80"						;//80 zlat˝ch.
-	GOLD_70						= "SVM_5_GOLD_70"						;//70 zlat˝ch.
-	GOLD_60						= "SVM_5_GOLD_60"						;//60 zlat˝ch.
-	GOLD_50						= "SVM_5_GOLD_50"						;//50 zlat˝ch.
-	GOLD_40						= "SVM_5_GOLD_40"						;//40 zlat˝ch.
-	GOLD_30						= "SVM_5_GOLD_30"						;//30 zlat˝ch.
-	GOLD_20						= "SVM_5_GOLD_20"						;//20 zlat˝ch.
-	GOLD_10						= "SVM_5_GOLD_10"						;//10 zlat˝ch.
+	GOLD_1000					= "SVM_5_GOLD_1000"						;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_5_GOLD_950"						;//950 zlat√Ωch.
+	GOLD_900					= "SVM_5_GOLD_900"						;//900 zlat√Ωch.
+	GOLD_850					= "SVM_5_GOLD_850"						;//850 zlat√Ωch.
+	GOLD_800					= "SVM_5_GOLD_800"						;//800 zlat√Ωch.
+	GOLD_750					= "SVM_5_GOLD_750"						;//750 zlat√Ωch.
+	GOLD_700					= "SVM_5_GOLD_700"						;//700 zlat√Ωch.
+	GOLD_650					= "SVM_5_GOLD_650"						;//650 zlat√Ωch.
+	GOLD_600					= "SVM_5_GOLD_600"						;//600 zlat√Ωch.
+	GOLD_550					= "SVM_5_GOLD_550"						;//550 zlat√Ωch.
+	GOLD_500					= "SVM_5_GOLD_500"						;//500 zlat√Ωch.
+	GOLD_450					= "SVM_5_GOLD_450"						;//450 zlat√Ωch.
+	GOLD_400					= "SVM_5_GOLD_400"						;//400 zlat√Ωch.
+	GOLD_350					= "SVM_5_GOLD_350"						;//350 zlat√Ωch.
+	GOLD_300					= "SVM_5_GOLD_300"						;//300 zlat√Ωch.
+	GOLD_250					= "SVM_5_GOLD_250"						;//250 zlat√Ωch.
+	GOLD_200					= "SVM_5_GOLD_200"						;//200 zlat√Ωch.
+	GOLD_150					= "SVM_5_GOLD_150"						;//150 zlat√Ωch.
+	GOLD_100					= "SVM_5_GOLD_100"						;//100 zlat√Ωch.
+	GOLD_90						= "SVM_5_GOLD_90"						;//90 zlat√Ωch.
+	GOLD_80						= "SVM_5_GOLD_80"						;//80 zlat√Ωch.
+	GOLD_70						= "SVM_5_GOLD_70"						;//70 zlat√Ωch.
+	GOLD_60						= "SVM_5_GOLD_60"						;//60 zlat√Ωch.
+	GOLD_50						= "SVM_5_GOLD_50"						;//50 zlat√Ωch.
+	GOLD_40						= "SVM_5_GOLD_40"						;//40 zlat√Ωch.
+	GOLD_30						= "SVM_5_GOLD_30"						;//30 zlat√Ωch.
+	GOLD_20						= "SVM_5_GOLD_20"						;//20 zlat√Ωch.
+	GOLD_10						= "SVM_5_GOLD_10"						;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_5_Smalltalk01"					;//...v·ûnÍ si myslÌö...
-	Smalltalk02					= "SVM_5_Smalltalk02"					;//...vöechno je moûnÈ...
-	Smalltalk03					= "SVM_5_Smalltalk03"					;//...mÍl si to rozmyslet...
-	Smalltalk04					= "SVM_5_Smalltalk04"					;//...jako bych nemÍl dost problÈm˘...
-	Smalltalk05					= "SVM_5_Smalltalk05"					;//...kdo ti to ‚ekl...
-	Smalltalk06					= "SVM_5_Smalltalk06"					;//...z toho budou jen dalöÌ problÈmy...
-	Smalltalk07					= "SVM_5_Smalltalk07"					;//...drbalo se tam o vöem moûnÈm...
-	Smalltalk08					= "SVM_5_Smalltalk08"					;//...nemÍl jsem to dÍlat...
-	Smalltalk09					= "SVM_5_Smalltalk09"					;//...to vöechno jsou jen ‚eËi...
-	Smalltalk10					= "SVM_5_Smalltalk10"					;//...radÍji bys mÍl zjistit, kdo to ‚Ìkal...
-	Smalltalk11					= "SVM_5_Smalltalk11"					;//...chtÍl jsem ti to ‚Ìct d‚Ìv...
-	Smalltalk12					= "SVM_5_Smalltalk12"					;//...nikdo se mÍ neptal...
-	Smalltalk13					= "SVM_5_Smalltalk13"					;//...mÍl bys mÌt soucit s chud·kem...
-	Smalltalk14					= "SVM_5_Smalltalk14"					;//...to nenÌ nic novÈho...
-	Smalltalk15					= "SVM_5_Smalltalk15"					;//...je to ˙plnÍ jasnÈ...
-	Smalltalk16					= "SVM_5_Smalltalk16"					;//...nemÍl ses mÍ pt·t, co...
-	Smalltalk17					= "SVM_5_Smalltalk17"					;//...takhle to nemohlo jÌt vÍËnÍ...
-	Smalltalk18					= "SVM_5_Smalltalk18"					;//...vöak vÌö, co myslÌm...
-	Smalltalk19					= "SVM_5_Smalltalk19"					;//...je to p‚esnÍ tak, jak jsem ‚Ìkal...
-	Smalltalk20					= "SVM_5_Smalltalk20"					;//...uû to nem˘ûe nic zmÍnit...
-	Smalltalk21					= "SVM_5_Smalltalk21"					;//...proË mi o tom nikdo ne‚ekl d‚Ìv...
-	Smalltalk22					= "SVM_5_Smalltalk22"					;//...poËkejme a uvidÌme, co se stane...
-	Smalltalk23					= "SVM_5_Smalltalk23"					;//...nÍkterÈ problÈmy se vy‚eöÌ samy...
-	Smalltalk24					= "SVM_5_Smalltalk24"					;//...uû o tom nechci nic slyöet...
+	Smalltalk01					= "SVM_5_Smalltalk01"					;//...v√°≈ænƒô si mysl√≠≈°...
+	Smalltalk02					= "SVM_5_Smalltalk02"					;//...v≈°echno je mo≈æn√©...
+	Smalltalk03					= "SVM_5_Smalltalk03"					;//...mƒôl si to rozmyslet...
+	Smalltalk04					= "SVM_5_Smalltalk04"					;//...jako bych nemƒôl dost probl√©m≈Ø...
+	Smalltalk05					= "SVM_5_Smalltalk05"					;//...kdo ti to √¢ekl...
+	Smalltalk06					= "SVM_5_Smalltalk06"					;//...z toho budou jen dal≈°√≠ probl√©my...
+	Smalltalk07					= "SVM_5_Smalltalk07"					;//...drbalo se tam o v≈°em mo≈æn√©m...
+	Smalltalk08					= "SVM_5_Smalltalk08"					;//...nemƒôl jsem to dƒôlat...
+	Smalltalk09					= "SVM_5_Smalltalk09"					;//...to v≈°echno jsou jen √¢eƒçi...
+	Smalltalk10					= "SVM_5_Smalltalk10"					;//...radƒôji bys mƒôl zjistit, kdo to √¢√≠kal...
+	Smalltalk11					= "SVM_5_Smalltalk11"					;//...chtƒôl jsem ti to √¢√≠ct d√¢√≠v...
+	Smalltalk12					= "SVM_5_Smalltalk12"					;//...nikdo se mƒô neptal...
+	Smalltalk13					= "SVM_5_Smalltalk13"					;//...mƒôl bys m√≠t soucit s chud√°kem...
+	Smalltalk14					= "SVM_5_Smalltalk14"					;//...to nen√≠ nic nov√©ho...
+	Smalltalk15					= "SVM_5_Smalltalk15"					;//...je to √∫plnƒô jasn√©...
+	Smalltalk16					= "SVM_5_Smalltalk16"					;//...nemƒôl ses mƒô pt√°t, co...
+	Smalltalk17					= "SVM_5_Smalltalk17"					;//...takhle to nemohlo j√≠t vƒôƒçnƒô...
+	Smalltalk18					= "SVM_5_Smalltalk18"					;//...v≈°ak v√≠≈°, co mysl√≠m...
+	Smalltalk19					= "SVM_5_Smalltalk19"					;//...je to p√¢esnƒô tak, jak jsem √¢√≠kal...
+	Smalltalk20					= "SVM_5_Smalltalk20"					;//...u≈æ to nem≈Ø≈æe nic zmƒônit...
+	Smalltalk21					= "SVM_5_Smalltalk21"					;//...proƒç mi o tom nikdo ne√¢ekl d√¢√≠v...
+	Smalltalk22					= "SVM_5_Smalltalk22"					;//...poƒçkejme a uvid√≠me, co se stane...
+	Smalltalk23					= "SVM_5_Smalltalk23"					;//...nƒôkter√© probl√©my se vy√¢e≈°√≠ samy...
+	Smalltalk24					= "SVM_5_Smalltalk24"					;//...u≈æ o tom nechci nic sly≈°et...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_5_Smalltalk25"					;//...zaËal pÌt...
+	Smalltalk25					= "SVM_5_Smalltalk25"					;//...zaƒçal p√≠t...
 	Smalltalk26					= "SVM_5_Smalltalk26"					;//...nechci dopadnout takhle...
-	Smalltalk27					= "SVM_5_Smalltalk27"					;//...vöichni utekli jak vyplaöenÌ kr·lÌci, z˘stal jsem ˙plnÍ s·m...
+	Smalltalk27					= "SVM_5_Smalltalk27"					;//...v≈°ichni utekli jak vypla≈°en√≠ kr√°l√≠ci, z≈Østal jsem √∫plnƒô s√°m...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_5_Smalltalk28"					;//...tak stojÌ v PÌsmu...
-	Smalltalk29					= "SVM_5_Smalltalk29"					;//...vûdycky jsem konal ve jmÈnu Innose...
-	Smalltalk30					= "SVM_5_Smalltalk30"					;//...nikdo se nesmÌ protivit v˘li boh˘...
+	Smalltalk28					= "SVM_5_Smalltalk28"					;//...tak stoj√≠ v P√≠smu...
+	Smalltalk29					= "SVM_5_Smalltalk29"					;//...v≈ædycky jsem konal ve jm√©nu Innose...
+	Smalltalk30					= "SVM_5_Smalltalk30"					;//...nikdo se nesm√≠ protivit v≈Øli boh≈Ø...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_5_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_5_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_5_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_5_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_5_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_5_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_5_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_5_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_5_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_5_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_5_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_5_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_5_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_5_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_5_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_5_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_5_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_5_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_5_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_5_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_5_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_5_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_5_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_5_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_5_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_5_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_5_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_5_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_5_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_5_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_5_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_5_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_5_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_5_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_5_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_5_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_5_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_5_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_5_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_5_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_5_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_5_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_5_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_5_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_5_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_5_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_5_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_5_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_5_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_5_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_5_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_5_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_5_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_5_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_5_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_5_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_5_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_5_Aargh_1"					;//Aargh
@@ -1207,221 +1207,221 @@ instance SVM_5 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_5_Addon_WrongArmor";				//Nap‚ed si na sebe vem nÍco sluönÈho.
-	ADDON_WRONGARMOR_SLD		= "SVM_5_ADDON_WRONGARMOR_SLD";			//Co to m·ö na sobÍ? To uû k n·m jako nepat‚Ìö? Pak s tebou taky nechci nic mÌt.
-	ADDON_WRONGARMOR_MIL		= "SVM_5_ADDON_WRONGARMOR_MIL";			//My voj·ci bojujeme ve jmÈnu kr·le, tak bys mÍl taky nosit jeho zbroj!
-	ADDON_WRONGARMOR_KDF		= "SVM_5_ADDON_WRONGARMOR_KDF";			//NaË ti n·ö ‚·d vÍnoval roucho, kdyû je nenosÌö? Pop‚em˝ölej o tom.
-	ADDON_NOARMOR_BDT			= "SVM_5_ADDON_ADDON_NOARMOR_BDT";		//Co jsi to za chud·ka? To nem·ö û·dnÈ brnÍnÌ? BÍû pryË.
+	ADDON_WRONGARMOR			= "SVM_5_Addon_WrongArmor";				//Nap√¢ed si na sebe vem nƒôco slu≈°n√©ho.
+	ADDON_WRONGARMOR_SLD		= "SVM_5_ADDON_WRONGARMOR_SLD";			//Co to m√°≈° na sobƒô? To u≈æ k n√°m jako nepat√¢√≠≈°? Pak s tebou taky nechci nic m√≠t.
+	ADDON_WRONGARMOR_MIL		= "SVM_5_ADDON_WRONGARMOR_MIL";			//My voj√°ci bojujeme ve jm√©nu kr√°le, tak bys mƒôl taky nosit jeho zbroj!
+	ADDON_WRONGARMOR_KDF		= "SVM_5_ADDON_WRONGARMOR_KDF";			//Naƒç ti n√°≈° √¢√°d vƒônoval roucho, kdy≈æ je nenos√≠≈°? Pop√¢em√Ω≈°lej o tom.
+	ADDON_NOARMOR_BDT			= "SVM_5_ADDON_ADDON_NOARMOR_BDT";		//Co jsi to za chud√°ka? To nem√°≈° ≈æ√°dn√© brnƒôn√≠? Bƒô≈æ pryƒç.
 
-	ADDON_DIEBANDIT				= "SVM_5_ADDON_DIEBANDIT";				//¡, bandita.
-	ADDON_DIRTYPIRATE			= "SVM_5_ADDON_DIRTYPIRATE";			//Rozsek·m tÍ na kousÌËky, pir·te pir·tsk·!
+	ADDON_DIEBANDIT				= "SVM_5_ADDON_DIEBANDIT";				//√Å, bandita.
+	ADDON_DIRTYPIRATE			= "SVM_5_ADDON_DIRTYPIRATE";			//Rozsek√°m tƒô na kous√≠ƒçky, pir√°te pir√°tsk√°!
 };
 
 
 instance SVM_6 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_6_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_6_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_6_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_6_Weather"					;//Zatracen· slota!
+	Weather						= 	"SVM_6_Weather"					;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_6_IGetYouStill"				;//Dostanu tÍ!
-	DieEnemy					=	"SVM_6_DieEnemy"					;//NemÍl jsi sem chodit!
-	DieMonster					=	"SVM_6_DieMonster"					;//PojÎ sem, ty zatracen· bestie!
-	DirtyThief					=	"SVM_6_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_6_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_6_SheepKiller"				;//Nech naöe ovce na pokoji!
-	SheepKillerMonster			=	"SVM_6_SheepKillerMonster"			;//T·hni od naöich ovcÌ, ty zvÌ‚e!
+	IGetYouStill				= 	"SVM_6_IGetYouStill"				;//Dostanu tƒô!
+	DieEnemy					=	"SVM_6_DieEnemy"					;//Nemƒôl jsi sem chodit!
+	DieMonster					=	"SVM_6_DieMonster"					;//Poj√´ sem, ty zatracen√° bestie!
+	DirtyThief					=	"SVM_6_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_6_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_6_SheepKiller"				;//Nech na≈°e ovce na pokoji!
+	SheepKillerMonster			=	"SVM_6_SheepKillerMonster"			;//T√°hni od na≈°ich ovc√≠, ty zv√≠√¢e!
 	YouMurderer					=	"SVM_6_YouMurderer"				;//Vrahu!
-	DieStupidBeast				=	"SVM_6_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_6_YouDareHitMe"				;//Toho budeö litovat!
-	YouAskedForIt				=	"SVM_6_YouAskedForIt"				;//Jako bych tÍ nevaroval.
+	DieStupidBeast				=	"SVM_6_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_6_YouDareHitMe"				;//Toho bude≈° litovat!
+	YouAskedForIt				=	"SVM_6_YouAskedForIt"				;//Jako bych tƒô nevaroval.
 	ThenIBeatYouOutOfHere		=	"SVM_6_ThenIBeatYouOutOfHere"		;//Hej, VYPADNI!
-	WhatDidYouDoInThere			=	"SVM_6_WhatDidYouDoInThere"		;//Hej! Co tam chceö?
-	WillYouStopFighting			=	"SVM_6_WillYouStopFighting"		;//P‚esta‡! Hned!
+	WhatDidYouDoInThere			=	"SVM_6_WhatDidYouDoInThere"		;//Hej! Co tam chce≈°?
+	WillYouStopFighting			=	"SVM_6_WillYouStopFighting"		;//P√¢esta≈ï! Hned!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
 	KillEnemy					= 	"SVM_6_KillEnemy"					;//Nezbude z tebe ani mastnej flek, ty bastarde!
 	EnemyKilled					=	"SVM_6_EnemyKilled"				;//To na tebe bylo trochu moc.
-	MonsterKilled				=	"SVM_6_MonsterKilled"				;//Hej, Po‚·d to jeötÍ m·m!
-	ThiefDown					=	"SVM_6_ThiefDown"					;//Varuju tÍ! Uû to znovu nezkouöej, ty mizernej zlodÍji!
-	rumfummlerDown				=	"SVM_6_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_6_SheepAttackerDown"			;//A uû se k naöim ovcÌm nep‚ibliûuj!
-	KillMurderer				=	"SVM_6_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_6_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_6_NeverHitMeAgain"				;//Neopovaûuj se na mÍ znovu za˙toËit!
-	YouBetterShouldHaveListened	=	"SVM_6_YouBetterShouldHaveListened"	;//Jako bych tÍ nevaroval.
-	GetUpAndBeGone				=	"SVM_6_GetUpAndBeGone"					;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_6_NeverEnterRoomAgain"			;//Uû tÍ tam nikdy nechci vidÍt, jasn˝?
-	ThereIsNoFightingHere		=	"SVM_6_ThereIsNoFightingHere"			;//Tady se û·dnÈ rvaËky nestrpÌ, jasnÈ?! Douf·m, ûe sis z toho vzal ponauËenÌ.
+	MonsterKilled				=	"SVM_6_MonsterKilled"				;//Hej, Po√¢√°d to je≈°tƒô m√°m!
+	ThiefDown					=	"SVM_6_ThiefDown"					;//Varuju tƒô! U≈æ to znovu nezkou≈°ej, ty mizernej zlodƒôji!
+	rumfummlerDown				=	"SVM_6_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_6_SheepAttackerDown"			;//A u≈æ se k na≈°im ovc√≠m nep√¢ibli≈æuj!
+	KillMurderer				=	"SVM_6_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_6_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_6_NeverHitMeAgain"				;//Neopova≈æuj se na mƒô znovu za√∫toƒçit!
+	YouBetterShouldHaveListened	=	"SVM_6_YouBetterShouldHaveListened"	;//Jako bych tƒô nevaroval.
+	GetUpAndBeGone				=	"SVM_6_GetUpAndBeGone"					;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_6_NeverEnterRoomAgain"			;//U≈æ tƒô tam nikdy nechci vidƒôt, jasn√Ω?
+	ThereIsNoFightingHere		=	"SVM_6_ThereIsNoFightingHere"			;//Tady se ≈æ√°dn√© rvaƒçky nestrp√≠, jasn√©?! Douf√°m, ≈æe sis z toho vzal ponauƒçen√≠.
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_6_SpareMe"						;//Nezkouöej û·dnÈ legr·cky!
-	RunAway						= 	"SVM_6_RunAway"						;//Pad·m pryË!
+	SpareMe						=	"SVM_6_SpareMe"						;//Nezkou≈°ej ≈æ√°dn√© legr√°cky!
+	RunAway						= 	"SVM_6_RunAway"						;//Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_6_Alarm"					;//POPLACH!
-	Guards						=	"SVM_6_Guards"					;//STR¡éE!
+	Guards						=	"SVM_6_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_6_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_6_GoodMonsterKill"		;//(vol·) Poöli ty bestie do vÍËn˝ch loviö„!
-	GoodKill					= 	"SVM_6_GoodKill"				;//(vol·) Jo, dej tÍm bastard˘m co proto!
+	GoodMonsterKill				=	"SVM_6_GoodMonsterKill"		;//(vol√°) Po≈°li ty bestie do vƒôƒçn√Ωch lovi≈°ƒÉ!
+	GoodKill					= 	"SVM_6_GoodKill"				;//(vol√°) Jo, dej tƒôm bastard≈Øm co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_6_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_6_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_6_RunCoward"				;//(hlasitÍ k‚iËÌ) JeötÍ tÍ dostanu!
+	RunCoward					=	"SVM_6_RunCoward"				;//(hlasitƒô k√¢iƒç√≠) Je≈°tƒô tƒô dostanu!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_6_GetOutOfHere"			;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_6_WhyAreYouInHere"		;//Nem·ö tady co pohled·vat!
+	WhyAreYouInHere				=	"SVM_6_WhyAreYouInHere"		;//Nem√°≈° tady co pohled√°vat!
 	YesGoOutOfHere				= 	"SVM_6_YesGoOutOfHere"			;//Jo, vypadni!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_6_WhatsThisSupposedToBe"	;//Co m·ö za lubem? Co m· znamenat vöechno to Ëmuch·nÌ kolem?
-	YouDisturbedMySlumber		=	"SVM_6_YouDisturbedMySlumber"	;//(vst·v·) Sakra, co chceö?
+	WhatsThisSupposedToBe		=	"SVM_6_WhatsThisSupposedToBe"	;//Co m√°≈° za lubem? Co m√° znamenat v≈°echno to ƒçmuch√°n√≠ kolem?
+	YouDisturbedMySlumber		=	"SVM_6_YouDisturbedMySlumber"	;//(vst√°v√°) Sakra, co chce≈°?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_6_ITookYourGold"			;//Dobr·, kdyû uû nic jinÈho, alespo‡ m·ö u sebe nÍjakÈ zlato.
-	ShitNoGold					=	"SVM_6_ShitNoGold"				;//Ani zla„·k - hmpf.
-	ITakeYourWeapon				=	"SVM_6_ITakeYourWeapon"		;//Asi si vezmu tvoji zbra‡.
+	ITookYourGold				=	"SVM_6_ITookYourGold"			;//Dobr√°, kdy≈æ u≈æ nic jin√©ho, alespo≈ï m√°≈° u sebe nƒôjak√© zlato.
+	ShitNoGold					=	"SVM_6_ShitNoGold"				;//Ani zlaƒÉ√°k - hmpf.
+	ITakeYourWeapon				=	"SVM_6_ITakeYourWeapon"		;//Asi si vezmu tvoji zbra≈ï.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_6_WhatAreYouDoing"		;//(varovnÍ) Tak tohle uû, hochu, vÌckr·t nedÍlej!
+	WhatAreYouDoing				=	"SVM_6_WhatAreYouDoing"		;//(varovnƒô) Tak tohle u≈æ, hochu, v√≠ckr√°t nedƒôlej!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_6_LookingForTroubleAgain"	;//(agresivnÍ) Pot‚ebujeö jeötÍ dalöÌ v˝prask?
-	StopMagic					=	"SVM_6_StopMagic"				;//P‚esta‡ s tÍmi kouzly!
-	ISaidStopMagic				=	"SVM_6_ISaidStopMagic"			;//PoslednÌ varov·nÌ! P‚esta‡ s tÍmi kouzly!
-	WeaponDown					=	"SVM_6_WeaponDown"				;//Dej tu zbra‡ pryË!
-	ISaidWeaponDown				=	"SVM_6_ISaidWeaponDown"		;//Schovej tu zbra‡, nebo v tom seö aû po uöi!
-	WiseMove					=	"SVM_6_WiseMove"				;//Hej, ty nejsi tak blbej, jak vypad·ö!
+	LookingForTroubleAgain		=	"SVM_6_LookingForTroubleAgain"	;//(agresivnƒô) Pot√¢ebuje≈° je≈°tƒô dal≈°√≠ v√Ωprask?
+	StopMagic					=	"SVM_6_StopMagic"				;//P√¢esta≈ï s tƒômi kouzly!
+	ISaidStopMagic				=	"SVM_6_ISaidStopMagic"			;//Posledn√≠ varov√°n√≠! P√¢esta≈ï s tƒômi kouzly!
+	WeaponDown					=	"SVM_6_WeaponDown"				;//Dej tu zbra≈ï pryƒç!
+	ISaidWeaponDown				=	"SVM_6_ISaidWeaponDown"		;//Schovej tu zbra≈ï, nebo v tom se≈° a≈æ po u≈°i!
+	WiseMove					=	"SVM_6_WiseMove"				;//Hej, ty nejsi tak blbej, jak vypad√°≈°!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_6_NextTimeYoureInForIt"	;//(pro sebe) Tohle uû znovu nezkouöej.
-	OhMyHead					=	"SVM_6_OhMyHead"				;//(pro sebe) ”! Moje hlava...
+	NextTimeYoureInForIt		=	"SVM_6_NextTimeYoureInForIt"	;//(pro sebe) Tohle u≈æ znovu nezkou≈°ej.
+	OhMyHead					=	"SVM_6_OhMyHead"				;//(pro sebe) √ì! Moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_6_TheresAFight"			;//(dychtivÍ) A„ je koneËnÍ nÍjak· z·bava.
-	OhMyGodItsAFight			=	"SVM_6_OhMyGodItsAFight"		;//(vydÍöenÍ) ”, m˘j boûe...
-	GoodVictory					=	"SVM_6_GoodVictory"			;//(zl˝ smÌch) A„ si z toho vezme ponauËenÌ.
-	NotBad						= 	"SVM_6_NotBad"					;//(souhlasnÍ) To byla trefa!
-	OhMyGodHesDown				=	"SVM_6_OhMyGodHesDown"			;//(pro sebe) Takov˝ surovec!
+	TheresAFight				=	"SVM_6_TheresAFight"			;//(dychtivƒô) AƒÉ je koneƒçnƒô nƒôjak√° z√°bava.
+	OhMyGodItsAFight			=	"SVM_6_OhMyGodItsAFight"		;//(vydƒô≈°enƒô) √ì, m≈Øj bo≈æe...
+	GoodVictory					=	"SVM_6_GoodVictory"			;//(zl√Ω sm√≠ch) AƒÉ si z toho vezme ponauƒçen√≠.
+	NotBad						= 	"SVM_6_NotBad"					;//(souhlasnƒô) To byla trefa!
+	OhMyGodHesDown				=	"SVM_6_OhMyGodHesDown"			;//(pro sebe) Takov√Ω surovec!
 	CheerFriend01				=	"SVM_6_CheerFriend01"			;//Dej mu!
-	CheerFriend02				=	"SVM_6_CheerFriend02"			;//TeÎ nep‚est·vej!
+	CheerFriend02				=	"SVM_6_CheerFriend02"			;//Te√´ nep√¢est√°vej!
 	CheerFriend03				=	"SVM_6_CheerFriend03"			;//Doraz ho!
-	Ooh01						=	"SVM_6_Ooh01"					;//D·vej pozor!
-	Ooh02						=	"SVM_6_Ooh02"					;//Tak mu to vra„!
-	Ooh03						=	"SVM_6_Ooh03"					;//Do hajzlu, takov· pecka!
+	Ooh01						=	"SVM_6_Ooh01"					;//D√°vej pozor!
+	Ooh02						=	"SVM_6_Ooh02"					;//Tak mu to vraƒÉ!
+	Ooh03						=	"SVM_6_Ooh03"					;//Do hajzlu, takov√° pecka!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_6_WhatWasThat"				;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_6_WhatWasThat"				;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_6_GetOutOfMyBed"			;//Vypadni z mÈ postele!
-	Awake						= "SVM_6_Awake"					;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_6_GetOutOfMyBed"			;//Vypadni z m√© postele!
+	Awake						= "SVM_6_Awake"					;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_6_ABS_COMMANDER"    ;//Tak velitel dal ty vÍci do po‚·dku.
-	ABS_MONASTERY    = "SVM_6_ABS_MONASTERY"    ;//Tak tÍ otec Parlan zbavil viny.
-	ABS_FARM       = "SVM_6_ABS_FARM"        ;//Tak jsi zaöel za Leem a vy‚eöil situaci.
-	ABS_GOOD       = "SVM_6_ABS_GOOD"       ;//Dobr·.
+	ABS_COMMANDER     = "SVM_6_ABS_COMMANDER"    ;//Tak velitel dal ty vƒôci do po√¢√°dku.
+	ABS_MONASTERY    = "SVM_6_ABS_MONASTERY"    ;//Tak tƒô otec Parlan zbavil viny.
+	ABS_FARM       = "SVM_6_ABS_FARM"        ;//Tak jsi za≈°el za Leem a vy√¢e≈°il situaci.
+	ABS_GOOD       = "SVM_6_ABS_GOOD"       ;//Dobr√°.
  	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_6_SHEEPKILLER_CRIME"   ;//Ty vraûdÌö ovce? P‚edpokl·d·m, ûe se ti nepoda‚ilo najÌt nikoho bezbrannÍjöÌho?
-	ATTACK_CRIME     = "SVM_6_ATTACK_CRIME"    ;//S odpornejma banditama nechci nic mÌt!
-	THEFT_CRIME      = "SVM_6_THEFT_CRIME"    ;//Se zlodÍji nechci mÌt nic spoleËnÈho!
+	SHEEPKILLER_CRIME   = "SVM_6_SHEEPKILLER_CRIME"   ;//Ty vra≈æd√≠≈° ovce? P√¢edpokl√°d√°m, ≈æe se ti nepoda√¢ilo naj√≠t nikoho bezbrannƒôj≈°√≠ho?
+	ATTACK_CRIME     = "SVM_6_ATTACK_CRIME"    ;//S odpornejma banditama nechci nic m√≠t!
+	THEFT_CRIME      = "SVM_6_THEFT_CRIME"    ;//Se zlodƒôji nechci m√≠t nic spoleƒçn√©ho!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_6_PAL_CITY_CRIME"   ;//A ty se chceö st·t paladinem? PoËkej, dokud ti lord Hagen ne‚ekne, co si o tom myslÌ!
- 	MIL_CITY_CRIME     = "SVM_6_MIL_CITY_CRIME"   ;//V·ûnÍ se chceö st·t Ëlenem mÍstsk˝ch str·ûÌ? Lord Andre tÍ v tom nehodl· podpo‚it!
- 	CITY_CRIME       = "SVM_6_CITY_CRIME"    ;//Zajdi za lordem Andrem, dokud m˘ûeö.
+ 	PAL_CITY_CRIME     = "SVM_6_PAL_CITY_CRIME"   ;//A ty se chce≈° st√°t paladinem? Poƒçkej, dokud ti lord Hagen ne√¢ekne, co si o tom mysl√≠!
+ 	MIL_CITY_CRIME     = "SVM_6_MIL_CITY_CRIME"   ;//V√°≈ænƒô se chce≈° st√°t ƒçlenem mƒôstsk√Ωch str√°≈æ√≠? Lord Andre tƒô v tom nehodl√° podpo√¢it!
+ 	CITY_CRIME       = "SVM_6_CITY_CRIME"    ;//Zajdi za lordem Andrem, dokud m≈Ø≈æe≈°.
  	// -------------------------
-	MONA_CRIME       = "SVM_6_MONA_CRIME"    ;//Zajdi za otcem Parlanem. Pom˘ûe ti odËinit tvÈ h‚Ìchy!
-	FARM_CRIME       = "SVM_6_FARM_CRIME"    ;//Lee se o tom dozvÌ a ty za to zaplatÌö.
-	OC_CRIME       = "SVM_6_OC_CRIME"     ;//Velitel Garond z toho nebude nadöen˝. UdÍl·ö lÌp, kdyû mu o tom ‚ekneö d‚Ìv, neû se situace jeötÍ zhoröÌ!
+	MONA_CRIME       = "SVM_6_MONA_CRIME"    ;//Zajdi za otcem Parlanem. Pom≈Ø≈æe ti odƒçinit tv√© h√¢√≠chy!
+	FARM_CRIME       = "SVM_6_FARM_CRIME"    ;//Lee se o tom dozv√≠ a ty za to zaplat√≠≈°.
+	OC_CRIME       = "SVM_6_OC_CRIME"     ;//Velitel Garond z toho nebude nad≈°en√Ω. Udƒôl√°≈° l√≠p, kdy≈æ mu o tom √¢ekne≈° d√¢√≠v, ne≈æ se situace je≈°tƒô zhor≈°√≠!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_6_TOUGHGUY_ATTACKLOST"		;//Dobr·, vyhr·l jsi. Tak co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_6_TOUGHGUY_ATTACKWON"		;//(arogantnÍ) M·m dojem, ûe uû jsi pochopil, s k˝m m·ö tu Ëest. Co chceö?
-	TOUGHGUY_PLAYERATTACK		= "SVM_6_TOUGHGUY_PLAYERATTACK"	;//Zase ty? ZkouöÌö to na mÍ znovu, co?
+	TOUGHGUY_ATTACKLOST			= "SVM_6_TOUGHGUY_ATTACKLOST"		;//Dobr√°, vyhr√°l jsi. Tak co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_6_TOUGHGUY_ATTACKWON"		;//(arogantnƒô) M√°m dojem, ≈æe u≈æ jsi pochopil, s k√Ωm m√°≈° tu ƒçest. Co chce≈°?
+	TOUGHGUY_PLAYERATTACK		= "SVM_6_TOUGHGUY_PLAYERATTACK"	;//Zase ty? Zkou≈°√≠≈° to na mƒô znovu, co?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_6_GOLD_1000"				;//1000 zlat˝ch.
-	GOLD_950					= "SVM_6_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_6_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_6_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_6_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_6_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_6_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_6_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_6_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_6_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_6_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_6_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_6_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_6_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_6_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_6_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_6_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_6_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_6_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_6_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_6_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_6_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_6_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_6_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_6_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_6_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_6_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_6_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_6_GOLD_1000"				;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_6_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_6_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_6_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_6_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_6_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_6_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_6_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_6_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_6_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_6_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_6_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_6_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_6_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_6_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_6_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_6_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_6_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_6_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_6_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_6_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_6_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_6_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_6_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_6_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_6_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_6_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_6_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_6_Smalltalk01"				;//...nem˘ûu uvÍ‚it, ûe...
-	Smalltalk02					= "SVM_6_Smalltalk02"				;//...nebyl bych si tak jist˝...
-	Smalltalk03					= "SVM_6_Smalltalk03"				;//...ale on vÌ, ûe vöichni...
-	Smalltalk04					= "SVM_6_Smalltalk04"				;//...stÍûÌ vÌm, komu vÍ‚it...
-	Smalltalk05					= "SVM_6_Smalltalk05"				;//...nevÌm, co ho tak rozruöilo...
-	Smalltalk06					= "SVM_6_Smalltalk06"				;//...uû tak jsem v po‚·dn˝ bryndÍ...
-	Smalltalk07					= "SVM_6_Smalltalk07"				;//...zaslechl jsem jednu, dvÍ zvÍsti...
-	Smalltalk08					= "SVM_6_Smalltalk08"				;//...nezajÌm· mÍ, ûe...
-	Smalltalk09					= "SVM_6_Smalltalk09"				;//...nesmÌö vÍ‚it vöemu, co slyöÌö...
-	Smalltalk10					= "SVM_6_Smalltalk10"				;//...to nem· ode mÍ...
-	Smalltalk11					= "SVM_6_Smalltalk11"				;//...uû jsem o tom dost p‚em˝ölel...
-	Smalltalk12					= "SVM_6_Smalltalk12"				;//...nikdo se mÍ neptal na n·zor...
-	Smalltalk13					= "SVM_6_Smalltalk13"				;//...v·ûnÍ si nezaslouûil, aby...
-	Smalltalk14					= "SVM_6_Smalltalk14"				;//...ne‚Ìkej, ûes nevÍdÍl, ûe...
-	Smalltalk15					= "SVM_6_Smalltalk15"				;//...bylo to docela jasnÈ...
-	Smalltalk16					= "SVM_6_Smalltalk16"				;//...tak kde jsi k tomu teda p‚iöel...
-	Smalltalk17					= "SVM_6_Smalltalk17"				;//...takhle to nemohlo jÌt vÍËnÍ...
-	Smalltalk18					= "SVM_6_Smalltalk18"				;//...m·m na to sv˘j vlastnÌ n·zor...
-	Smalltalk19					= "SVM_6_Smalltalk19"				;//...bylo to p‚esnÍ tak, jak jsi ‚Ìkal...
-	Smalltalk20					= "SVM_6_Smalltalk20"				;//...nevÍ‚Ìm tomu, ûe by se to mohlo zmÍnit...
-	Smalltalk21					= "SVM_6_Smalltalk21"				;//...to je poprvÈ, co o tom slyöÌm...
-	Smalltalk22					= "SVM_6_Smalltalk22"				;//...prostÍ poËk·me a uvidÌme...
-	Smalltalk23					= "SVM_6_Smalltalk23"				;//...vÍdÍl jsem, ûe n·s ËekajÌ problÈmy...
-	Smalltalk24					= "SVM_6_Smalltalk24"				;//...tak proË mÍ neposlouchal...
+	Smalltalk01					= "SVM_6_Smalltalk01"				;//...nem≈Ø≈æu uvƒô√¢it, ≈æe...
+	Smalltalk02					= "SVM_6_Smalltalk02"				;//...nebyl bych si tak jist√Ω...
+	Smalltalk03					= "SVM_6_Smalltalk03"				;//...ale on v√≠, ≈æe v≈°ichni...
+	Smalltalk04					= "SVM_6_Smalltalk04"				;//...stƒô≈æ√≠ v√≠m, komu vƒô√¢it...
+	Smalltalk05					= "SVM_6_Smalltalk05"				;//...nev√≠m, co ho tak rozru≈°ilo...
+	Smalltalk06					= "SVM_6_Smalltalk06"				;//...u≈æ tak jsem v po√¢√°dn√Ω bryndƒô...
+	Smalltalk07					= "SVM_6_Smalltalk07"				;//...zaslechl jsem jednu, dvƒô zvƒôsti...
+	Smalltalk08					= "SVM_6_Smalltalk08"				;//...nezaj√≠m√° mƒô, ≈æe...
+	Smalltalk09					= "SVM_6_Smalltalk09"				;//...nesm√≠≈° vƒô√¢it v≈°emu, co sly≈°√≠≈°...
+	Smalltalk10					= "SVM_6_Smalltalk10"				;//...to nem√° ode mƒô...
+	Smalltalk11					= "SVM_6_Smalltalk11"				;//...u≈æ jsem o tom dost p√¢em√Ω≈°lel...
+	Smalltalk12					= "SVM_6_Smalltalk12"				;//...nikdo se mƒô neptal na n√°zor...
+	Smalltalk13					= "SVM_6_Smalltalk13"				;//...v√°≈ænƒô si nezaslou≈æil, aby...
+	Smalltalk14					= "SVM_6_Smalltalk14"				;//...ne√¢√≠kej, ≈æes nevƒôdƒôl, ≈æe...
+	Smalltalk15					= "SVM_6_Smalltalk15"				;//...bylo to docela jasn√©...
+	Smalltalk16					= "SVM_6_Smalltalk16"				;//...tak kde jsi k tomu teda p√¢i≈°el...
+	Smalltalk17					= "SVM_6_Smalltalk17"				;//...takhle to nemohlo j√≠t vƒôƒçnƒô...
+	Smalltalk18					= "SVM_6_Smalltalk18"				;//...m√°m na to sv≈Øj vlastn√≠ n√°zor...
+	Smalltalk19					= "SVM_6_Smalltalk19"				;//...bylo to p√¢esnƒô tak, jak jsi √¢√≠kal...
+	Smalltalk20					= "SVM_6_Smalltalk20"				;//...nevƒô√¢√≠m tomu, ≈æe by se to mohlo zmƒônit...
+	Smalltalk21					= "SVM_6_Smalltalk21"				;//...to je poprv√©, co o tom sly≈°√≠m...
+	Smalltalk22					= "SVM_6_Smalltalk22"				;//...prostƒô poƒçk√°me a uvid√≠me...
+	Smalltalk23					= "SVM_6_Smalltalk23"				;//...vƒôdƒôl jsem, ≈æe n√°s ƒçekaj√≠ probl√©my...
+	Smalltalk24					= "SVM_6_Smalltalk24"				;//...tak proƒç mƒô neposlouchal...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_6_Smalltalk25"				;//...bÍûel, jako by mu byl v pat·ch samotn˝ Beliar...
-	Smalltalk26					= "SVM_6_Smalltalk26"				;//...jasnÍ ûe jsme nakonec dostali...
-	Smalltalk27					= "SVM_6_Smalltalk27"				;//...mÍl bys do toho zas·hnout a situaci vy‚eöit...
+	Smalltalk25					= "SVM_6_Smalltalk25"				;//...bƒô≈æel, jako by mu byl v pat√°ch samotn√Ω Beliar...
+	Smalltalk26					= "SVM_6_Smalltalk26"				;//...jasnƒô ≈æe jsme nakonec dostali...
+	Smalltalk27					= "SVM_6_Smalltalk27"				;//...mƒôl bys do toho zas√°hnout a situaci vy√¢e≈°it...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_6_Smalltalk28"				;//...jeden nikdy nevÌ, jak podlÌ mohou b˝t...
-	Smalltalk29					= "SVM_6_Smalltalk29"				;//...protoûe je to v˘le Innosova...
+	Smalltalk28					= "SVM_6_Smalltalk28"				;//...jeden nikdy nev√≠, jak podl√≠ mohou b√Ωt...
+	Smalltalk29					= "SVM_6_Smalltalk29"				;//...proto≈æe je to v≈Øle Innosova...
 	Smalltalk30					= "SVM_6_Smalltalk30"				;//...jeho skutky byly jen...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_6_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_6_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_6_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_6_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_6_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_6_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_6_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_6_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_6_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_6_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_6_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_6_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_6_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_6_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_6_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_6_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_6_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_6_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_6_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_6_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_6_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_6_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_6_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_6_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_6_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_6_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_6_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_6_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_6_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_6_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_6_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_6_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_6_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_6_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_6_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_6_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_6_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_6_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_6_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_6_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_6_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_6_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_6_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_6_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_6_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_6_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_6_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_6_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_6_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_6_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_6_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_6_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_6_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_6_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_6_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_6_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_6_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_6_Aargh_1"					;//Aargh
@@ -1430,221 +1430,221 @@ instance SVM_6 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_6_Addon_WrongArmor";				//Vûdy„ vypad·ö jako kaöpar. OblÈkni si nÍco sluönÈho!
-	ADDON_WRONGARMOR_SLD		= "SVM_6_ADDON_WRONGARMOR_SLD";			//V˘bec tÍ nepozn·v·m. T·hni a vra„ se, aû se p‚evlÌkneö.
-	ADDON_WRONGARMOR_MIL		= "SVM_6_ADDON_WRONGARMOR_MIL";			//VojÌne, co to m·ö na sobÍ? OkamûitÍ se p‚evleË, tady a teÎ!
-	ADDON_WRONGARMOR_KDF		= "SVM_6_ADDON_WRONGARMOR_KDF";			//Innosova sluûebnÌka musÌ kaûd˝ zd·lky poznat. Takûe si bÍû oblÈci roucho.
-	ADDON_NOARMOR_BDT			= "SVM_6_ADDON_ADDON_NOARMOR_BDT";		//ChodÌö tu v hadrech jak obyËejnej kop·Ë. Koukej si nÍco oblÌct.
+	ADDON_WRONGARMOR			= "SVM_6_Addon_WrongArmor";				//V≈ædyƒÉ vypad√°≈° jako ka≈°par. Obl√©kni si nƒôco slu≈°n√©ho!
+	ADDON_WRONGARMOR_SLD		= "SVM_6_ADDON_WRONGARMOR_SLD";			//V≈Øbec tƒô nepozn√°v√°m. T√°hni a vraƒÉ se, a≈æ se p√¢evl√≠kne≈°.
+	ADDON_WRONGARMOR_MIL		= "SVM_6_ADDON_WRONGARMOR_MIL";			//Voj√≠ne, co to m√°≈° na sobƒô? Okam≈æitƒô se p√¢evleƒç, tady a te√´!
+	ADDON_WRONGARMOR_KDF		= "SVM_6_ADDON_WRONGARMOR_KDF";			//Innosova slu≈æebn√≠ka mus√≠ ka≈æd√Ω zd√°lky poznat. Tak≈æe si bƒô≈æ obl√©ci roucho.
+	ADDON_NOARMOR_BDT			= "SVM_6_ADDON_ADDON_NOARMOR_BDT";		//Chod√≠≈° tu v hadrech jak obyƒçejnej kop√°ƒç. Koukej si nƒôco obl√≠ct.
 
-	ADDON_DIEBANDIT				= "SVM_6_ADDON_DIEBANDIT";				//Tak teÎ jsi k·pl na toho neprav˝ho, BANDITO!
-	ADDON_DIRTYPIRATE			= "SVM_6_ADDON_DIRTYPIRATE";			//Vra„ se zp·tky na mo‚e, PIR¡TE!
+	ADDON_DIEBANDIT				= "SVM_6_ADDON_DIEBANDIT";				//Tak te√´ jsi k√°pl na toho neprav√Ωho, BANDITO!
+	ADDON_DIRTYPIRATE			= "SVM_6_ADDON_DIRTYPIRATE";			//VraƒÉ se zp√°tky na mo√¢e, PIR√ÅTE!
 };
 
 instance SVM_7 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_7_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_7_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_7_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_7_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_7_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_7_IGetYouStill"				;//Uû zase TY!
-	DieEnemy					=	"SVM_7_DieEnemy"					;//Rozsek·m tÍ na kousky!
-	DieMonster					=	"SVM_7_DieMonster"					;//DalöÌ z tÍch vÍcÌ!
-	DirtyThief					=	"SVM_7_DirtyThief"					;//Ty mizernej zlodÍji!
-	HandsOff					=	"SVM_7_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_7_SheepKiller"					;//Hej! Nech naöe ovce na pokoji!
-	SheepKillerMonster			=	"SVM_7_SheepKillerMonster"			;//Ta obluda vraûdÌ naöe ovce!
+	IGetYouStill				= 	"SVM_7_IGetYouStill"				;//U≈æ zase TY!
+	DieEnemy					=	"SVM_7_DieEnemy"					;//Rozsek√°m tƒô na kousky!
+	DieMonster					=	"SVM_7_DieMonster"					;//Dal≈°√≠ z tƒôch vƒôc√≠!
+	DirtyThief					=	"SVM_7_DirtyThief"					;//Ty mizernej zlodƒôji!
+	HandsOff					=	"SVM_7_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_7_SheepKiller"					;//Hej! Nech na≈°e ovce na pokoji!
+	SheepKillerMonster			=	"SVM_7_SheepKillerMonster"			;//Ta obluda vra≈æd√≠ na≈°e ovce!
 	YouMurderer					=	"SVM_7_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_7_DieStupidBeast"				;//Co tam ta bestie prov·dÌ?
-	YouDareHitMe				=	"SVM_7_YouDareHitMe"				;//S·m sis o to ‚ekl!
-	YouAskedForIt				=	"SVM_7_YouAskedForIt"				;//¬ekl sis o to.
-	ThenIBeatYouOutOfHere		=	"SVM_7_ThenIBeatYouOutOfHere"		;//M·m dojem, ûe by nÍkter˝m lidem neuökodilo, kdyby poznali, zaË je toho loket.
-	WhatDidYouDoInThere			=	"SVM_7_WhatDidYouDoInThere"			;//Co tam dÍl·ö, co!?
-	WillYouStopFighting			=	"SVM_7_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû!
+	DieStupidBeast				=	"SVM_7_DieStupidBeast"				;//Co tam ta bestie prov√°d√≠?
+	YouDareHitMe				=	"SVM_7_YouDareHitMe"				;//S√°m sis o to √¢ekl!
+	YouAskedForIt				=	"SVM_7_YouAskedForIt"				;//√Çekl sis o to.
+	ThenIBeatYouOutOfHere		=	"SVM_7_ThenIBeatYouOutOfHere"		;//M√°m dojem, ≈æe by nƒôkter√Ωm lidem neu≈°kodilo, kdyby poznali, zaƒç je toho loket.
+	WhatDidYouDoInThere			=	"SVM_7_WhatDidYouDoInThere"			;//Co tam dƒôl√°≈°, co!?
+	WillYouStopFighting			=	"SVM_7_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_7_KillEnemy"					;//ChcÌpni!
+	KillEnemy					= 	"SVM_7_KillEnemy"					;//Chc√≠pni!
 	EnemyKilled					=	"SVM_7_EnemyKilled"					;//Takovej blbej bastard...
-	MonsterKilled				=	"SVM_7_MonsterKilled"				;//Dobr·, to na tebe bylo trochu moc, co, ty mizern· bestie!
-	ThiefDown					=	"SVM_7_ThiefDown"					;//OkamûitÍ dej ty sv˝ öpinav˝ pracky pryË z mejch vÍcÌ, jasn˝?
-	rumfummlerDown				=	"SVM_7_rumfummlerDown"				;//HlÌdej si ty svoje ukoptÍn˝ prsty!
-	SheepAttackerDown			=	"SVM_7_SheepAttackerDown"			;//OkamûitÍ dej ty svoje umounÍn˝ pracky pryË od naöich ovcÌ!
-	KillMurderer				=	"SVM_7_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_7_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_7_NeverHitMeAgain"				;//Uû to vÌckr·t nezkouöej, hochu!
-	YouBetterShouldHaveListened	=	"SVM_7_YouBetterShouldHaveListened"	;//Douf·m, ûe sis z toho vzal ponauËenÌ.
-	GetUpAndBeGone				=	"SVM_7_GetUpAndBeGone"				;//Vst·vej a vypadni odsud!
-	NeverEnterRoomAgain			=	"SVM_7_NeverEnterRoomAgain"			;//A„ uû tÍ tu nikdy nevidÌm - jasn˝?
-	ThereIsNoFightingHere		=	"SVM_7_ThereIsNoFightingHere"		;//J· jsem ten, kdo tady rozd·v· r·ny, rozumÌö?
+	MonsterKilled				=	"SVM_7_MonsterKilled"				;//Dobr√°, to na tebe bylo trochu moc, co, ty mizern√° bestie!
+	ThiefDown					=	"SVM_7_ThiefDown"					;//Okam≈æitƒô dej ty sv√Ω ≈°pinav√Ω pracky pryƒç z mejch vƒôc√≠, jasn√Ω?
+	rumfummlerDown				=	"SVM_7_rumfummlerDown"				;//Hl√≠dej si ty svoje ukoptƒôn√Ω prsty!
+	SheepAttackerDown			=	"SVM_7_SheepAttackerDown"			;//Okam≈æitƒô dej ty svoje umounƒôn√Ω pracky pryƒç od na≈°ich ovc√≠!
+	KillMurderer				=	"SVM_7_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_7_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_7_NeverHitMeAgain"				;//U≈æ to v√≠ckr√°t nezkou≈°ej, hochu!
+	YouBetterShouldHaveListened	=	"SVM_7_YouBetterShouldHaveListened"	;//Douf√°m, ≈æe sis z toho vzal ponauƒçen√≠.
+	GetUpAndBeGone				=	"SVM_7_GetUpAndBeGone"				;//Vst√°vej a vypadni odsud!
+	NeverEnterRoomAgain			=	"SVM_7_NeverEnterRoomAgain"			;//AƒÉ u≈æ tƒô tu nikdy nevid√≠m - jasn√Ω?
+	ThereIsNoFightingHere		=	"SVM_7_ThereIsNoFightingHere"		;//J√° jsem ten, kdo tady rozd√°v√° r√°ny, rozum√≠≈°?
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_7_SpareMe"						;//ProstÍ mÍ nech b˝t!
-	RunAway						= 	"SVM_7_RunAway"						;//Do hajzlu! Pad·m pryË!
+	SpareMe						=	"SVM_7_SpareMe"						;//Prostƒô mƒô nech b√Ωt!
+	RunAway						= 	"SVM_7_RunAway"						;//Do hajzlu! Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_7_Alarm"					;//POPLACH!
-	Guards						=	"SVM_7_Guards"					;//STR¡éE!
+	Guards						=	"SVM_7_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_7_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_7_GoodMonsterKill"			;//(vol·) Jo! Takhle se na to musÌ!
-	GoodKill					= 	"SVM_7_GoodKill"				;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_7_GoodMonsterKill"			;//(vol√°) Jo! Takhle se na to mus√≠!
+	GoodKill					= 	"SVM_7_GoodKill"				;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_7_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_7_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_7_RunCoward"				;//(k‚iËÌ) JeötÍ se uvidÌme!
+	RunCoward					=	"SVM_7_RunCoward"				;//(k√¢iƒç√≠) Je≈°tƒô se uvid√≠me!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_7_GetOutOfHere"			;//Ven!
-	WhyAreYouInHere				=	"SVM_7_WhyAreYouInHere"			;//Co tady chceö?!
+	WhyAreYouInHere				=	"SVM_7_WhyAreYouInHere"			;//Co tady chce≈°?!
 	YesGoOutOfHere				= 	"SVM_7_YesGoOutOfHere"			;//Jen mu nandej!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_7_WhatsThisSupposedToBe"	;//Co tady kolem Ëmuch·ö?
-	YouDisturbedMySlumber		=	"SVM_7_YouDisturbedMySlumber"	;//(vst·v·) Co je?
+	WhatsThisSupposedToBe		=	"SVM_7_WhatsThisSupposedToBe"	;//Co tady kolem ƒçmuch√°≈°?
+	YouDisturbedMySlumber		=	"SVM_7_YouDisturbedMySlumber"	;//(vst√°v√°) Co je?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_7_ITookYourGold"			;//DÌky za zlato, ty hrdino!
-	ShitNoGold					=	"SVM_7_ShitNoGold"				;//Ty mizernej vöiv·ku, nem·ö u sebe û·dn˝ zlato!
-	ITakeYourWeapon				=	"SVM_7_ITakeYourWeapon"			;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_7_ITookYourGold"			;//D√≠ky za zlato, ty hrdino!
+	ShitNoGold					=	"SVM_7_ShitNoGold"				;//Ty mizernej v≈°iv√°ku, nem√°≈° u sebe ≈æ√°dn√Ω zlato!
+	ITakeYourWeapon				=	"SVM_7_ITakeYourWeapon"			;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_7_WhatAreYouDoing"			;//(varovnÍ) D·vej si pozor! JeötÍ jednou a nÍjakou ti vrazÌm.
+	WhatAreYouDoing				=	"SVM_7_WhatAreYouDoing"			;//(varovnƒô) D√°vej si pozor! Je≈°tƒô jednou a nƒôjakou ti vraz√≠m.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_7_LookingForTroubleAgain"	;//(agresivnÍ) Koledujeö si!
+	LookingForTroubleAgain		=	"SVM_7_LookingForTroubleAgain"	;//(agresivnƒô) Koleduje≈° si!
 																	 
-	StopMagic					=	"SVM_7_StopMagic"				;//P‚esta‡ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_7_ISaidStopMagic"			;//Chceö napr·skat? OkamûitÍ s tÌm p‚esta‡!!!
-	WeaponDown					=	"SVM_7_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_7_ISaidWeaponDown"			;//Tak d·ö tu zatracenou zbra‡ pryË?!
+	StopMagic					=	"SVM_7_StopMagic"				;//P√¢esta≈ï s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_7_ISaidStopMagic"			;//Chce≈° napr√°skat? Okam≈æitƒô s t√≠m p√¢esta≈ï!!!
+	WeaponDown					=	"SVM_7_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_7_ISaidWeaponDown"			;//Tak d√°≈° tu zatracenou zbra≈ï pryƒç?!
 	WiseMove					=	"SVM_7_WiseMove"				;//Chytrej kluk!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_7_NextTimeYoureInForIt"	;//(pro sebe) Dobr·, p‚ÌötÍ se uk·ûe.
+	NextTimeYoureInForIt		=	"SVM_7_NextTimeYoureInForIt"	;//(pro sebe) Dobr√°, p√¢√≠≈°tƒô se uk√°≈æe.
 	OhMyHead					=	"SVM_7_OhMyHead"				;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_7_TheresAFight"			;//(dychtivÍ) Aaa, boj!
-	OhMyGodItsAFight			=	"SVM_7_OhMyGodItsAFight"		;//(vystraöenÍ) BoûÌnku, boj!
-	GoodVictory					=	"SVM_7_GoodVictory"				;//(zl˝ smÌch) Uk·zals mu, kdo je tady p·nem!
-	NotBad						= 	"SVM_7_NotBad"					;//(souhlasnÍ) To nebylo öpatnÈ.
-	OhMyGodHesDown				=	"SVM_7_OhMyGodHesDown"			;//(pro sebe) M˘j boûe! Takov· krutost...
+	TheresAFight				=	"SVM_7_TheresAFight"			;//(dychtivƒô) Aaa, boj!
+	OhMyGodItsAFight			=	"SVM_7_OhMyGodItsAFight"		;//(vystra≈°enƒô) Bo≈æ√≠nku, boj!
+	GoodVictory					=	"SVM_7_GoodVictory"				;//(zl√Ω sm√≠ch) Uk√°zals mu, kdo je tady p√°nem!
+	NotBad						= 	"SVM_7_NotBad"					;//(souhlasnƒô) To nebylo ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_7_OhMyGodHesDown"			;//(pro sebe) M≈Øj bo≈æe! Takov√° krutost...
 	CheerFriend01				=	"SVM_7_CheerFriend01"			;//Jo, nandej mu to!
-	CheerFriend02				=	"SVM_7_CheerFriend02"			;//Ukaû mu!
+	CheerFriend02				=	"SVM_7_CheerFriend02"			;//Uka≈æ mu!
 	CheerFriend03				=	"SVM_7_CheerFriend03"			;//Jen mu to nandej!
-	Ooh01						=	"SVM_7_Ooh01"					;//Bra‡ se!
-	Ooh02						=	"SVM_7_Ooh02"					;//PokraËuj, vra„ mu to!
-	Ooh03						=	"SVM_7_Ooh03"					;//Au! Takov· pecka!
+	Ooh01						=	"SVM_7_Ooh01"					;//Bra≈ï se!
+	Ooh02						=	"SVM_7_Ooh02"					;//Pokraƒçuj, vraƒÉ mu to!
+	Ooh03						=	"SVM_7_Ooh03"					;//Au! Takov√° pecka!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_7_WhatWasThat"				;//(pro sebe, vst·v·) Sakra, co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_7_WhatWasThat"				;//(pro sebe, vst√°v√°) Sakra, co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_7_GetOutOfMyBed"				;//Vypadni z mÈ postele!
-	Awake						= "SVM_7_Awake"						;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_7_GetOutOfMyBed"				;//Vypadni z m√© postele!
+	Awake						= "SVM_7_Awake"						;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_7_ABS_COMMANDER"    ;//Tak velitel dal ty vÍci do po‚·dku.
-	ABS_MONASTERY    = "SVM_7_ABS_MONASTERY"    ;//Tak jsi uËinil pok·nÌ u otce Parlana.
-	ABS_FARM       = "SVM_7_ABS_FARM"        ;//Slyöel jsem, ûe Lee dal ty vÍci do po‚·dku.
-	ABS_GOOD       = "SVM_7_ABS_GOOD"       ;//Dobr·.
+	ABS_COMMANDER     = "SVM_7_ABS_COMMANDER"    ;//Tak velitel dal ty vƒôci do po√¢√°dku.
+	ABS_MONASTERY    = "SVM_7_ABS_MONASTERY"    ;//Tak jsi uƒçinil pok√°n√≠ u otce Parlana.
+	ABS_FARM       = "SVM_7_ABS_FARM"        ;//Sly≈°el jsem, ≈æe Lee dal ty vƒôci do po√¢√°dku.
+	ABS_GOOD       = "SVM_7_ABS_GOOD"       ;//Dobr√°.
 	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_7_SHEEPKILLER_CRIME"   ;//VraûdÍnÌ ovcÌ uû bylo dost! Ztra„ se!
-	ATTACK_CRIME     = "SVM_7_ATTACK_CRIME"    ;//Jsi gr·zl - ztra„ se!
- 	THEFT_CRIME      = "SVM_7_THEFT_CRIME"    ;//Zatracenej zlodÍji! Uû tÍ m·m pr·vÍ tak dost!
+	SHEEPKILLER_CRIME   = "SVM_7_SHEEPKILLER_CRIME"   ;//Vra≈ædƒôn√≠ ovc√≠ u≈æ bylo dost! ZtraƒÉ se!
+	ATTACK_CRIME     = "SVM_7_ATTACK_CRIME"    ;//Jsi gr√°zl - ztraƒÉ se!
+ 	THEFT_CRIME      = "SVM_7_THEFT_CRIME"    ;//Zatracenej zlodƒôji! U≈æ tƒô m√°m pr√°vƒô tak dost!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_7_PAL_CITY_CRIME"   ;//Od paladina bych oËek·val nÍco jinÈho! To se nebude lordu Hagenovi lÌbit.
- 	MIL_CITY_CRIME     = "SVM_7_MIL_CITY_CRIME"   ;//Jak se nÍkdo jako ty mohl dostat k mÍstsk˝m str·ûÌm? Lord Andre ti to jeötÍ spoËÌt·!
- 	CITY_CRIME       = "SVM_7_CITY_CRIME"    ;//Lord Andre se o tvÈm chov·nÌ dozvÌ!
+ 	PAL_CITY_CRIME     = "SVM_7_PAL_CITY_CRIME"   ;//Od paladina bych oƒçek√°val nƒôco jin√©ho! To se nebude lordu Hagenovi l√≠bit.
+ 	MIL_CITY_CRIME     = "SVM_7_MIL_CITY_CRIME"   ;//Jak se nƒôkdo jako ty mohl dostat k mƒôstsk√Ωm str√°≈æ√≠m? Lord Andre ti to je≈°tƒô spoƒç√≠t√°!
+ 	CITY_CRIME       = "SVM_7_CITY_CRIME"    ;//Lord Andre se o tv√©m chov√°n√≠ dozv√≠!
 	// -------------------------
-	MONA_CRIME       = "SVM_7_MONA_CRIME"    ;//Otec Parlan nebude mÌt z tvÈho poËÌn·nÌ û·dnou radost!
-	FARM_CRIME       = "SVM_7_FARM_CRIME"    ;//Lee to nenech· jen tak!
-	OC_CRIME       = "SVM_7_OC_CRIME"     ;//Velitel Garond nebude mÌt radost, aû to uslyöÌ - za to zaplatÌö!
+	MONA_CRIME       = "SVM_7_MONA_CRIME"    ;//Otec Parlan nebude m√≠t z tv√©ho poƒç√≠n√°n√≠ ≈æ√°dnou radost!
+	FARM_CRIME       = "SVM_7_FARM_CRIME"    ;//Lee to nenech√° jen tak!
+	OC_CRIME       = "SVM_7_OC_CRIME"     ;//Velitel Garond nebude m√≠t radost, a≈æ to usly≈°√≠ - za to zaplat√≠≈°!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_7_TOUGHGUY_ATTACKLOST"		;//M·ö docela sÌlu... co ûes to chtÍl?
-	TOUGHGUY_ATTACKWON			= "SVM_7_TOUGHGUY_ATTACKWON"		;//(dom˝ölivÍ) NÍjakÈ dalöÌ ot·zky?
-	TOUGHGUY_PLAYERATTACK		= "SVM_7_TOUGHGUY_PLAYERATTACK"		;//Uû zase TY!
+	TOUGHGUY_ATTACKLOST			= "SVM_7_TOUGHGUY_ATTACKLOST"		;//M√°≈° docela s√≠lu... co ≈æes to chtƒôl?
+	TOUGHGUY_ATTACKWON			= "SVM_7_TOUGHGUY_ATTACKWON"		;//(dom√Ω≈°livƒô) Nƒôjak√© dal≈°√≠ ot√°zky?
+	TOUGHGUY_PLAYERATTACK		= "SVM_7_TOUGHGUY_PLAYERATTACK"		;//U≈æ zase TY!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_7_GOLD_1000"					;//1000 zlat˝ch.
-	GOLD_950					= "SVM_7_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_7_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_7_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_7_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_7_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_7_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_7_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_7_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_7_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_7_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_7_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_7_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_7_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_7_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_7_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_7_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_7_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_7_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_7_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_7_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_7_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_7_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_7_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_7_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_7_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_7_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_7_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_7_GOLD_1000"					;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_7_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_7_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_7_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_7_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_7_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_7_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_7_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_7_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_7_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_7_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_7_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_7_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_7_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_7_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_7_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_7_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_7_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_7_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_7_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_7_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_7_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_7_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_7_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_7_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_7_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_7_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_7_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_7_Smalltalk01"				;//...v·ûnÍ je to tak...
-	Smalltalk02					= "SVM_7_Smalltalk02"				;//...to nenÌ to, co jsem slyöel...
-	Smalltalk03					= "SVM_7_Smalltalk03"				;//...ne‚Ìkej mi, ûes o tom nevÍdÍl...
-	Smalltalk04					= "SVM_7_Smalltalk04"				;//...v tyhle dny ani nevÌö, komu m·ö vÍ‚it...
-	Smalltalk05					= "SVM_7_Smalltalk05"				;//...vöechno to jsou jen drby...
-	Smalltalk06					= "SVM_7_Smalltalk06"				;//...nejsem o nic ö„astnÍjöÌ...
-	Smalltalk07					= "SVM_7_Smalltalk07"				;//...uû mÍ nem˘ûe nic p‚ekvapit...
-	Smalltalk08					= "SVM_7_Smalltalk08"				;//...to v·ûnÍ nenÌ m˘j problÈm...
-	Smalltalk09					= "SVM_7_Smalltalk09"				;//...opravdu si myslÌö, ûe...
-	Smalltalk10					= "SVM_7_Smalltalk10"				;//...nikdo se ode mÍ nic nedozvÌ...
-	Smalltalk11					= "SVM_7_Smalltalk11"				;//...vöem to bylo jasnÈ...
-	Smalltalk12					= "SVM_7_Smalltalk12"				;//...naslouchal öpatn˝m lidem...
-	Smalltalk13					= "SVM_7_Smalltalk13"				;//...pokud to s·m nevidÌ, nem˘ûu mu nijak pomoct...
-	Smalltalk14					= "SVM_7_Smalltalk14"				;//...ne‚Ìk·m ti nic novÈho...
-	Smalltalk15					= "SVM_7_Smalltalk15"				;//...nikdy by na to s·m nep‚iöel...
-	Smalltalk16					= "SVM_7_Smalltalk16"				;//...to uû se vÌ dlouho...
-	Smalltalk17					= "SVM_7_Smalltalk17"				;//...to je öpatn˝ obchod...
-	Smalltalk18					= "SVM_7_Smalltalk18"				;//...mÍl jsem to udÍlat jinak...
-	Smalltalk19					= "SVM_7_Smalltalk19"				;//...˙plnÍ s tebou souhlasÌm...
-	Smalltalk20					= "SVM_7_Smalltalk20"				;//...nic nezmÍnÌ...
-	Smalltalk21					= "SVM_7_Smalltalk21"				;//...nikdy by mÍ nenapadlo, ûe...
-	Smalltalk22					= "SVM_7_Smalltalk22"				;//...nenÌ nic, co s tÌm mohl dÍlat...
-	Smalltalk23					= "SVM_7_Smalltalk23"				;//...to mÍ nijak nep‚ekvapuje...
-	Smalltalk24					= "SVM_7_Smalltalk24"				;//...ale to ne, on vÍdÍl vöechno nejlÌp...
+	Smalltalk01					= "SVM_7_Smalltalk01"				;//...v√°≈ænƒô je to tak...
+	Smalltalk02					= "SVM_7_Smalltalk02"				;//...to nen√≠ to, co jsem sly≈°el...
+	Smalltalk03					= "SVM_7_Smalltalk03"				;//...ne√¢√≠kej mi, ≈æes o tom nevƒôdƒôl...
+	Smalltalk04					= "SVM_7_Smalltalk04"				;//...v tyhle dny ani nev√≠≈°, komu m√°≈° vƒô√¢it...
+	Smalltalk05					= "SVM_7_Smalltalk05"				;//...v≈°echno to jsou jen drby...
+	Smalltalk06					= "SVM_7_Smalltalk06"				;//...nejsem o nic ≈°ƒÉastnƒôj≈°√≠...
+	Smalltalk07					= "SVM_7_Smalltalk07"				;//...u≈æ mƒô nem≈Ø≈æe nic p√¢ekvapit...
+	Smalltalk08					= "SVM_7_Smalltalk08"				;//...to v√°≈ænƒô nen√≠ m≈Øj probl√©m...
+	Smalltalk09					= "SVM_7_Smalltalk09"				;//...opravdu si mysl√≠≈°, ≈æe...
+	Smalltalk10					= "SVM_7_Smalltalk10"				;//...nikdo se ode mƒô nic nedozv√≠...
+	Smalltalk11					= "SVM_7_Smalltalk11"				;//...v≈°em to bylo jasn√©...
+	Smalltalk12					= "SVM_7_Smalltalk12"				;//...naslouchal ≈°patn√Ωm lidem...
+	Smalltalk13					= "SVM_7_Smalltalk13"				;//...pokud to s√°m nevid√≠, nem≈Ø≈æu mu nijak pomoct...
+	Smalltalk14					= "SVM_7_Smalltalk14"				;//...ne√¢√≠k√°m ti nic nov√©ho...
+	Smalltalk15					= "SVM_7_Smalltalk15"				;//...nikdy by na to s√°m nep√¢i≈°el...
+	Smalltalk16					= "SVM_7_Smalltalk16"				;//...to u≈æ se v√≠ dlouho...
+	Smalltalk17					= "SVM_7_Smalltalk17"				;//...to je ≈°patn√Ω obchod...
+	Smalltalk18					= "SVM_7_Smalltalk18"				;//...mƒôl jsem to udƒôlat jinak...
+	Smalltalk19					= "SVM_7_Smalltalk19"				;//...√∫plnƒô s tebou souhlas√≠m...
+	Smalltalk20					= "SVM_7_Smalltalk20"				;//...nic nezmƒôn√≠...
+	Smalltalk21					= "SVM_7_Smalltalk21"				;//...nikdy by mƒô nenapadlo, ≈æe...
+	Smalltalk22					= "SVM_7_Smalltalk22"				;//...nen√≠ nic, co s t√≠m mohl dƒôlat...
+	Smalltalk23					= "SVM_7_Smalltalk23"				;//...to mƒô nijak nep√¢ekvapuje...
+	Smalltalk24					= "SVM_7_Smalltalk24"				;//...ale to ne, on vƒôdƒôl v≈°echno nejl√≠p...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                   
-	Smalltalk25					= "SVM_7_Smalltalk25"				;//...situace je v·ûn·, tak mi ne‚Ìkej, ûe...
-	Smalltalk26					= "SVM_7_Smalltalk26"				;//...jeötÍ ani nevÍdÍl, jak po‚·dnÍ drûet meË...
-	Smalltalk27					= "SVM_7_Smalltalk27"				;//...jo, v·ûnÍ ‚ekl, ûe...
+	Smalltalk25					= "SVM_7_Smalltalk25"				;//...situace je v√°≈æn√°, tak mi ne√¢√≠kej, ≈æe...
+	Smalltalk26					= "SVM_7_Smalltalk26"				;//...je≈°tƒô ani nevƒôdƒôl, jak po√¢√°dnƒô dr≈æet meƒç...
+	Smalltalk27					= "SVM_7_Smalltalk27"				;//...jo, v√°≈ænƒô √¢ekl, ≈æe...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                   
-	Smalltalk28					= "SVM_7_Smalltalk28"				;//...za tohle bude muset nÍkdo zaplatit...
-	Smalltalk29					= "SVM_7_Smalltalk29"				;//...Innos nenech· v nevÍdomosti nikoho, kdo rozpozn· jeho moudrost...
-	Smalltalk30					= "SVM_7_Smalltalk30"				;//...spravedlnost nakonec zvÌtÍzÌ...
+	Smalltalk28					= "SVM_7_Smalltalk28"				;//...za tohle bude muset nƒôkdo zaplatit...
+	Smalltalk29					= "SVM_7_Smalltalk29"				;//...Innos nenech√° v nevƒôdomosti nikoho, kdo rozpozn√° jeho moudrost...
+	Smalltalk30					= "SVM_7_Smalltalk30"				;//...spravedlnost nakonec zv√≠tƒôz√≠...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_7_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_7_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_7_NoLearnYoureBetter"		;//Uû tÍ nem˘ûu nauËit nic dalöÌho. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_7_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_7_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_7_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_7_NoLearnYoureBetter"		;//U≈æ tƒô nem≈Ø≈æu nauƒçit nic dal≈°√≠ho. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_7_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_7_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_7_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_7_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_7_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_7_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_7_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_7_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_7_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_7_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_7_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_7_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_7_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_7_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_7_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_7_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_7_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_7_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_7_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_7_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_7_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_7_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_7_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_7_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_7_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_7_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_7_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_7_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_7_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_7_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_7_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_7_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_7_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_7_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_7_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_7_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_7_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_7_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_7_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_7_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_7_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_7_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_7_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_7_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_7_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_7_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_7_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_7_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_7_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_7_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_7_Aargh_1"					;//Aargh
@@ -1653,220 +1653,220 @@ instance SVM_7 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_7_Addon_WrongArmor";				//NaË ten p‚evlek? Takhle se s tebou bavit nebudu.
-	ADDON_WRONGARMOR_SLD		= "SVM_7_ADDON_WRONGARMOR_SLD";			//Co to m·ö na sobÍ? OblÌkni si p‚ece zbroj!
-	ADDON_WRONGARMOR_MIL		= "SVM_7_ADDON_WRONGARMOR_MIL";			//To je poruöenÌ p‚edpis˘ o vojenskÈm stejnokroji! OkamûitÍ se p‚evleË, tady a teÎ!
-	ADDON_WRONGARMOR_KDF		= "SVM_7_ADDON_WRONGARMOR_KDF";			//Radöi si oblÈkni roucho. Dokud to neudÍl·ö, nic ti ne‚eknu a radöi se za tebe budu modlit.
-	ADDON_NOARMOR_BDT			= "SVM_7_ADDON_ADDON_NOARMOR_BDT";		//Co chceö? Ty k n·m nepat‚Ìö, vûdy„ na sobÍ nem·ö naöi zbroj!
+	ADDON_WRONGARMOR			= "SVM_7_Addon_WrongArmor";				//Naƒç ten p√¢evlek? Takhle se s tebou bavit nebudu.
+	ADDON_WRONGARMOR_SLD		= "SVM_7_ADDON_WRONGARMOR_SLD";			//Co to m√°≈° na sobƒô? Obl√≠kni si p√¢ece zbroj!
+	ADDON_WRONGARMOR_MIL		= "SVM_7_ADDON_WRONGARMOR_MIL";			//To je poru≈°en√≠ p√¢edpis≈Ø o vojensk√©m stejnokroji! Okam≈æitƒô se p√¢evleƒç, tady a te√´!
+	ADDON_WRONGARMOR_KDF		= "SVM_7_ADDON_WRONGARMOR_KDF";			//Rad≈°i si obl√©kni roucho. Dokud to neudƒôl√°≈°, nic ti ne√¢eknu a rad≈°i se za tebe budu modlit.
+	ADDON_NOARMOR_BDT			= "SVM_7_ADDON_ADDON_NOARMOR_BDT";		//Co chce≈°? Ty k n√°m nepat√¢√≠≈°, v≈ædyƒÉ na sobƒô nem√°≈° na≈°i zbroj!
 
 	ADDON_DIEBANDIT				= "SVM_7_ADDON_DIEBANDIT";				//Zdechni, ty mizernej bandito!
-	ADDON_DIRTYPIRATE			= "SVM_7_ADDON_DIRTYPIRATE";			//Zdechni, ty hnusnej pir·te!
+	ADDON_DIRTYPIRATE			= "SVM_7_ADDON_DIRTYPIRATE";			//Zdechni, ty hnusnej pir√°te!
 };
 
 instance SVM_8 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_8_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_8_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_8_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_8_Weather"					;//Zatracen· slota!
+	Weather						= 	"SVM_8_Weather"					;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_8_IGetYouStill"				;//Tak jsem tÍ p‚ece dostal!
-	DieEnemy					=	"SVM_8_DieEnemy"					;//Rozsek·m tÍ na kousky!
-	DieMonster					=	"SVM_8_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_8_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_8_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_8_SheepKiller"				;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_8_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	IGetYouStill				= 	"SVM_8_IGetYouStill"				;//Tak jsem tƒô p√¢ece dostal!
+	DieEnemy					=	"SVM_8_DieEnemy"					;//Rozsek√°m tƒô na kousky!
+	DieMonster					=	"SVM_8_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_8_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_8_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_8_SheepKiller"				;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_8_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_8_YouMurderer"				;//Vrahu!
-	DieStupidBeast				=	"SVM_8_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_8_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_8_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_8_ThenIBeatYouOutOfHere"		;//Tak ty nep˘jdeö? Jak chceö!
-	WhatDidYouDoInThere			=	"SVM_8_WhatDidYouDoInThere"		;//Cos tam pohled·val?
-	WillYouStopFighting			=	"SVM_8_WillYouStopFighting"		;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_8_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_8_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_8_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_8_ThenIBeatYouOutOfHere"		;//Tak ty nep≈Øjde≈°? Jak chce≈°!
+	WhatDidYouDoInThere			=	"SVM_8_WhatDidYouDoInThere"		;//Cos tam pohled√°val?
+	WillYouStopFighting			=	"SVM_8_WillYouStopFighting"		;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_8_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_8_EnemyKilled"				;//Zaslouûil sis to, niËemo!
-	MonsterKilled				=	"SVM_8_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_8_ThiefDown"					;//Uû se mÍ nikdy nepokouöej okr·st!
-	rumfummlerDown				=	"SVM_8_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_8_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_8_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_8_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_8_NeverHitMeAgain"			;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_8_YouBetterShouldHaveListened";//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_8_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_8_NeverEnterRoomAgain"		;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_8_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö?! Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_8_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_8_EnemyKilled"				;//Zaslou≈æil sis to, niƒçemo!
+	MonsterKilled				=	"SVM_8_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_8_ThiefDown"					;//U≈æ se mƒô nikdy nepokou≈°ej okr√°st!
+	rumfummlerDown				=	"SVM_8_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_8_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_8_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_8_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_8_NeverHitMeAgain"			;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_8_YouBetterShouldHaveListened";//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_8_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_8_NeverEnterRoomAgain"		;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_8_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°?! Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_8_SpareMe"					;//Neubliûuj mi!
+	SpareMe						=	"SVM_8_SpareMe"					;//Neubli≈æuj mi!
 	RunAway						= 	"SVM_8_RunAway"					;//A do hajzlu!!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_8_Alarm"					;//POPLACH!
-	Guards						=	"SVM_8_Guards"					;//STR¡éE!
+	Guards						=	"SVM_8_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_8_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_8_GoodMonsterKill"		;//(vol·) Dobr· pr·ce - o jednu öpinavou bestii mÌ‡!
-	GoodKill					= 	"SVM_8_GoodKill"				;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_8_GoodMonsterKill"		;//(vol√°) Dobr√° pr√°ce - o jednu ≈°pinavou bestii m√≠≈ï!
+	GoodKill					= 	"SVM_8_GoodKill"				;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_8_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_8_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_8_RunCoward"				;//(k‚iËÌ) Jo! UtÌkej, jak nejrychleji m˘ûeö!
+	RunCoward					=	"SVM_8_RunCoward"				;//(k√¢iƒç√≠) Jo! Ut√≠kej, jak nejrychleji m≈Ø≈æe≈°!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_8_GetOutOfHere"			;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_8_WhyAreYouInHere"		;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_8_WhyAreYouInHere"		;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_8_YesGoOutOfHere"			;//Jo, pakuj se odsud!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_8_WhatsThisSupposedToBe"	;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_8_YouDisturbedMySlumber"	;//(probudÌ se) K Ëertu, co se dÍje?
+	WhatsThisSupposedToBe		=	"SVM_8_WhatsThisSupposedToBe"	;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_8_YouDisturbedMySlumber"	;//(probud√≠ se) K ƒçertu, co se dƒôje?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_8_ITookYourGold"			;//DÌky za zlato, ty hrdino!
-	ShitNoGold					=	"SVM_8_ShitNoGold"				;//Ty mizernej vöiv·ku, nem·ö u sebe û·dn˝ zlato!
-	ITakeYourWeapon				=	"SVM_8_ITakeYourWeapon"		;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_8_ITookYourGold"			;//D√≠ky za zlato, ty hrdino!
+	ShitNoGold					=	"SVM_8_ShitNoGold"				;//Ty mizernej v≈°iv√°ku, nem√°≈° u sebe ≈æ√°dn√Ω zlato!
+	ITakeYourWeapon				=	"SVM_8_ITakeYourWeapon"		;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_8_WhatAreYouDoing"		;//(varovnÍ) D·vej si pozor! JeötÍ jednou a nÍjakou ti vrazÌm.
+	WhatAreYouDoing				=	"SVM_8_WhatAreYouDoing"		;//(varovnƒô) D√°vej si pozor! Je≈°tƒô jednou a nƒôjakou ti vraz√≠m.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_8_LookingForTroubleAgain"	;//JeötÍ po‚·d nem·ö dost?
-	StopMagic					=	"SVM_8_StopMagic"				;//P‚esta‡ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_8_ISaidStopMagic"			;//Chceö napr·skat? OkamûitÍ s tÌm p‚esta‡!!!
-	WeaponDown					=	"SVM_8_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_8_ISaidWeaponDown"		;//Tak d·ö tu zatracenou zbra‡ pryË?!
+	LookingForTroubleAgain		=	"SVM_8_LookingForTroubleAgain"	;//Je≈°tƒô po√¢√°d nem√°≈° dost?
+	StopMagic					=	"SVM_8_StopMagic"				;//P√¢esta≈ï s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_8_ISaidStopMagic"			;//Chce≈° napr√°skat? Okam≈æitƒô s t√≠m p√¢esta≈ï!!!
+	WeaponDown					=	"SVM_8_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_8_ISaidWeaponDown"		;//Tak d√°≈° tu zatracenou zbra≈ï pryƒç?!
 	WiseMove					=	"SVM_8_WiseMove"				;//Chytrej kluk!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_8_NextTimeYoureInForIt"	;//(pro sebe) Dobr·, p‚ÌötÍ se uk·ûe.
+	NextTimeYoureInForIt		=	"SVM_8_NextTimeYoureInForIt"	;//(pro sebe) Dobr√°, p√¢√≠≈°tƒô se uk√°≈æe.
 	OhMyHead					=	"SVM_8_OhMyHead"				;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_8_TheresAFight"			;//(nedoËkavÍ) Aaa, boj!
-	OhMyGodItsAFight			=	"SVM_8_OhMyGodItsAFight"		;//(vystraöenÍ) BoûÌnku, boj!
-	GoodVictory					=	"SVM_8_GoodVictory"			;//(zl˝ smÌch) Tak jsi mu to uk·zal!
-	NotBad						= 	"SVM_8_NotBad"					;//(souhlasnÍ) To nebylo öpatnÈ.
-	OhMyGodHesDown				=	"SVM_8_OhMyGodHesDown"			;//(pro sebe) M˘j boûe! Takov· krutost...
-	CheerFriend01				=	"SVM_8_CheerFriend01"			;//Tak ho praö„!
-	CheerFriend02				=	"SVM_8_CheerFriend02"			;//Dej to sem vöechno!
-	CheerFriend03				=	"SVM_8_CheerFriend03"			;//Ukaû mu!
-	Ooh01						=	"SVM_8_Ooh01"					;//PoËkej!
-	Ooh02						=	"SVM_8_Ooh02"					;//D·vej pozor!
+	TheresAFight				=	"SVM_8_TheresAFight"			;//(nedoƒçkavƒô) Aaa, boj!
+	OhMyGodItsAFight			=	"SVM_8_OhMyGodItsAFight"		;//(vystra≈°enƒô) Bo≈æ√≠nku, boj!
+	GoodVictory					=	"SVM_8_GoodVictory"			;//(zl√Ω sm√≠ch) Tak jsi mu to uk√°zal!
+	NotBad						= 	"SVM_8_NotBad"					;//(souhlasnƒô) To nebylo ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_8_OhMyGodHesDown"			;//(pro sebe) M≈Øj bo≈æe! Takov√° krutost...
+	CheerFriend01				=	"SVM_8_CheerFriend01"			;//Tak ho pra≈°ƒÉ!
+	CheerFriend02				=	"SVM_8_CheerFriend02"			;//Dej to sem v≈°echno!
+	CheerFriend03				=	"SVM_8_CheerFriend03"			;//Uka≈æ mu!
+	Ooh01						=	"SVM_8_Ooh01"					;//Poƒçkej!
+	Ooh02						=	"SVM_8_Ooh02"					;//D√°vej pozor!
 	Ooh03						=	"SVM_8_Ooh03"					;//Au! To byla ale trefa!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_8_WhatWasThat"				;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_8_WhatWasThat"				;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_8_GetOutOfMyBed"			;//Vypadni z mÈ postele!
-	Awake						= "SVM_8_Awake"					;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_8_GetOutOfMyBed"			;//Vypadni z m√© postele!
+	Awake						= "SVM_8_Awake"					;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_8_ABS_COMMANDER"			;//Pr˝ jsi zaöel za velitelem a dal vÍci do po‚·dku.
-	ABS_MONASTERY				= "SVM_8_ABS_MONASTERY"			;//Pr˝ jsi zaöel za otcem Parlanem, aby ses vyzpovÌdal ze sv˝ch h‚Ìch˘.
-	ABS_FARM					= "SVM_8_ABS_FARM"					;//Pr˝ jsi zaöel za Leem a dal ty vÍci do po‚·dku.
-	ABS_GOOD					= "SVM_8_ABS_GOOD"					;//To je dob‚e.
+	ABS_COMMANDER				= "SVM_8_ABS_COMMANDER"			;//Pr√Ω jsi za≈°el za velitelem a dal vƒôci do po√¢√°dku.
+	ABS_MONASTERY				= "SVM_8_ABS_MONASTERY"			;//Pr√Ω jsi za≈°el za otcem Parlanem, aby ses vyzpov√≠dal ze sv√Ωch h√¢√≠ch≈Ø.
+	ABS_FARM					= "SVM_8_ABS_FARM"					;//Pr√Ω jsi za≈°el za Leem a dal ty vƒôci do po√¢√°dku.
+	ABS_GOOD					= "SVM_8_ABS_GOOD"					;//To je dob√¢e.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_8_SHEEPKILLER_CRIME"		;//Takhle vraûdit naöe ovce!
-	ATTACK_CRIME				= "SVM_8_ATTACK_CRIME"				;//Nech mÍ na pokoji, ty öpinav˝ zvÌ‚e!
-	THEFT_CRIME					= "SVM_8_THEFT_CRIME"				;//Nech mÍ na pokoji, ty mizernej zlodÍji!
+	SHEEPKILLER_CRIME			= "SVM_8_SHEEPKILLER_CRIME"		;//Takhle vra≈ædit na≈°e ovce!
+	ATTACK_CRIME				= "SVM_8_ATTACK_CRIME"				;//Nech mƒô na pokoji, ty ≈°pinav√Ω zv√≠√¢e!
+	THEFT_CRIME					= "SVM_8_THEFT_CRIME"				;//Nech mƒô na pokoji, ty mizernej zlodƒôji!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_8_PAL_CITY_CRIME"			;//Jsi ostudou svÈho ‚·du! PoËkej, aû se o tom dozvÌ lord Hagen!
-	MIL_CITY_CRIME				= "SVM_8_MIL_CITY_CRIME"			;//Jsi ostudou mÍstsk˝ch str·ûÌ! PoËkej, aû se o tom dozvÌ lord Andre!
-	CITY_CRIME					= "SVM_8_CITY_CRIME"				;//PoËkej, aû se o tom dozvÌ lord Andre.
+	PAL_CITY_CRIME				= "SVM_8_PAL_CITY_CRIME"			;//Jsi ostudou sv√©ho √¢√°du! Poƒçkej, a≈æ se o tom dozv√≠ lord Hagen!
+	MIL_CITY_CRIME				= "SVM_8_MIL_CITY_CRIME"			;//Jsi ostudou mƒôstsk√Ωch str√°≈æ√≠! Poƒçkej, a≈æ se o tom dozv√≠ lord Andre!
+	CITY_CRIME					= "SVM_8_CITY_CRIME"				;//Poƒçkej, a≈æ se o tom dozv√≠ lord Andre.
 	// -------------------------
-	MONA_CRIME					= "SVM_8_MONA_CRIME"				;//PoËkej, aû se o tom dozvÌ otec Parlan!
-	FARM_CRIME					= "SVM_8_FARM_CRIME"				;//PoËkej, aû se to donese k Leeovi...
-	OC_CRIME					= "SVM_8_OC_CRIME"					;//PoËkej, aû se o tom dozvÌ velitel Garond!
+	MONA_CRIME					= "SVM_8_MONA_CRIME"				;//Poƒçkej, a≈æ se o tom dozv√≠ otec Parlan!
+	FARM_CRIME					= "SVM_8_FARM_CRIME"				;//Poƒçkej, a≈æ se to donese k Leeovi...
+	OC_CRIME					= "SVM_8_OC_CRIME"					;//Poƒçkej, a≈æ se o tom dozv√≠ velitel Garond!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_8_TOUGHGUY_ATTACKLOST"		;//Dobr·, dobr·, jsi lepöÌ bojovnÌk neû j·. Co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_8_TOUGHGUY_ATTACKWON"		;//(arogantnÍ) M·m dojem, ûe uû ti musÌ b˝t jasnÈ, kdo je tady ten silnÍjöÌ... Co chceö?
-	TOUGHGUY_PLAYERATTACK		= "SVM_8_TOUGHGUY_PLAYERATTACK"	;//MÍl jsem dojem, ûe ses na mÍ pokouöel vyt·hnout zbra‡. To sis to rozmyslel? Ty spÌö d·v·ö p‚ednost ROZHOVORU, co? (smÌch)
+	TOUGHGUY_ATTACKLOST			= "SVM_8_TOUGHGUY_ATTACKLOST"		;//Dobr√°, dobr√°, jsi lep≈°√≠ bojovn√≠k ne≈æ j√°. Co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_8_TOUGHGUY_ATTACKWON"		;//(arogantnƒô) M√°m dojem, ≈æe u≈æ ti mus√≠ b√Ωt jasn√©, kdo je tady ten silnƒôj≈°√≠... Co chce≈°?
+	TOUGHGUY_PLAYERATTACK		= "SVM_8_TOUGHGUY_PLAYERATTACK"	;//Mƒôl jsem dojem, ≈æe ses na mƒô pokou≈°el vyt√°hnout zbra≈ï. To sis to rozmyslel? Ty sp√≠≈° d√°v√°≈° p√¢ednost ROZHOVORU, co? (sm√≠ch)
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_8_GOLD_1000"				;//1000 zlat˝ch.
-	GOLD_950					= "SVM_8_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_8_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_8_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_8_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_8_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_8_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_8_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_8_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_8_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_8_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_8_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_8_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_8_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_8_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_8_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_8_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_8_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_8_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_8_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_8_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_8_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_8_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_8_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_8_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_8_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_8_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_8_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_8_GOLD_1000"				;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_8_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_8_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_8_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_8_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_8_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_8_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_8_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_8_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_8_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_8_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_8_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_8_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_8_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_8_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_8_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_8_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_8_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_8_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_8_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_8_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_8_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_8_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_8_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_8_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_8_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_8_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_8_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_8_Smalltalk01"				;//...v·ûnÍ je to tak...
-	Smalltalk02					= "SVM_8_Smalltalk02"				;//...to nenÌ to, co jsem slyöel...
-	Smalltalk03					= "SVM_8_Smalltalk03"				;//...ne‚Ìkej mi, ûes o tom nevÍdÍl...
-	Smalltalk04					= "SVM_8_Smalltalk04"				;//...v tyhle dny ani nevÌö, komu m·ö vÍ‚it...
-	Smalltalk05					= "SVM_8_Smalltalk05"				;//...vöechno to jsou jen drby...
-	Smalltalk06					= "SVM_8_Smalltalk06"				;//...nejsem o nic ö„astnÍjöÌ...
-	Smalltalk07					= "SVM_8_Smalltalk07"				;//...uû mÍ nem˘ûe nic p‚ekvapit...
-	Smalltalk08					= "SVM_8_Smalltalk08"				;//...to v·ûnÍ nenÌ m˘j problÈm...
-	Smalltalk09					= "SVM_8_Smalltalk09"				;//...opravdu si myslÌö, ûe...
-	Smalltalk10					= "SVM_8_Smalltalk10"				;//...nikdo se ode mÍ nic nedozvÌ...
-	Smalltalk11					= "SVM_8_Smalltalk11"				;//...vöem to bylo jasnÈ...
-	Smalltalk12					= "SVM_8_Smalltalk12"				;//...naslouchal öpatn˝m lidem...
-	Smalltalk13					= "SVM_8_Smalltalk13"				;//...pokud to s·m nevidÌ, nem˘ûu mu nijak pomoct...
-	Smalltalk14					= "SVM_8_Smalltalk14"				;//...ne‚Ìk·m ti nic novÈho...
-	Smalltalk15					= "SVM_8_Smalltalk15"				;//...nikdy by na to s·m nep‚iöel...
-	Smalltalk16					= "SVM_8_Smalltalk16"				;//...to uû se vÌ dlouho...
-	Smalltalk17					= "SVM_8_Smalltalk17"				;//...to je öpatn˝ obchod...
-	Smalltalk18					= "SVM_8_Smalltalk18"				;//...mÍl jsem to udÍlat jinak...
-	Smalltalk19					= "SVM_8_Smalltalk19"				;//...˙plnÍ s tebou souhlasÌm...
-	Smalltalk20					= "SVM_8_Smalltalk20"				;//...nic nezmÍnÌ...
-	Smalltalk21					= "SVM_8_Smalltalk21"				;//...nikdy by mÍ nenapadlo, ûe...
-	Smalltalk22					= "SVM_8_Smalltalk22"				;//...nenÌ nic, co s tÌm mohl dÍlat...
-	Smalltalk23					= "SVM_8_Smalltalk23"				;//...to mÍ nijak nep‚ekvapuje...
-	Smalltalk24					= "SVM_8_Smalltalk24"				;//...ale to ne, on vÍdÍl vöechno nejlÌp...
+	Smalltalk01					= "SVM_8_Smalltalk01"				;//...v√°≈ænƒô je to tak...
+	Smalltalk02					= "SVM_8_Smalltalk02"				;//...to nen√≠ to, co jsem sly≈°el...
+	Smalltalk03					= "SVM_8_Smalltalk03"				;//...ne√¢√≠kej mi, ≈æes o tom nevƒôdƒôl...
+	Smalltalk04					= "SVM_8_Smalltalk04"				;//...v tyhle dny ani nev√≠≈°, komu m√°≈° vƒô√¢it...
+	Smalltalk05					= "SVM_8_Smalltalk05"				;//...v≈°echno to jsou jen drby...
+	Smalltalk06					= "SVM_8_Smalltalk06"				;//...nejsem o nic ≈°ƒÉastnƒôj≈°√≠...
+	Smalltalk07					= "SVM_8_Smalltalk07"				;//...u≈æ mƒô nem≈Ø≈æe nic p√¢ekvapit...
+	Smalltalk08					= "SVM_8_Smalltalk08"				;//...to v√°≈ænƒô nen√≠ m≈Øj probl√©m...
+	Smalltalk09					= "SVM_8_Smalltalk09"				;//...opravdu si mysl√≠≈°, ≈æe...
+	Smalltalk10					= "SVM_8_Smalltalk10"				;//...nikdo se ode mƒô nic nedozv√≠...
+	Smalltalk11					= "SVM_8_Smalltalk11"				;//...v≈°em to bylo jasn√©...
+	Smalltalk12					= "SVM_8_Smalltalk12"				;//...naslouchal ≈°patn√Ωm lidem...
+	Smalltalk13					= "SVM_8_Smalltalk13"				;//...pokud to s√°m nevid√≠, nem≈Ø≈æu mu nijak pomoct...
+	Smalltalk14					= "SVM_8_Smalltalk14"				;//...ne√¢√≠k√°m ti nic nov√©ho...
+	Smalltalk15					= "SVM_8_Smalltalk15"				;//...nikdy by na to s√°m nep√¢i≈°el...
+	Smalltalk16					= "SVM_8_Smalltalk16"				;//...to u≈æ se v√≠ dlouho...
+	Smalltalk17					= "SVM_8_Smalltalk17"				;//...to je ≈°patn√Ω obchod...
+	Smalltalk18					= "SVM_8_Smalltalk18"				;//...mƒôl jsem to udƒôlat jinak...
+	Smalltalk19					= "SVM_8_Smalltalk19"				;//...√∫plnƒô s tebou souhlas√≠m...
+	Smalltalk20					= "SVM_8_Smalltalk20"				;//...nic nezmƒôn√≠...
+	Smalltalk21					= "SVM_8_Smalltalk21"				;//...nikdy by mƒô nenapadlo, ≈æe...
+	Smalltalk22					= "SVM_8_Smalltalk22"				;//...nen√≠ nic, co s t√≠m mohl dƒôlat...
+	Smalltalk23					= "SVM_8_Smalltalk23"				;//...to mƒô nijak nep√¢ekvapuje...
+	Smalltalk24					= "SVM_8_Smalltalk24"				;//...ale to ne, on vƒôdƒôl v≈°echno nejl√≠p...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                  
-	Smalltalk25					= "SVM_8_Smalltalk25"				;//...situace je v·ûn·, tak mi ne‚Ìkej, ûe...
-	Smalltalk26					= "SVM_8_Smalltalk26"				;//...jeötÍ ani nevÍdÍl, jak po‚·dnÍ drûet meË...
-	Smalltalk27					= "SVM_8_Smalltalk27"				;//...jo, v·ûnÍ ‚ekl, ûe...
+	Smalltalk25					= "SVM_8_Smalltalk25"				;//...situace je v√°≈æn√°, tak mi ne√¢√≠kej, ≈æe...
+	Smalltalk26					= "SVM_8_Smalltalk26"				;//...je≈°tƒô ani nevƒôdƒôl, jak po√¢√°dnƒô dr≈æet meƒç...
+	Smalltalk27					= "SVM_8_Smalltalk27"				;//...jo, v√°≈ænƒô √¢ekl, ≈æe...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                  
-	Smalltalk28					= "SVM_8_Smalltalk28"				;//...za tohle bude muset nÍkdo zaplatit...
-	Smalltalk29					= "SVM_8_Smalltalk29"				;//...Innos nenech· v nevÍdomosti nikoho, kdo rozpozn· jeho moudrost...
-	Smalltalk30					= "SVM_8_Smalltalk30"				;//...spravedlnost nakonec zvÌtÍzÌ...
+	Smalltalk28					= "SVM_8_Smalltalk28"				;//...za tohle bude muset nƒôkdo zaplatit...
+	Smalltalk29					= "SVM_8_Smalltalk29"				;//...Innos nenech√° v nevƒôdomosti nikoho, kdo rozpozn√° jeho moudrost...
+	Smalltalk30					= "SVM_8_Smalltalk30"				;//...spravedlnost nakonec zv√≠tƒôz√≠...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_8_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_8_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_8_NoLearnYoureBetter"		;//Uû tÍ nem˘ûu nauËit nic dalöÌho. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_8_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_8_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_8_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_8_NoLearnYoureBetter"		;//U≈æ tƒô nem≈Ø≈æu nauƒçit nic dal≈°√≠ho. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_8_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_8_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_8_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_8_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_8_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_8_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_8_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_8_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_8_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_8_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_8_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_8_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_8_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_8_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_8_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_8_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_8_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_8_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_8_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_8_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_8_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_8_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_8_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_8_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_8_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_8_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_8_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_8_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_8_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_8_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_8_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_8_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_8_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_8_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_8_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_8_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_8_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_8_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_8_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_8_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_8_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_8_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_8_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_8_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_8_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_8_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_8_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_8_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_8_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_8_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_8_Aargh_1"					;//Aargh
@@ -1875,224 +1875,224 @@ instance SVM_8 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_8_Addon_WrongArmor";				//NevÍ‚Ìm ti. Je na tobÍ nÍco divn˝ho, nebo jsi divnÍ obleËenej.
-	ADDON_WRONGARMOR_SLD		= "SVM_8_ADDON_WRONGARMOR_SLD";			//Ty snad pat‚Ìö nÍkam jinam, ne? Aspo‡ podle toho, co m·ö na sobÍ. Takhle s tebou nechci nic mÌt.
-	ADDON_WRONGARMOR_MIL		= "SVM_8_ADDON_WRONGARMOR_MIL";			//MusÌme trochu vypadat, takûe si koukej oblÌct zbroj.
-	ADDON_WRONGARMOR_KDF		= "SVM_8_ADDON_WRONGARMOR_KDF";			//Innos û·d·, abychom st·le hrdÍ nosili jeho roucho. Takûe se p‚evleË.
-	ADDON_NOARMOR_BDT			= "SVM_8_ADDON_ADDON_NOARMOR_BDT";		//S kop·Ëi se nebavÌm. Dyk tu chodÌö beze zbroje!
+	ADDON_WRONGARMOR			= "SVM_8_Addon_WrongArmor";				//Nevƒô√¢√≠m ti. Je na tobƒô nƒôco divn√Ωho, nebo jsi divnƒô obleƒçenej.
+	ADDON_WRONGARMOR_SLD		= "SVM_8_ADDON_WRONGARMOR_SLD";			//Ty snad pat√¢√≠≈° nƒôkam jinam, ne? Aspo≈ï podle toho, co m√°≈° na sobƒô. Takhle s tebou nechci nic m√≠t.
+	ADDON_WRONGARMOR_MIL		= "SVM_8_ADDON_WRONGARMOR_MIL";			//Mus√≠me trochu vypadat, tak≈æe si koukej obl√≠ct zbroj.
+	ADDON_WRONGARMOR_KDF		= "SVM_8_ADDON_WRONGARMOR_KDF";			//Innos ≈æ√°d√°, abychom st√°le hrdƒô nosili jeho roucho. Tak≈æe se p√¢evleƒç.
+	ADDON_NOARMOR_BDT			= "SVM_8_ADDON_ADDON_NOARMOR_BDT";		//S kop√°ƒçi se nebav√≠m. Dyk tu chod√≠≈° beze zbroje!
 
-	ADDON_DIEBANDIT				= "SVM_8_ADDON_DIEBANDIT";				//Ty öpinavej bandito!
-	ADDON_DIRTYPIRATE			= "SVM_8_ADDON_DIRTYPIRATE";			//PIR¡TI!
+	ADDON_DIEBANDIT				= "SVM_8_ADDON_DIEBANDIT";				//Ty ≈°pinavej bandito!
+	ADDON_DIRTYPIRATE			= "SVM_8_ADDON_DIRTYPIRATE";			//PIR√ÅTI!
 };
 
 instance SVM_9 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_9_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_9_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_9_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_9_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_9_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_9_IGetYouStill"				;//Tak jsem tÍ p‚ece dostal!
-	DieEnemy					=	"SVM_9_DieEnemy"					;//Nikdy jsi sem nemÍl chodit!
-	DieMonster					=	"SVM_9_DieMonster"					;//PojÎ sem, ty öpinavËe!
-	Addon_DieMonster			=	"SVM_9_Addon_DieMonster"			;//A dalöÌ z tÍch ömejd˘!
-	Addon_DieMonster2			=	"SVM_9_Addon_DieMonster2"			;//Uû je tu dalöÌ z tÍch hnusnejch potvor!
-	DirtyThief					=	"SVM_9_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_9_HandsOff"					;//Dej ty öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_9_SheepKiller"				;//Nech naöe ovce na pokoji!
-	SheepKillerMonster			=	"SVM_9_SheepKillerMonster"			;//Pakuj se od naöich ovcÌ, ty zatracen˝ zvÌ‚e!
+	IGetYouStill				= 	"SVM_9_IGetYouStill"				;//Tak jsem tƒô p√¢ece dostal!
+	DieEnemy					=	"SVM_9_DieEnemy"					;//Nikdy jsi sem nemƒôl chodit!
+	DieMonster					=	"SVM_9_DieMonster"					;//Poj√´ sem, ty ≈°pinavƒçe!
+	Addon_DieMonster			=	"SVM_9_Addon_DieMonster"			;//A dal≈°√≠ z tƒôch ≈°mejd≈Ø!
+	Addon_DieMonster2			=	"SVM_9_Addon_DieMonster2"			;//U≈æ je tu dal≈°√≠ z tƒôch hnusnejch potvor!
+	DirtyThief					=	"SVM_9_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_9_HandsOff"					;//Dej ty ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_9_SheepKiller"				;//Nech na≈°e ovce na pokoji!
+	SheepKillerMonster			=	"SVM_9_SheepKillerMonster"			;//Pakuj se od na≈°ich ovc√≠, ty zatracen√Ω zv√≠√¢e!
 	YouMurderer					=	"SVM_9_YouMurderer"				;//Vrahu!
-	DieStupidBeast				=	"SVM_9_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_9_YouDareHitMe"				;//Toho budeö litovat!
-	YouAskedForIt				=	"SVM_9_YouAskedForIt"				;//Varoval jsem tÍ!
-	ThenIBeatYouOutOfHere		=	"SVM_9_ThenIBeatYouOutOfHere"		;//¬ekl jsem VEN!
-	WhatDidYouDoInThere			=	"SVM_9_WhatDidYouDoInThere"		;//Hej! Co to tam prov·dÌö?
-	WillYouStopFighting			=	"SVM_9_WillYouStopFighting"		;//P‚esta‡! Hned teÎ!
+	DieStupidBeast				=	"SVM_9_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_9_YouDareHitMe"				;//Toho bude≈° litovat!
+	YouAskedForIt				=	"SVM_9_YouAskedForIt"				;//Varoval jsem tƒô!
+	ThenIBeatYouOutOfHere		=	"SVM_9_ThenIBeatYouOutOfHere"		;//√Çekl jsem VEN!
+	WhatDidYouDoInThere			=	"SVM_9_WhatDidYouDoInThere"		;//Hej! Co to tam prov√°d√≠≈°?
+	WillYouStopFighting			=	"SVM_9_WillYouStopFighting"		;//P√¢esta≈ï! Hned te√´!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_9_KillEnemy"					;//ZapÌchnu tÍ, bastarde!
+	KillEnemy					= 	"SVM_9_KillEnemy"					;//Zap√≠chnu tƒô, bastarde!
 	EnemyKilled					=	"SVM_9_EnemyKilled"					;//Tohle je pro tebe.
-	//MonsterKilled				=	"SVM_9_MonsterKilled"				;//Ich steh' auf diese ganze Scheiﬂe!
-	Addon_MonsterKilled			=	"SVM_9_Addon_MonsterKilled"			;//Tum·ö, ty hnusn· bestie!
-	Addon_MonsterKilled2		=	"SVM_9_Addon_MonsterKilled2"		;//O dalöÌ potvoru mÌ‡!
-	ThiefDown					=	"SVM_9_ThiefDown"					;//Varuju tÍ! Uû to vÌckr·t nezkouöej, ty mizernej zlodÍji!
-	rumfummlerDown				=	"SVM_9_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_9_SheepAttackerDown"			;//A uû se k naöim ovcÌm nep‚ibliûuj!
-	KillMurderer				=	"SVM_9_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_9_StupidBeastKilled"			;//Ta je ale zatracenÍ tup· stv˘ra!
-	NeverHitMeAgain				=	"SVM_9_NeverHitMeAgain"				;//Neopovaûuj se na mÍ znovu za˙toËit!
-	YouBetterShouldHaveListened	=	"SVM_9_YouBetterShouldHaveListened"	;//Varoval jsem tÍ!
-	GetUpAndBeGone				=	"SVM_9_GetUpAndBeGone"					;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_9_NeverEnterRoomAgain"			;//Nechci tÍ tady uû vÌckr·t vidÍt. Je to jasn˝?
-	ThereIsNoFightingHere		=	"SVM_9_ThereIsNoFightingHere"			;//Nechci tady û·dnÈ rvaËky, tak na to nezapome‡!
+	//MonsterKilled				=	"SVM_9_MonsterKilled"				;//Ich steh' auf diese ganze Schei√üe!
+	Addon_MonsterKilled			=	"SVM_9_Addon_MonsterKilled"			;//Tum√°≈°, ty hnusn√° bestie!
+	Addon_MonsterKilled2		=	"SVM_9_Addon_MonsterKilled2"		;//O dal≈°√≠ potvoru m√≠≈ï!
+	ThiefDown					=	"SVM_9_ThiefDown"					;//Varuju tƒô! U≈æ to v√≠ckr√°t nezkou≈°ej, ty mizernej zlodƒôji!
+	rumfummlerDown				=	"SVM_9_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_9_SheepAttackerDown"			;//A u≈æ se k na≈°im ovc√≠m nep√¢ibli≈æuj!
+	KillMurderer				=	"SVM_9_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_9_StupidBeastKilled"			;//Ta je ale zatracenƒô tup√° stv≈Øra!
+	NeverHitMeAgain				=	"SVM_9_NeverHitMeAgain"				;//Neopova≈æuj se na mƒô znovu za√∫toƒçit!
+	YouBetterShouldHaveListened	=	"SVM_9_YouBetterShouldHaveListened"	;//Varoval jsem tƒô!
+	GetUpAndBeGone				=	"SVM_9_GetUpAndBeGone"					;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_9_NeverEnterRoomAgain"			;//Nechci tƒô tady u≈æ v√≠ckr√°t vidƒôt. Je to jasn√Ω?
+	ThereIsNoFightingHere		=	"SVM_9_ThereIsNoFightingHere"			;//Nechci tady ≈æ√°dn√© rvaƒçky, tak na to nezapome≈ï!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_9_SpareMe"						;//Nezkouöej û·dnÈ hlouposti!
-	RunAway						= 	"SVM_9_RunAway"						;//Pad·m pryË!
+	SpareMe						=	"SVM_9_SpareMe"						;//Nezkou≈°ej ≈æ√°dn√© hlouposti!
+	RunAway						= 	"SVM_9_RunAway"						;//Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_9_Alarm"					;//POPLACH!
-	Guards						=	"SVM_9_Guards"					;//STR¡éE!
+	Guards						=	"SVM_9_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_9_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_9_GoodMonsterKill"		;//(vol·) Poöli ty bestie do vÍËn˝ch loviö„!
-	GoodKill					= 	"SVM_9_GoodKill"				;//(vol·) Jo, nandej to tomu bastardovi!
+	GoodMonsterKill				=	"SVM_9_GoodMonsterKill"		;//(vol√°) Po≈°li ty bestie do vƒôƒçn√Ωch lovi≈°ƒÉ!
+	GoodKill					= 	"SVM_9_GoodKill"				;//(vol√°) Jo, nandej to tomu bastardovi!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_9_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_9_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_9_RunCoward"				;//(k‚iËÌ) Dostanu tÍ!
+	RunCoward					=	"SVM_9_RunCoward"				;//(k√¢iƒç√≠) Dostanu tƒô!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_9_GetOutOfHere"			;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_9_WhyAreYouInHere"		;//Tady nem·ö co dÍlat!
+	WhyAreYouInHere				=	"SVM_9_WhyAreYouInHere"		;//Tady nem√°≈° co dƒôlat!
 	YesGoOutOfHere				= 	"SVM_9_YesGoOutOfHere"			;//Jo, vypadni odsud!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_9_WhatsThisSupposedToBe"	;//Co m·ö za lubem? Co tady kolem Ëmuch·ö?
-	YouDisturbedMySlumber		=	"SVM_9_YouDisturbedMySlumber"	;//(vst·v·) Sakra, co chceö?
+	WhatsThisSupposedToBe		=	"SVM_9_WhatsThisSupposedToBe"	;//Co m√°≈° za lubem? Co tady kolem ƒçmuch√°≈°?
+	YouDisturbedMySlumber		=	"SVM_9_YouDisturbedMySlumber"	;//(vst√°v√°) Sakra, co chce≈°?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_9_ITookYourGold"			;//Dobr·, kdyû uû nic jinÈho, alespo‡ m·ö u sebe nÍjakÈ zlato.
-	ShitNoGold					=	"SVM_9_ShitNoGold"				;//Ani zla„·k - hmpf.
-	ITakeYourWeapon				=	"SVM_9_ITakeYourWeapon"		;//Asi si vezmu tvoji zbra‡.
+	ITookYourGold				=	"SVM_9_ITookYourGold"			;//Dobr√°, kdy≈æ u≈æ nic jin√©ho, alespo≈ï m√°≈° u sebe nƒôjak√© zlato.
+	ShitNoGold					=	"SVM_9_ShitNoGold"				;//Ani zlaƒÉ√°k - hmpf.
+	ITakeYourWeapon				=	"SVM_9_ITakeYourWeapon"		;//Asi si vezmu tvoji zbra≈ï.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_9_WhatAreYouDoing"		;//(varovnÍ) Tak tohle uû, hochu, vÌckr·t nedÍlej!
+	WhatAreYouDoing				=	"SVM_9_WhatAreYouDoing"		;//(varovnƒô) Tak tohle u≈æ, hochu, v√≠ckr√°t nedƒôlej!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_9_LookingForTroubleAgain"	;//(agresivnÍ) Pot‚ebujeö dalöÌ nakl·daËku?
-	StopMagic					=	"SVM_9_StopMagic"				;//P‚esta‡ s tÍmi kouzly!
-	ISaidStopMagic				=	"SVM_9_ISaidStopMagic"			;//PoslednÌ varov·nÌ! P‚esta‡ s tÍmi kouzly!
-	WeaponDown					=	"SVM_9_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_9_ISaidWeaponDown"		;//Schovej tu zbra‡, nebo v tom seö aû po uöi!
-	WiseMove					=	"SVM_9_WiseMove"				;//Hej, ty nejsi tak blbej, jak vypad·ö!
+	LookingForTroubleAgain		=	"SVM_9_LookingForTroubleAgain"	;//(agresivnƒô) Pot√¢ebuje≈° dal≈°√≠ nakl√°daƒçku?
+	StopMagic					=	"SVM_9_StopMagic"				;//P√¢esta≈ï s tƒômi kouzly!
+	ISaidStopMagic				=	"SVM_9_ISaidStopMagic"			;//Posledn√≠ varov√°n√≠! P√¢esta≈ï s tƒômi kouzly!
+	WeaponDown					=	"SVM_9_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_9_ISaidWeaponDown"		;//Schovej tu zbra≈ï, nebo v tom se≈° a≈æ po u≈°i!
+	WiseMove					=	"SVM_9_WiseMove"				;//Hej, ty nejsi tak blbej, jak vypad√°≈°!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_9_NextTimeYoureInForIt"	;//(pro sebe) Tohle uû nikdy nezkouöej.
-	OhMyHead					=	"SVM_9_OhMyHead"				;//(pro sebe) ”! Moje hlava...
+	NextTimeYoureInForIt		=	"SVM_9_NextTimeYoureInForIt"	;//(pro sebe) Tohle u≈æ nikdy nezkou≈°ej.
+	OhMyHead					=	"SVM_9_OhMyHead"				;//(pro sebe) √ì! Moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_9_TheresAFight"			;//(dychtivÍ) A„ je koneËnÍ nÍjak· z·bava.
-	OhMyGodItsAFight			=	"SVM_9_OhMyGodItsAFight"		;//(vydÍöenÍ) ” m˘j boûe...
-	GoodVictory					=	"SVM_9_GoodVictory"			;//(zl˝ smÌch) A„ si z toho vezme ponauËenÌ.
-	NotBad						= 	"SVM_9_NotBad"					;//(souhlasnÍ) To byla trefa!
-	OhMyGodHesDown				=	"SVM_9_OhMyGodHesDown"			;//(pro sebe) Takov˝ surovec!
+	TheresAFight				=	"SVM_9_TheresAFight"			;//(dychtivƒô) AƒÉ je koneƒçnƒô nƒôjak√° z√°bava.
+	OhMyGodItsAFight			=	"SVM_9_OhMyGodItsAFight"		;//(vydƒô≈°enƒô) √ì m≈Øj bo≈æe...
+	GoodVictory					=	"SVM_9_GoodVictory"			;//(zl√Ω sm√≠ch) AƒÉ si z toho vezme ponauƒçen√≠.
+	NotBad						= 	"SVM_9_NotBad"					;//(souhlasnƒô) To byla trefa!
+	OhMyGodHesDown				=	"SVM_9_OhMyGodHesDown"			;//(pro sebe) Takov√Ω surovec!
 	CheerFriend01				=	"SVM_9_CheerFriend01"			;//Dej mu!
-	CheerFriend02				=	"SVM_9_CheerFriend02"			;//TeÎ nep‚est·vej!
+	CheerFriend02				=	"SVM_9_CheerFriend02"			;//Te√´ nep√¢est√°vej!
 	CheerFriend03				=	"SVM_9_CheerFriend03"			;//Doraz ho!
-	Ooh01						=	"SVM_9_Ooh01"					;//D·vej pozor!
-	Ooh02						=	"SVM_9_Ooh02"					;//Tak mu to vra„!
-	Ooh03						=	"SVM_9_Ooh03"					;//Do hajzlu, takov· pecka!
+	Ooh01						=	"SVM_9_Ooh01"					;//D√°vej pozor!
+	Ooh02						=	"SVM_9_Ooh02"					;//Tak mu to vraƒÉ!
+	Ooh03						=	"SVM_9_Ooh03"					;//Do hajzlu, takov√° pecka!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_9_WhatWasThat"				;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_9_WhatWasThat"				;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_9_GetOutOfMyBed"			;//Vypadni z mÈ postele!
-	Awake						= "SVM_9_Awake"					;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_9_GetOutOfMyBed"			;//Vypadni z m√© postele!
+	Awake						= "SVM_9_Awake"					;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_9_ABS_COMMANDER"    ;//Tak velitel dal ty vÍci do po‚·dku.
-	ABS_MONASTERY    = "SVM_9_ABS_MONASTERY"    ;//Tak tÍ otec Parlan zbavil viny.
-	ABS_FARM       = "SVM_9_ABS_FARM"        ;//Tak ses setkal s Leem a urovnal tu z·leûitost.
-	ABS_GOOD       = "SVM_9_ABS_GOOD"       ;//Dobr·.
+	ABS_COMMANDER     = "SVM_9_ABS_COMMANDER"    ;//Tak velitel dal ty vƒôci do po√¢√°dku.
+	ABS_MONASTERY    = "SVM_9_ABS_MONASTERY"    ;//Tak tƒô otec Parlan zbavil viny.
+	ABS_FARM       = "SVM_9_ABS_FARM"        ;//Tak ses setkal s Leem a urovnal tu z√°le≈æitost.
+	ABS_GOOD       = "SVM_9_ABS_GOOD"       ;//Dobr√°.
  	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_9_SHEEPKILLER_CRIME"   ;//Ty vraûdÌö ovce? P‚edpokl·d·m, ûe se ti nepoda‚ilo najÌt nikoho bezbrannÍjöÌho?
-	ATTACK_CRIME     = "SVM_9_ATTACK_CRIME"    ;//S odpornejma banditama nechci nic mÌt!
-	THEFT_CRIME      = "SVM_9_THEFT_CRIME"    ;//Se zlodÍji nechci mÌt nic spoleËnÈho!
+	SHEEPKILLER_CRIME   = "SVM_9_SHEEPKILLER_CRIME"   ;//Ty vra≈æd√≠≈° ovce? P√¢edpokl√°d√°m, ≈æe se ti nepoda√¢ilo naj√≠t nikoho bezbrannƒôj≈°√≠ho?
+	ATTACK_CRIME     = "SVM_9_ATTACK_CRIME"    ;//S odpornejma banditama nechci nic m√≠t!
+	THEFT_CRIME      = "SVM_9_THEFT_CRIME"    ;//Se zlodƒôji nechci m√≠t nic spoleƒçn√©ho!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_9_PAL_CITY_CRIME"   ;//Tak ty se chceö st·t paladinem? PoËkej, aû co na to ‚ekne lord Hagen!
- 	MIL_CITY_CRIME     = "SVM_9_MIL_CITY_CRIME"   ;//V·ûnÍ se chceö st·t Ëlenem mÍstsk˝ch str·ûÌ? Lord Andre tÍ v tom nehodl· podpo‚it!
- 	CITY_CRIME       = "SVM_9_CITY_CRIME"    ;//Zajdi za lordem Andrem, dokud m˘ûeö.
+ 	PAL_CITY_CRIME     = "SVM_9_PAL_CITY_CRIME"   ;//Tak ty se chce≈° st√°t paladinem? Poƒçkej, a≈æ co na to √¢ekne lord Hagen!
+ 	MIL_CITY_CRIME     = "SVM_9_MIL_CITY_CRIME"   ;//V√°≈ænƒô se chce≈° st√°t ƒçlenem mƒôstsk√Ωch str√°≈æ√≠? Lord Andre tƒô v tom nehodl√° podpo√¢it!
+ 	CITY_CRIME       = "SVM_9_CITY_CRIME"    ;//Zajdi za lordem Andrem, dokud m≈Ø≈æe≈°.
  	// -------------------------
-	MONA_CRIME       = "SVM_9_MONA_CRIME"    ;//Zajdi za otcem Parlanem. Pom˘ûe ti odËinit tvÈ h‚Ìchy!
-	FARM_CRIME       = "SVM_9_FARM_CRIME"    ;//Lee se o tomhle dozvÌ a ty za to zaplatÌö.
-	OC_CRIME       = "SVM_9_OC_CRIME"     ;//Velitel Garond z toho nebude nadöen˝. UdÍl·ö lÌp, kdyû mu o tom ‚ekneö d‚Ìv, neû se situace jeötÍ zhoröÌ!
+	MONA_CRIME       = "SVM_9_MONA_CRIME"    ;//Zajdi za otcem Parlanem. Pom≈Ø≈æe ti odƒçinit tv√© h√¢√≠chy!
+	FARM_CRIME       = "SVM_9_FARM_CRIME"    ;//Lee se o tomhle dozv√≠ a ty za to zaplat√≠≈°.
+	OC_CRIME       = "SVM_9_OC_CRIME"     ;//Velitel Garond z toho nebude nad≈°en√Ω. Udƒôl√°≈° l√≠p, kdy≈æ mu o tom √¢ekne≈° d√¢√≠v, ne≈æ se situace je≈°tƒô zhor≈°√≠!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_9_TOUGHGUY_ATTACKLOST"		;//Dobr·, vyhr·l jsi. Tak co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_9_TOUGHGUY_ATTACKWON"		;//(arogantnÍ) M·m dojem, ûe uû ti doölo, kdo tady m· navrch. Co chceö?
-	TOUGHGUY_PLAYERATTACK		= "SVM_9_TOUGHGUY_PLAYERATTACK"	;//Zase ty? ZkouöÌö to na mÍ znovu, co?
+	TOUGHGUY_ATTACKLOST			= "SVM_9_TOUGHGUY_ATTACKLOST"		;//Dobr√°, vyhr√°l jsi. Tak co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_9_TOUGHGUY_ATTACKWON"		;//(arogantnƒô) M√°m dojem, ≈æe u≈æ ti do≈°lo, kdo tady m√° navrch. Co chce≈°?
+	TOUGHGUY_PLAYERATTACK		= "SVM_9_TOUGHGUY_PLAYERATTACK"	;//Zase ty? Zkou≈°√≠≈° to na mƒô znovu, co?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_9_GOLD_1000"				;//1000 zlat˝ch.
-	GOLD_950					= "SVM_9_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_9_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_9_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_9_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_9_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_9_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_9_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_9_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_9_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_9_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_9_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_9_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_9_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_9_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_9_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_9_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_9_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_9_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_9_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_9_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_9_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_9_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_9_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_9_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_9_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_9_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_9_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_9_GOLD_1000"				;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_9_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_9_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_9_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_9_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_9_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_9_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_9_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_9_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_9_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_9_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_9_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_9_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_9_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_9_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_9_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_9_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_9_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_9_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_9_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_9_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_9_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_9_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_9_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_9_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_9_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_9_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_9_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_9_Smalltalk01"				;//...nem˘ûu tomu uvÍ‚it...
-	Smalltalk02					= "SVM_9_Smalltalk02"				;//...nebyl bych si tak jist˝...
-	Smalltalk03					= "SVM_9_Smalltalk03"				;//...ale on vÌ, ûe vöichni...
-	Smalltalk04					= "SVM_9_Smalltalk04"				;//...stÍûÌ vÌm, komu m·m vÍ‚it...
-	Smalltalk05					= "SVM_9_Smalltalk05"				;//...nevÌm, co ho tak rozruöilo...
-	Smalltalk06					= "SVM_9_Smalltalk06"				;//...uû tak jsem v po‚·dn˝ bryndÍ...
-	Smalltalk07					= "SVM_9_Smalltalk07"				;//...zaslechl jsem jednu, dvÍ zvÍsti...
-	Smalltalk08					= "SVM_9_Smalltalk08"				;//...nezajÌm· mÍ, ûe...
-	Smalltalk09					= "SVM_9_Smalltalk09"				;//...nesmÌö vÍ‚it vöemu, co slyöÌö...
-	Smalltalk10					= "SVM_9_Smalltalk10"				;//...to nem· ode mÍ...
-	Smalltalk11					= "SVM_9_Smalltalk11"				;//...uû jsem o tom dost p‚em˝ölel...
-	Smalltalk12					= "SVM_9_Smalltalk12"				;//...nikdo se mÍ neptal na n·zor...
-	Smalltalk13					= "SVM_9_Smalltalk13"				;//...v·ûnÍ si nezaslouûil, aby...
-	Smalltalk14					= "SVM_9_Smalltalk14"				;//...ne‚Ìkej, ûes nevÍdÍl, ûe...
-	Smalltalk15					= "SVM_9_Smalltalk15"				;//...to bylo jasn˝...
-	Smalltalk16					= "SVM_9_Smalltalk16"				;//...tak kde jsi k tomu teda p‚iöel...
-	Smalltalk17					= "SVM_9_Smalltalk17"				;//...takhle to nemohlo jÌt vÍËnÍ...
-	Smalltalk18					= "SVM_9_Smalltalk18"				;//...m·m na to sv˘j n·zor...
-	Smalltalk19					= "SVM_9_Smalltalk19"				;//...bylo to p‚esnÍ tak, jak jsi ‚Ìkal...
-	Smalltalk20					= "SVM_9_Smalltalk20"				;//...nevÍ‚Ìm tomu, ûe by se to mohlo zmÍnit...
-	Smalltalk21					= "SVM_9_Smalltalk21"				;//...to je poprvÈ, co o tom slyöÌm...
-	Smalltalk22					= "SVM_9_Smalltalk22"				;//...m˘ûeme leda Ëekat, co se stane...
-	Smalltalk23					= "SVM_9_Smalltalk23"				;//...vÍdÍl jsem, ûe n·s ËekajÌ problÈmy...
-	Smalltalk24					= "SVM_9_Smalltalk24"				;//...tak proË mÍ neposlouchal...
+	Smalltalk01					= "SVM_9_Smalltalk01"				;//...nem≈Ø≈æu tomu uvƒô√¢it...
+	Smalltalk02					= "SVM_9_Smalltalk02"				;//...nebyl bych si tak jist√Ω...
+	Smalltalk03					= "SVM_9_Smalltalk03"				;//...ale on v√≠, ≈æe v≈°ichni...
+	Smalltalk04					= "SVM_9_Smalltalk04"				;//...stƒô≈æ√≠ v√≠m, komu m√°m vƒô√¢it...
+	Smalltalk05					= "SVM_9_Smalltalk05"				;//...nev√≠m, co ho tak rozru≈°ilo...
+	Smalltalk06					= "SVM_9_Smalltalk06"				;//...u≈æ tak jsem v po√¢√°dn√Ω bryndƒô...
+	Smalltalk07					= "SVM_9_Smalltalk07"				;//...zaslechl jsem jednu, dvƒô zvƒôsti...
+	Smalltalk08					= "SVM_9_Smalltalk08"				;//...nezaj√≠m√° mƒô, ≈æe...
+	Smalltalk09					= "SVM_9_Smalltalk09"				;//...nesm√≠≈° vƒô√¢it v≈°emu, co sly≈°√≠≈°...
+	Smalltalk10					= "SVM_9_Smalltalk10"				;//...to nem√° ode mƒô...
+	Smalltalk11					= "SVM_9_Smalltalk11"				;//...u≈æ jsem o tom dost p√¢em√Ω≈°lel...
+	Smalltalk12					= "SVM_9_Smalltalk12"				;//...nikdo se mƒô neptal na n√°zor...
+	Smalltalk13					= "SVM_9_Smalltalk13"				;//...v√°≈ænƒô si nezaslou≈æil, aby...
+	Smalltalk14					= "SVM_9_Smalltalk14"				;//...ne√¢√≠kej, ≈æes nevƒôdƒôl, ≈æe...
+	Smalltalk15					= "SVM_9_Smalltalk15"				;//...to bylo jasn√Ω...
+	Smalltalk16					= "SVM_9_Smalltalk16"				;//...tak kde jsi k tomu teda p√¢i≈°el...
+	Smalltalk17					= "SVM_9_Smalltalk17"				;//...takhle to nemohlo j√≠t vƒôƒçnƒô...
+	Smalltalk18					= "SVM_9_Smalltalk18"				;//...m√°m na to sv≈Øj n√°zor...
+	Smalltalk19					= "SVM_9_Smalltalk19"				;//...bylo to p√¢esnƒô tak, jak jsi √¢√≠kal...
+	Smalltalk20					= "SVM_9_Smalltalk20"				;//...nevƒô√¢√≠m tomu, ≈æe by se to mohlo zmƒônit...
+	Smalltalk21					= "SVM_9_Smalltalk21"				;//...to je poprv√©, co o tom sly≈°√≠m...
+	Smalltalk22					= "SVM_9_Smalltalk22"				;//...m≈Ø≈æeme leda ƒçekat, co se stane...
+	Smalltalk23					= "SVM_9_Smalltalk23"				;//...vƒôdƒôl jsem, ≈æe n√°s ƒçekaj√≠ probl√©my...
+	Smalltalk24					= "SVM_9_Smalltalk24"				;//...tak proƒç mƒô neposlouchal...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_9_Smalltalk25"				;//...bÍûel, jako by mu byl v pat·ch samotn˝ Beliar...
-	Smalltalk26					= "SVM_9_Smalltalk26"				;//...jasnÍ ûe jsme nakonec dostali...
-	Smalltalk27					= "SVM_9_Smalltalk27"				;//...mÍl bys do toho zas·hnout a situaci vy‚eöit...
+	Smalltalk25					= "SVM_9_Smalltalk25"				;//...bƒô≈æel, jako by mu byl v pat√°ch samotn√Ω Beliar...
+	Smalltalk26					= "SVM_9_Smalltalk26"				;//...jasnƒô ≈æe jsme nakonec dostali...
+	Smalltalk27					= "SVM_9_Smalltalk27"				;//...mƒôl bys do toho zas√°hnout a situaci vy√¢e≈°it...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_9_Smalltalk28"				;//...jeden nikdy nevÌ, jak podlÌ mohou b˝t...
-	Smalltalk29					= "SVM_9_Smalltalk29"				;//...protoûe je to v˘le Innosova...
+	Smalltalk28					= "SVM_9_Smalltalk28"				;//...jeden nikdy nev√≠, jak podl√≠ mohou b√Ωt...
+	Smalltalk29					= "SVM_9_Smalltalk29"				;//...proto≈æe je to v≈Øle Innosova...
 	Smalltalk30					= "SVM_9_Smalltalk30"				;//...jeho skutky byly jen...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_9_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_9_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ m˘ûu nauËit.
-	NoLearnYoureBetter			= "SVM_9_NoLearnYoureBetter"		;//NenÌ nic, co bych tÍ mohl jeötÍ nauËit. é·k p‚edËil svÈho uËitele.
-	YouLearnedSomething			= "SVM_9_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_9_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_9_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô m≈Ø≈æu nauƒçit.
+	NoLearnYoureBetter			= "SVM_9_NoLearnYoureBetter"		;//Nen√≠ nic, co bych tƒô mohl je≈°tƒô nauƒçit. ≈Ω√°k p√¢edƒçil sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_9_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_9_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_9_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_9_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_9_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_9_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_9_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_9_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_9_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_9_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_9_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_9_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_9_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_9_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_9_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_9_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_9_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_9_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_9_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_9_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö od kov·rny dostat na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_9_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_9_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_9_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_9_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_9_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_9_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_9_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_9_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_9_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_9_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_9_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_9_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_9_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_9_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_9_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_9_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° od kov√°rny dostat na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_9_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_9_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_9_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_9_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_9_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_9_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_9_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_9_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_9_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_9_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_9_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_9_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_9_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_9_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_9_Aargh_1"					;//Aargh
@@ -2101,221 +2101,221 @@ instance SVM_9 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_9_Addon_WrongArmor";				//Ty m·ö ale r·nu! OblÌkni si nÍco vhodnÍjöÌho!
-	ADDON_WRONGARMOR_SLD		= "SVM_9_ADDON_WRONGARMOR_SLD";			//Co to m·ö na sobÍ? A„ uû tÍ tu vidÌm ve zbroji!
-	ADDON_WRONGARMOR_MIL		= "SVM_9_ADDON_WRONGARMOR_MIL";			//Pracujeö pro kr·le, tak koukej nosit jeho zbroj! BÍû se p‚evlÌct!
-	ADDON_WRONGARMOR_KDF		= "SVM_9_ADDON_WRONGARMOR_KDF";			//TvÈ öaty se pro Ëlena naöeho ‚·du nehodÌ. BÍû se p‚evlÈci!
-	ADDON_NOARMOR_BDT			= "SVM_9_ADDON_ADDON_NOARMOR_BDT";		//Dyk na sobÍ nem·ö ani zbroj. Vypadni.
+	ADDON_WRONGARMOR			= "SVM_9_Addon_WrongArmor";				//Ty m√°≈° ale r√°nu! Obl√≠kni si nƒôco vhodnƒôj≈°√≠ho!
+	ADDON_WRONGARMOR_SLD		= "SVM_9_ADDON_WRONGARMOR_SLD";			//Co to m√°≈° na sobƒô? AƒÉ u≈æ tƒô tu vid√≠m ve zbroji!
+	ADDON_WRONGARMOR_MIL		= "SVM_9_ADDON_WRONGARMOR_MIL";			//Pracuje≈° pro kr√°le, tak koukej nosit jeho zbroj! Bƒô≈æ se p√¢evl√≠ct!
+	ADDON_WRONGARMOR_KDF		= "SVM_9_ADDON_WRONGARMOR_KDF";			//Tv√© ≈°aty se pro ƒçlena na≈°eho √¢√°du nehod√≠. Bƒô≈æ se p√¢evl√©ci!
+	ADDON_NOARMOR_BDT			= "SVM_9_ADDON_ADDON_NOARMOR_BDT";		//Dyk na sobƒô nem√°≈° ani zbroj. Vypadni.
 
-	ADDON_DIEBANDIT				= "SVM_9_ADDON_DIEBANDIT";				//Jsi na ‚adÍ, bandito!
-	ADDON_DIRTYPIRATE			= "SVM_9_ADDON_DIRTYPIRATE";			//Sem jsi nemÍl chodit, pir·te!
+	ADDON_DIEBANDIT				= "SVM_9_ADDON_DIEBANDIT";				//Jsi na √¢adƒô, bandito!
+	ADDON_DIRTYPIRATE			= "SVM_9_ADDON_DIRTYPIRATE";			//Sem jsi nemƒôl chodit, pir√°te!
 };
 
 instance SVM_10 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_10_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_10_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_10_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_10_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_10_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_10_IGetYouStill"				;//Uû zase TY!
-	DieEnemy					=	"SVM_10_DieEnemy"					;//Rozsek·m tÍ na kousky!
-	DieMonster					=	"SVM_10_DieMonster"					;//DalöÌ z tÍch vÍcÌ!
-	DirtyThief					=	"SVM_10_DirtyThief"					;//Ty mizernej zlodÍji!
-	HandsOff					=	"SVM_10_HandsOff"					;//Dej ty öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_10_SheepKiller"					;//Hej! Nech naöe ovce na pokoji!
-	SheepKillerMonster			=	"SVM_10_SheepKillerMonster"			;//Ta obluda vraûdÌ naöe ovce!
+	IGetYouStill				= 	"SVM_10_IGetYouStill"				;//U≈æ zase TY!
+	DieEnemy					=	"SVM_10_DieEnemy"					;//Rozsek√°m tƒô na kousky!
+	DieMonster					=	"SVM_10_DieMonster"					;//Dal≈°√≠ z tƒôch vƒôc√≠!
+	DirtyThief					=	"SVM_10_DirtyThief"					;//Ty mizernej zlodƒôji!
+	HandsOff					=	"SVM_10_HandsOff"					;//Dej ty ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_10_SheepKiller"					;//Hej! Nech na≈°e ovce na pokoji!
+	SheepKillerMonster			=	"SVM_10_SheepKillerMonster"			;//Ta obluda vra≈æd√≠ na≈°e ovce!
 	YouMurderer					=	"SVM_10_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_10_DieStupidBeast"				;//Co tam ta bestie prov·dÌ?
-	YouDareHitMe				=	"SVM_10_YouDareHitMe"				;//S·m sis o to ‚ekl!
-	YouAskedForIt				=	"SVM_10_YouAskedForIt"				;//¬ekl sis o to.
-	ThenIBeatYouOutOfHere		=	"SVM_10_ThenIBeatYouOutOfHere"		;//M·m dojem, ûe by nÍkter˝m lidem neuökodilo, kdyby poznali trochu tvrdosti.
-	WhatDidYouDoInThere			=	"SVM_10_WhatDidYouDoInThere"			;//Co tam dÍl·ö, co!?
-	WillYouStopFighting			=	"SVM_10_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_10_DieStupidBeast"				;//Co tam ta bestie prov√°d√≠?
+	YouDareHitMe				=	"SVM_10_YouDareHitMe"				;//S√°m sis o to √¢ekl!
+	YouAskedForIt				=	"SVM_10_YouAskedForIt"				;//√Çekl sis o to.
+	ThenIBeatYouOutOfHere		=	"SVM_10_ThenIBeatYouOutOfHere"		;//M√°m dojem, ≈æe by nƒôkter√Ωm lidem neu≈°kodilo, kdyby poznali trochu tvrdosti.
+	WhatDidYouDoInThere			=	"SVM_10_WhatDidYouDoInThere"			;//Co tam dƒôl√°≈°, co!?
+	WillYouStopFighting			=	"SVM_10_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_10_KillEnemy"					;//ChcÌpni!
+	KillEnemy					= 	"SVM_10_KillEnemy"					;//Chc√≠pni!
 	EnemyKilled					=	"SVM_10_EnemyKilled"					;//Takovej blbej bastard...
-	MonsterKilled				=	"SVM_10_MonsterKilled"				;//Dobr·, to na tebe bylo trochu moc, co, ty mizern· bestie!
-	ThiefDown					=	"SVM_10_ThiefDown"					;//P‚esta‡ strkat nos do m˝ch vÍcÌ - jasn˝?
-	rumfummlerDown				=	"SVM_10_rumfummlerDown"				;//HlÌdej si ty svoje ukoptÍn˝ prsty!
-	SheepAttackerDown			=	"SVM_10_SheepAttackerDown"			;//OkamûitÍ dej ty svoje umounÍn˝ pracky pryË od naöich ovcÌ!
-	KillMurderer				=	"SVM_10_KillMurderer"				;//ChcÌpni, ty vrahu!
-	StupidBeastKilled			=	"SVM_10_StupidBeastKilled"			;//Ta je ale zatracenÍ tup· stv˘ra!
-	NeverHitMeAgain				=	"SVM_10_NeverHitMeAgain"				;//Tohle uû vÌckr·t nezkouöej, k·mo!
-	YouBetterShouldHaveListened	=	"SVM_10_YouBetterShouldHaveListened"	;//Douf·m, ûe sis z toho vzal ponauËenÌ.
-	GetUpAndBeGone				=	"SVM_10_GetUpAndBeGone"				;//Vst·vej a vypadni odsud!
-	NeverEnterRoomAgain			=	"SVM_10_NeverEnterRoomAgain"			;//A„ uû tÍ tu nikdy nevidÌm - jasn˝?
-	ThereIsNoFightingHere		=	"SVM_10_ThereIsNoFightingHere"		;//J· jsem ten, kdo tady rozd·v· r·ny, rozumÌö?
+	MonsterKilled				=	"SVM_10_MonsterKilled"				;//Dobr√°, to na tebe bylo trochu moc, co, ty mizern√° bestie!
+	ThiefDown					=	"SVM_10_ThiefDown"					;//P√¢esta≈ï strkat nos do m√Ωch vƒôc√≠ - jasn√Ω?
+	rumfummlerDown				=	"SVM_10_rumfummlerDown"				;//Hl√≠dej si ty svoje ukoptƒôn√Ω prsty!
+	SheepAttackerDown			=	"SVM_10_SheepAttackerDown"			;//Okam≈æitƒô dej ty svoje umounƒôn√Ω pracky pryƒç od na≈°ich ovc√≠!
+	KillMurderer				=	"SVM_10_KillMurderer"				;//Chc√≠pni, ty vrahu!
+	StupidBeastKilled			=	"SVM_10_StupidBeastKilled"			;//Ta je ale zatracenƒô tup√° stv≈Øra!
+	NeverHitMeAgain				=	"SVM_10_NeverHitMeAgain"				;//Tohle u≈æ v√≠ckr√°t nezkou≈°ej, k√°mo!
+	YouBetterShouldHaveListened	=	"SVM_10_YouBetterShouldHaveListened"	;//Douf√°m, ≈æe sis z toho vzal ponauƒçen√≠.
+	GetUpAndBeGone				=	"SVM_10_GetUpAndBeGone"				;//Vst√°vej a vypadni odsud!
+	NeverEnterRoomAgain			=	"SVM_10_NeverEnterRoomAgain"			;//AƒÉ u≈æ tƒô tu nikdy nevid√≠m - jasn√Ω?
+	ThereIsNoFightingHere		=	"SVM_10_ThereIsNoFightingHere"		;//J√° jsem ten, kdo tady rozd√°v√° r√°ny, rozum√≠≈°?
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_10_SpareMe"						;//ProstÍ mÍ nech b˝t!
-	RunAway						= 	"SVM_10_RunAway"						;//Do hajzlu! Pad·m pryË!
+	SpareMe						=	"SVM_10_SpareMe"						;//Prostƒô mƒô nech b√Ωt!
+	RunAway						= 	"SVM_10_RunAway"						;//Do hajzlu! Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_10_Alarm"					;//POPLACH!
-	Guards						=	"SVM_10_Guards"					;//STR¡éE!
+	Guards						=	"SVM_10_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_10_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_10_GoodMonsterKill"			;//(vol·) Jo! Takhle se na to musÌ!
-	GoodKill					= 	"SVM_10_GoodKill"				;//(vol·) To je to, co si ta svinÍ zaslouûÌ!
+	GoodMonsterKill				=	"SVM_10_GoodMonsterKill"			;//(vol√°) Jo! Takhle se na to mus√≠!
+	GoodKill					= 	"SVM_10_GoodKill"				;//(vol√°) To je to, co si ta svinƒô zaslou≈æ√≠!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_10_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_10_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_10_RunCoward"				;//(k‚iËÌ) JeötÍ se uvidÌme!
+	RunCoward					=	"SVM_10_RunCoward"				;//(k√¢iƒç√≠) Je≈°tƒô se uvid√≠me!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_10_GetOutOfHere"			;//Ven!
-	WhyAreYouInHere				=	"SVM_10_WhyAreYouInHere"			;//Co tady chceö?!
+	WhyAreYouInHere				=	"SVM_10_WhyAreYouInHere"			;//Co tady chce≈°?!
 	YesGoOutOfHere				= 	"SVM_10_YesGoOutOfHere"			;//Jo, dej mu!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_10_WhatsThisSupposedToBe"	;//Co tady kolem Ëmuch·ö?
-	YouDisturbedMySlumber		=	"SVM_10_YouDisturbedMySlumber"	;//(vst·v·) Co je?
+	WhatsThisSupposedToBe		=	"SVM_10_WhatsThisSupposedToBe"	;//Co tady kolem ƒçmuch√°≈°?
+	YouDisturbedMySlumber		=	"SVM_10_YouDisturbedMySlumber"	;//(vst√°v√°) Co je?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_10_ITookYourGold"			;//DÌky za zlato, ty hrdino!
-	ShitNoGold					=	"SVM_10_ShitNoGold"				;//Ty mizernej bÌd·ku - nem·ö u sebe û·dnÈ zlato!
-	ITakeYourWeapon				=	"SVM_10_ITakeYourWeapon"			;//Asi si tuhle zbra‡ radÍji vezmu!
+	ITookYourGold				=	"SVM_10_ITookYourGold"			;//D√≠ky za zlato, ty hrdino!
+	ShitNoGold					=	"SVM_10_ShitNoGold"				;//Ty mizernej b√≠d√°ku - nem√°≈° u sebe ≈æ√°dn√© zlato!
+	ITakeYourWeapon				=	"SVM_10_ITakeYourWeapon"			;//Asi si tuhle zbra≈ï radƒôji vezmu!
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_10_WhatAreYouDoing"			;//(varovnÍ) Poslouchej! JeötÍ jednou a nÍjakou ti vrazÌm.
+	WhatAreYouDoing				=	"SVM_10_WhatAreYouDoing"			;//(varovnƒô) Poslouchej! Je≈°tƒô jednou a nƒôjakou ti vraz√≠m.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_10_LookingForTroubleAgain"	;//(agresivnÍ) Koledujeö si!
+	LookingForTroubleAgain		=	"SVM_10_LookingForTroubleAgain"	;//(agresivnƒô) Koleduje≈° si!
 																	 
-	StopMagic					=	"SVM_10_StopMagic"				;//P‚esta‡ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_10_ISaidStopMagic"			;//Chceö nakl·daËku? P‚esta‡ s tÌm uû!!!
-	WeaponDown					=	"SVM_10_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_10_ISaidWeaponDown"			;//Tak dej uû tu zatracenou zbra‡ pryË!
+	StopMagic					=	"SVM_10_StopMagic"				;//P√¢esta≈ï s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_10_ISaidStopMagic"			;//Chce≈° nakl√°daƒçku? P√¢esta≈ï s t√≠m u≈æ!!!
+	WeaponDown					=	"SVM_10_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_10_ISaidWeaponDown"			;//Tak dej u≈æ tu zatracenou zbra≈ï pryƒç!
 	WiseMove					=	"SVM_10_WiseMove"				;//Chytrej kluk!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_10_NextTimeYoureInForIt"	;//(pro sebe) UvidÌme p‚ÌötÍ.
+	NextTimeYoureInForIt		=	"SVM_10_NextTimeYoureInForIt"	;//(pro sebe) Uvid√≠me p√¢√≠≈°tƒô.
 	OhMyHead					=	"SVM_10_OhMyHead"				;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_10_TheresAFight"			;//(nedoËkavÍ) Aaa, boj!
-	OhMyGodItsAFight			=	"SVM_10_OhMyGodItsAFight"		;//(vystraöenÍ) BoûÌnku, boj!
-	GoodVictory					=	"SVM_10_GoodVictory"				;//(zl˝ smÌch) Dal jsi jim co proto!
-	NotBad						= 	"SVM_10_NotBad"					;//(souhlasnÍ) To nebylo öpatnÈ.
-	OhMyGodHesDown				=	"SVM_10_OhMyGodHesDown"			;//(pro sebe) M˘j boûe! Takov· krutost...
+	TheresAFight				=	"SVM_10_TheresAFight"			;//(nedoƒçkavƒô) Aaa, boj!
+	OhMyGodItsAFight			=	"SVM_10_OhMyGodItsAFight"		;//(vystra≈°enƒô) Bo≈æ√≠nku, boj!
+	GoodVictory					=	"SVM_10_GoodVictory"				;//(zl√Ω sm√≠ch) Dal jsi jim co proto!
+	NotBad						= 	"SVM_10_NotBad"					;//(souhlasnƒô) To nebylo ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_10_OhMyGodHesDown"			;//(pro sebe) M≈Øj bo≈æe! Takov√° krutost...
 	CheerFriend01				=	"SVM_10_CheerFriend01"			;//Jo, nandej mu to!
-	CheerFriend02				=	"SVM_10_CheerFriend02"			;//Ukaû mu!
+	CheerFriend02				=	"SVM_10_CheerFriend02"			;//Uka≈æ mu!
 	CheerFriend03				=	"SVM_10_CheerFriend03"			;//Doraz ho!
-	Ooh01						=	"SVM_10_Ooh01"					;//Bra‡ se!
-	Ooh02						=	"SVM_10_Ooh02"					;//PokraËuj, vra„ mu to!
-	Ooh03						=	"SVM_10_Ooh03"					;//Au! Takov· pecka!
+	Ooh01						=	"SVM_10_Ooh01"					;//Bra≈ï se!
+	Ooh02						=	"SVM_10_Ooh02"					;//Pokraƒçuj, vraƒÉ mu to!
+	Ooh03						=	"SVM_10_Ooh03"					;//Au! Takov√° pecka!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_10_WhatWasThat"				;//(pro sebe, vst·v·) Sakra, co bylo zas TOHLE?!
+	WhatWasThat					= "SVM_10_WhatWasThat"				;//(pro sebe, vst√°v√°) Sakra, co bylo zas TOHLE?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_10_GetOutOfMyBed"				;//Vypadni z mÈ postele!
-	Awake						= "SVM_10_Awake"						;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_10_GetOutOfMyBed"				;//Vypadni z m√© postele!
+	Awake						= "SVM_10_Awake"						;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_10_ABS_COMMANDER"    ;//Tak velitel dal ty vÍci do po‚·dku.
-	ABS_MONASTERY    = "SVM_10_ABS_MONASTERY"    ;//Tak jsi uËinil pok·nÌ u otce Parlana.
-	ABS_FARM       = "SVM_10_ABS_FARM"        ;//Slyöel jsem, ûe Lee dal ty vÍci do po‚·dku.
-	ABS_GOOD       = "SVM_10_ABS_GOOD"       ;//To je spravedlivÈ.
+	ABS_COMMANDER     = "SVM_10_ABS_COMMANDER"    ;//Tak velitel dal ty vƒôci do po√¢√°dku.
+	ABS_MONASTERY    = "SVM_10_ABS_MONASTERY"    ;//Tak jsi uƒçinil pok√°n√≠ u otce Parlana.
+	ABS_FARM       = "SVM_10_ABS_FARM"        ;//Sly≈°el jsem, ≈æe Lee dal ty vƒôci do po√¢√°dku.
+	ABS_GOOD       = "SVM_10_ABS_GOOD"       ;//To je spravedliv√©.
 	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_10_SHEEPKILLER_CRIME"   ;//VraûdÍnÌ ovcÌ uû bylo dost! Ztra„ se!
-	ATTACK_CRIME     = "SVM_10_ATTACK_CRIME"    ;//Jsi gr·zl - ztra„ se!
- 	THEFT_CRIME      = "SVM_10_THEFT_CRIME"    ;//Zatracenej zlodÍji! Uû tÍ m·m pr·vÍ tak dost!
+	SHEEPKILLER_CRIME   = "SVM_10_SHEEPKILLER_CRIME"   ;//Vra≈ædƒôn√≠ ovc√≠ u≈æ bylo dost! ZtraƒÉ se!
+	ATTACK_CRIME     = "SVM_10_ATTACK_CRIME"    ;//Jsi gr√°zl - ztraƒÉ se!
+ 	THEFT_CRIME      = "SVM_10_THEFT_CRIME"    ;//Zatracenej zlodƒôji! U≈æ tƒô m√°m pr√°vƒô tak dost!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_10_PAL_CITY_CRIME"   ;//Od paladina bych oËek·val nÍco jinÈho! To se nebude lordu Hagenovi lÌbit.
- 	MIL_CITY_CRIME     = "SVM_10_MIL_CITY_CRIME"   ;//Jak se nÍkdo jako ty mohl dostat k mÍstsk˝m str·ûÌm? Lord Andre ti to jeötÍ spoËÌt·!
- 	CITY_CRIME       = "SVM_10_CITY_CRIME"    ;//Lord Andre se o tvÈm chov·nÌ dozvÌ!
+ 	PAL_CITY_CRIME     = "SVM_10_PAL_CITY_CRIME"   ;//Od paladina bych oƒçek√°val nƒôco jin√©ho! To se nebude lordu Hagenovi l√≠bit.
+ 	MIL_CITY_CRIME     = "SVM_10_MIL_CITY_CRIME"   ;//Jak se nƒôkdo jako ty mohl dostat k mƒôstsk√Ωm str√°≈æ√≠m? Lord Andre ti to je≈°tƒô spoƒç√≠t√°!
+ 	CITY_CRIME       = "SVM_10_CITY_CRIME"    ;//Lord Andre se o tv√©m chov√°n√≠ dozv√≠!
 	// -------------------------
-	MONA_CRIME       = "SVM_10_MONA_CRIME"    ;//Otec Parlan nebude mÌt z tvÈho poËÌn·nÌ û·dnou radost!
-	FARM_CRIME       = "SVM_10_FARM_CRIME"    ;//Lee to nenech· jen tak!
-	OC_CRIME       = "SVM_10_OC_CRIME"     ;//Velitel Garond nebude mÌt radost, aû to uslyöÌ - za to zaplatÌö!
+	MONA_CRIME       = "SVM_10_MONA_CRIME"    ;//Otec Parlan nebude m√≠t z tv√©ho poƒç√≠n√°n√≠ ≈æ√°dnou radost!
+	FARM_CRIME       = "SVM_10_FARM_CRIME"    ;//Lee to nenech√° jen tak!
+	OC_CRIME       = "SVM_10_OC_CRIME"     ;//Velitel Garond nebude m√≠t radost, a≈æ to usly≈°√≠ - za to zaplat√≠≈°!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_10_TOUGHGUY_ATTACKLOST"		;//M·ö docela sÌlu... co ûe jsi to chtÍl?
-	TOUGHGUY_ATTACKWON			= "SVM_10_TOUGHGUY_ATTACKWON"		;//(dom˝ölivÍ) NÍjakÈ dalöÌ ot·zky?
-	TOUGHGUY_PLAYERATTACK		= "SVM_10_TOUGHGUY_PLAYERATTACK"		;//Uû zase TY!
+	TOUGHGUY_ATTACKLOST			= "SVM_10_TOUGHGUY_ATTACKLOST"		;//M√°≈° docela s√≠lu... co ≈æe jsi to chtƒôl?
+	TOUGHGUY_ATTACKWON			= "SVM_10_TOUGHGUY_ATTACKWON"		;//(dom√Ω≈°livƒô) Nƒôjak√© dal≈°√≠ ot√°zky?
+	TOUGHGUY_PLAYERATTACK		= "SVM_10_TOUGHGUY_PLAYERATTACK"		;//U≈æ zase TY!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_10_GOLD_1000"					;//1000 zlat˝ch.
-	GOLD_950					= "SVM_10_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_10_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_10_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_10_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_10_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_10_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_10_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_10_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_10_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_10_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_10_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_10_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_10_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_10_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_10_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_10_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_10_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_10_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_10_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_10_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_10_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_10_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_10_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_10_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_10_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_10_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_10_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_10_GOLD_1000"					;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_10_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_10_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_10_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_10_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_10_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_10_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_10_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_10_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_10_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_10_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_10_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_10_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_10_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_10_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_10_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_10_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_10_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_10_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_10_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_10_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_10_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_10_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_10_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_10_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_10_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_10_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_10_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
 	Smalltalk01					= "SVM_10_Smalltalk01"				;//...je mi to jedno...
-	Smalltalk02					= "SVM_10_Smalltalk02"				;//...nikdo to nechce vÍdÍt...
-	Smalltalk03					= "SVM_10_Smalltalk03"				;//...bylo to jeho rozhodnutÌ, nebo ne...
-	Smalltalk04					= "SVM_10_Smalltalk04"				;//...û·dn˝ n·vrh, ‚ekni...
-	Smalltalk05					= "SVM_10_Smalltalk05"				;//...nem·m s tÌm nic spoleËnÈho...
-	Smalltalk06					= "SVM_10_Smalltalk06"				;//...nem·m na takovÈ vÍci Ëas...
-	Smalltalk07					= "SVM_10_Smalltalk07"				;//...nem˘ûu se z toho jen tak vyvlÌknout...
-	Smalltalk08					= "SVM_10_Smalltalk08"				;//...nebudeö mi ‚Ìkat...
-	Smalltalk09					= "SVM_10_Smalltalk09"				;//...byl tam, udÍlal to...
-	Smalltalk10					= "SVM_10_Smalltalk10"				;//...vÍci, o kter˝ch ti m˘ûu ‚Ìct...
-	Smalltalk11					= "SVM_10_Smalltalk11"				;//...na to se nem˘ûeö spolÈhat...
-	Smalltalk12					= "SVM_10_Smalltalk12"				;//...j· to ‚Ìkal uû d·vno...
-	Smalltalk13					= "SVM_10_Smalltalk13"				;//...a je toho vÌc, vÍ‚ mi...
-	Smalltalk14					= "SVM_10_Smalltalk14"				;//...nÍkterÈ vÍci se vracÌ v plnÈ mÌ‚e...
-	Smalltalk15					= "SVM_10_Smalltalk15"				;//...‚ekni, ûe to nenÌ pravda...
-	Smalltalk16					= "SVM_10_Smalltalk16"				;//...d‚Ìve Ëi pozdÍji by k tomu doölo...
-	Smalltalk17					= "SVM_10_Smalltalk17"				;//...v·ûnÍ o tom mÍl vÍdÍt vÌc...
-	Smalltalk18					= "SVM_10_Smalltalk18"				;//...to uû nic nezmÍnÌ...
-	Smalltalk19					= "SVM_10_Smalltalk19"				;//...nenÌ to û·dnÈ tajemstvÌ...
-	Smalltalk20					= "SVM_10_Smalltalk20"				;//...nenÌ to û·dn˝ velk˝ obchod...
-	Smalltalk21					= "SVM_10_Smalltalk21"				;//...myslel si, ûe je to snadnÈ jak...
-	Smalltalk22					= "SVM_10_Smalltalk22"				;//...nikdo ve skuteËnosti nechce slyöet...
+	Smalltalk02					= "SVM_10_Smalltalk02"				;//...nikdo to nechce vƒôdƒôt...
+	Smalltalk03					= "SVM_10_Smalltalk03"				;//...bylo to jeho rozhodnut√≠, nebo ne...
+	Smalltalk04					= "SVM_10_Smalltalk04"				;//...≈æ√°dn√Ω n√°vrh, √¢ekni...
+	Smalltalk05					= "SVM_10_Smalltalk05"				;//...nem√°m s t√≠m nic spoleƒçn√©ho...
+	Smalltalk06					= "SVM_10_Smalltalk06"				;//...nem√°m na takov√© vƒôci ƒças...
+	Smalltalk07					= "SVM_10_Smalltalk07"				;//...nem≈Ø≈æu se z toho jen tak vyvl√≠knout...
+	Smalltalk08					= "SVM_10_Smalltalk08"				;//...nebude≈° mi √¢√≠kat...
+	Smalltalk09					= "SVM_10_Smalltalk09"				;//...byl tam, udƒôlal to...
+	Smalltalk10					= "SVM_10_Smalltalk10"				;//...vƒôci, o kter√Ωch ti m≈Ø≈æu √¢√≠ct...
+	Smalltalk11					= "SVM_10_Smalltalk11"				;//...na to se nem≈Ø≈æe≈° spol√©hat...
+	Smalltalk12					= "SVM_10_Smalltalk12"				;//...j√° to √¢√≠kal u≈æ d√°vno...
+	Smalltalk13					= "SVM_10_Smalltalk13"				;//...a je toho v√≠c, vƒô√¢ mi...
+	Smalltalk14					= "SVM_10_Smalltalk14"				;//...nƒôkter√© vƒôci se vrac√≠ v pln√© m√≠√¢e...
+	Smalltalk15					= "SVM_10_Smalltalk15"				;//...√¢ekni, ≈æe to nen√≠ pravda...
+	Smalltalk16					= "SVM_10_Smalltalk16"				;//...d√¢√≠ve ƒçi pozdƒôji by k tomu do≈°lo...
+	Smalltalk17					= "SVM_10_Smalltalk17"				;//...v√°≈ænƒô o tom mƒôl vƒôdƒôt v√≠c...
+	Smalltalk18					= "SVM_10_Smalltalk18"				;//...to u≈æ nic nezmƒôn√≠...
+	Smalltalk19					= "SVM_10_Smalltalk19"				;//...nen√≠ to ≈æ√°dn√© tajemstv√≠...
+	Smalltalk20					= "SVM_10_Smalltalk20"				;//...nen√≠ to ≈æ√°dn√Ω velk√Ω obchod...
+	Smalltalk21					= "SVM_10_Smalltalk21"				;//...myslel si, ≈æe je to snadn√© jak...
+	Smalltalk22					= "SVM_10_Smalltalk22"				;//...nikdo ve skuteƒçnosti nechce sly≈°et...
 	Smalltalk23					= "SVM_10_Smalltalk23"				;//...a to je pravda...
-	Smalltalk24					= "SVM_10_Smalltalk24"				;//...staËÌ poslouchat, co ‚ÌkajÌ...
+	Smalltalk24					= "SVM_10_Smalltalk24"				;//...staƒç√≠ poslouchat, co √¢√≠kaj√≠...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                      
-	Smalltalk25					= "SVM_10_Smalltalk25"				;//...kdyby nebylo n·s, dopadlo by to jinak...
-	Smalltalk26					= "SVM_10_Smalltalk26"				;//...prostÍ pot‚ebuje vÌc zkuöenostÌ...
-	Smalltalk27					= "SVM_10_Smalltalk27"				;//...co on vÌ o sluûbÍ...
+	Smalltalk25					= "SVM_10_Smalltalk25"				;//...kdyby nebylo n√°s, dopadlo by to jinak...
+	Smalltalk26					= "SVM_10_Smalltalk26"				;//...prostƒô pot√¢ebuje v√≠c zku≈°enost√≠...
+	Smalltalk27					= "SVM_10_Smalltalk27"				;//...co on v√≠ o slu≈æbƒô...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                      
-	Smalltalk28					= "SVM_10_Smalltalk28"				;//...Innos vymÍ‚Ì spravedliv˝ trest...
-	Smalltalk29					= "SVM_10_Smalltalk29"				;//...cesta poctivosti je dlouh· a trnit·...
-	Smalltalk30					= "SVM_10_Smalltalk30"				;//...pouze Innos rozhodne, co je spr·vnÈ a co ne...
+	Smalltalk28					= "SVM_10_Smalltalk28"				;//...Innos vymƒô√¢√≠ spravedliv√Ω trest...
+	Smalltalk29					= "SVM_10_Smalltalk29"				;//...cesta poctivosti je dlouh√° a trnit√°...
+	Smalltalk30					= "SVM_10_Smalltalk30"				;//...pouze Innos rozhodne, co je spr√°vn√© a co ne...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_10_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_10_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_10_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_10_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_10_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_10_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_10_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_10_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_10_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_10_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_10_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_10_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_10_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_10_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_10_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_10_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_10_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_10_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_10_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_10_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_10_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_10_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_10_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_10_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_10_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_10_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_10_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_10_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_10_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_10_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_10_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_10_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_10_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_10_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_10_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_10_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_10_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_10_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_10_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_10_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_10_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_10_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_10_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_10_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_10_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_10_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_10_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_10_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_10_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_10_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_10_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_10_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_10_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_10_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_10_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_10_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_10_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_10_Aargh_1"					;//Aargh
@@ -2324,222 +2324,222 @@ instance SVM_10 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_10_Addon_WrongArmor";			//Co to m·ö na sobÍ? VÌö, jak vypad·ö? Dej mi pokoj.
-	ADDON_WRONGARMOR_SLD		= "SVM_10_ADDON_WRONGARMOR_SLD";		//Jestli pat‚Ìö k n·m, mÍl by ses podle toho i oblÌkat. Tak si na sebe vem nÍco lepöÌho!
-	ADDON_WRONGARMOR_MIL		= "SVM_10_ADDON_WRONGARMOR_MIL";		//Kdyû ti nÍkdo d· kr·lovskou zbroj, znamen· to, ûe ji m·ö nosit.
-	ADDON_WRONGARMOR_KDF		= "SVM_10_ADDON_WRONGARMOR_KDF";		//Pokud odmÌtneö naöe roucho, odmÌt·ö tÌm i Innose. Zamysli se nad tÌm.
-	ADDON_NOARMOR_BDT			= "SVM_10_ADDON_ADDON_NOARMOR_BDT";		//ProË bych se mÍl bavit s nÍk˝m, kdo nem· ani na po‚·dnou zbroj?
+	ADDON_WRONGARMOR			= "SVM_10_Addon_WrongArmor";			//Co to m√°≈° na sobƒô? V√≠≈°, jak vypad√°≈°? Dej mi pokoj.
+	ADDON_WRONGARMOR_SLD		= "SVM_10_ADDON_WRONGARMOR_SLD";		//Jestli pat√¢√≠≈° k n√°m, mƒôl by ses podle toho i obl√≠kat. Tak si na sebe vem nƒôco lep≈°√≠ho!
+	ADDON_WRONGARMOR_MIL		= "SVM_10_ADDON_WRONGARMOR_MIL";		//Kdy≈æ ti nƒôkdo d√° kr√°lovskou zbroj, znamen√° to, ≈æe ji m√°≈° nosit.
+	ADDON_WRONGARMOR_KDF		= "SVM_10_ADDON_WRONGARMOR_KDF";		//Pokud odm√≠tne≈° na≈°e roucho, odm√≠t√°≈° t√≠m i Innose. Zamysli se nad t√≠m.
+	ADDON_NOARMOR_BDT			= "SVM_10_ADDON_ADDON_NOARMOR_BDT";		//Proƒç bych se mƒôl bavit s nƒôk√Ωm, kdo nem√° ani na po√¢√°dnou zbroj?
 
 	ADDON_DIEBANDIT				= "SVM_10_ADDON_DIEBANDIT";				//Ty odpornej bandito!
-	ADDON_DIRTYPIRATE			= "SVM_10_ADDON_DIRTYPIRATE";			//Ty hnusnej pir·te!
+	ADDON_DIRTYPIRATE			= "SVM_10_ADDON_DIRTYPIRATE";			//Ty hnusnej pir√°te!
 };
 
 instance SVM_11 (C_SVM)
 {
-	SC_HeyWaitASecond			= 	"SVM_11_Addon_HeyWaitASecond"			;//(vol·) PoËkej!
+	SC_HeyWaitASecond			= 	"SVM_11_Addon_HeyWaitASecond"			;//(vol√°) Poƒçkej!
 	
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_11_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_11_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_11_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_11_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_11_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_11_IGetYouStill"				;//Tak jsem tÍ p‚ece jen dostal!
-	DieEnemy					=	"SVM_11_DieEnemy"					;//S·m sis o to ‚ekl!
-	DieMonster					=	"SVM_11_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_11_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_11_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_11_SheepKiller"					;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_11_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	IGetYouStill				= 	"SVM_11_IGetYouStill"				;//Tak jsem tƒô p√¢ece jen dostal!
+	DieEnemy					=	"SVM_11_DieEnemy"					;//S√°m sis o to √¢ekl!
+	DieMonster					=	"SVM_11_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_11_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_11_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_11_SheepKiller"					;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_11_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_11_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_11_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_11_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_11_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_11_ThenIBeatYouOutOfHere"		;//Tak to tÍ odsud budu muset VYKOPAT!
-	WhatDidYouDoInThere			=	"SVM_11_WhatDidYouDoInThere"			;//Tak co jsi tam teda dÍlal, no!?
-	WillYouStopFighting			=	"SVM_11_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_11_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_11_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_11_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_11_ThenIBeatYouOutOfHere"		;//Tak to tƒô odsud budu muset VYKOPAT!
+	WhatDidYouDoInThere			=	"SVM_11_WhatDidYouDoInThere"			;//Tak co jsi tam teda dƒôlal, no!?
+	WillYouStopFighting			=	"SVM_11_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_11_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_11_EnemyKilled"					;//Trochu velk˝ sousto, co, ty b‚Ìdile!
-	MonsterKilled				=	"SVM_11_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_11_ThiefDown"					;//Uû se mÍ nikdy nepokouöej okr·st!
-	rumfummlerDown				=	"SVM_11_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_11_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_11_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_11_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_11_NeverHitMeAgain"				;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_11_YouBetterShouldHaveListened"	;//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_11_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_11_NeverEnterRoomAgain"			;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_11_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö? Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_11_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_11_EnemyKilled"					;//Trochu velk√Ω sousto, co, ty b√¢√≠dile!
+	MonsterKilled				=	"SVM_11_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_11_ThiefDown"					;//U≈æ se mƒô nikdy nepokou≈°ej okr√°st!
+	rumfummlerDown				=	"SVM_11_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_11_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_11_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_11_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_11_NeverHitMeAgain"				;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_11_YouBetterShouldHaveListened"	;//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_11_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_11_NeverEnterRoomAgain"			;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_11_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°? Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_11_SpareMe"						;//ProstÍ mÍ nech b˝t!
-	RunAway						= 	"SVM_11_RunAway"						;//Do hajzlu! Pad·m pryË!
+	SpareMe						=	"SVM_11_SpareMe"						;//Prostƒô mƒô nech b√Ωt!
+	RunAway						= 	"SVM_11_RunAway"						;//Do hajzlu! Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_11_Alarm"						;//POPLACH!
-	Guards						=	"SVM_11_Guards"						;//STR¡éE!
+	Guards						=	"SVM_11_Guards"						;//STR√Å≈ΩE!
 	Help						=	"SVM_11_Help"						;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_11_GoodMonsterKill"				;//(vol·) Dobr· pr·ce - o jednu öpinavou bestii mÌ‡!
-	GoodKill					= 	"SVM_11_GoodKill"					;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_11_GoodMonsterKill"				;//(vol√°) Dobr√° pr√°ce - o jednu ≈°pinavou bestii m√≠≈ï!
+	GoodKill					= 	"SVM_11_GoodKill"					;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_11_NOTNOW"						;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_11_NOTNOW"						;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_11_RunCoward"					;//(hlasitÍ k‚iËÌ) Hej, st˘j, ty öpinavËe!
+	RunCoward					=	"SVM_11_RunCoward"					;//(hlasitƒô k√¢iƒç√≠) Hej, st≈Øj, ty ≈°pinavƒçe!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_11_GetOutOfHere"				;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_11_WhyAreYouInHere"				;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_11_WhyAreYouInHere"				;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_11_YesGoOutOfHere"				;//Jo, pakuj se!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_11_WhatsThisSupposedToBe"		;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_11_YouDisturbedMySlumber"		;//(probudÌ se) K Ëertu, co se dÍje?
+	WhatsThisSupposedToBe		=	"SVM_11_WhatsThisSupposedToBe"		;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_11_YouDisturbedMySlumber"		;//(probud√≠ se) K ƒçertu, co se dƒôje?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_11_ITookYourGold"				;//Zlato! Fajn, to si vezmu - jen tak pro zaË·tek.
-	ShitNoGold					=	"SVM_11_ShitNoGold"					;//Ty u sebe nem·ö û·dnÈ zlato?
-	ITakeYourWeapon				=	"SVM_11_ITakeYourWeapon"				;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_11_ITookYourGold"				;//Zlato! Fajn, to si vezmu - jen tak pro zaƒç√°tek.
+	ShitNoGold					=	"SVM_11_ShitNoGold"					;//Ty u sebe nem√°≈° ≈æ√°dn√© zlato?
+	ITakeYourWeapon				=	"SVM_11_ITakeYourWeapon"				;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_11_WhatAreYouDoing"				;//(varovnÍ) Hej! Dej si bacha!
+	WhatAreYouDoing				=	"SVM_11_WhatAreYouDoing"				;//(varovnƒô) Hej! Dej si bacha!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_11_LookingForTroubleAgain"		;//(agresivnÍ) JeötÍ nem·ö dost?
-	StopMagic					=	"SVM_11_StopMagic"					;//Nep‚ibliûuj se ke mnÍ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_11_ISaidStopMagic"				;//P‚esta‡ s tou magiÌ! M·ö snad nÍco s uöima!?
-	WeaponDown					=	"SVM_11_WeaponDown"					;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_11_ISaidWeaponDown"				;//Seö snad hluchej, nebo co? ¬ekl jsem: Dej pryË tu zbra‡!
+	LookingForTroubleAgain		=	"SVM_11_LookingForTroubleAgain"		;//(agresivnƒô) Je≈°tƒô nem√°≈° dost?
+	StopMagic					=	"SVM_11_StopMagic"					;//Nep√¢ibli≈æuj se ke mnƒô s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_11_ISaidStopMagic"				;//P√¢esta≈ï s tou magi√≠! M√°≈° snad nƒôco s u≈°ima!?
+	WeaponDown					=	"SVM_11_WeaponDown"					;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_11_ISaidWeaponDown"				;//Se≈° snad hluchej, nebo co? √Çekl jsem: Dej pryƒç tu zbra≈ï!
 	WiseMove					=	"SVM_11_WiseMove"					;//Ani to nebolelo, co?
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_11_NextTimeYoureInForIt"		;//(pro sebe) JeötÍ se uvidÌ.
+	NextTimeYoureInForIt		=	"SVM_11_NextTimeYoureInForIt"		;//(pro sebe) Je≈°tƒô se uvid√≠.
 	OhMyHead					=	"SVM_11_OhMyHead"					;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_11_TheresAFight"				;//(dychtivÍ) KoneËnÍ se nÍco dÍje!
-	OhMyGodItsAFight			=	"SVM_11_OhMyGodItsAFight"			;//(vystraöenÍ) Vyml·tÌ si navz·jem mozky z hlavy.
-	GoodVictory					=	"SVM_11_GoodVictory"					;//(zl˝ smÌch) Koledoval si o to!
-	NotBad						= 	"SVM_11_NotBad"						;//(souhlasnÍ) To nebylo v˘bec öpatnÈ.
-	OhMyGodHesDown				=	"SVM_11_OhMyGodHesDown"				;//(pro sebe) Takov˝ surovec...
+	TheresAFight				=	"SVM_11_TheresAFight"				;//(dychtivƒô) Koneƒçnƒô se nƒôco dƒôje!
+	OhMyGodItsAFight			=	"SVM_11_OhMyGodItsAFight"			;//(vystra≈°enƒô) Vyml√°t√≠ si navz√°jem mozky z hlavy.
+	GoodVictory					=	"SVM_11_GoodVictory"					;//(zl√Ω sm√≠ch) Koledoval si o to!
+	NotBad						= 	"SVM_11_NotBad"						;//(souhlasnƒô) To nebylo v≈Øbec ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_11_OhMyGodHesDown"				;//(pro sebe) Takov√Ω surovec...
 	CheerFriend01				=	"SVM_11_CheerFriend01"				;//Jo, to je ono!
-	CheerFriend02				=	"SVM_11_CheerFriend02"				;//Tak na co Ëek·ö?
-	CheerFriend03				=	"SVM_11_CheerFriend03"				;//V˝bornÍ!
+	CheerFriend02				=	"SVM_11_CheerFriend02"				;//Tak na co ƒçek√°≈°?
+	CheerFriend03				=	"SVM_11_CheerFriend03"				;//V√Ωbornƒô!
 	Ooh01						=	"SVM_11_Ooh01"						;//Jen se z toho nezvencni!
-	Ooh02						=	"SVM_11_Ooh02"						;//Ukaû mu, kdo je tady öÈf!
+	Ooh02						=	"SVM_11_Ooh02"						;//Uka≈æ mu, kdo je tady ≈°√©f!
 	Ooh03						=	"SVM_11_Ooh03"						;//Do hajzlu!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_11_WhatWasThat"					;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_11_WhatWasThat"					;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_11_GetOutOfMyBed"					;//Vypadni z mÈ postele!
-	Awake						= "SVM_11_Awake"							;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_11_GetOutOfMyBed"					;//Vypadni z m√© postele!
+	Awake						= "SVM_11_Awake"							;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_11_ABS_COMMANDER"					;//Slyöel jsem, ûe jsi zaöel za velitelem a dal vÍci do po‚·dku.
-	ABS_MONASTERY				= "SVM_11_ABS_MONASTERY"					;//Slyöel jsem, ûe jsi zaöel za otcem Parlanem a vyzpovÌdal ses mu ze sv˝ch h‚Ìch˘.
-	ABS_FARM					= "SVM_11_ABS_FARM"						;//¬Ìk· se, ûe jsi zaöel za Leem a uklidnil situaci.
-	ABS_GOOD					= "SVM_11_ABS_GOOD"						;//To je dob‚e.
+	ABS_COMMANDER				= "SVM_11_ABS_COMMANDER"					;//Sly≈°el jsem, ≈æe jsi za≈°el za velitelem a dal vƒôci do po√¢√°dku.
+	ABS_MONASTERY				= "SVM_11_ABS_MONASTERY"					;//Sly≈°el jsem, ≈æe jsi za≈°el za otcem Parlanem a vyzpov√≠dal ses mu ze sv√Ωch h√¢√≠ch≈Ø.
+	ABS_FARM					= "SVM_11_ABS_FARM"						;//√Ç√≠k√° se, ≈æe jsi za≈°el za Leem a uklidnil situaci.
+	ABS_GOOD					= "SVM_11_ABS_GOOD"						;//To je dob√¢e.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_11_SHEEPKILLER_CRIME"				;//Takhle vraûdit naöe ovce! Vypadni, vole!
-	ATTACK_CRIME				= "SVM_11_ATTACK_CRIME"					;//S mizernejma gr·zlama se nebavim!
-	THEFT_CRIME					= "SVM_11_THEFT_CRIME"					;//Jdi mi z oËÌ, ty öpinavej zlodÍji!
+	SHEEPKILLER_CRIME			= "SVM_11_SHEEPKILLER_CRIME"				;//Takhle vra≈ædit na≈°e ovce! Vypadni, vole!
+	ATTACK_CRIME				= "SVM_11_ATTACK_CRIME"					;//S mizernejma gr√°zlama se nebavim!
+	THEFT_CRIME					= "SVM_11_THEFT_CRIME"					;//Jdi mi z oƒç√≠, ty ≈°pinavej zlodƒôji!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_11_PAL_CITY_CRIME"				;//Jsi ostudou svÈho ‚·du! Lord Hagen se bude zlobit!
-	MIL_CITY_CRIME				= "SVM_11_MIL_CITY_CRIME"				;//Jsi ostudou mÍstsk˝ch str·ûÌ! Lord Andre tÍ jeötÍ nauËÌ zp˘sob˘m!
-	CITY_CRIME					= "SVM_11_CITY_CRIME"					;//Lord Andre se dozvÌ o tom, cos provedl!
+	PAL_CITY_CRIME				= "SVM_11_PAL_CITY_CRIME"				;//Jsi ostudou sv√©ho √¢√°du! Lord Hagen se bude zlobit!
+	MIL_CITY_CRIME				= "SVM_11_MIL_CITY_CRIME"				;//Jsi ostudou mƒôstsk√Ωch str√°≈æ√≠! Lord Andre tƒô je≈°tƒô nauƒç√≠ zp≈Øsob≈Øm!
+	CITY_CRIME					= "SVM_11_CITY_CRIME"					;//Lord Andre se dozv√≠ o tom, cos provedl!
 	// -------------------------
-	MONA_CRIME					= "SVM_11_MONA_CRIME"					;//Otec Parlan o tom neuslyöÌ r·d!
-	FARM_CRIME					= "SVM_11_FARM_CRIME"					;//Lee ti d· co proto! JeötÍ uvidÌö, co sis nadrobil!
-	OC_CRIME					= "SVM_11_OC_CRIME"						;//Velitel Garond po tobÍ bude chtÌt vysvÍtlenÌ!
+	MONA_CRIME					= "SVM_11_MONA_CRIME"					;//Otec Parlan o tom neusly≈°√≠ r√°d!
+	FARM_CRIME					= "SVM_11_FARM_CRIME"					;//Lee ti d√° co proto! Je≈°tƒô uvid√≠≈°, co sis nadrobil!
+	OC_CRIME					= "SVM_11_OC_CRIME"						;//Velitel Garond po tobƒô bude cht√≠t vysvƒôtlen√≠!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_11_TOUGHGUY_ATTACKLOST"			;//Tak dobr·, dobr·, vyhr·l jsi. Co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_11_TOUGHGUY_ATTACKWON"			;//(nafoukanÍ) M·m ti znovu uk·zat, kdo je tady p·nem?
-	TOUGHGUY_PLAYERATTACK		= "SVM_11_TOUGHGUY_PLAYERATTACK"			;//ZkouöÌö to na mÍ znovu, co?
+	TOUGHGUY_ATTACKLOST			= "SVM_11_TOUGHGUY_ATTACKLOST"			;//Tak dobr√°, dobr√°, vyhr√°l jsi. Co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_11_TOUGHGUY_ATTACKWON"			;//(nafoukanƒô) M√°m ti znovu uk√°zat, kdo je tady p√°nem?
+	TOUGHGUY_PLAYERATTACK		= "SVM_11_TOUGHGUY_PLAYERATTACK"			;//Zkou≈°√≠≈° to na mƒô znovu, co?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_11_GOLD_1000"						;//1000 zlat˝ch.
-	GOLD_950					= "SVM_11_GOLD_950"						;//950 zlat˝ch.
-	GOLD_900					= "SVM_11_GOLD_900"						;//900 zlat˝ch.
-	GOLD_850					= "SVM_11_GOLD_850"						;//850 zlat˝ch.
-	GOLD_800					= "SVM_11_GOLD_800"						;//800 zlat˝ch.
-	GOLD_750					= "SVM_11_GOLD_750"						;//750 zlat˝ch.
-	GOLD_700					= "SVM_11_GOLD_700"						;//700 zlat˝ch.
-	GOLD_650					= "SVM_11_GOLD_650"						;//650 zlat˝ch.
-	GOLD_600					= "SVM_11_GOLD_600"						;//600 zlat˝ch.
-	GOLD_550					= "SVM_11_GOLD_550"						;//550 zlat˝ch.
-	GOLD_500					= "SVM_11_GOLD_500"						;//500 zlat˝ch.
-	GOLD_450					= "SVM_11_GOLD_450"						;//450 zlat˝ch.
-	GOLD_400					= "SVM_11_GOLD_400"						;//400 zlat˝ch.
-	GOLD_350					= "SVM_11_GOLD_350"						;//350 zlat˝ch.
-	GOLD_300					= "SVM_11_GOLD_300"						;//300 zlat˝ch.
-	GOLD_250					= "SVM_11_GOLD_250"						;//250 zlat˝ch.
-	GOLD_200					= "SVM_11_GOLD_200"						;//200 zlat˝ch.
-	GOLD_150					= "SVM_11_GOLD_150"						;//150 zlat˝ch.
-	GOLD_100					= "SVM_11_GOLD_100"						;//100 zlat˝ch.
-	GOLD_90						= "SVM_11_GOLD_90"						;//90 zlat˝ch.
-	GOLD_80						= "SVM_11_GOLD_80"						;//80 zlat˝ch.
-	GOLD_70						= "SVM_11_GOLD_70"						;//70 zlat˝ch.
-	GOLD_60						= "SVM_11_GOLD_60"						;//60 zlat˝ch.
-	GOLD_50						= "SVM_11_GOLD_50"						;//50 zlat˝ch.
-	GOLD_40						= "SVM_11_GOLD_40"						;//40 zlat˝ch.
-	GOLD_30						= "SVM_11_GOLD_30"						;//30 zlat˝ch.
-	GOLD_20						= "SVM_11_GOLD_20"						;//20 zlat˝ch.
-	GOLD_10						= "SVM_11_GOLD_10"						;//10 zlat˝ch.
+	GOLD_1000					= "SVM_11_GOLD_1000"						;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_11_GOLD_950"						;//950 zlat√Ωch.
+	GOLD_900					= "SVM_11_GOLD_900"						;//900 zlat√Ωch.
+	GOLD_850					= "SVM_11_GOLD_850"						;//850 zlat√Ωch.
+	GOLD_800					= "SVM_11_GOLD_800"						;//800 zlat√Ωch.
+	GOLD_750					= "SVM_11_GOLD_750"						;//750 zlat√Ωch.
+	GOLD_700					= "SVM_11_GOLD_700"						;//700 zlat√Ωch.
+	GOLD_650					= "SVM_11_GOLD_650"						;//650 zlat√Ωch.
+	GOLD_600					= "SVM_11_GOLD_600"						;//600 zlat√Ωch.
+	GOLD_550					= "SVM_11_GOLD_550"						;//550 zlat√Ωch.
+	GOLD_500					= "SVM_11_GOLD_500"						;//500 zlat√Ωch.
+	GOLD_450					= "SVM_11_GOLD_450"						;//450 zlat√Ωch.
+	GOLD_400					= "SVM_11_GOLD_400"						;//400 zlat√Ωch.
+	GOLD_350					= "SVM_11_GOLD_350"						;//350 zlat√Ωch.
+	GOLD_300					= "SVM_11_GOLD_300"						;//300 zlat√Ωch.
+	GOLD_250					= "SVM_11_GOLD_250"						;//250 zlat√Ωch.
+	GOLD_200					= "SVM_11_GOLD_200"						;//200 zlat√Ωch.
+	GOLD_150					= "SVM_11_GOLD_150"						;//150 zlat√Ωch.
+	GOLD_100					= "SVM_11_GOLD_100"						;//100 zlat√Ωch.
+	GOLD_90						= "SVM_11_GOLD_90"						;//90 zlat√Ωch.
+	GOLD_80						= "SVM_11_GOLD_80"						;//80 zlat√Ωch.
+	GOLD_70						= "SVM_11_GOLD_70"						;//70 zlat√Ωch.
+	GOLD_60						= "SVM_11_GOLD_60"						;//60 zlat√Ωch.
+	GOLD_50						= "SVM_11_GOLD_50"						;//50 zlat√Ωch.
+	GOLD_40						= "SVM_11_GOLD_40"						;//40 zlat√Ωch.
+	GOLD_30						= "SVM_11_GOLD_30"						;//30 zlat√Ωch.
+	GOLD_20						= "SVM_11_GOLD_20"						;//20 zlat√Ωch.
+	GOLD_10						= "SVM_11_GOLD_10"						;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_11_Smalltalk01"					;//...v·ûnÍ si myslÌö...
-	Smalltalk02					= "SVM_11_Smalltalk02"					;//...vöechno je moûnÈ...
-	Smalltalk03					= "SVM_11_Smalltalk03"					;//...mÍl si to rozmyslet...
-	Smalltalk04					= "SVM_11_Smalltalk04"					;//...jako bych uû tak nemÍl dost problÈm˘...
-	Smalltalk05					= "SVM_11_Smalltalk05"					;//...kdo ti to ‚ekl...
-	Smalltalk06					= "SVM_11_Smalltalk06"					;//...z toho budou jen dalöÌ problÈmy...
-	Smalltalk07					= "SVM_11_Smalltalk07"					;//...drbalo se tam o vöem moûnÈm...
-	Smalltalk08					= "SVM_11_Smalltalk08"					;//...nemÍl jsem to dÍlat...
-	Smalltalk09					= "SVM_11_Smalltalk09"					;//...to vöechno jsou jen ‚eËi...
-	Smalltalk10					= "SVM_11_Smalltalk10"					;//...radÍji bys mÍl zjistit, kdo to ‚Ìkal...
-	Smalltalk11					= "SVM_11_Smalltalk11"					;//...chtÍl jsem ti to ‚Ìct d‚Ìv...
-	Smalltalk12					= "SVM_11_Smalltalk12"					;//...nikdo se mÍ neptal...
-	Smalltalk13					= "SVM_11_Smalltalk13"					;//...mÍl bys mÌt soucit s chud·kem...
-	Smalltalk14					= "SVM_11_Smalltalk14"					;//...to nenÌ nic novÈho...
-	Smalltalk15					= "SVM_11_Smalltalk15"					;//...je to ˙plnÍ jasnÈ...
-	Smalltalk16					= "SVM_11_Smalltalk16"					;//...nemÍl ses mÍ pt·t, co...
-	Smalltalk17					= "SVM_11_Smalltalk17"					;//...takhle to nemohlo jÌt vÍËnÍ...
-	Smalltalk18					= "SVM_11_Smalltalk18"					;//...vöak vÌö, co myslÌm...
-	Smalltalk19					= "SVM_11_Smalltalk19"					;//...je to p‚esnÍ tak, jak jsem ‚Ìkal...
-	Smalltalk20					= "SVM_11_Smalltalk20"					;//...to uû nic nezmÍnÌ...
-	Smalltalk21					= "SVM_11_Smalltalk21"					;//...proË mi o tom nikdo ne‚ekl d‚Ìv...
-	Smalltalk22					= "SVM_11_Smalltalk22"					;//...poËkejme a uvidÌme, co se stane...
-	Smalltalk23					= "SVM_11_Smalltalk23"					;//...nÍkterÈ problÈmy se vy‚eöÌ samy...
-	Smalltalk24					= "SVM_11_Smalltalk24"					;//...uû o tom nechci nic slyöet...
+	Smalltalk01					= "SVM_11_Smalltalk01"					;//...v√°≈ænƒô si mysl√≠≈°...
+	Smalltalk02					= "SVM_11_Smalltalk02"					;//...v≈°echno je mo≈æn√©...
+	Smalltalk03					= "SVM_11_Smalltalk03"					;//...mƒôl si to rozmyslet...
+	Smalltalk04					= "SVM_11_Smalltalk04"					;//...jako bych u≈æ tak nemƒôl dost probl√©m≈Ø...
+	Smalltalk05					= "SVM_11_Smalltalk05"					;//...kdo ti to √¢ekl...
+	Smalltalk06					= "SVM_11_Smalltalk06"					;//...z toho budou jen dal≈°√≠ probl√©my...
+	Smalltalk07					= "SVM_11_Smalltalk07"					;//...drbalo se tam o v≈°em mo≈æn√©m...
+	Smalltalk08					= "SVM_11_Smalltalk08"					;//...nemƒôl jsem to dƒôlat...
+	Smalltalk09					= "SVM_11_Smalltalk09"					;//...to v≈°echno jsou jen √¢eƒçi...
+	Smalltalk10					= "SVM_11_Smalltalk10"					;//...radƒôji bys mƒôl zjistit, kdo to √¢√≠kal...
+	Smalltalk11					= "SVM_11_Smalltalk11"					;//...chtƒôl jsem ti to √¢√≠ct d√¢√≠v...
+	Smalltalk12					= "SVM_11_Smalltalk12"					;//...nikdo se mƒô neptal...
+	Smalltalk13					= "SVM_11_Smalltalk13"					;//...mƒôl bys m√≠t soucit s chud√°kem...
+	Smalltalk14					= "SVM_11_Smalltalk14"					;//...to nen√≠ nic nov√©ho...
+	Smalltalk15					= "SVM_11_Smalltalk15"					;//...je to √∫plnƒô jasn√©...
+	Smalltalk16					= "SVM_11_Smalltalk16"					;//...nemƒôl ses mƒô pt√°t, co...
+	Smalltalk17					= "SVM_11_Smalltalk17"					;//...takhle to nemohlo j√≠t vƒôƒçnƒô...
+	Smalltalk18					= "SVM_11_Smalltalk18"					;//...v≈°ak v√≠≈°, co mysl√≠m...
+	Smalltalk19					= "SVM_11_Smalltalk19"					;//...je to p√¢esnƒô tak, jak jsem √¢√≠kal...
+	Smalltalk20					= "SVM_11_Smalltalk20"					;//...to u≈æ nic nezmƒôn√≠...
+	Smalltalk21					= "SVM_11_Smalltalk21"					;//...proƒç mi o tom nikdo ne√¢ekl d√¢√≠v...
+	Smalltalk22					= "SVM_11_Smalltalk22"					;//...poƒçkejme a uvid√≠me, co se stane...
+	Smalltalk23					= "SVM_11_Smalltalk23"					;//...nƒôkter√© probl√©my se vy√¢e≈°√≠ samy...
+	Smalltalk24					= "SVM_11_Smalltalk24"					;//...u≈æ o tom nechci nic sly≈°et...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_11_Smalltalk25"					;//...zaËal pÌt...
+	Smalltalk25					= "SVM_11_Smalltalk25"					;//...zaƒçal p√≠t...
 	Smalltalk26					= "SVM_11_Smalltalk26"					;//...nechci dopadnout takhle...
-	Smalltalk27					= "SVM_11_Smalltalk27"					;//...vöichni utekli jak vyplaöenÌ kr·lÌci, z˘stal jsem ˙plnÍ s·m...
+	Smalltalk27					= "SVM_11_Smalltalk27"					;//...v≈°ichni utekli jak vypla≈°en√≠ kr√°l√≠ci, z≈Østal jsem √∫plnƒô s√°m...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_11_Smalltalk28"					;//...tak stojÌ v PÌsmu...
-	Smalltalk29					= "SVM_11_Smalltalk29"					;//...vûdycky jsem konal ve jmÈnu Innose...
-	Smalltalk30					= "SVM_11_Smalltalk30"					;//...nikdo se nesmÌ protivit v˘li boh˘...
+	Smalltalk28					= "SVM_11_Smalltalk28"					;//...tak stoj√≠ v P√≠smu...
+	Smalltalk29					= "SVM_11_Smalltalk29"					;//...v≈ædycky jsem konal ve jm√©nu Innose...
+	Smalltalk30					= "SVM_11_Smalltalk30"					;//...nikdo se nesm√≠ protivit v≈Øli boh≈Ø...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_11_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_11_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_11_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_11_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_11_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_11_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_11_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_11_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_11_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_11_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_11_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_11_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_11_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_11_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_11_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_11_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_11_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_11_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_11_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_11_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_11_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_11_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_11_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_11_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_11_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_11_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_11_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_11_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_11_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_11_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_11_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_11_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_11_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_11_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_11_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_11_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_11_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_11_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_11_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_11_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_11_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_11_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_11_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_11_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_11_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_11_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_11_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_11_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_11_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_11_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_11_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_11_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_11_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_11_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_11_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_11_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_11_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_11_Aargh_1"					;//Aargh
@@ -2548,221 +2548,221 @@ instance SVM_11 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_11_Addon_WrongArmor";				//Co to m·ö na sobÍ? V˘bec se k tobÍ nehodÌ. Dej mi pokoj.
-	ADDON_WRONGARMOR_SLD		= "SVM_11_ADDON_WRONGARMOR_SLD";			//Jestli se mnou chceö mluvit, tak si laskavÍ oblÌkni zbroj. Tak hejbni kostrou!
-	ADDON_WRONGARMOR_MIL		= "SVM_11_ADDON_WRONGARMOR_MIL";			//M·ö nosit kr·lovskou zbroj. BÍû pryË.
-	ADDON_WRONGARMOR_KDF		= "SVM_11_ADDON_WRONGARMOR_KDF";			//NÍco takovÈho by Ëlen naöeho ‚·du nosit nemÍl. BÍû se p‚evlÈknout.
-	ADDON_NOARMOR_BDT			= "SVM_11_ADDON_ADDON_NOARMOR_BDT";			//Dyk na sobÍ nem·ö ani zbroj. Vypadni.
+	ADDON_WRONGARMOR			= "SVM_11_Addon_WrongArmor";				//Co to m√°≈° na sobƒô? V≈Øbec se k tobƒô nehod√≠. Dej mi pokoj.
+	ADDON_WRONGARMOR_SLD		= "SVM_11_ADDON_WRONGARMOR_SLD";			//Jestli se mnou chce≈° mluvit, tak si laskavƒô obl√≠kni zbroj. Tak hejbni kostrou!
+	ADDON_WRONGARMOR_MIL		= "SVM_11_ADDON_WRONGARMOR_MIL";			//M√°≈° nosit kr√°lovskou zbroj. Bƒô≈æ pryƒç.
+	ADDON_WRONGARMOR_KDF		= "SVM_11_ADDON_WRONGARMOR_KDF";			//Nƒôco takov√©ho by ƒçlen na≈°eho √¢√°du nosit nemƒôl. Bƒô≈æ se p√¢evl√©knout.
+	ADDON_NOARMOR_BDT			= "SVM_11_ADDON_ADDON_NOARMOR_BDT";			//Dyk na sobƒô nem√°≈° ani zbroj. Vypadni.
 
-	ADDON_DIEBANDIT				= "SVM_11_ADDON_DIEBANDIT";				//DalöÌ bandita.
-	ADDON_DIRTYPIRATE			= "SVM_11_ADDON_DIRTYPIRATE";			//PIR¡TI!
+	ADDON_DIEBANDIT				= "SVM_11_ADDON_DIEBANDIT";				//Dal≈°√≠ bandita.
+	ADDON_DIRTYPIRATE			= "SVM_11_ADDON_DIRTYPIRATE";			//PIR√ÅTI!
 };
 
 instance SVM_12 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_12_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_12_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_12_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_12_Weather"					;//Zatracen· slota!
+	Weather						= 	"SVM_12_Weather"					;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_12_IGetYouStill"				;//Tak jsem tÍ p‚ece dostal!
-	DieEnemy					=	"SVM_12_DieEnemy"					;//Nikdy jsi sem nemÍl chodit!
-	DieMonster					=	"SVM_12_DieMonster"					;//PojÎ sem, ty öpinavËe!
-	DirtyThief					=	"SVM_12_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_12_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_12_SheepKiller"				;//Nech naöe ovce na pokoji!
-	SheepKillerMonster			=	"SVM_12_SheepKillerMonster"			;//Pakuj se od naöich ovcÌ, ty zatracen˝ zvÌ‚e!
+	IGetYouStill				= 	"SVM_12_IGetYouStill"				;//Tak jsem tƒô p√¢ece dostal!
+	DieEnemy					=	"SVM_12_DieEnemy"					;//Nikdy jsi sem nemƒôl chodit!
+	DieMonster					=	"SVM_12_DieMonster"					;//Poj√´ sem, ty ≈°pinavƒçe!
+	DirtyThief					=	"SVM_12_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_12_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_12_SheepKiller"				;//Nech na≈°e ovce na pokoji!
+	SheepKillerMonster			=	"SVM_12_SheepKillerMonster"			;//Pakuj se od na≈°ich ovc√≠, ty zatracen√Ω zv√≠√¢e!
 	YouMurderer					=	"SVM_12_YouMurderer"				;//Vrahu!
-	DieStupidBeast				=	"SVM_12_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_12_YouDareHitMe"				;//Toho budeö litovat!
-	YouAskedForIt				=	"SVM_12_YouAskedForIt"				;//Varoval jsem tÍ!
-	ThenIBeatYouOutOfHere		=	"SVM_12_ThenIBeatYouOutOfHere"		;//¬ekl jsem VEN!
-	WhatDidYouDoInThere			=	"SVM_12_WhatDidYouDoInThere"		;//Hej! Co to tam prov·dÌö?
-	WillYouStopFighting			=	"SVM_12_WillYouStopFighting"		;//P‚esta‡! Hned teÎ!
+	DieStupidBeast				=	"SVM_12_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_12_YouDareHitMe"				;//Toho bude≈° litovat!
+	YouAskedForIt				=	"SVM_12_YouAskedForIt"				;//Varoval jsem tƒô!
+	ThenIBeatYouOutOfHere		=	"SVM_12_ThenIBeatYouOutOfHere"		;//√Çekl jsem VEN!
+	WhatDidYouDoInThere			=	"SVM_12_WhatDidYouDoInThere"		;//Hej! Co to tam prov√°d√≠≈°?
+	WillYouStopFighting			=	"SVM_12_WillYouStopFighting"		;//P√¢esta≈ï! Hned te√´!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_12_KillEnemy"					;//ZapÌchnu tÍ, bastarde!
+	KillEnemy					= 	"SVM_12_KillEnemy"					;//Zap√≠chnu tƒô, bastarde!
 	EnemyKilled					=	"SVM_12_EnemyKilled"				;//Tohle je pro tebe.
 	MonsterKilled				=	"SVM_12_MonsterKilled"				;//Tohle svinstvo miluju!
-	Addon_MonsterKilled			=	"SVM_12_Addon_MonsterKilled"		;//O dalöÌ potvoru mÌ‡!
-	ThiefDown					=	"SVM_12_ThiefDown"					;//Varuju tÍ! Uû to vÌckr·t nezkouöej, ty mizernej zlodÍji!
-	rumfummlerDown				=	"SVM_12_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_12_SheepAttackerDown"			;//A uû se k naöim ovcÌm nep‚ibliûuj!
-	KillMurderer				=	"SVM_12_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_12_StupidBeastKilled"			;//Ta je ale zatracenÍ tup· stv˘ra!
-	NeverHitMeAgain				=	"SVM_12_NeverHitMeAgain"				;//Neopovaûuj se na mÍ znovu za˙toËit!
-	YouBetterShouldHaveListened	=	"SVM_12_YouBetterShouldHaveListened"	;//Varoval jsem tÍ!
-	GetUpAndBeGone				=	"SVM_12_GetUpAndBeGone"					;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_12_NeverEnterRoomAgain"			;//Uû tÍ tady nechci vÌckr·t vidÍt, jasn˝?
-	ThereIsNoFightingHere		=	"SVM_12_ThereIsNoFightingHere"			;//Nechci tady û·dnÈ rvaËky, tak na to nezapome‡!
+	Addon_MonsterKilled			=	"SVM_12_Addon_MonsterKilled"		;//O dal≈°√≠ potvoru m√≠≈ï!
+	ThiefDown					=	"SVM_12_ThiefDown"					;//Varuju tƒô! U≈æ to v√≠ckr√°t nezkou≈°ej, ty mizernej zlodƒôji!
+	rumfummlerDown				=	"SVM_12_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_12_SheepAttackerDown"			;//A u≈æ se k na≈°im ovc√≠m nep√¢ibli≈æuj!
+	KillMurderer				=	"SVM_12_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_12_StupidBeastKilled"			;//Ta je ale zatracenƒô tup√° stv≈Øra!
+	NeverHitMeAgain				=	"SVM_12_NeverHitMeAgain"				;//Neopova≈æuj se na mƒô znovu za√∫toƒçit!
+	YouBetterShouldHaveListened	=	"SVM_12_YouBetterShouldHaveListened"	;//Varoval jsem tƒô!
+	GetUpAndBeGone				=	"SVM_12_GetUpAndBeGone"					;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_12_NeverEnterRoomAgain"			;//U≈æ tƒô tady nechci v√≠ckr√°t vidƒôt, jasn√Ω?
+	ThereIsNoFightingHere		=	"SVM_12_ThereIsNoFightingHere"			;//Nechci tady ≈æ√°dn√© rvaƒçky, tak na to nezapome≈ï!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_12_SpareMe"						;//Nezkouöej û·dnÈ hlouposti!
-	RunAway						= 	"SVM_12_RunAway"						;//Pad·m pryË!
+	SpareMe						=	"SVM_12_SpareMe"						;//Nezkou≈°ej ≈æ√°dn√© hlouposti!
+	RunAway						= 	"SVM_12_RunAway"						;//Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_12_Alarm"					;//POPLACH!
-	Guards						=	"SVM_12_Guards"					;//STR¡éE!
+	Guards						=	"SVM_12_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_12_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_12_GoodMonsterKill"		;//(vol·) Poöli ty bestie do vÍËn˝ch loviö„!
-	GoodKill					= 	"SVM_12_GoodKill"				;//(vol·) Jo, nandej to tomu bastardovi!
+	GoodMonsterKill				=	"SVM_12_GoodMonsterKill"		;//(vol√°) Po≈°li ty bestie do vƒôƒçn√Ωch lovi≈°ƒÉ!
+	GoodKill					= 	"SVM_12_GoodKill"				;//(vol√°) Jo, nandej to tomu bastardovi!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_12_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_12_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_12_RunCoward"				;//(k‚iËÌ) Dostanu tÍ!
+	RunCoward					=	"SVM_12_RunCoward"				;//(k√¢iƒç√≠) Dostanu tƒô!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_12_GetOutOfHere"			;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_12_WhyAreYouInHere"		;//Tady nem·ö co dÍlat!
+	WhyAreYouInHere				=	"SVM_12_WhyAreYouInHere"		;//Tady nem√°≈° co dƒôlat!
 	YesGoOutOfHere				= 	"SVM_12_YesGoOutOfHere"			;//Jo, vypadni odsud!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_12_WhatsThisSupposedToBe"	;//Co m·ö za lubem? Co tady kolem Ëmuch·ö?
-	YouDisturbedMySlumber		=	"SVM_12_YouDisturbedMySlumber"	;//(vst·v·) Sakra, co chceö?
+	WhatsThisSupposedToBe		=	"SVM_12_WhatsThisSupposedToBe"	;//Co m√°≈° za lubem? Co tady kolem ƒçmuch√°≈°?
+	YouDisturbedMySlumber		=	"SVM_12_YouDisturbedMySlumber"	;//(vst√°v√°) Sakra, co chce≈°?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_12_ITookYourGold"			;//Dobr·, kdyû uû nic jinÈho, alespo‡ m·ö u sebe nÍjakÈ zlato.
-	ShitNoGold					=	"SVM_12_ShitNoGold"				;//Ani zla„·k - hmpf.
-	ITakeYourWeapon				=	"SVM_12_ITakeYourWeapon"		;//Asi si vezmu tvoji zbra‡.
+	ITookYourGold				=	"SVM_12_ITookYourGold"			;//Dobr√°, kdy≈æ u≈æ nic jin√©ho, alespo≈ï m√°≈° u sebe nƒôjak√© zlato.
+	ShitNoGold					=	"SVM_12_ShitNoGold"				;//Ani zlaƒÉ√°k - hmpf.
+	ITakeYourWeapon				=	"SVM_12_ITakeYourWeapon"		;//Asi si vezmu tvoji zbra≈ï.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_12_WhatAreYouDoing"		;//(varovnÍ) Tak tohle uû, hochu, vÌckr·t nedÍlej!
+	WhatAreYouDoing				=	"SVM_12_WhatAreYouDoing"		;//(varovnƒô) Tak tohle u≈æ, hochu, v√≠ckr√°t nedƒôlej!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_12_LookingForTroubleAgain"	;//(agresivnÍ) Pot‚ebujeö dalöÌ nakl·daËku?
-	StopMagic					=	"SVM_12_StopMagic"				;//P‚esta‡ s tÍmi kouzly!
-	ISaidStopMagic				=	"SVM_12_ISaidStopMagic"			;//PoslednÌ varov·nÌ! P‚esta‡ s tÍmi kouzly!
-	WeaponDown					=	"SVM_12_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_12_ISaidWeaponDown"		;//Schovej tu zbra‡, nebo v tom seö aû po uöi!
-	WiseMove					=	"SVM_12_WiseMove"				;//Hej, ty nejsi tak blbej, jak vypad·ö!
+	LookingForTroubleAgain		=	"SVM_12_LookingForTroubleAgain"	;//(agresivnƒô) Pot√¢ebuje≈° dal≈°√≠ nakl√°daƒçku?
+	StopMagic					=	"SVM_12_StopMagic"				;//P√¢esta≈ï s tƒômi kouzly!
+	ISaidStopMagic				=	"SVM_12_ISaidStopMagic"			;//Posledn√≠ varov√°n√≠! P√¢esta≈ï s tƒômi kouzly!
+	WeaponDown					=	"SVM_12_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_12_ISaidWeaponDown"		;//Schovej tu zbra≈ï, nebo v tom se≈° a≈æ po u≈°i!
+	WiseMove					=	"SVM_12_WiseMove"				;//Hej, ty nejsi tak blbej, jak vypad√°≈°!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_12_NextTimeYoureInForIt"	;//(pro sebe) Tohle uû nikdy nezkouöej.
-	OhMyHead					=	"SVM_12_OhMyHead"				;//(pro sebe) ”! Moje hlava...
+	NextTimeYoureInForIt		=	"SVM_12_NextTimeYoureInForIt"	;//(pro sebe) Tohle u≈æ nikdy nezkou≈°ej.
+	OhMyHead					=	"SVM_12_OhMyHead"				;//(pro sebe) √ì! Moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_12_TheresAFight"			;//(dychtivÍ) A„ je koneËnÍ nÍjak· z·bava.
-	OhMyGodItsAFight			=	"SVM_12_OhMyGodItsAFight"		;//(vystraöenÍ) ”, m˘j boûe...
-	GoodVictory					=	"SVM_12_GoodVictory"			;//(zl˝ smÌch) A„ si z toho vezme ponauËenÌ.
-	NotBad						= 	"SVM_12_NotBad"					;//(souhlasnÍ) To byla trefa!
-	OhMyGodHesDown				=	"SVM_12_OhMyGodHesDown"			;//(pro sebe) Takov˝ surovec!
+	TheresAFight				=	"SVM_12_TheresAFight"			;//(dychtivƒô) AƒÉ je koneƒçnƒô nƒôjak√° z√°bava.
+	OhMyGodItsAFight			=	"SVM_12_OhMyGodItsAFight"		;//(vystra≈°enƒô) √ì, m≈Øj bo≈æe...
+	GoodVictory					=	"SVM_12_GoodVictory"			;//(zl√Ω sm√≠ch) AƒÉ si z toho vezme ponauƒçen√≠.
+	NotBad						= 	"SVM_12_NotBad"					;//(souhlasnƒô) To byla trefa!
+	OhMyGodHesDown				=	"SVM_12_OhMyGodHesDown"			;//(pro sebe) Takov√Ω surovec!
 	CheerFriend01				=	"SVM_12_CheerFriend01"			;//Dej mu!
-	CheerFriend02				=	"SVM_12_CheerFriend02"			;//TeÎ nep‚est·vej!
+	CheerFriend02				=	"SVM_12_CheerFriend02"			;//Te√´ nep√¢est√°vej!
 	CheerFriend03				=	"SVM_12_CheerFriend03"			;//Doraz ho!
-	Ooh01						=	"SVM_12_Ooh01"					;//D·vej pozor!
-	Ooh02						=	"SVM_12_Ooh02"					;//Tak mu to vra„!
-	Ooh03						=	"SVM_12_Ooh03"					;//Do hajzlu, takov· pecka!
+	Ooh01						=	"SVM_12_Ooh01"					;//D√°vej pozor!
+	Ooh02						=	"SVM_12_Ooh02"					;//Tak mu to vraƒÉ!
+	Ooh03						=	"SVM_12_Ooh03"					;//Do hajzlu, takov√° pecka!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_12_WhatWasThat"				;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_12_WhatWasThat"				;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_12_GetOutOfMyBed"			;//Vypadni z mÈ postele!
-	Awake						= "SVM_12_Awake"					;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_12_GetOutOfMyBed"			;//Vypadni z m√© postele!
+	Awake						= "SVM_12_Awake"					;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_12_ABS_COMMANDER"    ;//Tak velitel dal ty vÍci do po‚·dku.
-	ABS_MONASTERY    = "SVM_12_ABS_MONASTERY"    ;//Tak tÍ otec Parlan zbavil viny.
-	ABS_FARM       = "SVM_12_ABS_FARM"        ;//Tak ses setkal s Leem a urovnal tu z·leûitost.
-	ABS_GOOD       = "SVM_12_ABS_GOOD"       ;//Dobr·.
+	ABS_COMMANDER     = "SVM_12_ABS_COMMANDER"    ;//Tak velitel dal ty vƒôci do po√¢√°dku.
+	ABS_MONASTERY    = "SVM_12_ABS_MONASTERY"    ;//Tak tƒô otec Parlan zbavil viny.
+	ABS_FARM       = "SVM_12_ABS_FARM"        ;//Tak ses setkal s Leem a urovnal tu z√°le≈æitost.
+	ABS_GOOD       = "SVM_12_ABS_GOOD"       ;//Dobr√°.
  	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_12_SHEEPKILLER_CRIME"   ;//Ty vraûdÌö ovce? P‚edpokl·d·m, ûe se ti nepoda‚ilo najÌt nikoho bezbrannÍjöÌho?
-	ATTACK_CRIME     = "SVM_12_ATTACK_CRIME"    ;//S odpornejma banditama nechci nic mÌt!
-	THEFT_CRIME      = "SVM_12_THEFT_CRIME"    ;//Se zlodÍji nechci mÌt nic spoleËnÈho!
+	SHEEPKILLER_CRIME   = "SVM_12_SHEEPKILLER_CRIME"   ;//Ty vra≈æd√≠≈° ovce? P√¢edpokl√°d√°m, ≈æe se ti nepoda√¢ilo naj√≠t nikoho bezbrannƒôj≈°√≠ho?
+	ATTACK_CRIME     = "SVM_12_ATTACK_CRIME"    ;//S odpornejma banditama nechci nic m√≠t!
+	THEFT_CRIME      = "SVM_12_THEFT_CRIME"    ;//Se zlodƒôji nechci m√≠t nic spoleƒçn√©ho!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_12_PAL_CITY_CRIME"   ;//Tak ty se chceö st·t paladinem? PoËkej, aû co na to ‚ekne lord Hagen!
- 	MIL_CITY_CRIME     = "SVM_12_MIL_CITY_CRIME"   ;//V·ûnÍ se chceö st·t Ëlenem mÍstsk˝ch str·ûÌ? Lord Andre tÍ v tom nehodl· podpo‚it!
- 	CITY_CRIME       = "SVM_12_CITY_CRIME"    ;//Zajdi za lordem Andrem, dokud m˘ûeö.
+ 	PAL_CITY_CRIME     = "SVM_12_PAL_CITY_CRIME"   ;//Tak ty se chce≈° st√°t paladinem? Poƒçkej, a≈æ co na to √¢ekne lord Hagen!
+ 	MIL_CITY_CRIME     = "SVM_12_MIL_CITY_CRIME"   ;//V√°≈ænƒô se chce≈° st√°t ƒçlenem mƒôstsk√Ωch str√°≈æ√≠? Lord Andre tƒô v tom nehodl√° podpo√¢it!
+ 	CITY_CRIME       = "SVM_12_CITY_CRIME"    ;//Zajdi za lordem Andrem, dokud m≈Ø≈æe≈°.
  	// -------------------------
-	MONA_CRIME       = "SVM_12_MONA_CRIME"    ;//Zajdi za otcem Parlanem. Pom˘ûe ti odËinit tvÈ h‚Ìchy!
-	FARM_CRIME       = "SVM_12_FARM_CRIME"    ;//Lee se o tomhle dozvÌ a ty za to zaplatÌö.
-	OC_CRIME       = "SVM_12_OC_CRIME"     ;//Velitel Garond z toho nebude nadöen˝. UdÍl·ö lÌp, kdyû mu o tom ‚ekneö d‚Ìv, neû se situace jeötÍ zhoröÌ!
+	MONA_CRIME       = "SVM_12_MONA_CRIME"    ;//Zajdi za otcem Parlanem. Pom≈Ø≈æe ti odƒçinit tv√© h√¢√≠chy!
+	FARM_CRIME       = "SVM_12_FARM_CRIME"    ;//Lee se o tomhle dozv√≠ a ty za to zaplat√≠≈°.
+	OC_CRIME       = "SVM_12_OC_CRIME"     ;//Velitel Garond z toho nebude nad≈°en√Ω. Udƒôl√°≈° l√≠p, kdy≈æ mu o tom √¢ekne≈° d√¢√≠v, ne≈æ se situace je≈°tƒô zhor≈°√≠!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_12_TOUGHGUY_ATTACKLOST"		;//Dobr·, vyhr·l jsi. Tak co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_12_TOUGHGUY_ATTACKWON"		;//(arogantnÍ) M·m dojem, ûe uû ti doölo, kdo tady m· navrch. Co chceö?
-	TOUGHGUY_PLAYERATTACK		= "SVM_12_TOUGHGUY_PLAYERATTACK"	;//Zase ty? ZkouöÌö to na mÍ znovu, co?
+	TOUGHGUY_ATTACKLOST			= "SVM_12_TOUGHGUY_ATTACKLOST"		;//Dobr√°, vyhr√°l jsi. Tak co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_12_TOUGHGUY_ATTACKWON"		;//(arogantnƒô) M√°m dojem, ≈æe u≈æ ti do≈°lo, kdo tady m√° navrch. Co chce≈°?
+	TOUGHGUY_PLAYERATTACK		= "SVM_12_TOUGHGUY_PLAYERATTACK"	;//Zase ty? Zkou≈°√≠≈° to na mƒô znovu, co?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_12_GOLD_1000"				;//1000 zlat˝ch.
-	GOLD_950					= "SVM_12_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_12_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_12_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_12_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_12_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_12_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_12_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_12_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_12_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_12_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_12_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_12_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_12_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_12_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_12_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_12_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_12_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_12_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_12_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_12_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_12_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_12_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_12_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_12_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_12_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_12_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_12_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_12_GOLD_1000"				;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_12_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_12_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_12_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_12_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_12_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_12_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_12_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_12_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_12_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_12_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_12_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_12_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_12_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_12_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_12_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_12_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_12_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_12_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_12_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_12_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_12_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_12_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_12_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_12_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_12_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_12_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_12_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
 	Smalltalk01					= "SVM_12_Smalltalk01"				;//...je mi to jedno...
-	Smalltalk02					= "SVM_12_Smalltalk02"				;//...nikdo to nechce vÍdÍt...
-	Smalltalk03					= "SVM_12_Smalltalk03"				;//...bylo to jeho rozhodnutÌ, nebo ne...
-	Smalltalk04					= "SVM_12_Smalltalk04"				;//...û·dn˝ n·vrh, ‚ekni...
-	Smalltalk05					= "SVM_12_Smalltalk05"				;//...nem·m s tÌm nic spoleËnÈho...
-	Smalltalk06					= "SVM_12_Smalltalk06"				;//...nem·m na takovÈ vÍci Ëas...
-	Smalltalk07					= "SVM_12_Smalltalk07"				;//...nem˘ûu se z toho jen tak vyvlÌknout...
-	Smalltalk08					= "SVM_12_Smalltalk08"				;//...nebudeö mi ‚Ìkat...
-	Smalltalk09					= "SVM_12_Smalltalk09"				;//...byl tam, udÍlal to...
-	Smalltalk10					= "SVM_12_Smalltalk10"				;//...vÍci, o kter˝ch ti m˘ûu ‚Ìct...
-	Smalltalk11					= "SVM_12_Smalltalk11"				;//...na to se nem˘ûeö spolÈhat...
-	Smalltalk12					= "SVM_12_Smalltalk12"				;//...j· to ‚Ìkal uû d·vno...
-	Smalltalk13					= "SVM_12_Smalltalk13"				;//...a je toho vÌc, vÍ‚ mi...
-	Smalltalk14					= "SVM_12_Smalltalk14"				;//...nÍkterÈ vÍci se vracÌ v plnÈ mÌ‚e...
-	Smalltalk15					= "SVM_12_Smalltalk15"				;//...‚ekni, ûe to nenÌ pravda...
-	Smalltalk16					= "SVM_12_Smalltalk16"				;//...d‚Ìve Ëi pozdÍji by k tomu doölo...
-	Smalltalk17					= "SVM_12_Smalltalk17"				;//...mÍl toho vÍdÍt vÌc...
-	Smalltalk18					= "SVM_12_Smalltalk18"				;//...to uû nic nezmÍnÌ...
-	Smalltalk19					= "SVM_12_Smalltalk19"				;//...nenÌ to û·dnÈ tajemstvÌ...
-	Smalltalk20					= "SVM_12_Smalltalk20"				;//...nenÌ to û·dn˝ velk˝ obchod...
-	Smalltalk21					= "SVM_12_Smalltalk21"				;//...myslel si, ûe je to snadnÈ jak...
-	Smalltalk22					= "SVM_12_Smalltalk22"				;//...nikdo ve skuteËnosti nechce slyöet...
+	Smalltalk02					= "SVM_12_Smalltalk02"				;//...nikdo to nechce vƒôdƒôt...
+	Smalltalk03					= "SVM_12_Smalltalk03"				;//...bylo to jeho rozhodnut√≠, nebo ne...
+	Smalltalk04					= "SVM_12_Smalltalk04"				;//...≈æ√°dn√Ω n√°vrh, √¢ekni...
+	Smalltalk05					= "SVM_12_Smalltalk05"				;//...nem√°m s t√≠m nic spoleƒçn√©ho...
+	Smalltalk06					= "SVM_12_Smalltalk06"				;//...nem√°m na takov√© vƒôci ƒças...
+	Smalltalk07					= "SVM_12_Smalltalk07"				;//...nem≈Ø≈æu se z toho jen tak vyvl√≠knout...
+	Smalltalk08					= "SVM_12_Smalltalk08"				;//...nebude≈° mi √¢√≠kat...
+	Smalltalk09					= "SVM_12_Smalltalk09"				;//...byl tam, udƒôlal to...
+	Smalltalk10					= "SVM_12_Smalltalk10"				;//...vƒôci, o kter√Ωch ti m≈Ø≈æu √¢√≠ct...
+	Smalltalk11					= "SVM_12_Smalltalk11"				;//...na to se nem≈Ø≈æe≈° spol√©hat...
+	Smalltalk12					= "SVM_12_Smalltalk12"				;//...j√° to √¢√≠kal u≈æ d√°vno...
+	Smalltalk13					= "SVM_12_Smalltalk13"				;//...a je toho v√≠c, vƒô√¢ mi...
+	Smalltalk14					= "SVM_12_Smalltalk14"				;//...nƒôkter√© vƒôci se vrac√≠ v pln√© m√≠√¢e...
+	Smalltalk15					= "SVM_12_Smalltalk15"				;//...√¢ekni, ≈æe to nen√≠ pravda...
+	Smalltalk16					= "SVM_12_Smalltalk16"				;//...d√¢√≠ve ƒçi pozdƒôji by k tomu do≈°lo...
+	Smalltalk17					= "SVM_12_Smalltalk17"				;//...mƒôl toho vƒôdƒôt v√≠c...
+	Smalltalk18					= "SVM_12_Smalltalk18"				;//...to u≈æ nic nezmƒôn√≠...
+	Smalltalk19					= "SVM_12_Smalltalk19"				;//...nen√≠ to ≈æ√°dn√© tajemstv√≠...
+	Smalltalk20					= "SVM_12_Smalltalk20"				;//...nen√≠ to ≈æ√°dn√Ω velk√Ω obchod...
+	Smalltalk21					= "SVM_12_Smalltalk21"				;//...myslel si, ≈æe je to snadn√© jak...
+	Smalltalk22					= "SVM_12_Smalltalk22"				;//...nikdo ve skuteƒçnosti nechce sly≈°et...
 	Smalltalk23					= "SVM_12_Smalltalk23"				;//...a to je pravda...
-	Smalltalk24					= "SVM_12_Smalltalk24"				;//...prostÍ poslouchej...
+	Smalltalk24					= "SVM_12_Smalltalk24"				;//...prostƒô poslouchej...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                      
-	Smalltalk25					= "SVM_12_Smalltalk25"				;//...kdyby nebylo n·s, dopadlo by to jinak...
-	Smalltalk26					= "SVM_12_Smalltalk26"				;//...prostÍ pot‚ebuje vÌc zkuöenostÌ...
-	Smalltalk27					= "SVM_12_Smalltalk27"				;//...co on vÌ o sluûbÍ...
+	Smalltalk25					= "SVM_12_Smalltalk25"				;//...kdyby nebylo n√°s, dopadlo by to jinak...
+	Smalltalk26					= "SVM_12_Smalltalk26"				;//...prostƒô pot√¢ebuje v√≠c zku≈°enost√≠...
+	Smalltalk27					= "SVM_12_Smalltalk27"				;//...co on v√≠ o slu≈æbƒô...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                      
-	Smalltalk28					= "SVM_12_Smalltalk28"				;//...Innos vymÍ‚Ì spravedliv˝ trest...
-	Smalltalk29					= "SVM_12_Smalltalk29"				;//...cesta poctivosti je dlouh· a trnit·...
-	Smalltalk30					= "SVM_12_Smalltalk30"				;//...pouze Innos rozhodne, co je spr·vnÈ a co ne...
+	Smalltalk28					= "SVM_12_Smalltalk28"				;//...Innos vymƒô√¢√≠ spravedliv√Ω trest...
+	Smalltalk29					= "SVM_12_Smalltalk29"				;//...cesta poctivosti je dlouh√° a trnit√°...
+	Smalltalk30					= "SVM_12_Smalltalk30"				;//...pouze Innos rozhodne, co je spr√°vn√© a co ne...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_12_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_12_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_12_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_12_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_12_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_12_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_12_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_12_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_12_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_12_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_12_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_12_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_12_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_12_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_12_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_12_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_12_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_12_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_12_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_12_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_12_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_12_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_12_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_12_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_12_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_12_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_12_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_12_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_12_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_12_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_12_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_12_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_12_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_12_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_12_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_12_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_12_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_12_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_12_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_12_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_12_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_12_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_12_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_12_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_12_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_12_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_12_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_12_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_12_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_12_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_12_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_12_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_12_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_12_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_12_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_12_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_12_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_12_Aargh_1"					;//Aargh
@@ -2771,220 +2771,220 @@ instance SVM_12 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_12_Addon_WrongArmor";				//Nap‚ed se p‚evleË, takhle ti to stejnÍ nesluöÌ.
-	ADDON_WRONGARMOR_SLD		= "SVM_12_ADDON_WRONGARMOR_SLD";			//Jestli se mnou chceö mluvit, oblÈkni si zbroj.
-	ADDON_WRONGARMOR_MIL		= "SVM_12_ADDON_WRONGARMOR_MIL";			//Voj·k m· nosit jedinÍ kr·lovskou zbroj, NIC JIN…HO! Tak se mazej p‚evlÌknout!
-	ADDON_WRONGARMOR_KDF		= "SVM_12_ADDON_WRONGARMOR_KDF";			//NÍco takovÈho by Ëlen naöeho ‚·du nosit nemÍl. BÍû se p‚evlÈknout.
-	ADDON_NOARMOR_BDT			= "SVM_12_ADDON_ADDON_NOARMOR_BDT";			//Se slabochy se nebavÌm. To nem·ö ani na brnÍnÌ?
+	ADDON_WRONGARMOR			= "SVM_12_Addon_WrongArmor";				//Nap√¢ed se p√¢evleƒç, takhle ti to stejnƒô neslu≈°√≠.
+	ADDON_WRONGARMOR_SLD		= "SVM_12_ADDON_WRONGARMOR_SLD";			//Jestli se mnou chce≈° mluvit, obl√©kni si zbroj.
+	ADDON_WRONGARMOR_MIL		= "SVM_12_ADDON_WRONGARMOR_MIL";			//Voj√°k m√° nosit jedinƒô kr√°lovskou zbroj, NIC JIN√âHO! Tak se mazej p√¢evl√≠knout!
+	ADDON_WRONGARMOR_KDF		= "SVM_12_ADDON_WRONGARMOR_KDF";			//Nƒôco takov√©ho by ƒçlen na≈°eho √¢√°du nosit nemƒôl. Bƒô≈æ se p√¢evl√©knout.
+	ADDON_NOARMOR_BDT			= "SVM_12_ADDON_ADDON_NOARMOR_BDT";			//Se slabochy se nebav√≠m. To nem√°≈° ani na brnƒôn√≠?
 
-	ADDON_DIEBANDIT				= "SVM_12_ADDON_DIEBANDIT";				//Rozsek·m tÍ na kousÌËky, bandito!
-	ADDON_DIRTYPIRATE			= "SVM_12_ADDON_DIRTYPIRATE";			//Rozsek·m tÍ na kousÌËky, pir·te!
+	ADDON_DIEBANDIT				= "SVM_12_ADDON_DIEBANDIT";				//Rozsek√°m tƒô na kous√≠ƒçky, bandito!
+	ADDON_DIRTYPIRATE			= "SVM_12_ADDON_DIRTYPIRATE";			//Rozsek√°m tƒô na kous√≠ƒçky, pir√°te!
 };
 
 instance SVM_13 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_13_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_13_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_13_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_13_Weather"					;//Zatracen· slota!
+	Weather						= 	"SVM_13_Weather"					;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_13_IGetYouStill"				;//Dostanu tÍ!
-	DieEnemy					=	"SVM_13_DieEnemy"					;//Rozsek·m tÍ na kousky!
-	DieMonster					=	"SVM_13_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_13_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_13_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_13_SheepKiller"				;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_13_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	IGetYouStill				= 	"SVM_13_IGetYouStill"				;//Dostanu tƒô!
+	DieEnemy					=	"SVM_13_DieEnemy"					;//Rozsek√°m tƒô na kousky!
+	DieMonster					=	"SVM_13_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_13_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_13_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_13_SheepKiller"				;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_13_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_13_YouMurderer"				;//Vrahu!
-	DieStupidBeast				=	"SVM_13_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_13_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_13_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_13_ThenIBeatYouOutOfHere"		;//Ty chceö zdrhnout? Tak dobr·!
-	WhatDidYouDoInThere			=	"SVM_13_WhatDidYouDoInThere"		;//Cos tam pohled·val?
-	WillYouStopFighting			=	"SVM_13_WillYouStopFighting"		;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_13_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_13_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_13_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_13_ThenIBeatYouOutOfHere"		;//Ty chce≈° zdrhnout? Tak dobr√°!
+	WhatDidYouDoInThere			=	"SVM_13_WhatDidYouDoInThere"		;//Cos tam pohled√°val?
+	WillYouStopFighting			=	"SVM_13_WillYouStopFighting"		;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_13_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_13_EnemyKilled"				;//Zaslouûil sis to, niËemo!
-	MonsterKilled				=	"SVM_13_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_13_ThiefDown"					;//Uû se mÍ nikdy nepokouöej okr·st!
-	rumfummlerDown				=	"SVM_13_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_13_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_13_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_13_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_13_NeverHitMeAgain"			;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_13_YouBetterShouldHaveListened";//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_13_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_13_NeverEnterRoomAgain"		;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_13_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö?! Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_13_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_13_EnemyKilled"				;//Zaslou≈æil sis to, niƒçemo!
+	MonsterKilled				=	"SVM_13_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_13_ThiefDown"					;//U≈æ se mƒô nikdy nepokou≈°ej okr√°st!
+	rumfummlerDown				=	"SVM_13_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_13_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_13_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_13_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_13_NeverHitMeAgain"			;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_13_YouBetterShouldHaveListened";//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_13_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_13_NeverEnterRoomAgain"		;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_13_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°?! Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_13_SpareMe"					;//Neubliûuj mi!
+	SpareMe						=	"SVM_13_SpareMe"					;//Neubli≈æuj mi!
 	RunAway						= 	"SVM_13_RunAway"					;//A do hajzlu!!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_13_Alarm"					;//POPLACH!
-	Guards						=	"SVM_13_Guards"					;//STR¡éE!
+	Guards						=	"SVM_13_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_13_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_13_GoodMonsterKill"		;//(vol·) Dobr· pr·ce - o jednu öpinavou bestii mÌ‡!
-	GoodKill					= 	"SVM_13_GoodKill"				;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_13_GoodMonsterKill"		;//(vol√°) Dobr√° pr√°ce - o jednu ≈°pinavou bestii m√≠≈ï!
+	GoodKill					= 	"SVM_13_GoodKill"				;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_13_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_13_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_13_RunCoward"				;//(k‚iËÌ) Jo! UtÌkej, jak nejrychleji m˘ûeö!
+	RunCoward					=	"SVM_13_RunCoward"				;//(k√¢iƒç√≠) Jo! Ut√≠kej, jak nejrychleji m≈Ø≈æe≈°!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_13_GetOutOfHere"			;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_13_WhyAreYouInHere"		;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_13_WhyAreYouInHere"		;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_13_YesGoOutOfHere"			;//Jo, pakuj se odsud!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_13_WhatsThisSupposedToBe"	;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_13_YouDisturbedMySlumber"	;//(probudÌ se) K Ëertu, co se dÍje?
+	WhatsThisSupposedToBe		=	"SVM_13_WhatsThisSupposedToBe"	;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_13_YouDisturbedMySlumber"	;//(probud√≠ se) K ƒçertu, co se dƒôje?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_13_ITookYourGold"			;//DÌky za zlato, ty hrdino!
-	ShitNoGold					=	"SVM_13_ShitNoGold"				;//Ty mizernej vöiv·ku, nem·ö u sebe û·dn˝ zlato!
-	ITakeYourWeapon				=	"SVM_13_ITakeYourWeapon"		;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_13_ITookYourGold"			;//D√≠ky za zlato, ty hrdino!
+	ShitNoGold					=	"SVM_13_ShitNoGold"				;//Ty mizernej v≈°iv√°ku, nem√°≈° u sebe ≈æ√°dn√Ω zlato!
+	ITakeYourWeapon				=	"SVM_13_ITakeYourWeapon"		;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_13_WhatAreYouDoing"		;//(varovnÍ) D·vej si pozor! JeötÍ jednou a nÍjakou ti vrazÌm.
+	WhatAreYouDoing				=	"SVM_13_WhatAreYouDoing"		;//(varovnƒô) D√°vej si pozor! Je≈°tƒô jednou a nƒôjakou ti vraz√≠m.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_13_LookingForTroubleAgain"	;//JeötÍ po‚·d nem·ö dost?
-	StopMagic					=	"SVM_13_StopMagic"				;//P‚esta‡ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_13_ISaidStopMagic"			;//Chceö napr·skat? OkamûitÍ s tÌm p‚esta‡!!!
-	WeaponDown					=	"SVM_13_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_13_ISaidWeaponDown"		;//Tak d·ö tu zatracenou zbra‡ pryË?!
+	LookingForTroubleAgain		=	"SVM_13_LookingForTroubleAgain"	;//Je≈°tƒô po√¢√°d nem√°≈° dost?
+	StopMagic					=	"SVM_13_StopMagic"				;//P√¢esta≈ï s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_13_ISaidStopMagic"			;//Chce≈° napr√°skat? Okam≈æitƒô s t√≠m p√¢esta≈ï!!!
+	WeaponDown					=	"SVM_13_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_13_ISaidWeaponDown"		;//Tak d√°≈° tu zatracenou zbra≈ï pryƒç?!
 	WiseMove					=	"SVM_13_WiseMove"				;//Chytrej kluk!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_13_NextTimeYoureInForIt"	;//(pro sebe) Dobr·, p‚ÌötÍ se uk·ûe.
+	NextTimeYoureInForIt		=	"SVM_13_NextTimeYoureInForIt"	;//(pro sebe) Dobr√°, p√¢√≠≈°tƒô se uk√°≈æe.
 	OhMyHead					=	"SVM_13_OhMyHead"				;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_13_TheresAFight"			;//(dychtivÍ) Aaa, boj!
-	OhMyGodItsAFight			=	"SVM_13_OhMyGodItsAFight"		;//(vystraöenÍ) BoûÌnku, boj!
-	GoodVictory					=	"SVM_13_GoodVictory"			;//(zl˝ smÌch) Uk·zals mu, kdo je tady p·nem!
-	NotBad						= 	"SVM_13_NotBad"					;//(souhlasnÍ) To nebylo öpatnÈ.
-	OhMyGodHesDown				=	"SVM_13_OhMyGodHesDown"			;//(pro sebe) M˘j boûe! Takov· krutost...
-	CheerFriend01				=	"SVM_13_CheerFriend01"			;//Tak ho praö„!
-	CheerFriend02				=	"SVM_13_CheerFriend02"			;//Dej to sem vöechno!
-	CheerFriend03				=	"SVM_13_CheerFriend03"			;//Ukaû mu!
-	Ooh01						=	"SVM_13_Ooh01"					;//PoËkej!
-	Ooh02						=	"SVM_13_Ooh02"					;//D·vej pozor!
-	Ooh03						=	"SVM_13_Ooh03"					;//JÛ! To byla trefa!
+	TheresAFight				=	"SVM_13_TheresAFight"			;//(dychtivƒô) Aaa, boj!
+	OhMyGodItsAFight			=	"SVM_13_OhMyGodItsAFight"		;//(vystra≈°enƒô) Bo≈æ√≠nku, boj!
+	GoodVictory					=	"SVM_13_GoodVictory"			;//(zl√Ω sm√≠ch) Uk√°zals mu, kdo je tady p√°nem!
+	NotBad						= 	"SVM_13_NotBad"					;//(souhlasnƒô) To nebylo ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_13_OhMyGodHesDown"			;//(pro sebe) M≈Øj bo≈æe! Takov√° krutost...
+	CheerFriend01				=	"SVM_13_CheerFriend01"			;//Tak ho pra≈°ƒÉ!
+	CheerFriend02				=	"SVM_13_CheerFriend02"			;//Dej to sem v≈°echno!
+	CheerFriend03				=	"SVM_13_CheerFriend03"			;//Uka≈æ mu!
+	Ooh01						=	"SVM_13_Ooh01"					;//Poƒçkej!
+	Ooh02						=	"SVM_13_Ooh02"					;//D√°vej pozor!
+	Ooh03						=	"SVM_13_Ooh03"					;//J√≥! To byla trefa!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_13_WhatWasThat"				;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_13_WhatWasThat"				;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_13_GetOutOfMyBed"			;//Vypadni z mÈ postele!
-	Awake						= "SVM_13_Awake"					;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_13_GetOutOfMyBed"			;//Vypadni z m√© postele!
+	Awake						= "SVM_13_Awake"					;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_13_ABS_COMMANDER"			;//Pr˝ jsi zaöel za velitelem a dal vÍci do po‚·dku.
-	ABS_MONASTERY				= "SVM_13_ABS_MONASTERY"			;//Pr˝ jsi zaöel za otcem Parlanem, aby ses vyzpovÌdal ze sv˝ch h‚Ìch˘.
-	ABS_FARM					= "SVM_13_ABS_FARM"					;//Pr˝ jsi zaöel za Leem a dal ty vÍci do po‚·dku.
-	ABS_GOOD					= "SVM_13_ABS_GOOD"					;//To je dob‚e.
+	ABS_COMMANDER				= "SVM_13_ABS_COMMANDER"			;//Pr√Ω jsi za≈°el za velitelem a dal vƒôci do po√¢√°dku.
+	ABS_MONASTERY				= "SVM_13_ABS_MONASTERY"			;//Pr√Ω jsi za≈°el za otcem Parlanem, aby ses vyzpov√≠dal ze sv√Ωch h√¢√≠ch≈Ø.
+	ABS_FARM					= "SVM_13_ABS_FARM"					;//Pr√Ω jsi za≈°el za Leem a dal ty vƒôci do po√¢√°dku.
+	ABS_GOOD					= "SVM_13_ABS_GOOD"					;//To je dob√¢e.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_13_SHEEPKILLER_CRIME"		;//Takhle vraûdit naöe ovce!
-	ATTACK_CRIME				= "SVM_13_ATTACK_CRIME"				;//Nech mÍ na pokoji, ty öpinav˝ zvÌ‚e!
-	THEFT_CRIME					= "SVM_13_THEFT_CRIME"				;//Nech mÍ na pokoji, ty mizernej zlodÍji!
+	SHEEPKILLER_CRIME			= "SVM_13_SHEEPKILLER_CRIME"		;//Takhle vra≈ædit na≈°e ovce!
+	ATTACK_CRIME				= "SVM_13_ATTACK_CRIME"				;//Nech mƒô na pokoji, ty ≈°pinav√Ω zv√≠√¢e!
+	THEFT_CRIME					= "SVM_13_THEFT_CRIME"				;//Nech mƒô na pokoji, ty mizernej zlodƒôji!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_13_PAL_CITY_CRIME"			;//Jsi ostudou svÈho ‚·du! PoËkej, aû se o tom dozvÌ lord Hagen!
-	MIL_CITY_CRIME				= "SVM_13_MIL_CITY_CRIME"			;//Jsi ostudou mÍstsk˝ch str·ûÌ! PoËkej, aû se o tom dozvÌ lord Andre!
-	CITY_CRIME					= "SVM_13_CITY_CRIME"				;//PoËkej, aû se o tom dozvÌ lord Andre.
+	PAL_CITY_CRIME				= "SVM_13_PAL_CITY_CRIME"			;//Jsi ostudou sv√©ho √¢√°du! Poƒçkej, a≈æ se o tom dozv√≠ lord Hagen!
+	MIL_CITY_CRIME				= "SVM_13_MIL_CITY_CRIME"			;//Jsi ostudou mƒôstsk√Ωch str√°≈æ√≠! Poƒçkej, a≈æ se o tom dozv√≠ lord Andre!
+	CITY_CRIME					= "SVM_13_CITY_CRIME"				;//Poƒçkej, a≈æ se o tom dozv√≠ lord Andre.
 	// -------------------------
-	MONA_CRIME					= "SVM_13_MONA_CRIME"				;//PoËkej, aû se o tom dozvÌ otec Parlan!
-	FARM_CRIME					= "SVM_13_FARM_CRIME"				;//PoËkej, aû se to donese k Leeovi...
-	OC_CRIME					= "SVM_13_OC_CRIME"					;//PoËkej, aû se o tom dozvÌ velitel Garond!
+	MONA_CRIME					= "SVM_13_MONA_CRIME"				;//Poƒçkej, a≈æ se o tom dozv√≠ otec Parlan!
+	FARM_CRIME					= "SVM_13_FARM_CRIME"				;//Poƒçkej, a≈æ se to donese k Leeovi...
+	OC_CRIME					= "SVM_13_OC_CRIME"					;//Poƒçkej, a≈æ se o tom dozv√≠ velitel Garond!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_13_TOUGHGUY_ATTACKLOST"		;//Dobr·, dobr·, jsi lepöÌ bojovnÌk neû j·. Co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_13_TOUGHGUY_ATTACKWON"		;//(arogantnÍ) M·m dojem, ûe uû ti musÌ b˝t jasnÈ, kdo je tady ten silnÍjöÌ... Co chceö?
-	TOUGHGUY_PLAYERATTACK		= "SVM_13_TOUGHGUY_PLAYERATTACK"	;//MÍl jsem dojem, ûe ses na mÍ pokouöel vyt·hnout zbra‡. To sis to rozmyslel? Ty spÌö d·v·ö p‚ednost ROZHOVORU, co? (smÌch)
+	TOUGHGUY_ATTACKLOST			= "SVM_13_TOUGHGUY_ATTACKLOST"		;//Dobr√°, dobr√°, jsi lep≈°√≠ bojovn√≠k ne≈æ j√°. Co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_13_TOUGHGUY_ATTACKWON"		;//(arogantnƒô) M√°m dojem, ≈æe u≈æ ti mus√≠ b√Ωt jasn√©, kdo je tady ten silnƒôj≈°√≠... Co chce≈°?
+	TOUGHGUY_PLAYERATTACK		= "SVM_13_TOUGHGUY_PLAYERATTACK"	;//Mƒôl jsem dojem, ≈æe ses na mƒô pokou≈°el vyt√°hnout zbra≈ï. To sis to rozmyslel? Ty sp√≠≈° d√°v√°≈° p√¢ednost ROZHOVORU, co? (sm√≠ch)
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_13_GOLD_1000"				;//1000 zlat˝ch.
-	GOLD_950					= "SVM_13_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_13_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_13_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_13_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_13_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_13_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_13_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_13_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_13_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_13_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_13_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_13_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_13_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_13_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_13_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_13_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_13_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_13_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_13_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_13_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_13_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_13_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_13_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_13_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_13_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_13_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_13_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_13_GOLD_1000"				;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_13_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_13_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_13_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_13_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_13_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_13_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_13_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_13_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_13_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_13_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_13_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_13_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_13_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_13_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_13_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_13_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_13_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_13_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_13_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_13_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_13_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_13_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_13_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_13_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_13_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_13_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_13_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
 	Smalltalk01					= "SVM_13_Smalltalk01"				;//...je mi to jedno...
-	Smalltalk02					= "SVM_13_Smalltalk02"				;//...nikdo to nechce vÍdÍt...
-	Smalltalk03					= "SVM_13_Smalltalk03"				;//...bylo to jeho rozhodnutÌ, nebo ne...
-	Smalltalk04					= "SVM_13_Smalltalk04"				;//...û·dn˝ n·vrh, ‚ekni...
-	Smalltalk05					= "SVM_13_Smalltalk05"				;//...nem·m s tÌm nic spoleËnÈho...
-	Smalltalk06					= "SVM_13_Smalltalk06"				;//...nem·m na takovÈ vÍci Ëas...
-	Smalltalk07					= "SVM_13_Smalltalk07"				;//...nem˘ûu se z toho jen tak vyvlÌknout...
-	Smalltalk08					= "SVM_13_Smalltalk08"				;//...nebudeö mi ‚Ìkat...
-	Smalltalk09					= "SVM_13_Smalltalk09"				;//...byl tam, udÍlal to...
-	Smalltalk10					= "SVM_13_Smalltalk10"				;//...vÍci, o kter˝ch ti m˘ûu ‚Ìct...
-	Smalltalk11					= "SVM_13_Smalltalk11"				;//...na to se nem˘ûeö spolÈhat...
-	Smalltalk12					= "SVM_13_Smalltalk12"				;//...j· to ‚Ìkal uû d·vno...
-	Smalltalk13					= "SVM_13_Smalltalk13"				;//...a je toho vÌc, vÍ‚ mi...
-	Smalltalk14					= "SVM_13_Smalltalk14"				;//...nÍkterÈ vÍci se vracÌ v plnÈ mÌ‚e...
-	Smalltalk15					= "SVM_13_Smalltalk15"				;//...‚ekni, ûe to nenÌ pravda...
-	Smalltalk16					= "SVM_13_Smalltalk16"				;//...d‚Ìve Ëi pozdÍji by k tomu doölo...
-	Smalltalk17					= "SVM_13_Smalltalk17"				;//...v·ûnÍ o tom mÍl vÍdÍt vÌc...
-	Smalltalk18					= "SVM_13_Smalltalk18"				;//...to uû nic nezmÍnÌ...
-	Smalltalk19					= "SVM_13_Smalltalk19"				;//...nenÌ to û·dnÈ tajemstvÌ...
-	Smalltalk20					= "SVM_13_Smalltalk20"				;//...nenÌ to û·dn˝ velk˝ obchod...
-	Smalltalk21					= "SVM_13_Smalltalk21"				;//...myslel si, ûe je to snadnÈ jak...
-	Smalltalk22					= "SVM_13_Smalltalk22"				;//...nikdo ve skuteËnosti nechce slyöet...
+	Smalltalk02					= "SVM_13_Smalltalk02"				;//...nikdo to nechce vƒôdƒôt...
+	Smalltalk03					= "SVM_13_Smalltalk03"				;//...bylo to jeho rozhodnut√≠, nebo ne...
+	Smalltalk04					= "SVM_13_Smalltalk04"				;//...≈æ√°dn√Ω n√°vrh, √¢ekni...
+	Smalltalk05					= "SVM_13_Smalltalk05"				;//...nem√°m s t√≠m nic spoleƒçn√©ho...
+	Smalltalk06					= "SVM_13_Smalltalk06"				;//...nem√°m na takov√© vƒôci ƒças...
+	Smalltalk07					= "SVM_13_Smalltalk07"				;//...nem≈Ø≈æu se z toho jen tak vyvl√≠knout...
+	Smalltalk08					= "SVM_13_Smalltalk08"				;//...nebude≈° mi √¢√≠kat...
+	Smalltalk09					= "SVM_13_Smalltalk09"				;//...byl tam, udƒôlal to...
+	Smalltalk10					= "SVM_13_Smalltalk10"				;//...vƒôci, o kter√Ωch ti m≈Ø≈æu √¢√≠ct...
+	Smalltalk11					= "SVM_13_Smalltalk11"				;//...na to se nem≈Ø≈æe≈° spol√©hat...
+	Smalltalk12					= "SVM_13_Smalltalk12"				;//...j√° to √¢√≠kal u≈æ d√°vno...
+	Smalltalk13					= "SVM_13_Smalltalk13"				;//...a je toho v√≠c, vƒô√¢ mi...
+	Smalltalk14					= "SVM_13_Smalltalk14"				;//...nƒôkter√© vƒôci se vrac√≠ v pln√© m√≠√¢e...
+	Smalltalk15					= "SVM_13_Smalltalk15"				;//...√¢ekni, ≈æe to nen√≠ pravda...
+	Smalltalk16					= "SVM_13_Smalltalk16"				;//...d√¢√≠ve ƒçi pozdƒôji by k tomu do≈°lo...
+	Smalltalk17					= "SVM_13_Smalltalk17"				;//...v√°≈ænƒô o tom mƒôl vƒôdƒôt v√≠c...
+	Smalltalk18					= "SVM_13_Smalltalk18"				;//...to u≈æ nic nezmƒôn√≠...
+	Smalltalk19					= "SVM_13_Smalltalk19"				;//...nen√≠ to ≈æ√°dn√© tajemstv√≠...
+	Smalltalk20					= "SVM_13_Smalltalk20"				;//...nen√≠ to ≈æ√°dn√Ω velk√Ω obchod...
+	Smalltalk21					= "SVM_13_Smalltalk21"				;//...myslel si, ≈æe je to snadn√© jak...
+	Smalltalk22					= "SVM_13_Smalltalk22"				;//...nikdo ve skuteƒçnosti nechce sly≈°et...
 	Smalltalk23					= "SVM_13_Smalltalk23"				;//...a to je pravda...
-	Smalltalk24					= "SVM_13_Smalltalk24"				;//...prostÍ poslouchej...
+	Smalltalk24					= "SVM_13_Smalltalk24"				;//...prostƒô poslouchej...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                      
-	Smalltalk25					= "SVM_13_Smalltalk25"				;//...kdyby nebylo n·s, dopadlo by to jinak...
-	Smalltalk26					= "SVM_13_Smalltalk26"				;//...prostÍ pot‚ebuje vÌc zkuöenostÌ...
-	Smalltalk27					= "SVM_13_Smalltalk27"				;//...co on vÌ o sluûbÍ...
+	Smalltalk25					= "SVM_13_Smalltalk25"				;//...kdyby nebylo n√°s, dopadlo by to jinak...
+	Smalltalk26					= "SVM_13_Smalltalk26"				;//...prostƒô pot√¢ebuje v√≠c zku≈°enost√≠...
+	Smalltalk27					= "SVM_13_Smalltalk27"				;//...co on v√≠ o slu≈æbƒô...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                      
-	Smalltalk28					= "SVM_13_Smalltalk28"				;//...Innos vymÍ‚Ì spravedliv˝ trest...
-	Smalltalk29					= "SVM_13_Smalltalk29"				;//...cesta poctivosti je dlouh· a trnit·...
-	Smalltalk30					= "SVM_13_Smalltalk30"				;//...pouze Innos rozhodne, co je spr·vnÈ a co ne...
+	Smalltalk28					= "SVM_13_Smalltalk28"				;//...Innos vymƒô√¢√≠ spravedliv√Ω trest...
+	Smalltalk29					= "SVM_13_Smalltalk29"				;//...cesta poctivosti je dlouh√° a trnit√°...
+	Smalltalk30					= "SVM_13_Smalltalk30"				;//...pouze Innos rozhodne, co je spr√°vn√© a co ne...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_13_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_13_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_13_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_13_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_13_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_13_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_13_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_13_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_13_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_13_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_13_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_13_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_13_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_13_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_13_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_13_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_13_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_13_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_13_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_13_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_13_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_13_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_13_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_13_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_13_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_13_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_13_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_13_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_13_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_13_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_13_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_13_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_13_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_13_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_13_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_13_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_13_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_13_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_13_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_13_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_13_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_13_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_13_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_13_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_13_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_13_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_13_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_13_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_13_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_13_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_13_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_13_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_13_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_13_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_13_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_13_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_13_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_13_Aargh_1"					;//Aargh
@@ -2993,221 +2993,221 @@ instance SVM_13 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_13_Addon_WrongArmor";			//Co to m·ö na sobÍ? V˘bec se to k tobÍ nehodÌ. Dej mi pokoj.
-	ADDON_WRONGARMOR_SLD		= "SVM_13_ADDON_WRONGARMOR_SLD";		//Nem·ö na sobÍ zbroj ñ bÍû si ji vzÌt.
-	ADDON_WRONGARMOR_MIL		= "SVM_13_ADDON_WRONGARMOR_MIL";		//MÍl bys hrdÍ nosit kr·lovskou zbroj a nebÍhat tu v takov˝ch hadrech! Odchod!
-	ADDON_WRONGARMOR_KDF		= "SVM_13_ADDON_WRONGARMOR_KDF";		//ProË nenosÌö roucho naöeho ‚·du? BÍû si o tom pop‚em˝ölet!
-	ADDON_NOARMOR_BDT			= "SVM_13_ADDON_ADDON_NOARMOR_BDT";		//Dyk na sobÍ nem·ö ani zbroj. Vypadni.
+	ADDON_WRONGARMOR			= "SVM_13_Addon_WrongArmor";			//Co to m√°≈° na sobƒô? V≈Øbec se to k tobƒô nehod√≠. Dej mi pokoj.
+	ADDON_WRONGARMOR_SLD		= "SVM_13_ADDON_WRONGARMOR_SLD";		//Nem√°≈° na sobƒô zbroj ‚Äì bƒô≈æ si ji vz√≠t.
+	ADDON_WRONGARMOR_MIL		= "SVM_13_ADDON_WRONGARMOR_MIL";		//Mƒôl bys hrdƒô nosit kr√°lovskou zbroj a nebƒôhat tu v takov√Ωch hadrech! Odchod!
+	ADDON_WRONGARMOR_KDF		= "SVM_13_ADDON_WRONGARMOR_KDF";		//Proƒç nenos√≠≈° roucho na≈°eho √¢√°du? Bƒô≈æ si o tom pop√¢em√Ω≈°let!
+	ADDON_NOARMOR_BDT			= "SVM_13_ADDON_ADDON_NOARMOR_BDT";		//Dyk na sobƒô nem√°≈° ani zbroj. Vypadni.
 
-	ADDON_DIEBANDIT				= "SVM_13_ADDON_DIEBANDIT";				//Ty öpinavej bandito!
-	ADDON_DIRTYPIRATE			= "SVM_13_ADDON_DIRTYPIRATE";			//Ty mizernej pir·te!
+	ADDON_DIEBANDIT				= "SVM_13_ADDON_DIEBANDIT";				//Ty ≈°pinavej bandito!
+	ADDON_DIRTYPIRATE			= "SVM_13_ADDON_DIRTYPIRATE";			//Ty mizernej pir√°te!
 };
 
 
 instance SVM_14 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_14_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_14_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_14_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_14_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_14_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_14_IGetYouStill"				;//Tak jsem tÍ p‚ece jen dostal!
-	DieEnemy					=	"SVM_14_DieEnemy"					;//S·m sis o to ‚ekl!
-	DieMonster					=	"SVM_14_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_14_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_14_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_14_SheepKiller"					;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_14_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	IGetYouStill				= 	"SVM_14_IGetYouStill"				;//Tak jsem tƒô p√¢ece jen dostal!
+	DieEnemy					=	"SVM_14_DieEnemy"					;//S√°m sis o to √¢ekl!
+	DieMonster					=	"SVM_14_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_14_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_14_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_14_SheepKiller"					;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_14_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_14_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_14_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_14_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_14_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_14_ThenIBeatYouOutOfHere"		;//Tak to tÍ odsud budu muset VYKOPAT!
-	WhatDidYouDoInThere			=	"SVM_14_WhatDidYouDoInThere"			;//Tak co jsi tam teda dÍlal, no!?
-	WillYouStopFighting			=	"SVM_14_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_14_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_14_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_14_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_14_ThenIBeatYouOutOfHere"		;//Tak to tƒô odsud budu muset VYKOPAT!
+	WhatDidYouDoInThere			=	"SVM_14_WhatDidYouDoInThere"			;//Tak co jsi tam teda dƒôlal, no!?
+	WillYouStopFighting			=	"SVM_14_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_14_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_14_EnemyKilled"					;//Trochu velk˝ sousto, co, ty b‚Ìdile!
-	MonsterKilled				=	"SVM_14_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_14_ThiefDown"					;//Uû se mÍ nikdy nepokouöej okr·st!
-	rumfummlerDown				=	"SVM_14_rumfummlerDown"				;//Uû nikdy tÍma sv˝ma prackama nesahej na vÍci, co ti ne‚Ìkaj pane!
-	SheepAttackerDown			=	"SVM_14_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_14_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_14_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_14_NeverHitMeAgain"				;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_14_YouBetterShouldHaveListened"	;//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_14_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_14_NeverEnterRoomAgain"			;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_14_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö? Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_14_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_14_EnemyKilled"					;//Trochu velk√Ω sousto, co, ty b√¢√≠dile!
+	MonsterKilled				=	"SVM_14_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_14_ThiefDown"					;//U≈æ se mƒô nikdy nepokou≈°ej okr√°st!
+	rumfummlerDown				=	"SVM_14_rumfummlerDown"				;//U≈æ nikdy tƒôma sv√Ωma prackama nesahej na vƒôci, co ti ne√¢√≠kaj pane!
+	SheepAttackerDown			=	"SVM_14_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_14_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_14_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_14_NeverHitMeAgain"				;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_14_YouBetterShouldHaveListened"	;//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_14_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_14_NeverEnterRoomAgain"			;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_14_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°? Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_14_SpareMe"						;//ProstÍ mÍ nech b˝t!
-	RunAway						= 	"SVM_14_RunAway"						;//Do hajzlu! Pad·m pryË!
+	SpareMe						=	"SVM_14_SpareMe"						;//Prostƒô mƒô nech b√Ωt!
+	RunAway						= 	"SVM_14_RunAway"						;//Do hajzlu! Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_14_Alarm"						;//POPLACH!
-	Guards						=	"SVM_14_Guards"						;//STR¡éE!
+	Guards						=	"SVM_14_Guards"						;//STR√Å≈ΩE!
 	Help						=	"SVM_14_Help"						;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_14_GoodMonsterKill"				;//(vol·) Dobr· pr·ce - o jednu öpinavou bestii mÌ‡!
-	GoodKill					= 	"SVM_14_GoodKill"					;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_14_GoodMonsterKill"				;//(vol√°) Dobr√° pr√°ce - o jednu ≈°pinavou bestii m√≠≈ï!
+	GoodKill					= 	"SVM_14_GoodKill"					;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_14_NOTNOW"						;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_14_NOTNOW"						;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_14_RunCoward"					;//(hlasitÍ k‚iËÌ) Hej, st˘j, ty öpinavËe!
+	RunCoward					=	"SVM_14_RunCoward"					;//(hlasitƒô k√¢iƒç√≠) Hej, st≈Øj, ty ≈°pinavƒçe!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_14_GetOutOfHere"				;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_14_WhyAreYouInHere"				;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_14_WhyAreYouInHere"				;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_14_YesGoOutOfHere"				;//Jo, pakuj se!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_14_WhatsThisSupposedToBe"		;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_14_YouDisturbedMySlumber"		;//(probudÌ se) K Ëertu, co se dÍje?
+	WhatsThisSupposedToBe		=	"SVM_14_WhatsThisSupposedToBe"		;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_14_YouDisturbedMySlumber"		;//(probud√≠ se) K ƒçertu, co se dƒôje?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_14_ITookYourGold"				;//Zlato! Fajn, to si vezmu - jen tak pro zaË·tek.
-	ShitNoGold					=	"SVM_14_ShitNoGold"					;//Ty u sebe nem·ö û·dnÈ zlato?
-	ITakeYourWeapon				=	"SVM_14_ITakeYourWeapon"				;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_14_ITookYourGold"				;//Zlato! Fajn, to si vezmu - jen tak pro zaƒç√°tek.
+	ShitNoGold					=	"SVM_14_ShitNoGold"					;//Ty u sebe nem√°≈° ≈æ√°dn√© zlato?
+	ITakeYourWeapon				=	"SVM_14_ITakeYourWeapon"				;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_14_WhatAreYouDoing"				;//(varovnÍ) Hej! Dej si bacha!
+	WhatAreYouDoing				=	"SVM_14_WhatAreYouDoing"				;//(varovnƒô) Hej! Dej si bacha!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_14_LookingForTroubleAgain"		;//(agresivnÍ) JeötÍ nem·ö dost?
-	StopMagic					=	"SVM_14_StopMagic"					;//Nep‚ibliûuj se ke mnÍ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_14_ISaidStopMagic"				;//P‚esta‡ s tou magiÌ! M·ö snad nÍco s uöima!?
-	WeaponDown					=	"SVM_14_WeaponDown"					;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_14_ISaidWeaponDown"				;//Copak jsi neslyöel? ¬ekl jsem: Dej pryË tu zbra‡!
+	LookingForTroubleAgain		=	"SVM_14_LookingForTroubleAgain"		;//(agresivnƒô) Je≈°tƒô nem√°≈° dost?
+	StopMagic					=	"SVM_14_StopMagic"					;//Nep√¢ibli≈æuj se ke mnƒô s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_14_ISaidStopMagic"				;//P√¢esta≈ï s tou magi√≠! M√°≈° snad nƒôco s u≈°ima!?
+	WeaponDown					=	"SVM_14_WeaponDown"					;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_14_ISaidWeaponDown"				;//Copak jsi nesly≈°el? √Çekl jsem: Dej pryƒç tu zbra≈ï!
 	WiseMove					=	"SVM_14_WiseMove"					;//Ani to nebolelo, co?
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_14_NextTimeYoureInForIt"		;//(pro sebe) JeötÍ se uvidÌ.
+	NextTimeYoureInForIt		=	"SVM_14_NextTimeYoureInForIt"		;//(pro sebe) Je≈°tƒô se uvid√≠.
 	OhMyHead					=	"SVM_14_OhMyHead"					;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_14_TheresAFight"				;//(dychtivÍ) KoneËnÍ se nÍco dÍje!
-	OhMyGodItsAFight			=	"SVM_14_OhMyGodItsAFight"			;//(vystraöenÍ) Vyml·tÌ si navz·jem mozky z hlavy.
-	GoodVictory					=	"SVM_14_GoodVictory"					;//(zl˝ smÌch) Koledoval si o to!
-	NotBad						= 	"SVM_14_NotBad"						;//(souhlasnÍ) To nebylo v˘bec öpatnÈ.
-	OhMyGodHesDown				=	"SVM_14_OhMyGodHesDown"				;//(pro sebe) Takov˝ surovec...
+	TheresAFight				=	"SVM_14_TheresAFight"				;//(dychtivƒô) Koneƒçnƒô se nƒôco dƒôje!
+	OhMyGodItsAFight			=	"SVM_14_OhMyGodItsAFight"			;//(vystra≈°enƒô) Vyml√°t√≠ si navz√°jem mozky z hlavy.
+	GoodVictory					=	"SVM_14_GoodVictory"					;//(zl√Ω sm√≠ch) Koledoval si o to!
+	NotBad						= 	"SVM_14_NotBad"						;//(souhlasnƒô) To nebylo v≈Øbec ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_14_OhMyGodHesDown"				;//(pro sebe) Takov√Ω surovec...
 	CheerFriend01				=	"SVM_14_CheerFriend01"				;//Jo, to je ono!
-	CheerFriend02				=	"SVM_14_CheerFriend02"				;//Tak na co Ëek·ö?
-	CheerFriend03				=	"SVM_14_CheerFriend03"				;//V˝bornÍ!
+	CheerFriend02				=	"SVM_14_CheerFriend02"				;//Tak na co ƒçek√°≈°?
+	CheerFriend03				=	"SVM_14_CheerFriend03"				;//V√Ωbornƒô!
 	Ooh01						=	"SVM_14_Ooh01"						;//Jen se z toho nezvencni!
-	Ooh02						=	"SVM_14_Ooh02"						;//Ukaû mu, kdo je tady öÈf!
+	Ooh02						=	"SVM_14_Ooh02"						;//Uka≈æ mu, kdo je tady ≈°√©f!
 	Ooh03						=	"SVM_14_Ooh03"						;//Do hajzlu!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_14_WhatWasThat"					;//(pro sebe, vst·v·) Co bylo zas TOHLE!?
+	WhatWasThat					= "SVM_14_WhatWasThat"					;//(pro sebe, vst√°v√°) Co bylo zas TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_14_GetOutOfMyBed"					;//Vypadni z mÈ postele!
-	Awake						= "SVM_14_Awake"							;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_14_GetOutOfMyBed"					;//Vypadni z m√© postele!
+	Awake						= "SVM_14_Awake"							;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_14_ABS_COMMANDER"					;//Slyöel jsem, ûe jsi zaöel za velitelem a dal vÍci do po‚·dku.
-	ABS_MONASTERY				= "SVM_14_ABS_MONASTERY"					;//Slyöel jsem, ûe jsi zaöel za otcem Parlanem a vyzpovÌdal ses mu ze sv˝ch h‚Ìch˘.
-	ABS_FARM					= "SVM_14_ABS_FARM"						;//¬Ìk· se, ûe jsi zaöel za Leem a uklidnil situaci.
-	ABS_GOOD					= "SVM_14_ABS_GOOD"						;//To je dob‚e.
+	ABS_COMMANDER				= "SVM_14_ABS_COMMANDER"					;//Sly≈°el jsem, ≈æe jsi za≈°el za velitelem a dal vƒôci do po√¢√°dku.
+	ABS_MONASTERY				= "SVM_14_ABS_MONASTERY"					;//Sly≈°el jsem, ≈æe jsi za≈°el za otcem Parlanem a vyzpov√≠dal ses mu ze sv√Ωch h√¢√≠ch≈Ø.
+	ABS_FARM					= "SVM_14_ABS_FARM"						;//√Ç√≠k√° se, ≈æe jsi za≈°el za Leem a uklidnil situaci.
+	ABS_GOOD					= "SVM_14_ABS_GOOD"						;//To je dob√¢e.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_14_SHEEPKILLER_CRIME"				;//Takhle vraûdit naöe ovce! Vypadni, vole!
-	ATTACK_CRIME				= "SVM_14_ATTACK_CRIME"					;//S mizernejma gr·zlama se nebavim!
-	THEFT_CRIME					= "SVM_14_THEFT_CRIME"					;//Jdi mi z oËÌ, ty öpinavej zlodÍji!
+	SHEEPKILLER_CRIME			= "SVM_14_SHEEPKILLER_CRIME"				;//Takhle vra≈ædit na≈°e ovce! Vypadni, vole!
+	ATTACK_CRIME				= "SVM_14_ATTACK_CRIME"					;//S mizernejma gr√°zlama se nebavim!
+	THEFT_CRIME					= "SVM_14_THEFT_CRIME"					;//Jdi mi z oƒç√≠, ty ≈°pinavej zlodƒôji!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_14_PAL_CITY_CRIME"				;//Jsi ostudou svÈho ‚·du! Lord Hagen se bude zlobit!
-	MIL_CITY_CRIME				= "SVM_14_MIL_CITY_CRIME"				;//Jsi ostudou mÍstsk˝ch str·ûÌ! Lord Andre tÍ jeötÍ nauËÌ zp˘sob˘m!
-	CITY_CRIME					= "SVM_14_CITY_CRIME"					;//Lord Andre se dozvÌ o tom, cos provedl!
+	PAL_CITY_CRIME				= "SVM_14_PAL_CITY_CRIME"				;//Jsi ostudou sv√©ho √¢√°du! Lord Hagen se bude zlobit!
+	MIL_CITY_CRIME				= "SVM_14_MIL_CITY_CRIME"				;//Jsi ostudou mƒôstsk√Ωch str√°≈æ√≠! Lord Andre tƒô je≈°tƒô nauƒç√≠ zp≈Øsob≈Øm!
+	CITY_CRIME					= "SVM_14_CITY_CRIME"					;//Lord Andre se dozv√≠ o tom, cos provedl!
 	// -------------------------
-	MONA_CRIME					= "SVM_14_MONA_CRIME"					;//Otec Parlan o tom neuslyöÌ r·d!
-	FARM_CRIME					= "SVM_14_FARM_CRIME"					;//Lee ti d· co proto! JeötÍ uvidÌö, co sis nadrobil!
-	OC_CRIME					= "SVM_14_OC_CRIME"						;//Velitel Garond po tobÍ bude chtÌt vysvÍtlenÌ!
+	MONA_CRIME					= "SVM_14_MONA_CRIME"					;//Otec Parlan o tom neusly≈°√≠ r√°d!
+	FARM_CRIME					= "SVM_14_FARM_CRIME"					;//Lee ti d√° co proto! Je≈°tƒô uvid√≠≈°, co sis nadrobil!
+	OC_CRIME					= "SVM_14_OC_CRIME"						;//Velitel Garond po tobƒô bude cht√≠t vysvƒôtlen√≠!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_14_TOUGHGUY_ATTACKLOST"			;//Tak dobr·, dobr·, vyhr·l jsi. Co chceö?
-	TOUGHGUY_ATTACKWON			= "SVM_14_TOUGHGUY_ATTACKWON"			;//(nafoukanÍ) M·m ti znovu uk·zat, kdo je tady p·nem?
-	TOUGHGUY_PLAYERATTACK		= "SVM_14_TOUGHGUY_PLAYERATTACK"			;//ZkouöÌö to na mÍ znovu, co?
+	TOUGHGUY_ATTACKLOST			= "SVM_14_TOUGHGUY_ATTACKLOST"			;//Tak dobr√°, dobr√°, vyhr√°l jsi. Co chce≈°?
+	TOUGHGUY_ATTACKWON			= "SVM_14_TOUGHGUY_ATTACKWON"			;//(nafoukanƒô) M√°m ti znovu uk√°zat, kdo je tady p√°nem?
+	TOUGHGUY_PLAYERATTACK		= "SVM_14_TOUGHGUY_PLAYERATTACK"			;//Zkou≈°√≠≈° to na mƒô znovu, co?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_14_GOLD_1000"						;//1000 zlat˝ch.
-	GOLD_950					= "SVM_14_GOLD_950"						;//950 zlat˝ch.
-	GOLD_900					= "SVM_14_GOLD_900"						;//900 zlat˝ch.
-	GOLD_850					= "SVM_14_GOLD_850"						;//850 zlat˝ch.
-	GOLD_800					= "SVM_14_GOLD_800"						;//800 zlat˝ch.
-	GOLD_750					= "SVM_14_GOLD_750"						;//750 zlat˝ch.
-	GOLD_700					= "SVM_14_GOLD_700"						;//700 zlat˝ch.
-	GOLD_650					= "SVM_14_GOLD_650"						;//650 zlat˝ch.
-	GOLD_600					= "SVM_14_GOLD_600"						;//600 zlat˝ch.
-	GOLD_550					= "SVM_14_GOLD_550"						;//550 zlat˝ch.
-	GOLD_500					= "SVM_14_GOLD_500"						;//500 zlat˝ch.
-	GOLD_450					= "SVM_14_GOLD_450"						;//450 zlat˝ch.
-	GOLD_400					= "SVM_14_GOLD_400"						;//400 zlat˝ch.
-	GOLD_350					= "SVM_14_GOLD_350"						;//350 zlat˝ch.
-	GOLD_300					= "SVM_14_GOLD_300"						;//300 zlat˝ch.
-	GOLD_250					= "SVM_14_GOLD_250"						;//250 zlat˝ch.
-	GOLD_200					= "SVM_14_GOLD_200"						;//200 zlat˝ch.
-	GOLD_150					= "SVM_14_GOLD_150"						;//150 zlat˝ch.
-	GOLD_100					= "SVM_14_GOLD_100"						;//100 zlat˝ch.
-	GOLD_90						= "SVM_14_GOLD_90"						;//90 zlat˝ch.
-	GOLD_80						= "SVM_14_GOLD_80"						;//80 zlat˝ch.
-	GOLD_70						= "SVM_14_GOLD_70"						;//70 zlat˝ch.
-	GOLD_60						= "SVM_14_GOLD_60"						;//60 zlat˝ch.
-	GOLD_50						= "SVM_14_GOLD_50"						;//50 zlat˝ch.
-	GOLD_40						= "SVM_14_GOLD_40"						;//40 zlat˝ch.
-	GOLD_30						= "SVM_14_GOLD_30"						;//30 zlat˝ch.
-	GOLD_20						= "SVM_14_GOLD_20"						;//20 zlat˝ch.
-	GOLD_10						= "SVM_14_GOLD_10"						;//10 zlat˝ch.
+	GOLD_1000					= "SVM_14_GOLD_1000"						;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_14_GOLD_950"						;//950 zlat√Ωch.
+	GOLD_900					= "SVM_14_GOLD_900"						;//900 zlat√Ωch.
+	GOLD_850					= "SVM_14_GOLD_850"						;//850 zlat√Ωch.
+	GOLD_800					= "SVM_14_GOLD_800"						;//800 zlat√Ωch.
+	GOLD_750					= "SVM_14_GOLD_750"						;//750 zlat√Ωch.
+	GOLD_700					= "SVM_14_GOLD_700"						;//700 zlat√Ωch.
+	GOLD_650					= "SVM_14_GOLD_650"						;//650 zlat√Ωch.
+	GOLD_600					= "SVM_14_GOLD_600"						;//600 zlat√Ωch.
+	GOLD_550					= "SVM_14_GOLD_550"						;//550 zlat√Ωch.
+	GOLD_500					= "SVM_14_GOLD_500"						;//500 zlat√Ωch.
+	GOLD_450					= "SVM_14_GOLD_450"						;//450 zlat√Ωch.
+	GOLD_400					= "SVM_14_GOLD_400"						;//400 zlat√Ωch.
+	GOLD_350					= "SVM_14_GOLD_350"						;//350 zlat√Ωch.
+	GOLD_300					= "SVM_14_GOLD_300"						;//300 zlat√Ωch.
+	GOLD_250					= "SVM_14_GOLD_250"						;//250 zlat√Ωch.
+	GOLD_200					= "SVM_14_GOLD_200"						;//200 zlat√Ωch.
+	GOLD_150					= "SVM_14_GOLD_150"						;//150 zlat√Ωch.
+	GOLD_100					= "SVM_14_GOLD_100"						;//100 zlat√Ωch.
+	GOLD_90						= "SVM_14_GOLD_90"						;//90 zlat√Ωch.
+	GOLD_80						= "SVM_14_GOLD_80"						;//80 zlat√Ωch.
+	GOLD_70						= "SVM_14_GOLD_70"						;//70 zlat√Ωch.
+	GOLD_60						= "SVM_14_GOLD_60"						;//60 zlat√Ωch.
+	GOLD_50						= "SVM_14_GOLD_50"						;//50 zlat√Ωch.
+	GOLD_40						= "SVM_14_GOLD_40"						;//40 zlat√Ωch.
+	GOLD_30						= "SVM_14_GOLD_30"						;//30 zlat√Ωch.
+	GOLD_20						= "SVM_14_GOLD_20"						;//20 zlat√Ωch.
+	GOLD_10						= "SVM_14_GOLD_10"						;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_14_Smalltalk01"					;//...nevÍ‚Ìm tomu...
-	Smalltalk02					= "SVM_14_Smalltalk02"					;//...nebyl bych si tak jist˝...
-	Smalltalk03					= "SVM_14_Smalltalk03"					;//...ale on vÌ, ûe vöichni...
-	Smalltalk04					= "SVM_14_Smalltalk04"					;//...stÍûÌ vÌm, komu vÍ‚it...
-	Smalltalk05					= "SVM_14_Smalltalk05"					;//...nevÌm, co ho tak rozruöilo...
-	Smalltalk06					= "SVM_14_Smalltalk06"					;//...uû tak jsem v po‚·dn˝ bryndÍ...
-	Smalltalk07					= "SVM_14_Smalltalk07"					;//...zaslechl jsem jednu, dvÍ zvÍsti...
-	Smalltalk08					= "SVM_14_Smalltalk08"					;//...nezajÌm· mÍ, ûe...
-	Smalltalk09					= "SVM_14_Smalltalk09"					;//...nesmÌö vÍ‚it vöemu, co slyöÌö...
-	Smalltalk10					= "SVM_14_Smalltalk10"					;//...to nem· ode mÍ...
-	Smalltalk11					= "SVM_14_Smalltalk11"					;//...uû jsem o tom dost p‚em˝ölel...
-	Smalltalk12					= "SVM_14_Smalltalk12"					;//...nikdo se mÍ neptal na n·zor...
-	Smalltalk13					= "SVM_14_Smalltalk13"					;//...v·ûnÍ si nezaslouûil, aby...
-	Smalltalk14					= "SVM_14_Smalltalk14"					;//...ne‚Ìkej, ûes nevÍdÍl, ûe...
-	Smalltalk15					= "SVM_14_Smalltalk15"					;//...bylo to docela jasnÈ...
-	Smalltalk16					= "SVM_14_Smalltalk16"					;//...tak kde jsi k tomu teda p‚iöel...
-	Smalltalk17					= "SVM_14_Smalltalk17"					;//...takhle to nemohlo jÌt vÍËnÍ...
-	Smalltalk18					= "SVM_14_Smalltalk18"					;//...m·m na to sv˘j vlastnÌ n·zor...
-	Smalltalk19					= "SVM_14_Smalltalk19"					;//...bylo to p‚esnÍ tak, jak jsi ‚Ìkal...
-	Smalltalk20					= "SVM_14_Smalltalk20"					;//...nevÍ‚Ìm tomu, ûe by se to mohlo zmÍnit...
-	Smalltalk21					= "SVM_14_Smalltalk21"					;//...to bylo poprvÈ, co jsem o tom slyöel...
-	Smalltalk22					= "SVM_14_Smalltalk22"					;//...prostÍ poËk·me a uvidÌme...
-	Smalltalk23					= "SVM_14_Smalltalk23"					;//...vÍdÍl jsem, ûe n·s ËekajÌ problÈmy...
-	Smalltalk24					= "SVM_14_Smalltalk24"					;//...tak proË mÍ neposlouchal...
+	Smalltalk01					= "SVM_14_Smalltalk01"					;//...nevƒô√¢√≠m tomu...
+	Smalltalk02					= "SVM_14_Smalltalk02"					;//...nebyl bych si tak jist√Ω...
+	Smalltalk03					= "SVM_14_Smalltalk03"					;//...ale on v√≠, ≈æe v≈°ichni...
+	Smalltalk04					= "SVM_14_Smalltalk04"					;//...stƒô≈æ√≠ v√≠m, komu vƒô√¢it...
+	Smalltalk05					= "SVM_14_Smalltalk05"					;//...nev√≠m, co ho tak rozru≈°ilo...
+	Smalltalk06					= "SVM_14_Smalltalk06"					;//...u≈æ tak jsem v po√¢√°dn√Ω bryndƒô...
+	Smalltalk07					= "SVM_14_Smalltalk07"					;//...zaslechl jsem jednu, dvƒô zvƒôsti...
+	Smalltalk08					= "SVM_14_Smalltalk08"					;//...nezaj√≠m√° mƒô, ≈æe...
+	Smalltalk09					= "SVM_14_Smalltalk09"					;//...nesm√≠≈° vƒô√¢it v≈°emu, co sly≈°√≠≈°...
+	Smalltalk10					= "SVM_14_Smalltalk10"					;//...to nem√° ode mƒô...
+	Smalltalk11					= "SVM_14_Smalltalk11"					;//...u≈æ jsem o tom dost p√¢em√Ω≈°lel...
+	Smalltalk12					= "SVM_14_Smalltalk12"					;//...nikdo se mƒô neptal na n√°zor...
+	Smalltalk13					= "SVM_14_Smalltalk13"					;//...v√°≈ænƒô si nezaslou≈æil, aby...
+	Smalltalk14					= "SVM_14_Smalltalk14"					;//...ne√¢√≠kej, ≈æes nevƒôdƒôl, ≈æe...
+	Smalltalk15					= "SVM_14_Smalltalk15"					;//...bylo to docela jasn√©...
+	Smalltalk16					= "SVM_14_Smalltalk16"					;//...tak kde jsi k tomu teda p√¢i≈°el...
+	Smalltalk17					= "SVM_14_Smalltalk17"					;//...takhle to nemohlo j√≠t vƒôƒçnƒô...
+	Smalltalk18					= "SVM_14_Smalltalk18"					;//...m√°m na to sv≈Øj vlastn√≠ n√°zor...
+	Smalltalk19					= "SVM_14_Smalltalk19"					;//...bylo to p√¢esnƒô tak, jak jsi √¢√≠kal...
+	Smalltalk20					= "SVM_14_Smalltalk20"					;//...nevƒô√¢√≠m tomu, ≈æe by se to mohlo zmƒônit...
+	Smalltalk21					= "SVM_14_Smalltalk21"					;//...to bylo poprv√©, co jsem o tom sly≈°el...
+	Smalltalk22					= "SVM_14_Smalltalk22"					;//...prostƒô poƒçk√°me a uvid√≠me...
+	Smalltalk23					= "SVM_14_Smalltalk23"					;//...vƒôdƒôl jsem, ≈æe n√°s ƒçekaj√≠ probl√©my...
+	Smalltalk24					= "SVM_14_Smalltalk24"					;//...tak proƒç mƒô neposlouchal...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                           
-	Smalltalk25					= "SVM_14_Smalltalk25"					;//...bÍûel, jako by mu byl v pat·ch samotn˝ Beliar...
-	Smalltalk26					= "SVM_14_Smalltalk26"					;//...jasnÍ ûe jsme nakonec dostali...
-	Smalltalk27					= "SVM_14_Smalltalk27"					;//...mÍl bys do toho zas·hnout a situaci vy‚eöit...
+	Smalltalk25					= "SVM_14_Smalltalk25"					;//...bƒô≈æel, jako by mu byl v pat√°ch samotn√Ω Beliar...
+	Smalltalk26					= "SVM_14_Smalltalk26"					;//...jasnƒô ≈æe jsme nakonec dostali...
+	Smalltalk27					= "SVM_14_Smalltalk27"					;//...mƒôl bys do toho zas√°hnout a situaci vy√¢e≈°it...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                           
-	Smalltalk28					= "SVM_14_Smalltalk28"					;//...jeden nikdy nevÌ, jak podlÌ mohou b˝t...
-	Smalltalk29					= "SVM_14_Smalltalk29"					;//...protoûe je to v˘le Innosova...
+	Smalltalk28					= "SVM_14_Smalltalk28"					;//...jeden nikdy nev√≠, jak podl√≠ mohou b√Ωt...
+	Smalltalk29					= "SVM_14_Smalltalk29"					;//...proto≈æe je to v≈Øle Innosova...
 	Smalltalk30					= "SVM_14_Smalltalk30"					;//...jeho skutky byly jen...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_14_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_14_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_14_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_14_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_14_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_14_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_14_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_14_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_14_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_14_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_14_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_14_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_14_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_14_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_14_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_14_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_14_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_14_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_14_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_14_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_14_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_14_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_14_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_14_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_14_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_14_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_14_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_14_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_14_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_14_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_14_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_14_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_14_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_14_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_14_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_14_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_14_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_14_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_14_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_14_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_14_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_14_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_14_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_14_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_14_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_14_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_14_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_14_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_14_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_14_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_14_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_14_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_14_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_14_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_14_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_14_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_14_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_14_Aargh_1"					;//Aargh
@@ -3216,14 +3216,14 @@ instance SVM_14 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_14_Addon_WrongArmor";			//Tyhle öaty se k tobÍ nehodÌ, urËitÍ p‚ede mnou nÍco tajÌö. Nech mÍ b˝t.
-	ADDON_WRONGARMOR_SLD		= "SVM_14_ADDON_WRONGARMOR_SLD";		//Jestli se mnou chceö mluvit, oblÌkni si zbroj.
-	ADDON_WRONGARMOR_MIL		= "SVM_14_ADDON_WRONGARMOR_MIL";		//BuÎ hrd˝ na arm·du, ke kterÈ pat‚Ìö, a necourej se tu v takov˝ch hadrech. BÍû se p‚evlÌct!
-	ADDON_WRONGARMOR_KDF		= "SVM_14_ADDON_WRONGARMOR_KDF";		//NÍco takovÈho by Ëlen naöeho ‚·du nosit nemÍl. BÍû se p‚evlÈknout.
-	ADDON_NOARMOR_BDT			= "SVM_14_ADDON_ADDON_NOARMOR_BDT";		//Dyk na sobÍ nem·ö ani zbroj. Vypadni.
+	ADDON_WRONGARMOR			= "SVM_14_Addon_WrongArmor";			//Tyhle ≈°aty se k tobƒô nehod√≠, urƒçitƒô p√¢ede mnou nƒôco taj√≠≈°. Nech mƒô b√Ωt.
+	ADDON_WRONGARMOR_SLD		= "SVM_14_ADDON_WRONGARMOR_SLD";		//Jestli se mnou chce≈° mluvit, obl√≠kni si zbroj.
+	ADDON_WRONGARMOR_MIL		= "SVM_14_ADDON_WRONGARMOR_MIL";		//Bu√´ hrd√Ω na arm√°du, ke kter√© pat√¢√≠≈°, a necourej se tu v takov√Ωch hadrech. Bƒô≈æ se p√¢evl√≠ct!
+	ADDON_WRONGARMOR_KDF		= "SVM_14_ADDON_WRONGARMOR_KDF";		//Nƒôco takov√©ho by ƒçlen na≈°eho √¢√°du nosit nemƒôl. Bƒô≈æ se p√¢evl√©knout.
+	ADDON_NOARMOR_BDT			= "SVM_14_ADDON_ADDON_NOARMOR_BDT";		//Dyk na sobƒô nem√°≈° ani zbroj. Vypadni.
 
-	ADDON_DIEBANDIT				= "SVM_14_ADDON_DIEBANDIT";				//ChcÌpni, bandito!
-	ADDON_DIRTYPIRATE			= "SVM_14_ADDON_DIRTYPIRATE";			//ChcÌpni, pir·te!
+	ADDON_DIEBANDIT				= "SVM_14_ADDON_DIEBANDIT";				//Chc√≠pni, bandito!
+	ADDON_DIRTYPIRATE			= "SVM_14_ADDON_DIRTYPIRATE";			//Chc√≠pni, pir√°te!
 };
 
 // ****************
@@ -3238,23 +3238,23 @@ INSTANCE SVM_15	(C_SVM)		//	PLAYER	trocken,ernst
 	SC_HeyTurnAround03		= 	"SVM_15_SC_HeyTurnAround03"			;//Hej!
 	SC_HeyTurnAround04		= 	"SVM_15_SC_HeyTurnAround04"			;//Hej!
 	
-	SC_HeyWaitASecond		= 	"SVM_15_SC_HeyWaitASecond"			;//PoËkej chvilku!
+	SC_HeyWaitASecond		= 	"SVM_15_SC_HeyWaitASecond"			;//Poƒçkej chvilku!
 
 	DoesntWork				= 	"SVM_15_DoesntWork"					;//Nefunguje.
-	PickBroke				= 	"SVM_15_PickBroke"					;//Hm, je to zniËenÈ.
-	NeedKey					= 	"SVM_15_NeedKey"					;//Na to pot‚ebuju klÌË...
-	NoMorePicks				= 	"SVM_15_NoMorePicks"				;//é·dnÈ dalöÌ paklÌËe...
-	NoPickLockTalent		= 	"SVM_15_NoPickLockTalent"			;//O p·ËenÌ z·mk˘ nevÌm v˘bec nic.
-	NoSweeping				= 	"SVM_15_NoSweeping"					;//Prohled·nÌ vöech pokoj˘ bude trvat vÍËnost!
+	PickBroke				= 	"SVM_15_PickBroke"					;//Hm, je to zniƒçen√©.
+	NeedKey					= 	"SVM_15_NeedKey"					;//Na to pot√¢ebuju kl√≠ƒç...
+	NoMorePicks				= 	"SVM_15_NoMorePicks"				;//≈Ω√°dn√© dal≈°√≠ pakl√≠ƒçe...
+	NoPickLockTalent		= 	"SVM_15_NoPickLockTalent"			;//O p√°ƒçen√≠ z√°mk≈Ø nev√≠m v≈Øbec nic.
+	NoSweeping				= 	"SVM_15_NoSweeping"					;//Prohled√°n√≠ v≈°ech pokoj≈Ø bude trvat vƒôƒçnost!
 	
-	PICKLOCKORKEYMISSING	= 	"SVM_15_PICKLOCKORKEYMISSING"		;//Hm... Nem·m ani klÌË, ani paklÌË.
-	KEYMISSING				= 	"SVM_15_KEYMISSING"					;//Tohle nem˘ûu bez spr·vnÈho klÌËe nikdy odemknout!
-	PICKLOCKMISSING			= 	"SVM_15_PICKLOCKMISSING"			;//Hodilo by se p·r paklÌË˘!
-	NEVEROPEN				= 	"SVM_15_NEVEROPEN"					;//Tuhle vÍc se mi nikdy nepoda‚Ì odemknout!
-	MISSINGITEM				= 	"SVM_15_MISSINGITEM"				;//Co s tÌm?
+	PICKLOCKORKEYMISSING	= 	"SVM_15_PICKLOCKORKEYMISSING"		;//Hm... Nem√°m ani kl√≠ƒç, ani pakl√≠ƒç.
+	KEYMISSING				= 	"SVM_15_KEYMISSING"					;//Tohle nem≈Ø≈æu bez spr√°vn√©ho kl√≠ƒçe nikdy odemknout!
+	PICKLOCKMISSING			= 	"SVM_15_PICKLOCKMISSING"			;//Hodilo by se p√°r pakl√≠ƒç≈Ø!
+	NEVEROPEN				= 	"SVM_15_NEVEROPEN"					;//Tuhle vƒôc se mi nikdy nepoda√¢√≠ odemknout!
+	MISSINGITEM				= 	"SVM_15_MISSINGITEM"				;//Co s t√≠m?
 	DONTKNOW				= 	"SVM_15_DONTKNOW"					;//Hmm... Ne...
-	NOTHINGTOGET			= 	"SVM_15_NOTHINGTOGET"				;//Nic, co by st·lo za to.
-	NOTHINGTOGET02			= 	"SVM_15_NOTHINGTOGET02"				;//Nic tu nenÌ.
+	NOTHINGTOGET			= 	"SVM_15_NOTHINGTOGET"				;//Nic, co by st√°lo za to.
+	NOTHINGTOGET02			= 	"SVM_15_NOTHINGTOGET02"				;//Nic tu nen√≠.
 	NOTHINGTOGET03			= 	"SVM_15_NOTHINGTOGET03"				;//Nic, co by se dalo sebrat.
 	
 	// ------ sonstige SVMs -------------------------------------------------------------------------
@@ -3262,44 +3262,44 @@ INSTANCE SVM_15	(C_SVM)		//	PLAYER	trocken,ernst
 	Aargh_2					=	"SVM_15_Aargh_2"					;//Aargh
 	Aargh_3					=	"SVM_15_Aargh_3"					;//Aargh
 	Dead					=	"SVM_15_Dead"						;//Aaargh
-	Awake					=	"SVM_15_Awake"						;//(probudÌ se)
+	Awake					=	"SVM_15_Awake"						;//(probud√≠ se)
 	
 	// ------ Story SVMs ----------------------------------------------------------------------------
 	
-	IRDORATHTHEREYOUARE		= 	"SVM_15_IRDORATHTHEREYOUARE"		;//Mmh. Tak to je mÌsto, kde se schov·v·ö. Je to zatracenÍ daleko. Mmh. Budu pot‚ebovat loÎ, abych se tam dostal.
-	HEALSHRINE				= 	"SVM_15_HEALSHRINE"					;//Innosi, pomoz mi a oËisti tuto svatyni.
-	HEALLASTSHRINE			= 	"SVM_15_HEALLASTSHRINE"				;//Innosi, pomoz mi a tak v˘bec... Tak. To uû by mÍlo b˝t naposled.
-	SCOPENSIRDORATHBOOK		= 	"SVM_15_SCOPENSIRDORATHBOOK"		;//XARAK BENDARDO! Ach. Kniha se otev‚ela. Uvnit‚ je schovan˝ dopis a klÌË.
-	SCOPENSLASTDOOR			= 	"SVM_15_SCOPENSLASTDOOR"			;//KHADOSH EMEM KADAR! Otev‚i se!
+	IRDORATHTHEREYOUARE		= 	"SVM_15_IRDORATHTHEREYOUARE"		;//Mmh. Tak to je m√≠sto, kde se schov√°v√°≈°. Je to zatracenƒô daleko. Mmh. Budu pot√¢ebovat lo√´, abych se tam dostal.
+	HEALSHRINE				= 	"SVM_15_HEALSHRINE"					;//Innosi, pomoz mi a oƒçisti tuto svatyni.
+	HEALLASTSHRINE			= 	"SVM_15_HEALLASTSHRINE"				;//Innosi, pomoz mi a tak v≈Øbec... Tak. To u≈æ by mƒôlo b√Ωt naposled.
+	SCOPENSIRDORATHBOOK		= 	"SVM_15_SCOPENSIRDORATHBOOK"		;//XARAK BENDARDO! Ach. Kniha se otev√¢ela. Uvnit√¢ je schovan√Ω dopis a kl√≠ƒç.
+	SCOPENSLASTDOOR			= 	"SVM_15_SCOPENSLASTDOOR"			;//KHADOSH EMEM KADAR! Otev√¢i se!
 
 	//---------Addon SVMs----------------------------------------------------------------------------
 	//ADDON>
-	TRADE_1					= 	"SVM_15_Addon_TRADE_1"					;//PojÎme obchodovat.
-	TRADE_2					= 	"SVM_15_Addon_TRADE_2"					;//Ukaû mi svÈ zboûÌ.
-	TRADE_3					=	"SVM_15_Addon_TRADE_3"					;//Ukaû mi, co m·ö na skladÍ.
+	TRADE_1					= 	"SVM_15_Addon_TRADE_1"					;//Poj√´me obchodovat.
+	TRADE_2					= 	"SVM_15_Addon_TRADE_2"					;//Uka≈æ mi sv√© zbo≈æ√≠.
+	TRADE_3					=	"SVM_15_Addon_TRADE_3"					;//Uka≈æ mi, co m√°≈° na skladƒô.
 	
-	VERSTEHE				=   "SVM_15_Addon_VERSTEHE"					;//Ch·pu.
-	FOUNDTREASURE			=   "SVM_15_Addon_FOUNDTREASURE"			;//¡, myslÌm, ûe jsem nÍco naöel.
-	CANTUNDERSTANDTHIS		=   "SVM_15_Addon_CANTUNDERSTANDTHIS"		;//NerozumÌm tomu.
-	CANTREADTHIS			= 	"SVM_15_Addon_CANTREADTHIS"				;//Tohle nep‚eËtu!
+	VERSTEHE				=   "SVM_15_Addon_VERSTEHE"					;//Ch√°pu.
+	FOUNDTREASURE			=   "SVM_15_Addon_FOUNDTREASURE"			;//√Å, mysl√≠m, ≈æe jsem nƒôco na≈°el.
+	CANTUNDERSTANDTHIS		=   "SVM_15_Addon_CANTUNDERSTANDTHIS"		;//Nerozum√≠m tomu.
+	CANTREADTHIS			= 	"SVM_15_Addon_CANTREADTHIS"				;//Tohle nep√¢eƒçtu!
 	STONEPLATE_1			= 	"SVM_15_Addon_STONEPLATE_1"				;//AKHANTAR!
 	STONEPLATE_2			= 	"SVM_15_Addon_STONEPLATE_2"				;//JHERHEDRA!
 	STONEPLATE_3			= 	"SVM_15_Addon_STONEPLATE_3"				;//URIZIEL RATIS!
 		
-	COUGH					=   "SVM_15_Addon_COUGH"					;//(kaöel) No teda! Brrrr!
+	COUGH					=   "SVM_15_Addon_COUGH"					;//(ka≈°el) No teda! Brrrr!
 	HUI						=	"SVM_15_Addon_HUI"						;//Oh, oh, oh!
 	
-	ATTENTAT_ADDON_DESCRIPTION	=	"SVM_15_ATTENTAT_ADDON_DESCRIPTION"		;//Co vÌö o tom pokusu zabÌt Estebana?
-	ATTENTAT_ADDON_DESCRIPTION2 = 	"SVM_15_ATTENTAT_ADDON_DESCRIPTION2"	;//K tomu ˙toku na Estebana...
-	ATTENTAT_ADDON_PRO			=	"SVM_15_ATTENTAT_ADDON_PRO"				;//Pobil jsem ty zr·dce.
-	ATTENTAT_ADDON_CONTRA		=	"SVM_15_ATTENTAT_ADDON_CONTRA"			;//Hled·m ty chlapy, abych mohl vyt·hnout proti Estebanovi.
+	ATTENTAT_ADDON_DESCRIPTION	=	"SVM_15_ATTENTAT_ADDON_DESCRIPTION"		;//Co v√≠≈° o tom pokusu zab√≠t Estebana?
+	ATTENTAT_ADDON_DESCRIPTION2 = 	"SVM_15_ATTENTAT_ADDON_DESCRIPTION2"	;//K tomu √∫toku na Estebana...
+	ATTENTAT_ADDON_PRO			=	"SVM_15_ATTENTAT_ADDON_PRO"				;//Pobil jsem ty zr√°dce.
+	ATTENTAT_ADDON_CONTRA		=	"SVM_15_ATTENTAT_ADDON_CONTRA"			;//Hled√°m ty chlapy, abych mohl vyt√°hnout proti Estebanovi.
 	
-	MINE_ADDON_DESCRIPTION		=	"SVM_15_MINE_ADDON_DESCRIPTION"		;//Pot‚ebujÌ tÍ v dole.
-	ADDON_SUMMONANCIENTGHOST	=	"SVM_15_ADDON_SUMMONANCIENTGHOST"	;//Ighoriat Thorul. Zjev se mi, Quarhodrone, prad·vn˝ veliteli v·leËnickÈ kasty!
+	MINE_ADDON_DESCRIPTION		=	"SVM_15_MINE_ADDON_DESCRIPTION"		;//Pot√¢ebuj√≠ tƒô v dole.
+	ADDON_SUMMONANCIENTGHOST	=	"SVM_15_ADDON_SUMMONANCIENTGHOST"	;//Ighoriat Thorul. Zjev se mi, Quarhodrone, prad√°vn√Ω veliteli v√°leƒçnick√© kasty!
 	ADDON_ANCIENTGHOST_NOTNEAR	=	"SVM_15_ADDON_ANCIENTGHOST_NOTNEAR"	;//Hmm, tady to nefunguje.
-	ADDON_GOLD_DESCRIPTION		=	"SVM_15_ADDON_GOLD_DESCRIPTION"		;//Co bych mÍl vÍdÍt o dolov·nÌ zlata?
+	ADDON_GOLD_DESCRIPTION		=	"SVM_15_ADDON_GOLD_DESCRIPTION"		;//Co bych mƒôl vƒôdƒôt o dolov√°n√≠ zlata?
 	
-	ADDON_THISLITTLEBASTARD		=   "SVM_15_Addon_ThisLittleBastard";		//Ah·, Francisova ˙ËetnÌ kniha. Ten chlap si kouk·m z cizÌho zlata pÍknÍ namastil vlastnÌ kapsu.
+	ADDON_THISLITTLEBASTARD		=   "SVM_15_Addon_ThisLittleBastard";		//Ah√°, Francisova √∫ƒçetn√≠ kniha. Ten chlap si kouk√°m z ciz√≠ho zlata pƒôknƒô namastil vlastn√≠ kapsu.
 	ADDON_OPENADANOSTEMPLE		=   "SVM_15_Addon_OPENADANOSTEMPLE";		//JHERHEDRA AKHANTAR!
 
 	//ADDON<
@@ -3312,195 +3312,195 @@ INSTANCE SVM_15	(C_SVM)		//	PLAYER	trocken,ernst
 instance SVM_16 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_16_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_16_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_16_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_16_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_16_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_16_IGetYouStill"				;//Tak jsem tÍ p‚ece jen dostal!
-	DieEnemy					=	"SVM_16_DieEnemy"					;//S·m sis o to ‚ekl!
-	DieMonster					=	"SVM_16_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_16_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_16_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_16_SheepKiller"					;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_16_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	IGetYouStill				= 	"SVM_16_IGetYouStill"				;//Tak jsem tƒô p√¢ece jen dostal!
+	DieEnemy					=	"SVM_16_DieEnemy"					;//S√°m sis o to √¢ekl!
+	DieMonster					=	"SVM_16_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_16_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_16_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_16_SheepKiller"					;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_16_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_16_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_16_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_16_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_16_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_16_ThenIBeatYouOutOfHere"		;//Tak to tÍ odsud budu muset VYKOPAT!
-	WhatDidYouDoInThere			=	"SVM_16_WhatDidYouDoInThere"			;//Tak co jsi tam teda dÍlal, no?!
-	WillYouStopFighting			=	"SVM_16_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_16_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_16_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_16_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_16_ThenIBeatYouOutOfHere"		;//Tak to tƒô odsud budu muset VYKOPAT!
+	WhatDidYouDoInThere			=	"SVM_16_WhatDidYouDoInThere"			;//Tak co jsi tam teda dƒôlal, no?!
+	WillYouStopFighting			=	"SVM_16_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_16_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_16_EnemyKilled"				;//Trochu velk˝ sousto, co, ty b‚Ìdile!
-	MonsterKilled				=	"SVM_16_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_16_ThiefDown"					;//Uû se mÍ nikdy nepokouöej okr·st!
-	rumfummlerDown				=	"SVM_16_rumfummlerDown"				;//P‚esta‡ tÍma sv˝ma prackama ömatat na vÍci, kter˝ ti nepat‚ej!
-	SheepAttackerDown			=	"SVM_16_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_16_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_16_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_16_NeverHitMeAgain"				;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_16_YouBetterShouldHaveListened"	;//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_16_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_16_NeverEnterRoomAgain"			;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_16_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö?! Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_16_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_16_EnemyKilled"				;//Trochu velk√Ω sousto, co, ty b√¢√≠dile!
+	MonsterKilled				=	"SVM_16_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_16_ThiefDown"					;//U≈æ se mƒô nikdy nepokou≈°ej okr√°st!
+	rumfummlerDown				=	"SVM_16_rumfummlerDown"				;//P√¢esta≈ï tƒôma sv√Ωma prackama ≈°matat na vƒôci, kter√Ω ti nepat√¢ej!
+	SheepAttackerDown			=	"SVM_16_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_16_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_16_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_16_NeverHitMeAgain"				;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_16_YouBetterShouldHaveListened"	;//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_16_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_16_NeverEnterRoomAgain"			;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_16_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°?! Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_16_SpareMe"						;//Neubliûuj mi!
-	RunAway						= 	"SVM_16_RunAway"						;//Pad·m pryË!
+	SpareMe						=	"SVM_16_SpareMe"						;//Neubli≈æuj mi!
+	RunAway						= 	"SVM_16_RunAway"						;//Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_16_Alarm"					;//POPLACH!
-	Guards						=	"SVM_16_Guards"					;//STR¡éE!
+	Guards						=	"SVM_16_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_16_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_16_GoodMonsterKill"			;//(vol·) Dobr· pr·ce!
-	GoodKill					= 	"SVM_16_GoodKill"				;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_16_GoodMonsterKill"			;//(vol√°) Dobr√° pr√°ce!
+	GoodKill					= 	"SVM_16_GoodKill"				;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_16_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_16_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_16_RunCoward"				;//(vol·) St˘j, babo!
+	RunCoward					=	"SVM_16_RunCoward"				;//(vol√°) St≈Øj, babo!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_16_GetOutOfHere"			;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_16_WhyAreYouInHere"		;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_16_WhyAreYouInHere"		;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_16_YesGoOutOfHere"			;//Jo, pakuj se!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_16_WhatsThisSupposedToBe"	;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_16_YouDisturbedMySlumber"	;//(vst·v·) Co se dÍje?
+	WhatsThisSupposedToBe		=	"SVM_16_WhatsThisSupposedToBe"	;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_16_YouDisturbedMySlumber"	;//(vst√°v√°) Co se dƒôje?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_16_ITookYourGold"			;//DÌky za zlato, ty hrdino!
-	ShitNoGold					=	"SVM_16_ShitNoGold"				;//Ty mizernej vöiv·ku, nem·ö u sebe û·dn˝ zlato!
-	ITakeYourWeapon				=	"SVM_16_ITakeYourWeapon"			;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_16_ITookYourGold"			;//D√≠ky za zlato, ty hrdino!
+	ShitNoGold					=	"SVM_16_ShitNoGold"				;//Ty mizernej v≈°iv√°ku, nem√°≈° u sebe ≈æ√°dn√Ω zlato!
+	ITakeYourWeapon				=	"SVM_16_ITakeYourWeapon"			;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_16_WhatAreYouDoing"			;//(varovnÍ) D·vej si pozor! JeötÍ jednou a nÍjakou ti vrazÌm.
+	WhatAreYouDoing				=	"SVM_16_WhatAreYouDoing"			;//(varovnƒô) D√°vej si pozor! Je≈°tƒô jednou a nƒôjakou ti vraz√≠m.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_16_LookingForTroubleAgain"	;//JeötÍ po‚·d nem·ö dost?
-	StopMagic					=	"SVM_16_StopMagic"				;//P‚esta‡ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_16_ISaidStopMagic"			;//Chceö do zub˘? OkamûitÍ s tÌm p‚esta‡!!!
-	WeaponDown					=	"SVM_16_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_16_ISaidWeaponDown"		;//Tak d·ö tu zatracenou zbra‡ pryË?!
+	LookingForTroubleAgain		=	"SVM_16_LookingForTroubleAgain"	;//Je≈°tƒô po√¢√°d nem√°≈° dost?
+	StopMagic					=	"SVM_16_StopMagic"				;//P√¢esta≈ï s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_16_ISaidStopMagic"			;//Chce≈° do zub≈Ø? Okam≈æitƒô s t√≠m p√¢esta≈ï!!!
+	WeaponDown					=	"SVM_16_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_16_ISaidWeaponDown"		;//Tak d√°≈° tu zatracenou zbra≈ï pryƒç?!
 	WiseMove					=	"SVM_16_WiseMove"				;//Chytrej kluk!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_16_NextTimeYoureInForIt"	;//(pro sebe) Dobr·, p‚ÌötÍ se uk·ûe.
+	NextTimeYoureInForIt		=	"SVM_16_NextTimeYoureInForIt"	;//(pro sebe) Dobr√°, p√¢√≠≈°tƒô se uk√°≈æe.
 	OhMyHead					=	"SVM_16_OhMyHead"				;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_16_TheresAFight"			;//(nedoËkavÍ) Aaa, boj!
-	OhMyGodItsAFight			=	"SVM_16_OhMyGodItsAFight"		;//(vystraöenÍ) BoûÌnku, boj!
-	GoodVictory					=	"SVM_16_GoodVictory"			;//(zl˝ smÌch) Uk·zals mu, kdo je tady p·nem!
-	NotBad						= 	"SVM_16_NotBad"					;//(souhlasnÍ) To nebylo öpatnÈ.
-	OhMyGodHesDown				=	"SVM_16_OhMyGodHesDown"			;//(pro sebe) M˘j boûe! Takov· surovost...
-	CheerFriend01				=	"SVM_16_CheerFriend01"			;//Praö„ ho!
+	TheresAFight				=	"SVM_16_TheresAFight"			;//(nedoƒçkavƒô) Aaa, boj!
+	OhMyGodItsAFight			=	"SVM_16_OhMyGodItsAFight"		;//(vystra≈°enƒô) Bo≈æ√≠nku, boj!
+	GoodVictory					=	"SVM_16_GoodVictory"			;//(zl√Ω sm√≠ch) Uk√°zals mu, kdo je tady p√°nem!
+	NotBad						= 	"SVM_16_NotBad"					;//(souhlasnƒô) To nebylo ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_16_OhMyGodHesDown"			;//(pro sebe) M≈Øj bo≈æe! Takov√° surovost...
+	CheerFriend01				=	"SVM_16_CheerFriend01"			;//Pra≈°ƒÉ ho!
 	CheerFriend02				=	"SVM_16_CheerFriend02"			;//Dej mu co proto!
 	CheerFriend03				=	"SVM_16_CheerFriend03"			;//Jen mu to nandej!
-	Ooh01						=	"SVM_16_Ooh01"					;//Vra„ mu to!
+	Ooh01						=	"SVM_16_Ooh01"					;//VraƒÉ mu to!
 	Ooh02						=	"SVM_16_Ooh02"					;//Tak bacha!
-	Ooh03						=	"SVM_16_Ooh03"					;//Au! Takov· pecka!
+	Ooh03						=	"SVM_16_Ooh03"					;//Au! Takov√° pecka!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_16_WhatWasThat"				;//(pro sebe, vst·v·) Co bylo zase TOHLE!?
+	WhatWasThat					= "SVM_16_WhatWasThat"				;//(pro sebe, vst√°v√°) Co bylo zase TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_16_GetOutOfMyBed"			;//Vypadni z mÈ postele!
-	Awake						= "SVM_16_Awake"					;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_16_GetOutOfMyBed"			;//Vypadni z m√© postele!
+	Awake						= "SVM_16_Awake"					;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     			= "SVM_16_ABS_COMMANDER"    		;//Tak jsi zaöel za velitelem a oËistil svÈ jmÈno.
-	ABS_MONASTERY    			= "SVM_16_ABS_MONASTERY"    		;//Tak jsi zaöel za otcem Parlanem a odËinil svÈ h‚Ìchy.
-	ABS_FARM       				= "SVM_16_ABS_FARM"        			;//Lee dal ty vÍci do po‚·dku.
-	ABS_GOOD       				= "SVM_16_ABS_GOOD"        			;//To je dob‚e.
+	ABS_COMMANDER     			= "SVM_16_ABS_COMMANDER"    		;//Tak jsi za≈°el za velitelem a oƒçistil sv√© jm√©no.
+	ABS_MONASTERY    			= "SVM_16_ABS_MONASTERY"    		;//Tak jsi za≈°el za otcem Parlanem a odƒçinil sv√© h√¢√≠chy.
+	ABS_FARM       				= "SVM_16_ABS_FARM"        			;//Lee dal ty vƒôci do po√¢√°dku.
+	ABS_GOOD       				= "SVM_16_ABS_GOOD"        			;//To je dob√¢e.
  	// -------------------------
-	SHEEPKILLER_CRIME   		= "SVM_16_SHEEPKILLER_CRIME"   		;//Nem˘ûeö prostÍ takhle zabÌjet naöe ovce! Padej odsud!
-	ATTACK_CRIME     			= "SVM_16_ATTACK_CRIME"    			;//Jsi sprostej bandita, nechci s tebou nic mÌt.
-	THEFT_CRIME      			= "SVM_16_THEFT_CRIME"    			;//Se zlodÍji nemluvÌm - a teÎ zmizni!
+	SHEEPKILLER_CRIME   		= "SVM_16_SHEEPKILLER_CRIME"   		;//Nem≈Ø≈æe≈° prostƒô takhle zab√≠jet na≈°e ovce! Padej odsud!
+	ATTACK_CRIME     			= "SVM_16_ATTACK_CRIME"    			;//Jsi sprostej bandita, nechci s tebou nic m√≠t.
+	THEFT_CRIME      			= "SVM_16_THEFT_CRIME"    			;//Se zlodƒôji nemluv√≠m - a te√´ zmizni!
 	// -------------------------
-	PAL_CITY_CRIME     			= "SVM_16_PAL_CITY_CRIME"   		;//Nezachoval ses ËestnÍ. Lordu Hagenovi se to nebude lÌbit!
-	MIL_CITY_CRIME     			= "SVM_16_MIL_CITY_CRIME"   		;//TvÈ chov·nÌ je ostudou mÍstsk˝ch str·ûÌ! Lord Andre po tobÍ bude chtÌt vysvÍtlenÌ!
-	CITY_CRIME       			= "SVM_16_CITY_CRIME"    			;//Lord Andre se dozvÌ o tom, cos provedl!
+	PAL_CITY_CRIME     			= "SVM_16_PAL_CITY_CRIME"   		;//Nezachoval ses ƒçestnƒô. Lordu Hagenovi se to nebude l√≠bit!
+	MIL_CITY_CRIME     			= "SVM_16_MIL_CITY_CRIME"   		;//Tv√© chov√°n√≠ je ostudou mƒôstsk√Ωch str√°≈æ√≠! Lord Andre po tobƒô bude cht√≠t vysvƒôtlen√≠!
+	CITY_CRIME       			= "SVM_16_CITY_CRIME"    			;//Lord Andre se dozv√≠ o tom, cos provedl!
 	// -------------------------
- 	MONA_CRIME       			= "SVM_16_MONA_CRIME"    			;//Zachoval ses öpatnÍ. Jdi za otcem Parlanem a kaj se.
-	FARM_CRIME      			= "SVM_16_FARM_CRIME"    			;//Lee se dozvÌ o tom, cos provedl - a trestu se nevyhneö!
- 	OC_CRIME       				= "SVM_16_OC_CRIME"     			;//Velitel Garond po tobÍ bude chtÌt vysvÍtlenÌ!
+ 	MONA_CRIME       			= "SVM_16_MONA_CRIME"    			;//Zachoval ses ≈°patnƒô. Jdi za otcem Parlanem a kaj se.
+	FARM_CRIME      			= "SVM_16_FARM_CRIME"    			;//Lee se dozv√≠ o tom, cos provedl - a trestu se nevyhne≈°!
+ 	OC_CRIME       				= "SVM_16_OC_CRIME"     			;//Velitel Garond po tobƒô bude cht√≠t vysvƒôtlen√≠!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_16_GOLD_1000"					;//1000 zlat˝ch.
-	GOLD_950					= "SVM_16_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_16_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_16_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_16_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_16_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_16_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_16_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_16_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_16_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_16_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_16_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_16_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_16_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_16_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_16_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_16_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_16_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_16_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_16_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_16_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_16_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_16_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_16_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_16_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_16_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_16_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_16_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_16_GOLD_1000"					;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_16_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_16_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_16_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_16_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_16_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_16_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_16_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_16_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_16_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_16_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_16_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_16_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_16_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_16_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_16_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_16_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_16_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_16_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_16_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_16_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_16_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_16_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_16_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_16_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_16_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_16_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_16_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_16_Smalltalk01"				;//...v·ûnÍ? ZajÌmavÈ...
-	Smalltalk02					= "SVM_16_Smalltalk02"				;//...tomu nevÍ‚Ìm...
-	Smalltalk03					= "SVM_16_Smalltalk03"				;//...tak to m˘j manûel nemyslel...
-	Smalltalk04					= "SVM_16_Smalltalk04"				;//...jdi pryË, ne‚Ìkej mi, ûe...
-	Smalltalk05					= "SVM_16_Smalltalk05"				;//...p‚Ìsah·m, vidÍl jsem to na vlastnÌ oËi...
-	Smalltalk06					= "SVM_16_Smalltalk06"				;//...ne‚Ìkej...
+	Smalltalk01					= "SVM_16_Smalltalk01"				;//...v√°≈ænƒô? Zaj√≠mav√©...
+	Smalltalk02					= "SVM_16_Smalltalk02"				;//...tomu nevƒô√¢√≠m...
+	Smalltalk03					= "SVM_16_Smalltalk03"				;//...tak to m≈Øj man≈æel nemyslel...
+	Smalltalk04					= "SVM_16_Smalltalk04"				;//...jdi pryƒç, ne√¢√≠kej mi, ≈æe...
+	Smalltalk05					= "SVM_16_Smalltalk05"				;//...p√¢√≠sah√°m, vidƒôl jsem to na vlastn√≠ oƒçi...
+	Smalltalk06					= "SVM_16_Smalltalk06"				;//...ne√¢√≠kej...
 	Smalltalk07					= "SVM_16_Smalltalk07"				;//...nikomu o tom ani muk...
-	Smalltalk08					= "SVM_16_Smalltalk08"				;//...jsou to teÎ tÍûkÈ Ëasy...
-	Smalltalk09					= "SVM_16_Smalltalk09"				;//...kdo ‚Ìk· nÍco takovÈho?...
-	Smalltalk10					= "SVM_16_Smalltalk10"				;//...kdybych to nevidÍl na vlastnÌ oËi...
-	Smalltalk11					= "SVM_16_Smalltalk11"				;//...nÍkdo by mÍl tu pr·ci udÍlat...
-	Smalltalk12					= "SVM_16_Smalltalk12"				;//...to nenÌ to, co jsem slyöel...
-	Smalltalk13					= "SVM_16_Smalltalk13"				;//...teÎ je to bÍûnÈ, nebo ne...
-	Smalltalk14					= "SVM_16_Smalltalk14"				;//...s·m nedos·hne niËeho...
-	Smalltalk15					= "SVM_16_Smalltalk15"				;//...udÍlal by lÌp, kdyby drûel zob·k...
-	Smalltalk16					= "SVM_16_Smalltalk16"				;//...a pracuje celÈ dny, p‚Ìliö...
-	Smalltalk17					= "SVM_16_Smalltalk17"				;//...nem˘ûu se starat o vöechno...
-	Smalltalk18					= "SVM_16_Smalltalk18"				;//...prostÍ toho moc nakec·...
-	Smalltalk19					= "SVM_16_Smalltalk19"				;//...je to ve‚ejnÈ tajemstvÌ...
-	Smalltalk20					= "SVM_16_Smalltalk20"				;//...vöichni to teÎ vÍdÌ...
-	Smalltalk21					= "SVM_16_Smalltalk21"				;//...odteÎ uû jÌ ne‚eknu ani slovo...
-	Smalltalk22					= "SVM_16_Smalltalk22"				;//...a bude to jeötÍ horöÌ...
-	Smalltalk23					= "SVM_16_Smalltalk23"				;//...ale to je straönÈ...
-	Smalltalk24					= "SVM_16_Smalltalk24"				;//...to jsem vûdycky ‚Ìkal...
+	Smalltalk08					= "SVM_16_Smalltalk08"				;//...jsou to te√´ tƒô≈æk√© ƒçasy...
+	Smalltalk09					= "SVM_16_Smalltalk09"				;//...kdo √¢√≠k√° nƒôco takov√©ho?...
+	Smalltalk10					= "SVM_16_Smalltalk10"				;//...kdybych to nevidƒôl na vlastn√≠ oƒçi...
+	Smalltalk11					= "SVM_16_Smalltalk11"				;//...nƒôkdo by mƒôl tu pr√°ci udƒôlat...
+	Smalltalk12					= "SVM_16_Smalltalk12"				;//...to nen√≠ to, co jsem sly≈°el...
+	Smalltalk13					= "SVM_16_Smalltalk13"				;//...te√´ je to bƒô≈æn√©, nebo ne...
+	Smalltalk14					= "SVM_16_Smalltalk14"				;//...s√°m nedos√°hne niƒçeho...
+	Smalltalk15					= "SVM_16_Smalltalk15"				;//...udƒôlal by l√≠p, kdyby dr≈æel zob√°k...
+	Smalltalk16					= "SVM_16_Smalltalk16"				;//...a pracuje cel√© dny, p√¢√≠li≈°...
+	Smalltalk17					= "SVM_16_Smalltalk17"				;//...nem≈Ø≈æu se starat o v≈°echno...
+	Smalltalk18					= "SVM_16_Smalltalk18"				;//...prostƒô toho moc nakec√°...
+	Smalltalk19					= "SVM_16_Smalltalk19"				;//...je to ve√¢ejn√© tajemstv√≠...
+	Smalltalk20					= "SVM_16_Smalltalk20"				;//...v≈°ichni to te√´ vƒôd√≠...
+	Smalltalk21					= "SVM_16_Smalltalk21"				;//...odte√´ u≈æ j√≠ ne√¢eknu ani slovo...
+	Smalltalk22					= "SVM_16_Smalltalk22"				;//...a bude to je≈°tƒô hor≈°√≠...
+	Smalltalk23					= "SVM_16_Smalltalk23"				;//...ale to je stra≈°n√©...
+	Smalltalk24					= "SVM_16_Smalltalk24"				;//...to jsem v≈ædycky √¢√≠kal...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_16_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_16_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_16_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_16_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_16_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_16_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_16_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_16_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_16_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_16_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_16_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_16_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_16_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_16_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_16_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_16_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_16_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_16_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_16_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_16_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_16_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_16_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_16_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_16_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_16_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_16_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_16_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_16_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_16_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_16_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_16_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_16_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_16_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_16_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_16_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_16_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_16_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_16_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_16_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_16_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_16_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_16_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_16_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_16_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_16_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_16_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_16_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_16_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_16_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_16_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_16_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_16_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_16_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_16_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_16_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_16_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_16_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_16_Aargh_1"					;//Aargh
@@ -3509,204 +3509,204 @@ instance SVM_16 (C_SVM)
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_16_Addon_WrongArmor";				//OblÌkni si nÍco sluön˝ho, takhle se na tebe nem˘ûu koukat.
+	ADDON_WRONGARMOR			= "SVM_16_Addon_WrongArmor";				//Obl√≠kni si nƒôco slu≈°n√Ωho, takhle se na tebe nem≈Ø≈æu koukat.
 	
 	ADDON_DIEBANDIT				= "SVM_16_ADDON_DIEBANDIT";				//BANDITA!
-	ADDON_DIRTYPIRATE			= "SVM_16_ADDON_DIRTYPIRATE";			//PIR¡T!
+	ADDON_DIRTYPIRATE			= "SVM_16_ADDON_DIRTYPIRATE";			//PIR√ÅT!
 };
 
 instance SVM_17 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_17_MILGreetings"				;//Za kr·le!
+	MILGreetings				= 	"SVM_17_MILGreetings"				;//Za kr√°le!
 	PALGreetings				=	"SVM_17_PALGreetings"				;//Za Innose!
-	Weather						= 	"SVM_17_Weather"						;//Zatracen· slota!
+	Weather						= 	"SVM_17_Weather"						;//Zatracen√° slota!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_17_IGetYouStill"				;//Tak jsem tÍ p‚ece jen dostal!
-	DieEnemy					=	"SVM_17_DieEnemy"					;//S·m sis o to ‚ekl!
-	DieMonster					=	"SVM_17_DieMonster"					;//T·mhle je dalöÌ z tÍch ne‚·d˘!
-	DirtyThief					=	"SVM_17_DirtyThief"					;//Mizernej zlodÍji! Jen poËkej!
-	HandsOff					=	"SVM_17_HandsOff"					;//Dej ty sv˝ öpinav˝ pracky pryË!
-	SheepKiller					=	"SVM_17_SheepKiller"					;//Ten k˝bl hnusu vraûdÌ naöe ovce!
-	SheepKillerMonster			=	"SVM_17_SheepKillerMonster"			;//Ta mizern· zr˘da se cpe naöima ovcema!
+	IGetYouStill				= 	"SVM_17_IGetYouStill"				;//Tak jsem tƒô p√¢ece jen dostal!
+	DieEnemy					=	"SVM_17_DieEnemy"					;//S√°m sis o to √¢ekl!
+	DieMonster					=	"SVM_17_DieMonster"					;//T√°mhle je dal≈°√≠ z tƒôch ne√¢√°d≈Ø!
+	DirtyThief					=	"SVM_17_DirtyThief"					;//Mizernej zlodƒôji! Jen poƒçkej!
+	HandsOff					=	"SVM_17_HandsOff"					;//Dej ty sv√Ω ≈°pinav√Ω pracky pryƒç!
+	SheepKiller					=	"SVM_17_SheepKiller"					;//Ten k√Ωbl hnusu vra≈æd√≠ na≈°e ovce!
+	SheepKillerMonster			=	"SVM_17_SheepKillerMonster"			;//Ta mizern√° zr≈Øda se cpe na≈°ima ovcema!
 	YouMurderer					=	"SVM_17_YouMurderer"					;//Vrahu!
-	DieStupidBeast				=	"SVM_17_DieStupidBeast"				;//Sem û·dn˝ bestie nesmÍj!
-	YouDareHitMe				=	"SVM_17_YouDareHitMe"				;//Jen poËkej, ty zkurvysynu!
-	YouAskedForIt				=	"SVM_17_YouAskedForIt"				;//¬ekl sis o to!
-	ThenIBeatYouOutOfHere		=	"SVM_17_ThenIBeatYouOutOfHere"		;//Tak to tÍ odsud budu muset VYKOPAT!
-	WhatDidYouDoInThere			=	"SVM_17_WhatDidYouDoInThere"			;//Tak co jsi tam teda dÍlal, no!?
-	WillYouStopFighting			=	"SVM_17_WillYouStopFighting"			;//Tak p‚estaneö s tÌm uû?!
+	DieStupidBeast				=	"SVM_17_DieStupidBeast"				;//Sem ≈æ√°dn√Ω bestie nesmƒôj!
+	YouDareHitMe				=	"SVM_17_YouDareHitMe"				;//Jen poƒçkej, ty zkurvysynu!
+	YouAskedForIt				=	"SVM_17_YouAskedForIt"				;//√Çekl sis o to!
+	ThenIBeatYouOutOfHere		=	"SVM_17_ThenIBeatYouOutOfHere"		;//Tak to tƒô odsud budu muset VYKOPAT!
+	WhatDidYouDoInThere			=	"SVM_17_WhatDidYouDoInThere"			;//Tak co jsi tam teda dƒôlal, no!?
+	WillYouStopFighting			=	"SVM_17_WillYouStopFighting"			;//Tak p√¢estane≈° s t√≠m u≈æ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_17_KillEnemy"					;//ChcÌpni, gr·zle!
-	EnemyKilled					=	"SVM_17_EnemyKilled"				;//Trochu velk˝ sousto, co, ty b‚Ìdile!
-	MonsterKilled				=	"SVM_17_MonsterKilled"				;//O jednu zr˘du mÌ‡!
-	ThiefDown					=	"SVM_17_ThiefDown"					;//Uû se mÍ nikdy nepokouöej okr·st!
-	rumfummlerDown				=	"SVM_17_rumfummlerDown"				;//P‚esta‡ tÍma sv˝ma prackama ömatat na vÍci, kter˝ ti nepat‚ej!
-	SheepAttackerDown			=	"SVM_17_SheepAttackerDown"			;//Tohle uû nikdy nedÍlej! To jsou naöe ovce!
-	KillMurderer				=	"SVM_17_KillMurderer"				;//ChcÌpni, gr·zle!
-	StupidBeastKilled			=	"SVM_17_StupidBeastKilled"			;//To je ale zatracenÍ hnusn· zr˘da!
-	NeverHitMeAgain				=	"SVM_17_NeverHitMeAgain"				;//Uû na mÍ nikdy nevytahuj zbra‡!
-	YouBetterShouldHaveListened	=	"SVM_17_YouBetterShouldHaveListened"	;//MÍl jsi mÍ poslechnout!
-	GetUpAndBeGone				=	"SVM_17_GetUpAndBeGone"				;//A teÎ vypadni!
-	NeverEnterRoomAgain			=	"SVM_17_NeverEnterRoomAgain"			;//A a„ uû tÍ tady vÌckr·t nevidÌm!
-	ThereIsNoFightingHere		=	"SVM_17_ThereIsNoFightingHere"		;//Tady û·dnÈ rvaËky nestrpÌme, rozumÌö? Douf·m, ûe ses z toho pouËil!
+	KillEnemy					= 	"SVM_17_KillEnemy"					;//Chc√≠pni, gr√°zle!
+	EnemyKilled					=	"SVM_17_EnemyKilled"				;//Trochu velk√Ω sousto, co, ty b√¢√≠dile!
+	MonsterKilled				=	"SVM_17_MonsterKilled"				;//O jednu zr≈Ødu m√≠≈ï!
+	ThiefDown					=	"SVM_17_ThiefDown"					;//U≈æ se mƒô nikdy nepokou≈°ej okr√°st!
+	rumfummlerDown				=	"SVM_17_rumfummlerDown"				;//P√¢esta≈ï tƒôma sv√Ωma prackama ≈°matat na vƒôci, kter√Ω ti nepat√¢ej!
+	SheepAttackerDown			=	"SVM_17_SheepAttackerDown"			;//Tohle u≈æ nikdy nedƒôlej! To jsou na≈°e ovce!
+	KillMurderer				=	"SVM_17_KillMurderer"				;//Chc√≠pni, gr√°zle!
+	StupidBeastKilled			=	"SVM_17_StupidBeastKilled"			;//To je ale zatracenƒô hnusn√° zr≈Øda!
+	NeverHitMeAgain				=	"SVM_17_NeverHitMeAgain"				;//U≈æ na mƒô nikdy nevytahuj zbra≈ï!
+	YouBetterShouldHaveListened	=	"SVM_17_YouBetterShouldHaveListened"	;//Mƒôl jsi mƒô poslechnout!
+	GetUpAndBeGone				=	"SVM_17_GetUpAndBeGone"				;//A te√´ vypadni!
+	NeverEnterRoomAgain			=	"SVM_17_NeverEnterRoomAgain"			;//A aƒÉ u≈æ tƒô tady v√≠ckr√°t nevid√≠m!
+	ThereIsNoFightingHere		=	"SVM_17_ThereIsNoFightingHere"		;//Tady ≈æ√°dn√© rvaƒçky nestrp√≠me, rozum√≠≈°? Douf√°m, ≈æe ses z toho pouƒçil!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_17_SpareMe"						;//Neubliûuj mi!
-	RunAway						= 	"SVM_17_RunAway"						;//Pad·m pryË!
+	SpareMe						=	"SVM_17_SpareMe"						;//Neubli≈æuj mi!
+	RunAway						= 	"SVM_17_RunAway"						;//Pad√°m pryƒç!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_17_Alarm"					;//POPLACH!
-	Guards						=	"SVM_17_Guards"					;//STR¡éE!
+	Guards						=	"SVM_17_Guards"					;//STR√Å≈ΩE!
 	Help						=	"SVM_17_Help"					;//Pomoc!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_17_GoodMonsterKill"			;//(vol·) Dobr· pr·ce!
-	GoodKill					= 	"SVM_17_GoodKill"				;//(vol·) Jo, dej t˝ svini co proto!
+	GoodMonsterKill				=	"SVM_17_GoodMonsterKill"			;//(vol√°) Dobr√° pr√°ce!
+	GoodKill					= 	"SVM_17_GoodKill"				;//(vol√°) Jo, dej t√Ω svini co proto!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_17_NOTNOW"					;//Nech mÍ b˝t!
+	NOTNOW						= 	"SVM_17_NOTNOW"					;//Nech mƒô b√Ωt!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_17_RunCoward"				;//(vol·) St˘j, babo!
+	RunCoward					=	"SVM_17_RunCoward"				;//(vol√°) St≈Øj, babo!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
 	GetOutOfHere				=	"SVM_17_GetOutOfHere"			;//Vypadni odsud!
-	WhyAreYouInHere				=	"SVM_17_WhyAreYouInHere"		;//Co tady chceö!? Padej!
+	WhyAreYouInHere				=	"SVM_17_WhyAreYouInHere"		;//Co tady chce≈°!? Padej!
 	YesGoOutOfHere				= 	"SVM_17_YesGoOutOfHere"			;//Jo, pakuj se!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_17_WhatsThisSupposedToBe"	;//Hej ty! Co tady Ëmuch·ö kolem?
-	YouDisturbedMySlumber		=	"SVM_17_YouDisturbedMySlumber"	;//(vst·v·) Co je?
+	WhatsThisSupposedToBe		=	"SVM_17_WhatsThisSupposedToBe"	;//Hej ty! Co tady ƒçmuch√°≈° kolem?
+	YouDisturbedMySlumber		=	"SVM_17_YouDisturbedMySlumber"	;//(vst√°v√°) Co je?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_17_ITookYourGold"			;//DÌky za zlato, ty hrdino!
-	ShitNoGold					=	"SVM_17_ShitNoGold"				;//Ty mizernej vöiv·ku, nem·ö u sebe û·dn˝ zlato!
-	ITakeYourWeapon				=	"SVM_17_ITakeYourWeapon"			;//M·m dojem, ûe si tu tvou zbra‡ vezmu k sobÍ do ˙schovy.
+	ITookYourGold				=	"SVM_17_ITookYourGold"			;//D√≠ky za zlato, ty hrdino!
+	ShitNoGold					=	"SVM_17_ShitNoGold"				;//Ty mizernej v≈°iv√°ku, nem√°≈° u sebe ≈æ√°dn√Ω zlato!
+	ITakeYourWeapon				=	"SVM_17_ITakeYourWeapon"			;//M√°m dojem, ≈æe si tu tvou zbra≈ï vezmu k sobƒô do √∫schovy.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_17_WhatAreYouDoing"			;//(varovnÍ) D·vej si pozor! JeötÍ jednou a nÍjakou ti vrazÌm.
+	WhatAreYouDoing				=	"SVM_17_WhatAreYouDoing"			;//(varovnƒô) D√°vej si pozor! Je≈°tƒô jednou a nƒôjakou ti vraz√≠m.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_17_LookingForTroubleAgain"	;//JeötÍ po‚·d nem·ö dost?
-	StopMagic					=	"SVM_17_StopMagic"				;//P‚esta‡ s tÌm magick˝m svinstvem!
-	ISaidStopMagic				=	"SVM_17_ISaidStopMagic"			;//Chceö do zub˘? OkamûitÍ s tÌm p‚esta‡!!!
-	WeaponDown					=	"SVM_17_WeaponDown"				;//Dej pryË tu zbra‡!
-	ISaidWeaponDown				=	"SVM_17_ISaidWeaponDown"		;//Tak d·ö tu zatracenou zbra‡ pryË?!
+	LookingForTroubleAgain		=	"SVM_17_LookingForTroubleAgain"	;//Je≈°tƒô po√¢√°d nem√°≈° dost?
+	StopMagic					=	"SVM_17_StopMagic"				;//P√¢esta≈ï s t√≠m magick√Ωm svinstvem!
+	ISaidStopMagic				=	"SVM_17_ISaidStopMagic"			;//Chce≈° do zub≈Ø? Okam≈æitƒô s t√≠m p√¢esta≈ï!!!
+	WeaponDown					=	"SVM_17_WeaponDown"				;//Dej pryƒç tu zbra≈ï!
+	ISaidWeaponDown				=	"SVM_17_ISaidWeaponDown"		;//Tak d√°≈° tu zatracenou zbra≈ï pryƒç?!
 	WiseMove					=	"SVM_17_WiseMove"				;//Chytrej kluk!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_17_NextTimeYoureInForIt"	;//(pro sebe) Dobr·, p‚ÌötÍ se uk·ûe.
+	NextTimeYoureInForIt		=	"SVM_17_NextTimeYoureInForIt"	;//(pro sebe) Dobr√°, p√¢√≠≈°tƒô se uk√°≈æe.
 	OhMyHead					=	"SVM_17_OhMyHead"				;//(pro sebe) No nazdar, moje hlava...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_17_TheresAFight"			;//(nedoËkavÍ) Aaa, boj!
-	OhMyGodItsAFight			=	"SVM_17_OhMyGodItsAFight"		;//(vystraöenÍ) BoûÌnku, boj!
-	GoodVictory					=	"SVM_17_GoodVictory"			;//(zl˝ smÌch) Uk·zals mu, kdo je tady p·nem!
-	NotBad						= 	"SVM_17_NotBad"					;//(souhlasnÍ) To nebylo öpatnÈ.
-	OhMyGodHesDown				=	"SVM_17_OhMyGodHesDown"			;//(pro sebe) M˘j boûe! Takov· surovost...
-	CheerFriend01				=	"SVM_17_CheerFriend01"			;//Praö„ ho!
+	TheresAFight				=	"SVM_17_TheresAFight"			;//(nedoƒçkavƒô) Aaa, boj!
+	OhMyGodItsAFight			=	"SVM_17_OhMyGodItsAFight"		;//(vystra≈°enƒô) Bo≈æ√≠nku, boj!
+	GoodVictory					=	"SVM_17_GoodVictory"			;//(zl√Ω sm√≠ch) Uk√°zals mu, kdo je tady p√°nem!
+	NotBad						= 	"SVM_17_NotBad"					;//(souhlasnƒô) To nebylo ≈°patn√©.
+	OhMyGodHesDown				=	"SVM_17_OhMyGodHesDown"			;//(pro sebe) M≈Øj bo≈æe! Takov√° surovost...
+	CheerFriend01				=	"SVM_17_CheerFriend01"			;//Pra≈°ƒÉ ho!
 	CheerFriend02				=	"SVM_17_CheerFriend02"			;//Dej mu co proto!
 	CheerFriend03				=	"SVM_17_CheerFriend03"			;//Jen mu to nandej!
-	Ooh01						=	"SVM_17_Ooh01"					;//Vra„ mu to!
+	Ooh01						=	"SVM_17_Ooh01"					;//VraƒÉ mu to!
 	Ooh02						=	"SVM_17_Ooh02"					;//Tak bacha!
-	Ooh03						=	"SVM_17_Ooh03"					;//Au! Takov· pecka!
+	Ooh03						=	"SVM_17_Ooh03"					;//Au! Takov√° pecka!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_17_WhatWasThat"				;//(pro sebe, vst·v·) Co bylo zase TOHLE!?
+	WhatWasThat					= "SVM_17_WhatWasThat"				;//(pro sebe, vst√°v√°) Co bylo zase TOHLE!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_17_GetOutOfMyBed"			;//Vypadni z mÈ postele!
-	Awake						= "SVM_17_Awake"					;//(zÌv· od plic)
+	GetOutOfMyBed				= "SVM_17_GetOutOfMyBed"			;//Vypadni z m√© postele!
+	Awake						= "SVM_17_Awake"					;//(z√≠v√° od plic)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     			= "SVM_17_ABS_COMMANDER"    		;//Tak jsi zaöel za velitelem a oËistil svÈ jmÈno.
-	ABS_MONASTERY    			= "SVM_17_ABS_MONASTERY"    		;//Tak jsi zaöel za otcem Parlanem a odËinil svÈ h‚Ìchy.
-	ABS_FARM       				= "SVM_17_ABS_FARM"        			;//Lee dal ty vÍci do po‚·dku.
-	ABS_GOOD       				= "SVM_17_ABS_GOOD"        			;//To je dob‚e.
+	ABS_COMMANDER     			= "SVM_17_ABS_COMMANDER"    		;//Tak jsi za≈°el za velitelem a oƒçistil sv√© jm√©no.
+	ABS_MONASTERY    			= "SVM_17_ABS_MONASTERY"    		;//Tak jsi za≈°el za otcem Parlanem a odƒçinil sv√© h√¢√≠chy.
+	ABS_FARM       				= "SVM_17_ABS_FARM"        			;//Lee dal ty vƒôci do po√¢√°dku.
+	ABS_GOOD       				= "SVM_17_ABS_GOOD"        			;//To je dob√¢e.
  	// -------------------------
-	SHEEPKILLER_CRIME   		= "SVM_17_SHEEPKILLER_CRIME"   		;//Nem˘ûeö prostÍ takhle zabÌjet naöe ovce! Padej odsud!
-	ATTACK_CRIME     			= "SVM_17_ATTACK_CRIME"    			;//Jsi sprostej bandita, nechci s tebou nic mÌt.
-	THEFT_CRIME      			= "SVM_17_THEFT_CRIME"    			;//Se zlodÍji nemluvÌm - a teÎ zmizni!
+	SHEEPKILLER_CRIME   		= "SVM_17_SHEEPKILLER_CRIME"   		;//Nem≈Ø≈æe≈° prostƒô takhle zab√≠jet na≈°e ovce! Padej odsud!
+	ATTACK_CRIME     			= "SVM_17_ATTACK_CRIME"    			;//Jsi sprostej bandita, nechci s tebou nic m√≠t.
+	THEFT_CRIME      			= "SVM_17_THEFT_CRIME"    			;//Se zlodƒôji nemluv√≠m - a te√´ zmizni!
 	// -------------------------
-	PAL_CITY_CRIME     			= "SVM_17_PAL_CITY_CRIME"   		;//Nezachoval ses ËestnÍ. Lordu Hagenovi se to nebude lÌbit!
-	MIL_CITY_CRIME     			= "SVM_17_MIL_CITY_CRIME"   		;//TvÈ chov·nÌ je ostudou mÍstsk˝ch str·ûÌ! Lord Andre po tobÍ bude chtÌt vysvÍtlenÌ!
-	CITY_CRIME       			= "SVM_17_CITY_CRIME"    			;//Lord Andre se dozvÌ o tom, cos provedl!
+	PAL_CITY_CRIME     			= "SVM_17_PAL_CITY_CRIME"   		;//Nezachoval ses ƒçestnƒô. Lordu Hagenovi se to nebude l√≠bit!
+	MIL_CITY_CRIME     			= "SVM_17_MIL_CITY_CRIME"   		;//Tv√© chov√°n√≠ je ostudou mƒôstsk√Ωch str√°≈æ√≠! Lord Andre po tobƒô bude cht√≠t vysvƒôtlen√≠!
+	CITY_CRIME       			= "SVM_17_CITY_CRIME"    			;//Lord Andre se dozv√≠ o tom, cos provedl!
 	// -------------------------
- 	MONA_CRIME       			= "SVM_17_MONA_CRIME"    			;//Zachoval ses öpatnÍ. Jdi za otcem Parlanem a kaj se.
-	FARM_CRIME      			= "SVM_17_FARM_CRIME"    			;//Lee se dozvÌ o tom, cos provedl - a trestu se nevyhneö!
- 	OC_CRIME       				= "SVM_17_OC_CRIME"     			;//Velitel Garond po tobÍ bude chtÌt vysvÍtlenÌ!
+ 	MONA_CRIME       			= "SVM_17_MONA_CRIME"    			;//Zachoval ses ≈°patnƒô. Jdi za otcem Parlanem a kaj se.
+	FARM_CRIME      			= "SVM_17_FARM_CRIME"    			;//Lee se dozv√≠ o tom, cos provedl - a trestu se nevyhne≈°!
+ 	OC_CRIME       				= "SVM_17_OC_CRIME"     			;//Velitel Garond po tobƒô bude cht√≠t vysvƒôtlen√≠!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_17_GOLD_1000"					;//1000 zlat˝ch.
-	GOLD_950					= "SVM_17_GOLD_950"					;//950 zlat˝ch.
-	GOLD_900					= "SVM_17_GOLD_900"					;//900 zlat˝ch.
-	GOLD_850					= "SVM_17_GOLD_850"					;//850 zlat˝ch.
-	GOLD_800					= "SVM_17_GOLD_800"					;//800 zlat˝ch.
-	GOLD_750					= "SVM_17_GOLD_750"					;//750 zlat˝ch.
-	GOLD_700					= "SVM_17_GOLD_700"					;//700 zlat˝ch.
-	GOLD_650					= "SVM_17_GOLD_650"					;//650 zlat˝ch.
-	GOLD_600					= "SVM_17_GOLD_600"					;//600 zlat˝ch.
-	GOLD_550					= "SVM_17_GOLD_550"					;//550 zlat˝ch.
-	GOLD_500					= "SVM_17_GOLD_500"					;//500 zlat˝ch.
-	GOLD_450					= "SVM_17_GOLD_450"					;//450 zlat˝ch.
-	GOLD_400					= "SVM_17_GOLD_400"					;//400 zlat˝ch.
-	GOLD_350					= "SVM_17_GOLD_350"					;//350 zlat˝ch.
-	GOLD_300					= "SVM_17_GOLD_300"					;//300 zlat˝ch.
-	GOLD_250					= "SVM_17_GOLD_250"					;//250 zlat˝ch.
-	GOLD_200					= "SVM_17_GOLD_200"					;//200 zlat˝ch.
-	GOLD_150					= "SVM_17_GOLD_150"					;//150 zlat˝ch.
-	GOLD_100					= "SVM_17_GOLD_100"					;//100 zlat˝ch.
-	GOLD_90						= "SVM_17_GOLD_90"					;//90 zlat˝ch.
-	GOLD_80						= "SVM_17_GOLD_80"					;//80 zlat˝ch.
-	GOLD_70						= "SVM_17_GOLD_70"					;//70 zlat˝ch.
-	GOLD_60						= "SVM_17_GOLD_60"					;//60 zlat˝ch.
-	GOLD_50						= "SVM_17_GOLD_50"					;//50 zlat˝ch.
-	GOLD_40						= "SVM_17_GOLD_40"					;//40 zlat˝ch.
-	GOLD_30						= "SVM_17_GOLD_30"					;//30 zlat˝ch.
-	GOLD_20						= "SVM_17_GOLD_20"					;//20 zlat˝ch.
-	GOLD_10						= "SVM_17_GOLD_10"					;//10 zlat˝ch.
+	GOLD_1000					= "SVM_17_GOLD_1000"					;//1000 zlat√Ωch.
+	GOLD_950					= "SVM_17_GOLD_950"					;//950 zlat√Ωch.
+	GOLD_900					= "SVM_17_GOLD_900"					;//900 zlat√Ωch.
+	GOLD_850					= "SVM_17_GOLD_850"					;//850 zlat√Ωch.
+	GOLD_800					= "SVM_17_GOLD_800"					;//800 zlat√Ωch.
+	GOLD_750					= "SVM_17_GOLD_750"					;//750 zlat√Ωch.
+	GOLD_700					= "SVM_17_GOLD_700"					;//700 zlat√Ωch.
+	GOLD_650					= "SVM_17_GOLD_650"					;//650 zlat√Ωch.
+	GOLD_600					= "SVM_17_GOLD_600"					;//600 zlat√Ωch.
+	GOLD_550					= "SVM_17_GOLD_550"					;//550 zlat√Ωch.
+	GOLD_500					= "SVM_17_GOLD_500"					;//500 zlat√Ωch.
+	GOLD_450					= "SVM_17_GOLD_450"					;//450 zlat√Ωch.
+	GOLD_400					= "SVM_17_GOLD_400"					;//400 zlat√Ωch.
+	GOLD_350					= "SVM_17_GOLD_350"					;//350 zlat√Ωch.
+	GOLD_300					= "SVM_17_GOLD_300"					;//300 zlat√Ωch.
+	GOLD_250					= "SVM_17_GOLD_250"					;//250 zlat√Ωch.
+	GOLD_200					= "SVM_17_GOLD_200"					;//200 zlat√Ωch.
+	GOLD_150					= "SVM_17_GOLD_150"					;//150 zlat√Ωch.
+	GOLD_100					= "SVM_17_GOLD_100"					;//100 zlat√Ωch.
+	GOLD_90						= "SVM_17_GOLD_90"					;//90 zlat√Ωch.
+	GOLD_80						= "SVM_17_GOLD_80"					;//80 zlat√Ωch.
+	GOLD_70						= "SVM_17_GOLD_70"					;//70 zlat√Ωch.
+	GOLD_60						= "SVM_17_GOLD_60"					;//60 zlat√Ωch.
+	GOLD_50						= "SVM_17_GOLD_50"					;//50 zlat√Ωch.
+	GOLD_40						= "SVM_17_GOLD_40"					;//40 zlat√Ωch.
+	GOLD_30						= "SVM_17_GOLD_30"					;//30 zlat√Ωch.
+	GOLD_20						= "SVM_17_GOLD_20"					;//20 zlat√Ωch.
+	GOLD_10						= "SVM_17_GOLD_10"					;//10 zlat√Ωch.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_17_Smalltalk01"				;//...v·ûnÍ? ZajÌmavÈ...
-	Smalltalk02					= "SVM_17_Smalltalk02"				;//...tomu nevÍ‚Ìm...
-	Smalltalk03					= "SVM_17_Smalltalk03"				;//...tak to m˘j manûel nemyslel...
-	Smalltalk04					= "SVM_17_Smalltalk04"				;//...ale jdi, ne‚Ìkej mi, ûe...
-	Smalltalk05					= "SVM_17_Smalltalk05"				;//...p‚Ìsah·m, vidÍl jsem to na vlastnÌ oËi...
-	Smalltalk06					= "SVM_17_Smalltalk06"				;//...ne‚Ìkej...
+	Smalltalk01					= "SVM_17_Smalltalk01"				;//...v√°≈ænƒô? Zaj√≠mav√©...
+	Smalltalk02					= "SVM_17_Smalltalk02"				;//...tomu nevƒô√¢√≠m...
+	Smalltalk03					= "SVM_17_Smalltalk03"				;//...tak to m≈Øj man≈æel nemyslel...
+	Smalltalk04					= "SVM_17_Smalltalk04"				;//...ale jdi, ne√¢√≠kej mi, ≈æe...
+	Smalltalk05					= "SVM_17_Smalltalk05"				;//...p√¢√≠sah√°m, vidƒôl jsem to na vlastn√≠ oƒçi...
+	Smalltalk06					= "SVM_17_Smalltalk06"				;//...ne√¢√≠kej...
 	Smalltalk07					= "SVM_17_Smalltalk07"				;//...nikomu o tom ani muk...
-	Smalltalk08					= "SVM_17_Smalltalk08"				;//...jsou to teÎ tÍûkÈ Ëasy...
-	Smalltalk09					= "SVM_17_Smalltalk09"				;//...kdo ‚Ìk· nÍco takovÈho?...
-	Smalltalk10					= "SVM_17_Smalltalk10"				;//...kdybych to nevidÍl na vlastnÌ oËi...
-	Smalltalk11					= "SVM_17_Smalltalk11"				;//...nÍkdo by mÍl tu pr·ci udÍlat...
-	Smalltalk12					= "SVM_17_Smalltalk12"				;//...to nenÌ to, co jsem slyöel...
-	Smalltalk13					= "SVM_17_Smalltalk13"				;//...teÎ je to bÍûnÈ, nebo ne...
-	Smalltalk14					= "SVM_17_Smalltalk14"				;//...s·m nedos·hne niËeho...
-	Smalltalk15					= "SVM_17_Smalltalk15"				;//...udÍlal by lÌp, kdyby drûel zob·k...
-	Smalltalk16					= "SVM_17_Smalltalk16"				;//...a pracuje celÈ dny, p‚Ìliö...
-	Smalltalk17					= "SVM_17_Smalltalk17"				;//...nem˘ûu se starat o vöechno...
-	Smalltalk18					= "SVM_17_Smalltalk18"				;//...prostÍ toho moc nakec·...
-	Smalltalk19					= "SVM_17_Smalltalk19"				;//...je to ve‚ejnÈ tajemstvÌ...
-	Smalltalk20					= "SVM_17_Smalltalk20"				;//...vöichni to teÎ vÍdÌ...
-	Smalltalk21					= "SVM_17_Smalltalk21"				;//...odteÎ uû jÌ ne‚eknu ani slovo...
-	Smalltalk22					= "SVM_17_Smalltalk22"				;//...a bude to jeötÍ horöÌ...
-	Smalltalk23					= "SVM_17_Smalltalk23"				;//...ale to je straönÈ...
-	Smalltalk24					= "SVM_17_Smalltalk24"				;//...to jsem vûdycky ‚Ìkal...
+	Smalltalk08					= "SVM_17_Smalltalk08"				;//...jsou to te√´ tƒô≈æk√© ƒçasy...
+	Smalltalk09					= "SVM_17_Smalltalk09"				;//...kdo √¢√≠k√° nƒôco takov√©ho?...
+	Smalltalk10					= "SVM_17_Smalltalk10"				;//...kdybych to nevidƒôl na vlastn√≠ oƒçi...
+	Smalltalk11					= "SVM_17_Smalltalk11"				;//...nƒôkdo by mƒôl tu pr√°ci udƒôlat...
+	Smalltalk12					= "SVM_17_Smalltalk12"				;//...to nen√≠ to, co jsem sly≈°el...
+	Smalltalk13					= "SVM_17_Smalltalk13"				;//...te√´ je to bƒô≈æn√©, nebo ne...
+	Smalltalk14					= "SVM_17_Smalltalk14"				;//...s√°m nedos√°hne niƒçeho...
+	Smalltalk15					= "SVM_17_Smalltalk15"				;//...udƒôlal by l√≠p, kdyby dr≈æel zob√°k...
+	Smalltalk16					= "SVM_17_Smalltalk16"				;//...a pracuje cel√© dny, p√¢√≠li≈°...
+	Smalltalk17					= "SVM_17_Smalltalk17"				;//...nem≈Ø≈æu se starat o v≈°echno...
+	Smalltalk18					= "SVM_17_Smalltalk18"				;//...prostƒô toho moc nakec√°...
+	Smalltalk19					= "SVM_17_Smalltalk19"				;//...je to ve√¢ejn√© tajemstv√≠...
+	Smalltalk20					= "SVM_17_Smalltalk20"				;//...v≈°ichni to te√´ vƒôd√≠...
+	Smalltalk21					= "SVM_17_Smalltalk21"				;//...odte√´ u≈æ j√≠ ne√¢eknu ani slovo...
+	Smalltalk22					= "SVM_17_Smalltalk22"				;//...a bude to je≈°tƒô hor≈°√≠...
+	Smalltalk23					= "SVM_17_Smalltalk23"				;//...ale to je stra≈°n√©...
+	Smalltalk24					= "SVM_17_Smalltalk24"				;//...to jsem v≈ædycky √¢√≠kal...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_17_NoLearnNoPoints"			;//Vra„ se, aû zÌsk·ö vÌc zkuöenostÌ.
-	NoLearnOverPersonalMAX		= "SVM_17_NoLearnOverPersonalMAX"	;//Chceö po mnÍ vÌc, neû tÍ mohu nauËit.
-	NoLearnYoureBetter			= "SVM_17_NoLearnYoureBetter"		;//Uû tÍ nem·m co nauËit. é·k p‚ekonal svÈho uËitele.
-	YouLearnedSomething			= "SVM_17_YouLearnedSomething"		;//PodÌvej, uû teÎ jsi lepöÌ.
+	NoLearnNoPoints				= "SVM_17_NoLearnNoPoints"			;//VraƒÉ se, a≈æ z√≠sk√°≈° v√≠c zku≈°enost√≠.
+	NoLearnOverPersonalMAX		= "SVM_17_NoLearnOverPersonalMAX"	;//Chce≈° po mnƒô v√≠c, ne≈æ tƒô mohu nauƒçit.
+	NoLearnYoureBetter			= "SVM_17_NoLearnYoureBetter"		;//U≈æ tƒô nem√°m co nauƒçit. ≈Ω√°k p√¢ekonal sv√©ho uƒçitele.
+	YouLearnedSomething			= "SVM_17_YouLearnedSomething"		;//Pod√≠vej, u≈æ te√´ jsi lep≈°√≠.
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_17_UNTERSTADT"				;//Pr·vÍ se nach·zÌö v dolnÌ Ë·sti mÍsta.
-	OBERSTADT					= "SVM_17_OBERSTADT"					;//Pr·vÍ se nach·zÌö v hornÌ Ë·sti mÍsta.
-	TEMPEL						= "SVM_17_TEMPEL"					;//Pr·vÍ se nach·zÌö na chr·movÈm n·mÍstÌ.
-	MARKT						= "SVM_17_MARKT"						;//Pr·vÍ jsi na trûiöti.
-	GALGEN						= "SVM_17_GALGEN"					;//Pr·vÍ se nach·zÌö na öibeniËnÌm n·mÍstÌ, p‚ed kas·rnami.
-	KASERNE						= "SVM_17_KASERNE"					;//Tohle jsou kas·rna.
-	HAFEN						= "SVM_17_HAFEN"						;//Pr·vÍ se nach·zÌö v p‚ÌstavnÌ Ëtvrti.
+	UNTERSTADT					= "SVM_17_UNTERSTADT"				;//Pr√°vƒô se nach√°z√≠≈° v doln√≠ ƒç√°sti mƒôsta.
+	OBERSTADT					= "SVM_17_OBERSTADT"					;//Pr√°vƒô se nach√°z√≠≈° v horn√≠ ƒç√°sti mƒôsta.
+	TEMPEL						= "SVM_17_TEMPEL"					;//Pr√°vƒô se nach√°z√≠≈° na chr√°mov√©m n√°mƒôst√≠.
+	MARKT						= "SVM_17_MARKT"						;//Pr√°vƒô jsi na tr≈æi≈°ti.
+	GALGEN						= "SVM_17_GALGEN"					;//Pr√°vƒô se nach√°z√≠≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠, p√¢ed kas√°rnami.
+	KASERNE						= "SVM_17_KASERNE"					;//Tohle jsou kas√°rna.
+	HAFEN						= "SVM_17_HAFEN"						;//Pr√°vƒô se nach√°z√≠≈° v p√¢√≠stavn√≠ ƒçtvrti.
 	// -----------------------
-	WHERETO						= "SVM_17_WHERETO"					;//Kam chceö jÌt?
+	WHERETO						= "SVM_17_WHERETO"					;//Kam chce≈° j√≠t?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_17_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit‚nÌ mÍstskou branou a dostaneö se do dolnÌ Ë·sti mÍsta.
-	UNTERSTADT_2_OBERSTADT		= "SVM_17_UNTERSTADT_2_OBERSTADT"	;//SchodiötÍ vede od jiûnÌ mÍstskÈ br·ny ke vnit‚nÌ mÍstskÈ br·nÍ. Tam zaËÌn· hornÌ Ë·st mÍsta.
-	UNTERSTADT_2_TEMPEL			= "SVM_17_UNTERSTADT_2_TEMPEL"		;//Podchodem se m˘ûeö dostat od kov·rny na chr·movÈ n·mÍstÌ.
-	UNTERSTADT_2_HAFEN			= "SVM_17_UNTERSTADT_2_HAFEN"		;//Pokud p˘jdeö po p‚ÌstavnÌ ulici smÍrem dol˘, dostaneö se do p‚Ìstavu.
-	TEMPEL_2_UNTERSTADT			= "SVM_17_TEMPEL_2_UNTERSTADT"		;//M·me tu podchod, kter˝ vede z chr·movÈho n·mÍstÌ do dolnÌ Ë·sti mÍsta.
-	TEMPEL_2_MARKT				= "SVM_17_TEMPEL_2_MARKT"			;//Aû budeö p‚ed chr·mem, pokraËuj doleva a podÈl hradeb. Tak se dostaneö na trûiötÍ.
-	TEMPEL_2_GALGEN				= "SVM_17_TEMPEL_2_GALGEN"			;//Pokud bys öel od chr·mu a proöel kolem hospody, kterou budeö mÌt po levÈ ruce, vyjdeö na öibeniËnÌm n·mÍstÌ.
-	MARKT_2_TEMPEL				= "SVM_17_MARKT_2_TEMPEL"			;//Pokud p˘jdeö od trûiötÍ podÈl vysok˝ch hradeb, dostaneö se ke chr·mu.
-	MARKT_2_KASERNE				= "SVM_17_MARKT_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech naproti hotelu.
-	MARKT_2_GALGEN				= "SVM_17_MARKT_2_GALGEN"			;//Aû mineö velk· kas·rna, dostaneö se na öibeniËnÌ n·mÍstÌ.
-	GALGEN_2_TEMPEL				= "SVM_17_GALGEN_2_TEMPEL"			;//Jdi uliËkou od öibeniËnÌho n·mÍstÌ smÍrem dol˘ a dostaneö se na chr·movÈ n·mÍstÌ.
-	GALGEN_2_MARKT				= "SVM_17_GALGEN_2_MARKT"			;//Aû mineö velk· kas·rna, dostaneö se na trûiötÍ.
-	GALGEN_2_KASERNE			= "SVM_17_GALGEN_2_KASERNE"			;//Ta obrovsk· budova jsou kas·rna. StaËÌ vyjÌt nahoru po schodech.
-	KASERNE_2_MARKT				= "SVM_17_KASERNE_2_MARKT"			;//StaËÌ sejÌt po schodech nalevo od hlavnÌho vchodu a dostaneö se na trûiötÍ.
-	KASERNE_2_GALGEN			= "SVM_17_KASERNE_2_GALGEN"			;//StaËÌ sejÌt po schodech napravo od hlavnÌho vchodu a dostaneö se na öibeniËnÌ n·mÍstÌ.
-	HAFEN_2_UNTERSTADT			= "SVM_17_HAFEN_2_UNTERSTADT"		;//Pokud se d·ö p‚ÌstavnÌ ulicÌ od pob‚eûnÌ hr·ze, dostaneö se do dolnÌ Ë·sti mÍsta.
+	OBERSTADT_2_UNTERSTADT		= "SVM_17_OBERSTADT_2_UNTERSTADT"	;//Projdi vnit√¢n√≠ mƒôstskou branou a dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
+	UNTERSTADT_2_OBERSTADT		= "SVM_17_UNTERSTADT_2_OBERSTADT"	;//Schodi≈°tƒô vede od ji≈æn√≠ mƒôstsk√© br√°ny ke vnit√¢n√≠ mƒôstsk√© br√°nƒô. Tam zaƒç√≠n√° horn√≠ ƒç√°st mƒôsta.
+	UNTERSTADT_2_TEMPEL			= "SVM_17_UNTERSTADT_2_TEMPEL"		;//Podchodem se m≈Ø≈æe≈° dostat od kov√°rny na chr√°mov√© n√°mƒôst√≠.
+	UNTERSTADT_2_HAFEN			= "SVM_17_UNTERSTADT_2_HAFEN"		;//Pokud p≈Øjde≈° po p√¢√≠stavn√≠ ulici smƒôrem dol≈Ø, dostane≈° se do p√¢√≠stavu.
+	TEMPEL_2_UNTERSTADT			= "SVM_17_TEMPEL_2_UNTERSTADT"		;//M√°me tu podchod, kter√Ω vede z chr√°mov√©ho n√°mƒôst√≠ do doln√≠ ƒç√°sti mƒôsta.
+	TEMPEL_2_MARKT				= "SVM_17_TEMPEL_2_MARKT"			;//A≈æ bude≈° p√¢ed chr√°mem, pokraƒçuj doleva a pod√©l hradeb. Tak se dostane≈° na tr≈æi≈°tƒô.
+	TEMPEL_2_GALGEN				= "SVM_17_TEMPEL_2_GALGEN"			;//Pokud bys ≈°el od chr√°mu a pro≈°el kolem hospody, kterou bude≈° m√≠t po lev√© ruce, vyjde≈° na ≈°ibeniƒçn√≠m n√°mƒôst√≠.
+	MARKT_2_TEMPEL				= "SVM_17_MARKT_2_TEMPEL"			;//Pokud p≈Øjde≈° od tr≈æi≈°tƒô pod√©l vysok√Ωch hradeb, dostane≈° se ke chr√°mu.
+	MARKT_2_KASERNE				= "SVM_17_MARKT_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech naproti hotelu.
+	MARKT_2_GALGEN				= "SVM_17_MARKT_2_GALGEN"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	GALGEN_2_TEMPEL				= "SVM_17_GALGEN_2_TEMPEL"			;//Jdi uliƒçkou od ≈°ibeniƒçn√≠ho n√°mƒôst√≠ smƒôrem dol≈Ø a dostane≈° se na chr√°mov√© n√°mƒôst√≠.
+	GALGEN_2_MARKT				= "SVM_17_GALGEN_2_MARKT"			;//A≈æ mine≈° velk√° kas√°rna, dostane≈° se na tr≈æi≈°tƒô.
+	GALGEN_2_KASERNE			= "SVM_17_GALGEN_2_KASERNE"			;//Ta obrovsk√° budova jsou kas√°rna. Staƒç√≠ vyj√≠t nahoru po schodech.
+	KASERNE_2_MARKT				= "SVM_17_KASERNE_2_MARKT"			;//Staƒç√≠ sej√≠t po schodech nalevo od hlavn√≠ho vchodu a dostane≈° se na tr≈æi≈°tƒô.
+	KASERNE_2_GALGEN			= "SVM_17_KASERNE_2_GALGEN"			;//Staƒç√≠ sej√≠t po schodech napravo od hlavn√≠ho vchodu a dostane≈° se na ≈°ibeniƒçn√≠ n√°mƒôst√≠.
+	HAFEN_2_UNTERSTADT			= "SVM_17_HAFEN_2_UNTERSTADT"		;//Pokud se d√°≈° p√¢√≠stavn√≠ ulic√≠ od pob√¢e≈æn√≠ hr√°ze, dostane≈° se do doln√≠ ƒç√°sti mƒôsta.
 	// -------------------------------------------------------------------------------------
 	Dead						= "SVM_17_Dead"						;//Aaaaaargh!
 	Aargh_1						= "SVM_17_Aargh_1"					;//Aargh
@@ -3733,8 +3733,8 @@ INSTANCE SVM_18	(C_SVM)
 
 INSTANCE SVM_19	(C_SVM)
 {
-	DieEnemy     	= "SVM_19_DieEnemy"     	;//(zasyËÌ) Tady jsi!
-	RunCoward    	= "SVM_19_RunCoward"    	;//(zasyËÌ) Dostaneme tÍ!
+	DieEnemy     	= "SVM_19_DieEnemy"     	;//(zasyƒç√≠) Tady jsi!
+	RunCoward    	= "SVM_19_RunCoward"    	;//(zasyƒç√≠) Dostaneme tƒô!
 	Dead      		= "SVM_19_Dead"      	;//Aaaaaargh!
 	Aargh_1      	= "SVM_19_Aargh_1"     	;//Aargh
 	Aargh_2      	= "SVM_19_Aargh_2"     	;//Aargh

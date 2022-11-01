@@ -54,7 +54,7 @@ func int DIA_KDF_507_Talamon_FirstWarn_Condition()
 
 func void DIA_KDF_507_Talamon_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_FirstWarn_04_00"); //D·l ani krok. Zp·tky!
+	AI_Output (self, other,"DIA_KDF_507_Talamon_FirstWarn_04_00"); //D√°l ani krok. Zp√°tky!
 	//AI_Output (other, self,"DIA_KDF_507_Talamon_FirstWarn_15_01"); //
 	
 	AI_StopProcessInfos	(self);
@@ -92,7 +92,7 @@ FUNC INT DIA_KDF_507_Talamon_SecondWarn_Condition()
 
 func void DIA_KDF_507_Talamon_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //Innos na tebe seöle sv˘j hnÍv, jestli nep˘jdeö zp·tky!
+	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //Innos na tebe se≈°le sv≈Øj hnƒôv, jestli nep≈Øjde≈° zp√°tky!
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,KDF_507_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -131,7 +131,7 @@ func void DIA_KDF_507_Talamon_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;	//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -261,11 +261,11 @@ FUNC INT DIA_Talamon_KAP5_Stop_Condition()
 
 FUNC VOID DIA_Talamon_KAP5_Stop_Info()
 {
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //D·l ani krok. Zp·tky!
-	AI_Output (other,self ,"DIA_Talamon_KAP5_Stop_15_01"); //Pyrokar ‚Ìk·, ûe m·m povoleno prohlÈdnout si Xardasovu knihu.
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //No, kdyû to ‚Ìk·. Dobr·, m˘ûeö vstoupit. Kniha, kterou hled·ö, je tamhle u tÈ alchymistickÈ kolony.
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //D√°l ani krok. Zp√°tky!
+	AI_Output (other,self ,"DIA_Talamon_KAP5_Stop_15_01"); //Pyrokar √¢√≠k√°, ≈æe m√°m povoleno prohl√©dnout si Xardasovu knihu.
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //No, kdy≈æ to √¢√≠k√°. Dobr√°, m≈Ø≈æe≈° vstoupit. Kniha, kterou hled√°≈°, je tamhle u t√© alchymistick√© kolony.
 
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Talamon ukryl Xardasovu knihu u alchymistickÈ kolony ve sklepenÌ."); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Talamon ukryl Xardasovu knihu u alchymistick√© kolony ve sklepen√≠."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -278,7 +278,7 @@ INSTANCE DIA_Talamon_FoundSecretDoor   (C_INFO)
 	condition   = DIA_Talamon_FoundSecretDoor_Condition;
 	information = DIA_Talamon_FoundSecretDoor_Info;
 	permanent   = FALSE;
-	description = "Naöel jsem tajnÈ dve‚e.";
+	description = "Na≈°el jsem tajn√© dve√¢e.";
 };
 
 FUNC INT DIA_Talamon_FoundSecretDoor_Condition()
@@ -291,13 +291,13 @@ FUNC INT DIA_Talamon_FoundSecretDoor_Condition()
 
 FUNC VOID DIA_Talamon_FoundSecretDoor_Info()
 {
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_00"); //Naöel jsem tajnÈ dve‚e.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(p‚ekvapenÍ) Coûe? Kde?
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_00"); //Na≈°el jsem tajn√© dve√¢e.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(p√¢ekvapenƒô) Co≈æe? Kde?
 	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_02"); //Za knihovnou.
 	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //Co je za nimi?
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_04"); //Vypad· to jako star· podzemnÌ krypta.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //To jsou d˘leûitÈ zpr·vy, okamûitÍ je p‚ed·m Pyrokarovi.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //MezitÌm bys mÍl zjistit, co v tom sklepÍ je.
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_04"); //Vypad√° to jako star√° podzemn√≠ krypta.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //To jsou d≈Øle≈æit√© zpr√°vy, okam≈æitƒô je p√¢ed√°m Pyrokarovi.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //Mezit√≠m bys mƒôl zjistit, co v tom sklepƒô je.
 	
 	MIS_ScoutLibrary = LOG_RUNNING;
 };
@@ -312,7 +312,7 @@ INSTANCE DIA_Talamon_ScoutSecretLibrary   (C_INFO)
 	condition   = DIA_Talamon_ScoutSecretLibrary_Condition;
 	information = DIA_Talamon_ScoutSecretLibrary_Info;
 	permanent   = TRUE;
-	description = "Byl jsem v tÈ kryptÍ.";
+	description = "Byl jsem v t√© kryptƒô.";
 };
 
 FUNC INT DIA_Talamon_ScoutSecretLibrary_Condition()
@@ -326,22 +326,22 @@ FUNC INT DIA_Talamon_ScoutSecretLibrary_Condition()
 
 FUNC VOID DIA_Talamon_ScoutSecretLibrary_Info()
 {
-	AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_00"); //Byl jsem v tÈ kryptÍ.
+	AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_00"); //Byl jsem v t√© kryptƒô.
 	AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_01"); //A co jsi zjistil?
 	
 	if (Npc_IsDead (SecretLibrarySkeleton))
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_02"); //Byl tam kostlivec v·leËnÌk, kter˝ hlÌdal dve‚e. Zabil jsem ho.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_03"); //Dobr· pr·ce.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_04"); //O tu kryptu se postar·me, aû porazÌme zlo.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_02"); //Byl tam kostlivec v√°leƒçn√≠k, kter√Ω hl√≠dal dve√¢e. Zabil jsem ho.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_03"); //Dobr√° pr√°ce.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_04"); //O tu kryptu se postar√°me, a≈æ poraz√≠me zlo.
 	
 		MIS_ScoutLibrary = LOG_SUCCESS;
 		B_GivePlayerXP (XP_ScoutSecretLibrary);
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //Tam dole se to hemûÌ p‚Ìöerami.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //MusÌ tam nÍco b˝t, hledej d·l. A s tÍmi potvorami nemÍj û·dnÈ slitov·nÌ.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //Tam dole se to hem≈æ√≠ p√¢√≠≈°erami.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //Mus√≠ tam nƒôco b√Ωt, hledej d√°l. A s tƒômi potvorami nemƒôj ≈æ√°dn√© slitov√°n√≠.
 	};
 };
 

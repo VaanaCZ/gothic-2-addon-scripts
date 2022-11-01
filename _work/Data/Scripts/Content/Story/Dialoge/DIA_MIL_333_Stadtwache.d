@@ -73,62 +73,62 @@ func int DIA_Mil_333_Stadtwache_FirstWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_00"); //STÁT!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_00"); //STÃT!
 		
 	// ------ PETZMASTER LIGHT ------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
 		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(vzdychne si) Co je?
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //Moc dobâe víš co!
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //Moc dobÃ¢e vÃ­Å¡ co!
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //Jsi hledaný pro vraždu!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //Jsi hledanÃ½ pro vraÅ¾du!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_04"); //Nechceme tady žádný prašivý zlodêje!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_04"); //Nechceme tady Å¾Ã¡dnÃ½ praÅ¡ivÃ½ zlodÄ™je!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //Pro potížisty není ve mêstê místo!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //Pro potÃ­Å¾isty nenÃ­ ve mÄ™stÄ™ mÃ­sto!
 		};
 	
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //Proè myslíš, že bychom tê mêli nechat jít dál?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //ProÄ myslÃ­Å¡, Å¾e bychom tÄ™ mÄ™li nechat jÃ­t dÃ¡l?
 	}
 	else // ------ normales Reinkommen ------
 	{
 		 var C_Item itm; itm = Npc_GetEquippedArmor(other);
 		
-		// ------ ohne Rüstung ODER als Bauer ------
+		// ------ ohne RÃ¼stung ODER als Bauer ------
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_L) == TRUE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_M) == TRUE)
 		{
 			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //Ano?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //Vypadáš jako naprostý somrák. V tomhle mêstê nemáme místo pro lidi bez penêz.
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //VypadÃ¡Å¡ jako naprostÃ½ somrÃ¡k. V tomhle mÄ™stÄ™ nemÃ¡me mÃ­sto pro lidi bez penÄ™z.
 			
 			if (Npc_HasItems(other, ItWr_Passierschein))
 			{
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_09"); //Ale já mám propustku!
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_10"); //Tahle platí jenom pro tu druhou bránu!
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_09"); //Ale jÃ¡ mÃ¡m propustku!
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_10"); //Tahle platÃ­ jenom pro tu druhou brÃ¡nu!
 			};
 			
 			if (Npc_KnowsInfo (other, DIA_Mil_310_Stadtwache_MilizWerden))
 			{
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //Ale já se chci pâidat k mêstské stráži!
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //Haha! Nechtêj mê rozesmát! Bêž ke druhé bránê a zkus vêšet bulíky na nos zase JIM.
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //Tam už jsem byl - a oni mê poslali sem.
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //(ošklivê se zasmêje) No potêš! Že oni nám sem posílají vždycky samou smetánku.
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //Ale jÃ¡ se chci pÃ¢idat k mÄ™stskÃ© strÃ¡Å¾i!
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //Haha! NechtÄ™j mÄ™ rozesmÃ¡t! BÄ™Å¾ ke druhÃ© brÃ¡nÄ™ a zkus vÄ™Å¡et bulÃ­ky na nos zase JIM.
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //Tam uÅ¾ jsem byl - a oni mÄ™ poslali sem.
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //(oÅ¡klivÄ™ se zasmÄ™je) No potÄ™Å¡! Å½e oni nÃ¡m sem posÃ­lajÃ­ vÅ¾dycky samou smetÃ¡nku.
 			};
 		}
- 	 	// ------ alle anderen Rüstungen ------
+ 	 	// ------ alle anderen RÃ¼stungen ------
 		else 
 		{
-			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(tiše) Cože?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_16"); //Jen jsem se chtêl na tebe podívat. Tak dobrá, zdá se, že nêjaké ty peníze máš. Mùžeš jít.
+			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(tiÅ¡e) CoÅ¾e?
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_16"); //Jen jsem se chtÄ™l na tebe podÃ­vat. Tak dobrÃ¡, zdÃ¡ se, Å¾e nÄ™jakÃ© ty penÃ­ze mÃ¡Å¡. MÅ¯Å¾eÅ¡ jÃ­t.
 			
 			self.aivar[AIV_PASSGATE] = TRUE;
 			Stadtwache_310.aivar[AIV_PASSGATE] = TRUE; 	//Wache vom anderen Stadttor
@@ -169,7 +169,7 @@ FUNC INT DIA_Mil_333_Stadtwache_SecondWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_06_00"); //Máš snad nêco s ušima? Ještê jeden krok a ochutnáš mùj meè!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_06_00"); //MÃ¡Å¡ snad nÄ™co s uÅ¡ima? JeÅ¡tÄ™ jeden krok a ochutnÃ¡Å¡ mÅ¯j meÄ!
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,Mil_333_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -207,7 +207,7 @@ func void DIA_Mil_333_Stadtwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_06_00"); //Âekl sis o to.
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_06_00"); //Ã‚ekl sis o to.
 	
 	AI_StopProcessInfos	(self);			
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -225,7 +225,7 @@ INSTANCE DIA_Mil_333_Stadtwache_Bribe (C_INFO)
 	condition	= DIA_Mil_333_Stadtwache_Bribe_Condition;
 	information	= DIA_Mil_333_Stadtwache_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Tady je 100 zlatých. Nech mê projít!";
+	description	= "Tady je 100 zlatÃ½ch. Nech mÄ™ projÃ­t!";
 };                       
 
 FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
@@ -238,15 +238,15 @@ FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
 	
 func void DIA_Mil_333_Stadtwache_Bribe_Info()
 {
-	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Tady je 100 zlatých. Nech mê projít!
+	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Tady je 100 zlatÃ½ch. Nech mÄ™ projÃ­t!
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 100))
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_01"); //(lakomê) 100 zlatých zní hezky. Tak bêž dovnitâ.
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_01"); //(lakomÄ™) 100 zlatÃ½ch znÃ­ hezky. Tak bÄ™Å¾ dovnitÃ¢.
 		
 		if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_02"); //A jdi rovnou za Andrem! Nebo po tobê budu pâíštê chtít dalších 100 zlatých!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_02"); //A jdi rovnou za Andrem! Nebo po tobÄ™ budu pÃ¢Ã­Å¡tÄ™ chtÃ­t dalÅ¡Ã­ch 100 zlatÃ½ch!
 		};
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -254,12 +254,12 @@ func void DIA_Mil_333_Stadtwache_Bribe_Info()
 		Mil_333_schonmalreingelassen = TRUE;
 		B_CheckLog();
 		
-		// ------ wenn bezahlt, persönliche Absolution erteilen -------
+		// ------ wenn bezahlt, persÃ¶nliche Absolution erteilen -------
 		MIL_333_Personal_AbsolutionLevel = B_GetCurrentAbsolutionLevel(self) + 1;
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_03"); //Co?! Kde?! Nevidím žádné zlaãáky. Zmiz!
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_03"); //Co?! Kde?! NevidÃ­m Å¾Ã¡dnÃ© zlaÄƒÃ¡ky. Zmiz!
 	};
 	
 	AI_StopProcessInfos (self);

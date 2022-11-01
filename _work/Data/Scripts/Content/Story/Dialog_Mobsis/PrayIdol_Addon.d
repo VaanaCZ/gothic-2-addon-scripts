@@ -2,7 +2,7 @@ var int PrayIdolDay;
 var int RecievedMoney;
 var int GivenHitpoints;
 var int GivenMana;
-const int BeliarsDispo = 10000; //Joly: Gold, die Beliar im ganzen Spiel überhaupt hat.
+const int BeliarsDispo = 10000; //Joly: Gold, die Beliar im ganzen Spiel Ã¼berhaupt hat.
 
 func void B_HitpointAngleich (var int BeliarsCost)
 {

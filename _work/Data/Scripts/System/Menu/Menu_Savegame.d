@@ -109,7 +109,7 @@ const int SAVEGAME_DX2= 1000;
 
 instance MENUITEM_LOAD_HEADLINE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"NaËÌst hru";
+	text[0]		=	"Naƒç√≠st hru";
 	type		=	MENU_ITEM_TEXT;
 	posx		=	SAVEGAME_X1;
 	posy		=	700;
@@ -120,7 +120,7 @@ instance MENUITEM_LOAD_HEADLINE(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_SAVE_HEADLINE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Uloûit hru";
+	text[0]		=	"Ulo≈æit hru";
 	type		=	MENU_ITEM_TEXT;
 	posx		=	SAVEGAME_X1;
 	posy		=	700;
@@ -148,7 +148,7 @@ instance MENUITEM_LOADSAVE_THUMBPIC(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_LEVELNAME(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "SvÍt:";
+	text[0]		= "Svƒôt:";
 	posx		= SAVEGAME_X2;
 	posy		= 3960;
 	fontName	= MENU_FONT_SMALL;
@@ -174,7 +174,7 @@ instance MENUITEM_LOADSAVE_LEVELNAME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_DATETIME(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "Uloûeno";
+	text[0]		= "Ulo≈æeno";
 	posx		= SAVEGAME_X2;
 	posy		= 4900;
 	fontName	= MENU_FONT_SMALL;
@@ -203,7 +203,7 @@ instance MENUITEM_LOADSAVE_DATETIME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_GAMETIME(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "»as:";
+	text[0]		= "ƒåas:";
 	posx		= SAVEGAME_X2;
 	posy		= 6200;
 	fontName	= MENU_FONT_SMALL;
@@ -246,8 +246,8 @@ instance MENUITEM_LOADSAVE_PLAYTIME_VALUE(C_MENU_ITEM_DEF)
 
 instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ZP T";
-	text[1]		=	"ZpÍt";
+	text[0]		=	"ZPƒòT";
+	text[1]		=	"Zpƒôt";
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 21*SAVEGAME_DY;
 };
@@ -262,7 +262,7 @@ instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_LOAD_BACK(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ZP T";
+	text[0]		=	"ZPƒòT";
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 21*SAVEGAME_DY;
 };
@@ -289,8 +289,8 @@ INSTANCE MENUITEM_SAVE_SLOT1(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 1 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 1 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 0 * SAVEGAME_DY;
@@ -306,8 +306,8 @@ INSTANCE MENUITEM_SAVE_SLOT2(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 2 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 2 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 1 * SAVEGAME_DY;
@@ -323,8 +323,8 @@ INSTANCE MENUITEM_SAVE_SLOT3(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 3 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 3 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 2 * SAVEGAME_DY;
@@ -341,8 +341,8 @@ INSTANCE MENUITEM_SAVE_SLOT4(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 4 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 4 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 3 * SAVEGAME_DY;
@@ -359,8 +359,8 @@ INSTANCE MENUITEM_SAVE_SLOT5(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 5 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 5 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 4 * SAVEGAME_DY;
@@ -376,8 +376,8 @@ INSTANCE MENUITEM_SAVE_SLOT6(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 6 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 6 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 5 * SAVEGAME_DY;
@@ -393,8 +393,8 @@ INSTANCE MENUITEM_SAVE_SLOT7(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 7 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 7 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 6 * SAVEGAME_DY;
@@ -410,8 +410,8 @@ INSTANCE MENUITEM_SAVE_SLOT8(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 8 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 8 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 7 * SAVEGAME_DY;
@@ -426,8 +426,8 @@ INSTANCE MENUITEM_SAVE_SLOT8(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_SAVE_SLOT9(C_MENU_ITEM_DEF)
 {
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 9 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 9 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 8 * SAVEGAME_DY;
@@ -443,8 +443,8 @@ INSTANCE MENUITEM_SAVE_SLOT10(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 10 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 10 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 9 * SAVEGAME_DY;
@@ -461,8 +461,8 @@ INSTANCE MENUITEM_SAVE_SLOT11(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 11 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 11 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 10 * SAVEGAME_DY;
@@ -478,8 +478,8 @@ INSTANCE MENUITEM_SAVE_SLOT12(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 12 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 12 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 11 * SAVEGAME_DY;
@@ -495,8 +495,8 @@ INSTANCE MENUITEM_SAVE_SLOT13(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 13 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 13 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 12 * SAVEGAME_DY;
@@ -512,8 +512,8 @@ INSTANCE MENUITEM_SAVE_SLOT14(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 14 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 14 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 13 * SAVEGAME_DY;
@@ -529,8 +529,8 @@ INSTANCE MENUITEM_SAVE_SLOT15(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 15 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 15 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 14 * SAVEGAME_DY;
@@ -547,8 +547,8 @@ INSTANCE MENUITEM_SAVE_SLOT16(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 16 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 16 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 15 * SAVEGAME_DY;
@@ -564,8 +564,8 @@ INSTANCE MENUITEM_SAVE_SLOT17(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 17 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 17 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 16 * SAVEGAME_DY;
@@ -581,8 +581,8 @@ INSTANCE MENUITEM_SAVE_SLOT18(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 18 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 18 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 17 * SAVEGAME_DY;
@@ -598,8 +598,8 @@ INSTANCE MENUITEM_SAVE_SLOT19(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 19 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 19 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 18 * SAVEGAME_DY;
@@ -615,8 +615,8 @@ INSTANCE MENUITEM_SAVE_SLOT20(C_MENU_ITEM_DEF)
 {
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "pozice 20 - chceö-li pouûÌt tuto pozici, stiskni ENTER a zadej jejÌ n·zev"; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "pozice 20 - chce≈°-li pou≈æ√≠t tuto pozici, stiskni ENTER a zadej jej√≠ n√°zev"; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 19 * SAVEGAME_DY;
@@ -637,8 +637,8 @@ INSTANCE MENUITEM_SAVE_SLOT20(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_LOAD_SLOT1(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "Pozice 1 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "Pozice 1 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 0 * SAVEGAME_DY;
@@ -650,8 +650,8 @@ INSTANCE MENUITEM_LOAD_SLOT1(C_MENU_ITEM_DEF)
 };
 INSTANCE MENUITEM_LOAD_SLOT2(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "Pozice 2 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "Pozice 2 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 1 * SAVEGAME_DY;
@@ -663,8 +663,8 @@ INSTANCE MENUITEM_LOAD_SLOT2(C_MENU_ITEM_DEF)
 };
 INSTANCE MENUITEM_LOAD_SLOT3(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "Pozice 3 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "Pozice 3 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 2 * SAVEGAME_DY;
@@ -676,8 +676,8 @@ INSTANCE MENUITEM_LOAD_SLOT3(C_MENU_ITEM_DEF)
 };
 INSTANCE MENUITEM_LOAD_SLOT4(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "Pozice 4 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "Pozice 4 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 3 * SAVEGAME_DY;
@@ -689,8 +689,8 @@ INSTANCE MENUITEM_LOAD_SLOT4(C_MENU_ITEM_DEF)
 };
 INSTANCE MENUITEM_LOAD_SLOT5(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "Pozice 5 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "Pozice 5 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 4 * SAVEGAME_DY;
@@ -702,8 +702,8 @@ INSTANCE MENUITEM_LOAD_SLOT5(C_MENU_ITEM_DEF)
 };
 INSTANCE MENUITEM_LOAD_SLOT6(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "Pozice 6 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "Pozice 6 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 5 * SAVEGAME_DY;
@@ -715,8 +715,8 @@ INSTANCE MENUITEM_LOAD_SLOT6(C_MENU_ITEM_DEF)
 };
 INSTANCE MENUITEM_LOAD_SLOT7(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "nezn·mÈ";
-	text[1]		=   "Pozice 7 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[0]		=   "nezn√°m√©";
+	text[1]		=   "Pozice 7 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 6 * SAVEGAME_DY;
@@ -729,7 +729,7 @@ INSTANCE MENUITEM_LOAD_SLOT7(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT8(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 8 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 8 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 7 * SAVEGAME_DY;
@@ -742,7 +742,7 @@ INSTANCE MENUITEM_LOAD_SLOT8(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT9(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 9 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 9 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 8 * SAVEGAME_DY;
@@ -755,7 +755,7 @@ INSTANCE MENUITEM_LOAD_SLOT9(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT10(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 10 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 10 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 9 * SAVEGAME_DY;
@@ -771,7 +771,7 @@ INSTANCE MENUITEM_LOAD_SLOT10(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT11(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 11 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 11 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 10 * SAVEGAME_DY;
@@ -784,7 +784,7 @@ INSTANCE MENUITEM_LOAD_SLOT11(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT12(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 12 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 12 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 11 * SAVEGAME_DY;
@@ -797,7 +797,7 @@ INSTANCE MENUITEM_LOAD_SLOT12(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT13(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 13 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 13 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 12 * SAVEGAME_DY;
@@ -810,7 +810,7 @@ INSTANCE MENUITEM_LOAD_SLOT13(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT14(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 14 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 14 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 13 * SAVEGAME_DY;
@@ -823,7 +823,7 @@ INSTANCE MENUITEM_LOAD_SLOT14(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT15(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 15 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 15 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 14 * SAVEGAME_DY;
@@ -837,7 +837,7 @@ INSTANCE MENUITEM_LOAD_SLOT15(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT16(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 16 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 16 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 15 * SAVEGAME_DY;
@@ -850,7 +850,7 @@ INSTANCE MENUITEM_LOAD_SLOT16(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT17(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 17 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 17 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 16 * SAVEGAME_DY;
@@ -863,7 +863,7 @@ INSTANCE MENUITEM_LOAD_SLOT17(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT18(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 18 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 18 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 17 * SAVEGAME_DY;
@@ -876,7 +876,7 @@ INSTANCE MENUITEM_LOAD_SLOT18(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT19(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 19 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 19 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 18 * SAVEGAME_DY;
@@ -889,7 +889,7 @@ INSTANCE MENUITEM_LOAD_SLOT19(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT20(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Pozice 20 - hru naËteö stiskem kl·vesy ENTER."; // Kommentar
+	text[1]		=   "Pozice 20 - hru naƒçte≈° stiskem kl√°vesy ENTER."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 19 * SAVEGAME_DY;
@@ -903,8 +903,8 @@ INSTANCE MENUITEM_LOAD_SLOT20(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_LOAD_SLOT0(C_MENU_ITEM_DEF)
 {
-	text[0]		=   "    - RychlÈ uloûenÌ -    ";
-	text[1]		=   "stiskem kl·vesy ENTER tuto hru naËteö"; // Kommentar
+	text[0]		=   "    - Rychl√© ulo≈æen√≠ -    ";
+	text[1]		=   "stiskem kl√°vesy ENTER tuto hru naƒçte≈°"; // Kommentar
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 20 * SAVEGAME_DY;
 	dimx		= 	SAVEGAME_DX1;

@@ -42,16 +42,16 @@ func int DIA_Ehnim_HALLO_Condition ()
 func void DIA_Ehnim_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Ehnim_HALLO_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_01"); //Jmenuju se Ehnim. Jsem jednÌm z n·mezdnÌch rolnÌk˘.
+	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_01"); //Jmenuju se Ehnim. Jsem jedn√≠m z n√°mezdn√≠ch roln√≠k≈Ø.
 
 	if	(
 		(Hlp_IsValidNpc (Egill))
 		&& (!C_NpcIsDown (Egill))
 		)
 			{
-				AI_Output			(self, other, "DIA_Ehnim_HALLO_12_02"); //A t·mhleten prcek je m˘j bratr Egill.
+				AI_Output			(self, other, "DIA_Ehnim_HALLO_12_02"); //A t√°mhleten prcek je m≈Øj bratr Egill.
 			};
-	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_03"); //Uû tady na farmÍ pracuju pro Akila nÍkolik let.
+	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_03"); //U≈æ tady na farmƒô pracuju pro Akila nƒôkolik let.
 
 };
 
@@ -66,7 +66,7 @@ instance DIA_Ehnim_FELDARBEIT		(C_INFO)
 	condition	 = 	DIA_Ehnim_FELDARBEIT_Condition;
 	information	 = 	DIA_Ehnim_FELDARBEIT_Info;
 
-	description	 = 	"Jak jdou polnÌ pr·ce?";
+	description	 = 	"Jak jdou poln√≠ pr√°ce?";
 };
 
 func int DIA_Ehnim_FELDARBEIT_Condition ()
@@ -79,9 +79,9 @@ func int DIA_Ehnim_FELDARBEIT_Condition ()
 
 func void DIA_Ehnim_FELDARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_FELDARBEIT_15_00"); //Jak jdou polnÌ pr·ce?
-	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_01"); //Chceö pomoct? T·mhle je dalöÌ motyka. Vezmi si ji a vyraz na pole.
-	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_02"); //Ale mÍl by ses mÌt na pozoru p‚ed polnÌmi ök˘dci. Utrhnou ti ruku, ani nemrkneö.
+	AI_Output			(other, self, "DIA_Ehnim_FELDARBEIT_15_00"); //Jak jdou poln√≠ pr√°ce?
+	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_01"); //Chce≈° pomoct? T√°mhle je dal≈°√≠ motyka. Vezmi si ji a vyraz na pole.
+	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_02"); //Ale mƒôl by ses m√≠t na pozoru p√¢ed poln√≠mi ≈°k≈Ødci. Utrhnou ti ruku, ani nemrkne≈°.
 
 };
 
@@ -95,7 +95,7 @@ instance DIA_Ehnim_FELDRAEUBER		(C_INFO)
 	condition	 = 	DIA_Ehnim_FELDRAEUBER_Condition;
 	information	 = 	DIA_Ehnim_FELDRAEUBER_Info;
 
-	description	 = 	"ProË s tÍmi ök˘dci nÍco neudÍl·te?";
+	description	 = 	"Proƒç s tƒômi ≈°k≈Ødci nƒôco neudƒôl√°te?";
 };
 
 func int DIA_Ehnim_FELDRAEUBER_Condition ()
@@ -108,8 +108,8 @@ func int DIA_Ehnim_FELDRAEUBER_Condition ()
 
 func void DIA_Ehnim_FELDRAEUBER_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_FELDRAEUBER_15_00"); //ProË s tÍmi ök˘dci nÍco neudÍl·te?
-	AI_Output			(self, other, "DIA_Ehnim_FELDRAEUBER_12_01"); //Zabil uû jsem jich vÌc, neû dok·ûu spoËÌtat. Jedinej problÈm je, ûe zase p‚ijdou dalöÌ.
+	AI_Output			(other, self, "DIA_Ehnim_FELDRAEUBER_15_00"); //Proƒç s tƒômi ≈°k≈Ødci nƒôco neudƒôl√°te?
+	AI_Output			(self, other, "DIA_Ehnim_FELDRAEUBER_12_01"); //Zabil u≈æ jsem jich v√≠c, ne≈æ dok√°≈æu spoƒç√≠tat. Jedinej probl√©m je, ≈æe zase p√¢ijdou dal≈°√≠.
 
 };
 
@@ -123,7 +123,7 @@ instance DIA_Ehnim_STREIT1		(C_INFO)
 	condition	 = 	DIA_Ehnim_STREIT1_Condition;
 	information	 = 	DIA_Ehnim_STREIT1_Info;
 
-	description	 = 	"Tv˘j bratr mi ‚Ìkal to samÈ.";
+	description	 = 	"Tv≈Øj bratr mi √¢√≠kal to sam√©.";
 };
 
 func int DIA_Ehnim_STREIT1_Condition ()
@@ -148,9 +148,9 @@ func int DIA_Ehnim_STREIT1_Condition ()
 
 func void DIA_Ehnim_STREIT1_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT1_15_00"); //Tv˘j bratr mi ‚Ìkal to samÈ.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_01"); //Co? Ten sralbotka? Vûdycky se vytratÌ hned, jak se ty bestie objevÌ na naöem pozemku.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_02"); //NemÍl by ‚Ìkat takov˝ nesmysly.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT1_15_00"); //Tv≈Øj bratr mi √¢√≠kal to sam√©.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_01"); //Co? Ten sralbotka? V≈ædycky se vytrat√≠ hned, jak se ty bestie objev√≠ na na≈°em pozemku.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_02"); //Nemƒôl by √¢√≠kat takov√Ω nesmysly.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -163,7 +163,7 @@ instance DIA_Ehnim_STREIT3		(C_INFO)
 	condition	 = 	DIA_Ehnim_STREIT3_Condition;
 	information	 = 	DIA_Ehnim_STREIT3_Info;
 
-	description	 = 	"Tv˘j bratr si myslÌ, ûe se akor·t vytahujeö.";
+	description	 = 	"Tv≈Øj bratr si mysl√≠, ≈æe se akor√°t vytahuje≈°.";
 };
 
 func int DIA_Ehnim_STREIT3_Condition ()
@@ -183,10 +183,10 @@ func int DIA_Ehnim_STREIT3_Condition ()
 
 func void DIA_Ehnim_STREIT3_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT3_15_00"); //Tv˘j bratr si myslÌ, ûe se akor·t vytahujeö.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_01"); //Co? To m· v·ûnÍ odvahu tohle ‚Ìct?
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_02"); //RadÍj by si mÍl d·vat pozor, neû mu uötÍd‚Ìm po‚·dnou lekci.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_03"); //Tak mu to bÍû ‚Ìct.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT3_15_00"); //Tv≈Øj bratr si mysl√≠, ≈æe se akor√°t vytahuje≈°.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_01"); //Co? To m√° v√°≈ænƒô odvahu tohle √¢√≠ct?
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_02"); //Radƒôj by si mƒôl d√°vat pozor, ne≈æ mu u≈°tƒôd√¢√≠m po√¢√°dnou lekci.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_03"); //Tak mu to bƒô≈æ √¢√≠ct.
 	AI_StopProcessInfos (self);
 };
 
@@ -201,7 +201,7 @@ instance DIA_Ehnim_STREIT5		(C_INFO)
 	information	 = 	DIA_Ehnim_STREIT5_Info;
 	permanent	 =  TRUE;
 
-	description	 = 	"M·m dojem, ûe byste se mÍli oba trochu zklidnit.";
+	description	 = 	"M√°m dojem, ≈æe byste se mƒôli oba trochu zklidnit.";
 };
 
 var int DIA_Ehnim_STREIT5_noPerm;
@@ -224,21 +224,21 @@ func int DIA_Ehnim_STREIT5_Condition ()
 
 func void DIA_Ehnim_STREIT5_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT5_15_00"); //M·m dojem, ûe byste se mÍli oba trochu zklidnit.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_01"); //Ten bastard to jeötÍ nevzdal, co?
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_02"); //J· ho roztrhnu. ¬ekni mu to.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT5_15_00"); //M√°m dojem, ≈æe byste se mƒôli oba trochu zklidnit.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_01"); //Ten bastard to je≈°tƒô nevzdal, co?
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_02"); //J√° ho roztrhnu. √Çekni mu to.
 
 	Info_ClearChoices	(DIA_Ehnim_STREIT5);
 
-	Info_AddChoice	(DIA_Ehnim_STREIT5, "DÍlej si, co chceö. Odch·zÌm.", DIA_Ehnim_STREIT5_gehen );
-	Info_AddChoice	(DIA_Ehnim_STREIT5, "ProË mu to ne‚ekneö s·m?", DIA_Ehnim_STREIT5_Attack );
+	Info_AddChoice	(DIA_Ehnim_STREIT5, "Dƒôlej si, co chce≈°. Odch√°z√≠m.", DIA_Ehnim_STREIT5_gehen );
+	Info_AddChoice	(DIA_Ehnim_STREIT5, "Proƒç mu to ne√¢ekne≈° s√°m?", DIA_Ehnim_STREIT5_Attack );
 
 
 };
 func void DIA_Ehnim_STREIT5_Attack ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT5_Attack_15_00"); //ProË mu to ne‚ekneö s·m?
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_Attack_12_01"); //To p‚esnÍ udÍl·m.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT5_Attack_15_00"); //Proƒç mu to ne√¢ekne≈° s√°m?
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_Attack_12_01"); //To p√¢esnƒô udƒôl√°m.
 
 	AI_StopProcessInfos (self);
 
@@ -252,8 +252,8 @@ func void DIA_Ehnim_STREIT5_Attack ()
 
 func void DIA_Ehnim_STREIT5_gehen ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT5_gehen_15_00"); //DÍlej si, co chceö. Odch·zÌm.
-	AI_Output			(self ,other, "DIA_Ehnim_STREIT5_gehen_12_01"); //Jo, jen se rychle ztra„.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT5_gehen_15_00"); //Dƒôlej si, co chce≈°. Odch√°z√≠m.
+	AI_Output			(self ,other, "DIA_Ehnim_STREIT5_gehen_12_01"); //Jo, jen se rychle ztraƒÉ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -285,7 +285,7 @@ func int DIA_Ehnim_PERMKAP1_Condition ()
 
 func void DIA_Ehnim_PERMKAP1_Info ()
 {
-	AI_Output			(self, other, "DIA_Ehnim_PERMKAP1_12_00"); //Chceö dÍlat dalöÌ problÈmy? M·m dojem, ûe bude lepöÌ, kdyû se hned ztratÌö.
+	AI_Output			(self, other, "DIA_Ehnim_PERMKAP1_12_00"); //Chce≈° dƒôlat dal≈°√≠ probl√©my? M√°m dojem, ≈æe bude lep≈°√≠, kdy≈æ se hned ztrat√≠≈°.
 
 	AI_StopProcessInfos (self);
 };
@@ -315,47 +315,47 @@ func int DIA_Ehnim_MoleRatFett_Condition ()
 
 func void DIA_Ehnim_MoleRatFett_Info ()
 {
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_00"); //Ty jsi tu JEäT .
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_01"); //Vypad· to tak. Po‚·d vytoËenej?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_02"); //Nic se nedÍje, zapome‡ na to. ¬ekni, byl jsi poslednÌ dobou na LobartovÍ farmÍ?
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_03"); //Moûn·. ProË?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_04"); //¡le, nic d˘leûit˝ho. Jen jsem chtÍl mluvit s Vinem o jeho palÌrnÍ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_00"); //Ty jsi tu JE≈†Tƒò.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_01"); //Vypad√° to tak. Po√¢√°d vytoƒçenej?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_02"); //Nic se nedƒôje, zapome≈ï na to. √Çekni, byl jsi posledn√≠ dobou na Lobartovƒô farmƒô?
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_03"); //Mo≈æn√°. Proƒç?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_04"); //√Åle, nic d≈Øle≈æit√Ωho. Jen jsem chtƒôl mluvit s Vinem o jeho pal√≠rnƒô.
 	
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Pr·vÍ teÎ nem·m Ëas.", DIA_Ehnim_MoleRatFett_nein );
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "PalÌrna? Jak· palÌrna?", DIA_Ehnim_MoleRatFett_was );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Pr√°vƒô te√´ nem√°m ƒças.", DIA_Ehnim_MoleRatFett_nein );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Pal√≠rna? Jak√° pal√≠rna?", DIA_Ehnim_MoleRatFett_was );
 
 	if (Npc_IsDead(Vino))
 	{
-		Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Vino je mrtv˝.", DIA_Ehnim_MoleRatFett_tot );
+		Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Vino je mrtv√Ω.", DIA_Ehnim_MoleRatFett_tot );
 	};
 
 };
 func void DIA_Ehnim_MoleRatFett_tot ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_tot_15_00"); //Vino je mrtv˝.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_tot_12_01"); //Proboha. No nic. Tak to se ned· nic dÍlat.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_tot_15_00"); //Vino je mrtv√Ω.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_tot_12_01"); //Proboha. No nic. Tak to se ned√° nic dƒôlat.
 
 };
 
 func void DIA_Ehnim_MoleRatFett_was ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_15_00"); //O palÌrnÍ? O jakÈ palÌrnÍ?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_01"); //Eh. Asi jsem to nemÍl ‚Ìkat. Vino byl na to svÈ malÈ tajemstvÌ vûdycky hodnÍ citliv˝.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_02"); //Ale teÎ jsem si to nechal vyklouznout. Tam vzadu v lese si Vino za‚Ìdil tajnou palÌrnu.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_03"); //Ned·vno mÍ û·dal o nÍco, ËÌm by mohl promazat padacÌ m‚Ìû.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_04"); //V poslednÌ dobÍ hodnÍ pröelo a zaËala ho zlobit rez. TeÎ je navij·k zaseknut˝ a nikdo uû se tam nedostane. To jsme v pÍkn˝ bryndÍ.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_15_00"); //O pal√≠rnƒô? O jak√© pal√≠rnƒô?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_01"); //Eh. Asi jsem to nemƒôl √¢√≠kat. Vino byl na to sv√© mal√© tajemstv√≠ v≈ædycky hodnƒô citliv√Ω.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_02"); //Ale te√´ jsem si to nechal vyklouznout. Tam vzadu v lese si Vino za√¢√≠dil tajnou pal√≠rnu.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_03"); //Ned√°vno mƒô ≈æ√°dal o nƒôco, ƒç√≠m by mohl promazat padac√≠ m√¢√≠≈æ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_04"); //V posledn√≠ dobƒô hodnƒô pr≈°elo a zaƒçala ho zlobit rez. Te√´ je navij√°k zaseknut√Ω a nikdo u≈æ se tam nedostane. To jsme v pƒôkn√Ω bryndƒô.
 
 	Log_CreateTopic (TOPIC_FoundVinosKellerei, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_FoundVinosKellerei, LOG_RUNNING);
-	B_LogEntry (TOPIC_FoundVinosKellerei,"Podle Ehnima se Vino st·le ukr˝v· v lesÌch poblÌû Akilova statku. Ale mechanismus dve‚Ì je zad‚en˝ a dokud jej nenamaûu rysËÌm s·dlem, dovnit‚ se nedostanu."); 
+	B_LogEntry (TOPIC_FoundVinosKellerei,"Podle Ehnima se Vino st√°le ukr√Ωv√° v les√≠ch pobl√≠≈æ Akilova statku. Ale mechanismus dve√¢√≠ je zad√¢en√Ω a dokud jej nenama≈æu rysƒç√≠m s√°dlem, dovnit√¢ se nedostanu."); 
 	
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "A? M·ö nÍjak˝ mazivo?", DIA_Ehnim_MoleRatFett_was_Fett );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "A? M√°≈° nƒôjak√Ω mazivo?", DIA_Ehnim_MoleRatFett_was_Fett );
 };
 func void DIA_Ehnim_MoleRatFett_was_Fett ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_15_00"); //A? M·ö nÍjak˝ mazivo?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_12_01"); //Jo, jasnÍ. NejlepöÌ, co se tu d· sehnat. RysËÌ s·dlo. P‚Ìöern· vÍc, to ti povÌm. Taky se pouûÌv· na promaz·nÌ lodnÌch dÍl.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_15_00"); //A? M√°≈° nƒôjak√Ω mazivo?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_12_01"); //Jo, jasnƒô. Nejlep≈°√≠, co se tu d√° sehnat. Rysƒç√≠ s√°dlo. P√¢√≠≈°ern√° vƒôc, to ti pov√≠m. Taky se pou≈æ√≠v√° na promaz√°n√≠ lodn√≠ch dƒôl.
 	
 	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Prodej mi ten tuk.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill );
 
@@ -363,14 +363,14 @@ func void DIA_Ehnim_MoleRatFett_was_Fett ()
 var int Ehnim_MoleRatFettOffer;
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_00"); //Prodej mi to s·dlo.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_01"); //To nebude levn˝, k·mo. V tomhle kraji to je zatracenÍ vz·cn· vÍc.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_00"); //Prodej mi to s√°dlo.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_01"); //To nebude levn√Ω, k√°mo. V tomhle kraji to je zatracenƒô vz√°cn√° vƒôc.
 	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_02"); //Kolik?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_03"); //Mmh. 100 zlat˝ch?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_03"); //Mmh. 100 zlat√Ωch?
 	Ehnim_MoleRatFettOffer = 100;
 
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "To je p‚Ìliö.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "To je p√¢√≠li≈°.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel );
 	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Dohodnuto.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja );
 
 };
@@ -380,7 +380,7 @@ func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,Ehnim_MoleRatFettOffer))
 		{
-			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_01"); //Dobr·. Tady to m·ö.
+			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_01"); //Dobr√°. Tady to m√°≈°.
 			
 			if (Npc_HasItems (self,ItMi_Moleratlubric_MIS))
 			{
@@ -388,17 +388,17 @@ func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 				
 				if (Npc_IsDead(Vino) == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_02"); //(pro sebe) ZatracenÍ. Vino mÍ zabije.
+						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_02"); //(pro sebe) Zatracenƒô. Vino mƒô zabije.
 					};					
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_03"); //Sakra, kam jsme se to dostali? To je zatracenÍ mrzut· vÍc. Tak fajn, promi‡. Jak se zd·, uû to nem·m. Vem si sv˝ prachy zp·tky.
+				AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_03"); //Sakra, kam jsme se to dostali? To je zatracenƒô mrzut√° vƒôc. Tak fajn, promi≈ï. Jak se zd√°, u≈æ to nem√°m. Vem si sv√Ω prachy zp√°tky.
 				B_GiveInvItems (self, other, ItMi_Gold,Ehnim_MoleRatFettOffer);
 				
 				if (Npc_IsDead(Egill) == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_04"); //VsadÌm se, ûe to m˘j br·cha udÍl· znovu. Ten bastard.
+						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_04"); //Vsad√≠m se, ≈æe to m≈Øj br√°cha udƒôl√° znovu. Ten bastard.
 						AI_StopProcessInfos (self);
 						other.aivar[AIV_INVINCIBLE] = FALSE;
 						B_Attack (self, Egill, AR_NONE, 0);
@@ -407,33 +407,33 @@ func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_05"); //No to je bezvadn˝. Nejd‚Ìv chceö udÍlat velkej köeft a pak nem·ö dost prach˘. Ztra„ se.
+			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_05"); //No to je bezvadn√Ω. Nejd√¢√≠v chce≈° udƒôlat velkej k≈°eft a pak nem√°≈° dost prach≈Ø. ZtraƒÉ se.
 		};
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_15_00"); //To je p‚Ìliö.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_12_01"); //Fajn, fajn. Tak teda 70 zlat˝ch. Ale to je moje poslednÌ nabÌdka.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_15_00"); //To je p√¢√≠li≈°.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_12_01"); //Fajn, fajn. Tak teda 70 zlat√Ωch. Ale to je moje posledn√≠ nab√≠dka.
 	Ehnim_MoleRatFettOffer = 70;
 
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "To je jeötÍ po‚·d moc.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "To je je≈°tƒô po√¢√°d moc.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch );
 	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Dohodnuto.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja );
 
 };
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_immernoch_15_00"); //To je jeötÍ po‚·d moc.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_immernoch_12_01"); //(naötvanÍ) Tak si trhni. MÍj se.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_immernoch_15_00"); //To je je≈°tƒô po√¢√°d moc.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_immernoch_12_01"); //(na≈°tvanƒô) Tak si trhni. Mƒôj se.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Ehnim_MoleRatFett_nein ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_nein_15_00"); //Pr·vÍ teÎ nem·m Ëas.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_nein_12_01"); //Nenech se zdrûovat, chlape.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_nein_15_00"); //Pr√°vƒô te√´ nem√°m ƒças.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_nein_12_01"); //Nenech se zdr≈æovat, chlape.
 	AI_StopProcessInfos (self);
 };
 
@@ -463,7 +463,7 @@ func int DIA_Ehnim_PERMKAP3_Condition ()
 
 func void DIA_Ehnim_PERMKAP3_Info ()
 {
-	AI_Output			(self, other, "DIA_Ehnim_PERMKAP3_12_00"); //TeÎ nem·m Ëas.
+	AI_Output			(self, other, "DIA_Ehnim_PERMKAP3_12_00"); //Te√´ nem√°m ƒças.
 	AI_StopProcessInfos (self);
 };
 

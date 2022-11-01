@@ -1,5 +1,5 @@
 //****************************
-// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (Ornamentschalterrätsel beim Steinkreis Onars Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (OrnamentschalterrÃ¤tsel beim Steinkreis Onars Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 {
@@ -15,13 +15,13 @@ func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 			Wld_PlayEffect("spellFX_LIGHTSTAR_RingRitual",  ItMi_OrnamentEffekt_BIGFARM_Addon, ItMi_OrnamentEffekt_BIGFARM_Addon, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"Spustil jsem mechanismus kamenného kruhu u Sekobova statku. Byla to rána jak z dêla a vzápêtí se mê pokusila zabít nêjaká kamenná potvora."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"Spustil jsem mechanismus kamennÃ©ho kruhu u Sekobova statku. Byla to rÃ¡na jak z dÄ™la a vzÃ¡pÄ™tÃ­ se mÄ™ pokusila zabÃ­t nÄ™jakÃ¡ kamennÃ¡ potvora."); 
 			ORNAMENT_SWITCHED_BIGFARM = TRUE;
 		};
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (Ornamentschalterrätsel beim Steinkreis Lobarts Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (OrnamentschalterrÃ¤tsel beim Steinkreis Lobarts Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 {
@@ -30,13 +30,13 @@ func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 			Wld_PlayEffect("FX_EarthQuake",  hero, hero, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"Aktivoval jsem mechanismus kamenného kruhu u Lobartova statku. Zemê se zatâásla, ale nic jiného se nestalo."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"Aktivoval jsem mechanismus kamennÃ©ho kruhu u Lobartova statku. ZemÄ™ se zatÃ¢Ã¡sla, ale nic jinÃ©ho se nestalo."); 
 			ORNAMENT_SWITCHED_FARM = TRUE;
 		};
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (Ornamentschalterrätsel beim Steinkreis im Medium Forest) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (OrnamentschalterrÃ¤tsel beim Steinkreis im Medium Forest) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 {
@@ -52,7 +52,7 @@ func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 			Wld_PlayEffect("spellFX_LIGHTSTAR_RingRitual",  ItMi_OrnamentEffekt_FOREST_Addon, ItMi_OrnamentEffekt_FOREST_Addon, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"Aktivoval jsem mechanismus kamenného kruhu v lese na severu. Objevil se kamenný strážce a nebyl v nijak dobré náladê."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"Aktivoval jsem mechanismus kamennÃ©ho kruhu v lese na severu. Objevil se kamennÃ½ strÃ¡Å¾ce a nebyl v nijak dobrÃ© nÃ¡ladÄ™."); 
 			ORNAMENT_SWITCHED_FOREST = TRUE;
 		};
 };

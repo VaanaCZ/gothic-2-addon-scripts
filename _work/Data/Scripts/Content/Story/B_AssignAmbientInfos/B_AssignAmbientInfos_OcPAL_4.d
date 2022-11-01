@@ -29,7 +29,7 @@ INSTANCE DIA_OCPAL_4_PEOPLE(C_INFO)
 	condition	= DIA_OCPAL_4_PEOPLE_Condition;
 	information	= DIA_OCPAL_4_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tomu tady velÌ?";
+	description = "Kdo tomu tady vel√≠?";
 };                       
 
 FUNC INT DIA_OCPAL_4_PEOPLE_Condition()
@@ -39,8 +39,8 @@ FUNC INT DIA_OCPAL_4_PEOPLE_Condition()
 
 FUNC VOID DIA_OCPAL_4_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_PEOPLE_15_00"); //Kdo tomu tady velÌ?
-	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Velitel Garond. Najdeö ho v t˝ nejvÍtöÌ budovÍ tady uvnit‚ hradu.
+	AI_Output (other, self, "DIA_OCPAL_4_PEOPLE_15_00"); //Kdo tomu tady vel√≠?
+	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Velitel Garond. Najde≈° ho v t√Ω nejvƒôt≈°√≠ budovƒô tady uvnit√¢ hradu.
 };
 
 // *************************************************************************
@@ -52,7 +52,7 @@ INSTANCE DIA_OCPAL_4_LOCATION(C_INFO)
 	condition	= DIA_OCPAL_4_LOCATION_Condition;
 	information	= DIA_OCPAL_4_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co mi m˘ûeö ‚Ìct o HornickÈm ˙dolÌ?";
+	description = "Co mi m≈Ø≈æe≈° √¢√≠ct o Hornick√©m √∫dol√≠?";
 };                       
 
 FUNC INT DIA_OCPAL_4_LOCATION_Condition()
@@ -62,9 +62,9 @@ FUNC INT DIA_OCPAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_OCPAL_4_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_LOCATION_15_00"); //Co mi m˘ûeö ‚Ìct o HornickÈm ˙dolÌ?
-	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_01"); //Co vÌm, tak je tu nÍkolik dol˘ - pokud tedy vöechny nepadly do dr·p˘ sk‚et˘m.
-	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_02"); //Jednotky z vÍtöÌ Ë·sti sest·vajÌ z vÍz‡˘, ale najdeö tu i p·r paladin˘.
+	AI_Output (other, self, "DIA_OCPAL_4_LOCATION_15_00"); //Co mi m≈Ø≈æe≈° √¢√≠ct o Hornick√©m √∫dol√≠?
+	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_01"); //Co v√≠m, tak je tu nƒôkolik dol≈Ø - pokud tedy v≈°echny nepadly do dr√°p≈Ø sk√¢et≈Øm.
+	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_02"); //Jednotky z vƒôt≈°√≠ ƒç√°sti sest√°vaj√≠ z vƒôz≈ï≈Ø, ale najde≈° tu i p√°r paladin≈Ø.
 };
 
 // *************************************************************************
@@ -90,26 +90,26 @@ FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_01"); //ObklÌËili n·s sk‚eti! Ale budeme se br·nit do poslednÌho muûe. A Innos n·m pom˘ûe v boji proti drak˘m!
+		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_01"); //Obkl√≠ƒçili n√°s sk√¢eti! Ale budeme se br√°nit do posledn√≠ho mu≈æe. A Innos n√°m pom≈Ø≈æe v boji proti drak≈Øm!
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //Uû je to pÍknÍ dlouho, co sk‚eti za˙toËili. Kde jsou ty zatracen˝ posily?
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //U≈æ je to pƒôknƒô dlouho, co sk√¢eti za√∫toƒçili. Kde jsou ty zatracen√Ω posily?
 			if (other.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //Nem˘ûeö p‚eci v·ûnÍ vÍ‚it tomu, ûe ty jako drakobijec m·ö öanci proti VäEM tÍm drak˘m?
+				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //Nem≈Ø≈æe≈° p√¢eci v√°≈ænƒô vƒô√¢it tomu, ≈æe ty jako drakobijec m√°≈° ≈°anci proti V≈†EM tƒôm drak≈Øm?
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_04"); //Ti takzvanÌ drakobijci toho moc nesvedou!
+				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_04"); //Ti takzvan√≠ drakobijci toho moc nesvedou!
 			};
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_05"); //DÌky Innosovi! Ty zatracen˝ potvory byly poraûeny!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_05"); //D√≠ky Innosovi! Ty zatracen√Ω potvory byly pora≈æeny!
 		};
 	};
 
@@ -117,12 +117,12 @@ FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_06"); //Nezd· se, ûe by smrt drak˘ sk‚ety nÍjak vyvedla z mÌry. ProË u Innose koneËnÍ neodt·hnou? DÍje se tu nÍco divn˝ho.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_06"); //Nezd√° se, ≈æe by smrt drak≈Ø sk√¢ety nƒôjak vyvedla z m√≠ry. Proƒç u Innose koneƒçnƒô neodt√°hnou? Dƒôje se tu nƒôco divn√Ωho.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_07"); //Ta zpropaden· br·na se zasekla. Sk‚eti se valÌ do hradu a nic uû je nem˘ûe zastavit.
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_08"); //NÍkdo musÌ informovat lorda Hagena. Pot‚ebujeme ho TADY.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_07"); //Ta zpropaden√° br√°na se zasekla. Sk√¢eti se val√≠ do hradu a nic u≈æ je nem≈Ø≈æe zastavit.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_08"); //Nƒôkdo mus√≠ informovat lorda Hagena. Pot√¢ebujeme ho TADY.
 		};
 	};
 };

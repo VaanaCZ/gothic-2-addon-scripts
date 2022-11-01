@@ -56,10 +56,10 @@ func int DIA_Hodges_HALLO_Condition ()
 
 func void DIA_Hodges_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Hodges_HALLO_15_00"); //Zdravím, jsem tu novı.
-	AI_Output (self, other, "DIA_Hodges_HALLO_03_01"); //Neber si to nijak zle, ale není mi do âeèi - jsem úplnê hotovej.
-	AI_Output (other, self, "DIA_Hodges_HALLO_15_02"); //Máš práce nad hlavu, co?
-	AI_Output (self, other, "DIA_Hodges_HALLO_03_03"); //Tak to máš pravdu. Bennet dêlá tolik zbraní, e je ani nestaèím leštit.
+	AI_Output (other, self, "DIA_Hodges_HALLO_15_00"); //ZdravÃ­m, jsem tu novÃ½.
+	AI_Output (self, other, "DIA_Hodges_HALLO_03_01"); //Neber si to nijak zle, ale nenÃ­ mi do Ã¢eÄi - jsem ÃºplnÄ™ hotovej.
+	AI_Output (other, self, "DIA_Hodges_HALLO_15_02"); //MÃ¡Å¡ prÃ¡ce nad hlavu, co?
+	AI_Output (self, other, "DIA_Hodges_HALLO_03_03"); //Tak to mÃ¡Å¡ pravdu. Bennet dÄ™lÃ¡ tolik zbranÃ­, Å¾e je ani nestaÄÃ­m leÅ¡tit.
 };
 
 // ************************************************************
@@ -72,7 +72,7 @@ instance DIA_Hodges_TellAboutFarm	(C_INFO)
 	condition	 = 	DIA_Hodges_TellAboutFarm_Condition;
 	information	 = 	DIA_Hodges_TellAboutFarm_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Co mi mùeš âíct o farmê?";
+	description	 = 	"Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ct o farmÄ™?";
 };
 
 func int DIA_Hodges_TellAboutFarm_Condition ()
@@ -86,21 +86,21 @@ func int DIA_Hodges_TellAboutFarm_Condition ()
 
 func void DIA_Hodges_TellAboutFarm_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_TellAboutFarm_15_00"); //Co mi mùeš âíct o farmê?
+	AI_Output (other,self ,"DIA_Hodges_TellAboutFarm_15_00"); //Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ct o farmÄ™?
 	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_01"); //Tohle je Onarova farma.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_02"); //To velké stavení je jeho dùm. Jedno kâídlo pâenechal oldákùm.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_03"); //My rolníci máme kadı své lùko ve stodole.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_04"); //(pâekotnê) Ale já jsem spokojenı, je dobrı mít lidi na hlídání farmy.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_02"); //To velkÃ© stavenÃ­ je jeho dÅ¯m. Jedno kÃ¢Ã­dlo pÃ¢enechal Å¾oldÃ¡kÅ¯m.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_03"); //My rolnÃ­ci mÃ¡me kaÅ¾dÃ½ svÃ© lÅ¯Å¾ko ve stodole.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_04"); //(pÃ¢ekotnÄ™) Ale jÃ¡ jsem spokojenÃ½, je dobrÃ½ mÃ­t lidi na hlÃ­dÃ¡nÃ­ farmy.
 	
 	if (Npc_GetDistToWP (self, "NW_BIGFARM_SMITH_SHARP") < 500)
 	{
-		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_05"); //Tady za mnou je kuchyà.
+		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_05"); //Tady za mnou je kuchyÅ•.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_06"); //Kuchyà je v té budovê, co má zepâedu kovárnu.
+		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_06"); //KuchyÅ• je v tÃ© budovÄ™, co mÃ¡ zepÃ¢edu kovÃ¡rnu.
 	};
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_07"); //Moná budeš mít štêstí a Thekla pro tebe najde nêco k jídlu.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_07"); //MoÅ¾nÃ¡ budeÅ¡ mÃ­t Å¡tÄ™stÃ­ a Thekla pro tebe najde nÄ™co k jÃ­dlu.
 };
 
 // ************************************************************
@@ -113,7 +113,7 @@ instance DIA_Hodges_AboutSld	(C_INFO)
 	condition	 = 	DIA_Hodges_AboutSld_Condition;
 	information	 = 	DIA_Hodges_AboutSld_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"A co ti oldnéâi?";
+	description	 = 	"A co ti Å¾oldnÃ©Ã¢i?";
 };
 
 func int DIA_Hodges_AboutSld_Condition ()
@@ -129,11 +129,11 @@ func int DIA_Hodges_AboutSld_Condition ()
 
 func void DIA_Hodges_AboutSld_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_AboutSld_15_00"); //A co ti oldnéâi?
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_01"); //Onar je najal, aby dreli domobranu zpátky.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_02"); //Ale také hlídají farmu, ovce a farmáâe.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_03"); //Take ani nepomysli na to, e bys mohl nêco ukrást nebo se hrabat v nêèí truhle.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_04"); //Jen èekají na pâíleitost, jak tê vyâídit.
+	AI_Output (other,self ,"DIA_Hodges_AboutSld_15_00"); //A co ti Å¾oldnÃ©Ã¢i?
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_01"); //Onar je najal, aby drÅ¾eli domobranu zpÃ¡tky.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_02"); //Ale takÃ© hlÃ­dajÃ­ farmu, ovce a farmÃ¡Ã¢e.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_03"); //TakÅ¾e ani nepomysli na to, Å¾e bys mohl nÄ™co ukrÃ¡st nebo se hrabat v nÄ™ÄÃ­ truhle.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_04"); //Jen ÄekajÃ­ na pÃ¢Ã­leÅ¾itost, jak tÄ™ vyÃ¢Ã­dit.
 };
 
 // ************************************************************
@@ -146,7 +146,7 @@ instance DIA_Hodges_TRADE	(C_INFO)
 	condition	= DIA_Hodges_TRADE_Condition;
 	information	= DIA_Hodges_TRADE_Info;
 	permanent 	= TRUE;
-	description	= "Mohu si od tebe koupit nêjaké zbranê?";
+	description	= "Mohu si od tebe koupit nÄ™jakÃ© zbranÄ™?";
 	trade		= TRUE;
 };
 
@@ -157,8 +157,8 @@ func int DIA_Hodges_TRADE_Condition ()
 
 func void DIA_Hodges_TRADE_Info ()
 {	
-	AI_Output (other, self ,"DIA_Hodges_TRADE_15_00"); //Mohu si od tebe koupit nêjaké zbranê?
-	AI_Output (self, other, "DIA_Hodges_TRADE_03_01"); //Moc toho nemám. Skoro všechny meèe a sekery jsme dali do Onarova domu.
+	AI_Output (other, self ,"DIA_Hodges_TRADE_15_00"); //Mohu si od tebe koupit nÄ™jakÃ© zbranÄ™?
+	AI_Output (self, other, "DIA_Hodges_TRADE_03_01"); //Moc toho nemÃ¡m. Skoro vÅ¡echny meÄe a sekery jsme dali do Onarova domu.
 	
 	Npc_RemoveInvItems (self,ItMiSwordblade,Npc_HasItems (self,ItMiSwordblade));
 };
@@ -238,7 +238,7 @@ instance DIA_Hodges_DontWork		(C_INFO)
 	condition	 = 	DIA_Hodges_DontWork_Condition;
 	information	 = 	DIA_Hodges_DontWork_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Proè nepracuješ?";
+	description	 = 	"ProÄ nepracujeÅ¡?";
 };
 
 func int DIA_Hodges_DontWork_Condition ()
@@ -252,14 +252,14 @@ func int DIA_Hodges_DontWork_Condition ()
 
 func void DIA_Hodges_DontWork_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_DontWork_15_00"); //Proè nepracuješ?
-	AI_Output (self ,other,"DIA_Hodges_DontWork_03_01"); //Tys to ještê neslyšel? Paladinové zavâeli Benneta.
+	AI_Output (other,self ,"DIA_Hodges_DontWork_15_00"); //ProÄ nepracujeÅ¡?
+	AI_Output (self ,other,"DIA_Hodges_DontWork_03_01"); //Tys to jeÅ¡tÄ™ neslyÅ¡el? PaladinovÃ© zavÃ¢eli Benneta.
 
 	MIS_RescueBennet = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_RESCUEBENNET, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_RESCUEBENNET, LOG_RUNNING);
-	B_LogEntry (TOPIC_RESCUEBENNET,"Kováâe Benneta uvêznili mêstští paladinové."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"KovÃ¡Ã¢e Benneta uvÄ™znili mÄ™stÅ¡tÃ­ paladinovÃ©."); 
 
 };
 
@@ -288,10 +288,10 @@ func int DIA_Hodges_WhatHappened_Condition ()
 func void DIA_Hodges_WhatHappened_Info ()
 {	
 	AI_Output (other,self ,"DIA_Hodges_WhatHappened_15_00"); //Co se stalo?
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_01"); //No, byli jsme ve mêstê nakupovat, kdy všichni najednou zaèali kâièet. A nêkdo zaâval: Támhle jsou, chyãte je!
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_02"); //Chlape, jak já byl vydêšenej! Vzal jsem nohy na ramena a utíkal, jako by mi v patách byl ëábel sám.
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_03"); //Bennet byl hned za mnou. Nevím, co se stalo, ale kdy jsem se dostal z mêsta, u jsem ho nikde nevidêl.
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_04"); //Musel se mi ztratit nêkde ve mêstê.
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_01"); //No, byli jsme ve mÄ™stÄ™ nakupovat, kdyÅ¾ vÅ¡ichni najednou zaÄali kÃ¢iÄet. A nÄ™kdo zaÃ¢val: TÃ¡mhle jsou, chyÄƒte je!
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_02"); //Chlape, jak jÃ¡ byl vydÄ™Å¡enej! Vzal jsem nohy na ramena a utÃ­kal, jako by mi v patÃ¡ch byl Ã«Ã¡bel sÃ¡m.
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_03"); //Bennet byl hned za mnou. NevÃ­m, co se stalo, ale kdyÅ¾ jsem se dostal z mÄ™sta, uÅ¾ jsem ho nikde nevidÄ™l.
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_04"); //Musel se mi ztratit nÄ™kde ve mÄ™stÄ™.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -304,7 +304,7 @@ instance DIA_Hodges_BennetsCrime			(C_INFO)
 	condition	 = 	DIA_Hodges_BennetsCrime_Condition;
 	information	 = 	DIA_Hodges_BennetsCrime_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Tak proè Benneta zavâeli?";
+	description	 = 	"Tak proÄ Benneta zavÃ¢eli?";
 };
 
 func int DIA_Hodges_BennetsCrime_Condition ()
@@ -318,19 +318,19 @@ func int DIA_Hodges_BennetsCrime_Condition ()
 
 func void DIA_Hodges_BennetsCrime_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_00"); //Tak proè Benneta zavâeli?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_01"); //Za vradu! Bennet byl obvinên z vrady paladina. Takovej nesmysl. Byl jsem celou dobu s ním.
-	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_02"); //Tak proè nezajdeš do mêsta a celou tu vêc nevysvêtlíš?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_03"); //Šoupnou mê do basy jako komplice. Ne, za tıhle situace tam rozhodnê nepùjdu.
-	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_04"); //Jakı situace?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_05"); //Vdyã víš, Onar a mêsto. To by dopadlo špatnê.
+	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_00"); //Tak proÄ Benneta zavÃ¢eli?
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_01"); //Za vraÅ¾du! Bennet byl obvinÄ™n z vraÅ¾dy paladina. Takovej nesmysl. Byl jsem celou dobu s nÃ­m.
+	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_02"); //Tak proÄ nezajdeÅ¡ do mÄ™sta a celou tu vÄ™c nevysvÄ™tlÃ­Å¡?
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_03"); //Å oupnou mÄ™ do basy jako komplice. Ne, za tÃ½hle situace tam rozhodnÄ™ nepÅ¯jdu.
+	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_04"); //JakÃ½ situace?
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_05"); //VÅ¾dyÄƒ vÃ­Å¡, Onar a mÄ™sto. To by dopadlo Å¡patnÄ™.
 
-	B_LogEntry (TOPIC_RESCUEBENNET,"Bennet prı zavradil paladina. Jeho uèedník Hodges ale tvrdí, e je nevinnı. Ovšem nedovolil si vstoupit do mêsta."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"Bennet prÃ½ zavraÅ¾dil paladina. Jeho uÄednÃ­k Hodges ale tvrdÃ­, Å¾e je nevinnÃ½. OvÅ¡em nedovolil si vstoupit do mÄ™sta."); 
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Wie reagieren die Söldner?
+//	Wie reagieren die SÃ¶ldner?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hodges_BennetAndSLD			(C_INFO)
 {
@@ -339,7 +339,7 @@ instance DIA_Hodges_BennetAndSLD			(C_INFO)
 	condition	 = 	DIA_Hodges_BennetAndSLD_Condition;
 	information	 = 	DIA_Hodges_BennetAndSLD_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Co na to oldnéâi tady na farmê?";
+	description	 = 	"Co na to Å¾oldnÃ©Ã¢i tady na farmÄ™?";
 };
 
 func int DIA_Hodges_BennetAndSLD_Condition ()
@@ -353,11 +353,11 @@ func int DIA_Hodges_BennetAndSLD_Condition ()
 
 func void DIA_Hodges_BennetAndSLD_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_00"); //Co na to oldnéâi tady na farmê?
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_01"); //Nevím, co maj za lubem, ale nêkterı z nich jsou fakt vytoèenı.
-	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_02"); //To je pochopitelné.
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_03"); //Kdyby to bylo jen na nich, nejradši by hned vpadli do mêsta a dostali Benneta ven.
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_04"); //Promluv si s Leem, tâeba ti nêco najde.
+	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_00"); //Co na to Å¾oldnÃ©Ã¢i tady na farmÄ™?
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_01"); //NevÃ­m, co maj za lubem, ale nÄ™kterÃ½ z nich jsou fakt vytoÄenÃ½.
+	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_02"); //To je pochopitelnÃ©.
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_03"); //Kdyby to bylo jen na nich, nejradÅ¡i by hned vpadli do mÄ™sta a dostali Benneta ven.
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_04"); //Promluv si s Leem, tÃ¢eba ti nÄ™co najde.
 };
 //##################################################
 //##

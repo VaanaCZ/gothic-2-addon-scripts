@@ -83,12 +83,12 @@ FUNC VOID DIA_Cassia_Gilde_Info()
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Cassia_Gilde_16_00");//Vidím, e ses pâidal na stranu práva a âádu.
-		AI_Output (self, other, "DIA_Cassia_Gilde_16_01");//Nevadí, e ses stal sluebníkem Innose. Jsi jedním z nás. A já doufám, e se nêjakı zpùsob najde.
+		AI_Output (self, other, "DIA_Cassia_Gilde_16_00");//VidÃ­m, Å¾e ses pÃ¢idal na stranu prÃ¡va a Ã¢Ã¡du.
+		AI_Output (self, other, "DIA_Cassia_Gilde_16_01");//NevadÃ­, Å¾e ses stal sluÅ¾ebnÃ­kem Innose. Jsi jednÃ­m z nÃ¡s. A jÃ¡ doufÃ¡m, Å¾e se nÄ™jakÃ½ zpÅ¯sob najde.
 	};
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Cassia_Gilde_16_02");//Tak teë patâíš k Innosovê církvi. Fajn, ale ještê poâád jsi jedním z nás - doufám, e jsi na to nezapomnêl.
+		AI_Output (self, other, "DIA_Cassia_Gilde_16_02");//Tak teÃ« patÃ¢Ã­Å¡ k InnosovÄ™ cÃ­rkvi. Fajn, ale jeÅ¡tÄ™ poÃ¢Ã¡d jsi jednÃ­m z nÃ¡s - doufÃ¡m, Å¾e jsi na to nezapomnÄ™l.
 	};
 	
 	
@@ -119,7 +119,7 @@ FUNC INT DIA_Cassia_Abgelaufen_Condition()
 };
 FUNC VOID DIA_Cassia_Abgelaufen_Info()
 {
-	AI_Output (self, other, "DIA_Cassia_Abgelaufen_16_00");//Tvùj èas vypršel. Nemêl ses vracet.
+	AI_Output (self, other, "DIA_Cassia_Abgelaufen_16_00");//TvÅ¯j Äas vyprÅ¡el. NemÄ™l ses vracet.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0); 
 };
@@ -147,19 +147,19 @@ FUNC VOID DIA_Cassia_News_Info()
 {
 	if (MIS_ThiefGuild_sucked == FALSE)
 	{
-		AI_Output (self, other, "DIA_Cassia_News_16_00");//Vidím, e jsi dostal náš dar. Jsem Cassia.
-		AI_Output (other, self, "DIA_Cassia_News_15_01");//Dobrá, Cassio, tak mi âekni, proè jsem tady.
-		AI_Output (self, other, "DIA_Cassia_News_16_02");//Upoutal jsi naši pozornost tím, e jsi dokázal získat dùvêru jednoho z našich pâátel.
-		AI_Output (self, other, "DIA_Cassia_News_16_03");//A my ti chceme dát šanci. Mùeš se k nám pâidat.
+		AI_Output (self, other, "DIA_Cassia_News_16_00");//VidÃ­m, Å¾e jsi dostal nÃ¡Å¡ dar. Jsem Cassia.
+		AI_Output (other, self, "DIA_Cassia_News_15_01");//DobrÃ¡, Cassio, tak mi Ã¢ekni, proÄ jsem tady.
+		AI_Output (self, other, "DIA_Cassia_News_16_02");//Upoutal jsi naÅ¡i pozornost tÃ­m, Å¾e jsi dokÃ¡zal zÃ­skat dÅ¯vÄ™ru jednoho z naÅ¡ich pÃ¢Ã¡tel.
+		AI_Output (self, other, "DIA_Cassia_News_16_03");//A my ti chceme dÃ¡t Å¡anci. MÅ¯Å¾eÅ¡ se k nÃ¡m pÃ¢idat.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_News_16_04");//To se podívejme, kdo sem našel cestu. Attila tê podcenil. Nehodlám udêlat stejnou chybu.
+		AI_Output (self, other, "DIA_Cassia_News_16_04");//To se podÃ­vejme, kdo sem naÅ¡el cestu. Attila tÄ™ podcenil. NehodlÃ¡m udÄ™lat stejnou chybu.
 		AI_Output (other, self, "DIA_Cassia_News_15_05");//Co to tady kujete?
-		AI_Output (self, other, "DIA_Cassia_News_16_06");//Chceme tê pâipravit o ivot za to, e jsi donášel na našeho pâítele. Proto jsme poslali Attilu.
-		AI_Output (self, other, "DIA_Cassia_News_16_07");//Nicménê - tvoje pâítomnost nám poskytuje nové monosti...
-		AI_Output (other, self, "DIA_Cassia_News_15_08");//...co mi chceš nabídnout?
-		AI_Output (self, other, "DIA_Cassia_News_16_09");//Mùeš se k nám pâidat.
+		AI_Output (self, other, "DIA_Cassia_News_16_06");//Chceme tÄ™ pÃ¢ipravit o Å¾ivot za to, Å¾e jsi donÃ¡Å¡el na naÅ¡eho pÃ¢Ã­tele. Proto jsme poslali Attilu.
+		AI_Output (self, other, "DIA_Cassia_News_16_07");//NicmÃ©nÄ™ - tvoje pÃ¢Ã­tomnost nÃ¡m poskytuje novÃ© moÅ¾nosti...
+		AI_Output (other, self, "DIA_Cassia_News_15_08");//...co mi chceÅ¡ nabÃ­dnout?
+		AI_Output (self, other, "DIA_Cassia_News_16_09");//MÅ¯Å¾eÅ¡ se k nÃ¡m pÃ¢idat.
 	};
 	if  (Npc_GetTrueGuild (other) == GIL_NONE)
 	||  (Npc_GetTrueGuild (other) == GIL_NOV)
@@ -170,7 +170,7 @@ FUNC VOID DIA_Cassia_News_Info()
 	DG_gefunden = TRUE;
 };
 //////////////////////////////////////////////////////////////////////
-//	Info Erzähle mir mehr 
+//	Info ErzÃ¤hle mir mehr 
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Cassia_mehr   (C_INFO)
 {
@@ -179,7 +179,7 @@ INSTANCE DIA_Cassia_mehr   (C_INFO)
 	condition   = DIA_Cassia_mehr_Condition;
 	information = DIA_Cassia_mehr_Info;
 	permanent   = FALSE;
-	description = "Âekni mi o vaší organizaci víc.";
+	description = "Ã‚ekni mi o vaÅ¡Ã­ organizaci vÃ­c.";
 };
 
 FUNC INT DIA_Cassia_mehr_Condition()
@@ -189,10 +189,10 @@ FUNC INT DIA_Cassia_mehr_Condition()
 
 FUNC VOID DIA_Cassia_mehr_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_mehr_15_00");//Âekni mi o vaší organizaci víc.
-	AI_Output (self, other, "DIA_Cassia_mehr_16_01");//Lidé z mêsta jsou námi trochu znepokojeni. Ale nikdo nezná náš úkryt.
-	AI_Output (self, other, "DIA_Cassia_mehr_16_02");//Ta hrstka lidí, co ví o existenci stok, vêâí, e jsou zamèené a nikdo se do nich nemùe dostat.
-	AI_Output (self, other, "DIA_Cassia_mehr_16_03");//A dokud se do nich nikdo nedostane, mùeme v klidu pracovat.
+	AI_Output (other, self, "DIA_Cassia_mehr_15_00");//Ã‚ekni mi o vaÅ¡Ã­ organizaci vÃ­c.
+	AI_Output (self, other, "DIA_Cassia_mehr_16_01");//LidÃ© z mÄ™sta jsou nÃ¡mi trochu znepokojeni. Ale nikdo neznÃ¡ nÃ¡Å¡ Ãºkryt.
+	AI_Output (self, other, "DIA_Cassia_mehr_16_02");//Ta hrstka lidÃ­, co vÃ­ o existenci stok, vÄ™Ã¢Ã­, Å¾e jsou zamÄenÃ© a nikdo se do nich nemÅ¯Å¾e dostat.
+	AI_Output (self, other, "DIA_Cassia_mehr_16_03");//A dokud se do nich nikdo nedostane, mÅ¯Å¾eme v klidu pracovat.
 };
 
 //////////////////////////////////////////////////////////////////////
@@ -205,7 +205,7 @@ INSTANCE DIA_Cassia_MissingPeople   (C_INFO)
 	condition   = DIA_Cassia_MissingPeople_Condition;
 	information = DIA_Cassia_MissingPeople_Info;
 	permanent   = FALSE;
-	description = "Co víš o têch zmizelıch lidech?";
+	description = "Co vÃ­Å¡ o tÄ™ch zmizelÃ½ch lidech?";
 };
 
 FUNC INT DIA_Cassia_MissingPeople_Condition()
@@ -219,11 +219,11 @@ FUNC INT DIA_Cassia_MissingPeople_Condition()
 
 FUNC VOID DIA_Cassia_MissingPeople_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Cassia_Add_15_00"); //Víš nêco víc o têch pohâešovanıch lidech?
-	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_01"); //A co je ti vlastnê po tom?
+	AI_Output (other, self, "DIA_Addon_Cassia_Add_15_00"); //VÃ­Å¡ nÄ™co vÃ­c o tÄ™ch pohÃ¢eÅ¡ovanÃ½ch lidech?
+	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_01"); //A co je ti vlastnÄ™ po tom?
 	AI_Output (other, self, "DIA_Addon_Cassia_Add_15_02"); //Chci zjistit, co se s nimi stalo.
-	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_03"); //Kdy vylezeš ze stok, plavej chvíli dál podél pobâeí doprava.
-	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_04"); //Tam najdeš odpovêdi.
+	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_03"); //KdyÅ¾ vylezeÅ¡ ze stok, plavej chvÃ­li dÃ¡l podÃ©l pobÃ¢eÅ¾Ã­ doprava.
+	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_04"); //Tam najdeÅ¡ odpovÄ™di.
 };
 
 
@@ -237,7 +237,7 @@ INSTANCE DIA_Cassia_Vorteil   (C_INFO)
 	condition   = DIA_Cassia_Vorteil_Condition;
 	information = DIA_Cassia_Vorteil_Info;
 	permanent   = FALSE;
-	description = "Co z toho budu mít, kdy se k vám pâidám?";
+	description = "Co z toho budu mÃ­t, kdyÅ¾ se k vÃ¡m pÃ¢idÃ¡m?";
 };
 
 FUNC INT DIA_Cassia_Vorteil_Condition()
@@ -247,10 +247,10 @@ FUNC INT DIA_Cassia_Vorteil_Condition()
 
 FUNC VOID DIA_Cassia_Vorteil_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Vorteil_15_00");//Co z toho budu mít, kdy se k vám pâidám?
-	AI_Output (self, other, "DIA_Cassia_Vorteil_16_01");//Mùeš se od nás nauèit pár zajímavejch vêcí - schopnosti, které ti umoní ít v pâepychu.
-	AI_Output (other, self, "DIA_Cassia_Vorteil_15_02");//Ale nemusím se skrıvat tady dole, nebo jo?
-	AI_Output (self, other, "DIA_Cassia_Vorteil_16_03");//(tichı smích) Ne. Musíš jen dodrovat naše pravidla. To je všechno.
+	AI_Output (other, self, "DIA_Cassia_Vorteil_15_00");//Co z toho budu mÃ­t, kdyÅ¾ se k vÃ¡m pÃ¢idÃ¡m?
+	AI_Output (self, other, "DIA_Cassia_Vorteil_16_01");//MÅ¯Å¾eÅ¡ se od nÃ¡s nauÄit pÃ¡r zajÃ­mavejch vÄ™cÃ­ - schopnosti, kterÃ© ti umoÅ¾nÃ­ Å¾Ã­t v pÃ¢epychu.
+	AI_Output (other, self, "DIA_Cassia_Vorteil_15_02");//Ale nemusÃ­m se skrÃ½vat tady dole, nebo jo?
+	AI_Output (self, other, "DIA_Cassia_Vorteil_16_03");//(tichÃ½ smÃ­ch) Ne. MusÃ­Å¡ jen dodrÅ¾ovat naÅ¡e pravidla. To je vÅ¡echno.
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Was kann ich bei euch lernen?
@@ -262,7 +262,7 @@ INSTANCE DIA_Cassia_Lernen  (C_INFO)
 	condition   = DIA_Cassia_Lernen_Condition;
 	information = DIA_Cassia_Lernen_Info;
 	permanent   = FALSE;
-	description = "Co se od vás mùu nauèit?";
+	description = "Co se od vÃ¡s mÅ¯Å¾u nauÄit?";
 };
 
 FUNC INT DIA_Cassia_Lernen_Condition()
@@ -274,16 +274,16 @@ FUNC INT DIA_Cassia_Lernen_Condition()
 };
 FUNC VOID DIA_Cassia_Lernen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Lernen_15_00");//Co se od vás mùu nauèit?
-	AI_Output (self, other, "DIA_Cassia_Lernen_16_01");//Jesper je mistrem v plíení. Ukáe ti, jak se nehluènê pohybovat.
-	AI_Output (self, other, "DIA_Cassia_Lernen_16_02");//Ramirez je vıjimeènê nadanı zlodêj. Jeho ruèièkám neodolá ádnı zámek.
-	AI_Output (self, other, "DIA_Cassia_Lernen_16_03");//A já tê nauèím, jak si pâivlastàovat obsahy kapes. Cizích.
-	AI_Output (self, other, "DIA_Cassia_Lernen_16_04");//Taky ti pomùu s tím, jak dosáhnout vêtší obratnosti. Protoe obratnost je klíèem ke tvım schopnostem.
+	AI_Output (other, self, "DIA_Cassia_Lernen_15_00");//Co se od vÃ¡s mÅ¯Å¾u nauÄit?
+	AI_Output (self, other, "DIA_Cassia_Lernen_16_01");//Jesper je mistrem v plÃ­Å¾enÃ­. UkÃ¡Å¾e ti, jak se nehluÄnÄ™ pohybovat.
+	AI_Output (self, other, "DIA_Cassia_Lernen_16_02");//Ramirez je vÃ½jimeÄnÄ™ nadanÃ½ zlodÄ™j. Jeho ruÄiÄkÃ¡m neodolÃ¡ Å¾Ã¡dnÃ½ zÃ¡mek.
+	AI_Output (self, other, "DIA_Cassia_Lernen_16_03");//A jÃ¡ tÄ™ nauÄÃ­m, jak si pÃ¢ivlastÅ•ovat obsahy kapes. CizÃ­ch.
+	AI_Output (self, other, "DIA_Cassia_Lernen_16_04");//Taky ti pomÅ¯Å¾u s tÃ­m, jak dosÃ¡hnout vÄ™tÅ¡Ã­ obratnosti. ProtoÅ¾e obratnost je klÃ­Äem ke tvÃ½m schopnostem.
 	
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry(Topic_CityTeacher,"Cassia mê nauèí kapsáâství a pomùe mi zvıšit obratnost.");
-	B_LogEntry(Topic_CityTeacher,"Ramirez mê nauèí, jak páèit zámky.");
-	B_LogEntry(Topic_CityTeacher,"Jesper mê nauèí plíení.");
+	B_LogEntry(Topic_CityTeacher,"Cassia mÄ™ nauÄÃ­ kapsÃ¡Ã¢stvÃ­ a pomÅ¯Å¾e mi zvÃ½Å¡it obratnost.");
+	B_LogEntry(Topic_CityTeacher,"Ramirez mÄ™ nauÄÃ­, jak pÃ¡Äit zÃ¡mky.");
+	B_LogEntry(Topic_CityTeacher,"Jesper mÄ™ nauÄÃ­ plÃ­Å¾enÃ­.");
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Regeln 
@@ -295,7 +295,7 @@ INSTANCE DIA_Cassia_Regeln   (C_INFO)
 	condition   = DIA_Cassia_Regeln_Condition;
 	information = DIA_Cassia_Regeln_Info;
 	permanent   = FALSE;
-	description = "Jaká jsou vaše pravidla?";
+	description = "JakÃ¡ jsou vaÅ¡e pravidla?";
 };
 
 FUNC INT DIA_Cassia_Regeln_Condition()
@@ -307,12 +307,12 @@ FUNC INT DIA_Cassia_Regeln_Condition()
 };
 FUNC VOID DIA_Cassia_Regeln_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Regeln_15_00");//Jaká jsou vaše pravidla?
+	AI_Output (other, self, "DIA_Cassia_Regeln_15_00");//JakÃ¡ jsou vaÅ¡e pravidla?
 	//AI_Output (self, other, "DIA_Cassia_Regeln_16_01");//Wir richten uns nach drei Regeln.
-	AI_Output (self, other, "DIA_Cassia_Regeln_16_02");//Za prvé: Nešpitneš o nás ani slùvko. Nikomu. Nikdy.
-	AI_Output (self, other, "DIA_Cassia_Regeln_16_03");//Za druhé: Nenecháš se chytit.
-	AI_Output (self, other, "DIA_Cassia_Regeln_16_04");//Za tâetí: Jestli tady dole na nêkoho vytáhneš zbraà, zabijeme tê.
-	AI_Output (self, other, "DIA_Cassia_Regeln_16_05");//A ètvrté, poslední pravidlo je: Kadı, kdo se k nám chce pâidat, musí prokázat, e k nêèemu je.
+	AI_Output (self, other, "DIA_Cassia_Regeln_16_02");//Za prvÃ©: NeÅ¡pitneÅ¡ o nÃ¡s ani slÅ¯vko. Nikomu. Nikdy.
+	AI_Output (self, other, "DIA_Cassia_Regeln_16_03");//Za druhÃ©: NenechÃ¡Å¡ se chytit.
+	AI_Output (self, other, "DIA_Cassia_Regeln_16_04");//Za tÃ¢etÃ­: Jestli tady dole na nÄ™koho vytÃ¡hneÅ¡ zbraÅ•, zabijeme tÄ™.
+	AI_Output (self, other, "DIA_Cassia_Regeln_16_05");//A ÄtvrtÃ©, poslednÃ­ pravidlo je: KaÅ¾dÃ½, kdo se k nÃ¡m chce pÃ¢idat, musÃ­ prokÃ¡zat, Å¾e k nÄ™Äemu je.
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Was passiert, wenn ich erwischt werde? 
@@ -324,7 +324,7 @@ INSTANCE DIA_Cassia_Erwischen   (C_INFO)
 	condition   = DIA_Cassia_Erwischen_Condition;
 	information = DIA_Cassia_Erwischen_Info;
 	permanent   = FALSE;
-	description = "Co se stane, kdy mê chytnou?";
+	description = "Co se stane, kdyÅ¾ mÄ™ chytnou?";
 };
 
 FUNC INT DIA_Cassia_Erwischen_Condition()
@@ -336,8 +336,8 @@ FUNC INT DIA_Cassia_Erwischen_Condition()
 };
 FUNC VOID DIA_Cassia_Erwischen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Erwischen_15_00");//Co se stane, kdy mê chytnou?
-	AI_Output (self, other, "DIA_Cassia_Erwischen_16_01");//Prostê se nenech chytit, jasné?
+	AI_Output (other, self, "DIA_Cassia_Erwischen_15_00");//Co se stane, kdyÅ¾ mÄ™ chytnou?
+	AI_Output (self, other, "DIA_Cassia_Erwischen_16_01");//ProstÄ™ se nenech chytit, jasnÃ©?
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Wie muss ich mich beweisen?
@@ -349,7 +349,7 @@ INSTANCE DIA_Cassia_beweisen   (C_INFO)
 	condition   = DIA_Cassia_beweisen_Condition;
 	information = DIA_Cassia_beweisen_Info;
 	permanent   = TRUE;
-	description = "Jak mám dokázat, e jsem co k èemu?";
+	description = "Jak mÃ¡m dokÃ¡zat, Å¾e jsem co k Äemu?";
 };
 //--------------------------------------
 var int DIA_Cassia_beweisen_permanent;
@@ -364,23 +364,23 @@ FUNC INT DIA_Cassia_beweisen_Condition()
 };
 FUNC VOID DIA_Cassia_beweisen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_beweisen_15_00");//Jak mám dokázat, e jsem co k èemu?
+	AI_Output (other, self, "DIA_Cassia_beweisen_15_00");//Jak mÃ¡m dokÃ¡zat, Å¾e jsem co k Äemu?
 	
 	if (Join_Thiefs == FALSE)
 	{
-		AI_Output (self, other, "DIA_Cassia_beweisen_16_01");//Tak pâidáš se k nám, nebo ne?
+		AI_Output (self, other, "DIA_Cassia_beweisen_16_01");//Tak pÃ¢idÃ¡Å¡ se k nÃ¡m, nebo ne?
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_beweisen_16_02");//Ten palièatej starej alchymista - Constantino - má nádhernı prsten.
-		AI_Output (self, other, "DIA_Cassia_beweisen_16_03");//Ale jemu vánê není k nièemu. Chci, aby zdobil mou ruku.
+		AI_Output (self, other, "DIA_Cassia_beweisen_16_02");//Ten paliÄatej starej alchymista - Constantino - mÃ¡ nÃ¡dhernÃ½ prsten.
+		AI_Output (self, other, "DIA_Cassia_beweisen_16_03");//Ale jemu vÃ¡Å¾nÄ™ nenÃ­ k niÄemu. Chci, aby zdobil mou ruku.
 		
 		MIS_CassiaRing = LOG_RUNNING;
 		DIA_Cassia_beweisen_permanent = TRUE;
 		
 		Log_CreateTopic(Topic_CassiaRing,LOG_MISSION);
 		Log_SetTopicStatus (Topic_CassiaRing,LOG_RUNNING);
-		B_LogEntry 	(Topic_CassiaRing,"Cassia po mnê chce, abych jí pâinesl Constantinùv prsten.");
+		B_LogEntry 	(Topic_CassiaRing,"Cassia po mnÄ™ chce, abych jÃ­ pÃ¢inesl ConstantinÅ¯v prsten.");
 	};
 };
 //////////////////////////////////////////////////////////////////////
@@ -406,8 +406,8 @@ FUNC INT DIA_Cassia_Beitreten_Condition()
 };
 FUNC VOID DIA_Cassia_Beitreten_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Beitreten_15_00");//Dobrá, jdu do toho.
-	AI_Output (self, other, "DIA_Cassia_Beitreten_16_01");//Vıbornê. Dostal jsi šanci prokázat, co v tobê vêzí. A jestli se chceš od nás nêèemu pâiuèit, jsi tady vítán.
+	AI_Output (other, self, "DIA_Cassia_Beitreten_15_00");//DobrÃ¡, jdu do toho.
+	AI_Output (self, other, "DIA_Cassia_Beitreten_16_01");//VÃ½bornÄ™. Dostal jsi Å¡anci prokÃ¡zat, co v tobÄ™ vÄ™zÃ­. A jestli se chceÅ¡ od nÃ¡s nÄ™Äemu pÃ¢iuÄit, jsi tady vÃ­tÃ¡n.
 	
 	Join_Thiefs = TRUE;
 };
@@ -421,7 +421,7 @@ INSTANCE DIA_Cassia_Ablehnen   (C_INFO)
 	condition   = DIA_Cassia_Ablehnen_Condition;
 	information = DIA_Cassia_Ablehnen_Info;
 	permanent   = FALSE;
-	description = "A co kdy se k vám nebudu chtít pâidat?";
+	description = "A co kdyÅ¾ se k vÃ¡m nebudu chtÃ­t pÃ¢idat?";
 };
 
 FUNC INT DIA_Cassia_Ablehnen_Condition()
@@ -434,46 +434,46 @@ FUNC INT DIA_Cassia_Ablehnen_Condition()
 };
 FUNC VOID DIA_Cassia_Ablehnen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Ablehnen_15_00");//A co kdy se k vám nebudu chtít pâidat...?
+	AI_Output (other, self, "DIA_Cassia_Ablehnen_15_00");//A co kdyÅ¾ se k vÃ¡m nebudu chtÃ­t pÃ¢idat...?
 	
 	if (MIS_ThiefGuild_sucked == FALSE)
 	{
-		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_01");//Zahazuješ šanci, která se naskytne jen jednou, ale mùeš jít.
-		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_02");//(vánê) A ani nepomysli na to, e bys nás nêkomu prozradil. Mohl bys toho trpce litovat.
+		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_01");//ZahazujeÅ¡ Å¡anci, kterÃ¡ se naskytne jen jednou, ale mÅ¯Å¾eÅ¡ jÃ­t.
+		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_02");//(vÃ¡Å¾nÄ™) A ani nepomysli na to, Å¾e bys nÃ¡s nÄ™komu prozradil. Mohl bys toho trpce litovat.
 		
 		Info_ClearChoices (DIA_Cassia_Ablehnen);
 		Info_AddChoice (DIA_Cassia_Ablehnen,"OK, jdu do toho.",DIA_Cassia_Ablehnen_Okay);
-		Info_AddChoice (DIA_Cassia_Ablehnen,"Musím si to rozmyslet.",DIA_Cassia_Ablehnen_Frist);
+		Info_AddChoice (DIA_Cassia_Ablehnen,"MusÃ­m si to rozmyslet.",DIA_Cassia_Ablehnen_Frist);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_03");//V tom pâípadê tê zabiju.
+		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_03");//V tom pÃ¢Ã­padÄ™ tÄ™ zabiju.
 		
 		Info_ClearChoices (DIA_Cassia_Ablehnen);
 		Info_AddChoice (DIA_Cassia_Ablehnen,"OK, jdu do toho.",DIA_Cassia_Ablehnen_Okay);
-		Info_AddChoice (DIA_Cassia_Ablehnen,"No tak si mê zkus zabít.",DIA_Cassia_Ablehnen_Kill);
+		Info_AddChoice (DIA_Cassia_Ablehnen,"No tak si mÄ™ zkus zabÃ­t.",DIA_Cassia_Ablehnen_Kill);
 	};
 };
 FUNC VOID DIA_Cassia_Ablehnen_Okay()
 {
-	AI_Output (other, self, "DIA_Cassia_Ablehnen_Okay_15_00");//Dobrá, jdu do toho.
-	AI_Output (self, other, "DIA_Cassia_Ablehnen_Okay_16_01");//(usmívá se) Uèinil jsi správné rozhodnutí. Jestli uspêješ ve zkoušce, mùeš rozšíâit naše âady.
-	AI_Output (self, other, "DIA_Cassia_Ablehnen_Okay_16_02");//Jestli se chceš nejprve nauèit zlodêjské dovednosti, poslu si - budeš je potâebovat.
+	AI_Output (other, self, "DIA_Cassia_Ablehnen_Okay_15_00");//DobrÃ¡, jdu do toho.
+	AI_Output (self, other, "DIA_Cassia_Ablehnen_Okay_16_01");//(usmÃ­vÃ¡ se) UÄinil jsi sprÃ¡vnÃ© rozhodnutÃ­. Jestli uspÄ™jeÅ¡ ve zkouÅ¡ce, mÅ¯Å¾eÅ¡ rozÅ¡Ã­Ã¢it naÅ¡e Ã¢ady.
+	AI_Output (self, other, "DIA_Cassia_Ablehnen_Okay_16_02");//Jestli se chceÅ¡ nejprve nauÄit zlodÄ™jskÃ© dovednosti, posluÅ¾ si - budeÅ¡ je potÃ¢ebovat.
 	Join_Thiefs = TRUE; 
 	Info_ClearChoices (DIA_Cassia_Ablehnen);
 };
 FUNC VOID DIA_Cassia_Ablehnen_Kill()
 {
-	AI_Output (other, self, "DIA_Cassia_Ablehnen_Kill_15_00");//No tak si mê zkus zabít.
-	AI_Output (self, other, "DIA_Cassia_Ablehnen_Kill_16_01");//To je zlé. Mêl jsem dojem, e jsi chytâejší.
+	AI_Output (other, self, "DIA_Cassia_Ablehnen_Kill_15_00");//No tak si mÄ™ zkus zabÃ­t.
+	AI_Output (self, other, "DIA_Cassia_Ablehnen_Kill_16_01");//To je zlÃ©. MÄ™l jsem dojem, Å¾e jsi chytÃ¢ejÅ¡Ã­.
 
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Cassia_Ablehnen_Frist()
 {
-	AI_Output (other, self, "DIA_Cassia_Ablehnen_Frist_15_00");//Musím si to rozmyslet.
-	AI_Output (self, other, "DIA_Cassia_Ablehnen_Frist_16_01");//Jak chceš. Dávám ti dva dny na rozmyšlenou. Po uplynutí lhùty u se tu nesmíš ukázat.
+	AI_Output (other, self, "DIA_Cassia_Ablehnen_Frist_15_00");//MusÃ­m si to rozmyslet.
+	AI_Output (self, other, "DIA_Cassia_Ablehnen_Frist_16_01");//Jak chceÅ¡. DÃ¡vÃ¡m ti dva dny na rozmyÅ¡lenou. Po uplynutÃ­ lhÅ¯ty uÅ¾ se tu nesmÃ­Å¡ ukÃ¡zat.
 	
 	Cassia_Day = B_GetDayPlus ();
 	Cassia_Frist = TRUE;
@@ -491,7 +491,7 @@ INSTANCE DIA_Cassia_BevorLernen   (C_INFO)
 	condition   = DIA_Cassia_BevorLernen_Condition;
 	information = DIA_Cassia_BevorLernen_Info;
 	permanent   = TRUE;
-	description = "Mùeš mê nêco nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ™ nÄ™co nauÄit?";
 };
 FUNC INT DIA_Cassia_BevorLernen_Condition()
 {	
@@ -505,29 +505,29 @@ FUNC INT DIA_Cassia_BevorLernen_Condition()
 };
 FUNC VOID DIA_Cassia_BevorLernen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_BevorLernen_15_00");//Mùeš mê nêco nauèit?
+	AI_Output (other, self, "DIA_Cassia_BevorLernen_15_00");//MÅ¯Å¾eÅ¡ mÄ™ nÄ™co nauÄit?
 	
 	if (MIS_ThiefGuild_sucked == FALSE)
 	{
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_16_01");//Jasnê, ádnı problém. Prostê mi dej vêdêt, a budeš pâipraven.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_16_01");//JasnÄ™, Å¾Ã¡dnÃ½ problÃ©m. ProstÄ™ mi dej vÄ™dÄ™t, aÅ¾ budeÅ¡ pÃ¢ipraven.
 		Cassia_TeachPickpocket = TRUE;
 		Cassia_TeachDEX = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_16_02");//Jasnê. Kapsáâství a obratnost tê bude kadá stát 100 zlatıch.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_16_02");//JasnÄ™. KapsÃ¡Ã¢stvÃ­ a obratnost tÄ™ bude kaÅ¾dÃ¡ stÃ¡t 100 zlatÃ½ch.
 	
 		Info_ClearChoices (DIA_Cassia_BevorLernen);
-		Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Moná pozdêji. (ZPÊT)",DIA_Cassia_BevorLernen_Spaeter);
+		Info_AddChoice 	  (DIA_Cassia_BevorLernen,"MoÅ¾nÃ¡ pozdÄ™ji. (ZPÄ˜T)",DIA_Cassia_BevorLernen_Spaeter);
 		
 		if (Cassia_TeachPickpocket == FALSE)
 		{
-			Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Chtêl bych se nauèit kapsáâskému umêní (zaplatit 100 zlaãákù).",DIA_Cassia_BevorLernen_Pickpocket);
+			Info_AddChoice 	  (DIA_Cassia_BevorLernen,"ChtÄ™l bych se nauÄit kapsÃ¡Ã¢skÃ©mu umÄ™nÃ­ (zaplatit 100 zlaÄƒÃ¡kÅ¯).",DIA_Cassia_BevorLernen_Pickpocket);
 		};
 		
 		if (Cassia_TeachDEX == FALSE)
 		{
-			Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Chci se stát obratnêjším (zaplatit 100 zlaãákù).",DIA_Cassia_BevorLernen_DEX);
+			Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Chci se stÃ¡t obratnÄ™jÅ¡Ã­m (zaplatit 100 zlaÄƒÃ¡kÅ¯).",DIA_Cassia_BevorLernen_DEX);
 		};
 	};
 };
@@ -539,14 +539,14 @@ FUNC VOID DIA_Cassia_BevorLernen_DEX()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 100)
 	{
-		AI_Output (other, self, "DIA_Cassia_BevorLernen_DEX_15_00");//Chci dosáhnout vêtší obratnosti. Tady je zlato.
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_DEX_16_01");//Mùeme zaèít hned, jak budeš pâipraven.
+		AI_Output (other, self, "DIA_Cassia_BevorLernen_DEX_15_00");//Chci dosÃ¡hnout vÄ™tÅ¡Ã­ obratnosti. Tady je zlato.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_DEX_16_01");//MÅ¯Å¾eme zaÄÃ­t hned, jak budeÅ¡ pÃ¢ipraven.
 		Cassia_TeachDEX = TRUE;
 		Info_ClearChoices (DIA_Cassia_BevorLernen);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_DIA_Cassia_BevorLernen_DEX_16_02");//Vraã se, a budeš mít zlato.
+		AI_Output (self, other, "DIA_Cassia_DIA_Cassia_BevorLernen_DEX_16_02");//VraÄƒ se, aÅ¾ budeÅ¡ mÃ­t zlato.
 		Info_ClearChoices (DIA_Cassia_BevorLernen);
 	};	
 };
@@ -554,14 +554,14 @@ FUNC VOID DIA_Cassia_BevorLernen_Pickpocket()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 100)
 	{
-		AI_Output (other, self, "DIA_Cassia_BevorLernen_Pickpocket_15_00");//Chci se dozvêdêt nêco o kapsáâství. Tady je zlato.
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_Pickpocket_16_01");//Mùeme zaèít hned, jak budeš pâipraven.
+		AI_Output (other, self, "DIA_Cassia_BevorLernen_Pickpocket_15_00");//Chci se dozvÄ™dÄ™t nÄ™co o kapsÃ¡Ã¢stvÃ­. Tady je zlato.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_Pickpocket_16_01");//MÅ¯Å¾eme zaÄÃ­t hned, jak budeÅ¡ pÃ¢ipraven.
 		Cassia_TeachPickpocket = TRUE;
 		Info_ClearChoices (DIA_Cassia_BevorLernen);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_Pickpocket_16_02");//Vraã se, a budeš mít zlato.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_Pickpocket_16_02");//VraÄƒ se, aÅ¾ budeÅ¡ mÃ­t zlato.
 		Info_ClearChoices (DIA_Cassia_BevorLernen);
 	};	
 };
@@ -575,7 +575,7 @@ instance DIA_Cassia_TEACH		(C_INFO)
 	condition	 = 	DIA_Cassia_TEACH_Condition;
 	information	 = 	DIA_Cassia_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chtêl bych bıt o nêco obratnêjší.";
+	description	 = 	"ChtÄ™l bych bÃ½t o nÄ™co obratnÄ™jÅ¡Ã­.";
 };
 func int DIA_Cassia_TEACH_Condition ()
 {	
@@ -586,7 +586,7 @@ func int DIA_Cassia_TEACH_Condition ()
 };
 func void DIA_Cassia_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Cassia_TEACH_15_00"); //Chtêl bych bıt o nêco obratnêjší.
+	AI_Output (other, self, "DIA_Cassia_TEACH_15_00"); //ChtÄ™l bych bÃ½t o nÄ™co obratnÄ™jÅ¡Ã­.
 	
 	Info_ClearChoices   (DIA_Cassia_TEACH);
 	Info_AddChoice 		(DIA_Cassia_TEACH, DIALOG_BACK, DIA_Cassia_TEACH_BACK);
@@ -632,7 +632,7 @@ INSTANCE DIA_Cassia_Pickpocket   (C_INFO)
 	condition   = DIA_Cassia_Pickpocket_Condition;
 	information = DIA_Cassia_Pickpocket_Info;
 	permanent   = TRUE;
-	description = "Uka mi, jak vybírat cizí kapsy. (10 VB)";
+	description = "UkaÅ¾ mi, jak vybÃ­rat cizÃ­ kapsy. (10 VB)";
 };
 
 FUNC INT DIA_Cassia_Pickpocket_Condition()
@@ -645,14 +645,14 @@ FUNC INT DIA_Cassia_Pickpocket_Condition()
 };
 FUNC VOID DIA_Cassia_Pickpocket_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Pickpocket_15_00");//Uka mi, jak se vybírají kapsy.
+	AI_Output (other, self, "DIA_Cassia_Pickpocket_15_00");//UkaÅ¾ mi, jak se vybÃ­rajÃ­ kapsy.
 	
 	if B_TeachThiefTalent (self, other, NPC_TALENT_PICKPOCKET)
 	{
-		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_01");//Jestli chceš nêkomu vyprázdnit kapsy, rozptyl ho. Prostê si s ním zaèni povídat, hoëte âeè.
-		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_02");//Zatímco na nêj mluvíš, poâádnê si ho odhadni. Všímej si nacpanıch kapes, šperkù nebo koenıch âemínkù kolem krku. A hlavnê si hlídej, jak moc je ten chlápek všímavı.
-		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_03");//Obrat nalitého nádeníka není to samé jako okrást ostraitého obchodníka, mêj to na pamêti.
-		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_04");//Kdy budeš neohrabanı, tak samozâejmê bude èuchat zradu. Tak hlavnê klídek.
+		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_01");//Jestli chceÅ¡ nÄ™komu vyprÃ¡zdnit kapsy, rozptyl ho. ProstÄ™ si s nÃ­m zaÄni povÃ­dat, hoÃ«te Ã¢eÄ.
+		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_02");//ZatÃ­mco na nÄ™j mluvÃ­Å¡, poÃ¢Ã¡dnÄ™ si ho odhadni. VÅ¡Ã­mej si nacpanÃ½ch kapes, Å¡perkÅ¯ nebo koÅ¾enÃ½ch Ã¢emÃ­nkÅ¯ kolem krku. A hlavnÄ™ si hlÃ­dej, jak moc je ten chlÃ¡pek vÅ¡Ã­mavÃ½.
+		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_03");//Obrat nalitÃ©ho nÃ¡denÃ­ka nenÃ­ to samÃ© jako okrÃ¡st ostraÅ¾itÃ©ho obchodnÃ­ka, mÄ™j to na pamÄ™ti.
+		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_04");//KdyÅ¾ budeÅ¡ neohrabanÃ½, tak samozÃ¢ejmÄ™ bude Äuchat zradu. Tak hlavnÄ™ klÃ­dek.
 	};
 };
 //////////////////////////////////////////////////////////////////////
@@ -665,7 +665,7 @@ INSTANCE DIA_Cassia_Aufnahme   (C_INFO)
 	condition   = DIA_Cassia_Aufnahme_Condition;
 	information = DIA_Cassia_Aufnahme_Info;
 	permanent   = FALSE;
-	description = "Dostal jsem Constantinùv prsten.";
+	description = "Dostal jsem ConstantinÅ¯v prsten.";
 };
 
 FUNC INT DIA_Cassia_Aufnahme_Condition()
@@ -678,23 +678,23 @@ FUNC INT DIA_Cassia_Aufnahme_Condition()
 };
 FUNC VOID DIA_Cassia_Aufnahme_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Aufnahme_15_00");//Dostal jsem Constantinùv prsten.
+	AI_Output (other, self, "DIA_Cassia_Aufnahme_15_00");//Dostal jsem ConstantinÅ¯v prsten.
 	B_GiveInvItems (other, self,ItRi_Prot_Point_01_MIS,1);
 	
-	AI_Output (self, other, "DIA_Cassia_Aufnahme_16_01");//Gratuluju. Prošel jsi vstupní zkouškou. Teë jsi opravdu jedním z nás.
-	AI_Output (self, other, "DIA_Cassia_Aufnahme_16_02");//Vezmi si tenhle klíè. Je od dveâí od hotelu. (úsmêv) Tak nebudeš muset pokadé plavat.
+	AI_Output (self, other, "DIA_Cassia_Aufnahme_16_01");//Gratuluju. ProÅ¡el jsi vstupnÃ­ zkouÅ¡kou. TeÃ« jsi opravdu jednÃ­m z nÃ¡s.
+	AI_Output (self, other, "DIA_Cassia_Aufnahme_16_02");//Vezmi si tenhle klÃ­Ä. Je od dveÃ¢Ã­ od hotelu. (ÃºsmÄ™v) Tak nebudeÅ¡ muset pokaÅ¾dÃ© plavat.
 	B_GiveInvItems (self, other,ItKe_ThiefGuildKey_Hotel_MIS,1);
 	
-	AI_Output  (self, other, "DIA_Cassia_Aufnahme_16_03");//Taky bys mêl vêdêt, e máme tajné znamení. Zvláštní kıvnutí.
+	AI_Output  (self, other, "DIA_Cassia_Aufnahme_16_03");//Taky bys mÄ™l vÄ™dÄ™t, Å¾e mÃ¡me tajnÃ© znamenÃ­. ZvlÃ¡Å¡tnÃ­ kÃ½vnutÃ­.
 	AI_PlayAni (other,"T_YES");
-	AI_Output  (self, other, "DIA_Cassia_Aufnahme_16_04");//Pâesnê. Kdy budeš mluvit s tím pravım èlovêkem a udêláš tenhle posunek, bude vêdêt, e jsi jedním z nás.
+	AI_Output  (self, other, "DIA_Cassia_Aufnahme_16_04");//PÃ¢esnÄ™. KdyÅ¾ budeÅ¡ mluvit s tÃ­m pravÃ½m ÄlovÄ™kem a udÄ™lÃ¡Å¡ tenhle posunek, bude vÄ™dÄ™t, Å¾e jsi jednÃ­m z nÃ¡s.
 		
 	MIS_CassiaRing = LOG_SUCCESS;
 	B_GivePlayerXP (XP_CassiaRing);
 	Knows_SecretSign = TRUE;
 	Log_CreateTopic (Topic_Diebesgilde, LOG_NOTE);
-	B_LogEntry (Topic_Diebesgilde,"Byl jsem pâijat do zlodêjského cechu."); 
-	B_LogEntry (Topic_Diebesgilde,"Nauèil jsem se zlodêjskı signál - kdy jej ukáu têm správnım lidem, poznají, e jsem jedním z nich.");
+	B_LogEntry (Topic_Diebesgilde,"Byl jsem pÃ¢ijat do zlodÄ™jskÃ©ho cechu."); 
+	B_LogEntry (Topic_Diebesgilde,"NauÄil jsem se zlodÄ™jskÃ½ signÃ¡l - kdyÅ¾ jej ukÃ¡Å¾u tÄ™m sprÃ¡vnÃ½m lidem, poznajÃ­, Å¾e jsem jednÃ­m z nich.");
 	 
 	
 };
@@ -708,7 +708,7 @@ INSTANCE DIA_Cassia_Versteck   (C_INFO)
 	condition   = DIA_Cassia_Versteck_Condition;
 	information = DIA_Cassia_Versteck_Info;
 	permanent   = FALSE;
-	description = "Tak kde ukrıváte svou koâist?";
+	description = "Tak kde ukrÃ½vÃ¡te svou koÃ¢ist?";
 };
 
 FUNC INT DIA_Cassia_Versteck_Condition()
@@ -721,9 +721,9 @@ FUNC INT DIA_Cassia_Versteck_Condition()
 };
 FUNC VOID DIA_Cassia_Versteck_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Versteck_15_00");//Tak kde ukrıváte svou koâist?
-	AI_Output (self, other, "DIA_Cassia_Versteck_16_01");//Hele, snad si vánê nemyslíš, e ti tohle âeknu?
-	AI_Output (self, other, "DIA_Cassia_Versteck_16_02");//Budeš mít dost pâíleitostí, aby sis uil své vlastní koâisti. Pamatuj - kdo je moc nenasytnı, skonèí s prázdnıma rukama.
+	AI_Output (other, self, "DIA_Cassia_Versteck_15_00");//Tak kde ukrÃ½vÃ¡te svou koÃ¢ist?
+	AI_Output (self, other, "DIA_Cassia_Versteck_16_01");//Hele, snad si vÃ¡Å¾nÄ™ nemyslÃ­Å¡, Å¾e ti tohle Ã¢eknu?
+	AI_Output (self, other, "DIA_Cassia_Versteck_16_02");//BudeÅ¡ mÃ­t dost pÃ¢Ã­leÅ¾itostÃ­, aby sis uÅ¾il svÃ© vlastnÃ­ koÃ¢isti. Pamatuj - kdo je moc nenasytnÃ½, skonÄÃ­ s prÃ¡zdnÃ½ma rukama.
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Blutkelche
@@ -735,7 +735,7 @@ INSTANCE DIA_Cassia_Blutkelche   (C_INFO)
 	condition   = DIA_Cassia_Blutkelche_Condition;
 	information = DIA_Cassia_Blutkelche_Info;
 	permanent   = FALSE;
-	description = "Máš pro mê práci?";
+	description = "MÃ¡Å¡ pro mÄ™ prÃ¡ci?";
 };
 
 FUNC INT DIA_Cassia_Blutkelche_Condition()
@@ -748,29 +748,29 @@ FUNC INT DIA_Cassia_Blutkelche_Condition()
 };
 FUNC VOID DIA_Cassia_Blutkelche_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Blutkelche_15_00");//Máš pro mê práci?
+	AI_Output (other, self, "DIA_Cassia_Blutkelche_15_00");//MÃ¡Å¡ pro mÄ™ prÃ¡ci?
 	
 	if (PETZCOUNTER_City_Theft  > 0)
 	{
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_01");//Ne do té doby, co tê ve mêstê budou znát jako zlodêje.
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_02");//Nejdâív uklidni situaci - zaplaã pokutu nebo se zbav svêdkù, je mi to jedno. Prostê to nêjak vyâeš.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_01");//Ne do tÃ© doby, co tÄ™ ve mÄ™stÄ™ budou znÃ¡t jako zlodÄ™je.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_02");//NejdÃ¢Ã­v uklidni situaci - zaplaÄƒ pokutu nebo se zbav svÄ™dkÅ¯, je mi to jedno. ProstÄ™ to nÄ™jak vyÃ¢eÅ¡.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_03");//Ano. Je tady sada kalichù. Je jich šest.
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_04");//Král Rhobar je získal na jedné ze svıch váleènıch vıprav -  ale obêtoval mnoho muù na to, aby si je mohl odvézt. Proto se jim âíká krvavé kalichy.
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_05");//ádnı z têch kalichù nemá sám o sobê velkou cenu - ale všech šest pohromadê pâedstavuje celé jmêní.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_03");//Ano. Je tady sada kalichÅ¯. Je jich Å¡est.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_04");//KrÃ¡l Rhobar je zÃ­skal na jednÃ© ze svÃ½ch vÃ¡leÄnÃ½ch vÃ½prav -  ale obÄ™toval mnoho muÅ¾Å¯ na to, aby si je mohl odvÃ©zt. Proto se jim Ã¢Ã­kÃ¡ krvavÃ© kalichy.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_05");//Å½Ã¡dnÃ½ z tÄ™ch kalichÅ¯ nemÃ¡ sÃ¡m o sobÄ™ velkou cenu - ale vÅ¡ech Å¡est pohromadÄ™ pÃ¢edstavuje celÃ© jmÄ™nÃ­.
 		AI_Output (other, self, "DIA_Cassia_Blutkelche_15_06");//Kde jsou ty kalichy?
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_07");//Jsou tady, ve mêstê - patâí bohatım obchodníkùm z horní ètvrti.
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_08");//Pâines mi je. Já se zatím pokusit sehnat na nê kupce.
-		AI_Output (other, self, "DIA_Cassia_Blutkelche_15_09");//Co z toho budu mít?
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_10");//Buë polovinu zisku, nebo si mùeš vzít jeden zajímavı pâedmêt z mé koâisti.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_07");//Jsou tady, ve mÄ™stÄ™ - patÃ¢Ã­ bohatÃ½m obchodnÃ­kÅ¯m z hornÃ­ Ätvrti.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_08");//PÃ¢ines mi je. JÃ¡ se zatÃ­m pokusit sehnat na nÄ™ kupce.
+		AI_Output (other, self, "DIA_Cassia_Blutkelche_15_09");//Co z toho budu mÃ­t?
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_10");//BuÃ« polovinu zisku, nebo si mÅ¯Å¾eÅ¡ vzÃ­t jeden zajÃ­mavÃ½ pÃ¢edmÄ™t z mÃ© koÃ¢isti.
  		
  		MIS_CassiaKelche = LOG_RUNNING;
  		Log_CreateTopic(Topic_Cassiakelche,LOG_MISSION);
 		Log_SetTopicStatus (Topic_CassiaKelche,LOG_RUNNING);
-		B_LogEntry 	(Topic_CassiaKelche,"Cassia mê poádala, abych jí pâinesl šest krvavıch kalichù. Nejspíš je všechny najdu kdesi ve mêstê.");
+		B_LogEntry 	(Topic_CassiaKelche,"Cassia mÄ™ poÅ¾Ã¡dala, abych jÃ­ pÃ¢inesl Å¡est krvavÃ½ch kalichÅ¯. NejspÃ­Å¡ je vÅ¡echny najdu kdesi ve mÄ™stÄ™.");
 	};
 };
 //////////////////////////////////////////////////////////////////////
@@ -783,7 +783,7 @@ INSTANCE DIA_Cassia_abgeben   (C_INFO)
 	condition   = DIA_Cassia_abgeben_Condition;
 	information = DIA_Cassia_abgeben_Info;
 	permanent   = TRUE;
-	description = "Co se tıká têch kalichù...";
+	description = "Co se tÃ½kÃ¡ tÄ™ch kalichÅ¯...";
 };
 
 FUNC INT DIA_Cassia_abgeben_Condition()
@@ -800,10 +800,10 @@ FUNC VOID DIA_Cassia_abgeben_Info()
 	
 	if B_GiveInvItems (other, self, ItMi_BloodCup_MIS,6)
 	{
-		AI_Output (other, self, "DIA_Cassia_abgeben_15_01");//Mám têch šest kalichù.
-		AI_Output (self, other, "DIA_Cassia_abgeben_16_02");//Dobrá práce. Já jsem zatím našla kupce.
-		AI_Output (self, other, "DIA_Cassia_abgeben_16_03");//Mùeš si hned vzít svou odmênu. Dík, es to pro mê udêlal.
-		AI_Output (self, other, "DIA_Cassia_abgeben_16_04");//U pro tebe nemám nic na práci - ale mùeš se ode mê kdykoli nêèemu nauèit. A navíc, na tomhle ostrovê je toho dost, co jen èeká, a si to nêkdo vezme. (usmívá se)
+		AI_Output (other, self, "DIA_Cassia_abgeben_15_01");//MÃ¡m tÄ™ch Å¡est kalichÅ¯.
+		AI_Output (self, other, "DIA_Cassia_abgeben_16_02");//DobrÃ¡ prÃ¡ce. JÃ¡ jsem zatÃ­m naÅ¡la kupce.
+		AI_Output (self, other, "DIA_Cassia_abgeben_16_03");//MÅ¯Å¾eÅ¡ si hned vzÃ­t svou odmÄ™nu. DÃ­k, Å¾es to pro mÄ™ udÄ™lal.
+		AI_Output (self, other, "DIA_Cassia_abgeben_16_04");//UÅ¾ pro tebe nemÃ¡m nic na prÃ¡ci - ale mÅ¯Å¾eÅ¡ se ode mÄ™ kdykoli nÄ™Äemu nauÄit. A navÃ­c, na tomhle ostrovÄ™ je toho dost, co jen ÄekÃ¡, aÅ¾ si to nÄ™kdo vezme. (usmÃ­vÃ¡ se)
 		    
 		
 		MIS_CassiaKelche = LOG_SUCCESS;
@@ -811,7 +811,7 @@ FUNC VOID DIA_Cassia_abgeben_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_abgeben_16_05");//Mùu ty kalichy prodat jen jako sadu. Pâines mi je všechny.
+		AI_Output (self, other, "DIA_Cassia_abgeben_16_05");//MÅ¯Å¾u ty kalichy prodat jen jako sadu. PÃ¢ines mi je vÅ¡echny.
 	};
 };
 //////////////////////////////////////////////////////////////////////
@@ -824,7 +824,7 @@ INSTANCE DIA_Cassia_Belohnung   (C_INFO)
 	condition   = DIA_Cassia_Belohnung_Condition;
 	information = DIA_Cassia_Belohnung_Info;
 	permanent   = FALSE;
-	description = "Pâišel jsem si pro svoji odmênu.";
+	description = "PÃ¢iÅ¡el jsem si pro svoji odmÄ™nu.";
 };
 
 FUNC INT DIA_Cassia_Belohnung_Condition()
@@ -837,13 +837,13 @@ FUNC INT DIA_Cassia_Belohnung_Condition()
 };
 FUNC VOID DIA_Cassia_Belohnung_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Belohnung_15_00");//Pâišel jsem si pro svoji odmênu.
+	AI_Output (other, self, "DIA_Cassia_Belohnung_15_00");//PÃ¢iÅ¡el jsem si pro svoji odmÄ™nu.
 	AI_Output (self, other, "DIA_Cassia_Belohnung_16_01");//Co sis vybral?
 	
 	Info_ClearChoices (DIA_Cassia_Belohnung);
 	
-	Info_AddChoice (DIA_Cassia_Belohnung,"400 zlaãákù.",DIA_Cassia_Belohnung_Gold);
-	Info_AddChoice (DIA_Cassia_Belohnung,"4 elixíry hojivé síly",DIA_Cassia_Belohnung_Trank);
+	Info_AddChoice (DIA_Cassia_Belohnung,"400 zlaÄƒÃ¡kÅ¯.",DIA_Cassia_Belohnung_Gold);
+	Info_AddChoice (DIA_Cassia_Belohnung,"4 elixÃ­ry hojivÃ© sÃ­ly",DIA_Cassia_Belohnung_Trank);
 	Info_AddChoice (DIA_Cassia_Belohnung, NAME_ADDON_CASSIASBELOHNUNGSRING ,DIA_Cassia_Belohnung_Ring);
 	
 };

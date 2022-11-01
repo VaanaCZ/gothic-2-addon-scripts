@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_IceGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Ledový golem";
+	name							=	"LedovÃ½ golem";
 	guild							=	GIL_ICEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;
 	level							=	45;

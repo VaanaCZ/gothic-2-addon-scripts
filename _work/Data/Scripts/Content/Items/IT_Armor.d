@@ -1,5 +1,5 @@
 // *********************************************************
-// R¸stungs Kosten in Gold
+// R√ºstungs Kosten in Gold
 // -----------------------
 // Alles, was hier mit 0 angegeben ist  
 // a) kann der Spieler NIE bekommen und
@@ -22,7 +22,7 @@ const int VALUE_ITAR_MIL_M		= 2500;
 const int VALUE_ITAR_PAL_M		= 5000;
 const int VALUE_ITAR_PAL_H		= 20000;
 
-// ------ Bauern und Sˆldner ------
+// ------ Bauern und S√∂ldner ------
 const int VALUE_ITAR_Bau_L		= 80;
 const int VALUE_ITAR_Bau_M		= 100;
 const int VALUE_ITAR_BauBabe_L	= 0;
@@ -42,7 +42,7 @@ const int VALUE_ITAR_Leather_L	= 250;
 const int VALUE_ITAR_BDT_M		= 550;
 const int VALUE_ITAR_BDT_H		= 2100;
 
-// ------ Drachenj‰ger ------
+// ------ Drachenj√§ger ------
 const int VALUE_ITAR_DJG_L		= 3000;
 const int VALUE_ITAR_DJG_M		= 12000;
 const int VALUE_ITAR_DJG_H		= 20000;
@@ -59,12 +59,12 @@ const int VALUE_ITAR_Prisoner	= 10;
 
 
 // ******************
-// 		R¸stungen
+// 		R√ºstungen
 // ******************
 
 INSTANCE ITAR_Governor (C_Item)
 {
-	name 					=	"Velitelsk˝ kab·tec";
+	name 					=	"Velitelsk√Ω kab√°tec";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -104,7 +104,7 @@ INSTANCE ITAR_Governor (C_Item)
 // ******************************************************
 INSTANCE ITAR_JUDGE (C_Item)
 {
-	name 					=	"SoudcovskÈ roucho";
+	name 					=	"Soudcovsk√© roucho";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -144,7 +144,7 @@ INSTANCE ITAR_JUDGE (C_Item)
 // ******************************************************
 INSTANCE ITAR_SMITH (C_Item)
 {
-	name 					=	"Kov·‚sk˝ odÍv";
+	name 					=	"Kov√°√¢sk√Ω odƒôv";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -184,7 +184,7 @@ INSTANCE ITAR_SMITH (C_Item)
 // ******************************************************
 INSTANCE ITAR_BARKEEPER (C_Item)
 {
-	name 					=	"Hostinsk˝ odÍv";
+	name 					=	"Hostinsk√Ω odƒôv";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -224,7 +224,7 @@ INSTANCE ITAR_BARKEEPER (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_L (C_Item)
 {
-	name 					=	"MÍö„ansk˝ öat";
+	name 					=	"Mƒô≈°ƒÉansk√Ω ≈°at";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -264,7 +264,7 @@ INSTANCE ITAR_VLK_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_M (C_Item)
 {
-	name 					=	"MÍö„ansk˝ öat";
+	name 					=	"Mƒô≈°ƒÉansk√Ω ≈°at";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -304,7 +304,7 @@ INSTANCE ITAR_VLK_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_H (C_Item)
 {
-	name 					=	"MÍö„ansk˝ öat";
+	name 					=	"Mƒô≈°ƒÉansk√Ω ≈°at";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -340,7 +340,7 @@ INSTANCE ITAR_VLK_H (C_Item)
 // ******************************************************
 instance ITAR_VlkBabe_L (C_Item)
 {
-	name 					=	"MÍö„ansk˝ öat 1";
+	name 					=	"Mƒô≈°ƒÉansk√Ω ≈°at 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -380,7 +380,7 @@ instance ITAR_VlkBabe_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_M (C_Item)
 {
-	name 					=	"MÍö„ansk˝ öat 2";
+	name 					=	"Mƒô≈°ƒÉansk√Ω ≈°at 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -420,7 +420,7 @@ INSTANCE ITAR_VlkBabe_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_H (C_Item)
 {
-	name 					=	"MÍö„ansk˝ öat 3";
+	name 					=	"Mƒô≈°ƒÉansk√Ω ≈°at 3";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -456,7 +456,7 @@ INSTANCE ITAR_VlkBabe_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_MIL_L (C_Item)
 {
-	name 					=	"Lehk· zbroj domobrany";
+	name 					=	"Lehk√° zbroj domobrany";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -502,7 +502,7 @@ FUNC VOID Equip_ITAR_MIL_L()
 	{
 		MILArmor_Equipped = TRUE;
 		
-		if (MIL01_Equipped == TRUE)//G¸rtel
+		if (MIL01_Equipped == TRUE)//G√ºrtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -531,7 +531,7 @@ FUNC VOID UnEquip_ITAR_MIL_L()
 // ******************************************************
 INSTANCE ITAR_MIL_M (C_Item)
 {
-	name 					=	"TÍûk· zbroj domobrany";
+	name 					=	"Tƒô≈æk√° zbroj domobrany";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -602,7 +602,7 @@ FUNC VOID UnEquip_ITAR_MIL_M()
 // ******************************************************
 INSTANCE ITAR_PAL_M (C_Item)
 {
-	name 					=	"RytÌ‚sk· zbroj";
+	name 					=	"Ryt√≠√¢sk√° zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -642,7 +642,7 @@ INSTANCE ITAR_PAL_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_PAL_H (C_Item)
 {
-	name 					=	"Paladinsk· zbroj";
+	name 					=	"Paladinsk√° zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -682,7 +682,7 @@ INSTANCE ITAR_PAL_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_L (C_Item)
 {
-	name 					=	"Selsk˝ odÍv 1";
+	name 					=	"Selsk√Ω odƒôv 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -722,7 +722,7 @@ INSTANCE ITAR_BAU_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_M (C_Item)
 {
-	name 					=	"Selsk˝ odÍv 2";
+	name 					=	"Selsk√Ω odƒôv 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -762,7 +762,7 @@ INSTANCE ITAR_BAU_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_BauBabe_L (C_Item)
 {
-	name 					=	"Selsk˝ öat 1";
+	name 					=	"Selsk√Ω ≈°at 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -798,7 +798,7 @@ INSTANCE ITAR_BauBabe_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_BauBabe_M (C_Item)
 {
-	name 					=	"Selsk˝ öat 2" ;
+	name 					=	"Selsk√Ω ≈°at 2" ;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -834,7 +834,7 @@ INSTANCE ITAR_BauBabe_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_SLD_L (C_Item)
 {
-	name 					=	"Lehk· ûoldnÈ‚sk· zbroj";
+	name 					=	"Lehk√° ≈æoldn√©√¢sk√° zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -910,7 +910,7 @@ FUNC VOID UnEquip_ITAR_SLD_L()
 // ******************************************************
 INSTANCE ITAR_SLD_M (C_Item)
 {
-	name 					=	"St‚ednÍ tÍûk· ûoldnÈ‚sk· zbroj";
+	name 					=	"St√¢ednƒô tƒô≈æk√° ≈æoldn√©√¢sk√° zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -985,7 +985,7 @@ FUNC VOID UnEquip_ITAR_SLD_M()
 // ******************************************************
 INSTANCE ITAR_SLD_H (C_Item)
 {
-	name 					=	"TÍûk· ûoldnÈ‚sk· zbroj";
+	name 					=	"Tƒô≈æk√° ≈æoldn√©√¢sk√° zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1056,7 +1056,7 @@ FUNC VOID UnEquip_ITAR_SLD_H()
 // ******************************************************
 INSTANCE ITAR_DJG_Crawler (C_Item)
 {
-	name 					=	"Zbroj z krun˝‚e d˘lnÌho Ëerva";
+	name 					=	"Zbroj z krun√Ω√¢e d≈Øln√≠ho ƒçerva";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1131,7 +1131,7 @@ FUNC VOID UnEquip_ITAR_DJG_Crawler()
 // ******************************************************
 INSTANCE ITAR_DJG_L (C_Item)
 {
-	name 					=	"Lehk· zbroj drakobijc˘";
+	name 					=	"Lehk√° zbroj drakobijc≈Ø";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1171,7 +1171,7 @@ INSTANCE ITAR_DJG_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_M (C_Item)
 {
-	name 					=	"St‚ednÍ tÍûk· zbroj drakobijc˘";
+	name 					=	"St√¢ednƒô tƒô≈æk√° zbroj drakobijc≈Ø";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1211,7 +1211,7 @@ INSTANCE ITAR_DJG_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_H (C_Item)
 {
-	name 					=	"TÍûk· zbroj drakobijc˘";
+	name 					=	"Tƒô≈æk√° zbroj drakobijc≈Ø";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1251,7 +1251,7 @@ INSTANCE ITAR_DJG_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_BABE (C_Item)
 {
-	name 					=	"Zbroj drakobijky‡";
+	name 					=	"Zbroj drakobijky≈ï";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1291,7 +1291,7 @@ INSTANCE ITAR_DJG_BABE (C_Item)
 // ******************************************************
 INSTANCE ITAR_NOV_L (C_Item)
 {
-	name 					=	"Roucho novic˘";
+	name 					=	"Roucho novic≈Ø";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1367,7 +1367,7 @@ FUNC VOID UnEquip_ITAR_NOV_L()
 // ******************************************************
 INSTANCE ITAR_KDF_L (C_Item)
 {
-	name 					=	"Roucho m·g˘ ohnÍ";
+	name 					=	"Roucho m√°g≈Ø ohnƒô";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1442,7 +1442,7 @@ FUNC VOID UnEquip_ITAR_KDF_L()
 // ******************************************************
 INSTANCE ITAR_KDF_H (C_Item)
 {
-	name 					=	"TÍûkÈ ohnivÈ roucho";
+	name 					=	"Tƒô≈æk√© ohniv√© roucho";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1517,7 +1517,7 @@ FUNC VOID UnEquip_ITAR_KDF_H()
 // ******************************************************
 INSTANCE ITAR_Leather_L (C_Item)
 {
-	name 					=	"Koûen· zbroj";
+	name 					=	"Ko≈æen√° zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1559,7 +1559,7 @@ FUNC VOID Equip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = TRUE;	
 	
-		if (Leather01_Equipped == TRUE) //Lederg¸rtel
+		if (Leather01_Equipped == TRUE) //Lederg√ºrtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -1575,7 +1575,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = FALSE;	
 	
-		if (Leather01_Equipped == TRUE) //Lederg¸rtel
+		if (Leather01_Equipped == TRUE) //Lederg√ºrtel
 		{
 			self.protection[PROT_EDGE] 	-= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -1588,7 +1588,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 // ******************************************************
 INSTANCE ITAR_BDT_M (C_Item)
 {
-	name 					=	"St‚ednÍ tÍûk· zbroj bandit˘";
+	name 					=	"St√¢ednƒô tƒô≈æk√° zbroj bandit≈Ø";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1629,7 +1629,7 @@ INSTANCE ITAR_BDT_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_BDT_H (C_Item)
 {
-	name 					=	"TÍûk· zbroj bandit˘";
+	name 					=	"Tƒô≈æk√° zbroj bandit≈Ø";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1670,7 +1670,7 @@ INSTANCE ITAR_BDT_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_XARDAS (C_Item)
 {
-	name 					=	"Roucho temn˝ch umÍnÌ";
+	name 					=	"Roucho temn√Ωch umƒôn√≠";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1826,7 +1826,7 @@ INSTANCE ITAR_CorAngar (C_Item)
 // ******************************************************
 INSTANCE ITAR_Dementor (C_Item)
 {
-	name 					=	"Tmav˝ pl·ö„";
+	name 					=	"Tmav√Ω pl√°≈°ƒÉ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1862,7 +1862,7 @@ INSTANCE ITAR_Dementor (C_Item)
 // ******************************************************
 INSTANCE ITAR_KDW_H (C_Item)
 {
-	name 					=	"Roucho m·g˘ vody";
+	name 					=	"Roucho m√°g≈Ø vody";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1902,7 +1902,7 @@ INSTANCE ITAR_KDW_H (C_Item)
 // ******************************************************
 instance ITAR_Prisoner (C_Item)
 {
-	name 					=	"Trestaneck˝ odÍv";
+	name 					=	"Trestaneck√Ω odƒôv";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

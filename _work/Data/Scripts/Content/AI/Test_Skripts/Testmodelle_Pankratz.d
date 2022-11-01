@@ -1,6 +1,6 @@
 INSTANCE J1 (C_Item)
 {	
-	name 				=	"Monster auffüllen Addon world";
+	name 				=	"Monster auffÃ¼llen Addon world";
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
 	value 				=	0;
@@ -699,7 +699,7 @@ INSTANCE DJG_inserten (C_Item)
 func void UseDJG_inserten ()
 {   
 //************************************************************
-//			Befehle fürs JOLY_Storyhelpletter
+//			Befehle fÃ¼rs JOLY_Storyhelpletter
 //************************************************************
 //B_Kapitelwechsel(1, NewWorld_Zen );
 //B_GiveTradeInv (1);
@@ -863,7 +863,7 @@ FUNC VOID DIA_Namefehlt_KAP6_EXIT_Info()
 
 
 //**************************************
-//Storyhelper light für die Oldworld //Joly: steht wegen verwechslungsgefahr!
+//Storyhelper light fÃ¼r die Oldworld //Joly: steht wegen verwechslungsgefahr!
 //**************************************
 INSTANCE SH_Oldworld (NPC_DEFAULT)
 {
@@ -977,7 +977,7 @@ FUNC VOID SH_Oldworld_KAPITEL1ANFANG()
 	B_Kapitelwechsel		(1, OLDWORLD_ZEN );
 	
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	//Info_ClearChoices	( SH_Oldworld_INFO1 );
 	AI_StopProcessInfos	( self );
 };
@@ -1026,7 +1026,7 @@ FUNC VOID SH_Oldworld_KAPITEL2ANFANG()
 	B_Kapitelwechsel		(2, OLDWORLD_ZEN );
 	
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	//Info_ClearChoices	( SH_Oldworld_INFO2 );
 	AI_StopProcessInfos	( self );
 };
@@ -1080,7 +1080,7 @@ FUNC VOID SH_Oldworld_KAPITEL3ANFANG()
 	B_Kapitelwechsel		(3, OLDWORLD_ZEN );	
 
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	Info_ClearChoices	( SH_Oldworld_INFO3 );
 	AI_StopProcessInfos	( self );
 };
@@ -1144,7 +1144,7 @@ FUNC VOID SH_Oldworld_KAPITEL4ANFANG()
 	B_NPC_IsAliveCheck (OLDWORLD_ZEN);
 	B_Kapitelwechsel		(4, OLDWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	Info_ClearChoices	( SH_Oldworld_INFO4 );
 	AI_StopProcessInfos	( self );
 };
@@ -1207,12 +1207,12 @@ FUNC VOID SH_Oldworld_KAPITEL5ANFANG()
 	B_NPC_IsAliveCheck (OLDWORLD_ZEN);
 	B_Kapitelwechsel		(4, OLDWORLD_ZEN );
 	//-------- was neu geschieht --------
-	CreateInvItems (hero,ItAt_IcedragonHeart,1);			//damit man eins für die DI hat!!
+	CreateInvItems (hero,ItAt_IcedragonHeart,1);			//damit man eins fÃ¼r die DI hat!!
 	MIS_AllDragonsDead = TRUE;
 	EnterNW_Kapitel5 = TRUE;	
 	B_Kapitelwechsel		(5, OLDWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	Info_ClearChoices	( SH_Oldworld_INFO5 );
 	AI_StopProcessInfos	( self );
 };
@@ -1260,7 +1260,7 @@ FUNC VOID SH_Oldworld_KAPITEL6ANFANG()
 	//-------- was neu geschieht --------	
 	B_Kapitelwechsel		(6, OLDWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	Info_ClearChoices	( SH_Oldworld_INFO6 );
 	AI_StopProcessInfos	( self );
 };
@@ -1269,7 +1269,7 @@ FUNC VOID SH_Oldworld_KAPITEL6ANFANG()
 instance PC_Hero (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Ich der Drachenjäger";
+	name 		= "Ich der DrachenjÃ¤ger";
 	guild		= GIL_DJG;
 	id			= 0;
 	voice		= 15;
@@ -1413,7 +1413,7 @@ instance PC_Hero (NPC_DEFAULT)
 //	Firedragon Testmodell
 //*************************
 
-INSTANCE Dragon_Testmodell	(Mst_Default_Dragon_Fire)  //Joly: Testdrachen für den Talk!
+INSTANCE Dragon_Testmodell	(Mst_Default_Dragon_Fire)  //Joly: Testdrachen fÃ¼r den Talk!
 {
 	B_SetVisuals_Dragon_Fire();
 	Npc_SetToFistMode(self);
@@ -1471,18 +1471,18 @@ FUNC INT DIA_Dragon_Testmodell_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Testmodell_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, èlovíèku, ale tyhle sínê ivı neopustíš.
-	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, èlovíèku, ale tyhle sínê ivı neopustíš.
-	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //Neudêláš takového vêtru. Nech nás pâejít k vêci.
-	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, èlovíèku, ale tyhle sínê ivı neopustíš.
-	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, èlovíèku, ale tyhle sínê ivı neopustíš.
-	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, èlovíèku, ale tyhle sínê ivı neopustíš.
-	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //Neudêláš takového vêtru. Nech nás pâejít k vêci.
-	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //Neudêláš takového vêtru. Nech nás pâejít k vêci.
-	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //Neudêláš takového vêtru. Nech nás pâejít k vêci.
-	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, èlovíèku, ale tyhle sínê ivı neopustíš.
-	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, èlovíèku, ale tyhle sínê ivı neopustíš.
-	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //Neudêláš takového vêtru. Nech nás pâejít k vêci.
+	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, ÄlovÃ­Äku, ale tyhle sÃ­nÄ™ Å¾ivÃ½ neopustÃ­Å¡.
+	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, ÄlovÃ­Äku, ale tyhle sÃ­nÄ™ Å¾ivÃ½ neopustÃ­Å¡.
+	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //NeudÄ™lÃ¡Å¡ takovÃ©ho vÄ™tru. Nech nÃ¡s pÃ¢ejÃ­t k vÄ™ci.
+	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, ÄlovÃ­Äku, ale tyhle sÃ­nÄ™ Å¾ivÃ½ neopustÃ­Å¡.
+	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, ÄlovÃ­Äku, ale tyhle sÃ­nÄ™ Å¾ivÃ½ neopustÃ­Å¡.
+	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, ÄlovÃ­Äku, ale tyhle sÃ­nÄ™ Å¾ivÃ½ neopustÃ­Å¡.
+	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //NeudÄ™lÃ¡Å¡ takovÃ©ho vÄ™tru. Nech nÃ¡s pÃ¢ejÃ­t k vÄ™ci.
+	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //NeudÄ™lÃ¡Å¡ takovÃ©ho vÄ™tru. Nech nÃ¡s pÃ¢ejÃ­t k vÄ™ci.
+	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //NeudÄ™lÃ¡Å¡ takovÃ©ho vÄ™tru. Nech nÃ¡s pÃ¢ejÃ­t k vÄ™ci.
+	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, ÄlovÃ­Äku, ale tyhle sÃ­nÄ™ Å¾ivÃ½ neopustÃ­Å¡.
+	AI_Output			(self, other, "DIA_Dragon_Testmodell_Hello_20_00"); //Dostal ses daleko, ÄlovÃ­Äku, ale tyhle sÃ­nÄ™ Å¾ivÃ½ neopustÃ­Å¡.
+	AI_Output			(other, self, "DIA_Dragon_Testmodell_Hello_15_00"); //NeudÄ™lÃ¡Å¡ takovÃ©ho vÄ™tru. Nech nÃ¡s pÃ¢ejÃ­t k vÄ™ci.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;

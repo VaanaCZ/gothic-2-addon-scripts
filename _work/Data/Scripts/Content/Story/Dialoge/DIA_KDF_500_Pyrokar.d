@@ -44,8 +44,8 @@ func int DIA_Pyrokar_WELCOME_Condition ()
 };
 func void DIA_Pyrokar_WELCOME_Info ()
 {
-	AI_Output (self, other, "DIA_Pyrokar_WELCOME_11_00"); //Tak ty jsi ten novı novic. Dobrá, pâedpokládám, e u tê s tvımi povinnostmi obeznámil otec Parlan.
-	AI_Output (self, other, "DIA_Pyrokar_WELCOME_11_01"); //(lehce káravê) Víš, e kadı èlen Spoleèenstva ohnê by mêl své povinnosti plnit v souladu s Innosovou vùlí.
+	AI_Output (self, other, "DIA_Pyrokar_WELCOME_11_00"); //Tak ty jsi ten novÃ½ novic. DobrÃ¡, pÃ¢edpoklÃ¡dÃ¡m, Å¾e uÅ¾ tÄ™ s tvÃ½mi povinnostmi obeznÃ¡mil otec Parlan.
+	AI_Output (self, other, "DIA_Pyrokar_WELCOME_11_01"); //(lehce kÃ¡ravÄ™) VÃ­Å¡, Å¾e kaÅ¾dÃ½ Älen SpoleÄenstva ohnÄ™ by mÄ™l svÃ© povinnosti plnit v souladu s Innosovou vÅ¯lÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hagen
@@ -57,7 +57,7 @@ instance DIA_Pyrokar_Hagen		(C_INFO)
 	condition	 = 	DIA_Pyrokar_Hagen_Condition;
 	information	 = 	DIA_Pyrokar_Hagen_Info;
 	permanent	 =  FALSE;
-	description	 =  "Musím mluvit s paladiny. Dost to spêchá.";
+	description	 =  "MusÃ­m mluvit s paladiny. Dost to spÄ™chÃ¡.";
 };
 func int DIA_Pyrokar_Hagen_Condition ()
 {	
@@ -68,17 +68,17 @@ func int DIA_Pyrokar_Hagen_Condition ()
 };
 func void DIA_Pyrokar_Hagen_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_Hagen_15_00"); //Musím mluvit s paladiny. Dost to spêchá.
-	AI_Output (self, other, "DIA_Pyrokar_Hagen_11_01"); //A âekneš nám, proè s nimi chceš mluvit?
-	AI_Output (other, self, "DIA_Pyrokar_Hagen_15_02"); //Mám pro nê dùleitou zprávu.
-	AI_Output (self, other, "DIA_Pyrokar_Hagen_11_03"); //Co by to jako mêlo bıt za zprávu?
-	AI_Output (other, self, "DIA_Pyrokar_Hagen_15_04"); //V Hornickém údolí se shromaëuje armáda zla vedená draky! Musíme je zastavit, dokud mùeme.
-	AI_Output (self, other, "DIA_Pyrokar_Hagen_11_05"); //Hm. Budeme o tvıch slovech pâemıšlet, novici. A nadejde èas, dáme ti vêdêt, jak rada rozhodla.
-	AI_Output (self, other, "DIA_Pyrokar_Hagen_11_06"); //Mezitím by sis mêl lépe hledêt povinností novice.
+	AI_Output (other, self, "DIA_Pyrokar_Hagen_15_00"); //MusÃ­m mluvit s paladiny. Dost to spÄ™chÃ¡.
+	AI_Output (self, other, "DIA_Pyrokar_Hagen_11_01"); //A Ã¢ekneÅ¡ nÃ¡m, proÄ s nimi chceÅ¡ mluvit?
+	AI_Output (other, self, "DIA_Pyrokar_Hagen_15_02"); //MÃ¡m pro nÄ™ dÅ¯leÅ¾itou zprÃ¡vu.
+	AI_Output (self, other, "DIA_Pyrokar_Hagen_11_03"); //Co by to jako mÄ™lo bÃ½t za zprÃ¡vu?
+	AI_Output (other, self, "DIA_Pyrokar_Hagen_15_04"); //V HornickÃ©m ÃºdolÃ­ se shromaÅ¾Ã«uje armÃ¡da zla vedenÃ¡ draky! MusÃ­me je zastavit, dokud mÅ¯Å¾eme.
+	AI_Output (self, other, "DIA_Pyrokar_Hagen_11_05"); //Hm. Budeme o tvÃ½ch slovech pÃ¢emÃ½Å¡let, novici. AÅ¾ nadejde Äas, dÃ¡me ti vÄ™dÄ™t, jak rada rozhodla.
+	AI_Output (self, other, "DIA_Pyrokar_Hagen_11_06"); //MezitÃ­m by sis mÄ™l lÃ©pe hledÄ™t povinnostÃ­ novice.
 	
 	if Npc_KnowsInfo (other,DIA_Pyrokar_Auge)
 	{
-		AI_Output (self, other, "DIA_Pyrokar_ALL_11_07"); //Dobrá, u tê nebudeme déle zdrovat od tvé práce - mùeš jít.
+		AI_Output (self, other, "DIA_Pyrokar_ALL_11_07"); //DobrÃ¡, uÅ¾ tÄ™ nebudeme dÃ©le zdrÅ¾ovat od tvÃ© prÃ¡ce - mÅ¯Å¾eÅ¡ jÃ­t.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -92,7 +92,7 @@ instance DIA_Pyrokar_Auge		(C_INFO)
 	condition	 = 	DIA_Pyrokar_Auge_Condition;
 	information	 = 	DIA_Pyrokar_Auge_Info;
 	permanent	 =  FALSE;
-	description	 =  "Hledám Innosovo oko.";
+	description	 =  "HledÃ¡m Innosovo oko.";
 };
 func int DIA_Pyrokar_Auge_Condition ()
 {	
@@ -104,17 +104,17 @@ func int DIA_Pyrokar_Auge_Condition ()
 };
 func void DIA_Pyrokar_Auge_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_Auge_15_00"); //Hledám Innosovo oko.
-	AI_Output (self, other, "DIA_Pyrokar_Auge_11_01"); //Kadı, kdo si myslí, e by mohl svatı amulet nejen najít, ale dokonce ho i pouívat, je hlupák.
-	AI_Output (self, other, "DIA_Pyrokar_Auge_11_02"); //Amulet si sám vybírá svého majitele - nikdo, kromê toho, komu je to pâedurèeno, ho není schopen nosit.
-	AI_Output (other, self, "DIA_Pyrokar_Auge_15_03"); //Jsem ochotnı to zkusit.
-	AI_Output (self, other, "DIA_Pyrokar_Auge_11_04"); //Povinnosti novice tê mají nauèit pokoâe - ne ádostivosti.
+	AI_Output (other, self, "DIA_Pyrokar_Auge_15_00"); //HledÃ¡m Innosovo oko.
+	AI_Output (self, other, "DIA_Pyrokar_Auge_11_01"); //KaÅ¾dÃ½, kdo si myslÃ­, Å¾e by mohl svatÃ½ amulet nejen najÃ­t, ale dokonce ho i pouÅ¾Ã­vat, je hlupÃ¡k.
+	AI_Output (self, other, "DIA_Pyrokar_Auge_11_02"); //Amulet si sÃ¡m vybÃ­rÃ¡ svÃ©ho majitele - nikdo, kromÄ™ toho, komu je to pÃ¢edurÄeno, ho nenÃ­ schopen nosit.
+	AI_Output (other, self, "DIA_Pyrokar_Auge_15_03"); //Jsem ochotnÃ½ to zkusit.
+	AI_Output (self, other, "DIA_Pyrokar_Auge_11_04"); //Povinnosti novice tÄ™ majÃ­ nauÄit pokoÃ¢e - ne Å¾Ã¡dostivosti.
 	
- 	B_LogEntry (TOPIC_INNOSEYE, "Nemyslím, e by to bylo tak têké, ale Pyrokar mi Oko dobrovolnê a bez pomoci paladinù nevydá.");
+ 	B_LogEntry (TOPIC_INNOSEYE, "NemyslÃ­m, Å¾e by to bylo tak tÄ™Å¾kÃ©, ale Pyrokar mi Oko dobrovolnÄ™ a bez pomoci paladinÅ¯ nevydÃ¡.");
 	
 	if Npc_KnowsInfo (other,DIA_Pyrokar_Hagen)
 	{
-		AI_Output (self, other, "DIA_Pyrokar_ALL_11_05"); //Dobrá, u tê nebudeme dále zdrovat od tvé práce - mùeš jít.
+		AI_Output (self, other, "DIA_Pyrokar_ALL_11_05"); //DobrÃ¡, uÅ¾ tÄ™ nebudeme dÃ¡le zdrÅ¾ovat od tvÃ© prÃ¡ce - mÅ¯Å¾eÅ¡ jÃ­t.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -129,7 +129,7 @@ instance DIA_Addon_Pyrokar_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Pyrokar_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Pyrokar_MissingPeople_Info;
 
-	description	 = 	"Nêkteâí khorinidští obèané záhadnê zmizeli.";
+	description	 = 	"NÄ™kteÃ¢Ã­ khorinidÅ¡tÃ­ obÄanÃ© zÃ¡hadnÄ™ zmizeli.";
 };
 func int DIA_Addon_Pyrokar_MissingPeople_Condition ()
 {
@@ -141,16 +141,16 @@ func int DIA_Addon_Pyrokar_MissingPeople_Condition ()
 };
 func void DIA_Addon_Pyrokar_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Pyrokar_MissingPeople_15_00"); //Pár khorinidskıch obyvatel nevysvêtlitelnê zmizelo.
-	AI_Output	(self, other, "DIA_Addon_Pyrokar_MissingPeople_11_01"); //To je mi známo a je to velmi politováníhodné. Ale dohodli jsme se s mágy vody, e se v této záleitosti nebudeme nijak angaovat.
-	AI_Output	(self, other, "DIA_Addon_Pyrokar_MissingPeople_11_02"); //To samé platí o vyšetâování têch podivnıch zemêtâesení v severovıchodních oblastech Khorinidu.
-	AI_Output	(self, other, "DIA_Addon_Pyrokar_MissingPeople_11_03"); //Zatím jsme nedostali ádnou zprávu, e by potâebovali naši pomoc, take v téhle vêci nesmíme podniknout nic.
+	AI_Output	(other, self, "DIA_Addon_Pyrokar_MissingPeople_15_00"); //PÃ¡r khorinidskÃ½ch obyvatel nevysvÄ™tlitelnÄ™ zmizelo.
+	AI_Output	(self, other, "DIA_Addon_Pyrokar_MissingPeople_11_01"); //To je mi znÃ¡mo a je to velmi politovÃ¡nÃ­hodnÃ©. Ale dohodli jsme se s mÃ¡gy vody, Å¾e se v tÃ©to zÃ¡leÅ¾itosti nebudeme nijak angaÅ¾ovat.
+	AI_Output	(self, other, "DIA_Addon_Pyrokar_MissingPeople_11_02"); //To samÃ© platÃ­ o vyÅ¡etÃ¢ovÃ¡nÃ­ tÄ™ch podivnÃ½ch zemÄ™tÃ¢esenÃ­ v severovÃ½chodnÃ­ch oblastech Khorinidu.
+	AI_Output	(self, other, "DIA_Addon_Pyrokar_MissingPeople_11_03"); //ZatÃ­m jsme nedostali Å¾Ã¡dnou zprÃ¡vu, Å¾e by potÃ¢ebovali naÅ¡i pomoc, takÅ¾e v tÃ©hle vÄ™ci nesmÃ­me podniknout nic.
 	AI_Output	(other, self, "DIA_Addon_Pyrokar_MissingPeople_15_04"); //Ano, ale...
-	AI_Output	(self, other, "DIA_Addon_Pyrokar_MissingPeople_11_05"); //ádné ale! Budeme postupovat, jak se sluší, a doufám, e se podle toho budeš chovat i TY.
+	AI_Output	(self, other, "DIA_Addon_Pyrokar_MissingPeople_11_05"); //Å½Ã¡dnÃ© ale! Budeme postupovat, jak se sluÅ¡Ã­, a doufÃ¡m, Å¾e se podle toho budeÅ¡ chovat i TY.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Ohniví mágové sice ztracenıch obèanù litují, ale tvrdí, e tyto vêci mají na starosti mágové vody. V klášteâe mi v této vêci nijak nepomohou."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"OhnivÃ­ mÃ¡govÃ© sice ztracenÃ½ch obÄanÅ¯ litujÃ­, ale tvrdÃ­, Å¾e tyto vÄ™ci majÃ­ na starosti mÃ¡govÃ© vody. V klÃ¡Å¡teÃ¢e mi v tÃ©to vÄ™ci nijak nepomohou."); 
 
 	if (other.guild  == GIL_NOV)
 	&& (KNOWS_FIRE_CONTEST == FALSE)
@@ -192,7 +192,7 @@ func int DIA_Pyrokar_GOAWAY_Condition ()
 };
 func void DIA_Pyrokar_GOAWAY_Info ()
 {
-	AI_Output (self, other, "DIA_Pyrokar_GOAWAY_11_00"); //(rozzlobenê) Poslušnost patâí mezi ctnosti, kterıch se máš ještê co uèit. Aã tak, èi tak.
+	AI_Output (self, other, "DIA_Pyrokar_GOAWAY_11_00"); //(rozzlobenÄ™) PosluÅ¡nost patÃ¢Ã­ mezi ctnosti, kterÃ½ch se mÃ¡Å¡ jeÅ¡tÄ™ co uÄit. AÄƒ tak, Äi tak.
 	
 	AI_StopProcessInfos (self); 
 };
@@ -206,7 +206,7 @@ instance DIA_Pyrokar_FIRE		(C_INFO)
 	condition	 = 	DIA_Pyrokar_FIRE_Condition;
 	information	 = 	DIA_Pyrokar_FIRE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Chtêl bych podstoupit zkoušku ohnê.";
+	description	 = 	"ChtÄ™l bych podstoupit zkouÅ¡ku ohnÄ™.";
 };
 func int DIA_Pyrokar_FIRE_Condition ()
 {	
@@ -219,17 +219,17 @@ func int DIA_Pyrokar_FIRE_Condition ()
 };
 func void DIA_Pyrokar_FIRE_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_FIRE_15_00"); //Chtêl bych podstoupit zkoušku ohnê.
-	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_01"); //(pâekvapenê) Tak ty o tom víš... ty chceš podstoupit zkoušku ohnê?
-	AI_Output (other, self, "DIA_Pyrokar_FIRE_15_02"); //Ano, proèetl jsem si Právo ohnê, kde se âíká...
-	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_03"); //(pâíkâe pâeruší) My známe Právo ohnê. Taky jsme ale vidêli mnoho novicù bêhem toho testu zemâít. Mêl bys své rozhodnutí ještê zváit.
-	AI_Output (other, self, "DIA_Pyrokar_FIRE_15_04"); //To jsem u udêlal. Chci tu zkoušku - a jsem pâipraven jí projít.
-	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_05"); //(varovnê) Kdy na tom bezpodmíneènê trváš, tak tê Rada k té zkoušce pâizve.
-	AI_Output (other, self, "DIA_Pyrokar_FIRE_15_06"); //Trvám na tom, abych byl pâizván ke zkoušce ohnê.
-	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_07"); //V tom pâípadê - aã je po tvém. A budeš pâipraven, dostaneš od kadého èlena Rady úkol, jej musíš splnit.
-	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_08"); //Nechã se Innos slituje nad tvou duší.
+	AI_Output (other, self, "DIA_Pyrokar_FIRE_15_00"); //ChtÄ™l bych podstoupit zkouÅ¡ku ohnÄ™.
+	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_01"); //(pÃ¢ekvapenÄ™) Tak ty o tom vÃ­Å¡... ty chceÅ¡ podstoupit zkouÅ¡ku ohnÄ™?
+	AI_Output (other, self, "DIA_Pyrokar_FIRE_15_02"); //Ano, proÄetl jsem si PrÃ¡vo ohnÄ™, kde se Ã¢Ã­kÃ¡...
+	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_03"); //(pÃ¢Ã­kÃ¢e pÃ¢eruÅ¡Ã­) My znÃ¡me PrÃ¡vo ohnÄ™. Taky jsme ale vidÄ™li mnoho novicÅ¯ bÄ™hem toho testu zemÃ¢Ã­t. MÄ™l bys svÃ© rozhodnutÃ­ jeÅ¡tÄ™ zvÃ¡Å¾it.
+	AI_Output (other, self, "DIA_Pyrokar_FIRE_15_04"); //To jsem uÅ¾ udÄ™lal. Chci tu zkouÅ¡ku - a jsem pÃ¢ipraven jÃ­ projÃ­t.
+	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_05"); //(varovnÄ™) KdyÅ¾ na tom bezpodmÃ­neÄnÄ™ trvÃ¡Å¡, tak tÄ™ Rada k tÃ© zkouÅ¡ce pÃ¢izve.
+	AI_Output (other, self, "DIA_Pyrokar_FIRE_15_06"); //TrvÃ¡m na tom, abych byl pÃ¢izvÃ¡n ke zkouÅ¡ce ohnÄ™.
+	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_07"); //V tom pÃ¢Ã­padÄ™ - aÄƒ je po tvÃ©m. AÅ¾ budeÅ¡ pÃ¢ipraven, dostaneÅ¡ od kaÅ¾dÃ©ho Älena Rady Ãºkol, jejÅ¾ musÃ­Å¡ splnit.
+	AI_Output (self, other, "DIA_Pyrokar_FIRE_11_08"); //NechÄƒ se Innos slituje nad tvou duÅ¡Ã­.
 	
-	B_LogEntry (TOPIC_FireContest,"Poádal jsem Pyrokara o zkoušku ohnê. Nyní musím splnit tâi úkoly, které mi zadá nejvyšší rada.");
+	B_LogEntry (TOPIC_FireContest,"PoÅ¾Ã¡dal jsem Pyrokara o zkouÅ¡ku ohnÄ™. NynÃ­ musÃ­m splnit tÃ¢i Ãºkoly, kterÃ© mi zadÃ¡ nejvyÅ¡Å¡Ã­ rada.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEST
@@ -241,7 +241,7 @@ instance DIA_Pyrokar_TEST		(C_INFO)
 	condition	 = 	DIA_Pyrokar_TEST_Condition;
 	information	 = 	DIA_Pyrokar_TEST_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Jsem pâipraven podrobit se tvé zkoušce, Mistâe.";
+	description	 = 	"Jsem pÃ¢ipraven podrobit se tvÃ© zkouÅ¡ce, MistÃ¢e.";
 };
 func int DIA_Pyrokar_TEST_Condition ()
 {
@@ -254,20 +254,20 @@ func int DIA_Pyrokar_TEST_Condition ()
 };
 func void DIA_Pyrokar_TEST_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_TEST_15_00"); //Jsem pâipraven podrobit se tvé zkoušce, Mistâe.
-	AI_Output (self, other, "DIA_Pyrokar_TEST_11_01"); //A jedinê Innos sám ví, jestli jí projdeš. Podstupuješ stejnou zkoušku, jaká je urèena vyvolenım novicùm.
-	AI_Output (self, other, "DIA_Pyrokar_TEST_11_02"); //Zkouška magie. (odmêâenê) Asi víš, e zkouškou mùe projít pouze jeden jedinı novic.
-	AI_Output (other, self, "DIA_Pyrokar_TEST_15_03"); //To vím. Tak kdo jsou moji soupeâi?
-	AI_Output (self, other, "DIA_Pyrokar_TEST_11_04"); //Innos ve své moudrosti vybral tâi novice, kteâí se také chystají projít testem: Agon, Igaraz a Ulf. U zaèali s hledáním.
-	AI_Output (self, other, "DIA_Pyrokar_TEST_11_05"); //(úseènê) Ale dost u o tom! Slyš slova této zkoušky: 'Následuj Innosova znamení a dones nám, co vêâící nalezl na konci cesty.'
-	AI_Output (self, other, "DIA_Pyrokar_TEST_11_06"); //Budeš potâebovat tenhle klíè.
-	AI_Output (self, other, "DIA_Pyrokar_TEST_11_07"); //To je vše, co ti k tomu âekneme.
+	AI_Output (other, self, "DIA_Pyrokar_TEST_15_00"); //Jsem pÃ¢ipraven podrobit se tvÃ© zkouÅ¡ce, MistÃ¢e.
+	AI_Output (self, other, "DIA_Pyrokar_TEST_11_01"); //A jedinÄ™ Innos sÃ¡m vÃ­, jestli jÃ­ projdeÅ¡. PodstupujeÅ¡ stejnou zkouÅ¡ku, jakÃ¡ je urÄena vyvolenÃ½m novicÅ¯m.
+	AI_Output (self, other, "DIA_Pyrokar_TEST_11_02"); //ZkouÅ¡ka magie. (odmÄ™Ã¢enÄ™) Asi vÃ­Å¡, Å¾e zkouÅ¡kou mÅ¯Å¾e projÃ­t pouze jeden jedinÃ½ novic.
+	AI_Output (other, self, "DIA_Pyrokar_TEST_15_03"); //To vÃ­m. Tak kdo jsou moji soupeÃ¢i?
+	AI_Output (self, other, "DIA_Pyrokar_TEST_11_04"); //Innos ve svÃ© moudrosti vybral tÃ¢i novice, kteÃ¢Ã­ se takÃ© chystajÃ­ projÃ­t testem: Agon, Igaraz a Ulf. UÅ¾ zaÄali s hledÃ¡nÃ­m.
+	AI_Output (self, other, "DIA_Pyrokar_TEST_11_05"); //(ÃºseÄnÄ™) Ale dost uÅ¾ o tom! SlyÅ¡ slova tÃ©to zkouÅ¡ky: 'NÃ¡sleduj Innosova znamenÃ­ a dones nÃ¡m, co vÄ™Ã¢Ã­cÃ­ nalezl na konci cesty.'
+	AI_Output (self, other, "DIA_Pyrokar_TEST_11_06"); //BudeÅ¡ potÃ¢ebovat tenhle klÃ­Ä.
+	AI_Output (self, other, "DIA_Pyrokar_TEST_11_07"); //To je vÅ¡e, co ti k tomu Ã¢ekneme.
 	
 	Log_CreateTopic (TOPIC_Schnitzeljagd,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Schnitzeljagd,LOG_RUNNING);
-	B_LogEntry (TOPIC_Schnitzeljagd,"Pyrokar pro mê pâipravuje zkoušku magie - stejnou jako je ta, kterou podstoupí zvolení novicové Ulf, Igaraz a Agon.");
+	B_LogEntry (TOPIC_Schnitzeljagd,"Pyrokar pro mÄ™ pÃ¢ipravuje zkouÅ¡ku magie - stejnou jako je ta, kterou podstoupÃ­ zvolenÃ­ novicovÃ© Ulf, Igaraz a Agon.");
 	
-	B_LogEntry (TOPIC_Schnitzeljagd,"Musím následovat Innosova znamení a pâinést to, co vêâící najde na své cestê. Dostal jsem k tomu i klíè.");
+	B_LogEntry (TOPIC_Schnitzeljagd,"MusÃ­m nÃ¡sledovat Innosova znamenÃ­ a pÃ¢inÃ©st to, co vÄ™Ã¢Ã­cÃ­ najde na svÃ© cestÄ™. Dostal jsem k tomu i klÃ­Ä.");
 	
 	CreateInvItems (self,ItKe_MagicChest,1);
 	B_GiveInvItems (self,other,ItKe_MagicChest,1);
@@ -327,15 +327,15 @@ func void DIA_Pyrokar_RUNNING_Info ()
 	
 	if  (randomizer == 0)
 	{
-		AI_Output (self, other, "DIA_Pyrokar_RUNNING_11_00"); //Dokud budeš pracovat na zkoušce, nesmíme ti nic âíct.
+		AI_Output (self, other, "DIA_Pyrokar_RUNNING_11_00"); //Dokud budeÅ¡ pracovat na zkouÅ¡ce, nesmÃ­me ti nic Ã¢Ã­ct.
 	}
 	else if (randomizer == 1)
 	{
-		AI_Output (self, other, "DIA_Pyrokar_RUNNING_11_01"); //Co tady ještê postáváš? Bê se vypoâádat se svou zkouškou!
+		AI_Output (self, other, "DIA_Pyrokar_RUNNING_11_01"); //Co tady jeÅ¡tÄ™ postÃ¡vÃ¡Å¡? BÄ™Å¾ se vypoÃ¢Ã¡dat se svou zkouÅ¡kou!
 	}
 	else if (randomizer == 2)
 	{
-		AI_Output (self, other, "DIA_Pyrokar_RUNNING_11_02"); //Nadešel èas porovnat tvá velká slova s tvımi skutky. Nemyslíš, novici?
+		AI_Output (self, other, "DIA_Pyrokar_RUNNING_11_02"); //NadeÅ¡el Äas porovnat tvÃ¡ velkÃ¡ slova s tvÃ½mi skutky. NemyslÃ­Å¡, novici?
 	};
 	AI_StopProcessInfos (self);
 };
@@ -349,7 +349,7 @@ instance DIA_Pyrokar_SUCCESS		(C_INFO)
 	condition	 = 	DIA_Pyrokar_SUCCESS_Condition;
 	information	 = 	DIA_Pyrokar_SUCCESS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Našel jsem ten runovı kámen.";
+	description	 = 	"NaÅ¡el jsem ten runovÃ½ kÃ¡men.";
 };
 func int DIA_Pyrokar_SUCCESS_Condition ()
 {	
@@ -365,18 +365,18 @@ func int DIA_Pyrokar_SUCCESS_Condition ()
 func void DIA_Pyrokar_SUCCESS_Info ()
 {
 	
-	AI_Output (other, self, "DIA_Pyrokar_SUCCESS_15_00"); //Našel jsem ten runovı kámen.
-	AI_Output (self, other, "DIA_Pyrokar_SUCCESS_11_01"); //(nevêâícnê) Ty... dokázal jsi to?! Sledoval jsi znamení a objevil ukrytı portál...
-	AI_Output (other, self, "DIA_Pyrokar_SUCCESS_15_02"); //...a taky jsem porazil všechna ta stvoâení, co mê povaovala za pâíjemnou svaèinku.
-	AI_Output (self, other, "DIA_Pyrokar_SUCCESS_11_03"); //A co ostatní novicové? Co Agon? Neuspêl dâív ne ty?
-	AI_Output (other, self, "DIA_Pyrokar_SUCCESS_15_04"); //Neobstáli. Pâedpokládám, e jim zkouška nebyla pâedurèena.
-	AI_Output (self, other, "DIA_Pyrokar_SUCCESS_11_05"); //Dobrá, take vyhlásíme, e jsi prošel zkouškou. A ten runovı kámen si mùeš ponechat.
+	AI_Output (other, self, "DIA_Pyrokar_SUCCESS_15_00"); //NaÅ¡el jsem ten runovÃ½ kÃ¡men.
+	AI_Output (self, other, "DIA_Pyrokar_SUCCESS_11_01"); //(nevÄ™Ã¢Ã­cnÄ™) Ty... dokÃ¡zal jsi to?! Sledoval jsi znamenÃ­ a objevil ukrytÃ½ portÃ¡l...
+	AI_Output (other, self, "DIA_Pyrokar_SUCCESS_15_02"); //...a taky jsem porazil vÅ¡echna ta stvoÃ¢enÃ­, co mÄ™ povaÅ¾ovala za pÃ¢Ã­jemnou svaÄinku.
+	AI_Output (self, other, "DIA_Pyrokar_SUCCESS_11_03"); //A co ostatnÃ­ novicovÃ©? Co Agon? NeuspÄ™l dÃ¢Ã­v neÅ¾ ty?
+	AI_Output (other, self, "DIA_Pyrokar_SUCCESS_15_04"); //NeobstÃ¡li. PÃ¢edpoklÃ¡dÃ¡m, Å¾e jim zkouÅ¡ka nebyla pÃ¢edurÄena.
+	AI_Output (self, other, "DIA_Pyrokar_SUCCESS_11_05"); //DobrÃ¡, takÅ¾e vyhlÃ¡sÃ­me, Å¾e jsi proÅ¡el zkouÅ¡kou. A ten runovÃ½ kÃ¡men si mÅ¯Å¾eÅ¡ ponechat.
 	 
 	MIS_SCHNITZELJAGD = LOG_SUCCESS;
 	B_GivePlayerXP (XP_SCHNITZELJAGD);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info PERM wenn Prüfung erfolgreich und die anderen noch nicht. 
+//	Info PERM wenn PrÃ¼fung erfolgreich und die anderen noch nicht. 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pyrokar_Todo		(C_INFO)
 {
@@ -401,16 +401,16 @@ func int DIA_Pyrokar_Todo_Condition ()
 };
 func void DIA_Pyrokar_Todo_Info ()
 {
-	AI_Output (self, other, "DIA_Pyrokar_Todo_11_00"); //Prošel jsi zkouškou, kterou jsem ti pâichystal.
+	AI_Output (self, other, "DIA_Pyrokar_Todo_11_00"); //ProÅ¡el jsi zkouÅ¡kou, kterou jsem ti pÃ¢ichystal.
 	AI_Output (self, other, "DIA_Pyrokar_Todo_11_01"); //Ale...
 	
 	if (MIS_RUNE  != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Pyrokar_Todo_11_02"); //...ale ještê musíš splnit Uthlarùv úkol.
+		AI_Output (self, other, "DIA_Pyrokar_Todo_11_02"); //...ale jeÅ¡tÄ™ musÃ­Å¡ splnit UthlarÅ¯v Ãºkol.
 	};
 	if (MIS_GOLEM != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Pyrokar_Todo_11_03"); //...ještê musíš dokonèit Serpentùv test.
+		AI_Output (self, other, "DIA_Pyrokar_Todo_11_03"); //...jeÅ¡tÄ™ musÃ­Å¡ dokonÄit SerpentÅ¯v test.
 	};
 	AI_StopProcessInfos (self); 
 };
@@ -424,7 +424,7 @@ instance DIA_Pyrokar_MAGICAN		(C_INFO)
 	condition	 = 	DIA_Pyrokar_MAGICAN_Condition;
 	information	 = 	DIA_Pyrokar_MAGICAN_Info;
 	permanent	 =  FALSE;
-	description	 = 	"A budu teë pâijat do spoleèenstva mágù?";
+	description	 = 	"A budu teÃ« pÃ¢ijat do spoleÄenstva mÃ¡gÅ¯?";
 };
 
 func int DIA_Pyrokar_MAGICAN_Condition ()
@@ -439,10 +439,10 @@ func int DIA_Pyrokar_MAGICAN_Condition ()
 };
 func void DIA_Pyrokar_MAGICAN_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_MAGICAN_15_00"); //A budu teë pâijat do spoleèenstva mágù?
-	AI_Output (self, other, "DIA_Pyrokar_MAGICAN_11_01"); //Dokázal jsi to. Prošel jsi zkouškou ohnê. Celou dobu jsme si tvım úspêchem byli jistí.
-	AI_Output (self, other, "DIA_Pyrokar_MAGICAN_11_02"); //(neústupnê) Tak jako je jisté, e ze sebe vydáš to nejlepší, aby ses mohl stát ctihodnım sluebníkem Innose.
-	AI_Output (self, other, "DIA_Pyrokar_MAGICAN_11_03"); //Take pokud jsi pâipraven sloit Pâísahu ohnê, pâijmeme tê mezi sebe jako mága.
+	AI_Output (other, self, "DIA_Pyrokar_MAGICAN_15_00"); //A budu teÃ« pÃ¢ijat do spoleÄenstva mÃ¡gÅ¯?
+	AI_Output (self, other, "DIA_Pyrokar_MAGICAN_11_01"); //DokÃ¡zal jsi to. ProÅ¡el jsi zkouÅ¡kou ohnÄ™. Celou dobu jsme si tvÃ½m ÃºspÄ™chem byli jistÃ­.
+	AI_Output (self, other, "DIA_Pyrokar_MAGICAN_11_02"); //(neÃºstupnÄ™) Tak jako je jistÃ©, Å¾e ze sebe vydÃ¡Å¡ to nejlepÅ¡Ã­, aby ses mohl stÃ¡t ctihodnÃ½m sluÅ¾ebnÃ­kem Innose.
+	AI_Output (self, other, "DIA_Pyrokar_MAGICAN_11_03"); //TakÅ¾e pokud jsi pÃ¢ipraven sloÅ¾it PÃ¢Ã­sahu ohnÄ™, pÃ¢ijmeme tÄ™ mezi sebe jako mÃ¡ga.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -455,7 +455,7 @@ instance DIA_Pyrokar_OATH		(C_INFO)
 	condition	 = 	DIA_Pyrokar_OATH_Condition;
 	information	 = 	DIA_Pyrokar_OATH_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Jsem pâipraven vstoupit do kruhu ohnê.";
+	description	 = 	"Jsem pÃ¢ipraven vstoupit do kruhu ohnÄ™.";
 };
 func int DIA_Pyrokar_OATH_Condition ()
 {	
@@ -467,17 +467,17 @@ func int DIA_Pyrokar_OATH_Condition ()
 };
 func void DIA_Pyrokar_OATH_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_OATH_15_00"); //Jsem pâipraven vstoupit do kruhu ohnê.
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_01"); //Dobrá, tak slo posvátnou Pâísahu ohnê.
+	AI_Output (other, self, "DIA_Pyrokar_OATH_15_00"); //Jsem pÃ¢ipraven vstoupit do kruhu ohnÄ™.
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_01"); //DobrÃ¡, tak sloÅ¾ posvÃ¡tnou PÃ¢Ã­sahu ohnÄ™.
 	
 
 
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_02"); //(vánê) Pâísaháš pâed Innosem, kterı je naším Všemohoucím, jeho sluebníky a Svatım plamenem...
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_03"); //...e od nynêjška navdy bude celı tvùj ivot zasvêcen ohni...
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_04"); //...dokud tvé têlo a tvá duše nenalezne odpoèinku v jeho svatıch komnatách a plamen tvého ivota nevyhasne?
-	AI_Output (other, self, "DIA_Pyrokar_OATH_15_05"); //Pâísahám.
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_06"); //Vyâèením slov pâísahy jsi vstoupil do svazku s ohnêm.
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_07"); //Nos tuto róbu jako symbol vêèného pouta.
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_02"); //(vÃ¡Å¾nÄ™) PÃ¢Ã­sahÃ¡Å¡ pÃ¢ed Innosem, kterÃ½ je naÅ¡Ã­m VÅ¡emohoucÃ­m, jeho sluÅ¾ebnÃ­ky a SvatÃ½m plamenem...
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_03"); //...Å¾e od nynÄ™jÅ¡ka navÅ¾dy bude celÃ½ tvÅ¯j Å¾ivot zasvÄ™cen ohni...
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_04"); //...dokud tvÃ© tÄ™lo a tvÃ¡ duÅ¡e nenalezne odpoÄinku v jeho svatÃ½ch komnatÃ¡ch a plamen tvÃ©ho Å¾ivota nevyhasne?
+	AI_Output (other, self, "DIA_Pyrokar_OATH_15_05"); //PÃ¢Ã­sahÃ¡m.
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_06"); //VyÃ¢ÄenÃ­m slov pÃ¢Ã­sahy jsi vstoupil do svazku s ohnÄ™m.
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_07"); //Nos tuto rÃ³bu jako symbol vÄ™ÄnÃ©ho pouta.
 	
 	CreateInvItems 		(hero,ITAR_KDF_L,1);
 	AI_EquipArmor		(hero,ITAR_KDF_L);		
@@ -487,7 +487,7 @@ func void DIA_Pyrokar_OATH_Info ()
 	
 	Npc_SetTrueGuild (other, GIL_KDF);
 	
-	Fire_Contest = TRUE;//fürs Log
+	Fire_Contest = TRUE;//fÃ¼rs Log
 	
 	Snd_Play ("LEVELUP"); 
 	
@@ -497,9 +497,9 @@ func void DIA_Pyrokar_OATH_Info ()
 	B_GivePlayerXP (XP_BecomeMage);
 	
 	
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_08"); //Teë, kdy jsme tê pâijali mezi nás, si mùeš promluvit s lordem Hagenem, nejvyšším velitelem paladinù.
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_09"); //Rovnê bychom velmi rádi vêdêli, jak on hodnotí situaci. Take je ti dovoleno odejít do Khorinidu.
-	AI_Output (self, other, "DIA_Pyrokar_OATH_11_10"); //Oèekáváme, e nám odpovêë doneseš neprodlenê.
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_08"); //TeÃ«, kdyÅ¾ jsme tÄ™ pÃ¢ijali mezi nÃ¡s, si mÅ¯Å¾eÅ¡ promluvit s lordem Hagenem, nejvyÅ¡Å¡Ã­m velitelem paladinÅ¯.
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_09"); //RovnÄ™Å¾ bychom velmi rÃ¡di vÄ™dÄ™li, jak on hodnotÃ­ situaci. TakÅ¾e je ti dovoleno odejÃ­t do Khorinidu.
+	AI_Output (self, other, "DIA_Pyrokar_OATH_11_10"); //OÄekÃ¡vÃ¡me, Å¾e nÃ¡m odpovÄ™Ã« doneseÅ¡ neprodlenÄ™.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info  Lernen
@@ -511,7 +511,7 @@ instance DIA_Pyrokar_Lernen		(C_INFO)
 	condition	 = 	DIA_Pyrokar_Lernen_Condition;
 	information	 = 	DIA_Pyrokar_Lernen_Info;
 	PERMANENT	 =  FALSE;
-	description	 = 	"Co se mohu nauèit teë?";
+	description	 = 	"Co se mohu nauÄit teÃ«?";
 };
 func int DIA_Pyrokar_Lernen_Condition ()
 {	
@@ -522,22 +522,22 @@ func int DIA_Pyrokar_Lernen_Condition ()
 };
 func void DIA_Pyrokar_Lernen_Info ()
 {
-	AI_Output	(other, self, "DIA_Pyrokar_Lernen_15_00"); //Co všechno se teë mùu nauèit?
-	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_01"); //Hlavnê máš teë právo dozvêdêt se vše, co se tıká magickıch kruhù. Dají ti moc, kterou budeš potâebovat k pouívání magickıch run.
-	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_02"); //Èím vyššího magického kruhu dosáhneš, tím silnêjší kouzla budeš moci pouívat.
-	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_03"); //Od bratrù v klášteâe se mùeš nauèit magickım formulím. Kadı z nich se zamêâuje na urèitou oblast, o které tê mùe hodnê nauèit.
-	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_04"); //Napâíklad Karras je mistrem vzıvání a vyvolávání. Hyglas tê zase zasvêtí do ohnivé magie.
-	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_05"); //Nikdo toho o síle mrazu neví víc ne Marduk. Parlan tê mùe nauèit všechna ostatní zaklínadla - a zasvêtí tê do prvních kruhù.
-	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_06"); //Ale mohou tê nauèit jen magickım formulím - runy si budeš muset vyrobit sám.
+	AI_Output	(other, self, "DIA_Pyrokar_Lernen_15_00"); //Co vÅ¡echno se teÃ« mÅ¯Å¾u nauÄit?
+	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_01"); //HlavnÄ™ mÃ¡Å¡ teÃ« prÃ¡vo dozvÄ™dÄ™t se vÅ¡e, co se tÃ½kÃ¡ magickÃ½ch kruhÅ¯. DajÃ­ ti moc, kterou budeÅ¡ potÃ¢ebovat k pouÅ¾Ã­vÃ¡nÃ­ magickÃ½ch run.
+	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_02"); //ÄŒÃ­m vyÅ¡Å¡Ã­ho magickÃ©ho kruhu dosÃ¡hneÅ¡, tÃ­m silnÄ™jÅ¡Ã­ kouzla budeÅ¡ moci pouÅ¾Ã­vat.
+	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_03"); //Od bratrÅ¯ v klÃ¡Å¡teÃ¢e se mÅ¯Å¾eÅ¡ nauÄit magickÃ½m formulÃ­m. KaÅ¾dÃ½ z nich se zamÄ™Ã¢uje na urÄitou oblast, o kterÃ© tÄ™ mÅ¯Å¾e hodnÄ™ nauÄit.
+	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_04"); //NapÃ¢Ã­klad Karras je mistrem vzÃ½vÃ¡nÃ­ a vyvolÃ¡vÃ¡nÃ­. Hyglas tÄ™ zase zasvÄ™tÃ­ do ohnivÃ© magie.
+	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_05"); //Nikdo toho o sÃ­le mrazu nevÃ­ vÃ­c neÅ¾ Marduk. Parlan tÄ™ mÅ¯Å¾e nauÄit vÅ¡echna ostatnÃ­ zaklÃ­nadla - a zasvÄ™tÃ­ tÄ™ do prvnÃ­ch kruhÅ¯.
+	AI_Output	(self, other, "DIA_Pyrokar_Lernen_11_06"); //Ale mohou tÄ™ nauÄit jen magickÃ½m formulÃ­m - runy si budeÅ¡ muset vyrobit sÃ¡m.
 	
 	Log_CreateTopic (Topic_KlosterTeacher,LOG_NOTE);
 	
-	B_LogEntry (Topic_KlosterTeacher,"Mistr Parlan mê uvede do prvních magickıch kruhù.");
+	B_LogEntry (Topic_KlosterTeacher,"Mistr Parlan mÄ™ uvede do prvnÃ­ch magickÃ½ch kruhÅ¯.");
 	
-	B_LogEntry (Topic_KlosterTeacher,"Bratr Karras vyuèuje formule pro invokaèní a vyvolávací kouzla.");
-	B_LogEntry (Topic_KlosterTeacher,"Bratr Hyglas mi pâiblíí tajemství ohnê.");
-	B_LogEntry (Topic_KlosterTeacher,"Bratr Marduk mê seznámí s mocí ledu a bouâí.");
-	B_LogEntry (Topic_KlosterTeacher,"Bratr Parlan vyuèuje rùzné další formule.");
+	B_LogEntry (Topic_KlosterTeacher,"Bratr Karras vyuÄuje formule pro invokaÄnÃ­ a vyvolÃ¡vacÃ­ kouzla.");
+	B_LogEntry (Topic_KlosterTeacher,"Bratr Hyglas mi pÃ¢iblÃ­Å¾Ã­ tajemstvÃ­ ohnÄ™.");
+	B_LogEntry (Topic_KlosterTeacher,"Bratr Marduk mÄ™ seznÃ¡mÃ­ s mocÃ­ ledu a bouÃ¢Ã­.");
+	B_LogEntry (Topic_KlosterTeacher,"Bratr Parlan vyuÄuje rÅ¯znÃ© dalÅ¡Ã­ formule.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -550,7 +550,7 @@ instance DIA_Pyrokar_Wunsch		(C_INFO)
 	condition	 = 	DIA_Pyrokar_Wunsch_Condition;
 	information	 = 	DIA_Pyrokar_Wunsch_Info;
 	PERMANENT	 =  FALSE;
-	description	 = 	"Chtêl bych vyslovit své pâání.";
+	description	 = 	"ChtÄ™l bych vyslovit svÃ© pÃ¢Ã¡nÃ­.";
 };
 func int DIA_Pyrokar_Wunsch_Condition ()
 {	
@@ -562,24 +562,24 @@ func int DIA_Pyrokar_Wunsch_Condition ()
 };
 func void DIA_Pyrokar_Wunsch_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_Wunsch_15_00"); //Chtêl bych vyslovit jedno pâání.
-	AI_Output (self, other, "DIA_Pyrokar_Wunsch_11_01"); //Poté, co je kadı mág pâijat do Spoleèenstva, má právo prvního skutku.
-	AI_Output (self, other, "DIA_Pyrokar_Wunsch_11_02"); //Tak co udêláš jako první vêc v roli mága?
+	AI_Output (other, self, "DIA_Pyrokar_Wunsch_15_00"); //ChtÄ™l bych vyslovit jedno pÃ¢Ã¡nÃ­.
+	AI_Output (self, other, "DIA_Pyrokar_Wunsch_11_01"); //PotÃ©, co je kaÅ¾dÃ½ mÃ¡g pÃ¢ijat do SpoleÄenstva, mÃ¡ prÃ¡vo prvnÃ­ho skutku.
+	AI_Output (self, other, "DIA_Pyrokar_Wunsch_11_02"); //Tak co udÄ™lÃ¡Å¡ jako prvnÃ­ vÄ™c v roli mÃ¡ga?
 	
 	
 	Info_ClearChoices (DIA_Pyrokar_Wunsch);
 	Info_AddChoice (DIA_Pyrokar_Wunsch,"Nic.",DIA_Pyrokar_Wunsch_Nothing);
 	if (MIS_HelpBabo == LOG_RUNNING)
 	{
-		Info_AddChoice (DIA_Pyrokar_Wunsch,"Nechã se novım klášterním zahradníkem stane Babo.",DIA_Pyrokar_Wunsch_Babo);
+		Info_AddChoice (DIA_Pyrokar_Wunsch,"NechÄƒ se novÃ½m klÃ¡Å¡ternÃ­m zahradnÃ­kem stane Babo.",DIA_Pyrokar_Wunsch_Babo);
 	};
 	if (MIS_HelpOpolos == LOG_RUNNING )
 	{
-		Info_AddChoice (DIA_Pyrokar_Wunsch,"Aã má novic Opolos pâístup do knihovny.",DIA_Pyrokar_Wunsch_Opolos);
+		Info_AddChoice (DIA_Pyrokar_Wunsch,"AÄƒ mÃ¡ novic Opolos pÃ¢Ã­stup do knihovny.",DIA_Pyrokar_Wunsch_Opolos);
 	};
 	if (MIS_HelpDyrian == LOG_RUNNING)
 	{
-		Info_AddChoice (DIA_Pyrokar_Wunsch,"Kdyby tak Dyrian zùstal i nadále v klášteâe.",DIA_Pyrokar_Wunsch_Dyrian);
+		Info_AddChoice (DIA_Pyrokar_Wunsch,"Kdyby tak Dyrian zÅ¯stal i nadÃ¡le v klÃ¡Å¡teÃ¢e.",DIA_Pyrokar_Wunsch_Dyrian);
 	};
 };
 
@@ -587,7 +587,7 @@ FUNC VOID DIA_Pyrokar_Wunsch_Nothing ()
 {
 	AI_Teleport (Dyrian,"TAVERNE");
 	AI_Output (other,self ,"DIA_Pyrokar_Wunsch_Nothing_15_00"); //Nic.
-	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Nothing_11_01"); //(uasle) Tak tedy budi. Novı mág se vzdal svého èinu.
+	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Nothing_11_01"); //(uÅ¾asle) Tak tedy budiÅ¾. NovÃ½ mÃ¡g se vzdal svÃ©ho Äinu.
 	
 	B_StartOtherRoutine (Dyrian,"NOFAVOUR");
 	
@@ -611,9 +611,9 @@ FUNC VOID DIA_Pyrokar_Wunsch_Nothing ()
 
 FUNC VOID DIA_Pyrokar_Wunsch_Dyrian ()
 {
-	AI_Output (other,self ,"DIA_Pyrokar_Wunsch_Dyrian_15_00"); //Aã novic Dyrian zùstane v klášteâe.
-	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Dyrian_11_01"); //Jak si pâeješ.
-	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Dyrian_11_02"); //Novicovi bude dovoleno zùstat v klášteâe a bude zastávat funkci zahradníka, která je právê k dispozici.
+	AI_Output (other,self ,"DIA_Pyrokar_Wunsch_Dyrian_15_00"); //AÄƒ novic Dyrian zÅ¯stane v klÃ¡Å¡teÃ¢e.
+	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Dyrian_11_01"); //Jak si pÃ¢ejeÅ¡.
+	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Dyrian_11_02"); //Novicovi bude dovoleno zÅ¯stat v klÃ¡Å¡teÃ¢e a bude zastÃ¡vat funkci zahradnÃ­ka, kterÃ¡ je prÃ¡vÄ™ k dispozici.
 	
 	B_GivePlayerXP (XP_HelpDyrian);
 	
@@ -636,9 +636,9 @@ FUNC VOID DIA_Pyrokar_Wunsch_Babo ()
 {
 	AI_Teleport (Dyrian,"TAVERNE");
 	
-	AI_Output (other,self ,"DIA_Pyrokar_Wunsch_Babo_15_00"); //Aã se novic Babo stará o klášterní zahradu.
-	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Babo_11_01"); //Jak si pâeješ.
-	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Babo_11_02"); //Novicovi Babovi se s okamitou platností svêâuje do péèe klášterní zahrada.
+	AI_Output (other,self ,"DIA_Pyrokar_Wunsch_Babo_15_00"); //AÄƒ se novic Babo starÃ¡ o klÃ¡Å¡ternÃ­ zahradu.
+	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Babo_11_01"); //Jak si pÃ¢ejeÅ¡.
+	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Babo_11_02"); //Novicovi Babovi se s okamÅ¾itou platnostÃ­ svÄ™Ã¢uje do pÃ©Äe klÃ¡Å¡ternÃ­ zahrada.
 	
 	B_GivePlayerXP (XP_HelpBabo);
 	
@@ -663,9 +663,9 @@ FUNC VOID DIA_Pyrokar_Wunsch_Opolos ()
 {
 	AI_Teleport (Dyrian,"TAVERNE");
 	
-	AI_Output (other,self ,"DIA_Pyrokar_Wunsch_Opolos_15_00"); //Aã má novic Opolos pâístup do knihovny.
-	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Opolos_11_01"); //Jak si pâeješ.
-	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Opolos_11_02"); //Odteë mùe novic Opolos studovat Innosovo písmo.
+	AI_Output (other,self ,"DIA_Pyrokar_Wunsch_Opolos_15_00"); //AÄƒ mÃ¡ novic Opolos pÃ¢Ã­stup do knihovny.
+	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Opolos_11_01"); //Jak si pÃ¢ejeÅ¡.
+	AI_Output (self ,other,"DIA_Pyrokar_Wunsch_Opolos_11_02"); //OdteÃ« mÅ¯Å¾e novic Opolos studovat Innosovo pÃ­smo.
 	
 	B_GivePlayerXP (XP_HelpOpolos);
 	
@@ -695,7 +695,7 @@ instance DIA_Pyrokar_Nachricht		(C_INFO)
 	condition	 = 	DIA_Pyrokar_Nachricht_Condition;
 	information	 = 	DIA_Pyrokar_Nachricht_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Pâináším zprávy od lorda Hagena...";
+	description	 = 	"PÃ¢inÃ¡Å¡Ã­m zprÃ¡vy od lorda Hagena...";
 };
 func int DIA_Pyrokar_Nachricht_Condition ()
 {	
@@ -707,14 +707,14 @@ func int DIA_Pyrokar_Nachricht_Condition ()
 };
 func void DIA_Pyrokar_Nachricht_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_Nachricht_15_00"); //Mám zprávy od lorda Hagena. Poaduje dùkazy o pâítomnosti drakù a armády zla.
+	AI_Output (other, self, "DIA_Pyrokar_Nachricht_15_00"); //MÃ¡m zprÃ¡vy od lorda Hagena. PoÅ¾aduje dÅ¯kazy o pÃ¢Ã­tomnosti drakÅ¯ a armÃ¡dy zla.
 	
 	if (EnterOW_Kapitel2 == FALSE)
 	{
 		AI_Teleport (Sergio,"NW_MONASTERY_PLACE_09");
-		AI_Output (other, self, "DIA_Pyrokar_Nachricht_15_01"); //Take vyrazím do Hornického údolí a pâinesu jim ten dùkaz.
-		AI_Output (self, other, "DIA_Pyrokar_Nachricht_11_02"); //Dobrá. Tak tedy splà tento úkol. Paladin Sergio tê doprovodí do prùsmyku.
-		AI_Output (self, other, "DIA_Pyrokar_Nachricht_11_03"); //Nechã tê Innos ochraàuje.
+		AI_Output (other, self, "DIA_Pyrokar_Nachricht_15_01"); //TakÅ¾e vyrazÃ­m do HornickÃ©ho ÃºdolÃ­ a pÃ¢inesu jim ten dÅ¯kaz.
+		AI_Output (self, other, "DIA_Pyrokar_Nachricht_11_02"); //DobrÃ¡. Tak tedy splÅ• tento Ãºkol. Paladin Sergio tÄ™ doprovodÃ­ do prÅ¯smyku.
+		AI_Output (self, other, "DIA_Pyrokar_Nachricht_11_03"); //NechÄƒ tÄ™ Innos ochraÅ•uje.
 		
 		Sergio_Follow = TRUE;
 		AI_StopProcessInfos (self);
@@ -722,9 +722,9 @@ func void DIA_Pyrokar_Nachricht_Info ()
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Pyrokar_Nachricht_15_04"); //Take vyrazím pâímo do Hornického údolí.
-		AI_Output (self, other, "DIA_Pyrokar_Nachricht_11_05"); //Dobrá. Jeliko cestu do Hornického údolí u znáš, nebudeš potâebovat ádnı doprovod.
-		AI_Output (self, other, "DIA_Pyrokar_Nachricht_11_06"); //Postarej se o tu záleitost pro lorda Hagena - nechã tê Innos provází.
+		AI_Output (other, self, "DIA_Pyrokar_Nachricht_15_04"); //TakÅ¾e vyrazÃ­m pÃ¢Ã­mo do HornickÃ©ho ÃºdolÃ­.
+		AI_Output (self, other, "DIA_Pyrokar_Nachricht_11_05"); //DobrÃ¡. JelikoÅ¾ cestu do HornickÃ©ho ÃºdolÃ­ uÅ¾ znÃ¡Å¡, nebudeÅ¡ potÃ¢ebovat Å¾Ã¡dnÃ½ doprovod.
+		AI_Output (self, other, "DIA_Pyrokar_Nachricht_11_06"); //Postarej se o tu zÃ¡leÅ¾itost pro lorda Hagena - nechÄƒ tÄ™ Innos provÃ¡zÃ­.
 	};
 
 };
@@ -738,7 +738,7 @@ instance DIA_Pyrokar_TEACH		(C_INFO)
 	condition	 = 	DIA_Pyrokar_TEACH_Condition;
 	information	 = 	DIA_Pyrokar_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Nauè mê poslední magickı kruh.";
+	description	 = 	"NauÄ mÄ™ poslednÃ­ magickÃ½ kruh.";
 };
 func int DIA_Pyrokar_TEACH_Condition ()
 {	
@@ -750,28 +750,28 @@ func int DIA_Pyrokar_TEACH_Condition ()
 };
 func void DIA_Pyrokar_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Pyrokar_TEACH_15_00"); //Nauè mê poslední magickı kruh.
+	AI_Output (other, self, "DIA_Pyrokar_TEACH_15_00"); //NauÄ mÄ™ poslednÃ­ magickÃ½ kruh.
 	
 	if (MIS_SCKnowsWayToIrdorath == TRUE)
 	{
 		if B_TeachMagicCircle (self,other, 6)  
 		{
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_01"); //Uplynulo mnoho èasu od chvíle, co jsi vstoupil do svazku s ohnêm. Pâihodilo se mnohé a na odpoèinek nikdy nebylo pâíliš èasu.
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_02"); //Jsi Innosovım vyvolenım. Proto budeš potâebovat všechnu svou sílu, abys obstál ve všech nadcházejících bitvách.
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_03"); //Teë se ode mê doèkáš zasvêcení, vyvolenı. Vstupuješ do šestého kruhu - šiâ svêtlo a rozptyluj temnotu.
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_04"); //Nyní se ode mê mùeš nauèit magické formule posledního kruhu. Pokud po tom tedy touíš.
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_05"); //Ach. A ještê jedna vêc - chvíli mi trvalo, ne jsem tê poznal.
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_06"); //Mêl jsi u sebe ten dopis, co ti dali, kdy tê uvrhli za bariéru.
-			AI_Output (other, self, "DIA_Pyrokar_TEACH_15_07"); //Ano, ušetâil jsi mi tak spoustu têch soudních âeèí.
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_08"); //A ty jsi Innosovım vyvolenım.
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_09"); //Pâijmi teë ode mê poehnání, ó vyvolenı!
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_10"); //Innosi, svêtlo slunce a ohni svêta, poehnej tomuto mui, tvému vyvolenému sluebníkovi.
-			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_11"); //Dej mu odvahu, sílu a moudrost, aby mohl pâijmout cestu, kterou jsi mu zvolil.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_01"); //Uplynulo mnoho Äasu od chvÃ­le, co jsi vstoupil do svazku s ohnÄ™m. PÃ¢ihodilo se mnohÃ© a na odpoÄinek nikdy nebylo pÃ¢Ã­liÅ¡ Äasu.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_02"); //Jsi InnosovÃ½m vyvolenÃ½m. Proto budeÅ¡ potÃ¢ebovat vÅ¡echnu svou sÃ­lu, abys obstÃ¡l ve vÅ¡ech nadchÃ¡zejÃ­cÃ­ch bitvÃ¡ch.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_03"); //TeÃ« se ode mÄ™ doÄkÃ¡Å¡ zasvÄ™cenÃ­, vyvolenÃ½. VstupujeÅ¡ do Å¡estÃ©ho kruhu - Å¡iÃ¢ svÄ™tlo a rozptyluj temnotu.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_04"); //NynÃ­ se ode mÄ™ mÅ¯Å¾eÅ¡ nauÄit magickÃ© formule poslednÃ­ho kruhu. Pokud po tom tedy touÅ¾Ã­Å¡.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_05"); //Ach. A jeÅ¡tÄ™ jedna vÄ™c - chvÃ­li mi trvalo, neÅ¾ jsem tÄ™ poznal.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_06"); //MÄ™l jsi u sebe ten dopis, co ti dali, kdyÅ¾ tÄ™ uvrhli za bariÃ©ru.
+			AI_Output (other, self, "DIA_Pyrokar_TEACH_15_07"); //Ano, uÅ¡etÃ¢il jsi mi tak spoustu tÄ™ch soudnÃ­ch Ã¢eÄÃ­.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_08"); //A ty jsi InnosovÃ½m vyvolenÃ½m.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_09"); //PÃ¢ijmi teÃ« ode mÄ™ poÅ¾ehnÃ¡nÃ­, Ã³ vyvolenÃ½!
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_10"); //Innosi, svÄ™tlo slunce a ohni svÄ™ta, poÅ¾ehnej tomuto muÅ¾i, tvÃ©mu vyvolenÃ©mu sluÅ¾ebnÃ­kovi.
+			AI_Output (self, other, "DIA_Pyrokar_TEACH_11_11"); //Dej mu odvahu, sÃ­lu a moudrost, aby mohl pÃ¢ijmout cestu, kterou jsi mu zvolil.
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pyrokar_TEACH_11_12"); //Èas ještê nenadešel. Jakmile po cestê, kterou ti Innos ukazuje, dojdeš trochu dál, pak tê zaènu uèit.
+		AI_Output (self, other, "DIA_Pyrokar_TEACH_11_12"); //ÄŒas jeÅ¡tÄ™ nenadeÅ¡el. Jakmile po cestÄ™, kterou ti Innos ukazuje, dojdeÅ¡ trochu dÃ¡l, pak tÄ™ zaÄnu uÄit.
 	};
 	
 };
@@ -785,7 +785,7 @@ instance DIA_Pyrokar_SPELLS		(C_INFO)
 	condition	 = 	DIA_Pyrokar_SPELLS_Condition;
 	information	 = 	DIA_Pyrokar_SPELLS_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Instruuj mê (vytvoâení run)";
+	description	 = 	"Instruuj mÄ™ (vytvoÃ¢enÃ­ run)";
 };
 func int DIA_Pyrokar_SPELLS_Condition ()
 {	
@@ -798,7 +798,7 @@ func void DIA_Pyrokar_SPELLS_Info ()
 {
 	var int abletolearn;
 	abletolearn = 0;
-	AI_Output (other, self, "DIA_Pyrokar_SPELLS_15_00"); //Nauè mê nêèemu.
+	AI_Output (other, self, "DIA_Pyrokar_SPELLS_15_00"); //NauÄ mÄ™ nÄ™Äemu.
 	
 	Info_ClearChoices 	(DIA_Pyrokar_SPELLS);
 	Info_AddChoice		(DIA_Pyrokar_SPELLS, DIALOG_BACK, DIA_Pyrokar_SPELLS_BACK);
@@ -825,7 +825,7 @@ func void DIA_Pyrokar_SPELLS_Info ()
 	};
 	if (abletolearn < 1)
 	{
-		AI_Output (self, other, "DIA_Pyrokar_SPELLS_11_01"); //Není nic dalšího, èemu bych tê mohl ještê nauèit.
+		AI_Output (self, other, "DIA_Pyrokar_SPELLS_11_01"); //NenÃ­ nic dalÅ¡Ã­ho, Äemu bych tÄ™ mohl jeÅ¡tÄ™ nauÄit.
 	};
 };
 FUNC VOID DIA_Pyrokar_SPELLS_BACK()
@@ -858,7 +858,7 @@ instance DIA_Pyrokar_Parlan		(C_INFO)
 	condition	 = 	DIA_Pyrokar_Parlan_Condition;
 	information	 = 	DIA_Pyrokar_Parlan_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Posílá mê Parlan.";
+	description	 = 	"PosÃ­lÃ¡ mÄ™ Parlan.";
 };
 func int DIA_Pyrokar_Parlan_Condition ()
 {	
@@ -872,8 +872,8 @@ func int DIA_Pyrokar_Parlan_Condition ()
 };
 func void DIA_Pyrokar_Parlan_Info ()
 {
-		AI_Output (other, self, "DIA_Pyrokar_Parlan_15_00"); //Posílá mê Parlan. Chtêl bych posílit svoji magickou moc.
-		AI_Output (self, other, "DIA_Pyrokar_Parlan_11_01"); //Dobrá, u ses dost nauèil a znaènê jsi zesílil. Odteë se budeš uèit ode mê.
+		AI_Output (other, self, "DIA_Pyrokar_Parlan_15_00"); //PosÃ­lÃ¡ mÄ™ Parlan. ChtÄ™l bych posÃ­lit svoji magickou moc.
+		AI_Output (self, other, "DIA_Pyrokar_Parlan_11_01"); //DobrÃ¡, uÅ¾ ses dost nauÄil a znaÄnÄ™ jsi zesÃ­lil. OdteÃ« se budeÅ¡ uÄit ode mÄ™.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH MANA
@@ -885,7 +885,7 @@ instance DIA_Pyrokar_TEACH_MANA		(C_INFO)
 	condition	 = 	DIA_Pyrokar_TEACH_MANA_Condition;
 	information	 = 	DIA_Pyrokar_TEACH_MANA_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chtêl bych posílit svoji magickou moc.";
+	description	 = 	"ChtÄ™l bych posÃ­lit svoji magickou moc.";
 };
 func int DIA_Pyrokar_TEACH_MANA_Condition ()
 {	
@@ -899,7 +899,7 @@ func int DIA_Pyrokar_TEACH_MANA_Condition ()
 };
 func void DIA_Pyrokar_TEACH_MANA_Info ()
 {
-		AI_Output (other, self, "DIA_Pyrokar_TEACH_MANA_15_00"); //Chtêl bych posílit svoji magickou moc.
+		AI_Output (other, self, "DIA_Pyrokar_TEACH_MANA_15_00"); //ChtÄ™l bych posÃ­lit svoji magickou moc.
 		
 		Info_ClearChoices   (DIA_Pyrokar_TEACH_MANA);	
 		Info_AddChoice 		(DIA_Pyrokar_TEACH_MANA,DIALOG_BACK,DIA_Pyrokar_TEACH_MANA_BACK);		
@@ -910,7 +910,7 @@ FUNC VOID DIA_Pyrokar_TEACH_MANA_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= 250)  
 	{
-		AI_Output (self, other, "DIA_Pyrokar_TEACH_MANA_11_00"); //Cítím, e tebou magická moc prochází v plné síle. Dokonce u nejsem schopen ti ukázat, jak bys ji mohl ještê více posílit.
+		AI_Output (self, other, "DIA_Pyrokar_TEACH_MANA_11_00"); //CÃ­tÃ­m, Å¾e tebou magickÃ¡ moc prochÃ¡zÃ­ v plnÃ© sÃ­le. Dokonce uÅ¾ nejsem schopen ti ukÃ¡zat, jak bys ji mohl jeÅ¡tÄ™ vÃ­ce posÃ­lit.
 	};
 	
 	Info_ClearChoices   (DIA_Pyrokar_TEACH_MANA);	
@@ -943,7 +943,7 @@ instance DIA_Pyrokar_PERM		(C_INFO)
 	condition	 = 	DIA_Pyrokar_PERM_Condition;
 	information	 = 	DIA_Pyrokar_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"(Poehnání)";
+	description	 = 	"(PoÅ¾ehnÃ¡nÃ­)";
 };
 func int DIA_Pyrokar_PERM_Condition ()
 {	
@@ -956,21 +956,21 @@ func void DIA_Pyrokar_PERM_Info ()
 {
 	if (hero.guild == GIL_KDF)
 			{
-				AI_Output			(other, self, "DIA_Pyrokar_PERM_15_00"); //Poehnej mi, Pane.
+				AI_Output			(other, self, "DIA_Pyrokar_PERM_15_00"); //PoÅ¾ehnej mi, Pane.
 			}
 		else
 			{
-				AI_Output			(other, self, "DIA_Pyrokar_PERM_15_01"); //Co takhle malé poehnání? Opravdu by se mi hodilo.
+				AI_Output			(other, self, "DIA_Pyrokar_PERM_15_01"); //Co takhle malÃ© poÅ¾ehnÃ¡nÃ­? Opravdu by se mi hodilo.
 			};
 		
 	if (Kapitel == 5)	
 	&& 	(MIS_PyrokarClearDemonTower == LOG_SUCCESS)
 			{
-				AI_Output			(self, other, "DIA_Pyrokar_PERM_11_02"); //Nechã je tvá poslední bitva proti našemu arcinepâíteli korunována úspêchem. Innos buë s tebou.
+				AI_Output			(self, other, "DIA_Pyrokar_PERM_11_02"); //NechÄƒ je tvÃ¡ poslednÃ­ bitva proti naÅ¡emu arcinepÃ¢Ã­teli korunovÃ¡na ÃºspÄ™chem. Innos buÃ« s tebou.
 			}
 		else
 			{
-				AI_Output			(self, other, "DIA_Pyrokar_PERM_11_03"); //Nechã je Innos s tebou a zaehná všechny pekelné cesty, které se ti otevâou.
+				AI_Output			(self, other, "DIA_Pyrokar_PERM_11_03"); //NechÄƒ je Innos s tebou a zaÅ¾ehnÃ¡ vÅ¡echny pekelnÃ© cesty, kterÃ© se ti otevÃ¢ou.
 			};
 };
 
@@ -1017,7 +1017,7 @@ instance DIA_Pyrokar_BACKFROMOW		(C_INFO)
 	condition	 = 	DIA_Pyrokar_BACKFROMOW_Condition;
 	information	 = 	DIA_Pyrokar_BACKFROMOW_Info;
 
-	description	 = 	"Pâicházím z Hornického údolí.";
+	description	 = 	"PÃ¢ichÃ¡zÃ­m z HornickÃ©ho ÃºdolÃ­.";
 };
 
 func int DIA_Pyrokar_BACKFROMOW_Condition ()
@@ -1030,35 +1030,35 @@ func int DIA_Pyrokar_BACKFROMOW_Condition ()
 
 func void DIA_Pyrokar_BACKFROMOW_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_BACKFROMOW_15_00"); //Pâicházím z Hornického údolí.
-	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_01"); //Co pâinášíš za zprávy?
-	AI_Output			(other, self, "DIA_Pyrokar_BACKFROMOW_15_02"); //Nepâítel se spojil se skâetí armádou a s draky.
-	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_03"); //To u jsme se dozvêdêli od Miltena - ale co královskı náklad rudy?
-	AI_Output			(other, self, "DIA_Pyrokar_BACKFROMOW_15_04"); //Doly, ve kterıch se têilo pro Garonda, nemohou uspokojit královy poadavky.
-	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_05"); //Dny jsou stále zastâenêjší a sluneèní svêtlo slábne.
-	AI_Output			(other, self, "DIA_Pyrokar_BACKFROMOW_15_06"); //Byl jsem napaden mui v èernıch kápích.
-	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_07"); //Já vím. To jsou Pátraèi. Nohsledi z Beliarovy podsvêtní âíše. Snaí se nad tebou získat moc.
-	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_08"); //Jakmile se tê zmocní, u to nebudeš ty. Jedinê tady v klášteâe ti pak bude pomoci. Take buë opatrnı.
+	AI_Output			(other, self, "DIA_Pyrokar_BACKFROMOW_15_00"); //PÃ¢ichÃ¡zÃ­m z HornickÃ©ho ÃºdolÃ­.
+	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_01"); //Co pÃ¢inÃ¡Å¡Ã­Å¡ za zprÃ¡vy?
+	AI_Output			(other, self, "DIA_Pyrokar_BACKFROMOW_15_02"); //NepÃ¢Ã­tel se spojil se skÃ¢etÃ­ armÃ¡dou a s draky.
+	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_03"); //To uÅ¾ jsme se dozvÄ™dÄ™li od Miltena - ale co krÃ¡lovskÃ½ nÃ¡klad rudy?
+	AI_Output			(other, self, "DIA_Pyrokar_BACKFROMOW_15_04"); //Doly, ve kterÃ½ch se tÄ™Å¾ilo pro Garonda, nemohou uspokojit krÃ¡lovy poÅ¾adavky.
+	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_05"); //Dny jsou stÃ¡le zastÃ¢enÄ™jÅ¡Ã­ a sluneÄnÃ­ svÄ™tlo slÃ¡bne.
+	AI_Output			(other, self, "DIA_Pyrokar_BACKFROMOW_15_06"); //Byl jsem napaden muÅ¾i v ÄernÃ½ch kÃ¡pÃ­ch.
+	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_07"); //JÃ¡ vÃ­m. To jsou PÃ¡traÄi. Nohsledi z Beliarovy podsvÄ™tnÃ­ Ã¢Ã­Å¡e. SnaÅ¾Ã­ se nad tebou zÃ­skat moc.
+	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_08"); //Jakmile se tÄ™ zmocnÃ­, uÅ¾ to nebudeÅ¡ ty. JedinÄ™ tady v klÃ¡Å¡teÃ¢e ti pak bude pomoci. TakÅ¾e buÃ« opatrnÃ½.
 	
 	if (hero.guild == GIL_KDF)
 	{
 	Log_CreateTopic (TOPIC_DEMENTOREN, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DEMENTOREN, LOG_RUNNING);
-	B_LogEntry (TOPIC_DEMENTOREN,"Pyrokar mi vyprávêl o pátraèích, muích v èernıch hábitech, kteâí jsou Beliarovımi nohsledy. Varoval mê, e dokáí ovládat a posednout druhé. Mám se vrátit pâímo do kláštera, kdyby se mi to náhodou stalo také."); 
+	B_LogEntry (TOPIC_DEMENTOREN,"Pyrokar mi vyprÃ¡vÄ™l o pÃ¡traÄÃ­ch, muÅ¾Ã­ch v ÄernÃ½ch hÃ¡bitech, kteÃ¢Ã­ jsou BeliarovÃ½mi nohsledy. Varoval mÄ™, Å¾e dokÃ¡Å¾Ã­ ovlÃ¡dat a posednout druhÃ©. MÃ¡m se vrÃ¡tit pÃ¢Ã­mo do klÃ¡Å¡tera, kdyby se mi to nÃ¡hodou stalo takÃ©."); 
 	};
 
 	if ((Npc_IsDead(Karras))==FALSE)
 	&& (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_09"); //Poádal jsem Karrase, aby se na tu záleitost podíval. Urèitê brzy dojde k nêèemu, co nám dopomùe k lepšímu pochopení toho všeho.
+		AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_09"); //PoÅ¾Ã¡dal jsem Karrase, aby se na tu zÃ¡leÅ¾itost podÃ­val. UrÄitÄ™ brzy dojde k nÄ™Äemu, co nÃ¡m dopomÅ¯Å¾e k lepÅ¡Ã­mu pochopenÃ­ toho vÅ¡eho.
 		PyrokarToldKarrasToResearchDMT = TRUE;
-		B_LogEntry (TOPIC_DEMENTOREN,"Pyrokar nakázal Karrasovi, aby se vypoâádal s hrozbou pátraèù."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Pyrokar nakÃ¡zal Karrasovi, aby se vypoÃ¢Ã¡dal s hrozbou pÃ¡traÄÅ¯."); 
 	};
 
-	AI_Output (self ,other, "DIA_Pyrokar_Add_11_00"); //Tady - pokud budeš potâebovat naši pomoc, pâenese tê tahle runa pâímo do kláštera.
+	AI_Output (self ,other, "DIA_Pyrokar_Add_11_00"); //Tady - pokud budeÅ¡ potÃ¢ebovat naÅ¡i pomoc, pÃ¢enese tÄ™ tahle runa pÃ¢Ã­mo do klÃ¡Å¡tera.
 	B_GiveInvItems (self, other, itru_teleportmonastery, 1);
 	
-	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_10"); //Pamatuj, musíme zùstat ostraití, nebo budeme odsouzeni k záhubê.
+	AI_Output			(self, other, "DIA_Pyrokar_BACKFROMOW_11_10"); //Pamatuj, musÃ­me zÅ¯stat ostraÅ¾itÃ­, nebo budeme odsouzeni k zÃ¡hubÄ™.
 
 };
 
@@ -1072,7 +1072,7 @@ instance DIA_Pyrokar_GIVEINNOSEYE		(C_INFO)
 	condition	 = 	DIA_Pyrokar_GIVEINNOSEYE_Condition;
 	information	 = 	DIA_Pyrokar_GIVEINNOSEYE_Info;
 
-	description	 = 	"Pâišel jsem si pro Innosovo oko.";
+	description	 = 	"PÃ¢iÅ¡el jsem si pro Innosovo oko.";
 };
 
 func int DIA_Pyrokar_GIVEINNOSEYE_Condition ()
@@ -1086,17 +1086,17 @@ func int DIA_Pyrokar_GIVEINNOSEYE_Condition ()
 
 func void DIA_Pyrokar_GIVEINNOSEYE_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_GIVEINNOSEYE_15_00"); //Pâišel jsem si pro Innosovo oko.
+	AI_Output			(other, self, "DIA_Pyrokar_GIVEINNOSEYE_15_00"); //PÃ¢iÅ¡el jsem si pro Innosovo oko.
 	B_GiveInvItems 		(other, self, ItWr_PermissionToWearInnosEye_MIS,1);
 	//Joly: hier kein  B_UseFakeScroll();    Pyrokar poppt aus seinem Thron!!!
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_11_01"); //Vidím, e tê lord Hagen povêâil údêlem nést Innosovo oko.
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_11_02"); //Bojím se, e tê musím zklamat. Stali jsme se obêtí zrádného spiknutí nepâítele.
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_11_03"); //Innosovo oko bylo násilnê odebráno z têchto svatıch zdí.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_11_01"); //VidÃ­m, Å¾e tÄ™ lord Hagen povÄ™Ã¢il ÃºdÄ™lem nÃ©st Innosovo oko.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_11_02"); //BojÃ­m se, Å¾e tÄ™ musÃ­m zklamat. Stali jsme se obÄ™tÃ­ zrÃ¡dnÃ©ho spiknutÃ­ nepÃ¢Ã­tele.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_11_03"); //Innosovo oko bylo nÃ¡silnÄ™ odebrÃ¡no z tÄ™chto svatÃ½ch zdÃ­.
 
 	
 	if (hero.guild == GIL_KDF)
 	{
-		Info_AddChoice	(DIA_Pyrokar_GIVEINNOSEYE, "Kdo se opováil, pane?", DIA_Pyrokar_GIVEINNOSEYE_wer );
+		Info_AddChoice	(DIA_Pyrokar_GIVEINNOSEYE, "Kdo se opovÃ¡Å¾il, pane?", DIA_Pyrokar_GIVEINNOSEYE_wer );
 	}
 	else
 	{
@@ -1107,26 +1107,26 @@ func void DIA_Pyrokar_GIVEINNOSEYE_wer ()
 {
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(other, self, "DIA_Pyrokar_GIVEINNOSEYE_wer_15_00"); //Kdo se opováil, pane?
+		AI_Output			(other, self, "DIA_Pyrokar_GIVEINNOSEYE_wer_15_00"); //Kdo se opovÃ¡Å¾il, pane?
 	}
 	else
 	{
 		AI_Output			(other, self, "DIA_Pyrokar_GIVEINNOSEYE_wer_15_01"); //Kdo to byl?
 	};
 
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_02"); //Zlo je vychytralé a vdycky pracuje v utajení. Jen velmi vzácnê se ti podaâí odhalit jeho intriky na denním svêtle.
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_03"); //Ale v têchto dnech je to jiná vêc. Nepâítel se ukazuje zcela otevâenê na ulicích, v kadém domê a na kadém námêstí.
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_04"); //To mùe znamenat jen to, e u se nebojí ádného nepâítele a nezastaví se pâed nièím.
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_05"); //Jeden z našich vêrnıch následovníkù, kandidát na nositele róby vyvolenıch mágù ohnê, neèekanê zmênil pâedmêt své vêrnosti a propadl obyèejùm zla. Pedro.
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_06"); //Nepâítel se zmocnil jeho mysli a pâivedl nás tak ke strašné prohâe.
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_07"); //Pedro se probil našimi nejsvatêjšími komnatami a ukradl Oko.
-	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_08"); //Bojím se, e trávil pâíliš mnoho èasu o samotê mimo klášter, a tedy mimo dosah jeho ochrannıch zdí. Vystavoval se tak mnohému nebezpeèí.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_02"); //Zlo je vychytralÃ© a vÅ¾dycky pracuje v utajenÃ­. Jen velmi vzÃ¡cnÄ™ se ti podaÃ¢Ã­ odhalit jeho intriky na dennÃ­m svÄ™tle.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_03"); //Ale v tÄ™chto dnech je to jinÃ¡ vÄ™c. NepÃ¢Ã­tel se ukazuje zcela otevÃ¢enÄ™ na ulicÃ­ch, v kaÅ¾dÃ©m domÄ™ a na kaÅ¾dÃ©m nÃ¡mÄ™stÃ­.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_04"); //To mÅ¯Å¾e znamenat jen to, Å¾e uÅ¾ se nebojÃ­ Å¾Ã¡dnÃ©ho nepÃ¢Ã­tele a nezastavÃ­ se pÃ¢ed niÄÃ­m.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_05"); //Jeden z naÅ¡ich vÄ™rnÃ½ch nÃ¡sledovnÃ­kÅ¯, kandidÃ¡t na nositele rÃ³by vyvolenÃ½ch mÃ¡gÅ¯ ohnÄ™, neÄekanÄ™ zmÄ™nil pÃ¢edmÄ™t svÃ© vÄ™rnosti a propadl obyÄejÅ¯m zla. Pedro.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_06"); //NepÃ¢Ã­tel se zmocnil jeho mysli a pÃ¢ivedl nÃ¡s tak ke straÅ¡nÃ© prohÃ¢e.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_07"); //Pedro se probil naÅ¡imi nejsvatÄ™jÅ¡Ã­mi komnatami a ukradl Oko.
+	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_08"); //BojÃ­m se, Å¾e trÃ¡vil pÃ¢Ã­liÅ¡ mnoho Äasu o samotÄ™ mimo klÃ¡Å¡ter, a tedy mimo dosah jeho ochrannÃ½ch zdÃ­. Vystavoval se tak mnohÃ©mu nebezpeÄÃ­.
 
-	Pedro.flags = 0;	//Joly: Pedro ist nun mortal und zum Abschuß freigegeben.
-	Pedro_Traitor = TRUE;	//Joly: Pedro ist für den SC nun als Traitor bekannt. Muß hier stehen bleiben und darf nur einmal auf True gesetzt werden
+	Pedro.flags = 0;	//Joly: Pedro ist nun mortal und zum AbschuÃŸ freigegeben.
+	Pedro_Traitor = TRUE;	//Joly: Pedro ist fÃ¼r den SC nun als Traitor bekannt. MuÃŸ hier stehen bleiben und darf nur einmal auf True gesetzt werden
 
- 	B_LogEntry (TOPIC_INNOSEYE, "No to jsem si mohl myslet. Trochu jsem se opozdil a ti zabednênci z kláštera zatím dopustili, aby jim nêjakı novic pâímo pâed nosem vyfoukl Innosovo oko. Teë mi nezbıvá nic jiného, ne jít po tom zrádci Pedrovi a doufat, e je ještê nikomu neprodal.");
- 	B_LogEntry (TOPIC_TraitorPedro, "Innosovo oko ukradl z kláštera zrádce Pedro. Mám pocit, e ohniví mágové by ho a moc rádi dostali do rukou.");
+ 	B_LogEntry (TOPIC_INNOSEYE, "No to jsem si mohl myslet. Trochu jsem se opozdil a ti zabednÄ™nci z klÃ¡Å¡tera zatÃ­m dopustili, aby jim nÄ™jakÃ½ novic pÃ¢Ã­mo pÃ¢ed nosem vyfoukl Innosovo oko. TeÃ« mi nezbÃ½vÃ¡ nic jinÃ©ho, neÅ¾ jÃ­t po tom zrÃ¡dci Pedrovi a doufat, Å¾e je jeÅ¡tÄ™ nikomu neprodal.");
+ 	B_LogEntry (TOPIC_TraitorPedro, "Innosovo oko ukradl z klÃ¡Å¡tera zrÃ¡dce Pedro. MÃ¡m pocit, Å¾e ohnivÃ­ mÃ¡govÃ© by ho aÅ¾ moc rÃ¡di dostali do rukou.");
 };
 
 
@@ -1142,7 +1142,7 @@ instance DIA_Pyrokar_NOVIZENCHASE		(C_INFO)
 	condition	 = 	DIA_Pyrokar_NOVIZENCHASE_Condition;
 	information	 = 	DIA_Pyrokar_NOVIZENCHASE_Info;
 
-	description	 = 	"Máte tušení, kam ten zlodêj utekl?";
+	description	 = 	"MÃ¡te tuÅ¡enÃ­, kam ten zlodÄ™j utekl?";
 };
 
 func int DIA_Pyrokar_NOVIZENCHASE_Condition ()
@@ -1156,10 +1156,10 @@ func int DIA_Pyrokar_NOVIZENCHASE_Condition ()
 
 func void DIA_Pyrokar_NOVIZENCHASE_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_NOVIZENCHASE_15_00"); //Máte tušení, kam ten zlodêj utekl?
-	AI_Output			(self, other, "DIA_Pyrokar_NOVIZENCHASE_11_01"); //Pedro zneškodnil nêkolik dalších novicù, kteâí se ho pokoušeli zastavit, a zmizel v ranní mlze.
-	AI_Output			(self, other, "DIA_Pyrokar_NOVIZENCHASE_11_02"); //U se za ním vydalo mnoho novicù, aby mohli Oko vrátit v poâádku na své místo.
-	AI_Output			(self, other, "DIA_Pyrokar_NOVIZENCHASE_11_03"); //Pokud ho chceš dopadnout, musíš si pospíšit, dokud Pedro nezmizí z tvého dosahu.
+	AI_Output			(other, self, "DIA_Pyrokar_NOVIZENCHASE_15_00"); //MÃ¡te tuÅ¡enÃ­, kam ten zlodÄ™j utekl?
+	AI_Output			(self, other, "DIA_Pyrokar_NOVIZENCHASE_11_01"); //Pedro zneÅ¡kodnil nÄ™kolik dalÅ¡Ã­ch novicÅ¯, kteÃ¢Ã­ se ho pokouÅ¡eli zastavit, a zmizel v rannÃ­ mlze.
+	AI_Output			(self, other, "DIA_Pyrokar_NOVIZENCHASE_11_02"); //UÅ¾ se za nÃ­m vydalo mnoho novicÅ¯, aby mohli Oko vrÃ¡tit v poÃ¢Ã¡dku na svÃ© mÃ­sto.
+	AI_Output			(self, other, "DIA_Pyrokar_NOVIZENCHASE_11_03"); //Pokud ho chceÅ¡ dopadnout, musÃ­Å¡ si pospÃ­Å¡it, dokud Pedro nezmizÃ­ z tvÃ©ho dosahu.
 
 	MIS_NovizenChase = LOG_RUNNING;	
 };
@@ -1174,7 +1174,7 @@ instance DIA_Pyrokar_FOUNDINNOSEYE		(C_INFO)
 	condition	 = 	DIA_Pyrokar_FOUNDINNOSEYE_Condition;
 	information	 = 	DIA_Pyrokar_FOUNDINNOSEYE_Info;
 
-	description	 = 	"Našel jsem Innosovo oko.";
+	description	 = 	"NaÅ¡el jsem Innosovo oko.";
 };
 
 func int DIA_Pyrokar_FOUNDINNOSEYE_Condition ()
@@ -1189,59 +1189,59 @@ func int DIA_Pyrokar_FOUNDINNOSEYE_Condition ()
 
 func void DIA_Pyrokar_FOUNDINNOSEYE_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_15_00"); //Nalezl jsem Innosovo oko. Je rozbité.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_11_01"); //Ale... to není moné. Co se stalo?
-	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_15_02"); //Padlo do rukou têch odpornıch zrùd. Stejnê jsem u pâišel pozdê.
-	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_15_03"); //Pâipravovali tam nahoâe v lesích podivné zaklínadlo pro nêjakı mêsíèní rituál.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_11_04"); //Innos s námi. Znesvêtili náš kruh Slunce.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_11_05"); //Ani ve svıch nejhorších noèních mùrách jsem si nikdy nepâedstavoval, e si osvojí takovou moc.
+	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_15_00"); //Nalezl jsem Innosovo oko. Je rozbitÃ©.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_11_01"); //Ale... to nenÃ­ moÅ¾nÃ©. Co se stalo?
+	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_15_02"); //Padlo do rukou tÄ™ch odpornÃ½ch zrÅ¯d. StejnÄ™ jsem uÅ¾ pÃ¢iÅ¡el pozdÄ™.
+	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_15_03"); //PÃ¢ipravovali tam nahoÃ¢e v lesÃ­ch podivnÃ© zaklÃ­nadlo pro nÄ™jakÃ½ mÄ™sÃ­ÄnÃ­ rituÃ¡l.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_11_04"); //Innos s nÃ¡mi. ZnesvÄ™tili nÃ¡Å¡ kruh Slunce.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_11_05"); //Ani ve svÃ½ch nejhorÅ¡Ã­ch noÄnÃ­ch mÅ¯rÃ¡ch jsem si nikdy nepÃ¢edstavoval, Å¾e si osvojÃ­ takovou moc.
 
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE;
 	MIS_NovizenChase = LOG_SUCCESS;	
 	B_GivePlayerXP (XP_Ambient);
 	
 	Info_ClearChoices	(DIA_Pyrokar_FOUNDINNOSEYE);
-	Info_AddChoice		(DIA_Pyrokar_FOUNDINNOSEYE, "Co budeme dêlat teë?", DIA_Pyrokar_FOUNDINNOSEYE_was );
+	Info_AddChoice		(DIA_Pyrokar_FOUNDINNOSEYE, "Co budeme dÄ™lat teÃ«?", DIA_Pyrokar_FOUNDINNOSEYE_was );
 	
 };
 func void DIA_Pyrokar_FOUNDINNOSEYE_was ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_was_15_00"); //Co budeme dêlat teë?
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_01"); //Nepâítel se stal velmi silnım. Ještê stále však pro nêj tenhle artefakt pâedstavuje mocnou hrozbu.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_02"); //Musíme Innosovo oko opravit a navrátit mu jeho starou sílu. Ale èas je proti nám.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_03"); //Nedokáu si pâedstavit, co se s námi všemi stane. Bez ochrany Oka jsme nepâíteli vydáni na milost.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_04"); //Zajdi do mêsta za Vatrasem, vodním mágem. Za têchto strašnıch okolností si bude vêdêt rady jedinê on. Vezmi Oko k nêmu a pospêš si.
+	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_was_15_00"); //Co budeme dÄ™lat teÃ«?
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_01"); //NepÃ¢Ã­tel se stal velmi silnÃ½m. JeÅ¡tÄ™ stÃ¡le vÅ¡ak pro nÄ™j tenhle artefakt pÃ¢edstavuje mocnou hrozbu.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_02"); //MusÃ­me Innosovo oko opravit a navrÃ¡tit mu jeho starou sÃ­lu. Ale Äas je proti nÃ¡m.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_03"); //NedokÃ¡Å¾u si pÃ¢edstavit, co se s nÃ¡mi vÅ¡emi stane. Bez ochrany Oka jsme nepÃ¢Ã­teli vydÃ¡ni na milost.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_04"); //Zajdi do mÄ™sta za Vatrasem, vodnÃ­m mÃ¡gem. Za tÄ™chto straÅ¡nÃ½ch okolnostÃ­ si bude vÄ™dÄ™t rady jedinÄ™ on. Vezmi Oko k nÄ™mu a pospÄ™Å¡ si.
 
 
 	Info_AddChoice	(DIA_Pyrokar_FOUNDINNOSEYE, DIALOG_BACK, DIA_Pyrokar_FOUNDINNOSEYE_weiter );
 	if (hero.guild == GIL_KDF)
 	{
-	Info_AddChoice	(DIA_Pyrokar_FOUNDINNOSEYE, "Proè Vatras?", DIA_Pyrokar_FOUNDINNOSEYE_was_vatras );
+	Info_AddChoice	(DIA_Pyrokar_FOUNDINNOSEYE, "ProÄ Vatras?", DIA_Pyrokar_FOUNDINNOSEYE_was_vatras );
 	};
-	Info_AddChoice	(DIA_Pyrokar_FOUNDINNOSEYE, "Proè kruh Slunce?", DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis );
+	Info_AddChoice	(DIA_Pyrokar_FOUNDINNOSEYE, "ProÄ kruh Slunce?", DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis );
 	
 	
-	B_LogEntry (TOPIC_INNOSEYE, "Pyrokar chce, abych ve mêstê poprosil o radu mágy vody a otázal se jich, co dêlat s poškozenım Okem.");
+	B_LogEntry (TOPIC_INNOSEYE, "Pyrokar chce, abych ve mÄ™stÄ™ poprosil o radu mÃ¡gy vody a otÃ¡zal se jich, co dÄ™lat s poÅ¡kozenÃ½m Okem.");
 
 	MIS_Pyrokar_GoToVatrasInnoseye = LOG_RUNNING;
 
 };
 func void DIA_Pyrokar_FOUNDINNOSEYE_was_vatras ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_15_00"); //Proè právê za Vatrasem?
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_01"); //Privilegium nosit róbu tê ještê neopravàuje k tomu, aby ses vyptával na dùvody mıch instrukcí, bratâe.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_02"); //Vatras je Adanùv sluebník. Vêdomosti toho vodního mága nám vnesou trochu svêtla do tohoto temného èasu.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_03"); //To je vše, co potâebuješ vêdêt.
+	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_15_00"); //ProÄ prÃ¡vÄ™ za Vatrasem?
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_01"); //Privilegium nosit rÃ³bu tÄ™ jeÅ¡tÄ™ neopravÅ•uje k tomu, aby ses vyptÃ¡val na dÅ¯vody mÃ½ch instrukcÃ­, bratÃ¢e.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_02"); //Vatras je AdanÅ¯v sluÅ¾ebnÃ­k. VÄ™domosti toho vodnÃ­ho mÃ¡ga nÃ¡m vnesou trochu svÄ™tla do tohoto temnÃ©ho Äasu.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_03"); //To je vÅ¡e, co potÃ¢ebujeÅ¡ vÄ™dÄ™t.
 
 };
 
 
 func void DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis_15_00"); //Proè kruh Slunce?
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis_11_01"); //Kadoroènê se v èase slunovratu všichni mágové a novicové kláštera vydávají na cestu na toto místo, aby zde pâivítali poèátek nového cyklu.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis_11_02"); //To místo zaplàuje nesmírná moc Slunce.
-	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis_11_03"); //Nikdy jsem ani nepomyslel na to, e by tato moc mohla bıt zvrácena. A teë se právê tohle stalo.
+	AI_Output			(other, self, "DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis_15_00"); //ProÄ kruh Slunce?
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis_11_01"); //KaÅ¾doroÄnÄ™ se v Äase slunovratu vÅ¡ichni mÃ¡govÃ© a novicovÃ© klÃ¡Å¡tera vydÃ¡vajÃ­ na cestu na toto mÃ­sto, aby zde pÃ¢ivÃ­tali poÄÃ¡tek novÃ©ho cyklu.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis_11_02"); //To mÃ­sto zaplÅ•uje nesmÃ­rnÃ¡ moc Slunce.
+	AI_Output			(self, other, "DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis_11_03"); //Nikdy jsem ani nepomyslel na to, Å¾e by tato moc mohla bÃ½t zvrÃ¡cena. A teÃ« se prÃ¡vÄ™ tohle stalo.
 };
 
 func void DIA_Pyrokar_FOUNDINNOSEYE_weiter ()
@@ -1275,16 +1275,16 @@ func int DIA_Pyrokar_SPOKETOVATRAS_Condition ()
 func void DIA_Pyrokar_SPOKETOVATRAS_Info ()
 {
 	AI_Output			(other, self, "DIA_Pyrokar_SPOKETOVATRAS_15_00"); //Mluvil jsem s Vatrasem.
-	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_01"); //Vıbornê. Kde je?
-	AI_Output			(other, self, "DIA_Pyrokar_SPOKETOVATRAS_15_02"); //Pâipravuje ve sluneèním kruhu rituál potâebnı k opravê Innosova oka.
-	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_03"); //Pokud je to pravda, tak nám ještê moná zùstala jiskâièka nadêje.
-	AI_Output			(other, self, "DIA_Pyrokar_SPOKETOVATRAS_15_04"); //Vatras chce, abyste mu s tím ty a Xardas pomohli.
-	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_05"); //CO? Xardas tam bude taky? To nemùeš myslet vánê.
-	AI_Output			(other, self, "DIA_Pyrokar_SPOKETOVATRAS_15_06"); //Hele. Já o tom nerozhodl. Poaduje to Vatras.
-	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_07"); //Poâád ten Xardas. U mê zaèíná unavovat. Jen têko to mohlo dopadnout hùâ.
-	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_08"); //Jak mám vêdêt, e Xardas není ve spolku s nepâítelem?
-	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_09"); //Nemùu Xardasovi vêâit a je jedno, jak moc ho potâebujeme.
-	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_10"); //Je mi líto, ale za têchto okolností nemohu Vatrasovi pomoci.
+	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_01"); //VÃ½bornÄ™. Kde je?
+	AI_Output			(other, self, "DIA_Pyrokar_SPOKETOVATRAS_15_02"); //PÃ¢ipravuje ve sluneÄnÃ­m kruhu rituÃ¡l potÃ¢ebnÃ½ k opravÄ™ Innosova oka.
+	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_03"); //Pokud je to pravda, tak nÃ¡m jeÅ¡tÄ™ moÅ¾nÃ¡ zÅ¯stala jiskÃ¢iÄka nadÄ™je.
+	AI_Output			(other, self, "DIA_Pyrokar_SPOKETOVATRAS_15_04"); //Vatras chce, abyste mu s tÃ­m ty a Xardas pomohli.
+	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_05"); //CO? Xardas tam bude taky? To nemÅ¯Å¾eÅ¡ myslet vÃ¡Å¾nÄ™.
+	AI_Output			(other, self, "DIA_Pyrokar_SPOKETOVATRAS_15_06"); //Hele. JÃ¡ o tom nerozhodl. PoÅ¾aduje to Vatras.
+	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_07"); //PoÃ¢Ã¡d ten Xardas. UÅ¾ mÄ™ zaÄÃ­nÃ¡ unavovat. Jen tÄ™Å¾ko to mohlo dopadnout hÅ¯Ã¢.
+	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_08"); //Jak mÃ¡m vÄ™dÄ™t, Å¾e Xardas nenÃ­ ve spolku s nepÃ¢Ã­telem?
+	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_09"); //NemÅ¯Å¾u Xardasovi vÄ™Ã¢it a je jedno, jak moc ho potÃ¢ebujeme.
+	AI_Output			(self, other, "DIA_Pyrokar_SPOKETOVATRAS_11_10"); //Je mi lÃ­to, ale za tÄ™chto okolnostÃ­ nemohu Vatrasovi pomoci.
 	B_GivePlayerXP (XP_Ambient);
 
 
@@ -1301,7 +1301,7 @@ instance DIA_Pyrokar_XARDASVERTRAUEN		(C_INFO)
 	condition	 = 	DIA_Pyrokar_XARDASVERTRAUEN_Condition;
 	information	 = 	DIA_Pyrokar_XARDASVERTRAUEN_Info;
 
-	description	 = 	"Ale bez tebe to nepùjde...";
+	description	 = 	"Ale bez tebe to nepÅ¯jde...";
 };
 
 func int DIA_Pyrokar_XARDASVERTRAUEN_Condition ()
@@ -1315,14 +1315,14 @@ func int DIA_Pyrokar_XARDASVERTRAUEN_Condition ()
 
 func void DIA_Pyrokar_XARDASVERTRAUEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_XARDASVERTRAUEN_15_00"); //Bez tebe to nepùjde. Vatras není schopen ten rituál jinak pâipravit.
-	AI_Output			(other, self, "DIA_Pyrokar_XARDASVERTRAUEN_15_01"); //Budeš muset Xardasovi vêâit.
-	AI_Output			(self, other, "DIA_Pyrokar_XARDASVERTRAUEN_11_02"); //Nemùu nic dêlat, slyšíš? Nemám ani nejmenší dùkaz toho, e Xardas nepracuje proti nám. Nemùu to udêlat.
-	AI_Output			(other, self, "DIA_Pyrokar_XARDASVERTRAUEN_15_03"); //A co kdy ti nêjakı dùkaz seenu?
-	AI_Output			(self, other, "DIA_Pyrokar_XARDASVERTRAUEN_11_04"); //Bojím se, e to je nemoné. To by mê opravdu pâekvapilo.
-	AI_Output			(self, other, "DIA_Pyrokar_XARDASVERTRAUEN_11_05"); //A mám znaèné pochybnosti o tom, e by mê Xardas ještê mohl nêèím pâekvapit. I pâi jeho nevypoèitatelnosti.
+	AI_Output			(other, self, "DIA_Pyrokar_XARDASVERTRAUEN_15_00"); //Bez tebe to nepÅ¯jde. Vatras nenÃ­ schopen ten rituÃ¡l jinak pÃ¢ipravit.
+	AI_Output			(other, self, "DIA_Pyrokar_XARDASVERTRAUEN_15_01"); //BudeÅ¡ muset Xardasovi vÄ™Ã¢it.
+	AI_Output			(self, other, "DIA_Pyrokar_XARDASVERTRAUEN_11_02"); //NemÅ¯Å¾u nic dÄ™lat, slyÅ¡Ã­Å¡? NemÃ¡m ani nejmenÅ¡Ã­ dÅ¯kaz toho, Å¾e Xardas nepracuje proti nÃ¡m. NemÅ¯Å¾u to udÄ™lat.
+	AI_Output			(other, self, "DIA_Pyrokar_XARDASVERTRAUEN_15_03"); //A co kdyÅ¾ ti nÄ™jakÃ½ dÅ¯kaz seÅ¾enu?
+	AI_Output			(self, other, "DIA_Pyrokar_XARDASVERTRAUEN_11_04"); //BojÃ­m se, Å¾e to je nemoÅ¾nÃ©. To by mÄ™ opravdu pÃ¢ekvapilo.
+	AI_Output			(self, other, "DIA_Pyrokar_XARDASVERTRAUEN_11_05"); //A mÃ¡m znaÄnÃ© pochybnosti o tom, Å¾e by mÄ™ Xardas jeÅ¡tÄ™ mohl nÄ™ÄÃ­m pÃ¢ekvapit. I pÃ¢i jeho nevypoÄitatelnosti.
 
-	B_LogEntry (TOPIC_INNOSEYE, "Pyrokar má z Xardase poâádnı strach. Musím s Xardasem prodiskutovat, jak ho pâimêt k úèasti na rituálu kruhu Slunce.");
+	B_LogEntry (TOPIC_INNOSEYE, "Pyrokar mÃ¡ z Xardase poÃ¢Ã¡dnÃ½ strach. MusÃ­m s Xardasem prodiskutovat, jak ho pÃ¢imÄ™t k ÃºÄasti na rituÃ¡lu kruhu Slunce.");
 	
 	Pyrokar_DeniesInnosEyeRitual = TRUE;
 
@@ -1338,7 +1338,7 @@ instance DIA_Pyrokar_BUCHZURUECK		(C_INFO)
 	condition	 = 	DIA_Pyrokar_BUCHZURUECK_Condition;
 	information	 = 	DIA_Pyrokar_BUCHZURUECK_Info;
 
-	description	 = 	"Pâinesl jsem od Xardase tuhle knihu.";
+	description	 = 	"PÃ¢inesl jsem od Xardase tuhle knihu.";
 };
 
 func int DIA_Pyrokar_BUCHZURUECK_Condition ()
@@ -1352,24 +1352,24 @@ func int DIA_Pyrokar_BUCHZURUECK_Condition ()
 
 func void DIA_Pyrokar_BUCHZURUECK_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_BUCHZURUECK_15_00"); //Pâinesl jsem od Xardase tuhle knihu.
-	AI_Output			(other, self, "DIA_Pyrokar_BUCHZURUECK_15_01"); //Je to symbol jeho dùvêryhodnosti.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_02"); //Uka mi to.
+	AI_Output			(other, self, "DIA_Pyrokar_BUCHZURUECK_15_00"); //PÃ¢inesl jsem od Xardase tuhle knihu.
+	AI_Output			(other, self, "DIA_Pyrokar_BUCHZURUECK_15_01"); //Je to symbol jeho dÅ¯vÄ™ryhodnosti.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_02"); //UkaÅ¾ mi to.
 	B_GiveInvItems 		(other, self, ItWr_XardasBookForPyrokar_Mis,1);
 	Npc_RemoveInvItems 	(self, ItWr_XardasBookForPyrokar_Mis,1);
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_03"); //(vzrušenê) Ale to je neuvêâitelné. Máš ty vùbec ponêtí, co je to, cos mi právê dal?
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_03"); //(vzruÅ¡enÄ™) Ale to je neuvÄ™Ã¢itelnÃ©. MÃ¡Å¡ ty vÅ¯bec ponÄ™tÃ­, co je to, cos mi prÃ¡vÄ™ dal?
 	AI_Output			(other, self, "DIA_Pyrokar_BUCHZURUECK_15_04"); //Ehm. Ne.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_05"); //(podrádênê) Tohle je starobylá, velmi dlouho ztracená kniha z èasù dávno minulıch.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_06"); //Mêli jsme za to, e je ztracena jednou provdy, ale teë vidím, e Xardas celou tu dobu vêdêl, co se s ní stalo.
-	AI_Output			(other, self, "DIA_Pyrokar_BUCHZURUECK_15_07"); //Take souhlasíš s tím rituálem?
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_08"); //Ano, mêl bych vyrazit ke sluneènímu kruhu, ale rozhodnê ne proto, e bych byl pâesvêdèenı o Xardasovıch dobrıch úmyslech.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_09"); //Vlastnê se chystám z toho psa dostat vysvêtlení, kde tolik let ukrıval tu knihu. Tentokrát zašel pâíliš daleko.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_10"); //Uvidíme se u sluneèního kruhu.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_05"); //(podrÃ¡Å¾dÄ™nÄ™) Tohle je starobylÃ¡, velmi dlouho ztracenÃ¡ kniha z ÄasÅ¯ dÃ¡vno minulÃ½ch.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_06"); //MÄ™li jsme za to, Å¾e je ztracena jednou provÅ¾dy, ale teÃ« vidÃ­m, Å¾e Xardas celou tu dobu vÄ™dÄ™l, co se s nÃ­ stalo.
+	AI_Output			(other, self, "DIA_Pyrokar_BUCHZURUECK_15_07"); //TakÅ¾e souhlasÃ­Å¡ s tÃ­m rituÃ¡lem?
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_08"); //Ano, mÄ™l bych vyrazit ke sluneÄnÃ­mu kruhu, ale rozhodnÄ™ ne proto, Å¾e bych byl pÃ¢esvÄ™dÄenÃ½ o XardasovÃ½ch dobrÃ½ch Ãºmyslech.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_09"); //VlastnÄ™ se chystÃ¡m z toho psa dostat vysvÄ™tlenÃ­, kde tolik let ukrÃ½val tu knihu. TentokrÃ¡t zaÅ¡el pÃ¢Ã­liÅ¡ daleko.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHZURUECK_11_10"); //UvidÃ­me se u sluneÄnÃ­ho kruhu.
 	
 	AI_StopProcessInfos (self);
 	AI_UseMob			(self,"THRONE",-1);
 	Npc_ExchangeRoutine	(self,"RitualInnosEyeRepair");
-	B_LogEntry (TOPIC_INNOSEYE, "Pyrokar koneènê souhlasil, e navštíví kruh slunce.");
+	B_LogEntry (TOPIC_INNOSEYE, "Pyrokar koneÄnÄ™ souhlasil, Å¾e navÅ¡tÃ­vÃ­ kruh slunce.");
 	Pyrokar_GoesToRitualInnosEye = TRUE;
 };
 
@@ -1384,7 +1384,7 @@ instance DIA_Pyrokar_PRERITUAL		(C_INFO)
 	information	 = 	DIA_Pyrokar_PRERITUAL_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Myslíš, e to Oko dokáete spravit?";
+	description	 = 	"MyslÃ­Å¡, Å¾e to Oko dokÃ¡Å¾ete spravit?";
 };
 
 func int DIA_Pyrokar_PRERITUAL_Condition ()
@@ -1399,8 +1399,8 @@ func int DIA_Pyrokar_PRERITUAL_Condition ()
 
 func void DIA_Pyrokar_PRERITUAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_PRERITUAL_15_00"); //Myslíš, e to Oko dokáete spravit?
-	AI_Output			(self, other, "DIA_Pyrokar_PRERITUAL_11_01"); //Têko âíct. Poèkáme a uvidíme.
+	AI_Output			(other, self, "DIA_Pyrokar_PRERITUAL_15_00"); //MyslÃ­Å¡, Å¾e to Oko dokÃ¡Å¾ete spravit?
+	AI_Output			(self, other, "DIA_Pyrokar_PRERITUAL_11_01"); //TÄ™Å¾ko Ã¢Ã­ct. PoÄkÃ¡me a uvidÃ­me.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1413,7 +1413,7 @@ instance DIA_Pyrokar_AUGEGEHEILT		(C_INFO)
 	condition	 = 	DIA_Pyrokar_AUGEGEHEILT_Condition;
 	information	 = 	DIA_Pyrokar_AUGEGEHEILT_Info;
 
-	description	 = 	"Dokázali jste to. Innosovo oko je zase v poâádku.";
+	description	 = 	"DokÃ¡zali jste to. Innosovo oko je zase v poÃ¢Ã¡dku.";
 };
 
 func int DIA_Pyrokar_AUGEGEHEILT_Condition ()
@@ -1427,16 +1427,16 @@ func int DIA_Pyrokar_AUGEGEHEILT_Condition ()
 
 func void DIA_Pyrokar_AUGEGEHEILT_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_AUGEGEHEILT_15_00"); //Dokázali jste to. Innosovo oko je zase v poâádku.
-	AI_Output			(self, other, "DIA_Pyrokar_AUGEGEHEILT_11_01"); //Jen stêí mùu uvêâit, e je nêco takového moné.
+	AI_Output			(other, self, "DIA_Pyrokar_AUGEGEHEILT_15_00"); //DokÃ¡zali jste to. Innosovo oko je zase v poÃ¢Ã¡dku.
+	AI_Output			(self, other, "DIA_Pyrokar_AUGEGEHEILT_11_01"); //Jen stÄ™Å¾Ã­ mÅ¯Å¾u uvÄ™Ã¢it, Å¾e je nÄ™co takovÃ©ho moÅ¾nÃ©.
 
 	
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Pyrokar_AUGEGEHEILT_15_02"); //Ano, mistâe.
-			AI_Output			(self, other, "DIA_Pyrokar_AUGEGEHEILT_11_03"); //U jsi mnohokrát prokázal, e jsi hoden Vyššího âádu ohnivıch mágù.
-			AI_Output			(self, other, "DIA_Pyrokar_AUGEGEHEILT_11_04"); //Od tohoto dne jsi èlenem Rady a budeš nás âád reprezentovat po celém svêtê. Teë jsi jedním z vyšších ohnivıch mágù.
-			AI_Output			(self, other, "DIA_Pyrokar_AUGEGEHEILT_11_05"); //Uívej róbu vyvolenıch s dùstojností a pâines âádu slávu a bohatství, mùj bratâe.
+			AI_Output			(other, self, "DIA_Pyrokar_AUGEGEHEILT_15_02"); //Ano, mistÃ¢e.
+			AI_Output			(self, other, "DIA_Pyrokar_AUGEGEHEILT_11_03"); //UÅ¾ jsi mnohokrÃ¡t prokÃ¡zal, Å¾e jsi hoden VyÅ¡Å¡Ã­ho Ã¢Ã¡du ohnivÃ½ch mÃ¡gÅ¯.
+			AI_Output			(self, other, "DIA_Pyrokar_AUGEGEHEILT_11_04"); //Od tohoto dne jsi Älenem Rady a budeÅ¡ nÃ¡s Ã¢Ã¡d reprezentovat po celÃ©m svÄ™tÄ™. TeÃ« jsi jednÃ­m z vyÅ¡Å¡Ã­ch ohnivÃ½ch mÃ¡gÅ¯.
+			AI_Output			(self, other, "DIA_Pyrokar_AUGEGEHEILT_11_05"); //UÅ¾Ã­vej rÃ³bu vyvolenÃ½ch s dÅ¯stojnostÃ­ a pÃ¢ines Ã¢Ã¡du slÃ¡vu a bohatstvÃ­, mÅ¯j bratÃ¢e.
 		
 			CreateInvItem	(hero, ITAR_KDF_H);
 			AI_EquipArmor	(hero, ITAR_KDF_H);	
@@ -1455,7 +1455,7 @@ instance DIA_Pyrokar_KAP3_READY		(C_INFO)
 	condition	 = 	DIA_Pyrokar_KAP3_READY_Condition;
 	information	 = 	DIA_Pyrokar_KAP3_READY_Info;
 
-	description	 = 	"Co je tady ještê zapotâebí udêlat?";
+	description	 = 	"Co je tady jeÅ¡tÄ™ zapotÃ¢ebÃ­ udÄ™lat?";
 };
 
 func int DIA_Pyrokar_KAP3_READY_Condition ()
@@ -1469,20 +1469,20 @@ func int DIA_Pyrokar_KAP3_READY_Condition ()
 
 func void DIA_Pyrokar_KAP3_READY_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_KAP3_READY_15_00"); //Co tu ještê musím uèinit?
-	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_01"); //Neplıtvej svım èasem na malichernosti. Bê porazit draky. Tady, vezmi si Oko.
+	AI_Output			(other, self, "DIA_Pyrokar_KAP3_READY_15_00"); //Co tu jeÅ¡tÄ™ musÃ­m uÄinit?
+	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_01"); //NeplÃ½tvej svÃ½m Äasem na malichernosti. BÄ™Å¾ porazit draky. Tady, vezmi si Oko.
 	CreateInvItems (self,ItMi_InnosEye_MIS,1);
 	B_GiveInvItems (self, other, ItMi_InnosEye_MIS,1);
-	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_02"); //Nezapomeà, e musíš s drakem nejprve promluvit, ne ho napadneš.
+	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_02"); //NezapomeÅ•, Å¾e musÃ­Å¡ s drakem nejprve promluvit, neÅ¾ ho napadneÅ¡.
 	//AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_03"); //Das Auge wird dir helfen, die Drachen dazu zu zwingen, mit dir zu reden.
-	//AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_04"); //Es bietet dir nicht nur Schutz gegen ihre Angriffe, es fügt ihnen auch unerträgliche Schmerzen zu, wenn du es bei dir trägst.
-	AI_Output (self ,other, "DIA_Pyrokar_Add_11_01"); //Moc Oka pâinutí draka promluvit a âíkat pravdu.
-	AI_Output (self ,other, "DIA_Pyrokar_Add_11_02"); //Také ti, pokud ho máš na sobê, poskytuje ochranu proti jejich útokùm.
-	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_05"); //Nicménê, moc Oka není nevyèerpatelná. Budeš ho muset doplàovat magickou energií.
-	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_06"); //Budeš k tomu potâebovat esenci z draèího srdce, kterou mùeš s Okem spojit v alchymistické kolonê.
-	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_07"); //Jedinê pak se mùeš odváit postavit drakovi.
-	AI_Output			(other, self, "DIA_Pyrokar_KAP3_READY_15_08"); //Díky. Budu si to pamatovat.
-	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_09"); //Teë máš vše, co potâebuješ. Tak jdi. U ti nezbıvá mnoho èasu.
+	//AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_04"); //Es bietet dir nicht nur Schutz gegen ihre Angriffe, es fÃ¼gt ihnen auch unertrÃ¤gliche Schmerzen zu, wenn du es bei dir trÃ¤gst.
+	AI_Output (self ,other, "DIA_Pyrokar_Add_11_01"); //Moc Oka pÃ¢inutÃ­ draka promluvit a Ã¢Ã­kat pravdu.
+	AI_Output (self ,other, "DIA_Pyrokar_Add_11_02"); //TakÃ© ti, pokud ho mÃ¡Å¡ na sobÄ™, poskytuje ochranu proti jejich ÃºtokÅ¯m.
+	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_05"); //NicmÃ©nÄ™, moc Oka nenÃ­ nevyÄerpatelnÃ¡. BudeÅ¡ ho muset doplÅ•ovat magickou energiÃ­.
+	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_06"); //BudeÅ¡ k tomu potÃ¢ebovat esenci z draÄÃ­ho srdce, kterou mÅ¯Å¾eÅ¡ s Okem spojit v alchymistickÃ© kolonÄ™.
+	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_07"); //JedinÄ™ pak se mÅ¯Å¾eÅ¡ odvÃ¡Å¾it postavit drakovi.
+	AI_Output			(other, self, "DIA_Pyrokar_KAP3_READY_15_08"); //DÃ­ky. Budu si to pamatovat.
+	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_09"); //TeÃ« mÃ¡Å¡ vÅ¡e, co potÃ¢ebujeÅ¡. Tak jdi. UÅ¾ ti nezbÃ½vÃ¡ mnoho Äasu.
 
 	PLAYER_TALENT_ALCHEMY[Charge_InnosEye] 		= TRUE;	
 	PrintScreen	(PRINT_LearnAlchemyInnosEye, -1, -1, FONT_Screen, 2);
@@ -1493,7 +1493,7 @@ func void DIA_Pyrokar_KAP3_READY_Info ()
 	
 	Log_CreateTopic (TOPIC_DRACHENJAGD, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DRACHENJAGD, LOG_RUNNING);
-	B_LogEntry (TOPIC_DRACHENJAGD,"Teë u mohu bez obav èelit drakùm - staèí si pâi boji nasadit Innosovo oko a mohu je všechny postupnê znièit. Pâed bojem si ale musím s drakem vdycky promluvit, jinak nemám šanci. Problém je, e kadı takovı rozhovor pâipravuje Oko o èást moci. Obnovit ji mohu pouze v alchymistické kolonê s pomocí draèího srdce a prázdné laboratorní baàky, kde s pomocí extraktu z draèího srdce mohu moc artefaktu znovu probudit. Teprve pak se mohu postavit dalšímu obludnému ještêrovi."); 
+	B_LogEntry (TOPIC_DRACHENJAGD,"TeÃ« uÅ¾ mohu bez obav Äelit drakÅ¯m - staÄÃ­ si pÃ¢i boji nasadit Innosovo oko a mohu je vÅ¡echny postupnÄ™ zniÄit. PÃ¢ed bojem si ale musÃ­m s drakem vÅ¾dycky promluvit, jinak nemÃ¡m Å¡anci. ProblÃ©m je, Å¾e kaÅ¾dÃ½ takovÃ½ rozhovor pÃ¢ipravuje Oko o ÄÃ¡st moci. Obnovit ji mohu pouze v alchymistickÃ© kolonÄ™ s pomocÃ­ draÄÃ­ho srdce a prÃ¡zdnÃ© laboratornÃ­ baÅ•ky, kde s pomocÃ­ extraktu z draÄÃ­ho srdce mohu moc artefaktu znovu probudit. Teprve pak se mohu postavit dalÅ¡Ã­mu obludnÃ©mu jeÅ¡tÄ™rovi."); 
 
 	MIS_ReadyforChapter4 = TRUE; //Joly: Mit dieser Varible in den Levelchange zur OW -> Kapitel 4
 	B_NPC_IsAliveCheck (NEWWORLD_ZEN);
@@ -1511,7 +1511,7 @@ instance DIA_Pyrokar_BUCHDERBESSENEN		(C_INFO)
 	condition	 = 	DIA_Pyrokar_BUCHDERBESSENEN_Condition;
 	information	 = 	DIA_Pyrokar_BUCHDERBESSENEN_Info;
 
-	description	 = 	"Nalezl jsem podivnı almanach.";
+	description	 = 	"Nalezl jsem podivnÃ½ almanach.";
 };
 
 func int DIA_Pyrokar_BUCHDERBESSENEN_Condition ()
@@ -1525,45 +1525,45 @@ func int DIA_Pyrokar_BUCHDERBESSENEN_Condition ()
 
 func void DIA_Pyrokar_BUCHDERBESSENEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_BUCHDERBESSENEN_15_00"); //Nalezl jsem podivnı almanach.
+	AI_Output			(other, self, "DIA_Pyrokar_BUCHDERBESSENEN_15_00"); //Nalezl jsem podivnÃ½ almanach.
 	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_01"); //Opravdu? Co je to za almanach?
-	AI_Output			(other, self, "DIA_Pyrokar_BUCHDERBESSENEN_15_02"); //Nejsem si jistı. Mêl jsem dojem, e ty budeš vêdêt, k èemu to je.
+	AI_Output			(other, self, "DIA_Pyrokar_BUCHDERBESSENEN_15_02"); //Nejsem si jistÃ½. MÄ™l jsem dojem, Å¾e ty budeÅ¡ vÄ™dÄ™t, k Äemu to je.
 	B_GiveInvItems 		(other, self, ITWR_DementorObsessionBook_MIS,1);
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_03"); //Vêru, to je velmi znepokojivé. Jsem rád, es mi to pâinesl. To od tebe bylo opravdu moudré.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_03"); //VÄ™ru, to je velmi znepokojivÃ©. Jsem rÃ¡d, Å¾es mi to pÃ¢inesl. To od tebe bylo opravdu moudrÃ©.
 	B_GivePlayerXP (XP_Ambient);
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_04"); //Pâedpokládám, e tam toho bude víc. Bê a najdi více têchto knih zatracení.
-		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_05"); //Vypadá to, e je to nástroj moci Pátraèù.
-		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_06"); //Pouívají jej k ovládání ztracenıch duší svıch obêtí.
-		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_07"); //Obvykle si do têch knih zapisují jména têch, kterıch se chtêjí zmocnit.
-		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_08"); //Poslouchej. Dám ti tenhle magickı svitek. Ukáe ti jména, která jsou zanesená do têch knih.
+		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_04"); //PÃ¢edpoklÃ¡dÃ¡m, Å¾e tam toho bude vÃ­c. BÄ™Å¾ a najdi vÃ­ce tÄ™chto knih zatracenÃ­.
+		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_05"); //VypadÃ¡ to, Å¾e je to nÃ¡stroj moci PÃ¡traÄÅ¯.
+		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_06"); //PouÅ¾Ã­vajÃ­ jej k ovlÃ¡dÃ¡nÃ­ ztracenÃ½ch duÅ¡Ã­ svÃ½ch obÄ™tÃ­.
+		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_07"); //Obvykle si do tÄ™ch knih zapisujÃ­ jmÃ©na tÄ™ch, kterÃ½ch se chtÄ™jÃ­ zmocnit.
+		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_08"); //Poslouchej. DÃ¡m ti tenhle magickÃ½ svitek. UkÃ¡Å¾e ti jmÃ©na, kterÃ¡ jsou zanesenÃ¡ do tÄ™ch knih.
 		CreateInvItems (self, ItWr_PyrokarsObsessionList, 1);									
 		B_GiveInvItems (self, other, ItWr_PyrokarsObsessionList, 1);					
-		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_09"); //Najdi ty obêti a pâines mi jejich knihy. Mêl bych je sprovodit ze svêta.
+		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_09"); //Najdi ty obÄ™ti a pÃ¢ines mi jejich knihy. MÄ™l bych je sprovodit ze svÄ™ta.
 	
 		if ((Npc_IsDead(Karras))== FALSE)
 			{
-				AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_10"); //Ale nejprve bys mêl alespoà jednu z nich ukázat Karrasovi. Moná se mu bude pâi jeho studiích k nêèemu hodit.
+				AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_10"); //Ale nejprve bys mÄ™l alespoÅ• jednu z nich ukÃ¡zat Karrasovi. MoÅ¾nÃ¡ se mu bude pÃ¢i jeho studiÃ­ch k nÄ™Äemu hodit.
 			};
 	
-		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_11"); //Neudêlej hloupost a nepokoušej se je nièit sám. Ještê nejsi schopen odolat jejich moci.
+		AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_11"); //NeudÄ™lej hloupost a nepokouÅ¡ej se je niÄit sÃ¡m. JeÅ¡tÄ™ nejsi schopen odolat jejich moci.
 
-		B_LogEntry (TOPIC_DEMENTOREN,"Pyrokar chce zlomit moc Almanachu posedlıch. Dal mi proto seznam všech, které pátraèi hodlají ovládnout - postupem èasu se mùe rozrùstat o další jména."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Pyrokar chce zlomit moc Almanachu posedlÃ½ch. Dal mi proto seznam vÅ¡ech, kterÃ© pÃ¡traÄi hodlajÃ­ ovlÃ¡dnout - postupem Äasu se mÅ¯Å¾e rozrÅ¯stat o dalÅ¡Ã­ jmÃ©na."); 
 	};
 	
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_12"); //Nepâibliuj se k Pátraèùm, jinak tê proklejí.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_13"); //Pokud nebudeš schopen odolávat jejich volání, vraã se ke mnê, jak nejrychleji to bude moné.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_14"); //Pouze tady v klášteâe je tvá duše v bezpeèí.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_12"); //NepÃ¢ibliÅ¾uj se k PÃ¡traÄÅ¯m, jinak tÄ™ proklejÃ­.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_13"); //Pokud nebudeÅ¡ schopen odolÃ¡vat jejich volÃ¡nÃ­, vraÄƒ se ke mnÄ™, jak nejrychleji to bude moÅ¾nÃ©.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_14"); //Pouze tady v klÃ¡Å¡teÃ¢e je tvÃ¡ duÅ¡e v bezpeÄÃ­.
 
 	if ((Npc_IsDead(Karras))== FALSE)
 	&& (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Pyrokar_BUCHDERBESSENEN_15_15"); //Neexistuje proti têm mentálním útokùm nêjaké ochrana?
-			AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_16"); //Moné to je. Karras by o tom mohl nêco vêdêt.
+			AI_Output			(other, self, "DIA_Pyrokar_BUCHDERBESSENEN_15_15"); //Neexistuje proti tÄ™m mentÃ¡lnÃ­m ÃºtokÅ¯m nÄ™jakÃ© ochrana?
+			AI_Output			(self, other, "DIA_Pyrokar_BUCHDERBESSENEN_11_16"); //MoÅ¾nÃ© to je. Karras by o tom mohl nÄ™co vÄ™dÄ™t.
 			Pyrokar_AskKarrasAboutDMTAmulett = TRUE;
-			B_LogEntry (TOPIC_DEMENTOREN,"S Karrasovou pomocí prı mohu najít ochranu pâed mentálními útoky pátraèù."); 
+			B_LogEntry (TOPIC_DEMENTOREN,"S Karrasovou pomocÃ­ prÃ½ mohu najÃ­t ochranu pÃ¢ed mentÃ¡lnÃ­mi Ãºtoky pÃ¡traÄÅ¯."); 
 		};
 };
 
@@ -1578,7 +1578,7 @@ instance DIA_Pyrokar_SCOBSESSED		(C_INFO)
 	information	 = 	DIA_Pyrokar_SCOBSESSED_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"(Vyléèit posedlost)";
+	description	 = 	"(VylÃ©Äit posedlost)";
 };
 
 func int DIA_Pyrokar_SCOBSESSED_Condition ()
@@ -1597,15 +1597,15 @@ func void DIA_Pyrokar_SCOBSESSED_Info ()
 		{
 			if (hero.guild == GIL_KDF)
 				{
-					AI_Output			(other, self, "DIA_Pyrokar_SCOBSESSED_15_00"); //Vyleè mê, pane, byl jsem proklet.
+					AI_Output			(other, self, "DIA_Pyrokar_SCOBSESSED_15_00"); //VyleÄ mÄ™, pane, byl jsem proklet.
 				
-					AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_01"); //Budi! Vezmi si tenhle lektvar. To tê zbaví tvıch noèních mùr.
-					AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_02"); //Nechã je ti Innosova spása ochranou.
-					AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_03"); //Jednej v jeho jménu a stâez se zlého nepâítelova pohledu.
+					AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_01"); //BudiÅ¾! Vezmi si tenhle lektvar. To tÄ™ zbavÃ­ tvÃ½ch noÄnÃ­ch mÅ¯r.
+					AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_02"); //NechÄƒ je ti Innosova spÃ¡sa ochranou.
+					AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_03"); //Jednej v jeho jmÃ©nu a stÃ¢ez se zlÃ©ho nepÃ¢Ã­telova pohledu.
 				
 					if (SC_ObsessionTimes > 3)
 						{	
-							AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_04"); //Ale abych tê varoval - pokud budeš jejich vlivu vystaven pâíliš èasto, u pro tebe za jistıch okolností nebude návratu. Vdycky na to pamatuj.
+							AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_04"); //Ale abych tÄ™ varoval - pokud budeÅ¡ jejich vlivu vystaven pÃ¢Ã­liÅ¡ Äasto, uÅ¾ pro tebe za jistÃ½ch okolnostÃ­ nebude nÃ¡vratu. VÅ¾dycky na to pamatuj.
 						};
 					
 					CreateInvItems (self, ItPo_HealObsession_MIS, 2);									
@@ -1614,40 +1614,40 @@ func void DIA_Pyrokar_SCOBSESSED_Info ()
 				}
 			else
 				{
-					AI_Output			(other, self, "DIA_Pyrokar_SCOBSESSED_15_05"); //Mám dojem, e jsem byl proklet. Mùeš mê vyléèit?
-					AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_06"); //Ne bez dùkazu tvého respektu k tomuto klášteru, mùj synu. 300 zlatıch.
+					AI_Output			(other, self, "DIA_Pyrokar_SCOBSESSED_15_05"); //MÃ¡m dojem, Å¾e jsem byl proklet. MÅ¯Å¾eÅ¡ mÄ™ vylÃ©Äit?
+					AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_06"); //Ne bez dÅ¯kazu tvÃ©ho respektu k tomuto klÃ¡Å¡teru, mÅ¯j synu. 300 zlatÃ½ch.
 				
 					Info_ClearChoices	(DIA_Pyrokar_SCOBSESSED);
-					Info_AddChoice	(DIA_Pyrokar_SCOBSESSED, "To je pâíliš.", DIA_Pyrokar_SCOBSESSED_nein );
-					Info_AddChoice	(DIA_Pyrokar_SCOBSESSED, "Vıbornê. Tady jsou peníze.", DIA_Pyrokar_SCOBSESSED_ok );
+					Info_AddChoice	(DIA_Pyrokar_SCOBSESSED, "To je pÃ¢Ã­liÅ¡.", DIA_Pyrokar_SCOBSESSED_nein );
+					Info_AddChoice	(DIA_Pyrokar_SCOBSESSED, "VÃ½bornÄ™. Tady jsou penÃ­ze.", DIA_Pyrokar_SCOBSESSED_ok );
 				};
 		 }
 	 else
 		 {
-			AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_07"); //Ale vdyã ty ještê jeden léèivı lektvar máš. Vraã se, a budeš mou pomoc opravdu potâebovat.
+			AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_11_07"); //Ale vÅ¾dyÄƒ ty jeÅ¡tÄ™ jeden lÃ©ÄivÃ½ lektvar mÃ¡Å¡. VraÄƒ se, aÅ¾ budeÅ¡ mou pomoc opravdu potÃ¢ebovat.
 		 };
 };
 func void DIA_Pyrokar_SCOBSESSED_ok ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_SCOBSESSED_ok_15_00"); //Vıbornê. Tady jsou peníze.
+	AI_Output			(other, self, "DIA_Pyrokar_SCOBSESSED_ok_15_00"); //VÃ½bornÄ™. Tady jsou penÃ­ze.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,300))
 		{
-			AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_ok_11_01"); //Tady, vypij tohle. Nechã je ti Innosova spása ochranou.
+			AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_ok_11_01"); //Tady, vypij tohle. NechÄƒ je ti Innosova spÃ¡sa ochranou.
 			CreateInvItems (self, ItPo_HealObsession_MIS, 2);									
 			B_GiveInvItems (self, other, ItPo_HealObsession_MIS, 2);
 			Got_HealObsession_Day = Wld_GetDay(); 
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_ok_11_02"); //Pâines mi ty peníze a dostane se ti pomoci.
+			AI_Output			(self, other, "DIA_Pyrokar_SCOBSESSED_ok_11_02"); //PÃ¢ines mi ty penÃ­ze a dostane se ti pomoci.
 		};
 	Info_ClearChoices	(DIA_Pyrokar_SCOBSESSED);
 };
 
 func void DIA_Pyrokar_SCOBSESSED_nein ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_SCOBSESSED_nein_15_00"); //To je pâíliš.
+	AI_Output			(other, self, "DIA_Pyrokar_SCOBSESSED_nein_15_00"); //To je pÃ¢Ã­liÅ¡.
 	Info_ClearChoices	(DIA_Pyrokar_SCOBSESSED);
 };
 
@@ -1662,7 +1662,7 @@ instance DIA_Pyrokar_AlmanachBringen		(C_INFO)
 	information	 = 	DIA_Pyrokar_AlmanachBringen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Mùu ti o tom prokletí âíct i nêco víc.";
+	description	 = 	"MÅ¯Å¾u ti o tom prokletÃ­ Ã¢Ã­ct i nÄ™co vÃ­c.";
 };
 
 func int DIA_Pyrokar_AlmanachBringen_Condition ()
@@ -1681,29 +1681,29 @@ var int DIA_Pyrokar_AlmanachBringen_OneTime;
 
 func void DIA_Pyrokar_AlmanachBringen_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_AlmanachBringen_15_00"); //Mùu ti o tom prokletí âíct i nêco víc.
-	AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_01"); //Mluv, bratâe.
+	AI_Output			(other, self, "DIA_Pyrokar_AlmanachBringen_15_00"); //MÅ¯Å¾u ti o tom prokletÃ­ Ã¢Ã­ct i nÄ™co vÃ­c.
+	AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_01"); //Mluv, bratÃ¢e.
 	
 	var int AlmanachCount;
 	var int XP_KDF_BringAlmanachs;
 	var int AlmanachGeld;
 	var int PyrokarsAlmanachOffer;
 	
-	PyrokarsAlmanachOffer = 400;	//Joly: Gold für einen Almanach
+	PyrokarsAlmanachOffer = 400;	//Joly: Gold fÃ¼r einen Almanach
 	
 	AlmanachCount = Npc_HasItems(other, ITWR_DementorObsessionBook_MIS);
 
 
 	if (AlmanachCount == 1)
 		{
-			AI_Output		(other, self, "DIA_Pyrokar_AlmanachBringen_15_02"); //Nalezl jsem další almanach.
+			AI_Output		(other, self, "DIA_Pyrokar_AlmanachBringen_15_02"); //Nalezl jsem dalÅ¡Ã­ almanach.
 			B_GivePlayerXP (XP_KDF_BringAlmanach);
 			B_GiveInvItems (other, self, ITWR_DementorObsessionBook_MIS,1);
 			AlmanachCounter = AlmanachCounter + 1;
 		}
 		else
 		{
-			AI_Output		(other, self, "DIA_Pyrokar_AlmanachBringen_15_03"); //Mám pro tebe têch Spáèovıch knih ještê víc.
+			AI_Output		(other, self, "DIA_Pyrokar_AlmanachBringen_15_03"); //MÃ¡m pro tebe tÄ™ch SpÃ¡ÄovÃ½ch knih jeÅ¡tÄ™ vÃ­c.
 
 			B_GiveInvItems (other, self, ITWR_DementorObsessionBook_MIS,  AlmanachCount);
 
@@ -1715,24 +1715,24 @@ func void DIA_Pyrokar_AlmanachBringen_Info ()
 
 	if (AlmanachCounter <= 5)
 	{
-		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_04"); //Dobrá. Nicménê se obávám, e je jich k nalezení mnohem víc. Pokraèuj v hledání.
+		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_04"); //DobrÃ¡. NicmÃ©nÄ™ se obÃ¡vÃ¡m, Å¾e je jich k nalezenÃ­ mnohem vÃ­c. PokraÄuj v hledÃ¡nÃ­.
 		
 	}
 	else if	(AlmanachCounter <= 8)
 	{
-		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_05"); //Nalezli jsme jich u mnoho. Nemyslím si však, e to jsou úplnê všechny.
+		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_05"); //Nalezli jsme jich uÅ¾ mnoho. NemyslÃ­m si vÅ¡ak, Å¾e to jsou ÃºplnÄ™ vÅ¡echny.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_06"); //U jsi mi pâinesl spoustu têch nepâátelskıch knih.
-		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_07"); //Docela by mê pâekvapilo, kdyby mezi sebou mêli ještê nêjakou.
+		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_06"); //UÅ¾ jsi mi pÃ¢inesl spoustu tÄ™ch nepÃ¢Ã¡telskÃ½ch knih.
+		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_07"); //Docela by mÄ™ pÃ¢ekvapilo, kdyby mezi sebou mÄ™li jeÅ¡tÄ™ nÄ™jakou.
 	};
 
-	AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_08"); //Vezmi si tohle. Je to dárek od kláštera, kterı ti pomùe pokadé, kdy se stâetneš se zlem.
+	AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_08"); //Vezmi si tohle. Je to dÃ¡rek od klÃ¡Å¡tera, kterÃ½ ti pomÅ¯Å¾e pokaÅ¾dÃ©, kdyÅ¾ se stÃ¢etneÅ¡ se zlem.
 	if (DIA_Pyrokar_AlmanachBringen_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_09"); //A nezapomeà se jednou za èas podívat do mého magického svitku.
-		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_10"); //Je docela dobâe moné, e se pokusí to samé provést i nêkomu jinému, jeho jméno jsme v têch knihách nenašli.
+		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_09"); //A nezapomeÅ• se jednou za Äas podÃ­vat do mÃ©ho magickÃ©ho svitku.
+		AI_Output			(self, other, "DIA_Pyrokar_AlmanachBringen_11_10"); //Je docela dobÃ¢e moÅ¾nÃ©, Å¾e se pokusÃ­ to samÃ© provÃ©st i nÄ™komu jinÃ©mu, jehoÅ¾ jmÃ©no jsme v tÄ™ch knihÃ¡ch nenaÅ¡li.
 		DIA_Pyrokar_AlmanachBringen_OneTime = TRUE; 
 	};
 	AlmanachGeld	= (AlmanachCount * PyrokarsAlmanachOffer);
@@ -1816,7 +1816,7 @@ instance DIA_Pyrokar_DRACHENTOT		(C_INFO)
 	condition	 = 	DIA_Pyrokar_DRACHENTOT_Condition;
 	information	 = 	DIA_Pyrokar_DRACHENTOT_Info;
 
-	description	 = 	"Všichni draci u jsou mrtví.";
+	description	 = 	"VÅ¡ichni draci uÅ¾ jsou mrtvÃ­.";
 };
 
 func int DIA_Pyrokar_DRACHENTOT_Condition ()
@@ -1829,10 +1829,10 @@ func int DIA_Pyrokar_DRACHENTOT_Condition ()
 
 func void DIA_Pyrokar_DRACHENTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_DRACHENTOT_15_00"); //Všichni draci jsou mrtví.
-	AI_Output			(self, other, "DIA_Pyrokar_DRACHENTOT_11_01"); //To je bezesporu dobrá zpráva. Ale na situaci to nic nemêní. Vypadá to dost beznadêjnê.
-	AI_Output			(self, other, "DIA_Pyrokar_DRACHENTOT_11_02"); //Pátraèi ještê poâád nezmizeli. Právê naopak. Slyšel jsem mnoho zvêstí o tom, e se posledních pár dní jejich poèet ještê zvıšil.
-	AI_Output			(self, other, "DIA_Pyrokar_DRACHENTOT_11_03"); //Vybití drakù mêlo nepâítele zneškodnit, ale asi to nestaèilo. Musíme to zlo vyrvat i s koâeny.
+	AI_Output			(other, self, "DIA_Pyrokar_DRACHENTOT_15_00"); //VÅ¡ichni draci jsou mrtvÃ­.
+	AI_Output			(self, other, "DIA_Pyrokar_DRACHENTOT_11_01"); //To je bezesporu dobrÃ¡ zprÃ¡va. Ale na situaci to nic nemÄ™nÃ­. VypadÃ¡ to dost beznadÄ™jnÄ™.
+	AI_Output			(self, other, "DIA_Pyrokar_DRACHENTOT_11_02"); //PÃ¡traÄi jeÅ¡tÄ™ poÃ¢Ã¡d nezmizeli. PrÃ¡vÄ™ naopak. SlyÅ¡el jsem mnoho zvÄ™stÃ­ o tom, Å¾e se poslednÃ­ch pÃ¡r dnÃ­ jejich poÄet jeÅ¡tÄ™ zvÃ½Å¡il.
+	AI_Output			(self, other, "DIA_Pyrokar_DRACHENTOT_11_03"); //VybitÃ­ drakÅ¯ mÄ™lo nepÃ¢Ã­tele zneÅ¡kodnit, ale asi to nestaÄilo. MusÃ­me to zlo vyrvat i s koÃ¢eny.
 
 };
 
@@ -1860,9 +1860,9 @@ func int DIA_Pyrokar_DERMEISTER_Condition ()
 func void DIA_Pyrokar_DERMEISTER_Info ()
 {
 	AI_Output			(other, self, "DIA_Pyrokar_DERMEISTER_15_00"); //Mluvil jsem s draky.
-	AI_Output			(self, other, "DIA_Pyrokar_DERMEISTER_11_01"); //Co âíkali?
-	AI_Output			(other, self, "DIA_Pyrokar_DERMEISTER_15_02"); //Povídali o moci jejich Pána a o tom, e se usadil Irdorathskıch síních.
-	AI_Output			(self, other, "DIA_Pyrokar_DERMEISTER_11_03"); //Innos s námi. Temnı chrám znovu nabyl své síly a teë vysílá své pâisluhovaèe do našeho svêta.
+	AI_Output			(self, other, "DIA_Pyrokar_DERMEISTER_11_01"); //Co Ã¢Ã­kali?
+	AI_Output			(other, self, "DIA_Pyrokar_DERMEISTER_15_02"); //PovÃ­dali o moci jejich PÃ¡na a o tom, Å¾e se usadil IrdorathskÃ½ch sÃ­nÃ­ch.
+	AI_Output			(self, other, "DIA_Pyrokar_DERMEISTER_11_03"); //Innos s nÃ¡mi. TemnÃ½ chrÃ¡m znovu nabyl svÃ© sÃ­ly a teÃ« vysÃ­lÃ¡ svÃ© pÃ¢isluhovaÄe do naÅ¡eho svÄ™ta.
 
 };
 
@@ -1876,7 +1876,7 @@ instance DIA_Pyrokar_WASISTIRDORATH		(C_INFO)
 	condition	 = 	DIA_Pyrokar_WASISTIRDORATH_Condition;
 	information	 = 	DIA_Pyrokar_WASISTIRDORATH_Info;
 
-	description	 = 	"Co jsou to ty Irdorathské sínê?";
+	description	 = 	"Co jsou to ty IrdorathskÃ© sÃ­nÄ™?";
 };
 
 func int DIA_Pyrokar_WASISTIRDORATH_Condition ()
@@ -1890,19 +1890,19 @@ func int DIA_Pyrokar_WASISTIRDORATH_Condition ()
 
 func void DIA_Pyrokar_WASISTIRDORATH_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_WASISTIRDORATH_15_00"); //Co jsou to ty Irdorathské sínê?
-	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_01"); //Vıchodní chrám vzıvání boha Beliara. V zemi Myrtana jsou celkem ètyâi. Ale tenhle je pravdêpodobnê nejdêsivêjší ze všech.
-	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_02"); //Asi pâed 40 lety byly znièeny chrámy tohoto strašného bostva na západê a na severu.
-	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_03"); //Stateèní rytíâi têch èasù srovnali ty mocné stavby se zemí.
-	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_04"); //Pak se èerné hordy nepâátel staly proti pâevaze hrdinské odvahy rytíâù a paladinù bezmocnımi.
-	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_05"); //Nemêlo by bıt pâíliš têké znièit i ty zbylé dva chrámy a oèistit tak navdy zemi od zla.
-	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_06"); //...ale poté, co druhı chrám padl, prostê zmizely.
-	AI_Output			(other, self, "DIA_Pyrokar_WASISTIRDORATH_15_07"); //(posmêšnê) Zmizely. Celé chrámy. Jo, jasnê.
-	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_08"); //Nesmêj se. Situace je váná. Pokud Irdorathské sínê znovu nabyly své moci, pak nebude nijak snadné nepâítele porazit.
-	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_09"); //Proto ho budeš muset najít a povaovat to za svùj další a ještê têší úkol.
-	AI_Output			(other, self, "DIA_Pyrokar_WASISTIRDORATH_15_10"); //Uvidíme.
+	AI_Output			(other, self, "DIA_Pyrokar_WASISTIRDORATH_15_00"); //Co jsou to ty IrdorathskÃ© sÃ­nÄ™?
+	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_01"); //VÃ½chodnÃ­ chrÃ¡m vzÃ½vÃ¡nÃ­ boha Beliara. V zemi Myrtana jsou celkem ÄtyÃ¢i. Ale tenhle je pravdÄ™podobnÄ™ nejdÄ™sivÄ™jÅ¡Ã­ ze vÅ¡ech.
+	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_02"); //Asi pÃ¢ed 40 lety byly zniÄeny chrÃ¡my tohoto straÅ¡nÃ©ho boÅ¾stva na zÃ¡padÄ™ a na severu.
+	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_03"); //StateÄnÃ­ rytÃ­Ã¢i tÄ™ch ÄasÅ¯ srovnali ty mocnÃ© stavby se zemÃ­.
+	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_04"); //Pak se ÄernÃ© hordy nepÃ¢Ã¡tel staly proti pÃ¢evaze hrdinskÃ© odvahy rytÃ­Ã¢Å¯ a paladinÅ¯ bezmocnÃ½mi.
+	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_05"); //NemÄ™lo by bÃ½t pÃ¢Ã­liÅ¡ tÄ™Å¾kÃ© zniÄit i ty zbylÃ© dva chrÃ¡my a oÄistit tak navÅ¾dy zemi od zla.
+	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_06"); //...ale potÃ©, co druhÃ½ chrÃ¡m padl, prostÄ™ zmizely.
+	AI_Output			(other, self, "DIA_Pyrokar_WASISTIRDORATH_15_07"); //(posmÄ™Å¡nÄ™) Zmizely. CelÃ© chrÃ¡my. Jo, jasnÄ™.
+	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_08"); //NesmÄ™j se. Situace je vÃ¡Å¾nÃ¡. Pokud IrdorathskÃ© sÃ­nÄ™ znovu nabyly svÃ© moci, pak nebude nijak snadnÃ© nepÃ¢Ã­tele porazit.
+	AI_Output			(self, other, "DIA_Pyrokar_WASISTIRDORATH_11_09"); //Proto ho budeÅ¡ muset najÃ­t a povaÅ¾ovat to za svÅ¯j dalÅ¡Ã­ a jeÅ¡tÄ™ tÄ™Å¾Å¡Ã­ Ãºkol.
+	AI_Output			(other, self, "DIA_Pyrokar_WASISTIRDORATH_15_10"); //UvidÃ­me.
 
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Podle Pyrokara jsou Irdorathské sínê ztracenım chrámem, kde uctívaèi vzıvali boha Beliara. Musím jej najít."); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Podle Pyrokara jsou IrdorathskÃ© sÃ­nÄ™ ztracenÃ½m chrÃ¡mem, kde uctÃ­vaÄi vzÃ½vali boha Beliara. MusÃ­m jej najÃ­t."); 
 
 };
 
@@ -1917,7 +1917,7 @@ instance DIA_Pyrokar_BUCHIRDORATH		(C_INFO)
 	condition	 = 	DIA_Pyrokar_BUCHIRDORATH_Condition;
 	information	 = 	DIA_Pyrokar_BUCHIRDORATH_Info;
 
-	description	 = 	"Xardasova kniha, která byla povaována za ztracenou - kde je?";
+	description	 = 	"Xardasova kniha, kterÃ¡ byla povaÅ¾ovÃ¡na za ztracenou - kde je?";
 };
 
 func int DIA_Pyrokar_BUCHIRDORATH_Condition ()
@@ -1932,15 +1932,15 @@ func int DIA_Pyrokar_BUCHIRDORATH_Condition ()
 
 func void DIA_Pyrokar_BUCHIRDORATH_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_BUCHIRDORATH_15_00"); //Xardasova kniha, která byla povaována za ztracenou - kde je?
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_01"); //Èekal jsem, e se na to zeptáš. Ale obávám se, e ti to k nièemu nebude.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_02"); //Byla magicky zapeèetêna. Ukryl jsem ji do jedné z našich podzemních skrıší. Dokonce jsme se u pokoušeli ji otevâít. Marnê.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_03"); //Ten zpropadenı Xardas s námi hraje špinavou hru.
-	AI_Output			(other, self, "DIA_Pyrokar_BUCHIRDORATH_15_04"); //Mùu se na tu knihu podívat?
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_05"); //Jak je libo. Nedokáu si pâedstavit, e bys uspêl, kdy se to nepovedlo nejvêtším mistrùm kláštera.
-	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_06"); //Ale klidnê bê a zkus to, Talamon ti nebude bránit.
+	AI_Output			(other, self, "DIA_Pyrokar_BUCHIRDORATH_15_00"); //Xardasova kniha, kterÃ¡ byla povaÅ¾ovÃ¡na za ztracenou - kde je?
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_01"); //ÄŒekal jsem, Å¾e se na to zeptÃ¡Å¡. Ale obÃ¡vÃ¡m se, Å¾e ti to k niÄemu nebude.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_02"); //Byla magicky zapeÄetÄ™na. Ukryl jsem ji do jednÃ© z naÅ¡ich podzemnÃ­ch skrÃ½Å¡Ã­. Dokonce jsme se uÅ¾ pokouÅ¡eli ji otevÃ¢Ã­t. MarnÄ™.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_03"); //Ten zpropadenÃ½ Xardas s nÃ¡mi hraje Å¡pinavou hru.
+	AI_Output			(other, self, "DIA_Pyrokar_BUCHIRDORATH_15_04"); //MÅ¯Å¾u se na tu knihu podÃ­vat?
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_05"); //Jak je libo. NedokÃ¡Å¾u si pÃ¢edstavit, Å¾e bys uspÄ™l, kdyÅ¾ se to nepovedlo nejvÄ™tÅ¡Ã­m mistrÅ¯m klÃ¡Å¡tera.
+	AI_Output			(self, other, "DIA_Pyrokar_BUCHIRDORATH_11_06"); //Ale klidnÄ™ bÄ™Å¾ a zkus to, Talamon ti nebude brÃ¡nit.
 
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Xardasova kniha Irdorathské sínê je ukryta ve sklepeních kláštera, kde ji stâeí Talamon. Mágové ji ale nedokáí otevâít - její magickou peèeã prı má na svêdomí sám Xardas."); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Xardasova kniha IrdorathskÃ© sÃ­nÄ™ je ukryta ve sklepenÃ­ch klÃ¡Å¡tera, kde ji stÃ¢eÅ¾Ã­ Talamon. MÃ¡govÃ© ji ale nedokÃ¡Å¾Ã­ otevÃ¢Ã­t - jejÃ­ magickou peÄeÄƒ prÃ½ mÃ¡ na svÄ™domÃ­ sÃ¡m Xardas."); 
 	
 	Pyrokar_LetYouPassTalamon = TRUE;
 };
@@ -1955,7 +1955,7 @@ instance DIA_Pyrokar_IRDORATHBOOKOPEN		(C_INFO)
 	condition	 = 	DIA_Pyrokar_IRDORATHBOOKOPEN_Condition;
 	information	 = 	DIA_Pyrokar_IRDORATHBOOKOPEN_Info;
 
-	description	 = 	"Podaâilo se mi otevâít Xardasovu knihu.";
+	description	 = 	"PodaÃ¢ilo se mi otevÃ¢Ã­t Xardasovu knihu.";
 };
 
 func int DIA_Pyrokar_IRDORATHBOOKOPEN_Condition ()
@@ -1969,22 +1969,22 @@ func int DIA_Pyrokar_IRDORATHBOOKOPEN_Condition ()
 
 func void DIA_Pyrokar_IRDORATHBOOKOPEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_IRDORATHBOOKOPEN_15_00"); //Podaâilo se mi otevâít Xardasovu knihu.
-	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_11_01"); //Co? Jak jsi to dokázal? Málem mê to pâivedlo k zoufalství.
+	AI_Output			(other, self, "DIA_Pyrokar_IRDORATHBOOKOPEN_15_00"); //PodaÃ¢ilo se mi otevÃ¢Ã­t Xardasovu knihu.
+	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_11_01"); //Co? Jak jsi to dokÃ¡zal? MÃ¡lem mÄ™ to pÃ¢ivedlo k zoufalstvÃ­.
 
 
 	Info_ClearChoices	(DIA_Pyrokar_IRDORATHBOOKOPEN);
 	Info_AddChoice	(DIA_Pyrokar_IRDORATHBOOKOPEN, "Xardas mi to prozradil.", DIA_Pyrokar_IRDORATHBOOKOPEN_Xardas );
-	Info_AddChoice	(DIA_Pyrokar_IRDORATHBOOKOPEN, "Âekl bych, e štêstí si prostê jednou sedne i na vola, nic jiného.", DIA_Pyrokar_IRDORATHBOOKOPEN_glueck );
+	Info_AddChoice	(DIA_Pyrokar_IRDORATHBOOKOPEN, "Ã‚ekl bych, Å¾e Å¡tÄ™stÃ­ si prostÄ™ jednou sedne i na vola, nic jinÃ©ho.", DIA_Pyrokar_IRDORATHBOOKOPEN_glueck );
 
 };
 func void DIA_Pyrokar_IRDORATHBOOKOPEN_glueck ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_15_00"); //Âekl bych, e štêstí si prostê jednou sedne i na vola, nic jiného.
-	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_01"); //Nevykládej nesmysly. Štêstí!
-	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_02"); //Mnê se to vùbec nedaâilo a pak je to pro nêkoho jako ty úplná hraèka...
-	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_03"); //...proto mám o èem pâemıšlet.
-	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_04"); //Jinak. Jeliko jsi byl jedinım, kdo to dokázal otevâít, asi bude nejlepší, kdy ti bude svêâena do péèe. Alespoà do té doby, ne pâekonáme tuhle krizi.
+	AI_Output			(other, self, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_15_00"); //Ã‚ekl bych, Å¾e Å¡tÄ™stÃ­ si prostÄ™ jednou sedne i na vola, nic jinÃ©ho.
+	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_01"); //NevyklÃ¡dej nesmysly. Å tÄ™stÃ­!
+	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_02"); //MnÄ™ se to vÅ¯bec nedaÃ¢ilo a pak je to pro nÄ™koho jako ty ÃºplnÃ¡ hraÄka...
+	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_03"); //...proto mÃ¡m o Äem pÃ¢emÃ½Å¡let.
+	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_04"); //Jinak. JelikoÅ¾ jsi byl jedinÃ½m, kdo to dokÃ¡zal otevÃ¢Ã­t, asi bude nejlepÅ¡Ã­, kdyÅ¾ ti bude svÄ™Ã¢ena do pÃ©Äe. AlespoÅ• do tÃ© doby, neÅ¾ pÃ¢ekonÃ¡me tuhle krizi.
 
 	B_GivePlayerXP (XP_Ambient);
 	Info_ClearChoices	(DIA_Pyrokar_IRDORATHBOOKOPEN);
@@ -1994,8 +1994,8 @@ func void DIA_Pyrokar_IRDORATHBOOKOPEN_glueck ()
 func void DIA_Pyrokar_IRDORATHBOOKOPEN_Xardas ()
 {
 	AI_Output			(other, self, "DIA_Pyrokar_IRDORATHBOOKOPEN_Xardas_15_00"); //Xardas mi to prozradil.
-	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_Xardas_11_01"); //Á, tak je to. Jak zajímavé. Jen ve tvém vlastním zájmu doufám, e tê Xardasùv špatnı vliv ještê nezkazil.
-	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_Xardas_11_02"); //Varuju tê. Nepodlehni úskokùm toho starého zla. Mohl bys toho pozdêji litovat.
+	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_Xardas_11_01"); //Ã, tak je to. Jak zajÃ­mavÃ©. Jen ve tvÃ©m vlastnÃ­m zÃ¡jmu doufÃ¡m, Å¾e tÄ™ XardasÅ¯v Å¡patnÃ½ vliv jeÅ¡tÄ™ nezkazil.
+	AI_Output			(self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_Xardas_11_02"); //Varuju tÄ™. Nepodlehni ÃºskokÅ¯m toho starÃ©ho zla. Mohl bys toho pozdÄ™ji litovat.
 
 	B_GivePlayerXP (XP_Ambient);
 	Info_ClearChoices	(DIA_Pyrokar_IRDORATHBOOKOPEN);
@@ -2012,7 +2012,7 @@ instance DIA_Pyrokar_GEHEIMEBIBLIOTHEK		(C_INFO)
 	condition	 = 	DIA_Pyrokar_GEHEIMEBIBLIOTHEK_Condition;
 	information	 = 	DIA_Pyrokar_GEHEIMEBIBLIOTHEK_Info;
 
-	description	 = 	"V té knize je zmínka o tajné knihovnê.";
+	description	 = 	"V tÃ© knize je zmÃ­nka o tajnÃ© knihovnÄ™.";
 };
 
 func int DIA_Pyrokar_GEHEIMEBIBLIOTHEK_Condition ()
@@ -2028,13 +2028,13 @@ func int DIA_Pyrokar_GEHEIMEBIBLIOTHEK_Condition ()
 
 func void DIA_Pyrokar_GEHEIMEBIBLIOTHEK_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_15_00"); //V té knize je zmínka o tajné knihovnê.
-	AI_Output			(self, other, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_11_01"); //O èem to mluvíš?
-	AI_Output			(other, self, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_15_02"); //O knihovnê tady za tou zdí. Trefil jsem se?
-	AI_Output			(self, other, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_11_03"); //Ne. Kde jsi âíkal, e by ta knihovna mêla bıt?
-	AI_Output			(other, self, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_15_04"); //Rozumím. Nemáš tušení. Mmh.
+	AI_Output			(other, self, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_15_00"); //V tÃ© knize je zmÃ­nka o tajnÃ© knihovnÄ™.
+	AI_Output			(self, other, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_11_01"); //O Äem to mluvÃ­Å¡?
+	AI_Output			(other, self, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_15_02"); //O knihovnÄ™ tady za tou zdÃ­. Trefil jsem se?
+	AI_Output			(self, other, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_11_03"); //Ne. Kde jsi Ã¢Ã­kal, Å¾e by ta knihovna mÄ™la bÃ½t?
+	AI_Output			(other, self, "DIA_Pyrokar_GEHEIMEBIBLIOTHEK_15_04"); //RozumÃ­m. NemÃ¡Å¡ tuÅ¡enÃ­. Mmh.
 	
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Pyrokar o tajné knihovnê nic neví - pravdêpodobnê do ní mêl pâístup pouze Xardas."); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Pyrokar o tajnÃ© knihovnÄ™ nic nevÃ­ - pravdÄ™podobnÄ™ do nÃ­ mÄ™l pÃ¢Ã­stup pouze Xardas."); 
 
 };
 
@@ -2048,7 +2048,7 @@ instance DIA_Pyrokar_SCKNOWSWAYTOIRDORATH		(C_INFO)
 	condition	 = 	DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_Condition;
 	information	 = 	DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_Info;
 
-	description	 = 	"Vím, kde hledat Irdorathské sínê.";
+	description	 = 	"VÃ­m, kde hledat IrdorathskÃ© sÃ­nÄ™.";
 };
 
 func int DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_Condition ()
@@ -2063,15 +2063,15 @@ func int DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_Condition ()
 
 func void DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_15_00"); //Vím, kde hledat Irdorathské sínê.
-	AI_Output			(other, self, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_15_01"); //Ten chrám je na ostrovê. Nalezl jsem námoâní mapu, na které je zachycena cesta.
-	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_02"); //To je skvêlé. Tak to budeš potâebovat loë a posádku, aby ses mohl postavit nepâíteli.
-	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_03"); //Ale nezapomeà, e se musíš dobâe pâipravit, abys byl schopen porazit pána Irdorathu.
-	AI_Output			(other, self, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_15_04"); //Kde najdu nêjakou posádku?
-	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_05"); //Tvoje posádka by mêla sestávat z muù, kterım se dá vêâit.
-	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_06"); //Promluv si se svımi pâáteli a popâemıšlej, kdo by se ti mohl hodit, a budeš na ostrovê.
-	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_07"); //Taky budeš potâebovat mága. Ale bohuel, já nemùu nikoho z kláštera postrádat.
-	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_08"); //Budeš se muset zeptat nêjakého mága, co neije v klášteâe.
+	AI_Output			(other, self, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_15_00"); //VÃ­m, kde hledat IrdorathskÃ© sÃ­nÄ™.
+	AI_Output			(other, self, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_15_01"); //Ten chrÃ¡m je na ostrovÄ™. Nalezl jsem nÃ¡moÃ¢nÃ­ mapu, na kterÃ© je zachycena cesta.
+	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_02"); //To je skvÄ™lÃ©. Tak to budeÅ¡ potÃ¢ebovat loÃ« a posÃ¡dku, aby ses mohl postavit nepÃ¢Ã­teli.
+	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_03"); //Ale nezapomeÅ•, Å¾e se musÃ­Å¡ dobÃ¢e pÃ¢ipravit, abys byl schopen porazit pÃ¡na Irdorathu.
+	AI_Output			(other, self, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_15_04"); //Kde najdu nÄ™jakou posÃ¡dku?
+	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_05"); //Tvoje posÃ¡dka by mÄ™la sestÃ¡vat z muÅ¾Å¯, kterÃ½m se dÃ¡ vÄ™Ã¢it.
+	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_06"); //Promluv si se svÃ½mi pÃ¢Ã¡teli a popÃ¢emÃ½Å¡lej, kdo by se ti mohl hodit, aÅ¾ budeÅ¡ na ostrovÄ™.
+	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_07"); //Taky budeÅ¡ potÃ¢ebovat mÃ¡ga. Ale bohuÅ¾el, jÃ¡ nemÅ¯Å¾u nikoho z klÃ¡Å¡tera postrÃ¡dat.
+	AI_Output			(self, other, "DIA_Pyrokar_SCKNOWSWAYTOIRDORATH_11_08"); //BudeÅ¡ se muset zeptat nÄ™jakÃ©ho mÃ¡ga, co neÅ¾ije v klÃ¡Å¡teÃ¢e.
 
 };
 
@@ -2085,7 +2085,7 @@ instance DIA_Pyrokar_SCWILLJORGEN		(C_INFO)
 	condition	 = 	DIA_Pyrokar_SCWILLJORGEN_Condition;
 	information	 = 	DIA_Pyrokar_SCWILLJORGEN_Info;
 
-	description	 = 	"Jorgen je zkušenı námoâník.";
+	description	 = 	"Jorgen je zkuÅ¡enÃ½ nÃ¡moÃ¢nÃ­k.";
 };
 
 func int DIA_Pyrokar_SCWILLJORGEN_Condition ()
@@ -2100,13 +2100,13 @@ func int DIA_Pyrokar_SCWILLJORGEN_Condition ()
 
 func void DIA_Pyrokar_SCWILLJORGEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_SCWILLJORGEN_15_00"); //Jorgen je zkušenım námoâníkem. Mohl by mi pomoci dostat se na ostrov Irdorath.
-	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_01"); //Obávám se, e to nebude tak snadné.
-	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_02"); //Upsal se práci pro bratrstvo. Nesloil nám ani poplatek, ani nám nepâivedl ovci.
-	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_03"); //Jorgen musí nejprve dokonèit svou práci a pak si ho mùeš odvést, pokud budeš mít zájem.
+	AI_Output			(other, self, "DIA_Pyrokar_SCWILLJORGEN_15_00"); //Jorgen je zkuÅ¡enÃ½m nÃ¡moÃ¢nÃ­kem. Mohl by mi pomoci dostat se na ostrov Irdorath.
+	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_01"); //ObÃ¡vÃ¡m se, Å¾e to nebude tak snadnÃ©.
+	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_02"); //Upsal se prÃ¡ci pro bratrstvo. NesloÅ¾il nÃ¡m ani poplatek, ani nÃ¡m nepÃ¢ivedl ovci.
+	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_03"); //Jorgen musÃ­ nejprve dokonÄit svou prÃ¡ci a pak si ho mÅ¯Å¾eÅ¡ odvÃ©st, pokud budeÅ¡ mÃ­t zÃ¡jem.
 	AI_Output			(other, self, "DIA_Pyrokar_SCWILLJORGEN_15_04"); //Jak dlouho to bude trvat?
-	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_05"); //Spotâeboval tolik zásob, kolik by novicovi staèilo pâinejmenším na tâi tıdny. A to za jeden den.
-	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_06"); //Take ho nemùu nechat jít dâív, ne si v naší zahradê tvrdê odpracuje tâi mêsíce.
+	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_05"); //SpotÃ¢eboval tolik zÃ¡sob, kolik by novicovi staÄilo pÃ¢inejmenÅ¡Ã­m na tÃ¢i tÃ½dny. A to za jeden den.
+	AI_Output			(self, other, "DIA_Pyrokar_SCWILLJORGEN_11_06"); //TakÅ¾e ho nemÅ¯Å¾u nechat jÃ­t dÃ¢Ã­v, neÅ¾ si v naÅ¡Ã­ zahradÄ™ tvrdÄ™ odpracuje tÃ¢i mÄ™sÃ­ce.
 
 };
 
@@ -2120,7 +2120,7 @@ instance DIA_Pyrokar_MACHDTFREI		(C_INFO)
 	condition	 = 	DIA_Pyrokar_MACHDTFREI_Condition;
 	information	 = 	DIA_Pyrokar_MACHDTFREI_Info;
 
-	description	 = 	"Co musím udêlat, abych si mohl Jorgena odvést hned teë?";
+	description	 = 	"Co musÃ­m udÄ™lat, abych si mohl Jorgena odvÃ©st hned teÃ«?";
 };
 
 func int DIA_Pyrokar_MACHDTFREI_Condition ()
@@ -2134,18 +2134,18 @@ func int DIA_Pyrokar_MACHDTFREI_Condition ()
 
 func void DIA_Pyrokar_MACHDTFREI_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_MACHDTFREI_15_00"); //Co musím udêlat, abych si mohl Jorgena odvést hned teë?
-	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_01"); //Mmh. Samozâejmê, je tu jedna vêc, kterou bys mohl udêlat. Mohly by ti s tím pomoci tvé dobré vztahy s Xardasem.
-	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_02"); //Všiml jsem si, e se posledních pár dní dêjí na jeho vêi divné vêci.
-	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_03"); //Mnoho lidí âíká, e odtamtud v noci vycházejí rùzné skâeky a e nad jeho vêí tancují divná svêtla.
-	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_04"); //Jako bychom nemêli dost svıch vlastních starostí. Bê zjistit, co se tam dêje, a zaâië, aã to pâestane.
-	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_05"); //Pak dostaneš Jorgena.
+	AI_Output			(other, self, "DIA_Pyrokar_MACHDTFREI_15_00"); //Co musÃ­m udÄ™lat, abych si mohl Jorgena odvÃ©st hned teÃ«?
+	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_01"); //Mmh. SamozÃ¢ejmÄ™, je tu jedna vÄ™c, kterou bys mohl udÄ™lat. Mohly by ti s tÃ­m pomoci tvÃ© dobrÃ© vztahy s Xardasem.
+	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_02"); //VÅ¡iml jsem si, Å¾e se poslednÃ­ch pÃ¡r dnÃ­ dÄ™jÃ­ na jeho vÄ™Å¾i divnÃ© vÄ™ci.
+	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_03"); //Mnoho lidÃ­ Ã¢Ã­kÃ¡, Å¾e odtamtud v noci vychÃ¡zejÃ­ rÅ¯znÃ© skÃ¢eky a Å¾e nad jeho vÄ™Å¾Ã­ tancujÃ­ divnÃ¡ svÄ™tla.
+	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_04"); //Jako bychom nemÄ™li dost svÃ½ch vlastnÃ­ch starostÃ­. BÄ™Å¾ zjistit, co se tam dÄ™je, a zaÃ¢iÃ«, aÄƒ to pÃ¢estane.
+	AI_Output			(self, other, "DIA_Pyrokar_MACHDTFREI_11_05"); //Pak dostaneÅ¡ Jorgena.
 
 	MIS_PyrokarClearDemonTower = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_PyrokarClearDemonTower,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_PyrokarClearDemonTower,LOG_RUNNING);
-	B_LogEntry (TOPIC_PyrokarClearDemonTower,"V Xardasovê vêi se dêjí divné vêci. Pokud se o nê postarám, mohu vzít Jorgena s sebou.");
+	B_LogEntry (TOPIC_PyrokarClearDemonTower,"V XardasovÄ™ vÄ™Å¾i se dÄ™jÃ­ divnÃ© vÄ™ci. Pokud se o nÄ™ postarÃ¡m, mohu vzÃ­t Jorgena s sebou.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -2158,7 +2158,7 @@ instance DIA_Pyrokar_DTCLEARED		(C_INFO)
 	condition	 = 	DIA_Pyrokar_DTCLEARED_Condition;
 	information	 = 	DIA_Pyrokar_DTCLEARED_Info;
 
-	description	 = 	"Povauj tu vêc s Xardasovou vêí za vyâízenou.";
+	description	 = 	"PovaÅ¾uj tu vÄ™c s Xardasovou vÄ™Å¾Ã­ za vyÃ¢Ã­zenou.";
 };
 
 func int DIA_Pyrokar_DTCLEARED_Condition ()
@@ -2177,10 +2177,10 @@ func int DIA_Pyrokar_DTCLEARED_Condition ()
 
 func void DIA_Pyrokar_DTCLEARED_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_DTCLEARED_15_00"); //Povauj tu vêc s Xardasovou vêí za vyâízenou.
-	AI_Output			(self, other, "DIA_Pyrokar_DTCLEARED_11_01"); //Tak co se tam dêlo... ne, poèkej, radši to nechci vêdêt.
-	AI_Output			(self, other, "DIA_Pyrokar_DTCLEARED_11_02"); //Jestli poâád chceš Jorgena, tak bê a vezmi ho s sebou na tu svou cestu.
-	AI_Output			(self, other, "DIA_Pyrokar_DTCLEARED_11_03"); //Nechã tê Innos ochraàuje.
+	AI_Output			(other, self, "DIA_Pyrokar_DTCLEARED_15_00"); //PovaÅ¾uj tu vÄ™c s Xardasovou vÄ™Å¾Ã­ za vyÃ¢Ã­zenou.
+	AI_Output			(self, other, "DIA_Pyrokar_DTCLEARED_11_01"); //Tak co se tam dÄ™lo... ne, poÄkej, radÅ¡i to nechci vÄ™dÄ™t.
+	AI_Output			(self, other, "DIA_Pyrokar_DTCLEARED_11_02"); //Jestli poÃ¢Ã¡d chceÅ¡ Jorgena, tak bÄ™Å¾ a vezmi ho s sebou na tu svou cestu.
+	AI_Output			(self, other, "DIA_Pyrokar_DTCLEARED_11_03"); //NechÄƒ tÄ™ Innos ochraÅ•uje.
 	MIS_PyrokarClearDemonTower = LOG_SUCCESS;
 	B_GivePlayerXP (XP_PyrokarClearDemonTower);
 };
@@ -2199,7 +2199,7 @@ instance DIA_Pyrokar_AmulettofDeath		(C_INFO)
 	condition	 = 	DIA_Pyrokar_AmulettofDeath_Condition;
 	information	 = 	DIA_Pyrokar_AmulettofDeath_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Proroctví se zmiàuje o posvátné Innosovê auâe.";
+	description	 = 	"ProroctvÃ­ se zmiÅ•uje o posvÃ¡tnÃ© InnosovÄ™ auÃ¢e.";
 };
 
 func int DIA_Pyrokar_AmulettofDeath_Condition ()
@@ -2213,8 +2213,8 @@ func int DIA_Pyrokar_AmulettofDeath_Condition ()
 
 func void DIA_Pyrokar_AmulettofDeath_Info ()
 {
-	AI_Output			(other, self, "DIA_Pyrokar_AmulettofDeath_15_00"); //Proroctví se zmiàuje o posvátné Innosovê auâe.
-	AI_Output			(self, other, "DIA_Pyrokar_AmulettofDeath_11_01"); //Innosova aura je amulet, kterı smêjí nosit jen nejvêtší mágové své doby.
+	AI_Output			(other, self, "DIA_Pyrokar_AmulettofDeath_15_00"); //ProroctvÃ­ se zmiÅ•uje o posvÃ¡tnÃ© InnosovÄ™ auÃ¢e.
+	AI_Output			(self, other, "DIA_Pyrokar_AmulettofDeath_11_01"); //Innosova aura je amulet, kterÃ½ smÄ™jÃ­ nosit jen nejvÄ™tÅ¡Ã­ mÃ¡govÃ© svÃ© doby.
 	
 	Info_ClearChoices (DIA_Pyrokar_AmulettofDeath);
 	Info_AddChoice (DIA_Pyrokar_AmulettofDeath,DIALOG_BACK,DIA_Pyrokar_AmulettofDeath_BAck);
@@ -2230,12 +2230,12 @@ FUNC VOID DIA_Pyrokar_AmulettofDeath_BAck ()
 FUNC VOID DIA_Pyrokar_AmulettofDeath_CanHaveIt ()
 {
 	AI_Output (other,self ,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_15_00"); //Mohl bych ho dostat?
-	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_11_01"); //Coe? Co s ním chceš dêlat?
+	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_11_01"); //CoÅ¾e? Co s nÃ­m chceÅ¡ dÄ™lat?
 	AI_Output (other,self ,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_15_02"); //Postavit se drakovi.
-	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_11_03"); //Ano, samozâejmê. Dám ti ten amulet, ale zacházej s ním opatrnê.
-	AI_Output (other,self ,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_15_04"); //Jo, jasnê.
-	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_11_05"); //Nerad bych jej musel pozdêji vykupovat od nêjakého kupce.
-	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_11_06"); //Pouívej ho moudâe, a nechã tê Innos stále ochraàuje.
+	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_11_03"); //Ano, samozÃ¢ejmÄ™. DÃ¡m ti ten amulet, ale zachÃ¡zej s nÃ­m opatrnÄ™.
+	AI_Output (other,self ,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_15_04"); //Jo, jasnÄ™.
+	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_11_05"); //Nerad bych jej musel pozdÄ™ji vykupovat od nÄ™jakÃ©ho kupce.
+	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_CanHaveIt_11_06"); //PouÅ¾Ã­vej ho moudÃ¢e, a nechÄƒ tÄ™ Innos stÃ¡le ochraÅ•uje.
 	
 	CreateInvItems (self,ItAm_AmulettofDeath_Mis,1);
 	B_GiveInvItems (self,other,ItAm_AmulettOfDeath_MIS,1);
@@ -2246,8 +2246,8 @@ FUNC VOID DIA_Pyrokar_AmulettofDeath_CanHaveIt ()
 FUNC VOID DIA_Pyrokar_AmulettofDeath_Amulett()
 {
 	AI_Output (other,self ,"DIA_Pyrokar_AmulettofDeath_Amulett_15_00"); //Co je to za amulet?
-	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_Amulett_11_01"); //Âíká se, e ho ukul sám Innos a dal jej lidstvu jako dar.
-	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_Amulett_11_02"); //Ochraàuje toho, kdo jej nosí, pâed jakoukoliv újmou.
+	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_Amulett_11_01"); //Ã‚Ã­kÃ¡ se, Å¾e ho ukul sÃ¡m Innos a dal jej lidstvu jako dar.
+	AI_Output (self ,other,"DIA_Pyrokar_AmulettofDeath_Amulett_11_02"); //OchraÅ•uje toho, kdo jej nosÃ­, pÃ¢ed jakoukoliv Ãºjmou.
 };
 
 
@@ -2275,34 +2275,34 @@ func int DIA_Pyrokar_PotionofDeath_Condition ()
 func void DIA_Pyrokar_PotionofDeath_Info ()
 {
 	AI_Output		(other, self, "DIA_Pyrokar_PotionofDeath_15_00"); //Co jsou Innosovy slzy?
-	AI_Output		(self, other, "DIA_Pyrokar_PotionofDeath_11_01"); //Innosovy slzy jsou jen souèástí staré báchorky pro dêti. Vypráví o tom, jak na poèátku èasù zaèala bitva mezi Innosem a Beliarem.
+	AI_Output		(self, other, "DIA_Pyrokar_PotionofDeath_11_01"); //Innosovy slzy jsou jen souÄÃ¡stÃ­ starÃ© bÃ¡chorky pro dÄ™ti. VyprÃ¡vÃ­ o tom, jak na poÄÃ¡tku ÄasÅ¯ zaÄala bitva mezi Innosem a Beliarem.
 
 	Info_ClearChoices (DIA_Pyrokar_PotionofDeath);
 	Info_AddChoice (DIA_Pyrokar_PotionofDeath,"Aha.",DIA_Pyrokar_PotionofDeath_Aha);
-	Info_AddChoice (DIA_Pyrokar_PotionofDeath,"Našel jsem tenhle lektvar.",DIA_Pyrokar_PotionofDeath_Potion);
+	Info_AddChoice (DIA_Pyrokar_PotionofDeath,"NaÅ¡el jsem tenhle lektvar.",DIA_Pyrokar_PotionofDeath_Potion);
 };
 
 FUNC VOID DIA_Pyrokar_PotionofDeath_Aha()
 {
 	AI_Output (other,self ,"DIA_Pyrokar_PotionofDeath_Aha_15_00"); //Aha.
-	AI_Output (self ,other,"DIA_Pyrokar_PotionofDeath_Aha_11_01"); //Nevím, jestli si jsi plnê vêdom toho, jaká je naše situace, ale têko dokáu uvêâit tomu, e bys doufal, e nepâítele porazíme pohádkou pro dêti.
+	AI_Output (self ,other,"DIA_Pyrokar_PotionofDeath_Aha_11_01"); //NevÃ­m, jestli si jsi plnÄ™ vÄ™dom toho, jakÃ¡ je naÅ¡e situace, ale tÄ™Å¾ko dokÃ¡Å¾u uvÄ™Ã¢it tomu, Å¾e bys doufal, Å¾e nepÃ¢Ã­tele porazÃ­me pohÃ¡dkou pro dÄ™ti.
 
 	Info_ClearChoices (DIA_Pyrokar_PotionofDeath);
 };
 
 FUNC VOID DIA_Pyrokar_PotionofDeath_Potion ()
 {
-	AI_Output (other,self ,"DIA_Pyrokar_PotionofDeath_Potion_15_00"); //Našel jsem tenhle lektvar.
-	AI_Output (self ,other,"DIA_Pyrokar_PotionofDeath_Potion_11_01"); //To není moné. Tomu nemùu uvêâit.
-	AI_Output (other,self ,"DIA_Pyrokar_PotionofDeath_Potion_15_02"); //Co se dêje?
-	AI_Output (self ,other,"DIA_Pyrokar_PotionofDeath_Potion_11_03"); //Pokud jsou tohle skuteèné Innosovy slzy, pak...
-	AI_Output (other,self ,"DIA_Pyrokar_PotionofDeath_Potion_15_04"); //(skoèí do âeèi) Têko.
-	AI_Output (self ,other,"DIA_Pyrokar_PotionofDeath_Potion_11_05"); //Nepâerušuj mê. Pokud jsou tohle skuteèné Innosovy slzy, pak máme proti našemu nepâíteli mocnou zbraà.
+	AI_Output (other,self ,"DIA_Pyrokar_PotionofDeath_Potion_15_00"); //NaÅ¡el jsem tenhle lektvar.
+	AI_Output (self ,other,"DIA_Pyrokar_PotionofDeath_Potion_11_01"); //To nenÃ­ moÅ¾nÃ©. Tomu nemÅ¯Å¾u uvÄ™Ã¢it.
+	AI_Output (other,self ,"DIA_Pyrokar_PotionofDeath_Potion_15_02"); //Co se dÄ™je?
+	AI_Output (self ,other,"DIA_Pyrokar_PotionofDeath_Potion_11_03"); //Pokud jsou tohle skuteÄnÃ© Innosovy slzy, pak...
+	AI_Output (other,self ,"DIA_Pyrokar_PotionofDeath_Potion_15_04"); //(skoÄÃ­ do Ã¢eÄi) TÄ™Å¾ko.
+	AI_Output (self ,other,"DIA_Pyrokar_PotionofDeath_Potion_11_05"); //NepÃ¢eruÅ¡uj mÄ™. Pokud jsou tohle skuteÄnÃ© Innosovy slzy, pak mÃ¡me proti naÅ¡emu nepÃ¢Ã­teli mocnou zbraÅ•.
 	
 	Info_ClearChoices (DIA_Pyrokar_PotionofDeath);
 	Info_AddChoice 	(DIA_Pyrokar_PotionofDeath,Dialog_back,DIA_Pyrokar_PotionofDeath_BACK);
 	Info_AddChoice 	(DIA_Pyrokar_PotionofDeath,"Tak co jsou ty Innosovy slzy?",DIA_Pyrokar_PotionofDeath_Teardrops);
-	Info_AddChoice 	(DIA_Pyrokar_PotionofDeath,"Co myslíš tou 'zbraní'?",DIA_Pyrokar_PotionofDeath_Weapon);
+	Info_AddChoice 	(DIA_Pyrokar_PotionofDeath,"Co myslÃ­Å¡ tou 'zbranÃ­'?",DIA_Pyrokar_PotionofDeath_Weapon);
 };
 
 FUNC VOID DIA_Pyrokar_PotionofDeath_BACK()
@@ -2313,24 +2313,24 @@ FUNC VOID DIA_Pyrokar_PotionofDeath_BACK()
 FUNC VOID DIA_Pyrokar_PotionofDeath_Teardrops()
 {
 	AI_Output	(other,self ,"DIA_Pyrokar_PotionofDeath_Teardrops_15_00"); //Tak co jsou ty Innosovy slzy?
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_01"); //Kdy si Innos uvêdomil, e aby zachránil svêt, musí bojovat proti Beliarovi, svému vlastnímu bratrovi, byl jeho zármutek nevyslovitelnı.
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_02"); //Zaèal plakat a jeho slzy spadly dolù na svêt. Bylo jich mnoho, protoe jeho srdce bylo tak plné zármutku, e plakal celıch 13 let.
-	AI_Output	(other,self ,"DIA_Pyrokar_PotionofDeath_Teardrops_15_03"); //Jdi pâímo k vêci.
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_04"); //Všechny, kdo tyto slzy našli a okusili je, rázem naplnila nadpâirozená síla a bystrost. Poznali moudrost Innosova stvoâení a zaèali mu slouit.
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_05"); //Byli to první èlenové Spoleèenstva ohnê. Ty slzy jim daly sílu, odvahu a moudrost. Ale to u bylo velice dávno, a u více ne 250 let nikdo Innosovy slzy nespatâil.
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_01"); //KdyÅ¾ si Innos uvÄ™domil, Å¾e aby zachrÃ¡nil svÄ™t, musÃ­ bojovat proti Beliarovi, svÃ©mu vlastnÃ­mu bratrovi, byl jeho zÃ¡rmutek nevyslovitelnÃ½.
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_02"); //ZaÄal plakat a jeho slzy spadly dolÅ¯ na svÄ™t. Bylo jich mnoho, protoÅ¾e jeho srdce bylo tak plnÃ© zÃ¡rmutku, Å¾e plakal celÃ½ch 13 let.
+	AI_Output	(other,self ,"DIA_Pyrokar_PotionofDeath_Teardrops_15_03"); //Jdi pÃ¢Ã­mo k vÄ™ci.
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_04"); //VÅ¡echny, kdo tyto slzy naÅ¡li a okusili je, rÃ¡zem naplnila nadpÃ¢irozenÃ¡ sÃ­la a bystrost. Poznali moudrost Innosova stvoÃ¢enÃ­ a zaÄali mu slouÅ¾it.
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_05"); //Byli to prvnÃ­ ÄlenovÃ© SpoleÄenstva ohnÄ™. Ty slzy jim daly sÃ­lu, odvahu a moudrost. Ale to uÅ¾ bylo velice dÃ¡vno, a uÅ¾ vÃ­ce neÅ¾ 250 let nikdo Innosovy slzy nespatÃ¢il.
 	
 	Info_ClearChoices (DIA_Pyrokar_PotionofDeath); 
 };
 
 FUNC VOID DIA_Pyrokar_PotionofDeath_Weapon ()
 {
-	AI_Output 	(other,self ,"DIA_Pyrokar_PotionofDeath_Weapon_15_00"); //Co myslíš tou "zbraní"?
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_01"); //Legenda vypráví, e pod vlivem této látky dokázali Innosovi váleèníci vykonávat témêâ nadlidské skutky.
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_02"); //Nedotkla se jich ádná únava a byli silní jako dva medvêdi.
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_03"); //Nejvêtší hrdinské èiny starıch dnù bylo moné vykonat jen s pomocí Innosovıch slz.
-	AI_Output 	(other,self ,"DIA_Pyrokar_PotionofDeath_Weapon_15_04"); //Rozumím.
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_05"); //Avšak ty slzy mohou pâinést také utrpení a smrt. Tento lektvar mohou pít jen èlenové našeho âádu.
-	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_06"); //Kohokoliv jiného - dokonce i paladiny našeho Pána - by okamitê potkala krutá smrt.
+	AI_Output 	(other,self ,"DIA_Pyrokar_PotionofDeath_Weapon_15_00"); //Co myslÃ­Å¡ tou "zbranÃ­"?
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_01"); //Legenda vyprÃ¡vÃ­, Å¾e pod vlivem tÃ©to lÃ¡tky dokÃ¡zali Innosovi vÃ¡leÄnÃ­ci vykonÃ¡vat tÃ©mÄ™Ã¢ nadlidskÃ© skutky.
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_02"); //Nedotkla se jich Å¾Ã¡dnÃ¡ Ãºnava a byli silnÃ­ jako dva medvÄ™di.
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_03"); //NejvÄ™tÅ¡Ã­ hrdinskÃ© Äiny starÃ½ch dnÅ¯ bylo moÅ¾nÃ© vykonat jen s pomocÃ­ InnosovÃ½ch slz.
+	AI_Output 	(other,self ,"DIA_Pyrokar_PotionofDeath_Weapon_15_04"); //RozumÃ­m.
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_05"); //AvÅ¡ak ty slzy mohou pÃ¢inÃ©st takÃ© utrpenÃ­ a smrt. Tento lektvar mohou pÃ­t jen ÄlenovÃ© naÅ¡eho Ã¢Ã¡du.
+	AI_Output 	(self ,other,"DIA_Pyrokar_PotionofDeath_Weapon_11_06"); //Kohokoliv jinÃ©ho - dokonce i paladiny naÅ¡eho PÃ¡na - by okamÅ¾itÄ™ potkala krutÃ¡ smrt.
 
 	Npc_RemoveInvItems 	(hero,ItPo_PotionOfDeath_01_Mis,1);
 	CreateInvItems 		(hero,ItPo_PotionOfDeath_02_Mis,1);

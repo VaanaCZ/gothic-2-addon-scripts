@@ -50,7 +50,7 @@ func void DIA_Hilda_Hallo_Info ()
 {
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_Hallo_17_00"); //Hej, kdo tÍ sem zval? OkamûitÍ vypadni. Nikdo tÍ tu nechce.
+			AI_Output (self, other, "DIA_Hilda_Hallo_17_00"); //Hej, kdo tƒô sem zval? Okam≈æitƒô vypadni. Nikdo tƒô tu nechce.
 		}
 	else
 		{
@@ -70,7 +70,7 @@ instance DIA_Hilda_WasZuEssen (C_INFO)
 	condition	= DIA_Hilda_WasZuEssen_Condition;
 	information	= DIA_Hilda_WasZuEssen_Info;
 	permanent	= TRUE;
-	description = "M˘ûeö mi d·t nÍco k jÌdlu?";
+	description = "M≈Ø≈æe≈° mi d√°t nƒôco k j√≠dlu?";
 };
 
 func int DIA_Hilda_WasZuEssen_Condition ()
@@ -88,7 +88,7 @@ func void DIA_Hilda_WasZuEssen_Info ()
 		{
 			var int Rueben_TagNull;
 			
-			AI_Output (other, self, "DIA_Hilda_WasZuEssen_15_00"); //M˘ûeö mi d·t nÍco k jÌdlu?
+			AI_Output (other, self, "DIA_Hilda_WasZuEssen_15_00"); //M≈Ø≈æe≈° mi d√°t nƒôco k j√≠dlu?
 				
 			if (MIS_Lobart_Rueben == LOG_SUCCESS)
 				{
@@ -106,39 +106,39 @@ func void DIA_Hilda_WasZuEssen_Info ()
 						else if (Wld_GetDay() == 0)
 						&& 		(Rueben_TagNull == FALSE)
 						{
-							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_02"); //Pro dalöÌ si m˘ûeö p‚ijÌt zase zÌtra.
+							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_02"); //Pro dal≈°√≠ si m≈Ø≈æe≈° p√¢ij√≠t zase z√≠tra.
 							B_GiveInvItems (self, other, ItFo_Stew, 1);
 							Hilda_Stew_Day = Wld_GetDay();
 							Rueben_TagNull = TRUE;
 							
 							Log_CreateTopic (Topic_Bonus,LOG_NOTE);
-							B_LogEntry (Topic_Bonus,"Kaûd˝ den dostanu od Hildy trochu duöen˝ch tu‚Ìn˘.");
+							B_LogEntry (Topic_Bonus,"Ka≈æd√Ω den dostanu od Hildy trochu du≈°en√Ωch tu√¢√≠n≈Ø.");
 						}
 						else //heute schon bekommen
 						{
-							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_03"); //DneönÌ porci uû jsi dostal! Vra„ se pozdÍji.
+							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_03"); //Dne≈°n√≠ porci u≈æ jsi dostal! VraƒÉ se pozdƒôji.
 						};
 					}
-					else //Pfanne zu sp‰t
+					else //Pfanne zu sp√§t
 					{
-						AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_04"); //Fl·kaËe tu nekrmÌme. Vypadni!
+						AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_04"); //Fl√°kaƒçe tu nekrm√≠me. Vypadni!
 						AI_StopProcessInfos (self); 
 					};
 				}
 				else
 				{
-					AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_05"); //NajÌst dostanou jen ti, co tu pracujÌ!
+					AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_05"); //Naj√≠st dostanou jen ti, co tu pracuj√≠!
 				};
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_06"); //UrËitÍ m·ö dost zlata, aby sis mohl s·m nÍco koupit ve mÍstÍ.
+			AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_06"); //Urƒçitƒô m√°≈° dost zlata, aby sis mohl s√°m nƒôco koupit ve mƒôstƒô.
 		};
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//	R¸ben bringen
+//	R√ºben bringen
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hilda_BringBeet (C_INFO)
 {
@@ -147,7 +147,7 @@ instance DIA_Hilda_BringBeet (C_INFO)
 	condition	= DIA_Hilda_BringBeet_Condition;
 	information	= DIA_Hilda_BringBeet_Info;
 	permanent	= FALSE;
-	description	= "M·m tady pro tebe p·r tu‚Ìn˘...";
+	description	= "M√°m tady pro tebe p√°r tu√¢√≠n≈Ø...";
 };
 
 func int DIA_Hilda_BringBeet_Condition ()
@@ -162,15 +162,15 @@ func int DIA_Hilda_BringBeet_Condition ()
 
 func void DIA_Hilda_BringBeet_Info ()
 {
-	AI_Output (other, self, "DIA_Hilda_BringBeet_15_00"); //M·m tady pro tebe p·r tu‚Ìn˘.
+	AI_Output (other, self, "DIA_Hilda_BringBeet_15_00"); //M√°m tady pro tebe p√°r tu√¢√≠n≈Ø.
 	
 	if (Npc_HasItems (other,ItPl_Beet) >= 20)
 	{
 		B_GiveInvItems (other, self, ItPl_Beet, Npc_HasItems (other,ItPl_Beet));
 		
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_01"); //V˝bornÍ! (smÌch) To by mohlo na nakrmenÌ tÍch chlap˘ i staËit!
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_02"); //Kaûdop·dne, dokud jsi tady - vidÍla jsem tudy p‚ed p·r minutami proch·zet koËovnÈho kupce.
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_03"); //M·m dojem, ûe na cestÍ do mÍsta na chvÌli zastavil. BÍû se ho zeptat, jestli by pro mÍ nemÍl po‚·dnou p·nev.
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_01"); //V√Ωbornƒô! (sm√≠ch) To by mohlo na nakrmen√≠ tƒôch chlap≈Ø i staƒçit!
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_02"); //Ka≈ædop√°dne, dokud jsi tady - vidƒôla jsem tudy p√¢ed p√°r minutami proch√°zet koƒçovn√©ho kupce.
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_03"); //M√°m dojem, ≈æe na cestƒô do mƒôsta na chv√≠li zastavil. Bƒô≈æ se ho zeptat, jestli by pro mƒô nemƒôl po√¢√°dnou p√°nev.
 				
 		MIS_Lobart_RuebenToHilda = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Ambient);//damit der Logeintrag verschwindet
@@ -179,14 +179,14 @@ func void DIA_Hilda_BringBeet_Info ()
 	{
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_BringBeet_17_04"); //Co?! A to m· b˝t jako vöechno?
+			AI_Output (self, other, "DIA_Hilda_BringBeet_17_04"); //Co?! A to m√° b√Ωt jako v≈°echno?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Hilda_BringBeet_17_05"); //To nenÌ moc.
+			AI_Output (self, other, "DIA_Hilda_BringBeet_17_05"); //To nen√≠ moc.
 		};
 		
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_06"); //BÍû na pole a p‚ines mi dalöÌ. Chlapi majÌ hlad!
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_06"); //Bƒô≈æ na pole a p√¢ines mi dal≈°√≠. Chlapi maj√≠ hlad!
 		AI_StopProcessInfos (self);
 	};
 };
@@ -202,7 +202,7 @@ instance DIA_Hilda_Einkaufen (C_INFO)
 	condition	= DIA_Hilda_Einkaufen_Condition;
 	information	= DIA_Hilda_Einkaufen_Info;
 	permanent	= FALSE;
-	description	= "Dej mi zlato a j· za tÌm kupcem zajdu.";
+	description	= "Dej mi zlato a j√° za t√≠m kupcem zajdu.";
 };
 
 func int DIA_Hilda_Einkaufen_Condition ()
@@ -216,11 +216,11 @@ func int DIA_Hilda_Einkaufen_Condition ()
 
 func void DIA_Hilda_Einkaufen_Info ()
 {
-	AI_Output (other, self, "DIA_Hilda_Einkaufen_15_00"); //Dej mi zlato a j· za tÌm kupcem zajdu.
+	AI_Output (other, self, "DIA_Hilda_Einkaufen_15_00"); //Dej mi zlato a j√° za t√≠m kupcem zajdu.
 		
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_Einkaufen_17_01"); //¬Ìk·ö, ûe ti m·m vÍ‚it? Tak hlavnÍ ty penÌze nevyhoÎ za chlast, slyöÌö?!
+			AI_Output (self, other, "DIA_Hilda_Einkaufen_17_01"); //√Ç√≠k√°≈°, ≈æe ti m√°m vƒô√¢it? Tak hlavnƒô ty pen√≠ze nevyho√´ za chlast, sly≈°√≠≈°?!
 		};
 		
 	B_GiveInvItems (self, other, ItMi_Gold, 20); 
@@ -230,7 +230,7 @@ func void DIA_Hilda_Einkaufen_Info ()
 	
 	Log_CreateTopic (TOPIC_Hilda,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Hilda,LOG_RUNNING);
-	B_LogEntry (TOPIC_Hilda,"Hilda, ûena sedl·ka Lobarta, mÍ poû·dala, abych jÌ u podomnÌho obchodnÌka koupil nÍjakou p·nev.");
+	B_LogEntry (TOPIC_Hilda,"Hilda, ≈æena sedl√°ka Lobarta, mƒô po≈æ√°dala, abych j√≠ u podomn√≠ho obchodn√≠ka koupil nƒôjakou p√°nev.");
 };
 
 
@@ -244,7 +244,7 @@ instance DIA_Hilda_PfanneGeholt (C_INFO)
 	condition	= DIA_Hilda_PfanneGeholt_Condition;
 	information	= DIA_Hilda_PfanneGeholt_Info;
 	permanent	= FALSE;
-	description	= "Tady je tvoje p·nev.";
+	description	= "Tady je tvoje p√°nev.";
 };
 
 func int DIA_Hilda_PfanneGeholt_Condition ()
@@ -259,9 +259,9 @@ func int DIA_Hilda_PfanneGeholt_Condition ()
 
 func void DIA_Hilda_PfanneGeholt_Info ()
 {
-	AI_Output (other, self, "DIA_Hilda_PfanneGeholt_15_00"); //Tady m·ö tu svoji p·nev.
+	AI_Output (other, self, "DIA_Hilda_PfanneGeholt_15_00"); //Tady m√°≈° tu svoji p√°nev.
 	B_GiveInvItems (other, self, itmi_pan, 1);
-	AI_Output (self, other, "DIA_Hilda_PfanneGeholt_17_01"); //Fajn. To se podÌvejme, jeötÍ se d· narazit na poctivce.
+	AI_Output (self, other, "DIA_Hilda_PfanneGeholt_17_01"); //Fajn. To se pod√≠vejme, je≈°tƒô se d√° narazit na poctivce.
 	
 	MIS_Hilda_PfanneKaufen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_HildaHolPfanne);
@@ -271,7 +271,7 @@ func void DIA_Hilda_PfanneGeholt_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Pfanne zu sp‰t
+//	Pfanne zu sp√§t
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hilda_PfanneTooLate (C_INFO)
 {
@@ -297,20 +297,20 @@ func void DIA_Hilda_PfanneTooLate_Info ()
 {
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_00"); //To si jeötÍ dovolÌö se sem vracet? Cos udÍlal s m˝mi penÍzi, ty darmoölape?!
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_00"); //To si je≈°tƒô dovol√≠≈° se sem vracet? Cos udƒôlal s m√Ωmi penƒôzi, ty darmo≈°lape?!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_01"); //MÍls na to dost Ëasu. Kde jsou penÌze, co jsem ti dala na tu p·nev?
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_01"); //Mƒôls na to dost ƒçasu. Kde jsou pen√≠ze, co jsem ti dala na tu p√°nev?
 		};
 		
 	if (Npc_HasItems(other, itmi_pan) > 0)
 	{
-		AI_Output (other, self, "DIA_Hilda_PfanneTooLate_15_02"); //Promi‡, zapomnÍl jsem. Tady je tvoje p·nev!
+		AI_Output (other, self, "DIA_Hilda_PfanneTooLate_15_02"); //Promi≈ï, zapomnƒôl jsem. Tady je tvoje p√°nev!
 	
 		B_GiveInvItems (other, self, itmi_pan, 1);
 	
-		AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_03"); //Arrh, tak sem tu vÍc dej. Takov· drzost - neuvÍ‚itelnÈ!
+		AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_03"); //Arrh, tak sem tu vƒôc dej. Takov√° drzost - neuvƒô√¢iteln√©!
 	
 		MIS_Hilda_PfanneKaufen = LOG_SUCCESS;
 		B_GivePlayerXP (XP_HildaHolPfanne/2);
@@ -322,14 +322,14 @@ func void DIA_Hilda_PfanneTooLate_Info ()
 	{
 		if (Npc_HasItems(other, itmi_gold) >= 20)
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_04"); //Ach! Ty to jeötÍ po‚·d m·ö u sebe! Vra„ mi to. Hned.
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_04"); //Ach! Ty to je≈°tƒô po√¢√°d m√°≈° u sebe! VraƒÉ mi to. Hned.
 			B_GiveInvItems (other, self, ItMi_Gold, 20); 
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_05"); //Takov· drzost - neuvÍ‚itelnÈ!
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_05"); //Takov√° drzost - neuvƒô√¢iteln√©!
 		}
 		else //kein Gold
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_06"); //Ty to jeötÍ nem·ö! Dala jsem ti 20 zlat˝ch!
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_07"); //Jdi mi z oËÌ, ty mizernej zlodÍji!
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_06"); //Ty to je≈°tƒô nem√°≈°! Dala jsem ti 20 zlat√Ωch!
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_07"); //Jdi mi z oƒç√≠, ty mizernej zlodƒôji!
 			
 			B_MemorizePlayerCrime (self, other, CRIME_THEFT);
 		};
@@ -368,8 +368,8 @@ func int DIA_Hilda_TruheRumgemacht_Condition ()
 
 func void DIA_Hilda_TruheRumgemacht_Info ()
 {
-	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_00"); //Denk¥ bloss nicht, ich h‰tte nicht gesehen, wie du an der Kiste 'rumgemacht hast.
-	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_01"); //Raus hier aber schnell. Sonst hol¥ ich meinen Mann!
+	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_00"); //Denk¬¥ bloss nicht, ich h√§tte nicht gesehen, wie du an der Kiste 'rumgemacht hast.
+	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_01"); //Raus hier aber schnell. Sonst hol¬¥ ich meinen Mann!
 	
 	AI_StopProcessInfos(self);
 };
@@ -420,7 +420,7 @@ instance DIA_Hilda_KRANK		(C_INFO)
 	information	 = 	DIA_Hilda_KRANK_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"CÌtÌö se dob‚e?";
+	description	 = 	"C√≠t√≠≈° se dob√¢e?";
 };
 
 func int DIA_Hilda_KRANK_Condition ()
@@ -435,15 +435,15 @@ func int DIA_Hilda_KRANK_Condition ()
 var int DIA_Hilda_KRANK_OnTime;
 func void DIA_Hilda_KRANK_Info ()
 {
-	AI_Output			(other, self, "DIA_Hilda_KRANK_15_00"); //CÌtÌö se dob‚e?
-	AI_Output			(self, other, "DIA_Hilda_KRANK_17_01"); //Ne, v˘bec ne. M·m zase tu straönou horeËku.
-	AI_Output			(self, other, "DIA_Hilda_KRANK_17_02"); //MÍla bych zajÌt za mÍstsk˝m lÈËitelem, ale jsem na to moc slab·.
+	AI_Output			(other, self, "DIA_Hilda_KRANK_15_00"); //C√≠t√≠≈° se dob√¢e?
+	AI_Output			(self, other, "DIA_Hilda_KRANK_17_01"); //Ne, v≈Øbec ne. M√°m zase tu stra≈°nou horeƒçku.
+	AI_Output			(self, other, "DIA_Hilda_KRANK_17_02"); //Mƒôla bych zaj√≠t za mƒôstsk√Ωm l√©ƒçitelem, ale jsem na to moc slab√°.
 
 	if (DIA_Hilda_KRANK_OnTime == FALSE)
 	{
 		Info_ClearChoices	(DIA_Hilda_KRANK);
-		Info_AddChoice	(DIA_Hilda_KRANK, "Tak se brzo uzdrav. Uû musÌm jÌt.", DIA_Hilda_KRANK_besserung );
-		Info_AddChoice	(DIA_Hilda_KRANK, "Mohu nÍjak pomoci?", DIA_Hilda_KRANK_helfen );
+		Info_AddChoice	(DIA_Hilda_KRANK, "Tak se brzo uzdrav. U≈æ mus√≠m j√≠t.", DIA_Hilda_KRANK_besserung );
+		Info_AddChoice	(DIA_Hilda_KRANK, "Mohu nƒôjak pomoci?", DIA_Hilda_KRANK_helfen );
 		
 		DIA_Hilda_KRANK_OnTime = TRUE;
 	};
@@ -452,20 +452,20 @@ func void DIA_Hilda_KRANK_Info ()
 };
 func void DIA_Hilda_KRANK_besserung ()
 {
-	AI_Output			(other, self, "DIA_Hilda_KRANK_besserung_15_00"); //Tak se brzo uzdrav. Uû musÌm jÌt.
-	AI_Output			(self, other, "DIA_Hilda_KRANK_besserung_17_01"); //Doufejme, ûe p‚ijdou lepöÌ Ëasy.
+	AI_Output			(other, self, "DIA_Hilda_KRANK_besserung_15_00"); //Tak se brzo uzdrav. U≈æ mus√≠m j√≠t.
+	AI_Output			(self, other, "DIA_Hilda_KRANK_besserung_17_01"); //Doufejme, ≈æe p√¢ijdou lep≈°√≠ ƒçasy.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Hilda_KRANK_helfen ()
 {
-	AI_Output			(other, self, "DIA_Hilda_KRANK_helfen_15_00"); //Mohu nÍjak pomoci?
-	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_01"); //Bylo by od tebe moc milÈ, kdybys zaöel za Vatrasem a zÌskal od nÍj lÈk.
-	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_02"); //On uû bude vÍdÍt, co m· udÍlat! J· uû to sama nezvl·dnu.
+	AI_Output			(other, self, "DIA_Hilda_KRANK_helfen_15_00"); //Mohu nƒôjak pomoci?
+	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_01"); //Bylo by od tebe moc mil√©, kdybys za≈°el za Vatrasem a z√≠skal od nƒôj l√©k.
+	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_02"); //On u≈æ bude vƒôdƒôt, co m√° udƒôlat! J√° u≈æ to sama nezvl√°dnu.
 
 	Log_CreateTopic (TOPIC_HealHilda, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HealHilda, LOG_RUNNING);
-	B_LogEntry (TOPIC_HealHilda,"LobartovÍ ûenÍ HildÍ je öpatnÍ, ale Vatras by pro ni mÍl mÌt nÍjak˝ lÈk."); 
+	B_LogEntry (TOPIC_HealHilda,"Lobartovƒô ≈æenƒô Hildƒô je ≈°patnƒô, ale Vatras by pro ni mƒôl m√≠t nƒôjak√Ω l√©k."); 
 	AI_StopProcessInfos (self);
 };
 
@@ -479,7 +479,7 @@ instance DIA_Hilda_HEILUNGBRINGEN		(C_INFO)
 	condition	 = 	DIA_Hilda_HEILUNGBRINGEN_Condition;
 	information	 = 	DIA_Hilda_HEILUNGBRINGEN_Info;
 
-	description	 = 	"M·m pro tebe ten lÈk.";
+	description	 = 	"M√°m pro tebe ten l√©k.";
 };
 
 func int DIA_Hilda_HEILUNGBRINGEN_Condition ()
@@ -492,11 +492,11 @@ func int DIA_Hilda_HEILUNGBRINGEN_Condition ()
 
 func void DIA_Hilda_HEILUNGBRINGEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Hilda_HEILUNGBRINGEN_15_00"); //M·m pro tebe ten lÈk.
+	AI_Output			(other, self, "DIA_Hilda_HEILUNGBRINGEN_15_00"); //M√°m pro tebe ten l√©k.
 	B_GiveInvItems 		(other, self, ItPo_HealHilda_MIS,1);
-	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_01"); //V·ûnÍ. Naöe spoleËnost by pot‚ebovala vÌc lidÌ jako ty. Mockr·t dÌky.
+	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_01"); //V√°≈ænƒô. Na≈°e spoleƒçnost by pot√¢ebovala v√≠c lid√≠ jako ty. Mockr√°t d√≠ky.
 	B_UseItem 			(self,ItPo_HealHilda_MIS);
-	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_02"); //Douf·m, ûe tÍchhle p·r zlat˝ch bude staËit.
+	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_02"); //Douf√°m, ≈æe tƒôchhle p√°r zlat√Ωch bude staƒçit.
 	CreateInvItems 		(self, ItMi_Gold, 50);									
 	B_GiveInvItems 		(self, other, ItMi_Gold, 50);	
 	MIS_HealHilda = LOG_SUCCESS;
@@ -515,7 +515,7 @@ instance DIA_Hilda_DISTURB		(C_INFO)
 	information	 = 	DIA_Hilda_DISTURB_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jak se m·ö?";
+	description	 = 	"Jak se m√°≈°?";
 };
 
 func int DIA_Hilda_DISTURB_Condition ()
@@ -534,12 +534,12 @@ func void DIA_Hilda_DISTURB_Info ()
 {
 	if (MIS_HealHilda == LOG_SUCCESS)
 	{
-	AI_Output	(other, self, "DIA_Hilda_DISTURB_15_00"); //Jak se m·ö?
-	AI_Output	(self, other, "DIA_Hilda_DISTURB_17_01"); //Uû je mi lÌp, dÌky tobÍ.
+	AI_Output	(other, self, "DIA_Hilda_DISTURB_15_00"); //Jak se m√°≈°?
+	AI_Output	(self, other, "DIA_Hilda_DISTURB_17_01"); //U≈æ je mi l√≠p, d√≠ky tobƒô.
 	}
 	else
 	{
-	AI_Output	(self, other, "DIA_Hilda_DISTURB_17_02"); //é·dn· sl·va.
+	AI_Output	(self, other, "DIA_Hilda_DISTURB_17_02"); //≈Ω√°dn√° sl√°va.
 	};
 };
 

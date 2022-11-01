@@ -42,24 +42,24 @@ FUNC INT DIA_Marcos_Hallo_Condition()
 };
 FUNC VOID DIA_Marcos_Hallo_Info()
 {	
-	AI_Output (self, other, "DIA_Marcos_Hallo_04_00");//STÁT - jménem Innose! Jsem Marcos, královskı paladin. Âekni, co chceš, a mluv pravdu!
+	AI_Output (self, other, "DIA_Marcos_Hallo_04_00");//STÃT - jmÃ©nem Innose! Jsem Marcos, krÃ¡lovskÃ½ paladin. Ã‚ekni, co chceÅ¡, a mluv pravdu!
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_01");//Innosùv vyvolenı mluví vdycky pravdu.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_02");//Odpusã, ctihodnı mágu. Neuvêdomil jsem si, s kım mluvím.
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_03");//V poâádku, nic se nestalo.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_04");//Pokud se mùu zeptat - co tê sem pâivádí?
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_01");//InnosÅ¯v vyvolenÃ½ mluvÃ­ vÅ¾dycky pravdu.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_02");//OdpusÄƒ, ctihodnÃ½ mÃ¡gu. NeuvÄ™domil jsem si, s kÃ½m mluvÃ­m.
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_03");//V poÃ¢Ã¡dku, nic se nestalo.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_04");//Pokud se mÅ¯Å¾u zeptat - co tÄ™ sem pÃ¢ivÃ¡dÃ­?
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_05");//Uklidni se - jsem ve slubách lorda Hagena.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_06");//Jsi jeden z vojákù. Na jakı rozkaz tu jsi?
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_05");//Uklidni se - jsem ve sluÅ¾bÃ¡ch lorda Hagena.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_06");//Jsi jeden z vojÃ¡kÅ¯. Na jakÃ½ rozkaz tu jsi?
 	}
 	else //SLD
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_07");//Klid, pracujeme pro stejného hlavouna - lorda Hagena.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_08");//Odkdy lord Hagen najímá oldáky? Mluv! Co tady pohledáváš?
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_07");//Klid, pracujeme pro stejnÃ©ho hlavouna - lorda Hagena.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_08");//Odkdy lord Hagen najÃ­mÃ¡ Å¾oldÃ¡ky? Mluv! Co tady pohledÃ¡vÃ¡Å¡?
 	};
 
 };
@@ -73,7 +73,7 @@ INSTANCE DIA_Marcos_Hagen(C_INFO)
 	condition	= DIA_Marcos_Hagen_Condition;
 	information	= DIA_Marcos_Hagen_Info;
 	permanent	= FALSE;
-	description	= "Musím pâinést lordu Hagenovi dùkaz, e draci existují.";
+	description	= "MusÃ­m pÃ¢inÃ©st lordu Hagenovi dÅ¯kaz, Å¾e draci existujÃ­.";
 };                       
 
 FUNC INT DIA_Marcos_Hagen_Condition()
@@ -86,11 +86,11 @@ FUNC INT DIA_Marcos_Hagen_Condition()
 };
 FUNC VOID DIA_Marcos_Hagen_Info()
 {	
-	AI_Output (other, self, "DIA_Marcos_Hagen_15_00");//Musím pâinést lordu Hagenovi dùkaz, e draci existují.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_01");//Pak bys nemêl ztrácet èas a zbyteènê riskovat ivot.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_02");//Myslíš, e tady najdeš draèí šupinu, kterou bys mu mohl pâinést?
+	AI_Output (other, self, "DIA_Marcos_Hagen_15_00");//MusÃ­m pÃ¢inÃ©st lordu Hagenovi dÅ¯kaz, Å¾e draci existujÃ­.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_01");//Pak bys nemÄ™l ztrÃ¡cet Äas a zbyteÄnÄ™ riskovat Å¾ivot.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_02");//MyslÃ­Å¡, Å¾e tady najdeÅ¡ draÄÃ­ Å¡upinu, kterou bys mu mohl pÃ¢inÃ©st?
 	AI_Output (self, other, "DIA_Marcos_Hagen_04_03");//Zkus se dostat do hradu a promluvit si s velitelem Garondem.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_04");//Musí se dozvêdêt, e tê posílá lord Hagen! Postará se o to, aby ses nevrátil s prázdnou.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_04");//MusÃ­ se dozvÄ™dÄ™t, Å¾e tÄ™ posÃ­lÃ¡ lord Hagen! PostarÃ¡ se o to, aby ses nevrÃ¡til s prÃ¡zdnou.
 };	
 
 // ************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_Marcos_Garond(C_INFO)
 	condition	= DIA_Marcos_Garond_Condition;
 	information	= DIA_Marcos_Garond_Info;
 	permanent	= FALSE;
-	description	= "Pâicházím od Garonda...";
+	description	= "PÃ¢ichÃ¡zÃ­m od Garonda...";
 };                       
 
 FUNC INT DIA_Marcos_Garond_Condition()
@@ -116,19 +116,19 @@ FUNC INT DIA_Marcos_Garond_Condition()
 };
 FUNC VOID DIA_Marcos_Garond_Info()
 {	
-	AI_Output (other, self, "DIA_Marcos_Garond_15_00");//Pâicházím od Garonda. Potâebuje vêdêt, kolik rudy je pâipraveno k pâevozu.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_01");//Vyâië Garondovi, e jsem musel opustit dùl, protoe útoky skâetù zaèaly bıt pâíliš nebezpeèné.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_02");//Snail jsem se dostat ke hradu ještê s nêkolika dalšími, ale pâeil jsem nakonec jen já.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_03");//Uloil jsem rudu do bezpeèí. Jsou to ÈTYÂI truhly. Bê za Garondem a nahlas mu to.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_04");//Âekni mu, e budu rudu stâeit vlastním ivotem. Ale netuším, za jak dlouho mê tu skâeti vypátrají.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_05");//Vyâië mu, aby mi poslal nêkoho na pomoc.
-	AI_Output (other, self, "DIA_Marcos_Garond_15_06");//Vyâídím mu to.
+	AI_Output (other, self, "DIA_Marcos_Garond_15_00");//PÃ¢ichÃ¡zÃ­m od Garonda. PotÃ¢ebuje vÄ™dÄ™t, kolik rudy je pÃ¢ipraveno k pÃ¢evozu.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_01");//VyÃ¢iÃ« Garondovi, Å¾e jsem musel opustit dÅ¯l, protoÅ¾e Ãºtoky skÃ¢etÅ¯ zaÄaly bÃ½t pÃ¢Ã­liÅ¡ nebezpeÄnÃ©.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_02");//SnaÅ¾il jsem se dostat ke hradu jeÅ¡tÄ™ s nÄ™kolika dalÅ¡Ã­mi, ale pÃ¢eÅ¾il jsem nakonec jen jÃ¡.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_03");//UloÅ¾il jsem rudu do bezpeÄÃ­. Jsou to ÄŒTYÃ‚I truhly. BÄ™Å¾ za Garondem a nahlas mu to.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_04");//Ã‚ekni mu, Å¾e budu rudu stÃ¢eÅ¾it vlastnÃ­m Å¾ivotem. Ale netuÅ¡Ã­m, za jak dlouho mÄ™ tu skÃ¢eti vypÃ¡trajÃ­.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_05");//VyÃ¢iÃ« mu, aby mi poslal nÄ™koho na pomoc.
+	AI_Output (other, self, "DIA_Marcos_Garond_15_06");//VyÃ¢Ã­dÃ­m mu to.
 	
-	B_LogEntry (TOPIC_ScoutMine,"V malém údolíèku stâeí paladin Marcos ÈTYÂI bedny rudy.");
+	B_LogEntry (TOPIC_ScoutMine,"V malÃ©m ÃºdolÃ­Äku stÃ¢eÅ¾Ã­ paladin Marcos ÄŒTYÃ‚I bedny rudy.");
 	
 	Log_CreateTopic (Topic_MarcosJungs,LOG_MISSION);
 	Log_SetTopicStatus (Topic_MarcosJungs,LOG_RUNNING);
-	B_LogEntry (Topic_MarcosJungs,"Marcos ádá, aby mu Garond poslal nêjakou pomoc.");
+	B_LogEntry (Topic_MarcosJungs,"Marcos Å¾Ã¡dÃ¡, aby mu Garond poslal nÄ™jakou pomoc.");
 	
 	MIS_Marcos_Jungs = LOG_RUNNING;
 	Marcos_Ore = TRUE;
@@ -160,21 +160,21 @@ FUNC INT DIA_Marcos_Perm_Condition()
 FUNC VOID DIA_Marcos_Perm_Info()
 {	
 
-	AI_Output (other, self, "DIA_Marcos_Perm_15_00");//Jak to vypadá?
+	AI_Output (other, self, "DIA_Marcos_Perm_15_00");//Jak to vypadÃ¡?
 	
 	if (self.attribute [ATR_HITPOINTS]) < (self.attribute [ATR_HITPOINTS_MAX] /2)  
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_01");//Potâebuju poâádnı lok léèivého lektvaru!
+		AI_Output (self, other, "DIA_Marcos_Perm_04_01");//PotÃ¢ebuju poÃ¢Ã¡dnÃ½ lok lÃ©ÄivÃ©ho lektvaru!
 		B_UseItem (self, ItPo_Health_03);  
 		
 	}
 	else if (MIS_Marcos_Jungs == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_02");//Vydrím - ale doufám, e mi Garond brzy pošle posily.
+		AI_Output (self, other, "DIA_Marcos_Perm_04_02");//VydrÅ¾Ã­m - ale doufÃ¡m, Å¾e mi Garond brzy poÅ¡le posily.
 	}
 	else if (MIS_Marcos_Jungs == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_03");//Dêkuji ti za pomoc. Innos nám dá sílu, abychom stáli pevnê jako skála.
+		AI_Output (self, other, "DIA_Marcos_Perm_04_03");//DÄ™kuji ti za pomoc. Innos nÃ¡m dÃ¡ sÃ­lu, abychom stÃ¡li pevnÄ™ jako skÃ¡la.
 		
 		if (Marcos_einmalig == FALSE)
 		{
@@ -184,7 +184,7 @@ FUNC VOID DIA_Marcos_Perm_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_04");//Budu stát pevnê, protoe je Innos se mnou!
+		AI_Output (self, other, "DIA_Marcos_Perm_04_04");//Budu stÃ¡t pevnÄ™, protoÅ¾e je Innos se mnou!
 	};
 	
 	AI_StopProcessInfos (self);

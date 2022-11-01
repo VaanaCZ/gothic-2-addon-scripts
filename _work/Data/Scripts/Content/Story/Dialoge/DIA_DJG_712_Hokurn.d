@@ -45,13 +45,13 @@ FUNC INT DIA_Hokurn_Hello_Condition()
 
 FUNC VOID DIA_Hokurn_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Hokurn_Hello_01_00"); //Nem·ö nÍco k pitÌ?
-	AI_Output (other,self ,"DIA_Hokurn_Hello_15_01"); //A asi to nem· b˝t voda, co?
-	AI_Output (self ,other,"DIA_Hokurn_Hello_01_02"); //To teda ne, ksakru!! Pot‚ebuju nÍjakej alkohol, abych se koneËnÍ zbavil toho zatracen˝ho bolehlavu.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_01_03"); //Jestli se brzo nÍËeho nenapiju, nejspÌö mi pukne hlava.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_01_00"); //Nem√°≈° nƒôco k pit√≠?
+	AI_Output (other,self ,"DIA_Hokurn_Hello_15_01"); //A asi to nem√° b√Ωt voda, co?
+	AI_Output (self ,other,"DIA_Hokurn_Hello_01_02"); //To teda ne, ksakru!! Pot√¢ebuju nƒôjakej alkohol, abych se koneƒçnƒô zbavil toho zatracen√Ωho bolehlavu.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_01_03"); //Jestli se brzo nƒôƒçeho nenapiju, nejsp√≠≈° mi pukne hlava.
 
 	Info_ClearChoices (DIA_Hokurn_Hello);
-	Info_AddChoice (DIA_Hokurn_Hello,"Nem·m ti co d·t.",DIA_Hokurn_Hello_No);
+	Info_AddChoice (DIA_Hokurn_Hello,"Nem√°m ti co d√°t.",DIA_Hokurn_Hello_No);
 	
 	IF(	(Npc_HasItems (other,ItFo_Beer) 	>=1)	
 	||	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
@@ -63,28 +63,28 @@ FUNC VOID DIA_Hokurn_Hello_Info()
 
 FUNC VOID DIA_Hokurn_Hello_No ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_No_15_00"); //Nem·m nic, co bych ti mohl d·t.
+	AI_Output (other,self ,"DIA_Hokurn_Hello_No_15_00"); //Nem√°m nic, co bych ti mohl d√°t.
 	AI_Output (self ,other,"DIA_Hokurn_Hello_No_01_01"); //Tak zmizni!
 
 	Info_ClearChoices (DIA_Hokurn_Hello);
 	Info_AddChoice (DIA_Hokurn_Hello,DIALOG_ENDE,DIA_Hokurn_Hello_END);
-	Info_AddChoice (DIA_Hokurn_Hello,"JeötÍ jedna vÍc.",DIA_Hokurn_Hello_ASK1);
+	Info_AddChoice (DIA_Hokurn_Hello,"Je≈°tƒô jedna vƒôc.",DIA_Hokurn_Hello_ASK1);
 };
 
 FUNC VOID DIA_Hokurn_Hello_ASK1 ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK1_15_00"); //JeötÍ jedna vÍc...
-	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK1_01_01"); //(povzdech) Tys mi nerozumÍl? VYPADNI!!!
+	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK1_15_00"); //Je≈°tƒô jedna vƒôc...
+	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK1_01_01"); //(povzdech) Tys mi nerozumƒôl? VYPADNI!!!
 	
 	Info_ClearChoices (DIA_Hokurn_Hello);
 	Info_AddChoice (DIA_Hokurn_Hello,DIALOG_ENDE,DIA_Hokurn_Hello_END);
-	Info_AddChoice (DIA_Hokurn_Hello,"Je to d˘leûitÈ.",DIA_Hokurn_Hello_ASK2);
+	Info_AddChoice (DIA_Hokurn_Hello,"Je to d≈Øle≈æit√©.",DIA_Hokurn_Hello_ASK2);
 };
 
 FUNC VOID DIA_Hokurn_Hello_ASK2 ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK2_15_00"); //Je to d˘leûitÈ.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK2_01_01"); //(povzdech) ¬ekl sis o to.
+	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK2_15_00"); //Je to d≈Øle≈æit√©.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK2_01_01"); //(povzdech) √Çekl sis o to.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -97,8 +97,8 @@ FUNC VOID DIA_Hokurn_Hello_END ()
 
 FUNC VOID B_Hokurn_Sauf ()
 {
-	AI_Output (self ,other,"B_Hokurn_Sauf_01_00"); //(‚ÌhnutÌ) Ha, tohle jsem pot‚eboval.
-	AI_Output (self ,other,"B_Hokurn_Sauf_01_01"); //TeÎ m˘ûu znova myslet s Ëistou hlavou. Co pro tebe m˘ûu udÍlat?
+	AI_Output (self ,other,"B_Hokurn_Sauf_01_00"); //(√¢√≠hnut√≠) Ha, tohle jsem pot√¢eboval.
+	AI_Output (self ,other,"B_Hokurn_Sauf_01_01"); //Te√´ m≈Ø≈æu znova myslet s ƒçistou hlavou. Co pro tebe m≈Ø≈æu udƒôlat?
 };
 
 FUNC VOID DIA_Hokurn_Hello_Yes ()
@@ -138,7 +138,7 @@ INSTANCE DIA_Hokurn_Drink   (C_INFO)
 	condition   = DIA_Hokurn_Drink_Condition;
 	information = DIA_Hokurn_Drink_Info;
 	permanent   = TRUE;
-	description = "Tady m·ö nÍco k pitÌ.";
+	description = "Tady m√°≈° nƒôco k pit√≠.";
 };
 
 FUNC INT DIA_Hokurn_Drink_Condition()
@@ -154,8 +154,8 @@ FUNC INT DIA_Hokurn_Drink_Condition()
 
 FUNC VOID DIA_Hokurn_Drink_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Drink_15_00"); //Tady m·ö nÍco k pitÌ.
-	AI_Output (self ,other,"DIA_Hokurn_Drink_01_01"); //(dychtivÍ) Dej to sem!!
+	AI_Output (other,self ,"DIA_Hokurn_Drink_15_00"); //Tady m√°≈° nƒôco k pit√≠.
+	AI_Output (self ,other,"DIA_Hokurn_Drink_01_01"); //(dychtivƒô) Dej to sem!!
 	
 	IF	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	{
@@ -188,7 +188,7 @@ INSTANCE DIA_Hokurn_Question   (C_INFO)
 	condition   = DIA_Hokurn_Question_Condition;
 	information = DIA_Hokurn_Question_Info;
 	permanent   = TRUE;
-	description = "Pot‚ebuju nÍjakÈ informace.";
+	description = "Pot√¢ebuju nƒôjak√© informace.";
 };
 
 FUNC INT DIA_Hokurn_Question_Condition()
@@ -201,9 +201,9 @@ FUNC INT DIA_Hokurn_Question_Condition()
 
 FUNC VOID DIA_Hokurn_Question_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Question_15_00"); //Pot‚ebuju nÍjakÈ informace.
-	AI_Output (self ,other,"DIA_Hokurn_Question_01_01"); //(otr·venÍ) MÍl jsem dojem, ûe jsme si rozumÍli. MluvÌm jen s p‚·teli.
-	AI_Output (self ,other,"DIA_Hokurn_Question_01_02"); //A p‚·telÈ ti nabÌdnou nÍco k pitÌ. Jasn˝? TeÎ odpal!
+	AI_Output (other,self ,"DIA_Hokurn_Question_15_00"); //Pot√¢ebuju nƒôjak√© informace.
+	AI_Output (self ,other,"DIA_Hokurn_Question_01_01"); //(otr√°venƒô) Mƒôl jsem dojem, ≈æe jsme si rozumƒôli. Mluv√≠m jen s p√¢√°teli.
+	AI_Output (self ,other,"DIA_Hokurn_Question_01_02"); //A p√¢√°tel√© ti nab√≠dnou nƒôco k pit√≠. Jasn√Ω? Te√´ odpal!
 };
 
 //*********************************************************************
@@ -216,7 +216,7 @@ INSTANCE DIA_Hokurn_Learn   (C_INFO)
 	condition   = DIA_Hokurn_Learn_Condition;
 	information = DIA_Hokurn_Learn_Info;
 	permanent   = FALSE;
-	description = "Hled·m nÍkoho, kdo by mÍ mohl nÍËemu nauËit.";
+	description = "Hled√°m nƒôkoho, kdo by mƒô mohl nƒôƒçemu nauƒçit.";
 };
 
 FUNC INT DIA_Hokurn_Learn_Condition()
@@ -229,30 +229,30 @@ FUNC INT DIA_Hokurn_Learn_Condition()
 
 FUNC VOID DIA_Hokurn_Learn_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_15_00"); //Hled·m nÍkoho, kdo by mÍ mohl nÍËemu nauËit.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_01_01"); //M˘ûu ti uk·zat p·r vÍcÌ. Jsem nejlepöÌ bojovnÌk na mÌle daleko.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_01_02"); //Jelikoû jsme p‚·telÈ, udÍl·m ti zvl·ötnÌ cenu. 300 zlat˝ch.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_15_00"); //Hled√°m nƒôkoho, kdo by mƒô mohl nƒôƒçemu nauƒçit.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_01_01"); //M≈Ø≈æu ti uk√°zat p√°r vƒôc√≠. Jsem nejlep≈°√≠ bojovn√≠k na m√≠le daleko.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_01_02"); //Jeliko≈æ jsme p√¢√°tel√©, udƒôl√°m ti zvl√°≈°tn√≠ cenu. 300 zlat√Ωch.
 
 	Info_ClearChoices (DIA_Hokurn_Learn);
-	Info_AddChoice	(DIA_Hokurn_Learn,"To je pro mÍ moc drahÈ.",DIA_Hokurn_Learn_TooExpensive);
+	Info_AddChoice	(DIA_Hokurn_Learn,"To je pro mƒô moc drah√©.",DIA_Hokurn_Learn_TooExpensive);
 	if (Npc_HasItems (other,ItMi_Gold) >= 300)
 	{
-		Info_AddChoice	(DIA_Hokurn_Learn,"Dobr·, tady jsou penÌze.",DIA_Hokurn_Learn_OK);
+		Info_AddChoice	(DIA_Hokurn_Learn,"Dobr√°, tady jsou pen√≠ze.",DIA_Hokurn_Learn_OK);
 	};	 
 };
 
 FUNC VOID DIA_Hokurn_Learn_TooExpensive ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_TooExpensive_15_00"); //To je pro mÍ moc drahÈ.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_01"); //Moc drahÈ? To je nejmÌ‡, co by si na mÈm mÌstÍ ‚ekl kdokoli jin˝.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_02"); //P‚em˝ölej o tom.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_TooExpensive_15_00"); //To je pro mƒô moc drah√©.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_01"); //Moc drah√©? To je nejm√≠≈ï, co by si na m√©m m√≠stƒô √¢ekl kdokoli jin√Ω.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_02"); //P√¢em√Ω≈°lej o tom.
 	
 	Info_ClearChoices (DIA_Hokurn_Learn);
 };
 
 FUNC VOID DIA_Hokurn_Learn_OK ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_OK_15_00"); //Dobr·, tady jsou penÌze.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_OK_15_00"); //Dobr√°, tady jsou pen√≠ze.
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	Hokurn_TeachPlayer = TRUE;
 	Info_ClearChoices (DIA_Hokurn_Learn);
@@ -268,7 +268,7 @@ INSTANCE DIA_Hokurn_PayTeacher   (C_INFO)
 	condition   = DIA_Hokurn_PayTeacher_Condition;
 	information = DIA_Hokurn_PayTeacher_Info;
 	permanent   = TRUE;
-	description = "Tady jsou penÌze. Chci, abys mÍ uËil.";
+	description = "Tady jsou pen√≠ze. Chci, abys mƒô uƒçil.";
 };
 
 FUNC INT DIA_Hokurn_PayTeacher_Condition()
@@ -283,8 +283,8 @@ FUNC INT DIA_Hokurn_PayTeacher_Condition()
 
 FUNC VOID DIA_Hokurn_PayTeacher_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_PayTeacher_15_00"); //Tady jsou penÌze. Chci, abys mÍ uËil.
-	AI_Output (self ,other,"DIA_Hokurn_PayTeacher_01_01"); //Nebudeö litovat!
+	AI_Output (other,self ,"DIA_Hokurn_PayTeacher_15_00"); //Tady jsou pen√≠ze. Chci, abys mƒô uƒçil.
+	AI_Output (self ,other,"DIA_Hokurn_PayTeacher_01_01"); //Nebude≈° litovat!
 
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	Hokurn_TeachPlayer = TRUE;
@@ -300,7 +300,7 @@ INSTANCE DIA_Hokurn_DrinkAndLearn   (C_INFO)
 	condition   = DIA_Hokurn_DrinkAndLearn_Condition;
 	information = DIA_Hokurn_DrinkAndLearn_Info;
 	permanent   = TRUE;
-	description = "Tady je pro tebe nÍco k pitÌ.";
+	description = "Tady je pro tebe nƒôco k pit√≠.";
 };
 
 FUNC INT DIA_Hokurn_DrinkAndLearn_Condition()
@@ -316,7 +316,7 @@ FUNC INT DIA_Hokurn_DrinkAndLearn_Condition()
 
 FUNC VOID DIA_Hokurn_DrinkAndLearn_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_DrinkAndLearn_15_00"); //Tady je pro tebe nÍco k pitÌ.
+	AI_Output (other,self ,"DIA_Hokurn_DrinkAndLearn_15_00"); //Tady je pro tebe nƒôco k pit√≠.
 	
 	IF	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	{
@@ -336,7 +336,7 @@ FUNC VOID DIA_Hokurn_DrinkAndLearn_Info()
 	
 	HokurnLastDrink = Wld_GetDay ();
 	
-	AI_Output (self ,other,"DIA_Hokurn_DrinkAndLearn_01_01"); //CÌtÌm se o moc lÌp. Jsem p‚ipraven na vöe.
+	AI_Output (self ,other,"DIA_Hokurn_DrinkAndLearn_01_01"); //C√≠t√≠m se o moc l√≠p. Jsem p√¢ipraven na v≈°e.
 
 };
 
@@ -351,7 +351,7 @@ INSTANCE DIA_Hokurn_Teach(C_INFO)
 	condition	= DIA_Hokurn_Teach_Condition;
 	information	= DIA_Hokurn_Teach_Info;
 	permanent	= TRUE;
-	description = "ZaËnÍme s trÈninkem.";
+	description = "Zaƒçnƒôme s tr√©ninkem.";
 };                       
 
 FUNC INT DIA_Hokurn_Teach_Condition()
@@ -364,21 +364,21 @@ FUNC INT DIA_Hokurn_Teach_Condition()
  
 FUNC VOID DIA_Hokurn_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Hokurn_Teach_15_00"); //ZaËnÍme s trÈninkem.
+	AI_Output (other,self ,"DIA_Hokurn_Teach_15_00"); //Zaƒçnƒôme s tr√©ninkem.
 	
 	if (HokurnLastDrink < Wld_GetDay ())
 	{
-		AI_Output (self ,other,"DIA_Hokurn_Teach_01_01"); //Nejd‚Ìv mi p‚ines nÍco k pitÌ!
+		AI_Output (self ,other,"DIA_Hokurn_Teach_01_01"); //Nejd√¢√≠v mi p√¢ines nƒôco k pit√≠!
 	}
 	else
 	{	 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Hokurn_Teach_01_02"); //Tak se teda uvidÌ, co m˘ûeme dostat z tÍch tvejch zatuhlejch paladinskejch kostÌ, jasn˝?
+			AI_Output (self ,other,"DIA_Hokurn_Teach_01_02"); //Tak se teda uvid√≠, co m≈Ø≈æeme dostat z tƒôch tvejch zatuhlejch paladinskejch kost√≠, jasn√Ω?
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Hokurn_Teach_01_03"); //Co ty vÌö. Dokonce i m·govÈ pouûÌvajÌ chladnÈ zbranÍ.
+			AI_Output (self ,other,"DIA_Hokurn_Teach_01_03"); //Co ty v√≠≈°. Dokonce i m√°gov√© pou≈æ√≠vaj√≠ chladn√© zbranƒô.
 		};
 
 		Info_ClearChoices 	(DIA_Hokurn_Teach);
@@ -396,7 +396,7 @@ FUNC VOID DIA_Hokurn_Teach_Back ()
 };
 FUNC VOID B_Hokurn_TeachedEnough ()
 {
-	AI_Output(self,other,"B_Hokurn_TeachedEnough_01_00"); //Na tuhle disciplÌnu uû nepot‚ebujeö û·dn˝ho uËitele.
+	AI_Output(self,other,"B_Hokurn_TeachedEnough_01_00"); //Na tuhle discipl√≠nu u≈æ nepot√¢ebuje≈° ≈æ√°dn√Ωho uƒçitele.
 };
 
 FUNC VOID DIA_Hokurn_Teach_2H_1 ()
@@ -444,7 +444,7 @@ FUNC VOID DIA_Hokurn_Teach_1H_5 ()
 };
 
 //*********************************************************************
-//	Wieso h‰ngt ihr hier ¸berhaupt rum?
+//	Wieso h√§ngt ihr hier √ºberhaupt rum?
 //*********************************************************************
 INSTANCE DIA_Hokurn_StayHere   (C_INFO)
 {
@@ -453,7 +453,7 @@ INSTANCE DIA_Hokurn_StayHere   (C_INFO)
 	condition   = DIA_Hokurn_StayHere_Condition;
 	information = DIA_Hokurn_StayHere_Info;
 	permanent   = FALSE;
-	description = "A co tady vlastnÍ dÍl·ö?";
+	description = "A co tady vlastnƒô dƒôl√°≈°?";
 };
 
 FUNC INT DIA_Hokurn_StayHere_Condition()
@@ -466,12 +466,12 @@ FUNC INT DIA_Hokurn_StayHere_Condition()
 
 FUNC VOID DIA_Hokurn_StayHere_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_StayHere_15_00"); //A co tady vlastnÍ dÍl·ö?
-	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_01"); //Nem·m tuöenÌ, proË jsme sem p‚iöli, nebo kdy to zaËne.
-	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_02"); //A dokud m·m co pÌt, ani se o to nestar·m.
+	AI_Output (other,self ,"DIA_Hokurn_StayHere_15_00"); //A co tady vlastnƒô dƒôl√°≈°?
+	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_01"); //Nem√°m tu≈°en√≠, proƒç jsme sem p√¢i≈°li, nebo kdy to zaƒçne.
+	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_02"); //A dokud m√°m co p√≠t, ani se o to nestar√°m.
 	
 	/*
-	AI_Output (other,self ,"DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier ¸berhaupt?
+	AI_Output (other,self ,"DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier √ºberhaupt?
 	AI_Output (self ,other,"DIA_Addon_Hokurn_StayHere_01_01"); //Keine Ahnung, was wir hier machen oder wann es los geht.
 	AI_Output (self ,other,"DIA_Addon_Hokurn_StayHere_01_02"); //Ist mir auch egal, solange ich genug zu trinken habe.
 	*/
@@ -488,7 +488,7 @@ INSTANCE DIA_Hokurn_WhereDragon   (C_INFO)
 	condition   = DIA_Hokurn_WhereDragon_Condition;
 	information = DIA_Hokurn_WhereDragon_Info;
 	permanent   = TRUE;
-	description = "Tak vÌö, kde ty draci jsou?";
+	description = "Tak v√≠≈°, kde ty draci jsou?";
 };
 
 FUNC INT DIA_Hokurn_WhereDragon_Condition()
@@ -503,48 +503,48 @@ FUNC INT DIA_Hokurn_WhereDragon_Condition()
 
 FUNC VOID DIA_Hokurn_WhereDragon_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_15_00"); //Tak vÌö, kde ti draci jsou?
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_01_01"); //Co z toho budu mÌt, kdyû ti to ‚eknu?
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_15_00"); //Tak v√≠≈°, kde ti draci jsou?
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_01_01"); //Co z toho budu m√≠t, kdy≈æ ti to √¢eknu?
 
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"Nic, vyd·m se za nima s·m.",DIA_Hokurn_WhereDragon_FindMyself);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"Nic, vyd√°m se za nima s√°m.",DIA_Hokurn_WhereDragon_FindMyself);
 	Info_AddChoice (DIA_Hokurn_WhereDragon,"Jsem ochoten ti za tu informaci zaplatit.",DIA_Hokurn_WhereDragon_Gold);
 	if Npc_HasItems (other,ITFO_BOOZE) >=1
 	{
-		Info_AddChoice (DIA_Hokurn_WhereDragon,"JeötÍ tu m·m l·hev ginu!",DIA_Hokurn_WhereDragon_Booze);	 
+		Info_AddChoice (DIA_Hokurn_WhereDragon,"Je≈°tƒô tu m√°m l√°hev ginu!",DIA_Hokurn_WhereDragon_Booze);	 
 	};
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_FindMyself ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Nic, vyd·m se za nima s·m.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_FindMyself_01_01"); //MÍl by sis d·vat pozor. »ek· tÍ spousta boj˘.
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Nic, vyd√°m se za nima s√°m.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_FindMyself_01_01"); //Mƒôl by sis d√°vat pozor. ƒåek√° tƒô spousta boj≈Ø.
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_Gold ()
 {
 	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Gold_15_00"); //Jsem ochoten ti za tu informaci zaplatit.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Gold_01_01"); //Zaplatit mi? Hmm. Za 200 zlat˝ch ti to povÌm.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Gold_01_01"); //Zaplatit mi? Hmm. Za 200 zlat√Ωch ti to pov√≠m.
 	
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
 	Info_AddChoice (DIA_Hokurn_WhereDragon,"To je moc!",DIA_Hokurn_WhereDragon_TooMuch);
 	if Npc_HasItems (other,ItMi_Gold) >=200
 	{
-		Info_AddChoice (DIA_Hokurn_WhereDragon,"Tady jsou penÌze!",DIA_Hokurn_WhereDragon_OK);
+		Info_AddChoice (DIA_Hokurn_WhereDragon,"Tady jsou pen√≠ze!",DIA_Hokurn_WhereDragon_OK);
 	};
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_TooMuch ()
 {
 	AI_Output	(other,self ,"DIA_Hokurn_WhereDragon_TooMuch_15_00"); //To je moc!
-	AI_Output 	(self ,other,"DIA_Hokurn_WhereDragon_TooMuch_01_01"); //Tak to na to zapome‡.
+	AI_Output 	(self ,other,"DIA_Hokurn_WhereDragon_TooMuch_01_01"); //Tak to na to zapome≈ï.
 	Info_ClearChoices	(DIA_Hokurn_WhereDragon); 
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_OK ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_OK_15_00"); //Tady jsou penÌze!
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_OK_15_00"); //Tady jsou pen√≠ze!
 	B_GiveInvItems (other,self,ItMi_gold,200);
 	
 	HokurnTellsDragon = TRUE;
@@ -553,11 +553,11 @@ FUNC VOID DIA_Hokurn_WhereDragon_OK ()
 
 FUNC VOID DIA_Hokurn_WhereDragon_Booze ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Booze_15_00"); //JeötÍ tu m·m l·hev ginu!
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_01"); //Za po‚·dnou pitku bych zabil vöechny draky svÍta.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_02"); //Souhlas. Dej sem tu l·hev!
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Booze_15_00"); //Je≈°tƒô tu m√°m l√°hev ginu!
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_01"); //Za po√¢√°dnou pitku bych zabil v≈°echny draky svƒôta.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_02"); //Souhlas. Dej sem tu l√°hev!
 	B_GiveInvItems ( other,self,ItFo_booze,1);
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_03"); //Schov·m si ji na horöÌ Ëasy.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_03"); //Schov√°m si ji na hor≈°√≠ ƒçasy.
 
 	HokurnTellsDragon = TRUE;
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
@@ -573,7 +573,7 @@ INSTANCE DIA_Hokurn_Dragon   (C_INFO)
 	condition   = DIA_Hokurn_Dragon_Condition;
 	information = DIA_Hokurn_Dragon_Info;
 	permanent   = TRUE;
-	description = "Dobr·, tak kde jsou ti draci?";
+	description = "Dobr√°, tak kde jsou ti draci?";
 };
 
 FUNC INT DIA_Hokurn_Dragon_Condition()
@@ -586,10 +586,10 @@ FUNC INT DIA_Hokurn_Dragon_Condition()
 
 FUNC VOID DIA_Hokurn_Dragon_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Dragon_15_00"); //Dobr·, tak kde jsou ti draci?
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_01"); //P‚irozenÍ ti to ne‚eknu ˙plnÍ p‚esnÍ, ale slyöel jsem, ûe by tu mÍli b˝t celkem Ëty‚i.
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_02"); //V noci jsme zahlÈdli nad nejvyööÌ horou rudou z·‚i.
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_03"); //P‚Ìsah·m na hrob mÈ matky, pokud hled·ö draka, tak kdyû nikde jinde, tam ho urËitÍ najdeö.
+	AI_Output (other,self ,"DIA_Hokurn_Dragon_15_00"); //Dobr√°, tak kde jsou ti draci?
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_01"); //P√¢irozenƒô ti to ne√¢eknu √∫plnƒô p√¢esnƒô, ale sly≈°el jsem, ≈æe by tu mƒôli b√Ωt celkem ƒçty√¢i.
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_02"); //V noci jsme zahl√©dli nad nejvy≈°≈°√≠ horou rudou z√°√¢i.
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_03"); //P√¢√≠sah√°m na hrob m√© matky, pokud hled√°≈° draka, tak kdy≈æ nikde jinde, tam ho urƒçitƒô najde≈°.
 };
 
 //*********************************************************************
@@ -602,7 +602,7 @@ INSTANCE DIA_Hokurn_AllDragonsDead   (C_INFO)
 	condition   = DIA_Hokurn_AllDragonsDead_Condition;
 	information = DIA_Hokurn_AllDragonsDead_Info;
 	permanent   = TRUE;
-	description	= "Zabil jsem vöechny draky.";
+	description	= "Zabil jsem v≈°echny draky.";
 				
 };
 
@@ -616,8 +616,8 @@ FUNC INT DIA_Hokurn_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Hokurn_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Hokurn_AllDragonsDead_15_00"); //Zabil jsem vöechny draky.
-	AI_Output 	(self ,other,"DIA_Hokurn_AllDragonsDead_01_01"); //UdÍlej si v˝let a vypr·vÍj svÈ poh·dky nÍkomu jinÈmu.
+	AI_Output	(other,self ,"DIA_Hokurn_AllDragonsDead_15_00"); //Zabil jsem v≈°echny draky.
+	AI_Output 	(self ,other,"DIA_Hokurn_AllDragonsDead_01_01"); //Udƒôlej si v√Ωlet a vypr√°vƒôj sv√© poh√°dky nƒôkomu jin√©mu.
 };
 
 // ************************************************************

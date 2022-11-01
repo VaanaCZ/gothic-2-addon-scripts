@@ -87,7 +87,7 @@ const int BeltBonus_ProtTotal	= 7;
 	on_equip		=	Equip_ItBE_Addon_Leather_01;
 	on_unequip		=	UnEquip_ItBE_Addon_Leather_01;
 
-	description		=  "Koûen˝ opasek";
+	description		=  "Ko≈æen√Ω opasek";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -143,7 +143,7 @@ FUNC VOID UnEquip_ItBE_Addon_Leather_01()
 	};
 };
 //------------------------------------------------------------------------------------------
-// Fellg¸rtel (SLD) Zweihand
+// Fellg√ºrtel (SLD) Zweihand
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_SLD_01 (C_Item)  //Bennet(Kap1)
 {
@@ -161,7 +161,7 @@ FUNC VOID UnEquip_ItBE_Addon_Leather_01()
 	on_equip		=	Equip_ItBE_Addon_SLD_01;
 	on_unequip		=	UnEquip_ItBE_Addon_SLD_01;
 
-	description		=  "éoldnÈ‚sk˝ opasek";
+	description		=  "≈Ωoldn√©√¢sk√Ω opasek";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -212,7 +212,7 @@ FUNC VOID UnEquip_ItBE_Addon_SLD_01()
 	};
 };
 //------------------------------------------------------------------------------------------
-// Novizensch‰rpe (Zweihand)
+// Novizensch√§rpe (Zweihand)
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_NOV_01 (C_Item)  //Gorax (Kap1)
 {
@@ -230,7 +230,7 @@ FUNC VOID UnEquip_ItBE_Addon_SLD_01()
 	on_equip		=	Equip_ItBE_Addon_NOV_01;
 	on_unequip		=	UnEquip_ItBE_Addon_NOV_01;
 
-	description		=  "äerpa p‚ipravenosti";
+	description		=  "≈†erpa p√¢ipravenosti";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -367,7 +367,7 @@ FUNC VOID UnEquip_ItBE_Addon_MIL_01()
 	on_equip		=	Equip_ItBE_Addon_KDF_01;
 	on_unequip		=	UnEquip_ItBE_Addon_KDF_01;
 
-	description		=  "Ohniv· öerpa";
+	description		=  "Ohniv√° ≈°erpa";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -419,7 +419,7 @@ FUNC VOID UnEquip_ItBE_Addon_KDF_01()
 };
 
 //------------------------------------------------------------------------------------------
-// Minecrawler G¸rtel Zweihand
+// Minecrawler G√ºrtel Zweihand
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_MC (C_Item)  //Bennet(Kap3)
 {
@@ -437,7 +437,7 @@ FUNC VOID UnEquip_ItBE_Addon_KDF_01()
 	on_equip		=	Equip_ItBE_Addon_MC;
 	on_unequip		=	UnEquip_ItBE_Addon_MC;
 
-	description		=  "Opasek z d˘lnÌho Ëerva";
+	description		=  "Opasek z d≈Øln√≠ho ƒçerva";
 	
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -490,7 +490,7 @@ FUNC VOID UnEquip_ItBE_Addon_MC()
 
 
 // *****************************************************
-// 						kleine G¸rtel
+// 						kleine G√ºrtel
 // *****************************************************
 // -----------------------------------------------------
 // STR 5
@@ -511,7 +511,7 @@ INSTANCE  ItBe_Addon_STR_5 (C_Item)		//Spielstart Xardas(Kap1)
 	on_equip		=	Equip_ItBe_Addon_STR_5;
 	on_unequip		=	UnEquip_ItBe_Addon_STR_5;
 
-	description		=  "Opasek sÌly";
+	description		=  "Opasek s√≠ly";
 	
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= BeltBonus_STR01;
@@ -551,7 +551,7 @@ INSTANCE  ItBe_Addon_STR_10 (C_Item)  	//Jora(Kap4)/Sengrath(4)
 	on_equip		=	Equip_ItBe_Addon_STR_10;
 	on_unequip		=	UnEquip_ItBe_Addon_STR_10;
 
-	description		=  "Opasek sÌly";
+	description		=  "Opasek s√≠ly";
 	
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= BeltBonus_STR02;
@@ -752,7 +752,7 @@ INSTANCE  ItBe_Addon_Prot_MAGIC (C_Item)  //Gorax(Kap3)/Zuris(3)
 	on_equip		=	Equip_ItBe_Addon_Prot_MAGIC;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_MAGIC;
 
-	description		=  "Opasek magickÈ ochrany";
+	description		=  "Opasek magick√© ochrany";
 	
 	TEXT[2]			= NAME_Prot_MAGIC;
 	COUNT[2]		= BeltBonus_ProtMAGIC;
@@ -791,7 +791,7 @@ INSTANCE  ItBe_Addon_Prot_FIRE (C_Item)  //Constantino(Kap3)/Sengrath(4)
 	on_equip		=	Equip_ItBe_Addon_Prot_FIRE;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_FIRE;
 
-	description		=  "Opasek ohnivc˘";
+	description		=  "Opasek ohnivc≈Ø";
 	
 	TEXT[2]			= NAME_Prot_FIRE;
 	COUNT[2]		= BeltBonus_ProtFIRE;
@@ -814,7 +814,7 @@ FUNC VOID UnEquip_ItBe_Addon_Prot_FIRE()
 // -----------------------------------------------------
 // PROT EdgPoi
 // -----------------------------------------------------
-INSTANCE  ItBe_Addon_Prot_EdgPoi (C_Item)  //Khaled(Kap4)/Orlan(3)	Missionbelohnung von Garett f¸r Feuerwarane (Kap2)
+INSTANCE  ItBe_Addon_Prot_EdgPoi (C_Item)  //Khaled(Kap4)/Orlan(3)	Missionbelohnung von Garett f√ºr Feuerwarane (Kap2)
 {
 	name 			=	NAME_Addon_Belt;
 
@@ -875,7 +875,7 @@ INSTANCE  ItBe_Addon_Prot_TOTAL (C_Item)  //Hakon(Kap4)
 	on_equip		=	Equip_ItBe_Addon_Prot_TOTAL;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_TOTAL;
 
-	description		=  "Opasek ochr·nc˘";
+	description		=  "Opasek ochr√°nc≈Ø";
 	
 	TEXT[1]			= NAME_Prot_Edge;
 	COUNT[1]		= BeltBonus_ProtTOTAL;

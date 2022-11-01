@@ -10,7 +10,7 @@ instance DIA_Addon_GivePotion(C_INFO)
 	condition	= DIA_Addon_GivePotion_Condition;
 	information	= DIA_Addon_GivePotion_Info;
 	permanent	= TRUE;
-	description = "(d·t lÈËiv˝ lektvar)";
+	description = "(d√°t l√©ƒçiv√Ω lektvar)";
 };                       
 FUNC INT DIA_Addon_GivePotion_Condition()
 {
@@ -31,23 +31,23 @@ func VOID DIA_Addon_GivePotion_Info()
 	Info_AddChoice (DIA_Addon_GivePotion,DIALOG_BACK,DIA_Addon_GivePotion_BACK);
 	if (Npc_HasItems (other,ItPo_Health_03) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(d·t lÈËiv˝ elixÌr)",DIA_Addon_GivePotion_ItPo_Health_03);
+		Info_AddChoice (DIA_Addon_GivePotion,"(d√°t l√©ƒçiv√Ω elix√≠r)",DIA_Addon_GivePotion_ItPo_Health_03);
 	};
 	if (Npc_HasItems (other,ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(d·t hojiv˝ extrakt)",DIA_Addon_GivePotion_ItPo_Health_02);
+		Info_AddChoice (DIA_Addon_GivePotion,"(d√°t hojiv√Ω extrakt)",DIA_Addon_GivePotion_ItPo_Health_02);
 	};
 	if (Npc_HasItems (other,ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(d·t hojivou esenci)",DIA_Addon_GivePotion_ItPo_Health_01);
+		Info_AddChoice (DIA_Addon_GivePotion,"(d√°t hojivou esenci)",DIA_Addon_GivePotion_ItPo_Health_01);
 	};
 };
 // ------------------------------------------------------------
 func void B_Addon_DrinkPotion ()
 {
-	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //Na, tady m·ö lÈËiv˝ lektvar.
+	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //Na, tady m√°≈° l√©ƒçiv√Ω lektvar.
 
-	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //ge‰ndert m.F. 
+	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //ge√§ndert m.F. 
 	{
 		if (Npc_HasItems(self,ItPo_Health_03) > 0)			
 		{

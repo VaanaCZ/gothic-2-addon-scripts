@@ -12,7 +12,7 @@ func void B_MakeRangerReadyToLeaveMeeting (VAR C_NPC Ranger)
 	AI_UnequipArmor	(Ranger);
 	Npc_RemoveInvItems	(Ranger, ITAR_RANGER_Addon,	Npc_HasItems (Ranger, ITAR_RANGER_Addon ) );
 	Npc_RemoveInvItems	(Ranger, ITAR_Fake_RANGER,	Npc_HasItems (Ranger, ITAR_Fake_RANGER ) );
-	AI_EquipBestArmor (Ranger); //Joly:ITAR_Fake_RANGER wegen diesem hier, falls die Armor nicht gelöscht wurde.
+	AI_EquipBestArmor (Ranger); //Joly:ITAR_Fake_RANGER wegen diesem hier, falls die Armor nicht gelÃ¶scht wurde.
 };
 func void B_MakeRangerReadyForMeetingALL ()
 {
@@ -67,7 +67,7 @@ func VOID B_RangerMeetingParking () // im Lares dialog
 {
 	if (MIS_Addon_Cavalorn_GetOrnamentFromPAL != 0)
 	{
-		B_StartOtherRoutine	(Cavalorn,"Stadt"); //Joly:nicht parking. Der plöppt sonst bei Vat vat rein.			
+		B_StartOtherRoutine	(Cavalorn,"Stadt"); //Joly:nicht parking. Der plÃ¶ppt sonst bei Vat vat rein.			
 	};
 	
 	B_StartOtherRoutine	(Orlan,"START");	
@@ -93,17 +93,17 @@ func VOID B_SchlussMitRangerMeeting () //im Vatras dialog
 		B_StartOtherRoutine	(Cavalorn,"Stadt"); 			
 	};
 	
-	B_StartOtherRoutine	(Lares,"Zaèít"); 				
+	B_StartOtherRoutine	(Lares,"ZaÄÃ­t"); 				
 
-	B_StartOtherRoutine	(Cord,"Zaèít");					
+	B_StartOtherRoutine	(Cord,"ZaÄÃ­t");					
 	if ((Gaan.aivar[AIV_TalkedToPlayer] == FALSE))
 	{
-		B_StartOtherRoutine	(Gaan,"PreStart");}else{B_StartOtherRoutine	(Gaan,"Zaèít");					
+		B_StartOtherRoutine	(Gaan,"PreStart");}else{B_StartOtherRoutine	(Gaan,"ZaÄÃ­t");					
 	};
 	if (MIS_Addon_Martin_GetRangar == 0)
 	{
-		B_StartOtherRoutine	(Martin,"PreStart");}else{B_StartOtherRoutine (Martin,"Zaèít");
+		B_StartOtherRoutine	(Martin,"PreStart");}else{B_StartOtherRoutine (Martin,"ZaÄÃ­t");
 	};
-	B_StartOtherRoutine	(Orlan,"Zaèít");	
+	B_StartOtherRoutine	(Orlan,"ZaÄÃ­t");	
 	Lares_HaltsMaul = LOG_OBSOLETE;			
 };

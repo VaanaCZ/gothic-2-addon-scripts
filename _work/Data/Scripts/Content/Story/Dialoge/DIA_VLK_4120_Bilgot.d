@@ -38,28 +38,28 @@ func int DIA_Bilgot_HALLO_Condition ()
 };
 func void DIA_Bilgot_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Bilgot_HALLO_05_00"); //Hej, odkud p‚ich·zÌö? P‚ich·zÌö z hradu?
+	AI_Output (self, other, "DIA_Bilgot_HALLO_05_00"); //Hej, odkud p√¢ich√°z√≠≈°? P√¢ich√°z√≠≈° z hradu?
 
-	Info_AddChoice	(DIA_Bilgot_HALLO, "Ano, p‚ich·zÌm z hradu - proË?", DIA_Bilgot_HALLO_Burg );
-	Info_AddChoice	(DIA_Bilgot_HALLO, "Zavedla mÍ sem cesta...", DIA_Bilgot_HALLO_Zufall );
+	Info_AddChoice	(DIA_Bilgot_HALLO, "Ano, p√¢ich√°z√≠m z hradu - proƒç?", DIA_Bilgot_HALLO_Burg );
+	Info_AddChoice	(DIA_Bilgot_HALLO, "Zavedla mƒô sem cesta...", DIA_Bilgot_HALLO_Zufall );
 };
 func void DIA_Bilgot_HALLO_Zufall ()
 {
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Zufall_15_00"); //ProstÍ mÍ sem cesta zavedla.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_01"); //ChlapËe, sem nikoho cesta JEN TAK nezavede. Jsme tady tot·lnÍ v h·ji - vöude kolem jsou ch‡apavci!
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_02"); //NenÌ dne, aby jeden z n·s neöel k Ëertu.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_03"); //Nechceö mi ‚Ìct, odkud p‚ich·zÌö? Dobr· - a„ si tÍ vezmou ch‡apavci!
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Zufall_15_00"); //Prostƒô mƒô sem cesta zavedla.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_01"); //Chlapƒçe, sem nikoho cesta JEN TAK nezavede. Jsme tady tot√°lnƒô v h√°ji - v≈°ude kolem jsou ch≈ïapavci!
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_02"); //Nen√≠ dne, aby jeden z n√°s ne≈°el k ƒçertu.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_03"); //Nechce≈° mi √¢√≠ct, odkud p√¢ich√°z√≠≈°? Dobr√° - aƒÉ si tƒô vezmou ch≈ïapavci!
 	
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Bilgot_HALLO_Burg ()
 {
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_00"); //Ano, p‚ich·zÌm z hradu - proË?
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_01"); //Jak to tam vypad·?
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_02"); //O nic lÌp neû tady. Sk‚eti jsou tam po‚·d, pokud myslÌö tohle.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_03"); //ZatracenÍ. »lovÍk nenÌ nikde v bezpeËÌ.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_04"); //NÍco ti ‚eknu. Kdybych nebyl posran˝ strachy, prosekal bych se odtud.
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_00"); //Ano, p√¢ich√°z√≠m z hradu - proƒç?
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_01"); //Jak to tam vypad√°?
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_02"); //O nic l√≠p ne≈æ tady. Sk√¢eti jsou tam po√¢√°d, pokud mysl√≠≈° tohle.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_03"); //Zatracenƒô. ƒålovƒôk nen√≠ nikde v bezpeƒç√≠.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_04"); //Nƒôco ti √¢eknu. Kdybych nebyl posran√Ω strachy, prosekal bych se odtud.
 	
 	Info_ClearChoices	(DIA_Bilgot_HALLO);
 };
@@ -73,7 +73,7 @@ instance DIA_Bilgot_Job		(C_INFO)
 	condition	 = 	DIA_Bilgot_Job_Condition;
 	information	 = 	DIA_Bilgot_Job_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"A co tady vlastnÍ dÍl·ö?";
+	description	 = 	"A co tady vlastnƒô dƒôl√°≈°?";
 };
 func int DIA_Bilgot_Job_Condition ()
 {
@@ -81,12 +81,12 @@ func int DIA_Bilgot_Job_Condition ()
 };
 func void DIA_Bilgot_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Job_15_00"); //A co tady vlastnÍ dÍl·ö?
-	AI_Output (self, other, "DIA_Bilgot_Job_05_01"); //Jsem tady dÍvËe pro vöechno. ChodÌm okolo a sleduju ch‡apavce, Bilgote sem, Bilgote tam.
-	AI_Output (self, other, "DIA_Bilgot_Job_05_02"); //MÍl jsem radöi z˘stat doma se svou starou. Nebylo to sice o moc lepöÌ, ale aspo‡ tam bylo nÍco po‚·dnÈho k jÌdlu.
-	AI_Output (self, other, "DIA_Bilgot_Job_05_03"); //A teÎ jsem vöechno, co zbylo z Fajethov˝ch ozbrojenc˘.
-	AI_Output (self, other, "DIA_Bilgot_Job_05_04"); //Jak jsem mÍl vÍdÍt, ûe se tahle v˝prava nevr·tÌ?
-	AI_Output (self, other, "DIA_Bilgot_Job_05_05"); //M˘j p‚Ìtel Olav se vypa‚il. Moûn· mu to vyölo.
+	AI_Output (other, self, "DIA_Bilgot_Job_15_00"); //A co tady vlastnƒô dƒôl√°≈°?
+	AI_Output (self, other, "DIA_Bilgot_Job_05_01"); //Jsem tady dƒôvƒçe pro v≈°echno. Chod√≠m okolo a sleduju ch≈ïapavce, Bilgote sem, Bilgote tam.
+	AI_Output (self, other, "DIA_Bilgot_Job_05_02"); //Mƒôl jsem rad≈°i z≈Østat doma se svou starou. Nebylo to sice o moc lep≈°√≠, ale aspo≈ï tam bylo nƒôco po√¢√°dn√©ho k j√≠dlu.
+	AI_Output (self, other, "DIA_Bilgot_Job_05_03"); //A te√´ jsem v≈°echno, co zbylo z Fajethov√Ωch ozbrojenc≈Ø.
+	AI_Output (self, other, "DIA_Bilgot_Job_05_04"); //Jak jsem mƒôl vƒôdƒôt, ≈æe se tahle v√Ωprava nevr√°t√≠?
+	AI_Output (self, other, "DIA_Bilgot_Job_05_05"); //M≈Øj p√¢√≠tel Olav se vypa√¢il. Mo≈æn√° mu to vy≈°lo.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hilfe
@@ -98,7 +98,7 @@ instance DIA_Bilgot_Hilfe		(C_INFO)
 	condition	 = 	DIA_Bilgot_Hilfe_Condition;
 	information	 = 	DIA_Bilgot_Hilfe_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Co vÌö o ch‡apavcÌch?";
+	description	 = 	"Co v√≠≈° o ch≈ïapavc√≠ch?";
 };
 func int DIA_Bilgot_Hilfe_Condition ()
 {
@@ -109,18 +109,18 @@ func int DIA_Bilgot_Hilfe_Condition ()
 };
 func void DIA_Bilgot_Hilfe_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_00"); //Co vÌö o ch‡apavcÌch?
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_01"); //ProË to chceö vÍdÍt? A ne‚Ìkej mi, ûe jsi jenom zvÍdav˝!
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_02"); //Chyst·m se na ty ch‡apavce vyrazit.
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_03"); //To je bl·znovstvÌ. Pozoroval jsem je - jsou to krveûÌznivÈ bestie.
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_04"); //¬ekni mi, co o nich vÌö.
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_05"); //Hm... mohl bych ti pomoci - ale jen pod jednou podmÌnkou!
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_06"); //Co chceö?
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_07"); //Kdyû dok·ûeö zabÌt ch‡apavce, musÌö mÍ odsud dostat!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_00"); //Co v√≠≈° o ch≈ïapavc√≠ch?
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_01"); //Proƒç to chce≈° vƒôdƒôt? A ne√¢√≠kej mi, ≈æe jsi jenom zvƒôdav√Ω!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_02"); //Chyst√°m se na ty ch≈ïapavce vyrazit.
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_03"); //To je bl√°znovstv√≠. Pozoroval jsem je - jsou to krve≈æ√≠zniv√© bestie.
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_04"); //√Çekni mi, co o nich v√≠≈°.
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_05"); //Hm... mohl bych ti pomoci - ale jen pod jednou podm√≠nkou!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_06"); //Co chce≈°?
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_07"); //Kdy≈æ dok√°≈æe≈° zab√≠t ch≈ïapavce, mus√≠≈° mƒô odsud dostat!
 	
 	if ((Npc_IsDead (Fed)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bilgot_Hilfe_05_08"); //Nem˘ûu se tady dÈle zdrûovat. Uû jsi mluvil s Fedem? Ten chlap je troska - a j· nechci dopadnout jako on!
+		AI_Output (self, other, "DIA_Bilgot_Hilfe_05_08"); //Nem≈Ø≈æu se tady d√©le zdr≈æovat. U≈æ jsi mluvil s Fedem? Ten chlap je troska - a j√° nechci dopadnout jako on!
 	};
 };
 
@@ -135,7 +135,7 @@ instance DIA_Bilgot_KNOWSLEADSNAPPER		(C_INFO)
 	condition	 = 	DIA_Bilgot_KNOWSLEADSNAPPER_Condition;
 	information	 = 	DIA_Bilgot_KNOWSLEADSNAPPER_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"¬ekni mi, co vÌö. Potom tÍ odtud dostanu!";
+	description	 = 	"√Çekni mi, co v√≠≈°. Potom tƒô odtud dostanu!";
 };
 
 func int DIA_Bilgot_KNOWSLEADSNAPPER_Condition ()
@@ -149,25 +149,25 @@ func int DIA_Bilgot_KNOWSLEADSNAPPER_Condition ()
 
 func void DIA_Bilgot_KNOWSLEADSNAPPER_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_00"); //¬ekni mi, co vÌö. Potom tÍ odsud dostanu!
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_01"); //VÍdÍl jsem, ûe s tebou m˘ûu poËÌtat. Tak d·vej pozor. NÍjakou dobu jsem ty ch‡apavce pozoroval.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_02"); //Jsou hodnÍ mazanÌ a nÍjak se spolu... domlouvajÌ. Nikdy nechodÌ sami a ˙toËÌ pouze ve skupinÍ.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_03"); //Ale je tu jeötÍ nÍco. Je mezi nimi jeötÍr, kter˝ je ˙plnÍ jin˝. Ukazuje se jen z‚Ìdka, ale j· ho vidÍl.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_04"); //OstatnÌ bestie se klanÌ, kdyû je mÌjÌ - ale nikdy ho nespustÌ z oËÌ.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_05"); //Dokud se nepohne tenhle, tak ani û·dn˝ jin˝.
+	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_00"); //√Çekni mi, co v√≠≈°. Potom tƒô odsud dostanu!
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_01"); //Vƒôdƒôl jsem, ≈æe s tebou m≈Ø≈æu poƒç√≠tat. Tak d√°vej pozor. Nƒôjakou dobu jsem ty ch≈ïapavce pozoroval.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_02"); //Jsou hodnƒô mazan√≠ a nƒôjak se spolu... domlouvaj√≠. Nikdy nechod√≠ sami a √∫toƒç√≠ pouze ve skupinƒô.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_03"); //Ale je tu je≈°tƒô nƒôco. Je mezi nimi je≈°tƒôr, kter√Ω je √∫plnƒô jin√Ω. Ukazuje se jen z√¢√≠dka, ale j√° ho vidƒôl.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_04"); //Ostatn√≠ bestie se klan√≠, kdy≈æ je m√≠j√≠ - ale nikdy ho nespust√≠ z oƒç√≠.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_05"); //Dokud se nepohne tenhle, tak ani ≈æ√°dn√Ω jin√Ω.
 	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_06"); //Kde najdu tuhle zatracenou bestii?
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_07"); //VidÍl jsem ji u schod˘ do starÈ str·ûnÌ vÍûe.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_07"); //Vidƒôl jsem ji u schod≈Ø do star√© str√°≈æn√≠ vƒô≈æe.
 
-	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_08"); //Dobr·. MyslÌm, ûe rozumÌm. DÌky!
+	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_08"); //Dobr√°. Mysl√≠m, ≈æe rozum√≠m. D√≠ky!
 	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_09"); //Pamatuj, dal jsi mi slovo!
 
-	Wld_InsertNpc (NewMine_LeadSnapper,"OW_ORC_LOOKOUT_2_01"); //Der Rudelf¸hrer
+	Wld_InsertNpc (NewMine_LeadSnapper,"OW_ORC_LOOKOUT_2_01"); //Der Rudelf√ºhrer
 	
-	B_LogEntry (TOPIC_FajethKillSnapper,"Bilgot se domnÌv·, ûe v˘dce ch‡apavËÌ smeËky nejspÌö najdu na schodech starÈ str·ûnÌ vÍûe."); 
+	B_LogEntry (TOPIC_FajethKillSnapper,"Bilgot se domn√≠v√°, ≈æe v≈Ødce ch≈ïapavƒç√≠ smeƒçky nejsp√≠≈° najdu na schodech star√© str√°≈æn√≠ vƒô≈æe."); 
 	
 	Log_CreateTopic (TOPIC_BilgotEscort,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BilgotEscort,LOG_RUNNING);
-	B_LogEntry (TOPIC_BilgotEscort,"Bilgot chce, abych ho dostal z ˙dolÌ.");
+	B_LogEntry (TOPIC_BilgotEscort,"Bilgot chce, abych ho dostal z √∫dol√≠.");
 		
 };
 ///////////////////////////////////////////////////////////////////////
@@ -180,7 +180,7 @@ instance DIA_Bilgot_TAKEYOUWITHME		(C_INFO)
 	condition	 = 	DIA_Bilgot_TAKEYOUWITHME_Condition;
 	information	 = 	DIA_Bilgot_TAKEYOUWITHME_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"(Dodrûet slib.)";
+	description	 = 	"(Dodr≈æet slib.)";
 };
 func int DIA_Bilgot_TAKEYOUWITHME_Condition ()
 {
@@ -192,10 +192,10 @@ func int DIA_Bilgot_TAKEYOUWITHME_Condition ()
 };
 func void DIA_Bilgot_TAKEYOUWITHME_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_00"); //Je Ëas, Bilgote! Sbal si svÈ vÍci, odch·zÌme.
-	//Joly: SC bringt den Typ bis zum Pass AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_01"); //Groﬂartig! Es reicht mir schon, wenn du mich ¸ber die groﬂe Br¸cke am Fluss vor der belagerten Burg bringst. Den Rest schaff ich dann schon.
+	AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_00"); //Je ƒças, Bilgote! Sbal si sv√© vƒôci, odch√°z√≠me.
+	//Joly: SC bringt den Typ bis zum Pass AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_01"); //Gro√üartig! Es reicht mir schon, wenn du mich √ºber die gro√üe Br√ºcke am Fluss vor der belagerten Burg bringst. Den Rest schaff ich dann schon.
 	//Joly: SC bringt den Typ bis zum Pass AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_02"); //Dann beeil dich!
-	AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_03"); //Jsem p‚ipraven!
+	AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_03"); //Jsem p√¢ipraven!
 
 	Npc_ExchangeRoutine	(self, "FOLLOWTOOCBRIDGE");
 	Bilgot.flags	= 0;	
@@ -213,7 +213,7 @@ instance DIA_Bilgot_LAUFSCHNELLER		(C_INFO)
 	condition	 = 	DIA_Bilgot_LAUFSCHNELLER_Condition;
 	information	 = 	DIA_Bilgot_LAUFSCHNELLER_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Nem˘ûeö jÌt trochu rychleji?!";
+	description	 = 	"Nem≈Ø≈æe≈° j√≠t trochu rychleji?!";
 };
 
 func int DIA_Bilgot_LAUFSCHNELLER_Condition ()
@@ -227,8 +227,8 @@ func int DIA_Bilgot_LAUFSCHNELLER_Condition ()
 
 func void DIA_Bilgot_LAUFSCHNELLER_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_LAUFSCHNELLER_15_00"); //Nem˘ûeö jÌt trochu rychleji?!
-	AI_Output (self, other, "DIA_Bilgot_LAUFSCHNELLER_05_01"); //Jdu tak rychle, jak jen m˘ûu.
+	AI_Output (other, self, "DIA_Bilgot_LAUFSCHNELLER_15_00"); //Nem≈Ø≈æe≈° j√≠t trochu rychleji?!
+	AI_Output (self, other, "DIA_Bilgot_LAUFSCHNELLER_05_01"); //Jdu tak rychle, jak jen m≈Ø≈æu.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info BeiBrueckeAngekommen
@@ -252,9 +252,9 @@ func int DIA_Bilgot_BEIBRUECKEANGEKOMMEN_Condition ()
 
 func void DIA_Bilgot_BEIBRUECKEANGEKOMMEN_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_00"); //Tak, jsme tady. TeÎ natrefÌme na cestu. Tahle oblast je nebezpeËn·!
-	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_01"); //DÌky!
-	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_02"); //Nenech se seûrat. To by byla ökoda.
+	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_00"); //Tak, jsme tady. Te√´ natref√≠me na cestu. Tahle oblast je nebezpeƒçn√°!
+	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_01"); //D√≠ky!
+	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_02"); //Nenech se se≈ærat. To by byla ≈°koda.
 	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_03"); //Sbohem!
 	
 	AI_StopProcessInfos (self);	
@@ -275,7 +275,7 @@ instance DIA_Bilgot_LetztePause		(C_INFO)
 	condition	 = 	DIA_Bilgot_LetztePause_Condition;
 	information	 = 	DIA_Bilgot_LetztePause_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co tady dÍl·ö? Myslel jsem, ûe jsi mÍl namÌ‚eno p‚es pr˘smyk?";
+	description	 = 	"Co tady dƒôl√°≈°? Myslel jsem, ≈æe jsi mƒôl nam√≠√¢eno p√¢es pr≈Øsmyk?";
 };
 
 func int DIA_Bilgot_LetztePause_Condition ()
@@ -288,10 +288,10 @@ func int DIA_Bilgot_LetztePause_Condition ()
 
 func void DIA_Bilgot_LetztePause_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_00"); //Co tady dÍl·ö? Myslel jsem, ûe jsi mÍl namÌ‚eno p‚es pr˘smyk?
-	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_01"); //Uû nem˘ûu d·l. Nech mÍ na chvÌli vydechnout. J· to zvl·dnu. Neboj se!
-	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_02"); //Kdyû to ‚Ìk·ö.
-	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_03"); //Jen malou p‚est·vku.
+	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_00"); //Co tady dƒôl√°≈°? Myslel jsem, ≈æe jsi mƒôl nam√≠√¢eno p√¢es pr≈Øsmyk?
+	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_01"); //U≈æ nem≈Ø≈æu d√°l. Nech mƒô na chv√≠li vydechnout. J√° to zvl√°dnu. Neboj se!
+	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_02"); //Kdy≈æ to √¢√≠k√°≈°.
+	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_03"); //Jen malou p√¢est√°vku.
 	
 	AI_StopProcessInfos (self);
 };
@@ -305,7 +305,7 @@ instance DIA_Bilgot_Olav		(C_INFO)
 	condition	 = 	DIA_Bilgot_Olav_Condition;
 	information	 = 	DIA_Bilgot_Olav_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Naöel jsem Olava.";
+	description	 = 	"Na≈°el jsem Olava.";
 };
 
 func int DIA_Bilgot_Olav_Condition ()
@@ -319,10 +319,10 @@ func int DIA_Bilgot_Olav_Condition ()
 
 func void DIA_Bilgot_Olav_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Olav_15_00"); //Naöel jsem Olava.
-	AI_Output (self, other, "DIA_Bilgot_Olav_05_01"); //A jak se m·?
-	AI_Output (other, self, "DIA_Bilgot_Olav_15_02"); //Je mrtv˝. Seûrali ho vlci.
-	AI_Output (self, other, "DIA_Bilgot_Olav_05_03"); //Ale, zatracenÍ. Douf·m, ûe se mi aspo‡ poda‚Ì dostat se odtud.
+	AI_Output (other, self, "DIA_Bilgot_Olav_15_00"); //Na≈°el jsem Olava.
+	AI_Output (self, other, "DIA_Bilgot_Olav_05_01"); //A jak se m√°?
+	AI_Output (other, self, "DIA_Bilgot_Olav_15_02"); //Je mrtv√Ω. Se≈ærali ho vlci.
+	AI_Output (self, other, "DIA_Bilgot_Olav_05_03"); //Ale, zatracenƒô. Douf√°m, ≈æe se mi aspo≈ï poda√¢√≠ dostat se odtud.
 	
 	B_GivePlayerXP (XP_Ambient);
 };

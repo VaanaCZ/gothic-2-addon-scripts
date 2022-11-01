@@ -48,9 +48,9 @@ func int DIA_Sekob_HALLO_Condition ()
 
 func void DIA_Sekob_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Sekob_HALLO_01_00"); //Co dêláš na mém pozemku? Tady není nic, co bys mohl ukrást. Pakuj se.
-	AI_Output (other, self, "DIA_Sekob_HALLO_15_01"); //Není v tıhle zatracenı zemi kousek pùdy, která by nikomu nepatâila?
-	AI_Output (self, other, "DIA_Sekob_HALLO_01_02"); //Zaèni makat, pak ti moná jednoho dne bude taky nêjaká pùda patâit. Ale do té doby se poflakuj nêkde jinde.
+	AI_Output (self, other, "DIA_Sekob_HALLO_01_00"); //Co dÄ™lÃ¡Å¡ na mÃ©m pozemku? Tady nenÃ­ nic, co bys mohl ukrÃ¡st. Pakuj se.
+	AI_Output (other, self, "DIA_Sekob_HALLO_15_01"); //NenÃ­ v tÃ½hle zatracenÃ½ zemi kousek pÅ¯dy, kterÃ¡ by nikomu nepatÃ¢ila?
+	AI_Output (self, other, "DIA_Sekob_HALLO_01_02"); //ZaÄni makat, pak ti moÅ¾nÃ¡ jednoho dne bude taky nÄ™jakÃ¡ pÅ¯da patÃ¢it. Ale do tÃ© doby se poflakuj nÄ™kde jinde.
 };
 
 // ************************************************************
@@ -78,7 +78,7 @@ func int DIA_Sekob_PermVorMis_Condition ()
 func void DIA_Sekob_PermVorMis_Info ()
 {
 	AI_Output (other, self, "DIA_Sekob_PermVorMis_15_00"); //Poslouchej...
-	AI_Output (self, other, "DIA_Sekob_PermVorMis_01_01"); //Nemám pro tebe ádnou práci. A teë vypadni!
+	AI_Output (self, other, "DIA_Sekob_PermVorMis_01_01"); //NemÃ¡m pro tebe Å¾Ã¡dnou prÃ¡ci. A teÃ« vypadni!
 };
 
 // ************************************************************
@@ -91,7 +91,7 @@ instance DIA_Sekob_ZAHLPACHT		(C_INFO)
 	condition	= DIA_Sekob_ZAHLPACHT_Condition;
 	information	= DIA_Sekob_ZAHLPACHT_Info;
 	permanent	= FALSE;
-	description	= "Onar chce, abys u koneènê zaplatil nájem.";
+	description	= "Onar chce, abys uÅ¾ koneÄnÄ™ zaplatil nÃ¡jem.";
 };
 
 func int DIA_Sekob_ZAHLPACHT_Condition ()
@@ -104,9 +104,9 @@ func int DIA_Sekob_ZAHLPACHT_Condition ()
 
 func void DIA_Sekob_ZAHLPACHT_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_ZAHLPACHT_15_00"); //Tahle pùda patâí velkostatkáâi a ty jsi tady jenom v nájmu. Onar chce, abys mu zaplatil rentu. Dluíš u za nêkolik tıdnù.
-	AI_Output (self, other, "DIA_Sekob_ZAHLPACHT_01_01"); //Co? A to poslal takovıho nièemu? Pâece ti nebudu vêâit.
-	AI_Output (self, other, "DIA_Sekob_ZAHLPACHT_01_02"); //Vypadni odsud, nebo se neudrím.
+	AI_Output (other, self, "DIA_Sekob_ZAHLPACHT_15_00"); //Tahle pÅ¯da patÃ¢Ã­ velkostatkÃ¡Ã¢i a ty jsi tady jenom v nÃ¡jmu. Onar chce, abys mu zaplatil rentu. DluÅ¾Ã­Å¡ uÅ¾ za nÄ™kolik tÃ½dnÅ¯.
+	AI_Output (self, other, "DIA_Sekob_ZAHLPACHT_01_01"); //Co? A to poslal takovÃ½ho niÄemu? PÃ¢ece ti nebudu vÄ™Ã¢it.
+	AI_Output (self, other, "DIA_Sekob_ZAHLPACHT_01_02"); //Vypadni odsud, nebo se neudrÅ¾Ã­m.
 	
 	self.aivar[AIV_DefeatedByPlayer] = FALSE; //WICHTIG
 };
@@ -121,7 +121,7 @@ instance DIA_Sekob_KohleRaus		(C_INFO)
 	condition	= DIA_Sekob_KohleRaus_Condition;
 	information	= DIA_Sekob_KohleRaus_Info;
 	permanent	= TRUE;
-	description	= "Naval prachy, nebo dostaneš do zubù.";
+	description	= "Naval prachy, nebo dostaneÅ¡ do zubÅ¯.";
 };
 
 func int DIA_Sekob_KohleRaus_Condition ()
@@ -135,8 +135,8 @@ func int DIA_Sekob_KohleRaus_Condition ()
 
 func void DIA_Sekob_KohleRaus_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_KohleRaus_15_00"); //Naval prachy, nebo dostaneš do zubù.
-	AI_Output (self, other, "DIA_Sekob_KohleRaus_01_01"); //Ty se mi do šrajtofle nedostaneš, ty kriminálníku. TY NE!
+	AI_Output (other, self, "DIA_Sekob_KohleRaus_15_00"); //Naval prachy, nebo dostaneÅ¡ do zubÅ¯.
+	AI_Output (self, other, "DIA_Sekob_KohleRaus_01_01"); //Ty se mi do Å¡rajtofle nedostaneÅ¡, ty kriminÃ¡lnÃ­ku. TY NE!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);	
 };
@@ -151,7 +151,7 @@ instance DIA_Sekob_InformOnar		(C_INFO)
 	condition	= DIA_Sekob_InformOnar_Condition;
 	information	= DIA_Sekob_InformOnar_Info;
 	permanent	= FALSE;
-	description	= "Tak to mám dojem, e o tom povím Onarovi.";
+	description	= "Tak to mÃ¡m dojem, Å¾e o tom povÃ­m Onarovi.";
 };
 
 func int DIA_Sekob_InformOnar_Condition ()
@@ -165,8 +165,8 @@ func int DIA_Sekob_InformOnar_Condition ()
 
 func void DIA_Sekob_InformOnar_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_InformOnar_15_00"); //Tak to mám dojem, e o tom povím Onarovi.
-	AI_Output (self, other, "DIA_Sekob_InformOnar_01_01"); //To je mi fuk! Mùeš Onarovi âíct, e nic nemám. To je smutná pravda.
+	AI_Output (other, self, "DIA_Sekob_InformOnar_15_00"); //Tak to mÃ¡m dojem, Å¾e o tom povÃ­m Onarovi.
+	AI_Output (self, other, "DIA_Sekob_InformOnar_01_01"); //To je mi fuk! MÅ¯Å¾eÅ¡ Onarovi Ã¢Ã­ct, Å¾e nic nemÃ¡m. To je smutnÃ¡ pravda.
 	MIS_Sekob_RedeMitOnar = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 };
@@ -182,7 +182,7 @@ instance DIA_Sekob_Defeated		(C_INFO)
 	condition	= DIA_Sekob_Defeated_Condition;
 	information	= DIA_Sekob_Defeated_Info;
 	permanent	= FALSE;
-	description	= "Kde jsou ty peníze!?!";
+	description	= "Kde jsou ty penÃ­ze!?!";
 };
 
 func int DIA_Sekob_Defeated_Condition ()
@@ -197,21 +197,21 @@ func int DIA_Sekob_Defeated_Condition ()
 
 func void DIA_Sekob_Defeated_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_Defeated_15_00"); //Kde jsou ty peníze!?!
-	AI_Output (self, other, "DIA_Sekob_Defeated_01_01"); //U mê nebij, prosím. Udêlám, co âekneš.
-	AI_Output (other, self, "DIA_Sekob_Defeated_15_02"); //Tak zaplaã nájem.
-	AI_Output (self, other, "DIA_Sekob_Defeated_01_03"); //(naâíkavê) Ale pane, já nic nemám. Jsem jen chudı uboák, co skoro umírá hlady.
-	AI_Output (self, other, "DIA_Sekob_Defeated_01_04"); //Moje úroda celá uschla. CHTÊL bych zaplatit, ale já prostê nemám èím. Smùla.
+	AI_Output (other, self, "DIA_Sekob_Defeated_15_00"); //Kde jsou ty penÃ­ze!?!
+	AI_Output (self, other, "DIA_Sekob_Defeated_01_01"); //UÅ¾ mÄ™ nebij, prosÃ­m. UdÄ™lÃ¡m, co Ã¢ekneÅ¡.
+	AI_Output (other, self, "DIA_Sekob_Defeated_15_02"); //Tak zaplaÄƒ nÃ¡jem.
+	AI_Output (self, other, "DIA_Sekob_Defeated_01_03"); //(naÃ¢Ã­kavÄ™) Ale pane, jÃ¡ nic nemÃ¡m. Jsem jen chudÃ½ uboÅ¾Ã¡k, co skoro umÃ­rÃ¡ hlady.
+	AI_Output (self, other, "DIA_Sekob_Defeated_01_04"); //Moje Ãºroda celÃ¡ uschla. CHTÄ˜L bych zaplatit, ale jÃ¡ prostÄ™ nemÃ¡m ÄÃ­m. SmÅ¯la.
 
 	Info_ClearChoices	(DIA_Sekob_Defeated);
-	Info_AddChoice	(DIA_Sekob_Defeated, "Buë ten nájem zaplatíš hned teë, nebo tê zabiju.", DIA_Sekob_Defeated_hart);
-	Info_AddChoice	(DIA_Sekob_Defeated, "Fajn, âeknu to Onarovi.", DIA_Sekob_Defeated_weich);
+	Info_AddChoice	(DIA_Sekob_Defeated, "BuÃ« ten nÃ¡jem zaplatÃ­Å¡ hned teÃ«, nebo tÄ™ zabiju.", DIA_Sekob_Defeated_hart);
+	Info_AddChoice	(DIA_Sekob_Defeated, "Fajn, Ã¢eknu to Onarovi.", DIA_Sekob_Defeated_weich);
 };
 
 func void DIA_Sekob_Defeated_Weich()
 {
-	AI_Output (other, self, "DIA_Sekob_Defeated_weich_15_00"); //Fajn, âeknu to Onarovi.
-	AI_Output (self, other, "DIA_Sekob_Defeated_weich_01_01"); //Díky, pane. Tisíceré díky!
+	AI_Output (other, self, "DIA_Sekob_Defeated_weich_15_00"); //Fajn, Ã¢eknu to Onarovi.
+	AI_Output (self, other, "DIA_Sekob_Defeated_weich_01_01"); //DÃ­ky, pane. TisÃ­cerÃ© dÃ­ky!
 	MIS_Sekob_RedeMitOnar = LOG_RUNNING;
 	
 	AI_StopProcessInfos (self);
@@ -219,11 +219,11 @@ func void DIA_Sekob_Defeated_Weich()
 
 			func void B_Sekob_Kassieren()
 			{
-				AI_Output (other, self, "DIA_Sekob_Kassieren_15_00"); //Pâestaà s têmi vásty. Celou dobu tu pršelo a máš plné sıpky. Zaplaã hned teë, nebo tê zabiju.
-				AI_Output (self, other, "DIA_Sekob_Kassieren_01_01"); //(podlézavê) Ne, prosím, tady je zlato. Ještê ti pâidám, kdy mê necháš naivu.
+				AI_Output (other, self, "DIA_Sekob_Kassieren_15_00"); //PÃ¢estaÅ• s tÄ™mi Å¾vÃ¡sty. Celou dobu tu prÅ¡elo a mÃ¡Å¡ plnÃ© sÃ½pky. ZaplaÄƒ hned teÃ«, nebo tÄ™ zabiju.
+				AI_Output (self, other, "DIA_Sekob_Kassieren_01_01"); //(podlÃ©zavÄ™) Ne, prosÃ­m, tady je zlato. JeÅ¡tÄ™ ti pÃ¢idÃ¡m, kdyÅ¾ mÄ™ nechÃ¡Å¡ naÅ¾ivu.
 				B_GiveInvItems (self, other, ItMi_Gold, 60);
 				AI_Output (other, self, "DIA_Sekob_Kassieren_15_02"); //Ani to nebolelo, co?
-				AI_Output (self ,other, "DIA_Sekob_Kassieren_01_03"); //(zoufale) Jsem na mizinê.
+				AI_Output (self ,other, "DIA_Sekob_Kassieren_01_03"); //(zoufale) Jsem na mizinÄ™.
 				Sekob_Pachtbezahlt = TRUE;
 			
 				AI_StopProcessInfos (self);	
@@ -245,7 +245,7 @@ instance DIA_Sekob_Again		(C_INFO)
 	condition	= DIA_Sekob_Again_Condition;
 	information	= DIA_Sekob_Again_Info;
 	permanent	= TRUE;
-	description	= "K té rentê...";
+	description	= "K tÃ© rentÄ™...";
 };
 
 func int DIA_Sekob_Again_Condition ()
@@ -260,11 +260,11 @@ func int DIA_Sekob_Again_Condition ()
 
 func void DIA_Sekob_Again_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_Again_15_00"); //K té rentê...
+	AI_Output (other, self, "DIA_Sekob_Again_15_00"); //K tÃ© rentÄ™...
 	AI_Output (self, other, "DIA_Sekob_Again_01_01"); //Mluvil jsi s Onarem, co?
 	
 	Info_ClearChoices	(DIA_Sekob_Again);
-	Info_AddChoice	(DIA_Sekob_Again, "Zmênil jsem názor.", DIA_Sekob_Again_Nein);
+	Info_AddChoice	(DIA_Sekob_Again, "ZmÄ™nil jsem nÃ¡zor.", DIA_Sekob_Again_Nein);
 	
 	if (Onar_WegenSekob == TRUE)
 	{
@@ -272,20 +272,20 @@ func void DIA_Sekob_Again_Info ()
 	}
 	else
 	{
-		Info_AddChoice	(DIA_Sekob_Again, "Jasnê.", DIA_Sekob_Again_Ja);
+		Info_AddChoice	(DIA_Sekob_Again, "JasnÄ™.", DIA_Sekob_Again_Ja);
 	};
 };
 
 func void DIA_Sekob_Again_Nein()
 {
-	AI_Output (other, self, "DIA_Sekob_Again_Nein_15_00"); //Zmênil jsem názor.
+	AI_Output (other, self, "DIA_Sekob_Again_Nein_15_00"); //ZmÄ™nil jsem nÃ¡zor.
 	B_Sekob_Kassieren();
 };
 
 func void DIA_Sekob_Again_Ja()
 {
-	AI_Output (other, self, "DIA_Sekob_Again_Ja_15_00"); //Jasnê.
-	AI_Output (self ,other, "DIA_Sekob_Again_Ja_01_01"); //Mùeš to udêlat.
+	AI_Output (other, self, "DIA_Sekob_Again_Ja_15_00"); //JasnÄ™.
+	AI_Output (self ,other, "DIA_Sekob_Again_Ja_01_01"); //MÅ¯Å¾eÅ¡ to udÄ™lat.
 	
 	AI_StopProcessInfos (self);
 };
@@ -294,11 +294,11 @@ func void DIA_Sekob_Again_verarscht()
 {
 	MIS_Sekob_RedeMitOnar = LOG_SUCCESS;
 	AI_Output (other, self, "DIA_Sekob_Again_verarscht_15_00"); //Byl jsem...
-	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_01"); //A? Co âíkal?
-	AI_Output (other, self, "DIA_Sekob_Again_verarscht_15_02"); //Je mi líto, ale teë tê musím pâipravit o hlavu.
-	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_03"); //Ale proè? Co jsem udêlal?
-	AI_Output (other, self, "DIA_Sekob_Again_verarscht_15_04"); //Hráls to na mê.
-	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_05"); //Mluvil jsem pravdu - pâísahám!
+	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_01"); //A? Co Ã¢Ã­kal?
+	AI_Output (other, self, "DIA_Sekob_Again_verarscht_15_02"); //Je mi lÃ­to, ale teÃ« tÄ™ musÃ­m pÃ¢ipravit o hlavu.
+	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_03"); //Ale proÄ? Co jsem udÄ™lal?
+	AI_Output (other, self, "DIA_Sekob_Again_verarscht_15_04"); //HrÃ¡ls to na mÄ™.
+	AI_Output (self, other, "DIA_Sekob_Again_verarscht_01_05"); //Mluvil jsem pravdu - pÃ¢Ã­sahÃ¡m!
 	B_Sekob_Kassieren();
 };
 
@@ -312,7 +312,7 @@ instance DIA_Sekob_PERMKAP1		(C_INFO)
 	condition	 = 	DIA_Sekob_PERMKAP1_Condition;
 	information	 = 	DIA_Sekob_PERMKAP1_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Pâíštê u zaplatíš vèas, jasnı?";
+	description	 = 	"PÃ¢Ã­Å¡tÄ™ uÅ¾ zaplatÃ­Å¡ vÄas, jasnÃ½?";
 };
 
 func int DIA_Sekob_PERMKAP1_Condition ()
@@ -326,8 +326,8 @@ func int DIA_Sekob_PERMKAP1_Condition ()
 
 func void DIA_Sekob_PERMKAP1_Info ()
 {
-	AI_Output (other, self, "DIA_Sekob_PERMKAP1_15_00"); //Pâíštê u zaplatíš vèas, jasnı?
-	AI_Output (self, other, "DIA_Sekob_PERMKAP1_01_01"); //(pro sebe) Èím jsem si tohle zaslouil...
+	AI_Output (other, self, "DIA_Sekob_PERMKAP1_15_00"); //PÃ¢Ã­Å¡tÄ™ uÅ¾ zaplatÃ­Å¡ vÄas, jasnÃ½?
+	AI_Output (self, other, "DIA_Sekob_PERMKAP1_01_01"); //(pro sebe) ÄŒÃ­m jsem si tohle zaslouÅ¾il...
 	AI_StopProcessInfos (self);
 };
 
@@ -375,7 +375,7 @@ instance DIA_Sekob_DMT		(C_INFO)
 	condition	 = 	DIA_Sekob_DMT_Condition;
 	information	 = 	DIA_Sekob_DMT_Info;
 
-	description	 = 	"Nêco se stalo?";
+	description	 = 	"NÄ™co se stalo?";
 };
 
 func int DIA_Sekob_DMT_Condition ()
@@ -388,30 +388,30 @@ func int DIA_Sekob_DMT_Condition ()
 
 func void DIA_Sekob_DMT_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_DMT_15_00"); //Nêco se stalo?
-	AI_Output			(self, other, "DIA_Sekob_DMT_01_01"); //Budeš mi muset pomoct. Ty postavy v èerné kápi vpadly do mého domu.
+	AI_Output			(other, self, "DIA_Sekob_DMT_15_00"); //NÄ™co se stalo?
+	AI_Output			(self, other, "DIA_Sekob_DMT_01_01"); //BudeÅ¡ mi muset pomoct. Ty postavy v ÄernÃ© kÃ¡pi vpadly do mÃ©ho domu.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output	(self, other, "DIA_Sekob_DMT_01_02"); //Vy, lidé z královské gardy, byste se mêli postarat o to, aby se všichni mêli dobâe, ne?
+			AI_Output	(self, other, "DIA_Sekob_DMT_01_02"); //Vy, lidÃ© z krÃ¡lovskÃ© gardy, byste se mÄ™li postarat o to, aby se vÅ¡ichni mÄ™li dobÃ¢e, ne?
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output	(self, other, "DIA_Sekob_DMT_01_03"); //Vím, e vy oldáci se moc o charitu nezajímáte, ale mùu ti zaplatit.
+			AI_Output	(self, other, "DIA_Sekob_DMT_01_03"); //VÃ­m, Å¾e vy Å¾oldÃ¡ci se moc o charitu nezajÃ­mÃ¡te, ale mÅ¯Å¾u ti zaplatit.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Sekob_DMT_01_04"); //Budeš mi muset pomoct, váenı pane mágu.
+			AI_Output			(self, other, "DIA_Sekob_DMT_01_04"); //BudeÅ¡ mi muset pomoct, vÃ¡Å¾enÃ½ pane mÃ¡gu.
 		};
 
-	AI_Output			(self, other, "DIA_Sekob_DMT_01_05"); //Ti chlápkové âíkali, e nêco hledají. Ale urèitê ne v mém domê.
-	AI_Output			(self, other, "DIA_Sekob_DMT_01_06"); //Prosím, pomoz mi. Zaâië, aã vypadnou.
+	AI_Output			(self, other, "DIA_Sekob_DMT_01_05"); //Ti chlÃ¡pkovÃ© Ã¢Ã­kali, Å¾e nÄ™co hledajÃ­. Ale urÄitÄ™ ne v mÃ©m domÄ™.
+	AI_Output			(self, other, "DIA_Sekob_DMT_01_06"); //ProsÃ­m, pomoz mi. ZaÃ¢iÃ«, aÄƒ vypadnou.
 
 	Log_CreateTopic (TOPIC_SekobDMT, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_SekobDMT, LOG_RUNNING);
-	B_LogEntry (TOPIC_SekobDMT,"Èerní mágové vyhnali Sekoba z domu a já mám teë vypudit je."); 
+	B_LogEntry (TOPIC_SekobDMT,"ÄŒernÃ­ mÃ¡govÃ© vyhnali Sekoba z domu a jÃ¡ mÃ¡m teÃ« vypudit je."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -424,7 +424,7 @@ instance DIA_Sekob_DMTWEG		(C_INFO)
 	condition	 = 	DIA_Sekob_DMTWEG_Condition;
 	information	 = 	DIA_Sekob_DMTWEG_Info;
 
-	description	 = 	"Tvùj dùm je prázdnı. Ty èerné kápê u odešly.";
+	description	 = 	"TvÅ¯j dÅ¯m je prÃ¡zdnÃ½. Ty ÄernÃ© kÃ¡pÄ™ uÅ¾ odeÅ¡ly.";
 };
 
 func int DIA_Sekob_DMTWEG_Condition ()
@@ -442,44 +442,44 @@ func int DIA_Sekob_DMTWEG_Condition ()
 
 func void DIA_Sekob_DMTWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_DMTWEG_15_00"); //Tvùj dùm je prázdnı. Èerné kápê u vypadly.
+	AI_Output			(other, self, "DIA_Sekob_DMTWEG_15_00"); //TvÅ¯j dÅ¯m je prÃ¡zdnÃ½. ÄŒernÃ© kÃ¡pÄ™ uÅ¾ vypadly.
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output	(self, other, "DIA_Sekob_DMTWEG_01_01"); //Vêdêl jsem, e na strá se dá spolehnout.
+			AI_Output	(self, other, "DIA_Sekob_DMTWEG_01_01"); //VÄ™dÄ™l jsem, Å¾e na strÃ¡Å¾ se dÃ¡ spolehnout.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output	(self, other, "DIA_Sekob_DMTWEG_01_02"); //Udêlals poâádnı kus práce. Onar mùe bıt rád, e má na své stranê lidi jako ty.
+			AI_Output	(self, other, "DIA_Sekob_DMTWEG_01_02"); //UdÄ™lals poÃ¢Ã¡dnÃ½ kus prÃ¡ce. Onar mÅ¯Å¾e bÃ½t rÃ¡d, Å¾e mÃ¡ na svÃ© stranÄ™ lidi jako ty.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Sekob_DMTWEG_01_03"); //Díky, váenı pane mágu. Co by s námi bylo, kdybychom nad sebou nemêli ochranou ruku církve?
+			AI_Output			(self, other, "DIA_Sekob_DMTWEG_01_03"); //DÃ­ky, vÃ¡Å¾enÃ½ pane mÃ¡gu. Co by s nÃ¡mi bylo, kdybychom nad sebou nemÄ™li ochranou ruku cÃ­rkve?
 		};
 	TOPIC_END_SekobDMT = TRUE;
 	B_GivePlayerXP (XP_SekobDMTWEG);
 
 	if (Kapitel < 5)
 	{
-		Npc_ExchangeRoutine	(self,"Zaèít");
+		Npc_ExchangeRoutine	(self,"ZaÄÃ­t");
 	}
 	else
 	{
-		Npc_ExchangeRoutine	(self,"Posedlı");
+		Npc_ExchangeRoutine	(self,"PosedlÃ½");
 	};
 	
 	if (Rosi_FleeFromSekob_Kap5 == FALSE)
 	{
-		B_StartOtherRoutine (Rosi,"Zaèít"); 
-		B_StartOtherRoutine (Till,"Zaèít"); 
+		B_StartOtherRoutine (Rosi,"ZaÄÃ­t"); 
+		B_StartOtherRoutine (Till,"ZaÄÃ­t"); 
 	};
-	B_StartOtherRoutine (Balthasar,"Zaèít"); 
-	B_StartOtherRoutine (BAU_933_Rega,"Zaèít"); 
-	B_StartOtherRoutine (BAU_934_Babera,"Zaèít"); 
-	B_StartOtherRoutine (BAU_937_BAUER,"Zaèít"); 
-	B_StartOtherRoutine (BAU_938_BAUER,"Zaèít"); 
+	B_StartOtherRoutine (Balthasar,"ZaÄÃ­t"); 
+	B_StartOtherRoutine (BAU_933_Rega,"ZaÄÃ­t"); 
+	B_StartOtherRoutine (BAU_934_Babera,"ZaÄÃ­t"); 
+	B_StartOtherRoutine (BAU_937_BAUER,"ZaÄÃ­t"); 
+	B_StartOtherRoutine (BAU_938_BAUER,"ZaÄÃ­t"); 
 
 };
 
@@ -493,7 +493,7 @@ instance DIA_Sekob_BELOHNUNG		(C_INFO)
 	condition	 = 	DIA_Sekob_BELOHNUNG_Condition;
 	information	 = 	DIA_Sekob_BELOHNUNG_Info;
 
-	description	 = 	"Ne tak rychle, pâíteli.";
+	description	 = 	"Ne tak rychle, pÃ¢Ã­teli.";
 };
 
 func int DIA_Sekob_BELOHNUNG_Condition ()
@@ -507,32 +507,32 @@ func int DIA_Sekob_BELOHNUNG_Condition ()
 
 func void DIA_Sekob_BELOHNUNG_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_00"); //Ne tak rychle, pâíteli.
+	AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_00"); //Ne tak rychle, pÃ¢Ã­teli.
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
 			if (Npc_KnowsInfo(other, DIA_Rosi_WASMACHSTDU))
 				{
-					AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_01"); //Od teë u nepatâíš k tı špinavı lùze a místo toho se budeš èinit pro obecné blaho. Jinak si na tebe došlápnu.
+					AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_01"); //Od teÃ« uÅ¾ nepatÃ¢Ã­Å¡ k tÃ½ Å¡pinavÃ½ lÅ¯ze a mÃ­sto toho se budeÅ¡ Äinit pro obecnÃ© blaho. Jinak si na tebe doÅ¡lÃ¡pnu.
 				};		
-			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_02"); //Nerozumím. Co ještê chceš?
+			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_02"); //NerozumÃ­m. Co jeÅ¡tÄ™ chceÅ¡?
 		};
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_03"); //Nêco jsi blábolil o odmênê, ne? Nebo jsem jen slyšel trávu rùst?
+			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_03"); //NÄ™co jsi blÃ¡bolil o odmÄ™nÄ™, ne? Nebo jsem jen slyÅ¡el trÃ¡vu rÅ¯st?
 		};
 
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_04"); //Zajímá mê jen jediná vêc. Co chtêly ty èerné kápê ve tvém domê?
-			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_05"); //Sám si to nedokáu vysvêtlit, váenı pane mágu. Snad...
+			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_04"); //ZajÃ­mÃ¡ mÄ™ jen jedinÃ¡ vÄ™c. Co chtÄ™ly ty ÄernÃ© kÃ¡pÄ™ ve tvÃ©m domÄ™?
+			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_05"); //SÃ¡m si to nedokÃ¡Å¾u vysvÄ™tlit, vÃ¡Å¾enÃ½ pane mÃ¡gu. Snad...
 			AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_06"); //Co?
-			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_07"); //Je mi líto. Pâed nêkolika lety jsem pâísahal, e o tom nebudu mluvit, a nemám v úmyslu porušit své slovo.
+			AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_07"); //Je mi lÃ­to. PÃ¢ed nÄ™kolika lety jsem pÃ¢Ã­sahal, Å¾e o tom nebudu mluvit, a nemÃ¡m v Ãºmyslu poruÅ¡it svÃ© slovo.
 		};
 
-	AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_08"); //Jediné, co mùu udêlat, je, e ti dám trochu zlata a poádám tê, abys mê ušetâil.
-	AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_09"); //Tak to sem teda dej. Spêchám.
+	AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_08"); //JedinÃ©, co mÅ¯Å¾u udÄ™lat, je, Å¾e ti dÃ¡m trochu zlata a poÅ¾Ã¡dÃ¡m tÄ™, abys mÄ™ uÅ¡etÃ¢il.
+	AI_Output			(other, self, "DIA_Sekob_BELOHNUNG_15_09"); //Tak to sem teda dej. SpÄ™chÃ¡m.
 	AI_Output			(self, other, "DIA_Sekob_BELOHNUNG_01_10"); //Tady.
 	CreateInvItems (self, ItMi_Gold, 250);									
 	B_GiveInvItems (self, other, ItMi_Gold, 250);
@@ -551,7 +551,7 @@ instance DIA_Sekob_PERM		(C_INFO)
 	information	 = 	DIA_Sekob_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Stalo se tu mezitím nêco?";
+	description	 = 	"Stalo se tu mezitÃ­m nÄ™co?";
 };
 
 func int DIA_Sekob_PERM_Condition ()
@@ -573,7 +573,7 @@ func void DIA_Sekob_PERM_Info ()
 		}
 	else
 		{
-			AI_Output		(other, self, "DIA_Sekob_PERM_15_00"); //Stalo se tu mezitím nêco?
+			AI_Output		(other, self, "DIA_Sekob_PERM_15_00"); //Stalo se tu mezitÃ­m nÄ™co?
 			
 			if (MIS_bringRosiBackToSekob == LOG_FAILED)
 			{
@@ -581,22 +581,22 @@ func void DIA_Sekob_PERM_Info ()
 			}
 			else if (MIS_bringRosiBackToSekob == LOG_SUCCESS)
 			{
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_02"); //Ne. Nic zvláštního.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_02"); //Ne. Nic zvlÃ¡Å¡tnÃ­ho.
 			}
 			else if (Kapitel >= 5)
 			&& (MIS_bringRosiBackToSekob != LOG_SUCCESS)
 			{
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_03"); //Moje ena zmizela. Nejdâív jsem si toho vùbec nevšiml... a pak najednou byla pryè.
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_04"); //Nejspíš se schovala v lese, aby unikla polním škùdcùm.
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_05"); //Udêlej mi laskavost, kdy ji najdeš, vraã mi ji ivou a zdravou.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_03"); //Moje Å¾ena zmizela. NejdÃ¢Ã­v jsem si toho vÅ¯bec nevÅ¡iml... a pak najednou byla pryÄ.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_04"); //NejspÃ­Å¡ se schovala v lese, aby unikla polnÃ­m Å¡kÅ¯dcÅ¯m.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_05"); //UdÄ™lej mi laskavost, kdyÅ¾ ji najdeÅ¡, vraÄƒ mi ji Å¾ivou a zdravou.
 				MIS_bringRosiBackToSekob = LOG_RUNNING;
 				Log_CreateTopic (TOPIC_bringRosiBackToSekob, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_bringRosiBackToSekob, LOG_RUNNING);
-				B_LogEntry (TOPIC_bringRosiBackToSekob,"Sekobova ena Rosi zmizela a její mu by byl rád, kdyby jí nêkdo 'dopomohl' k návratu."); 
+				B_LogEntry (TOPIC_bringRosiBackToSekob,"Sekobova Å¾ena Rosi zmizela a jejÃ­ muÅ¾ by byl rÃ¡d, kdyby jÃ­ nÄ™kdo 'dopomohl' k nÃ¡vratu."); 
 			}
 			else
 			{
-				AI_Output		(self, other, "DIA_Sekob_PERM_01_06"); //Nic, od té doby, co jsou ti nièemové v èerném nastêhovaní v mém domê.
+				AI_Output		(self, other, "DIA_Sekob_PERM_01_06"); //Nic, od tÃ© doby, co jsou ti niÄemovÃ© v ÄernÃ©m nastÄ™hovanÃ­ v mÃ©m domÄ™.
 			};
 		};
 };
@@ -679,7 +679,7 @@ instance DIA_Sekob_Heilung		(C_INFO)
 	information	 = 	DIA_Sekob_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Máš problém.";
+	description	 = 	"MÃ¡Å¡ problÃ©m.";
 };
 
 func int DIA_Sekob_Heilung_Condition ()
@@ -695,20 +695,20 @@ func int DIA_Sekob_Heilung_Condition ()
 var int DIA_Sekob_Heilung_oneTime;
 func void DIA_Sekob_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_Heilung_15_00"); //Máš problém.
+	AI_Output			(other, self, "DIA_Sekob_Heilung_15_00"); //MÃ¡Å¡ problÃ©m.
 
 	if (DIA_Sekob_Heilung_oneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Sekob_Heilung_01_01"); //Jo, to teda mám. TY jsi mùj problém, ty mizernej mágu. Vypadni, nebo z tebe stáhnu kùi zaiva.
-		AI_Output			(other, self, "DIA_Sekob_Heilung_15_02"); //(pro sebe) To je teda têkej pâípad.
+		AI_Output			(self, other, "DIA_Sekob_Heilung_01_01"); //Jo, to teda mÃ¡m. TY jsi mÅ¯j problÃ©m, ty mizernej mÃ¡gu. Vypadni, nebo z tebe stÃ¡hnu kÅ¯Å¾i zaÅ¾iva.
+		AI_Output			(other, self, "DIA_Sekob_Heilung_15_02"); //(pro sebe) To je teda tÄ™Å¾kej pÃ¢Ã­pad.
 	
 		B_NpcClearObsessionByDMT (self);
 		DIA_Sekob_Heilung_oneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Sekob_Heilung_01_03"); //Ty prostê neposlechneš, co?
-		AI_Output			(other, self, "DIA_Sekob_Heilung_15_04"); //(pro sebe) Beznadêjnej pâípad.
+		AI_Output			(self, other, "DIA_Sekob_Heilung_01_03"); //Ty prostÄ™ neposlechneÅ¡, co?
+		AI_Output			(other, self, "DIA_Sekob_Heilung_15_04"); //(pro sebe) BeznadÄ™jnej pÃ¢Ã­pad.
 		B_NpcClearObsessionByDMT (self);
 		B_Attack (self, other, AR_NONE, 1);
 	};
@@ -726,7 +726,7 @@ instance DIA_Sekob_ROSIBACKATSEKOB		(C_INFO)
 	condition	 = 	DIA_Sekob_ROSIBACKATSEKOB_Condition;
 	information	 = 	DIA_Sekob_ROSIBACKATSEKOB_Info;
 
-	description	 = 	"Pâivedl jsem ti zpêt tvou enu.";
+	description	 = 	"PÃ¢ivedl jsem ti zpÄ™t tvou Å¾enu.";
 };
 
 func int DIA_Sekob_ROSIBACKATSEKOB_Condition ()
@@ -742,15 +742,15 @@ func int DIA_Sekob_ROSIBACKATSEKOB_Condition ()
 
 func void DIA_Sekob_ROSIBACKATSEKOB_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_ROSIBACKATSEKOB_15_00"); //Pâivedl jsem ti zpêt tvou enu.
-	AI_Output			(self, other, "DIA_Sekob_ROSIBACKATSEKOB_01_01"); //To je bájeènı. Tady, vezmi si to za svoji námahu.
+	AI_Output			(other, self, "DIA_Sekob_ROSIBACKATSEKOB_15_00"); //PÃ¢ivedl jsem ti zpÄ™t tvou Å¾enu.
+	AI_Output			(self, other, "DIA_Sekob_ROSIBACKATSEKOB_01_01"); //To je bÃ¡jeÄnÃ½. Tady, vezmi si to za svoji nÃ¡mahu.
 	MIS_bringRosiBackToSekob = LOG_SUCCESS;
 	CreateInvItems (self, ItMi_Gold, 650);									
 	B_GiveInvItems (self, other, ItMi_Gold, 650);					
 	B_GivePlayerXP (XP_Ambient);
 	B_NpcClearObsessionByDMT (self);
-	B_StartOtherRoutine	(Rosi,"Zaèít");
-	B_StartOtherRoutine	(Till,"Zaèít");
+	B_StartOtherRoutine	(Rosi,"ZaÄÃ­t");
+	B_StartOtherRoutine	(Till,"ZaÄÃ­t");
 
 };
 
@@ -764,7 +764,7 @@ instance DIA_Sekob_ROSINEVERBACK		(C_INFO)
 	condition	 = 	DIA_Sekob_ROSINEVERBACK_Condition;
 	information	 = 	DIA_Sekob_ROSINEVERBACK_Info;
 
-	description	 = 	"Rosi se k tobê u nevrátí. Odvedl jsem ji do bezpeèí.";
+	description	 = 	"Rosi se k tobÄ™ uÅ¾ nevrÃ¡tÃ­. Odvedl jsem ji do bezpeÄÃ­.";
 };
 
 func int DIA_Sekob_ROSINEVERBACK_Condition ()
@@ -778,10 +778,10 @@ func int DIA_Sekob_ROSINEVERBACK_Condition ()
 
 func void DIA_Sekob_ROSINEVERBACK_Info ()
 {
-	AI_Output			(other, self, "DIA_Sekob_ROSINEVERBACK_15_00"); //Rosi u se k tobê nikdy nevrátí. Vzal jsem ji na bezpeèné místo.
-	AI_Output			(self, other, "DIA_Sekob_ROSINEVERBACK_01_01"); //Bezpeèné? Pâed kım?
-	AI_Output			(other, self, "DIA_Sekob_ROSINEVERBACK_15_02"); //Pâed tebou.
-	AI_Output			(self, other, "DIA_Sekob_ROSINEVERBACK_01_03"); //Toho budeš litovat, ty svinê.
+	AI_Output			(other, self, "DIA_Sekob_ROSINEVERBACK_15_00"); //Rosi uÅ¾ se k tobÄ™ nikdy nevrÃ¡tÃ­. Vzal jsem ji na bezpeÄnÃ© mÃ­sto.
+	AI_Output			(self, other, "DIA_Sekob_ROSINEVERBACK_01_01"); //BezpeÄnÃ©? PÃ¢ed kÃ½m?
+	AI_Output			(other, self, "DIA_Sekob_ROSINEVERBACK_15_02"); //PÃ¢ed tebou.
+	AI_Output			(self, other, "DIA_Sekob_ROSINEVERBACK_01_03"); //Toho budeÅ¡ litovat, ty svinÄ™.
 	B_NpcClearObsessionByDMT (self);
 	B_Attack (self, other, AR_NONE, 1);
 	B_GivePlayerXP (XP_Ambient);

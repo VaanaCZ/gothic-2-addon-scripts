@@ -66,7 +66,7 @@ INSTANCE DIA_Ramirez_Zeichen   (C_INFO)
 	condition   = DIA_Ramirez_Zeichen_Condition;
 	information = DIA_Ramirez_Zeichen_Info;
 	permanent   = FALSE;
-	description = "(Pâedvést zlodêjskı signál.)";
+	description = "(PÃ¢edvÃ©st zlodÄ™jskÃ½ signÃ¡l.)";
 };
 
 FUNC INT DIA_Ramirez_Zeichen_Condition()
@@ -79,7 +79,7 @@ FUNC INT DIA_Ramirez_Zeichen_Condition()
 FUNC VOID DIA_Ramirez_Zeichen_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other, "DIA_Ramirez_Zeichen_14_00");//Fajn, fajn, znáš signál. (zívá) Docela mê to pâekvapuje.
+	AI_Output (self, other, "DIA_Ramirez_Zeichen_14_00");//Fajn, fajn, znÃ¡Å¡ signÃ¡l. (zÃ­vÃ¡) Docela mÄ™ to pÃ¢ekvapuje.
 };
 
 //////////////////////////////////////////////////////////////////////
@@ -110,14 +110,14 @@ FUNC VOID DIA_Ramirez_Hallo_Info()
 	if (self.aivar [AIV_TalkedToPlayer] == FALSE)
 	&& (Join_Thiefs == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_00");//Ztratil ses? Nemyslim si, e tohle je to pravı místo pro tebe.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_01");//Jestli se ti tady nêco stane, nikdo z nás ti pomoct nepùjde. Take si dávej bacha. (širokı úsmêv)
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_00");//Ztratil ses? Nemyslim si, Å¾e tohle je to pravÃ½ mÃ­sto pro tebe.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_01");//Jestli se ti tady nÄ™co stane, nikdo z nÃ¡s ti pomoct nepÅ¯jde. TakÅ¾e si dÃ¡vej bacha. (Å¡irokÃ½ ÃºsmÄ™v)
 	};
 	if  (Join_Thiefs == TRUE)  
 	{
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_02");//Tak patâíš k nám. Dobrá, tak ti pâeju hodnê štêstí - ale buë opatrnı, aã u dêláš cokoli.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_03");//A ještê jedna vêc - je mi jedno, kdo jsi tam nahoâe a s kım pracuješ.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_04");//Tady dole jsi jen jedním z nás. Zlodêj. Nic víc, nic míà.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_02");//Tak patÃ¢Ã­Å¡ k nÃ¡m. DobrÃ¡, tak ti pÃ¢eju hodnÄ™ Å¡tÄ™stÃ­ - ale buÃ« opatrnÃ½, aÄƒ uÅ¾ dÄ™lÃ¡Å¡ cokoli.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_03");//A jeÅ¡tÄ™ jedna vÄ™c - je mi jedno, kdo jsi tam nahoÃ¢e a s kÃ½m pracujeÅ¡.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_04");//Tady dole jsi jen jednÃ­m z nÃ¡s. ZlodÄ™j. Nic vÃ­c, nic mÃ­Å•.
 		DIA_Ramirez_Hallo_permanent = TRUE;
 	};
 	
@@ -148,14 +148,14 @@ FUNC INT DIA_Ramirez_Beute_Condition()
 };
 FUNC VOID DIA_Ramirez_Beute_Info()
 {
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_00");//Poslouchej, to nemùeš myslet vánê, e ne? Hrabeš se v našem zlatu - to se nás pokoušíš okrást?
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_01");//Neâíkej, e za tu dâinu je jen têchhle pár mincí.
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_02");//Myslím, tahle hromádka tady - to je CELÁ koâist? To je všechno, co má zlodêjskı cech Khorinidu k dispozici?
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_03");//Kdo âíkal, e tady dole máme naši koâist?
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_04");//Stejnê tomu nemùu uvêâit. Tak kde jste schovali ty poklady?
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_05");//Na velmi bezpeèné místo.
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_00");//Poslouchej, to nemÅ¯Å¾eÅ¡ myslet vÃ¡Å¾nÄ™, Å¾e ne? HrabeÅ¡ se v naÅ¡em zlatu - to se nÃ¡s pokouÅ¡Ã­Å¡ okrÃ¡st?
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_01");//NeÃ¢Ã­kej, Å¾e za tu dÃ¢inu je jen tÄ™chhle pÃ¡r mincÃ­.
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_02");//MyslÃ­m, tahle hromÃ¡dka tady - to je CELÃ koÃ¢ist? To je vÅ¡echno, co mÃ¡ zlodÄ™jskÃ½ cech Khorinidu k dispozici?
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_03");//Kdo Ã¢Ã­kal, Å¾e tady dole mÃ¡me naÅ¡i koÃ¢ist?
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_04");//StejnÄ™ tomu nemÅ¯Å¾u uvÄ™Ã¢it. Tak kde jste schovali ty poklady?
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_05");//Na velmi bezpeÄnÃ© mÃ­sto.
 	AI_Output (other, self, "DIA_Ramirez_Beute_15_06");//Aha.
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_07");//Dobrá, mùeš si to zlato nechat. Ale budu na tebe dávat pozor. Tak to nepâepískni.
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_07");//DobrÃ¡, mÅ¯Å¾eÅ¡ si to zlato nechat. Ale budu na tebe dÃ¡vat pozor. Tak to nepÃ¢epÃ­skni.
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Lernen freischalten
@@ -167,7 +167,7 @@ INSTANCE DIA_Ramirez_Bezahlen   (C_INFO)
 	condition   = DIA_Ramirez_Bezahlen_Condition;
 	information = DIA_Ramirez_Bezahlen_Info;
 	permanent   = TRUE;
-	description	= "Mùeš mê nêèemu nauèit?";
+	description	= "MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 //--------------------------------------
 var int DIA_Ramirez_Bezahlen_permanent;
@@ -192,26 +192,26 @@ FUNC VOID DIA_Ramirez_Bezahlen_Info()
 		Ramirez_Cost = 300;
 	};	
 		
-	AI_Output (other, self, "DIA_Ramirez_Bezahlen_15_00");//Mùeš mê nêèemu nauèit?
+	AI_Output (other, self, "DIA_Ramirez_Bezahlen_15_00");//MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?
 	
 	if (Npc_GetTalentSkill  (other, NPC_TALENT_PICKLOCK) == TRUE)
 	{ 
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_01");//Nemùu tê nauèit nic. O páèení zámkù u víš všechno.
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_01");//NemÅ¯Å¾u tÄ™ nauÄit nic. O pÃ¡ÄenÃ­ zÃ¡mkÅ¯ uÅ¾ vÃ­Å¡ vÅ¡echno.
 		if (other.attribute[ATR_DEXTERITY] < T_MAX)
 		{
-			AI_Output (self, other, "DIA_Ramirez_Add_14_00"); //Teë u jen potâebuješ zdokonalit svou obratnost.
+			AI_Output (self, other, "DIA_Ramirez_Add_14_00"); //TeÃ« uÅ¾ jen potÃ¢ebujeÅ¡ zdokonalit svou obratnost.
 		};
 		DIA_Ramirez_Bezahlen_permanent = TRUE;
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_02");//Mùu ti ukázat, jak páèit zámky. Bude tê to stát jen...
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_02");//MÅ¯Å¾u ti ukÃ¡zat, jak pÃ¡Äit zÃ¡mky. Bude tÄ™ to stÃ¡t jen...
 		B_Say_Gold (self, other, Ramirez_Cost);
 		
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
-		Info_AddChoice (DIA_Ramirez_Bezahlen,"Moná pozdêji. (ZPÊT)",DIA_Ramirez_Bezahlen_Spaeter);
-		Info_AddChoice (DIA_Ramirez_Bezahlen,"OK, zaplatím.",DIA_Ramirez_Bezahlen_Okay);
+		Info_AddChoice (DIA_Ramirez_Bezahlen,"MoÅ¾nÃ¡ pozdÄ™ji. (ZPÄ˜T)",DIA_Ramirez_Bezahlen_Spaeter);
+		Info_AddChoice (DIA_Ramirez_Bezahlen,"OK, zaplatÃ­m.",DIA_Ramirez_Bezahlen_Okay);
 	};
 };
 FUNC VOID DIA_Ramirez_Bezahlen_Spaeter()
@@ -220,19 +220,19 @@ FUNC VOID DIA_Ramirez_Bezahlen_Spaeter()
 };
 FUNC VOID DIA_Ramirez_Bezahlen_Okay()
 {
-	AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_00");//Dobrá, zaplatím.
+	AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_00");//DobrÃ¡, zaplatÃ­m.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, Ramirez_Cost)
 	{
 		AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_01");//Tady je zlato.
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_Okay_14_02");//Vıbornê. Jsem ti k slubám.
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_Okay_14_02");//VÃ½bornÄ™. Jsem ti k sluÅ¾bÃ¡m.
 		Ramirez_TeachPlayer = TRUE;
 		DIA_Ramirez_Bezahlen_permanent = TRUE;
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_Okay_14_03");//Nejdâív si seeà zlato a pak se vraã.
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_Okay_14_03");//NejdÃ¢Ã­v si seÅ¾eÅ• zlato a pak se vraÄƒ.
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
 	};
 
@@ -247,7 +247,7 @@ INSTANCE DIA_Ramirez_Teach   (C_INFO)
 	condition   = DIA_Ramirez_Teach_Condition;
 	information = DIA_Ramirez_Teach_Info;
 	permanent   = TRUE;
-	description = "Nauè mê páèit zámky!";
+	description = "NauÄ mÄ™ pÃ¡Äit zÃ¡mky!";
 };
 
 FUNC INT DIA_Ramirez_Teach_Condition()
@@ -260,20 +260,20 @@ FUNC INT DIA_Ramirez_Teach_Condition()
 };
 FUNC VOID DIA_Ramirez_Teach_Info()
 {
-	AI_Output (other,self, "DIA_Ramirez_Teach_15_00");//Uka mi, jak se páèí zámky!
+	AI_Output (other,self, "DIA_Ramirez_Teach_15_00");//UkaÅ¾ mi, jak se pÃ¡ÄÃ­ zÃ¡mky!
 	
 	if (Ramirez_Zweimal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_06");//Páèení zámkù je zlodêjské umêní.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_01");//Potâebuješ spoustu citu a intuice. A hromadu paklíèù.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_02");//Ale pozor, nêkteré truhly mají speciální zámky, které lze odemknout jen pomocí odpovídajícího klíèe.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_06");//PÃ¡ÄenÃ­ zÃ¡mkÅ¯ je zlodÄ™jskÃ© umÄ™nÃ­.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_01");//PotÃ¢ebujeÅ¡ spoustu citu a intuice. A hromadu paklÃ­ÄÅ¯.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_02");//Ale pozor, nÄ™kterÃ© truhly majÃ­ speciÃ¡lnÃ­ zÃ¡mky, kterÃ© lze odemknout jen pomocÃ­ odpovÃ­dajÃ­cÃ­ho klÃ­Äe.
 		Ramirez_Zweimal = TRUE;
 	}
 	if B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK)
 	{
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_03");//Take si klekneš pâed zámek a paklíèem otáèíš napravo a nalevo.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_04");//Kdy jím otoèíš moc rychle nebo moc silnê, zlomí se.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_05");//Ale èím zkušenêjší budeš, tím pro tebe bude snazší s nimi zacházet.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_03");//TakÅ¾e si klekneÅ¡ pÃ¢ed zÃ¡mek a paklÃ­Äem otÃ¡ÄÃ­Å¡ napravo a nalevo.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_04");//KdyÅ¾ jÃ­m otoÄÃ­Å¡ moc rychle nebo moc silnÄ™, zlomÃ­ se.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_05");//Ale ÄÃ­m zkuÅ¡enÄ™jÅ¡Ã­ budeÅ¡, tÃ­m pro tebe bude snazÅ¡Ã­ s nimi zachÃ¡zet.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -286,7 +286,7 @@ INSTANCE DIA_Ramirez_Viertel   (C_INFO)
 	condition   = DIA_Ramirez_Viertel_Condition;
 	information = DIA_Ramirez_Viertel_Info;
 	permanent   = FALSE;
-	description = "Kde to páèení zámkù stojí za tu námahu?";
+	description = "Kde to pÃ¡ÄenÃ­ zÃ¡mkÅ¯ stojÃ­ za tu nÃ¡mahu?";
 };
 FUNC INT DIA_Ramirez_Viertel_Condition()
 {
@@ -297,11 +297,11 @@ FUNC INT DIA_Ramirez_Viertel_Condition()
 };
 FUNC VOID DIA_Ramirez_Viertel_Info()
 {	
-	AI_Output (other, self, "DIA_Ramirez_Viertel_15_00");//Kde to páèení zámkù stojí za námahu?
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_01");//V horní ètvrti, samozâejmê.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_02");//Ale jestli se tam budeš chtít k nêkomu vloupat, poèkej si na noc, a všichni usnou - teda kromê stráí.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_03");//Hlídkují tam celou noc. Jednoho z nich znám - jmenuje se Wambo. On je jedinej, koho zajímá zlato.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_04");//Je drahej, ale kdy mu jednou zaplatíš, u se o to nemusíš dál starat.
+	AI_Output (other, self, "DIA_Ramirez_Viertel_15_00");//Kde to pÃ¡ÄenÃ­ zÃ¡mkÅ¯ stojÃ­ za nÃ¡mahu?
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_01");//V hornÃ­ Ätvrti, samozÃ¢ejmÄ™.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_02");//Ale jestli se tam budeÅ¡ chtÃ­t k nÄ™komu vloupat, poÄkej si na noc, aÅ¾ vÅ¡ichni usnou - teda kromÄ™ strÃ¡Å¾Ã­.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_03");//HlÃ­dkujÃ­ tam celou noc. Jednoho z nich znÃ¡m - jmenuje se Wambo. On je jedinej, koho zajÃ­mÃ¡ zlato.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_04");//Je drahej, ale kdyÅ¾ mu jednou zaplatÃ­Å¡, uÅ¾ se o to nemusÃ­Å¡ dÃ¡l starat.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Sextant
@@ -313,7 +313,7 @@ INSTANCE DIA_Ramirez_Sextant   (C_INFO)
 	condition   = DIA_Ramirez_Sextant_Condition;
 	information = DIA_Ramirez_Sextant_Info;
 	permanent   = FALSE;
-	description = "Máš pro mê práci?";
+	description = "MÃ¡Å¡ pro mÄ™ prÃ¡ci?";
 };
 
 FUNC INT DIA_Ramirez_Sextant_Condition()
@@ -327,14 +327,14 @@ FUNC INT DIA_Ramirez_Sextant_Condition()
 };
 FUNC VOID DIA_Ramirez_Sextant_Info()
 {
-	AI_Output (other, self, "DIA_Ramirez_Sextant_15_00");//Máš pro mê práci?
-	AI_Output (self, other, "DIA_Ramirez_Sextant_14_01");//Hmm... je tu jedna vêcièka, kterou bych rád mêl. Ale zatím jsem ji nenašel.
+	AI_Output (other, self, "DIA_Ramirez_Sextant_15_00");//MÃ¡Å¡ pro mÄ™ prÃ¡ci?
+	AI_Output (self, other, "DIA_Ramirez_Sextant_14_01");//Hmm... je tu jedna vÄ™ciÄka, kterou bych rÃ¡d mÄ™l. Ale zatÃ­m jsem ji nenaÅ¡el.
 	AI_Output (other, self, "DIA_Ramirez_Sextant_15_02");//Co to je?
-	AI_Output (self, other, "DIA_Ramirez_Sextant_14_03");//Úhlomêr. Pâines mi sextant - dám ti za nêj dobrou cenu.
+	AI_Output (self, other, "DIA_Ramirez_Sextant_14_03");//ÃšhlomÄ™r. PÃ¢ines mi sextant - dÃ¡m ti za nÄ™j dobrou cenu.
 	
 	Log_CreateTopic (Topic_RamirezSextant,LOG_MISSION);
 	Log_SetTopicStatus (Topic_RamirezSextant, LOG_RUNNING);
-	B_LogEntry (Topic_RamirezSextant, "Ramirez mê poádal, abych mu pâinesl sextant.");
+	B_LogEntry (Topic_RamirezSextant, "Ramirez mÄ™ poÅ¾Ã¡dal, abych mu pÃ¢inesl sextant.");
 	
 	MIS_RamirezSextant = LOG_RUNNING;
 };
@@ -348,7 +348,7 @@ INSTANCE DIA_Ramirez_Success   (C_INFO)
 	condition   = DIA_Ramirez_Success_Condition;
 	information = DIA_Ramirez_Success_Info;
 	permanent   = FALSE;
-	description = "Mám pro tebe ten sextant.";
+	description = "MÃ¡m pro tebe ten sextant.";
 };
 
 FUNC INT DIA_Ramirez_Success_Condition()
@@ -361,10 +361,10 @@ FUNC INT DIA_Ramirez_Success_Condition()
 };
 FUNC VOID DIA_Ramirez_Success_Info()
 {
-	AI_Output (other, self, "DIA_Ramirez_Success_15_00");//Mám pro tebe ten sextant.
+	AI_Output (other, self, "DIA_Ramirez_Success_15_00");//MÃ¡m pro tebe ten sextant.
 	B_GiveInvItems (other, self, Itmi_Sextant,1);
-	AI_Output (self, other, "DIA_Ramirez_Success_14_01");//To není monı. Vánê se ti povedlo nêjakı najít.
-	AI_Output (self, other, "DIA_Ramirez_Success_14_02");//Tady, ty peníze si vánê zaslouíš.
+	AI_Output (self, other, "DIA_Ramirez_Success_14_01");//To nenÃ­ moÅ¾nÃ½. VÃ¡Å¾nÄ™ se ti povedlo nÄ™jakÃ½ najÃ­t.
+	AI_Output (self, other, "DIA_Ramirez_Success_14_02");//Tady, ty penÃ­ze si vÃ¡Å¾nÄ™ zaslouÅ¾Ã­Å¡.
 	
 	B_GiveInvItems (self, other, Itmi_Gold,Value_Sextant/2);
 	Ramirez_Sextant = TRUE;

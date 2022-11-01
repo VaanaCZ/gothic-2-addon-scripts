@@ -50,7 +50,7 @@ INSTANCE DIA_Gerbrandt_PICKPOCKET (C_INFO)
 	condition	= DIA_Gerbrandt_PICKPOCKET_Condition;
 	information	= DIA_Gerbrandt_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Ukrást mu penêenku nebude nic têkého.)";
+	description = "(UkrÃ¡st mu penÄ™Å¾enku nebude nic tÄ™Å¾kÃ©ho.)";
 };                       
 
 FUNC INT DIA_Gerbrandt_PICKPOCKET_Condition()
@@ -105,7 +105,7 @@ INSTANCE DIA_Gerbrandt_Hello(C_INFO)
 	condition	= DIA_Gerbrandt_Hello_Condition;
 	information	= DIA_Gerbrandt_Hello_Info;
 	permanent	= FALSE;
-	description = "Co tady dêláš?";
+	description = "Co tady dÄ™lÃ¡Å¡?";
 };                       
 
 FUNC INT DIA_Gerbrandt_Hello_Condition()
@@ -120,66 +120,66 @@ FUNC INT DIA_Gerbrandt_Hello_Condition()
 
 FUNC VOID DIA_Gerbrandt_Hello_Info()
 {	
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_15_00"); //Co tady dêláš?
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_01"); //A ty jsi kdo? Vypadá to, e jsi tu novej a nemáš ani tucha, jak to tady chodí.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_02"); //Âíkají mi Gerbrandt. Pro tebe to znamená: pan Gerbrandt. Jasnı?
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_01"); //A ty jsi kdo? VypadÃ¡ to, Å¾e jsi tu novej a nemÃ¡Å¡ ani tucha, jak to tady chodÃ­.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_02"); //Ã‚Ã­kajÃ­ mi Gerbrandt. Pro tebe to znamenÃ¡: pan Gerbrandt. JasnÃ½?
 	
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Jo, jasnı, Gerbrandte.",DIA_Gerbrandt_Hello_No);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Rozumím, pane Gerbrandte.",DIA_Gerbrandt_Hello_Yes);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"Jo, jasnÃ½, Gerbrandte.",DIA_Gerbrandt_Hello_No);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"RozumÃ­m, pane Gerbrandte.",DIA_Gerbrandt_Hello_Yes);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_No()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_No_15_00"); //Jo jasnı, Gerbrandte.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_01"); //Bacha na tu svou nevymáchanou hubu. Mêl bys mi radši prokazovat víc úcty, nebo si tady zadêláš na poâádnı trable.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_02"); //Tady rozkazuju já. Kdokoli tu zpùsobí nêjaké potíe, bude se zodpovídat mnê a udêlá nejlíp, kdy kvaltem opustí mêsto. Protoe jestli se mi dostane do rukou, tak bude velmi litovat toho, e se se mnou kdy setkal.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_03"); //Vêtšina lidí z okolí pâístavu pracuje pro mê. Jestli hledáš práci, mêl by sis dávat velkı pozor na to, abys mi utkvêl v pamêti jako hodnej hoch.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_No_15_00"); //Jo jasnÃ½, Gerbrandte.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_01"); //Bacha na tu svou nevymÃ¡chanou hubu. MÄ™l bys mi radÅ¡i prokazovat vÃ­c Ãºcty, nebo si tady zadÄ™lÃ¡Å¡ na poÃ¢Ã¡dnÃ½ trable.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_02"); //Tady rozkazuju jÃ¡. Kdokoli tu zpÅ¯sobÃ­ nÄ™jakÃ© potÃ­Å¾e, bude se zodpovÃ­dat mnÄ™ a udÄ™lÃ¡ nejlÃ­p, kdyÅ¾ kvaltem opustÃ­ mÄ™sto. ProtoÅ¾e jestli se mi dostane do rukou, tak bude velmi litovat toho, Å¾e se se mnou kdy setkal.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_03"); //VÄ™tÅ¡ina lidÃ­ z okolÃ­ pÃ¢Ã­stavu pracuje pro mÄ™. Jestli hledÃ¡Å¡ prÃ¡ci, mÄ™l by sis dÃ¡vat velkÃ½ pozor na to, abys mi utkvÄ™l v pamÄ™ti jako hodnej hoch.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_Yes()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_15_00"); //Rozumím, pane Gerbrandte.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_01"); //Nakonec ti netrvalo moc dlouho, ne ti došlo, která bije.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_02"); //Jakmile se zaènou hejbat obchody, budu potâebovat urostlıho chlapa, jako jsi ty.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_03"); //Máte tu pêknı doky.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_04"); //Umíš èíst?
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_15_00"); //RozumÃ­m, pane Gerbrandte.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_01"); //Nakonec ti netrvalo moc dlouho, neÅ¾ ti doÅ¡lo, kterÃ¡ bije.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_02"); //Jakmile se zaÄnou hejbat obchody, budu potÃ¢ebovat urostlÃ½ho chlapa, jako jsi ty.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_03"); //MÃ¡te tu pÄ™knÃ½ doky.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_04"); //UmÃ­Å¡ ÄÃ­st?
 	
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 	Info_AddChoice (DIA_Gerbrandt_Hello,"Ne.",DIA_Gerbrandt_Hello_Yes_No);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Nehledám práci.",DIA_Gerbrandt_Hello_NoJob);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Samozâejmê.",DIA_Gerbrandt_Hello_Yes_Yes);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"NehledÃ¡m prÃ¡ci.",DIA_Gerbrandt_Hello_NoJob);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"SamozÃ¢ejmÄ™.",DIA_Gerbrandt_Hello_Yes_Yes);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_Yes_No()
 {
 	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_No_15_00"); //Ne.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_01"); //Nevadí. Alespoà mùeš odnést pár pytlù.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_02"); //Jsem s tebou spokojenı, mùu ti nabídnout stálou práci. Je toho tady dost, co je tâeba udêlat.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_03"); //Dobrá, dám ti vêdêt, a se první loë vrátí do dokù.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_01"); //NevadÃ­. AlespoÅ• mÅ¯Å¾eÅ¡ odnÃ©st pÃ¡r pytlÅ¯.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_02"); //Jsem s tebou spokojenÃ½, mÅ¯Å¾u ti nabÃ­dnout stÃ¡lou prÃ¡ci. Je toho tady dost, co je tÃ¢eba udÄ™lat.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_03"); //DobrÃ¡, dÃ¡m ti vÄ™dÄ™t, aÅ¾ se prvnÃ­ loÃ« vrÃ¡tÃ­ do dokÅ¯.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_NoJob ()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_NoJob_15_00"); //Nehledám práci.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_01"); //Asi si myslíš, jak jsi strašnê chytrej. Koukej, nikdo tu nemùe dostat práci, dokud s tím já nebudu souhlasit.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_02"); //Take jestli budeš takhle pyskovat, mùeš si zaèít hledat tou nejhnusnêjší havêtí prolezlej slamník na spaní, protoe to bude všechno, co si budeš moct dovolit.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_03"); //Ještê za mnou pâilezeš a budeš adonit o práci.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_NoJob_15_00"); //NehledÃ¡m prÃ¡ci.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_01"); //Asi si myslÃ­Å¡, jak jsi straÅ¡nÄ™ chytrej. Koukej, nikdo tu nemÅ¯Å¾e dostat prÃ¡ci, dokud s tÃ­m jÃ¡ nebudu souhlasit.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_02"); //TakÅ¾e jestli budeÅ¡ takhle pyskovat, mÅ¯Å¾eÅ¡ si zaÄÃ­t hledat tou nejhnusnÄ™jÅ¡Ã­ havÄ™tÃ­ prolezlej slamnÃ­k na spanÃ­, protoÅ¾e to bude vÅ¡echno, co si budeÅ¡ moct dovolit.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_03"); //JeÅ¡tÄ™ za mnou pÃ¢ilezeÅ¡ a budeÅ¡ Å¾adonit o prÃ¡ci.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_Yes_Yes ()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_Yes_15_00"); //Samozâejmê.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_01"); //Fajn, fajn, dostat se ke kvalifikovanımu personálu není nic lehkıho.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_02"); //Co tvá doporuèení?
-	AI_Output (other,self,"DIA_Gerbrandt_Hello_Yes_Yes_15_03"); //Doporuèení?
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_04"); //Dobrá, budu si tê pamatovat. Jakmile se zase zaènou hejbat obchody, pâijë se mi ukázat. Pak pro tebe budu moná mít nêjakou práci.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_Yes_15_00"); //SamozÃ¢ejmÄ™.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_01"); //Fajn, fajn, dostat se ke kvalifikovanÃ½mu personÃ¡lu nenÃ­ nic lehkÃ½ho.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_02"); //Co tvÃ¡ doporuÄenÃ­?
+	AI_Output (other,self,"DIA_Gerbrandt_Hello_Yes_Yes_15_03"); //DoporuÄenÃ­?
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_04"); //DobrÃ¡, budu si tÄ™ pamatovat. Jakmile se zase zaÄnou hejbat obchody, pÃ¢ijÃ« se mi ukÃ¡zat. Pak pro tebe budu moÅ¾nÃ¡ mÃ­t nÄ™jakou prÃ¡ci.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
@@ -190,9 +190,9 @@ FUNC VOID DIA_Gerbrandt_Hello_Yes_Yes ()
 
 FUNC VOID B_GErbrandt_PissOff ()
 {
-	AI_Output (self,other,"B_Gerbrandt_PissOff_10_00"); //Co jako má bıt tohle - dêláš si ze mê srandu?
-	AI_Output (self,other,"B_Gerbrandt_PissOff_10_01"); //Ty a ten tvùj kámoš Diego u jste nadêlali dost škody.
-	AI_Output (self,other,"B_Gerbrandt_PissOff_10_02"); //Nech mê bıt!
+	AI_Output (self,other,"B_Gerbrandt_PissOff_10_00"); //Co jako mÃ¡ bÃ½t tohle - dÄ™lÃ¡Å¡ si ze mÄ™ srandu?
+	AI_Output (self,other,"B_Gerbrandt_PissOff_10_01"); //Ty a ten tvÅ¯j kÃ¡moÅ¡ Diego uÅ¾ jste nadÄ™lali dost Å¡kody.
+	AI_Output (self,other,"B_Gerbrandt_PissOff_10_02"); //Nech mÄ™ bÃ½t!
 	
 	//Patch m.f. Wenn diego kommt und er wird gefragt, geht er nicht los, weil losgehen steht in exit info und durch diesen Ai_Stop wird das umgangen
 	if (DIEGO_COMING != TRUE) //NICHT, wenn Diego kommt
@@ -208,7 +208,7 @@ INSTANCE DIA_Gerbrandt_Perm(C_INFO)
 	condition	= DIA_Gerbrandt_Perm_Condition;
 	information	= DIA_Gerbrandt_Perm_Info;
 	permanent	= TRUE;
-	description	= "Co je nového?";
+	description	= "Co je novÃ©ho?";
 };                       
 
 FUNC INT DIA_Gerbrandt_Perm_Condition()
@@ -221,19 +221,19 @@ FUNC INT DIA_Gerbrandt_Perm_Condition()
 
 FUNC VOID DIA_Gerbrandt_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Perm_15_00"); //Nêco nového?
+	AI_Output (other,self ,"DIA_Gerbrandt_Perm_15_00"); //NÄ™co novÃ©ho?
 	
 	if (Kapitel <= 2)
 	{
 		if (hero.guild != GIL_KDF)
 		&& (hero.guild != GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_01"); //Lidi jako ty nemají tady nahoâe co dêlat. Tady bydlí váení obèané, ne nêjací tuláci nebo podvodníci.
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_02"); //Jestli se ti nêkdy podaâí zbohatnout a dojít úcty, pak tady moná budeš vítanêjší.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_01"); //Lidi jako ty nemajÃ­ tady nahoÃ¢e co dÄ™lat. Tady bydlÃ­ vÃ¡Å¾enÃ­ obÄanÃ©, ne nÄ™jacÃ­ tulÃ¡ci nebo podvodnÃ­ci.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_02"); //Jestli se ti nÄ™kdy podaÃ¢Ã­ zbohatnout a dojÃ­t Ãºcty, pak tady moÅ¾nÃ¡ budeÅ¡ vÃ­tanÄ™jÅ¡Ã­.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_03"); //Nemùu si stêovat, váenı pane.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_03"); //NemÅ¯Å¾u si stÄ™Å¾ovat, vÃ¡Å¾enÃ½ pane.
 		};
 	}
 	else if (Kapitel >= 3)
@@ -243,12 +243,12 @@ FUNC VOID DIA_Gerbrandt_Perm_Info()
 			if (hero.guild != GIL_KDF)
 			&& (hero.guild != GIL_PAL)
 			{
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_04"); //U jsem vidêl tobê podobné - prostê nevíte, kam patâíte.
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_05"); //Musím si promluvit s místodrícím ohlednê odpovídajícího zabezpeèení horní ètvrti.
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_04"); //UÅ¾ jsem vidÄ™l tobÄ™ podobnÃ© - prostÄ™ nevÃ­te, kam patÃ¢Ã­te.
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_05"); //MusÃ­m si promluvit s mÃ­stodrÅ¾Ã­cÃ­m ohlednÄ™ odpovÃ­dajÃ­cÃ­ho zabezpeÄenÃ­ hornÃ­ Ätvrti.
 			}
 			else
 			{
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_06"); //Tohle je jenom moje záleitost. Nemám èas!
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_06"); //Tohle je jenom moje zÃ¡leÅ¾itost. NemÃ¡m Äas!
 			};
 		}
 		else
@@ -271,7 +271,7 @@ INSTANCE DIA_Gerbrandt_GreetingsFromDiego(C_INFO)
 	condition	= DIA_Gerbrandt_GreetingsFromDiego_Condition;
 	information	= DIA_Gerbrandt_GreetingsFromDiego_Info;
 	permanent	= FALSE;
-	description	= "Diego se nechá pozdravovat.";
+	description	= "Diego se nechÃ¡ pozdravovat.";
 };                       
 
 FUNC INT DIA_Gerbrandt_GreetingsFromDiego_Condition()
@@ -286,20 +286,20 @@ FUNC INT DIA_Gerbrandt_GreetingsFromDiego_Condition()
 
 FUNC VOID DIA_Gerbrandt_GreetingsFromDiego_Info()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_00"); //Diego se nechá pozdravovat.
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_01"); //(vydêšenê) Co? Kdo? Jakı Diego?
-	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_02"); //A taky mê poádal, abych ti dal tenhle dopis.
+	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_00"); //Diego se nechÃ¡ pozdravovat.
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_01"); //(vydÄ™Å¡enÄ™) Co? Kdo? JakÃ½ Diego?
+	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_02"); //A taky mÄ™ poÅ¾Ã¡dal, abych ti dal tenhle dopis.
 	
 	B_GiveInvItems (other,self,ItWr_DiegosLetter_MIS,1);
 	B_UseFakeScroll ();
 	
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_03"); //(znepokojenê) To nemùe bıt pravda. Ne. Jsem mrtvı mu!
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_04"); //(ustrašenê) Je teda ve mêstê?
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_03"); //(znepokojenÄ™) To nemÅ¯Å¾e bÃ½t pravda. Ne. Jsem mrtvÃ½ muÅ¾!
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_04"); //(ustraÅ¡enÄ™) Je teda ve mÄ™stÄ™?
 	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_05"); //Kdo?
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_06"); //Diego, pâece!
-	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_07"); //Ano, zanedlouho se s ním setkám.
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_08"); //(zoufale, pro sebe) Tak to je konec. Všechno je v tahu.
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_09"); //Nemám èas, musím odtud vypadnout. Jestli mê tu najde, jsem vyâízenej.
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_06"); //Diego, pÃ¢ece!
+	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_07"); //Ano, zanedlouho se s nÃ­m setkÃ¡m.
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_08"); //(zoufale, pro sebe) Tak to je konec. VÅ¡echno je v tahu.
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_09"); //NemÃ¡m Äas, musÃ­m odtud vypadnout. Jestli mÄ™ tu najde, jsem vyÃ¢Ã­zenej.
 	
 	MIS_DiegosResidence = LOG_SUCCESS;
 	

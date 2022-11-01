@@ -8,7 +8,7 @@ INSTANCE DIA_Jora_EXIT   (C_INFO)
 	condition   = DIA_Jora_EXIT_Condition;
 	information = DIA_Jora_EXIT_Info;
 	permanent   = TRUE;
-	description = "Musím jít!";
+	description = "MusÃ­m jÃ­t!";
 };
 
 FUNC INT DIA_Jora_EXIT_Condition()
@@ -48,7 +48,7 @@ func int DIA_Jora_Sperre_Condition ()
 };
 func void DIA_Jora_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Jora_Sperre_08_00"); //Jsi bıvalı trestanec z dùlní kolonie, nic ti neprodám!
+	AI_Output (self, other, "DIA_Jora_Sperre_08_00"); //Jsi bÃ½valÃ½ trestanec z dÅ¯lnÃ­ kolonie, nic ti neprodÃ¡m!
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -62,7 +62,7 @@ instance DIA_Jora_WAREZ		(C_INFO)
 	information	 = 	DIA_Jora_WAREZ_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Uka mi své zboí.";
+	description	 = 	"UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 };
 func int DIA_Jora_WAREZ_Condition ()
 {
@@ -71,7 +71,7 @@ func int DIA_Jora_WAREZ_Condition ()
 func void DIA_Jora_WAREZ_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Jora_WAREZ_15_00"); //Uka mi své zboí.
+	AI_Output (other, self, "DIA_Jora_WAREZ_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -96,13 +96,13 @@ func int DIA_Jora_GREET_Condition ()
 };
 func void DIA_Jora_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Jora_GREET_08_00"); //Innos tê provázej, cizinèe. Jestli si chceš poâídit dobrou cestovatelskou vıbavu, pak jsi na tom správném místê.
-	AI_Output (self, other, "DIA_Jora_GREET_08_01"); //Ale varuji tê: jestli máš v plánu si inventáâ vylepšit nêjak pokoutnê bez placení, zavolám stráe!
-	AI_Output (other, self, "DIA_Jora_GREET_15_02"); //Poèkej, copak vypadám jako nêjakı chmaták?
-	AI_Output (self, other, "DIA_Jora_GREET_08_03"); //(pohrdavê) Pche! Dneska bys nebyl první, kdo by se mi snail nêco èmajznout.
+	AI_Output (self, other, "DIA_Jora_GREET_08_00"); //Innos tÄ™ provÃ¡zej, cizinÄe. Jestli si chceÅ¡ poÃ¢Ã­dit dobrou cestovatelskou vÃ½bavu, pak jsi na tom sprÃ¡vnÃ©m mÃ­stÄ™.
+	AI_Output (self, other, "DIA_Jora_GREET_08_01"); //Ale varuji tÄ™: jestli mÃ¡Å¡ v plÃ¡nu si inventÃ¡Ã¢ vylepÅ¡it nÄ™jak pokoutnÄ™ bez placenÃ­, zavolÃ¡m strÃ¡Å¾e!
+	AI_Output (other, self, "DIA_Jora_GREET_15_02"); //PoÄkej, copak vypadÃ¡m jako nÄ™jakÃ½ chmatÃ¡k?
+	AI_Output (self, other, "DIA_Jora_GREET_08_03"); //(pohrdavÄ™) Pche! Dneska bys nebyl prvnÃ­, kdo by se mi snaÅ¾il nÄ™co Ämajznout.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Jora prodává na trišti všechny moné zbranê.");
+	B_LogEntry (Topic_CityTrader,"Jora prodÃ¡vÃ¡ na trÅ¾iÅ¡ti vÅ¡echny moÅ¾nÃ© zbranÄ™.");
 };
 
 // *******************************************************
@@ -115,7 +115,7 @@ instance DIA_Jora_Bestohlen	(C_INFO)
 	condition	 = 	DIA_Jora_Bestohlen_Condition;
 	information	 = 	DIA_Jora_Bestohlen_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Nêkdo tê okradl?";
+	description	 = 	"NÄ™kdo tÄ™ okradl?";
 };
 func int DIA_Jora_Bestohlen_Condition ()
 {
@@ -123,14 +123,14 @@ func int DIA_Jora_Bestohlen_Condition ()
 };
 func void DIA_Jora_Bestohlen_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_Bestohlen_15_00"); //Nêkdo tê okradl?
-	AI_Output (self, other, "DIA_Jora_Bestohlen_08_01"); //Nemùu to dokázat, ten maník byl zatracenê chytrı. Pâedstavil se jako Rengaru - pokud to tedy je jeho skuteèné jméno.
-	AI_Output (self, other, "DIA_Jora_Bestohlen_08_02"); //Posledních pár dní jen tak zevloval na trišti.
+	AI_Output (other, self, "DIA_Jora_Bestohlen_15_00"); //NÄ™kdo tÄ™ okradl?
+	AI_Output (self, other, "DIA_Jora_Bestohlen_08_01"); //NemÅ¯Å¾u to dokÃ¡zat, ten manÃ­k byl zatracenÄ™ chytrÃ½. PÃ¢edstavil se jako Rengaru - pokud to tedy je jeho skuteÄnÃ© jmÃ©no.
+	AI_Output (self, other, "DIA_Jora_Bestohlen_08_02"); //PoslednÃ­ch pÃ¡r dnÃ­ jen tak zevloval na trÅ¾iÅ¡ti.
 	if (Npc_GetDistToWP (self, "NW_CITY_MERCHANT_PATH_38") <= 500)
 	{
-		AI_Output (self, other, "DIA_Jora_Bestohlen_08_03"); //A kadı veèer se pâímo na ulici nalívá pivem. Vsadím boty, e ten šmejd chlastá za MOJE peníze!
+		AI_Output (self, other, "DIA_Jora_Bestohlen_08_03"); //A kaÅ¾dÃ½ veÄer se pÃ¢Ã­mo na ulici nalÃ­vÃ¡ pivem. VsadÃ­m boty, Å¾e ten Å¡mejd chlastÃ¡ za MOJE penÃ­ze!
 	};
-	AI_Output (self, other, "DIA_Jora_Bestohlen_08_04"); //Jen jsem se na chvilku podíval jinam a u jsem byl bez portmonky!
+	AI_Output (self, other, "DIA_Jora_Bestohlen_08_04"); //Jen jsem se na chvilku podÃ­val jinam a uÅ¾ jsem byl bez portmonky!
 };
 
 
@@ -140,7 +140,7 @@ func void DIA_Jora_Bestohlen_Info ()
 
 func void B_Jora_GoldForClue()
 {
-	AI_Output (self ,other,"DIA_Jora_Add_08_04"); //Poslyš - jestli se ti povede z toho Rengaru vytâískat moje prachy, povím ti všechno, co vím.
+	AI_Output (self ,other,"DIA_Jora_Add_08_04"); //PoslyÅ¡ - jestli se ti povede z toho Rengaru vytÃ¢Ã­skat moje prachy, povÃ­m ti vÅ¡echno, co vÃ­m.
 };
 
 
@@ -154,7 +154,7 @@ instance DIA_Jora_HolDeinGold	(C_INFO)
 	condition	 = 	DIA_Jora_HolDeinGold_Condition;
 	information	 = 	DIA_Jora_HolDeinGold_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mohl bych se pokusit získat zpátky tvoje peníze.";
+	description	 = 	"Mohl bych se pokusit zÃ­skat zpÃ¡tky tvoje penÃ­ze.";
 };
 func int DIA_Jora_HolDeinGold_Condition ()
 {
@@ -165,71 +165,71 @@ func int DIA_Jora_HolDeinGold_Condition ()
 };
 func void DIA_Jora_HolDeinGold_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_15_00"); //Mohl bych se pokusit získat zpátky tvoje peníze.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_08_01"); //(nedùvêâivê) Fakt? A jak to chceš udêlat?
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_15_00"); //Mohl bych se pokusit zÃ­skat zpÃ¡tky tvoje penÃ­ze.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_08_01"); //(nedÅ¯vÄ™Ã¢ivÄ™) Fakt? A jak to chceÅ¡ udÄ™lat?
 
 	Info_ClearChoices (DIA_Jora_HolDeinGold);
-	Info_AddChoice 		(DIA_Jora_HolDeinGold,"Ale za odmênu chci èást zlata!",DIA_Jora_HolDeinGold_WillBelohnung);
+	Info_AddChoice 		(DIA_Jora_HolDeinGold,"Ale za odmÄ™nu chci ÄÃ¡st zlata!",DIA_Jora_HolDeinGold_WillBelohnung);
 	if (Mis_Andre_GuildOfThieves == LOG_RUNNING)
 	{
-		Info_AddChoice (DIA_Jora_HolDeinGold,"Rád bych se dozvêdêl, jak se dostat do cechu zlodêjù.", DIA_Jora_HolDeinGold_GHDG);
+		Info_AddChoice (DIA_Jora_HolDeinGold,"RÃ¡d bych se dozvÄ™dÄ™l, jak se dostat do cechu zlodÄ™jÅ¯.", DIA_Jora_HolDeinGold_GHDG);
 	};
 	if (other.guild == GIL_NONE)
 	&& (Player_IsApprentice == APP_NONE)
 	{
-		Info_AddChoice (DIA_Jora_HolDeinGold,"Pâijde na to - mùu se s tvou pomocí dostat do horní ètvrti?", DIA_Jora_HolDeinGold_ToOV);
+		Info_AddChoice (DIA_Jora_HolDeinGold,"PÃ¢ijde na to - mÅ¯Å¾u se s tvou pomocÃ­ dostat do hornÃ­ Ätvrti?", DIA_Jora_HolDeinGold_ToOV);
 	};
 };
 
 func void DIA_Jora_HolDeinGold_ToOV()
 {
-	AI_Output (other, self,"DIA_Jora_Add_15_00"); //Pâijde na to - mùu se s tvou pomocí dostat do horní ètvrti?
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_08_03"); //(smêje se) To jsi na špatné adrese, já vùbec nejsem z mêsta - jako vêtšina kupcù na trišti.
-	AI_Output (self ,other,"DIA_Jora_Add_08_01"); //Jestli se chceš dostat do horní ètvrti, promluv si v dolní èásti mêsta s nêkterımi místními obchodníky.
+	AI_Output (other, self,"DIA_Jora_Add_15_00"); //PÃ¢ijde na to - mÅ¯Å¾u se s tvou pomocÃ­ dostat do hornÃ­ Ätvrti?
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_08_03"); //(smÄ™je se) To jsi na Å¡patnÃ© adrese, jÃ¡ vÅ¯bec nejsem z mÄ™sta - jako vÄ™tÅ¡ina kupcÅ¯ na trÅ¾iÅ¡ti.
+	AI_Output (self ,other,"DIA_Jora_Add_08_01"); //Jestli se chceÅ¡ dostat do hornÃ­ Ätvrti, promluv si v dolnÃ­ ÄÃ¡sti mÄ™sta s nÄ™kterÃ½mi mÃ­stnÃ­mi obchodnÃ­ky.
 };
 
 func void DIA_Jora_HolDeinGold_GHDG()
 {
-	AI_Output (other, self,"DIA_Jora_Add_15_02"); //Rád bych se dozvêdêl, jak se dostat do cechu zlodêjù.
-	AI_Output (self ,other,"DIA_Jora_Add_08_03"); //Moná e ti mùu pomoct.
+	AI_Output (other, self,"DIA_Jora_Add_15_02"); //RÃ¡d bych se dozvÄ™dÄ™l, jak se dostat do cechu zlodÄ™jÅ¯.
+	AI_Output (self ,other,"DIA_Jora_Add_08_03"); //MoÅ¾nÃ¡ Å¾e ti mÅ¯Å¾u pomoct.
 	B_Jora_GoldForClue();
 
 	Info_ClearChoices (DIA_Jora_HolDeinGold);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Uvidím, co se dá dêlat.",	DIA_Jora_HolDeinGold_DoIt);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Kolik penêz to bylo?",			DIA_Jora_HolDeinGold_HowMuch);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Proè jsi nezavolal stráe?",DIA_Jora_HolDeinGold_Wache);	
+	Info_AddChoice (DIA_Jora_HolDeinGold,"UvidÃ­m, co se dÃ¡ dÄ™lat.",	DIA_Jora_HolDeinGold_DoIt);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"Kolik penÄ™z to bylo?",			DIA_Jora_HolDeinGold_HowMuch);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"ProÄ jsi nezavolal strÃ¡Å¾e?",DIA_Jora_HolDeinGold_Wache);	
 };
 
 func void DIA_Jora_HolDeinGold_WillBelohnung()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_WillBelohnung_15_00"); //Ale za odmênu chci èást zlata!
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_WillBelohnung_08_01"); //Nejdâív se postarej o to, aby mi vrátili portmonku, a teprve PAK si promluvíme o odmênê!
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_WillBelohnung_15_00"); //Ale za odmÄ™nu chci ÄÃ¡st zlata!
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_WillBelohnung_08_01"); //NejdÃ¢Ã­v se postarej o to, aby mi vrÃ¡tili portmonku, a teprve PAK si promluvÃ­me o odmÄ™nÄ™!
 	Info_ClearChoices (DIA_Jora_HolDeinGold);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Uvidím, co se dá dêlat.",	DIA_Jora_HolDeinGold_DoIt);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Kolik penêz to bylo?",			DIA_Jora_HolDeinGold_HowMuch);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Proè jsi nezavolal stráe?",DIA_Jora_HolDeinGold_Wache);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"UvidÃ­m, co se dÃ¡ dÄ™lat.",	DIA_Jora_HolDeinGold_DoIt);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"Kolik penÄ™z to bylo?",			DIA_Jora_HolDeinGold_HowMuch);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"ProÄ jsi nezavolal strÃ¡Å¾e?",DIA_Jora_HolDeinGold_Wache);
 };
 
 func void DIA_Jora_HolDeinGold_Wache()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_Wache_15_00"); //Proè jsi nezavolal stráe?
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_Wache_08_01"); //Stráe jsou nêco platné, pouze pokud zlodêje pâistihneš pâi èinu.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_Wache_08_02"); //A kdy jsem zjistil, e jsem bez portmonky, ten parchant u byl dávno v prachu!
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_Wache_15_00"); //ProÄ jsi nezavolal strÃ¡Å¾e?
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_Wache_08_01"); //StrÃ¡Å¾e jsou nÄ™co platnÃ©, pouze pokud zlodÄ™je pÃ¢istihneÅ¡ pÃ¢i Äinu.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_Wache_08_02"); //A kdyÅ¾ jsem zjistil, Å¾e jsem bez portmonky, ten parchant uÅ¾ byl dÃ¡vno v prachu!
 };
 
 func void DIA_Jora_HolDeinGold_HowMuch()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_HowMuch_15_00"); //Kolik penêz to bylo?
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_HowMuch_08_01"); //50 zlaãákù - v téhle mizerné dobê je to víc ne dost.
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_HowMuch_15_00"); //Kolik penÄ™z to bylo?
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_HowMuch_08_01"); //50 zlaÄƒÃ¡kÅ¯ - v tÃ©hle mizernÃ© dobÄ™ je to vÃ­c neÅ¾ dost.
 };
 
 func void DIA_Jora_HolDeinGold_DoIt()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_DoIt_15_00"); //Uvidím, co se dá dêlat.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_01"); //Dej si pozor. Jestli toho lotra jen tak zmlátíš, vloí se do toho stráe.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_02"); //Poslední dobou je to tu pêknê drsné. Od chvíle, co do mêsta pâibyli paladinové, stráe kadého rváèe bez milosti sejmou.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_03"); //Budeš si muset nêco vymyslet.
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_DoIt_15_04"); //Jasnê.
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_DoIt_15_00"); //UvidÃ­m, co se dÃ¡ dÄ™lat.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_01"); //Dej si pozor. Jestli toho lotra jen tak zmlÃ¡tÃ­Å¡, vloÅ¾Ã­ se do toho strÃ¡Å¾e.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_02"); //PoslednÃ­ dobou je to tu pÄ™knÄ™ drsnÃ©. Od chvÃ­le, co do mÄ™sta pÃ¢ibyli paladinovÃ©, strÃ¡Å¾e kaÅ¾dÃ©ho rvÃ¡Äe bez milosti sejmou.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_03"); //BudeÅ¡ si muset nÄ™co vymyslet.
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_DoIt_15_04"); //JasnÄ™.
 		
 	Jora_Dieb = LOG_RUNNING;
 	Jora_Gold = LOG_RUNNING;
@@ -239,9 +239,9 @@ func void DIA_Jora_HolDeinGold_DoIt()
 	Log_CreateTopic (TOPIC_Jora,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Jora,LOG_RUNNING);
 	
-	B_LogEntry (TOPIC_Jora, "Obchodníka Jora okradl chlapík jménem Rengaru, kterı se pâes den potuluje po trišti.");
-	B_LogEntry (TOPIC_Jora, "Musím Jorovi vrátit ukradené zlato.");
-	B_LogEntry (TOPIC_JoraDieb, "Obchodníka Jora okradl chlapík jménem Rengaru - jestli ho chytím, moná z toho bude koukat i nêjaká odmêna.");
+	B_LogEntry (TOPIC_Jora, "ObchodnÃ­ka Jora okradl chlapÃ­k jmÃ©nem Rengaru, kterÃ½ se pÃ¢es den potuluje po trÅ¾iÅ¡ti.");
+	B_LogEntry (TOPIC_Jora, "MusÃ­m Jorovi vrÃ¡tit ukradenÃ© zlato.");
+	B_LogEntry (TOPIC_JoraDieb, "ObchodnÃ­ka Jora okradl chlapÃ­k jmÃ©nem Rengaru - jestli ho chytÃ­m, moÅ¾nÃ¡ z toho bude koukat i nÄ™jakÃ¡ odmÄ™na.");
 
 	Info_ClearChoices 	(DIA_Jora_HolDeinGold);
 };
@@ -256,7 +256,7 @@ instance DIA_Jora_WegenDieb	(C_INFO)
 	condition	 = 	DIA_Jora_WegenDieb_Condition;
 	information	 = 	DIA_Jora_WegenDieb_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"K tomu zlodêji...";
+	description	 = 	"K tomu zlodÄ™ji...";
 };
 func int DIA_Jora_WegenDieb_Condition ()
 {
@@ -267,38 +267,38 @@ func int DIA_Jora_WegenDieb_Condition ()
 };
 func void DIA_Jora_WegenDieb_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_15_00"); //K tomu zlodêji...
-	AI_Output (self, other, "DIA_Jora_WegenDieb_08_01"); //Tak jak to vypadá? Chytils ho, a co je dùleitêjší, máš to moje zlato?
+	AI_Output (other, self, "DIA_Jora_WegenDieb_15_00"); //K tomu zlodÄ™ji...
+	AI_Output (self, other, "DIA_Jora_WegenDieb_08_01"); //Tak jak to vypadÃ¡? Chytils ho, a co je dÅ¯leÅ¾itÄ™jÅ¡Ã­, mÃ¡Å¡ to moje zlato?
 	
 	Info_ClearChoices (DIA_Jora_WegenDieb);
 	
 	if (Npc_IsDead (Rengaru))
 	{
-		Info_AddChoice (DIA_Jora_WegenDieb,"No, stala se mu taková tragická nehoda...",DIA_Jora_WegenDieb_Tot);
+		Info_AddChoice (DIA_Jora_WegenDieb,"No, stala se mu takovÃ¡ tragickÃ¡ nehoda...",DIA_Jora_WegenDieb_Tot);
 	}
 	else if (Rengaru_InKnast == TRUE)
 	{	
-		Info_AddChoice (DIA_Jora_WegenDieb,"U jsem ho dostal. Je to v klidu.",DIA_Jora_WegenDieb_ImKnast);
+		Info_AddChoice (DIA_Jora_WegenDieb,"UÅ¾ jsem ho dostal. Je to v klidu.",DIA_Jora_WegenDieb_ImKnast);
 	}
 	else if (Npc_KnowsInfo (other, DIA_Rengaru_HALLODIEB))
 	{
 		Info_AddChoice (DIA_Jora_WegenDieb,"Utekl mi.",DIA_Jora_WegenDieb_Entkommen);
 	};
 	
-	Info_AddChoice (DIA_Jora_WegenDieb,"Ještê stále na tom pracuji.",DIA_Jora_WegenDieb_Continue);
+	Info_AddChoice (DIA_Jora_WegenDieb,"JeÅ¡tÄ™ stÃ¡le na tom pracuji.",DIA_Jora_WegenDieb_Continue);
 };
 
 func void DIA_Jora_WegenDieb_Continue()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_Continue_15_00"); //Ještê stále na tom pracuji.
-	AI_Output (self, other, "DIA_Jora_WegenDieb_Continue_08_01"); //Tak koukej, aã u to zlato mám zpátky!
+	AI_Output (other, self, "DIA_Jora_WegenDieb_Continue_15_00"); //JeÅ¡tÄ™ stÃ¡le na tom pracuji.
+	AI_Output (self, other, "DIA_Jora_WegenDieb_Continue_08_01"); //Tak koukej, aÄƒ uÅ¾ to zlato mÃ¡m zpÃ¡tky!
 	Info_ClearChoices (DIA_Jora_WegenDieb);
 };
 
 func void DIA_Jora_WegenDieb_Entkommen()
 {
 	AI_Output (other, self, "DIA_Jora_WegenDieb_Entkommen_15_00"); //Utekl mi.
-	AI_Output (self, other, "DIA_Jora_WegenDieb_Entkommen_08_01"); //A co moje zlato? To se taky ztratilo s ním?
+	AI_Output (self, other, "DIA_Jora_WegenDieb_Entkommen_08_01"); //A co moje zlato? To se taky ztratilo s nÃ­m?
 	Jora_Dieb = LOG_FAILED;
 	B_CheckLog();
 	Info_ClearChoices (DIA_Jora_WegenDieb);
@@ -307,7 +307,7 @@ func void DIA_Jora_WegenDieb_Entkommen()
 
 func void DIA_Jora_WegenDieb_ImKnast()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_ImKnast_15_00"); //Ano, chytil jsem ho. Teë bude chvíli bruèet v base.
+	AI_Output (other, self, "DIA_Jora_WegenDieb_ImKnast_15_00"); //Ano, chytil jsem ho. TeÃ« bude chvÃ­li bruÄet v base.
 	AI_Output (self, other, "DIA_Jora_WegenDieb_ImKnast_08_01"); //A co moje zlato?
 	Jora_Dieb = LOG_SUCCESS;
 	B_CheckLog();
@@ -316,8 +316,8 @@ func void DIA_Jora_WegenDieb_ImKnast()
 
 func void DIA_Jora_WegenDieb_Tot()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_Tot_15_00"); //No, stala se mu taková tragická nehoda...
-	AI_Output (self, other, "DIA_Jora_WegenDieb_Tot_08_01"); //Aspoà u nikomu nic neukradne. Innosova spravedlnost zvítêzila!
+	AI_Output (other, self, "DIA_Jora_WegenDieb_Tot_15_00"); //No, stala se mu takovÃ¡ tragickÃ¡ nehoda...
+	AI_Output (self, other, "DIA_Jora_WegenDieb_Tot_08_01"); //AspoÅ• uÅ¾ nikomu nic neukradne. Innosova spravedlnost zvÃ­tÄ™zila!
 	AI_Output (self, other, "DIA_Jora_WegenDieb_Tot_08_02"); //Kde je moje zlato?
 	Jora_Dieb = LOG_SUCCESS;
 	B_CheckLog();
@@ -326,7 +326,7 @@ func void DIA_Jora_WegenDieb_Tot()
 
 
 // *******************************************************
-// 					Gold zurückbringen
+// 					Gold zurÃ¼ckbringen
 // *******************************************************
 instance DIA_Jora_BringGold (C_INFO)
 {
@@ -335,7 +335,7 @@ instance DIA_Jora_BringGold (C_INFO)
 	condition	 = 	DIA_Jora_BringGold_Condition;
 	information	 = 	DIA_Jora_BringGold_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Tady je têch 50 zlaãákù, co ti ukradl.";
+	description	 = 	"Tady je tÄ™ch 50 zlaÄƒÃ¡kÅ¯, co ti ukradl.";
 };
 
 func int DIA_Jora_BringGold_Condition ()
@@ -348,18 +348,18 @@ func int DIA_Jora_BringGold_Condition ()
 };
 func void DIA_Jora_BringGold_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_BringGold_15_00"); //Tady je têch 50 zlaãákù, co ti ukradl.
+	AI_Output (other, self, "DIA_Jora_BringGold_15_00"); //Tady je tÄ™ch 50 zlaÄƒÃ¡kÅ¯, co ti ukradl.
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 50))
 	{
-		AI_Output (self, other,"DIA_Jora_BringGold_08_01"); //Innos buë pochválen! Tak pâece je tady ve mêstê ještê nêjaká spravedlnost!
+		AI_Output (self, other,"DIA_Jora_BringGold_08_01"); //Innos buÃ« pochvÃ¡len! Tak pÃ¢ece je tady ve mÄ™stÄ™ jeÅ¡tÄ™ nÄ™jakÃ¡ spravedlnost!
 	
 		Jora_Gold = LOG_SUCCESS;
 		B_GivePlayerXP(XP_Jora_Gold);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Jora_BringGold_08_03"); //Hej, tohle není 50 zlaãákù! Snaíš se mê taky oškubat, nebo co?
+		AI_Output (self, other,"DIA_Jora_BringGold_08_03"); //Hej, tohle nenÃ­ 50 zlaÄƒÃ¡kÅ¯! SnaÅ¾Ã­Å¡ se mÄ™ taky oÅ¡kubat, nebo co?
 	};
 };
 
@@ -377,7 +377,7 @@ instance DIA_Jora_GHDgInfo (C_INFO)
 	condition	 = 	DIA_Jora_GHDgInfo_Condition;
 	information	 = 	DIA_Jora_GHDgInfo_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co víš o cechu zlodêjù?";
+	description	 = 	"Co vÃ­Å¡ o cechu zlodÄ™jÅ¯?";
 };
 
 func int DIA_Jora_GHDgInfo_Condition ()
@@ -391,19 +391,19 @@ func int DIA_Jora_GHDgInfo_Condition ()
 };
 func void DIA_Jora_GHDgInfo_Info ()
 {
-	AI_Output (other, self,"DIA_Jora_Add_15_05"); //Co víš o cechu zlodêjù?
+	AI_Output (other, self,"DIA_Jora_Add_15_05"); //Co vÃ­Å¡ o cechu zlodÄ™jÅ¯?
 	if (Jora_Gold != LOG_SUCCESS)
 	{
 		B_Jora_GoldForClue();
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jora_Add_08_06"); //No dobâe, tak poslouchej- ale jako bych ti nic neâekl, kapišto?
-		AI_Output (self ,other,"DIA_Jora_Add_08_07"); //Do krèmy v docích chodí pár podezâelıch tıpkù.
-		AI_Output (self ,other,"DIA_Jora_Add_08_08"); //Vsadím se, e i sám krèmáâ jich nêkolik zná.
-		AI_Output (self ,other,"DIA_Jora_Add_08_09"); //Jestli chceš vystopovat zlodêje, zkus si promluvit právê s NÍM.
-		AI_Output (self ,other,"DIA_Jora_Add_08_10"); //Mùeš tâeba pâedstírat, e ses zapletl do nêèeho nekalého. Na to by mohl naletêt.
-		AI_Output (self ,other,"DIA_Jora_Add_08_11"); //Ale mêj pâitom oèi otevâené - s têmi lidmi si není radno zahrávat.
+		AI_Output (self ,other,"DIA_Jora_Add_08_06"); //No dobÃ¢e, tak poslouchej- ale jako bych ti nic neÃ¢ekl, kapiÅ¡to?
+		AI_Output (self ,other,"DIA_Jora_Add_08_07"); //Do krÄmy v docÃ­ch chodÃ­ pÃ¡r podezÃ¢elÃ½ch tÃ½pkÅ¯.
+		AI_Output (self ,other,"DIA_Jora_Add_08_08"); //VsadÃ­m se, Å¾e i sÃ¡m krÄmÃ¡Ã¢ jich nÄ™kolik znÃ¡.
+		AI_Output (self ,other,"DIA_Jora_Add_08_09"); //Jestli chceÅ¡ vystopovat zlodÄ™je, zkus si promluvit prÃ¡vÄ™ s NÃM.
+		AI_Output (self ,other,"DIA_Jora_Add_08_10"); //MÅ¯Å¾eÅ¡ tÃ¢eba pÃ¢edstÃ­rat, Å¾e ses zapletl do nÄ™Äeho nekalÃ©ho. Na to by mohl naletÄ™t.
+		AI_Output (self ,other,"DIA_Jora_Add_08_11"); //Ale mÄ™j pÃ¢itom oÄi otevÃ¢enÃ© - s tÄ™mi lidmi si nenÃ­ radno zahrÃ¡vat.
 		
 		Jora_GhdgHinweis = TRUE;
 	};
@@ -419,7 +419,7 @@ instance DIA_Jora_Belohnung (C_INFO)
 	condition	 = 	DIA_Jora_Belohnung_Condition;
 	information	 = 	DIA_Jora_Belohnung_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ale za odmênu chci èást zlata!";
+	description	 = 	"Ale za odmÄ™nu chci ÄÃ¡st zlata!";
 };
 
 func int DIA_Jora_Belohnung_Condition ()
@@ -431,17 +431,17 @@ func int DIA_Jora_Belohnung_Condition ()
 };
 func void DIA_Jora_Belohnung_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_Belohnung_15_00"); //Ale za odmênu chci èást zlata!
+	AI_Output (other, self, "DIA_Jora_Belohnung_15_00"); //Ale za odmÄ™nu chci ÄÃ¡st zlata!
 	if (Jora_GhdgHinweis == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Jora_Add_08_12"); //Ale já u jsem ti dal cennou radu.
-		AI_Output (self ,other,"DIA_Jora_Add_08_13"); //Tohle by jako odmêna mêlo staèit.
+		AI_Output (self ,other,"DIA_Jora_Add_08_12"); //Ale jÃ¡ uÅ¾ jsem ti dal cennou radu.
+		AI_Output (self ,other,"DIA_Jora_Add_08_13"); //Tohle by jako odmÄ™na mÄ™lo staÄit.
 	};
-	AI_Output (self ,other,"DIA_Jora_Add_08_14"); //Jestli chceš zlato, tak vypátrej zlodêje a pak si u lorda Andre vyzvedni odmênu.
+	AI_Output (self ,other,"DIA_Jora_Add_08_14"); //Jestli chceÅ¡ zlato, tak vypÃ¡trej zlodÄ™je a pak si u lorda Andre vyzvedni odmÄ™nu.
 	
 	if (Npc_GetDistToWP (self, "NW_CITY_MERCHANT_PATH_38") <= 500)
 	{
-		AI_Output (self, other, "DIA_Jora_Belohnung_08_03"); //Teë se musím zase vênovat zákazníkùm.
+		AI_Output (self, other, "DIA_Jora_Belohnung_08_03"); //TeÃ« se musÃ­m zase vÄ™novat zÃ¡kaznÃ­kÅ¯m.
 	};
 	AI_StopProcessInfos (self); 
 };
@@ -456,7 +456,7 @@ instance DIA_Jora_AlriksSchwert	(C_INFO)
 	condition	 = 	DIA_Jora_AlriksSchwert_Condition;
 	information	 = 	DIA_Jora_AlriksSchwert_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Alrik tvrdí, e máš jeho meè.";
+	description	 = 	"Alrik tvrdÃ­, Å¾e mÃ¡Å¡ jeho meÄ.";
 };
 func int DIA_Jora_AlriksSchwert_Condition ()
 {
@@ -467,28 +467,28 @@ func int DIA_Jora_AlriksSchwert_Condition ()
 };
 func void DIA_Jora_AlriksSchwert_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_00"); //Alrik tvrdí, e máš jeho meè.
-	AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_01"); //Myslíš toho otrhance, co mi prodal svou zbraà za pár pochodní a kouskù masa?
+	AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_00"); //Alrik tvrdÃ­, Å¾e mÃ¡Å¡ jeho meÄ.
+	AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_01"); //MyslÃ­Å¡ toho otrhance, co mi prodal svou zbraÅ• za pÃ¡r pochodnÃ­ a kouskÅ¯ masa?
 	AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_02"); //Jo, to je on.
 	
 	if (Npc_HasItems (self, ItMw_AlriksSword_Mis) > 0)
 	{
-		AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_03"); //Jeho meè poâád ještê mám.
-		AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_04"); //A kolik za nêj budeš chtít?
+		AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_03"); //Jeho meÄ poÃ¢Ã¡d jeÅ¡tÄ™ mÃ¡m.
+		AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_04"); //A kolik za nÄ™j budeÅ¡ chtÃ­t?
 		if (Jora_Gold == LOG_SUCCESS) 
 		{
-			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_05"); //No, e jsi to ty...
-			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_06"); //Ále, víš co? Vem si ho zadarmo. Kdy u nic jiného, vrátils mi moje peníze.
+			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_05"); //No, Å¾e jsi to ty...
+			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_06"); //Ãle, vÃ­Å¡ co? Vem si ho zadarmo. KdyÅ¾ uÅ¾ nic jinÃ©ho, vrÃ¡tils mi moje penÃ­ze.
 			B_GiveInvItems (self, other, ItMw_AlriksSword_Mis, 1);
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_07"); //No, e jsi to ty - 50 zlaãákù.
+			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_07"); //No, Å¾e jsi to ty - 50 zlaÄƒÃ¡kÅ¯.
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_08"); //(mrzutê) Já u ho ale nemám! Èert ví, kam se podêl.
+		AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_08"); //(mrzutÄ™) JÃ¡ uÅ¾ ho ale nemÃ¡m! ÄŒert vÃ­, kam se podÄ™l.
 	};
 };
 
@@ -503,7 +503,7 @@ instance DIA_Jora_BUYAlriksSchwert	(C_INFO)
 	condition	 = 	DIA_Jora_BUYAlriksSchwert_Condition;
 	information	 = 	DIA_Jora_BUYAlriksSchwert_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Tady je 50 zlaãákù, a teë mi dej Alrikùv meè.";
+	description	 = 	"Tady je 50 zlaÄƒÃ¡kÅ¯, a teÃ« mi dej AlrikÅ¯v meÄ.";
 };
 func int DIA_Jora_BUYAlriksSchwert_Condition ()
 {
@@ -515,25 +515,25 @@ func int DIA_Jora_BUYAlriksSchwert_Condition ()
 };
 func void DIA_Jora_BUYAlriksSchwert_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_BUYAlriksSchwert_15_00"); //Tady je 50 zlaãákù, a teë mi dej Alrikùv meè.
+	AI_Output (other, self, "DIA_Jora_BUYAlriksSchwert_15_00"); //Tady je 50 zlaÄƒÃ¡kÅ¯, a teÃ« mi dej AlrikÅ¯v meÄ.
 
 	if (B_GiveInvItems(other,self,itmi_gold,50))
 	{
 		//if (Jora_Gold == LOG_RUNNING)
 		//{
 			//AI_Output (other, self, "DIA_Jora_BUYAlriksSchwert_15_02"); //Moment, ich wollte das Schwert kaufen...
-			//AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_03"); //Das kannst du doch immer noch tun - für 50 Goldstücke ist es deins...
+			//AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_03"); //Das kannst du doch immer noch tun - fÃ¼r 50 GoldstÃ¼cke ist es deins...
 			//Jora_Gold = LOG_SUCCESS;
 		//}
 		//else
 		//{
-			AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_04"); //Tumáš - (vychytrale) byl to dobrı obchod.
+			AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_04"); //TumÃ¡Å¡ - (vychytrale) byl to dobrÃ½ obchod.
 			B_GiveInvItems (self, other, ItMw_AlriksSword_Mis, 1);
 		//};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_05"); //Nemáš sice dost zlata, ale to nevadí - nêjakı èas ti tu ten meè odloím. Take se mùeš vrátit pozdêji.
+		AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_05"); //NemÃ¡Å¡ sice dost zlata, ale to nevadÃ­ - nÄ™jakÃ½ Äas ti tu ten meÄ odloÅ¾Ã­m. TakÅ¾e se mÅ¯Å¾eÅ¡ vrÃ¡tit pozdÄ™ji.
 	};
 };
 

@@ -3,20 +3,20 @@
 // ***************************************************
 func void B_AssignSchiffswachenGuard (var C_NPC Schiffswache)
 {	
-	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt auf´s Schiff!!!!
-	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: Für die Kurzzeitige Erlaubnis, das Schiff zu besuchen! Muß nach der Aktion wieder geändert werden, z. B = 0;
+	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt aufÂ´s Schiff!!!!
+	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: FÃ¼r die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuÃŸ nach der Aktion wieder geÃ¤ndert werden, z. B = 0;
 	{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_04_00"); //Sledujeme tê. Nezapomínej na to.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_04_00"); //Sledujeme tÄ™. NezapomÃ­nej na to.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //Dokud jsi tady, nedêlej ádné potíe.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //Dokud jsi tady, nedÄ™lej Å¾Ã¡dnÃ© potÃ­Å¾e.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Ani nepomysli na to, e bys tu mohl nêco ukrást, jasné?
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Ani nepomysli na to, Å¾e bys tu mohl nÄ™co ukrÃ¡st, jasnÃ©?
 			};
 		AI_StopProcessInfos (Schiffswache);
 		Npc_SetRefuseTalk 	(Schiffswache,60);
@@ -54,30 +54,30 @@ func void B_AssignSchiffswachenInfos (var C_NPC Schiffswache)
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Ti zatracení skâeti vzali útokem Garondùv hrad. Musíme jednat rychle.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Ti zatracenÃ­ skÃ¢eti vzali Ãºtokem GarondÅ¯v hrad. MusÃ­me jednat rychle.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Kdybychom chytili toho zrádce, co otevâel hlavní bránu do hradu, udêlali bychom s ním krátkı proces.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Kdybychom chytili toho zrÃ¡dce, co otevÃ¢el hlavnÃ­ brÃ¡nu do hradu, udÄ™lali bychom s nÃ­m krÃ¡tkÃ½ proces.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //U nemùeme déle èekat. Chlapi v Hornickém údolí potâebují naši pomoc dâív, ne zaútoèí další vlna.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //UÅ¾ nemÅ¯Å¾eme dÃ©le Äekat. Chlapi v HornickÃ©m ÃºdolÃ­ potÃ¢ebujÃ­ naÅ¡i pomoc dÃ¢Ã­v, neÅ¾ zaÃºtoÄÃ­ dalÅ¡Ã­ vlna.
 			};
 		}
 	else
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond ádá úplnou mobilizaci. Do Hornického údolí se vydáme co nevidêt.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond Å¾Ã¡dÃ¡ Ãºplnou mobilizaci. Do HornickÃ©ho ÃºdolÃ­ se vydÃ¡me co nevidÄ™t.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04"); //Skâeti musí dostat poâádnou lekci.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04"); //SkÃ¢eti musÃ­ dostat poÃ¢Ã¡dnou lekci.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05"); //Nemùu se doèkat, a têm skâetùm dáme co proto. Zaèneme u brzo.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05"); //NemÅ¯Å¾u se doÄkat, aÅ¾ tÄ™m skÃ¢etÅ¯m dÃ¡me co proto. ZaÄneme uÅ¾ brzo.
 			};
 		};
 	AI_StopProcessInfos	(Schiffswache);

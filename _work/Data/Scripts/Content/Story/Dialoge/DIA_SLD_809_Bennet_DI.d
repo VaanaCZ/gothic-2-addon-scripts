@@ -32,7 +32,7 @@ INSTANCE DIA_Bennet_DI_Hello (C_INFO)
 	information	= DIA_Bennet_DI_Hello_Info;
 	permanent	 = 	TRUE;
 
-	description = "Vöechno klape?";
+	description = "V≈°echno klape?";
 };    
                    
 FUNC INT DIA_Bennet_DI_Hello_Condition()
@@ -45,15 +45,15 @@ FUNC INT DIA_Bennet_DI_Hello_Condition()
 
 FUNC VOID DIA_Bennet_DI_Hello_Info()
 {	
-	AI_Output	(other ,self,"DIA_Bennet_DI_Hello_15_00");	//Vöechno klape?
+	AI_Output	(other ,self,"DIA_Bennet_DI_Hello_15_00");	//V≈°echno klape?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//Kov·rna na tÈhle lodi je tak kapku zarezl·. M˘ûe za to ta mo‚sk· s˘l. Vyrobit tu nÍco komplikovanÍjöÌho m˘ûe b˝t docela problÈm. Ale zase na druhou stranu...
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//Kov√°rna na t√©hle lodi je tak kapku zarezl√°. M≈Ø≈æe za to ta mo√¢sk√° s≈Øl. Vyrobit tu nƒôco komplikovanƒôj≈°√≠ho m≈Ø≈æe b√Ωt docela probl√©m. Ale zase na druhou stranu...
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_02");	//M˘ûeme za‚Ìdit, aby se sk‚eti nevr·tili zpÍt.
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_02");	//M≈Ø≈æeme za√¢√≠dit, aby se sk√¢eti nevr√°tili zpƒôt.
 	};
 };
   
@@ -69,7 +69,7 @@ instance DIA_Bennet_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"JakÈ zbranÍ mi m˘ûeö prodat?";
+	description	 = 	"Jak√© zbranƒô mi m≈Ø≈æe≈° prodat?";
 };
 
 func int DIA_Bennet_DI_TRADE_Condition ()
@@ -82,9 +82,9 @@ func int DIA_Bennet_DI_TRADE_Condition ()
 
 func void DIA_Bennet_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //JakÈ zbranÍ mi m˘ûeö prodat?
+	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //Jak√© zbranƒô mi m≈Ø≈æe≈° prodat?
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Pouze ty nejlepöÌ. To p‚ece vÌö.
+	AI_Output			(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Pouze ty nejlep≈°√≠. To p√¢ece v√≠≈°.
 };
   
 ///////////////////////////////////////////////////////////////////////
@@ -97,7 +97,7 @@ instance DIA_Bennet_DI_Smith		(C_INFO)
 	condition	 = 	DIA_Bennet_DI_Smith_Condition;
 	information	 = 	DIA_Bennet_DI_Smith_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"M˘ûeö mÍ nauËit svÈ umÍnÌ?";
+	description	 = 	"M≈Ø≈æe≈° mƒô nauƒçit sv√© umƒôn√≠?";
 };
 
 func int DIA_Bennet_DI_Smith_Condition ()
@@ -111,15 +111,15 @@ func int DIA_Bennet_DI_Smith_Condition ()
 
 func void DIA_Bennet_DI_Smith_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_Smith_15_00"); //M˘ûeö mÍ nauËit svÈ umÍnÌ?
-	AI_Output			(self, other, "DIA_Bennet_DI_Smith_06_01"); //Z·leûÌ na tom, co chceö dÍlat.
+	AI_Output			(other, self, "DIA_Bennet_DI_Smith_15_00"); //M≈Ø≈æe≈° mƒô nauƒçit sv√© umƒôn√≠?
+	AI_Output			(self, other, "DIA_Bennet_DI_Smith_06_01"); //Z√°le≈æ√≠ na tom, co chce≈° dƒôlat.
 
 	Info_ClearChoices (DIA_Bennet_DI_Smith);
 	Info_AddChoice	    (DIA_Bennet_DI_Smith, DIALOG_BACK, DIA_Bennet_DI_Smith_BACK);
 	
 	if ( PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(DIA_Bennet_DI_Smith, B_BuildLearnString("NauËit se kov·‚stvÌ"	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,DIA_Bennet_DI_Smith_Common);
+		Info_AddChoice		(DIA_Bennet_DI_Smith, B_BuildLearnString("Nauƒçit se kov√°√¢stv√≠"	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,DIA_Bennet_DI_Smith_Common);
 	};
 	if ( PLAYER_TALENT_SMITH[WEAPON_Common] == TRUE)
 	{
@@ -220,7 +220,7 @@ INSTANCE DIA_Bennet_TeachSTR (C_INFO)
 	condition	= DIA_Bennet_TeachSTR_Condition;
 	information	= DIA_Bennet_TeachSTR_Info;
 	permanent	= TRUE;
-	description = "Chci se st·t silnÍjöÌm.";
+	description = "Chci se st√°t silnƒôj≈°√≠m.";
 };                       
 
 FUNC INT DIA_Bennet_TeachSTR_Condition()
@@ -233,8 +233,8 @@ FUNC INT DIA_Bennet_TeachSTR_Condition()
  
 FUNC VOID DIA_Bennet_TeachSTR_Info()
 {	
-	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //ChtÍl bych se st·t silnÍjöÌm.
-	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //V takov˝chhle dob·ch se budou silnÈ paûe hodit.
+	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Chtƒôl bych se st√°t silnƒôj≈°√≠m.
+	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //V takov√Ωchhle dob√°ch se budou siln√© pa≈æe hodit.
 	
 	Info_ClearChoices (DIA_Bennet_TeachSTR);
 	Info_AddChoice		(DIA_Bennet_TeachSTR, DIALOG_BACK, DIA_Bennet_TeachSTR_Back);
@@ -269,7 +269,7 @@ instance DIA_Bennet_DI_DragonEgg		(C_INFO)
 	condition	 = 	DIA_Bennet_DI_DragonEgg_Condition;
 	information	 = 	DIA_Bennet_DI_DragonEgg_Info;
 
-	description	 = 	"M·m tady draËÌ vejce.";
+	description	 = 	"M√°m tady draƒç√≠ vejce.";
 };
 
 func int DIA_Bennet_DI_DragonEgg_Condition ()
@@ -282,10 +282,10 @@ func int DIA_Bennet_DI_DragonEgg_Condition ()
 
 func void DIA_Bennet_DI_DragonEgg_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //M·m tady draËÌ vejce.
+	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //M√°m tady draƒç√≠ vejce.
 	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //A?
 	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //No. Myslel jsem...
-	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //VÌm, na cos myslel. Zapome‡ na to, nech si tu vÍc. J· to nechci.
+	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //V√≠m, na cos myslel. Zapome≈ï na to, nech si tu vƒôc. J√° to nechci.
 	B_GivePlayerXP (XP_Ambient);
 };
 	
@@ -300,7 +300,7 @@ instance DIA_Bennet_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Bennet_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"UdÍlali jsme vöechno, co jsme pot‚ebovali udÍlat. ";
+	description	 = 	"Udƒôlali jsme v≈°echno, co jsme pot√¢ebovali udƒôlat. ";
 };
 
 func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
@@ -313,8 +313,8 @@ func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
 
 func void DIA_Bennet_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //UdÍlali jsme vöechno, co jsme pot‚ebovali udÍlat.
-	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //To r·d slyöÌm. Uû jsem m·m tÈhle starÈ kov·rny po krk. Pot‚ebuju se zase postavit na zem pevn˝ma nohama.
+	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Udƒôlali jsme v≈°echno, co jsme pot√¢ebovali udƒôlat.
+	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //To r√°d sly≈°√≠m. U≈æ jsem m√°m t√©hle star√© kov√°rny po krk. Pot√¢ebuju se zase postavit na zem pevn√Ωma nohama.
 	AI_StopProcessInfos (self);
 };
 

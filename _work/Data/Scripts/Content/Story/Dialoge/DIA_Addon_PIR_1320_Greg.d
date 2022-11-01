@@ -73,34 +73,34 @@ FUNC INT DIA_Addon_Greg_ImNew_Condition()
 
 FUNC VOID DIA_Addon_Greg_ImNew_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_00"); //(hrozivê) Hele! Co dêláš v mı boudê?
-	AI_Output (other,self,"DIA_Addon_Greg_Hello_15_01"); //Já...
-	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_02"); //(zuâivê) Na pár dnù si vodskoèím a kadej si hned myslí, e si tu mùe dêlat, co chce.
+	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_00"); //(hrozivÄ™) Hele! Co dÄ™lÃ¡Å¡ v mÃ½ boudÄ™?
+	AI_Output (other,self,"DIA_Addon_Greg_Hello_15_01"); //JÃ¡...
+	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_02"); //(zuÃ¢ivÄ™) Na pÃ¡r dnÅ¯ si vodskoÄÃ­m a kaÅ¾dej si hned myslÃ­, Å¾e si tu mÅ¯Å¾e dÄ™lat, co chce.
 	//AI_Output (other,self,"DIA_Addon_Greg_ImNew_15_00"); //Ich bin der Neue.
 	//AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_01"); //(zynisch) So so, du bist der Neue.
 	//AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_02"); //Hier entscheide immer noch ICH, wer bei uns mitmacht.
-	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_03"); //Co se to tu ksakru dêje?
-	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_04"); //Palisáda eštê nejni dostavêná? Kaàon je plnej bestií a kadej se tu jen tak poflakuje a myslí si, kdovíjak nejni dobrej?
+	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_03"); //Co se to tu ksakru dÄ™je?
+	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_04"); //PalisÃ¡da eÅ¡tÄ™ nejni dostavÄ™nÃ¡? KaÅ•on je plnej bestiÃ­ a kaÅ¾dej se tu jen tak poflakuje a myslÃ­ si, kdovÃ­jak nejni dobrej?
 		
 	GregIsBack = TRUE;
 	
 	if (!Npc_IsDead (Francis))
 	{
 		AI_TurnToNpc (self, Francis);
-		AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_05"); //(nahlas) To jste toho víc neudêlali, Francisi?
+		AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_05"); //(nahlas) To jste toho vÃ­c neudÄ™lali, Francisi?
 		
 		if (C_BodyStateContains (Francis, BS_SIT))
 		{
-			AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_06"); //(nahlas) Vokamitê vypadni z mı lavice!
+			AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_06"); //(nahlas) VokamÅ¾itÄ™ vypadni z mÃ½ lavice!
 		};
 	};
 	
 	Npc_ExchangeRoutine	(self,"HOME");
 	AI_TurnToNpc (self, other);
-	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_07"); //A TY? Cos udêlal TY?
+	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_07"); //A TY? Cos udÄ™lal TY?
 	
 	Info_ClearChoices	(DIA_Addon_Greg_ImNew);
-	Info_AddChoice	(DIA_Addon_Greg_ImNew, "Zatím nic moc.", DIA_Addon_Greg_ImNew_nich );
+	Info_AddChoice	(DIA_Addon_Greg_ImNew, "ZatÃ­m nic moc.", DIA_Addon_Greg_ImNew_nich );
 	if (
 			(Npc_IsDead(BeachLurker1))
 			&& (Npc_IsDead(BeachLurker2))
@@ -123,14 +123,14 @@ func void B_UseRakeBilanz ()
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_00"); //A nemysli si, e jsem zapomnêl, e mi ještê pár vêcí dluíš.
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_01"); //Jsou to vêci za pár set zlatejch, kterı jsem zakopal po celım Khorinidu.
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_02"); //Jsi je prostê sbalil, co?
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_03"); //Kadej kousek si ale tvrdê vodpracuješ.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_00"); //A nemysli si, Å¾e jsem zapomnÄ™l, Å¾e mi jeÅ¡tÄ™ pÃ¡r vÄ™cÃ­ dluÅ¾Ã­Å¡.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_01"); //Jsou to vÄ™ci za pÃ¡r set zlatejch, kterÃ½ jsem zakopal po celÃ½m Khorinidu.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_02"); //Jsi je prostÄ™ sbalil, co?
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_03"); //KaÅ¾dej kousek si ale tvrdÄ™ vodpracujeÅ¡.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_04"); //Já tê nauèím, jak se má makat.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_04"); //JÃ¡ tÄ™ nauÄÃ­m, jak se mÃ¡ makat.
 	};
 	
 	if (!Npc_IsDead (Francis))
@@ -145,8 +145,8 @@ func void B_UseRakeBilanz ()
 // --------------------------------------------------------------------
 func void DIA_Addon_Greg_ImNew_nich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_ImNew_nich_15_00"); //Zatím nic moc.
-	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_nich_01_01"); //Nevadí, najdu ti nêco vhodnıho, kámo.
+	AI_Output			(other, self, "DIA_Addon_Greg_ImNew_nich_15_00"); //ZatÃ­m nic moc.
+	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_nich_01_01"); //NevadÃ­, najdu ti nÄ™co vhodnÃ½ho, kÃ¡mo.
 	B_UseRakeBilanz ();
 };
 func void DIA_Addon_Greg_ImNew_turm ()
@@ -156,7 +156,7 @@ func void DIA_Addon_Greg_ImNew_turm ()
 
 	if (C_TowerBanditsDead() == TRUE)
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_02"); //U jsem se vypoâádal s bandity v té vêi.
+		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_02"); //UÅ¾ jsem se vypoÃ¢Ã¡dal s bandity v tÃ© vÄ™Å¾i.
 	};
 
 	if (Npc_IsDead(BeachLurker1))
@@ -167,10 +167,10 @@ func void DIA_Addon_Greg_ImNew_turm ()
 	&& (Npc_IsDead(BeachShadowbeast1))
 	&& (MIS_Addon_MorganLurker != 0)
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_03"); //Na plái na severu u nejsou ádné potvory.
+		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_03"); //Na plÃ¡Å¾i na severu uÅ¾ nejsou Å¾Ã¡dnÃ© potvory.
 	};
 
-	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_turm_01_04"); //No, tak to je zaèátek, poèítám.
+	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_turm_01_04"); //No, tak to je zaÄÃ¡tek, poÄÃ­tÃ¡m.
 	
 	B_UseRakeBilanz ();
 };
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Greg_JoinPirates(C_INFO)
 	condition	= DIA_Addon_Greg_JoinPirates_Condition;
 	information	= DIA_Addon_Greg_JoinPirates_Info;
 	permanent	= FALSE;
-	description = "Co to mám dêlat?";
+	description = "Co to mÃ¡m dÄ™lat?";
 };                       
 FUNC INT DIA_Addon_Greg_JoinPirates_Condition()
 {
@@ -197,44 +197,44 @@ FUNC INT DIA_Addon_Greg_JoinPirates_Condition()
 
 FUNC VOID DIA_Addon_Greg_JoinPirates_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_15_00"); //Co máte na práci?
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_01"); //Napâed se to tu musí zaèít trochu hejbat.
+	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_15_00"); //Co mÃ¡te na prÃ¡ci?
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_01"); //NapÃ¢ed se to tu musÃ­ zaÄÃ­t trochu hejbat.
 
 	if ((Npc_IsDead(Morgan))== FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_02"); //Morgan, to línı prase, musí naâezat prkna.
+		AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_02"); //Morgan, to lÃ­nÃ½ prase, musÃ­ naÃ¢ezat prkna.
 	};
 	
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_03"); //A TY to vezmeš za Morgana a vyèistíš ten zatracenej kaàon vode všech potvor.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_03"); //A TY to vezmeÅ¡ za Morgana a vyÄistÃ­Å¡ ten zatracenej kaÅ•on vode vÅ¡ech potvor.
 	
 	MIS_Addon_Greg_ClearCanyon = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_ClearCanyon,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_ClearCanyon,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Greg by chtêl, abych za Morgana vyèistil kaàon ode všech nestvùr.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Greg by chtÄ™l, abych za Morgana vyÄistil kaÅ•on ode vÅ¡ech nestvÅ¯r.");
 
 	Info_ClearChoices (DIA_Addon_Greg_JoinPirates);
-	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"Pak myslím, e u pùjdu.",DIA_Addon_Greg_JoinPirates_Leave);
+	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"Pak myslÃ­m, Å¾e uÅ¾ pÅ¯jdu.",DIA_Addon_Greg_JoinPirates_Leave);
 
 	if (((Npc_IsDead(Brandon))== FALSE)
 	|| ((Npc_IsDead(Matt))== FALSE))
 	{
-		Info_AddChoice (DIA_Addon_Greg_JoinPirates,"To to mám všecko udêlat sám?",DIA_Addon_Greg_JoinPirates_Compadres);
+		Info_AddChoice (DIA_Addon_Greg_JoinPirates,"To to mÃ¡m vÅ¡ecko udÄ™lat sÃ¡m?",DIA_Addon_Greg_JoinPirates_Compadres);
 	};
 
-	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"Jaké nestvùry?",DIA_Addon_Greg_JoinPirates_ClearCanyon);
+	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"JakÃ© nestvÅ¯ry?",DIA_Addon_Greg_JoinPirates_ClearCanyon);
 };
 
 FUNC VOID DIA_Addon_Greg_JoinPirates_Leave()
 {
-	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_Leave_15_00"); //Myslím, e tedy pùjdu.
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_01"); //A eštê nêco. Teë seš jeden z nás.
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_02"); //Tak si koukej vopatâit àákı slušnı vybavení.
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_03"); //Tady máš àákı brnêní, snad ti padne.
+	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_Leave_15_00"); //MyslÃ­m, Å¾e tedy pÅ¯jdu.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_01"); //A eÅ¡tÄ™ nÄ™co. TeÃ« seÅ¡ jeden z nÃ¡s.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_02"); //Tak si koukej vopatÃ¢it Å•Ã¡kÃ½ sluÅ¡nÃ½ vybavenÃ­.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_03"); //Tady mÃ¡Å¡ Å•Ã¡kÃ½ brnÄ™nÃ­, snad ti padne.
 	CreateInvItems (self, ItAr_Pir_M_Addon, 1);									
 	B_GiveInvItems (self, other, ItAr_Pir_M_Addon, 1);		
 	AI_EquipArmor(hero,ItAr_Pir_M_Addon);
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_04"); //A nikde se neflákej – hned se do toho pusã!
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_04"); //A nikde se neflÃ¡kej â€“ hned se do toho pusÄƒ!
 	
 
 	Info_ClearChoices (DIA_Addon_Greg_JoinPirates);
@@ -242,20 +242,20 @@ FUNC VOID DIA_Addon_Greg_JoinPirates_Leave()
 
 FUNC VOID DIA_Addon_Greg_JoinPirates_Compadres()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_Compadres_15_00"); //To to mám všecko dêlat sám nebo co?
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_Compadres_01_01"); //Bê prostê dopâedu a vem si àákı chlapy.
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_Compadres_01_02"); //Aã si trochu zaslouej plat a furt jenom nekecaj.
+	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_Compadres_15_00"); //To to mÃ¡m vÅ¡ecko dÄ™lat sÃ¡m nebo co?
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_Compadres_01_01"); //BÄ™Å¾ prostÄ™ dopÃ¢edu a vem si Å•Ã¡kÃ½ chlapy.
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_Compadres_01_02"); //AÄƒ si trochu zaslouÅ¾ej plat a furt jenom nekecaj.
 
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Greg âíká, e s sebou mùu vzít tlupu dalších chlapù.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Greg Ã¢Ã­kÃ¡, Å¾e s sebou mÅ¯Å¾u vzÃ­t tlupu dalÅ¡Ã­ch chlapÅ¯.");
 };
 
 FUNC VOID DIA_Addon_Greg_JoinPirates_ClearCanyon()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_ClearCanyon_15_00"); //Jaké potvory?
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_01"); //Bâitovci z kaàonu se stahujou èím dál blí k našemu táboru.
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_02"); //Nebudu èekat, a nêkdo z mejch chlapù trochu pâebere, pâiplete se têm potvorám do cesty a ty ho seerou.
+	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_ClearCanyon_15_00"); //JakÃ© potvory?
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_01"); //BÃ¢itovci z kaÅ•onu se stahujou ÄÃ­m dÃ¡l blÃ­Å¾ k naÅ¡emu tÃ¡boru.
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_02"); //Nebudu Äekat, aÅ¾ nÄ™kdo z mejch chlapÅ¯ trochu pÃ¢ebere, pÃ¢iplete se tÄ™m potvorÃ¡m do cesty a ty ho seÅ¾erou.
 
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Nejspíš se jedná o bâitovce.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"NejspÃ­Å¡ se jednÃ¡ o bÃ¢itovce.");
 };
 
 // ************************************************************
@@ -268,7 +268,7 @@ INSTANCE DIA_Addon_Greg_AboutCanyon(C_INFO)
 	condition	= DIA_Addon_Greg_AboutCanyon_Condition;
 	information	= DIA_Addon_Greg_AboutCanyon_Info;
 	permanent	= TRUE;
-	description = "K tomu kañonu...";
+	description = "K tomu kaÅ„onu...";
 };                       
 FUNC INT DIA_Addon_Greg_AboutCanyon_Condition()
 {
@@ -280,8 +280,8 @@ FUNC INT DIA_Addon_Greg_AboutCanyon_Condition()
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_15_00"); //Co se tıèe toho kaàonu...
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_01_01"); //No, co je s ním?
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_15_00"); //Co se tÃ½Äe toho kaÅ•onu...
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_01_01"); //No, co je s nÃ­m?
 	
 	Info_ClearChoices (DIA_Addon_Greg_AboutCanyon);
 	if (C_AllCanyonRazorDead() == FALSE)
@@ -290,13 +290,13 @@ FUNC VOID DIA_Addon_Greg_AboutCanyon_Info()
 		if (((Npc_IsDead(Brandon))== FALSE)
 		|| ((Npc_IsDead(Matt))== FALSE))
 		{
-			Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Kdo mi s tím mùe pomoct?",DIA_Addon_Greg_AboutCanyon_Compadres);
+			Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Kdo mi s tÃ­m mÅ¯Å¾e pomoct?",DIA_Addon_Greg_AboutCanyon_Compadres);
 		};
-		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Jaké nestvùry mám zabíjet?",DIA_Addon_Greg_AboutCanyon_Job);
+		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"JakÃ© nestvÅ¯ry mÃ¡m zabÃ­jet?",DIA_Addon_Greg_AboutCanyon_Job);
 	}
 	else 
 	{
-		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Pobil jsem všecky bâitovce.",DIA_Addon_Greg_AboutCanyon_RazorsDead);
+		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Pobil jsem vÅ¡ecky bÃ¢itovce.",DIA_Addon_Greg_AboutCanyon_RazorsDead);
 	};
 };
 
@@ -307,25 +307,25 @@ FUNC VOID DIA_Addon_Greg_AboutCanyon_Back()
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_Compadres()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Compadres_15_00"); //Kdo mi s tím pomùe?
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_01"); //Vem si pár chlapù.
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_02"); //Beztak si tu akorát válej šunky.
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Compadres_15_00"); //Kdo mi s tÃ­m pomÅ¯Å¾e?
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_01"); //Vem si pÃ¡r chlapÅ¯.
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_02"); //Beztak si tu akorÃ¡t vÃ¡lej Å¡unky.
 	Info_ClearChoices (DIA_Addon_Greg_AboutCanyon);
 };
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_Job()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Job_15_00"); //Jaké potvory mám zabíjet?
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Job_01_01"); //Zlikviduj bâitovce! Vostatní potvory jsou neškodnı.
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Job_15_00"); //JakÃ© potvory mÃ¡m zabÃ­jet?
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Job_01_01"); //Zlikviduj bÃ¢itovce! VostatnÃ­ potvory jsou neÅ¡kodnÃ½.
 	Info_ClearChoices (DIA_Addon_Greg_AboutCanyon);
 };
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_RazorsDead()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_RazorsDead_15_00"); //Pobil jsem všechny bâitovce.
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_RazorsDead_01_01"); //Dobâe, vypadá to, e v tobê nêco je.
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_RazorsDead_15_00"); //Pobil jsem vÅ¡echny bÃ¢itovce.
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_RazorsDead_01_01"); //DobÃ¢e, vypadÃ¡ to, Å¾e v tobÄ™ nÄ™co je.
 	
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Pobil jsem všecky bâitovce v kaàonu, ale na Grega to moc dojem neudêlalo.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Pobil jsem vÅ¡ecky bÃ¢itovce v kaÅ•onu, ale na Grega to moc dojem neudÄ™lalo.");
 	
 	MIS_Addon_Greg_ClearCanyon = LOG_SUCCESS;
 	B_Addon_PiratesGoHome();
@@ -344,7 +344,7 @@ INSTANCE DIA_Addon_Greg_BanditArmor(C_INFO)
 	condition	= DIA_Addon_Greg_BanditArmor_Condition;
 	information	= DIA_Addon_Greg_BanditArmor_Info;
 	permanent	= TRUE;
-	description = "Potâebuju zbroj banditù.";
+	description = "PotÃ¢ebuju zbroj banditÅ¯.";
 };                       
 FUNC INT DIA_Addon_Greg_BanditArmor_Condition()
 {
@@ -356,32 +356,32 @@ FUNC INT DIA_Addon_Greg_BanditArmor_Condition()
 
 FUNC VOID DIA_Addon_Greg_BanditArmor_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_00"); //Potâebuji zbroj banditù.
+	AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_00"); //PotÃ¢ebuji zbroj banditÅ¯.
 	if (MIS_Addon_Greg_ClearCanyon != LOG_SUCCESS)
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_01"); //Napâed doka, e nejsi úplnej budiknièemu. Teprv pak se s tebou budu bavit.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_01"); //NapÃ¢ed dokaÅ¾, Å¾e nejsi Ãºplnej budiÅ¾kniÄemu. Teprv pak se s tebou budu bavit.
 		if (MIS_Addon_Greg_ClearCanyon == LOG_RUNNING)
 		{
-			AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_02"); //Napâed pobij všecky bâitovce v kaàonu!
+			AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_02"); //NapÃ¢ed pobij vÅ¡ecky bÃ¢itovce v kaÅ•onu!
 		};
 		
-		B_LogEntry (TOPIC_Addon_BDTRuestung,"Greg chce, abych mu pomohl tábor znovu oivit. Pak si s ním mùu promluvit o brnêní."); 
+		B_LogEntry (TOPIC_Addon_BDTRuestung,"Greg chce, abych mu pomohl tÃ¡bor znovu oÅ¾ivit. Pak si s nÃ­m mÅ¯Å¾u promluvit o brnÄ™nÃ­."); 
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_03"); //Hele, v tobê vánê nêco je!
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_04"); //Tuhle zbroj si mêl navlíct Bones a jít mezi bandity jako vyzvêdaè.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_05"); //Ale TY se pro tu práci hodíš líp.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_06"); //Moná se vocaë dostaneš i ivej.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_07"); //Promluv si s Bonesem a âekni mu, aã ti dá to brnêní. Pak si ho voblíkni a pal do tábora banditù.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_08"); //Musím vêdêt, jak je monı, e ti parchanti pâišli do našeho údolí jako první.
-		AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_09"); //Rozkaz, kapitáne!
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_03"); //Hele, v tobÄ™ vÃ¡Å¾nÄ™ nÄ™co je!
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_04"); //Tuhle zbroj si mÄ™l navlÃ­ct Bones a jÃ­t mezi bandity jako vyzvÄ™daÄ.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_05"); //Ale TY se pro tu prÃ¡ci hodÃ­Å¡ lÃ­p.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_06"); //MoÅ¾nÃ¡ se vocaÃ« dostaneÅ¡ i Å¾ivej.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_07"); //Promluv si s Bonesem a Ã¢ekni mu, aÄƒ ti dÃ¡ to brnÄ™nÃ­. Pak si ho voblÃ­kni a pal do tÃ¡bora banditÅ¯.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_08"); //MusÃ­m vÄ™dÄ™t, jak je moÅ¾nÃ½, Å¾e ti parchanti pÃ¢iÅ¡li do naÅ¡eho ÃºdolÃ­ jako prvnÃ­.
+		AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_09"); //Rozkaz, kapitÃ¡ne!
 	
-		B_LogEntry (TOPIC_Addon_BDTRuestung,"A pobiju všecky bâitovce v táboâe a oznámím to Gregovi, mùu si u Bonese vyzvednout zbroj."); 
+		B_LogEntry (TOPIC_Addon_BDTRuestung,"AÅ¾ pobiju vÅ¡ecky bÃ¢itovce v tÃ¡boÃ¢e a oznÃ¡mÃ­m to Gregovi, mÅ¯Å¾u si u Bonese vyzvednout zbroj."); 
 	
 		Log_CreateTopic (TOPIC_Addon_ScoutBandits,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_ScoutBandits,LOG_RUNNING);
-		B_LogEntry	(TOPIC_Addon_ScoutBandits,"Musím pro Grega zjistit, proè bandité pâišli do tohoto údolí jako první.");
+		B_LogEntry	(TOPIC_Addon_ScoutBandits,"MusÃ­m pro Grega zjistit, proÄ banditÃ© pÃ¢iÅ¡li do tohoto ÃºdolÃ­ jako prvnÃ­.");
 	
 		MIS_Greg_ScoutBandits = LOG_RUNNING;
 	};
@@ -397,7 +397,7 @@ instance DIA_Addon_Greg_Auftraege2		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_Auftraege2_Condition;
 	information	 = 	DIA_Addon_Greg_Auftraege2_Info;
 
-	description	 = 	"Máš pro mê ještê nêjakou další práci?";
+	description	 = 	"MÃ¡Å¡ pro mÄ™ jeÅ¡tÄ™ nÄ™jakou dalÅ¡Ã­ prÃ¡ci?";
 };
 
 func int DIA_Addon_Greg_Auftraege2_Condition ()
@@ -421,7 +421,7 @@ func int DIA_Addon_Greg_Auftraege2_Condition ()
 
 func void DIA_Addon_Greg_Auftraege2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_Auftraege2_15_00"); //Máš pro mê ještê nêco jiného?
+	AI_Output	(other, self, "DIA_Addon_Greg_Auftraege2_15_00"); //MÃ¡Å¡ pro mÄ™ jeÅ¡tÄ™ nÄ™co jinÃ©ho?
 
 	if (Npc_IsDead(BeachLurker1)== FALSE)
 	&& (Npc_IsDead(BeachLurker2)== FALSE)
@@ -430,30 +430,30 @@ func void DIA_Addon_Greg_Auftraege2_Info ()
 	&& (Npc_IsDead(BeachWaran2)== FALSE)
 	&& (Npc_IsDead(BeachShadowbeast1)== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_01"); //Plá na severu se ještê furt hemí potvorama.
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_02"); //Morgan se na to nejspíš vybodnul.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_01"); //PlÃ¡Å¾ na severu se jeÅ¡tÄ™ furt hemÅ¾Ã­ potvorama.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_02"); //Morgan se na to nejspÃ­Å¡ vybodnul.
 		
 		Log_CreateTopic (TOPIC_Addon_MorganBeach,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_MorganBeach,LOG_RUNNING);
-		B_LogEntry	(TOPIC_Addon_MorganBeach,"Greg chce, abych se postaral o plá. Je na ní plno potvor, které je tâeba vyhubit.");
+		B_LogEntry	(TOPIC_Addon_MorganBeach,"Greg chce, abych se postaral o plÃ¡Å¾. Je na nÃ­ plno potvor, kterÃ© je tÃ¢eba vyhubit.");
 		
 		MIS_Addon_MorganLurker = LOG_RUNNING;
 	};
 	
 	if	(C_TowerBanditsDead() == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_03"); //Ve vêi na jiním útesu jsou ještê furt banditi.
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_04"); //Mêl by to s nima vyâídit Francis.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_03"); //Ve vÄ™Å¾i na jiÅ¾nÃ­m Ãºtesu jsou jeÅ¡tÄ™ furt banditi.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_04"); //MÄ™l by to s nima vyÃ¢Ã­dit Francis.
 	
 		Log_CreateTopic (TOPIC_Addon_BanditsTower,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_BanditsTower,LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_BanditsTower,"Greg chce, abych z vêe jinê od tábora vyhnal bandity.");
+		B_LogEntry (TOPIC_Addon_BanditsTower,"Greg chce, abych z vÄ™Å¾e jiÅ¾nÄ™ od tÃ¡bora vyhnal bandity.");
 		
 		MIS_Henry_FreeBDTTower = LOG_RUNNING; 
 	
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_05"); //Ale esli chceš, mùeš to zaâídit i ty.
+	AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_05"); //Ale esli chceÅ¡, mÅ¯Å¾eÅ¡ to zaÃ¢Ã­dit i ty.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -466,7 +466,7 @@ instance DIA_Addon_Greg_Sauber2		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_Sauber2_Condition;
 	information	 = 	DIA_Addon_Greg_Sauber2_Info;
 
-	description	 = 	"Severní plá je vyèištêná.";
+	description	 = 	"SevernÃ­ plÃ¡Å¾ je vyÄiÅ¡tÄ™nÃ¡.";
 };
 
 func int DIA_Addon_Greg_Sauber2_Condition ()
@@ -485,12 +485,12 @@ func int DIA_Addon_Greg_Sauber2_Condition ()
 
 func void DIA_Addon_Greg_Sauber2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_Sauber2_15_00"); //Severní plá u je vyèištêná.
-	AI_Output	(self, other, "DIA_Addon_Greg_Sauber2_01_01"); //Skvêlı, tady máš vodmênu.
+	AI_Output	(other, self, "DIA_Addon_Greg_Sauber2_15_00"); //SevernÃ­ plÃ¡Å¾ uÅ¾ je vyÄiÅ¡tÄ™nÃ¡.
+	AI_Output	(self, other, "DIA_Addon_Greg_Sauber2_01_01"); //SkvÄ™lÃ½, tady mÃ¡Å¡ vodmÄ™nu.
 	CreateInvItems (self, ItMi_Gold, 200);									
 	B_GiveInvItems (self, other, ItMi_Gold, 200);
 	
-	B_LogEntry	(TOPIC_Addon_MorganBeach,"Oznámil jsem Gregovi, e severní plá je èistá.");
+	B_LogEntry	(TOPIC_Addon_MorganBeach,"OznÃ¡mil jsem Gregovi, Å¾e severnÃ­ plÃ¡Å¾ je ÄistÃ¡.");
 	
 	MIS_Addon_MorganLurker = LOG_SUCCESS;	
 	B_GivePlayerXP (XP_Addon_Morgan_LurkerPlatt);	
@@ -506,7 +506,7 @@ instance DIA_Addon_Greg_BanditPlatt2		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_BanditPlatt2_Condition;
 	information	 = 	DIA_Addon_Greg_BanditPlatt2_Info;
 
-	description	 = 	"U jsem se vypoâádal s têmi bandity ve vêi.";
+	description	 = 	"UÅ¾ jsem se vypoÃ¢Ã¡dal s tÄ™mi bandity ve vÄ™Å¾i.";
 };
 
 func int DIA_Addon_Greg_BanditPlatt2_Condition ()
@@ -520,12 +520,12 @@ func int DIA_Addon_Greg_BanditPlatt2_Condition ()
 
 func void DIA_Addon_Greg_BanditPlatt2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_BanditPlatt2_15_00"); //U jsem se vypoâádal s têmi bandity ve vêi.
-	AI_Output	(self, other, "DIA_Addon_Greg_BanditPlatt2_01_01"); //Vıbornê, skvêlá práce, tady máš odmênu.
+	AI_Output	(other, self, "DIA_Addon_Greg_BanditPlatt2_15_00"); //UÅ¾ jsem se vypoÃ¢Ã¡dal s tÄ™mi bandity ve vÄ™Å¾i.
+	AI_Output	(self, other, "DIA_Addon_Greg_BanditPlatt2_01_01"); //VÃ½bornÄ™, skvÄ™lÃ¡ prÃ¡ce, tady mÃ¡Å¡ odmÄ™nu.
 	CreateInvItems (self, ItMi_Gold, 200);									
 	B_GiveInvItems (self, other, ItMi_Gold, 200);	
 	
-	B_LogEntry (TOPIC_Addon_BanditsTower,"Banditi ve vêi jsou mrtví. Na Grega to udêlalo dojem.");
+	B_LogEntry (TOPIC_Addon_BanditsTower,"Banditi ve vÄ™Å¾i jsou mrtvÃ­. Na Grega to udÄ™lalo dojem.");
 	
 	MIS_Henry_FreeBDTTower = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Henry_FreeBDTTower);	
@@ -543,7 +543,7 @@ INSTANCE DIA_Addon_Greg_BanditGoldmine(C_INFO)
 	condition	= DIA_Addon_Greg_BanditGoldmine_Condition;
 	information	= DIA_Addon_Greg_BanditGoldmine_Info;
 	permanent	= TRUE;
-	description = "Banditi objevili zlatı dùl.";
+	description = "Banditi objevili zlatÃ½ dÅ¯l.";
 };                       
 FUNC INT DIA_Addon_Greg_BanditGoldmine_Condition()
 {
@@ -556,14 +556,14 @@ FUNC INT DIA_Addon_Greg_BanditGoldmine_Condition()
 
 FUNC VOID DIA_Addon_Greg_BanditGoldmine_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Greg_BanditGoldmine_15_00"); //Banditi našli zlatı dùl.
-	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_01"); //Já to vêdêl! Tak PROTO sem pâišli!
-	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_02"); //Nikdo by jinak dobrovolnê nelez do takovıho moèálu, kde se to hemí kdovíjakou havêtí.
-	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_03"); //Prima, tady pro tebe nêco mám.
+	AI_Output (other,self,"DIA_Addon_Greg_BanditGoldmine_15_00"); //Banditi naÅ¡li zlatÃ½ dÅ¯l.
+	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_01"); //JÃ¡ to vÄ™dÄ™l! Tak PROTO sem pÃ¢iÅ¡li!
+	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_02"); //Nikdo by jinak dobrovolnÄ™ nelez do takovÃ½ho moÄÃ¡lu, kde se to hemÅ¾Ã­ kdovÃ­jakou havÄ™tÃ­.
+	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_03"); //Prima, tady pro tebe nÄ™co mÃ¡m.
 	
 	B_GiveInvItems (self,other,ItRi_Addon_STR_01,1);
 	
-	B_LogEntry (TOPIC_Addon_ScoutBandits,"Âekl jsem Gregovi o zlatém dole.");	
+	B_LogEntry (TOPIC_Addon_ScoutBandits,"Ã‚ekl jsem Gregovi o zlatÃ©m dole.");	
 	
 	MIS_Greg_ScoutBandits = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Greg_ScoutBandits);
@@ -594,7 +594,7 @@ FUNC INT DIA_Addon_Greg_WhoAreYou_Condition()
 FUNC VOID DIA_Addon_Greg_WhoAreYou_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Greg_WhoAreYou_15_00"); //Kdo jsi?
-	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_01"); //Jsem Greg, velitel tıhle línı sebranky.
+	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_01"); //Jsem Greg, velitel tÃ½hle lÃ­nÃ½ sebranky.
 	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_02"); //Spokojenej?
 };
 
@@ -622,8 +622,8 @@ FUNC INT DIA_Addon_Greg_NiceToSeeYou_Condition()
 FUNC VOID DIA_Addon_Greg_NiceToSeeYou_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Greg_NiceToSeeYou_15_00"); //Tak jak ses sem dostal?
-	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_01"); //Mê si neèekal, co?
-	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_02"); //Tak abysme to uvedli na pravou míru. Jsem Greg a tady todle je mùj tábor.
+	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_01"); //MÄ™ si neÄekal, co?
+	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_02"); //Tak abysme to uvedli na pravou mÃ­ru. Jsem Greg a tady todle je mÅ¯j tÃ¡bor.
 	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_03"); //Spokojenej?
 };
 	
@@ -637,7 +637,7 @@ INSTANCE DIA_Addon_Greg_Story(C_INFO)
 	condition	= DIA_Addon_Greg_Story_Condition;
 	information	= DIA_Addon_Greg_Story_Info;
 	permanent	= TRUE;
-	description = "Ještê jedno bych rád vêdêl.";
+	description = "JeÅ¡tÄ™ jedno bych rÃ¡d vÄ™dÄ™l.";
 };                       
 FUNC INT DIA_Addon_Greg_Story_Condition()
 {
@@ -651,17 +651,17 @@ FUNC INT DIA_Addon_Greg_Story_Condition()
 
 FUNC VOID DIA_Addon_Greg_Story_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_15_00"); //Ještê jedno bych rád vêdêl.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_15_00"); //JeÅ¡tÄ™ jedno bych rÃ¡d vÄ™dÄ™l.
 	AI_Output (self ,other,"DIA_Addon_Greg_Story_01_01"); //Co?
 	
 	Info_ClearChoices (DIA_Addon_Greg_Story);
 	Info_AddChoice (DIA_Addon_Greg_Story,DIALOG_BACK,DIA_Addon_Greg_Story_Back);
 	Info_AddChoice (DIA_Addon_Greg_Story,"Jak ses sem dostal?",DIA_Addon_Greg_Story_Way);
-	Info_AddChoice (DIA_Addon_Greg_Story,"Kde máš svou loë?",DIA_Addon_Greg_Story_Ship);
+	Info_AddChoice (DIA_Addon_Greg_Story,"Kde mÃ¡Å¡ svou loÃ«?",DIA_Addon_Greg_Story_Ship);
 
 	if (RavenIsDead == FALSE)
 	{
-		Info_AddChoice (DIA_Addon_Greg_Story,"Co víš o Havranovi?",DIA_Addon_Greg_Story_Raven);
+		Info_AddChoice (DIA_Addon_Greg_Story,"Co vÃ­Å¡ o Havranovi?",DIA_Addon_Greg_Story_Raven);
 	};
 };	
 
@@ -673,28 +673,28 @@ FUNC VOID DIA_Addon_Greg_Story_Back()
 FUNC VOID DIA_Addon_Greg_Story_Way()
 {
 	AI_Output (other,self ,"DIA_Addon_Greg_Story_Way_15_00"); //Jak ses sem dostal?
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_01"); //U starı pyramidy jsem vobjevil tunel, kterej hlídalo pár mágù.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_02"); //Prostê jsem se kolem têch slepejšù proplíil.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_03"); //Napâed sem se dostal do starı pohâební komnaty. Tak jsem chtêl zjistit, esli by se mi tam nêco nehodilo.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_04"); //A dokáeš si pâedstavit to pâekvapení, kdy jsem se najednou vobjevil ve svım milovanım oudolí.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_05"); //Zrovna kdy jsem myslel, e a do smrti budu utíkat pâed domobranou.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_01"); //U starÃ½ pyramidy jsem vobjevil tunel, kterej hlÃ­dalo pÃ¡r mÃ¡gÅ¯.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_02"); //ProstÄ™ jsem se kolem tÄ™ch slepejÅ¡Å¯ proplÃ­Å¾il.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_03"); //NapÃ¢ed sem se dostal do starÃ½ pohÃ¢ebnÃ­ komnaty. Tak jsem chtÄ™l zjistit, esli by se mi tam nÄ™co nehodilo.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_04"); //A dokÃ¡Å¾eÅ¡ si pÃ¢edstavit to pÃ¢ekvapenÃ­, kdyÅ¾ jsem se najednou vobjevil ve svÃ½m milovanÃ½m oudolÃ­.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_05"); //Zrovna kdyÅ¾ jsem myslel, Å¾e aÅ¾ do smrti budu utÃ­kat pÃ¢ed domobranou.
 };
 
 FUNC VOID DIA_Addon_Greg_Story_Ship()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_00"); //Kde máš loë?
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_01"); //Takovı štêstí mùe potkat jenom mê. U pár mêsícù vodsuë na pevninu ádná loë nejela.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_02"); //Pár mêsícù! A první loë, na kterou jsem narazil, byla po zuby vozbrojená váleèná loë, co patâila králi.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_03"); //A byla plná paladinù, vod kılu a po stêeà.
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_04"); //Tak tomu âíkám smùla.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_05"); //To nemusíš âíkat dvakrát. Vokamitê nás potopili a já byl jedinej, kdo se dostal na pobâeí.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_00"); //Kde mÃ¡Å¡ loÃ«?
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_01"); //TakovÃ½ Å¡tÄ™stÃ­ mÅ¯Å¾e potkat jenom mÄ™. UÅ¾ pÃ¡r mÄ™sÃ­cÅ¯ vodsuÃ« na pevninu Å¾Ã¡dnÃ¡ loÃ« nejela.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_02"); //PÃ¡r mÄ™sÃ­cÅ¯! A prvnÃ­ loÃ«, na kterou jsem narazil, byla po zuby vozbrojenÃ¡ vÃ¡leÄnÃ¡ loÃ«, co patÃ¢ila krÃ¡li.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_03"); //A byla plnÃ¡ paladinÅ¯, vod kÃ½lu aÅ¾ po stÄ™Å¾eÅ•.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_04"); //Tak tomu Ã¢Ã­kÃ¡m smÅ¯la.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_05"); //To nemusÃ­Å¡ Ã¢Ã­kat dvakrÃ¡t. VokamÅ¾itÄ™ nÃ¡s potopili a jÃ¡ byl jedinej, kdo se dostal na pobÃ¢eÅ¾Ã­.
 };
 FUNC VOID DIA_Addon_Greg_Story_Raven()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_Raven_15_00"); //Co víš o Havranovi?
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_01"); //Pokud vim, tak to bejval rudobaron. Àákı velkı zvíâe z kolonie.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_02"); //Nemám tušáka, kde je teë a proè za nim lidi lozí.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_03"); //Ale urèitê po nêèem jde. Nejni z têch, co by se jen tak skovávali v bainê.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_Raven_15_00"); //Co vÃ­Å¡ o Havranovi?
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_01"); //Pokud vim, tak to bejval rudobaron. Å”Ã¡kÃ½ velkÃ½ zvÃ­Ã¢e z kolonie.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_02"); //NemÃ¡m tuÅ¡Ã¡ka, kde je teÃ« a proÄ za nim lidi lozÃ­.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_03"); //Ale urÄitÄ™ po nÄ™Äem jde. Nejni z tÄ™ch, co by se jen tak skovÃ¡vali v baÅ¾inÄ™.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -721,11 +721,11 @@ func int DIA_Addon_Greg_RavenDead_Condition ()
 func void DIA_Addon_Greg_RavenDead_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Greg_RavenDead_15_00"); //S Havranem je konec.
-	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_01"); //No, hmm... to sem neèekal. Si ho nachytal na švestkách, co?
-	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_02"); //To mi stojí za 500 zlaãákù.
+	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_01"); //No, hmm... to sem neÄekal. Si ho nachytal na Å¡vestkÃ¡ch, co?
+	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_02"); //To mi stojÃ­ za 500 zlaÄƒÃ¡kÅ¯.
 	CreateInvItems (self, ItMi_Gold, 500);									
 	B_GiveInvItems (self, other, ItMi_Gold, 500);		
-	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_03"); //Ty máš fakt kurá. Jen tak dál.
+	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_03"); //Ty mÃ¡Å¡ fakt kurÃ¡Å¾. Jen tak dÃ¡l.
 	B_GivePlayerXP (XP_ADDON_GregRavenLohn);
 };
 

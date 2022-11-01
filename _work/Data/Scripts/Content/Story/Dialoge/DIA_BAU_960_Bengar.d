@@ -34,7 +34,7 @@ instance DIA_Bengar_HALLO		(C_INFO)
 	condition	 = 	DIA_Bengar_HALLO_Condition;
 	information	 = 	DIA_Bengar_HALLO_Info;
 
-	description	 = 	"Ty jsi tady farmáâem?";
+	description	 = 	"Ty jsi tady farmÃ¡Ã¢em?";
 };
 
 func int DIA_Bengar_HALLO_Condition ()
@@ -47,9 +47,9 @@ func int DIA_Bengar_HALLO_Condition ()
 
 func void DIA_Bengar_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_HALLO_15_00"); //Ty jsi tady farmáâem?
-	AI_Output			(self, other, "DIA_Bengar_HALLO_10_01"); //Dalo by se to tak âíct, ale jsem jen nájemce.
-	AI_Output			(self, other, "DIA_Bengar_HALLO_10_02"); //Veškeré pozemky patâí velkostatkáâi.
+	AI_Output			(other, self, "DIA_Bengar_HALLO_15_00"); //Ty jsi tady farmÃ¡Ã¢em?
+	AI_Output			(self, other, "DIA_Bengar_HALLO_10_01"); //Dalo by se to tak Ã¢Ã­ct, ale jsem jen nÃ¡jemce.
+	AI_Output			(self, other, "DIA_Bengar_HALLO_10_02"); //VeÅ¡kerÃ© pozemky patÃ¢Ã­ velkostatkÃ¡Ã¢i.
 
 };
 
@@ -63,7 +63,7 @@ instance DIA_Bengar_WOVONLEBTIHR		(C_INFO)
 	condition	 = 	DIA_Bengar_WOVONLEBTIHR_Condition;
 	information	 = 	DIA_Bengar_WOVONLEBTIHR_Info;
 
-	description	 = 	"Jak si obstaráváš obivu?";
+	description	 = 	"Jak si obstarÃ¡vÃ¡Å¡ obÅ¾ivu?";
 };
 
 func int DIA_Bengar_WOVONLEBTIHR_Condition ()
@@ -77,9 +77,9 @@ func int DIA_Bengar_WOVONLEBTIHR_Condition ()
 
 func void DIA_Bengar_WOVONLEBTIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_WOVONLEBTIHR_15_00"); //Jak si obstaráváš obivu?
-	AI_Output			(self, other, "DIA_Bengar_WOVONLEBTIHR_10_01"); //Vêtšinou lovem a kácením stromù. Taky samozâejmê chováme ovce a obdêláváme pùdu.
-	AI_Output			(self, other, "DIA_Bengar_WOVONLEBTIHR_10_02"); //Onar mi sem poslal všechny tyhle lidi a já je musím ivit. A jen málo z nich umí vzít za práci, jak sis asi sám všiml.
+	AI_Output			(other, self, "DIA_Bengar_WOVONLEBTIHR_15_00"); //Jak si obstarÃ¡vÃ¡Å¡ obÅ¾ivu?
+	AI_Output			(self, other, "DIA_Bengar_WOVONLEBTIHR_10_01"); //VÄ™tÅ¡inou lovem a kÃ¡cenÃ­m stromÅ¯. Taky samozÃ¢ejmÄ™ chovÃ¡me ovce a obdÄ™lÃ¡vÃ¡me pÅ¯du.
+	AI_Output			(self, other, "DIA_Bengar_WOVONLEBTIHR_10_02"); //Onar mi sem poslal vÅ¡echny tyhle lidi a jÃ¡ je musÃ­m Å¾ivit. A jen mÃ¡lo z nich umÃ­ vzÃ­t za prÃ¡ci, jak sis asi sÃ¡m vÅ¡iml.
 
 };
 
@@ -94,7 +94,7 @@ instance DIA_Bengar_TAGELOEHNER		(C_INFO)
 	condition	 = 	DIA_Bengar_TAGELOEHNER_Condition;
 	information	 = 	DIA_Bengar_TAGELOEHNER_Info;
 
-	description	 = 	"Zamêstnáváš nádeníky?";
+	description	 = 	"ZamÄ™stnÃ¡vÃ¡Å¡ nÃ¡denÃ­ky?";
 };
 
 func int DIA_Bengar_TAGELOEHNER_Condition ()
@@ -108,9 +108,9 @@ func int DIA_Bengar_TAGELOEHNER_Condition ()
 
 func void DIA_Bengar_TAGELOEHNER_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_TAGELOEHNER_15_00"); //Zamêstnáváš nádeníky?
-	AI_Output			(self, other, "DIA_Bengar_TAGELOEHNER_10_01"); //Onar vyhodil lidi, co mu na jeho farmê nebyli k nièemu.
-	AI_Output			(self, other, "DIA_Bengar_TAGELOEHNER_10_02"); //Pak je poslal ke mnê. Dávám jim najíst a oni pro mê pracují.
+	AI_Output			(other, self, "DIA_Bengar_TAGELOEHNER_15_00"); //ZamÄ™stnÃ¡vÃ¡Å¡ nÃ¡denÃ­ky?
+	AI_Output			(self, other, "DIA_Bengar_TAGELOEHNER_10_01"); //Onar vyhodil lidi, co mu na jeho farmÄ™ nebyli k niÄemu.
+	AI_Output			(self, other, "DIA_Bengar_TAGELOEHNER_10_02"); //Pak je poslal ke mnÄ™. DÃ¡vÃ¡m jim najÃ­st a oni pro mÄ™ pracujÃ­.
 
 };
 
@@ -124,7 +124,7 @@ instance DIA_Addon_Bengar_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Bengar_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Bengar_MissingPeople_Info;
 
-	description	 = 	"Neudálo se tu poslední dobou nêco divného?";
+	description	 = 	"NeudÃ¡lo se tu poslednÃ­ dobou nÄ™co divnÃ©ho?";
 };
 
 func int DIA_Addon_Bengar_MissingPeople_Condition ()
@@ -138,55 +138,55 @@ func int DIA_Addon_Bengar_MissingPeople_Condition ()
 
 func void DIA_Addon_Bengar_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bengar_MissingPeople_15_00"); //Nesebêhlo se tu v poslední dobê nêco divného?
-	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_01"); //Poslední dobou se tu dêjí divné vêci.
-	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_02"); //Ale nic není divnêjšího ne to záhadné zmizení Parda.
-	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_03"); //Bıval jedním z dêlníkù na poli a rozhodnê nepatâil k têm, co by najednou se vším praštili, sebrali se a takhle utekli.
+	AI_Output	(other, self, "DIA_Addon_Bengar_MissingPeople_15_00"); //NesebÄ™hlo se tu v poslednÃ­ dobÄ™ nÄ™co divnÃ©ho?
+	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_01"); //PoslednÃ­ dobou se tu dÄ™jÃ­ divnÃ© vÄ™ci.
+	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_02"); //Ale nic nenÃ­ divnÄ™jÅ¡Ã­ho neÅ¾ to zÃ¡hadnÃ© zmizenÃ­ Parda.
+	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_03"); //BÃ½val jednÃ­m z dÄ™lnÃ­kÅ¯ na poli a rozhodnÄ™ nepatÃ¢il k tÄ™m, co by najednou se vÅ¡Ã­m praÅ¡tili, sebrali se a takhle utekli.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Sedlák Bengar postrádá svého èeledína Pardose."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"SedlÃ¡k Bengar postrÃ¡dÃ¡ svÃ©ho ÄeledÃ­na Pardose."); 
 
 	MIS_Bengar_BringMissPeopleBack = LOG_RUNNING;
 	B_GivePlayerXP (XP_Ambient);
 
 	Info_ClearChoices	(DIA_Addon_Bengar_MissingPeople);
 	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, DIALOG_BACK, DIA_Addon_Bengar_MissingPeople_back );
-	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Napadá tê, proè zmizel?", DIA_Addon_Bengar_MissingPeople_Hint );
-	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Moná u mêl prostê všeho dost.", DIA_Addon_Bengar_MissingPeople_voll );
-	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Co je na jeho zmizení tak divného?", DIA_Addon_Bengar_MissingPeople_was );
+	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "NapadÃ¡ tÄ™, proÄ zmizel?", DIA_Addon_Bengar_MissingPeople_Hint );
+	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "MoÅ¾nÃ¡ uÅ¾ mÄ™l prostÄ™ vÅ¡eho dost.", DIA_Addon_Bengar_MissingPeople_voll );
+	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Co je na jeho zmizenÃ­ tak divnÃ©ho?", DIA_Addon_Bengar_MissingPeople_was );
 };
 func void DIA_Addon_Bengar_MissingPeople_was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_00"); //Co pâesnê je na tom jeho zmizení divného?
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_01"); //Pardos je trochu bázlivı - jakiv nebyl dál ne na kraji mıch polí.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_02"); //Zdrhnul by, i kdyby nêkde zahlídnul ravou štênici.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_03"); //Na tu sice není pêknı pohled, ale rozhodnê se nedá âíct, e by šlo o nebezpeènou potvoru.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_04"); //(znechucenê) A to se prı najdou lidi, kteâí je jedí. Fuj tajbl.
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_05"); //Na to si zvykneš.
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_00"); //Co pÃ¢esnÄ™ je na tom jeho zmizenÃ­ divnÃ©ho?
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_01"); //Pardos je trochu bÃ¡zlivÃ½ - jakÅ¾iv nebyl dÃ¡l neÅ¾ na kraji mÃ½ch polÃ­.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_02"); //Zdrhnul by, i kdyby nÄ™kde zahlÃ­dnul Å¾ravou Å¡tÄ™nici.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_03"); //Na tu sice nenÃ­ pÄ™knÃ½ pohled, ale rozhodnÄ™ se nedÃ¡ Ã¢Ã­ct, Å¾e by Å¡lo o nebezpeÄnou potvoru.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_04"); //(znechucenÄ™) A to se prÃ½ najdou lidi, kteÃ¢Ã­ je jedÃ­. Fuj tajbl.
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_05"); //Na to si zvykneÅ¡.
 };
 func void DIA_Addon_Bengar_MissingPeople_voll ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_voll_15_00"); //Moná u toho mêl prostê plné zuby.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_01"); //On prací na polích il. Nedokáu si pâedstavit, e by utekl makat na jinı statek.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_02"); //U mê si mohl dêlat, co chtêl.
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_voll_15_00"); //MoÅ¾nÃ¡ uÅ¾ toho mÄ™l prostÄ™ plnÃ© zuby.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_01"); //On pracÃ­ na polÃ­ch Å¾il. NedokÃ¡Å¾u si pÃ¢edstavit, Å¾e by utekl makat na jinÃ½ statek.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_02"); //U mÄ™ si mohl dÄ™lat, co chtÄ™l.
 	
 };
 func void DIA_Addon_Bengar_MissingPeople_Hint ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_Hint_15_00"); //Máš nêjaké stopy?
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_01"); //Myslím, e ho museli odvléct ti banditi. U pár dní se tu potulovali kolem.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_02"); //Jednou jsem vidêl, jak do svého tábora táhli nêkoho z mêsta.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_03"); //Vypadalo to, e z nêj chtêjí udêlat otroka.
-	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Kde leí tábor banditù?", DIA_Addon_Bengar_MissingPeople_Lager );
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_Hint_15_00"); //MÃ¡Å¡ nÄ™jakÃ© stopy?
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_01"); //MyslÃ­m, Å¾e ho museli odvlÃ©ct ti banditi. UÅ¾ pÃ¡r dnÃ­ se tu potulovali kolem.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_02"); //Jednou jsem vidÄ™l, jak do svÃ©ho tÃ¡bora tÃ¡hli nÄ™koho z mÄ™sta.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_03"); //Vypadalo to, Å¾e z nÄ™j chtÄ™jÃ­ udÄ™lat otroka.
+	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Kde leÅ¾Ã­ tÃ¡bor banditÅ¯?", DIA_Addon_Bengar_MissingPeople_Lager );
 };
 var int Bengar_ToldAboutRangerBandits;
 func void DIA_Addon_Bengar_MissingPeople_Lager ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_Lager_15_00"); //Kde leí ten tábor banditù?
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_01"); //Na konci mıch polností jsou schody, které vedou do malého údolíèka. Tam se ti lapkové usadili.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_02"); //Moc rád bych si tam pro Parda zašel, ale já proti têm chlapùm nemám ádnou šanci.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_03"); //A ty by ses jim mêl taky na sto honù vyhnout. Nemají zrovna smysl pro humor.
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_Lager_15_00"); //Kde leÅ¾Ã­ ten tÃ¡bor banditÅ¯?
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_01"); //Na konci mÃ½ch polnostÃ­ jsou schody, kterÃ© vedou do malÃ©ho ÃºdolÃ­Äka. Tam se ti lapkovÃ© usadili.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_02"); //Moc rÃ¡d bych si tam pro Parda zaÅ¡el, ale jÃ¡ proti tÄ™m chlapÅ¯m nemÃ¡m Å¾Ã¡dnou Å¡anci.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_03"); //A ty by ses jim mÄ™l taky na sto honÅ¯ vyhnout. NemajÃ­ zrovna smysl pro humor.
 	Bengar_ToldAboutRangerBandits = TRUE;
 };
 func void DIA_Addon_Bengar_MissingPeople_back ()
@@ -203,7 +203,7 @@ instance DIA_Addon_Bengar_ReturnPardos		(C_INFO)
 	condition	 = 	DIA_Addon_Bengar_ReturnPardos_Condition;
 	information	 = 	DIA_Addon_Bengar_ReturnPardos_Info;
 
-	description	 = 	"Vrátil se Pardos zpátky?";
+	description	 = 	"VrÃ¡til se Pardos zpÃ¡tky?";
 };
 
 func int DIA_Addon_Bengar_ReturnPardos_Condition ()
@@ -218,11 +218,11 @@ func int DIA_Addon_Bengar_ReturnPardos_Condition ()
 
 func void DIA_Addon_Bengar_ReturnPardos_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_00"); //U se Pardos vrátil?
-	AI_Output	(self, other, "DIA_Addon_Bengar_ReturnPardos_10_01"); //Ano, u je doma a odpoèívá. Díky za všechno, co jsi...
-	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_02"); //To nestojí za âeè.
-	AI_Output	(self, other, "DIA_Addon_Bengar_ReturnPardos_10_03"); //Poèkej, chci se ti odmênit, ale nemám...
-	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_04"); //Kašli na to.
+	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_00"); //UÅ¾ se Pardos vrÃ¡til?
+	AI_Output	(self, other, "DIA_Addon_Bengar_ReturnPardos_10_01"); //Ano, uÅ¾ je doma a odpoÄÃ­vÃ¡. DÃ­ky za vÅ¡echno, co jsi...
+	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_02"); //To nestojÃ­ za Ã¢eÄ.
+	AI_Output	(self, other, "DIA_Addon_Bengar_ReturnPardos_10_03"); //PoÄkej, chci se ti odmÄ™nit, ale nemÃ¡m...
+	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_04"); //KaÅ¡li na to.
 	
 	B_GivePlayerXP (XP_Ambient);
 };	
@@ -237,7 +237,7 @@ instance DIA_Addon_Bengar_FernandosWeapons		(C_INFO)
 	condition	 = 	DIA_Addon_Bengar_FernandosWeapons_Condition;
 	information	 = 	DIA_Addon_Bengar_FernandosWeapons_Info;
 
-	description	 = 	"Kdy tudy ti bandité procházeli, mêli u sebe zbranê?";
+	description	 = 	"KdyÅ¾ tudy ti banditÃ© prochÃ¡zeli, mÄ™li u sebe zbranÄ™?";
 };
 
 func int DIA_Addon_Bengar_FernandosWeapons_Condition ()
@@ -251,11 +251,11 @@ func int DIA_Addon_Bengar_FernandosWeapons_Condition ()
 
 func void DIA_Addon_Bengar_FernandosWeapons_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_00"); //Kdy tudy ti bandité procházeli, nemêli u sebe nêjaké zbranê?
-	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_01"); //Co je to za hloupou otázku? Copak by tu banditi pobíhali jen tak beze zbraní?
-	AI_Output	(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_02"); //Myslím SPOUSTU zbraní. Velkou dodávku.
-	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_03"); //Chápu. Jo, kdy o tom mluvíš, tak toho vánê nesli hromady.
-	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_04"); //Nêco v sudech, nêco ve vacích a nêco i na vozech, které s sebou mêli.
+	AI_Output	(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_00"); //KdyÅ¾ tudy ti banditÃ© prochÃ¡zeli, nemÄ™li u sebe nÄ™jakÃ© zbranÄ™?
+	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_01"); //Co je to za hloupou otÃ¡zku? Copak by tu banditi pobÃ­hali jen tak beze zbranÃ­?
+	AI_Output	(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_02"); //MyslÃ­m SPOUSTU zbranÃ­. Velkou dodÃ¡vku.
+	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_03"); //ChÃ¡pu. Jo, kdyÅ¾ o tom mluvÃ­Å¡, tak toho vÃ¡Å¾nÄ™ nesli hromady.
+	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_04"); //NÄ™co v sudech, nÄ™co ve vacÃ­ch a nÄ™co i na vozech, kterÃ© s sebou mÄ™li.
 	 B_GivePlayerXP (XP_Ambient);
 };
 
@@ -269,7 +269,7 @@ instance DIA_Bengar_REBELLIEREN		(C_INFO)
 	condition	 = 	DIA_Bengar_REBELLIEREN_Condition;
 	information	 = 	DIA_Bengar_REBELLIEREN_Info;
 
-	description	 = 	"Co si myslíš o Onarovi?";
+	description	 = 	"Co si myslÃ­Å¡ o Onarovi?";
 };
 
 func int DIA_Bengar_REBELLIEREN_Condition ()
@@ -282,12 +282,12 @@ func int DIA_Bengar_REBELLIEREN_Condition ()
 
 func void DIA_Bengar_REBELLIEREN_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_REBELLIEREN_15_00"); //Co si myslíš o Onarovi?
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_01"); //Je to nenaranej parchant, co nás nakonec všechny dostane na šibenici.
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_02"); //Jednou sem paladinové z mêsta dorazí a kvùli tomu bastardovi nás porubají.
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_03"); //Ale já nemám na vıbêr. Domobrana si sem chodí jen proto, aby si odnesla naše zboí, ale chránit nás ji ani nenapadne.
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_04"); //Kdybych zùstal vêrnı mêstu, byl bych na to teë sám.
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_05"); //Kdy u nic jiného, Onar pošle pár svıch oldákù hned a pak, aby se podívali, jak jsme dopadli.
+	AI_Output (other, self, "DIA_Bengar_REBELLIEREN_15_00"); //Co si myslÃ­Å¡ o Onarovi?
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_01"); //Je to nenaÅ¾ranej parchant, co nÃ¡s nakonec vÅ¡echny dostane na Å¡ibenici.
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_02"); //Jednou sem paladinovÃ© z mÄ™sta dorazÃ­ a kvÅ¯li tomu bastardovi nÃ¡s porubajÃ­.
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_03"); //Ale jÃ¡ nemÃ¡m na vÃ½bÄ™r. Domobrana si sem chodÃ­ jen proto, aby si odnesla naÅ¡e zboÅ¾Ã­, ale chrÃ¡nit nÃ¡s ji ani nenapadne.
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_04"); //Kdybych zÅ¯stal vÄ™rnÃ½ mÄ™stu, byl bych na to teÃ« sÃ¡m.
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_05"); //KdyÅ¾ uÅ¾ nic jinÃ©ho, Onar poÅ¡le pÃ¡r svÃ½ch Å¾oldÃ¡kÅ¯ hned a pak, aby se podÃ­vali, jak jsme dopadli.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -300,7 +300,7 @@ instance DIA_Bengar_PALADINE		(C_INFO)
 	condition	 = 	DIA_Bengar_PALADINE_Condition;
 	information	 = 	DIA_Bengar_PALADINE_Info;
 
-	description	 = 	"Co máš proti královskım vojskùm?";
+	description	 = 	"Co mÃ¡Å¡ proti krÃ¡lovskÃ½m vojskÅ¯m?";
 };
 
 func int DIA_Bengar_PALADINE_Condition ()
@@ -314,11 +314,11 @@ func int DIA_Bengar_PALADINE_Condition ()
 
 func void DIA_Bengar_PALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_PALADINE_15_00"); //Co máš proti královskım vojskùm?
-	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_01"); //To je pâece jasnı. Od tı doby, co jsou paladinové ve mêstê, se nic nezlepšilo. Právê naopak.
-	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_02"); //Teë ti zatracení vojáci z domobrany pâicházejí na naše pozemky stále èastêji a kradou, co se jim zachce. A paladinové proti tomu nehnou ani prstem.
-	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_03"); //Jediní paladinové, které jsem kdy vidêl, jsou ti dva stráci u prùsmyku.
-	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_04"); //Nehodlají hnout ani prstem, dokud nás domobrana všechny nepovradí.
+	AI_Output			(other, self, "DIA_Bengar_PALADINE_15_00"); //Co mÃ¡Å¡ proti krÃ¡lovskÃ½m vojskÅ¯m?
+	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_01"); //To je pÃ¢ece jasnÃ½. Od tÃ½ doby, co jsou paladinovÃ© ve mÄ™stÄ™, se nic nezlepÅ¡ilo. PrÃ¡vÄ™ naopak.
+	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_02"); //TeÃ« ti zatracenÃ­ vojÃ¡ci z domobrany pÃ¢ichÃ¡zejÃ­ na naÅ¡e pozemky stÃ¡le ÄastÄ™ji a kradou, co se jim zachce. A paladinovÃ© proti tomu nehnou ani prstem.
+	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_03"); //JedinÃ­ paladinovÃ©, kterÃ© jsem kdy vidÄ™l, jsou ti dva strÃ¡Å¾ci u prÅ¯smyku.
+	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_04"); //NehodlajÃ­ hnout ani prstem, dokud nÃ¡s domobrana vÅ¡echny nepovraÅ¾dÃ­.
 
 };
 
@@ -332,7 +332,7 @@ instance DIA_Bengar_PASS		(C_INFO)
 	condition	 = 	DIA_Bengar_PASS_Condition;
 	information	 = 	DIA_Bengar_PASS_Info;
 
-	description	 = 	"Prùsmyk?";
+	description	 = 	"PrÅ¯smyk?";
 };
 
 func int DIA_Bengar_PASS_Condition ()
@@ -345,9 +345,9 @@ func int DIA_Bengar_PASS_Condition ()
 
 func void DIA_Bengar_PASS_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_PASS_15_00"); //U jakého prùsmyku?
-	AI_Output			(self, other, "DIA_Bengar_PASS_10_01"); //U prùsmyku do starého Hornického údolí u vodopádù na druhém konci náhorních pastvin.
-	AI_Output			(self, other, "DIA_Bengar_PASS_10_02"); //Zeptej se na to Malaka. Tenhle tıden má spoustu èasu.
+	AI_Output			(other, self, "DIA_Bengar_PASS_15_00"); //U jakÃ©ho prÅ¯smyku?
+	AI_Output			(self, other, "DIA_Bengar_PASS_10_01"); //U prÅ¯smyku do starÃ©ho HornickÃ©ho ÃºdolÃ­ u vodopÃ¡dÅ¯ na druhÃ©m konci nÃ¡hornÃ­ch pastvin.
+	AI_Output			(self, other, "DIA_Bengar_PASS_10_02"); //Zeptej se na to Malaka. Tenhle tÃ½den mÃ¡ spoustu Äasu.
 
 };
 
@@ -361,7 +361,7 @@ instance DIA_Bengar_MILIZ (C_INFO)
 	condition	= DIA_Bengar_MILIZ_Condition;
 	information	= DIA_Bengar_MILIZ_Info;
 	permanent 	= FALSE;
-	description	= "Âeknême, e se na ten váš problém s domobranou podívám.";
+	description	= "Ã‚eknÄ™me, Å¾e se na ten vÃ¡Å¡ problÃ©m s domobranou podÃ­vÃ¡m.";
 };
 
 func int DIA_Bengar_MILIZ_Condition ()
@@ -375,27 +375,27 @@ func int DIA_Bengar_MILIZ_Condition ()
 
 func void DIA_Bengar_MILIZ_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_MILIZ_15_00"); //Âeknême, e se na ten váš problém s domobranou podívám.
+	AI_Output (other, self, "DIA_Bengar_MILIZ_15_00"); //Ã‚eknÄ™me, Å¾e se na ten vÃ¡Å¡ problÃ©m s domobranou podÃ­vÃ¡m.
 		
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZ_10_01"); //Co? Âekl jsem Onarovi, e by mêl poslat pár OLDÁKÙ.
-		AI_Output (other, self, "DIA_Bengar_MILIZ_15_02"); //Je to pâíleitost, jak se pâesvêdèit o svıch kvalitách.
-		AI_Output (self, other, "DIA_Bengar_MILIZ_10_03"); //Vıbornê. Umíš si pâedstavit, co se mnou domobrana udêlá, kdy to zpackáš?
+		AI_Output (self, other, "DIA_Bengar_MILIZ_10_01"); //Co? Ã‚ekl jsem Onarovi, Å¾e by mÄ™l poslat pÃ¡r Å½OLDÃKÅ®.
+		AI_Output (other, self, "DIA_Bengar_MILIZ_15_02"); //Je to pÃ¢Ã­leÅ¾itost, jak se pÃ¢esvÄ™dÄit o svÃ½ch kvalitÃ¡ch.
+		AI_Output (self, other, "DIA_Bengar_MILIZ_10_03"); //VÃ½bornÄ™. UmÃ­Å¡ si pÃ¢edstavit, co se mnou domobrana udÄ™lÃ¡, kdyÅ¾ to zpackÃ¡Å¡?
 	}
 	else //SLD oder DJG
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZ_10_04"); //Nemêl jsem dojem, e by sem teë chtêl nêkdo z nich pâijít.
-		AI_Output (self, other, "DIA_Bengar_MILIZ_10_05"); //U jsem o tom Onarovi âíkal pâed pár dny. Za co mu tu rentu teda platím?
+		AI_Output (self, other, "DIA_Bengar_MILIZ_10_04"); //NemÄ™l jsem dojem, Å¾e by sem teÃ« chtÄ™l nÄ™kdo z nich pÃ¢ijÃ­t.
+		AI_Output (self, other, "DIA_Bengar_MILIZ_10_05"); //UÅ¾ jsem o tom Onarovi Ã¢Ã­kal pÃ¢ed pÃ¡r dny. Za co mu tu rentu teda platÃ­m?
 	};
 	
-	AI_Output (self, other, "DIA_Bengar_MILIZ_10_06"); //Ti bastardi sem chodí jednou do tıdne a vybírají danê pro mêsto.
-	AI_Output (self, other, "DIA_Bengar_MILIZ_10_07"); //Je fajn, es pâišel právê teë. V tuhle dobu obvykle pâicházejí.
-	AI_Output (self, other, "DIA_Bengar_MILIZ_10_08"); //Mêli by tu bıt kadou chvíli.
+	AI_Output (self, other, "DIA_Bengar_MILIZ_10_06"); //Ti bastardi sem chodÃ­ jednou do tÃ½dne a vybÃ­rajÃ­ danÄ™ pro mÄ™sto.
+	AI_Output (self, other, "DIA_Bengar_MILIZ_10_07"); //Je fajn, Å¾es pÃ¢iÅ¡el prÃ¡vÄ™ teÃ«. V tuhle dobu obvykle pÃ¢ichÃ¡zejÃ­.
+	AI_Output (self, other, "DIA_Bengar_MILIZ_10_08"); //MÄ™li by tu bÃ½t kaÅ¾dou chvÃ­li.
 };
 
 // ************************************************************
-// 			  				Selber vorknöpfen
+// 			  				Selber vorknÃ¶pfen
 // ************************************************************
 instance DIA_Bengar_Selber (C_INFO)
 {
@@ -404,7 +404,7 @@ instance DIA_Bengar_Selber (C_INFO)
 	condition	= DIA_Bengar_Selber_Condition;
 	information	= DIA_Bengar_Selber_Info;
 	permanent 	= FALSE;
-	description	= "A proè se tedy té domobranê nepostavíš sám?";
+	description	= "A proÄ se tedy tÃ© domobranÄ™ nepostavÃ­Å¡ sÃ¡m?";
 };
 
 func int DIA_Bengar_Selber_Condition ()
@@ -419,8 +419,8 @@ func int DIA_Bengar_Selber_Condition ()
 
 func void DIA_Bengar_Selber_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_Selber_15_00"); //Je vás tu tolik. Proè se domobranê prostê nepostavíte sami?
-	AI_Output (self, other, "DIA_Bengar_Selber_10_01"); //Je pravda, e nás tu je jak psù. Ale nemáme vıcvik na boj s domobranou.
+	AI_Output (other, self, "DIA_Bengar_Selber_15_00"); //Je vÃ¡s tu tolik. ProÄ se domobranÄ™ prostÄ™ nepostavÃ­te sami?
+	AI_Output (self, other, "DIA_Bengar_Selber_10_01"); //Je pravda, Å¾e nÃ¡s tu je jak psÅ¯. Ale nemÃ¡me vÃ½cvik na boj s domobranou.
 };		
 
 // ************************************************************
@@ -433,7 +433,7 @@ instance DIA_Bengar_MILIZKLATSCHEN		(C_INFO)
 	condition	= DIA_Bengar_MILIZKLATSCHEN_Condition;
 	information	= DIA_Bengar_MILIZKLATSCHEN_Info;
 	permanent	= FALSE;
-	description	= "Jen aã si teda domobrana dorazí, já u to s nimi vyâídím!";
+	description	= "Jen aÄƒ si teda domobrana dorazÃ­, jÃ¡ uÅ¾ to s nimi vyÃ¢Ã­dÃ­m!";
 };
 
 func int DIA_Bengar_MILIZKLATSCHEN_Condition ()
@@ -449,15 +449,15 @@ func int DIA_Bengar_MILIZKLATSCHEN_Condition ()
 
 func void DIA_Bengar_MILIZKLATSCHEN_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_MILIZKLATSCHEN_15_00"); //Jen aã si teda domobrana dorazí, já u to s nimi vyâídím!
-	AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_01"); //Nemùu se doèkat. U pâicházejí. Âíkal jsem ti to.
+	AI_Output (other, self, "DIA_Bengar_MILIZKLATSCHEN_15_00"); //Jen aÄƒ si teda domobrana dorazÃ­, jÃ¡ uÅ¾ to s nimi vyÃ¢Ã­dÃ­m!
+	AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_01"); //NemÅ¯Å¾u se doÄkat. UÅ¾ pÃ¢ichÃ¡zejÃ­. Ã‚Ã­kal jsem ti to.
 	if (other.guild == GIL_NONE)
 	{
 		AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_02"); //Jen to nezpackej!
 	}
 	else //SLD oder DJG
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_03"); //Tak dobrá, hodnê štêstí! Uka jim to.
+		AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_03"); //Tak dobrÃ¡, hodnÄ™ Å¡tÄ™stÃ­! UkaÅ¾ jim to.
 	};
 
 	AI_StopProcessInfos (self);
@@ -490,7 +490,7 @@ instance DIA_Bengar_MILIZWEG (C_INFO)
 	condition	= DIA_Bengar_MILIZWEG_Condition;
 	information	= DIA_Bengar_MILIZWEG_Info;
 	permanent	= TRUE;
-	description	= "Váš problém s domobranou u je minulostí.";
+	description	= "VÃ¡Å¡ problÃ©m s domobranou uÅ¾ je minulostÃ­.";
 };
 
 func int DIA_Bengar_MILIZWEG_Condition ()
@@ -508,20 +508,20 @@ func int DIA_Bengar_MILIZWEG_Condition ()
 
 func void DIA_Bengar_MILIZWEG_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_MILIZWEG_15_00"); //Váš problém s domobranou u je minulostí.
+	AI_Output (other, self, "DIA_Bengar_MILIZWEG_15_00"); //VÃ¡Å¡ problÃ©m s domobranou uÅ¾ je minulostÃ­.
 	if (Rumbold_Bezahlt == TRUE)
 	&& (Npc_IsDead (Rumbold) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_01"); //Jsi blázen? Víš, co mi ti chlapi udêlají, a odsud odejdeš?
-		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_02"); //Poâád tu okounêjí. Âekni jim, aã odtáhnou ÚPLNÊ!
+		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_01"); //Jsi blÃ¡zen? VÃ­Å¡, co mi ti chlapi udÄ™lajÃ­, aÅ¾ odsud odejdeÅ¡?
+		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_02"); //PoÃ¢Ã¡d tu okounÄ™jÃ­. Ã‚ekni jim, aÄƒ odtÃ¡hnou ÃšPLNÄ˜!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_03"); //To není špatné. Moná nám teë na konci mêsíce zbude nêco i pro obchod. Díky.
+		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_03"); //To nenÃ­ Å¡patnÃ©. MoÅ¾nÃ¡ nÃ¡m teÃ« na konci mÄ™sÃ­ce zbude nÄ™co i pro obchod. DÃ­ky.
 
 		if (Rumbold_Bezahlt == TRUE)
 		{		
-			AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_04"); //Dokonce jsi za mê chtêl zaplatit. To je od tebe velmi milé.
+			AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_04"); //Dokonce jsi za mÄ™ chtÄ™l zaplatit. To je od tebe velmi milÃ©.
 			B_GivePlayerXP (XP_Bengar_MILIZKLATSCHEN + 50);
 		}
 		else
@@ -544,7 +544,7 @@ instance DIA_Bengar_BALTHASAR		(C_INFO)
 	condition	 = 	DIA_Bengar_BALTHASAR_Condition;
 	information	 = 	DIA_Bengar_BALTHASAR_Info;
 
-	description	 = 	"Ovèák Balthazar na vaše pastviny nesmí?";
+	description	 = 	"OvÄÃ¡k Balthazar na vaÅ¡e pastviny nesmÃ­?";
 };
 
 func int DIA_Bengar_BALTHASAR_Condition ()
@@ -560,10 +560,10 @@ func int DIA_Bengar_BALTHASAR_Condition ()
 
 func void DIA_Bengar_BALTHASAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_BALTHASAR_15_00"); //Ovèák Balthazar na vaše pastviny nesmí?
-	AI_Output			(self, other, "DIA_Bengar_BALTHASAR_10_01"); //No, ano. To je takhle: Âekl jsem Sekobovi, e by mi mêl platit, kdy chce své ovce pást na mıch pozemcích.
-	AI_Output			(self, other, "DIA_Bengar_BALTHASAR_10_02"); //Ale pravda je, e jsem to âekl jen proto, aby u sem nechodil. Nemùu Balthazara vystát.
-	B_LogEntry (TOPIC_BalthasarsSchafe,"Mám-li pâesvêdèit Bengara, aby Balthazara pustil na své pastviny, musím mu uèinit laskavost. Urèitê se k tomu nêjaká pâíleitost naskytne."); 
+	AI_Output			(other, self, "DIA_Bengar_BALTHASAR_15_00"); //OvÄÃ¡k Balthazar na vaÅ¡e pastviny nesmÃ­?
+	AI_Output			(self, other, "DIA_Bengar_BALTHASAR_10_01"); //No, ano. To je takhle: Ã‚ekl jsem Sekobovi, Å¾e by mi mÄ™l platit, kdyÅ¾ chce svÃ© ovce pÃ¡st na mÃ½ch pozemcÃ­ch.
+	AI_Output			(self, other, "DIA_Bengar_BALTHASAR_10_02"); //Ale pravda je, Å¾e jsem to Ã¢ekl jen proto, aby uÅ¾ sem nechodil. NemÅ¯Å¾u Balthazara vystÃ¡t.
+	B_LogEntry (TOPIC_BalthasarsSchafe,"MÃ¡m-li pÃ¢esvÄ™dÄit Bengara, aby Balthazara pustil na svÃ© pastviny, musÃ­m mu uÄinit laskavost. UrÄitÄ™ se k tomu nÄ™jakÃ¡ pÃ¢Ã­leÅ¾itost naskytne."); 
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -577,7 +577,7 @@ instance DIA_Bengar_BALTHASARDARFAUFWEIDE		(C_INFO)
 	condition	 = 	DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition;
 	information	 = 	DIA_Bengar_BALTHASARDARFAUFWEIDE_Info;
 
-	description	 = 	"Domobrana je pryè a Balthazar mùe tvoji pastvinu znovu vyuívat.";
+	description	 = 	"Domobrana je pryÄ a Balthazar mÅ¯Å¾e tvoji pastvinu znovu vyuÅ¾Ã­vat.";
 };
 
 func int DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition ()
@@ -594,11 +594,11 @@ func int DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition ()
 
 func void DIA_Bengar_BALTHASARDARFAUFWEIDE_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00"); //Domobrana je pryè a Balthazar mùe tvoji pastvinu znovu vyuívat.
-	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01"); //Proè?
-	AI_Output			(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02"); //(vıhrunê) Protoe jsem to âekl.
-	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_03"); //Mmh. Dobrá, jak chceš.
-	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_04"); //Aã si najde místo pro svoje zvíâata nêkde mezi poli.
+	AI_Output			(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00"); //Domobrana je pryÄ a Balthazar mÅ¯Å¾e tvoji pastvinu znovu vyuÅ¾Ã­vat.
+	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01"); //ProÄ?
+	AI_Output			(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02"); //(vÃ½hruÅ¾nÄ™) ProtoÅ¾e jsem to Ã¢ekl.
+	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_03"); //Mmh. DobrÃ¡, jak chceÅ¡.
+	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_04"); //AÄƒ si najde mÃ­sto pro svoje zvÃ­Ã¢ata nÄ™kde mezi poli.
 
 	MIS_Balthasar_BengarsWeide = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
@@ -616,7 +616,7 @@ instance DIA_Bengar_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Bengar_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Dávej na sebe pozor.";
+	description	 = 	"DÃ¡vej na sebe pozor.";
 };
 
 func int DIA_Bengar_PERMKAP1_Condition ()
@@ -630,7 +630,7 @@ func int DIA_Bengar_PERMKAP1_Condition ()
 
 func void DIA_Bengar_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_PERMKAP1_15_00"); //Dávej na sebe pozor.
+	AI_Output			(other, self, "DIA_Bengar_PERMKAP1_15_00"); //DÃ¡vej na sebe pozor.
 	AI_Output			(self, other, "DIA_Bengar_PERMKAP1_10_01"); //Ty tady.
 
 	AI_StopProcessInfos (self);
@@ -694,28 +694,28 @@ func int DIA_Bengar_ALLEIN_Condition ()
 
 func void DIA_Bengar_ALLEIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_ALLEIN_15_00"); //Jak to vypadá?
+	AI_Output			(other, self, "DIA_Bengar_ALLEIN_15_00"); //Jak to vypadÃ¡?
 
 	if ((Malak_isAlive_Kap3 == TRUE) && ((Npc_GetDistToWP(Malak,"FARM3")<3000)== FALSE))
 	{
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_01"); //Malak zmizel a vzal s sebou všechno a kadého, kdo pro mê pracoval. Âíkal, e má namíâeno do hor.
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_02"); //U to tu nemohl vydret.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_01"); //Malak zmizel a vzal s sebou vÅ¡echno a kaÅ¾dÃ©ho, kdo pro mÄ™ pracoval. Ã‚Ã­kal, Å¾e mÃ¡ namÃ­Ã¢eno do hor.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_02"); //UÅ¾ to tu nemohl vydrÅ¾et.
 	MIS_GetMalakBack 		= LOG_RUNNING; 
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_03"); //Èasy jsou zlé. Nevím, jak dlouho tu ještê vydrím.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_03"); //ÄŒasy jsou zlÃ©. NevÃ­m, jak dlouho tu jeÅ¡tÄ™ vydrÅ¾Ã­m.
 	};
 	
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_04"); //Vytáèí mê, jak z prùsmyku teë proudí záplavy pâíšer, aby plundrovaly náhorní pastviny.
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_05"); //Kdybych tu tak alespoà mêl nêjakou pomoc do oldákù.
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_06"); //Jeden z nich se chystal, e pro mê bude pracovat. Asi zmênil názor. Mám dojem, e se jmenoval "Vlk".
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_04"); //VytÃ¡ÄÃ­ mÄ™, jak z prÅ¯smyku teÃ« proudÃ­ zÃ¡plavy pÃ¢Ã­Å¡er, aby plundrovaly nÃ¡hornÃ­ pastviny.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_05"); //Kdybych tu tak alespoÅ• mÄ™l nÄ™jakou pomoc do Å¾oldÃ¡kÅ¯.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_06"); //Jeden z nich se chystal, Å¾e pro mÄ™ bude pracovat. Asi zmÄ™nil nÃ¡zor. MÃ¡m dojem, Å¾e se jmenoval "Vlk".
 	MIS_BengarsHelpingSLD 	= LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_BengarALLEIN, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BengarALLEIN, LOG_RUNNING);
-	B_LogEntry (TOPIC_BengarALLEIN,"Bengar zùstal na svém statku docela sám. Jeho pâítel Malak zmizel a všichni ostatní odešli s ním. Podle Bengara se nejspíš uchılili do hor."); 
-	B_LogEntry (TOPIC_BengarALLEIN,"Jeho statek je teë úplnê nechránênı a potâebuje pomoc. Zmiàoval se o nêjakém oldnéâi jménem Vlk. Copak já toho chlápka neznám?"); 
+	B_LogEntry (TOPIC_BengarALLEIN,"Bengar zÅ¯stal na svÃ©m statku docela sÃ¡m. Jeho pÃ¢Ã­tel Malak zmizel a vÅ¡ichni ostatnÃ­ odeÅ¡li s nÃ­m. Podle Bengara se nejspÃ­Å¡ uchÃ½lili do hor."); 
+	B_LogEntry (TOPIC_BengarALLEIN,"Jeho statek je teÃ« ÃºplnÄ™ nechrÃ¡nÄ™nÃ½ a potÃ¢ebuje pomoc. ZmiÅ•oval se o nÄ™jakÃ©m Å¾oldnÃ©Ã¢i jmÃ©nem Vlk. Copak jÃ¡ toho chlÃ¡pka neznÃ¡m?"); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -728,7 +728,7 @@ instance DIA_Bengar_MALAKTOT		(C_INFO)
 	condition	 = 	DIA_Bengar_MALAKTOT_Condition;
 	information	 = 	DIA_Bengar_MALAKTOT_Info;
 
-	description	 = 	"Malak je mrtvı.";
+	description	 = 	"Malak je mrtvÃ½.";
 };
 
 func int DIA_Bengar_MALAKTOT_Condition ()
@@ -742,8 +742,8 @@ func int DIA_Bengar_MALAKTOT_Condition ()
 
 func void DIA_Bengar_MALAKTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_MALAKTOT_15_00"); //Malak je mrtvı.
-	AI_Output			(self, other, "DIA_Bengar_MALAKTOT_10_01"); //Teë se všechno obrací k horšímu.
+	AI_Output			(other, self, "DIA_Bengar_MALAKTOT_15_00"); //Malak je mrtvÃ½.
+	AI_Output			(self, other, "DIA_Bengar_MALAKTOT_10_01"); //TeÃ« se vÅ¡echno obracÃ­ k horÅ¡Ã­mu.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -756,7 +756,7 @@ instance DIA_Bengar_SLDDA		(C_INFO)
 	condition	 = 	DIA_Bengar_SLDDA_Condition;
 	information	 = 	DIA_Bengar_SLDDA_Info;
 
-	description	 = 	"Najal jsem ty oldáky, které jsi chtêl.";
+	description	 = 	"Najal jsem ty Å¾oldÃ¡ky, kterÃ© jsi chtÄ™l.";
 };
 
 func int DIA_Bengar_SLDDA_Condition ()
@@ -771,9 +771,9 @@ func int DIA_Bengar_SLDDA_Condition ()
 
 func void DIA_Bengar_SLDDA_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_SLDDA_15_00"); //Najal jsem ty oldáky, které jsi chtêl.
-	AI_Output			(self, other, "DIA_Bengar_SLDDA_10_01"); //Nikdy jsem na své farmê nikoho podobného nemêl. Jen doufám, e to bude fungovat.
-	AI_Output			(self, other, "DIA_Bengar_SLDDA_10_02"); //Tady, vezmi si tohle. Mám dojem, e se ti to bude hodit.
+	AI_Output			(other, self, "DIA_Bengar_SLDDA_15_00"); //Najal jsem ty Å¾oldÃ¡ky, kterÃ© jsi chtÄ™l.
+	AI_Output			(self, other, "DIA_Bengar_SLDDA_10_01"); //Nikdy jsem na svÃ© farmÄ™ nikoho podobnÃ©ho nemÄ™l. Jen doufÃ¡m, Å¾e to bude fungovat.
+	AI_Output			(self, other, "DIA_Bengar_SLDDA_10_02"); //Tady, vezmi si tohle. MÃ¡m dojem, Å¾e se ti to bude hodit.
 	CreateInvItems (self, ItMi_Gold, 400);									
 	B_GiveInvItems (self, other, ItMi_Gold, 400);
 	B_GivePlayerXP (XP_BengarsHelpingSLDArrived);
@@ -790,7 +790,7 @@ instance DIA_Bengar_MALAKWIEDERDA		(C_INFO)
 	condition	 = 	DIA_Bengar_MALAKWIEDERDA_Condition;
 	information	 = 	DIA_Bengar_MALAKWIEDERDA_Info;
 
-	description	 = 	"Malak se vrátil.";
+	description	 = 	"Malak se vrÃ¡til.";
 };
 
 func int DIA_Bengar_MALAKWIEDERDA_Condition ()
@@ -806,8 +806,8 @@ func int DIA_Bengar_MALAKWIEDERDA_Condition ()
 
 func void DIA_Bengar_MALAKWIEDERDA_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_MALAKWIEDERDA_15_00"); //Malak se vrátil.
-	AI_Output			(self, other, "DIA_Bengar_MALAKWIEDERDA_10_01"); //U bylo naèase. Myslel jsem, e u ho víckrát neuvidím.
+	AI_Output			(other, self, "DIA_Bengar_MALAKWIEDERDA_15_00"); //Malak se vrÃ¡til.
+	AI_Output			(self, other, "DIA_Bengar_MALAKWIEDERDA_10_01"); //UÅ¾ bylo naÄase. Myslel jsem, Å¾e uÅ¾ ho vÃ­ckrÃ¡t neuvidÃ­m.
 	B_GivePlayerXP (XP_GetMalakBack);
 };
 
@@ -822,7 +822,7 @@ instance DIA_Bengar_PERM		(C_INFO)
 	information	 = 	DIA_Bengar_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"To bude v poâádku.";
+	description	 = 	"To bude v poÃ¢Ã¡dku.";
 };
 
 func int DIA_Bengar_PERM_Condition ()
@@ -836,28 +836,28 @@ func int DIA_Bengar_PERM_Condition ()
 
 func void DIA_Bengar_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_PERM_15_00"); //To bude v poâádku.
+	AI_Output			(other, self, "DIA_Bengar_PERM_15_00"); //To bude v poÃ¢Ã¡dku.
 
 	if (Npc_GetDistToWP(Malak,"FARM3")<3000)
 	&& ((Npc_IsDead(Malak))==FALSE)
 	{
-		AI_Output			(self, other, "DIA_Bengar_PERM_10_01"); //Malak se sice vrátil, ale na situaci to moc nemêní.
-		AI_Output			(self, other, "DIA_Bengar_PERM_10_02"); //Pokud se nestane nêjakı zázrak, všichni to tu odskáèeme.
+		AI_Output			(self, other, "DIA_Bengar_PERM_10_01"); //Malak se sice vrÃ¡til, ale na situaci to moc nemÄ™nÃ­.
+		AI_Output			(self, other, "DIA_Bengar_PERM_10_02"); //Pokud se nestane nÄ™jakÃ½ zÃ¡zrak, vÅ¡ichni to tu odskÃ¡Äeme.
 	}
 	else if (Npc_KnowsInfo(other, DIA_Bengar_SLDDA))
 		&& ((Npc_IsDead(SLD_Wolf))==FALSE)
 		&& (Npc_GetDistToWP(SLD_Wolf,"FARM3")<3000)
 	{
-		AI_Output			(self, other, "DIA_Bengar_PERM_10_03"); //Vlk je divnej chlap, ale myslím, e to nêjak zvládneme.
+		AI_Output			(self, other, "DIA_Bengar_PERM_10_03"); //Vlk je divnej chlap, ale myslÃ­m, Å¾e to nÄ™jak zvlÃ¡dneme.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Bengar_PERM_10_04"); //Bez Malaka tu nic nefunguje. Jestli se brzy nêco nestane, vzdám se farmy.
+		AI_Output			(self, other, "DIA_Bengar_PERM_10_04"); //Bez Malaka tu nic nefunguje. Jestli se brzy nÄ™co nestane, vzdÃ¡m se farmy.
 
 		if (Malak_isAlive_Kap3 == TRUE)
 		&& ((Npc_IsDead(Malak))== FALSE)
 		{
-			AI_Output			(self, other, "DIA_Bengar_PERM_10_05"); //Snad se brzy vrátí.
+			AI_Output			(self, other, "DIA_Bengar_PERM_10_05"); //Snad se brzy vrÃ¡tÃ­.
 		};
 	};
 	AI_StopProcessInfos (self);
@@ -865,8 +865,8 @@ func void DIA_Bengar_PERM_Info ()
 	if (Npc_IsDead(SLD_Wolf))
 	&& (MIS_BengarsHelpingSLD == LOG_SUCCESS)
 	{
-	B_StartOtherRoutine	(SLD_815_Soeldner,"Zaèít");
-	B_StartOtherRoutine	(SLD_817_Soeldner,"Zaèít");
+	B_StartOtherRoutine	(SLD_815_Soeldner,"ZaÄÃ­t");
+	B_StartOtherRoutine	(SLD_817_Soeldner,"ZaÄÃ­t");
 	};
 };
 

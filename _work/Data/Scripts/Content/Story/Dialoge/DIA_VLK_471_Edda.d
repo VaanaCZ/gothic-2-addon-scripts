@@ -42,9 +42,9 @@ FUNC INT DIA_Edda_Hallo_Condition()
 };
 FUNC VOID DIA_Edda_Hallo_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Hallo_15_00"); //Co to tady vaâíš?
-	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //Rybí polívku. Není to ádná delikatesa, ale alespoà je horká.
-	AI_Output (self ,other,"DIA_Edda_Hallo_17_02"); //Mùeš ochutnat jeden talíâ, jestli máš zájem.
+	AI_Output (other ,self,"DIA_Edda_Hallo_15_00"); //Co to tady vaÃ¢Ã­Å¡?
+	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //RybÃ­ polÃ­vku. NenÃ­ to Å¾Ã¡dnÃ¡ delikatesa, ale alespoÅ• je horkÃ¡.
+	AI_Output (self ,other,"DIA_Edda_Hallo_17_02"); //MÅ¯Å¾eÅ¡ ochutnat jeden talÃ­Ã¢, jestli mÃ¡Å¡ zÃ¡jem.
 };
 
 // ************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_Edda_Stadt(C_INFO)
 	condition	= DIA_Edda_Stadt_Condition;
 	information	= DIA_Edda_Stadt_Info;
 	permanent	= FALSE;
-	description = "Co mi mùeš âíct o mêstê?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ct o mÄ™stÄ™?";
 };                       
 
 FUNC INT DIA_Edda_Stadt_Condition()
@@ -66,12 +66,12 @@ FUNC INT DIA_Edda_Stadt_Condition()
 };
 FUNC VOID DIA_Edda_Stadt_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Co mi mùeš âíct o mêstê?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //Vêtšina lidí z tohodle mêsta se bojí zlodêjù. Proto není zrovna dobrej nápad chodit do cizích domù.
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //Ale jestli hledáš místo, kde bys pâeèkal noc, mùeš se vyspat v mé chatrèi. Je tam jedna postel navíc, která mùe bejt tvoje.
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //Nemáš strach ze zlodêjù?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //Jedinou cennou vêc, kterou jsem kdy vlastnila, mi u stejnê ukradli.
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //Nêkdo mi ukradl Innosovu sošku.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ct o mÄ™stÄ™?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //VÄ™tÅ¡ina lidÃ­ z tohodle mÄ™sta se bojÃ­ zlodÄ™jÅ¯. Proto nenÃ­ zrovna dobrej nÃ¡pad chodit do cizÃ­ch domÅ¯.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //Ale jestli hledÃ¡Å¡ mÃ­sto, kde bys pÃ¢eÄkal noc, mÅ¯Å¾eÅ¡ se vyspat v mÃ© chatrÄi. Je tam jedna postel navÃ­c, kterÃ¡ mÅ¯Å¾e bejt tvoje.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //NemÃ¡Å¡ strach ze zlodÄ™jÅ¯?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //Jedinou cennou vÄ™c, kterou jsem kdy vlastnila, mi uÅ¾ stejnÄ™ ukradli.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //NÄ™kdo mi ukradl Innosovu soÅ¡ku.
 	
 	Edda_Schlafplatz = TRUE;
 	Wld_AssignRoomToGuild ("hafen08",	GIL_NONE);
@@ -86,7 +86,7 @@ INSTANCE DIA_Edda_Kochen(C_INFO)
 	condition	= DIA_Edda_Kochen_Condition;
 	information	= DIA_Edda_Kochen_Info;
 	permanent	= FALSE;
-	description = "Mùeš mi uvaâit trochu polévky?";
+	description = "MÅ¯Å¾eÅ¡ mi uvaÃ¢it trochu polÃ©vky?";
 };                       
 
 FUNC INT DIA_Edda_Kochen_Condition()
@@ -95,11 +95,11 @@ FUNC INT DIA_Edda_Kochen_Condition()
 };
 FUNC VOID DIA_Edda_Kochen_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //Mùeš mi uvaâit trochu polévky?
-	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //Uvaâím kadému. Tobê taky, jestli chceš. Jedinı, co musíš udêlat, je pâinıst mi rybu.
+	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //MÅ¯Å¾eÅ¡ mi uvaÃ¢it trochu polÃ©vky?
+	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //UvaÃ¢Ã­m kaÅ¾dÃ©mu. TobÄ™ taky, jestli chceÅ¡. JedinÃ½, co musÃ­Å¡ udÄ™lat, je pÃ¢inÃ½st mi rybu.
 };			
 // ************************************************************
-// 		tägliche Suppe abholen
+// 		tÃ¤gliche Suppe abholen
 // ************************************************************
 INSTANCE DIA_Edda_Suppe(C_INFO)
 {
@@ -108,7 +108,7 @@ INSTANCE DIA_Edda_Suppe(C_INFO)
 	condition	= DIA_Edda_Suppe_Condition;
 	information	= DIA_Edda_Suppe_Info;
 	permanent	= TRUE;
-	description = "Mùeš mi uvaâit trochu polévky?";
+	description = "MÅ¯Å¾eÅ¡ mi uvaÃ¢it trochu polÃ©vky?";
 };                       
 
 FUNC INT DIA_Edda_Suppe_Condition()
@@ -120,29 +120,29 @@ FUNC INT DIA_Edda_Suppe_Condition()
 };
 FUNC VOID DIA_Edda_Suppe_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Suppe_15_00"); //Mùeš mi uvaâit trochu polévky?
+	AI_Output (other ,self,"DIA_Edda_Suppe_15_00"); //MÅ¯Å¾eÅ¡ mi uvaÃ¢it trochu polÃ©vky?
 	
 	if (Wld_GetDay() == 0)
 	{
-		AI_Output (self ,other,"DIA_Edda_Suppe_17_02"); //Od zítâka mùeš kdykoli pâijít a dostat svou polívku.
+		AI_Output (self ,other,"DIA_Edda_Suppe_17_02"); //Od zÃ­tÃ¢ka mÅ¯Å¾eÅ¡ kdykoli pÃ¢ijÃ­t a dostat svou polÃ­vku.
 	}
 	else if (Edda_Day != Wld_GetDay())
 	{
 		if B_GiveInvItems (other, self, ItFo_Fish,1)
 		{
-			AI_Output (self ,other,"DIA_Edda_Suppe_17_01"); //Nemùe bıt nic snazšího. Tady, vezmi si talíâ.
+			AI_Output (self ,other,"DIA_Edda_Suppe_17_01"); //NemÅ¯Å¾e bÃ½t nic snazÅ¡Ã­ho. Tady, vezmi si talÃ­Ã¢.
 			B_GiveInvItems (self, other, ItFo_Fishsoup, 1);
 			Edda_Day = Wld_GetDay ();
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Edda_Suppe_17_04"); //Pâines mi nêjakou rybu a já ti uvaâím dobrou polívku.
+			AI_Output (self ,other,"DIA_Edda_Suppe_17_04"); //PÃ¢ines mi nÄ™jakou rybu a jÃ¡ ti uvaÃ¢Ã­m dobrou polÃ­vku.
 		};
 		
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Edda_Suppe_17_03"); //Ne, dneska ne. Vraã se zítra.
+		AI_Output (self ,other,"DIA_Edda_Suppe_17_03"); //Ne, dneska ne. VraÄƒ se zÃ­tra.
 	};
 };			
 // ************************************************************
@@ -155,7 +155,7 @@ INSTANCE DIA_Edda_Statue(C_INFO)
 	condition	= DIA_Edda_Statue_Condition;
 	information	= DIA_Edda_Statue_Info;
 	permanent	= FALSE;
-	description = "Hele, mám pro tebe Innosovu sošku.";
+	description = "Hele, mÃ¡m pro tebe Innosovu soÅ¡ku.";
 };                       
 FUNC INT DIA_Edda_Statue_Condition()
 {	
@@ -167,9 +167,9 @@ FUNC INT DIA_Edda_Statue_Condition()
 };
 FUNC VOID DIA_Edda_Statue_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Statue_15_00"); //Hele, mám pro tebe Innosovu sošku.
-	AI_Output (self ,other,"DIA_Edda_Statue_17_01"); //Ó - dêkuju mockrát. Aã nad tebou Innos drí své ochranné svêtlo.
-	AI_Output (other ,self,"DIA_Edda_Statue_15_02"); //Jo, klidnê.
+	AI_Output (other ,self,"DIA_Edda_Statue_15_00"); //Hele, mÃ¡m pro tebe Innosovu soÅ¡ku.
+	AI_Output (self ,other,"DIA_Edda_Statue_17_01"); //Ã“ - dÄ™kuju mockrÃ¡t. AÄƒ nad tebou Innos drÅ¾Ã­ svÃ© ochrannÃ© svÄ™tlo.
+	AI_Output (other ,self,"DIA_Edda_Statue_15_02"); //Jo, klidnÄ™.
 	
 	B_GiveInvItems (other, self,ItMI_InnosStatue, 1); 
 	B_GivePlayerXP (XP_Edda_Statue);
@@ -186,7 +186,7 @@ INSTANCE DIA_Edda_PICKPOCKET (C_INFO)
 	condition	= DIA_Edda_PICKPOCKET_Condition;
 	information	= DIA_Edda_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Její sošku by dokázalo ukrást i malé dêcko po obrnê.)";
+	description = "(JejÃ­ soÅ¡ku by dokÃ¡zalo ukrÃ¡st i malÃ© dÄ™cko po obrnÄ™.)";
 };                       
 
 FUNC INT DIA_Edda_PICKPOCKET_Condition()

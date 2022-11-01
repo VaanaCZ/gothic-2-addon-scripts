@@ -18,7 +18,7 @@ FUNC VOID DIA_Baltram_EXIT_Info()
 {
 	AI_StopProcessInfos (self);
 };
-///////////////////////////////////////////////////////////////////////AUSKOMMENTIERT WEGEN ADDON M.F. (Missionen passen nicht mehr, Spielfluﬂ hemmend)
+///////////////////////////////////////////////////////////////////////AUSKOMMENTIERT WEGEN ADDON M.F. (Missionen passen nicht mehr, Spielflu√ü hemmend)
 //	Info Sperre
 ///////////////////////////////////////////////////////////////////////
 /*
@@ -43,7 +43,7 @@ func int DIA_Baltram_Sperre_Condition ()
 };
 func void DIA_Baltram_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Baltram_Sperre_01_00"); //Was willst du? Du bist ein Str‰fling aus der Minenkolonie. Mit dir mache ich keine Gesch‰fte!
+	AI_Output (self, other, "DIA_Baltram_Sperre_01_00"); //Was willst du? Du bist ein Str√§fling aus der Minenkolonie. Mit dir mache ich keine Gesch√§fte!
 	AI_StopProcessInfos (self);	 
 };
 */
@@ -74,14 +74,14 @@ func void DIA_Baltram_Hallo_Info ()
 	if (hero.guild != GIL_SLD)
 	&& (hero.guild != GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_00"); //VÌtej, cizinËe, jmenuji se Baltram. P‚iöel ses z·sobit jÌdlem?
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_01"); //Ob·v·m se, ûe tÍ zklamu. Moc toho pr·vÍ teÎ na skladÍ nem·m.
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_02"); //Ale kaûd˝m dnem bych mÍl dostat novÈ zboûÌ.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_00"); //V√≠tej, cizinƒçe, jmenuji se Baltram. P√¢i≈°el ses z√°sobit j√≠dlem?
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_01"); //Ob√°v√°m se, ≈æe tƒô zklamu. Moc toho pr√°vƒô te√´ na skladƒô nem√°m.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_02"); //Ale ka≈æd√Ωm dnem bych mƒôl dostat nov√© zbo≈æ√≠.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_03"); //Pokud jsi u mÍ chtÍl nakoupit jÌdlo, m˘ûeö jÌt klidnÍ zase pryË.
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_04"); //NemyslÌm si o v·s ûold·cÌch nic dobrÈho! Zp˘sobujete jen samÈ problÈmy.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_03"); //Pokud jsi u mƒô chtƒôl nakoupit j√≠dlo, m≈Ø≈æe≈° j√≠t klidnƒô zase pryƒç.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_04"); //Nemysl√≠m si o v√°s ≈æold√°c√≠ch nic dobr√©ho! Zp≈Øsobujete jen sam√© probl√©my.
 	};
 };
 
@@ -110,16 +110,16 @@ func int DIA_Addon_Baltram_LaresAbloese_Condition ()
 
 func void DIA_Addon_Baltram_LaresAbloese_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_00"); //ProË se tv·‚Ìö tak pochybovaËnÍ?
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_01"); //VidÌm, ûe neseö znamenÌ kruhu vody.
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_02"); //Takûe ty k nim taky pat‚Ìö?
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_03"); //A co kdyû ano?
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_04"); //Pak bych ti mÍl ‚Ìct, ûe Lares by pot‚eboval, aby ho nÍkdo tam dole v p‚Ìstavu nahradil.
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_05"); //Fajn, kdyû je to tak, postar·m se, aby se toho nÍkdo ujal.
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_06"); //Ch·pu.
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_00"); //Proƒç se tv√°√¢√≠≈° tak pochybovaƒçnƒô?
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_01"); //Vid√≠m, ≈æe nese≈° znamen√≠ kruhu vody.
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_02"); //Tak≈æe ty k nim taky pat√¢√≠≈°?
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_03"); //A co kdy≈æ ano?
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_04"); //Pak bych ti mƒôl √¢√≠ct, ≈æe Lares by pot√¢eboval, aby ho nƒôkdo tam dole v p√¢√≠stavu nahradil.
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_05"); //Fajn, kdy≈æ je to tak, postar√°m se, aby se toho nƒôkdo ujal.
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_06"); //Ch√°pu.
 	B_GivePlayerXP (XP_Ambient);
 
-	B_LogEntry (TOPIC_Addon_BringRangerToLares,"Baltram, obchodnÌk z trûiötÍ, je ochoten vyst‚Ìdat Larese. Snad uû tedy koneËnÍ bude moci opustit p‚Ìstav."); 
+	B_LogEntry (TOPIC_Addon_BringRangerToLares,"Baltram, obchodn√≠k z tr≈æi≈°tƒô, je ochoten vyst√¢√≠dat Larese. Snad u≈æ tedy koneƒçnƒô bude moci opustit p√¢√≠stav."); 
 
 	SC_KnowsBaltramAsRanger = TRUE;
 	Baltram_Exchange4Lares = TRUE;
@@ -135,7 +135,7 @@ instance DIA_Baltram_Job		(C_INFO)
 	condition	 = 	DIA_Baltram_Job_Condition;
 	information	 = 	DIA_Baltram_Job_Info;
 	permanent	 =  FALSE;
-	description  =  "M·ö pro mÍ pr·ci?";
+	description  =  "M√°≈° pro mƒô pr√°ci?";
 };
 func int DIA_Baltram_Job_Condition ()
 {
@@ -148,8 +148,8 @@ func int DIA_Baltram_Job_Condition ()
 };
 func void DIA_Baltram_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_Job_15_00"); //M·ö pro mÍ pr·ci?
-	AI_Output (self, other, "DIA_Baltram_Job_01_01"); //Ne, poslÌËka uû m·m. Zkus to u jinÈho obchodnÌka.
+	AI_Output (other, self, "DIA_Baltram_Job_15_00"); //M√°≈° pro mƒô pr√°ci?
+	AI_Output (self, other, "DIA_Baltram_Job_01_01"); //Ne, posl√≠ƒçka u≈æ m√°m. Zkus to u jin√©ho obchodn√≠ka.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Trick
@@ -173,20 +173,20 @@ func int DIA_Baltram_Trick_Condition ()
 };
 func void DIA_Baltram_Trick_Info ()
 {
-	AI_Output (self, other, "DIA_Baltram_Trick_01_00"); //Hled·ö pr·ci?
-	AI_Output (other, self, "DIA_Baltram_Trick_15_01"); //JasnÍ, o co jde?
-	AI_Output (self, other, "DIA_Baltram_Trick_01_02"); //M˘j poslÌËek se jeötÍ nevr·til zp·tky a j· Ëek·m dod·vku od farm·‚e Akila.
-	AI_Output (other, self, "DIA_Baltram_Trick_15_03"); //A kolik mi za to d·ö?
-	AI_Output (self, other, "DIA_Baltram_Trick_01_04"); //D·m ti 50 zla„·k˘.
-	AI_Output (other, self, "DIA_Baltram_Trick_15_05"); //Dobr·, to beru.
-	AI_Output (self, other, "DIA_Baltram_Trick_01_06"); //Dobr·, jenom ‚ekni Akilovi, ûe tÍ posÌl·m. D· ti balÌk. P‚ines mi ho.
+	AI_Output (self, other, "DIA_Baltram_Trick_01_00"); //Hled√°≈° pr√°ci?
+	AI_Output (other, self, "DIA_Baltram_Trick_15_01"); //Jasnƒô, o co jde?
+	AI_Output (self, other, "DIA_Baltram_Trick_01_02"); //M≈Øj posl√≠ƒçek se je≈°tƒô nevr√°til zp√°tky a j√° ƒçek√°m dod√°vku od farm√°√¢e Akila.
+	AI_Output (other, self, "DIA_Baltram_Trick_15_03"); //A kolik mi za to d√°≈°?
+	AI_Output (self, other, "DIA_Baltram_Trick_01_04"); //D√°m ti 50 zlaƒÉ√°k≈Ø.
+	AI_Output (other, self, "DIA_Baltram_Trick_15_05"); //Dobr√°, to beru.
+	AI_Output (self, other, "DIA_Baltram_Trick_01_06"); //Dobr√°, jenom √¢ekni Akilovi, ≈æe tƒô pos√≠l√°m. D√° ti bal√≠k. P√¢ines mi ho.
 	
 	MIS_Baltram_ScoutAkil = LOG_RUNNING;
-	B_LogEntry (TOPIC_Nagur,"Baltram mÍ zamÍstnal jako poslÌËka. M·m mu p‚inÈst nÍjakou z·silku z Akilova statku.");
+	B_LogEntry (TOPIC_Nagur,"Baltram mƒô zamƒôstnal jako posl√≠ƒçka. M√°m mu p√¢in√©st nƒôjakou z√°silku z Akilova statku.");
 	
 	Log_CreateTopic (TOPIC_Baltram,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Baltram,LOG_RUNNING);
-	B_LogEntry (TOPIC_Baltram, "Kdyû Beltramovi doruËÌm jeho z·silku, zaplatÌ mi 50 zla„·k˘.");
+	B_LogEntry (TOPIC_Baltram, "Kdy≈æ Beltramovi doruƒç√≠m jeho z√°silku, zaplat√≠ mi 50 zlaƒÉ√°k≈Ø.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WAREZ
@@ -201,7 +201,7 @@ instance DIA_Baltram_WAREZ		(C_INFO)
 	information	 = 	DIA_Baltram_WAREZ_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Ukaû mi svÈ zboûÌ.";
+	description	 = 	"Uka≈æ mi sv√© zbo≈æ√≠.";
 };
 
 func int DIA_Baltram_WAREZ_Condition ()
@@ -211,29 +211,29 @@ func int DIA_Baltram_WAREZ_Condition ()
 func void DIA_Baltram_WAREZ_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self,"DIA_Baltram_WAREZ_15_00"); //Ukaû mi svÈ zboûÌ.
+	AI_Output (other, self,"DIA_Baltram_WAREZ_15_00"); //Uka≈æ mi sv√© zbo≈æ√≠.
 	
 	if (Baltram_TradeLOG == FALSE)
 	{
 		Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-		B_LogEntry (Topic_CityTrader,"Baltram prod·v· na trûiöti potraviny.");
+		B_LogEntry (Topic_CityTrader,"Baltram prod√°v√° na tr≈æi≈°ti potraviny.");
 		Baltram_TradeLOG = TRUE;
 	};
 	
 	if (Kapitel == 3)
 	&& (MIS_RescueBennet != LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_01"); //NemÍli to nechat dojÌt tak daleko. TeÎ jeden ze ûold·k˘ zavraûdil paladina.
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_02"); //NÍco by se mÍlo st·t!
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_01"); //Nemƒôli to nechat doj√≠t tak daleko. Te√´ jeden ze ≈æold√°k≈Ø zavra≈ædil paladina.
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_02"); //Nƒôco by se mƒôlo st√°t!
 	};
 	if ((MIS_BaltramTrade != LOG_SUCCESS)
 	&& ((hero.guild == GIL_SLD)
 	||  (hero.guild == GIL_DJG)))
 	{
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_03"); //LidÈ jako ty ode mÍ nic nedostanou.
-		AI_Output (other, self,"DIA_Baltram_WAREZ_15_04"); //ProË?
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_05"); //Nejd‚Ìv znesv·‚Ìte farm·‚e a potom dÍl·te, jako by se nic nestalo.
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_06"); //TeÎ vypadni, odh·nÌö mi z·kaznÌky.
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_03"); //Lid√© jako ty ode mƒô nic nedostanou.
+		AI_Output (other, self,"DIA_Baltram_WAREZ_15_04"); //Proƒç?
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_05"); //Nejd√¢√≠v znesv√°√¢√≠te farm√°√¢e a potom dƒôl√°te, jako by se nic nestalo.
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_06"); //Te√´ vypadni, odh√°n√≠≈° mi z√°kazn√≠ky.
 		
 		MIS_BaltramTrade = LOG_FAILED;
 		
@@ -251,7 +251,7 @@ instance DIA_Addon_Baltram_Skip		(C_INFO)
 	condition	 = 	DIA_Addon_Baltram_Skip_Condition;
 	information	 = 	DIA_Addon_Baltram_Skip_Info;
 
-	description	 = 	"Ty obchodujeö s pir·ty?";
+	description	 = 	"Ty obchoduje≈° s pir√°ty?";
 };
 
 func int DIA_Addon_Baltram_Skip_Condition ()
@@ -264,73 +264,73 @@ func int DIA_Addon_Baltram_Skip_Condition ()
 
 func void DIA_Addon_Baltram_Skip_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_00"); //(bezstarostnÍ) Tak ty obchodujeö s pir·ty?
-	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_01"); //(cÌtÌ se zaskoËen) Coûe? Kdo to tvrdÌ?
-	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_02"); //S jednÌm z nich jsem mluvil. »ekal na tebe v z·toce.
-	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_03"); //Co m˘ûu dÍlat? Doba je tÍûk· a kaûd˝ si musÌ hledÍt hlavnÍ svÈho.
+	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_00"); //(bezstarostnƒô) Tak ty obchoduje≈° s pir√°ty?
+	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_01"); //(c√≠t√≠ se zaskoƒçen) Co≈æe? Kdo to tvrd√≠?
+	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_02"); //S jedn√≠m z nich jsem mluvil. ƒåekal na tebe v z√°toce.
+	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_03"); //Co m≈Ø≈æu dƒôlat? Doba je tƒô≈æk√° a ka≈æd√Ω si mus√≠ hledƒôt hlavnƒô sv√©ho.
 	
 	Info_ClearChoices	(DIA_Addon_Baltram_Skip);
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "To ses neb·l, ûe tÍ chytÌ?", DIA_Addon_Baltram_Skip_erwischen );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Tohle si po‚·dnÍ odsk·Ëeö!", DIA_Addon_Baltram_Skip_MIL );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "To ses neb√°l, ≈æe tƒô chyt√≠?", DIA_Addon_Baltram_Skip_erwischen );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Tohle si po√¢√°dnƒô odsk√°ƒçe≈°!", DIA_Addon_Baltram_Skip_MIL );
 };
 func void DIA_Addon_Baltram_Skip_Back ()
 {
-	AI_Output (other, self, "DIA_Addon_Baltram_Skip_Back_15_00"); //To je vöecko, co jsem chtÍl vÍdÍt.
+	AI_Output (other, self, "DIA_Addon_Baltram_Skip_Back_15_00"); //To je v≈°ecko, co jsem chtƒôl vƒôdƒôt.
 	Info_ClearChoices	(DIA_Addon_Baltram_Skip);
 };
 
 func void DIA_Addon_Baltram_Skip_MIL ()
 {
-	AI_Output (other, self, "DIA_Addon_Baltram_Skip_MIL_15_00"); //Tak tohle si po‚·dnÍ odsk·Ëeö!
-	AI_Output (self, other, "DIA_Addon_Baltram_Skip_MIL_01_01"); //Hele, poslouchej. PovÌm ti, co vÌm, a ty to na mÍ na opl·tku nepr·skneö, ok?
+	AI_Output (other, self, "DIA_Addon_Baltram_Skip_MIL_15_00"); //Tak tohle si po√¢√°dnƒô odsk√°ƒçe≈°!
+	AI_Output (self, other, "DIA_Addon_Baltram_Skip_MIL_01_01"); //Hele, poslouchej. Pov√≠m ti, co v√≠m, a ty to na mƒô na opl√°tku nepr√°skne≈°, ok?
 	
 	Info_ClearChoices (DIA_Addon_Baltram_Skip);
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Co prod·v·ö?", DIA_Addon_Baltram_Skip_was );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Co vÌö o pir·tech?", DIA_Addon_Baltram_Skip_pirat );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Co prod√°v√°≈°?", DIA_Addon_Baltram_Skip_was );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Co v√≠≈° o pir√°tech?", DIA_Addon_Baltram_Skip_pirat );
 };
 
 func void DIA_Addon_Baltram_Skip_erwischen ()
 {
-	AI_Output (other, self, "DIA_Addon_Baltram_Skip_erwischen_15_00"); //Copak se nebojÌö, ûe tÍ chytnou?
-	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_01"); //To by se mohlo st·t. Vûdy„ tys na to taky p‚iöel, ûe jo?
-	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_02"); //Ale budeö drûet jazyk za zuby, viÎ?
+	AI_Output (other, self, "DIA_Addon_Baltram_Skip_erwischen_15_00"); //Copak se neboj√≠≈°, ≈æe tƒô chytnou?
+	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_01"); //To by se mohlo st√°t. V≈ædyƒÉ tys na to taky p√¢i≈°el, ≈æe jo?
+	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_02"); //Ale bude≈° dr≈æet jazyk za zuby, vi√´?
 	
 	Info_ClearChoices	(DIA_Addon_Baltram_Skip);
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Co m·ö na prodej?", DIA_Addon_Baltram_Skip_was );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Co vÌö o pir·tech?", DIA_Addon_Baltram_Skip_pirat );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Co m√°≈° na prodej?", DIA_Addon_Baltram_Skip_was );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Co v√≠≈° o pir√°tech?", DIA_Addon_Baltram_Skip_pirat );
 };
 
 func void DIA_Addon_Baltram_Skip_was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_was_15_00"); //(odmÍ‚enÍ) Co jim to prod·v·ö?
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_01"); //VÍtöinou je z·sobuju jÌdlem.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_02"); //A za to mi d·vajÌ nejlepöÌ rum, jak˝ se d· v Khorinidu sehnat.
+	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_was_15_00"); //(odmƒô√¢enƒô) Co jim to prod√°v√°≈°?
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_01"); //Vƒôt≈°inou je z√°sobuju j√≠dlem.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_02"); //A za to mi d√°vaj√≠ nejlep≈°√≠ rum, jak√Ω se d√° v Khorinidu sehnat.
 	
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "VÌc uû vÍdÍt nepot‚ebuju.", DIA_Addon_Baltram_Skip_Back );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "M˘ûu to pro tebe za‚Ìdit.", DIA_Addon_Baltram_Skip_Ich );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "V√≠c u≈æ vƒôdƒôt nepot√¢ebuju.", DIA_Addon_Baltram_Skip_Back );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "M≈Ø≈æu to pro tebe za√¢√≠dit.", DIA_Addon_Baltram_Skip_Ich );
 };
 
 func void DIA_Addon_Baltram_Skip_Ich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_Ich_15_00"); //(s ˙öklebkem) Mohl bych to obstarat za tebe.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_01"); //To by bylo skvÍlÈ. V tÈhle chvÌli se nem˘ûu z Khorinidu hnout.
+	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_Ich_15_00"); //(s √∫≈°klebkem) Mohl bych to obstarat za tebe.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_01"); //To by bylo skvƒôl√©. V t√©hle chv√≠li se nem≈Ø≈æu z Khorinidu hnout.
 	CreateInvItems (self, ItMi_Packet_Baltram4Skip_Addon, 1);									
 	B_GiveInvItems (self, other, ItMi_Packet_Baltram4Skip_Addon, 1);		
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_02"); //Tak si vem tenhle balÌk a dohlÌdni na to, aby Skip tentokr·t s tÌm sv˝m rumem tolik neskrblil.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_03"); //MÍl by ti za to d·t aspo‡ 3 lahve.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_02"); //Tak si vem tenhle bal√≠k a dohl√≠dni na to, aby Skip tentokr√°t s t√≠m sv√Ωm rumem tolik neskrblil.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_03"); //Mƒôl by ti za to d√°t aspo≈ï 3 lahve.
 	
-	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,"Baltram mi p‚edal balÌk, kter˝ m·m odnÈst Skipovi."); 
+	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,"Baltram mi p√¢edal bal√≠k, kter√Ω m√°m odn√©st Skipovi."); 
 	
 	MIS_Addon_Baltram_Paket4Skip = LOG_RUNNING;
 };
 
 func void DIA_Addon_Baltram_Skip_pirat ()
 {
-	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_pirat_15_00"); //(odmÍ‚enÍ) Co vÌö o pir·tech?
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_01"); //(rychle) éijÌ v odlehlÈ Ë·sti ostrova Khorinidu.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_02"); //Pokud vÌm, d· se tam dostat jenom lodÌ.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_03"); //Lidi z Khorinidu se jich bojÌ, a majÌ pravdu. Je to banda pÍknÍ hnusn˝ch hrdlo‚ez˘.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_04"); //Ale podle mÈho nejsou ani zpoloviny tak zlÌ jako banditi.
+	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_pirat_15_00"); //(odmƒô√¢enƒô) Co v√≠≈° o pir√°tech?
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_01"); //(rychle) ≈Ωij√≠ v odlehl√© ƒç√°sti ostrova Khorinidu.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_02"); //Pokud v√≠m, d√° se tam dostat jenom lod√≠.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_03"); //Lidi z Khorinidu se jich boj√≠, a maj√≠ pravdu. Je to banda pƒôknƒô hnusn√Ωch hrdlo√¢ez≈Ø.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_04"); //Ale podle m√©ho nejsou ani zpoloviny tak zl√≠ jako banditi.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -360,9 +360,9 @@ func int DIA_Addon_Baltram_SkipsRum_Condition ()
 func void DIA_Addon_Baltram_SkipsRum_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Baltram_SkipsRum_15_00"); //Nesu ti od Skipa ten rum. Ale dal mi jenom 2 lahve.
-	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_01"); //(rozËilenÍ) Ten lakomec lakom·! Kdo si myslÌ, ûe je? No, tak je sem dej.
+	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_01"); //(rozƒçilenƒô) Ten lakomec lakom√°! Kdo si mysl√≠, ≈æe je? No, tak je sem dej.
 	B_GiveInvItems (other, self, ItFo_Addon_Rum,2); 
-	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_02"); //Moc ti zatÌm d·t nem˘ûu. Tohle ti musÌ staËit.
+	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_02"); //Moc ti zat√≠m d√°t nem≈Ø≈æu. Tohle ti mus√≠ staƒçit.
 	CreateInvItems (self, ItMi_Gold, 10);									
 	B_GiveInvItems (self, other, ItMi_Gold, 10);		
 
@@ -393,8 +393,8 @@ func int DIA_Baltram_AkilsHof_Condition ()
 func void DIA_Baltram_AkilsHof_Info ()
 {
 	AI_Output (other, self, "DIA_Baltram_AkilsHof_15_00"); //Kde najdu Akilovu farmu?
-	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_01"); //Projdi v˝chodnÌ branou a drû se cesty vedoucÌ na jihov˝chod.
-	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_02"); //Po chvÌli p‚ijdeö ke kamennÈmu schodiöti. Vyjdi nahoru a odtud uû uvidÌö Akilovu farmu.
+	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_01"); //Projdi v√Ωchodn√≠ branou a dr≈æ se cesty vedouc√≠ na jihov√Ωchod.
+	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_02"); //Po chv√≠li p√¢ijde≈° ke kamenn√©mu schodi≈°ti. Vyjdi nahoru a odtud u≈æ uvid√≠≈° Akilovu farmu.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Lieferung geholt
@@ -406,7 +406,7 @@ instance DIA_Baltram_Lieferung	(C_INFO)
 	condition	 = 	DIA_Baltram_Lieferung_Condition;
 	information	 = 	DIA_Baltram_Lieferung_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"M·m tu z·silku od Akila.";
+	description	 = 	"M√°m tu z√°silku od Akila.";
 };
 
 func int DIA_Baltram_Lieferung_Condition ()
@@ -418,8 +418,8 @@ func int DIA_Baltram_Lieferung_Condition ()
 };
 func void DIA_Baltram_Lieferung_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_Lieferung_15_00"); //M·m Akilovu dod·vku.
-	AI_Output (self, other, "DIA_Baltram_Lieferung_01_01"); //V˝bornÍ. KoneËnÍ zase m˘ûu nabÌzet ËerstvÈ zboûÌ. Tady m·ö 50 zlat˝ch.
+	AI_Output (other, self, "DIA_Baltram_Lieferung_15_00"); //M√°m Akilovu dod√°vku.
+	AI_Output (self, other, "DIA_Baltram_Lieferung_01_01"); //V√Ωbornƒô. Koneƒçnƒô zase m≈Ø≈æu nab√≠zet ƒçerstv√© zbo≈æ√≠. Tady m√°≈° 50 zlat√Ωch.
 	
 	B_GiveInvItems (other, self, ItMi_BaltramPaket,1);
 	B_GiveInvItems (self, other, ItMi_Gold,50);
@@ -448,7 +448,7 @@ instance DIA_Baltram_LetUsTrade		(C_INFO)
 	condition	 = 	DIA_Baltram_LetUsTrade_Condition;
 	information	 = 	DIA_Baltram_LetUsTrade_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Mohli bychom potom vöem spolu uzav‚Ìt obchod?";
+	description	 = 	"Mohli bychom potom v≈°em spolu uzav√¢√≠t obchod?";
 };
 func int DIA_Baltram_LetUsTrade_Condition ()
 {
@@ -460,9 +460,9 @@ func int DIA_Baltram_LetUsTrade_Condition ()
 
 func void DIA_Baltram_LetUsTrade_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_00"); //Mohli bychom po tom vöem spolu uzav‚Ìt obchod?
-	AI_Output (self, other, "DIA_Baltram_LetUsTrade_01_01"); //Poslouchej, kdyû mi p‚ineseö 10 öunek a 10 lahvÌ vÌna, potom s tebou budu zase obchodovat.
-	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_02"); //UvidÌm, co se d· dÍlat.
+	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_00"); //Mohli bychom po tom v≈°em spolu uzav√¢√≠t obchod?
+	AI_Output (self, other, "DIA_Baltram_LetUsTrade_01_01"); //Poslouchej, kdy≈æ mi p√¢inese≈° 10 ≈°unek a 10 lahv√≠ v√≠na, potom s tebou budu zase obchodovat.
+	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_02"); //Uvid√≠m, co se d√° dƒôlat.
 	
 	MIS_BaltramTrade = LOG_RUNNING;
 };
@@ -480,7 +480,7 @@ instance DIA_Baltram_HaveYourWarez		(C_INFO)
 	condition	 = 	DIA_Baltram_HaveYourWarez_Condition;
 	information	 = 	DIA_Baltram_HaveYourWarez_Info;
 	permanent	 =  TRUE;
-	description	 = 	"M·m tvÈ zboûÌ.";
+	description	 = 	"M√°m tv√© zbo≈æ√≠.";
 };
 func int DIA_Baltram_HaveYourWarez_Condition ()
 {
@@ -493,12 +493,12 @@ func int DIA_Baltram_HaveYourWarez_Condition ()
 
 func void DIA_Baltram_HaveYourWarez_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_HaveYourWarez_15_00"); //M·m tvÈ zboûÌ.
-	AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_01"); //Ukaû mi to.
+	AI_Output (other, self, "DIA_Baltram_HaveYourWarez_15_00"); //M√°m tv√© zbo≈æ√≠.
+	AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_01"); //Uka≈æ mi to.
 	
 	if (Npc_HasItems (other,ItFo_Bacon) < 10)
 	{
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_02"); //Dohodli jsme se snad na 10 öunk·ch. P‚ijÎ, aû jich budeö mÌt dost.
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_02"); //Dohodli jsme se snad na 10 ≈°unk√°ch. P√¢ij√´, a≈æ jich bude≈° m√≠t dost.
 		
 		BaltramEnoughBacon = FALSE;
 	}
@@ -508,7 +508,7 @@ func void DIA_Baltram_HaveYourWarez_Info ()
 	};  
 	if (Npc_HasItems (other,ItFo_Wine) < 10)
 	{
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_03"); //A co 10 lahvÌ vÌna? Na ty jsi zapomnÍl?
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_03"); //A co 10 lahv√≠ v√≠na? Na ty jsi zapomnƒôl?
 	
 		BaltramEnoughWine = FALSE;
 	}
@@ -520,7 +520,7 @@ func void DIA_Baltram_HaveYourWarez_Info ()
 	if (BaltramEnoughBacon == TRUE
 	&&  BaltramEnoughWine  == TRUE)
 	{
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_04"); //Hmm, nenÌ to sice nejlepöÌ kvalita, ale v tÍchto dob·ch nem˘ûeö b˝t moc vybÌrav˝.
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_04"); //Hmm, nen√≠ to sice nejlep≈°√≠ kvalita, ale v tƒôchto dob√°ch nem≈Ø≈æe≈° b√Ωt moc vyb√≠rav√Ω.
 		
 		B_GiveInvItems (other,self,ItFo_Bacon,10);
 		B_GiveInvItems (other,self,ItFo_Wine,10);
@@ -529,7 +529,7 @@ func void DIA_Baltram_HaveYourWarez_Info ()
 	
 		B_GivePlayerXP (XP_BaltramTrade);
 		
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_05"); //TeÎ n·m nic nebr·nÌ v uzav‚enÌ obchodu.
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_05"); //Te√´ n√°m nic nebr√°n√≠ v uzav√¢en√≠ obchodu.
 	};	
 };
 

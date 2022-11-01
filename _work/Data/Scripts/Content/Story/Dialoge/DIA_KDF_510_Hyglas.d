@@ -31,7 +31,7 @@ instance DIA_Hyglas_Feuer		(C_INFO)
 	condition	 = 	DIA_Hyglas_Feuer_Condition;
 	information	 = 	DIA_Hyglas_Feuer_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Poûaduji zkouöku ohnÍ.";
+	description	 =  "Po≈æaduji zkou≈°ku ohnƒô.";
 };
 func int DIA_Hyglas_Feuer_Condition ()
 {	
@@ -44,9 +44,9 @@ func int DIA_Hyglas_Feuer_Condition ()
 };
 func void DIA_Hyglas_Feuer_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_Feuer_15_00"); //Chci vykonat zkouöku ohnÍ.
-	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01"); //Zkouöka ohnÍ poch·zÌ ze star˝ch Ëas˘ a uû velice dlouho jÌ nikdo nepodstoupil.
-	AI_Output (self, other, "DIA_Hyglas_Feuer_14_02"); //Co poûadujeö, je velice nebezpeËnÈ. RadÍji si to jeötÍ rozmysli.
+	AI_Output (other, self, "DIA_Hyglas_Feuer_15_00"); //Chci vykonat zkou≈°ku ohnƒô.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01"); //Zkou≈°ka ohnƒô poch√°z√≠ ze star√Ωch ƒças≈Ø a u≈æ velice dlouho j√≠ nikdo nepodstoupil.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_02"); //Co po≈æaduje≈°, je velice nebezpeƒçn√©. Radƒôji si to je≈°tƒô rozmysli.
 };    
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -69,12 +69,12 @@ func int DIA_Hyglas_Hallo_Condition ()
 };
 func void DIA_Hyglas_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Hyglas_Hallo_14_00"); //Jsem mistr Hyglas, Str·ûce ohnÍ a OpatrovnÌk vÍdomostÌ.
+	AI_Output (self, other, "DIA_Hyglas_Hallo_14_00"); //Jsem mistr Hyglas, Str√°≈æce ohnƒô a Opatrovn√≠k vƒôdomost√≠.
 	
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Hyglas_Hallo_14_01"); //Takûe mistr Parlan ti dal svolenÌ ke studiu svitk˘.
-		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02"); //Takûe p‚esnÍ to bys teÎ mÍl dÍlat. Studovat, abys ve svat˝ch knih·ch naöel osvÌcenÌ.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_01"); //Tak≈æe mistr Parlan ti dal svolen√≠ ke studiu svitk≈Ø.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02"); //Tak≈æe p√¢esnƒô to bys te√´ mƒôl dƒôlat. Studovat, abys ve svat√Ωch knih√°ch na≈°el osv√≠cen√≠.
 	};
 };    
 ///////////////////////////////////////////////////////////////////////
@@ -87,7 +87,7 @@ instance DIA_Hyglas_JOB		(C_INFO)
 	condition	 = 	DIA_Hyglas_JOB_Condition;
 	information	 = 	DIA_Hyglas_JOB_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Co studujeö ty, Mist‚e?";
+	description	 = 	"Co studuje≈° ty, Mist√¢e?";
 };
 func int DIA_Hyglas_JOB_Condition ()
 {	
@@ -95,14 +95,14 @@ func int DIA_Hyglas_JOB_Condition ()
 };
 func void DIA_Hyglas_JOB_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_JOB_15_00"); //Co studujeö ty, mist‚e?
-	AI_Output (self, other, "DIA_Hyglas_JOB_14_01"); //M˘j v˝zkum se zamÍ‚uje na ohe‡ - Innosovu sÌlu.
-	AI_Output (self, other, "DIA_Hyglas_JOB_14_02"); //Je to jeho dar a z·rove‡ mocn· zbra‡ - a j· vytv·‚Ìm runy, kterÈ obsahujÌ jeho moc.
+	AI_Output (other, self, "DIA_Hyglas_JOB_15_00"); //Co studuje≈° ty, mist√¢e?
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_01"); //M≈Øj v√Ωzkum se zamƒô√¢uje na ohe≈ï - Innosovu s√≠lu.
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_02"); //Je to jeho dar a z√°rove≈ï mocn√° zbra≈ï - a j√° vytv√°√¢√≠m runy, kter√© obsahuj√≠ jeho moc.
 	
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (other, self, "DIA_Hyglas_JOB_15_03"); //Velmi pouËnÈ. Mohl bys mÍ to nauËit?
-		AI_Output (self, other, "DIA_Hyglas_JOB_14_04"); //Je to Innos, kdo d·v· dar magie. Jen jeho sluûebnÌk˘m, ohniv˝m m·g˘m, je p‚·no vl·dnout jeho mocÌ.
+		AI_Output (other, self, "DIA_Hyglas_JOB_15_03"); //Velmi pouƒçn√©. Mohl bys mƒô to nauƒçit?
+		AI_Output (self, other, "DIA_Hyglas_JOB_14_04"); //Je to Innos, kdo d√°v√° dar magie. Jen jeho slu≈æebn√≠k≈Øm, ohniv√Ωm m√°g≈Øm, je p√¢√°no vl√°dnout jeho moc√≠.
 	};
 };    
 ///////////////////////////////////////////////////////////////////////
@@ -115,7 +115,7 @@ instance DIA_Hyglas_CONTEST		(C_INFO)
 	condition	 = 	DIA_Hyglas_CONTEST_Condition;
 	information	 = 	DIA_Hyglas_CONTEST_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Poû·dal jsem o zkouök u ohnÍ.";
+	description	 = 	"Po≈æ√°dal jsem o zkou≈°k u ohnƒô.";
 };
 func int DIA_Hyglas_CONTEST_Condition ()
 {
@@ -126,13 +126,13 @@ func int DIA_Hyglas_CONTEST_Condition ()
 };
 func void DIA_Hyglas_CONTEST_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_00"); //Poû·dal jsem o zkouöku ohnÍ. Ulthar mi dal za ˙kol vytvo‚it runu ohnivÈho öÌpu.
-	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_01"); //A teÎ po mnÍ chceö, abych tÍ nauËil p‚Ìsluönou formuli?
-	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_02"); //Nezn·m nikoho jinÈho, kdo by to dok·zal.
+	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_00"); //Po≈æ√°dal jsem o zkou≈°ku ohnƒô. Ulthar mi dal za √∫kol vytvo√¢it runu ohniv√©ho ≈°√≠pu.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_01"); //A te√´ po mnƒô chce≈°, abych tƒô nauƒçil p√¢√≠slu≈°nou formuli?
+	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_02"); //Nezn√°m nikoho jin√©ho, kdo by to dok√°zal.
 	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_03"); //Hmm...
-	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04"); //Dobr·, nauËÌm tÍ tu formuli. Ale nejd‚Ìv budeö muset najÌt vöechny pot‚ebnÈ ingredience.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04"); //Dobr√°, nauƒç√≠m tƒô tu formuli. Ale nejd√¢√≠v bude≈° muset naj√≠t v≈°echny pot√¢ebn√© ingredience.
 	
-	B_LogEntry (TOPIC_Rune,"Pokud si obstar·m p‚ÌsluönÈ ingredience, nauËÌ mÍ Hyglas zaklÌnadlo pro runu ohnivÈho öÌpu.");
+	B_LogEntry (TOPIC_Rune,"Pokud si obstar√°m p√¢√≠slu≈°n√© ingredience, nauƒç√≠ mƒô Hyglas zakl√≠nadlo pro runu ohniv√©ho ≈°√≠pu.");
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info FIREBOLT
@@ -144,7 +144,7 @@ instance DIA_Hyglas_FIREBOLT		(C_INFO)
 	condition	 = 	DIA_Hyglas_FIREBOLT_Condition;
 	information	 = 	DIA_Hyglas_FIREBOLT_Info;
 	permanent	 =  FALSE;
-	description	 = 	"JakÈ ingredience pot‚ebuji na vytvo‚enÌ runy ohnivÈho öÌpu?";
+	description	 = 	"Jak√© ingredience pot√¢ebuji na vytvo√¢en√≠ runy ohniv√©ho ≈°√≠pu?";
 };
 func int DIA_Hyglas_FIREBOLT_Condition ()
 {	
@@ -157,8 +157,8 @@ func int DIA_Hyglas_FIREBOLT_Condition ()
 };
 func void DIA_Hyglas_FIREBOLT_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_FIREBOLT_15_00"); //JakÈ ingredience pot‚ebuji na vytvo‚enÌ runy ohnivÈho öÌpu?
-	AI_Output (self, other, "DIA_Hyglas_FIREBOLT_14_01"); //P‚eËti si to - je to tam v tÍch knih·ch.
+	AI_Output (other, self, "DIA_Hyglas_FIREBOLT_15_00"); //Jak√© ingredience pot√¢ebuji na vytvo√¢en√≠ runy ohniv√©ho ≈°√≠pu?
+	AI_Output (self, other, "DIA_Hyglas_FIREBOLT_14_01"); //P√¢eƒçti si to - je to tam v tƒôch knih√°ch.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TALENT_FIREBOLT
@@ -170,7 +170,7 @@ instance DIA_Hyglas_TALENT_FIREBOLT		(C_INFO)
 	condition	 = 	DIA_Hyglas_TALENT_FIREBOLT_Condition;
 	information	 = 	DIA_Hyglas_TALENT_FIREBOLT_Info;
 	permanent 	 =  TRUE; 
-	description	 = 	"NauË mÍ vytvo‚it runu OHNIV…HO äÕPU.";
+	description	 = 	"Nauƒç mƒô vytvo√¢it runu OHNIV√âHO ≈†√çPU.";
 
 };
 func int DIA_Hyglas_TALENT_FIREBOLT_Condition ()
@@ -186,13 +186,13 @@ func int DIA_Hyglas_TALENT_FIREBOLT_Condition ()
 };
 func void DIA_Hyglas_TALENT_FIREBOLT_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_TALENT_FIREBOLT_15_00"); //NauË mÍ vytvo‚it runu OHNIV…HO äÕPU.
+	AI_Output (other, self, "DIA_Hyglas_TALENT_FIREBOLT_15_00"); //Nauƒç mƒô vytvo√¢it runu OHNIV√âHO ≈†√çPU.
 	
 	if (B_TeachPlayerTalentRunes (self, other, SPL_Firebolt))	
 	{
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_01"); //Pokud chceö sestavit runu ohnivÈho öÌpu, musÌö na runovÈm stole spojit sÌru s runov˝m kamenem.
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02"); //SÌla ze svitku s kouzlem ohnivÈho öÌpu vplyne do runy a ty zÌsk·ö Innos˘v n·stroj.
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_03"); //Takûe jakmile budeö mÌt vöechny pot‚ebnÈ vÍci, p‚istup k runovÈmu stolu a vytvo‚ svou runu.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_01"); //Pokud chce≈° sestavit runu ohniv√©ho ≈°√≠pu, mus√≠≈° na runov√©m stole spojit s√≠ru s runov√Ωm kamenem.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02"); //S√≠la ze svitku s kouzlem ohniv√©ho ≈°√≠pu vplyne do runy a ty z√≠sk√°≈° Innos≈Øv n√°stroj.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_03"); //Tak≈æe jakmile bude≈° m√≠t v≈°echny pot√¢ebn√© vƒôci, p√¢istup k runov√©mu stolu a vytvo√¢ svou runu.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -205,7 +205,7 @@ instance DIA_Hyglas_BLANK_RUNE		(C_INFO)
 	condition	 = 	DIA_Hyglas_BLANK_RUNE_Condition;
 	information	 = 	DIA_Hyglas_BLANK_RUNE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Kde bych mohl najÌt runov˝ k·men?";
+	description	 = 	"Kde bych mohl naj√≠t runov√Ω k√°men?";
 };
 func int DIA_Hyglas_BLANK_RUNE_Condition ()
 {	
@@ -219,8 +219,8 @@ func int DIA_Hyglas_BLANK_RUNE_Condition ()
 };
 func void DIA_Hyglas_BLANK_RUNE_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_BLANK_RUNE_15_00"); //Kde bych mohl najÌt runov˝ k·men?
-	AI_Output (self, other, "DIA_Hyglas_BLANK_RUNE_14_01"); //Hele, jsi to ty, kdo poû·dal o zkouöku ohnÍ, ne j·. NajÌt jej je souË·stÌ zkouöky.
+	AI_Output (other, self, "DIA_Hyglas_BLANK_RUNE_15_00"); //Kde bych mohl naj√≠t runov√Ω k√°men?
+	AI_Output (self, other, "DIA_Hyglas_BLANK_RUNE_14_01"); //Hele, jsi to ty, kdo po≈æ√°dal o zkou≈°ku ohnƒô, ne j√°. Naj√≠t jej je souƒç√°st√≠ zkou≈°ky.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info GOTRUNE
@@ -232,7 +232,7 @@ instance DIA_Hyglas_GOTRUNE		(C_INFO)
 	condition	 = 	DIA_Hyglas_GOTRUNE_Condition;
 	information	 = 	DIA_Hyglas_GOTRUNE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Vytvo‚il jsem tu runu.";
+	description	 = 	"Vytvo√¢il jsem tu runu.";
 };
 func int DIA_Hyglas_GOTRUNE_Condition ()
 {
@@ -245,11 +245,11 @@ func int DIA_Hyglas_GOTRUNE_Condition ()
 };
 func void DIA_Hyglas_GOTRUNE_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_GOTRUNE_15_00"); //Vytvo‚il jsem tu runu.
-	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_01"); //Inu dobr·. Zd· se, ûe v tÈto Ë·sti zkouöky jsi obst·l. Konec konc˘ to nebylo aû tak tÍûkÈ.
-	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_02"); //Jdi tedy za Utharem a ukaû mu svÈ dÌlo.
+	AI_Output (other, self, "DIA_Hyglas_GOTRUNE_15_00"); //Vytvo√¢il jsem tu runu.
+	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_01"); //Inu dobr√°. Zd√° se, ≈æe v t√©to ƒç√°sti zkou≈°ky jsi obst√°l. Konec konc≈Ø to nebylo a≈æ tak tƒô≈æk√©.
+	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_02"); //Jdi tedy za Utharem a uka≈æ mu sv√© d√≠lo.
 	
-	B_LogEntry (TOPIC_Rune,"Vytvo‚il jsem runu ohnivÈho öÌpu."); 
+	B_LogEntry (TOPIC_Rune,"Vytvo√¢il jsem runu ohniv√©ho ≈°√≠pu."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -261,7 +261,7 @@ instance DIA_Hyglas_TEACH		(C_INFO)
 	condition	 = 	DIA_Hyglas_TEACH_Condition;
 	information	 = 	DIA_Hyglas_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"UË mÍ.";
+	description	 = 	"Uƒç mƒô.";
 };
 func int DIA_Hyglas_TEACH_Condition ()
 {	
@@ -276,7 +276,7 @@ func void DIA_Hyglas_TEACH_Info ()
 	var int abletolearn;
 	
 	abletolearn = 0;
-	AI_Output (other, self, "DIA_Hyglas_TEACH_15_00"); //UË mÍ.
+	AI_Output (other, self, "DIA_Hyglas_TEACH_15_00"); //Uƒç mƒô.
 	
 	
 	Info_ClearChoices (DIA_Hyglas_TEACH);
@@ -416,7 +416,7 @@ INSTANCE DIA_Hyglas_BringBook   (C_INFO)
 	condition   = DIA_Hyglas_BringBook_Condition;
 	information = DIA_Hyglas_BringBook_Info;
 	permanent   = FALSE;
-	description = "Co je novÈho?";
+	description = "Co je nov√©ho?";
 };
 FUNC INT DIA_Hyglas_BringBook_Condition()
 {
@@ -429,26 +429,26 @@ FUNC INT DIA_Hyglas_BringBook_Condition()
 };
 FUNC VOID DIA_Hyglas_BringBook_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_00"); //Je nÍco novÈho?
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_01"); //Hm, ano. Asi sis uû vöiml tÍch postav v Ëern˝ch rÛb·ch.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_00"); //Je nƒôco nov√©ho?
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_01"); //Hm, ano. Asi sis u≈æ v≈°iml tƒôch postav v ƒçern√Ωch r√≥b√°ch.
 	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_02"); //Setkal jsem se s nimi.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_03"); //To n·s p‚iv·dÌ k j·dru vÍci. V tuhle chvÌli jsme svÍdky velice vz·cnÈ hvÍzdnÈ konstelace.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_04"); //Abych byl p‚esnÍjöÌ, znamenÌ Vola je v p‚esnÈ korelaci se znamenÌm V·leËnÌka. P‚edpokl·d·m, ûe vÌö, co to znamen·.
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_05"); //Hmm. No, abych byl up‚Ìmn˝...
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_06"); //Ano, dobr·, ch·pu. No, nem˘ûu ti teÎ vysvÍtlovat vöechno, ale kaûdop·dnÍ to p‚edznamen·v· velkÈ zmÍny. A j· nem·m zmÍny r·d.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_07"); //Proto chci, abys mi z mÍsta p‚inesl jednu knihu. Jmenuje se "Posv·tn· moc hvÍzd". Moûn· ji budeö muset chvilku hledat, ale jsem si jist, ûe ji nakonec objevÌö.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_03"); //To n√°s p√¢iv√°d√≠ k j√°dru vƒôci. V tuhle chv√≠li jsme svƒôdky velice vz√°cn√© hvƒôzdn√© konstelace.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_04"); //Abych byl p√¢esnƒôj≈°√≠, znamen√≠ Vola je v p√¢esn√© korelaci se znamen√≠m V√°leƒçn√≠ka. P√¢edpokl√°d√°m, ≈æe v√≠≈°, co to znamen√°.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_05"); //Hmm. No, abych byl up√¢√≠mn√Ω...
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_06"); //Ano, dobr√°, ch√°pu. No, nem≈Ø≈æu ti te√´ vysvƒôtlovat v≈°echno, ale ka≈ædop√°dnƒô to p√¢edznamen√°v√° velk√© zmƒôny. A j√° nem√°m zmƒôny r√°d.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_07"); //Proto chci, abys mi z mƒôsta p√¢inesl jednu knihu. Jmenuje se "Posv√°tn√° moc hvƒôzd". Mo≈æn√° ji bude≈° muset chvilku hledat, ale jsem si jist, ≈æe ji nakonec objev√≠≈°.
 	
 	Info_ClearChoices (DIA_Hyglas_BringBook);
-	Info_AddChoice (DIA_Hyglas_BringBook,"Najdi si tu knihu s·m.",DIA_Hyglas_BringBook_GetItYourself);
-	Info_AddChoice (DIA_Hyglas_BringBook,"Co z toho budu mÌt?",DIA_Hyglas_BringBook_GetForIt);
-	Info_AddChoice (DIA_Hyglas_BringBook,"UvidÌm, jestli se mi ji poda‚Ì najÌt.",DIA_Hyglas_BringBook_Yes);
+	Info_AddChoice (DIA_Hyglas_BringBook,"Najdi si tu knihu s√°m.",DIA_Hyglas_BringBook_GetItYourself);
+	Info_AddChoice (DIA_Hyglas_BringBook,"Co z toho budu m√≠t?",DIA_Hyglas_BringBook_GetForIt);
+	Info_AddChoice (DIA_Hyglas_BringBook,"Uvid√≠m, jestli se mi ji poda√¢√≠ naj√≠t.",DIA_Hyglas_BringBook_Yes);
 };
 
 FUNC VOID DIA_Hyglas_BringBook_GetItYourself()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetItYourself_15_00"); //Najdi si tu knihu s·m.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_01"); //Jak se opovaûujeö se mnou mluvit tÌmto tÛnem? Tvoje chov·nÌ postr·d· ˙ctu, kterou mi jsi povinov·n.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_02"); //BÍû mi z oËÌ a p‚em˝ölej o svÈm chov·nÌ.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetItYourself_15_00"); //Najdi si tu knihu s√°m.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_01"); //Jak se opova≈æuje≈° se mnou mluvit t√≠mto t√≥nem? Tvoje chov√°n√≠ postr√°d√° √∫ctu, kterou mi jsi povinov√°n.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_02"); //Bƒô≈æ mi z oƒç√≠ a p√¢em√Ω≈°lej o sv√©m chov√°n√≠.
 	
 	MIS_HyglasBringBook = LOG_OBSOLETE;
 	
@@ -457,19 +457,19 @@ FUNC VOID DIA_Hyglas_BringBook_GetItYourself()
 
 FUNC VOID DIA_Hyglas_BringBook_GetForIt()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_00"); //Co z toho budu mÌt?
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_01"); //Co tÌm myslÌö?
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_02"); //R·d bych vÍdÍl, co dostanu za to, kdyû ti tu knihu p‚inesu.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_03"); //Nic. Co bys myslel, ûe dostaneö? Pokud m·ö Ëas dÍlat mi ve mÍstÍ poslÌËka, je p‚Ìmo tvou povinnostÌ mi pomoci.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_00"); //Co z toho budu m√≠t?
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_01"); //Co t√≠m mysl√≠≈°?
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_02"); //R√°d bych vƒôdƒôl, co dostanu za to, kdy≈æ ti tu knihu p√¢inesu.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_03"); //Nic. Co bys myslel, ≈æe dostane≈°? Pokud m√°≈° ƒças dƒôlat mi ve mƒôstƒô posl√≠ƒçka, je p√¢√≠mo tvou povinnost√≠ mi pomoci.
 	
 	Info_ClearChoices (DIA_Hyglas_BringBook); 
 };
 
 FUNC VOID DIA_Hyglas_BringBook_Yes()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_Yes_15_00"); //UvidÌm, jestli se mi ji poda‚Ì najÌt.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_01"); //To je spr·vnÈ - zÌsk·m tak trochu Ëasu navÌc, abych se mohl poohlÈdnout takÈ po nÍËem jinÈm.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_02"); //Ale a„ ti to netrv· moc dlouho. Ob·v·m se, ûe nem·me Ëasu nazbyt.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_Yes_15_00"); //Uvid√≠m, jestli se mi ji poda√¢√≠ naj√≠t.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_01"); //To je spr√°vn√© - z√≠sk√°m tak trochu ƒçasu nav√≠c, abych se mohl poohl√©dnout tak√© po nƒôƒçem jin√©m.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_02"); //Ale aƒÉ ti to netrv√° moc dlouho. Ob√°v√°m se, ≈æe nem√°me ƒçasu nazbyt.
 	
 	MIS_HyglasBringBook = LOG_RUNNING;
 	
@@ -477,7 +477,7 @@ FUNC VOID DIA_Hyglas_BringBook_Yes()
 	
 	Log_CreateTopic (TOPIC_HyglasBringBook,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HyglasBringBook,LOG_RUNNING);
-	B_LogEntry (TOPIC_HyglasBringBook,"Hyglas mÍ poû·dal, zda bych mu nenaöel knihu 'Boûsk· moc hvÍzd'. ZkusÌm se po nÌ podÌvat u mÍstsk˝ch obchodnÌk˘.");
+	B_LogEntry (TOPIC_HyglasBringBook,"Hyglas mƒô po≈æ√°dal, zda bych mu nena≈°el knihu 'Bo≈æsk√° moc hvƒôzd'. Zkus√≠m se po n√≠ pod√≠vat u mƒôstsk√Ωch obchodn√≠k≈Ø.");
 };
 
 //*********************************************************************
@@ -491,7 +491,7 @@ INSTANCE DIA_Hyglas_HaveBook   (C_INFO)
 	condition   = DIA_Hyglas_HaveBook_Condition;
 	information = DIA_Hyglas_HaveBook_Info;
 	permanent   = FALSE;
-	description = "M·m pro tebe tu knihu.";
+	description = "M√°m pro tebe tu knihu.";
 };
 FUNC INT DIA_Hyglas_HaveBook_Condition()
 {
@@ -503,15 +503,15 @@ FUNC INT DIA_Hyglas_HaveBook_Condition()
 };
 FUNC VOID DIA_Hyglas_HaveBook_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_HaveBook_15_00"); //M·m pro tebe tu knihu.
+	AI_Output (other,self ,"DIA_Hyglas_HaveBook_15_00"); //M√°m pro tebe tu knihu.
 	
 	IF Mis_HyglasBringBook == LOG_RUNNING
 	{
-		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_01"); //V˝bornÍ, dej mi ji.
+		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_01"); //V√Ωbornƒô, dej mi ji.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_02"); //Takûe sis to nakonec p‚ece jen rozmyslel. Velmi dob‚e. Tak kde ji m·ö?
+		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_02"); //Tak≈æe sis to nakonec p√¢ece jen rozmyslel. Velmi dob√¢e. Tak kde ji m√°≈°?
 	};		
 		
 	B_GiveInvItems (other,self,ItWr_Astronomy_Mis,1);
@@ -520,7 +520,7 @@ FUNC VOID DIA_Hyglas_HaveBook_Info()
 	B_GivePlayerXP (XP_HyglasBringBook);
 	
 	
-	AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_03"); //M˘ûeö jÌt. J· p˘jdu studovat.
+	AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_03"); //M≈Ø≈æe≈° j√≠t. J√° p≈Øjdu studovat.
 	
 };
 
@@ -564,7 +564,7 @@ INSTANCE DIA_Hyglas_Kap4_PERM   (C_INFO)
 	condition   = DIA_Hyglas_Kap4_PERM_Condition;
 	information = DIA_Hyglas_Kap4_PERM_Info;
 	permanent   = TRUE;
-	description = "Uû jsi na nÍco p‚iöel?";
+	description = "U≈æ jsi na nƒôco p√¢i≈°el?";
 };
 FUNC INT DIA_Hyglas_Kap4_PERM_Condition()
 {
@@ -575,24 +575,24 @@ FUNC INT DIA_Hyglas_Kap4_PERM_Condition()
 };
 FUNC VOID DIA_Hyglas_Kap4_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_00"); //Uû jsi na nÍco p‚iöel?
+	AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_00"); //U≈æ jsi na nƒôco p√¢i≈°el?
 	
 	if (Mis_HyglasBringBook == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_01"); //No, nemohu si b˝t ˙plnÍ jist˝, ale zd· se, ûe souËasn· konstelace hvÍzd poukazuje na mnoh· nebezpeËÌ.
-		AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_02"); //Jak· nebezpeËÌ?
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_03"); //Inu, vypad· to, ûe struktura mezi svÍty je velice slab·. K vytvo‚enÌ dÌry do tÈto struktury je teÎ zapot‚ebÌ jen zlomek sÌly co obvykle.
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_04"); //TakovÈto port·ly pak mohou pouûÌvat dÈmoni ke vstupu do naöeho svÍta, aniû by museli Ëelit nÍjakÈmu odporu.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_01"); //No, nemohu si b√Ωt √∫plnƒô jist√Ω, ale zd√° se, ≈æe souƒçasn√° konstelace hvƒôzd poukazuje na mnoh√° nebezpeƒç√≠.
+		AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_02"); //Jak√° nebezpeƒç√≠?
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_03"); //Inu, vypad√° to, ≈æe struktura mezi svƒôty je velice slab√°. K vytvo√¢en√≠ d√≠ry do t√©to struktury je te√´ zapot√¢eb√≠ jen zlomek s√≠ly co obvykle.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_04"); //Takov√©to port√°ly pak mohou pou≈æ√≠vat d√©moni ke vstupu do na≈°eho svƒôta, ani≈æ by museli ƒçelit nƒôjak√©mu odporu.
 		
 		Hyglas_SendsToKarras = TRUE;
 	}
 	else if (Mis_HyglasBringBook == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_05"); //Ne, st·le Ëek·m na tu knihu.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_05"); //Ne, st√°le ƒçek√°m na tu knihu.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_06"); //¬ekl jsem ti, ûe st·le prov·dÌm v˝zkum, ale samoz‚ejmÍ by mi to trvalo mnohem dÈle, kdybych nemÍl pot‚ebn˝ materi·l.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_06"); //√Çekl jsem ti, ≈æe st√°le prov√°d√≠m v√Ωzkum, ale samoz√¢ejmƒô by mi to trvalo mnohem d√©le, kdybych nemƒôl pot√¢ebn√Ω materi√°l.
 	};
 	
 };

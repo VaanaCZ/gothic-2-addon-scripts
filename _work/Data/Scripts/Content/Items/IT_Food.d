@@ -18,7 +18,7 @@ const int	Value_Water		=	10;		const int	HP_Water		=	8;
 const int	Value_Beer		=	20;		const int	HP_Beer			=	3;	const int	Mana_Beer		=	1;
 const int	Value_Booze		=	15;		const int	HP_Booze		=	4;	const int	Mana_Booze		=	1;
 const int	Value_Wine		=	20;		const int	HP_Wine			=	2;	const int	Mana_Wine		=	1;
-const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	// Joly: Wenn diese Werte ge‰ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
+const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	// Joly: Wenn diese Werte ge√§ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
 
 
 
@@ -46,8 +46,8 @@ INSTANCE ItFo_Apple (C_Item)
 	TEXT[1]				= 	NAME_Bonus_HP;		
 	COUNT[1]			= 	HP_Apple;
 	
-	TEXT[3]				=    "»erstvÈ jablko,";
-	TEXT[4]				=    "k‚upavÈ a ö„avnatÈ.";
+	TEXT[3]				=    "ƒåerstv√© jablko,";
+	TEXT[4]				=    "k√¢upav√© a ≈°ƒÉavnat√©.";
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_Apple;
 
@@ -81,7 +81,7 @@ INSTANCE ItFo_Apple (C_Item)
 
 INSTANCE ItFo_Cheese (C_Item)
 {	
-	name 				=	"S˝r";
+	name 				=	"S√Ωr";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -107,7 +107,7 @@ INSTANCE ItFo_Cheese (C_Item)
 
 INSTANCE ItFo_Bacon (C_Item)
 {	
-	name 				=	"äunka";
+	name 				=	"≈†unka";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -134,7 +134,7 @@ INSTANCE ItFo_Bacon (C_Item)
 
 INSTANCE ItFo_Bread (C_Item)
 {	
-	name 				=	"ChlÈb";
+	name 				=	"Chl√©b";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -190,7 +190,7 @@ INSTANCE ItFo_Fish (C_Item)
 
 INSTANCE ItFoMuttonRaw (C_Item)
 {	
-	name 				=	"SyrovÈ maso";
+	name 				=	"Syrov√© maso";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -222,7 +222,7 @@ INSTANCE ItFoMuttonRaw (C_Item)
 
 INSTANCE ItFoMutton (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 {	
-	name 				=	"OpeËenÈ maso";
+	name 				=	"Opeƒçen√© maso";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -250,7 +250,7 @@ INSTANCE ItFoMutton (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 
 INSTANCE ItFo_Stew (C_Item)
 {	
-	name 				=	"V˝var";
+	name 				=	"V√Ωvar";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -323,7 +323,7 @@ INSTANCE ItFo_CoragonsBeer (C_Item)
 	TEXT[1]				= 	NAME_Bonus_HP;		COUNT[1]	= HP_Beer;
 	TEXT[2]				= 	NAME_Bonus_Mana;	COUNT[2]	= Mana_Beer;
 	
-	TEXT[4]				= 	"Coragonovo speci·lnÌ pivo";		
+	TEXT[4]				= 	"Coragonovo speci√°ln√≠ pivo";		
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Beer;
 
 };
@@ -344,7 +344,7 @@ INSTANCE ItFo_CoragonsBeer (C_Item)
 
 INSTANCE ItFo_FishSoup (C_Item)
 {	
-	name 				=	"RybÌ polÈvka";
+	name 				=	"Ryb√≠ pol√©vka";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -372,7 +372,7 @@ INSTANCE ItFo_FishSoup (C_Item)
 
 INSTANCE ItFo_Sausage (C_Item)
 {	
-	name 				=	"Klob·sa";
+	name 				=	"Klob√°sa";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -475,7 +475,7 @@ INSTANCE ItFo_Beer (C_Item)
 	TEXT[1]				= 	NAME_Bonus_HP;		COUNT[1]	= HP_Beer;
 	TEXT[2]				= 	NAME_Bonus_Mana;	COUNT[2]	= Mana_Beer;
 	
-	TEXT[4]				= 	"Temn˝ paladin";		
+	TEXT[4]				= 	"Temn√Ω paladin";		
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Beer;
 
 };
@@ -517,7 +517,7 @@ INSTANCE ItFo_Booze (C_Item)
 
 INSTANCE ItFo_Wine (C_Item)
 {	
-	name 				=	"VÌno";
+	name 				=	"V√≠no";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -545,7 +545,7 @@ INSTANCE ItFo_Wine (C_Item)
 
 INSTANCE ItFo_Milk (C_Item)
 {	
-	name 				=	"MlÈko";
+	name 				=	"Ml√©ko";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;

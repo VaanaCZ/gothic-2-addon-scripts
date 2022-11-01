@@ -47,12 +47,12 @@ func void DIA_Addon_Cord_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Cord_MeetingIsRunning_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_00"); //Vítej v kruhu vody, bratâe.
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_00"); //VÃ­tej v kruhu vody, bratÃ¢e.
 		DIA_Addon_Cord_MeetingIsRunning_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_01"); //Teë bys mêl zajít za Vatrasem.
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_01"); //TeÃ« bys mÄ™l zajÃ­t za Vatrasem.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -84,15 +84,15 @@ FUNC INT DIA_Cord_Hallo_Condition()
 
 FUNC VOID DIA_Cord_Hallo_Info()
 {
-	AI_Output (self ,other, "DIA_Cord_Hallo_14_00"); //Jestli máš problém s vlky nebo polními škùdci, tak si bê promluvit s jedním z našich mladších oldákù.
-	AI_Output (self ,other, "DIA_Cord_Hallo_14_01"); //Mùeš ke mnê pâijít, a se tu ukáou paladinové.
+	AI_Output (self ,other, "DIA_Cord_Hallo_14_00"); //Jestli mÃ¡Å¡ problÃ©m s vlky nebo polnÃ­mi Å¡kÅ¯dci, tak si bÄ™Å¾ promluvit s jednÃ­m z naÅ¡ich mladÅ¡Ã­ch Å¾oldÃ¡kÅ¯.
+	AI_Output (self ,other, "DIA_Cord_Hallo_14_01"); //MÅ¯Å¾eÅ¡ ke mnÄ™ pÃ¢ijÃ­t, aÅ¾ se tu ukÃ¡Å¾ou paladinovÃ©.
 	
 	if (SC_IsRanger == FALSE)
 	{	
 		AI_Output (other, self, "DIA_Cord_Hallo_15_02"); //Co?
-		AI_Output (self ,other, "DIA_Cord_Hallo_14_03"); //Vdycky kdy za mnou pâijde nêkdo z vás rolníkù, jde mu pokadı o vradêní nevinnejch zvíâat.
-		AI_Output (other, self, "DIA_Cord_Hallo_15_04"); //Nejsem rolník.
-		AI_Output (self ,other, "DIA_Cord_Hallo_14_05"); //Hm? A co tedy potom chceš?
+		AI_Output (self ,other, "DIA_Cord_Hallo_14_03"); //VÅ¾dycky kdyÅ¾ za mnou pÃ¢ijde nÄ™kdo z vÃ¡s rolnÃ­kÅ¯, jde mu pokaÅ¾dÃ½ o vraÅ¾dÄ™nÃ­ nevinnejch zvÃ­Ã¢at.
+		AI_Output (other, self, "DIA_Cord_Hallo_15_04"); //Nejsem rolnÃ­k.
+		AI_Output (self ,other, "DIA_Cord_Hallo_14_05"); //Hm? A co tedy potom chceÅ¡?
 	};
 };
 
@@ -108,7 +108,7 @@ INSTANCE DIA_Cord_WannaJoin   (C_INFO)
 	condition   = DIA_Cord_WannaJoin_Condition;
 	information = DIA_Cord_WannaJoin_Info;
 	permanent   = TRUE;
-	description = "Chtêl bych se stát oldákem!";
+	description = "ChtÄ™l bych se stÃ¡t Å¾oldÃ¡kem!";
 };
 
 FUNC INT DIA_Cord_WannaJoin_Condition()
@@ -122,62 +122,62 @@ FUNC INT DIA_Cord_WannaJoin_Condition()
 
 FUNC VOID B_Cord_BeBetter ()
 {
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_14"); //A protoe ty sotva víš, jak se zachází se zbraní, âekl bych, e jsi tady na špatnım místê!
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_14"); //A protoÅ¾e ty sotva vÃ­Å¡, jak se zachÃ¡zÃ­ se zbranÃ­, Ã¢ekl bych, Å¾e jsi tady na Å¡patnÃ½m mÃ­stÄ™!
 };
 
 FUNC VOID DIA_Cord_WannaJoin_Info()
 {
-	AI_Output (other, self, "DIA_Cord_WannaJoin_15_00"); //Chtêl bych se stát oldákem!
+	AI_Output (other, self, "DIA_Cord_WannaJoin_15_00"); //ChtÄ™l bych se stÃ¡t Å¾oldÃ¡kem!
 	if (Cord_SchonmalGefragt == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_01"); //Vypadáš spíš jako nêkdo, kdo se narodil pro práci na poli, chlapèe.
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_02"); //Umíš tedy ovládat zbraà?
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_01"); //VypadÃ¡Å¡ spÃ­Å¡ jako nÄ™kdo, kdo se narodil pro prÃ¡ci na poli, chlapÄe.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_02"); //UmÃ­Å¡ tedy ovlÃ¡dat zbraÅ•?
 		Cord_SchonmalGefragt = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_03"); //U ses zlepšil?
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_03"); //UÅ¾ ses zlepÅ¡il?
 	};
 	
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_04"); //Take umíš ovládat jednoruèní zbranê?
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_04"); //TakÅ¾e umÃ­Å¡ ovlÃ¡dat jednoruÄnÃ­ zbranÄ™?
 	if (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_05"); //Nejsem v tom špatnej.
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_05"); //Nejsem v tom Å¡patnej.
 	}
 	else
 	{
 		AI_Output (other, self, "DIA_Cord_WannaJoin_15_06"); //Noooo...
 	};
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_07"); //A umíš ovládat obouruèní zbranê?
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_07"); //A umÃ­Å¡ ovlÃ¡dat obouruÄnÃ­ zbranÄ™?
 	if (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_08"); //Umím s nimi zacházet.
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_08"); //UmÃ­m s nimi zachÃ¡zet.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_09"); //Urèitê se zlepším!
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_09"); //UrÄitÄ™ se zlepÅ¡Ã­m!
 	};
 	
 	if (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 	|| (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_10"); //No, alespoà nejsi úplnej zaèáteèník. V poâádku. Budu pro tebe hlasovat.
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_11"); //Kdy budeš potâebovat nêco dalšího, mùeš se to nauèit ode mê.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_10"); //No, alespoÅ• nejsi Ãºplnej zaÄÃ¡teÄnÃ­k. V poÃ¢Ã¡dku. Budu pro tebe hlasovat.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_11"); //KdyÅ¾ budeÅ¡ potÃ¢ebovat nÄ™co dalÅ¡Ã­ho, mÅ¯Å¾eÅ¡ se to nauÄit ode mÄ™.
 		Cord_Approved = TRUE;
 		B_GivePlayerXP (XP_Cord_Approved);
-		B_LogEntry (TOPIC_SLDRespekt,"Cordovu pâímluvu u mám v kapse.");
+		B_LogEntry (TOPIC_SLDRespekt,"Cordovu pÃ¢Ã­mluvu uÅ¾ mÃ¡m v kapse.");
 		Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTeacher,"Cord mê vycvièí v pouívání jedno- a obouruèních zbraní.");
+		B_LogEntry (Topic_SoldierTeacher,"Cord mÄ™ vycviÄÃ­ v pouÅ¾Ã­vÃ¡nÃ­ jedno- a obouruÄnÃ­ch zbranÃ­.");
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_12"); //Jinımi slovy: jsi mizernej zelenáè!
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_13"); //Kadı oldnéâ se musí spolehnout na své kamarády. Závisí na tom naše ivoty.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_12"); //JinÃ½mi slovy: jsi mizernej zelenÃ¡Ä!
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_13"); //KaÅ¾dÃ½ Å¾oldnÃ©Ã¢ se musÃ­ spolehnout na svÃ© kamarÃ¡dy. ZÃ¡visÃ­ na tom naÅ¡e Å¾ivoty.
 		B_Cord_BeBetter ();
 		
 		Log_CreateTopic (TOPIC_CordProve,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_CordProve,LOG_RUNNING); 
-		B_LogEntry (TOPIC_CordProve,"Cord se za mê pâimluví a poté, co se nauèím lépe bojovat."); 
+		B_LogEntry (TOPIC_CordProve,"Cord se za mÄ™ pÃ¢imluvÃ­ aÅ¾ potÃ©, co se nauÄÃ­m lÃ©pe bojovat."); 
 	};
 };
 
@@ -191,7 +191,7 @@ instance DIA_Addon_Cord_YouAreRanger		(C_INFO)
 	condition	 = 	DIA_Addon_Cord_YouAreRanger_Condition;
 	information	 = 	DIA_Addon_Cord_YouAreRanger_Info;
 
-	description	 = 	"Zaslechl jsem, e prı patâíš ke 'kruhu vody'.";
+	description	 = 	"Zaslechl jsem, Å¾e prÃ½ patÃ¢Ã­Å¡ ke 'kruhu vody'.";
 };
 
 func int DIA_Addon_Cord_YouAreRanger_Condition ()
@@ -205,35 +205,35 @@ func int DIA_Addon_Cord_YouAreRanger_Condition ()
 
 func void DIA_Addon_Cord_YouAreRanger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_00"); //Slyšel jsem, e patâíš ke kruhu vody.
+	AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_00"); //SlyÅ¡el jsem, Å¾e patÃ¢Ã­Å¡ ke kruhu vody.
 	
 	if (SC_IsRanger == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_01"); //A kterápak krysa to nedokázala dret jazyk za zuby?
+		AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_01"); //A kterÃ¡pak krysa to nedokÃ¡zala drÅ¾et jazyk za zuby?
 		
 		if (SC_KnowsCordAsRangerFromLee == TRUE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_02"); //Povêdêl mi to Lee.
+			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_02"); //PovÄ™dÄ™l mi to Lee.
 		};
 	
 		if (SC_KnowsCordAsRangerFromLares == TRUE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_03"); //Lares se zmínil, e bys mi mohl pomoct, kdy ti povím, e nade mnou drí ochrannou ruku.
+			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_03"); //Lares se zmÃ­nil, Å¾e bys mi mohl pomoct, kdyÅ¾ ti povÃ­m, Å¾e nade mnou drÅ¾Ã­ ochrannou ruku.
 		};
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_04"); //(povzdech) Tak to bych se s tebou asi mêl paktovat, co?
-	//AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_05"); //Was muss ich denn jetzt für dich machen, damit du die Schnauze hälst?
-	AI_Output	(self, other, "DIA_Addon_Cord_Add_14_01"); //No jo, tak co potâebuješ?
-	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_06"); //A dávej si sakra pozor, co mi teëka povíš. Protoe kdy se mi to nebude líbit, stáhnu tê zaiva z kùe.
+	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_04"); //(povzdech) Tak to bych se s tebou asi mÄ™l paktovat, co?
+	//AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_05"); //Was muss ich denn jetzt fÃ¼r dich machen, damit du die Schnauze hÃ¤lst?
+	AI_Output	(self, other, "DIA_Addon_Cord_Add_14_01"); //No jo, tak co potÃ¢ebujeÅ¡?
+	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_06"); //A dÃ¡vej si sakra pozor, co mi teÃ«ka povÃ­Å¡. ProtoÅ¾e kdyÅ¾ se mi to nebude lÃ­bit, stÃ¡hnu tÄ™ zaÅ¾iva z kÅ¯Å¾e.
 	
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
-	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Vlastnê nic nepotâebuju, postarám se o sebe sám.", DIA_Addon_Cord_YouAreRanger_nix );
+	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "VlastnÄ™ nic nepotÃ¢ebuju, postarÃ¡m se o sebe sÃ¡m.", DIA_Addon_Cord_YouAreRanger_nix );
 	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Chci tvou zbroj.", DIA_Addon_Cord_YouAreRanger_ruestung );
-	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Chci tvou zbraà!", DIA_Addon_Cord_YouAreRanger_waffe );
+	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Chci tvou zbraÅ•!", DIA_Addon_Cord_YouAreRanger_waffe );
 	if (Cord_Approved == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Nauè mê bojovat.", DIA_Addon_Cord_YouAreRanger_kampf );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "NauÄ mÄ™ bojovat.", DIA_Addon_Cord_YouAreRanger_kampf );
 	};
 	if (hero.guild == GIL_NONE)
 	{
@@ -241,18 +241,18 @@ func void DIA_Addon_Cord_YouAreRanger_Info ()
 	};
 	if (hero.guild == GIL_NONE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Mohl bys mi pomoci dostat se mezi oldáky.", DIA_Addon_Cord_YouAreRanger_SLDAufnahme );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Mohl bys mi pomoci dostat se mezi Å¾oldÃ¡ky.", DIA_Addon_Cord_YouAreRanger_SLDAufnahme );
 	};
-	//Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Bezahl mich für mein Schweigen.", DIA_Addon_Cord_YouAreRanger_Gold );
+	//Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Bezahl mich fÃ¼r mein Schweigen.", DIA_Addon_Cord_YouAreRanger_Gold );
 };
 var int Cord_SC_Dreist;
 func void 	B_DIA_Addon_Cord_YouAreRanger_WARN ()
 {
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_WARN_14_00"); //(hrozivê) A bêda ti, jestli se dozvím, es nedrel jazyk za zuby! A nebudu to víckrát opakovat, jasnı?
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_WARN_14_00"); //(hrozivÄ™) A bÄ™da ti, jestli se dozvÃ­m, Å¾es nedrÅ¾el jazyk za zuby! A nebudu to vÃ­ckrÃ¡t opakovat, jasnÃ½?
 };
 func void 	B_DIA_Addon_Cord_YouAreRanger_FRESSE ()
 {
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_FRESSE_14_00"); //(zuâivê) Tak teë u jsi to pâepísknul. Roztrhnu tê jako hada!
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_FRESSE_14_00"); //(zuÃ¢ivÄ™) Tak teÃ« uÅ¾ jsi to pÃ¢epÃ­sknul. Roztrhnu tÄ™ jako hada!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 	Cord_RangerHelp_GetSLD = FALSE;
@@ -265,7 +265,7 @@ func void DIA_Addon_Cord_YouAreRanger_ruestung ()
 
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_ruestung_14_01"); //Âekni to ještê jednou a budeš sbírat svı zuby ze zemê!
+		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_ruestung_14_01"); //Ã‚ekni to jeÅ¡tÄ™ jednou a budeÅ¡ sbÃ­rat svÃ½ zuby ze zemÄ™!
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -276,12 +276,12 @@ func void DIA_Addon_Cord_YouAreRanger_ruestung ()
 
 func void DIA_Addon_Cord_YouAreRanger_waffe ()
 {
-	AI_Output (other, self, "DIA_Addon_Cord_YouAreRanger_Add_15_00"); //Chci tvou zbraà!
+	AI_Output (other, self, "DIA_Addon_Cord_YouAreRanger_Add_15_00"); //Chci tvou zbraÅ•!
 
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Cord_Add_14_03"); //(hrozivê) Opravdu?
-		AI_Output (self, other, "DIA_Addon_Cord_Add_14_02"); //(pâíkâe) Tak si to zkus!
+		AI_Output (self, other, "DIA_Addon_Cord_Add_14_03"); //(hrozivÄ™) Opravdu?
+		AI_Output (self, other, "DIA_Addon_Cord_Add_14_02"); //(pÃ¢Ã­kÃ¢e) Tak si to zkus!
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -296,7 +296,7 @@ func void DIA_Addon_Cord_YouAreRanger_weg ()
 
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_weg_14_01"); //Nehraj si se mnou, mladej, nebo ti zpâelámu všecky kosti v têle!
+		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_weg_14_01"); //Nehraj si se mnou, mladej, nebo ti zpÃ¢elÃ¡mu vÅ¡ecky kosti v tÄ™le!
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -309,35 +309,35 @@ var int DIA_Addon_Cord_YouAreRanger_SCGotOffer;
 
 func void DIA_Addon_Cord_YouAreRanger_kampf ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_kampf_15_00"); //Nauè mê bojovat.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_kampf_14_01"); //Dobrá, co dál?
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_kampf_15_00"); //NauÄ mÄ™ bojovat.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_kampf_14_01"); //DobrÃ¡, co dÃ¡l?
 	Cord_RangerHelp_Fight = TRUE;
 
 	if (DIA_Addon_Cord_YouAreRanger_SCGotOffer == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Toã vše.", DIA_Addon_Cord_YouAreRanger_reicht );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "ToÄƒ vÅ¡e.", DIA_Addon_Cord_YouAreRanger_reicht );
 		DIA_Addon_Cord_YouAreRanger_SCGotOffer = TRUE;
 	};
 };
 func void DIA_Addon_Cord_YouAreRanger_SLDAufnahme ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_15_00"); //Mohl bys mi pomoct, aby mê vzali mezi oldáky.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_14_01"); //(smêje se) Tak teë u to chápu, dobâe. Zkusím to. Co dál?
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_15_00"); //Mohl bys mi pomoct, aby mÄ™ vzali mezi Å¾oldÃ¡ky.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_14_01"); //(smÄ™je se) Tak teÃ« uÅ¾ to chÃ¡pu, dobÃ¢e. ZkusÃ­m to. Co dÃ¡l?
 
 	Cord_RangerHelp_GetSLD = TRUE;
 	
 	if (DIA_Addon_Cord_YouAreRanger_SCGotOffer == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Toã vše.", DIA_Addon_Cord_YouAreRanger_reicht );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "ToÄƒ vÅ¡e.", DIA_Addon_Cord_YouAreRanger_reicht );
 		DIA_Addon_Cord_YouAreRanger_SCGotOffer = TRUE;
 	};
 };
 func void DIA_Addon_Cord_YouAreRanger_Gold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_Gold_15_00"); //Zaplaã mi a já budu mlèet.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_Gold_15_00"); //ZaplaÄƒ mi a jÃ¡ budu mlÄet.
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_Gold_14_01"); //Nelíbí se ti to? Ale máš smùlu. Já se vydírat nenechám, milej zlatej.
+		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_Gold_14_01"); //NelÃ­bÃ­ se ti to? Ale mÃ¡Å¡ smÅ¯lu. JÃ¡ se vydÃ­rat nenechÃ¡m, milej zlatej.
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -347,15 +347,15 @@ func void DIA_Addon_Cord_YouAreRanger_Gold ()
 };
 func void DIA_Addon_Cord_YouAreRanger_nix ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_nix_15_00"); //Vlastnê nic nepotâebuju, postarám se o sebe sám.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_nix_14_01"); //Kdy chceš. Mêls šanci.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_nix_15_00"); //VlastnÄ™ nic nepotÃ¢ebuju, postarÃ¡m se o sebe sÃ¡m.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_nix_14_01"); //KdyÅ¾ chceÅ¡. MÄ™ls Å¡anci.
 	B_DIA_Addon_Cord_YouAreRanger_WARN ();
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
 };
 func void DIA_Addon_Cord_YouAreRanger_reicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_reicht_15_00"); //To je všecko.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_reicht_14_01"); //To by nemêl bejt problém.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_reicht_15_00"); //To je vÅ¡ecko.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_reicht_14_01"); //To by nemÄ™l bejt problÃ©m.
 	B_DIA_Addon_Cord_YouAreRanger_WARN ();
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
 };
@@ -371,7 +371,7 @@ instance DIA_Addon_Cord_RangerHelp2GetSLD		(C_INFO)
 	information	 = 	DIA_Addon_Cord_RangerHelp2GetSLD_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Pomoz mi stát se oldnéâem.";
+	description	 = 	"Pomoz mi stÃ¡t se Å¾oldnÃ©Ã¢em.";
 };
 var int DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm;
 func int DIA_Addon_Cord_RangerHelp2GetSLD_Condition ()
@@ -385,80 +385,80 @@ func int DIA_Addon_Cord_RangerHelp2GetSLD_Condition ()
 };
 func void B_Cord_RangerHelpObsolete ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_00"); //U je to zaâízenı.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_01"); //No, tak v tom ti teda nepomùu.
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_02"); //Co tím myslíš?
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_03"); //No, znamená to, e ti nemùu pomoct.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_04"); //Nebo chceš, abych tu obcházel všecky oldáky a pâesvêdèoval je, aby ses k nám moh pâidat?
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_05"); //To musíš udêlat sám.
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_00"); //UÅ¾ je to zaÃ¢Ã­zenÃ½.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_01"); //No, tak v tom ti teda nepomÅ¯Å¾u.
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_02"); //Co tÃ­m myslÃ­Å¡?
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_03"); //No, znamenÃ¡ to, Å¾e ti nemÅ¯Å¾u pomoct.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_04"); //Nebo chceÅ¡, abych tu obchÃ¡zel vÅ¡ecky Å¾oldÃ¡ky a pÃ¢esvÄ™dÄoval je, aby ses k nÃ¡m moh pÃ¢idat?
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_05"); //To musÃ­Å¡ udÄ™lat sÃ¡m.
 	DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm = TRUE;
 	TOPIC_End_RangerHelpSLD = TRUE;
 };
 func void B_Cord_ComeLaterWhenDone ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cord_ComeLaterWhenDone_14_00"); //Tak pokraèuj, postarej se o to a pak se sem vraã.
+	AI_Output	(self, other, "DIA_Addon_Cord_ComeLaterWhenDone_14_00"); //Tak pokraÄuj, postarej se o to a pak se sem vraÄƒ.
 	AI_StopProcessInfos (self);
 };
 func void B_Cord_IDoItForYou ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_00"); //No jo, to je jednoduchı. Poslouchej. Vraã se zítra a já se o to zatím postarám.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_01"); //Ale na oplátku mi budeš muset nêco dát.
-	AI_Output	(other, self, "DIA_Addon_Cord_IDoItForYou_15_02"); //A co to má bıt?
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_03"); //V horách kousek na jihovıchod odsud leí malej tábor banditù.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_04"); //Kdy odsud pùjdeš na jihovıchod, brzo uvidíš vê.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_05"); //Jeden z mejch lidí jménem Patrick u pâed pár dny odešel, aby s têma smradama kšeftoval.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_06"); //Já mu âíkal, e je to blbej nápad, ale ten trouba mê neposlouchal.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_07"); //Myslím, e s ním udêlali krátkej proces, ale nevím to jistê.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_08"); //Take to musíš zjistit ty.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_00"); //No jo, to je jednoduchÃ½. Poslouchej. VraÄƒ se zÃ­tra a jÃ¡ se o to zatÃ­m postarÃ¡m.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_01"); //Ale na oplÃ¡tku mi budeÅ¡ muset nÄ™co dÃ¡t.
+	AI_Output	(other, self, "DIA_Addon_Cord_IDoItForYou_15_02"); //A co to mÃ¡ bÃ½t?
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_03"); //V horÃ¡ch kousek na jihovÃ½chod odsud leÅ¾Ã­ malej tÃ¡bor banditÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_04"); //KdyÅ¾ odsud pÅ¯jdeÅ¡ na jihovÃ½chod, brzo uvidÃ­Å¡ vÄ™Å¾.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_05"); //Jeden z mejch lidÃ­ jmÃ©nem Patrick uÅ¾ pÃ¢ed pÃ¡r dny odeÅ¡el, aby s tÄ™ma smradama kÅ¡eftoval.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_06"); //JÃ¡ mu Ã¢Ã­kal, Å¾e je to blbej nÃ¡pad, ale ten trouba mÄ™ neposlouchal.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_07"); //MyslÃ­m, Å¾e s nÃ­m udÄ™lali krÃ¡tkej proces, ale nevÃ­m to jistÄ™.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_08"); //TakÅ¾e to musÃ­Å¡ zjistit ty.
 
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Torlofovu zkoušku se postará Cord, jeho kamarád Patrick nedávno zmizel. Mám se proto vypravit na jihovıchod do malého horského tábora banditù a podívat se, jestli tam Patrick není."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Torlofovu zkouÅ¡ku se postarÃ¡ Cord, jehoÅ¾ kamarÃ¡d Patrick nedÃ¡vno zmizel. MÃ¡m se proto vypravit na jihovÃ½chod do malÃ©ho horskÃ©ho tÃ¡bora banditÅ¯ a podÃ­vat se, jestli tam Patrick nenÃ­."); 
 
 	
 	Info_ClearChoices	(DIA_Addon_Cord_RangerHelp2GetSLD);	
-	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "Zapomeà na to. To je mnohem horší ne ten Torlofùv úkol.", B_Cord_IDoItForYou_mist );
-	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "A coe víš tak jistê, e SE MNOU ten krátkı proces neudêlají?", B_Cord_IDoItForYou_Dexter );
+	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "ZapomeÅ• na to. To je mnohem horÅ¡Ã­ neÅ¾ ten TorlofÅ¯v Ãºkol.", B_Cord_IDoItForYou_mist );
+	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "A coÅ¾e vÃ­Å¡ tak jistÄ™, Å¾e SE MNOU ten krÃ¡tkÃ½ proces neudÄ™lajÃ­?", B_Cord_IDoItForYou_Dexter );
 		
 	DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm = TRUE;
 };
 func void B_Cord_IDoItForYou_mist ()
 {
-	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_mist_15_00"); //Na to zapomeà. To je ještê horší ne ten úkol, co mi zadal Torlof.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_01"); //Ale tak to bejt nemusí. Takovej malej, umaštênej a nevıraznej chlápek jako ty jim urèitê bude šumafuk.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_02"); //A já sám to udêlat nemùu, protoe kdyby ti chlapi jenom zahlídli nêkoho ze oldákù, byla by z toho poâádná mela.
+	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_mist_15_00"); //Na to zapomeÅ•. To je jeÅ¡tÄ™ horÅ¡Ã­ neÅ¾ ten Ãºkol, co mi zadal Torlof.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_01"); //Ale tak to bejt nemusÃ­. Takovej malej, umaÅ¡tÄ™nej a nevÃ½raznej chlÃ¡pek jako ty jim urÄitÄ™ bude Å¡umafuk.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_02"); //A jÃ¡ sÃ¡m to udÄ™lat nemÅ¯Å¾u, protoÅ¾e kdyby ti chlapi jenom zahlÃ­dli nÄ™koho ze Å¾oldÃ¡kÅ¯, byla by z toho poÃ¢Ã¡dnÃ¡ mela.
 };
 func void B_Cord_IDoItForYou_Dexter ()
 {
-	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_Dexter_15_00"); //A proè seš si tak jistej, e stejnej krátkej proces neudêlají i SE MNOU?
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_01"); //Protoe já vím, jak se jmenuje jejich kápo. Je to Dexter. Staèí tvrdit, e ho znáš.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_02"); //Jeho chlapi si pak sakra rozmyslej, ne ti zakroutêj krkem.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_03"); //Samozâejmê to i tak bude o hubu.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_04"); //Ale ty to zvládneš.
+	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_Dexter_15_00"); //A proÄ seÅ¡ si tak jistej, Å¾e stejnej krÃ¡tkej proces neudÄ™lajÃ­ i SE MNOU?
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_01"); //ProtoÅ¾e jÃ¡ vÃ­m, jak se jmenuje jejich kÃ¡po. Je to Dexter. StaÄÃ­ tvrdit, Å¾e ho znÃ¡Å¡.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_02"); //Jeho chlapi si pak sakra rozmyslej, neÅ¾ ti zakroutÄ™j krkem.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_03"); //SamozÃ¢ejmÄ™ to i tak bude o hubu.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_04"); //Ale ty to zvlÃ¡dneÅ¡.
 	Info_ClearChoices	(DIA_Addon_Cord_RangerHelp2GetSLD);	
 	
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Velitel banditù se jmenuje Dexter."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Velitel banditÅ¯ se jmenuje Dexter."); 
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"oldnéâ Cord hledá svého kamaráda Patricka."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Å½oldnÃ©Ã¢ Cord hledÃ¡ svÃ©ho kamarÃ¡da Patricka."); 
 		
 	MIS_Addon_Cord_Look4Patrick = LOG_RUNNING;
 	Ranger_SCKnowsDexter = TRUE; 
 };
 func void DIA_Addon_Cord_RangerHelp2GetSLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_00"); //Pomoz mi stát se oldákem.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_01"); //Tak já nad tím zauvauju. Hmm. Jestli tu chceš udêlat nêjakej pokrok, musíš projít pâes Torlofa.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_02"); //U jsi to zaâídil s Torlofem?
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_00"); //Pomoz mi stÃ¡t se Å¾oldÃ¡kem.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_01"); //Tak jÃ¡ nad tÃ­m zauvaÅ¾uju. Hmm. Jestli tu chceÅ¡ udÄ™lat nÄ™jakej pokrok, musÃ­Å¡ projÃ­t pÃ¢es Torlofa.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_02"); //UÅ¾ jsi to zaÃ¢Ã­dil s Torlofem?
 
 	if (Torlof_Go == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_03"); //Vlastnê ne.
+		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_03"); //VlastnÄ™ ne.
 		B_Cord_ComeLaterWhenDone ();
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_04"); //Ano, jde o tu zkoušku a tak.
-		AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_05"); //Aha, a jaká zkouška by to mêla bıt?
+		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_04"); //Ano, jde o tu zkouÅ¡ku a tak.
+		AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_05"); //Aha, a jakÃ¡ zkouÅ¡ka by to mÄ™la bÃ½t?
 		
 		if	(Torlof_ProbeBestanden == TRUE)
 		|| ((MIS_Torlof_BengarMilizKlatschen == LOG_RUNNING)&& (Npc_IsDead (Rumbold))&& (Npc_IsDead (Rick)))
@@ -468,17 +468,17 @@ func void DIA_Addon_Cord_RangerHelp2GetSLD_Info ()
 		}		
 		else if (Torlof_Probe == 0)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_06"); //Ještê jsem ji nepâijal.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_06"); //JeÅ¡tÄ™ jsem ji nepÃ¢ijal.
 			B_Cord_ComeLaterWhenDone ();
 		}		
 		else if (Torlof_Probe == Probe_Sekob)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_07"); //Mám vybrat nájem na Sekobovê statku.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_07"); //MÃ¡m vybrat nÃ¡jem na SekobovÄ™ statku.
 			B_Cord_IDoItForYou ();
 		}
 		else if (Torlof_Probe == Probe_Bengar)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_08"); //Mám vyhnat domobranu z Bengarova statku.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_08"); //MÃ¡m vyhnat domobranu z Bengarova statku.
 			B_Cord_IDoItForYou ();
 		}
 		else 
@@ -498,7 +498,7 @@ instance DIA_Addon_Cord_TalkedToDexter		(C_INFO)
 	condition	 = 	DIA_Addon_Cord_TalkedToDexter_Condition;
 	information	 = 	DIA_Addon_Cord_TalkedToDexter_Info;
 
-	description	 = 	"Zašel jsem za Dexterem.";
+	description	 = 	"ZaÅ¡el jsem za Dexterem.";
 };
 
 func int DIA_Addon_Cord_TalkedToDexter_Condition ()
@@ -518,28 +518,28 @@ func void DIA_Addon_Cord_TalkedToDexter_Info ()
 	
 	if (Npc_IsDead(BDT_1060_Dexter))
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_02"); //Dexter je mrtvı.
+		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_02"); //Dexter je mrtvÃ½.
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_03"); //Ale po tvém kámoši Patrickovi není nikde ani stopy.
+	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_03"); //Ale po tvÃ©m kÃ¡moÅ¡i Patrickovi nenÃ­ nikde ani stopy.
 	
 	if (Dexter_KnowsPatrick == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_04"); //Dexter si ho pamatuje, ale tvrdil, e u ho jak dlouho nevidêl.
-		AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_05"); //A víš urèitê, e ti Dexter nelhal?
-		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_06"); //To ne, ale víc u nevím.
+		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_04"); //Dexter si ho pamatuje, ale tvrdil, Å¾e uÅ¾ ho jak dlouho nevidÄ™l.
+		AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_05"); //A vÃ­Å¡ urÄitÄ™, Å¾e ti Dexter nelhal?
+		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_06"); //To ne, ale vÃ­c uÅ¾ nevÃ­m.
 		
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_07"); //Nechápu to. Jako by se po nêm slehla zem.
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_08"); //No, svou èást dohody jsi dodrel.
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_07"); //NechÃ¡pu to. Jako by se po nÄ™m slehla zem.
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_08"); //No, svou ÄÃ¡st dohody jsi dodrÅ¾el.
 
 	MIS_Addon_Cord_Look4Patrick = LOG_SUCCESS;
 	TOPIC_End_RangerHelpSLD = TRUE;
 	B_GivePlayerXP (XP_Addon_Cord_Look4Patrick);
 
-	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_09"); //A co teë bude s Torlofovou zkouškou?
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_10"); //Neboj, mùeš se vrátit k Torlofovi. Svùj úkol jsi splnil a prošel jsi zkouškou. Âíkal jsem ti, e to zaâídím.
+	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_09"); //A co teÃ« bude s Torlofovou zkouÅ¡kou?
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_10"); //Neboj, mÅ¯Å¾eÅ¡ se vrÃ¡tit k Torlofovi. SvÅ¯j Ãºkol jsi splnil a proÅ¡el jsi zkouÅ¡kou. Ã‚Ã­kal jsem ti, Å¾e to zaÃ¢Ã­dÃ­m.
 
 	Cord_RangerHelp_TorlofsProbe = TRUE;
 
@@ -563,7 +563,7 @@ INSTANCE DIA_Cord_ReturnPatrick   (C_INFO)
 	condition   = DIA_Cord_ReturnPatrick_Condition;
 	information = DIA_Cord_ReturnPatrick_Info;
 	permanent   = FALSE;
-	description = "Patrick se vrátil.";
+	description = "Patrick se vrÃ¡til.";
 };
 
 FUNC INT DIA_Cord_ReturnPatrick_Condition()
@@ -576,15 +576,15 @@ FUNC INT DIA_Cord_ReturnPatrick_Condition()
 };
 FUNC VOID DIA_Cord_ReturnPatrick_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_00"); //Patrick je zpátky.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_01"); //Jojo. A já málem ztratil nadêji.
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_02"); //Hele, udêlej pro mê nêco.
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_00"); //Patrick je zpÃ¡tky.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_01"); //Jojo. A jÃ¡ mÃ¡lem ztratil nadÄ™ji.
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_02"); //Hele, udÄ™lej pro mÄ™ nÄ™co.
 	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_03"); //A co?
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_04"); //Ušetâi nás dêkovnejch kecù.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_05"); //Vùbec jsem ti nechtêl podêkovat.
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_04"); //UÅ¡etÃ¢i nÃ¡s dÄ™kovnejch kecÅ¯.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_05"); //VÅ¯bec jsem ti nechtÄ™l podÄ™kovat.
 	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_06"); //Ale?
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_07"); //(šklebí se) Chtêl jsem ti âíct, e seš sakra drzej parchant.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_09"); //(šklebí se) To chce klid!
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_07"); //(Å¡klebÃ­ se) ChtÄ™l jsem ti Ã¢Ã­ct, Å¾e seÅ¡ sakra drzej parchant.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_09"); //(Å¡klebÃ­ se) To chce klid!
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
@@ -599,7 +599,7 @@ INSTANCE DIA_Cord_ExplainSkills   (C_INFO)
 	condition   = DIA_Cord_ExplainSkills_Condition;
 	information = DIA_Cord_ExplainSkills_Info;
 	permanent   = FALSE;
-	description = "Co bych se mêl nauèit jako první, boj s jednoruèními nebo obouruèními zbranêmi?";
+	description = "Co bych se mÄ™l nauÄit jako prvnÃ­, boj s jednoruÄnÃ­mi nebo obouruÄnÃ­mi zbranÄ™mi?";
 };
 
 FUNC INT DIA_Cord_ExplainSkills_Condition()
@@ -611,14 +611,14 @@ FUNC INT DIA_Cord_ExplainSkills_Condition()
 };
 FUNC VOID DIA_Cord_ExplainSkills_Info()
 {
-	AI_Output (other, self, "DIA_Cord_ExplainSkills_15_00"); //Co bych se mêl nauèit jako první, boj s jednoruèními, nebo obouruèními zbranêmi?
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_01"); //Oba dva druhy boje jsou si hodnê podobné.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_02"); //Jakmile dosáhneš u jednoho typu zbraní další úrovnê, automaticky se to nauèíš také pro druhı typ zbraní.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_03"); //Jestlie jsi napâíklad dobrı v boji s jednoruèními meèi, ale jsi stále zaèáteèník v boji s obouruèními zbranêmi...
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_04"); //...tvé dovednosti s obouruèními zbranêmi se zvıší, i kdy trénuješ s jednoruèní zbraní.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_05"); //Pokud trénuješ pouze s jedním typem zbraní, zjistíš, e vıcvik je mnohem více vyèerpávající.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_06"); //Pokud trénuješ vdy s obêma typy zbraní, dosáhneš stejného vısledku s menším úsilím.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_07"); //V koneèném dùsledku dosáhneš stejného vısledku obêma zpùsoby - vıbêr je na tobê.
+	AI_Output (other, self, "DIA_Cord_ExplainSkills_15_00"); //Co bych se mÄ™l nauÄit jako prvnÃ­, boj s jednoruÄnÃ­mi, nebo obouruÄnÃ­mi zbranÄ™mi?
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_01"); //Oba dva druhy boje jsou si hodnÄ™ podobnÃ©.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_02"); //Jakmile dosÃ¡hneÅ¡ u jednoho typu zbranÃ­ dalÅ¡Ã­ ÃºrovnÄ™, automaticky se to nauÄÃ­Å¡ takÃ© pro druhÃ½ typ zbranÃ­.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_03"); //JestliÅ¾e jsi napÃ¢Ã­klad dobrÃ½ v boji s jednoruÄnÃ­mi meÄi, ale jsi stÃ¡le zaÄÃ¡teÄnÃ­k v boji s obouruÄnÃ­mi zbranÄ™mi...
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_04"); //...tvÃ© dovednosti s obouruÄnÃ­mi zbranÄ™mi se zvÃ½Å¡Ã­, i kdyÅ¾ trÃ©nujeÅ¡ s jednoruÄnÃ­ zbranÃ­.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_05"); //Pokud trÃ©nujeÅ¡ pouze s jednÃ­m typem zbranÃ­, zjistÃ­Å¡, Å¾e vÃ½cvik je mnohem vÃ­ce vyÄerpÃ¡vajÃ­cÃ­.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_06"); //Pokud trÃ©nujeÅ¡ vÅ¾dy s obÄ™ma typy zbranÃ­, dosÃ¡hneÅ¡ stejnÃ©ho vÃ½sledku s menÅ¡Ã­m ÃºsilÃ­m.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_07"); //V koneÄnÃ©m dÅ¯sledku dosÃ¡hneÅ¡ stejnÃ©ho vÃ½sledku obÄ™ma zpÅ¯soby - vÃ½bÄ™r je na tobÄ™.
 };
 // ************************************************************
 // 			  				ExplainWeapons
@@ -630,7 +630,7 @@ INSTANCE DIA_Cord_ExplainWeapons   (C_INFO)
 	condition   = DIA_Cord_ExplainWeapons_Condition;
 	information = DIA_Cord_ExplainWeapons_Info;
 	permanent   = FALSE;
-	description = "Jaké jsou vıhody jednoruèních a obouruèních zbraní?";
+	description = "JakÃ© jsou vÃ½hody jednoruÄnÃ­ch a obouruÄnÃ­ch zbranÃ­?";
 };
 
 FUNC INT DIA_Cord_ExplainWeapons_Condition()
@@ -643,12 +643,12 @@ FUNC INT DIA_Cord_ExplainWeapons_Condition()
 
 FUNC VOID DIA_Cord_ExplainWeapons_Info()
 {
-	AI_Output (other, self, "DIA_Cord_ExplainWeapons_15_00"); //Jaké jsou vıhody jednoruèních a obouruèních zbraní?
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_01"); //Dobrá otázka. Vidím, e téhle vêci vênuješ dostateènou pozornost.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_02"); //Jednoruèní zbranê jsou rychlejší, ale trochu slabší.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_03"); //Obouruèní zbranê zpùsobují vêtší poškození, ale nemùeš s nimi útoèit tak rychle.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_04"); //K ovládání obouruèních zbraní také potâebuješ více síly. To znamená dodateènı trénink.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_05"); //Jedinı zpùsob, jak se stát skuteènê dobrım, je vloit do toho mnoho úsilí.
+	AI_Output (other, self, "DIA_Cord_ExplainWeapons_15_00"); //JakÃ© jsou vÃ½hody jednoruÄnÃ­ch a obouruÄnÃ­ch zbranÃ­?
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_01"); //DobrÃ¡ otÃ¡zka. VidÃ­m, Å¾e tÃ©hle vÄ™ci vÄ™nujeÅ¡ dostateÄnou pozornost.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_02"); //JednoruÄnÃ­ zbranÄ™ jsou rychlejÅ¡Ã­, ale trochu slabÅ¡Ã­.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_03"); //ObouruÄnÃ­ zbranÄ™ zpÅ¯sobujÃ­ vÄ™tÅ¡Ã­ poÅ¡kozenÃ­, ale nemÅ¯Å¾eÅ¡ s nimi ÃºtoÄit tak rychle.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_04"); //K ovlÃ¡dÃ¡nÃ­ obouruÄnÃ­ch zbranÃ­ takÃ© potÃ¢ebujeÅ¡ vÃ­ce sÃ­ly. To znamenÃ¡ dodateÄnÃ½ trÃ©nink.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_05"); //JedinÃ½ zpÅ¯sob, jak se stÃ¡t skuteÄnÄ™ dobrÃ½m, je vloÅ¾it do toho mnoho ÃºsilÃ­.
 };
 
 // ******************************************************
@@ -666,7 +666,7 @@ INSTANCE DIA_Cord_Teach(C_INFO)
 	condition	= DIA_Cord_Teach_Condition;
 	information	= DIA_Cord_Teach_Info;
 	permanent	= TRUE;
-	description = "Nauè mê bojovat!";
+	description = "NauÄ mÄ™ bojovat!";
 };                       
 
 FUNC INT DIA_Cord_Teach_Condition()
@@ -676,12 +676,12 @@ FUNC INT DIA_Cord_Teach_Condition()
 
 FUNC VOID B_Cord_Zeitverschwendung ()
 {
-	AI_Output (self ,other,"DIA_Cord_Teach_14_03"); //Nebudu plıtvat svım èasem se zaèáteèníky.
+	AI_Output (self ,other,"DIA_Cord_Teach_14_03"); //Nebudu plÃ½tvat svÃ½m Äasem se zaÄÃ¡teÄnÃ­ky.
 };
 
 FUNC VOID DIA_Cord_Teach_Info()
 {	
-	AI_Output (other,self, "DIA_Cord_Teach_15_00"); //Nauè mê bojovat!
+	AI_Output (other,self, "DIA_Cord_Teach_15_00"); //NauÄ mÄ™ bojovat!
 	if (Cord_Approved == TRUE)
 	|| (hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG)
@@ -692,19 +692,19 @@ FUNC VOID DIA_Cord_Teach_Info()
 		{
 		
 		
-			AI_Output (self ,other,"DIA_Cord_Teach_14_01"); //Mohu tê nauèit pouívat jakoukoliv zbraà - kde zaèneme?
+			AI_Output (self ,other,"DIA_Cord_Teach_14_01"); //Mohu tÄ™ nauÄit pouÅ¾Ã­vat jakoukoliv zbraÅ• - kde zaÄneme?
 			Cord_Approved = TRUE;
 		}
 		else if  (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 		{
-			AI_Output (self ,other,"DIA_Cord_Teach_14_02"); //Mohu tê nauèit pouívat jednoruèní meè. Ale nejsi dost dobrej na to, abys pouíval obouruèák.
+			AI_Output (self ,other,"DIA_Cord_Teach_14_02"); //Mohu tÄ™ nauÄit pouÅ¾Ã­vat jednoruÄnÃ­ meÄ. Ale nejsi dost dobrej na to, abys pouÅ¾Ã­val obouruÄÃ¡k.
 			B_Cord_Zeitverschwendung();
 			Cord_Approved = TRUE;
 		}
 		else if (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 		{
-			AI_Output (self ,other,"DIA_Cord_Teach_14_04"); //Co se tıèe jednoruèních zbraní, jsi naprostı zaèáteèník! Ale tvé dovednosti v obouruèních zbraních nejsou tak špatné.
-			AI_Output (self ,other,"DIA_Cord_Teach_14_05"); //Pokud potâebuješ více zkušeností s jednoruèními zbranêmi, jdi si najít jiného uèitele.
+			AI_Output (self ,other,"DIA_Cord_Teach_14_04"); //Co se tÃ½Äe jednoruÄnÃ­ch zbranÃ­, jsi naprostÃ½ zaÄÃ¡teÄnÃ­k! Ale tvÃ© dovednosti v obouruÄnÃ­ch zbranÃ­ch nejsou tak Å¡patnÃ©.
+			AI_Output (self ,other,"DIA_Cord_Teach_14_05"); //Pokud potÃ¢ebujeÅ¡ vÃ­ce zkuÅ¡enostÃ­ s jednoruÄnÃ­mi zbranÄ™mi, jdi si najÃ­t jinÃ©ho uÄitele.
 			Cord_Approved = TRUE;
 		}
 		else
@@ -738,7 +738,7 @@ FUNC VOID DIA_Cord_Teach_Info()
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Cord_Teach_14_06"); //Já trénuji pouze oldáky nebo vhodné uchazeèe!
+		AI_Output (self ,other,"DIA_Cord_Teach_14_06"); //JÃ¡ trÃ©nuji pouze Å¾oldÃ¡ky nebo vhodnÃ© uchazeÄe!
 	};
 };
 
@@ -747,7 +747,7 @@ FUNC VOID DIA_Cord_Teach_Back ()
 	if (Cord_Merke_1h < other.HitChance[NPC_TALENT_1H])
 	|| (Cord_Merke_2h < other.HitChance[NPC_TALENT_2H])
 	{
-		AI_Output (self ,other,"DIA_Cord_Teach_BACK_14_00"); //Jestli ses u zlepšil, tak v tom pokraèuj!
+		AI_Output (self ,other,"DIA_Cord_Teach_BACK_14_00"); //Jestli ses uÅ¾ zlepÅ¡il, tak v tom pokraÄuj!
 	};
 	
 	Info_ClearChoices (DIA_Cord_Teach);

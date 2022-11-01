@@ -27,37 +27,37 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentSmith,"K vykování takové zbranê potâebuji hlavnê kousek surové oceli. Tu pak doruda rozhavím v kováâské vıhni a pak ji budu kout na kovadlinê. K vırobê nêkterıch zbraní potâebuji i další substance, které jim propùjèí jedineèné vlastnosti.");
+	B_LogEntry (TOPIC_TalentSmith,"K vykovÃ¡nÃ­ takovÃ© zbranÄ™ potÃ¢ebuji hlavnÄ™ kousek surovÃ© oceli. Tu pak doruda rozÅ¾havÃ­m v kovÃ¡Ã¢skÃ© vÃ½hni a pak ji budu kout na kovadlinÄ™. K vÃ½robÄ™ nÄ™kterÃ½ch zbranÃ­ potÃ¢ebuji i dalÅ¡Ã­ substance, kterÃ© jim propÅ¯jÄÃ­ jedineÄnÃ© vlastnosti.");
 	
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"K vytvoâení samokovného meèe u nepotâebuji ádné další ingredience.   ");};
+	B_LogEntry (TOPIC_TalentSmith,"K vytvoÃ¢enÃ­ samokovnÃ©ho meÄe uÅ¾ nepotÃ¢ebuji Å¾Ã¡dnÃ© dalÅ¡Ã­ ingredience.   ");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"K vykování dlouhého meèe z rudy potâebuji 1 hrudku rudy.                ");};
+	B_LogEntry (TOPIC_TalentSmith,"K vykovÃ¡nÃ­ dlouhÃ©ho meÄe z rudy potÃ¢ebuji 1 hrudku rudy.                ");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"K vykování obouruèního meèe z rudy potâebuji 2 hrudky rudy.");};
+	B_LogEntry (TOPIC_TalentSmith,"K vykovÃ¡nÃ­ obouruÄnÃ­ho meÄe z rudy potÃ¢ebuji 2 hrudky rudy.");};
 	if (waffe == WEAPON_1H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"K vykování meèe bastardu z rudy potâebuji 2 hrudky rudy.                     ");};
+	B_LogEntry (TOPIC_TalentSmith,"K vykovÃ¡nÃ­ meÄe bastardu z rudy potÃ¢ebuji 2 hrudky rudy.                     ");};
 	if (waffe == WEAPON_2H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"K vykování têkého obouruèního meèe z rudy potâebuji 3 hrudky rudy.");};
+	B_LogEntry (TOPIC_TalentSmith,"K vykovÃ¡nÃ­ tÄ™Å¾kÃ©ho obouruÄnÃ­ho meÄe z rudy potÃ¢ebuji 3 hrudky rudy.");};
 	if (waffe == WEAPON_1H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"K vykování váleèné èepele z rudy potâebuji 3 hrudky rudy.                                          ");};
+	B_LogEntry (TOPIC_TalentSmith,"K vykovÃ¡nÃ­ vÃ¡leÄnÃ© Äepele z rudy potÃ¢ebuji 3 hrudky rudy.                                          ");};
 	if (waffe == WEAPON_2H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"K vykování têké váleèné èepele z rudy potâebuji 4 hrudky rudy.");};
+	B_LogEntry (TOPIC_TalentSmith,"K vykovÃ¡nÃ­ tÄ™Å¾kÃ© vÃ¡leÄnÃ© Äepele z rudy potÃ¢ebuji 4 hrudky rudy.");};
 	if (waffe == WEAPON_1H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Pâidám-li 4 kousky rudy a pêtkrát draèí krev, mohu vykovat DRAKOBIJCE.");};
+	B_LogEntry (TOPIC_TalentSmith,"PÃ¢idÃ¡m-li 4 kousky rudy a pÄ™tkrÃ¡t draÄÃ­ krev, mohu vykovat DRAKOBIJCE.");};
 	if (waffe == WEAPON_2H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Kdy pouiji 5 kouskù rudy a pêtkrát draèí krev, vykovám VELKÉHO DRAKOBIJCE.");};
+	B_LogEntry (TOPIC_TalentSmith,"KdyÅ¾ pouÅ¾iji 5 kouskÅ¯ rudy a pÄ™tkrÃ¡t draÄÃ­ krev, vykovÃ¡m VELKÃ‰HO DRAKOBIJCE.");};
 	
 	//Harad - Addon
 	if (waffe == WEAPON_1H_Harad_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Nyní umím vykovat kvalitní meè."); };
+	B_LogEntry (TOPIC_TalentSmith,"NynÃ­ umÃ­m vykovat kvalitnÃ­ meÄ."); };
 	if (waffe == WEAPON_1H_Harad_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Nyní umím vykovat kvalitní dlouhı meè."); };
+	B_LogEntry (TOPIC_TalentSmith,"NynÃ­ umÃ­m vykovat kvalitnÃ­ dlouhÃ½ meÄ."); };
 	if (waffe == WEAPON_1H_Harad_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Nyní mohu vykovat i rubínovou èepel."); };
-	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;	B_LogEntry (TOPIC_TalentSmith,"Harad mê nauèil vykovat 'El Bastardo', nejlepší jednoruèní meè, jakı se dá sehnat!"); };
+	B_LogEntry (TOPIC_TalentSmith,"NynÃ­ mohu vykovat i rubÃ­novou Äepel."); };
+	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;	B_LogEntry (TOPIC_TalentSmith,"Harad mÄ™ nauÄil vykovat 'El Bastardo', nejlepÅ¡Ã­ jednoruÄnÃ­ meÄ, jakÃ½ se dÃ¡ sehnat!"); };
 	
 	PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 	

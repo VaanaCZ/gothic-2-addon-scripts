@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Riordian_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Riordian_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Riordian_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Riordian_NW_PICKPOCKET_Condition()
@@ -83,7 +83,7 @@ instance DIA_Addon_Riordian_Hallo		(C_INFO)
 	nr			 = 	5;
 	condition	 = 	DIA_Addon_Riordian_Hallo_Condition;
 	information	 = 	DIA_Addon_Riordian_Hallo_Info;
-	description	 = 	"Co to dêláš?";
+	description	 = 	"Co to dÄ™lÃ¡Å¡?";
 };
 
 func int DIA_Addon_Riordian_Hallo_Condition ()
@@ -93,11 +93,11 @@ func int DIA_Addon_Riordian_Hallo_Condition ()
 
 func void DIA_Addon_Riordian_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Hallo_15_00"); //Co dêláš?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //Studuji kulturu dávného lidu.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //Podle písemností, které jsme tu našli, tu ili velmi dlouho pâed námi.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //Nevím pâesnê, KDY tyhle sínê postavili, ale jejich civilizace byla na velmi vysoké úrovni.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //Na druhé stranê hor vybudovali velké mêsto. (uválivê) A taky Adanùv chrám.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Hallo_15_00"); //Co dÄ™lÃ¡Å¡?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //Studuji kulturu dÃ¡vnÃ©ho lidu.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //Podle pÃ­semnostÃ­, kterÃ© jsme tu naÅ¡li, tu Å¾ili velmi dlouho pÃ¢ed nÃ¡mi.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //NevÃ­m pÃ¢esnÄ™, KDY tyhle sÃ­nÄ™ postavili, ale jejich civilizace byla na velmi vysokÃ© Ãºrovni.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //Na druhÃ© stranÄ™ hor vybudovali velkÃ© mÄ™sto. (uvÃ¡Å¾livÄ™) A taky AdanÅ¯v chrÃ¡m.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Alter
@@ -108,7 +108,7 @@ instance DIA_Addon_Riordian_Alter		(C_INFO)
 	nr			 = 	6;
 	condition	 = 	DIA_Addon_Riordian_Alter_Condition;
 	information	 = 	DIA_Addon_Riordian_Alter_Info;
-	description	 = 	"Jak stará je podle tebe tahle stavba?";
+	description	 = 	"Jak starÃ¡ je podle tebe tahle stavba?";
 };
 func int DIA_Addon_Riordian_Alter_Condition ()
 {
@@ -119,8 +119,8 @@ func int DIA_Addon_Riordian_Alter_Condition ()
 };
 func void DIA_Addon_Riordian_Alter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Alter_15_00"); //Jak si myslíš, e je tahle budova stará?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Alter_10_01"); //No, pâesnê ti to zatím neâeknu, ale urèitê nêkolik set let.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Alter_15_00"); //Jak si myslÃ­Å¡, Å¾e je tahle budova starÃ¡?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Alter_10_01"); //No, pÃ¢esnÄ™ ti to zatÃ­m neÃ¢eknu, ale urÄitÄ™ nÄ™kolik set let.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Atlantis
@@ -131,7 +131,7 @@ instance DIA_Addon_Riordian_Atlantis		(C_INFO)
 	nr			 = 	4;
 	condition	 = 	DIA_Addon_Riordian_Atlantis_Condition;
 	information	 = 	DIA_Addon_Riordian_Atlantis_Info;
-	description	 = 	"Ztracené mêsto na ostrovê Khorinidu?";
+	description	 = 	"ZtracenÃ© mÄ™sto na ostrovÄ™ Khorinidu?";
 };
 
 func int DIA_Addon_Riordian_Atlantis_Condition ()
@@ -144,14 +144,14 @@ func int DIA_Addon_Riordian_Atlantis_Condition ()
 
 func void DIA_Addon_Riordian_Atlantis_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //Ztracené mêsto na ostrovê Khorinidu?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Ano. Dosud jsme ili v domnêní, e celı ostrov u máme zmapovanı.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //Poèítali jsme, e na severovıchodê se rozkládá jen jedno velké pohoâí.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //Ale mılili jsme se.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Za têmi horami leí ještê údolí. A kdysi tam stávalo mêsto dávného lidu.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //(povzdechne si) Moc rád bych vidêl, jaké domy v tom mêstê stály, ale u se nejspíš dávno obrátily v prach.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //ZtracenÃ© mÄ™sto na ostrovÄ™ Khorinidu?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Ano. Dosud jsme Å¾ili v domnÄ™nÃ­, Å¾e celÃ½ ostrov uÅ¾ mÃ¡me zmapovanÃ½.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //PoÄÃ­tali jsme, Å¾e na severovÃ½chodÄ™ se rozklÃ¡dÃ¡ jen jedno velkÃ© pohoÃ¢Ã­.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //Ale mÃ½lili jsme se.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Za tÄ™mi horami leÅ¾Ã­ jeÅ¡tÄ™ ÃºdolÃ­. A kdysi tam stÃ¡valo mÄ™sto dÃ¡vnÃ©ho lidu.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //(povzdechne si) Moc rÃ¡d bych vidÄ™l, jakÃ© domy v tom mÄ™stÄ™ stÃ¡ly, ale uÅ¾ se nejspÃ­Å¡ dÃ¡vno obrÃ¡tily v prach.
 	
-	B_LogEntry (TOPIC_Addon_KDW,"Vodní mágové se domnívají, e za portálem leí pradávné ztracené mêsto."); 
+	B_LogEntry (TOPIC_Addon_KDW,"VodnÃ­ mÃ¡govÃ© se domnÃ­vajÃ­, Å¾e za portÃ¡lem leÅ¾Ã­ pradÃ¡vnÃ© ztracenÃ© mÄ™sto."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SaturasWantYou
@@ -162,7 +162,7 @@ instance DIA_Addon_Riordian_SaturasWantYou		(C_INFO)
 	nr			 = 	5;
 	condition	 = 	DIA_Addon_Riordian_SaturasWantYou_Condition;
 	information	 = 	DIA_Addon_Riordian_SaturasWantYou_Info;
-	description	 = 	"Saturas tê chce vidêt.";
+	description	 = 	"Saturas tÄ™ chce vidÄ™t.";
 };
 
 func int DIA_Addon_Riordian_SaturasWantYou_Condition ()
@@ -176,13 +176,13 @@ func int DIA_Addon_Riordian_SaturasWantYou_Condition ()
 
 func void DIA_Addon_Riordian_SaturasWantYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //Saturas tê chce vidêt.
-	AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //Pokroèil ve svém pátrání? Pak za ním okamitê zajdu.
+	AI_Output	(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //Saturas tÄ™ chce vidÄ™t.
+	AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //PokroÄil ve svÃ©m pÃ¡trÃ¡nÃ­? Pak za nÃ­m okamÅ¾itÄ™ zajdu.
 	
 	if (Nefarius_NW.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //Jestli se chceš dozvêdêt víc o tomhle komplexu, promluv si s Nefariem.
-		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //Najdeš ho kousek dál, vzadu v têchto hrobkách.
+		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //Jestli se chceÅ¡ dozvÄ™dÄ™t vÃ­c o tomhle komplexu, promluv si s Nefariem.
+		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //NajdeÅ¡ ho kousek dÃ¡l, vzadu v tÄ™chto hrobkÃ¡ch.
 	};	
 	
 	AI_StopProcessInfos (self);
@@ -204,7 +204,7 @@ instance DIA_Addon_Riordian_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Objevili jste nêco nového?";
+	description	 = 	"Objevili jste nÄ™co novÃ©ho?";
 };
 
 func int DIA_Addon_Riordian_Perm_Condition ()
@@ -217,15 +217,15 @@ func int DIA_Addon_Riordian_Perm_Condition ()
 
 func void DIA_Addon_Riordian_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Perm_15_00"); //Našli jste nêco nového?
+	AI_Output	(other, self, "DIA_Addon_Riordian_Perm_15_00"); //NaÅ¡li jste nÄ™co novÃ©ho?
 	if (Riordian_PermNews == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_01"); //U je to jisté. Lid téhle prastaré kultury skuteènê vêâil v Adana!
+		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_01"); //UÅ¾ je to jistÃ©. Lid tÃ©hle prastarÃ© kultury skuteÄnÄ™ vÄ™Ã¢il v Adana!
 		Riordian_PermNews = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_02"); //Ani ne, vraã se pozdêji.
+		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_02"); //Ani ne, vraÄƒ se pozdÄ™ji.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -240,7 +240,7 @@ instance DIA_Addon_Riordian_TeachPre		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_TeachPre_Condition;
 	information	 = 	DIA_Addon_Riordian_TeachPre_Info;
 
-	description	 = 	"Vatras mi dal tento amulet pátrací bludièky.";
+	description	 = 	"Vatras mi dal tento amulet pÃ¡tracÃ­ bludiÄky.";
 };
 func int DIA_Addon_Riordian_TeachPre_Condition ()
 {
@@ -252,10 +252,10 @@ func int DIA_Addon_Riordian_TeachPre_Condition ()
 };
 func void DIA_Addon_Riordian_TeachPre_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_00"); //Vatras mi dal tento amulet pátrací bludièky.
-	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_01"); //Á! (rozvánê) Vzácnı artefakt. Mùe ti poslouit i k vıcviku bludièky, víš to?
-	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_02"); //A mùeš mi s tím pomoci?
-	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_03"); //Rád. Na téhle magii jsem pracoval velmi dlouho.
+	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_00"); //Vatras mi dal tento amulet pÃ¡tracÃ­ bludiÄky.
+	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_01"); //Ã! (rozvÃ¡Å¾nÄ™) VzÃ¡cnÃ½ artefakt. MÅ¯Å¾e ti poslouÅ¾it i k vÃ½cviku bludiÄky, vÃ­Å¡ to?
+	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_02"); //A mÅ¯Å¾eÅ¡ mi s tÃ­m pomoci?
+	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_03"); //RÃ¡d. Na tÃ©hle magii jsem pracoval velmi dlouho.
 	Riordian_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
@@ -272,7 +272,7 @@ instance DIA_Addon_Riordian_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Uka mi, jak si mohu vycvièit svou bludièku.";
+	description	 = 	"UkaÅ¾ mi, jak si mohu vycviÄit svou bludiÄku.";
 };
 var int DIA_Addon_Riordian_Teach_NoPerm;
 

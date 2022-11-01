@@ -94,18 +94,18 @@ FUNC VOID DIA_Jorgen_Hallo_Info()
 
 	if ((hero.guild == GIL_NOV) || (hero.guild == GIL_KDF))
 	{
-		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_01"); //VidÌm, ûe pat‚Ìö ke kl·öteru m·g˘.
-		AI_Output (other,self ,"DIA_Jorgen_Hallo_15_02"); //Ano, proË?
-		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_03"); //Neuûivili byste tam jeötÍ jednoho dÍlnÌka?
+		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_01"); //Vid√≠m, ≈æe pat√¢√≠≈° ke kl√°≈°teru m√°g≈Ø.
+		AI_Output (other,self ,"DIA_Jorgen_Hallo_15_02"); //Ano, proƒç?
+		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_03"); //Neu≈æivili byste tam je≈°tƒô jednoho dƒôln√≠ka?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_04"); //Hej, ty, uû jsi byl nÍkdy v kl·öte‚e?
-		AI_Output (other,self ,"DIA_Jorgen_Hallo_15_05"); //Moûn·, proË?
-		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_06"); //A jeötÍ po‚·d najÌmajÌ novÈ lidi?
+		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_04"); //Hej, ty, u≈æ jsi byl nƒôkdy v kl√°≈°te√¢e?
+		AI_Output (other,self ,"DIA_Jorgen_Hallo_15_05"); //Mo≈æn√°, proƒç?
+		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_06"); //A je≈°tƒô po√¢√°d naj√≠maj√≠ nov√© lidi?
 	};
 
-	AI_Output (self ,other,"DIA_Jorgen_Hallo_07_07"); //NevÍdÍl jsem, kam jinam se obr·tit.
+	AI_Output (self ,other,"DIA_Jorgen_Hallo_07_07"); //Nevƒôdƒôl jsem, kam jinam se obr√°tit.
 }; 
 
 //*********************************************************************
@@ -118,7 +118,7 @@ INSTANCE DIA_Jorgen_Novice   (C_INFO)
 	condition   = DIA_Jorgen_Novice_Condition;
 	information = DIA_Jorgen_Novice_Info;
 	permanent   = FALSE;
-	description	= "Neproöel tudy nÍjak˝ novic?";
+	description	= "Nepro≈°el tudy nƒôjak√Ω novic?";
 };
 
 FUNC INT DIA_Jorgen_Novice_Condition()
@@ -133,10 +133,10 @@ FUNC INT DIA_Jorgen_Novice_Condition()
 
 FUNC VOID DIA_Jorgen_Novice_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_Novice_15_00"); //Neproöel tudy nÍjak˝ novic?
-	AI_Output (self ,other,"DIA_Jorgen_Novice_07_01"); //No jasnÍ, tamhletudy.
+	AI_Output (other,self ,"DIA_Jorgen_Novice_15_00"); //Nepro≈°el tudy nƒôjak√Ω novic?
+	AI_Output (self ,other,"DIA_Jorgen_Novice_07_01"); //No jasnƒô, tamhletudy.
 	AI_PointAt	(self,"NW_TROLLAREA_NOVCHASE_01");
-	AI_Output (self,other,"DIA_Jorgen_Novice_07_02"); //T·mhle z toho mostu skoËil do vody a plaval, jako by mÍl v pat·ch ûraloka.
+	AI_Output (self,other,"DIA_Jorgen_Novice_07_02"); //T√°mhle z toho mostu skoƒçil do vody a plaval, jako by mƒôl v pat√°ch ≈æraloka.
 	AI_StopPointAt(self);
 }; 
 
@@ -150,7 +150,7 @@ INSTANCE DIA_Jorgen_Milten   (C_INFO)
 	condition   = DIA_Jorgen_Milten_Condition;
 	information = DIA_Jorgen_Milten_Info;
 	permanent   = FALSE;
-	description	= "Jestli m·ö namÌ‚eno do kl·ötera, mÍl by sis promluvit s Miltenem...";
+	description	= "Jestli m√°≈° nam√≠√¢eno do kl√°≈°tera, mƒôl by sis promluvit s Miltenem...";
 };
 
 FUNC INT DIA_Jorgen_Milten_Condition()
@@ -166,10 +166,10 @@ FUNC INT DIA_Jorgen_Milten_Condition()
 
 FUNC VOID DIA_Jorgen_Milten_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_Milten_15_00"); //Jestli mÌ‚Ìö do kl·ötera, mÍl by sis promluvit s Miltenem, ten ti urËitÍ dok·ûe pomoci.
-	AI_Output (self ,other,"DIA_Jorgen_Milten_07_01"); //Co myslÌö, pustÌ mÍ v˘bec dovnit‚?
-	AI_Output (other,self ,"DIA_Jorgen_Milten_15_02"); //Snad. Ale jak se tak na tebe dÌv·m, jen tÍûko si tÍ dovedu p‚edstavit v rouöe novic˘.
-	AI_Output (self ,other,"DIA_Jorgen_Milten_07_03"); //Dost tÍch nesmysl˘ - jasnÍ ûe budu nosit roucho novic˘. M·m takovej hlad, ûe bych byl schopnej ohlod·vat k˘ru ze strom˘.
+	AI_Output (other,self ,"DIA_Jorgen_Milten_15_00"); //Jestli m√≠√¢√≠≈° do kl√°≈°tera, mƒôl by sis promluvit s Miltenem, ten ti urƒçitƒô dok√°≈æe pomoci.
+	AI_Output (self ,other,"DIA_Jorgen_Milten_07_01"); //Co mysl√≠≈°, pust√≠ mƒô v≈Øbec dovnit√¢?
+	AI_Output (other,self ,"DIA_Jorgen_Milten_15_02"); //Snad. Ale jak se tak na tebe d√≠v√°m, jen tƒô≈æko si tƒô dovedu p√¢edstavit v rou≈°e novic≈Ø.
+	AI_Output (self ,other,"DIA_Jorgen_Milten_07_03"); //Dost tƒôch nesmysl≈Ø - jasnƒô ≈æe budu nosit roucho novic≈Ø. M√°m takovej hlad, ≈æe bych byl schopnej ohlod√°vat k≈Øru ze strom≈Ø.
 }; 
 
 //*********************************************************************
@@ -183,7 +183,7 @@ INSTANCE DIA_Jorgen_Home   (C_INFO)
 	condition   = DIA_Jorgen_Home_Condition;
 	information = DIA_Jorgen_Home_Info;
 
-	description	= "Odkud jsi p‚iöel?";
+	description	= "Odkud jsi p√¢i≈°el?";
 };
 
 FUNC INT DIA_Jorgen_Home_Condition()
@@ -196,12 +196,12 @@ FUNC INT DIA_Jorgen_Home_Condition()
 
 FUNC VOID DIA_Jorgen_Home_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_Home_15_00"); //Odkud jsi p‚iöel?
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_01"); //B˝val jsem kapit·nem velryb·‚skÈ lodi, chlapËe. Mo‚e je m˝m domovem.
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_02"); //P‚ed p·r mÍsÌci ale moji loÎ, starou dobrou Magdalenu, potopili pir·ti. A tak jsem tu zkejsnul.
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_03"); //Vûdycky jsem se chtÍl vr·tit zp·tky na mo‚e, ale od tÈ doby, co tu trËÌm, nevyplul z tohohle prokletÈho p‚Ìstavu ani jeden ökuner.
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_04"); //Jedin· loÎ, kter· v Khorinidu kotvÌ, je ta zatracen· v·leËn· kr·lovsk· galeona - a tam nikoho dalöÌho nep‚ijmou.
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_05"); //Tak co jeötÍ m˘ûu dÍlat? Uû jsem zkouöel vöechno - ve mÍstÍ pro mÍ û·dn· pr·ce nenÌ.
+	AI_Output (other,self ,"DIA_Jorgen_Home_15_00"); //Odkud jsi p√¢i≈°el?
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_01"); //B√Ωval jsem kapit√°nem velryb√°√¢sk√© lodi, chlapƒçe. Mo√¢e je m√Ωm domovem.
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_02"); //P√¢ed p√°r mƒôs√≠ci ale moji lo√´, starou dobrou Magdalenu, potopili pir√°ti. A tak jsem tu zkejsnul.
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_03"); //V≈ædycky jsem se chtƒôl vr√°tit zp√°tky na mo√¢e, ale od t√© doby, co tu trƒç√≠m, nevyplul z tohohle proklet√©ho p√¢√≠stavu ani jeden ≈°kuner.
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_04"); //Jedin√° lo√´, kter√° v Khorinidu kotv√≠, je ta zatracen√° v√°leƒçn√° kr√°lovsk√° galeona - a tam nikoho dal≈°√≠ho nep√¢ijmou.
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_05"); //Tak co je≈°tƒô m≈Ø≈æu dƒôlat? U≈æ jsem zkou≈°el v≈°echno - ve mƒôstƒô pro mƒô ≈æ√°dn√° pr√°ce nen√≠.
 	
 }; 
 
@@ -215,7 +215,7 @@ INSTANCE DIA_Jorgen_BeCarefull   (C_INFO)
 	condition   = DIA_Jorgen_BeCarefull_Condition;
 	information = DIA_Jorgen_BeCarefull_Info;
 	permanent   = TRUE;
-	description	= "Radöi bÍû pryË z cesty.";
+	description	= "Rad≈°i bƒô≈æ pryƒç z cesty.";
 };
 
 FUNC INT DIA_Jorgen_BeCarefull_Condition()
@@ -229,8 +229,8 @@ FUNC INT DIA_Jorgen_BeCarefull_Condition()
 
 FUNC VOID DIA_Jorgen_BeCarefull_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_BeCarefull_15_00"); //UdÍlals dob‚e, ûe jsi nikam neöel.
-	AI_Output (self ,other,"DIA_Jorgen_BeCarefull_07_01"); //é·dnÈ strachy. Uû jsem si vöimnul, ûe v poslednÌch dvou dnech je okolnÌ divoËina zpropadenÍ nebezpeËn·.
+	AI_Output (other,self ,"DIA_Jorgen_BeCarefull_15_00"); //Udƒôlals dob√¢e, ≈æe jsi nikam ne≈°el.
+	AI_Output (self ,other,"DIA_Jorgen_BeCarefull_07_01"); //≈Ω√°dn√© strachy. U≈æ jsem si v≈°imnul, ≈æe v posledn√≠ch dvou dnech je okoln√≠ divoƒçina zpropadenƒô nebezpeƒçn√°.
 }; 
 
 //#####################################################################
@@ -277,7 +277,7 @@ instance DIA_Jorgen_NEUHIER		(C_INFO)
 	condition	= 	DIA_Jorgen_NEUHIER_Condition;
 	information	= 	DIA_Jorgen_NEUHIER_Info;
 
-	description	= 	"Jak to v kl·öte‚e jde?";
+	description	= 	"Jak to v kl√°≈°te√¢e jde?";
 };
 
 func int DIA_Jorgen_NEUHIER_Condition ()
@@ -290,22 +290,22 @@ func int DIA_Jorgen_NEUHIER_Condition ()
 
 func void DIA_Jorgen_NEUHIER_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_NEUHIER_15_00"); //Jak to v kl·öte‚e jde?
+	AI_Output			(other, self, "DIA_Jorgen_NEUHIER_15_00"); //Jak to v kl√°≈°te√¢e jde?
 	
-	AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_01"); //Pomalu tu z toho vöeho bl·znÌm!
+	AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_01"); //Pomalu tu z toho v≈°eho bl√°zn√≠m!
 
 	if (Npc_KnowsInfo(other, DIA_Jorgen_Milten))
 	{
-		AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_02"); //Ale i tak ti dÍkuju za pomoc. S Miltenov˝m p‚ispÍnÌm jsem tu opravdu zÌskal mÌsto.
+		AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_02"); //Ale i tak ti dƒôkuju za pomoc. S Miltenov√Ωm p√¢ispƒôn√≠m jsem tu opravdu z√≠skal m√≠sto.
 		B_GivePlayerXP (XP_Ambient);
 	};
 
 	if (hero.guild != GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_03"); //Akor·t se mezi tÍmi sebemrskaËsk˝mi lidumily cÌtÌm jako blbec.
+		AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_03"); //Akor√°t se mezi tƒômi sebemrskaƒçsk√Ωmi lidumily c√≠t√≠m jako blbec.
 	};
 
-	AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_04"); //No, ale tÍlu se ned· porouËet. Neû um‚Ìt hlady ve mÍstÍ, radöi budu dÍlat, co mi novicovÈ nak·ûou.
+	AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_04"); //No, ale tƒôlu se ned√° porouƒçet. Ne≈æ um√¢√≠t hlady ve mƒôstƒô, rad≈°i budu dƒôlat, co mi novicov√© nak√°≈æou.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -319,7 +319,7 @@ instance DIA_Jorgen_PERM4		(C_INFO)
 	information	 = 	DIA_Jorgen_PERM4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"MyslÌm, ûe se to podd·.";
+	description	 = 	"Mysl√≠m, ≈æe se to podd√°.";
 };
 
 func int DIA_Jorgen_PERM4_Condition ()
@@ -335,15 +335,15 @@ func int DIA_Jorgen_PERM4_Condition ()
 var int DIA_Jorgen_PERM4_OneTime;
 func void DIA_Jorgen_PERM4_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_PERM4_15_00"); //MyslÌm, ûe se to podd·.
+	AI_Output			(other, self, "DIA_Jorgen_PERM4_15_00"); //Mysl√≠m, ≈æe se to podd√°.
 	if (DIA_Jorgen_PERM4_OneTime == FALSE)
 	&& (hero.guild != GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Jorgen_PERM4_07_01"); //Jenom si p‚edstav - m·m jim vyplÌt zahradu. Kdyû to takhle p˘jde d·l, za chvÌli se z toho zcvoknu.
+		AI_Output			(self, other, "DIA_Jorgen_PERM4_07_01"); //Jenom si p√¢edstav - m√°m jim vypl√≠t zahradu. Kdy≈æ to takhle p≈Øjde d√°l, za chv√≠li se z toho zcvoknu.
 		DIA_Jorgen_PERM4_OneTime = TRUE;
 	};
 	
-	AI_Output			(self, other, "DIA_Jorgen_PERM4_07_02"); //JedinÈ, co pot‚ebuju, je star· dobr· paluba pod nohama.
+	AI_Output			(self, other, "DIA_Jorgen_PERM4_07_02"); //Jedin√©, co pot√¢ebuju, je star√° dobr√° paluba pod nohama.
 };
 
 //#####################################################################
@@ -390,7 +390,7 @@ instance DIA_Jorgen_BEMYCAPTAIN		(C_INFO)
 	information	 = 	DIA_Jorgen_BEMYCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Moûn· bych ti mohl nabÌdnout mÌsto kapit·na.";
+	description	 = 	"Mo≈æn√° bych ti mohl nab√≠dnout m√≠sto kapit√°na.";
 };
 
 func int DIA_Jorgen_BEMYCAPTAIN_Condition ()
@@ -407,19 +407,19 @@ func int DIA_Jorgen_BEMYCAPTAIN_Condition ()
 var int DIA_Jorgen_BEMYCAPTAIN_OneTime;
 func void DIA_Jorgen_BEMYCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN_15_00"); //Moûn· bych ti mohl nabÌdnout mÌsto kapit·na.
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN_15_00"); //Mo≈æn√° bych ti mohl nab√≠dnout m√≠sto kapit√°na.
 	if (DIA_Jorgen_BEMYCAPTAIN_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_01"); //Nehoupeö mÍ, k·mo? Jestli mluvÌö pravdu, tak do toho urËitÍ jdu!
-		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_02"); //Ehm - je tu ale menöÌ problÈm. Vyjedl jsem tÍm novic˘m p˘lku spiûÌrny.
-		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_03"); //Ti chl·pkovÈ jsou z toho celÌ nep‚ÌËetnÌ. NemyslÌm, ûe by mÍ hlavnÌ m·g nechal takhle odejÌt.
+		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_01"); //Nehoupe≈° mƒô, k√°mo? Jestli mluv√≠≈° pravdu, tak do toho urƒçitƒô jdu!
+		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_02"); //Ehm - je tu ale men≈°√≠ probl√©m. Vyjedl jsem tƒôm novic≈Øm p≈Ølku spi≈æ√≠rny.
+		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_03"); //Ti chl√°pkov√© jsou z toho cel√≠ nep√¢√≠ƒçetn√≠. Nemysl√≠m, ≈æe by mƒô hlavn√≠ m√°g nechal takhle odej√≠t.
 		DIA_Jorgen_BEMYCAPTAIN_OneTime = TRUE;
 	};
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_04"); //Je mi lÌto, ale nejd‚Ìv si musÌm nÍco vy‚Ìdit s Pyrokarem.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_04"); //Je mi l√≠to, ale nejd√¢√≠v si mus√≠m nƒôco vy√¢√≠dit s Pyrokarem.
 	
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                                                                                                                                            
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                                                                                                                                          
-    B_LogEntry (TOPIC_Captain,"Jorgen svolil, ûe se stane m˝m kapit·nem, ale nejd‚Ìv za nÍj musÌm zaplatit vöechny dluhy v kl·öte‚e.");
+    B_LogEntry (TOPIC_Captain,"Jorgen svolil, ≈æe se stane m√Ωm kapit√°nem, ale nejd√¢√≠v za nƒôj mus√≠m zaplatit v≈°echny dluhy v kl√°≈°te√¢e.");
 
 };
 
@@ -433,7 +433,7 @@ instance DIA_Jorgen_BEMYCAPTAIN2		(C_INFO)
 	condition	 = 	DIA_Jorgen_BEMYCAPTAIN2_Condition;
 	information	 = 	DIA_Jorgen_BEMYCAPTAIN2_Info;
 
-	description	 = 	"Tv˘j ˙Ëet jsem jiû vyrovnal.";
+	description	 = 	"Tv≈Øj √∫ƒçet jsem ji≈æ vyrovnal.";
 };
 
 func int DIA_Jorgen_BEMYCAPTAIN2_Condition ()
@@ -446,18 +446,18 @@ func int DIA_Jorgen_BEMYCAPTAIN2_Condition ()
 
 func void DIA_Jorgen_BEMYCAPTAIN2_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN2_15_00"); //Tv˘j ˙Ëet jsem uû vyrovnal - jsi voln˝.
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_01"); //Opravdu? Jak jsi to za‚Ìdil?
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN2_15_02"); //Do toho ti nic nenÌ.
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_03"); //No, vlastnÍ je mi to jedno. JeötÍ jednou ti teda miliÛnkr·t dÍkuju.
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN2_15_00"); //Tv≈Øj √∫ƒçet jsem u≈æ vyrovnal - jsi voln√Ω.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_01"); //Opravdu? Jak jsi to za√¢√≠dil?
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN2_15_02"); //Do toho ti nic nen√≠.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_03"); //No, vlastnƒô je mi to jedno. Je≈°tƒô jednou ti teda mili√≥nkr√°t dƒôkuju.
 
 	if (SCGotCaptain == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_04"); //A co ta tvoje nabÌdka? M˘ûu s tÌm po‚·d poËÌtat?
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_04"); //A co ta tvoje nab√≠dka? M≈Ø≈æu s t√≠m po√¢√°d poƒç√≠tat?
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_05"); //SkvÍlÈ. A teÎ bychom odsud mÍli zmizet.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_05"); //Skvƒôl√©. A te√´ bychom odsud mƒôli zmizet.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"RausAusKloster");
 	};
@@ -473,7 +473,7 @@ instance DIA_Jorgen_BEMYCAPTAIN3		(C_INFO)
 	condition	 = 	DIA_Jorgen_BEMYCAPTAIN3_Condition;
 	information	 = 	DIA_Jorgen_BEMYCAPTAIN3_Info;
 
-	description	 = 	"BuÎ m˝m kapit·nem.";
+	description	 = 	"Bu√´ m√Ωm kapit√°nem.";
 };
 
 func int DIA_Jorgen_BEMYCAPTAIN3_Condition ()
@@ -487,10 +487,10 @@ func int DIA_Jorgen_BEMYCAPTAIN3_Condition ()
 
 func void DIA_Jorgen_BEMYCAPTAIN3_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN3_15_00"); //BuÎ m˝m kapit·nem.
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_01"); //Je to pro mÍ Ëest, ale m·ö v˘bec nÍjakou loÎ a pos·dku?
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_02"); //¬ekl bych, ûe budeme pot‚ebovat aspo‡ pÍt chlap˘.
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN3_15_03"); //Dob‚e, uvidÌm, co se d· dÍlat. ZatÌm na mÍ poËkej v p‚Ìstavu.
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN3_15_00"); //Bu√´ m√Ωm kapit√°nem.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_01"); //Je to pro mƒô ƒçest, ale m√°≈° v≈Øbec nƒôjakou lo√´ a pos√°dku?
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_02"); //√Çekl bych, ≈æe budeme pot√¢ebovat aspo≈ï pƒôt chlap≈Ø.
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN3_15_03"); //Dob√¢e, uvid√≠m, co se d√° dƒôlat. Zat√≠m na mƒô poƒçkej v p√¢√≠stavu.
 	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_04"); //Rozkaz, pane.
 	AI_StopProcessInfos (self);
 	SCGotCaptain = TRUE;
@@ -511,7 +511,7 @@ instance DIA_Jorgen_LOSFAHREN		(C_INFO)
 	information	 = 	DIA_Jorgen_LOSFAHREN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jsi p‚ipraven mÍ p‚evÈzt na ostrov?";
+	description	 = 	"Jsi p√¢ipraven mƒô p√¢ev√©zt na ostrov?";
 };
 
 func int DIA_Jorgen_LOSFAHREN_Condition ()
@@ -525,21 +525,21 @@ func int DIA_Jorgen_LOSFAHREN_Condition ()
 
 func void DIA_Jorgen_LOSFAHREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_LOSFAHREN_15_00"); //Jsi p‚ipraven mÍ p‚evÈzt na ostrov?
+	AI_Output			(other, self, "DIA_Jorgen_LOSFAHREN_15_00"); //Jsi p√¢ipraven mƒô p√¢ev√©zt na ostrov?
 
 	if ((B_CaptainConditions (self)) == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_01"); //Ale samoz‚ejmÍ. Dej mi tu mapu.
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_02"); //SkvÍlÈ, tak napnÍme plachty, a„ uû jsme odsud pryË!
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_03"); //Radöi by sis mÍl nejd‚Ìv sbalit vöechna fidl·tka. Z mo‚e se sem uû nem˘ûeme vr·tit.
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_04"); //Aû vöechno vy‚ÌdÌö, tak si trochu zd‚Ìmni - v kapit·nskÈ kajutÍ m·ö p‚ipravenou pryËnu. Dobrou noc.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_01"); //Ale samoz√¢ejmƒô. Dej mi tu mapu.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_02"); //Skvƒôl√©, tak napnƒôme plachty, aƒÉ u≈æ jsme odsud pryƒç!
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_03"); //Rad≈°i by sis mƒôl nejd√¢√≠v sbalit v≈°echna fidl√°tka. Z mo√¢e se sem u≈æ nem≈Ø≈æeme vr√°tit.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_04"); //A≈æ v≈°echno vy√¢√≠d√≠≈°, tak si trochu zd√¢√≠mni - v kapit√°nsk√© kajutƒô m√°≈° p√¢ipravenou pryƒçnu. Dobrou noc.
 	AI_StopProcessInfos (self);
 	B_CaptainCallsAllOnBoard (self);
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_05"); //Pot‚ebujeö loÎ, pos·dku aspo‡ pÍti muû˘ a n·mo‚nÌ mapu, podle kterÈ bych mohl plavbu navigovat.
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_06"); //Nem˘ûeme odrazit, dokud neuvidÌm, ûe jsi sehnal vöechno pot‚ebnÈ.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_05"); //Pot√¢ebuje≈° lo√´, pos√°dku aspo≈ï pƒôti mu≈æ≈Ø a n√°mo√¢n√≠ mapu, podle kter√© bych mohl plavbu navigovat.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_06"); //Nem≈Ø≈æeme odrazit, dokud neuvid√≠m, ≈æe jsi sehnal v≈°echno pot√¢ebn√©.
 	AI_StopProcessInfos (self);
 	};
 };
@@ -555,7 +555,7 @@ instance DIA_Jorgen_PERM5_NOTCAPTAIN		(C_INFO)
 	information	 = 	DIA_Jorgen_PERM5_NOTCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jak se m·ö?";
+	description	 = 	"Jak se m√°≈°?";
 };
 
 func int DIA_Jorgen_PERM5_NOTCAPTAIN_Condition ()
@@ -570,12 +570,12 @@ func int DIA_Jorgen_PERM5_NOTCAPTAIN_Condition ()
 var int DIA_Jorgen_PERM5_NOTCAPTAIN_XPGiven;
 func void DIA_Jorgen_PERM5_NOTCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_PERM5_NOTCAPTAIN_15_00"); //Jak se m·ö?
+	AI_Output			(other, self, "DIA_Jorgen_PERM5_NOTCAPTAIN_15_00"); //Jak se m√°≈°?
 
 	if 	(Npc_GetDistToWP(self,"NW_BIGFARM_KITCHEN_OUT_06")<1000)  
 	{
-	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_01"); //Fajn, tady to nenÌ aû tak öpatnÈ.
-	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_02"); //JeötÍ po‚·d sice musÌm dÍlat takovÈ pitomosti jako t‚eba p·st ovce, ale po‚·d to nejsou ani z p˘lky takovÌ omezenci jako ti v kl·öte‚e.
+	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_01"); //Fajn, tady to nen√≠ a≈æ tak ≈°patn√©.
+	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_02"); //Je≈°tƒô po√¢√°d sice mus√≠m dƒôlat takov√© pitomosti jako t√¢eba p√°st ovce, ale po√¢√°d to nejsou ani z p≈Ølky takov√≠ omezenci jako ti v kl√°≈°te√¢e.
 
 		if (DIA_Jorgen_PERM5_NOTCAPTAIN_XPGiven == FALSE)
 		{
@@ -586,7 +586,7 @@ func void DIA_Jorgen_PERM5_NOTCAPTAIN_Info ()
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_03"); //Budu si muset najÌt nov˝ p‚Ìbytek. UvidÌme, kam mÍ vÌtr zavane p‚ÌötÍ.
+	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_03"); //Budu si muset naj√≠t nov√Ω p√¢√≠bytek. Uvid√≠me, kam mƒô v√≠tr zavane p√¢√≠≈°tƒô.
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"RausAusKloster");

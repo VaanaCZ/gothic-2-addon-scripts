@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_DragonSnapper(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Draèí chàapavec";
+	name							=	"DraÄÃ­ chÅ•apavec";
 	guild							=	GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGONSNAPPER;
 	level							=	40;
@@ -89,7 +89,7 @@ INSTANCE DragonSnapper	(Mst_Default_DragonSnapper)
 
 INSTANCE Gaans_Snapper	(Mst_Default_DragonSnapper)
 {
-	name	=	"Supící draèí chàapavec";
+	name	=	"SupÃ­cÃ­ draÄÃ­ chÅ•apavec";
 
 	B_SetVisuals_DragonSnapper();
 	Npc_SetToFistMode(self);

@@ -9,7 +9,7 @@ INSTANCE DIA_Xardas_FirstEXIT(C_INFO)
 	condition	= DIA_Xardas_FirstEXIT_Condition;
 	information	= DIA_Xardas_FirstEXIT_Info;
 	permanent	= FALSE;
-	description = "Vyrazím hned, jak budu moci! (KONEC)";
+	description = "VyrazÃ­m hned, jak budu moci! (KONEC)";
 };
                        
 FUNC INT DIA_Xardas_FirstEXIT_Condition()
@@ -23,13 +23,13 @@ FUNC INT DIA_Xardas_FirstEXIT_Condition()
 
 FUNC VOID DIA_Xardas_FirstEXIT_Info()
 {	
-	AI_Output (other, self,"DIA_Xardas_FirstEXIT_15_00"); //Vyrazím hned, jak budu moci!
-	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_01"); //Dobrá! A ještê jedna vêc: neâíkej nikomu, e jsme spolu mluvili. Hlavnê to neâíkej ádnému mágovi.
-	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_02"); //Co jsem odešel, povaují mê mágové ohnê za mrtvého - a to se mùe docela hodit.
+	AI_Output (other, self,"DIA_Xardas_FirstEXIT_15_00"); //VyrazÃ­m hned, jak budu moci!
+	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_01"); //DobrÃ¡! A jeÅ¡tÄ™ jedna vÄ™c: neÃ¢Ã­kej nikomu, Å¾e jsme spolu mluvili. HlavnÄ™ to neÃ¢Ã­kej Å¾Ã¡dnÃ©mu mÃ¡govi.
+	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_02"); //Co jsem odeÅ¡el, povaÅ¾ujÃ­ mÄ™ mÃ¡govÃ© ohnÄ™ za mrtvÃ©ho - a to se mÅ¯Å¾e docela hodit.
 	
 	AI_StopProcessInfos	(self);
 	
-	B_Kapitelwechsel (1, NEWWORLD_ZEN);	//Joly: muß auf jeden Fall hier kommen. Allein schon wegen XP_AMBIENT!
+	B_Kapitelwechsel (1, NEWWORLD_ZEN);	//Joly: muÃŸ auf jeden Fall hier kommen. Allein schon wegen XP_AMBIENT!
 	
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -80,48 +80,48 @@ FUNC INT DIA_Xardas_Hello_Condition()
 };
 FUNC VOID DIA_Xardas_Hello_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_00"); //Tak u je to tu zas! (s úsmêvem) Nikdy jsem si nemyslel, e se my dva ještê nêkdy sejdeme.
-	AI_Output (other, self, "DIA_Addon_Xardas_Hello_15_01"); //Mám pocit, jako bych strávil tâi nedêle pod hromadou balvanù.
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_02"); //Taky e ano. Naivu tê udrela jenom magie ve tvé zbroji. 
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_03"); //Bál jsem se, e tê z trosek toho chrámu u nezachráním.
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_04"); //Ale na tom u nezáleí. Teë jsi tady.
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_05"); //Teë máme na krku NOVOU hrozbu.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_00"); //Tak uÅ¾ je to tu zas! (s ÃºsmÄ™vem) Nikdy jsem si nemyslel, Å¾e se my dva jeÅ¡tÄ™ nÄ™kdy sejdeme.
+	AI_Output (other, self, "DIA_Addon_Xardas_Hello_15_01"); //MÃ¡m pocit, jako bych strÃ¡vil tÃ¢i nedÄ™le pod hromadou balvanÅ¯.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_02"); //Taky Å¾e ano. NaÅ¾ivu tÄ™ udrÅ¾ela jenom magie ve tvÃ© zbroji. 
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_03"); //BÃ¡l jsem se, Å¾e tÄ™ z trosek toho chrÃ¡mu uÅ¾ nezachrÃ¡nÃ­m.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_04"); //Ale na tom uÅ¾ nezÃ¡leÅ¾Ã­. TeÃ« jsi tady.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_05"); //TeÃ« mÃ¡me na krku NOVOU hrozbu.
 
  	Info_ClearChoices	(DIA_Xardas_Hello);
-	Info_AddChoice	(DIA_Xardas_Hello, "Máme teë spoustu èasu. Spáè byl pâece poraen.", DIA_Addon_Xardas_Hello_Dragons );
-	Info_AddChoice	(DIA_Xardas_Hello, "O jaké NOVÉ hrozbê to mluvíš?", DIA_Addon_Xardas_Hello_Man );
+	Info_AddChoice	(DIA_Xardas_Hello, "MÃ¡me teÃ« spoustu Äasu. SpÃ¡Ä byl pÃ¢ece poraÅ¾en.", DIA_Addon_Xardas_Hello_Dragons );
+	Info_AddChoice	(DIA_Xardas_Hello, "O jakÃ© NOVÃ‰ hrozbÄ™ to mluvÃ­Å¡?", DIA_Addon_Xardas_Hello_Man );
 };
 func void DIA_Addon_Xardas_Hello_Man ()
 {
 	PlayVideo ("Intro_ADDON");
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_10"); //Musíme se s nimi spojit! Pouze tak mùeme Beliara zastavit!
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_10"); //MusÃ­me se s nimi spojit! Pouze tak mÅ¯Å¾eme Beliara zastavit!
 	
 	Addon_zuerst = TRUE;
 };
 func void DIA_Addon_Xardas_Hello_Dragons ()
 {
-	AI_Output (other,self ,"DIA_Xardas_Hello_15_03"); //Teë alespoà máme dost èasu. Postaral jsem se o to. Spáè...
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_04"); //...byl zapuzen. Porazil jsi ho, to je naprostá pravda - ale není v naší moci zastavit válku, která bude teë následovat.
+	AI_Output (other,self ,"DIA_Xardas_Hello_15_03"); //TeÃ« alespoÅ• mÃ¡me dost Äasu. Postaral jsem se o to. SpÃ¡Ä...
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_04"); //...byl zapuzen. Porazil jsi ho, to je naprostÃ¡ pravda - ale nenÃ­ v naÅ¡Ã­ moci zastavit vÃ¡lku, kterÃ¡ bude teÃ« nÃ¡sledovat.
 	//AI_Output (other,self ,"DIA_Xardas_Hello_15_05"); //Du redest von den Orks?
 	//AI_Output (self ,other,"DIA_Xardas_Hello_14_06"); //Ich rede von weitaus schlimmeren Kreaturen.
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_07"); //Svım posledním zbêsilım skâekem vyslal Spáè na cestu armády temnot.
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_08"); //Byl to rozkaz urèenı všem zlım stvùrám. Mocné zaklínadlo, které nemohou neuposlechnout.
- 	AI_Output (self ,other,"DIA_Xardas_Hello_14_09"); //Jeho poslední rozkaz byl: PÂIJËTE! A pâišli. Všichni. Dokonce i draci.
- 	AI_Output (other,self ,"DIA_Xardas_Hello_15_10"); //(uasle) Draci!
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_11"); //Jsou to pradávná stvoâení nebıvalé moci. Cítím jejich pâítomnost - dokonce i zde.
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_12"); //Shromádili kolem sebe celou armádu niších stvùr, aby jim slouily.
-	AI_Output (other,self ,"DIA_Xardas_Hello_15_13"); //Kde je ta armáda teë?
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_14"); //Utáboâila se nedaleko odsud, v Hornickém údolí poblí Khorinidu. Pomalu se pâipravuje k útoku.
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_07"); //SvÃ½m poslednÃ­m zbÄ™silÃ½m skÃ¢ekem vyslal SpÃ¡Ä na cestu armÃ¡dy temnot.
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_08"); //Byl to rozkaz urÄenÃ½ vÅ¡em zlÃ½m stvÅ¯rÃ¡m. MocnÃ© zaklÃ­nadlo, kterÃ© nemohou neuposlechnout.
+ 	AI_Output (self ,other,"DIA_Xardas_Hello_14_09"); //Jeho poslednÃ­ rozkaz byl: PÃ‚IJÃ‹TE! A pÃ¢iÅ¡li. VÅ¡ichni. Dokonce i draci.
+ 	AI_Output (other,self ,"DIA_Xardas_Hello_15_10"); //(uÅ¾asle) Draci!
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_11"); //Jsou to pradÃ¡vnÃ¡ stvoÃ¢enÃ­ nebÃ½valÃ© moci. CÃ­tÃ­m jejich pÃ¢Ã­tomnost - dokonce i zde.
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_12"); //ShromÃ¡Å¾dili kolem sebe celou armÃ¡du niÅ¾Å¡Ã­ch stvÅ¯r, aby jim slouÅ¾ily.
+	AI_Output (other,self ,"DIA_Xardas_Hello_15_13"); //Kde je ta armÃ¡da teÃ«?
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_14"); //UtÃ¡boÃ¢ila se nedaleko odsud, v HornickÃ©m ÃºdolÃ­ poblÃ­Å¾ Khorinidu. Pomalu se pÃ¢ipravuje k Ãºtoku.
 		
 	if (Addon_zuerst == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Xardas_Hello_14_15"); //(zamyšlenê) Moc èasu nám nezbıvá.
+		AI_Output (self ,other,"DIA_Xardas_Hello_14_15"); //(zamyÅ¡lenÄ™) Moc Äasu nÃ¡m nezbÃ½vÃ¡.
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Xardas_Hello_Dragons_14_06"); //Ale to ještê není všechno. Nedávno jsem se dozvêdêl ještê o DALŠÍ hrozbê.
+		AI_Output (self ,other, "DIA_Addon_Xardas_Hello_Dragons_14_06"); //Ale to jeÅ¡tÄ™ nenÃ­ vÅ¡echno. NedÃ¡vno jsem se dozvÄ™dÄ™l jeÅ¡tÄ™ o DALÅ Ã hrozbÄ™.
 		Info_ClearChoices	(DIA_Xardas_Hello);
-		Info_AddChoice	(DIA_Xardas_Hello, "O jaké JINÉ hrozbê to mluvíš?", DIA_Addon_Xardas_Hello_Man );
+		Info_AddChoice	(DIA_Xardas_Hello, "O jakÃ© JINÃ‰ hrozbÄ™ to mluvÃ­Å¡?", DIA_Addon_Xardas_Hello_Man );
 	};
 };
 	
@@ -136,7 +136,7 @@ instance DIA_Xardas_AWAY (C_INFO) 		//E1
 	condition	 = 	DIA_Xardas_AWAY_Condition;
 	information	 = 	DIA_Xardas_AWAY_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Tak si pospêšme, abychom byli co nejrychleji pryè!";
+	description	 = 	"Tak si pospÄ™Å¡me, abychom byli co nejrychleji pryÄ!";
 };
 
 func int DIA_Xardas_AWAY_Condition ()
@@ -151,10 +151,10 @@ func int DIA_Xardas_AWAY_Condition ()
 
 func void DIA_Xardas_AWAY_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_AWAY_15_00"); //Tak si pospêšme, abychom byli co nejrychleji pryè!
-	AI_Output (self, other, "DIA_Xardas_AWAY_14_01"); //Pokud teë uteèeme, bude to znamenat jediné - budeme se muset drakùm postavit pozdêji.
-	AI_Output (self, other, "DIA_Xardas_AWAY_14_02"); //S pomocí vojákù a mágù, kteâí ijí v têchto konèinách, bychom mohli jejich armádu zastavit dâív, ne se úplnê zformuje.
-	AI_Output (self, other, "DIA_Xardas_AWAY_14_03"); //Lepší šanci u nikdy mít nebudeme.
+	AI_Output (other, self, "DIA_Xardas_AWAY_15_00"); //Tak si pospÄ™Å¡me, abychom byli co nejrychleji pryÄ!
+	AI_Output (self, other, "DIA_Xardas_AWAY_14_01"); //Pokud teÃ« uteÄeme, bude to znamenat jedinÃ© - budeme se muset drakÅ¯m postavit pozdÄ™ji.
+	AI_Output (self, other, "DIA_Xardas_AWAY_14_02"); //S pomocÃ­ vojÃ¡kÅ¯ a mÃ¡gÅ¯, kteÃ¢Ã­ Å¾ijÃ­ v tÄ™chto konÄinÃ¡ch, bychom mohli jejich armÃ¡du zastavit dÃ¢Ã­v, neÅ¾ se ÃºplnÄ™ zformuje.
+	AI_Output (self, other, "DIA_Xardas_AWAY_14_03"); //LepÅ¡Ã­ Å¡anci uÅ¾ nikdy mÃ­t nebudeme.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -168,7 +168,7 @@ instance DIA_Xardas_TODO (C_INFO) 		//E1
 	condition	 = 	DIA_Xardas_TODO_Condition;
 	information	 = 	DIA_Xardas_TODO_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Co budeme dêlat teë?";
+	description	 = 	"Co budeme dÄ™lat teÃ«?";
 };
 
 func int DIA_Xardas_TODO_Condition ()
@@ -181,17 +181,17 @@ func int DIA_Xardas_TODO_Condition ()
 
 func void DIA_Xardas_TODO_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_TODO_15_00"); //Co budeme dêlat?
-	AI_Output (self, other, "DIA_Xardas_TODO_14_01"); //Tentokrát to sami nezvládneme. Proti têm drakùm nám mùe pomoci jen Innosova moc.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_02"); //Ve mêstê Khorinis sídlí skupina paladinù, je to nedaleko odsud.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_03"); //Mají mocnı artefakt, kterı by nám mohl v boji proti drakùm hodnê pomoci.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_04"); //Âíkají mu Innosovo oko. Musíš ten artefakt za kadou cenu získat.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_05"); //Vysvêtli paladinùm, jaké nebezpeèí nám hrozí. MUSÍŠ pâesvêdèit jejich vùdce, aby nám pomohl!
-	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_07"); //A a si s ním promluvíš, musíš najít Beliarùv artefakt.
-	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_08"); //Je protikladem Oka Innosova. Nesmí padnout do nesprávnıch rukou.
+	AI_Output (other, self, "DIA_Xardas_TODO_15_00"); //Co budeme dÄ™lat?
+	AI_Output (self, other, "DIA_Xardas_TODO_14_01"); //TentokrÃ¡t to sami nezvlÃ¡dneme. Proti tÄ™m drakÅ¯m nÃ¡m mÅ¯Å¾e pomoci jen Innosova moc.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_02"); //Ve mÄ™stÄ™ Khorinis sÃ­dlÃ­ skupina paladinÅ¯, je to nedaleko odsud.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_03"); //MajÃ­ mocnÃ½ artefakt, kterÃ½ by nÃ¡m mohl v boji proti drakÅ¯m hodnÄ™ pomoci.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_04"); //Ã‚Ã­kajÃ­ mu Innosovo oko. MusÃ­Å¡ ten artefakt za kaÅ¾dou cenu zÃ­skat.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_05"); //VysvÄ™tli paladinÅ¯m, jakÃ© nebezpeÄÃ­ nÃ¡m hrozÃ­. MUSÃÅ  pÃ¢esvÄ™dÄit jejich vÅ¯dce, aby nÃ¡m pomohl!
+	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_07"); //A aÅ¾ si s nÃ­m promluvÃ­Å¡, musÃ­Å¡ najÃ­t BeliarÅ¯v artefakt.
+	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_08"); //Je protikladem Oka Innosova. NesmÃ­ padnout do nesprÃ¡vnÃ½ch rukou.
 	Log_CreateTopic (TOPIC_INNOSEYE, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_INNOSEYE, LOG_RUNNING);
-	B_LogEntry (TOPIC_INNOSEYE,"V Khorinidu se usadila skupina paladinù, kteâí opatrují mocnı artefakt zvanı Innosovo oko, jen nám mùe pomoci zahnat draèí hrozbu. Musím ty svaté bojovníky nêjak pâesvêdèit, aby se k nám pâidali."); 
+	B_LogEntry (TOPIC_INNOSEYE,"V Khorinidu se usadila skupina paladinÅ¯, kteÃ¢Ã­ opatrujÃ­ mocnÃ½ artefakt zvanÃ½ Innosovo oko, jenÅ¾ nÃ¡m mÅ¯Å¾e pomoci zahnat draÄÃ­ hrozbu. MusÃ­m ty svatÃ© bojovnÃ­ky nÄ™jak pÃ¢esvÄ™dÄit, aby se k nÃ¡m pÃ¢idali."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -204,7 +204,7 @@ instance DIA_Addon_Xardas_StonePlate		(C_INFO)
 	condition	 = 	DIA_Addon_Xardas_StonePlate_Condition;
 	information	 = 	DIA_Addon_Xardas_StonePlate_Info;
 
-	description	 = 	"Mùeš mi âíct nêco o téhle kamenné tabulce?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mi Ã¢Ã­ct nÄ™co o tÃ©hle kamennÃ© tabulce?";
 };
 func int DIA_Addon_Xardas_StonePlate_Condition ()
 {
@@ -215,12 +215,12 @@ func int DIA_Addon_Xardas_StonePlate_Condition ()
 };
 func void DIA_Addon_Xardas_StonePlate_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Xardas_StonePlate_15_00"); //Mùeš mi nêco âíci o téhle kamenné tabulce?
-	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_01"); //Ich habe so eine unten in der Höhlen vor meinem Turm gefunden.
+	AI_Output	(other, self, "DIA_Addon_Xardas_StonePlate_15_00"); //MÅ¯Å¾eÅ¡ mi nÄ™co Ã¢Ã­ci o tÃ©hle kamennÃ© tabulce?
+	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_01"); //Ich habe so eine unten in der HÃ¶hlen vor meinem Turm gefunden.
 	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_02"); //Sie sind in einer seltsam alten Sprache geschrieben, die ich in dieser Form noch nirgendwo gesehen habe.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_03"); //Napâed jsem ji povaoval za magickı artefakt, ale nakonec jsem došel k závêru, e není nijak zvlášã dùleitá.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_04"); //Úplnê jsem ji sice nerozluštil, ale podle všeho pojednává o historii nêjaké velmi staré kultury.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_05"); //Jestli tu tabulku chceš, tak si ji vezmi. Mnê k nièemu není.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_03"); //NapÃ¢ed jsem ji povaÅ¾oval za magickÃ½ artefakt, ale nakonec jsem doÅ¡el k zÃ¡vÄ™ru, Å¾e nenÃ­ nijak zvlÃ¡Å¡Äƒ dÅ¯leÅ¾itÃ¡.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_04"); //ÃšplnÄ™ jsem ji sice nerozluÅ¡til, ale podle vÅ¡eho pojednÃ¡vÃ¡ o historii nÄ™jakÃ© velmi starÃ© kultury.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_05"); //Jestli tu tabulku chceÅ¡, tak si ji vezmi. MnÄ™ k niÄemu nenÃ­.
 
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -241,7 +241,7 @@ instance DIA_Addon_Xardas_Portal (C_INFO)
 	condition	= DIA_Addon_Xardas_Portal_Condition;
 	information	= DIA_Addon_Xardas_Portal_Info;
 
-	description	= "Vodní mágové objevili portál, kterı vede do neznámé èásti ostrova...";
+	description	= "VodnÃ­ mÃ¡govÃ© objevili portÃ¡l, kterÃ½ vede do neznÃ¡mÃ© ÄÃ¡sti ostrova...";
 };
 
 func int DIA_Addon_Xardas_Portal_Condition ()
@@ -256,10 +256,10 @@ func int DIA_Addon_Xardas_Portal_Condition ()
 
 func void DIA_Addon_Xardas_Portal_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_00"); //Vodní mágové objevili portál do neznámé èásti ostrova...
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_01"); //Zajímavé...
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_02"); //Pokud objevíš nêco, co nám SKUTEÈNÊ k nêèemu bude, pak mi to urèitê oznam!
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_03"); //Ten Beliarùv artefakt musí bıt ukrytı nêkde tady. Najdi jej!
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_00"); //VodnÃ­ mÃ¡govÃ© objevili portÃ¡l do neznÃ¡mÃ© ÄÃ¡sti ostrova...
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_01"); //ZajÃ­mavÃ©...
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_02"); //Pokud objevÃ­Å¡ nÄ™co, co nÃ¡m SKUTEÄŒNÄ˜ k nÄ™Äemu bude, pak mi to urÄitÄ™ oznam!
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_03"); //Ten BeliarÅ¯v artefakt musÃ­ bÃ½t ukrytÃ½ nÄ™kde tady. Najdi jej!
 };
 
 // ------------------------------------------------------------
@@ -272,7 +272,7 @@ instance DIA_Addon_Xardas_PortalAgain (C_INFO)
 	condition	= DIA_Addon_Xardas_PortalAgain_Condition;
 	information	= DIA_Addon_Xardas_PortalAgain_Info;
 	permanent 	= TRUE;
-	description	= "K té neznámé èásti ostrova...";
+	description	= "K tÃ© neznÃ¡mÃ© ÄÃ¡sti ostrova...";
 };
 
 func int DIA_Addon_Xardas_PortalAgain_Condition ()
@@ -287,8 +287,8 @@ func int DIA_Addon_Xardas_PortalAgain_Condition ()
 
 func void DIA_Addon_Xardas_PortalAgain_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_17"); //Co se tıèe té neznámé èásti ostrova...
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_18"); //Neotravuj mê podrobnostmi. Vraã se, a najdeš nêco opravdu zajímavého.
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_17"); //Co se tÃ½Äe tÃ© neznÃ¡mÃ© ÄÃ¡sti ostrova...
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_18"); //Neotravuj mÄ™ podrobnostmi. VraÄƒ se, aÅ¾ najdeÅ¡ nÄ™co opravdu zajÃ­mavÃ©ho.
 };
 
 // ------------------------------------------------------------
@@ -301,7 +301,7 @@ instance DIA_Addon_Xardas_AddonSuccess (C_INFO)
 	condition	= DIA_Addon_Xardas_AddonSuccess_Condition;
 	information	= DIA_Addon_Xardas_AddonSuccess_Info;
 
-	description	= "Prozkoumal jsem tu neznámou èást ostrova...";
+	description	= "Prozkoumal jsem tu neznÃ¡mou ÄÃ¡st ostrova...";
 };
 
 func int DIA_Addon_Xardas_AddonSuccess_Condition ()
@@ -315,27 +315,27 @@ func int DIA_Addon_Xardas_AddonSuccess_Condition ()
 
 func void DIA_Addon_Xardas_AddonSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_03"); //Prozkoumal jsem neznámou èást ostrova.
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_03"); //Prozkoumal jsem neznÃ¡mou ÄÃ¡st ostrova.
 	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_04"); //A co jsi tam objevil?
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_05"); //Všechno se toèilo kolem mocného artefaktu zvaného Beliarùv dráp.
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_06"); //Beliarùv dráp? A kde je? Máš jej s sebou?
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_05"); //VÅ¡echno se toÄilo kolem mocnÃ©ho artefaktu zvanÃ©ho BeliarÅ¯v drÃ¡p.
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_06"); //BeliarÅ¯v drÃ¡p? A kde je? MÃ¡Å¡ jej s sebou?
 
 	if (C_SCHasBeliarsWeapon())
 	{
 		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_07"); //Ano, tady je.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_08"); //(chtivê) To je nesmírnê zajímavé.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_09"); //Tahle zbraà se nám mùe velice hodit. Ale zároveà je nesmírnê nebezpeèná.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_10"); //Buë opatrnı! A hlavnê ji neztraã!
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_08"); //(chtivÄ™) To je nesmÃ­rnÄ™ zajÃ­mavÃ©.
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_09"); //Tahle zbraÅ• se nÃ¡m mÅ¯Å¾e velice hodit. Ale zÃ¡roveÅ• je nesmÃ­rnÄ™ nebezpeÄnÃ¡.
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_10"); //BuÃ« opatrnÃ½! A hlavnÄ™ ji neztraÄƒ!
 		B_GivePlayerXP (XP_Ambient*3);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_11"); //U ji nemám.
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_12"); //Dal jsem ji vodním mágùm, kteâí ji hodí do moâe...
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_13"); //(vztekle vykâikuje) Copak ses zbláznil? Máš vùbec ponêtí, èeho se vzdáváš?
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_14"); //Ta zbraà nám mohla velmi poslouit!
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_15"); //Myslím, e takhle to bude lepší.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_16"); //(povzdechne si) Cesty boí jsou nevyzpytatelné.
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_11"); //UÅ¾ ji nemÃ¡m.
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_12"); //Dal jsem ji vodnÃ­m mÃ¡gÅ¯m, kteÃ¢Ã­ ji hodÃ­ do moÃ¢e...
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_13"); //(vztekle vykÃ¢ikuje) Copak ses zblÃ¡znil? MÃ¡Å¡ vÅ¯bec ponÄ™tÃ­, Äeho se vzdÃ¡vÃ¡Å¡?
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_14"); //Ta zbraÅ• nÃ¡m mohla velmi poslouÅ¾it!
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_15"); //MyslÃ­m, Å¾e takhle to bude lepÅ¡Ã­.
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_16"); //(povzdechne si) Cesty boÅ¾Ã­ jsou nevyzpytatelnÃ©.
 	};
 };
 
@@ -352,7 +352,7 @@ instance DIA_Xardas_WEAPON (C_INFO)		//E1
 	condition	 = 	DIA_Xardas_WEAPON_Condition;
 	information	 = 	DIA_Xardas_WEAPON_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Potâebuji zbranê.";
+	description	 = 	"PotÃ¢ebuji zbranÄ™.";
 };
 
 func int DIA_Xardas_WEAPON_Condition ()
@@ -365,9 +365,9 @@ func int DIA_Xardas_WEAPON_Condition ()
 
 func void DIA_Xardas_WEAPON_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_WEAPON_15_00"); //Potâebuji zbranê.
-	AI_Output (self, other, "DIA_Xardas_WEAPON_14_01"); //Mùu ti dát jen to málo, co tady mám.
-	AI_Output (self, other, "DIA_Xardas_WEAPON_14_02"); //Porozhlédni se po mé vêi. Vem si cokoliv, o èem budeš pâesvêdèen, e by se ti mohlo hodit.
+	AI_Output (other, self, "DIA_Xardas_WEAPON_15_00"); //PotÃ¢ebuji zbranÄ™.
+	AI_Output (self, other, "DIA_Xardas_WEAPON_14_01"); //MÅ¯Å¾u ti dÃ¡t jen to mÃ¡lo, co tady mÃ¡m.
+	AI_Output (self, other, "DIA_Xardas_WEAPON_14_02"); //PorozhlÃ©dni se po mÃ© vÄ™Å¾i. Vem si cokoliv, o Äem budeÅ¡ pÃ¢esvÄ™dÄen, Å¾e by se ti mohlo hodit.
 };
 
 
@@ -381,7 +381,7 @@ instance DIA_Xardas_ARTEFAKT (C_INFO)	//E2 nach TODO
 	condition	 = 	DIA_Xardas_ARTEFAKT_Condition;
 	information	 = 	DIA_Xardas_ARTEFAKT_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Co pâesnê je to 'Innosovo oko'?";
+	description	 = 	"Co pÃ¢esnÄ™ je to 'Innosovo oko'?";
 };
 
 func int DIA_Xardas_ARTEFAKT_Condition ()
@@ -395,10 +395,10 @@ func int DIA_Xardas_ARTEFAKT_Condition ()
 
 func void DIA_Xardas_ARTEFAKT_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_ARTEFAKT_15_00"); //Co pâesnê je to 'Innosovo oko'?
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_01"); //Je to amulet. Legenda vypráví, e do nêj vloil èást své síly sám Innos.
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_02"); //Obnoví èást tvé ztracené síly a pomùe nám porazit draky.
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_03"); //Má také další skryté schopnosti. O nich ti povím víc, a ho budeš mít u sebe.
+	AI_Output (other, self, "DIA_Xardas_ARTEFAKT_15_00"); //Co pÃ¢esnÄ™ je to 'Innosovo oko'?
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_01"); //Je to amulet. Legenda vyprÃ¡vÃ­, Å¾e do nÄ™j vloÅ¾il ÄÃ¡st svÃ© sÃ­ly sÃ¡m Innos.
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_02"); //ObnovÃ­ ÄÃ¡st tvÃ© ztracenÃ© sÃ­ly a pomÅ¯Å¾e nÃ¡m porazit draky.
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_03"); //MÃ¡ takÃ© dalÅ¡Ã­ skrytÃ© schopnosti. O nich ti povÃ­m vÃ­c, aÅ¾ ho budeÅ¡ mÃ­t u sebe.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -411,7 +411,7 @@ instance DIA_Xardas_PALADIN	(C_INFO) //E2 nach TODO
 	condition	 = 	DIA_Xardas_PALADIN_Condition;
 	information	 = 	DIA_Xardas_PALADIN_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Proè by mi mêli paladinové Innosovo oko dávat?";
+	description	 = 	"ProÄ by mi mÄ™li paladinovÃ© Innosovo oko dÃ¡vat?";
 };
 func int DIA_Xardas_PALADIN_Condition ()
 {	
@@ -423,12 +423,12 @@ func int DIA_Xardas_PALADIN_Condition ()
 };
 func void DIA_Xardas_PALADIN_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_00"); //Proè by mi mêli paladinové Innosovo oko dávat?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_01"); //Protoe ty jsi ten, komu osud urèil, aby jej nosil.
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_02"); //Jak mùeš vêdêt nêco takového?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_03"); //Mám hned nêkolik dùvodù si to myslet, ale nejdùleitêjší je ten, e jsi porazil Spáèe. Kdybys nebyl oblíbenec bohù, byl bys teë mrtvı.
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_04"); //Âeknême, e máš pravdu a e jsem vyvolenı, abych nesl Innosovo oko. Jak ale paladinové poznají, e to je pravda?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_05"); //Oko samo si zvolí toho, kdo jej mùe mít. Jakmile se k nêmu dostaneš a nasadíš si ho, nebudou paladinové moci o tvıch slovech dál pochybovat.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_00"); //ProÄ by mi mÄ™li paladinovÃ© Innosovo oko dÃ¡vat?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_01"); //ProtoÅ¾e ty jsi ten, komu osud urÄil, aby jej nosil.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_02"); //Jak mÅ¯Å¾eÅ¡ vÄ™dÄ™t nÄ™co takovÃ©ho?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_03"); //MÃ¡m hned nÄ™kolik dÅ¯vodÅ¯ si to myslet, ale nejdÅ¯leÅ¾itÄ™jÅ¡Ã­ je ten, Å¾e jsi porazil SpÃ¡Äe. Kdybys nebyl oblÃ­benec bohÅ¯, byl bys teÃ« mrtvÃ½.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_04"); //Ã‚eknÄ™me, Å¾e mÃ¡Å¡ pravdu a Å¾e jsem vyvolenÃ½, abych nesl Innosovo oko. Jak ale paladinovÃ© poznajÃ­, Å¾e to je pravda?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_05"); //Oko samo si zvolÃ­ toho, kdo jej mÅ¯Å¾e mÃ­t. Jakmile se k nÄ™mu dostaneÅ¡ a nasadÃ­Å¡ si ho, nebudou paladinovÃ© moci o tvÃ½ch slovech dÃ¡l pochybovat.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Khorinis
@@ -440,7 +440,7 @@ instance DIA_Xardas_Khorinis (C_INFO) //E2 nach TODO
 	condition	 = 	DIA_Xardas_Khorinis_Condition;
 	information	 = 	DIA_Xardas_Khorinis_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Jak se dostanu do mêsta?";
+	description	 = 	"Jak se dostanu do mÄ™sta?";
 };
 func int DIA_Xardas_Khorinis_Condition ()
 {	
@@ -453,9 +453,9 @@ func int DIA_Xardas_Khorinis_Condition ()
 };
 func void DIA_Xardas_Khorinis_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Khorinis_15_00"); //Jak se dostanu do mêsta?
-	AI_Output (self, other, "DIA_Xardas_Khorinis_14_01"); //Jdi po cestê vedoucí odsud skrz hory. Mêsto je velké. Nemùeš ho minout.
-	AI_Output (self, other, "DIA_Xardas_Khorinis_14_02"); //Ale dávej si pozor! Cesta do mêsta není úplnê bezpeèná. A ty nejsi zdaleka tak silnı, jak jsi kdysi bıval.
+	AI_Output (other, self, "DIA_Xardas_Khorinis_15_00"); //Jak se dostanu do mÄ™sta?
+	AI_Output (self, other, "DIA_Xardas_Khorinis_14_01"); //Jdi po cestÄ™ vedoucÃ­ odsud skrz hory. MÄ™sto je velkÃ©. NemÅ¯Å¾eÅ¡ ho minout.
+	AI_Output (self, other, "DIA_Xardas_Khorinis_14_02"); //Ale dÃ¡vej si pozor! Cesta do mÄ™sta nenÃ­ ÃºplnÄ™ bezpeÄnÃ¡. A ty nejsi zdaleka tak silnÃ½, jak jsi kdysi bÃ½val.
 };
 // ************************************************************
 // 			  		Zum zweiten Mal bei Xardas
@@ -468,7 +468,7 @@ instance DIA_Xardas_WhereEx (C_INFO) //BACK AGAIN
 	condition	 = 	DIA_Xardas_WhereEx_Condition;
 	information	 = 	DIA_Xardas_WhereEx_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Kde pâesnê to vlastnê jsme?";
+	description	 = 	"Kde pÃ¢esnÄ™ to vlastnÄ™ jsme?";
 };
 
 func int DIA_Xardas_WhereEx_Condition ()
@@ -482,12 +482,12 @@ func int DIA_Xardas_WhereEx_Condition ()
 
 func void DIA_Xardas_WhereEx_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Add_15_00"); //A kde to vùbec jsme?
-	AI_Output (self, other, "DIA_Xardas_Add_14_01"); //Jak jsem u âekl, poblí mêsta Khorinis.
-	AI_Output (self, other, "DIA_Xardas_Add_14_02"); //Postavil jsem si zde znovu svou vê.
-	AI_Output (other, self, "DIA_Xardas_Add_15_03"); //Ale vdyã je to jen pár dní, co jsme se naposledy vidêli v Hornickém údolí...
-	AI_Output (self, other, "DIA_Xardas_Add_14_04"); //Sluebníci, které jsem k obnovení své vêe povolal, odvedli dùkladnou práci...
-	AI_Output (other, self, "DIA_Xardas_Add_15_05"); //Taky mám ten pocit.
+	AI_Output (other, self, "DIA_Xardas_Add_15_00"); //A kde to vÅ¯bec jsme?
+	AI_Output (self, other, "DIA_Xardas_Add_14_01"); //Jak jsem uÅ¾ Ã¢ekl, poblÃ­Å¾ mÄ™sta Khorinis.
+	AI_Output (self, other, "DIA_Xardas_Add_14_02"); //Postavil jsem si zde znovu svou vÄ™Å¾.
+	AI_Output (other, self, "DIA_Xardas_Add_15_03"); //Ale vÅ¾dyÄƒ je to jen pÃ¡r dnÃ­, co jsme se naposledy vidÄ™li v HornickÃ©m ÃºdolÃ­...
+	AI_Output (self, other, "DIA_Xardas_Add_14_04"); //SluÅ¾ebnÃ­ci, kterÃ© jsem k obnovenÃ­ svÃ© vÄ™Å¾e povolal, odvedli dÅ¯kladnou prÃ¡ci...
+	AI_Output (other, self, "DIA_Xardas_Add_15_05"); //Taky mÃ¡m ten pocit.
 };
 
 instance DIA_Xardas_EQUIPMENT (C_INFO) //BACK AGAIN
@@ -497,7 +497,7 @@ instance DIA_Xardas_EQUIPMENT (C_INFO) //BACK AGAIN
 	condition	 = 	DIA_Xardas_EQUIPMENT_Condition;
 	information	 = 	DIA_Xardas_EQUIPMENT_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Kde najdu lepší vıbavu?";
+	description	 = 	"Kde najdu lepÅ¡Ã­ vÃ½bavu?";
 };
 
 func int DIA_Xardas_EQUIPMENT_Condition ()
@@ -512,10 +512,10 @@ func int DIA_Xardas_EQUIPMENT_Condition ()
 
 func void DIA_Xardas_EQUIPMENT_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_EQUIPMENT_15_00"); //Kde najdu lepší vıbavu?
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_01"); //Nejbliší místo, kde mùeš najít lepší zbranê a brnêní, je mêsto Khorinis.
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_02"); //Ale dole v údolí mùeš tu a tam najít léèivé bylinky, které ti pomohou, kdy budeš zranên v boji.
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_03"); //Vidíš to jezero hned pâed mou vêí? Od nêj vede do údolí tajná cesta.
+	AI_Output (other, self, "DIA_Xardas_EQUIPMENT_15_00"); //Kde najdu lepÅ¡Ã­ vÃ½bavu?
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_01"); //NejbliÅ¾Å¡Ã­ mÃ­sto, kde mÅ¯Å¾eÅ¡ najÃ­t lepÅ¡Ã­ zbranÄ™ a brnÄ™nÃ­, je mÄ™sto Khorinis.
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_02"); //Ale dole v ÃºdolÃ­ mÅ¯Å¾eÅ¡ tu a tam najÃ­t lÃ©ÄivÃ© bylinky, kterÃ© ti pomohou, kdyÅ¾ budeÅ¡ zranÄ™n v boji.
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_03"); //VidÃ­Å¡ to jezero hned pÃ¢ed mou vÄ™Å¾Ã­? Od nÄ™j vede do ÃºdolÃ­ tajnÃ¡ cesta.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ABOUTLESTER
@@ -527,7 +527,7 @@ instance DIA_Xardas_ABOUTLESTER		(C_INFO)
 	condition	 = 	DIA_Xardas_ABOUTLESTER_Condition;
 	information	 = 	DIA_Xardas_ABOUTLESTER_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mluvil jsi u s Lesterem?";
+	description	 = 	"Mluvil jsi uÅ¾ s Lesterem?";
 };
 func int DIA_Xardas_ABOUTLESTER_Condition ()
 {	
@@ -540,14 +540,14 @@ func int DIA_Xardas_ABOUTLESTER_Condition ()
 };
 func void DIA_Xardas_ABOUTLESTER_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_00"); //Mluvil jsi u s Lesterem?
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_01"); //Ano, zasypal jsem ho otázkami. Âekl mi toho hodnê, ale byl úplnê vyèerpanı.
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_02"); //Je vlastnê zázrak, e ten útêk vùbec pâeil. Poslal jsem jej, aã si odpoèine.
-	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_03"); //Co ti âekl?
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_04"); //Bojím se, e nic dobrého. Nejen e vidêl draka, ale také mue v èernıch kápích.
+	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_00"); //Mluvil jsi uÅ¾ s Lesterem?
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_01"); //Ano, zasypal jsem ho otÃ¡zkami. Ã‚ekl mi toho hodnÄ™, ale byl ÃºplnÄ™ vyÄerpanÃ½.
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_02"); //Je vlastnÄ™ zÃ¡zrak, Å¾e ten ÃºtÄ™k vÅ¯bec pÃ¢eÅ¾il. Poslal jsem jej, aÄƒ si odpoÄine.
+	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_03"); //Co ti Ã¢ekl?
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_04"); //BojÃ­m se, Å¾e nic dobrÃ©ho. Nejen Å¾e vidÄ™l draka, ale takÃ© muÅ¾e v ÄernÃ½ch kÃ¡pÃ­ch.
 	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_05"); //A?
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_06"); //Pokud ti mui skuteènê existují, pâedstavuje jejich pâítomnost monou hrozbu.
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_07"); //A to se mi moc nelíbí. Na, vezmi si mùj prsten. Ochrání tê pâed magií.
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_06"); //Pokud ti muÅ¾i skuteÄnÄ™ existujÃ­, pÃ¢edstavuje jejich pÃ¢Ã­tomnost moÅ¾nou hrozbu.
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_07"); //A to se mi moc nelÃ­bÃ­. Na, vezmi si mÅ¯j prsten. OchrÃ¡nÃ­ tÄ™ pÃ¢ed magiÃ­.
 	
 	B_GiveInvItems (self, other, ItRi_Prot_Mage_01,1);
 	B_GivePlayerXP		(XP_Ambient);
@@ -570,7 +570,7 @@ instance DIA_Xardas_FirstPal		(C_INFO)
 	condition	 = 	DIA_Xardas_FirstPal_Condition;
 	information	 = 	DIA_Xardas_FirstPal_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Byl jsem ve mêstê...";
+	description	 = 	"Byl jsem ve mÄ™stÄ™...";
 };
 func int DIA_Xardas_FirstPal_Condition ()
 {	
@@ -583,13 +583,13 @@ func int DIA_Xardas_FirstPal_Condition ()
 };
 func void DIA_Xardas_FirstPal_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_FirstPal_15_00"); //Byl jsem ve mêstê.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_01"); //A? Podaâilo se ti promluvit si s vùdcem paladinù?
-	AI_Output (other, self, "DIA_Xardas_FirstPal_15_02"); //Nepustili mê k nêmu.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_03"); //Nesmysl! Musí existovat zpùsob, jak se k nêmu dostat.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_04"); //Kdy sele všechno ostatní, vstup do kláštera a staà se mágem.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_05"); //Moná to je z morálního hlediska trošku pochybené, ale úèel svêtí prostâedky.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_06"); //Pokud budeš mágem, urèitê setkání s tebou neodmítne.
+	AI_Output (other, self, "DIA_Xardas_FirstPal_15_00"); //Byl jsem ve mÄ™stÄ™.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_01"); //A? PodaÃ¢ilo se ti promluvit si s vÅ¯dcem paladinÅ¯?
+	AI_Output (other, self, "DIA_Xardas_FirstPal_15_02"); //Nepustili mÄ™ k nÄ™mu.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_03"); //Nesmysl! MusÃ­ existovat zpÅ¯sob, jak se k nÄ™mu dostat.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_04"); //KdyÅ¾ selÅ¾e vÅ¡echno ostatnÃ­, vstup do klÃ¡Å¡tera a staÅ• se mÃ¡gem.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_05"); //MoÅ¾nÃ¡ to je z morÃ¡lnÃ­ho hlediska troÅ¡ku pochybenÃ©, ale ÃºÄel svÄ™tÃ­ prostÃ¢edky.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_06"); //Pokud budeÅ¡ mÃ¡gem, urÄitÄ™ setkÃ¡nÃ­ s tebou neodmÃ­tne.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -602,7 +602,7 @@ instance DIA_Xardas_Weiter		(C_INFO)
 	condition	 = 	DIA_Xardas_Weiter_Condition;
 	information	 = 	DIA_Xardas_Weiter_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Tak co udêláme teë?";
+	description	 = 	"Tak co udÄ™lÃ¡me teÃ«?";
 };
 func int DIA_Xardas_Weiter_Condition ()
 {	
@@ -614,9 +614,9 @@ func int DIA_Xardas_Weiter_Condition ()
 };
 func void DIA_Xardas_Weiter_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Weiter_15_00"); //Tak co udêláme teë?
-	AI_Output (self, other, "DIA_Xardas_Weiter_14_01"); //Budeme postupovat podle plánu. Jinak to nejde.
-	AI_Output (self, other, "DIA_Xardas_Weiter_14_02"); //Ty bê získat Innosovo oko a já budu hledat odpovêdi.
+	AI_Output (other, self, "DIA_Xardas_Weiter_15_00"); //Tak co udÄ™lÃ¡me teÃ«?
+	AI_Output (self, other, "DIA_Xardas_Weiter_14_01"); //Budeme postupovat podle plÃ¡nu. Jinak to nejde.
+	AI_Output (self, other, "DIA_Xardas_Weiter_14_02"); //Ty bÄ™Å¾ zÃ­skat Innosovo oko a jÃ¡ budu hledat odpovÄ™di.
 };
 
 INSTANCE DIA_Xardas_KdfSecret (C_INFO)
@@ -626,7 +626,7 @@ INSTANCE DIA_Xardas_KdfSecret (C_INFO)
 	condition	= DIA_Xardas_KdfSecret_Condition;
 	information	= DIA_Xardas_KdfSecret_Info;
 	permanent	= FALSE;
-	description = "Proè by o tobê nemêl 'kruh ohnê' vêdêt?";
+	description = "ProÄ by o tobÄ™ nemÄ™l 'kruh ohnÄ™' vÄ™dÄ™t?";
 };                       
 
 FUNC INT DIA_Xardas_KdfSecret_Condition()
@@ -639,12 +639,12 @@ FUNC INT DIA_Xardas_KdfSecret_Condition()
  
 FUNC VOID DIA_Xardas_KdfSecret_Info()
 {	
-	AI_Output	(other, self,"DIA_Xardas_KdfSecret_15_00");	//Proè o tobê nemají mágové ohnê vêdêt?
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_01");	//Bıval jsem vysoko postavenı èlen kruhu. U tenkrát jsem mêl podezâení, e klíèem k magické bariéâe by mohla bıt magie démonù.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_02"); //Nikdy se mi však nepodaâilo pâesvêdèit ostatní èleny kruhu, aby sledovali tuhle stopu.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_03"); //Opustil jsem tedy kruh, abych mohl studovat èerná umêní.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_04"); //A to je zloèin, pro kterı ohniví mágové, (jízlivê) 'Innosovi sluebníci', vdy 'Dobâí' a 'Ctnostní', nikdy nepâijmou ádnou omluvu.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_05"); //Jsou si jisti, e jsem stále naivu, ale vùbec netuší, kde mê hledat - a to je jedinê dobâe.
+	AI_Output	(other, self,"DIA_Xardas_KdfSecret_15_00");	//ProÄ o tobÄ™ nemajÃ­ mÃ¡govÃ© ohnÄ™ vÄ™dÄ™t?
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_01");	//BÃ½val jsem vysoko postavenÃ½ Älen kruhu. UÅ¾ tenkrÃ¡t jsem mÄ™l podezÃ¢enÃ­, Å¾e klÃ­Äem k magickÃ© bariÃ©Ã¢e by mohla bÃ½t magie dÃ©monÅ¯.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_02"); //Nikdy se mi vÅ¡ak nepodaÃ¢ilo pÃ¢esvÄ™dÄit ostatnÃ­ Äleny kruhu, aby sledovali tuhle stopu.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_03"); //Opustil jsem tedy kruh, abych mohl studovat ÄernÃ¡ umÄ™nÃ­.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_04"); //A to je zloÄin, pro kterÃ½ ohnivÃ­ mÃ¡govÃ©, (jÃ­zlivÄ™) 'Innosovi sluÅ¾ebnÃ­ci', vÅ¾dy 'DobÃ¢Ã­' a 'CtnostnÃ­', nikdy nepÃ¢ijmou Å¾Ã¡dnou omluvu.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_05"); //Jsou si jisti, Å¾e jsem stÃ¡le naÅ¾ivu, ale vÅ¯bec netuÅ¡Ã­, kde mÄ™ hledat - a to je jedinÄ™ dobÃ¢e.
 };
 
 
@@ -692,7 +692,7 @@ instance DIA_Xardas_BACKFROMOW		(C_INFO)
 	condition	 = 	DIA_Xardas_BACKFROMOW_Condition;
 	information	 = 	DIA_Xardas_BACKFROMOW_Info;
 
-	description	 = 	"Vrátil jsem se z Hornického údolí.";
+	description	 = 	"VrÃ¡til jsem se z HornickÃ©ho ÃºdolÃ­.";
 };
 
 func int DIA_Xardas_BACKFROMOW_Condition ()
@@ -705,11 +705,11 @@ func int DIA_Xardas_BACKFROMOW_Condition ()
 
 func void DIA_Xardas_BACKFROMOW_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_00"); //Vrátil jsem se z Hornického údolí.
-	AI_Output			(self, other, "DIA_Xardas_BACKFROMOW_14_01"); //U bylo naèase. Co jsi vidêl?
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_02"); //Mêl jsi pravdu. Celá zemê se hemí nepâátelskou armádou.
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_03"); //Skâeti obléhají hrad a draci zpustošili celı kraj.
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_04"); //Jestli se nepletu, tak nebude dlouho trvat a zaútoèí na Khorinis.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_00"); //VrÃ¡til jsem se z HornickÃ©ho ÃºdolÃ­.
+	AI_Output			(self, other, "DIA_Xardas_BACKFROMOW_14_01"); //UÅ¾ bylo naÄase. Co jsi vidÄ™l?
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_02"); //MÄ™l jsi pravdu. CelÃ¡ zemÄ™ se hemÅ¾Ã­ nepÃ¢Ã¡telskou armÃ¡dou.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_03"); //SkÃ¢eti oblÃ©hajÃ­ hrad a draci zpustoÅ¡ili celÃ½ kraj.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_04"); //Jestli se nepletu, tak nebude dlouho trvat a zaÃºtoÄÃ­ na Khorinis.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -740,56 +740,56 @@ func void DIA_Xardas_DMTSINDDA_Info ()
 
  	if (Npc_KnowsInfo(other, DIA_Lester_BACKINTOWN))
 	{
-		AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_00"); //Lester âíkal, e mê chceš okamitê vidêt.
+		AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_00"); //Lester Ã¢Ã­kal, Å¾e mÄ™ chceÅ¡ okamÅ¾itÄ™ vidÄ™t.
 	};
 	
 	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_01"); //Co se to tu proboha stalo?
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_02"); //Nepâítel se dozvêdêl, kdo ve skuteènosti jsi, a chce se zmocnit Innosova oka.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_03"); //Zjistil, jaká hrozba se na nêj ene. Donutilo ho to opustit úkryt a pâejít do útoku.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_04"); //Je konec hry na schovávanou. Ještê vèera nikdo nevêdêl, jak bude nepâátelskı útok vypadat. Teë je to nad slunce jasné.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_02"); //NepÃ¢Ã­tel se dozvÄ™dÄ™l, kdo ve skuteÄnosti jsi, a chce se zmocnit Innosova oka.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_03"); //Zjistil, jakÃ¡ hrozba se na nÄ™j Å¾ene. Donutilo ho to opustit Ãºkryt a pÃ¢ejÃ­t do Ãºtoku.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_04"); //Je konec hry na schovÃ¡vanou. JeÅ¡tÄ™ vÄera nikdo nevÄ™dÄ™l, jak bude nepÃ¢Ã¡telskÃ½ Ãºtok vypadat. TeÃ« je to nad slunce jasnÃ©.
 
-	B_LogEntry (TOPIC_INNOSEYE, "Nepâítel se dozvêdêl, e hledám Innosovo oko. Je naèase je získat, ne bude pâíliš pozdê.");
+	B_LogEntry (TOPIC_INNOSEYE, "NepÃ¢Ã­tel se dozvÄ™dÄ™l, Å¾e hledÃ¡m Innosovo oko. Je naÄase je zÃ­skat, neÅ¾ bude pÃ¢Ã­liÅ¡ pozdÄ™.");
 	
 	Info_ClearChoices	(DIA_Xardas_DMTSINDDA);
-	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Zaútoèili na mê nêjací mágové v èernıch hábitech.", DIA_Xardas_DMTSINDDA_DMT );
-	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Koneènê jsem získal dùkaz pro lorda Hagena.", DIA_Xardas_DMTSINDDA_Beweis );
+	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "ZaÃºtoÄili na mÄ™ nÄ™jacÃ­ mÃ¡govÃ© v ÄernÃ½ch hÃ¡bitech.", DIA_Xardas_DMTSINDDA_DMT );
+	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "KoneÄnÄ™ jsem zÃ­skal dÅ¯kaz pro lorda Hagena.", DIA_Xardas_DMTSINDDA_Beweis );
 
 };
 
 func void DIA_Xardas_DMTSINDDA_DMT ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_15_00"); //Zaútoèili na mê mágové v èernıch róbách.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_01"); //Nepâítel má mnoho podob. Pátraèi jsou jednou z nich. Oni jsou têmi, kdo pâipravuje pùdu pro nepâítele.
- 	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_02"); //Zaujali pozice na strategickıch místech a teë jen èekají na vhodnou pâíleitost, aby spustili past.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_03"); //Vyhıbej se jim. Jsou to mocná magická stvoâení a pokusí se tê odstranit z cesty za kadou cenu.
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_15_00"); //ZaÃºtoÄili na mÄ™ mÃ¡govÃ© v ÄernÃ½ch rÃ³bÃ¡ch.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_01"); //NepÃ¢Ã­tel mÃ¡ mnoho podob. PÃ¡traÄi jsou jednou z nich. Oni jsou tÄ™mi, kdo pÃ¢ipravuje pÅ¯du pro nepÃ¢Ã­tele.
+ 	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_02"); //Zaujali pozice na strategickÃ½ch mÃ­stech a teÃ« jen ÄekajÃ­ na vhodnou pÃ¢Ã­leÅ¾itost, aby spustili past.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_03"); //VyhÃ½bej se jim. Jsou to mocnÃ¡ magickÃ¡ stvoÃ¢enÃ­ a pokusÃ­ se tÄ™ odstranit z cesty za kaÅ¾dou cenu.
 	
 	if (hero.guild == GIL_KDF)
 	{
 	Log_CreateTopic (TOPIC_DEMENTOREN, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DEMENTOREN, LOG_RUNNING);
-	B_LogEntry (TOPIC_DEMENTOREN,"Xardas ty èernê odêné mágy zná. Pátraèi jsou pravdêpodobnê tím, kdo naše nepâátele ovládá. Jsou nesmírnê nebezpeèní."); 
+	B_LogEntry (TOPIC_DEMENTOREN,"Xardas ty ÄernÄ™ odÄ™nÃ© mÃ¡gy znÃ¡. PÃ¡traÄi jsou pravdÄ™podobnÄ™ tÃ­m, kdo naÅ¡e nepÃ¢Ã¡tele ovlÃ¡dÃ¡. Jsou nesmÃ­rnÄ™ nebezpeÄnÃ­."); 
 	};
 };
 
 func void DIA_Xardas_DMTSINDDA_Beweis ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_00"); //Koneènê mám dùkaz, kterı po mnê lord Hagen chtêl.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_01"); //Co je to za dùkaz?
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_02"); //Dostal jsem dopis od Garonda, velitele paladinù z Hornického údolí. ádá v nêm o posily.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_03"); //To by snad mêlo toho bojechtivého politika pâesvêdèit. Dobrá práce.
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_00"); //KoneÄnÄ™ mÃ¡m dÅ¯kaz, kterÃ½ po mnÄ™ lord Hagen chtÄ™l.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_01"); //Co je to za dÅ¯kaz?
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_02"); //Dostal jsem dopis od Garonda, velitele paladinÅ¯ z HornickÃ©ho ÃºdolÃ­. Å½Ã¡dÃ¡ v nÄ™m o posily.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_03"); //To by snad mÄ™lo toho bojechtivÃ©ho politika pÃ¢esvÄ™dÄit. DobrÃ¡ prÃ¡ce.
 	
-	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Co udêláme teë?", DIA_Xardas_DMTSINDDA_DMT_WhatToDo );
+	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Co udÄ™lÃ¡me teÃ«?", DIA_Xardas_DMTSINDDA_DMT_WhatToDo );
 	B_GivePlayerXP (XP_Ambient);
 };
 
 func void DIA_Xardas_DMTSINDDA_DMT_WhatToDo ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_15_00"); //Co udêláme teë?
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_01"); //Jdi a dones lordu Hagenovi dopis od Garonda, mêl by ti umonit pâístup k Innosovu oku.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_02"); //Pak bê do kláštera a promluv si s Pyrokarem. Bude ti muset Oko dát.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_03"); //Nic není dùleitêjšího ne dostat ten artefakt do bezpeèí.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_04"); //Teë bê, dokud není pozdê. I nepâítel se ho urèitê pokusí získat.
-	B_LogEntry (TOPIC_INNOSEYE, "Oko se nachází v kláštere mágù ohnê. Doufejme, e mi tam lord Hagen nyní dovolí vejít, kdy jsem mu pâedal zprávu od lorda Garonda. Hlavní mág Pyrokar mê toti bez Hagenova svolení k amuletu vùbec nepustí.");
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_15_00"); //Co udÄ™lÃ¡me teÃ«?
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_01"); //Jdi a dones lordu Hagenovi dopis od Garonda, mÄ™l by ti umoÅ¾nit pÃ¢Ã­stup k Innosovu oku.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_02"); //Pak bÄ™Å¾ do klÃ¡Å¡tera a promluv si s Pyrokarem. Bude ti muset Oko dÃ¡t.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_03"); //Nic nenÃ­ dÅ¯leÅ¾itÄ™jÅ¡Ã­ho neÅ¾ dostat ten artefakt do bezpeÄÃ­.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_04"); //TeÃ« bÄ™Å¾, dokud nenÃ­ pozdÄ™. I nepÃ¢Ã­tel se ho urÄitÄ™ pokusÃ­ zÃ­skat.
+	B_LogEntry (TOPIC_INNOSEYE, "Oko se nachÃ¡zÃ­ v klÃ¡Å¡tere mÃ¡gÅ¯ ohnÄ™. Doufejme, Å¾e mi tam lord Hagen nynÃ­ dovolÃ­ vejÃ­t, kdyÅ¾ jsem mu pÃ¢edal zprÃ¡vu od lorda Garonda. HlavnÃ­ mÃ¡g Pyrokar mÄ™ totiÅ¾ bez Hagenova svolenÃ­ k amuletu vÅ¯bec nepustÃ­.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -802,7 +802,7 @@ instance DIA_Xardas_INNOSEYEBROKEN		(C_INFO)
 	condition	 = 	DIA_Xardas_INNOSEYEBROKEN_Condition;
 	information	 = 	DIA_Xardas_INNOSEYEBROKEN_Info;
 
-	description	 = 	"Innosovo oko bylo znièeno.";
+	description	 = 	"Innosovo oko bylo zniÄeno.";
 };
 
 func int DIA_Xardas_INNOSEYEBROKEN_Condition ()
@@ -817,26 +817,26 @@ func int DIA_Xardas_INNOSEYEBROKEN_Condition ()
 
 func void DIA_Xardas_INNOSEYEBROKEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_00"); //Innosovo oko bylo znièeno.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_01"); //Co to âíkáš? Znièeno!
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_02"); //Tohle jsem našel nahoâe v severních lesích - bohuel se mi podaâilo získat u jen jeho úlomky.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_03"); //Byla to naše jediná nadêje, jak obstát v boji s draky. Teë je v nenávratnu. Selhali jsme.
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_00"); //Innosovo oko bylo zniÄeno.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_01"); //Co to Ã¢Ã­kÃ¡Å¡? ZniÄeno!
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_02"); //Tohle jsem naÅ¡el nahoÃ¢e v severnÃ­ch lesÃ­ch - bohuÅ¾el se mi podaÃ¢ilo zÃ­skat uÅ¾ jen jeho Ãºlomky.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_03"); //Byla to naÅ¡e jedinÃ¡ nadÄ™je, jak obstÃ¡t v boji s draky. TeÃ« je v nenÃ¡vratnu. Selhali jsme.
 
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 	
 	Info_ClearChoices	(DIA_Xardas_INNOSEYEBROKEN);
-	Info_AddChoice	(DIA_Xardas_INNOSEYEBROKEN, "Co teë?", DIA_Xardas_INNOSEYEBROKEN_wasnun );
+	Info_AddChoice	(DIA_Xardas_INNOSEYEBROKEN, "Co teÃ«?", DIA_Xardas_INNOSEYEBROKEN_wasnun );
 
 
 };
 func void DIA_Xardas_INNOSEYEBROKEN_wasnun ()
 {
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_wasnun_15_00"); //Co teë?
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_01"); //To je bolestná zpráva. Musíme se sami v téhle situaci zorientovat. Zkusím najít nêjaké âešení.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_02"); //Mezitím bys mêl zajít do mêsta a promluvit si s vodním mágem Vatrasem. Je moné, e bude vêdêt, co by mêlo bıt udêláno.
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_wasnun_15_00"); //Co teÃ«?
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_01"); //To je bolestnÃ¡ zprÃ¡va. MusÃ­me se sami v tÃ©hle situaci zorientovat. ZkusÃ­m najÃ­t nÄ™jakÃ© Ã¢eÅ¡enÃ­.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_02"); //MezitÃ­m bys mÄ™l zajÃ­t do mÄ™sta a promluvit si s vodnÃ­m mÃ¡gem Vatrasem. Je moÅ¾nÃ©, Å¾e bude vÄ™dÄ™t, co by mÄ™lo bÃ½t udÄ™lÃ¡no.
 
-	B_LogEntry (TOPIC_INNOSEYE, "Zpráva o znièení Oka Innosova Xardase rozhodnê nepotêšila. Naší jedinou nadêjí je nyní mág vody jménem Vatras, kterı sídlí ve mêstê Khorinidu.");
+	B_LogEntry (TOPIC_INNOSEYE, "ZprÃ¡va o zniÄenÃ­ Oka Innosova Xardase rozhodnÄ™ nepotÄ™Å¡ila. NaÅ¡Ã­ jedinou nadÄ™jÃ­ je nynÃ­ mÃ¡g vody jmÃ©nem Vatras, kterÃ½ sÃ­dlÃ­ ve mÄ™stÄ™ Khorinidu.");
 
 	MIS_Xardas_GoToVatrasInnoseye = LOG_RUNNING;
 };
@@ -852,7 +852,7 @@ instance DIA_Xardas_RITUALREQUEST		(C_INFO)
 	condition	 = 	DIA_Xardas_RITUALREQUEST_Condition;
 	information	 = 	DIA_Xardas_RITUALREQUEST_Info;
 
-	description	 = 	"Posílá mê za tebou Vatras.";
+	description	 = 	"PosÃ­lÃ¡ mÄ™ za tebou Vatras.";
 };
 
 func int DIA_Xardas_RITUALREQUEST_Condition ()
@@ -867,26 +867,26 @@ func int DIA_Xardas_RITUALREQUEST_Condition ()
 
 func void DIA_Xardas_RITUALREQUEST_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_00"); //Posílá mê za tebou Vatras.
-	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_01"); //To je dobâe. Co âekl?
-	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_02"); //Povídal nêco o obráceném rituálu ve sluneèním kruhu.
-	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_03"); //(zasmêje se) Ten starı pekelník. Myslím, e vím, co má za lubem. Pâišel jsi, abys mê dostal k nêmu.
-	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_04"); //Vypadá to tak. Kdy vyrazíš na cestu?
+	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_00"); //PosÃ­lÃ¡ mÄ™ za tebou Vatras.
+	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_01"); //To je dobÃ¢e. Co Ã¢ekl?
+	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_02"); //PovÃ­dal nÄ™co o obrÃ¡cenÃ©m rituÃ¡lu ve sluneÄnÃ­m kruhu.
+	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_03"); //(zasmÄ™je se) Ten starÃ½ pekelnÃ­k. MyslÃ­m, Å¾e vÃ­m, co mÃ¡ za lubem. PÃ¢iÅ¡el jsi, abys mÄ™ dostal k nÄ™mu.
+	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_04"); //VypadÃ¡ to tak. Kdy vyrazÃ­Å¡ na cestu?
 
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_DJG)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_05"); //Nesmím nechat Vatrase èekat. Okamitê se vydám na cestu. Splà, co musíš, a pak se ke mnê znovu pâidej.
+		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_05"); //NesmÃ­m nechat Vatrase Äekat. OkamÅ¾itÄ™ se vydÃ¡m na cestu. SplÅ•, co musÃ­Å¡, a pak se ke mnÄ™ znovu pÃ¢idej.
 		AI_StopProcessInfos (self);
-		B_LogEntry (TOPIC_INNOSEYE, "Xardas souhlasil, e se zúèastní rituálu kruhu Slunce.");
+		B_LogEntry (TOPIC_INNOSEYE, "Xardas souhlasil, Å¾e se zÃºÄastnÃ­ rituÃ¡lu kruhu Slunce.");
 		B_GivePlayerXP (XP_Ambient);
 		Npc_ExchangeRoutine	(self,"RitualInnosEyeRepair");
 		Xardas_GoesToRitualInnosEye = TRUE; 
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_06"); //Zúèastním se rituálu a ve chvíli, kdy si budu jist, e jsi plnê pâipraven utkat se s draky.
+		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_06"); //ZÃºÄastnÃ­m se rituÃ¡lu aÅ¾ ve chvÃ­li, kdy si budu jist, Å¾e jsi plnÄ™ pÃ¢ipraven utkat se s draky.
 	};	
 	B_GivePlayerXP (XP_Ambient);
 
@@ -903,7 +903,7 @@ instance DIA_Xardas_WARUMNICHTJETZT		(C_INFO)
 	condition	 = 	DIA_Xardas_WARUMNICHTJETZT_Condition;
 	information	 = 	DIA_Xardas_WARUMNICHTJETZT_Info;
 
-	description	 = 	"Proè nejdeš za Vatrasem HNED?";
+	description	 = 	"ProÄ nejdeÅ¡ za Vatrasem HNED?";
 };
 
 func int DIA_Xardas_WARUMNICHTJETZT_Condition ()
@@ -919,28 +919,28 @@ func int DIA_Xardas_WARUMNICHTJETZT_Condition ()
 
 func void DIA_Xardas_WARUMNICHTJETZT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_00"); //Proè nejdeš za Vatrasem HNED?
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_01"); //Nêkdy ti prostê nerozumím.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_14_02"); //(rozzlobenê) Nemluv se mnou tímto tónem. Nebıt MÊ, tvoje bídné têlo by ještê hnilo v tom chrámu.
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_00"); //ProÄ nejdeÅ¡ za Vatrasem HNED?
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_01"); //NÄ™kdy ti prostÄ™ nerozumÃ­m.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_14_02"); //(rozzlobenÄ™) Nemluv se mnou tÃ­mto tÃ³nem. NebÃ½t MÄ˜, tvoje bÃ­dnÃ© tÄ™lo by jeÅ¡tÄ™ hnilo v tom chrÃ¡mu.
 
-	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Co se dá dêlat. Alespoà mi âekni, co bych mêl udêlat.", DIA_Xardas_WARUMNICHTJETZT_wastun );
-	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Tak mi alespoà vysvêtli, proè váháš.", DIA_Xardas_WARUMNICHTJETZT_grund );
+	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Co se dÃ¡ dÄ™lat. AlespoÅ• mi Ã¢ekni, co bych mÄ™l udÄ™lat.", DIA_Xardas_WARUMNICHTJETZT_wastun );
+	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Tak mi alespoÅ• vysvÄ™tli, proÄ vÃ¡hÃ¡Å¡.", DIA_Xardas_WARUMNICHTJETZT_grund );
 };
 func void DIA_Xardas_WARUMNICHTJETZT_grund ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_grund_15_00"); //Tak mi alespoà vysvêtli, proè váháš.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_01"); //Od chvíle, kdy jsem opustil ohnivé mágy, jsem se jim drel co moná z cesty.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_02"); //A na tom nehodlám nic mênit, ledae bych nemêl na vybranou.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_03"); //Ale ne se vystavím vyèítavım pohledùm ostatních mágù, chci mít jistotu, e máš proti drakùm alespoà nêjakou šanci.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_04"); //S tím svım ošuntêlım vybavením se ale moc daleko nedostaneš. Vraã se, a budeš dostateènê silnı.
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_grund_15_00"); //Tak mi alespoÅ• vysvÄ™tli, proÄ vÃ¡hÃ¡Å¡.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_01"); //Od chvÃ­le, kdy jsem opustil ohnivÃ© mÃ¡gy, jsem se jim drÅ¾el co moÅ¾nÃ¡ z cesty.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_02"); //A na tom nehodlÃ¡m nic mÄ™nit, ledaÅ¾e bych nemÄ™l na vybranou.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_03"); //Ale neÅ¾ se vystavÃ­m vyÄÃ­tavÃ½m pohledÅ¯m ostatnÃ­ch mÃ¡gÅ¯, chci mÃ­t jistotu, Å¾e mÃ¡Å¡ proti drakÅ¯m alespoÅ• nÄ™jakou Å¡anci.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_04"); //S tÃ­m svÃ½m oÅ¡untÄ™lÃ½m vybavenÃ­m se ale moc daleko nedostaneÅ¡. VraÄƒ se, aÅ¾ budeÅ¡ dostateÄnÄ™ silnÃ½.
   	AI_StopProcessInfos (self);
 };
 
 func void DIA_Xardas_WARUMNICHTJETZT_wastun  ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_wastun_15_00"); //Co se dá dêlat. Alespoà mi âekni, co bych mêl udêlat.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_01"); //Na boj s draky jsi poâád pâíliš slabı. S touhle vıbavou nemáš vùbec ádnou šanci.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_02"); //Nevracej se, dokud nebudeš lépe pâipraven. Pak se vydám za Vatrasem.
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_wastun_15_00"); //Co se dÃ¡ dÄ™lat. AlespoÅ• mi Ã¢ekni, co bych mÄ™l udÄ™lat.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_01"); //Na boj s draky jsi poÃ¢Ã¡d pÃ¢Ã­liÅ¡ slabÃ½. S touhle vÃ½bavou nemÃ¡Å¡ vÅ¯bec Å¾Ã¡dnou Å¡anci.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_02"); //Nevracej se, dokud nebudeÅ¡ lÃ©pe pÃ¢ipraven. Pak se vydÃ¡m za Vatrasem.
  	AI_StopProcessInfos (self);
 };
 
@@ -953,7 +953,7 @@ instance DIA_Xardas_BEREIT		(C_INFO)
 	condition	 = 	DIA_Xardas_BEREIT_Condition;
 	information	 = 	DIA_Xardas_BEREIT_Info;
 
-	description	 = 	"Jsem pâipraven bojovat s draky.";
+	description	 = 	"Jsem pÃ¢ipraven bojovat s draky.";
 };
 
 func int DIA_Xardas_BEREIT_Condition ()
@@ -969,10 +969,10 @@ func int DIA_Xardas_BEREIT_Condition ()
 
 func void DIA_Xardas_BEREIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BEREIT_15_00"); //Jsem pâipraven bojovat s draky.
-	AI_Output			(self, other, "DIA_Xardas_BEREIT_14_01"); //V tom pâípadê u nemùeme plıtvat èasem. Okamitê se vydám do sluneèního kruhu. Splà, co musíš. Setkáme se tam.
+	AI_Output			(other, self, "DIA_Xardas_BEREIT_15_00"); //Jsem pÃ¢ipraven bojovat s draky.
+	AI_Output			(self, other, "DIA_Xardas_BEREIT_14_01"); //V tom pÃ¢Ã­padÄ™ uÅ¾ nemÅ¯Å¾eme plÃ½tvat Äasem. OkamÅ¾itÄ™ se vydÃ¡m do sluneÄnÃ­ho kruhu. SplÅ•, co musÃ­Å¡. SetkÃ¡me se tam.
 	AI_StopProcessInfos (self);
-	B_LogEntry (TOPIC_INNOSEYE, "Xardas souhlasil, e se zúèastní rituálu kruhu Slunce.");
+	B_LogEntry (TOPIC_INNOSEYE, "Xardas souhlasil, Å¾e se zÃºÄastnÃ­ rituÃ¡lu kruhu Slunce.");
 	B_GivePlayerXP (XP_Ambient);
 	Npc_ExchangeRoutine	(self,"RitualInnosEyeRepair"); 
 	Xardas_GoesToRitualInnosEye = TRUE; 
@@ -989,7 +989,7 @@ instance DIA_Xardas_BINGESPANNT		(C_INFO)
 	information	 = 	DIA_Xardas_BINGESPANNT_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Bude rituál zvratu fungovat?";
+	description	 = 	"Bude rituÃ¡l zvratu fungovat?";
 };
 
 func int DIA_Xardas_BINGESPANNT_Condition ()
@@ -1004,8 +1004,8 @@ func int DIA_Xardas_BINGESPANNT_Condition ()
 
 func void DIA_Xardas_BINGESPANNT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BINGESPANNT_15_00"); //Bude obrácenı rituál fungovat?
-	AI_Output			(self, other, "DIA_Xardas_BINGESPANNT_14_01"); //To nemùu vêdêt najisto. Záleí to na tom, co pâesnê chce Vatras udêlat.
+	AI_Output			(other, self, "DIA_Xardas_BINGESPANNT_15_00"); //Bude obrÃ¡cenÃ½ rituÃ¡l fungovat?
+	AI_Output			(self, other, "DIA_Xardas_BINGESPANNT_14_01"); //To nemÅ¯Å¾u vÄ™dÄ™t najisto. ZÃ¡leÅ¾Ã­ to na tom, co pÃ¢esnÄ™ chce Vatras udÄ™lat.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1018,7 +1018,7 @@ instance DIA_Xardas_PYROWILLNICHT		(C_INFO)
 	condition	 = 	DIA_Xardas_PYROWILLNICHT_Condition;
 	information	 = 	DIA_Xardas_PYROWILLNICHT_Info;
 
-	description	 = 	"Pyrokar se odmítá zúèastnit rituálu.";
+	description	 = 	"Pyrokar se odmÃ­tÃ¡ zÃºÄastnit rituÃ¡lu.";
 };
 
 func int DIA_Xardas_PYROWILLNICHT_Condition ()
@@ -1033,27 +1033,27 @@ func int DIA_Xardas_PYROWILLNICHT_Condition ()
 
 func void DIA_Xardas_PYROWILLNICHT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_00"); //Pyrokar odmítá zúèastnit se rituálu.
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_01"); //Pâedevším chce dùkaz, e ti mùe vêâit.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_02"); //No ano. Pyrokar. Velice zajímavé.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_03"); //Z toho starocha se stává docela mrzout. Ale myslím, e pro tebe mám nêco uiteèného.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_04"); //Kdy jsem kdysi opouštêl âád ohnivıch mágù, vzal jsem si z kláštera pár vêcí.
-	//AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_05"); //Jetzt, da ich meinen Turm so nahe der Stadt errichtet habe, muss ich ständig damit rechnen, dass jemand hierher kommt, um danach zu suchen.
-	//"hier" passt nicht, weil Xardas am Steinkreis stehen könnte - Satz ist eh überflüssig
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_06"); //Nechtêl jsem, aby náhodou pâišla skupina paladinù nebo ohnivıch mágù, prohledali vê skrz naskrz a ty vêci našli.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_07"); //Tak jsem je schoval na bezpeèná místa, kde by je mágové urèitê nikdy nehledali.
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_00"); //Pyrokar odmÃ­tÃ¡ zÃºÄastnit se rituÃ¡lu.
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_01"); //PÃ¢edevÅ¡Ã­m chce dÅ¯kaz, Å¾e ti mÅ¯Å¾e vÄ™Ã¢it.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_02"); //No ano. Pyrokar. Velice zajÃ­mavÃ©.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_03"); //Z toho starocha se stÃ¡vÃ¡ docela mrzout. Ale myslÃ­m, Å¾e pro tebe mÃ¡m nÄ™co uÅ¾iteÄnÃ©ho.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_04"); //KdyÅ¾ jsem kdysi opouÅ¡tÄ™l Ã¢Ã¡d ohnivÃ½ch mÃ¡gÅ¯, vzal jsem si z klÃ¡Å¡tera pÃ¡r vÄ™cÃ­.
+	//AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_05"); //Jetzt, da ich meinen Turm so nahe der Stadt errichtet habe, muss ich stÃ¤ndig damit rechnen, dass jemand hierher kommt, um danach zu suchen.
+	//"hier" passt nicht, weil Xardas am Steinkreis stehen kÃ¶nnte - Satz ist eh Ã¼berflÃ¼ssig
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_06"); //NechtÄ™l jsem, aby nÃ¡hodou pÃ¢iÅ¡la skupina paladinÅ¯ nebo ohnivÃ½ch mÃ¡gÅ¯, prohledali vÄ™Å¾ skrz naskrz a ty vÄ™ci naÅ¡li.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_07"); //Tak jsem je schoval na bezpeÄnÃ¡ mÃ­sta, kde by je mÃ¡govÃ© urÄitÄ™ nikdy nehledali.
 	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_08"); //A kde?
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_09"); //Nêkteré z nich jsou zamèené v truhle na Sekobovê farmê.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_09"); //NÄ™kterÃ© z nich jsou zamÄenÃ© v truhle na SekobovÄ™ farmÄ™.
 	Sekob_RoomFree = TRUE;
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_10"); //Tomu Sekobovi vêâíš?
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_11"); //Ne. Ale je moné ho koupit a neklade ádné ošidné otázky. Ta truhla je navíc zamèená. Tady máš klíè.
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_10"); //Tomu Sekobovi vÄ™Ã¢Ã­Å¡?
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_11"); //Ne. Ale je moÅ¾nÃ© ho koupit a neklade Å¾Ã¡dnÃ© oÅ¡idnÃ© otÃ¡zky. Ta truhla je navÃ­c zamÄenÃ¡. Tady mÃ¡Å¡ klÃ­Ä.
 
 	CreateInvItems 		(self, ItKe_CHEST_SEKOB_XARDASBOOK_MIS, 1);					
 	B_GiveInvItems 		(self, other, ItKe_CHEST_SEKOB_XARDASBOOK_MIS,1);
 
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_12"); //Mezi têmi vêcmi je jedna velice stará kniha. A ji Pyrokar spatâí, bude vêdêt, e pochází ode mê.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_13"); //U mi není k nièemu. Ale âekl bych, e k tomuhle úkolu by se mohla docela dobâe hodit.
-	B_LogEntry (TOPIC_INNOSEYE, "Xardas mi dal klíè od truhlice na Sekobovê statku. Knihu, kterou uvnitâ najdu, mám zanést Pyrokarovi.");
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_12"); //Mezi tÄ™mi vÄ™cmi je jedna velice starÃ¡ kniha. AÅ¾ ji Pyrokar spatÃ¢Ã­, bude vÄ™dÄ™t, Å¾e pochÃ¡zÃ­ ode mÄ™.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_13"); //UÅ¾ mi nenÃ­ k niÄemu. Ale Ã¢ekl bych, Å¾e k tomuhle Ãºkolu by se mohla docela dobÃ¢e hodit.
+	B_LogEntry (TOPIC_INNOSEYE, "Xardas mi dal klÃ­Ä od truhlice na SekobovÄ™ statku. Knihu, kterou uvnitÃ¢ najdu, mÃ¡m zanÃ©st Pyrokarovi.");
 };
 
 
@@ -1081,11 +1081,11 @@ func int DIA_Xardas_RitualInnosEyeRepairImportant_Condition ()
 
 func void DIA_Xardas_RitualInnosEyeRepairImportant_Info ()
 {
-	AI_Output (self, other, "DIA_Xardas_Add_14_06"); //Teë, kdy je Innosovo oko opraveno, se musíš postavit drakùm!
-	AI_Output (self, other, "DIA_Xardas_Add_14_07"); //Všichni slouí Beliarovi, bohu temnot.
-	AI_Output (self, other, "DIA_Xardas_Add_14_08"); //Musí ale existovat nêjaká pozemská síla, která je ovládá. To je mi jasné.
-	AI_Output (self, other, "DIA_Xardas_Add_14_09"); //Zjisti, co za sílu je ovládá.
-	AI_Output (self, other, "DIA_Xardas_Add_14_10"); //Vraã se sem, jakmile to zjistíš!
+	AI_Output (self, other, "DIA_Xardas_Add_14_06"); //TeÃ«, kdyÅ¾ je Innosovo oko opraveno, se musÃ­Å¡ postavit drakÅ¯m!
+	AI_Output (self, other, "DIA_Xardas_Add_14_07"); //VÅ¡ichni slouÅ¾Ã­ Beliarovi, bohu temnot.
+	AI_Output (self, other, "DIA_Xardas_Add_14_08"); //MusÃ­ ale existovat nÄ™jakÃ¡ pozemskÃ¡ sÃ­la, kterÃ¡ je ovlÃ¡dÃ¡. To je mi jasnÃ©.
+	AI_Output (self, other, "DIA_Xardas_Add_14_09"); //Zjisti, co za sÃ­lu je ovlÃ¡dÃ¡.
+	AI_Output (self, other, "DIA_Xardas_Add_14_10"); //VraÄƒ se sem, jakmile to zjistÃ­Å¡!
 	
 	Info_ClearChoices	(DIA_Xardas_RitualInnosEyeRepairImportant);
 	Info_AddChoice	(DIA_Xardas_RitualInnosEyeRepairImportant, DIALOG_ENDE, DIA_Xardas_RitualInnosEyeRepairImportant_weiter );
@@ -1095,8 +1095,8 @@ func void DIA_Xardas_RitualInnosEyeRepairImportant_Info ()
  func void DIA_Xardas_RitualInnosEyeRepairImportant_weiter()
  {
 	AI_StopProcessInfos (self);
-	B_StartOtherRoutine (Xardas,"Zaèít");
-  	B_StartOtherRoutine	(Vatras,"Zaèít");
+	B_StartOtherRoutine (Xardas,"ZaÄÃ­t");
+  	B_StartOtherRoutine	(Vatras,"ZaÄÃ­t");
 
  };
 
@@ -1111,7 +1111,7 @@ instance DIA_Xardas_WASNUN		(C_INFO)
 	information	 = 	DIA_Xardas_WASNUN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Innosovo oko je uzdraveno. Co dál?";
+	description	 = 	"Innosovo oko je uzdraveno. Co dÃ¡l?";
 };
 
 func int DIA_Xardas_WASNUN_Condition ()
@@ -1125,16 +1125,16 @@ func int DIA_Xardas_WASNUN_Condition ()
 
 func void DIA_Xardas_WASNUN_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WASNUN_15_00"); //Innosovo oko je opraveno. Co dál?
-	AI_Output			(self, other, "DIA_Xardas_WASNUN_14_01"); //Nezapomeà ho mít na sobê, a budeš stát drakùm tváâí v tváâ.
+	AI_Output			(other, self, "DIA_Xardas_WASNUN_15_00"); //Innosovo oko je opraveno. Co dÃ¡l?
+	AI_Output			(self, other, "DIA_Xardas_WASNUN_14_01"); //NezapomeÅ• ho mÃ­t na sobÄ™, aÅ¾ budeÅ¡ stÃ¡t drakÅ¯m tvÃ¡Ã¢Ã­ v tvÃ¡Ã¢.
 
 	if (MIS_ReadyforChapter4 == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_02"); //Neztrácej èas. Bê do Hornického údolí a zabij ty draky.
+		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_02"); //NeztrÃ¡cej Äas. BÄ™Å¾ do HornickÃ©ho ÃºdolÃ­ a zabij ty draky.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_03"); //Jdi za Pyrokarem, aã ti vysvêtlí, jak Oko pouívat.
+		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_03"); //Jdi za Pyrokarem, aÄƒ ti vysvÄ™tlÃ­, jak Oko pouÅ¾Ã­vat.
 	};
 };		
 
@@ -1184,7 +1184,7 @@ instance DIA_Xardas_PERM4		(C_INFO)
 	information	 = 	DIA_Xardas_PERM4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co je nového?";
+	description	 = 	"Co je novÃ©ho?";
 };
 
 func int DIA_Xardas_PERM4_Condition ()
@@ -1197,9 +1197,9 @@ func int DIA_Xardas_PERM4_Condition ()
 
 func void DIA_Xardas_PERM4_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_PERM4_15_00"); //Co je nového?
-	AI_Output			(self, other, "DIA_Xardas_PERM4_14_01"); //Pátraèi ještê neodešli. Nedají si pokoje, dokud tê nedostanou.
-	AI_Output			(self, other, "DIA_Xardas_PERM4_14_02"); //Zabij draky v Hornickém údolí a zjisti, kdo za têmi útoky stojí. Jinak bude jejich síla neustále narùstat.
+	AI_Output			(other, self, "DIA_Xardas_PERM4_15_00"); //Co je novÃ©ho?
+	AI_Output			(self, other, "DIA_Xardas_PERM4_14_01"); //PÃ¡traÄi jeÅ¡tÄ™ neodeÅ¡li. NedajÃ­ si pokoje, dokud tÄ™ nedostanou.
+	AI_Output			(self, other, "DIA_Xardas_PERM4_14_02"); //Zabij draky v HornickÃ©m ÃºdolÃ­ a zjisti, kdo za tÄ™mi Ãºtoky stojÃ­. Jinak bude jejich sÃ­la neustÃ¡le narÅ¯stat.
 
 };
 

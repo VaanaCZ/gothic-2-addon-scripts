@@ -8,7 +8,7 @@ INSTANCE DIA_Boltan_EXIT   (C_INFO)
 	condition   = DIA_Boltan_EXIT_Condition;
 	information = DIA_Boltan_EXIT_Info;
 	permanent   = TRUE;
-	description = "Jenom tudy procházím.";
+	description = "Jenom tudy prochÃ¡zÃ­m.";
 };
 
 FUNC INT DIA_Boltan_EXIT_Condition()
@@ -42,7 +42,7 @@ func int DIA_Boltan_HALLO_Condition ()
 
 func void DIA_Boltan_HALLO_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_00"); //Co tady chceš?
+	AI_Output (self ,other, "DIA_Boltan_Add_05_00"); //Co tady chceÅ¡?
 };
 
 // ************************************************
@@ -55,7 +55,7 @@ instance DIA_Boltan_ToConvicts		(C_INFO)
 	condition	= DIA_Boltan_ToConvicts_Condition;
 	information = DIA_Boltan_ToConvicts_Info;
 	permanent 	= TRUE;
-	description = "Chtêl bych vidêt vêznê.";
+	description = "ChtÄ™l bych vidÄ™t vÄ™znÄ™.";
 };
 
 func int DIA_Boltan_ToConvicts_Condition ()
@@ -65,7 +65,7 @@ func int DIA_Boltan_ToConvicts_Condition ()
 
 func void DIA_Boltan_ToConvicts_Info ()
 {
-	AI_Output (other, self, "DIA_Boltan_Add_15_01"); //Chtêl bych vidêt vêznê.
+	AI_Output (other, self, "DIA_Boltan_Add_15_01"); //ChtÄ™l bych vidÄ™t vÄ™znÄ™.
 	
 	
 	if (Kapitel == 3) 
@@ -73,11 +73,11 @@ func void DIA_Boltan_ToConvicts_Info ()
 	{
 		if (other.guild == GIL_SLD)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //Jasan, jen bê a rozluè se se svım kamarádíèkem.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //Jasan, jen bÄ™Å¾ a rozluÄ se se svÃ½m kamarÃ¡dÃ­Äkem.
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //Zabásli jsme tu svini, co zavradila paladina Lothara.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //ZabÃ¡sli jsme tu svini, co zavraÅ¾dila paladina Lothara.
 		};
 	}
 	else if (Canthar_Ausgeliefert == FALSE)
@@ -85,21 +85,21 @@ func void DIA_Boltan_ToConvicts_Info ()
 	&& (Rengaru_Ausgeliefert == FALSE)
 	&& (Nagur_Ausgeliefert == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Boltan_Add_05_02"); //Všechny cely jsou momentálnê prázdné.
+		AI_Output (self ,other, "DIA_Boltan_Add_05_02"); //VÅ¡echny cely jsou momentÃ¡lnÄ™ prÃ¡zdnÃ©.
 	}
 	else
 	{
 		if (other.guild == GIL_MIL)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //Dobrá, kámo.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //DobrÃ¡, kÃ¡mo.
 		}
 		else if (other.guild == GIL_PAL) || (other.guild == GIL_KDF)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_05"); //Samozâejmê.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_05"); //SamozÃ¢ejmÄ™.
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //Jen bê, ale nebuë tam dlouho, rozumíš?
+			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //Jen bÄ™Å¾, ale nebuÃ« tam dlouho, rozumÃ­Å¡?
 		};
 	};
 };		
@@ -129,9 +129,9 @@ func int DIA_Boltan_HalloBennet_Condition ()
 
 func void DIA_Boltan_HalloBennet_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //Nepâišel jsi odsud vysekat toho svého pâítelíèka, e ne?
-	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Tak na to zapomeà! Jakmile spustím poplach, okamitê tady budou ostatní hoši!
-	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //A pak si dáme pár oldanátkù! (ošklivê se zasmêje)
+	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //NepÃ¢iÅ¡el jsi odsud vysekat toho svÃ©ho pÃ¢Ã­telÃ­Äka, Å¾e ne?
+	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Tak na to zapomeÅ•! Jakmile spustÃ­m poplach, okamÅ¾itÄ™ tady budou ostatnÃ­ hoÅ¡i!
+	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //A pak si dÃ¡me pÃ¡r Å¾oldanÃ¡tkÅ¯! (oÅ¡klivÄ™ se zasmÄ™je)
 };		
 	
 // ************************************************
@@ -159,10 +159,10 @@ func int DIA_Boltan_HalloCanthar_Condition ()
 
 func void DIA_Boltan_HalloCanthar_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Hej, ty jsi ten chlapík, co obaloval toho kupce Canthara.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Pâišla se za nêj pâimluvit spousta lidí. Docela vıznamnıch lidí.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Celá ta vêc musela bıt jedno velké nedorozumêní. To se stává.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //Pâíštê by sis mêl dávat vêtší pozor, koho dáváš do vêzení.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Hej, ty jsi ten chlapÃ­k, co obÅ¾aloval toho kupce Canthara.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //PÃ¢iÅ¡la se za nÄ™j pÃ¢imluvit spousta lidÃ­. Docela vÃ½znamnÃ½ch lidÃ­.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //CelÃ¡ ta vÄ™c musela bÃ½t jedno velkÃ© nedorozumÄ™nÃ­. To se stÃ¡vÃ¡.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //PÃ¢Ã­Å¡tÄ™ by sis mÄ™l dÃ¡vat vÄ™tÅ¡Ã­ pozor, koho dÃ¡vÃ¡Å¡ do vÄ™zenÃ­.
 };		
 
 

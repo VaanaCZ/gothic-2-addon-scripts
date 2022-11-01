@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Miguel_Hi   (C_INFO)
 	condition   = DIA_Addon_Miguel_Hi_Condition;
 	information = DIA_Addon_Miguel_Hi_Info;
 	permanent   = FALSE;
-	description = "Co tady dêláš?";
+	description = "Co tady dÄ™lÃ¡Å¡?";
 };
 FUNC INT DIA_Addon_Miguel_Hi_Condition()
 {		
@@ -72,20 +72,20 @@ FUNC INT DIA_Addon_Miguel_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_00");//Co tu chceš?
+	AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_00");//Co tu chceÅ¡?
 	
 	if Wld_IsTime (06,00,22,00)
 	{
-		AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_01");//Hledáš nêco?
-		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_02");//Byliny - hledám byliny.
+		AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_01");//HledÃ¡Å¡ nÄ™co?
+		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_02");//Byliny - hledÃ¡m byliny.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//Obvykle hledám byliny.
+		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//Obvykle hledÃ¡m byliny.
 	};
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Tady vêtšinou rostou samı uiteènı vêci.
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//Vêtšina zdejších rostlin je léèivá a dá se kouâit jako cigára z trávy z bain.
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//Tehdá za bariérou jsem pracoval jako alchymista.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Tady vÄ™tÅ¡inou rostou samÃ½ uÅ¾iteÄnÃ½ vÄ™ci.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//VÄ™tÅ¡ina zdejÅ¡Ã­ch rostlin je lÃ©ÄivÃ¡ a dÃ¡ se kouÃ¢it jako cigÃ¡ra z trÃ¡vy z baÅ¾in.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//TehdÃ¡ za bariÃ©rou jsem pracoval jako alchymista.
 };
 //---------------------------------------------------------------------
 //	Info Story
@@ -97,7 +97,7 @@ INSTANCE DIA_Addon_Miguel_Story   (C_INFO)
 	condition   = DIA_Addon_Miguel_Story_Condition;
 	information = DIA_Addon_Miguel_Story_Info;
 	permanent   = FALSE;
-	description = "Proè tê hodili za bariéru?";
+	description = "ProÄ tÄ™ hodili za bariÃ©ru?";
 };
 FUNC INT DIA_Addon_Miguel_Story_Condition()
 {	
@@ -108,11 +108,11 @@ FUNC INT DIA_Addon_Miguel_Story_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Story_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//Proè tê vlastnê shodili za bariéru?
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//Moc jsem si zahrával s lektvary, kterı pozmêàovaly mysl.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//Jednou veèer si mùj mistr Ignaz omylem spletl mùj 'experiment' s vínem.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//Byl potom naèas tak nêjak, ehm, nevypoèitatelnı. A i pak byl z toho všeho tak nêjak popletenı.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//(hoâce) Mágové mê za to hodili za bariéru. Âíkali tomu 'bádání v zakázané oblasti'.
+	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//ProÄ tÄ™ vlastnÄ™ shodili za bariÃ©ru?
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//Moc jsem si zahrÃ¡val s lektvary, kterÃ½ pozmÄ™Å•ovaly mysl.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//Jednou veÄer si mÅ¯j mistr Ignaz omylem spletl mÅ¯j 'experiment' s vÃ­nem.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//Byl potom naÄas tak nÄ™jak, ehm, nevypoÄitatelnÃ½. A i pak byl z toho vÅ¡eho tak nÄ™jak popletenÃ½.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//(hoÃ¢ce) MÃ¡govÃ© mÄ™ za to hodili za bariÃ©ru. Ã‚Ã­kali tomu 'bÃ¡dÃ¡nÃ­ v zakÃ¡zanÃ© oblasti'.
 };
 
 //---------------------------------------------------------------------
@@ -125,7 +125,7 @@ INSTANCE DIA_Addon_Miguel_Lager   (C_INFO)
 	condition   = DIA_Addon_Miguel_Lager_Condition;
 	information = DIA_Addon_Miguel_Lager_Info;
 	permanent   = FALSE;
-	description = "Co mi mùeš âíci o táboâe?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Ã¢Ã­ci o tÃ¡boÃ¢e?";
 };
 FUNC INT DIA_Addon_Miguel_Lager_Condition()
 {	
@@ -133,9 +133,9 @@ FUNC INT DIA_Addon_Miguel_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Lager_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Co bys mi âekl o táboâe?
-	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_01"); //Nic moc. Nikdy jsem tam sám nebyl.
-	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //Od zaèátku tam byli jenom Havranovi lidi. Všichni ostatní pâišli pozdêji, vèetnê mê, a museli èekat, a budou potâebovat novı lidi.
+	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Co bys mi Ã¢ekl o tÃ¡boÃ¢e?
+	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_01"); //Nic moc. Nikdy jsem tam sÃ¡m nebyl.
+	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //Od zaÄÃ¡tku tam byli jenom Havranovi lidi. VÅ¡ichni ostatnÃ­ pÃ¢iÅ¡li pozdÄ™ji, vÄetnÄ™ mÄ™, a museli Äekat, aÅ¾ budou potÃ¢ebovat novÃ½ lidi.
 };
 
 //-----------------------------------------
@@ -148,7 +148,7 @@ instance DIA_Addon_Miguel_WhereFrom (C_INFO)
 	condition   = DIA_Addon_Miguel_WhereFrom_Condition;
 	information = DIA_Addon_Miguel_WhereFrom_Info;
 	permanent   = FALSE;
-	description = "Odkud jsi pâišel?";
+	description = "Odkud jsi pÃ¢iÅ¡el?";
 };
 FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 {	
@@ -160,10 +160,10 @@ FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_WhereFrom_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Odkud jsi pâišel?
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //No, nejspíš tam odtud co ty. S piráty po moâi.
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Tohle údolí je komplet odâíznutı, není tu ádnı spojení na pevninu.
-	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(zamyšlenê) Pravda.
+	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Odkud jsi pÃ¢iÅ¡el?
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //No, nejspÃ­Å¡ tam odtud co ty. S pirÃ¡ty po moÃ¢i.
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Tohle ÃºdolÃ­ je komplet odÃ¢Ã­znutÃ½, nenÃ­ tu Å¾Ã¡dnÃ½ spojenÃ­ na pevninu.
+	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(zamyÅ¡lenÄ™) Pravda.
 };
 
 //-----------------------------------------
@@ -176,7 +176,7 @@ instance DIA_Addon_Miguel_Angefordert (C_INFO)
 	condition   = DIA_Addon_Miguel_Angefordert_Condition;
 	information = DIA_Addon_Miguel_Angefordert_Info;
 	permanent   = FALSE;
-	description = "Kdy budou potâebovat nové lidi?";
+	description = "Kdy budou potÃ¢ebovat novÃ© lidi?";
 };
 FUNC INT DIA_Addon_Miguel_Angefordert_Condition()
 {	
@@ -187,12 +187,12 @@ FUNC INT DIA_Addon_Miguel_Angefordert_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Angefordert_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //A kdy budou potâebovat nové lidi?
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //No, a jim bude nêkdo scházet.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Kdy nêkoho z kopáèù seere dùlní èerv, jdou za náma, aby ho nêkdo nahradil.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //Obèas se taky zabíjejí mezi sebou, ale poslední dobou u je to lepší.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Havran nêjak ovládá pâístup do dolu, take se tam hned tak nêkdo nedostane.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Ale nevím pâesnê, jak to funguje, nikdy jsem tam nebyl.
+	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //A kdy budou potÃ¢ebovat novÃ© lidi?
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //No, aÅ¾ jim bude nÄ™kdo schÃ¡zet.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //KdyÅ¾ nÄ™koho z kopÃ¡ÄÅ¯ seÅ¾ere dÅ¯lnÃ­ Äerv, jdou za nÃ¡ma, aby ho nÄ™kdo nahradil.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //ObÄas se taky zabÃ­jejÃ­ mezi sebou, ale poslednÃ­ dobou uÅ¾ je to lepÅ¡Ã­.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Havran nÄ™jak ovlÃ¡dÃ¡ pÃ¢Ã­stup do dolu, takÅ¾e se tam hned tak nÄ™kdo nedostane.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Ale nevÃ­m pÃ¢esnÄ™, jak to funguje, nikdy jsem tam nebyl.
 };
 
 //---------------------------------------------------------------------
@@ -205,7 +205,7 @@ INSTANCE DIA_Addon_Miguel_Fortuno   (C_INFO)
 	condition   = DIA_Addon_Miguel_Fortuno_Condition;
 	information = DIA_Addon_Miguel_Fortuno_Info;
 	permanent   = FALSE;
-	description = "Co se tıèe Fortuna...";
+	description = "Co se tÃ½Äe Fortuna...";
 };
 FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 {	
@@ -216,17 +216,17 @@ FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Fortuno_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//Fortuno je pêknê zmatenı a hodil by se mu nêjakı lektvar na osvêení pamêti.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//Fortuno? Ten snad slouí Havranovi, ne?
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_02");//Slouíval, ale teë je z nêj troska. A mùe za to Havran.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Havran? Doteëka jsem o nêm mêl vysokı mínêní. No dobâe, ale tady v bainách nenamíchám nic.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//Mùu si ten lektvar namíchat sám, v táboâe je alchymistická kolona. Staèí mi jenom recept.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//S tím receptem opatrnê, pâíprava tohohle lektvaru je nebezpeèná.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//Fortuno je pÄ™knÄ™ zmatenÃ½ a hodil by se mu nÄ™jakÃ½ lektvar na osvÄ™Å¾enÃ­ pamÄ™ti.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//Fortuno? Ten snad slouÅ¾Ã­ Havranovi, ne?
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_02");//SlouÅ¾Ã­val, ale teÃ« je z nÄ™j troska. A mÅ¯Å¾e za to Havran.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Havran? DoteÃ«ka jsem o nÄ™m mÄ™l vysokÃ½ mÃ­nÄ™nÃ­. No dobÃ¢e, ale tady v baÅ¾inÃ¡ch nenamÃ­chÃ¡m nic.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//MÅ¯Å¾u si ten lektvar namÃ­chat sÃ¡m, v tÃ¡boÃ¢e je alchymistickÃ¡ kolona. StaÄÃ­ mi jenom recept.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//S tÃ­m receptem opatrnÄ™, pÃ¢Ã­prava tohohle lektvaru je nebezpeÄnÃ¡.
 	B_GiveInvItems (self, other, ITWr_Addon_MCELIXIER_01,1);
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Pokud nêco zkazíš nebo tam nedáš správné ingredience, mùe ti z toho vyjít zabijáckı dryák.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//Dám si pozor.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Pokud nÄ™co zkazÃ­Å¡ nebo tam nedÃ¡Å¡ sprÃ¡vnÃ© ingredience, mÅ¯Å¾e ti z toho vyjÃ­t zabijÃ¡ckÃ½ dryÃ¡k.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//DÃ¡m si pozor.
 	
-	B_LogEntry (Topic_Addon_Fortuno,"Miguel mi dal recept na nêjakı lektvar, kterı by mêl oivit Fortunovu pamêã. Ale mohu jej namíchat, pouze a budu znát všechny pâísady, jinak by to mohlo mít smrtonosné následky.");
+	B_LogEntry (Topic_Addon_Fortuno,"Miguel mi dal recept na nÄ™jakÃ½ lektvar, kterÃ½ by mÄ™l oÅ¾ivit Fortunovu pamÄ™Äƒ. Ale mohu jej namÃ­chat, pouze aÅ¾ budu znÃ¡t vÅ¡echny pÃ¢Ã­sady, jinak by to mohlo mÃ­t smrtonosnÃ© nÃ¡sledky.");
 };
 
 //---------------------------------------------------------------------
@@ -239,7 +239,7 @@ INSTANCE DIA_Addon_Miguel_BRAU   (C_INFO)
 	condition   = DIA_Addon_Miguel_BRAU_Condition;
 	information = DIA_Addon_Miguel_BRAU_Info;
 	permanent   = FALSE;
-	description = "Mùeš mê nêèemu nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 {	
@@ -250,9 +250,9 @@ FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_BRAU_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//Mùeš mê nêco nauèit?
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//Není èas. Jsem tu, abych získal zlato, a dokud se nedostanu do tábora, musím si na ivobytí vydêlávat prodejem bylin.
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//Ale kdybys potâeboval lektvary, nêjakı tady mám.
+	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//MÅ¯Å¾eÅ¡ mÄ™ nÄ™co nauÄit?
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//NenÃ­ Äas. Jsem tu, abych zÃ­skal zlato, a dokud se nedostanu do tÃ¡bora, musÃ­m si na Å¾ivobytÃ­ vydÄ™lÃ¡vat prodejem bylin.
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//Ale kdybys potÃ¢eboval lektvary, nÄ™jakÃ½ tady mÃ¡m.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_BDT_Trader,"U Miguela mohu nakupovat lektvary a byliny.");

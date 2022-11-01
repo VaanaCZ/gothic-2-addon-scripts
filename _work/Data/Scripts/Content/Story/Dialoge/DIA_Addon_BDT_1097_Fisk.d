@@ -73,11 +73,11 @@ FUNC INT DIA_Addon_Fisk_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Fisk_Hi_12_00");//Hej, jestli tady v táboâe hledáš àákıho slušnıho obchodníka, tak jsi ho právê našel.
-	AI_Output (self, other, "DIA_Addon_Fisk_Hi_12_01");//Mám chatrè pâímo za Estebanem, take kdybys nêco potâeboval, zastav se.
+	AI_Output (self, other, "DIA_Addon_Fisk_Hi_12_00");//Hej, jestli tady v tÃ¡boÃ¢e hledÃ¡Å¡ Å•Ã¡kÃ½ho sluÅ¡nÃ½ho obchodnÃ­ka, tak jsi ho prÃ¡vÄ™ naÅ¡el.
+	AI_Output (self, other, "DIA_Addon_Fisk_Hi_12_01");//MÃ¡m chatrÄ pÃ¢Ã­mo za Estebanem, takÅ¾e kdybys nÄ™co potÃ¢eboval, zastav se.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Fisk prodává všechno moné.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Fisk prodÃ¡vÃ¡ vÅ¡echno moÅ¾nÃ©.");
 	
 	AI_StopProcessInfos  (self);
 	Npc_ExchangeRoutine  (self,"START");
@@ -108,12 +108,12 @@ FUNC VOID DIA_Addon_Fisk_Trade_Info()
 	B_Say (other,self,"$TRADE_2");
 	B_GiveTradeInv(self);
 	
-	//Bolzen nachfüllen
+	//Bolzen nachfÃ¼llen
 	if (Npc_HasItems (self, ItRw_Bolt) < 50)
 	{
 		CreateInvItems (self,ItRw_Bolt, (50 - Npc_HasItems (self, ItRw_Bolt))); 
 	};
-	//Pfeile nachfüllen
+	//Pfeile nachfÃ¼llen
 	if (Npc_HasItems (self, ItRw_Arrow) < 50)
 	{
 		CreateInvItems (self,ItRw_Arrow, (50 - Npc_HasItems (self, ItRw_Arrow))); 
@@ -141,12 +141,12 @@ FUNC INT DIA_Addon_Fisk_Attentat_Condition()
 FUNC VOID DIA_Addon_Fisk_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_00"); //Hele, já s tím nechci mít nic spoleènıho, kapišto?
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_01"); //(nevinnê) Mám jinı starosti, já sám jsem obêã.
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_00"); //Hele, jÃ¡ s tÃ­m nechci mÃ­t nic spoleÄnÃ½ho, kapiÅ¡to?
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_01"); //(nevinnÄ™) MÃ¡m jinÃ½ starosti, jÃ¡ sÃ¡m jsem obÄ™Äƒ.
 	AI_Output (other, self, "DIA_Addon_Fisk_Attentat_15_02"); //Jak to?
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_03"); //Za poslední dodávku jsem vysolil pêknou hromadu zlata.
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_04"); //Ale nikdy jsem za ni nic nedostal! Àákej hajzl to prostê stopil!
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_05"); //(rozzuâenê) Okradli mê, a nejspíš nêkdo z našich vlastních lidí!
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_03"); //Za poslednÃ­ dodÃ¡vku jsem vysolil pÄ™knou hromadu zlata.
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_04"); //Ale nikdy jsem za ni nic nedostal! Å”Ã¡kej hajzl to prostÄ™ stopil!
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_05"); //(rozzuÃ¢enÄ™) Okradli mÄ™, a nejspÃ­Å¡ nÄ™kdo z naÅ¡ich vlastnÃ­ch lidÃ­!
 };
 
 //---------------------------------------------------------------------
@@ -159,7 +159,7 @@ instance DIA_Addon_Fisk_Lieferung   (C_INFO)
 	condition   = DIA_Addon_Fisk_Lieferung_Condition;
 	information = DIA_Addon_Fisk_Lieferung_Info;
 	permanent   = FALSE;
-	description	= "Co to bylo za dodávku?";
+	description	= "Co to bylo za dodÃ¡vku?";
 };
 FUNC INT DIA_Addon_Fisk_Lieferung_Condition()
 {	
@@ -170,17 +170,17 @@ FUNC INT DIA_Addon_Fisk_Lieferung_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Lieferung_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Lieferung_15_00"); //Co to bylo za dodávku?
-	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_01"); //Balík paklíèù. Nêkdo mi je mêl vyzvednout u pirátù.
-	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_02"); //Ale jistej Juan mi je èmajznul. (vztekle) Vèetnê zlata, kterı jsem za nê zaplatil!
-	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_03"); //Ten šmejd se teë ukrejvá nêkde v bainê.
+	AI_Output (other, self, "DIA_Addon_Fisk_Lieferung_15_00"); //Co to bylo za dodÃ¡vku?
+	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_01"); //BalÃ­k paklÃ­ÄÅ¯. NÄ™kdo mi je mÄ™l vyzvednout u pirÃ¡tÅ¯.
+	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_02"); //Ale jistej Juan mi je Ämajznul. (vztekle) VÄetnÄ™ zlata, kterÃ½ jsem za nÄ™ zaplatil!
+	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_03"); //Ten Å¡mejd se teÃ« ukrejvÃ¡ nÄ™kde v baÅ¾inÄ™.
 	
 	MIS_Lennar_Lockpick = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_Addon_Fisk,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Fisk,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Jistı Juan obchodoval s bandity. Prı se ukrıvají kdesi v bainách.");
-	B_LogEntry (Topic_Addon_Fisk,"Jistı Juan ukradl Fiskovi zásilku zboí (balík paklíèù). Teë se skrıvá kdesi v bainách.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"JistÃ½ Juan obchodoval s bandity. PrÃ½ se ukrÃ½vajÃ­ kdesi v baÅ¾inÃ¡ch.");
+	B_LogEntry (Topic_Addon_Fisk,"JistÃ½ Juan ukradl Fiskovi zÃ¡silku zboÅ¾Ã­ (balÃ­k paklÃ­ÄÅ¯). TeÃ« se skrÃ½vÃ¡ kdesi v baÅ¾inÃ¡ch.");
 };
 	
 //---------------------------------------------------------------------
@@ -190,46 +190,46 @@ FUNC VOID DIA_Addon_Fisk_Lieferung_Info()
 	{	
 		if (Npc_IsDead(Juan))
 		{
-			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_00"); //Je mrtvı.
-			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_01"); //Dobâe, aspoà u od nêj bude pokoj.
+			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_00"); //Je mrtvÃ½.
+			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_01"); //DobÃ¢e, aspoÅ• uÅ¾ od nÄ™j bude pokoj.
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_02"); //Je stále naivu.
-			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_03"); //Tys tu svini nechal ít?
-			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_04"); //Nebyl sám.
-			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_05"); //Nevadí – já se s têma hajzlama vypoâádám pozdêjc.
+			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_02"); //Je stÃ¡le naÅ¾ivu.
+			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_03"); //Tys tu svini nechal Å¾Ã­t?
+			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_04"); //Nebyl sÃ¡m.
+			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_05"); //NevadÃ­ â€“ jÃ¡ se s tÄ™ma hajzlama vypoÃ¢Ã¡dÃ¡m pozdÄ™jc.
 		};
 	};
 //---------------------------------------------------------------------
 	func void B_Addon_Fisk_Belohnung()
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_00"); //A co se tıèe tebe...
-		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_01"); //Mám fakt dobrı vztahy s Hunem.
-		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_02"); //Dohlídnu, aby ti odteëka prodával brnêní fakt levnê.
+		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_00"); //A co se tÃ½Äe tebe...
+		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_01"); //MÃ¡m fakt dobrÃ½ vztahy s Hunem.
+		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_02"); //DohlÃ­dnu, aby ti odteÃ«ka prodÃ¡val brnÄ™nÃ­ fakt levnÄ™.
 		Huno_ArmorCheap = TRUE;
 		
 		if (other.guild  == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_03"); //A vem si tohle – tenhle šutr jsem jednou dostal od Corrista.
-			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_04"); //Je to jediná vêc, co pâeila mùj útêk z bariéry. Myslím, e ho vyuiješ víc jak já.
+			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_03"); //A vem si tohle â€“ tenhle Å¡utr jsem jednou dostal od Corrista.
+			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_04"); //Je to jedinÃ¡ vÄ™c, co pÃ¢eÅ¾ila mÅ¯j ÃºtÄ™k z bariÃ©ry. MyslÃ­m, Å¾e ho vyuÅ¾ijeÅ¡ vÃ­c jak jÃ¡.
 			B_GiveInvItems (self, other, ItMi_RuneBlank,1);
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_05"); //A taky ti dám jednu ze svejch zbraní.
+			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_05"); //A taky ti dÃ¡m jednu ze svejch zbranÃ­.
 		
 			if (other.HitChance[NPC_TALENT_2H] > other.HitChance[NPC_TALENT_1H])   
 			{
 				B_GiveInvItems (self, other, ItMw_Streitaxt1,1);
 			}
-			else //1h größer oder beide gleich
+			else //1h grÃ¶ÃŸer oder beide gleich
 			{
 				B_GiveInvItems (self, other, ItMw_Bartaxt,1);
 			};
 		};
 		
-		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_06"); //(uliènicky) Ruka ruku myje – to se nikdy nezmêní.
+		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_06"); //(uliÄnicky) Ruka ruku myje â€“ to se nikdy nezmÄ™nÃ­.
 	};
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Fisk_GivePaket (C_INFO)
@@ -239,7 +239,7 @@ INSTANCE DIA_Addon_Fisk_GivePaket (C_INFO)
 	condition   = DIA_Addon_Fisk_GivePaket_Condition;
 	information = DIA_Addon_Fisk_GivePaket_Info;
 	permanent   = FALSE;
-	description = "Mám ten tvùj balík.";
+	description = "MÃ¡m ten tvÅ¯j balÃ­k.";
 };
 FUNC INT DIA_Addon_Fisk_GivePaket_Condition()
 {	
@@ -251,13 +251,13 @@ FUNC INT DIA_Addon_Fisk_GivePaket_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_GivePaket_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_GivePaket_15_00"); //Mám ten tvùj balík.
+	AI_Output (other, self, "DIA_Addon_Fisk_GivePaket_15_00"); //MÃ¡m ten tvÅ¯j balÃ­k.
 	B_GiveInvItems (other, self, ItMi_Addon_Lennar_Paket, 1);
 	
 	MIS_Lennar_Lockpick = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_LennarPaket);
 	
-	AI_Output (self, other, "DIA_Addon_Fisk_GivePaket_12_01"); //(potêšenê) Vánê! (pâekvapenê) A co Juan?
+	AI_Output (self, other, "DIA_Addon_Fisk_GivePaket_12_01"); //(potÄ™Å¡enÄ™) VÃ¡Å¾nÄ™! (pÃ¢ekvapenÄ™) A co Juan?
 	
 	B_Addon_Fisk_AboutJuan();
 	
@@ -274,7 +274,7 @@ instance DIA_Addon_Fisk_PaketOpen (C_INFO)
 	condition   = DIA_Addon_Fisk_PaketOpen_Condition;
 	information = DIA_Addon_Fisk_PaketOpen_Info;
 	permanent   = FALSE;
-	description = "Otevâel jsem tvùj balík!";
+	description = "OtevÃ¢el jsem tvÅ¯j balÃ­k!";
 };
 FUNC INT DIA_Addon_Fisk_PaketOpen_Condition()
 {	
@@ -286,10 +286,10 @@ FUNC INT DIA_Addon_Fisk_PaketOpen_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_PaketOpen_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_PaketOpen_15_00"); //Otevâel jsem ten tvùj balík!
-	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_01"); //(smêje se) Samozâejmê! Ses prostê nemoh doèkat, co?
-	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_02"); //Máš aspoà ještê ty paklíèe?
-	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_03"); //A hlavnê, co je s Juanem?
+	AI_Output (other, self, "DIA_Addon_Fisk_PaketOpen_15_00"); //OtevÃ¢el jsem ten tvÅ¯j balÃ­k!
+	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_01"); //(smÄ™je se) SamozÃ¢ejmÄ™! Ses prostÄ™ nemoh doÄkat, co?
+	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_02"); //MÃ¡Å¡ aspoÅ• jeÅ¡tÄ™ ty paklÃ­Äe?
+	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_03"); //A hlavnÄ™, co je s Juanem?
 
 	B_Addon_Fisk_AboutJuan();
 };
@@ -304,7 +304,7 @@ INSTANCE DIA_Addon_Fisk_GivePicks (C_INFO)
 	condition   = DIA_Addon_Fisk_GivePicks_Condition;
 	information = DIA_Addon_Fisk_GivePicks_Info;
 	permanent   = TRUE;
-	description = "Tady máš tucet paklíèù.";
+	description = "Tady mÃ¡Å¡ tucet paklÃ­ÄÅ¯.";
 };
 FUNC INT DIA_Addon_Fisk_GivePicks_Condition()
 {	
@@ -316,11 +316,11 @@ FUNC INT DIA_Addon_Fisk_GivePicks_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_GivePicks_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_GivePicks_15_00"); //Tady máš tucet paklíèù.
+	AI_Output (other, self, "DIA_Addon_Fisk_GivePicks_15_00"); //Tady mÃ¡Å¡ tucet paklÃ­ÄÅ¯.
 
 	if (B_GiveInvItems (other, self, itke_lockpick, 12))
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_GivePicks_12_01"); //Vıbornê. Pár lidí u na tuhle dodávku èeká jak na smilování.
+		AI_Output (self, other, "DIA_Addon_Fisk_GivePicks_12_01"); //VÃ½bornÄ™. PÃ¡r lidÃ­ uÅ¾ na tuhle dodÃ¡vku ÄekÃ¡ jak na smilovÃ¡nÃ­.
 		B_Addon_Fisk_Belohnung();
 		
 		MIS_Lennar_Lockpick = LOG_SUCCESS;
@@ -328,7 +328,7 @@ FUNC VOID DIA_Addon_Fisk_GivePicks_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_GivePicks_12_02"); //Tohle není tucet! (potutelnê) Chceš mê snad napálit?
+		AI_Output (self, other, "DIA_Addon_Fisk_GivePicks_12_02"); //Tohle nenÃ­ tucet! (potutelnÄ™) ChceÅ¡ mÄ™ snad napÃ¡lit?
 	};
 };
 
@@ -356,41 +356,41 @@ FUNC INT DIA_Addon_Fisk_Inspektor_Condition()
 FUNC VOID DIA_Addon_Fisk_Inspektor_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_15_00"); //Juan pracoval pro Estebana!
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_01"); //(pâekvapenê) Coe?
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_15_02"); //Nehraj si se mnou! Tys o tom vêdêl!
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_03"); //(klidnê) No dobâe, máš pravdu. Ale doufám, e si taky uvêdomuješ, proè jsem ti to neâek.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_04"); //Všichni v táboâe si myslí, e pracuješ pro Estebana.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_05"); //A já se do tı záleitosti rozhodnê nechci namoèit jenom proto, e seš celej havej, jen aby ti dal èervenej kámen.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_01"); //(pÃ¢ekvapenÄ™) CoÅ¾e?
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_15_02"); //Nehraj si se mnou! Tys o tom vÄ™dÄ™l!
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_03"); //(klidnÄ™) No dobÃ¢e, mÃ¡Å¡ pravdu. Ale doufÃ¡m, Å¾e si taky uvÄ™domujeÅ¡, proÄ jsem ti to neÃ¢ek.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_04"); //VÅ¡ichni v tÃ¡boÃ¢e si myslÃ­, Å¾e pracujeÅ¡ pro Estebana.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_05"); //A jÃ¡ se do tÃ½ zÃ¡leÅ¾itosti rozhodnÄ™ nechci namoÄit jenom proto, Å¾e seÅ¡ celej Å¾havej, jen aby ti dal Äervenej kÃ¡men.
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Inspektor);
-	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"Já vlastnê nepracuju pro Estebana.",DIA_Addon_Fisk_Inspektor_AntiEsteban);
-	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"Nevêâím ti!",DIA_Addon_Fisk_Inspektor_DontBelieve);
-	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"To je mi jasnı!",DIA_Addon_Fisk_Inspektor_ISee);
+	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"JÃ¡ vlastnÄ™ nepracuju pro Estebana.",DIA_Addon_Fisk_Inspektor_AntiEsteban);
+	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"NevÄ™Ã¢Ã­m ti!",DIA_Addon_Fisk_Inspektor_DontBelieve);
+	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"To je mi jasnÃ½!",DIA_Addon_Fisk_Inspektor_ISee);
 };
 
 func void DIA_Addon_Fisk_Inspektor_ISee()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_ISee_15_00"); //Chápu.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_ISee_12_01"); //Fajn, tak to nechme bejt. Nikdo nás nemusí slyšet!
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_ISee_15_00"); //ChÃ¡pu.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_ISee_12_01"); //Fajn, tak to nechme bejt. Nikdo nÃ¡s nemusÃ­ slyÅ¡et!
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Inspektor);
 };
 
 func void DIA_Addon_Fisk_Inspektor_DontBelieve()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_DontBelieve_15_00"); //Nevêâím ti!
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_DontBelieve_12_01"); //Vêâ si, èemu chceš, ale varuju tê! Jestli o mnê chceš Estebanovi vyprávêt àákı pohádky, pak budeš další na âadê!
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_DontBelieve_15_00"); //NevÄ™Ã¢Ã­m ti!
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_DontBelieve_12_01"); //VÄ™Ã¢ si, Äemu chceÅ¡, ale varuju tÄ™! Jestli o mnÄ™ chceÅ¡ Estebanovi vyprÃ¡vÄ™t Å•Ã¡kÃ½ pohÃ¡dky, pak budeÅ¡ dalÅ¡Ã­ na Ã¢adÄ™!
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Inspektor);
 };
 
 func void DIA_Addon_Fisk_Inspektor_AntiEsteban()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_AntiEsteban_15_00"); //Já pro Estebana a tak úplnê nepracuju.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_01"); //Take si s tím starım šmejdem jen tak zahráváš?
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_02"); //Pak ti dám dobrou radu: nech si to pro sebe.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_03"); //Nevêâ NIKOMU, kdo má nêco spoleènıho s Estebanem, ani mnê. Kapišto?
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_04"); //A teë u toho nechme, aã nás nêkdo neslyší.
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_AntiEsteban_15_00"); //JÃ¡ pro Estebana aÅ¾ tak ÃºplnÄ™ nepracuju.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_01"); //TakÅ¾e si s tÃ­m starÃ½m Å¡mejdem jen tak zahrÃ¡vÃ¡Å¡?
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_02"); //Pak ti dÃ¡m dobrou radu: nech si to pro sebe.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_03"); //NevÄ™Ã¢ NIKOMU, kdo mÃ¡ nÄ™co spoleÄnÃ½ho s Estebanem, ani mnÄ™. KapiÅ¡to?
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_04"); //A teÃ« uÅ¾ toho nechme, aÄƒ nÃ¡s nÄ™kdo neslyÅ¡Ã­.
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Inspektor);
 };
@@ -405,7 +405,7 @@ INSTANCE DIA_Addon_Fisk_Meeting   (C_INFO)
 	condition   = DIA_Addon_Fisk_Meeting_Condition;
 	information = DIA_Addon_Fisk_Meeting_Info;
 	permanent   = FALSE;
-	description = "Take ten útok jsi spískal TY!";
+	description = "TakÅ¾e ten Ãºtok jsi spÃ­skal TY!";
 };
 FUNC INT DIA_Addon_Fisk_Meeting_Condition()
 {	
@@ -418,49 +418,49 @@ FUNC INT DIA_Addon_Fisk_Meeting_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Meeting_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_15_00");//Take ten útok jsi spískal TY.
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_01");//Jo. Esteban mi kazí kšefty.
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_02");//Nikoho z lidí, co pro mê pracujou, nechce pustit do dolù. Dává si bacha, aby VŠICHNI makali pro nêj a jedinê pro nêj.
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_03");//Proto mùe vybírat poplatek z kadıho obchodu. Ovládá celej tábor.
+	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_15_00");//TakÅ¾e ten Ãºtok jsi spÃ­skal TY.
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_01");//Jo. Esteban mi kazÃ­ kÅ¡efty.
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_02");//Nikoho z lidÃ­, co pro mÄ™ pracujou, nechce pustit do dolÅ¯. DÃ¡vÃ¡ si bacha, aby VÅ ICHNI makali pro nÄ™j a jedinÄ™ pro nÄ™j.
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_03");//Proto mÅ¯Å¾e vybÃ­rat poplatek z kaÅ¾dÃ½ho obchodu. OvlÃ¡dÃ¡ celej tÃ¡bor.
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Meeting);
 	
-	Info_AddChoice (DIA_Addon_Fisk_Meeting,"Co máš v plánu?",DIA_Addon_Fisk_Meeting_now);
-	Info_AddChoice (DIA_Addon_Fisk_Meeting,"Chceš zaujmout jeho místo?",DIA_Addon_Fisk_Meeting_You);
+	Info_AddChoice (DIA_Addon_Fisk_Meeting,"Co mÃ¡Å¡ v plÃ¡nu?",DIA_Addon_Fisk_Meeting_now);
+	Info_AddChoice (DIA_Addon_Fisk_Meeting,"ChceÅ¡ zaujmout jeho mÃ­sto?",DIA_Addon_Fisk_Meeting_You);
 	if (!Npc_IsDead(Esteban))
 	{
-		Info_AddChoice (DIA_Addon_Fisk_Meeting,"Taky bych tê mohl Estebanovi prodat.",DIA_Addon_Fisk_Meeting_sell);
+		Info_AddChoice (DIA_Addon_Fisk_Meeting,"Taky bych tÄ™ mohl Estebanovi prodat.",DIA_Addon_Fisk_Meeting_sell);
 	};
 };
 FUNC VOID DIA_Addon_Fisk_Meeting_You()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_You_15_00");//A ty ho chceš nahradit?
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_You_12_01");//Ne, já jsem kupec – jen si chci v klidu hledêt svıho.
+	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_You_15_00");//A ty ho chceÅ¡ nahradit?
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_You_12_01");//Ne, jÃ¡ jsem kupec â€“ jen si chci v klidu hledÄ™t svÃ½ho.
 };
 FUNC VOID DIA_Addon_Fisk_Meeting_sell()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_sell_15_00");//Mohl bych tê Estebanovi prodat.
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_sell_12_01");//A co? Co si myslíš, e se pak stane? Myslíš, e ti dá, co chceš?
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_sell_12_02");//Zapomeà na to – mám lepší plán.
+	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_sell_15_00");//Mohl bych tÄ™ Estebanovi prodat.
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_sell_12_01");//A co? Co si myslÃ­Å¡, Å¾e se pak stane? MyslÃ­Å¡, Å¾e ti dÃ¡, co chceÅ¡?
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_sell_12_02");//ZapomeÅ• na to â€“ mÃ¡m lepÅ¡Ã­ plÃ¡n.
 };
 FUNC VOID DIA_Addon_Fisk_Meeting_now()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_00");//Co máš v plánu?
+	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_00");//Co mÃ¡Å¡ v plÃ¡nu?
 	
 	if (!Npc_IsDead (Esteban))
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_01");//Odstraníme Estebana – to znamená, e TY ho zabiješ a pâevezmeš jeho místo.
-		AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_02");//Kdy s ním budou ty jeho gorily, nemám šanci.
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_03");//Pak je musíme pâimêt, k odchodu – povíme jim pravdu.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_01");//OdstranÃ­me Estebana â€“ to znamenÃ¡, Å¾e TY ho zabijeÅ¡ a pÃ¢evezmeÅ¡ jeho mÃ­sto.
+		AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_02");//KdyÅ¾ s nÃ­m budou ty jeho gorily, nemÃ¡m Å¡anci.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_03");//Pak je musÃ­me pÃ¢imÄ™t, k odchodu â€“ povÃ­me jim pravdu.
 		AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_04");//Jakou pravdu?
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_05");//es udêlal, co ti nakázal, a e ten útok jsem spískal já.
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_06");//Povêz to Estebanovi a on pošle svı hochy, aby mê zabili. A já si tu na nê poèkám.
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_07");//A budou pryè, mùeš toho bastarda v klidu sejmout a já se zatím postarám o jeho stráe.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_05");//Å½es udÄ™lal, co ti nakÃ¡zal, a Å¾e ten Ãºtok jsem spÃ­skal jÃ¡.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_06");//PovÄ™z to Estebanovi a on poÅ¡le svÃ½ hochy, aby mÄ™ zabili. A jÃ¡ si tu na nÄ™ poÄkÃ¡m.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_07");//AÅ¾ budou pryÄ, mÅ¯Å¾eÅ¡ toho bastarda v klidu sejmout a jÃ¡ se zatÃ­m postarÃ¡m o jeho strÃ¡Å¾e.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_08"); //Esteban je mrtvı. U se zase mùu vênovat jenom obchodùm.
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_09"); //Tumáš, tohle je pro tebe.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_08"); //Esteban je mrtvÃ½. UÅ¾ se zase mÅ¯Å¾u vÄ™novat jenom obchodÅ¯m.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_09"); //TumÃ¡Å¡, tohle je pro tebe.
 		B_GiveInvItems (self, other, itmi_gold, 500);
 	};
 	
@@ -468,7 +468,7 @@ FUNC VOID DIA_Addon_Fisk_Meeting_now()
 	MIS_Judas = LOG_SUCCESS;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"AMBUSH");
-	B_LogEntry (Topic_Addon_Esteban, "Ten útok na Estebana naplánoval Fisk.");
+	B_LogEntry (Topic_Addon_Esteban, "Ten Ãºtok na Estebana naplÃ¡noval Fisk.");
 };
 //--------------------------------------------------------------------
 //	Info Sieg
@@ -480,7 +480,7 @@ INSTANCE DIA_Addon_Fisk_Sieg   (C_INFO)
 	condition   = DIA_Addon_Fisk_Sieg_Condition;
 	information = DIA_Addon_Fisk_Sieg_Info;
 	permanent   = FALSE;
-	description = "Esteban u to má za sebou.";
+	description = "Esteban uÅ¾ to mÃ¡ za sebou.";
 };
 FUNC INT DIA_Addon_Fisk_Sieg_Condition()
 {	
@@ -492,10 +492,10 @@ FUNC INT DIA_Addon_Fisk_Sieg_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Sieg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Sieg_15_00");//Esteban u to má za sebou.
-	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_01");//Na tohle jsem èekal jak dlouho.
-	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_02");//Myslím, e teë máš na práci další vêci a já se musím vrátit zpátky k obchodùm.
-	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_03");//Take kdy budeš potâebovat nêco dalšího, víš, kde mê najít.
+	AI_Output (other, self, "DIA_Addon_Fisk_Sieg_15_00");//Esteban uÅ¾ to mÃ¡ za sebou.
+	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_01");//Na tohle jsem Äekal jak dlouho.
+	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_02");//MyslÃ­m, Å¾e teÃ« mÃ¡Å¡ na prÃ¡ci dalÅ¡Ã­ vÄ™ci a jÃ¡ se musÃ­m vrÃ¡tit zpÃ¡tky k obchodÅ¯m.
+	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_03");//TakÅ¾e kdyÅ¾ budeÅ¡ potÃ¢ebovat nÄ™co dalÅ¡Ã­ho, vÃ­Å¡, kde mÄ™ najÃ­t.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "START");

@@ -6,7 +6,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 {	
   	Wld_PlayEffect("spellFX_Teleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
 	Snd_Play ("MFX_TELEPORT_CAST");
-	Npc_ClearAIQueue (hero);	//Joly:wegen Seitw‰rts da durch rennen.
+	Npc_ClearAIQueue (hero);	//Joly:wegen Seitw√§rts da durch rennen.
 	
 	SCUsed_TELEPORTER = TRUE;			//SC hat schon mal einen Teleporter benutzt
 	
@@ -20,7 +20,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"TeleportaËnÌ k·men v jeskyni v˝chodnÍ od p‚Ìstavu vede do hospody 'U MrtvÈ harpyje'."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"Teleportaƒçn√≠ k√°men v jeskyni v√Ωchodnƒô od p√¢√≠stavu vede do hospody 'U Mrtv√© harpyje'."); 
 			};
 			
 			SCUsed_NW_TELEPORTSTATION_CITY = TRUE; 
@@ -33,7 +33,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"TeleportaËnÌ k·men u hostince 'U MrtvÈ harpyje' ˙stÌ u port·lu z·hadn˝ch stavitel˘."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"Teleportaƒçn√≠ k√°men u hostince 'U Mrtv√© harpyje' √∫st√≠ u port√°lu z√°hadn√Ωch stavitel≈Ø."); 
 			};
 
 			SCUsed_NW_TELEPORTSTATION_TAVERNE = TRUE; 
@@ -46,7 +46,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"TeleportaËnÌ k·men u port·lu z·hadn˝ch stavitel˘ ˙stÌ v jeskyni v˝chodnÍ od p‚Ìstavu."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"Teleportaƒçn√≠ k√°men u port√°lu z√°hadn√Ωch stavitel≈Ø √∫st√≠ v jeskyni v√Ωchodnƒô od p√¢√≠stavu."); 
 			};
 
 			SCUsed_NW_TELEPORTSTATION_MAYA = TRUE;
@@ -76,7 +76,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Aktivoval jsem teleportaËnÌ k·men u port·lu, kter˝ vede do Khorinidu."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Aktivoval jsem teleportaƒçn√≠ k√°men u port√°lu, kter√Ω vede do Khorinidu."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
@@ -90,7 +90,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Poda‚ilo se mi aktivovat teleportaËnÌ k·men v hornÌ Ë·sti t·bora bandit˘."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Poda√¢ilo se mi aktivovat teleportaƒçn√≠ k√°men v horn√≠ ƒç√°sti t√°bora bandit≈Ø."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -104,7 +104,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Poda‚ilo se mi aktivovat teleportaËnÌ k·men v baûin·ch jiûnÍ od t·bora bandit˘."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Poda√¢ilo se mi aktivovat teleportaƒçn√≠ k√°men v ba≈æin√°ch ji≈ænƒô od t√°bora bandit≈Ø."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -118,7 +118,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Na jihoz·padÍ jsem naöel teleportaËnÌ k·men."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Na jihoz√°padƒô jsem na≈°el teleportaƒçn√≠ k√°men."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -132,14 +132,14 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"V jeskyni v ka‡onu je teleportaËnÌ k·men. Aktivoval jsem jej."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"V jeskyni v ka≈ïonu je teleportaƒçn√≠ k√°men. Aktivoval jsem jej."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
 			if (MIS_KrokoJagd == LOG_SUCCESS)
 			&& (SCUsed_ADW_TELEPORTSTATION_PIRATES_JACKSMONSTER == FALSE)
 			{
-				// Monster, die bei der Jagd mit Alligator Jack stˆren
+				// Monster, die bei der Jagd mit Alligator Jack st√∂ren
 				Wld_InsertNpc  	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Giant_DesertRat,"ADW_CANYON_PATH_TO_MINE1_05");
@@ -160,7 +160,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			};	
 			SCUsed_ADW_TELEPORTSTATION_RAVENTELEPORT_OUT = TRUE;
 		}
-		else	//immer zur¸ck zum ADW_ENTRANCE f¸r alle anderen Teleportstations
+		else	//immer zur√ºck zum ADW_ENTRANCE f√ºr alle anderen Teleportstations
 		{
 			AI_Teleport	(hero, "ADW_ENTRANCE"); 
 		};

@@ -9,14 +9,14 @@ var int 	Shell_Opener;
 //---------------------------------------------------------------------
 FUNC VOID B_OpenShell()
 {
-	//Muschel zerbricht beim ÷ffnen --> keine leere Muschel 
+	//Muschel zerbricht beim √ñffnen --> keine leere Muschel 
 	
 	var int shellomizer;
 	shellomizer = Hlp_Random (100);
 	
 	Shell_Opener  = (Shell_Opener + 1);
 	
-	if (Shell_Opener == 1)//die erste Muschel die der Spieler ˆffnet
+	if (Shell_Opener == 1)//die erste Muschel die der Spieler √∂ffnet
 	{
 		B_PlayerFindItem (ItMi_Addon_WhitePearl,1);
 	}
@@ -25,12 +25,12 @@ FUNC VOID B_OpenShell()
 		//Schwarze Perle
 		B_PlayerFindItem (ItMi_DarkPearl,1);
 		
-	}//------------------Jetzt gibt's zuf‰llig Items----------------- 	
+	}//------------------Jetzt gibt's zuf√§llig Items----------------- 	
 	else 
 	{
 		if (shellomizer >= 80) 
 		{
-			//weiﬂe Perle
+			//wei√üe Perle
 			B_PlayerFindItem (ItMi_Addon_WhitePearl,1);
 		}
 		else if (shellomizer >= 55)
@@ -70,7 +70,7 @@ FUNC VOID B_OpenShell()
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Shell_01(C_Item)
 {
-	name 		=	"Muöle";
+	name 		=	"Mu≈°le";
 
 	mainflag 	=	ITEM_KAT_NONE;
 	flags 		=	ITEM_MULTI;
@@ -99,7 +99,7 @@ FUNC VOID Use_Shell_01()
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Shell_02(C_Item)
 {
-	name 		=	"Ostnat· muöle";
+	name 		=	"Ostnat√° mu≈°le";
 
 	mainflag 	=	ITEM_KAT_NONE;
 	flags 		=	ITEM_MULTI;

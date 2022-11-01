@@ -3,7 +3,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_Flask
+// benÃ¶tigtes Item dafÃ¼r: ItMi_Flask
 // *****************************************************
 FUNC VOID POTIONALCHEMY_S1 ()
 {
@@ -49,7 +49,7 @@ FUNC VOID PC_PotionAlchemy_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Tränke herstellen  Dialoge 
+//TrÃ¤nke herstellen  Dialoge 
 //--------
 //********************************************************
 
@@ -67,7 +67,7 @@ INSTANCE PC_Booze_Start (C_Info)
 	condition		= PC_Booze_Start_Condition;
 	information		= PC_Booze_Start_Info;
 	permanent		= TRUE;
-	description		= "Destilovat koâalku"; 
+	description		= "Destilovat koÃ¢alku"; 
 };
 
 FUNC INT PC_Booze_Start_Condition ()
@@ -119,7 +119,7 @@ INSTANCE PC_Booze_Lou (C_Info)
 	condition		= PC_Booze_Lou_Condition;
 	information		= PC_Booze_Lou_Info;
 	permanent		= TRUE;
-	description		= "Vyzkoušej Louùv cloumák..."; 
+	description		= "VyzkouÅ¡ej LouÅ¯v cloumÃ¡k..."; 
 };
 
 FUNC INT PC_Booze_Lou_Condition ()
@@ -162,7 +162,7 @@ INSTANCE PC_Booze_Schlaf (C_Info)
 	condition		= PC_Booze_Schlaf_Condition;
 	information		= PC_Booze_Schlaf_Info;
 	permanent		= TRUE;
-	description		= "Louùv cloumák s dvojitou dávkou rumu."; 
+	description		= "LouÅ¯v cloumÃ¡k s dvojitou dÃ¡vkou rumu."; 
 };
 
 FUNC INT PC_Booze_Schlaf_Condition ()
@@ -206,7 +206,7 @@ INSTANCE PC_Booze_SchnellerHering (C_Info)
 	condition		= PC_Booze_SchnellerHering_Condition;
 	information		= PC_Booze_SchnellerHering_Info;
 	permanent		= TRUE;
-	description		= "Namíchat rychlého herinka"; 
+	description		= "NamÃ­chat rychlÃ©ho herinka"; 
 };
 
 FUNC INT PC_Booze_SchnellerHering_Condition ()
@@ -249,7 +249,7 @@ INSTANCE PC_Charge_InnosEye (C_INFO)
 	condition		= PC_Charge_InnosEye_Condition;
 	information		= PC_Charge_InnosEye_Info;
 	permanent		= TRUE;
-	description		= "Dobít Innosovo oko"; 
+	description		= "DobÃ­t Innosovo oko"; 
 };
 FUNC INT PC_Charge_InnosEye_Condition()
 {	
@@ -296,7 +296,7 @@ FUNC VOID PC_Charge_InnosEye_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Mana Tränke 
+//Mana TrÃ¤nke 
 //*******************************************************
 var int ManaStart;
 //----------------------
@@ -307,7 +307,7 @@ INSTANCE PC_Mana_Start (C_Info)
 	condition		= PC_Mana_Start_Condition;
 	information		= PC_Mana_Start_Info;
 	permanent		= TRUE;
-	description		= "Namíchat lektvary many"; 
+	description		= "NamÃ­chat lektvary many"; 
 };
 
 FUNC INT PC_Mana_Start_Condition ()
@@ -358,7 +358,7 @@ INSTANCE PC_ItPo_Mana_01 (C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Esence many (2 ohnivé kopâivy, 1 luèní pohanka)"; 
+	description		= "Esence many (2 ohnivÃ© kopÃ¢ivy, 1 luÄnÃ­ pohanka)"; 
 };
 
 FUNC INT PC_ItPo_Mana_01_Condition()
@@ -398,7 +398,7 @@ INSTANCE PC_ItPo_Mana_02 (C_INFO)
 	condition		= PC_ItPo_Mana_02_Condition;
 	information		= PC_ItPo_Mana_02_Info;
 	permanent		= TRUE;
-	description		= "Extrakt many (2 ohnivé bılí, 1 luèní pohanka)"; 
+	description		= "Extrakt many (2 ohnivÃ© bÃ½lÃ­, 1 luÄnÃ­ pohanka)"; 
 };
 FUNC INT PC_ItPo_Mana_02_Condition()
 {	
@@ -436,7 +436,7 @@ INSTANCE PC_ItPo_Mana_03 (C_INFO)
 	condition		= PC_ItPo_Mana_03_Condition;
 	information		= PC_ItPo_Mana_03_Info;
 	permanent		= TRUE;
-	description		= "Elixír many (2 ohnivé koâeny, 1 luèní pohanka)"; 
+	description		= "ElixÃ­r many (2 ohnivÃ© koÃ¢eny, 1 luÄnÃ­ pohanka)"; 
 };
 
 FUNC INT PC_ItPo_Mana_03_Condition()
@@ -475,7 +475,7 @@ INSTANCE PC_ItPo_Mana_04 (C_INFO)
 	condition		= PC_ItPo_Mana_04_Condition;
 	information		= PC_ItPo_Mana_04_Info;
 	permanent		= TRUE;
-	description		= "Mana potion (3 esence many, 1 luèní pohanka)"; 
+	description		= "Mana potion (3 esence many, 1 luÄnÃ­ pohanka)"; 
 };
 
 FUNC INT PC_ItPo_Mana_04_Condition()
@@ -507,7 +507,7 @@ FUNC VOID PC_ItPo_Mana_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Heiltränke 
+//HeiltrÃ¤nke 
 //*******************************************************
 var int HealthStart;
 //----------------------
@@ -518,7 +518,7 @@ INSTANCE PC_Health_Start (C_Info)
 	condition		= PC_Health_Start_Condition;
 	information		= PC_Health_Start_Info;
 	permanent		= TRUE;
-	description		= "Namíchat léèivé lektvary"; 
+	description		= "NamÃ­chat lÃ©ÄivÃ© lektvary"; 
 };
 
 FUNC INT PC_Health_Start_Condition ()
@@ -569,7 +569,7 @@ INSTANCE PC_ItPo_Health_01 (C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Esence hojivé síly (2 léèivé rostliny, 1 luèní pohanka)"; 
+	description		= "Esence hojivÃ© sÃ­ly (2 lÃ©ÄivÃ© rostliny, 1 luÄnÃ­ pohanka)"; 
 };
 
 FUNC INT PC_ItPo_Health_01_Condition()
@@ -609,7 +609,7 @@ INSTANCE PC_ItPo_Health_02 (C_INFO)
 	condition		= PC_ItPo_Health_02_Condition;
 	information		= PC_ItPo_Health_02_Info;
 	permanent		= TRUE;
-	description		= "Extrakt hojivé síly (2 léèivé byliny, 1 luèní pohanka)"; 
+	description		= "Extrakt hojivÃ© sÃ­ly (2 lÃ©ÄivÃ© byliny, 1 luÄnÃ­ pohanka)"; 
 };
 
 FUNC INT PC_ItPo_Health_02_Condition()
@@ -648,7 +648,7 @@ INSTANCE PC_ItPo_Health_03 (C_INFO)
 	condition		= PC_ItPo_Health_03_Condition;
 	information		= PC_ItPo_Health_03_Info;
 	permanent		= TRUE;
-	description		= "Elixír hojivé síly (2 léèivé koâeny, 1 luèní pohanka)"; 
+	description		= "ElixÃ­r hojivÃ© sÃ­ly (2 lÃ©ÄivÃ© koÃ¢eny, 1 luÄnÃ­ pohanka)"; 
 };
 FUNC INT PC_ItPo_Health_03_Condition()
 {	
@@ -686,7 +686,7 @@ INSTANCE PC_ItPo_Health_04 (C_INFO)
 	condition		= PC_ItPo_Health_04_Condition;
 	information		= PC_ItPo_Health_04_Info;
 	permanent		= TRUE;
-	description		= "Lektvar èisté ivotní energie (3 esence hojivé síly, 1 luèní pohanka)"; 
+	description		= "Lektvar ÄistÃ© Å¾ivotnÃ­ energie (3 esence hojivÃ© sÃ­ly, 1 luÄnÃ­ pohanka)"; 
 };
 FUNC INT PC_ItPo_Health_04_Condition()
 {	
@@ -717,7 +717,7 @@ FUNC VOID PC_ItPo_Health_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//Spezielle Tränke 
+//Spezielle TrÃ¤nke 
 //*******************************************************
 var int SpecialStart;
 //----------------------
@@ -728,7 +728,7 @@ INSTANCE PC_Special_Start (C_Info)
 	condition		= PC_Special_Start_Condition;
 	information		= PC_Special_Start_Info;
 	permanent		= TRUE;
-	description		= "Namíchat zvláštní lektvary"; 
+	description		= "NamÃ­chat zvlÃ¡Å¡tnÃ­ lektvary"; 
 };
 
 FUNC INT PC_Special_Start_Condition ()
@@ -779,7 +779,7 @@ INSTANCE PC_ItPo_Addon_Geist (C_INFO)
 	condition		= PC_ItPo_Addon_Geist_Condition;
 	information		= PC_ItPo_Addon_Geist_Info;
 	permanent		= TRUE;
-	description		= "Lektvar pozmênêné mysli"; 
+	description		= "Lektvar pozmÄ™nÄ™nÃ© mysli"; 
 };
 
 FUNC INT PC_ItPo_Addon_Geist_Condition()
@@ -829,7 +829,7 @@ INSTANCE PC_ItPo_Perm_Health (C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Elixír ivota (1 léèivı koâen, 1 královskı šãovík)"; 
+	description		= "ElixÃ­r Å¾ivota (1 lÃ©ÄivÃ½ koÃ¢en, 1 krÃ¡lovskÃ½ Å¡ÄƒovÃ­k)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Health_Condition()
@@ -868,7 +868,7 @@ INSTANCE PC_ItPo_Perm_Mana (C_INFO)
 	condition		= PC_ItPo_Perm_Mana_Condition;
 	information		= PC_ItPo_Perm_Mana_Info;
 	permanent		= TRUE;
-	description		= "Elixír ducha (1 ohnivı koâen, 1 královskı šãovík)"; 
+	description		= "ElixÃ­r ducha (1 ohnivÃ½ koÃ¢en, 1 krÃ¡lovskÃ½ Å¡ÄƒovÃ­k)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Mana_Condition()
@@ -907,7 +907,7 @@ INSTANCE PC_ItPo_Dex (C_INFO)
 	condition		= PC_ItPo_Dex_Condition;
 	information		= PC_ItPo_Dex_Info;
 	permanent		= TRUE;
-	description		= "Lektvar obratnosti (1 gobliní bobule, 1 královskı šãovík)"; 
+	description		= "Lektvar obratnosti (1 goblinÃ­ bobule, 1 krÃ¡lovskÃ½ Å¡ÄƒovÃ­k)"; 
 };
 
 FUNC INT PC_ItPo_Dex_Condition()
@@ -946,7 +946,7 @@ INSTANCE PC_ItPo_Strg (C_INFO)
 	condition		= PC_ItPo_Strg_Condition;
 	information		= PC_ItPo_Strg_Info;
 	permanent		= TRUE;
-	description		= "Lektvar síly (1 draèí koâen, 1 královskı šãovík)"; 
+	description		= "Lektvar sÃ­ly (1 draÄÃ­ koÃ¢en, 1 krÃ¡lovskÃ½ Å¡ÄƒovÃ­k)"; 
 };
 
 FUNC INT PC_ItPo_Strg_Condition()
@@ -985,7 +985,7 @@ INSTANCE PC_ItPo_Speed (C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Lektvar rychlosti (1 chàapavèí bılí, 1 luèní pohanka)"; 
+	description		= "Lektvar rychlosti (1 chÅ•apavÄÃ­ bÃ½lÃ­, 1 luÄnÃ­ pohanka)"; 
 };
 
 FUNC INT PC_ItPo_Speed_Condition()
@@ -1028,7 +1028,7 @@ INSTANCE PC_Tabak_Start (C_Info)
 	condition		= PC_Tabak_Start_Condition;
 	information		= PC_Tabak_Start_Info;
 	permanent		= TRUE;
-	description		= "Míchat tabák a balit cigarety"; 
+	description		= "MÃ­chat tabÃ¡k a balit cigarety"; 
 };
 
 FUNC INT PC_Tabak_Start_Condition ()
@@ -1081,7 +1081,7 @@ INSTANCE PC_ItMi_Joint (C_INFO)
 	condition		= PC_ItMi_Joint_Condition;
 	information		= PC_ItMi_Joint_Info;
 	permanent		= TRUE;
-	description		= "Ubalit trávu z bain (1 špek)"; 
+	description		= "Ubalit trÃ¡vu z baÅ¾in (1 Å¡pek)"; 
 };
 
 FUNC INT PC_ItMi_Joint_Condition()
@@ -1110,7 +1110,7 @@ FUNC VOID PC_ItMi_Joint_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//	Grünen Novizen herstellen
+//	GrÃ¼nen Novizen herstellen
 //*******************************************************
 INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 {
@@ -1119,7 +1119,7 @@ INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 	condition		= PC_ItMi_Addon_Joint_01_Condition;
 	information		= PC_ItMi_Addon_Joint_01_Info;
 	permanent		= TRUE;
-	description		= "Ubalit zeleného novice (1 špek)"; 
+	description		= "Ubalit zelenÃ©ho novice (1 Å¡pek)"; 
 };
 
 FUNC INT PC_ItMi_Addon_Joint_01_Condition()
@@ -1159,7 +1159,7 @@ INSTANCE PC_ItMi_Tabak (C_INFO)
 	condition		= PC_ItMi_Tabak_Condition;
 	information		= PC_ItMi_Tabak_Info;
 	permanent		= TRUE;
-	description		= "Smíchat tabák..."; 
+	description		= "SmÃ­chat tabÃ¡k..."; 
 };
 
 FUNC INT PC_ItMi_Tabak_Condition()
@@ -1186,11 +1186,11 @@ FUNC VOID PC_ItMi_Tabak_Info ()
 	};
 	if (Npc_HasItems (hero, ItPl_SwampHerb) >=1)
 	{
-		Info_AddChoice 	(PC_ItMi_Tabak,"...s trávou z bain",PC_ItMi_Tabak_Swampherb);
+		Info_AddChoice 	(PC_ItMi_Tabak,"...s trÃ¡vou z baÅ¾in",PC_ItMi_Tabak_Swampherb);
 	};
 	if (Npc_HasItems (hero, ItPl_Mushroom_01) >=1)
 	{
-		Info_AddChoice 	(PC_ItMi_Tabak,"...s tmavımi houbami",PC_ItMi_Tabak_Mushroom_01);
+		Info_AddChoice 	(PC_ItMi_Tabak,"...s tmavÃ½mi houbami",PC_ItMi_Tabak_Mushroom_01);
 	};
 	
 };
@@ -1228,7 +1228,7 @@ INSTANCE PC_ItPo_MegaDrink (C_INFO)
 	condition		= PC_ItPo_MegaDrink_Condition;
 	information		= PC_ItPo_MegaDrink_Info;
 	permanent		= TRUE;
-	description		= "Lektvar z draèích vajec (10 draèích vajec, 1 èerná perla, 1 síra)"; 
+	description		= "Lektvar z draÄÃ­ch vajec (10 draÄÃ­ch vajec, 1 ÄernÃ¡ perla, 1 sÃ­ra)"; 
 };
 
 FUNC INT PC_ItPo_MegaDrink_Condition()

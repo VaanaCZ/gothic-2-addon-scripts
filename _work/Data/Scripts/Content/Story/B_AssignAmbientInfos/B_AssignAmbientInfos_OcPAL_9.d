@@ -29,7 +29,7 @@ INSTANCE DIA_OCPAL_9_PEOPLE(C_INFO)
 	condition	= DIA_OCPAL_9_PEOPLE_Condition;
 	information	= DIA_OCPAL_9_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tomu tady velÌ?";
+	description = "Kdo tomu tady vel√≠?";
 };                       
 
 FUNC INT DIA_OCPAL_9_PEOPLE_Condition()
@@ -39,8 +39,8 @@ FUNC INT DIA_OCPAL_9_PEOPLE_Condition()
 
 FUNC VOID DIA_OCPAL_9_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_9_PEOPLE_15_00"); //Kdo tomu tady velÌ?
-	AI_Output (self, other, "DIA_OCPAL_9_PEOPLE_09_01"); //Velitelem hradu je Garond. Jeho pr·ci mu v·ûnÍ nenÌ co z·vidÍt.
+	AI_Output (other, self, "DIA_OCPAL_9_PEOPLE_15_00"); //Kdo tomu tady vel√≠?
+	AI_Output (self, other, "DIA_OCPAL_9_PEOPLE_09_01"); //Velitelem hradu je Garond. Jeho pr√°ci mu v√°≈ænƒô nen√≠ co z√°vidƒôt.
 };
 
 // *************************************************************************
@@ -52,7 +52,7 @@ INSTANCE DIA_OCPAL_9_LOCATION(C_INFO)
 	condition	= DIA_OCPAL_9_LOCATION_Condition;
 	information	= DIA_OCPAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "VÌö nÍco zajÌmavÈho o tomhle ˙dolÌ?";
+	description = "V√≠≈° nƒôco zaj√≠mav√©ho o tomhle √∫dol√≠?";
 };                       
 
 FUNC INT DIA_OCPAL_9_LOCATION_Condition()
@@ -62,9 +62,9 @@ FUNC INT DIA_OCPAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_OCPAL_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00"); //VÌö nÍco zajÌmavÈho o tomhle ˙dolÌ?
-	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01"); //Na v˝chodÍ sk‚eti postavili obrovskou obrannou zeÎ - aby mohli chr·nit svÈ z·soby, p‚edpokl·d·m. Za tou zdÌ je i mÌsto, kde mohou kotvit jejich lodÍ.
-	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_02"); //Douf·m, ûe sk‚eti nedostanou svÈ z·soby vËas. Uû teÎ mi docela staËÌ, s ËÌm m·me tu Ëest.
+	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00"); //V√≠≈° nƒôco zaj√≠mav√©ho o tomhle √∫dol√≠?
+	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01"); //Na v√Ωchodƒô sk√¢eti postavili obrovskou obrannou ze√´ - aby mohli chr√°nit sv√© z√°soby, p√¢edpokl√°d√°m. Za tou zd√≠ je i m√≠sto, kde mohou kotvit jejich lodƒô.
+	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_02"); //Douf√°m, ≈æe sk√¢eti nedostanou sv√© z√°soby vƒças. U≈æ te√´ mi docela staƒç√≠, s ƒç√≠m m√°me tu ƒçest.
 };
 
 // *************************************************************************
@@ -90,18 +90,18 @@ FUNC VOID DIA_OCPAL_9_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_01"); //Draci znovu za˙toËili! Ale Innos n·m v bitvÍ poskytl svou ochranu. Ty stv˘ry zaplatÌ svou vlastnÌ krvÌ!
+		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_01"); //Draci znovu za√∫toƒçili! Ale Innos n√°m v bitvƒô poskytl svou ochranu. Ty stv≈Øry zaplat√≠ svou vlastn√≠ krv√≠!
 	};
 
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_02"); //Drakobijci! MÍli n·m poslat paladiny!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_02"); //Drakobijci! Mƒôli n√°m poslat paladiny!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_03"); //TeÎ, kdyû jsme se zbavili tÍch drak˘, se m˘ûeme koneËnÍ vypo‚·dat se sk‚ety!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_03"); //Te√´, kdy≈æ jsme se zbavili tƒôch drak≈Ø, se m≈Ø≈æeme koneƒçnƒô vypo√¢√°dat se sk√¢ety!
 		};
 	};
 
@@ -109,11 +109,11 @@ FUNC VOID DIA_OCPAL_9_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_04"); //Pot‚ebujeme dostat rudu na loÎ a odplout z pekla t˝hle zpropaden˝ zemÍ.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_04"); //Pot√¢ebujeme dostat rudu na lo√´ a odplout z pekla t√Ωhle zpropaden√Ω zemƒô.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_05"); //Zrada! Ta br·na nemÍla b˝t nikdy otev‚ena. Smrt vöem zr·dc˘m!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_05"); //Zrada! Ta br√°na nemƒôla b√Ωt nikdy otev√¢ena. Smrt v≈°em zr√°dc≈Øm!
 		};
 	};
 };

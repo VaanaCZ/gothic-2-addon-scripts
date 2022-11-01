@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Lurker(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Èíhavec";
+	name							=	"ÄŒÃ­havec";
 	guild							=	GIL_LURKER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_LURKER;
 	level							=	12;
@@ -83,7 +83,7 @@ INSTANCE Kervo_Lurker1	(Mst_Default_Lurker)
 {
 	B_SetVisuals_Lurker();
 	Npc_SetToFistMode(self);
-	aivar[AIV_MaxDistToWp]			= 500;	//Joly: damit sie nicht in Kervos Höhle rennen.
+	aivar[AIV_MaxDistToWp]			= 500;	//Joly: damit sie nicht in Kervos HÃ¶hle rennen.
 	aivar[AIV_OriginalFightTactic] 	= FAI_LURKER;
 };
 

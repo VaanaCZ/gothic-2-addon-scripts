@@ -31,7 +31,7 @@ const int MENU_OPT_START_Y	= 2000;
 
 INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"NASTAVENÕ";
+	text[0]		=	"NASTAVEN√ç";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -44,8 +44,8 @@ INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "NastavenÌ hry";
-	text[1]		= "NastavenÌ stylu hranÌ";  // Kommentar
+	text[0]		= "Nastaven√≠ hry";
+	text[1]		= "Nastaven√≠ stylu hran√≠";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*0;
@@ -61,7 +61,7 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "ZobrazenÌ";
+	text[0]		= "Zobrazen√≠";
 	text[1]		= "Dohled, detaily a efekty";  // Kommentar
 
 	// Position und Dimension
@@ -78,8 +78,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"NastavenÌ grafiky";
-	text[1]		=	"Grafick˝ adaptÈr, rozliöenÌ, jas a kontrast";  // Kommentar
+	text[0]		=	"Nastaven√≠ grafiky";
+	text[1]		=	"Grafick√Ω adapt√©r, rozli≈°en√≠, jas a kontrast";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -95,8 +95,8 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "NastavenÌ zvuku";
-	text[1]		= "Hlasitost hudby, zvuku a mluvenÈho slova";  // Kommentar
+	text[0]		= "Nastaven√≠ zvuku";
+	text[1]		= "Hlasitost hudby, zvuku a mluven√©ho slova";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -113,8 +113,8 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Ovl·d·nÌ";
-	text[1]		= "NastavenÌ kl·vesnice a myöi";  // Kommentar
+	text[0]		= "Ovl√°d√°n√≠";
+	text[1]		= "Nastaven√≠ kl√°vesnice a my≈°i";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*4;
@@ -130,8 +130,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "DalöÌ nastavenÌ";
-	text[1]		= "NÍkter· dalöÌ nastavenÌ";  // Kommentar
+	text[0]		= "Dal≈°√≠ nastaven√≠";
+	text[1]		= "Nƒôkter√° dal≈°√≠ nastaven√≠";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -150,8 +150,8 @@ INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "V˝kon/kvalita";
-	text[1]		= "Optimalizace v˝konu a kvality";  // Kommentar
+	text[0]		= "V√Ωkon/kvalita";
+	text[1]		= "Optimalizace v√Ωkonu a kvality";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*6;
@@ -167,7 +167,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "VlastnÌ#NejlepöÌ v˝kon|St‚ednÌ kvalita|NejvyööÌ kvalita";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "Vlastn√≠#Nejlep≈°√≠ v√Ωkon|St√¢edn√≠ kvalita|Nejvy≈°≈°√≠ kvalita";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension
@@ -185,7 +185,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZP T";
+	text[0]		=	"ZPƒòT";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y+300;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

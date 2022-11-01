@@ -40,9 +40,9 @@ func int DIA_Addon_Skip_NW_Hallo_Condition ()
 
 func void DIA_Addon_Skip_NW_Hallo_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_00"); //(naötvanÍ) To je dost, ûe jdeö. Uû tu na tebe Ëek·m hezkejch p·r hodin.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_01"); //(zmatenÍ) Moment, ty nejseö vobchodnÌk z mÍsta, ûe ne?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_02"); //(naötvanÍ) Kde je Baltram?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_00"); //(na≈°tvanƒô) To je dost, ≈æe jde≈°. U≈æ tu na tebe ƒçek√°m hezkejch p√°r hodin.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_01"); //(zmatenƒô) Moment, ty nejse≈° vobchodn√≠k z mƒôsta, ≈æe ne?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_02"); //(na≈°tvanƒô) Kde je Baltram?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -66,34 +66,34 @@ func int DIA_Addon_Skip_NW_WerBistDu_Condition ()
 func void DIA_Addon_Skip_NW_WerBistDu_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_NW_WerBistDu_15_00"); //Kdo jsi?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_01"); //Sice ti po tom nic nenÌ, ale kdyû uû to chceö vÍdÍt, jmenuju se Skip. Nep‚ipomÌn· ti to nic?
-	AI_Output	(other, self, "DIA_Addon_Skip_NW_WerBistDu_15_02"); //(p‚edstÌr·, ûe nerozumÌ) Kdoûe to?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_03"); //To mi chceö namluvit, ûes o Skipovi nikdy neslyöel? Ty vole, kde to ûijeö?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_04"); //Sem jeden z nejhledanÍjöÌch khorinidskejch zloËinc˘. J· a mÌ chlapi jsme uû cel˝ lÈta postrachem vod kolem tohohle p‚ipitomÍl˝ho ostrova.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_05"); //(rozho‚ËenÍ) Ale no tak, urËitÍ uû jsi o mnÍ slyöel.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_01"); //Sice ti po tom nic nen√≠, ale kdy≈æ u≈æ to chce≈° vƒôdƒôt, jmenuju se Skip. Nep√¢ipom√≠n√° ti to nic?
+	AI_Output	(other, self, "DIA_Addon_Skip_NW_WerBistDu_15_02"); //(p√¢edst√≠r√°, ≈æe nerozum√≠) Kdo≈æe to?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_03"); //To mi chce≈° namluvit, ≈æes o Skipovi nikdy nesly≈°el? Ty vole, kde to ≈æije≈°?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_04"); //Sem jeden z nejhledanƒôj≈°√≠ch khorinidskejch zloƒçinc≈Ø. J√° a m√≠ chlapi jsme u≈æ cel√Ω l√©ta postrachem vod kolem tohohle p√¢ipitomƒôl√Ωho ostrova.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_05"); //(rozho√¢ƒçenƒô) Ale no tak, urƒçitƒô u≈æ jsi o mnƒô sly≈°el.
 	
 	Info_ClearChoices	(DIA_Addon_Skip_NW_WerBistDu);
-	Info_AddChoice	(DIA_Addon_Skip_NW_WerBistDu, "Ty jsi pir·t.", DIA_Addon_Skip_NW_WerBistDu_pirat );
-	Info_AddChoice	(DIA_Addon_Skip_NW_WerBistDu, "My se zn·me?", DIA_Addon_Skip_NW_WerBistDu_keineAhnung );
-	Info_AddChoice	(DIA_Addon_Skip_NW_WerBistDu, "No jasnÍ, uû se mi to vöecko vybavuje.", DIA_Addon_Skip_NW_WerBistDu_ja );
+	Info_AddChoice	(DIA_Addon_Skip_NW_WerBistDu, "Ty jsi pir√°t.", DIA_Addon_Skip_NW_WerBistDu_pirat );
+	Info_AddChoice	(DIA_Addon_Skip_NW_WerBistDu, "My se zn√°me?", DIA_Addon_Skip_NW_WerBistDu_keineAhnung );
+	Info_AddChoice	(DIA_Addon_Skip_NW_WerBistDu, "No jasnƒô, u≈æ se mi to v≈°ecko vybavuje.", DIA_Addon_Skip_NW_WerBistDu_ja );
 };
 func void DIA_Addon_Skip_NW_WerBistDu_ja ()
 {
-	AI_Output (other, self, "DIA_Addon_Skip_NW_WerBistDu_ja_15_00"); //Ale samoz‚ejmÍ, uû si vzpomÌn·m.
-	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_01"); //(zmatenÍ) V·ûnÍ? Ty uû jsi o mnÍ v·ûnÍ slyöel?
-	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_02"); //Doprdele! A j· si ‚Ìkal, ûe se projdu po mÍstÍ.
-	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_03"); //EötÍûe jsem to neudÍlal.
+	AI_Output (other, self, "DIA_Addon_Skip_NW_WerBistDu_ja_15_00"); //Ale samoz√¢ejmƒô, u≈æ si vzpom√≠n√°m.
+	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_01"); //(zmatenƒô) V√°≈ænƒô? Ty u≈æ jsi o mnƒô v√°≈ænƒô sly≈°el?
+	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_02"); //Doprdele! A j√° si √¢√≠kal, ≈æe se projdu po mƒôstƒô.
+	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_03"); //E≈°tƒô≈æe jsem to neudƒôlal.
 
 	if (hero.guild != GIL_MIL)
 	&& (hero.guild != GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_04"); //Domobrana by mÍ hned zav‚ela do lap·ku.
+		AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_04"); //Domobrana by mƒô hned zav√¢ela do lap√°ku.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_05"); //Ale ty mÍ nepr·skneö, ûe ne?
+		AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_05"); //Ale ty mƒô nepr√°skne≈°, ≈æe ne?
 		AI_Output (other, self, "DIA_Addon_Skip_NW_WerBistDu_ja_15_06"); //Noooo...
-		AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_07"); //Dob‚e dÍl·ö. P·Ë kdyû se se star˝m Skipem pustÌö do k‚Ìûku, seö mrtvej muû.
+		AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_07"); //Dob√¢e dƒôl√°≈°. P√°ƒç kdy≈æ se se star√Ωm Skipem pust√≠≈° do k√¢√≠≈æku, se≈° mrtvej mu≈æ.
 	};
 	
 	Info_ClearChoices	(DIA_Addon_Skip_NW_WerBistDu);
@@ -101,16 +101,16 @@ func void DIA_Addon_Skip_NW_WerBistDu_ja ()
 
 func void DIA_Addon_Skip_NW_WerBistDu_keineAhnung ()
 {
-	AI_Output			(other, self, "DIA_Addon_Skip_NW_WerBistDu_keineAhnung_15_00"); //MÍl bych tÍ snad zn·t?
-	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_keineAhnung_08_01"); //Pozor na hubu, chlape, nebo ti starej Skip d· co proto.
+	AI_Output			(other, self, "DIA_Addon_Skip_NW_WerBistDu_keineAhnung_15_00"); //Mƒôl bych tƒô snad zn√°t?
+	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_keineAhnung_08_01"); //Pozor na hubu, chlape, nebo ti starej Skip d√° co proto.
 	Info_ClearChoices	(DIA_Addon_Skip_NW_WerBistDu);
 };
 
 func void DIA_Addon_Skip_NW_WerBistDu_pirat ()
 {
-	AI_Output			(other, self, "DIA_Addon_Skip_NW_WerBistDu_pirat_15_00"); //Ty jsi pir·t.
-	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_pirat_08_01"); //(naötvanÍ) Jo, sakra, to je snad jasn˝ na prvnÌ pohled. A pÍknÍ z·ke‚nej.
-	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_pirat_08_02"); //Uû mÍ nudÌ furt vokous·vat prkna sv˝ lodi.
+	AI_Output			(other, self, "DIA_Addon_Skip_NW_WerBistDu_pirat_15_00"); //Ty jsi pir√°t.
+	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_pirat_08_01"); //(na≈°tvanƒô) Jo, sakra, to je snad jasn√Ω na prvn√≠ pohled. A pƒôknƒô z√°ke√¢nej.
+	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_pirat_08_02"); //U≈æ mƒô nud√≠ furt vokous√°vat prkna sv√Ω lodi.
 	Info_ClearChoices	(DIA_Addon_Skip_NW_WerBistDu);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -123,7 +123,7 @@ instance DIA_Addon_Skip_NW_Baltram		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_NW_Baltram_Condition;
 	information	 = 	DIA_Addon_Skip_NW_Baltram_Info;
 
-	description	 = 	"Baltram? Ty Ëek·ö na kupce?";
+	description	 = 	"Baltram? Ty ƒçek√°≈° na kupce?";
 };
 
 func int DIA_Addon_Skip_NW_Baltram_Condition ()
@@ -136,20 +136,20 @@ func int DIA_Addon_Skip_NW_Baltram_Condition ()
 
 func void DIA_Addon_Skip_NW_Baltram_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_NW_Baltram_15_00"); //Baltram? Ty Ëek·ö na kupce?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Baltram_08_01"); //Ty seö ‡·kej chytrej.
+	AI_Output	(other, self, "DIA_Addon_Skip_NW_Baltram_15_00"); //Baltram? Ty ƒçek√°≈° na kupce?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Baltram_08_01"); //Ty se≈° ≈ï√°kej chytrej.
 	if (C_BodyStateContains (self, BS_SIT))
 	{
 		AI_StandUp (self);
 		B_TurnToNpc (self,other);
 	};
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Baltram_08_02"); //Sem to snad pr·vÍ ‚ek, ne?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Baltram_08_03"); //Jenûe ten nanicovatej kupËÌk na mÍ nejspÌö zapomnÍl.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Baltram_08_02"); //Sem to snad pr√°vƒô √¢ek, ne?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Baltram_08_03"); //Jen≈æe ten nanicovatej kupƒç√≠k na mƒô nejsp√≠≈° zapomnƒôl.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Baltram_08_04"); //Dostat ho tak do ruky...
 	
 	Log_CreateTopic (TOPIC_Addon_BaltramSkipTrade, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BaltramSkipTrade, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,"Pir·t Skip mi naznaËil, ûe mÌstnÌ kupec Baltram obchoduje s pir·ty."); 
+	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,"Pir√°t Skip mi naznaƒçil, ≈æe m√≠stn√≠ kupec Baltram obchoduje s pir√°ty."); 
 	
 	SCKnowsBaltramAsPirateTrader = TRUE;
 };
@@ -164,7 +164,7 @@ instance DIA_Addon_Skip_BaltramPaket		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_BaltramPaket_Condition;
 	information	 = 	DIA_Addon_Skip_BaltramPaket_Info;
 
-	description	 = 	"M·m pro tebe balÌËek - od Baltrama.";
+	description	 = 	"M√°m pro tebe bal√≠ƒçek - od Baltrama.";
 };
 
 func int DIA_Addon_Skip_BaltramPaket_Condition ()
@@ -178,13 +178,13 @@ func int DIA_Addon_Skip_BaltramPaket_Condition ()
 
 func void DIA_Addon_Skip_BaltramPaket_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_BaltramPaket_15_00"); //M·m pro tebe balÌk ñ od Baltrama.
-	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_01"); //Coûe? Von si posÌl· poslÌËky?
-	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_02"); //Je celej posranej strachy, co? No jo, co bych taky vod toho star˝ho skrblÌka chtÍl.
+	AI_Output	(other, self, "DIA_Addon_Skip_BaltramPaket_15_00"); //M√°m pro tebe bal√≠k ‚Äì od Baltrama.
+	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_01"); //Co≈æe? Von si pos√≠l√° posl√≠ƒçky?
+	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_02"); //Je celej posranej strachy, co? No jo, co bych taky vod toho star√Ωho skrbl√≠ka chtƒôl.
 	B_GiveInvItems (other, self, ItMi_Packet_Baltram4Skip_Addon,1);
-	AI_Output	(other, self, "DIA_Addon_Skip_BaltramPaket_15_03"); //Tvrdil, ûe za to chce 3 lahve rumu.
-	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_04"); //(smÍje se) To by se mu lÌbilo! Nap‚ed mÍ tu nech· celou vÍËnost Ëekat, ani se tu osobnÍ neuk·ûe, a pak m· eötÍ tu drzost vymejölet si takov˝hle kr·voviny.
-	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_05"); //Tum·ö, dej mu dvÍ flaöky, to mu staËÌ.
+	AI_Output	(other, self, "DIA_Addon_Skip_BaltramPaket_15_03"); //Tvrdil, ≈æe za to chce 3 lahve rumu.
+	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_04"); //(smƒôje se) To by se mu l√≠bilo! Nap√¢ed mƒô tu nech√° celou vƒôƒçnost ƒçekat, ani se tu osobnƒô neuk√°≈æe, a pak m√° e≈°tƒô tu drzost vymej≈°let si takov√Ωhle kr√°voviny.
+	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_05"); //Tum√°≈°, dej mu dvƒô fla≈°ky, to mu staƒç√≠.
 	CreateInvItems (self, ItFo_Addon_Rum, 2);									
 	B_GiveInvItems (self, other, ItFo_Addon_Rum, 2);		
 	B_GivePlayerXP (XP_Addon_Skip_BaltramPaket);
@@ -203,7 +203,7 @@ instance DIA_Addon_Skip_NW_Woher		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_NW_Woher_Condition;
 	information	 = 	DIA_Addon_Skip_NW_Woher_Info;
 
-	description	 = 	"Odkud jsi p‚iöel?";
+	description	 = 	"Odkud jsi p√¢i≈°el?";
 };
 
 func int DIA_Addon_Skip_NW_Woher_Condition ()
@@ -216,22 +216,22 @@ func int DIA_Addon_Skip_NW_Woher_Condition ()
 
 func void DIA_Addon_Skip_NW_Woher_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_NW_Woher_15_00"); //Odkud poch·zÌö?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_01"); //Chceö vÍdÍt, kde se ukrejv·me?
+	AI_Output	(other, self, "DIA_Addon_Skip_NW_Woher_15_00"); //Odkud poch√°z√≠≈°?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_01"); //Chce≈° vƒôdƒôt, kde se ukrejv√°me?
 
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_02"); //To je to poslednÌ, co bych nÍkomu z domobrany vyûvanil.
+		AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_02"); //To je to posledn√≠, co bych nƒôkomu z domobrany vy≈ævanil.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_03"); //Kdybych ti to ‚ek, to uû m˘ûu rovnou pozvat domobranu, a„ mÍ zatkne.
+		AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_03"); //Kdybych ti to √¢ek, to u≈æ m≈Ø≈æu rovnou pozvat domobranu, aƒÉ mƒô zatkne.
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_04"); //A pokud bys n·s chtÍl navötÌvit, nehnul bych pro tebe ani prstem.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_05"); //Ostrov Khorinis je velkej, ale tam, co sme my, se beztak nikdo nedostane. Pokud teda nem· ‡·kou loÎ.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_06"); //A pak eötÍ musÌö zn·t cestu p‚es ˙tesy. Nikdo tamtudy nepropluje, kdyû nezn· tajnou trasu.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_07"); //A tu znaj akor·t dva lidi ñ a ty mezi nÍ nepat‚Ìö.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_04"); //A pokud bys n√°s chtƒôl nav≈°t√≠vit, nehnul bych pro tebe ani prstem.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_05"); //Ostrov Khorinis je velkej, ale tam, co sme my, se beztak nikdo nedostane. Pokud teda nem√° ≈ï√°kou lo√´.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_06"); //A pak e≈°tƒô mus√≠≈° zn√°t cestu p√¢es √∫tesy. Nikdo tamtudy nepropluje, kdy≈æ nezn√° tajnou trasu.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_07"); //A tu znaj akor√°t dva lidi ‚Äì a ty mezi nƒô nepat√¢√≠≈°.
 };
 
 
@@ -245,7 +245,7 @@ instance DIA_Addon_Skip_SCSawGreg		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_SCSawGreg_Condition;
 	information	 = 	DIA_Addon_Skip_SCSawGreg_Info;
 
-	description	 = 	"Zn·ö nÍkoho, kdo nosÌ p·sku p‚es oko?";
+	description	 = 	"Zn√°≈° nƒôkoho, kdo nos√≠ p√°sku p√¢es oko?";
 };
 
 func int DIA_Addon_Skip_SCSawGreg_Condition ()
@@ -259,10 +259,10 @@ func int DIA_Addon_Skip_SCSawGreg_Condition ()
 
 func void DIA_Addon_Skip_SCSawGreg_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_00"); //Nezn·ö nÍkoho s p·skou p‚es oko?
-	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_01"); //Zn·m hromadu chlap˘ s p·skama p‚es voko.
-	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_02"); //Po Khorinidu chodÌ nÍkdo, kdo tÍ pravdÍpodobnÍ dost dob‚e zn·.
-	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_03"); //Nem·m tucha, kdo by to moh bejt, se suchozemskejma krysama se nebavim.
+	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_00"); //Nezn√°≈° nƒôkoho s p√°skou p√¢es oko?
+	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_01"); //Zn√°m hromadu chlap≈Ø s p√°skama p√¢es voko.
+	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_02"); //Po Khorinidu chod√≠ nƒôkdo, kdo tƒô pravdƒôpodobnƒô dost dob√¢e zn√°.
+	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_03"); //Nem√°m tucha, kdo by to moh bejt, se suchozemskejma krysama se nebavim.
 	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_04"); //Ale...
 	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_05"); //Nech to bejt, fakt je mi to u prdele.
 	B_GivePlayerXP (XP_Ambient);
@@ -278,7 +278,7 @@ instance DIA_Addon_Skip_NW_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_NW_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Skip_NW_MissingPeople_Info;
 
-	description	 = 	"Poh‚eöujÌ se nÍjacÌ mÌstnÌ lidÈ.";
+	description	 = 	"Poh√¢e≈°uj√≠ se nƒôjac√≠ m√≠stn√≠ lid√©.";
 };
 
 func int DIA_Addon_Skip_NW_MissingPeople_Condition ()
@@ -292,13 +292,13 @@ func int DIA_Addon_Skip_NW_MissingPeople_Condition ()
 
 func void DIA_Addon_Skip_NW_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_NW_MissingPeople_15_00"); //Spousta zdejöÌch obyvatel se poh‚eöuje a vöecko poukazuje na to, ûe bys o tom mohl nÍco vÍdÍt.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_01"); //(cÌtÌ se zaskoËen) No... sakra, nenÌ to tak, jak si myslÌö.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_02"); //Copak vypad·m jako ‡·kej votrok·‚? Ne, p‚ev·ûim akor·t zboûÌ. Co je to zaË a vodkuÎ je, to nejni m˘j problÈm.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_03"); //My pro tu svini uû p‚ev·ûeli snad vöecko.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_04"); //Nap‚ed to byly norm·lnÌ vÍci. No, vobËas to bylo paöovan˝.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_05"); //Ale pak zaËali un·öet lidi z tohohle mÍsta. Netuöim, co s nima chtÍli dÍlat.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_06"); //My je akor·t p‚ev·ûeli na mÌsto.
+	AI_Output	(other, self, "DIA_Addon_Skip_NW_MissingPeople_15_00"); //Spousta zdej≈°√≠ch obyvatel se poh√¢e≈°uje a v≈°ecko poukazuje na to, ≈æe bys o tom mohl nƒôco vƒôdƒôt.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_01"); //(c√≠t√≠ se zaskoƒçen) No... sakra, nen√≠ to tak, jak si mysl√≠≈°.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_02"); //Copak vypad√°m jako ≈ï√°kej votrok√°√¢? Ne, p√¢ev√°≈æim akor√°t zbo≈æ√≠. Co je to zaƒç a vodku√´ je, to nejni m≈Øj probl√©m.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_03"); //My pro tu svini u≈æ p√¢ev√°≈æeli snad v≈°ecko.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_04"); //Nap√¢ed to byly norm√°ln√≠ vƒôci. No, vobƒças to bylo pa≈°ovan√Ω.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_05"); //Ale pak zaƒçali un√°≈°et lidi z tohohle mƒôsta. Netu≈°im, co s nima chtƒôli dƒôlat.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_06"); //My je akor√°t p√¢ev√°≈æeli na m√≠sto.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Dexter
@@ -310,7 +310,7 @@ instance DIA_Addon_Skip_NW_Dexter		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_NW_Dexter_Condition;
 	information	 = 	DIA_Addon_Skip_NW_Dexter_Info;
 
-	description	 = 	"O kom to mluvÌö?";
+	description	 = 	"O kom to mluv√≠≈°?";
 };
 
 func int DIA_Addon_Skip_NW_Dexter_Condition ()
@@ -323,19 +323,19 @@ func int DIA_Addon_Skip_NW_Dexter_Condition ()
 
 func void DIA_Addon_Skip_NW_Dexter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_NW_Dexter_15_00"); //O kom to mluvÌö?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Dexter_08_01"); //Banditi, samoz‚ejmÍ, kdo jinej? Ta öpinav· sebranka, co se tu rozlezla po cel˝m vostrovÍ.
+	AI_Output	(other, self, "DIA_Addon_Skip_NW_Dexter_15_00"); //O kom to mluv√≠≈°?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Dexter_08_01"); //Banditi, samoz√¢ejmƒô, kdo jinej? Ta ≈°pinav√° sebranka, co se tu rozlezla po cel√Ωm vostrovƒô.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Dexter_08_02"); //A nejenom tady kolem Khorinidu.
 };
 
 
 func void B_Skip_SaysDextersName ()
 {
-	AI_Output	(self, other, "DIA_Addon_Skip_SaysDextersName_08_00"); //TeÎ uû si vzpomÌn·m ñ Dexter. Jo, myslim, ûe mu ‚Ìkali Dexter.
+	AI_Output	(self, other, "DIA_Addon_Skip_SaysDextersName_08_00"); //Te√´ u≈æ si vzpom√≠n√°m ‚Äì Dexter. Jo, myslim, ≈æe mu √¢√≠kali Dexter.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Obyvatele Khorinidu un·öel v˘dce bandit˘ Dexter. MÍl bych ho najÌt jiûnÍ od Onarova statku."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Obyvatele Khorinidu un√°≈°el v≈Ødce bandit≈Ø Dexter. Mƒôl bych ho naj√≠t ji≈ænƒô od Onarova statku."); 
 
 	SC_KnowsDexterAsKidnapper = TRUE;			
 	Ranger_SCKnowsDexter = TRUE;
@@ -351,7 +351,7 @@ instance DIA_Addon_Skip_NW_Name		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_NW_Name_Condition;
 	information	 = 	DIA_Addon_Skip_NW_Name_Info;
 
-	description	 = 	"'Banditi'? To mi nestaËÌ. Chci nÍjakÈ konkrÈtnÌ jmÈno.";
+	description	 = 	"'Banditi'? To mi nestaƒç√≠. Chci nƒôjak√© konkr√©tn√≠ jm√©no.";
 };
 
 func int DIA_Addon_Skip_NW_Name_Condition ()
@@ -365,11 +365,11 @@ func int DIA_Addon_Skip_NW_Name_Condition ()
 
 func void DIA_Addon_Skip_NW_Name_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_NW_Name_15_00"); //Jenom 'banditi' mi nestaËÌ. Pot‚ebuji jmÈno.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_01"); //JmÈno? To chceö jako vÍdÍt, kdo ty bandity vede? Do hajzlu, jak se ten ömejd jenom jmenoval...?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_02"); //Hmm, teÎ si na to nem˘ûu vzpomenout, i kdyû to nebylo moc sloûit˝.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_03"); //Ale m˘ûu ti uk·zat, kde najdeö öÈfa gangu z t˝hle Ë·sti Khorinidu.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_04"); //M·ö ‡·kou sluönou mapu?
+	AI_Output	(other, self, "DIA_Addon_Skip_NW_Name_15_00"); //Jenom 'banditi' mi nestaƒç√≠. Pot√¢ebuji jm√©no.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_01"); //Jm√©no? To chce≈° jako vƒôdƒôt, kdo ty bandity vede? Do hajzlu, jak se ten ≈°mejd jenom jmenoval...?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_02"); //Hmm, te√´ si na to nem≈Ø≈æu vzpomenout, i kdy≈æ to nebylo moc slo≈æit√Ω.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_03"); //Ale m≈Ø≈æu ti uk√°zat, kde najde≈° ≈°√©fa gangu z t√Ωhle ƒç√°sti Khorinidu.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_04"); //M√°≈° ≈ï√°kou slu≈°nou mapu?
 	
 	if (Npc_HasItems (other,ItWr_Map_NewWorld) == FALSE)
 	{
@@ -377,8 +377,8 @@ func void DIA_Addon_Skip_NW_Name_Info ()
 		|| (Npc_HasItems (other,ItWr_Map_Shrine_MIS) == TRUE)
 		|| (Npc_HasItems (other,ItWr_Map_Caves_MIS) == TRUE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Skip_NW_Name_15_05"); //Mapu m·m tady.
-			AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_06"); //Ale ta uû je poËm·ran·. To nem· cenu, kdyû ji nem˘ûu poËm·rat j·.
+			AI_Output	(other, self, "DIA_Addon_Skip_NW_Name_15_05"); //Mapu m√°m tady.
+			AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_06"); //Ale ta u≈æ je poƒçm√°ran√°. To nem√° cenu, kdy≈æ ji nem≈Ø≈æu poƒçm√°rat j√°.
 		}
 		else
 		{
@@ -386,9 +386,9 @@ func void DIA_Addon_Skip_NW_Name_Info ()
 		};
 		
 		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_08"); //Tak ti to budu muset popsat.
-		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_09"); //Na v˝chodÍ je fakt velkej statek, öÈfuje mu ‡·kej Onar, myslÌm.
-		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_10"); //M· p·r docela velkejch polÌ. A na jih od nich je na vysok˝m ˙tesu mal· pevn˘stka.
-		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_11"); //A tam toho chlapa najdeö.
+		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_09"); //Na v√Ωchodƒô je fakt velkej statek, ≈°√©fuje mu ≈ï√°kej Onar, mysl√≠m.
+		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_10"); //M√° p√°r docela velkejch pol√≠. A na jih od nich je na vysok√Ωm √∫tesu mal√° pevn≈Østka.
+		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_11"); //A tam toho chlapa najde≈°.
 		B_Skip_SaysDextersName ();
 	};
 };
@@ -403,7 +403,7 @@ instance DIA_Addon_Skip_NW_Landkarte		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_NW_Landkarte_Condition;
 	information	 = 	DIA_Addon_Skip_NW_Landkarte_Info;
 
-	description	 = 	"Tady. M·m mapu Khorinidu.";
+	description	 = 	"Tady. M√°m mapu Khorinidu.";
 };
 
 func int DIA_Addon_Skip_NW_Landkarte_Condition ()
@@ -418,11 +418,11 @@ func int DIA_Addon_Skip_NW_Landkarte_Condition ()
 
 func void DIA_Addon_Skip_NW_Landkarte_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_NW_Landkarte_15_00"); //Tady m·m mapu Khorinidu.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Landkarte_08_01"); //To je dobr˝. Tak j· ti tam zakreslÌm, kde se ten chl·pek schov·v·.
+	AI_Output	(other, self, "DIA_Addon_Skip_NW_Landkarte_15_00"); //Tady m√°m mapu Khorinidu.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Landkarte_08_01"); //To je dobr√Ω. Tak j√° ti tam zakresl√≠m, kde se ten chl√°pek schov√°v√°.
 	B_GiveInvItems (other, self, ItWr_Map_NewWorld,1);
 	B_Skip_SaysDextersName ();
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Landkarte_08_02"); //Tady m·ö tu mapu.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Landkarte_08_02"); //Tady m√°≈° tu mapu.
 	
 	Npc_RemoveInvItems	(self,ItWr_Map_NewWorld ,1 );
 	CreateInvItems (self, ItWr_Map_NewWorld_Dexter, 1);									
@@ -455,5 +455,5 @@ func int DIA_Addon_Skip_NW_Wohin_Condition ()
 func void DIA_Addon_Skip_NW_Wohin_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_NW_Wohin_15_00"); //Kam jsi ty lidi unesl?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Wohin_08_01"); //Uû jsem ti ‚ek ñ ne‚eknu ti, kde leûÌ naöe z·toka.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Wohin_08_01"); //U≈æ jsem ti √¢ek ‚Äì ne√¢eknu ti, kde le≈æ√≠ na≈°e z√°toka.
 };

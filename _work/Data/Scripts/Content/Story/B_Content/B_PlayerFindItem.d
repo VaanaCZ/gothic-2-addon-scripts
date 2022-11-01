@@ -17,7 +17,7 @@ FUNC VOID B_PlayerFindItem (var int itm, var int amount)
 			concatText = ConcatStrings(IntToString(amount), PRINT_GoldErhalten);			
 			Print (concatText);
 			
-			Snd_Play ("M�ec");
+			Snd_Play ("Męšec");
 		}
 		else
 		{

@@ -37,8 +37,8 @@ FUNC INT DIA_Addon_Pardos_NW_Hi_Condition()
 FUNC VOID DIA_Addon_Pardos_NW_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");//Jak se vede?
-	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//(ušklíbne se) A hele, jestli tohle není mùj zachránce? Ještê jednou díky, teë u mùu celı dny vodpoèívat.
-	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");//Dobâe, tak já tedy pùjdu.
+	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//(uÅ¡klÃ­bne se) A hele, jestli tohle nenÃ­ mÅ¯j zachrÃ¡nce? JeÅ¡tÄ™ jednou dÃ­ky, teÃ« uÅ¾ mÅ¯Å¾u celÃ½ dny vodpoÄÃ­vat.
+	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");//DobÃ¢e, tak jÃ¡ tedy pÅ¯jdu.
 };
 // ************************************************************
 // 			  				PICK POCKET

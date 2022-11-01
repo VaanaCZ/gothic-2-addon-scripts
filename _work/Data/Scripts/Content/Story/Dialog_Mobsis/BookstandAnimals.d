@@ -14,7 +14,7 @@ var int Animals_2_permanent;
 var int Animals_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals1_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -31,27 +31,27 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Lov a koâist"					);
+					Doc_PrintLine	( nDocID,  0, "Lov a koÃ¢ist"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Z kadého zvíâete èi nestvùry mùe schopnı lovec získat nêjakou trofej."						);
+					Doc_PrintLines	( nDocID,  0, "Z kaÅ¾dÃ©ho zvÃ­Ã¢ete Äi nestvÅ¯ry mÅ¯Å¾e schopnÃ½ lovec zÃ­skat nÄ™jakou trofej."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Ten, kdo je v tomto umêní zbêhlı, by mêl tyto trofeje nejen znát, ale mêl by je i umêt získat.");
+					Doc_PrintLines	( nDocID,  0, "Ten, kdo je v tomto umÄ™nÃ­ zbÄ™hlÃ½, by mÄ™l tyto trofeje nejen znÃ¡t, ale mÄ™l by je i umÄ™t zÃ­skat.");
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Vyjmutí zubù"						);
-					Doc_PrintLines	( nDocID,  0, "Spousta šelem i ostatních tvorù pouívá jako zbraà zuby. Tıká se to pâedevším vlkù, chàapavcù, stínovıch šelem, moèálovıch ralokù a trolù - ode všech dokáe zdatnı lovec získat zuby."						);
+					Doc_PrintLine	( nDocID,  0, "VyjmutÃ­ zubÅ¯"						);
+					Doc_PrintLines	( nDocID,  0, "Spousta Å¡elem i ostatnÃ­ch tvorÅ¯ pouÅ¾Ã­vÃ¡ jako zbraÅ• zuby. TÃ½kÃ¡ se to pÃ¢edevÅ¡Ã­m vlkÅ¯, chÅ•apavcÅ¯, stÃ­novÃ½ch Å¡elem, moÄÃ¡lovÃ½ch Å¾ralokÅ¯ a trolÅ¯ - ode vÅ¡ech dokÃ¡Å¾e zdatnÃ½ lovec zÃ­skat zuby."						);
 				
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Stahování kùí"						);
-					Doc_PrintLines	( nDocID,  1, "Zkušení lovci si také velmi cení kùí a koešin spousty zvíâat, napâíklad ovcí, vlkù a stínovıch šelem."						); 
-					Doc_PrintLines	( nDocID,  1, "Ten, kdo se v têchto vêcech vyzná, dokáe stáhnout kùi i z moèálovıch ralokù a èíhavcù."						);
+					Doc_PrintLine	( nDocID,  1, "StahovÃ¡nÃ­ kÅ¯Å¾Ã­"						);
+					Doc_PrintLines	( nDocID,  1, "ZkuÅ¡enÃ­ lovci si takÃ© velmi cenÃ­ kÅ¯Å¾Ã­ a koÅ¾eÅ¡in spousty zvÃ­Ã¢at, napÃ¢Ã­klad ovcÃ­, vlkÅ¯ a stÃ­novÃ½ch Å¡elem."						); 
+					Doc_PrintLines	( nDocID,  1, "Ten, kdo se v tÄ™chto vÄ™cech vyznÃ¡, dokÃ¡Å¾e stÃ¡hnout kÅ¯Å¾i i z moÄÃ¡lovÃ½ch Å¾ralokÅ¯ a ÄÃ­havcÅ¯."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Vyjmutí drápù"						);
-					Doc_PrintLines	( nDocID,  1, "Toto umêní lze uplatnit na urèitıch ještêrech, chàapavcích, èíhavcích a stínovıch šelmách."						);
+					Doc_PrintLine	( nDocID,  1, "VyjmutÃ­ drÃ¡pÅ¯"						);
+					Doc_PrintLines	( nDocID,  1, "Toto umÄ™nÃ­ lze uplatnit na urÄitÃ½ch jeÅ¡tÄ™rech, chÅ•apavcÃ­ch, ÄÃ­havcÃ­ch a stÃ­novÃ½ch Å¡elmÃ¡ch."						);
 					Doc_Show		( nDocID );
 					
 					if (Animals_1_permanent == FALSE)
@@ -63,7 +63,7 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 	};
 };
 
-FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals2_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -79,26 +79,26 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Lov a koâist"					);
+					Doc_PrintLine	( nDocID,  0, "Lov a koÃ¢ist"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Z kadého zvíâete èi nestvùry mùe schopnı lovec získat nêjakou trofej."						);
+					Doc_PrintLines	( nDocID,  0, "Z kaÅ¾dÃ©ho zvÃ­Ã¢ete Äi nestvÅ¯ry mÅ¯Å¾e schopnÃ½ lovec zÃ­skat nÄ™jakou trofej."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Krvavé mouchy"			);
+					Doc_PrintLine	( nDocID,  0, "KrvavÃ© mouchy"			);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "K vyvrení têchto létajících ëáblù je zapotâebí hned dvou dovedností -"					); 
-					Doc_PrintLines	( nDocID,  0, "vyjmutí kâídel a extrakce ihadla." );
-					Doc_PrintLines	( nDocID,  0, "Obê tyto dovednosti by mêli pouívat pouze zkušení lovci."	);
+					Doc_PrintLines	( nDocID,  0, "K vyvrÅ¾enÃ­ tÄ™chto lÃ©tajÃ­cÃ­ch Ã«Ã¡blÅ¯ je zapotÃ¢ebÃ­ hned dvou dovednostÃ­ -"					); 
+					Doc_PrintLines	( nDocID,  0, "vyjmutÃ­ kÃ¢Ã­del a extrakce Å¾ihadla." );
+					Doc_PrintLines	( nDocID,  0, "ObÄ™ tyto dovednosti by mÄ™li pouÅ¾Ã­vat pouze zkuÅ¡enÃ­ lovci."	);
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Polní škùdci a dùlní èervi útoèí svımi mocnımi kusadly. Zvláštê kusadla dùlních"						);
-					Doc_PrintLines	( nDocID,  1, "èervù jsou cenná, neboã obsahují vımêšek zvyšující magickou moc. Lze jej však"						);
-					Doc_PrintLines	( nDocID,  1, "pouívat pouze v omezeném mnoství, neboã lidské têlo si na nêj po èase zvykne a pâestane jeho úèinky pâijímat."						);   
-					Doc_PrintLines	( nDocID,  1, "Velké oblibê se têší i krunıâe dùlních èervù, ze kterıch se vyrábí kvalitní zbroj."						);
+					Doc_PrintLines	( nDocID,  1, "PolnÃ­ Å¡kÅ¯dci a dÅ¯lnÃ­ Äervi ÃºtoÄÃ­ svÃ½mi mocnÃ½mi kusadly. ZvlÃ¡Å¡tÄ™ kusadla dÅ¯lnÃ­ch"						);
+					Doc_PrintLines	( nDocID,  1, "ÄervÅ¯ jsou cennÃ¡, neboÄƒ obsahujÃ­ vÃ½mÄ™Å¡ek zvyÅ¡ujÃ­cÃ­ magickou moc. Lze jej vÅ¡ak"						);
+					Doc_PrintLines	( nDocID,  1, "pouÅ¾Ã­vat pouze v omezenÃ©m mnoÅ¾stvÃ­, neboÄƒ lidskÃ© tÄ™lo si na nÄ™j po Äase zvykne a pÃ¢estane jeho ÃºÄinky pÃ¢ijÃ­mat."						);   
+					Doc_PrintLines	( nDocID,  1, "VelkÃ© oblibÄ™ se tÄ™Å¡Ã­ i krunÃ½Ã¢e dÅ¯lnÃ­ch ÄervÅ¯, ze kterÃ½ch se vyrÃ¡bÃ­ kvalitnÃ­ zbroj."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, " "						);
 					Doc_Show		( nDocID );
@@ -112,7 +112,7 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 	};
 };
 
-FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals3_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -129,25 +129,25 @@ FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Lov a koâist"					);
+					Doc_PrintLine	( nDocID,  0, "Lov a koÃ¢ist"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Z kadé šelmy nebo nestvùry mohou zkušení lovci získat urèitou trofej, která jim pâinese peníze i slávu."						);
+					Doc_PrintLines	( nDocID,  0, "Z kaÅ¾dÃ© Å¡elmy nebo nestvÅ¯ry mohou zkuÅ¡enÃ­ lovci zÃ­skat urÄitou trofej, kterÃ¡ jim pÃ¢inese penÃ­ze i slÃ¡vu."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Ohnivı ještêr"						);
-					Doc_PrintLines	( nDocID,  0, "Tato šelma sice patâí k ještêrùm, ale dokáe kadého, kdo se jí pâiplete do cesty, seehnout palèivım ohnêm."						);
-					Doc_PrintLines	( nDocID,  0, "Proto s têmito zrùdami mohou bojovat pouze ti, kteâí se chrání pâed ohnêm - a pak jim mohou vyâíznout jazyky, které jsou velmi cenné."	);		
+					Doc_PrintLine	( nDocID,  0, "OhnivÃ½ jeÅ¡tÄ™r"						);
+					Doc_PrintLines	( nDocID,  0, "Tato Å¡elma sice patÃ¢Ã­ k jeÅ¡tÄ™rÅ¯m, ale dokÃ¡Å¾e kaÅ¾dÃ©ho, kdo se jÃ­ pÃ¢iplete do cesty, seÅ¾ehnout palÄivÃ½m ohnÄ™m."						);
+					Doc_PrintLines	( nDocID,  0, "Proto s tÄ™mito zrÅ¯dami mohou bojovat pouze ti, kteÃ¢Ã­ se chrÃ¡nÃ­ pÃ¢ed ohnÄ™m - a pak jim mohou vyÃ¢Ã­znout jazyky, kterÃ© jsou velmi cennÃ©."	);		
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Stínová šelma"		);
+					Doc_PrintLine	( nDocID,  1, "StÃ­novÃ¡ Å¡elma"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Stínová šelma je samotáâskı tvor ze starıch èasù, kterı se skrıvá v lesích."						); 
-					Doc_PrintLines	( nDocID,  1, "U jich na svêtê moc nezùstalo, proto pro lidi nepâedstavují ádnou vêtší hrozbu, pokud se nevetâou pâímo do jejich teritoria."						);
-					Doc_PrintLines	( nDocID,  1, "Roh stínové šelmy pâedstavuje velmi cennou trofej. Lovec však musí vêdêt, jak jej správnê vyjmout, aby ho nepoškodil"						);
-					Doc_PrintLines	( nDocID,  1, "a nesníil jeho cenu."						);
+					Doc_PrintLines	( nDocID,  1, "StÃ­novÃ¡ Å¡elma je samotÃ¡Ã¢skÃ½ tvor ze starÃ½ch ÄasÅ¯, kterÃ½ se skrÃ½vÃ¡ v lesÃ­ch."						); 
+					Doc_PrintLines	( nDocID,  1, "UÅ¾ jich na svÄ™tÄ™ moc nezÅ¯stalo, proto pro lidi nepÃ¢edstavujÃ­ Å¾Ã¡dnou vÄ™tÅ¡Ã­ hrozbu, pokud se nevetÃ¢ou pÃ¢Ã­mo do jejich teritoria."						);
+					Doc_PrintLines	( nDocID,  1, "Roh stÃ­novÃ© Å¡elmy pÃ¢edstavuje velmi cennou trofej. Lovec vÅ¡ak musÃ­ vÄ™dÄ™t, jak jej sprÃ¡vnÄ™ vyjmout, aby ho nepoÅ¡kodil"						);
+					Doc_PrintLines	( nDocID,  1, "a nesnÃ­Å¾il jeho cenu."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 							

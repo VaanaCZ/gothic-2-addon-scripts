@@ -32,7 +32,7 @@ INSTANCE DIA_DJG_715_Ferros_Hello   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_Hello_Condition;
 	information = DIA_DJG_715_Ferros_Hello_Info;
 	permanent   = FALSE;
-	description = "Odkud jsi p‚iöel?";
+	description = "Odkud jsi p√¢i≈°el?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_Hello_Condition()
@@ -42,14 +42,14 @@ FUNC INT DIA_DJG_715_Ferros_Hello_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_Hello_15_00"); //Odkud jsi p‚iöel?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_01"); //Z pevniny. P‚iplul jsem sem se sv˝mi lidmi.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //Situace se po‚·d zhoröuje. Sk‚eti za sebou nech·vajÌ jen vyp·lenÈ vesnice.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //Kr·l uû nem· û·dnou moc.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_Hello_15_00"); //Odkud jsi p√¢i≈°el?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_01"); //Z pevniny. P√¢iplul jsem sem se sv√Ωmi lidmi.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //Situace se po√¢√°d zhor≈°uje. Sk√¢eti za sebou nech√°vaj√≠ jen vyp√°len√© vesnice.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //Kr√°l u≈æ nem√° ≈æ√°dnou moc.
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_04"); //Pokud to chceö vÍdÍt, tak jste vy paladinovÈ zklamali na plnÈ Ë·‚e.
+		AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_04"); //Pokud to chce≈° vƒôdƒôt, tak jste vy paladinov√© zklamali na pln√© ƒç√°√¢e.
 	};	
 };
 
@@ -63,7 +63,7 @@ INSTANCE DIA_DJG_715_Ferros_Friends   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_Friends_Condition;
 	information = DIA_DJG_715_Ferros_Friends_Info;
 	permanent   = FALSE;
-	description = "Kde jsou tvÌ lidÈ teÎ?";
+	description = "Kde jsou tv√≠ lid√© te√´?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_Friends_Condition()
@@ -76,9 +76,9 @@ FUNC INT DIA_DJG_715_Ferros_Friends_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_Friends_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //Kde jsou tvÌ lidÈ teÎ?
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //Kde jsou tv√≠ lid√© te√´?
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_01"); //Opustil jsem je.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //MÍli dojem, ûe si m˘ûou br·t, co se jim zlÌbÌ, a bylo jim jedno, komu to pat‚Ì. Zbavili se mÍ.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //Mƒôli dojem, ≈æe si m≈Ø≈æou br√°t, co se jim zl√≠b√≠, a bylo jim jedno, komu to pat√¢√≠. Zbavili se mƒô.
 };
 
 //*********************************************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_DJG_715_Ferros_War   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_War_Condition;
 	information = DIA_DJG_715_Ferros_War_Info;
 	permanent   = FALSE;
-	description = "Co dalöÌho vÌö o v·lce?";
+	description = "Co dal≈°√≠ho v√≠≈° o v√°lce?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_War_Condition()
@@ -104,15 +104,15 @@ FUNC INT DIA_DJG_715_Ferros_War_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_War_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_War_15_00"); //Co dalöÌho vÌö o v·lce?
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_War_15_00"); //Co dal≈°√≠ho v√≠≈° o v√°lce?
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_01"); //Uû jsi svÈho kr·le nevidÍl pÍknÍ dlouho, co?
+		AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_01"); //U≈æ jsi sv√©ho kr√°le nevidƒôl pƒôknƒô dlouho, co?
 	};
 	
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //Sk‚eti jsou za branami hlavnÌho mÍsta. Ale jestli uû padlo, to nevÌm.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //PoslednÌ vÍc, co jsem slyöel, byla, ûe kr·l padl. Ale j· tomu nevÍ‚Ìm.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //Sk√¢eti jsou za branami hlavn√≠ho mƒôsta. Ale jestli u≈æ padlo, to nev√≠m.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //Posledn√≠ vƒôc, co jsem sly≈°el, byla, ≈æe kr√°l padl. Ale j√° tomu nevƒô√¢√≠m.
 };
 
 //*********************************************************************
@@ -125,7 +125,7 @@ INSTANCE DIA_DJG_715_Ferros_OldCamp   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_OldCamp_Condition;
 	information = DIA_DJG_715_Ferros_OldCamp_Info;
 	permanent   = FALSE;
-	description = "Co dÍl·ö tady na hradÍ?";
+	description = "Co dƒôl√°≈° tady na hradƒô?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_OldCamp_Condition()
@@ -135,45 +135,45 @@ FUNC INT DIA_DJG_715_Ferros_OldCamp_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_15_00"); //Co dÍl·ö tady na hradÍ?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_01"); //Zaslechl jsem o dracÌch a chtÍl jsem pomoct v boji proti nim.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_02"); //Bohuûel jsem ztratil sv˘j meË, kdyû jsem se plÌûil kolem sk‚et˘. TeÎ jsem tady jak v pasti.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_03"); //Bez meËe se odsud nem˘ûu dostat a ty meËe, co se tu dajÌ koupit, jsou ty nejhoröÌ kr·my, co jsem kdy vidÍl.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_15_00"); //Co dƒôl√°≈° tady na hradƒô?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_01"); //Zaslechl jsem o drac√≠ch a chtƒôl jsem pomoct v boji proti nim.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_02"); //Bohu≈æel jsem ztratil sv≈Øj meƒç, kdy≈æ jsem se pl√≠≈æil kolem sk√¢et≈Ø. Te√´ jsem tady jak v pasti.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_03"); //Bez meƒçe se odsud nem≈Ø≈æu dostat a ty meƒçe, co se tu daj√≠ koupit, jsou ty nejhor≈°√≠ kr√°my, co jsem kdy vidƒôl.
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"P‚eju ti hodnÍ ötÍstÌ p‚i hled·nÌ.",DIA_DJG_715_Ferros_OldCamp_No);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Co mi d·ö za to, kdyû ti seûenu meË?",DIA_DJG_715_Ferros_OldCamp_Price);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Najdu tv˘j meË.",DIA_DJG_715_Ferros_OldCamp_Yes);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"P√¢eju ti hodnƒô ≈°tƒôst√≠ p√¢i hled√°n√≠.",DIA_DJG_715_Ferros_OldCamp_No);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Co mi d√°≈° za to, kdy≈æ ti se≈æenu meƒç?",DIA_DJG_715_Ferros_OldCamp_Price);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Najdu tv≈Øj meƒç.",DIA_DJG_715_Ferros_OldCamp_Yes);
 	Wld_InsertItem		(ItMW_1H_FerrosSword_Mis , "FP_OW_ITEM_08"); 
 	MIS_FerrosSword = LOG_RUNNING; 
 	
 	Log_CreateTopic (TOPIC_FerrosSword, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_FerrosSword, LOG_RUNNING);
-	B_LogEntry (TOPIC_FerrosSword,"Kdesi u sk‚et˘ ztratil Feros sv˘j meË - to bylo po‚·dnÍ hloupÈ."); 
+	B_LogEntry (TOPIC_FerrosSword,"Kdesi u sk√¢et≈Ø ztratil Feros sv≈Øj meƒç - to bylo po√¢√°dnƒô hloup√©."); 
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_No ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_No_15_00"); //P‚eju ti hodnÍ ötÍstÌ p‚i hled·nÌ.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_No_01_01"); //Asi bych se mÍl s·m sebe pt·t, proË jsem vlastnÍ tady.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_No_15_00"); //P√¢eju ti hodnƒô ≈°tƒôst√≠ p√¢i hled√°n√≠.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_No_01_01"); //Asi bych se mƒôl s√°m sebe pt√°t, proƒç jsem vlastnƒô tady.
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Price ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Price_15_00"); //Co mi d·ö za to, kdyû ti seûenu meË?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Price_01_01"); //Bohuûel ti nem˘ûu d·t nic. Svoje poslednÌ penÌze jsem utratil za ten meË.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Price_15_00"); //Co mi d√°≈° za to, kdy≈æ ti se≈æenu meƒç?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Price_01_01"); //Bohu≈æel ti nem≈Ø≈æu d√°t nic. Svoje posledn√≠ pen√≠ze jsem utratil za ten meƒç.
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Yes ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //Najdu tv˘j meË.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_01"); //To by bylo v˝bornÈ. MÍl bys ho hledat na tom strmÈm sr·zu na jihu.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //PravdÍpodobnÍ jsem ho ztratil poblÌû sk‚etÌch stan˘.
-	B_LogEntry (TOPIC_FerrosSword,"Feros sv˘j meË nejspÌö ztratil na vysokÈm ˙tesu na jihu - tam, kde si sk‚eti rozbili svÈ stany."); 
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //Najdu tv≈Øj meƒç.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_01"); //To by bylo v√Ωborn√©. Mƒôl bys ho hledat na tom strm√©m sr√°zu na jihu.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //Pravdƒôpodobnƒô jsem ho ztratil pobl√≠≈æ sk√¢et√≠ch stan≈Ø.
+	B_LogEntry (TOPIC_FerrosSword,"Feros sv≈Øj meƒç nejsp√≠≈° ztratil na vysok√©m √∫tesu na jihu - tam, kde si sk√¢eti rozbili sv√© stany."); 
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
@@ -188,7 +188,7 @@ INSTANCE DIA_DJG_715_Ferros_FerrosAnySword   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_FerrosAnySword_Condition;
 	information = DIA_DJG_715_Ferros_FerrosAnySword_Info;
 	permanent   = FALSE;
-	description = "Moûn· bych pro tebe mÍl jin˝ meË.";
+	description = "Mo≈æn√° bych pro tebe mƒôl jin√Ω meƒç.";
 };
 
 FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
@@ -203,7 +203,7 @@ FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //Moûn· bych pro tebe mÍl jin˝ meË.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //Mo≈æn√° bych pro tebe mƒôl jin√Ω meƒç.
 
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
@@ -227,8 +227,8 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Back ()
 
 FUNC VOID B_Ferros_FerrosAnySword_Give ()
 {
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_00"); //Je to dobr· Ëepel. Opravdu v˝jimeËn· pr·ce.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_01"); //Jseö si jist˝, ûe mi nÍco takovÈho chceö d·t?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_00"); //Je to dobr√° ƒçepel. Opravdu v√Ωjimeƒçn√° pr√°ce.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_01"); //Jse≈° si jist√Ω, ≈æe mi nƒôco takov√©ho chce≈° d√°t?
 };
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Silverblade ()
@@ -236,7 +236,7 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Silverblade ()
 	B_Ferros_FerrosAnySword_Give ();
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
-	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Ne, pot‚ebuju ho pro sebe.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_No);
+	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Ne, pot√¢ebuju ho pro sebe.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_No);
 	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Jo, vezmi si to.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_Yes);
 };
 
@@ -245,7 +245,7 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Oreblade ()
 	B_Ferros_FerrosAnySword_Give ();
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
-	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Ne, pot‚ebuju ho pro sebe.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_No);
+	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Ne, pot√¢ebuju ho pro sebe.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_No);
 	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Jo, vezmi si to.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_Yes);
 };
 
@@ -256,18 +256,18 @@ FUNC VOID B_Ferros_FerrosAnySword_Yes1 ()
 
 FUNC VOID B_Ferros_FerrosAnySword_Yes2 ()
 {
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_00"); //DÌky, m·ö to u mÍ.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //Na opl·tku ti uk·ûu spoustu trik˘, kterÈ ti v boji umoûnÌ lÈpe vyuûÌvat svou sÌlu a obratnost.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_00"); //D√≠ky, m√°≈° to u mƒô.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //Na opl√°tku ti uk√°≈æu spoustu trik≈Ø, kter√© ti v boji umo≈æn√≠ l√©pe vyu≈æ√≠vat svou s√≠lu a obratnost.
 
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Feros mi pom˘ûe vylepöit sÌlu a obratnost.");
+	B_LogEntry		(TOPIC_Teacher, "Feros mi pom≈Ø≈æe vylep≈°it s√≠lu a obratnost.");
 
 };
 
 FUNC VOID B_Ferros_FerrosAnySword_No ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_No_15_00");	//Ne, pot‚ebuju ho pro sebe.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_No_01_01");	//Tak tomu rozumÌm.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_No_15_00");	//Ne, pot√¢ebuju ho pro sebe.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_No_01_01");	//Tak tomu rozum√≠m.
 };
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_Yes ()
@@ -316,7 +316,7 @@ INSTANCE DIA_DJG_715_Ferros_FerrosHisSword   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_FerrosHisSword_Condition;
 	information = DIA_DJG_715_Ferros_FerrosHisSword_Info;
 	permanent   = FALSE;
-	description = "Naöel jsem tv˘j meË.";
+	description = "Na≈°el jsem tv≈Øj meƒç.";
 };
 
 FUNC INT DIA_DJG_715_Ferros_FerrosHisSword_Condition()
@@ -330,7 +330,7 @@ FUNC INT DIA_DJG_715_Ferros_FerrosHisSword_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosHisSword_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosHisSword_15_00"); //Naöel jsem tv˘j meË.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosHisSword_15_00"); //Na≈°el jsem tv≈Øj meƒç.
 	B_GiveInvItems (other,self,ItMw_1h_FerrosSword_Mis,1);
 	B_Ferros_FerrosAnySword_Yes2 ();
 	MIS_FerrosSword = LOG_SUCCESS;	
@@ -348,7 +348,7 @@ INSTANCE DIA_Ferros_Teach(C_INFO)
 	condition	= DIA_Ferros_Teach_Condition;
 	information	= DIA_Ferros_Teach_Info;
 	permanent	= TRUE;
-	description = "Ukaû mi, jak m˘ûu posÌlit svÈ schopnosti.";
+	description = "Uka≈æ mi, jak m≈Ø≈æu pos√≠lit sv√© schopnosti.";
 };                       
 
 FUNC INT DIA_Ferros_Teach_Condition()
@@ -361,15 +361,15 @@ FUNC INT DIA_Ferros_Teach_Condition()
  
 FUNC VOID DIA_Ferros_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Ukaû mi, jak m˘ûu posÌlit svÈ schopnosti.
+	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Uka≈æ mi, jak m≈Ø≈æu pos√≠lit sv√© schopnosti.
 
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output (self ,other,"DIA_Ferros_Teach_01_01"); //Po tÍch sk‚etÌch ˙tocÌch jsem s tÌm skonËil. Jsem r·d, ûe jsem z˘stal naûivu, chlape.
+	AI_Output (self ,other,"DIA_Ferros_Teach_01_01"); //Po tƒôch sk√¢et√≠ch √∫toc√≠ch jsem s t√≠m skonƒçil. Jsem r√°d, ≈æe jsem z≈Østal na≈æivu, chlape.
 	}
 	else
 	{
-	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Dobr˝ bojovnÌk by se mÍl nauËit, jak svÈ schopnosti p‚evÈst p‚Ìmo na zbra‡.
+	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Dobr√Ω bojovn√≠k by se mƒôl nauƒçit, jak sv√© schopnosti p√¢ev√©st p√¢√≠mo na zbra≈ï.
 	
 	Info_ClearChoices (DIA_Ferros_Teach);
 	Info_AddChoice		(DIA_Ferros_Teach, DIALOG_BACK, DIA_Ferros_Teach_Back);
@@ -420,7 +420,7 @@ INSTANCE DIA_Ferros_AllDragonsDead   (C_INFO)
 	condition   = DIA_Ferros_AllDragonsDead_Condition;
 	information = DIA_Ferros_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Vöichni draci uû jsou mrtvÌ.";
+	description	= "V≈°ichni draci u≈æ jsou mrtv√≠.";
 				
 };
 
@@ -434,8 +434,8 @@ FUNC INT DIA_Ferros_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Ferros_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Ferros_AllDragonsDead_15_00"); //Vöichni draci jsou mrtvÌ.
-	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Dobr· pr·ce! Kdybychom mÍli vÌc takov˝ch lidÌ, nejspÌö by se to nikdy nedostalo tak daleko.
+	AI_Output	(other,self ,"DIA_Ferros_AllDragonsDead_15_00"); //V≈°ichni draci jsou mrtv√≠.
+	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Dobr√° pr√°ce! Kdybychom mƒôli v√≠c takov√Ωch lid√≠, nejsp√≠≈° by se to nikdy nedostalo tak daleko.
 };
 
 // ************************************************************

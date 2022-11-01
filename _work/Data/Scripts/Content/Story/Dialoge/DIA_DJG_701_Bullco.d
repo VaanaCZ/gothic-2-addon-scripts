@@ -42,7 +42,7 @@ instance DIA_BullcoDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_BullcoDJG_HALLO_Condition;
 	information	 = 	DIA_BullcoDJG_HALLO_Info;
 
-	description	 = 	"Co se dÍje?";
+	description	 = 	"Co se dƒôje?";
 };
 
 func int DIA_BullcoDJG_HALLO_Condition ()
@@ -55,9 +55,9 @@ func int DIA_BullcoDJG_HALLO_Condition ()
 
 func void DIA_BullcoDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_BullcoDJG_HALLO_15_00"); //Co se dÍje??
-	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_01"); //Je tady zatracen· zima, chlape! ProË Sylvio trval na tom, abysme öli zrovna sem?
-	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_02"); //Existuje spousta jinejch mÌst, co stojej alespo‡ za nÍco!
+	AI_Output			(other, self, "DIA_BullcoDJG_HALLO_15_00"); //Co se dƒôje??
+	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_01"); //Je tady zatracen√° zima, chlape! Proƒç Sylvio trval na tom, abysme ≈°li zrovna sem?
+	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_02"); //Existuje spousta jinejch m√≠st, co stojej alespo≈ï za nƒôco!
 	AI_StopProcessInfos (self);
 };
 
@@ -73,7 +73,7 @@ instance DIA_BullcoDJG_WARTEMAL		(C_INFO)
 
 	permanent	 = 	TRUE;
 
-	description	 = 	"A co jinak. Vöechno v po‚·dku?";
+	description	 = 	"A co jinak. V≈°echno v po√¢√°dku?";
 };
 
 func int DIA_BullcoDJG_WARTEMAL_Condition ()
@@ -87,15 +87,15 @@ func int DIA_BullcoDJG_WARTEMAL_Condition ()
 
 func void DIA_BullcoDJG_WARTEMAL_Info ()
 {
-	AI_Output			(other, self, "DIA_BullcoDJG_WARTEMAL_15_00"); //A co jinak. Vöechno v po‚·dku?
+	AI_Output			(other, self, "DIA_BullcoDJG_WARTEMAL_15_00"); //A co jinak. V≈°echno v po√¢√°dku?
 
 	if (Npc_KnowsInfo(other, DIA_Bullco_WASNUN))
 		{
-		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_01"); //ProstÍ mi p‚esta‡ lÈzt na nervy.
+		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_01"); //Prostƒô mi p√¢esta≈ï l√©zt na nervy.
 		}
 	else
 		{
-		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_02"); //TeÎ ne! Mrznu! Jedin˝, co chci, je odsud vypadnout, jak nejrychlejö to p˘jde.
+		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_02"); //Te√´ ne! Mrznu! Jedin√Ω, co chci, je odsud vypadnout, jak nejrychlej≈° to p≈Øjde.
 		};
 
 	AI_StopProcessInfos (self);
@@ -124,10 +124,10 @@ func int DIA_Bullco_SYLVIODEAD_Condition ()
 
 func void DIA_Bullco_SYLVIODEAD_Info ()
 {
-	AI_Output			(self, other, "DIA_Bullco_SYLVIODEAD_06_00"); //»ert aby to spral. Sylvio je mrtvej.
+	AI_Output			(self, other, "DIA_Bullco_SYLVIODEAD_06_00"); //ƒåert aby to spral. Sylvio je mrtvej.
 
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -140,7 +140,7 @@ instance DIA_Bullco_WASNUN		(C_INFO)
 	condition	 = 	DIA_Bullco_WASNUN_Condition;
 	information	 = 	DIA_Bullco_WASNUN_Info;
 
-	description	 = 	"Co pl·nujeö teÎ, kdyû je Sylvio mrtv˝?";
+	description	 = 	"Co pl√°nuje≈° te√´, kdy≈æ je Sylvio mrtv√Ω?";
 };
 
 func int DIA_Bullco_WASNUN_Condition ()
@@ -154,63 +154,63 @@ func int DIA_Bullco_WASNUN_Condition ()
 
 func void DIA_Bullco_WASNUN_Info ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_15_00"); //Co teÎ, kdyû je Sylvio mrtvej?
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_06_01"); //Nem·m tuöenÌ. H·d·m, ûe p˘jdu d·l s ostatnÌma drakobijcema. Pokud teda o mÍ jeötÍ budou st·t.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_15_00"); //Co te√´, kdy≈æ je Sylvio mrtvej?
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_06_01"); //Nem√°m tu≈°en√≠. H√°d√°m, ≈æe p≈Øjdu d√°l s ostatn√≠ma drakobijcema. Pokud teda o mƒô je≈°tƒô budou st√°t.
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "MÍl bych ti utrhnout hlavu.", DIA_Bullco_WASNUN_kopfab );
-	Info_AddChoice	(DIA_Bullco_WASNUN, "VÌö, kde jsou ostatnÌ?", DIA_Bullco_WASNUN_woandere );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Mƒôl bych ti utrhnout hlavu.", DIA_Bullco_WASNUN_kopfab );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "V√≠≈°, kde jsou ostatn√≠?", DIA_Bullco_WASNUN_woandere );
 
 };
 
 func void DIA_Bullco_WASNUN_woandere ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_15_00"); //VÌö, kde jsou ostatnÌ?
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_06_01"); //MyslÌm, ûe jo. Alespo‡ jsem jednoho z nich vidÍl tam na ‚ece.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_15_00"); //V√≠≈°, kde jsou ostatn√≠?
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_06_01"); //Mysl√≠m, ≈æe jo. Alespo≈ï jsem jednoho z nich vidƒôl tam na √¢ece.
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Vezmi mÍ k lovc˘m drak˘.", DIA_Bullco_WASNUN_woandere_zuihnen );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Vezmi mƒô k lovc≈Øm drak≈Ø.", DIA_Bullco_WASNUN_woandere_zuihnen );
 };
 func void DIA_Bullco_WASNUN_woandere_zuihnen ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_15_00"); //Vezmi mÍ k ostatnÌm drakobijc˘m.
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_06_01"); //Hele, j· nejsem tv˘j sluha.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_15_00"); //Vezmi mƒô k ostatn√≠m drakobijc≈Øm.
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_06_01"); //Hele, j√° nejsem tv≈Øj sluha.
 
 	Info_ClearChoices	(DIA_Bullco_WASNUN);
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Jen si posluû, j· je urËitÍ najdu.", DIA_Bullco_WASNUN_woandere_zuihnen_alleine );
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Povaûuj se za sluhu a j· tÍ nech·m naûivu.", DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen );
-	Info_AddChoice	(DIA_Bullco_WASNUN, "D·m ti za to 50 zlat˝ch.", DIA_Bullco_WASNUN_woandere_zuihnen_Geld );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Jen si poslu≈æ, j√° je urƒçitƒô najdu.", DIA_Bullco_WASNUN_woandere_zuihnen_alleine );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Pova≈æuj se za sluhu a j√° tƒô nech√°m na≈æivu.", DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "D√°m ti za to 50 zlat√Ωch.", DIA_Bullco_WASNUN_woandere_zuihnen_Geld );
 
 
 };
 func void DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen_15_00"); //Povaûuj se za sluhu a j· tÍ nech·m naûivu.
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen_06_01"); //Nech mÍ na pokoji.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen_15_00"); //Pova≈æuj se za sluhu a j√° tƒô nech√°m na≈æivu.
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen_06_01"); //Nech mƒô na pokoji.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Bullco_WASNUN_woandere_zuihnen_Geld ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_15_00"); //D·m ti za to 50 zlat˝ch.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_15_00"); //D√°m ti za to 50 zlat√Ωch.
 	
 	if (B_GiveInvItems (other, self, ItMi_Gold,50))
 		{
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_01"); //Tak dobr·. Naval prachy.
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_02"); //PojÎ za mnou. Vezmu tÍ na mÌsto, kde jsem naposledy spat‚il ostatnÌ drakobijce.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_01"); //Tak dobr√°. Naval prachy.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_02"); //Poj√´ za mnou. Vezmu tƒô na m√≠sto, kde jsem naposledy spat√¢il ostatn√≠ drakobijce.
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"DJGVorposten");
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_03"); //Nem·ö 50 zlat˝ch a j· se do takov˝ho pr˘seru prostÍ jen tak nepoûenu. Ztra„ se.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_03"); //Nem√°≈° 50 zlat√Ωch a j√° se do takov√Ωho pr≈Øseru prostƒô jen tak nepo≈æenu. ZtraƒÉ se.
 			AI_StopProcessInfos (self);
 		};
 };
 
 func void DIA_Bullco_WASNUN_woandere_zuihnen_alleine ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_15_00"); //Jak je libo. Jsem si jistej, ûe ho najdu.
-	AI_Output			(self ,other, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_06_01"); //V tom p‚ÌpadÍ û·dn˝ vytr·cenÌ.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_15_00"); //Jak je libo. Jsem si jistej, ≈æe ho najdu.
+	AI_Output			(self ,other, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_06_01"); //V tom p√¢√≠padƒô ≈æ√°dn√Ω vytr√°cen√≠.
 	
 	AI_StopProcessInfos (self);
 };
@@ -218,17 +218,17 @@ func void DIA_Bullco_WASNUN_woandere_zuihnen_alleine ()
 
 func void DIA_Bullco_WASNUN_kopfab ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_15_00"); //MÍl bych ti utrhnout hlavu.
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_06_01"); //Sklapni uû tu svojÌ velkou hubu.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_15_00"); //Mƒôl bych ti utrhnout hlavu.
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_06_01"); //Sklapni u≈æ tu svoj√≠ velkou hubu.
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Do zbranÍ. SkonËÌme to hned.", DIA_Bullco_WASNUN_kopfab_angriff );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Do zbranƒô. Skonƒç√≠me to hned.", DIA_Bullco_WASNUN_kopfab_angriff );
 
 
 };
 func void DIA_Bullco_WASNUN_kopfab_angriff ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_angriff_15_00"); //Do zbranÍ. SkonËÌme to hned.
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_angriff_06_01"); //Jak si p‚ejeö.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_angriff_15_00"); //Do zbranƒô. Skonƒç√≠me to hned.
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_angriff_06_01"); //Jak si p√¢eje≈°.
 
 	AI_StopProcessInfos (self);
 

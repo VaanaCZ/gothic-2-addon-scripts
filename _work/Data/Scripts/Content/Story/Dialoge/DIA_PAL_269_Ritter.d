@@ -42,12 +42,12 @@ func int DIA_PAL_269_HERO_Condition ()
 var int DIA_Ritter_HERO_NoPerm;
 func void DIA_PAL_269_HERO_Info ()
 {
-	AI_Output			(self, other, "DIA_Ritter_HERO_04_00"); //Tv˘j p‚Ìchod je znamenÌm pro n·s vöechny. Dod·v· n·m to odvahu.
+	AI_Output			(self, other, "DIA_Ritter_HERO_04_00"); //Tv≈Øj p√¢√≠chod je znamen√≠m pro n√°s v≈°echny. Dod√°v√° n√°m to odvahu.
 
 	if (DIA_Ritter_HERO_NoPerm == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Ritter_HERO_04_01"); //VÌme, ûe na n·s naöi spolubojovnÌci z mÍsta nezapomnÍli. Innosovo oko na n·s dohlÌûÌ.
-			AI_Output			(self, other, "DIA_Ritter_HERO_04_02"); //A jestli sk‚eti a draci vtrhnou na naöe br·ny, postavÌme se jim hrdÍ, a„ uû n·m bude souzeno p‚eûÌt nebo zem‚Ìt.
+			AI_Output			(self, other, "DIA_Ritter_HERO_04_01"); //V√≠me, ≈æe na n√°s na≈°i spolubojovn√≠ci z mƒôsta nezapomnƒôli. Innosovo oko na n√°s dohl√≠≈æ√≠.
+			AI_Output			(self, other, "DIA_Ritter_HERO_04_02"); //A jestli sk√¢eti a draci vtrhnou na na≈°e br√°ny, postav√≠me se jim hrdƒô, aƒÉ u≈æ n√°m bude souzeno p√¢e≈æ√≠t nebo zem√¢√≠t.
 			DIA_Ritter_HERO_NoPerm = TRUE;
 		};
 };

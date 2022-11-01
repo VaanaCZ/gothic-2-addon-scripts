@@ -95,8 +95,8 @@ FUNC INT DIA_Daron_Hallo_Condition()
 };
 FUNC VOID DIA_Daron_Hallo_Info()
 {	
-	AI_Output (self, other,"DIA_Daron_Hallo_10_00");//Co pro tebe mohu udêlat? Hledáš duchovní útêchu?
-	AI_Output (self, other,"DIA_Daron_Hallo_10_01");//Chceš odeslat modlitbu našemu Pánu Innosovi, nebo darovat kostelu nêjaké peníze?
+	AI_Output (self, other,"DIA_Daron_Hallo_10_00");//Co pro tebe mohu udÄ™lat? HledÃ¡Å¡ duchovnÃ­ ÃºtÄ™chu?
+	AI_Output (self, other,"DIA_Daron_Hallo_10_01");//ChceÅ¡ odeslat modlitbu naÅ¡emu PÃ¡nu Innosovi, nebo darovat kostelu nÄ™jakÃ© penÃ­ze?
 };
 
 // ************************************************************
@@ -109,7 +109,7 @@ INSTANCE DIA_Daron_Paladine(C_INFO)
 	condition	= DIA_Daron_Paladine_Condition;
 	information	= DIA_Daron_Paladine_Info;
 	permanent	= FALSE;
-	description = "Potâebuji mluvit s paladiny...";
+	description = "PotÃ¢ebuji mluvit s paladiny...";
 };                       
 FUNC INT DIA_Daron_Paladine_Condition()
 {	
@@ -121,12 +121,12 @@ FUNC INT DIA_Daron_Paladine_Condition()
 };
 FUNC VOID DIA_Daron_Paladine_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Paladine_15_00");//Potâeboval bych si promluvit s paladiny. Mùeš mê k nim nêjak dostat?
-	AI_Output (self, other,"DIA_Daron_Paladine_10_01");//No, budeš potâebovat povolení ke vstupu do horní èásti mêsta. To však mají jen obèané mêsta a mêstská strá.
-	AI_Output (self, other,"DIA_Daron_Paladine_10_02");//A pochopitelnê my, ohniví mágové.
-	AI_Output (other, self,"DIA_Daron_Paladine_15_03");//Jak bych se mohl stát ohnivım mágem?
-	AI_Output (self, other,"DIA_Daron_Paladine_10_04");//Musíš se pâipojit k našemu âádu jako novic. A budeš slouit urèitı èas, moná budeš pâijat do âad mágù.
-	AI_Output (self, other,"DIA_Daron_Paladine_10_05");//Tahle cesta je ovšem dlouhá a plná práce a studia.
+	AI_Output (other, self,"DIA_Daron_Paladine_15_00");//PotÃ¢eboval bych si promluvit s paladiny. MÅ¯Å¾eÅ¡ mÄ™ k nim nÄ™jak dostat?
+	AI_Output (self, other,"DIA_Daron_Paladine_10_01");//No, budeÅ¡ potÃ¢ebovat povolenÃ­ ke vstupu do hornÃ­ ÄÃ¡sti mÄ™sta. To vÅ¡ak majÃ­ jen obÄanÃ© mÄ™sta a mÄ™stskÃ¡ strÃ¡Å¾.
+	AI_Output (self, other,"DIA_Daron_Paladine_10_02");//A pochopitelnÄ™ my, ohnivÃ­ mÃ¡govÃ©.
+	AI_Output (other, self,"DIA_Daron_Paladine_15_03");//Jak bych se mohl stÃ¡t ohnivÃ½m mÃ¡gem?
+	AI_Output (self, other,"DIA_Daron_Paladine_10_04");//MusÃ­Å¡ se pÃ¢ipojit k naÅ¡emu Ã¢Ã¡du jako novic. AÅ¾ budeÅ¡ slouÅ¾it urÄitÃ½ Äas, moÅ¾nÃ¡ budeÅ¡ pÃ¢ijat do Ã¢ad mÃ¡gÅ¯.
+	AI_Output (self, other,"DIA_Daron_Paladine_10_05");//Tahle cesta je ovÅ¡em dlouhÃ¡ a plnÃ¡ prÃ¡ce a studia.
 };
 
 // ************************************************************
@@ -139,7 +139,7 @@ INSTANCE DIA_Daron_AboutSegen (C_INFO)
 	condition	= DIA_Daron_AboutSegen_Condition;
 	information	= DIA_Daron_AboutSegen_Info;
 	permanent	= FALSE;
-	description = "Pâišel jsem si pro tvé poehnání!";
+	description = "PÃ¢iÅ¡el jsem si pro tvÃ© poÅ¾ehnÃ¡nÃ­!";
 };                       
 FUNC INT DIA_Daron_AboutSegen_Condition()
 {	
@@ -152,18 +152,18 @@ FUNC INT DIA_Daron_AboutSegen_Condition()
 };
 FUNC VOID DIA_Daron_AboutSegen_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_AboutSegen_15_00"); //Pâišel jsem si pro tvé poehnání!
-	AI_Output (self, other,"DIA_Daron_AboutSegen_10_01"); //To je dobâe, to je dobâe - v tom pâípadê bys jistê chtêl pâispêt nêjakım tím zlaãákem ve prospêch svaté církve Innosovy, e?
-	AI_Output (other, self,"DIA_Daron_AboutSegen_15_02"); //No, ve skuteènosti bych rád dostal tvé poehnání, abych se mohl zapsat jako uèedník v dolní èásti mêsta.
+	AI_Output (other, self,"DIA_Daron_AboutSegen_15_00"); //PÃ¢iÅ¡el jsem si pro tvÃ© poÅ¾ehnÃ¡nÃ­!
+	AI_Output (self, other,"DIA_Daron_AboutSegen_10_01"); //To je dobÃ¢e, to je dobÃ¢e - v tom pÃ¢Ã­padÄ™ bys jistÄ™ chtÄ™l pÃ¢ispÄ™t nÄ™jakÃ½m tÃ­m zlaÄƒÃ¡kem ve prospÄ™ch svatÃ© cÃ­rkve Innosovy, Å¾e?
+	AI_Output (other, self,"DIA_Daron_AboutSegen_15_02"); //No, ve skuteÄnosti bych rÃ¡d dostal tvÃ© poÅ¾ehnÃ¡nÃ­, abych se mohl zapsat jako uÄednÃ­k v dolnÃ­ ÄÃ¡sti mÄ™sta.
 	if (Daron_Segen == TRUE)
 	{
-		AI_Output (self, other,"DIA_Daron_AboutSegen_10_03"); //Ale já u ti své poehnání dal, mùj synu.
-		AI_Output (self, other,"DIA_Daron_AboutSegen_10_04"); //Nechã tê Innos doprovází, mùj synu!
+		AI_Output (self, other,"DIA_Daron_AboutSegen_10_03"); //Ale jÃ¡ uÅ¾ ti svÃ© poÅ¾ehnÃ¡nÃ­ dal, mÅ¯j synu.
+		AI_Output (self, other,"DIA_Daron_AboutSegen_10_04"); //NechÄƒ tÄ™ Innos doprovÃ¡zÃ­, mÅ¯j synu!
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Daron_AboutSegen_10_05"); //Ale mùj synu! Bez pâimêâeného daru církvi ti poehnání dát nemohu.
-		AI_Output (self, other,"DIA_Daron_AboutSegen_10_06"); //Jak jinak bych si mohl bıt jist tvımi dobrımi úmysly?
+		AI_Output (self, other,"DIA_Daron_AboutSegen_10_05"); //Ale mÅ¯j synu! Bez pÃ¢imÄ™Ã¢enÃ©ho daru cÃ­rkvi ti poÅ¾ehnÃ¡nÃ­ dÃ¡t nemohu.
+		AI_Output (self, other,"DIA_Daron_AboutSegen_10_06"); //Jak jinak bych si mohl bÃ½t jist tvÃ½mi dobrÃ½mi Ãºmysly?
 	};
 };
 
@@ -177,7 +177,7 @@ INSTANCE DIA_Daron_Spenden(C_INFO)
 	condition	= DIA_Daron_Spenden_Condition;
 	information	= DIA_Daron_Spenden_Info;
 	permanent	= FALSE;
-	description	= "Take jak vysokı dar se tady vêtšinou dává?";
+	description	= "TakÅ¾e jak vysokÃ½ dar se tady vÄ™tÅ¡inou dÃ¡vÃ¡?";
 };                       
 FUNC INT DIA_Daron_Spenden_Condition()
 {	if (hero.guild != GIL_KDF)
@@ -187,47 +187,47 @@ FUNC INT DIA_Daron_Spenden_Condition()
 };
 FUNC VOID DIA_Daron_Spenden_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Spenden_15_00");//Take jak vysokı dar se tady vêtšinou dává?
-	AI_Output (self, other,"DIA_Daron_Spenden_10_01");//No, to záleí na tom, jak velkı majetek máš. Nech mê se podívat, kolik u sebe máš.
-	AI_Output (self, other,"DIA_Daron_Spenden_10_02");//(nahlíí do mêšce) Mmmmh hmmm...
+	AI_Output (other, self,"DIA_Daron_Spenden_15_00");//TakÅ¾e jak vysokÃ½ dar se tady vÄ™tÅ¡inou dÃ¡vÃ¡?
+	AI_Output (self, other,"DIA_Daron_Spenden_10_01");//No, to zÃ¡leÅ¾Ã­ na tom, jak velkÃ½ majetek mÃ¡Å¡. Nech mÄ™ se podÃ­vat, kolik u sebe mÃ¡Å¡.
+	AI_Output (self, other,"DIA_Daron_Spenden_10_02");//(nahlÃ­Å¾Ã­ do mÄ™Å¡ce) Mmmmh hmmm...
 	
 	if (Npc_HasItems (other, ItMi_Gold) < 10)
 	{
-		AI_Output (self, other,"DIA_Daron_Spenden_10_03");//Hm, jsi ubohá duše, e? Nech si to málo, co máš.
+		AI_Output (self, other,"DIA_Daron_Spenden_10_03");//Hm, jsi ubohÃ¡ duÅ¡e, Å¾e? Nech si to mÃ¡lo, co mÃ¡Å¡.
 		
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, mág ohnê, mi nechtêl poehnat. Nejspíš mu budu muset nejdâív poskytnout nêjaké zlato jako milodar.");
+			B_LogEntry (TOPIC_Thorben,"Daron, mÃ¡g ohnÄ™, mi nechtÄ™l poÅ¾ehnat. NejspÃ­Å¡ mu budu muset nejdÃ¢Ã­v poskytnout nÄ™jakÃ© zlato jako milodar.");
 		};
 	}
 	else //Gold >= 10
 	{
 		if (Npc_HasItems (other, ItMi_Gold) < 50)
 		{
-			AI_Output (self, other,"DIA_Daron_Spenden_10_04");//No, nemáš mnoho, ale ani nejsi chudı. 10 zlatıch pro Innose - ijeme skromnê.
+			AI_Output (self, other,"DIA_Daron_Spenden_10_04");//No, nemÃ¡Å¡ mnoho, ale ani nejsi chudÃ½. 10 zlatÃ½ch pro Innose - Å¾ijeme skromnÄ™.
 			B_GiveInvItems (other, self, ItMi_Gold, 10);
 			
 		}
 		else if (Npc_HasItems (other, ItMi_Gold) < 100)
 		{
-			AI_Output (self, other,"DIA_Daron_Spenden_10_05");//Máš víc ne 50 zlatıch. Daruj Innosovi 25 a dostaneš jeho poehnání.
+			AI_Output (self, other,"DIA_Daron_Spenden_10_05");//MÃ¡Å¡ vÃ­c neÅ¾ 50 zlatÃ½ch. Daruj Innosovi 25 a dostaneÅ¡ jeho poÅ¾ehnÃ¡nÃ­.
 			B_GiveInvItems (other, self, ItMi_Gold, 25);
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Daron_Spenden_10_06");//Máš víc ne sto zlatıch - Pán âíká, e kdy máš, mêl bys dát.
-			AI_Output (self, other,"DIA_Daron_Spenden_10_07");//Církev pâijímá tvùj štêdrı dar.
+			AI_Output (self, other,"DIA_Daron_Spenden_10_06");//MÃ¡Å¡ vÃ­c neÅ¾ sto zlatÃ½ch - PÃ¡n Ã¢Ã­kÃ¡, Å¾e kdyÅ¾ mÃ¡Å¡, mÄ™l bys dÃ¡t.
+			AI_Output (self, other,"DIA_Daron_Spenden_10_07");//CÃ­rkev pÃ¢ijÃ­mÃ¡ tvÅ¯j Å¡tÄ™drÃ½ dar.
 			B_GiveInvItems (other, self, ItMi_Gold, 50);
 			
 		};
 		
-		AI_Output (self, other,"DIA_Daron_Spenden_10_08");//ehnám ti ve jménu Innosovê. On je svêtlo a spravedlnost.
+		AI_Output (self, other,"DIA_Daron_Spenden_10_08");//Å½ehnÃ¡m ti ve jmÃ©nu InnosovÄ™. On je svÄ™tlo a spravedlnost.
 		Daron_Segen = TRUE;
 		B_GivePlayerXP (XP_InnosSegen);
 		
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, mág ohnê, mi dal své poehnání.");
+			B_LogEntry (TOPIC_Thorben,"Daron, mÃ¡g ohnÄ™, mi dal svÃ© poÅ¾ehnÃ¡nÃ­.");
 		};
 	};
 };
@@ -242,7 +242,7 @@ INSTANCE DIA_Daron_Woher(C_INFO)
 	condition	= DIA_Daron_Woher_Condition;
 	information	= DIA_Daron_Woher_Info;
 	permanent	= FALSE;
-	description	= "Odkud jsi pâišel?";
+	description	= "Odkud jsi pÃ¢iÅ¡el?";
 };                       
 FUNC INT DIA_Daron_Woher_Condition()
 {	
@@ -254,12 +254,12 @@ FUNC INT DIA_Daron_Woher_Condition()
 };
 FUNC VOID DIA_Daron_Woher_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Woher_15_00");//Odkud jsi pâišel?
-	AI_Output (self, other,"DIA_Daron_Woher_10_01");//Pâicházím z kláštera mágù, kterı leí v horách.
+	AI_Output (other, self,"DIA_Daron_Woher_15_00");//Odkud jsi pÃ¢iÅ¡el?
+	AI_Output (self, other,"DIA_Daron_Woher_10_01");//PÃ¢ichÃ¡zÃ­m z klÃ¡Å¡tera mÃ¡gÅ¯, kterÃ½ leÅ¾Ã­ v horÃ¡ch.
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other,"DIA_Daron_Woher_10_02");//U nás je vítán kadı, jeho srdce je èisté a cítí potâebu slouit našemu všemocnému Pánu Innosovi.
+		AI_Output (self, other,"DIA_Daron_Woher_10_02");//U nÃ¡s je vÃ­tÃ¡n kaÅ¾dÃ½, jehoÅ¾ srdce je ÄistÃ© a cÃ­tÃ­ potÃ¢ebu slouÅ¾it naÅ¡emu vÅ¡emocnÃ©mu PÃ¡nu Innosovi.
 	};
 };
 
@@ -273,7 +273,7 @@ INSTANCE DIA_Daron_Innos(C_INFO)
 	condition	= DIA_Daron_Innos_Condition;
 	information	= DIA_Daron_Innos_Info;
 	permanent	= FALSE;
-	description	= "Povêz mi nêco o Innosovi.";
+	description	= "PovÄ™z mi nÄ™co o Innosovi.";
 };                       
 FUNC INT DIA_Daron_Innos_Condition()
 {	
@@ -286,10 +286,10 @@ FUNC INT DIA_Daron_Innos_Condition()
 };
 FUNC VOID DIA_Daron_Innos_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Innos_15_00");//Âekni mi nêco o Innosovi.
-	AI_Output (self, other,"DIA_Daron_Innos_10_01");//Innos, náš všemocnı pán, je svêtlo a oheà.
-	AI_Output (self, other,"DIA_Daron_Innos_10_02");//Rozhodl se, e lidé budou jeho nástrojem, a dal jim magii a zákony.
-	AI_Output (self, other,"DIA_Daron_Innos_10_03");//Jednáme jeho jménem. Vykonáváme spravedlnost dle jeho vùle a káeme jeho slovo.
+	AI_Output (other, self,"DIA_Daron_Innos_15_00");//Ã‚ekni mi nÄ™co o Innosovi.
+	AI_Output (self, other,"DIA_Daron_Innos_10_01");//Innos, nÃ¡Å¡ vÅ¡emocnÃ½ pÃ¡n, je svÄ™tlo a oheÅ•.
+	AI_Output (self, other,"DIA_Daron_Innos_10_02");//Rozhodl se, Å¾e lidÃ© budou jeho nÃ¡strojem, a dal jim magii a zÃ¡kony.
+	AI_Output (self, other,"DIA_Daron_Innos_10_03");//JednÃ¡me jeho jmÃ©nem. VykonÃ¡vÃ¡me spravedlnost dle jeho vÅ¯le a kÃ¡Å¾eme jeho slovo.
 };
 
 // ************************************************************
@@ -302,7 +302,7 @@ INSTANCE DIA_Daron_Kloster(C_INFO)
 	condition	= DIA_Daron_Kloster_Condition;
 	information	= DIA_Daron_Kloster_Info;
 	permanent	= FALSE;
-	description	= "Povêz mi o klášteâe.";
+	description	= "PovÄ™z mi o klÃ¡Å¡teÃ¢e.";
 };                       
 FUNC INT DIA_Daron_Kloster_Condition()
 {	
@@ -316,10 +316,10 @@ FUNC INT DIA_Daron_Kloster_Condition()
 };
 FUNC VOID DIA_Daron_Kloster_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Kloster_15_00");//Povêz mi o klášteâe.
-	AI_Output (self, other,"DIA_Daron_Kloster_10_01");//Uèíme naše studenty všechny formy magie. Ale umêní ohnivıch mágù spoèívá i v nêèem jiném ne jen v tomhle.
-	AI_Output (self, other,"DIA_Daron_Kloster_10_02");//Jsme té zbêhlí v umêní alchymie a ve vytváâení mocnıch run.
-	AI_Output (self, other,"DIA_Daron_Kloster_10_03");//Také dêláme skvêlé víno.
+	AI_Output (other, self,"DIA_Daron_Kloster_15_00");//PovÄ™z mi o klÃ¡Å¡teÃ¢e.
+	AI_Output (self, other,"DIA_Daron_Kloster_10_01");//UÄÃ­me naÅ¡e studenty vÅ¡echny formy magie. Ale umÄ™nÃ­ ohnivÃ½ch mÃ¡gÅ¯ spoÄÃ­vÃ¡ i v nÄ™Äem jinÃ©m neÅ¾ jen v tomhle.
+	AI_Output (self, other,"DIA_Daron_Kloster_10_02");//Jsme tÃ©Å¾ zbÄ™hlÃ­ v umÄ™nÃ­ alchymie a ve vytvÃ¡Ã¢enÃ­ mocnÃ½ch run.
+	AI_Output (self, other,"DIA_Daron_Kloster_10_03");//TakÃ© dÄ™lÃ¡me skvÄ™lÃ© vÃ­no.
 };
 
 // ************************************************************
@@ -332,7 +332,7 @@ INSTANCE DIA_Daron_Stadt(C_INFO)
 	condition	= DIA_Daron_Stadt_Condition;
 	information	= DIA_Daron_Stadt_Info;
 	permanent	= FALSE;
-	description	= "Co dêláš ve mêstê?";
+	description	= "Co dÄ™lÃ¡Å¡ ve mÄ™stÄ™?";
 };                       
 FUNC INT DIA_Daron_Stadt_Condition()
 {	
@@ -343,9 +343,9 @@ FUNC INT DIA_Daron_Stadt_Condition()
 };
 FUNC VOID DIA_Daron_Stadt_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Stadt_15_00");//Co dêláš ve mêstê?
-	AI_Output (self, other,"DIA_Daron_Stadt_10_01");//Vedu jednání s paladiny a jsem nápomocen obèanùm radou - mùu tu tam ztratit slovo.
-	AI_Output (self, other,"DIA_Daron_Stadt_10_02");//Obzvláštê v takovıchto têkıch dobách je naší povinností bıt lidu ku pomoci a starat se o chudé.
+	AI_Output (other, self,"DIA_Daron_Stadt_15_00");//Co dÄ™lÃ¡Å¡ ve mÄ™stÄ™?
+	AI_Output (self, other,"DIA_Daron_Stadt_10_01");//Vedu jednÃ¡nÃ­ s paladiny a jsem nÃ¡pomocen obÄanÅ¯m radou - mÅ¯Å¾u tu tam ztratit slovo.
+	AI_Output (self, other,"DIA_Daron_Stadt_10_02");//ObzvlÃ¡Å¡tÄ™ v takovÃ½chto tÄ™Å¾kÃ½ch dobÃ¡ch je naÅ¡Ã­ povinnostÃ­ bÃ½t lidu ku pomoci a starat se o chudÃ©.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -358,7 +358,7 @@ instance DIA_Addon_Daron_GuildHelp		(C_INFO)
 	condition	 = 	DIA_Addon_Daron_GuildHelp_Condition;
 	information	 = 	DIA_Addon_Daron_GuildHelp_Info;
 
-	description	 = 	"Donesly se mi zvêsti o jakési sošce...";
+	description	 = 	"Donesly se mi zvÄ™sti o jakÃ©si soÅ¡ce...";
 };
 
 func int DIA_Addon_Daron_GuildHelp_Condition ()
@@ -372,62 +372,62 @@ func int DIA_Addon_Daron_GuildHelp_Condition ()
 
 func void DIA_Addon_Daron_GuildHelp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_00"); //Slyšel jsem, e jsi prı ztratil nêjakou sošku.
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_01"); //Vánê? Tak to ti mohl âíct jedinê vodní mág Vatras.
-	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_02"); //Co máš za problém?
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_03"); //Z pevniny poslali do kláštera velmi cennou sošku. Ta se ale na místo urèení nikdy nedostala.
-	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_04"); //Nêkdo napadl loë?
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_05"); //(zahanbenê) Ne. V poâádku dorazila do Khorinidu, kde jsem ji mêl vyzvednout.
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_06"); //Ale kdy jsem ji nesl do kláštera, pâepadla mê tlupa goblinù. Ti mi ji sebrali.
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_07"); //(rozhoâèenê) Nedívej se na mê takhle! My mágové jsme taky jenom lidi, víš?
+	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_00"); //SlyÅ¡el jsem, Å¾e jsi prÃ½ ztratil nÄ™jakou soÅ¡ku.
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_01"); //VÃ¡Å¾nÄ™? Tak to ti mohl Ã¢Ã­ct jedinÄ™ vodnÃ­ mÃ¡g Vatras.
+	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_02"); //Co mÃ¡Å¡ za problÃ©m?
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_03"); //Z pevniny poslali do klÃ¡Å¡tera velmi cennou soÅ¡ku. Ta se ale na mÃ­sto urÄenÃ­ nikdy nedostala.
+	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_04"); //NÄ™kdo napadl loÃ«?
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_05"); //(zahanbenÄ™) Ne. V poÃ¢Ã¡dku dorazila do Khorinidu, kde jsem ji mÄ™l vyzvednout.
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_06"); //Ale kdyÅ¾ jsem ji nesl do klÃ¡Å¡tera, pÃ¢epadla mÄ™ tlupa goblinÅ¯. Ti mi ji sebrali.
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_07"); //(rozhoÃ¢ÄenÄ™) NedÃ­vej se na mÄ™ takhle! My mÃ¡govÃ© jsme taky jenom lidi, vÃ­Å¡?
 	
 	MIS_Addon_Vatras_Go2Daron = LOG_SUCCESS;
 	MIS_Addon_Daron_GetStatue = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Addon_Daron_GuildHelp);
-	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Tvrdíš, e ji teë mají goblini?", DIA_Addon_Daron_GuildHelp_gobbos );
-	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Kde jsi tu sošku ztratil?", DIA_Addon_Daron_GuildHelp_wo );
-	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Copak ses ji nepokusil získat zpátky?", DIA_Addon_Daron_GuildHelp_wiederholen );
+	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "TvrdÃ­Å¡, Å¾e ji teÃ« majÃ­ goblini?", DIA_Addon_Daron_GuildHelp_gobbos );
+	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Kde jsi tu soÅ¡ku ztratil?", DIA_Addon_Daron_GuildHelp_wo );
+	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Copak ses ji nepokusil zÃ­skat zpÃ¡tky?", DIA_Addon_Daron_GuildHelp_wiederholen );
 };
 
 func void DIA_Addon_Daron_GuildHelp_wiederholen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_wiederholen_15_00"); //Copak ses ji nepokusil získat zpátky?
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_wiederholen_10_01"); //Samozâejmê e pokusil! Hledal jsem ji všude monê, ale bez úspêchu.
+	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_wiederholen_15_00"); //Copak ses ji nepokusil zÃ­skat zpÃ¡tky?
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_wiederholen_10_01"); //SamozÃ¢ejmÄ™ Å¾e pokusil! Hledal jsem ji vÅ¡ude moÅ¾nÄ™, ale bez ÃºspÄ™chu.
 };
 
 func void DIA_Addon_Daron_GuildHelp_gobbos ()
 {
-	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_gobbos_15_00"); //Take teë ji mají goblini?
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_gobbos_10_01"); //Ukradli mi ji, a ne jsem se nadál, zmizeli s ní v podrostu.
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_gobbos_10_02"); //U jsem je nikdy nevidêl. Nejspíš si vyhrabali nêjakou díru v zemi.
+	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_gobbos_15_00"); //TakÅ¾e teÃ« ji majÃ­ goblini?
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_gobbos_10_01"); //Ukradli mi ji, a neÅ¾ jsem se nadÃ¡l, zmizeli s nÃ­ v podrostu.
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_gobbos_10_02"); //UÅ¾ jsem je nikdy nevidÄ™l. NejspÃ­Å¡ si vyhrabali nÄ™jakou dÃ­ru v zemi.
 };
 
 func void DIA_Addon_Daron_GuildHelp_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_wo_15_00"); //Kde pâesnê jsi o tu svou sošku pâišel?
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_wo_10_01"); //Na cestê do kláštera, poblí Orlanovy hospody.
+	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_wo_15_00"); //Kde pÃ¢esnÄ™ jsi o tu svou soÅ¡ku pÃ¢iÅ¡el?
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_wo_10_01"); //Na cestÄ™ do klÃ¡Å¡tera, poblÃ­Å¾ Orlanovy hospody.
 
-	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "To mi staèí. Já ti tu sošku najdu.", DIA_Addon_Daron_GuildHelp_auftrag );
+	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "To mi staÄÃ­. JÃ¡ ti tu soÅ¡ku najdu.", DIA_Addon_Daron_GuildHelp_auftrag );
 	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Orlanova hospoda? Kde to je?", DIA_Addon_Daron_GuildHelp_woTaverne );
 };
 
 func void DIA_Addon_Daron_GuildHelp_woTaverne ()
 {
 	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_woTaverne_15_00"); //U Orlanovy hospody? Kde to je?
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_woTaverne_10_01"); //Kdy z mêsta vyjdeš touhletou branou a budeš pokraèovat po cestê, dojdeš k takovému domu na samotê.
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_woTaverne_10_02"); //A to je Orlanova hospoda. U Mrtvé harpyje.
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_woTaverne_10_01"); //KdyÅ¾ z mÄ™sta vyjdeÅ¡ touhletou branou a budeÅ¡ pokraÄovat po cestÄ™, dojdeÅ¡ k takovÃ©mu domu na samotÄ™.
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_woTaverne_10_02"); //A to je Orlanova hospoda. U MrtvÃ© harpyje.
 };
 
 func void DIA_Addon_Daron_GuildHelp_auftrag ()
 {
-	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_auftrag_15_00"); //To mi staèí. Já ti tu sošku najdu.
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_auftrag_10_01"); //Ké tê Innos provází a ochrání tê pâed nebezpeèím, je na tebe za branami mêsta èíhá.
+	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_auftrag_15_00"); //To mi staÄÃ­. JÃ¡ ti tu soÅ¡ku najdu.
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_auftrag_10_01"); //KÃ©Å¾ tÄ™ Innos provÃ¡zÃ­ a ochrÃ¡nÃ­ tÄ™ pÃ¢ed nebezpeÄÃ­m, jeÅ¾ na tebe za branami mÄ™sta ÄÃ­hÃ¡.
 	Info_ClearChoices	(DIA_Addon_Daron_GuildHelp);
 	
 	Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Nêjací drzí goblini obrali Darona. Od té doby Daron pohâešuje cennou sošku, kterou mêl donést do kláštera. Goblini se prı ukrıvají v noâe poblí hospody U Mrtvé harpyje."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"NÄ™jacÃ­ drzÃ­ goblini obrali Darona. Od tÃ© doby Daron pohÃ¢eÅ¡uje cennou soÅ¡ku, kterou mÄ™l donÃ©st do klÃ¡Å¡tera. Goblini se prÃ½ ukrÃ½vajÃ­ v noÃ¢e poblÃ­Å¾ hospody U MrtvÃ© harpyje."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -440,7 +440,7 @@ instance DIA_Addon_Daron_FoundStatue		(C_INFO)
 	condition	 = 	DIA_Addon_Daron_FoundStatue_Condition;
 	information	 = 	DIA_Addon_Daron_FoundStatue_Info;
 
-	description	 = 	"Našel jsem tu tvou sošku.";
+	description	 = 	"NaÅ¡el jsem tu tvou soÅ¡ku.";
 };
 
 func int DIA_Addon_Daron_FoundStatue_Condition ()
@@ -455,17 +455,17 @@ func int DIA_Addon_Daron_FoundStatue_Condition ()
 
 func void DIA_Addon_Daron_FoundStatue_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Daron_FoundStatue_15_00"); //Našel jsem tu tvou sošku.
-	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_01"); //Innos budi pochválen!
-	AI_Output	(other, self, "DIA_Addon_Daron_FoundStatue_15_02"); //Co s ní teë budeš dêlat?
-	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_03"); //Vùbec nic. Pâinesla mi jenom smùlu.
-	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_04"); //Do kláštera ji proto odneseš TY, synku.
+	AI_Output	(other, self, "DIA_Addon_Daron_FoundStatue_15_00"); //NaÅ¡el jsem tu tvou soÅ¡ku.
+	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_01"); //Innos budiÅ¾ pochvÃ¡len!
+	AI_Output	(other, self, "DIA_Addon_Daron_FoundStatue_15_02"); //Co s nÃ­ teÃ« budeÅ¡ dÄ™lat?
+	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_03"); //VÅ¯bec nic. PÃ¢inesla mi jenom smÅ¯lu.
+	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_04"); //Do klÃ¡Å¡tera ji proto odneseÅ¡ TY, synku.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_05"); //Samozâejmê e tê dovnitâ nepustí, pokud se neodhodláš strávit zbytek ivota v klášteâe.
-		AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_06"); //Ale urèitê to rád udêláš, kdy to bude PRO MÊ, e ano?
+		AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_05"); //SamozÃ¢ejmÄ™ Å¾e tÄ™ dovnitÃ¢ nepustÃ­, pokud se neodhodlÃ¡Å¡ strÃ¡vit zbytek Å¾ivota v klÃ¡Å¡teÃ¢e.
+		AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_06"); //Ale urÄitÄ™ to rÃ¡d udÄ™lÃ¡Å¡, kdyÅ¾ to bude PRO MÄ˜, Å¾e ano?
 	};
-	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_07"); //Jdi s Innosem, mùj synu!
+	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_07"); //Jdi s Innosem, mÅ¯j synu!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -478,7 +478,7 @@ instance DIA_Addon_Daron_ReturnedStatue		(C_INFO)
 	condition	 = 	DIA_Addon_Daron_ReturnedStatue_Condition;
 	information	 = 	DIA_Addon_Daron_ReturnedStatue_Info;
 
-	description	 = 	"Donesl jsem tu tvou sošku do kláštera.";
+	description	 = 	"Donesl jsem tu tvou soÅ¡ku do klÃ¡Å¡tera.";
 };
 
 func int DIA_Addon_Daron_ReturnedStatue_Condition ()
@@ -492,9 +492,9 @@ func int DIA_Addon_Daron_ReturnedStatue_Condition ()
 
 func void DIA_Addon_Daron_ReturnedStatue_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Daron_ReturnedStatue_15_00"); //Odnesl jsem tu sošku do kláštera, take u teë mùeš bıt klidnı.
-	AI_Output	(self, other, "DIA_Addon_Daron_ReturnedStatue_10_01"); //To je dobrá zpráva. Ké tê Innos ochraàuje.
-	AI_Output	(self, other, "DIA_Addon_Daron_ReturnedStatue_10_02"); //Tohle si vezmi jako dùkaz mé vdêènosti, synku.
+	AI_Output	(other, self, "DIA_Addon_Daron_ReturnedStatue_15_00"); //Odnesl jsem tu soÅ¡ku do klÃ¡Å¡tera, takÅ¾e uÅ¾ teÃ« mÅ¯Å¾eÅ¡ bÃ½t klidnÃ½.
+	AI_Output	(self, other, "DIA_Addon_Daron_ReturnedStatue_10_01"); //To je dobrÃ¡ zprÃ¡va. KÃ©Å¾ tÄ™ Innos ochraÅ•uje.
+	AI_Output	(self, other, "DIA_Addon_Daron_ReturnedStatue_10_02"); //Tohle si vezmi jako dÅ¯kaz mÃ© vdÄ™Änosti, synku.
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);
 	TOPIC_End_RangerHelpKDF = TRUE;		
@@ -511,7 +511,7 @@ INSTANCE DIA_Daron_arm(C_INFO)
 	condition	= DIA_Daron_arm_Condition;
 	information	= DIA_Daron_arm_Info;
 	permanent	= FALSE;
-	description	= "Já jsem chudı!";
+	description	= "JÃ¡ jsem chudÃ½!";
 };                       
 FUNC INT DIA_Daron_arm_Condition()
 {	
@@ -524,9 +524,9 @@ FUNC INT DIA_Daron_arm_Condition()
 };
 FUNC VOID DIA_Daron_arm_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_arm_15_00");//Já jsem chudı!
-	AI_Output (self, other,"DIA_Daron_arm_10_01");//Vida, jsi bez penêz. ádnı div, v takovéto dobê. Vezmi si tyhle zlaãáky, snad ti budou ku prospêchu.
-	AI_Output (self, other,"DIA_Daron_arm_10_02");//Ale mêl by ses pokusit najít si práci, peníze se k tobê pak jen pohrnou. A pak bys mohl obdarovat Innosovu církev, stejnê jako ona obdarovala tebe.
+	AI_Output (other, self,"DIA_Daron_arm_15_00");//JÃ¡ jsem chudÃ½!
+	AI_Output (self, other,"DIA_Daron_arm_10_01");//Vida, jsi bez penÄ™z. Å½Ã¡dnÃ½ div, v takovÃ©to dobÄ™. Vezmi si tyhle zlaÄƒÃ¡ky, snad ti budou ku prospÄ™chu.
+	AI_Output (self, other,"DIA_Daron_arm_10_02");//Ale mÄ™l by ses pokusit najÃ­t si prÃ¡ci, penÃ­ze se k tobÄ™ pak jen pohrnou. A pak bys mohl obdarovat Innosovu cÃ­rkev, stejnÄ™ jako ona obdarovala tebe.
 	
 	B_GiveInvItems (self, other, ItMi_Gold, 20);
 };
@@ -541,7 +541,7 @@ INSTANCE DIA_Daron_Spende(C_INFO)
 	condition	= DIA_Daron_Spende_Condition;
 	information	= DIA_Daron_Spende_Info;
 	permanent	= TRUE;
-	description	= "Rád bych vênoval nêjakı dar...";
+	description	= "RÃ¡d bych vÄ™noval nÄ™jakÃ½ dar...";
 };      
 //-------------------------------------
 var int DIA_Daron_Spende_permanent;
@@ -559,22 +559,22 @@ FUNC INT DIA_Daron_Spende_Condition()
 FUNC VOID DIA_Daron_Spende_Info()
 {	
 	
-	AI_Output (other, self,"DIA_Daron_Spende_15_00");//Rád bych vênoval nêjakı dar.
+	AI_Output (other, self,"DIA_Daron_Spende_15_00");//RÃ¡d bych vÄ™noval nÄ™jakÃ½ dar.
 	
 	Info_ClearChoices (DIA_Daron_Spende);
 	
 	if (Daron_Spende < 1000)
 	{
-		Info_AddChoice 	(DIA_Daron_Spende,"Ale nemám dost zlata... (ZPÊT)",DIA_Daron_Spende_BACK);
+		Info_AddChoice 	(DIA_Daron_Spende,"Ale nemÃ¡m dost zlata... (ZPÄ˜T)",DIA_Daron_Spende_BACK);
 		
-		Info_AddChoice 	(DIA_Daron_Spende,"(50 zlaãákù)",DIA_Daron_Spende_50);
-		Info_AddChoice 	(DIA_Daron_Spende,"(100 zlaãákù)",DIA_Daron_Spende_100);
-		Info_AddChoice 	(DIA_Daron_Spende,"(200 zlaãákù)",DIA_Daron_Spende_200);
+		Info_AddChoice 	(DIA_Daron_Spende,"(50 zlaÄƒÃ¡kÅ¯)",DIA_Daron_Spende_50);
+		Info_AddChoice 	(DIA_Daron_Spende,"(100 zlaÄƒÃ¡kÅ¯)",DIA_Daron_Spende_100);
+		Info_AddChoice 	(DIA_Daron_Spende,"(200 zlaÄƒÃ¡kÅ¯)",DIA_Daron_Spende_200);
 	 }
 	 else 
 	 {
-	 	AI_Output (self, other,"DIA_Daron_Spende_10_01");//Celkem jsi mi daroval více ne 1000 zlatıch.
-	 	AI_Output (self, other,"DIA_Daron_Spende_10_02");//Poehnání Pána Innose bude neustále s tebou.
+	 	AI_Output (self, other,"DIA_Daron_Spende_10_01");//Celkem jsi mi daroval vÃ­ce neÅ¾ 1000 zlatÃ½ch.
+	 	AI_Output (self, other,"DIA_Daron_Spende_10_02");//PoÅ¾ehnÃ¡nÃ­ PÃ¡na Innose bude neustÃ¡le s tebou.
 	 	
 	 	DIA_Daron_Spende_permanent = TRUE;	
 		B_DaronSegen ();
@@ -582,8 +582,8 @@ FUNC VOID DIA_Daron_Spende_Info()
 };
 FUNC VOID DIA_Daron_Spende_BACK()
 {
-	AI_Output (other, self,"DIA_Daron_Spende_BACK_15_00"); //Ale nepâinesl jsem dost penêz.
-	AI_Output (self, other,"DIA_Daron_Spende_BACK_10_01"); //To nevadí, mùj synu. Mùeš dát pozdêji, kolik jen budeš chtít.
+	AI_Output (other, self,"DIA_Daron_Spende_BACK_15_00"); //Ale nepÃ¢inesl jsem dost penÄ™z.
+	AI_Output (self, other,"DIA_Daron_Spende_BACK_10_01"); //To nevadÃ­, mÅ¯j synu. MÅ¯Å¾eÅ¡ dÃ¡t pozdÄ™ji, kolik jen budeÅ¡ chtÃ­t.
 	
 	Info_ClearChoices (DIA_Daron_Spende);
 };	
@@ -594,18 +594,18 @@ FUNC VOID DIA_Daron_Spende_50()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 50)
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_50_10_00");//ehnám ti ve jménu Innosovê. On je svêtlo a spravedlnost.
+		AI_Output (self, other,"DIA_Daron_Spende_50_10_00");//Å½ehnÃ¡m ti ve jmÃ©nu InnosovÄ™. On je svÄ™tlo a spravedlnost.
 		Daron_Spende = (Daron_Spende + 50);
 		B_DaronSegen ();
 		Daron_Segen = TRUE;
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, mág ohnê, mi dal své poehnání.");
+			B_LogEntry (TOPIC_Thorben,"Daron, mÃ¡g ohnÄ™, mi dal svÃ© poÅ¾ehnÃ¡nÃ­.");
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_50_10_01");//Svùj dar mùeš dát kdykoliv pozdêji, a u sebe budeš mít dost penêz.
+		AI_Output (self, other,"DIA_Daron_Spende_50_10_01");//SvÅ¯j dar mÅ¯Å¾eÅ¡ dÃ¡t kdykoliv pozdÄ™ji, aÅ¾ u sebe budeÅ¡ mÃ­t dost penÄ™z.
 	};
 	Info_ClearChoices (DIA_Daron_Spende);
 };
@@ -613,19 +613,19 @@ FUNC VOID DIA_Daron_Spende_100()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 100)
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_100_10_00");//Innosi, jsi svêtlo, je záâí na cestu spravedlivıch.
-		AI_Output (self, other,"DIA_Daron_Spende_100_10_01");//Tvım jménem ehnám tomuto mui. Nechã na nêj záâí tvé svêtlo.
+		AI_Output (self, other,"DIA_Daron_Spende_100_10_00");//Innosi, jsi svÄ™tlo, jeÅ¾ zÃ¡Ã¢Ã­ na cestu spravedlivÃ½ch.
+		AI_Output (self, other,"DIA_Daron_Spende_100_10_01");//TvÃ½m jmÃ©nem Å¾ehnÃ¡m tomuto muÅ¾i. NechÄƒ na nÄ™j zÃ¡Ã¢Ã­ tvÃ© svÄ™tlo.
 		Daron_Spende = (Daron_Spende + 100);
 		B_DaronSegen ();
 		Daron_Segen = TRUE;
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, mág ohnê, mi dal své poehnání.");
+			B_LogEntry (TOPIC_Thorben,"Daron, mÃ¡g ohnÄ™, mi dal svÃ© poÅ¾ehnÃ¡nÃ­.");
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_100_10_02");//Pán âíká - chceš-li se modlit, otevâi svou duši. A chceš-li vênovat dar, pâines jej s sebou.
+		AI_Output (self, other,"DIA_Daron_Spende_100_10_02");//PÃ¡n Ã¢Ã­kÃ¡ - chceÅ¡-li se modlit, otevÃ¢i svou duÅ¡i. A chceÅ¡-li vÄ™novat dar, pÃ¢ines jej s sebou.
 	};
 	Info_ClearChoices (DIA_Daron_Spende);
 };
@@ -633,19 +633,19 @@ FUNC VOID DIA_Daron_Spende_200()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 200)
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_200_10_00");//Innos, poehnej tomuto mui. Nechã na nêj záâí tvé svêtlo.
-		AI_Output (self, other,"DIA_Daron_Spende_200_10_01");//Dej mu sílu chovat se spravedlivê.
+		AI_Output (self, other,"DIA_Daron_Spende_200_10_00");//Innos, poÅ¾ehnej tomuto muÅ¾i. NechÄƒ na nÄ™j zÃ¡Ã¢Ã­ tvÃ© svÄ™tlo.
+		AI_Output (self, other,"DIA_Daron_Spende_200_10_01");//Dej mu sÃ­lu chovat se spravedlivÄ™.
 		Daron_Spende = (Daron_Spende + 200);
 		B_DaronSegen ();
 		Daron_Segen = TRUE;
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, mág ohnê, mi dal své poehnání.");
+			B_LogEntry (TOPIC_Thorben,"Daron, mÃ¡g ohnÄ™, mi dal svÃ© poÅ¾ehnÃ¡nÃ­.");
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_200_10_02");//Pokud bys chtêl darovat tolik penêz, mêl bys je s sebou také pâinést.
+		AI_Output (self, other,"DIA_Daron_Spende_200_10_02");//Pokud bys chtÄ™l darovat tolik penÄ™z, mÄ™l bys je s sebou takÃ© pÃ¢inÃ©st.
 	};
 	Info_ClearChoices (DIA_Daron_Spende);
 };

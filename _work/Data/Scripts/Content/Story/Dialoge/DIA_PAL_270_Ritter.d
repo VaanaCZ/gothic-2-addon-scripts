@@ -43,17 +43,17 @@ func void DIA_Ritter_OUT_Info ()
 {
 	if (DIA_Ritter_OUT_NoPerm == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //P‚iöel jsi z Khorinidu, ûe? Aû bude po vöem, vr·tÌm se tam.
+		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //P√¢i≈°el jsi z Khorinidu, ≈æe? A≈æ bude po v≈°em, vr√°t√≠m se tam.
 		DIA_Ritter_OUT_NoPerm = TRUE;
 	};
 	
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Ritter_OUT_06_01"); //Je to obrovsk· ˙leva, sire, ûe tÍ m·me po boku.
+			AI_Output			(self, other, "DIA_Ritter_OUT_06_01"); //Je to obrovsk√° √∫leva, sire, ≈æe tƒô m√°me po boku.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Ritter_OUT_06_02"); //Zvl·dneme to. DopravÌme rudu do Khorinidu a budou n·s oslavovat!
+			AI_Output			(self, other, "DIA_Ritter_OUT_06_02"); //Zvl√°dneme to. Doprav√≠me rudu do Khorinidu a budou n√°s oslavovat!
 		};
 };
 

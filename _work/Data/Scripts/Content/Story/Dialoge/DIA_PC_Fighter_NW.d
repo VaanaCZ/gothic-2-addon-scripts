@@ -31,7 +31,7 @@ INSTANCE DIA_GornNW_Hallo (C_INFO)
 	condition	= DIA_GornNW_Hallo_Condition;
 	information	= DIA_GornNW_Hallo_Info;
 	permanent	= FALSE;
-	description = "Jsi v po‚·dku?";
+	description = "Jsi v po√¢√°dku?";
 };                       
 FUNC INT DIA_GornNW_Hallo_Condition()
 {
@@ -39,16 +39,16 @@ FUNC INT DIA_GornNW_Hallo_Condition()
 };
 FUNC VOID DIA_GornNW_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_Add_15_00"); //Jsi v po‚·dku?
+	AI_Output (other,self ,"DIA_GornNW_Add_15_00"); //Jsi v po√¢√°dku?
 	if (MIS_RescueGorn == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_GornNW_Add_12_01"); //Zachr·nils mi krk, chlape.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_01"); //Zachr√°nils mi krk, chlape.
 		AI_Output (self ,other,"DIA_GornNW_Add_12_02"); //Nikdy na to nezapomenu.
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_GornNW_Add_12_03"); //Milten mÍ z toho dostal.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_03"); //Milten mƒô z toho dostal.
 		AI_Output (self ,other,"DIA_GornNW_Add_12_04"); //Nikdy na to nezapomenu.
 	};
 };
@@ -64,7 +64,7 @@ INSTANCE DIA_GornNW_WhatNext (C_INFO)
 	condition	= DIA_GornNW_WhatNext_Condition;
 	information	= DIA_GornNW_WhatNext_Info;
 	permanent	= TRUE;
-	description = "Co chceö dÍlat?";
+	description = "Co chce≈° dƒôlat?";
 };                       
 FUNC INT DIA_GornNW_WhatNext_Condition()
 {
@@ -72,9 +72,9 @@ FUNC INT DIA_GornNW_WhatNext_Condition()
 };
 FUNC VOID DIA_GornNW_WhatNext_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_Add_15_05"); //Co budeö dÍlat teÎ?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_06"); //MyslÌm, ûe se ze vöeho nejd‚Ìv po‚·dnÍ nadl·bnu.
+	AI_Output (other,self ,"DIA_GornNW_Add_15_05"); //Co bude≈° dƒôlat te√´?
+	AI_Output (self ,other,"DIA_GornNW_Add_12_06"); //Mysl√≠m, ≈æe se ze v≈°eho nejd√¢√≠v po√¢√°dnƒô nadl√°bnu.
 	AI_Output (other,self ,"DIA_GornNW_Add_15_07"); //A pak?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_08"); //Kdo vÌ... Moûn· se vr·tÌm do tÍûa‚skÈ kolonie.
-	AI_Output (self ,other,"DIA_GornNW_Add_12_09"); //NÍkdo by mÍl d·vat pozor na sk‚ety - jinak se objevÌ u naöeho prahu bez jedinÈho varov·nÌ.
+	AI_Output (self ,other,"DIA_GornNW_Add_12_08"); //Kdo v√≠... Mo≈æn√° se vr√°t√≠m do tƒô≈æa√¢sk√© kolonie.
+	AI_Output (self ,other,"DIA_GornNW_Add_12_09"); //Nƒôkdo by mƒôl d√°vat pozor na sk√¢ety - jinak se objev√≠ u na≈°eho prahu bez jedin√©ho varov√°n√≠.
 };

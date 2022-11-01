@@ -47,7 +47,7 @@ INSTANCE DIA_Canthar_EXIT(C_INFO)
 	condition	= DIA_Canthar_EXIT_Condition;
 	information	= DIA_Canthar_EXIT_Info;
 	permanent	= TRUE;
-	description = "MusÌm jÌt!";
+	description = "Mus√≠m j√≠t!";
 };                       
 
 FUNC INT DIA_Canthar_EXIT_Condition()
@@ -57,7 +57,7 @@ FUNC INT DIA_Canthar_EXIT_Condition()
  
 FUNC VOID DIA_Canthar_EXIT_Info()
 {
-	AI_Output (other, self,"DIA_Canthar_EXIT_15_00"); //MusÌm jÌt!
+	AI_Output (other, self,"DIA_Canthar_EXIT_15_00"); //Mus√≠m j√≠t!
 	AI_Output (self, other,"DIA_Canthar_EXIT_09_01"); //Jak je libo.
 	AI_StopProcessInfos	(self);
 };
@@ -90,31 +90,31 @@ FUNC VOID DIA_Canthar_PersonalCRIMES_Info()
 	// ------ Spieler hat mich besiegt ------
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_00"); //To od tebe bylo opravdu hloupÈ, ûe jsi mÍ napadl.
+		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_00"); //To od tebe bylo opravdu hloup√©, ≈æe jsi mƒô napadl.
 	}
 		
 	// ------ ich habe Spieler besiegt ODER keiner wurde besiegt ------
 	else // FIGHT_WON oder FIGHT_CANCEL
 	{
-		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_01"); //(posmÍönÍ) To sis myslel, ûe mÍ p‚em˘ûeö tak snadno?
+		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_01"); //(posmƒô≈°nƒô) To sis myslel, ≈æe mƒô p√¢em≈Ø≈æe≈° tak snadno?
 	};
 	
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_02"); //BuÎ mi to nÍjak vynahradÌö, nebo se budu dÌvat na to, jak ho‚ce litujeö sv˝ch Ëin˘!
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_15_03"); //A co p‚esnÍ myslÌö?
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_02"); //Bu√´ mi to nƒôjak vynahrad√≠≈°, nebo se budu d√≠vat na to, jak ho√¢ce lituje≈° sv√Ωch ƒçin≈Ø!
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_15_03"); //A co p√¢esnƒô mysl√≠≈°?
 	B_Say_Gold(self,other, 100);
 	
 	Info_ClearChoices	(DIA_Canthar_PersonalCRIMES);
-	Info_AddChoice		(DIA_Canthar_PersonalCRIMES, "NemÍl jsem toho tolik!"	,DIA_Canthar_PersonalCRIMES_NotEnough);
+	Info_AddChoice		(DIA_Canthar_PersonalCRIMES, "Nemƒôl jsem toho tolik!"	,DIA_Canthar_PersonalCRIMES_NotEnough);
 	if (Npc_HasItems (other, itmi_gold) >= 100)
 	{
-		Info_AddChoice		(DIA_Canthar_PersonalCRIMES, "Tady je zlato - zapomeneme na tu vÍc!",DIA_Canthar_PersonalCRIMES_Pay);
+		Info_AddChoice		(DIA_Canthar_PersonalCRIMES, "Tady je zlato - zapomeneme na tu vƒôc!",DIA_Canthar_PersonalCRIMES_Pay);
 	};
 };
 
 func void DIA_Canthar_PersonalCRIMES_Pay()
 {
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_Pay_15_00"); //Tady je zlato - zapomeneme na tu vÍc!
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_Pay_09_01"); //To je od tebe hodnÍ rozumnÈ!
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_Pay_15_00"); //Tady je zlato - zapomeneme na tu vƒôc!
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_Pay_09_01"); //To je od tebe hodnƒô rozumn√©!
 	
 	// ------ AIVARs resetten! ------
 	self.aivar[AIV_LastFightComment] = TRUE;
@@ -124,8 +124,8 @@ func void DIA_Canthar_PersonalCRIMES_Pay()
 
 func void DIA_Canthar_PersonalCRIMES_NotEnough()
 {
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_NotEnough_15_00"); //NemÍl jsem toho tolik!
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_NotEnough_09_01"); //Tak proË pl˝tv·ö m˝m Ëasem?
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_NotEnough_15_00"); //Nemƒôl jsem toho tolik!
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_NotEnough_09_01"); //Tak proƒç pl√Ωtv√°≈° m√Ωm ƒçasem?
 	
 	AI_StopProcessInfos(self);
 };
@@ -157,15 +157,15 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 {	
 	var C_Item itm; itm = Npc_GetEquippedArmor(other);
 	
-	// ------ OHNE R¸stung ------
+	// ------ OHNE R√ºstung ------
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_00"); //Tak kohopak to tu m·me?
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_01"); //Jsi na cestÍ do mÍsta, nem·m pravdu?
-		AI_Output	(other, self,"DIA_Canthar_Hallo_15_02"); //Moûn·.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_03"); //Hm! (odfrkne) Vypad·ö jako uprchlÌk! Vöichni uprchlÌci majÌ namÌ‚eno do mÍsta.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_04"); //Dokonce bys mohl b˝t b˝val˝m vÍznÍm z hornickÈ kolonie.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_05"); //(kvapnÍ) Je mi jedno, odkud jdeö. Ale vÍ‚Ìm, ûe bych pro tebe mÍl zajÌmavou nabÌdku.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_00"); //Tak kohopak to tu m√°me?
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_01"); //Jsi na cestƒô do mƒôsta, nem√°m pravdu?
+		AI_Output	(other, self,"DIA_Canthar_Hallo_15_02"); //Mo≈æn√°.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_03"); //Hm! (odfrkne) Vypad√°≈° jako uprchl√≠k! V≈°ichni uprchl√≠ci maj√≠ nam√≠√¢eno do mƒôsta.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_04"); //Dokonce bys mohl b√Ωt b√Ωval√Ωm vƒôznƒôm z hornick√© kolonie.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_05"); //(kvapnƒô) Je mi jedno, odkud jde≈°. Ale vƒô√¢√≠m, ≈æe bych pro tebe mƒôl zaj√≠mavou nab√≠dku.
 		
 		Canthar_GotMe = TRUE;
 	}
@@ -174,33 +174,33 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 	else if (Hlp_IsItem (itm, ItAr_Bau_L)) 
 	|| 		(Hlp_IsItem (itm, ItAr_Bau_M))
 	{
-		AI_Output (self, other,"DIA_Canthar_HelloArmor_09_06");	//Jak jde pr·ce, rolnÌku?
+		AI_Output (self, other,"DIA_Canthar_HelloArmor_09_06");	//Jak jde pr√°ce, roln√≠ku?
 			
 		Info_ClearChoices	(DIA_Canthar_Hallo);
-		Info_AddChoice		(DIA_Canthar_Hallo, "Vypad·m snad jako farm·‚?" 	,DIA_Canthar_Hallo_NoBauer);
-		Info_AddChoice		(DIA_Canthar_Hallo, "Nemohu si stÍûovat."		,DIA_Canthar_Hallo_Bauer);
+		Info_AddChoice		(DIA_Canthar_Hallo, "Vypad√°m snad jako farm√°√¢?" 	,DIA_Canthar_Hallo_NoBauer);
+		Info_AddChoice		(DIA_Canthar_Hallo, "Nemohu si stƒô≈æovat."		,DIA_Canthar_Hallo_Bauer);
 	}
 	
-	// ------ alle anderen R¸stungen (hˆchst unwahrscheinlich) ------
+	// ------ alle anderen R√ºstungen (h√∂chst unwahrscheinlich) ------
 	else 
 	{
-		AI_Output (self, other,"DIA_Canthar_Hallo_09_07"); //Co pro tebe mohu udÍlat?
+		AI_Output (self, other,"DIA_Canthar_Hallo_09_07"); //Co pro tebe mohu udƒôlat?
 	};
 };
 
 func void DIA_Canthar_Hallo_Bauer()
 {
-	AI_Output	(other, self,"DIA_Canthar_Hallo_Bauer_15_00");	//Nem˘ûu si stÍûovat.
-	AI_Output	(self, other,"DIA_Canthar_Hallo_Bauer_09_01");	//M˘ûu pro tebe nÍco udÍlat?
+	AI_Output	(other, self,"DIA_Canthar_Hallo_Bauer_15_00");	//Nem≈Ø≈æu si stƒô≈æovat.
+	AI_Output	(self, other,"DIA_Canthar_Hallo_Bauer_09_01");	//M≈Ø≈æu pro tebe nƒôco udƒôlat?
 
 	Info_ClearChoices	(DIA_Canthar_Hallo);
 };
 
 func void DIA_Canthar_Hallo_NoBauer()
 {
-	AI_Output	(other, self,"DIA_Canthar_Hallo_NoBauer_15_00"); //Vypad·m snad jako rolnÌk?
-	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_01"); //P‚esnÍ jako rolnÌk. Ale nemluvÌö tak!
-	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_02"); //(hloubavÍ) Jestli nejsem ˙plnÍ mimo, tak bych pro tebe mÍl zajÌmavou nabÌdku.
+	AI_Output	(other, self,"DIA_Canthar_Hallo_NoBauer_15_00"); //Vypad√°m snad jako roln√≠k?
+	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_01"); //P√¢esnƒô jako roln√≠k. Ale nemluv√≠≈° tak!
+	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_02"); //(hloubavƒô) Jestli nejsem √∫plnƒô mimo, tak bych pro tebe mƒôl zaj√≠mavou nab√≠dku.
 	
 	Canthar_GotMe = TRUE;
 	
@@ -219,7 +219,7 @@ INSTANCE DIA_Canthar_WhatOffer (C_INFO)
 	condition	= DIA_Canthar_WhatOffer_Condition;
 	information	= DIA_Canthar_WhatOffer_Info;
 	permanent	= FALSE;
-	description	= "Co mi m˘ûeö nabÌdnout?";
+	description	= "Co mi m≈Ø≈æe≈° nab√≠dnout?";
 };                       
 
 FUNC INT DIA_Canthar_WhatOffer_Condition()
@@ -232,90 +232,90 @@ FUNC INT DIA_Canthar_WhatOffer_Condition()
  
 FUNC VOID DIA_Canthar_WhatOffer_Info()
 {	
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_15_00"); //Co je to za nabÌdku?
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_15_00"); //Co je to za nab√≠dku?
 	
 	if (Canthar_GotME == TRUE)
 	{
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		{	
-			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_01"); //Tak, jak si to ty p‚edstavujeö, tÍ str·ûe do mÍsta nikdy nepustÌ.
+			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_01"); //Tak, jak si to ty p√¢edstavuje≈°, tƒô str√°≈æe do mƒôsta nikdy nepust√≠.
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_02"); //(ironicky) Jestli budeö v oËÌch str·ûÌ tak "p‚esvÍdËiv˝" jako v tÍch m˝ch, nikdy tÍ do mÍsta nepustÌ.
+			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_02"); //(ironicky) Jestli bude≈° v oƒç√≠ch str√°≈æ√≠ tak "p√¢esvƒôdƒçiv√Ω" jako v tƒôch m√Ωch, nikdy tƒô do mƒôsta nepust√≠.
 		};
 		
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_03"); //M˘ûu ti pomoct dostat se do mÍsta.
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_04"); //M·m tady kousek papÌru. S kr·lovskou peËetÌ a podpisem mÌstodrûÌcÌho. Propustku.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_03"); //M≈Ø≈æu ti pomoct dostat se do mƒôsta.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_04"); //M√°m tady kousek pap√≠ru. S kr√°lovskou peƒçet√≠ a podpisem m√≠stodr≈æ√≠c√≠ho. Propustku.
 				
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		{	
-			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_05"); //S tÌmhle kouskem papÌru v kapse m˘ûeö vypadat tak otrhanÍ, jak se ti zachce, a str·ûe tÍ nechajÌ na pokoji.
+			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_05"); //S t√≠mhle kouskem pap√≠ru v kapse m≈Ø≈æe≈° vypadat tak otrhanƒô, jak se ti zachce, a str√°≈æe tƒô nechaj√≠ na pokoji.
 		};
 		
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_06"); //M·ö z·jem?
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_06"); //M√°≈° z√°jem?
 		
 		Info_ClearChoices	(DIA_Canthar_WhatOffer);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "Ne! Nech si ten papÌr!",DIA_Canthar_WhatOffer_No);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "Co za tu propustku chceö?",DIA_Canthar_WhatOffer_Price);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "Jak se dostaneö do mÍsta TY?" 			,DIA_Canthar_WhatOffer_HowYouIn);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "V tom musÌ b˝t nÍjak˝ h·Ëek..."	,DIA_Canthar_WhatOffer_Strings);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "Ne! Nech si ten pap√≠r!",DIA_Canthar_WhatOffer_No);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "Co za tu propustku chce≈°?",DIA_Canthar_WhatOffer_Price);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "Jak se dostane≈° do mƒôsta TY?" 			,DIA_Canthar_WhatOffer_HowYouIn);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "V tom mus√≠ b√Ωt nƒôjak√Ω h√°ƒçek..."	,DIA_Canthar_WhatOffer_Strings);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_07"); //Jsem obchodnÌ cestujÌcÌ. Prod·v·m od kaûdÈho trochu.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_07"); //Jsem obchodn√≠ cestuj√≠c√≠. Prod√°v√°m od ka≈æd√©ho trochu.
 	};
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Canthar obchoduje se vöemoûn˝mi zbranÍmi."); 
+	B_LogEntry (Topic_CityTrader,"Canthar obchoduje se v≈°emo≈æn√Ωmi zbranƒômi."); 
 };
 
 func void DIA_Canthar_WhatOffer_Strings()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Strings_15_00"); //V tom musÌ b˝t nÍjak˝ h·Ëek.
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Strings_09_01"); //(p‚ehr·v·) Ne. é·dn˝ h·Ëek. Jenom mi budeö dluûit laskavost.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Strings_15_00"); //V tom mus√≠ b√Ωt nƒôjak√Ω h√°ƒçek.
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Strings_09_01"); //(p√¢ehr√°v√°) Ne. ≈Ω√°dn√Ω h√°ƒçek. Jenom mi bude≈° dlu≈æit laskavost.
 };
 
 func void DIA_Canthar_WhatOffer_HowYouIn()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_HowYouIn_15_00");  //Jak se dostaneö do mÍsta TY?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_HowYouIn_09_01"); //Str·ûe uû mÍ znajÌ. ProstÍ jim ‚eknu, ûe jsem svoji propustku ztratil.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_HowYouIn_15_00");  //Jak se dostane≈° do mƒôsta TY?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_HowYouIn_09_01"); //Str√°≈æe u≈æ mƒô znaj√≠. Prostƒô jim √¢eknu, ≈æe jsem svoji propustku ztratil.
 };
 
 func void DIA_Canthar_WhatOffer_Price()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_00"); //Co za tu propustku chceö?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_01"); //(spokojenÍ) V D L JSEM, ûe ty jsi ten prav˝!
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_02"); //Poslouchej. TeÎ ode mÍ dostaneö tu propustku.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_00"); //Co za tu propustku chce≈°?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_01"); //(spokojenƒô) VƒòDƒòL JSEM, ≈æe ty jsi ten prav√Ω!
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_02"); //Poslouchej. Te√´ ode mƒô dostane≈° tu propustku.
 	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_03"); //Jen tak?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_04"); //Jen tak. ALE: Aû tÍ ve mÍstÍ potk·m, m·m u tebe laskavost.
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_04"); //Jen tak. ALE: A≈æ tƒô ve mƒôstƒô potk√°m, m√°m u tebe laskavost.
 	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_05"); //Dohodnuto?
 		
-	Info_AddChoice (DIA_Canthar_WhatOffer, "JasnÍ. Dej mi ten papÌr.",DIA_Canthar_WhatOffer_Ok);
+	Info_AddChoice (DIA_Canthar_WhatOffer, "Jasnƒô. Dej mi ten pap√≠r.",DIA_Canthar_WhatOffer_Ok);
 };
 
 func void DIA_Canthar_WhatOffer_Ok()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Ok_15_00"); //JasnÍ. Dej mi ten papÌr.
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_01"); //Tady. BuÎ na to opatrn˝, je to velmi cennÈ.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Ok_15_00"); //Jasnƒô. Dej mi ten pap√≠r.
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_01"); //Tady. Bu√´ na to opatrn√Ω, je to velmi cenn√©.
 	CreateInvItems (self,ItWr_Passierschein, 1);
 	B_GiveInvItems (self, other, ItWr_Passierschein, 1);
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_02"); //JeötÍ jedna vÍc: Ani nepomysli na to, ûe bys poruöil slovo!
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_03"); //Jako obchodnÌk se ve mÍstÍ tÍöÌm velkÈ v·ûnosti - nedopadlo by to pro tebe dob‚e, vÍ‚ mi!
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_02"); //Je≈°tƒô jedna vƒôc: Ani nepomysli na to, ≈æe bys poru≈°il slovo!
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_03"); //Jako obchodn√≠k se ve mƒôstƒô tƒô≈°√≠m velk√© v√°≈ænosti - nedopadlo by to pro tebe dob√¢e, vƒô√¢ mi!
 	
 	Canthar_Gefallen = TRUE;	
 	Info_ClearChoices	(DIA_Canthar_WhatOffer);
 	
 	Log_CreateTopic (TOPIC_City,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_City,LOG_RUNNING);
-	B_LogEntry (TOPIC_City,"Od obchodnÌka Canthara jsem dostal propustku, dÌky nÌû se dostanu mÍsta. DluûÌm mu za to protisluûbu.");
+	B_LogEntry (TOPIC_City,"Od obchodn√≠ka Canthara jsem dostal propustku, d√≠ky n√≠≈æ se dostanu mƒôsta. Dlu≈æ√≠m mu za to protislu≈æbu.");
 
 };
 
 func void DIA_Canthar_WhatOffer_No()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_No_15_00"); //Ne! Nech si ten papÌr!
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_01"); //Hm. Vypad· to, ûe jsem se v tobÍ spletl, co?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_02"); //Dobr·. Chceö jeötÍ nÍco? M˘ûu ti uk·zat svÈ zboûÌ?
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_No_15_00"); //Ne! Nech si ten pap√≠r!
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_01"); //Hm. Vypad√° to, ≈æe jsem se v tobƒô spletl, co?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_02"); //Dobr√°. Chce≈° je≈°tƒô nƒôco? M≈Ø≈æu ti uk√°zat sv√© zbo≈æ√≠?
 	
 	Info_ClearChoices	(DIA_Canthar_WhatOffer);
 };
@@ -332,7 +332,7 @@ instance DIA_Canthar_TRADE		(C_INFO)
 	condition	= DIA_Canthar_TRADE_Condition;
 	information	= DIA_Canthar_TRADE_Info;
 	permanent	= TRUE;
-	description	= "Ukaû mi svÈ zboûÌ!";
+	description	= "Uka≈æ mi sv√© zbo≈æ√≠!";
 	trade		= TRUE;
 };
 
@@ -346,7 +346,7 @@ func int DIA_Canthar_TRADE_Condition ()
 
 func void DIA_Canthar_TRADE_Info ()
 {
-	AI_Output (other, self, "DIA_Canthar_TRADE_15_00"); //Ukaû mi svÈ zboûÌ!
+	AI_Output (other, self, "DIA_Canthar_TRADE_15_00"); //Uka≈æ mi sv√© zbo≈æ√≠!
 	
 	B_GiveTradeInv (self);
 	
@@ -366,7 +366,7 @@ func void DIA_Canthar_TRADE_Info ()
 // ###########################################
 /*
 		-->
-		Aber ein H‰ndler namnes Canthar hat das erz‰hlt. 
+		Aber ein H√§ndler namnes Canthar hat das erz√§hlt. 
 	*/
 
 ///////////////////////////////////////////////////////////////////////
@@ -395,44 +395,44 @@ func void DIA_Canthar_PAYPRICEINCITY_Info ()
 {
 	if (Canthar_Gefallen == TRUE)
 	{
-		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_00"); //JeötÍ st·le mi dluûÌö laskavost. P‚iöel Ëas splatit dluh.
+		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_00"); //Je≈°tƒô st√°le mi dlu≈æ√≠≈° laskavost. P√¢i≈°el ƒças splatit dluh.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_01"); //Hej, ty. M·m pro tebe ˙kol.
+		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_01"); //Hej, ty. M√°m pro tebe √∫kol.
 	};
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_02"); //Co chceö?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_03"); //Chci zp·tky sv˘j st·nek na trûiöti. Sarah mi ho ukradla.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_04"); //A uû to mÌsto zabÌr· dost dlouho. Chci, aby mi ho vr·tila.
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_05"); //A co j· s tÌm?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_06"); //D·m ti dopis, co jÌ strËÌö do kapsy.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_07"); //Pak p˘jdeö za lordem Andrem a ‚ekneö mu, ûe Sarah prod·v· zbranÍ Onarovi.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_08"); //SkonËÌ ve vÍzenÌ, ty shr·bneö penÌze a j· dostanu zp·tky sv˘j st·nek.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_09"); //M·ö na to dva dny.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_02"); //Co chce≈°?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_03"); //Chci zp√°tky sv≈Øj st√°nek na tr≈æi≈°ti. Sarah mi ho ukradla.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_04"); //A u≈æ to m√≠sto zab√≠r√° dost dlouho. Chci, aby mi ho vr√°tila.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_05"); //A co j√° s t√≠m?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_06"); //D√°m ti dopis, co j√≠ strƒç√≠≈° do kapsy.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_07"); //Pak p≈Øjde≈° za lordem Andrem a √¢ekne≈° mu, ≈æe Sarah prod√°v√° zbranƒô Onarovi.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_08"); //Skonƒç√≠ ve vƒôzen√≠, ty shr√°bne≈° pen√≠ze a j√° dostanu zp√°tky sv≈Øj st√°nek.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_09"); //M√°≈° na to dva dny.
 	
 	if (Canthar_Gefallen == FALSE)
 	{
-		AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_10"); //Co z toho budu mÌt?
-		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_11"); //Jakmile budu mÌt zp·tky st·nek, dostaneö ode mÍ zbra‡ - zatracenÍ dobrou zbra‡.
+		AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_10"); //Co z toho budu m√≠t?
+		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_11"); //Jakmile budu m√≠t zp√°tky st√°nek, dostane≈° ode mƒô zbra≈ï - zatracenƒô dobrou zbra≈ï.
 	};
 	
 	Info_ClearChoices (DIA_Canthar_PAYPRICEINCITY);
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Ne, nechci s tÌm nic mÌt.", DIA_Canthar_PAYPRICEINCITY_Nein );
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "No tak dob‚e, udÍl·m to.", DIA_Canthar_PAYPRICEINCITY_Ok );
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Co se stane, kdyû odmÌtnu?", DIA_Canthar_PAYPRICEINCITY_If );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Ne, nechci s t√≠m nic m√≠t.", DIA_Canthar_PAYPRICEINCITY_Nein );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "No tak dob√¢e, udƒôl√°m to.", DIA_Canthar_PAYPRICEINCITY_Ok );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Co se stane, kdy≈æ odm√≠tnu?", DIA_Canthar_PAYPRICEINCITY_If );
 };
 
 func void DIA_Canthar_PAYPRICEINCITY_if ()
 {
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_if_15_00"); //Co se stane, kdyû odmÌtnu?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_01"); //To by od tebe bylo opravdu hloupÈ. VÌm, ûe jsi b˝val˝ trestanec.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_02"); //Pokud se to roznese, m˘ûe to oöklivÍ ublÌûit tvÈ povÍsti ve mÍstÍ.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_if_15_00"); //Co se stane, kdy≈æ odm√≠tnu?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_01"); //To by od tebe bylo opravdu hloup√©. V√≠m, ≈æe jsi b√Ωval√Ω trestanec.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_02"); //Pokud se to roznese, m≈Ø≈æe to o≈°klivƒô ubl√≠≈æit tv√© povƒôsti ve mƒôstƒô.
 };
 
 func void DIA_Canthar_PAYPRICEINCITY_Nein ()
 {
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Nein_15_00"); //Ne, nechci s tÌm nic mÌt.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Nein_09_01"); //To bylo öpatnÈ rozhodnutÌ, chlapËe. JeötÍ si spolu promluvÌme.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Nein_15_00"); //Ne, nechci s t√≠m nic m√≠t.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Nein_09_01"); //To bylo ≈°patn√© rozhodnut√≠, chlapƒçe. Je≈°tƒô si spolu promluv√≠me.
 	
 	MIS_Canthars_KomproBrief = LOG_OBSOLETE;
 	B_CheckLog ();
@@ -442,15 +442,15 @@ func void DIA_Canthar_PAYPRICEINCITY_Nein ()
 
 func void DIA_Canthar_PAYPRICEINCITY_Ok ()
 {
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_00"); //Dobr·, vypad· to, ûe nem·m na vybranou.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_01"); //Chytrej kluk. Tady m·ö ten dopis.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_00"); //Dobr√°, vypad√° to, ≈æe nem√°m na vybranou.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_01"); //Chytrej kluk. Tady m√°≈° ten dopis.
 	
 	CreateInvItems (self, ItWr_Canthars_KomproBrief_MIS, 1);
 	B_GiveInvItems (self, other, ItWr_Canthars_KomproBrief_MIS, 1);
 	
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_02"); //Jak jÌ ten dopis m·m podstrËit?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_03"); //Nech ji, a„ ti uk·ûe svÈ zboûÌ -  a mezitÌm k nÌ ten dopis schovej.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_04"); //A nezapome‡, ûe m·m ve mÍstÍ znaËn˝ vliv, takûe û·dnÈ hlouposti.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_02"); //Jak j√≠ ten dopis m√°m podstrƒçit?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_03"); //Nech ji, aƒÉ ti uk√°≈æe sv√© zbo≈æ√≠ -  a mezit√≠m k n√≠ ten dopis schovej.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_04"); //A nezapome≈ï, ≈æe m√°m ve mƒôstƒô znaƒçn√Ω vliv, tak≈æe ≈æ√°dn√© hlouposti.
 	
 	MIS_Canthars_KomproBrief = LOG_RUNNING;
 	MIS_Canthars_KomproBrief_Day = Wld_GetDay(); 
@@ -460,13 +460,13 @@ func void DIA_Canthar_PAYPRICEINCITY_Ok ()
 	
 	if (Canthar_Gefallen == TRUE)
 	{
-		B_LogEntry (TOPIC_Canthar,"Canthar po mnÍ nynÌ chce tu laskavost, kterou mu st·le dluûÌm.");
+		B_LogEntry (TOPIC_Canthar,"Canthar po mnƒô nyn√≠ chce tu laskavost, kterou mu st√°le dlu≈æ√≠m.");
 	}
 	else
 	{
-		B_LogEntry (TOPIC_Canthar,"Canthar mi za onu laskavost slÌbil pÍknou zbra‡.");
+		B_LogEntry (TOPIC_Canthar,"Canthar mi za onu laskavost sl√≠bil pƒôknou zbra≈ï.");
 	};
-	B_LogEntry (TOPIC_Canthar,"M·m obchodnici Sarah nen·padnÍ podstrËit dopis, kter˝ budÌ zd·nÌ, ûe prod·v· zbranÍ Onarovi. Pak m·m zajÌt za lordem Andreem a udat ji.");
+	B_LogEntry (TOPIC_Canthar,"M√°m obchodnici Sarah nen√°padnƒô podstrƒçit dopis, kter√Ω bud√≠ zd√°n√≠, ≈æe prod√°v√° zbranƒô Onarovi. Pak m√°m zaj√≠t za lordem Andreem a udat ji.");
 	
 	Info_ClearChoices (DIA_Canthar_PAYPRICEINCITY);
 	
@@ -496,19 +496,19 @@ func void DIA_Canthar_SARAHERLEDIGT_Info ()
 	{
 		if (MIS_Canthars_KomproBrief_Day <= (Wld_GetDay()+ 2))
 		{
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_00"); //Nem·ö co na pr·ci?
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_01"); //Nejd‚Ìv ten dopis podstrË Sarah, pak zajdi za Andrem a obvi‡ ji.
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_02"); //UdÍlej to a nepokouöej se mÍ podvÈst. Litoval bys toho.
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_00"); //Nem√°≈° co na pr√°ci?
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_01"); //Nejd√¢√≠v ten dopis podstrƒç Sarah, pak zajdi za Andrem a obvi≈ï ji.
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_02"); //Udƒôlej to a nepokou≈°ej se mƒô podv√©st. Litoval bys toho.
 		}
 		else  
 		{
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_03"); //UtÌk· ti Ëas. ZaËni s tÌm uû!
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_03"); //Ut√≠k√° ti ƒças. Zaƒçni s t√≠m u≈æ!
 		};
 	}
 	else
 	{
-			AI_Output (other, self, "DIA_Canthar_SARAHERLEDIGT_15_04"); //Sarah je mrtv·.
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_05"); //Opravdu? V˝bornÍ. Tak to jsi splnil polovinu naöeho malÈho pl·nu.
+			AI_Output (other, self, "DIA_Canthar_SARAHERLEDIGT_15_04"); //Sarah je mrtv√°.
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_05"); //Opravdu? V√Ωbornƒô. Tak to jsi splnil polovinu na≈°eho mal√©ho pl√°nu.
 			
 			MIS_Canthars_KomproBrief = LOG_SUCCESS;
 			B_GivePlayerXP (XP_Ambient);
@@ -538,8 +538,8 @@ func int DIA_Canthar_Success_Condition ()
 };
 func void DIA_Canthar_Success_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_Success_09_00"); //Dobr· pr·ce. Sarah je tam, kde si zaslouûÌ.
-	AI_Output (self, other, "DIA_Canthar_Success_09_01"); //P‚evezmu jejÌ zboûÌ, takûe jestli pot‚ebujeö zbra‡, stav se u mÍ.
+	AI_Output (self, other, "DIA_Canthar_Success_09_00"); //Dobr√° pr√°ce. Sarah je tam, kde si zaslou≈æ√≠.
+	AI_Output (self, other, "DIA_Canthar_Success_09_01"); //P√¢evezmu jej√≠ zbo≈æ√≠, tak≈æe jestli pot√¢ebuje≈° zbra≈ï, stav se u mƒô.
 	
 	if (Kapitel == 1)
 	{
@@ -561,8 +561,8 @@ func void DIA_Canthar_Success_Info ()
 	
 	if (Canthar_Gefallen == FALSE)
 	{
-		AI_Output (other, self, "DIA_Canthar_Success_15_02"); //SlÌbils mi zbra‡.
-		AI_Output (self, other, "DIA_Canthar_Success_09_03"); //Spr·vnÍ. Tady, tahle zbra‡ je mistrovsk˝m kouskem kov·‚skÈho umÍnÌ.
+		AI_Output (other, self, "DIA_Canthar_Success_15_02"); //Sl√≠bils mi zbra≈ï.
+		AI_Output (self, other, "DIA_Canthar_Success_09_03"); //Spr√°vnƒô. Tady, tahle zbra≈ï je mistrovsk√Ωm kouskem kov√°√¢sk√©ho umƒôn√≠.
 				
 		B_GiveInvItems (self, other, ItMW_Schiffsaxt,1);
 	};
@@ -601,21 +601,21 @@ func void DIA_Canthar_Again_Info ()
 	
 	if (MIS_Canthars_KomproBrief  == LOG_FAILED)
 	{
-		AI_Output (other,self , "DIA_Canthar_Again_15_01"); //Jak to, ûe nejsi ve vÍzenÌ?
-		AI_Output (self,other, "DIA_Canthar_Again_09_02"); //Byl jsem propuötÍn. Jak uû jsem ti ‚Ìkal - m·m ve mÍstÍ velk˝ vliv.
+		AI_Output (other,self , "DIA_Canthar_Again_15_01"); //Jak to, ≈æe nejsi ve vƒôzen√≠?
+		AI_Output (self,other, "DIA_Canthar_Again_09_02"); //Byl jsem propu≈°tƒôn. Jak u≈æ jsem ti √¢√≠kal - m√°m ve mƒôstƒô velk√Ω vliv.
 	}
 	else if (MIS_Canthars_KomproBrief == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Canthar_Again_09_03"); //A mezitÌm jsem se se Sarah dohodl s·m. M˘ûeö na tu vÍc s dopisem zapomenout.
+		AI_Output (self, other, "DIA_Canthar_Again_09_03"); //A mezit√≠m jsem se se Sarah dohodl s√°m. M≈Ø≈æe≈° na tu vƒôc s dopisem zapomenout.
 		
 	}
 	else if (MIS_Canthars_KomproBrief == LOG_OBSOLETE)
 	{
-		AI_Output (self, other, "DIA_Canthar_Again_09_04"); //Copak jsem tÍ nevaroval? Bylo by lÌp, kdybys udÍlal, co jsem ti ‚ekl.
+		AI_Output (self, other, "DIA_Canthar_Again_09_04"); //Copak jsem tƒô nevaroval? Bylo by l√≠p, kdybys udƒôlal, co jsem ti √¢ekl.
 	};
-	AI_Output (self, other, "DIA_Canthar_Again_09_05"); //TeÎ se mezi obchodnÌky povÌd·, ûe jsi trestanec.
-	AI_Output (self, other, "DIA_Canthar_Again_09_06"); //Politov·nÌhodn· vÍc - teÎ tady na trûiöti nedostaneö ani kousek chleba.
-	AI_Output (self, other, "DIA_Canthar_Again_09_07"); //Samoz‚ejmÍ bych tu vÍc mohl zase urovnat, ‚eknÍme...
+	AI_Output (self, other, "DIA_Canthar_Again_09_05"); //Te√´ se mezi obchodn√≠ky pov√≠d√°, ≈æe jsi trestanec.
+	AI_Output (self, other, "DIA_Canthar_Again_09_06"); //Politov√°n√≠hodn√° vƒôc - te√´ tady na tr≈æi≈°ti nedostane≈° ani kousek chleba.
+	AI_Output (self, other, "DIA_Canthar_Again_09_07"); //Samoz√¢ejmƒô bych tu vƒôc mohl zase urovnat, √¢eknƒôme...
 	B_Say_Gold 	(self, other, Canthar_Gold);
 	
 	AI_StopProcessInfos (self);
@@ -646,24 +646,24 @@ func int DIA_Canthar_Pay_Condition ()
 };
 func void DIA_Canthar_Pay_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_Pay_09_00"); //ZaplatÌö?
+	AI_Output (self, other, "DIA_Canthar_Pay_09_00"); //Zaplat√≠≈°?
 	
 	Info_ClearChoices (DIA_Canthar_Pay);
 	
 	if (Npc_HasItems (other, ItmI_Gold) >= Canthar_Gold)
 	{
-		Info_AddChoice (DIA_Canthar_Pay,"No tak dob‚e, zaplatÌm...",DIA_Canthar_Pay_Ja);
+		Info_AddChoice (DIA_Canthar_Pay,"No tak dob√¢e, zaplat√≠m...",DIA_Canthar_Pay_Ja);
 	};
-	Info_AddChoice (DIA_Canthar_Pay,"Nem·m u sebe dost penÍz...",DIA_Canthar_Pay_Nein);
-	Info_AddChoice (DIA_Canthar_Pay,"Kolik ûe to bylo?",DIA_Canthar_Pay_Wieviel);
+	Info_AddChoice (DIA_Canthar_Pay,"Nem√°m u sebe dost penƒôz...",DIA_Canthar_Pay_Nein);
+	Info_AddChoice (DIA_Canthar_Pay,"Kolik ≈æe to bylo?",DIA_Canthar_Pay_Wieviel);
 };
 
 
 FUNC VOID DIA_Canthar_Pay_Ja()
 {
-	AI_Output (other, self, "DIA_Canthar_Pay_Ja_15_00"); //Dobr·, zaplatÌm. Ned·v·ö mi jinou moûnost.
+	AI_Output (other, self, "DIA_Canthar_Pay_Ja_15_00"); //Dobr√°, zaplat√≠m. Ned√°v√°≈° mi jinou mo≈ænost.
 	B_GiveInvItems (other, self, Itmi_Gold,Canthar_Gold);
-	AI_Output (self, other, "DIA_Canthar_Pay_Ja_09_01"); //(smÍje se) V˝bornÍ. Tak to bych se mÍl postarat o to, aby tv· reputace mezi obchodnÌky zase stoupla.
+	AI_Output (self, other, "DIA_Canthar_Pay_Ja_09_01"); //(smƒôje se) V√Ωbornƒô. Tak to bych se mƒôl postarat o to, aby tv√° reputace mezi obchodn√≠ky zase stoupla.
 	
 	Canthar_Sperre = FALSE;
 	Canthar_Pay = TRUE; 
@@ -671,14 +671,14 @@ FUNC VOID DIA_Canthar_Pay_Ja()
 };
 FUNC VOID DIA_Canthar_Pay_Nein()
 {
-	AI_Output (other, self, "DIA_Canthar_Pay_Nein_15_00"); //Nem·m u sebe dost penÍz.
-	AI_Output (self, other, "DIA_Canthar_Pay_Nein_09_01"); //Tak si je seûe‡.
+	AI_Output (other, self, "DIA_Canthar_Pay_Nein_15_00"); //Nem√°m u sebe dost penƒôz.
+	AI_Output (self, other, "DIA_Canthar_Pay_Nein_09_01"); //Tak si je se≈æe≈ï.
 	Info_ClearChoices (DIA_Canthar_Pay);
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Canthar_Pay_Wieviel()
 {
-	AI_Output (other, self, "DIA_Canthar_Pay_Wieviel_15_00"); //Kolik ûe to bylo?
+	AI_Output (other, self, "DIA_Canthar_Pay_Wieviel_15_00"); //Kolik ≈æe to bylo?
 	B_Say_Gold 	(self, other, Canthar_Gold);
 	
 };
@@ -705,8 +705,8 @@ func int DIA_Canthar_CANTHARANGEPISST_Condition ()
 };
 func void DIA_Canthar_CANTHARANGEPISST_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_00"); //Varoval jsem tÍ, ale tys neposlouchal. Probereme to pozdÍji.
-	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_01"); //A teÎ se ztra„, chci si odpoËinout.
+	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_00"); //Varoval jsem tƒô, ale tys neposlouchal. Probereme to pozdƒôji.
+	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_01"); //A te√´ se ztraƒÉ, chci si odpoƒçinout.
 	
 	AI_StopProcessInfos (self);	
 };
@@ -720,7 +720,7 @@ instance DIA_Canthar_MinenAnteil		(C_INFO)
 	condition	 = 	DIA_Canthar_MinenAnteil_Condition;
 	information	 = 	DIA_Canthar_MinenAnteil_Info;
 
-	description	 = 	"Prod·v·ö neleg·lnÌ d˘lnÌ akcie!";
+	description	 = 	"Prod√°v√°≈° neleg√°ln√≠ d≈Øln√≠ akcie!";
 };
 
 func int DIA_Canthar_MinenAnteil_Condition ()
@@ -735,8 +735,8 @@ func int DIA_Canthar_MinenAnteil_Condition ()
 
 func void DIA_Canthar_MinenAnteil_Info ()
 {
-	AI_Output (other, self, "DIA_Canthar_Minenanteil_15_00"); //Prod·v·ö neleg·lnÌ d˘lnÌ akcie!
-	AI_Output (self, other, "DIA_Canthar_Minenanteil_09_01"); //No a? Co teda! Kdybych to nedÍlal j·, chytne se toho nÍkdo jin˝.
+	AI_Output (other, self, "DIA_Canthar_Minenanteil_15_00"); //Prod√°v√°≈° neleg√°ln√≠ d≈Øln√≠ akcie!
+	AI_Output (self, other, "DIA_Canthar_Minenanteil_09_01"); //No a? Co teda! Kdybych to nedƒôlal j√°, chytne se toho nƒôkdo jin√Ω.
 	B_GivePlayerXP (XP_Ambient);
 };
 

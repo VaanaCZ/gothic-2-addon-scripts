@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Fire_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //Oko ztratilo svou moc a ty se nedoèkáš pâíštího dne.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //Oko ztratilo svou moc a ty se nedoÄkÃ¡Å¡ pÃ¢Ã­Å¡tÃ­ho dne.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -61,16 +61,16 @@ FUNC INT DIA_Dragon_Fire_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //Prostê nemùu uvêâit, e opravdu ještê existují lidé, kteâí jsou ochotni obêtovat svùj ivot jen proto, aby na vlastní oèi vidêli draka.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //ProstÄ™ nemÅ¯Å¾u uvÄ™Ã¢it, Å¾e opravdu jeÅ¡tÄ™ existujÃ­ lidÃ©, kteÃ¢Ã­ jsou ochotni obÄ™tovat svÅ¯j Å¾ivot jen proto, aby na vlastnÃ­ oÄi vidÄ™li draka.
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Jsi docela vıâeènı - na takovou neskladnou obludu.
+		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Jsi docela vÃ½Ã¢eÄnÃ½ - na takovou neskladnou obludu.
 	};
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Nepâišel jsem se obdivovat tvému zevnêjšku. Mám ponêkud radikálnêjší úmysly, je mi líto.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Nechceš tím âíct, e se mi hodláš postavit?
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ha, ha, ha. Zlomím ti ten tvùj hubenı krèek.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Ne tak rychle, pâíteli. Mám u sebe Innosovo oko. Nemùeš odolat mé moci. Odpovêz na mé otázky, nebo okusíš nesnesitelná muka.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(âve) Arrgh. Tak se pochlub têmi tvımi otázkami, dokud mùeš. Tvá moc nebude mít dlouhého trvání.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //NepÃ¢iÅ¡el jsem se obdivovat tvÃ©mu zevnÄ™jÅ¡ku. MÃ¡m ponÄ™kud radikÃ¡lnÄ™jÅ¡Ã­ Ãºmysly, je mi lÃ­to.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //NechceÅ¡ tÃ­m Ã¢Ã­ct, Å¾e se mi hodlÃ¡Å¡ postavit?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ha, ha, ha. ZlomÃ­m ti ten tvÅ¯j hubenÃ½ krÄek.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Ne tak rychle, pÃ¢Ã­teli. MÃ¡m u sebe Innosovo oko. NemÅ¯Å¾eÅ¡ odolat mÃ© moci. OdpovÄ™z na mÃ© otÃ¡zky, nebo okusÃ­Å¡ nesnesitelnÃ¡ muka.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(Ã¢ve) Arrgh. Tak se pochlub tÄ™mi tvÃ½mi otÃ¡zkami, dokud mÅ¯Å¾eÅ¡. TvÃ¡ moc nebude mÃ­t dlouhÃ©ho trvÃ¡nÃ­.
 
 };
 
@@ -98,8 +98,8 @@ func int DIA_Dragon_Fire_WerBistDu_Condition ()
 func void DIA_Dragon_Fire_WerBistDu_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Jmenuju se Feomathar, a to je vše, co se o mnê dozvíš.
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Jakmile uniknu úèinkùm kouzla Oka, uiješ si áru poâádného plamene.
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Jmenuju se Feomathar, a to je vÅ¡e, co se o mnÄ™ dozvÃ­Å¡.
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Jakmile uniknu ÃºÄinkÅ¯m kouzla Oka, uÅ¾ijeÅ¡ si Å¾Ã¡ru poÃ¢Ã¡dnÃ©ho plamene.
 
 };
 
@@ -112,7 +112,7 @@ instance DIA_Dragon_Fire_HORT		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_HORT_Condition;
 	information	 = 	DIA_Dragon_Fire_HORT_Info;
 
-	description	 = 	"Tak kde máš ty své poklady?";
+	description	 = 	"Tak kde mÃ¡Å¡ ty svÃ© poklady?";
 };
 
 func int DIA_Dragon_Fire_HORT_Condition ()
@@ -125,9 +125,9 @@ func int DIA_Dragon_Fire_HORT_Condition ()
 
 func void DIA_Dragon_Fire_HORT_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //Kadı drak má skrıš, ve které schovává své poklady. Take, kde ta skrıš je?
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //Na místê, o kterém si budeš moci nechat jen zdát, jakmile se zbavím âetêzù toho Oka.
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Vzal jsem svùj poklad nahoru na havé útesy, které lze nazvat všelijak, jenom ne pâístupnımi neokâídlenému èlovíèkovi, jako jsi ty.
+	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //KaÅ¾dÃ½ drak mÃ¡ skrÃ½Å¡, ve kterÃ© schovÃ¡vÃ¡ svÃ© poklady. TakÅ¾e, kde ta skrÃ½Å¡ je?
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //Na mÃ­stÄ™, o kterÃ©m si budeÅ¡ moci nechat jen zdÃ¡t, jakmile se zbavÃ­m Ã¢etÄ™zÅ¯ toho Oka.
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Vzal jsem svÅ¯j poklad nahoru na Å¾havÃ© Ãºtesy, kterÃ© lze nazvat vÅ¡elijak, jenom ne pÃ¢Ã­stupnÃ½mi neokÃ¢Ã­dlenÃ©mu ÄlovÃ­Äkovi, jako jsi ty.
 
 };
 

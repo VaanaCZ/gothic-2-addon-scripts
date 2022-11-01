@@ -76,7 +76,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Dead_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Bloodwyn_Dead_04_00");//Hele, jak ses sem dostal?
 	AI_Output (other, self, "DIA_Addon_Bloodwyn_Dead_15_01");//Vchodem.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Dead_04_02");//Fakt vtipn˝. NESN¡äÕM vtipy.
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Dead_04_02");//Fakt vtipn√Ω. NESN√Å≈†√çM vtipy.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -86,23 +86,23 @@ FUNC VOID Bloodwyn_Choices_1()
 {
 	Info_ClearChoices (DIA_Addon_Bloodwyn_Wait);
 	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,PRINT_ADDON_ENOUGHTALK,DIA_Addon_Bloodwyn_Wait_FIGHT);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"A j· myslel, ûe jsem tÍ uû jednou dostal.",DIA_Addon_Bloodwyn_Wait_GOOD1);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Vöecko jednou konËÌ.",DIA_Addon_Bloodwyn_Wait_BAD1);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"A j√° myslel, ≈æe jsem tƒô u≈æ jednou dostal.",DIA_Addon_Bloodwyn_Wait_GOOD1);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"V≈°ecko jednou konƒç√≠.",DIA_Addon_Bloodwyn_Wait_BAD1);
 };
 FUNC VOID Bloodwyn_Choices_2() 
 {
 	
 	Info_ClearChoices (DIA_Addon_Bloodwyn_Wait);
 	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,PRINT_ADDON_ENOUGHTALK,DIA_Addon_Bloodwyn_Wait_FIGHT);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"A kdo si myslÌö, ûe zniËil bariÈru?",DIA_Addon_Bloodwyn_Wait_GOOD2);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Ty a spousta dalöÌch chlap˘.",DIA_Addon_Bloodwyn_Wait_BAD2);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"A kdo si mysl√≠≈°, ≈æe zniƒçil bari√©ru?",DIA_Addon_Bloodwyn_Wait_GOOD2);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Ty a spousta dal≈°√≠ch chlap≈Ø.",DIA_Addon_Bloodwyn_Wait_BAD2);
 };
 FUNC VOID Bloodwyn_Choices_3() 
 {
 	Info_ClearChoices (DIA_Addon_Bloodwyn_Wait);
 	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,PRINT_ADDON_ENOUGHTALK,DIA_Addon_Bloodwyn_Wait_FIGHT);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"OËividnÍ si nem˘ûe vybÌrat.",DIA_Addon_Bloodwyn_Wait_GOOD3);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Jo, to byla jeho nejvÍtöÌ chyba.",DIA_Addon_Bloodwyn_Wait_BAD3);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Oƒçividnƒô si nem≈Ø≈æe vyb√≠rat.",DIA_Addon_Bloodwyn_Wait_GOOD3);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Jo, to byla jeho nejvƒôt≈°√≠ chyba.",DIA_Addon_Bloodwyn_Wait_BAD3);
 };
 //---------------------------------------------------------------------
 //	Info Wait
@@ -126,33 +126,33 @@ FUNC INT DIA_Addon_Bloodwyn_Wait_Condition()
 };
 FUNC VOID DIA_Addon_Bloodwyn_Wait_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_04_00");//Tys pobil ty d˘lnÌ Ëervy? No dob‚e, o zbytek se postar·m s·m. No tak, na co Ëek·ö? Koukej, kde nechal tesa‚ dÌru!
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_15_01");//PoËkej.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_04_02");//Ty jeötÍ nejseö pryË?
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_04_00");//Tys pobil ty d≈Øln√≠ ƒçervy? No dob√¢e, o zbytek se postar√°m s√°m. No tak, na co ƒçek√°≈°? Koukej, kde nechal tesa√¢ d√≠ru!
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_15_01");//Poƒçkej.
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_04_02");//Ty je≈°tƒô nejse≈° pryƒç?
 
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_15_03");//JeötÍ si musÌme nÍco vyjasnit.
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_15_03");//Je≈°tƒô si mus√≠me nƒôco vyjasnit.
 	
 	Info_ClearChoices (DIA_Addon_Bloodwyn_Wait);
 	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,PRINT_ADDON_ENOUGHTALK,DIA_Addon_Bloodwyn_Wait_FIGHT);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Hled·m Havrana.",DIA_Addon_Bloodwyn_Wait_Raven);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Hled√°m Havrana.",DIA_Addon_Bloodwyn_Wait_Raven);
 };
 FUNC VOID DIA_Addon_Bloodwyn_Wait_Raven()
 {
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_00");//Hled·m Havrana.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_01");//Fakt? A proË si myslÌö, ûe by s tebou Havran chtÍl mluvit... moment, TY seö... seö to TY??
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_02");//Tak tebe celou tu dobu hled·m. Co tady dÍl·ö? Dyk m·ö bejt d·vno mrtvej!
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_03");//Tak tohle mi lidi ‚ÌkajÌ po‚·d.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_04");//Ti tupci to zpackali, ale p‚ese mÍ se nedostaneö. Tentokr·t si to s tebou vy‚ÌdÌm!
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_05");//Jak uû jsem ‚ek ñ hled·m Havrana, tebe nepot‚ebuju.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_06");//Zabiju tÍ ñ zatÌm jsem p‚eûil kaûdou bitvu!
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_00");//Hled√°m Havrana.
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_01");//Fakt? A proƒç si mysl√≠≈°, ≈æe by s tebou Havran chtƒôl mluvit... moment, TY se≈°... se≈° to TY??
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_02");//Tak tebe celou tu dobu hled√°m. Co tady dƒôl√°≈°? Dyk m√°≈° bejt d√°vno mrtvej!
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_03");//Tak tohle mi lidi √¢√≠kaj√≠ po√¢√°d.
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_04");//Ti tupci to zpackali, ale p√¢ese mƒô se nedostane≈°. Tentokr√°t si to s tebou vy√¢√≠d√≠m!
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_05");//Jak u≈æ jsem √¢ek ‚Äì hled√°m Havrana, tebe nepot√¢ebuju.
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_06");//Zabiju tƒô ‚Äì zat√≠m jsem p√¢e≈æil ka≈ædou bitvu!
 	
 	Bloodwyn_Choices_1() ;
 	
 }; 
 FUNC VOID DIA_Addon_Bloodwyn_Wait_FIGHT()
 {
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_FIGHT_15_00");//Dost ‚eËÌ. PojÎme bojovat.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_FIGHT_04_01");//(vÌtÍznÍ) StejnÍ uû jdeö pozdÍ! Pr·vÍ teÎ Havran otevÌr· chr·m! Hahahaha ñ chcÌpni, gr·zle!
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_FIGHT_15_00");//Dost √¢eƒç√≠. Poj√´me bojovat.
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_FIGHT_04_01");//(v√≠tƒôznƒô) Stejnƒô u≈æ jde≈° pozdƒô! Pr√°vƒô te√´ Havran otev√≠r√° chr√°m! Hahahaha ‚Äì chc√≠pni, gr√°zle!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -160,11 +160,11 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_FIGHT()
 
 FUNC VOID Bloodwyn_Lach()
 {
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Lach_04_00");//HAHAHA ñ stejnÍ tÍ zabiju!
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Lach_04_00");//HAHAHA ‚Äì stejnƒô tƒô zabiju!
 };
 FUNC VOID Bloodwyn_Wut()
 {
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wut_04_00");//A····! Ty mizernej pse!
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wut_04_00");//A√°√°√°√°! Ty mizernej pse!
 	
 	self.attribute[ATR_STRENGTH]	  = self.attribute[ATR_STRENGTH] 		-  5;
 	self.attribute[ATR_HITPOINTS]	  = self.attribute[ATR_HITPOINTS] 		-  25;
@@ -172,16 +172,16 @@ FUNC VOID Bloodwyn_Wut()
 };
 FUNC VOID Bloodwyn_Next_1()
 {
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_SayChoice_2_04_00");//J· na rozdÌl od tebe p‚eûil v˝buch bariÈry bez ökr·bnutÌ!
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_SayChoice_2_04_00");//J√° na rozd√≠l od tebe p√¢e≈æil v√Ωbuch bari√©ry bez ≈°kr√°bnut√≠!
 };
 FUNC VOID Bloodwyn_Next_2()
 {
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_SayChoice_3_04_00");//MÍ neporazÌö, jsem Havran˘v nejlepöÌ k·moö! Jeho prav· ruka!
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_SayChoice_3_04_00");//Mƒô neporaz√≠≈°, jsem Havran≈Øv nejlep≈°√≠ k√°mo≈°! Jeho prav√° ruka!
 };
 //------------------------------------------------------------------------------
 FUNC VOID DIA_Addon_Bloodwyn_Wait_GOOD1()
 {
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_GOOD1_15_00");//A j· myslel, jsem tÍ dostal.
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_GOOD1_15_00");//A j√° myslel, jsem tƒô dostal.
 	Bloodwyn_Wut();
 	Bloodwyn_Next_1();
 	
@@ -190,7 +190,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_GOOD1()
 
 FUNC VOID DIA_Addon_Bloodwyn_Wait_BAD1()
 {
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_BAD1_15_00");//Vöecko jednou konËÌ.
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_BAD1_15_00");//V≈°ecko jednou konƒç√≠.
 	Bloodwyn_Lach();
 	Bloodwyn_Next_1();
 	
@@ -200,7 +200,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_BAD1()
 //------------------------------------------------------------------------------
 FUNC VOID DIA_Addon_Bloodwyn_Wait_GOOD2()
 {
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_GOOD2_15_00");//A kdo si myslÌö, ûe zniËil bariÈru?
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_GOOD2_15_00");//A kdo si mysl√≠≈°, ≈æe zniƒçil bari√©ru?
 	Bloodwyn_Wut();
 	Bloodwyn_Next_2();
 	
@@ -210,7 +210,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_GOOD2()
 
 FUNC VOID DIA_Addon_Bloodwyn_Wait_BAD2()
 {
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_BAD2_15_00");//Ty a taky spousta dalöÌch chlap˘.
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_BAD2_15_00");//Ty a taky spousta dal≈°√≠ch chlap≈Ø.
 	Bloodwyn_Lach();
 	Bloodwyn_Next_2();
 	
@@ -221,7 +221,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_BAD2()
 FUNC VOID DIA_Addon_Bloodwyn_Wait_GOOD3()
 {
 
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_GOOD3_15_00");//OËividnÍ nemÍl moc na v˝bÍr.
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_GOOD3_15_00");//Oƒçividnƒô nemƒôl moc na v√Ωbƒôr.
 	Bloodwyn_Wut();
 	Info_ClearChoices (DIA_Addon_Bloodwyn_Wait);
 	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,PRINT_ADDON_ENOUGHTALK,DIA_Addon_Bloodwyn_Wait_FIGHT);
@@ -230,7 +230,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_GOOD3()
 FUNC VOID DIA_Addon_Bloodwyn_Wait_BAD3()
 {
 
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_BAD3_15_00");//Jo, to byla jeho nejvÍtöÌ chyba.
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_BAD3_15_00");//Jo, to byla jeho nejvƒôt≈°√≠ chyba.
 	Bloodwyn_Wut();
 	Info_ClearChoices (DIA_Addon_Bloodwyn_Wait);
 	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,PRINT_ADDON_ENOUGHTALK,DIA_Addon_Bloodwyn_Wait_FIGHT);

@@ -32,7 +32,7 @@ instance DIA_Kervo_WASIST		(C_INFO)
 	condition	 = 	DIA_Kervo_WASIST_Condition;
 	information	 = 	DIA_Kervo_WASIST_Info;
 
-	description	 = 	"Co se dêje?";
+	description	 = 	"Co se dÄ™je?";
 };
 
 func int DIA_Kervo_WASIST_Condition ()
@@ -43,10 +43,10 @@ func int DIA_Kervo_WASIST_Condition ()
 func void DIA_Kervo_WASIST_Info ()
 {
 	AI_Output			(other, self, "DIA_Kervo_WASIST_15_00"); //Co je s tebou?
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_01"); //Ty se ptáš? Jen se kolem sebe podívej.
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_02"); //Ty zatracenı èíhavci u zabrali celou âeku.
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_03"); //Nejdâív byli jen dva. Ale od vèerejška u jsem jich potkal minimálnê pêt.
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_04"); //Nemám ani tušení, jak se odsud dostat.
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_01"); //Ty se ptÃ¡Å¡? Jen se kolem sebe podÃ­vej.
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_02"); //Ty zatracenÃ½ ÄÃ­havci uÅ¾ zabrali celou Ã¢eku.
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_03"); //NejdÃ¢Ã­v byli jen dva. Ale od vÄerejÅ¡ka uÅ¾ jsem jich potkal minimÃ¡lnÄ™ pÄ™t.
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_04"); //NemÃ¡m ani tuÅ¡enÃ­, jak se odsud dostat.
 };
 
 
@@ -60,7 +60,7 @@ instance DIA_Kervo_HILFE		(C_INFO)
 	condition	 = 	DIA_Kervo_HILFE_Condition;
 	information	 = 	DIA_Kervo_HILFE_Info;
 
-	description	 = 	"Zkoušel ses dostat pâes prùsmyk?";
+	description	 = 	"ZkouÅ¡el ses dostat pÃ¢es prÅ¯smyk?";
 };
 
 func int DIA_Kervo_HILFE_Condition ()
@@ -72,51 +72,51 @@ func int DIA_Kervo_HILFE_Condition ()
 };
 func void DIA_Kervo_HILFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Kervo_HILFE_15_00"); //Zkoušel ses dostat pâes prùsmyk?
-	AI_Output			(self, other, "DIA_Kervo_HILFE_13_01"); //Vypadám snad jako magor? Dokud tam budou ty bestie, nedostane mê tam ani dvacet vojákù. Nesnáším je.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_13_02"); //(úplnê sklíèenê) Jenom je ucítím a u mê polévá studenı pot. A z toho jejich neustálıho huhlání mi tuhne krev v ilách.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_13_03"); //Jestli tak touíš po tom, nechat si od nich stáhnout kùi zaiva, tak bê rovnou tam.
+	AI_Output			(other, self, "DIA_Kervo_HILFE_15_00"); //ZkouÅ¡el ses dostat pÃ¢es prÅ¯smyk?
+	AI_Output			(self, other, "DIA_Kervo_HILFE_13_01"); //VypadÃ¡m snad jako magor? Dokud tam budou ty bestie, nedostane mÄ™ tam ani dvacet vojÃ¡kÅ¯. NesnÃ¡Å¡Ã­m je.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_13_02"); //(ÃºplnÄ™ sklÃ­ÄenÄ™) Jenom je ucÃ­tÃ­m a uÅ¾ mÄ™ polÃ©vÃ¡ studenÃ½ pot. A z toho jejich neustÃ¡lÃ½ho huhlÃ¡nÃ­ mi tuhne krev v Å¾ilÃ¡ch.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_13_03"); //Jestli tak touÅ¾Ã­Å¡ po tom, nechat si od nich stÃ¡hnout kÅ¯Å¾i zaÅ¾iva, tak bÄ™Å¾ rovnou tam.
 
 	Info_ClearChoices	(DIA_Kervo_HILFE);
-	Info_AddChoice	(DIA_Kervo_HILFE, "Fajn, v tom pâípadê na to zapomeà.", DIA_Kervo_HILFE_tschau );
-	Info_AddChoice	(DIA_Kervo_HILFE, "Ale tady nemùeš zùstat vêènê.", DIA_Kervo_HILFE_ewig );
+	Info_AddChoice	(DIA_Kervo_HILFE, "Fajn, v tom pÃ¢Ã­padÄ™ na to zapomeÅ•.", DIA_Kervo_HILFE_tschau );
+	Info_AddChoice	(DIA_Kervo_HILFE, "Ale tady nemÅ¯Å¾eÅ¡ zÅ¯stat vÄ™ÄnÄ™.", DIA_Kervo_HILFE_ewig );
 
 	if (Kervo_GotStuff == TRUE)
 	{
-		Info_AddChoice	(DIA_Kervo_HILFE, "Co mi dáš, kdy ty vêci zabiju?", DIA_Kervo_HILFE_Problem );
+		Info_AddChoice	(DIA_Kervo_HILFE, "Co mi dÃ¡Å¡, kdyÅ¾ ty vÄ™ci zabiju?", DIA_Kervo_HILFE_Problem );
 	};
 
 	MIS_Kervo_KillLurker = LOG_RUNNING;
 };
 func void DIA_Kervo_HILFE_ewig ()
 {
-	AI_Output			(other, self, "DIA_Kervo_HILFE_ewig_15_00"); //Ale tady nemùeš zùstat vêènê.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_ewig_13_01"); //Nemám tušení, co po mnê vlastnê chceš, ale jedno ti âeknu: odsud mê nedostaneš.
+	AI_Output			(other, self, "DIA_Kervo_HILFE_ewig_15_00"); //Ale tady nemÅ¯Å¾eÅ¡ zÅ¯stat vÄ™ÄnÄ™.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_ewig_13_01"); //NemÃ¡m tuÅ¡enÃ­, co po mnÄ™ vlastnÄ™ chceÅ¡, ale jedno ti Ã¢eknu: odsud mÄ™ nedostaneÅ¡.
 };
 var int Kervo_PromiseNugget;
 func void DIA_Kervo_HILFE_Problem ()
 {
-	AI_Output			(other, self, "DIA_Kervo_HILFE_Problem_15_00"); //Co mi dáš, kdy ty potvory zabiju?
-	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_01"); //Hmm. Fajn. Mohlo by staèit, kdyby zmizeli ty èíhavci pâed jeskyní.
+	AI_Output			(other, self, "DIA_Kervo_HILFE_Problem_15_00"); //Co mi dÃ¡Å¡, kdyÅ¾ ty potvory zabiju?
+	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_01"); //Hmm. Fajn. Mohlo by staÄit, kdyby zmizeli ty ÄÃ­havci pÃ¢ed jeskynÃ­.
 	
 	if (hero.guild == GIL_KDF)
 	{	
-		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_02"); //Našel jsem prázdnı runovı kámen. Jsi mág, take by se ti mohl hodit.
+		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_02"); //NaÅ¡el jsem prÃ¡zdnÃ½ runovÃ½ kÃ¡men. Jsi mÃ¡g, takÅ¾e by se ti mohl hodit.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_03"); //Našel jsem hroudu rudy.
+		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_03"); //NaÅ¡el jsem hroudu rudy.
 	};
 
-	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_04"); //Mùu ti ji dát jako revanš.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_04"); //MÅ¯Å¾u ti ji dÃ¡t jako revanÅ¡.
 	Kervo_PromiseNugget = TRUE;
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Kervo_HILFE_tschau ()
 {
-	AI_Output			(other, self, "DIA_Kervo_HILFE_tschau_15_00"); //Fajn, v tom pâípadê na to zapomeà.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_tschau_13_01"); //Jasnê, vezmu si to.
+	AI_Output			(other, self, "DIA_Kervo_HILFE_tschau_15_00"); //Fajn, v tom pÃ¢Ã­padÄ™ na to zapomeÅ•.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_tschau_13_01"); //JasnÄ™, vezmu si to.
 
 	AI_StopProcessInfos (self);
 };
@@ -130,7 +130,7 @@ instance DIA_Kervo_LurkerPlatt		(C_INFO)
 	condition	 = 	DIA_Kervo_LurkerPlatt_Condition;
 	information	 = 	DIA_Kervo_LurkerPlatt_Info;
 
-	description = 	"Ty èíhavci pâed jeskyní u tam nejsou.";	
+	description = 	"Ty ÄÃ­havci pÃ¢ed jeskynÃ­ uÅ¾ tam nejsou.";	
 };
 
 func int DIA_Kervo_LurkerPlatt_Condition ()
@@ -149,12 +149,12 @@ func int DIA_Kervo_LurkerPlatt_Condition ()
 
 func void DIA_Kervo_LurkerPlatt_Info ()
 {
-	AI_Output			(other, self, "DIA_Kervo_LurkerPlatt_15_00"); //Ty èíhavci pâed jeskyní u tam nejsou.
-	AI_Output			(self, other, "DIA_Kervo_LurkerPlatt_13_01"); //Vıbornê. Koneènê se mùu znova volnê nadechnout.
+	AI_Output			(other, self, "DIA_Kervo_LurkerPlatt_15_00"); //Ty ÄÃ­havci pÃ¢ed jeskynÃ­ uÅ¾ tam nejsou.
+	AI_Output			(self, other, "DIA_Kervo_LurkerPlatt_13_01"); //VÃ½bornÄ™. KoneÄnÄ™ se mÅ¯Å¾u znova volnÄ™ nadechnout.
 
 	if (Kervo_PromiseNugget == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Kervo_LurkerPlatt_13_02"); //Tady máš, co jsem ti slíbil.
+		AI_Output			(self, other, "DIA_Kervo_LurkerPlatt_13_02"); //Tady mÃ¡Å¡, co jsem ti slÃ­bil.
 	
 		if (hero.guild == GIL_KDF)
 		{
@@ -179,7 +179,7 @@ instance DIA_Kervo_VERGISSES		(C_INFO)
 	information	 = 	DIA_Kervo_VERGISSES_Info;
 	permanent	 = 	TRUE;
 
-	description = 	"Projdeš teë tím prùsmykem?";	
+	description = 	"ProjdeÅ¡ teÃ« tÃ­m prÅ¯smykem?";	
 };
 
 func int DIA_Kervo_VERGISSES_Condition ()
@@ -192,8 +192,8 @@ func int DIA_Kervo_VERGISSES_Condition ()
 
 func void DIA_Kervo_VERGISSES_Info ()
 {
-	AI_Output			(other, self, "DIA_Kervo_VERGISSES_15_00"); //Projdeš teë tím prùsmykem?
-	AI_Output			(self, other, "DIA_Kervo_VERGISSES_13_01"); //Na to zapomeà, chlape. Kdy mê chytí, pošlou mê zpátky do dolù. Zùstanu tady.
+	AI_Output			(other, self, "DIA_Kervo_VERGISSES_15_00"); //ProjdeÅ¡ teÃ« tÃ­m prÅ¯smykem?
+	AI_Output			(self, other, "DIA_Kervo_VERGISSES_13_01"); //Na to zapomeÅ•, chlape. KdyÅ¾ mÄ™ chytÃ­, poÅ¡lou mÄ™ zpÃ¡tky do dolÅ¯. ZÅ¯stanu tady.
 	AI_StopProcessInfos (self);
 };
 

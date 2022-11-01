@@ -2,7 +2,7 @@
 instance Mil_303_Torwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Str� u vchodu";	
+	name 		= "Stráž u vchodu";	
 	guild 		= GIL_MIL;
 	id 			= 303;
 	voice 		= 7;

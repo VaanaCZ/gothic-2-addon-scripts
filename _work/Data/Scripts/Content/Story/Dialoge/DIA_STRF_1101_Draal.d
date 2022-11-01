@@ -43,9 +43,9 @@ func int DIA_Draal_DRAGON_Condition ()
 };
 func void DIA_Draal_DRAGON_Info ()
 {
-	AI_Output			(self, other, "DIA_Draal_DRAGON_03_00"); //Byl jsem venku, kdy ten drak zaútoèil.
-	AI_Output			(self, other, "DIA_Draal_DRAGON_03_01"); //Vidêl jsem ho, byl velkı jako 10 chlapù - jeho oheà seehnul ty chatrèe, ani jsem nemrkl!
-	AI_Output			(self, other, "DIA_Draal_DRAGON_03_02"); //Drak! Nehnu se odsud. Nic mê odsud nedostane. Nejsem blázen!
+	AI_Output			(self, other, "DIA_Draal_DRAGON_03_00"); //Byl jsem venku, kdyÅ¾ ten drak zaÃºtoÄil.
+	AI_Output			(self, other, "DIA_Draal_DRAGON_03_01"); //VidÄ™l jsem ho, byl velkÃ½ jako 10 chlapÅ¯ - jeho oheÅ• seÅ¾ehnul ty chatrÄe, ani jsem nemrkl!
+	AI_Output			(self, other, "DIA_Draal_DRAGON_03_02"); //Drak! Nehnu se odsud. Nic mÄ™ odsud nedostane. Nejsem blÃ¡zen!
 };
 
 

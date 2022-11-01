@@ -50,15 +50,15 @@ func void DIA_Wolf_DI_HALLO_Info ()
 	if ( Bennet_IsOnBoard == LOG_SUCCESS)
 	&& (Npc_IsDead(Bennet_DI)	==	FALSE)
 		{
-			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Tos s sebou Benneta MUSEL br·t, chlape?
-			AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_02"); //V Ëem je problÈm?
-			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_03"); //¡le, vlastnÍ nic. Jen si udÍlej, co musÌö, a pak odsud zmizni, jo?
+			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Tos s sebou Benneta MUSEL br√°t, chlape?
+			AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_02"); //V ƒçem je probl√©m?
+			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_03"); //√Åle, vlastnƒô nic. Jen si udƒôlej, co mus√≠≈°, a pak odsud zmizni, jo?
 		}
 	else
 		{
 			if (DIA_Wolf_DI_HALLO_OneTime == FALSE)
 				{
-					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_04"); //Tahle kov·rna nenÌ zrovna nejlepöÌ, ale myslÌm, ûe ji trochu vyzkouöÌm.
+					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_04"); //Tahle kov√°rna nen√≠ zrovna nejlep≈°√≠, ale mysl√≠m, ≈æe ji trochu vyzkou≈°√≠m.
 					B_GivePlayerXP (XP_Ambient);
 					DIA_Wolf_DI_HALLO_OneTime = TRUE;
 					AI_StopProcessInfos (self);
@@ -66,8 +66,8 @@ func void DIA_Wolf_DI_HALLO_Info ()
 				}
 			else
 				{
-					AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_05"); //Mohl bys mi ukout nÍjakou zbroj?
-					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Je mi lÌto, chlape, ale s tÌmhle n·‚adÌm nic nepo‚ÌdÌm. To bude muset poËkat, aû dorazÌme na pevninu.
+					AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_05"); //Mohl bys mi ukout nƒôjakou zbroj?
+					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Je mi l√≠to, chlape, ale s t√≠mhle n√°√¢ad√≠m nic nepo√¢√≠d√≠m. To bude muset poƒçkat, a≈æ doraz√≠me na pevninu.
 				};
 		};
 };
@@ -84,7 +84,7 @@ INSTANCE DIA_Wolf_DI_Training (C_INFO)
 	information	= DIA_Wolf_DI_Training_Info;
 	permanent	 = 	TRUE;
 
-	description = "VycviË mÍ prosÌm v boji na d·lku.";
+	description = "Vycviƒç mƒô pros√≠m v boji na d√°lku.";
 };                       
 FUNC INT DIA_Wolf_DI_Training_Condition()
 {
@@ -96,8 +96,8 @@ FUNC INT DIA_Wolf_DI_Training_Condition()
 
 FUNC VOID DIA_Wolf_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Wolf_DI_Training_15_00"); //VycviË mÍ prosÌm v boji na d·lku.
-	AI_Output (self ,other,"DIA_Wolf_DI_Training_08_01"); //V jakÈm konkrÈtnÍ?
+	AI_Output (other,self ,"DIA_Wolf_DI_Training_15_00"); //Vycviƒç mƒô pros√≠m v boji na d√°lku.
+	AI_Output (self ,other,"DIA_Wolf_DI_Training_08_01"); //V jak√©m konkr√©tnƒô?
 	
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -116,7 +116,7 @@ func void DIA_Wolf_DI_Training_BOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 1, 90))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_1_08_00"); //Luk je narozdÌl od kuöe dost neskladn˝, a proto vyûaduje spoustu mÌsta. Vûdycky si proto d·vej pozor, abys mÍl p‚i boji okolo sebe dostatek volnÈho prostoru.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_1_08_00"); //Luk je narozd√≠l od ku≈°e dost neskladn√Ω, a proto vy≈æaduje spoustu m√≠sta. V≈ædycky si proto d√°vej pozor, abys mƒôl p√¢i boji okolo sebe dostatek voln√©ho prostoru.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -133,7 +133,7 @@ func void DIA_Wolf_DI_Training_BOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 5, 90))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_5_08_00"); //P‚i v˝st‚elu ti musÌ tÍtiva v prstech klouzat - kdyû ji budeö drûet k‚eËovitÍ, m˘ûeö tÌm öÌp ˙plnÍ vych˝lit z dr·hy.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_5_08_00"); //P√¢i v√Ωst√¢elu ti mus√≠ tƒôtiva v prstech klouzat - kdy≈æ ji bude≈° dr≈æet k√¢eƒçovitƒô, m≈Ø≈æe≈° t√≠m ≈°√≠p √∫plnƒô vych√Ωlit z dr√°hy.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -154,7 +154,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 1, 100))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //P‚i st‚elbÍ z kuöe musÌö st·t absolutnÍ v klidu. Kohoutek je proto t‚eba maËkat velmi pomalu a opatrnÍ.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //P√¢i st√¢elbƒô z ku≈°e mus√≠≈° st√°t absolutnƒô v klidu. Kohoutek je proto t√¢eba maƒçkat velmi pomalu a opatrnƒô.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -170,7 +170,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 5, 100))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //Chytr˝ kuöinÌk si takÈ vöÌm·, odkud zrovna vane vÌtr, a nesnaûÌ se st‚Ìlet p‚Ìmo proti nÍmu.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //Chytr√Ω ku≈°in√≠k si tak√© v≈°√≠m√°, odkud zrovna vane v√≠tr, a nesna≈æ√≠ se st√¢√≠let p√¢√≠mo proti nƒômu.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -197,7 +197,7 @@ instance DIA_Wolf_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Wolf_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Je vöechno v po‚·dku?";
+	description = 	"Je v≈°echno v po√¢√°dku?";
 };
 
 func int DIA_Wolf_DI_UndeadDragonDead_Condition ()
@@ -211,14 +211,14 @@ func int DIA_Wolf_DI_UndeadDragonDead_Condition ()
 var int DIA_Wolf_DI_UndeadDragonDead_OneTime;
 func void DIA_Wolf_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Je vöechno v po‚·dku?
-	AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //JasnÍ. A co ty? Bylo to drsnÈ, co?
+	AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Je v≈°echno v po√¢√°dku?
+	AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //Jasnƒô. A co ty? Bylo to drsn√©, co?
 
 	if (DIA_Wolf_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //Kam teÎ p˘jdeö?
-			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //Kamkoliv, jen ne zp·tky. Khorinidu uû m·m plnÈ zuby.
-			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //MnÍ je taky jedno, kam poplujeme, jenom kdyû odsud koneËnÍ vypadneme.
+			AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //Kam te√´ p≈Øjde≈°?
+			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //Kamkoliv, jen ne zp√°tky. Khorinidu u≈æ m√°m pln√© zuby.
+			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //Mnƒô je taky jedno, kam poplujeme, jenom kdy≈æ odsud koneƒçnƒô vypadneme.
 			DIA_Wolf_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 	AI_StopProcessInfos (self);

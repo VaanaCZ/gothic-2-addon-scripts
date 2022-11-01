@@ -31,7 +31,7 @@ INSTANCE DIA_Peck_PICKPOCKET (C_INFO)
 	condition	= DIA_Peck_PICKPOCKET_Condition;
 	information	= DIA_Peck_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kr·deû tohoto klÌËe by byla riskantnÌ)";
+	description = "(Kr√°de≈æ tohoto kl√≠ƒçe by byla riskantn√≠)";
 };                       
 
 FUNC INT DIA_Peck_PICKPOCKET_Condition()
@@ -96,7 +96,7 @@ func int DIA_Peck_HEY_Condition ()
 func void DIA_Peck_HEY_Info ()
 {
 	AI_Output (other, self, "DIA_Peck_HEY_15_00"); //Zdar, jak se vede?
-	AI_Output (self, other, "DIA_Peck_HEY_12_01"); //Hele, m·m dost pr·ce. Nech mÍ b˝t.
+	AI_Output (self, other, "DIA_Peck_HEY_12_01"); //Hele, m√°m dost pr√°ce. Nech mƒô b√Ωt.
 	
 	AI_StopProcessInfos (self);
 };
@@ -110,7 +110,7 @@ instance DIA_Peck_FOUND_PECK		(C_INFO)
 	condition	 = 	DIA_Peck_FOUND_PECK_Condition;
 	information	 = 	DIA_Peck_FOUND_PECK_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Hej, je nejvyööÌ Ëas vyrazit.";
+	description	 =  "Hej, je nejvy≈°≈°√≠ ƒças vyrazit.";
 };
 
 func int DIA_Peck_FOUND_PECK_Condition ()
@@ -123,12 +123,12 @@ func int DIA_Peck_FOUND_PECK_Condition ()
 };
 func void DIA_Peck_FOUND_PECK_Info ()
 {
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_00"); //Hej, je nejvyööÌ Ëas vyrazit.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_01"); //Co chceö? NevidÌö, ûe m·m pr·ci?
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_02"); //Pot‚ebuji zbra‡, takûe se vra„ do kas·ren.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_03"); //Sakra, tvoje zbra‡ m˘ûe poËkat.
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_04"); //PojÎ, Andre se uû po tobÍ taky ptal.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_05"); //Hmpf... sakra. Dobr·, vûdy„ uû jdu - ale aû budeö Andremu pod·vat hl·öenÌ, ne‚Ìkej mu, ûe jsem byl tady.
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_00"); //Hej, je nejvy≈°≈°√≠ ƒças vyrazit.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_01"); //Co chce≈°? Nevid√≠≈°, ≈æe m√°m pr√°ci?
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_02"); //Pot√¢ebuji zbra≈ï, tak≈æe se vraƒÉ do kas√°ren.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_03"); //Sakra, tvoje zbra≈ï m≈Ø≈æe poƒçkat.
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_04"); //Poj√´, Andre se u≈æ po tobƒô taky ptal.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_05"); //Hmpf... sakra. Dobr√°, v≈ædyƒÉ u≈æ jdu - ale a≈æ bude≈° Andremu pod√°vat hl√°≈°en√≠, ne√¢√≠kej mu, ≈æe jsem byl tady.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "STORAGE");
@@ -144,7 +144,7 @@ instance DIA_Peck_WEAPON		(C_INFO)
 	condition	 = 	DIA_Peck_WEAPON_Condition;
 	information	 = 	DIA_Peck_WEAPON_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"P‚iöel jsem si pro zbra‡.";
+	description	 = 	"P√¢i≈°el jsem si pro zbra≈ï.";
 };
 //------------------------------------
 var int DIA_Peck_WEAPON_perm;
@@ -161,32 +161,32 @@ func int DIA_Peck_WEAPON_Condition ()
 };
 func void DIA_Peck_WEAPON_Info ()
 {
-	AI_Output (other, self, "DIA_Peck_WEAPON_15_00"); //P‚iöel jsem si pro zbra‡.
+	AI_Output (other, self, "DIA_Peck_WEAPON_15_00"); //P√¢i≈°el jsem si pro zbra≈ï.
 	
 	if (MIS_Andre_Peck == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Peck_WEAPON_12_01"); //Nejd‚Ìv jdi za lordem Andrem a podej mu hl·öenÌ.
+		AI_Output (self, other, "DIA_Peck_WEAPON_12_01"); //Nejd√¢√≠v jdi za lordem Andrem a podej mu hl√°≈°en√≠.
 	}
 	else	
 	{
 		if (MIS_Andre_Peck == LOG_OBSOLETE)
 		{
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_02"); //No, podÌvejme, kdo tady je. N·ö nov˝ koleg·Ëek. A chce zbra‡.
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_03"); //Ne‚ekl jsi Andremu, ûe jsem byl v »ervenÈ lucernÍ. Jsi docela fajn. Na, tady m·ö meË.
-			AI_Output (self ,other,"DIA_Peck_Add_12_00"); //Je to nejlepöÌ, jak˝ tady m·m.
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_02"); //No, pod√≠vejme, kdo tady je. N√°≈° nov√Ω koleg√°ƒçek. A chce zbra≈ï.
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_03"); //Ne√¢ekl jsi Andremu, ≈æe jsem byl v ƒåerven√© lucernƒô. Jsi docela fajn. Na, tady m√°≈° meƒç.
+			AI_Output (self ,other,"DIA_Peck_Add_12_00"); //Je to nejlep≈°√≠, jak√Ω tady m√°m.
 			B_GiveInvItems 		(self, hero	, ItMw_Schwert1, 1); // edles Schwert 35
 	
 		}
-		else if (MIS_Andre_Peck == LOG_SUCCESS) // ist schon korrekt, das SUCCESS gilt f¸r Andre M.F.
+		else if (MIS_Andre_Peck == LOG_SUCCESS) // ist schon korrekt, das SUCCESS gilt f√ºr Andre M.F.
 		{
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_04"); //NezapomnÍl jsem na tebe. Kdo napr·skal Andremu, ûe jsem byl v »ervenÈ lucernÍ?
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_05"); //A teÎ ode mne jeötÍ chceö meË... dobr·, tady jeden m·ö. Vezmi si ho. A teÎ zmiz.
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_04"); //Nezapomnƒôl jsem na tebe. Kdo napr√°skal Andremu, ≈æe jsem byl v ƒåerven√© lucernƒô?
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_05"); //A te√´ ode mne je≈°tƒô chce≈° meƒç... dobr√°, tady jeden m√°≈°. Vezmi si ho. A te√´ zmiz.
 			
 			B_GiveInvItems (self, hero, ItMw_1h_MISC_Sword,1);// rostiges Schwert
 			
 		};
 		DIA_Peck_WEAPON_perm = TRUE;
-	AI_Output (self, other, "DIA_Peck_WEAPON_12_06"); //Jestli chceö lepöÌ zbra‡, zajdi si na trh ke kupc˘m.
+	AI_Output (self, other, "DIA_Peck_WEAPON_12_06"); //Jestli chce≈° lep≈°√≠ zbra≈ï, zajdi si na trh ke kupc≈Øm.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -198,7 +198,7 @@ func void DIA_Peck_WEAPON_Info ()
 
 func void B_Peck_LeckMich()
 {
-	AI_Output (self ,other,"DIA_Peck_Add_12_07"); //Polib mi! A s rozbÍhem!
+	AI_Output (self ,other,"DIA_Peck_Add_12_07"); //Polib mi! A s rozbƒôhem!
 };
 
 
@@ -212,7 +212,7 @@ instance DIA_Peck_WEAPON2		(C_INFO)
 	condition	 = 	DIA_Peck_WEAPON2_Condition;
 	information	 = 	DIA_Peck_WEAPON2_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"NemÍl bys pro mÍ lepöÌ zbra‡?";
+	description	 = 	"Nemƒôl bys pro mƒô lep≈°√≠ zbra≈ï?";
 };
 //------------------------------------
 var int DIA_Peck_WEAPON2_perm;
@@ -230,20 +230,20 @@ func int DIA_Peck_WEAPON2_Condition ()
 };
 func void DIA_Peck_WEAPON2_Info ()
 {
-	AI_Output (self ,other,"DIA_Peck_Add_15_01"); //NemÍl bys pro mÍ lepöÌ zbra‡?
+	AI_Output (self ,other,"DIA_Peck_Add_15_01"); //Nemƒôl bys pro mƒô lep≈°√≠ zbra≈ï?
 	if (MIS_Andre_Peck == LOG_SUCCESS) //Peck verpetzt
 	{	
-		AI_Output (self ,other,"DIA_Peck_Add_12_06"); //NezapomnÍl jsem, ûes mÍ pr·sknul lordu Andremu.
+		AI_Output (self ,other,"DIA_Peck_Add_12_06"); //Nezapomnƒôl jsem, ≈æes mƒô pr√°sknul lordu Andremu.
 		B_Peck_LeckMich();
 	}
 	else if (Kapitel < 3)
 	{
-		AI_Output (self ,other,"DIA_Peck_Add_12_02"); //TeÎ zrovna ne...
+		AI_Output (self ,other,"DIA_Peck_Add_12_02"); //Te√´ zrovna ne...
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Peck_Add_12_03"); //Dob‚e ûe se pt·ö. Od Onarov˝ch ûold·k˘ m·me p·r opravdu sluön˝ch kousk˘.
-		AI_Output (self ,other,"DIA_Peck_Add_12_04"); //Jim samotn˝m uû nebudou k niËemu. (oöklivÍ se zasmÍje)
+		AI_Output (self ,other,"DIA_Peck_Add_12_03"); //Dob√¢e ≈æe se pt√°≈°. Od Onarov√Ωch ≈æold√°k≈Ø m√°me p√°r opravdu slu≈°n√Ωch kousk≈Ø.
+		AI_Output (self ,other,"DIA_Peck_Add_12_04"); //Jim samotn√Ωm u≈æ nebudou k niƒçemu. (o≈°klivƒô se zasmƒôje)
 		AI_Output (self ,other,"DIA_Peck_Add_12_05"); //Na, vem si tenhle.
 		B_GiveInvItems (self, other, ItMw_Rubinklinge, 1); //50
 		
@@ -261,7 +261,7 @@ instance DIA_Peck_PERM		(C_INFO)
 	condition	 = 	DIA_Peck_PERM_Condition;
 	information	 = 	DIA_Peck_PERM_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Jsi v po‚·dku?";
+	description	 = 	"Jsi v po√¢√°dku?";
 };
 
 func int DIA_Peck_PERM_Condition ()
@@ -275,7 +275,7 @@ func int DIA_Peck_PERM_Condition ()
 };
 func void DIA_Peck_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Peck_PERM_15_00"); //Vöechno v po‚·dku?
+	AI_Output			(other, self, "DIA_Peck_PERM_15_00"); //V≈°echno v po√¢√°dku?
 	
 	if (MIS_Andre_Peck == LOG_SUCCESS) //Peck verpetzt
 	{	
@@ -292,24 +292,24 @@ func void DIA_Peck_PERM_Info ()
 			if (hero.guild == GIL_MIL)
 			|| (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_02"); //Ne tak docela. DÍlajÌ mi starosti ti ûold·ci. KonkrÈtnÍ to, ûe se teÎ urËitÍ pokusÌ vysvobodit svÈho kamar·da z vÍzenÌ.
-				AI_Output			(self, other, "DIA_Peck_PERM_12_03"); //Moc by mÍ nepotÍöilo, kdybych se musel postavit bandÍ zkuöen˝ch rv·Ë˘.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_02"); //Ne tak docela. Dƒôlaj√≠ mi starosti ti ≈æold√°ci. Konkr√©tnƒô to, ≈æe se te√´ urƒçitƒô pokus√≠ vysvobodit sv√©ho kamar√°da z vƒôzen√≠.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_03"); //Moc by mƒô nepotƒô≈°ilo, kdybych se musel postavit bandƒô zku≈°en√Ωch rv√°ƒç≈Ø.
 			}
 			else if (hero.guild == GIL_KDF)
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_04"); //No samoz‚ejmÍ! Vöichni m·me oËi otev‚enÈ. »arodÍjovÈ mohou b˝t ujiötÍni, ûe vÍze‡ nem· û·dnou öanci uniknout.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_04"); //No samoz√¢ejmƒô! V≈°ichni m√°me oƒçi otev√¢en√©. ƒåarodƒôjov√© mohou b√Ωt uji≈°tƒôni, ≈æe vƒôze≈ï nem√° ≈æ√°dnou ≈°anci uniknout.
 			}
 			else //Sld oder DJG
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_05"); //VÌm, co m·ö v pl·nu, ale dostat vÍznÍ na svobodu se ti nepoda‚Ì.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_05"); //V√≠m, co m√°≈° v pl√°nu, ale dostat vƒôznƒô na svobodu se ti nepoda√¢√≠.
 			};
 		}	
 		else
 		{
-			AI_Output			(self, other, "DIA_Peck_PERM_12_06"); //Jsem r·d, ûe se cel· ta z·leûitost kolem vraûdy vyjasnila.
-			AI_Output			(other, self, "DIA_Peck_PERM_15_07"); //ProË?
-			AI_Output			(self, other, "DIA_Peck_PERM_12_08"); //Ti ûold·ci by asi jen tak bez boje nep‚ihlÌûeli, jak jednoho z nich povÍsÌme na öibenici.
-			AI_Output			(self, other, "DIA_Peck_PERM_12_09"); //V nejhoröÌm p‚ÌpadÍ by na n·s za˙toËili. RadÍji si ani nechci p‚edstavit, co by se stalo potom.
+			AI_Output			(self, other, "DIA_Peck_PERM_12_06"); //Jsem r√°d, ≈æe se cel√° ta z√°le≈æitost kolem vra≈ædy vyjasnila.
+			AI_Output			(other, self, "DIA_Peck_PERM_15_07"); //Proƒç?
+			AI_Output			(self, other, "DIA_Peck_PERM_12_08"); //Ti ≈æold√°ci by asi jen tak bez boje nep√¢ihl√≠≈æeli, jak jednoho z nich povƒôs√≠me na ≈°ibenici.
+			AI_Output			(self, other, "DIA_Peck_PERM_12_09"); //V nejhor≈°√≠m p√¢√≠padƒô by na n√°s za√∫toƒçili. Radƒôji si ani nechci p√¢edstavit, co by se stalo potom.
 		};	
 	};
 };

@@ -30,7 +30,7 @@ INSTANCE DIA_Liesel_Hallo (C_INFO)
 	condition	= DIA_Liesel_Hallo_Condition;
 	information	= DIA_Liesel_Hallo_Info;
 	permanent	= FALSE;
-	description = "ZdravÌm!"; 
+	description = "Zdrav√≠m!"; 
 };                       
 FUNC INT DIA_Liesel_Hallo_Condition()
 {
@@ -38,7 +38,7 @@ FUNC INT DIA_Liesel_Hallo_Condition()
 };
 FUNC VOID DIA_Liesel_Hallo_Info()
 {	
-	AI_Output (other, self,"DIA_Liesel_Hallo_15_00"); //HalÛ... (odkaöle si)... ovce.
+	AI_Output (other, self,"DIA_Liesel_Hallo_15_00"); //Hal√≥... (odka≈°le si)... ovce.
 	B_LieselMaeh ();
 };
 // ************************************************************
@@ -51,7 +51,7 @@ INSTANCE DIA_Liesel_KommMit (C_INFO)
 	condition	= DIA_Liesel_KommMit_Condition;
 	information	= DIA_Liesel_KommMit_Info;
 	permanent	= TRUE;
-	description = "PojÎ se mnou!"; 
+	description = "Poj√´ se mnou!"; 
 };                       
 FUNC INT DIA_Liesel_KommMit_Condition()
 {
@@ -65,7 +65,7 @@ FUNC INT DIA_Liesel_KommMit_Condition()
  
 FUNC VOID DIA_Liesel_KommMit_Info()
 {	
-	AI_Output (other, self,"DIA_Liesel_KommMit_15_00");	//PojÎ se mnou!
+	AI_Output (other, self,"DIA_Liesel_KommMit_15_00");	//Poj√´ se mnou!
 	B_LieselMaeh ();
 	
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -82,7 +82,7 @@ INSTANCE DIA_Liesel_WarteHier (C_INFO)
 	condition	= DIA_Liesel_WarteHier_Condition;
 	information	= DIA_Liesel_WarteHier_Info;
 	permanent	= TRUE;
-	description = "PoËkej tady!";
+	description = "Poƒçkej tady!";
 };                       
 FUNC INT DIA_Liesel_WarteHier_Condition()
 {
@@ -95,7 +95,7 @@ FUNC INT DIA_Liesel_WarteHier_Condition()
 };
 FUNC VOID DIA_Liesel_WarteHier_Info()
 {	
-	AI_Output (other, self,"DIA_Liesel_WarteHier_15_00");	//PoËkej tady!
+	AI_Output (other, self,"DIA_Liesel_WarteHier_15_00");	//Poƒçkej tady!
 	B_LieselMaeh ();
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

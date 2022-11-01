@@ -670,7 +670,7 @@ instance Itemhoshi (Npc_Default)
 	CreateInvItems(self,ItRw_Addon_MagicBolt,100);
 
 //------------------------------------------------------------
-//	Alle Gürtel
+//	Alle GÃ¼rtel
 //------------------------------------------------------------	
 //Gothic2
 
@@ -1014,8 +1014,8 @@ instance Itemhoshi (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÃ¤ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1102,8 +1102,8 @@ instance TA_Testmodell (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÃ¤ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1169,7 +1169,7 @@ FUNC VOID Rtn_Follow_1500 ()
 
 
 //*************************************************
-//	Testdialoge für Followmode und Guideplayer ----
+//	Testdialoge fÃ¼r Followmode und Guideplayer ----
 //*************************************************
 
 //--- Exit ---
@@ -1261,7 +1261,7 @@ INSTANCE Info_TA_Testmodell_FollowStart (C_INFO)
 	condition	= DIA_TA_Testmodell_FollowStart_Condition;
 	information	= DIA_TA_Testmodell_FollowStart_Info;
 	permanent	= TRUE;
-	description = "Poslechni mê!";
+	description = "Poslechni mÄ™!";
 };                       
 
 FUNC INT DIA_TA_Testmodell_FollowStart_Condition()
@@ -1290,7 +1290,7 @@ INSTANCE Info_TA_Testmodell_FollowEnd (C_INFO)
 	condition	= DIA_TA_Testmodell_FollowEnd_Condition;
 	information	= DIA_TA_Testmodell_FollowEnd_Info;
 	permanent	= TRUE;
-	description = "Pojë za mnou!";
+	description = "PojÃ« za mnou!";
 };                       
 
 FUNC INT DIA_TA_Testmodell_FollowEnd_Condition()
@@ -1350,8 +1350,8 @@ instance TA_Smalltalkpartner (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÃ¤ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1425,9 +1425,9 @@ INSTANCE Gold(C_Item)
 FUNC VOID UseGold ()
 {
 	CreateInvItems (self,ItMi_Gold,1000);	
-	PrintScreen	("Obdržet 1000 zlaãákù.", -1, 45, FONT_Screen, 2);
-	Snd_Play ("Mêšec");
-	PrintScreen	("Postih za cheatování: -100 EXP", -1, 55, FONT_Screen, 2);
+	PrintScreen	("ObdrÅ¾et 1000 zlaÄƒÃ¡kÅ¯.", -1, 45, FONT_Screen, 2);
+	Snd_Play ("MÄ™Å¡ec");
+	PrintScreen	("Postih za cheatovÃ¡nÃ­: -100 EXP", -1, 55, FONT_Screen, 2);
 	if hero.exp >= 100
 	{
 		hero.exp = hero.exp - 100;
@@ -1444,7 +1444,7 @@ FUNC VOID UseGold ()
 
 INSTANCE Armor(C_Item)
 {
-	name 				=	"Mêšec plný mincí!";
+	name 				=	"MÄ™Å¡ec plnÃ½ mincÃ­!";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -1461,7 +1461,7 @@ INSTANCE Armor(C_Item)
 
 FUNC VOID UseArmor ()
 {
-	Snd_Play ("Mêšec");
+	Snd_Play ("MÄ™Å¡ec");
 
 	CreateInvItem(self,ITAR_Governor);
 	CreateInvItem(self,ITAR_Smith);
@@ -1603,11 +1603,11 @@ func void UsePatrickHelper ()
 	self.attribute[ATR_MANA] =			400;
 	
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 			6);
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //hängt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //hÃ¤ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SNEAK, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ACROBAT, 			0);
 	
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//hängt ab von DEX (auf Scriptebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//hÃ¤ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SMITH, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_RUNES, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);

@@ -29,7 +29,7 @@ INSTANCE DIA_SLD_6_JOIN(C_INFO)
 	condition	= DIA_SLD_6_JOIN_Condition;
 	information	= DIA_SLD_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Rád bych se k vám pâidal!";
+	description = "RÃ¡d bych se k vÃ¡m pÃ¢idal!";
 };                       
 
 FUNC INT DIA_SLD_6_JOIN_Condition()
@@ -42,19 +42,19 @@ FUNC INT DIA_SLD_6_JOIN_Condition()
 
 FUNC VOID DIA_SLD_6_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00"); //Rád bych se k vám pâidal!
+	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00"); //RÃ¡d bych se k vÃ¡m pÃ¢idal!
 	
 	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_6_JOIN_06_01"); //Slyšel jsem o té záleitosti s domobranou. Torlof âíkal, e jsi prošel zkouškou. Máš mùj souhlas.
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_01"); //SlyÅ¡el jsem o tÃ© zÃ¡leÅ¾itosti s domobranou. Torlof Ã¢Ã­kal, Å¾e jsi proÅ¡el zkouÅ¡kou. MÃ¡Å¡ mÅ¯j souhlas.
 	}
 	else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_6_JOIN_06_02"); //Oškubat farmáâe je jedna vêc, ale zaèínat si nepâíjemnosti s domobranou je vêc druhá. Ale jestli tê Onar bude k nêèemu potâebovat, nejsem proti.
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_02"); //OÅ¡kubat farmÃ¡Ã¢e je jedna vÄ™c, ale zaÄÃ­nat si nepÃ¢Ã­jemnosti s domobranou je vÄ™c druhÃ¡. Ale jestli tÄ™ Onar bude k nÄ™Äemu potÃ¢ebovat, nejsem proti.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_SLD_6_JOIN_06_03"); //Promluv si s Torlofem. On u ti ukáe. (smích)
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_03"); //Promluv si s Torlofem. On uÅ¾ ti ukÃ¡Å¾e. (smÃ­ch)
 	};
 };
 
@@ -67,7 +67,7 @@ INSTANCE DIA_SLD_6_PEOPLE(C_INFO)
 	condition	= DIA_SLD_6_PEOPLE_Condition;
 	information	= DIA_SLD_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tady tomu velí?";
+	description = "Kdo tady tomu velÃ­?";
 };                       
 
 FUNC INT DIA_SLD_6_PEOPLE_Condition()
@@ -81,10 +81,10 @@ FUNC INT DIA_SLD_6_PEOPLE_Condition()
 
 FUNC VOID DIA_SLD_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //Kdo tady tomu velí?
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //Ta farma patâí Onarovi, pokud ses ptal na tohle. Ale velí tady Lee.
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Bıval generálem královského vojska. Ale teë u se s králem nêjak nekamarádí. (smích)
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Pamatuj si jeho jméno. Kdy se tu dostaneš do potíí, bude nejspíš tím jedinım, kdo to mùe urovnat. Všichni ostatní tê jednoduše stáhnou z kùe.
+	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //Kdo tady tomu velÃ­?
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //Ta farma patÃ¢Ã­ Onarovi, pokud ses ptal na tohle. Ale velÃ­ tady Lee.
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //BÃ½val generÃ¡lem krÃ¡lovskÃ©ho vojska. Ale teÃ« uÅ¾ se s krÃ¡lem nÄ™jak nekamarÃ¡dÃ­. (smÃ­ch)
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Pamatuj si jeho jmÃ©no. KdyÅ¾ se tu dostaneÅ¡ do potÃ­Å¾Ã­, bude nejspÃ­Å¡ tÃ­m jedinÃ½m, kdo to mÅ¯Å¾e urovnat. VÅ¡ichni ostatnÃ­ tÄ™ jednoduÅ¡e stÃ¡hnou z kÅ¯Å¾e.
 };
 
 // *************************************************************************
@@ -96,7 +96,7 @@ INSTANCE DIA_SLD_6_LOCATION(C_INFO)
 	condition	= DIA_SLD_6_LOCATION_Condition;
 	information	= DIA_SLD_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Hlídáte sedláky?";
+	description = "HlÃ­dÃ¡te sedlÃ¡ky?";
 };                       
 
 FUNC INT DIA_SLD_6_LOCATION_Condition()
@@ -110,9 +110,9 @@ FUNC INT DIA_SLD_6_LOCATION_Condition()
 
 FUNC VOID DIA_SLD_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_LOCATION_15_00"); //Hlídáte farmáâe?
-	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_01"); //Nehlídáme jen Onarovu farmu, ale celé tohle údolí.
-	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_02"); //Onar chce, abychom dali za vyuèenou kadému, kdo tu bude dêlat potíe. Tak si dávej pozor.
+	AI_Output (other, self, "DIA_SLD_6_LOCATION_15_00"); //HlÃ­dÃ¡te farmÃ¡Ã¢e?
+	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_01"); //NehlÃ­dÃ¡me jen Onarovu farmu, ale celÃ© tohle ÃºdolÃ­.
+	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_02"); //Onar chce, abychom dali za vyuÄenou kaÅ¾dÃ©mu, kdo tu bude dÄ™lat potÃ­Å¾e. Tak si dÃ¡vej pozor.
 };
 
 // *************************************************************************
@@ -140,24 +140,24 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_01"); //Teë jsi jedním z nás, hochu!
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_01"); //TeÃ« jsi jednÃ­m z nÃ¡s, hochu!
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_02"); //Co chceš?
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_02"); //Co chceÅ¡?
 			};
 		}
 		else
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_03"); //Kdy jsem to slyšel o têch dracích, nemohl jsem tomu vùbec uvêâit.
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_04"); //Drak - tak tomuhle âíkám boj. U ádné ovce a natvrdlá domobrana, ale koneènê opravdovı nepâítel.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_03"); //KdyÅ¾ jsem to slyÅ¡el o tÄ™ch dracÃ­ch, nemohl jsem tomu vÅ¯bec uvÄ™Ã¢it.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_04"); //Drak - tak tomuhle Ã¢Ã­kÃ¡m boj. UÅ¾ Å¾Ã¡dnÃ© ovce a natvrdlÃ¡ domobrana, ale koneÄnÄ™ opravdovÃ½ nepÃ¢Ã­tel.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_05"); //Fajn, nenadêlal si ten tvùj lord Hagen z têch drakù do kalhot?
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_06"); //Tak to vypadá, e teë bude muset ten svùj nóbl zadek pâece jen vytáhnout z mêsta.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_05"); //Fajn, nenadÄ™lal si ten tvÅ¯j lord Hagen z tÄ™ch drakÅ¯ do kalhot?
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_06"); //Tak to vypadÃ¡, Å¾e teÃ« bude muset ten svÅ¯j nÃ³bl zadek pÃ¢ece jen vytÃ¡hnout z mÄ™sta.
 			};
 		};	
 	};
@@ -166,11 +166,11 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_07"); //Lord Hagen mùe mluvit o štêstí. Ještê pár dní a pâišli bychom si tam pro Benneta sami.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_07"); //Lord Hagen mÅ¯Å¾e mluvit o Å¡tÄ™stÃ­. JeÅ¡tÄ™ pÃ¡r dnÃ­ a pÃ¢iÅ¡li bychom si tam pro Benneta sami.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_08"); //Jestli brzy nepustí Benneta z vêzení, dojdeme si pro nêj sami.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_08"); //Jestli brzy nepustÃ­ Benneta z vÄ™zenÃ­, dojdeme si pro nÄ™j sami.
 		};	
 	};
 
@@ -178,12 +178,12 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_09"); //Co tady ještê dêláš? Proè jsi nešel s ostatními do údolí?
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_10"); //Pro mê za mê, nikdo z vás se u nemusí vrátit.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_09"); //Co tady jeÅ¡tÄ™ dÄ™lÃ¡Å¡? ProÄ jsi neÅ¡el s ostatnÃ­mi do ÃºdolÃ­?
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_10"); //Pro mÄ™ za mÄ™, nikdo z vÃ¡s se uÅ¾ nemusÃ­ vrÃ¡tit.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_11"); //Mêl by ses vydat do Hornického údolí. Slyšel jsem, e ti mizerní bastardi budou potâebovat kadou pomoc.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_11"); //MÄ™l by ses vydat do HornickÃ©ho ÃºdolÃ­. SlyÅ¡el jsem, Å¾e ti mizernÃ­ bastardi budou potÃ¢ebovat kaÅ¾dou pomoc.
 		};	
 	};
 	
@@ -191,12 +191,12 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_12"); //Hned, jak jsi pâišel, jsem vêdêl, e to tu obrátíš vzhùru nohama.
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_13"); //Ale draci? To je nêco jiného. Teë se tê jen tak nêkdo napadnout neodváí.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_12"); //Hned, jak jsi pÃ¢iÅ¡el, jsem vÄ™dÄ™l, Å¾e to tu obrÃ¡tÃ­Å¡ vzhÅ¯ru nohama.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_13"); //Ale draci? To je nÄ™co jinÃ©ho. TeÃ« se tÄ™ jen tak nÄ™kdo napadnout neodvÃ¡Å¾Ã­.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_14"); //Pâekvapils mê. Patâíš ke špatné stranê, ale zabít draka je rozhodnê velkı èin.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_14"); //PÃ¢ekvapils mÄ™. PatÃ¢Ã­Å¡ ke Å¡patnÃ© stranÄ™, ale zabÃ­t draka je rozhodnÄ™ velkÃ½ Äin.
 		};	
 	};
 };

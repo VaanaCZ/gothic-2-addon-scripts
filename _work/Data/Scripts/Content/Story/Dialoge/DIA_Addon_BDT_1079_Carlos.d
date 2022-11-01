@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Carlos_EXIT   (C_INFO)
 	condition   = DIA_Addon_Carlos_EXIT_Condition;
 	information = DIA_Addon_Carlos_EXIT_Info;
 	permanent   = TRUE;
-	description = "Tak se mÍj.";
+	description = "Tak se mƒôj.";
 };
 FUNC INT DIA_Addon_Carlos_EXIT_Condition()
 {
@@ -74,24 +74,24 @@ FUNC INT DIA_Addon_Carlos_HI_Condition()
 };
 FUNC VOID DIA_Addon_Carlos_HI_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_12_00"); //Hele, ty seö ten novej, co sejmul Franca?
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_12_00"); //Hele, ty se≈° ten novej, co sejmul Franca?
 
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
-	Info_AddChoice (DIA_Addon_Carlos_HI, "Co? J·? Ne!" ,DIA_Addon_Carlos_HI_No);
-	Info_AddChoice (DIA_Addon_Carlos_HI, "Ano. ProË?" ,DIA_Addon_Carlos_HI_Yes);
+	Info_AddChoice (DIA_Addon_Carlos_HI, "Co? J√°? Ne!" ,DIA_Addon_Carlos_HI_No);
+	Info_AddChoice (DIA_Addon_Carlos_HI, "Ano. Proƒç?" ,DIA_Addon_Carlos_HI_Yes);
 };
 
 func void DIA_Addon_Carlos_HI_Yes()
 {
-	AI_Output (other,self,"DIA_Addon_Carlos_HI_Yes_15_00"); //Ano, proË?
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_Yes_12_01"); //(vztekle) Protoûe teÎ jsem jeho mÌsto p‚evzal j·. UdÍlals to dob‚e, dÌky moc!
+	AI_Output (other,self,"DIA_Addon_Carlos_HI_Yes_15_00"); //Ano, proƒç?
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_Yes_12_01"); //(vztekle) Proto≈æe te√´ jsem jeho m√≠sto p√¢evzal j√°. Udƒôlals to dob√¢e, d√≠ky moc!
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
 };
 
 func void DIA_Addon_Carlos_HI_No()
 {
-	AI_Output (other,self,"DIA_Addon_Carlos_HI_No_15_00"); //Co? J·? Ne!
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_No_12_01"); //Ale no tak, bez ur·ûky!
+	AI_Output (other,self,"DIA_Addon_Carlos_HI_No_15_00"); //Co? J√°? Ne!
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_No_12_01"); //Ale no tak, bez ur√°≈æky!
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
 };
 
@@ -118,7 +118,7 @@ FUNC VOID DIA_Addon_Carlos_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
 	
-	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_00");//Thorus mi nak·zal, abych pro t·bor naöel nÍkoho nov˝ho mÌsto toho ˙toËnÌka.
+	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_00");//Thorus mi nak√°zal, abych pro t√°bor na≈°el nƒôkoho nov√Ωho m√≠sto toho √∫toƒçn√≠ka.
 	
 	if (Logan_Inside == TRUE)
 	{
@@ -126,10 +126,10 @@ FUNC VOID DIA_Addon_Carlos_Attentat_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_02");//A Franco poslal nÍkoho nov˝ho.
+		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_02");//A Franco poslal nƒôkoho nov√Ωho.
 	};
 	
-	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_03");//Hele, j· jenom dÍl·m, co mi ‚ekne Thorus. O samotn˝m ˙toku nevÌm ani zbla.
+	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_03");//Hele, j√° jenom dƒôl√°m, co mi √¢ekne Thorus. O samotn√Ωm √∫toku nev√≠m ani zbla.
 };
 
 //---------------------------------------------------------------------
@@ -142,7 +142,7 @@ INSTANCE DIA_Addon_Carlos_PERM   (C_INFO)
 	condition   = DIA_Addon_Carlos_PERM_Condition;
 	information = DIA_Addon_Carlos_PERM_Info;
 	permanent   = TRUE;
-	description	= "A jak se ti velÌ lovc˘m?";
+	description	= "A jak se ti vel√≠ lovc≈Øm?";
 };
 FUNC INT DIA_Addon_Carlos_PERM_Condition()
 {	
@@ -150,7 +150,7 @@ FUNC INT DIA_Addon_Carlos_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Carlos_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Carlos_PERM_15_00"); //A jak˝ to je vÈst lovce?
+	AI_Output (other, self, "DIA_Addon_Carlos_PERM_15_00"); //A jak√Ω to je v√©st lovce?
 	AI_Output (self, other, "DIA_Addon_Carlos_PERM_12_00"); //Dej mi pokoj!
 	AI_StopProcessInfos (self);
 };

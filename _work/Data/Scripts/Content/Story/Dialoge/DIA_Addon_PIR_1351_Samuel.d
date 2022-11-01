@@ -41,8 +41,8 @@ FUNC INT DIA_Addon_Samuel_Hello_Condition()
 
 FUNC VOID DIA_Addon_Samuel_Hello_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_00"); //¡, nÍkdo novej!
-	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_01"); //Co si d·ö? Rum, nebo nÍco silnÍjöÌho?
+	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_00"); //√Å, nƒôkdo novej!
+	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_01"); //Co si d√°≈°? Rum, nebo nƒôco silnƒôj≈°√≠ho?
 	
 	Log_CreateTopic (Topic_Addon_PIR_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_SamuelTrade);
@@ -58,7 +58,7 @@ instance DIA_Addon_Samuel_Francis(C_INFO)
 	condition	= DIA_Addon_Samuel_Francis_Condition;
 	information	= DIA_Addon_Samuel_Francis_Info;
 
-	description	= "ChtÍl bych si s tebou promluvit o Francisovi.";
+	description	= "Chtƒôl bych si s tebou promluvit o Francisovi.";
 };                       
 FUNC INT DIA_Addon_Samuel_Francis_Condition()
 {
@@ -74,15 +74,15 @@ FUNC INT DIA_Addon_Samuel_Francis_Condition()
 
 FUNC VOID DIA_Addon_Samuel_Francis_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_00"); //ChtÍl bych si s tebou promluvit o Francisovi.
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_01"); //Vo tom r·doby kapit·novi mi ani nemluv! 
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_02"); //Celej den sedÌ na t˝ sv˝ tlust˝ prdeli a hraje si na d˘leûit˝ho.
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_03"); //Vöichni bysme r·di vÍdÍli, co si sakra kapit·n myslÌ, kdyû velenÌ svÍ‚il zrovna JEMU!
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_04"); //Co vod toho n·fuky chceö?
+	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_00"); //Chtƒôl bych si s tebou promluvit o Francisovi.
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_01"); //Vo tom r√°doby kapit√°novi mi ani nemluv! 
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_02"); //Celej den sed√≠ na t√Ω sv√Ω tlust√Ω prdeli a hraje si na d≈Øle≈æit√Ωho.
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_03"); //V≈°ichni bysme r√°di vƒôdƒôli, co si sakra kapit√°n mysl√≠, kdy≈æ velen√≠ svƒô√¢il zrovna JEMU!
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_04"); //Co vod toho n√°fuky chce≈°?
 };
 
 // ************************************************************
-// 			  		In Gregs H¸tte (Versteck)
+// 			  		In Gregs H√ºtte (Versteck)
 // ************************************************************
 instance DIA_Addon_Samuel_Versteck(C_INFO)
 {
@@ -91,7 +91,7 @@ instance DIA_Addon_Samuel_Versteck(C_INFO)
 	condition	= DIA_Addon_Samuel_Versteck_Condition;
 	information	= DIA_Addon_Samuel_Versteck_Info;
 
-	description	= "MusÌm se nÍjak dostat do Gregovy chatrËe.";
+	description	= "Mus√≠m se nƒôjak dostat do Gregovy chatrƒçe.";
 };                       
 FUNC INT DIA_Addon_Samuel_Versteck_Condition()
 {
@@ -104,19 +104,19 @@ FUNC INT DIA_Addon_Samuel_Versteck_Condition()
 };
 func VOID DIA_Addon_Samuel_Versteck_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_02"); //MusÌm se dostat do Gregovy chatrËe.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_05"); //(potutelnÍ) V·ûnÍ? A proË?
-	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_01"); //Pot‚ebuju zbroj bandit˘.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_06"); //(smÍje se) Francis tÍ do t˝ boudy NIKDY nepustÌ. S kradenÌm Gregovejch vÍcÌ se rovnou rozluË.
+	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_02"); //Mus√≠m se dostat do Gregovy chatrƒçe.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_05"); //(potutelnƒô) V√°≈ænƒô? A proƒç?
+	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_01"); //Pot√¢ebuju zbroj bandit≈Ø.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_06"); //(smƒôje se) Francis tƒô do t√Ω boudy NIKDY nepust√≠. S kraden√≠m Gregovejch vƒôc√≠ se rovnou rozluƒç.
 	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_07"); //Pokud...
 	AI_Output (other, self,	"DIA_Addon_Samuel_Francis_15_03"); //Co?
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_08"); //...pokud nem·ö nÍco, co by dovopravdy chtÍl.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_09"); //VÌm, ûe ve vopuötÍn˝m dole v ka‡onu si Francis nÍco schoval.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_10"); //Kdyû jsme spolu drûeli str·û a von si jako dycky hodil ölofÌka, mluvil o tom ze spanÌ.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_11"); //Nem·m tucha, co tam ukryl, ale moûn· je to pro nÍj tak d˘leûit˝, ûe by tÍ za to pustil i do t˝ chajdy.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_12"); //(spokojenÍ) Aû se kapit·n vr·tÌ a zjistÌ, ûe mu nÍco chybÌ, d· to Francisovi po‚·dnÍ seûrat.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_08"); //...pokud nem√°≈° nƒôco, co by dovopravdy chtƒôl.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_09"); //V√≠m, ≈æe ve vopu≈°tƒôn√Ωm dole v ka≈ïonu si Francis nƒôco schoval.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_10"); //Kdy≈æ jsme spolu dr≈æeli str√°≈æ a von si jako dycky hodil ≈°lof√≠ka, mluvil o tom ze span√≠.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_11"); //Nem√°m tucha, co tam ukryl, ale mo≈æn√° je to pro nƒôj tak d≈Øle≈æit√Ω, ≈æe by tƒô za to pustil i do t√Ω chajdy.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_12"); //(spokojenƒô) A≈æ se kapit√°n vr√°t√≠ a zjist√≠, ≈æe mu nƒôco chyb√≠, d√° to Francisovi po√¢√°dnƒô se≈ærat.
 
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"PaliË Samuel se zmÌnil o tajnÈm FrancisovÍ ˙krytu, kter˝ by mÍl b˝t v jednom z dol˘ v ka‡onu. Snad tam najdu nÍco, co mi pom˘ûe dostat se do ch˝öe."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Paliƒç Samuel se zm√≠nil o tajn√©m Francisovƒô √∫krytu, kter√Ω by mƒôl b√Ωt v jednom z dol≈Ø v ka≈ïonu. Snad tam najdu nƒôco, co mi pom≈Ø≈æe dostat se do ch√Ω≈°e."); 
 };
 
 // ************************************************************
@@ -132,7 +132,7 @@ instance DIA_Addon_Samuel_Recipe(C_INFO)
 	condition	= DIA_Addon_Samuel_Recipe_Condition;
 	information	= DIA_Addon_Samuel_Recipe_Info;
 	permanent	= TRUE;
-	description = "M·m pro tebe recept.";
+	description = "M√°m pro tebe recept.";
 };
 func INT DIA_Addon_Samuel_Recipe_Condition()
 {
@@ -144,19 +144,19 @@ func INT DIA_Addon_Samuel_Recipe_Condition()
 };
 func VOID DIA_Addon_Samuel_Recipe_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_15_00"); //M·m pro tebe recept!
-	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_14_01"); //V˝bornÍ, mrknu na to. Co je to za recept?
+	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_15_00"); //M√°m pro tebe recept!
+	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_14_01"); //V√Ωbornƒô, mrknu na to. Co je to za recept?
 	
 	Info_ClearChoices (DIA_Addon_Samuel_Recipe);
 	if (Samuel_Knows_LousHammer == FALSE) 
 	&& (Npc_HasItems (other, ITWr_Addon_Lou_Rezept) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Recipe,"Lou˘v cloum·k",DIA_Addon_Samuel_Recipe_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Recipe,"Lou≈Øv cloum√°k",DIA_Addon_Samuel_Recipe_LousHammer);
 	};
 	if (Samuel_Knows_SchlafHammer == FALSE)
 	&& (Npc_HasItems (other, ITWr_Addon_Lou_Rezept2) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Recipe,"Lou˘v supercloum·k",DIA_Addon_Samuel_Recipe_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Recipe,"Lou≈Øv supercloum√°k",DIA_Addon_Samuel_Recipe_LousDoubleHammer);
 	};
 };
 func VOID DIA_Addon_Samuel_Recipe_Back()
@@ -168,17 +168,17 @@ func VOID DIA_Addon_Samuel_Recipe_LousHammer ()
 	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousHammer_15_00"); //Je od Snafa.
 	B_GiveInvItems (other, self, ITWr_Addon_Lou_Rezept, 1);
 	B_UseFakeScroll();
-	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousHammer_14_04"); //Ale to znÌ straönÍ ñ hned to musÌm vyzkouöet!
+	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousHammer_14_04"); //Ale to zn√≠ stra≈°nƒô ‚Äì hned to mus√≠m vyzkou≈°et!
 	
 	B_GivePlayerXP (XP_Ambient);
 	Samuel_Knows_LousHammer = TRUE;
 };
 func VOID DIA_Addon_Samuel_Recipe_LousDoubleHammer ()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_15_00"); //OpatrnÍ ñ je to pÍknej zabij·k!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_15_00"); //Opatrnƒô ‚Äì je to pƒôknej zabij√°k!
 	B_GiveInvItems (other, self, ITWr_Addon_Lou_Rezept2, 1);
 	B_UseFakeScroll();
-	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_14_04"); //Hezky mÍ dÍsÌö, ale stejnÍ to vyzkouöÌm.
+	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_14_04"); //Hezky mƒô dƒôs√≠≈°, ale stejnƒô to vyzkou≈°√≠m.
 	
 	B_GivePlayerXP (XP_Ambient);
 	Samuel_Knows_SchlafHammer = TRUE;
@@ -196,7 +196,7 @@ instance DIA_Addon_Samuel_Grog(C_INFO)
 	condition	= DIA_Addon_Samuel_Grog_Condition;
 	information	= DIA_Addon_Samuel_Grog_Info;
 	permanent	= TRUE;
-	description = "P‚iöel jsem si pro sv˘j p‚ÌdÍl ko‚alky. (10 zlat˝ch)";
+	description = "P√¢i≈°el jsem si pro sv≈Øj p√¢√≠dƒôl ko√¢alky. (10 zlat√Ωch)";
 };                       
 FUNC INT DIA_Addon_Samuel_Grog_Condition()
 {
@@ -205,29 +205,29 @@ FUNC INT DIA_Addon_Samuel_Grog_Condition()
 
 FUNC VOID DIA_Addon_Samuel_Grog_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_Grog_15_00"); //P‚iöel jsem si pro svojÌ ko‚alku.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Grog_15_00"); //P√¢i≈°el jsem si pro svoj√≠ ko√¢alku.
 	if (B_GiveInvItems(other, self, itmi_gold, 10))
 	{	
 		if (Samuel_Grog_Varianz == 0)
 		{
-			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_01"); //Vy ned·te bez ko‚alky ani r·nu, co? Tak tady m·ö.
+			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_01"); //Vy ned√°te bez ko√¢alky ani r√°nu, co? Tak tady m√°≈°.
 			Samuel_Grog_Varianz = 1;
 		}
 		else if (Samuel_Grog_Varianz == 1)
 		{
-			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_02"); //Douf·m, ûe se to d· pÌt ñ doöla mi totiû Ëist· voda. Ale trocha slan˝ vody jeötÍ nikoho nezabila, ûe jo?
+			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_02"); //Douf√°m, ≈æe se to d√° p√≠t ‚Äì do≈°la mi toti≈æ ƒçist√° voda. Ale trocha slan√Ω vody je≈°tƒô nikoho nezabila, ≈æe jo?
 			Samuel_Grog_Varianz = 2;
 		}
 		else // (Samuel_Grog_Varianz == 2)
 		{
-			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_03"); //M˘ûeö mÌt ko‚alky, kolik chceö!
+			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_03"); //M≈Ø≈æe≈° m√≠t ko√¢alky, kolik chce≈°!
 		};
 		
 		B_GiveInvItems (self,other,ItFo_Addon_Grog,1);
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_04"); //Sice je levnej, ale p‚eci ne ˙plnÍ zadarmo! Nap‚ed si nÍco vydÍlej, hochu.
+		AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_04"); //Sice je levnej, ale p√¢eci ne √∫plnƒô zadarmo! Nap√¢ed si nƒôco vydƒôlej, hochu.
 	};
 };
 
@@ -243,7 +243,7 @@ instance DIA_Addon_Samuel_Rum(C_INFO)
 	condition	= DIA_Addon_Samuel_Rum_Condition;
 	information	= DIA_Addon_Samuel_Rum_Info;
 	permanent	= TRUE;
-	description = "Dej mi ‡·k˝ho ruma. (30 zlat˝ch)";
+	description = "Dej mi ≈ï√°k√Ωho ruma. (30 zlat√Ωch)";
 };                       
 FUNC INT DIA_Addon_Samuel_Rum_Condition()
 {
@@ -257,29 +257,29 @@ func VOID DIA_Addon_Samuel_Rum_Info()
 	{
 		if (Samuel_Rum_Varianz == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_01"); //¡, mate‚sk˝ mlÌko n·mo‚nÌk˘! Tady je!
+			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_01"); //√Å, mate√¢sk√Ω ml√≠ko n√°mo√¢n√≠k≈Ø! Tady je!
 			Samuel_Rum_Varianz = 1;
 		}
 		else if (Samuel_Rum_Varianz == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_02"); //Rum bude mÌt moûn· tak trochu rybÌ p‚Ìchu„, protoûe jedin˝, co tady m·me, sou star˝ sudy vod herynk˘. Ale rum je rum. Na zdravÌ!
+			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_02"); //Rum bude m√≠t mo≈æn√° tak trochu ryb√≠ p√¢√≠chuƒÉ, proto≈æe jedin√Ω, co tady m√°me, sou star√Ω sudy vod herynk≈Ø. Ale rum je rum. Na zdrav√≠!
 			Samuel_Rum_Varianz = 2;
 		}
 		else // (Samuel_Rum_Varianz == 2)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_03"); //Tum·ö.
+			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_03"); //Tum√°≈°.
 		};
 				
 		B_GiveInvItems (self,other,ItFo_Addon_rum,1);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_04"); //Nem·ö dost zlata, ËoveËe! Tak co t‚eba ko‚alku?
+		AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_04"); //Nem√°≈° dost zlata, ƒçoveƒçe! Tak co t√¢eba ko√¢alku?
 	};		
 };
 
 // ************************************************************
-// 			  	  			Was St‰rkeres
+// 			  	  			Was St√§rkeres
 // ************************************************************
 var int Samuel_Stronger_Varianz;
 var int Samuel_DoppelHammer_Varianz;
@@ -291,7 +291,7 @@ instance DIA_Addon_Samuel_Stronger(C_INFO)
 	condition	= DIA_Addon_Samuel_Stronger_Condition;
 	information	= DIA_Addon_Samuel_Stronger_Info;
 	permanent	= TRUE;
-	description = "Chci nÍco silnÍjöÌho!";
+	description = "Chci nƒôco silnƒôj≈°√≠ho!";
 };
                        
 FUNC INT DIA_Addon_Samuel_Stronger_Condition()
@@ -301,43 +301,43 @@ FUNC INT DIA_Addon_Samuel_Stronger_Condition()
 
 func VOID DIA_Addon_Samuel_Stronger_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_00"); //Chci nÍco silnÍjöÌho!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_00"); //Chci nƒôco silnƒôj≈°√≠ho!
 	
 	if (Samuel_Stronger_Varianz == 0)
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_01"); //¡, tady je nÍkdo zvÍdavej! J· osobnÍ si na nov˝ recepty potrpÌm.
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_02"); //Dobr· ko‚alka musÌ bejt Ëist· a siln· a sp·lit ti krk jako tekutej vohe‡.
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_03"); //Ale na tu moc Ëasto nenarazÌö. No, uû moc ûvanÌm ñ d·ö si nÍco k pitÌ?
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_04"); //Tum·ö! M˘j vlastnÌ recept! Chutn·? ¬Ìk·m mu 'rychlej herynek'.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_01"); //√Å, tady je nƒôkdo zvƒôdavej! J√° osobnƒô si na nov√Ω recepty potrp√≠m.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_02"); //Dobr√° ko√¢alka mus√≠ bejt ƒçist√° a siln√° a sp√°lit ti krk jako tekutej vohe≈ï.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_03"); //Ale na tu moc ƒçasto nenaraz√≠≈°. No, u≈æ moc ≈ævan√≠m ‚Äì d√°≈° si nƒôco k pit√≠?
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_04"); //Tum√°≈°! M≈Øj vlastn√≠ recept! Chutn√°? √Ç√≠k√°m mu 'rychlej herynek'.
 		B_GiveInvItems (self,other,ItFo_Addon_Schnellerhering,1);
 		B_UseItem (other, ItFo_Addon_Schnellerhering);
-		AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_05"); //P˘sobivÈ!
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_06"); //(smÍje se) To mi m˘ûeö klidnÍ jeötÍ zopakovat. 
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_07"); //Ty asi nezn·ö û·dnej dobrej recept na ko‚alku, co? Jestli jo, tak mi ho musÌö prozradit.
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_08"); //D·ö si jeötÍ?
+		AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_05"); //P≈Øsobiv√©!
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_06"); //(smƒôje se) To mi m≈Ø≈æe≈° klidnƒô je≈°tƒô zopakovat. 
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_07"); //Ty asi nezn√°≈° ≈æ√°dnej dobrej recept na ko√¢alku, co? Jestli jo, tak mi ho mus√≠≈° prozradit.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_08"); //D√°≈° si je≈°tƒô?
 		Samuel_Stronger_Varianz = 1;
 	}
 	else // (Samuel_Stronger_Varianz == 1)
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_09"); //Tak jak se ten tv˘j dryj·k jmenuje?
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_09"); //Tak jak se ten tv≈Øj dryj√°k jmenuje?
 	};
 	
 	Info_ClearChoices (DIA_Addon_Samuel_Stronger);
 	Info_AddChoice (DIA_Addon_Samuel_Stronger, DIALOG_BACK, DIA_Addon_Samuel_Stronger_Back);
 	if (Samuel_Knows_SchlafHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou˘v supercloum·k (60 zlat˝ch)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou≈Øv supercloum√°k (60 zlat√Ωch)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
 	};		
 	if (Samuel_Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou˘v cloum·k (30 zlat˝ch)", DIA_Addon_Samuel_Stronger_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou≈Øv cloum√°k (30 zlat√Ωch)", DIA_Addon_Samuel_Stronger_LousHammer);
 	};
-	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Rychl˝ herynek (30 zlat˝ch)", DIA_Addon_Samuel_Stronger_SchnellerHering);
+	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Rychl√Ω herynek (30 zlat√Ωch)", DIA_Addon_Samuel_Stronger_SchnellerHering);
 };
 // ------------------------------------------------------------
 func void B_Addon_Samuel_NoGold()
 {
-	AI_Output (self, other, "DIA_Addon_Samuel_NoGold_14_00"); //é·dn˝ prachy, û·dnej chlast!
+	AI_Output (self, other, "DIA_Addon_Samuel_NoGold_14_00"); //≈Ω√°dn√Ω prachy, ≈æ√°dnej chlast!
 };
 // ------------------------------------------------------------
 
@@ -347,10 +347,10 @@ func VOID DIA_Addon_Samuel_Stronger_Back()
 };
 func VOID DIA_Addon_Samuel_Stronger_SchnellerHering()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_SchnellerHering_15_00"); //Dej mi trochu toho tv˝ho rychl˝ho herynka.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_SchnellerHering_15_00"); //Dej mi trochu toho tv√Ωho rychl√Ωho herynka.
 	if (B_GiveInvItems (other,self, ItMi_Gold, 30))
 	{
-		AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_SchnellerHering_14_01"); //Je to pÍknej dryj·k, ale ˙Ëinnej!
+		AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_SchnellerHering_14_01"); //Je to pƒôknej dryj√°k, ale √∫ƒçinnej!
 		B_GiveInvItems (self, other, ItFo_Addon_SchnellerHering, 1);
 	}
 	else
@@ -362,20 +362,20 @@ func VOID DIA_Addon_Samuel_Stronger_SchnellerHering()
 	Info_AddChoice (DIA_Addon_Samuel_Stronger, DIALOG_BACK, DIA_Addon_Samuel_Stronger_Back);
 	if (Samuel_Knows_SchlafHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou˘v supercloum·k (60 zlat˝ch)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou≈Øv supercloum√°k (60 zlat√Ωch)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
 	};		
 	if (Samuel_Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou˘v cloum·k (30 zlat˝ch)", DIA_Addon_Samuel_Stronger_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou≈Øv cloum√°k (30 zlat√Ωch)", DIA_Addon_Samuel_Stronger_LousHammer);
 	};
-	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Rychl˝ herynek (30 zlat˝ch)", DIA_Addon_Samuel_Stronger_SchnellerHering);
+	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Rychl√Ω herynek (30 zlat√Ωch)", DIA_Addon_Samuel_Stronger_SchnellerHering);
 };
 func VOID DIA_Addon_Samuel_Stronger_LousHammer()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousHammer_15_00"); //Chci Lou˘v cloum·k!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousHammer_15_00"); //Chci Lou≈Øv cloum√°k!
 	if (B_GiveInvItems (other, self, ItMi_Gold, 30))
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousHammer_14_01"); //V˝born˝ pitÌ! Aû do dna!
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousHammer_14_01"); //V√Ωborn√Ω pit√≠! A≈æ do dna!
 		B_GiveInvItems (self,other,ItFo_Addon_LousHammer,1);
 	}
 	else
@@ -387,26 +387,26 @@ func VOID DIA_Addon_Samuel_Stronger_LousHammer()
 	Info_AddChoice (DIA_Addon_Samuel_Stronger, DIALOG_BACK, DIA_Addon_Samuel_Stronger_Back);
 	if (Samuel_Knows_SchlafHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou˘v supercloum·k (60 zlat˝ch)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou≈Øv supercloum√°k (60 zlat√Ωch)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
 	};		
 	if (Samuel_Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou˘v cloum·k (30 zlat˝ch)", DIA_Addon_Samuel_Stronger_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou≈Øv cloum√°k (30 zlat√Ωch)", DIA_Addon_Samuel_Stronger_LousHammer);
 	};
-	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Rychl˝ herynek (30 zlat˝ch)", DIA_Addon_Samuel_Stronger_SchnellerHering);
+	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Rychl√Ω herynek (30 zlat√Ωch)", DIA_Addon_Samuel_Stronger_SchnellerHering);
 };
 func VOID DIA_Addon_Samuel_Stronger_LousDoubleHammer()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousDoubleHammer_15_00"); //(bezstarostnÍ) Dej mi dvojitÈho. DvojitÈho cloum·ka.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousDoubleHammer_15_00"); //(bezstarostnƒô) Dej mi dvojit√©ho. Dvojit√©ho cloum√°ka.
 	if (B_GiveInvItems (other,self,ItMi_Gold,Value_SchlafHammer))
 	{
 		if (Samuel_DoppelHammer_Varianz == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousDoubleHammer_14_01"); //Jen abys toho nelitoval, hochu. Douf·m, ûe to nechceö pro sebe.
+			AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousDoubleHammer_14_01"); //Jen abys toho nelitoval, hochu. Douf√°m, ≈æe to nechce≈° pro sebe.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_LousDoubleHammer_14_02"); //(divoce) Jo! Nic jin˝ho ËlovÍka tak nepovzbudÌ!
+			AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_LousDoubleHammer_14_02"); //(divoce) Jo! Nic jin√Ωho ƒçlovƒôka tak nepovzbud√≠!
 		};
 
 		B_GiveInvItems (self,other,ItFo_Addon_SchlafHammer,1);
@@ -420,13 +420,13 @@ func VOID DIA_Addon_Samuel_Stronger_LousDoubleHammer()
 	Info_AddChoice (DIA_Addon_Samuel_Stronger, DIALOG_BACK, DIA_Addon_Samuel_Stronger_Back);
 	if (Samuel_Knows_SchlafHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou˘v supercloum·k (60 zlat˝ch)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou≈Øv supercloum√°k (60 zlat√Ωch)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
 	};		
 	if (Samuel_Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou˘v cloum·k (30 zlat˝ch)", DIA_Addon_Samuel_Stronger_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Lou≈Øv cloum√°k (30 zlat√Ωch)", DIA_Addon_Samuel_Stronger_LousHammer);
 	};
-	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Rychl˝ herynek (30 zlat˝ch)", DIA_Addon_Samuel_Stronger_SchnellerHering);	
+	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Rychl√Ω herynek (30 zlat√Ωch)", DIA_Addon_Samuel_Stronger_SchnellerHering);	
 };
 
 // ************************************************************
@@ -439,7 +439,7 @@ instance DIA_Addon_Samuel_Trade(C_INFO)
 	condition	= DIA_Addon_Samuel_Trade_Condition;
 	information	= DIA_Addon_Samuel_Trade_Info;
 	permanent	= TRUE;
-	description	= "Co dalöÌho tu jeötÍ m·ö?";
+	description	= "Co dal≈°√≠ho tu je≈°tƒô m√°≈°?";
 	Trade		= TRUE;
 };                       
 FUNC INT DIA_Addon_Samuel_Trade_Condition()
@@ -453,8 +453,8 @@ FUNC VOID DIA_Addon_Samuel_Trade_Info()
 	Npc_RemoveInvItems	(self, ItFo_Addon_Grog, Npc_HasItems (self,ItFo_Addon_Grog) );
 	CreateInvItems 	(self, ItFo_Addon_Grog, 15);
 	
-	AI_Output (other,self ,"DIA_Addon_Samuel_Trade_15_00"); //A co tu m·ö d·l?
-	AI_Output (self ,other,"DIA_Addon_Samuel_Trade_14_01"); //M˘ûu ti d·t nÍco, co kaûdej pir·t pot‚ebuje k p‚eûitÌ.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Trade_15_00"); //A co tu m√°≈° d√°l?
+	AI_Output (self ,other,"DIA_Addon_Samuel_Trade_14_01"); //M≈Ø≈æu ti d√°t nƒôco, co ka≈ædej pir√°t pot√¢ebuje k p√¢e≈æit√≠.
 };
 
 // ************************************************************
@@ -467,7 +467,7 @@ instance DIA_Addon_Samuel_News(C_INFO)
 	condition	= DIA_Addon_Samuel_News_Condition;
 	information	= DIA_Addon_Samuel_News_Info;
 	permanent	= TRUE;
-	description	= "Co je v t·bo‚e novÈho?";
+	description	= "Co je v t√°bo√¢e nov√©ho?";
 };                       
 FUNC INT DIA_Addon_Samuel_News_Condition()
 {
@@ -475,28 +475,28 @@ FUNC INT DIA_Addon_Samuel_News_Condition()
 };
 func VOID DIA_Addon_Samuel_News_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_News_15_00"); //Co novÈho v t·bo‚e?
+	AI_Output (other,self ,"DIA_Addon_Samuel_News_15_00"); //Co nov√©ho v t√°bo√¢e?
 	
 	if (Npc_IsDead (Francis))
 	|| (Francis_ausgeschissen == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Samuel_News_14_01"); //Francis dostal, co mu pat‚Ì! Ani nevÌö, jakou z toho m·m radost!
-		AI_Output (self, other, "DIA_Addon_Samuel_News_14_02"); //Seö spr·vnej chlap ñ tak pojÎ, dej si pan·ka ñ j· to platÌm!
+		AI_Output (self, other, "DIA_Addon_Samuel_News_14_01"); //Francis dostal, co mu pat√¢√≠! Ani nev√≠≈°, jakou z toho m√°m radost!
+		AI_Output (self, other, "DIA_Addon_Samuel_News_14_02"); //Se≈° spr√°vnej chlap ‚Äì tak poj√´, dej si pan√°ka ‚Äì j√° to plat√≠m!
 		if (GregIsBack == TRUE)
 		{
-			AI_Output (self, other, "DIA_Addon_Samuel_News_14_03"); //A Greg se koneËnÍ vr·til. Sice p‚iöel vo loÎ, ale aspo‡ to tu v t·bo‚e zase srovn· do latÍ.
+			AI_Output (self, other, "DIA_Addon_Samuel_News_14_03"); //A Greg se koneƒçnƒô vr√°til. Sice p√¢i≈°el vo lo√´, ale aspo≈ï to tu v t√°bo√¢e zase srovn√° do latƒô.
 		};
 	}
 	else //Greg noch weg UND Francis lebt noch
 	{
 		if (!Npc_IsDead (Morgan))
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_04"); //Vod t˝ doby, co Greg vodjel, se tu nic moc nedÍje. Morgan a vÍtöina chlap˘ se tu prostÍ jen tak poflakujou a cel˝ dny prochlastaj.
+			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_04"); //Vod t√Ω doby, co Greg vodjel, se tu nic moc nedƒôje. Morgan a vƒôt≈°ina chlap≈Ø se tu prostƒô jen tak poflakujou a cel√Ω dny prochlastaj.
 		};
 		if (!Npc_IsDead (Henry))
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_05"); //Jedinej, kdo to vöecko vodmak·, je Henry. Von a jeho chlapi totiû stavÍj palis·du.
+			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_05"); //Jedinej, kdo to v≈°ecko vodmak√°, je Henry. Von a jeho chlapi toti≈æ stavƒôj palis√°du.
 		};
-		AI_Output (self ,other,"DIA_Addon_Samuel_News_14_06"); //NejvyööÌ Ëas, aby se vr·til kapit·n Greg a po‚·dnÍ Francise nakopal do prdele.
+		AI_Output (self ,other,"DIA_Addon_Samuel_News_14_06"); //Nejvy≈°≈°√≠ ƒças, aby se vr√°til kapit√°n Greg a po√¢√°dnƒô Francise nakopal do prdele.
 	};
 };

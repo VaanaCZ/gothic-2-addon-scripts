@@ -24,23 +24,23 @@ func VOID DIA_Addon_Henry_EXIT_Info()
 	{
 		if (gold == 500)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold500_04_00"); //500 zla„·k˘.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold500_04_00"); //500 zlaƒÉ√°k≈Ø.
 		}
 		else if (gold == 400)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold400_04_00"); //400 zla„·k˘.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold400_04_00"); //400 zlaƒÉ√°k≈Ø.
 		}
 		else if (gold == 300)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold300_04_00"); //300 zla„·k˘.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold300_04_00"); //300 zlaƒÉ√°k≈Ø.
 		}
 		else if (gold == 200)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold200_04_00"); //200 zla„·k˘.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold200_04_00"); //200 zlaƒÉ√°k≈Ø.
 		}
 		else if (gold == 100)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold100_04_00"); //100 zla„·k˘.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold100_04_00"); //100 zlaƒÉ√°k≈Ø.
 		}
 		else
 		{
@@ -120,19 +120,19 @@ FUNC INT DIA_Addon_Henry_Hello_Condition()
 
 FUNC VOID DIA_Addon_Henry_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_04_00"); //ST¡T!
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_04_01"); //P‚Ìtel, nebo nep‚Ìtel?
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_04_00"); //ST√ÅT!
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_04_01"); //P√¢√≠tel, nebo nep√¢√≠tel?
 	
 	Info_ClearChoices (DIA_Addon_Henry_Hello);
-	Info_AddChoice (DIA_Addon_Henry_Hello,"Nep‚Ìtel!",DIA_Addon_Henry_Hello_Feind);
-	Info_AddChoice (DIA_Addon_Henry_Hello,"P‚Ìtel!",DIA_Addon_Henry_Hello_Freund);
+	Info_AddChoice (DIA_Addon_Henry_Hello,"Nep√¢√≠tel!",DIA_Addon_Henry_Hello_Feind);
+	Info_AddChoice (DIA_Addon_Henry_Hello,"P√¢√≠tel!",DIA_Addon_Henry_Hello_Freund);
 };
 var int Henry_SC_Frech;
 FUNC VOID DIA_Addon_Henry_Hello_Feind()
 {
-	AI_Output (other,self ,"DIA_Addon_Henry_Hello_Feind_15_00"); //Nep‚Ìtel!
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Feind_04_01"); //Koledujeö si vo n·‚ez, ty öaöku? 
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Feind_04_02"); //BuÎ vyklop, co tu chceö, nebo hezky rychle vypadni.
+	AI_Output (other,self ,"DIA_Addon_Henry_Hello_Feind_15_00"); //Nep√¢√≠tel!
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Feind_04_01"); //Koleduje≈° si vo n√°√¢ez, ty ≈°a≈°ku? 
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Feind_04_02"); //Bu√´ vyklop, co tu chce≈°, nebo hezky rychle vypadni.
 	
 	Henry_SC_Frech = TRUE;
 
@@ -144,8 +144,8 @@ FUNC VOID DIA_Addon_Henry_Hello_Feind()
 
 FUNC VOID DIA_Addon_Henry_Hello_Freund()
 {
-	AI_Output (other,self ,"DIA_Addon_Henry_Hello_Freund_15_00"); //P‚Ìtel!
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Freund_04_01"); //To by moh ‚Ìct kaûdej! J· tÍ nezn·m ñ co tu chceö?
+	AI_Output (other,self ,"DIA_Addon_Henry_Hello_Freund_15_00"); //P√¢√≠tel!
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Freund_04_01"); //To by moh √¢√≠ct ka≈ædej! J√° tƒô nezn√°m ‚Äì co tu chce≈°?
 	
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Pir_1354_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;	
@@ -177,7 +177,7 @@ FUNC INT DIA_Addon_Henry_SecondWarn_Condition()
 };
 func void DIA_Addon_henry_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Henry_SecondWarn_04_00"); //JeötÍ krok k t·boru a je z tebe ûr·dlo pro ûraloky.
+	AI_Output (self, other,"DIA_Addon_Henry_SecondWarn_04_00"); //Je≈°tƒô krok k t√°boru a je z tebe ≈ær√°dlo pro ≈æraloky.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Pir_1354_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -212,7 +212,7 @@ func void DIA_Addon_Henry_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_Henry_Attack_04_00"); //¬ek sis vo to. 
+	AI_Output (self, other,"DIA_Addon_Henry_Attack_04_00"); //√Çek sis vo to. 
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -237,7 +237,7 @@ INSTANCE DIA_Addon_Henry_WantEnter(C_INFO)
 	condition	= DIA_Addon_Henry_WantEnter_Condition;
 	information	= DIA_Addon_Henry_WantEnter_Info;
 	permanent	= FALSE;
-	description	= "Chci dovnit‚.";
+	description	= "Chci dovnit√¢.";
 };                       
 FUNC INT DIA_Addon_Henry_WantEnter_Condition()
 {
@@ -249,16 +249,16 @@ FUNC INT DIA_Addon_Henry_WantEnter_Condition()
 
 FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_00"); //Chci dovnit‚.
-	AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_01"); //V·ûnÍ? Zadarmo to ale nebude. 
+	AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_00"); //Chci dovnit√¢.
+	AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_01"); //V√°≈ænƒô? Zadarmo to ale nebude. 
 
 	B_Henry_Gold (500);
 
 	if (Henry_Zoll_WhatFor == FALSE)
 	{
-		AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_02"); //Coûe? ProË?
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_03"); //Se hned nemusÌö Ëertit. 
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_04"); //Tady v t·bo‚e je HROMADA vÍcÌ, kter˝ by tÍ mohly zajÌmat.
+		AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_02"); //Co≈æe? Proƒç?
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_03"); //Se hned nemus√≠≈° ƒçertit. 
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_04"); //Tady v t√°bo√¢e je HROMADA vƒôc√≠, kter√Ω by tƒô mohly zaj√≠mat.
 		Henry_Zoll_WhatFor = TRUE;
 	};
 		 
@@ -270,13 +270,13 @@ FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 	||	 (Hlp_IsItem(itm, ITAR_MIL_L) == TRUE)
 	||	 (Hlp_IsItem(itm, ITAR_MIL_M) == TRUE))
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_07"); //A ty rozhodnÍ nevypad·ö jako ‡·kej chud·k. 
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_08"); //Takûe menöÌ p‚ÌspÍvek tÍ nezabije. 
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_09"); //Nebo si ty nÛbl hadry, co m·ö na sobÍ, ukrad?
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_07"); //A ty rozhodnƒô nevypad√°≈° jako ≈ï√°kej chud√°k. 
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_08"); //Tak≈æe men≈°√≠ p√¢√≠spƒôvek tƒô nezabije. 
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_09"); //Nebo si ty n√≥bl hadry, co m√°≈° na sobƒô, ukrad?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_10"); //M·ö p‚eci zlato, ûe jo?   
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_10"); //M√°≈° p√¢eci zlato, ≈æe jo?   
 	};
 };
 
@@ -285,10 +285,10 @@ FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 // ------------------------------------------------------------
 func void B_Henry_NoJoin()
 {	
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_00"); //Jestli se k n·m chceö p‚idat, ËÈËe, tak to m·ö sm˘lu.
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_01"); //Vo tom, kdo se k n·m p‚id·, rozhoduje jedinÍ kapit·n, a ten teÎ s p˘lkou pos·dky vyjel loupit na mo‚e.
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_02"); //Ale m˘ûeö tu z˘stat, dokud se nevr·tÌ.
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_03"); //Kdyû tu nebudeö dÍlat û·dnou neplechu.
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_00"); //Jestli se k n√°m chce≈° p√¢idat, ƒç√©ƒçe, tak to m√°≈° sm≈Ølu.
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_01"); //Vo tom, kdo se k n√°m p√¢id√°, rozhoduje jedinƒô kapit√°n, a ten te√´ s p≈Ølkou pos√°dky vyjel loupit na mo√¢e.
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_02"); //Ale m≈Ø≈æe≈° tu z≈Østat, dokud se nevr√°t√≠.
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_03"); //Kdy≈æ tu nebude≈° dƒôlat ≈æ√°dnou neplechu.
 };
 // ------------------------------------------------------------
 
@@ -301,7 +301,7 @@ instance DIA_Addon_Henry_Einigen2		(C_INFO)
 	condition	= DIA_Addon_Henry_Einigen2_Condition;
 	information	= DIA_Addon_Henry_Einigen2_Info;
 
-	description	= "Tady m·ö sv˝ch 500 zla„·k˘.";
+	description	= "Tady m√°≈° sv√Ωch 500 zlaƒÉ√°k≈Ø.";
 };
 func int DIA_Addon_Henry_Einigen2_Condition ()
 {
@@ -315,9 +315,9 @@ func int DIA_Addon_Henry_Einigen2_Condition ()
 };
 func void DIA_Addon_Henry_Einigen2_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Einigen2_15_00"); //Tady m·ö tÍch 500 zlat˝ch.
+	AI_Output (other, self, "DIA_Addon_Henry_Einigen2_15_00"); //Tady m√°≈° tƒôch 500 zlat√Ωch.
 	B_GiveInvItems (other, self, ItMi_Gold, 500);		
-	AI_Output (self, other, "DIA_Addon_Henry_Einigen2_04_01"); //Dob‚e, vÌtej v naöem t·bo‚e!  
+	AI_Output (self, other, "DIA_Addon_Henry_Einigen2_04_01"); //Dob√¢e, v√≠tej v na≈°em t√°bo√¢e!  
 	B_Henry_NoJoin();
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
@@ -333,7 +333,7 @@ instance DIA_Addon_Henry_Einigen		(C_INFO)
 	condition	= DIA_Addon_Henry_Einigen_Condition;
 	information	= DIA_Addon_Henry_Einigen_Info;
 
-	description	= "Nem˘ûeme se nÍjak dohodnout?";
+	description	= "Nem≈Ø≈æeme se nƒôjak dohodnout?";
 };
 
 func int DIA_Addon_Henry_Einigen_Condition ()
@@ -347,12 +347,12 @@ func int DIA_Addon_Henry_Einigen_Condition ()
 
 func void DIA_Addon_Henry_Einigen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Einigen_15_00"); //Nem˘ûeme se nÍjak dohodnout?
-	AI_Output (self, other, "DIA_Addon_Henry_Einigen_04_01"); //No, dej mi ‡·kej dobrej d˘vod a j· ti moûn· slevÌm.
+	AI_Output (other, self, "DIA_Addon_Henry_Einigen_15_00"); //Nem≈Ø≈æeme se nƒôjak dohodnout?
+	AI_Output (self, other, "DIA_Addon_Henry_Einigen_04_01"); //No, dej mi ≈ï√°kej dobrej d≈Øvod a j√° ti mo≈æn√° slev√≠m.
 };
 
 // ------------------------------------------------------------
-// 		  			Grund 1 - Fleisch f¸r Morgan
+// 		  			Grund 1 - Fleisch f√ºr Morgan
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Henry_MeatForMorgan(C_INFO)
 {
@@ -361,7 +361,7 @@ INSTANCE DIA_Addon_Henry_MeatForMorgan(C_INFO)
 	condition	= DIA_Addon_Henry_MeatForMorgan_Condition;
 	information	= DIA_Addon_Henry_MeatForMorgan_Info;
 	permanent	= FALSE;
-	description	= "Tohle maso m·m zanÈst Morganovi.";
+	description	= "Tohle maso m√°m zan√©st Morganovi.";
 };                       
 FUNC INT DIA_Addon_Henry_MeatForMorgan_Condition()
 {
@@ -376,10 +376,10 @@ FUNC INT DIA_Addon_Henry_MeatForMorgan_Condition()
 
 FUNC VOID DIA_Addon_Henry_MeatForMorgan_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_MeatForMorgan_15_00"); //M·m Morganovi zanÈst tohle maso.
-	AI_Output (self ,other,"DIA_Addon_Henry_MeatForMorgan_04_01"); //(odmÍ‚enÍ) Aha, a kdo tÍ posÌl·?  
-	AI_Output (other,self ,"DIA_Addon_Henry_MeatForMorgan_15_02"); //Krokod˝l Jack, tvrdÌ, ûe Morgan uû na to Ëek·.
-	AI_Output (self ,other,"DIA_Addon_Henry_MeatForMorgan_04_03"); //Ch·pu, a jemu se sem nechce, co?  
+	AI_Output (other,self ,"DIA_Addon_Henry_MeatForMorgan_15_00"); //M√°m Morganovi zan√©st tohle maso.
+	AI_Output (self ,other,"DIA_Addon_Henry_MeatForMorgan_04_01"); //(odmƒô√¢enƒô) Aha, a kdo tƒô pos√≠l√°?  
+	AI_Output (other,self ,"DIA_Addon_Henry_MeatForMorgan_15_02"); //Krokod√Ωl Jack, tvrd√≠, ≈æe Morgan u≈æ na to ƒçek√°.
+	AI_Output (self ,other,"DIA_Addon_Henry_MeatForMorgan_04_03"); //Ch√°pu, a jemu se sem nechce, co?  
 };
 
 // ------------------------------------------------------------
@@ -392,7 +392,7 @@ instance DIA_Addon_Henry_Malcom		(C_INFO)
 	condition	= DIA_Addon_Henry_Malcom_Condition;
 	information	= DIA_Addon_Henry_Malcom_Info;
 
-	description	= "PosÌl· mÍ Malcom.";
+	description	= "Pos√≠l√° mƒô Malcom.";
 };
 func int DIA_Addon_Henry_Malcom_Condition ()
 {
@@ -405,14 +405,14 @@ func int DIA_Addon_Henry_Malcom_Condition ()
 };
 func void DIA_Addon_Henry_Malcom_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Malcom_15_00"); //PosÌl· mÍ Malcolm, pr˝ to d‚evo m˘ûe chvÌli trvat.
-	AI_Output (self, other, "DIA_Addon_Henry_Malcom_04_01"); //(ûbrbl·) No jo, to jsem si moh myslet. To snad potrv· do soudn˝ho dne.
+	AI_Output (other, self, "DIA_Addon_Henry_Malcom_15_00"); //Pos√≠l√° mƒô Malcolm, pr√Ω to d√¢evo m≈Ø≈æe chv√≠li trvat.
+	AI_Output (self, other, "DIA_Addon_Henry_Malcom_04_01"); //(≈æbrbl√°) No jo, to jsem si moh myslet. To snad potrv√° do soudn√Ωho dne.
 
 	B_MalcomExident();
 };
 
 // ------------------------------------------------------------
-// 		  			Grund 3 - Paket f¸r Skip
+// 		  			Grund 3 - Paket f√ºr Skip
 // ------------------------------------------------------------
 instance DIA_Addon_Henry_BaltramPack		(C_INFO)
 {
@@ -421,7 +421,7 @@ instance DIA_Addon_Henry_BaltramPack		(C_INFO)
 	condition	= DIA_Addon_Henry_BaltramPack_Condition;
 	information	= DIA_Addon_Henry_BaltramPack_Info;
 
-	description	= "M·m tu nÍco pro Skipa, je tady?";
+	description	= "M√°m tu nƒôco pro Skipa, je tady?";
 };
 func int DIA_Addon_Henry_BaltramPack_Condition ()
 {
@@ -434,8 +434,8 @@ func int DIA_Addon_Henry_BaltramPack_Condition ()
 };
 func void DIA_Addon_Henry_BaltramPack_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_BaltramPack_15_00"); //Nesu z·silku pro Skipa, je tady?
-	AI_Output (self, other, "DIA_Addon_Henry_BaltramPack_04_01"); //Jo, Skip je tady. A co teÎ?
+	AI_Output (other, self, "DIA_Addon_Henry_BaltramPack_15_00"); //Nesu z√°silku pro Skipa, je tady?
+	AI_Output (self, other, "DIA_Addon_Henry_BaltramPack_04_01"); //Jo, Skip je tady. A co te√´?
 };
 
 // ------------------------------------------------------------
@@ -450,7 +450,7 @@ instance DIA_Addon_Henry_Tribut		(C_INFO)
 	condition	= DIA_Addon_Henry_Tribut_Condition;
 	information	= DIA_Addon_Henry_Tribut_Info;
 	permanent	= TRUE;
-	description = "Pus„ mÍ dovnit‚.";
+	description = "PusƒÉ mƒô dovnit√¢.";
 };
 func int DIA_Addon_Henry_Tribut_Condition ()
 {
@@ -464,25 +464,25 @@ func void DIA_Addon_Henry_Tribut_Info ()
 {
 	Henry_Amount = 500;
 
-	AI_Output	(other, self, "DIA_Addon_Henry_Tribut_15_00"); //Pus„ mÍ dovnit‚.
+	AI_Output	(other, self, "DIA_Addon_Henry_Tribut_15_00"); //PusƒÉ mƒô dovnit√¢.
 	
 	AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_01"); //Hmmm.
 
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_Malcom))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_02"); //P‚ines jsi mi zpr·vu vod naöich d‚evorubc˘.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_02"); //P√¢ines jsi mi zpr√°vu vod na≈°ich d√¢evorubc≈Ø.
 		Henry_Amount = (Henry_Amount - 100);
 	};	
 
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_MeatForMorgan))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_03"); //Chceö dÍlat poslÌËka Krokod˝lu Jackovi a zan˝st Morganovi moË·lov˝ krysy.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_03"); //Chce≈° dƒôlat posl√≠ƒçka Krokod√Ωlu Jackovi a zan√Ωst Morganovi moƒç√°lov√Ω krysy.
 		Henry_Amount = (Henry_Amount - 100);
 	};
 	
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_BaltramPack))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_04"); //M·ö balÌËek pro Skipa.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_04"); //M√°≈° bal√≠ƒçek pro Skipa.
 		Henry_Amount = (Henry_Amount - 100);
 	};
 
@@ -490,16 +490,16 @@ func void DIA_Addon_Henry_Tribut_Info ()
 	{
 		if (Henry_Amount < 500) //schon was anderes gesagt
 		{
-			AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_00"); //A co je nejlepöÌ,
+			AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_00"); //A co je nejlep≈°√≠,
 		};
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_01"); //zlikvidoval jsi ty smrady, co n·m za z·dama voxidovali ve vÍûi.
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_02"); //Nikdy jsem nevÍ‚il, ûe to vöecko zm·kneö s·m.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_01"); //zlikvidoval jsi ty smrady, co n√°m za z√°dama voxidovali ve vƒô≈æi.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_02"); //Nikdy jsem nevƒô√¢il, ≈æe to v≈°ecko zm√°kne≈° s√°m.
 		Henry_Amount = (Henry_Amount - 200);
 	};
 
 	if (Henry_Amount <= 0)
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_03"); //Tak vÌö co? BÍû dovnit‚ zadarmo.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_03"); //Tak v√≠≈° co? Bƒô≈æ dovnit√¢ zadarmo.
 		
 		//patch M.F. 
 		self.aivar[AIV_PASSGATE] = TRUE; 
@@ -509,22 +509,22 @@ func void DIA_Addon_Henry_Tribut_Info ()
 	{
 		B_Henry_Gold (Henry_Amount);   
 
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_05"); //Nebo vypadni. Je to jednoduch˝.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_05"); //Nebo vypadni. Je to jednoduch√Ω.
 
 		Info_ClearChoices	(DIA_Addon_Henry_Tribut);
-		Info_AddChoice	(DIA_Addon_Henry_Tribut, "MyslÌm, ûe to je moc.", DIA_Addon_Henry_Tribut_nein );
+		Info_AddChoice	(DIA_Addon_Henry_Tribut, "Mysl√≠m, ≈æe to je moc.", DIA_Addon_Henry_Tribut_nein );
 
 		if (Npc_HasItems (other,ItMi_Gold) >= Henry_Amount)
 		{
-			Info_AddChoice	(DIA_Addon_Henry_Tribut, "No dob‚e, tady m·ö svÈ zlato.", DIA_Addon_Henry_Tribut_ja );
+			Info_AddChoice	(DIA_Addon_Henry_Tribut, "No dob√¢e, tady m√°≈° sv√© zlato.", DIA_Addon_Henry_Tribut_ja );
 		};
 	};
 };
 func void DIA_Addon_Henry_Tribut_ja ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Tribut_ja_15_00"); //Dob‚e, tady m·ö to zlato.
+	AI_Output (other, self, "DIA_Addon_Henry_Tribut_ja_15_00"); //Dob√¢e, tady m√°≈° to zlato.
 	B_GiveInvItems (other, self, ItMi_Gold, Henry_Amount);		
-	AI_Output (self, other, "DIA_Addon_Henry_Tribut_ja_04_01"); //DÌky. VÌtej u n·s v t·bo‚e.
+	AI_Output (self, other, "DIA_Addon_Henry_Tribut_ja_04_01"); //D√≠ky. V√≠tej u n√°s v t√°bo√¢e.
 	B_Henry_NoJoin();
 	
 	Info_ClearChoices	(DIA_Addon_Henry_Tribut);
@@ -532,10 +532,10 @@ func void DIA_Addon_Henry_Tribut_ja ()
 };
 func void DIA_Addon_Henry_Tribut_nein ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Tribut_nein_15_00"); //MyslÌm, ûe je to moc.
+	AI_Output (other, self, "DIA_Addon_Henry_Tribut_nein_15_00"); //Mysl√≠m, ≈æe je to moc.
 	if (Henry_Amount < 500)
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Tribut_nein_04_03"); //No tak, uû jsem ti slevil.
+		AI_Output (self, other, "DIA_Addon_Henry_Tribut_nein_04_03"); //No tak, u≈æ jsem ti slevil.
 	}
 	else
 	{
@@ -562,7 +562,7 @@ INSTANCE DIA_Addon_Henry_Palisade(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_Condition;
 	information	= DIA_Addon_Henry_Palisade_Info;
 	permanent	= FALSE;
-	description	= "Co tady dÍl·ö?";
+	description	= "Co tady dƒôl√°≈°?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_Condition()
 {
@@ -573,10 +573,10 @@ FUNC INT DIA_Addon_Henry_Palisade_Condition()
 };
 FUNC VOID DIA_Addon_Henry_Palisade_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_15_00"); //Co tady dÍl·ö?   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_01"); //Co si myslÌö? MusÌm dohlÌûet, aby tihle mizernÌ darmoölapovÈ vËas dostavÍli palis·du.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_02"); //Jestli to nedodÍlaj, tak mÍ kapit·n Greg nakope tak, ûe si tejden nesednu.   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_03"); //A taky se star·m vo to, aby sem nelozili û·dnÌ cizinci.
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_15_00"); //Co tady dƒôl√°≈°?   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_01"); //Co si mysl√≠≈°? Mus√≠m dohl√≠≈æet, aby tihle mizern√≠ darmo≈°lapov√© vƒças dostavƒôli palis√°du.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_02"); //Jestli to nedodƒôlaj, tak mƒô kapit√°n Greg nakope tak, ≈æe si tejden nesednu.   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_03"); //A taky se star√°m vo to, aby sem nelozili ≈æ√°dn√≠ cizinci.
 };
 
 // ------------------------------------------------------------
@@ -589,7 +589,7 @@ INSTANCE DIA_Addon_Henry_Palisade_WhatFor(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_WhatFor_Condition;
 	information	= DIA_Addon_Henry_Palisade_WhatFor_Info;
 	permanent	= FALSE;
-	description	= "ProË tu stavÌte tu palis·du?";
+	description	= "Proƒç tu stav√≠te tu palis√°du?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_WhatFor_Condition()
 {
@@ -600,16 +600,16 @@ FUNC INT DIA_Addon_Henry_Palisade_WhatFor_Condition()
 };
 func VOID DIA_Addon_Henry_Palisade_WhatFor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_WhatFor_15_00"); //ProË stavÌte tu palis·du?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_10"); //No, nechcem, aby to banditi mÍli moc jednoduch˝!
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_02"); //Ti ömejdi jsou den ode dne drzejöÌ. TeÎ uû se p·r dnÌ plÌûej kolem t·bora jako ûraloci kolem ztroskotan˝ lodÍ. 
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_11"); //P·r tÍch budiûkniËem˘ se usadilo ve vÍûi kousek na jih odsud.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_12"); //Ale to je urËitÍ jenom p‚edsunut· hlÌdka.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_03"); //Jestli jsou v·ûnÍ tak pitomÌ a napadnou n·s, p‚ivÌt·me je tak, ûe na to nezapomenou.
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_WhatFor_15_00"); //Proƒç stav√≠te tu palis√°du?
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_10"); //No, nechcem, aby to banditi mƒôli moc jednoduch√Ω!
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_02"); //Ti ≈°mejdi jsou den ode dne drzej≈°√≠. Te√´ u≈æ se p√°r dn√≠ pl√≠≈æej kolem t√°bora jako ≈æraloci kolem ztroskotan√Ω lodƒô. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_11"); //P√°r tƒôch budi≈ækniƒçem≈Ø se usadilo ve vƒô≈æi kousek na jih odsud.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_12"); //Ale to je urƒçitƒô jenom p√¢edsunut√° hl√≠dka.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_03"); //Jestli jsou v√°≈ænƒô tak pitom√≠ a napadnou n√°s, p√¢iv√≠t√°me je tak, ≈æe na to nezapomenou.
 
 	Log_CreateTopic (TOPIC_Addon_BanditsTower,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_BanditsTower,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BanditsTower,"Ve vÍûi jiûnÍ od pir·tskÈho t·bora se usadilo p·r bandit˘ a opevnili ji.");
+	B_LogEntry (TOPIC_Addon_BanditsTower,"Ve vƒô≈æi ji≈ænƒô od pir√°tsk√©ho t√°bora se usadilo p√°r bandit≈Ø a opevnili ji.");
 
 };
 
@@ -618,9 +618,9 @@ func VOID DIA_Addon_Henry_Palisade_WhatFor_Info()
 // ------------------------------------------------------------
 func void B_Henry_WhereIsTower()
 {	
-	AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_08"); //Kde p‚esnÍ leûÌ ta vÍû?
-	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_07"); //Kdyû odsud vyjdeö, drû se doprava.
-	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_08"); //Na mal˝m ˙tesu tam uvidÌö vÍû.
+	AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_08"); //Kde p√¢esnƒô le≈æ√≠ ta vƒô≈æ?
+	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_07"); //Kdy≈æ odsud vyjde≈°, dr≈æ se doprava.
+	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_08"); //Na mal√Ωm √∫tesu tam uvid√≠≈° vƒô≈æ.
 };
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Henry_Turmbanditen(C_INFO)
@@ -630,7 +630,7 @@ INSTANCE DIA_Addon_Henry_Turmbanditen(C_INFO)
 	condition	= DIA_Addon_Henry_Turmbanditen_WhatFor_Condition;
 	information	= DIA_Addon_Henry_Turmbanditen_WhatFor_Info;
 	permanent	= TRUE;
-	description	= "Co se t˝Ëe tÍch bandit˘ ve vÍûi...";
+	description	= "Co se t√Ωƒçe tƒôch bandit≈Ø ve vƒô≈æi...";
 };                       
 FUNC INT DIA_Addon_Henry_Turmbanditen_WhatFor_Condition()
 {
@@ -642,20 +642,20 @@ FUNC INT DIA_Addon_Henry_Turmbanditen_WhatFor_Condition()
 };
 func VOID DIA_Addon_Henry_Turmbanditen_WhatFor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Turmbanditen_15_00"); //Co se t˝Ëe tÍch bandit˘ ve vÍûi...
+	AI_Output (other,self ,"DIA_Addon_Henry_Turmbanditen_15_00"); //Co se t√Ωƒçe tƒôch bandit≈Ø ve vƒô≈æi...
 	
 	if (C_TowerBanditsDead() == TRUE)
 	{
 		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_01"); //Ano?
-		AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_01"); //Uû je po nich.
+		AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_01"); //U≈æ je po nich.
 		if (MIS_Henry_FreeBDTTower == LOG_RUNNING)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_02"); //V˝bornÍ! Takûe m·me o problÈm mÌ‡!
+			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_02"); //V√Ωbornƒô! Tak≈æe m√°me o probl√©m m√≠≈ï!
 		}
 		else //auf eigene Faust
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_03"); //To jsi je vöecky zlikvidoval s·m? Tak to vöechna Ëest!
-			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_04"); //Moûn· ûe z tebe jednou bude pravej pir·t.
+			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_03"); //To jsi je v≈°ecky zlikvidoval s√°m? Tak to v≈°echna ƒçest!
+			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_04"); //Mo≈æn√° ≈æe z tebe jednou bude pravej pir√°t.
 		};
 		//-----------------------------------------			
 		SawPirate.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -665,19 +665,19 @@ func VOID DIA_Addon_Henry_Turmbanditen_WhatFor_Info()
 		//-----------------------------------------	
 		MIS_Henry_FreeBDTTower = LOG_SUCCESS;
 		
-		B_LogEntry (TOPIC_Addon_BanditsTower,"Banditi ve vÍûi jsou mrtvÌ.");
+		B_LogEntry (TOPIC_Addon_BanditsTower,"Banditi ve vƒô≈æi jsou mrtv√≠.");
 		
 		B_GivePlayerXP (XP_Addon_Henry_FreeBDTTower);
 	}
 	else if (MIS_Henry_FreeBDTTower == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_07"); //Co jeötÍ pot‚ebujeö?
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_07"); //Co je≈°tƒô pot√¢ebuje≈°?
 		B_Henry_WhereIsTower();
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_05"); //Jestli je ale chceö zlikvidovat vöecky S¡M, tak na to rovnou zapome‡!
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_06"); //Za chvÌli tam poölu dva lidi z m˝ho p‚epadov˝ho oddÌlu. Ti si s nima poradÌ.
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_05"); //Jestli je ale chce≈° zlikvidovat v≈°ecky S√ÅM, tak na to rovnou zapome≈ï!
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_06"); //Za chv√≠li tam po≈°lu dva lidi z m√Ωho p√¢epadov√Ωho odd√≠lu. Ti si s nima porad√≠.
 		Knows_HenrysEntertrupp = TRUE;
 	};
 };
@@ -692,7 +692,7 @@ INSTANCE DIA_Addon_Henry_Palisade_Bandits(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_Bandits_Condition;
 	information	= DIA_Addon_Henry_Palisade_Bandits_Info;
 	permanent	= FALSE;
-	description	= "ProË by na tebe mÍli banditi ˙toËit?";
+	description	= "Proƒç by na tebe mƒôli banditi √∫toƒçit?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_Bandits_Condition()
 {
@@ -703,17 +703,17 @@ FUNC INT DIA_Addon_Henry_Palisade_Bandits_Condition()
 };
 func VOID DIA_Addon_Henry_Palisade_Bandits_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Bandits_15_00"); //ProË by na v·s mÍli banditi ˙toËit?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_04"); //Protoûe spolu V¡L»ÕME! Co si myslÌö?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_05"); //Nap‚ed to bylo vöecko pÍkn˝ ñ p‚ivezli jsme je sem, oni si odpochodovali rovnou do t˝ sv˝ baûiny a n·s tady nechali.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_06"); //Ale teÎ ti parchanti za˙toËej na kaûd˝ho, kdo k nim nepat‚Ì.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_07"); //Kdo vÌ, co je to popadlo.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_08"); //Moûn· jdou po naöich lodÌch. Protoûe jinak se odsuÎ nedostanou. 
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_09"); //Na tohle by ses mÍl zeptat Skipa. B˝val s nima ñ a sotva zachr·nil holej ûivot, kdyû od nich zdrhal.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_10"); //Je to celkem zajÌmavej p‚ÌbÍh.
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Bandits_15_00"); //Proƒç by na v√°s mƒôli banditi √∫toƒçit?
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_04"); //Proto≈æe spolu V√ÅLƒå√çME! Co si mysl√≠≈°?
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_05"); //Nap√¢ed to bylo v≈°ecko pƒôkn√Ω ‚Äì p√¢ivezli jsme je sem, oni si odpochodovali rovnou do t√Ω sv√Ω ba≈æiny a n√°s tady nechali.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_06"); //Ale te√´ ti parchanti za√∫toƒçej na ka≈æd√Ωho, kdo k nim nepat√¢√≠.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_07"); //Kdo v√≠, co je to popadlo.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_08"); //Mo≈æn√° jdou po na≈°ich lod√≠ch. Proto≈æe jinak se odsu√´ nedostanou. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_09"); //Na tohle by ses mƒôl zeptat Skipa. B√Ωval s nima ‚Äì a sotva zachr√°nil holej ≈æivot, kdy≈æ od nich zdrhal.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_10"); //Je to celkem zaj√≠mavej p√¢√≠bƒôh.
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_11"); //(zlomyslnÍ) äkoda ûe ho neuslyöÌö. Beztak jsi nezaplatil m˝tn˝.
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_11"); //(zlomyslnƒô) ≈†koda ≈æe ho neusly≈°√≠≈°. Beztak jsi nezaplatil m√Ωtn√Ω.
 		Henry_Zoll_WhatFor = TRUE;
 	};
 };
@@ -737,7 +737,7 @@ instance DIA_Addon_Henry_Entercrew(C_INFO)
 	condition	= DIA_Addon_Henry_Entercrew_Condition;
 	information	= DIA_Addon_Henry_Entercrew_Info;
 	permanent	= TRUE;
-	description	= "Chci se p‚idat do tvÈ n·jezdnickÈ party.";
+	description	= "Chci se p√¢idat do tv√© n√°jezdnick√© party.";
 };                       
 FUNC INT DIA_Addon_Henry_Entercrew_Condition()
 {
@@ -749,39 +749,39 @@ FUNC INT DIA_Addon_Henry_Entercrew_Condition()
 };
 FUNC VOID DIA_Addon_Henry_Entercrew_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Entercrew_15_00"); //Chci se p‚idat k vaöemu n·jezdnickÈmu oddÌlu.
+	AI_Output (other,self ,"DIA_Addon_Henry_Entercrew_15_00"); //Chci se p√¢idat k va≈°emu n√°jezdnick√©mu odd√≠lu.
 	
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_00"); //(smÍje se) P‚ese mÍ tak lehko neprojdeö, hochu!
-		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_01"); //Nap‚ed si promluvme, jestli se v˘bec dostaneö DO T¡BORA!
+		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_00"); //(smƒôje se) P√¢ese mƒô tak lehko neprojde≈°, hochu!
+		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_01"); //Nap√¢ed si promluvme, jestli se v≈Øbec dostane≈° DO T√ÅBORA!
 		Henry_Zoll_WhatFor = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_06"); //Tak tÍ teda vÌt·m ve sv˝ n·jezdnick˝ skupinÍ!
-		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_07"); //DalöÌ bojovnÌk, kterej n·m pom˘ûe drûet bandity od tÍla. 
+		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_06"); //Tak tƒô teda v√≠t√°m ve sv√Ω n√°jezdnick√Ω skupinƒô!
+		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_07"); //Dal≈°√≠ bojovn√≠k, kterej n√°m pom≈Ø≈æe dr≈æet bandity od tƒôla. 
 		if (MIS_Henry_FreeBDTTower == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_02"); //Hmm, chtÍl jsem ‚Ìct, aby sis vzal nÍkoho z kluk˘ a vykou‚il ty ömejdy z t˝ jejich vÍûe.
-			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_03"); //Jenûe ty uû jsi to udÍlal.
+			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_02"); //Hmm, chtƒôl jsem √¢√≠ct, aby sis vzal nƒôkoho z kluk≈Ø a vykou√¢il ty ≈°mejdy z t√Ω jejich vƒô≈æe.
+			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_03"); //Jen≈æe ty u≈æ jsi to udƒôlal.
 		}
 		else 
 		{
 			if (Npc_IsDead(SawPirate))
 			&& (Npc_IsDead(HammerPirate))
 			{
-				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_04"); //No, oba mÌ chlapi jsou mrtvÌ, takûe to budeö muset udÍlat s·m.
-				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_05"); //Zlikviduj ty bandity ve vÍûi!
+				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_04"); //No, oba m√≠ chlapi jsou mrtv√≠, tak≈æe to bude≈° muset udƒôlat s√°m.
+				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_05"); //Zlikviduj ty bandity ve vƒô≈æi!
 				
-				B_LogEntry (TOPIC_Addon_BanditsTower,"Henry chce, abych bandity vyhnal z vÍûe, ale nem˘ûe mi v tom nijak pomoci.");
+				B_LogEntry (TOPIC_Addon_BanditsTower,"Henry chce, abych bandity vyhnal z vƒô≈æe, ale nem≈Ø≈æe mi v tom nijak pomoci.");
 			}
 			else
 			{
-				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_06"); //Vem si nÍkoho z chlap˘ a udÍlejte s tÍma banditama ve vÍûi kr·tkej proces.
+				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_06"); //Vem si nƒôkoho z chlap≈Ø a udƒôlejte s tƒôma banditama ve vƒô≈æi kr√°tkej proces.
 				Henry_GetPartyMember = TRUE;
 			
-				B_LogEntry (TOPIC_Addon_BanditsTower,"Henry chce, abych bandity vyhnal z vÍûe. P‚itom s sebou m˘ûu vzÌt jednoho z jeho chlap˘.");
+				B_LogEntry (TOPIC_Addon_BanditsTower,"Henry chce, abych bandity vyhnal z vƒô≈æe. P√¢itom s sebou m≈Ø≈æu vz√≠t jednoho z jeho chlap≈Ø.");
 			};
 
 			B_Henry_WhereIsTower();
@@ -804,7 +804,7 @@ instance DIA_Addon_Henry_Owen		(C_INFO)
 	condition	= DIA_Addon_Henry_Owen_Condition;
 	information	= DIA_Addon_Henry_Owen_Info;
 
-	description	= "Pot‚ebujeö ode mÍ jeötÍ nÍco?";
+	description	= "Pot√¢ebuje≈° ode mƒô je≈°tƒô nƒôco?";
 };
 func int DIA_Addon_Henry_Owen_Condition ()
 {
@@ -817,20 +817,20 @@ func int DIA_Addon_Henry_Owen_Condition ()
 };
 func void DIA_Addon_Henry_Owen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Owen_15_01"); //Pot‚ebujeö ode mÍ jeötÍ nÍco?
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_01"); //Uû cel˝ dny Ëek·m na d‚evo na naöi palis·du. 
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_05"); //Malcolm a Owen uû se mÍli p‚ed Ëasem vr·tit.
+	AI_Output (other, self, "DIA_Addon_Henry_Owen_15_01"); //Pot√¢ebuje≈° ode mƒô je≈°tƒô nƒôco?
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_01"); //U≈æ cel√Ω dny ƒçek√°m na d√¢evo na na≈°i palis√°du. 
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_05"); //Malcolm a Owen u≈æ se mƒôli p√¢ed ƒçasem vr√°tit.
 	if (!Npc_KnowsInfo (other, DIA_Addon_Henry_Malcom))
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_06"); //D‚evorubeckej t·bor nenÌ daleko, v ˙dolÌ na jihov˝chod.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_06"); //D√¢evorubeckej t√°bor nen√≠ daleko, v √∫dol√≠ na jihov√Ωchod.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_07"); //Malcolm ‚ek, ûe to potrv· CHVÕLI, ne V »NOST!
+		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_07"); //Malcolm √¢ek, ≈æe to potrv√° CHV√çLI, ne VƒòƒåNOST!
 	};
 	
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_08"); //Vy‚iÎ jim, ûe tu na to d‚evo Ëek·me!
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_09"); //Ne, poËkej, ‚ekni to OWENOVI. Malcolm je moc nespolehlivej.
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_08"); //Vy√¢i√´ jim, ≈æe tu na to d√¢evo ƒçek√°me!
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_09"); //Ne, poƒçkej, √¢ekni to OWENOVI. Malcolm je moc nespolehlivej.
 	
 	
 	B_MalcomExident();
@@ -839,7 +839,7 @@ func void DIA_Addon_Henry_Owen_Info ()
 
 	Log_CreateTopic (TOPIC_Addon_HolOwen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_HolOwen,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_HolOwen,"Henry Ëek· na d‚evo na palis·du. M·m o tom informovat Owena, kterÈho najdu u Malcolma u ˙dolÌ.");  
+	B_LogEntry	(TOPIC_Addon_HolOwen,"Henry ƒçek√° na d√¢evo na palis√°du. M√°m o tom informovat Owena, kter√©ho najdu u Malcolma u √∫dol√≠.");  
 };
 
 // ------------------------------------------------------------
@@ -848,8 +848,8 @@ func void DIA_Addon_Henry_Owen_Info ()
 func void B_Addon_Henry_MalcomsDead()
 {	
 	AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_00"); //Co je s Malcolmem?
-	AI_Output (other, self, "DIA_Addon_Henry_Owen2_Add_15_01"); //Je mrtv˝.
-	AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_02"); //Hm, to mÍl teda sm˘lu.
+	AI_Output (other, self, "DIA_Addon_Henry_Owen2_Add_15_01"); //Je mrtv√Ω.
+	AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_02"); //Hm, to mƒôl teda sm≈Ølu.
 		
 };
 // ------------------------------------------------------------
@@ -860,7 +860,7 @@ instance DIA_Addon_Henry_Owen2		(C_INFO)
 	condition	= 	DIA_Addon_Henry_Owen2_Condition;
 	information	= 	DIA_Addon_Henry_Owen2_Info;
 	permanent	= 	TRUE;
-	description	= 	"Co se t˝Ëe toho d‚evorubce Owena...";
+	description	= 	"Co se t√Ωƒçe toho d√¢evorubce Owena...";
 };
 func int DIA_Addon_Henry_Owen2_Condition ()
 {
@@ -871,32 +871,32 @@ func int DIA_Addon_Henry_Owen2_Condition ()
 };
 func void DIA_Addon_Henry_Owen2_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_00"); //Co se t˝Ëe d‚evorubce Owena...
+	AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_00"); //Co se t√Ωƒçe d√¢evorubce Owena...
 	
 	if ((Npc_IsDead(PIR_1367_Addon_Owen)) == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_01"); //Je mrtv˝.
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_02"); //Sakra! Tak to nejspÌö budu muset poslat nÍkoho dalöÌho!
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_03"); //(brbl·) NejvyööÌ Ëas, aby Morgan koneËnÍ vyrazil a zlikvidoval tady ty potvory.
+		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_01"); //Je mrtv√Ω.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_02"); //Sakra! Tak to nejsp√≠≈° budu muset poslat nƒôkoho dal≈°√≠ho!
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_03"); //(brbl√°) Nejvy≈°≈°√≠ ƒças, aby Morgan koneƒçnƒô vyrazil a zlikvidoval tady ty potvory.
 		B_Addon_Henry_MalcomsDead();
 		//AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_01"); //Was? Er auch? Verdammte Mistviecher!
 		MIS_Henry_HolOwen = LOG_OBSOLETE;
 	
-		B_LogEntry	(TOPIC_Addon_HolOwen,"Owen i Malcom jsou mrtvÌ.");	
+		B_LogEntry	(TOPIC_Addon_HolOwen,"Owen i Malcom jsou mrtv√≠.");	
 		Log_SetTopicStatus (TOPIC_Addon_HolOwen,LOG_OBSOLETE);
 	  
 	}
 	else if (Owen_ComesToHenry == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_03"); //Owen ti p‚inese d‚evo.
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_04"); //V˝bornÍ. A taky v hodinÍ dvan·ct˝.
+		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_03"); //Owen ti p√¢inese d√¢evo.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_04"); //V√Ωbornƒô. A taky v hodinƒô dvan√°ct√Ω.
 		B_Addon_Henry_MalcomsDead();
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_05"); //Tady m·ö odmÍnu.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_05"); //Tady m√°≈° odmƒônu.
 		B_GiveInvItems (self, other, ItMi_Gold, 200);
 		B_StartOtherRoutine	(PIR_1367_Addon_Owen,"PostStart");
 		
 		
-		B_LogEntry	(TOPIC_Addon_HolOwen,"Owen p‚ed· d‚evo Henrymu.");
+		B_LogEntry	(TOPIC_Addon_HolOwen,"Owen p√¢ed√° d√¢evo Henrymu.");
 		
 		MIS_Henry_HolOwen = LOG_SUCCESS;
 		
@@ -904,8 +904,8 @@ func void DIA_Addon_Henry_Owen2_Info ()
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_06"); //M˘ûeö mi jeötÍ zopakovat, kde leûÌ ten jeho t·bor?
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_07"); //NenÌ to daleko odsud, na jihov˝chod podÈl ˙dolÌ.
+		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_06"); //M≈Ø≈æe≈° mi je≈°tƒô zopakovat, kde le≈æ√≠ ten jeho t√°bor?
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_07"); //Nen√≠ to daleko odsud, na jihov√Ωchod pod√©l √∫dol√≠.
 	};
 };
 
@@ -921,7 +921,7 @@ instance DIA_Addon_Henry_Palisade_CanHelp(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_CanHelp_Condition;
 	information	= DIA_Addon_Henry_Palisade_CanHelp_Info;
 	permanent	= TRUE;
-	description	= "Pot‚ebujeö pomoct?";
+	description	= "Pot√¢ebuje≈° pomoct?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_CanHelp_Condition()
 {
@@ -933,15 +933,15 @@ FUNC INT DIA_Addon_Henry_Palisade_CanHelp_Condition()
 };
 FUNC VOID DIA_Addon_Henry_Palisade_CanHelp_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_CanHelp_15_00"); //Pot‚ebujeö pomoc?
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_CanHelp_15_00"); //Pot√¢ebuje≈° pomoc?
 	if (Henry_PERM_Once == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_01"); //VÌö nÍco o stavbÍ palis·d? 
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_01"); //V√≠≈° nƒôco o stavbƒô palis√°d? 
 		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_CanHelp_15_02"); //Ne, moc ne.
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_03"); //Pak mi tu k niËemu nejsi. BÍû radöi pom·hat nÍkomu jin˝mu.
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_03"); //Pak mi tu k niƒçemu nejsi. Bƒô≈æ rad≈°i pom√°hat nƒôkomu jin√Ωmu.
 		Henry_PERM_Once = TRUE;
 	};
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_04"); //KlidnÍ se t‚eba zpij do nÍmoty, ale neple„ se tu mejm dÍlnÌk˘m. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_04"); //Klidnƒô se t√¢eba zpij do nƒômoty, ale nepleƒÉ se tu mejm dƒôln√≠k≈Øm. 
 };
 
 
@@ -959,7 +959,7 @@ INSTANCE DIA_Addon_Henry_WhatTeach(C_INFO)
 	condition	= DIA_Addon_Henry_WhatTeach_Condition;
 	information	= DIA_Addon_Henry_WhatTeach_Info;
 	permanent	= TRUE;
-	description	= "M˘ûeö ze mÍ udÍlat lepöÌho bojovnÌka?";
+	description	= "M≈Ø≈æe≈° ze mƒô udƒôlat lep≈°√≠ho bojovn√≠ka?";
 };                       
 FUNC INT DIA_Addon_Henry_WhatTeach_Condition()
 {
@@ -972,16 +972,16 @@ FUNC INT DIA_Addon_Henry_WhatTeach_Condition()
 
 FUNC VOID DIA_Addon_Henry_WhatTeach_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Henry_WhatTeach_Add_15_00"); //M˘ûeö mi vysvÍtlit, jak se st·t lepöÌm bojovnÌkem:
+	AI_Output (other, self, "DIA_Addon_Henry_WhatTeach_Add_15_00"); //M≈Ø≈æe≈° mi vysvƒôtlit, jak se st√°t lep≈°√≠m bojovn√≠kem:
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_01"); //(smÍje se) Nap‚ed zapla„ mejto. Pak si teprve promluvÌme vo boji.
-		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_02"); //(öibalsky) Vöecko je v cenÍ.
+		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_01"); //(smƒôje se) Nap√¢ed zaplaƒÉ mejto. Pak si teprve promluv√≠me vo boji.
+		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_02"); //(≈°ibalsky) V≈°ecko je v cenƒô.
 		Henry_Zoll_WhatFor = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_03"); //JasnÍ, proË ne?
+		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_03"); //Jasnƒô, proƒç ne?
 		Henry_Addon_TeachPlayer = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
@@ -999,17 +999,17 @@ func VOID B_Henry_CommentFightSkill ()
 {
 	if (Henry_Labercount == 0)
 	{
-		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_01"); //UËÌö se rychle, moûn· z tebe jednou bude opravdickej pir·t.  
+		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_01"); //Uƒç√≠≈° se rychle, mo≈æn√° z tebe jednou bude opravdickej pir√°t.  
 		Henry_Labercount = 1;
 	}
 	else if (Henry_Labercount == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_02"); //Kdyû to takhle p˘jde d·l, brzo si na lodi vystaËÌö ˙plnÍ s·m.
+		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_02"); //Kdy≈æ to takhle p≈Øjde d√°l, brzo si na lodi vystaƒç√≠≈° √∫plnƒô s√°m.
 		Henry_Labercount = 2;
 	}
 	else if (Henry_Labercount == 2)
 	{
-		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_03"); //A nezapome‡, ûe kdo vykrejv· ˙toky, ûije d˝l! 
+		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_03"); //A nezapome≈ï, ≈æe kdo vykrejv√° √∫toky, ≈æije d√Ωl! 
 		Henry_Labercount = 0;
 	};
 };
@@ -1021,7 +1021,7 @@ instance DIA_Addon_Henry_Teach(C_INFO)
 	condition	= DIA_Addon_Henry_Teach_Condition;
 	information	= DIA_Addon_Henry_Teach_Info;
 	permanent	= TRUE;
-	description	= "Chci se nÍco nauËit!";
+	description	= "Chci se nƒôco nauƒçit!";
 };                       
 FUNC INT DIA_Addon_Henry_Teach_Condition()
 {
@@ -1032,7 +1032,7 @@ FUNC INT DIA_Addon_Henry_Teach_Condition()
 };
 func VOID DIA_Addon_Henry_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Teach_15_00"); //NauË mÍ nÍco!
+	AI_Output (other,self ,"DIA_Addon_Henry_Teach_15_00"); //Nauƒç mƒô nƒôco!
 					
 	Henry_merke2h = other.HitChance[NPC_TALENT_2H];  
 	
@@ -1051,7 +1051,7 @@ FUNC VOID DIA_Addon_Henry_Teach_Back()
 	}
 	else if  (other.HitChance[NPC_TALENT_2H] >= 90)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Teach_Back_04_00"); //ZaËÌn·ö bejt fakt dobrej.
+		AI_Output (self ,other,"DIA_Addon_Henry_Teach_Back_04_00"); //Zaƒç√≠n√°≈° bejt fakt dobrej.
 	};
 	Info_ClearChoices (DIA_Addon_henry_Teach);
 };
@@ -1115,7 +1115,7 @@ INSTANCE DIA_Addon_Henry_Palisade_Train(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_Train_Condition;
 	information	= DIA_Addon_Henry_Palisade_Train_Info;
 	permanent	= FALSE;
-	description	= "Greg je tv˘j öÈf?";
+	description	= "Greg je tv≈Øj ≈°√©f?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_Train_Condition()
 {
@@ -1127,19 +1127,19 @@ FUNC INT DIA_Addon_Henry_Palisade_Train_Condition()
 };
 func VOID DIA_Addon_Henry_Palisade_Train_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_00"); //Greg je tv˘j öÈf?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_01"); //JasnÍ ûe jo. A pro tebe je to KAPIT¡N Greg, je to jasn˝?   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_02"); //Je to skvÍlej chlap. Aû ho potk·ö, dej si bacha, abys ho nenaötval - nejspÌö bys pak skapal d‚Ìv, neû bys toho moh litovat. 
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_00"); //Greg je tv≈Øj ≈°√©f?
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_01"); //Jasnƒô ≈æe jo. A pro tebe je to KAPIT√ÅN Greg, je to jasn√Ω?   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_02"); //Je to skvƒôlej chlap. A≈æ ho potk√°≈°, dej si bacha, abys ho nena≈°tval - nejsp√≠≈° bys pak skapal d√¢√≠v, ne≈æ bys toho moh litovat. 
 	
 	if (PIR_1300_Addon_Greg_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_03"); //Uû jsem se s nÌm setkal.
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_04"); //TÌm lÌp. Takûe vÌö, vo Ëem mluvÌm.   
+		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_03"); //U≈æ jsem se s n√≠m setkal.
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_04"); //T√≠m l√≠p. Tak≈æe v√≠≈°, vo ƒçem mluv√≠m.   
 	};
 
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_05"); //TeÎ ale v t·bo‚e nenÌ.  
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_06"); //ProzatÌm to tu vede Francis.   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_07"); //Cel˝ dny vysed·v· naproti Gregovy chatrËe a sleduje n·s p‚i pr·ci. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_05"); //Te√´ ale v t√°bo√¢e nen√≠.  
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_06"); //Prozat√≠m to tu vede Francis.   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_07"); //Cel√Ω dny vysed√°v√° naproti Gregovy chatrƒçe a sleduje n√°s p√¢i pr√°ci. 
 };
 
 // ************************************************************
@@ -1163,14 +1163,14 @@ FUNC INT DIA_Addon_Henry_YourOwnTrupp_Condition()
 };
 func VOID DIA_Addon_Henry_YourOwnTrupp_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_04"); //Kapit·n ti dal tv˘j vlastnÌ oddÌl, ne?
-	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_05"); //Tak dohlÌdni, aby tvÌ hoöi mÍli co dÍlat!
+	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_04"); //Kapit√°n ti dal tv≈Øj vlastn√≠ odd√≠l, ne?
+	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_05"); //Tak dohl√≠dni, aby tv√≠ ho≈°i mƒôli co dƒôlat!
 	AI_StopProcessInfos (self);
 };
 
 
 
 /*
-AI_Output (other,self ,"DIA_Addon_Henry_HenrysCrew_15_00"); //Wer gehˆrt zu deinem Trupp?
+AI_Output (other,self ,"DIA_Addon_Henry_HenrysCrew_15_00"); //Wer geh√∂rt zu deinem Trupp?
 AI_Output (other,self ,"DIA_Addon_Henry_Morgan_15_00"); //Wo finde ich Morgan?
 */

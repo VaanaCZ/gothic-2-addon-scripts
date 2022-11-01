@@ -23,10 +23,10 @@ FUNC VOID DIA_Addon_Francis_EXIT_Info()
 };
 
 // ************************************************************
-// 			  			In Gregs H¸tte rein 
+// 			  			In Gregs H√ºtte rein 
 // ************************************************************
 // ------------------------------------------------------------
-// 			  		Spieler kennt H¸tte nicht
+// 			  		Spieler kennt H√ºtte nicht
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Francis_First (C_INFO)
 {
@@ -35,7 +35,7 @@ INSTANCE DIA_Addon_Francis_First (C_INFO)
 	condition	= DIA_Addon_Francis_First_Condition;
 	information	= DIA_Addon_Francis_First_Info;
 	permanent	= FALSE;
-	description = "Tohle je tv· bouda?";
+	description = "Tohle je tv√° bouda?";
 };                       
 FUNC INT DIA_Addon_Francis_First_Condition()
 {
@@ -48,12 +48,12 @@ FUNC INT DIA_Addon_Francis_First_Condition()
 };
 func VOID DIA_Addon_Francis_First_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Francis_GregsHut_15_00"); //Tohle je tvoje chatrË?
-	AI_Output (self,other,"DIA_Addon_Francis_GregsHut_13_01"); //Ne, pat‚Ì Gregovi.
+	AI_Output (other,self,"DIA_Addon_Francis_GregsHut_15_00"); //Tohle je tvoje chatrƒç?
+	AI_Output (self,other,"DIA_Addon_Francis_GregsHut_13_01"); //Ne, pat√¢√≠ Gregovi.
 	Knows_GregsHut = TRUE;
 };
 // ------------------------------------------------------------
-// 			  			Ich muﬂ da rein!
+// 			  			Ich mu√ü da rein!
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Francis_LetMeIn (C_INFO)
 {
@@ -62,7 +62,7 @@ INSTANCE DIA_Addon_Francis_LetMeIn (C_INFO)
 	condition	= DIA_Addon_Francis_LetMeIn_Condition;
 	information	= DIA_Addon_Francis_LetMeIn_Info;
 	permanent	= FALSE;
-	description = "MusÌm se dostat do Gregovy chatrËe.";
+	description = "Mus√≠m se dostat do Gregovy chatrƒçe.";
 };                       
 FUNC INT DIA_Addon_Francis_LetMeIn_Condition()
 {
@@ -75,10 +75,10 @@ FUNC INT DIA_Addon_Francis_LetMeIn_Condition()
 };
 func VOID DIA_Addon_Francis_LetMeIn_Info()
 {	
-	AI_Output (other, self ,"DIA_Addon_Francis_LetMeIn_15_00"); //MusÌm se dostat do Gregovy boudy.
-	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_01"); //Na to zapome‡!
-	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_02"); //Greg tu nenÌ. A j· zamknul dve‚e, aby nikoho nesvrbÍly ruce a nemoh se tam proplÌûit. 
-	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_03"); //Vypadneö odsuÎ s·m, nebo ti m·m pomoct?
+	AI_Output (other, self ,"DIA_Addon_Francis_LetMeIn_15_00"); //Mus√≠m se dostat do Gregovy boudy.
+	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_01"); //Na to zapome≈ï!
+	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_02"); //Greg tu nen√≠. A j√° zamknul dve√¢e, aby nikoho nesvrbƒôly ruce a nemoh se tam propl√≠≈æit. 
+	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_03"); //Vypadne≈° odsu√´ s√°m, nebo ti m√°m pomoct?
 };
 // ------------------------------------------------------------
 // 			  			Hab Greg getroffen!
@@ -90,7 +90,7 @@ INSTANCE DIA_Addon_Francis_AboutGreg (C_INFO)
 	condition	= DIA_Addon_Francis_AboutGreg_Condition;
 	information	= DIA_Addon_Francis_AboutGreg_Info;
 	permanent	= FALSE;
-	description = "Greg je tv˘j öÈf?";
+	description = "Greg je tv≈Øj ≈°√©f?";
 };                       
 FUNC INT DIA_Addon_Francis_AboutGreg_Condition()
 {
@@ -102,19 +102,19 @@ FUNC INT DIA_Addon_Francis_AboutGreg_Condition()
 };
 func VOID DIA_Addon_Francis_AboutGreg_Info()
 {	
-	AI_Output (other, self ,"DIA_Addon_Francis_AboutGreg_15_00"); //Greg je tv˘j öÈf?
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_01"); //Ne, a nesnaû se mi namluvit, ûe ho zn·ö.
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_02"); //Protoûe straön˝ho kapit·na Grega zn· kaûdej n·mo‚nÌk i zatracen· suchozemsk· krysa z tohohle ostrova.
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_03"); //(nafoukanÍ) A von svÍ‚il velenÌ MN !
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_04"); //ZvodpovÌd·m za to, aby ta lÌn· pak·û dÍlala, co jÌ poruËil.
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_05"); //NÍkter˝ chlapi si myslej, ûe kdyû kapit·n vystrËil paty, m˘ûou si dÍlat, co chtÍj.
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_06"); //A budou PO¬¡DN  p‚ekvapen˝, aû se Greg vr·tÌ. 
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_07"); //P·Ë mu ‚eknu ˙plnÍ vo vöem, co se tu dÍlo, kapiöto?
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_08"); //VËetnÍ toho, kdo se mu snaûil vlÈzt do boudy.
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_09"); //Takûe odpal, jinak budeö mÌt po‚·dn˝ problÈmy.
+	AI_Output (other, self ,"DIA_Addon_Francis_AboutGreg_15_00"); //Greg je tv≈Øj ≈°√©f?
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_01"); //Ne, a nesna≈æ se mi namluvit, ≈æe ho zn√°≈°.
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_02"); //Proto≈æe stra≈°n√Ωho kapit√°na Grega zn√° ka≈ædej n√°mo√¢n√≠k i zatracen√° suchozemsk√° krysa z tohohle ostrova.
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_03"); //(nafoukanƒô) A von svƒô√¢il velen√≠ MNƒò!
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_04"); //Zvodpov√≠d√°m za to, aby ta l√≠n√° pak√°≈æ dƒôlala, co j√≠ poruƒçil.
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_05"); //Nƒôkter√Ω chlapi si myslej, ≈æe kdy≈æ kapit√°n vystrƒçil paty, m≈Ø≈æou si dƒôlat, co chtƒôj.
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_06"); //A budou PO√Ç√ÅDNƒò p√¢ekvapen√Ω, a≈æ se Greg vr√°t√≠. 
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_07"); //P√°ƒç mu √¢eknu √∫plnƒô vo v≈°em, co se tu dƒôlo, kapi≈°to?
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_08"); //Vƒçetnƒô toho, kdo se mu sna≈æil vl√©zt do boudy.
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_09"); //Tak≈æe odpal, jinak bude≈° m√≠t po√¢√°dn√Ω probl√©my.
 };
 // ------------------------------------------------------------
-// 		  			Gib mir Schl¸ssel + Bestechung!
+// 		  			Gib mir Schl√ºssel + Bestechung!
 // ------------------------------------------------------------
 var int Francis_bezahlt;
 
@@ -125,7 +125,7 @@ INSTANCE DIA_Addon_Francis_Key (C_INFO)
 	condition	= DIA_Addon_Francis_Key_Condition;
 	information	= DIA_Addon_Francis_Key_Info;
 	permanent	= TRUE;
-	description = "Dej mi klÌË od Gregovy chatrËe!";
+	description = "Dej mi kl√≠ƒç od Gregovy chatrƒçe!";
 };                       
 FUNC INT DIA_Addon_Francis_Key_Condition()
 {
@@ -137,13 +137,13 @@ FUNC INT DIA_Addon_Francis_Key_Condition()
 };
 func VOID DIA_Addon_Francis_Key_Info()
 {	
-	AI_Output (other, self,"DIA_Addon_Francis_Key_15_00"); //Dej mi klÌË od Gregovy boudy!
-	AI_Output (self ,other,"DIA_Addon_Francis_Key_13_01"); //To si snad dÍl·ö srandu!
+	AI_Output (other, self,"DIA_Addon_Francis_Key_15_00"); //Dej mi kl√≠ƒç od Gregovy boudy!
+	AI_Output (self ,other,"DIA_Addon_Francis_Key_13_01"); //To si snad dƒôl√°≈° srandu!
 	
 	Info_ClearChoices (DIA_Addon_Francis_Key);
-	Info_AddChoice (DIA_Addon_Francis_Key, "Pop‚em˝ölÌm o tom.", DIA_Addon_Francis_Key_BACK);
-	Info_AddChoice (DIA_Addon_Francis_Key, "D·m ti 2000 zla„·k˘!", DIA_Addon_Francis_Key_2000Gold);
-	Info_AddChoice (DIA_Addon_Francis_Key, "D·m ti 1000 zla„·k˘!", DIA_Addon_Francis_Key_1000Gold);
+	Info_AddChoice (DIA_Addon_Francis_Key, "Pop√¢em√Ω≈°l√≠m o tom.", DIA_Addon_Francis_Key_BACK);
+	Info_AddChoice (DIA_Addon_Francis_Key, "D√°m ti 2000 zlaƒÉ√°k≈Ø!", DIA_Addon_Francis_Key_2000Gold);
+	Info_AddChoice (DIA_Addon_Francis_Key, "D√°m ti 1000 zlaƒÉ√°k≈Ø!", DIA_Addon_Francis_Key_1000Gold);
 };
 func void DIA_Addon_Francis_Key_BACK()
 {
@@ -151,28 +151,28 @@ func void DIA_Addon_Francis_Key_BACK()
 };
 func void DIA_Addon_Francis_Key_1000Gold()
 {
-	AI_Output (other, self ,"DIA_Addon_Francis_Key_1000Gold_15_00"); //D·m ti za nÍj 1000 zla„·k˘!
-	AI_Output (self ,other ,"DIA_Addon_Francis_Key_1000Gold_13_01"); //NÍco mi ‚Ìk·, ûe za takovej pakatel sv˝ho kapit·na nezradÌm.
-	AI_Output (self ,other ,"DIA_Addon_Francis_Key_1000Gold_13_02"); //Bacha na zob·k, jinak tÍ st·hnu z k˘ûe!
+	AI_Output (other, self ,"DIA_Addon_Francis_Key_1000Gold_15_00"); //D√°m ti za nƒôj 1000 zlaƒÉ√°k≈Ø!
+	AI_Output (self ,other ,"DIA_Addon_Francis_Key_1000Gold_13_01"); //Nƒôco mi √¢√≠k√°, ≈æe za takovej pakatel sv√Ωho kapit√°na nezrad√≠m.
+	AI_Output (self ,other ,"DIA_Addon_Francis_Key_1000Gold_13_02"); //Bacha na zob√°k, jinak tƒô st√°hnu z k≈Ø≈æe!
 };
 func void DIA_Addon_Francis_Key_2000Gold()
 {
-	AI_Output (other,self ,"DIA_Addon_Francis_Key_2000Gold_15_00"); //D·m ti 2000 zla„·k˘!
+	AI_Output (other,self ,"DIA_Addon_Francis_Key_2000Gold_15_00"); //D√°m ti 2000 zlaƒÉ√°k≈Ø!
 	
 	if (Npc_HasItems (other,ItMI_Gold) >= 2000)
 	{
-		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_01"); //Hochu, ty po mnÍ chceö, abych se vzbou‚il!
+		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_01"); //Hochu, ty po mnƒô chce≈°, abych se vzbou√¢il!
 		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_02"); //(pro sebe) No, ale na druhou stranu...
-		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_03"); //No dob‚e, dej to sem. Nikdo to nemusÌ vÍdÍt.
-		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_04"); //Tady m·ö klÌË!
-		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_05"); //Ale koukej sebou hodit, neû se Greg vr·tÌ. A nikomu ani slovo, jasn˝?
+		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_03"); //No dob√¢e, dej to sem. Nikdo to nemus√≠ vƒôdƒôt.
+		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_04"); //Tady m√°≈° kl√≠ƒç!
+		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_05"); //Ale koukej sebou hodit, ne≈æ se Greg vr√°t√≠. A nikomu ani slovo, jasn√Ω?
 		B_GiveInvItems (other, self,ItMi_Gold,2000);
 		B_GiveInvItems (self ,other,ITKE_Greg_ADDON_MIS,1);
 		Francis_bezahlt = TRUE;
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Addon_FrancisNotEnoughGold_13_05"); //(smÍje se) Ha! VsadÌm se, ûe tolik ani nem·ö!
+		AI_Output (self ,other,"DIA_Addon_FrancisNotEnoughGold_13_05"); //(smƒôje se) Ha! Vsad√≠m se, ≈æe tolik ani nem√°≈°!
 	};
 	Info_ClearChoices (DIA_Addon_Francis_Key);
 };
@@ -186,7 +186,7 @@ INSTANCE DIA_Addon_Francis_AufsMaul (C_INFO)
 	condition	= DIA_Addon_Francis_AufsMaul_Condition;
 	information	= DIA_Addon_Francis_AufsMaul_Info;
 	permanent	= TRUE;
-	description = "Tak j· se mrknu, co mi m˘ûeö nabÌdnout.";
+	description = "Tak j√° se mrknu, co mi m≈Ø≈æe≈° nab√≠dnout.";
 };                       
 FUNC INT DIA_Addon_Francis_AufsMaul_Condition()
 {
@@ -198,9 +198,9 @@ FUNC INT DIA_Addon_Francis_AufsMaul_Condition()
 };
 func VOID DIA_Addon_Francis_AufsMaul_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Francis_AufsMaul_15_00"); //No, tak se mrknem, copak tu m·ö.
-	AI_Output (self, other, "DIA_Addon_Francis_AufsMaul_13_01"); //(pronikavÍ) Coûe? Kapit·n jsem tady j·! 
-	AI_Output (self, other, "DIA_Addon_Francis_AufsMaul_13_02"); //J· tÍ nauËÌm ˙ctÍ, ty suchozemsk· kryso!
+	AI_Output (other, self, "DIA_Addon_Francis_AufsMaul_15_00"); //No, tak se mrknem, copak tu m√°≈°.
+	AI_Output (self, other, "DIA_Addon_Francis_AufsMaul_13_01"); //(pronikavƒô) Co≈æe? Kapit√°n jsem tady j√°! 
+	AI_Output (self, other, "DIA_Addon_Francis_AufsMaul_13_02"); //J√° tƒô nauƒç√≠m √∫ctƒô, ty suchozemsk√° kryso!
 	
 	AI_StopProcessInfos (self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -215,7 +215,7 @@ INSTANCE DIA_Addon_Francis_Buch (C_INFO)
 	condition	= DIA_Addon_Francis_Buch_Condition;
 	information	= DIA_Addon_Francis_Buch_Info;
 	permanent	= TRUE;
-	description = "Naöel jsem tvou skr˝ö.";
+	description = "Na≈°el jsem tvou skr√Ω≈°.";
 };                       
 FUNC INT DIA_Addon_Francis_Buch_Condition()
 {
@@ -226,40 +226,40 @@ FUNC INT DIA_Addon_Francis_Buch_Condition()
 };
 func VOID DIA_Addon_Francis_Buch_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Francis_Key_Business_15_03"); //Naöel jsem tvou skr˝ö, tv˘j poklad i tvou ˙ËetnÌ knihu. Je tvoje, ûe jo?
-	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_01"); //Ehm... tuhle knihu vidÌm poprvÈ v ûivotÍ.
+	AI_Output (other,self ,"DIA_Addon_Francis_Key_Business_15_03"); //Na≈°el jsem tvou skr√Ω≈°, tv≈Øj poklad i tvou √∫ƒçetn√≠ knihu. Je tvoje, ≈æe jo?
+	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_01"); //Ehm... tuhle knihu vid√≠m poprv√© v ≈æivotƒô.
 	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_02"); //A... a i KDYBY byla moje...
-	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_03"); //P‚eci V¡éN  nevÍ‚Ìö, ûe by nÍkdo uvÍ‚il t˝ TV› historce, co se opÌr· jen o p·r zaûloutlejch str·nek.
-	AI_Output (other,self ,"DIA_Addon_Francis_Key_Business_15_01"); //Vöechny jsi obÌral o podÌly.
-	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_04"); //Ehm... poËkej chvilku...
+	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_03"); //P√¢eci V√Å≈ΩNƒò nevƒô√¢√≠≈°, ≈æe by nƒôkdo uvƒô√¢il t√Ω TV√ù historce, co se op√≠r√° jen o p√°r za≈æloutlejch str√°nek.
+	AI_Output (other,self ,"DIA_Addon_Francis_Key_Business_15_01"); //V≈°echny jsi ob√≠ral o pod√≠ly.
+	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_04"); //Ehm... poƒçkej chvilku...
 	if (Npc_HasItems (self, ITKE_Greg_ADDON_MIS))
 	{
 		if (Npc_KnowsInfo (other, DIA_Addon_Francis_LetMeIn))
 		{
-			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_05"); //(podlÈzavÍ) ChtÍls klÌË od Gregovy chajdy, viÎ?
+			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_05"); //(podl√©zavƒô) Chtƒôls kl√≠ƒç od Gregovy chajdy, vi√´?
 		};
-		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_06"); //Tak j· ti ten klÌË od Gregovy chatrËe D¡M!
-		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_07"); //Je tam spousta cennejch vÍcÌ...
-		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_08"); //(nervÛznÍ) Ale vra„ mi tu knÌûku a drû hubu, jo?
+		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_06"); //Tak j√° ti ten kl√≠ƒç od Gregovy chatrƒçe D√ÅM!
+		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_07"); //Je tam spousta cennejch vƒôc√≠...
+		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_08"); //(nerv√≥znƒô) Ale vraƒÉ mi tu kn√≠≈æku a dr≈æ hubu, jo?
 		B_GiveInvItems (other,self,ITWR_Addon_FrancisAbrechnung_Mis,1);
 		B_GiveInvItems (self ,other,ITKE_Greg_ADDON_MIS,1);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_09"); //Jen û·dn˝ pitomosti!
+		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_09"); //Jen ≈æ√°dn√Ω pitomosti!
 		if (Francis_bezahlt == TRUE)
 		&& (Npc_HasItems(self, itmi_gold) >= 2000)
 		{
-			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_10"); //Tady m·ö svejch 2000 zlatejch.
-			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_11"); //A p‚id·m ti jeötÍ dalöÌch 500.
+			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_10"); //Tady m√°≈° svejch 2000 zlatejch.
+			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_11"); //A p√¢id√°m ti je≈°tƒô dal≈°√≠ch 500.
 			B_GiveInvItems (self, other, itmi_gold, 2500);
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_12"); //Tady m·ö 500 zlatejch!
+			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_12"); //Tady m√°≈° 500 zlatejch!
 			B_GiveInvItems (self, other, itmi_gold, 500);
 		};
-		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_13"); //(rychle) A teÎ mi to dej.
+		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_13"); //(rychle) A te√´ mi to dej.
 		B_GiveInvItems (other,self,ITWR_Addon_FrancisAbrechnung_Mis,1);
 	};
 	AI_StopProcessInfos (self);
@@ -275,7 +275,7 @@ instance DIA_Francis_PICKPOCKET (C_INFO)
 	condition	= DIA_Francis_PICKPOCKET_Condition;
 	information	= DIA_Francis_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento klÌË p˘jde ukr·st snadno.)";
+	description = "(Tento kl√≠ƒç p≈Øjde ukr√°st snadno.)";
 };                       
 func INT DIA_Francis_PICKPOCKET_Condition()
 {
@@ -305,7 +305,7 @@ func void DIA_Francis_PICKPOCKET_DoIt()
 	else
 	{
 		AI_StopProcessInfos	(self);
-		B_Attack (self, other, AR_Theft, 1); //AR_Theft f¸hrt zu NEWS!
+		B_Attack (self, other, AR_Theft, 1); //AR_Theft f√ºhrt zu NEWS!
 	};
 	Info_ClearChoices (DIA_Francis_PICKPOCKET);
 };
@@ -339,9 +339,9 @@ func VOID DIA_Francis_Ausgeschissen_Info()
 {	
 	if (!Npc_IsDead(Greg))
 	{
-		AI_Output (self, other, "DIA_Addon_Francis_Ausgeschissen_13_00"); //(zu‚ivÍ) Kv˘li tobÍ mÍ Greg nech· ‚ezat d‚ÌvÌ tak dlouho, dokud bude na tomdle ostrovÍ st·t jedinej strom!
+		AI_Output (self, other, "DIA_Addon_Francis_Ausgeschissen_13_00"); //(zu√¢ivƒô) Kv≈Øli tobƒô mƒô Greg nech√° √¢ezat d√¢√≠v√≠ tak dlouho, dokud bude na tomdle ostrovƒô st√°t jedinej strom!
 	};
-	AI_Output (self, other, "DIA_Addon_Francis_Ausgeschissen_13_01"); //Nech mÍ na pokoji!
+	AI_Output (self, other, "DIA_Addon_Francis_Ausgeschissen_13_01"); //Nech mƒô na pokoji!
 	AI_StopProcessInfos (self);
 };
 

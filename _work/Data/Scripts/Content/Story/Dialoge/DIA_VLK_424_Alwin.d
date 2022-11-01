@@ -75,8 +75,8 @@ FUNC INT DIA_Alwin_Sheep_Condition()
 FUNC VOID DIA_Alwin_Sheep_Info()
 {	
 	AI_Output (other, self,"DIA_Alwin_Sheep_15_00"); //Tohle jsou tvoje ovce?
-	AI_Output (self ,other,"DIA_Alwin_Sheep_12_01"); //Ke mnÍ pat‚Ì jenom ta, kter· nese jmÈno Lucy (usmÍje se) - a to je moje ûena.
-	AI_Output (self ,other,"DIA_Alwin_Sheep_12_02"); //Ovce jsou majetkem domobrany - hned, jak je zÌskajÌ od farm·‚˘, p‚ivedou je ke mnÍ.
+	AI_Output (self ,other,"DIA_Alwin_Sheep_12_01"); //Ke mnƒô pat√¢√≠ jenom ta, kter√° nese jm√©no Lucy (usmƒôje se) - a to je moje ≈æena.
+	AI_Output (self ,other,"DIA_Alwin_Sheep_12_02"); //Ovce jsou majetkem domobrany - hned, jak je z√≠skaj√≠ od farm√°√¢≈Ø, p√¢ivedou je ke mnƒô.
 };
 //***************************************************
 //		Der irre Fellan
@@ -100,10 +100,10 @@ FUNC INT DIA_Alwin_Fellan_Condition()
 };
 FUNC VOID DIA_Alwin_Fellan_Info()
 {	
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_00"); //Hochu, to öÌlenÈ ml·cenÌ kladivem mÍ p‚ivede do hrobu.
-	AI_Output (other, self,"DIA_Alwin_Fellan_15_01"); //O Ëem to mluvÌö?
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_02"); //Copak neslyöÌö ty r·ny? Kdo asi tak m˘ûe v p‚ÌstavnÌ Ëtvrti od r·na do veËera buöit kladivem?
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_03"); //MyslÌm toho cvoka Fellana. Kaûd˝ den si do tÈ svÈ chatrËe bere kladivo.
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_00"); //Hochu, to ≈°√≠len√© ml√°cen√≠ kladivem mƒô p√¢ivede do hrobu.
+	AI_Output (other, self,"DIA_Alwin_Fellan_15_01"); //O ƒçem to mluv√≠≈°?
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_02"); //Copak nesly≈°√≠≈° ty r√°ny? Kdo asi tak m≈Ø≈æe v p√¢√≠stavn√≠ ƒçtvrti od r√°na do veƒçera bu≈°it kladivem?
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_03"); //Mysl√≠m toho cvoka Fellana. Ka≈æd√Ω den si do t√© sv√© chatrƒçe bere kladivo.
 };
 //***************************************************
 //		Der irre Fellan
@@ -128,44 +128,44 @@ FUNC INT DIA_Alwin_FellanRunning_Condition()
 FUNC VOID DIA_Alwin_FellanRunning_Info()
 {	
 	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_00"); //Mohl bych se o Fellana postarat.
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_01"); //Ty mi chceö pomoct? A co z toho budeö mÌt?
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_02"); //To mi povÍz ty.
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_03"); //Aha, tak je to! No dob‚e - kdyû to jeho buöenÌ nÍjak umlËÌö, zaplatÌm ti 25 zla„·k˘.
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_04"); //Ale upozor‡uju tÍ, ûe s nÌm rozumnou domluvou nic nesvedeö - je to tot·lnÌ magor. Jedin· vÍc, kter· by mu pomohla, je p·r dob‚e mÌ‚en˝ch facek!
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_01"); //Ty mi chce≈° pomoct? A co z toho bude≈° m√≠t?
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_02"); //To mi povƒôz ty.
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_03"); //Aha, tak je to! No dob√¢e - kdy≈æ to jeho bu≈°en√≠ nƒôjak umlƒç√≠≈°, zaplat√≠m ti 25 zlaƒÉ√°k≈Ø.
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_04"); //Ale upozor≈ïuju tƒô, ≈æe s n√≠m rozumnou domluvou nic nesvede≈° - je to tot√°ln√≠ magor. Jedin√° vƒôc, kter√° by mu pomohla, je p√°r dob√¢e m√≠√¢en√Ωch facek!
 	
 	MIS_AttackFellan = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Alwin,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Alwin,LOG_RUNNING);
-	B_LogEntry (TOPIC_Alwin,"Alwin mÍ poû·dal, zda bych nep‚imÍl Fellana, aby p‚estal buöit kladivem. ZabÌt ho ale nebude zrovna to nejlepöÌ ‚eöenÌ.");
+	B_LogEntry (TOPIC_Alwin,"Alwin mƒô po≈æ√°dal, zda bych nep√¢imƒôl Fellana, aby p√¢estal bu≈°it kladivem. Zab√≠t ho ale nebude zrovna to nejlep≈°√≠ √¢e≈°en√≠.");
 		
 	
 	Info_ClearChoices (DIA_Alwin_FellanRunning);
-	Info_AddChoice (DIA_Alwin_FellanRunning, "UvidÌm, co se d· dÍlat...", DIA_Alwin_FellanRunning_Ok);
+	Info_AddChoice (DIA_Alwin_FellanRunning, "Uvid√≠m, co se d√° dƒôlat...", DIA_Alwin_FellanRunning_Ok);
 	if (hero.guild != GIL_MIL)
 	&& (hero.guild != GIL_PAL)
 	&& (hero.guild != GIL_KDF)
 	{
-		Info_AddChoice (DIA_Alwin_FellanRunning, "Kdyû ho zml·tÌm, budu z toho mÌt jenom opletaËky s domobranou...", DIA_Alwin_FellanRunning_Problems);
+		Info_AddChoice (DIA_Alwin_FellanRunning, "Kdy≈æ ho zml√°t√≠m, budu z toho m√≠t jenom opletaƒçky s domobranou...", DIA_Alwin_FellanRunning_Problems);
 	};
 };
 
 func void DIA_Alwin_FellanRunning_Ok()
 {
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_Ok_15_00"); //UvidÌm, co se d· dÍlat.
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_Ok_12_01"); //Jen si to rozmysli a pamatuj si, ûe jsem ti slÌbil 25 zla„·k˘.
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_Ok_15_00"); //Uvid√≠m, co se d√° dƒôlat.
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_Ok_12_01"); //Jen si to rozmysli a pamatuj si, ≈æe jsem ti sl√≠bil 25 zlaƒÉ√°k≈Ø.
 	
 	Info_ClearChoices (DIA_Alwin_FellanRunning);
 };
 
 func void DIA_Alwin_FellanRunning_Problems()
 {
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_Problems_15_00"); //Kdyû ho zml·tÌm, budu z toho mÌt jenom opletaËky s domobranou.
-	AI_Output (self ,other,"DIA_Alwin_Add_12_00"); //Tady v p‚Ìstavu se nÍjak· ta rvaËka tak tragicky nebere.
-	AI_Output (self ,other,"DIA_Alwin_Add_12_01"); //Ale jestli tu nÍkde nÍco ölohneö nebo mi ö·hneö na ovce, budeö v pÍknym pr˘övihu.
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_Problems_15_00"); //Kdy≈æ ho zml√°t√≠m, budu z toho m√≠t jenom opletaƒçky s domobranou.
+	AI_Output (self ,other,"DIA_Alwin_Add_12_00"); //Tady v p√¢√≠stavu se nƒôjak√° ta rvaƒçka tak tragicky nebere.
+	AI_Output (self ,other,"DIA_Alwin_Add_12_01"); //Ale jestli tu nƒôkde nƒôco ≈°lohne≈° nebo mi ≈°√°hne≈° na ovce, bude≈° v pƒôknym pr≈Ø≈°vihu.
 
-	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_01"); //Der irre Fellan wird nicht zur Miliz rennen und dich anzeigen. Du kˆnntest hˆchstens ein Problem bekommen, wenn seine Nachbarn was davon mitbekommen.
-	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_02"); //Schl‰gereien sind hier nicht gerne gesehen, und je mehr Zeugen es gibt, desto schlimmer wird die Sache.
+	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_01"); //Der irre Fellan wird nicht zur Miliz rennen und dich anzeigen. Du k√∂nntest h√∂chstens ein Problem bekommen, wenn seine Nachbarn was davon mitbekommen.
+	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_02"); //Schl√§gereien sind hier nicht gerne gesehen, und je mehr Zeugen es gibt, desto schlimmer wird die Sache.
 	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_03"); //Aber wenn du ihn dazu bringst, dass ER dich angreift, werden alle Leute, die den Kampf mitkriegen, auf deiner Seite sein.
 };
 
@@ -179,7 +179,7 @@ INSTANCE DIA_Alwin_FellanSuccess(C_INFO)
 	condition	= DIA_Alwin_FellanSuccess_Condition;
 	information	= DIA_Alwin_FellanSuccess_Info;
 	permanent	= FALSE;
-	description	= "Fellan uû kladivem tlouci nebude.";
+	description	= "Fellan u≈æ kladivem tlouci nebude.";
 };                       
 FUNC INT DIA_Alwin_FellanSuccess_Condition()
 {	
@@ -192,12 +192,12 @@ FUNC INT DIA_Alwin_FellanSuccess_Condition()
 };
 FUNC VOID DIA_Alwin_FellanSuccess_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_FellanSuccess_15_00"); //Fellan uû kladivem tlouct nebude.
-	AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_01"); //SlyöÌö to? Ticho - û·dnÈ r·ny. KoneËnÍ. Myslel jsem, ûe ten chlap nikdy nezmlkne.
+	AI_Output (other, self,"DIA_Alwin_FellanSuccess_15_00"); //Fellan u≈æ kladivem tlouct nebude.
+	AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_01"); //Sly≈°√≠≈° to? Ticho - ≈æ√°dn√© r√°ny. Koneƒçnƒô. Myslel jsem, ≈æe ten chlap nikdy nezmlkne.
 	
 	if (Npc_IsDead (Fellan) == FALSE) 
 	{
-		AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_02"); //Prok·zals mi velkou laskavost. VÌö co? D·m ti cel˝ch 30 zla„·k˘.
+		AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_02"); //Prok√°zals mi velkou laskavost. V√≠≈° co? D√°m ti cel√Ωch 30 zlaƒÉ√°k≈Ø.
 		
 		B_GiveInvItems (self, other, ItMi_Gold, 30);
 		
@@ -219,7 +219,7 @@ INSTANCE DIA_Alwin_Endlos(C_INFO)
 	condition	= DIA_Alwin_Endlos_Condition;
 	information	= DIA_Alwin_Endlos_Info;
 	permanent	= TRUE;
-	description	= "A jak se da‚Ì ovcÌm?";
+	description	= "A jak se da√¢√≠ ovc√≠m?";
 };                       
 FUNC INT DIA_Alwin_Endlos_Condition()
 {	
@@ -230,43 +230,43 @@ FUNC INT DIA_Alwin_Endlos_Condition()
 };
 FUNC VOID DIA_Alwin_Endlos_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_Endlos_15_00"); //A jak se da‚Ì ovcÌm?
+	AI_Output (other, self,"DIA_Alwin_Endlos_15_00"); //A jak se da√¢√≠ ovc√≠m?
 	
 	if (MIS_AttackFellan != LOG_SUCCESS)
 	&& (Npc_IsDead (Fellan) == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_01"); //Z toho Fellanova ml·cenÌ uû pomalu öÌlÌ. JeötÍ p·r dnÌ a budou ˙plnÍ naörot.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_01"); //Z toho Fellanova ml√°cen√≠ u≈æ pomalu ≈°√≠l√≠. Je≈°tƒô p√°r dn√≠ a budou √∫plnƒô na≈°rot.
 		
 	}
 	else if (Kapitel <= 2)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_02"); //Ovce se jen cpou a jsou ËÌm d·l tÌm tlustöÌ. StejnÍ jako moje ûena. HAHAHA (hlasitÍ se smÍje).
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_02"); //Ovce se jen cpou a jsou ƒç√≠m d√°l t√≠m tlust≈°√≠. Stejnƒô jako moje ≈æena. HAHAHA (hlasitƒô se smƒôje).
 	}
 	else if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_03"); //Moûn· bych mÍl jednu z nich klepnout - jako poslednÌ veËe‚i!
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_03"); //Mo≈æn√° bych mƒôl jednu z nich klepnout - jako posledn√≠ veƒçe√¢i!
 			AI_Output (other, self,"DIA_Alwin_Endlos_15_04"); //Jako co?
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_05"); //Pro jednoho ûold·ka, kter˝ zabil paladina. Samoz‚ejmÍ ho za to popravÌ.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_06"); //Jen se musÌm rozhodnout, kter· z nich p˘jde na popravËÌ öpalek.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_05"); //Pro jednoho ≈æold√°ka, kter√Ω zabil paladina. Samoz√¢ejmƒô ho za to poprav√≠.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_06"); //Jen se mus√≠m rozhodnout, kter√° z nich p≈Øjde na popravƒç√≠ ≈°palek.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_07"); //Lucy m· opravdu ötÍstÌ, ûe je jeötÍ naûivu.
-			AI_Output (other, self,"DIA_Alwin_Endlos_15_08"); //Myslel jsem, ûe jsi ‚Ìkal, ûe Lucy je tv· ûena.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_09"); //Spr·vnÍ, ale jedna z ovcÌ se taky jmenuje Lucy. Pr·vÍ ona mÍla b˝t poslednÌm jÌdlem pro Benneta.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_10"); //Ale nakonec se to vöechno vy‚eöilo a Lucy m˘ûe b˝t r·da.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_07"); //Lucy m√° opravdu ≈°tƒôst√≠, ≈æe je je≈°tƒô na≈æivu.
+			AI_Output (other, self,"DIA_Alwin_Endlos_15_08"); //Myslel jsem, ≈æe jsi √¢√≠kal, ≈æe Lucy je tv√° ≈æena.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_09"); //Spr√°vnƒô, ale jedna z ovc√≠ se taky jmenuje Lucy. Pr√°vƒô ona mƒôla b√Ωt posledn√≠m j√≠dlem pro Benneta.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_10"); //Ale nakonec se to v≈°echno vy√¢e≈°ilo a Lucy m≈Ø≈æe b√Ωt r√°da.
 		};
 	}
 	else if (Kapitel == 4)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_11"); //»asem je ale pozorov·nÌ pasoucÌch se ovcÌ docela nuda.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_11"); //ƒåasem je ale pozorov√°n√≠ pasouc√≠ch se ovc√≠ docela nuda.
 	}
 	else	//Kapitel 5
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_12"); //Tak se s nimi louËÌm. Lord Hagen rozk·zal, ûe vöechny ovce poslouûÌ jako z·soby pro jeho arm·du.
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_13"); //Ale aspo‡ budu mÌt vÌc Ëasu na svou ûenu.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_12"); //Tak se s nimi louƒç√≠m. Lord Hagen rozk√°zal, ≈æe v≈°echny ovce poslou≈æ√≠ jako z√°soby pro jeho arm√°du.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_13"); //Ale aspo≈ï budu m√≠t v√≠c ƒçasu na svou ≈æenu.
 	};
 };
 

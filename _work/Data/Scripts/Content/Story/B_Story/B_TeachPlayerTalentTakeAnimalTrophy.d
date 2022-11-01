@@ -27,34 +27,34 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentAnimalTrophy,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"NynÌ dok·ûu:");
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"Nyn√≠ dok√°≈æu:");
 	
-	// ------ Kˆrperteil nehmen lernen ------
+	// ------ K√∂rperteil nehmen lernen ------
 	
 	if (trophy == TROPHY_Teeth) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...zÌskat zuby r˘zn˝ch zvÌ‚at.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...z√≠skat zuby r≈Øzn√Ωch zv√≠√¢at.");};
 	if (trophy == TROPHY_Claws) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout zabit˝m öelm·m dr·py.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout zabit√Ωm ≈°elm√°m dr√°py.");};
 	if (trophy == TROPHY_Fur) 				{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] 				= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...stahovat koûeöiny.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...stahovat ko≈æe≈°iny.");};
 	if (trophy == TROPHY_ReptileSkin) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...stahovat k˘ûe z plaz˘.");}; //ADDON
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...stahovat k≈Ø≈æe z plaz≈Ø.");}; //ADDON
 	if (trophy == TROPHY_Heart) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Heart] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout srdce dÈmon˘m a golem˘m.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout srdce d√©mon≈Øm a golem≈Øm.");};
 	if (trophy == TROPHY_ShadowHorn) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ShadowHorn] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...zÌskat roh ze stÌnov˝ch öelem.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...z√≠skat roh ze st√≠nov√Ωch ≈°elem.");};
 	if (trophy == TROPHY_FireTongue) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_FireTongue] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout jazyk ohniv˝m jeötÍr˘m.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout jazyk ohniv√Ωm je≈°tƒôr≈Øm.");};
 	if (trophy == TROPHY_BFWing) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFWing] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...oddÍlit krvav˝m mouch·m k‚Ìdla.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...oddƒôlit krvav√Ωm mouch√°m k√¢√≠dla.");};
 	if (trophy == TROPHY_BFSting) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout krvav˝m mouch·m ûihadla.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout krvav√Ωm mouch√°m ≈æihadla.");};
 	if (trophy == TROPHY_Mandibles) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Mandibles] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout nestv˘r·m kusadla.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout nestv≈Ør√°m kusadla.");};
 	if (trophy == TROPHY_CrawlerPlate) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_CrawlerPlate] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...zÌskat krun˝‚e d˘lnÌch Ëerv˘.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...z√≠skat krun√Ω√¢e d≈Øln√≠ch ƒçerv≈Ø.");};
 	if (trophy == TROPHY_DrgSnapperHorn)	{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DrgSnapperHorn] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout rohy draËÌm ch‡apavc˘m.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...vyjmout rohy draƒç√≠m ch≈ïapavc≈Øm.");};
 	if (trophy == TROPHY_DragonScale) 		{	
 												PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DragonScale] 		= TRUE;	
 												CreateInvItems (Swampdragon, ItAt_DragonScale, 12);	
@@ -62,7 +62,7 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 												CreateInvItems (Firedragon, ItAt_DragonScale, 12);	
 												CreateInvItems (Icedragon, 	ItAt_DragonScale, 12);
 												
-												B_LogEntry (TOPIC_TalentAnimalTrophy,"...zÌskat öupiny z tÍl mrtv˝ch drak˘.");	
+												B_LogEntry (TOPIC_TalentAnimalTrophy,"...z√≠skat ≈°upiny z tƒôl mrtv√Ωch drak≈Ø.");	
 											};
 	if (trophy == TROPHY_DragonBlood)		{	
 												PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DragonBlood] 		= TRUE;	
@@ -71,12 +71,12 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 												CreateInvItems (Firedragon, ItAt_DragonBlood, 2);	
 												CreateInvItems (Icedragon, ItAt_DragonBlood, 2);	
 											
-												B_LogEntry (TOPIC_TalentAnimalTrophy,"...zÌskat krev z mrtvÈho draka.");
+												B_LogEntry (TOPIC_TalentAnimalTrophy,"...z√≠skat krev z mrtv√©ho draka.");
 											};
 
 	PrintScreen			(PRINT_LearnTakeAnimalTrophy, -1, -1, FONT_Screen, 2);
 	
-	// ------ bei jedem Kˆrperteil: TakeAnimalTrophy-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
+	// ------ bei jedem K√∂rperteil: TakeAnimalTrophy-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
 	Npc_SetTalentSkill 	(oth, NPC_TALENT_TAKEANIMALTROPHY, 1);
 	return TRUE;
 };

@@ -37,12 +37,12 @@ FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 FUNC VOID DIA_Addon_10025_Wache_Hi_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//Jak to jde?
-	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//Vaâím àamkatı dušenı maso pro kopáèe a stráe.
+	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//VaÃ¢Ã­m Å•amkatÃ½ duÅ¡enÃ½ maso pro kopÃ¡Äe a strÃ¡Å¾e.
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Jene otroci nic nedostávaj. Ještê tak smradlavou vodu a tvrdej chleba.
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//To têm mêstskejm krysám neublíí.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//JenÅ¾e otroci nic nedostÃ¡vaj. JeÅ¡tÄ™ tak smradlavou vodu a tvrdej chleba.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//To tÄ™m mÄ™stskejm krysÃ¡m neublÃ­Å¾Ã­.
 	};
 };
 

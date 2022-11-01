@@ -71,8 +71,8 @@ instance MENU_OPT_CONTROLS(C_MENU_DEF)
 instance MENU_ITEM_NEXTMENU(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "DalöÌ kl·vesy...";
-	text[1]		= "Konfigurace dalöÌch kl·ves";  // Kommentar
+	text[0]		= "Dal≈°√≠ kl√°vesy...";
+	text[1]		= "Konfigurace dal≈°√≠ch kl√°ves";  // Kommentar
 
 	// Positionen  und Dimensionen
 	posx		=	ctrl_sp1_1 + 2500;		posy		=	ctrl_y_start + ctrl_y_step * 21 + CTRL_GROUP6;
@@ -142,8 +142,8 @@ const int CTRL_GROUP6	= ctrl_y_step2 * 5;
 
 INSTANCE MENU_ITEM_KEY_WEAPON_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Lev˝ ˙tok";
-	text[1]			=   "kl·v. DEL nastavenÌ zruöÌ, kl·v. ENTER zad· novÈ"; // Kommentar
+	text[0]			=	"Lev√Ω √∫tok";
+	text[1]			=   "kl√°v. DEL nastaven√≠ zru≈°√≠, kl√°v. ENTER zad√° nov√©"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -159,8 +159,8 @@ INSTANCE MENU_ITEM_KEY_WEAPON_LEFT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Prav˝ ˙tok";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Prav√Ω √∫tok";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -176,8 +176,8 @@ INSTANCE MENU_ITEM_KEY_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_WEAPON_PARADE(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"KrytÌ";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Kryt√≠";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -194,7 +194,7 @@ INSTANCE MENU_ITEM_KEY_WEAPON_PARADE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -215,7 +215,7 @@ INSTANCE MENU_ITEM_INP_WEAPON_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -236,7 +236,7 @@ INSTANCE MENU_ITEM_INP_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_PARADE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -257,8 +257,8 @@ INSTANCE MENU_ITEM_INP_WEAPON_PARADE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOCKFOCUS(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"ZamÍ‚enÌ cÌle";
-	text[1]			=   	"kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Zamƒô√¢en√≠ c√≠le";
+	text[1]			=   	"kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -274,7 +274,7 @@ INSTANCE MENU_ITEM_KEY_LOCKFOCUS(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_QUICKMANA(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"Mana potion";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -291,7 +291,7 @@ INSTANCE MENU_ITEM_KEY_QUICKMANA(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_QUICKHEALTH(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"Healing potion";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -308,7 +308,7 @@ INSTANCE MENU_ITEM_KEY_QUICKHEALTH(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOCKFOCUS(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -329,7 +329,7 @@ INSTANCE MENU_ITEM_INP_LOCKFOCUS(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_QUICKMANA(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -350,7 +350,7 @@ INSTANCE MENU_ITEM_INP_QUICKMANA(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_QUICKHEALTH(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -371,7 +371,7 @@ INSTANCE MENU_ITEM_INP_QUICKHEALTH(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_HEADLINE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"OVL¡D¡NÕ";
+	text[0]		=	"OVL√ÅD√ÅN√ç";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;
@@ -384,7 +384,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_HEADLINE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_EXTKEYS_HEADLINE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ROZäÕ¬EN… OVL¡D¡NÕ";
+	text[0]		=	"ROZ≈†√ç√ÇEN√â OVL√ÅD√ÅN√ç";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;
@@ -404,8 +404,8 @@ INSTANCE MENU_ITEM_CHG_EXTKEYS_HEADLINE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_UP(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Dop‚edu";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Dop√¢edu";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			= 	ctrl_sp1_1;	posy	= 	ctrl_y_start + ctrl_y_step * 0 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]=	"RUN MENU_ITEM_INP_UP";
@@ -416,7 +416,7 @@ INSTANCE MENU_ITEM_KEY_UP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_DOWN(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"Dozadu";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_DOWN";
@@ -426,8 +426,8 @@ INSTANCE MENU_ITEM_KEY_DOWN(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"OtoËit vlevo";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Otoƒçit vlevo";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_LEFT";
@@ -437,8 +437,8 @@ INSTANCE MENU_ITEM_KEY_LEFT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"OtoËit vpravo";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Otoƒçit vpravo";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -450,8 +450,8 @@ INSTANCE MENU_ITEM_KEY_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_STRAFE_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"⁄krok vlevo";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"√ökrok vlevo";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_STRAFE_LEFT";
@@ -461,8 +461,8 @@ INSTANCE MENU_ITEM_KEY_STRAFE_LEFT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"⁄krok vpravo";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"√ökrok vpravo";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -474,7 +474,7 @@ INSTANCE MENU_ITEM_KEY_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"Skok";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -486,8 +486,8 @@ INSTANCE MENU_ITEM_KEY_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Pomal· ch˘ze";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Pomal√° ch≈Øze";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -498,8 +498,8 @@ INSTANCE MENU_ITEM_KEY_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SNEAK(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"PlÌûenÌ";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Pl√≠≈æen√≠";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 8 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -515,7 +515,7 @@ INSTANCE MENU_ITEM_KEY_SNEAK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"Akce";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -526,8 +526,8 @@ INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_WEAPON(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"TasenÌ zbranÍ";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Tasen√≠ zbranƒô";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 10 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -542,7 +542,7 @@ INSTANCE MENU_ITEM_KEY_WEAPON(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_MAP(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"Mapa";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 11 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -557,8 +557,8 @@ INSTANCE MENU_ITEM_KEY_MAP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"RozhlÌûenÌ";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Rozhl√≠≈æen√≠";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 14 + CTRL_GROUP3;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -570,7 +570,7 @@ INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"Pohled z 1. osoby";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 15 + CTRL_GROUP3;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -585,8 +585,8 @@ INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Invent·‚";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]			=	"Invent√°√¢";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 16 + CTRL_GROUP4;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -598,7 +598,7 @@ INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
 	text[0]		=	"Statistiky";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 17 + CTRL_GROUP4;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -610,8 +610,8 @@ INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SCREEN_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"⁄koly";
-	text[1]			=   "kl·v. DEL uvolnÌö a pomocÌ ENTER znovu nadefinujeö"; // Kommentar
+	text[0]		=	"√ökoly";
+	text[1]			=   "kl√°v. DEL uvoln√≠≈° a pomoc√≠ ENTER znovu nadefinuje≈°"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 18 + CTRL_GROUP4;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -629,7 +629,7 @@ INSTANCE MENU_ITEM_KEY_SCREEN_LOG(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_UP(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_KBDINPUT_BACK_PIC;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	type		= 	MENU_ITEM_INPUT;
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 0 + CTRL_GROUP1;
@@ -645,7 +645,7 @@ INSTANCE MENU_ITEM_INP_UP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_DOWN(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -661,7 +661,7 @@ INSTANCE MENU_ITEM_INP_DOWN(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -675,7 +675,7 @@ INSTANCE MENU_ITEM_INP_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -690,7 +690,7 @@ INSTANCE MENU_ITEM_INP_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_STRAFE_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -704,7 +704,7 @@ INSTANCE MENU_ITEM_INP_STRAFE_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -718,7 +718,7 @@ INSTANCE MENU_ITEM_INP_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -735,7 +735,7 @@ INSTANCE MENU_ITEM_INP_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_INP_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -752,7 +752,7 @@ instance MENU_ITEM_INP_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SNEAK(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 8 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -774,7 +774,7 @@ INSTANCE MENU_ITEM_INP_SNEAK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_ACTION(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -789,7 +789,7 @@ INSTANCE MENU_ITEM_INP_ACTION(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 10 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -805,7 +805,7 @@ INSTANCE MENU_ITEM_INP_WEAPON(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_MAP(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 11 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -825,7 +825,7 @@ INSTANCE MENU_ITEM_INP_MAP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOOK(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 14 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -842,7 +842,7 @@ INSTANCE MENU_ITEM_INP_LOOK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOOK_FP(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 15 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -864,7 +864,7 @@ INSTANCE MENU_ITEM_INP_LOOK_FP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_INVENTORY(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 16 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -881,7 +881,7 @@ INSTANCE MENU_ITEM_INP_INVENTORY(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 17 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -897,7 +897,7 @@ INSTANCE MENU_ITEM_INP_SCREEN_STATUS(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Stiskni kl·vesu, kterou chceö tÈto akci p‚i‚adit";
+	text[1] 	=   "Stiskni kl√°vesu, kterou chce≈° t√©to akci p√¢i√¢adit";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 18 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -918,8 +918,8 @@ INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ImplicitnÌ nastavenÌ";
-	text[1]		=	"Vr·tit nastavenÌ ovl·d·nÌ na implicitnÌ"; // Kommentar
+	text[0]		=	"Implicitn√≠ nastaven√≠";
+	text[1]		=	"Vr√°tit nastaven√≠ ovl√°d√°n√≠ na implicitn√≠"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 19 + CTRL_GROUP5;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -930,8 +930,8 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"AlternativnÌ nastavenÌ";
-	text[1]		=	"Nastavit ovl·d·nÌ na alternativnÌ"; // Kommentar
+	text[0]		=	"Alternativn√≠ nastaven√≠";
+	text[1]		=	"Nastavit ovl√°d√°n√≠ na alternativn√≠"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 20 + CTRL_GROUP5;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -943,7 +943,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CHG_KEYS_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZP T";
+	text[0]		=	"ZPƒòT";
 	// Position und Dimension
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 21 + CTRL_GROUP6;
 	dimy		=	300;

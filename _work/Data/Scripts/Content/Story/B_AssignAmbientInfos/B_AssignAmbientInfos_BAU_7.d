@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_7_JOIN(C_INFO)
 	condition	= DIA_BAU_7_JOIN_Condition;
 	information	= DIA_BAU_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "Co víš o têch oldnéâích?";
+	description = "Co vÃ­Å¡ o tÄ™ch Å¾oldnÃ©Ã¢Ã­ch?";
 };                       
 
 FUNC INT DIA_BAU_7_JOIN_Condition()
@@ -42,9 +42,9 @@ FUNC INT DIA_BAU_7_JOIN_Condition()
 
 FUNC VOID DIA_BAU_7_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_JOIN_15_00"); //Co víš o têch oldnéâích?
-	AI_Output (self, other, "DIA_BAU_7_JOIN_07_01"); //Onar si je najal, aby chránili jeho farmu.
-	AI_Output (self, other, "DIA_BAU_7_JOIN_07_02"); //Vêtšina se jich chová, jako by jim farma snad patâila. Ale v kadém pâípadê nás chrání.
+	AI_Output (other, self, "DIA_BAU_7_JOIN_15_00"); //Co vÃ­Å¡ o tÄ™ch Å¾oldnÃ©Ã¢Ã­ch?
+	AI_Output (self, other, "DIA_BAU_7_JOIN_07_01"); //Onar si je najal, aby chrÃ¡nili jeho farmu.
+	AI_Output (self, other, "DIA_BAU_7_JOIN_07_02"); //VÄ™tÅ¡ina se jich chovÃ¡, jako by jim farma snad patÃ¢ila. Ale v kaÅ¾dÃ©m pÃ¢Ã­padÄ™ nÃ¡s chrÃ¡nÃ­.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_BAU_7_PEOPLE(C_INFO)
 	condition	= DIA_BAU_7_PEOPLE_Condition;
 	information	= DIA_BAU_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tady tomu velí?";
+	description = "Kdo tady tomu velÃ­?";
 };                       
 
 FUNC INT DIA_BAU_7_PEOPLE_Condition()
@@ -66,8 +66,8 @@ FUNC INT DIA_BAU_7_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_7_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_PEOPLE_15_00"); //Kdo tady tomu velí?
-	AI_Output (self, other, "DIA_BAU_7_PEOPLE_07_01"); //Ta velká farma patâí Onarovi. Stejnê jako ty malı okolo. Ale ty jsou teë v pronájmu.
+	AI_Output (other, self, "DIA_BAU_7_PEOPLE_15_00"); //Kdo tady tomu velÃ­?
+	AI_Output (self, other, "DIA_BAU_7_PEOPLE_07_01"); //Ta velkÃ¡ farma patÃ¢Ã­ Onarovi. StejnÄ™ jako ty malÃ½ okolo. Ale ty jsou teÃ« v pronÃ¡jmu.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_BAU_7_LOCATION(C_INFO)
 	condition	= DIA_BAU_7_LOCATION_Condition;
 	information	= DIA_BAU_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Povêz mi o tomhle místê nêco víc.";
+	description = "PovÄ™z mi o tomhle mÃ­stÄ™ nÄ™co vÃ­c.";
 };                       
 
 FUNC INT DIA_BAU_7_LOCATION_Condition()
@@ -89,9 +89,9 @@ FUNC INT DIA_BAU_7_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_7_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_LOCATION_15_00"); //Âekni mi víc o tomhle místê.
-	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_01"); //Ta velká farma tady na vıchodê údolí patâí Onarovi. Sekobova leí na severu.
-	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_02"); //A Bengarova farma je na náhorní plošinê na jihovıchodê. Z údolí se tam dostaneš celkem snadno - vedou tam velké kamenné schody.
+	AI_Output (other, self, "DIA_BAU_7_LOCATION_15_00"); //Ã‚ekni mi vÃ­c o tomhle mÃ­stÄ™.
+	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_01"); //Ta velkÃ¡ farma tady na vÃ½chodÄ™ ÃºdolÃ­ patÃ¢Ã­ Onarovi. Sekobova leÅ¾Ã­ na severu.
+	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_02"); //A Bengarova farma je na nÃ¡hornÃ­ ploÅ¡inÄ™ na jihovÃ½chodÄ™. Z ÃºdolÃ­ se tam dostaneÅ¡ celkem snadno - vedou tam velkÃ© kamennÃ© schody.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_BAU_7_STANDARD(C_INFO)
 	condition	= DIA_BAU_7_STANDARD_Condition;
 	information	= DIA_BAU_7_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_BAU_7_STANDARD_Condition()
 {
@@ -111,31 +111,31 @@ func INT DIA_BAU_7_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_BAU_7_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_01"); //Vyhlásili jsme nezávislost - u nebudeme mêstu dál odvádêt danê. Král pro nás nehne ani prstem - u jsme toho mêli prostê dost!
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_01"); //VyhlÃ¡sili jsme nezÃ¡vislost - uÅ¾ nebudeme mÄ™stu dÃ¡l odvÃ¡dÄ™t danÄ™. KrÃ¡l pro nÃ¡s nehne ani prstem - uÅ¾ jsme toho mÄ™li prostÄ™ dost!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_02"); //Teë se tady toho moc nedêje.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_02"); //TeÃ« se tady toho moc nedÄ™je.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_03"); //Zaèaly se tu proslıchat zvêsti o dracích! Král si vdycky vymyslí nêco novıho, jen aby mohl z lidí vymáèknout další peníze.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_03"); //ZaÄaly se tu proslÃ½chat zvÄ™sti o dracÃ­ch! KrÃ¡l si vÅ¾dycky vymyslÃ­ nÄ™co novÃ½ho, jen aby mohl z lidÃ­ vymÃ¡Äknout dalÅ¡Ã­ penÃ­ze.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_04"); //Dávej si pozor, poslední dobou se sem pâes bránu dostává strašnê moc temnejch postav a divokı zvêâe.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_04"); //DÃ¡vej si pozor, poslednÃ­ dobou se sem pÃ¢es brÃ¡nu dostÃ¡vÃ¡ straÅ¡nÄ™ moc temnejch postav a divokÃ½ zvÄ™Ã¢e.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_05"); //Teë, kdy jsou draci mrtví, se koneènê pánové paladinové uráèili odtáhnout z mêsta. U je naèase, aby se sem vrátila spravedlnost.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_05"); //TeÃ«, kdyÅ¾ jsou draci mrtvÃ­, se koneÄnÄ™ pÃ¡novÃ© paladinovÃ© urÃ¡Äili odtÃ¡hnout z mÄ™sta. UÅ¾ je naÄase, aby se sem vrÃ¡tila spravedlnost.
 	};
 };
 

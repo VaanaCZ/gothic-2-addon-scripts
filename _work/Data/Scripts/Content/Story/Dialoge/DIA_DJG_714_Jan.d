@@ -23,7 +23,7 @@ FUNC VOID DIA_Jan_EXIT_Info()
 };
 
 //***********
-//	Begr¸ﬂung
+//	Begr√º√üung
 //***********
 
 INSTANCE DIA_JAN_Hello (C_INFO)
@@ -48,8 +48,8 @@ FUNC INT DIA_Jan_Hello_Condition()
  
 FUNC VOID DIA_Jan_Hello_Info()
 {		
-		AI_Output (self ,other,"DIA_Jan_Hello_10_00"); //To byl ale v·ûnÍ blbej n·pad sem jezdit.
-		AI_Output (self ,other,"DIA_Jan_Hello_10_01"); //MÍl jsem dojem, ûe je tu nÍco, co by st·lo za to. Ale aû na p·r arogantnÌch paladin˘ a sk‚et˘ tu nenÌ v˘bec nic.
+		AI_Output (self ,other,"DIA_Jan_Hello_10_00"); //To byl ale v√°≈ænƒô blbej n√°pad sem jezdit.
+		AI_Output (self ,other,"DIA_Jan_Hello_10_01"); //Mƒôl jsem dojem, ≈æe je tu nƒôco, co by st√°lo za to. Ale a≈æ na p√°r arogantn√≠ch paladin≈Ø a sk√¢et≈Ø tu nen√≠ v≈Øbec nic.
 };
 
 //*******************************************
@@ -63,7 +63,7 @@ INSTANCE DIA_JAN_Dragons (C_INFO)
 	condition	= DIA_Jan_Dragons_Condition;
 	information	= DIA_Jan_Dragons_Info;
 	permanent	= FALSE;
-	description	= "ZapomnÍli jsme na draky, co?";
+	description	= "Zapomnƒôli jsme na draky, co?";
 };                       
 
 FUNC INT DIA_Jan_Dragons_Condition()
@@ -79,34 +79,34 @@ FUNC INT DIA_Jan_Dragons_Condition()
  
 FUNC VOID DIA_Jan_Dragons_Info()
 {		
-		AI_Output (other,self ,"DIA_Jan_Dragons_15_00"); //ZapomnÍli jsme na draky, co?
-		AI_Output (self ,other,"DIA_Jan_Dragons_10_01"); //(posmÍönÍ) Jak bych mohl zapomenout. J· ti povÌm, co. J· jsem kov·‚, ne bojovnÌk.
-		AI_Output (self ,other,"DIA_Jan_Dragons_10_02"); //DÍl·m zbranÍ. Bojov·nÌ p‚enech·v·m ostatnÌm.
-		AI_Output (other,self ,"DIA_Jan_Dragons_15_03"); //Tak proË jsi nez˘stal u kovadliny?
-		AI_Output (self ,other,"DIA_Jan_Dragons_10_04"); //PaladinovÈ mÍ nechtÍli pustit do kov·rny. Nemohl jsem nic dÍlat, pokud jsem nechtÍl skonËit v hladomornÍ.
+		AI_Output (other,self ,"DIA_Jan_Dragons_15_00"); //Zapomnƒôli jsme na draky, co?
+		AI_Output (self ,other,"DIA_Jan_Dragons_10_01"); //(posmƒô≈°nƒô) Jak bych mohl zapomenout. J√° ti pov√≠m, co. J√° jsem kov√°√¢, ne bojovn√≠k.
+		AI_Output (self ,other,"DIA_Jan_Dragons_10_02"); //Dƒôl√°m zbranƒô. Bojov√°n√≠ p√¢enech√°v√°m ostatn√≠m.
+		AI_Output (other,self ,"DIA_Jan_Dragons_15_03"); //Tak proƒç jsi nez≈Østal u kovadliny?
+		AI_Output (self ,other,"DIA_Jan_Dragons_10_04"); //Paladinov√© mƒô nechtƒôli pustit do kov√°rny. Nemohl jsem nic dƒôlat, pokud jsem nechtƒôl skonƒçit v hladomornƒô.
 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Jan_Dragons_10_05"); //Ty jsi taky jednÌm z nich. Tak co kdybys u nich za mÍ ztratil slovo?
+			AI_Output (self ,other,"DIA_Jan_Dragons_10_05"); //Ty jsi taky jedn√≠m z nich. Tak co kdybys u nich za mƒô ztratil slovo?
 		};
 
 		Info_ClearChoices (DIA_JAN_Dragons);
-		Info_AddChoice (DIA_JAN_Dragons,"Uû musÌm jÌt.",DIA_JAN_Dragons_ShitHappen);
-		Info_AddChoice (DIA_JAN_Dragons,"Co z toho budu mÌt, kdyû ti pom˘ûu?",DIA_JAN_Dragons_Reward);
-		Info_AddChoice (DIA_JAN_Dragons,"PokusÌm se ti pomoct.",DIA_JAN_Dragons_HelpYou);
+		Info_AddChoice (DIA_JAN_Dragons,"U≈æ mus√≠m j√≠t.",DIA_JAN_Dragons_ShitHappen);
+		Info_AddChoice (DIA_JAN_Dragons,"Co z toho budu m√≠t, kdy≈æ ti pom≈Ø≈æu?",DIA_JAN_Dragons_Reward);
+		Info_AddChoice (DIA_JAN_Dragons,"Pokus√≠m se ti pomoct.",DIA_JAN_Dragons_HelpYou);
 };
 
 FUNC VOID DIA_JAN_Dragons_HelpYou ()
 {	
-	AI_Output (other,self ,"DIA_JAN_Dragons_HelpYou_15_00"); //PokusÌm se ti pomoct.
-	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_01"); //Jak to chceö udÍlat? Parcival na‚Ìdil, aby n·s nespouötÍli z oËÌ.
-	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_02"); //Nikdo si nedovolÌ neuposlechnout.
-	AI_Output (other,self ,"DIA_JAN_Dragons_HelpYou_15_03"); //To nech na mnÍ.
-	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_04"); //Nedovedu si p‚edstavit, ûe by tÍ vyslechl.
+	AI_Output (other,self ,"DIA_JAN_Dragons_HelpYou_15_00"); //Pokus√≠m se ti pomoct.
+	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_01"); //Jak to chce≈° udƒôlat? Parcival na√¢√≠dil, aby n√°s nespou≈°tƒôli z oƒç√≠.
+	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_02"); //Nikdo si nedovol√≠ neuposlechnout.
+	AI_Output (other,self ,"DIA_JAN_Dragons_HelpYou_15_03"); //To nech na mnƒô.
+	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_04"); //Nedovedu si p√¢edstavit, ≈æe by tƒô vyslechl.
 	
 	Log_CreateTopic (TOPIC_JanBecomesSmith, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_JanBecomesSmith, LOG_RUNNING);
-	B_LogEntry (TOPIC_JanBecomesSmith,"Drakobijce Jan z hradu v HornickÈm ˙dolÌ chce pracovat v kov·rnÍ. Parcival mu to ale nechce dovolit."); 
+	B_LogEntry (TOPIC_JanBecomesSmith,"Drakobijce Jan z hradu v Hornick√©m √∫dol√≠ chce pracovat v kov√°rnƒô. Parcival mu to ale nechce dovolit."); 
 
 
 	MIS_JanBecomesSmith = LOG_RUNNING;
@@ -115,20 +115,20 @@ FUNC VOID DIA_JAN_Dragons_HelpYou ()
 
 FUNC VOID DIA_JAN_Dragons_Reward ()
 {
-	AI_Output (other,self ,"DIA_JAN_Dragons_Reward_15_00"); //Co z toho budu mÌt, kdyû ti pom˘ûu?
-	AI_Output (self ,other,"DIA_JAN_Dragons_Reward_10_01"); //Nem·m v˘bec nic. Nanejv˝ö tÍ m˘ûu nÍËemu p‚iuËit.
+	AI_Output (other,self ,"DIA_JAN_Dragons_Reward_15_00"); //Co z toho budu m√≠t, kdy≈æ ti pom≈Ø≈æu?
+	AI_Output (self ,other,"DIA_JAN_Dragons_Reward_10_01"); //Nem√°m v≈Øbec nic. Nanejv√Ω≈° tƒô m≈Ø≈æu nƒôƒçemu p√¢iuƒçit.
 	if (hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_JAN_Dragons_Reward_10_02"); //Zn·m postup, jak udÍlat Ëepele z magickÈ rudy jeötÍ tvrdöÌ.
+		AI_Output (self ,other,"DIA_JAN_Dragons_Reward_10_02"); //Zn√°m postup, jak udƒôlat ƒçepele z magick√© rudy je≈°tƒô tvrd≈°√≠.
 	};
 	Jan_TeachPlayer = TRUE;
 };
 
 FUNC VOID DIA_JAN_Dragons_ShitHappen ()
 {
-	AI_Output (other,self ,"DIA_JAN_Dragons_ShitHappen_15_00"); //MÍl bych si hledÍt svÈho.
-	AI_Output (self ,other,"DIA_JAN_Dragons_ShitHappen_10_01"); //No ˙ûasn˝. J· teÎ nem˘ûu opustit hrad a ani nem˘ûu nic vykovat.
+	AI_Output (other,self ,"DIA_JAN_Dragons_ShitHappen_15_00"); //Mƒôl bych si hledƒôt sv√©ho.
+	AI_Output (self ,other,"DIA_JAN_Dragons_ShitHappen_10_01"); //No √∫≈æasn√Ω. J√° te√´ nem≈Ø≈æu opustit hrad a ani nem≈Ø≈æu nic vykovat.
 
 	Info_ClearChoices (DIA_JAN_Dragons);
 };
@@ -143,7 +143,7 @@ INSTANCE DIA_JAN_Home (C_INFO)
 	condition	= DIA_Jan_Home_Condition;
 	information	= DIA_Jan_Home_Info;
 	permanent	= FALSE;
-	description	= "Odkud jsi p‚iöel?";
+	description	= "Odkud jsi p√¢i≈°el?";
 };                       
 
 FUNC INT DIA_Jan_Home_Condition()
@@ -158,9 +158,9 @@ FUNC INT DIA_Jan_Home_Condition()
  
 FUNC VOID DIA_Jan_Home_Info()
 {		
-		AI_Output (other,self ,"DIA_Jan_Home_15_00"); //Odkud jsi p‚iöel?
-		AI_Output (self ,other,"DIA_Jan_Home_10_01"); //P‚idal jsem se k nÍjak˝m muû˘m z hor. MÍli jsme namÌ‚eno do ˙dolÌ, kde jsme si chtÍli trochu p‚ilepöit lovem drak˘.
-		AI_Output (self ,other,"DIA_Jan_Home_10_02"); //Jejich velitel vystupoval pod jmÈnem Sylvio. Chlape, to bylo hovado. Zach·zel se mnou jako s kusem hadru.
+		AI_Output (other,self ,"DIA_Jan_Home_15_00"); //Odkud jsi p√¢i≈°el?
+		AI_Output (self ,other,"DIA_Jan_Home_10_01"); //P√¢idal jsem se k nƒôjak√Ωm mu≈æ≈Øm z hor. Mƒôli jsme nam√≠√¢eno do √∫dol√≠, kde jsme si chtƒôli trochu p√¢ilep≈°it lovem drak≈Ø.
+		AI_Output (self ,other,"DIA_Jan_Home_10_02"); //Jejich velitel vystupoval pod jm√©nem Sylvio. Chlape, to bylo hovado. Zach√°zel se mnou jako s kusem hadru.
 };
 
 //*******************************************
@@ -174,7 +174,7 @@ INSTANCE DIA_JAN_OldCamp (C_INFO)
 	condition	= DIA_Jan_OldCamp_Condition;
 	information	= DIA_Jan_OldCamp_Info;
 	permanent	= TRUE;
-	description	= "Co se na hradÍ stalo?";
+	description	= "Co se na hradƒô stalo?";
 };                       
 
 FUNC INT DIA_Jan_OldCamp_Condition()
@@ -189,8 +189,8 @@ FUNC INT DIA_Jan_OldCamp_Condition()
  
 FUNC VOID DIA_Jan_OldCamp_Info()
 {		
-		AI_Output (other,self ,"DIA_Jan_OldCamp_15_00"); //Co vöechno se na hradÍ stalo?
-		AI_Output (self ,other,"DIA_Jan_OldCamp_10_01"); //Nic, o Ëem bych vÍdÍl. JasnÍ, znepokojuje mÍ, co se dÍje venku za hradbama.
+		AI_Output (other,self ,"DIA_Jan_OldCamp_15_00"); //Co v≈°echno se na hradƒô stalo?
+		AI_Output (self ,other,"DIA_Jan_OldCamp_10_01"); //Nic, o ƒçem bych vƒôdƒôl. Jasnƒô, znepokojuje mƒô, co se dƒôje venku za hradbama.
 };
 //*******************************************
 //	Ich hab mit Parcival geredet
@@ -219,18 +219,18 @@ FUNC INT DIA_Jan_Parcival_Condition()
 FUNC VOID DIA_Jan_Parcival_Info()
 {		
 		AI_Output (other,self ,"DIA_Jan_Parcival_15_00"); //Mluvil jsem s Parcivalem.
-		AI_Output (self ,other,"DIA_Jan_Parcival_10_01"); //Takûe?
+		AI_Output (self ,other,"DIA_Jan_Parcival_10_01"); //Tak≈æe?
 
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (other,self ,"DIA_Jan_Parcival_15_02"); //N·m drakobijc˘m prostÍ nevÍ‚Ì.
+			AI_Output (other,self ,"DIA_Jan_Parcival_15_02"); //N√°m drakobijc≈Øm prostƒô nevƒô√¢√≠.
 		}
 		else
 		{
-			AI_Output (other,self ,"DIA_Jan_Parcival_15_03"); //V·m drakobijc˘m prostÍ nevÍ‚Ì.
+			AI_Output (other,self ,"DIA_Jan_Parcival_15_03"); //V√°m drakobijc≈Øm prostƒô nevƒô√¢√≠.
 		};
-		AI_Output (self ,other,"DIA_Jan_Parcival_10_04"); //Sakra. ProstÍ chci jen nÍjakou pr·ci.
-		AI_Output (self ,other,"DIA_Jan_Parcival_10_05"); //Tak to asi budu muset vzd·t. TeÎ uû mi m˘ûe pomoct jen Garond.
+		AI_Output (self ,other,"DIA_Jan_Parcival_10_04"); //Sakra. Prostƒô chci jen nƒôjakou pr√°ci.
+		AI_Output (self ,other,"DIA_Jan_Parcival_10_05"); //Tak to asi budu muset vzd√°t. Te√´ u≈æ mi m≈Ø≈æe pomoct jen Garond.
 };
 
 
@@ -245,7 +245,7 @@ INSTANCE DIA_JAN_JanIsSmith (C_INFO)
 	condition	= DIA_Jan_JanIsSmith_Condition;
 	information	= DIA_Jan_JanIsSmith_Info;
 	permanent	= FALSE;
-	description	= "BÍû si pro kladivo, m·ö pr·ci.";
+	description	= "Bƒô≈æ si pro kladivo, m√°≈° pr√°ci.";
 };                       
 
 FUNC INT DIA_Jan_JanIsSmith_Condition()
@@ -259,10 +259,10 @@ FUNC INT DIA_Jan_JanIsSmith_Condition()
  
 FUNC VOID DIA_Jan_JanIsSmith_Info()
 {		
-		AI_Output (other,self ,"DIA_Jan_JanIsSmith_15_00"); //BÍû si pro kladivo, m·ö pr·ci.
-		AI_Output (self ,other,"DIA_Jan_JanIsSmith_10_01"); //Tys to dok·zal? Jaks to za‚Ìdil?
-		AI_Output (other,self ,"DIA_Jan_JanIsSmith_15_02"); //P‚imluvil jsem se za tebe, tak a„ mÍ nezklameö.
-		AI_Output (self ,other,"DIA_Jan_JanIsSmith_10_03"); //NemÍj strach. Jsem r·d, ûe v˘bec m˘ûu pracovat.
+		AI_Output (other,self ,"DIA_Jan_JanIsSmith_15_00"); //Bƒô≈æ si pro kladivo, m√°≈° pr√°ci.
+		AI_Output (self ,other,"DIA_Jan_JanIsSmith_10_01"); //Tys to dok√°zal? Jaks to za√¢√≠dil?
+		AI_Output (other,self ,"DIA_Jan_JanIsSmith_15_02"); //P√¢imluvil jsem se za tebe, tak aƒÉ mƒô nezklame≈°.
+		AI_Output (self ,other,"DIA_Jan_JanIsSmith_10_03"); //Nemƒôj strach. Jsem r√°d, ≈æe v≈Øbec m≈Ø≈æu pracovat.
 
 		AI_StopProcessInfos (self);
 	
@@ -280,7 +280,7 @@ INSTANCE DIA_JAN_SellWeapons (C_INFO)
 	condition	= DIA_Jan_SellWeapons_Condition;
 	information	= DIA_Jan_SellWeapons_Info;
 	permanent	= FALSE;
-	description	= "Prod·v·ö nÍjakÈ zbranÍ?";
+	description	= "Prod√°v√°≈° nƒôjak√© zbranƒô?";
 };                       
 
 FUNC INT DIA_Jan_SellWeapons_Condition()
@@ -296,18 +296,18 @@ FUNC INT DIA_Jan_SellWeapons_Condition()
  
 FUNC VOID DIA_Jan_SellWeapons_Info()
 {		
-		AI_Output (other,self ,"DIA_Jan_SellWeapons_15_00"); //Prod·v·ö nÍjakÈ zbranÍ?
+		AI_Output (other,self ,"DIA_Jan_SellWeapons_15_00"); //Prod√°v√°≈° nƒôjak√© zbranƒô?
 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Jan_SellWeapons_10_01"); //To vÌö. Aby mÍ tvÌ kolegovÈ öoupli za m‚Ìûe za Ëernej obchod, co? Ne, zapome‡ na to.
+			AI_Output (self ,other,"DIA_Jan_SellWeapons_10_01"); //To v√≠≈°. Aby mƒô tv√≠ kolegov√© ≈°oupli za m√¢√≠≈æe za ƒçernej obchod, co? Ne, zapome≈ï na to.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Jan_SellWeapons_10_02"); //UdÍlal bych to, kdybych mohl. Ale nejd‚Ìv musÌm udÍlat dost zbranÌ pro paladiny tady na hradÍ.
+			AI_Output (self ,other,"DIA_Jan_SellWeapons_10_02"); //Udƒôlal bych to, kdybych mohl. Ale nejd√¢√≠v mus√≠m udƒôlat dost zbran√≠ pro paladiny tady na hradƒô.
 		};
 
-		AI_Output (self ,other,"DIA_Jan_SellWeapons_10_03"); //Ale m˘ûu ti uk·zat, jak si vykovat vlastnÌ zbra‡.
+		AI_Output (self ,other,"DIA_Jan_SellWeapons_10_03"); //Ale m≈Ø≈æu ti uk√°zat, jak si vykovat vlastn√≠ zbra≈ï.
 		
 		Jan_TeachPlayer = TRUE;
 };
@@ -323,7 +323,7 @@ INSTANCE Jan_Training_Talente (C_INFO)
 	condition	= Jan_Training_Talente_Condition;
 	information	= Jan_Training_Talente_Info;
 	permanent	= TRUE;
-	description	= "NauË mÍ kov·‚skÈmu ‚emeslu.";
+	description	= "Nauƒç mƒô kov√°√¢sk√©mu √¢emeslu.";
 };                       
 
 FUNC INT Jan_Training_Talente_Condition()
@@ -338,8 +338,8 @@ FUNC INT Jan_Training_Talente_Condition()
  
 FUNC VOID Jan_Training_Talente_Info()
 {		
-	AI_Output (other,self ,"DIA_Jan_TeachPlayer_15_00"); //NauË mÍ kov·‚skÈmu ‚emeslu.
-	AI_Output (self,other ,"DIA_Jan_TeachPlayer_10_01"); //Co p‚esnÍ chceö vyrobit?
+	AI_Output (other,self ,"DIA_Jan_TeachPlayer_15_00"); //Nauƒç mƒô kov√°√¢sk√©mu √¢emeslu.
+	AI_Output (self,other ,"DIA_Jan_TeachPlayer_10_01"); //Co p√¢esnƒô chce≈° vyrobit?
 	
 	Info_ClearChoices (Jan_Training_Talente);
 	
@@ -347,7 +347,7 @@ FUNC VOID Jan_Training_Talente_Info()
 	
 	if ( PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(Jan_Training_Talente, B_BuildLearnString("NauËit se kov·‚stvÌ"	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Jan_Training_Smith_Common);
+		Info_AddChoice		(Jan_Training_Talente, B_BuildLearnString("Nauƒçit se kov√°√¢stv√≠"	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Jan_Training_Smith_Common);
 	};
 	if ( PLAYER_TALENT_SMITH[WEAPON_Common] == TRUE)
 	{	
@@ -409,7 +409,7 @@ FUNC VOID Jan_Training_Smith_2hSpecial2 ()
 };
 
 //*******************************************
-//	Kann ich bei dir R¸stungen kaufen?
+//	Kann ich bei dir R√ºstungen kaufen?
 //*******************************************
 
 //-------------------------------------
@@ -423,7 +423,7 @@ INSTANCE DIA_JAN_SellArmor (C_INFO)
 	condition	= DIA_Jan_SellArmor_Condition;
 	information	= DIA_Jan_SellArmor_Info;
 	permanent	= TRUE;
-	description	= "M˘ûu si od tebe koupit nÍjakou zbroj?";
+	description	= "M≈Ø≈æu si od tebe koupit nƒôjakou zbroj?";
 };                       
 
 FUNC INT DIA_Jan_SellArmor_Condition()
@@ -439,48 +439,48 @@ FUNC INT DIA_Jan_SellArmor_Condition()
  
 FUNC VOID DIA_Jan_SellArmor_Info()
 {		
-		AI_Output (other,self ,"DIA_Jan_SellArmor_15_00"); //M˘ûu si od tebe koupit nÍjakou zbroj?
+		AI_Output (other,self ,"DIA_Jan_SellArmor_15_00"); //M≈Ø≈æu si od tebe koupit nƒôjakou zbroj?
 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Jan_SellArmor_10_01"); //TvÈmu brnÍnÌ se nic nevyrovn·. Zapome‡ na to.
+			AI_Output (self ,other,"DIA_Jan_SellArmor_10_01"); //Tv√©mu brnƒôn√≠ se nic nevyrovn√°. Zapome≈ï na to.
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Jan_SellArmor_10_02"); //M·g, co chce brnÍnÌ? Zapome‡ na to - bÍû se podÌvat za krejËÌm. Pro tebe zbroj udÍlat nedok·ûu.
+			AI_Output (self ,other,"DIA_Jan_SellArmor_10_02"); //M√°g, co chce brnƒôn√≠? Zapome≈ï na to - bƒô≈æ se pod√≠vat za krejƒç√≠m. Pro tebe zbroj udƒôlat nedok√°≈æu.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Jan_SellArmor_10_03"); //Kdybych nÍjakou mÍl, tak bych ti ji prodal. Bohuûel, û·dnou nem·m.
+			AI_Output (self ,other,"DIA_Jan_SellArmor_10_03"); //Kdybych nƒôjakou mƒôl, tak bych ti ji prodal. Bohu≈æel, ≈æ√°dnou nem√°m.
 			
 			Info_ClearChoices (DIA_JAN_SellArmor);
-			Info_AddChoice (DIA_JAN_SellArmor,"H·d·m, ûe s tÌm nejde nic dÍlat.",DIA_JAN_SellArmor_Sorry);
-			Info_AddChoice (DIA_JAN_SellArmor,"A mohl bys pro mÍ nÍjakou udÍlat?",DIA_JAN_SellArmor_BuildOne);
+			Info_AddChoice (DIA_JAN_SellArmor,"H√°d√°m, ≈æe s t√≠m nejde nic dƒôlat.",DIA_JAN_SellArmor_Sorry);
+			Info_AddChoice (DIA_JAN_SellArmor,"A mohl bys pro mƒô nƒôjakou udƒôlat?",DIA_JAN_SellArmor_BuildOne);
 		};	
 };
 
 FUNC VOID DIA_JAN_SellArmor_Sorry()
 {
-	AI_Output (other,self ,"DIA_JAN_SellArmor_Sorry_15_00"); //H·d·m, ûe s tÌm nejde nic dÍlat.
-	AI_Output (self ,other,"DIA_JAN_SellArmor_Sorry_10_01"); //Kdybys p‚ece jen na nÍco narazil, dej mi vÍdÍt.
+	AI_Output (other,self ,"DIA_JAN_SellArmor_Sorry_15_00"); //H√°d√°m, ≈æe s t√≠m nejde nic dƒôlat.
+	AI_Output (self ,other,"DIA_JAN_SellArmor_Sorry_10_01"); //Kdybys p√¢ece jen na nƒôco narazil, dej mi vƒôdƒôt.
 	
 	Info_ClearChoices (DIA_JAN_SellArmor);
 };
 
 FUNC VOID DIA_JAN_SellArmor_BuildOne()
 {
-	AI_Output (other,self ,"DIA_JAN_SellArmor_BuildOne_15_00"); //A mohl bys pro mÍ nÍjakou udÍlat?
-	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_01"); //Dobr·, jestli stojÌö o nÍco lepöÌho, musÌö mi opat‚it vhodn˝ materi·l.
-	AI_Output (other,self ,"DIA_JAN_SellArmor_BuildOne_15_02"); //Co pot‚ebujeö?
-	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_03"); //Chceö bojovat s draky, ne? P‚ines mi nÍjak˝ draËÌ öupiny - s tÌm uû bych pro tebe mohl nÍco udÍlat.
-	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_04"); //20 öupin by mohlo staËit.
+	AI_Output (other,self ,"DIA_JAN_SellArmor_BuildOne_15_00"); //A mohl bys pro mƒô nƒôjakou udƒôlat?
+	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_01"); //Dobr√°, jestli stoj√≠≈° o nƒôco lep≈°√≠ho, mus√≠≈° mi opat√¢it vhodn√Ω materi√°l.
+	AI_Output (other,self ,"DIA_JAN_SellArmor_BuildOne_15_02"); //Co pot√¢ebuje≈°?
+	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_03"); //Chce≈° bojovat s draky, ne? P√¢ines mi nƒôjak√Ω draƒç√≠ ≈°upiny - s t√≠m u≈æ bych pro tebe mohl nƒôco udƒôlat.
+	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_04"); //20 ≈°upin by mohlo staƒçit.
 	
 	DIA_JAN_SellArmor_permanent = TRUE;
 	Info_ClearChoices (DIA_JAN_SellArmor);
 };
 
 //*******************************************
-//	Ich habe die Drachenschuppen f¸r dich.
+//	Ich habe die Drachenschuppen f√ºr dich.
 //*******************************************
 
 //-------------------------------------------
@@ -494,7 +494,7 @@ INSTANCE DIA_JAN_Dragonscales (C_INFO)
 	condition	= DIA_Jan_Dragonscales_Condition;
 	information	= DIA_Jan_Dragonscales_Info;
 	permanent	= TRUE;
-	description	= "M·m pro tebe ty draËÌ öupiny.";
+	description	= "M√°m pro tebe ty draƒç√≠ ≈°upiny.";
 };                       
 
 FUNC INT DIA_Jan_Dragonscales_Condition()
@@ -512,12 +512,12 @@ FUNC INT DIA_Jan_Dragonscales_Condition()
  var int DIA_JAN_Dragonscales_OneTime;
 FUNC VOID DIA_Jan_Dragonscales_Info()
 {		
-		AI_Output (other,self ,"DIA_JAN_Dragonscales_15_00"); //M·m pro tebe ty draËÌ öupiny.
+		AI_Output (other,self ,"DIA_JAN_Dragonscales_15_00"); //M√°m pro tebe ty draƒç√≠ ≈°upiny.
 		if (Npc_HasItems (other,ItAT_Dragonscale) >= 20)
 		{
 			B_GiveInvItems (other,self ,ItAT_Dragonscale,20);
-			AI_Output (self ,other,"DIA_JAN_Dragonscales_10_01"); //Dobr·, s tÌm uû se d· nÍco dÍlat.
-			AI_Output (self ,other,"DIA_JAN_Dragonscales_10_02"); //Vra„ se zÌtra, pak uû by toho mohl b˝t kus hotov˝.
+			AI_Output (self ,other,"DIA_JAN_Dragonscales_10_01"); //Dobr√°, s t√≠m u≈æ se d√° nƒôco dƒôlat.
+			AI_Output (self ,other,"DIA_JAN_Dragonscales_10_02"); //VraƒÉ se z√≠tra, pak u≈æ by toho mohl b√Ωt kus hotov√Ω.
 			
 			if (DIA_JAN_Dragonscales_OneTime == FALSE)//Joly:zur sicherheit
 			{
@@ -529,12 +529,12 @@ FUNC VOID DIA_Jan_Dragonscales_Info()
 		}
 		else
 		{	
-			AI_Output (self ,other,"DIA_JAN_Dragonscales_10_03"); //Pot‚ebuju 20 draËÌch öupin, jinak ti nebudu moct û·dn˝ brnÍnÌ vyrobit.
+			AI_Output (self ,other,"DIA_JAN_Dragonscales_10_03"); //Pot√¢ebuju 20 draƒç√≠ch ≈°upin, jinak ti nebudu moct ≈æ√°dn√Ω brnƒôn√≠ vyrobit.
 		};	
 };
 
 //*******************************************
-//	Ist die R¸stung fertig?
+//	Ist die R√ºstung fertig?
 //*******************************************
 
 //-------------------------------
@@ -549,7 +549,7 @@ INSTANCE DIA_JAN_ArmorReady (C_INFO)
 	condition	= DIA_Jan_ArmorReady_Condition;
 	information	= DIA_Jan_ArmorReady_Info;
 	permanent	= TRUE;
-	description	= "Je ta zbroj hotov·?";
+	description	= "Je ta zbroj hotov√°?";
 };                       
 
 FUNC INT DIA_Jan_ArmorReady_Condition()
@@ -564,17 +564,17 @@ FUNC INT DIA_Jan_ArmorReady_Condition()
 
 FUNC VOID DIA_Jan_ArmorReady_Info()
 {		
-		AI_Output (other,self ,"DIA_JAN_ArmorReady_15_00"); //Je ta zbroj hotov·?
+		AI_Output (other,self ,"DIA_JAN_ArmorReady_15_00"); //Je ta zbroj hotov√°?
 		if (Jan_Sells_Armor == Wld_GetDay ())
 		{
-			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_01"); //Ne, jeötÍ ne. Vra„ se zÌtra.
+			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_01"); //Ne, je≈°tƒô ne. VraƒÉ se z√≠tra.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_02"); //Ano, v·ûnÍ mistrovsk˝ kousek. M˘ûeö si ho koupit, pokud o nÍj stojÌö.
-			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_03"); //UdÍl·m ti zvl·ötnÌ cenu. 12 000 zlat˝ch.
-			AI_Output (other,self ,"DIA_JAN_ArmorReady_15_04"); //Co? Po tom vöem, co jsem pro tebe udÍlal?
-			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_05"); //NebuÎ takovej. MusÌm se nÍjak ûivit. BuÎ ber, nebo nech leûet.
+			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_02"); //Ano, v√°≈ænƒô mistrovsk√Ω kousek. M≈Ø≈æe≈° si ho koupit, pokud o nƒôj stoj√≠≈°.
+			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_03"); //Udƒôl√°m ti zvl√°≈°tn√≠ cenu. 12 000 zlat√Ωch.
+			AI_Output (other,self ,"DIA_JAN_ArmorReady_15_04"); //Co? Po tom v≈°em, co jsem pro tebe udƒôlal?
+			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_05"); //Nebu√´ takovej. Mus√≠m se nƒôjak ≈æivit. Bu√´ ber, nebo nech le≈æet.
 		
 			DJG_Armor_is_offered = TRUE;
 			DIA_JAN_ArmorReady_NoPerm = TRUE;
@@ -596,7 +596,7 @@ instance DIA_Jan_DJG_ARMOR_M		(C_INFO)
 	condition	 = 	DIA_Jan_DJG_ARMOR_M_Condition;
 	information	 = 	DIA_Jan_DJG_ARMOR_M_Info;
 	permanent	 = 	TRUE;
-	description	 =	"St‚ednÍ tÍûk· drakobijeck· zbroj: Ochrana: zbranÍ 80, öÌpy 80 (12000 zlat˝ch)"; //Wenn ‰ndern, dann bitte auch in der Info-Instanz. s.u.
+	description	 =	"St√¢ednƒô tƒô≈æk√° drakobijeck√° zbroj: Ochrana: zbranƒô 80, ≈°√≠py 80 (12000 zlat√Ωch)"; //Wenn √§ndern, dann bitte auch in der Info-Instanz. s.u.
 };
 
 func int DIA_Jan_DJG_ARMOR_M_Condition ()
@@ -611,11 +611,11 @@ func int DIA_Jan_DJG_ARMOR_M_Condition ()
 
 func void DIA_Jan_DJG_ARMOR_M_Info ()
 {	
-	AI_Output	(other,self ,"DIA_Jan_DJG_ARMOR_M_15_00"); //Chci si koupit novÈ brnÍnÌ.
+	AI_Output	(other,self ,"DIA_Jan_DJG_ARMOR_M_15_00"); //Chci si koupit nov√© brnƒôn√≠.
 	
 	if (Npc_HasItems (other,itmi_Gold) >= 12000)
 	{
-		AI_Output 	(self ,other,"DIA_Jan_DJG_ARMOR_M_10_01"); //Jak vidÌö, tak m· cenu zlata.
+		AI_Output 	(self ,other,"DIA_Jan_DJG_ARMOR_M_10_01"); //Jak vid√≠≈°, tak m√° cenu zlata.
 		
 		B_GiveInvItems (other,self,ItMi_Gold,12000);
 		CreateInvItems (self,ITAR_DJG_M,1);
@@ -625,7 +625,7 @@ func void DIA_Jan_DJG_ARMOR_M_Info ()
 	}
 	else
 	{
-		AI_Output 	(self ,other,"DIA_Jan_DJG_ARMOR_M_10_02"); //Nem·ö dost zlata.
+		AI_Output 	(self ,other,"DIA_Jan_DJG_ARMOR_M_10_02"); //Nem√°≈° dost zlata.
 	};	
 	
 };
@@ -640,7 +640,7 @@ instance DIA_Jan_DragonPlettBericht		(C_INFO)
 	condition	 = 	DIA_Jan_DragonPlettBericht_Condition;
 	information	 = 	DIA_Jan_DragonPlettBericht_Info;
 
-	description	 = 	"A co se t˝Ëe tÍch drak˘...";
+	description	 = 	"A co se t√Ωƒçe tƒôch drak≈Ø...";
 };
 
 var int DIA_Jan_DragonPlettBericht_NoPerm;
@@ -664,31 +664,31 @@ func void DIA_Jan_DragonPlettBericht_Info ()
 	}
 	else if ((MIS_KilledDragons == 2) || (MIS_KilledDragons == 3))
 	{
-		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_01"); //Zabil jsem p·r drak˘.
+		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_01"); //Zabil jsem p√°r drak≈Ø.
 	}
 	else 
 	{
-		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_02"); //Zabil jsem vöechny draky.
+		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_02"); //Zabil jsem v≈°echny draky.
 	};
 	
 	
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_03"); //A co? Jsi p‚ece drakobijec, ne?
-		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_04"); //Nejsi n·hodou taky jednÌm z nich?
+		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_03"); //A co? Jsi p√¢ece drakobijec, ne?
+		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_04"); //Nejsi n√°hodou taky jedn√≠m z nich?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_05"); //To je v˝born˝. Ale abych pravdu ‚ekl, v˘bec mÍ to nezajÌm·.
+		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_05"); //To je v√Ωborn√Ω. Ale abych pravdu √¢ekl, v≈Øbec mƒô to nezaj√≠m√°.
 	};
 	
-	AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_06"); //Uû jsem ti ‚Ìkal, ûe radÍj vyr·bÌm zbranÍ, neû abych chodil zabÌjet draky.
+	AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_06"); //U≈æ jsem ti √¢√≠kal, ≈æe radƒôj vyr√°b√≠m zbranƒô, ne≈æ abych chodil zab√≠jet draky.
 
 	if (hero.guild != GIL_DJG)
 	&& (hero.guild != GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_07"); //NicmÈnÍ, je jedna vÍc, co by mÍ mohla zajÌmat.
-		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_08"); //Jestli mi doneseö nÍjakou draËÌ krev, sluönÍ ti za ni zaplatÌm.
+		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_07"); //Nicm√©nƒô, je jedna vƒôc, co by mƒô mohla zaj√≠mat.
+		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_08"); //Jestli mi donese≈° nƒôjakou draƒç√≠ krev, slu≈°nƒô ti za ni zaplat√≠m.
 		Jan_WantsDragonBlood = TRUE;
 	};
 };
@@ -704,7 +704,7 @@ instance DIA_Jan_DragonBlood		(C_INFO)
 	information	 = 	DIA_Jan_DragonBlood_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"M·m pro tebe tu draËÌ krev.";
+	description	 = 	"M√°m pro tebe tu draƒç√≠ krev.";
 };
 
 func int DIA_Jan_DragonBlood_Condition ()
@@ -720,15 +720,15 @@ func int DIA_Jan_DragonBlood_Condition ()
 
 func void DIA_Jan_DragonBlood_Info ()
 {
-	AI_Output			(other, self, "DIA_Jan_DragonBlood_15_00"); //M·m pro tebe tu draËÌ krev.
-	AI_Output			(self, other, "DIA_Jan_DragonBlood_10_01"); //To je skvÍl˝. KoupÌm vöechno, co m·ö.
+	AI_Output			(other, self, "DIA_Jan_DragonBlood_15_00"); //M√°m pro tebe tu draƒç√≠ krev.
+	AI_Output			(self, other, "DIA_Jan_DragonBlood_10_01"); //To je skvƒôl√Ω. Koup√≠m v≈°echno, co m√°≈°.
 
 	Info_ClearChoices	(DIA_Jan_DragonBlood);
 	Info_AddChoice	(DIA_Jan_DragonBlood, DIALOG_BACK, DIA_Jan_DragonBlood_BACK );
 	if ((Npc_HasItems (other,ItAt_DragonBlood)) >= 1)
 	{
-		Info_AddChoice	(DIA_Jan_DragonBlood, "(Vöechno)", DIA_Jan_DragonBlood_all );
-		Info_AddChoice	(DIA_Jan_DragonBlood, "(Jednu lahviËku)", DIA_Jan_DragonBlood_1 );
+		Info_AddChoice	(DIA_Jan_DragonBlood, "(V≈°echno)", DIA_Jan_DragonBlood_all );
+		Info_AddChoice	(DIA_Jan_DragonBlood, "(Jednu lahviƒçku)", DIA_Jan_DragonBlood_1 );
 	};
 };
 func void DIA_Jan_DragonBlood_BACK ()
@@ -755,8 +755,8 @@ func void DIA_Jan_DragonBlood_1 ()
 	Info_AddChoice	(DIA_Jan_DragonBlood, DIALOG_BACK, DIA_Jan_DragonBlood_BACK );
 	if ((Npc_HasItems (other,ItAt_DragonBlood)) >= 1)
 	{
-		Info_AddChoice	(DIA_Jan_DragonBlood, "(Vöechno)", DIA_Jan_DragonBlood_all );
-		Info_AddChoice	(DIA_Jan_DragonBlood, "(Jednu lahviËku)", DIA_Jan_DragonBlood_1 );
+		Info_AddChoice	(DIA_Jan_DragonBlood, "(V≈°echno)", DIA_Jan_DragonBlood_all );
+		Info_AddChoice	(DIA_Jan_DragonBlood, "(Jednu lahviƒçku)", DIA_Jan_DragonBlood_1 );
 	};
 	
 
@@ -786,8 +786,8 @@ func void DIA_Jan_DragonBlood_all ()
 	Info_AddChoice	(DIA_Jan_DragonBlood, DIALOG_BACK, DIA_Jan_DragonBlood_BACK );
 	if ((Npc_HasItems (other,ItAt_DragonBlood)) >= 1)
 	{
-		Info_AddChoice	(DIA_Jan_DragonBlood, "(Vöechno)", DIA_Jan_DragonBlood_all );
-		Info_AddChoice	(DIA_Jan_DragonBlood, "(Jednu lahviËku)", DIA_Jan_DragonBlood_1 );
+		Info_AddChoice	(DIA_Jan_DragonBlood, "(V≈°echno)", DIA_Jan_DragonBlood_all );
+		Info_AddChoice	(DIA_Jan_DragonBlood, "(Jednu lahviƒçku)", DIA_Jan_DragonBlood_1 );
 	};
 
 	var string BloodText;
@@ -808,7 +808,7 @@ instance DIA_Jan_NACHOCGATEOPEN		(C_INFO)
 	information	 = 	DIA_Jan_NACHOCGATEOPEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Je vöechno v po‚·dku?";
+	description	 = 	"Je v≈°echno v po√¢√°dku?";
 };
 
 func int DIA_Jan_NACHOCGATEOPEN_Condition ()
@@ -821,15 +821,15 @@ func int DIA_Jan_NACHOCGATEOPEN_Condition ()
 
 func void DIA_Jan_NACHOCGATEOPEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jan_NACHOCGATEOPEN_15_00"); //Je vöechno v po‚·dku?
-	AI_Output			(self, other, "DIA_Jan_NACHOCGATEOPEN_10_01"); //V po‚·dku nenÌ naprosto nic!
+	AI_Output			(other, self, "DIA_Jan_NACHOCGATEOPEN_15_00"); //Je v≈°echno v po√¢√°dku?
+	AI_Output			(self, other, "DIA_Jan_NACHOCGATEOPEN_10_01"); //V po√¢√°dku nen√≠ naprosto nic!
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Jan_NACHOCGATEOPEN_10_02"); //ProË jste vy idioti otevÌrali tu br·nu? Vy paladinovÈ jste taky chytr˝ jak prdy ve spodk·ch!
+		AI_Output			(self, other, "DIA_Jan_NACHOCGATEOPEN_10_02"); //Proƒç jste vy idioti otev√≠rali tu br√°nu? Vy paladinov√© jste taky chytr√Ω jak prdy ve spodk√°ch!
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Jan_NACHOCGATEOPEN_10_03"); //Tak prostÍ öli a otev‚eli tu br·nu. Tupci! Tohle prostÍ nepochopim.
+		AI_Output			(self, other, "DIA_Jan_NACHOCGATEOPEN_10_03"); //Tak prostƒô ≈°li a otev√¢eli tu br√°nu. Tupci! Tohle prostƒô nepochopim.
 	};
 	AI_StopProcessInfos (self);
 };

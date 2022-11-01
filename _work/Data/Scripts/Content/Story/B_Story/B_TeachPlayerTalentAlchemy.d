@@ -27,41 +27,41 @@ func int B_TeachPlayerTalentAlchemy (var C_NPC slf, var C_NPC oth, var int potio
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentAlchemy,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentAlchemy,"K namÌch·nÌ lektvaru pot‚ebuji pr·zdnou laboratornÌ lahviËku a nezbytnÈ p‚Ìsady. U alchymistickÈ kolony z nich pak mohu vytvo‚it pot‚ebn˝ elixÌr."); 
+	B_LogEntry (TOPIC_TalentAlchemy,"K nam√≠ch√°n√≠ lektvaru pot√¢ebuji pr√°zdnou laboratorn√≠ lahviƒçku a nezbytn√© p√¢√≠sady. U alchymistick√© kolony z nich pak mohu vytvo√¢it pot√¢ebn√Ω elix√≠r."); 
 	
 	// ------ Trank brauen lernen ------
 	if (potion == POTION_Health_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_01] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro ESENCI HOJIV… SÕLY: 2 lÈËivÈ rostliny a 1 luËnÌ pohanka"); };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro ESENCI HOJIV√â S√çLY: 2 l√©ƒçiv√© rostliny a 1 luƒçn√≠ pohanka"); };
 	
 	if (potion == POTION_Health_02)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_02] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro EXTRAKT HOJIV… SÕLY: 2 lÈËivÈ byliny a 1 luËnÌ pohanka.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro EXTRAKT HOJIV√â S√çLY: 2 l√©ƒçiv√© byliny a 1 luƒçn√≠ pohanka.");  };
 	
 	if (potion == POTION_Health_03)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_03] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro ELIXÕR HOJIV… SÕLY: 2 lÈËivÈ ko‚eny a 1 luËnÌ pohanka.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro ELIX√çR HOJIV√â S√çLY: 2 l√©ƒçiv√© ko√¢eny a 1 luƒçn√≠ pohanka.");  };
 	
 	if (potion == POTION_Mana_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_01] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro ESENCI MANY: 2 ohnivÈ kop‚ivy a 1 luËnÌ pohanka.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro ESENCI MANY: 2 ohniv√© kop√¢ivy a 1 luƒçn√≠ pohanka.");  };
 	
 	if (potion == POTION_Mana_02)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_02] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro EXTRAKT MANY: 2 ohnivÈ b˝lÌ a 1 luËnÌ pohanka.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro EXTRAKT MANY: 2 ohniv√© b√Ωl√≠ a 1 luƒçn√≠ pohanka.");  };
 	
 	if (potion == POTION_Mana_03)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_03] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro ELIXÕR MANY: 2 ohnivÈ ko‚eny a 1 luËnÌ pohanka");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro ELIX√çR MANY: 2 ohniv√© ko√¢eny a 1 luƒçn√≠ pohanka");  };
 	
 	if (potion == POTION_Speed)			{	PLAYER_TALENT_ALCHEMY[POTION_Speed] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro LEKTVAR RYCHLOSTI: 1 ch‡apavËÌ b˝lÌ a 1 luËnÌ pohanka.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro LEKTVAR RYCHLOSTI: 1 ch≈ïapavƒç√≠ b√Ωl√≠ a 1 luƒçn√≠ pohanka.");  };
 	
 	if (potion == POTION_Perm_STR)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro LEKTVAR SÕLY: 1 draËÌ ko‚en a 1 kr·lovsk˝ ö„ovÌk.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro LEKTVAR S√çLY: 1 draƒç√≠ ko√¢en a 1 kr√°lovsk√Ω ≈°ƒÉov√≠k.");  };
 	
 	if (potion == POTION_Perm_DEX)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro LEKTVAR OBRATNOSTI: 1 goblinÌ bobule a 1 kr·lovsk˝ ö„ovÌk.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro LEKTVAR OBRATNOSTI: 1 goblin√≠ bobule a 1 kr√°lovsk√Ω ≈°ƒÉov√≠k.");  };
 	
 	if (potion == POTION_Perm_Mana)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro ELIXÕR DUCHA: 1 ohniv˝ ko‚en a 1 kr·lovsk˝ ö„ovÌk.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro ELIX√çR DUCHA: 1 ohniv√Ω ko√¢en a 1 kr√°lovsk√Ω ≈°ƒÉov√≠k.");  };
 	
 	if (potion == POTION_Perm_Health)	{	PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"P‚Ìsady pro ELIXÕR éIVOTA: 1 lÈËiv˝ ko‚en a 1 kr·lovsk˝ ö„ovÌk.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"P√¢√≠sady pro ELIX√çR ≈ΩIVOTA: 1 l√©ƒçiv√Ω ko√¢en a 1 kr√°lovsk√Ω ≈°ƒÉov√≠k.");  };
 
 	PrintScreen			(PRINT_LearnAlchemy, -1, -1, FONT_Screen, 2);
 	

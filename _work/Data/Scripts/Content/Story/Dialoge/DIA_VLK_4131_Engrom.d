@@ -48,10 +48,10 @@ func int DIA_Engrom_HALLO_Condition ()
 func void DIA_Engrom_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Engrom_HALLO_15_00"); //Jak se vede?
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_01"); //MizernÍ!
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_01"); //Mizernƒô!
 	AI_Output			(other, self, "DIA_Engrom_HALLO_15_02"); //Mmh!
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_03"); //Co chceö slyöet. CelÈ dny nedÍl·m nic jinÈho, neû ûe kouk·m na tuhle zatracenou ‚eku.
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_04"); //Nalevo se fl·kajÌ sk‚eti, napravo banditi a kaûd˝ den jÌm akor·t ËÌhavËÌ maso. VÌö, uû mi to vöecko leze krkem.
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_03"); //Co chce≈° sly≈°et. Cel√© dny nedƒôl√°m nic jin√©ho, ne≈æ ≈æe kouk√°m na tuhle zatracenou √¢eku.
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_04"); //Nalevo se fl√°kaj√≠ sk√¢eti, napravo banditi a ka≈æd√Ω den j√≠m akor√°t ƒç√≠havƒç√≠ maso. V√≠≈°, u≈æ mi to v≈°ecko leze krkem.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Engrom_WhatAboutLeaving		(C_INFO)
 	condition	 = 	DIA_Engrom_WhatAboutLeaving_Condition;
 	information	 = 	DIA_Engrom_WhatAboutLeaving_Info;
 
-	description	 = 	"P‚em˝ölel jsi nÍkdy o tom, ûe odsud odejdeö?";
+	description	 = 	"P√¢em√Ω≈°lel jsi nƒôkdy o tom, ≈æe odsud odejde≈°?";
 };
 
 func int DIA_Engrom_WhatAboutLeaving_Condition ()
@@ -78,14 +78,14 @@ func int DIA_Engrom_WhatAboutLeaving_Condition ()
 
 func void DIA_Engrom_WhatAboutLeaving_Info ()
 {
-	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_00"); //P‚em˝ölel jsi nÍkdy o tom, ûe odsud odejdeö?
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_01"); //No jasnÍ, to p‚eci nenÌ problÈm!
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_02"); //Nejd‚Ìv se prosek·m tlupama sk‚et˘, pozdravÌm vöecky ty ostatnÌ p‚Ìöery, co tu vöude obch·zejÌ, a pak prostÍ projdu pr˘smykem!
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_03"); //To je p‚ece sranda!
-	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_04"); //J· se sem ale taky dostal.
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_05"); //Chceö mi nakukat, ûes prostÍ proöel pr˘smykem?
-	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_06"); //VÌcemÈnÍ ano!
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_07"); //Tak to jsi mÍl teda kliku. Dokud tu bude vöechno vzh˘ru nohama, ani se odsud nehnu.
+	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_00"); //P√¢em√Ω≈°lel jsi nƒôkdy o tom, ≈æe odsud odejde≈°?
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_01"); //No jasnƒô, to p√¢eci nen√≠ probl√©m!
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_02"); //Nejd√¢√≠v se prosek√°m tlupama sk√¢et≈Ø, pozdrav√≠m v≈°ecky ty ostatn√≠ p√¢√≠≈°ery, co tu v≈°ude obch√°zej√≠, a pak prostƒô projdu pr≈Øsmykem!
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_03"); //To je p√¢ece sranda!
+	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_04"); //J√° se sem ale taky dostal.
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_05"); //Chce≈° mi nakukat, ≈æes prostƒô pro≈°el pr≈Øsmykem?
+	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_06"); //V√≠cem√©nƒô ano!
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_07"); //Tak to jsi mƒôl teda kliku. Dokud tu bude v≈°echno vzh≈Øru nohama, ani se odsud nehnu.
 
 };
 
@@ -116,7 +116,7 @@ func void DIA_Engrom_Jagd_Info ()
 {
 	B_WasMachtJagd ();
 	//Joly:AI_Output			(other, self, "DIA_Engrom_Jagd_15_00"); //Schon mal dran gedacht, hier abzuhauen?
-	AI_Output			(self, other, "DIA_Engrom_Jagd_12_01"); //Jedinou ˙tÍchu vidÌm v lovu, ale r·d bych tu nÍkdy vidÍl i nÍco jinÈho neû po‚·d ty nechutn˝ ËÌhavce.
+	AI_Output			(self, other, "DIA_Engrom_Jagd_12_01"); //Jedinou √∫tƒôchu vid√≠m v lovu, ale r√°d bych tu nƒôkdy vidƒôl i nƒôco jin√©ho ne≈æ po√¢√°d ty nechutn√Ω ƒç√≠havce.
 };
 
 //#####################################################################
@@ -198,7 +198,7 @@ instance DIA_Engrom_B_NpcObsessedByDMT		(C_INFO)
 	condition	 = 	DIA_Engrom_B_NpcObsessedByDMT_Condition;
 	information	 = 	DIA_Engrom_B_NpcObsessedByDMT_Info;
 
-	description	 = 	"Je vöechno v po‚·dku?";
+	description	 = 	"Je v≈°echno v po√¢√°dku?";
 };
 
 func int DIA_Engrom_B_NpcObsessedByDMT_Condition ()
@@ -227,7 +227,7 @@ instance DIA_Engrom_BESSEN		(C_INFO)
 	information	 = 	DIA_Engrom_BESSEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Posedlo tÍ zlo.";
+	description	 = 	"Posedlo tƒô zlo.";
 };
 
 func int DIA_Engrom_BESSEN_Condition ()
@@ -242,16 +242,16 @@ func int DIA_Engrom_BESSEN_Condition ()
 
 func void DIA_Engrom_BESSEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_00"); //Posedlo tÍ zlo.
+	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_00"); //Posedlo tƒô zlo.
 
 	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_01"); //Dovol mi, abych ti pomohl.
-	AI_Output			(self, other, "DIA_Engrom_BESSEN_12_02"); //(k‚iËÌ) Nesahej na mÍ!
+	AI_Output			(self, other, "DIA_Engrom_BESSEN_12_02"); //(k√¢iƒç√≠) Nesahej na mƒô!
 
 	B_NpcClearObsessionByDMT (self);
 		
 	Npc_SetTarget 		(self, other);
 	
-	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bˆse) Flag nicht zur¸ckgesetzt wird 
+	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (b√∂se) Flag nicht zur√ºckgesetzt wird 
 	other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 	AI_StartState 		(self, ZS_Flee, 0, "");	

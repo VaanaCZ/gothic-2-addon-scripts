@@ -10,8 +10,8 @@
 // Ambient Vobs			(ZTOGGLE RENDERAMBIENTVOBS)
 // Env Mapping			(ZTOGGLE ENVMAP)
 
-// optional vielleicht sp‰ter noch
-// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nˆtig auf ‰lteren Karten und evtl. Performance Gewinn (TEST!)
+// optional vielleicht sp√§ter noch
+// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht n√∂tig auf √§lteren Karten und evtl. Performance Gewinn (TEST!)
 // Wolkenschatten		(TODO):     bisher nur in der INI einstellbar, bringt Performance wenn aus und es regnet
 
 INSTANCE MENU_OPT_EXT(C_MENU_DEF)
@@ -52,7 +52,7 @@ INSTANCE MENU_OPT_EXT(C_MENU_DEF)
 
 INSTANCE MENUITEM_EXT_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"DALäÕ NASTAVENÕ";
+	text[0]		=	"DAL≈†√ç NASTAVEN√ç";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -70,8 +70,8 @@ INSTANCE MENUITEM_EXT_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_FFT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Vlny na vodÍ";
-	text[1]		= 	"Zapnout Ëi vypnout vlnÍnÌ vody"; // Kommentar
+	text[0]		=	"Vlny na vodƒô";
+	text[1]		= 	"Zapnout ƒçi vypnout vlnƒôn√≠ vody"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -101,8 +101,8 @@ instance MENUITEM_EXT_FFT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_WATERFADE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"MizenÌ vody";
-	text[1]		= 	"Zapnout Ëi vypnout mizenÌ vody"; // Kommentar
+	text[0]		=	"Mizen√≠ vody";
+	text[1]		= 	"Zapnout ƒçi vypnout mizen√≠ vody"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -132,8 +132,8 @@ instance MENUITEM_EXT_WATERFADE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_OBJWIND(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"VÌtr";
-	text[1]		= 	"ZapÌn· pohyb p‚edmÍt˘ ve vÍtru"; // Kommentar
+	text[0]		=	"V√≠tr";
+	text[1]		= 	"Zap√≠n√° pohyb p√¢edmƒôt≈Ø ve vƒôtru"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -197,8 +197,8 @@ instance MENUITEM_EXT_AMBIENTOBJ_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_CLOUDSHADOW(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"StÌny mrak˘";
-	text[1]		= 	"Zapnout Ëi vypnout stÌny mrak˘"; // Kommentar
+	text[0]		=	"St√≠ny mrak≈Ø";
+	text[1]		= 	"Zapnout ƒçi vypnout st√≠ny mrak≈Ø"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3500;	dimy		=	750;
@@ -229,8 +229,8 @@ instance MENUITEM_EXT_CLOUDSHADOW_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_AMBIENTPFX(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zvuky okolÌ";
-	text[1]		= 	"Zapnout Ëi vypnout zvuky prost‚edÌ"; // Kommentar
+	text[0]		=	"Zvuky okol√≠";
+	text[1]		= 	"Zapnout ƒçi vypnout zvuky prost√¢ed√≠"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -261,8 +261,8 @@ instance MENUITEM_EXT_AMBIENTPFX_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_ENVMAP(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZrcadlenÌ";
-	text[1]		= 	"Zapnout Ëi vypnout zrcadlenÌ a odrazy"; // Kommentar
+	text[0]		=	"Zrcadlen√≠";
+	text[1]		= 	"Zapnout ƒçi vypnout zrcadlen√≠ a odrazy"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;
 	dimx		=	3000;	dimy		=	750;
@@ -293,8 +293,8 @@ instance MENUITEM_EXT_ENVMAP_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_RADIALFOG(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Radi·lnÌ mlha";
-	text[1]		= 	"Zapnout Ëi vypnout radi·lnÌ mlhu"; // Kommentar
+	text[0]		=	"Radi√°ln√≠ mlha";
+	text[1]		= 	"Zapnout ƒçi vypnout radi√°ln√≠ mlhu"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*6;
 	dimx		=	3000;	dimy		=	750;
@@ -326,7 +326,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZP T";
+	text[0]		=	"ZPƒòT";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

@@ -31,7 +31,7 @@ instance DIA_Grimbald_HALLO		(C_INFO)
 	condition	 = 	DIA_Grimbald_HALLO_Condition;
 	information	 = 	DIA_Grimbald_HALLO_Info;
 
-	description	 = 	"»ek·ö na nÍco?";
+	description	 = 	"ƒåek√°≈° na nƒôco?";
 };
 
 func int DIA_Grimbald_HALLO_Condition ()
@@ -42,44 +42,44 @@ var int Grimbald_PissOff;
 
 func void DIA_Grimbald_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_15_00"); //»ek·ö na nÍco?
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_15_00"); //ƒåek√°≈° na nƒôco?
 	
 	if 	(
 		(Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //Jsem na lovu. To je snad jasnÈ.
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //Jsem na lovu. To je snad jasn√©.
 				Grimbald_PissOff = TRUE;
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //Uû ne. TeÎ jsi tady, ne?
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //U≈æ ne. Te√´ jsi tady, ne?
 				
 				Info_ClearChoices	(DIA_Grimbald_HALLO);
-				Info_AddChoice	(DIA_Grimbald_HALLO, "»ek· na mÍ pr·ce.", DIA_Grimbald_HALLO_nein );
-				Info_AddChoice	(DIA_Grimbald_HALLO, "Co tÌm myslÌö?", DIA_Grimbald_HALLO_Was );
-				Info_AddChoice	(DIA_Grimbald_HALLO, "ProË j·?", DIA_Grimbald_HALLO_ich );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "ƒåek√° na mƒô pr√°ce.", DIA_Grimbald_HALLO_nein );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "Co t√≠m mysl√≠≈°?", DIA_Grimbald_HALLO_Was );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "Proƒç j√°?", DIA_Grimbald_HALLO_ich );
 			};
 };
 
 func void DIA_Grimbald_HALLO_ich ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_ich_15_00"); //ProË j·?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_ich_07_01"); //Vypad·ö silnÍ. Chl·pek jako ty se mi m˘ûe hodit.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_ich_15_00"); //Proƒç j√°?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_ich_07_01"); //Vypad√°≈° silnƒô. Chl√°pek jako ty se mi m≈Ø≈æe hodit.
 };
 
 func void DIA_Grimbald_HALLO_Was ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //Co tÌm myslÌö?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //ChtÍl bych ulovit ty ch‡apavce t·mhle naho‚e, ale m·m dojem, ûe je jich na mÍ samotnÈho moc.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //Co t√≠m mysl√≠≈°?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //Chtƒôl bych ulovit ty ch≈ïapavce t√°mhle naho√¢e, ale m√°m dojem, ≈æe je jich na mƒô samotn√©ho moc.
 
-	Info_AddChoice	(DIA_Grimbald_HALLO, "Se mnou nepoËÌtej.", DIA_Grimbald_HALLO_Was_neinnein );
-	Info_AddChoice	(DIA_Grimbald_HALLO, "Dobr·. Pom˘ûu ti. Jdi prvnÌ.", DIA_Grimbald_HALLO_Was_ja );
+	Info_AddChoice	(DIA_Grimbald_HALLO, "Se mnou nepoƒç√≠tej.", DIA_Grimbald_HALLO_Was_neinnein );
+	Info_AddChoice	(DIA_Grimbald_HALLO, "Dobr√°. Pom≈Ø≈æu ti. Jdi prvn√≠.", DIA_Grimbald_HALLO_Was_ja );
 };
 func void DIA_Grimbald_HALLO_Was_neinnein ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neInnosiin_15_00"); //Se mnou nepoËÌtej.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neInnosiin_15_00"); //Se mnou nepoƒç√≠tej.
 	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neInnosiin_07_01"); //Tak to vypadni, babo.
 	Grimbald_PissOff = TRUE;
 	Info_ClearChoices	(DIA_Grimbald_HALLO);
@@ -87,17 +87,17 @@ func void DIA_Grimbald_HALLO_Was_neinnein ()
 
 func void DIA_Grimbald_HALLO_Was_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //Dobr·. Pom˘ûu ti. Jdi prvnÌ.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Jasn· vÍc. Ale moc se nep‚ibliûuj k tomu ËernÈmu trolovi tam naho‚e. Jinak tÍ rozsek· na kousky, jasn˝?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //»eho se bojÌö, ûe se drûÌö tak zp·tky.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //Dobr√°. Pom≈Ø≈æu ti. Jdi prvn√≠.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Jasn√° vƒôc. Ale moc se nep√¢ibli≈æuj k tomu ƒçern√©mu trolovi tam naho√¢e. Jinak tƒô rozsek√° na kousky, jasn√Ω?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //ƒåeho se boj√≠≈°, ≈æe se dr≈æ√≠≈° tak zp√°tky.
 	B_StartOtherRoutine	(self,"Lov");
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Grimbald_HALLO_nein ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //»ek· na mÍ pr·ce.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //Nevykl·dej nesmysly. Co by mohlo b˝t tady uprost‚ed divoËiny tak d˘leûitÈho?
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //ƒåek√° na mƒô pr√°ce.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //Nevykl√°dej nesmysly. Co by mohlo b√Ωt tady uprost√¢ed divoƒçiny tak d≈Øle≈æit√©ho?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -111,7 +111,7 @@ instance DIA_Grimbald_Jagd		(C_INFO)
 	information	 = 	DIA_Grimbald_Jagd_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"M˘ûeö mÍ nauËit nÍco o lovu?";
+	description	 = 	"M≈Ø≈æe≈° mƒô nauƒçit nƒôco o lovu?";
 };
 
 func int DIA_Grimbald_Jagd_Condition ()
@@ -125,46 +125,46 @@ func int DIA_Grimbald_Jagd_Condition ()
 
 func void DIA_Grimbald_Jagd_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //M˘ûeö mÍ nauËit nÍco o lovu?
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //M≈Ø≈æe≈° mƒô nauƒçit nƒôco o lovu?
 	if 	((Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 		|| (Grimbald_PissOff == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Mmh. Dobr·. Nebyl jsi mi sice zrovna moc platn˝, ale nebudu na tebe tak tvrd˝.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Mmh. Dobr√°. Nebyl jsi mi sice zrovna moc platn√Ω, ale nebudu na tebe tak tvrd√Ω.
 		Grimbald_TeachAnimalTrophy = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_02"); //JasnÍ. Ale bude tÍ to nÍco st·t.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_02"); //Jasnƒô. Ale bude tƒô to nƒôco st√°t.
 		B_Say_Gold (self, other, 200);
 	
 		Info_ClearChoices	(DIA_Grimbald_Jagd);
-		Info_AddChoice	(DIA_Grimbald_Jagd, "Budu o tom p‚em˝ölet.", DIA_Grimbald_Jagd_zuviel );
-		Info_AddChoice	(DIA_Grimbald_Jagd, "Tak fajn, tady m·ö sv˝ prachy.", DIA_Grimbald_Jagd_ja );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "Budu o tom p√¢em√Ω≈°let.", DIA_Grimbald_Jagd_zuviel );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "Tak fajn, tady m√°≈° sv√Ω prachy.", DIA_Grimbald_Jagd_ja );
 	};
 };
 
 func void DIA_Grimbald_Jagd_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_ja_15_00"); //Dobr·. Tady jsou penÌze
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_ja_15_00"); //Dobr√°. Tady jsou pen√≠ze
 
 		if (B_GiveInvItems (other, self, ItMi_Gold,200))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_01"); //Fajn. Tak mi ‚ekni, aû se budeö chtÌt nÍco nauËit.
+			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_01"); //Fajn. Tak mi √¢ekni, a≈æ se bude≈° cht√≠t nƒôco nauƒçit.
 			Grimbald_TeachAnimalTrophy = TRUE;
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_02"); //Dej mi ty prachy a pak tÍ m˘ûu nÍco nauËit.
+			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_02"); //Dej mi ty prachy a pak tƒô m≈Ø≈æu nƒôco nauƒçit.
 		};
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };  
 
 func void DIA_Grimbald_Jagd_zuviel ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //Budu o tom p‚em˝ölet.
-	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //Kdyû to ‚Ìk·ö.
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //Budu o tom p√¢em√Ω≈°let.
+	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //Kdy≈æ to √¢√≠k√°≈°.
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };
 
@@ -179,7 +179,7 @@ instance DIA_Grimbald_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grimbald_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grimbald_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"R·d bych se nauËil nÍjak˝m loveck˝m technik·m.";
+	description	 = 	"R√°d bych se nauƒçil nƒôjak√Ωm loveck√Ωm technik√°m.";
 };
 
 func int DIA_Grimbald_TEACHHUNTING_Condition ()
@@ -192,7 +192,7 @@ func int DIA_Grimbald_TEACHHUNTING_Condition ()
 var int DIA_Grimbald_TEACHHUNTING_OneTime;
 func void DIA_Grimbald_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //R·d bych se nauËil nÍjak˝m loveck˝m technik·m.
+	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //R√°d bych se nauƒçil nƒôjak√Ωm loveck√Ωm technik√°m.
 	if (DIA_Grimbald_TEACHHUNTING_OneTime == FALSE)
 	{
 		B_StartOtherRoutine	(self,"JagdOver");
@@ -207,34 +207,34 @@ func void DIA_Grimbald_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 			)
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_01"); //Co p‚esnÍ bys chtÍl vÍdÍt?
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_01"); //Co p√¢esnƒô bys chtƒôl vƒôdƒôt?
 	
 				Info_AddChoice		(DIA_Grimbald_TEACHHUNTING, DIALOG_BACK, DIA_Grimbald_TEACHHUNTING_BACK);
 			
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("éihadla krvav˝ch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Grimbald_TEACHHUNTING_BFSting);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("≈Ωihadla krvav√Ωch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Grimbald_TEACHHUNTING_BFSting);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("K‚Ìdla krvav˝ch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Grimbald_TEACHHUNTING_BFWing	);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("K√¢√≠dla krvav√Ωch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Grimbald_TEACHHUNTING_BFWing	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("VyjmutÌ dr·p˘",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Grimbald_TEACHHUNTING_Claws	);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Vyjmut√≠ dr√°p≈Ø",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Grimbald_TEACHHUNTING_Claws	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("VyjmutÌ kusadel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grimbald_TEACHHUNTING_Mandibles);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Vyjmut√≠ kusadel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grimbald_TEACHHUNTING_Mandibles);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("OddÍlenÌ ËervÌch krun˝‚˘",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Grimbald_TEACHHUNTING_CrawlerPlate);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Oddƒôlen√≠ ƒçerv√≠ch krun√Ω√¢≈Ø",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Grimbald_TEACHHUNTING_CrawlerPlate);
 				};
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //Uû zn·ö vöe, co bych tÍ mohl nauËit.
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //U≈æ zn√°≈° v≈°e, co bych tƒô mohl nauƒçit.
 			};
 };
 
@@ -247,7 +247,7 @@ func void DIA_Grimbald_TEACHHUNTING_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFSting_07_00"); //Opravdu nenÌ problÈm dostat z krvavÈ mouchy jejÌ ûihadlo. StaËÌ jen najÌt jeho ko‚en a vrazit tam n˘û.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFSting_07_00"); //Opravdu nen√≠ probl√©m dostat z krvav√© mouchy jej√≠ ≈æihadlo. Staƒç√≠ jen naj√≠t jeho ko√¢en a vrazit tam n≈Ø≈æ.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -256,7 +256,7 @@ func void DIA_Grimbald_TEACHHUNTING_BFWing()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFWing_07_00"); //BuÎ m˘ûeö k‚Ìdla z krvavÈ mouchy dostat tak, ûe je prostÍ utrhneö, nebo je oddÍlÌö ostr˝m noûem.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFWing_07_00"); //Bu√´ m≈Ø≈æe≈° k√¢√≠dla z krvav√© mouchy dostat tak, ≈æe je prostƒô utrhne≈°, nebo je oddƒôl√≠≈° ostr√Ωm no≈æem.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -265,7 +265,7 @@ func void DIA_Grimbald_TEACHHUNTING_Claws ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Je nÍkolik zp˘sob˘, jak zÌskat dr·py. Na nÍkter· zvÌ‚ata budeö pot‚ebovat hodnÍ sÌly, u jin˝ch ti staËÌ jen od‚Ìznout je noûem.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Je nƒôkolik zp≈Øsob≈Ø, jak z√≠skat dr√°py. Na nƒôkter√° zv√≠√¢ata bude≈° pot√¢ebovat hodnƒô s√≠ly, u jin√Ωch ti staƒç√≠ jen od√¢√≠znout je no≈æem.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -274,7 +274,7 @@ func void DIA_Grimbald_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //D˘lnÌ Ëervi a polnÌ ök˘dci majÌ siln· kusadla, kter· m˘ûeö z jejich hlavy dostat siln˝m trhnutÌm...
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //D≈Øln√≠ ƒçervi a poln√≠ ≈°k≈Ødci maj√≠ siln√° kusadla, kter√° m≈Ø≈æe≈° z jejich hlavy dostat siln√Ωm trhnut√≠m...
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -283,7 +283,7 @@ func void DIA_Grimbald_TEACHHUNTING_CrawlerPlate ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Krun˝‚ d˘lnÌch Ëerv˘ p‚ilÈh· k jejich tÍlu velmi tÍsnÍ, ale velk˝m ostr˝m p‚edmÍtem se d· snadno oddÍlit.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Krun√Ω√¢ d≈Øln√≠ch ƒçerv≈Ø p√¢il√©h√° k jejich tƒôlu velmi tƒôsnƒô, ale velk√Ωm ostr√Ωm p√¢edmƒôtem se d√° snadno oddƒôlit.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -299,7 +299,7 @@ instance DIA_Grimbald_NovChase		(C_INFO)
 	condition	 = 	DIA_Grimbald_NovChase_Condition;
 	information	 = 	DIA_Grimbald_NovChase_Info;
 
-	description	 = 	"NevidÍl jsi tudy proch·zet nÍjakÈho novice?";
+	description	 = 	"Nevidƒôl jsi tudy proch√°zet nƒôjak√©ho novice?";
 
 };
 
@@ -313,9 +313,9 @@ func int DIA_Grimbald_NovChase_Condition ()
 
 func void DIA_Grimbald_NovChase_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //NevidÍl jsi tudy proch·zet nÍjakÈho novice?
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //Dneska tudy proölo hodnÍ podivn˝ch osob - vËetnÍ tÍch dvou vtip·lk˘ od toho kamennÈho oblouku.
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //Taky s nima byl nÍjak˝ novic od m·g˘ ohnÍ.
+	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //Nevidƒôl jsi tudy proch√°zet nƒôjak√©ho novice?
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //Dneska tudy pro≈°lo hodnƒô podivn√Ωch osob - vƒçetnƒô tƒôch dvou vtip√°lk≈Ø od toho kamenn√©ho oblouku.
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //Taky s nima byl nƒôjak√Ω novic od m√°g≈Ø ohnƒô.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -342,7 +342,7 @@ func int DIA_Grimbald_Trolltot_Condition ()
 
 func void DIA_Grimbald_Trolltot_Info ()
 {
-	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //»ern˝ trol je mrtev. SkvÍl· pr·ce. Nikdy jsem si nemyslel, ûe ho lze zabÌt. Na tohle nikdy nezapomenu.
+	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //ƒåern√Ω trol je mrtev. Skvƒôl√° pr√°ce. Nikdy jsem si nemyslel, ≈æe ho lze zab√≠t. Na tohle nikdy nezapomenu.
 	B_GivePlayerXP (XP_Ambient);
 };
 

@@ -4,7 +4,7 @@
 
 func void PC_Sleep (var int t)
 {
-	AI_StopProcessInfos(self);		// [SK] ->muss hier stehen um das update zu gew‰hrleisten
+	AI_StopProcessInfos(self);		// [SK] ->muss hier stehen um das update zu gew√§hrleisten
 
 	PLAYER_MOBSI_PRODUCTION	=	MOBSI_NONE;
 	self.aivar[AIV_INVINCIBLE]=FALSE;
@@ -36,7 +36,7 @@ func void PC_Sleep (var int t)
 
 	//-------- AssessEnterRoom-Wahrnehmung versenden --------
 	PrintGlobals		(PD_ITEM_MOBSI);
-	Npc_SendPassivePerc	(hero,	PERC_ASSESSENTERROOM, NULL, hero);		//...damit der Spieler dieses Feature nicht zum H¸ttepl¸ndern ausnutzt!
+	Npc_SendPassivePerc	(hero,	PERC_ASSESSENTERROOM, NULL, hero);		//...damit der Spieler dieses Feature nicht zum H√ºttepl√ºndern ausnutzt!
 };
 
 
@@ -46,7 +46,7 @@ func void SLEEPABIT_S1 ()
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero);
 	var C_NPC rock; rock = Hlp_GetNpc(PC_Rockefeller);
 
-	//***ALT** if	(Hlp_GetInstanceID (self)== Hlp_GetInstanceID (Hero)) // MH: ge‰ndert, damit kontrollierte NSCs nicht schlafen kˆnnen!
+	//***ALT** if	(Hlp_GetInstanceID (self)== Hlp_GetInstanceID (Hero)) // MH: ge√§ndert, damit kontrollierte NSCs nicht schlafen k√∂nnen!
 	if ( (Hlp_GetInstanceID(self)==Hlp_GetInstanceID(her))||(Hlp_GetInstanceID(self)==Hlp_GetInstanceID(rock)) )
 	{
 		self.aivar[AIV_INVINCIBLE]=TRUE;
@@ -99,7 +99,7 @@ INSTANCE PC_SleepTime_Morning (C_INFO)
 	information		= PC_SleepTime_Morning_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Sp·t aû do r·na";
+	description		= "Sp√°t a≈æ do r√°na";
 };
 
 FUNC INT PC_SleepTime_Morning_Condition()
@@ -124,7 +124,7 @@ INSTANCE PC_SleepTime_Noon (C_INFO)
 	information		= PC_SleepTime_Noon_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Sp·t aû do poledne";
+	description		= "Sp√°t a≈æ do poledne";
 };
 
 FUNC INT PC_SleepTime_Noon_Condition()
@@ -149,7 +149,7 @@ INSTANCE PC_SleepTime_Evening (C_INFO)
 	information		= PC_SleepTime_Evening_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Sp·t aû do dalöÌho veËera";
+	description		= "Sp√°t a≈æ do dal≈°√≠ho veƒçera";
 };
 
 FUNC INT PC_SleepTime_Evening_Condition()
@@ -174,7 +174,7 @@ instance PC_SleepTime_Midnight (C_INFO)
 	information		= PC_SleepTime_Midnight_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Sp·t aû do p˘lnoci";
+	description		= "Sp√°t a≈æ do p≈Ølnoci";
 };
 
 FUNC INT PC_SleepTime_Midnight_Condition()

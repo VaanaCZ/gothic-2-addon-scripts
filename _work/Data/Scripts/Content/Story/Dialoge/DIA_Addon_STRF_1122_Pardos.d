@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Pardos_Hi   (C_INFO)
 	condition   = DIA_Addon_Pardos_Hi_Condition;
 	information = DIA_Addon_Pardos_Hi_Info;
 	permanent   = FALSE;
-	description = "Jak se drûÌö?";
+	description = "Jak se dr≈æ√≠≈°?";
 };
 FUNC INT DIA_Addon_Pardos_Hi_Condition()
 {	
@@ -39,10 +39,10 @@ FUNC INT DIA_Addon_Pardos_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_00");//Tak co, drûÌö se?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(vyËerpanÍ) Jsem ˙plnÍ hotovej. Je teÎ pÍknej sluneËnej den, nebo jasn· noc s tisÌci hvÍzd na obloze?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(jeötÍ unavenÍji) Nem·m zd·nÌ... kam zmizel svÍûÌ m·jov˝ deötÌk, chladiv˝ veËernÌ v·nek... uû je necÌtÌm...
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(rezignovanÍ) OËi tu odejdou jako prvnÌ.
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_00");//Tak co, dr≈æ√≠≈° se?
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(vyƒçerpanƒô) Jsem √∫plnƒô hotovej. Je te√´ pƒôknej sluneƒçnej den, nebo jasn√° noc s tis√≠ci hvƒôzd na obloze?
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(je≈°tƒô unavenƒôji) Nem√°m zd√°n√≠... kam zmizel svƒô≈æ√≠ m√°jov√Ω de≈°t√≠k, chladiv√Ω veƒçern√≠ v√°nek... u≈æ je nec√≠t√≠m...
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(rezignovanƒô) Oƒçi tu odejdou jako prvn√≠.
 };
 //---------------------------------------------------------------------
 //	Info save
@@ -54,7 +54,7 @@ INSTANCE DIA_Addon_Pardos_save   (C_INFO)
 	condition   = DIA_Addon_Pardos_save_Condition;
 	information = DIA_Addon_Pardos_save_Info;
 	permanent   = FALSE;
-	description = "Vydrû, z·chrana uû se blÌûÌ.";
+	description = "Vydr≈æ, z√°chrana u≈æ se bl√≠≈æ√≠.";
 };
 FUNC INT DIA_Addon_Pardos_save_Condition()
 {	
@@ -66,8 +66,8 @@ FUNC INT DIA_Addon_Pardos_save_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_save_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_save_15_00");//PoËkej tady, z·chrana je na cestÍ.
-	AI_Output (self, other, "DIA_Addon_Pardos_save_03_01");//(znavenÍ) DÌky. DÌk za ty slova.
+	AI_Output (other, self, "DIA_Addon_Pardos_save_15_00");//Poƒçkej tady, z√°chrana je na cestƒô.
+	AI_Output (self, other, "DIA_Addon_Pardos_save_03_01");//(znavenƒô) D√≠ky. D√≠k za ty slova.
 	//Falsche Stimm Nummer M.F.//AI_Output (self, other, "DIA_Addon_Pardos_save_03_02");//Hey, du wirst doch jetzt nicht schlappmachen, oder? Gib jetzt nicht auf - klar?!
 };
 //---------------------------------------------------------------------
@@ -82,7 +82,7 @@ INSTANCE DIA_Addon_Pardos_trank   (C_INFO)
 	condition   = DIA_Addon_Pardos_trank_Condition;
 	information = DIA_Addon_Pardos_trank_Info;
 	permanent   = FALSE;
-	description = "Tum·ö, vypij tohle. (p‚edat lektvar)";
+	description = "Tum√°≈°, vypij tohle. (p√¢edat lektvar)";
 };
 FUNC INT DIA_Addon_Pardos_trank_Condition()
 {	
@@ -94,7 +94,7 @@ FUNC INT DIA_Addon_Pardos_trank_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_trank_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_trank_15_00");//Tum·ö, vypij tohle.
+	AI_Output (other, self, "DIA_Addon_Pardos_trank_15_00");//Tum√°≈°, vypij tohle.
 	AI_StandUpQuick	(self);	
 	
 	Info_ClearChoices (DIA_Addon_Pardos_trank);
@@ -103,26 +103,26 @@ FUNC VOID DIA_Addon_Pardos_trank_Info()
 	
 	if Npc_HasItems (other, ItPo_Health_01)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"P‚edat hojivou esenci",DIA_Addon_Pardos_trank_01);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"P√¢edat hojivou esenci",DIA_Addon_Pardos_trank_01);
 	};
 	if Npc_HasItems (other, ItPo_Health_02)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"P‚edat hojiv˝ extrakt",DIA_Addon_Pardos_trank_02);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"P√¢edat hojiv√Ω extrakt",DIA_Addon_Pardos_trank_02);
 	};
 	if Npc_HasItems (other, ItPo_Health_03)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"P‚edat hojiv˝ elixÌr",DIA_Addon_Pardos_trank_03);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"P√¢edat hojiv√Ω elix√≠r",DIA_Addon_Pardos_trank_03);
 	};
 	if Npc_HasItems (other, ItFo_Addon_Meatsoup)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"P‚edat duöenÈ maso",DIA_Addon_Pardos_trank_Soup);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"P√¢edat du≈°en√© maso",DIA_Addon_Pardos_trank_Soup);
 	};
 	
 	
 };
 FUNC VOID B_SayPardosThanks()
 {
-	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_00");//DÌky, to mi udÍl· dob‚e.
+	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_00");//D√≠ky, to mi udƒôl√° dob√¢e.
 };
 FUNC VOID DIA_Addon_Pardos_trank_BACK()
 {
@@ -170,13 +170,13 @@ FUNC VOID DIA_Addon_Pardos_trank_03()
 //---------------------------------------------------------------------
 FUNC VOID DIA_Addon_Pardos_trank_Soup()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_trank_soup_15_00");//Tady m·ö masov˝ v˝var.
+	AI_Output (other, self, "DIA_Addon_Pardos_trank_soup_15_00");//Tady m√°≈° masov√Ω v√Ωvar.
 	
 	if B_GiveInvItems (other, self, ItFo_Addon_Meatsoup,1)
 	{
 		B_UseItem 	(self,ItFo_Addon_Meatsoup);
 	};	
-	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_01");//DÌky ti, uû se cÌtÌm trochu silnÍjöÌ.
+	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_01");//D√≠ky ti, u≈æ se c√≠t√≠m trochu silnƒôj≈°√≠.
 	B_GivePlayerXP (XP_Ambient *3);
 };
 //---------------------------------------------------------------------
@@ -189,7 +189,7 @@ INSTANCE DIA_Addon_Pardos_perm   (C_INFO)
 	condition   = DIA_Addon_Pardos_perm_Condition;
 	information = DIA_Addon_Pardos_perm_Info;
 	permanent   = TRUE;
-	description = "Tak jak je ti teÎ?";
+	description = "Tak jak je ti te√´?";
 };
 FUNC INT DIA_Addon_Pardos_perm_Condition()
 {	
@@ -200,8 +200,8 @@ FUNC INT DIA_Addon_Pardos_perm_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_perm_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_perm_15_00");//Jak je ti teÎ?
-	AI_Output (self, other, "DIA_Addon_Pardos_perm_03_01");//LÌp, dÌky tobÍ. CÌtÌm, jak se mi vracÌ sÌly.
+	AI_Output (other, self, "DIA_Addon_Pardos_perm_15_00");//Jak je ti te√´?
+	AI_Output (self, other, "DIA_Addon_Pardos_perm_03_01");//L√≠p, d√≠ky tobƒô. C√≠t√≠m, jak se mi vrac√≠ s√≠ly.
 };
 
 

@@ -39,17 +39,17 @@ FUNC INT DIA_Addon_10023_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10023_Wache_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_00");//Hele, kam se to sypeö? To chceö jÌt do t˝hle chodby?
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_01");//No jasnÍ, proË ne?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_02");//Tam vzadu jsou jeötÍ dalöÌ otroci. Pro mÍ za mÍ si tam klidnÍ zalez, ale moc je nemla„, a„ jeötÍ m˘ûou makat.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_03");//StejnÍ nechcem, aby tu jen tak posed·vali. Maj dolovat zlato.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_04");//Ch·pu, a kdo to rozk·zal?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_05");//To sou p‚Ìm˝ rozkazy od Bloodwyna.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_06");//J· myslel, ûe tady öÈfuje Havran.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_07");//To m·ö recht, jenûe on vöecky otroky p‚edal Bloodwynovi. Uû je na nic nepot‚eboval.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_00");//Hele, kam se to sype≈°? To chce≈° j√≠t do t√Ωhle chodby?
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_01");//No jasnƒô, proƒç ne?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_02");//Tam vzadu jsou je≈°tƒô dal≈°√≠ otroci. Pro mƒô za mƒô si tam klidnƒô zalez, ale moc je nemlaƒÉ, aƒÉ je≈°tƒô m≈Ø≈æou makat.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_03");//Stejnƒô nechcem, aby tu jen tak posed√°vali. Maj dolovat zlato.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_04");//Ch√°pu, a kdo to rozk√°zal?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_05");//To sou p√¢√≠m√Ω rozkazy od Bloodwyna.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_06");//J√° myslel, ≈æe tady ≈°√©fuje Havran.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_07");//To m√°≈° recht, jen≈æe on v≈°ecky otroky p√¢edal Bloodwynovi. U≈æ je na nic nepot√¢eboval.
 	
 	Pardos.attribute[ATR_HITPOINTS] 		= 70;
-	B_LogEntry (Topic_Addon_Sklaven,"Havran uû pro otroky nem· vyuûitÌ. NynÌ n·leûejÌ Bloodwynovi."); 
+	B_LogEntry (Topic_Addon_Sklaven,"Havran u≈æ pro otroky nem√° vyu≈æit√≠. Nyn√≠ n√°le≈æej√≠ Bloodwynovi."); 
 };
 //---------------------------------------------------------------------
 //	Info go
@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_10023_Wache_go   (C_INFO)
 	condition   = DIA_Addon_10023_Wache_go_Condition;
 	information = DIA_Addon_10023_Wache_go_Info;
 	permanent   = TRUE;
-	description = "Nech ty otroky jÌt!";
+	description = "Nech ty otroky j√≠t!";
 };
 FUNC INT DIA_Addon_10023_Wache_go_Condition()
 {	
@@ -71,16 +71,16 @@ FUNC INT DIA_Addon_10023_Wache_go_Condition()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_Info()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_15_00");//Nech ty otroky jÌt!
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_15_00");//Nech ty otroky j√≠t!
 	
 	if (PrisonGuard_Rules == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_01");//Hele, tady to ‚ÌdÌ Bloodwyn. Otroci pat‚ej jemu, takûe propustit je m˘ûe jenom on.
-		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_02");//A taky m· do toho co mluvit Thorus. A co ty?
+		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_01");//Hele, tady to √¢√≠d√≠ Bloodwyn. Otroci pat√¢ej jemu, tak≈æe propustit je m≈Ø≈æe jenom on.
+		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_02");//A taky m√° do toho co mluvit Thorus. A co ty?
 		PrisonGuard_Rules = TRUE;
-		B_LogEntry (Topic_Addon_Sklaven,"Pouze Bloodwyn a Thorus majÌ pr·vo pustit otroky na svobodu.");
+		B_LogEntry (Topic_Addon_Sklaven,"Pouze Bloodwyn a Thorus maj√≠ pr√°vo pustit otroky na svobodu.");
 	};
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_03");//TY do toho m·ö taky co mluvit?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_03");//TY do toho m√°≈° taky co mluvit?
 	
 	Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 	Info_AddChoice (DIA_Addon_10023_Wache_go,DIALOG_BACK,DIA_Addon_10023_Wache_go_BACK);
@@ -92,11 +92,11 @@ FUNC VOID DIA_Addon_10023_Wache_go_Info()
 	else if Npc_IsDead (Bloodwyn)
 	&& (Npc_HasItems (other,ItMi_Addon_Bloodwyn_Kopf) >=1)
 	{
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"(uk·zat Bloodwynovu hlavu)",DIA_Addon_10023_Wache_go_Blood);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"(uk√°zat Bloodwynovu hlavu)",DIA_Addon_10023_Wache_go_Blood);
 	}
 	else
 	{
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"J· rozhoduju, kdo p˘jde do dolu.",DIA_Addon_10023_Wache_go_WER);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"J√° rozhoduju, kdo p≈Øjde do dolu.",DIA_Addon_10023_Wache_go_WER);
 	};
 };	
 FUNC VOID DIA_Addon_10023_Wache_go_BACK()
@@ -105,8 +105,8 @@ FUNC VOID DIA_Addon_10023_Wache_go_BACK()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_WER()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_WER_15_00");//J¡ rozhoduju, kdo p˘jde do dolu.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_WER_11_01");//DÍl·ö Estebanovu pr·ci, takûe tady nem·ö co kecat ABSOLUTN  do niËeho. Odprejskni.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_WER_15_00");//J√Å rozhoduju, kdo p≈Øjde do dolu.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_WER_11_01");//Dƒôl√°≈° Estebanovu pr√°ci, tak≈æe tady nem√°≈° co kecat ABSOLUTNƒò do niƒçeho. Odprejskni.
 	Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 };
 //----------------------------------------
@@ -115,10 +115,10 @@ var int Wache_einmal;
 FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 {
 	
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_00");//StaËÌ ti tohle?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_01");//(blÈÈÈ) Dej to pryË, NIC TAKOV›HO nechci vidÍt.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_02");//Bylo by lepöÌ, kdybys ty otroky propustil. HNED.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");//PoËkej p‚ece. Bloodwyn nenÌ jedinej, kdo tu m· ‡·k˝ slovo. Dokud nedostanu rozkaz vod Thoruse, nikoho nepropustÌm.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_00");//Staƒç√≠ ti tohle?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_01");//(bl√©√©√©) Dej to pryƒç, NIC TAKOV√ùHO nechci vidƒôt.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_02");//Bylo by lep≈°√≠, kdybys ty otroky propustil. HNED.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");//Poƒçkej p√¢ece. Bloodwyn nen√≠ jedinej, kdo tu m√° ≈ï√°k√Ω slovo. Dokud nedostanu rozkaz vod Thoruse, nikoho nepropust√≠m.
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Thorus_Answer)
 	{
@@ -129,15 +129,15 @@ FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 	{
 		if (Wache_einmal == FALSE)
 		{
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_04");//Ale pr·vÍ jsi ‚Ìkal, ûe otroci pat‚Ì Bloodwynovi.
-			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_05");//To jo, ale taky jsem ‚ek, ûe nikoho nepropustim, dokud mi to nenak·ûe Thorus.
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_04");//Ale pr√°vƒô jsi √¢√≠kal, ≈æe otroci pat√¢√≠ Bloodwynovi.
+			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_05");//To jo, ale taky jsem √¢ek, ≈æe nikoho nepropustim, dokud mi to nenak√°≈æe Thorus.
 			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_06");//Ty by ses bez rozkazu ani nevysral, co?
 			Wache_einmal = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_07");//Jo, ale taky jsem ‚ek...
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_08");//...no jo, uû toho radöi nech.
+			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_07");//Jo, ale taky jsem √¢ek...
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_08");//...no jo, u≈æ toho rad≈°i nech.
 		};
 		Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 	}; 
@@ -146,10 +146,10 @@ FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_Thorus()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00");//Mluvil jsem s Thorusem. Podle jeho rozkazu majÌ b˝t otroci propuötÍni.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01");//No dob‚e, kdyû to teda rozk·zal Thorus. Ale nech·pu, proË nÍco takov˝ho dovolil...
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02");//...ale za ot·zky nejsi placen˝.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03");//Dobr·, dobr·, evidentnÍ uû mÍ tu nikdo nepot‚ebuje, takûe si jdu d·t nÍco na zub.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00");//Mluvil jsem s Thorusem. Podle jeho rozkazu maj√≠ b√Ωt otroci propu≈°tƒôni.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01");//No dob√¢e, kdy≈æ to teda rozk√°zal Thorus. Ale nech√°pu, proƒç nƒôco takov√Ωho dovolil...
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02");//...ale za ot√°zky nejsi placen√Ω.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03");//Dobr√°, dobr√°, evidentnƒô u≈æ mƒô tu nikdo nepot√¢ebuje, tak≈æe si jdu d√°t nƒôco na zub.
 	
 	Ready_Togo = TRUE;
 	AI_StopProcessInfos (self);

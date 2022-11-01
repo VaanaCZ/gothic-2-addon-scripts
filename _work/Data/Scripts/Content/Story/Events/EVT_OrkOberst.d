@@ -47,7 +47,7 @@ func void EVT_ORKOBERST ()
 		
 		ORkSturmDI  = TRUE;
 		
-		B_LogEntry (TOPIC_HallenVonIrdorath,"Ten skâetí plukovník byl opravdu tvrdı oâíšek. Nêkde v jeho trùnním sále musí bıt nêco, co mi pomùe dál."); 
+		B_LogEntry (TOPIC_HallenVonIrdorath,"Ten skÃ¢etÃ­ plukovnÃ­k byl opravdu tvrdÃ½ oÃ¢Ã­Å¡ek. NÄ™kde v jeho trÅ¯nnÃ­m sÃ¡le musÃ­ bÃ½t nÄ™co, co mi pomÅ¯Å¾e dÃ¡l."); 
 
 		EVT_ORKOBERST_OneTime = TRUE;
 	};

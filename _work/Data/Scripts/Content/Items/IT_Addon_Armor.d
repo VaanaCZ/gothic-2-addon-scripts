@@ -12,7 +12,7 @@ const int VALUE_ITAR_Bloodwyn_Addon 	= 1300;
 // ******************************************************
 INSTANCE ITAR_PIR_L_Addon (C_Item)
 {
-	name 					=	"Pirátský odêv";
+	name 					=	"PirÃ¡tskÃ½ odÄ™v";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -53,7 +53,7 @@ INSTANCE ITAR_PIR_L_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_M_Addon (C_Item)
 {
-	name 					=	"Pirátská zbroj";
+	name 					=	"PirÃ¡tskÃ¡ zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -94,7 +94,7 @@ INSTANCE ITAR_PIR_M_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_H_Addon (C_Item)
 {
-	name 					=	"Kapitánský odêv";
+	name 					=	"KapitÃ¡nskÃ½ odÄ™v";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -135,7 +135,7 @@ INSTANCE ITAR_PIR_H_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Thorus_Addon (C_Item)
 {
-	name 					=	"Têžká strážní zbroj";
+	name 					=	"TÄ™Å¾kÃ¡ strÃ¡Å¾nÃ­ zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -155,7 +155,7 @@ INSTANCE ITAR_Thorus_Addon (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
-	description				=	"Zbroj Havranových stráží";
+	description				=	"Zbroj HavranovÃ½ch strÃ¡Å¾Ã­";
 
 	TEXT[0]					= 	PRINT_Addon_BDTArmor;
 	TEXT[1]					=	NAME_Prot_Edge;			
@@ -218,7 +218,7 @@ INSTANCE ITAR_Raven_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_OreBaron_Addon (C_Item)
 {
-	name 					=	"Zbroj skâetího barona";
+	name 					=	"Zbroj skÃ¢etÃ­ho barona";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -300,7 +300,7 @@ INSTANCE ITAR_RANGER_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Fake_RANGER (C_Item)
 {
-	name 					=	"Rozbitá zbroj";
+	name 					=	"RozbitÃ¡ zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -412,7 +412,7 @@ INSTANCE ITAR_Bloodwyn_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_MayaZombie_Addon (C_Item)
 {
-	name 					=	"Stará zbroj";
+	name 					=	"StarÃ¡ zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -453,13 +453,13 @@ INSTANCE ITAR_MayaZombie_Addon (C_Item)
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-//	Magische Rüstungen
+//	Magische RÃ¼stungen
 //
 
 
 instance ItAr_FireArmor_Addon (C_Item)
 {
-	name 					=	"Magická zbroj";
+	name 					=	"MagickÃ¡ zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

@@ -31,7 +31,7 @@ instance DIA_Addon_Cronos_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Hallo_Condition;
 	information	 = 	DIA_Addon_Cronos_Hallo_Info;
 
-	description	 = 	"Mohl bych tê na chvilku vyrušit?";
+	description	 = 	"Mohl bych tÄ™ na chvilku vyruÅ¡it?";
 };
 
 func int DIA_Addon_Cronos_Hallo_Condition ()
@@ -41,10 +41,10 @@ func int DIA_Addon_Cronos_Hallo_Condition ()
 
 func void DIA_Addon_Cronos_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //Mùu tê na chvilku vyrušit?
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //(pâekvapenê) To jsi TY? Nikdy jsem nemyslel, e ten tvùj ksicht ještê nêkdy uvidím.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //Máš vánê kurá, e se tu ukazuješ. Svého èasu bychom tê zaiva stáhli z kùe.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //Mùeš bıt rád, e u je to pár tıdnù a všichni jsme se uklidnili.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //MÅ¯Å¾u tÄ™ na chvilku vyruÅ¡it?
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //(pÃ¢ekvapenÄ™) To jsi TY? Nikdy jsem nemyslel, Å¾e ten tvÅ¯j ksicht jeÅ¡tÄ™ nÄ™kdy uvidÃ­m.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //MÃ¡Å¡ vÃ¡Å¾nÄ™ kurÃ¡Å¾, Å¾e se tu ukazujeÅ¡. SvÃ©ho Äasu bychom tÄ™ zaÅ¾iva stÃ¡hli z kÅ¯Å¾e.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //MÅ¯Å¾eÅ¡ bÃ½t rÃ¡d, Å¾e uÅ¾ je to pÃ¡r tÃ½dnÅ¯ a vÅ¡ichni jsme se uklidnili.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -57,7 +57,7 @@ instance DIA_Addon_Cronos_WasMachstdu		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_WasMachstdu_Condition;
 	information	 = 	DIA_Addon_Cronos_WasMachstdu_Info;
 
-	description	 = 	"Co tady dêláš?";
+	description	 = 	"Co tady dÄ™lÃ¡Å¡?";
 };
 
 func int DIA_Addon_Cronos_WasMachstdu_Condition ()
@@ -70,11 +70,11 @@ func int DIA_Addon_Cronos_WasMachstdu_Condition ()
 
 func void DIA_Addon_Cronos_WasMachstdu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_WasMachstdu_15_00"); //Co tady dêláš?
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //(zmatenê) Mám zjistit nêco víc o strácích chrámu.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //Jsou pêknê tuhı oâíšek, to ti povím. Nic podobného, jako jsou tihle kamenní stráci, jsem ještê nevidêl.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //Jednu chvíli úplnê bezduše stojí, a najednou tê napadnou, jako kdy je nêco posedne.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //Ještê jsem nezjistil, co je vlastnê pohání, ale jedna vêc je jistá: jsou magického pùvodu.
+	AI_Output	(other, self, "DIA_Addon_Cronos_WasMachstdu_15_00"); //Co tady dÄ™lÃ¡Å¡?
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //(zmatenÄ™) MÃ¡m zjistit nÄ™co vÃ­c o strÃ¡Å¾cÃ­ch chrÃ¡mu.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //Jsou pÄ™knÄ™ tuhÃ½ oÃ¢Ã­Å¡ek, to ti povÃ­m. Nic podobnÃ©ho, jako jsou tihle kamennÃ­ strÃ¡Å¾ci, jsem jeÅ¡tÄ™ nevidÄ™l.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //Jednu chvÃ­li ÃºplnÄ™ bezduÅ¡e stojÃ­, a najednou tÄ™ napadnou, jako kdyÅ¾ je nÄ™co posedne.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //JeÅ¡tÄ™ jsem nezjistil, co je vlastnÄ™ pohÃ¡nÃ­, ale jedna vÄ™c je jistÃ¡: jsou magickÃ©ho pÅ¯vodu.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Waechter
@@ -86,7 +86,7 @@ instance DIA_Addon_Cronos_Waechter		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Waechter_Condition;
 	information	 = 	DIA_Addon_Cronos_Waechter_Info;
 
-	description	 = 	"Povêz mi nêco o têch kamennıch strácích.";
+	description	 = 	"PovÄ™z mi nÄ™co o tÄ™ch kamennÃ½ch strÃ¡Å¾cÃ­ch.";
 };
 
 func int DIA_Addon_Cronos_Waechter_Condition ()
@@ -99,11 +99,11 @@ func int DIA_Addon_Cronos_Waechter_Condition ()
 
 func void DIA_Addon_Cronos_Waechter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //Povêz mi o têch kamennıch strácích nêco víc.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //(nejistê) Zatím ti víc neâeknu. Museli jsme je všechny znièit. Teë u nejsou nebezpeèní.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_02"); //Kdy jsme sem pâišli, napadli nás.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //Porazili jsme je jen spojenımi silami a obávám se, e za portálem jich èeká ještê víc.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_04"); //Musí existovat zpùsob, jak znièit sílu, která je pohání, a udêlat z nich zase obyèejné sochy.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //PovÄ™z mi o tÄ™ch kamennÃ½ch strÃ¡Å¾cÃ­ch nÄ™co vÃ­c.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //(nejistÄ™) ZatÃ­m ti vÃ­c neÃ¢eknu. Museli jsme je vÅ¡echny zniÄit. TeÃ« uÅ¾ nejsou nebezpeÄnÃ­.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_02"); //KdyÅ¾ jsme sem pÃ¢iÅ¡li, napadli nÃ¡s.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //Porazili jsme je jen spojenÃ½mi silami a obÃ¡vÃ¡m se, Å¾e za portÃ¡lem jich ÄekÃ¡ jeÅ¡tÄ™ vÃ­c.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_04"); //MusÃ­ existovat zpÅ¯sob, jak zniÄit sÃ­lu, kterÃ¡ je pohÃ¡nÃ­, a udÄ™lat z nich zase obyÄejnÃ© sochy.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -117,7 +117,7 @@ instance DIA_Addon_Cronos_NW_Trade		(C_INFO)
 	information	 = 	DIA_Addon_Cronos_NW_Trade_Info;
 	Trade 		 = 	TRUE;
 	permanent	 = 	TRUE;
-	description	 = 	"Mùeš mi prodat nêjaké vybavení?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mi prodat nÄ™jakÃ© vybavenÃ­?";
 };
 
 func int DIA_Addon_Cronos_NW_Trade_Condition ()
@@ -133,16 +133,16 @@ var int DIA_Addon_Cronos_NW_Trade_OneTime;
 func void DIA_Addon_Cronos_NW_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output	(other, self, "DIA_Addon_Cronos_NW_Trade_15_00"); //Mùeš mi prodat nêjakou vıbavu?
+	AI_Output	(other, self, "DIA_Addon_Cronos_NW_Trade_15_00"); //MÅ¯Å¾eÅ¡ mi prodat nÄ™jakou vÃ½bavu?
 
 	if (DIA_Addon_Cronos_NW_Trade_OneTime==FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_01"); //Proè ne? Pokud si dobâe vzpomínám, u jsme spolu obchodovali.
+		AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_01"); //ProÄ ne? Pokud si dobÃ¢e vzpomÃ­nÃ¡m, uÅ¾ jsme spolu obchodovali.
 		
 		DIA_Addon_Cronos_NW_Trade_OneTime = TRUE;
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_02"); //Povêz mi, co potâebuješ.
+	AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_02"); //PovÄ™z mi, co potÃ¢ebujeÅ¡.
 
 	Log_CreateTopic (Topic_OutTrader,LOG_NOTE);
 	B_LogEntry (Topic_OutTrader, LogText_Addon_CronosTrade);

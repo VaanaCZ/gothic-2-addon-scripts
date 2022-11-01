@@ -40,27 +40,27 @@ FUNC VOID DIA_Bodo_Hallo_Info()
 	AI_Output (other, self, "DIA_Bodo_Hallo_15_00"); //Jak se vede?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_01"); //Domobrana n·s vydÌrala dost dlouho. TeÎ, kdyû jsou ûoldnÈ‚i na naöÌ stranÍ, se tu uû nedovolÌ vÌckr·t objevit.
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_02"); //Kr·l si myslÌ, ûe n·m m˘ûe vöechno sebrat a odjet. Ale my uû mu nic ned·me.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_01"); //Domobrana n√°s vyd√≠rala dost dlouho. Te√´, kdy≈æ jsou ≈æoldn√©√¢i na na≈°√≠ stranƒô, se tu u≈æ nedovol√≠ v√≠ckr√°t objevit.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_02"); //Kr√°l si mysl√≠, ≈æe n√°m m≈Ø≈æe v≈°echno sebrat a odjet. Ale my u≈æ mu nic ned√°me.
 	};
 	
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_03"); //Fajn. Kdyû uvidÌö nÍkoho z domobrany, nandej mu to i za mÍ, jo?
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_03"); //Fajn. Kdy≈æ uvid√≠≈° nƒôkoho z domobrany, nandej mu to i za mƒô, jo?
 	};
 	
 	if (other.guild == GIL_NOV)
 	|| (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_04"); //Dobr·. Innos s tebou.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_04"); //Dobr√°. Innos s tebou.
 	};
 			
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{	
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_05"); //Kr·lovi voj·ci nejsou na tÈhle farmÍ vÌt·ni.
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_06"); //I tak s tebou tady moûn· bude mluvit dost lidÌ, ale urËitÍ si tu neudÍl·ö p‚·tele.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_05"); //Kr√°lovi voj√°ci nejsou na t√©hle farmƒô v√≠t√°ni.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_06"); //I tak s tebou tady mo≈æn√° bude mluvit dost lid√≠, ale urƒçitƒô si tu neudƒôl√°≈° p√¢√°tele.
 	};
 };
 
@@ -74,7 +74,7 @@ INSTANCE DIA_Bodo_Bauernaufstand   (C_INFO)
 	condition   = DIA_Bodo_Bauernaufstand_Condition;
 	information = DIA_Bodo_Bauernaufstand_Info;
 	permanent   = FALSE;
-	description = "Ve mÍstÍ se mluvÌ o rolnickÈ vzpou‚e!";
+	description = "Ve mƒôstƒô se mluv√≠ o rolnick√© vzpou√¢e!";
 };
 FUNC INT DIA_Bodo_Bauernaufstand_Condition()
 {
@@ -82,9 +82,9 @@ FUNC INT DIA_Bodo_Bauernaufstand_Condition()
 };
 FUNC VOID DIA_Bodo_Bauernaufstand_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Bauernaufstand_15_00"); //Ve mÍstÍ se mluvÌ o rolnickÈ vzpou‚e!
-	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_01"); //To je nesmysl. Jenom se snaûÌme br·nit v˝sledky naöÌ tvrdÈ d‚iny.
-	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_02"); //V·lka vûdycky nejvÌc dolÈh· na bedra rolnÌk˘. A Onar uû nehodl· jen d·l st·t a koukat, jak n·s ty kr·lovskÈ pijavice vys·vajÌ.
+	AI_Output (other, self, "DIA_Bodo_Bauernaufstand_15_00"); //Ve mƒôstƒô se mluv√≠ o rolnick√© vzpou√¢e!
+	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_01"); //To je nesmysl. Jenom se sna≈æ√≠me br√°nit v√Ωsledky na≈°√≠ tvrd√© d√¢iny.
+	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_02"); //V√°lka v≈ædycky nejv√≠c dol√©h√° na bedra roln√≠k≈Ø. A Onar u≈æ nehodl√° jen d√°l st√°t a koukat, jak n√°s ty kr√°lovsk√© pijavice vys√°vaj√≠.
 };
 
 // ************************************************************
@@ -97,7 +97,7 @@ INSTANCE DIA_Bodo_Bett   (C_INFO)
 	condition   = DIA_Bodo_Bett_Condition;
 	information = DIA_Bodo_Bett_Info;
 	permanent   = FALSE;
-	description = "M˘ûu si tady nÍkde odpoËinout?";
+	description = "M≈Ø≈æu si tady nƒôkde odpoƒçinout?";
 };
 FUNC INT DIA_Bodo_Bett_Condition()
 {
@@ -105,9 +105,9 @@ FUNC INT DIA_Bodo_Bett_Condition()
 };
 FUNC VOID DIA_Bodo_Bett_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Bett_15_00"); //M˘ûu si tady nÍkde odpoËinout?
-	AI_Output (self, other, "DIA_Bodo_Bett_12_01"); //Jestli hled·ö mÌsto na spanÌ, zajdi si do stodoly. Ale ani omylem si nelehni na ûold·ckou postel.
-	AI_Output (self, other, "DIA_Bodo_Bett_12_02"); //Onar zajistil, aby nechali n·s farm·‚e na pokoji. Ale s cizinci, co nepat‚Ì na farmu, si ûold·ci mohou dÍlat, co se jim zlÌbÌ.
+	AI_Output (other, self, "DIA_Bodo_Bett_15_00"); //M≈Ø≈æu si tady nƒôkde odpoƒçinout?
+	AI_Output (self, other, "DIA_Bodo_Bett_12_01"); //Jestli hled√°≈° m√≠sto na span√≠, zajdi si do stodoly. Ale ani omylem si nelehni na ≈æold√°ckou postel.
+	AI_Output (self, other, "DIA_Bodo_Bett_12_02"); //Onar zajistil, aby nechali n√°s farm√°√¢e na pokoji. Ale s cizinci, co nepat√¢√≠ na farmu, si ≈æold√°ci mohou dƒôlat, co se jim zl√≠b√≠.
 };
 
 // ************************************************************
@@ -120,7 +120,7 @@ INSTANCE DIA_Bodo_Cipher   (C_INFO)
 	condition   = DIA_Bodo_Cipher_Condition;
 	information = DIA_Bodo_Cipher_Info;
 	permanent   = FALSE;
-	description = "Cipher mi ‚ekl, ûe mu nÍkdo ukradl balÌk tr·vy z baûin...";
+	description = "Cipher mi √¢ekl, ≈æe mu nƒôkdo ukradl bal√≠k tr√°vy z ba≈æin...";
 };
 FUNC INT DIA_Bodo_Cipher_Condition()
 {
@@ -132,12 +132,12 @@ FUNC INT DIA_Bodo_Cipher_Condition()
 };
 FUNC VOID DIA_Bodo_Cipher_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Cipher_15_00"); //Cipher mi ‚ekl, ûe mu nÍkdo ukradl balÌk tr·vy z baûin.
+	AI_Output (other, self, "DIA_Bodo_Cipher_15_00"); //Cipher mi √¢ekl, ≈æe mu nƒôkdo ukradl bal√≠k tr√°vy z ba≈æin.
 	AI_Output (self, other, "DIA_Bodo_Cipher_12_01"); //A?
-	AI_Output (other, self, "DIA_Bodo_Cipher_15_02"); //MyslÌ si, ûes to byl ty, kdo mu to vzal.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_03"); //Aha, tak proto na mÍ ten chlap vûdycky tak p‚iblble zÌr·.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_04"); //PoslednÌ dobou jsem na nÍj byl obzvl·ö„ mil˝, protoûe vypadal, ûe slÌznul po‚·dnou pecku.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_05"); //Ale s tÌm j· nic neudÍl·m. M˘ûu se k nÍmu chovat p‚·telsky, jak chci, a on se na mÍ stejnÍ öklebÌ, jako by mÍ chtÍl zabÌt.
+	AI_Output (other, self, "DIA_Bodo_Cipher_15_02"); //Mysl√≠ si, ≈æes to byl ty, kdo mu to vzal.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_03"); //Aha, tak proto na mƒô ten chlap v≈ædycky tak p√¢iblble z√≠r√°.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_04"); //Posledn√≠ dobou jsem na nƒôj byl obzvl√°≈°ƒÉ mil√Ω, proto≈æe vypadal, ≈æe sl√≠znul po√¢√°dnou pecku.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_05"); //Ale s t√≠m j√° nic neudƒôl√°m. M≈Ø≈æu se k nƒômu chovat p√¢√°telsky, jak chci, a on se na mƒô stejnƒô ≈°kleb√≠, jako by mƒô chtƒôl zab√≠t.
 };
 
 // ************************************************************
@@ -150,7 +150,7 @@ INSTANCE DIA_Bodo_WeedOrElse   (C_INFO)
 	condition   = DIA_Bodo_WeedOrElse_Condition;
 	information = DIA_Bodo_WeedOrElse_Info;
 	permanent   = FALSE;
-	description = "Dej mi mÌsto toho tu tr·vu!";
+	description = "Dej mi m√≠sto toho tu tr√°vu!";
 };
 FUNC INT DIA_Bodo_WeedOrElse_Condition()
 {
@@ -162,13 +162,13 @@ FUNC INT DIA_Bodo_WeedOrElse_Condition()
 };
 FUNC VOID DIA_Bodo_WeedOrElse_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_WeedOrElse_15_00"); //Dej mi mÌsto toho tu tr·vu!
-	AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_01"); //Hele, vöechno, co m·m, je tenhle öpek. Vem si ho a nech mÍ na pokoji.
+	AI_Output (other, self, "DIA_Bodo_WeedOrElse_15_00"); //Dej mi m√≠sto toho tu tr√°vu!
+	AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_01"); //Hele, v≈°echno, co m√°m, je tenhle ≈°pek. Vem si ho a nech mƒô na pokoji.
 	B_GiveInvItems (self, other, itmi_joint, 1);
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_02"); //Je ti jasn˝, ûe na n·s ûold·ci dohlÌûej, ûe jo?
-		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_03"); //Tak û·dn˝ hlouposti!
+		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_02"); //Je ti jasn√Ω, ≈æe na n√°s ≈æold√°ci dohl√≠≈æej, ≈æe jo?
+		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_03"); //Tak ≈æ√°dn√Ω hlouposti!
 	};
 };
 
@@ -182,7 +182,7 @@ INSTANCE DIA_Bodo_WeedPERM   (C_INFO)
 	condition   = DIA_Bodo_WeedPERM_Condition;
 	information = DIA_Bodo_WeedPERM_Info;
 	permanent   = TRUE;
-	description = "NevÍ‚Ìm ti ani slovo. Dej mi tu tr·vu!";
+	description = "Nevƒô√¢√≠m ti ani slovo. Dej mi tu tr√°vu!";
 };
 FUNC INT DIA_Bodo_WeedPERM_Condition()
 {
@@ -194,8 +194,8 @@ FUNC INT DIA_Bodo_WeedPERM_Condition()
 };
 FUNC VOID DIA_Bodo_WeedPERM_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_WeedPERM_15_00"); //NevÍ‚Ìm ti ani slovo. Dej mi tu tr·vu!
-	AI_Output (self, other, "DIA_Bodo_WeedPERM_12_01"); //Nem·m ji. Namouduöi.
+	AI_Output (other, self, "DIA_Bodo_WeedPERM_15_00"); //Nevƒô√¢√≠m ti ani slovo. Dej mi tu tr√°vu!
+	AI_Output (self, other, "DIA_Bodo_WeedPERM_12_01"); //Nem√°m ji. Namoudu≈°i.
 };
 
 

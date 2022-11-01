@@ -1,15 +1,15 @@
 //##########################################################################
 //##
-//##	Hier stehen alle Buchständermobsiscripte
+//##	Hier stehen alle BuchstÃ¤ndermobsiscripte
 //##
 //##########################################################################
 
 
 //*************************************
-//	Buchständer in der Klosterbibliothek
+//	BuchstÃ¤nder in der Klosterbibliothek
 //*************************************
 
-FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
+FUNC VOID Use_Bookstand_01_S1()		//BuchstÃ¤nder in der Magierbibliothek
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -17,11 +17,11 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 	{	
 	if  (hero.guild == GIL_NOV)
 		{
-			KNOWS_FIRE_CONTEST = TRUE; //für die Prüfung des Feuers 
+			KNOWS_FIRE_CONTEST = TRUE; //fÃ¼r die PrÃ¼fung des Feuers 
 			
 			Log_CreateTopic (TOPIC_FireContest,LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_FireContest,LOG_RUNNING);
-			B_LogEntry (TOPIC_FireContest,"Jakoto novic mám právo na zkoušku ohnê. To znamená, e mi kadı ze tâí mágù z nejvyšší rady zadá nêjakı úkol. Pokud je splním, budu pâijat do kruhu ohnê.");
+			B_LogEntry (TOPIC_FireContest,"JakoÅ¾to novic mÃ¡m prÃ¡vo na zkouÅ¡ku ohnÄ™. To znamenÃ¡, Å¾e mi kaÅ¾dÃ½ ze tÃ¢Ã­ mÃ¡gÅ¯ z nejvyÅ¡Å¡Ã­ rady zadÃ¡ nÄ™jakÃ½ Ãºkol. Pokud je splnÃ­m, budu pÃ¢ijat do kruhu ohnÄ™.");
 		};
 	
 		var int nDocID;
@@ -35,12 +35,12 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Zkouška ohnê"					);
+					Doc_PrintLine	( nDocID,  0, "ZkouÅ¡ka ohnÄ™"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "I kdy novic mùe mít pocit, e je pâipraven podstoupit zkoušku ohnê, neznamená to, e bude vybrán. Pokud ale na svém rozhodnutí stále trvá, má právo zkoušku poadovat a ádnı mág mu v tom nesmí bránit. Ale nejene musí projít zkouškou magie, musí také dojít osvícení skrze oheà. Pâednese-li své rozhodnutí nejvyšší radê, èeká ho ZKOUŠKA OHNÊ.");
+					Doc_PrintLines	( nDocID,  0, "I kdyÅ¾ novic mÅ¯Å¾e mÃ­t pocit, Å¾e je pÃ¢ipraven podstoupit zkouÅ¡ku ohnÄ™, neznamenÃ¡ to, Å¾e bude vybrÃ¡n. Pokud ale na svÃ©m rozhodnutÃ­ stÃ¡le trvÃ¡, mÃ¡ prÃ¡vo zkouÅ¡ku poÅ¾adovat a Å¾Ã¡dnÃ½ mÃ¡g mu v tom nesmÃ­ brÃ¡nit. Ale nejenÅ¾e musÃ­ projÃ­t zkouÅ¡kou magie, musÃ­ takÃ© dojÃ­t osvÃ­cenÃ­ skrze oheÅ•. PÃ¢ednese-li svÃ© rozhodnutÃ­ nejvyÅ¡Å¡Ã­ radÄ™, ÄekÃ¡ ho ZKOUÅ KA OHNÄ˜.");
 			
 					
 					
@@ -48,13 +48,13 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Zkouška provêâí jak novicovu moudrost, tak i sílu a obratnost. Proto se skládá celkem ze tâí èástí, z nich kadou mu zadá jeden mág nejvyšší rady ještê pâedtím, ne sloí pâísahu ohnê a bude spjat s tímto ivlem."); 
+					Doc_PrintLines	( nDocID,  1, "ZkouÅ¡ka provÄ™Ã¢Ã­ jak novicovu moudrost, tak i sÃ­lu a obratnost. Proto se sklÃ¡dÃ¡ celkem ze tÃ¢Ã­ ÄÃ¡stÃ­, z nichÅ¾ kaÅ¾dou mu zadÃ¡ jeden mÃ¡g nejvyÅ¡Å¡Ã­ rady jeÅ¡tÄ™ pÃ¢edtÃ­m, neÅ¾ sloÅ¾Ã­ pÃ¢Ã­sahu ohnÄ™ a bude spjat s tÃ­mto Å¾ivlem."); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Taková je Innosova vùle a tak se i stane."					);
+					Doc_PrintLines	( nDocID,  1, "TakovÃ¡ je Innosova vÅ¯le a tak se i stane."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Nejvyšší rada"					);
+					Doc_PrintLines	( nDocID,  1, "NejvyÅ¡Å¡Ã­ rada"					);
 					Doc_Show		( nDocID );
 
 			
@@ -62,13 +62,13 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 };
 
 //*************************************
-//	Buchständer in der Geheimen Bibliothek
+//	BuchstÃ¤nder in der Geheimen Bibliothek
 //*************************************
 //--------------------------------------
 var int FinalDragonEquipment_Once;
 //--------------------------------------
 
-FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothek 
+FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//BuchstÃ¤nder in der geheimen Bibliothek 
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -86,7 +86,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 						Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  	
 	
 						Doc_PrintLine	( nDocID,  0, "");
-						Doc_PrintLines	( nDocID,  0, "...Doufám, e kupole ochrání rudu pâed zlobou Beliarovou. Král ve své naivitê vêâí, e jsme ji postavili proto, aby ádnı z vêzàù neunikl. No, jestli tahle lest poslouí vyšším cílùm, aã se tak stane. Mohu jen doufat, e nám ještê zbıvá dost èasu k pâípravê na boj. Jakmile kupole obklopí Hornické údolí, vynaloím všechnu svou moc, aby se boj u více nezdroval.");
+						Doc_PrintLines	( nDocID,  0, "...DoufÃ¡m, Å¾e kupole ochrÃ¡nÃ­ rudu pÃ¢ed zlobou Beliarovou. KrÃ¡l ve svÃ© naivitÄ™ vÄ™Ã¢Ã­, Å¾e jsme ji postavili proto, aby Å¾Ã¡dnÃ½ z vÄ™zÅ•Å¯ neunikl. No, jestli tahle lest poslouÅ¾Ã­ vyÅ¡Å¡Ã­m cÃ­lÅ¯m, aÄƒ se tak stane. Mohu jen doufat, Å¾e nÃ¡m jeÅ¡tÄ™ zbÃ½vÃ¡ dost Äasu k pÃ¢Ã­pravÄ™ na boj. Jakmile kupole obklopÃ­ HornickÃ© ÃºdolÃ­, vynaloÅ¾Ã­m vÅ¡echnu svou moc, aby se boj uÅ¾ vÃ­ce nezdrÅ¾oval.");
 						Doc_PrintLines	( nDocID,  0, "");
 			
 					
@@ -96,15 +96,15 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 		{	
 			PlayerGetsAmulettOfDeath = TRUE;
 			PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] = TRUE; 
-			B_LogEntry (TOPIC_TalentRunes,"K pâípravê runy 'svaté stâely' je tâeba: 1 svêcená voda, ádnı svitek s kouzlem");
+			B_LogEntry (TOPIC_TalentRunes,"K pÃ¢Ã­pravÄ™ runy 'svatÃ© stÃ¢ely' je tÃ¢eba: 1 svÄ™cenÃ¡ voda, Å¾Ã¡dnÃ½ svitek s kouzlem");
 			
 			
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "...postupoval jsem podle instrukcí a prostê jsem na èistı runovı kámen na runové tabulce nalil Innosovu svêcenou vodu. Ta jej ale zcela znièila - poèítám tedy, e tohle kouzlo mùe pouít pouze Vyvolenı."); 
-						Doc_PrintLines	( nDocID,  1, "Klášter jsem svêâil pod ochranu svaté Innosovy aury. Opat se u o nêj postará, dokud se nám nezjeví Vyvolenı."	);
-						Doc_PrintLines	( nDocID,  1, "Moná e v nadcházejícím boji sehrají klíèovou roli Innosovy slzy. Nemohu je ale dret na místê, kde je kadı uvidí - je to pâíliš nebezpeèné. Radši je nechám tady v knihovnê."	);
+						Doc_PrintLines	( nDocID,  1, "...postupoval jsem podle instrukcÃ­ a prostÄ™ jsem na ÄistÃ½ runovÃ½ kÃ¡men na runovÃ© tabulce nalil Innosovu svÄ™cenou vodu. Ta jej ale zcela zniÄila - poÄÃ­tÃ¡m tedy, Å¾e tohle kouzlo mÅ¯Å¾e pouÅ¾Ã­t pouze VyvolenÃ½."); 
+						Doc_PrintLines	( nDocID,  1, "KlÃ¡Å¡ter jsem svÄ™Ã¢il pod ochranu svatÃ© Innosovy aury. Opat se uÅ¾ o nÄ™j postarÃ¡, dokud se nÃ¡m nezjevÃ­ VyvolenÃ½."	);
+						Doc_PrintLines	( nDocID,  1, "MoÅ¾nÃ¡ Å¾e v nadchÃ¡zejÃ­cÃ­m boji sehrajÃ­ klÃ­Äovou roli Innosovy slzy. Nemohu je ale drÅ¾et na mÃ­stÄ™, kde je kaÅ¾dÃ½ uvidÃ­ - je to pÃ¢Ã­liÅ¡ nebezpeÄnÃ©. RadÅ¡i je nechÃ¡m tady v knihovnÄ™."	);
 						Doc_Show		( nDocID );
 						
 						
@@ -116,17 +116,17 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			PrintScreen	(PRINT_LearnPalTeleportSecret, -1, -1, FONT_Screen, 2);
 			
 			Log_CreateTopic (TOPIC_TalentRunes,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentRunes,"K vırobê kadé runy potâebuji urèité ingredience. Kdy je pak pouiji na èistı runovı kámen, mohu zvolenou runu vytvoâit podle runové tabulky.");
-			B_LogEntry (TOPIC_TalentRunes,"Ingredience pro runu 'tajnı teleport': 1 svêcená voda");
+			B_LogEntry (TOPIC_TalentRunes,"K vÃ½robÄ™ kaÅ¾dÃ© runy potÃ¢ebuji urÄitÃ© ingredience. KdyÅ¾ je pak pouÅ¾iji na ÄistÃ½ runovÃ½ kÃ¡men, mohu zvolenou runu vytvoÃ¢it podle runovÃ© tabulky.");
+			B_LogEntry (TOPIC_TalentRunes,"Ingredience pro runu 'tajnÃ½ teleport': 1 svÄ™cenÃ¡ voda");
 			
 			
 		
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Pro kadé z tajnıch míst musíš pomocí prázdného runového kamene a lahvièky svêcené vody vytvoâit teleportaèní runu, která tê pak pâenese do zvolené místnosti."); 
+						Doc_PrintLines	( nDocID,  1, "Pro kaÅ¾dÃ© z tajnÃ½ch mÃ­st musÃ­Å¡ pomocÃ­ prÃ¡zdnÃ©ho runovÃ©ho kamene a lahviÄky svÄ™cenÃ© vody vytvoÃ¢it teleportaÄnÃ­ runu, kterÃ¡ tÄ™ pak pÃ¢enese do zvolenÃ© mÃ­stnosti."); 
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Teë u jsem si skoro jist, e právê Innosovy slzy pouívali za dávnıch èasù paladinové pâi dnes ji zapomenutím rituálu svêcení meèe. Take tahle malá lahvièka, co jsem našel, by mêla posvêcené zbrani propùjèit další sílu."	);
+						Doc_PrintLines	( nDocID,  1, "TeÃ« uÅ¾ jsem si skoro jist, Å¾e prÃ¡vÄ™ Innosovy slzy pouÅ¾Ã­vali za dÃ¡vnÃ½ch ÄasÅ¯ paladinovÃ© pÃ¢i dnes jiÅ¾ zapomenutÃ­m rituÃ¡lu svÄ™cenÃ­ meÄe. TakÅ¾e tahle malÃ¡ lahviÄka, co jsem naÅ¡el, by mÄ™la posvÄ™cenÃ© zbrani propÅ¯jÄit dalÅ¡Ã­ sÃ­lu."	);
 						Doc_PrintLine	( nDocID,  1, "");
 						Doc_Show		( nDocID );
 		}
@@ -138,20 +138,20 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 			Npc_SetTalentSkill 	(self, NPC_TALENT_SMITH, 1);
 			Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentSmith,"K vykování takové zbranê potâebuji hlavnê kousek surové oceli. Tu doruda rozhavím v kováâské vıhni a pak ji budu kout na kovadlinê. U urèitıch zbraní je také èasto zapotâebí pouít jisté substance, které jim propùjèí jedineèné vlastnosti.");
-			B_LogEntry (TOPIC_TalentSmith,"Pâidám-li 4 kousky rudy a pêtkrát draèí krev, mohu vykovat DRAKOBIJCE.");
-			B_LogEntry (TOPIC_TalentSmith,"Kdy pouiji 5 kouskù rudy a pêtkrát draèí krev, vykovám VELKÉHO DRAKOBIJCE.");
+			B_LogEntry (TOPIC_TalentSmith,"K vykovÃ¡nÃ­ takovÃ© zbranÄ™ potÃ¢ebuji hlavnÄ™ kousek surovÃ© oceli. Tu doruda rozÅ¾havÃ­m v kovÃ¡Ã¢skÃ© vÃ½hni a pak ji budu kout na kovadlinÄ™. U urÄitÃ½ch zbranÃ­ je takÃ© Äasto zapotÃ¢ebÃ­ pouÅ¾Ã­t jistÃ© substance, kterÃ© jim propÅ¯jÄÃ­ jedineÄnÃ© vlastnosti.");
+			B_LogEntry (TOPIC_TalentSmith,"PÃ¢idÃ¡m-li 4 kousky rudy a pÄ™tkrÃ¡t draÄÃ­ krev, mohu vykovat DRAKOBIJCE.");
+			B_LogEntry (TOPIC_TalentSmith,"KdyÅ¾ pouÅ¾iji 5 kouskÅ¯ rudy a pÄ™tkrÃ¡t draÄÃ­ krev, vykovÃ¡m VELKÃ‰HO DRAKOBIJCE.");
 			PlayerGetsFinalDJGArmor = TRUE;
 		
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Zdroj: Zbranê pána drakù."); 
-						Doc_PrintLines	( nDocID,  1, "Chceš-li zbroj z draèích šupin co moná vytvrdit, musíš ji potáhnout rudou, která se têí v údolí na ostrovê Karynis."					);
+						Doc_PrintLines	( nDocID,  1, "Zdroj: ZbranÄ™ pÃ¡na drakÅ¯."); 
+						Doc_PrintLines	( nDocID,  1, "ChceÅ¡-li zbroj z draÄÃ­ch Å¡upin co moÅ¾nÃ¡ vytvrdit, musÃ­Å¡ ji potÃ¡hnout rudou, kterÃ¡ se tÄ™Å¾Ã­ v ÃºdolÃ­ na ostrovÄ™ Karynis."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Má-li bıt meè hoden pána drakù, pak musíš jeho èepel omoèit v draèí krvi. Pouhıch 5 ampulek s touto vzácnou tekutinou dodá oceli nebıvalou ostrost a prùraznost."					);
+						Doc_PrintLines	( nDocID,  1, "MÃ¡-li bÃ½t meÄ hoden pÃ¡na drakÅ¯, pak musÃ­Å¡ jeho Äepel omoÄit v draÄÃ­ krvi. PouhÃ½ch 5 ampulek s touto vzÃ¡cnou tekutinou dodÃ¡ oceli nebÃ½valou ostrost a prÅ¯raznost."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Poznámka: 'Karynis' je pravdêpodobnê místo dnes známé jako Khorinis.");
+						Doc_PrintLines	( nDocID,  1, "PoznÃ¡mka: 'Karynis' je pravdÄ™podobnÄ™ mÃ­sto dnes znÃ¡mÃ© jako Khorinis.");
 						Doc_Show		( nDocID );
 		};
 		

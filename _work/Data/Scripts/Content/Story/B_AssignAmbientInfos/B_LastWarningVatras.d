@@ -4,18 +4,18 @@
 
 func void B_LastWarningVatras ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_00"); //Cos to udêlal, ty darebáku! 
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_01"); //U nêkolikrát tê lidé z âádu vody varovali, e se necháváš ovládat zlem.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_02"); //Jene teë i já sám musím uznat, e jsi opustil cestu všeobjímající rovnováhy.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_03"); //Máš na svêdomí vrady a rabování a spáchal jsi èetné váné zloèiny.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_04"); //TVOU rukou zahynula spousta nevinnıch.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_05"); //A nyní ses spolèil s temnımi silami.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_00"); //Cos to udÄ™lal, ty darebÃ¡ku! 
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_01"); //UÅ¾ nÄ™kolikrÃ¡t tÄ™ lidÃ© z Ã¢Ã¡du vody varovali, Å¾e se nechÃ¡vÃ¡Å¡ ovlÃ¡dat zlem.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_02"); //JenÅ¾e teÃ« i jÃ¡ sÃ¡m musÃ­m uznat, Å¾e jsi opustil cestu vÅ¡eobjÃ­majÃ­cÃ­ rovnovÃ¡hy.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_03"); //MÃ¡Å¡ na svÄ™domÃ­ vraÅ¾dy a rabovÃ¡nÃ­ a spÃ¡chal jsi ÄetnÃ© vÃ¡Å¾nÃ© zloÄiny.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_04"); //TVOU rukou zahynula spousta nevinnÃ½ch.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_05"); //A nynÃ­ ses spolÄil s temnÃ½mi silami.
 };
 
 func void B_VatrasPissedOff ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //Proto od nynêjška u nepoèítej s naší podporou. 
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //Ztraã se. Pro mne jsi obyèejnı vyvrhel.
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //Proto od nynÄ™jÅ¡ka uÅ¾ nepoÄÃ­tej s naÅ¡Ã­ podporou. 
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //ZtraÄƒ se. Pro mne jsi obyÄejnÃ½ vyvrhel.
 	
 	if (Vatras_IsOnBoard == LOG_SUCCESS)
 	{

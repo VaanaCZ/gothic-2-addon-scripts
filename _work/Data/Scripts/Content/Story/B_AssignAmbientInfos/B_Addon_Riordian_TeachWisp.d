@@ -4,17 +4,17 @@
 ///////////////////////////////////////////////////////////////////////
 func void B_DIA_Addon_Riordian_Teach_15_00 ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Teach_15_00"); //Uka mi, jak si vycvièit bludièku.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Teach_15_00"); //UkaÅ¾ mi, jak si vycviÄit bludiÄku.
 };
 func void  B_DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //Teë ti tvá bludièka mùe hledat další uiteèné vêci.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //TeÃ« ti tvÃ¡ bludiÄka mÅ¯Å¾e hledat dalÅ¡Ã­ uÅ¾iteÄnÃ© vÄ™ci.
 };
 func void B_DIA_Addon_Riordian_Teach_10_08 () 
 {
-	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //Bludièka ti teë bude hledat vêci, které za to stojí. Víc u tê nauèit nemohu.
+	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //BludiÄka ti teÃ« bude hledat vÄ™ci, kterÃ© za to stojÃ­. VÃ­c uÅ¾ tÄ™ nauÄit nemohu.
 };
 func void B_DIA_Addon_Riordian_Teach_10_01 () 
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_Teach2_10_00"); //Co by mêla tvá bludièka hledat?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Teach2_10_00"); //Co by mÄ™la tvÃ¡ bludiÄka hledat?
 };

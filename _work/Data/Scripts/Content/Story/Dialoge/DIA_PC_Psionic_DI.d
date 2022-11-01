@@ -32,7 +32,7 @@ INSTANCE DIA_Lester_DI_Hello (C_INFO)
 	information	= DIA_Lester_DI_Hello_Info;
 	permanent	 = 	TRUE;
 
-	description = "NechtÍl bys mi nÍco ‚Ìct?";
+	description = "Nechtƒôl bys mi nƒôco √¢√≠ct?";
 };    
                    
 FUNC INT DIA_Lester_DI_Hello_Condition()
@@ -46,28 +46,28 @@ var int DIA_Lester_DI_SCGotWarning1;
 var int DIA_Lester_DI_SCGotWarning2;
 FUNC VOID DIA_Lester_DI_Hello_Info()
 {	
-	AI_Output	(other ,self,"DIA_Lester_DI_Hello_15_00");	//NechtÍl bys mi nÍco ‚Ìct?
+	AI_Output	(other ,self,"DIA_Lester_DI_Hello_15_00");	//Nechtƒôl bys mi nƒôco √¢√≠ct?
 
 	if (Npc_IsDead(Mario_DI) == FALSE)
 	&& (ORkSturmDI  == TRUE)
 	&& (DIA_Lester_DI_SCGotWarning1 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Kdyû sk‚eti za˙toËili, Mario utekl. I kdyû tady na lodi byl zmatek, neztratil jsem ho z oËÌ.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//Jednoduöe proöel skrz sk‚etÌ linie - a sk‚eti se ho ani nedotkli.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Moc se mi ten parchant nelÌbil uû od samÈho zaË·tku. Je ve spolku s nep‚Ìtelem.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Kdy≈æ sk√¢eti za√∫toƒçili, Mario utekl. I kdy≈æ tady na lodi byl zmatek, neztratil jsem ho z oƒç√≠.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//Jednodu≈°e pro≈°el skrz sk√¢et√≠ linie - a sk√¢eti se ho ani nedotkli.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Moc se mi ten parchant nel√≠bil u≈æ od sam√©ho zaƒç√°tku. Je ve spolku s nep√¢√≠telem.
 		B_GivePlayerXP (XP_Ambient);
 		DIA_Lester_DI_SCGotWarning1 = TRUE;
 	}
 	else if (Npc_IsDead(Mario_DI) == FALSE)
 	&& (DIA_Lester_DI_SCGotWarning2 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_04");	//Ten divn˝ chlapÌk, co si ‚Ìk· Mario, se mi nelÌbÌ. M· zlou auru.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_05");	//D·vej si pozor, p‚Ìteli.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_04");	//Ten divn√Ω chlap√≠k, co si √¢√≠k√° Mario, se mi nel√≠b√≠. M√° zlou auru.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_05");	//D√°vej si pozor, p√¢√≠teli.
 		DIA_Lester_DI_SCGotWarning2 = TRUE;
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//TeÎ ne. Moûn· pozdÍji.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//Te√´ ne. Mo≈æn√° pozdƒôji.
 	};
 };
 
@@ -81,7 +81,7 @@ INSTANCE DIA_Lester_DI_MarioArsch (C_INFO)
 	condition	= DIA_Lester_DI_MarioArsch_Condition;
 	information	= DIA_Lester_DI_MarioArsch_Info;
 
-	description = "MÍl jsi pravdu. Mario n·s zradil.";
+	description = "Mƒôl jsi pravdu. Mario n√°s zradil.";
 };    
                    
 FUNC INT DIA_Lester_DI_MarioArsch_Condition()
@@ -95,9 +95,9 @@ FUNC INT DIA_Lester_DI_MarioArsch_Condition()
 
 FUNC VOID DIA_Lester_DI_MarioArsch_Info()
 {	
-	AI_Output	(other ,self,"DIA_Lester_DI_MarioArsch_15_00");	//MÍl jsi pravdu. Mario n·s zradil.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//Ano. Moûn· nejsem zrovna nejbyst‚ejöÌ, ale tohle mi bylo jasnÈ.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//P‚ÌötÍ buÎ p‚i vybÌr·nÌ spoleËnÌk˘ opatrnÍjöÌ.
+	AI_Output	(other ,self,"DIA_Lester_DI_MarioArsch_15_00");	//Mƒôl jsi pravdu. Mario n√°s zradil.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//Ano. Mo≈æn√° nejsem zrovna nejbyst√¢ej≈°√≠, ale tohle mi bylo jasn√©.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//P√¢√≠≈°tƒô bu√´ p√¢i vyb√≠r√°n√≠ spoleƒçn√≠k≈Ø opatrnƒôj≈°√≠.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -113,7 +113,7 @@ INSTANCE DIA_PC_Lester_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_PC_Lester_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description = "Uû se tady moc dlouho nezdrûÌme.";
+	description = "U≈æ se tady moc dlouho nezdr≈æ√≠me.";
 };                       
 FUNC INT DIA_PC_Lester_DI_UndeadDragonDead_Condition()
 {
@@ -126,30 +126,30 @@ FUNC INT DIA_PC_Lester_DI_UndeadDragonDead_Condition()
 var int DIA_PC_Lester_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_PC_Lester_DI_UndeadDragonDead_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_00"); //Uû se tady moc dlouho nezdrûÌme.
+	AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_00"); //U≈æ se tady moc dlouho nezdr≈æ√≠me.
 
 	if (DIA_PC_Lester_DI_UndeadDragonDead_OneTime == FALSE )
 	{
 		if ((Npc_GetDistToWP(self,"DI_DRACONIANAREA_19")<4000) )
 			{
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //Zd· se, ûe ta bolest hlavy nadobro zmizela.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_02"); //Jak jsi to udÍlal?
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_03"); //ZniËil jsem nep‚Ìtele.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //Muselo to b˝t opravdu nÍco hodnÍ mocnÈho. Co to p‚esnÍ bylo?
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_05"); //Nemrtv˝ drak.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //Zd√° se, ≈æe ta bolest hlavy nadobro zmizela.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_02"); //Jak jsi to udƒôlal?
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_03"); //Zniƒçil jsem nep√¢√≠tele.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //Muselo to b√Ωt opravdu nƒôco hodnƒô mocn√©ho. Co to p√¢esnƒô bylo?
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_05"); //Nemrtv√Ω drak.
 			};
 	
 		if (SC_KnowsMadPsi == TRUE)
 			{
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_06"); //Tvoji b˝valÌ p‚·telÈ z t·bora v baûin·ch mi dali docela zabrat.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_07"); //Ano. VÌra hory p‚en·öÌ. Tak to bylo vûdycky. Bohuûel slouûili öpatnÈmu bohu.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_08"); //Budu pot‚ebovat vÌc Ëasu, neû se p‚es to dok·ûu ˙plnÍ p‚enÈst.
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_06"); //Tvoji b√Ωval√≠ p√¢√°tel√© z t√°bora v ba≈æin√°ch mi dali docela zabrat.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_07"); //Ano. V√≠ra hory p√¢en√°≈°√≠. Tak to bylo v≈ædycky. Bohu≈æel slou≈æili ≈°patn√©mu bohu.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_08"); //Budu pot√¢ebovat v√≠c ƒçasu, ne≈æ se p√¢es to dok√°≈æu √∫plnƒô p√¢en√©st.
 			};
 		DIA_PC_Lester_DI_UndeadDragonDead_OneTime = TRUE;
 	};
-	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //Doufejme, ûe se uû nikdy nic takovÈho nestane. Na celÈm svÍtÍ nenÌ dost tr·vy, kolik bych jÌ chtÍl teÎ vykou‚it.
+	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //Doufejme, ≈æe se u≈æ nikdy nic takov√©ho nestane. Na cel√©m svƒôtƒô nen√≠ dost tr√°vy, kolik bych j√≠ chtƒôl te√´ vykou√¢it.
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");		
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");		
 };
 
 // ************************************************************

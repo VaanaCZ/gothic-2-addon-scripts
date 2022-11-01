@@ -2,7 +2,7 @@
 // unbenutzte Item - Visuals
 // *************************
 
-//ItRw_Bow_War_04	// D‰monenbogen, Todbringer
+//ItRw_Bow_War_04	// D√§monenbogen, Todbringer
 //ItRw_Bow_War_03	// Sturmbogen
 //ItRw_Bow_War_02	// Orkhetzer
 //ItRw_Bow_War_01	// Kriegsbogen
@@ -26,7 +26,7 @@
 
 INSTANCE ItRw_Arrow(C_Item)
 {
-	name 				=	"äÌp";
+	name 				=	"≈†√≠p";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -47,7 +47,7 @@ INSTANCE ItRw_Arrow(C_Item)
 
 INSTANCE ItRw_Bolt(C_Item)
 {
-	name 				=	"äipka";
+	name 				=	"≈†ipka";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -70,7 +70,7 @@ INSTANCE ItRw_Bolt(C_Item)
 
 INSTANCE ItRw_Mil_Crossbow(C_Item)
 {
-	name 				=	"Kuöe";
+	name 				=	"Ku≈°e";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -116,11 +116,11 @@ INSTANCE ItRw_Sld_Bow(C_Item)
 };
 
 
-//Bˆgen
+//B√∂gen
 //Kapitel 1
 instance ItRw_Bow_L_01(C_Item)
 {
-	name 				=	"Kr·tk˝ luk";
+	name 				=	"Kr√°tk√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -144,7 +144,7 @@ instance ItRw_Bow_L_01(C_Item)
 
 INSTANCE ItRw_Bow_L_02 (C_Item)
 {
-	name 				=	"Vrbov˝ luk";
+	name 				=	"Vrbov√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -169,7 +169,7 @@ INSTANCE ItRw_Bow_L_02 (C_Item)
 //Kapitel 2
 instance ItRw_Bow_L_03 (C_Item)
 {
-	name 				=	"Loveck˝ luk";
+	name 				=	"Loveck√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -193,7 +193,7 @@ instance ItRw_Bow_L_03 (C_Item)
 
 instance ItRw_Bow_L_04 (C_Item)
 {
-	name 				=	"Jilmov˝ luk";
+	name 				=	"Jilmov√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -219,7 +219,7 @@ instance ItRw_Bow_L_04 (C_Item)
 
 INSTANCE ItRw_Bow_M_01 (C_Item)
 {
-	name 				=	"Skl·dan˝ luk";
+	name 				=	"Skl√°dan√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -243,7 +243,7 @@ INSTANCE ItRw_Bow_M_01 (C_Item)
 
 INSTANCE ItRw_Bow_M_02 (C_Item)
 {
-	name 				=	"Jasanov˝ luk";
+	name 				=	"Jasanov√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -269,7 +269,7 @@ INSTANCE ItRw_Bow_M_02 (C_Item)
 
 INSTANCE ItRw_Bow_M_03 (C_Item)
 {
-	name 				=	"Dlouh˝ luk";
+	name 				=	"Dlouh√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -293,7 +293,7 @@ INSTANCE ItRw_Bow_M_03 (C_Item)
 
 INSTANCE ItRw_Bow_M_04 (C_Item)
 {
-	name 				=	"Bukov˝ luk";
+	name 				=	"Bukov√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -319,7 +319,7 @@ INSTANCE ItRw_Bow_M_04 (C_Item)
 
 INSTANCE ItRw_Bow_H_01 (C_Item)
 {
-	name 				=	"KostÍn˝ luk";
+	name 				=	"Kostƒôn√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -343,7 +343,7 @@ INSTANCE ItRw_Bow_H_01 (C_Item)
 
 INSTANCE ItRw_Bow_H_02 (C_Item)
 {
-	name 				=	"Dubov˝ luk";
+	name 				=	"Dubov√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -369,7 +369,7 @@ INSTANCE ItRw_Bow_H_02 (C_Item)
 
 INSTANCE ItRw_Bow_H_03 (C_Item)
 {
-	name 				=	"V·leËn˝ luk";
+	name 				=	"V√°leƒçn√Ω luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -393,7 +393,7 @@ INSTANCE ItRw_Bow_H_03 (C_Item)
 
 INSTANCE ItRw_Bow_H_04 (C_Item)
 {
-	name 				=	"DraËÌ luk";
+	name 				=	"Draƒç√≠ luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -415,13 +415,13 @@ INSTANCE ItRw_Bow_H_04 (C_Item)
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 
-//Armbr¸ste
+//Armbr√ºste
 
 //Kapitel 1
 
 INSTANCE ItRw_Crossbow_L_01(C_Item)
 {
-	name 				=	"Loveck· kuöe";
+	name 				=	"Loveck√° ku≈°e";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -446,7 +446,7 @@ INSTANCE ItRw_Crossbow_L_01(C_Item)
 
 INSTANCE ItRw_Crossbow_L_02(C_Item)
 {
-	name 				=	"Lehk· kuöe";
+	name 				=	"Lehk√° ku≈°e";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -471,7 +471,7 @@ INSTANCE ItRw_Crossbow_L_02(C_Item)
 
 INSTANCE ItRw_Crossbow_M_01(C_Item)
 {
-	name 				=	"Kuöe";
+	name 				=	"Ku≈°e";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -496,7 +496,7 @@ INSTANCE ItRw_Crossbow_M_01(C_Item)
 
 INSTANCE ItRw_Crossbow_M_02(C_Item)
 {
-	name 				=	"V·leËn· kuöe";
+	name 				=	"V√°leƒçn√° ku≈°e";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -521,7 +521,7 @@ INSTANCE ItRw_Crossbow_M_02(C_Item)
 
 INSTANCE ItRw_Crossbow_H_01(C_Item)
 {
-	name 				=	"TÍûk· kuöe";
+	name 				=	"Tƒô≈æk√° ku≈°e";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -546,7 +546,7 @@ INSTANCE ItRw_Crossbow_H_01(C_Item)
 
 INSTANCE ItRw_Crossbow_H_02(C_Item)
 {
-	name 				=	"Kuöe drakobijc˘";
+	name 				=	"Ku≈°e drakobijc≈Ø";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;

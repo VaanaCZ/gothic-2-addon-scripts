@@ -48,9 +48,9 @@ FUNC INT DIA_Udar_Hello_Condition()
 };
 FUNC VOID DIA_Udar_Hello_Info()
 {	
-	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//Kdy jsi vešel, mêl jsi zatracené štêstí. Málem jsem tê zastâelil.
-	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//V tom pâípadê bych asi mêl bıt rád, e máš tak skvêlı zrak.
-	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//Šetâi si dech. Jestli nêco chceš, promluv si se Sengrathem.
+	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//KdyÅ¾ jsi veÅ¡el, mÄ™l jsi zatracenÃ© Å¡tÄ™stÃ­. MÃ¡lem jsem tÄ™ zastÃ¢elil.
+	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//V tom pÃ¢Ã­padÄ™ bych asi mÄ™l bÃ½t rÃ¡d, Å¾e mÃ¡Å¡ tak skvÄ™lÃ½ zrak.
+	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//Å etÃ¢i si dech. Jestli nÄ™co chceÅ¡, promluv si se Sengrathem.
 	
 	AI_StopProcessInfos (self);
 };
@@ -65,7 +65,7 @@ INSTANCE DIA_Udar_YouAreBest (C_INFO)
 	condition	= DIA_Udar_YouAreBest_Condition;
 	information	= DIA_Udar_YouAreBest_Info;
 	permanent	= FALSE;
-	Description = "Slyšel jsem, e jsi ten NEJLEPŠÍ stâelec z kuše...";
+	Description = "SlyÅ¡el jsem, Å¾e jsi ten NEJLEPÅ Ã stÃ¢elec z kuÅ¡e...";
 };                       
 
 FUNC INT DIA_Udar_YouAreBest_Condition()
@@ -78,8 +78,8 @@ FUNC INT DIA_Udar_YouAreBest_Condition()
  
 FUNC VOID DIA_Udar_YouAreBest_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//Slyšel jsem, e jsi NEJLEPŠÍ stâelec z kuše široko daleko.
-	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//Pokud se to âíká, tak to asi bude pravda. Co chceš?
+	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//SlyÅ¡el jsem, Å¾e jsi NEJLEPÅ Ã stÃ¢elec z kuÅ¡e Å¡iroko daleko.
+	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//Pokud se to Ã¢Ã­kÃ¡, tak to asi bude pravda. Co chceÅ¡?
 };
 
 //***********************************
@@ -93,7 +93,7 @@ INSTANCE DIA_Udar_TeachMe (C_INFO)
 	condition	= DIA_Udar_TeachMe_Condition;
 	information	= DIA_Udar_TeachME_Info;
 	permanent	= FALSE;
-	Description = "Nauè mê, jak správnê stâílet z kuše.";
+	Description = "NauÄ mÄ™, jak sprÃ¡vnÄ™ stÃ¢Ã­let z kuÅ¡e.";
 };                       
 
 FUNC INT DIA_Udar_TeachMe_Condition()
@@ -107,8 +107,8 @@ FUNC INT DIA_Udar_TeachMe_Condition()
  
 FUNC VOID DIA_Udar_TeachME_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Teacher_15_00");	//Nauè mê, jak správnê stâílet z kuše.
-	AI_Output	(self ,other,"DIA_Udar_Teacher_09_01");	//Zmiz! Kolem hradu pobíhá spousta terèù. Cviè se na nich.
+	AI_Output	(other,self ,"DIA_Udar_Teacher_15_00");	//NauÄ mÄ™, jak sprÃ¡vnÄ™ stÃ¢Ã­let z kuÅ¡e.
+	AI_Output	(self ,other,"DIA_Udar_Teacher_09_01");	//Zmiz! Kolem hradu pobÃ­hÃ¡ spousta terÄÅ¯. CviÄ se na nich.
 
 };	
 
@@ -123,7 +123,7 @@ INSTANCE DIA_Udar_ImGood (C_INFO)
 	condition	= DIA_Udar_ImGood_Condition;
 	information	= DIA_Udar_ImGood_Info;
 	permanent	= FALSE;
-	Description = "Jsem nejlepší.";
+	Description = "Jsem nejlepÅ¡Ã­.";
 };                       
 
 FUNC INT DIA_Udar_ImGood_Condition()
@@ -136,12 +136,12 @@ FUNC INT DIA_Udar_ImGood_Condition()
  
 FUNC VOID DIA_Udar_ImGood_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//Jsem nejlepší.
-	AI_Output	(self ,other,"DIA_Udar_ImGood_09_01");	//(smêje se) To teda jo!
-	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//No, pokud se chceš uèit, pomùu ti.
+	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//Jsem nejlepÅ¡Ã­.
+	AI_Output	(self ,other,"DIA_Udar_ImGood_09_01");	//(smÄ™je se) To teda jo!
+	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//No, pokud se chceÅ¡ uÄit, pomÅ¯Å¾u ti.
 	
 	Udar_TeachPlayer = TRUE;
-	B_LogEntry		(TOPIC_Teacher_OC, "Udar mi vysvêtlí, jak zacházet s kuší."); 
+	B_LogEntry		(TOPIC_Teacher_OC, "Udar mi vysvÄ™tlÃ­, jak zachÃ¡zet s kuÅ¡Ã­."); 
 };
 
 //***********************************
@@ -155,7 +155,7 @@ INSTANCE DIA_Udar_Teach (C_INFO)
 	condition	= DIA_Udar_Teach_Condition;
 	information	= DIA_Udar_Teach_Info;
 	permanent	= TRUE;
-	Description = "Chtêl bych se od tebe nêèemu pâiuèit.";
+	Description = "ChtÄ™l bych se od tebe nÄ™Äemu pÃ¢iuÄit.";
 };                       
 
 FUNC INT DIA_Udar_Teach_Condition()
@@ -168,8 +168,8 @@ FUNC INT DIA_Udar_Teach_Condition()
  
 FUNC VOID DIA_Udar_Teach_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Teach_15_00");	//Chci se uèit od tebe.
-	AI_Output	(self ,other,"DIA_Udar_Teach_09_01");   //Dobrá, tak spusã!
+	AI_Output	(other,self ,"DIA_Udar_Teach_15_00");	//Chci se uÄit od tebe.
+	AI_Output	(self ,other,"DIA_Udar_Teach_09_01");   //DobrÃ¡, tak spusÄƒ!
 	
 	Info_ClearChoices (DIA_Udar_Teach);
 	
@@ -185,12 +185,12 @@ FUNC VOID DIA_Udar_Teach_BACK()
 
 FUNC VOID B_Udar_TeachNoMore1 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //Základy u umíš - na víc nemáme èas.
+	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //ZÃ¡klady uÅ¾ umÃ­Å¡ - na vÃ­c nemÃ¡me Äas.
 };
 
 FUNC VOID B_Udar_TeachNoMore2 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore2_09_00"); //Jestli se chceš nauèit se svou zbraní zacházet lépe, mêl by sis najít skuteèného uèitele.
+	AI_Output(self,other,"B_Udar_TeachNoMore2_09_00"); //Jestli se chceÅ¡ nauÄit se svou zbranÃ­ zachÃ¡zet lÃ©pe, mÄ™l by sis najÃ­t skuteÄnÃ©ho uÄitele.
 };
 
 FUNC VOID DIA_Udar_Teach_Crossbow_1 ()
@@ -235,7 +235,7 @@ INSTANCE DIA_Udar_Perm (C_INFO)
 	condition	= DIA_Udar_Perm_Condition;
 	information	= DIA_Udar_Perm_Info;
 	permanent	= FALSE;
-	Description = "Jak to jde tady na hradê?";
+	Description = "Jak to jde tady na hradÄ™?";
 };                       
 FUNC INT DIA_Udar_Perm_Condition()
 {
@@ -246,9 +246,9 @@ FUNC INT DIA_Udar_Perm_Condition()
 };
 FUNC VOID DIA_Udar_Perm_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Perm_15_00");	//Jak to jde tady na hradê?
-	AI_Output	(self ,other,"DIA_Udar_Perm_09_01");	//Pár chlapcù trénuje, ale v zásadê èekáme, a se nêco stane.
-	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Tahle nejistota nás ubíjí. To mají skâeti pâesnê v plánu. Èekají, a nám prasknou nervy.
+	AI_Output	(other,self ,"DIA_Udar_Perm_15_00");	//Jak to jde tady na hradÄ™?
+	AI_Output	(self ,other,"DIA_Udar_Perm_09_01");	//PÃ¡r chlapcÅ¯ trÃ©nuje, ale v zÃ¡sadÄ™ ÄekÃ¡me, aÅ¾ se nÄ™co stane.
+	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Tahle nejistota nÃ¡s ubÃ­jÃ­. To majÃ­ skÃ¢eti pÃ¢esnÄ™ v plÃ¡nu. ÄŒekajÃ­, aÅ¾ nÃ¡m prasknou nervy.
 };	
 //***********************************
 //	Ring 
@@ -261,7 +261,7 @@ INSTANCE DIA_Udar_Ring (C_INFO)
 	condition	= DIA_Udar_Ring_Condition;
 	information	= DIA_Udar_Ring_Info;
 	permanent	= FALSE;
-	Description = "Tady ti nesu ten Tengronùv prsten...";
+	Description = "Tady ti nesu ten TengronÅ¯v prsten...";
 };                       
 FUNC INT DIA_Udar_Ring_Condition()
 {
@@ -272,9 +272,9 @@ FUNC INT DIA_Udar_Ring_Condition()
 };
 FUNC VOID DIA_Udar_Ring_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//Pâináším ti Tengronùv prsten. Mêl by tê chránit. A se Tengron vrátí, bude ho chtít zpátky.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Coe? Víš, co to je za prsten? Dostal ho jako odmênu za svou odvahu v boji.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Âíkáš, e ho bude chtít zpátky? Pokud to je vùle Innosova, stane se tak. Pokud to je vùle Innosova...
+	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//PÃ¢inÃ¡Å¡Ã­m ti TengronÅ¯v prsten. MÄ™l by tÄ™ chrÃ¡nit. AÅ¾ se Tengron vrÃ¡tÃ­, bude ho chtÃ­t zpÃ¡tky.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//CoÅ¾e? VÃ­Å¡, co to je za prsten? Dostal ho jako odmÄ™nu za svou odvahu v boji.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Ã‚Ã­kÃ¡Å¡, Å¾e ho bude chtÃ­t zpÃ¡tky? Pokud to je vÅ¯le Innosova, stane se tak. Pokud to je vÅ¯le Innosova...
 	
 	B_GiveInvItems (other,self,ItRi_Tengron,1);
 	TengronRing = TRUE;
@@ -338,16 +338,16 @@ func int DIA_Udar_Kap4WiederDa_Condition ()
 
 func void DIA_Udar_Kap4WiederDa_Info ()
 {
-	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //Je dobâe, e jsi pâišel. Brzy tady propukne peklo.
+	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //Je dobÃ¢e, Å¾e jsi pÃ¢iÅ¡el. Brzy tady propukne peklo.
 
 	if (hero.guild != GIL_DJG)
 	{
 		AI_Output			(other, self, "DIA_Udar_Kap4WiederDa_15_01"); //Co se stalo?
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //Po hradê se poflakují drakobijci a chvástají se, e dokáí vyâešit naše problémy s draky.
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Ale nêco ti povím - vypadají, jako by nedokázali zneškodnit ani nemocného starého slepıše.
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //Po hradÄ™ se poflakujÃ­ drakobijci a chvÃ¡stajÃ­ se, Å¾e dokÃ¡Å¾Ã­ vyÃ¢eÅ¡it naÅ¡e problÃ©my s draky.
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Ale nÄ™co ti povÃ­m - vypadajÃ­, jako by nedokÃ¡zali zneÅ¡kodnit ani nemocnÃ©ho starÃ©ho slepÃ½Å¡e.
 	};
 
-	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_04"); //Spousta z nás si zaèíná dêlat starosti a u moc nevêâíme, e se odsud dostaneme se zdravou kùí.
+	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_04"); //Spousta z nÃ¡s si zaÄÃ­nÃ¡ dÄ™lat starosti a uÅ¾ moc nevÄ™Ã¢Ã­me, Å¾e se odsud dostaneme se zdravou kÅ¯Å¾Ã­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -360,7 +360,7 @@ instance DIA_Udar_Sengrath		(C_INFO)
 	condition	 = 	DIA_Udar_Sengrath_Condition;
 	information	 = 	DIA_Udar_Sengrath_Info;
 
-	description	 = 	"Nebyli jste tady na hlídce dva?";
+	description	 = 	"Nebyli jste tady na hlÃ­dce dva?";
 };
 
 func int DIA_Udar_Sengrath_Condition ()
@@ -375,16 +375,16 @@ func int DIA_Udar_Sengrath_Condition ()
 
 func void DIA_Udar_Sengrath_Info ()
 {
-	AI_Output			(other, self, "DIA_Udar_Sengrath_15_00"); //Nebyli jste tady na hlídce dva?
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_01"); //Bıvalo. Sengrath stál tady na hradbách a najednou z nièeho nic usnul.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_02"); //Kdy se to stalo, jeho dobrı samostâíl spadnul dolù.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_03"); //Vidêli jsme, jak ho skâeti popadli a zmizeli s ním ve tmê.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_04"); //Sengrath se hned probudil a vybêhl do noci smêrem ke skâetí palisádê. Od té chvíle jsme ho nevidêli.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_05"); //Innos stùj pâi nás!
+	AI_Output			(other, self, "DIA_Udar_Sengrath_15_00"); //Nebyli jste tady na hlÃ­dce dva?
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_01"); //BÃ½valo. Sengrath stÃ¡l tady na hradbÃ¡ch a najednou z niÄeho nic usnul.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_02"); //KdyÅ¾ se to stalo, jeho dobrÃ½ samostÃ¢Ã­l spadnul dolÅ¯.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_03"); //VidÄ™li jsme, jak ho skÃ¢eti popadli a zmizeli s nÃ­m ve tmÄ™.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_04"); //Sengrath se hned probudil a vybÄ™hl do noci smÄ™rem ke skÃ¢etÃ­ palisÃ¡dÄ™. Od tÃ© chvÃ­le jsme ho nevidÄ™li.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_05"); //Innos stÅ¯j pÃ¢i nÃ¡s!
 
 	Log_CreateTopic (TOPIC_Sengrath_Missing, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Sengrath_Missing, LOG_RUNNING);
-	B_LogEntry (TOPIC_Sengrath_Missing,"Udar, stránı z hradu, postrádá svého druha Sengratha. Naposledy ho vidêl pozdê v noci, kdy míâil ke skâetímu opevnêní a vracel se pro svou kuši."); 
+	B_LogEntry (TOPIC_Sengrath_Missing,"Udar, strÃ¡Å¾nÃ½ z hradu, postrÃ¡dÃ¡ svÃ©ho druha Sengratha. Naposledy ho vidÄ™l pozdÄ™ v noci, kdyÅ¾ mÃ­Ã¢il ke skÃ¢etÃ­mu opevnÄ™nÃ­ a vracel se pro svou kuÅ¡i."); 
 };
 
 
@@ -398,7 +398,7 @@ instance DIA_Udar_SENGRATHGEFUNDEN		(C_INFO)
 	condition	 = 	DIA_Udar_SENGRATHGEFUNDEN_Condition;
 	information	 = 	DIA_Udar_SENGRATHGEFUNDEN_Info;
 
-	description	 = 	"Našel jsem Sengratha.";
+	description	 = 	"NaÅ¡el jsem Sengratha.";
 };
 
 func int DIA_Udar_SENGRATHGEFUNDEN_Condition ()
@@ -413,11 +413,11 @@ func int DIA_Udar_SENGRATHGEFUNDEN_Condition ()
 
 func void DIA_Udar_SENGRATHGEFUNDEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_00"); //Našel jsem Sengratha.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_01"); //Vánê? Kde je?
-	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //Je mrtvı. Tady je jeho kuše. Mêl ji u sebe.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //Nejspíš se mu ji podaâilo získat zpêt, ale skâeti ho nakonec pâece jenom dostali.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_04"); //Zatracenı blázen. Vêdêl jsem to. Všichni tady pochcípeme.
+	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_00"); //NaÅ¡el jsem Sengratha.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_01"); //VÃ¡Å¾nÄ™? Kde je?
+	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //Je mrtvÃ½. Tady je jeho kuÅ¡e. MÄ™l ji u sebe.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //NejspÃ­Å¡ se mu ji podaÃ¢ilo zÃ­skat zpÄ™t, ale skÃ¢eti ho nakonec pÃ¢ece jenom dostali.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_04"); //ZatracenÃ½ blÃ¡zen. VÄ™dÄ™l jsem to. VÅ¡ichni tady pochcÃ­peme.
 
 	TOPIC_END_Sengrath_Missing = TRUE;
 	B_GivePlayerXP (XP_SengrathFound);
@@ -451,15 +451,15 @@ func void DIA_Udar_BADFEELING_Info ()
 {
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_00"); //Ještê jeden takovı útok a budeme rát hlínu.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_00"); //JeÅ¡tÄ™ jeden takovÃ½ Ãºtok a budeme Å¾rÃ¡t hlÃ­nu.
 	}
 	else if (MIS_AllDragonsDead == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_01"); //Skâeti mají dost starostí. Nêco je hroznê vydêsilo. Cítím to.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_01"); //SkÃ¢eti majÃ­ dost starostÃ­. NÄ™co je hroznÄ™ vydÄ™silo. CÃ­tÃ­m to.
 	}
 	else 
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_02"); //Nemám z toho vùbec dobrı pocit.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_02"); //NemÃ¡m z toho vÅ¯bec dobrÃ½ pocit.
 	};
 	
 	Npc_SetRefuseTalk (self,30);

@@ -78,8 +78,8 @@ FUNC INT DIA_Gritta_Hello_Condition()
 };
 FUNC VOID DIA_Gritta_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Gritta_Hello_16_00"); //Co chceš, cizinèe? Jestli jsi pâišel ebrat, pak tê musím zklamat - jsem jenom chudá vdova.
-	AI_Output (self ,other,"DIA_Gritta_Hello_16_01"); //Jmenuji se Gritta. Od té doby, co mi zemâel manel, vedu domácnost svému strıci Thorbenovi.
+	AI_Output (self ,other,"DIA_Gritta_Hello_16_00"); //Co chceÅ¡, cizinÄe? Jestli jsi pÃ¢iÅ¡el Å¾ebrat, pak tÄ™ musÃ­m zklamat - jsem jenom chudÃ¡ vdova.
+	AI_Output (self ,other,"DIA_Gritta_Hello_16_01"); //Jmenuji se Gritta. Od tÃ© doby, co mi zemÃ¢el manÅ¾el, vedu domÃ¡cnost svÃ©mu strÃ½ci Thorbenovi.
 };
 //*************************************************************
 //			Matteo will sein Geld
@@ -91,7 +91,7 @@ INSTANCE DIA_Gritta_WantsMoney(C_INFO)
 	condition	= DIA_Gritta_WantsMoney_Condition;
 	information	= DIA_Gritta_WantsMoney_Info;
 	permanent	= FALSE;
-	description = "Posílá mê Matteo, prı mu stále dluíš nêjaké peníze.";
+	description = "PosÃ­lÃ¡ mÄ™ Matteo, prÃ½ mu stÃ¡le dluÅ¾Ã­Å¡ nÄ™jakÃ© penÃ­ze.";
 };                       
 FUNC INT DIA_Gritta_WantsMoney_Condition()
 {
@@ -106,63 +106,63 @@ var int Gritta_Threatened;
 //------------------------------------
 FUNC VOID DIA_Gritta_WantsMoney_Info()
 {	
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_15_00"); //Posílá mê Matteo, prı mu stále dluíš nêjaké peníze.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_01"); //On chce své peníze? A proè? Zboí, které mi dodal, bylo vadné, špatnê utkané a ještê hùâe sešité.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_02"); //A vidêl jsi ty barvy? Vùbec se nepodobaly têm, jaké jsem si objednala! Je to podvod, nic jiného!
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_03"); //Âeknu ti, e kdyby byl naivu mùj mu, Matteo by si nikdy nic takového nedovolil. Ach, mùj ubohı manel...
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_15_00"); //PosÃ­lÃ¡ mÄ™ Matteo, prÃ½ mu stÃ¡le dluÅ¾Ã­Å¡ nÄ™jakÃ© penÃ­ze.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_01"); //On chce svÃ© penÃ­ze? A proÄ? ZboÅ¾Ã­, kterÃ© mi dodal, bylo vadnÃ©, Å¡patnÄ™ utkanÃ© a jeÅ¡tÄ™ hÅ¯Ã¢e seÅ¡itÃ©.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_02"); //A vidÄ™l jsi ty barvy? VÅ¯bec se nepodobaly tÄ™m, jakÃ© jsem si objednala! Je to podvod, nic jinÃ©ho!
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_03"); //Ã‚eknu ti, Å¾e kdyby byl naÅ¾ivu mÅ¯j muÅ¾, Matteo by si nikdy nic takovÃ©ho nedovolil. Ach, mÅ¯j ubohÃ½ manÅ¾el...
 
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
 	Info_AddChoice (DIA_Gritta_WantsMoney,"Nech toho. Kde jsou ty prachy?",DIA_Gritta_WantsMoney_WhereMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Pokraèovat...",DIA_Gritta_WantsMoney_Continue01);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"PokraÄovat...",DIA_Gritta_WantsMoney_Continue01);
 };
 FUNC VOID DIA_Gritta_WantsMoney_Continue01 ()
 {
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue01_16_00"); //...byl to takovı dobrák. Pohlednı, pracovitı a dentlmen ze staré školy. Nic nám nechybêlo - byli jsme bohatí a šãastní...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue01_16_01"); //...obèas nás dokonce zvali i do lepší spoleènosti. Samé slavnosti, krásné šaty a úèesy...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue01_16_02"); //...vybraná jídla a zdvoâilá konverzace. Všechno bylo tenkrát lepší. Tehdy by si nikdo nedovolil uráet nebohou vdovu takovımi...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue01_16_00"); //...byl to takovÃ½ dobrÃ¡k. PohlednÃ½, pracovitÃ½ a dÅ¾entlmen ze starÃ© Å¡koly. Nic nÃ¡m nechybÄ™lo - byli jsme bohatÃ­ a Å¡ÄƒastnÃ­...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue01_16_01"); //...obÄas nÃ¡s dokonce zvali i do lepÅ¡Ã­ spoleÄnosti. SamÃ© slavnosti, krÃ¡snÃ© Å¡aty a ÃºÄesy...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue01_16_02"); //...vybranÃ¡ jÃ­dla a zdvoÃ¢ilÃ¡ konverzace. VÅ¡echno bylo tenkrÃ¡t lepÅ¡Ã­. Tehdy by si nikdo nedovolil urÃ¡Å¾et nebohou vdovu takovÃ½mi...
 	
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
 	Info_AddChoice (DIA_Gritta_WantsMoney,"Nech toho. Kde jsou ty prachy?",DIA_Gritta_WantsMoney_WhereMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Pokraèovat...",DIA_Gritta_WantsMoney_Continue02);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"PokraÄovat...",DIA_Gritta_WantsMoney_Continue02);
 };
 FUNC VOID DIA_Gritta_WantsMoney_Continue02 ()
 {
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue02_16_00"); //...smêšnımi tvrzeními. Co si jen poènu? Moje renta staèí jen taktak na pâeití a èasy jsou èím dál horší. Je to vidêt všude...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue02_16_01"); //...lidé musí šetâit, škudlit a utahovat opasky. U celé tıdny do mêsta nedorazila ádná loë. Mùj mu bıval kapitánem obchodní lodi - vlastnê ji zároveà i vlastnil...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue02_16_02"); //...ze svıch cest mi vdycky vozil dárky - nádherné látky z pevniny, vzácné koâení z jiních zemí...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue02_16_00"); //...smÄ™Å¡nÃ½mi tvrzenÃ­mi. Co si jen poÄnu? Moje renta staÄÃ­ jen taktak na pÃ¢eÅ¾itÃ­ a Äasy jsou ÄÃ­m dÃ¡l horÅ¡Ã­. Je to vidÄ™t vÅ¡ude...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue02_16_01"); //...lidÃ© musÃ­ Å¡etÃ¢it, Å¡kudlit a utahovat opasky. UÅ¾ celÃ© tÃ½dny do mÄ™sta nedorazila Å¾Ã¡dnÃ¡ loÃ«. MÅ¯j muÅ¾ bÃ½val kapitÃ¡nem obchodnÃ­ lodi - vlastnÄ™ ji zÃ¡roveÅ• i vlastnil...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue02_16_02"); //...ze svÃ½ch cest mi vÅ¾dycky vozil dÃ¡rky - nÃ¡dhernÃ© lÃ¡tky z pevniny, vzÃ¡cnÃ© koÃ¢enÃ­ z jiÅ¾nÃ­ch zemÃ­...
 	
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
 	Info_AddChoice (DIA_Gritta_WantsMoney,"Nech toho. Kde jsou ty prachy?",DIA_Gritta_WantsMoney_WhereMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Pokraèovat...",DIA_Gritta_WantsMoney_Continue03);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"PokraÄovat...",DIA_Gritta_WantsMoney_Continue03);
 };
 FUNC VOID DIA_Gritta_WantsMoney_Continue03 ()
 {
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue03_16_00"); //...vêtšina lidí o podobnıch vêcech nikdy neslyšela. Ale jednoho dne jsem dostala zprávu, e Gritta se potopila - ano, naše loë nesla toto jméno, mùj mu tím dával najevo...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue03_16_01"); //...lásku, jakou ke mnê choval. Plakala jsem a modlila se, aby mùj drahı to neštêstí pâeil, kadı den jsem doufala, e o nêm tâeba uslyším, ale má touha byla marná...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue04_16_02"); //...ké se Innos smiluje nad jeho duší. Aã odpoèívá v pokoji. Od té doby tu pâebıvám v têchto skromnıch podmínkách, a teë mê ten bezcitnı, bezohlednı Matteo...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue04_16_03"); //...chce pâipravit o poslední zbyteèek mıch celoivotních úspor. Prosím, smiluj se nad ubohou enou. Kdyby byl naivu mùj mu, nikdy by si nic takového nedovolil. Ach, mùj ubohı manel...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue03_16_00"); //...vÄ™tÅ¡ina lidÃ­ o podobnÃ½ch vÄ™cech nikdy neslyÅ¡ela. Ale jednoho dne jsem dostala zprÃ¡vu, Å¾e Gritta se potopila - ano, naÅ¡e loÃ« nesla toto jmÃ©no, mÅ¯j muÅ¾ tÃ­m dÃ¡val najevo...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue03_16_01"); //...lÃ¡sku, jakou ke mnÄ™ choval. Plakala jsem a modlila se, aby mÅ¯j drahÃ½ to neÅ¡tÄ™stÃ­ pÃ¢eÅ¾il, kaÅ¾dÃ½ den jsem doufala, Å¾e o nÄ™m tÃ¢eba uslyÅ¡Ã­m, ale mÃ¡ touha byla marnÃ¡...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue04_16_02"); //...kÃ©Å¾ se Innos smiluje nad jeho duÅ¡Ã­. AÄƒ odpoÄÃ­vÃ¡ v pokoji. Od tÃ© doby tu pÃ¢ebÃ½vÃ¡m v tÄ™chto skromnÃ½ch podmÃ­nkÃ¡ch, a teÃ« mÄ™ ten bezcitnÃ½, bezohlednÃ½ Matteo...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue04_16_03"); //...chce pÃ¢ipravit o poslednÃ­ zbyteÄek mÃ½ch celoÅ¾ivotnÃ­ch Ãºspor. ProsÃ­m, smiluj se nad ubohou Å¾enou. Kdyby byl naÅ¾ivu mÅ¯j muÅ¾, nikdy by si nic takovÃ©ho nedovolil. Ach, mÅ¯j ubohÃ½ manÅ¾el...
 	
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Pâestaà s tím. Kde je to zlato?",DIA_Gritta_WantsMoney_WhereMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Pokraèovat...",DIA_Gritta_WantsMoney_Continue01);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"PÃ¢estaÅ• s tÃ­m. Kde je to zlato?",DIA_Gritta_WantsMoney_WhereMoney);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"PokraÄovat...",DIA_Gritta_WantsMoney_Continue01);
 };
 FUNC VOID DIA_Gritta_WantsMoney_WhereMoney ()
 {
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_WhereMoney_15_00"); //Pâestaà s tím. Kde je to zlato?
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_WhereMoney_16_01"); //(vzdorovitê) Ale já to zlato nemám, jsem jenom chudá vdova!
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_WhereMoney_15_00"); //PÃ¢estaÅ• s tÃ­m. Kde je to zlato?
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_WhereMoney_16_01"); //(vzdorovitÄ™) Ale jÃ¡ to zlato nemÃ¡m, jsem jenom chudÃ¡ vdova!
 	
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Naval prachy, nebo ti jednu vlepím!",DIA_Gritta_WantsMoney_BeatUp);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Tak to asi budeme muset prodat nêjakı tvùj majetek...",DIA_Gritta_WantsMoney_EnoughStuff);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Tak já tu sumu zaplatím za tebe.",DIA_Gritta_WantsMoney_IWillPay);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"Naval prachy, nebo ti jednu vlepÃ­m!",DIA_Gritta_WantsMoney_BeatUp);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"Tak to asi budeme muset prodat nÄ™jakÃ½ tvÅ¯j majetek...",DIA_Gritta_WantsMoney_EnoughStuff);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"Tak jÃ¡ tu sumu zaplatÃ­m za tebe.",DIA_Gritta_WantsMoney_IWillPay);
 };
 FUNC VOID DIA_Gritta_WantsMoney_EnoughStuff ()
 {
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_EnoughStuff_15_00"); //Tak prostê prodej pár têch svıch hadâíkù. Urèitê jich máš ve skâíni celou hromadu.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_EnoughStuff_16_01"); //Jak se opovauješ, ty nevychovanèe! No tak dobâe, tady máš to zlato.
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_EnoughStuff_15_00"); //Tak prostÄ™ prodej pÃ¡r tÄ™ch svÃ½ch hadÃ¢Ã­kÅ¯. UrÄitÄ™ jich mÃ¡Å¡ ve skÃ¢Ã­ni celou hromadu.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_EnoughStuff_16_01"); //Jak se opovaÅ¾ujeÅ¡, ty nevychovanÄe! No tak dobÃ¢e, tady mÃ¡Å¡ to zlato.
 	B_GiveInvItems (self,other,ItMi_Gold, 100); 
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_EnoughStuff_15_02"); //(úšklebek) Vida, ani to nebolelo.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_EnoughStuff_16_03"); //(jedovatê) A teë prosím odejdi z mého domu.
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_EnoughStuff_15_02"); //(ÃºÅ¡klebek) Vida, ani to nebolelo.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_EnoughStuff_16_03"); //(jedovatÄ™) A teÃ« prosÃ­m odejdi z mÃ©ho domu.
 	
 	Gritta_GoldGiven = TRUE;
 	
@@ -170,18 +170,18 @@ FUNC VOID DIA_Gritta_WantsMoney_EnoughStuff ()
 };
 func VOID DIA_Gritta_WantsMoney_IWillPay ()
 {
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_IWillPay_15_00"); //Tak já tu sumu zaplatím za tebe.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_IWillPay_16_01"); //Opravdu bys to pro mê udêlal? Ach, já vêdêla, e nejsi takovı nenaranı hajzl jako Matteo!
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_IWillPay_15_00"); //Tak jÃ¡ tu sumu zaplatÃ­m za tebe.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_IWillPay_16_01"); //Opravdu bys to pro mÄ™ udÄ™lal? Ach, jÃ¡ vÄ™dÄ™la, Å¾e nejsi takovÃ½ nenaÅ¾ranÃ½ hajzl jako Matteo!
 	AI_Output (other,self ,"DIA_Gritta_WantsMoney_IWillPay_15_02"); //No jo, to nic.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_IWillPay_16_03"); //Vraã se, a to zaâídíš - chci se ti nêjak odvdêèit.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_IWillPay_16_03"); //VraÄƒ se, aÅ¾ to zaÃ¢Ã­dÃ­Å¡ - chci se ti nÄ™jak odvdÄ™Äit.
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
 	
 	Gritta_WantPay = TRUE;
 };
 FUNC VOID DIA_Gritta_WantsMoney_BeatUp ()
 {
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_BeatUp_15_00"); //(hrozivê) Naval prachy, nebo ti jednu vlepím!
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_BeatUp_16_01"); //(vyzıvavê) Jsi jenom prachsprostı lump. Jen pojë, vytas zbraà a já zavolám stráe!
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_BeatUp_15_00"); //(hrozivÄ™) Naval prachy, nebo ti jednu vlepÃ­m!
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_BeatUp_16_01"); //(vyzÃ½vavÄ™) Jsi jenom prachsprostÃ½ lump. Jen pojÃ«, vytas zbraÅ• a jÃ¡ zavolÃ¡m strÃ¡Å¾e!
 	
 	Gritta_Threatened = TRUE;
 	
@@ -212,9 +212,9 @@ func int DIA_Gritta_WINE_Condition ()
 };
 func void DIA_Gritta_WINE_Info ()
 {
-	AI_Output (self, other, "DIA_Gritta_WINE_16_00"); //To od tebe bylo opravdu šlechetné, es to za mê zaplatil. Chtêla bych se ti nêjak odmênit.
-	AI_Output (self, other, "DIA_Gritta_WINE_16_01"); //Tuhle láhev vína mi manel - nechã Innos dopâeje pokoj jeho duši - pâivezl z jiních ostrovù.
-	AI_Output (self, other, "DIA_Gritta_WINE_16_02"); //Také jsem to všude rozhlásila. Aspoà nêkdo tu má v têle kouska cti.
+	AI_Output (self, other, "DIA_Gritta_WINE_16_00"); //To od tebe bylo opravdu Å¡lechetnÃ©, Å¾es to za mÄ™ zaplatil. ChtÄ™la bych se ti nÄ™jak odmÄ™nit.
+	AI_Output (self, other, "DIA_Gritta_WINE_16_01"); //Tuhle lÃ¡hev vÃ­na mi manÅ¾el - nechÄƒ Innos dopÃ¢eje pokoj jeho duÅ¡i - pÃ¢ivezl z jiÅ¾nÃ­ch ostrovÅ¯.
+	AI_Output (self, other, "DIA_Gritta_WINE_16_02"); //TakÃ© jsem to vÅ¡ude rozhlÃ¡sila. AspoÅ• nÄ™kdo tu mÃ¡ v tÄ™le kouska cti.
 	AI_Output (other, self, "DIA_Gritta_WINE_15_03"); //No jo, to nic.
 
 	B_GivePlayerXP 		(XP_PayForGritta);
@@ -248,21 +248,21 @@ func void DIA_Gritta_PERM_Info ()
 	if (Npc_KnowsInfo (other, DIA_Gritta_WINE))
 	&& (Npc_HasItems (self, itmi_gold) >= 100)
 	{
-		AI_Output (self, other, "DIA_Gritta_PERM_16_00"); //Dokud jsou ve mêstê mui jako ty, stále mohu v srdci chovat nadêji, e se vše v dobré obrátí.
+		AI_Output (self, other, "DIA_Gritta_PERM_16_00"); //Dokud jsou ve mÄ™stÄ™ muÅ¾i jako ty, stÃ¡le mohu v srdci chovat nadÄ™ji, Å¾e se vÅ¡e v dobrÃ© obrÃ¡tÃ­.
 	}
 	else if (Gritta_WantPay == TRUE)
 	&&		(Npc_HasItems (self, itmi_gold) >= 100)
 	{
-		AI_Output (self, other, "DIA_Gritta_PERM_16_01"); //Vraã se, a urovnáš tu záleitost s Matteem.
+		AI_Output (self, other, "DIA_Gritta_PERM_16_01"); //VraÄƒ se, aÅ¾ urovnÃ¡Å¡ tu zÃ¡leÅ¾itost s Matteem.
 	}
 	else if (Gritta_Threatened == TRUE)
 	&&		(Npc_HasItems (self, itmi_gold) >= 100)
 	{
-		AI_Output (self, other, "DIA_Gritta_PERM_16_02"); //Co na mê tak blbê èumíš? Stejnê si na mê netroufneš zaútoèit!
+		AI_Output (self, other, "DIA_Gritta_PERM_16_02"); //Co na mÄ™ tak blbÄ™ ÄumÃ­Å¡? StejnÄ™ si na mÄ™ netroufneÅ¡ zaÃºtoÄit!
 	}
 	else //Gritta_GoldGiven oder niedergeschlagen
 	{
-		AI_Output (self, other, "DIA_Gritta_PERM_16_03"); //Co ještê chceš? Moje zlato jsi u dostal, tak vypadni!
+		AI_Output (self, other, "DIA_Gritta_PERM_16_03"); //Co jeÅ¡tÄ™ chceÅ¡? Moje zlato jsi uÅ¾ dostal, tak vypadni!
 	};
 	
 	AI_StopProcessInfos (self); 
@@ -328,29 +328,29 @@ FUNC VOID DIA_Gritta_Perm3U4U5_Info()
 	{
 		if (MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_01"); //Všecko jde od desíti k pêti. Aã se podíváš, kam se podíváš, všude vládne zloèin a násilí. Jen si pâedstav - dokonce zabili jednoho z paladinù!
+			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_01"); //VÅ¡ecko jde od desÃ­ti k pÄ™ti. AÄƒ se podÃ­vÃ¡Å¡, kam se podÃ­vÃ¡Å¡, vÅ¡ude vlÃ¡dne zloÄin a nÃ¡silÃ­. Jen si pÃ¢edstav - dokonce zabili jednoho z paladinÅ¯!
 			
 			Info_ClearChoices (DIA_Gritta_Perm3U4U5);
 			Info_AddChoice (DIA_Gritta_Perm3U4U5,DIALOG_BACK,DIA_Gritta_Perm3U4U5_BACK);
-			Info_AddChoice (DIA_Gritta_Perm3U4U5,"To je válka - takové vêci se stávají.",DIA_Gritta_Perm3U4U5_War);
-			Info_AddChoice (DIA_Gritta_Perm3U4U5,"To bude v poâádku.",DIA_Gritta_Perm3U4U5_TurnsGood);
+			Info_AddChoice (DIA_Gritta_Perm3U4U5,"To je vÃ¡lka - takovÃ© vÄ™ci se stÃ¡vajÃ­.",DIA_Gritta_Perm3U4U5_War);
+			Info_AddChoice (DIA_Gritta_Perm3U4U5,"To bude v poÃ¢Ã¡dku.",DIA_Gritta_Perm3U4U5_TurnsGood);
 			Info_AddChoice (DIA_Gritta_Perm3U4U5,"Co jsi zaslechla?",DIA_Gritta_Perm3U4U5_Rumors);
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_02"); //Ach, lord Hagen toho oldáka pustil - to mê tak dojalo!
-			AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_15_03"); //A co to má spoleèného s tebou?
-			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_04"); //Jen se nad tím zamysli. Vêâíš, e by oldáci jen tak stáli a dívali se, jak jim vêší kamaráda?
-			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_05"); //Urèitê by se ho pokusili osvobodit, a z toho by koukalo poâádné krveprolití. Mohu tedy pouze dêkovat Innosovi.
+			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_02"); //Ach, lord Hagen toho Å¾oldÃ¡ka pustil - to mÄ™ tak dojalo!
+			AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_15_03"); //A co to mÃ¡ spoleÄnÃ©ho s tebou?
+			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_04"); //Jen se nad tÃ­m zamysli. VÄ™Ã¢Ã­Å¡, Å¾e by Å¾oldÃ¡ci jen tak stÃ¡li a dÃ­vali se, jak jim vÄ™Å¡Ã­ kamarÃ¡da?
+			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_05"); //UrÄitÄ™ by se ho pokusili osvobodit, a z toho by koukalo poÃ¢Ã¡dnÃ© krveprolitÃ­. Mohu tedy pouze dÄ™kovat Innosovi.
 		};	
 	}
 	else if (Kapitel == 5)	
 	{
-		AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_06"); //Paladinové jsou pâipraveni a vypadá to, e se brzy vydají na cestu.
+		AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_06"); //PaladinovÃ© jsou pÃ¢ipraveni a vypadÃ¡ to, Å¾e se brzy vydajÃ­ na cestu.
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_07"); //Všechno pâi starém, ale nechci si stêovat.
+		AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_07"); //VÅ¡echno pÃ¢i starÃ©m, ale nechci si stÄ™Å¾ovat.
 	};
 };
 
@@ -361,15 +361,15 @@ FUNC VOID DIA_Gritta_Perm3U4U5_BACK ()
 
 FUNC VOID DIA_Gritta_Perm3U4U5_War ()
 {
-	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_War_15_00"); //To je válka - takové vêci se stávají.
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_War_16_01"); //Ano, za všechno mùe tahle strašná válka. Kadı nêjak trpí a zajímá ho, jak se s tím vším vypoâádají.
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_War_16_02"); //Obèas se ptám sama sebe, zaè nás Innos takhle trestá.
+	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_War_15_00"); //To je vÃ¡lka - takovÃ© vÄ™ci se stÃ¡vajÃ­.
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_War_16_01"); //Ano, za vÅ¡echno mÅ¯Å¾e tahle straÅ¡nÃ¡ vÃ¡lka. KaÅ¾dÃ½ nÄ™jak trpÃ­ a zajÃ­mÃ¡ ho, jak se s tÃ­m vÅ¡Ã­m vypoÃ¢Ã¡dajÃ­.
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_War_16_02"); //ObÄas se ptÃ¡m sama sebe, zaÄ nÃ¡s Innos takhle trestÃ¡.
 };
 
 FUNC VOID DIA_Gritta_Perm3U4U5_TurnsGood ()
 {
-	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_TurnsGood_15_00"); //To bude v poâádku.
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_TurnsGood_16_01"); //To je od tebe hezké, e mê chceš povzbudit.
+	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_TurnsGood_15_00"); //To bude v poÃ¢Ã¡dku.
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_TurnsGood_16_01"); //To je od tebe hezkÃ©, Å¾e mÄ™ chceÅ¡ povzbudit.
 	
 	if (GrittaXP_Once == FALSE)
 	{
@@ -381,8 +381,8 @@ FUNC VOID DIA_Gritta_Perm3U4U5_TurnsGood ()
 FUNC VOID DIA_Gritta_Perm3U4U5_Rumors ()
 {
 	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_Rumors_15_00"); //Co jsi zaslechla?
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_Rumors_16_01"); //Jenom to, co si vyprávêjí lidé na ulici.
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_Rumors_16_02"); //Prı u chytli toho vraha, ale neâeknu ti, jestli je to pravda.
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_Rumors_16_01"); //Jenom to, co si vyprÃ¡vÄ™jÃ­ lidÃ© na ulici.
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_Rumors_16_02"); //PrÃ½ uÅ¾ chytli toho vraha, ale neÃ¢eknu ti, jestli je to pravda.
 };
 
 

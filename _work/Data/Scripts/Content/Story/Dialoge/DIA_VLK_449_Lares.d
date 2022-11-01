@@ -7,7 +7,7 @@ instance DIA_Addon_Lares_Patch		(C_INFO)
 	nr		 	= 99;
 	condition	= DIA_Addon_Lares_Patch_Condition;
 	information	= DIA_Addon_Lares_Patch_Info;
-	description	= "(Ornament - ádat navrácení èásti)";
+	description	= "(Ornament - Å¾Ã¡dat navrÃ¡cenÃ­ ÄÃ¡sti)";
 };
 func int DIA_Addon_Lares_Patch_Condition ()
 {
@@ -69,7 +69,7 @@ func int DIA_Addon_Lares_HaltsMaul_Condition ()
 
 func void DIA_Addon_Lares_HaltsMaul_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_HaltsMaul_09_01"); //Tak se mêj, uvidíme se v pâístavu.
+	AI_Output	(self, other, "DIA_Addon_Lares_HaltsMaul_09_01"); //Tak se mÄ™j, uvidÃ­me se v pÃ¢Ã­stavu.
 	AI_StopProcessInfos (self);
 };
 
@@ -130,56 +130,56 @@ func int DIA_Lares_HALLO_Condition ()
 };
 func void DIA_Lares_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Lares_HALLO_09_00"); //Já jsem se musel zbláznit. Co tady dêláš?
+	AI_Output (self, other, "DIA_Lares_HALLO_09_00"); //JÃ¡ jsem se musel zblÃ¡znit. Co tady dÄ™lÃ¡Å¡?
 	
 	if (Mil_310_schonmalreingelassen == FALSE)
 	&& (Mil_333_schonmalreingelassen == FALSE)
 	{
-		AI_Output (self, other, "DIA_Lares_HALLO_09_01"); //Ty jsi sem PÂIPLAVAL?
-		AI_Output (self, other, "DIA_Lares_HALLO_09_02"); //(smích) Je to jediná cesta, jak obejít stráe u brány.
+		AI_Output (self, other, "DIA_Lares_HALLO_09_01"); //Ty jsi sem PÃ‚IPLAVAL?
+		AI_Output (self, other, "DIA_Lares_HALLO_09_02"); //(smÃ­ch) Je to jedinÃ¡ cesta, jak obejÃ­t strÃ¡Å¾e u brÃ¡ny.
 		B_GivePlayerXP (500); //wer's schafft...	
 	};
 			
 	Info_ClearChoices 	(DIA_Lares_HALLO);
 	
-	Info_AddChoice 		(DIA_Lares_HALLO,"Nevidêli jsme se u?",DIA_Lares_HALLO_NO);
-	Info_AddChoice 		(DIA_Lares_HALLO,"Hej, Laresi, ty starej pardále!",DIA_Lares_HALLO_YES);
+	Info_AddChoice 		(DIA_Lares_HALLO,"NevidÄ™li jsme se uÅ¾?",DIA_Lares_HALLO_NO);
+	Info_AddChoice 		(DIA_Lares_HALLO,"Hej, Laresi, ty starej pardÃ¡le!",DIA_Lares_HALLO_YES);
 };
 FUNC VOID DIA_Lares_HALLO_NO()
 {
-	AI_Output (other, self, "DIA_Lares_HALLO_NO_15_00"); //Nevidêli jsme se u?
-	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_01"); //Chlape, to si mê vánê nepamatuješ? Poflakoval jsem se kolem Novıho tábora.
-	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_02"); //Seznam pro doly... Chlape, uili jsme si spolu spoustu srandy. Pamatuješ si Leeho?
+	AI_Output (other, self, "DIA_Lares_HALLO_NO_15_00"); //NevidÄ™li jsme se uÅ¾?
+	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_01"); //Chlape, to si mÄ™ vÃ¡Å¾nÄ™ nepamatujeÅ¡? Poflakoval jsem se kolem NovÃ½ho tÃ¡bora.
+	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_02"); //Seznam pro doly... Chlape, uÅ¾ili jsme si spolu spoustu srandy. PamatujeÅ¡ si Leeho?
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
 	
-	Info_AddChoice 		(DIA_Lares_HALLO,"Samozâejmê e si pamatuju na Leeho!",DIA_Lares_HALLO_LEE);
+	Info_AddChoice 		(DIA_Lares_HALLO,"SamozÃ¢ejmÄ™ Å¾e si pamatuju na Leeho!",DIA_Lares_HALLO_LEE);
 	Info_AddChoice 		(DIA_Lares_HALLO,"Lee...?",DIA_Lares_HALLO_NOIDEA);
 };
 FUNC VOID DIA_Lares_HALLO_YES()
 {
 	AI_Output (other, self, "DIA_Lares_HALLO_YES_15_00"); //Hej, Laresi, ty starej mizero, jak ses sem dostal?
-	AI_Output (self, other, "DIA_Lares_HALLO_YES_09_01"); //Podaâilo se mi utıct z Hornickıho údolí právê vèas. Spolu s Leem a ještê nêkolika dalšíma chlapama.
-	AI_Output (self, other, "DIA_Lares_HALLO_YES_09_02"); //Pamatuješ si pâece Leeho, ne?
+	AI_Output (self, other, "DIA_Lares_HALLO_YES_09_01"); //PodaÃ¢ilo se mi utÃ½ct z HornickÃ½ho ÃºdolÃ­ prÃ¡vÄ™ vÄas. Spolu s Leem a jeÅ¡tÄ™ nÄ™kolika dalÅ¡Ã­ma chlapama.
+	AI_Output (self, other, "DIA_Lares_HALLO_YES_09_02"); //PamatujeÅ¡ si pÃ¢ece Leeho, ne?
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
 	
-	Info_AddChoice 		(DIA_Lares_HALLO,"Samozâejmê e si pamatuju na Leeho!",DIA_Lares_HALLO_LEE);
+	Info_AddChoice 		(DIA_Lares_HALLO,"SamozÃ¢ejmÄ™ Å¾e si pamatuju na Leeho!",DIA_Lares_HALLO_LEE);
 	Info_AddChoice 		(DIA_Lares_HALLO,"Lee...?",DIA_Lares_HALLO_NOIDEA);
 };
 
 // ------------------------------	
 	func void B_Lares_AboutLee()
 	{
-		AI_Output (self, other, "B_Lares_AboutLee_09_00"); //Tak s ním jsem se dostal z kolonie. Hned po znièení bariéry.
-		AI_Output (self, other, "B_Lares_AboutLee_09_01"); //Je se svejma klukama na Onarovê farmê.
-		AI_Output (self, other, "B_Lares_AboutLee_09_02"); //Má s tím farmáâem dohodu. On se svımi chlapci brání farmu a Onar je na oplátku iví.
+		AI_Output (self, other, "B_Lares_AboutLee_09_00"); //Tak s nÃ­m jsem se dostal z kolonie. Hned po zniÄenÃ­ bariÃ©ry.
+		AI_Output (self, other, "B_Lares_AboutLee_09_01"); //Je se svejma klukama na OnarovÄ™ farmÄ™.
+		AI_Output (self, other, "B_Lares_AboutLee_09_02"); //MÃ¡ s tÃ­m farmÃ¡Ã¢em dohodu. On se svÃ½mi chlapci brÃ¡nÃ­ farmu a Onar je na oplÃ¡tku Å¾ivÃ­.
 	};
 // ------------------------------	
 
 FUNC VOID DIA_Lares_HALLO_LEE()
 {
-	AI_Output (other, self, "DIA_Lares_HALLO_LEE_15_00"); //Samozâejmê e si pamatuju na Leeho!
+	AI_Output (other, self, "DIA_Lares_HALLO_LEE_15_00"); //SamozÃ¢ejmÄ™ Å¾e si pamatuju na Leeho!
 	B_Lares_AboutLee();
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
@@ -187,7 +187,7 @@ FUNC VOID DIA_Lares_HALLO_LEE()
 FUNC VOID DIA_Lares_HALLO_NOIDEA()
 {
 	AI_Output (other, self, "DIA_Lares_HALLO_NOIDEA_15_00"); //Lee...?
-	AI_Output (self, other, "DIA_Lares_HALLO_NOIDEA_09_01"); //Tys asi dostal velkou ránu do hlavy, co? Lee byl velitelem oldákù v Novém táboâe.
+	AI_Output (self, other, "DIA_Lares_HALLO_NOIDEA_09_01"); //Tys asi dostal velkou rÃ¡nu do hlavy, co? Lee byl velitelem Å¾oldÃ¡kÅ¯ v NovÃ©m tÃ¡boÃ¢e.
 	B_Lares_AboutLee();
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
@@ -211,7 +211,7 @@ instance DIA_Addon_Lares_Vatras		(C_INFO)
 	condition	= DIA_Addon_Lares_Vatras_Condition;
 	information	= DIA_Addon_Lares_Vatras_Info;
 
-	description	= "Posílá mê Vatras.";
+	description	= "PosÃ­lÃ¡ mÄ™ Vatras.";
 };
 func int DIA_Addon_Lares_Vatras_Condition ()
 {
@@ -222,10 +222,10 @@ func int DIA_Addon_Lares_Vatras_Condition ()
 };
 func void DIA_Addon_Lares_Vatras_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_Vatras_15_00"); //Posílá mê Vatras. Mám za tebou zajít, jestli nepotâebuješ pomoc.
-	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_01"); //(udivenê) Tak ty u jsi byl za Vatrasem? To jsi na nêj musel udêlat poâádnı dojem.
-	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_02"); //Jinak by ti urèitê jen tak neprozradil moje jméno. Zvlášã kdy tu teë máme tu nevyâešenou záleitost s pohâešovanımi lidmi.
-	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_03"); //Co potâebuješ?
+	AI_Output	(other, self, "DIA_Addon_Lares_Vatras_15_00"); //PosÃ­lÃ¡ mÄ™ Vatras. MÃ¡m za tebou zajÃ­t, jestli nepotÃ¢ebujeÅ¡ pomoc.
+	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_01"); //(udivenÄ™) Tak ty uÅ¾ jsi byl za Vatrasem? To jsi na nÄ™j musel udÄ™lat poÃ¢Ã¡dnÃ½ dojem.
+	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_02"); //Jinak by ti urÄitÄ™ jen tak neprozradil moje jmÃ©no. ZvlÃ¡Å¡Äƒ kdyÅ¾ tu teÃ« mÃ¡me tu nevyÃ¢eÅ¡enou zÃ¡leÅ¾itost s pohÃ¢eÅ¡ovanÃ½mi lidmi.
+	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_03"); //Co potÃ¢ebujeÅ¡?
 	Lares_RangerHelp = TRUE;
 
 	if (GregLocation == Greg_Farm1)
@@ -249,7 +249,7 @@ instance DIA_Addon_Lares_WhatAreYouGuys		(C_INFO)
 	condition	= DIA_Addon_Lares_WhatAreYouGuys_Condition;
 	information	= DIA_Addon_Lares_WhatAreYouGuys_Info;
 
-	description	 = 	"Tak co máš do èinêní s Vatrasem?";
+	description	 = 	"Tak co mÃ¡Å¡ do ÄinÄ™nÃ­ s Vatrasem?";
 };
 func int DIA_Addon_Lares_WhatAreYouGuys_Condition ()
 {
@@ -261,18 +261,18 @@ func int DIA_Addon_Lares_WhatAreYouGuys_Condition ()
 };
 func void DIA_Addon_Lares_WhatAreYouGuys_Info ()
 {	
-	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_00"); //A co máš co dêlat s Vatrasem?
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_01"); //Jak vidíš, uzavâel jsem s vodními mágy takové ujednání.
-	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_02"); //Jaké ujednání?
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_03"); //Pracujeme pro nê a oni na oplátku dohlídnou, aby nám naše trestanecká minulost nebyla na pâítê.
-	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_04"); //Mluvíš o kruhu vody?
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_05"); //U jsi o nêm slyšel?
-	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_06"); //Vatras se o nêm zmínil.
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_07"); //Tak to jsi mêl âíct hned.
+	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_00"); //A co mÃ¡Å¡ co dÄ™lat s Vatrasem?
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_01"); //Jak vidÃ­Å¡, uzavÃ¢el jsem s vodnÃ­mi mÃ¡gy takovÃ© ujednÃ¡nÃ­.
+	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_02"); //JakÃ© ujednÃ¡nÃ­?
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_03"); //Pracujeme pro nÄ™ a oni na oplÃ¡tku dohlÃ­dnou, aby nÃ¡m naÅ¡e trestaneckÃ¡ minulost nebyla na pÃ¢Ã­tÄ™Å¾.
+	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_04"); //MluvÃ­Å¡ o kruhu vody?
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_05"); //UÅ¾ jsi o nÄ™m slyÅ¡el?
+	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_06"); //Vatras se o nÄ™m zmÃ­nil.
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_07"); //Tak to jsi mÄ™l Ã¢Ã­ct hned.
 
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Lares patâí do 'kruhu vody'." ); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Lares patÃ¢Ã­ do 'kruhu vody'." ); 
 };
 // ------------------------------------------------------------
 // Ranger
@@ -284,7 +284,7 @@ instance DIA_Addon_Lares_Ranger		(C_INFO)
 	condition	= DIA_Addon_Lares_Ranger_Condition;
 	information	= DIA_Addon_Lares_Ranger_Info;
 
-	description	= "Prozraë mi o tom 'kruhu vody' nêco víc.";
+	description	= "ProzraÃ« mi o tom 'kruhu vody' nÄ™co vÃ­c.";
 };
 func int DIA_Addon_Lares_Ranger_Condition ()
 {
@@ -296,14 +296,14 @@ func int DIA_Addon_Lares_Ranger_Condition ()
 };
 func void DIA_Addon_Lares_Ranger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_00"); //Povêz mi o tom kruhu vody nêco víc.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_01"); //Kruh je pro vodní mágy toté, co paladinové pro mágy ohnê.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_02"); //Ale my na rozdíl od paladinù operujeme ve skrytu.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_03"); //Kruh' je mocnou zbraní proti nebezpeèím, je ohroují obyvatelstvo Khorinidu.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_04"); //Jene to bude fungovat, jenom kdy totonost èlenù kruhu vody udríme v tajnosti.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_05"); //Take si to nechej pro sebe.
-	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_06"); //Jasnê.
-	B_LogEntry (TOPIC_Addon_RingOfWater,"'Kruh' je pro mágy vody toté co paladinové pro mágy ohnê. 'Kruh' však dává pâednost nenápadnému jednání. Nikdo nesmí vêdêt, KDO všechno k nêmu patâí, neboã jeho síla spoèívá právê v utajení." ); 
+	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_00"); //PovÄ™z mi o tom kruhu vody nÄ™co vÃ­c.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_01"); //Kruh je pro vodnÃ­ mÃ¡gy totÃ©Å¾, co paladinovÃ© pro mÃ¡gy ohnÄ™.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_02"); //Ale my na rozdÃ­l od paladinÅ¯ operujeme ve skrytu.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_03"); //Kruh' je mocnou zbranÃ­ proti nebezpeÄÃ­m, jeÅ¾ ohroÅ¾ujÃ­ obyvatelstvo Khorinidu.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_04"); //JenÅ¾e to bude fungovat, jenom kdyÅ¾ totoÅ¾nost ÄlenÅ¯ kruhu vody udrÅ¾Ã­me v tajnosti.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_05"); //TakÅ¾e si to nechej pro sebe.
+	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_06"); //JasnÄ™.
+	B_LogEntry (TOPIC_Addon_RingOfWater,"'Kruh' je pro mÃ¡gy vody totÃ©Å¾ co paladinovÃ© pro mÃ¡gy ohnÄ™. 'Kruh' vÅ¡ak dÃ¡vÃ¡ pÃ¢ednost nenÃ¡padnÃ©mu jednÃ¡nÃ­. Nikdo nesmÃ­ vÄ™dÄ™t, KDO vÅ¡echno k nÄ™mu patÃ¢Ã­, neboÄƒ jeho sÃ­la spoÄÃ­vÃ¡ prÃ¡vÄ™ v utajenÃ­." ); 
 };
 // ------------------------------------------------------------
 // Info WannaBeRanger
@@ -315,7 +315,7 @@ instance DIA_Addon_Lares_WannaBeRanger		(C_INFO)
 	condition	= DIA_Addon_Lares_WannaBeRanger_Condition;
 	information	= DIA_Addon_Lares_WannaBeRanger_Info;
 
-	description	= "Chci se pâidat ke 'kruhu vody'.";
+	description	= "Chci se pÃ¢idat ke 'kruhu vody'.";
 };
 func int DIA_Addon_Lares_WannaBeRanger_Condition ()
 {
@@ -327,44 +327,44 @@ func int DIA_Addon_Lares_WannaBeRanger_Condition ()
 };
 func void DIA_Addon_Lares_WannaBeRanger_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_15_00"); //Chci se pâidat ke kruhu vody.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_09_01"); //Pro mê za mê. Ale jestli tê pâijmou, nebo ne, to musejí rozhodnout samotní vodní mágové.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_15_00"); //Chci se pÃ¢idat ke kruhu vody.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_09_01"); //Pro mÄ™ za mÄ™. Ale jestli tÄ™ pÃ¢ijmou, nebo ne, to musejÃ­ rozhodnout samotnÃ­ vodnÃ­ mÃ¡govÃ©.
 	
 	B_LogEntry (TOPIC_Addon_RingOfWater, LogText_Addon_KDWRight); 
 
 
 	Info_ClearChoices	(DIA_Addon_Lares_WannaBeRanger);
 	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Aha.", DIA_Addon_Lares_WannaBeRanger_BACK );
-	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Jaké to je patâit ke 'kruhu'?", DIA_Addon_Lares_WannaBeRanger_HowIsIt );
-	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Èím jsi na vodní mágy zapùsobil?", DIA_Addon_Lares_WannaBeRanger_AboutYou );
+	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "JakÃ© to je patÃ¢it ke 'kruhu'?", DIA_Addon_Lares_WannaBeRanger_HowIsIt );
+	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "ÄŒÃ­m jsi na vodnÃ­ mÃ¡gy zapÅ¯sobil?", DIA_Addon_Lares_WannaBeRanger_AboutYou );
 };
 func void DIA_Addon_Lares_WannaBeRanger_BACK ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_BACK_15_00"); //Chápu.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_BACK_15_00"); //ChÃ¡pu.
 	Info_ClearChoices	(DIA_Addon_Lares_WannaBeRanger);
 };
 func void DIA_Addon_Lares_WannaBeRanger_AboutYou ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_AboutYou_15_00"); //Jak jsi na vodní mágy zapùsobil?
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_AboutYou_09_01"); //Kdysi dávno jsem je ochránil, ještê kdy jsme ili za bariérou.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_AboutYou_09_02"); //(usmívá se) A mají spoustu dùvodù, proè mi bıt vdêèní.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_AboutYou_15_00"); //Jak jsi na vodnÃ­ mÃ¡gy zapÅ¯sobil?
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_AboutYou_09_01"); //Kdysi dÃ¡vno jsem je ochrÃ¡nil, jeÅ¡tÄ™ kdyÅ¾ jsme Å¾ili za bariÃ©rou.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_AboutYou_09_02"); //(usmÃ­vÃ¡ se) A majÃ­ spoustu dÅ¯vodÅ¯, proÄ mi bÃ½t vdÄ™ÄnÃ­.
 };
 func void DIA_Addon_Lares_WannaBeRanger_HowIsIt ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_15_00"); //Jaké to je patâit ke kruhu?
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_01"); //Hodnê se lišíme od jinıch komunit, ke kterım se tady v Khorinidu mùeš pâipojit.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_02"); //Kdy se staneš jedním z nás, nebudeme po tobê chtít nic, co bys nedokázal.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_03"); //Jediné, co opravdu vyadujeme, je mlèenlivost.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_04"); //Pracujeme ve skrytu a nestojíme o to, aby cizinci vêdêli, kdo všechno k nám patâí.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_05"); //Budeme tê sledovat. Všechno ostatní je v rukách osudu.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_15_00"); //JakÃ© to je patÃ¢it ke kruhu?
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_01"); //HodnÄ™ se liÅ¡Ã­me od jinÃ½ch komunit, ke kterÃ½m se tady v Khorinidu mÅ¯Å¾eÅ¡ pÃ¢ipojit.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_02"); //KdyÅ¾ se staneÅ¡ jednÃ­m z nÃ¡s, nebudeme po tobÄ™ chtÃ­t nic, co bys nedokÃ¡zal.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_03"); //JedinÃ©, co opravdu vyÅ¾adujeme, je mlÄenlivost.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_04"); //Pracujeme ve skrytu a nestojÃ­me o to, aby cizinci vÄ™dÄ™li, kdo vÅ¡echno k nÃ¡m patÃ¢Ã­.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_05"); //Budeme tÄ™ sledovat. VÅ¡echno ostatnÃ­ je v rukÃ¡ch osudu.
 };
 // ------------------------------------------------------------
 // Info RingBack (Bin jetzt dabei)
 // ------------------------------------------------------------
 func void B_Lares_Geheimtreffen()
 {
-	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_07"); //Brzo budeme mít tajné setkání v Orlanovê hospodê.
-	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_08"); //Co nejrychleji tam za námi zajdi. Dostaneš tam i další vıbavu.
+	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_07"); //Brzo budeme mÃ­t tajnÃ© setkÃ¡nÃ­ v OrlanovÄ™ hospodÄ™.
+	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_08"); //Co nejrychleji tam za nÃ¡mi zajdi. DostaneÅ¡ tam i dalÅ¡Ã­ vÃ½bavu.
 };
 // ------------------------------------------------------------
 instance DIA_Addon_Lares_RingBack		(C_INFO)
@@ -374,7 +374,7 @@ instance DIA_Addon_Lares_RingBack		(C_INFO)
 	condition	 = 	DIA_Addon_Lares_RingBack_Condition;
 	information	 = 	DIA_Addon_Lares_RingBack_Info;
 
-	description	 = 	"Nyní patâím ke 'kruhu vody'.";
+	description	 = 	"NynÃ­ patÃ¢Ã­m ke 'kruhu vody'.";
 };
 func int DIA_Addon_Lares_RingBack_Condition ()
 {
@@ -387,31 +387,31 @@ func int DIA_Addon_Lares_RingBack_Condition ()
 };
 func void DIA_Addon_Lares_RingBack_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_00"); //Nyní patâím ke kruhu vody.
+	AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_00"); //NynÃ­ patÃ¢Ã­m ke kruhu vody.
 	
 	if (Lares_GotRingBack == FALSE) 
 	&& (SC_GotLaresRing == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_01"); //Vıbornê. Mùeš mi tedy vrátit mùj akvamarínovı prsten?
+		AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_01"); //VÃ½bornÄ™. MÅ¯Å¾eÅ¡ mi tedy vrÃ¡tit mÅ¯j akvamarÃ­novÃ½ prsten?
 		
 		if (B_GiveInvItems (other, self, ItRi_Ranger_Lares_Addon,1))
 		{
-			AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_02"); //Jasnê, tady je.
-			AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_03"); //Doufám, e se ti hodil. Jsem rád, e u jsi jedním z nás.
+			AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_02"); //JasnÄ™, tady je.
+			AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_03"); //DoufÃ¡m, Å¾e se ti hodil. Jsem rÃ¡d, Å¾e uÅ¾ jsi jednÃ­m z nÃ¡s.
 			Lares_GotRingBack = TRUE;
 			B_GivePlayerXP (XP_Ambient);
 		}
 		else
 		{
-			AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_04"); //Hmm, zrovna jej u sebe nemám.
-			AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_05"); //Jen ádné skopièiny! Já ho potâebuju!
+			AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_04"); //Hmm, zrovna jej u sebe nemÃ¡m.
+			AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_05"); //Jen Å¾Ã¡dnÃ© skopiÄiny! JÃ¡ ho potÃ¢ebuju!
 		};
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_06"); //Teë asi budeš chtít svı vybavení, tak dávej pozor.
+	AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_06"); //TeÃ« asi budeÅ¡ chtÃ­t svÃ½ vybavenÃ­, tak dÃ¡vej pozor.
 	B_Lares_Geheimtreffen();
 	
-	B_LogEntry (TOPIC_Addon_RingOfWater, "Lares mê pozval na tajné setkání kruhu, které probêhne v Orlanovê hospodê."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater, "Lares mÄ™ pozval na tajnÃ© setkÃ¡nÃ­ kruhu, kterÃ© probÄ™hne v OrlanovÄ™ hospodÄ™."); 
 	
 	MIS_Addon_Lares_ComeToRangerMeeting = LOG_RUNNING;
 };
@@ -425,7 +425,7 @@ instance DIA_Addon_Lares_RingBack2		(C_INFO)
 	condition	= DIA_Addon_Lares_RingBack2_Condition;
 	information	= DIA_Addon_Lares_RingBack2_Info;
 
-	description	= "Tady máš ten akvamarínovı prsten.";
+	description	= "Tady mÃ¡Å¡ ten akvamarÃ­novÃ½ prsten.";
 };
 func int DIA_Addon_Lares_RingBack2_Condition ()
 {
@@ -438,9 +438,9 @@ func int DIA_Addon_Lares_RingBack2_Condition ()
 };
 func void DIA_Addon_Lares_RingBack2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_RingBack2_15_00"); //Tady máš akvamarínovı prsten.
+	AI_Output	(other, self, "DIA_Addon_Lares_RingBack2_15_00"); //Tady mÃ¡Å¡ akvamarÃ­novÃ½ prsten.
 	B_GiveInvItems (other, self, ItRi_Ranger_Lares_Addon,1);
-	AI_Output	(self, other, "DIA_Addon_Lares_RingBack2_09_01"); //To máš kliku. U jsem myslel, es ho ztratil.
+	AI_Output	(self, other, "DIA_Addon_Lares_RingBack2_09_01"); //To mÃ¡Å¡ kliku. UÅ¾ jsem myslel, Å¾es ho ztratil.
 	B_GivePlayerXP (XP_Ambient);
 	Lares_GotRingBack = TRUE;
 };
@@ -470,7 +470,7 @@ func int DIA_Addon_Lares_Geduld_Condition ()
 
 func void DIA_Addon_Lares_Geduld_Info ()
 { 
-	AI_Output	(self, other, "DIA_Addon_Lares_Geduld_09_01"); //Budeš muset chvilku poèkat, ještê tu nejsou všichni.
+	AI_Output	(self, other, "DIA_Addon_Lares_Geduld_09_01"); //BudeÅ¡ muset chvilku poÄkat, jeÅ¡tÄ™ tu nejsou vÅ¡ichni.
 	AI_StopProcessInfos (self);
 };
 
@@ -497,44 +497,44 @@ func int DIA_Addon_Lares_GetRangerArmor_Condition ()
 };
 func void DIA_Addon_Lares_GetRangerArmor_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_00"); //Take, mùj mladı pâíteli. Všichni jsme se tu dnes sešli, abychom oslavili tvé pâijetí do kruhu vody.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_01"); //Všichni chlapi, kteâí tu jsou, na tebe budou od nynêjška dávat dobrı pozor.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_02"); //Samozâejmê e kruh vody má i další èleny, take buë opatrnı.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_03"); //Kdy pro nás vykonáš nêjakı úkol nebo naopak vyvedeš nêjakou pitomost, dozvíš se to.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_04"); //Tady si vezmi zbroj našeho spoleèenství.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_00"); //TakÅ¾e, mÅ¯j mladÃ½ pÃ¢Ã­teli. VÅ¡ichni jsme se tu dnes seÅ¡li, abychom oslavili tvÃ© pÃ¢ijetÃ­ do kruhu vody.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_01"); //VÅ¡ichni chlapi, kteÃ¢Ã­ tu jsou, na tebe budou od nynÄ™jÅ¡ka dÃ¡vat dobrÃ½ pozor.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_02"); //SamozÃ¢ejmÄ™ Å¾e kruh vody mÃ¡ i dalÅ¡Ã­ Äleny, takÅ¾e buÃ« opatrnÃ½.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_03"); //KdyÅ¾ pro nÃ¡s vykonÃ¡Å¡ nÄ™jakÃ½ Ãºkol nebo naopak vyvedeÅ¡ nÄ™jakou pitomost, dozvÃ­Å¡ se to.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_04"); //Tady si vezmi zbroj naÅ¡eho spoleÄenstvÃ­.
 	CreateInvItem	(hero, ITAR_RANGER_Addon);
 	AI_EquipArmor	(hero, ITAR_RANGER_Addon);	
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_05"); //Nos ji s hrdostí, ale nikdy ne ve mêstê ani v jinıch obydlenıch oblastech.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_06"); //Nezapomeà, e musíme zùstat v utajení. Nikdo nesmí vêdêt, kdo ke kruhu vody patâí.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_07"); //O kruhu vody se nemluví. To je naše základní pravidlo, tak si to zapiš za uši.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_08"); //Ještê nêjaké otázky?
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_05"); //Nos ji s hrdostÃ­, ale nikdy ne ve mÄ™stÄ™ ani v jinÃ½ch obydlenÃ½ch oblastech.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_06"); //NezapomeÅ•, Å¾e musÃ­me zÅ¯stat v utajenÃ­. Nikdo nesmÃ­ vÄ™dÄ™t, kdo ke kruhu vody patÃ¢Ã­.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_07"); //O kruhu vody se nemluvÃ­. To je naÅ¡e zÃ¡kladnÃ­ pravidlo, tak si to zapiÅ¡ za uÅ¡i.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_08"); //JeÅ¡tÄ™ nÄ™jakÃ© otÃ¡zky?
 	
 	MIS_Addon_Lares_ComeToRangerMeeting = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
 	
 	Info_ClearChoices	(DIA_Addon_Lares_GetRangerArmor);
-	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "U musím jít.", DIA_Addon_Lares_GetRangerArmor_end );
-	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "V èem mi mùeš pomoci?", DIA_Addon_Lares_GetRangerArmor_Learn );
-	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "A co takhle zbranê?", DIA_Addon_Lares_GetRangerArmor_weapons );
+	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "UÅ¾ musÃ­m jÃ­t.", DIA_Addon_Lares_GetRangerArmor_end );
+	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "V Äem mi mÅ¯Å¾eÅ¡ pomoci?", DIA_Addon_Lares_GetRangerArmor_Learn );
+	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "A co takhle zbranÄ™?", DIA_Addon_Lares_GetRangerArmor_weapons );
 
 };
 func void DIA_Addon_Lares_GetRangerArmor_weapons ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_weapons_15_00"); //A co takhle nêjaké zbranê?
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_01"); //Zbraní kruhu vody je ètvrteèní hùl, ale kadı z nás radši bojuje s tím, naè je zvyklı.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_02"); //Tady je jedna z našich holí. Já se ji nikdy nenauèil pouívat, ale tobê moná postaèí.
+	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_weapons_15_00"); //A co takhle nÄ™jakÃ© zbranÄ™?
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_01"); //ZbranÃ­ kruhu vody je ÄtvrteÄnÃ­ hÅ¯l, ale kaÅ¾dÃ½ z nÃ¡s radÅ¡i bojuje s tÃ­m, naÄ je zvyklÃ½.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_02"); //Tady je jedna z naÅ¡ich holÃ­. JÃ¡ se ji nikdy nenauÄil pouÅ¾Ã­vat, ale tobÄ™ moÅ¾nÃ¡ postaÄÃ­.
 	CreateInvItems (self, ItMw_RangerStaff_Addon, 1);									
 	B_GiveInvItems (self, other, ItMw_RangerStaff_Addon, 1);		
 };
 func void DIA_Addon_Lares_GetRangerArmor_end ()
 {
 	B_MakeRangerReadyToLeaveMeetingALL ();
-	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_end_15_00"); //U musím jít.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_01"); //Tak to tê nebudeme zdrovat.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_02"); //Teë bê pâímo za Vatrasem, aã ti zadá první úkol.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_03"); //Bratâi z kruhu, nyní se vraãme ke svım povinnostem.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_04"); //Útoky banditù stále pokraèují. Musíme se s nimi co nejlépe vypoâádat.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_05"); //Adane, zachovej v tomto svêtê rovnováhu.
+	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_end_15_00"); //UÅ¾ musÃ­m jÃ­t.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_01"); //Tak to tÄ™ nebudeme zdrÅ¾ovat.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_02"); //TeÃ« bÄ™Å¾ pÃ¢Ã­mo za Vatrasem, aÄƒ ti zadÃ¡ prvnÃ­ Ãºkol.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_03"); //BratÃ¢i z kruhu, nynÃ­ se vraÄƒme ke svÃ½m povinnostem.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_04"); //Ãštoky banditÅ¯ stÃ¡le pokraÄujÃ­. MusÃ­me se s nimi co nejlÃ©pe vypoÃ¢Ã¡dat.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_05"); //Adane, zachovej v tomto svÄ™tÄ™ rovnovÃ¡hu.
 	Lares_TakeFirstMissionFromVatras = TRUE;
 
 	Info_ClearChoices	(DIA_Addon_Lares_GetRangerArmor);
@@ -544,35 +544,35 @@ func void DIA_Addon_Lares_GetRangerArmor_weiter ()
 {
 	AI_StopProcessInfos (self);
 	B_RangerMeetingParking ();
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Na tajném setkání kruhu, které probêhlo v Orlanovê hospodê, jsem dostal novou zbroj. Nyní mám zajít za Vatrasem, kterı mi zadá první úkol v âadách tohoto spoleèenství." ); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Na tajnÃ©m setkÃ¡nÃ­ kruhu, kterÃ© probÄ™hlo v OrlanovÄ™ hospodÄ™, jsem dostal novou zbroj. NynÃ­ mÃ¡m zajÃ­t za Vatrasem, kterÃ½ mi zadÃ¡ prvnÃ­ Ãºkol v Ã¢adÃ¡ch tohoto spoleÄenstvÃ­." ); 
 };
 
 func void DIA_Addon_Lares_GetRangerArmor_Learn ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_Learn_15_00"); //V èem mi mùeš pomoci?
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_01"); //Mùu ti ukázat, jak se stát obratnêjším.
+	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_Learn_15_00"); //V Äem mi mÅ¯Å¾eÅ¡ pomoci?
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_01"); //MÅ¯Å¾u ti ukÃ¡zat, jak se stÃ¡t obratnÄ™jÅ¡Ã­m.
 
 	if ((Npc_IsDead(SLD_805_Cord))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_02"); //Pokud se potâebuješ zdokonalit ve zbraních nablízko, promluv si s Cordem. Je mistrem meèe.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_02"); //Pokud se potÃ¢ebujeÅ¡ zdokonalit ve zbranÃ­ch nablÃ­zko, promluv si s Cordem. Je mistrem meÄe.
 	};
 	if ((Npc_IsDead(BAU_961_Gaan))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_03"); //Gaan ti zase rád ukáe, jak vyvrhovat zvíâata.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_03"); //Gaan ti zase rÃ¡d ukÃ¡Å¾e, jak vyvrhovat zvÃ­Ã¢ata.
 	};	
 	if ((Npc_IsDead(Mil_350_Addon_Martin))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_04"); //A Martin ti poví spoustu vêcí o paladinech.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_04"); //A Martin ti povÃ­ spoustu vÄ™cÃ­ o paladinech.
 	};	
 	if ((Npc_IsDead(Bau_4300_Addon_Cavalorn))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_05"); //Cavalorn ovládá plíení, jednoruèní boj a stâelbu.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_05"); //Cavalorn ovlÃ¡dÃ¡ plÃ­Å¾enÃ­, jednoruÄnÃ­ boj a stÃ¢elbu.
 	};
 	if ((Npc_IsDead(BAU_970_Orlan))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_06"); //Orlan tu pro tebe vdycky bude mít pâipravenı vytopenı pokoj a èistou postel.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_06"); //Orlan tu pro tebe vÅ¾dycky bude mÃ­t pÃ¢ipravenÃ½ vytopenÃ½ pokoj a Äistou postel.
 	};
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_07"); //A s veškerımi magickımi záleitostmi se obracej na Vatrase.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_07"); //A s veÅ¡kerÃ½mi magickÃ½mi zÃ¡leÅ¾itostmi se obracej na Vatrase.
 };
 
 
@@ -587,28 +587,28 @@ instance DIA_Addon_Lares_Teleportstation		(C_INFO)
 	condition	 = 	DIA_Addon_Lares_Teleportstation_Condition;
 	information	 = 	DIA_Addon_Lares_Teleportstation_Info;
 
-	description	 = 	"U jsi nêkdy pouíval teleportaèní kámen?";
+	description	 = 	"UÅ¾ jsi nÄ™kdy pouÅ¾Ã­val teleportaÄnÃ­ kÃ¡men?";
 };
 func int DIA_Addon_Lares_Teleportstation_Condition ()
 {
 	if (MIS_Addon_Lares_Ornament2Saturas == LOG_SUCCESS)//SC war schon bei den Wassermagiern
 	&& (SCUsed_TELEPORTER == TRUE)			//SC hat schon mal einen Teleporter benutzt
-	&& (MIS_Lares_BringRangerToMe != 0) 				//hat Aquamarinring von Lares bekommen. -> für Orlan
+	&& (MIS_Lares_BringRangerToMe != 0) 				//hat Aquamarinring von Lares bekommen. -> fÃ¼r Orlan
 	{
 		return TRUE;
 	};
 };
 func void DIA_Addon_Lares_Teleportstation_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_Teleportstation_15_00"); //U jsi nêkdy pouíval teleportaèní kámen?
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_01"); //Ne, ale u jsem o takovıch vêcech slyšel. Jene ani vodní mágové o nich zatím moc nevêdí.
-	AI_Output	(other, self, "DIA_Addon_Lares_Teleportstation_15_02"); //Já ho vyzkoušel.
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_03"); //(smêje se) Samozâejmê. Ty se nebojíš nièeho, co?
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_04"); //No, jestli chceš pouívat takovı vêci, popros hospodskıho Orlana, aby tê pustil do tı svı zabednênı jeskynê.
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_05"); //Myslím, e nêkde u svı hospody ukryl jeden z teleportaèních kamenù vodních mágù.
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_06"); //Vyjdi z mêsta vıchodní branou a prostê se dr na cestê. Nemùeš to minout.
+	AI_Output	(other, self, "DIA_Addon_Lares_Teleportstation_15_00"); //UÅ¾ jsi nÄ™kdy pouÅ¾Ã­val teleportaÄnÃ­ kÃ¡men?
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_01"); //Ne, ale uÅ¾ jsem o takovÃ½ch vÄ™cech slyÅ¡el. JenÅ¾e ani vodnÃ­ mÃ¡govÃ© o nich zatÃ­m moc nevÄ™dÃ­.
+	AI_Output	(other, self, "DIA_Addon_Lares_Teleportstation_15_02"); //JÃ¡ ho vyzkouÅ¡el.
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_03"); //(smÄ™je se) SamozÃ¢ejmÄ™. Ty se nebojÃ­Å¡ niÄeho, co?
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_04"); //No, jestli chceÅ¡ pouÅ¾Ã­vat takovÃ½ vÄ™ci, popros hospodskÃ½ho Orlana, aby tÄ™ pustil do tÃ½ svÃ½ zabednÄ™nÃ½ jeskynÄ™.
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_05"); //MyslÃ­m, Å¾e nÄ™kde u svÃ½ hospody ukryl jeden z teleportaÄnÃ­ch kamenÅ¯ vodnÃ­ch mÃ¡gÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_06"); //Vyjdi z mÄ™sta vÃ½chodnÃ­ branou a prostÄ™ se drÅ¾ na cestÄ™. NemÅ¯Å¾eÅ¡ to minout.
 	
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"Lares mi prozradil, e Orlan schoval u svého hostince teleportaèní kámen."); 
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"Lares mi prozradil, Å¾e Orlan schoval u svÃ©ho hostince teleportaÄnÃ­ kÃ¡men."); 
 	Orlan_Hint_Lares = TRUE;
 };
 
@@ -627,7 +627,7 @@ instance DIA_Addon_Lares_Ornament		(C_INFO)
 	condition	= DIA_Addon_Lares_Ornament_Condition;
 	information	= DIA_Addon_Lares_Ornament_Info;
 
-	description	= "Vatras ti posílá tenhle ornament.";
+	description	= "Vatras ti posÃ­lÃ¡ tenhle ornament.";
 };
 func int DIA_Addon_Lares_Ornament_Condition ()
 {
@@ -639,10 +639,10 @@ func int DIA_Addon_Lares_Ornament_Condition ()
 };
 func void DIA_Addon_Lares_Ornament_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Ornament_15_00"); //Vatras mi nakázal, abych ti zanesl tenhle ornament. Prı ho máš nêkomu vrátit.
+	AI_Output (other, self, "DIA_Addon_Lares_Ornament_15_00"); //Vatras mi nakÃ¡zal, abych ti zanesl tenhle ornament. PrÃ½ ho mÃ¡Å¡ nÄ™komu vrÃ¡tit.
 	B_GiveInvItems (other, self, ItMi_Ornament_Addon_Vatras,1);
-	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_01"); //(povzdech) Samozâejmê. Zase je to na mnê, jako vdycky. To jsem si mohl myslet.
-	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_02"); //Budu muset projít pâes pùl ostrova a vrátit jej vodním mágùm.
+	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_01"); //(povzdech) SamozÃ¢ejmÄ™. Zase je to na mnÄ™, jako vÅ¾dycky. To jsem si mohl myslet.
+	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_02"); //Budu muset projÃ­t pÃ¢es pÅ¯l ostrova a vrÃ¡tit jej vodnÃ­m mÃ¡gÅ¯m.
 };
 // ------------------------------------------------------------
 // Ornament BringJob
@@ -654,7 +654,7 @@ instance DIA_Addon_Lares_OrnamentBringJob		(C_INFO)
 	condition	= DIA_Addon_Lares_OrnamentBringJob_Condition;
 	information	= DIA_Addon_Lares_OrnamentBringJob_Info;
 
-	description = "Mùu tam ten ornament zanést za tebe!";
+	description = "MÅ¯Å¾u tam ten ornament zanÃ©st za tebe!";
 };
 func int DIA_Addon_Lares_OrnamentBringJob_Condition ()
 {
@@ -666,16 +666,16 @@ func int DIA_Addon_Lares_OrnamentBringJob_Condition ()
 };
 func void DIA_Addon_Lares_OrnamentBringJob_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_OrnamentBringJob_15_00"); //Já bych to mohl zaâídit místo tebe!
-	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_01"); //(zamyšlenê) Hmm. Myslím, e bych to mêl radši zaâídit sám, ale mùeš jít se mnou.
-	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_02"); //Akorát nemùu odejít hned, musím dohlíet na pâístav.
+	AI_Output	(other, self, "DIA_Addon_Lares_OrnamentBringJob_15_00"); //JÃ¡ bych to mohl zaÃ¢Ã­dit mÃ­sto tebe!
+	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_01"); //(zamyÅ¡lenÄ™) Hmm. MyslÃ­m, Å¾e bych to mÄ™l radÅ¡i zaÃ¢Ã­dit sÃ¡m, ale mÅ¯Å¾eÅ¡ jÃ­t se mnou.
+	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_02"); //AkorÃ¡t nemÅ¯Å¾u odejÃ­t hned, musÃ­m dohlÃ­Å¾et na pÃ¢Ã­stav.
 	
-	B_LogEntry (TOPIC_Addon_KDW,"Zanesl jsem Laresovi ornament od Vatrase. Chce je pâedat vodním mágùm osobnê a já ho mám doprovodit."); 
+	B_LogEntry (TOPIC_Addon_KDW,"Zanesl jsem Laresovi ornament od Vatrase. Chce je pÃ¢edat vodnÃ­m mÃ¡gÅ¯m osobnÄ™ a jÃ¡ ho mÃ¡m doprovodit."); 
 	
 	MIS_Addon_Lares_Ornament2Saturas = LOG_RUNNING;
 };
 // ------------------------------------------------------------
-// Hol Ablösung
+// Hol AblÃ¶sung
 // ------------------------------------------------------------
 instance DIA_Addon_Lares_YourMission		(C_INFO)
 {
@@ -684,7 +684,7 @@ instance DIA_Addon_Lares_YourMission		(C_INFO)
 	condition	= DIA_Addon_Lares_YourMission_Condition;
 	information	= DIA_Addon_Lares_YourMission_Info;
 	permanent 	= TRUE;
-	description = "Co pâesnê tady v pâístavu dêláš?";
+	description = "Co pÃ¢esnÄ™ tady v pÃ¢Ã­stavu dÄ™lÃ¡Å¡?";
 };
 func int DIA_Addon_Lares_YourMission_Condition ()
 {
@@ -696,35 +696,35 @@ func int DIA_Addon_Lares_YourMission_Condition ()
 };
 func void DIA_Addon_Lares_YourMission_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_YourMission_15_00"); //Co pâesnê tady v pâístavu dêláš?
+	AI_Output (other, self, "DIA_Addon_Lares_YourMission_15_00"); //Co pÃ¢esnÄ™ tady v pÃ¢Ã­stavu dÄ™lÃ¡Å¡?
 	
 	if (!Npc_KnowsInfo (other, DIA_Addon_Lares_WhatAreYouGuys))
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_01"); //O tom nemùu mluvit.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_01"); //O tom nemÅ¯Å¾u mluvit.
 		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_02"); //Vatras by mi utrhnul hlavu.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_03"); //Dêlám to, co všichni. Dêlám, co mi nakáou vodní mágové.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_04"); //Nêkteâí z têch zmizelıch lidí byli rybáâi. A zmizeli i se svımi èluny.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_05"); //A proto tu stojím a hlídám celı pâístav. Snad se tu ještê nêco semele.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_03"); //DÄ™lÃ¡m to, co vÅ¡ichni. DÄ™lÃ¡m, co mi nakÃ¡Å¾ou vodnÃ­ mÃ¡govÃ©.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_04"); //NÄ™kteÃ¢Ã­ z tÄ™ch zmizelÃ½ch lidÃ­ byli rybÃ¡Ã¢i. A zmizeli i se svÃ½mi Äluny.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_05"); //A proto tu stojÃ­m a hlÃ­dÃ¡m celÃ½ pÃ¢Ã­stav. Snad se tu jeÅ¡tÄ™ nÄ™co semele.
 		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_06"); //Ale mohl bys mi pomoct.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_07"); //Poslyš, pùjèím ti svùj akvamarínovej prsten. Ten je poznávacím znamením èlenù kruhu vody.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_07"); //PoslyÅ¡, pÅ¯jÄÃ­m ti svÅ¯j akvamarÃ­novej prsten. Ten je poznÃ¡vacÃ­m znamenÃ­m ÄlenÅ¯ kruhu vody.
 		
 		CreateInvItems (self, ItRi_Ranger_Lares_Addon, 1);									
 		B_GiveInvItems (self, other, ItRi_Ranger_Lares_Addon, 1);
 		SC_GotLaresRing = TRUE;		
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_08"); //Kdy ho budeš mít na prstê, ostatní budou vêdêt, e jednáš mım jménem.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_09"); //Seeà nêkoho, kdo to tu za mê vezme, aã mùu jít vrátit ten ornament.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_10"); //Nêkdo z nás urèitê hlídá na trišti, ale nevím, na kom je zrovna âada.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_11"); //Take si radši promluv se všema, kteâí tam postávaj. A narazíš na toho pravıho, všimne si mıho prstenu a dá ti vêdêt.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_12"); //Vyâië mu, e potâebuju, aby mê tady v pâístavu nêkdo vystâídal.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_08"); //KdyÅ¾ ho budeÅ¡ mÃ­t na prstÄ™, ostatnÃ­ budou vÄ™dÄ™t, Å¾e jednÃ¡Å¡ mÃ½m jmÃ©nem.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_09"); //SeÅ¾eÅ• nÄ™koho, kdo to tu za mÄ™ vezme, aÄƒ mÅ¯Å¾u jÃ­t vrÃ¡tit ten ornament.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_10"); //NÄ™kdo z nÃ¡s urÄitÄ™ hlÃ­dÃ¡ na trÅ¾iÅ¡ti, ale nevÃ­m, na kom je zrovna Ã¢ada.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_11"); //TakÅ¾e si radÅ¡i promluv se vÅ¡ema, kteÃ¢Ã­ tam postÃ¡vaj. AÅ¾ narazÃ­Å¡ na toho pravÃ½ho, vÅ¡imne si mÃ½ho prstenu a dÃ¡ ti vÄ™dÄ™t.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_12"); //VyÃ¢iÃ« mu, Å¾e potÃ¢ebuju, aby mÄ™ tady v pÃ¢Ã­stavu nÄ™kdo vystÃ¢Ã­dal.
 
-		B_LogEntry (TOPIC_Addon_RingOfWater,"Lares mi pâedal svùj akvamarínovı prsten - tajné znamení našeho kruhu. Kdy jej budu nosit, ostatní èlenové poznají, e k nim patâím."); 
+		B_LogEntry (TOPIC_Addon_RingOfWater,"Lares mi pÃ¢edal svÅ¯j akvamarÃ­novÃ½ prsten - tajnÃ© znamenÃ­ naÅ¡eho kruhu. KdyÅ¾ jej budu nosit, ostatnÃ­ ÄlenovÃ© poznajÃ­, Å¾e k nim patÃ¢Ã­m."); 
 
 		Log_CreateTopic (TOPIC_Addon_BringRangerToLares, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_BringRangerToLares, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_BringRangerToLares,"Lares nemùe opustit pâístav. Proto mám místo nêj zajít na trištê, prokázat se jeho akvamarínovım prstenem a najít nêkoho, kdo by ho vystâídal."); 
+		B_LogEntry (TOPIC_Addon_BringRangerToLares,"Lares nemÅ¯Å¾e opustit pÃ¢Ã­stav. Proto mÃ¡m mÃ­sto nÄ™j zajÃ­t na trÅ¾iÅ¡tÄ™, prokÃ¡zat se jeho akvamarÃ­novÃ½m prstenem a najÃ­t nÄ™koho, kdo by ho vystÃ¢Ã­dal."); 
 
 		MIS_Lares_BringRangerToMe = LOG_RUNNING;
 	};
@@ -752,19 +752,19 @@ func int DIA_Addon_Lares_BaltramAbloese_Condition ()
 
 func void DIA_Addon_Lares_BaltramAbloese_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_BaltramAbloese_15_00"); //Mluvil jsem s Baltramem. Prı najde nêkoho, kdo tê pâijde nahradit.
-	AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_01"); //Á, tak to je fajn. Take mùeme koneènê vypadnout.
+	AI_Output (other, self, "DIA_Addon_Lares_BaltramAbloese_15_00"); //Mluvil jsem s Baltramem. PrÃ½ najde nÄ™koho, kdo tÄ™ pÃ¢ijde nahradit.
+	AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_01"); //Ã, tak to je fajn. TakÅ¾e mÅ¯Å¾eme koneÄnÄ™ vypadnout.
 	if (SC_IsRanger == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_02"); //Ale ten mùj akvamarínovej prsten si radši ještê nech.
+		AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_02"); //Ale ten mÅ¯j akvamarÃ­novej prsten si radÅ¡i jeÅ¡tÄ™ nech.
 		
 		if (Npc_KnowsInfo (other, DIA_Addon_Lares_WannaBeRanger))
 		{
-			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_03"); //(s úsmêvem) Myslím, e se ti ještê bude hodit.
+			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_03"); //(s ÃºsmÄ™vem) MyslÃ­m, Å¾e se ti jeÅ¡tÄ™ bude hodit.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_04"); //(s úsmêvem) Kdo ví, tâeba se k nám budeš chtít pâidat.
+			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_04"); //(s ÃºsmÄ™vem) Kdo vÃ­, tÃ¢eba se k nÃ¡m budeÅ¡ chtÃ­t pÃ¢idat.
 		};
 	};
 	MIS_Lares_BringRangerToMe = LOG_SUCCESS;
@@ -788,7 +788,7 @@ instance DIA_Addon_Lares_PeopleMissing		(C_INFO)
 	condition	= DIA_Addon_Lares_PeopleMissing_Condition;
 	information	= DIA_Addon_Lares_PeopleMissing_Info;
 	permanent 	= TRUE;
-	description	= "Co se tıèe têch pohâešovanıch lidí...";
+	description	= "Co se tÃ½Äe tÄ™ch pohÃ¢eÅ¡ovanÃ½ch lidÃ­...";
 };
 func int DIA_Addon_Lares_PeopleMissing_Condition ()
 {
@@ -801,23 +801,23 @@ func int DIA_Addon_Lares_PeopleMissing_Condition ()
 };
 func void DIA_Addon_Lares_PeopleMissing_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_15_00"); //Co se tıèe têch pohâešovanıch lidí...
+	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_15_00"); //Co se tÃ½Äe tÄ™ch pohÃ¢eÅ¡ovanÃ½ch lidÃ­...
 	Info_ClearChoices (DIA_Addon_Lares_PeopleMissing);
 	Info_AddChoice (DIA_Addon_Lares_PeopleMissing, DIALOG_BACK, DIA_Addon_Lares_PeopleMissing_BACK);
 	if (MissingPeopleReturnedHome == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Nêkolik z têch pohâešovanıch lidí jsem zachránil.", DIA_Addon_Lares_PeopleMissing_SAVED );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "NÄ™kolik z tÄ™ch pohÃ¢eÅ¡ovanÃ½ch lidÃ­ jsem zachrÃ¡nil.", DIA_Addon_Lares_PeopleMissing_SAVED );
 	}
 	else if (MIS_Lares_BringRangerToMe != 0)
 	&& (SCKnowsMissingPeopleAreInAddonWorld == TRUE)
 	&& (MissingPeopleReturnedHome == FALSE)
 	{
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "U vím, co se s têmi pohâešovanımi lidmi stalo.", DIA_Addon_Lares_PeopleMissing_Success );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "UÅ¾ vÃ­m, co se s tÄ™mi pohÃ¢eÅ¡ovanÃ½mi lidmi stalo.", DIA_Addon_Lares_PeopleMissing_Success );
 	}
 	else
 	{
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Není to spíš záleitost pro domobranu?", DIA_Addon_Lares_PeopleMissing_MIL );
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Prozraë mi, co víš.", DIA_Addon_Lares_PeopleMissing_TellMe );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "NenÃ­ to spÃ­Å¡ zÃ¡leÅ¾itost pro domobranu?", DIA_Addon_Lares_PeopleMissing_MIL );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "ProzraÃ« mi, co vÃ­Å¡.", DIA_Addon_Lares_PeopleMissing_TellMe );
 	};
 };
 func void DIA_Addon_Lares_PeopleMissing_BACK()
@@ -826,11 +826,11 @@ func void DIA_Addon_Lares_PeopleMissing_BACK()
 };
 func void DIA_Addon_Lares_PeopleMissing_TellMe()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_TellMe_15_00"); //Povêz mi, co víš.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_01"); //Napâed to byl William, jeden ze zdejších rybáâù. Jednoho dne se prostê nevrátil.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_02"); //Zpoèátku jsme si mysleli, e ho prostê schlamstla jedna z têch moâskejch pâíšer.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_03"); //Jene zanedlouho zaèali mizet i další lidi z mêsta i okolí. To u by byly pêknê divnı náhody.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_04"); //Nikdo z nich se zatím nevrátil. Zatím to vypadá, e budeme muset poèkat, dokud nenarazíme na nêjakou stopu.
+	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_TellMe_15_00"); //PovÄ™z mi, co vÃ­Å¡.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_01"); //NapÃ¢ed to byl William, jeden ze zdejÅ¡Ã­ch rybÃ¡Ã¢Å¯. Jednoho dne se prostÄ™ nevrÃ¡til.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_02"); //ZpoÄÃ¡tku jsme si mysleli, Å¾e ho prostÄ™ schlamstla jedna z tÄ™ch moÃ¢skejch pÃ¢Ã­Å¡er.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_03"); //JenÅ¾e zanedlouho zaÄali mizet i dalÅ¡Ã­ lidi z mÄ™sta i okolÃ­. To uÅ¾ by byly pÄ™knÄ™ divnÃ½ nÃ¡hody.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_04"); //Nikdo z nich se zatÃ­m nevrÃ¡til. ZatÃ­m to vypadÃ¡, Å¾e budeme muset poÄkat, dokud nenarazÃ­me na nÄ™jakou stopu.
 
 		if (SC_HearedAboutMissingPeople == FALSE)
 		{
@@ -847,26 +847,26 @@ func void DIA_Addon_Lares_PeopleMissing_TellMe()
 };
 func void DIA_Addon_Lares_PeopleMissing_MIL()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_MIL_15_00"); //Copak by se o tyhle vêci nemêla starat domobrana?
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_01"); //Domobrana vypátrá houby s octem, abych tak âekl.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_02"); //Tohle nikdy neobjasní. TI lidi se prostê vypaâili.
+	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_MIL_15_00"); //Copak by se o tyhle vÄ™ci nemÄ™la starat domobrana?
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_01"); //Domobrana vypÃ¡trÃ¡ houby s octem, abych tak Ã¢ekl.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_02"); //Tohle nikdy neobjasnÃ­. TI lidi se prostÄ™ vypaÃ¢ili.
 };
 func void DIA_Addon_Lares_PeopleMissing_Success()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_00"); //Vím, co se stalo s têmi pohâešovanımi lidmi!
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_01"); //(pâekvapenê) Vánê?
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_02"); //Unesl je bıvalı rudobaron Havran.
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_03"); //Víš to jistê? Tak to je odtamtud musíme dostat.
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_00"); //VÃ­m, co se stalo s tÄ™mi pohÃ¢eÅ¡ovanÃ½mi lidmi!
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_01"); //(pÃ¢ekvapenÄ™) VÃ¡Å¾nÄ™?
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_02"); //Unesl je bÃ½valÃ½ rudobaron Havran.
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_03"); //VÃ­Å¡ to jistÄ™? Tak to je odtamtud musÃ­me dostat.
 	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_04"); //Pracuju na tom.
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_05"); //Fajn. A kdybys potâeboval pomoc...
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_06"); //...vím, kde tê hledat. Je mi to jasnı.
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_05"); //Fajn. A kdybys potÃ¢eboval pomoc...
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_06"); //...vÃ­m, kde tÄ™ hledat. Je mi to jasnÃ½.
 	Lares_CanBringScToPlaces = TRUE;
 	Info_ClearChoices (DIA_Addon_Lares_PeopleMissing);
 };
 func void DIA_Addon_Lares_PeopleMissing_SAVED ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_SAVED_15_00"); //Nêkteré z têch zmizelıch lidí u jsem zachránil.
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_SAVED_09_01"); //Já vêdêl, e to dokáeš. Take u si mùu koneènê jít po svém.
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_SAVED_15_00"); //NÄ™kterÃ© z tÄ™ch zmizelÃ½ch lidÃ­ uÅ¾ jsem zachrÃ¡nil.
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_SAVED_09_01"); //JÃ¡ vÄ™dÄ™l, Å¾e to dokÃ¡Å¾eÅ¡. TakÅ¾e uÅ¾ si mÅ¯Å¾u koneÄnÄ™ jÃ­t po svÃ©m.
 	B_GivePlayerXP (XP_Ambient);
 	Lares_PeopleMissing_PERM = TRUE;
 	Lares_CanBringScToPlaces = TRUE;
@@ -889,7 +889,7 @@ instance DIA_Addon_Lares_RangerHelp		(C_INFO)
 	condition	= DIA_Addon_Lares_RangerHelp_Condition;
 	information	= DIA_Addon_Lares_RangerHelp_Info;
 	permanent	= TRUE;
-	description	= "Potâebuji tvou pomoc.";
+	description	= "PotÃ¢ebuji tvou pomoc.";
 };
 func int DIA_Addon_Lares_RangerHelp_Condition ()
 {
@@ -907,57 +907,57 @@ func int DIA_Addon_Lares_RangerHelp_Condition ()
 };
 func void DIA_Addon_Lares_RangerHelp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_RangerHelp_15_00"); //Potâebuju tvou pomoc.
-	AI_Output	(self, other, "DIA_Addon_Lares_RangerHelp_09_01"); //A co pâesnê máš na mysli?
+	AI_Output	(other, self, "DIA_Addon_Lares_RangerHelp_15_00"); //PotÃ¢ebuju tvou pomoc.
+	AI_Output	(self, other, "DIA_Addon_Lares_RangerHelp_09_01"); //A co pÃ¢esnÄ™ mÃ¡Å¡ na mysli?
 	
 	Info_ClearChoices	(DIA_Addon_Lares_RangerHelp);
 	Info_AddChoice (DIA_Addon_Lares_RangerHelp, DIALOG_BACK, DIA_Addon_Lares_RangerHelp_nix );
 	
 	if (Npc_IsInState (Moe, ZS_Attack))
 	{
-		Info_AddChoice (DIA_Addon_Lares_RangerHelp, "Ten chlap mê otravuje!", DIA_Addon_Lares_RangerHelp_Moe);
+		Info_AddChoice (DIA_Addon_Lares_RangerHelp, "Ten chlap mÄ™ otravuje!", DIA_Addon_Lares_RangerHelp_Moe);
 	};
 		
 	if (DIA_Addon_Lares_RangerHelp_gilde_OneTime_Waffe == FALSE)
 	&& (Lares_RangerHelp == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Potâebuju lepší zbraà.", DIA_Addon_Lares_RangerHelp_waffe );
+		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "PotÃ¢ebuju lepÅ¡Ã­ zbraÅ•.", DIA_Addon_Lares_RangerHelp_waffe );
 	};
 
 	if (DIA_Addon_Lares_RangerHelp_gilde_OneTime_ruestung == FALSE)
 	&& (Lares_RangerHelp == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Co takhle nêjaké lepší brnêní?", DIA_Addon_Lares_RangerHelp_ruestung );
+		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Co takhle nÄ™jakÃ© lepÅ¡Ã­ brnÄ™nÃ­?", DIA_Addon_Lares_RangerHelp_ruestung );
 	};
 
 	if (DIA_Addon_Lares_RangerHelp_gilde_OneTime_geld == FALSE)
 	&& (Lares_RangerHelp == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Potâebuju peníze.", DIA_Addon_Lares_RangerHelp_geld );
+		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "PotÃ¢ebuju penÃ­ze.", DIA_Addon_Lares_RangerHelp_geld );
 	};
 };
 func void DIA_Addon_Lares_RangerHelp_ruestung ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_00"); //Co takhle nêjakou lepší zbroj.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_01"); //Hmm. Zbroj prodává Matteo, ale urèitê za ni bude chtít majlant.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_02"); //Ale dá se získat i levnêjc, kdy ti pâitom nebude vadit trochu napálit domobranu.
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_03"); //Co tím myslíš?
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_04"); //Matteo má vedle svého domu skladištê, ale všechno zboí zabavila domobrana.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_05"); //Zajdi na trištê za Zurisem, kup si u nêj uspávací kouzlo a tím pak pošli všechny stráce do âíše snù.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_06"); //Pak si mezi Matteovım zboím urèitê vybereš nêco šikovnıho.
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_00"); //Co takhle nÄ™jakou lepÅ¡Ã­ zbroj.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_01"); //Hmm. Zbroj prodÃ¡vÃ¡ Matteo, ale urÄitÄ™ za ni bude chtÃ­t majlant.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_02"); //Ale dÃ¡ se zÃ­skat i levnÄ™jc, kdyÅ¾ ti pÃ¢itom nebude vadit trochu napÃ¡lit domobranu.
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_03"); //Co tÃ­m myslÃ­Å¡?
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_04"); //Matteo mÃ¡ vedle svÃ©ho domu skladiÅ¡tÄ™, ale vÅ¡echno zboÅ¾Ã­ zabavila domobrana.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_05"); //Zajdi na trÅ¾iÅ¡tÄ™ za Zurisem, kup si u nÄ™j uspÃ¡vacÃ­ kouzlo a tÃ­m pak poÅ¡li vÅ¡echny strÃ¡Å¾ce do Ã¢Ã­Å¡e snÅ¯.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_06"); //Pak si mezi MatteovÃ½m zboÅ¾Ã­m urÄitÄ™ vybereÅ¡ nÄ™co Å¡ikovnÃ½ho.
 	DIA_Addon_Lares_RangerHelp_gilde_OneTime_ruestung = TRUE;
 };
 func void DIA_Addon_Lares_RangerHelp_waffe ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_waffe_15_00"); //Potâebuju lepší zbraà.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_waffe_09_01"); //Tak v tom ti, obávám se, nepomùu. Zkusils to na trišti?
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_waffe_15_00"); //PotÃ¢ebuju lepÅ¡Ã­ zbraÅ•.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_waffe_09_01"); //Tak v tom ti, obÃ¡vÃ¡m se, nepomÅ¯Å¾u. Zkusils to na trÅ¾iÅ¡ti?
 	DIA_Addon_Lares_RangerHelp_gilde_OneTime_Waffe = TRUE;
 };
 func void DIA_Addon_Lares_RangerHelp_geld ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_geld_15_00"); //Potâebuju prachy.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_01"); //Tak to potâebujeme všichni. Je mi líto, nemám, co bych ti dal. Ale lichváâ Lehmar mi ještê dluí laskavost.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_02"); //Zajdi za ním a pùjè si, kolik potâebuješ. O zbytek se postarám. Najdeš ho v pâístavní ètvrti, tam, kde u skoro zaèíná dolní èást mêsta.
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_geld_15_00"); //PotÃ¢ebuju prachy.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_01"); //Tak to potÃ¢ebujeme vÅ¡ichni. Je mi lÃ­to, nemÃ¡m, co bych ti dal. Ale lichvÃ¡Ã¢ Lehmar mi jeÅ¡tÄ™ dluÅ¾Ã­ laskavost.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_02"); //Zajdi za nÃ­m a pÅ¯jÄ si, kolik potÃ¢ebujeÅ¡. O zbytek se postarÃ¡m. NajdeÅ¡ ho v pÃ¢Ã­stavnÃ­ Ätvrti, tam, kde uÅ¾ skoro zaÄÃ­nÃ¡ dolnÃ­ ÄÃ¡st mÄ™sta.
 	DIA_Addon_Lares_RangerHelp_gilde_OneTime_geld = TRUE;
 	RangerHelp_LehmarKohle = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_RangerHelp);
@@ -971,8 +971,8 @@ func void DIA_Addon_Lares_RangerHelp_nix ()
 // ------------------------------------------------------------
 func void DIA_Addon_Lares_RangerHelp_Moe()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Moe_15_00"); //Ten chlap mê otravuje.
-	AI_Output (self, other, "DIA_Addon_Lares_Moe_09_01"); //Dlouho u to nepotrvá.
+	AI_Output (other, self, "DIA_Addon_Lares_Moe_15_00"); //Ten chlap mÄ™ otravuje.
+	AI_Output (self, other, "DIA_Addon_Lares_Moe_09_01"); //Dlouho uÅ¾ to nepotrvÃ¡.
 	Info_ClearChoices (DIA_Addon_Lares_RangerHelp);
 	AI_StopProcessInfos (self);
 	other.aivar[AIV_INVINCIBLE] = FALSE;
@@ -1002,7 +1002,7 @@ instance DIA_Lares_Paladine	(C_INFO)
 	condition	 = 	DIA_Lares_Paladine_Condition;
 	information	 = 	DIA_Lares_Paladine_Info;
 	permanent    =  FALSE;
-	description	 = 	"Musím mluvit s paladiny, aã to stojí, co to stojí!";
+	description	 = 	"MusÃ­m mluvit s paladiny, aÄƒ to stojÃ­, co to stojÃ­!";
 };
 func int DIA_Lares_Paladine_Condition ()
 {	
@@ -1016,18 +1016,18 @@ func int DIA_Lares_Paladine_Condition ()
 };
 func void DIA_Lares_Paladine_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_Paladine_15_00"); //Musím za kadou cenu mluvit s paladiny!
-	AI_Output (self, other, "DIA_Lares_Paladine_09_01"); //Co od NICH chceš?
-	AI_Output (other, self, "DIA_Lares_Paladine_15_02"); //Mají mocnı amulet, Innosovo oko. Musím ho mít.
-	AI_Output (self, other, "DIA_Lares_Paladine_09_03"); //A to si myslíš, e ti ho dají? Nikdy se nedostaneš ani do horní èásti mêsta.
+	AI_Output (other, self, "DIA_Lares_Paladine_15_00"); //MusÃ­m za kaÅ¾dou cenu mluvit s paladiny!
+	AI_Output (self, other, "DIA_Lares_Paladine_09_01"); //Co od NICH chceÅ¡?
+	AI_Output (other, self, "DIA_Lares_Paladine_15_02"); //MajÃ­ mocnÃ½ amulet, Innosovo oko. MusÃ­m ho mÃ­t.
+	AI_Output (self, other, "DIA_Lares_Paladine_09_03"); //A to si myslÃ­Å¡, Å¾e ti ho dajÃ­? Nikdy se nedostaneÅ¡ ani do hornÃ­ ÄÃ¡sti mÄ™sta.
 	if (!Npc_KnowsInfo (other, DIA_Addon_Lares_Vatras))
 	{
-		AI_Output (other, self, "DIA_Lares_Paladine_15_04"); //Nêjakı zpùsob se najde.
-		AI_Output (self, other, "DIA_Lares_Paladine_09_05"); //Jasnê, jestli chceš podlejzat mêšãanùm nebo dêlat poskoka domobranê...
+		AI_Output (other, self, "DIA_Lares_Paladine_15_04"); //NÄ™jakÃ½ zpÅ¯sob se najde.
+		AI_Output (self, other, "DIA_Lares_Paladine_09_05"); //JasnÄ™, jestli chceÅ¡ podlejzat mÄ™Å¡ÄƒanÅ¯m nebo dÄ™lat poskoka domobranÄ™...
 	};
 	
 	//AI_Output (other, self, "DIA_Lares_Alternative_15_00"); //Hab' ich eine Alternative?
-	//AI_Output (self, other, "DIA_Lares_Alternative_09_01"); //Wenn ich du wäre, würde ich zu Onars Hof gehen und mit Lee reden.
+	//AI_Output (self, other, "DIA_Lares_Alternative_09_01"); //Wenn ich du wÃ¤re, wÃ¼rde ich zu Onars Hof gehen und mit Lee reden.
 	//AI_Output (self, other, "DIA_Lares_Alternative_09_02"); //Ich bin mir sicher, wir finden einem Weg, dich ins obere Viertel zu bringen.
 };	
 
@@ -1041,7 +1041,7 @@ instance DIA_Lares_WhyPalHere		(C_INFO)
 	condition	 = 	DIA_Lares_WhyPalHere_Condition;
 	information	 = 	DIA_Lares_WhyPalHere_Info;
 	permanent    =  FALSE;
-	description	 = 	"Víš, proè jsou tu jsou paladinové?";
+	description	 = 	"VÃ­Å¡, proÄ jsou tu jsou paladinovÃ©?";
 };
 func int DIA_Lares_WhyPalHere_Condition ()
 {	
@@ -1058,9 +1058,9 @@ func int DIA_Lares_WhyPalHere_Condition ()
 };
 func void DIA_Lares_WhyPalHere_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_WhyPalHere_15_00"); //Víš, proè tu jsou paladinové?
-	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_01"); //Nikdo to neví jistê. Hodnê lidí si myslí, e to je kvùli skâetùm, ale já si myslím, e tu je jinej dùvod.
-	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_02"); //Nejspíš to má co dêlat se starou trestaneckou kolonií.
+	AI_Output (other, self, "DIA_Lares_WhyPalHere_15_00"); //VÃ­Å¡, proÄ tu jsou paladinovÃ©?
+	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_01"); //Nikdo to nevÃ­ jistÄ™. HodnÄ™ lidÃ­ si myslÃ­, Å¾e to je kvÅ¯li skÃ¢etÅ¯m, ale jÃ¡ si myslÃ­m, Å¾e tu je jinej dÅ¯vod.
+	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_02"); //NejspÃ­Å¡ to mÃ¡ co dÄ™lat se starou trestaneckou koloniÃ­.
 };	
 
 // ------------------------------------------------------------
@@ -1073,7 +1073,7 @@ instance DIA_Addon_Lares_Gilde (C_INFO)
 	condition	 = 	DIA_Addon_Lares_Gilde_Condition;
 	information	 = 	DIA_Addon_Lares_Gilde_Info;
 	permanent    =  TRUE;
-	description	 = 	"Vatras tvrdil, e mi pomùeš pâidat se k nêkteré z místních komunit.";
+	description	 = 	"Vatras tvrdil, Å¾e mi pomÅ¯Å¾eÅ¡ pÃ¢idat se k nÄ™kterÃ© z mÃ­stnÃ­ch komunit.";
 };
 func int DIA_Addon_Lares_Gilde_Condition ()
 {	
@@ -1088,67 +1088,67 @@ func int DIA_Addon_Lares_Gilde_Condition ()
 };
 func void DIA_Addon_Lares_Gilde_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_15_00"); //Podle Vatrase mi prı mùeš pomoct pâidat se k nêkteré z místních komunit.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_01"); //(smêje se) U tê unavuje bejt nımandem, co?
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_02"); //No dobâe, chápu tê.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_03"); //Jestli se chceš pâidat k Leemu, mùu na oldáky trochu zapùsobit.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_04"); //A urèitê najdeme zpùsob, jak se brzo dostat do kláštera.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_05"); //Ale nejjednodušší by stejnê bylo pâidat se k domobranê.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_06"); //Komu dáváš pâednost ty?
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_15_00"); //Podle Vatrase mi prÃ½ mÅ¯Å¾eÅ¡ pomoct pÃ¢idat se k nÄ™kterÃ© z mÃ­stnÃ­ch komunit.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_01"); //(smÄ™je se) UÅ¾ tÄ™ unavuje bejt nÃ½mandem, co?
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_02"); //No dobÃ¢e, chÃ¡pu tÄ™.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_03"); //Jestli se chceÅ¡ pÃ¢idat k Leemu, mÅ¯Å¾u na Å¾oldÃ¡ky trochu zapÅ¯sobit.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_04"); //A urÄitÄ™ najdeme zpÅ¯sob, jak se brzo dostat do klÃ¡Å¡tera.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_05"); //Ale nejjednoduÅ¡Å¡Ã­ by stejnÄ™ bylo pÃ¢idat se k domobranÄ™.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_06"); //Komu dÃ¡vÃ¡Å¡ pÃ¢ednost ty?
 		
 	Info_ClearChoices (DIA_Addon_Lares_Gilde);
-	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Popâemıšlím o tom.", DIA_Addon_Lares_Gilde_BACK);
-	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Ohniví mágové.", DIA_Addon_Lares_Gilde_KDF );
-	Info_AddChoice	(DIA_Addon_Lares_Gilde, "oldnéâi.", DIA_Addon_Lares_Gilde_SLD );	
+	Info_AddChoice	(DIA_Addon_Lares_Gilde, "PopÃ¢emÃ½Å¡lÃ­m o tom.", DIA_Addon_Lares_Gilde_BACK);
+	Info_AddChoice	(DIA_Addon_Lares_Gilde, "OhnivÃ­ mÃ¡govÃ©.", DIA_Addon_Lares_Gilde_KDF );
+	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Å½oldnÃ©Ã¢i.", DIA_Addon_Lares_Gilde_SLD );	
 	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Domobrana.", DIA_Addon_Lares_Gilde_MIL );
 };
 func void DIA_Addon_Lares_Gilde_BACK ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_BACK_15_00"); //Tak to si musím rozmyslet...
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_BACK_15_00"); //Tak to si musÃ­m rozmyslet...
 	Info_ClearChoices (DIA_Addon_Lares_Gilde);
 };
 func void DIA_Addon_Lares_Gilde_SLD ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_SLD_15_00"); //oldákùm.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_01"); //Jsem si jist, e tê Lee pâijme.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_01"); //Ale napâed budeš muset projít zkouškou.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_02"); //Bê na Onarùv statek a promluv si tam s Cordem. 
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_02"); //Pomùe ti tu zkoušku splnit.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_03"); //Povêz mu, e nad tebou drím ochrannou ruku. Pochopí to.
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_SLD_15_00"); //Å½oldÃ¡kÅ¯m.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_01"); //Jsem si jist, Å¾e tÄ™ Lee pÃ¢ijme.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_01"); //Ale napÃ¢ed budeÅ¡ muset projÃ­t zkouÅ¡kou.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_02"); //BÄ™Å¾ na OnarÅ¯v statek a promluv si tam s Cordem. 
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_02"); //PomÅ¯Å¾e ti tu zkouÅ¡ku splnit.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_03"); //PovÄ™z mu, Å¾e nad tebou drÅ¾Ã­m ochrannou ruku. PochopÃ­ to.
 	RangerHelp_gildeSLD = TRUE;
 	
 	Log_CreateTopic (TOPIC_Addon_RangerHelpSLD, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpSLD, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Podle Larese mi mùe ivot na statkáâovê farmê ulehèit oldák Cord."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Podle Larese mi mÅ¯Å¾e Å¾ivot na statkÃ¡Ã¢ovÄ™ farmÄ™ ulehÄit Å¾oldÃ¡k Cord."); 
 	
 	SC_KnowsCordAsRangerFromLares = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_Gilde);
 };
 func void DIA_Addon_Lares_Gilde_MIL ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_MIL_15_00"); //Domobranê.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_01"); //(pobavenê) Je mi jasnı, e by se ti to líbilo! Diktovat ostatním zákony a pâitom jim vybírat kapsy.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_02"); //Paladinové skladují své zásoby v pâístavu a jejich skladník je mùj dobrı pâítel.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_03"); //Moná by ti mohl nêjak pomoct. Jmenuje se Martin.
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_MIL_15_00"); //DomobranÄ™.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_01"); //(pobavenÄ™) Je mi jasnÃ½, Å¾e by se ti to lÃ­bilo! Diktovat ostatnÃ­m zÃ¡kony a pÃ¢itom jim vybÃ­rat kapsy.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_02"); //PaladinovÃ© skladujÃ­ svÃ© zÃ¡soby v pÃ¢Ã­stavu a jejich skladnÃ­k je mÅ¯j dobrÃ½ pÃ¢Ã­tel.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_03"); //MoÅ¾nÃ¡ by ti mohl nÄ™jak pomoct. Jmenuje se Martin.
 
 	Log_CreateTopic (TOPIC_Addon_RangerHelpMIL, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpMIL, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Lares mi poradil, e jestli se chci co nejdâíve stát èlenem domobrany, mêl bych zajít za skladníkem Martinem. Obvykle postává v pâístavu, kde paladinové uchovávají své zásoby."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Lares mi poradil, Å¾e jestli se chci co nejdÃ¢Ã­ve stÃ¡t Älenem domobrany, mÄ™l bych zajÃ­t za skladnÃ­kem Martinem. Obvykle postÃ¡vÃ¡ v pÃ¢Ã­stavu, kde paladinovÃ© uchovÃ¡vajÃ­ svÃ© zÃ¡soby."); 
 	
 	RangerHelp_gildeMIL = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_Gilde);
 };
 func void DIA_Addon_Lares_Gilde_KDF ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_KDF_15_00"); //Ohnivım mágùm.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_01"); //(smêje se) Vsadím se, e tohle Vatras nepâedvídal, jinak by mê za tebou neposlal.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_02"); //Vstup do kláštera je drahı.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_03"); //Ti hoši tê nepustí dál, dokud jim nevênuješ pêknê tuènı milodar.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_04"); //A jedinı, kdo v téhle vêci mùe nêco udêlat, je sám Vatras. Zkus si s ním o tom promluvit.
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_KDF_15_00"); //OhnivÃ½m mÃ¡gÅ¯m.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_01"); //(smÄ™je se) VsadÃ­m se, Å¾e tohle Vatras nepÃ¢edvÃ­dal, jinak by mÄ™ za tebou neposlal.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_02"); //Vstup do klÃ¡Å¡tera je drahÃ½.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_03"); //Ti hoÅ¡i tÄ™ nepustÃ­ dÃ¡l, dokud jim nevÄ™nujeÅ¡ pÄ™knÄ™ tuÄnÃ½ milodar.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_04"); //A jedinÃ½, kdo v tÃ©hle vÄ™ci mÅ¯Å¾e nÄ™co udÄ™lat, je sÃ¡m Vatras. Zkus si s nÃ­m o tom promluvit.
 
 	Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Lares tvrdil, e Vatras zná snadnı zpùsob, jak se dostat do kláštera."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Lares tvrdil, Å¾e Vatras znÃ¡ snadnÃ½ zpÅ¯sob, jak se dostat do klÃ¡Å¡tera."); 
 
 	RangerHelp_gildeKDF = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_Gilde);
@@ -1168,7 +1168,7 @@ instance DIA_Lares_AboutSld (C_INFO)
 	condition	 = 	DIA_Lares_AboutSld_Condition;
 	information	 = 	DIA_Lares_AboutSld_Info;
 	permanent    =  TRUE;
-	description	 = 	"Povêz mi o Leem a têch jeho oldácích nêco blišího.";
+	description	 = 	"PovÄ™z mi o Leem a tÄ™ch jeho Å¾oldÃ¡cÃ­ch nÄ™co bliÅ¾Å¡Ã­ho.";
 };
 func int DIA_Lares_AboutSld_Condition ()
 {	
@@ -1180,14 +1180,14 @@ func int DIA_Lares_AboutSld_Condition ()
 };
 func void DIA_Lares_AboutSld_Info ()
 {
-	AI_Output (other,self,  "DIA_ADDON_Lares_AboutSld_15_00"); //Povêz mi nêco víc o Leeovi a jeho oldácích.
-	AI_Output (self, other, "DIA_ADDON_Lares_AboutSld_09_01"); //Ale co bys chtêl vêdêt?
+	AI_Output (other,self,  "DIA_ADDON_Lares_AboutSld_15_00"); //PovÄ™z mi nÄ™co vÃ­c o Leeovi a jeho Å¾oldÃ¡cÃ­ch.
+	AI_Output (self, other, "DIA_ADDON_Lares_AboutSld_09_01"); //Ale co bys chtÄ™l vÄ™dÄ™t?
 	
 	Info_ClearChoices (DIA_Lares_AboutSld);
 	Info_AddChoice (DIA_Lares_AboutSld, DIALOG_BACK, DIA_Lares_AboutSld_BACK);
-	Info_AddChoice (DIA_Lares_AboutSld, "A proè teda nejsi s Leem a jeho oldákama?", DIA_Lares_AboutSld_WhyNotYou);
-	Info_AddChoice (DIA_Lares_AboutSld, "Chtêl bych vêdêt víc o têch oldácích.", DIA_Lares_AboutSld_Sld);
-	Info_AddChoice (DIA_Lares_AboutSld, "Jak najdu farmu velkostatkáâe?", DIA_Lares_AboutSld_WayToOnar); 
+	Info_AddChoice (DIA_Lares_AboutSld, "A proÄ teda nejsi s Leem a jeho Å¾oldÃ¡kama?", DIA_Lares_AboutSld_WhyNotYou);
+	Info_AddChoice (DIA_Lares_AboutSld, "ChtÄ™l bych vÄ™dÄ™t vÃ­c o tÄ™ch Å¾oldÃ¡cÃ­ch.", DIA_Lares_AboutSld_Sld);
+	Info_AddChoice (DIA_Lares_AboutSld, "Jak najdu farmu velkostatkÃ¡Ã¢e?", DIA_Lares_AboutSld_WayToOnar); 
 };
 func void DIA_Lares_AboutSld_BACK()
 {
@@ -1195,36 +1195,36 @@ func void DIA_Lares_AboutSld_BACK()
 };
 func void DIA_Lares_AboutSld_Sld()
 {	
-	AI_Output (other,self,  "DIA_Lares_AboutSld_15_00"); //Âekni mi o oldnéâích víc.
-	AI_Output (self, other, "DIA_Lares_AboutSld_09_01"); //Fajn, jestli seš poâád tak tvrdej, jako jsi bejval, nemêl bys s nima mít ádnej problém.
-	AI_Output (self, other, "DIA_Lares_AboutSld_09_02"); //Vêtšina z nich jsou rváèi, a jestli se jim nebudeš umêt postavit, daleko se nedostaneš.
-	AI_Output (self, other, "DIA_Lares_AboutSld_09_03"); //(smích) Jestli seš krapet pâecitlivêlej, tak nemáš šanci s nima vydret.
+	AI_Output (other,self,  "DIA_Lares_AboutSld_15_00"); //Ã‚ekni mi o Å¾oldnÃ©Ã¢Ã­ch vÃ­c.
+	AI_Output (self, other, "DIA_Lares_AboutSld_09_01"); //Fajn, jestli seÅ¡ poÃ¢Ã¡d tak tvrdej, jako jsi bejval, nemÄ™l bys s nima mÃ­t Å¾Ã¡dnej problÃ©m.
+	AI_Output (self, other, "DIA_Lares_AboutSld_09_02"); //VÄ™tÅ¡ina z nich jsou rvÃ¡Äi, a jestli se jim nebudeÅ¡ umÄ™t postavit, daleko se nedostaneÅ¡.
+	AI_Output (self, other, "DIA_Lares_AboutSld_09_03"); //(smÃ­ch) Jestli seÅ¡ krapet pÃ¢ecitlivÄ™lej, tak nemÃ¡Å¡ Å¡anci s nima vydrÅ¾et.
 };	
 func void DIA_Lares_AboutSld_WhyNotYou()
 {
-	AI_Output (other, self, "DIA_Lares_WhyInCity_15_00"); //A proè teda nejsi s Leem a jeho oldákama?
-	AI_Output (self, other, "DIA_Lares_WhyInCity_09_01"); //Ale vdyã jsem! Jenom ne na farmê.
-	AI_Output (self, other, "DIA_Lares_WhyInCity_09_02"); //Dá se âíct, e ho tady ve mêstê zastupuju. Nechceme, aby ta loë odplula bez nás.
+	AI_Output (other, self, "DIA_Lares_WhyInCity_15_00"); //A proÄ teda nejsi s Leem a jeho Å¾oldÃ¡kama?
+	AI_Output (self, other, "DIA_Lares_WhyInCity_09_01"); //Ale vÅ¾dyÄƒ jsem! Jenom ne na farmÄ™.
+	AI_Output (self, other, "DIA_Lares_WhyInCity_09_02"); //DÃ¡ se Ã¢Ã­ct, Å¾e ho tady ve mÄ™stÄ™ zastupuju. Nechceme, aby ta loÃ« odplula bez nÃ¡s.
 	//AI_Output (self, other, "DIA_Lares_WhyInCity_09_03"); //Warum bist DU in die Stadt gekommen?
 	Lares_WorkForLee = TRUE;
 	
-	Info_AddChoice (DIA_Lares_AboutSld, "O jaké lodi jsi to mluvil?", DIA_Lares_AboutSld_Schiff);
+	Info_AddChoice (DIA_Lares_AboutSld, "O jakÃ© lodi jsi to mluvil?", DIA_Lares_AboutSld_Schiff);
 };
 func void DIA_Lares_AboutSld_Schiff()
 {	
-	AI_Output (other,self , "DIA_Lares_Schiff_15_00"); //O jaké lodi jsi to mluvil?
-	AI_Output (self, other, "DIA_Lares_Schiff_09_01"); //Je na otevâené èásti pâístavu za útesem. Lee se chce se svejma pár lidma odsud vánê dostat.
-	AI_Output (self, other, "DIA_Lares_Schiff_09_02"); //Ale bude to chvíli trvat.
-	AI_Output (other,self , "DIA_Lares_Schiff_15_03"); //Proè?
-	AI_Output (self, other, "DIA_Lares_Schiff_09_04"); //Mêl by ses na to radêj zeptat Leeho, kdy ho potkáš... Má dobrej plán.
+	AI_Output (other,self , "DIA_Lares_Schiff_15_00"); //O jakÃ© lodi jsi to mluvil?
+	AI_Output (self, other, "DIA_Lares_Schiff_09_01"); //Je na otevÃ¢enÃ© ÄÃ¡sti pÃ¢Ã­stavu za Ãºtesem. Lee se chce se svejma pÃ¡r lidma odsud vÃ¡Å¾nÄ™ dostat.
+	AI_Output (self, other, "DIA_Lares_Schiff_09_02"); //Ale bude to chvÃ­li trvat.
+	AI_Output (other,self , "DIA_Lares_Schiff_15_03"); //ProÄ?
+	AI_Output (self, other, "DIA_Lares_Schiff_09_04"); //MÄ™l by ses na to radÄ™j zeptat Leeho, kdyÅ¾ ho potkÃ¡Å¡... MÃ¡ dobrej plÃ¡n.
 };
 func void DIA_Lares_AboutSld_WayToOnar()
 {
-	AI_Output (other,self, "DIA_Lares_WegZumHof_15_00"); //Jak najdu farmu velkostatkáâe?
-	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_00"); //Je to jednoduchı. Vyjdeš vıchodní bránou z pâístavu a pak pùjdeš po cestê k vıchodu.
-	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_01"); //Jestli chceš, mùu tê tam zavést.
+	AI_Output (other,self, "DIA_Lares_WegZumHof_15_00"); //Jak najdu farmu velkostatkÃ¡Ã¢e?
+	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_00"); //Je to jednoduchÃ½. VyjdeÅ¡ vÃ½chodnÃ­ brÃ¡nou z pÃ¢Ã­stavu a pak pÅ¯jdeÅ¡ po cestÄ™ k vÃ½chodu.
+	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_01"); //Jestli chceÅ¡, mÅ¯Å¾u tÄ™ tam zavÃ©st.
 	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_01"); //Ich kann dich hinbringen, wenn du willst. Hab sowieso schon zu lange hier rumgehangen.
-	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_02"); //Hier im Hafen gibt es zwar für gewöhnlich keine Miliz, aber ich muss ja nicht riskieren, dass einer von ihnen Verdacht schöpft ...
+	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_02"); //Hier im Hafen gibt es zwar fÃ¼r gewÃ¶hnlich keine Miliz, aber ich muss ja nicht riskieren, dass einer von ihnen Verdacht schÃ¶pft ...
 	Lares_WayToOnar = TRUE;
 };	
 
@@ -1243,7 +1243,7 @@ instance DIA_Lares_GuildOfThieves (C_INFO)
 	condition	 = 	DIA_Lares_GuildOfThieves_Condition;
 	information	 = 	DIA_Lares_GuildOfThieves_Info;
 	permanent    =  FALSE;
-	description	 = 	"Víš nêco o zlodêjském cechu ve mêstê?";
+	description	 = 	"VÃ­Å¡ nÄ™co o zlodÄ™jskÃ©m cechu ve mÄ™stÄ™?";
 };
 func int DIA_Lares_GuildOfThieves_Condition ()
 {	
@@ -1254,10 +1254,10 @@ func int DIA_Lares_GuildOfThieves_Condition ()
 };
 func void DIA_Lares_GuildOfThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_GuildOfThieves_15_00"); //Víš nêco o zlodêjském cechu ve mêstê?
-	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_01"); //Ty tvoje otázky...
-	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_02"); //Samozâejmê, máme tady zlodêjskej cech. Jako v kadım vêtším mêstê.
-	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_03"); //A kadej malej zlodêjíèek nebo šmelináâ je s ní nêjak propojenej.
+	AI_Output (other, self, "DIA_Lares_GuildOfThieves_15_00"); //VÃ­Å¡ nÄ™co o zlodÄ™jskÃ©m cechu ve mÄ™stÄ™?
+	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_01"); //Ty tvoje otÃ¡zky...
+	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_02"); //SamozÃ¢ejmÄ™, mÃ¡me tady zlodÄ™jskej cech. Jako v kaÅ¾dÃ½m vÄ™tÅ¡Ã­m mÄ™stÄ™.
+	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_03"); //A kaÅ¾dej malej zlodÄ™jÃ­Äek nebo Å¡melinÃ¡Ã¢ je s nÃ­ nÄ™jak propojenej.
 };	
 // ------------------------------------------------------------
 // Wo finden?
@@ -1269,7 +1269,7 @@ instance DIA_Lares_WhereGuildOfThieves (C_INFO)
 	condition	 = 	DIA_Lares_WhereGuildOfThieves_Condition;
 	information	 = 	DIA_Lares_WhereGuildOfThieves_Info;
 	permanent    =  FALSE;
-	description	 = 	"Víš, kde bych ten cech našel?";
+	description	 = 	"VÃ­Å¡, kde bych ten cech naÅ¡el?";
 };
 func int DIA_Lares_WhereGuildOfThieves_Condition ()
 {	
@@ -1281,13 +1281,13 @@ func int DIA_Lares_WhereGuildOfThieves_Condition ()
 };
 func void DIA_Lares_WhereGuildOfThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_WhereGuildOfThieves_15_00"); //Víš, kde bych ten cech našel?
-	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_01"); //(smích) Bez uráky, ale vím jen to, e ti nesmím nic âíct.
-	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_02"); //Tihle lidé na takové vêci vêtšinou reagují VELMI citlivê.
-	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_03"); //Jestli se s nima chceš zaplést, mêl bys bıt hodnê opatrnı.
+	AI_Output (other, self, "DIA_Lares_WhereGuildOfThieves_15_00"); //VÃ­Å¡, kde bych ten cech naÅ¡el?
+	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_01"); //(smÃ­ch) Bez urÃ¡Å¾ky, ale vÃ­m jen to, Å¾e ti nesmÃ­m nic Ã¢Ã­ct.
+	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_02"); //Tihle lidÃ© na takovÃ© vÄ™ci vÄ™tÅ¡inou reagujÃ­ VELMI citlivÄ™.
+	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_03"); //Jestli se s nima chceÅ¡ zaplÃ©st, mÄ™l bys bÃ½t hodnÄ™ opatrnÃ½.
 };
 // ------------------------------------------------------------
-// Meersalz Schlüssel
+// Meersalz SchlÃ¼ssel
 // ------------------------------------------------------------
 instance DIA_Lares_GotKey (C_INFO)
 {
@@ -1296,7 +1296,7 @@ instance DIA_Lares_GotKey (C_INFO)
 	condition	 = 	DIA_Lares_GotKey_Condition;
 	information	 = 	DIA_Lares_GotKey_Info;
 	permanent    =  FALSE;
-	description	 = 	"Mám tady tenhle klíè. Je celej zrezlej od moâskı vody...";
+	description	 = 	"MÃ¡m tady tenhle klÃ­Ä. Je celej zrezlej od moÃ¢skÃ½ vody...";
 };
 func int DIA_Lares_GotKey_Condition ()
 {	
@@ -1309,10 +1309,10 @@ func int DIA_Lares_GotKey_Condition ()
 };
 func void DIA_Lares_GotKey_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_GotKey_15_00"); //Mám tady tenhle klíè. Je celej zrezlej od moâskı vody.
-	AI_Output (self, other, "DIA_Lares_GotKey_09_01"); //Take?
-	AI_Output (other,self, "DIA_Lares_GotKey_15_02"); //Mám dojem, e by mê mohl dovést k úkrytu zlodêjskıho cechu.
-	AI_Output (self, other, "DIA_Lares_GotKey_09_03"); //Fajn, to by moh bejt klíè od stok.
+	AI_Output (other, self, "DIA_Lares_GotKey_15_00"); //MÃ¡m tady tenhle klÃ­Ä. Je celej zrezlej od moÃ¢skÃ½ vody.
+	AI_Output (self, other, "DIA_Lares_GotKey_09_01"); //TakÅ¾e?
+	AI_Output (other,self, "DIA_Lares_GotKey_15_02"); //MÃ¡m dojem, Å¾e by mÄ™ mohl dovÃ©st k Ãºkrytu zlodÄ™jskÃ½ho cechu.
+	AI_Output (self, other, "DIA_Lares_GotKey_09_03"); //Fajn, to by moh bejt klÃ­Ä od stok.
 };
 // ------------------------------------------------------------
 // Kanalisation
@@ -1337,11 +1337,11 @@ func int DIA_Lares_Kanalisation_Condition ()
 func void DIA_Lares_Kanalisation_Info ()
 {
 	AI_Output (other,self, "DIA_Lares_Kanalisation_15_00"); //Kde najdu ty stoky?
-	AI_Output (self, other, "DIA_Lares_Kanalisation_09_01"); //Co já vím... vêtšinou ústí do moâe.
+	AI_Output (self, other, "DIA_Lares_Kanalisation_09_01"); //Co jÃ¡ vÃ­m... vÄ™tÅ¡inou ÃºstÃ­ do moÃ¢e.
 };
 
 // ************************************************************
-// 		  			Important für andere Gilden
+// 		  			Important fÃ¼r andere Gilden
 // ************************************************************
 instance DIA_Lares_OtherGuild (C_INFO)
 {
@@ -1368,36 +1368,36 @@ func void DIA_Lares_OtherGuild_Info ()
 	{
 		if (other.guild == GIL_MIL)
 		{
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_00"); //Ty jsi teë v domobranê!
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_01"); //(smích) To mê podr - bejvalej trestanec v domobranê...
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_00"); //Ty jsi teÃ« v domobranÄ™!
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_01"); //(smÃ­ch) To mÄ™ podrÅ¾ - bejvalej trestanec v domobranÄ™...
 		}
 		else //GIL_PAL
 		{
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_02"); //Tak ty seš teë jedním z královskıch paladinù!
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_02"); //Tak ty seÅ¡ teÃ« jednÃ­m z krÃ¡lovskÃ½ch paladinÅ¯!
 		};
 	
-		AI_Output (self, other, "DIA_Lares_OtherGuild_09_03"); //(uliènicky) Nêco takovıho mùeš províst jenom ty.
+		AI_Output (self, other, "DIA_Lares_OtherGuild_09_03"); //(uliÄnicky) NÄ™co takovÃ½ho mÅ¯Å¾eÅ¡ provÃ­st jenom ty.
 	
 		if (Lares_WorkForLee == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_04"); //(starostlivê) Nepráskneš mê kvùli mojí spolupráci s Leem?
-			AI_Output (other,self , "DIA_Lares_OtherGuild_15_05"); //Však mê znáš...
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_04"); //(starostlivÄ™) NeprÃ¡skneÅ¡ mÄ™ kvÅ¯li mojÃ­ spoluprÃ¡ci s Leem?
+			AI_Output (other,self , "DIA_Lares_OtherGuild_15_05"); //VÅ¡ak mÄ™ znÃ¡Å¡...
 		};
 	};
 	
 	if (other.guild == GIL_KDF) 
 	|| (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Lares_OtherGuild_09_06"); //Nerozumím tomu. Vstoupil jsi do kláštera. Jaké to tam je?
-		AI_Output (other,self , "DIA_Lares_OtherGuild_15_07"); //Jiné.
-		AI_Output (self, other, "DIA_Lares_OtherGuild_09_08"); //Nedovedu si to pâedstavit.
+		AI_Output (self, other, "DIA_Lares_OtherGuild_09_06"); //NerozumÃ­m tomu. Vstoupil jsi do klÃ¡Å¡tera. JakÃ© to tam je?
+		AI_Output (other,self , "DIA_Lares_OtherGuild_15_07"); //JinÃ©.
+		AI_Output (self, other, "DIA_Lares_OtherGuild_09_08"); //Nedovedu si to pÃ¢edstavit.
 	};
 		
 	if (other.guild == GIL_SLD) 
 	|| (other.guild == GIL_DJG)
 	{
-		//AI_Output (self, other, "DIA_Lares_OtherGuild_09_09"); //Ich hab gehört, du bist aufgenommen worden.
-		AI_Output (self, other, "DIA_Addon_Lares_OtherGuild_09_00"); //Prı tê pâijali k Leemu.
+		//AI_Output (self, other, "DIA_Lares_OtherGuild_09_09"); //Ich hab gehÃ¶rt, du bist aufgenommen worden.
+		AI_Output (self, other, "DIA_Addon_Lares_OtherGuild_09_00"); //PrÃ½ tÄ™ pÃ¢ijali k Leemu.
 		AI_Output (self, other, "DIA_Lares_OtherGuild_09_10"); //Gratuluju.
 	};
 };
@@ -1416,7 +1416,7 @@ instance DIA_Addon_Lares_Forest (C_INFO)
 	condition	 = 	DIA_Addon_Lares_Forest_Condition;
 	information	 = 	DIA_Addon_Lares_Forest_Info;
 
-	description	 = 	"Pomohl bys mi projít têmi houštinami na vıchodê?";
+	description	 = 	"Pomohl bys mi projÃ­t tÄ™mi houÅ¡tinami na vÃ½chodÄ™?";
 };
 func int DIA_Addon_Lares_Forest_Condition ()
 {	
@@ -1428,12 +1428,12 @@ func int DIA_Addon_Lares_Forest_Condition ()
 
 func void DIA_Addon_Lares_Forest_info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_00"); //Nepomohl bys mi projít pâes ty husté lesy na vıchodê.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_01"); //Klidnê, ale proè tam chceš jít?
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_02"); //Nefarius mi nakázal najít další ornamenty.
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_03"); //A jedno z míst, kde mám hledat, by mêlo bıt právê uprostâed têch hvozdù.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_04"); //Chápu. A pro jednoho je taková cesta moc nebezpeèná, co?
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_05"); //Tak fajn, jen mi dej vêdêt, a budeš chtít vyrazit.
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_00"); //Nepomohl bys mi projÃ­t pÃ¢es ty hustÃ© lesy na vÃ½chodÄ™.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_01"); //KlidnÄ™, ale proÄ tam chceÅ¡ jÃ­t?
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_02"); //Nefarius mi nakÃ¡zal najÃ­t dalÅ¡Ã­ ornamenty.
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_03"); //A jedno z mÃ­st, kde mÃ¡m hledat, by mÄ™lo bÃ½t prÃ¡vÄ™ uprostÃ¢ed tÄ™ch hvozdÅ¯.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_04"); //ChÃ¡pu. A pro jednoho je takovÃ¡ cesta moc nebezpeÄnÃ¡, co?
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_05"); //Tak fajn, jen mi dej vÄ™dÄ™t, aÅ¾ budeÅ¡ chtÃ­t vyrazit.
 
 	RangerHelp_OrnamentForest = TRUE;
 };
@@ -1469,7 +1469,7 @@ func int DIA_Lares_GoNow_Condition ()
 
 func void DIA_Lares_GoNow_GoingConditions ()
 {	
- 	AI_Output (self, other, "DIA_Lares_GoNow_09_01"); //Tak jdeme... Pojë za mnou.
+ 	AI_Output (self, other, "DIA_Lares_GoNow_09_01"); //Tak jdeme... PojÃ« za mnou.
 	AI_StopProcessInfos (self);
 	
 	Lares_Guide = Wld_GetDay();
@@ -1487,9 +1487,9 @@ func void DIA_Lares_GoNow_Info ()
 	
 	if (Lares_CanBringScToPlaces == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_03"); //Nemùu odsud odejít, dokud nezjistíme víc o têch zmizelıch lidech, nebo pokud mê tu nêkdo nevystâídá.
+		AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_03"); //NemÅ¯Å¾u odsud odejÃ­t, dokud nezjistÃ­me vÃ­c o tÄ™ch zmizelÃ½ch lidech, nebo pokud mÄ™ tu nÄ™kdo nevystÃ¢Ã­dÃ¡.
 	}
-	else if (MIS_Addon_Lares_ComeToRangerMeeting == LOG_RUNNING) //bleibt am Hafen während RangerMeeting
+	else if (MIS_Addon_Lares_ComeToRangerMeeting == LOG_RUNNING) //bleibt am Hafen wÃ¤hrend RangerMeeting
 	{
 		B_Lares_Geheimtreffen();
 	}
@@ -1503,24 +1503,24 @@ func void DIA_Lares_GoNow_Info ()
 		
 			if (Lares_WayToOnar == TRUE)
 			{
-				Info_AddChoice	(DIA_Lares_GoNow, "Na Onarùv statek.", DIA_Lares_GoNow_Onar );
+				Info_AddChoice	(DIA_Lares_GoNow, "Na OnarÅ¯v statek.", DIA_Lares_GoNow_Onar );
 			};
 		
 			if ((MIS_Addon_Lares_Ornament2Saturas == LOG_RUNNING) && (Lares_Angekommen == FALSE))
 			{
-				Info_AddChoice	(DIA_Lares_GoNow, "Pojëme odevzdat ten Vatrasùv ornament.", DIA_Lares_GoNow_Maya );
+				Info_AddChoice	(DIA_Lares_GoNow, "PojÃ«me odevzdat ten VatrasÅ¯v ornament.", DIA_Lares_GoNow_Maya );
 			};
 			
 			if ((ORNAMENT_SWITCHED_FOREST == FALSE) && (LaresGuide_OrnamentForest == 0) && (RangerHelp_OrnamentForest == TRUE))
 			{
-				Info_AddChoice	(DIA_Lares_GoNow, "Do hustého lesa na vıchodê.", DIA_Lares_GoNow_Forest );
+				Info_AddChoice	(DIA_Lares_GoNow, "Do hustÃ©ho lesa na vÃ½chodÄ™.", DIA_Lares_GoNow_Forest );
 			};
 	};		
 };
 
 func void DIA_Lares_GoNow_Maya ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Maya_15_00"); //Tak pojëme Vatrasovi vrátit ten ornament.
+	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Maya_15_00"); //Tak pojÃ«me Vatrasovi vrÃ¡tit ten ornament.
 	LaresGuide_ZumPortal = 1;
 	Npc_ExchangeRoutine (self, "GUIDEPORTALTEMPEL1");
 	DIA_Lares_GoNow_GoingConditions(); 
@@ -1528,7 +1528,7 @@ func void DIA_Lares_GoNow_Maya ()
 
 func void DIA_Lares_GoNow_Onar ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Onar_15_00"); //Na Onarùv statek.
+	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Onar_15_00"); //Na OnarÅ¯v statek.
 	LaresGuide_ZuOnar = TRUE;
 	Npc_ExchangeRoutine (self, "GUIDE");
 	DIA_Lares_GoNow_GoingConditions(); 
@@ -1536,7 +1536,7 @@ func void DIA_Lares_GoNow_Onar ()
 
 func void DIA_Lares_GoNow_Forest ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Forest_15_00"); //Do hustého lesa na vıchodê.
+	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Forest_15_00"); //Do hustÃ©ho lesa na vÃ½chodÄ™.
 	LaresGuide_OrnamentForest = 1;
 	Npc_ExchangeRoutine (self, "GUIDEMEDIUMWALD1");
 	DIA_Lares_GoNow_GoingConditions(); 
@@ -1575,10 +1575,10 @@ func void DIA_Lares_GUIDE_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lares_GUIDE_09_01"); //Tak tady jsi. U jsem si zaèínal myslet, e tê serali vlci.
+		AI_Output (self, other, "DIA_Lares_GUIDE_09_01"); //Tak tady jsi. UÅ¾ jsem si zaÄÃ­nal myslet, Å¾e tÄ™ seÅ¾rali vlci.
 	};
-	AI_Output (self, other, "DIA_Lares_GUIDE_09_02"); //Take dál u trefíš sám. Musím se vrátit do mêsta, mám tam ještê nêjaké vyâizování.
-	AI_Output (self, other, "DIA_Lares_GUIDE_09_03"); //Prostê pokraèuj po téhle cestê dál a pamatuj - va si sám sebe a nepodêlej se z kadı blbosti, pak to pro tebe bude hraèka.
+	AI_Output (self, other, "DIA_Lares_GUIDE_09_02"); //TakÅ¾e dÃ¡l uÅ¾ trefÃ­Å¡ sÃ¡m. MusÃ­m se vrÃ¡tit do mÄ™sta, mÃ¡m tam jeÅ¡tÄ™ nÄ™jakÃ© vyÃ¢izovÃ¡nÃ­.
+	AI_Output (self, other, "DIA_Lares_GUIDE_09_03"); //ProstÄ™ pokraÄuj po tÃ©hle cestÄ™ dÃ¡l a pamatuj - vaÅ¾ si sÃ¡m sebe a nepodÄ™lej se z kaÅ¾dÃ½ blbosti, pak to pro tebe bude hraÄka.
 	
 	AI_StopProcessInfos (self);
 	
@@ -1613,12 +1613,12 @@ func int DIA_Addon_Lares_ArrivedPortalInter1_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_Info ()
 {
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_00"); //Teë, kdy jsme venku z mêsta a nikdo nás nemùe slyšet, vysvêtlím ti to trochu blí.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_01"); //Ten ornament, kterı jsi mi dal, teë odneseme Saturasovi. Pamatuješ se na Saturase, ne?
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_00"); //TeÃ«, kdyÅ¾ jsme venku z mÄ™sta a nikdo nÃ¡s nemÅ¯Å¾e slyÅ¡et, vysvÄ™tlÃ­m ti to trochu blÃ­Å¾.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_01"); //Ten ornament, kterÃ½ jsi mi dal, teÃ« odneseme Saturasovi. PamatujeÅ¡ se na Saturase, ne?
 	
 	
 	Info_ClearChoices	(DIA_Addon_Lares_ArrivedPortalInter1);
-	Info_AddChoice	(DIA_Addon_Lares_ArrivedPortalInter1, "Jasnê.", DIA_Addon_Lares_ArrivedPortalInter1_ja );
+	Info_AddChoice	(DIA_Addon_Lares_ArrivedPortalInter1, "JasnÄ™.", DIA_Addon_Lares_ArrivedPortalInter1_ja );
 	Info_AddChoice	(DIA_Addon_Lares_ArrivedPortalInter1, "Saturas? Kdo je to?", DIA_Addon_Lares_ArrivedPortalInter1_wer );
 
 	LaresGuide_ZumPortal = 2;
@@ -1626,33 +1626,33 @@ func void DIA_Addon_Lares_ArrivedPortalInter1_Info ()
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_teil2 ()
 {
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_00"); //My chlapi z Novıho tábora máme poâád dobrı vztahy s vodními mágy.
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_01"); //Dokonce i Lee se je doteëka snaí chránit, jak mùe, aby je nepotkalo nic zlıho.
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_02"); //Já musím bıt s vodními mágy poâád v kontaktu, proto jsem taky vêtšinou ve mêstê a spolupracuju s Vatrasem.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_00"); //My chlapi z NovÃ½ho tÃ¡bora mÃ¡me poÃ¢Ã¡d dobrÃ½ vztahy s vodnÃ­mi mÃ¡gy.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_01"); //Dokonce i Lee se je doteÃ«ka snaÅ¾Ã­ chrÃ¡nit, jak mÅ¯Å¾e, aby je nepotkalo nic zlÃ½ho.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_02"); //JÃ¡ musÃ­m bÃ½t s vodnÃ­mi mÃ¡gy poÃ¢Ã¡d v kontaktu, proto jsem taky vÄ™tÅ¡inou ve mÄ™stÄ™ a spolupracuju s Vatrasem.
 	B_MakeRangerReadyForMeeting (self);
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03"); //A tohle je zbroj, kterou nám všem dali vodní mágové. Prı takovı brnêní nosili èlenové kruhu vody ještê pâed válkama se skâety.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03"); //A tohle je zbroj, kterou nÃ¡m vÅ¡em dali vodnÃ­ mÃ¡govÃ©. PrÃ½ takovÃ½ brnÄ™nÃ­ nosili ÄlenovÃ© kruhu vody jeÅ¡tÄ™ pÃ¢ed vÃ¡lkama se skÃ¢ety.
 	
 	if (Cavalorn_RangerHint == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_15_04"); //Jak je do toho všeho zapletenı Cavalorn? Pokud vím, tak ten do Nového tábora nepatâil.
-		AI_Output (self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_05"); //Máš pravdu, naše komunita se rozrostla. Dokonce ani já u nevím, kolik nás vlastnê je.
+		AI_Output (other, self, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_15_04"); //Jak je do toho vÅ¡eho zapletenÃ½ Cavalorn? Pokud vÃ­m, tak ten do NovÃ©ho tÃ¡bora nepatÃ¢il.
+		AI_Output (self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_05"); //MÃ¡Å¡ pravdu, naÅ¡e komunita se rozrostla. Dokonce ani jÃ¡ uÅ¾ nevÃ­m, kolik nÃ¡s vlastnÄ™ je.
 	};
 
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_06"); //Ale teë se pohnême. Chci se dostat dál od mêsta a pak si mùeme âíct víc.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_06"); //Ale teÃ« se pohnÄ™me. Chci se dostat dÃ¡l od mÄ™sta a pak si mÅ¯Å¾eme Ã¢Ã­ct vÃ­c.
 	Info_ClearChoices	(DIA_Addon_Lares_ArrivedPortalInter1);
 };
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_wer ()
 {
 	AI_Output			(other, self, "DIA_Addon_Lares_ArrivedPortalInter1_wer_15_00"); //Saturasovi? Kdo je to?
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_wer_09_01"); //V Novém táboâe bıval hlavním mágem vody, ještê kdy Hornické údolí obklopovala bariéra.
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_wer_09_02"); //Tenkrát jsme se s Leem spâáhli s vodními mágy. Pak jsme byli dost silní, abysme se ubránili Starému táboru.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_wer_09_01"); //V NovÃ©m tÃ¡boÃ¢e bÃ½val hlavnÃ­m mÃ¡gem vody, jeÅ¡tÄ™ kdyÅ¾ HornickÃ© ÃºdolÃ­ obklopovala bariÃ©ra.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_wer_09_02"); //TenkrÃ¡t jsme se s Leem spÃ¢Ã¡hli s vodnÃ­mi mÃ¡gy. Pak jsme byli dost silnÃ­, abysme se ubrÃ¡nili StarÃ©mu tÃ¡boru.
 	DIA_Addon_Lares_ArrivedPortalInter1_teil2 ();
 };
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_ArrivedPortalInter1_ja_15_00"); //Samozâejmê, bıval hlavním vodním mágem v Novém táboâe.
+	AI_Output			(other, self, "DIA_Addon_Lares_ArrivedPortalInter1_ja_15_00"); //SamozÃ¢ejmÄ™, bÃ½val hlavnÃ­m vodnÃ­m mÃ¡gem v NovÃ©m tÃ¡boÃ¢e.
 	DIA_Addon_Lares_ArrivedPortalInter1_teil2 ();
 };
 
@@ -1681,14 +1681,14 @@ func int DIA_Addon_Lares_ArrivedPortalInterWeiter_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInterWeiter_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_00"); //Co se dêje? Proè poâád váháš?
+	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_00"); //Co se dÄ™je? ProÄ poÃ¢Ã¡d vÃ¡hÃ¡Å¡?
 	
 	if (MIS_Addon_Erol_BanditStuff == LOG_RUNNING)
 	&& ((Npc_GetDistToWP(Erol,"NW_TAVERN_TO_FOREST_03")<1000))
 	&& ((Npc_IsDead(Erol))==FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Lares_ArrivedPortalInterWeiter_15_01"); //Tamhle ten chlap má problémy s bandity.
-		AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_02"); //(jízlivê) Tak to má smùlu, ale my na to teë nemáme èas.
+		AI_Output	(other, self, "DIA_Addon_Lares_ArrivedPortalInterWeiter_15_01"); //Tamhle ten chlap mÃ¡ problÃ©my s bandity.
+		AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_02"); //(jÃ­zlivÄ™) Tak to mÃ¡ smÅ¯lu, ale my na to teÃ« nemÃ¡me Äas.
 	};
 	
 	LaresGuide_ZumPortal = 3;
@@ -1748,14 +1748,14 @@ func int DIA_Addon_Lares_ArrivedPortalInter2_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInter2_Info ()
 {
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_00"); //Mágové vody jsou celí bez sebe. U pár tıdnù makaj na vykopávkách na severovıchodê, ale nikdo netuší, co se tam vlastnê snaí najít.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_01"); //Všechno to zaèalo, kdy se zemê zaèala tâást, jako to bıvalo v nejhorších dobách bariéry.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_02"); //Ze zemê vylízaj dêsnı kamennı potvory a zabijou kadıho, kdo se nachomıtne na 100 stop od nich.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_03"); //Vodní mágové se toho chopili a všecky ty nepâátelskı útoèníky znièili. A teë tam kopou a hledají pro všechny ty podivnosti nêjakı vysvêtlení.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_04"); //Ale to brzo uvidíš sám.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_00"); //MÃ¡govÃ© vody jsou celÃ­ bez sebe. UÅ¾ pÃ¡r tÃ½dnÅ¯ makaj na vykopÃ¡vkÃ¡ch na severovÃ½chodÄ™, ale nikdo netuÅ¡Ã­, co se tam vlastnÄ™ snaÅ¾Ã­ najÃ­t.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_01"); //VÅ¡echno to zaÄalo, kdyÅ¾ se zemÄ™ zaÄala tÃ¢Ã¡st, jako to bÃ½valo v nejhorÅ¡Ã­ch dobÃ¡ch bariÃ©ry.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_02"); //Ze zemÄ™ vylÃ­zaj dÄ™snÃ½ kamennÃ½ potvory a zabijou kaÅ¾dÃ½ho, kdo se nachomÃ½tne na 100 stop od nich.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_03"); //VodnÃ­ mÃ¡govÃ© se toho chopili a vÅ¡ecky ty nepÃ¢Ã¡telskÃ½ ÃºtoÄnÃ­ky zniÄili. A teÃ« tam kopou a hledajÃ­ pro vÅ¡echny ty podivnosti nÄ™jakÃ½ vysvÄ™tlenÃ­.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_04"); //Ale to brzo uvidÃ­Å¡ sÃ¡m.
 
 	LaresGuide_ZumPortal = 5;
-	B_LogEntry (TOPIC_Addon_KDW,"Lares mi vyprávêl o vykopávkách, které mají na svêdomí vodní mágové. Snaí se objasnit nêjaké podivné události - tajemná zemêtâesení a záhadné kamenné obludy, které povstávají pâímo ze zemê."); 
+	B_LogEntry (TOPIC_Addon_KDW,"Lares mi vyprÃ¡vÄ™l o vykopÃ¡vkÃ¡ch, kterÃ© majÃ­ na svÄ™domÃ­ vodnÃ­ mÃ¡govÃ©. SnaÅ¾Ã­ se objasnit nÄ™jakÃ© podivnÃ© udÃ¡losti - tajemnÃ¡ zemÄ™tÃ¢esenÃ­ a zÃ¡hadnÃ© kamennÃ© obludy, kterÃ© povstÃ¡vajÃ­ pÃ¢Ã­mo ze zemÄ™."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1783,7 +1783,7 @@ func int DIA_Addon_Lares_ArrivedPortalInterWeiter3_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInterWeiter3_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter3_09_00"); //Mùeš ještê pokraèovat.
+	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter3_09_00"); //MÅ¯Å¾eÅ¡ jeÅ¡tÄ™ pokraÄovat.
 	LaresGuide_ZumPortal = 6;
 };
 
@@ -1812,7 +1812,7 @@ func int DIA_Addon_Lares_ArrivedPortalInterWeiter4_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInterWeiter4_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter4_09_00"); //Jo, tady u to mùe bejt nebezpeènı.
+	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter4_09_00"); //Jo, tady uÅ¾ to mÅ¯Å¾e bejt nebezpeÄnÃ½.
 	LaresGuide_ZumPortal = 7;
 };
 
@@ -1841,14 +1841,14 @@ func void DIA_Addon_Lares_ArrivedPortal_Info ()
 {
 	B_MakeRangerReadyToLeaveMeeting (self);
 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_00"); //Tak jsme tu.
- 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_01"); //Tumáš, vezmi si ten ornament. Vodní mágové musí bıt nêkde tady. Tak jim ho dej.
+ 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_01"); //TumÃ¡Å¡, vezmi si ten ornament. VodnÃ­ mÃ¡govÃ© musÃ­ bÃ½t nÄ™kde tady. Tak jim ho dej.
 	B_GiveInvItems (self, other, ItMi_Ornament_Addon_Vatras, 1);					
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_02"); //Kdybys v tı díâe narazil na nêjakı potvory, na kterı bys nestaèil, utíkej smêrem k Saturasovi.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_03"); //On je za tebe vyâídí. Já u se musím vrátit.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_04"); //Jo, ještê nêco: aã tê ani nenapadne, e by ses tu delší dobu promenádoval s tím ornamentem. Bê PÂÍMO za Saturasem.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_05"); //Mêj se.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_02"); //Kdybys v tÃ½ dÃ­Ã¢e narazil na nÄ™jakÃ½ potvory, na kterÃ½ bys nestaÄil, utÃ­kej smÄ™rem k Saturasovi.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_03"); //On je za tebe vyÃ¢Ã­dÃ­. JÃ¡ uÅ¾ se musÃ­m vrÃ¡tit.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_04"); //Jo, jeÅ¡tÄ™ nÄ™co: aÄƒ tÄ™ ani nenapadne, Å¾e by ses tu delÅ¡Ã­ dobu promenÃ¡doval s tÃ­m ornamentem. BÄ™Å¾ PÃ‚ÃMO za Saturasem.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_05"); //MÄ™j se.
 	
-	B_LogEntry (TOPIC_Addon_KDW,"Lares mi pâedal tento ornament. Mám jej donést vodnímu mágovi Saturasovi."); 
+	B_LogEntry (TOPIC_Addon_KDW,"Lares mi pÃ¢edal tento ornament. MÃ¡m jej donÃ©st vodnÃ­mu mÃ¡govi Saturasovi."); 
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine (self,"START");
@@ -1879,7 +1879,7 @@ func int DIA_Addon_Lares_Albern_Condition ()
 };
 func void DIA_Addon_Lares_Albern_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Lares_Albern_09_00"); //(ostâe) Pâestaà se tu poflakovat a koukej Saturasovi donést ten ornament!
+	AI_Output (self, other, "DIA_Addon_Lares_Albern_09_00"); //(ostÃ¢e) PÃ¢estaÅ• se tu poflakovat a koukej Saturasovi donÃ©st ten ornament!
 	AI_StopProcessInfos (self);
 };
 
@@ -1908,17 +1908,17 @@ func void DIA_Addon_Lares_GOFORESTPRE_ja ()
 {
 	B_MakeRangerReadyForMeeting (self);
 	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_ja_15_00"); //Ano.
-	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_ja_09_01"); //Tak fajn, kamaráde. Pojë za mnou, pùjde do tuhıho.
+	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_ja_09_01"); //Tak fajn, kamarÃ¡de. PojÃ« za mnou, pÅ¯jde do tuhÃ½ho.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"GUIDEMEDIUMWALD2");
 	LaresGuide_OrnamentForest = 2; 
 };
 func void DIA_Addon_Lares_GOFORESTPRE_nein ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_nein_15_00"); //Ne. Mùeš jít.
-	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_nein_09_01"); //Myslíš, e se to všecko vyâeší samo? No tak dobrá, mêj se!
+	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_nein_15_00"); //Ne. MÅ¯Å¾eÅ¡ jÃ­t.
+	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_nein_09_01"); //MyslÃ­Å¡, Å¾e se to vÅ¡ecko vyÃ¢eÅ¡Ã­ samo? No tak dobrÃ¡, mÄ™j se!
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine (self,"Zaèít");
+	Npc_ExchangeRoutine (self,"ZaÄÃ­t");
 	LaresGuide_OrnamentForest = 3; //Joly: Schluss mit Guide
 };
 
@@ -1926,14 +1926,14 @@ func void DIA_Addon_Lares_GOFORESTPRE_Info ()
 {
 	if (ORNAMENT_SWITCHED_FOREST == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_09_00"); //Ještê poâád bys chtêl se mnou vyrazit do toho lesa?
+		AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_09_00"); //JeÅ¡tÄ™ poÃ¢Ã¡d bys chtÄ™l se mnou vyrazit do toho lesa?
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_09_01"); //Pâemıšlel jsi o tom, e vyrazíme do lesa? Opravdu to chceš udêlat?
+		AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_09_01"); //PÃ¢emÃ½Å¡lel jsi o tom, Å¾e vyrazÃ­me do lesa? Opravdu to chceÅ¡ udÄ™lat?
  	};
 	Info_ClearChoices	(DIA_Addon_Lares_GOFORESTPRE);
-	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "Ne. Mùeš jít.", DIA_Addon_Lares_GOFORESTPRE_nein );
+	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "Ne. MÅ¯Å¾eÅ¡ jÃ­t.", DIA_Addon_Lares_GOFORESTPRE_nein );
 	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "Ano.", DIA_Addon_Lares_GOFORESTPRE_ja );
 };
 
@@ -1975,7 +1975,7 @@ func void DIA_Addon_Lares_GOFOREST_Info ()
 	if (ORNAMENT_SWITCHED_FOREST == TRUE)
 	{	
 		B_MakeRangerReadyToLeaveMeeting (self);
-		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_00"); //Tak, zbytek u bys mêl zvládnout sám. Já jdu zpátky.
+		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_00"); //Tak, zbytek uÅ¾ bys mÄ™l zvlÃ¡dnout sÃ¡m. JÃ¡ jdu zpÃ¡tky.
 	 	AI_StopProcessInfos (self);
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine (self,"START");
@@ -1983,7 +1983,7 @@ func void DIA_Addon_Lares_GOFOREST_Info ()
  	}
  	else
  	{
-		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_01"); //Pospêš si, nechci tu zùstávat ani o chvilku dıl, ne musím.
+		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_01"); //PospÄ™Å¡ si, nechci tu zÅ¯stÃ¡vat ani o chvilku dÃ½l, neÅ¾ musÃ­m.
 	 	AI_StopProcessInfos (self);
  	};
 };
@@ -2015,22 +2015,22 @@ func void DIA_Addon_Lares_PortalInterWEITER_Info ()
 {
 	if (LaresGuide_ZumPortal == 4)
 	{
-		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_00"); //Pâestaà plácat nesmysly.
+		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_00"); //PÃ¢estaÅ• plÃ¡cat nesmysly.
 	}
 	else if (LaresGuide_ZumPortal == 6)
 	{
-		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_01"); //(naštvanê) Jo, jo.
+		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_01"); //(naÅ¡tvanÄ™) Jo, jo.
 	};
 
 	AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_02"); //Tak jdeme.
 	
 	if (LaresGuide_ZumPortal == 7)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_PortalInterWEITER_09_03"); //Dr se trochu dál.
+		AI_Output	(self, other, "DIA_Addon_Lares_PortalInterWEITER_09_03"); //DrÅ¾ se trochu dÃ¡l.
 	}
 	else 
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_PortalInterWEITER_09_04"); //Dr se za mnou.
+		AI_Output	(self, other, "DIA_Addon_Lares_PortalInterWEITER_09_04"); //DrÅ¾ se za mnou.
 	};
 		
 	AI_StopProcessInfos (self);
@@ -2074,7 +2074,7 @@ instance DIA_Lares_DEX		(C_INFO)
 	condition	 = 	DIA_Lares_DEX_Condition;
 	information	 = 	DIA_Lares_DEX_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Mùeš mê nêèemu nauèit?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 func int DIA_Lares_DEX_Condition ()
 {	
@@ -2082,13 +2082,13 @@ func int DIA_Lares_DEX_Condition ()
 };
 func void DIA_Lares_DEX_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_DEX_15_00"); //Mùeš mê nêèemu nauèit?
-	AI_Output (self, other, "DIA_Addon_Lares_DEX_Add_09_01"); //Jasnê. Kdy budeš chtít, mùu ti vysvêtlit, jak se stát silnêjším a obratnêjším.
+	AI_Output (other, self, "DIA_Lares_DEX_15_00"); //MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?
+	AI_Output (self, other, "DIA_Addon_Lares_DEX_Add_09_01"); //JasnÄ™. KdyÅ¾ budeÅ¡ chtÃ­t, mÅ¯Å¾u ti vysvÄ™tlit, jak se stÃ¡t silnÄ™jÅ¡Ã­m a obratnÄ™jÅ¡Ã­m.
 
 	Lares_TeachDEX = TRUE;
 	
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Lares mi pomùe zlepšit sílu a obratnost.");
+	B_LogEntry (Topic_CityTeacher,"Lares mi pomÅ¯Å¾e zlepÅ¡it sÃ­lu a obratnost.");
 };
 // ------------------------------------------------------------
 // 			  				   TEACH 
@@ -2103,7 +2103,7 @@ instance DIA_Lares_TEACH		(C_INFO)
 	condition	 = 	DIA_Lares_TEACH_Condition;
 	information	 = 	DIA_Lares_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Mùeš mê nêèemu nauèit?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ™ nÄ™Äemu nauÄit?";
 };
 func int DIA_Lares_TEACH_Condition ()
 {	
@@ -2115,7 +2115,7 @@ func int DIA_Lares_TEACH_Condition ()
 func void DIA_Lares_TEACH_Info ()
 {
 	//AI_Output (other, self, "DIA_Lares_TEACH_15_00"); //Ich will geschickter werden!
-	AI_Output (other,self ,"DIA_Addon_Lares_Teach_15_00"); //Nauè mê nêco.
+	AI_Output (other,self ,"DIA_Addon_Lares_Teach_15_00"); //NauÄ mÄ™ nÄ™co.
 	
 	Lares_MerkeDEX = other.attribute[ATR_DEXTERITY];
 	Lares_MerkeSTR = other.attribute[ATR_STRENGTH];
@@ -2131,11 +2131,11 @@ func void DIA_Lares_TEACH_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] > Lares_MerkeDEX)
 	{
-		AI_Output (self, other, "DIA_Lares_TEACH_BACK_09_00"); //Zase jsi o nêco obratnêjší.
+		AI_Output (self, other, "DIA_Lares_TEACH_BACK_09_00"); //Zase jsi o nÄ™co obratnÄ™jÅ¡Ã­.
 	};
 	if (other.attribute[ATR_STRENGTH] > Lares_MerkeSTR)
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_TEACH_BACK_Add_09_00"); //(odhaduje) Dobâe. Zesílil jsi.
+		AI_Output (self, other, "DIA_Addon_Lares_TEACH_BACK_Add_09_00"); //(odhaduje) DobÃ¢e. ZesÃ­lil jsi.
 	};
 	
 	Info_ClearChoices (DIA_Lares_TEACH);
@@ -2256,7 +2256,7 @@ INSTANCE DIA_Lares_AnyNews(C_INFO)
 	condition	= DIA_Lares_AnyNews_Condition;
 	information	= DIA_Lares_AnyNews_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 FUNC INT DIA_Lares_AnyNews_Condition()
 {
@@ -2267,26 +2267,26 @@ FUNC INT DIA_Lares_AnyNews_Condition()
 };
 FUNC VOID DIA_Lares_AnyNews_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_AnyNews_15_00"); //Co je nového?
+	AI_Output (other,self ,"DIA_Lares_AnyNews_15_00"); //Co je novÃ©ho?
 	if (MIS_RescueBennet == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Lares_AnyNews_09_01"); //Za ty nejlepší zprávy mùeš ty sám. Nechali Benneta jít, je zpátky na farmê.
-		AI_Output (self ,other,"DIA_Lares_AnyNews_09_02"); //Bê za ním, mám dojem, e by ti chtêl podêkovat osobnê.
+		AI_Output (self ,other,"DIA_Lares_AnyNews_09_01"); //Za ty nejlepÅ¡Ã­ zprÃ¡vy mÅ¯Å¾eÅ¡ ty sÃ¡m. Nechali Benneta jÃ­t, je zpÃ¡tky na farmÄ™.
+		AI_Output (self ,other,"DIA_Lares_AnyNews_09_02"); //BÄ™Å¾ za nÃ­m, mÃ¡m dojem, Å¾e by ti chtÄ™l podÄ™kovat osobnÄ™.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lares_AnyNews_09_03"); //Dalo by se to tak âíct. Paladinové zabásli Benneta, našeho kováâe.
+		AI_Output (self ,other,"DIA_Lares_AnyNews_09_03"); //Dalo by se to tak Ã¢Ã­ct. PaladinovÃ© zabÃ¡sli Benneta, naÅ¡eho kovÃ¡Ã¢e.
 		
 		if (MIS_RescueBennet == LOG_RUNNING)
 		{
-			AI_Output (other,self ,"DIA_Lares_AnyNews_15_04"); //Slyšel jsem. Tak to je zlı.
-			AI_Output (self ,other,"DIA_Lares_AnyNews_09_05"); //To mi povídej.
+			AI_Output (other,self ,"DIA_Lares_AnyNews_15_04"); //SlyÅ¡el jsem. Tak to je zlÃ½.
+			AI_Output (self ,other,"DIA_Lares_AnyNews_09_05"); //To mi povÃ­dej.
 		}
 		else
 		{
 			AI_Output (other,self ,"DIA_Lares_AnyNews_15_06"); //Jak se to stalo?
-			AI_Output (self ,other,"DIA_Lares_AnyNews_09_07"); //Bennet odjel do mêsta pro zásoby. No a u se nevrátil.
-			AI_Output (self ,other,"DIA_Lares_AnyNews_09_08"); //Jestli se chceš dozvêdêt víc, promluv si s Hodgesem, byl ve mêstê s Bennetem.
+			AI_Output (self ,other,"DIA_Lares_AnyNews_09_07"); //Bennet odjel do mÄ™sta pro zÃ¡soby. No a uÅ¾ se nevrÃ¡til.
+			AI_Output (self ,other,"DIA_Lares_AnyNews_09_08"); //Jestli se chceÅ¡ dozvÄ™dÄ™t vÃ­c, promluv si s Hodgesem, byl ve mÄ™stÄ™ s Bennetem.
 			
 			MIS_RescueBennet = LOG_RUNNING;
 		};
@@ -2294,7 +2294,7 @@ FUNC VOID DIA_Lares_AnyNews_Info()
 };
 
 // ************************************************************
-// 		Hast du was von Bennet gehört?			 
+// 		Hast du was von Bennet gehÃ¶rt?			 
 // ************************************************************
 INSTANCE DIA_Lares_NewsAboutBennet(C_INFO)
 {
@@ -2303,7 +2303,7 @@ INSTANCE DIA_Lares_NewsAboutBennet(C_INFO)
 	condition	= DIA_Lares_NewsAboutBennet_Condition;
 	information	= DIA_Lares_NewsAboutBennet_Info;
 	permanent	= FALSE;
-	description = "Nêjaké zprávy o Bennetovi?";
+	description = "NÄ™jakÃ© zprÃ¡vy o Bennetovi?";
 };                       
 FUNC INT DIA_Lares_NewsAboutBennet_Condition()
 {
@@ -2314,11 +2314,11 @@ FUNC INT DIA_Lares_NewsAboutBennet_Condition()
 };
 FUNC VOID DIA_Lares_NewsAboutBennet_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_00"); //Nêjakı zprávy o Bennetovi?
-	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_01"); //Vypadá to, e ho vzali do kasáren a strèili do aláâe.
-	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_02"); //Jak ho odtamtud mùeme dostat?
-	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_03"); //Tak to vùbec netuším. Nemùu se dostat ani k nêmu do cely, abych si s ním promluvil.
-	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_04"); //Všechno, co zmùu, je mít oèi na stopkách. Ale asi toho stejnê moc nevykoukám.
+	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_00"); //NÄ™jakÃ½ zprÃ¡vy o Bennetovi?
+	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_01"); //VypadÃ¡ to, Å¾e ho vzali do kasÃ¡ren a strÄili do Å¾alÃ¡Ã¢e.
+	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_02"); //Jak ho odtamtud mÅ¯Å¾eme dostat?
+	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_03"); //Tak to vÅ¯bec netuÅ¡Ã­m. NemÅ¯Å¾u se dostat ani k nÄ™mu do cely, abych si s nÃ­m promluvil.
+	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_04"); //VÅ¡echno, co zmÅ¯Å¾u, je mÃ­t oÄi na stopkÃ¡ch. Ale asi toho stejnÄ™ moc nevykoukÃ¡m.
 };
 
 //#################################
@@ -2362,7 +2362,7 @@ INSTANCE DIA_Lares_Kap4_PERM(C_INFO)
 	condition	= DIA_Lares_Kap4_PERM_Condition;
 	information	= DIA_Lares_Kap4_PERM_Info;
 	permanent	= TRUE;
-	description = "Proè nejsi venku a nelovíš draky?";
+	description = "ProÄ nejsi venku a nelovÃ­Å¡ draky?";
 };                       
 FUNC INT DIA_Lares_Kap4_PERM_Condition()
 {
@@ -2373,9 +2373,9 @@ FUNC INT DIA_Lares_Kap4_PERM_Condition()
 };
 FUNC VOID DIA_Lares_Kap4_PERM_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_Kap4_PERM_15_00"); //Proè nejsi venku a nelovíš draky?
-	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_01"); //O takové vêci se nestarám, pâenechávám je ostatním.
-	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_02"); //Hmmm. Èerstvı moâskı vzduch - to je pâesnê to, co jsem potâeboval.
+	AI_Output (other,self ,"DIA_Lares_Kap4_PERM_15_00"); //ProÄ nejsi venku a nelovÃ­Å¡ draky?
+	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_01"); //O takovÃ© vÄ™ci se nestarÃ¡m, pÃ¢enechÃ¡vÃ¡m je ostatnÃ­m.
+	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_02"); //Hmmm. ÄŒerstvÃ½ moÃ¢skÃ½ vzduch - to je pÃ¢esnÄ™ to, co jsem potÃ¢eboval.
 };
 
 //#################################
@@ -2422,7 +2422,7 @@ instance DIA_Lares_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Lares_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Lares_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Nechtêl bys opustit tenhle ostrov?";
+	description	 = 	"NechtÄ™l bys opustit tenhle ostrov?";
 };
 func int DIA_Lares_KnowWhereEnemy_Condition ()
 {	
@@ -2434,30 +2434,30 @@ func int DIA_Lares_KnowWhereEnemy_Condition ()
 };
 func void DIA_Lares_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_00"); //Nechtêl bys opustit tenhle ostrov?
-	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_01"); //Víc ne cokoli jinıho. Cos myslel?
-	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_02"); //Zjistil jsem, kde se ukrıvá vùdce drakù. Je na ostrovê, nedaleko odsud.
-	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_03"); //Chci se ho jednou provdy zbavit.
-	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_04"); //Správná slova. Jestli mê budeš potâebovat, jdu do toho.
-	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_05"); //Mùeš na svıch cestách potâebovat nêkoho, kde tê nauèí posilovat obratnost nebo boj jednoruèními zbranêmi?
+	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_00"); //NechtÄ™l bys opustit tenhle ostrov?
+	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_01"); //VÃ­c neÅ¾ cokoli jinÃ½ho. Cos myslel?
+	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_02"); //Zjistil jsem, kde se ukrÃ½vÃ¡ vÅ¯dce drakÅ¯. Je na ostrovÄ™, nedaleko odsud.
+	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_03"); //Chci se ho jednou provÅ¾dy zbavit.
+	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_04"); //SprÃ¡vnÃ¡ slova. Jestli mÄ™ budeÅ¡ potÃ¢ebovat, jdu do toho.
+	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_05"); //MÅ¯Å¾eÅ¡ na svÃ½ch cestÃ¡ch potÃ¢ebovat nÄ™koho, kde tÄ™ nauÄÃ­ posilovat obratnost nebo boj jednoruÄnÃ­mi zbranÄ™mi?
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Lares_KnowWhereEnemy_15_06"); //Loë u je plná, ale kdyby se nêco zmênilo, dám vêdêt.
+		AI_Output			(other,self , "DIA_Lares_KnowWhereEnemy_15_06"); //LoÃ« uÅ¾ je plnÃ¡, ale kdyby se nÄ™co zmÄ™nilo, dÃ¡m vÄ™dÄ™t.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Lares_KnowWhereEnemy);
-		Info_AddChoice (DIA_Lares_KnowWhereEnemy,"K nièemu bys mi nebyl.",DIA_Lares_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Lares_KnowWhereEnemy,"Vêdêl jsem, e se na tebe mùu spolehnout.",DIA_Lares_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Lares_KnowWhereEnemy,"K niÄemu bys mi nebyl.",DIA_Lares_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Lares_KnowWhereEnemy,"VÄ™dÄ™l jsem, Å¾e se na tebe mÅ¯Å¾u spolehnout.",DIA_Lares_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Lares_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_00"); //Vêdêl jsem, e se na tebe mùu spolehnout.
-	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_01"); //Všichni se sejdeme na lodi.
-	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_Yes_09_02"); //Mu èinu, tak to mám rád. Ještê se uvidíme.
+	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_00"); //VÄ™dÄ™l jsem, Å¾e se na tebe mÅ¯Å¾u spolehnout.
+	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_01"); //VÅ¡ichni se sejdeme na lodi.
+	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_Yes_09_02"); //MuÅ¾ Äinu, tak to mÃ¡m rÃ¡d. JeÅ¡tÄ™ se uvidÃ­me.
 	
 	Lares_IsOnBoard	 = LOG_SUCCESS;
 	crewmember_Count = (Crewmember_Count +1);
@@ -2476,8 +2476,8 @@ FUNC VOID DIA_Lares_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Lares_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_No_15_00"); //Cením si tvé nabídky, ale nemám, jak bych tê vyuil.
-	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_No_09_01"); //Sám musíš vêdêt, co chceš. Pokud si o tom budeš chtít promluvit pozdêji, víš, kde mê najdeš.
+	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_No_15_00"); //CenÃ­m si tvÃ© nabÃ­dky, ale nemÃ¡m, jak bych tÄ™ vyuÅ¾il.
+	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_No_09_01"); //SÃ¡m musÃ­Å¡ vÄ™dÄ™t, co chceÅ¡. Pokud si o tom budeÅ¡ chtÃ­t promluvit pozdÄ™ji, vÃ­Å¡, kde mÄ™ najdeÅ¡.
 
 	if (hero.guild == GIL_DJG)
 	{
@@ -2501,7 +2501,7 @@ instance DIA_Lares_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Lares_LeaveMyShip_Condition;
 	information	 = 	DIA_Lares_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Bude lepší, kdy zùstaneš tady.";
+	description	 = 	"Bude lepÅ¡Ã­, kdyÅ¾ zÅ¯staneÅ¡ tady.";
 };
 func int DIA_Lares_LeaveMyShip_Condition ()
 {	
@@ -2513,8 +2513,8 @@ func int DIA_Lares_LeaveMyShip_Condition ()
 };
 func void DIA_Lares_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Lares_LeaveMyShip_15_00"); //Bude lepší, kdy nepopluješ.
-	AI_Output			(self, other, "DIA_Lares_LeaveMyShip_09_01"); //Jak chceš, ale pak si vzpomeà, kdo komu co sliboval.
+	AI_Output			(other, self, "DIA_Lares_LeaveMyShip_15_00"); //Bude lepÅ¡Ã­, kdyÅ¾ nepoplujeÅ¡.
+	AI_Output			(self, other, "DIA_Lares_LeaveMyShip_09_01"); //Jak chceÅ¡, ale pak si vzpomeÅ•, kdo komu co sliboval.
 	
 	if (hero.guild == GIL_DJG)
 	{
@@ -2530,7 +2530,7 @@ func void DIA_Lares_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lares_StillNeedYou		(C_INFO)
 {
@@ -2539,7 +2539,7 @@ instance DIA_Lares_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Lares_StillNeedYou_Condition;
 	information	 = 	DIA_Lares_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Ještê poâád bys mêl zájem o tu cestu?";
+	description	 = 	"JeÅ¡tÄ™ poÃ¢Ã¡d bys mÄ™l zÃ¡jem o tu cestu?";
 };
 func int DIA_Lares_StillNeedYou_Condition ()
 {	
@@ -2552,12 +2552,12 @@ func int DIA_Lares_StillNeedYou_Condition ()
 };
 func void DIA_Lares_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_Lares_StillNeedYou_15_00"); //Ještê poâád bys mêl zájem o tu cestu?
+	AI_Output			(other, self, "DIA_Lares_StillNeedYou_15_00"); //JeÅ¡tÄ™ poÃ¢Ã¡d bys mÄ™l zÃ¡jem o tu cestu?
 	
 	if (Lares_IsOnBoard == LOG_OBSOLETE)
 	{
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_01"); //Normálnê nenechávám jen tak nêkoho, aby se mnou takhle jednal, ale jeliko jsi jedním z nás, nechám to protentokrát bıt.
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_02"); //Uvidíme se na lodi.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_01"); //NormÃ¡lnÄ™ nenechÃ¡vÃ¡m jen tak nÄ™koho, aby se mnou takhle jednal, ale jelikoÅ¾ jsi jednÃ­m z nÃ¡s, nechÃ¡m to protentokrÃ¡t bÃ½t.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_02"); //UvidÃ­me se na lodi.
 		
 		Lares_IsOnBoard	 = LOG_SUCCESS;
 		crewmember_Count = (Crewmember_Count +1);
@@ -2573,8 +2573,8 @@ func void DIA_Lares_StillNeedYou_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_03"); //Neber si to nêjak osobnê, ale asi jsi mêl pravdu.
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_04"); //Bude lepší, kdy zùstanu tady.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_03"); //Neber si to nÄ™jak osobnÄ™, ale asi jsi mÄ™l pravdu.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_04"); //Bude lepÅ¡Ã­, kdyÅ¾ zÅ¯stanu tady.
 		
 		AI_StopProcessInfos (self);
 	};	

@@ -1,6 +1,6 @@
 
 //******************************************
-//   Gorn in der Oldworld als Drachenj‰ger
+//   Gorn in der Oldworld als Drachenj√§ger
 //******************************************
 
 INSTANCE PC_Fighter_DJG (Npc_Default)

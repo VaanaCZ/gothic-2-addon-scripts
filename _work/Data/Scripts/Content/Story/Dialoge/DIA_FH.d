@@ -24,7 +24,7 @@ FUNC VOID	Change_FH_Visual()
 	if  (FH_SkinTexture < 0)
 		{
 			FH_SkinTexture = 0;
-			PrintScreen	("MINUS-Gesichter gibt´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
+			PrintScreen	("MINUS-Gesichter gibtÂ´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
 		};
 		
 	B_SetNpcVisual 		(self, SEX, FH_HeadMesh, FH_SkinTexture, BodyTex_N, NO_ARMOR);		
@@ -78,7 +78,7 @@ INSTANCE DIA_FH_NextFace (C_INFO)
 	condition		= DIA_FH_NextFace_Condition;
 	information		= DIA_FH_NextFace_Info;
 	permanent		= 1;
-	description		= "Další portrét";
+	description		= "DalÅ¡Ã­ portrÃ©t";
 };                       
 
 FUNC INT DIA_FH_NextFace_Condition()
@@ -103,7 +103,7 @@ INSTANCE DIA_FH_NextFace10 (C_INFO)
 	condition		= DIA_FH_NextFace10_Condition;
 	information		= DIA_FH_NextFace10_Info;
 	permanent		= 1;
-	description		= "Další portrét 10 krokù";
+	description		= "DalÅ¡Ã­ portrÃ©t 10 krokÅ¯";
 };                       
 
 FUNC INT DIA_FH_NextFace10_Condition()
@@ -127,7 +127,7 @@ INSTANCE DIA_FH_PreviousFace (C_INFO)
 	condition		= DIA_FH_PreviousFace_Condition;
 	information		= DIA_FH_PreviousFace_Info;
 	permanent		= 1;
-	description		= "Pâedchozí portrét";
+	description		= "PÃ¢edchozÃ­ portrÃ©t";
 };                       
 
 FUNC INT DIA_FH_PreviousFace_Condition()
@@ -151,7 +151,7 @@ INSTANCE DIA_FH_PreviousFace10 (C_INFO)
 	condition		= DIA_FH_PreviousFace10_Condition;
 	information		= DIA_FH_PreviousFace10_Info;
 	permanent		= 1;
-	description		= "Pâedchozí portrét 10 krokù";
+	description		= "PÃ¢edchozÃ­ portrÃ©t 10 krokÅ¯";
 };                       
 
 FUNC INT DIA_FH_PreviousFace10_Condition()
@@ -175,7 +175,7 @@ INSTANCE DIA_FH_ResetFace (C_INFO)
 	condition		= DIA_FH_ResetFace_Condition;
 	information		= DIA_FH_ResetFace_Info;
 	permanent		= 1;
-	description		= "Zrušit portrét";
+	description		= "ZruÅ¡it portrÃ©t";
 };                       
 
 FUNC INT DIA_FH_ResetFace_Condition()
@@ -200,7 +200,7 @@ INSTANCE DIA_FH_WomanFace (C_INFO)
 	condition		= DIA_FH_WomanFace_Condition;
 	information		= DIA_FH_WomanFace_Info;
 	permanent		= 1;
-	description		= "Pâejít na portréty žen";
+	description		= "PÃ¢ejÃ­t na portrÃ©ty Å¾en";
 };                       
 
 FUNC INT DIA_FH_WomanFace_Condition()
@@ -224,7 +224,7 @@ INSTANCE DIA_FH_Repeat (C_INFO)
 	condition		= DIA_FH_Repeat_Condition;
 	information		= DIA_FH_Repeat_Info;
 	permanent		= 1;
-	description		= "Opakovat výstup";
+	description		= "Opakovat vÃ½stup";
 };                       
 
 FUNC INT DIA_FH_Repeat_Condition()
@@ -247,7 +247,7 @@ INSTANCE DIA_FH_Sex (C_INFO)
 	condition		= DIA_FH_Sex_Condition;
 	information		= DIA_FH_Sex_Info;
 	permanent		= 1;
-	description		= "Pohlaví";
+	description		= "PohlavÃ­";
 };                       
 
 FUNC INT DIA_FH_Sex_Condition()
@@ -293,7 +293,7 @@ FUNC VOID DIA_FH_Choose_HeadMesh_Info()
 {	
 	Info_ClearChoices	(DIA_FH_Choose_HeadMesh);
 
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "ZPÊT" 				, DIA_FH_Choose_HeadMesh_7);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "ZPÄ˜T" 				, DIA_FH_Choose_HeadMesh_7);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Psionic" 	, DIA_FH_Choose_HeadMesh_6);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Thief" 		, DIA_FH_Choose_HeadMesh_5);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Bald" 		, DIA_FH_Choose_HeadMesh_4);

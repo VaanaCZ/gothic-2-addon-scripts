@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Wache_01_Hi   (C_INFO)
 	condition   = DIA_Addon_Wache_01_Hi_Condition;
 	information = DIA_Addon_Wache_01_Hi_Info;
 	permanent   = TRUE;
-	description = "Je všechno v poâádku?";
+	description = "Je vÅ¡echno v poÃ¢Ã¡dku?";
 };
 FUNC INT DIA_Addon_Wache_01_Hi_Condition()
 {	
@@ -71,8 +71,8 @@ FUNC INT DIA_Addon_Wache_01_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Wache_01_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_01_Hi_15_00");//Je všecko v pohodê?
-	AI_Output (self, other, "DIA_Addon_Wache_01_Hi_04_01");//Šáhni na Estebana a nadêlám z tebe sekanou.
+	AI_Output (other, self, "DIA_Addon_Wache_01_Hi_15_00");//Je vÅ¡ecko v pohodÄ™?
+	AI_Output (self, other, "DIA_Addon_Wache_01_Hi_04_01");//Å Ã¡hni na Estebana a nadÄ™lÃ¡m z tebe sekanou.
 	
 	AI_StopProcessInfos (self);
 };

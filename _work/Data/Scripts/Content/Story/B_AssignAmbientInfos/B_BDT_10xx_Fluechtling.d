@@ -5,12 +5,12 @@
 
 FUNC VOID B_DIA_BDT_10XX_Fluechtling_Stimme7 ()
 {
-	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_07_00"); //Zapome‡ na to. Do vÍzenÌ uû se nevr·tÌm.
+	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_07_00"); //Zapome≈ï na to. Do vƒôzen√≠ u≈æ se nevr√°t√≠m.
 };
 
 FUNC VOID B_DIA_BDT_10XX_Fluechtling_Stimme6 ()
 {
-	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_06_00"); //Uû se ti nepoda‚Ì n·s znovu dostat do basy, jasn˝?
+	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_06_00"); //U≈æ se ti nepoda√¢√≠ n√°s znovu dostat do basy, jasn√Ω?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,51 +55,51 @@ func int DIA_BDT_1031_Fluechtling_Tip1_Condition ()
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Info ()
 {
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_07_00"); //Jestli nechceö skonËit v base, udÍl·ö lÌp, kdyû se ode mÍ budeö drûet d·l.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_07_00"); //Jestli nechce≈° skonƒçit v base, udƒôl√°≈° l√≠p, kdy≈æ se ode mƒô bude≈° dr≈æet d√°l.
 	B_GivePlayerXP (XP_AmbientKap3);
 	
 	if (SCFoundMorgahard == FALSE)
 	{
 		Info_ClearChoices	(DIA_BDT_1031_Fluechtling_Tip1);
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Nem·m v pl·nu na tebe don·öet.", DIA_BDT_1031_Fluechtling_Tip1_frei );
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "P‚iöel jsem tÍ zatknout.", DIA_BDT_1031_Fluechtling_Tip1_Knast );
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Kde je Morgahard, tv˘j velitel?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Nem√°m v pl√°nu na tebe don√°≈°et.", DIA_BDT_1031_Fluechtling_Tip1_frei );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "P√¢i≈°el jsem tƒô zatknout.", DIA_BDT_1031_Fluechtling_Tip1_Knast );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Kde je Morgahard, tv≈Øj velitel?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard );
 	};
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00"); //Kde je Morgahard, tv˘j velitel?
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01"); //RozdÍlÌme se, takûe n·s tak rychle nedostanou. Nebudeme vÍdÍt, kde jsou ostatnÌ.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00"); //Kde je Morgahard, tv≈Øj velitel?
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01"); //Rozdƒôl√≠me se, tak≈æe n√°s tak rychle nedostanou. Nebudeme vƒôdƒôt, kde jsou ostatn√≠.
 	
-	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "To je zlÈ. Tak to h·d·m, ûe bych mÍl dostat soudce.", DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen );
+	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "To je zl√©. Tak to h√°d√°m, ≈æe bych mƒôl dostat soudce.", DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen );
 
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00"); //To je zlÈ. Tak to h·d·m, ûe bych mÍl dostat soudce.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01"); //Fajn, fajn. Asi by se nÍkte‚Ì z n·s mÍli zdejchnout do krËmy. Ale ode mÍ jste to neslyöeli, jasn˝?
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00"); //To je zl√©. Tak to h√°d√°m, ≈æe bych mƒôl dostat soudce.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01"); //Fajn, fajn. Asi by se nƒôkte√¢√≠ z n√°s mƒôli zdejchnout do krƒçmy. Ale ode mƒô jste to nesly≈°eli, jasn√Ω?
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_Knast ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Knast_15_00"); //P‚iöel jsem tÍ zatknout.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Knast_07_01"); //Jen p‚es mou mrtvolu.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Knast_15_00"); //P√¢i≈°el jsem tƒô zatknout.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Knast_07_01"); //Jen p√¢es mou mrtvolu.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno , 1);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_frei ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_15_00"); //Nem·m v pl·nu na tebe don·öet.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_07_01"); //Jestli tÍ poslal soudce, tak mu vy‚iÎ, ûe se m˘ûe jÌt vycpat.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_15_00"); //Nem√°m v pl√°nu na tebe don√°≈°et.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_07_01"); //Jestli tƒô poslal soudce, tak mu vy√¢i√´, ≈æe se m≈Ø≈æe j√≠t vycpat.
 	
 	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Tak co si provedl?", DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen );
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen ()
 {
 	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_15_00"); //Tak co jsi provedl?
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_07_01"); //Do toho ti nic nenÌ.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_07_01"); //Do toho ti nic nen√≠.
 
 };
 
@@ -217,43 +217,43 @@ func int DIA_BDT_1033_Fluechtling_Tip2_Condition ()
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_Info ()
 {
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_07_00"); //(vydÍöenÍ) Co ode mÍ chceö?
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_07_00"); //(vydƒô≈°enƒô) Co ode mƒô chce≈°?
 	B_GivePlayerXP (XP_AmbientKap3);
 	
 	if (SCFoundMorgahard == FALSE)
 	{
 		Info_ClearChoices	(DIA_BDT_1033_Fluechtling_Tip2);
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "KlÌdek. Chci si jen promluvit.", DIA_BDT_1033_Fluechtling_Tip2_frei );
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Soudce mÍ poslal, abych tÍ p‚ivedl zp·tky.", DIA_BDT_1033_Fluechtling_Tip2_Knast );
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Kde je Morgahard, tv˘j velitel?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Kl√≠dek. Chci si jen promluvit.", DIA_BDT_1033_Fluechtling_Tip2_frei );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Soudce mƒô poslal, abych tƒô p√¢ivedl zp√°tky.", DIA_BDT_1033_Fluechtling_Tip2_Knast );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Kde je Morgahard, tv≈Øj velitel?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard );
 	};
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_Morgahard ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00"); //Kde je Morgahard, tv˘j velitel?
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01"); //(vydÍöenÍ) Nechci û·dnÈ problÈmy. Zajdi za velkostatk·‚em. ChtÍl si s·m najmout nÍjakÈ ûold·ky. A teÎ mÍ nech na pokoji.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00"); //Kde je Morgahard, tv≈Øj velitel?
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01"); //(vydƒô≈°enƒô) Nechci ≈æ√°dn√© probl√©my. Zajdi za velkostatk√°√¢em. Chtƒôl si s√°m najmout nƒôjak√© ≈æold√°ky. A te√´ mƒô nech na pokoji.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_Knast ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00"); //Soudce mÍ poslal, abych tÍ p‚ivedl zp·tky.
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Knast_07_01"); //(k‚iËÌ) NE.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00"); //Soudce mƒô poslal, abych tƒô p√¢ivedl zp√°tky.
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Knast_07_01"); //(k√¢iƒç√≠) NE.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno , 1);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_frei ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_15_00"); //KlÌdek. Chci si jen promluvit.
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_07_01"); //Ale j· s tebou mluvit nechci. Zmizni, chlape.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_15_00"); //Kl√≠dek. Chci si jen promluvit.
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_07_01"); //Ale j√° s tebou mluvit nechci. Zmizni, chlape.
 	
-	Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Tys fakticky jenom ustraöen˝ sr·bek, co?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen );
+	Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Tys fakticky jenom ustra≈°en√Ω sr√°bek, co?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen );
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00"); //Jseö podÍlanej strachy, co?
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01"); //M˘ûeö klidnÍ mluvit. Kdyby tÍ chytili, tak ti û·dn· öibenice nehrozÌ.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00"); //Jse≈° podƒôlanej strachy, co?
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01"); //M≈Ø≈æe≈° klidnƒô mluvit. Kdyby tƒô chytili, tak ti ≈æ√°dn√° ≈°ibenice nehroz√≠.
 
 };
 

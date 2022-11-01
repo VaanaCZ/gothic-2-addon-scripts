@@ -46,29 +46,29 @@ func void DIA_Rega_HALLO_Info ()
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //Ty jsi z mêsta, co?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //Ty jsi z mÄ™sta, co?
 		}
 	else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_02"); //Jsi jeden z têch Onarovıch oldákù, co?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_02"); //Jsi jeden z tÄ™ch OnarovÃ½ch Å¾oldÃ¡kÅ¯, co?
 		}
 	else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_03"); //Ty jsi mág, co?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_03"); //Ty jsi mÃ¡g, co?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_04"); //Ty nejsi jeden z nás, co?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_04"); //Ty nejsi jeden z nÃ¡s, co?
 
 		};
 		
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //Na tvém místê bych odsud pêknê rychle vypadla.
-	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //Proè?
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //Nikdy to tady nebyl ádnı med, ale alespoà jsme mêli klid po celou dobu, co dêláme pro Sekoba.
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Ale poslední dobu u je to nesnesitelné.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //Na tvÃ©m mÃ­stÄ™ bych odsud pÄ™knÄ™ rychle vypadla.
+	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //ProÄ?
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //Nikdy to tady nebyl Å¾Ã¡dnÃ½ med, ale alespoÅ• jsme mÄ™li klid po celou dobu, co dÄ™lÃ¡me pro Sekoba.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Ale poslednÃ­ dobu uÅ¾ je to nesnesitelnÃ©.
 	if (Kapitel < 3)
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //Banditi jsou úplnê všude, polní škùdci nièí veškerou úrodu a z velkostatkáâe se stal pêknej kruãas.
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //Banditi jsou ÃºplnÄ™ vÅ¡ude, polnÃ­ Å¡kÅ¯dci niÄÃ­ veÅ¡kerou Ãºrodu a z velkostatkÃ¡Ã¢e se stal pÄ™knej kruÄƒas.
 		};
 };
 
@@ -83,7 +83,7 @@ instance DIA_Rega_ONAR		(C_INFO)
 	condition	 = 	DIA_Rega_ONAR_Condition;
 	information	 = 	DIA_Rega_ONAR_Info;
 
-	description	 = 	"Take se bojíte velkostatkáâe?";
+	description	 = 	"TakÅ¾e se bojÃ­te velkostatkÃ¡Ã¢e?";
 };
 
 func int DIA_Rega_ONAR_Condition ()
@@ -98,9 +98,9 @@ func int DIA_Rega_ONAR_Condition ()
 
 func void DIA_Rega_ONAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //Take se bojíte velkostatkáâe?
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Se vsaë. Kdy se mu nelíbí nêèí ksicht, pošle na nêj svı oldáky. To je taky poslední chvíle, kdy toho neboáka nêkdo uvidí.
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //Take radêj dríme zobák.
+	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //TakÅ¾e se bojÃ­te velkostatkÃ¡Ã¢e?
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Se vsaÃ«. KdyÅ¾ se mu nelÃ­bÃ­ nÄ™ÄÃ­ ksicht, poÅ¡le na nÄ™j svÃ½ Å¾oldÃ¡ky. To je taky poslednÃ­ chvÃ­le, kdy toho neboÅ¾Ã¡ka nÄ™kdo uvidÃ­.
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //TakÅ¾e radÄ™j drÅ¾Ã­me zobÃ¡k.
 
 };
 
@@ -116,7 +116,7 @@ instance DIA_Rega_SLD		(C_INFO)
 	condition	 = 	DIA_Rega_SLD_Condition;
 	information	 = 	DIA_Rega_SLD_Info;
 
-	description	 = 	"Copak se o ty polní škùdce nepostarají oldáci?";
+	description	 = 	"Copak se o ty polnÃ­ Å¡kÅ¯dce nepostarajÃ­ Å¾oldÃ¡ci?";
 };
 
 func int DIA_Rega_SLD_Condition ()
@@ -131,9 +131,9 @@ func int DIA_Rega_SLD_Condition ()
 
 func void DIA_Rega_SLD_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //Copak se o ty polní škùdce nepostarají oldáci?
-	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //Nevím, za co jsou placení, ale urèitê ne za pomoc nám, obyèejnım lidem.
-	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //Problém s polními škùdci je teë na malıch farmáâích, co si pronajali od Onara pùdu.
+	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //Copak se o ty polnÃ­ Å¡kÅ¯dce nepostarajÃ­ Å¾oldÃ¡ci?
+	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //NevÃ­m, za co jsou placenÃ­, ale urÄitÄ™ ne za pomoc nÃ¡m, obyÄejnÃ½m lidem.
+	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //ProblÃ©m s polnÃ­mi Å¡kÅ¯dci je teÃ« na malÃ½ch farmÃ¡Ã¢Ã­ch, co si pronajali od Onara pÅ¯du.
 
 };
 
@@ -148,7 +148,7 @@ instance DIA_Rega_BANDITEN		(C_INFO)
 	condition	 = 	DIA_Rega_BANDITEN_Condition;
 	information	 = 	DIA_Rega_BANDITEN_Info;
 
-	description	 = 	"Jak se bráníte proti banditùm?";
+	description	 = 	"Jak se brÃ¡nÃ­te proti banditÅ¯m?";
 };
 
 func int DIA_Rega_BANDITEN_Condition ()
@@ -161,8 +161,8 @@ func int DIA_Rega_BANDITEN_Condition ()
 
 func void DIA_Rega_BANDITEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BANDITEN_15_00"); //Jak se bráníte proti banditùm?
-	AI_Output			(self, other, "DIA_Rega_BANDITEN_17_01"); //Nijak. Prostê uteèeme. Ještê nêco?
+	AI_Output			(other, self, "DIA_Rega_BANDITEN_15_00"); //Jak se brÃ¡nÃ­te proti banditÅ¯m?
+	AI_Output			(self, other, "DIA_Rega_BANDITEN_17_01"); //Nijak. ProstÄ™ uteÄeme. JeÅ¡tÄ™ nÄ™co?
 
 };
 
@@ -193,8 +193,8 @@ func int DIA_Rega_BRONKO_Condition ()
 
 func void DIA_Rega_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //Tak kdo je ten hnusnej chlápek támhle?
-	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //Nepâeber si to špatnê, ale nechci se dostat do potíí. Zeptej se nêkoho jinıho.
+	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //Tak kdo je ten hnusnej chlÃ¡pek tÃ¡mhle?
+	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //NepÃ¢eber si to Å¡patnÄ™, ale nechci se dostat do potÃ­Å¾Ã­. Zeptej se nÄ™koho jinÃ½ho.
 
 	AI_StopProcessInfos (self);
 };
@@ -211,7 +211,7 @@ instance DIA_Rega_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Rega_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"No tak, trochu kuráe.";
+	description	 = 	"No tak, trochu kurÃ¡Å¾e.";
 };
 
 func int DIA_Rega_PERMKAP1_Condition ()
@@ -224,23 +224,23 @@ func int DIA_Rega_PERMKAP1_Condition ()
 
 func void DIA_Rega_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_PERMKAP1_15_00"); //No tak, trochu kuráe.
+	AI_Output			(other, self, "DIA_Rega_PERMKAP1_15_00"); //No tak, trochu kurÃ¡Å¾e.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //Tobê se to mluví. Ty pâece bydlíš ve mêstê.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //TobÄ™ se to mluvÃ­. Ty pÃ¢ece bydlÃ­Å¡ ve mÄ™stÄ™.
 		}
 		else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Kdyby ti oldáci nebyli takoví hajzlové, všechno ostatní by se dalo pâekousnout.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Kdyby ti Å¾oldÃ¡ci nebyli takovÃ­ hajzlovÃ©, vÅ¡echno ostatnÃ­ by se dalo pÃ¢ekousnout.
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //Mágù je tu poâád míà a míà. Doufám, e ty nejsi poslední. Potâebujeme vás - víc ne kdykoli jindy.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //MÃ¡gÅ¯ je tu poÃ¢Ã¡d mÃ­Å• a mÃ­Å•. DoufÃ¡m, Å¾e ty nejsi poslednÃ­. PotÃ¢ebujeme vÃ¡s - vÃ­c neÅ¾ kdykoli jindy.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //Není to tak snadné, kdy makáš pro toho otrokáâskıho Sekoba.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //NenÃ­ to tak snadnÃ©, kdyÅ¾ makÃ¡Å¡ pro toho otrokÃ¡Ã¢skÃ½ho Sekoba.
 		};
 	AI_StopProcessInfos (self);
 };

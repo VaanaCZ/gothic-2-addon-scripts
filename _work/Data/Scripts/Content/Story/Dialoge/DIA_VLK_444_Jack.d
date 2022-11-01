@@ -81,9 +81,9 @@ func int DIA_Jack_GREET_Condition ()
 };
 func void DIA_Jack_GREET_Info ()
 {
-	AI_Output			(self ,other, "DIA_Jack_GREET_14_00"); //ZdravÌm, ty suchozemsk· kryso, vypad· to, ûe z˘st·v·ö tady.
-	AI_Output			(self ,other, "DIA_Jack_GREET_14_01"); //Jsi nÍjakej pobledlej kolem ûaber.
-	AI_Output			(self ,other, "DIA_Jack_GREET_14_02"); //Nic si z toho nedÍlej, k·mo. Vöechno, co pot‚ebujeö, je dobr˝ siln˝ mo‚sk˝ vzduch.
+	AI_Output			(self ,other, "DIA_Jack_GREET_14_00"); //Zdrav√≠m, ty suchozemsk√° kryso, vypad√° to, ≈æe z≈Øst√°v√°≈° tady.
+	AI_Output			(self ,other, "DIA_Jack_GREET_14_01"); //Jsi nƒôjakej pobledlej kolem ≈æaber.
+	AI_Output			(self ,other, "DIA_Jack_GREET_14_02"); //Nic si z toho nedƒôlej, k√°mo. V≈°echno, co pot√¢ebuje≈°, je dobr√Ω siln√Ω mo√¢sk√Ω vzduch.
 };
 
 
@@ -97,7 +97,7 @@ instance DIA_Jack_Job		(C_INFO)
 	condition	 = 	DIA_Jack_Job_Condition;
 	information	 = 	DIA_Jack_Job_Info;
 
-	description	 = 	"Co tady dÍl·ö?";
+	description	 = 	"Co tady dƒôl√°≈°?";
 };
 
 func int DIA_Jack_Job_Condition ()
@@ -109,28 +109,28 @@ func int DIA_Jack_Job_Condition ()
 };
 func void DIA_Jack_Job_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_Job_15_00"); //Co tady dÍl·ö?
-	AI_Output			(self, other, "DIA_Jack_Job_14_01"); //D‚Ìv, kdyû jsem byl jeötÍ mladej, jsem hodnÍ Ëasu tr·vil na mo‚i a proûil spoustu bou‚Ì.
-	AI_Output			(self, other, "DIA_Jack_Job_14_02"); //P‚ed mnoha lety jsem se tu usadil a uû pÍknou ‚·dku let se star·m o khorinidsk˝ maj·k.
-	AI_Output			(self, other, "DIA_Jack_Job_14_03"); //é·dnej velkej köeft. V˘bec ne. Ale ta star· vÍû mi tak p‚irostla k srdci, ûe uû se v nÌ cÌtÌm jako doma.
-	AI_Output			(self, other, "DIA_Jack_Job_14_04"); //Uû jsem tam naho‚e nebyl celou vÍËnost.
-	AI_Output			(other, self, "DIA_Jack_Job_15_05"); //ProË ne?
-	AI_Output			(self ,other, "DIA_Jack_Job_14_06"); //Od t˝ doby, co m˘j maj·k obsadili nÍjacÌ budiûkniËemovÈ, jsem nemÍl odvahu se tam dostat blÌû neû na dvacet stop. V·ûnÍ hrozn· ch·tra.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_07"); //Jsou to trestanci z HornickÈho ˙dolÌ, vöak vÌö.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_08"); //Jednou to na druh˝ stranÍ hor po‚·dnÍ bouchlo a pak zamo‚ili celou zem jako kobylky. TeÎ se ukr˝vajÌ ˙plnÍ vöude, dokonce i v mym maj·ku.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_09"); //M·m dojem, ûe vyhlÌûej nÍjakou loÎ, co by mohli vyrabovat.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_10"); //Ha! A„ to udÍlaj. Alespo‡ vypadnou z mojÌ vÍûe.
+	AI_Output			(other, self, "DIA_Jack_Job_15_00"); //Co tady dƒôl√°≈°?
+	AI_Output			(self, other, "DIA_Jack_Job_14_01"); //D√¢√≠v, kdy≈æ jsem byl je≈°tƒô mladej, jsem hodnƒô ƒçasu tr√°vil na mo√¢i a pro≈æil spoustu bou√¢√≠.
+	AI_Output			(self, other, "DIA_Jack_Job_14_02"); //P√¢ed mnoha lety jsem se tu usadil a u≈æ pƒôknou √¢√°dku let se star√°m o khorinidsk√Ω maj√°k.
+	AI_Output			(self, other, "DIA_Jack_Job_14_03"); //≈Ω√°dnej velkej k≈°eft. V≈Øbec ne. Ale ta star√° vƒô≈æ mi tak p√¢irostla k srdci, ≈æe u≈æ se v n√≠ c√≠t√≠m jako doma.
+	AI_Output			(self, other, "DIA_Jack_Job_14_04"); //U≈æ jsem tam naho√¢e nebyl celou vƒôƒçnost.
+	AI_Output			(other, self, "DIA_Jack_Job_15_05"); //Proƒç ne?
+	AI_Output			(self ,other, "DIA_Jack_Job_14_06"); //Od t√Ω doby, co m≈Øj maj√°k obsadili nƒôjac√≠ budi≈ækniƒçemov√©, jsem nemƒôl odvahu se tam dostat bl√≠≈æ ne≈æ na dvacet stop. V√°≈ænƒô hrozn√° ch√°tra.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_07"); //Jsou to trestanci z Hornick√©ho √∫dol√≠, v≈°ak v√≠≈°.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_08"); //Jednou to na druh√Ω stranƒô hor po√¢√°dnƒô bouchlo a pak zamo√¢ili celou zem jako kobylky. Te√´ se ukr√Ωvaj√≠ √∫plnƒô v≈°ude, dokonce i v mym maj√°ku.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_09"); //M√°m dojem, ≈æe vyhl√≠≈æej nƒôjakou lo√´, co by mohli vyrabovat.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_10"); //Ha! AƒÉ to udƒôlaj. Alespo≈ï vypadnou z moj√≠ vƒô≈æe.
 	
 	Log_CreateTopic (TOPIC_KillLighthouseBandits, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_KillLighthouseBandits, LOG_RUNNING);
-	B_LogEntry (TOPIC_KillLighthouseBandits,"Star˝ mo‚sk˝ vlk Jack se nem˘ûe vr·tit na sv˘j maj·k, nebo„ jej obsadili banditÈ."); 
+	B_LogEntry (TOPIC_KillLighthouseBandits,"Star√Ω mo√¢sk√Ω vlk Jack se nem≈Ø≈æe vr√°tit na sv≈Øj maj√°k, neboƒÉ jej obsadili bandit√©."); 
 	
 	MIS_Jack_KillLighthouseBandits = LOG_RUNNING;
 	
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erz‰hl mir was ¸ber die Stadt
+//	Erz√§hl mir was √ºber die Stadt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jack_City		(C_INFO)
 {
@@ -139,7 +139,7 @@ instance DIA_Jack_City		(C_INFO)
 	condition	 = 	DIA_Jack_City_Condition;
 	information	 = 	DIA_Jack_City_Info;
 
-	description	 = 	"ChodÌö do mÍsta Ëasto?";
+	description	 = 	"Chod√≠≈° do mƒôsta ƒçasto?";
 };
 
 func int DIA_Jack_City_Condition ()
@@ -151,14 +151,14 @@ func int DIA_Jack_City_Condition ()
 };
 func void DIA_Jack_City_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_City_15_00"); //P‚ich·zÌö do mÍsta Ëasto?
-	AI_Output			(self ,other, "DIA_Jack_City_14_01"); //Vûdycky ‚Ìk·m, ûe mÍsto je tak dobr˝, jak dobrej je jeho p‚Ìstav.
-	AI_Output			(self ,other, "DIA_Jack_City_14_02"); //P‚Ìstav je br·na do svÍta. Tady se vöichni setk·vajÌ a tady vöechno zaËÌn·.
-	AI_Output			(self ,other, "DIA_Jack_City_14_03"); //Jakmile je p‚Ìstav v h·ji, zbytek mÍsta dopadne brzo stejnÍ.
+	AI_Output			(other, self, "DIA_Jack_City_15_00"); //P√¢ich√°z√≠≈° do mƒôsta ƒçasto?
+	AI_Output			(self ,other, "DIA_Jack_City_14_01"); //V≈ædycky √¢√≠k√°m, ≈æe mƒôsto je tak dobr√Ω, jak dobrej je jeho p√¢√≠stav.
+	AI_Output			(self ,other, "DIA_Jack_City_14_02"); //P√¢√≠stav je br√°na do svƒôta. Tady se v≈°ichni setk√°vaj√≠ a tady v≈°echno zaƒç√≠n√°.
+	AI_Output			(self ,other, "DIA_Jack_City_14_03"); //Jakmile je p√¢√≠stav v h√°ji, zbytek mƒôsta dopadne brzo stejnƒô.
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erz‰hl mir was ¸ber den Hafen
+//	Erz√§hl mir was √ºber den Hafen
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jack_Harbor		(C_INFO)
 {
@@ -168,7 +168,7 @@ instance DIA_Jack_Harbor		(C_INFO)
 	information	 = 	DIA_Jack_Harbor_Info;
 	permanent	 =  TRUE;
 
-	description	 = 	"PovÍz mi nÍco o p‚Ìstavu.";
+	description	 = 	"Povƒôz mi nƒôco o p√¢√≠stavu.";
 };
 
 func int DIA_Jack_Harbor_Condition ()
@@ -182,15 +182,15 @@ func int DIA_Jack_Harbor_Condition ()
 };
 func void DIA_Jack_Harbor_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_Harbor_15_00"); //¬ekni mi nÍco o p‚Ìstavu.
-	AI_Output			(self ,other, "DIA_Jack_Harbor_14_01"); //Khorinidsk˝ p‚Ìstav uû nenÌ, co b˝val.
-	AI_Output			(self ,other, "DIA_Jack_Harbor_14_02"); //NenÌ tu nic neû ch·tra, co se poflakuje kolem, uû sem nep‚iplouvajÌ û·dnÈ lodÍ a obchod je mrtvej. Tenhle p‚Ìstav je odepsanej.
+	AI_Output			(other, self, "DIA_Jack_Harbor_15_00"); //√Çekni mi nƒôco o p√¢√≠stavu.
+	AI_Output			(self ,other, "DIA_Jack_Harbor_14_01"); //Khorinidsk√Ω p√¢√≠stav u≈æ nen√≠, co b√Ωval.
+	AI_Output			(self ,other, "DIA_Jack_Harbor_14_02"); //Nen√≠ tu nic ne≈æ ch√°tra, co se poflakuje kolem, u≈æ sem nep√¢iplouvaj√≠ ≈æ√°dn√© lodƒô a obchod je mrtvej. Tenhle p√¢√≠stav je odepsanej.
 	
 	Info_ClearChoices (DIA_Jack_Harbor);
 	Info_AddChoice (DIA_Jack_Harbor,DIALOG_BACK,DIA_Jack_Harbor_Back);
-	Info_AddChoice (DIA_Jack_Harbor,"ProË uû sem nep‚iplouvajÌ û·dnÈ lodÍ?",DIA_Jack_Harbor_Ships);
-	Info_AddChoice (DIA_Jack_Harbor,"Co myslÌö tou ch·trou?",DIA_Jack_Harbor_Rogue);
-	Info_AddChoice (DIA_Jack_Harbor,"Tak proË neodejdeö?",DIA_Jack_Harbor_Leave);
+	Info_AddChoice (DIA_Jack_Harbor,"Proƒç u≈æ sem nep√¢iplouvaj√≠ ≈æ√°dn√© lodƒô?",DIA_Jack_Harbor_Ships);
+	Info_AddChoice (DIA_Jack_Harbor,"Co mysl√≠≈° tou ch√°trou?",DIA_Jack_Harbor_Rogue);
+	Info_AddChoice (DIA_Jack_Harbor,"Tak proƒç neodejde≈°?",DIA_Jack_Harbor_Leave);
 };
 
 FUNC VOID DIA_Jack_Harbor_Back ()
@@ -200,26 +200,26 @@ FUNC VOID DIA_Jack_Harbor_Back ()
 
 FUNC VOID DIA_Jack_Harbor_Ships ()
 {	
-	AI_Output (other,self ,"DIA_Jack_Harbor_Ships_15_00"); //ProË uû sem nep‚iplouvajÌ û·dnÈ lodÍ?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_01"); //Vöichni ‚ÌkajÌ, ûe aû v·lka skonËÌ, vr·tÌ se vöechno do starejch kolejÌ. Jsou to jenom kecy.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_02"); //¬Ìk·m ti, n·mo‚nÌk pozn·, kdyû to jde s mÍstem z kopce.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_03"); //N·mo‚nÌk to cÌtÌ v krvi. A ‚eknu ti, zapome‡ na p‚Ìstav, ten uû to m· spoËÌtan˝.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Ships_15_00"); //Proƒç u≈æ sem nep√¢iplouvaj√≠ ≈æ√°dn√© lodƒô?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_01"); //V≈°ichni √¢√≠kaj√≠, ≈æe a≈æ v√°lka skonƒç√≠, vr√°t√≠ se v≈°echno do starejch kolej√≠. Jsou to jenom kecy.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_02"); //√Ç√≠k√°m ti, n√°mo√¢n√≠k pozn√°, kdy≈æ to jde s mƒôstem z kopce.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_03"); //N√°mo√¢n√≠k to c√≠t√≠ v krvi. A √¢eknu ti, zapome≈ï na p√¢√≠stav, ten u≈æ to m√° spoƒç√≠tan√Ω.
 };
 
 FUNC VOID DIA_Jack_Harbor_Rogue ()
 {
-	AI_Output (other,self ,"DIA_Jack_Harbor_Rogue_15_00"); //Co myslÌö tou ch·trou?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_01"); //Koukni na nÍ, lÌn· sebranka. VÍtöina z nich v˘bec netuöÌ, co je pr·ce. Vöechno, co svedou, je chlastat celej den a poslednÌ prachy utratit v bordelu.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_02"); //¬Ìk·m ti, drû se od nich d·l.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Rogue_15_00"); //Co mysl√≠≈° tou ch√°trou?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_01"); //Koukni na nƒô, l√≠n√° sebranka. Vƒôt≈°ina z nich v≈Øbec netu≈°√≠, co je pr√°ce. V≈°echno, co svedou, je chlastat celej den a posledn√≠ prachy utratit v bordelu.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_02"); //√Ç√≠k√°m ti, dr≈æ se od nich d√°l.
 };
 
 FUNC VOID DIA_Jack_Harbor_Leave ()
 {
-	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_00"); //Tak proË neodejdeö?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_01"); //Nikdo si v tuhle dobu nevezme na palubu takov˝ho star˝ho mo‚sk˝ho vlka, jako jsem j·.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_02"); //VÍtöina lidÌ si myslÌ, ze starej Jack m· ve svejch prohnilejch kostech dnu.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_00"); //Tak proƒç neodejde≈°?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_01"); //Nikdo si v tuhle dobu nevezme na palubu takov√Ωho star√Ωho mo√¢sk√Ωho vlka, jako jsem j√°.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_02"); //Vƒôt≈°ina lid√≠ si mysl√≠, ze starej Jack m√° ve svejch prohnilejch kostech dnu.
 	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_03"); //A? Je to pravda?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_04"); //Nesmysl. Jakmile m·m palubu pod nohama, cÌtÌm se jako mladej jura.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_04"); //Nesmysl. Jakmile m√°m palubu pod nohama, c√≠t√≠m se jako mladej jura.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -232,7 +232,7 @@ instance DIA_Jack_BANDITENWEG		(C_INFO)
 	condition	 = 	DIA_Jack_BANDITENWEG_Condition;
 	information	 = 	DIA_Jack_BANDITENWEG_Info;
 
-	description	 = 	"BanditÈ, kte‚Ì ti obsadili maj·k, uû jsou pryË.";
+	description	 = 	"Bandit√©, kte√¢√≠ ti obsadili maj√°k, u≈æ jsou pryƒç.";
 };
 
 func int DIA_Jack_BANDITENWEG_Condition ()
@@ -248,11 +248,11 @@ func int DIA_Jack_BANDITENWEG_Condition ()
 
 func void DIA_Jack_BANDITENWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_BANDITENWEG_15_00"); //Ti banditi, co zabrali tv˘j maj·k, jsou pryË.
-	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_01"); //Je to v·ûnÍ pravda? KoneËnÍ se m˘ûu vr·tit ke sv˝ pr·ci.
-	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_02"); //P‚ijÎ za mnou na maj·k. Naho‚e je kr·snej v˝hled na mo‚e.
+	AI_Output			(other, self, "DIA_Jack_BANDITENWEG_15_00"); //Ti banditi, co zabrali tv≈Øj maj√°k, jsou pryƒç.
+	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_01"); //Je to v√°≈ænƒô pravda? Koneƒçnƒô se m≈Ø≈æu vr√°tit ke sv√Ω pr√°ci.
+	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_02"); //P√¢ij√´ za mnou na maj√°k. Naho√¢e je kr√°snej v√Ωhled na mo√¢e.
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"Maj·k");
+	Npc_ExchangeRoutine	(self,"Maj√°k");
 	MIS_Jack_KillLighthouseBandits = LOG_SUCCESS;
 	B_GivePlayerXP (XP_KillLighthouseBandits);
 };
@@ -269,7 +269,7 @@ instance DIA_Jack_LIGHTHOUSEFREE		(C_INFO)
 	permanent	 = 	TRUE;
 
 
-	description	 = 	"M·ö tady pÍknej maj·k.";
+	description	 = 	"M√°≈° tady pƒôknej maj√°k.";
 };
 
 func int DIA_Jack_LIGHTHOUSEFREE_Condition ()
@@ -284,8 +284,8 @@ func int DIA_Jack_LIGHTHOUSEFREE_Condition ()
 
 func void DIA_Jack_LIGHTHOUSEFREE_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_LIGHTHOUSEFREE_15_00"); //M·ö tady pÍknej maj·k.
-	AI_Output			(self, other, "DIA_Jack_LIGHTHOUSEFREE_14_01"); //DÌky. ProstÍ vyjdi po vöech tÍch schodech nahoru a vychutnej si ten n·dhern˝ v˝hled, chlapËe. Jako doma.
+	AI_Output			(other, self, "DIA_Jack_LIGHTHOUSEFREE_15_00"); //M√°≈° tady pƒôknej maj√°k.
+	AI_Output			(self, other, "DIA_Jack_LIGHTHOUSEFREE_14_01"); //D√≠ky. Prostƒô vyjdi po v≈°ech tƒôch schodech nahoru a vychutnej si ten n√°dhern√Ω v√Ωhled, chlapƒçe. Jako doma.
 };
 
 
@@ -403,7 +403,7 @@ instance DIA_Jack_BEMYCAPTAIN		(C_INFO)
 	information	 = 	DIA_Jack_BEMYCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"NechtÍl by ses vr·tit zp·tky na mo‚e?";
+	description	 = 	"Nechtƒôl by ses vr√°tit zp√°tky na mo√¢e?";
 };
 
 func int DIA_Jack_BEMYCAPTAIN_Condition ()
@@ -419,39 +419,39 @@ func int DIA_Jack_BEMYCAPTAIN_Condition ()
 
 func void DIA_Jack_BEMYCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_15_00"); //NechtÍl by ses vr·tit na mo‚e?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_01"); //Dal bych pravou ruku za to, kdyby mÍ jeötÍ jednou nÍkdo najal na velkej ökuner.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_02"); //Ale pro takov˝ho star˝ho mo‚sk˝ho vlka to nenÌ tak snadn˝, hochu. A stejnÍ, kdo by se pak staral o maj·k?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_15_00"); //Nechtƒôl by ses vr√°tit na mo√¢e?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_01"); //Dal bych pravou ruku za to, kdyby mƒô je≈°tƒô jednou nƒôkdo najal na velkej ≈°kuner.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_02"); //Ale pro takov√Ωho star√Ωho mo√¢sk√Ωho vlka to nen√≠ tak snadn√Ω, hochu. A stejnƒô, kdo by se pak staral o maj√°k?
 
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "NevadÌ. Byl to jen n·pad.", DIA_Jack_BEMYCAPTAIN_no );
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Pot‚ebuju tvoje n·mo‚nick˝ zkuöenosti.", DIA_Jack_BEMYCAPTAIN_seaman );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Nevad√≠. Byl to jen n√°pad.", DIA_Jack_BEMYCAPTAIN_no );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Pot√¢ebuju tvoje n√°mo√¢nick√Ω zku≈°enosti.", DIA_Jack_BEMYCAPTAIN_seaman );
 
 };
 
 func void DIA_Jack_BEMYCAPTAIN_seaman ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_00"); //Pot‚ebuju tvoje n·mo‚nick˝ zkuöenosti.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_01"); //U vöech rozvrzanejch foöen. Co m·ö za lubem, chlapËe? Nehodl·ö si vyzkouöet palubu kr·lovsk˝ v·leËn˝ galÈry, ûe ne?
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_02"); //Kdo vÌ?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_03"); //(smÌch) To by mohlo nÍco znamenat. No dobr·. Nem˘ûu tu ale nechat maj·k jen tak. Mmh. Co s tÌm udÍl·me?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_00"); //Pot√¢ebuju tvoje n√°mo√¢nick√Ω zku≈°enosti.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_01"); //U v≈°ech rozvrzanejch fo≈°en. Co m√°≈° za lubem, chlapƒçe? Nehodl√°≈° si vyzkou≈°et palubu kr√°lovsk√Ω v√°leƒçn√Ω gal√©ry, ≈æe ne?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_02"); //Kdo v√≠?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_03"); //(sm√≠ch) To by mohlo nƒôco znamenat. No dobr√°. Nem≈Ø≈æu tu ale nechat maj√°k jen tak. Mmh. Co s t√≠m udƒôl√°me?
 	
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                        
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                      
-	B_LogEntry (TOPIC_Captain,"Ze starÈho n·mo‚nÌka Jacka z p‚Ìstavu m˘ûe b˝t dobr˝ kapit·n - nejd‚Ìv ale musÌm sehnat nÍkoho, kdo mu ohlÌd· maj·k."); 
+	B_LogEntry (TOPIC_Captain,"Ze star√©ho n√°mo√¢n√≠ka Jacka z p√¢√≠stavu m≈Ø≈æe b√Ωt dobr√Ω kapit√°n - nejd√¢√≠v ale mus√≠m sehnat nƒôkoho, kdo mu ohl√≠d√° maj√°k."); 
 	
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "NevadÌ. Byl to jen n·pad.", DIA_Jack_BEMYCAPTAIN_no );
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Co kdyû ti nÍkoho p‚ivedu...?", DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Nevad√≠. Byl to jen n√°pad.", DIA_Jack_BEMYCAPTAIN_no );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Co kdy≈æ ti nƒôkoho p√¢ivedu...?", DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer );
 
 };
 func void DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_15_00"); //Co kdyû ti seûenu nÍkoho, kdo se zatÌm o maj·k postar·?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_01"); //To nenÌ öpatnej n·pad, hochu. A j· takov˝ho ËlovÍka zn·m.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_02"); //Kov·‚ Harad m· uËednÌka jmÈnem Brian. Uû jsem s nÌm hodnÍkr·t mluvil.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_03"); //ChtÍl bych sv˘j maj·k svÍ‚it pr·vÍ jemu. Myslim, ûe je pro to ten pravej.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_04"); //BÍû si s nÌm promluvit. Moûn· budeme mÌt ötÍstÌ a ten kluk n·m pom˘ûe.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_15_00"); //Co kdy≈æ ti se≈æenu nƒôkoho, kdo se zat√≠m o maj√°k postar√°?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_01"); //To nen√≠ ≈°patnej n√°pad, hochu. A j√° takov√Ωho ƒçlovƒôka zn√°m.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_02"); //Kov√°√¢ Harad m√° uƒçedn√≠ka jm√©nem Brian. U≈æ jsem s n√≠m hodnƒôkr√°t mluvil.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_03"); //Chtƒôl bych sv≈Øj maj√°k svƒô√¢it pr√°vƒô jemu. Myslim, ≈æe je pro to ten pravej.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_04"); //Bƒô≈æ si s n√≠m promluvit. Mo≈æn√° budeme m√≠t ≈°tƒôst√≠ a ten kluk n√°m pom≈Ø≈æe.
 	
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
 	MIS_Jack_NewLighthouseOfficer = LOG_RUNNING;
@@ -460,7 +460,7 @@ func void DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer ()
 
 func void DIA_Jack_BEMYCAPTAIN_no ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_no_15_00"); //NevadÌ. Byl to jen n·pad.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_no_15_00"); //Nevad√≠. Byl to jen n√°pad.
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
 };
 
@@ -474,7 +474,7 @@ instance DIA_Jack_BEMYCAPTAIN2		(C_INFO)
 	condition	 = 	DIA_Jack_BEMYCAPTAIN2_Condition;
 	information	 = 	DIA_Jack_BEMYCAPTAIN2_Info;
 
-	description	 = 	"Co se t˝Ëe Briana...";
+	description	 = 	"Co se t√Ωƒçe Briana...";
 };
 
 func int DIA_Jack_BEMYCAPTAIN2_Condition ()
@@ -490,24 +490,24 @@ func void DIA_Jack_BEMYCAPTAIN2_Info ()
 {
 	if (Npc_IsDead(Brian))
 	{
-			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_00"); //Brian je mrtv˝.
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_01"); //Ach. Tohle jsou straön˝ Ëasy. A byli jsme tak dobr˝ k·moöi.
+			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_00"); //Brian je mrtv√Ω.
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_01"); //Ach. Tohle jsou stra≈°n√Ω ƒçasy. A byli jsme tak dobr√Ω k√°mo≈°i.
 			MIS_Jack_NewLighthouseOfficer = LOG_OBSOLETE;
 	}
 	else
 	{
-			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_02"); //Brian se odteÎ bude starat o tv˘j maj·k.
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_03"); //Doufal jsem, ûe to ‚ekneö.
+			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_02"); //Brian se odte√´ bude starat o tv≈Øj maj√°k.
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_03"); //Doufal jsem, ≈æe to √¢ekne≈°.
 			B_GivePlayerXP (XP_Jack_NewLighthouseOfficer);
  
 		
 			if (SCGotCaptain == FALSE)
 			{
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_04"); //JeötÍ po‚·d mÍ pot‚ebujeö?
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_04"); //Je≈°tƒô po√¢√°d mƒô pot√¢ebuje≈°?
 			}
 			else
 			{
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_05"); //PodÌv·me se, jestli je ten kluk k nÍËemu dobrej.
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_05"); //Pod√≠v√°me se, jestli je ten kluk k nƒôƒçemu dobrej.
 			AI_StopProcessInfos (self);
 			};
 	};
@@ -523,7 +523,7 @@ instance DIA_Jack_BEMYCAPTAIN3		(C_INFO)
 	condition	 = 	DIA_Jack_BEMYCAPTAIN3_Condition;
 	information	 = 	DIA_Jack_BEMYCAPTAIN3_Info;
 
-	description	 = 	"BuÎ m˝m kapit·nem.";
+	description	 = 	"Bu√´ m√Ωm kapit√°nem.";
 };
 
 func int DIA_Jack_BEMYCAPTAIN3_Condition ()
@@ -538,13 +538,13 @@ func int DIA_Jack_BEMYCAPTAIN3_Condition ()
 
 func void DIA_Jack_BEMYCAPTAIN3_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_00"); //BuÎ m˝m kapit·nem.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_01"); //Proplul jsem sedmero mo‚Ì, hochu, ale jeötÍ nikdy jsem nebyl kapit·nem lodi.
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_02"); //O navigaci nevÌm v˘bec nic. MÍl by ses toho ujmout s·m.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_03"); //UdÍl·m, co bude v m˝ch sil·ch.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_04"); //Tak mi ukaû svou loÎ i s pos·dkou. A vÌö ty v˘bec, kam m·me namÌ‚eno? Myslim, jestli m·ö n·mo‚nÌ mapu?
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_05"); //PoËkej na mÍ v p‚Ìstavu. O zbytek se nestarej.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_06"); //Kdyû to ‚Ìk·ö.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_00"); //Bu√´ m√Ωm kapit√°nem.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_01"); //Proplul jsem sedmero mo√¢√≠, hochu, ale je≈°tƒô nikdy jsem nebyl kapit√°nem lodi.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_02"); //O navigaci nev√≠m v≈Øbec nic. Mƒôl by ses toho ujmout s√°m.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_03"); //Udƒôl√°m, co bude v m√Ωch sil√°ch.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_04"); //Tak mi uka≈æ svou lo√´ i s pos√°dkou. A v√≠≈° ty v≈Øbec, kam m√°me nam√≠√¢eno? Myslim, jestli m√°≈° n√°mo√¢n√≠ mapu?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_05"); //Poƒçkej na mƒô v p√¢√≠stavu. O zbytek se nestarej.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_06"); //Kdy≈æ to √¢√≠k√°≈°.
 	AI_StopProcessInfos (self);
 	SCGotCaptain = TRUE;
 	JackIsCaptain = TRUE;
@@ -565,7 +565,7 @@ instance DIA_Jack_LOSFAHREN		(C_INFO)
 	information	 = 	DIA_Jack_LOSFAHREN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Dobr·, starochu. Tak vyplouv·me.";
+	description	 = 	"Dobr√°, starochu. Tak vyplouv√°me.";
 };
 
 func int DIA_Jack_LOSFAHREN_Condition ()
@@ -579,21 +579,21 @@ func int DIA_Jack_LOSFAHREN_Condition ()
 
 func void DIA_Jack_LOSFAHREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_LOSFAHREN_15_00"); //Dobr·, starochu. Tak vyplouv·me.
+	AI_Output			(other, self, "DIA_Jack_LOSFAHREN_15_00"); //Dobr√°, starochu. Tak vyplouv√°me.
 
 	if ((B_CaptainConditions (self)) == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_01"); //Vöechno je v po‚·dku. Tak mi ukaû tu n·mo‚nÌ mapu.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_02"); //To bude pÍknej v˝let. Douf·m, ûe se tam dostaneme v jednom kuse.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_03"); //M·ö opravdu vöechno, co pot‚ebujeö? Nebudeme se vracet jen proto, ûe jsi nÍco zapomnÍl.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_04"); //Jestli si seö jistej, ûe m·me opravdu vöechno, bÍû do kapit·nsk˝ kajuty a dej si dvacet. ProspÍje ti to.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_01"); //V≈°echno je v po√¢√°dku. Tak mi uka≈æ tu n√°mo√¢n√≠ mapu.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_02"); //To bude pƒôknej v√Ωlet. Douf√°m, ≈æe se tam dostaneme v jednom kuse.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_03"); //M√°≈° opravdu v≈°echno, co pot√¢ebuje≈°? Nebudeme se vracet jen proto, ≈æe jsi nƒôco zapomnƒôl.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_04"); //Jestli si se≈° jistej, ≈æe m√°me opravdu v≈°echno, bƒô≈æ do kapit√°nsk√Ω kajuty a dej si dvacet. Prospƒôje ti to.
 		AI_StopProcessInfos (self);
 		B_CaptainCallsAllOnBoard (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_05"); //KlÌdek, chlapËe. JeötÍ jsem ten ökopek nevidÍl. Takhle to nepude.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_06"); //Nejd‚Ìv budeö pot‚ebovat kompletnÌ pos·dku s minim·lnÍ pÍti chlapama, voln˝ p‚Ìstup na loÎ a n·mo‚nÌ mapu. Jinak na to zapome‡.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_05"); //Kl√≠dek, chlapƒçe. Je≈°tƒô jsem ten ≈°kopek nevidƒôl. Takhle to nepude.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_06"); //Nejd√¢√≠v bude≈° pot√¢ebovat kompletn√≠ pos√°dku s minim√°lnƒô pƒôti chlapama, voln√Ω p√¢√≠stup na lo√´ a n√°mo√¢n√≠ mapu. Jinak na to zapome≈ï.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -627,7 +627,7 @@ func int DIA_Jack_PERM5_NOTCAPTAIN_Condition ()
 func void DIA_Jack_PERM5_NOTCAPTAIN_Info ()
 {
 	AI_Output			(other, self, "DIA_Jack_PERM5_NOTCAPTAIN_15_00"); //Co bude pak?
-	AI_Output			(self, other, "DIA_Jack_PERM5_NOTCAPTAIN_14_01"); //Rozmyslel jsem si to. Z˘stanu tady a budu radÍj hlÌdat sv˘j maj·k.
+	AI_Output			(self, other, "DIA_Jack_PERM5_NOTCAPTAIN_14_01"); //Rozmyslel jsem si to. Z≈Østanu tady a budu radƒôj hl√≠dat sv≈Øj maj√°k.
 	
 	AI_StopProcessInfos (self);
 };

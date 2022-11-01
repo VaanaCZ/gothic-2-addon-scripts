@@ -19,7 +19,7 @@ FUNC VOID DIA_Addon_Franco_EXIT_Info()
 	if (Franco_Exit == FALSE)
 	&& (MIS_HlpLogan == LOG_RUNNING)
 	{
-		AI_Output(self,other,"DIA_Addon_Franco_EXIT_08_00");//NesmÌö zabloudit, jinak si tÍ ûraloci dajÌ jako z·kusek.
+		AI_Output(self,other,"DIA_Addon_Franco_EXIT_08_00");//Nesm√≠≈° zabloudit, jinak si tƒô ≈æraloci daj√≠ jako z√°kusek.
 		Franco_Exit = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -34,7 +34,7 @@ INSTANCE DIA_Franco_PICKPOCKET (C_INFO)
 	condition	= DIA_Franco_PICKPOCKET_Condition;
 	information	= DIA_Franco_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Ukr·st tento amulet by bylo velice riskantnÌ)";
+	description = "(Ukr√°st tento amulet by bylo velice riskantn√≠)";
 };                       
 
 FUNC INT DIA_Franco_PICKPOCKET_Condition()
@@ -100,17 +100,17 @@ FUNC VOID DIA_Addon_Franco_HI_Info()
 {	
 	Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Franco,"Kdyû pro Franca odvedu dobrou pr·ci, pustÌ mÍ do t·bora.");
+	B_LogEntry (Topic_Addon_Franco,"Kdy≈æ pro Franca odvedu dobrou pr√°ci, pust√≠ mƒô do t√°bora.");
 	
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_00");//Hele, co tu dÍl·ö? Chceö se dostat do t·bora?
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_00");//Hele, co tu dƒôl√°≈°? Chce≈° se dostat do t√°bora?
 	AI_Output (other,self,"DIA_Addon_Franco_HI_15_01");//Ano, chci.
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//Je mi fuk, kdo jsi. J· jsem Franco a j· to tady vedu.
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Takûe jestli chceö dobrou pr·ci, zavedu tÍ do t·bora.
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//Je mi fuk, kdo jsi. J√° jsem Franco a j√° to tady vedu.
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Tak≈æe jestli chce≈° dobrou pr√°ci, zavedu tƒô do t√°bora.
 	
 	if (Ramon_News == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Vr·tn˝ Ramon m· p‚ehled, jestli pot‚ebujou nov˝ lidi. Promluv si s nÌm.
-		B_LogEntry (Topic_Addon_Franco,"M·m se optat vr·tnÈho Ramona, jestli v t·bo‚e nepot‚ebujÌ nÍkoho novÈho.");
+		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Vr√°tn√Ω Ramon m√° p√¢ehled, jestli pot√¢ebujou nov√Ω lidi. Promluv si s n√≠m.
+		B_LogEntry (Topic_Addon_Franco,"M√°m se optat vr√°tn√©ho Ramona, jestli v t√°bo√¢e nepot√¢ebuj√≠ nƒôkoho nov√©ho.");
 	};
 };
 //---------------------------------------------------------------------
@@ -123,7 +123,7 @@ INSTANCE DIA_Addon_Franco_Hai   (C_INFO)
 	condition   = DIA_Addon_Franco_Hai_Condition;
 	information = DIA_Addon_Franco_Hai_Info;
 	permanent   = FALSE;
-	description = "Thorus pot‚ebuje nÍkoho novÈho.";
+	description = "Thorus pot√¢ebuje nƒôkoho nov√©ho.";
 };
 FUNC INT DIA_Addon_Franco_Hai_Condition()
 {	
@@ -135,15 +135,15 @@ FUNC INT DIA_Addon_Franco_Hai_Condition()
 FUNC VOID DIA_Addon_Franco_Hai_Info()
 {	
 	
-	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_00");//Thorus pot‚ebuje nov˝ho ËlovÍka.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_01");//Fajn, postar·m se o to.
-	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_02");//Moment, a co j·?
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_03");//Tys jeötÍ nic neudÍlal.
-	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_04");//Uû jsem toho udÍlal spoustu, akor·t ûe o tom nevÌö.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_05");//No, jestli chceö öanci, tak ji dostaneö. Zvedni zadek a zajdi za Loganem. MoË·lovÌ ûraloci uû mu dejchaj za krk.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_06");//Pomoz mu ty potvory pobÌt a bude to skoro stejn˝, jako kdybys byl v t·bo‚e.
+	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_00");//Thorus pot√¢ebuje nov√Ωho ƒçlovƒôka.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_01");//Fajn, postar√°m se o to.
+	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_02");//Moment, a co j√°?
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_03");//Tys je≈°tƒô nic neudƒôlal.
+	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_04");//U≈æ jsem toho udƒôlal spoustu, akor√°t ≈æe o tom nev√≠≈°.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_05");//No, jestli chce≈° ≈°anci, tak ji dostane≈°. Zvedni zadek a zajdi za Loganem. Moƒç√°lov√≠ ≈æraloci u≈æ mu dejchaj za krk.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_06");//Pomoz mu ty potvory pob√≠t a bude to skoro stejn√Ω, jako kdybys byl v t√°bo√¢e.
 	
-	B_LogEntry (Topic_Addon_Franco,"Franco chce, abych nap‚ed pomohl Loganovi. Teprve pak mÍ pustÌ do t·bora.");
+	B_LogEntry (Topic_Addon_Franco,"Franco chce, abych nap√¢ed pomohl Loganovi. Teprve pak mƒô pust√≠ do t√°bora.");
 };
 //---------------------------------------------------------------------
 //	Info Logan Wo?
@@ -169,7 +169,7 @@ FUNC INT DIA_Addon_Franco_Wo_Condition()
 FUNC VOID DIA_Addon_Franco_Wo_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_Wo_15_00");//Kde toho Logana najdu?
-	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Kdyû se postavÌö p‚ed vchod do t·bora, dej se podÈl kamenn˝ stÍny nalevo. Je to kousek d·l v baûinÍ.
+	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Kdy≈æ se postav√≠≈° p√¢ed vchod do t√°bora, dej se pod√©l kamenn√Ω stƒôny nalevo. Je to kousek d√°l v ba≈æinƒô.
 	AI_StopProcessInfos (self);
 };
 //---------------------------------------------------------------------
@@ -182,7 +182,7 @@ INSTANCE DIA_Addon_Franco_tot   (C_INFO)
 	condition   = DIA_Addon_Franco_tot_Condition;
 	information = DIA_Addon_Franco_tot_Info;
 	permanent   = FALSE;
-	description = "Logan je mrtv˝.";
+	description = "Logan je mrtv√Ω.";
 };
 FUNC INT DIA_Addon_Franco_tot_Condition()
 {	
@@ -195,9 +195,9 @@ FUNC INT DIA_Addon_Franco_tot_Condition()
 };
 FUNC VOID DIA_Addon_Franco_tot_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_tot_15_00");//Logan je mrtv˝.
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Sakra. Byl to nejlepöÌ lovec, jak˝ho jsme tu mÍli. Zatracen· vÍc!
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//Ale stejnÍ uû jsem do t·bora poslal nÍkoho jin˝ho.
+	AI_Output (other,self,"DIA_Addon_Franco_tot_15_00");//Logan je mrtv√Ω.
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Sakra. Byl to nejlep≈°√≠ lovec, jak√Ωho jsme tu mƒôli. Zatracen√° vƒôc!
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//Ale stejnƒô u≈æ jsem do t√°bora poslal nƒôkoho jin√Ωho.
 	
 	if (MIS_HlpLogan == LOG_RUNNING)
 	{
@@ -231,12 +231,12 @@ FUNC VOID DIA_Addon_Franco_HaiSuccess_Info()
 	
 	if Npc_IsDead (Logan)
 	{
-		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//ale nep‚eûil to.
+		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//ale nep√¢e≈æil to.
 	};
-	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//No dob‚e, tak jsi pobil p·r moË·lovejch ûralok˘ ñ p‚ece jenom nejsi ˙plnej budiûkniËemu. Aspo‡ jsi lepöÌ neû vÍtöina zdejöÌch chlap˘.
+	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//No dob√¢e, tak jsi pobil p√°r moƒç√°lovejch ≈æralok≈Ø ‚Äì p√¢ece jenom nejsi √∫plnej budi≈ækniƒçemu. Aspo≈ï jsi lep≈°√≠ ne≈æ vƒôt≈°ina zdej≈°√≠ch chlap≈Ø.
 	B_GivePlayerXP (XP_Addon_HlpLogan);
 	
-	B_LogEntry (Topic_Addon_Franco,"Sice jsem pomohl Loganovi, ale Francovi to nestaËilo a st·le mÍ nechce poslat do t·bora.");
+	B_LogEntry (Topic_Addon_Franco,"Sice jsem pomohl Loganovi, ale Francovi to nestaƒçilo a st√°le mƒô nechce poslat do t√°bora.");
 };
 
 //---------------------------------------------------------------------
@@ -249,7 +249,7 @@ INSTANCE DIA_Addon_Franco_Mis2 (C_INFO)
 	condition   = DIA_Addon_Franco_Mis2_Condition;
 	information = DIA_Addon_Franco_Mis2_Info;
 	permanent   = FALSE;
-	description = "Tak m˘ûu uû jÌt do t·bora?";
+	description = "Tak m≈Ø≈æu u≈æ j√≠t do t√°bora?";
 };
 FUNC INT DIA_Addon_Franco_Mis2_Condition()
 {	
@@ -261,19 +261,19 @@ FUNC INT DIA_Addon_Franco_Mis2_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Mis2_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_MIS2_15_00");//Tak m˘ûu uû teÎ do t·bora?
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_01");//Hele, pot‚ebuju od tebe jeötÍ jednu vÍc.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_02");//P‚ed p·r dny jsem poslal do baûin Egora.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_03");//MÍl mi najÌt starou kamennou tabulku, ale jeötÍ se nevr·til.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_04");//Zjisti, co dÍl·, a tu zatracenou tabulku mi dones.
+	AI_Output (other,self,"DIA_Addon_Franco_MIS2_15_00");//Tak m≈Ø≈æu u≈æ te√´ do t√°bora?
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_01");//Hele, pot√¢ebuju od tebe je≈°tƒô jednu vƒôc.
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_02");//P√¢ed p√°r dny jsem poslal do ba≈æin Egora.
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_03");//Mƒôl mi naj√≠t starou kamennou tabulku, ale je≈°tƒô se nevr√°til.
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_04");//Zjisti, co dƒôl√°, a tu zatracenou tabulku mi dones.
 	
 	MIS_HlpEdgor = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_Addon_Stoneplate,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Stoneplate,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Stoneplate,"Franco chce kamennou tabulku, kterou mu mÍl p‚inÈst Edgor. TeÎ to m·m vy‚Ìdit j·.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Franco chce kamennou tabulku, kterou mu mƒôl p√¢in√©st Edgor. Te√´ to m√°m vy√¢√≠dit j√°.");
 	
-	B_LogEntry (Topic_Addon_Franco,"Franco chce, abych pomohl Edgorovi. Teprve pak mÍ poöle do t·bora.");
+	B_LogEntry (Topic_Addon_Franco,"Franco chce, abych pomohl Edgorovi. Teprve pak mƒô po≈°le do t√°bora.");
 };
 
 //---------------------------------------------------------------------
@@ -298,11 +298,11 @@ FUNC INT DIA_Addon_Franco_While_Condition()
 FUNC VOID DIA_Addon_Franco_While_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_While_15_00");//A co takhle zlato?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_01");//Coûe?
-	AI_Output (other,self,"DIA_Addon_Franco_While_15_02");//Dostanu tu za pr·ci v baûinÍ nÍco zaplaceno?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(mimo‚·dnÍ p‚·telsky) ChtÍl bys zlato? Ale jistÍ, kolik by sis tak p‚edstavoval? Pades·t zlatejch nugget˘? Nebo stovku? D·m ti tolik, kolik uneseö...
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_04");//(nahlas) Kdo si myslÌö ûe jsi? DÍl·ö si ze mÍ bl·zny?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//Tak vypal a koukej nÍco dÍlat! Jinak nedostaneö ANI DROBEK zlata!
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_01");//Co≈æe?
+	AI_Output (other,self,"DIA_Addon_Franco_While_15_02");//Dostanu tu za pr√°ci v ba≈æinƒô nƒôco zaplaceno?
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(mimo√¢√°dnƒô p√¢√°telsky) Chtƒôl bys zlato? Ale jistƒô, kolik by sis tak p√¢edstavoval? Pades√°t zlatejch nugget≈Ø? Nebo stovku? D√°m ti tolik, kolik unese≈°...
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_04");//(nahlas) Kdo si mysl√≠≈° ≈æe jsi? Dƒôl√°≈° si ze mƒô bl√°zny?
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//Tak vypal a koukej nƒôco dƒôlat! Jinak nedostane≈° ANI DROBEK zlata!
 	AI_StopProcessInfos(self);
 };
 
@@ -316,7 +316,7 @@ INSTANCE DIA_Addon_Franco_WOEDGOR   (C_INFO)
 	condition   = DIA_Addon_Franco_WOEDGOR_Condition;
 	information = DIA_Addon_Franco_WOEDGOR_Info;
 	permanent   = TRUE;
-	description = "Tak KDE m·m teda toho Edgora hledat?";
+	description = "Tak KDE m√°m teda toho Edgora hledat?";
 };
 FUNC INT DIA_Addon_Franco_WOEDGOR_Condition()
 {	
@@ -329,24 +329,24 @@ FUNC INT DIA_Addon_Franco_WOEDGOR_Condition()
 FUNC VOID DIA_Addon_Franco_WOEDGOR_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_15_00"); //(povzdech) Tak KDE najdu toho Edgora?
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_08_01"); //Chceö vÍdÍt, jak to udÍlat rychle, nebo jednoduöe.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_08_01"); //Chce≈° vƒôdƒôt, jak to udƒôlat rychle, nebo jednodu≈°e.
 	
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
-	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Vy‚ÌdÌm to rychle." ,DIA_Addon_Franco_WOEDGOR_Fast);
-	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Jak˝ je ten snadn˝ zp˘sob?" ,DIA_Addon_Franco_WOEDGOR_Easy);
+	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Vy√¢√≠d√≠m to rychle." ,DIA_Addon_Franco_WOEDGOR_Fast);
+	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Jak√Ω je ten snadn√Ω zp≈Øsob?" ,DIA_Addon_Franco_WOEDGOR_Easy);
 };
 
 func void B_Addon_Franco_There()
 {
-	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Je to tu sam· rozvalina. NÍkde tam posed·v·.
-	AI_Output (self,other,"DIA_Addon_Franco_There_08_01"); //PoËÌt·m, ûe byl dost chytrej, aby si rozdÍlal ohe‡. Aspo‡ TEN bys moh najÌt.
+	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Je to tu sam√° rozvalina. Nƒôkde tam posed√°v√°.
+	AI_Output (self,other,"DIA_Addon_Franco_There_08_01"); //Poƒç√≠t√°m, ≈æe byl dost chytrej, aby si rozdƒôlal ohe≈ï. Aspo≈ï TEN bys moh naj√≠t.
 };
 
 func void DIA_Addon_Franco_WOEDGOR_Easy()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Jak˝ je ten jednoduch˝ zp˘sob?
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //BÍû po cestÍ od p‚ednÌ br·ny. NÍkde by tam mÍl post·vat Sancho.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Tam zaboË vlevo a drû se na chodnÌku.
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Jak√Ω je ten jednoduch√Ω zp≈Øsob?
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Bƒô≈æ po cestƒô od p√¢edn√≠ br√°ny. Nƒôkde by tam mƒôl post√°vat Sancho.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Tam zaboƒç vlevo a dr≈æ se na chodn√≠ku.
 	
 	B_Addon_Franco_There();
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
@@ -354,8 +354,8 @@ func void DIA_Addon_Franco_WOEDGOR_Easy()
 
 func void DIA_Addon_Franco_WOEDGOR_Fast()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //Byl bych pro rychlÈ ‚eöenÌ.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //Fajn. Odsud vyraû ˙hlop‚ÌËnÍ p‚es chodnÌk aû do baûiny.
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //Byl bych pro rychl√© √¢e≈°en√≠.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //Fajn. Odsud vyra≈æ √∫hlop√¢√≠ƒçnƒô p√¢es chodn√≠k a≈æ do ba≈æiny.
 	
 	B_Addon_Franco_There();
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
@@ -370,7 +370,7 @@ INSTANCE DIA_Addon_Franco_tafel   (C_INFO)
 	condition   = DIA_Addon_Franco_tafel_Condition;
 	information = DIA_Addon_Franco_tafel_Info;
 	permanent   = FALSE;
-	description = "Tady m·ö tu kamennou tabulku.";
+	description = "Tady m√°≈° tu kamennou tabulku.";
 };
 FUNC INT DIA_Addon_Franco_tafel_Condition()
 {	
@@ -382,14 +382,14 @@ FUNC INT DIA_Addon_Franco_tafel_Condition()
 };
 FUNC VOID DIA_Addon_Franco_tafel_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_tafel_15_00");//Tam najdeö kamennou tabulku.
+	AI_Output (other,self,"DIA_Addon_Franco_tafel_15_00");//Tam najde≈° kamennou tabulku.
 	B_GiveInvItems (other, self, ItMi_Addon_Stone_04,1);
 	
-	AI_Output (self,other,"DIA_Addon_Franco_tafel_08_01");//Dob‚e, velmi dob‚e. Havran z tebe bude mÌt radost.
+	AI_Output (self,other,"DIA_Addon_Franco_tafel_08_01");//Dob√¢e, velmi dob√¢e. Havran z tebe bude m√≠t radost.
 	MIS_HlpEdgor = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_HlpEdgor);
 	
-	B_LogEntry (Topic_Addon_Franco,"P‚inesl jsem Francovi kamennou tabulku, kterou po mnÍ chtÍl.");
+	B_LogEntry (Topic_Addon_Franco,"P√¢inesl jsem Francovi kamennou tabulku, kterou po mnƒô chtƒôl.");
 };
 
 //---------------------------------------------------------------------
@@ -402,7 +402,7 @@ INSTANCE DIA_Addon_Franco_JemandAnderen   (C_INFO)
 	condition   = DIA_Addon_Franco_JemandAnderen_Condition;
 	information = DIA_Addon_Franco_JemandAnderen_Info;
 	permanent   = FALSE;
-	description = "A co bude teda s tÌm t·borem? Uû mÍ tam koneËnÍ pustÌö?";
+	description = "A co bude teda s t√≠m t√°borem? U≈æ mƒô tam koneƒçnƒô pust√≠≈°?";
 };
 FUNC INT DIA_Addon_Franco_JemandAnderen_Condition()
 {	
@@ -413,11 +413,11 @@ FUNC INT DIA_Addon_Franco_JemandAnderen_Condition()
 };
 FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_JemandAnderen_15_00");//A co bude s tÌm t·borem? M˘ûu uû koneËnÍ dovnit‚?
+	AI_Output (other,self,"DIA_Addon_Franco_JemandAnderen_15_00");//A co bude s t√≠m t√°borem? M≈Ø≈æu u≈æ koneƒçnƒô dovnit√¢?
 	
 	if !Npc_IsDead (Logan)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_01");//Ne, uû jsem tam poslal Logana. Byl na seznamu p‚ed tebou.
+		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_01");//Ne, u≈æ jsem tam poslal Logana. Byl na seznamu p√¢ed tebou.
 		
 		Logan_Inside = TRUE;
 		AI_Teleport (Logan,"BL_INN_CORNER_02");
@@ -425,13 +425,13 @@ FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//Ne, uû jsem tam poslal nÍkoho jin˝ho.
+		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//Ne, u≈æ jsem tam poslal nƒôkoho jin√Ωho.
 	};
 	
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//A zrovna teÎ uû v t·bo‚e nikoho dalöÌho nepot‚ebujou.
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//Krom toho bych tÍ fakt vyuûil tady, (öklebÌ se), kdyû uû tu nenÌ Logan.
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//A zrovna te√´ u≈æ v t√°bo√¢e nikoho dal≈°√≠ho nepot√¢ebujou.
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//Krom toho bych tƒô fakt vyu≈æil tady, (≈°kleb√≠ se), kdy≈æ u≈æ tu nen√≠ Logan.
 		
-	B_LogEntry (Topic_Addon_Franco,"Franco mÍ do t·bora prostÍ nepustÌ. MyslÌm, ûe mu to budu muset vysvÍtlit ruËnÍ.");
+	B_LogEntry (Topic_Addon_Franco,"Franco mƒô do t√°bora prostƒô nepust√≠. Mysl√≠m, ≈æe mu to budu muset vysvƒôtlit ruƒçnƒô.");
 };
 
 //---------------------------------------------------------------------
@@ -444,7 +444,7 @@ INSTANCE DIA_Addon_Franco_Fight   (C_INFO)
 	condition   = DIA_Addon_Franco_Fight_Condition;
 	information = DIA_Addon_Franco_Fight_Info;
 	permanent   = TRUE;
-	description = "Poöli mÍ tam. HNED!";
+	description = "Po≈°li mƒô tam. HNED!";
 };
 FUNC INT DIA_Addon_Franco_Fight_Condition()
 {	
@@ -452,18 +452,18 @@ FUNC INT DIA_Addon_Franco_Fight_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Fight_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_Fight_15_00"); //OKAMéIT  mÍ tam poöli!
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_08_01"); //(nebezpeËnÍ p‚·telsky) A co kdyû ‚eknu ne?
+	AI_Output (other,self,"DIA_Addon_Franco_Fight_15_00"); //OKAM≈ΩITƒò mƒô tam po≈°li!
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_08_01"); //(nebezpeƒçnƒô p√¢√°telsky) A co kdy≈æ √¢eknu ne?
 	
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
-	Info_AddChoice (DIA_Addon_Franco_Fight, "Tak teda jeötÍ chvÌli poËk·m." ,DIA_Addon_Franco_Fight_Nothing);
-	Info_AddChoice (DIA_Addon_Franco_Fight, "Tak toho budeö litovat." ,DIA_Addon_Franco_Fight_Duel);
+	Info_AddChoice (DIA_Addon_Franco_Fight, "Tak teda je≈°tƒô chv√≠li poƒçk√°m." ,DIA_Addon_Franco_Fight_Nothing);
+	Info_AddChoice (DIA_Addon_Franco_Fight, "Tak toho bude≈° litovat." ,DIA_Addon_Franco_Fight_Duel);
 };
 
 func void DIA_Addon_Franco_Fight_Duel()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_Fight_Duel_15_00"); //Pak toho budeö prostÍ litovat.
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Ty se mi opovaûujeö vyhroûovat? TY chceö vyhroûovat MN ? Tak to si koledujeö vo po‚·dnou lekci!
+	AI_Output (other,self,"DIA_Addon_Franco_Fight_Duel_15_00"); //Pak toho bude≈° prostƒô litovat.
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Ty se mi opova≈æuje≈° vyhro≈æovat? TY chce≈° vyhro≈æovat MNƒò? Tak to si koleduje≈° vo po√¢√°dnou lekci!
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -471,8 +471,8 @@ func void DIA_Addon_Franco_Fight_Duel()
 
 func void DIA_Addon_Franco_Fight_Nothing()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_Fight_Nothing_15_00"); //Tak to si budeö muset poËkat.
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_Nothing_08_01"); //(posmÍönÍ) P‚esnÍ tak.
+	AI_Output (other,self,"DIA_Addon_Franco_Fight_Nothing_15_00"); //Tak to si bude≈° muset poƒçkat.
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_Nothing_08_01"); //(posmƒô≈°nƒô) P√¢esnƒô tak.
 	
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
@@ -488,7 +488,7 @@ INSTANCE DIA_Addon_Franco_Pig   (C_INFO)
 	condition   = DIA_Addon_Franco_Pig_Condition;
 	information = DIA_Addon_Franco_Pig_Info;
 	permanent   = TRUE;
-	description = "Ty hajzle! Za tohle tÍ dostanu!";
+	description = "Ty hajzle! Za tohle tƒô dostanu!";
 };
 FUNC INT DIA_Addon_Franco_Pig_Condition()
 {	
@@ -499,8 +499,8 @@ FUNC INT DIA_Addon_Franco_Pig_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Pig_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_Pig_15_00");//Ty svinÍ! J· tÍ dostanu!
-	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//(podr·ûdÍnÍ) Ty mizernej malej uboû·ku, ty si dovolujeö na mÍ? Jen poËkej!
+	AI_Output (other,self,"DIA_Addon_Franco_Pig_15_00");//Ty svinƒô! J√° tƒô dostanu!
+	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//(podr√°≈ædƒônƒô) Ty mizernej malej ubo≈æ√°ku, ty si dovoluje≈° na mƒô? Jen poƒçkej!
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);

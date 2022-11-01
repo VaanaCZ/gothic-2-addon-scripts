@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wert von Tiertroph‰en
+// Wert von Tiertroph√§en
 // ************************************************************************************************
 
 //Addon
@@ -68,7 +68,7 @@ INSTANCE ItAt_Addon_BCKopf (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Meatbugflesh (C_Item)
 {
-	name 				=	"HmyzÌ maso";
+	name 				=	"Hmyz√≠ maso";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -96,7 +96,7 @@ INSTANCE ItAt_Meatbugflesh (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SheepFur (C_Item)
 {
-	name 				=	"OvËÌ k˘ûe";
+	name 				=	"Ovƒç√≠ k≈Ø≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -116,7 +116,7 @@ INSTANCE ItAt_SheepFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WolfFur (C_Item)
 {
-	name 				=	"VlËÌ k˘ûe";
+	name 				=	"Vlƒç√≠ k≈Ø≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -136,7 +136,7 @@ INSTANCE ItAt_WolfFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_BugMandibles (C_Item)
 {
-	name 				=	"Kusadla polnÌho ök˘dce";
+	name 				=	"Kusadla poln√≠ho ≈°k≈Ødce";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -156,7 +156,7 @@ INSTANCE ItAt_BugMandibles (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Claw (C_Item)
 {
-	name 				=	"Dr·py";
+	name 				=	"Dr√°py";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -176,7 +176,7 @@ INSTANCE ItAt_Claw (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_LurkerClaw (C_Item)
 {
-	name 				=	"Dr·py ËÌhavce";
+	name 				=	"Dr√°py ƒç√≠havce";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -216,7 +216,7 @@ INSTANCE ItAt_Teeth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_CrawlerMandibles (C_Item)
 {
-	name 				=	"Kusadla d˘lnÌho Ëerva";
+	name 				=	"Kusadla d≈Øln√≠ho ƒçerva";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -230,10 +230,10 @@ INSTANCE ItAt_CrawlerMandibles (C_Item)
 	
 	description			= 	name;
 	
-	TEXT[0]				= 	"Kusadla lze rozev‚Ìt";
-	TEXT[1]				= 	"a vypÌt v˝mÍöek, kter˝ se v nich skr˝v·.";
+	TEXT[0]				= 	"Kusadla lze rozev√¢√≠t";
+	TEXT[1]				= 	"a vyp√≠t v√Ωmƒô≈°ek, kter√Ω se v nich skr√Ωv√°.";
 	TEXT[2]				= 	"Regeneruje magii.";
-	TEXT[3]				= 	"⁄Ëinky Ëasem pominou.";
+	TEXT[3]				= 	"√öƒçinky ƒçasem pominou.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 FUNC VOID Use_Mandibles()
@@ -253,7 +253,7 @@ FUNC VOID Use_Mandibles()
 /******************************************************************************************/
 INSTANCE ItAt_Wing (C_Item)
 {
-	name 				=	"K‚Ìdla";
+	name 				=	"K√¢√≠dla";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -273,7 +273,7 @@ INSTANCE ItAt_Wing (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Sting (C_Item)
 {
-	name 				=	"éihadlo";
+	name 				=	"≈Ωihadlo";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -288,7 +288,7 @@ INSTANCE ItAt_Sting (C_Item)
 
 	description			= 	name;
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"éihadlo";
+	TEXT[1]				= 	"≈Ωihadlo";
 	TEXT[2]				= 	"obsahuje jed.";
 	TEXT[3]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -323,7 +323,7 @@ FUNC VOID Use_Sting()
 /******************************************************************************************/
 INSTANCE itat_LurkerSkin (C_Item) //REPTILE Skin
 {
-	name 				=	"K˘ûe z plaza";
+	name 				=	"K≈Ø≈æe z plaza";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -333,7 +333,7 @@ INSTANCE itat_LurkerSkin (C_Item) //REPTILE Skin
 	visual 				=	"ItAt_LurkerSkin.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= 	"K˘ûe z plaza";
+	description			= 	"K≈Ø≈æe z plaza";
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
@@ -343,7 +343,7 @@ INSTANCE itat_LurkerSkin (C_Item) //REPTILE Skin
 /******************************************************************************************/
 INSTANCE ItAt_WargFur (C_Item)
 {
-	name 				=	"K˘ûe ze sk‚etÌho psa";
+	name 				=	"K≈Ø≈æe ze sk√¢et√≠ho psa";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -363,7 +363,7 @@ INSTANCE ItAt_WargFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Addon_KeilerFur (C_Item)
 {
-	name 				=	"KanËÌ k˘ûe";
+	name 				=	"Kanƒç√≠ k≈Ø≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -383,7 +383,7 @@ INSTANCE ItAt_Addon_KeilerFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DrgSnapperHorn (C_Item)
 {
-	name 				=	"Roh draËÌho ch‡apavce";
+	name 				=	"Roh draƒç√≠ho ch≈ïapavce";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -403,7 +403,7 @@ INSTANCE ItAt_DrgSnapperHorn (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_CrawlerPlate (C_Item)
 {
-	name 				=	"Krun˝‚ d˘lnÌho Ëerva";
+	name 				=	"Krun√Ω√¢ d≈Øln√≠ho ƒçerva";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -423,7 +423,7 @@ INSTANCE ItAt_CrawlerPlate (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowFur (C_Item)
 {
-	name 				=	"K˘ûe stÌnovÈ öelmy";
+	name 				=	"K≈Ø≈æe st√≠nov√© ≈°elmy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -443,7 +443,7 @@ INSTANCE ItAt_ShadowFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SharkSkin (C_Item)
 {
-	name 				=	"K˘ûe moË·lovÈho ûraloka";
+	name 				=	"K≈Ø≈æe moƒç√°lov√©ho ≈æraloka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -463,7 +463,7 @@ INSTANCE ItAt_SharkSkin (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollFur (C_Item)
 {
-	name 				=	"TrolÌ k˘ûe";
+	name 				=	"Trol√≠ k≈Ø≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -483,7 +483,7 @@ INSTANCE ItAt_TrollFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollBlackFur (C_Item)
 {
-	name 				=	"K˘ûe ËernÈho trola";
+	name 				=	"K≈Ø≈æe ƒçern√©ho trola";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -503,7 +503,7 @@ INSTANCE ItAt_TrollBlackFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WaranFiretongue (C_Item)
 {
-	name 				=	"Ohniv˝ jazyk";
+	name 				=	"Ohniv√Ω jazyk";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -523,7 +523,7 @@ INSTANCE ItAt_WaranFiretongue (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowHorn (C_Item)
 {
-	name 				=	"Roh stÌnovÈ öelmy";
+	name 				=	"Roh st√≠nov√© ≈°elmy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -543,7 +543,7 @@ INSTANCE ItAt_ShadowHorn (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SharkTeeth (C_Item)
 {
-	name 				=	"Zuby moË·lovÈho ûraloka";
+	name 				=	"Zuby moƒç√°lov√©ho ≈æraloka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -563,7 +563,7 @@ INSTANCE ItAt_SharkTeeth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollTooth (C_Item)
 {
-	name 				=	"TrolÌ tes·k";
+	name 				=	"Trol√≠ tes√°k";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -586,7 +586,7 @@ INSTANCE ItAt_TrollTooth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_StoneGolemHeart (C_Item)
 {
-	name 				=	"Srdce kamennÈho golema";
+	name 				=	"Srdce kamenn√©ho golema";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -608,7 +608,7 @@ INSTANCE ItAt_StoneGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FireGolemHeart (C_Item)
 {
-	name 				=	"Srdce ohnivÈho golema";
+	name 				=	"Srdce ohniv√©ho golema";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -630,7 +630,7 @@ INSTANCE ItAt_FireGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IceGolemHeart (C_Item)
 {
-	name 				=	"Srdce ledovÈho golema";
+	name 				=	"Srdce ledov√©ho golema";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -651,7 +651,7 @@ INSTANCE ItAt_IceGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_GoblinBone (C_Item)
 {
-	name 				=	"GoblinÌ kost";
+	name 				=	"Goblin√≠ kost";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -691,7 +691,7 @@ INSTANCE ItAt_SkeletonBone (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DemonHeart (C_Item)
 {
-	name 				=	"DÈmonovo srdce";
+	name 				=	"D√©monovo srdce";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -710,11 +710,11 @@ INSTANCE ItAt_DemonHeart (C_Item)
 };
 
 //**************************************************************************
-//					Drachentroph‰en		
+//					Drachentroph√§en		
 //**************************************************************************
 INSTANCE ItAt_UndeadDragonSoulStone (C_Item)
 {
-	name 				=	"K·men s duöÌ nemrtvÈho draka";
+	name 				=	"K√°men s du≈°√≠ nemrtv√©ho draka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -737,7 +737,7 @@ INSTANCE ItAt_UndeadDragonSoulStone (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IcedragonHeart (C_Item)
 {
-	name 				=	"Srdce ledovÈho draka";
+	name 				=	"Srdce ledov√©ho draka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -757,7 +757,7 @@ INSTANCE ItAt_IcedragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_RockdragonHeart (C_Item)
 {
-	name 				=	"Srdce kamennÈho draka";
+	name 				=	"Srdce kamenn√©ho draka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -777,7 +777,7 @@ INSTANCE ItAt_RockdragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SwampdragonHeart (C_Item)
 {
-	name 				=	"Srdce moË·lovÈho draka";
+	name 				=	"Srdce moƒç√°lov√©ho draka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION; 
@@ -797,7 +797,7 @@ INSTANCE ItAt_SwampdragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FiredragonHeart (C_Item)
 {
-	name 				=	"Srdce ohnivÈho draka";
+	name 				=	"Srdce ohniv√©ho draka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -817,7 +817,7 @@ INSTANCE ItAt_FiredragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DragonBlood (C_Item)
 {
-	name 				=	"DraËÌ krev";
+	name 				=	"Draƒç√≠ krev";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -839,7 +839,7 @@ INSTANCE ItAt_DragonBlood (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DragonScale (C_Item)
 {
-	name 				=	"DraËÌ öupiny";
+	name 				=	"Draƒç√≠ ≈°upiny";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

@@ -32,7 +32,7 @@ instance DIA_Haupttorwache_AUFGABE		(C_INFO)
 	information	 = 	DIA_Haupttorwache_AUFGABE_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co je tvoje pr·ce?";
+	description	 = 	"Co je tvoje pr√°ce?";
 };
 
 func int DIA_Haupttorwache_AUFGABE_Condition ()
@@ -42,9 +42,9 @@ func int DIA_Haupttorwache_AUFGABE_Condition ()
 
 func void DIA_Haupttorwache_AUFGABE_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Co je tv˝m ˙kolem?
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //M˘j ˙kol je jednoduch˝. M·m zajistit, aby se sk‚eti drûeli d·l neû 30 stop od br·ny.
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Kdyû se pokusÌ dostat p‚es padacÌ m‚Ìû, spustÌm poplach. To„ vöe.
+	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Co je tv√Ωm √∫kolem?
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //M≈Øj √∫kol je jednoduch√Ω. M√°m zajistit, aby se sk√¢eti dr≈æeli d√°l ne≈æ 30 stop od br√°ny.
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Kdy≈æ se pokus√≠ dostat p√¢es padac√≠ m√¢√≠≈æ, spust√≠m poplach. ToƒÉ v≈°e.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -58,7 +58,7 @@ instance DIA_Haupttorwache_TOROEFFNEN		(C_INFO)
 	information	 = 	DIA_Haupttorwache_TOROEFFNEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jak by se dala hlavnÌ br·na otev‚Ìt?";
+	description	 = 	"Jak by se dala hlavn√≠ br√°na otev√¢√≠t?";
 };
 
 func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
@@ -70,31 +70,31 @@ func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
 };
 func void DIA_Haupttorwache_TOROEFFNEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Jak by se dala hlavnÌ br·na otev‚Ìt?
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //ProË bys to proboha chtÍl vÍdÍt?
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Jak by se dala hlavn√≠ br√°na otev√¢√≠t?
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Proƒç bys to proboha chtƒôl vƒôdƒôt?
 
 	self.flags = 0;//Joly:zur sicherheit
 
 	Info_ClearChoices	(DIA_Haupttorwache_TOROEFFNEN);
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Ob·v·m se o bezpeËnost hradu.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Ob√°v√°m se o bezpeƒçnost hradu.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
 	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "To nic, jen jsem se tak ptal.", DIA_Haupttorwache_TOROEFFNEN_frage );
 	
 };
 func void DIA_Haupttorwache_TOROEFFNEN_sicherheit ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //M·m starost o bezpeËnost hradu.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //J· taky - v jednom kuse, vÍ‚ mi.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //A Garond mi jako vÍrnÈmu str·ûci koneËnÍ svÍ‚il klÌË od br·ny.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(hrdÍ) To je obrovsk· zodpovÍdnost. Budu jej hlÌdat jako oko v hlavÍ, musel jsem to Garondovi odp‚Ìs·hnout.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Ano. Jen si p‚edstav, ûe nÍkdo p‚ijde, zat·hne za p·ku, aby br·nu otev‚el, a ta star· rezav· ocelov· m‚Ìû se zasekne.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Nikdo by pak tu br·nu uû nemohl zav‚Ìt. Radöi si ani nebudu dom˝ölet, co by se stalo potom. Proto je dob‚e, ûe nikdo nevÌ, ûe ten klÌË m·m u sebe zrovna j·.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //M√°m starost o bezpeƒçnost hradu.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //J√° taky - v jednom kuse, vƒô√¢ mi.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //A Garond mi jako vƒôrn√©mu str√°≈æci koneƒçnƒô svƒô√¢il kl√≠ƒç od br√°ny.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(hrdƒô) To je obrovsk√° zodpovƒôdnost. Budu jej hl√≠dat jako oko v hlavƒô, musel jsem to Garondovi odp√¢√≠s√°hnout.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Ano. Jen si p√¢edstav, ≈æe nƒôkdo p√¢ijde, zat√°hne za p√°ku, aby br√°nu otev√¢el, a ta star√° rezav√° ocelov√° m√¢√≠≈æ se zasekne.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Nikdo by pak tu br√°nu u≈æ nemohl zav√¢√≠t. Rad≈°i si ani nebudu dom√Ω≈°let, co by se stalo potom. Proto je dob√¢e, ≈æe nikdo nev√≠, ≈æe ten kl√≠ƒç m√°m u sebe zrovna j√°.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Haupttorwache_TOROEFFNEN_frage ()
 {
 	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //To nic, jen jsem se tak ptal.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Ne abys to nÍkde vyûvanil - jen by sis tÌm nadÍlal problÈmy. »asy jsou uû takhle dost zlÈ. A teÎ bÍû, m·m spoustu pr·ce.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Ne abys to nƒôkde vy≈ævanil - jen by sis t√≠m nadƒôlal probl√©my. ƒåasy jsou u≈æ takhle dost zl√©. A te√´ bƒô≈æ, m√°m spoustu pr√°ce.
 	AI_StopProcessInfos (self);
 };
 
@@ -109,7 +109,7 @@ INSTANCE DIA_Haupttorwache_PICKPOCKET (C_INFO)
 	condition	= DIA_Haupttorwache_PICKPOCKET_Condition;
 	information	= DIA_Haupttorwache_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento klÌË by ukradlo i malÈ dÌtÍ.)";
+	description = "(Tento kl√≠ƒç by ukradlo i mal√© d√≠tƒô.)";
 };                       
 
 FUNC INT DIA_Haupttorwache_PICKPOCKET_Condition()

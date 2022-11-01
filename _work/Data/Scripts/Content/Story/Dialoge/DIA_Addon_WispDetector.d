@@ -1,6 +1,6 @@
 func void B_FollowMe_Wisp ()
 {
-	AI_Output		(other, self, "DIA_Addon_WispDetector_FollowMe_Wisp_15_00"); //PojÎ za mnou.
+	AI_Output		(other, self, "DIA_Addon_WispDetector_FollowMe_Wisp_15_00"); //Poj√´ za mnou.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info EXIT 
@@ -35,7 +35,7 @@ instance DIA_Addon_WispDetector_DetectItems		(C_INFO)
 	information	 = 	DIA_Addon_WispDetector_DetectItems_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Najdi mi nÍco!";
+	description	 = 	"Najdi mi nƒôco!";
 };
 
 func int DIA_Addon_WispDetector_DetectItems_Condition ()
@@ -45,42 +45,42 @@ func int DIA_Addon_WispDetector_DetectItems_Condition ()
 
 func void DIA_Addon_WispDetector_DetectItems_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_WispDetector_DetectItems_15_00"); //Najdi mi nÍco!
+	AI_Output	(other, self, "DIA_Addon_WispDetector_DetectItems_15_00"); //Najdi mi nƒôco!
 
 	Info_ClearChoices	(DIA_Addon_WispDetector_DetectItems);
 
-	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Jen pojÎ za mnou.", DIA_Addon_WispDetector_DetectItems_Follow );
+	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Jen poj√´ za mnou.", DIA_Addon_WispDetector_DetectItems_Follow );
 
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_RUNE] 	== TRUE)	
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot‚ebuji runy a svitky."						, DIA_Addon_WispDetector_DetectItems_RUNE );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot√¢ebuji runy a svitky."						, DIA_Addon_WispDetector_DetectItems_RUNE );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NONE] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot‚ebuju, zlato, klÌËe a n·dobÌ."		, DIA_Addon_WispDetector_DetectItems_NONE );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot√¢ebuju, zlato, kl√≠ƒçe a n√°dob√≠."		, DIA_Addon_WispDetector_DetectItems_NONE );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FF] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot‚ebuji st‚elnÈ zbranÍ a st‚elivo."				, DIA_Addon_WispDetector_DetectItems_FF );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot√¢ebuji st√¢eln√© zbranƒô a st√¢elivo."				, DIA_Addon_WispDetector_DetectItems_FF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NF] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot‚ebuji zbranÍ nablÌzko."								, DIA_Addon_WispDetector_DetectItems_NF );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot√¢ebuji zbranƒô nabl√≠zko."								, DIA_Addon_WispDetector_DetectItems_NF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FOOD] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot‚ebuji jÌdlo a rostliny."							, DIA_Addon_WispDetector_DetectItems_FOOD );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot√¢ebuji j√≠dlo a rostliny."							, DIA_Addon_WispDetector_DetectItems_FOOD );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_MAGIC] == TRUE)	
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot‚ebuji prsteny a amulety."							, DIA_Addon_WispDetector_DetectItems_MAGIC );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot√¢ebuji prsteny a amulety."							, DIA_Addon_WispDetector_DetectItems_MAGIC );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_POTIONS] == TRUE)	
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot‚ebuji jakÈkoli lektvary."							, DIA_Addon_WispDetector_DetectItems_POTIONS );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Pot√¢ebuji jak√©koli lektvary."							, DIA_Addon_WispDetector_DetectItems_POTIONS );
 	};
 
-	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Dej mi vöecko, co najdeö!"				, DIA_Addon_WispDetector_DetectItems_ALL );
+	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Dej mi v≈°ecko, co najde≈°!"				, DIA_Addon_WispDetector_DetectItems_ALL );
 };
 
 func void DIA_Addon_WispDetector_DetectItems_Follow ()
@@ -93,7 +93,7 @@ func void DIA_Addon_WispDetector_DetectItems_Follow ()
 
 func void DIA_Addon_WispDetector_DetectItems_ALL ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_ALL_15_00"); //Dej mi vöecko, co najdeö!
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_ALL_15_00"); //Dej mi v≈°ecko, co najde≈°!
 	WispSearching = WispSearch_ALL;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -101,7 +101,7 @@ func void DIA_Addon_WispDetector_DetectItems_ALL ()
 
 func void DIA_Addon_WispDetector_DetectItems_POTIONS ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_POTIONS_15_00"); //Pot‚ebuji vöechny lektvary.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_POTIONS_15_00"); //Pot√¢ebuji v≈°echny lektvary.
 	WispSearching = WispSearch_POTIONS;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -109,7 +109,7 @@ func void DIA_Addon_WispDetector_DetectItems_POTIONS ()
 
 func void DIA_Addon_WispDetector_DetectItems_MAGIC ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_MAGIC_15_00"); //Pot‚ebuji prsteny a amulety.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_MAGIC_15_00"); //Pot√¢ebuji prsteny a amulety.
 	WispSearching = WispSearch_MAGIC;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -117,7 +117,7 @@ func void DIA_Addon_WispDetector_DetectItems_MAGIC ()
 
 func void DIA_Addon_WispDetector_DetectItems_FOOD ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FOOD_15_00"); //Pot‚ebuji jÌdlo a rostliny.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FOOD_15_00"); //Pot√¢ebuji j√≠dlo a rostliny.
 	WispSearching = WispSearch_FOOD;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -125,7 +125,7 @@ func void DIA_Addon_WispDetector_DetectItems_FOOD ()
 
 func void DIA_Addon_WispDetector_DetectItems_NF ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NF_15_00"); //Pot‚ebuji zbranÍ na blÌzko.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NF_15_00"); //Pot√¢ebuji zbranƒô na bl√≠zko.
 	WispSearching = WispSearch_NF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -133,7 +133,7 @@ func void DIA_Addon_WispDetector_DetectItems_NF ()
 
 func void DIA_Addon_WispDetector_DetectItems_FF ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FF_15_00"); //Pot‚ebuji zbranÍ na d·lku a st‚elivo.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FF_15_00"); //Pot√¢ebuji zbranƒô na d√°lku a st√¢elivo.
 	WispSearching = WispSearch_FF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -141,7 +141,7 @@ func void DIA_Addon_WispDetector_DetectItems_FF ()
 
 func void DIA_Addon_WispDetector_DetectItems_NONE ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NONE_15_00"); //Pot‚ebuji zlato, klÌËe a n·dobÌ.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NONE_15_00"); //Pot√¢ebuji zlato, kl√≠ƒçe a n√°dob√≠.
 	WispSearching = WispSearch_NONE;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -149,7 +149,7 @@ func void DIA_Addon_WispDetector_DetectItems_NONE ()
 
 func void DIA_Addon_WispDetector_DetectItems_RUNE ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_RUNE_15_00"); //Pot‚ebuji runy a svitky.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_RUNE_15_00"); //Pot√¢ebuji runy a svitky.
 	WispSearching = WispSearch_RUNE;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -166,7 +166,7 @@ instance DIA_Addon_WispDetector_Follow		(C_INFO)
 	information	 = 	DIA_Addon_WispDetector_Follow_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jen pojÎ za mnou.";
+	description	 = 	"Jen poj√´ za mnou.";
 };
 
 func int DIA_Addon_WispDetector_Follow_Condition ()

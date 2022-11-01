@@ -53,14 +53,14 @@ func void DIA_Kati_SLDNOCHDA_Info ()
 	
 	if (Hilfe == FALSE)
 	{
-		AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Ti hrdloâezové mému mui vyhroují! Jsme âádnımi obèany mêsta, vêrnımi králi, a oldáci nás chtêjí oloupit o všechno!
+		AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Ti hrdloÃ¢ezovÃ© mÃ©mu muÅ¾i vyhroÅ¾ujÃ­! Jsme Ã¢Ã¡dnÃ½mi obÄany mÄ™sta, vÄ™rnÃ½mi krÃ¡li, a Å¾oldÃ¡ci nÃ¡s chtÄ™jÃ­ oloupit o vÅ¡echno!
 		Hilfe = TRUE;
 	};
-	AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_01"); //Tak tady jen tak nestùj. Dêlej nêco! Pomoz nám.
+	AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_01"); //Tak tady jen tak nestÅ¯j. DÄ™lej nÄ™co! Pomoz nÃ¡m.
 	Akils_SLDStillthere = TRUE;
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Akilùv statek ohroují oldáci."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"AkilÅ¯v statek ohroÅ¾ujÃ­ Å¾oldÃ¡ci."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -74,7 +74,7 @@ instance DIA_Kati_HALLO		(C_INFO)
 	condition	 = 	DIA_Kati_HALLO_Condition;
 	information	 = 	DIA_Kati_HALLO_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Jsi v poâádku?";
+	description	 = 	"Jsi v poÃ¢Ã¡dku?";
 };
 
 func int DIA_Kati_HALLO_Condition ()
@@ -87,20 +87,20 @@ func int DIA_Kati_HALLO_Condition ()
 };
 func void DIA_Kati_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_HALLO_15_00"); //Jsi v poâádku?
+	AI_Output (other, self, "DIA_Kati_HALLO_15_00"); //Jsi v poÃ¢Ã¡dku?
 	
 	if (Npc_IsDead (Akil))
 	{
-		AI_Output (self, other, "DIA_Kati_HALLO_16_01"); //(vzlyká) Mùj milovanı manel je mrtvı! Ó Innosi, zaè mê tak tvrdê trestáš?
+		AI_Output (self, other, "DIA_Kati_HALLO_16_01"); //(vzlykÃ¡) MÅ¯j milovanÃ½ manÅ¾el je mrtvÃ½! Ã“ Innosi, zaÄ mÄ™ tak tvrdÄ™ trestÃ¡Å¡?
 		
-		Npc_ExchangeRoutine	(self,"Zaèít");
-		B_StartOtherRoutine	(Randolph,"Zaèít");
+		Npc_ExchangeRoutine	(self,"ZaÄÃ­t");
+		B_StartOtherRoutine	(Randolph,"ZaÄÃ­t");
 
 		B_GivePlayerXP (XP_Akil_Tot);	
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Kati_HALLO_16_02"); //Je mi dobâe. Díky.
+		AI_Output (self, other, "DIA_Kati_HALLO_16_02"); //Je mi dobÃ¢e. DÃ­ky.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -113,7 +113,7 @@ instance DIA_Kati_ESSEN		(C_INFO)
 	condition	 = 	DIA_Kati_ESSEN_Condition;
 	information	 = 	DIA_Kati_ESSEN_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Akil âíkal, e pro mê budeš mít nêco k jídlu.";
+	description	 = 	"Akil Ã¢Ã­kal, Å¾e pro mÄ™ budeÅ¡ mÃ­t nÄ™co k jÃ­dlu.";
 };
 
 func int DIA_Kati_ESSEN_Condition ()
@@ -126,9 +126,9 @@ func int DIA_Kati_ESSEN_Condition ()
 };
 func void DIA_Kati_ESSEN_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_ESSEN_15_00"); //Akil âíkal, e pro mê budeš mít nêco k jídlu.
-	AI_Output (self, other, "DIA_Kati_ESSEN_16_01"); //Od té doby, co bariéra vzala za své, u tu není bezpeèno a my jsme zaili dost špatné èasy.
-	AI_Output (self, other, "DIA_Kati_ESSEN_16_02"); //Tady máš bochník chleba, trochu masa a nêjakou vodu. Je mi líto, ale to je vše, co mohu postrádat.
+	AI_Output (other, self, "DIA_Kati_ESSEN_15_00"); //Akil Ã¢Ã­kal, Å¾e pro mÄ™ budeÅ¡ mÃ­t nÄ™co k jÃ­dlu.
+	AI_Output (self, other, "DIA_Kati_ESSEN_16_01"); //Od tÃ© doby, co bariÃ©ra vzala za svÃ©, uÅ¾ tu nenÃ­ bezpeÄno a my jsme zaÅ¾ili dost Å¡patnÃ© Äasy.
+	AI_Output (self, other, "DIA_Kati_ESSEN_16_02"); //Tady mÃ¡Å¡ bochnÃ­k chleba, trochu masa a nÄ™jakou vodu. Je mi lÃ­to, ale to je vÅ¡e, co mohu postrÃ¡dat.
 	
 	B_GiveInvItems (self, other, ItFo_Bread, 1);			
 	B_GiveInvItems (self, other, ItFo_Water, 1);			
@@ -146,7 +146,7 @@ instance DIA_Kati_Baltram		(C_INFO)
 	condition	 = 	DIA_Kati_Baltram_Condition;
 	information	 = 	DIA_Kati_Baltram_Info;
 	permanent	 = 	FALSE;
-	description	 = "Posílá mê Baltram.";
+	description	 = "PosÃ­lÃ¡ mÄ™ Baltram.";
 };
 func int DIA_Kati_Baltram_Condition ()
 {
@@ -159,8 +159,8 @@ func int DIA_Kati_Baltram_Condition ()
 };
 func void DIA_Kati_Baltram_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_Baltram_15_00"); //Poslal mê Baltram. Mám pro nêj vyzvednout nêjakı balík.
-	AI_Output (self, other, "DIA_Kati_Baltram_16_01"); //Ano, samozâejmê. Tady, u jsem to zabalil.
+	AI_Output (other, self, "DIA_Kati_Baltram_15_00"); //Poslal mÄ™ Baltram. MÃ¡m pro nÄ™j vyzvednout nÄ™jakÃ½ balÃ­k.
+	AI_Output (self, other, "DIA_Kati_Baltram_16_01"); //Ano, samozÃ¢ejmÄ™. Tady, uÅ¾ jsem to zabalil.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
@@ -176,7 +176,7 @@ instance DIA_Kati_BAUERNAUFSTAND		(C_INFO)
 	condition	 = 	DIA_Kati_BAUERNAUFSTAND_Condition;
 	information	 = 	DIA_Kati_BAUERNAUFSTAND_Info;
 	permanent    =  FALSE;
-	description	 = 	"Proè se sami nebráníte proti Onarovê tyranii?";
+	description	 = 	"ProÄ se sami nebrÃ¡nÃ­te proti OnarovÄ™ tyranii?";
 };
 
 func int DIA_Kati_BAUERNAUFSTAND_Condition ()
@@ -189,9 +189,9 @@ func int DIA_Kati_BAUERNAUFSTAND_Condition ()
 
 func void DIA_Kati_BAUERNAUFSTAND_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //Proè se sami nebráníte proti Onarovê tyranii?
-	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Pro nás, co máme farmy blízko mêsta, má vêtší smysl zùstat na stranê domobrany ne se spoléhat na Onarovy oldáky.
-	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //Na druhou stranu, jsou tu i takoví jako Bengar a Sekob, co by se radêji vzdali svıch farem, ne by pracovali pro krále.
+	AI_Output (other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //ProÄ se sami nebrÃ¡nÃ­te proti OnarovÄ™ tyranii?
+	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Pro nÃ¡s, co mÃ¡me farmy blÃ­zko mÄ™sta, mÃ¡ vÄ™tÅ¡Ã­ smysl zÅ¯stat na stranÄ™ domobrany neÅ¾ se spolÃ©hat na Onarovy Å¾oldÃ¡ky.
+	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //Na druhou stranu, jsou tu i takovÃ­ jako Bengar a Sekob, co by se radÄ™ji vzdali svÃ½ch farem, neÅ¾ by pracovali pro krÃ¡le.
 
 };
 
@@ -219,7 +219,7 @@ func int DIA_Kati_ANDEREHOEFE_Condition ()
 func void DIA_Kati_ANDEREHOEFE_Info ()
 {
 	AI_Output (other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //Kde najdu farmy Sekoba a Bengara?
-	AI_Output (self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //Není to daleko od farmy, na které velkostatkáâ ije. Nalezneš je, kdy odsud pùjdeš na vıchod.
+	AI_Output (self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //NenÃ­ to daleko od farmy, na kterÃ© velkostatkÃ¡Ã¢ Å¾ije. NalezneÅ¡ je, kdyÅ¾ odsud pÅ¯jdeÅ¡ na vÃ½chod.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -232,7 +232,7 @@ instance DIA_Kati_HIERWEG		(C_INFO)
 	condition	 = 	DIA_Kati_HIERWEG_Condition;
 	information	 = 	DIA_Kati_HIERWEG_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Pomıšleli jste nêkdy na to, e byste odsud odešli?";
+	description	 = 	"PomÃ½Å¡leli jste nÄ™kdy na to, Å¾e byste odsud odeÅ¡li?";
 };
 
 func int DIA_Kati_HIERWEG_Condition ()
@@ -245,10 +245,10 @@ func int DIA_Kati_HIERWEG_Condition ()
 
 func void DIA_Kati_HIERWEG_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_HIERWEG_15_00"); //Pomıšleli jste nêkdy na to, e byste odsud odešli?
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_01"); //Není zrovna snadné se dostat z tohodle kousku zemê. Celı kraj je obklopen vysokım a nepâekonatelnım horskım masivem.
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_02"); //Jediné dvê cesty ven jsou prùsmyk do Hornického údolí a pâístav v Korinidu.
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_03"); //Protoe si nemùeme dovolit cestu lodí a z Hornického údolí není návratu, zùstáváme tady.
+	AI_Output (other, self, "DIA_Kati_HIERWEG_15_00"); //PomÃ½Å¡leli jste nÄ™kdy na to, Å¾e byste odsud odeÅ¡li?
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_01"); //NenÃ­ zrovna snadnÃ© se dostat z tohodle kousku zemÄ™. CelÃ½ kraj je obklopen vysokÃ½m a nepÃ¢ekonatelnÃ½m horskÃ½m masivem.
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_02"); //JedinÃ© dvÄ™ cesty ven jsou prÅ¯smyk do HornickÃ©ho ÃºdolÃ­ a pÃ¢Ã­stav v Korinidu.
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_03"); //ProtoÅ¾e si nemÅ¯Å¾eme dovolit cestu lodÃ­ a z HornickÃ©ho ÃºdolÃ­ nenÃ­ nÃ¡vratu, zÅ¯stÃ¡vÃ¡me tady.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -261,7 +261,7 @@ instance DIA_Kati_PASS		(C_INFO)
 	condition	 = 	DIA_Kati_PASS_Condition;
 	information	 = 	DIA_Kati_PASS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Co víš o tom prùsmyku?";
+	description	 = 	"Co vÃ­Å¡ o tom prÅ¯smyku?";
 };
 
 func int DIA_Kati_PASS_Condition ()
@@ -274,8 +274,8 @@ func int DIA_Kati_PASS_Condition ()
 
 func void DIA_Kati_PASS_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_PASS_15_00"); //Co víš o tom prùsmyku?
-	AI_Output (self, other, "DIA_Kati_PASS_16_01"); //Nikdy jsem tam osobnê nebyla. Musí to bıt nêkde poblí Bengarovy farmy na náhorních pastvinách.
+	AI_Output (other, self, "DIA_Kati_PASS_15_00"); //Co vÃ­Å¡ o tom prÅ¯smyku?
+	AI_Output (self, other, "DIA_Kati_PASS_16_01"); //Nikdy jsem tam osobnÄ™ nebyla. MusÃ­ to bÃ½t nÄ™kde poblÃ­Å¾ Bengarovy farmy na nÃ¡hornÃ­ch pastvinÃ¡ch.
 };
 
 
@@ -289,7 +289,7 @@ instance DIA_Kati_PERMKAP1		(C_INFO)
 	condition	 = 	DIA_Kati_PERMKAP1_Condition;
 	information	 = 	DIA_Kati_PERMKAP1_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Dávej pozor na svého manela.";
+	description	 = 	"DÃ¡vej pozor na svÃ©ho manÅ¾ela.";
 };
 
 func int DIA_Kati_PERMKAP1_Condition ()
@@ -310,8 +310,8 @@ func int DIA_Kati_PERMKAP1_Condition ()
 
 func void DIA_Kati_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Kati_PERMKAP1_15_00"); //Dávej pozor na svého manela.
-	AI_Output			(self, other, "DIA_Kati_PERMKAP1_16_01"); //Udêlám, co mùu.
+	AI_Output			(other, self, "DIA_Kati_PERMKAP1_15_00"); //DÃ¡vej pozor na svÃ©ho manÅ¾ela.
+	AI_Output			(self, other, "DIA_Kati_PERMKAP1_16_01"); //UdÄ™lÃ¡m, co mÅ¯Å¾u.
 	AI_StopProcessInfos (self);
 };
 
@@ -359,7 +359,7 @@ instance DIA_Kati_PERM		(C_INFO)
 	information	 = 	DIA_Kati_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ještê poâád ti nic neschází?";
+	description	 = 	"JeÅ¡tÄ™ poÃ¢Ã¡d ti nic neschÃ¡zÃ­?";
 };
 
 func int DIA_Kati_PERM_Condition ()
@@ -373,9 +373,9 @@ func int DIA_Kati_PERM_Condition ()
 
 func void DIA_Kati_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Kati_PERM_15_00"); //Ještê poâád ti nic neschází?
-	AI_Output			(self, other, "DIA_Kati_PERM_16_01"); //Dá se to pâeít. Jen by mê zajímalo, jak dlouho tu ještê budeme muset snášet ty ëábly v èerném.
-	AI_Output			(self, other, "DIA_Kati_PERM_16_02"); //U to je k nevydrení. Plíí se kolem domu a vydávají ty divné zvuky.
+	AI_Output			(other, self, "DIA_Kati_PERM_15_00"); //JeÅ¡tÄ™ poÃ¢Ã¡d ti nic neschÃ¡zÃ­?
+	AI_Output			(self, other, "DIA_Kati_PERM_16_01"); //DÃ¡ se to pÃ¢eÅ¾Ã­t. Jen by mÄ™ zajÃ­malo, jak dlouho tu jeÅ¡tÄ™ budeme muset snÃ¡Å¡et ty Ã«Ã¡bly v ÄernÃ©m.
+	AI_Output			(self, other, "DIA_Kati_PERM_16_02"); //UÅ¾ to je k nevydrÅ¾enÃ­. PlÃ­Å¾Ã­ se kolem domu a vydÃ¡vajÃ­ ty divnÃ© zvuky.
 };
 
 

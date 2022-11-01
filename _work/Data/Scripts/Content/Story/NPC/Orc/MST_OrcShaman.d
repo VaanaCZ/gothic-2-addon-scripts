@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_OrcShaman(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Skâetí šaman";
+	name							=	"SkÃ¢etÃ­ Å¡aman";
 	guild							=	GIL_ORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCSHAMAN;
 	voice							=	18;
@@ -108,7 +108,7 @@ INSTANCE OrcShaman_Hosh_Pak (Mst_Default_OrcShaman)
 
 INSTANCE OrcShaman_Sit_CanyonLibraryKey (Mst_Default_OrcShaman)
 {
-	name							=	"Vùdce hordy";
+	name							=	"VÅ¯dce hordy";
 	// ------ visuals ------
 	B_SetVisuals_OrcShaman();
 	

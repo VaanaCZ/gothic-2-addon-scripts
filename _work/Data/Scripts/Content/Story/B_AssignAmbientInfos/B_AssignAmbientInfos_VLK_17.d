@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_17_JOIN(C_INFO)
 	condition	= DIA_VLK_17_JOIN_Condition;
 	information	= DIA_VLK_17_JOIN_Info;
 	permanent	= TRUE;
-	description = "Co musím udêlat, abych se mohl stát obèanem mêsta?";
+	description = "Co musÃ­m udÄ™lat, abych se mohl stÃ¡t obÄanem mÄ™sta?";
 };                       
 
 FUNC INT DIA_VLK_17_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_17_JOIN_Condition()
 
 FUNC VOID DIA_VLK_17_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_17_JOIN_15_00"); //Co musím udêlat, abych se mohl stát obèanem mêsta?
-	AI_Output (self, other, "DIA_VLK_17_JOIN_17_01"); //Tady v Khorinidu mají velké slovo âemeslniètí mistâi z dolní èásti mêsta. Mêl by sis s jedním z nich promluvit.
+	AI_Output (other, self, "DIA_VLK_17_JOIN_15_00"); //Co musÃ­m udÄ™lat, abych se mohl stÃ¡t obÄanem mÄ™sta?
+	AI_Output (self, other, "DIA_VLK_17_JOIN_17_01"); //Tady v Khorinidu majÃ­ velkÃ© slovo Ã¢emeslniÄtÃ­ mistÃ¢i z dolnÃ­ ÄÃ¡sti mÄ™sta. MÄ™l by sis s jednÃ­m z nich promluvit.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_VLK_17_PEOPLE(C_INFO)
 	condition	= DIA_VLK_17_PEOPLE_Condition;
 	information	= DIA_VLK_17_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo v tomhle mêstê poívá nejvêtší vánosti?";
+	description = "Kdo v tomhle mÄ™stÄ™ poÅ¾Ã­vÃ¡ nejvÄ™tÅ¡Ã­ vÃ¡Å¾nosti?";
 };                       
 
 FUNC INT DIA_VLK_17_PEOPLE_Condition()
@@ -66,10 +66,10 @@ FUNC INT DIA_VLK_17_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_17_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_17_PEOPLE_15_00"); //Kdo v tomhle mêstê poívá nejvêtší vánosti?
-	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_01"); //Jakmile dorazili paladinové do mêsta, pâevzali velení nad celım Khorinidem.
-	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_02"); //Lord Andre tu pâedstavuje zákon. Nalezneš ho v kasárnách.
-	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_03"); //Ale má smysl k nêmu chodit jen tehdy, pokud se dostaneš do konfliktu se zákonem nebo se budeš chtít pâidat k domobranê.
+	AI_Output (other, self, "DIA_VLK_17_PEOPLE_15_00"); //Kdo v tomhle mÄ™stÄ™ poÅ¾Ã­vÃ¡ nejvÄ™tÅ¡Ã­ vÃ¡Å¾nosti?
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_01"); //Jakmile dorazili paladinovÃ© do mÄ™sta, pÃ¢evzali velenÃ­ nad celÃ½m Khorinidem.
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_02"); //Lord Andre tu pÃ¢edstavuje zÃ¡kon. NalezneÅ¡ ho v kasÃ¡rnÃ¡ch.
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_03"); //Ale mÃ¡ smysl k nÄ™mu chodit jen tehdy, pokud se dostaneÅ¡ do konfliktu se zÃ¡konem nebo se budeÅ¡ chtÃ­t pÃ¢idat k domobranÄ™.
 };
 
 // *************************************************************************
@@ -81,7 +81,7 @@ INSTANCE DIA_VLK_17_LOCATION(C_INFO)
 	condition	= DIA_VLK_17_LOCATION_Condition;
 	information	= DIA_VLK_17_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Je tady v Khorinidu nêjaké zajímavé místo?";
+	description = "Je tady v Khorinidu nÄ™jakÃ© zajÃ­mavÃ© mÃ­sto?";
 };                       
 
 FUNC INT DIA_VLK_17_LOCATION_Condition()
@@ -91,9 +91,9 @@ FUNC INT DIA_VLK_17_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_17_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_17_LOCATION_15_00"); //Je tady v Khorinidu nêjaké zajímavé místo?
-	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_01"); //(smích) Moná by ses na to mêl radêji zeptat nêjakého chlapa. Pokud máš na mysli zábavu, zkus se podívat do pâístavu.
-	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_02"); //Ale pokud chceš nêco koupit, zajdi na trh u vıchodní brány nebo do dolní èásti mêsta.
+	AI_Output (other, self, "DIA_VLK_17_LOCATION_15_00"); //Je tady v Khorinidu nÄ™jakÃ© zajÃ­mavÃ© mÃ­sto?
+	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_01"); //(smÃ­ch) MoÅ¾nÃ¡ by ses na to mÄ™l radÄ™ji zeptat nÄ™jakÃ©ho chlapa. Pokud mÃ¡Å¡ na mysli zÃ¡bavu, zkus se podÃ­vat do pÃ¢Ã­stavu.
+	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_02"); //Ale pokud chceÅ¡ nÄ™co koupit, zajdi na trh u vÃ½chodnÃ­ brÃ¡ny nebo do dolnÃ­ ÄÃ¡sti mÄ™sta.
 };
 
 // *************************************************************************
@@ -105,7 +105,7 @@ INSTANCE DIA_VLK_17_STANDARD(C_INFO)
 	condition	= DIA_VLK_17_STANDARD_Condition;
 	information	= DIA_VLK_17_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_VLK_17_STANDARD_Condition()
 {
@@ -113,28 +113,28 @@ func INT DIA_VLK_17_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_17_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_17_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_VLK_17_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	|| (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_01"); //Zajímalo by mê, proè tady ti paladinové vlastnê jsou. Zabrali radnici, kasárna i pâístav, ale zatím neudêlali vùbec nic.
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_02"); //Pokud pâijeli kvùli skâetùm a banditùm, mêli zakroèit u pâed drahnou dobou. Musí mít ještê jinı dùvod.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_01"); //ZajÃ­malo by mÄ™, proÄ tady ti paladinovÃ© vlastnÄ™ jsou. Zabrali radnici, kasÃ¡rna i pÃ¢Ã­stav, ale zatÃ­m neudÄ™lali vÅ¯bec nic.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_02"); //Pokud pÃ¢ijeli kvÅ¯li skÃ¢etÅ¯m a banditÅ¯m, mÄ™li zakroÄit uÅ¾ pÃ¢ed drahnou dobou. MusÃ­ mÃ­t jeÅ¡tÄ™ jinÃ½ dÅ¯vod.
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_03"); //U mi došlo, proè tu ti paladinové jsou - je to kvùli rudê. Udêlali by líp, kdyby místo toho radêji bránili naše mêsto.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_03"); //UÅ¾ mi doÅ¡lo, proÄ tu ti paladinovÃ© jsou - je to kvÅ¯li rudÄ™. UdÄ™lali by lÃ­p, kdyby mÃ­sto toho radÄ™ji brÃ¡nili naÅ¡e mÄ™sto.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_04"); //Doufám, e je na têch draèích povídaèkách nêco pravdy. V tom pâípadê toti bude muset lord Hagen zaèít nêco dêlat. Nemùe nás pâece jen tak nechat drakùm napospas.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_04"); //DoufÃ¡m, Å¾e je na tÄ™ch draÄÃ­ch povÃ­daÄkÃ¡ch nÄ™co pravdy. V tom pÃ¢Ã­padÄ™ totiÅ¾ bude muset lord Hagen zaÄÃ­t nÄ™co dÄ™lat. NemÅ¯Å¾e nÃ¡s pÃ¢ece jen tak nechat drakÅ¯m napospas.
 	};
 	
 	if (Kapitel == 5)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_05"); //Teë, kdy jsou ti draci mrtví, zatoèí paladinové snadno i ostatním neâádstvem.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_05"); //TeÃ«, kdyÅ¾ jsou ti draci mrtvÃ­, zatoÄÃ­ paladinovÃ© snadno i ostatnÃ­m neÃ¢Ã¡dstvem.
 	};
 };
 

@@ -1,11 +1,11 @@
 // *****************************************************************
 // //Joly: Auge Innos nicht dabei? Kein Problem. Xardas hilft auch dir Idiot!!!!!!!!!!!!
-// Vorsicht: Nur für D.A.U.s
+// Vorsicht: Nur fÃ¼r D.A.U.s
 // *****************************************************************
 
 INSTANCE ItSe_XardasNotfallBeutel_MIS	(C_Item)
 {
-	name 				=	"Velmi zvláštní mêšec";
+	name 				=	"Velmi zvlÃ¡Å¡tnÃ­ mÄ™Å¡ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -20,9 +20,9 @@ INSTANCE ItSe_XardasNotfallBeutel_MIS	(C_Item)
 	description			= 	name;
 	
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"Tato brašna obsahuje";
-	TEXT[2]				= 	"nêco tvrdého";
-	TEXT[3]				= 	"a jakısi dokument.";
+	TEXT[1]				= 	"Tato braÅ¡na obsahuje";
+	TEXT[2]				= 	"nÄ™co tvrdÃ©ho";
+	TEXT[3]				= 	"a jakÃ½si dokument.";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -44,7 +44,7 @@ FUNC VOID Use_XardasNotfallBeutel ()
 
 INSTANCE ItWr_XardasErmahnungFuerIdioten_MIS	(C_Item)
 {
-	name 				=	"Varovnı dopis od Xardase";
+	name 				=	"VarovnÃ½ dopis od Xardase";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -70,8 +70,8 @@ func void Use_XardasErmahnungFuerIdioten ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Mùj mladı chránênèe, velmi jsi mne zklamal. Jak to, e jsi nasedl na loë a nevzal s sebou Innosovo oko?"					);
-					Doc_PrintLines	( nDocID,  0, "Mohu jen doufat, e tahle nedbalost byla jen pâechodná. Jinak svêt nikdy nezbavíš zla a já tê budu muset za tvou hloupost náleitê potrestat."					);
+					Doc_PrintLines	( nDocID,  0, "MÅ¯j mladÃ½ chrÃ¡nÄ™nÄe, velmi jsi mne zklamal. Jak to, Å¾e jsi nasedl na loÃ« a nevzal s sebou Innosovo oko?"					);
+					Doc_PrintLines	( nDocID,  0, "Mohu jen doufat, Å¾e tahle nedbalost byla jen pÃ¢echodnÃ¡. Jinak svÄ™t nikdy nezbavÃ­Å¡ zla a jÃ¡ tÄ™ budu muset za tvou hloupost nÃ¡leÅ¾itÄ™ potrestat."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -88,7 +88,7 @@ func void Use_XardasErmahnungFuerIdioten ()
 
 INSTANCE ItWr_Krypta_Garon		(C_Item)
 {
-	name 				=	"Starı dopis";
+	name 				=	"StarÃ½ dopis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -101,7 +101,7 @@ INSTANCE ItWr_Krypta_Garon		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 
-	TEXT[3]				= 	"psanı roztâesenou rukou.";
+	TEXT[3]				= 	"psanÃ½ roztÃ¢esenou rukou.";
 };
 func void Use_Krypta_Garon ()
 {   
@@ -115,36 +115,36 @@ func void Use_Krypta_Garon ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Selhal jsem. Nadarmo jsem se snail vést Inubida cestou dobra."					);
-					Doc_PrintLines	( nDocID,  0, "Nejdâív jsem myslel, e jsem mrtev, ale pak jsem se pâesvêdèil, e v mıch starıch kostech pâece jen nêjaká síla zùstala."					);
-					Doc_PrintLines	( nDocID,  0, "Inubis vstal z mrtvıch. Nyní se chce pomstít prastarému âádu paladinù, kteâí ho kdysi pâemohli."					);
-					Doc_PrintLines	( nDocID,  0, "Provází ho spousta pâisluhovaèù. Nechápu, jak se mohl chrabrı vojevùdce jako on obrátit k takovému zlu."					);
-					Doc_PrintLines	( nDocID,  0, "V téhle kryptê jsem objevil jeho hrobku, ale nevím jistê, zda budu moci svùj nález nêkdy ohlásit. Proto píši tyto âádky v nadêji, e je tâeba nêkdy nêkdo najde."					);
-					Doc_PrintLines	( nDocID,  0, "Dej si pozor. Z duší spravedlivıch povstal mocnı nepâítel a Inubis není poslední."					);
+					Doc_PrintLines	( nDocID,  0, "Selhal jsem. Nadarmo jsem se snaÅ¾il vÃ©st Inubida cestou dobra."					);
+					Doc_PrintLines	( nDocID,  0, "NejdÃ¢Ã­v jsem myslel, Å¾e jsem mrtev, ale pak jsem se pÃ¢esvÄ™dÄil, Å¾e v mÃ½ch starÃ½ch kostech pÃ¢ece jen nÄ™jakÃ¡ sÃ­la zÅ¯stala."					);
+					Doc_PrintLines	( nDocID,  0, "Inubis vstal z mrtvÃ½ch. NynÃ­ se chce pomstÃ­t prastarÃ©mu Ã¢Ã¡du paladinÅ¯, kteÃ¢Ã­ ho kdysi pÃ¢emohli."					);
+					Doc_PrintLines	( nDocID,  0, "ProvÃ¡zÃ­ ho spousta pÃ¢isluhovaÄÅ¯. NechÃ¡pu, jak se mohl chrabrÃ½ vojevÅ¯dce jako on obrÃ¡tit k takovÃ©mu zlu."					);
+					Doc_PrintLines	( nDocID,  0, "V tÃ©hle kryptÄ™ jsem objevil jeho hrobku, ale nevÃ­m jistÄ™, zda budu moci svÅ¯j nÃ¡lez nÄ™kdy ohlÃ¡sit. Proto pÃ­Å¡i tyto Ã¢Ã¡dky v nadÄ™ji, Å¾e je tÃ¢eba nÄ™kdy nÄ™kdo najde."					);
+					Doc_PrintLines	( nDocID,  0, "Dej si pozor. Z duÅ¡Ã­ spravedlivÃ½ch povstal mocnÃ½ nepÃ¢Ã­tel a Inubis nenÃ­ poslednÃ­."					);
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "Nechã Innos spasí naše duše."					);
+					Doc_PrintLine	( nDocID,  0, "NechÄƒ Innos spasÃ­ naÅ¡e duÅ¡e."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "                                 Ivan");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 
 }; 
 
 //****************************************************************************
-//				DragonIsle_Undead_Schlüssel
+//				DragonIsle_Undead_SchlÃ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 
 //**********************************************************************************
-//	Knasttürschlüssel für Pedros Zelle auf DI
+//	KnasttÃ¼rschlÃ¼ssel fÃ¼r Pedros Zelle auf DI
 //**********************************************************************************
 
 INSTANCE ItKe_OrkKnastDI_MIS(C_Item)
 {
-	name 				=	"Klíè skâetího plukovníka";
+	name 				=	"KlÃ­Ä skÃ¢etÃ­ho plukovnÃ­ka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -158,9 +158,9 @@ INSTANCE ItKe_OrkKnastDI_MIS(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
-INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//Schlüssel für erste Tür
+INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//SchlÃ¼ssel fÃ¼r erste TÃ¼r
 {
-	name 				=	"Archolùv klíè";
+	name 				=	"ArcholÅ¯v klÃ­Ä";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -177,12 +177,12 @@ INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//Schlüssel für erste Tür
 };
 
 //**********************************************************************************
-//	Schlüssel zum Labyrinth der Untoten auf DI
+//	SchlÃ¼ssel zum Labyrinth der Untoten auf DI
 //**********************************************************************************
 
 INSTANCE ItKe_EVT_UNDEAD_02	(C_Item)
 {
-	name 				=	"Klíè hlavního klíèníka";
+	name 				=	"KlÃ­Ä hlavnÃ­ho klÃ­ÄnÃ­ka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -198,12 +198,12 @@ INSTANCE ItKe_EVT_UNDEAD_02	(C_Item)
 
 
 //**********************************************************************************
-//	Kammerschlüssel für´s Tor zum Saal des Untoten Drachen.
+//	KammerschlÃ¼ssel fÃ¼rÂ´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 	
 INSTANCE ItKe_LastDoorToUndeadDrgDI_MIS	(C_Item)
 {
-	name 				=	"Klíè od komnaty èerného mága";
+	name 				=	"KlÃ­Ä od komnaty ÄernÃ©ho mÃ¡ga";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -217,12 +217,12 @@ INSTANCE ItKe_LastDoorToUndeadDrgDI_MIS	(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //**********************************************************************************
-//	Schriftrolle für´s Tor zum Saal des Untoten Drachen.
+//	Schriftrolle fÃ¼rÂ´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 	
 INSTANCE ItWr_LastDoorToUndeadDrgDI_MIS	(C_Item)
 {
-	name 				=	"Svitek èerného mága";
+	name 				=	"Svitek ÄernÃ©ho mÃ¡ga";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -254,21 +254,21 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS ()
 					Doc_PrintLine	( nDocID,  0, "EMEM KADAR"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Oko moci ti osvítí cestu.");
+					Doc_PrintLine	( nDocID,  0, "Oko moci ti osvÃ­tÃ­ cestu.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Na svitku èerného mága jsou uvedena slova KHADOSH EMEM KADAR. Zní to jako nêjaké zaklínadlo, ale já nemám ani ponêtí, k èemu mohlo slouit. A co je vùbec to oko moci?"); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"Na svitku ÄernÃ©ho mÃ¡ga jsou uvedena slova KHADOSH EMEM KADAR. ZnÃ­ to jako nÄ™jakÃ© zaklÃ­nadlo, ale jÃ¡ nemÃ¡m ani ponÄ™tÃ­, k Äemu mohlo slouÅ¾it. A co je vÅ¯bec to oko moci?"); 
 };
 //**********************************************************************************
-//	Schlüssel zur Truhe in der Kammer des OberDementors.
+//	SchlÃ¼ssel zur Truhe in der Kammer des OberDementors.
 //**********************************************************************************
 INSTANCE ItKe_ChestMasterDementor_MIS	(C_Item)
 {
-	name 				=	"Klíè od truhlice èerného mága";
+	name 				=	"KlÃ­Ä od truhlice ÄernÃ©ho mÃ¡ga";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -317,14 +317,14 @@ func void Use_RezeptFuerMegaTrank ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Znovu jsem oivil pradávné umêní. Obávám se ale, e Feodaron tím nebude nijak nadšen."					);
-					Doc_PrintLines	( nDocID,  0, "Prostê to znamená, e bych v laboratoâi musel z veškerého jeho potomstva namíchat lektvar. Kdyby poâád nesedêl na vejcích jako nêjaká slepice, moná bych to i vyzkoušel. Jenome takhle ho musím pâece jenom respektovat."					);
+					Doc_PrintLines	( nDocID,  0, "Znovu jsem oÅ¾ivil pradÃ¡vnÃ© umÄ™nÃ­. ObÃ¡vÃ¡m se ale, Å¾e Feodaron tÃ­m nebude nijak nadÅ¡en."					);
+					Doc_PrintLines	( nDocID,  0, "ProstÄ™ to znamenÃ¡, Å¾e bych v laboratoÃ¢i musel z veÅ¡kerÃ©ho jeho potomstva namÃ­chat lektvar. Kdyby poÃ¢Ã¡d nesedÄ™l na vejcÃ­ch jako nÄ™jakÃ¡ slepice, moÅ¾nÃ¡ bych to i vyzkouÅ¡el. JenomÅ¾e takhle ho musÃ­m pÃ¢ece jenom respektovat."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Embarla Firgasto:"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "11 draèích vajec, jedna mletá èerná perla a špetka síry."					);
-					Doc_PrintLines	( nDocID,  0, "Tekutinu pak pâiveë do varu a za stálého míchání proeà destilaèním aparátem."					);
-					Doc_PrintLines	( nDocID,  0, "Elixír uívej opatrnê, neb má silné vedlejší úèinky a mùe narušit všechnu tvou manu."					);
+					Doc_PrintLines	( nDocID,  0, "11 draÄÃ­ch vajec, jedna mletÃ¡ ÄernÃ¡ perla a Å¡petka sÃ­ry."					);
+					Doc_PrintLines	( nDocID,  0, "Tekutinu pak pÃ¢iveÃ« do varu a za stÃ¡lÃ©ho mÃ­chÃ¡nÃ­ proÅ¾eÅ• destilaÄnÃ­m aparÃ¡tem."					);
+					Doc_PrintLines	( nDocID,  0, "ElixÃ­r uÅ¾Ã­vej opatrnÄ™, neb mÃ¡ silnÃ© vedlejÅ¡Ã­ ÃºÄinky a mÅ¯Å¾e naruÅ¡it vÅ¡echnu tvou manu."					);
 					
 					Doc_Show		( nDocID );
 		
@@ -337,7 +337,7 @@ func void Use_RezeptFuerMegaTrank ()
 
 INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 {	
-	name 					=	"Deník";
+	name 					=	"DenÃ­k";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -369,22 +369,22 @@ INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "U tu èekám na pâedvolání víc jak 36 dní. Zaèínám pochybovat, e se to vùbec kdy stane, ale prostê jen plním rozkazy. Tady se ke mnê ale chovají jako k nêjaké staré sluce."					);
+					Doc_PrintLines	( nDocID,  0, "UÅ¾ tu ÄekÃ¡m na pÃ¢edvolÃ¡nÃ­ vÃ­c jak 36 dnÃ­. ZaÄÃ­nÃ¡m pochybovat, Å¾e se to vÅ¯bec kdy stane, ale prostÄ™ jen plnÃ­m rozkazy. Tady se ke mnÄ™ ale chovajÃ­ jako k nÄ™jakÃ© starÃ© sluÅ¾ce."					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "Klíèník mi naâídil, abych zavâel všechny závory, ale ještê jsem se k tomu vùbec nedostal. Kdy to takhle pùjde dál, bude moci branou procházet kadı otrapa.");
-					Doc_PrintLines	( nDocID,  0, "Je to ostuda, e si nepamatuji správné kombinace.");
+					Doc_PrintLines	( nDocID,  0, "KlÃ­ÄnÃ­k mi naÃ¢Ã­dil, abych zavÃ¢el vÅ¡echny zÃ¡vory, ale jeÅ¡tÄ™ jsem se k tomu vÅ¯bec nedostal. KdyÅ¾ to takhle pÅ¯jde dÃ¡l, bude moci branou prochÃ¡zet kaÅ¾dÃ½ otrapa.");
+					Doc_PrintLines	( nDocID,  0, "Je to ostuda, Å¾e si nepamatuji sprÃ¡vnÃ© kombinace.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Pâed lety jsem se vplíil do velké sínê, ale jen têko jsem mohl èekat, e uvidím Pána. Zajímalo by mê, jestli by mê k nêmu pustili, kdybych se stal jedním z nich."	);
+					Doc_PrintLines	( nDocID,  1, "PÃ¢ed lety jsem se vplÃ­Å¾il do velkÃ© sÃ­nÄ™, ale jen tÄ™Å¾ko jsem mohl Äekat, Å¾e uvidÃ­m PÃ¡na. ZajÃ­malo by mÄ™, jestli by mÄ™ k nÄ™mu pustili, kdybych se stal jednÃ­m z nich."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Vèera jsem zkusil štêstí, ale opustilo mê v komnatách se dvêma pákami, ještê ne jsem mohl ve správném poâadí stisknout tâi spínaèe v západním kâídle. Ten pes ty komnaty zamkl! Zítra se pokusím nêjak zmocnit jeho klíèe.");
+					Doc_PrintLines	( nDocID,  1, "VÄera jsem zkusil Å¡tÄ™stÃ­, ale opustilo mÄ™ v komnatÃ¡ch se dvÄ™ma pÃ¡kami, jeÅ¡tÄ™ neÅ¾ jsem mohl ve sprÃ¡vnÃ©m poÃ¢adÃ­ stisknout tÃ¢i spÃ­naÄe v zÃ¡padnÃ­m kÃ¢Ã­dle. Ten pes ty komnaty zamkl! ZÃ­tra se pokusÃ­m nÄ™jak zmocnit jeho klÃ­Äe.");
 					Doc_Show		( nDocID );
 
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Deník novice èernıch mágù hovoâí o komnatách s pákami, o klíènících, o kombinacích spínaèù i o dalších vêcech. Musím si to všecko zapamatovat, mohlo by se mi to pozdêji hodit."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"DenÃ­k novice ÄernÃ½ch mÃ¡gÅ¯ hovoÃ¢Ã­ o komnatÃ¡ch s pÃ¡kami, o klÃ­ÄnÃ­cÃ­ch, o kombinacÃ­ch spÃ­naÄÅ¯ i o dalÅ¡Ã­ch vÄ™cech. MusÃ­m si to vÅ¡ecko zapamatovat, mohlo by se mi to pozdÄ™ji hodit."); 
 };
 
 //**********************************************************************************
@@ -393,7 +393,7 @@ INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 
 INSTANCE ItWr_ZugBruecke_MIS	(C_Item)
 {
-	name 				=	"Starı dopis";
+	name 				=	"StarÃ½ dopis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -416,13 +416,13 @@ func void Use_ZugBruecke ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "   Poslední varování!"					);
+					Doc_PrintLine	( nDocID,  0, "   PoslednÃ­ varovÃ¡nÃ­!"					);
 					Doc_SetMargins	( nDocID, -1, 50, 50, 70, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Je mi fuk, jestli ten most pâejdete z druhé strany, nebo ne. Pro mê za mê si všichni klidnê shnijte v pekle!"					);
-					Doc_PrintLines	( nDocID,  0, "Dokud jsem tu pánem já, ten most zùstane tak, jak je. A jestli ještê nêkoho pâistihnu, jak se snaí šípem strefit do nêkterého spínaèe a dostat se na druhou stranu, vlastnoruènê ho povêsím na nejbliším stromê!"	);
+					Doc_PrintLines	( nDocID,  0, "Je mi fuk, jestli ten most pÃ¢ejdete z druhÃ© strany, nebo ne. Pro mÄ™ za mÄ™ si vÅ¡ichni klidnÄ™ shnijte v pekle!"					);
+					Doc_PrintLines	( nDocID,  0, "Dokud jsem tu pÃ¡nem jÃ¡, ten most zÅ¯stane tak, jak je. A jestli jeÅ¡tÄ™ nÄ™koho pÃ¢istihnu, jak se snaÅ¾Ã­ Å¡Ã­pem strefit do nÄ™kterÃ©ho spÃ­naÄe a dostat se na druhou stranu, vlastnoruÄnÄ™ ho povÄ™sÃ­m na nejbliÅ¾Å¡Ã­m stromÄ™!"	);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -433,7 +433,7 @@ func void Use_ZugBruecke ()
 
 
 //**********************************************************************************
-//	ItMi_PowerEye zum öffnen der letzten Tür
+//	ItMi_PowerEye zum Ã¶ffnen der letzten TÃ¼r
 //**********************************************************************************
 
 INSTANCE ItMi_PowerEye (C_Item)

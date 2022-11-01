@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -8,134 +8,134 @@
 //--------Addon-----------
 
 //-------Banditen----------------
-const string Topic_Addon_Logan		= "Hon na moèálové raloky";	
-const string Topic_Addon_Stoneplate	= "Kamenná tabulka je v bainê";
-const string Topic_Addon_Franco		= "Vzhùru do tábora banditù";
+const string Topic_Addon_Logan		= "Hon na moÄÃ¡lovÃ© Å¾raloky";	
+const string Topic_Addon_Stoneplate	= "KamennÃ¡ tabulka je v baÅ¾inÄ™";
+const string Topic_Addon_Franco		= "VzhÅ¯ru do tÃ¡bora banditÅ¯";
 
-const string Topic_Addon_Senyan		= "Katastrofální situace";
-const string Topic_Addon_Esteban	= "Pokus o vradu";
+const string Topic_Addon_Senyan		= "KatastrofÃ¡lnÃ­ situace";
+const string Topic_Addon_Esteban	= "Pokus o vraÅ¾du";
 const string Topic_Addon_Huno		= "Hunova ocel";
-const string Topic_Addon_Fisk		= "Balíèek paklíèù";
-const string Topic_Addon_Buddler	= "Tâi kameny - tâi kopáèi";
-const string Topic_Addon_Tempel		= "Pâístup do chrámu";
+const string Topic_Addon_Fisk		= "BalÃ­Äek paklÃ­ÄÅ¯";
+const string Topic_Addon_Buddler	= "TÃ¢i kameny - tÃ¢i kopÃ¡Äi";
+const string Topic_Addon_Tempel		= "PÃ¢Ã­stup do chrÃ¡mu";
 
-const string Topic_Addon_Fortuno	= "Spletité myšlenky";
-const string Topic_Addon_Hammer		= "Cloumák";	
+const string Topic_Addon_Fortuno	= "SpletitÃ© myÅ¡lenky";
+const string Topic_Addon_Hammer		= "CloumÃ¡k";	
 
 
 
 const string Topic_Addon_BDT_Trader  = "Obchod s bandity";	
-const string Topic_Addon_BDT_Teacher = "Uèení u banditù";	
+const string Topic_Addon_BDT_Teacher = "UÄenÃ­ u banditÅ¯";	
 
 // ------ Kapitel 1 ------
-CONST string 	Topic_Bandits				=	"Obrázek hledaného a banditi"; 
+CONST string 	Topic_Bandits				=	"ObrÃ¡zek hledanÃ©ho a banditi"; 
 
-// ------ Der Rübenbauer ------
-const string	TOPIC_Kleidung				=	"Lobartovy pracovní šaty";
-const string	TOPIC_Rueben				=	"Sklidit tuâínovı záhon";
-const string	TOPIC_Ruebenbringen			=	"Pâinést tuâíny Hildê";
-const string	TOPIC_Vino					=	"Za láhev vína";
-const string	TOPIC_Maleth				=	"Bandité u Lobartovy farmy";
-const string	TOPIC_Hilda					=	"Pánev pro Hildu";
+// ------ Der RÃ¼benbauer ------
+const string	TOPIC_Kleidung				=	"Lobartovy pracovnÃ­ Å¡aty";
+const string	TOPIC_Rueben				=	"Sklidit tuÃ¢Ã­novÃ½ zÃ¡hon";
+const string	TOPIC_Ruebenbringen			=	"PÃ¢inÃ©st tuÃ¢Ã­ny HildÄ™";
+const string	TOPIC_Vino					=	"Za lÃ¡hev vÃ­na";
+const string	TOPIC_Maleth				=	"BanditÃ© u Lobartovy farmy";
+const string	TOPIC_Hilda					=	"PÃ¡nev pro Hildu";
 
 //-----Der Weg in die Stadt-------------
-const string	TOPIC_City					=	"Jak se dostat do mêsta Khorinis";
+const string	TOPIC_City					=	"Jak se dostat do mÄ™sta Khorinis";
 
 //-----In Khorinis Lehrling werden --------- 
-const string	TOPIC_BecomeMIL				=	"Èlenem mêstské stráe";
+const string	TOPIC_BecomeMIL				=	"ÄŒlenem mÄ™stskÃ© strÃ¡Å¾e";
 
-const string	TOPIC_Lehrling				=   "Uèedníkem v Khorinidu";
-const string	TOPIC_OV					=   "Jak se dostat do horní ètvrti";
+const string	TOPIC_Lehrling				=   "UÄednÃ­kem v Khorinidu";
+const string	TOPIC_OV					=   "Jak se dostat do hornÃ­ Ätvrti";
 
 const string	TOPIC_Matteo				=   "Matteo a Gritta.";
-const string	TOPIC_Thorben				=   "Poehnání bohù";
-const string	TOPIC_HaradOrk				=   "Velká vızva";
-const string	TOPIC_BosperBogen			=   "Bosperùv luk";
-const string	TOPIC_BosperWolf			=   "Koešiny pro Bospera";
+const string	TOPIC_Thorben				=   "PoÅ¾ehnÃ¡nÃ­ bohÅ¯";
+const string	TOPIC_HaradOrk				=   "VelkÃ¡ vÃ½zva";
+const string	TOPIC_BosperBogen			=   "BosperÅ¯v luk";
+const string	TOPIC_BosperWolf			=   "KoÅ¾eÅ¡iny pro Bospera";
 const string	TOPIC_ConstantinoPlants		=   "Byliny pro Constantina";
 
-//-------------Händler und Diebe---------------------------
-const string	TOPIC_Canthar				=	"Cantharova pâízeà";
-const string	TOPIC_HakonBanditen			=   "Pâepady banditù";
+//-------------HÃ¤ndler und Diebe---------------------------
+const string	TOPIC_Canthar				=	"Cantharova pÃ¢Ã­zeÅ•";
+const string	TOPIC_HakonBanditen			=   "PÃ¢epady banditÅ¯";
 const string	TOPIC_Jora					=	"Kupcovo zlato";
-const string	TOPIC_JoraDieb				=	"Nestydatı zlodêj";
-const string	TOPIC_Nagur					=	"Falešnı posel";
-const string	TOPIC_Baltram				=	"Baltramova dodávka";
+const string	TOPIC_JoraDieb				=	"NestydatÃ½ zlodÄ™j";
+const string	TOPIC_Nagur					=	"FaleÅ¡nÃ½ posel";
+const string	TOPIC_Baltram				=	"Baltramova dodÃ¡vka";
 
-const string 	Topic_CassiaRing			= 	"Constantinùv prsten";
-const string 	Topic_CassiaKelche			= 	"Krvavı kalich";
-const string 	Topic_RamirezSextant		= 	"Pâístroj";
+const string 	Topic_CassiaRing			= 	"ConstantinÅ¯v prsten";
+const string 	Topic_CassiaKelche			= 	"KrvavÃ½ kalich";
+const string 	Topic_RamirezSextant		= 	"PÃ¢Ã­stroj";
 
 //------------Hafenviertel und Sonstiges------------------
-const string 	TOPIC_Alwin					= 	"Šílenı Fellan";
+const string 	TOPIC_Alwin					= 	"Å Ã­lenÃ½ Fellan";
 const string 	TOPIC_Ignaz					= 	"Pokus";
-const string 	TOPIC_AlrikSchwert			= 	"Alrikùv meè";
+const string 	TOPIC_AlrikSchwert			= 	"AlrikÅ¯v meÄ";
 const string 	TOPIC_Garvell				= 	"Informace pro Garvella";
 
 
 
-//---------Milizaufträge-------------------------------
+//---------MilizauftrÃ¤ge-------------------------------
 const string	TOPIC_Peck					= 	"Kde je Peck?";
-const string	TOPIC_Warehouse				= 	"Balík trávy z bain";
-const string	TOPIC_Redlight				= 	"Roznáška drogy";
-const string	TOPIC_Feldraeuber			= 	"Problémy na Lobartovê farmê";
+const string	TOPIC_Warehouse				= 	"BalÃ­k trÃ¡vy z baÅ¾in";
+const string	TOPIC_Redlight				= 	"RoznÃ¡Å¡ka drogy";
+const string	TOPIC_Feldraeuber			= 	"ProblÃ©my na LobartovÄ™ farmÄ™";
 
 
 
 //---------Kloster-----------------------------
-const string	TOPIC_BecomeKdF				=	"Mág ohnê"; 
+const string	TOPIC_BecomeKdF				=	"MÃ¡g ohnÄ™"; 
 
-const string	Topic_Kloster				=	"Jak se dostat do kláštera.";
-const string    Topic_Gemeinschaft			=	"Sluba spoleènosti";
+const string	Topic_Kloster				=	"Jak se dostat do klÃ¡Å¡tera.";
+const string    Topic_Gemeinschaft			=	"SluÅ¾ba spoleÄnosti";
 
-//---------Arbeiten für die Gemeinschaft-----------------------------
-const string    Topic_Neorasrezept  		=	"Ztracenı recept";
+//---------Arbeiten fÃ¼r die Gemeinschaft-----------------------------
+const string    Topic_Neorasrezept  		=	"ZtracenÃ½ recept";
 const string    Topic_NeorasPflanzen		=	"Sedm bylin";
-const string    Topic_IsgarothWolf			=	"Isgarothùv problém";
-const string    Topic_ParlanFegen			=	"Pokoje novicù";
-const string    Topic_GoraxEssen 			=	"Skopové klobásy";
-const string    Topic_GoraxWein 			=	"Doruèení vína";
+const string    Topic_IsgarothWolf			=	"IsgarothÅ¯v problÃ©m";
+const string    Topic_ParlanFegen			=	"Pokoje novicÅ¯";
+const string    Topic_GoraxEssen 			=	"SkopovÃ© klobÃ¡sy";
+const string    Topic_GoraxWein 			=	"DoruÄenÃ­ vÃ­na";
 const string    Topic_MardukBeten 			=	"Modlitba za paladiny";
 
 //---------Sonstiges -----------------------------
 const string	Topic_OpolosRezept			=	"Opolos a recept";
-const string	Topic_BaboTrain				=	"Bojovı vıcvik pro Baba";
-const string	Topic_KarrasCharm			=	"Krátkı vılet do mêsta";
+const string	Topic_BaboTrain				=	"BojovÃ½ vÃ½cvik pro Baba";
+const string	Topic_KarrasCharm			=	"KrÃ¡tkÃ½ vÃ½let do mÄ™sta";
 
-//---------Prüfung des Feuers---------------------
-const string	TOPIC_FireContest			=	"Zkouška ohnêm";
-const string	TOPIC_Golem					=	"ivá skála";
-const string	TOPIC_Rune					=	"Vytvoâení runy";
-const string	TOPIC_Schnitzeljagd			=	"Cestou vêâícího"; 
+//---------PrÃ¼fung des Feuers---------------------
+const string	TOPIC_FireContest			=	"ZkouÅ¡ka ohnÄ™m";
+const string	TOPIC_Golem					=	"Å½ivÃ¡ skÃ¡la";
+const string	TOPIC_Rune					=	"VytvoÃ¢enÃ­ runy";
+const string	TOPIC_Schnitzeljagd			=	"Cestou vÄ™Ã¢Ã­cÃ­ho"; 
 
-//---------Hilfe für Novizen-----------------------
+//---------Hilfe fÃ¼r Novizen-----------------------
 const string 	Topic_BaboGaertner			=   "Babo a zahrada";
-const string 	Topic_DyrianDrin			=   "Dyrianùv zloèin";
+const string 	Topic_DyrianDrin			=   "DyrianÅ¯v zloÄin";
 const string 	Topic_OpolosStudy			=   "Opolos a knihovna";
 
 //---------LOG_NOTE-----------
-const string	Topic_KlosterTrader			=	"Obchodování v klášteâe";
-const string	Topic_KlosterTeacher		=	"Uèení v klášteâe";
+const string	Topic_KlosterTrader			=	"ObchodovÃ¡nÃ­ v klÃ¡Å¡teÃ¢e";
+const string	Topic_KlosterTeacher		=	"UÄenÃ­ v klÃ¡Å¡teÃ¢e";
 
 
-//---------Söldner----------------------------------
-const string	TOPIC_BecomeSLD				=	"Jedním ze oldnéâù"; 
-const string	TOPIC_TorlofPacht			=	"Vyprat nájem";
+//---------SÃ¶ldner----------------------------------
+const string	TOPIC_BecomeSLD				=	"JednÃ­m ze Å¾oldnÃ©Ã¢Å¯"; 
+const string	TOPIC_TorlofPacht			=	"Vyprat nÃ¡jem";
 const string	TOPIC_TorlofMiliz			=	"Zahnat domobranu";
-const string	TOPIC_SLDRespekt			=	"Uznání";  
+const string	TOPIC_SLDRespekt			=	"UznÃ¡nÃ­";  
  
-const string 	TOPIC_JarvisSLDKo			=	"Jarvisova vızva";  
-const string 	TOPIC_CordProve				=	"Dobrı bojovník";   
+const string 	TOPIC_JarvisSLDKo			=	"Jarvisova vÃ½zva";  
+const string 	TOPIC_CordProve				=	"DobrÃ½ bojovnÃ­k";   
 const string 	Topic_CipherHerb			=	"Pro hromadu bylin";    
-const string 	Topic_CipherPaket			=	"Balík trávy";    
-const string 	Topic_RodWette				=	"Rodùv meè";    
-const string 	TOPIC_FesterRauber			=	"Polní škùdci";   
-const string 	TOPIC_TheklaEintopf			=	"Vıvar";    
-const string 	TOPIC_SagittaHerb			=	"Sluneèní aloe";    
-const string 	TOPIC_PepeWolves			=	"Ètyâi vlci pro Pepeho";    
+const string 	Topic_CipherPaket			=	"BalÃ­k trÃ¡vy";    
+const string 	Topic_RodWette				=	"RodÅ¯v meÄ";    
+const string 	TOPIC_FesterRauber			=	"PolnÃ­ Å¡kÅ¯dci";   
+const string 	TOPIC_TheklaEintopf			=	"VÃ½var";    
+const string 	TOPIC_SagittaHerb			=	"SluneÄnÃ­ aloe";    
+const string 	TOPIC_PepeWolves			=	"ÄŒtyÃ¢i vlci pro Pepeho";    
 const string 	TOPIC_KickBullco			=	"Nakopat Bullcovi zadek"; 
  
-const string 	TOPIC_Frieden				=	"Nabídka míru";  
+const string 	TOPIC_Frieden				=	"NabÃ­dka mÃ­ru";  
  
 //const string 	TOPIC_WolfJob				=	"Wolf";  
 
@@ -145,29 +145,29 @@ const string 	TOPIC_Frieden				=	"Nabídka míru";
 
 //-------------------------------------------------------------------------------------
 
-const string	TOPIC_MISOLDWORLD			=	"Dùkaz";
-const string	TOPIC_ScoutMine				=	"Kopáèi a ruda";
+const string	TOPIC_MISOLDWORLD			=	"DÅ¯kaz";
+const string	TOPIC_ScoutMine				=	"KopÃ¡Äi a ruda";
 
 const string	Topic_MarcosJungs			=	"Pomoc pro Marcose";
-const string	TOPIC_RescueGorn			=	"Záchrana Gorna";
-const string	TOPIC_FajethKillSnapper		=	"Lov chàapavcù";
+const string	TOPIC_RescueGorn			=	"ZÃ¡chrana Gorna";
+const string	TOPIC_FajethKillSnapper		=	"Lov chÅ•apavcÅ¯";
 const string	TOPIC_BringMeat				=	"Maso";
 const string	TopicBrutusKasse			=	"Zlato pro Bruta";
 
-const string	Topic_TengronRing			=	"Tengrùv prsten";
-const string	Topic_OricBruder			=	"Špatné zprávy";
+const string	Topic_TengronRing			=	"TengrÅ¯v prsten";
+const string	Topic_OricBruder			=	"Å patnÃ© zprÃ¡vy";
 
 const string	TOPIC_BilgotEscort			=	"Bilgotovy trable";
 
-const string	TOPIC_Botschaft				=	"Zpráva";
-const string	TOPIC_Lutero				=	"Drápy chàapavce";
-const string	TOPIC_Fernando				=	"Fernandùv obchod";
+const string	TOPIC_Botschaft				=	"ZprÃ¡va";
+const string	TOPIC_Lutero				=	"DrÃ¡py chÅ•apavce";
+const string	TOPIC_Fernando				=	"FernandÅ¯v obchod";
 
 //-------------------------------------------------------------------------------------
-const string	TOPIC_PyrokarClearDemonTower	 = "Návrat do vêe";
-const string	TOPIC_HyglasBringBook			 = "Hvêzdná moc";
+const string	TOPIC_PyrokarClearDemonTower	 = "NÃ¡vrat do vÄ™Å¾e";
+const string	TOPIC_HyglasBringBook			 = "HvÄ™zdnÃ¡ moc";
 
 const string	Topic_BabosDocs		 			 = "Dokumenty";
-const string	TOPIC_Wolf_BringCrawlerPlates	 = "Èerví krunıâ";
+const string	TOPIC_Wolf_BringCrawlerPlates	 = "ÄŒervÃ­ krunÃ½Ã¢";
 const string	TOPIC_HelpDiegoNW		 		 = "Diegovo zlato";
-const string	TOPIC_DiegosResidence		 	 = "Diegùv obchod";
+const string	TOPIC_DiegosResidence		 	 = "DiegÅ¯v obchod";

@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Logan_EXIT   (C_INFO)
 	condition   = DIA_Addon_Logan_EXIT_Condition;
 	information = DIA_Addon_Logan_EXIT_Info;
 	permanent   = TRUE;
-	description = "JeötÍ se vr·tÌm.";
+	description = "Je≈°tƒô se vr√°t√≠m.";
 };
 FUNC INT DIA_Addon_Logan_EXIT_Condition()
 {	
@@ -16,13 +16,13 @@ FUNC INT DIA_Addon_Logan_EXIT_Condition()
 };
 FUNC VOID DIA_Addon_Logan_EXIT_Info()
 {		
-	AI_Output (other,self,"DIA_Addon_Logan_EXIT_15_00");//P‚ijdu pozdÍji.
+	AI_Output (other,self,"DIA_Addon_Logan_EXIT_15_00");//P√¢ijdu pozdƒôji.
 	
 	if ((!MIS_HlpLogan == LOG_RUNNING)
 	|| ( !MIS_HlpLogan == LOG_SUCCESS))
 	&& (Logan_Inside == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Logan_EXIT_10_01");//(vrËÌ) Jo, klidnÍ si zdrhej. J· z˘stanu taky a zastavÌm vöecko, co se moc p‚iblÌûÌ.
+		AI_Output (self,other,"DIA_Addon_Logan_EXIT_10_01");//(vrƒç√≠) Jo, klidnƒô si zdrhej. J√° z≈Østanu taky a zastav√≠m v≈°ecko, co se moc p√¢ibl√≠≈æ√≠.
 	};
 	AI_StopProcessInfos (self);
 };	
@@ -87,7 +87,7 @@ FUNC VOID DIA_Addon_Logan_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_BDT_1072_Logan_Mine_10_00");//Takûe jsi to zvl·dnul? No, dob‚e ûes mÍ tam nenechal trËet.
+	AI_Output (self, other, "DIA_Addon_BDT_1072_Logan_Mine_10_00");//Tak≈æe jsi to zvl√°dnul? No, dob√¢e ≈æes mƒô tam nenechal trƒçet.
 	
 	
 	Player_SentBuddler = (Player_SentBuddler +1);
@@ -105,7 +105,7 @@ INSTANCE DIA_Addon_Logan_How2   (C_INFO)
 	condition   = DIA_Addon_Logan_How2_Condition;
 	information = DIA_Addon_Logan_How2_Info;
 	permanent   = FALSE;
-	description	= "Jak to s tebou vypad·?";
+	description	= "Jak to s tebou vypad√°?";
 };
 FUNC INT DIA_Addon_Logan_How2_Condition()	
 {
@@ -118,11 +118,11 @@ FUNC INT DIA_Addon_Logan_How2_Condition()
 FUNC VOID DIA_Addon_Logan_How2_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Logan_How2_15_00"); //Jak se ti vede?
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_01"); //No, aspo‡ ûe jsem tady. Lucie va‚Ì ‡·kej dÍsnej chlast.
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_02"); //Jenûe Esteban mÍ do dolu nepustÌ. Aspo‡ ne teÎ. Dal mi jinou pr·ci.
-	AI_Output (other, self, "DIA_Addon_Logan_How2_15_03"); //A co po tobÍ chce?
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_04"); //NÍkdo se pokusil Estebana zabÌt, tak chce vÍdÍt, kdo to m· na svÍdomÌ.
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_05"); //(tiöe) Esteban si myslÌ, ûe v tom m· prsty Snaf, tak na nÍj m·m dohlÌûet.
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_01"); //No, aspo≈ï ≈æe jsem tady. Lucie va√¢√≠ ≈ï√°kej dƒôsnej chlast.
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_02"); //Jen≈æe Esteban mƒô do dolu nepust√≠. Aspo≈ï ne te√´. Dal mi jinou pr√°ci.
+	AI_Output (other, self, "DIA_Addon_Logan_How2_15_03"); //A co po tobƒô chce?
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_04"); //Nƒôkdo se pokusil Estebana zab√≠t, tak chce vƒôdƒôt, kdo to m√° na svƒôdom√≠.
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_05"); //(ti≈°e) Esteban si mysl√≠, ≈æe v tom m√° prsty Snaf, tak na nƒôj m√°m dohl√≠≈æet.
 
 };
 //---------------------------------------------------------------------
@@ -148,8 +148,8 @@ FUNC INT DIA_Addon_Logan_Attentat_Condition()
 FUNC VOID DIA_Addon_Logan_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_00");//Hled·ö, kdo za tÌm vÍzÌ, co?
-	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_01");//Ale nevÌm o tom v˘bec nic. Jak bych taky moh? Byl jsem tehd· jeötÍ v baûinÍ.
+	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_00");//Hled√°≈°, kdo za t√≠m vƒôz√≠, co?
+	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_01");//Ale nev√≠m o tom v≈Øbec nic. Jak bych taky moh? Byl jsem tehd√° je≈°tƒô v ba≈æinƒô.
 };
 //---------------------------------------------------------------------
 //	Info HI 
@@ -173,22 +173,22 @@ FUNC INT DIA_Addon_Logan_HI_Condition()
 };
 FUNC VOID DIA_Addon_Logan_HI_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_00");//A hele, nÍkdo novej.
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_01");//P‚iöel jsi tu jen tak post·vat, nebo mi m·ö pomoct?
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_00");//A hele, nƒôkdo novej.
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_01");//P√¢i≈°el jsi tu jen tak post√°vat, nebo mi m√°≈° pomoct?
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Franco_HI) 
 	{
-		AI_Output (other, self, "DIA_Addon_Logan_HI_15_02");//PosÌl· mÍ Franco, pr˝ pot‚ebujeö pomoct. Tak povÌdej, co je?
+		AI_Output (other, self, "DIA_Addon_Logan_HI_15_02");//Pos√≠l√° mƒô Franco, pr√Ω pot√¢ebuje≈° pomoct. Tak pov√≠dej, co je?
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Logan_HI_15_03");//To z·leûÌ na tom, s ËÌm tu pomoc pot‚ebujeö.
+		AI_Output (other, self, "DIA_Addon_Logan_HI_15_03");//To z√°le≈æ√≠ na tom, s ƒç√≠m tu pomoc pot√¢ebuje≈°.
 	};
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_04");//MoË·lovÌ ûraloci uû lezou na m˘j vkus aû moc blÌzko ñ nejvyööÌ Ëas, aby jich nÍkdo p·r pobil.
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_04");//Moƒç√°lov√≠ ≈æraloci u≈æ lezou na m≈Øj vkus a≈æ moc bl√≠zko ‚Äì nejvy≈°≈°√≠ ƒças, aby jich nƒôkdo p√°r pobil.
 	
 	Log_CreateTopic (Topic_Addon_Logan,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Logan,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Logan,"Logan chce, abych se s nÌm vydal na lov moË·lov˝ch ûralok˘.");
+	B_LogEntry (Topic_Addon_Logan,"Logan chce, abych se s n√≠m vydal na lov moƒç√°lov√Ωch ≈æralok≈Ø.");
 };
 //---------------------------------------------------------------------
 //	Info Why
@@ -213,15 +213,15 @@ FUNC INT DIA_Addon_Logan_Why_Condition()
 FUNC VOID DIA_Addon_Logan_Why_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Logan_Why_15_00"); //A co za svou pomoc dostanu?
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_01"); //(vrËÌ) Kdyû to neudÍl·ö, Franco tÍ tu nech· shnÌt.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_02"); //Jestli se chceö dostat do t·bora, musÌö p‚iloûit ruku k dÌlu. Planejma ‚eËma se nikam nedostaneö.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_03"); //Krom toho ti m˘ûu uk·zat, jak vyvrhnout zvÌ‚ata.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_04"); //Ale nemyslÌm, ûe tÍ Franco poöle rovnou do t·bora jenom proto, ûe si pohrajeö s p·r ûralokama.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_05"); //Je tu dost lidÌ, co uû Ëekaj jak dlouho, aby se dostali dovnit‚.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_06"); //A dalöÌ na ‚adÍ jsem j· (vrËÌ). Nebo bych aspo‡ mÍl bejt.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_01"); //(vrƒç√≠) Kdy≈æ to neudƒôl√°≈°, Franco tƒô tu nech√° shn√≠t.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_02"); //Jestli se chce≈° dostat do t√°bora, mus√≠≈° p√¢ilo≈æit ruku k d√≠lu. Planejma √¢eƒçma se nikam nedostane≈°.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_03"); //Krom toho ti m≈Ø≈æu uk√°zat, jak vyvrhnout zv√≠√¢ata.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_04"); //Ale nemysl√≠m, ≈æe tƒô Franco po≈°le rovnou do t√°bora jenom proto, ≈æe si pohraje≈° s p√°r ≈æralokama.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_05"); //Je tu dost lid√≠, co u≈æ ƒçekaj jak dlouho, aby se dostali dovnit√¢.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_06"); //A dal≈°√≠ na √¢adƒô jsem j√° (vrƒç√≠). Nebo bych aspo≈ï mƒôl bejt.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Logan mÍ nauËÌ stahovat k˘ûe a vyjÌmat dr·py a zuby.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Logan mƒô nauƒç√≠ stahovat k≈Ø≈æe a vyj√≠mat dr√°py a zuby.");	
 };
 //---------------------------------------------------------------------
 //	Info Lager
@@ -233,7 +233,7 @@ INSTANCE DIA_Addon_Logan_Lager   (C_INFO)
 	condition   = DIA_Addon_Logan_Lager_Condition;
 	information = DIA_Addon_Logan_Lager_Info;
 	permanent   = FALSE;
-	description	= "Co je v tom t·bo‚e?";
+	description	= "Co je v tom t√°bo√¢e?";
 };
 FUNC INT DIA_Addon_Logan_Lager_Condition()	
 {
@@ -245,9 +245,9 @@ FUNC INT DIA_Addon_Logan_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Lager_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Logan_Lager_15_00");//A co je teda v tom t·bo‚e?
-	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_01");//(vrËÌ) SpÌö se ptej, co v t·bo‚e NENÕ. Nejsou tam û·dn˝ moË·lov˝ ûraloci, û·dn˝ hlubok˝ baûiny, prostÍ v˘bec é¡DN› mok‚iny.
-	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_02");//MÌsto toho je tam chlast a zlato. Pokud vÌm, tak tam snad je i ‡·k· ûensk·. Ch·peö?
+	AI_Output (other, self, "DIA_Addon_Logan_Lager_15_00");//A co je teda v tom t√°bo√¢e?
+	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_01");//(vrƒç√≠) Sp√≠≈° se ptej, co v t√°bo√¢e NEN√ç. Nejsou tam ≈æ√°dn√Ω moƒç√°lov√Ω ≈æraloci, ≈æ√°dn√Ω hlubok√Ω ba≈æiny, prostƒô v≈Øbec ≈Ω√ÅDN√ù mok√¢iny.
+	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_02");//M√≠sto toho je tam chlast a zlato. Pokud v√≠m, tak tam snad je i ≈ï√°k√° ≈æensk√°. Ch√°pe≈°?
 };
 //---------------------------------------------------------------------
 //	Info von Franco geschickt (MISsion) 
@@ -259,7 +259,7 @@ INSTANCE DIA_Addon_Logan_MIS   (C_INFO)
 	condition   = DIA_Addon_Logan_MIS_Condition;
 	information = DIA_Addon_Logan_MIS_Info;
 	permanent   = FALSE;
-	description	= "PojÎme na ty moË·lovÈ ûraloky.";
+	description	= "Poj√´me na ty moƒç√°lov√© ≈æraloky.";
 };
 FUNC INT DIA_Addon_Logan_MIS_Condition()	
 {	
@@ -271,10 +271,10 @@ FUNC INT DIA_Addon_Logan_MIS_Condition()
 FUNC VOID DIA_Addon_Logan_MIS_Info()
 {
 	
-	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_00");//Tak pojÎme na ty ûraloky.
-	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_01");//Uû vÌö, jak na to. To mÍ tÍöÌ. Psst ñ slyöÌö to? J· teda jo.
-	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_02");//Ch·pu ñ a co udÍl·me teÎ?
-	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_03");//Uû se blÌûÌ. Dostali chu„ na kousek lidsk˝ho masÌËka. Jojo, uvidÌme, kdo koho dneska seûere. PojÎme.
+	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_00");//Tak poj√´me na ty ≈æraloky.
+	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_01");//U≈æ v√≠≈°, jak na to. To mƒô tƒô≈°√≠. Psst ‚Äì sly≈°√≠≈° to? J√° teda jo.
+	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_02");//Ch√°pu ‚Äì a co udƒôl√°me te√´?
+	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_03");//U≈æ se bl√≠≈æ√≠. Dostali chuƒÉ na kousek lidsk√Ωho mas√≠ƒçka. Jojo, uvid√≠me, kdo koho dneska se≈æere. Poj√´me.
 	
 	Snd_Play ("SWA_Warn");
 	AI_StopProcessInfos (self);
@@ -313,14 +313,14 @@ FUNC INT DIA_Addon_Logan_tot_Condition()
 };
 FUNC VOID DIA_Addon_Logan_tot_Info()
 {	 
-	AI_Output (self, other, "DIA_Addon_Logan_tot_10_00");//Dobrej moË·lovej ûralok je mrtvej moË·lovej ûralok. To bude pro jeho br·chy po‚·dn˝ varov·nÌ.
-	AI_Output (other, self, "DIA_Addon_Logan_tot_15_01");//Fajn, je tu pot‚eba jeötÍ nÍco dalöÌho? Jinak jdu pryË.
-	AI_Output (self, other, "DIA_Addon_Logan_tot_10_02");//KlidnÍ. A aû se budeö chtÌt jeötÍ nÍco nauËit, vÌö, kde mÍ hledat.
+	AI_Output (self, other, "DIA_Addon_Logan_tot_10_00");//Dobrej moƒç√°lovej ≈æralok je mrtvej moƒç√°lovej ≈æralok. To bude pro jeho br√°chy po√¢√°dn√Ω varov√°n√≠.
+	AI_Output (other, self, "DIA_Addon_Logan_tot_15_01");//Fajn, je tu pot√¢eba je≈°tƒô nƒôco dal≈°√≠ho? Jinak jdu pryƒç.
+	AI_Output (self, other, "DIA_Addon_Logan_tot_10_02");//Klidnƒô. A a≈æ se bude≈° cht√≠t je≈°tƒô nƒôco nauƒçit, v√≠≈°, kde mƒô hledat.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	MIS_HlpLogan = LOG_SUCCESS;
 	B_CheckLog ();
-	B_LogEntry (Topic_Addon_Franco,"Pomohl jsem Loganovi. UvidÌme, co tomu ‚ekne Franco.");
+	B_LogEntry (Topic_Addon_Franco,"Pomohl jsem Loganovi. Uvid√≠me, co tomu √¢ekne Franco.");
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START");
@@ -337,7 +337,7 @@ INSTANCE DIA_Addon_Logan_Lern   (C_INFO)
 	condition   = DIA_Addon_Logan_Lern_Condition;
 	information = DIA_Addon_Logan_Lern_Info;
 	permanent   = FALSE;
-	description = "NauË mÍ vyvrhovat zvÌ‚ata...";
+	description = "Nauƒç mƒô vyvrhovat zv√≠√¢ata...";
 };
 FUNC INT DIA_Addon_Logan_Lern_Condition()
 {	
@@ -348,9 +348,9 @@ FUNC INT DIA_Addon_Logan_Lern_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Lern_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Logan_Lern_15_00");//Ukaû mi, jak vyvrhnout zvÌ‚ata.
-	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_01");//Jestli se chceö nauËit nÍco o krvavejch mouch·ch, zajdi si za Edgorem. Ten o nich vÌ vöecko.
-	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_02");//A kdybys chtÍl vyvrhovat moË·lov˝ ûraloky nebo jeötÍry, musÌö vÍdÍt, jak jim st·hnout k˘ûe a vyndat zuby. Uk·ûu ti jak.
+	AI_Output (other, self, "DIA_Addon_Logan_Lern_15_00");//Uka≈æ mi, jak vyvrhnout zv√≠√¢ata.
+	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_01");//Jestli se chce≈° nauƒçit nƒôco o krvavejch mouch√°ch, zajdi si za Edgorem. Ten o nich v√≠ v≈°ecko.
+	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_02");//A kdybys chtƒôl vyvrhovat moƒç√°lov√Ω ≈æraloky nebo je≈°tƒôry, mus√≠≈° vƒôdƒôt, jak jim st√°hnout k≈Ø≈æe a vyndat zuby. Uk√°≈æu ti jak.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Allgemeine Talente
@@ -362,7 +362,7 @@ INSTANCE DIA_Addon_Logan_Allg   (C_INFO)
 	condition   = DIA_Addon_Logan_Allg_Condition;
 	information = DIA_Addon_Logan_Allg_Info;
 	permanent   = TRUE;
-	description = "Chci se nauËit...";
+	description = "Chci se nauƒçit...";
 };
 FUNC INT DIA_Addon_Logan_Allg_Condition()
 {	
@@ -381,15 +381,15 @@ FUNC VOID DIA_Addon_Logan_Allg_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("VyjmutÌ zub˘",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Addon_Logan_Allg_Teeth);
+		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Vyjmut√≠ zub≈Ø",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Addon_Logan_Allg_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("VyjmutÌ dr·p˘",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Addon_Logan_Allg_Claws);
+		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Vyjmut√≠ dr√°p≈Ø",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Addon_Logan_Allg_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("StaûenÌ z k˘ûe",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Addon_Logan_Allg_Fur);
+		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Sta≈æen√≠ z k≈Ø≈æe",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Addon_Logan_Allg_Fur);
 	};
 	
 };
@@ -437,12 +437,12 @@ FUNC INT DIA_Addon_Logan_Hacker_Condition()
 FUNC VOID DIA_Addon_Logan_Hacker_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10004_Logan_Hacker_15_00"); //Jak to jde?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_01"); //Zdar! DÌky tobÍ jsem to zvl·dnul! Jsem v dole!
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_02"); //O dolov·nÌ zlata sice moc nevÌm, ale to se podd·.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_01"); //Zdar! D√≠ky tobƒô jsem to zvl√°dnul! Jsem v dole!
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_02"); //O dolov√°n√≠ zlata sice moc nev√≠m, ale to se podd√°.
 	
 	if (Logan_Lohn == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_03"); //NauËil jsem se to nejd˘leûitÍjöÌ. Nohy pevnÍ na zemi a vûdycky silnÍ buöit.
+		AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_03"); //Nauƒçil jsem se to nejd≈Øle≈æitƒôj≈°√≠. Nohy pevnƒô na zemi a v≈ædycky silnƒô bu≈°it.
 		B_Upgrade_Hero_HackChance(10); 
 		Logan_Lohn = TRUE;
 	};
