@@ -53,14 +53,14 @@ func void DIA_Kati_SLDNOCHDA_Info ()
 	
 	if (Hilfe == FALSE)
 	{
-		AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Mein Mann wird von diesen Halsabschneidern bedroht! Wir sind königstreue Bürger der Stadt, und die Söldner wollen uns ausrauben!
+		AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Mein Mann wird von diesen Halsabschneidern bedroht! Wir sind kÃ¶nigstreue BÃ¼rger der Stadt, und die SÃ¶ldner wollen uns ausrauben!
 		Hilfe = TRUE;
 	};
 	AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_01"); //Jetzt steh doch da nicht herum. Tu doch irgendwas. Hilf uns.
 	Akils_SLDStillthere = TRUE;
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Akils Hof wird von Söldnern bedroht."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"Akils Hof wird von SÃ¶ldnern bedroht."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -113,7 +113,7 @@ instance DIA_Kati_ESSEN		(C_INFO)
 	condition	 = 	DIA_Kati_ESSEN_Condition;
 	information	 = 	DIA_Kati_ESSEN_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Akil meinte, du hättet eine Mahlzeit für mich.";
+	description	 = 	"Akil meinte, du hÃ¤ttet eine Mahlzeit fÃ¼r mich.";
 };
 
 func int DIA_Kati_ESSEN_Condition ()
@@ -126,8 +126,8 @@ func int DIA_Kati_ESSEN_Condition ()
 };
 func void DIA_Kati_ESSEN_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_ESSEN_15_00"); //Akil meinte, du hättet eine Mahlzeit für mich.
-	AI_Output (self, other, "DIA_Kati_ESSEN_16_01"); //Es sind schwere Zeiten für uns angebrochen, seit die Barriere nicht mehr da ist und das Land unsicher geworden ist.
+	AI_Output (other, self, "DIA_Kati_ESSEN_15_00"); //Akil meinte, du hÃ¤ttet eine Mahlzeit fÃ¼r mich.
+	AI_Output (self, other, "DIA_Kati_ESSEN_16_01"); //Es sind schwere Zeiten fÃ¼r uns angebrochen, seit die Barriere nicht mehr da ist und das Land unsicher geworden ist.
 	AI_Output (self, other, "DIA_Kati_ESSEN_16_02"); //Hier hast du einen Laib Brot, etwas Fleisch und einen Schluck Wasser. Mehr kann ich leider nicht entbehren.
 	
 	B_GiveInvItems (self, other, ItFo_Bread, 1);			
@@ -159,8 +159,8 @@ func int DIA_Kati_Baltram_Condition ()
 };
 func void DIA_Kati_Baltram_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_Baltram_15_00"); //Baltram schickt mich. Ich soll eine Lieferung für ihn abholen.
-	AI_Output (self, other, "DIA_Kati_Baltram_16_01"); //Ja natürlich. Hier, ich habe schon alles zusammen gepackt.
+	AI_Output (other, self, "DIA_Kati_Baltram_15_00"); //Baltram schickt mich. Ich soll eine Lieferung fÃ¼r ihn abholen.
+	AI_Output (self, other, "DIA_Kati_Baltram_16_01"); //Ja natÃ¼rlich. Hier, ich habe schon alles zusammen gepackt.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
@@ -176,7 +176,7 @@ instance DIA_Kati_BAUERNAUFSTAND		(C_INFO)
 	condition	 = 	DIA_Kati_BAUERNAUFSTAND_Condition;
 	information	 = 	DIA_Kati_BAUERNAUFSTAND_Info;
 	permanent    =  FALSE;
-	description	 = 	"Warum wehrt ihr euch nicht gegen Onars Unterdrückung?";
+	description	 = 	"Warum wehrt ihr euch nicht gegen Onars UnterdrÃ¼ckung?";
 };
 
 func int DIA_Kati_BAUERNAUFSTAND_Condition ()
@@ -189,9 +189,9 @@ func int DIA_Kati_BAUERNAUFSTAND_Condition ()
 
 func void DIA_Kati_BAUERNAUFSTAND_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //Warum wehrt ihr euch nicht gegen Onars Unterdrückung?
-	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Wir stadtnahen Bauern sind besser beraten, uns mit der Miliz der Stadt gut zu stellen, als auf Onars Söldner zu bauen.
-	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //Es gibt da aber auch noch Bengar und Sekob, die lieber ihren Hof aufgeben würden, als für den König zu arbeiten.
+	AI_Output (other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //Warum wehrt ihr euch nicht gegen Onars UnterdrÃ¼ckung?
+	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Wir stadtnahen Bauern sind besser beraten, uns mit der Miliz der Stadt gut zu stellen, als auf Onars SÃ¶ldner zu bauen.
+	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //Es gibt da aber auch noch Bengar und Sekob, die lieber ihren Hof aufgeben wÃ¼rden, als fÃ¼r den KÃ¶nig zu arbeiten.
 
 };
 
@@ -205,7 +205,7 @@ instance DIA_Kati_ANDEREHOEFE		(C_INFO)
 	condition	 = 	DIA_Kati_ANDEREHOEFE_Condition;
 	information	 = 	DIA_Kati_ANDEREHOEFE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Wo finde ich die Höfe von Bengar und Sekob?";
+	description	 = 	"Wo finde ich die HÃ¶fe von Bengar und Sekob?";
 };
 
 func int DIA_Kati_ANDEREHOEFE_Condition ()
@@ -218,8 +218,8 @@ func int DIA_Kati_ANDEREHOEFE_Condition ()
 
 func void DIA_Kati_ANDEREHOEFE_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //Wo finde ich die Höfe von Bengar und Sekob?
-	AI_Output (self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //Sie liegen nicht weit vom Hofe des Großbauern entfernt. Geh weiter nach Osten. Dort wirst du sie finden.
+	AI_Output (other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //Wo finde ich die HÃ¶fe von Bengar und Sekob?
+	AI_Output (self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //Sie liegen nicht weit vom Hofe des GroÃŸbauern entfernt. Geh weiter nach Osten. Dort wirst du sie finden.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -246,9 +246,9 @@ func int DIA_Kati_HIERWEG_Condition ()
 func void DIA_Kati_HIERWEG_Info ()
 {
 	AI_Output (other, self, "DIA_Kati_HIERWEG_15_00"); //Habt ihr nie daran gedacht, hier weg zu gehen?
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_01"); //Aus diesem Teil des Landes kommt man nicht so einfach weg. Das ganze Land ist umschlossen von einer hohen Felskette, die unüberwindlich ist.
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_01"); //Aus diesem Teil des Landes kommt man nicht so einfach weg. Das ganze Land ist umschlossen von einer hohen Felskette, die unÃ¼berwindlich ist.
 	AI_Output (self, other, "DIA_Kati_HIERWEG_16_02"); //Die beiden einzigen Wege von hier fort sind der Pass ins alte Minental und der Hafen.
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_03"); //Da wir uns die Überfahrt mit dem Schiff nicht leisten können, und das Minental ein Land ohne Wiederkehr ist, werden wir hier bleiben müssen.
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_03"); //Da wir uns die Ãœberfahrt mit dem Schiff nicht leisten kÃ¶nnen, und das Minental ein Land ohne Wiederkehr ist, werden wir hier bleiben mÃ¼ssen.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -261,7 +261,7 @@ instance DIA_Kati_PASS		(C_INFO)
 	condition	 = 	DIA_Kati_PASS_Condition;
 	information	 = 	DIA_Kati_PASS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Was weißt du über den Pass?";
+	description	 = 	"Was weiÃŸt du Ã¼ber den Pass?";
 };
 
 func int DIA_Kati_PASS_Condition ()
@@ -274,7 +274,7 @@ func int DIA_Kati_PASS_Condition ()
 
 func void DIA_Kati_PASS_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_PASS_15_00"); //Was weißt du über den Pass?
+	AI_Output (other, self, "DIA_Kati_PASS_15_00"); //Was weiÃŸt du Ã¼ber den Pass?
 	AI_Output (self, other, "DIA_Kati_PASS_16_01"); //Ich bin selbst noch nie dort gewesen. Er muss aber irgendwo bei Bengars Hof auf dem Weidenplateau sein.
 };
 
@@ -311,7 +311,7 @@ func int DIA_Kati_PERMKAP1_Condition ()
 func void DIA_Kati_PERMKAP1_Info ()
 {
 	AI_Output			(other, self, "DIA_Kati_PERMKAP1_15_00"); //Pass auf deinen Mann auf.
-	AI_Output			(self, other, "DIA_Kati_PERMKAP1_16_01"); //Ich werde mich bemühen.
+	AI_Output			(self, other, "DIA_Kati_PERMKAP1_16_01"); //Ich werde mich bemÃ¼hen.
 	AI_StopProcessInfos (self);
 };
 
@@ -374,8 +374,8 @@ func int DIA_Kati_PERM_Condition ()
 func void DIA_Kati_PERM_Info ()
 {
 	AI_Output			(other, self, "DIA_Kati_PERM_15_00"); //Immer noch alles in Ordnung bei dir?
-	AI_Output			(self, other, "DIA_Kati_PERM_16_01"); //Es geht schon. Ich frage mich nur, wie lange wir diese schwarzen Teufel noch erdulden müssen.
-	AI_Output			(self, other, "DIA_Kati_PERM_16_02"); //Ich kann es nicht mehr ertragen. Sie schleichen ums Haus und machen so seltsame Geräusche.
+	AI_Output			(self, other, "DIA_Kati_PERM_16_01"); //Es geht schon. Ich frage mich nur, wie lange wir diese schwarzen Teufel noch erdulden mÃ¼ssen.
+	AI_Output			(self, other, "DIA_Kati_PERM_16_02"); //Ich kann es nicht mehr ertragen. Sie schleichen ums Haus und machen so seltsame GerÃ¤usche.
 };
 
 

@@ -49,11 +49,11 @@ FUNC VOID DIA_Torlof_DI_Hallo_Info()
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_01"); //Bisher noch. Aber das kann sich hier schlagartig ändern. Pass auf deinen Rücken auf.
+		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_01"); //Bisher noch. Aber das kann sich hier schlagartig Ã¤ndern. Pass auf deinen RÃ¼cken auf.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_02"); //Wenn diese elenden Orks bloß bleiben, wo sie sind, sehe ich kein Problem.
+		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_02"); //Wenn diese elenden Orks bloÃŸ bleiben, wo sie sind, sehe ich kein Problem.
 		B_StartOtherRoutine	(Torlof_DI,"Start");
 	};
 	AI_StopProcessInfos (self);
@@ -70,7 +70,7 @@ INSTANCE DIA_Torlof_DI_Teach (C_INFO)
 	condition	= DIA_Torlof_DI_Teach_Condition;
 	information	= DIA_Torlof_DI_Teach_Info;
 	permanent	= TRUE;
-	description = "Ich will meine Fähigkeiten verbessern!";
+	description = "Ich will meine FÃ¤higkeiten verbessern!";
 };                       
 
 FUNC INT DIA_Torlof_DI_Teach_Condition()
@@ -83,7 +83,7 @@ FUNC INT DIA_Torlof_DI_Teach_Condition()
  
 FUNC VOID DIA_Torlof_DI_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_DI_Teach_15_00"); //Ich will meine Fähigkeiten verbessern!
+	AI_Output (other,self ,"DIA_Torlof_DI_Teach_15_00"); //Ich will meine FÃ¤higkeiten verbessern!
 	
 	Info_ClearChoices (DIA_Torlof_DI_Teach); 
 	Info_AddChoice		(DIA_Torlof_DI_Teach, DIALOG_BACK, DIA_Torlof_DI_Teach_Back);
@@ -169,7 +169,7 @@ func int DIA_Torlof_DI_UndeadDragonDead_Condition ()
 func void DIA_Torlof_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other ,self, "DIA_Torlof_DI_UndeadDragonDead_15_00"); //Ich habe den Feind eliminiert.
-	AI_Output			(self ,other, "DIA_Torlof_DI_UndeadDragonDead_01_01"); //Ich habe auch nichts anderes erwartet. Wie sieht's aus? Können wir jetzt endlich abhauen?
+	AI_Output			(self ,other, "DIA_Torlof_DI_UndeadDragonDead_01_01"); //Ich habe auch nichts anderes erwartet. Wie sieht's aus? KÃ¶nnen wir jetzt endlich abhauen?
 
 	Info_ClearChoices	(DIA_Torlof_DI_UndeadDragonDead);
 	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "Ich brauche noch einen Moment.", DIA_Torlof_DI_UndeadDragonDead_moment );

@@ -1,5 +1,5 @@
 // *********************************************
-// NSC steht mit Armen in die Hüfte gestemmt rum und legt den Hammer zurück, wenn er ihn hat
+// NSC steht mit Armen in die HÃ¼fte gestemmt rum und legt den Hammer zurÃ¼ck, wenn er ihn hat
 // *********************************************
 
 func void ZS_Guard_Hammer()
@@ -48,7 +48,7 @@ func int ZS_Guard_Hammer_loop()
 		AI_PlayAni (self,"T_STAND_2_HGUARD");
 		self.aivar[AIV_TAPOSITION] = ISINPOS;
 	};	
-	// hier legt Nov_608_Garwig den Hammer zurück, wenn er ihn in der Tasche hat und <= 500 cm von seinem WP entfernt ist.	M.F.	
+	// hier legt Nov_608_Garwig den Hammer zurÃ¼ck, wenn er ihn in der Tasche hat und <= 500 cm von seinem WP entfernt ist.	M.F.	
 	if (Npc_HasItems (self, Holy_Hammer_MIS) == 1)
 	&& (Npc_GetDistToWP (self, "NW_MONASTERY_SANCTUM_01") <= 500)
 	{

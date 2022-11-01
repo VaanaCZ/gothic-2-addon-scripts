@@ -91,7 +91,7 @@ INSTANCE BlackWolf	(Mst_Default_Warg)
 {
 	name							=	"Schwarzer Wolf";
 	level							=	 6;		
-	//für Inventory
+	//fÃ¼r Inventory
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;

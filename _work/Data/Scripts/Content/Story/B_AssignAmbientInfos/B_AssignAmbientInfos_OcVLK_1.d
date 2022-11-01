@@ -45,7 +45,7 @@ FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
 FUNC VOID DIA_OCVLK_1_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //Wer hat hier das Kommando?
-	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Kommandant Garond. Aber seit sich die Lage hier zugespitzt hat, hat er sich nicht mehr auﬂerhalb seines Thronsaals blicken lassen. Ich f¸rchte, das nimmt kein gutes Ende.
+	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Kommandant Garond. Aber seit sich die Lage hier zugespitzt hat, hat er sich nicht mehr au√üerhalb seines Thronsaals blicken lassen. Ich f√ºrchte, das nimmt kein gutes Ende.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_OCVLK_1_LOCATION(C_INFO)
 	condition	= DIA_OCVLK_1_LOCATION_Condition;
 	information	= DIA_OCVLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was weiﬂt du ¸ber das Minental?";
+	description = "Was wei√üt du √ºber das Minental?";
 };                       
 
 FUNC INT DIA_OCVLK_1_LOCATION_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_OCVLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_OCVLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Was weiﬂt du ¸ber das Minental?
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //Ein paar von unseren Jungs sind bei den Minen und sch¸rfen noch, soviel ich weiﬂ.
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //Ich mˆchte nicht mit denen tauschen. Im ganzen Tal wimmelt es nur so von Orks. Ganz zu schweigen von den Drachen.
+	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Was wei√üt du √ºber das Minental?
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //Ein paar von unseren Jungs sind bei den Minen und sch√ºrfen noch, soviel ich wei√ü.
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //Ich m√∂chte nicht mit denen tauschen. Im ganzen Tal wimmelt es nur so von Orks. Ganz zu schweigen von den Drachen.
 };
 
 // *************************************************************************
@@ -97,18 +97,18 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Die Orks haben uns in der Zange! Ohne Unterst¸tzung wird das hier keiner von uns ¸berleben! Mich wundert, dass die Drachen uns nicht direkt den Rest geben!
+		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Die Orks haben uns in der Zange! Ohne Unterst√ºtzung wird das hier keiner von uns √ºberleben! Mich wundert, dass die Drachen uns nicht direkt den Rest geben!
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_02"); //Endlich bekommen wir zumindest ein bisschen Verst‰rkung hier.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_02"); //Endlich bekommen wir zumindest ein bisschen Verst√§rkung hier.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //Ich habe gehˆrt, alle Drachen sind getˆtet worden? Innos sei Dank!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //Ich habe geh√∂rt, alle Drachen sind get√∂tet worden? Innos sei Dank!
 		};
 	};
 
@@ -120,7 +120,7 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Diese l‰cherlichen Kisten, die sie notd¸rftig vor den Eingang gestapelt haben, werden die Orks auch nicht aufhalten!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Diese l√§cherlichen Kisten, die sie notd√ºrftig vor den Eingang gestapelt haben, werden die Orks auch nicht aufhalten!
 		};
 	};
 };

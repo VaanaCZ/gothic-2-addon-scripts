@@ -42,8 +42,8 @@ func int DIA_Wulfgar_Hallo_Condition ()
 func void DIA_Wulfgar_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //Was macht die Pflicht?
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //(ver‰chtlich) Diese Burschen schwingen ihre Schwerter wie Bauern.
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //(¸berzeugt) Aber wenn ich mit ihnen fertig bin, wird jeder einzelne von ihnen ein z‰her, harter Hund sein.
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //(ver√§chtlich) Diese Burschen schwingen ihre Schwerter wie Bauern.
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //(√ºberzeugt) Aber wenn ich mit ihnen fertig bin, wird jeder einzelne von ihnen ein z√§her, harter Hund sein.
 };
 
 // *************************************************
@@ -56,7 +56,7 @@ instance DIA_Wulfgar_WannaJoin		(C_INFO)
 	condition	 = 	DIA_Wulfgar_WannaJoin_Condition;
 	information	 = 	DIA_Wulfgar_WannaJoin_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ich will mich der Miliz anschlieﬂen!";
+	description	 = 	"Ich will mich der Miliz anschlie√üen!";
 };
 
 func int DIA_Wulfgar_WannaJoin_Condition ()
@@ -70,13 +70,13 @@ func int DIA_Wulfgar_WannaJoin_Condition ()
 
 func void DIA_Wulfgar_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_00"); //Ich will mich der Miliz anschlieﬂen!
-	AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_01"); //So? Bist du denn B¸rger der Stadt?
+	AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_00"); //Ich will mich der Miliz anschlie√üen!
+	AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_01"); //So? Bist du denn B√ºrger der Stadt?
 	if (Player_IsApprentice == APP_NONE)
 	{
 		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_02"); //Nein.
 		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //Dann wird Lord Andre dich nicht nehmen.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //Du kannst ja mal mit ihm reden - aber ich denke nicht, daﬂ er f¸r dich eine Ausnahme macht.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //Du kannst ja mal mit ihm reden - aber ich denke nicht, da√ü er f√ºr dich eine Ausnahme macht.
 	}
 	else
 	{
@@ -112,9 +112,9 @@ func void DIA_Wulfgar_AboutMiliz_Info ()
 	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //Wie ist es bei der Miliz?
 	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_01"); //Lord Andre ist jetzt unser Kommandant.
 	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_02"); //Vorher unterstand die Miliz dem Statthalter. (lacht) Der hatte keine Ahnung von dem, was wir hier tun.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //Aber Lord Andre weiﬂ, was er tut. Er sorgt gut f¸r die M‰nner.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //Jeder der hier anf‰ngt kriegt 'ne ven¸nftige R¸stung und 'ne gute Waffe.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_05"); //Und es gibt Pr‰mien, wenn man seien Arbeit gut macht. F¸r jeden gefaﬂten Verbrecher zahlt er ein Kopfgeld aus.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //Aber Lord Andre wei√ü, was er tut. Er sorgt gut f√ºr die M√§nner.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //Jeder der hier anf√§ngt kriegt 'ne ven√ºnftige R√ºstung und 'ne gute Waffe.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_05"); //Und es gibt Pr√§mien, wenn man seien Arbeit gut macht. F√ºr jeden gefa√üten Verbrecher zahlt er ein Kopfgeld aus.
 };
 
 // *************************************************
@@ -142,15 +142,15 @@ func int DIA_Wulfgar_CanYouTrain_Condition ()
 func void DIA_Wulfgar_CanYouTrain_Info ()
 {
 	AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_00"); //Kannst du mich auch im Schwertkampf trainieren?
-	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //Lord Andre hat angeordnet, daﬂ wir hier jeden trainieren, der in der Lage ist, die Stadt zu verteidigen.
+	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //Lord Andre hat angeordnet, da√ü wir hier jeden trainieren, der in der Lage ist, die Stadt zu verteidigen.
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_02"); //Das gilt allerdings nicht f¸r Sˆldner. Verschwinde.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_02"); //Das gilt allerdings nicht f√ºr S√∂ldner. Verschwinde.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //Das gilt allerdings nur f¸r die Kampfausbildung. Alle anderern Arten von Training sind der Miliz vorbehalten.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //Das gilt allerdings nur f√ºr die Kampfausbildung. Alle anderern Arten von Training sind der Miliz vorbehalten.
 		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_04"); //Kannst du wenigstens halbwegs mit einer Waffe umgehen?
 		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Ich denke schon...
 		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_06"); //(seufzt) Na gut - du kannt anfangen, wenn du bereit bist.
@@ -186,7 +186,7 @@ func void DIA_Wulfgar_Advantage_Info ()
 {
 	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //Wo liegt der Vorteil von Einhand- oder Zweihandwaffen?
 	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //Ganz einfach. Mit einer Einhandwaffe bist du schneller. Das kann ein erheblicher Vorteil im Kampf sein.
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //Zweihandwaffen sind beh‰biger. Du muﬂt vorausschauender k‰mpfen - richtest aber bei einem Treffer mehr Schaden an.
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //Zweihandwaffen sind beh√§biger. Du mu√üt vorausschauender k√§mpfen - richtest aber bei einem Treffer mehr Schaden an.
 };
 
 // *************************************************
@@ -216,9 +216,9 @@ func void DIA_Wulfgar_HowToBegin_Info ()
 	AI_Output (other, self, "DIA_Wulfgar_HowToBegin_15_00"); //Womit sollte ich beginnen? Mit Einhand- oder mit Zweihandwaffen?
 	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_01"); //Das kannst du halten, wie du willst.
 	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_02"); //Wenn du dich nur auf eine Waffengattung spezialisiert, lernst du die andere automatisch mit.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //Wenn du zum Beispiel ein guter K‰mpfer mit der Einhandwaffe bist, aber noch ein Anf‰nger mit der Zweihandwaffe, ...
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //Wenn du zum Beispiel ein guter K√§mpfer mit der Einhandwaffe bist, aber noch ein Anf√§nger mit der Zweihandwaffe, ...
 	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...wirst du bei allem, was du an Training mit Einhandwaffen investierst auch mit Zweihandwaffen besser werden.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //In diesem Fall ist das Training f¸r dich anstrengender, als wenn du die beiden Waffenarten abwechselnd trainierst.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //In diesem Fall ist das Training f√ºr dich anstrengender, als wenn du die beiden Waffenarten abwechselnd trainierst.
 	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_06"); //Fang einfach an, dann wirst du schnell begreifen, wovon ich rede.
 };
 
@@ -251,13 +251,13 @@ FUNC VOID DIA_Wulfgar_Teach_Info()
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Wulfgar_Add_04_00"); //Ich trainiere keine Sˆldner!
+		AI_Output (self, other, "DIA_Wulfgar_Add_04_00"); //Ich trainiere keine S√∂ldner!
 	}
 	else
 	{
 		if (other.guild == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Wulfgar_Add_04_01"); //Nat¸rlich, Ehrw¸rdiger.
+			AI_Output (self, other, "DIA_Wulfgar_Add_04_01"); //Nat√ºrlich, Ehrw√ºrdiger.
 		};
 		
 		Info_ClearChoices 	(DIA_Wulfgar_Teach);
@@ -349,10 +349,10 @@ FUNC INT DIA_Wulfgar_AlsMil_Condition()
 FUNC VOID DIA_Wulfgar_AlsMil_Info()
 {	
 	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //Lord Andre hat dich also aufgenommen!
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //Ich erwarte von dir, daﬂ du regelm‰ﬂig herkommst und trainierst.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Ruga wird dich an der Armbrust ausbilden und Mortis wird dir helfen, deine St‰rke zu steigern.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Aber das wichtigste ist, daﬂ du lernst, vern¸nftig mit einem Schwert umzugehen.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //Ich werde schon noch einen guten K‰mpfer aus dir machen!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //Ich erwarte von dir, da√ü du regelm√§√üig herkommst und trainierst.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Ruga wird dich an der Armbrust ausbilden und Mortis wird dir helfen, deine St√§rke zu steigern.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Aber das wichtigste ist, da√ü du lernst, vern√ºnftig mit einem Schwert umzugehen.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //Ich werde schon noch einen guten K√§mpfer aus dir machen!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -378,9 +378,9 @@ func int DIA_Wulfgar_Bonus_Condition ()
 };
 func void DIA_Wulfgar_Bonus_Info ()
 {
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //So fr¸h schon unterwegs? F¸r gewˆhnlich bin ich um diese Zeit immer alleine. Aber da du schon mal hier bist, kannst du direkt was lernen.
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //Also pass auf. Manche Gegner kannst du austricksen, wenn du ihren Schl‰gen ausweichst und im richtigen Moment attackierst.
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //Merk dir das f¸r deinen n‰chsten Kampf!
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //So fr√ºh schon unterwegs? F√ºr gew√∂hnlich bin ich um diese Zeit immer alleine. Aber da du schon mal hier bist, kannst du direkt was lernen.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //Also pass auf. Manche Gegner kannst du austricksen, wenn du ihren Schl√§gen ausweichst und im richtigen Moment attackierst.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //Merk dir das f√ºr deinen n√§chsten Kampf!
 	
 	B_RaiseFightTalent (other, NPC_TALENT_1H, 2);
 };

@@ -52,7 +52,7 @@ INSTANCE DIA_OCPAL_9_LOCATION(C_INFO)
 	condition	= DIA_OCPAL_9_LOCATION_Condition;
 	information	= DIA_OCPAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was weiﬂt du ¸ber dieses Tal?";
+	description = "Was wei√üt du √ºber dieses Tal?";
 };                       
 
 FUNC INT DIA_OCPAL_9_LOCATION_Condition()
@@ -62,8 +62,8 @@ FUNC INT DIA_OCPAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_OCPAL_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00"); //Was weiﬂt du ¸ber dieses Tal?
-	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01"); //Im Osten haben die Orks einen groﬂen Schutzwall errichtet. Ich vermute, um ihren Nachschub zu sichern. Hinter dem Wall gibt es eine Stelle, an der Schiffe anlegen kˆnnen.
+	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00"); //Was wei√üt du √ºber dieses Tal?
+	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01"); //Im Osten haben die Orks einen gro√üen Schutzwall errichtet. Ich vermute, um ihren Nachschub zu sichern. Hinter dem Wall gibt es eine Stelle, an der Schiffe anlegen k√∂nnen.
 	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_02"); //Ich hoffe, dass die Orks so schnell keinen Nachschub bekommen. Mir reicht schon, womit wir es JETZT zu tun haben.
 };
 
@@ -90,18 +90,18 @@ FUNC VOID DIA_OCPAL_9_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_01"); //Die Drachen haben schon wieder angegriffen! Aber Innos wird uns im Kampf sch¸tzen. Die Kreaturen Beliars werden einen hohen Blutzoll zahlen!
+		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_01"); //Die Drachen haben schon wieder angegriffen! Aber Innos wird uns im Kampf sch√ºtzen. Die Kreaturen Beliars werden einen hohen Blutzoll zahlen!
 	};
 
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_02"); //Drachenj‰ger! Sie h‰tten uns lieber Paladine schicken sollen!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_02"); //Drachenj√§ger! Sie h√§tten uns lieber Paladine schicken sollen!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_03"); //Die Drachen w‰ren wir los - jetzt kˆnnen wir uns um die Orks k¸mmern!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_03"); //Die Drachen w√§ren wir los - jetzt k√∂nnen wir uns um die Orks k√ºmmern!
 		};
 	};
 
@@ -109,11 +109,11 @@ FUNC VOID DIA_OCPAL_9_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_04"); //Wir m¸ssen das Erz aufs Schiff schaffen und dann nichts wie weg aus diesem verfluchten Land.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_04"); //Wir m√ºssen das Erz aufs Schiff schaffen und dann nichts wie weg aus diesem verfluchten Land.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_05"); //Verrat! Das Tor h‰tte niemals geˆffnet werden d¸rfen. Tod allen Verr‰tern!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_05"); //Verrat! Das Tor h√§tte niemals ge√∂ffnet werden d√ºrfen. Tod allen Verr√§tern!
 		};
 	};
 };

@@ -68,15 +68,15 @@ FUNC INT DIA_Dragon_Ice_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Ice_Hello_Info()
 {
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Warum störst du meine Ruhe? Muss ich mich noch weiter eingraben, damit ich endlich Ruhe vor euch lästigen Winzlingen habe?
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Warum stÃ¶rst du meine Ruhe? Muss ich mich noch weiter eingraben, damit ich endlich Ruhe vor euch lÃ¤stigen Winzlingen habe?
 	if (Mis_KilledDragons == 0)
 	{	
 		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Ein sprechender Drache. Dem Auge Innos' sei Dank.
 	};
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Ihr Menschen seid ein so seltsames Volk. Hinweggefegt durch den Odem des Todes, findet sich doch immer noch jemand, der sich aus der Asche erhebt und sich zum Helden berufen fühlt.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Aber das wird bald ein Ende haben. Ich werde persönlich dafür sorgen, dass so bald keiner von euch mehr aufsteht.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Ihr Menschen seid ein so seltsames Volk. Hinweggefegt durch den Odem des Todes, findet sich doch immer noch jemand, der sich aus der Asche erhebt und sich zum Helden berufen fÃ¼hlt.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Aber das wird bald ein Ende haben. Ich werde persÃ¶nlich dafÃ¼r sorgen, dass so bald keiner von euch mehr aufsteht.
 	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Sei still. Mit der mir verliehenen Macht des heiligen Auges befehle ich dir, meine Fragen zu beantworten.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha, ha, ha. Frag du nur. Dein Wissen wird dir nichts nützen.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha, ha, ha. Frag du nur. Dein Wissen wird dir nichts nÃ¼tzen.
 
 };
 
@@ -104,7 +104,7 @@ func int DIA_Dragon_Ice_WERBISTDU_Condition ()
 func void DIA_Dragon_Ice_WERBISTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Wer bist du?
-	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Ich bin Finkregh. Herr über Schnee und Eis, Hüter der Zusammenkunft und zu guter Letzt dein Tod.
+	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Ich bin Finkregh. Herr Ã¼ber Schnee und Eis, HÃ¼ter der Zusammenkunft und zu guter Letzt dein Tod.
 
 };
 
@@ -131,10 +131,10 @@ func int DIA_Dragon_Ice_BELIAR_Condition ()
 func void DIA_Dragon_Ice_BELIAR_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Welchem Gott dient ihr?
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Welcher verfluchte Gott konnte es überhaupt zulassen, dass ihr verachtenswerten Kreaturen auf dieser Erde wandelt.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //Mach dir keine Mühe, den Sinn unserer Zusammenkunft zu verstehen, kleiner Held.
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Welcher verfluchte Gott konnte es Ã¼berhaupt zulassen, dass ihr verachtenswerten Kreaturen auf dieser Erde wandelt.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //Mach dir keine MÃ¼he, den Sinn unserer Zusammenkunft zu verstehen, kleiner Held.
 	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar hat es nicht nur zugelassen, dass wir jetzt hier sind, er hat es uns sogar befohlen.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Beflügelt von seinen heiligen Worten werden wir nicht eher ruhen, als dass wir seinen Willen in die Tat umgesetzt haben.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //BeflÃ¼gelt von seinen heiligen Worten werden wir nicht eher ruhen, als dass wir seinen Willen in die Tat umgesetzt haben.
 
 };
 

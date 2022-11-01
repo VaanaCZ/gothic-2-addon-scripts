@@ -67,7 +67,7 @@ FUNC VOID DIA_Jergan_Vermisste_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Vermisste_15_00");//Vermisste?
 	AI_Output (self, other,"DIA_Jergan_Vermisste_13_01");//Beim Angriff der Drachen sind einige abgehauen. Die Meisten haben es nicht geschafft - wen wundert's !?
-	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Aber wenn es noch Überlebende gibt, werde ich sie zurückbringen.
+	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Aber wenn es noch Ãœberlebende gibt, werde ich sie zurÃ¼ckbringen.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Burg 
@@ -110,7 +110,7 @@ INSTANCE DIA_Jergan_Gegend   (C_INFO)
 	condition   = DIA_Jergan_Gegend_Condition;
 	information = DIA_Jergan_Gegend_Info;
 	permanent   = TRUE;
-	description = "Was muss ich über diese Gegend hier wissen?";
+	description = "Was muss ich Ã¼ber diese Gegend hier wissen?";
 };
 
 FUNC INT DIA_Jergan_Gegend_Condition()
@@ -125,9 +125,9 @@ FUNC VOID DIA_Jergan_Gegend_Info()
 {
 	if (Jergan_Tell == FALSE)
 	{
-		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Was muss ich über diese Gegend hier wissen?
-		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Wenn du überleben willst, dann geh zurück - wo auch immer du hergekommen bist.
-		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//Die Grünfelle belagern seit Wochen die Burg - und irgendwo verstecken sich auch diese Drachen.
+		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Was muss ich Ã¼ber diese Gegend hier wissen?
+		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Wenn du Ã¼berleben willst, dann geh zurÃ¼ck - wo auch immer du hergekommen bist.
+		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//Die GrÃ¼nfelle belagern seit Wochen die Burg - und irgendwo verstecken sich auch diese Drachen.
 	};
 	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//Das ganze Minental wimmelt nur so von Orks - ganz egal, wo du hinwillst, das wird kein Spaziergang.
 	Jergan_Tell = TRUE;
@@ -156,9 +156,9 @@ FUNC INT DIA_Jergan_Hilfe_Condition()
 FUNC VOID DIA_Jergan_Hilfe_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Hilfe_15_00");//Wie komme ich in die Burg?
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//Zunächst mal kannst du den direkten Weg vergessen. Aber wenn du die Burg einmal umkreist, hast du von der Rückseite eine Chance.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//Du solltest die Wege meiden und den Fluss nutzen. Am Besten, du schwimmst ein Stück flussabwärts. Von da an ist es leichter.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//Hinter der Burg steht eine Orkramme. Darüber kommst du hinein - schleich dich so nahe wie möglich an die Orks ran und dann lauf.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//ZunÃ¤chst mal kannst du den direkten Weg vergessen. Aber wenn du die Burg einmal umkreist, hast du von der RÃ¼ckseite eine Chance.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//Du solltest die Wege meiden und den Fluss nutzen. Am Besten, du schwimmst ein StÃ¼ck flussabwÃ¤rts. Von da an ist es leichter.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//Hinter der Burg steht eine Orkramme. DarÃ¼ber kommst du hinein - schleich dich so nahe wie mÃ¶glich an die Orks ran und dann lauf.
 	AI_Output (self, other,"DIA_Jergan_Hilfe_13_04");//Wenn du schnell genug bist, kannst du es schaffen.
 };
 
@@ -188,7 +188,7 @@ FUNC VOID DIA_Jergan_Mine_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Mine_15_00");//Was machst du hier?
 	AI_Output (self, other,"DIA_Jergan_Mine_13_01");//Ich bin Kundschafter. Ich ziehe durch die Gegend. Aber die ganzen Snapper haben's mir nicht einfach gemacht.
-	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//Ist 'ne gute Zeit, um sich ein paar Trophäen an Land zu ziehen - vorrausgesetzt, man versteht was davon.
+	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//Ist 'ne gute Zeit, um sich ein paar TrophÃ¤en an Land zu ziehen - vorrausgesetzt, man versteht was davon.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Klauen reissen
@@ -244,8 +244,8 @@ FUNC VOID DIA_Jergan_Teach_Info()
 	
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 	{
-		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//Wichtig ist, dass du die Krallen mit einem Ruck entfernst. Nicht lange rumzögern oder mit 'ner Klinge stochern.
-		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//Auf diese Weise kannst du nicht nur Snappern, sondern auch Waranen und Schattenläufern die Krallen abziehen.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//Wichtig ist, dass du die Krallen mit einem Ruck entfernst. Nicht lange rumzÃ¶gern oder mit 'ner Klinge stochern.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//Auf diese Weise kannst du nicht nur Snappern, sondern auch Waranen und SchattenlÃ¤ufern die Krallen abziehen.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -258,7 +258,7 @@ INSTANCE DIA_Jergan_Diego   (C_INFO)
 	condition   = DIA_Jergan_Diego_Condition;
 	information = DIA_Jergan_Diego_Info;
 	permanent   = FALSE;
-	description = "Weißt du, wo Diego steckt?";
+	description = "WeiÃŸt du, wo Diego steckt?";
 };
 
 FUNC INT DIA_Jergan_Diego_Condition()
@@ -272,14 +272,14 @@ FUNC INT DIA_Jergan_Diego_Condition()
 };
 FUNC VOID DIA_Jergan_Diego_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//Weißt du, wo Diego steckt?
-	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Diego? Er war bei Silvestros Schürfern dabei. Aber er hat sich abgesetzt.
+	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//WeiÃŸt du, wo Diego steckt?
+	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Diego? Er war bei Silvestros SchÃ¼rfern dabei. Aber er hat sich abgesetzt.
 	AI_Output (self, other,"DIA_Jergan_Diego_13_02");//Ich sah ihn mit zwei Rittern und einer Kiste, gar nicht weit von hier.
 	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//Du kannst doch von hier den alten Wachturm sehen. Geh dorthin und dann in Richtung Burg.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Rechter Hand führt ein Pfad zwischen den Felsen entlang. Dorthin sind sie gegangen.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Rechter Hand fÃ¼hrt ein Pfad zwischen den Felsen entlang. Dorthin sind sie gegangen.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Rudelführer getötet
+//	RudelfÃ¼hrer getÃ¶tet
 ///////////////////////////////////////////////////////////////////////
 
 INSTANCE DIA_Jergan_Leader   (C_INFO)
@@ -303,13 +303,13 @@ FUNC INT DIA_Jergan_Leader_Condition()
 };
 FUNC VOID DIA_Jergan_Leader_Info()
 {
-	AI_Output (self, other,"DIA_Jergan_Leader_13_00");//Du hast den Rudelführer also getötet. Und - hast du der Bestie die Krallen abgezogen?
+	AI_Output (self, other,"DIA_Jergan_Leader_13_00");//Du hast den RudelfÃ¼hrer also getÃ¶tet. Und - hast du der Bestie die Krallen abgezogen?
 	
 	if (Npc_HasItems (other, ItAt_ClawLeader) >= 1)
 	{
 		AI_Output (other, self,"DIA_Jergan_Leader_15_01");//Ja.
 		AI_Output (self, other,"DIA_Jergan_Leader_13_02");//Sind bestimmt 'ne Menge wert. Es gibt Typen, die sammeln so was.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Wenn du den richtigen Käufer findest, bekommst du einen Haufen Gold dafür.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Wenn du den richtigen KÃ¤ufer findest, bekommst du einen Haufen Gold dafÃ¼r.
 	}
 	else
 	{

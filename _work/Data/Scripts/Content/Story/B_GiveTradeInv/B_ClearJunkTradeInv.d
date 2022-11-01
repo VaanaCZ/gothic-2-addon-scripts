@@ -1,7 +1,7 @@
 // ******************************************************
 // B_ClearJunkTradeInv
 // --------------------
-// Löscht alle slftems aus dem Inventory der Händler
+// LÃ¶scht alle slftems aus dem Inventory der HÃ¤ndler
 // bei einem Kapitelwechsel wird in B_GiveTradeInv_<slf> 
 // aufgerufen
 // ******************************************************

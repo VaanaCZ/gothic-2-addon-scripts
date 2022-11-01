@@ -309,7 +309,7 @@ INSTANCE INS_Day_Thr	(C_MUSICTHEME_THREAT)		{	file			= "di_daystd.sgt";		};
 INSTANCE INS_Day_Fgt	(C_MUSICTHEME_FIGHT)		{	file			= "di_daystd.sgt";		};
 												
 // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// XXXXXXXX  BANDITENHÖHLE[BAN_]      XXXXXXXXXXXX
+// XXXXXXXX  BANDITENHÃ–HLE[BAN_]      XXXXXXXXXXXX
 // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 INSTANCE BAN_Day_Std	(C_MUSICTHEME_STANDARD)		{	file			= "ban_daystd.sgt";		};
@@ -503,7 +503,7 @@ INSTANCE NCO_Ngt_Std	(C_MUSICTHEME_DEF)	{	file			= "cam_ngt_std.sgt";					};
 INSTANCE NCO_Ngt_Thr	(C_MUSICTHEME_DEF)	{	file			= "cam_ngt_std.sgt";					};
 INSTANCE NCO_Ngt_Fgt	(C_MUSICTHEME_DEF)	{	file			= "cam_ngt_std.sgt";					};
 
-// Höhle
+// HÃ¶hle
 
 INSTANCE NCI_Day_Std	(C_MUSICTHEME_DEF)	{	file			= "nci_day_std.sgt";
 												transType		= TRANSITION_TYPE_BREAK;

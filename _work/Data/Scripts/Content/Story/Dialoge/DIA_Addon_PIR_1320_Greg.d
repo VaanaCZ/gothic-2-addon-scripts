@@ -73,14 +73,14 @@ FUNC INT DIA_Addon_Greg_ImNew_Condition()
 
 FUNC VOID DIA_Addon_Greg_ImNew_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_00"); //(droht) Sag mal. Was machst du in meiner Hütte?
+	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_00"); //(droht) Sag mal. Was machst du in meiner HÃ¼tte?
 	AI_Output (other,self,"DIA_Addon_Greg_Hello_15_01"); //Ich ...
-	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_02"); //(wütend) Kaum ist man mal ein paar Tage nicht da, da glaubt jeder, er kann mir auf der Nase rumtanzen.
+	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_02"); //(wÃ¼tend) Kaum ist man mal ein paar Tage nicht da, da glaubt jeder, er kann mir auf der Nase rumtanzen.
 	//AI_Output (other,self,"DIA_Addon_Greg_ImNew_15_00"); //Ich bin der Neue.
 	//AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_01"); //(zynisch) So so, du bist der Neue.
 	//AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_02"); //Hier entscheide immer noch ICH, wer bei uns mitmacht.
 	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_03"); //Was ist eigentlich hier los?
-	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_04"); //Die Palisade ist noch nicht fertig? Der Canyon quillt fast über vor Viechern und alle machen sich einen schönen Tag.
+	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_04"); //Die Palisade ist noch nicht fertig? Der Canyon quillt fast Ã¼ber vor Viechern und alle machen sich einen schÃ¶nen Tag.
 		
 	GregIsBack = TRUE;
 	
@@ -123,8 +123,8 @@ func void B_UseRakeBilanz ()
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_00"); //Glaub jetzt aber bloß nicht, ich hätte vergessen, dass du mir noch was schuldig bist.
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_01"); //Es waren Sachen im Wert von mehreren hundert Goldmünzen, die ich überall in Khorinis vergraben habe.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_00"); //Glaub jetzt aber bloÃŸ nicht, ich hÃ¤tte vergessen, dass du mir noch was schuldig bist.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_01"); //Es waren Sachen im Wert von mehreren hundert GoldmÃ¼nzen, die ich Ã¼berall in Khorinis vergraben habe.
 		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_02"); //Die hast du dir alle eingesackt, was?
 		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_03"); //Das wirst du jetzt bei mir abarbeiten.
 	}
@@ -146,7 +146,7 @@ func void B_UseRakeBilanz ()
 func void DIA_Addon_Greg_ImNew_nich ()
 {
 	AI_Output			(other, self, "DIA_Addon_Greg_ImNew_nich_15_00"); //Bisher noch nicht viel.
-	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_nich_01_01"); //Macht nichts. Ich werde schon das Passende für dich finden, mein Freundchen.
+	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_nich_01_01"); //Macht nichts. Ich werde schon das Passende fÃ¼r dich finden, mein Freundchen.
 	B_UseRakeBilanz ();
 };
 func void DIA_Addon_Greg_ImNew_turm ()
@@ -167,7 +167,7 @@ func void DIA_Addon_Greg_ImNew_turm ()
 	&& (Npc_IsDead(BeachShadowbeast1))
 	&& (MIS_Addon_MorganLurker != 0)
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_03"); //Der Strand im Norden ist von Viechern gesäubert.
+		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_03"); //Der Strand im Norden ist von Viechern gesÃ¤ubert.
 	};
 
 	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_turm_01_04"); //Na ja. Das ist ja schon mal ein Anfang.
@@ -198,20 +198,20 @@ FUNC INT DIA_Addon_Greg_JoinPirates_Condition()
 FUNC VOID DIA_Addon_Greg_JoinPirates_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_15_00"); //Was gibt's zu tun?
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_01"); //Als erstes müssen wir hier wieder ein bisschen Schwung in den Laden bringen.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_01"); //Als erstes mÃ¼ssen wir hier wieder ein bisschen Schwung in den Laden bringen.
 
 	if ((Npc_IsDead(Morgan))== FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_02"); //Morgan, die faule Sau, schick ich zum Bretter sägen.
+		AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_02"); //Morgan, die faule Sau, schick ich zum Bretter sÃ¤gen.
 	};
 	
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_03"); //DU wirst Morgans Job übernehmen und den verdammten Canyon von Viechern säubern.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_03"); //DU wirst Morgans Job Ã¼bernehmen und den verdammten Canyon von Viechern sÃ¤ubern.
 	
 	MIS_Addon_Greg_ClearCanyon = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_ClearCanyon,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_ClearCanyon,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Greg möchte, dass ich Morgans Job übernehme und den Canyon von Viechern säubere.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Greg mÃ¶chte, dass ich Morgans Job Ã¼bernehme und den Canyon von Viechern sÃ¤ubere.");
 
 	Info_ClearChoices (DIA_Addon_Greg_JoinPirates);
 	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"Dann werde ich mal aufbrechen.",DIA_Addon_Greg_JoinPirates_Leave);
@@ -229,12 +229,12 @@ FUNC VOID DIA_Addon_Greg_JoinPirates_Leave()
 {
 	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_Leave_15_00"); //Dann werde ich mal aufbrechen.
 	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_01"); //Noch was. Du bist jetzt einer von uns.
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_02"); //Also ziehst du dir erst mal vernünftige Klamotten für die Jagd an.
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_03"); //Hier hast du eine von unseren Rüstungen. Ich schätze, die wird dir passen.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_02"); //Also ziehst du dir erst mal vernÃ¼nftige Klamotten fÃ¼r die Jagd an.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_03"); //Hier hast du eine von unseren RÃ¼stungen. Ich schÃ¤tze, die wird dir passen.
 	CreateInvItems (self, ItAr_Pir_M_Addon, 1);									
 	B_GiveInvItems (self, other, ItAr_Pir_M_Addon, 1);		
 	AI_EquipArmor(hero,ItAr_Pir_M_Addon);
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_04"); //Und trödel nicht so lange herum, klar?
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_04"); //Und trÃ¶del nicht so lange herum, klar?
 	
 
 	Info_ClearChoices (DIA_Addon_Greg_JoinPirates);
@@ -252,10 +252,10 @@ FUNC VOID DIA_Addon_Greg_JoinPirates_Compadres()
 FUNC VOID DIA_Addon_Greg_JoinPirates_ClearCanyon()
 {
 	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_ClearCanyon_15_00"); //Welche Viecher?
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_01"); //Die Razor im Canyon kommen immer näher an's Lager.
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_02"); //Ich habe keine Lust, dass einer meiner Männer im Suff von den Biester gefressen wird.
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_01"); //Die Razor im Canyon kommen immer nÃ¤her an's Lager.
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_02"); //Ich habe keine Lust, dass einer meiner MÃ¤nner im Suff von den Biester gefressen wird.
 
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Es geht wohl aussschließlich um Razor.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Es geht wohl aussschlieÃŸlich um Razor.");
 };
 
 // ************************************************************
@@ -292,11 +292,11 @@ FUNC VOID DIA_Addon_Greg_AboutCanyon_Info()
 		{
 			Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Wer kann mir dabei helfen?",DIA_Addon_Greg_AboutCanyon_Compadres);
 		};
-		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Welche Viecher soll ich töten?",DIA_Addon_Greg_AboutCanyon_Job);
+		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Welche Viecher soll ich tÃ¶ten?",DIA_Addon_Greg_AboutCanyon_Job);
 	}
 	else 
 	{
-		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Ich habe alle Razor getötet.",DIA_Addon_Greg_AboutCanyon_RazorsDead);
+		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Ich habe alle Razor getÃ¶tet.",DIA_Addon_Greg_AboutCanyon_RazorsDead);
 	};
 };
 
@@ -309,23 +309,23 @@ FUNC VOID DIA_Addon_Greg_AboutCanyon_Compadres()
 {
 	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Compadres_15_00"); //Wer kann mir dabei helfen?
 	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_01"); //Nimm dir ein paar von den Jungs mit.
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_02"); //Die hängen sonst die ganze Zeit nur herum.
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_02"); //Die hÃ¤ngen sonst die ganze Zeit nur herum.
 	Info_ClearChoices (DIA_Addon_Greg_AboutCanyon);
 };
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_Job()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Job_15_00"); //Welche Viecher soll ich töten?
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Job_15_00"); //Welche Viecher soll ich tÃ¶ten?
 	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Job_01_01"); //Du sollst die Razor beseitigen! Das andere Viehzeug ist harmlos.
 	Info_ClearChoices (DIA_Addon_Greg_AboutCanyon);
 };
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_RazorsDead()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_RazorsDead_15_00"); //Ich habe alle Razor getötet.
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_RazorsDead_15_00"); //Ich habe alle Razor getÃ¶tet.
 	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_RazorsDead_01_01"); //Sehr gut. Du scheinst ja ganz brauchbar zu sein.
 	
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Greg schien sogar ein bisschen beeindruckt zu sein, dass ich alle Razor im Canyon getötet habe.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Greg schien sogar ein bisschen beeindruckt zu sein, dass ich alle Razor im Canyon getÃ¶tet habe.");
 	
 	MIS_Addon_Greg_ClearCanyon = LOG_SUCCESS;
 	B_Addon_PiratesGoHome();
@@ -344,7 +344,7 @@ INSTANCE DIA_Addon_Greg_BanditArmor(C_INFO)
 	condition	= DIA_Addon_Greg_BanditArmor_Condition;
 	information	= DIA_Addon_Greg_BanditArmor_Info;
 	permanent	= TRUE;
-	description = "Ich brauche die Banditenrüstung.";
+	description = "Ich brauche die BanditenrÃ¼stung.";
 };                       
 FUNC INT DIA_Addon_Greg_BanditArmor_Condition()
 {
@@ -356,32 +356,32 @@ FUNC INT DIA_Addon_Greg_BanditArmor_Condition()
 
 FUNC VOID DIA_Addon_Greg_BanditArmor_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_00"); //Ich brauche die Banditenrüstung.
+	AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_00"); //Ich brauche die BanditenrÃ¼stung.
 	if (MIS_Addon_Greg_ClearCanyon != LOG_SUCCESS)
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_01"); //Mach dich erst mal nützlich. Dann können wir darüber reden.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_01"); //Mach dich erst mal nÃ¼tzlich. Dann kÃ¶nnen wir darÃ¼ber reden.
 		if (MIS_Addon_Greg_ClearCanyon == LOG_RUNNING)
 		{
-			AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_02"); //Töte erst mal alle Razor im Canyon!
+			AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_02"); //TÃ¶te erst mal alle Razor im Canyon!
 		};
 		
-		B_LogEntry (TOPIC_Addon_BDTRuestung,"Greg will, dass ich ihm helfe wieder Schwung ins Lager zu bringen. Danach kann ich mich mit ihm über die Rüstung unterhalten."); 
+		B_LogEntry (TOPIC_Addon_BDTRuestung,"Greg will, dass ich ihm helfe wieder Schwung ins Lager zu bringen. Danach kann ich mich mit ihm Ã¼ber die RÃ¼stung unterhalten."); 
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_03"); //Hast mächtig was auf dem Kasten.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_04"); //Eigentlich sollte Bones mit der Rüstung die Banditen ausspionieren.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_05"); //Aber ich sollte besser DIR den Job überlassen.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_03"); //Hast mÃ¤chtig was auf dem Kasten.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_04"); //Eigentlich sollte Bones mit der RÃ¼stung die Banditen ausspionieren.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_05"); //Aber ich sollte besser DIR den Job Ã¼berlassen.
 		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_06"); //Du hast vielleicht sogar 'ne Chance, da heil wieder rauszukommen.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_07"); //Sprich mit Bones, er soll dir die Rüstung geben. Und dann gehst du damit zum Banditenlager.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_08"); //Ich muss wissen, warum die Drecksäcke überhaupt in unser Tal gekommen sind.
-		AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_09"); //Aye, Aye, Käpt'n!
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_07"); //Sprich mit Bones, er soll dir die RÃ¼stung geben. Und dann gehst du damit zum Banditenlager.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_08"); //Ich muss wissen, warum die DrecksÃ¤cke Ã¼berhaupt in unser Tal gekommen sind.
+		AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_09"); //Aye, Aye, KÃ¤pt'n!
 	
-		B_LogEntry (TOPIC_Addon_BDTRuestung,"Nachdem ich für Greg die Razor im Canyon erledigt habe, kann ich mir die Rüstung bei Bones abholen."); 
+		B_LogEntry (TOPIC_Addon_BDTRuestung,"Nachdem ich fÃ¼r Greg die Razor im Canyon erledigt habe, kann ich mir die RÃ¼stung bei Bones abholen."); 
 	
 		Log_CreateTopic (TOPIC_Addon_ScoutBandits,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_ScoutBandits,LOG_RUNNING);
-		B_LogEntry	(TOPIC_Addon_ScoutBandits,"Ich soll für Greg rausfinden, warum die Banditen überhaupt in dieses Tal gekommen sind.");
+		B_LogEntry	(TOPIC_Addon_ScoutBandits,"Ich soll fÃ¼r Greg rausfinden, warum die Banditen Ã¼berhaupt in dieses Tal gekommen sind.");
 	
 		MIS_Greg_ScoutBandits = LOG_RUNNING;
 	};
@@ -397,7 +397,7 @@ instance DIA_Addon_Greg_Auftraege2		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_Auftraege2_Condition;
 	information	 = 	DIA_Addon_Greg_Auftraege2_Info;
 
-	description	 = 	"Hast du sonst noch was zu tun für mich?";
+	description	 = 	"Hast du sonst noch was zu tun fÃ¼r mich?";
 };
 
 func int DIA_Addon_Greg_Auftraege2_Condition ()
@@ -421,7 +421,7 @@ func int DIA_Addon_Greg_Auftraege2_Condition ()
 
 func void DIA_Addon_Greg_Auftraege2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_Auftraege2_15_00"); //Hast du sonst noch was zu tun für mich?
+	AI_Output	(other, self, "DIA_Addon_Greg_Auftraege2_15_00"); //Hast du sonst noch was zu tun fÃ¼r mich?
 
 	if (Npc_IsDead(BeachLurker1)== FALSE)
 	&& (Npc_IsDead(BeachLurker2)== FALSE)
@@ -435,19 +435,19 @@ func void DIA_Addon_Greg_Auftraege2_Info ()
 		
 		Log_CreateTopic (TOPIC_Addon_MorganBeach,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_MorganBeach,LOG_RUNNING);
-		B_LogEntry	(TOPIC_Addon_MorganBeach,"Greg will, dass ich mich um den Strand im kümmere. Er ist voller Viecher und muss gesäubert werden.");
+		B_LogEntry	(TOPIC_Addon_MorganBeach,"Greg will, dass ich mich um den Strand im kÃ¼mmere. Er ist voller Viecher und muss gesÃ¤ubert werden.");
 		
 		MIS_Addon_MorganLurker = LOG_RUNNING;
 	};
 	
 	if	(C_TowerBanditsDead() == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_03"); //Im südlichen Turm auf der Klippe sind immer noch Banditen.
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_04"); //Francis hätte sich eigentlich darum kümmern sollen.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_03"); //Im sÃ¼dlichen Turm auf der Klippe sind immer noch Banditen.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_04"); //Francis hÃ¤tte sich eigentlich darum kÃ¼mmern sollen.
 	
 		Log_CreateTopic (TOPIC_Addon_BanditsTower,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_BanditsTower,LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_BanditsTower,"Greg will, dass ich die Banditen aus dem Turm südlich des Lagers vertreibe.");
+		B_LogEntry (TOPIC_Addon_BanditsTower,"Greg will, dass ich die Banditen aus dem Turm sÃ¼dlich des Lagers vertreibe.");
 		
 		MIS_Henry_FreeBDTTower = LOG_RUNNING; 
 	
@@ -559,11 +559,11 @@ FUNC VOID DIA_Addon_Greg_BanditGoldmine_Info()
 	AI_Output (other,self,"DIA_Addon_Greg_BanditGoldmine_15_00"); //Die Banditen haben eine Goldmine gefunden.
 	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_01"); //Ich wusste es! DESHALB sind sie hierhergekommen.
 	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_02"); //Kein Mensch lebt freiwillig in dem monsterverseuchten Sumpf.
-	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_03"); //Gute Arbeit. Hier, ich hab etwas für dich.
+	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_03"); //Gute Arbeit. Hier, ich hab etwas fÃ¼r dich.
 	
 	B_GiveInvItems (self,other,ItRi_Addon_STR_01,1);
 	
-	B_LogEntry (TOPIC_Addon_ScoutBandits,"Ich Greg über die Goldmine informiert.");	
+	B_LogEntry (TOPIC_Addon_ScoutBandits,"Ich Greg Ã¼ber die Goldmine informiert.");	
 	
 	MIS_Greg_ScoutBandits = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Greg_ScoutBandits);
@@ -594,7 +594,7 @@ FUNC INT DIA_Addon_Greg_WhoAreYou_Condition()
 FUNC VOID DIA_Addon_Greg_WhoAreYou_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Greg_WhoAreYou_15_00"); //Wer bist du?
-	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_01"); //Ich bin Greg, der Anführer von diesem Sauhaufen hier.
+	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_01"); //Ich bin Greg, der AnfÃ¼hrer von diesem Sauhaufen hier.
 	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_02"); //Reicht dir das?
 };
 
@@ -624,7 +624,7 @@ FUNC VOID DIA_Addon_Greg_NiceToSeeYou_Info()
 	AI_Output (other,self ,"DIA_Addon_Greg_NiceToSeeYou_15_00"); //Wie bist eigentlich hierher gekommen?
 	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_01"); //Mit mir hast du wohl nicht gerechnet, was?
 	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_02"); //Nur damit wir das mal klar stellen. Ich bin Greg und das hier ist mein Lager.
-	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_03"); //Genügt dir das?
+	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_03"); //GenÃ¼gt dir das?
 };
 	
 // ************************************************************
@@ -637,7 +637,7 @@ INSTANCE DIA_Addon_Greg_Story(C_INFO)
 	condition	= DIA_Addon_Greg_Story_Condition;
 	information	= DIA_Addon_Greg_Story_Info;
 	permanent	= TRUE;
-	description = "Eine Sache würde mich noch interesieren.";
+	description = "Eine Sache wÃ¼rde mich noch interesieren.";
 };                       
 FUNC INT DIA_Addon_Greg_Story_Condition()
 {
@@ -651,7 +651,7 @@ FUNC INT DIA_Addon_Greg_Story_Condition()
 
 FUNC VOID DIA_Addon_Greg_Story_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_15_00"); //Eine Sache würde mich noch interesieren.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_15_00"); //Eine Sache wÃ¼rde mich noch interesieren.
 	AI_Output (self ,other,"DIA_Addon_Greg_Story_01_01"); //Was denn?
 	
 	Info_ClearChoices (DIA_Addon_Greg_Story);
@@ -661,7 +661,7 @@ FUNC VOID DIA_Addon_Greg_Story_Info()
 
 	if (RavenIsDead == FALSE)
 	{
-		Info_AddChoice (DIA_Addon_Greg_Story,"Was weisst du über Raven?",DIA_Addon_Greg_Story_Raven);
+		Info_AddChoice (DIA_Addon_Greg_Story,"Was weisst du Ã¼ber Raven?",DIA_Addon_Greg_Story_Raven);
 	};
 };	
 
@@ -675,26 +675,26 @@ FUNC VOID DIA_Addon_Greg_Story_Way()
 	AI_Output (other,self ,"DIA_Addon_Greg_Story_Way_15_00"); //Wie bist du hierher gekommen.
 	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_01"); //Ich habe einen Tunnel gefunden. Bei der alten Pyramide, war von ein paar Magiern bewacht.
 	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_02"); //Hab mich an den Blindfischen einfach vorbei geschlichen.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_03"); //Zuerst dachte ich, das ist wär 'ne alte Grabkammer und wollte nur mal gucken, ob da was zu holen ist.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_04"); //Hab nicht schlecht gestaunt, als ich plötzlich in meinem geliebten Tal rauskam.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_05"); //Dachte schon, ich müsste den Rest meines Lebens vor der Miliz wegrennen.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_03"); //Zuerst dachte ich, das ist wÃ¤r 'ne alte Grabkammer und wollte nur mal gucken, ob da was zu holen ist.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_04"); //Hab nicht schlecht gestaunt, als ich plÃ¶tzlich in meinem geliebten Tal rauskam.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_05"); //Dachte schon, ich mÃ¼sste den Rest meines Lebens vor der Miliz wegrennen.
 };
 
 FUNC VOID DIA_Addon_Greg_Story_Ship()
 {
 	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_00"); //Wo ist dein Schiff?
 	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_01"); //Das glaubt mir kein Mensch. Da ist monatelang kein Schiff zwischen hier und dem Festland unterwegs.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_02"); //Monatelang! - Und das erste Schiff, dem man begegnet, ist ein vollbesetztes Kriegschiff des Königs.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_02"); //Monatelang! - Und das erste Schiff, dem man begegnet, ist ein vollbesetztes Kriegschiff des KÃ¶nigs.
 	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_03"); //Vom Kiel bis zum Masttop voll mit Paladinen.
 	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_04"); //Das nennt man wohl Pech.
 	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_05"); //Das kannst du laut sagen. Die haben uns kurzerhand versenkt. Ich bin der Einzige, der es bis zum Ufer geschafft hat.
 };
 FUNC VOID DIA_Addon_Greg_Story_Raven()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_Raven_15_00"); //Was weißt du über Raven?
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_01"); //Soweit ich weiß, war er früher Erzbaron. Eine ziemlich große Nummer in der Kolonie.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_Raven_15_00"); //Was weiÃŸt du Ã¼ber Raven?
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_01"); //Soweit ich weiÃŸ, war er frÃ¼her Erzbaron. Eine ziemlich groÃŸe Nummer in der Kolonie.
 	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_02"); //Ich habe keine Ahnung, warum er hier ist und warum die Leute ihm folgen.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_03"); //Aber ich bin mir sicher, er brütet etwas aus. Er ist nicht der Typ, der sich im Sumpf versteckt.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_03"); //Aber ich bin mir sicher, er brÃ¼tet etwas aus. Er ist nicht der Typ, der sich im Sumpf versteckt.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -721,8 +721,8 @@ func int DIA_Addon_Greg_RavenDead_Condition ()
 func void DIA_Addon_Greg_RavenDead_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Greg_RavenDead_15_00"); //Raven ist erledigt.
-	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_01"); //Donnerwetter. Das hätte ich ja nicht gedacht. Hast ihn kalt erwischt, was?
-	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_02"); //Das ist mir doch glatt 500 Golstücke wert.
+	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_01"); //Donnerwetter. Das hÃ¤tte ich ja nicht gedacht. Hast ihn kalt erwischt, was?
+	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_02"); //Das ist mir doch glatt 500 GolstÃ¼cke wert.
 	CreateInvItems (self, ItMi_Gold, 500);									
 	B_GiveInvItems (self, other, ItMi_Gold, 500);		
 	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_03"); //Du bist ein wahrer Teufelskerl. Weiter so.

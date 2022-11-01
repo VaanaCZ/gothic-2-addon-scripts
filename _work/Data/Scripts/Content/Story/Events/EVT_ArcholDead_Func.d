@@ -16,7 +16,7 @@ func void EVT_ARCHOLDEAD_FUNC ()
 	
 		if (EVT_ARCHOLDEAD_FUNC_OneTime == FALSE)
 		{
-			B_LogEntry (TOPIC_HallenVonIrdorath,"Ich habe so etwas wie einen Tempel gefunden. Er wird von einer Unmenge von untoten Wesen bewohnt. Erinnert mich alles verdammt an diesen elenden Orctempel des Schl‰fers. Diesmal werde ich nicht versagen. Diesmal nicht!"); 
+			B_LogEntry (TOPIC_HallenVonIrdorath,"Ich habe so etwas wie einen Tempel gefunden. Er wird von einer Unmenge von untoten Wesen bewohnt. Erinnert mich alles verdammt an diesen elenden Orctempel des Schl√§fers. Diesmal werde ich nicht versagen. Diesmal nicht!"); 
 			EVT_ARCHOLDEAD_FUNC_OneTime = TRUE;
 		};
 };

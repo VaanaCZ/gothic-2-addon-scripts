@@ -95,7 +95,7 @@ func void DIA_Boltan_ToConvicts_Info ()
 		}
 		else if (other.guild == GIL_PAL) || (other.guild == GIL_KDF)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_05"); //Selbstverständlich.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_05"); //SelbstverstÃ¤ndlich.
 		}
 		else
 		{
@@ -131,7 +131,7 @@ func void DIA_Boltan_HalloBennet_Info ()
 {
 	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //Du bist doch nicht etwas gekommen, um deinen Kumpel hier rauszuholen, oder?
 	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Das kannst du vergessen! Sobald ich Alarm schlage, sind die Jungs hier!
-	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //Und dann gibt's Söldner-Hack! (lacht dreckig)
+	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //Und dann gibt's SÃ¶ldner-Hack! (lacht dreckig)
 };		
 	
 // ************************************************
@@ -159,9 +159,9 @@ func int DIA_Boltan_HalloCanthar_Condition ()
 
 func void DIA_Boltan_HalloCanthar_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Du bist doch der Kerl, der Canthar den Händler angezeigt hat.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Es waren jede Menge Leute hier, die sich für ihn verbürgt haben. Angesehene Leute.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Die Sache war wohl ein Mißverständnis. Sowas kommt vor.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Du bist doch der Kerl, der Canthar den HÃ¤ndler angezeigt hat.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Es waren jede Menge Leute hier, die sich fÃ¼r ihn verbÃ¼rgt haben. Angesehene Leute.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Die Sache war wohl ein MiÃŸverstÃ¤ndnis. Sowas kommt vor.
 	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //Pass in Zukunft besser auf, wen du in den Knast bringst.
 };		
 

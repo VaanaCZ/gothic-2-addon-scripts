@@ -40,11 +40,11 @@ func void DIA_PAL_297_TRESPAS_Info ()
 	
 	if (Kapitel == 1)
 	{
-		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_01"); //Die Gegend hier ist ziemlich gef‰hrlich, also kehr besser um - wir wollen ja nicht, dass dir was passiert.
+		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_01"); //Die Gegend hier ist ziemlich gef√§hrlich, also kehr besser um - wir wollen ja nicht, dass dir was passiert.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_02"); //Ziemlich wagemutig von dir, das Tal zu betreten. Hauptsache, du hast genug Heiltr‰nke dabei.
+		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_02"); //Ziemlich wagemutig von dir, das Tal zu betreten. Hauptsache, du hast genug Heiltr√§nke dabei.
 	};
 };
 

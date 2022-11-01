@@ -81,7 +81,7 @@ FUNC VOID DIA_Addon_10008_Bandit_Hi_Info()
 	AI_Output (other, self, "DIA_Addon_10008_Bandit_Hi_15_01");//Was???
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Wenn du dir selbst einen Gefallen tun willst, dann halte dich von Skinner fern.
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Der Kerl ist unberechenbar. Den Letzten, der ihn geweckt hat, hat er umgebracht.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Lass ihn schlafen, das ist das Beste f¸r alle.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Lass ihn schlafen, das ist das Beste f√ºr alle.
 };
 //--------------------------------------------------------------------
 //	Info soup
@@ -105,11 +105,11 @@ FUNC VOID DIA_Addon_10008_Bandit_soup_Info()
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//Wegen der Hose? Nein, ich trage sie nur, weil sie bequem ist.
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Ich koche hier nur Fleischsuppe. Hier, kannst ja mal probieren - die macht stark.
 	B_GiveInvItems (self, other, ItFo_Addon_Meatsoup,1);
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Es ist immer wichtig, seine eigene St‰rke zu trainieren - drauﬂen gibt's viele Gefahren.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Wenn du willst, kann ich dir helfen, st‰rker zu werden.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Es ist immer wichtig, seine eigene St√§rke zu trainieren - drau√üen gibt's viele Gefahren.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Wenn du willst, kann ich dir helfen, st√§rker zu werden.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Der Bandit am Kochtopf kann mir dabei helfen, meine St‰rke zu trainieren.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Der Bandit am Kochtopf kann mir dabei helfen, meine St√§rke zu trainieren.");	
 };
 //*******************************************
 //	TechPlayer
@@ -122,7 +122,7 @@ INSTANCE DIA_Addon_10008_Bandit_Teach(C_INFO)
 	condition	= DIA_Addon_10008_Bandit_Teach_Condition;
 	information	= DIA_Addon_10008_Bandit_Teach_Info;
 	permanent	= TRUE;
-	description = "Ich will st‰rker werden";
+	description = "Ich will st√§rker werden";
 };                       
 
 FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
@@ -134,7 +134,7 @@ FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //Ich will st‰rker werden.
+	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //Ich will st√§rker werden.
 
 	Info_ClearChoices 	(DIA_Addon_10008_Bandit_Teach);
 	Info_AddChoice		(DIA_Addon_10008_Bandit_Teach, DIALOG_BACK, DIA_Addon_10008_Bandit_Teach_Back);

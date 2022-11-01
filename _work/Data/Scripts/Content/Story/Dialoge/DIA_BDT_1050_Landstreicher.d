@@ -42,11 +42,11 @@ func void DIA_Landstreicher_HALLO_Info ()
 {
 	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_00"); //Was soll das werden?
 	AI_Output			(other, self, "DIA_Landstreicher_HALLO_15_01"); //Was meinst du?
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_02"); //Du bist jetzt schon der Zweite, der hier vorbeihastet, als hätten ihn die Blutfliegen gestochen.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_02"); //Du bist jetzt schon der Zweite, der hier vorbeihastet, als hÃ¤tten ihn die Blutfliegen gestochen.
 	
 	Info_ClearChoices	(DIA_Landstreicher_HALLO);
 		
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "Ich muß weiter.", DIA_Landstreicher_HALLO_weg );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "Ich muÃŸ weiter.", DIA_Landstreicher_HALLO_weg );
 	Info_AddChoice	(DIA_Landstreicher_HALLO, "Wo ist der andere hin?", DIA_Landstreicher_HALLO_wo );
 	Info_AddChoice	(DIA_Landstreicher_HALLO, "Wer war der andere?", DIA_Landstreicher_HALLO_wer );
 
@@ -61,11 +61,11 @@ func void DIA_Landstreicher_HALLO_wer ()
 {
 	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_15_00"); //Wer war der andere?
 	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_01"); //Er sah aus wie einer dieser durchgeistigten Novizen aus dem Kloster da hinten.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_02"); //Du kannst mir erzählen, was du willst, aber irgendwie sind die Burschen nicht ganz richtig in der Birne.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_02"); //Du kannst mir erzÃ¤hlen, was du willst, aber irgendwie sind die Burschen nicht ganz richtig in der Birne.
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_03"); //Guck dir doch alleine mal ihre albernen Klamotten an. Damit würde ich mich nicht einmal bei Nacht auf die Straße trauen. (lacht)
+		AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_03"); //Guck dir doch alleine mal ihre albernen Klamotten an. Damit wÃ¼rde ich mich nicht einmal bei Nacht auf die StraÃŸe trauen. (lacht)
 		Info_AddChoice	(DIA_Landstreicher_HALLO, "Sei vorsichtig, was du sagst.", DIA_Landstreicher_HALLO_wer_vorsicht );
 	};
 };
@@ -73,7 +73,7 @@ func void DIA_Landstreicher_HALLO_wer_vorsicht ()
 {
 	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_15_00"); //Sei vorsichtig, was du sagst. Ich war auch einmal Novize im Kloster.
 	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_01"); //(lacht) Du armes Schwein. Jetzt wird mir allerdings einiges klar.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_02"); //Nichts für ungut. Geh ruhig weiter. Reisende Leute soll man nicht aufhalten.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_02"); //Nichts fÃ¼r ungut. Geh ruhig weiter. Reisende Leute soll man nicht aufhalten.
 
 	Info_AddChoice		(DIA_Landstreicher_HALLO, "Dir sollte jemand Manieren beibringen.", DIA_Landstreicher_HALLO_wer_vorsicht_Manieren );
 
@@ -81,7 +81,7 @@ func void DIA_Landstreicher_HALLO_wer_vorsicht ()
 func void DIA_Landstreicher_HALLO_wer_vorsicht_Manieren ()
 {
 	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_15_00"); //Dir sollte jemand Manieren beibringen.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_01"); //Jetzt sei doch nicht gleich beleidigt. Aber gut, wenn du dich unbedingt prügeln willst.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_01"); //Jetzt sei doch nicht gleich beleidigt. Aber gut, wenn du dich unbedingt prÃ¼geln willst.
 	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_02"); //Dann zeig mal, was du draufhast, Novize.
 
 	AI_StopProcessInfos (self); 
@@ -124,11 +124,11 @@ func void DIA_Landstreicher_WASMACHSTDU_Info ()
 	
 		if (Npc_KnowsInfo(other, DIA_Landstreicher_HALLO))
 		{
-			AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_01"); //Für so einen Schnösel stellst du verdammt viele Fragen.
+			AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_01"); //FÃ¼r so einen SchnÃ¶sel stellst du verdammt viele Fragen.
 		};
 
-	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_02"); //Sag mir, durch welche Goblinhöhle wir beide zusammen gekrochen sind und ich erzähl dir meine Geheimnisse.
-	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_03"); //Andernfalls kümmere dich um deine Angelegenheiten.
+	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_02"); //Sag mir, durch welche GoblinhÃ¶hle wir beide zusammen gekrochen sind und ich erzÃ¤hl dir meine Geheimnisse.
+	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_03"); //Andernfalls kÃ¼mmere dich um deine Angelegenheiten.
 
 	AI_StopProcessInfos (self);
 };

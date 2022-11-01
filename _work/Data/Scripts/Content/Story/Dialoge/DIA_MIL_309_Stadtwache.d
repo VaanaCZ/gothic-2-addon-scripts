@@ -50,21 +50,21 @@ func void DIA_Mil_309_Stadtwache_Hallo_Info ()
 	{
 		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02"); //Pass mal auf - du kommst nicht in die Stadt.
 		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03"); //Aber ich will dir mal 'nen Tipp geben, der ist auch ganz umsonst.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Halt dich von dem Wald hier vorne fern - da streunen gefährliche Monster rum.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Halt dich von dem Wald hier vorne fern - da streunen gefÃ¤hrliche Monster rum.
 		
 		MIl_309_News = 1;
 	}
 	else if  (Stadtwache_310.aivar[AIV_PASSGATE] == FALSE)
 	&&		 (MIl_309_News == 1)
 	{	
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_05"); //Kriech zurück unter deinen Stein, Penner!
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_05"); //Kriech zurÃ¼ck unter deinen Stein, Penner!
 	};
 	
 	if  (Stadtwache_310.aivar[AIV_PASSGATE] == TRUE)
 	&&  (MIl_309_News < 2)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //Hör Mal - du hast jetzt Zugang zur Stadt. Aber das heißt nicht, dass du hier machen kannst, was du willst.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Wenn du dich nicht an die Regeln hältst, verlierst du hier alle Rechte!
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //HÃ¶r Mal - du hast jetzt Zugang zur Stadt. Aber das heiÃŸt nicht, dass du hier machen kannst, was du willst.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Wenn du dich nicht an die Regeln hÃ¤ltst, verlierst du hier alle Rechte!
 		
 		MIl_309_News = 2;
 	}

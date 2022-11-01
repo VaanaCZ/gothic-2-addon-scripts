@@ -79,16 +79,16 @@ FUNC VOID DIA_Wirt_Hallo_Info()
 	var int randy;
 	randy = Hlp_Random (2);
 	
-	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Hey, komm näher. Mach mal Pause und trink mal einen kühlen Schluck Bier.
+	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Hey, komm nÃ¤her. Mach mal Pause und trink mal einen kÃ¼hlen Schluck Bier.
 	
 	if (self.aivar [AIV_TalkedToPlayer] == FALSE) 
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_01");//Lord Andre hat ein paar Fässer Freibier gestiftet.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_01");//Lord Andre hat ein paar FÃ¤sser Freibier gestiftet.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 0)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//Nach getaner Arbeit gibt's nichts Besseres als ein kühles Pils.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//Nach getaner Arbeit gibt's nichts Besseres als ein kÃ¼hles Pils.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 1)
@@ -100,14 +100,14 @@ FUNC VOID DIA_Wirt_Hallo_Info()
 	}
 	else if (randy == 2)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//Mann kann ja viel über Khorinis sagen, aber unser 'dunkles Paladiner' ist einfach das Beste von ganz Myrtana.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//Mann kann ja viel Ã¼ber Khorinis sagen, aber unser 'dunkles Paladiner' ist einfach das Beste von ganz Myrtana.
 		AI_StopProcessInfos (self);
 	};
 };
 
 /*
-	Wenn du ein Problem hast und es lässt sich lösen, dann denk nicht weiter drüber nach.
-	Und wenn du es nicht lösen kannst, dann brauchst du auch nicht weiter drüber nachzudenken. 
+	Wenn du ein Problem hast und es lÃ¤sst sich lÃ¶sen, dann denk nicht weiter drÃ¼ber nach.
+	Und wenn du es nicht lÃ¶sen kannst, dann brauchst du auch nicht weiter drÃ¼ber nachzudenken. 
 */
 
 

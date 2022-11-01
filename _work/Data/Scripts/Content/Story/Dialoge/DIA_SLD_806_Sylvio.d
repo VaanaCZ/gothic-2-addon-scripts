@@ -73,8 +73,8 @@ func void DIA_Sylvio_Thekla_Info ()
 {
 	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //Thekla hat ein Problem mit dir.
 	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //So? Was hat die gute Frau denn? Und warum kommt sie nicht selbst?
-	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //Das weißt du verdammt gut.
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(zynisch freundlich) Warum unterhältst du dich nicht ein bisschen mit meinem Freund Bullco darüber?
+	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //Das weiÃŸt du verdammt gut.
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(zynisch freundlich) Warum unterhÃ¤ltst du dich nicht ein bisschen mit meinem Freund Bullco darÃ¼ber?
 
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -90,7 +90,7 @@ instance DIA_Sylvio_Gossip		(C_INFO)
 	condition	= DIA_Sylvio_Gossip_Condition;
 	information	= DIA_Sylvio_Gossip_Info;
 	permanent	= FALSE;
-	description	= "Ziemlich viele Leute reden über dich ...";
+	description	= "Ziemlich viele Leute reden Ã¼ber dich ...";
 };
 
 func int DIA_Sylvio_Gossip_Condition ()
@@ -100,7 +100,7 @@ func int DIA_Sylvio_Gossip_Condition ()
 
 func void DIA_Sylvio_Gossip_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Gossip_15_00"); //Ziemlich viele Leute reden über dich ...
+	AI_Output (other, self, "DIA_Sylvio_Gossip_15_00"); //Ziemlich viele Leute reden Ã¼ber dich ...
 	AI_Output (self, other, "DIA_Sylvio_Gossip_09_01"); //Ziemlich viele Leute reden zuviel.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
@@ -117,7 +117,7 @@ instance DIA_Sylvio_AboutLee (C_INFO)
 	condition	= DIA_Sylvio_AboutLee_Condition;
 	information	= DIA_Sylvio_AboutLee_Info;
 	permanent	= FALSE;
-	description	= "Was denkst du über Lee?";
+	description	= "Was denkst du Ã¼ber Lee?";
 };
 
 func int DIA_Sylvio_AboutLee_Condition ()
@@ -127,9 +127,9 @@ func int DIA_Sylvio_AboutLee_Condition ()
 
 func void DIA_Sylvio_AboutLee_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Was denkst du über Lee?
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(leicht ironisch) Oh, er ist ein guter Kämpfer. Ich würde mich nie mit ihm anlegen wollen.
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(kalt) Außer natürlich, es lässt sich nicht vermeiden.
+	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Was denkst du Ã¼ber Lee?
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(leicht ironisch) Oh, er ist ein guter KÃ¤mpfer. Ich wÃ¼rde mich nie mit ihm anlegen wollen.
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(kalt) AuÃŸer natÃ¼rlich, es lÃ¤sst sich nicht vermeiden.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -168,8 +168,8 @@ func int DIA_Sylvio_MenDefeated_Condition ()
 func void DIA_Sylvio_MenDefeated_Info ()
 {
 	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //Mir ist zu Ohren gekommen, du hast es auf meine Jungs abgesehen!
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //Und soweit ich weiß, bist du einer von Lees Schützlingen.
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //Ich warne dich! Bald werden sich hier einige Dinge ändern, und dann werden wir uns noch mal über die Sache unterhalten!
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //Und soweit ich weiÃŸ, bist du einer von Lees SchÃ¼tzlingen.
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //Ich warne dich! Bald werden sich hier einige Dinge Ã¤ndern, und dann werden wir uns noch mal Ã¼ber die Sache unterhalten!
 	
 	Sylvio_MenDefeated = TRUE;
 	

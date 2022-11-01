@@ -272,7 +272,7 @@ func void PLAYER_HOTKEY_LAME_POTION()
 				}
 				else
 				{
-					Print ("Keine Manatr‰nke vorhanden!");
+					Print ("Keine Manatr√§nke vorhanden!");
 				};
 		 }
 		 else
@@ -330,7 +330,7 @@ if (Npc_IsInState (hero,ZS_Dead)==FALSE)
 				}
 				else
 				{
-					Print ("Keine Heiltr‰nke vorhanden!");
+					Print ("Keine Heiltr√§nke vorhanden!");
 				};
 		 }
 		 else

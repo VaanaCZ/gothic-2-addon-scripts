@@ -45,7 +45,7 @@ FUNC VOID DIA_Addon_10019_Wache_Hi_Info()
 FUNC VOID B_Say_Wache_kaputt()
 {
 	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//Warum sind sie tot?
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(lacht hämisch) Die haben sich kaputt geschuftet.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(lacht hÃ¤misch) Die haben sich kaputt geschuftet.
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 };
@@ -61,7 +61,7 @@ FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Ja()
 {
 	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Ja_15_00");//Ja.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Dann pass gut auf dich auf. Pass besser auf als die Typen, die hier überall rumliegen.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Dann pass gut auf dich auf. Pass besser auf als die Typen, die hier Ã¼berall rumliegen.
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);

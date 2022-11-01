@@ -49,7 +49,7 @@ FUNC VOID DIA_None_101_Mario_Job_Info()
 {
 	AI_Output (other,self ,"DIA_None_101_Mario_Job_15_00"); //Was machst du hier?
 	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_01"); //Ich hoffe, dass hier in absehbarer Zeit ein Schiff reinkommt, auf dem ich anheuern kann.
-	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_02"); //Das Rumgehänge geht mir ganz schön auf die Nerven.
+	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_02"); //Das RumgehÃ¤nge geht mir ganz schÃ¶n auf die Nerven.
 };
 
 //*********************************************************************
@@ -76,7 +76,7 @@ FUNC INT DIA_None_101_Mario_YouNeedMe_Condition()
 
 FUNC VOID DIA_None_101_Mario_YouNeedMe_Info()
 {
-	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_00"); //Ich hab gehört, du suchst Leute für dein Schiff?
+	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_00"); //Ich hab gehÃ¶rt, du suchst Leute fÃ¼r dein Schiff?
 	AI_Output (other,self ,"DIA_None_101_Mario_YouNeedMe_15_01"); //Und?
 	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_02"); //Ich bin dabei!
 	
@@ -111,10 +111,10 @@ FUNC VOID DIA_None_101_Mario_WhyNeedYou_Info()
 {
 	AI_Output (other,self ,"DIA_None_101_Mario_WhyNeedYou_15_00"); //Warum sollte ich dich mitnehmen?
 	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_01"); //Ganz einfach, weil du mich brauchst.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_02"); //Ich bin ... ich war Leutnant bei der Königlichen Kriegsmarine.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_03"); //Ich habe als Seesoldat auf der König Rhobar und auf der Myrtanas Stolz gedient.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_04"); //In der Schlacht um das Östliche Archipel habe ich eigenhändig zwei Dutzend Orks zurück in Beliars Reich geschickt.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_05"); //Leider waren wir zu wenige, nachdem unser Flaggschiff versenkt worden ist, mussten wir uns zurückziehen.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_02"); //Ich bin ... ich war Leutnant bei der KÃ¶niglichen Kriegsmarine.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_03"); //Ich habe als Seesoldat auf der KÃ¶nig Rhobar und auf der Myrtanas Stolz gedient.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_04"); //In der Schlacht um das Ã–stliche Archipel habe ich eigenhÃ¤ndig zwei Dutzend Orks zurÃ¼ck in Beliars Reich geschickt.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_05"); //Leider waren wir zu wenige, nachdem unser Flaggschiff versenkt worden ist, mussten wir uns zurÃ¼ckziehen.
 
 };
 
@@ -172,10 +172,10 @@ FUNC INT DIA_None_101_Mario_Abilities_Condition()
 FUNC VOID DIA_None_101_Mario_Abilities_Info()
 {
 	AI_Output (other,self ,"DIA_None_101_Mario_Abilities_15_00"); //Was kannst du?
-	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_01"); //Ich bin ausgebildet für den Enterkrieg und im Nahkampf, ferner bin ich ein ganz brauchbarer Schütze mit der Schiffskanone.
+	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_01"); //Ich bin ausgebildet fÃ¼r den Enterkrieg und im Nahkampf, ferner bin ich ein ganz brauchbarer SchÃ¼tze mit der Schiffskanone.
 	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_02"); //Ich wette, es gibt die eine oder andere Sache, die ich dir auf der Reise beibringen kann.
 
-	B_LogEntry (TOPIC_Crew,"Mario scheint ein fähiger Mann im Schiffskampf zu sein. Vielleicht kann ich bei ihm noch was lernen.");
+	B_LogEntry (TOPIC_Crew,"Mario scheint ein fÃ¤higer Mann im Schiffskampf zu sein. Vielleicht kann ich bei ihm noch was lernen.");
 };
 
 //*********************************************************************
@@ -204,11 +204,11 @@ FUNC VOID DIA_None_101_Mario_YourPrice_Info()
 {
 	AI_Output (other,self ,"DIA_None_101_Mario_YourPrice_15_00"); //Was verlangst du?
 	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_01"); //Was kann ich denn verlangen? Ich bin froh, wenn ich von hier wegkomme.
-	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_02"); //Hand gegen Koje. Ich helfe dir und dafür nimmst du mich mit.
+	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_02"); //Hand gegen Koje. Ich helfe dir und dafÃ¼r nimmst du mich mit.
 };
 
 //*********************************************************************
-//	Die Reise kann gefährlich werden.
+//	Die Reise kann gefÃ¤hrlich werden.
 //*********************************************************************
 INSTANCE DIA_None_101_Mario_CouldBeDangerous   (C_INFO)
 {
@@ -217,7 +217,7 @@ INSTANCE DIA_None_101_Mario_CouldBeDangerous   (C_INFO)
 	condition   = DIA_None_101_Mario_CouldBeDangerous_Condition;
 	information = DIA_None_101_Mario_CouldBeDangerous_Info;
 	permanent   = FALSE;
-	description	= "Die Reise kann gefährlich werden.";
+	description	= "Die Reise kann gefÃ¤hrlich werden.";
 };
 
 FUNC INT DIA_None_101_Mario_CouldBeDangerous_Condition()
@@ -231,10 +231,10 @@ FUNC INT DIA_None_101_Mario_CouldBeDangerous_Condition()
 
 FUNC VOID DIA_None_101_Mario_CouldBeDangerous_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_CouldBeDangerous_15_00"); //Die Reise kann gefährlich werden.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_01"); //Ich bin Gefahr gewohnt. Wenn du da draußen bist, ist jeder Tag gefährlich.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_02"); //Der nächste Sturm kann dein Tod sein und die Ungeheuer aus den Tiefen können dein ganzes Schiff am Stück verschlingen.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_03"); //Die Orkischen Galeeren muss ich wohl nicht extra erwähnen oder? Glaub mir, es gibt nichts, wovor ich Angst habe. Ein Seemann, der Angst hat, ist schon tot
+	AI_Output (other,self ,"DIA_None_101_Mario_CouldBeDangerous_15_00"); //Die Reise kann gefÃ¤hrlich werden.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_01"); //Ich bin Gefahr gewohnt. Wenn du da drauÃŸen bist, ist jeder Tag gefÃ¤hrlich.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_02"); //Der nÃ¤chste Sturm kann dein Tod sein und die Ungeheuer aus den Tiefen kÃ¶nnen dein ganzes Schiff am StÃ¼ck verschlingen.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_03"); //Die Orkischen Galeeren muss ich wohl nicht extra erwÃ¤hnen oder? Glaub mir, es gibt nichts, wovor ich Angst habe. Ein Seemann, der Angst hat, ist schon tot
 };
 
 //*********************************************************************
@@ -264,7 +264,7 @@ FUNC VOID DIA_None_101_Mario_DontNeedYou_Info()
 	AI_Output (other,self ,"DIA_None_101_Mario_DontNeedYou_15_00"); //Ich kann dich nicht gebrauchen.
 	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_01"); //Ich bin der beste Seeman, den du hier finden wirst.
 	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_02"); //Wie du aussiehst, hast du keine Ahnung von der Seefahrt.
-	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_03"); //Also überleg dir sehr gut, wem du vertraust.
+	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_03"); //Also Ã¼berleg dir sehr gut, wem du vertraust.
 };
 
 //*********************************************************************
@@ -332,7 +332,7 @@ func int DIA_Mario_LeaveMyShip_Condition ()
 func void DIA_Mario_LeaveMyShip_Info ()
 {
 	AI_Output			(other, self, "DIA_Mario_LeaveMyShip_15_00"); //Ich kann dich doch nicht gebrauchen!
-	AI_Output			(self, other, "DIA_Mario_LeaveMyShip_07_01"); //Wie du meinst, du weißt ja, wo du mich findest!
+	AI_Output			(self, other, "DIA_Mario_LeaveMyShip_07_01"); //Wie du meinst, du weiÃŸt ja, wo du mich findest!
 	
 	Mario_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -341,7 +341,7 @@ func void DIA_Mario_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Mario_StillNeedYou		(C_INFO)
 {
@@ -354,7 +354,7 @@ instance DIA_Mario_StillNeedYou		(C_INFO)
 };
 func int DIA_Mario_StillNeedYou_Condition ()
 {	
-	if((Mario_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natürlich nur eine variable abfragen
+	if((Mario_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natÃ¼rlich nur eine variable abfragen
 	|| (Mario_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{

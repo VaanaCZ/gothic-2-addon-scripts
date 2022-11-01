@@ -37,11 +37,11 @@ FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 FUNC VOID DIA_Addon_10025_Wache_Hi_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//Wie sieht's aus?
-	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//Ich koche hier leckeren Eintopf für die Buddler und die Wachen.
+	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//Ich koche hier leckeren Eintopf fÃ¼r die Buddler und die Wachen.
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Aber die Sklaven - die kriegen nichts. Höchstens mal etwas schales Wasser und altes Brot.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Aber die Sklaven - die kriegen nichts. HÃ¶chstens mal etwas schales Wasser und altes Brot.
 		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Das kann diesen Typen aus der Stadt nicht schaden.
 	};
 };

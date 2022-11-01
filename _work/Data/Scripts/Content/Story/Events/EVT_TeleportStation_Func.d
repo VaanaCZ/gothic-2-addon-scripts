@@ -6,7 +6,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 {	
   	Wld_PlayEffect("spellFX_Teleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
 	Snd_Play ("MFX_TELEPORT_CAST");
-	Npc_ClearAIQueue (hero);	//Joly:wegen Seitwärts da durch rennen.
+	Npc_ClearAIQueue (hero);	//Joly:wegen SeitwÃ¤rts da durch rennen.
 	
 	SCUsed_TELEPORTER = TRUE;			//SC hat schon mal einen Teleporter benutzt
 	
@@ -20,7 +20,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"Der Teleportstein in der Höhle östlich der Hafenstadt führt zur Taverne 'Zur Toten Harpie'."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"Der Teleportstein in der HÃ¶hle Ã¶stlich der Hafenstadt fÃ¼hrt zur Taverne 'Zur Toten Harpie'."); 
 			};
 			
 			SCUsed_NW_TELEPORTSTATION_CITY = TRUE; 
@@ -33,7 +33,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"Der Teleportstein in der Nähe der Taverne 'Zur Toten Harpie' führt zum Portal der mysteriösen Erbauer."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"Der Teleportstein in der NÃ¤he der Taverne 'Zur Toten Harpie' fÃ¼hrt zum Portal der mysteriÃ¶sen Erbauer."); 
 			};
 
 			SCUsed_NW_TELEPORTSTATION_TAVERNE = TRUE; 
@@ -46,7 +46,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"Der Teleportstein beim Portal der mysteriösen Erbauer führt zur Höhle östlich der Hafenstadt."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"Der Teleportstein beim Portal der mysteriÃ¶sen Erbauer fÃ¼hrt zur HÃ¶hle Ã¶stlich der Hafenstadt."); 
 			};
 
 			SCUsed_NW_TELEPORTSTATION_MAYA = TRUE;
@@ -76,7 +76,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"In der Nähe des Portals, das nach Khorinis führt, habe ich einen Teleportstein aktiviert."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"In der NÃ¤he des Portals, das nach Khorinis fÃ¼hrt, habe ich einen Teleportstein aktiviert."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
@@ -104,7 +104,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Im Sumpf südlich vom Banditenlager habe ich einen Teleportstein aktiviert."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Im Sumpf sÃ¼dlich vom Banditenlager habe ich einen Teleportstein aktiviert."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -118,7 +118,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Im Südwesten habe ich einen Teleportstein gefunden."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Im SÃ¼dwesten habe ich einen Teleportstein gefunden."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -132,14 +132,14 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"In einer Höhle im Cayon gibt es einen Teleportstein. Ich habe ihn aktiviert."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"In einer HÃ¶hle im Cayon gibt es einen Teleportstein. Ich habe ihn aktiviert."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
 			if (MIS_KrokoJagd == LOG_SUCCESS)
 			&& (SCUsed_ADW_TELEPORTSTATION_PIRATES_JACKSMONSTER == FALSE)
 			{
-				// Monster, die bei der Jagd mit Alligator Jack stören
+				// Monster, die bei der Jagd mit Alligator Jack stÃ¶ren
 				Wld_InsertNpc  	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Giant_DesertRat,"ADW_CANYON_PATH_TO_MINE1_05");
@@ -160,7 +160,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			};	
 			SCUsed_ADW_TELEPORTSTATION_RAVENTELEPORT_OUT = TRUE;
 		}
-		else	//immer zurück zum ADW_ENTRANCE für alle anderen Teleportstations
+		else	//immer zurÃ¼ck zum ADW_ENTRANCE fÃ¼r alle anderen Teleportstations
 		{
 			AI_Teleport	(hero, "ADW_ENTRANCE"); 
 		};

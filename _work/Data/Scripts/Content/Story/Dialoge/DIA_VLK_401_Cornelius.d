@@ -51,8 +51,8 @@ FUNC INT DIA_Cornelius_SeeMurder_Condition()
 FUNC VOID DIA_Cornelius_SeeMurder_Info()
 {
 	AI_Output (other,self ,"DIA_Cornelius_SeeMurder_15_00"); //Du hast doch den Mord an Lothar beobachtet?
-	AI_Output (self ,other,"DIA_Cornelius_SeeMurder_13_01"); //(nervös) Ich muss zu einer laufenden Untersuchung keine Auskunft geben.
-	AI_Output (self ,other,"DIA_Cornelius_SeeMurder_13_02"); //Alles was ich weiß, habe ich schon bei Lord Hagen zu Protokoll gegeben.
+	AI_Output (self ,other,"DIA_Cornelius_SeeMurder_13_01"); //(nervÃ¶s) Ich muss zu einer laufenden Untersuchung keine Auskunft geben.
+	AI_Output (self ,other,"DIA_Cornelius_SeeMurder_13_02"); //Alles was ich weiÃŸ, habe ich schon bei Lord Hagen zu Protokoll gegeben.
 };
 
 //*********************************************************************
@@ -80,7 +80,7 @@ FUNC VOID DIA_Cornelius_WhatYouSee_Info()
 {
 	AI_Output (other,self ,"DIA_Cornelius_WhatYouSee_15_00"); //Was hast du gesehen?
 	AI_Output (self ,other,"DIA_Cornelius_WhatYouSee_13_01"); //(hektisch) Ich hab jetzt wirklich keine Zeit.
-	AI_Output (self ,other,"DIA_Cornelius_WhatYouSee_13_02"); //(hektisch) Du musst jetzt gehen, das Büro schließt jetzt.
+	AI_Output (self ,other,"DIA_Cornelius_WhatYouSee_13_02"); //(hektisch) Du musst jetzt gehen, das BÃ¼ro schlieÃŸt jetzt.
 	
 	B_LogEntry (TOPIC_RESCUEBENNET,"Cornelius weigert sich mir mir zu reden."); 
 	
@@ -111,11 +111,11 @@ FUNC INT DIA_Cornelius_Enough_Condition()
 FUNC VOID DIA_Cornelius_Enough_Info()
 {
 	AI_Output (other,self ,"DIA_Cornelius_Enough_15_00"); //Jetzt reicht es! Was hast du gesehen?
-	AI_Output (self ,other,"DIA_Cornelius_Enough_13_01"); //(nervös) Ich, ich habe gesehen, wie der Söldner den Paladin von hinten niedergeschlagen hat.
-	AI_Output (self ,other,"DIA_Cornelius_Enough_13_02"); //(nervös) Und dann hat er ihm sein Schwert in die Brust gerammt.
+	AI_Output (self ,other,"DIA_Cornelius_Enough_13_01"); //(nervÃ¶s) Ich, ich habe gesehen, wie der SÃ¶ldner den Paladin von hinten niedergeschlagen hat.
+	AI_Output (self ,other,"DIA_Cornelius_Enough_13_02"); //(nervÃ¶s) Und dann hat er ihm sein Schwert in die Brust gerammt.
 	AI_Output (other,self ,"DIA_Cornelius_Enough_15_03"); //Bist du dir da ganz sicher?
-	AI_Output (self ,other,"DIA_Cornelius_Enough_13_04"); //(ängstlich) Ja, natürlich. Ich konnte es mit eigenen Augen sehen.
-	AI_Output (self ,other,"DIA_Cornelius_Enough_13_05"); //(ängstlich) Aber ich hab jetzt wirklich keine Zeit, es wartet noch ein großer Stapel mit Papieren auf mich.
+	AI_Output (self ,other,"DIA_Cornelius_Enough_13_04"); //(Ã¤ngstlich) Ja, natÃ¼rlich. Ich konnte es mit eigenen Augen sehen.
+	AI_Output (self ,other,"DIA_Cornelius_Enough_13_05"); //(Ã¤ngstlich) Aber ich hab jetzt wirklich keine Zeit, es wartet noch ein groÃŸer Stapel mit Papieren auf mich.
 
 	AI_StopProcessInfos (self);
 };
@@ -158,7 +158,7 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_Info()
 	};
 	if (hero.guild == GIL_SLD)
 	{
-		Info_AddChoice (DIA_Cornelius_DontBelieveYou,"Ich könnte den Söldnern sagen wo du wohnst. ",DIA_Cornelius_DontBelieveYou_KnowYourHome);
+		Info_AddChoice (DIA_Cornelius_DontBelieveYou,"Ich kÃ¶nnte den SÃ¶ldnern sagen wo du wohnst. ",DIA_Cornelius_DontBelieveYou_KnowYourHome);
 	};
 	if (hero.guild == GIL_MIL)
 	{
@@ -171,9 +171,9 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_WhatYouWant ()
 	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WhatYouWant_15_00"); //Was verlangst du?
 	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WhatYouWant_13_01"); //(arrogant) Du hast gar nicht genug Gold, um mich zu bezahlen.
 	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WhatYouWant_15_02"); //Wie viel?
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WhatYouWant_13_03"); //2000 Goldstücke. Dann könnte ich mir die Sache noch mal überlegen.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WhatYouWant_13_03"); //2000 GoldstÃ¼cke. Dann kÃ¶nnte ich mir die Sache noch mal Ã¼berlegen.
 	
-	B_LogEntry (TOPIC_RESCUEBENNET,"Für 2000 Goldstücke, wäre Cornelius bereit mit mir zu reden.");
+	B_LogEntry (TOPIC_RESCUEBENNET,"FÃ¼r 2000 GoldstÃ¼cke, wÃ¤re Cornelius bereit mit mir zu reden.");
 	
 	Cornelius_PayForProof = TRUE;
 	Info_ClearChoices (DIA_Cornelius_DontBelieveYou);
@@ -182,8 +182,8 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_WhatYouWant ()
 FUNC VOID DIA_Cornelius_DontBelieveYou_WantSurvive ()
 {
 	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WantSurvive_15_00"); //Du willst doch weiterleben, oder?
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_01"); //(ängstlich) Wenn du mich angreifst, wird man dich hängen.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_02"); //Ich habe mächtige Freunde. Also wage es nicht, Hand an mich zu legen.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_01"); //(Ã¤ngstlich) Wenn du mich angreifst, wird man dich hÃ¤ngen.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_02"); //Ich habe mÃ¤chtige Freunde. Also wage es nicht, Hand an mich zu legen.
 	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_03"); //Jetzt raus hier! Oder ich rufe die Wachen!
 	
 	
@@ -195,7 +195,7 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_Monastery()
 {
 	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Monastery_15_00"); //Im Kloster kann man dich zum Reden bringen.
 	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Monastery_13_01"); //(kreidebleich) Was meinst du damit?
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Monastery_15_02"); //Nun, wir haben Möglichkeiten, die Wahrheit zu erfahren. Schmerzhafte Möglichkeiten.
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Monastery_15_02"); //Nun, wir haben MÃ¶glichkeiten, die Wahrheit zu erfahren. Schmerzhafte MÃ¶glichkeiten.
 	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Monastery_13_03"); //Nein, bitte nicht. Ich werde alles sagen, was du willst.
 	
 	Cornelius_TellTruth = TRUE;
@@ -204,11 +204,11 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_Monastery()
 
 FUNC VOID DIA_Cornelius_DontBelieveYou_KnowYourHome()
 {
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_00"); //Ich könnte den Söldnern sagen, wo du wohnst.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_01"); //(kreidebleich) Was soll das heißen?
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_00"); //Ich kÃ¶nnte den SÃ¶ldnern sagen, wo du wohnst.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_01"); //(kreidebleich) Was soll das heiÃŸen?
 	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_02"); //Sie wollen dich bestimmt gerne kennen lernen. Sie sind ziemlich sauer.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_03"); //Das kannst du nicht machen, sie werden mich töten.
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_04"); //Das ist sehr gut möglich.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_03"); //Das kannst du nicht machen, sie werden mich tÃ¶ten.
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_04"); //Das ist sehr gut mÃ¶glich.
 	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_05"); //Ich sag alles, was du willst, aber das darfst du nicht tun.
 	
 	Cornelius_TellTruth = TRUE;
@@ -218,8 +218,8 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_KnowYourHome()
 FUNC VOID DIA_Cornelius_DontBelieveYou_Perjury()
 {
 	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Perjury_15_00"); //Auf Meineid steht Knast, langer Knast!
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Perjury_13_01"); //Du willst mir drohen? Ein kleiner Gardist will mir drohen? Mir, dem Sekretär des Statthalters?
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Perjury_13_02"); //Wenn du nicht sofort verschwindest, werde ich dafür sorgen, dass du degradiert wirst.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Perjury_13_01"); //Du willst mir drohen? Ein kleiner Gardist will mir drohen? Mir, dem SekretÃ¤r des Statthalters?
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Perjury_13_02"); //Wenn du nicht sofort verschwindest, werde ich dafÃ¼r sorgen, dass du degradiert wirst.
 	
 	Cornelius_ThreatenByMilSC = TRUE;
 	
@@ -256,7 +256,7 @@ FUNC VOID DIA_Cornelius_PayCornelius_Info()
 	
 	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_01"); //Ich frag dich besser nicht, wo du das her hast.
 	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_02"); //Um ehrlich zu sein, ist mir das auch egal.
-	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_03"); //Aber wir sind im Geschäft.
+	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_03"); //Aber wir sind im GeschÃ¤ft.
 	
 	Cornelius_TellTruth = TRUE;
 };
@@ -286,16 +286,16 @@ FUNC INT DIA_Cornelius_RealStory_Condition()
 FUNC VOID DIA_Cornelius_RealStory_Info()
 {
 	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_00"); //Was ist wirklich passiert?
-	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_01"); //Ich hab nicht gesehen, was passiert ist. Ich habe Gold bekommen. Dafür, dass ich den Söldner belaste.
+	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_01"); //Ich hab nicht gesehen, was passiert ist. Ich habe Gold bekommen. DafÃ¼r, dass ich den SÃ¶ldner belaste.
 	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_02"); //In diesen Zeiten muss jeder sehen, wo er bleibt. Ich brauchte das Geld.
 	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_03"); //Wer hat dich bezahlt?
-	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_04"); //Das reicht. Er wird mich töten, wenn ich ihn verrate.
-	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_05"); //Bist du bereit, das auch Lord Hagen zu erzählen?
-	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_06"); //Ich bin doch nicht verrückt, in der Stadt kann ich jetzt nicht mehr bleiben.
+	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_04"); //Das reicht. Er wird mich tÃ¶ten, wenn ich ihn verrate.
+	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_05"); //Bist du bereit, das auch Lord Hagen zu erzÃ¤hlen?
+	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_06"); //Ich bin doch nicht verrÃ¼ckt, in der Stadt kann ich jetzt nicht mehr bleiben.
 	
 	if (Npc_HasItems (self,ItWr_CorneliusTagebuch_Mis) >=1)
 	{
-		AI_Output (self ,other,"DIA_Cornelius_RealStory_13_07"); //Ich werde dir mein Tagebuch geben, das sollte als Beweis genügen.
+		AI_Output (self ,other,"DIA_Cornelius_RealStory_13_07"); //Ich werde dir mein Tagebuch geben, das sollte als Beweis genÃ¼gen.
 		B_GiveInvItems (self,other,ItWr_CorneliusTagebuch_Mis,1);
 	};
 	
@@ -348,7 +348,7 @@ INSTANCE DIA_Cornelius_PICKPOCKET (C_INFO)
 	condition	= DIA_Cornelius_PICKPOCKET_Condition;
 	information	= DIA_Cornelius_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre gewagt sein Buch zu stehlen)";
+	description = "(Es wÃ¤re gewagt sein Buch zu stehlen)";
 };                       
 
 FUNC INT DIA_Cornelius_PICKPOCKET_Condition()

@@ -12,7 +12,7 @@ func void ZS_ReactToDamage ()
 	
 	// FUNC 
 	
-	//kein AI_StandUp, nötig, da getroffener NSC auf jeden Fall steht
+	//kein AI_StandUp, nÃ¶tig, da getroffener NSC auf jeden Fall steht
 	B_LookAtNpc 	(self, other); 
 	B_SelectWeapon	(self, other);		
 	B_TurnToNpc 	(self, other);

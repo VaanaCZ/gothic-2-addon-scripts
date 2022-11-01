@@ -86,7 +86,7 @@ func int ZS_Study_WP_loop()
 				   ((eventrandy < 5) && (CurrentLevel == NEWWORLD_ZEN))
 				|| ((eventrandy == 1) && (CurrentLevel == ADDONWORLD_ZEN))
 				)
-				&& (self.guild == GIL_KDW)//Erdbeben überall wo die KDW herumhängen
+				&& (self.guild == GIL_KDW)//Erdbeben Ã¼berall wo die KDW herumhÃ¤ngen
 				&& (RavenIsDead == FALSE) 
 					{
 						B_EVENT_PORTAL_EARTHQUAKE ();			

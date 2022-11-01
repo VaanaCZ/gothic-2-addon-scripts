@@ -52,22 +52,22 @@ FUNC VOID DIA_Lester_DI_Hello_Info()
 	&& (ORkSturmDI  == TRUE)
 	&& (DIA_Lester_DI_SCGotWarning1 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Mario hat sich verdrückt, als die Orks angriffen. Trotz dem Chaos hier auf dem Schiff habe ich ihn genau beobachtet.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Mario hat sich verdrÃ¼ckt, als die Orks angriffen. Trotz dem Chaos hier auf dem Schiff habe ich ihn genau beobachtet.
 		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//Er ist einfach durch die Blockade der Orks marschiert und die Orks haben ihn unbehelligt vorbei gelassen.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Ich hatte gleich so ein komisches Gefühl, bei dem Dreckskerl. Er steckt mit dem Feind unter einer Decke.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Ich hatte gleich so ein komisches GefÃ¼hl, bei dem Dreckskerl. Er steckt mit dem Feind unter einer Decke.
 		B_GivePlayerXP (XP_Ambient);
 		DIA_Lester_DI_SCGotWarning1 = TRUE;
 	}
 	else if (Npc_IsDead(Mario_DI) == FALSE)
 	&& (DIA_Lester_DI_SCGotWarning2 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_04");	//Dieser merkwürdige Kerl, der sich Mario nennt, ist mir nicht geheuer. Er strahlt so eine böse Aura aus.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_05");	//Pass auf deinen Rücken auf, mein Freund.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_04");	//Dieser merkwÃ¼rdige Kerl, der sich Mario nennt, ist mir nicht geheuer. Er strahlt so eine bÃ¶se Aura aus.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_05");	//Pass auf deinen RÃ¼cken auf, mein Freund.
 		DIA_Lester_DI_SCGotWarning2 = TRUE;
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//Im Moment nichts. Vielleicht später.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//Im Moment nichts. Vielleicht spÃ¤ter.
 	};
 };
 
@@ -96,8 +96,8 @@ FUNC INT DIA_Lester_DI_MarioArsch_Condition()
 FUNC VOID DIA_Lester_DI_MarioArsch_Info()
 {	
 	AI_Output	(other ,self,"DIA_Lester_DI_MarioArsch_15_00");	//Du hattest recht. Mario hat uns verraten.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//Ja. Ich merke ja sonst nichts, aber dieser Fall war klar für mich.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//Sei in Zukunft ein bisschen sorgfältiger bei der Wahl deiner Gefährten.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//Ja. Ich merke ja sonst nichts, aber dieser Fall war klar fÃ¼r mich.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//Sei in Zukunft ein bisschen sorgfÃ¤ltiger bei der Wahl deiner GefÃ¤hrten.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -135,7 +135,7 @@ FUNC VOID DIA_PC_Lester_DI_UndeadDragonDead_Info()
 				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //Meine Kopfschmerzen sind wie weg geblasen.
 				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_02"); //Wie hast du das angestellt?
 				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_03"); //Ich habe den Feind vernichtet.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //Es muss etwas sehr Mächtiges gewesen sein. Was war es denn nun genau?
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //Es muss etwas sehr MÃ¤chtiges gewesen sein. Was war es denn nun genau?
 				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_05"); //Ein untoter Drache.
 			};
 	
@@ -147,7 +147,7 @@ FUNC VOID DIA_PC_Lester_DI_UndeadDragonDead_Info()
 			};
 		DIA_PC_Lester_DI_UndeadDragonDead_OneTime = TRUE;
 	};
-	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //Hoffentlich passiert so etwas nie wieder. Soviel Sumpfkraut gibt es gar nicht, wie ich jetzt gerne rauchen würde.
+	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //Hoffentlich passiert so etwas nie wieder. Soviel Sumpfkraut gibt es gar nicht, wie ich jetzt gerne rauchen wÃ¼rde.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");		
 };

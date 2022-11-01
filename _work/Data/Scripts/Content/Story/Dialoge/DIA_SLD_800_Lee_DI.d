@@ -31,7 +31,7 @@ instance DIA_Lee_DI_Hallo		(C_INFO)
 	condition	 = 	DIA_Lee_DI_Hallo_Condition;
 	information	 = 	DIA_Lee_DI_Hallo_Info;
 
-	description	 = 	"Welche Aufgabe willst du übernehmen?";
+	description	 = 	"Welche Aufgabe willst du Ã¼bernehmen?";
 };
 func int DIA_Lee_DI_Hallo_Condition ()
 {	
@@ -43,8 +43,8 @@ func int DIA_Lee_DI_Hallo_Condition ()
 
 func void DIA_Lee_DI_Hallo_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //Welche Aufgabe willst du übernehmen?
-	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Jemand muss auf das Schiff achten. Ich werde hier bleiben und dafür sorgen, dass es bei deiner Rückkehr auch noch da ist.
+	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //Welche Aufgabe willst du Ã¼bernehmen?
+	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Jemand muss auf das Schiff achten. Ich werde hier bleiben und dafÃ¼r sorgen, dass es bei deiner RÃ¼ckkehr auch noch da ist.
 	
 };
 
@@ -82,7 +82,7 @@ func void DIA_Lee_DI_PERM6_Info ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Alles in Ordnung! Die elenden Orks sollen ruhig wieder kommen. Dann kriegen sie ihre nächste Abreibung.
+		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Alles in Ordnung! Die elenden Orks sollen ruhig wieder kommen. Dann kriegen sie ihre nÃ¤chste Abreibung.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -158,7 +158,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 100))
 	{
-		AI_Output(self,other,"DIA_DIA_Lee_DI_Teach_2H_1_04_00"); //Denk immer daran, der Schwung kommt aus der Hüfte, nicht aus dem Handgelenk.
+		AI_Output(self,other,"DIA_DIA_Lee_DI_Teach_2H_1_04_00"); //Denk immer daran, der Schwung kommt aus der HÃ¼fte, nicht aus dem Handgelenk.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -200,7 +200,7 @@ instance DIA_Lee_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Lee_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Wir können jetzt wieder aufbrechen.";
+	description = 	"Wir kÃ¶nnen jetzt wieder aufbrechen.";
 };
 
 func int DIA_Lee_DI_UndeadDragonDead_Condition ()
@@ -214,16 +214,16 @@ func int DIA_Lee_DI_UndeadDragonDead_Condition ()
 var int DIA_Lee_DI_UndeadDragonDead_OneTime;
 func void DIA_Lee_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //Wir können jetzt wieder aufbrechen. Der Feind ist tot.
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //Sehr gut. Dann sag dem Kapitän, dass er ablegen soll.
+	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //Wir kÃ¶nnen jetzt wieder aufbrechen. Der Feind ist tot.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //Sehr gut. Dann sag dem KapitÃ¤n, dass er ablegen soll.
 
 	if (DIA_Lee_DI_UndeadDragonDead_OneTime == FALSE)
 	&& (hero.guild == GIL_DJG)
 		{
 			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Du bringst mich doch noch zum Festland, oder?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Ja. Khorinis wird auch ohne dich auskommen.
-			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem König endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
-			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Dann kann ich dem König endlich meine lang ersehnte Aufwartung machen.
+			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem KÃ¶nig endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
+			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Dann kann ich dem KÃ¶nig endlich meine lang ersehnte Aufwartung machen.
 			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //Ich habe lange darauf gewartet...
 			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Was meinst du? Sollte es sich am Ende doch noch bezahlt gemacht haben, Geduld zu bewahren?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //Geduld und die passenden Argumente.
@@ -231,7 +231,7 @@ func void DIA_Lee_DI_UndeadDragonDead_Info ()
 			DIA_Lee_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //Mögen sich unsere Wege auch nach diesem Abenteuer irgendwann einmal wieder kreuzen.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //MÃ¶gen sich unsere Wege auch nach diesem Abenteuer irgendwann einmal wieder kreuzen.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

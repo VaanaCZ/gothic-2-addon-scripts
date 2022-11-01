@@ -75,10 +75,10 @@ FUNC INT DIA_NONE_101_MARIO_DI_ambush_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_ambush_Info()
 {
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //Komm ruhig n‰her. So, mein Freundchen. Jetzt zeig mal, was du kannst.
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Was soll das heiﬂen?
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //Ganz einfach. Der Meister hat von dir gehˆrig die Nase voll.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //Ich h‰tte schon viel fr¸her tˆten sollen. Aber diesen Fehler werden ich und meine Freunde hier jetzt korrigieren.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //Komm ruhig n√§her. So, mein Freundchen. Jetzt zeig mal, was du kannst.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Was soll das hei√üen?
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //Ganz einfach. Der Meister hat von dir geh√∂rig die Nase voll.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //Ich h√§tte schon viel fr√ºher t√∂ten sollen. Aber diesen Fehler werden ich und meine Freunde hier jetzt korrigieren.
 	
 	Info_ClearChoices	(DIA_NONE_101_MARIO_DI_ambush);
 	Info_AddChoice	(DIA_NONE_101_MARIO_DI_ambush, DIALOG_ENDE, DIA_NONE_101_MARIO_DI_ambush_ambush );

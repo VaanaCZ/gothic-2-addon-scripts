@@ -79,7 +79,7 @@ func void DIA_PAL_205_Torwache_FirstWarn_Info()
 	{
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_01"); //Ich würde meine höchste Pflicht verletzen, wenn ich einem Mörder Zutritt gewähre.
+			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_01"); //Ich wÃ¼rde meine hÃ¶chste Pflicht verletzen, wenn ich einem MÃ¶rder Zutritt gewÃ¤hre.
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
@@ -89,7 +89,7 @@ func void DIA_PAL_205_Torwache_FirstWarn_Info()
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_03"); //Du bist als Schläger bekannt. Ich werde dich nicht durchlassen.
+			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_03"); //Du bist als SchlÃ¤ger bekannt. Ich werde dich nicht durchlassen.
 		};
 	
 		AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_04"); //Geh zu Lord Andre und regele die Sache!
@@ -98,7 +98,7 @@ func void DIA_PAL_205_Torwache_FirstWarn_Info()
 	// ------ normales Reinkommen ------
 	else 
 	{
-		AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_05"); //Nur Männer, die im Dienste des Königs stehen, haben Zutritt zum Rathaus.
+		AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_05"); //Nur MÃ¤nner, die im Dienste des KÃ¶nigs stehen, haben Zutritt zum Rathaus.
 	};
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,PAL_205_Checkpoint);
@@ -200,7 +200,7 @@ FUNC INT DIA_PAL_205_Torwache_Hagen_Condition()
 FUNC VOID DIA_PAL_205_Torwache_Hagen_Info()
 {
 	AI_Output (other, self,"DIA_PAL_205_Torwache_Hagen_15_00"); //Ich muss mit Lord Hagen sprechen!
-	AI_Output (self, other,"DIA_PAL_205_Torwache_Hagen_12_01"); //Weißt du, wie oft ich das schon gehört habe? Du kannst nicht rein. Wenn du es trotzdem versuchen solltest, muss ich dich töten.
+	AI_Output (self, other,"DIA_PAL_205_Torwache_Hagen_12_01"); //WeiÃŸt du, wie oft ich das schon gehÃ¶rt habe? Du kannst nicht rein. Wenn du es trotzdem versuchen solltest, muss ich dich tÃ¶ten.
 	 
 	
 	AI_StopProcessInfos(self);
@@ -216,7 +216,7 @@ INSTANCE DIA_PAL_205_Torwache_PassAsMil (C_INFO)
 	condition	= DIA_PAL_205_Torwache_PassAsMil_Condition;
 	information	= DIA_PAL_205_Torwache_PassAsMil_Info;
 	permanent 	= TRUE; 
-	description	= "Ich gehöre zur Miliz.";
+	description	= "Ich gehÃ¶re zur Miliz.";
 };                       
 
 FUNC INT DIA_PAL_205_Torwache_PassAsMil_Condition()
@@ -231,7 +231,7 @@ FUNC INT DIA_PAL_205_Torwache_PassAsMil_Condition()
 
 FUNC VOID DIA_PAL_205_Torwache_PassAsMil_Info()
 {
-	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsMil_15_00"); //Ich gehöre zur Miliz.
+	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsMil_15_00"); //Ich gehÃ¶re zur Miliz.
 	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMil_12_01"); //Alles klar, du kannst rein.
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
@@ -266,14 +266,14 @@ FUNC INT DIA_PAL_205_Torwache_PassAsMage_Condition()
 FUNC VOID DIA_PAL_205_Torwache_PassAsMage_Info()
 {
 	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsMage_15_00"); //Ich bin ein Magier des Feuers.
-	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMage_12_01"); //Ja, natürlich. Verzeiht mir, Erwählter, aber ich erfülle hier nur meine Pflicht.
+	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMage_12_01"); //Ja, natÃ¼rlich. Verzeiht mir, ErwÃ¤hlter, aber ich erfÃ¼lle hier nur meine Pflicht.
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	PAL_205_schonmalreingelassen = TRUE;
 	AI_StopProcessInfos	(self);
 };
 // ************************************************************
-// 						Pass as SÖLDNER
+// 						Pass as SÃ–LDNER
 // ************************************************************
 
 INSTANCE DIA_PAL_205_Torwache_PassAsSld (C_INFO)
@@ -283,7 +283,7 @@ INSTANCE DIA_PAL_205_Torwache_PassAsSld (C_INFO)
 	condition	= DIA_PAL_205_Torwache_PassAsSld_Condition;
 	information	= DIA_PAL_205_Torwache_PassAsSld_Info;
 	permanent 	= TRUE; 
-	description	= "Lass mich durch, ich komme als Bote der Söldner.";
+	description	= "Lass mich durch, ich komme als Bote der SÃ¶ldner.";
 };                       
 
 FUNC INT DIA_PAL_205_Torwache_PassAsSld_Condition()
@@ -298,8 +298,8 @@ FUNC INT DIA_PAL_205_Torwache_PassAsSld_Condition()
 
 FUNC VOID DIA_PAL_205_Torwache_PassAsSld_Info()
 {
-	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsSld_15_00"); //Lass mich durch, ich komme als Bote der Söldner.
-	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsSld_12_01"); //Na schön, aber ich warne dich. Wenn du hier Ärger machst, wirst du keine Zeit mehr haben, es zu bereuen.
+	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsSld_15_00"); //Lass mich durch, ich komme als Bote der SÃ¶ldner.
+	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsSld_12_01"); //Na schÃ¶n, aber ich warne dich. Wenn du hier Ã„rger machst, wirst du keine Zeit mehr haben, es zu bereuen.
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	PAL_205_schonmalreingelassen = TRUE;
@@ -339,7 +339,7 @@ FUNC VOID DIA_PAL_205_Torwache_PERM_Info()
 	}
 	else if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other,"DIA_PAL_205_Torwache_PERM_12_02"); //Meine Aufgabe erfüllt mich, Erwählter.
+		AI_Output (self, other,"DIA_PAL_205_Torwache_PERM_12_02"); //Meine Aufgabe erfÃ¼llt mich, ErwÃ¤hlter.
 	}
 	else if (other.guild == GIL_SLD)
 	||		(other.guild == GIL_DJG)

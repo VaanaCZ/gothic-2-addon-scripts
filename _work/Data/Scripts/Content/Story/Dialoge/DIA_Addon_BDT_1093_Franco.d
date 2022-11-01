@@ -19,7 +19,7 @@ FUNC VOID DIA_Addon_Franco_EXIT_Info()
 	if (Franco_Exit == FALSE)
 	&& (MIS_HlpLogan == LOG_RUNNING)
 	{
-		AI_Output(self,other,"DIA_Addon_Franco_EXIT_08_00");//Verlauf dich nicht, sonst endest du noch als Futter f¸r die Haie.
+		AI_Output(self,other,"DIA_Addon_Franco_EXIT_08_00");//Verlauf dich nicht, sonst endest du noch als Futter f√ºr die Haie.
 		Franco_Exit = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -34,7 +34,7 @@ INSTANCE DIA_Franco_PICKPOCKET (C_INFO)
 	condition	= DIA_Franco_PICKPOCKET_Condition;
 	information	= DIA_Franco_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re gewagt sein Amulett zu stehlen)";
+	description = "(Es w√§re gewagt sein Amulett zu stehlen)";
 };                       
 
 FUNC INT DIA_Franco_PICKPOCKET_Condition()
@@ -104,13 +104,13 @@ FUNC VOID DIA_Addon_Franco_HI_Info()
 	
 	AI_Output (self,other,"DIA_Addon_Franco_HI_08_00");//Hey, was willst du hier? Willst du ins Lager?
 	AI_Output (other,self,"DIA_Addon_Franco_HI_15_01");//Ja, ich bin ...
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//Interessiert mich nicht, wer du bist. Ich bin Franco, ich bin hier der Anf¸hrer.
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Also, wenn du hier drauﬂen einen guten Job machst, bringe ich dich ins Lager.
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//Interessiert mich nicht, wer du bist. Ich bin Franco, ich bin hier der Anf√ºhrer.
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Also, wenn du hier drau√üen einen guten Job machst, bringe ich dich ins Lager.
 	
 	if (Ramon_News == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Ramon, der Torw‰chter, wird dir sagen, ob sie im Lager neue Leute brauchen. Sprich mit ihm.
-		B_LogEntry (Topic_Addon_Franco,"Ich soll Ramon, den Torw‰chter fragen ob sie im Lager neue Leute brauchen.");
+		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Ramon, der Torw√§chter, wird dir sagen, ob sie im Lager neue Leute brauchen. Sprich mit ihm.
+		B_LogEntry (Topic_Addon_Franco,"Ich soll Ramon, den Torw√§chter fragen ob sie im Lager neue Leute brauchen.");
 	};
 };
 //---------------------------------------------------------------------
@@ -136,11 +136,11 @@ FUNC VOID DIA_Addon_Franco_Hai_Info()
 {	
 	
 	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_00");//Thorus braucht einen neuen Mann.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_01");//Gut. Ich werde mich darum k¸mmern.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_01");//Gut. Ich werde mich darum k√ºmmern.
 	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_02");//Moment, was ist mit mir?
 	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_03");//Du hast noch nichts geleistet.
-	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_04");//Ich hab schon 'ne Menge geleistet, nur weiﬂt DU nichts davon ...
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_05");//Okay, du willst eine Chance? Du kriegst deine Chance. Schwing deinen Hintern zu Logan. Die Sumpfhaie r¸cken ihm zu sehr auf die Pelle.
+	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_04");//Ich hab schon 'ne Menge geleistet, nur wei√üt DU nichts davon ...
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_05");//Okay, du willst eine Chance? Du kriegst deine Chance. Schwing deinen Hintern zu Logan. Die Sumpfhaie r√ºcken ihm zu sehr auf die Pelle.
 	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_06");//Hilf ihm, mit den Viechern fertig zu werden, dann bist du schon so gut wie im Lager.
 	
 	B_LogEntry (Topic_Addon_Franco,"Franco will, das ich Logan helfe, bevor er mich in's Lager schickt.");
@@ -169,7 +169,7 @@ FUNC INT DIA_Addon_Franco_Wo_Condition()
 FUNC VOID DIA_Addon_Franco_Wo_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_Wo_15_00");//Wo finde ich Logan?
-	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Wenn du vorm Lagereingang stehst, geh an der Felswand links entlang. Es ist ein St¸ck weit im Sumpf.
+	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Wenn du vorm Lagereingang stehst, geh an der Felswand links entlang. Es ist ein St√ºck weit im Sumpf.
 	AI_StopProcessInfos (self);
 };
 //---------------------------------------------------------------------
@@ -196,7 +196,7 @@ FUNC INT DIA_Addon_Franco_tot_Condition()
 FUNC VOID DIA_Addon_Franco_tot_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_tot_15_00");//Logan ist tot.
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Verdammt. Er war der beste J‰ger, den wir drauﬂen hatten. Verfluchter Mist.
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Verdammt. Er war der beste J√§ger, den wir drau√üen hatten. Verfluchter Mist.
 	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//Wie dem auch sei, ich habe schon jemand anders ins Lager geschickt.
 	
 	if (MIS_HlpLogan == LOG_RUNNING)
@@ -231,9 +231,9 @@ FUNC VOID DIA_Addon_Franco_HaiSuccess_Info()
 	
 	if Npc_IsDead (Logan)
 	{
-		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//... aber er hat's nicht ¸berlebt.
+		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//... aber er hat's nicht √ºberlebt.
 	};
-	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//Okay, du hast gegen die Sumpfhaie gek‰mpft - du bist zu gebrauchen - zumindest mehr, als die meisten Typen hier.
+	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//Okay, du hast gegen die Sumpfhaie gek√§mpft - du bist zu gebrauchen - zumindest mehr, als die meisten Typen hier.
 	B_GivePlayerXP (XP_Addon_HlpLogan);
 	
 	B_LogEntry (Topic_Addon_Franco,"Das ich Logan geholfen habe, reicht nicht, damit Franco mich in's Lager schickt. ");
@@ -262,7 +262,7 @@ FUNC INT DIA_Addon_Franco_Mis2_Condition()
 FUNC VOID DIA_Addon_Franco_Mis2_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_MIS2_15_00");//Also kann ich jetzt ins Lager?
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_01");//Pass auf - es gibt da noch eine Sache, f¸r die ich dich brauche.
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_01");//Pass auf - es gibt da noch eine Sache, f√ºr die ich dich brauche.
 	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_02");//Vor ein paar Tagen habe ich Edgor in den Sumpf geschickt.
 	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_03");//Er sollte mir eine alte Steintafel besorgen - aber seitdem hat er sich nicht mehr blicken lassen.
 	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_04");//Sieh nach, was er treibt, und bring mir diese verdammte Steintafel.
@@ -271,7 +271,7 @@ FUNC VOID DIA_Addon_Franco_Mis2_Info()
 	
 	Log_CreateTopic (Topic_Addon_Stoneplate,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Stoneplate,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Stoneplate,"Franco will eine Steintafel haben, die Edgor ihm bringen sollte. Jetzt soll ich mich darum k¸mmern.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Franco will eine Steintafel haben, die Edgor ihm bringen sollte. Jetzt soll ich mich darum k√ºmmern.");
 	
 	B_LogEntry (Topic_Addon_Franco,"Franco will, das ich jetzt Edgor helfe, bevor er mich in's Lager schickt.");
 };
@@ -299,10 +299,10 @@ FUNC VOID DIA_Addon_Franco_While_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_While_15_00");//Wie sieht's aus mit Gold?
 	AI_Output (self,other,"DIA_Addon_Franco_While_08_01");//Was?
-	AI_Output (other,self,"DIA_Addon_Franco_While_15_02");//Kriege ich auch was f¸r meine Arbeit hier im Sumpf?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(superfreundlich) Du willst Gold? Klar, wie viel willst du? F¸nfzig Goldbrocken? Hundert? Ich gebe dir soviel Gold, wie du tragen kannst ...
+	AI_Output (other,self,"DIA_Addon_Franco_While_15_02");//Kriege ich auch was f√ºr meine Arbeit hier im Sumpf?
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(superfreundlich) Du willst Gold? Klar, wie viel willst du? F√ºnfzig Goldbrocken? Hundert? Ich gebe dir soviel Gold, wie du tragen kannst ...
 	AI_Output (self,other,"DIA_Addon_Franco_While_08_04");//(laut) Was glaubst du, wer du bist? Willst du mich verarschen?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//Jetzt schieb ab und tu was!  Sonst gibt's nicht mal einen GOLDKR‹MEL f¸r dich!!
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//Jetzt schieb ab und tu was!  Sonst gibt's nicht mal einen GOLDKR√úMEL f√ºr dich!!
 	AI_StopProcessInfos(self);
 };
 
@@ -333,19 +333,19 @@ FUNC VOID DIA_Addon_Franco_WOEDGOR_Info()
 	
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
 	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Ich nehme den schnellen." ,DIA_Addon_Franco_WOEDGOR_Fast);
-	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Erkl‰r mir den einfachen Weg." ,DIA_Addon_Franco_WOEDGOR_Easy);
+	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Erkl√§r mir den einfachen Weg." ,DIA_Addon_Franco_WOEDGOR_Easy);
 };
 
 func void B_Addon_Franco_There()
 {
-	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Da sind ¸berall Ruinen. Irgendwo dort sitzt er rum.
+	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Da sind √ºberall Ruinen. Irgendwo dort sitzt er rum.
 	AI_Output (self,other,"DIA_Addon_Franco_There_08_01"); //Ich denke mal, er war schlau genug, sich ein Feuer anzumachen, DAS wirst du ja wohl finden.
 };
 
 func void DIA_Addon_Franco_WOEDGOR_Easy()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Erkl‰r mir den einfachen Weg.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Folge dem Steg bis zum vorderen Tor. Da m¸sste Sancho stehen.
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Erkl√§r mir den einfachen Weg.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Folge dem Steg bis zum vorderen Tor. Da m√ºsste Sancho stehen.
 	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Geh dort links und folge dem Steg.
 	
 	B_Addon_Franco_There();
@@ -355,7 +355,7 @@ func void DIA_Addon_Franco_WOEDGOR_Easy()
 func void DIA_Addon_Franco_WOEDGOR_Fast()
 {
 	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //Ich nehme den schnellen.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //Okay. Geh von hier aus schr‰g links am Steg vorbei in den Sumpf.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //Okay. Geh von hier aus schr√§g links am Steg vorbei in den Sumpf.
 	
 	B_Addon_Franco_There();
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
@@ -428,10 +428,10 @@ FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//Nein, ich habe bereits jemand anderen geschickt.
 	};
 	
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//Und f¸r einen weiteren Mann ist zurzeit kein Bedarf im Lager.
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//Auﬂerdem kann ich dich hier gut gebrauchen, (grinst) jetzt, wo Logan nicht mehr da ist.
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//Und f√ºr einen weiteren Mann ist zurzeit kein Bedarf im Lager.
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//Au√üerdem kann ich dich hier gut gebrauchen, (grinst) jetzt, wo Logan nicht mehr da ist.
 		
-	B_LogEntry (Topic_Addon_Franco,"Franco schickt mich nicht ins Lager. Ich glaube ich muss das Franco - Problem aus dem Weg r‰umen...");
+	B_LogEntry (Topic_Addon_Franco,"Franco schickt mich nicht ins Lager. Ich glaube ich muss das Franco - Problem aus dem Weg r√§umen...");
 };
 
 //---------------------------------------------------------------------
@@ -453,17 +453,17 @@ FUNC INT DIA_Addon_Franco_Fight_Condition()
 FUNC VOID DIA_Addon_Franco_Fight_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_Fight_15_00"); //Schick mich JETZT rein!
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_08_01"); //(gef‰hrlich freundlich) Und was, wenn ich nein sage?
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_08_01"); //(gef√§hrlich freundlich) Und was, wenn ich nein sage?
 	
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
-	Info_AddChoice (DIA_Addon_Franco_Fight, "Dann warte ich eben noch ein biﬂchen..." ,DIA_Addon_Franco_Fight_Nothing);
+	Info_AddChoice (DIA_Addon_Franco_Fight, "Dann warte ich eben noch ein bi√üchen..." ,DIA_Addon_Franco_Fight_Nothing);
 	Info_AddChoice (DIA_Addon_Franco_Fight, "Dann wirst du es eben bereuen." ,DIA_Addon_Franco_Fight_Duel);
 };
 
 func void DIA_Addon_Franco_Fight_Duel()
 {
 	AI_Output (other,self,"DIA_Addon_Franco_Fight_Duel_15_00"); //Dann wirst du es eben bereuen.
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Willst du mir drohen? DU? Willst MIR drohen? - Es ist wohl Zeit f¸r eine Lektion ...
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Willst du mir drohen? DU? Willst MIR drohen? - Es ist wohl Zeit f√ºr eine Lektion ...
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -472,7 +472,7 @@ func void DIA_Addon_Franco_Fight_Duel()
 func void DIA_Addon_Franco_Fight_Nothing()
 {
 	AI_Output (other,self,"DIA_Addon_Franco_Fight_Nothing_15_00"); //Dann warte ich eben noch ein bisschen ...
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_Nothing_08_01"); //(spˆttisch) Genau.
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_Nothing_08_01"); //(sp√∂ttisch) Genau.
 	
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
@@ -500,7 +500,7 @@ FUNC INT DIA_Addon_Franco_Pig_Condition()
 FUNC VOID DIA_Addon_Franco_Pig_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_Pig_15_00");//Du Schwein! Ich mach dich fertig!
-	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//(gepreﬂt) Du mieser kleiner Wicht willst dich mit MIR anlegen? Na warte!
+	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//(gepre√üt) Du mieser kleiner Wicht willst dich mit MIR anlegen? Na warte!
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);

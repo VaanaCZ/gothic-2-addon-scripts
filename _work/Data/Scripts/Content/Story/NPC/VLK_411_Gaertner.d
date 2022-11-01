@@ -2,7 +2,7 @@
 instance VLK_411_Gaertner (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gärtner";
+	name 		= "GÃ¤rtner";
 	guild 		= GIL_VLK;
 	id 			= 411;
 	voice 		= 9;
@@ -19,7 +19,7 @@ instance VLK_411_Gaertner (Npc_Default)
 	EquipItem (self, ItMw_1h_Bau_Axe);
 	
 	// ------ Inventory ------
-	//Händler
+	//HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Psionic", Face_N_NormalBart_Graham, BodyTex_N, ITAR_BAU_M);	

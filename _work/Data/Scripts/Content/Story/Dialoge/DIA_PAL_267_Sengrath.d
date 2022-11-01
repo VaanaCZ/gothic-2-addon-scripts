@@ -42,10 +42,10 @@ FUNC INT DIA_Sengrath_Hello_Condition()
 FUNC VOID DIA_Sengrath_Hello_Info()
 {	
 	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //Ich hab's gewusst! Ich wusste, einer wird es schaffen!
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Bist du über den Pass gekommen? Dann hat unser Bote es geschafft und ist durchgekommen?
-	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //Nein, euer Bote hat es nicht über den Pass geschafft. Ich komme im Auftrag von Lord Hagen.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Bist du Ã¼ber den Pass gekommen? Dann hat unser Bote es geschafft und ist durchgekommen?
+	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //Nein, euer Bote hat es nicht Ã¼ber den Pass geschafft. Ich komme im Auftrag von Lord Hagen.
 	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(knurrt) Verfluchte Orks ...
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Nun, Kommandant Garond wird sicher mit dir sprechen wollen. Du findest ihn im großen Haus, das von zwei Rittern bewacht wird.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Nun, Kommandant Garond wird sicher mit dir sprechen wollen. Du findest ihn im groÃŸen Haus, das von zwei Rittern bewacht wird.
 };
 // ************************************************************
 // 			  	Equipment 
@@ -57,7 +57,7 @@ INSTANCE DIA_Sengrath_Equipment (C_INFO)
 	condition	= DIA_Sengrath_Equipment_Condition;
 	information	= DIA_Sengrath_Equipment_Info;
 	permanent	= FALSE;
-	description = "Wo gibt's hier Ausrüstung?";
+	description = "Wo gibt's hier AusrÃ¼stung?";
 };                       
 
 FUNC INT DIA_Sengrath_Equipment_Condition()
@@ -66,8 +66,8 @@ FUNC INT DIA_Sengrath_Equipment_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Equipment_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Wo gibt's hier Ausrüstung?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //Tandor gibt die Waffen raus. Für alles andere ist Engor, der Verwalter, zuständig.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Wo gibt's hier AusrÃ¼stung?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //Tandor gibt die Waffen raus. FÃ¼r alles andere ist Engor, der Verwalter, zustÃ¤ndig.
 	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //Was ist mit magischem Bedarf?
 	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //Wir sind mit Spruchrollen ausgestattet worden. Wenn du welche haben willst, lass es mich wissen.
 	

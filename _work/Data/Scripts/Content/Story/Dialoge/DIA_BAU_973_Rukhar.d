@@ -43,7 +43,7 @@ func int DIA_Rukhar_HALLO_Condition ()
 func void DIA_Rukhar_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_HALLO_15_00"); //Ist das Bier gut hier?
-	AI_Output			(self, other, "DIA_Rukhar_HALLO_12_01"); //Es ist nicht das gerade das Beste, aber in diesen grauen Tagen darf man nicht wählerisch sein.
+	AI_Output			(self, other, "DIA_Rukhar_HALLO_12_01"); //Es ist nicht das gerade das Beste, aber in diesen grauen Tagen darf man nicht wÃ¤hlerisch sein.
 
 };
 
@@ -71,7 +71,7 @@ func int DIA_Rukhar_WASMACHSTDU_Condition ()
 func void DIA_Rukhar_WASMACHSTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_WASMACHSTDU_15_00"); //Was machst du hier?
-	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_01"); //Bis vor ein paar Wochen habe ich noch auf den Feldern des Großbauern geschuftet.
+	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_01"); //Bis vor ein paar Wochen habe ich noch auf den Feldern des GroÃŸbauern geschuftet.
 	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_02"); //Irgendwann ist es mir einfach zu bunt geworden und ich habe mich kurzerhand aus dem Staub gemacht.
 	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_03"); //Jetzt bin ich mein eigener Herr. Alles, was ich besitze, ist in dieser Truhe hier. Und mehr brauche ich auch nicht.
 	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_04"); //Interessiert an einem kleinen Wettkampf?
@@ -92,7 +92,7 @@ instance DIA_Rukhar_WETTKAMPF		(C_INFO)
 	condition	 = 	DIA_Rukhar_WETTKAMPF_Condition;
 	information	 = 	DIA_Rukhar_WETTKAMPF_Info;
 
-	description	 = 	"Was für ein Wettkampf soll das sein?";
+	description	 = 	"Was fÃ¼r ein Wettkampf soll das sein?";
 };
 
 func int DIA_Rukhar_WETTKAMPF_Condition ()
@@ -105,12 +105,12 @@ func int DIA_Rukhar_WETTKAMPF_Condition ()
 
 func void DIA_Rukhar_WETTKAMPF_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_00"); //Was für ein Wettkampf soll das sein?
+	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_00"); //Was fÃ¼r ein Wettkampf soll das sein?
 	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_01"); //Ich nenne es LEERE DEN KRUG IN EINEM ZUG.
 	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_02"); //Die Regeln sind ganz einfach.
 	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_03"); //Wir bestellen beim Wirt abwechselnd jeder einen Krug mit dem besten Bier, das der alte Zausel zu bieten hat.
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_04"); //Jeder Krug ist bis auf den Boden leer zu trinken, so dass er nicht einmal mehr einen Ring hinterlässt, wenn man ihn umgekehrt auf den Tisch stellt.
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_05"); //Derjenige, der als letzter noch steht, hat gewonnen. Der Verlierer zahlt Zeche und Einsatz. Na? Wie wär's?
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_04"); //Jeder Krug ist bis auf den Boden leer zu trinken, so dass er nicht einmal mehr einen Ring hinterlÃ¤sst, wenn man ihn umgekehrt auf den Tisch stellt.
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_05"); //Derjenige, der als letzter noch steht, hat gewonnen. Der Verlierer zahlt Zeche und Einsatz. Na? Wie wÃ¤r's?
 	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_06"); //Ein anderes Mal vielleicht, wenn ich mehr Zeit habe.
 
 };
@@ -139,8 +139,8 @@ func int DIA_Rukhar_HOLERANDOLPH_Condition ()
 func void DIA_Rukhar_HOLERANDOLPH_Info ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_HOLERANDOLPH_15_00"); //Kann ich auch auf jemand anderen setzen?
-	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_01"); //Sicherlich. Wenn du es schaffst, dass endlich mal jemand den Mut hat, gegen mich anzutreten, dann würde ich mit dir wetten.
-	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_02"); //Jeder zahlt den gleichen Betrag in einen Topf. Wer gewinnt, bekommt alles. Wie hoch dein Einsatz ist, das hängt von deinem Geldbeutel ab.
+	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_01"); //Sicherlich. Wenn du es schaffst, dass endlich mal jemand den Mut hat, gegen mich anzutreten, dann wÃ¼rde ich mit dir wetten.
+	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_02"); //Jeder zahlt den gleichen Betrag in einen Topf. Wer gewinnt, bekommt alles. Wie hoch dein Einsatz ist, das hÃ¤ngt von deinem Geldbeutel ab.
 	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_03"); //Bring mir jemanden, der es wagt, gegen mich anzutreten, und du hast deine Wette.
 	B_LogEntry (TOPIC_Wettsaufen,"Rukhar nennt sein kleines Spielchen, LEERE DEN KRUG IN EINEM ZUG. Kein Interesse. Ich werde ihm jemanden anderes suchen, den er verarschen kann."); 
 
@@ -181,7 +181,7 @@ func void DIA_Rukhar_RANDOLPHWILL_Info ()
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_15_02"); //Randolph.
 	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_03"); //Hoho. Randolph, der Aufschneider? Na gut. Warum nicht.
 	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_04"); //Schick den Knilch zu mir und der Deal steht.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_05"); //Spätestens 2 Tage später kannst du ihn wieder abholen. Wer weiß? Vielleicht hast du ja Glück und er steht dann wieder.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_05"); //SpÃ¤testens 2 Tage spÃ¤ter kannst du ihn wieder abholen. Wer weiÃŸ? Vielleicht hast du ja GlÃ¼ck und er steht dann wieder.
 	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_06"); //Wie hoch ist dein Einsatz?
 
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
@@ -190,7 +190,7 @@ func void DIA_Rukhar_RANDOLPHWILL_Info ()
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "100", DIA_Rukhar_RANDOLPHWILL_100 );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "50", DIA_Rukhar_RANDOLPHWILL_50 );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "20", DIA_Rukhar_RANDOLPHWILL_20 );
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "10 Goldmünzen", DIA_Rukhar_RANDOLPHWILL_10 );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "10 GoldmÃ¼nzen", DIA_Rukhar_RANDOLPHWILL_10 );
 };
 func void DIA_Rukhar_RANDOLPHWILL_annehmen ()
 {
@@ -207,7 +207,7 @@ func void DIA_Rukhar_RANDOLPHWILL_mehr ()
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "100", DIA_Rukhar_RANDOLPHWILL_100 );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "50", DIA_Rukhar_RANDOLPHWILL_50 );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "20", DIA_Rukhar_RANDOLPHWILL_20 );
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "10 Goldmünzen", DIA_Rukhar_RANDOLPHWILL_10 );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "10 GoldmÃ¼nzen", DIA_Rukhar_RANDOLPHWILL_10 );
 };
 
 
@@ -221,27 +221,27 @@ func void DIA_Rukhar_RANDOLPHWILL_nix ()
 
 func void DIA_Rukhar_RANDOLPHWILL_10 ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_10_15_00"); //10 Goldmünzen
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_10_12_01"); //Komm schon, das ist doch nicht dein Ernst. Ein paar Münzen mehr könnten es schon sein.
+	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_10_15_00"); //10 GoldmÃ¼nzen
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_10_12_01"); //Komm schon, das ist doch nicht dein Ernst. Ein paar MÃ¼nzen mehr kÃ¶nnten es schon sein.
 
 	Rukhar_Einsatz = 10;
 	Rukhar_Gewinn = 20;
 
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(anderen Einsatz wählen)", DIA_Rukhar_RANDOLPHWILL_mehr );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(anderen Einsatz wÃ¤hlen)", DIA_Rukhar_RANDOLPHWILL_mehr );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Einsatz annehmen)", DIA_Rukhar_RANDOLPHWILL_annehmen );
 };
 
 func void DIA_Rukhar_RANDOLPHWILL_20 ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_20_15_00"); //20
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_20_12_01"); //Wenn du schon wetten willst, dann mach das gefälligst richtig.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_20_12_01"); //Wenn du schon wetten willst, dann mach das gefÃ¤lligst richtig.
 
 	Rukhar_Einsatz = 20;
 	Rukhar_Gewinn = 40;
 	
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(anderen Einsatz wählen)", DIA_Rukhar_RANDOLPHWILL_mehr );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(anderen Einsatz wÃ¤hlen)", DIA_Rukhar_RANDOLPHWILL_mehr );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Einsatz annehmen)", DIA_Rukhar_RANDOLPHWILL_annehmen );
 };
 
@@ -254,20 +254,20 @@ func void DIA_Rukhar_RANDOLPHWILL_50 ()
 	Rukhar_Gewinn = 100;
 	
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(anderen Einsatz wählen)", DIA_Rukhar_RANDOLPHWILL_mehr );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(anderen Einsatz wÃ¤hlen)", DIA_Rukhar_RANDOLPHWILL_mehr );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Einsatz annehmen)", DIA_Rukhar_RANDOLPHWILL_annehmen );
 };
 
 func void DIA_Rukhar_RANDOLPHWILL_100 ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_100_15_00"); //100
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_100_12_01"); //Das höre ich gerne.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_100_12_01"); //Das hÃ¶re ich gerne.
 	
 	Rukhar_Einsatz = 100;
 	Rukhar_Gewinn = 200;
 	
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(anderen Einsatz wählen)", DIA_Rukhar_RANDOLPHWILL_mehr );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(anderen Einsatz wÃ¤hlen)", DIA_Rukhar_RANDOLPHWILL_mehr );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Einsatz annehmen)", DIA_Rukhar_RANDOLPHWILL_annehmen );
 };
 
@@ -305,7 +305,7 @@ func void DIA_Rukhar_ICHSEHEDICH_Info ()
 
 	if (B_GiveInvItems (other, self, ItMi_Gold, Rukhar_Einsatz))
 		{
-			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_01"); //Alles klar. Lass dir nicht zu viel Zeit, Randolph hierher zu bringen, hörst du?
+			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_01"); //Alles klar. Lass dir nicht zu viel Zeit, Randolph hierher zu bringen, hÃ¶rst du?
 			DIA_Rukhar_ICHSEHEDICH_noPerm = TRUE;
 			MIS_Rukhar_Wettkampf = LOG_RUNNING; 
 			B_GivePlayerXP (XP_Ambient);
@@ -329,7 +329,7 @@ instance DIA_Rukhar_GELDZURUECK		(C_INFO)
 	information	 = 	DIA_Rukhar_GELDZURUECK_Info;
 	permanent	 = 	TRUE;
 	
-	description	 = 	"Ich will mein Geld zurück.";
+	description	 = 	"Ich will mein Geld zurÃ¼ck.";
 };
 
 func int DIA_Rukhar_GELDZURUECK_Condition ()
@@ -345,8 +345,8 @@ func int DIA_Rukhar_GELDZURUECK_Condition ()
 
 func void DIA_Rukhar_GELDZURUECK_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_GELDZURUECK_15_00"); //Ich will mein Geld zurück.
-	AI_Output			(self, other, "DIA_Rukhar_GELDZURUECK_12_01"); //Spielschulden sind Ehrenschulden, Kumpel. Das hättest du dir vorher überlegen sollen.
+	AI_Output			(other, self, "DIA_Rukhar_GELDZURUECK_15_00"); //Ich will mein Geld zurÃ¼ck.
+	AI_Output			(self, other, "DIA_Rukhar_GELDZURUECK_12_01"); //Spielschulden sind Ehrenschulden, Kumpel. Das hÃ¤ttest du dir vorher Ã¼berlegen sollen.
 
 	AI_StopProcessInfos (self);
 };
@@ -426,7 +426,7 @@ func int DIA_Rukhar_Perm_Condition ()
 func void DIA_Rukhar_Perm_Info ()
 {
 	AI_Output (other, self, "DIA_Rukhar_Perm_15_00"); //Sonst irgendwas Interessantes passiert?
-	AI_Output (self, other, "DIA_Rukhar_Perm_12_01"); //Nicht, dass ich wüsste. Mir erzählt ja keiner mehr was.
+	AI_Output (self, other, "DIA_Rukhar_Perm_12_01"); //Nicht, dass ich wÃ¼sste. Mir erzÃ¤hlt ja keiner mehr was.
 };
 
 

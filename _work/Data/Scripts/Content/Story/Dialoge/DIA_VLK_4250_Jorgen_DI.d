@@ -49,11 +49,11 @@ FUNC VOID DIA_Jorgen_DI_Hallo_Info()
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_01"); //Klar doch. Wenn uns die ganzen Ungetüme hier in Ruhe lassen ...
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_01"); //Klar doch. Wenn uns die ganzen UngetÃ¼me hier in Ruhe lassen ...
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //Noch so einen Orkangriff werden wir nicht überleben. Also mach schnell, dass wir hier wieder weg können.
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //Noch so einen Orkangriff werden wir nicht Ã¼berleben. Also mach schnell, dass wir hier wieder weg kÃ¶nnen.
 		B_StartOtherRoutine	(Jorgen_DI,"Start");
 	};
 	AI_StopProcessInfos (self);
@@ -88,7 +88,7 @@ func void DIA_Jorgen_DI_UndeadDragonDead_Info ()
 
 	Info_ClearChoices	(DIA_Jorgen_DI_UndeadDragonDead);
 	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Einen Moment noch.", DIA_Jorgen_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Ja. Schluß jetzt. Lass uns aufbrechen.", DIA_Jorgen_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Ja. SchluÃŸ jetzt. Lass uns aufbrechen.", DIA_Jorgen_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_moment ()

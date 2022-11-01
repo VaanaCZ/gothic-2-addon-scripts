@@ -52,8 +52,8 @@ func int DIA_Talbin_NW_Condition ()
 func void DIA_Talbin_NW_Info ()
 {
 	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //Der Pass war doch gar nicht so schlimm, oder?
-	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //Ich danke dir für die Rettung.
-	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Hier. Ich hab diesen unbearbeiteten Stein auf dem Pass gefunden. Ich denke, er wird dir noch nützlich sein.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //Ich danke dir fÃ¼r die Rettung.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Hier. Ich hab diesen unbearbeiteten Stein auf dem Pass gefunden. Ich denke, er wird dir noch nÃ¼tzlich sein.
 
 	if (hero.guild == GIL_KDF)
 	{
@@ -68,7 +68,7 @@ func void DIA_Talbin_NW_Info ()
 	B_GiveInvItems (self, other, ItMi_Nugget, 1);					
 	};
 	
-	AI_Output			(self, other, "DIA_Talbin_NW_07_05"); //Möge Innos dich beschützen.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_05"); //MÃ¶ge Innos dich beschÃ¼tzen.
 
 	AI_StopProcessInfos (self);
 

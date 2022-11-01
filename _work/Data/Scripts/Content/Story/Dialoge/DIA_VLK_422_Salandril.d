@@ -34,7 +34,7 @@ INSTANCE DIA_Salandril_PICKPOCKET (C_INFO)
 	condition	= DIA_Salandril_PICKPOCKET_Condition;
 	information	= DIA_Salandril_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re einfach seinen Schl¸ssel zu stehlen)";
+	description = "(Es w√§re einfach seinen Schl√ºssel zu stehlen)";
 };
 //----------------------------------------                       
 var int DIA_Salandril_PICKPOCKET_perm;
@@ -104,10 +104,10 @@ func int DIA_Salandril_Hallo_Condition ()
 func void DIA_Salandril_Hallo_Info ()
 {
 	AI_Output (self, other, "DIA_Salandril_PERM_13_00"); //Willkommen, Reisender. Suchst einen guten Trank?
-	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //Mein Angebot ist groﬂ und meine Ware g¸nstig. Und ich verkaufe weitaus bessere Tr‰nke als dieser Zuris.
+	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //Mein Angebot ist gro√ü und meine Ware g√ºnstig. Und ich verkaufe weitaus bessere Tr√§nke als dieser Zuris.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Salandril handelt mit Tr‰nken. Er hat seinen Laden im oberen Viertel."); 
+	B_LogEntry (TOPIC_CityTrader, "Salandril handelt mit Tr√§nken. Er hat seinen Laden im oberen Viertel."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Trank
@@ -132,7 +132,7 @@ func int DIA_Salandril_Trank_Condition ()
 };
 func void DIA_Salandril_Trank_Info ()
 {
-	AI_Output (self, other, "DIA_Salandril_Trank_13_00"); //Wie ich hˆrte, warst du bei den Paladinen im Minental. Ich bin beeindruckt.
+	AI_Output (self, other, "DIA_Salandril_Trank_13_00"); //Wie ich h√∂rte, warst du bei den Paladinen im Minental. Ich bin beeindruckt.
 	AI_Output (self, other, "DIA_Salandril_Trank_13_01"); //Du solltest dir Zeit nehmen und meine Ware begutachten, ich habe gerade einen ganz besonderen Trank auf Lager.
 	
 	CreateInvItems (self,ItPo_Perm_DEX,1);
@@ -165,7 +165,7 @@ func void DIA_Salandril_Trade_Info ()
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Salandril_Trade_13_01"); //Es ist mir eine Freude, Ehrw¸rdiger.
+		AI_Output (self, other, "DIA_Salandril_Trade_13_01"); //Es ist mir eine Freude, Ehrw√ºrdiger.
 		if (MIS_Serpentes_MinenAnteil_KDF == LOG_RUNNING)
 		{
 			SC_KnowsProspektorSalandril = TRUE;
@@ -222,7 +222,7 @@ instance DIA_Salandril_KLOSTER		(C_INFO)
 	condition	 = 	DIA_Salandril_KLOSTER_Condition;
 	information	 = 	DIA_Salandril_KLOSTER_Info;
 
-	description	 = 	"Du gehst jetzt ins Kloster und l‰sst dich verurteilen.";
+	description	 = 	"Du gehst jetzt ins Kloster und l√§sst dich verurteilen.";
 };
 
 func int DIA_Salandril_KLOSTER_Condition ()
@@ -235,17 +235,17 @@ func int DIA_Salandril_KLOSTER_Condition ()
 
 func void DIA_Salandril_KLOSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_00"); //Du gehst jetzt ins Kloster und l‰sst dich verurteilen.
+	AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_00"); //Du gehst jetzt ins Kloster und l√§sst dich verurteilen.
 	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_01"); //Was? Du bist ja wohl nicht mehr ganz frisch. Einen Dreck werde ich. Diese miesen Magier haben doch gar nichts gegen mich in der Hand.
 
 	if (hero.guild == GIL_KDF)
 	&& (SC_KnowsProspektorSalandril == TRUE)		
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_02"); //Und was ist mit diesen gef‰lschten Erzminenanteilen, die du ¸berall im Land verschachert hast? Es ist deine Unterschrift darauf. Du bist schuldig.
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_02"); //Und was ist mit diesen gef√§lschten Erzminenanteilen, die du √ºberall im Land verschachert hast? Es ist deine Unterschrift darauf. Du bist schuldig.
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //Ich habe einen Auftrag und den werde ich ausf¸hren. Also, du gehst jetzt oder ich mach dir Beine.
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //Ich habe einen Auftrag und den werde ich ausf√ºhren. Also, du gehst jetzt oder ich mach dir Beine.
 	};
 	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //Was? Ich werde dich das Viertel herunter schleifen wie einen dreckigen Lumpen.
 	AI_StopProcessInfos (self);

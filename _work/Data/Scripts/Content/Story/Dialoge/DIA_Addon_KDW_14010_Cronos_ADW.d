@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Cronos_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Cronos_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Cronos_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Karte zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Karte zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Cronos_ADW_PICKPOCKET_Condition()
@@ -95,11 +95,11 @@ func int DIA_Addon_Cronos_ADWHello_Condition ()
 
 func void DIA_Addon_Cronos_ADWHello_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_00"); //Schön, dich zu sehen. Wir befürchteten schon das Schlimmste.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_00"); //SchÃ¶n, dich zu sehen. Wir befÃ¼rchteten schon das Schlimmste.
 	AI_Output	(other, self, "DIA_Addon_Cronos_ADWHello_15_01"); //Alles halb so wild. Wie sieht's denn aus?
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_02"); //Es ist eine sehr gefährliche Gegend hier.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_02"); //Es ist eine sehr gefÃ¤hrliche Gegend hier.
 	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_03"); //Einige von den Tieren hier in der Gegend hat niemand von uns jemals zuvor zu Gesicht bekommen.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_04"); //Ganz in der Nähe gibt es einen großen Sumpf, der sich einige hundert Jahre unbemerkt entfalten konnte.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_04"); //Ganz in der NÃ¤he gibt es einen groÃŸen Sumpf, der sich einige hundert Jahre unbemerkt entfalten konnte.
 	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_05"); //Es vergeht kein Tag, an dem wir nicht von den Biestern aus diesem Sumpf angegriffen werden.
 	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_06"); //Ich rate dir vorsichtig zu sein, wenn du hier herumspazierst.
 };
@@ -114,7 +114,7 @@ instance DIA_Addon_Cronos_WaechterADW		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_WaechterADW_Condition;
 	information	 = 	DIA_Addon_Cronos_WaechterADW_Info;
 
-	description	 = 	"Gibt's was neues über die Steinwächter?";
+	description	 = 	"Gibt's was neues Ã¼ber die SteinwÃ¤chter?";
 };
 
 func int DIA_Addon_Cronos_WaechterADW_Condition ()
@@ -124,10 +124,10 @@ func int DIA_Addon_Cronos_WaechterADW_Condition ()
 
 func void DIA_Addon_Cronos_WaechterADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_WaechterADW_15_00"); //Gibt's was Neues über die Steinwächter?
+	AI_Output	(other, self, "DIA_Addon_Cronos_WaechterADW_15_00"); //Gibt's was Neues Ã¼ber die SteinwÃ¤chter?
 	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_01"); //Wir haben schon einigen von ihnen den Garaus gemacht.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_02"); //Sie stehen wie zur Salzsäule erstarrt da und regen sich nicht.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_03"); //Doch der Schein trügt. Wenn du zu nah an sie heran gehst, werden sie dich angreifen!
+	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_02"); //Sie stehen wie zur SalzsÃ¤ule erstarrt da und regen sich nicht.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_03"); //Doch der Schein trÃ¼gt. Wenn du zu nah an sie heran gehst, werden sie dich angreifen!
 	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_04"); //Es besteht kein Zweifel, dass die Quelle ihrer Macht hier irgendwo zu finden ist.
 };
 

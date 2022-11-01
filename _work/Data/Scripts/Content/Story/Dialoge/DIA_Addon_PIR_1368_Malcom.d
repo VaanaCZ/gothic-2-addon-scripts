@@ -20,13 +20,13 @@ func VOID DIA_Addon_Malcom_EXIT_Info()
 	
 	if (MalcomBotschaft == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Malcom_perm_04_01"); //Lass dich nicht von den Biestern fressen. Die Gegend hier ist sehr gefährlich.
+		AI_Output (self, other, "DIA_Addon_Malcom_perm_04_01"); //Lass dich nicht von den Biestern fressen. Die Gegend hier ist sehr gefÃ¤hrlich.
 	}
 	else
 	{
 		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_03"); //Hey! Wenn du zu unserem Lager gehst kannst du Henry von mir was ausrichten.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //Die Bäume hier sind verdammt hartnäckig.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //Er wird noch eine Weile auf sein Holz warten müssen. Sag ihm das.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //Die BÃ¤ume hier sind verdammt hartnÃ¤ckig.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //Er wird noch eine Weile auf sein Holz warten mÃ¼ssen. Sag ihm das.
 		MalcomBotschaft = TRUE;
 	};
 	
@@ -106,7 +106,7 @@ instance DIA_Addon_Malcom_WasMachen		(C_INFO)
 	condition	= DIA_Addon_Malcom_WasMachen_Condition;
 	information	= DIA_Addon_Malcom_WasMachen_Info;
 
-	description	= "Beschäftigt?";
+	description	= "BeschÃ¤ftigt?";
 };
 func int DIA_Addon_Malcom_WasMachen_Condition ()
 {
@@ -114,20 +114,20 @@ func int DIA_Addon_Malcom_WasMachen_Condition ()
 };
 func void DIA_Addon_Malcom_WasMachen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_00"); //Beschäftigt?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_01"); //Hör bloß auf. Henry will, dass ich hier die ganzen Bäume abholze.
+	AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_00"); //BeschÃ¤ftigt?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_01"); //HÃ¶r bloÃŸ auf. Henry will, dass ich hier die ganzen BÃ¤ume abholze.
 	if (Henry.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
 		AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_02"); //Henry?
-		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //Er führt unseren Trupp an.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //Er fÃ¼hrt unseren Trupp an.
 	};
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_04"); //Er steht die ganze Zeit vor unserm Lager und hält große Reden.
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Mehr Einsatz für die Gemeinschaft und so'n Dreck.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_04"); //Er steht die ganze Zeit vor unserm Lager und hÃ¤lt groÃŸe Reden.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Mehr Einsatz fÃ¼r die Gemeinschaft und so'n Dreck.
 	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_06"); //Dabei macht er selber keinen Finger krumm.
 };
 
 // ************************************************************
-// 					Holz - Nachricht für Henry
+// 					Holz - Nachricht fÃ¼r Henry
 // ************************************************************
 instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 {
@@ -136,7 +136,7 @@ instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 	condition	 = 	DIA_Addon_Malcom_Entertrupp_Condition;
 	information	 = 	DIA_Addon_Malcom_Entertrupp_Info;
 
-	description	 = 	"Henry ist euer Anführer?";
+	description	 = 	"Henry ist euer AnfÃ¼hrer?";
 };
 func int DIA_Addon_Malcom_Entertrupp_Condition ()
 {
@@ -147,9 +147,9 @@ func int DIA_Addon_Malcom_Entertrupp_Condition ()
 };
 func void DIA_Addon_Malcom_Entertrupp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //Henry ist euer Anführer?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //Ja, der Anführer von unserem Entertrupp.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //Unser KÄPT'N ist Greg.
+	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //Henry ist euer AnfÃ¼hrer?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //Ja, der AnfÃ¼hrer von unserem Entertrupp.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //Unser KÃ„PT'N ist Greg.
 	if (GregIsBack == FALSE)
 	{
 		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //Aber der ist zur Zeit nicht da.

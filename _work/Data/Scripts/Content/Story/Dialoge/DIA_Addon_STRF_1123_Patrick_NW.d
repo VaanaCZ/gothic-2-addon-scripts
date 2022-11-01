@@ -75,7 +75,7 @@ FUNC VOID DIA_Addon_Patrick_NW_Hi_Info()
 	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_00");//Und? Alles klar bei dir?
 	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//Alles im Lot. Die Wassermagier haben uns sicher aus diesem verfluchten Tal gebracht.
 	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_02");//Was hast du jetzt vor?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//Ich werde weiterhin für Lee kämpfen. Eines Tages werden wir schon diese Insel verlassen ...
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//Ich werde weiterhin fÃ¼r Lee kÃ¤mpfen. Eines Tages werden wir schon diese Insel verlassen ...
 	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_04");//Und dann?
 	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//Wir werden sehen. Wenn der Krieg noch tobt, geht's gegen die Orks. Aber das wird sich zeigen.
 };

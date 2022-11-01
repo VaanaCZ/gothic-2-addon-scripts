@@ -40,11 +40,11 @@ FUNC INT DIA_OCVLK_6_PEOPLE_Condition()
 FUNC VOID DIA_OCVLK_6_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_OCVLK_6_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_01"); //Garond hat das Kommando über die gesamte Festung - oder was noch davon übrig ist.
-	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_02"); //Aber er kümmert sich selber um so gut wie gar nichts - außer es macht jemand von seinen Leuten Dummheiten.
+	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_01"); //Garond hat das Kommando Ã¼ber die gesamte Festung - oder was noch davon Ã¼brig ist.
+	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_02"); //Aber er kÃ¼mmert sich selber um so gut wie gar nichts - auÃŸer es macht jemand von seinen Leuten Dummheiten.
 	if (Npc_IsDead (Engor) == FALSE)
 	{
-		AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_03"); //Wenn du auf der Suche nach Ausrüstung bist, gehst du am besten zu Engor, du findest ihn im Haus gegenüber von Garond.
+		AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_03"); //Wenn du auf der Suche nach AusrÃ¼stung bist, gehst du am besten zu Engor, du findest ihn im Haus gegenÃ¼ber von Garond.
 	};
 };
 
@@ -57,7 +57,7 @@ INSTANCE DIA_OCVLK_6_LOCATION(C_INFO)
 	condition	= DIA_OCVLK_6_LOCATION_Condition;
 	information	= DIA_OCVLK_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was kannst du mir über die Lage im Minental sagen?";
+	description = "Was kannst du mir Ã¼ber die Lage im Minental sagen?";
 };                       
 
 FUNC INT DIA_OCVLK_6_LOCATION_Condition()
@@ -71,10 +71,10 @@ FUNC INT DIA_OCVLK_6_LOCATION_Condition()
 
 FUNC VOID DIA_OCVLK_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_6_LOCATION_15_00"); //Was kannst du mir über die Lage im Minental sagen?
+	AI_Output (other, self, "DIA_OCVLK_6_LOCATION_15_00"); //Was kannst du mir Ã¼ber die Lage im Minental sagen?
 	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_01"); //Ich mache mir Sorgen um den Schutzwall der Orks. Ich will nicht wissen, was die Orks noch alles hinter ihrem Wall haben.
 	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_02"); //Zuerst waren's nur ein paar von ihnen. Sie haben denWall errichtet. Dann, eines Nachts, haben sie die Belagerungsmaschinen herausgeschafft.
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_03"); //Wir hatten Glück, dass wir den Angriff zurückschlagen konnten.
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_03"); //Wir hatten GlÃ¼ck, dass wir den Angriff zurÃ¼ckschlagen konnten.
 	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_04"); //Hinter dem Wall liegt das Meer. Wenn noch mehr Schiffe mit Orks ankommen, haben wir keine Chance mehr.
 };
 
@@ -99,8 +99,8 @@ FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_01"); //Melde dich zur Armee und du kannst ein gutes Leben führen. Und was ist?
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_02"); //Es ist unter Androhung der Todesstrafe verboten worden, sich in der Nähe der Nahrungsvorräte aufzuhalten. Garond hat scheinbar Angst, dass wir die Vorräte plündern und uns aus dem Staub machen. (lacht bitter)
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_01"); //Melde dich zur Armee und du kannst ein gutes Leben fÃ¼hren. Und was ist?
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_02"); //Es ist unter Androhung der Todesstrafe verboten worden, sich in der NÃ¤he der NahrungsvorrÃ¤te aufzuhalten. Garond hat scheinbar Angst, dass wir die VorrÃ¤te plÃ¼ndern und uns aus dem Staub machen. (lacht bitter)
 		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_03"); //Wenn uns die verdammten Drachen nicht kalt machen, verhungern wir hier!
 	};
 	
@@ -108,11 +108,11 @@ FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_04"); //Drachenjäger. Dass ich nicht lache! Die werden auch nichts ändern.
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_04"); //DrachenjÃ¤ger. Dass ich nicht lache! Die werden auch nichts Ã¤ndern.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_05"); //Es heißt, die Drachen sind alle getötet worden! Jetzt haben wir eine Chance!
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_05"); //Es heiÃŸt, die Drachen sind alle getÃ¶tet worden! Jetzt haben wir eine Chance!
 		};
 	};
 
@@ -124,7 +124,7 @@ FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_07"); //Diese lächerlichen Kisten, die sie notdürftig vor den Eingang gestapelt haben, werden die Orks auch nicht aufhalten!
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_07"); //Diese lÃ¤cherlichen Kisten, die sie notdÃ¼rftig vor den Eingang gestapelt haben, werden die Orks auch nicht aufhalten!
 		};
 	};
 };

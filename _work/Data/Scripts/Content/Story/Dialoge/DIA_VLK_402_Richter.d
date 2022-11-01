@@ -47,8 +47,8 @@ FUNC INT DIA_Richter_Hello_Condition()
 FUNC VOID DIA_Richter_Hello_Info()
 {	
 	AI_Output (other,self ,"DIA_Richter_Hello_15_00"); //Was machst du hier?
-	AI_Output (self ,other,"DIA_Richter_Hello_10_01"); //Was sprichst du mich an? Wer bist du überhaupt.
-	AI_Output (other,self ,"DIA_Richter_Hello_15_02"); //Ich, äh ...
+	AI_Output (self ,other,"DIA_Richter_Hello_10_01"); //Was sprichst du mich an? Wer bist du Ã¼berhaupt.
+	AI_Output (other,self ,"DIA_Richter_Hello_15_02"); //Ich, Ã¤h ...
 	AI_Output (self ,other,"DIA_Richter_Hello_10_03"); //Sag mal, kenn ich dich nicht irgendwoher?
 	
 	Info_ClearChoices (DIA_Richter_Hello);
@@ -59,7 +59,7 @@ FUNC VOID DIA_Richter_Hello_Info()
 FUNC VOID DIA_Richter_Hello_DontThinkSo ()
 {
 	AI_Output (other,self ,"DIA_Richter_Hello_DontThinkSo_15_00"); //Ich kann mich nicht daran erinnern.
-	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_01"); //Komisch, ich hätte schwören können, dass ich dir schon mal begegnet bin.
+	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_01"); //Komisch, ich hÃ¤tte schwÃ¶ren kÃ¶nnen, dass ich dir schon mal begegnet bin.
 	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_02"); //Macht ja nichts, man sieht dir eh an, dass du aus der Gosse kommst. Ihr seht irgendwie alle gleich aus.
 };
 
@@ -67,7 +67,7 @@ FUNC VOID DIA_Richter_Hello_MayBe ()
 {
 	AI_Output (other,self ,"DIA_Richter_Hello_MayBe_15_00"); //Kann schon sein.
 	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_01"); //Nicht so patzig! Was glaubst du eigentlich, mit wem du redest?
-	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_02"); //Schlag mir gegenüber wenigstens einen angemessenen Ton an.
+	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_02"); //Schlag mir gegenÃ¼ber wenigstens einen angemessenen Ton an.
 	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_03"); //Und jetzt geh mir aus den Augen!
 	
 	AI_StopProcessInfos (self);
@@ -103,15 +103,15 @@ FUNC VOID DIA_Richter_Perm_Info()
 	if (MIS_Lee_JudgeRichter == LOG_RUNNING)
 	&& ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG ))
 	{
-		AI_Output (self ,other,"DIA_Richter_Perm_10_01"); //Du dreckiger Söldner machst gefälligst, dass du verschwindest, bevor ich die Wachen rufe.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_01"); //Du dreckiger SÃ¶ldner machst gefÃ¤lligst, dass du verschwindest, bevor ich die Wachen rufe.
 		AI_Output (other,self ,"DIA_Richter_Perm_15_02"); //Langsam. Ich bin nicht hier, um dich zu bestehlen. Ich suche Arbeit.
-		AI_Output (self ,other,"DIA_Richter_Perm_10_03"); //So. Du willst also für mich arbeiten. Mmh. Das ist natürlich etwas anderes.
-		AI_Output (self ,other,"DIA_Richter_Perm_10_04"); //Da gibt es leider nur ein kleines Problem. Ich weiß nicht, ob ich dir vertrauen kann. Du wirst deine Loyalität erst beweisen müssen.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_03"); //So. Du willst also fÃ¼r mich arbeiten. Mmh. Das ist natÃ¼rlich etwas anderes.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_04"); //Da gibt es leider nur ein kleines Problem. Ich weiÃŸ nicht, ob ich dir vertrauen kann. Du wirst deine LoyalitÃ¤t erst beweisen mÃ¼ssen.
 		SCIstRichtersLakai = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Richter_Perm_10_05"); //Habe ich dir nicht klar gemacht, dass ich keinen Kontakt mit dir wünsche?
+		AI_Output (self ,other,"DIA_Richter_Perm_10_05"); //Habe ich dir nicht klar gemacht, dass ich keinen Kontakt mit dir wÃ¼nsche?
 		AI_Output (other,self ,"DIA_Richter_Perm_15_06"); //Nun, nicht direkt.
 		AI_Output (self ,other,"DIA_Richter_Perm_10_07"); //Dann hast du mich jetzt hoffentlich verstanden.
 	};
@@ -143,14 +143,14 @@ FUNC INT DIA_Richter_RichtersLakai_Condition()
 FUNC VOID DIA_Richter_RichtersLakai_Info()
 {	
 	AI_Output (other,self ,"DIA_Richter_RichtersLakai_15_00"); //Stell mich auf die Probe.
-	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_01"); //Mmh. Na gut. Hör zu. Bring mir den heiligen Hammer der Magier des Feuers. Sie bewahren ihn irgendwo im Keller des Klosters auf.
-	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_02"); //Wenn du das schaffst, dann werde ich darüber nachdenken, dich bei mir als Leibgarde anzustellen.
+	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_01"); //Mmh. Na gut. HÃ¶r zu. Bring mir den heiligen Hammer der Magier des Feuers. Sie bewahren ihn irgendwo im Keller des Klosters auf.
+	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_02"); //Wenn du das schaffst, dann werde ich darÃ¼ber nachdenken, dich bei mir als Leibgarde anzustellen.
 	
 	Info_ClearChoices	(DIA_Richter_RichtersLakai);
 	Info_AddChoice	(DIA_Richter_RichtersLakai, "Ich soll die Magier beklauen?  Du hast sie doch nicht alle.", DIA_Richter_RichtersLakai_nein );
 	Info_AddChoice	(DIA_Richter_RichtersLakai, "Alles klar.", DIA_Richter_RichtersLakai_ja );
 	
-	B_LogEntry (TOPIC_RichterLakai,"Der Richter traut mir nicht. Ich muß erst meine Loyalität ihm gegenüber unter Beweis stellen. Ich soll den heiligen Hammer aus dem Keller des Feuermagierklosters stehlen und ihn zum Richter bringen."); 
+	B_LogEntry (TOPIC_RichterLakai,"Der Richter traut mir nicht. Ich muÃŸ erst meine LoyalitÃ¤t ihm gegenÃ¼ber unter Beweis stellen. Ich soll den heiligen Hammer aus dem Keller des Feuermagierklosters stehlen und ihn zum Richter bringen."); 
 
 	MIS_Richter_BringHolyHammer = LOG_RUNNING;
 };
@@ -164,7 +164,7 @@ func void DIA_Richter_RichtersLakai_nein ()
 func void DIA_Richter_RichtersLakai_ja ()
 {
 	AI_Output			(other, self, "DIA_Richter_RichtersLakai_ja_15_00"); //Alles klar.
-	AI_Output			(self, other, "DIA_Richter_RichtersLakai_ja_10_01"); //Gut. Aber denk daran, wenn sie dich erwischen, habe ich nie von dir gehört.
+	AI_Output			(self, other, "DIA_Richter_RichtersLakai_ja_10_01"); //Gut. Aber denk daran, wenn sie dich erwischen, habe ich nie von dir gehÃ¶rt.
 	AI_StopProcessInfos (self);
 };
 
@@ -196,14 +196,14 @@ FUNC VOID DIA_Richter_KillMorgahard_Info()
 {	
 	AI_Output (other,self ,"DIA_Richter_KillMorgahard_15_00"); //Hier ist der heilige Hammer der Magier.
 	B_GiveInvItems (other, self, Holy_Hammer_MIS,1);
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_01"); //Ich bin schwer beeindruckt. Dir scheint es ja tatsächlich ernst damit zu sein, was? Hier ist dein Lohn.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_01"); //Ich bin schwer beeindruckt. Dir scheint es ja tatsÃ¤chlich ernst damit zu sein, was? Hier ist dein Lohn.
 	CreateInvItems (self, ItMi_Gold, 300);									
 	B_GiveInvItems (self, other, ItMi_Gold, 300);					
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_02"); //Gut. Wenn das so ist, habe ich auch schon den nächsten Auftrag für dich.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_03"); //Vor einigen Tagen sind mehrere Gefangene aus dem hiesigen Gefängnis geflohen.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_04"); //Die Hundesöhne haben sich in die Berge verdrückt. Irgendwo in Richtung Xardas neuen Turm.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_05"); //Der Name ihres Anführers ist Morgahard. Ich will, dass du ihn tötest.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_06"); //Geh und beeile dich, bevor sie über alle Berge sind.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_02"); //Gut. Wenn das so ist, habe ich auch schon den nÃ¤chsten Auftrag fÃ¼r dich.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_03"); //Vor einigen Tagen sind mehrere Gefangene aus dem hiesigen GefÃ¤ngnis geflohen.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_04"); //Die HundesÃ¶hne haben sich in die Berge verdrÃ¼ckt. Irgendwo in Richtung Xardas neuen Turm.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_05"); //Der Name ihres AnfÃ¼hrers ist Morgahard. Ich will, dass du ihn tÃ¶test.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_06"); //Geh und beeile dich, bevor sie Ã¼ber alle Berge sind.
 	
 	Wld_InsertNpc	(BDT_1030_Morgahard,"REICH"); 
 	Wld_InsertNpc	(BDT_1031_Fluechtling,"REICH"); 
@@ -216,7 +216,7 @@ FUNC VOID DIA_Richter_KillMorgahard_Info()
 
 	B_GivePlayerXP (XP_BringHolyHammer);
 	MIS_Richter_BringHolyHammer = LOG_SUCCESS;
-	B_LogEntry (TOPIC_RichterLakai,"Dem Richter sind einige Gefangene weg gelaufen. Ich soll sie für ihn wieder einfangen und ihren Anführer MORGAHARD töten. Sie sollen sich in die Berge verdrückt haben. Irgendwo in Richtung Xardas neuen Turm."); 
+	B_LogEntry (TOPIC_RichterLakai,"Dem Richter sind einige Gefangene weg gelaufen. Ich soll sie fÃ¼r ihn wieder einfangen und ihren AnfÃ¼hrer MORGAHARD tÃ¶ten. Sie sollen sich in die Berge verdrÃ¼ckt haben. Irgendwo in Richtung Xardas neuen Turm."); 
 	MIS_Richter_KillMorgahard = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 };	
@@ -251,7 +251,7 @@ FUNC VOID DIA_Richter_KilledMorgahard_Info()
 	CreateInvItems (self, ItMi_Gold, 400);									
 	B_GiveInvItems (self, other, ItMi_Gold, 400);					
 	B_GivePlayerXP (XP_KillMorgahard);
-	B_LogEntry (TOPIC_RichterLakai,"Die Nachricht über Morgahards Tod hat den Richter sichtlich amüsiert. Soll er ruhig. Ich darf Lees Auftrag nicht aus dem Auge verlieren."); 
+	B_LogEntry (TOPIC_RichterLakai,"Die Nachricht Ã¼ber Morgahards Tod hat den Richter sichtlich amÃ¼siert. Soll er ruhig. Ich darf Lees Auftrag nicht aus dem Auge verlieren."); 
 	MIS_Richter_KillMorgahard = LOG_SUCCESS;
 };
 
@@ -267,7 +267,7 @@ INSTANCE DIA_Richter_KilledMorgahardPERM (C_INFO)
 	information	= DIA_Richter_KilledMorgahardPERM_Info;
 	permanent	 = 	TRUE;
 
-	description =	"Gibt es sonst noch etwas, was ich für dich erledigen kann?";
+	description =	"Gibt es sonst noch etwas, was ich fÃ¼r dich erledigen kann?";
 };                       
 
 FUNC INT DIA_Richter_KilledMorgahardPERM_Condition()
@@ -281,8 +281,8 @@ FUNC INT DIA_Richter_KilledMorgahardPERM_Condition()
 
 FUNC VOID DIA_Richter_KilledMorgahardPERM_Info ()
 {	
-	AI_Output (other,self ,"DIA_Richter_KilledMorgahardPERM_15_00"); //Gibt es sonst noch etwas, was ich für dich erledigen kann?
-	AI_Output (self ,other,"DIA_Richter_KilledMorgahardPERM_10_01"); //Im Moment nicht. Vielleicht später.
+	AI_Output (other,self ,"DIA_Richter_KilledMorgahardPERM_15_00"); //Gibt es sonst noch etwas, was ich fÃ¼r dich erledigen kann?
+	AI_Output (self ,other,"DIA_Richter_KilledMorgahardPERM_10_01"); //Im Moment nicht. Vielleicht spÃ¤ter.
 };
 
 // ************************************************************
@@ -296,7 +296,7 @@ INSTANCE DIA_Richter_PermissionForShip (C_INFO)
 	condition	= DIA_Richter_PermissionForShip_Condition;
 	information	= DIA_Richter_PermissionForShip_Info;
 
-	description =	"Gib mir eine Ermächtigung für das Schiff der Paladine.";
+	description =	"Gib mir eine ErmÃ¤chtigung fÃ¼r das Schiff der Paladine.";
 };                       
 
 FUNC INT DIA_Richter_PermissionForShip_Condition()
@@ -309,17 +309,17 @@ FUNC INT DIA_Richter_PermissionForShip_Condition()
 
 FUNC VOID DIA_Richter_PermissionForShip_Info ()
 {	
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_00"); //Gib mir eine Ermächtigung für das Schiff der Paladine.
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_00"); //Gib mir eine ErmÃ¤chtigung fÃ¼r das Schiff der Paladine.
 	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_01"); //(Lacht) Du bist ja wohl nicht ganz bei Trost. Was soll ich tun?
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_02"); //Du hast mich schon verstanden. Gib mir die Ermächtigung oder ich werde dich der Miliz melden.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_03"); //(Brüllt) Ich lasse mich nicht erpressen. Schon gar nicht von dir. Ich werde dich den Wölfen zum Fraß vorwerfen, du Stück Dreck.
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_04"); //Morgahard hat in deinem Auftrag den Statthalter überfallen. Ich besitze ein Schriftstück, das es beweisen kann.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_05"); //(Brüllt) Arrh.
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_02"); //Du hast mich schon verstanden. Gib mir die ErmÃ¤chtigung oder ich werde dich der Miliz melden.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_03"); //(BrÃ¼llt) Ich lasse mich nicht erpressen. Schon gar nicht von dir. Ich werde dich den WÃ¶lfen zum FraÃŸ vorwerfen, du StÃ¼ck Dreck.
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_04"); //Morgahard hat in deinem Auftrag den Statthalter Ã¼berfallen. Ich besitze ein SchriftstÃ¼ck, das es beweisen kann.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_05"); //(BrÃ¼llt) Arrh.
 	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_06"); //Das wird dir noch Leid tun. Mich erpresst man nicht ungestraft.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_07"); //Hier hast du die Ermächtigung. Nun geh. Ich werde später mit dir abrechnen.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_07"); //Hier hast du die ErmÃ¤chtigung. Nun geh. Ich werde spÃ¤ter mit dir abrechnen.
 	CreateInvItems (self,ItWr_ForgedShipLetter_Mis,1);
 	B_GiveInvItems (self,other,ItWr_ForgedShipLetter_Mis,1);
-	B_LogEntry (TOPIC_Ship,"Mit dem Ermächtigungsschreiben des Richters sollte es für mich kein Problem mehr sein, das Schiff in meinen Besitz zu bringen. Was Lee wohl dazu sagen wird?"); 
+	B_LogEntry (TOPIC_Ship,"Mit dem ErmÃ¤chtigungsschreiben des Richters sollte es fÃ¼r mich kein Problem mehr sein, das Schiff in meinen Besitz zu bringen. Was Lee wohl dazu sagen wird?"); 
 	MIS_RichtersPermissionForShip = LOG_SUCCESS;
 	B_GivePlayerXP (XP_RichtersPermissionForShip);
 };
@@ -366,7 +366,7 @@ INSTANCE DIA_Richter_PICKPOCKET (C_INFO)
 	condition	= DIA_Richter_PICKPOCKET_Condition;
 	information	= DIA_Richter_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seinen Schlüssel zu stehlen)";
+	description = "(Es wÃ¤re einfach seinen SchlÃ¼ssel zu stehlen)";
 };                       
 
 FUNC INT DIA_Richter_PICKPOCKET_Condition()

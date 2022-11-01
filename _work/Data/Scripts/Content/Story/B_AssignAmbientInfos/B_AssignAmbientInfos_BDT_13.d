@@ -52,7 +52,7 @@ FUNC VOID DIA_BDT_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_00"); //Was glotzt du denn so d‰mlich!
+		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_00"); //Was glotzt du denn so d√§mlich!
 	};
 	if (randy == 1)
 	{
@@ -60,7 +60,7 @@ FUNC VOID DIA_BDT_13_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_02"); //Mach mich bloﬂ nicht an, du Penner!
+		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_02"); //Mach mich blo√ü nicht an, du Penner!
 	};
 	
 	AI_StopProcessInfos	(self);

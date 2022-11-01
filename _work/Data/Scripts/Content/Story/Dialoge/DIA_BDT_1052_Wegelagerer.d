@@ -48,7 +48,7 @@ FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
 FUNC VOID DIA_1052_Wegelagerer_Hello_Info()
 {
 	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //Wer bist du?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Was soll das werden? Ein Verhör?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Was soll das werden? Ein VerhÃ¶r?
 	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //Ich hab dir nichts zu sagen, aber du kannst ja mal mit meinem Kumpel reden.
 	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Aber sei vorsichtig, er mag keine Fremden.
 };

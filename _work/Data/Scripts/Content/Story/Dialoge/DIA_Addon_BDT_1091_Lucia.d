@@ -71,7 +71,7 @@ FUNC INT DIA_Addon_Lucia_Hi_Condition()
 FUNC VOID DIA_Addon_Lucia_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Hi_15_00");//Und? Wie sieht's aus?
-	AI_Output (self, other, "DIA_Addon_Lucia_Hi_16_01");//Hör zu. Wenn du was essen willst, geh zu Snaf. Wenn du was trinken willst, bist du bei mir richtig.
+	AI_Output (self, other, "DIA_Addon_Lucia_Hi_16_01");//HÃ¶r zu. Wenn du was essen willst, geh zu Snaf. Wenn du was trinken willst, bist du bei mir richtig.
 };
 //---------------------------------------------------------------------
 //	Info was
@@ -97,8 +97,8 @@ FUNC VOID DIA_Addon_Lucia_was_Info()
 	AI_Output (other, self, "DIA_Addon_Lucia_was_15_00");//Was trinkt ihr denn hier so?
 	AI_Output (self, other, "DIA_Addon_Lucia_was_16_01");//Wir haben nur wenig Bier. Das einzige Bier auf der Insel haben die Paladine migebracht.
 	AI_Output (self, other, "DIA_Addon_Lucia_was_16_02");//Naja, wenigtens etwas Gutes, das die Kerle mitgebracht haben ...
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");//Ansonsten trinken wir Schnaps. Ich hab' Selbstgebrauten, Grog, und weißen Rum -
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");//(köstlich) hmmm ... DEN solltest du probieren - das Rezept habe ich von Samuel. Der Alte versteht wirklich sein Handwerk.
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");//Ansonsten trinken wir Schnaps. Ich hab' Selbstgebrauten, Grog, und weiÃŸen Rum -
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");//(kÃ¶stlich) hmmm ... DEN solltest du probieren - das Rezept habe ich von Samuel. Der Alte versteht wirklich sein Handwerk.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_BDT_Trader,"Bei Lucia bekomme ich Schnaps.");
@@ -127,7 +127,7 @@ FUNC INT DIA_Addon_Lucia_Khorinis_Condition()
 FUNC VOID DIA_Addon_Lucia_Khorinis_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Khorinis_15_00");//Kommst du nicht aus Khorinis?
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_01");//Erinner mich bloß nicht daran! Mein Leben in dieser Stadt war schrecklich.
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_01");//Erinner mich bloÃŸ nicht daran! Mein Leben in dieser Stadt war schrecklich.
 	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_02");//Als noch die Schiffe mit den neuen Verurteilten ankamen, da war in der Stadt noch was los.
 	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_03");//Aber diese ganzen anderen Typen ... (lacht) Nein danke. Vielleicht liegt's daran, das wir auf 'ner Insel sind, ... naja die Zeiten sind vorbei.
 
@@ -167,7 +167,7 @@ FUNC VOID DIA_Addon_Lucia_Jetzt_Info()
 	AI_Output (other, self, "DIA_Addon_Lucia_Jetzt_15_00");//Was hast du jetzt vor?
 	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_01");//Mal schauen. Ich bleib erst mal hier, bei Snaf, Fisk und den anderen.
 	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_02");//Hast du schon mit Thorus gesprochen? (verdreht die Augen) Oh Innos, ist das ein wahrer Baum von einem Kerl!
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_03");//(lacht) Entschuldige ... kommen wir auf deine Frage zurück ... ich habe kein festes Ziel, ich lasse mich treiben.
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_03");//(lacht) Entschuldige ... kommen wir auf deine Frage zurÃ¼ck ... ich habe kein festes Ziel, ich lasse mich treiben.
 };
 //---------------------------------------------------------------------
 //	Info Paladine
@@ -191,17 +191,17 @@ FUNC INT DIA_Addon_Lucia_Paladine_Condition()
 FUNC VOID DIA_Addon_Lucia_Paladine_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_15_00");//Du magst die Paladine nicht besonders, was?
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_01");//Diese fanatischen Mörder im Auftrag der Feuermagier? Nein.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_02");//Dieser Lord Hagen besetzt mit seinen Schlägern die Stadt und alle buckeln vor ihnen.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_01");//Diese fanatischen MÃ¶rder im Auftrag der Feuermagier? Nein.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_02");//Dieser Lord Hagen besetzt mit seinen SchlÃ¤gern die Stadt und alle buckeln vor ihnen.
 	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_03");//Und das wollte ich nicht. Ich wollte nicht darauf warten, dass sie die rote Laterne zumachen und mich einsperren.
 	
 	if (Npc_GetTrueGuild (other) != GIL_SLD)
 	&& (Npc_GetTrueGuild (other) != GIL_DJG)
 	{
 		Info_ClearChoices (DIA_Addon_Lucia_Paladine);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Gespräch beenden.",DIA_Addon_Lucia_Paladine_BACK);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Die Paladine kämpfen nicht nur in seinem Namen. Innos erwählt seine Krieger. ",DIA_Addon_Lucia_Paladine_WAHL);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Die Paladine sind die Kämpfer Innos. Es sind keine Mörder. ",DIA_Addon_Lucia_Paladine_MURDER);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"GesprÃ¤ch beenden.",DIA_Addon_Lucia_Paladine_BACK);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Die Paladine kÃ¤mpfen nicht nur in seinem Namen. Innos erwÃ¤hlt seine Krieger. ",DIA_Addon_Lucia_Paladine_WAHL);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Die Paladine sind die KÃ¤mpfer Innos. Es sind keine MÃ¶rder. ",DIA_Addon_Lucia_Paladine_MURDER);
 		
 	};
 };
@@ -211,32 +211,32 @@ FUNC VOID DIA_Addon_Lucia_Paladine_BACK()
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_WAHL()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WAHL_15_00");//Die Paladine kämpfen nicht nur in seinem Namen. Innos erwählt seine Krieger.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_01");//So? Ich glaube, es sind die Menschen, die sich selbst erwählen.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_02");//Jedoch, deine Worte verwundern mich. Du sprichst fast so, als wärst du einer von ihnen.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WAHL_15_00");//Die Paladine kÃ¤mpfen nicht nur in seinem Namen. Innos erwÃ¤hlt seine Krieger.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_01");//So? Ich glaube, es sind die Menschen, die sich selbst erwÃ¤hlen.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_02");//Jedoch, deine Worte verwundern mich. Du sprichst fast so, als wÃ¤rst du einer von ihnen.
 	
-	Info_AddChoice (DIA_Addon_Lucia_Paladine,"Hast du schon mal einem Menschen getötet? ",DIA_Addon_Lucia_Paladine_KILL);
+	Info_AddChoice (DIA_Addon_Lucia_Paladine,"Hast du schon mal einem Menschen getÃ¶tet? ",DIA_Addon_Lucia_Paladine_KILL);
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_KILL()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_KILL_15_00");//Hast du schon mal einem Menschen getötet?
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_KILL_15_00");//Hast du schon mal einem Menschen getÃ¶tet?
 	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_01");//Nein, und ich bin auch sehr froh darum.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_02");//Bitte, lass uns nicht länger solch ernste Worte wechseln.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_03");//Trinken wir lieber und erfreuen wir uns an jedem Augenblick, den uns die Götter schenken.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_02");//Bitte, lass uns nicht lÃ¤nger solch ernste Worte wechseln.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_03");//Trinken wir lieber und erfreuen wir uns an jedem Augenblick, den uns die GÃ¶tter schenken.
 	
 	Info_ClearChoices (DIA_Addon_Lucia_Paladine);
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_WEIB()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WEIB_15_00");//Verleugnest du etwa Innos, Weib?
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_01");//Wie könnte ich das tun? Es sind Menschen, die seinen Namen mißbrauchen.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_02");//Doch zweifle ich keine Sekunde an Innos' göttlicher Herrlichkeit.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_01");//Wie kÃ¶nnte ich das tun? Es sind Menschen, die seinen Namen miÃŸbrauchen.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_02");//Doch zweifle ich keine Sekunde an Innos' gÃ¶ttlicher Herrlichkeit.
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_MURDER()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_MURDER_15_00");//Die Paladine sind die Kämpfer Innos'. Es sind keine Mörder.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_MURDER_15_00");//Die Paladine sind die KÃ¤mpfer Innos'. Es sind keine MÃ¶rder.
 	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_01");//So? An ihren Schwertern klebt auch Blut - genau wie an den Waffen der Banditen oder Piraten.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_02");//Der einzige Unterschied ist, sie tun es in Innos' Namen und nicht, weil sie überleben wollen.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_02");//Der einzige Unterschied ist, sie tun es in Innos' Namen und nicht, weil sie Ã¼berleben wollen.
 	
 	Info_AddChoice (DIA_Addon_Lucia_Paladine,"Verleugnest du etwa Innos, Weib?",DIA_Addon_Lucia_Paladine_WEIB);
 };

@@ -77,7 +77,7 @@ FUNC INT DIA_Addon_Finn_Hacker_Condition()
 FUNC VOID DIA_Addon_Finn_Hacker_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hacker_15_00"); //Wieder bei der Arbeit?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hacker_07_01"); //Ja, jetzt hole ich auch noch das letzte Stück Gold aus dieser Mine.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hacker_07_01"); //Ja, jetzt hole ich auch noch das letzte StÃ¼ck Gold aus dieser Mine.
 };
 //----------------------------------------------------------------------
 //	Info Hacke
@@ -123,9 +123,9 @@ FUNC INT DIA_Addon_Finn_Hacke_Condition()
 FUNC VOID DIA_Addon_Finn_Hacke_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_Finn_Hacke_15_00"); //Wo kriege ich 'ne Spitzhacke her?
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_01"); //Geh zu Huno dem Schmied. Aber selbst wenn du eine Hacke hast, heißt das noch nicht, dass du auch in die Mine kommst.
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_01"); //Geh zu Huno dem Schmied. Aber selbst wenn du eine Hacke hast, heiÃŸt das noch nicht, dass du auch in die Mine kommst.
 	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_02"); //Wenn du rein willst, musst du mit Esteban sprechen.
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_03"); //Zu Thorus brauchst du gar nicht erst zu gehen - der lässt dich nur rein, wenn du 'nen roten Stein hast.
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_03"); //Zu Thorus brauchst du gar nicht erst zu gehen - der lÃ¤sst dich nur rein, wenn du 'nen roten Stein hast.
 };
 
 //----------------------------------------------------------------------
@@ -138,7 +138,7 @@ INSTANCE DIA_Addon_Finn_Esteban   (C_INFO)
 	condition   = DIA_Addon_Finn_Esteban_Condition;
 	information = DIA_Addon_Finn_Esteban_Info;
 	permanent   = FALSE;
-	description = "Sag mal, was hältst du von Esteban?";
+	description = "Sag mal, was hÃ¤ltst du von Esteban?";
 };
 FUNC INT DIA_Addon_Finn_Esteban_Condition()
 {	
@@ -149,9 +149,9 @@ FUNC INT DIA_Addon_Finn_Esteban_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Esteban_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_Esteban_15_00"); //Sag mal, was hältst du von Esteban?
+	AI_Output (other, self, "DIA_Addon_Finn_Esteban_15_00"); //Sag mal, was hÃ¤ltst du von Esteban?
 	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_01"); //(vorsichtig) Er ist der Boss hier ... er ... ist ganz okay, denke ich.
-	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_02"); //(zögernd) Die guten Jungs lässt er immer in die Mine. Die was vom Schürfen verstehen, meine ich.
+	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_02"); //(zÃ¶gernd) Die guten Jungs lÃ¤sst er immer in die Mine. Die was vom SchÃ¼rfen verstehen, meine ich.
 };
 
 //----------------------------------------------------------------------
@@ -164,7 +164,7 @@ INSTANCE DIA_Addon_Finn_Profi (C_INFO)
 	condition   = DIA_Addon_Finn_Profi_Condition;
 	information = DIA_Addon_Finn_Profi_Info;
 	permanent   = FALSE;
-	description = "Und du verstehst was vom Schürfen?";
+	description = "Und du verstehst was vom SchÃ¼rfen?";
 };
 FUNC INT DIA_Addon_Finn_Profi_Condition()
 {	
@@ -175,7 +175,7 @@ FUNC INT DIA_Addon_Finn_Profi_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Profi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_Profi_15_00"); //Und du verstehst was vom Schürfen?
+	AI_Output (other, self, "DIA_Addon_Finn_Profi_15_00"); //Und du verstehst was vom SchÃ¼rfen?
 	AI_Output (self, other, "DIA_Addon_Finn_Profi_07_01"); //Ich bin der Beste!
 };
 
@@ -207,9 +207,9 @@ FUNC VOID DIA_Addon_Finn_Mine_Info()
 	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_00"); //Alles klar, Chef. Du willst den Besten in der Mine sehen? Dann will ich mal wieder ...
 	
 	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_01");//Ach, noch was. Ich verrate dir mal ein Buddlergeheimnis.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_02");//Ab und zu bietet es sich an, einen Trümmerschlag anzusetzen.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_03");//Wenn du ein paar mal gehackt hast und es ist nichts dabei rumgekommen, dann zieh die Spitze der Hacke quer über den Fels.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_04");//Mit etwas Glück kriegst du so gleich mehrere Brocken.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_02");//Ab und zu bietet es sich an, einen TrÃ¼mmerschlag anzusetzen.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_03");//Wenn du ein paar mal gehackt hast und es ist nichts dabei rumgekommen, dann zieh die Spitze der Hacke quer Ã¼ber den Fels.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_04");//Mit etwas GlÃ¼ck kriegst du so gleich mehrere Brocken.
 	
 	B_Upgrade_hero_HackChance(10);
 	Knows_Truemmerschlag = TRUE;
@@ -243,14 +243,14 @@ FUNC VOID DIA_Addon_Finn_Gold_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
 	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_00");//Na, da gibt's einiges zu wissen. Gold ist kein Erz. Das ist ein verdammt wichtiger Unterschied.
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_01");//Ich meine, welche Frau hängt sich schon 'ne Kette aus Erz um den Hals? (lacht)
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_01");//Ich meine, welche Frau hÃ¤ngt sich schon 'ne Kette aus Erz um den Hals? (lacht)
 	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_02");//Beim Hacken arbeitet man von oben nach unten. So kannst du die Nuggets am besten freilegen.
 	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_03");//Es gibt auch Buddler, die es umgekehrt machen - aber das ist ungleich schwieriger.
 
 	B_Upgrade_hero_HackChance(10);
 };
 //---------------------------------------------------------------------
-//	Info einschätzen
+//	Info einschÃ¤tzen
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 {
@@ -259,7 +259,7 @@ INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 	condition   = DIA_Addon_Finn_ein_Condition;
 	information = DIA_Addon_Finn_ein_Info;
 	permanent   = TRUE;
-	description = "Kannst du meine Fähigkeit im Goldhacken einschätzen?";
+	description = "Kannst du meine FÃ¤higkeit im Goldhacken einschÃ¤tzen?";
 };
 FUNC INT DIA_Addon_Finn_ein_Condition()
 {	
@@ -272,26 +272,26 @@ var int Finn_einmal;
 var int Finn_Gratulation;
 FUNC VOID DIA_Addon_Finn_ein_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_ein_15_00");//Kannst du meine Fähigkeit im Goldhacken einschätzen?
+	AI_Output (other, self, "DIA_Addon_Finn_ein_15_00");//Kannst du meine FÃ¤higkeit im Goldhacken einschÃ¤tzen?
 	
 	if (Finn_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_01");//Klar. Ich mache das schon seit über 35 Jahren. Es gibt nichts, das ich nicht erkenne!
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_01");//Klar. Ich mache das schon seit Ã¼ber 35 Jahren. Es gibt nichts, das ich nicht erkenne!
 		Finn_einmal = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_Finn_ein_07_02");//Bei dir würde ich sagen, du bist ein ...
+	AI_Output (self, other, "DIA_Addon_Finn_ein_07_02");//Bei dir wÃ¼rde ich sagen, du bist ein ...
 
 	if (Hero_HackChance < 20)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_03"); //blutiger Anfänger.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_03"); //blutiger AnfÃ¤nger.
 	}
 	else if (Hero_HackChance < 40)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_04"); //ganz passabler Schürfer.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_04"); //ganz passabler SchÃ¼rfer.
 	}
 	else if (Hero_HackChance < 55)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_05"); //erfahrener Goldschürfer.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_05"); //erfahrener GoldschÃ¼rfer.
 	}
 	else if (Hero_HackChance < 75)
 	{
@@ -311,7 +311,7 @@ FUNC VOID DIA_Addon_Finn_ein_Info()
 		
 		if (Finn_Gratulation == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Finn_ein_07_10");//Damit bist du jetzt so gut wie ich. Herzlichen Glückwunsch, Partner!
+			AI_Output (self, other, "DIA_Addon_Finn_ein_07_10");//Damit bist du jetzt so gut wie ich. Herzlichen GlÃ¼ckwunsch, Partner!
 			B_GivePlayerXP (XP_Ambient*2);
 			Snd_Play ("LevelUP");
 			Finn_Gratulation = TRUE;
@@ -359,20 +359,20 @@ FUNC VOID DIA_Addon_Finn_Attentat_Info()
 	
 func void B_Addon_Finn_TellAll()
 {
-	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_00"); //(erzählt) Als das Attentat passierte, wollte ich mir von Huno, dem Schmied, meine Spitzhacke abholen.
+	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_00"); //(erzÃ¤hlt) Als das Attentat passierte, wollte ich mir von Huno, dem Schmied, meine Spitzhacke abholen.
 	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_01"); //Aber er war nicht da.
 	AI_Output (other, self, "DIA_Addon_Finn_TellAll_15_02"); //Und?
-	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_03"); //Er ist sonst IMMER da. SEHR verdächtig, wenn du mich fragst.
+	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_03"); //Er ist sonst IMMER da. SEHR verdÃ¤chtig, wenn du mich fragst.
 	
 	Finn_TellAll = TRUE;
-	B_LogEntry (Topic_Addon_Esteban, "Finn erzählt, das Huno während des Attentats nicht anwesend war.");
+	B_LogEntry (Topic_Addon_Esteban, "Finn erzÃ¤hlt, das Huno wÃ¤hrend des Attentats nicht anwesend war.");
 };
 	
 func void DIA_Addon_Finn_Attentat_ForTheBoss()
 {
 	AI_Output (other, self, "DIA_Addon_Finn_ForTheBoss_15_00"); //Esteban will ihn tot sehen!
-	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_01"); //Oh! Du arbeitest für den Boss?
-	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_02"); //Dann werd' ich dir sagen, was ich weiß.
+	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_01"); //Oh! Du arbeitest fÃ¼r den Boss?
+	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_02"); //Dann werd' ich dir sagen, was ich weiÃŸ.
 	
 	B_Addon_Finn_TellAll();
 	
@@ -386,13 +386,13 @@ func void DIA_Addon_Finn_Attentat_WannaTalk()
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
 	Info_AddChoice (DIA_Addon_Finn_Attentat,"Das geht dich nichts an!",DIA_Addon_Finn_Attentat_ForgetIt);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Ich habe interessante Informationen für ihn!",DIA_Addon_Finn_Attentat_HaveInfos);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Ich will Esteban umlegen und suche einen Verbündeten!",DIA_Addon_Finn_Attentat_KillEsteban);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Ich habe interessante Informationen fÃ¼r ihn!",DIA_Addon_Finn_Attentat_HaveInfos);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Ich will Esteban umlegen und suche einen VerbÃ¼ndeten!",DIA_Addon_Finn_Attentat_KillEsteban);
 };	
 		
 func void DIA_Addon_Finn_Attentat_KillEsteban()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_KillEsteban_15_00"); //Ich will Esteban umlegen und suche einen Verbündeten!
+	AI_Output (other, self, "DIA_Addon_Finn_KillEsteban_15_00"); //Ich will Esteban umlegen und suche einen VerbÃ¼ndeten!
 	AI_Output (self, other, "DIA_Addon_Finn_KillEsteban_07_01"); //Damit will ich nichts zu tun haben!
 	
 	Finn_Petzt = TRUE;
@@ -403,11 +403,11 @@ func void DIA_Addon_Finn_Attentat_KillEsteban()
 
 func void DIA_Addon_Finn_Attentat_HaveInfos()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_HaveInfos_15_00"); //Ich habe interessante Informationen für ihn!
+	AI_Output (other, self, "DIA_Addon_Finn_HaveInfos_15_00"); //Ich habe interessante Informationen fÃ¼r ihn!
 	AI_Output (self, other, "DIA_Addon_Finn_HaveInfos_07_01"); //Du steckst doch nicht etwa mit dem Auftraggeber unter einer Decke, was?
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Ich will Esteban umlegen und suche einen Verbündeten!",DIA_Addon_Finn_Attentat_KillEsteban);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Ich will Esteban umlegen und suche einen VerbÃ¼ndeten!",DIA_Addon_Finn_Attentat_KillEsteban);
 	Info_AddChoice (DIA_Addon_Finn_Attentat,"Das geht dich nichts an!",DIA_Addon_Finn_Attentat_ForgetIt);
 	Info_AddChoice (DIA_Addon_Finn_Attentat,"Auf keinen Fall!",DIA_Addon_Finn_Attentat_NoNo);
 };
@@ -415,7 +415,7 @@ func void DIA_Addon_Finn_Attentat_HaveInfos()
 	func void DIA_Addon_Finn_Attentat_NoNo()
 	{
 		AI_Output (other, self, "DIA_Addon_Finn_NoNo_15_00"); //Auf keinen Fall!
-		AI_Output (self, other, "DIA_Addon_Finn_NoNo_07_01"); //(abschätzend) Gut! Ich werde dir sagen, was ich weiß.
+		AI_Output (self, other, "DIA_Addon_Finn_NoNo_07_01"); //(abschÃ¤tzend) Gut! Ich werde dir sagen, was ich weiÃŸ.
 		
 		B_Addon_Finn_TellAll();
 		Info_ClearChoices (DIA_Addon_Finn_Attentat);
@@ -424,7 +424,7 @@ func void DIA_Addon_Finn_Attentat_HaveInfos()
 func void DIA_Addon_Finn_Attentat_ForgetIt()
 {	
 	AI_Output (other, self, "DIA_Addon_Finn_ForgetIt_15_00"); //Das geht dich nichts an!
-	AI_Output (self, other, "DIA_Addon_Finn_ForgetIt_07_01"); //So? Tja, dann weiß ich auch nichts über die Sache.
+	AI_Output (self, other, "DIA_Addon_Finn_ForgetIt_07_01"); //So? Tja, dann weiÃŸ ich auch nichts Ã¼ber die Sache.
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
 };
@@ -454,28 +454,28 @@ FUNC VOID DIA_Addon_Finn_Again_Info()
 	AI_Output (other, self, "DIA_Addon_Finn_Again_15_00"); //Nochmal wegen des Attentats ...
 	if (Finn_TellAll == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_Again_07_01"); //Ich hab dir alles gesagt, was ich weiß.
+		AI_Output (self, other, "DIA_Addon_Finn_Again_07_01"); //Ich hab dir alles gesagt, was ich weiÃŸ.
 		
 		Info_ClearChoices (DIA_Addon_Finn_Again);
-		Info_AddChoice (DIA_Addon_Finn_Again, "Okay... (zurück)", DIA_Addon_Finn_Again_Exit);
-		Info_AddChoice (DIA_Addon_Finn_Again, "Dann erzähl's mir nochmal!", DIA_Addon_Finn_Again_Nochmal);		
+		Info_AddChoice (DIA_Addon_Finn_Again, "Okay... (zurÃ¼ck)", DIA_Addon_Finn_Again_Exit);
+		Info_AddChoice (DIA_Addon_Finn_Again, "Dann erzÃ¤hl's mir nochmal!", DIA_Addon_Finn_Again_Nochmal);		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_Again_07_02"); //Lass mich bloß in Ruhe mit der Scheiße!
+		AI_Output (self, other, "DIA_Addon_Finn_Again_07_02"); //Lass mich bloÃŸ in Ruhe mit der ScheiÃŸe!
 		AI_StopProcessInfos(self);
 	};
 };
 
 func void DIA_Addon_Finn_Again_Exit()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_Again_Exit_15_00"); //(abschätzend) Okay ...
+	AI_Output (other, self, "DIA_Addon_Finn_Again_Exit_15_00"); //(abschÃ¤tzend) Okay ...
 	Info_ClearChoices (DIA_Addon_Finn_Again);
 };
 
 func void DIA_Addon_Finn_Again_Nochmal()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_Again_Nochmal_15_00"); //Dann erzähl's mir noch mal!
+	AI_Output (other, self, "DIA_Addon_Finn_Again_Nochmal_15_00"); //Dann erzÃ¤hl's mir noch mal!
 	
 	B_Addon_Finn_TellAll();
 	

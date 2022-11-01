@@ -47,7 +47,7 @@ FUNC VOID DIA_STRF_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_00"); //Wenn ich mich damals rechtzeitig abgesetzt hätte, dann müsste ich jetzt nicht wieder für die Schweine schuften!
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_00"); //Wenn ich mich damals rechtzeitig abgesetzt hÃ¤tte, dann mÃ¼sste ich jetzt nicht wieder fÃ¼r die Schweine schuften!
 	};
 	if (randy == 1)
 	{
@@ -55,7 +55,7 @@ FUNC VOID DIA_STRF_1_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_02"); //Wenn du das essen müsstest, was sie uns zum Fraß vorwerfen, würdest du auch anfangen über eine Revolte nachzudenken!
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_02"); //Wenn du das essen mÃ¼sstest, was sie uns zum FraÃŸ vorwerfen, wÃ¼rdest du auch anfangen Ã¼ber eine Revolte nachzudenken!
 	};
 	
 	AI_StopProcessInfos	(self);

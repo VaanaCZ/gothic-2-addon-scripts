@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Myxir_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_NW_PICKPOCKET_Condition()
@@ -95,7 +95,7 @@ func int DIA_Addon_Myxir_Hallo_Condition ()
 func void DIA_Addon_Myxir_Hallo_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Alles klar?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Ganz schön mutig von dir, hier einfach so reinzuspazieren.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Ganz schÃ¶n mutig von dir, hier einfach so reinzuspazieren.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WasMachstDu
@@ -122,8 +122,8 @@ func void DIA_Addon_Myxir_WasMachstDu_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Was machst du hier?
 	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //Ich studiere die Sprache der Erbauer.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //Die Sprache ist der Schlüssel zum Verständnis des alten Volkes.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Jeder von uns muss sie erlernen, sonst wäre diese Expedition beendet, bevor sie überhaupt angefangen hat.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //Die Sprache ist der SchlÃ¼ssel zum VerstÃ¤ndnis des alten Volkes.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Jeder von uns muss sie erlernen, sonst wÃ¤re diese Expedition beendet, bevor sie Ã¼berhaupt angefangen hat.
 	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Die Erbauer haben Steintafeln benutzt, um ihr Wissen weiterzugeben. Leider sind viele davon zerbrochen oder wurden schon vor langer Zeit gestohlen.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -150,13 +150,13 @@ func void DIA_Addon_Myxir_Steintafeln_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //Was steht denn so auf diesen Steintafeln?
 	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //Sie enthalten das gesammelte Wissen des alten Volkes.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Manche von ihnen erhöhen auf magische Weise das Wissen über Kampf und Magie.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Für jemanden, der die Tafeln lesen kann, sind sie ein wahrer Schatz.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Manche von ihnen erhÃ¶hen auf magische Weise das Wissen Ã¼ber Kampf und Magie.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //FÃ¼r jemanden, der die Tafeln lesen kann, sind sie ein wahrer Schatz.
 
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Stoneplates,"Die Steintafeln enthalten das Wissen des alten Volkes der Erbauer. Manche von ihnen erhöhen auf magische Weise das Wissen über Kampf und Magie. Doch dafür muss man sie lesen können."); 
+	B_LogEntry (TOPIC_Addon_Stoneplates,"Die Steintafeln enthalten das Wissen des alten Volkes der Erbauer. Manche von ihnen erhÃ¶hen auf magische Weise das Wissen Ã¼ber Kampf und Magie. Doch dafÃ¼r muss man sie lesen kÃ¶nnen."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WillYouTeachMe

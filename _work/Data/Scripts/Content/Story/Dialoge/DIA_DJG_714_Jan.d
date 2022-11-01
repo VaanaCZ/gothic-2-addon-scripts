@@ -23,7 +23,7 @@ FUNC VOID DIA_Jan_EXIT_Info()
 };
 
 //***********
-//	Begrüßung
+//	BegrÃ¼ÃŸung
 //***********
 
 INSTANCE DIA_JAN_Hello (C_INFO)
@@ -49,7 +49,7 @@ FUNC INT DIA_Jan_Hello_Condition()
 FUNC VOID DIA_Jan_Hello_Info()
 {		
 		AI_Output (self ,other,"DIA_Jan_Hello_10_00"); //War eine Riesenschnapsidee, hier herzukommen.
-		AI_Output (self ,other,"DIA_Jan_Hello_10_01"); //Ich dachte, hier gibt's was zu holen. Aber hier ist nichts, außer ein paar eingebildeten Paladinen und Orks.
+		AI_Output (self ,other,"DIA_Jan_Hello_10_01"); //Ich dachte, hier gibt's was zu holen. Aber hier ist nichts, auÃŸer ein paar eingebildeten Paladinen und Orks.
 };
 
 //*******************************************
@@ -80,18 +80,18 @@ FUNC INT DIA_Jan_Dragons_Condition()
 FUNC VOID DIA_Jan_Dragons_Info()
 {		
 		AI_Output (other,self ,"DIA_Jan_Dragons_15_00"); //Du hast die Drachen vergessen!
-		AI_Output (self ,other,"DIA_Jan_Dragons_10_01"); //(spöttisch) Wie konnte ich die nur vergessen. Ich sag dir mal was. Ich bin Schmied, kein Kämpfer.
-		AI_Output (self ,other,"DIA_Jan_Dragons_10_02"); //Ich stelle Waffen her, das Kämpfen überlasse ich lieber anderen.
+		AI_Output (self ,other,"DIA_Jan_Dragons_10_01"); //(spÃ¶ttisch) Wie konnte ich die nur vergessen. Ich sag dir mal was. Ich bin Schmied, kein KÃ¤mpfer.
+		AI_Output (self ,other,"DIA_Jan_Dragons_10_02"); //Ich stelle Waffen her, das KÃ¤mpfen Ã¼berlasse ich lieber anderen.
 		AI_Output (other,self ,"DIA_Jan_Dragons_15_03"); //Warum stehst du dann nicht hinter dem Amboss?
 		AI_Output (self ,other,"DIA_Jan_Dragons_10_04"); //Die Paladine hier lassen mich nicht in die Schmiede. Ich darf hier nichts machen, sonst wandere ich direkt in den Kerker.
 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Jan_Dragons_10_05"); //Du gehörst doch auch zu dem Verein. Du könntest eigentlich mal ein gutes Wort für mich einlegen.
+			AI_Output (self ,other,"DIA_Jan_Dragons_10_05"); //Du gehÃ¶rst doch auch zu dem Verein. Du kÃ¶nntest eigentlich mal ein gutes Wort fÃ¼r mich einlegen.
 		};
 
 		Info_ClearChoices (DIA_JAN_Dragons);
-		Info_AddChoice (DIA_JAN_Dragons,"Ich muß weiter.",DIA_JAN_Dragons_ShitHappen);
+		Info_AddChoice (DIA_JAN_Dragons,"Ich muÃŸ weiter.",DIA_JAN_Dragons_ShitHappen);
 		Info_AddChoice (DIA_JAN_Dragons,"Was krieg ich, wenn ich dir helfe?",DIA_JAN_Dragons_Reward);
 		Info_AddChoice (DIA_JAN_Dragons,"Ich werde versuche dir zu helfen.",DIA_JAN_Dragons_HelpYou);
 };
@@ -100,13 +100,13 @@ FUNC VOID DIA_JAN_Dragons_HelpYou ()
 {	
 	AI_Output (other,self ,"DIA_JAN_Dragons_HelpYou_15_00"); //Ich werde versuchen, dir zu helfen.
 	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_01"); //Wie willst du das denn erreichen? Parcival hat befohlen, uns im Auge zu behalten.
-	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_02"); //Niemand wird wagen, sich darüber hinwegzusetzen.
+	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_02"); //Niemand wird wagen, sich darÃ¼ber hinwegzusetzen.
 	AI_Output (other,self ,"DIA_JAN_Dragons_HelpYou_15_03"); //Ich werde versuchen, was ich kann.
-	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_04"); //Ich kann mir nicht vorstellen, dass er auf dich hört.
+	AI_Output (self ,other,"DIA_JAN_Dragons_HelpYou_10_04"); //Ich kann mir nicht vorstellen, dass er auf dich hÃ¶rt.
 	
 	Log_CreateTopic (TOPIC_JanBecomesSmith, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_JanBecomesSmith, LOG_RUNNING);
-	B_LogEntry (TOPIC_JanBecomesSmith,"Jan der Drachenjäger in der Burg im Minental will an der Schmiede arbeiten. Parcival hat es ihm allerdings verboten."); 
+	B_LogEntry (TOPIC_JanBecomesSmith,"Jan der DrachenjÃ¤ger in der Burg im Minental will an der Schmiede arbeiten. Parcival hat es ihm allerdings verboten."); 
 
 
 	MIS_JanBecomesSmith = LOG_RUNNING;
@@ -116,11 +116,11 @@ FUNC VOID DIA_JAN_Dragons_HelpYou ()
 FUNC VOID DIA_JAN_Dragons_Reward ()
 {
 	AI_Output (other,self ,"DIA_JAN_Dragons_Reward_15_00"); //Was kriege ich, wenn ich dir helfe?
-	AI_Output (self ,other,"DIA_JAN_Dragons_Reward_10_01"); //Ich habe nichts. Ich könnte dir höchstens etwas beibringen.
+	AI_Output (self ,other,"DIA_JAN_Dragons_Reward_10_01"); //Ich habe nichts. Ich kÃ¶nnte dir hÃ¶chstens etwas beibringen.
 	if (hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_JAN_Dragons_Reward_10_02"); //Ich kenne eine Methode, wie man Klingen aus magischem Erz noch härter machen kann.
+		AI_Output (self ,other,"DIA_JAN_Dragons_Reward_10_02"); //Ich kenne eine Methode, wie man Klingen aus magischem Erz noch hÃ¤rter machen kann.
 	};
 	Jan_TeachPlayer = TRUE;
 };
@@ -128,7 +128,7 @@ FUNC VOID DIA_JAN_Dragons_Reward ()
 FUNC VOID DIA_JAN_Dragons_ShitHappen ()
 {
 	AI_Output (other,self ,"DIA_JAN_Dragons_ShitHappen_15_00"); //Ich muss weiter.
-	AI_Output (self ,other,"DIA_JAN_Dragons_ShitHappen_10_01"); //Großartig. Ich komme nicht mehr aus der Burg raus und schmieden kann ich auch nicht.
+	AI_Output (self ,other,"DIA_JAN_Dragons_ShitHappen_10_01"); //GroÃŸartig. Ich komme nicht mehr aus der Burg raus und schmieden kann ich auch nicht.
 
 	Info_ClearChoices (DIA_JAN_Dragons);
 };
@@ -159,8 +159,8 @@ FUNC INT DIA_Jan_Home_Condition()
 FUNC VOID DIA_Jan_Home_Info()
 {		
 		AI_Output (other,self ,"DIA_Jan_Home_15_00"); //Wo kommst du her?
-		AI_Output (self ,other,"DIA_Jan_Home_10_01"); //Ich hab mich ein paar Männern aus den Bergen angeschlossen. Wir wollten ins Tal und bei der Drachenjagd richtig Gewinn machen.
-		AI_Output (self ,other,"DIA_Jan_Home_10_02"); //Ihr Anführer hieß Sylvio. Junge, war das ein Arsch. Er hat mich behandelt, als wäre ich sein Eigentum.
+		AI_Output (self ,other,"DIA_Jan_Home_10_01"); //Ich hab mich ein paar MÃ¤nnern aus den Bergen angeschlossen. Wir wollten ins Tal und bei der Drachenjagd richtig Gewinn machen.
+		AI_Output (self ,other,"DIA_Jan_Home_10_02"); //Ihr AnfÃ¼hrer hieÃŸ Sylvio. Junge, war das ein Arsch. Er hat mich behandelt, als wÃ¤re ich sein Eigentum.
 };
 
 //*******************************************
@@ -190,7 +190,7 @@ FUNC INT DIA_Jan_OldCamp_Condition()
 FUNC VOID DIA_Jan_OldCamp_Info()
 {		
 		AI_Output (other,self ,"DIA_Jan_OldCamp_15_00"); //Was ist in der Burg alles passiert?
-		AI_Output (self ,other,"DIA_Jan_OldCamp_10_01"); //Nichts, was ich mitbekommen hätte. Allerdings mach ich mir Sorgen über das, was VOR der Burg passiert ist.
+		AI_Output (self ,other,"DIA_Jan_OldCamp_10_01"); //Nichts, was ich mitbekommen hÃ¤tte. Allerdings mach ich mir Sorgen Ã¼ber das, was VOR der Burg passiert ist.
 };
 //*******************************************
 //	Ich hab mit Parcival geredet
@@ -223,14 +223,14 @@ FUNC VOID DIA_Jan_Parcival_Info()
 
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (other,self ,"DIA_Jan_Parcival_15_02"); //Er traut uns Drachenjägern nicht.
+			AI_Output (other,self ,"DIA_Jan_Parcival_15_02"); //Er traut uns DrachenjÃ¤gern nicht.
 		}
 		else
 		{
-			AI_Output (other,self ,"DIA_Jan_Parcival_15_03"); //Er traut euch Drachenjägern nicht.
+			AI_Output (other,self ,"DIA_Jan_Parcival_15_03"); //Er traut euch DrachenjÃ¤gern nicht.
 		};
 		AI_Output (self ,other,"DIA_Jan_Parcival_10_04"); //Verdammt. Ich will doch nur arbeiten.
-		AI_Output (self ,other,"DIA_Jan_Parcival_10_05"); //Dann kann ich das wohl aufgeben. Nur Garond könnte mir weiterhelfen.
+		AI_Output (self ,other,"DIA_Jan_Parcival_10_05"); //Dann kann ich das wohl aufgeben. Nur Garond kÃ¶nnte mir weiterhelfen.
 };
 
 
@@ -261,8 +261,8 @@ FUNC VOID DIA_Jan_JanIsSmith_Info()
 {		
 		AI_Output (other,self ,"DIA_Jan_JanIsSmith_15_00"); //Hol deinen Hammer, du hast Arbeit.
 		AI_Output (self ,other,"DIA_Jan_JanIsSmith_10_01"); //Du hast es geschafft? Wie hast du das denn angestellt?
-		AI_Output (other,self ,"DIA_Jan_JanIsSmith_15_02"); //Ich musste für dich bürgen, also enttäusch mich nicht.
-		AI_Output (self ,other,"DIA_Jan_JanIsSmith_10_03"); //Du kannst ganz beruhigt sein. Ich bin froh, dass ich überhaupt arbeiten kann.
+		AI_Output (other,self ,"DIA_Jan_JanIsSmith_15_02"); //Ich musste fÃ¼r dich bÃ¼rgen, also enttÃ¤usch mich nicht.
+		AI_Output (self ,other,"DIA_Jan_JanIsSmith_10_03"); //Du kannst ganz beruhigt sein. Ich bin froh, dass ich Ã¼berhaupt arbeiten kann.
 
 		AI_StopProcessInfos (self);
 	
@@ -304,7 +304,7 @@ FUNC VOID DIA_Jan_SellWeapons_Info()
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Jan_SellWeapons_10_02"); //Ich würde, wenn ich könnte. Doch zunächst muss ich die Paladine hier in der Burg mit Waffen versorgen.
+			AI_Output (self ,other,"DIA_Jan_SellWeapons_10_02"); //Ich wÃ¼rde, wenn ich kÃ¶nnte. Doch zunÃ¤chst muss ich die Paladine hier in der Burg mit Waffen versorgen.
 		};
 
 		AI_Output (self ,other,"DIA_Jan_SellWeapons_10_03"); //Aber ich kann dir zeigen, wie du selber deine Waffe schmieden kannst.
@@ -409,7 +409,7 @@ FUNC VOID Jan_Training_Smith_2hSpecial2 ()
 };
 
 //*******************************************
-//	Kann ich bei dir Rüstungen kaufen?
+//	Kann ich bei dir RÃ¼stungen kaufen?
 //*******************************************
 
 //-------------------------------------
@@ -423,7 +423,7 @@ INSTANCE DIA_JAN_SellArmor (C_INFO)
 	condition	= DIA_Jan_SellArmor_Condition;
 	information	= DIA_Jan_SellArmor_Info;
 	permanent	= TRUE;
-	description	= "Kann ich bei dir eine Rüstung kaufen?";
+	description	= "Kann ich bei dir eine RÃ¼stung kaufen?";
 };                       
 
 FUNC INT DIA_Jan_SellArmor_Condition()
@@ -439,19 +439,19 @@ FUNC INT DIA_Jan_SellArmor_Condition()
  
 FUNC VOID DIA_Jan_SellArmor_Info()
 {		
-		AI_Output (other,self ,"DIA_Jan_SellArmor_15_00"); //Kann ich bei dir eine Rüstung kaufen?
+		AI_Output (other,self ,"DIA_Jan_SellArmor_15_00"); //Kann ich bei dir eine RÃ¼stung kaufen?
 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Jan_SellArmor_10_01"); //Nichts, was besser wäre als deine Rüstung. Also sollten wir das lassen.
+			AI_Output (self ,other,"DIA_Jan_SellArmor_10_01"); //Nichts, was besser wÃ¤re als deine RÃ¼stung. Also sollten wir das lassen.
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Jan_SellArmor_10_02"); //Ein Magier, der eine Rüstung haben will? Nein, du solltest einen Schneider aufsuchen. Ich kann dir keine Rüstung machen.
+			AI_Output (self ,other,"DIA_Jan_SellArmor_10_02"); //Ein Magier, der eine RÃ¼stung haben will? Nein, du solltest einen Schneider aufsuchen. Ich kann dir keine RÃ¼stung machen.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Jan_SellArmor_10_03"); //Wenn ich welche hätte, würde ich sie dir verkaufen. Leider habe ich keine.
+			AI_Output (self ,other,"DIA_Jan_SellArmor_10_03"); //Wenn ich welche hÃ¤tte, wÃ¼rde ich sie dir verkaufen. Leider habe ich keine.
 			
 			Info_ClearChoices (DIA_JAN_SellArmor);
 			Info_AddChoice (DIA_JAN_SellArmor,"Da kann man wohl nichts machen.",DIA_JAN_SellArmor_Sorry);
@@ -472,15 +472,15 @@ FUNC VOID DIA_JAN_SellArmor_BuildOne()
 	AI_Output (other,self ,"DIA_JAN_SellArmor_BuildOne_15_00"); //Kannst du mir denn eine anfertigen?
 	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_01"); //Nun, wenn du was Besseres haben willst, musst du mir schon die Materialen beschaffen.
 	AI_Output (other,self ,"DIA_JAN_SellArmor_BuildOne_15_02"); //Was brauchst du?
-	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_03"); //Du willst doch gegen die Drachen kämpfen. Bring mir Drachenschuppen, damit müsste ich dir was zusammenzimmern können.
-	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_04"); //20 Stück sollten reichen.
+	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_03"); //Du willst doch gegen die Drachen kÃ¤mpfen. Bring mir Drachenschuppen, damit mÃ¼sste ich dir was zusammenzimmern kÃ¶nnen.
+	AI_Output (self ,other,"DIA_JAN_SellArmor_BuildOne_10_04"); //20 StÃ¼ck sollten reichen.
 	
 	DIA_JAN_SellArmor_permanent = TRUE;
 	Info_ClearChoices (DIA_JAN_SellArmor);
 };
 
 //*******************************************
-//	Ich habe die Drachenschuppen für dich.
+//	Ich habe die Drachenschuppen fÃ¼r dich.
 //*******************************************
 
 //-------------------------------------------
@@ -494,7 +494,7 @@ INSTANCE DIA_JAN_Dragonscales (C_INFO)
 	condition	= DIA_Jan_Dragonscales_Condition;
 	information	= DIA_Jan_Dragonscales_Info;
 	permanent	= TRUE;
-	description	= "Ich habe die Drachenschuppen für dich.";
+	description	= "Ich habe die Drachenschuppen fÃ¼r dich.";
 };                       
 
 FUNC INT DIA_Jan_Dragonscales_Condition()
@@ -512,7 +512,7 @@ FUNC INT DIA_Jan_Dragonscales_Condition()
  var int DIA_JAN_Dragonscales_OneTime;
 FUNC VOID DIA_Jan_Dragonscales_Info()
 {		
-		AI_Output (other,self ,"DIA_JAN_Dragonscales_15_00"); //Ich habe die Drachenschuppen für dich.
+		AI_Output (other,self ,"DIA_JAN_Dragonscales_15_00"); //Ich habe die Drachenschuppen fÃ¼r dich.
 		if (Npc_HasItems (other,ItAT_Dragonscale) >= 20)
 		{
 			B_GiveInvItems (other,self ,ItAT_Dragonscale,20);
@@ -529,12 +529,12 @@ FUNC VOID DIA_Jan_Dragonscales_Info()
 		}
 		else
 		{	
-			AI_Output (self ,other,"DIA_JAN_Dragonscales_10_03"); //Ich brauche 20 Drachenschuppen, sonst kann ich dir keine Rüstung bauen.
+			AI_Output (self ,other,"DIA_JAN_Dragonscales_10_03"); //Ich brauche 20 Drachenschuppen, sonst kann ich dir keine RÃ¼stung bauen.
 		};	
 };
 
 //*******************************************
-//	Ist die Rüstung fertig?
+//	Ist die RÃ¼stung fertig?
 //*******************************************
 
 //-------------------------------
@@ -549,7 +549,7 @@ INSTANCE DIA_JAN_ArmorReady (C_INFO)
 	condition	= DIA_Jan_ArmorReady_Condition;
 	information	= DIA_Jan_ArmorReady_Info;
 	permanent	= TRUE;
-	description	= "Ist die Rüstung fertig?";
+	description	= "Ist die RÃ¼stung fertig?";
 };                       
 
 FUNC INT DIA_Jan_ArmorReady_Condition()
@@ -564,16 +564,16 @@ FUNC INT DIA_Jan_ArmorReady_Condition()
 
 FUNC VOID DIA_Jan_ArmorReady_Info()
 {		
-		AI_Output (other,self ,"DIA_JAN_ArmorReady_15_00"); //Ist die Rüstung fertig?
+		AI_Output (other,self ,"DIA_JAN_ArmorReady_15_00"); //Ist die RÃ¼stung fertig?
 		if (Jan_Sells_Armor == Wld_GetDay ())
 		{
 			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_01"); //Nein, noch nicht. Komm morgen wieder.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_02"); //Ja, ein wahres Prachtstück. Wenn du willst, kannst du sie kaufen.
-			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_03"); //Für dich mach ich einen Freundschaftspreis. 12000 Goldstücke.
-			AI_Output (other,self ,"DIA_JAN_ArmorReady_15_04"); //Was? Nach allem, was ich für dich getan habe?
+			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_02"); //Ja, ein wahres PrachtstÃ¼ck. Wenn du willst, kannst du sie kaufen.
+			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_03"); //FÃ¼r dich mach ich einen Freundschaftspreis. 12000 GoldstÃ¼cke.
+			AI_Output (other,self ,"DIA_JAN_ArmorReady_15_04"); //Was? Nach allem, was ich fÃ¼r dich getan habe?
 			AI_Output (self ,other,"DIA_JAN_ArmorReady_10_05"); //Komm mir nicht so. Irgend wovon muss ich ja auch leben. Also kauf sie, oder lass es bleiben.
 		
 			DJG_Armor_is_offered = TRUE;
@@ -596,7 +596,7 @@ instance DIA_Jan_DJG_ARMOR_M		(C_INFO)
 	condition	 = 	DIA_Jan_DJG_ARMOR_M_Condition;
 	information	 = 	DIA_Jan_DJG_ARMOR_M_Info;
 	permanent	 = 	TRUE;
-	description	 =	"Mittlere Drachenjägerrüstung: Schutz: Waffen 80, Pfeile 80. (12000 Gold)"; //Wenn ändern, dann bitte auch in der Info-Instanz. s.u.
+	description	 =	"Mittlere DrachenjÃ¤gerrÃ¼stung: Schutz: Waffen 80, Pfeile 80. (12000 Gold)"; //Wenn Ã¤ndern, dann bitte auch in der Info-Instanz. s.u.
 };
 
 func int DIA_Jan_DJG_ARMOR_M_Condition ()
@@ -611,11 +611,11 @@ func int DIA_Jan_DJG_ARMOR_M_Condition ()
 
 func void DIA_Jan_DJG_ARMOR_M_Info ()
 {	
-	AI_Output	(other,self ,"DIA_Jan_DJG_ARMOR_M_15_00"); //Ich will die Rüstung kaufen.
+	AI_Output	(other,self ,"DIA_Jan_DJG_ARMOR_M_15_00"); //Ich will die RÃ¼stung kaufen.
 	
 	if (Npc_HasItems (other,itmi_Gold) >= 12000)
 	{
-		AI_Output 	(self ,other,"DIA_Jan_DJG_ARMOR_M_10_01"); //Du wirst merken, sie ist jedes einzelne Goldstück wert.
+		AI_Output 	(self ,other,"DIA_Jan_DJG_ARMOR_M_10_01"); //Du wirst merken, sie ist jedes einzelne GoldstÃ¼ck wert.
 		
 		B_GiveInvItems (other,self,ItMi_Gold,12000);
 		CreateInvItems (self,ITAR_DJG_M,1);
@@ -660,21 +660,21 @@ func void DIA_Jan_DragonPlettBericht_Info ()
 {
 	if (MIS_KilledDragons == 1)
 	{
-		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_00"); //Ich hab einen Drachen getötet.
+		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_00"); //Ich hab einen Drachen getÃ¶tet.
 	}
 	else if ((MIS_KilledDragons == 2) || (MIS_KilledDragons == 3))
 	{
-		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_01"); //Ich hab einige Drachen getötet.
+		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_01"); //Ich hab einige Drachen getÃ¶tet.
 	}
 	else 
 	{
-		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_02"); //Ich habe alle Drachen getötet.
+		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_02"); //Ich habe alle Drachen getÃ¶tet.
 	};
 	
 	
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_03"); //Ja und? Du bist ja schließlich ein Drachenjäger, oder?
+		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_03"); //Ja und? Du bist ja schlieÃŸlich ein DrachenjÃ¤ger, oder?
 		AI_Output (other, self, "DIA_Jan_DragonPlettBericht_15_04"); //Du etwa nicht?
 	}
 	else
@@ -682,13 +682,13 @@ func void DIA_Jan_DragonPlettBericht_Info ()
 		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_05"); //Das ist ja toll. Interessiert mich aber nicht sonderlich, wenn ich ehrlich bin.
 	};
 	
-	AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_06"); //Ich sagte dir ja bereits, ich stelle lieber Waffen her, als selbst loszuziehen, um die Drachen zu töten.
+	AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_06"); //Ich sagte dir ja bereits, ich stelle lieber Waffen her, als selbst loszuziehen, um die Drachen zu tÃ¶ten.
 
 	if (hero.guild != GIL_DJG)
 	&& (hero.guild != GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_07"); //Eine Sache jedoch könnte mich schon interessieren.
-		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_08"); //Wenn du mir Drachenblut besorgen könntest, würde ich einen hohen Preis dafür zahlen.
+		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_07"); //Eine Sache jedoch kÃ¶nnte mich schon interessieren.
+		AI_Output (self, other, "DIA_Jan_DragonPlettBericht_10_08"); //Wenn du mir Drachenblut besorgen kÃ¶nntest, wÃ¼rde ich einen hohen Preis dafÃ¼r zahlen.
 		Jan_WantsDragonBlood = TRUE;
 	};
 };
@@ -704,7 +704,7 @@ instance DIA_Jan_DragonBlood		(C_INFO)
 	information	 = 	DIA_Jan_DragonBlood_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ich habe Drachenblut für dich.";
+	description	 = 	"Ich habe Drachenblut fÃ¼r dich.";
 };
 
 func int DIA_Jan_DragonBlood_Condition ()
@@ -720,7 +720,7 @@ func int DIA_Jan_DragonBlood_Condition ()
 
 func void DIA_Jan_DragonBlood_Info ()
 {
-	AI_Output			(other, self, "DIA_Jan_DragonBlood_15_00"); //Ich habe Drachenblut für dich.
+	AI_Output			(other, self, "DIA_Jan_DragonBlood_15_00"); //Ich habe Drachenblut fÃ¼r dich.
 	AI_Output			(self, other, "DIA_Jan_DragonBlood_10_01"); //Das ist klasse. Verkauf mir alles, was du hast.
 
 	Info_ClearChoices	(DIA_Jan_DragonBlood);

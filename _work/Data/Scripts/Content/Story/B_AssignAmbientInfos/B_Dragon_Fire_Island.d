@@ -51,8 +51,8 @@ FUNC INT DIA_Dragon_Fire_Island_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //Bleib stehen, Mensch. Alle meine Sinne sagen mir, dass der Mörder meines eigenen Fleisch und Blutes vor mir steht.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //So? Wen nennst du hier Mörder, du Ausgeburt der Hölle?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //Bleib stehen, Mensch. Alle meine Sinne sagen mir, dass der MÃ¶rder meines eigenen Fleisch und Blutes vor mir steht.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //So? Wen nennst du hier MÃ¶rder, du Ausgeburt der HÃ¶lle?
 	
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
@@ -60,13 +60,13 @@ FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //Dass du fast unsere gesamte Nachkommenschaft vernichtet hast, war dir wohl nicht genug.
 	};
 	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //Du hast meinen Bruder Feomathar auf dem Gewissen und dafür wirst du bezahlen.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //Du hast meinen Bruder Feomathar auf dem Gewissen und dafÃ¼r wirst du bezahlen.
 
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
 	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //Den Rest eurer widerlichen Brut werde ich mir auch noch vornehmen.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Arrh. Es wird mir ein Vergnügen sein, dich bei lebendigem Leibe zu verbrennen.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Arrh. Es wird mir ein VergnÃ¼gen sein, dich bei lebendigem Leibe zu verbrennen.
 	};
 
 	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //Mach nicht so einen Wind. Lass uns zur Sache kommen.
@@ -76,7 +76,7 @@ FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 	AI_StopProcessInfos	(self);
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Noch ein Feuerdrache. So langsam habe ich die Biester satt. Das einzige, was ich will, ist, über den Abgrund zu kommen, der sich hinter dem Feuerdrachen auftut."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"Noch ein Feuerdrache. So langsam habe ich die Biester satt. Das einzige, was ich will, ist, Ã¼ber den Abgrund zu kommen, der sich hinter dem Feuerdrachen auftut."); 
 
 	DragonTalk_Exit_Free  = FALSE;
 	self.flags =  0;

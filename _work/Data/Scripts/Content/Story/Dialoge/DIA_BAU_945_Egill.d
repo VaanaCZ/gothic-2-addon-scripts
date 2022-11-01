@@ -44,13 +44,13 @@ func void DIA_Egill_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Egill_HALLO_15_00"); //Wie sieht's aus?
 	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //Schon lange keinen Fremden mehr auf unserem Land gesehen, der uns nicht gleich die Haut abziehen will.
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //Ich hoffe, ich habe mich jetzt nicht bei dir get‰uscht.
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //Ich hoffe, ich habe mich jetzt nicht bei dir get√§uscht.
 	AI_Output			(self, other, "DIA_Egill_HALLO_08_03"); //Ich bin Egill.
 	
 	if (Hlp_IsValidNpc (Ehnim))
 		&& (!C_NpcIsDown (Ehnim))
 		{
-			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //Und der komische Vogel dort dr¸ben ist mein Bruder Ehnim.
+			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //Und der komische Vogel dort dr√ºben ist mein Bruder Ehnim.
 		};
 };
 
@@ -65,7 +65,7 @@ instance DIA_Egill_FELDARBEIT		(C_INFO)
 	condition	 = 	DIA_Egill_FELDARBEIT_Condition;
 	information	 = 	DIA_Egill_FELDARBEIT_Info;
 
-	description	 = 	"Wie l‰uft die Feldarbeit?";
+	description	 = 	"Wie l√§uft die Feldarbeit?";
 };
 
 func int DIA_Egill_FELDARBEIT_Condition ()
@@ -78,8 +78,8 @@ func int DIA_Egill_FELDARBEIT_Condition ()
 
 func void DIA_Egill_FELDARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_FELDARBEIT_15_00"); //Wie l‰uft die Feldarbeit?
-	AI_Output			(self, other, "DIA_Egill_FELDARBEIT_08_01"); //Bestens. Wenn diese elenden Feldr‰uber nicht st‰ndig unsere Ernte vernichten w¸rden ...
+	AI_Output			(other, self, "DIA_Egill_FELDARBEIT_15_00"); //Wie l√§uft die Feldarbeit?
+	AI_Output			(self, other, "DIA_Egill_FELDARBEIT_08_01"); //Bestens. Wenn diese elenden Feldr√§uber nicht st√§ndig unsere Ernte vernichten w√ºrden ...
 
 };
 
@@ -94,7 +94,7 @@ instance DIA_Egill_FELDRAEUBER		(C_INFO)
 	condition	 = 	DIA_Egill_FELDRAEUBER_Condition;
 	information	 = 	DIA_Egill_FELDRAEUBER_Info;
 
-	description	 = 	"Warum unternimmst du nichts gegen die Feldr‰uber?";
+	description	 = 	"Warum unternimmst du nichts gegen die Feldr√§uber?";
 };
 
 func int DIA_Egill_FELDRAEUBER_Condition ()
@@ -107,8 +107,8 @@ func int DIA_Egill_FELDRAEUBER_Condition ()
 
 func void DIA_Egill_FELDRAEUBER_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //Warum unternimmst du nichts gegen die Feldr‰uber?
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //Du machst mir Spaﬂ. Seit ich hier auf diesem Hof bin, habe ich schon unz‰hlige dieser Viecher erledigt.
+	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //Warum unternimmst du nichts gegen die Feldr√§uber?
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //Du machst mir Spa√ü. Seit ich hier auf diesem Hof bin, habe ich schon unz√§hlige dieser Viecher erledigt.
 	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //Es kommen aber leider immer wieder neue.
 };
 
@@ -123,7 +123,7 @@ instance DIA_Egill_STREIT2		(C_INFO)
 	condition	 = 	DIA_Egill_STREIT2_Condition;
 	information	 = 	DIA_Egill_STREIT2_Info;
 
-	description	 = 	"Dein Bruder erz‰hlt etwas ƒhnliches.";
+	description	 = 	"Dein Bruder erz√§hlt etwas √Ñhnliches.";
 };
 
 func int DIA_Egill_STREIT2_Condition ()
@@ -144,10 +144,10 @@ func int DIA_Egill_STREIT2_Condition ()
 
 func void DIA_Egill_STREIT2_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //Dein Bruder erz‰hlt etwas ƒhnliches.
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //Dein Bruder erz√§hlt etwas √Ñhnliches.
 	AI_Output			(self, other, "DIA_Egill_STREIT2_08_01"); //(lauernd) Aha. Was denn genau?
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Dass er auch schon viele Feldr‰uber zur Strecke gebracht hat.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Was? Der Blindg‰nger findet doch noch nicht mal alleine nach Hause.
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Dass er auch schon viele Feldr√§uber zur Strecke gebracht hat.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Was? Der Blindg√§nger findet doch noch nicht mal alleine nach Hause.
 	AI_Output			(self, other, "DIA_Egill_STREIT2_08_04"); //Sag ihm, er soll mal nicht so aufschneiden.
 
 	AI_StopProcessInfos (self);
@@ -186,7 +186,7 @@ func int DIA_Egill_STREIT4_Condition ()
 func void DIA_Egill_STREIT4_Info ()
 {
 	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Ehnim ist wegen der Geschichte ein wenig gereizt.
-	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //Er soll sich nicht so aufblasen, sonst reiﬂ ich ihm den Kopf ab. Sag ihm das.
+	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //Er soll sich nicht so aufblasen, sonst rei√ü ich ihm den Kopf ab. Sag ihm das.
 
 	AI_StopProcessInfos (self);
 };

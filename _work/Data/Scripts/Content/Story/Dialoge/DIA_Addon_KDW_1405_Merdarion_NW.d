@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Merdarion_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Merdarion_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Merdarion_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre schwierig seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re schwierig seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Merdarion_NW_PICKPOCKET_Condition()
@@ -95,10 +95,10 @@ func int DIA_Addon_Merdarion_Hallo_Condition ()
 func void DIA_Addon_Merdarion_Hallo_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_Hallo_15_00"); //Bei der Arbeit?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_01"); //Diese Gewölbe sind mir ein einziges Rätsel. Unvorstellbar, dass sie bisher noch niemanden aufgefallen sind.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_02"); //Wir konnten den Eingang mühelos freilegen.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_03"); //Die Menschen sind so sehr mit ihrem täglichen Einerlei beschäftigt, dass sich niemand dieses Bauwerk näher angesehen hat.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_04"); //Ich habe keine andere Erklärung dafür.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_01"); //Diese GewÃ¶lbe sind mir ein einziges RÃ¤tsel. Unvorstellbar, dass sie bisher noch niemanden aufgefallen sind.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_02"); //Wir konnten den Eingang mÃ¼helos freilegen.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_03"); //Die Menschen sind so sehr mit ihrem tÃ¤glichen Einerlei beschÃ¤ftigt, dass sich niemand dieses Bauwerk nÃ¤her angesehen hat.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_04"); //Ich habe keine andere ErklÃ¤rung dafÃ¼r.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Aufgabe
@@ -124,10 +124,10 @@ func int DIA_Addon_Merdarion_Aufgabe_Condition ()
 func void DIA_Addon_Merdarion_Aufgabe_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_Aufgabe_15_00"); //Was ist deine Aufgabe hier?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_01"); //Ich versuche herauszufinden, wohin uns dieses runde Portal führen wird.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_02"); //Außerdem helfe ich Nefarius bei der Suche nach dem fehlenden Ornament.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_03"); //Sicher ist, dass das Portal zu einem Teil der Insel führt, den wir noch nicht kennen.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_04"); //(nachdenklich) Ich kann mich auch nicht daran erinnern, jemals davon gehört oder gelesen zu haben ...
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_01"); //Ich versuche herauszufinden, wohin uns dieses runde Portal fÃ¼hren wird.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_02"); //AuÃŸerdem helfe ich Nefarius bei der Suche nach dem fehlenden Ornament.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_03"); //Sicher ist, dass das Portal zu einem Teil der Insel fÃ¼hrt, den wir noch nicht kennen.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_04"); //(nachdenklich) Ich kann mich auch nicht daran erinnern, jemals davon gehÃ¶rt oder gelesen zu haben ...
 	
 	Npc_ExchangeRoutine (self, "START");
 	B_StartOtherRoutine (Cronos_NW, "START");
@@ -147,7 +147,7 @@ instance DIA_Addon_Merdarion_DaDurch		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_DaDurch_Condition;
 	information	 = 	DIA_Addon_Merdarion_DaDurch_Info;
 
-	description	 = 	"Ihr wollt tatsächlich durch das Portal gehen?";
+	description	 = 	"Ihr wollt tatsÃ¤chlich durch das Portal gehen?";
 };
 
 func int DIA_Addon_Merdarion_DaDurch_Condition ()
@@ -160,10 +160,10 @@ func int DIA_Addon_Merdarion_DaDurch_Condition ()
 
 func void DIA_Addon_Merdarion_DaDurch_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_DaDurch_15_00"); //Ihr wollt tatsächlich durch das Portal gehen?
+	AI_Output	(other, self, "DIA_Addon_Merdarion_DaDurch_15_00"); //Ihr wollt tatsÃ¤chlich durch das Portal gehen?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_01"); //Sicher. Vorausgesetzt, dass wir das fehlende Ornament finden, versteht sich.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_02"); //Ich gebe zu, es ist schon eine etwas riskante Angelegenheit.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_03"); //Aber wir müssen unbedingt herausfinden, was es mit diesen ständigen Erdbeben auf sich hat.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_03"); //Aber wir mÃ¼ssen unbedingt herausfinden, was es mit diesen stÃ¤ndigen Erdbeben auf sich hat.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Bedrohung
@@ -175,7 +175,7 @@ instance DIA_Addon_Merdarion_Bedrohung		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Bedrohung_Condition;
 	information	 = 	DIA_Addon_Merdarion_Bedrohung_Info;
 
-	description	 = 	"Was weißt du über die Erdbeben?";
+	description	 = 	"Was weiÃŸt du Ã¼ber die Erdbeben?";
 };
 
 func int DIA_Addon_Merdarion_Bedrohung_Condition ()
@@ -188,10 +188,10 @@ func int DIA_Addon_Merdarion_Bedrohung_Condition ()
 
 func void DIA_Addon_Merdarion_Bedrohung_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Bedrohung_15_00"); //Was weißt du über die Erdbeben?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_01"); //Irgendetwas auf der anderen Seite löst sie aus.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_02"); //Vermutlich ist diese Quelle auch verantwortlich für das Erwachen der Steinwächter.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_03"); //Aber das ist nicht meine Aufgabe. Saturas und Cronos können dir sicher mehr darüber erzählen.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Bedrohung_15_00"); //Was weiÃŸt du Ã¼ber die Erdbeben?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_01"); //Irgendetwas auf der anderen Seite lÃ¶st sie aus.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_02"); //Vermutlich ist diese Quelle auch verantwortlich fÃ¼r das Erwachen der SteinwÃ¤chter.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_03"); //Aber das ist nicht meine Aufgabe. Saturas und Cronos kÃ¶nnen dir sicher mehr darÃ¼ber erzÃ¤hlen.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -204,7 +204,7 @@ instance DIA_Addon_Merdarion_Wasdahinter2		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Wasdahinter2_Condition;
 	information	 = 	DIA_Addon_Merdarion_Wasdahinter2_Info;
 
-	description	 = 	"Was glaubst du, werdet ihr drüben finden?";
+	description	 = 	"Was glaubst du, werdet ihr drÃ¼ben finden?";
 };
 
 func int DIA_Addon_Merdarion_Wasdahinter2_Condition ()
@@ -217,9 +217,9 @@ func int DIA_Addon_Merdarion_Wasdahinter2_Condition ()
 
 func void DIA_Addon_Merdarion_Wasdahinter2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Wasdahinter2_15_00"); //Was glaubst du werdet ihr drüben finden?
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Wasdahinter2_15_00"); //Was glaubst du werdet ihr drÃ¼ben finden?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_01"); //Ich bin mir da noch nicht sicher.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_02"); //Ich vermute, dass es auf der anderen Seite ein ähnliches Bauwerk wie dieses gibt. Und ein Gegenstück zu diesem Portal.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_02"); //Ich vermute, dass es auf der anderen Seite ein Ã¤hnliches Bauwerk wie dieses gibt. Und ein GegenstÃ¼ck zu diesem Portal.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_03"); //Alles Weitere werden wir sehen, wenn wir da sind.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -233,7 +233,7 @@ instance DIA_Addon_Merdarion_PERM		(C_INFO)
 	information	 = 	DIA_Addon_Merdarion_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Kannst du mir etwas über die Magie beibringen?";
+	description	 = 	"Kannst du mir etwas Ã¼ber die Magie beibringen?";
 };
 
 func int DIA_Addon_Merdarion_PERM_Condition ()
@@ -246,8 +246,8 @@ func int DIA_Addon_Merdarion_PERM_Condition ()
 
 func void DIA_Addon_Merdarion_PERM_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_PERM_15_00"); //Kannst du mir etwas über die Magie beibringen?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_PERM_06_01"); //Wenn wir erst mal drüben sind, stehe ich dir zur Verfügung.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_PERM_15_00"); //Kannst du mir etwas Ã¼ber die Magie beibringen?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_PERM_06_01"); //Wenn wir erst mal drÃ¼ben sind, stehe ich dir zur VerfÃ¼gung.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -260,7 +260,7 @@ instance DIA_Addon_Merdarion_Teleportstein		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Teleportstein_Condition;
 	information	 = 	DIA_Addon_Merdarion_Teleportstein_Info;
 
-	description	 = 	"Wie komme ich am schnellsten zurück in die Stadt?";
+	description	 = 	"Wie komme ich am schnellsten zurÃ¼ck in die Stadt?";
 };
 
 func int DIA_Addon_Merdarion_Teleportstein_Condition ()
@@ -274,36 +274,36 @@ func int DIA_Addon_Merdarion_Teleportstein_Condition ()
 
 func void DIA_Addon_Merdarion_Teleportstein_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_00"); //Wie komme ich am schnellsten zurück in die Stadt?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_01"); //Du gehst am besten den gleichen Weg zurück, den du gekommen bist.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_02"); //(nachdenklich) Du könntest aber auch ... Nein. Das wäre zu gefährlich.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_00"); //Wie komme ich am schnellsten zurÃ¼ck in die Stadt?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_01"); //Du gehst am besten den gleichen Weg zurÃ¼ck, den du gekommen bist.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_02"); //(nachdenklich) Du kÃ¶nntest aber auch ... Nein. Das wÃ¤re zu gefÃ¤hrlich.
 	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_03"); //Spuck's aus.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_04"); //Naja. Die Erbauer dieser Hallen hatten ihre eigene Art zu reisen.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_05"); //Soweit wir das beurteilen können, konnten sie sich teleportieren.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_05"); //Soweit wir das beurteilen kÃ¶nnen, konnten sie sich teleportieren.
 	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_06"); //Das ist doch nichts Besonderes.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_07"); //Die Teleportersteine, die wir hier in Khorinis gefunden haben, schon.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_08"); //Es scheint so, als würde der Teleporterstein hier in diesen Hallen zur Hafenstadt führen.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_08"); //Es scheint so, als wÃ¼rde der Teleporterstein hier in diesen Hallen zur Hafenstadt fÃ¼hren.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_09"); //Jedoch hat noch keiner von uns den Mut aufgebracht, ihn zu benutzen.
 	
 	Info_ClearChoices	(DIA_Addon_Merdarion_Teleportstein);
-	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Was wäre, wenn ich es versuchen würde, ihn zu benutzen?", DIA_Addon_Merdarion_Teleportstein_ich );
+	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Was wÃ¤re, wenn ich es versuchen wÃ¼rde, ihn zu benutzen?", DIA_Addon_Merdarion_Teleportstein_ich );
 	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Wo ist dieser Teleportstein?", DIA_Addon_Merdarion_Teleportstein_wo );
 };
 func void DIA_Addon_Merdarion_Teleportstein_wo ()
 {
 	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_wo_15_00"); //Wo ist dieser Teleporterstein?
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_wo_06_01"); //Im Beckenraum gibt es eine Tür. Dahinter habe ich ihn eingeschlossen.
-	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Gib mir den Schlüssel. Ich will mir das Ding ansehen.", DIA_Addon_Merdarion_Teleportstein_key );
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_wo_06_01"); //Im Beckenraum gibt es eine TÃ¼r. Dahinter habe ich ihn eingeschlossen.
+	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Gib mir den SchlÃ¼ssel. Ich will mir das Ding ansehen.", DIA_Addon_Merdarion_Teleportstein_key );
 };
 func void DIA_Addon_Merdarion_Teleportstein_ich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_ich_15_00"); //Was wäre, wenn ich es versuchen würde, ihn zu benutzen?
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_ich_06_01"); //Keine Ahnung. Wir wissen darüber noch zu wenig. Es ist möglich, dass du es nicht überlebst.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_ich_15_00"); //Was wÃ¤re, wenn ich es versuchen wÃ¼rde, ihn zu benutzen?
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_ich_06_01"); //Keine Ahnung. Wir wissen darÃ¼ber noch zu wenig. Es ist mÃ¶glich, dass du es nicht Ã¼berlebst.
 };
 func void DIA_Addon_Merdarion_Teleportstein_key ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_key_15_00"); //Gib mir den Schlüssel. Ich will mir das Ding mal ansehen.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_01"); //(unsicher) Wirklich? Aber ich übernehme dafür keinerlei Verantwortung.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_key_15_00"); //Gib mir den SchlÃ¼ssel. Ich will mir das Ding mal ansehen.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_01"); //(unsicher) Wirklich? Aber ich Ã¼bernehme dafÃ¼r keinerlei Verantwortung.
 	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_key_15_02"); //Gib schon her.
 	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_03"); //Wenn du meinst. Hier hast du ihn.
 	CreateInvItems (self, ITKE_PORTALTEMPELWALKTHROUGH_ADDON, 1);									
@@ -313,7 +313,7 @@ func void DIA_Addon_Merdarion_Teleportstein_key ()
 
 	Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"Merdarion gab mir den Schlüssel zur verschlossenen Tür in den Gewölben des Portals. Dahinter befinde sich ein Teleportstein, der mich zurück zur Hafenstadt bringen soll."); 
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"Merdarion gab mir den SchlÃ¼ssel zur verschlossenen TÃ¼r in den GewÃ¶lben des Portals. Dahinter befinde sich ein Teleportstein, der mich zurÃ¼ck zur Hafenstadt bringen soll."); 
 
 	Info_ClearChoices	(DIA_Addon_Merdarion_Teleportstein);
 };
@@ -343,8 +343,8 @@ func void DIA_Addon_Merdarion_WHereOtherTeleports_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_WHereOtherTeleports_15_00"); //Wo sind die anderen Teleportersteine?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_WHereOtherTeleports_06_01"); //Wir haben bisher nur einen Weiteren etwa im Zentrum von Khorinis gefunden.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_WHereOtherTeleports_06_02"); //In der Nähe der Taverne Zur Toten Harpie.
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"In der Nähe der Taverne 'Zur Toten Harpie' soll sich ein weiterer Teleportstein befinden."); 
+	AI_Output	(self, other, "DIA_Addon_Merdarion_WHereOtherTeleports_06_02"); //In der NÃ¤he der Taverne Zur Toten Harpie.
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"In der NÃ¤he der Taverne 'Zur Toten Harpie' soll sich ein weiterer Teleportstein befinden."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -373,7 +373,7 @@ func void DIA_Addon_Merdarion_TeleportsteinSuccess_Info ()
 {
 	B_GivePlayerXP (XP_Ambient);
 	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_00"); //Die Teleportersteine scheinen gut zu funktionieren.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_01"); //Du hast es tatsächlich getan? Du bist wirklich hineingegangen?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_01"); //Du hast es tatsÃ¤chlich getan? Du bist wirklich hineingegangen?
 	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_02"); //Ja. Sie funktionieren offensichtlich immer noch.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_03"); //(fasziniert) Unglaublich. Das muss ich mir nachher noch genauer ansehen.
 };

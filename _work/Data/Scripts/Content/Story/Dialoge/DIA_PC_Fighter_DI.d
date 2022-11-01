@@ -109,7 +109,7 @@ FUNC VOID DIA_Gorn_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Du musst die Waffe höher halten. Durch deine Deckung kommt ja ein Blinder mit 'nem Krückstock.
+		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Du musst die Waffe hÃ¶her halten. Durch deine Deckung kommt ja ein Blinder mit 'nem KrÃ¼ckstock.
 	};
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -148,7 +148,7 @@ var int DIA_Gorn_DI_UndeadDragonDead_OneTime;
 func void DIA_Gorn_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_00"); //Du bist beim Schiff geblieben?
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Klar. Stell dir vor, es wäre jetzt nicht mehr da.
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Klar. Stell dir vor, es wÃ¤re jetzt nicht mehr da.
 
 	if (DIA_Gorn_DI_UndeadDragonDead_OneTime == FALSE)
 		{
@@ -156,8 +156,8 @@ func void DIA_Gorn_DI_UndeadDragonDead_Info ()
 			{
 				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_02"); //Was passiert denn jetzt noch?
 				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_03"); //Gar nichts mehr. Ich will nach Hause.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(lacht) Nach Hause? Wo ist das? So, wie ich dich kenne, gibt es so etwas für dich nicht.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //Ich mache dir einen Vorschlag. Wir stürmen die nächste Taverne, und werden uns erstmal sinnlos besaufen.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(lacht) Nach Hause? Wo ist das? So, wie ich dich kenne, gibt es so etwas fÃ¼r dich nicht.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //Ich mache dir einen Vorschlag. Wir stÃ¼rmen die nÃ¤chste Taverne, und werden uns erstmal sinnlos besaufen.
 				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_06"); //Mmh. Vielleicht.
 				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //Hey, komm wieder runter, Mann. Es ist vorbei.
 			};
@@ -174,7 +174,7 @@ func void DIA_Gorn_DI_UndeadDragonDead_Info ()
 					};
 			};			
 	
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //Hier gibt es nichts mehr zu holen für uns. Sag dem Kapitän, er soll das Schiff klar machen.
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //Hier gibt es nichts mehr zu holen fÃ¼r uns. Sag dem KapitÃ¤n, er soll das Schiff klar machen.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

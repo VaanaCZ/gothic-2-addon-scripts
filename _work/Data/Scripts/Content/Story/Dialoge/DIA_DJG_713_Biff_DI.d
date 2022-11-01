@@ -46,7 +46,7 @@ func int DIA_Biff_DI_HALLO_Condition ()
 
 func void DIA_Biff_DI_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //Und? Wo sind nun die Reichtümer, die du mir versprochen hast?
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //Und? Wo sind nun die ReichtÃ¼mer, die du mir versprochen hast?
 
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_ORKS)==FALSE)
 		{
@@ -54,8 +54,8 @@ func void DIA_Biff_DI_HALLO_Info ()
 		};
 
 	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //Deine Aufgabe ist erstmal, dieses Schiff zu bewachen.
-	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //Ich habe keine Lust zurückzuschwimmen.
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //So ein Dreck. Wenn ich das gewusst hätte, wäre ich in Khorinis geblieben.
+	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //Ich habe keine Lust zurÃ¼ckzuschwimmen.
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //So ein Dreck. Wenn ich das gewusst hÃ¤tte, wÃ¤re ich in Khorinis geblieben.
 	AI_StopProcessInfos (self);
 };
 
@@ -148,7 +148,7 @@ func void DIA_Biff_DI_UNDEADDRGDEAD_Info ()
 	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //War's das jetzt?
 	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Das war's jetzt.
 	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //Kann ich mir jetzt ...
-	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //Von mir aus kannst du die ganze Insel plündern.
+	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //Von mir aus kannst du die ganze Insel plÃ¼ndern.
 	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //Klasse.
 	
 	AI_StopProcessInfos (self);

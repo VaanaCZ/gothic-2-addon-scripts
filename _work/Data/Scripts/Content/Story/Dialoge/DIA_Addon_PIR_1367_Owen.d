@@ -86,7 +86,7 @@ func void DIA_Addon_Owen_Hello_Info ()
 	||	 (Hlp_IsItem(itm, ItAr_Pir_L_Addon) == TRUE)
 	||	 (Hlp_IsItem(itm, ItAr_Pir_H_Addon) == TRUE))
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_03"); //Du tr‰gst zwar unsere Kleidung, aber ich kenne dich nicht.
+		AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_03"); //Du tr√§gst zwar unsere Kleidung, aber ich kenne dich nicht.
 	}
 	else if ((Hlp_IsItem(itm, ItAr_BDT_M) == TRUE)
 	|| (Hlp_IsItem(itm, ItAr_BDT_H) == TRUE))
@@ -122,7 +122,7 @@ func int DIA_Addon_Owen_WasMachen_Condition ()
 func void DIA_Addon_Owen_WasMachen_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Owen_WasMachen_15_00"); //Was machst du hier?
-	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_01"); //Ich bin Holzf‰ller und besorge Holz f¸r unser Lager.
+	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_01"); //Ich bin Holzf√§ller und besorge Holz f√ºr unser Lager.
 	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_02"); //Ich schuffte hier, brech' mir fast das Kreuz und die anderen im Lager liegen in der Sonne.
 };
 
@@ -150,7 +150,7 @@ func int DIA_Addon_Owen_Perm_Condition ()
 func void DIA_Addon_Owen_Perm_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Owen_Perm_15_00"); //Und sonst?
-	AI_Output	(self, other, "DIA_Addon_Owen_Perm_13_01"); //Wenn ich das alles vorher gewusst h‰tte, w‰r' ich niemals Pirat geworden.
+	AI_Output	(self, other, "DIA_Addon_Owen_Perm_13_01"); //Wenn ich das alles vorher gewusst h√§tte, w√§r' ich niemals Pirat geworden.
 };
 
 // ************************************************************
@@ -163,7 +163,7 @@ instance DIA_Addon_Owen_Henry		(C_INFO)
 	condition	= DIA_Addon_Owen_Henry_Condition;
 	information	= DIA_Addon_Owen_Henry_Info;
 	permanent	= TRUE;
-	description	= "Henry wartet auf die Holzlieferung f¸r die Palisade.";
+	description	= "Henry wartet auf die Holzlieferung f√ºr die Palisade.";
 };
 func int DIA_Addon_Owen_Henry_Condition ()
 {
@@ -175,7 +175,7 @@ func int DIA_Addon_Owen_Henry_Condition ()
 };
 func void DIA_Addon_Owen_Henry_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_Henry_15_00"); //Henry wartet auf die Holzlieferung f¸r die Palisade.
+	AI_Output	(other, self, "DIA_Addon_Owen_Henry_15_00"); //Henry wartet auf die Holzlieferung f√ºr die Palisade.
 
 	if (MIS_Owen_FindMalcom != LOG_SUCCESS)
 	{
@@ -185,7 +185,7 @@ func void DIA_Addon_Owen_Henry_Info ()
 	}
 	else 
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_02"); //Ja, ja. Ich werd' ihm das d‰mliche Holz schon noch bringen.
+		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_02"); //Ja, ja. Ich werd' ihm das d√§mliche Holz schon noch bringen.
 		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_03"); //Geh hin und sag ihm das.
 		
 		B_LogEntry (TOPIC_Addon_HolOwen,"Ich soll Henry ausrichten, dass Owen das Holz liefern wird.");
@@ -226,17 +226,17 @@ func void DIA_Addon_Owen_MalcomStunt_Info ()
 	AI_Output (other, self, "DIA_Addon_Owen_MalcomStunt_15_00"); //Was ist los?
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //Mein Kumpel Malcom ist weg.
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_02"); //Uns hat so ein Mistvieh von einem Lurker angegriffen.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //Da sind wir in diese Hˆhle gefl¸chtet.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //Da sind wir in diese H√∂hle gefl√ºchtet.
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_04"); //Leider kam der Lurker uns nach.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Malcom hat gegen ihn gek‰mpft und ist dann mit dem Biest zusammen in das Loch da hinten gefallen.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Malcom hat gegen ihn gek√§mpft und ist dann mit dem Biest zusammen in das Loch da hinten gefallen.
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_06"); //Da unten scheint Wasser zu sein.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //Der Lurker und Malcom k‰mpften da unten noch eine Weile. Dann war es still.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //Ich weiﬂ nicht, ob er noch lebt oder schon tot ist.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //Der Lurker und Malcom k√§mpften da unten noch eine Weile. Dann war es still.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //Ich wei√ü nicht, ob er noch lebt oder schon tot ist.
 	
 	Log_CreateTopic (TOPIC_Addon_MalcomsStunt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_MalcomsStunt,LOG_RUNNING);
 	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Owen will wissen, ob sein Freund Malcom noch lebt. Er ist zusammen mit einem Lurker in das Tiefe Loch nah an der Lagerstelle gefallen.");
-	Log_AddEntry	(TOPIC_Addon_MalcomsStunt,"Owen hat gesagt, dass dort unten Wasser ist und Malcom zun‰chst noch gelebt hat. Aber nach einer Weile war alles still.");
+	Log_AddEntry	(TOPIC_Addon_MalcomsStunt,"Owen hat gesagt, dass dort unten Wasser ist und Malcom zun√§chst noch gelebt hat. Aber nach einer Weile war alles still.");
 	
 	MIS_Owen_FindMalcom = LOG_RUNNING;
 };
@@ -292,11 +292,11 @@ func int DIA_Addon_Owen_MalcomDead_Condition ()
 func void DIA_Addon_Owen_MalcomDead_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //Dein Kumpel Malcom ist tot.
-	AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //Das hab ich mir schon gedacht. Armes Schwein. Ich h‰tte ihm doch helfen sollen.
+	AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //Das hab ich mir schon gedacht. Armes Schwein. Ich h√§tte ihm doch helfen sollen.
 	if (SC_MadeStunt == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_02"); //Du bist echt mutig, weiﬂt du das?
-		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_03"); //Ich h‰tte das mit dem Felsspalte nicht fertig gebracht.
+		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_02"); //Du bist echt mutig, wei√üt du das?
+		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_03"); //Ich h√§tte das mit dem Felsspalte nicht fertig gebracht.
 	};
 	
 	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Ich habe Owen die Nachricht von dem Tod Malcoms gebracht. er nahm sie sehr gefasst auf.");

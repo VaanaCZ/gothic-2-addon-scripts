@@ -31,7 +31,7 @@ instance DIA_Elena_HALLO		(C_INFO)
 	condition	= DIA_Elena_HALLO_Condition;
 	information	= DIA_Elena_HALLO_Info;
 	permanent	= FALSE;
-	description	= "Hallo, schönes Kind.";
+	description	= "Hallo, schÃ¶nes Kind.";
 };
 
 func int DIA_Elena_HALLO_Condition ()
@@ -41,7 +41,7 @@ func int DIA_Elena_HALLO_Condition ()
 
 func void DIA_Elena_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_HALLO_15_00"); //Hallo, schönes Kind.
+	AI_Output (other, self, "DIA_Elena_HALLO_15_00"); //Hallo, schÃ¶nes Kind.
 	if (other.guild == GIL_NONE)
 	{
 		AI_Output (self, other, "DIA_Elena_HALLO_16_01"); //Na? Wo haben sie dich denn laufen lassen?
@@ -63,7 +63,7 @@ instance DIA_Elena_Aufstand		(C_INFO)
 	condition	= DIA_Elena_Aufstand_Condition;
 	information	= DIA_Elena_Aufstand_Info;
 	permanent	= FALSE;
-	description	= "Ich habe gehört, ihr lehnt euch gegen den König auf?";
+	description	= "Ich habe gehÃ¶rt, ihr lehnt euch gegen den KÃ¶nig auf?";
 };
 
 func int DIA_Elena_Aufstand_Condition ()
@@ -76,7 +76,7 @@ func int DIA_Elena_Aufstand_Condition ()
 
 func void DIA_Elena_Aufstand_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //Ich habe gehört, ihr lehnt euch gegen den König auf?
+	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //Ich habe gehÃ¶rt, ihr lehnt euch gegen den KÃ¶nig auf?
 	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //Mein Vater hat beschlossen, dass es an der Zeit ist, dass wir uns selbst verteidigen.
 	if (other.guild != GIL_MIL)
 	{
@@ -109,11 +109,11 @@ func int DIA_Elena_Arbeit_Condition ()
 func void DIA_Elena_Arbeit_Info ()
 {
 	AI_Output (other, self, "DIA_Elena_Arbeit_15_00"); //Welche Arbeit gibt es hier auf dem Hof?
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //Mein Vater zahlt Geld an alle Männer, die helfen, den Hof zu verteidigen.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //Mein Vater zahlt Geld an alle MÃ¤nner, die helfen, den Hof zu verteidigen.
 	AI_Output (self, other, "DIA_Elena_Arbeit_16_02"); //Hast du Interesse? Du siehst mir nicht wie jemand aus, der an Feldarbeit interessiert ist.
 	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //Wie viel zahlt dein Vater?
 	AI_Output (self, other, "DIA_Elena_Arbeit_16_04"); //Das musst du schon mit ihm selbst aushandeln.
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //Ich weiß nur, dass jeder der Söldner hier täglich seinen Sold bekommt.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //Ich weiÃŸ nur, dass jeder der SÃ¶ldner hier tÃ¤glich seinen Sold bekommt.
 };
 
 // ************************************************************
@@ -141,10 +141,10 @@ func int DIA_Elena_Regeln_Condition ()
 func void DIA_Elena_Regeln_Info ()
 {
 	AI_Output (other, self, "DIA_Elena_Regeln_15_00"); //Gibt es hier irgendwelche Regeln, die ich beachten sollte?
-	AI_Output (self, other, "DIA_Elena_Regeln_16_01"); //Du fasst hier nichts an, was dir nicht gehört.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_01"); //Du fasst hier nichts an, was dir nicht gehÃ¶rt.
 	AI_Output (self, other, "DIA_Elena_Regeln_16_02"); //Du marschierst nicht in Bereiche, in denen du nichts zu suchen hast.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_03"); //Und wenn du vor hast, dich zu prügeln, halt dich an die Söldner.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_04"); //Wenn du Schlägereien mit den Bauern anfängst, hast du hier alle gegen dich.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_03"); //Und wenn du vor hast, dich zu prÃ¼geln, halt dich an die SÃ¶ldner.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_04"); //Wenn du SchlÃ¤gereien mit den Bauern anfÃ¤ngst, hast du hier alle gegen dich.
 };
 
 
@@ -172,7 +172,7 @@ func int DIA_Elena_AUFGABE_Condition ()
 func void DIA_Elena_AUFGABE_Info ()
 {
 	AI_Output (other, self, "DIA_Elena_AUFGABE_15_00"); //Was ist deine Aufgabe hier?
-	AI_Output (self, other, "DIA_Elena_AUFGABE_16_01"); //Ich verkaufe die Waren unseres Hofes. Wenn du etwas kaufen möchtest, musst du's mir nur sagen.
+	AI_Output (self, other, "DIA_Elena_AUFGABE_16_01"); //Ich verkaufe die Waren unseres Hofes. Wenn du etwas kaufen mÃ¶chtest, musst du's mir nur sagen.
 	AI_Output (self, other, "DIA_Elena_AUFGABE_16_02"); //Aber ich warne dich. Bei mir wird nicht gefeilscht und nicht gestohlen, klar?
 	
 	Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
@@ -241,14 +241,14 @@ func void DIA_Elena_PERM_Info ()
 
 	if (kapitel <= 1)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //Vor einigen Tagen hat mein Vater erlassen, dass wir nichts mehr in der Stadt verkaufen dürfen.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //Vor einigen Tagen hat mein Vater erlassen, dass wir nichts mehr in der Stadt verkaufen dÃ¼rfen.
 		AI_Output			(self, other, "DIA_Elena_PERM_16_02"); //Darum bleibe ich hier auf dem Hof und verkaufe meine Ware nur noch an Besucher.
 	
 		Elena_Trade_mit_mir = TRUE;
 	}
 	else if (Kapitel == 2)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Die Milizangriffe auf die umliegenden Höfe scheinen sich zu häufen. Nur eine Frage der Zeit, bis mein Vater einschreitet.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Die Milizangriffe auf die umliegenden HÃ¶fe scheinen sich zu hÃ¤ufen. Nur eine Frage der Zeit, bis mein Vater einschreitet.
 	}
 	else if (Kapitel == 3)
 	{
@@ -256,7 +256,7 @@ func void DIA_Elena_PERM_Info ()
 	}
 	else if (kapitel == 4)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //Die Söldner sind immer unruhiger geworden. Doch seit Sylvio mit seinen Jungs weg ist, scheinen sie sich ein bisschen zu entspannen.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //Die SÃ¶ldner sind immer unruhiger geworden. Doch seit Sylvio mit seinen Jungs weg ist, scheinen sie sich ein bisschen zu entspannen.
 	}
 	else //Kapitel 5
 	{
@@ -298,7 +298,7 @@ func int DIA_Elena_MINENANTEIL_Condition ()
 func void DIA_Elena_MINENANTEIL_Info ()
 {
 	AI_Output			(other, self, "DIA_Elena_MINENANTEIL_15_00"); //Du verkaufst Minenanteile?
-	AI_Output			(self, other, "DIA_Elena_MINENANTEIL_16_01"); //Und wenn schon. Ich habe sie ja auch für teures Geld kaufen müssen.
+	AI_Output			(self, other, "DIA_Elena_MINENANTEIL_16_01"); //Und wenn schon. Ich habe sie ja auch fÃ¼r teures Geld kaufen mÃ¼ssen.
 	B_GivePlayerXP (XP_Ambient);
 };
 

@@ -43,10 +43,10 @@ func int DIA_Alvares_HAUAB_Condition ()
 func void DIA_Alvares_HAUAB_Info ()
 {
 	Akils_SLDStillthere = TRUE;
-	AI_Output (self, other, "DIA_Alvares_HAUAB_11_00"); //Was dich auch immer hergeführt hat - ist besser, du vergisst es und verschwindest.
+	AI_Output (self, other, "DIA_Alvares_HAUAB_11_00"); //Was dich auch immer hergefÃ¼hrt hat - ist besser, du vergisst es und verschwindest.
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Akils Hof wird von Söldnern bedroht."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"Akils Hof wird von SÃ¶ldnern bedroht."); 
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -74,10 +74,10 @@ func void DIA_Alvares_ATTACK_Info ()
 	AI_Output (self, other, "DIA_Alvares_ATTACK_11_00"); //Du bist ja immer noch hier. Also du hast jetzt die Wahl Fremder, verpiss dich oder stirb.
 	
 	Info_ClearChoices (DIA_Alvares_ATTACK);
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Wer seid ihr Kerle -  Spaßvögel? ",DIA_Alvares_ATTACK_Kerle);
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Ich will mich euch Söldnern anschliessen.",DIA_Alvares_ATTACK_Soeldner);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Wer seid ihr Kerle -  SpaÃŸvÃ¶gel? ",DIA_Alvares_ATTACK_Kerle);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Ich will mich euch SÃ¶ldnern anschliessen.",DIA_Alvares_ATTACK_Soeldner);
 	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Ihr Typen verschwindet jetzt hier... ",DIA_Alvares_ATTACK_Witz);	 
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Ich will keinen Ärger.",DIA_Alvares_ATTACK_Aerger);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Ich will keinen Ã„rger.",DIA_Alvares_ATTACK_Aerger);
 	
 	if (MIS_Baltram_ScoutAkil == LOG_RUNNING)
 	{
@@ -90,7 +90,7 @@ FUNC VOID DIA_Alvares_ATTACK_Witz()
 {
 	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_00"); //Ihr Typen verschwindet jetzt hier, kapiert?
 	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_01"); //Sieh an, wir haben hier einen Helden - einen sehr dummen Helden.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_02"); //Weißt du, was ich denke?
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_02"); //WeiÃŸt du, was ich denke?
 	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_03"); //Wen interessiert schon, was du denkst?
 	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_04"); //Ich denke, nur ein toter Held ist ein guter Held. Also tu mir den Gefallen und stirb schnell!
 	
@@ -100,9 +100,9 @@ FUNC VOID DIA_Alvares_ATTACK_Witz()
 };
 FUNC VOID DIA_Alvares_ATTACK_Kerle()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Kerle_15_00"); //Wer seid ihr Kerle - Spaßvögel?
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Kerle_15_00"); //Wer seid ihr Kerle - SpaÃŸvÃ¶gel?
 	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_01"); //Du hast es erfasst. Ich werde noch lachen, wenn du mit dem Gesicht in deinem eigenen Blut liegst.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_02"); //(ruft) Engardo, es geht los! Du schnappst dir den Bauer - ich kümmere mich um diesen Witzbold!
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_02"); //(ruft) Engardo, es geht los! Du schnappst dir den Bauer - ich kÃ¼mmere mich um diesen Witzbold!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -110,9 +110,9 @@ FUNC VOID DIA_Alvares_ATTACK_Kerle()
 };
 FUNC VOID DIA_Alvares_ATTACK_Aerger()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Aerger_15_00"); //Ich will keinen Ärger.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_01"); //Aber wir wollen Ärger. Wir sind einen weiten Weg gegangen, nur um Ärger zu machen.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_02"); //Ja, wir werden eine Menge Ärger machen. Und ich werde mit dir anfangen, wenn du nicht sofort verschwindest.
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Aerger_15_00"); //Ich will keinen Ã„rger.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_01"); //Aber wir wollen Ã„rger. Wir sind einen weiten Weg gegangen, nur um Ã„rger zu machen.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_02"); //Ja, wir werden eine Menge Ã„rger machen. Und ich werde mit dir anfangen, wenn du nicht sofort verschwindest.
 	
 	AI_StopProcessInfos (self);
 };
@@ -125,8 +125,8 @@ FUNC VOID DIA_Alvares_ATTACK_Lieferung()
 };
 FUNC VOID DIA_Alvares_ATTACK_Soeldner()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Soeldner_15_00"); //Ich will mich euch Söldnern anschließen.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Soeldner_11_01"); //Ach ja? Dann verpiss dich - sonst wirst du dich niemandem mehr anschließen.
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Soeldner_15_00"); //Ich will mich euch SÃ¶ldnern anschlieÃŸen.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Soeldner_11_01"); //Ach ja? Dann verpiss dich - sonst wirst du dich niemandem mehr anschlieÃŸen.
 	
 	AI_StopProcessInfos (self);
 };

@@ -42,7 +42,7 @@ FUNC VOID DIA_Addon_TAL_BDT_1_Hi_Info()
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//Ich warte, bis sie einen Neuen anfordern und ich an die Reihe komme.
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Von allen Leuten, die hier draußen sind, kommt nur Franco rein.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Von allen Leuten, die hier drauÃŸen sind, kommt nur Franco rein.
 	}
 	else
 	{
@@ -58,7 +58,7 @@ instance DIA_Addon_TAL_BDT_1_Lager(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Lager_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Lager_Info;
 	permanent	= TRUE;
-	description = "Was kannst du mir über das Lager erzählen?";
+	description = "Was kannst du mir Ã¼ber das Lager erzÃ¤hlen?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
@@ -68,9 +68,9 @@ FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//Was kannst du mir über das Lager erzählen?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//Pass bloß auf, mit wem du dich anlegst! Wenn du grundlos einen Kampf anfängst, hast du schnell alle gegen dich!
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//Die meisten haben Angst um ihr Gold und einige der Jungs beschützen sich untereinander.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//Was kannst du mir Ã¼ber das Lager erzÃ¤hlen?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//Pass bloÃŸ auf, mit wem du dich anlegst! Wenn du grundlos einen Kampf anfÃ¤ngst, hast du schnell alle gegen dich!
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//Die meisten haben Angst um ihr Gold und einige der Jungs beschÃ¼tzen sich untereinander.
 };
 // *************************************************************************
 // 							News
@@ -81,7 +81,7 @@ instance DIA_Addon_TAL_BDT_1_Raven(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Raven_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Raven_Info;
 	permanent	= TRUE;
-	description = "Was weißt du über Raven?";
+	description = "Was weiÃŸt du Ã¼ber Raven?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
@@ -91,10 +91,10 @@ FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Raven_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Was weißt du über Raven?
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Was weiÃŸt du Ã¼ber Raven?
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//Er ist der Typ, der hier mit seinen Jungs als erster aufgetaucht ist.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//Er der Anführer des Lagers. Mit ihm ist nicht gut Kirschen essen, glaube ich.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Einmal haben sie fünf neue Leute angefordert, weil er seine Wut an seinen eigenen Leuten ausgelassen hat.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//Er der AnfÃ¼hrer des Lagers. Mit ihm ist nicht gut Kirschen essen, glaube ich.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Einmal haben sie fÃ¼nf neue Leute angefordert, weil er seine Wut an seinen eigenen Leuten ausgelassen hat.
 };
 FUNC VOID B_AssignAmbientInfos_Addon_TAL_BDT_1(var C_NPC slf)
 {

@@ -42,7 +42,7 @@ func int DIA_Grom_HALLO_Condition ()
 func void DIA_Grom_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Alles klar?
-	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ah, ein fremder Wanderer. Ich bin sehr besch‰ftigt, also, was willst du?
+	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ah, ein fremder Wanderer. Ich bin sehr besch√§ftigt, also, was willst du?
 
 	Info_ClearChoices	(DIA_Grom_HALLO);
 	Info_AddChoice	(DIA_Grom_HALLO, "Was gibt es hier interssantes zu sehen?", DIA_Grom_HALLO_waszusehen );
@@ -52,14 +52,14 @@ func void DIA_Grom_HALLO_Info ()
 func void DIA_Grom_HALLO_waszusehen ()
 {
 	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Was gibt es hier Interessantes zu sehen?
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //Interessant ist gut gesagt. Wenn du hier weiter in den Wald hineingehst, dann wirst du auf ganz ¸ble Gesellen treffen.
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Sie sind etwa drei Meter groﬂ, haarig und ziemlich schlecht gelaunt. Also geh da nicht hin, wenn du nicht stark genug f¸r sie bist.
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //Interessant ist gut gesagt. Wenn du hier weiter in den Wald hineingehst, dann wirst du auf ganz √ºble Gesellen treffen.
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Sie sind etwa drei Meter gro√ü, haarig und ziemlich schlecht gelaunt. Also geh da nicht hin, wenn du nicht stark genug f√ºr sie bist.
 };
 
 func void DIA_Grom_HALLO_was ()
 {
 	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //Was machst du hier?
-	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Na, was so ein Holzf‰ller und J‰ger eben so macht.
+	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Na, was so ein Holzf√§ller und J√§ger eben so macht.
 	Info_AddChoice	(DIA_Grom_HALLO, DIALOG_BACK, DIA_Grom_HALLO_BACK );
 };
 
@@ -79,7 +79,7 @@ INSTANCE DIA_Grom_AskTeacher (C_INFO)
 	condition	= DIA_Grom_AskTeacher_Condition;
 	information	= DIA_Grom_AskTeacher_Info;
 
-	description = "Kannst du mir was ¸ber die Jagd beibringen?";
+	description = "Kannst du mir was √ºber die Jagd beibringen?";
 };                       
 
 FUNC INT DIA_Grom_AskTeacher_Condition()
@@ -92,12 +92,12 @@ FUNC INT DIA_Grom_AskTeacher_Condition()
 
 FUNC VOID DIA_Grom_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //Kannst du mir was ¸ber die Jagd beibringen?
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Klar. Aber erst besorgst du mir was Anst‰ndiges zu Essen. Ich sterbe vor Hunger hier drauﬂen.
+	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //Kannst du mir was √ºber die Jagd beibringen?
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Klar. Aber erst besorgst du mir was Anst√§ndiges zu Essen. Ich sterbe vor Hunger hier drau√üen.
 	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Ich will eine Flasche Milch, ein Brot und einen fetten Schinken, dann bring ich dir bei, was du willst.
 	Log_CreateTopic (TOPIC_GromAskTeacher, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GromAskTeacher, LOG_RUNNING);
-	B_LogEntry (TOPIC_GromAskTeacher,"Grom der J‰ger wird mir sein Geschick beibringen, wenn ich ihm eine Flasche Milch, ein Brot und einen Schinken bringe."); 
+	B_LogEntry (TOPIC_GromAskTeacher,"Grom der J√§ger wird mir sein Geschick beibringen, wenn ich ihm eine Flasche Milch, ein Brot und einen Schinken bringe."); 
 };
 
 
@@ -179,7 +179,7 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Z‰hne reissen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Grom_TEACHHUNTING_Teeth);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Z√§hne reissen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Grom_TEACHHUNTING_Teeth);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			{ 
@@ -191,7 +191,7 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Horn des Schattenl‰ufers",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Horn des Schattenl√§ufers",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
 			};
 		}
 		else
@@ -210,7 +210,7 @@ func void DIA_Grom_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Schneide in die L‰ufe des Tieres einen Ansatz, an dem du das Fell abziehen kannst. Mach es aber von vorne nach hinten, nicht umgekehrt.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Schneide in die L√§ufe des Tieres einen Ansatz, an dem du das Fell abziehen kannst. Mach es aber von vorne nach hinten, nicht umgekehrt.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -220,7 +220,7 @@ func void DIA_Grom_TEACHHUNTING_Teeth ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Beim Entfernen der Z‰hne musst du vornehmlich darauf achten, dass das Gebiss beim Lˆsen vom Sch‰del nicht zerbricht.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Beim Entfernen der Z√§hne musst du vornehmlich darauf achten, dass das Gebiss beim L√∂sen vom Sch√§del nicht zerbricht.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -230,7 +230,7 @@ func void DIA_Grom_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Ein Herz entfernst du dem Tier mit einem gekonnten Schnitt in die Brust. Lohnt sich aber h‰ufig nur bei besonderen Tieren oder magischen Wesen.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Ein Herz entfernst du dem Tier mit einem gekonnten Schnitt in die Brust. Lohnt sich aber h√§ufig nur bei besonderen Tieren oder magischen Wesen.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -240,7 +240,7 @@ func void DIA_Grom_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Die Zangen von Minecrawlern oder Feldr‰ubern musst du den Tieren mit einem sehr starken Metallhebel herauslˆsen. Sie sitzen sehr tief im Sch‰del der Tiere.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Die Zangen von Minecrawlern oder Feldr√§ubern musst du den Tieren mit einem sehr starken Metallhebel herausl√∂sen. Sie sitzen sehr tief im Sch√§del der Tiere.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -250,7 +250,7 @@ func void DIA_Grom_TEACHHUNTING_ShadowHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Ein Schattenl‰uferhorn bekommst du ab, wenn du dich mit aller Kraft gegen den Sch‰del stemmst, am Horn ziehst und das Ding mit einer harten Klinge heraustrennst.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Ein Schattenl√§uferhorn bekommst du ab, wenn du dich mit aller Kraft gegen den Sch√§del stemmst, am Horn ziehst und das Ding mit einer harten Klinge heraustrennst.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };

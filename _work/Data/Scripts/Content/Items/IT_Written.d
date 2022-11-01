@@ -82,7 +82,7 @@ INSTANCE StandardBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "StandardBuch Seite 2"	);
@@ -235,7 +235,7 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Die s¸dl‰ndische Verteidigung";
+	description				= 	"Die s√ºdl√§ndische Verteidigung";
 	
 	TEXT[2] 				=  "Ein Lehrbuch zum Kampf";
 	TEXT[3] 				=  "mit Einhandwaffen";
@@ -267,20 +267,20 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Die s¸dl‰ndische Verteidigung"	);
+					Doc_PrintLines	( nDocID,  0, "Die s√ºdl√§ndische Verteidigung"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Der S¸dl‰nder k‰mpft nun mehr weniger mit der Kraft des Nordmannes, als mit seiner Behendigkeit. Denn im heiﬂen Klima seiner Heimat, bevorzugt er leichte R¸stungen welche ihm mehr Beweglichkeit erlauben. Durch diesen Umstand hat der S¸dl‰nder einen ihm angepassten Kampstil entwickelt, der sich auf fundamentale Weise von den uns bekannten unterscheidet. "					);
+					Doc_PrintLines	( nDocID,  0, "Der S√ºdl√§nder k√§mpft nun mehr weniger mit der Kraft des Nordmannes, als mit seiner Behendigkeit. Denn im hei√üen Klima seiner Heimat, bevorzugt er leichte R√ºstungen welche ihm mehr Beweglichkeit erlauben. Durch diesen Umstand hat der S√ºdl√§nder einen ihm angepassten Kampstil entwickelt, der sich auf fundamentale Weise von den uns bekannten unterscheidet. "					);
 					
 					
 
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Das wohl bekannnteste Manˆver des S¸dl‰nders ist wohl der einarmige Block mit r¸ckw‰rtigen Ausfallschritt. Durch den Ausfallschritt gelingt es ihm, die Kraft des gegnerischen Angriffes zu mildern und so eine hervorragende Ausgangsposition zu erlangen, die zum direkten Gegenangriff genutzt werden kann."	);
+					Doc_PrintLines	( nDocID,  1, "Das wohl bekannnteste Man√∂ver des S√ºdl√§nders ist wohl der einarmige Block mit r√ºckw√§rtigen Ausfallschritt. Durch den Ausfallschritt gelingt es ihm, die Kraft des gegnerischen Angriffes zu mildern und so eine hervorragende Ausgangsposition zu erlangen, die zum direkten Gegenangriff genutzt werden kann."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					
 					
@@ -337,16 +337,16 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Das Abblocken der gegnerischen Klinge, mit einer beidh‰ndig gef¸hrten Waffe, kann bei ausreichender Kraft dazu genutzt werden, s‰mtlichen Schwung des Angriffes aufzuhalten und den Gegner zu zwingen seien begonnene Kombination abrupt zu beenden. "					);
+					Doc_PrintLines	( nDocID,  0, "Das Abblocken der gegnerischen Klinge, mit einer beidh√§ndig gef√ºhrten Waffe, kann bei ausreichender Kraft dazu genutzt werden, s√§mtlichen Schwung des Angriffes aufzuhalten und den Gegner zu zwingen seien begonnene Kombination abrupt zu beenden. "					);
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Die daraufhin meist folgende Stagnation des Gegners sollte entschlossen genutzt werden, um selbst die Initiative zu ergreifen und den Gegner mit gekonnten Schl‰gen in die Niederlage zu treiben.    "	);
+					Doc_PrintLines	( nDocID,  1, "Die daraufhin meist folgende Stagnation des Gegners sollte entschlossen genutzt werden, um selbst die Initiative zu ergreifen und den Gegner mit gekonnten Schl√§gen in die Niederlage zu treiben.    "	);
 					
 					Doc_Show		( nDocID );
 };

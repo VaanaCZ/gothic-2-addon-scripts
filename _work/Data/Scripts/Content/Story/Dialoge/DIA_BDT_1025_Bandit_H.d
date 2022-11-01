@@ -45,8 +45,8 @@ func void DIA_NAME_BANDIT_SCHAFBLEIBTHIER_Info ()
 
 	if (MIS_Akil_SchafDiebe == 0)
 	{
-		AI_Output			(other, self, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_15_01"); //Schaf? Was für ein Schaf?
-		AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_02"); //So ist's richtig. Und jetzt verschwinde. Hier gibt's nichts für dich.
+		AI_Output			(other, self, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_15_01"); //Schaf? Was fÃ¼r ein Schaf?
+		AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_02"); //So ist's richtig. Und jetzt verschwinde. Hier gibt's nichts fÃ¼r dich.
 	};
 };
 
@@ -114,14 +114,14 @@ func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Info ()
 	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_09_01"); //Ja und? Was willst du jetzt tun?
 	
 	Info_ClearChoices	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS);
-	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Gar nichts. Was interessiert mich das dämliche Schaf?", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts );
-	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Rück das Schaf raus, oder ich hau dir auf´s Maul.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
+	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Gar nichts. Was interessiert mich das dÃ¤mliche Schaf?", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts );
+	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "RÃ¼ck das Schaf raus, oder ich hau dir aufÂ´s Maul.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
 
 };
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_15_00"); //Rück das Schaf raus, oder ich hau dir aufs Maul.
-	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_09_01"); //Dann pass mal gut auf, Kleiner. Jetzt fängt der Affentanz an.
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_15_00"); //RÃ¼ck das Schaf raus, oder ich hau dir aufs Maul.
+	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_09_01"); //Dann pass mal gut auf, Kleiner. Jetzt fÃ¤ngt der Affentanz an.
 
 	AI_StopProcessInfos (self);
 	DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_NoPerm = TRUE;
@@ -133,7 +133,7 @@ func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
 
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_15_00"); //Gar nichts. Was interessiert mich das dämliche Schaf?
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_15_00"); //Gar nichts. Was interessiert mich das dÃ¤mliche Schaf?
 	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_09_01"); //Dann geh mir nicht auf die Nerven. Hau ab!
 	hero.aivar[AIV_LastDistToWP] 	= Npc_GetDistToWP (hero,"NW_FOREST_CAVE1_IN_01");
 	AI_StopProcessInfos (self);

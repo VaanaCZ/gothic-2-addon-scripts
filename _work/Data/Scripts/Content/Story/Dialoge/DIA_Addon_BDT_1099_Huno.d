@@ -112,23 +112,23 @@ FUNC INT DIA_Addon_Huno_Hi_Condition()
 FUNC VOID DIA_Addon_Huno_Hi_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_00");//Wie's aussieht, beherrschst du dein Handwerk.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_01");//Das habe ich doch schon mal gehört ... bringst du den Stahl?
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_01");//Das habe ich doch schon mal gehÃ¶rt ... bringst du den Stahl?
 	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_02");//Stahl? Nein, ich denke, du verwechselst mich ...
 	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_03");//Hm ... irgendwie kommst du mir bekannt vor. Kennen wir uns irgendwo her?
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
 	Info_AddChoice (DIA_Addon_Huno_Hi,"Klar, aus dem alten Lager.",DIA_Addon_Huno_Hi_JA);
-	Info_AddChoice (DIA_Addon_Huno_Hi,"Ich wüßte nicht woher.",DIA_Addon_Huno_Hi_NO);
+	Info_AddChoice (DIA_Addon_Huno_Hi,"Ich wÃ¼ÃŸte nicht woher.",DIA_Addon_Huno_Hi_NO);
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Huno handelt mit Schmiedezubehör.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Huno handelt mit SchmiedezubehÃ¶r.");
 };
 FUNC VOID DIA_Addon_Huno_Hi_JA()
 {
 	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_00");//Klar, aus dem alten Lager.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_01");//Das alte Lager ... richtig ... du bist dieser neugierige Typ ... ich dachte, du wärst tot.
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_02");//Ja, das denken alle. Wer hat sonst noch überlebt?
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_03");//Wenige. Ein paar sind wie ich, mit Raven geflohen. Für viele andere wurde das alte Lager zum Grab.
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_01");//Das alte Lager ... richtig ... du bist dieser neugierige Typ ... ich dachte, du wÃ¤rst tot.
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_02");//Ja, das denken alle. Wer hat sonst noch Ã¼berlebt?
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_03");//Wenige. Ein paar sind wie ich, mit Raven geflohen. FÃ¼r viele andere wurde das alte Lager zum Grab.
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
 	
@@ -136,8 +136,8 @@ FUNC VOID DIA_Addon_Huno_Hi_JA()
 };
 FUNC VOID DIA_Addon_Huno_Hi_NO()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_NO_15_00");//Ich wüsste nicht, woher.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_NO_06_01");//Hm ... mein Gedächtnis ist ein Sieb ... was soll's ...
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_NO_15_00");//Ich wÃ¼sste nicht, woher.
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_NO_06_01");//Hm ... mein GedÃ¤chtnis ist ein Sieb ... was soll's ...
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Huno_Blitz   (C_INFO)
 	condition   = DIA_Addon_Huno_Blitz_Condition;
 	information = DIA_Addon_Huno_Blitz_Info;
 	permanent   = FALSE;
-	description = "Erzähl mir von deiner Flucht.";
+	description = "ErzÃ¤hl mir von deiner Flucht.";
 };
 FUNC INT DIA_Addon_Huno_Blitz_Condition()
 {	
@@ -163,14 +163,14 @@ FUNC INT DIA_Addon_Huno_Blitz_Condition()
 };
 FUNC VOID DIA_Addon_Huno_Blitz_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_00");//Erzähl mir von deiner Flucht.
+	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_00");//ErzÃ¤hl mir von deiner Flucht.
 	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_01");//An dem Tag als die Barriere fiel, brach Chaos aus.
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_02");//Einige versteckten sich - andere flohen und überall wurde geplündert.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_02");//Einige versteckten sich - andere flohen und Ã¼berall wurde geplÃ¼ndert.
 	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_03");//Was hast du gemacht?
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_04");//Ich wollte gerade das Lager verlassen, da wird es schlagartig hell und ein sengender Schmerz fraß sich durch meine Haut.
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_05");//Ein verdammter Blitz hatte mich erwischt! Es ist mir so, als könnte ich ihn immer noch hören ...
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_04");//Ich wollte gerade das Lager verlassen, da wird es schlagartig hell und ein sengender Schmerz fraÃŸ sich durch meine Haut.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_05");//Ein verdammter Blitz hatte mich erwischt! Es ist mir so, als kÃ¶nnte ich ihn immer noch hÃ¶ren ...
 	//AI_Output (self, other, "DIA_Blitz_06_07");//BLITZ
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_06");//Später erzählte man mir, dass Thorus mich gefunden und mitgenommen hat.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_06");//SpÃ¤ter erzÃ¤hlte man mir, dass Thorus mich gefunden und mitgenommen hat.
 };
 //----------------------------------------------------------------------
 //	Info Armor
@@ -184,7 +184,7 @@ INSTANCE DIA_Addon_Huno_Armor   (C_INFO)
 	condition   = DIA_Addon_Huno_Armor_Condition;
 	information = DIA_Addon_Huno_Armor_Info;
 	permanent   = TRUE;
-	description = "Ich brauch 'ne bessere Rüstung.";
+	description = "Ich brauch 'ne bessere RÃ¼stung.";
 };
 FUNC INT DIA_Addon_Huno_Armor_Condition()
 {	
@@ -199,24 +199,24 @@ FUNC VOID DIA_Addon_Huno_Armor_Info()
 {	
 	Info_ClearChoices (DIA_Addon_Huno_Armor);
 	
-	AI_Output (other, self, "DIA_Addon_Huno_Armor_15_00"); //Ich brauch 'ne bessere Rüstung.
+	AI_Output (other, self, "DIA_Addon_Huno_Armor_15_00"); //Ich brauch 'ne bessere RÃ¼stung.
 	if (Huno_ArmorCheap == FALSE)
 	{	
 		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_01"); //So - die kannst du haben. Dass sie so teuer ist, liegt an Esteban.
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_02"); //Dieser verfluchte Hund kassiert nämlich von jeder Rüstung, die ich verkaufe, seinen Teil ab.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_02"); //Dieser verfluchte Hund kassiert nÃ¤mlich von jeder RÃ¼stung, die ich verkaufe, seinen Teil ab.
 		
 		BDT_Armor_H_Value = 2100;
 		Info_AddChoice (DIA_Addon_Huno_Armor, DIALOG_BACK, DIA_Addon_Huno_Armor_BACK);
-		Info_AddChoice (DIA_Addon_Huno_Armor, "Schwere Banditenrüstung kaufen (Schutz vor Waffen: 45, Pfeilen: 45, Kosten: 2100", DIA_Addon_Huno_Armor_BUY);
+		Info_AddChoice (DIA_Addon_Huno_Armor, "Schwere BanditenrÃ¼stung kaufen (Schutz vor Waffen: 45, Pfeilen: 45, Kosten: 2100", DIA_Addon_Huno_Armor_BUY);
 	}
 	else //CHEAP
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_Armor_15_03"); //Fisk hat gesagt, du würdest mir 'nen guten Preis machen?
+		AI_Output (other, self, "DIA_Addon_Huno_Armor_15_03"); //Fisk hat gesagt, du wÃ¼rdest mir 'nen guten Preis machen?
 		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_04"); //Fisk sagst du? Hm, gut, ich schulde ihm noch einen Gefallen.
 				
 		BDT_Armor_H_Value = 1400;
 		Info_AddChoice (DIA_Addon_Huno_Armor, DIALOG_BACK, DIA_Addon_Huno_Armor_BACK);
-		Info_AddChoice (DIA_Addon_Huno_Armor, "Schwere Banditenrüstung kaufen (Schutz vor Waffen: 45, Pfeilen: 45, Kosten: 1400", DIA_Addon_Huno_Armor_BUY);
+		Info_AddChoice (DIA_Addon_Huno_Armor, "Schwere BanditenrÃ¼stung kaufen (Schutz vor Waffen: 45, Pfeilen: 45, Kosten: 1400", DIA_Addon_Huno_Armor_BUY);
 	};
 };
 func void DIA_Addon_Huno_Armor_Back()
@@ -225,7 +225,7 @@ func void DIA_Addon_Huno_Armor_Back()
 };
 func void DIA_Addon_Huno_Armor_Buy()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_Armor_Buy_15_00"); //Okay, ich nehme die Rüstung.
+	AI_Output (other, self, "DIA_Addon_Huno_Armor_Buy_15_00"); //Okay, ich nehme die RÃ¼stung.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, BDT_Armor_H_Value)
 	{	
@@ -235,7 +235,7 @@ func void DIA_Addon_Huno_Armor_Buy()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_02"); //Kein Gold, keine Rüstung.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_02"); //Kein Gold, keine RÃ¼stung.
 	};
 	
 	if (BDT_Armor_H_Value < 2100) //nur, wenn billliger!
@@ -268,16 +268,16 @@ FUNC INT DIA_Addon_Huno_Attentat_Condition()
 FUNC VOID DIA_Addon_Huno_Attentat_Info()
 {	
 	B_Say (other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); //Wegen des Attentast auf Esteban
-	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_00"); //(gefährlich) Was willst du von mir?
+	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_00"); //(gefÃ¤hrlich) Was willst du von mir?
 	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_01"); //Ich suche den Auftraggeber ...
 	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_02"); //Und warum kommst du damit zu mir?
-	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_03"); //Ich hab gedacht, du weißt vielleicht was über die Sache.
-	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_04"); //Weiß ich NICHT!
+	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_03"); //Ich hab gedacht, du weiÃŸt vielleicht was Ã¼ber die Sache.
+	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_04"); //WeiÃŸ ich NICHT!
 };
 
 
 //----------------------------------------------------------------------
-//	Paar Dinge gehört
+//	Paar Dinge gehÃ¶rt
 //----------------------------------------------------------------------
 var int Huno_nochmal;
 var int Huno_SomeThings_PERM;
@@ -286,7 +286,7 @@ var int Huno_Counter;
 
 	func void B_Addon_Huno_Stress()
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Stress_06_00"); //(seufzt) Jetzt hör mal zu! Du bewegst jetzt deinen Arsch hier weg, bevor ich mich vergesse!
+		AI_Output (self, other, "DIA_Addon_Huno_Stress_06_00"); //(seufzt) Jetzt hÃ¶r mal zu! Du bewegst jetzt deinen Arsch hier weg, bevor ich mich vergesse!
 		Huno_Angepisst = TRUE;
 	};
 
@@ -297,7 +297,7 @@ INSTANCE DIA_Addon_Huno_SomeThings (C_INFO)
 	condition   = DIA_Addon_Huno_SomeThings_Condition;
 	information = DIA_Addon_Huno_SomeThings_Info;
 	permanent   = TRUE;
-	description = "Ich habe da ein paar Dinge über dich gehört...";
+	description = "Ich habe da ein paar Dinge Ã¼ber dich gehÃ¶rt...";
 };
 FUNC INT DIA_Addon_Huno_SomeThings_Condition()
 {	
@@ -310,7 +310,7 @@ FUNC INT DIA_Addon_Huno_SomeThings_Condition()
 };
 FUNC VOID DIA_Addon_Huno_SomeThings_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_00"); //Ich habe da ein paar Dinge über dich gehört ...
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_00"); //Ich habe da ein paar Dinge Ã¼ber dich gehÃ¶rt ...
 	
 	if (Huno_nochmal == FALSE)
 	{
@@ -326,35 +326,35 @@ FUNC VOID DIA_Addon_Huno_SomeThings_Info()
 
 	if (Finn_TellAll == TRUE) 		
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_03"); //Ich hab gehört, du warst nicht an deinem Platz, als das Attentat passiert ist!
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_04"); //(gefährlich) Und weiter?
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_03"); //Ich hab gehÃ¶rt, du warst nicht an deinem Platz, als das Attentat passiert ist!
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_04"); //(gefÃ¤hrlich) Und weiter?
 		Huno_Counter = Huno_Counter + 1;
 	};
 	
 	if (Paul_TellAll == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_05"); //Paul hat gesagt, du würdest Esteban hassen.
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_06"); //(gefährlich) So? Hat er das? Und weiter?
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_05"); //Paul hat gesagt, du wÃ¼rdest Esteban hassen.
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_06"); //(gefÃ¤hrlich) So? Hat er das? Und weiter?
 		Huno_Counter = Huno_Counter + 1;
 	};
 	
 	if (Emilio_TellAll == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_07"); //Emilio hat deinen Namen ausgespuckt! Du weißt auf jeden Fall was über's Attentat!
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_07"); //Emilio hat deinen Namen ausgespuckt! Du weiÃŸt auf jeden Fall was Ã¼ber's Attentat!
 		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_08"); //(ruhig) Du hast dich ein bisschen mit dem alten Emilio unterhalten, was?
 		
 		if (Huno_Counter > 0)
 		{
-			AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_09"); //Und er ist nicht er Einzige, der dich verdächtigt!
+			AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_09"); //Und er ist nicht er Einzige, der dich verdÃ¤chtigt!
 			AI_PlayAni(self, "T_SEARCH");
 			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_10"); //Was soll das werden, hm?
 			
 			Huno_SomeThings_PERM = TRUE;
 			Info_ClearChoices (DIA_Addon_Huno_SomeThings);
-			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Ich will mit dem Attentäter gemeinsame Sache machen!", DIA_Addon_Huno_SomeThings_Contra);
-			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Wenn du hinter dem Attentat steckst, wirst du dafür bezahlen!", DIA_Addon_Huno_SomeThings_Pro);
+			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Ich will mit dem AttentÃ¤ter gemeinsame Sache machen!", DIA_Addon_Huno_SomeThings_Contra);
+			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Wenn du hinter dem Attentat steckst, wirst du dafÃ¼r bezahlen!", DIA_Addon_Huno_SomeThings_Pro);
 			
-			B_LogEntry (Topic_Addon_Esteban, "Sieht so aus, als hätte ich Huno an seinen Eiern gepackt.");
+			B_LogEntry (Topic_Addon_Esteban, "Sieht so aus, als hÃ¤tte ich Huno an seinen Eiern gepackt.");
 		}
 		else
 		{
@@ -373,7 +373,7 @@ FUNC VOID DIA_Addon_Huno_SomeThings_Info()
 
 func void DIA_Addon_Huno_SomeThings_Pro()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Pro_15_00"); //Wenn du hinter dem Attentat steckst, wirst du dafür bezahlen!
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Pro_15_00"); //Wenn du hinter dem Attentat steckst, wirst du dafÃ¼r bezahlen!
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_01"); //(genervt) Du bist ja so ein Idiot! Glaubst du wirklich, du kannst dich bei Esteban einschleimen?
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_02"); //Mach, dass du wegkommst!
 	Huno_MEGA_Angepisst = TRUE;
@@ -383,16 +383,16 @@ func void DIA_Addon_Huno_SomeThings_Pro()
 	
 func void DIA_Addon_Huno_SomeThings_Contra()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_00"); //Ich will mit dem Attentäter gemeinsame Sache machen!
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_00"); //Ich will mit dem AttentÃ¤ter gemeinsame Sache machen!
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_01"); //Gegen Esteban? Wirklich? Dann beweise es!
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_02"); //Ich warte schon zu lange auf eine Lieferung Stahl von den Piraten.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_03"); //Ich vermute, dass Esteban sie abgefangen hat, um sie mir später teuer zu verkaufen.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_04"); //Das macht er natürlich nicht selbst. Ein paar der Banditen im Sumpf stehen auf seiner Lohnliste.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_05"); //Woher weißt du das?
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_03"); //Ich vermute, dass Esteban sie abgefangen hat, um sie mir spÃ¤ter teuer zu verkaufen.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_04"); //Das macht er natÃ¼rlich nicht selbst. Ein paar der Banditen im Sumpf stehen auf seiner Lohnliste.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_05"); //Woher weiÃŸt du das?
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_06"); //Betrunkene Banditen quatschen zuviel ...
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_07"); //Hat der gesprächige Bandit auch einen Namen?
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_08"); //Sein Name geht dich nichts an. Aber der Kerl, den du SUCHST, heißt Juan. Allerdings habe ich ihn schon lange nicht mehr im Lager gesehen.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_09"); //Du wirst im Sumpf nach ihm suchen müssen.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_07"); //Hat der gesprÃ¤chige Bandit auch einen Namen?
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_08"); //Sein Name geht dich nichts an. Aber der Kerl, den du SUCHST, heiÃŸt Juan. Allerdings habe ich ihn schon lange nicht mehr im Lager gesehen.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_09"); //Du wirst im Sumpf nach ihm suchen mÃ¼ssen.
 	
 	MIS_Huno_Stahl = LOG_RUNNING;
 	Huno_Angepisst = FALSE;
@@ -402,22 +402,22 @@ func void DIA_Addon_Huno_SomeThings_Contra()
 	B_LogEntry (Topic_Addon_Huno,"Huno wartete auf eine Lieferung Stahl von den Piraten. Er glaubt das ein Kerl namens Juan sie im Auftrag von Esteban abgefangen hat. Er versteckt sich irgendwo im Sumpf.");
 	
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
-	Info_AddChoice (DIA_Addon_Huno_SomeThings, "Du verrätst mir erst, wer der Auftraggeger ist!", DIA_Addon_Huno_SomeThings_TellMeNow);
-	Info_AddChoice (DIA_Addon_Huno_SomeThings, "Okay, ich mach die Sache für dich!", DIA_Addon_Huno_SomeThings_Mission);
+	Info_AddChoice (DIA_Addon_Huno_SomeThings, "Du verrÃ¤tst mir erst, wer der Auftraggeger ist!", DIA_Addon_Huno_SomeThings_TellMeNow);
+	Info_AddChoice (DIA_Addon_Huno_SomeThings, "Okay, ich mach die Sache fÃ¼r dich!", DIA_Addon_Huno_SomeThings_Mission);
 };
 
 func void DIA_Addon_Huno_SomeThings_Mission()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Mission_15_00"); //Okay, ich mache die Sache für dich!
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Mission_15_00"); //Okay, ich mache die Sache fÃ¼r dich!
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Mission_06_01"); //Gut. Wir werden ja sehen, ob man dir trauen kann.
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
 	AI_StopProcessInfos (self);
 };
 func void DIA_Addon_Huno_SomeThings_TellMeNow()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_00"); //Du verrätst mir erst, wer der Auftraggeber ist!
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_00"); //Du verrÃ¤tst mir erst, wer der Auftraggeber ist!
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_01"); //Nein. Ich traue dir nicht.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_02"); //Pass auf. Die nächste Unterhaltung, die ich führen werde, ist entweder mit dem Auftraggeber oder mit Esteban.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_02"); //Pass auf. Die nÃ¤chste Unterhaltung, die ich fÃ¼hren werde, ist entweder mit dem Auftraggeber oder mit Esteban.
 	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_03"); //Mit wem ich rede, ist deine Wahl.
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_04"); //(seufzt) Na gut. Ich werde dich mit dem Auftraggeber zusammenbringen. Aber es passiert so, wie ich es sage, klar?
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_05"); //Geh in die Kneipe und sprich mit dem Wirt. Alles Weitere wirst du von ihm erfahren.
@@ -458,7 +458,7 @@ FUNC VOID DIA_Addon_Huno_Paket_Info()
 	
 	if (Huno_zuSnaf == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_04"); //Du bist doch in Ordnung. Wenn ich ehrlich bin, hätte ich das von dir nicht erwartet.
+		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_04"); //Du bist doch in Ordnung. Wenn ich ehrlich bin, hÃ¤tte ich das von dir nicht erwartet.
 		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_05"); //Hier, nimm das hier als Belohnung.
 		B_GiveInvItems (self, other, itmi_gold, 200);
 	}

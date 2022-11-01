@@ -18,7 +18,7 @@ FUNC VOID DIA_Addon_Edgor_EXIT_Info()
 	if Npc_KnowsInfo (other, DIA_Addon_Edgor_MIS2)
 	&& (Edgor_Exiteinmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //War schˆn, dich gekannt zu haben ...
+		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //War sch√∂n, dich gekannt zu haben ...
 		Edgor_Exiteinmal = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -69,7 +69,7 @@ INSTANCE DIA_Addon_Edgor_Hi   (C_INFO)
 	condition   = DIA_Addon_Edgor_Hi_Condition;
 	information = DIA_Addon_Edgor_Hi_Info;
 	permanent   = FALSE;
-	description = "Wie l‰uft's?";
+	description = "Wie l√§uft's?";
 };
 FUNC INT DIA_Addon_Edgor_Hi_Condition()
 {	
@@ -77,12 +77,12 @@ FUNC INT DIA_Addon_Edgor_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //Wie l‰uft's?
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Du willst wissen, wie es l‰uft? Ich sage dir, wie es l‰uft.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //Zuerst haben mich irgendwelche Piraten in st¸rmischer Nacht hergebracht. Mann, ich hab die ganze Nussschale vollgekotzt.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Dann l‰sst Raven die Mine absperren, weil irgendwelche Idioten zu gierig auf das Gold sind.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //Und dann wird Franco Anf¸hrer der J‰ger und bringt jeden um, der dagegen ist.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Ich w¸rde sagen, es l‰uft ziemlich mies.
+	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //Wie l√§uft's?
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Du willst wissen, wie es l√§uft? Ich sage dir, wie es l√§uft.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //Zuerst haben mich irgendwelche Piraten in st√ºrmischer Nacht hergebracht. Mann, ich hab die ganze Nussschale vollgekotzt.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Dann l√§sst Raven die Mine absperren, weil irgendwelche Idioten zu gierig auf das Gold sind.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //Und dann wird Franco Anf√ºhrer der J√§ger und bringt jeden um, der dagegen ist.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Ich w√ºrde sagen, es l√§uft ziemlich mies.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -103,7 +103,7 @@ INSTANCE DIA_Addon_Edgor_Franco (C_INFO)
 	condition   = DIA_Addon_Edgor_Franco_Condition;
 	information = DIA_Addon_Edgor_Franco_Info;
 	permanent   = FALSE;
-	description = "Wie ist Franco zum Anf¸hrer geworden?";
+	description = "Wie ist Franco zum Anf√ºhrer geworden?";
 };
 FUNC INT DIA_Addon_Edgor_Franco_Condition()
 {	
@@ -114,8 +114,8 @@ FUNC INT DIA_Addon_Edgor_Franco_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Franco_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Franco_15_00"); //Wie ist Franco zum Anf¸hrer geworden?
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //Ganz einfach. Er hat Fletcher umgelegt. Der war vorher Anf¸hrer der J‰ger.
+	AI_Output (other, self, "DIA_Addon_Edgor_Franco_15_00"); //Wie ist Franco zum Anf√ºhrer geworden?
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //Ganz einfach. Er hat Fletcher umgelegt. Der war vorher Anf√ºhrer der J√§ger.
 	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Fletcher war okay. Franco verarscht uns doch alle nur.
 };	
 
@@ -142,11 +142,11 @@ FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 FUNC VOID DIA_Addon_Edgor_MIS2_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco schickt mich wegen dieser Steintafel. Hast du sie gefunden?
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Mann, ich hab sie nicht mal gesucht. Alles was ich weiﬂ ist, sie soll in diesem alten Geb‰ude tief im Sumpf liegen.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //Und meine innere Stimme sagt mir - Edgor, halte dich fern von alten Geb‰uden, die tief im Sumpf liegen.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Ich werde meinen Arsch bestimmt nicht f¸r diesen Penner Franco riskieren!
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Mann, ich hab sie nicht mal gesucht. Alles was ich wei√ü ist, sie soll in diesem alten Geb√§ude tief im Sumpf liegen.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //Und meine innere Stimme sagt mir - Edgor, halte dich fern von alten Geb√§uden, die tief im Sumpf liegen.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Ich werde meinen Arsch bestimmt nicht f√ºr diesen Penner Franco riskieren!
 	
-	B_LogEntry (Topic_Addon_Stoneplate,"Edgor wird niemals losziehen, um die Steintafel zu suchen. Er sagt, sie liegt irgendwo in einem alten Geb‰ude im Sumpf.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Edgor wird niemals losziehen, um die Steintafel zu suchen. Er sagt, sie liegt irgendwo in einem alten Geb√§ude im Sumpf.");
 };
 //---------------------------------------------------------------------
 //	Info Wegbeschreibung
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Edgor_Weg   (C_INFO)
 	condition   = DIA_Addon_Edgor_Weg_Condition;
 	information = DIA_Addon_Edgor_Weg_Info;
 	permanent   = FALSE;
-	description = "Wo ist dieses alte Geb‰ude noch gleich?";
+	description = "Wo ist dieses alte Geb√§ude noch gleich?";
 };
 FUNC INT DIA_Addon_Edgor_Weg_Condition()
 {	
@@ -169,11 +169,11 @@ FUNC INT DIA_Addon_Edgor_Weg_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Weg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Wo ist dieses alte Geb‰ude noch gleich?
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Geh einfach links an dem groﬂen Felsen hier vorbei. Nach einer Weile kommst du zu 'nem weiteren groﬂen Felsen.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Da musst du dann links oder rechts dran vorbei - ich weiﬂ es nicht mehr, das ist schon zu lange her.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Aber die Ruine soll auf einer Art Anhˆhe liegen. Ziemlich versteckt zwischen Pflanzen.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Vielleicht hast du Gl¸ck, und du findest sie nicht ...
+	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Wo ist dieses alte Geb√§ude noch gleich?
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Geh einfach links an dem gro√üen Felsen hier vorbei. Nach einer Weile kommst du zu 'nem weiteren gro√üen Felsen.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Da musst du dann links oder rechts dran vorbei - ich wei√ü es nicht mehr, das ist schon zu lange her.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Aber die Ruine soll auf einer Art Anh√∂he liegen. Ziemlich versteckt zwischen Pflanzen.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Vielleicht hast du Gl√ºck, und du findest sie nicht ...
 };
 //---------------------------------------------------------------------
 //	Info Found
@@ -200,7 +200,7 @@ FUNC VOID DIA_Addon_Edgor_Found_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//(erfreut) Ich habe die Steintafel gefunden!
 	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//(gelangweilt) Wirklich? Du bist ja ein mutiger Kerl.
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//(gelangweilt) Damit hast du dir bestimmt deinen Eintritt in's Lager verdient. (g‰hnt)
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//(gelangweilt) Damit hast du dir bestimmt deinen Eintritt in's Lager verdient. (g√§hnt)
 };
 //---------------------------------------------------------------------
 //	Info Teach
@@ -225,18 +225,18 @@ FUNC VOID DIA_Addon_Edgor_Teach_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//Kannst du mir was beibringen?
 	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//Ich kenne mich mit Blutfliegen aus. Ich hasse diesen miesen Biester noch mehr als Franco!
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Aber ich weiﬂ, wie ich ihren toten Kˆrpern die Stacheln und Fl¸gel entreiﬂen kann. (irre) Ja, entreiﬂen ...
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//Auﬂerdem weiﬂ ich, wie man das Sekret aus dem Stachel entfernt.
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Aber ich wei√ü, wie ich ihren toten K√∂rpern die Stacheln und Fl√ºgel entrei√üen kann. (irre) Ja, entrei√üen ...
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//Au√üerdem wei√ü ich, wie man das Sekret aus dem Stachel entfernt.
 	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//Wenn du willst, kann ich dir den ganzen Kram beibringen.
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Umsonst ist hier drauﬂen allerdings nichts ...
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Umsonst ist hier drau√üen allerdings nichts ...
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Edgor weiﬂ 'ne Menge ¸ber Blutfliegen und ihre Troph‰en.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Edgor wei√ü 'ne Menge √ºber Blutfliegen und ihre Troph√§en.");	
 	Edgor_Teach = TRUE;
 };
 FUNC VOID B_Edgor_NotEnoughGold()
 {
-	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//Besorg mir das Gold. Ich will nur M¸nzen, keine Brocken.
+	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//Besorg mir das Gold. Ich will nur M√ºnzen, keine Brocken.
 };
 //---------------------------------------------------------------------
 //	Info Train (Bloodflys)
@@ -272,7 +272,7 @@ FUNC VOID DIA_Addon_Edgor_Start_Info()
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "Blutfliegen Fl¸gel reiﬂen. (Kosten: 1 LP, 100 Gold)",DIA_Addon_Edgor_TrainStart_Wing);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "Blutfliegen Fl√ºgel rei√üen. (Kosten: 1 LP, 100 Gold)",DIA_Addon_Edgor_TrainStart_Wing);
 	};
 	if (Knows_Bloodfly == FALSE)
 	{
@@ -306,8 +306,8 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_Wing()
 	{
 		if B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//Wie kann ich mir die Fl¸gel nehmen?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//Greif dir die Fl¸gel mit einer Hand. Mit der anderen schneidest du sie mit der obersten Hautschicht einfach raus.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//Wie kann ich mir die Fl√ºgel nehmen?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//Greif dir die Fl√ºgel mit einer Hand. Mit der anderen schneidest du sie mit der obersten Hautschicht einfach raus.
 		};
 	}
 	else
@@ -323,8 +323,8 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_GIFT()
 		if (other.lp >= 1)
 		{
 			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Wie kann ich das Sekret der Blutfliegen entnehmen?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Schneide die oberste Schicht des Stachels l‰ngs auf - dann l‰uft das heilende Sekret schon raus.
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//So ist es vˆllig ungef‰hrlich, einen Stachel auszulutschen - oder ihn f¸r irgendwelche Tr‰nke zu verwenden.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Schneide die oberste Schicht des Stachels l√§ngs auf - dann l√§uft das heilende Sekret schon raus.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//So ist es v√∂llig ungef√§hrlich, einen Stachel auszulutschen - oder ihn f√ºr irgendwelche Tr√§nke zu verwenden.
 			
 			other.lp = (other.lp - 1);
 			Knows_Bloodfly = TRUE; 

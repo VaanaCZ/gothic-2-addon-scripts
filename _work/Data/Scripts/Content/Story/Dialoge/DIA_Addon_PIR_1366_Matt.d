@@ -76,7 +76,7 @@ FUNC INT DIA_Addon_Matt_Hello_Condition()
 };
 func VOID DIA_Addon_Matt_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Matt_Hello_10_01"); //Bist neu hier, was? Gut. Wir können jeden Mann gebrauchen!
+	AI_Output (self ,other,"DIA_Addon_Matt_Hello_10_01"); //Bist neu hier, was? Gut. Wir kÃ¶nnen jeden Mann gebrauchen!
 };
 
 // ************************************************************
@@ -107,20 +107,20 @@ func VOID DIA_Addon_Matt_PERM_Info()
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_01"); //Alles im Lot - (zynisch) Käpt'n!
+			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_01"); //Alles im Lot - (zynisch) KÃ¤pt'n!
 		};
 	}
 	else if (GregIsBack == TRUE)
 	&& (!Npc_IsDead(Greg))
 	{
 		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_01"); //Komm mir nicht so! Wir haben kein Schiff mehr.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_02"); //Ich werd mal abwarten, was Greg als nächstes macht.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_02"); //Ich werd mal abwarten, was Greg als nÃ¤chstes macht.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_03"); //Im Moment ist es ruhig im Lager. Also werde ich mich mal ein bißchen entspannen.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_04"); //Und an deiner Stelle, würde ich dir das gleiche empfehlen.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_05"); //Seit die Banditen da sind, kann sich das schneller ändern, als uns lieb ist.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_03"); //Im Moment ist es ruhig im Lager. Also werde ich mich mal ein biÃŸchen entspannen.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_04"); //Und an deiner Stelle, wÃ¼rde ich dir das gleiche empfehlen.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_05"); //Seit die Banditen da sind, kann sich das schneller Ã¤ndern, als uns lieb ist.
 	};
 };
 
@@ -134,7 +134,7 @@ INSTANCE DIA_Addon_Matt_Bandits(C_INFO)
 	condition	= DIA_Addon_Matt_Bandits_Condition;
 	information	= DIA_Addon_Matt_Bandits_Info;
 
-	description = "Was weißt du über die Banditen?";
+	description = "Was weiÃŸt du Ã¼ber die Banditen?";
 };                       
 FUNC INT DIA_Addon_Matt_Bandits_Condition()
 {
@@ -142,13 +142,13 @@ FUNC INT DIA_Addon_Matt_Bandits_Condition()
 };
 func VOID DIA_Addon_Matt_Bandits_Info()
 {	
-	AI_Output (other, self,"DIA_Addon_Matt_Bandits_15_03"); //Was weißt du über die Banditen?
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_01"); //Du meinst, ausser daß sie mordsgefährlich und uns zahlenmäßig weit überlegen sind?
+	AI_Output (other, self,"DIA_Addon_Matt_Bandits_15_03"); //Was weiÃŸt du Ã¼ber die Banditen?
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_01"); //Du meinst, ausser daÃŸ sie mordsgefÃ¤hrlich und uns zahlenmÃ¤ÃŸig weit Ã¼berlegen sind?
 	AI_Output (other,self ,"DIA_Addon_Matt_Bandits_15_02"); //Ja.
 	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_02"); //Sie haben Gold wie Heu.
 	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_03"); //Nun, zumindest HATTEN sie Gold wie Heu. Ihre letzte Lieferung haben sie nicht bezahlt.
 	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_04"); //Aber ich bezweifele, dass das daran liegt, dass den Mistkerlen das Gold ausgegangen ist.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_05"); //Ich denke eher, sie sind komplett größenwahnsinnig geworden.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_05"); //Ich denke eher, sie sind komplett grÃ¶ÃŸenwahnsinnig geworden.
 };
 
 // ************************************************************
@@ -161,7 +161,7 @@ INSTANCE DIA_Addon_Matt_Francis(C_INFO)
 	condition	= DIA_Addon_Matt_Francis_Condition;
 	information	= DIA_Addon_Matt_Francis_Info;
 
-	description = "Was weißt du über Francis?";
+	description = "Was weiÃŸt du Ã¼ber Francis?";
 };                       
 FUNC INT DIA_Addon_Matt_Francis_Condition()
 {
@@ -176,10 +176,10 @@ FUNC INT DIA_Addon_Matt_Francis_Condition()
 };
 func VOID DIA_Addon_Matt_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_00"); //Was weißt du über Francis?
-	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_01"); //Du meinst, ausser dass er faul und unfähig ist?
+	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_00"); //Was weiÃŸt du Ã¼ber Francis?
+	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_01"); //Du meinst, ausser dass er faul und unfÃ¤hig ist?
 	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_02"); //Ja.
-	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_03"); //Lass mich mal überlegen. Hmm... Nein. Mir fällt sonst nichts ein.
+	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_03"); //Lass mich mal Ã¼berlegen. Hmm... Nein. Mir fÃ¤llt sonst nichts ein.
 };
 
 
@@ -213,17 +213,17 @@ func VOID DIA_Addon_Matt_Anheuern_Info()
 	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_00"); //Komm mit.
 	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_01"); //Ich kann nicht weg, ich versuche gerade, mich zu entspannen.
 	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_02"); //Befehl von Greg.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_03"); //(eilig) Ach so. Das ist natürlich was anderes. Ich meine, natürlich komme ich mit.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_03"); //(eilig) Ach so. Das ist natÃ¼rlich was anderes. Ich meine, natÃ¼rlich komme ich mit.
 	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_04"); //Wo sollst denn hingehen?
 	
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
 	Info_AddChoice (DIA_Addon_Matt_Anheuern,"Halt einfach die Klappe und komm mit.",DIA_Addon_Matt_Anheuern_ShutUp);
-	Info_AddChoice (DIA_Addon_Matt_Anheuern,"Wir sollen den Canyon säubern.",DIA_Addon_Matt_Anheuern_ClearCanyon);
+	Info_AddChoice (DIA_Addon_Matt_Anheuern,"Wir sollen den Canyon sÃ¤ubern.",DIA_Addon_Matt_Anheuern_ClearCanyon);
 };
 func VOID DIA_Addon_Matt_Anheuern_ShutUp()
 {
 	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ShutUp_15_00"); //Halt einfach die Klappe und komm mit.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ShutUp_10_01"); //(mürrisch) Aye, aye - (sarkastisch) Käpt'n!
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ShutUp_10_01"); //(mÃ¼rrisch) Aye, aye - (sarkastisch) KÃ¤pt'n!
 	
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
 	AI_StopProcessInfos (self);
@@ -232,10 +232,10 @@ func VOID DIA_Addon_Matt_Anheuern_ShutUp()
 };
 func VOID DIA_Addon_Matt_Anheuern_ClearCanyon()
 {
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_00"); //Wir sollen den Canyon säubern.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_01"); //Du bist verrückt. Da gibts ein Haufen Viecher. Und Razor, die sind nicht ohne.
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_02"); //Ich weiß, kommst du jetzt.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_03"); //(seufzt) Pack bloss ein paar Heiltränke ein, wir werden sie brauchen!
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_00"); //Wir sollen den Canyon sÃ¤ubern.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_01"); //Du bist verrÃ¼ckt. Da gibts ein Haufen Viecher. Und Razor, die sind nicht ohne.
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_02"); //Ich weiÃŸ, kommst du jetzt.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_03"); //(seufzt) Pack bloss ein paar HeiltrÃ¤nke ein, wir werden sie brauchen!
 
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
 	AI_StopProcessInfos (self);
@@ -275,7 +275,7 @@ func void DIA_Addon_Matt_ComeOn_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_ComeOn_10_01"); //Aye, aye - (zynisch) Käpt'n!
+		AI_Output (self, other, "DIA_Addon_Matt_ComeOn_10_01"); //Aye, aye - (zynisch) KÃ¤pt'n!
 		AI_StopProcessInfos (self);
 		B_Addon_PiratesFollowAgain();
 		Npc_ExchangeRoutine	(self,"FOLLOW");
@@ -306,7 +306,7 @@ FUNC INT DIA_Addon_Matt_GoHome_Condition()
 FUNC VOID DIA_Addon_Matt_GoHome_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Matt_DontNeedYou_15_00"); //Ich brauch dich nicht mehr.
-	AI_Output (self, other, "DIA_Addon_Matt_GoHome_10_01"); //(stöht, zu sich) Ich brauch 'n ordentlichen Schluck Grog!
+	AI_Output (self, other, "DIA_Addon_Matt_GoHome_10_01"); //(stÃ¶ht, zu sich) Ich brauch 'n ordentlichen Schluck Grog!
 		
 	AI_StopProcessInfos (self); 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -336,14 +336,14 @@ FUNC INT DIA_Addon_Matt_TooFar_Condition()
 
 FUNC VOID DIA_Addon_Matt_TooFar_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_01"); //Ab hier kannst du alleine weitermachen- (zynisch) Käpt'n.
+	AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_01"); //Ab hier kannst du alleine weitermachen- (zynisch) KÃ¤pt'n.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_03"); //Ich und die Jungs gehen zurück zum Lager!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_03"); //Ich und die Jungs gehen zurÃ¼ck zum Lager!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_02"); //Ich geh zurück zum Lager!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_02"); //Ich geh zurÃ¼ck zum Lager!
 	};
 	
 	B_Addon_PiratesGoHome();
@@ -352,7 +352,7 @@ FUNC VOID DIA_Addon_Matt_TooFar_Info()
 };
 
 // ------------------------------------------------------------
-// 			 Ich könnte 'nen Heiltrank gebrauchen!
+// 			 Ich kÃ¶nnte 'nen Heiltrank gebrauchen!
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Matt_Healing(C_INFO)
 {
@@ -373,7 +373,7 @@ FUNC INT DIA_Addon_Matt_Healing_Condition()
 };
 func VOID DIA_Addon_Matt_Healing_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_Matt_Healing_10_01"); //(zynisch) Hallo Käpt'n! Ich könnte 'nen Heiltrank gebrauchen!
+	AI_Output (self, other, "DIA_Addon_Matt_Healing_10_01"); //(zynisch) Hallo KÃ¤pt'n! Ich kÃ¶nnte 'nen Heiltrank gebrauchen!
 };
 
 

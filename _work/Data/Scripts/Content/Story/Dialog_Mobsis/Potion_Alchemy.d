@@ -3,7 +3,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_Flask
+// benÃ¶tigtes Item dafÃ¼r: ItMi_Flask
 // *****************************************************
 FUNC VOID POTIONALCHEMY_S1 ()
 {
@@ -49,7 +49,7 @@ FUNC VOID PC_PotionAlchemy_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Tränke herstellen  Dialoge 
+//TrÃ¤nke herstellen  Dialoge 
 //--------
 //********************************************************
 
@@ -296,7 +296,7 @@ FUNC VOID PC_Charge_InnosEye_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Mana Tränke 
+//Mana TrÃ¤nke 
 //*******************************************************
 var int ManaStart;
 //----------------------
@@ -307,7 +307,7 @@ INSTANCE PC_Mana_Start (C_Info)
 	condition		= PC_Mana_Start_Condition;
 	information		= PC_Mana_Start_Info;
 	permanent		= TRUE;
-	description		= "Manatränke brauen"; 
+	description		= "ManatrÃ¤nke brauen"; 
 };
 
 FUNC INT PC_Mana_Start_Condition ()
@@ -358,7 +358,7 @@ INSTANCE PC_ItPo_Mana_01 (C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Mana Essenz (2 Feuernesseln, 1 Feldknöterich)"; 
+	description		= "Mana Essenz (2 Feuernesseln, 1 FeldknÃ¶terich)"; 
 };
 
 FUNC INT PC_ItPo_Mana_01_Condition()
@@ -398,7 +398,7 @@ INSTANCE PC_ItPo_Mana_02 (C_INFO)
 	condition		= PC_ItPo_Mana_02_Condition;
 	information		= PC_ItPo_Mana_02_Info;
 	permanent		= TRUE;
-	description		= "Mana Extrakt (2 Feuerkraut, 1 Feldknöterich) "; 
+	description		= "Mana Extrakt (2 Feuerkraut, 1 FeldknÃ¶terich) "; 
 };
 FUNC INT PC_ItPo_Mana_02_Condition()
 {	
@@ -436,7 +436,7 @@ INSTANCE PC_ItPo_Mana_03 (C_INFO)
 	condition		= PC_ItPo_Mana_03_Condition;
 	information		= PC_ItPo_Mana_03_Info;
 	permanent		= TRUE;
-	description		= "Mana Elixier (2 Feuerwurzeln, 1 Feldknöterich)"; 
+	description		= "Mana Elixier (2 Feuerwurzeln, 1 FeldknÃ¶terich)"; 
 };
 
 FUNC INT PC_ItPo_Mana_03_Condition()
@@ -475,7 +475,7 @@ INSTANCE PC_ItPo_Mana_04 (C_INFO)
 	condition		= PC_ItPo_Mana_04_Condition;
 	information		= PC_ItPo_Mana_04_Info;
 	permanent		= TRUE;
-	description		= "Manatrunk (3 Mana Essenzen, 1 Feldknöterich)"; 
+	description		= "Manatrunk (3 Mana Essenzen, 1 FeldknÃ¶terich)"; 
 };
 
 FUNC INT PC_ItPo_Mana_04_Condition()
@@ -507,7 +507,7 @@ FUNC VOID PC_ItPo_Mana_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Heiltränke 
+//HeiltrÃ¤nke 
 //*******************************************************
 var int HealthStart;
 //----------------------
@@ -518,7 +518,7 @@ INSTANCE PC_Health_Start (C_Info)
 	condition		= PC_Health_Start_Condition;
 	information		= PC_Health_Start_Info;
 	permanent		= TRUE;
-	description		= "Heiltränke brauen"; 
+	description		= "HeiltrÃ¤nke brauen"; 
 };
 
 FUNC INT PC_Health_Start_Condition ()
@@ -569,7 +569,7 @@ INSTANCE PC_ItPo_Health_01 (C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Essenz der Heilung (2 Heilplanzen, 1 Feldknöterich)"; 
+	description		= "Essenz der Heilung (2 Heilplanzen, 1 FeldknÃ¶terich)"; 
 };
 
 FUNC INT PC_ItPo_Health_01_Condition()
@@ -609,7 +609,7 @@ INSTANCE PC_ItPo_Health_02 (C_INFO)
 	condition		= PC_ItPo_Health_02_Condition;
 	information		= PC_ItPo_Health_02_Info;
 	permanent		= TRUE;
-	description		= "Extrakt der Heilung (2 Heilkräuter, 1 Feldknöterich)"; 
+	description		= "Extrakt der Heilung (2 HeilkrÃ¤uter, 1 FeldknÃ¶terich)"; 
 };
 
 FUNC INT PC_ItPo_Health_02_Condition()
@@ -648,7 +648,7 @@ INSTANCE PC_ItPo_Health_03 (C_INFO)
 	condition		= PC_ItPo_Health_03_Condition;
 	information		= PC_ItPo_Health_03_Info;
 	permanent		= TRUE;
-	description		= "Elixier der Heilung (2 Heilwurzeln, 1 Feldknöterich)"; 
+	description		= "Elixier der Heilung (2 Heilwurzeln, 1 FeldknÃ¶terich)"; 
 };
 FUNC INT PC_ItPo_Health_03_Condition()
 {	
@@ -686,7 +686,7 @@ INSTANCE PC_ItPo_Health_04 (C_INFO)
 	condition		= PC_ItPo_Health_04_Condition;
 	information		= PC_ItPo_Health_04_Info;
 	permanent		= TRUE;
-	description		= "Heiltrunk (3 Essenzen der Heilung, 1 Feldknöterich)"; 
+	description		= "Heiltrunk (3 Essenzen der Heilung, 1 FeldknÃ¶terich)"; 
 };
 FUNC INT PC_ItPo_Health_04_Condition()
 {	
@@ -717,7 +717,7 @@ FUNC VOID PC_ItPo_Health_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//Spezielle Tränke 
+//Spezielle TrÃ¤nke 
 //*******************************************************
 var int SpecialStart;
 //----------------------
@@ -728,7 +728,7 @@ INSTANCE PC_Special_Start (C_Info)
 	condition		= PC_Special_Start_Condition;
 	information		= PC_Special_Start_Info;
 	permanent		= TRUE;
-	description		= "Spezielle Tränke brauen"; 
+	description		= "Spezielle TrÃ¤nke brauen"; 
 };
 
 FUNC INT PC_Special_Start_Condition ()
@@ -779,7 +779,7 @@ INSTANCE PC_ItPo_Addon_Geist (C_INFO)
 	condition		= PC_ItPo_Addon_Geist_Condition;
 	information		= PC_ItPo_Addon_Geist_Info;
 	permanent		= TRUE;
-	description		= "Elixier der Geistveränderung"; 
+	description		= "Elixier der GeistverÃ¤nderung"; 
 };
 
 FUNC INT PC_ItPo_Addon_Geist_Condition()
@@ -829,7 +829,7 @@ INSTANCE PC_ItPo_Perm_Health (C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Elixier des Lebens (1 Heilwurzel, 1 Kronstöckel)"; 
+	description		= "Elixier des Lebens (1 Heilwurzel, 1 KronstÃ¶ckel)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Health_Condition()
@@ -868,7 +868,7 @@ INSTANCE PC_ItPo_Perm_Mana (C_INFO)
 	condition		= PC_ItPo_Perm_Mana_Condition;
 	information		= PC_ItPo_Perm_Mana_Info;
 	permanent		= TRUE;
-	description		= "Elixier des Geistes (1 Feuerwurzel, 1 Kronstöckl)"; 
+	description		= "Elixier des Geistes (1 Feuerwurzel, 1 KronstÃ¶ckl)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Mana_Condition()
@@ -907,7 +907,7 @@ INSTANCE PC_ItPo_Dex (C_INFO)
 	condition		= PC_ItPo_Dex_Condition;
 	information		= PC_ItPo_Dex_Info;
 	permanent		= TRUE;
-	description		= "Trank des Geschicks (1 Goblin Beere, 1 Kronstöckl)"; 
+	description		= "Trank des Geschicks (1 Goblin Beere, 1 KronstÃ¶ckl)"; 
 };
 
 FUNC INT PC_ItPo_Dex_Condition()
@@ -946,7 +946,7 @@ INSTANCE PC_ItPo_Strg (C_INFO)
 	condition		= PC_ItPo_Strg_Condition;
 	information		= PC_ItPo_Strg_Info;
 	permanent		= TRUE;
-	description		= "Trank der Stärke (1 Drachenwurzel, 1 Kronstöckl)"; 
+	description		= "Trank der StÃ¤rke (1 Drachenwurzel, 1 KronstÃ¶ckl)"; 
 };
 
 FUNC INT PC_ItPo_Strg_Condition()
@@ -985,7 +985,7 @@ INSTANCE PC_ItPo_Speed (C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Trank der Geschwindigkeit (1 Snapperkraut, 1 Feldknöterich)"; 
+	description		= "Trank der Geschwindigkeit (1 Snapperkraut, 1 FeldknÃ¶terich)"; 
 };
 
 FUNC INT PC_ItPo_Speed_Condition()
@@ -1110,7 +1110,7 @@ FUNC VOID PC_ItMi_Joint_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//	Grünen Novizen herstellen
+//	GrÃ¼nen Novizen herstellen
 //*******************************************************
 INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 {
@@ -1119,7 +1119,7 @@ INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 	condition		= PC_ItMi_Addon_Joint_01_Condition;
 	information		= PC_ItMi_Addon_Joint_01_Info;
 	permanent		= TRUE;
-	description		= "Grünen Novizen herstellen (1 Stengel)"; 
+	description		= "GrÃ¼nen Novizen herstellen (1 Stengel)"; 
 };
 
 FUNC INT PC_ItMi_Addon_Joint_01_Condition()

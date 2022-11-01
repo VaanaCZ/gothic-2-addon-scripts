@@ -20,7 +20,7 @@ func VOID DIA_DiegoOw_EXIT_Info()
 };
 
 //******************************************************************
-//				Begrüssung
+//				BegrÃ¼ssung
 //******************************************************************
 INSTANCE DIA_DiegoOw_Hallo(C_INFO)
 {
@@ -37,19 +37,19 @@ FUNC INT DIA_DiegoOw_Hallo_Condition()
 };
 FUNC VOID DIA_DiegoOw_Hallo_Info()
 {	
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_00");//Hey, ich dachte, du wärst tot.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_00");//Hey, ich dachte, du wÃ¤rst tot.
 	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_01");//Ja ... war ich auch.
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_02");//Jetzt bin ich wieder hier und suche nach Beweisen für die Ankunft der Drachen.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_03");//Für wen machst du das?
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_04");//Ich arbeite für Lord Hagen. Mit Hilfe der Paladine können die Drachen aufgehalten werden.
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_02");//Jetzt bin ich wieder hier und suche nach Beweisen fÃ¼r die Ankunft der Drachen.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_03");//FÃ¼r wen machst du das?
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_04");//Ich arbeite fÃ¼r Lord Hagen. Mit Hilfe der Paladine kÃ¶nnen die Drachen aufgehalten werden.
 	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_05");//Die Paladine? Jetzt sage ich dir mal was. Nachdem ich von hier fliehen konnte, war ich in Khorinis.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_06");//Ich wollte die Paladine vor den Drachen warnen. Weiß der Henker, warum ich das überhaupt versucht habe.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_07");//Denn dieser aufgeblasene Lothar hat mir nicht mal zugehört - geschweige denn, mich zu Lord Hagen vorgelassen.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_08");//Stattdessen haben sie mich mit der Expedition wieder her geschickt. Also erzähle mir nichts von den Paladinen ...
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_09");//Mit wessen Hilfe auch immer, wichtig ist nur, dass wir die Drachen aufhalten - solange wir noch Zeit dafür haben.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_10");//Aufhalten? Wir sollten unsere Ärsche aus dem Tal schaffen, solange wir noch Zeit DAFÜR haben.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_06");//Ich wollte die Paladine vor den Drachen warnen. WeiÃŸ der Henker, warum ich das Ã¼berhaupt versucht habe.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_07");//Denn dieser aufgeblasene Lothar hat mir nicht mal zugehÃ¶rt - geschweige denn, mich zu Lord Hagen vorgelassen.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_08");//Stattdessen haben sie mich mit der Expedition wieder her geschickt. Also erzÃ¤hle mir nichts von den Paladinen ...
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_09");//Mit wessen Hilfe auch immer, wichtig ist nur, dass wir die Drachen aufhalten - solange wir noch Zeit dafÃ¼r haben.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_10");//Aufhalten? Wir sollten unsere Ã„rsche aus dem Tal schaffen, solange wir noch Zeit DAFÃœR haben.
 	
-	AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_03");//Sag mal - wie bist du eigentlich über den Pass gekommen? Ich denke, da sitzen die Orks rum.
+	AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_03");//Sag mal - wie bist du eigentlich Ã¼ber den Pass gekommen? Ich denke, da sitzen die Orks rum.
 	AI_Output (other ,self,"DIA_DiegoOw_Silvestro_15_04");//Es gibt einen Weg durch die verlassene Mine, der nicht von Orks besetzt ist.
 	AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_05");//Gut zu wissen. Dann werde ich mich wohl bald nach Khorinis aufmachen - hab da noch ein paar alte Rechnungen zu begleichen.
 };	
@@ -64,7 +64,7 @@ INSTANCE DIA_DiegoOw_Beweise(C_INFO)
 	condition	= DIA_DiegoOw_Beweise_Condition;
 	information	= DIA_DiegoOw_Beweise_Info;
 
-	description	= "Hör zu, ich brauche diese Beweise.";
+	description	= "HÃ¶r zu, ich brauche diese Beweise.";
 };                       
 FUNC INT DIA_DiegoOw_Beweise_Condition()
 {	
@@ -72,45 +72,45 @@ FUNC INT DIA_DiegoOw_Beweise_Condition()
 };
 FUNC VOID DIA_DiegoOw_Beweise_Info()
 {	
-		//AI_Output (other ,self,"DIA_DiegoOw_Silvestro_15_00");//Was weißt du von Silvestros Erz?
+		//AI_Output (other ,self,"DIA_DiegoOw_Silvestro_15_00");//Was weiÃŸt du von Silvestros Erz?
 	
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_11"); //Hör zu, ich brauche diese Beweise.
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_11"); //HÃ¶r zu, ich brauche diese Beweise.
 		
 	if (MIS_ScoutMine == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_14");//Okay, wenn ich dir helfen kann, werde ich das tun. Aber ich werde meinen Kopf für niemanden in die Schlinge legen.
+		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_14");//Okay, wenn ich dir helfen kann, werde ich das tun. Aber ich werde meinen Kopf fÃ¼r niemanden in die Schlinge legen.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_12");//Na schön, wenn das deine Mission ist - sprich mal mit Kommandant Garond.
-		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_13");//Wenn jemand was über die Drachenangriffe weiß, dann sind es die Jungs in der Burg.
+		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_12");//Na schÃ¶n, wenn das deine Mission ist - sprich mal mit Kommandant Garond.
+		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_13");//Wenn jemand was Ã¼ber die Drachenangriffe weiÃŸ, dann sind es die Jungs in der Burg.
 	};
 	
 	if (MIS_ScoutMine == LOG_RUNNING)
 	{
-		AI_Output (other ,self,"DIA_DiegoOw_Garond_15_00");//Ich bin im Auftrag von Garond unterwegs. Er muss wissen, wie viel Erz bisher geschürft wurde.
+		AI_Output (other ,self,"DIA_DiegoOw_Garond_15_00");//Ich bin im Auftrag von Garond unterwegs. Er muss wissen, wie viel Erz bisher geschÃ¼rft wurde.
 		AI_Output (self ,other,"DIA_DiegoOw_Garond_11_01");//Und dann gibt er dir die Beweise, die du haben willst?
-		AI_Output (other ,self,"DIA_DiegoOw_Garond_15_02");//So sieht's aus. Also - kannst du mir was darüber erzählen?
+		AI_Output (other ,self,"DIA_DiegoOw_Garond_15_02");//So sieht's aus. Also - kannst du mir was darÃ¼ber erzÃ¤hlen?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoOw_Garond_11_01"); //Und wenn du schonmal in der Burg bist, kannst du Garond direkt etwas erzählen, was ihn sehr interessieren dürfte:
+		AI_Output (self ,other,"DIA_Addon_DiegoOw_Garond_11_01"); //Und wenn du schonmal in der Burg bist, kannst du Garond direkt etwas erzÃ¤hlen, was ihn sehr interessieren dÃ¼rfte:
 	};
 		
 	if (Npc_GetDistToWP (self, "LOCATION_02_05") <= 1000)
 	{
-		AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_01"); //Hier hinten in der Höhle sind die VIER Kisten Erz, die Silvestros Männer geschürft haben.
+		AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_01"); //Hier hinten in der HÃ¶hle sind die VIER Kisten Erz, die Silvestros MÃ¤nner geschÃ¼rft haben.
 		AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_02"); //Die kann sich Garond gerne abholen - aber dann werde ich nicht mehr da sein.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoOw_Silvestro_11_01"); //In der Höhle, bei der ich mich versteckt hatte, sind die VIER Kisten Erz. Die hatten Silvestros Männer geschürft.
-		AI_Output (self ,other,"DIA_Addon_DiegoOw_Silvestro_11_02"); //Die kann sich Garond gerne abholen - ich habe sowieso keine Verwendung dafür...
+		AI_Output (self ,other,"DIA_Addon_DiegoOw_Silvestro_11_01"); //In der HÃ¶hle, bei der ich mich versteckt hatte, sind die VIER Kisten Erz. Die hatten Silvestros MÃ¤nner geschÃ¼rft.
+		AI_Output (self ,other,"DIA_Addon_DiegoOw_Silvestro_11_02"); //Die kann sich Garond gerne abholen - ich habe sowieso keine Verwendung dafÃ¼r...
 	};
 	
 	Silvestro_Ore = TRUE;
 	
-	B_LogEntry (TOPIC_ScoutMine,"Diego hat VIER Kisten Erz von Silvestro's Schürfern in Sicherheit gebracht.");
+	B_LogEntry (TOPIC_ScoutMine,"Diego hat VIER Kisten Erz von Silvestro's SchÃ¼rfern in Sicherheit gebracht.");
 };
 //******************************************************************
 //			Mine
@@ -135,10 +135,10 @@ FUNC INT DIA_DiegoOw_Mine_Condition()
 FUNC VOID DIA_DiegoOw_Mine_Info()
 {	
 	AI_Output (other ,self,"DIA_DiegoOw_Mine_15_00");//Wie bist du an das Erz gekommen?
-	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_01");//Ich war bei Silvestros Truppe. Wir schürfen da also schon ein paar Tage, da wird Silvestro auf einmal unruhig.
-	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_02");//Er meinte, wir müssen das Erz unbedingt an einen sicheren Ort bringen.
-	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_03");//Na ja, da ich eh vor hatte, mich abzusetzen, habe ich dann die Sicherstellung des Erzes übernommen.
-	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_04");//Und das war mein Glück. Denn die Schürfer sind auf einige Minecrawler gestoßen. Und das hat keiner überlebt.
+	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_01");//Ich war bei Silvestros Truppe. Wir schÃ¼rfen da also schon ein paar Tage, da wird Silvestro auf einmal unruhig.
+	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_02");//Er meinte, wir mÃ¼ssen das Erz unbedingt an einen sicheren Ort bringen.
+	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_03");//Na ja, da ich eh vor hatte, mich abzusetzen, habe ich dann die Sicherstellung des Erzes Ã¼bernommen.
+	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_04");//Und das war mein GlÃ¼ck. Denn die SchÃ¼rfer sind auf einige Minecrawler gestoÃŸen. Und das hat keiner Ã¼berlebt.
 };
 //******************************************************************
 //			Ritter
@@ -164,8 +164,8 @@ FUNC INT DIA_DiegoOw_Ritter_Condition()
 FUNC VOID DIA_DiegoOw_Ritter_Info()
 {	
 	AI_Output (other ,self,"DIA_DiegoOw_Ritter_15_00");//Was ist mit den beiden toten Rittern vor deinem Versteck?
-	AI_Output (self ,other,"DIA_DiegoOw_Ritter_11_01");//Der Kampf gegen eine Gruppe von Snappern wurde ihnen zum Verhängnis.
-	AI_Output (self ,other,"DIA_DiegoOw_Ritter_11_02");//Das Minental hat halt seine eigenen Regeln. Ich hab's ihnen gesagt. Aber sie wollten nicht auf mich hören.
+	AI_Output (self ,other,"DIA_DiegoOw_Ritter_11_01");//Der Kampf gegen eine Gruppe von Snappern wurde ihnen zum VerhÃ¤ngnis.
+	AI_Output (self ,other,"DIA_DiegoOw_Ritter_11_02");//Das Minental hat halt seine eigenen Regeln. Ich hab's ihnen gesagt. Aber sie wollten nicht auf mich hÃ¶ren.
 };
 //******************************************************************
 //			Perm
@@ -177,7 +177,7 @@ INSTANCE DIA_DiegoOw_Perm(C_INFO)
 	condition	= DIA_DiegoOw_Perm_Condition;
 	information	= DIA_DiegoOw_Perm_Info;
 	permanent	= FALSE;
-	description = "Was muss ich über das Tal wissen?";
+	description = "Was muss ich Ã¼ber das Tal wissen?";
 };                       
 FUNC INT DIA_DiegoOw_Perm_Condition()
 {	
@@ -185,10 +185,10 @@ FUNC INT DIA_DiegoOw_Perm_Condition()
 };
 FUNC VOID DIA_DiegoOw_Perm_Info()
 {	
-	AI_Output (other ,self,"DIA_DiegoOw_Perm_15_00");//Was muss ich über das Tal wissen?
-	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_01");//Mit dem Fall der Barriere hat sich hier einiges verändert. Die Orks haben hier das Sagen.
-	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_02");//Wir Menschen sind nur noch Futter für die wahren Herrscher des Tals: die Drachen.
-	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_03");//Weiche allem aus, was stärker ist als du - und halte dich von allem fern, was nach Drache aussieht.
+	AI_Output (other ,self,"DIA_DiegoOw_Perm_15_00");//Was muss ich Ã¼ber das Tal wissen?
+	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_01");//Mit dem Fall der Barriere hat sich hier einiges verÃ¤ndert. Die Orks haben hier das Sagen.
+	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_02");//Wir Menschen sind nur noch Futter fÃ¼r die wahren Herrscher des Tals: die Drachen.
+	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_03");//Weiche allem aus, was stÃ¤rker ist als du - und halte dich von allem fern, was nach Drache aussieht.
 };
 
 //******************************************************************
@@ -213,12 +213,12 @@ FUNC INT DIA_DiegoOw_Gorn_Condition()
 };
 FUNC VOID DIA_DiegoOw_Gorn_Info()
 {	
-	AI_Output (other ,self,"DIA_DiegoOw_Gorn_15_00");//Ich will Gorn freikaufen, aber Garond verlangt 1000 Goldstücke.
-	AI_Output (self ,other,"DIA_DiegoOw_Gorn_11_01");//Ein schöner Batzen Gold. Ich habe 300 Goldstücke dabei, die kannst du mitnehmen. Der Rest liegt an dir.
+	AI_Output (other ,self,"DIA_DiegoOw_Gorn_15_00");//Ich will Gorn freikaufen, aber Garond verlangt 1000 GoldstÃ¼cke.
+	AI_Output (self ,other,"DIA_DiegoOw_Gorn_11_01");//Ein schÃ¶ner Batzen Gold. Ich habe 300 GoldstÃ¼cke dabei, die kannst du mitnehmen. Der Rest liegt an dir.
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 300);
 	
-	B_LogEntry (TOPIC_RescueGorn,"Diego hat 300 Goldstücke zur Befreiung von Gorn beigetragen.");
+	B_LogEntry (TOPIC_RescueGorn,"Diego hat 300 GoldstÃ¼cke zur Befreiung von Gorn beigetragen.");
 };
 
 //******************************************************************
@@ -264,7 +264,7 @@ func void DIA_DiegoOw_TEACH_BACK()
 	};
 	if (other.attribute[ATR_STRENGTH] > Diego_MerkeSTR)
 	{
-		AI_Output (self, other, "DIA_Addon_DiegoOw_Teach_11_03"); //(abschätzend) Gut. Deine Stärke hat zugenommen.
+		AI_Output (self, other, "DIA_Addon_DiegoOw_Teach_11_03"); //(abschÃ¤tzend) Gut. Deine StÃ¤rke hat zugenommen.
 	};
 	
 	Info_ClearChoices (DIA_DiegoOw_TEACH);
@@ -379,9 +379,9 @@ func void DIA_Addon_ThiefOW_Together_Info ()
 	AI_Output (self, other, "DIA_Addon_Diego_Together_11_01"); //Zum Pass? Warum nicht...
 	AI_Output (self, other, "DIA_Addon_Diego_Together_11_02"); //Geh du voran. Du kommst ja gerade von dort.
 	AI_Output (self, other, "DIA_Addon_Diego_Together_11_03"); //Aber lass dir nicht einfallen, zu nahe an die Burg oder den Orkwall zu gehen.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_04"); //Außerdem sollen wir alle befestigten Lager der Paladine meiden.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_05"); //Ich bin gerade aus einem entkommen und habe keine Lust, wieder in einer der Minen schuften zu müssen.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_06"); //Und daß wir nicht in die Nähe eines Drachen gehen, versteht sich wohl von selbst.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_04"); //AuÃŸerdem sollen wir alle befestigten Lager der Paladine meiden.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_05"); //Ich bin gerade aus einem entkommen und habe keine Lust, wieder in einer der Minen schuften zu mÃ¼ssen.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_06"); //Und daÃŸ wir nicht in die NÃ¤he eines Drachen gehen, versteht sich wohl von selbst.
 	AI_Output (self, other, "DIA_Addon_Diego_Together_11_07"); //Wenn du bereit bist, sag es mir.
 };
 
@@ -466,7 +466,7 @@ FUNC VOID DIA_Addon_ThiefOW_GoHome_Info()
 	}
 	else if (Npc_GetDistToWP (self, "OW_NEWMINE_11") < (4000+1000)) //FAJETHMINE
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_03"); //Ich warte in der Nähe der Mine.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_03"); //Ich warte in der NÃ¤he der Mine.
 		AI_StopProcessInfos (self); 
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine	(self,"FAJETH");
@@ -480,14 +480,14 @@ FUNC VOID DIA_Addon_ThiefOW_GoHome_Info()
 	}
 	else if (Npc_GetDistToWP (self, "OW_PATH_266") < (3000+1000)) //GRIMESMINE
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_05"); //Ich warte hier in der Nähe.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_05"); //Ich warte hier in der NÃ¤he.
 		AI_StopProcessInfos (self);
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine	(self,"GRIMES");
 	}
 	else if (Npc_GetDistToWP (self, "LOCATION_02_05") < 15000) //Orcbarrier FIRE ANGAR LAKE
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_06"); //Nein. Ich geh wieder zurück zur Höhle.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_06"); //Nein. Ich geh wieder zurÃ¼ck zur HÃ¶hle.
 		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_07"); //Wenn du mit deinem Kram fertig bist, kannst du ja wieder vorbeischauen.
 		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_08"); //Aber warte nicht zu lange. Sonst mache ich mich alleine auf den Weg.
 		AI_StopProcessInfos (self);
@@ -498,7 +498,7 @@ FUNC VOID DIA_Addon_ThiefOW_GoHome_Info()
 	{
 		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_09"); //Das ist doch nicht dein Ernst? Wir sollen uns trennen? Hier?
 		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_10"); //Das kommt nicht in Frage!
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_11"); //Wir gehen jetzt schön zusammen zum Pass.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_11"); //Wir gehen jetzt schÃ¶n zusammen zum Pass.
 	};
 };
 
@@ -512,7 +512,7 @@ func void B_Addon_Diego_WillWaitOutside()
 // ------------------------------------------------------------
 func void B_Addon_Diego_PassOtherDirection()
 {
-	AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_01"); //Wenn wir zum Pass wollen, müssen wir in die andere Richtung.
+	AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_01"); //Wenn wir zum Pass wollen, mÃ¼ssen wir in die andere Richtung.
 };
 // ------------------------------------------------------------
 var int Diego_TooFarComment;
@@ -554,7 +554,7 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 {	
 	if (C_DiegoTooFar(1000) == LOC_ANGAR)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_02"); //Diese alte Grabstätte ist mir nicht geheuer.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_02"); //Diese alte GrabstÃ¤tte ist mir nicht geheuer.
 		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_03"); //Lass uns lieber drum herum gehen.
 	}
 	else if (C_DiegoTooFar(1000) == LOC_ICE)
@@ -574,26 +574,26 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 	else if (C_DiegoTooFar(1000) == LOC_SWAMP)
 	{
 		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_06"); //Dieser Sumpf ist eine Sackgasse.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_07"); //Würde ich nicht wundern, wenn da drinnen sogar ein Drache auf uns lauert.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_07"); //WÃ¼rde ich nicht wundern, wenn da drinnen sogar ein Drache auf uns lauert.
 		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_08"); //Lass uns nicht da reingehen.
 	}
 	else if (C_DiegoTooFar(1000) == LOC_FIRE)
 	{
 		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_09"); //Wenn wir den Berg weiter hochgehen, kommen wir garantiert zu einem Drachen.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_10"); //Und ich würde gerne LEBEND in Khorinis ankommen.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_10"); //Und ich wÃ¼rde gerne LEBEND in Khorinis ankommen.
 		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_11"); //Lass uns einen anderen Weg nehmen.
 	}
 	else if (C_DiegoTooFar(1000) == LOC_LAKE)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_12"); //Dieser See führt uns nirgendwohin.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_13"); //Wenn wir zum Pass wollen, müssen wir in die andere Richtung!
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_12"); //Dieser See fÃ¼hrt uns nirgendwohin.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_13"); //Wenn wir zum Pass wollen, mÃ¼ssen wir in die andere Richtung!
 	}
 	else if (C_DiegoTooFar(1000) == LOC_XARDAS)
 	{
 		if (Diego_XardasVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_14"); //Das ist der alte Turm von Xardas. Er hat sich natürlich längst aus dem Staub gemacht.
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_15"); //Bin mir sicher, da drinnen warten einige unangenehme Überraschungen. 
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_14"); //Das ist der alte Turm von Xardas. Er hat sich natÃ¼rlich lÃ¤ngst aus dem Staub gemacht.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_15"); //Bin mir sicher, da drinnen warten einige unangenehme Ãœberraschungen. 
 			B_Addon_Diego_WillWaitOutside();
 			Diego_XardasVariation = 1;
 		}
@@ -615,18 +615,18 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 		}
 		else //1
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_18"); //Ich werde einen großen Bogen um diese Mine machen!
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_18"); //Ich werde einen groÃŸen Bogen um diese Mine machen!
 		};
 	}
 	else if (C_DiegoTooFar(1000) == LOC_SILVESTROMINE)
 	{
 		if (Diego_SilvestroVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_19"); //Das ist die Mine, in die sie mich gebracht haben, als ich mit dem Strafkonvoi zurückgekommen bin.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_19"); //Das ist die Mine, in die sie mich gebracht haben, als ich mit dem Strafkonvoi zurÃ¼ckgekommen bin.
 			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_20"); //Ich bin mir sicher, da drinnen lebt KEINER mehr.
 			B_Addon_Diego_WillWaitOutside();
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_Add_11_20"); //Aber wenn du zu lange brauchst, geh ich wieder zurück zu meinem Lager.
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_Add_11_21"); //Es sei denn, du willst, daß ich hier solange warte.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_Add_11_20"); //Aber wenn du zu lange brauchst, geh ich wieder zurÃ¼ck zu meinem Lager.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_Add_11_21"); //Es sei denn, du willst, daÃŸ ich hier solange warte.
 			Diego_SilvestroVariation = 1;
 		}
 		else //1
@@ -654,12 +654,12 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 	{
 		if (Diego_BurgVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_24"); //Bist du lebensmüde? Geh bloß nicht zu nahe an die Burg!
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_24"); //Bist du lebensmÃ¼de? Geh bloÃŸ nicht zu nahe an die Burg!
 			Diego_BurgVariation = 1;
 		}
 		else if (Diego_BurgVariation == 1)
 		{	
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_25"); //Sag mal, hörst du mir nicht zu?! Nicht zu nahe an die Burg!
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_25"); //Sag mal, hÃ¶rst du mir nicht zu?! Nicht zu nahe an die Burg!
 			Diego_BurgVariation = 2;
 		}
 		else //2
@@ -670,8 +670,8 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 	}
 	else if (C_DiegoTooFar(1000) == LOC_ORCBARRIER)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_27"); //Hier können wir nicht weitergehen. Die Orkbarriere ist zu gefährlich.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_28"); //Ich denke, es wäre besser, wenn wir wieder Richtung Westen gehen und einen Bogen zur anderen Seite machen.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_27"); //Hier kÃ¶nnen wir nicht weitergehen. Die Orkbarriere ist zu gefÃ¤hrlich.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_28"); //Ich denke, es wÃ¤re besser, wenn wir wieder Richtung Westen gehen und einen Bogen zur anderen Seite machen.
 	}
 	else if (C_DiegoTooFar(1000) == LOC_ORCBARRIER_FAR)
 	{
@@ -687,8 +687,8 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 // ------------------------------------------------------------
 func void B_Diego_WirSindDa()
 {	
-	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_02"); //Den Rest des Weges werde ich alleine zurücklegen.
-	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_03"); //Ich habe da noch einige Dinge zu erledigen, bevor ich nach Khorinis zurückgehen kann.
+	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_02"); //Den Rest des Weges werde ich alleine zurÃ¼cklegen.
+	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_03"); //Ich habe da noch einige Dinge zu erledigen, bevor ich nach Khorinis zurÃ¼ckgehen kann.
 	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_04"); //Ich danke dir, mein Freund. Wir sehen uns in der Stadt.
 	
 	AI_StopProcessInfos (self);
@@ -742,7 +742,7 @@ FUNC INT DIA_Addon_ThiefOW_Nostalgie_Condition()
 };
 func VOID DIA_Addon_ThiefOW_Nostalgie_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_01"); //Weißt du noch, damals?
+	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_01"); //WeiÃŸt du noch, damals?
 	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_02"); //Als wir uns hier das erste Mal trafen?
 	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_03"); //Ist ne lange Zeit her...
 	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_04"); //Irgendendwas war NOCH an diesem Ort - hmm - verdammt! Ich kann mich nicht mehr erinnern.
@@ -781,7 +781,7 @@ func VOID DIA_Addon_ThiefOW_PERM_Info()
 	AI_Output (other ,self,"DIA_Addon_Diego_PERM_15_00"); //Alles klar?
 	if (self.attribute[ATR_HITPOINTS] <= (self.attribute[ATR_HITPOINTS_MAX] / 2))
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_PERM_11_01"); //Ich könnte einen Heiltrank gebrauchen. Du hast nicht zufällig einen dabei?
+		AI_Output (self, other, "DIA_Addon_Diego_PERM_11_01"); //Ich kÃ¶nnte einen Heiltrank gebrauchen. Du hast nicht zufÃ¤llig einen dabei?
 	}
 	else if (DiegoOW.aivar[AIV_PARTYMEMBER] == FALSE)
 	&& 		(Diego_angekommen == FALSE)

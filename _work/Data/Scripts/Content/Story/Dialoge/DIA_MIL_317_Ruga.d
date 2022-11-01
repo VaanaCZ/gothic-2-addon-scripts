@@ -31,7 +31,7 @@ INSTANCE DIA_Ruga_PICKPOCKET (C_INFO)
 	condition	= DIA_Ruga_PICKPOCKET_Condition;
 	information	= DIA_Ruga_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seinen Schlüssel zu stehlen)";
+	description = "(Es wÃ¤re einfach seinen SchlÃ¼ssel zu stehlen)";
 };                       
 
 FUNC INT DIA_Ruga_PICKPOCKET_Condition()
@@ -96,10 +96,10 @@ func int DIA_Ruga_Hallo_Condition ()
 func void DIA_Ruga_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //Was machst du hier?
-	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //Ich trainiere die Jungs im Umgang mit der Armbrust und sorge dafür, dass sie ein bisschen beweglicher werden.
+	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //Ich trainiere die Jungs im Umgang mit der Armbrust und sorge dafÃ¼r, dass sie ein bisschen beweglicher werden.
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Ruga, von der Stadtwache, kann mir helfen geschickter zu werden und mich im Umgang mit der Armbrust unterweisen. Allerdings muss ich dazu im Dienst des Königs stehen.");
+	B_LogEntry (Topic_CityTeacher, "Ruga, von der Stadtwache, kann mir helfen geschickter zu werden und mich im Umgang mit der Armbrust unterweisen. Allerdings muss ich dazu im Dienst des KÃ¶nigs stehen.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Train
@@ -129,8 +129,8 @@ func void DIA_Ruga_Train_Info ()
 	|| (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //Natürlich. Wenn du genügend Erfahrung mitbringst, kann ich dir helfen.
-		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //Und vergiss nicht, Geschicklichkeit und Fernkampf gehören zusammen wie Armbrust und Bolzen. Das eine ...
+		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //NatÃ¼rlich. Wenn du genÃ¼gend Erfahrung mitbringst, kann ich dir helfen.
+		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //Und vergiss nicht, Geschicklichkeit und Fernkampf gehÃ¶ren zusammen wie Armbrust und Bolzen. Das eine ...
 		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //... ist ohne das andere nicht viel wert. Verstehe.
 	
 		Ruga_TeachCrossbow = TRUE;
@@ -139,13 +139,13 @@ func void DIA_Ruga_Train_Info ()
 	else if ((hero.guild == GIL_SLD)
 	|| 		 (hero.guild == GIL_DJG))
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //Mach, dass du wegkommst, (verächtlich) Söldner.
+		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //Mach, dass du wegkommst, (verÃ¤chtlich) SÃ¶ldner.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{	 
-		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Nein, ich trainiere nur die Männer, die im Dienste des Königs stehen. Niemand sonst.
-		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Aber gute Leute können wir immer gebrauchen. Also, wenn du der Miliz beitreten willst, sprich mit Lord Andre.
+		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Nein, ich trainiere nur die MÃ¤nner, die im Dienste des KÃ¶nigs stehen. Niemand sonst.
+		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Aber gute Leute kÃ¶nnen wir immer gebrauchen. Also, wenn du der Miliz beitreten willst, sprich mit Lord Andre.
 	};     
 };
 //**************************************

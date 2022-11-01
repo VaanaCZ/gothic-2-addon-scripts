@@ -20,7 +20,7 @@ FUNC VOID DIA_Pedro_DI_EXIT_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Verräter
+//	Info VerrÃ¤ter
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pedro_DI_YOU		(C_INFO)
 {
@@ -29,7 +29,7 @@ instance DIA_Pedro_DI_YOU		(C_INFO)
 	condition	 = 	DIA_Pedro_DI_YOU_Condition;
 	information	 = 	DIA_Pedro_DI_YOU_Info;
 	
-	description	 = 	"Verräter!";
+	description	 = 	"VerrÃ¤ter!";
 	
 };
 func int DIA_Pedro_DI_YOU_Condition ()
@@ -39,49 +39,49 @@ func int DIA_Pedro_DI_YOU_Condition ()
 
 func void DIA_Pedro_DI_YOU_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_00"); //Verräter! Endlich habe ich dich gefunden.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_00"); //VerrÃ¤ter! Endlich habe ich dich gefunden.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_01"); //Glaub ja nicht, nur weil ich dem Corps der Paladine angehöre, lass ich bei dir Gnade walten.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_01"); //Glaub ja nicht, nur weil ich dem Corps der Paladine angehÃ¶re, lass ich bei dir Gnade walten.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_02"); //Bei uns Söldnern haben viele ihre Seele an Beliar verkauft und trotzdem verspürte ich oft Skrupel, sie einfach abzuschlachten, aber du Drecksau bist eine Ausnahme.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_02"); //Bei uns SÃ¶ldnern haben viele ihre Seele an Beliar verkauft und trotzdem verspÃ¼rte ich oft Skrupel, sie einfach abzuschlachten, aber du Drecksau bist eine Ausnahme.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_03"); //Von allen seelenlosen Dreckskerlen, denen ich je begegnet bin, bist du mit Abstand der Schlimmste. Du bist eine Schande für unseren Orden.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_03"); //Von allen seelenlosen Dreckskerlen, denen ich je begegnet bin, bist du mit Abstand der Schlimmste. Du bist eine Schande fÃ¼r unseren Orden.
 		};
 
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_04"); //Ich sollte dich gleich hier töten.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_05"); //Halte ein. Ich bitte dich. Sie haben mich verhext. Ich hätte doch niemals aus freiem Willen das Kloster Innos' verraten.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_06"); //Du weißt ja gar nicht, was ich die letzten Tage durchgestanden habe. Sie haben mir diese Stimme in den Kopf gepflanzt. Ich konnte mich nicht dagegen wehren.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_07"); //Der Orkische Oberst hat mich tagelang verhört. Er hat mich ständig geschlagen. Verschone mich. Mich trifft keine Schuld. Du musst mir glauben.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_04"); //Ich sollte dich gleich hier tÃ¶ten.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_05"); //Halte ein. Ich bitte dich. Sie haben mich verhext. Ich hÃ¤tte doch niemals aus freiem Willen das Kloster Innos' verraten.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_06"); //Du weiÃŸt ja gar nicht, was ich die letzten Tage durchgestanden habe. Sie haben mir diese Stimme in den Kopf gepflanzt. Ich konnte mich nicht dagegen wehren.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_07"); //Der Orkische Oberst hat mich tagelang verhÃ¶rt. Er hat mich stÃ¤ndig geschlagen. Verschone mich. Mich trifft keine Schuld. Du musst mir glauben.
 	
 	Info_ClearChoices	(DIA_Pedro_DI_YOU);
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Erzähl´ mir, was du weißt.", DIA_Pedro_DI_YOU_verschon );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Gar nichts muß ich. Ich werde dich jetzt töten.", DIA_Pedro_DI_YOU_tot );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "ErzÃ¤hlÂ´ mir, was du weiÃŸt.", DIA_Pedro_DI_YOU_verschon );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "Gar nichts muÃŸ ich. Ich werde dich jetzt tÃ¶ten.", DIA_Pedro_DI_YOU_tot );
 	Info_AddChoice	(DIA_Pedro_DI_YOU, "Nenn mir nur einen Grund, warum ich dir das glauben sollte?", DIA_Pedro_DI_YOU_grund );
 	if (MIS_Gorax_KillPedro == LOG_RUNNING)
 	{
-		Info_AddChoice	(DIA_Pedro_DI_YOU, "Serpentes gab mir den Auftag, dich zu töten", DIA_Pedro_DI_YOU_Serpentes );
+		Info_AddChoice	(DIA_Pedro_DI_YOU, "Serpentes gab mir den Auftag, dich zu tÃ¶ten", DIA_Pedro_DI_YOU_Serpentes );
 	};
 };
 
 func void DIA_Pedro_DI_YOU_grund ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_YOU_grund_15_00"); //Nenn mir nur einen Grund, warum ich dir glauben sollte.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_grund_09_01"); //(flehend) Lass mich leben. Ich kann dir auch Informationen geben, die dir helfen werden, hier wieder herauszukommen. Du musst mich anhören.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_grund_09_01"); //(flehend) Lass mich leben. Ich kann dir auch Informationen geben, die dir helfen werden, hier wieder herauszukommen. Du musst mich anhÃ¶ren.
 
 };
 var int PedroDI_Flee;
 func void DIA_Pedro_DI_YOU_tot ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_tot_15_00"); //Gar nichts muss ich. Ich werde dich jetzt töten.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_tot_09_01"); //Bei allen Göttern ...
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_tot_15_00"); //Gar nichts muss ich. Ich werde dich jetzt tÃ¶ten.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_tot_09_01"); //Bei allen GÃ¶ttern ...
 
 	AI_StopProcessInfos (self);
 
@@ -92,21 +92,21 @@ func void DIA_Pedro_DI_YOU_tot ()
 
 func void DIA_Pedro_DI_YOU_Serpentes ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_Serpentes_15_00"); //Serpentes gab mir den Auftrag, dich zu töten, und ich pflege in der Regel meine Aufträge zu erledigen.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(flehend) Bitte, nein. Das kannst du nicht machen. Ich kann noch von großem Nutzen für dich sein. Das musst du doch erkennen.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_Serpentes_15_00"); //Serpentes gab mir den Auftrag, dich zu tÃ¶ten, und ich pflege in der Regel meine AuftrÃ¤ge zu erledigen.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(flehend) Bitte, nein. Das kannst du nicht machen. Ich kann noch von groÃŸem Nutzen fÃ¼r dich sein. Das musst du doch erkennen.
 
 	B_GivePlayerXP (XP_Pedro_SerpentesMission);
-	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heißen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
+	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heiÃŸen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
 
 };
 
 func void DIA_Pedro_DI_YOU_verschon ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_verschon_15_00"); //Erzähl mir, was du weißt.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_verschon_09_01"); //(erleichtert) Ja, natürlich. Ich sag dir alles, was du willst. Unter einer Bedingung. Du musst mich von dieser verfluchten Insel herunterschaffen, hörst du?
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_verschon_15_00"); //ErzÃ¤hl mir, was du weiÃŸt.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_verschon_09_01"); //(erleichtert) Ja, natÃ¼rlich. Ich sag dir alles, was du willst. Unter einer Bedingung. Du musst mich von dieser verfluchten Insel herunterschaffen, hÃ¶rst du?
 	
 	Info_ClearChoices	(DIA_Pedro_DI_YOU);
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Gar nichts muß ich. Ich werde dich jetzt töten.", DIA_Pedro_DI_YOU_tot );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "Gar nichts muÃŸ ich. Ich werde dich jetzt tÃ¶ten.", DIA_Pedro_DI_YOU_tot );
 	Info_AddChoice	(DIA_Pedro_DI_YOU, "In Ordnung. Folge mir, ich bringe dich zu meinem Schiff.", DIA_Pedro_DI_YOU_FollowShip );
 
 };
@@ -149,12 +149,12 @@ func int DIA_Pedro_DI_ArrivedAtShip_Condition ()
 func void DIA_Pedro_DI_ArrivedAtShip_Info ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_00"); //Da sind wir!
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_01"); //Ein stattliches Schiff hast du da. Du bist wahrlich ein großer Feldherr.
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_02"); //Hör auf zu schwafeln. Erzähl mir, was ich hören will.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_03"); //Äh, natürlich. Womit soll ich beginnen?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_01"); //Ein stattliches Schiff hast du da. Du bist wahrlich ein groÃŸer Feldherr.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_02"); //HÃ¶r auf zu schwafeln. ErzÃ¤hl mir, was ich hÃ¶ren will.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_03"); //Ã„h, natÃ¼rlich. Womit soll ich beginnen?
 	
 	Info_ClearChoices	(DIA_Pedro_DI_ArrivedAtShip);
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Ich habe genug gehört.", DIA_Pedro_DI_ArrivedAtShip_Back );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Ich habe genug gehÃ¶rt.", DIA_Pedro_DI_ArrivedAtShip_Back );
 	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Wie komme ich ins Innere der Insel?", DIA_Pedro_DI_ArrivedAtShip_Innere );
 	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Welche Unholde treiben sich noch auf dieser Insel herum?", DIA_Pedro_DI_ArrivedAtShip_Monster );
 	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Wie war das mit dem Orkischen Oberst?", DIA_Pedro_DI_ArrivedAtShip_OrkOberst );
@@ -165,8 +165,8 @@ func void DIA_Pedro_DI_ArrivedAtShip_OrkOberst ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_15_00"); //Wie war das mit dem Orkischen Oberst?
 	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_01"); //Er hat mir den letzten Funken Hoffnung genommen, jemals meine Heimat wiederzusehen.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_02"); //Seit ich hierher gekommen bin, fragt er mich aus über die strategischen Stellungen der Paladine in Khorinis.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_03"); //Natürlich konnte ich ihm nicht viel dazu sagen. Wie auch, verdammt? Ich bin ein Novize des Feuers.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_02"); //Seit ich hierher gekommen bin, fragt er mich aus Ã¼ber die strategischen Stellungen der Paladine in Khorinis.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_03"); //NatÃ¼rlich konnte ich ihm nicht viel dazu sagen. Wie auch, verdammt? Ich bin ein Novize des Feuers.
 	
 	if ((Npc_IsDead(OrkElite_AntiPaladinOrkOberst_DI)))
 	{
@@ -177,7 +177,7 @@ func void DIA_Pedro_DI_ArrivedAtShip_OrkOberst ()
 func void DIA_Pedro_DI_ArrivedAtShip_Monster ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Monster_15_00"); //Welche Unholde treiben sich noch auf dieser Insel herum?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_01"); //Tagsüber sieht man oft Echsenmenschen zur Küste laufen. Sie tragen meistens sehr große Eier mit sich herum.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_01"); //TagsÃ¼ber sieht man oft Echsenmenschen zur KÃ¼ste laufen. Sie tragen meistens sehr groÃŸe Eier mit sich herum.
 	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_02"); //Ich bekam nicht sehr viel mit in meiner Zelle, aber ich glaube, sie machen sich bereit, die Insel zu verlassen.
 };
 
@@ -185,25 +185,25 @@ func void DIA_Pedro_DI_ArrivedAtShip_Innere ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Innere_15_00"); //Wie komme ich ins Innere der Insel?
 	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_01"); //Es gibt einen geheimen Gang im Thronsaal des Orkischen Obersts.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02"); //Ich bin jedes Mal dorthin geschleppt worden, wenn er mich verhören wollte. Da habe ich es gesehen.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03"); //Einer der Schamanen hat einen Mechanismus in Gang gesetzt, indem er an den Fackeln, die in dem Saal an den Wänden hängen, gezogen hat.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04"); //Mmh. Ich glaube, er hat erst die linke und dann die rechte Fackel gezogen, aber genau weiß ich das nicht mehr.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05"); //Im hinteren Bereich öffnete sich plötzlich ein geheimer Gang, der bis tief in den Berg hineinführt.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06"); //Wo dieser Gang endet, weiß ich nicht.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02"); //Ich bin jedes Mal dorthin geschleppt worden, wenn er mich verhÃ¶ren wollte. Da habe ich es gesehen.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03"); //Einer der Schamanen hat einen Mechanismus in Gang gesetzt, indem er an den Fackeln, die in dem Saal an den WÃ¤nden hÃ¤ngen, gezogen hat.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04"); //Mmh. Ich glaube, er hat erst die linke und dann die rechte Fackel gezogen, aber genau weiÃŸ ich das nicht mehr.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05"); //Im hinteren Bereich Ã¶ffnete sich plÃ¶tzlich ein geheimer Gang, der bis tief in den Berg hineinfÃ¼hrt.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06"); //Wo dieser Gang endet, weiÃŸ ich nicht.
 
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_OberstTot ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_15_00"); //Der Orkische Oberst ist tot.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_09_01"); //Tot? Gepriesen sei Innos. Ich werde seine hässliche Fratze niemals mehr vergessen.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_09_01"); //Tot? Gepriesen sei Innos. Ich werde seine hÃ¤ssliche Fratze niemals mehr vergessen.
 
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Back ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Back_15_00"); //Ich habe genug gehört. Such dir einen Platz auf meinem Schiff. Ich habe noch einen Job zu erledigen.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Back_09_01"); //Möge die Macht Innos' dich begleiten. Ich werde für dich beten.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Back_15_00"); //Ich habe genug gehÃ¶rt. Such dir einen Platz auf meinem Schiff. Ich habe noch einen Job zu erledigen.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Back_09_01"); //MÃ¶ge die Macht Innos' dich begleiten. Ich werde fÃ¼r dich beten.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Ship");
@@ -222,7 +222,7 @@ instance DIA_Pedro_DI_PERM		(C_INFO)
 	information	 = 	DIA_Pedro_DI_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Müde?";
+	description	 = 	"MÃ¼de?";
 };
 var int PedroDI_TalkNomore;
 func int DIA_Pedro_DI_PERM_Condition ()
@@ -235,7 +235,7 @@ func int DIA_Pedro_DI_PERM_Condition ()
 };
 func void DIA_Pedro_DI_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_00"); //Müde?
+	AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_00"); //MÃ¼de?
 
 	if (Npc_GetDistToWP(self,"SHIP_DECK_05")<1000) 
 	{	
@@ -249,7 +249,7 @@ func void DIA_Pedro_DI_PERM_Info ()
 		}
 		else if (Npc_IsDead(Dragon_Undead))
 		{
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_04"); //Ich bin völlig fertig.
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_04"); //Ich bin vÃ¶llig fertig.
 			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_05"); //Leg dich in die Koje. Wir sind bald wieder auf See.
 			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_06"); //Danke, Mann. Ich dachte schon, ich kippe hier noch von der Bank. Gute Nacht.
 			AI_StopProcessInfos (self);

@@ -51,7 +51,7 @@ func VOID DIA_Addon_HammerPirate_Hello_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_03"); //Nein! Ich steh' nicht auf Hämmern!
+		AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_03"); //Nein! Ich steh' nicht auf HÃ¤mmern!
 	};
 };
 
@@ -83,11 +83,11 @@ FUNC INT DIA_Addon_HammerPirate_Anheuern_Condition()
 };
 func VOID DIA_Addon_HammerPirate_Anheuern_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_00"); //Sag nichts! Du willst, daß ich mit dir die Banditen plattmache!
+	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_00"); //Sag nichts! Du willst, daÃŸ ich mit dir die Banditen plattmache!
 	AI_Output (other,self ,"DIA_Addon_PIR_6_JoinHenry_15_08"); //Du hast es erfasst.
 	if (!Npc_IsDead(SawPirate))
 	{
-		AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_01"); //Warum fragst du nicht den Typen an der Säge?
+		AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_01"); //Warum fragst du nicht den Typen an der SÃ¤ge?
 	};
 	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_02"); //Ich... hab keine Lust auf den ganzen Stress...
 };
@@ -122,7 +122,7 @@ func void DIA_Addon_HammerPirate_ComeOn_Info ()
 	}
 	else if (Npc_GetDistToWP (self, "ADW_PIRATECAMP_WAY_08") > 6000)
 	{	
-		AI_Output (self ,other,"DIA_Addon_HammerPirate_ComeOn_07_02"); //Lass uns erst ein Stück zurück in Richtung Lager gehen.
+		AI_Output (self ,other,"DIA_Addon_HammerPirate_ComeOn_07_02"); //Lass uns erst ein StÃ¼ck zurÃ¼ck in Richtung Lager gehen.
 		AI_StopProcessInfos (self);
 	}
 	else
@@ -187,7 +187,7 @@ FUNC INT DIA_Addon_HammerPirate_TooFar_Condition()
 FUNC VOID DIA_Addon_HammerPirate_TooFar_Info()
 {	
 	AI_Output (self ,other,"DIA_Addon_HammerPirate_TooFar_07_01"); //Wenn du weiter in die Richtung gehen willst, lass dich nicht aufhalten...
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_02"); //Ich geh mal lieber wieder zurück.
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_02"); //Ich geh mal lieber wieder zurÃ¼ck.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");
@@ -220,7 +220,7 @@ FUNC INT DIA_Addon_HammerPirate_Success_Condition()
 
 FUNC VOID DIA_Addon_HammerPirate_Success_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_01"); //Weißt da was, ich hab nachgedacht. Du bist doch ganz in Ordnung!
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_01"); //WeiÃŸt da was, ich hab nachgedacht. Du bist doch ganz in Ordnung!
 	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_02"); //Ich geh mal wieder zum Lager. Wir sehen uns!
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

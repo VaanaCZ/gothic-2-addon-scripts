@@ -60,21 +60,21 @@ FUNC VOID DIA_Sld_820_Halt_Info()
 	AI_Output (self, other, "DIA_Sld_820_Halt_07_05"); //Was willst du von ihm?
 	
 	Info_ClearChoices (DIA_Sld_820_Halt);
-	Info_AddChoice (DIA_Sld_820_Halt, "Ich kenne ihn von früher...", DIA_Sld_820_Halt_KenneLee);
+	Info_AddChoice (DIA_Sld_820_Halt, "Ich kenne ihn von frÃ¼her...", DIA_Sld_820_Halt_KenneLee);
 	if (other.guild == GIL_NONE)
 	{
-		Info_AddChoice (DIA_Sld_820_Halt, "Ich will mich den Söldnern anschliessen!", DIA_Sld_820_Halt_WannaJoin);
+		Info_AddChoice (DIA_Sld_820_Halt, "Ich will mich den SÃ¶ldnern anschliessen!", DIA_Sld_820_Halt_WannaJoin);
 	};
 };
 
 func void B_Sld_820_LeeIsRight()
 {
-	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Lee ist im rechten Flügel. Lass dir ja nicht einfallen, dich woanders rumzutreiben!
+	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Lee ist im rechten FlÃ¼gel. Lass dir ja nicht einfallen, dich woanders rumzutreiben!
 };
 
 func void DIA_Sld_820_Halt_WannaJoin()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //Ich will mich den Söldnern anschließen!
+	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //Ich will mich den SÃ¶ldnern anschlieÃŸen!
 	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //Ah, frisches Kanonenfutter! Dann geh mal rein.
 	B_Sld_820_LeeIsRight();
 	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //Aber vor allem lass Onar in Ruhe! Er steht nicht drauf, wenn man ihn unaufgefordert anquatscht. Schon gar nicht bei Typen wie dir.
@@ -83,7 +83,7 @@ func void DIA_Sld_820_Halt_WannaJoin()
 
 func void DIA_Sld_820_Halt_KenneLee()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //Ich kenne ihn von früher ...
+	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //Ich kenne ihn von frÃ¼her ...
 	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //DU bist ein Kumpel von Lee? Ich glaub dir kein Wort! Aber geh ruhig, wenn er sich nicht an dich erinnern kann, wirst du's schon merken ... (lacht)
 	B_Sld_820_LeeIsRight();
 	AI_StopProcessInfos	(self);

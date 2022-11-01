@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesver‰nderung (unwissend zusammengebraut)																		//
+//	Trank der Geistesver√§nderung (unwissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_01(C_Item)
 {
@@ -18,12 +18,12 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank der Geistesver‰nderung";
+	description		= 	"Trank der Geistesver√§nderung";
 	
 	TEXT[2]			=   "Vor der Anwendung sollte man sich ABSICHERN!";
 	
-	TEXT[3]			= 	"Kann den Verstand derbe beeinfluﬂen ";	
-	TEXT[4]			= 	"oder den Anwender tˆten";
+	TEXT[3]			= 	"Kann den Verstand derbe beeinflu√üen ";	
+	TEXT[4]			= 	"oder den Anwender t√∂ten";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -36,7 +36,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 		self.attribute[ATR_HITPOINTS] = (self.attribute[ATR_HITPOINTS] -1000);
 	};
 /******************************************************************************************/
-//	Trank der Geistesver‰nderung (wissend zusammengebraut)																		//
+//	Trank der Geistesver√§nderung (wissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_02(C_Item)
 {
@@ -55,12 +55,12 @@ INSTANCE ItPo_Addon_Geist_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank der Geistesver‰nderung";
+	description		= 	"Trank der Geistesver√§nderung";
 	
 	TEXT[2]			=   "Vor der Anwendung sollte man sich ABSICHERN!";
 	
-	TEXT[3]			= 	"Kann den Verstand derbe beeinfluﬂen ";	
-	TEXT[4]			= 	"oder den Anwender tˆten";
+	TEXT[3]			= 	"Kann den Verstand derbe beeinflu√üen ";	
+	TEXT[4]			= 	"oder den Anwender t√∂ten";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -96,7 +96,7 @@ INSTANCE ItPo_Health_Addon_04(C_Item)
 	description		= 	"Reine Lebensenergie";
 	
 	//TEXT[1]			= 	NAME_Bonus_HP;				
-	TEXT[2]			= 	"Vollst‰ndige Regeneration";
+	TEXT[2]			= 	"Vollst√§ndige Regeneration";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_HpTrunk;
@@ -129,7 +129,7 @@ INSTANCE ItPo_Mana_Addon_04(C_Item)
 	description		= 	"Reines Mana";
 	
 	//TEXT[1]			= 	NAME_Bonus_Mana;				
-	TEXT[2]			= 	"Vollst‰ndige Mana - Regeneration";
+	TEXT[2]			= 	"Vollst√§ndige Mana - Regeneration";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaTrunk;

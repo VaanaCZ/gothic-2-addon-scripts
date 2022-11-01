@@ -43,7 +43,7 @@ FUNC VOID DIA_Addon_Brandon_Hello_Info()
 {	
 	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_00"); //Sieh an. Ein Neuling.
 	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_01"); //Und eine Landratte noch dazu!
-	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_02"); //Bist'n bißchen dürr für 'n Piraten.
+	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_02"); //Bist'n biÃŸchen dÃ¼rr fÃ¼r 'n Piraten.
 };
 
 // ************************************************************
@@ -88,11 +88,11 @@ FUNC VOID DIA_Addon_Brandon_AnyNews_Info()
 	&& (!Npc_IsDead(Greg))
 	&& (MIS_Addon_Greg_ClearCanyon != LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_04"); //Nein, aber jetzt wo Greg jetzt zurück ist, wird sich das hoffentlich bald ändern.
+		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_04"); //Nein, aber jetzt wo Greg jetzt zurÃ¼ck ist, wird sich das hoffentlich bald Ã¤ndern.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_06"); //(verschwörerisch) Warte mal.
+		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_06"); //(verschwÃ¶rerisch) Warte mal.
 		AI_PlayAni (self, "T_SEARCH");
 		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_07"); //(lacht) Nee, kann nichts erkennen. Alles beim alten!
 	};
@@ -124,11 +124,11 @@ FUNC INT DIA_Addon_Brandon_WannaLearn_Condition()
 func void DIA_Addon_Brandon_WannaLearn_Info()
 {
 	AI_Output (other, self,"DIA_Addon_Brandon_WannaLearn_15_00"); //Kannst du mir was beibringen?
-	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_01"); //Dir? Jede Wette! Ich könnte dir beibrigen, stärker und geschickter zu werden.
+	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_01"); //Dir? Jede Wette! Ich kÃ¶nnte dir beibrigen, stÃ¤rker und geschickter zu werden.
 	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_02"); //Aber warum sollte ich das tun?
 	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_OfferDrink_15_00"); //Weil ich dir einen Drink spendiere?
 	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_03"); //(grinst) Nicht schlecht, Kleiner! Du hast direkt ins Schwarze getroffen.
-	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_04"); //Aber komm mir bloß nicht mit so'nem billigen Fusel an!
+	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_04"); //Aber komm mir bloÃŸ nicht mit so'nem billigen Fusel an!
 	MIS_Brandon_BringHering = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
@@ -162,7 +162,7 @@ func void DIA_Addon_Brandon_HoleGrog_Info()
 {
 	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_BringGrog_15_00"); //Ich besorge dir einen Grog.
 	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_01"); //Willst du mich vergiften???
-	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_02"); //Mit DER Brühe kannst du mich jagen! Weißt du was da drin ist?
+	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_02"); //Mit DER BrÃ¼he kannst du mich jagen! WeiÃŸt du was da drin ist?
 	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_03"); //Der alte Samuel hat auch GUTES Zeug! Hol was DAVON!
 	if (Player_KnowsSchnellerHering == TRUE)
 	{
@@ -204,7 +204,7 @@ func void DIA_Addon_Brandon_SchnellerHering_Info()
 	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_GiveGrog_15_00"); //Nimm diesen.
 	B_GiveInvItems (other, self, ItFo_Addon_Schnellerhering, 1);
 	B_UseItem (self, ItFo_Addon_Schnellerhering);
-	AI_Output (self ,other,"DIA_Addon_Brandon_GiveGrog_04_01"); //Ahh! Geht runter wie flüssiges Feuer!
+	AI_Output (self ,other,"DIA_Addon_Brandon_GiveGrog_04_01"); //Ahh! Geht runter wie flÃ¼ssiges Feuer!
 	
 	B_LogEntry (TOPIC_Addon_BrandonBooze,"Ich habe Brnadon das Teufelszeug gegeben. Jetzt ist er beriet mich zu trainieren.");
 	
@@ -253,7 +253,7 @@ func VOID DIA_Addon_Brandon_TeachPlayer_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_04_01"); //Du wolltest mir was vernünftiges zu trinken bringen, Junge!
+		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_04_01"); //Du wolltest mir was vernÃ¼nftiges zu trinken bringen, Junge!
 	};
 };
 // ------------------------------------------------------------
@@ -261,7 +261,7 @@ FUNC VOID DIA_Addon_Brandon_TeachPlayer_Back()
 {
 	if other.attribute[ATR_STRENGTH] > Brandon_Merke_Str
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_Back_04_00"); //Gut, Junge! Du bist schon um einiges stärker geworden.
+		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_Back_04_00"); //Gut, Junge! Du bist schon um einiges stÃ¤rker geworden.
 	};
 	
 	if other.attribute[ATR_DEXTERITY] > Brandon_Merke_Dex
@@ -351,7 +351,7 @@ func VOID DIA_Addon_Brandon_Anheuern_Info()
 	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_01"); //Das ist ja ganz was Neues. Wer sagt das?
 	AI_Output (other,self ,"DIA_Addon_Brandon_FollowMe_15_02"); //Greg, wir sollen im Canyon Razor jagen.
 	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_03"); //(grinst) Endlich passiert hier mal was!
-	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_04"); //Von mir aus, können wir sofort los, je eher wir die Biester erledigt haben, desto eher können wir wieder hier sein.
+	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_04"); //Von mir aus, kÃ¶nnen wir sofort los, je eher wir die Biester erledigt haben, desto eher kÃ¶nnen wir wieder hier sein.
 };
 
 // ------------------------------------------------------------
@@ -380,7 +380,7 @@ func void DIA_Addon_Brandon_ComeOn_Info ()
 	AI_Output	(other, self, "DIA_Addon_Brandon_Weiter_15_00"); //Komm mit.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_ComeOn_04_02"); //Lass uns erstmal ein Stück zurück gehen!
+		AI_Output (self ,other,"DIA_Addon_Brandon_ComeOn_04_02"); //Lass uns erstmal ein StÃ¼ck zurÃ¼ck gehen!
 		AI_StopProcessInfos (self);
 	}
 	else
@@ -447,14 +447,14 @@ FUNC INT DIA_Addon_Brandon_TooFar_Condition()
 
 FUNC VOID DIA_Addon_Brandon_TooFar_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_00"); //Jetzt ist's gut! Willst du die ganze Insel entvölkern?
+	AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_00"); //Jetzt ist's gut! Willst du die ganze Insel entvÃ¶lkern?
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_01"); //Wir gehen zurück ins Lager.
+		AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_01"); //Wir gehen zurÃ¼ck ins Lager.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_02"); //Ich geh zurück ins Lager.	
+		AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_02"); //Ich geh zurÃ¼ck ins Lager.	
 	};
 	
 	B_Addon_PiratesGoHome();

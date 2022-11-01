@@ -48,9 +48,9 @@ func void DIA_Jack_DI_GREET_Info ()
 {
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_00"); //Ich hoffe, du weißt, was du tust, mein Jung.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_00"); //Ich hoffe, du weiÃŸt, was du tust, mein Jung.
 		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_01"); //Er wird nicht mehr lange dauern.
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_02"); //Behalte den Kopf auf den Schultern und komm wieder in einem Stück zurück.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_02"); //Behalte den Kopf auf den Schultern und komm wieder in einem StÃ¼ck zurÃ¼ck.
 		AI_StopProcessInfos (self);
 	}
 	else
@@ -62,7 +62,7 @@ func void DIA_Jack_DI_GREET_Info ()
 			DIA_Jack_DI_GREET_OneTime = TRUE;
 		};
 
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_04"); //Wenn diese Hölle noch mal über uns herein bricht, werde ich das Schiff hier raus bringen. Mit oder ohne dich, hörst du?
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_04"); //Wenn diese HÃ¶lle noch mal Ã¼ber uns herein bricht, werde ich das Schiff hier raus bringen. Mit oder ohne dich, hÃ¶rst du?
 		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_05"); //Mach keinen Mist. Ich krieg das schon hin.
 		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_06"); //Dann beeil dich.
 		AI_StopProcessInfos (self);
@@ -96,7 +96,7 @@ func void DIA_Jack_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other ,self, "DIA_Jack_DI_UndeadDragonDead_15_00"); //Es ist vollbracht. Der Feind ist eliminiert.
 	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_01"); //Ich hatte gehofft, dass alles gut wird. Aber ich muss zugeben, dass ich mir in den letzten Stunden nicht mehr so sicher war.
-	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_02"); //Können wir jetzt endlich wieder in See stechen?
+	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_02"); //KÃ¶nnen wir jetzt endlich wieder in See stechen?
 
 	Info_ClearChoices	(DIA_Jack_DI_UndeadDragonDead);
 	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Einen Moment noch.", DIA_Jack_DI_UndeadDragonDead_moment );

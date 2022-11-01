@@ -132,7 +132,7 @@ INSTANCE ItSe_GoldPocket25	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Ein paar Münzen klimpern darin";
+	TEXT[2]				= 	"Ein paar MÃ¼nzen klimpern darin";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -161,7 +161,7 @@ INSTANCE ItSe_GoldPocket50	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Der Beutel ist voller Münzen";
+	TEXT[2]				= 	"Der Beutel ist voller MÃ¼nzen";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -191,7 +191,7 @@ INSTANCE ItSe_GoldPocket100	(C_Item)
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"Ein schwerer Beutel";
-	TEXT[3]				= 	"gefüllt mit goldenen Münzen";
+	TEXT[3]				= 	"gefÃ¼llt mit goldenen MÃ¼nzen";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };

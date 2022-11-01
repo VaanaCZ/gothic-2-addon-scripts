@@ -91,7 +91,7 @@ INSTANCE DIA_Addon_Juan_Losung   (C_INFO)
 	condition   = DIA_Addon_Juan_Losung_Condition;
 	information = DIA_Addon_Juan_Losung_Info;
 	permanent   = FALSE;
-	description = "Es heiﬂt, du hast einige interessante Waren im Angebot...";
+	description = "Es hei√üt, du hast einige interessante Waren im Angebot...";
 };
 FUNC INT DIA_Addon_Juan_Losung_Condition()
 {	
@@ -103,12 +103,12 @@ FUNC INT DIA_Addon_Juan_Losung_Condition()
 };
 FUNC VOID DIA_Addon_Juan_Losung_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//Es heiﬂt, du hast einige interessante Waren im Angebot ...
+	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//Es hei√üt, du hast einige interessante Waren im Angebot ...
 	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_01");//Ach was? Esteban will mich wohl verarschen, was? Ich habe die ganze Arbeit und verstecke mich tagelang in diesem miesen Loch ...
 	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//... und er schickt einfach jemanden, der das Zeug abholt? Ich bin doch kein Lagerhaus!
 	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//Ja und? Das ist nicht mein Problem.
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Ich MACHE es aber zu deinem Problem. Du willst die Lieferung - schˆn, du kannst sie kaufen.
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//Hol dir das Gold doch von Esteban oder von Raven oder was weiﬂ ich woher. Mir egal. Wer die Waren will, der zahlt daf¸r!
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Ich MACHE es aber zu deinem Problem. Du willst die Lieferung - sch√∂n, du kannst sie kaufen.
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//Hol dir das Gold doch von Esteban oder von Raven oder was wei√ü ich woher. Mir egal. Wer die Waren will, der zahlt daf√ºr!
 };
 
 //---------------------------------------------------------------------

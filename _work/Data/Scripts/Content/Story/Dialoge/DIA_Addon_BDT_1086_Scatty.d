@@ -69,7 +69,7 @@ INSTANCE DIA_Addon_Scatty_Hi   (C_INFO)
 	condition   = DIA_Addon_Scatty_Hi_Condition;
 	information = DIA_Addon_Scatty_Hi_Info;
 	permanent   = FALSE;
-	description = "Wie l‰uft das Gesch‰ft?";
+	description = "Wie l√§uft das Gesch√§ft?";
 };
 FUNC INT DIA_Addon_Scatty_Hi_Condition()
 {	
@@ -77,10 +77,10 @@ FUNC INT DIA_Addon_Scatty_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Wie l‰uft das Gesch‰ft?
+	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Wie l√§uft das Gesch√§ft?
 	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_01");//Seitdem die Gruft offen ist, werde ich nicht mehr viel los.
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Raven hat keine Verwendung mehr f¸r die Sklaven, deshalb hacken sie jetzt das Gold. Auf Anordnung von Bloodwyn.
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//Und die Buddler ruhen sich aus. (murmelt) Buddler, die sich ausruhen, sind nicht gut f¸r's Gesch‰ft.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Raven hat keine Verwendung mehr f√ºr die Sklaven, deshalb hacken sie jetzt das Gold. Auf Anordnung von Bloodwyn.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//Und die Buddler ruhen sich aus. (murmelt) Buddler, die sich ausruhen, sind nicht gut f√ºr's Gesch√§ft.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_BDT_Trader,"Scatty handelt mit verschiedenen Waren.");
@@ -112,11 +112,11 @@ FUNC INT DIA_Addon_Scatty_last_Condition()
 FUNC VOID DIA_Addon_Scatty_last_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_last_15_00");//Bloodwyn? Hat der hier was zu sagen?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Er hat die Aufsicht ¸ber die Mine. Aber er ist so gut wie nie hier unten. Die meiste Zeit verbringt er bei Raven im Tempel.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Er hat die Aufsicht √ºber die Mine. Aber er ist so gut wie nie hier unten. Die meiste Zeit verbringt er bei Raven im Tempel.
 	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//Was genau bedeutet 'so gut wie nie'?
 	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//Das letzte Mal habe ich ihn gesehen, als er aus der Gruft kam ...
 	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//(eilig) ... Nein, warte! Das letzte Mal war er hier, als er die Sklaven zum Goldhacken geschickt hat.
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//Im Gegensatz zu Raven hat ER ein groﬂes Interesse an Gold.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//Im Gegensatz zu Raven hat ER ein gro√ües Interesse an Gold.
 };
 //---------------------------------------------------------------------
 //	Info Gruft
@@ -128,7 +128,7 @@ INSTANCE DIA_Addon_Scatty_Gruft   (C_INFO)
 	condition   = DIA_Addon_Scatty_Gruft_Condition;
 	information = DIA_Addon_Scatty_Gruft_Info;
 	permanent   = FALSE;
-	description = "Was ist das f¸r eine Gruft?";
+	description = "Was ist das f√ºr eine Gruft?";
 };
 FUNC INT DIA_Addon_Scatty_Gruft_Condition()
 {	
@@ -139,9 +139,9 @@ FUNC INT DIA_Addon_Scatty_Gruft_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Gruft_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//Was ist das f¸r eine Gruft?
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//Eine verfluchte Ungl¸cksgruft. Die W‰chter der Gruft haben viele M‰nner getˆtet!
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//W‰chter? Redest du von Wesen aus Stein? Ziemlich flach mit rundem Kopf?
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//Was ist das f√ºr eine Gruft?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//Eine verfluchte Ungl√ºcksgruft. Die W√§chter der Gruft haben viele M√§nner get√∂tet!
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//W√§chter? Redest du von Wesen aus Stein? Ziemlich flach mit rundem Kopf?
 	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//Genau die meine ich! Zu Dutzenden kamen sie aus den Tiefen des Steins.
 	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//Ich wusste von Anfang an, dass es nicht gut ist, die Gruft auszubuddeln.
 	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//Aber Raven war wie besessen von der Idee dort zu graben. Und als die Gruft endlich freigelegt war, ist er mit seiner Garde dort reinmarschiert.
@@ -169,14 +169,14 @@ FUNC VOID DIA_Addon_Scatty_GruftAgain_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Was wollte Raven in der Gruft?
 	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//(stutzt) Hm ... du bist ziemlich neugierig. Erinnerst mich an einen Kerl, den ich mal kannte.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//Der war genau so neugierig. Und das ist ihm irgendwann zum Verh‰ngnis geworden.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//Der war genau so neugierig. Und das ist ihm irgendwann zum Verh√§ngnis geworden.
 	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Komm zur Sache. Was ist in der Gruft passiert?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//Nun ... ƒhm ... ich habe 'ne ziemlich trockene Kehle ...
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//Nun ... √Ñhm ... ich habe 'ne ziemlich trockene Kehle ...
 	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//Hey Scatty, NICHT JETZT. Das hier ist wichtig, also was hat Raven dort gemacht?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//Na schˆn. (atmet tief durch) Er ... er hat etwas gerufen ... beschworen. Er rief immer wieder Worte in einer fremden Sprache.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Helles Licht drang aus der Gruft und dann hˆrte ich einen Schrei, der mir durch Mark und Bein ging - ein d‰monischer Schrei.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//Na sch√∂n. (atmet tief durch) Er ... er hat etwas gerufen ... beschworen. Er rief immer wieder Worte in einer fremden Sprache.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Helles Licht drang aus der Gruft und dann h√∂rte ich einen Schrei, der mir durch Mark und Bein ging - ein d√§monischer Schrei.
 	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_08");//Und weiter?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//Mehr weiﬂ ich nicht. In dem Augenblick kam Bloodwyn aus der Gruft und hat mir gesagt ich soll verschwinden. Und das habe ich dann auch getan.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//Mehr wei√ü ich nicht. In dem Augenblick kam Bloodwyn aus der Gruft und hat mir gesagt ich soll verschwinden. Und das habe ich dann auch getan.
 	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Es hat auch gar nicht solange gedauert, und Raven ist mit seinen Jungs wieder im Tempel verschwunden. Seitdem hat sich Raven nicht mehr blicken lassen.
 };
 //---------------------------------------------------------------------
@@ -201,7 +201,7 @@ FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 FUNC VOID DIA_Addon_Scatty_Trinken_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Willst du was trinken?
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Wenn du ein Bier hast, das w‰re jetzt genau das Richtige. Bier gibt's n‰mlich kaum hier im Lager.
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Wenn du ein Bier hast, das w√§re jetzt genau das Richtige. Bier gibt's n√§mlich kaum hier im Lager.
 	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//Aber vielleicht hat Lucia noch 'ne Flasche ...
 };
 //---------------------------------------------------------------------
@@ -258,7 +258,7 @@ FUNC VOID DIA_Addon_Scatty_Gold_Info()
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
 	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Eine Spitzhacke in die Hand nehmen und auf 'nen Goldklumpen draufschlagen, das kann jeder.
 	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//Aber dabei zersplittern viele Nuggets. Deshalb sollten nur Leute hacken, die was davon verstehen.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//Ich kann dir noch mehr erz‰hlen, wenn du etwas Erfahrung mitbringst.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//Ich kann dir noch mehr erz√§hlen, wenn du etwas Erfahrung mitbringst.
 
 	B_Upgrade_Hero_HackChance(5);
 };
@@ -286,14 +286,14 @@ FUNC INT DIA_Addon_Scatty_teach_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_teach_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//Erz‰hl mir mehr ¸ber's Goldhacken.
+	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//Erz√§hl mir mehr √ºber's Goldhacken.
 	
 	if (other.lp >= 1)  
 	{
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Als vor allem solltest du wissen, dass Gold kein Erz ist. Es ist weich wie Butter. Wenn du zu hart schl‰gst, zersplittert dir alles.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//Jeder Buddler hat seine eigenen Tricks, um ein paar schˆne Nuggets aus dem Fels zu kloppen.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Als vor allem solltest du wissen, dass Gold kein Erz ist. Es ist weich wie Butter. Wenn du zu hart schl√§gst, zersplittert dir alles.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//Jeder Buddler hat seine eigenen Tricks, um ein paar sch√∂ne Nuggets aus dem Fels zu kloppen.
 		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//Diese Tricks sind es, die letztendlich den Unterschied zwischen einem Buddler und einem guten Buddler ausmachen.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//Auﬂerdem: ‹bung macht den Meister. Wenn du erst mal 'ne Weile gehackt hast, wirst du auch besser.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//Au√üerdem: √úbung macht den Meister. Wenn du erst mal 'ne Weile gehackt hast, wirst du auch besser.
 		
 		other.lp = (other.lp -1);
 		B_Upgrade_Hero_HackChance(10);
@@ -327,7 +327,7 @@ FUNC INT DIA_Addon_Scatty_tot_Condition()
 FUNC VOID DIA_Addon_Scatty_tot_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_tot_15_00");//Bloodwyn ist tot.
-	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hm, gibt ja nicht viele, denen ich das w¸nsche - aber Bloodwyn ist besser dran, wenn er tot ist.
+	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hm, gibt ja nicht viele, denen ich das w√ºnsche - aber Bloodwyn ist besser dran, wenn er tot ist.
 };
 //---------------------------------------------------------------------
 //	Info trade

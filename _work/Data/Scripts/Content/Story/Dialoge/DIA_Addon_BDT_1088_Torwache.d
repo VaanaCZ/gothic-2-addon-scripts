@@ -72,7 +72,7 @@ func void DIA_BDT_1088_Addon_Torwache_FirstWarn_Info()
 	{
 		if (Torwache_Greetings == 0)
 		{
-			AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_03"); //Solange du Thorus keinen roten Stein gegeben hast, bist du hier unerwünscht.
+			AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_03"); //Solange du Thorus keinen roten Stein gegeben hast, bist du hier unerwÃ¼nscht.
 			Torwache_Greetings = 1;
 		}
 		else if (Torwache_Greetings == 1)
@@ -126,7 +126,7 @@ FUNC INT DIA_BDT_1088_Addon_Torwache_SecondWarn_Condition()
 
 func void DIA_BDT_1088_Addon_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_SecondWarn_06_00"); //Okay, bleib ganz ruhig. Du hast jetzt noch eine letzte Chance. Du gehst SOFORT zurück, oder du stirbst ...
+	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_SecondWarn_06_00"); //Okay, bleib ganz ruhig. Du hast jetzt noch eine letzte Chance. Du gehst SOFORT zurÃ¼ck, oder du stirbst ...
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_1088_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -164,7 +164,7 @@ func void DIA_BDT_1088_Addon_Torwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_Attack_06_00"); //(seufzt) Du glaubst wohl, ich mache Spaß? Dir werd ich's zeigen ...
+	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_Attack_06_00"); //(seufzt) Du glaubst wohl, ich mache SpaÃŸ? Dir werd ich's zeigen ...
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 

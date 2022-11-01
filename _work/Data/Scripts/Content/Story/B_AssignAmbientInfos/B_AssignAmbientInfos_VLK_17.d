@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_17_JOIN(C_INFO)
 	condition	= DIA_VLK_17_JOIN_Condition;
 	information	= DIA_VLK_17_JOIN_Info;
 	permanent	= TRUE;
-	description = "Was muss ich tun, um Bürger dieser Stadt zu werden?";
+	description = "Was muss ich tun, um BÃ¼rger dieser Stadt zu werden?";
 };                       
 
 FUNC INT DIA_VLK_17_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_17_JOIN_Condition()
 
 FUNC VOID DIA_VLK_17_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_17_JOIN_15_00"); //Was muss ich tun, um Bürger dieser Stadt zu werden?
-	AI_Output (self, other, "DIA_VLK_17_JOIN_17_01"); //Die Handwerksmeister in der Unterstadt haben großen Einfluss hier in Khorinis. Du solltest mit einem von ihnen reden.
+	AI_Output (other, self, "DIA_VLK_17_JOIN_15_00"); //Was muss ich tun, um BÃ¼rger dieser Stadt zu werden?
+	AI_Output (self, other, "DIA_VLK_17_JOIN_17_01"); //Die Handwerksmeister in der Unterstadt haben groÃŸen Einfluss hier in Khorinis. Du solltest mit einem von ihnen reden.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_VLK_17_PEOPLE(C_INFO)
 	condition	= DIA_VLK_17_PEOPLE_Condition;
 	information	= DIA_VLK_17_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer sind die wichtigsten Persönlichkeiten dieser Stadt?";
+	description = "Wer sind die wichtigsten PersÃ¶nlichkeiten dieser Stadt?";
 };                       
 
 FUNC INT DIA_VLK_17_PEOPLE_Condition()
@@ -66,10 +66,10 @@ FUNC INT DIA_VLK_17_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_17_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_17_PEOPLE_15_00"); //Wer sind die wichtigsten Persönlichkeiten dieser Stadt?
-	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_01"); //Seit die Paladine hier sind, haben sie die Kontrolle über die ganze Stadt übernommen.
+	AI_Output (other, self, "DIA_VLK_17_PEOPLE_15_00"); //Wer sind die wichtigsten PersÃ¶nlichkeiten dieser Stadt?
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_01"); //Seit die Paladine hier sind, haben sie die Kontrolle Ã¼ber die ganze Stadt Ã¼bernommen.
 	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_02"); //Lord Andre vertritt das Gesetz. Du findest ihn in der Kaserne.
-	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_03"); //Aber solange du nicht gegen das Gesetz verstoßen hast, oder dich der Miliz anschließen willst, brauchst du nicht zu ihm zu gehen.
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_03"); //Aber solange du nicht gegen das Gesetz verstoÃŸen hast, oder dich der Miliz anschlieÃŸen willst, brauchst du nicht zu ihm zu gehen.
 };
 
 // *************************************************************************
@@ -119,7 +119,7 @@ FUNC VOID DIA_VLK_17_STANDARD_Info()
 	|| (Kapitel == 2)
 	{
 		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_01"); //Ich frage mich, was die Paladine eigentlich hier wollen. Sie haben das Rathaus, die Kaserne und den Hafen besetzt, aber bis jetzt noch nichts unternommen.
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_02"); //Wenn sie wegen der Orks oder der Banditen hier wären, hätten sie schon längst was unternommen. Es muss einen anderen Grund geben ...
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_02"); //Wenn sie wegen der Orks oder der Banditen hier wÃ¤ren, hÃ¤tten sie schon lÃ¤ngst was unternommen. Es muss einen anderen Grund geben ...
 	};
 	
 	if (Kapitel == 3)
@@ -129,7 +129,7 @@ FUNC VOID DIA_VLK_17_STANDARD_Info()
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_04"); //Ich hoffe, dass an den Geschichten über die Drachen etwas dran ist. Dann wird Lord Hagen gezwungen sein, etwas zu unternehmen. Er kann uns hier nicht einfach den Drachen ausliefern.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_04"); //Ich hoffe, dass an den Geschichten Ã¼ber die Drachen etwas dran ist. Dann wird Lord Hagen gezwungen sein, etwas zu unternehmen. Er kann uns hier nicht einfach den Drachen ausliefern.
 	};
 	
 	if (Kapitel == 5)

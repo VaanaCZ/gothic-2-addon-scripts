@@ -87,8 +87,8 @@ func void DIA_Fellan_News_Info ()
 		 if (MIS_AttackFellan == LOG_RUNNING)
 		 && (FellanGeschlagen == FALSE)
 		 {
-		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //Hörst du jetzt mit dem Hämmern auf, oder muss ich dich noch mal verprügeln?
-		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //Nein, nicht mehr schlagen. Ich höre auf. Aber du bist Schuld, wenn hier alles zusammenbricht!
+		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //HÃ¶rst du jetzt mit dem HÃ¤mmern auf, oder muss ich dich noch mal verprÃ¼geln?
+		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //Nein, nicht mehr schlagen. Ich hÃ¶re auf. Aber du bist Schuld, wenn hier alles zusammenbricht!
 		 	
 		 	FellanGeschlagen = TRUE;
 		 	Npc_ExchangeRoutine (self,"OHNEHAMMER");
@@ -102,7 +102,7 @@ func void DIA_Fellan_News_Info ()
 	};
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 	{
-		 AI_Output (self, other, "DIA_Fellan_News_06_04"); //Du bist doch total verrückt - kämpfen, nicht kämpfen, reden - was willst du eigentlich?
+		 AI_Output (self, other, "DIA_Fellan_News_06_04"); //Du bist doch total verrÃ¼ckt - kÃ¤mpfen, nicht kÃ¤mpfen, reden - was willst du eigentlich?
 	};
 	self.aivar[AIV_LastFightComment] = TRUE;
 };
@@ -117,7 +117,7 @@ instance DIA_Fellan_HALLO		(C_INFO)
 	condition	 = 	DIA_Fellan_HALLO_Condition;
 	information	 = 	DIA_Fellan_HALLO_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Warum hämmerst du?";
+	description	 = 	"Warum hÃ¤mmerst du?";
 };
 func int DIA_Fellan_HALLO_Condition ()
 {	
@@ -128,9 +128,9 @@ func int DIA_Fellan_HALLO_Condition ()
 };
 func void DIA_Fellan_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //Warum hämmerst du?
+	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //Warum hÃ¤mmerst du?
 	AI_Output (self, other, "DIA_Fellan_HALLO_06_01"); //Ich versuche schon seit Tagen verzweifelt, mein Haus wieder dicht zu kriegen.
-	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //Während der letzten Regenfälle ist das ganze Gebälk völlig morsch geworden. Bald wird hier alles zusammenbrechen!
+	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //WÃ¤hrend der letzten RegenfÃ¤lle ist das ganze GebÃ¤lk vÃ¶llig morsch geworden. Bald wird hier alles zusammenbrechen!
 	AI_StopProcessInfos (self);
 };
 
@@ -144,7 +144,7 @@ instance DIA_Fellan_Stop		(C_INFO)
 	condition	 = 	DIA_Fellan_Stop_Condition;
 	information	 = 	DIA_Fellan_Stop_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Kannst du auch mal aufhören zu hämmern? ";
+	description	 = 	"Kannst du auch mal aufhÃ¶ren zu hÃ¤mmern? ";
 };
 
 func int DIA_Fellan_Stop_Condition ()
@@ -156,29 +156,29 @@ func int DIA_Fellan_Stop_Condition ()
 };
 func void DIA_Fellan_Stop_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_15_00"); //Kannst du auch mal aufhören zu hämmern?
+	AI_Output (other, self, "DIA_Fellan_Stop_15_00"); //Kannst du auch mal aufhÃ¶ren zu hÃ¤mmern?
 	AI_Output (self, other, "DIA_Fellan_Stop_06_01"); //Nein, ich muss das hier fertig machen.
 	
 	Info_ClearChoices (DIA_Fellan_Stop);
-	Info_AddChoice (DIA_Fellan_Stop,"Hör auf zu hämmern oder ich breche dir alle Knochen",DIA_Fellan_Stop_Bones);
-	Info_AddChoice (DIA_Fellan_Stop,"Wenn du mit der Hämmerei aufhörst, gebe ich dir 10 Goldstücke",DIA_Fellan_Stop_Gold);
-	Info_AddChoice (DIA_Fellan_Stop,"Hör einfach auf zu hämmern, okay?",DIA_Fellan_Stop_Just);
+	Info_AddChoice (DIA_Fellan_Stop,"HÃ¶r auf zu hÃ¤mmern oder ich breche dir alle Knochen",DIA_Fellan_Stop_Bones);
+	Info_AddChoice (DIA_Fellan_Stop,"Wenn du mit der HÃ¤mmerei aufhÃ¶rst, gebe ich dir 10 GoldstÃ¼cke",DIA_Fellan_Stop_Gold);
+	Info_AddChoice (DIA_Fellan_Stop,"HÃ¶r einfach auf zu hÃ¤mmern, okay?",DIA_Fellan_Stop_Just);
 };
 FUNC VOID DIA_Fellan_Stop_Bones()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //Hör auf zu hämmern oder ich breche dir alle Knochen.
-	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Lass es lieber bleiben, sonst hämmere ich mal ein bisschen auf dir rum.
+	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //HÃ¶r auf zu hÃ¤mmern oder ich breche dir alle Knochen.
+	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Lass es lieber bleiben, sonst hÃ¤mmere ich mal ein bisschen auf dir rum.
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Fellan_Stop_Gold()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //Wenn du mit der Hämmerei aufhörst, gebe ich dir 10 Goldstücke.
-	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Ui - sehr großzügig von dir. Aber dein Gold kannst du dir ...
-	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_02"); //... Na, du weißt schon, wohin du es dir stecken kannst.
+	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //Wenn du mit der HÃ¤mmerei aufhÃ¶rst, gebe ich dir 10 GoldstÃ¼cke.
+	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Ui - sehr groÃŸzÃ¼gig von dir. Aber dein Gold kannst du dir ...
+	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_02"); //... Na, du weiÃŸt schon, wohin du es dir stecken kannst.
 };
 FUNC VOID DIA_Fellan_Stop_Just()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Just_15_00"); //Hör einfach auf zu hämmern, okay?
+	AI_Output (other, self, "DIA_Fellan_Stop_Just_15_00"); //HÃ¶r einfach auf zu hÃ¤mmern, okay?
 	AI_Output (self, other, "DIA_Fellan_Stop_Just_06_01"); //Geh mir doch einfach nicht auf den Sack, okay?
 };
 ///////////////////////////////////////////////////////////////////////
@@ -210,7 +210,7 @@ func void DIA_Fellan_klar_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Das Dach wird immer schlimmer, beim nächsten Regen steht das Wasser bei mir bis zu den Knöcheln. Das ist alles deine Schuld!
+		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Das Dach wird immer schlimmer, beim nÃ¤chsten Regen steht das Wasser bei mir bis zu den KnÃ¶cheln. Das ist alles deine Schuld!
 	};
 	AI_StopProcessInfos (self);
 };

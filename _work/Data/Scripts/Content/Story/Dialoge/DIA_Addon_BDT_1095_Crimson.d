@@ -72,9 +72,9 @@ FUNC INT DIA_Addon_Crimson_Hi_Condition()
 FUNC VOID DIA_Addon_Crimson_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Crimson_Hi_15_00");//Was machst du? Schmilzt du dein Gold ein?
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_01");//Nein, ich putze Gemüse. Natürlich schmelze ich Gold ein - und ich mache Münzen daraus.
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_02");//Denn stell dir vor: Eines schönen Abends kommt Raven um die Ecke und drückt mir einen Münzstempel in die Hand.
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_03");//Aus einem einzigen Goldbrocken kann ich einen Haufen Münzen prägen - ich bin so gut, dass man den Unterschied nicht mal merkt!
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_01");//Nein, ich putze GemÃ¼se. NatÃ¼rlich schmelze ich Gold ein - und ich mache MÃ¼nzen daraus.
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_02");//Denn stell dir vor: Eines schÃ¶nen Abends kommt Raven um die Ecke und drÃ¼ckt mir einen MÃ¼nzstempel in die Hand.
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_03");//Aus einem einzigen Goldbrocken kann ich einen Haufen MÃ¼nzen prÃ¤gen - ich bin so gut, dass man den Unterschied nicht mal merkt!
 };
 //---------------------------------------------------------------------
 //	Info How
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Crimson_How   (C_INFO)
 	condition   = DIA_Addon_Crimson_How_Condition;
 	information = DIA_Addon_Crimson_How_Info;
 	permanent   = FALSE;
-	description = "Wieviel Münzen gibst du mir für einen Brocken?";
+	description = "Wieviel MÃ¼nzen gibst du mir fÃ¼r einen Brocken?";
 };
 FUNC INT DIA_Addon_Crimson_How_Condition()
 {	
@@ -97,8 +97,8 @@ FUNC INT DIA_Addon_Crimson_How_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_How_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_How_15_00");//Wie viele Münzen gibst du mir für einen Brocken?
-	AI_Output (self, other, "DIA_Addon_Crimson_How_10_01");//Na ja, ich kenne dich zwar nicht, aber ich mach dir einen Freundschaftspreis. Für einen Brocken gebe ich dir ...
+	AI_Output (other, self, "DIA_Addon_Crimson_How_15_00");//Wie viele MÃ¼nzen gibst du mir fÃ¼r einen Brocken?
+	AI_Output (self, other, "DIA_Addon_Crimson_How_10_01");//Na ja, ich kenne dich zwar nicht, aber ich mach dir einen Freundschaftspreis. FÃ¼r einen Brocken gebe ich dir ...
 	B_Say_Gold (self, other, 10);
 };	
 //---------------------------------------------------------------------
@@ -124,7 +124,7 @@ FUNC VOID DIA_Addon_Crimson_Feilsch_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_00");//Lass uns feilschen!
 	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_01");//Hmm ... nein. Das ist ein Standard Preis den JEDER kriegt.
-	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");//Ich dachte, das wäre ein Freundschaftspreis.
+	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");//Ich dachte, das wÃ¤re ein Freundschaftspreis.
 	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_03");//Ist es auch. Wir sind doch alle Freunde hier.
 };	
 //---------------------------------------------------------------------
@@ -200,7 +200,7 @@ FUNC VOID DIA_Addon_Crimson_Gold_1()
 };
 FUNC VOID B_Say_CrimsonBeliar()
 {
-	AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_LOS_10_00");//(beschwörend) KHARDIMON FATAGN SCHATAR FATAGN BELIAR.
+	AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_LOS_10_00");//(beschwÃ¶rend) KHARDIMON FATAGN SCHATAR FATAGN BELIAR.
 };
 
 //---------------------------------------------------------------------
@@ -213,7 +213,7 @@ INSTANCE DIA_Addon_Crimson_Raven   (C_INFO)
 	condition   = DIA_Addon_Crimson_Raven_Condition;
 	information = DIA_Addon_Crimson_Raven_Info;
 	permanent   = FALSE;
-	description = "Was weißt du über Raven? ";
+	description = "Was weiÃŸt du Ã¼ber Raven? ";
 };
 FUNC INT DIA_Addon_Crimson_Raven_Condition()
 {	
@@ -224,14 +224,14 @@ FUNC INT DIA_Addon_Crimson_Raven_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Raven_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Raven_15_00");//Was weißt du über Raven?
+	AI_Output (other, self, "DIA_Addon_Crimson_Raven_15_00");//Was weiÃŸt du Ã¼ber Raven?
 	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_01");//Du glaubst es nicht. Ich war dabei. Ich habe gesehen, was er in der Gruft gemacht hat!
 	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_02");//(furchtsam) Er hat seltsame Worte gemurmelt und gerufen. Immer wieder ...
 	B_Say_CrimsonBeliar();
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_03");//(laut) Und dann kam ein gleißendes Licht aus der Gruft und ich hörte ich den SCHREI.
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_04");//(ruft) Oh ihr Götter, diese Stimme. Das war der Klang des Untergangs der Welt!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_03");//(laut) Und dann kam ein gleiÃŸendes Licht aus der Gruft und ich hÃ¶rte ich den SCHREI.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_04");//(ruft) Oh ihr GÃ¶tter, diese Stimme. Das war der Klang des Untergangs der Welt!
 	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_05");//Raven hat mit ihr gesprochen, sie haben sich unterhalten - Raven und DIE Stimme!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_06");//Ich weiß nicht mehr, was sie erzählt haben - ich weiß nur, dass ich erst viele Stunden später wieder in der Lage war, meine Knochen zu bewegen.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_06");//Ich weiÃŸ nicht mehr, was sie erzÃ¤hlt haben - ich weiÃŸ nur, dass ich erst viele Stunden spÃ¤ter wieder in der Lage war, meine Knochen zu bewegen.
 };	
 //---------------------------------------------------------------------
 //	Info FATAGN

@@ -29,7 +29,7 @@ INSTANCE DIA_SLD_7_JOIN(C_INFO)
 	condition	= DIA_SLD_7_JOIN_Condition;
 	information	= DIA_SLD_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mich euch anschließen!";
+	description = "Ich will mich euch anschlieÃŸen!";
 };                       
 
 FUNC INT DIA_SLD_7_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_SLD_7_JOIN_Condition()
 
 FUNC VOID DIA_SLD_7_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00"); //Ich will mich euch anschließen!
+	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00"); //Ich will mich euch anschlieÃŸen!
 	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_7_JOIN_07_01"); //Ich hab gehört, du hast es den Milizen kräftig gegeben? Einen wie dich können wir hier gebrauchen!
+		AI_Output (self, other, "DIA_SLD_7_JOIN_07_01"); //Ich hab gehÃ¶rt, du hast es den Milizen krÃ¤ftig gegeben? Einen wie dich kÃ¶nnen wir hier gebrauchen!
 	}
 	else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{
@@ -77,10 +77,10 @@ FUNC INT DIA_SLD_7_PEOPLE_Condition()
 FUNC VOID DIA_SLD_7_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_SLD_7_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Lee ist unser Anführer. Torlof ist seine rechte Hand. Die meisten Männer folgen ihm, denn er hat sie schon damals in der Kolonie angeführt.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_02"); //Und dann ist da noch Sylvio. Er ist mit seinen Männern aus den Bergen gekommen, nachdem Lee hier ankam.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_03"); //Er und seine Leute sind nur ein kleiner Teil der Söldner - aber sie machen oft Ärger. Die Typen kochen ihr eigenes Süppchen.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_04"); //Und Sylvio ist 'ne linke Sau - also sei schön vorsichtig, wenn du ihn triffst.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Lee ist unser AnfÃ¼hrer. Torlof ist seine rechte Hand. Die meisten MÃ¤nner folgen ihm, denn er hat sie schon damals in der Kolonie angefÃ¼hrt.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_02"); //Und dann ist da noch Sylvio. Er ist mit seinen MÃ¤nnern aus den Bergen gekommen, nachdem Lee hier ankam.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_03"); //Er und seine Leute sind nur ein kleiner Teil der SÃ¶ldner - aber sie machen oft Ã„rger. Die Typen kochen ihr eigenes SÃ¼ppchen.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_04"); //Und Sylvio ist 'ne linke Sau - also sei schÃ¶n vorsichtig, wenn du ihn triffst.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE DIA_SLD_7_LOCATION(C_INFO)
 	condition	= DIA_SLD_7_LOCATION_Condition;
 	information	= DIA_SLD_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Erzähl mir was über den Hof.";
+	description = "ErzÃ¤hl mir was Ã¼ber den Hof.";
 };                       
 
 FUNC INT DIA_SLD_7_LOCATION_Condition()
@@ -102,12 +102,12 @@ FUNC INT DIA_SLD_7_LOCATION_Condition()
 
 FUNC VOID DIA_SLD_7_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //Erzähl mir was über den Hof.
+	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //ErzÃ¤hl mir was Ã¼ber den Hof.
 	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //Onar hat uns angeheuert, damit wir sein Hab und Gut bewachen.
 	if (other.guild != GIL_SLD)
 	&& (other.guild != GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_SLD_7_LOCATION_07_02"); //Also lass dir nicht einfallen, was zu stehlen oder die Bauern zu verprügeln, sonst bekommst du Ärger mit uns, klar?
+		AI_Output (self, other, "DIA_SLD_7_LOCATION_07_02"); //Also lass dir nicht einfallen, was zu stehlen oder die Bauern zu verprÃ¼geln, sonst bekommst du Ã„rger mit uns, klar?
 	};
 };
 
@@ -147,12 +147,12 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_03"); //Drachen im Minental! In der Haut der Paladine möchte ich jetzt nicht stecken.
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_04"); //Schätze, der König wird Lord Hagen einen kräftigen Arschtritt verpassen, wenn er wegen der Drachen mit leeren Händen zurückkommt.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_03"); //Drachen im Minental! In der Haut der Paladine mÃ¶chte ich jetzt nicht stecken.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_04"); //SchÃ¤tze, der KÃ¶nig wird Lord Hagen einen krÃ¤ftigen Arschtritt verpassen, wenn er wegen der Drachen mit leeren HÃ¤nden zurÃ¼ckkommt.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_05"); //Kommen eure Paladine mit den Drachen nicht zurecht? Kann ich mir vorstellen, kämpfen ist halt doch was für echte Männer.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_05"); //Kommen eure Paladine mit den Drachen nicht zurecht? Kann ich mir vorstellen, kÃ¤mpfen ist halt doch was fÃ¼r echte MÃ¤nner.
 			};
 		};	
 	};
@@ -164,12 +164,12 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (hero.guild == GIL_SLD)
 			|| (hero.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_06"); //Das mit Bennet war echt in Ordnung von dir. Sylvio kocht vor Wut. Er wäre am liebsten in die Stadt gestürmt und hätte alles kurz und klein geschlagen.
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_07"); //Er versucht ständig, Lee in die Defensive zu drängen und Bennet war ein guter Anlass.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_06"); //Das mit Bennet war echt in Ordnung von dir. Sylvio kocht vor Wut. Er wÃ¤re am liebsten in die Stadt gestÃ¼rmt und hÃ¤tte alles kurz und klein geschlagen.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_07"); //Er versucht stÃ¤ndig, Lee in die Defensive zu drÃ¤ngen und Bennet war ein guter Anlass.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_08"); //Ich weiß ja nicht, warum du Bennet geholfen hast, aber glaub mir, es war besser für die Stadt.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_08"); //Ich weiÃŸ ja nicht, warum du Bennet geholfen hast, aber glaub mir, es war besser fÃ¼r die Stadt.
 			};
 		}
 		else
@@ -177,11 +177,11 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (hero.guild == GIL_SLD)
 			|| (hero.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_09"); //Das mit Bennet ist 'ne echt üble Sache. Vielleicht sollten wir doch auf Sylvio hören und die Stadt angreifen.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_09"); //Das mit Bennet ist 'ne echt Ã¼ble Sache. Vielleicht sollten wir doch auf Sylvio hÃ¶ren und die Stadt angreifen.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_10"); //Was habt ihr mit Bennet vor. Ach, ich will es gar nicht wissen, ihr werdet schon sehen, wohin das führt.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_10"); //Was habt ihr mit Bennet vor. Ach, ich will es gar nicht wissen, ihr werdet schon sehen, wohin das fÃ¼hrt.
 			};
 		};		
 	};
@@ -191,18 +191,18 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 		if (hero.guild == GIL_DJG)
 		{
 			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_11"); //Ich dachte, du wolltest auch ins Tal. Zusammen mit Sylvio.
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_12"); //Wir alle hätten nichts dagegen, wenn Sylvio im Tal bliebe. FÜR IMMER!
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_12"); //Wir alle hÃ¤tten nichts dagegen, wenn Sylvio im Tal bliebe. FÃœR IMMER!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_13"); //Ganz schön mutig von dir, hier aufzutauchen, so ganz allein.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_13"); //Ganz schÃ¶n mutig von dir, hier aufzutauchen, so ganz allein.
 			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_14"); //Aber mir soll's egal sein, solange du keine Steuern eintreiben willst.
 		};
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_SLD_7_STANDARD_07_15"); //Junge, ich halte das hier nicht mehr aus. Schafe, Wiesen und Bäume. Ich will hier endlich verschwinden.
+		AI_Output (self,other,"DIA_SLD_7_STANDARD_07_15"); //Junge, ich halte das hier nicht mehr aus. Schafe, Wiesen und BÃ¤ume. Ich will hier endlich verschwinden.
 	};
 };
 

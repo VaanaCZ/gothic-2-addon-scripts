@@ -55,7 +55,7 @@ FUNC VOID DIA_OUT_13_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar ist verrückt, sich mit der Stadt anzulegen, gerade jetzt, wo die Paladine da sind.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar ist verrÃ¼ckt, sich mit der Stadt anzulegen, gerade jetzt, wo die Paladine da sind.
 	};
 	
 	AI_StopProcessInfos	(self);

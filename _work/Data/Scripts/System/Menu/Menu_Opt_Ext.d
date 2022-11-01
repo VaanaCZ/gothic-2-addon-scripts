@@ -10,8 +10,8 @@
 // Ambient Vobs			(ZTOGGLE RENDERAMBIENTVOBS)
 // Env Mapping			(ZTOGGLE ENVMAP)
 
-// optional vielleicht später noch
-// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nötig auf älteren Karten und evtl. Performance Gewinn (TEST!)
+// optional vielleicht spÃ¤ter noch
+// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nÃ¶tig auf Ã¤lteren Karten und evtl. Performance Gewinn (TEST!)
 // Wolkenschatten		(TODO):     bisher nur in der INI einstellbar, bringt Performance wenn aus und es regnet
 
 INSTANCE MENU_OPT_EXT(C_MENU_DEF)
@@ -326,7 +326,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"ZurÃ¼ck";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

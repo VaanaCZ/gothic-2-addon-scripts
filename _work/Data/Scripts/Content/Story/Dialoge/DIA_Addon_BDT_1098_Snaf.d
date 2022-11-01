@@ -106,7 +106,7 @@ FUNC VOID DIA_Addon_Snaf_Cook_FEUER()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_Cook_FEUER_15_00");//Feuergeschnetzeltes?
 	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_01");//Knusprig zart gebratenes Fleisch, vermengt mit eingelegtem Feuerkraut.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_02");//Aber keine Sorge - die Zutaten daf¸r habe ich bereits.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_02");//Aber keine Sorge - die Zutaten daf√ºr habe ich bereits.
 };
 FUNC VOID DIA_Addon_Snaf_Cook_HAMMER()
 {
@@ -114,13 +114,13 @@ FUNC VOID DIA_Addon_Snaf_Cook_HAMMER()
 	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_01");//Eine Sauce aus hammerhartem Schnaps. Ich habe ein Rezept von einem Typen namens Lou.
 	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_02");//Besorg du die Zutaten und brenn den Schnaps oben am Labor- Tisch, dann mache ich daraus eine Sauce. Was meinst du?
 	
-	Info_AddChoice (DIA_Addon_Snaf_Cook,"Daf¸r habe ich keine Zeit.",DIA_Addon_Snaf_Cook_NO);
+	Info_AddChoice (DIA_Addon_Snaf_Cook,"Daf√ºr habe ich keine Zeit.",DIA_Addon_Snaf_Cook_NO);
 	Info_AddChoice (DIA_Addon_Snaf_Cook,"Okay, ich mach's. ",DIA_Addon_Snaf_Cook_YES);
 	
 };
 FUNC VOID DIA_Addon_Snaf_Cook_NO ()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_NO_15_00");//Daf¸r habe ich keine Zeit.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_NO_15_00");//Daf√ºr habe ich keine Zeit.
 	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_NO_01_01");//Dann vergiss es.
 	
 	MIS_SnafHammer = LOG_OBSOLETE;
@@ -137,7 +137,7 @@ FUNC VOID DIA_Addon_Snaf_Cook_YES()
 	
 	Log_CreateTopic (Topic_Addon_Hammer,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Hammer,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Hammer,"Snaf braucht Schnaps f¸r seine Sauce. Er hat mir das Rezept f¸r einen Hammer- Schnaps gegeben, den ich am Labor Tisch brauen kann.");
+	B_LogEntry (Topic_Addon_Hammer,"Snaf braucht Schnaps f√ºr seine Sauce. Er hat mir das Rezept f√ºr einen Hammer- Schnaps gegeben, den ich am Labor Tisch brauen kann.");
 };
 //---------------------------------------------------------------------
 //	Info Booze
@@ -170,7 +170,7 @@ FUNC VOID DIA_Addon_Snaf_Booze_Info()
 
 	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_01");//Ausgezeichnet, dann mache ich das mal fertig.
 	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_02");//Hier, du kannst direkt eine Portion probieren. Das macht 'nen starken Arm.
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_03");//Ach, und wenn ich dir nochmal helfen kann ... Alle Informationen sind ab jetzt f¸r dich umsonst.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_03");//Ach, und wenn ich dir nochmal helfen kann ... Alle Informationen sind ab jetzt f√ºr dich umsonst.
 	Snaf_Tip_Kosten = 0;
 	B_GiveInvItems (self, other, ItFo_Addon_FireStew,1);
 	MIS_SnafHammer = LOG_SUCCESS;
@@ -187,7 +187,7 @@ INSTANCE DIA_Addon_Snaf_Attentat   (C_INFO)
 	condition   = DIA_Addon_Snaf_Attentat_Condition;
 	information = DIA_Addon_Snaf_Attentat_Info;
 	permanent   = FALSE;
-	description = "Was weiﬂt du ¸ber dieses Attentat?";
+	description = "Was wei√üt du √ºber dieses Attentat?";
 };
 FUNC INT DIA_Addon_Snaf_Attentat_Condition()
 {	
@@ -198,19 +198,19 @@ FUNC INT DIA_Addon_Snaf_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_15_00"); //Was weiﬂt du ¸ber dieses Attentat?
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_15_00"); //Was wei√üt du √ºber dieses Attentat?
 	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_01"); //Die Sache mit Esteban?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_02"); //Du weiﬂt doch, wie das l‰uft. Der Wirt kriegt alles mit, aber ergreift nie Partei f¸r eine Seite ...
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_02"); //Du wei√üt doch, wie das l√§uft. Der Wirt kriegt alles mit, aber ergreift nie Partei f√ºr eine Seite ...
 	
 	Info_ClearChoices (DIA_Addon_Snaf_Attentat);
 	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Sag mir wenigstens zu wem ich gehen kann.",DIA_Addon_Snaf_Attentat_GoWhere);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Wenn du an meiner Stelle w‰rst, was w¸rdest du tun?",DIA_Addon_Snaf_Attentat_YouBeingMe);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Also weiﬂt du etwas?",DIA_Addon_Snaf_Attentat_Something);	
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Wenn du an meiner Stelle w√§rst, was w√ºrdest du tun?",DIA_Addon_Snaf_Attentat_YouBeingMe);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Also wei√üt du etwas?",DIA_Addon_Snaf_Attentat_Something);	
 };
 	
 func void DIA_Addon_Snaf_Attentat_Something()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_Something_15_00"); //Also weiﬂt du etwas?
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_Something_15_00"); //Also wei√üt du etwas?
 	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_Something_01_01"); //DAS hab ich nicht gesagt.
 };
 func void DIA_Addon_Snaf_Attentat_GoWhere()
@@ -220,10 +220,10 @@ func void DIA_Addon_Snaf_Attentat_GoWhere()
 };
 func void DIA_Addon_Snaf_Attentat_YouBeingMe()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_YouBeingMe_15_00"); //Wenn du an meiner Stelle w‰rst, was w¸rdest du tun?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_01"); //Ich w¸rde mir ¸berlegen, was ich ¸ber den Auftraggeber weiﬂ.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_02"); //Erstens: Es war wahrscheinlich einer der Banditen, das heiﬂt er ist hier im Lager.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_03"); //Zweitens: Dass er hier im Lager ist, heiﬂt, er beobachtet dich.
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_YouBeingMe_15_00"); //Wenn du an meiner Stelle w√§rst, was w√ºrdest du tun?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_01"); //Ich w√ºrde mir √ºberlegen, was ich √ºber den Auftraggeber wei√ü.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_02"); //Erstens: Es war wahrscheinlich einer der Banditen, das hei√üt er ist hier im Lager.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_03"); //Zweitens: Dass er hier im Lager ist, hei√üt, er beobachtet dich.
 	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_04"); //Drittens: Wenn er der Meinung ist, dass du auf Estebans Seite stehst, wird er sich dir nie zu erkennen geben.
 	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_05"); //Die INTERESSANTE Frage ist also: Wie stehen deine Chancen, den Auftraggeber zu finden.
 
@@ -260,11 +260,11 @@ FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 	&& (!Npc_IsDead (Senyan))
 	{
 		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_02"); //Ziemlich mies. Einige Leute haben mitbekommen, dass du dich mit Senyan eingelassen hast.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_03"); //Du wirst deine Beziehung zu ihm abbrechen m¸ssen, sonst hast du keine Chance, den Auftraggeber des Attentats zu finden.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_03"); //Du wirst deine Beziehung zu ihm abbrechen m√ºssen, sonst hast du keine Chance, den Auftraggeber des Attentats zu finden.
 		
 		if (Snaf_Tip_Senyan == FALSE)
 		{
-			B_LogEntry (Topic_Addon_Senyan,"Ich sollte meine Beziehung zu Senyan beenden. Allerdings w‰re es unklug ihn direkt anzugreifen. Vorher sollte ich noch einmal mit sprechen.");
+			B_LogEntry (Topic_Addon_Senyan,"Ich sollte meine Beziehung zu Senyan beenden. Allerdings w√§re es unklug ihn direkt anzugreifen. Vorher sollte ich noch einmal mit sprechen.");
 			Snaf_Tip_Senyan = TRUE;
 		};
 	}
@@ -276,15 +276,15 @@ FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 	else if (Finn_Petzt == TRUE)
 	{
 		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_06"); //Finn scheint ziemlich aufgeregt zu sein, seit du mit ihm geredet hast.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_07"); //Und jeder hier weiﬂ, dass er gut mit Esteban steht.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_08"); //Das heiﬂt, du hast ihm wahrscheinlich was erz‰hlt, was er nicht hˆren wollte.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_07"); //Und jeder hier wei√ü, dass er gut mit Esteban steht.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_08"); //Das hei√üt, du hast ihm wahrscheinlich was erz√§hlt, was er nicht h√∂ren wollte.
 		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_09"); //Dem Mann, den du suchst, wird das gefallen ...
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_10"); //Allerdings besteht die Gefahr, dass er damit zu Esteban rennt - (ironisch) aber das weiﬂt du ja selbst ...
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_10"); //Allerdings besteht die Gefahr, dass er damit zu Esteban rennt - (ironisch) aber das wei√üt du ja selbst ...
 	}
 	if (Finn_TellAll == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_11"); //Es heiﬂt, du h‰ttest Finn gesagt, du w¸rdest f¸r Esteban arbeiten.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_12"); //Ich weiﬂ ja nicht, was du wirklich vorhast, aber der Mann, den du suchst, wird von jetzt an mit Sicherheit vorsichtiger sein.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_11"); //Es hei√üt, du h√§ttest Finn gesagt, du w√ºrdest f√ºr Esteban arbeiten.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_12"); //Ich wei√ü ja nicht, was du wirklich vorhast, aber der Mann, den du suchst, wird von jetzt an mit Sicherheit vorsichtiger sein.
 	}
 	else
 	{
@@ -297,13 +297,13 @@ FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 		if (Snaf_Einmal == FALSE)
 		{
 			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_14"); //Danke.
-			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15"); //(schroff) Hey! Ich hab dir nichts erz‰hlt, was du nicht schon l‰ngst wusstest, klar?!
+			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15"); //(schroff) Hey! Ich hab dir nichts erz√§hlt, was du nicht schon l√§ngst wusstest, klar?!
 			
 			Snaf_Einmal = TRUE;
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_16"); //Wuﬂte ich's doch ...
+			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_16"); //Wu√üte ich's doch ...
 			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_17"); //Eben.
 		};
 	};
@@ -331,8 +331,8 @@ FUNC INT DIA_Addon_Snaf_HOCH_Condition()
 FUNC VOID DIA_Addon_Snaf_HOCH_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_HOCH_15_00"); //Huno schickt mich
-	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_01"); //Sieht aus, als h‰ttest du deinen Mann gefunden.
-	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_02"); //Geh doch mal eine Etage hˆher, dort wartet jemand auf dich.
+	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_01"); //Sieht aus, als h√§ttest du deinen Mann gefunden.
+	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_02"); //Geh doch mal eine Etage h√∂her, dort wartet jemand auf dich.
 		
 	AI_StopProcessInfos (self);
 	AI_Teleport (Fisk,"BL_INN_UP_06");
@@ -373,7 +373,7 @@ FUNC VOID DIA_Addon_Snaf_People_Info()
 	{
 		AI_Output (self, other, "DIA_Addon_Snaf_People_01_02"); //Jede Information kostet dich 'ne Kleinigkeit.
 		AI_Output (other, self, "DIA_Addon_Snaf_People_15_03"); //Wie viel?
-		AI_Output (self, other, "DIA_Addon_Snaf_People_01_04"); //10 Goldst¸cke!
+		AI_Output (self, other, "DIA_Addon_Snaf_People_01_04"); //10 Goldst√ºcke!
 		
 		Snaf_Tip_Kosten = 10;
 		Kosten_Einmal = TRUE;
@@ -407,7 +407,7 @@ FUNC VOID DIA_Addon_Snaf_People_Paul()
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Paul_15_00"); //Was ist mit Paul?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Paul_01_01"); //Ich glaube, er mag Esteban nicht besonders. Seit er f¸r Huno arbeitet, kommt er nicht mehr in die Mine.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Paul_01_01"); //Ich glaube, er mag Esteban nicht besonders. Seit er f√ºr Huno arbeitet, kommt er nicht mehr in die Mine.
 	}
 	else
 	{
@@ -416,16 +416,16 @@ FUNC VOID DIA_Addon_Snaf_People_Paul()
 };
 FUNC VOID DIA_Addon_Snaf_People_Huno()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Huno_15_00"); //Was denkt Huno ¸ber Esteban?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_01"); //Ah! Huno. ‹ber den weiﬂ ich so gut wie nichts.
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_02"); //(grinst) Diese Information ist nat¸rlich gratis.
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Huno_15_00"); //Was denkt Huno √ºber Esteban?
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_01"); //Ah! Huno. √úber den wei√ü ich so gut wie nichts.
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_02"); //(grinst) Diese Information ist nat√ºrlich gratis.
 };
 FUNC VOID DIA_Addon_Snaf_People_Fisk()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Fisk_15_00"); //Was ist mit Fisk?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_01"); //Fisk ist Fisk. Er bezahlt seinen Teil an Esteban und verteilt die Waren, die er grˆﬂtenteils von den Piraten bekommt.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_01"); //Fisk ist Fisk. Er bezahlt seinen Teil an Esteban und verteilt die Waren, die er gr√∂√ütenteils von den Piraten bekommt.
 		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_02"); //Ich denke, Esteban ist ihm ziemlich egal.
 	}
 	else
@@ -435,10 +435,10 @@ FUNC VOID DIA_Addon_Snaf_People_Fisk()
 };
 FUNC VOID DIA_Addon_Snaf_People_Emilio()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Emilio_15_00"); //Emilio. Was denkt er ¸ber Esteban?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Emilio_15_00"); //Emilio. Was denkt er √ºber Esteban?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Emilio_01_01"); //Ich denke, er w¸rde nicht gerade Blumen an Estebans Grab bringen, wenn du verstehst, was ich meine.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Emilio_01_01"); //Ich denke, er w√ºrde nicht gerade Blumen an Estebans Grab bringen, wenn du verstehst, was ich meine.
 	}
 	else
 	{
@@ -450,7 +450,7 @@ FUNC VOID DIA_Addon_Snaf_People_Senyan()
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Senyan_15_00"); //Was ist mit Senyan?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Senyan_01_01"); //Senyan ist einer von Estebans Jungs. Er arbeitet schon 'ne ganze Weile f¸r ihn.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Senyan_01_01"); //Senyan ist einer von Estebans Jungs. Er arbeitet schon 'ne ganze Weile f√ºr ihn.
 	}
 	else
 	{
@@ -459,7 +459,7 @@ FUNC VOID DIA_Addon_Snaf_People_Senyan()
 };
 FUNC VOID DIA_Addon_Snaf_People_Lennar()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Lennar_15_00"); //Was denkt Lennar ¸ber Esteban?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Lennar_15_00"); //Was denkt Lennar √ºber Esteban?
 	AI_Output (self, other, "DIA_Addon_Snaf_People_Lennar_01_01"); //So wie ich das beurteilen kann, denkt Lennar GAR nicht.
 };
 
@@ -468,7 +468,7 @@ func VOID DIA_Addon_Snaf_People_Finn()
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Finn_15_00"); //Was ist mit Finn?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_01"); //Ein guter Buddler. Er hat 'ne Nase f¸r's Gold.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_01"); //Ein guter Buddler. Er hat 'ne Nase f√ºr's Gold.
 		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_02"); //Esteban bevorzugt ihn deswegen. Ich denke, er steht ganz gut mit ihm.
 	}
 	else
@@ -487,7 +487,7 @@ instance DIA_Addon_Snaf_Himself (C_INFO)
 	condition   = DIA_Addon_Snaf_Himself_Condition;
 	information = DIA_Addon_Snaf_Himself_Info;
 	permanent   = FALSE;
-	description = "Was h‰ltst DU von Esteban?";
+	description = "Was h√§ltst DU von Esteban?";
 };
 FUNC INT DIA_Addon_Snaf_Himself_Condition()
 {	
@@ -499,8 +499,8 @@ FUNC INT DIA_Addon_Snaf_Himself_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Himself_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_00"); //Was h‰ltst DU von Esteban?
-	AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_01"); //Wer ¸ber ihn redet, ist schnell tot ...
+	AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_00"); //Was h√§ltst DU von Esteban?
+	AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_01"); //Wer √ºber ihn redet, ist schnell tot ...
 	//AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_02"); //Und?
 	//AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_03"); //Ende der Geschichte. //wav fehlt
 };
@@ -515,7 +515,7 @@ instance DIA_Addon_Snaf_PERM (C_INFO)
 	condition   = DIA_Addon_Snaf_PERM_Condition;
 	information = DIA_Addon_Snaf_PERM_Info;
 	permanent   = TRUE;
-	description = "Wie l‰uft der Laden?";
+	description = "Wie l√§uft der Laden?";
 };
 FUNC INT DIA_Addon_Snaf_PERM_Condition()
 {	
@@ -526,8 +526,8 @@ FUNC INT DIA_Addon_Snaf_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_PERM_15_00"); //Wie l‰uft der Laden?
-	AI_Output (self, other, "DIA_Addon_Snaf_PERM_01_01"); //Gut! Estebans Ableben d¸rfte wohl f¸r einige hier ein Grund zum Feiern sein ...
+	AI_Output (other, self, "DIA_Addon_Snaf_PERM_15_00"); //Wie l√§uft der Laden?
+	AI_Output (self, other, "DIA_Addon_Snaf_PERM_01_01"); //Gut! Estebans Ableben d√ºrfte wohl f√ºr einige hier ein Grund zum Feiern sein ...
 };
 
 

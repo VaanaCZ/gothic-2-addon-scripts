@@ -2,8 +2,8 @@
 // Wert von Kram
 // ************************************************************************************************
 
-// Items für Objektbenutzung und Item-Interaktion...
-// z.B. Krautstampfer, Hammer, Kochlöffel, Laborflasche, Roheisen (Schmiede)
+// Items fÃ¼r Objektbenutzung und Item-Interaktion...
+// z.B. Krautstampfer, Hammer, KochlÃ¶ffel, Laborflasche, Roheisen (Schmiede)
 
 const int	Value_SwordBlade		= 10;
 const int	Value_SwordBladeHot		= 10;
@@ -66,7 +66,7 @@ const int   Value_InnosStatue		=  100;
 const int	Value_Sextant			= 1500;
 
 
-/*ursprüngliche Werte:
+/*ursprÃ¼ngliche Werte:
 const int	Value_SilverRing		 = 200;
 const int	Value_SilverNecklace	 = 100;
 const int	Value_SilverCandleHolder = 30 ;
@@ -94,7 +94,7 @@ const int	Value_Sextant			= 30  ;
 
 
 /*******************************************************************************************
-**	Items für Mobsi-Benutzung               					  		  				  **
+**	Items fÃ¼r Mobsi-Benutzung               					  		  				  **
 *******************************************************************************************/
 // Krautstampfen
 
@@ -188,10 +188,10 @@ INSTANCE ItMi_Hammer (C_Item)
 };
 
 /******************************************************************************************/
-// im Topf rühren
+// im Topf rÃ¼hren
 INSTANCE ItMi_Scoop (C_Item)
 {
-	name 				=	"Kochlöffel";
+	name 				=	"KochlÃ¶ffel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -207,7 +207,7 @@ INSTANCE ItMi_Scoop (C_Item)
 	COUNT[5]			= 	value;
 };
 /******************************************************************************************/
-//	Pfanne zum Braten (für  Lagerfeuer)
+//	Pfanne zum Braten (fÃ¼r  Lagerfeuer)
 
 INSTANCE ItMi_Pan (C_Item)
 {
@@ -227,7 +227,7 @@ INSTANCE ItMi_Pan (C_Item)
 	COUNT[5]			= 	value;
 };
 
-//Pfann für Herd
+//Pfann fÃ¼r Herd
 
 INSTANCE ItMi_PanFull (C_Item)
 {
@@ -247,11 +247,11 @@ INSTANCE ItMi_PanFull (C_Item)
 	COUNT[5]			= 	value;
 };
 /******************************************************************************************/
-//	Säge für Baumstamm
+//	SÃ¤ge fÃ¼r Baumstamm
 
 INSTANCE ItMi_Saw (C_Item)
 {
-	name 				=	"Säge";
+	name 				=	"SÃ¤ge";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -268,7 +268,7 @@ INSTANCE ItMi_Saw (C_Item)
 };	   	   
 
 /******************************************************************************************/
-//	Items für Schmiede	    					 								 		  **
+//	Items fÃ¼r Schmiede	    					 								 		  **
 
 INSTANCE ItMiSwordraw (C_Item)
 {
@@ -291,7 +291,7 @@ INSTANCE ItMiSwordraw (C_Item)
 /******************************************************************************************/
 INSTANCE ItMiSwordrawhot (C_Item)
 {
-	name 				=	"Glühender Stahl";
+	name 				=	"GlÃ¼hender Stahl";
 
 	mainflag 			=	ITEM_KAT_NONE; 
 	flags 				=	ITEM_MULTI;
@@ -310,7 +310,7 @@ INSTANCE ItMiSwordrawhot (C_Item)
 /******************************************************************************************/
 INSTANCE ItMiSwordbladehot (C_Item)
 {
-	name 				=	"Glühende Klinge";
+	name 				=	"GlÃ¼hende Klinge";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -350,7 +350,7 @@ INSTANCE ItMiSwordblade	(C_Item)
 
 
 /*******************************************************************************************
-**	Items für Item-Interaktionen (ohne Mobsi benutzbar)               		 		  	  **
+**	Items fÃ¼r Item-Interaktionen (ohne Mobsi benutzbar)               		 		  	  **
 *******************************************************************************************/
 
 /******************************************************************************************/
@@ -412,10 +412,10 @@ func void Use_Lute()
 
 
 /******************************************************************************************/
-// Für Babe-Putzen
+// FÃ¼r Babe-Putzen
 INSTANCE ItMi_Brush(C_Item)
 {
-	name 				=	"Bürste";
+	name 				=	"BÃ¼rste";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -498,11 +498,11 @@ func void Use_Alarmhorn()
 
 */
 //*******************************
-//Päckchen
+//PÃ¤ckchen
 //*******************************
 INSTANCE ItMi_Packet(C_Item)
 {
-	name 				=	"Päckchen";
+	name 				=	"PÃ¤ckchen";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -551,7 +551,7 @@ FUNC VOID UsePocket ()
 };
 
 //******************************************************************************************
-//	Wertvolle Gegenstände
+//	Wertvolle GegenstÃ¤nde
 //******************************************************************************************
 INSTANCE ItMi_Nugget(C_Item)
 {
@@ -603,7 +603,7 @@ INSTANCE ItMi_Gold (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_OldCoin (C_Item)
 {
-	name 				=	"Alte Münze";
+	name 				=	"Alte MÃ¼nze";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -625,7 +625,7 @@ INSTANCE ItMi_OldCoin (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_GoldCandleHolder (C_Item)
 {
-	name 				=	"Goldener Kerzenständer";
+	name 				=	"Goldener KerzenstÃ¤nder";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -908,7 +908,7 @@ INSTANCE ItMi_Sextant (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_SilverCandleHolder (C_Item)
 {
-	name 				=	"Silberner Kerzenständer";
+	name 				=	"Silberner KerzenstÃ¤nder";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1098,7 +1098,7 @@ INSTANCE ItMi_DarkPearl (C_Item)
 };
 //-------------------------------------------------------------
 //					Tabak Sorten 
-//		 Apfeltabak (Basis für alle anderen)
+//		 Apfeltabak (Basis fÃ¼r alle anderen)
 //-------------------------------------------------------------
 INSTANCE ItMi_ApfelTabak(C_Item)
 {
@@ -1180,7 +1180,7 @@ INSTANCE ItMi_Honigtabak(C_Item)
 	
 	description			= 	name;
 	
-	TEXT[2]				=  "Süßer Apfel Tabak";
+	TEXT[2]				=  "SÃ¼ÃŸer Apfel Tabak";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-------------------------------------------------------------

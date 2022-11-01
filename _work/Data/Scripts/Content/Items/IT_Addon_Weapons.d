@@ -4,7 +4,7 @@
 	
 	Magierstab rot, blau, gold
 	Zweihandkeule, Einhandkeule (Holz, Stein) 
-	Steinhammer (Maya TX) klein (einhand), groﬂ (zweihand)
+	Steinhammer (Maya TX) klein (einhand), gro√ü (zweihand)
 	
 	Sichelstab (Zweihand, Stab mit Sichelklinge)
 	
@@ -26,9 +26,9 @@
 	
 	
 	ItMW_Addon_Hacker_1h_01 //Machete					  ab KAP1 zu kaufen		+3
-	ItMW_Addon_Hacker_2h_01 //Groﬂe Machete				  ab KAP1 zu kaufen     +3
+	ItMW_Addon_Hacker_2h_01 //Gro√üe Machete				  ab KAP1 zu kaufen     +3
 	ItMW_Addon_Keule_1h_01 //Keule, Windknecht			  finden ab kap 1			
-	ItMW_Addon_Keule_2h_01 //Groﬂe Keule, Sturmknecht     finden in Addonworld
+	ItMW_Addon_Keule_2h_01 //Gro√üe Keule, Sturmknecht     finden in Addonworld
 	
 	
 	
@@ -407,7 +407,7 @@ INSTANCE ItMW_Addon_Keule_2h_01 (C_Item)//Sturmknecht 2h Holzkeule
 	range    			=  	RANGE_Sturmknecht;		
 	
 	on_equip			=	UnEquip_2H_10;//MALUS WAFFE MUSS umgekehrt sein. 
-	on_unequip			=	Equip_2H_10; //erhˆhen 
+	on_unequip			=	Equip_2H_10; //erh√∂hen 
 	
 	cond_atr[2]   		=	ATR_STRENGTH;
 	cond_value[2]  		=	Condition_Sturmknecht;

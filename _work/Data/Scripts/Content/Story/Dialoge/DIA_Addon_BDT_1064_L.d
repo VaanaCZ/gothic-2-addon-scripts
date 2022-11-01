@@ -25,7 +25,7 @@ FUNC VOID DIA_BanditGuard_EXIT_Info()
 // ************************************************************
 
 // -----------------------------------------------------------
-	const string Bdt_1064_Checkpoint	= "NW_CASTLEMINE_TOWER_05";	//WP vor TurmTür
+	const string Bdt_1064_Checkpoint	= "NW_CASTLEMINE_TOWER_05";	//WP vor TurmTÃ¼r
 // -----------------------------------------------------------
 
 instance DIA_Bdt_1064_BanditGuard_FirstWarn (C_INFO)
@@ -57,7 +57,7 @@ func int DIA_Bdt_1064_BanditGuard_FirstWarn_Condition()
 
 func void DIA_Bdt_1064_BanditGuard_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_00"); //Es gibt nur EINEN Weg für dich, lebendig in unser Lager zu kommen, und der führt über die Brücke!
+	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_00"); //Es gibt nur EINEN Weg fÃ¼r dich, lebendig in unser Lager zu kommen, und der fÃ¼hrt Ã¼ber die BrÃ¼cke!
 		
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Bdt_1064_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -92,7 +92,7 @@ FUNC INT DIA_Bdt_1064_BanditGuard_SecondWarn_Condition()
 
 func void DIA_Bdt_1064_BanditGuard_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_01");  //Du brauchst wohl Schläge? Mach noch EINEN Schritt weiter und ich werf dich die Klippe runter!
+	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_01");  //Du brauchst wohl SchlÃ¤ge? Mach noch EINEN Schritt weiter und ich werf dich die Klippe runter!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Bdt_1064_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	

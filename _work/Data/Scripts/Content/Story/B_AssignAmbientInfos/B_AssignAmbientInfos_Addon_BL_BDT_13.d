@@ -45,16 +45,16 @@ FUNC VOID DIA_Addon_BL_BDT_13_Chef_Info()
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_01");//(jubelt) Unser glorreicher Anführer Thorus. Er wird uns alle reich machen!
+			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_01");//(jubelt) Unser glorreicher AnfÃ¼hrer Thorus. Er wird uns alle reich machen!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_02");//Unser glorreicher Anführer ... Äh ... keine Ahnung ...
+			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_02");//Unser glorreicher AnfÃ¼hrer ... Ã„h ... keine Ahnung ...
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_03");//(jubelt) Unser glorreicher Anführer Raven. Er wird uns alle reich machen!
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_03");//(jubelt) Unser glorreicher AnfÃ¼hrer Raven. Er wird uns alle reich machen!
 			
 	};
 };
@@ -67,7 +67,7 @@ instance DIA_Addon_BL_BDT_13_Lager(C_INFO)
 	condition	= DIA_Addon_BL_BDT_13_Lager_Condition;
 	information	= DIA_Addon_BL_BDT_13_Lager_Info;
 	permanent	= TRUE;
-	description = "Was weißt du über das Lager?";
+	description = "Was weiÃŸt du Ã¼ber das Lager?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_13_Lager_Condition()
@@ -76,9 +76,9 @@ FUNC INT DIA_Addon_BL_BDT_13_Lager_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_13_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Lager_15_00");//Was weißt du über das Lager?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_01");//Sprich mit Snaf, wenn du was wissen willst. Der dicke Koch weiß echt 'ne Menge.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_02");//Wenn du was kaufen willst, geh zu Fisk. Er treibt alles Mögliche auf ...
+	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Lager_15_00");//Was weiÃŸt du Ã¼ber das Lager?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_01");//Sprich mit Snaf, wenn du was wissen willst. Der dicke Koch weiÃŸ echt 'ne Menge.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_02");//Wenn du was kaufen willst, geh zu Fisk. Er treibt alles MÃ¶gliche auf ...
 };
 // *************************************************************************
 // 								News
@@ -108,8 +108,8 @@ FUNC VOID DIA_Addon_BL_BDT_13_News_Info()
 	else
 	{
 		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_02");//Die Piraten haben Segel gesetzt und sind auf und davon.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_03");//Jetzt hocken da nur noch ein paar Idioten am Strand und die haben kein anständiges Schiff.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_04");//Nicht mal Beliar weiß, wie wir von dieser Insel runterkommen sollen.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_03");//Jetzt hocken da nur noch ein paar Idioten am Strand und die haben kein anstÃ¤ndiges Schiff.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_04");//Nicht mal Beliar weiÃŸ, wie wir von dieser Insel runterkommen sollen.
 	};
 };
 // *************************************************************************

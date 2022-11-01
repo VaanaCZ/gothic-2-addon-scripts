@@ -37,8 +37,8 @@ FUNC INT DIA_Addon_Monty_NW_Hi_Condition()
 FUNC VOID DIA_Addon_Monty_NW_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_00");//Und? Musst du wieder arbeiten?
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//Alter, die haben in meiner Abwesenheit nichts auf die Reihe gekriegt. Ich muss mir erst mal die Baupläne wieder reinziehen.
-	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Na gut. Lass dich nicht stören.
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//Alter, die haben in meiner Abwesenheit nichts auf die Reihe gekriegt. Ich muss mir erst mal die BauplÃ¤ne wieder reinziehen.
+	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Na gut. Lass dich nicht stÃ¶ren.
 	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//(lacht) Alles klar. Gute Reise noch.
 };
 // ************************************************************

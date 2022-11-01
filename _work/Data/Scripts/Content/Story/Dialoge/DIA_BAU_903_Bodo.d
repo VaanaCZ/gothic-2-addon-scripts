@@ -40,14 +40,14 @@ FUNC VOID DIA_Bodo_Hallo_Info()
 	AI_Output (other, self, "DIA_Bodo_Hallo_15_00"); //Wie steht's?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_01"); //Die Miliz hat uns lange genug schikaniert. Jetzt, wo die Söldner auf unserer Seite sind, werden sie sich nicht mehr trauen, hier einfach so aufzukreuzen.
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_02"); //Der König glaubt wohl, er kann sich alles erlauben. Aber jetzt ist Schluss damit.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_01"); //Die Miliz hat uns lange genug schikaniert. Jetzt, wo die SÃ¶ldner auf unserer Seite sind, werden sie sich nicht mehr trauen, hier einfach so aufzukreuzen.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_02"); //Der KÃ¶nig glaubt wohl, er kann sich alles erlauben. Aber jetzt ist Schluss damit.
 	};
 	
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_03"); //Gut. Wenn du ein paar Milizen siehst, brat ihnen von mir auch eins über, ja?
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_03"); //Gut. Wenn du ein paar Milizen siehst, brat ihnen von mir auch eins Ã¼ber, ja?
 	};
 	
 	if (other.guild == GIL_NOV)
@@ -59,7 +59,7 @@ FUNC VOID DIA_Bodo_Hallo_Info()
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{	
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_05"); //Truppen des Königs sind auf dem Hof nicht gerade willkommen.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_05"); //Truppen des KÃ¶nigs sind auf dem Hof nicht gerade willkommen.
 		AI_Output (self, other, "DIA_Bodo_Hallo_12_06"); //Viele der Leute hier werden wohl trotzdem mit dir reden, aber beliebt machst du dich hier bestimmt nicht.
 	};
 };
@@ -83,8 +83,8 @@ FUNC INT DIA_Bodo_Bauernaufstand_Condition()
 FUNC VOID DIA_Bodo_Bauernaufstand_Info()
 {
 	AI_Output (other, self, "DIA_Bodo_Bauernaufstand_15_00"); //In der Stadt ist von Bauernaufstand die Rede!
-	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_01"); //Unsinn. Wir machen nichts, außer das, wofür wir hart gearbeitet haben, zu verteidigen.
-	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_02"); //Es ist doch so, der Krieg wird auf dem Rücken der Bauern ausgetragen. Aber Onar ist nicht mehr bereit zuzusehen, wie der König uns ausblutet.
+	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_01"); //Unsinn. Wir machen nichts, auÃŸer das, wofÃ¼r wir hart gearbeitet haben, zu verteidigen.
+	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_02"); //Es ist doch so, der Krieg wird auf dem RÃ¼cken der Bauern ausgetragen. Aber Onar ist nicht mehr bereit zuzusehen, wie der KÃ¶nig uns ausblutet.
 };
 
 // ************************************************************
@@ -106,8 +106,8 @@ FUNC INT DIA_Bodo_Bett_Condition()
 FUNC VOID DIA_Bodo_Bett_Info()
 {
 	AI_Output (other, self, "DIA_Bodo_Bett_15_00"); //Kann ich mich hier irgendwo ausruhen?
-	AI_Output (self, other, "DIA_Bodo_Bett_12_01"); //Wenn du einen Platz zum Schlafen suchst, geh in die Scheune. Aber leg dich nicht aus Versehen in das Bett eines Söldners.
-	AI_Output (self, other, "DIA_Bodo_Bett_12_02"); //Onar sorgt zwar dafür, dass sie uns Bauern in Ruhe lassen, aber mit Fremden, die nicht zum Hof gehören, machen die Söldner, was sie wollen.
+	AI_Output (self, other, "DIA_Bodo_Bett_12_01"); //Wenn du einen Platz zum Schlafen suchst, geh in die Scheune. Aber leg dich nicht aus Versehen in das Bett eines SÃ¶ldners.
+	AI_Output (self, other, "DIA_Bodo_Bett_12_02"); //Onar sorgt zwar dafÃ¼r, dass sie uns Bauern in Ruhe lassen, aber mit Fremden, die nicht zum Hof gehÃ¶ren, machen die SÃ¶ldner, was sie wollen.
 };
 
 // ************************************************************
@@ -120,7 +120,7 @@ INSTANCE DIA_Bodo_Cipher   (C_INFO)
 	condition   = DIA_Bodo_Cipher_Condition;
 	information = DIA_Bodo_Cipher_Info;
 	permanent   = FALSE;
-	description = "Cipher hat mir erzählt, ihm wäre ein Paket Sumpfkraut gestohlen worden...";
+	description = "Cipher hat mir erzÃ¤hlt, ihm wÃ¤re ein Paket Sumpfkraut gestohlen worden...";
 };
 FUNC INT DIA_Bodo_Cipher_Condition()
 {
@@ -132,10 +132,10 @@ FUNC INT DIA_Bodo_Cipher_Condition()
 };
 FUNC VOID DIA_Bodo_Cipher_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Cipher_15_00"); //Cipher hat mir erzählt, ihm wäre ein Paket Sumpfkraut gestohlen worden...
+	AI_Output (other, self, "DIA_Bodo_Cipher_15_00"); //Cipher hat mir erzÃ¤hlt, ihm wÃ¤re ein Paket Sumpfkraut gestohlen worden...
 	AI_Output (self, other, "DIA_Bodo_Cipher_12_01"); //Und?
-	AI_Output (other, self, "DIA_Bodo_Cipher_15_02"); //Er denkt, du hättest es genommen.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_03"); //Ach, DESwegen glotzt der Typ mich immer so dämlich an.
+	AI_Output (other, self, "DIA_Bodo_Cipher_15_02"); //Er denkt, du hÃ¤ttest es genommen.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_03"); //Ach, DESwegen glotzt der Typ mich immer so dÃ¤mlich an.
 	AI_Output (self, other, "DIA_Bodo_Cipher_12_04"); //Ich bin in letzter Zeit immer extra freundlich zu ihm, weil ich denke, der Typ ist echt mies drauf.
 	AI_Output (self, other, "DIA_Bodo_Cipher_12_05"); //Aber da war nichts zu machen. Ich mache ein freundliches Gesicht und er starrt mich an, als ob er mich umbringen wolle.
 };
@@ -163,11 +163,11 @@ FUNC INT DIA_Bodo_WeedOrElse_Condition()
 FUNC VOID DIA_Bodo_WeedOrElse_Info()
 {
 	AI_Output (other, self, "DIA_Bodo_WeedOrElse_15_00"); //Her mit dem Kraut, oder du lernst mich kennen!
-	AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_01"); //Hör zu, alles was ich habe, ist dieser eine Stängel Kraut. Nimm ihn und lass mich in Ruhe.
+	AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_01"); //HÃ¶r zu, alles was ich habe, ist dieser eine StÃ¤ngel Kraut. Nimm ihn und lass mich in Ruhe.
 	B_GiveInvItems (self, other, itmi_joint, 1);
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_02"); //Du weißt ja, dass Onars Söldner auf uns aufpassen, nicht wahr?
+		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_02"); //Du weiÃŸt ja, dass Onars SÃ¶ldner auf uns aufpassen, nicht wahr?
 		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_03"); //Also mach ja keine Dummheiten!
 	};
 };

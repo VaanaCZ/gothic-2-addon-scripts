@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Wache_02_Attentat   (C_INFO)
 	condition   = DIA_Addon_Wache_02_Attentat_Condition;
 	information = DIA_Addon_Wache_02_Attentat_Info;
 	permanent   = FALSE;
-	description = "Was weiﬂt du ¸ber das Attentat?";
+	description = "Was wei√üt du √ºber das Attentat?";
 };
 FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 {	
@@ -98,8 +98,8 @@ FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Was weiﬂt du ¸ber das Attentat?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Was ich dar¸ber weiﬂ? (lacht) Ich hab dem Kerl die Beine gebrochen.
+	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Was wei√üt du √ºber das Attentat?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Was ich dar√ºber wei√ü? (lacht) Ich hab dem Kerl die Beine gebrochen.
 	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(droht) Und das werde ich auch mit jedem anderen machen, der sich mit Esteban anlegen will ...
 };
 //--------------------------------------------------------------------
@@ -128,7 +128,7 @@ FUNC VOID DIA_Addon_Wache_02_perm_Info()
 	
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Such du mal den Verr‰ter - wir werden uns dann um ihn k¸mmern ...
+		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Such du mal den Verr√§ter - wir werden uns dann um ihn k√ºmmern ...
 	};
 };
 

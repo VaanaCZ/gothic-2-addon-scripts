@@ -78,7 +78,7 @@ func int DIA_Vanja_STANDARD_Condition ()
 };
 func void DIA_Vanja_STANDARD_Info ()
 {
-	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //Ich bin beschäftigt.
+	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //Ich bin beschÃ¤ftigt.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -106,7 +106,7 @@ func void DIA_Vanja_DOPE_Info ()
 {
 	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Wo kann ich mir Kraut besorgen?
 	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Keine Ahnung. Du solltest besser die Finger von dem Zeug lassen.
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Denn wenn du weiter danach fragst, könntest du sie dir verbrennen ...
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Denn wenn du weiter danach fragst, kÃ¶nntest du sie dir verbrennen ...
 };
 
 

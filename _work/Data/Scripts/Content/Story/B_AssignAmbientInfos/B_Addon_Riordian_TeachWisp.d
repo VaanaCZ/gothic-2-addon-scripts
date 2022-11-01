@@ -8,11 +8,11 @@ func void B_DIA_Addon_Riordian_Teach_15_00 ()
 };
 func void  B_DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //Nun kann dein Irrlicht schon einige Dinge mehr finden, die dir nützen.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //Nun kann dein Irrlicht schon einige Dinge mehr finden, die dir nÃ¼tzen.
 };
 func void B_DIA_Addon_Riordian_Teach_10_08 () 
 {
-	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //Dein Irrlicht sucht nun nach allen Gegenständen, die sich zu finden lohnen. Ich kann dir nichts mehr zeigen.
+	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //Dein Irrlicht sucht nun nach allen GegenstÃ¤nden, die sich zu finden lohnen. Ich kann dir nichts mehr zeigen.
 };
 func void B_DIA_Addon_Riordian_Teach_10_01 () 
 {

@@ -24,23 +24,23 @@ func VOID DIA_Addon_Henry_EXIT_Info()
 	{
 		if (gold == 500)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold500_04_00"); //500 Goldstücke.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold500_04_00"); //500 GoldstÃ¼cke.
 		}
 		else if (gold == 400)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold400_04_00"); //400 Goldstücke.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold400_04_00"); //400 GoldstÃ¼cke.
 		}
 		else if (gold == 300)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold300_04_00"); //300 Goldstücke.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold300_04_00"); //300 GoldstÃ¼cke.
 		}
 		else if (gold == 200)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold200_04_00"); //200 Goldstücke.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold200_04_00"); //200 GoldstÃ¼cke.
 		}
 		else if (gold == 100)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold100_04_00"); //100 Goldstücke.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold100_04_00"); //100 GoldstÃ¼cke.
 		}
 		else
 		{
@@ -250,15 +250,15 @@ FUNC INT DIA_Addon_Henry_WantEnter_Condition()
 FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_00"); //Ich will da rein!
-	AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_01"); //Tatsächlich? Das kostet dich aber 'ne Kleinigkeit. 
+	AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_01"); //TatsÃ¤chlich? Das kostet dich aber 'ne Kleinigkeit. 
 
 	B_Henry_Gold (500);
 
 	if (Henry_Zoll_WhatFor == FALSE)
 	{
-		AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_02"); //Was? Wofür?
+		AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_02"); //Was? WofÃ¼r?
 		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_03"); //Jetzt stell dich mal nicht so an. 
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_04"); //Hier im Lager gibt's 'ne MENGE Sachen, die für dich interesant sein könnten...
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_04"); //Hier im Lager gibt's 'ne MENGE Sachen, die fÃ¼r dich interesant sein kÃ¶nnten...
 		Henry_Zoll_WhatFor = TRUE;
 	};
 		 
@@ -270,7 +270,7 @@ FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 	||	 (Hlp_IsItem(itm, ITAR_MIL_L) == TRUE)
 	||	 (Hlp_IsItem(itm, ITAR_MIL_M) == TRUE))
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_07"); //Und für mich siehst du aus, wie jemand, der Gold hat. 
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_07"); //Und fÃ¼r mich siehst du aus, wie jemand, der Gold hat. 
 		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_08"); //Also wird dich so ein kleiner Zoll nicht gleich umbringen. 
 		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_09"); //Oder sind deine feinen Klamotten etwa geklaut?
 	}
@@ -285,10 +285,10 @@ FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 // ------------------------------------------------------------
 func void B_Henry_NoJoin()
 {	
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_00"); //Wenn du vorhast, bei uns anzuheuern, muß ich dich enttäuschen, Junge!
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_01"); //Der Käpt'n ist mir der halben Besatzung auf Kaperfahrt gegangen, und er ist der einzige, der entscheidet, wer bei uns anheuern darf..
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_00"); //Wenn du vorhast, bei uns anzuheuern, muÃŸ ich dich enttÃ¤uschen, Junge!
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_01"); //Der KÃ¤pt'n ist mir der halben Besatzung auf Kaperfahrt gegangen, und er ist der einzige, der entscheidet, wer bei uns anheuern darf..
 	AI_Output (self, other, "DIA_Addon_Henry_Add_04_02"); //Aber du kannst bleiben, bis er wieder da ist.
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_03"); //Vorausgesetzt du machst hier keinen Ärger!
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_03"); //Vorausgesetzt du machst hier keinen Ã„rger!
 };
 // ------------------------------------------------------------
 
@@ -301,7 +301,7 @@ instance DIA_Addon_Henry_Einigen2		(C_INFO)
 	condition	= DIA_Addon_Henry_Einigen2_Condition;
 	information	= DIA_Addon_Henry_Einigen2_Info;
 
-	description	= "Hier sind deine 500 Goldmünzen.";
+	description	= "Hier sind deine 500 GoldmÃ¼nzen.";
 };
 func int DIA_Addon_Henry_Einigen2_Condition ()
 {
@@ -315,7 +315,7 @@ func int DIA_Addon_Henry_Einigen2_Condition ()
 };
 func void DIA_Addon_Henry_Einigen2_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Einigen2_15_00"); //Hier sind deine 500 Goldmünzen.
+	AI_Output (other, self, "DIA_Addon_Henry_Einigen2_15_00"); //Hier sind deine 500 GoldmÃ¼nzen.
 	B_GiveInvItems (other, self, ItMi_Gold, 500);		
 	AI_Output (self, other, "DIA_Addon_Henry_Einigen2_04_01"); //Alles klar. Willkommen in unserem Lager.  
 	B_Henry_NoJoin();
@@ -333,7 +333,7 @@ instance DIA_Addon_Henry_Einigen		(C_INFO)
 	condition	= DIA_Addon_Henry_Einigen_Condition;
 	information	= DIA_Addon_Henry_Einigen_Info;
 
-	description	= "Können wir uns nicht irgendwie einigen?";
+	description	= "KÃ¶nnen wir uns nicht irgendwie einigen?";
 };
 
 func int DIA_Addon_Henry_Einigen_Condition ()
@@ -347,12 +347,12 @@ func int DIA_Addon_Henry_Einigen_Condition ()
 
 func void DIA_Addon_Henry_Einigen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Einigen_15_00"); //Können wir uns nicht irgendwie einigen?
-	AI_Output (self, other, "DIA_Addon_Henry_Einigen_04_01"); //Nun. Gib mir einen Grund, dann wird's vielleicht billiger für dich.
+	AI_Output (other, self, "DIA_Addon_Henry_Einigen_15_00"); //KÃ¶nnen wir uns nicht irgendwie einigen?
+	AI_Output (self, other, "DIA_Addon_Henry_Einigen_04_01"); //Nun. Gib mir einen Grund, dann wird's vielleicht billiger fÃ¼r dich.
 };
 
 // ------------------------------------------------------------
-// 		  			Grund 1 - Fleisch für Morgan
+// 		  			Grund 1 - Fleisch fÃ¼r Morgan
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Henry_MeatForMorgan(C_INFO)
 {
@@ -406,13 +406,13 @@ func int DIA_Addon_Henry_Malcom_Condition ()
 func void DIA_Addon_Henry_Malcom_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Henry_Malcom_15_00"); //Malcom schickt mich. Ich soll dir sagen, das mit dem Holz wird noch eine Weile dauern.
-	AI_Output (self, other, "DIA_Addon_Henry_Malcom_04_01"); //(meckert) Ja, ja. Hätte ich mir ja denken können. Das dauert mal wieder ewig.
+	AI_Output (self, other, "DIA_Addon_Henry_Malcom_04_01"); //(meckert) Ja, ja. HÃ¤tte ich mir ja denken kÃ¶nnen. Das dauert mal wieder ewig.
 
 	B_MalcomExident();
 };
 
 // ------------------------------------------------------------
-// 		  			Grund 3 - Paket für Skip
+// 		  			Grund 3 - Paket fÃ¼r Skip
 // ------------------------------------------------------------
 instance DIA_Addon_Henry_BaltramPack		(C_INFO)
 {
@@ -421,7 +421,7 @@ instance DIA_Addon_Henry_BaltramPack		(C_INFO)
 	condition	= DIA_Addon_Henry_BaltramPack_Condition;
 	information	= DIA_Addon_Henry_BaltramPack_Info;
 
-	description	= "Ich hab hier eine Lieferung für Skip.";
+	description	= "Ich hab hier eine Lieferung fÃ¼r Skip.";
 };
 func int DIA_Addon_Henry_BaltramPack_Condition ()
 {
@@ -434,7 +434,7 @@ func int DIA_Addon_Henry_BaltramPack_Condition ()
 };
 func void DIA_Addon_Henry_BaltramPack_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_BaltramPack_15_00"); //Ich hab hier eine Lieferung für Skip. Ist der da?
+	AI_Output (other, self, "DIA_Addon_Henry_BaltramPack_15_00"); //Ich hab hier eine Lieferung fÃ¼r Skip. Ist der da?
 	AI_Output (self, other, "DIA_Addon_Henry_BaltramPack_04_01"); //Ja. Skip ist hier. Und weiter?
 };
 
@@ -470,19 +470,19 @@ func void DIA_Addon_Henry_Tribut_Info ()
 
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_Malcom))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_02"); //Du hast mir eine Nachricht von unseren Holzfällern überbracht.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_02"); //Du hast mir eine Nachricht von unseren HolzfÃ¤llern Ã¼berbracht.
 		Henry_Amount = (Henry_Amount - 100);
 	};	
 
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_MeatForMorgan))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_03"); //Du willst für Alligator Jack den Laufburschen spielen und das Sumpfrattenfleisch zu Morgan bringen.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_03"); //Du willst fÃ¼r Alligator Jack den Laufburschen spielen und das Sumpfrattenfleisch zu Morgan bringen.
 		Henry_Amount = (Henry_Amount - 100);
 	};
 	
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_BaltramPack))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_04"); //Du hast ein Päckchen für Skip.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_04"); //Du hast ein PÃ¤ckchen fÃ¼r Skip.
 		Henry_Amount = (Henry_Amount - 100);
 	};
 
@@ -492,8 +492,8 @@ func void DIA_Addon_Henry_Tribut_Info ()
 		{
 			AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_00"); //Und, was am bestsen von allem ist:
 		};
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_01"); //Du hast uns die Galgenvögel am Turm vom Hals geschafft.
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_02"); //Hätte nicht gedacht, daß du das alleine schaffst!
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_01"); //Du hast uns die GalgenvÃ¶gel am Turm vom Hals geschafft.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_02"); //HÃ¤tte nicht gedacht, daÃŸ du das alleine schaffst!
 		Henry_Amount = (Henry_Amount - 200);
 	};
 
@@ -535,7 +535,7 @@ func void DIA_Addon_Henry_Tribut_nein ()
 	AI_Output (other, self, "DIA_Addon_Henry_Tribut_nein_15_00"); //Das ist mir zu viel.
 	if (Henry_Amount < 500)
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Tribut_nein_04_03"); //Jetzt komm, ich hab's doch schon für dich billiger gemacht.
+		AI_Output (self, other, "DIA_Addon_Henry_Tribut_nein_04_03"); //Jetzt komm, ich hab's doch schon fÃ¼r dich billiger gemacht.
 	}
 	else
 	{
@@ -574,9 +574,9 @@ FUNC INT DIA_Addon_Henry_Palisade_Condition()
 FUNC VOID DIA_Addon_Henry_Palisade_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_15_00"); //Was machst du hier?   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_01"); //Wonach siehts denn aus? Ich muss dafür sorgen, das diese elende Jammerlappen hier die Palisade rechtzeitig fertig kriegen.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_02"); //Wenn das nicht klappt, wird Kapitän Greg mir in den Arsch treten.   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_03"); //Nebenbei pass ich auf, daß nicht jeder hier einfach so reinstiefelt!
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_01"); //Wonach siehts denn aus? Ich muss dafÃ¼r sorgen, das diese elende Jammerlappen hier die Palisade rechtzeitig fertig kriegen.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_02"); //Wenn das nicht klappt, wird KapitÃ¤n Greg mir in den Arsch treten.   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_03"); //Nebenbei pass ich auf, daÃŸ nicht jeder hier einfach so reinstiefelt!
 };
 
 // ------------------------------------------------------------
@@ -589,7 +589,7 @@ INSTANCE DIA_Addon_Henry_Palisade_WhatFor(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_WhatFor_Condition;
 	information	= DIA_Addon_Henry_Palisade_WhatFor_Info;
 	permanent	= FALSE;
-	description	= "Wofür baut ihr die Palisade?";
+	description	= "WofÃ¼r baut ihr die Palisade?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_WhatFor_Condition()
 {
@@ -600,16 +600,16 @@ FUNC INT DIA_Addon_Henry_Palisade_WhatFor_Condition()
 };
 func VOID DIA_Addon_Henry_Palisade_WhatFor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_WhatFor_15_00"); //Wofür baut ihr die Palisade?
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_WhatFor_15_00"); //WofÃ¼r baut ihr die Palisade?
 	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_10"); //Na, um es den Banditen nicht zu leicht zu machen!
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_02"); //Die Bastarde werden immer dreister. Sie streunen schon seit Tagen um unser Lager herum. Wie Haie um einen Schiffbrüchigen. 
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_11"); //Ein paar von den Mistkerlen haben sich beim Turm etwas südlich von hier verschanzt.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_02"); //Die Bastarde werden immer dreister. Sie streunen schon seit Tagen um unser Lager herum. Wie Haie um einen SchiffbrÃ¼chigen. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_11"); //Ein paar von den Mistkerlen haben sich beim Turm etwas sÃ¼dlich von hier verschanzt.
 	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_12"); //Aber ich bin mir sicher, das ist nur die Vorhut.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_03"); //Sollten sie tatsächlich so dumm sein und einen Angriff versuchen, werden wir sie gebührend empfangen.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_03"); //Sollten sie tatsÃ¤chlich so dumm sein und einen Angriff versuchen, werden wir sie gebÃ¼hrend empfangen.
 
 	Log_CreateTopic (TOPIC_Addon_BanditsTower,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_BanditsTower,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BanditsTower,"Ein paar Banditen haben den Turm südlich des Piratenlagers besetzt und sich dort verschanzt.");
+	B_LogEntry (TOPIC_Addon_BanditsTower,"Ein paar Banditen haben den Turm sÃ¼dlich des Piratenlagers besetzt und sich dort verschanzt.");
 
 };
 
@@ -619,7 +619,7 @@ func VOID DIA_Addon_Henry_Palisade_WhatFor_Info()
 func void B_Henry_WhereIsTower()
 {	
 	AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_08"); //Wo genau finde ich den Turm.
-	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_07"); //Du gehst von hier aus los und hältst dich rechts.
+	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_07"); //Du gehst von hier aus los und hÃ¤ltst dich rechts.
 	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_08"); //Auf der kleinen Klippe dort steht der Turm.
 };
 // ------------------------------------------------------------
@@ -676,8 +676,8 @@ func VOID DIA_Addon_Henry_Turmbanditen_WhatFor_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_05"); //Wenn du vorhast, dich mit ihnen ALLEINE anzulegen, vergiß es!
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_06"); //Ich werd' demnächst zwei Leute aus meinem Entertrupp schicken. Die sollen sich um die Banditen kümmern.
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_05"); //Wenn du vorhast, dich mit ihnen ALLEINE anzulegen, vergiÃŸ es!
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_06"); //Ich werd' demnÃ¤chst zwei Leute aus meinem Entertrupp schicken. Die sollen sich um die Banditen kÃ¼mmern.
 		Knows_HenrysEntertrupp = TRUE;
 	};
 };
@@ -706,14 +706,14 @@ func VOID DIA_Addon_Henry_Palisade_Bandits_Info()
 	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Bandits_15_00"); //Warum sollten die Banditen euch angreifen?
 	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_04"); //Weil KRIEG ist zwischen ihnen und uns! Was meinst du denn?
 	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_05"); //Am Anfang war alles ganz locker. Wir haben sie hergebracht, sie sind in ihren Sumpf marschiert und haben uns ihn Ruhe gelassen.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_06"); //Aber mittlerweile greifen die Mistkerle jeden an, der nicht zu ihnen gehört.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_07"); //Was weiß ich, welcher Teufel sie reitet!
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_08"); //Kann mir vorstellen, daß sie scharf auf unsere Boote sind. Es gibt nämlich keinen anderen Weg, um von hier wegzukommen. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_06"); //Aber mittlerweile greifen die Mistkerle jeden an, der nicht zu ihnen gehÃ¶rt.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_07"); //Was weiÃŸ ich, welcher Teufel sie reitet!
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_08"); //Kann mir vorstellen, daÃŸ sie scharf auf unsere Boote sind. Es gibt nÃ¤mlich keinen anderen Weg, um von hier wegzukommen. 
 	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_09"); //Frag mal Skip zu dem Thema. Der war bei ihnen - und ist gerade mal eben so mit dem Leben davongekommen.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_10"); //Ist 'ne interessante Geschichte, die er da zu erzählen hat.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_10"); //Ist 'ne interessante Geschichte, die er da zu erzÃ¤hlen hat.
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_11"); //(verschmitzt) Nur schade, daß du sie nicht hören kannst. Du hast nämlich noch nicht deinen Wegzoll bezahlt.
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_11"); //(verschmitzt) Nur schade, daÃŸ du sie nicht hÃ¶ren kannst. Du hast nÃ¤mlich noch nicht deinen Wegzoll bezahlt.
 		Henry_Zoll_WhatFor = TRUE;
 	};
 };
@@ -754,7 +754,7 @@ FUNC VOID DIA_Addon_Henry_Entercrew_Info()
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
 		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_00"); //(lacht) So einfach kommst du nicht an mir vorbei, Junge!
-		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_01"); //Erst unterhalten wir uns mal darüber, ob du überhaupt ins LAGER kommst!
+		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_01"); //Erst unterhalten wir uns mal darÃ¼ber, ob du Ã¼berhaupt ins LAGER kommst!
 		Henry_Zoll_WhatFor = TRUE;
 	}
 	else
@@ -763,7 +763,7 @@ FUNC VOID DIA_Addon_Henry_Entercrew_Info()
 		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_07"); //Wieder einer mehr, der uns hilft, uns die Banditen vom Hals zu halten. 
 		if (MIS_Henry_FreeBDTTower == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_02"); //Hmm, ich hätte jetzt gesagt, schnapp dir einen der Jungs und räucher die Mistkerle im Turn aus.
+			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_02"); //Hmm, ich hÃ¤tte jetzt gesagt, schnapp dir einen der Jungs und rÃ¤ucher die Mistkerle im Turn aus.
 			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_03"); //Aber das hast du ja schon erledigt.
 		}
 		else 
@@ -771,10 +771,10 @@ FUNC VOID DIA_Addon_Henry_Entercrew_Info()
 			if (Npc_IsDead(SawPirate))
 			&& (Npc_IsDead(HammerPirate))
 			{
-				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_04"); //Tja, meine beiden Jungs sind tot. Dann mußt du's wohl doch alleine machen.
+				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_04"); //Tja, meine beiden Jungs sind tot. Dann muÃŸt du's wohl doch alleine machen.
 				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_05"); //Schaff uns die Banditen im Turm vom Hals!
 				
-				B_LogEntry (TOPIC_Addon_BanditsTower,"Henry will, dass ich die Banditen aus dem Turm vertreibe. Er kann mir keine Unterstüzung geben.");
+				B_LogEntry (TOPIC_Addon_BanditsTower,"Henry will, dass ich die Banditen aus dem Turm vertreibe. Er kann mir keine UnterstÃ¼zung geben.");
 			}
 			else
 			{
@@ -804,7 +804,7 @@ instance DIA_Addon_Henry_Owen		(C_INFO)
 	condition	= DIA_Addon_Henry_Owen_Condition;
 	information	= DIA_Addon_Henry_Owen_Info;
 
-	description	= "Gibt's sonst noch was zu tun für mich?";
+	description	= "Gibt's sonst noch was zu tun fÃ¼r mich?";
 };
 func int DIA_Addon_Henry_Owen_Condition ()
 {
@@ -817,20 +817,20 @@ func int DIA_Addon_Henry_Owen_Condition ()
 };
 func void DIA_Addon_Henry_Owen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Owen_15_01"); //Gibt's sonst noch was zu tun für mich?
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_01"); //Wir warten schon seit Tagen auf unser Holz für die Palisade. 
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_05"); //Malcom und Owen sollten schon längst wieder hier sein.
+	AI_Output (other, self, "DIA_Addon_Henry_Owen_15_01"); //Gibt's sonst noch was zu tun fÃ¼r mich?
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_01"); //Wir warten schon seit Tagen auf unser Holz fÃ¼r die Palisade. 
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_05"); //Malcom und Owen sollten schon lÃ¤ngst wieder hier sein.
 	if (!Npc_KnowsInfo (other, DIA_Addon_Henry_Malcom))
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_06"); //Sie haben ihr Holzfällerlager nicht weit von hier im Südosten beim Talkessel.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_06"); //Sie haben ihr HolzfÃ¤llerlager nicht weit von hier im SÃ¼dosten beim Talkessel.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_07"); //Malcom sagte, es würde noch ne WEILE dauern - nicht 'ne halbe EWIGKEIT!
+		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_07"); //Malcom sagte, es wÃ¼rde noch ne WEILE dauern - nicht 'ne halbe EWIGKEIT!
 	};
 	
 	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_08"); //Sag den beiden, wir warten auf das Holz!
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_09"); //Nein, warte! Sag es OWEN. Auf Malcom ist kein Verlaß!
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_09"); //Nein, warte! Sag es OWEN. Auf Malcom ist kein VerlaÃŸ!
 	
 	
 	B_MalcomExident();
@@ -839,7 +839,7 @@ func void DIA_Addon_Henry_Owen_Info ()
 
 	Log_CreateTopic (TOPIC_Addon_HolOwen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_HolOwen,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_HolOwen,"Henry wartet auf das Holz für die Palisade. Ich soll Owen benachrichtigen. Er ist mit Malcom zusammen beim Talkessel.");  
+	B_LogEntry	(TOPIC_Addon_HolOwen,"Henry wartet auf das Holz fÃ¼r die Palisade. Ich soll Owen benachrichtigen. Er ist mit Malcom zusammen beim Talkessel.");  
 };
 
 // ------------------------------------------------------------
@@ -860,7 +860,7 @@ instance DIA_Addon_Henry_Owen2		(C_INFO)
 	condition	= 	DIA_Addon_Henry_Owen2_Condition;
 	information	= 	DIA_Addon_Henry_Owen2_Info;
 	permanent	= 	TRUE;
-	description	= 	"Wegen des Holzfällers Owen...";
+	description	= 	"Wegen des HolzfÃ¤llers Owen...";
 };
 func int DIA_Addon_Henry_Owen2_Condition ()
 {
@@ -871,13 +871,13 @@ func int DIA_Addon_Henry_Owen2_Condition ()
 };
 func void DIA_Addon_Henry_Owen2_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_00"); //Wegen des Holzfällers Owen ...
+	AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_00"); //Wegen des HolzfÃ¤llers Owen ...
 	
 	if ((Npc_IsDead(PIR_1367_Addon_Owen)) == TRUE)
 	{
 		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_01"); //Er ist tot.
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_02"); //Verdammt! Dann werde ich wohl  einen neuen Mann schicken müssen.
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_03"); //(brummig) Wird Zeit, daß Morgan endlich seinen Job macht, und die Gegend von Viechern befreit.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_02"); //Verdammt! Dann werde ich wohl  einen neuen Mann schicken mÃ¼ssen.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_03"); //(brummig) Wird Zeit, daÃŸ Morgan endlich seinen Job macht, und die Gegend von Viechern befreit.
 		B_Addon_Henry_MalcomsDead();
 		//AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_01"); //Was? Er auch? Verdammte Mistviecher!
 		MIS_Henry_HolOwen = LOG_OBSOLETE;
@@ -905,7 +905,7 @@ func void DIA_Addon_Henry_Owen2_Info ()
 	else
 	{
 		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_06"); //Wo war sein Lager nochmal?
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_07"); //Es ist nicht weit von hier im Südosten beim Talkessel.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_07"); //Es ist nicht weit von hier im SÃ¼dosten beim Talkessel.
 	};
 };
 
@@ -938,7 +938,7 @@ FUNC VOID DIA_Addon_Henry_Palisade_CanHelp_Info()
 	{
 		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_01"); //Verstehst du denn was vom Palisadenbau? 
 		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_CanHelp_15_02"); //Nein, eigentlich nicht.
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_03"); //Dann kann ich dich hier nicht gebrauchen. Geh und mach dich anderweitig nützlich.
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_03"); //Dann kann ich dich hier nicht gebrauchen. Geh und mach dich anderweitig nÃ¼tzlich.
 		Henry_PERM_Once = TRUE;
 	};
 	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_04"); //Ach, von mir aus lass dich vollaufen, aber steh hier nicht meinen Arbeitern im Weg. 
@@ -959,7 +959,7 @@ INSTANCE DIA_Addon_Henry_WhatTeach(C_INFO)
 	condition	= DIA_Addon_Henry_WhatTeach_Condition;
 	information	= DIA_Addon_Henry_WhatTeach_Info;
 	permanent	= TRUE;
-	description	= "Kannst du mir beibringen, besser zu kämpfen?";
+	description	= "Kannst du mir beibringen, besser zu kÃ¤mpfen?";
 };                       
 FUNC INT DIA_Addon_Henry_WhatTeach_Condition()
 {
@@ -972,10 +972,10 @@ FUNC INT DIA_Addon_Henry_WhatTeach_Condition()
 
 FUNC VOID DIA_Addon_Henry_WhatTeach_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Henry_WhatTeach_Add_15_00"); //Kannst du mir beibringen, besser zu kämpfen?
+	AI_Output (other, self, "DIA_Addon_Henry_WhatTeach_Add_15_00"); //Kannst du mir beibringen, besser zu kÃ¤mpfen?
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_01"); //(lacht) Bezahl erstmal deinen Zoll. Danach kann ich dir dann was über's kämpfen erzählen!
+		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_01"); //(lacht) Bezahl erstmal deinen Zoll. Danach kann ich dir dann was Ã¼ber's kÃ¤mpfen erzÃ¤hlen!
 		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_02"); //(schlau) Ist alles im Preis inbegriffen.
 		Henry_Zoll_WhatFor = TRUE;
 	}
@@ -1009,7 +1009,7 @@ func VOID B_Henry_CommentFightSkill ()
 	}
 	else if (Henry_Labercount == 2)
 	{
-		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_03"); //Denk daran, wer pariert lebt länger! 
+		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_03"); //Denk daran, wer pariert lebt lÃ¤nger! 
 		Henry_Labercount = 0;
 	};
 };
@@ -1128,18 +1128,18 @@ FUNC INT DIA_Addon_Henry_Palisade_Train_Condition()
 func VOID DIA_Addon_Henry_Palisade_Train_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_00"); //Greg ist dein Boss?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_01"); //Allerdings. Und für dich immer noch KAPITÄN Greg. Dass das klar ist.   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_02"); //Er ist ein grosser Mann. Wenn du Ihm begegnest, solltest du ihm nicht krumm kommen. Das würde dir nicht bekommen. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_01"); //Allerdings. Und fÃ¼r dich immer noch KAPITÃ„N Greg. Dass das klar ist.   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_02"); //Er ist ein grosser Mann. Wenn du Ihm begegnest, solltest du ihm nicht krumm kommen. Das wÃ¼rde dir nicht bekommen. 
 	
 	if (PIR_1300_Addon_Greg_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
 		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_03"); //Ich bin ihm schon begegnet.
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_04"); //Um so besser. Dann weißt du ja, wovon ich rede.   
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_04"); //Um so besser. Dann weiÃŸt du ja, wovon ich rede.   
 	};
 
 	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_05"); //Leider ist er momentan nicht im Lager.  
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_06"); //Sein Stellvertreter heißt Francis.   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_07"); //Er sitzt den ganzen Tag vor Gregs Hütte und glotzt uns bei der Arbeit zu. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_06"); //Sein Stellvertreter heiÃŸt Francis.   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_07"); //Er sitzt den ganzen Tag vor Gregs HÃ¼tte und glotzt uns bei der Arbeit zu. 
 };
 
 // ************************************************************
@@ -1163,14 +1163,14 @@ FUNC INT DIA_Addon_Henry_YourOwnTrupp_Condition()
 };
 func VOID DIA_Addon_Henry_YourOwnTrupp_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_04"); //Der Käpt'n hat dir deinen eigenen Entertrupp gegeben, was?
-	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_05"); //Dann sieh mal zu, daß die Jungs ordentlich was zu tun kriegen!
+	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_04"); //Der KÃ¤pt'n hat dir deinen eigenen Entertrupp gegeben, was?
+	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_05"); //Dann sieh mal zu, daÃŸ die Jungs ordentlich was zu tun kriegen!
 	AI_StopProcessInfos (self);
 };
 
 
 
 /*
-AI_Output (other,self ,"DIA_Addon_Henry_HenrysCrew_15_00"); //Wer gehört zu deinem Trupp?
+AI_Output (other,self ,"DIA_Addon_Henry_HenrysCrew_15_00"); //Wer gehÃ¶rt zu deinem Trupp?
 AI_Output (other,self ,"DIA_Addon_Henry_Morgan_15_00"); //Wo finde ich Morgan?
 */

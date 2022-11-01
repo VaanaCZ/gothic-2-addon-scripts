@@ -46,7 +46,7 @@ func int DIA_Till_HALLO_Condition ()
 func void DIA_Till_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Till_HALLO_15_00"); //Na, Kleiner?
-	AI_Output			(self, other, "DIA_Till_HALLO_03_01"); //Das Gesinde hat mich nicht so schnöde anzusprechen, wie oft muss ich das noch sagen?
+	AI_Output			(self, other, "DIA_Till_HALLO_03_01"); //Das Gesinde hat mich nicht so schnÃ¶de anzusprechen, wie oft muss ich das noch sagen?
 	B_StartOtherRoutine (Till,"Start"); 
 
 	Info_ClearChoices	(DIA_Till_HALLO);
@@ -65,7 +65,7 @@ func void DIA_Till_HALLO_Info ()
 func void DIA_Till_HALLO_selber ()
 {
 	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_00"); //Hast du hier das Sagen?
-	AI_Output			(self, other, "DIA_Till_HALLO_selber_03_01"); //(eingeschüchtert) Äh. Nein, ich bin nur Sekobs Sohn. Aber wenn mein alter Herr einmal nicht mehr ist, dann gehört das ganze Land, was du hier siehst, mir.
+	AI_Output			(self, other, "DIA_Till_HALLO_selber_03_01"); //(eingeschÃ¼chtert) Ã„h. Nein, ich bin nur Sekobs Sohn. Aber wenn mein alter Herr einmal nicht mehr ist, dann gehÃ¶rt das ganze Land, was du hier siehst, mir.
 	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_02"); //Toll!
 
 	Info_ClearChoices	(DIA_Till_HALLO);
@@ -105,7 +105,7 @@ func int DIA_Till_FELDARBEITER_Condition ()
 func void DIA_Till_FELDARBEITER_Info ()
 {
 	AI_Output			(other, self, "DIA_Till_FELDARBEITER_15_00"); //Gehst du mit den Feldarbeitern immer so um?
-	AI_Output			(self, other, "DIA_Till_FELDARBEITER_03_01"); //Klar, die brauchen das. Wer hier nicht spurt, kriegt Prügel, so läuft das.
+	AI_Output			(self, other, "DIA_Till_FELDARBEITER_03_01"); //Klar, die brauchen das. Wer hier nicht spurt, kriegt PrÃ¼gel, so lÃ¤uft das.
 
 };
 
@@ -141,7 +141,7 @@ func void DIA_Till_SEKOB_Info ()
 	AI_Output			(other, self, "DIA_Till_SEKOB_15_00"); //Ich muss deinen Vater sprechen.
 	AI_Output			(self, other, "DIA_Till_SEKOB_03_01"); //Der hat keine Zeit. Aber ich bin sein Stellvertreter. Womit kann ich dir helfen?
 	AI_Output			(other, self, "DIA_Till_SEKOB_15_02"); //Indem du mich deinem Vater vorstellst.
-	AI_Output			(self, other, "DIA_Till_SEKOB_03_03"); //Bist wohl ein ganz harter Bursche und guter Kämpfer, was?
+	AI_Output			(self, other, "DIA_Till_SEKOB_03_03"); //Bist wohl ein ganz harter Bursche und guter KÃ¤mpfer, was?
 	AI_Output			(other, self, "DIA_Till_SEKOB_15_04"); //Der Beste.
 	AI_Output			(self, other, "DIA_Till_SEKOB_03_05"); //Ich glaube, dann sollte ich ihn mal besser holen.
 	AI_Output			(other, self, "DIA_Till_SEKOB_15_06"); //Lass mal, Junge. Ich werde ihn schon finden.
@@ -177,7 +177,7 @@ func void DIA_Till_WASMACHSTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_00"); //Was machst du denn so, wenn du nicht gerade den Hof regierst?
 	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_01"); //Aufpassen.
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_02"); //Die dreckigen Milizen der Stadt kommen immer häufiger auf unser Land und stehlen alles, was sie in die Hände bekommen.
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_02"); //Die dreckigen Milizen der Stadt kommen immer hÃ¤ufiger auf unser Land und stehlen alles, was sie in die HÃ¤nde bekommen.
 	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_03"); //Erst letzte Woche waren die Dreckskerle noch hier und haben einige unserer Schafe einfach mitgenommen.
 	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_04"); //Wenn ich mal einen von ihnen in die Finger kriege, dann mach ich mit ihm kurzen Prozess.
 	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_05"); //Ja klar!
@@ -194,7 +194,7 @@ instance DIA_Till_WARUMNICHTSLD		(C_INFO)
 	condition	 = 	DIA_Till_WARUMNICHTSLD_Condition;
 	information	 = 	DIA_Till_WARUMNICHTSLD_Info;
 
-	description	 = 	"Warum helfen euch nicht die Söldner gegen die Milizen?";
+	description	 = 	"Warum helfen euch nicht die SÃ¶ldner gegen die Milizen?";
 };
 
 func int DIA_Till_WARUMNICHTSLD_Condition ()
@@ -209,8 +209,8 @@ func int DIA_Till_WARUMNICHTSLD_Condition ()
 
 func void DIA_Till_WARUMNICHTSLD_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_WARUMNICHTSLD_15_00"); //Warum helfen euch nicht die Söldner gegen die Milizen?
-	AI_Output			(self, other, "DIA_Till_WARUMNICHTSLD_03_01"); //Bevor die erstmal in Wallung kommen, habe ich sie doch schon längst in die Flucht geschlagen.
+	AI_Output			(other, self, "DIA_Till_WARUMNICHTSLD_15_00"); //Warum helfen euch nicht die SÃ¶ldner gegen die Milizen?
+	AI_Output			(self, other, "DIA_Till_WARUMNICHTSLD_03_01"); //Bevor die erstmal in Wallung kommen, habe ich sie doch schon lÃ¤ngst in die Flucht geschlagen.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -240,9 +240,9 @@ func int DIA_Till_BRONKO_Condition ()
 
 func void DIA_Till_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKO_15_00"); //Da ist so ein Typ, der kassiert von jedem Passanten Wegzoll und erzählt, ER wäre der Bauer.
-	AI_Output			(self, other, "DIA_Till_BRONKO_03_01"); //(verlegen) Äh. Ja. Ich weiß. Das ist Bronko. Der macht einfach, was er will.
-	AI_Output			(self, other, "DIA_Till_BRONKO_03_02"); //Nicht, dass ich ihm nicht schon tausend mal eingebläut hätte, dass er endlich wieder an die Arbeit gehen soll.
+	AI_Output			(other, self, "DIA_Till_BRONKO_15_00"); //Da ist so ein Typ, der kassiert von jedem Passanten Wegzoll und erzÃ¤hlt, ER wÃ¤re der Bauer.
+	AI_Output			(self, other, "DIA_Till_BRONKO_03_01"); //(verlegen) Ã„h. Ja. Ich weiÃŸ. Das ist Bronko. Der macht einfach, was er will.
+	AI_Output			(self, other, "DIA_Till_BRONKO_03_02"); //Nicht, dass ich ihm nicht schon tausend mal eingeblÃ¤ut hÃ¤tte, dass er endlich wieder an die Arbeit gehen soll.
 	AI_Output			(other, self, "DIA_Till_BRONKO_15_03"); //Aber?
 	AI_Output			(self, other, "DIA_Till_BRONKO_03_04"); //Er tut es halt einfach nicht.
 	
@@ -284,7 +284,7 @@ func int DIA_Till_BRONKOZURARBEIT_Condition ()
 func void DIA_Till_BRONKOZURARBEIT_Info ()
 {
 	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_15_00"); //Vielleicht kann ich dir helfen.
-	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_03_01"); //Meinst du wirklich? Also pass auf, wenn du Bronko wieder dazu bringst, zu arbeiten, werde ich dir, sagen wir mal, 10 Goldmünzen bezahlen. Was sagst du?
+	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_03_01"); //Meinst du wirklich? Also pass auf, wenn du Bronko wieder dazu bringst, zu arbeiten, werde ich dir, sagen wir mal, 10 GoldmÃ¼nzen bezahlen. Was sagst du?
 
 	Till_Angebot = 10;
 
@@ -292,13 +292,13 @@ func void DIA_Till_BRONKOZURARBEIT_Info ()
 
 	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Kein Problem. Ich will aber mehr Geld.", DIA_Till_BRONKOZURARBEIT_mehr );
 	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Na gut! Ich werde sehen was ich tun kann.", DIA_Till_BRONKOZURARBEIT_ok );
-	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Ich denke drüber nach.", DIA_Till_BRONKOZURARBEIT_nochnicht );
+	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Ich denke drÃ¼ber nach.", DIA_Till_BRONKOZURARBEIT_nochnicht );
 
 };
 
 func void DIA_Till_BRONKOZURARBEIT_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_nochnicht_15_00"); //Ich denke darüber nach.
+	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_nochnicht_15_00"); //Ich denke darÃ¼ber nach.
 	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_nochnicht_03_01"); //Wie du willst.
 
 	Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
@@ -334,7 +334,7 @@ func void DIA_Till_BRONKOZURARBEIT_mehr ()
 
 	 if (Till_Angebot == 10)
 	 	{
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_02"); //Na schön. Dann eben 20 Goldmünzen.
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_02"); //Na schÃ¶n. Dann eben 20 GoldmÃ¼nzen.
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
 			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Ich will mehr.", DIA_Till_BRONKOZURARBEIT_mehr );
 			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Na gut! Ich werde sehen was ich tun kann.", DIA_Till_BRONKOZURARBEIT_ok );
@@ -367,7 +367,7 @@ func void DIA_Till_BRONKOZURARBEIT_mehr ()
 	 else if (Till_Angebot == 70)
 		{	
 	
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_06"); //Ok, ok! Ich gebe dir 100 Goldmünzen. Mehr habe ich aber nicht.
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_06"); //Ok, ok! Ich gebe dir 100 GoldmÃ¼nzen. Mehr habe ich aber nicht.
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
 
 			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Na gut! Ich werde sehen was ich tun kann.", DIA_Till_BRONKOZURARBEIT_ok );
@@ -404,14 +404,14 @@ func int DIA_Till_BRONKOWIEDERANARBEIT_Condition ()
 func void DIA_Till_BRONKOWIEDERANARBEIT_Info ()
 {
 	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_00"); //Bronko arbeitet wieder.
-	AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_01"); //Tatsächlich? Das ist ja prima.
+	AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_01"); //TatsÃ¤chlich? Das ist ja prima.
 	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_02"); //Ja. Und ich will jetzt meine Kohle.
 	
 	IntToFloat	(Till_Angebot);
 	
 	if (Till_Angebot <= 50)
 		{
-			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_03"); //(zögernd) Mmh. Na gut. Geschäft ist Geschäft, was?
+			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_03"); //(zÃ¶gernd) Mmh. Na gut. GeschÃ¤ft ist GeschÃ¤ft, was?
 
 			CreateInvItems (self, ItMi_Gold, Till_Angebot);									
 			B_GiveInvItems (self, other, ItMi_Gold, Till_Angebot);
@@ -440,7 +440,7 @@ instance DIA_Till_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Till_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"(Till ärgern)";
+	description	 = 	"(Till Ã¤rgern)";
 };
 
 func int DIA_Till_PERMKAP1_Condition ()
@@ -460,7 +460,7 @@ func void DIA_Till_PERMKAP1_Info ()
 			&& (Rosi_FleeFromSekob_Kap5 == TRUE)
 			{
 				AI_Output			(other, self, "DIA_Till_PERMKAP1_15_00"); //Weit weg von Zuhause, was? Papa kann dir hier nicht mehr helfen.
-				AI_Output			(self, other, "DIA_Till_PERMKAP1_03_01"); //Deine große Klappe stopfe ich dir noch irgendwann.
+				AI_Output			(self, other, "DIA_Till_PERMKAP1_03_01"); //Deine groÃŸe Klappe stopfe ich dir noch irgendwann.
 			};
 			
 			AI_Output			(other, self, "DIA_Till_PERMKAP1_15_02"); //Du Pfeife kannst froh sein, wenn ich dich leben lasse.
@@ -471,7 +471,7 @@ func void DIA_Till_PERMKAP1_Info ()
 		{		
 			if 	(self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 				{
-					AI_Output			(other, self, "DIA_Till_PERMKAP1_15_04"); //Vielleicht solltest du mehr essen, damit du groß und stark wirst.
+					AI_Output			(other, self, "DIA_Till_PERMKAP1_15_04"); //Vielleicht solltest du mehr essen, damit du groÃŸ und stark wirst.
 					AI_Output			(self, other, "DIA_Till_PERMKAP1_03_05"); //Eines Tages werde ich's dir schon noch zeigen.
 					AI_StopProcessInfos (self);
 				}

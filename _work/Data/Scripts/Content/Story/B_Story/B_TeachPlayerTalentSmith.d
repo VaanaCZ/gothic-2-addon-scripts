@@ -27,28 +27,28 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentSmith,"Um eine Waffe zu schmiede, brauche ich zunächst ein Stück Rohstahl. An einem Schmiedefeuer muss ich den Stahl erhitzen und anschließend an einem Amboss in die gewünschte Form bringen. Für hochwertigere Waffe benötigt man häufig noch Substanzen, welche der Waffe besondere Eigenschaften verleihen.");
+	B_LogEntry (TOPIC_TalentSmith,"Um eine Waffe zu schmiede, brauche ich zunÃ¤chst ein StÃ¼ck Rohstahl. An einem Schmiedefeuer muss ich den Stahl erhitzen und anschlieÃŸend an einem Amboss in die gewÃ¼nschte Form bringen. FÃ¼r hochwertigere Waffe benÃ¶tigt man hÃ¤ufig noch Substanzen, welche der Waffe besondere Eigenschaften verleihen.");
 	
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Für ein einfaches Schwert benötige ich keine weiteren Zutaten.");};
+	B_LogEntry (TOPIC_TalentSmith,"FÃ¼r ein einfaches Schwert benÃ¶tige ich keine weiteren Zutaten.");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 1 Erz hinzugebe, kann ich mir ein ´ERZ-LANGSCHWERT´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 1 Erz hinzugebe, kann ich mir ein Â´ERZ-LANGSCHWERTÂ´ schmieden.");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 2 Erz hinzugebe, kann ich mir einen ´ERZ-ZWEIHÄNDER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 2 Erz hinzugebe, kann ich mir einen Â´ERZ-ZWEIHÃ„NDERÂ´ schmieden.");};
 	if (waffe == WEAPON_1H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 2 Erz hinzugebe, kann ich mir ein ´ERZ-BASTARDSCHWERT´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 2 Erz hinzugebe, kann ich mir ein Â´ERZ-BASTARDSCHWERTÂ´ schmieden.");};
 	if (waffe == WEAPON_2H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 3 Erz hinzugebe, kann ich mir einen ´SCHWEREN ERZ-ZWEIHÄNDER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 3 Erz hinzugebe, kann ich mir einen Â´SCHWEREN ERZ-ZWEIHÃ„NDERÂ´ schmieden.");};
 	if (waffe == WEAPON_1H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 3 Erz hinzugebe, kann ich mir eine ´ERZ-SCHLACHTKLINGE´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 3 Erz hinzugebe, kann ich mir eine Â´ERZ-SCHLACHTKLINGEÂ´ schmieden.");};
 	if (waffe == WEAPON_2H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 4 Erz hinzugebe, kann ich mir eine ´SCHWERE ERZ-SCHLACHTKLINGE´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 4 Erz hinzugebe, kann ich mir eine Â´SCHWERE ERZ-SCHLACHTKLINGEÂ´ schmieden.");};
 	if (waffe == WEAPON_1H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 4 Erz und 5 Drachenblut hinzugebe, kann ich mir einen ´ERZ-DRACHENTÖTER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 4 Erz und 5 Drachenblut hinzugebe, kann ich mir einen Â´ERZ-DRACHENTÃ–TERÂ´ schmieden.");};
 	if (waffe == WEAPON_2H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 5 Erz und 5 Drachenblut hinzugebe, kann ich mir einen ´GROßEN ERZ-DRACHENTÖTER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 5 Erz und 5 Drachenblut hinzugebe, kann ich mir einen Â´GROÃŸEN ERZ-DRACHENTÃ–TERÂ´ schmieden.");};
 	
 	//Harad - Addon
 	if (waffe == WEAPON_1H_Harad_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_01] 	= TRUE;	

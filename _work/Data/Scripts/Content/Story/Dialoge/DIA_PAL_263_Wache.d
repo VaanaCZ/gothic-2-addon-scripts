@@ -45,7 +45,7 @@ func void DIA_PAL_263_PERM_Info ()
 {
 	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Bericht, Soldat!
 	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Jawohl! Halten wie befohlen die Stellung. Keine weiteren Verluste. Nahrung wird knapper, die Orks verhalten sich ruhig.
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //Der letzte Drachenangriff hat den Außenwall nun komplett zerstört. Aber seitdem keine ungewöhnlichen Vorkommnisse.
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //Der letzte Drachenangriff hat den AuÃŸenwall nun komplett zerstÃ¶rt. Aber seitdem keine ungewÃ¶hnlichen Vorkommnisse.
 	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //Gut, weitermachen.
 };
 ///////////////////////////////////////////////////////////////////////

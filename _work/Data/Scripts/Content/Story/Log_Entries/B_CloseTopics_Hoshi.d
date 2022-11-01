@@ -1,5 +1,5 @@
 // ***************************************************
-//  	B_CloseTopics_Hoshi ()	(verschiebt Topics in den zugehörigen Log-Ordner bei FAILED oder SUCCESS)	
+//  	B_CloseTopics_Hoshi ()	(verschiebt Topics in den zugehÃ¶rigen Log-Ordner bei FAILED oder SUCCESS)	
 // ***************************************************
 	
 func void B_CloseTopics_Hoshi ()	

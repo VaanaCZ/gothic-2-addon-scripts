@@ -40,7 +40,7 @@ FUNC INT DIA_OCPAL_4_PEOPLE_Condition()
 FUNC VOID DIA_OCPAL_4_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_OCPAL_4_PEOPLE_15_00"); //Wer hat hier das Kommando?
-	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Kommandant Garond. Er befindet sich im größten Haus hier in der Burg.
+	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Kommandant Garond. Er befindet sich im grÃ¶ÃŸten Haus hier in der Burg.
 };
 
 // *************************************************************************
@@ -52,7 +52,7 @@ INSTANCE DIA_OCPAL_4_LOCATION(C_INFO)
 	condition	= DIA_OCPAL_4_LOCATION_Condition;
 	information	= DIA_OCPAL_4_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was kannst du mir über das Minental erzählen?";
+	description = "Was kannst du mir Ã¼ber das Minental erzÃ¤hlen?";
 };                       
 
 FUNC INT DIA_OCPAL_4_LOCATION_Condition()
@@ -62,9 +62,9 @@ FUNC INT DIA_OCPAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_OCPAL_4_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_LOCATION_15_00"); //Was kannst du mir über das Minental erzählen?
-	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_01"); //Soviel ich weiß, gibt es mehrere Minen da draußen - wenn die nicht schon alle von den Orks überrannt wurden.
-	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_02"); //Die Trupps bestehen zum größten Teil aus Gefangenen, aber es sind auch einige Paladine unter ihnen.
+	AI_Output (other, self, "DIA_OCPAL_4_LOCATION_15_00"); //Was kannst du mir Ã¼ber das Minental erzÃ¤hlen?
+	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_01"); //Soviel ich weiÃŸ, gibt es mehrere Minen da drauÃŸen - wenn die nicht schon alle von den Orks Ã¼berrannt wurden.
+	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_02"); //Die Trupps bestehen zum grÃ¶ÃŸten Teil aus Gefangenen, aber es sind auch einige Paladine unter ihnen.
 };
 
 // *************************************************************************
@@ -97,14 +97,14 @@ FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //Es wird nicht mehr lange dauern, bis die Orks angreifen. Wo bleibt die verdammte Verstärkung?
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //Es wird nicht mehr lange dauern, bis die Orks angreifen. Wo bleibt die verdammte VerstÃ¤rkung?
 			if (other.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //Du glaubst doch nicht im Ernst, dass ihr Drachenjäger wirklich eine Chance gegen ALLE Drachen habt?
+				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //Du glaubst doch nicht im Ernst, dass ihr DrachenjÃ¤ger wirklich eine Chance gegen ALLE Drachen habt?
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_04"); //Diese sogenannten Drachenjäger werden nicht viel ausrichten können!
+				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_04"); //Diese sogenannten DrachenjÃ¤ger werden nicht viel ausrichten kÃ¶nnen!
 			};
 		}
 		else

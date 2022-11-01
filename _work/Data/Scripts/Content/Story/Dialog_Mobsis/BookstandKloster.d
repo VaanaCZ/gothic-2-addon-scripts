@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------
-//				Weitere Buchständer in der Magierbibliothek
+//				Weitere BuchstÃ¤nder in der Magierbibliothek
 //-------------------------------------------------------------------------------------
 //				Runensteine 
 //-------------------------------------------------------------------------------------
@@ -168,12 +168,12 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  0, "DER ERSTE KREIS"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Die Runen des ersten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Die Runen des ersten Kreises und die zu deren Herstellung benÃ¶tigten Ingredenzien ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					Doc_PrintLine	( nDocID,  0, "Licht");
-					Doc_PrintLine	( nDocID,  0, "Goldmünze");
+					Doc_PrintLine	( nDocID,  0, "GoldmÃ¼nze");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Feuerpfeil");
@@ -196,11 +196,11 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "FÃ¼r die Herstellung einer Rune ist jeweils EINE der aufgefÃ¼hrten Ingredenzien erforderlich."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel fÃ¼r den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfÃ¼llt sind, kann er am Runentisch zu Werke gehen."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -226,7 +226,7 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  0, "DER ZWEITE KREIS"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Die Runen des zweiten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Die Runen des zweiten Kreises und die zu deren Herstellung benÃ¶tigten Ingredenzien ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -256,11 +256,11 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "FÃ¼r die Herstellung einer Rune ist jeweils EINE der aufgefÃ¼hrten Ingredenzien erforderlich."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel fÃ¼r den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfÃ¼llt sind, kann er am Runentisch zu Werke gehen."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -287,7 +287,7 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "DER DRITTE KREIS"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des dritten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Die Runen des dritten Kreises und die zu deren Herstellung benÃ¶tigten Ingredenzien ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
@@ -325,11 +325,11 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "FÃ¼r die Herstellung einer Rune ist jeweils EINE der aufgefÃ¼hrten Ingredenzien erforderlich."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel fÃ¼r den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfÃ¼llt sind, kann er am Runentisch zu Werke gehen."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -356,7 +356,7 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_PrintLine	( nDocID,  0, "DER VIERTE KREIS"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des vierten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Die Runen des vierten Kreises und die zu deren Herstellung benÃ¶tigten Ingredenzien ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -386,17 +386,17 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					
 					
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "FÃ¼r die Herstellung einer Rune ist jeweils EINE der aufgefÃ¼hrten Ingredenzien erforderlich."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel fÃ¼r den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfÃ¼llt sind, kann er am Runentisch zu Werke gehen."					);
 					Doc_Show		( nDocID );
 		
 	};
 };  					
 //-------------------------------------------------------------------------------------
-//				Runen des fünften Kreises und ihre Ingredenzien
+//				Runen des fÃ¼nften Kreises und ihre Ingredenzien
 //-------------------------------------------------------------------------------------
 FUNC VOID Use_Bookstand_Kreise_05_S1()		
 {
@@ -414,10 +414,10 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER FÜNFTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "DER FÃœNFTE KREIS"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des fünften Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Die Runen des fÃ¼nften Kreises und die zu deren Herstellung benÃ¶tigten Ingredenzien ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -432,8 +432,8 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  0, "Flammenzunge");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Dämon beschwören");
-					Doc_PrintLine	( nDocID,  0, "Herz eines Dämonen");
+					Doc_PrintLine	( nDocID,  0, "DÃ¤mon beschwÃ¶ren");
+					Doc_PrintLine	( nDocID,  0, "Herz eines DÃ¤monen");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Schwere Wunden heilen");
@@ -444,11 +444,11 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "FÃ¼r die Herstellung einer Rune ist jeweils EINE der aufgefÃ¼hrten Ingredenzien erforderlich."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel fÃ¼r den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfÃ¼llt sind, kann er am Runentisch zu Werke gehen."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -475,7 +475,7 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  0, "DER SECHSTE KREIS"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des sechsten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Die Runen des sechsten Kreises und die zu deren Herstellung benÃ¶tigten Ingredenzien ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -499,7 +499,7 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  0, "Knochen eines Skeletts");
 					Doc_PrintLine	( nDocID,  0, "Schwarze Perle");
 					Doc_PrintLine	( nDocID,  0, "Herz eines Steingolems");
-					Doc_PrintLine	( nDocID,  0,  "Herz eines Dämonen");
+					Doc_PrintLine	( nDocID,  0,  "Herz eines DÃ¤monen");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
@@ -515,11 +515,11 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "FÃ¼r die Herstellung einer Rune ist jeweils EINE der aufgefÃ¼hrten Ingredenzien erforderlich."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel fÃ¼r den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfÃ¼llt sind, kann er am Runentisch zu Werke gehen."					);
 					Doc_Show		( nDocID );
 		
 	};

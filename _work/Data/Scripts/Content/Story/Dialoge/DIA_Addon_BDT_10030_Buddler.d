@@ -40,12 +40,12 @@ FUNC VOID DIA_Addon_10030_Buddler_Hi_Info()
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Die Sklaven machen uns die groﬂen Brocken weg.
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(grinst) Wir ernten dann sp‰ter die goldenen Fr¸chte.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Die Sklaven machen uns die gro√üen Brocken weg.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(grinst) Wir ernten dann sp√§ter die goldenen Fr√ºchte.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03");//Jetzt holen wir uns das s¸ﬂe Gold.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03");//Jetzt holen wir uns das s√º√üe Gold.
 		AI_StopProcessInfos(self);
 	};
 };

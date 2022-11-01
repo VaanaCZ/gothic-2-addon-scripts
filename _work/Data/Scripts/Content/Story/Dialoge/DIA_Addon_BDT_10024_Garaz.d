@@ -73,7 +73,7 @@ FUNC VOID DIA_Addon_Garaz_Probleme_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_00");//Warte mal.
 	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//Gibt's Probleme?
-	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//Minecrawler. Jede Menge Minecrawler. Wir sind hier auf ein Nest gestoßen.
+	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//Minecrawler. Jede Menge Minecrawler. Wir sind hier auf ein Nest gestoÃŸen.
 };
 //---------------------------------------------------------------------
 //	Info Hi
@@ -99,10 +99,10 @@ FUNC VOID DIA_Addon_Garaz_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//Warum greifen wir die Crawler nicht an?
 	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//Hab ich auch gefragt. Aber die Garde hatte 'Wichtigeres' zu tun.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//Bloodwyn es mir überlassen, dieses Problem aus der Welt zu schaffen.
-	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//Ich schätze, du hast nicht vor, dich mit den Crawlern anzulegen.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//Warum sollte ich? Damit wir an das Gold kommen, das in der Höhle ist?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Das Meiste wird sich eh Bloodwyn reinziehen. Und für das bisschen, das ich kriege, riskiere ich nicht meinen Hals.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//Bloodwyn es mir Ã¼berlassen, dieses Problem aus der Welt zu schaffen.
+	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//Ich schÃ¤tze, du hast nicht vor, dich mit den Crawlern anzulegen.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//Warum sollte ich? Damit wir an das Gold kommen, das in der HÃ¶hle ist?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Das Meiste wird sich eh Bloodwyn reinziehen. Und fÃ¼r das bisschen, das ich kriege, riskiere ich nicht meinen Hals.
 	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//Wenn DU dich mit den Crawlern anlegen willst - lass dich nicht aufhalten. Nur - lock sie nicht alle hier rauf, ja?
 	
 };
@@ -116,7 +116,7 @@ INSTANCE DIA_Addon_Garaz_Bloodwyn   (C_INFO)
 	condition   = DIA_Addon_Garaz_Bloodwyn_Condition;
 	information = DIA_Addon_Garaz_Bloodwyn_Info;
 	permanent   = FALSE;
-	description = "Kannst du mir noch was über Bloodwyn sagen?";
+	description = "Kannst du mir noch was Ã¼ber Bloodwyn sagen?";
 };
 FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 {	
@@ -129,15 +129,15 @@ FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Bloodwyn_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//Kannst du mir noch was über Bloodwyn sagen?
+	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//Kannst du mir noch was Ã¼ber Bloodwyn sagen?
 	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//Ja. Er ist ein goldgieriger Bastard. Er kontrolliert jede neue Ader und jeden Klumpen.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//Für Gold ist ihm kein Weg zu weit. Aber wir sind ihm scheißegal.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//FÃ¼r Gold ist ihm kein Weg zu weit. Aber wir sind ihm scheiÃŸegal.
 	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_03");//Und sonst?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//Er hält sich für den Größten und kann's nicht leiden, wenn jemand besser da steht als er. Okay - ich würde trotzdem nicht gegen ihn antreten wollen.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//Geh ihm am Besten aus dem Weg und reize ihn nicht - es sei denn, du willst, dass er wütend wird und seine Beherrschung verliert ...
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//Er hÃ¤lt sich fÃ¼r den GrÃ¶ÃŸten und kann's nicht leiden, wenn jemand besser da steht als er. Okay - ich wÃ¼rde trotzdem nicht gegen ihn antreten wollen.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//Geh ihm am Besten aus dem Weg und reize ihn nicht - es sei denn, du willst, dass er wÃ¼tend wird und seine Beherrschung verliert ...
 	
 	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn wird bestimmt den Tempel verlassen, wenn er mitkriegt, das in der Mine eien neue Goldader gefunden wurde.");
-	B_LogEntry (Topic_Addon_Tempel,"Wenn Bloodwyn gereizt wird, verliert er die Kontrolle. Das wird mir bestimmt nützlich sein."); 
+	B_LogEntry (Topic_Addon_Tempel,"Wenn Bloodwyn gereizt wird, verliert er die Kontrolle. Das wird mir bestimmt nÃ¼tzlich sein."); 
 };
 //---------------------------------------------------------------------
 //	Info Sieg
@@ -191,7 +191,7 @@ FUNC INT DIA_Addon_Garaz_Blood_Condition()
 FUNC VOID DIA_Addon_Garaz_Blood_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_00");//Du hast es diesem Penner ja ordentlich gezeigt. Saubere Leistung.
-	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//Dann werde ich mich mal in der Höhle umsehen.
+	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//Dann werde ich mich mal in der HÃ¶hle umsehen.
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos  (self);
@@ -221,7 +221,7 @@ FUNC INT DIA_Addon_Garaz_Gold_Condition()
 FUNC VOID DIA_Addon_Garaz_Gold_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//Wow, Mann, hier gibt's echt 'ne Menge Gold.
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//Um an die Brocken ganz oben zu kommen, bräuchten wir schon eine Leiter.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//Um an die Brocken ganz oben zu kommen, brÃ¤uchten wir schon eine Leiter.
 	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//Aber seit dem Fall der Barriere benutzt niemand mehr Leitern ... ist eigentlich sehr schade ...
 };
 
