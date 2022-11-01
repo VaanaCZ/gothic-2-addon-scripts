@@ -18,7 +18,7 @@ INSTANCE PIR_1357_Addon_Garett (Npc_Default)
 	EquipItem (self, ItMw_Piratensaebel);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 	CreateInvItems (self, ItBE_Addon_Prot_EdgPoi, 1); 
 		
 	// ------ visuals ------																			

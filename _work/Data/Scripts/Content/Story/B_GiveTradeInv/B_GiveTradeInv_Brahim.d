@@ -29,7 +29,7 @@ FUNC VOID B_GiveTradeInv_Brahim (var C_NPC slf)
 	if ((Kapitel >= 3)
 	&& (Brahim_ItemsGiven_Chapter_3 == FALSE))
 	{
-		CreateInvItems (slf, ItWr_ShatteredGolem_MIS, 1); //Hoshi: Karte über einen Schatz bei den MayaRuinen 
+		CreateInvItems (slf, ItWr_ShatteredGolem_MIS, 1); //Hoshi: Karte Ã¼ber einen Schatz bei den MayaRuinen 
 		CreateInvItems (slf, ItWr_Map_Newworld, 1); 
 		CreateInvItems (slf, ItWr_Map_Oldworld, 1); 
 		CreateInvItems (slf, ItMi_Gold, 50); 

@@ -177,7 +177,7 @@ func void DIA_Peck_WEAPON_Info ()
 			B_GiveInvItems 		(self, hero	, ItMw_Schwert1, 1); // edles Schwert 35
 	
 		}
-		else if (MIS_Andre_Peck == LOG_SUCCESS) // ist schon korrekt, das SUCCESS gilt für Andre M.F.
+		else if (MIS_Andre_Peck == LOG_SUCCESS) // ist schon korrekt, das SUCCESS gilt fÃ¼r Andre M.F.
 		{
 			AI_Output (self, other, "DIA_Peck_WEAPON_12_04"); //I haven't forgotten you. Who told Andre that I was in the Red Lantern, then?
 			AI_Output (self, other, "DIA_Peck_WEAPON_12_05"); //And now you want a blade from me ... all right, you'll get a blade. Here. And now drop dead.

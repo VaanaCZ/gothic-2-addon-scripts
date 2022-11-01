@@ -32,7 +32,7 @@ FUNC VOID DIA_DiegoNW_EXIT_Info()
 
 
 // ************************************************************
-// 	  	  Wie laufen die Geschäfte? (perm)
+// 	  	  Wie laufen die GeschÃ¤fte? (perm)
 // ************************************************************
 
 INSTANCE DIA_DiegoNW_Perm(C_INFO)
@@ -702,7 +702,7 @@ func void DIA_DiegoNW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_DiegoNW_StillNeedYou		(C_INFO)
 {

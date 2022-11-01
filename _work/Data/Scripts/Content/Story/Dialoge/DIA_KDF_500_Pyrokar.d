@@ -376,7 +376,7 @@ func void DIA_Pyrokar_SUCCESS_Info ()
 	B_GivePlayerXP (XP_SCHNITZELJAGD);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info PERM wenn Pr¸fung erfolgreich und die anderen noch nicht. 
+//	Info PERM wenn Pr√ºfung erfolgreich und die anderen noch nicht. 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pyrokar_Todo		(C_INFO)
 {
@@ -487,7 +487,7 @@ func void DIA_Pyrokar_OATH_Info ()
 	
 	Npc_SetTrueGuild (other, GIL_KDF);
 	
-	Fire_Contest = TRUE;//f¸rs Log
+	Fire_Contest = TRUE;//f√ºrs Log
 	
 	Snd_Play ("LEVELUP"); 
 	
@@ -1122,8 +1122,8 @@ func void DIA_Pyrokar_GIVEINNOSEYE_wer ()
 	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_07"); //Pedro has forced his way into our most sacred halls, and stolen the Eye.
 	AI_Output			(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_08"); //I fear that he simply spent too much time by himself, outside of the gates and thus beyond the protective walls of the monastery, exposed to all lurking dangers.
 
-	Pedro.flags = 0;	//Joly: Pedro ist nun mortal und zum Abschuﬂ freigegeben.
-	Pedro_Traitor = TRUE;	//Joly: Pedro ist f¸r den SC nun als Traitor bekannt. Muﬂ hier stehen bleiben und darf nur einmal auf True gesetzt werden
+	Pedro.flags = 0;	//Joly: Pedro ist nun mortal und zum Abschu√ü freigegeben.
+	Pedro_Traitor = TRUE;	//Joly: Pedro ist f√ºr den SC nun als Traitor bekannt. Mu√ü hier stehen bleiben und darf nur einmal auf True gesetzt werden
 
  	B_LogEntry (TOPIC_INNOSEYE, "Great. I might have known. I'm too late, those numskulls at the monastery let some novice steal the Eye from them, and now I can go running after the traitor Pedro and just hope he doesn't go and sell it to someone.");
  	B_LogEntry (TOPIC_TraitorPedro, "The traitor Pedro stole the Eye of Innos from the monastery. I reckon the Fire Magicians would be only too happy to get their hands on him.");
@@ -1475,7 +1475,7 @@ func void DIA_Pyrokar_KAP3_READY_Info ()
 	B_GiveInvItems (self, other, ItMi_InnosEye_MIS,1);
 	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_02"); //Bear in mind that you need to talk to a dragon first before you can attack it.
 	//AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_03"); //Das Auge wird dir helfen, die Drachen dazu zu zwingen, mit dir zu reden.
-	//AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_04"); //Es bietet dir nicht nur Schutz gegen ihre Angriffe, es f¸gt ihnen auch unertr‰gliche Schmerzen zu, wenn du es bei dir tr‰gst.
+	//AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_04"); //Es bietet dir nicht nur Schutz gegen ihre Angriffe, es f√ºgt ihnen auch unertr√§gliche Schmerzen zu, wenn du es bei dir tr√§gst.
 	AI_Output (self ,other, "DIA_Pyrokar_Add_11_01"); //The power of the Eye will force the dragons to speak to you and tell the truth.
 	AI_Output (self ,other, "DIA_Pyrokar_Add_11_02"); //Furthermore, it offers protection against their attacks when you wear it.
 	AI_Output			(self, other, "DIA_Pyrokar_KAP3_READY_11_05"); //However, its power does not last. You will have to fill it up again with magical energy.
@@ -1689,7 +1689,7 @@ func void DIA_Pyrokar_AlmanachBringen_Info ()
 	var int AlmanachGeld;
 	var int PyrokarsAlmanachOffer;
 	
-	PyrokarsAlmanachOffer = 400;	//Joly: Gold f¸r einen Almanach
+	PyrokarsAlmanachOffer = 400;	//Joly: Gold f√ºr einen Almanach
 	
 	AlmanachCount = Npc_HasItems(other, ITWR_DementorObsessionBook_MIS);
 

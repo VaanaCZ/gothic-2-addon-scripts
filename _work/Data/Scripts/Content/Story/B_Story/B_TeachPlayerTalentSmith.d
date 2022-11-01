@@ -32,19 +32,19 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I don't need any more Ingredients for the ´Self-forged Sword´.                     ");};
+	B_LogEntry (TOPIC_TalentSmith,"I don't need any more Ingredients for the Â´Self-forged SwordÂ´.                     ");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I need 1 ore nugget to forge an ´Ore Longsword´.                              ");};
+	B_LogEntry (TOPIC_TalentSmith,"I need 1 ore nugget to forge an Â´Ore LongswordÂ´.                              ");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I need 2 ore nuggets to forge an ´Ore Two-Hander´.                            ");};
+	B_LogEntry (TOPIC_TalentSmith,"I need 2 ore nuggets to forge an Â´Ore Two-HanderÂ´.                            ");};
 	if (waffe == WEAPON_1H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I need 2 ore nuggets to forge an ´Ore Bastard Sword´.                         ");};
+	B_LogEntry (TOPIC_TalentSmith,"I need 2 ore nuggets to forge an Â´Ore Bastard SwordÂ´.                         ");};
 	if (waffe == WEAPON_2H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I need 3 ore nuggets to forge a ´Heavy Ore Two-Hander´.                       ");};
+	B_LogEntry (TOPIC_TalentSmith,"I need 3 ore nuggets to forge a Â´Heavy Ore Two-HanderÂ´.                       ");};
 	if (waffe == WEAPON_1H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I need 3 ore nuggets to forge an ´Ore Battle Blade´.                          ");};
+	B_LogEntry (TOPIC_TalentSmith,"I need 3 ore nuggets to forge an Â´Ore Battle BladeÂ´.                          ");};
 	if (waffe == WEAPON_2H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I need 4 ore nuggets to forge an ´Heavy Ore Battle Blade´. ");};
+	B_LogEntry (TOPIC_TalentSmith,"I need 4 ore nuggets to forge an Â´Heavy Ore Battle BladeÂ´. ");};
 	if (waffe == WEAPON_1H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04] 	= TRUE;	
 	B_LogEntry (TOPIC_TalentSmith,"If I add 4 units of ore and 5 of dragon blood, I can forge an ORE DRAGON SLAYER.");};
 	if (waffe == WEAPON_2H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_04] 	= TRUE;	

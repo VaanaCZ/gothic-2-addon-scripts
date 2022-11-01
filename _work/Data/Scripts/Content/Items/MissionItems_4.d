@@ -1,6 +1,6 @@
 
-const int Value_Dragonegg 		= 200;//Joly: nicht ‰ndern
-const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
+const int Value_Dragonegg 		= 200;//Joly: nicht √§ndern
+const int Value_OrcEliteRing 	= 130;//Joly: nicht √§ndern
 /******************************************************************************************/
 // Angars Amulett
 /******************************************************************************************/
@@ -149,7 +149,7 @@ INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 };
 
 
-//Tabins Lurkerh‰ute von Engrom
+//Tabins Lurkerh√§ute von Engrom
 
 INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 {
@@ -172,7 +172,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Drachen-Ei	(f¸r DJG only Ambient auftrag)
+//	Drachen-Ei	(f√ºr DJG only Ambient auftrag)
 //---------------------------------------------------------------------
 INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 {	
@@ -195,7 +195,7 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 };
 
 //---------------------------------------------------------------------
-//	OrcEliteRing (f¸r PAL only Ambient auftrag)
+//	OrcEliteRing (f√ºr PAL only Ambient auftrag)
 //---------------------------------------------------------------------
 
 INSTANCE ItRi_OrcEliteRing(C_Item)
@@ -203,7 +203,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 	name 					=	"Ring of the Orcish Warlords";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
-	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muﬂ so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
+	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Mu√ü so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
 
 	value 					=	Value_OrcEliteRing;
 

@@ -181,7 +181,7 @@ func void DIA_Brian_OtherMasters_Info ()
 
 
 // *****************************************************
-// 					Über Meister Harad
+// 					Ãœber Meister Harad
 // *****************************************************
 instance DIA_Brian_AboutHarad (C_INFO)
 {
@@ -329,7 +329,7 @@ FUNC VOID DIA_Brian_KAP3_EXIT_Info()
 
 
 //*********************************************************************
-//	Kannst du auch Schmuckstücke reparieren?
+//	Kannst du auch SchmuckstÃ¼cke reparieren?
 //*********************************************************************
 instance DIA_Brian_RepairNecklace		(C_INFO)
 {

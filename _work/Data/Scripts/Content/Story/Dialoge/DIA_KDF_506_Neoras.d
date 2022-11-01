@@ -389,7 +389,7 @@ FUNC VOID DIA_Neoras_BrewPotion_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Was brauche ich für einen...
+//	Was brauche ich fÃ¼r einen...
 ///////////////////////////////////////////////////////////////////////
 /*
 INSTANCE DIA_Neoras_Ingrediences   (C_INFO)
@@ -399,7 +399,7 @@ INSTANCE DIA_Neoras_Ingrediences   (C_INFO)
 	condition   = DIA_Neoras_Ingrediences_Condition;
 	information = DIA_Neoras_Ingrediences_Info;
 	permanent   = TRUE;
-	description = "Welche Zutaten brauche ich für...";
+	description = "Welche Zutaten brauche ich fÃ¼r...";
 };
 FUNC INT DIA_Neoras_Ingrediences_Condition()
 {
@@ -425,29 +425,29 @@ FUNC VOID DIA_Neoras_Ingrediences_Back ()
 
 FUNC VOID DIA_Neoras_Ingrediences_Speed ()
 {
-	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Speed_15_00"); //Welche Zutaten brauche ich für einen Trank der Geschwindigkeit?
-	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Speed_01_01"); //Für einen Trank, der dich schneller macht, brauche ich fünfmal so genanntes Snapperkraut und einen Kronstöckel.
+	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Speed_15_00"); //Welche Zutaten brauche ich fÃ¼r einen Trank der Geschwindigkeit?
+	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Speed_01_01"); //FÃ¼r einen Trank, der dich schneller macht, brauche ich fÃ¼nfmal so genanntes Snapperkraut und einen KronstÃ¶ckel.
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Speed_01_02"); //Und vergiss das Gold nicht.
 };
 
 FUNC VOID DIA_Neoras_Ingrediences_Mana ()
 {
-	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Mana_15_00"); //Welche Zutaten brauche ich für ein Mana-Extrakt?
+	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Mana_15_00"); //Welche Zutaten brauche ich fÃ¼r ein Mana-Extrakt?
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Mana_01_01"); //Ein Manatrank ist nicht wirklich kompliziert.
-	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Mana_01_02"); //Du musst mir fünfmal Feuerkraut und einen Feldknöterich bringen.
+	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Mana_01_02"); //Du musst mir fÃ¼nfmal Feuerkraut und einen FeldknÃ¶terich bringen.
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Mana_01_03"); //Und vergiss das Gold nicht.
 };
 
 FUNC VOID DIA_Neoras_Ingrediences_Health ()
 {
-	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Health_15_00"); //Welche Zutaten brauche ich für ein Extrakt der Heilung?
+	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Health_15_00"); //Welche Zutaten brauche ich fÃ¼r ein Extrakt der Heilung?
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Health_01_01"); //So ein Trank ist nicht besonders kompliziert.
-	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Health_01_02"); //Du musst mir nur fünf Heilkräuter und einen Feldknöterich bringen.
+	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Health_01_02"); //Du musst mir nur fÃ¼nf HeilkrÃ¤uter und einen FeldknÃ¶terich bringen.
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Health_01_03"); //Und vergiss das Gold nicht.
 };
 */
 ///////////////////////////////////////////////////////////////////////
-//	Braue mir einen Trank //Ist Perm für KAp 3,4 und 5!!
+//	Braue mir einen Trank //Ist Perm fÃ¼r KAp 3,4 und 5!!
 ///////////////////////////////////////////////////////////////////////
 
 INSTANCE DIA_Neoras_BrewForMe   (C_INFO)

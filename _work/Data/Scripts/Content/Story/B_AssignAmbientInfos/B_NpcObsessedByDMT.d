@@ -28,7 +28,7 @@ func void B_DMTWurm ()
 // B_NpcClearObsessionByDMT	steht bei allen NSCs statt der AI_StopProcessInfos (self);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT muﬂ in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
+func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT mu√ü in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
 {														
 	AI_StopProcessInfos	(medium);
 
@@ -146,7 +146,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 				NpcObsessedByDMT_Randolph = TRUE;
 			}	
 				
-			else //Joly: f¸r alle anderen
+			else //Joly: f√ºr alle anderen
 			{
 				B_DMTWurm ();
 				if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Bromor))

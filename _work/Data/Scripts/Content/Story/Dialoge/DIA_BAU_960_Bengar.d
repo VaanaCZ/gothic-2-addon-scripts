@@ -395,7 +395,7 @@ func void DIA_Bengar_MILIZ_Info ()
 };
 
 // ************************************************************
-// 			  				Selber vorknöpfen
+// 			  				Selber vorknÃ¶pfen
 // ************************************************************
 instance DIA_Bengar_Selber (C_INFO)
 {

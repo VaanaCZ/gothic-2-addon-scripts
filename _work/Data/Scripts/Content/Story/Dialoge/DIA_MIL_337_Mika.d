@@ -128,7 +128,7 @@ func void DIA_Mika_WASGEFAEHRLICH_Info ()
 {
 	AI_Output			(other, self, "DIA_Mika_WASGEFAEHRLICH_15_00"); //What's so dangerous out here?
 	AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_01"); //Many things.
-	if (other.protection[PROT_EDGE]	< ITAR_Leather_L.protection [PROT_EDGE])	//Joly: kleiner als die Lederrüstung
+	if (other.protection[PROT_EDGE]	< ITAR_Leather_L.protection [PROT_EDGE])	//Joly: kleiner als die LederrÃ¼stung
 	{
 		AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_02"); //For one thing, there's the bandits. They'd polish off a little wimp like you for breakfast.
 		AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_03"); //If the bandits don't catch you, then the wild animals in the forest or the mercenaries roaming around will take care of you.
@@ -339,7 +339,7 @@ func void DIA_Mika_Zack_Info ()
 func void DIA_Mika_Zack_los ()
 {
 	AI_StopProcessInfos (self);
-	//Joly: B_attack funzt hier nicht und ist auch nicht nötig!!!!!!!!!!!
+	//Joly: B_attack funzt hier nicht und ist auch nicht nÃ¶tig!!!!!!!!!!!
 	if(!Npc_IsDead (Alvares))
 	{
 		Alvares.aivar[AIV_EnemyOverride] = FALSE;

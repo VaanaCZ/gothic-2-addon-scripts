@@ -1,6 +1,6 @@
 FUNC INT B_GoldMob_Bestimmung()
 {
-	//bin ich mobsi X und habe ich noch Gold übrig?
+	//bin ich mobsi X und habe ich noch Gold Ã¼brig?
 	if Hlp_StrCmp (Npc_GetNearestWP (self), "ADW_MINE_PICK_01") && (GoldMob_01_Amount_MAX > GoldMob_01_Amount)
 	{
 		GoldMob_01_Amount = (GoldMob_01_Amount +1);
@@ -233,7 +233,7 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 	};
 };
 //*******************************************************
-//	Goldhacken Trümmerschlag
+//	Goldhacken TrÃ¼mmerschlag
 //*******************************************************
 INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 {
@@ -319,15 +319,15 @@ FUNC VOID PC_Goldhacken_Addon_Chance_Info()
 	
 	if (Hero_HackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("blutiger Anfänger (", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("blutiger AnfÃ¤nger (", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("ganz passabler Schürfer (" , IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("ganz passabler SchÃ¼rfer (" , IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("erfahrener Goldschürfer (", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("erfahrener GoldschÃ¼rfer (", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 75) 
 	{

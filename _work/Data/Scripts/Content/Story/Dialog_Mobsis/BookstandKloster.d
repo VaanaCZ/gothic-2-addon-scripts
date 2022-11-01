@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------
-//				Weitere Buchständer in der Magierbibliothek
+//				Weitere BuchstÃ¤nder in der Magierbibliothek
 //-------------------------------------------------------------------------------------
 //				Runensteine 
 //-------------------------------------------------------------------------------------
@@ -396,7 +396,7 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 	};
 };  					
 //-------------------------------------------------------------------------------------
-//				Runen des fünften Kreises und ihre Ingredenzien
+//				Runen des fÃ¼nften Kreises und ihre Ingredenzien
 //-------------------------------------------------------------------------------------
 FUNC VOID Use_Bookstand_Kreise_05_S1()		
 {

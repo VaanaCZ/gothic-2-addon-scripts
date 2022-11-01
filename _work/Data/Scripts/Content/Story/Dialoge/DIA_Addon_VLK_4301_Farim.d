@@ -281,7 +281,7 @@ func void DIA_Addon_Farim_William_WasGemacht ()
 	AI_Output			(other, self, "DIA_Addon_Farim_William_WasGemacht_15_00"); //What's he been up to?
 	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_01"); //William had some shady dealings with those crooks.
 	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_02"); //I think it was all about contraband that he sold to the bastards.
-	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, weiﬂ ich nicht, was er stattdessen f¸r sie gemacht hat.
+	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, wei√ü ich nicht, was er stattdessen f√ºr sie gemacht hat.
 };
 func void DIA_Addon_Farim_William_typen ()
 {

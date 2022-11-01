@@ -29,7 +29,7 @@ FUNC VOID DIA_Xardas_FirstEXIT_Info()
 	
 	AI_StopProcessInfos	(self);
 	
-	B_Kapitelwechsel (1, NEWWORLD_ZEN);	//Joly: muß auf jeden Fall hier kommen. Allein schon wegen XP_AMBIENT!
+	B_Kapitelwechsel (1, NEWWORLD_ZEN);	//Joly: muÃŸ auf jeden Fall hier kommen. Allein schon wegen XP_AMBIENT!
 	
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -216,7 +216,7 @@ func int DIA_Addon_Xardas_StonePlate_Condition ()
 func void DIA_Addon_Xardas_StonePlate_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Xardas_StonePlate_15_00"); //Can you tell me anything about this stone tablet?
-	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_01"); //Ich habe so eine unten in der Höhlen vor meinem Turm gefunden.
+	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_01"); //Ich habe so eine unten in der HÃ¶hlen vor meinem Turm gefunden.
 	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_02"); //Sie sind in einer seltsam alten Sprache geschrieben, die ich in dieser Form noch nirgendwo gesehen habe.
 	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_03"); //First I suspected it might be a magical artifact, but I finally concluded that it is not of any great significance.
 	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_04"); //I have not been able to decode the meaning of this tablet entirely, but it seems to concern the history of a very old culture.
@@ -1038,8 +1038,8 @@ func void DIA_Xardas_PYROWILLNICHT_Info ()
 	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_02"); //Ah really. Pyrokar. How interesting.
 	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_03"); //That old geezer is getting to be a nuisance. But I think I've got something for you that will be useful.
 	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_04"); //Back when I left the Order of the Fire Magicians, I took a few things with me from the monastery.
-	//AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_05"); //Jetzt, da ich meinen Turm so nahe der Stadt errichtet habe, muss ich ständig damit rechnen, dass jemand hierher kommt, um danach zu suchen.
-	//"hier" passt nicht, weil Xardas am Steinkreis stehen könnte - Satz ist eh überflüssig
+	//AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_05"); //Jetzt, da ich meinen Turm so nahe der Stadt errichtet habe, muss ich stÃ¤ndig damit rechnen, dass jemand hierher kommt, um danach zu suchen.
+	//"hier" passt nicht, weil Xardas am Steinkreis stehen kÃ¶nnte - Satz ist eh Ã¼berflÃ¼ssig
 	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_06"); //I didn't want a troop of paladins or Fire Magicians to turn my tower upside down at some point, and find all those things.
 	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_07"); //So I hid them in safe places where the magicians would certainly never look for them.
 	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_08"); //And where?

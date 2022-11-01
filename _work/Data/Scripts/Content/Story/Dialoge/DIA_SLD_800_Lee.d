@@ -215,7 +215,7 @@ FUNC VOID DIA_Lee_PETZMASTER_Info()
 				};
 	
 	
-	Lee_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Lee_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hÃ¶her ist...
 	
 	// ------ SC hat mit Lee noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
@@ -229,7 +229,7 @@ FUNC VOID DIA_Lee_PETZMASTER_Info()
 		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_02"); //It is good that you have come to me before everything becomes even worse for you.
 		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_03"); //The mercenaries are tough lads and the farmers here aren't exactly squeamish, but you can't just go around killing people.
 		Lee_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Lee_Schulden = Lee_Schulden + 500;						//PLUS Mörder-Malus
+		Lee_Schulden = Lee_Schulden + 500;						//PLUS MÃ¶rder-Malus
 		if ((PETZCOUNTER_Farm_Theft + PETZCOUNTER_Farm_Attack + PETZCOUNTER_Farm_Sheepkiller) > 0)
 		{
 			AI_Output (self, other, "DIA_Lee_PETZMASTER_04_04"); //To say nothing of the other mischief you've done here.
@@ -267,7 +267,7 @@ FUNC VOID DIA_Lee_PETZMASTER_Info()
 		Lee_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
+	// ------ Schaf getÃ¶tet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
 		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_16"); //Onar expects me to protect his farm. And that includes his sheep.
@@ -1925,7 +1925,7 @@ func int DIA_Lee_StealShip_Condition ()
 {	
 	if (Npc_KnowsInfo (other,DIA_Lee_GetShip))
 	&& (hero.guild == GIL_DJG)
-	&& (MIS_RichtersPermissionForShip == 0)	//Joly: kein Richter Erpressen nötig!
+	&& (MIS_RichtersPermissionForShip == 0)	//Joly: kein Richter Erpressen nÃ¶tig!
 	{
 		return TRUE;
 	};	
@@ -2057,7 +2057,7 @@ func void DIA_Lee_LeaveMyShip_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lee_StillNeedYou		(C_INFO)
 {
@@ -2070,7 +2070,7 @@ instance DIA_Lee_StillNeedYou		(C_INFO)
 };
 func int DIA_Lee_StillNeedYou_Condition ()
 {	
-	if ((Lee_IsOnBOard == LOG_OBSOLETE)		//Hier braucht man natürlich nur eine variable abfragen
+	if ((Lee_IsOnBOard == LOG_OBSOLETE)		//Hier braucht man natÃ¼rlich nur eine variable abfragen
 	|| (Lee_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{

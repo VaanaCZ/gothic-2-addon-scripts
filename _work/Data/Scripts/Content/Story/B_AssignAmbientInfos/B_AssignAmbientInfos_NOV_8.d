@@ -187,7 +187,7 @@ FUNC VOID DIA_NOV_8_LOCATION_Info()
 	AI_Output (other, self, "DIA_NOV_8_LOCATION_15_00"); //Tell me about this monastery.
 	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_01"); //It is ancient. It comes from the time before Rhobar the First.
 	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_02"); //Under the monastery are the catacombs. They stretch deep into the mountain.
-	//AI_Output (self, other, "DIA_NOV_8_LOCATION_08_03"); //Aber zur untersten Ebene haben nur die höchsten Geweihten Innos' Zutritt.
+	//AI_Output (self, other, "DIA_NOV_8_LOCATION_08_03"); //Aber zur untersten Ebene haben nur die hÃ¶chsten Geweihten Innos' Zutritt.
 };
 
 // *************************************************************************

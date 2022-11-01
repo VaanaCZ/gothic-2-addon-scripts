@@ -236,7 +236,7 @@ func void DIA_Zuris_Kraut_Info ()
 };
 
 // **************************************************
-//					 Kronstöckel
+//					 KronstÃ¶ckel
 // **************************************************
 
 instance DIA_Zuris_Kronstoeckel (C_INFO)

@@ -154,7 +154,7 @@ FUNC VOID DIA_Addon_Paul_HunoVerdacht_Info()
 };
 	
 //---------------------------------------------------------------------
-//	Arbeitest für Huno
+//	Arbeitest fÃ¼r Huno
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Paul_HunoArbeit (C_INFO)
 {

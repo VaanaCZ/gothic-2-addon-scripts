@@ -1,9 +1,9 @@
 // ***************************************************************
 // B_InitMonsterAttitudes
 // ---------------------- 
-// Setzt die Monster/Monster-Attitüden
-// und Monster/Mensch-(Mensch/Monster)-Attitüden 
-// Alle Menschen werden gesammelt über GIL_SEPERATOR_HUM angegeben
+// Setzt die Monster/Monster-AttitÃ¼den
+// und Monster/Mensch-(Mensch/Monster)-AttitÃ¼den 
+// Alle Menschen werden gesammelt Ã¼ber GIL_SEPERATOR_HUM angegeben
 // ***************************************************************
 
 func void B_InitMonsterAttitudes ()
@@ -559,7 +559,7 @@ func void B_InitMonsterAttitudes ()
 	B_SetMonsterAttitude	(GIL_WARAN,	ATT_NEUTRAL, 	GIL_SummonedZombie			);
 
 
-	// ------ Wölfe zu allen anderen ------
+	// ------ WÃ¶lfe zu allen anderen ------
 	B_SetMonsterAttitude	(GIL_WOLF,	ATT_HOSTILE,	GIL_SEPERATOR_HUM			);
 	B_SetMonsterAttitude	(GIL_WOLF,	ATT_NEUTRAL,	GIL_DMT						);
 	B_SetMonsterAttitude	(GIL_WOLF,	ATT_NEUTRAL,	GIL_MEATBUG					);
@@ -1854,7 +1854,7 @@ func void B_InitMonsterAttitudes ()
 	B_SetMonsterAttitude	(GIL_SWAMPGOLEM,	ATT_HOSTILE, 	GIL_SummonedGuardian		);
 	B_SetMonsterAttitude	(GIL_SWAMPGOLEM,	ATT_HOSTILE, 	GIL_SummonedZombie			);
 	
-	// ------ Steinwächtern zu allen anderen ------
+	// ------ SteinwÃ¤chtern zu allen anderen ------
 	B_SetMonsterAttitude	(GIL_STONEGUARDIAN,	ATT_HOSTILE,	GIL_SEPERATOR_HUM			);
 	B_SetMonsterAttitude	(GIL_STONEGUARDIAN,	ATT_NEUTRAL,	GIL_DMT						);
 	B_SetMonsterAttitude	(GIL_STONEGUARDIAN,	ATT_NEUTRAL,	GIL_MEATBUG					);

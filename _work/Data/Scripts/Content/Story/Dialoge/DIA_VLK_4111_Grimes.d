@@ -208,12 +208,12 @@ func void DIA_Grimes_PICKPOCKET_BACK()
 
 
 /*
-	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen müssen.  
+	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen mÃ¼ssen.  
 	Ich habe ihn gefunden. 
-	Er hält sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
+	Er hÃ¤lt sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
 	Innos sei dank...
 	
 	Nein, bisher nicht. 
-	Dann hoffe ich, das er ein Versteck für sich und das Erz gefunden hat.
+	Dann hoffe ich, das er ein Versteck fÃ¼r sich und das Erz gefunden hat.
 */
 

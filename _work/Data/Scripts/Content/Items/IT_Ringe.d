@@ -219,7 +219,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //Höhle OW//PassNW bei den Orks
+	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //HÃ¶hle OW//PassNW bei den Orks
 {
 	name 					=	NAME_Ring;
 
@@ -356,7 +356,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordhütte OW
+	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordhÃ¼tte OW
 {
 	name 					=	NAME_Ring;
 
@@ -561,7 +561,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW Nähe Alter DT
+	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW NÃ¤he Alter DT
 {
 	name 					=	NAME_Ring;
 

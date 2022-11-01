@@ -44,7 +44,7 @@ func void B_Video()
 	AI_Output (self, other, "OUTRO_Xardas_14_11"); //And I am only just beginning to grasp what options are open to me...
 	AI_Output (self, other, "OUTRO_Xardas_14_12"); //But one thing is certain. We SHALL meet again ...
 	
-	// ------ Outro Xardas Kapit‰n ------
+	// ------ Outro Xardas Kapit√§n ------
 	AI_Output (self, other, "OUTRO_Xardas_04_00"); //(calls) Cast off!
 	
 	// ------ Drachenangriff ------

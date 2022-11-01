@@ -258,7 +258,7 @@ FUNC VOID DIA_Addon_Senyan_Attentat_JA()
 };
 
 //----------------------------------------------------------------------
-//	Anders Überlegt
+//	Anders Ãœberlegt
 //----------------------------------------------------------------------
 INSTANCE DIA_Addon_Senyan_ChangePlan   (C_INFO)
 {

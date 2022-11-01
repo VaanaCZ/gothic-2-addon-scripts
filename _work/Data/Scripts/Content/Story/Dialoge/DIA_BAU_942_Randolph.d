@@ -161,17 +161,17 @@ func void DIA_Randolph_Geschichte_Info ()
 };
 /*
 	Du kommst nicht aus der Gegend, richtig? 
-	Ich komme von den südlichen Inseln. Irgendwann hieß es, sie bräuchten Leute in Khorinis, wegen dem magischen Erz. 
+	Ich komme von den sÃ¼dlichen Inseln. Irgendwann hieÃŸ es, sie brÃ¤uchten Leute in Khorinis, wegen dem magischen Erz. 
 	Aber als ich ankam war da diese riesige Barriere. Und da wollte ich nicht rein. Ich hab dann angefangen im Hafen zu arbeiten. 
 	Und seitdem keine Schiffe mehr kommen, bin ich halt zu Akil gegangen. Naja, ich hab schon schlechtere Jobs gemacht.  
 	
 	
 	Hey, ich kenne da noch jemanden, der dir ein paar Sachen besorgen kann. 
-	Ein Freund, der mit mir zusammen aus dem Süden gekommen ist. 
-	Aber ich brauche 10 Goldmünzen, um beim Wett - Trinken in der Taverne mitzumachen.  
+	Ein Freund, der mit mir zusammen aus dem SÃ¼den gekommen ist. 
+	Aber ich brauche 10 GoldmÃ¼nzen, um beim Wett - Trinken in der Taverne mitzumachen.  
 	Also wenn du die Info willst, dann gib mir das Gold. 
 	
-//Wenn du die Taverne suchst dann geh einfach über die Brücke und folge dem Weg, dann kommst direkt daran vorbei.
+//Wenn du die Taverne suchst dann geh einfach Ã¼ber die BrÃ¼cke und folge dem Weg, dann kommst direkt daran vorbei.
 */
 ///////////////////////////////////////////////////////////////////////
 //	Info Taverne

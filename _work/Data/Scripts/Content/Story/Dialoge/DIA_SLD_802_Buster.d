@@ -42,7 +42,7 @@ INSTANCE DIA_Buster_Hello (C_INFO)
 
 FUNC INT DIA_Buster_Hello_Condition()
 {
-	if (self.aivar[AIV_LastFightAgainstPlayer] != FIGHT_LOST) //Wegen News - Info kommt nicht mehr gut, wenn schonmal geprügelt
+	if (self.aivar[AIV_LastFightAgainstPlayer] != FIGHT_LOST) //Wegen News - Info kommt nicht mehr gut, wenn schonmal geprÃ¼gelt
 	&& ((hero.guild != GIL_SLD) && (hero.guild != GIL_DJG))
 	{
 		return TRUE;
@@ -343,7 +343,7 @@ FUNC VOID DIA_Buster_WannaJoin_Info()
 };
 
 // ************************************************************
-// 		  				 Mehr über Söldner		
+// 		  				 Mehr Ã¼ber SÃ¶ldner		
 // ************************************************************
 var int Buster_SentenzaTip;
 

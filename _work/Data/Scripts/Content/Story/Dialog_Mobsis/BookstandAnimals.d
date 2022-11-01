@@ -14,7 +14,7 @@ var int Animals_2_permanent;
 var int Animals_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals1_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -63,7 +63,7 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 	};
 };
 
-FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals2_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -112,7 +112,7 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 	};
 };
 
-FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals3_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	

@@ -1,5 +1,5 @@
 //****************************
-// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis Onars Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis Onars Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 {
@@ -21,7 +21,7 @@ func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis Lobarts Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis Lobarts Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 {
@@ -36,7 +36,7 @@ func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis im Medium Forest) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis im Medium Forest) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 {

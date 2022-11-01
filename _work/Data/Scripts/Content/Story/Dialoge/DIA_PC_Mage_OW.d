@@ -162,7 +162,7 @@ FUNC VOID DIA_MiltenOW_Erz_Info()
 	
 };
 /*	
-	Diesen Blick kenne ich, den hattest Du auch kurz bevor Du in den Schläfertempel gegangen bist.
+	Diesen Blick kenne ich, den hattest Du auch kurz bevor Du in den SchlÃ¤fertempel gegangen bist.
 */
 // ************************************************************
 // 		Wo sind Gorn und Diego?	  				  
@@ -228,7 +228,7 @@ FUNC VOID DIA_MiltenOW_Gorn_Info()
 	B_LogEntry (TOPIC_RescueGorn,"Comander Garond has had Gorn locked up. Maybe he'll enter into a little arrangement, so we can bail him out.");
 };
 // ************************************************************
-// 		Garond will tausend Goldstücke			  
+// 		Garond will tausend GoldstÃ¼cke			  
 // ************************************************************
 INSTANCE DIA_MiltenOW_Preis(C_INFO)
 {
@@ -291,7 +291,7 @@ FUNC VOID DIA_MiltenOW_Mehr_Info()
 	B_LogEntry (TOPIC_RescueGorn,"Milten has given me a message for Gorn. If I can just smuggle it into the jail, he may be able to tell us whether he's got any gold stashed away somewhere.");
 };
 // ************************************************************
-// 		Ausrüstung				  
+// 		AusrÃ¼stung				  
 // ************************************************************
 INSTANCE DIA_MiltenOW_Equipment(C_INFO)
 {
@@ -315,10 +315,10 @@ FUNC VOID DIA_MiltenOW_Equipment_Info()
 {	
 	AI_Output (other,self ,"DIA_MiltenOW_Equipmentt_15_00");//Can you give me some equipment? Garond has asked me to go to the mining sites.
 	AI_Output (self ,other,"DIA_MiltenOW_Equipment_03_01");//Where am I supposed to get that? The only thing I can give you is a valuable runestone.
-	//AI_Output (self ,other,"DIA_MiltenOW_Equipmentt_03_02");//Hier stehen zwar noch ein paar Truhen rum, aber ich kann die Schlösser nicht öffnen.  
+	//AI_Output (self ,other,"DIA_MiltenOW_Equipmentt_03_02");//Hier stehen zwar noch ein paar Truhen rum, aber ich kann die SchlÃ¶sser nicht Ã¶ffnen.  
 	
 	B_GiveInvItems (self,other, ItMI_RuneBlank,1);
-	//Schlüssel auf FP inserten
+	//SchlÃ¼ssel auf FP inserten
 };	
 
 //***********************

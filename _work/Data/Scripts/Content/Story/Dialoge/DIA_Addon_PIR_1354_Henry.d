@@ -352,7 +352,7 @@ func void DIA_Addon_Henry_Einigen_Info ()
 };
 
 // ------------------------------------------------------------
-// 		  			Grund 1 - Fleisch für Morgan
+// 		  			Grund 1 - Fleisch fÃ¼r Morgan
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Henry_MeatForMorgan(C_INFO)
 {
@@ -412,7 +412,7 @@ func void DIA_Addon_Henry_Malcom_Info ()
 };
 
 // ------------------------------------------------------------
-// 		  			Grund 3 - Paket für Skip
+// 		  			Grund 3 - Paket fÃ¼r Skip
 // ------------------------------------------------------------
 instance DIA_Addon_Henry_BaltramPack		(C_INFO)
 {
@@ -1171,6 +1171,6 @@ func VOID DIA_Addon_Henry_YourOwnTrupp_Info()
 
 
 /*
-AI_Output (other,self ,"DIA_Addon_Henry_HenrysCrew_15_00"); //Wer gehört zu deinem Trupp?
+AI_Output (other,self ,"DIA_Addon_Henry_HenrysCrew_15_00"); //Wer gehÃ¶rt zu deinem Trupp?
 AI_Output (other,self ,"DIA_Addon_Henry_Morgan_15_00"); //Wo finde ich Morgan?
 */

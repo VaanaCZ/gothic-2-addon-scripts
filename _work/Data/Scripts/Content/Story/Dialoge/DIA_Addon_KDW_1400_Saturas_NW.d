@@ -98,14 +98,14 @@ func int DIA_Addon_Saturas_Hallo_Condition ()
 		return TRUE;
 	};
 };
-func void DIA_Addon_Saturas_Hallo_weißtdu ()
+func void DIA_Addon_Saturas_Hallo_weiÃŸtdu ()
 {
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_00"); //Do you have the slightest idea what you have done?
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_01"); //You have confused the structure of magic so much that it could be heard back in Khorinis.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_02"); //Count yourself lucky that the Barrier simply collapsed one day.
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_weißtdu_15_03"); //What are you complaining about? It all worked out all right.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_04"); //(ranting) Mind your tongue!
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_05"); //(boiling) What the blazes do you want here anyway?
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_00"); //Do you have the slightest idea what you have done?
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_01"); //You have confused the structure of magic so much that it could be heard back in Khorinis.
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_02"); //Count yourself lucky that the Barrier simply collapsed one day.
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_15_03"); //What are you complaining about? It all worked out all right.
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_04"); //(ranting) Mind your tongue!
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_05"); //(boiling) What the blazes do you want here anyway?
 	Info_ClearChoices	(DIA_Addon_Saturas_Hallo);
 
 };
@@ -137,7 +137,7 @@ func void DIA_Addon_Saturas_Hallo_notwendig ()
 {
 	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_notwendig_15_00"); //It was necessary. Without the power of the ore, I could never have defeated the Sleeper.
 	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_notwendig_14_01"); //(angry) What sort of drivel is that? Sleeper? Defeated?
-	DIA_Addon_Saturas_Hallo_weißtdu ();
+	DIA_Addon_Saturas_Hallo_weiÃŸtdu ();
 };
 
 func void DIA_Addon_Saturas_Hallo_Spott ()
@@ -146,14 +146,14 @@ func void DIA_Addon_Saturas_Hallo_Spott ()
 	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_01"); //Ultimately, you would have blown yourselves sky high.
 	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_02"); //(angry) That is the limit! Who gave you the right to judge us and our intentions?
 	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_03"); //If I were not such a peaceful man, I would bring down the wrath of Adanos on you, my boy.
-	DIA_Addon_Saturas_Hallo_weißtdu ();
+	DIA_Addon_Saturas_Hallo_weiÃŸtdu ();
 };
 
 func void DIA_Addon_Saturas_Hallo_sorry ()
 {
 	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_sorry_15_00"); //I'm sorry. I didn't know what I was doing.
 	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_sorry_14_01"); //Oh? And you think that settles it?
-	DIA_Addon_Saturas_Hallo_weißtdu ();
+	DIA_Addon_Saturas_Hallo_weiÃŸtdu ();
 };
 
 
@@ -293,7 +293,7 @@ func void DIA_Addon_Saturas_Ornament_Info ()
 	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_06"); //(sighs) And what did it ultimately get me? Mpfh, just don't think that I trust you...
 	MIS_Addon_Lares_Ornament2Saturas = LOG_SUCCESS;
 
-	//Joly: Monster auffüllen, die bei Lares gestört haben
+	//Joly: Monster auffÃ¼llen, die bei Lares gestÃ¶rt haben
 	Wld_InsertNpc 	(Bloodfly, 	"FP_ROAM_NW_TROLLAREA_RUINS_07");
 	Wld_InsertNpc 	(Giant_Bug, 	"FP_ROAM_NW_TROLLAREA_RUINS_03");
 	Wld_InsertNpc 	(Lurker, 		"NW_TROLLAREA_RIVERSIDE_01");
@@ -480,8 +480,8 @@ func void DIA_Addon_Saturas_ScRanger_Info ()
 	itm = Npc_GetEquippedArmor(other);
 		
 	if 	(
-		((SCIsWearingRangerRing == TRUE) && (RangerRingIsLaresRing == FALSE))	//-> Der SC IST Ranger! SC trägt eigenen (nicht Lares') Ring
-		|| (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)							//-> Der SC IST Ranger! Nur als Ranger hat er diese Rüstung bekommen.
+		((SCIsWearingRangerRing == TRUE) && (RangerRingIsLaresRing == FALSE))	//-> Der SC IST Ranger! SC trÃ¤gt eigenen (nicht Lares') Ring
+		|| (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)							//-> Der SC IST Ranger! Nur als Ranger hat er diese RÃ¼stung bekommen.
 		)
 		{
 			if (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)

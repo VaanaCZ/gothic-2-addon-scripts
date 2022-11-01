@@ -18,7 +18,7 @@ FUNC VOID DIA_Baltram_EXIT_Info()
 {
 	AI_StopProcessInfos (self);
 };
-///////////////////////////////////////////////////////////////////////AUSKOMMENTIERT WEGEN ADDON M.F. (Missionen passen nicht mehr, Spielfluﬂ hemmend)
+///////////////////////////////////////////////////////////////////////AUSKOMMENTIERT WEGEN ADDON M.F. (Missionen passen nicht mehr, Spielflu√ü hemmend)
 //	Info Sperre
 ///////////////////////////////////////////////////////////////////////
 /*
@@ -43,7 +43,7 @@ func int DIA_Baltram_Sperre_Condition ()
 };
 func void DIA_Baltram_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Baltram_Sperre_01_00"); //Was willst du? Du bist ein Str‰fling aus der Minenkolonie. Mit dir mache ich keine Gesch‰fte!
+	AI_Output (self, other, "DIA_Baltram_Sperre_01_00"); //Was willst du? Du bist ein Str√§fling aus der Minenkolonie. Mit dir mache ich keine Gesch√§fte!
 	AI_StopProcessInfos (self);	 
 };
 */

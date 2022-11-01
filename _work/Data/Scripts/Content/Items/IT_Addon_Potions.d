@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesver‰nderung (unwissend zusammengebraut)																		//
+//	Trank der Geistesver√§nderung (unwissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_01(C_Item)
 {
@@ -36,7 +36,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 		self.attribute[ATR_HITPOINTS] = (self.attribute[ATR_HITPOINTS] -1000);
 	};
 /******************************************************************************************/
-//	Trank der Geistesver‰nderung (wissend zusammengebraut)																		//
+//	Trank der Geistesver√§nderung (wissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_02(C_Item)
 {

@@ -21,7 +21,7 @@ instance VLK_410_Baltram (Npc_Default)
 	EquipItem (self, ItMw_ShortSword2);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Weak_Markus_Kark, BodyTex_N, ITAR_VLK_M);	

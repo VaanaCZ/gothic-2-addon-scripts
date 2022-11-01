@@ -764,7 +764,7 @@ func void DIA_Bennet_Evidence_Info ()
 
 
 //*********************************************************************
-//	Wer führt die Untersuchungen durch?
+//	Wer fÃ¼hrt die Untersuchungen durch?
 //*********************************************************************
 instance DIA_Bennet_Investigation		(C_INFO)
 {
@@ -797,7 +797,7 @@ func void DIA_Bennet_Investigation_Info ()
 
 
 //*********************************************************************
-//	Mann, ich hatte echt schon geglaubt, dass die mich hängen! 
+//	Mann, ich hatte echt schon geglaubt, dass die mich hÃ¤ngen! 
 //*********************************************************************
 instance DIA_Bennet_ThankYou		(C_INFO)
 {
@@ -836,7 +836,7 @@ func void DIA_Bennet_ThankYou_Info ()
 };
 
 //*********************************************************************
-//	Was für ein Geschenk?
+//	Was fÃ¼r ein Geschenk?
 //*********************************************************************
 
 instance DIA_Bennet_Present		(C_INFO)
@@ -959,7 +959,7 @@ instance DIA_Bennet_DJG_ARMOR_M		(C_INFO)
 	condition	 = 	DIA_Bennet_DJG_ARMOR_M_Condition;
 	information	 = 	DIA_Bennet_DJG_ARMOR_M_Info;
 	permanent	 = 	TRUE;
-	description	 =	"Medium dragon hunter armor: Protection: weapons 80, arrows 80 (12000 gold)"; //Wenn ändern, dann bitte auch in der Info-Instanz. s.u.
+	description	 =	"Medium dragon hunter armor: Protection: weapons 80, arrows 80 (12000 gold)"; //Wenn Ã¤ndern, dann bitte auch in der Info-Instanz. s.u.
 };
 
 func int DIA_Bennet_DJG_ARMOR_M_Condition ()
@@ -996,7 +996,7 @@ func void DIA_Bennet_DJG_ARMOR_M_Info ()
 };
 
 //*********************************************************************
-//		Ich weiss, wie man die Rüstung noch mehr verbessern kann.
+//		Ich weiss, wie man die RÃ¼stung noch mehr verbessern kann.
 //*********************************************************************
 
 instance DIA_Bennet_BetterArmor		(C_INFO)
@@ -1045,7 +1045,7 @@ instance DIA_Bennet_DJG_ARMOR_H		(C_INFO)
 	condition	 = 	DIA_Bennet_DJG_ARMOR_H_Condition;
 	information	 = 	DIA_Bennet_DJG_ARMOR_H_Info;
 	permanent	 = 	TRUE;
-	description	 =	"Heavy dragon hunter armor: Protection: weapons 90, arrows 90. (20000 gold)"; //Wenn ändern, dann bitte auch in der Info-Instanz. s.u.
+	description	 =	"Heavy dragon hunter armor: Protection: weapons 90, arrows 90. (20000 gold)"; //Wenn Ã¤ndern, dann bitte auch in der Info-Instanz. s.u.
 };
 
 func int DIA_Bennet_DJG_ARMOR_H_Condition ()
@@ -1080,7 +1080,7 @@ func void DIA_Bennet_DJG_ARMOR_H_Info ()
 	
 };
 //*********************************************************************
-//	Kannst du auch Schmuckstücke reparieren?
+//	Kannst du auch SchmuckstÃ¼cke reparieren?
 //*********************************************************************
 instance DIA_Bennet_RepairNecklace		(C_INFO)
 {
@@ -1249,7 +1249,7 @@ func void DIA_Bennet_GetInnosEye_Info ()
 	else
 	{	//Hack Mattes
 		B_SayBennetLATER();
-		//AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_04"); //Nein, noch nicht. Komm später wieder.
+		//AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_04"); //Nein, noch nicht. Komm spÃ¤ter wieder.
 		AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_05"); //If you keep interrupting my work, it will take even longer.
 		
 		AI_StopProcessInfos (self);
@@ -1460,7 +1460,7 @@ func void DIA_Bennet_EierBringen_Info ()
 			AI_Output		(other, self, "DIA_Bennet_EierBringen_15_03"); //I've got some more here.
 
 			Npc_RemoveInvItems	(other,	ItAt_DragonEgg_MIS,	DragonEggCount);
-			concatText = ConcatStrings(IntToString(DragonEggCount), PRINT_ItemsGegeben);		// "x Gegenstände gegeben"
+			concatText = ConcatStrings(IntToString(DragonEggCount), PRINT_ItemsGegeben);		// "x GegenstÃ¤nde gegeben"
 			AI_PrintScreen (concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			XP_DJG_BringDragonEggs = (DragonEggCount * XP_DJG_BringDragonEgg);
@@ -1634,7 +1634,7 @@ func void DIA_Bennet_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Bennet_StillNeedYou		(C_INFO)
 {

@@ -161,7 +161,7 @@ FUNC VOID DIA_Carl_Lernen_Info()
 	B_LogEntry (Topic_CityTeacher,"Carl, the smith in the harbor district, can help me become stronger.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Für's lernen bezahlen 
+//	Info FÃ¼r's lernen bezahlen 
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Carl_Wieviel   (C_INFO)
 {

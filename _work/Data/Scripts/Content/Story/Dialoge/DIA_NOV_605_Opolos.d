@@ -417,7 +417,7 @@ FUNC VOID DIA_Opolos_Biblothek_Info()
 	AI_StopProcessInfos (self);
 };
 //*********************************************************************
-//		Sc hat Opolos das Studieren ermöglicht (Kap. 2)
+//		Sc hat Opolos das Studieren ermÃ¶glicht (Kap. 2)
 //*********************************************************************
 INSTANCE DIA_Opolos_HelloAgain   (C_INFO)
 {

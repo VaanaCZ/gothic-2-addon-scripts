@@ -82,7 +82,7 @@ FUNC VOID DIA_Addon_Samuel_Francis_Info()
 };
 
 // ************************************************************
-// 			  		In Gregs Hütte (Versteck)
+// 			  		In Gregs HÃ¼tte (Versteck)
 // ************************************************************
 instance DIA_Addon_Samuel_Versteck(C_INFO)
 {
@@ -279,7 +279,7 @@ func VOID DIA_Addon_Samuel_Rum_Info()
 };
 
 // ************************************************************
-// 			  	  			Was Stärkeres
+// 			  	  			Was StÃ¤rkeres
 // ************************************************************
 var int Samuel_Stronger_Varianz;
 var int Samuel_DoppelHammer_Varianz;

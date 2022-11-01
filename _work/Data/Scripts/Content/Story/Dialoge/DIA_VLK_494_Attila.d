@@ -194,7 +194,7 @@ FUNC VOID DIA_Attila_Hallo_Attacke()
 	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Willkommen Schlüssel für die Diebesgilde 
+//	Info Willkommen SchlÃ¼ssel fÃ¼r die Diebesgilde 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_Willkommen  	(C_INFO)
 {
@@ -231,7 +231,7 @@ func void DIA_Attila_Willkommen_Info ()
 	Npc_ExchangeRoutine (self, "AFTER");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Nach Schluessel Übergabe
+//	Info Nach Schluessel Ãœbergabe
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_NachSchluessel		(C_INFO)
 {
@@ -259,7 +259,7 @@ func void DIA_Attila_NachSchluessel_Info ()
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Nach Schluessel Übergabe Wer bist du?
+//	Info Nach Schluessel Ãœbergabe Wer bist du?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_Wer		(C_INFO)
 {

@@ -5,7 +5,7 @@
 const int	Value_Fackel			=	2;
 
 // ************************************************************************************************
-// 	Fackel muﬂ ihre Instanznamen behalten
+// 	Fackel mu√ü ihre Instanznamen behalten
 // ************************************************************************************************
 INSTANCE ItLsTorch(C_Item)
 {

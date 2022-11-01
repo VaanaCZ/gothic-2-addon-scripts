@@ -30,7 +30,7 @@ PROTOTYPE Mst_Default_Meatbug(C_Npc)
 	damagetype 						= 	DAM_EDGE;
 	
 	//----- Kampf-Taktik ----
-//	fight_tactic					= ;		// k‰mpfen nicht!
+//	fight_tactic					= ;		// k√§mpfen nicht!
 
 	//----- Senses & Ranges ----
 	Senses			= 	SENSE_SMELL;

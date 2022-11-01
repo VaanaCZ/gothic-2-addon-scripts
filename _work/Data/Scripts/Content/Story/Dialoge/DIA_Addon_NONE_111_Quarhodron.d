@@ -55,7 +55,7 @@ func void DIA_Addon_Quarhodron_Hello_Info ()
 		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Grant me access to the temple of Adanos.", DIA_Addon_Quarhodron_Hello_tempel );
 		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "The land is afflicted with earthquakes.", DIA_Addon_Quarhodron_Hello_erdbeben );
 		DIA_Addon_Quarhodron_Hello_NoPerm = TRUE;
-		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnütz herum.
+		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnÃ¼tz herum.
 		SC_TalkedToGhost = TRUE;
 	}
 	else

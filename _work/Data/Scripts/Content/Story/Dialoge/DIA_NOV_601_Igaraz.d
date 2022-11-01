@@ -127,7 +127,7 @@ FUNC VOID DIA_Igaraz_NotWork_Info()
 	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_02"); //One day he will choose me - and then I shall take the test of magic and enter the Circle of Fire.
 };
 ///////////////////////////////////////////////////////////////////////
-//Wer sind die Erwählten?
+//Wer sind die ErwÃ¤hlten?
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Igaranz_Choosen   (C_INFO)
 {
@@ -180,7 +180,7 @@ FUNC VOID DIA_Igaranz_Choosen_HowChoosen ()
 	AI_Output (self ,other,"DIA_Igaranz_Choosen_HowChoosen_13_01"); //You have no influence on that. Innos alone chooses his novices, and the High Council announces his will.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über Innos Lehren
+//	ErzÃ¤hl mir was Ã¼ber Innos Lehren
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Igaranz_StudyInnos   (C_INFO)
 {
@@ -209,7 +209,7 @@ FUNC VOID DIA_Igaraz_StudyInnos_Info()
 	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_02"); //However, Master Parlan will only give you the key if you have first finished your duties.
 };
 //**************************************************************************
-//	ABSCHNITT 2  DIE PRÜFUNG DER MAGIE 
+//	ABSCHNITT 2  DIE PRÃœFUNG DER MAGIE 
 //**************************************************************************
 ///////////////////////////////////////////////////////////////////////
 //	Info CHOOSEN
@@ -330,7 +330,7 @@ func void DIA_Igaraz_ADD_Info ()
 	AI_Output (self, other, "DIA_Igaraz_Add_13_10"); //That's all I'm going to tell you ... (sarcastic) It's supposed to be your TEST after all!
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Perm Prüfung 
+//	Info Perm PrÃ¼fung 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaraz_Pruefung		(C_INFO)
 {
@@ -492,7 +492,7 @@ FUNC VOID DIA_Igaraz_TalkAboutBabo_Info()
 };
 
 //**************************************************************************
-//	Du hast etwas was Babo gehört
+//	Du hast etwas was Babo gehÃ¶rt
 //**************************************************************************
 INSTANCE DIA_Igaranz_BabosBelongings   (C_INFO)
 {
@@ -546,7 +546,7 @@ FUNC VOID DIA_Igaraz_WhereDocs_Info()
 };
 
 //**************************************************************************
-//	Was soll Babo für dich tun?
+//	Was soll Babo fÃ¼r dich tun?
 //**************************************************************************
 INSTANCE DIA_Igaranz_BabosJob   (C_INFO)
 {
@@ -574,7 +574,7 @@ FUNC VOID DIA_Igaraz_BabosJob_Info()
 };
 
 //**************************************************************************
-//	Wieviel willst du für die Papiere haben?
+//	Wieviel willst du fÃ¼r die Papiere haben?
 //**************************************************************************
 INSTANCE DIA_Igaranz_Price   (C_INFO)
 {
@@ -675,7 +675,7 @@ func void DIA_Igaraz_PICKPOCKET_DoIt()
 	{
 		B_ResetThiefLevel();
 		AI_StopProcessInfos	(self);
-		B_Attack (self, other, AR_Theft, 1); //AR_Theft führt zu NEWS!
+		B_Attack (self, other, AR_Theft, 1); //AR_Theft fÃ¼hrt zu NEWS!
 	};
 };
 	

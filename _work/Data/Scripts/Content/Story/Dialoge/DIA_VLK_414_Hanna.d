@@ -236,7 +236,7 @@ FUNC VOID DIA_Hanna_Kap3_EXIT_Info()
 var int Hanna_PriceForLetter;
 
 // ************************************************************
-// 		Wie sieht´s aus?
+// 		Wie siehtÂ´s aus?
 // ************************************************************
 INSTANCE DIA_Hanna_AnyNews(C_INFO)
 {
@@ -372,7 +372,7 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_WillSee ()
 
 
 // ************************************************************
-//		Meinst du dieses Schriftstück?
+//		Meinst du dieses SchriftstÃ¼ck?
 // ************************************************************
 INSTANCE DIA_Hanna_ThisLetter(C_INFO)
 {

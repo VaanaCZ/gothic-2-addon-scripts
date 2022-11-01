@@ -118,7 +118,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 //	Lou's Hammer (mit Manaessenz)
 //-----------------------------
 
-var int Hammer_Once;	//damit der Magier sich nicht für 30 Gold superviel MANA kauft!!
+var int Hammer_Once;	//damit der Magier sich nicht fÃ¼r 30 Gold superviel MANA kauft!!
 
 INSTANCE ItFo_Addon_LousHammer (C_Item)
 {

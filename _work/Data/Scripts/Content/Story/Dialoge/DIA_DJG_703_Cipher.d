@@ -283,7 +283,7 @@ func VOID DIA_CipherDJG_GoForSwampDragon_Info()
 	AI_Output			(self, other, "DIA_CipherDJG_GoForSwampDragon_07_02"); //Go ahead and see if we can attack.
 	AI_StopProcessInfos	(self);
 	};
-	self.flags =0;	//Joly: Wer weiﬂ!!?!
+	self.flags =0;	//Joly: Wer wei√ü!!?!
 	DJG_Rod.flags =0; 
 };
 

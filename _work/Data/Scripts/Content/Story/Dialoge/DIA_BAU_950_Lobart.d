@@ -49,7 +49,7 @@ func int DIA_Lobart_STOLENCLOTHS_Condition ()
 
 func void DIA_Lobart_STOLENCLOTHS_Info ()
 {
-	// ------ SC hat Rüstung an ------
+	// ------ SC hat RÃ¼stung an ------
 	
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
@@ -287,7 +287,7 @@ func void DIA_Lobart_BuyClothes_Info ()
 	};
 
 	// ------------------------------
-	// ------ Wert der Rüstung ------
+	// ------ Wert der RÃ¼stung ------
 	// ------------------------------
 		B_Say_Gold (self, other, Wert_LobartsRuestung);
 		
@@ -379,7 +379,7 @@ func void DIA_Lobart_AufstandInfo_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Mehr über Onar
+//	Mehr Ã¼ber Onar
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_OnarStory (C_INFO)
 {
@@ -418,7 +418,7 @@ func void DIA_Lobart_OnarStory_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Mehr über Söldner
+//	Mehr Ã¼ber SÃ¶ldner
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_SldInfo (C_INFO)
 {
@@ -448,7 +448,7 @@ func void DIA_Lobart_SldInfo_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Für wen bist du?
+//	FÃ¼r wen bist du?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_WhichSide (C_INFO)
 {
@@ -484,7 +484,7 @@ func void DIA_Lobart_WhichSide_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	*** MISSION: Rüben ziehen ***
+//	*** MISSION: RÃ¼ben ziehen ***
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_WorkNOW (C_INFO)
 {
@@ -629,7 +629,7 @@ func void DIA_Lobart_RuebenRunning_Info ()
 		B_GivePlayerXP (XP_LobartHolRueben);
 		 
 	//	Log_SetTopicStatus(TOPIC_BauerLobart, LOG_SUCCESS); ALT
-	//	Log_AddEntry (TOPIC_BauerLobart,"Ich habe Lobart seine Rüben gebracht, er hat mich dafür entlohnt."); 
+	//	Log_AddEntry (TOPIC_BauerLobart,"Ich habe Lobart seine RÃ¼ben gebracht, er hat mich dafÃ¼r entlohnt."); 
 		
 		AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_03"); //What about my pay?
 		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_04"); //I can give you 5 gold pieces.

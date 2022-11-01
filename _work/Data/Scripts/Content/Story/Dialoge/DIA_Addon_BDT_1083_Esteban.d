@@ -189,7 +189,7 @@ FUNC VOID DIA_Addon_Esteban_MIS_Info()
 
 };
 //--------------------------------------------------------------------
-//	Info Attent‰ter (Kerl)
+//	Info Attent√§ter (Kerl)
 //--------------------------------------------------------------------
 INSTANCE DIA_Addon_Esteban_Kerl   (C_INFO)
 {

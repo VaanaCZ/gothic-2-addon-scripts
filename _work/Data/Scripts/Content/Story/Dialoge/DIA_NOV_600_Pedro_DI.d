@@ -20,7 +20,7 @@ FUNC VOID DIA_Pedro_DI_EXIT_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Verr‰ter
+//	Info Verr√§ter
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pedro_DI_YOU		(C_INFO)
 {
@@ -96,7 +96,7 @@ func void DIA_Pedro_DI_YOU_Serpentes ()
 	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(pleading) Please, no. You can't do that. I could still be of great use to you. You have to see that.
 
 	B_GivePlayerXP (XP_Pedro_SerpentesMission);
-	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heiﬂen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
+	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss hei√üen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
 
 };
 

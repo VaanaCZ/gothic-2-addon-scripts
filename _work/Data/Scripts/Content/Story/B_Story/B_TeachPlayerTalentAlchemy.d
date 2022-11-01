@@ -37,7 +37,7 @@ func int B_TeachPlayerTalentAlchemy (var C_NPC slf, var C_NPC oth, var int potio
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'EXTRACT OF HEALING':2 Healing Herbs and 1 Meadow Knotweed.");  };
 	
 	if (potion == POTION_Health_03)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_03] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'ELIXIR OF HEALING´:2 Healing Roots and 1 Meadow Knotweed.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'ELIXIR OF HEALINGÂ´:2 Healing Roots and 1 Meadow Knotweed.");  };
 	
 	if (potion == POTION_Mana_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_01] 		= TRUE;	
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA ESSENCE': 2 Fire Nettles and 1 Meadow Knotweed.");  };

@@ -228,19 +228,19 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	};
 	//if (Npc_HasItems (other, ITAR_Thorus_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Gardistenrüstung geben", DIA_Addon_Eremit_Klamotten_Thorus);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "GardistenrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_Thorus);
 	//};
 	//if (Npc_HasItems (other, ITAR_OreBaron_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Erzbaronrüstung geben", DIA_Addon_Eremit_Klamotten_OreBaron);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "ErzbaronrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_OreBaron);
 	//};
 	//if (Npc_HasItems (other, ITAR_Bloodwyn_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Bloodwyn's Rüstung geben", DIA_Addon_Eremit_Klamotten_Bloodwyn);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Bloodwyn's RÃ¼stung geben", DIA_Addon_Eremit_Klamotten_Bloodwyn);
 	//};
 	//if (Npc_HasItems (other, ITAR_Raven_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Raven's Rüstung geben", DIA_Addon_Eremit_Klamotten_Raven);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Raven's RÃ¼stung geben", DIA_Addon_Eremit_Klamotten_Raven);
 	//};
 	if (Npc_HasItems (other, ITAR_RANGER_Addon) > 0)
 	{
@@ -297,19 +297,19 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	/*
 	if (Npc_HasItems (other, ITAR_MIL_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Milizrüstung geben", DIA_Addon_Eremit_Klamotten_MIL_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte MilizrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_MIL_L);
 	};
 	if (Npc_HasItems (other, ITAR_MIL_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Milizrüstung geben", DIA_Addon_Eremit_Klamotten_MIL_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere MilizrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_MIL_M);
 	};
 	if (Npc_HasItems (other, ITAR_PAL_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Paladinrüstung geben", DIA_Addon_Eremit_Klamotten_PAL_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere PaladinrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_PAL_M);
 	};
 	if (Npc_HasItems (other, ITAR_PAL_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Paladinrüstung geben", DIA_Addon_Eremit_Klamotten_PAL_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere PaladinrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_PAL_H);
 	};
 	*/
 	if (Npc_HasItems (other, ITAR_PAL_SKEL) > 0)
@@ -335,15 +335,15 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	/*
 	if (Npc_HasItems (other, ITAR_SLD_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Söldnerrüstung geben", DIA_Addon_Eremit_Klamotten_SLD_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte SÃ¶ldnerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_SLD_L);
 	};
 	if (Npc_HasItems (other, ITAR_SLD_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Söldnerrüstung geben", DIA_Addon_Eremit_Klamotten_SLD_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere SÃ¶ldnerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_SLD_M);
 	};
 	if (Npc_HasItems (other, ITAR_SLD_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Söldnerrüstung geben", DIA_Addon_Eremit_Klamotten_SLD_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere SÃ¶ldnerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_SLD_H);
 	};
 	*/
 	if (Npc_HasItems (other, ITAR_DJG_Crawler) > 0)
@@ -353,15 +353,15 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	/*
 	if (Npc_HasItems (other, ITAR_DJG_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Drachenjägerrüstung geben", DIA_Addon_Eremit_Klamotten_DJG_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte DrachenjÃ¤gerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_DJG_L);
 	};
 	if (Npc_HasItems (other, ITAR_DJG_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Drachenjägerrüstung geben", DIA_Addon_Eremit_Klamotten_DJG_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere DrachenjÃ¤gerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_DJG_M);
 	};
 	if (Npc_HasItems (other, ITAR_DJG_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Drachenjägerrüstung geben", DIA_Addon_Eremit_Klamotten_DJG_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere DrachenjÃ¤gerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_DJG_H);
 	};
 	if (Npc_HasItems (other, ITAR_NOV_L) > 0)
 	{
@@ -382,11 +382,11 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	};
 	//if (Npc_HasItems (other, ITAR_BDT_M) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Banditenrüstung geben", DIA_Addon_Eremit_Klamotten_BDT_M);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere BanditenrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_BDT_M);
 	//};
 	//if (Npc_HasItems (other, ITAR_BDT_H) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Banditenrüstung geben", DIA_Addon_Eremit_Klamotten_BDT_H);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere BanditenrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_BDT_H);
 	//};
 	if (Npc_HasItems (other, ITAR_XARDAS) > 0)
 	{

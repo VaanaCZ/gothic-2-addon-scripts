@@ -332,7 +332,7 @@ func void DIA_Gaan_WASZAHLSTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Gaan_WASZAHLSTDU_15_00"); //How much would you pay me if I killed that beast for you?
 	AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_01"); //I'd give the person who killed it everything I could spare.
-	//AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_02"); //30 Goldmünzen? 
+	//AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_02"); //30 GoldmÃ¼nzen? 
 	//Auskommentiert, weil "?" ist auch so gesprochen worden - kommt nicht gut
 	B_Say_Gold   (self,other,30);
 	MIS_Gaan_Deal = LOG_RUNNING;
@@ -615,7 +615,7 @@ func void DIA_Gaan_TEACHHUNTING_BFSting()
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
 	Info_AddChoice		(DIA_Gaan_TEACHHUNTING, DIALOG_BACK, DIA_Gaan_TEACHHUNTING_BACK);
 };
-// ------ Blutfliegenflügel ------
+// ------ BlutfliegenflÃ¼gel ------
 func void DIA_Gaan_TEACHHUNTING_BFWing ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
@@ -638,7 +638,7 @@ func void DIA_Gaan_TEACHHUNTING_DrgSnapperHorn()
 			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_02"); //If it won't come loose from the skull, you work on it with a second knife from the other side.
 	
 			
-			CreateInvItems (Gaans_Snapper, ItAt_DrgSnapperHorn, 1); //falls der Snapper ihm gerade vor den Füssen liegt!!
+			CreateInvItems (Gaans_Snapper, ItAt_DrgSnapperHorn, 1); //falls der Snapper ihm gerade vor den FÃ¼ssen liegt!!
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);

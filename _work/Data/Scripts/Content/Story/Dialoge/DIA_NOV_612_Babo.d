@@ -509,7 +509,7 @@ FUNC VOID DIA_Babo_Life_Info()
 	};
 };
 //*********************************************************************
-//		Sc hat Babo den Gärtnerposten verschafft (Kap. 2)
+//		Sc hat Babo den GÃ¤rtnerposten verschafft (Kap. 2)
 //*********************************************************************
 INSTANCE DIA_Babo_HowIsIt   (C_INFO)
 {
@@ -678,7 +678,7 @@ FUNC VOID DIA_Babo_Kap3_KeepTheFaith_Info()
 };
 
 //*********************************************
-//	Das klingt aber nicht sehr glücklich.
+//	Das klingt aber nicht sehr glÃ¼cklich.
 //*********************************************
 
 INSTANCE DIA_Babo_Kap3_Unhappy   (C_INFO)

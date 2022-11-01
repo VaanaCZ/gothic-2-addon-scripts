@@ -88,9 +88,9 @@ func void B_Announce_Herold ()
 
 /* 
 
-			AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //Hört Bürger von Khorinis den Beschluß des ehrenwerten Lord Hagen!
-			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //An alle Bürger von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
-			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //Hört ihr Bewohner von Khorinis und vernehmt das königliche Dekret zur Aufrechterhaltung der öffentlichen Ordnung.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //HÃ¶rt BÃ¼rger von Khorinis den BeschluÃŸ des ehrenwerten Lord Hagen!
+			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //An alle BÃ¼rger von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
+			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //HÃ¶rt ihr Bewohner von Khorinis und vernehmt das kÃ¶nigliche Dekret zur Aufrechterhaltung der Ã¶ffentlichen Ordnung.
 			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //An alle Bewohner von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
 
 
@@ -98,26 +98,26 @@ func void B_Announce_Herold ()
 
 
 Kapitel 3 Spieler kommt aus dem Minental und hat mit Lord Hagen gesprochen
-Hört ihr Büger von Khorinis. Ein Bote der Paladine brachte Kunde aus dem Minental
-Unsere tapferen Paladine halten den Orks wehrhaft stand und erschliessen neue Minen für das Königreich!
+HÃ¶rt ihr BÃ¼ger von Khorinis. Ein Bote der Paladine brachte Kunde aus dem Minental
+Unsere tapferen Paladine halten den Orks wehrhaft stand und erschliessen neue Minen fÃ¼r das KÃ¶nigreich!
 
 Kapitel 3 Bennet ist im Knast
-Hört ihr Bürger von Khorinis
-Der Schmied Bennet, der den ehrenwerten Paladin Lothar heimtückisch ermordert hat, ist im Namen Innos verurteilt worden. 
+HÃ¶rt ihr BÃ¼rger von Khorinis
+Der Schmied Bennet, der den ehrenwerten Paladin Lothar heimtÃ¼ckisch ermordert hat, ist im Namen Innos verurteilt worden. 
 Das Urteil lautet Tod durch den Strick.
 
 Kapitel 3 Bennet ist wieder frei
-Hört ihr Bürger,
+HÃ¶rt ihr BÃ¼rger,
 Der Schmied Bennet wird freigesprochen, da seine Unschuld von einem klugen Berater Lord Hagens bewiesen wurde. 
 So ist es Innos Wille und nach seiner Gerechtigkeit handeln wir. 
  
 Kapitel 5 Start Drachen sind tot
-Hört Bürger von Khorinis
-Die Drachen die das Land bedrohten wurden von tapferen Männern unter dem Befehl von Lord Hagen besiegt.   
-Bald wird auch König Rohbar das Land von den Orks befreien und das Königreich wird in neuem Glanz aufblühen!
+HÃ¶rt BÃ¼rger von Khorinis
+Die Drachen die das Land bedrohten wurden von tapferen MÃ¤nnern unter dem Befehl von Lord Hagen besiegt.   
+Bald wird auch KÃ¶nig Rohbar das Land von den Orks befreien und das KÃ¶nigreich wird in neuem Glanz aufblÃ¼hen!
 
 
-Kapitel 5 Kurz vor Schluß (Spieler war in der Biblothek) 
-Der ehrenwerte Lord Hagen hat verkündet nun selbst ins Minental zu ziehen um dafür zu sorgen das sein Schiff mit dem Erz beladen werden kann.  
+Kapitel 5 Kurz vor SchluÃŸ (Spieler war in der Biblothek) 
+Der ehrenwerte Lord Hagen hat verkÃ¼ndet nun selbst ins Minental zu ziehen um dafÃ¼r zu sorgen das sein Schiff mit dem Erz beladen werden kann.  
 
 */

@@ -157,7 +157,7 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 {	
 	var C_Item itm; itm = Npc_GetEquippedArmor(other);
 	
-	// ------ OHNE Rüstung ------
+	// ------ OHNE RÃ¼stung ------
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
 		AI_Output	(self, other,"DIA_Canthar_Hallo_09_00"); //Who do we have here then?
@@ -181,7 +181,7 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 		Info_AddChoice		(DIA_Canthar_Hallo, "I can't complain."		,DIA_Canthar_Hallo_Bauer);
 	}
 	
-	// ------ alle anderen Rüstungen (höchst unwahrscheinlich) ------
+	// ------ alle anderen RÃ¼stungen (hÃ¶chst unwahrscheinlich) ------
 	else 
 	{
 		AI_Output (self, other,"DIA_Canthar_Hallo_09_07"); //What can I do for you?
@@ -366,7 +366,7 @@ func void DIA_Canthar_TRADE_Info ()
 // ###########################################
 /*
 		-->
-		Aber ein Händler namnes Canthar hat das erzählt. 
+		Aber ein HÃ¤ndler namnes Canthar hat das erzÃ¤hlt. 
 	*/
 
 ///////////////////////////////////////////////////////////////////////

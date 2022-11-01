@@ -1,6 +1,6 @@
 func void ZS_Stand_Dementor()
 {
-	// --- Die Senses bei jedem Zustand neu setzen (Weil in ZS_Guide_Player die Senses & Ranges verändert werden) ------
+	// --- Die Senses bei jedem Zustand neu setzen (Weil in ZS_Guide_Player die Senses & Ranges verÃ¤ndert werden) ------
 	self.senses			= SENSE_SEE|SENSE_HEAR|SENSE_SMELL;		
 	self.senses_range	= PERC_DIST_MONSTER_ACTIVE_MAX;			
 	
@@ -29,7 +29,7 @@ func void ZS_Stand_Dementor()
 
 	Npc_PercEnable  	(self, 	PERC_ASSESSWARN			, 	B_AssessWarn 		 	 	); //geht in ZS_Attack
 	Npc_PercEnable  	(self, 	PERC_ASSESSTALK			,	B_AssessTalk 				); //geht in ZS_Talk
-	Npc_PercEnable  	(self, 	PERC_MOVEMOB			,	B_MoveMob					); //öffnet Türen, die auf dem Weg liegen
+	Npc_PercEnable  	(self, 	PERC_MOVEMOB			,	B_MoveMob					); //Ã¶ffnet TÃ¼ren, die auf dem Weg liegen
 	
 	B_ResetAll (self);
 	

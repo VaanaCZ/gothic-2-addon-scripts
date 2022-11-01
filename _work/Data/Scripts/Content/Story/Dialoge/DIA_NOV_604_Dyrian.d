@@ -174,7 +174,7 @@ FUNC VOID DIA_Dyrian_CanHelp_Info()
 	AI_Output (self ,other,"DIA_Dyrian_CanHelp_13_01"); //No, I've been delivered up to the mercy of Innos and the magicians.
 };
 //**************************************************************************
-//	SC hat die Prüfung des Feuers angenommen und mit Hyglas gesprochen
+//	SC hat die PrÃ¼fung des Feuers angenommen und mit Hyglas gesprochen
 //**************************************************************************
 INSTANCE DIA_Dyrian_Scroll   (C_INFO)
 {
@@ -304,7 +304,7 @@ FUNC VOID DIA_Dyrian_HelloAgain_Info()
 };
 
 //*****************************************************************************
-//			Wie gehts? //Info für Magier Success 
+//			Wie gehts? //Info fÃ¼r Magier Success 
 //*****************************************************************************
 func void B_Dyrian_PlayerHowIsIt()
 {
@@ -335,7 +335,7 @@ FUNC VOID DIA_Dyrian_HowIsIt_Info()
 	AI_StopProcessInfos (self);	
 };
 //*****************************************************************************
-//			Wie gehts? //Info für alle anderen 
+//			Wie gehts? //Info fÃ¼r alle anderen 
 //*****************************************************************************
 INSTANCE DIA_Dyrian_other   (C_INFO)
 {

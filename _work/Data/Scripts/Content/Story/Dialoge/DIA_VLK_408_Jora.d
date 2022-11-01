@@ -326,7 +326,7 @@ func void DIA_Jora_WegenDieb_Tot()
 
 
 // *******************************************************
-// 					Gold zurückbringen
+// 					Gold zurÃ¼ckbringen
 // *******************************************************
 instance DIA_Jora_BringGold (C_INFO)
 {
@@ -522,7 +522,7 @@ func void DIA_Jora_BUYAlriksSchwert_Info ()
 		//if (Jora_Gold == LOG_RUNNING)
 		//{
 			//AI_Output (other, self, "DIA_Jora_BUYAlriksSchwert_15_02"); //Moment, ich wollte das Schwert kaufen...
-			//AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_03"); //Das kannst du doch immer noch tun - für 50 Goldstücke ist es deins...
+			//AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_03"); //Das kannst du doch immer noch tun - fÃ¼r 50 GoldstÃ¼cke ist es deins...
 			//Jora_Gold = LOG_SUCCESS;
 		//}
 		//else

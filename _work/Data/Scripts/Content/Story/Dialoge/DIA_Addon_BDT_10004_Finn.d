@@ -250,7 +250,7 @@ FUNC VOID DIA_Addon_Finn_Gold_Info()
 	B_Upgrade_hero_HackChance(10);
 };
 //---------------------------------------------------------------------
-//	Info einsch‰tzen
+//	Info einsch√§tzen
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 {

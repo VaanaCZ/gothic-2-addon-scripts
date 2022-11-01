@@ -223,7 +223,7 @@ func void DIA_Addon_Cord_YouAreRanger_Info ()
 	};
 	
 	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_04"); //(sigh) Look's like I've got to deal with you now, doesn't it?
-	//AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_05"); //Was muss ich denn jetzt für dich machen, damit du die Schnauze hälst?
+	//AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_05"); //Was muss ich denn jetzt fÃ¼r dich machen, damit du die Schnauze hÃ¤lst?
 	AI_Output	(self, other, "DIA_Addon_Cord_Add_14_01"); //All right, so what do you need?
 	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_06"); //And be damn careful about what you tell me now. For if I don't like what I hear, I might just skin you alive.
 	
@@ -243,7 +243,7 @@ func void DIA_Addon_Cord_YouAreRanger_Info ()
 	{
 		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "You could help me join the mercenaries.", DIA_Addon_Cord_YouAreRanger_SLDAufnahme );
 	};
-	//Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Bezahl mich für mein Schweigen.", DIA_Addon_Cord_YouAreRanger_Gold );
+	//Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Bezahl mich fÃ¼r mein Schweigen.", DIA_Addon_Cord_YouAreRanger_Gold );
 };
 var int Cord_SC_Dreist;
 func void 	B_DIA_Addon_Cord_YouAreRanger_WARN ()

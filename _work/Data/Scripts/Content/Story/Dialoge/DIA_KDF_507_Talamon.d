@@ -131,7 +131,7 @@ func void DIA_KDF_507_Talamon_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;	//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };

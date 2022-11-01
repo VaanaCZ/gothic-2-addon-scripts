@@ -366,7 +366,7 @@ FUNC VOID DIA_Sagitta_Teach_Perm_Dex ()
 instance DIA_Sagitta_HEAL		(C_INFO)
 {
 	npc			 = 	BAU_980_Sagitta;
-	nr          = 	99;	//Joly: braucht ne hohe Nummer, denn wird in den sp‰teren Kapiteln auch verwendet.
+	nr          = 	99;	//Joly: braucht ne hohe Nummer, denn wird in den sp√§teren Kapiteln auch verwendet.
 	condition	 = 	DIA_Sagitta_HEAL_Condition;
 	information	 = 	DIA_Sagitta_HEAL_Info;
 	permanent	 = 	TRUE;

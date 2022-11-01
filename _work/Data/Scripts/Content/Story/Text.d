@@ -5,7 +5,7 @@
 CONST STRING MOBNAME_CRATE			= "Crate";					//Kisten
 CONST STRING MOBNAME_CHEST			= "Chest";					//Truhen
 CONST STRING MOBNAME_BED			= "Bed";					//Betten
-CONST STRING MOBNAME_DOOR			= "Door";					//Türen
+CONST STRING MOBNAME_DOOR			= "Door";					//TÃ¼ren
 CONST STRING MOBNAME_CAMPFIRE		= "";						//Lagerfeuer
 CONST STRING MOBNAME_TORCH			= "";						//Fackel
 CONST STRING MOBNAME_TORCHHOLDER	= "";						//Fackelhalter
@@ -18,9 +18,9 @@ CONST STRING MOBNAME_FORGE			= "Forge Fire";			//Schmiede
 CONST STRING MOBNAME_GRINDSTONE		= "Whetstone";			//Schleifstein
 CONST STRING MOBNAME_WHEEL			= "Winch";					//Winde
 CONST STRING MOBNAME_LAB			= "Alchemist's Bench";			//Alchemietisch
-CONST STRING MOBNAME_BOOKSTAND		= "Bookstand";			//Buchständer
+CONST STRING MOBNAME_BOOKSTAND		= "Bookstand";			//BuchstÃ¤nder
 CONST STRING MOBNAME_BOOKSBOARD		= "Bookstand";			//Kommode mit Buch
-CONST STRING MOBNAME_CHAIR			= "";						//Stühle
+CONST STRING MOBNAME_CHAIR			= "";						//StÃ¼hle
 CONST STRING MOBNAME_CAULDRON		= "Cauldron";					//Kochkessel
 CONST STRING MOBNAME_SEAT			= "";						//Sessel
 CONST STRING MOBNAME_THRONE			= "";						//Thron
@@ -34,7 +34,7 @@ CONST STRING MOBNAME_ORCDRUM		= "";						//Orkische Kriegstrommel
 CONST STRING MOBNAME_STOVE			= "Stove";					//HerdMobsi
 CONST STRING MOBNAME_INNOS			= "Statue of Innos";			//Innos	Staue
 CONST STRING MOBNAME_RUNEMAKER		= "Rune Table";				//Runentisch
-CONST STRING MOBNAME_SAW			= "Tree Saw";				//Sägemobsi
+CONST STRING MOBNAME_SAW			= "Tree Saw";				//SÃ¤gemobsi
 CONST STRING MOBNAME_ARMCHAIR		= "Armchair";
 CONST STRING MOBNAME_LIBRARYLEVER	= "Lamp";
 CONST STRING MOBNAME_SECRETSWITCH	= "";
@@ -80,7 +80,7 @@ CONST STRING MOBNAME_GRAVETEAM_02	 = "Oelk - 'NOOOOOOOOO'";
 CONST STRING MOBNAME_GRAVETEAM_03	 = "Hodges - 'Everything will be fine'";
 CONST STRING MOBNAME_GRAVETEAM_04	 = "Hosh - 'What a shit'";
 CONST STRING MOBNAME_GRAVETEAM_05	 = "Chase - 'Whaddaya make of that?'";
-CONST STRING MOBNAME_GRAVETEAM_06	 = "Björn - 'We're going for it!'";
+CONST STRING MOBNAME_GRAVETEAM_06	 = "BjÃ¶rn - 'We're going for it!'";
 CONST STRING MOBNAME_GRAVETEAM_07	 = "Michael - 'Just resting my eyes...'";
 CONST STRING MOBNAME_GRAVETEAM_08	 = "Kairo - 'Just a sec!'";
 CONST STRING MOBNAME_GRAVETEAM_09	 = "Uncle Cruncle - 'Finally he found the scorpion man'";
@@ -672,7 +672,7 @@ const string NAME_Addon_BeArLeather		= "Together with leather armor +";
 
 const string PRINT_Addon_BDTArmor		= "Whoever wears this armor belongs to the bandits.";
 
-const string PRINT_Addon_KUMU_01		= "We are three brothers from the same caste.";//Texte für kumulative Amulette
+const string PRINT_Addon_KUMU_01		= "We are three brothers from the same caste.";//Texte fÃ¼r kumulative Amulette
 const string PRINT_Addon_KUMU_02		= "Together we are stronger.";
 
 const string PRINT_Addon_NadjaWait		= "Wait. About the weed...";
@@ -684,7 +684,7 @@ const string NAME_Currency					= "Gold:";
 const string PRINT_Trade_Not_Enough_Gold	= "You don't have enough gold to buy this item.";
 
 // *************************************************************
-// TEXTE FÜR ITEM-BESCHREIBUNGEN IM	INV.
+// TEXTE FÃœR ITEM-BESCHREIBUNGEN IM	INV.
 // *************************************************************
 
 const string NAME_Value			= "Value:";
@@ -772,7 +772,7 @@ const string NAME_ADDON_PRAYIDOL_GIVEMANA				= "I will pray and offer 1 mana.";
 							
 
 // *************************************************************
-// NAMEN FÜR Produktionsitems
+// NAMEN FÃœR Produktionsitems
 // *************************************************************
 const string NAME_ItMw_1H_Common_01	 = "Sword"; //(40/30)
 const string NAME_ItMw_1H_Special_01 = "Ore Longsword";
@@ -791,7 +791,7 @@ const string NAME_Addon_Harad_04 = "El Bastardo"; //ItMw_ElBastardo (120/110)
 
 
 // *************************************************************
-// PrintScreen Texte für B_GiveInvItems
+// PrintScreen Texte fÃ¼r B_GiveInvItems
 // *************************************************************
 
 const string PRINT_Addon_gegeben			= "given";
@@ -807,14 +807,14 @@ const string PRINT_Addon_RuneGiven			= "Beliar grants you another spell";
 
 
 // *************************************************************
-// PrintScreen Texte für Steigerung	(Lernen)
+// PrintScreen Texte fÃ¼r Steigerung	(Lernen)
 // *************************************************************
 
 // ------ B_BuildLearnString ------
 const string PRINT_Kosten					= ". Cost:";
 const string PRINT_LP						= " LP";
 
-// ------ Zu wenig LP /	techerMAX überschritten	------
+// ------ Zu wenig LP /	techerMAX Ã¼berschritten	------
 const string PRINT_NotEnoughLP				= "Not enough Learning Points!";
 const string PRINT_NoLearnOverPersonalMAX	= "This teacher's maximum is";
 
@@ -835,10 +835,10 @@ const string PRINT_LearnCircle_6			= "Learn: 6th Circle of Magic";
 
 // ------ 1H -------------------------------------------------------------------------------------
 const string PRINT_Learn1H					= "Improve: Fight with one-handed weapons";
-const string PRINT_Learn1H_and_2H			= "Improve: Fight with one and two-handed weapons"; //ADDON geändert M.F. 
+const string PRINT_Learn1H_and_2H			= "Improve: Fight with one and two-handed weapons"; //ADDON geÃ¤ndert M.F. 
 // ------ 2H -------------------------------------------------------------------------------------
 const string PRINT_Learn2H					= "Improve: Fight with two-handed weapons";
-const string PRINT_Learn2H_and_1H			= "Improve: Fight with two and one-handed weapons";//ADDON geändert M.F. 
+const string PRINT_Learn2H_and_1H			= "Improve: Fight with two and one-handed weapons";//ADDON geÃ¤ndert M.F. 
 // ------ Bow ------------------------------------------------------------------------------------
 const string PRINT_LearnBow					= "Improve: Bow accuracy";
 const string PRINT_LearnBow_and_Crossbow	= "Improve: Bow and crossbow accuracy";
@@ -926,7 +926,7 @@ const string PRINT_NOTHINGTOGET02			= "Nothing there ...";
 const string PRINT_NOTHINGTOGET03			= "Nothing to plunder ...";
 
 // *************************************
-// StringKonstanten	für	Beten
+// StringKonstanten	fÃ¼r	Beten
 // *************************************
 
 const string PRINT_BlessSTR					= "Innos grants you: Strength + ";
@@ -1084,7 +1084,7 @@ const string Pickpocket_100_Female	=	"(It would be damn difficult to steal her p
 const string Pickpocket_120_Female	=	"(It would be nearly impossible to steal her purse.)";
 
 // ****************************************************************************************
-// Relative	Y-Koordinaten für die Bildschirmausgabe	(in	% der aktuellen	Bildhöhe, von oben)
+// Relative	Y-Koordinaten fÃ¼r die Bildschirmausgabe	(in	% der aktuellen	BildhÃ¶he, von oben)
 // ****************************************************************************************
 
 const int YPOS_GoldGiven		= 34;
@@ -1125,13 +1125,13 @@ const string PRINT_ADDON_BELIARSCOURSE_MISSING		= "The weapon cannot be equipped
 // ************************************
 // Vom Programm	ausgelagerte Konstanten
 // ------------------------------------
-// NAMEN NICHT ÄNDERN!
+// NAMEN NICHT Ã„NDERN!
 // ************************************
 
-// Bidschrimausgabe	zum	Thema Schloß öffnen/knacken
+// Bidschrimausgabe	zum	Thema SchloÃŸ Ã¶ffnen/knacken
 const string _STR_MESSAGE_INTERACT_NO_KEY	= "No lockpick or fitting key.";
 
-// Bidschrimausgabe	fürs Tausch-Fenster
+// Bidschrimausgabe	fÃ¼rs Tausch-Fenster
 const string _STR_MESSAGE_TRADE_FAILURE		= "Your trade goods aren't valuable enough."	;
 
 // Trade-Manager

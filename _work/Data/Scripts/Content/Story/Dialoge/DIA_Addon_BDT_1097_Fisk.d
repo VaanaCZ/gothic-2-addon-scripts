@@ -108,12 +108,12 @@ FUNC VOID DIA_Addon_Fisk_Trade_Info()
 	B_Say (other,self,"$TRADE_2");
 	B_GiveTradeInv(self);
 	
-	//Bolzen nachfüllen
+	//Bolzen nachfÃ¼llen
 	if (Npc_HasItems (self, ItRw_Bolt) < 50)
 	{
 		CreateInvItems (self,ItRw_Bolt, (50 - Npc_HasItems (self, ItRw_Bolt))); 
 	};
-	//Pfeile nachfüllen
+	//Pfeile nachfÃ¼llen
 	if (Npc_HasItems (self, ItRw_Arrow) < 50)
 	{
 		CreateInvItems (self,ItRw_Arrow, (50 - Npc_HasItems (self, ItRw_Arrow))); 
@@ -223,7 +223,7 @@ FUNC VOID DIA_Addon_Fisk_Lieferung_Info()
 			{
 				B_GiveInvItems (self, other, ItMw_Streitaxt1,1);
 			}
-			else //1h größer oder beide gleich
+			else //1h grÃ¶ÃŸer oder beide gleich
 			{
 				B_GiveInvItems (self, other, ItMw_Bartaxt,1);
 			};

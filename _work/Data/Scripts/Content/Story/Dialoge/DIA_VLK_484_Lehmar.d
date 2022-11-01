@@ -258,7 +258,7 @@ func void DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen ()
 	};
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Geldzurück
+//	Info GeldzurÃ¼ck
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lehmar_GELDZURUECK		(C_INFO)
 {
@@ -350,7 +350,7 @@ func void DIA_Lehmar_NOCHMALGELD_Info ()
 {
 	AI_Output (other, self, "DIA_Lehmar_NOCHMALGELD_15_00"); //Can I borrow some more money from you?
 
-	if (Npc_KnowsInfo(other, DIA_Lehmar_GELDEINTREIBEN))//Joly: SC hat Schulden nicht ordnungsgemäß zurück gezahlt!
+	if (Npc_KnowsInfo(other, DIA_Lehmar_GELDEINTREIBEN))//Joly: SC hat Schulden nicht ordnungsgemÃ¤ÃŸ zurÃ¼ck gezahlt!
 	|| (Npc_KnowsInfo (other, DIA_Lehmar_BuchWeg))
 	{
 		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_01"); //Do you think I'm stupid? Buzz off!

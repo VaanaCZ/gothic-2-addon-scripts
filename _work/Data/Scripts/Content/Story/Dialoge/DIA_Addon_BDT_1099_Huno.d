@@ -277,7 +277,7 @@ FUNC VOID DIA_Addon_Huno_Attentat_Info()
 
 
 //----------------------------------------------------------------------
-//	Paar Dinge gehört
+//	Paar Dinge gehÃ¶rt
 //----------------------------------------------------------------------
 var int Huno_nochmal;
 var int Huno_SomeThings_PERM;

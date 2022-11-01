@@ -14,7 +14,7 @@ var int History_2_permanent;
 var int History_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory1_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -63,7 +63,7 @@ FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
 	
 };
 
-FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory2_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -109,7 +109,7 @@ FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
 };
 
 
-FUNC VOID Use_BookstandHistory3_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory3_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	

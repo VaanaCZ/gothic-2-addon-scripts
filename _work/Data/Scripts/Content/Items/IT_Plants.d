@@ -523,7 +523,7 @@ INSTANCE ItPl_Planeberry (C_Item)
 
 
 //******************************************************************************************
-//		Pflanze zum brauen von tempor‰ren und permanten Tr‰nken
+//		Pflanze zum brauen von tempor√§ren und permanten Tr√§nken
 //******************************************************************************************
 
 

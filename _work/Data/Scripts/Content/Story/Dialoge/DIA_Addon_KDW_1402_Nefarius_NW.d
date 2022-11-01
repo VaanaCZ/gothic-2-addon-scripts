@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Nefarius_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Nefarius_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Nefarius_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re einfach seine Spruchrolle zu stehlen)";
+	description = "(Es w√§re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Nefarius_NW_PICKPOCKET_Condition()
@@ -261,7 +261,7 @@ func int DIA_Addon_Nefarius_MissingOrnaments_Condition ()
 };
 
 var int MissingOrnamentsCounter;
-const int Addon_NefariussMissingOrnamentsOffer = 100; //Joly:Kohle f¸r ein Ornament
+const int Addon_NefariussMissingOrnamentsOffer = 100; //Joly:Kohle f√ºr ein Ornament
 
 func void DIA_Addon_Nefarius_MissingOrnaments_Info ()
 {
@@ -291,7 +291,7 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info ()
 					AI_Output		(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_03"); //I found them.
 		
 					Npc_RemoveInvItems	(other,	ItMi_Ornament_Addon,	MissingOrnamentsCount);
-					concatText = ConcatStrings(IntToString(MissingOrnamentsCount), PRINT_ItemsGegeben);		// "x Gegenst‰nde gegeben"
+					concatText = ConcatStrings(IntToString(MissingOrnamentsCount), PRINT_ItemsGegeben);		// "x Gegenst√§nde gegeben"
 					AI_PrintScreen (concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 		
 					XP_Addon_BringMissingOrnaments = (MissingOrnamentsCount * XP_Addon_BringMissingOrnament);

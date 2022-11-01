@@ -341,7 +341,7 @@ FUNC VOID DIA_Oric_CanHelp_WhatYouMean ()
 };
 
 //***********************************************
-//	Ich brauche noch Ausrüstung.
+//	Ich brauche noch AusrÃ¼stung.
 //***********************************************
 
 INSTANCE DIA_Oric_NeedStuff   (C_INFO)

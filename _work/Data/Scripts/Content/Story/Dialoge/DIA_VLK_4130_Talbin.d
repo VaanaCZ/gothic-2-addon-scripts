@@ -293,7 +293,7 @@ FUNC VOID DIA_Talbin_PayTeacher_Info()
 		Talbin_TeachAnimalTrophy = TRUE;
 		DIA_Talbin_PayTeacher_noPerm = TRUE;
 	}
-	else	//SC hat keinen Käse
+	else	//SC hat keinen KÃ¤se
 	{
 		AI_Output(other,self,"DIA_Talbin_PayTeacher_15_02"); //I don't have any cheese at the moment!
 		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_03"); //It would just have been too good to be true. Tell me when you've got some!

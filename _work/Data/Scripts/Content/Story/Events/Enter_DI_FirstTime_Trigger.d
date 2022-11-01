@@ -8,11 +8,11 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 	//----- Levelchange verbarrikadieren --------
 	if (Npc_HasItems (hero,ITKE_SHIP_LEVELCHANGE_MIS))
 	{
-		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die Tür wieder zu!!!!
+		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die TÃ¼r wieder zu!!!!
 	};
 	
 	
-	if (hero.attribute[ATR_DEXTERITY] < 15)//Joly:wegen Brückenevent
+	if (hero.attribute[ATR_DEXTERITY] < 15)//Joly:wegen BrÃ¼ckenevent
 	{
 		Wld_InsertItem	(ItPo_Perm_DEX, "FP_ITEM_DI_ENTER_05");
 	};
@@ -21,7 +21,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 //##
 //##	B_ENTER_DRAGONISLAND			
 //##	//Joly: Steht hier, denn hier bin ich sicher, 
-//##	dass alle am start sind und können befüllt werden!
+//##	dass alle am start sind und kÃ¶nnen befÃ¼llt werden!
 //##
 //###############################################
 
@@ -62,7 +62,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 			Log_CreateTopic (TOPIC_MyCrew, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_MyCrew, LOG_RUNNING);
 
-			//----- Die Kapitäne -----
+			//----- Die KapitÃ¤ne -----
 	
 				if ( JorgenIsCaptain == TRUE)	//Jorgen
 				{

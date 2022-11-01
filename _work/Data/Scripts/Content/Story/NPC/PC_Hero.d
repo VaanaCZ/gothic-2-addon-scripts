@@ -101,7 +101,7 @@ instance PC_L20 (NPC_DEFAULT) //Anfang 2. Kapitel - Ende der ADW
 	// ------ XP Setup ------
 	exp				= (500*((slf.level+1)/2)*(slf.level+1));
 	exp_next		= (500*((slf.level+2)/2)*(slf.level+1));
-	lp				= 40; //f¸r Lockpick, SteintafelIII
+	lp				= 40; //f√ºr Lockpick, SteintafelIII
 	
 	// ------ Attribute ------
 	attribute[ATR_STRENGTH] 		= 106; //10+50+46 (40% von 115) //80LP
@@ -149,7 +149,7 @@ instance PC_L40 (NPC_DEFAULT) //Anfang 4. Kapitel (Drachenjagd)
 	// ------ XP Setup ------
 	exp				= (500*((slf.level+1)/2)*(slf.level+1));
 	exp_next		= (500*((slf.level+2)/2)*(slf.level+1));
-	lp				= 60; //f¸r Lockpick, SteintafelIII, PermSTR
+	lp				= 60; //f√ºr Lockpick, SteintafelIII, PermSTR
 	
 	// ------ Attribute ------
 	attribute[ATR_STRENGTH] 		= 159;  //10+80+69 (60% von 115) //170LP
@@ -206,7 +206,7 @@ instance PC_L60 (NPC_DEFAULT) //Anfang 6. Kapitel (Dracheninsel)
 	// ------ XP Setup ------
 	exp				= (500*((slf.level+1)/2)*(slf.level+1));
 	exp_next		= (500*((slf.level+2)/2)*(slf.level+1));
-	lp				= 60; //60; f¸r Lockpick, SteintafelIII, PermSTR
+	lp				= 60; //60; f√ºr Lockpick, SteintafelIII, PermSTR
 	
 	// ------ Attribute ------
 	attribute[ATR_STRENGTH] 		= 228; //10+126+92 (80% von 115) //370LP
@@ -289,11 +289,11 @@ instance PC_E3Mage (NPC_DEFAULT) //PC_E3Mage
 	// ------ sonstige Talente ------
 		
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 			6);
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //h‰ngt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //h√§ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SNEAK, 			1);
 	//Npc_SetTalentSkill	(self, NPC_TALENT_ACROBAT, 		0);
 	
-	//Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//h‰ngt ab von DEX (auf Scriptebene)
+	//Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//h√§ngt ab von DEX (auf Scriptebene)
 	//Npc_SetTalentSkill	(self, NPC_TALENT_SMITH, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_RUNES, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);
@@ -468,11 +468,11 @@ instance PC_E3Paladin (NPC_DEFAULT) //PC_E3Paladin
 	// ------ sonstige Talente ------
 		
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 			0);
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //h‰ngt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //h√§ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SNEAK, 			1);
 	//Npc_SetTalentSkill	(self, NPC_TALENT_ACROBAT, 		0);
 	
-	//Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//h‰ngt ab von DEX (auf Scriptebene)
+	//Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//h√§ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SMITH, 			1);
 	//Npc_SetTalentSkill	(self, NPC_TALENT_RUNES, 			1);
 	//Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);

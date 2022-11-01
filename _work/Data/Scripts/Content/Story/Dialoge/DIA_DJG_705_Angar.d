@@ -420,7 +420,7 @@ func void DIA_AngarDJG_WHATSINTHERE_Info ()
 	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_02"); //It is guarded by a magical creature. I have seen it at night, searching the area. A disgusting thing.
 	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_03"); //It glides back and forth between the trees, and you get the impression that it sucks up all life in its surroundings like a sponge.
 
-	//Log_AddEntry (TOPIC_Dragonhunter,"Ich habe Angar im Minental gefunden. Er vermutet, daﬂ sich in der Felsengruft, wo er sich aufh‰lt, ein Drache befindet, der hier seine untoten Helfer an die Oberfl‰che entsendet.");
+	//Log_AddEntry (TOPIC_Dragonhunter,"Ich habe Angar im Minental gefunden. Er vermutet, da√ü sich in der Felsengruft, wo er sich aufh√§lt, ein Drache befindet, der hier seine untoten Helfer an die Oberfl√§che entsendet.");
 	B_LogEntry (TOPIC_Dragonhunter,"I found Angar in the Valley of Mines.");
 };
 

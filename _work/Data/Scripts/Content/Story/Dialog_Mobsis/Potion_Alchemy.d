@@ -3,7 +3,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benˆtigtes Item daf¸r: ItMi_Flask
+// ben√∂tigtes Item daf√ºr: ItMi_Flask
 // *****************************************************
 FUNC VOID POTIONALCHEMY_S1 ()
 {
@@ -49,7 +49,7 @@ FUNC VOID PC_PotionAlchemy_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Tr‰nke herstellen  Dialoge 
+//Tr√§nke herstellen  Dialoge 
 //--------
 //********************************************************
 
@@ -296,7 +296,7 @@ FUNC VOID PC_Charge_InnosEye_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Mana Tr‰nke 
+//Mana Tr√§nke 
 //*******************************************************
 var int ManaStart;
 //----------------------
@@ -507,7 +507,7 @@ FUNC VOID PC_ItPo_Mana_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Heiltr‰nke 
+//Heiltr√§nke 
 //*******************************************************
 var int HealthStart;
 //----------------------
@@ -717,7 +717,7 @@ FUNC VOID PC_ItPo_Health_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//Spezielle Tr‰nke 
+//Spezielle Tr√§nke 
 //*******************************************************
 var int SpecialStart;
 //----------------------
@@ -1110,7 +1110,7 @@ FUNC VOID PC_ItMi_Joint_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//	Gr¸nen Novizen herstellen
+//	Gr√ºnen Novizen herstellen
 //*******************************************************
 INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 {
