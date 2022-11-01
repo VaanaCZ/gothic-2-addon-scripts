@@ -1,7 +1,7 @@
 instance BDT_1014_Bandit_L (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Απΰγξ"; 
+	name 		= "Π‘Ρ€Π°Π³ΠΎ"; 
 	guild 		= GIL_BDT;
 	id 			= 1014;
 	voice 		= 6;

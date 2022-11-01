@@ -66,7 +66,7 @@ INSTANCE DIA_Alwin_Sheep(C_INFO)
 	condition	= DIA_Alwin_Sheep_Condition;
 	information	= DIA_Alwin_Sheep_Info;
 	permanent	= FALSE;
-	description = "Это твои овцы?";
+	description = "Р­С‚Рѕ С‚РІРѕРё РѕРІС†С‹?";
 };                       
 FUNC INT DIA_Alwin_Sheep_Condition()
 {
@@ -74,9 +74,9 @@ FUNC INT DIA_Alwin_Sheep_Condition()
 };
 FUNC VOID DIA_Alwin_Sheep_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_Sheep_15_00"); //Это твои овцы?
-	AI_Output (self ,other,"DIA_Alwin_Sheep_12_01"); //Единственная овца, что принадлежит мне, отзывается на имя Люси. (смеется) Это моя жена - Люси.
-	AI_Output (self ,other,"DIA_Alwin_Sheep_12_02"); //Эти овцы принадлежат ополчению. Они забирают их у фермеров и приводят ко мне.
+	AI_Output (other, self,"DIA_Alwin_Sheep_15_00"); //Р­С‚Рѕ С‚РІРѕРё РѕРІС†С‹?
+	AI_Output (self ,other,"DIA_Alwin_Sheep_12_01"); //Р•РґРёРЅСЃС‚РІРµРЅРЅР°СЏ РѕРІС†Р°, С‡С‚Рѕ РїСЂРёРЅР°РґР»РµР¶РёС‚ РјРЅРµ, РѕС‚Р·С‹РІР°РµС‚СЃСЏ РЅР° РёРјСЏ Р›СЋСЃРё. (СЃРјРµРµС‚СЃСЏ) Р­С‚Рѕ РјРѕСЏ Р¶РµРЅР° - Р›СЋСЃРё.
+	AI_Output (self ,other,"DIA_Alwin_Sheep_12_02"); //Р­С‚Рё РѕРІС†С‹ РїСЂРёРЅР°РґР»РµР¶Р°С‚ РѕРїРѕР»С‡РµРЅРёСЋ. РћРЅРё Р·Р°Р±РёСЂР°СЋС‚ РёС… Сѓ С„РµСЂРјРµСЂРѕРІ Рё РїСЂРёРІРѕРґСЏС‚ РєРѕ РјРЅРµ.
 };
 //***************************************************
 //		Der irre Fellan
@@ -100,10 +100,10 @@ FUNC INT DIA_Alwin_Fellan_Condition()
 };
 FUNC VOID DIA_Alwin_Fellan_Info()
 {	
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_00"); //Ох, этот стук молотка этого сумасшедшего скоро и меня сведет с ума.
-	AI_Output (other, self,"DIA_Alwin_Fellan_15_01"); //О ком ты говоришь?
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_02"); //Разве ты не слышишь стук молотка? Кто, как ты думаешь, колотит дни напролет в портовом квартале?
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_03"); //Я имею в виду этого психа Феллана. Он стучит молотком по своей хижине каждый день.
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_00"); //РћС…, СЌС‚РѕС‚ СЃС‚СѓРє РјРѕР»РѕС‚РєР° СЌС‚РѕРіРѕ СЃСѓРјР°СЃС€РµРґС€РµРіРѕ СЃРєРѕСЂРѕ Рё РјРµРЅСЏ СЃРІРµРґРµС‚ СЃ СѓРјР°.
+	AI_Output (other, self,"DIA_Alwin_Fellan_15_01"); //Рћ РєРѕРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ?
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_02"); //Р Р°Р·РІРµ С‚С‹ РЅРµ СЃР»С‹С€РёС€СЊ СЃС‚СѓРє РјРѕР»РѕС‚РєР°? РљС‚Рѕ, РєР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, РєРѕР»РѕС‚РёС‚ РґРЅРё РЅР°РїСЂРѕР»РµС‚ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ?
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_03"); //РЇ РёРјРµСЋ РІ РІРёРґСѓ СЌС‚РѕРіРѕ РїСЃРёС…Р° Р¤РµР»Р»Р°РЅР°. РћРЅ СЃС‚СѓС‡РёС‚ РјРѕР»РѕС‚РєРѕРј РїРѕ СЃРІРѕРµР№ С…РёР¶РёРЅРµ РєР°Р¶РґС‹Р№ РґРµРЅСЊ.
 };
 //***************************************************
 //		Der irre Fellan
@@ -115,7 +115,7 @@ INSTANCE DIA_Alwin_FellanRunning (C_INFO)
 	condition	= DIA_Alwin_FellanRunning_Condition;
 	information	= DIA_Alwin_FellanRunning_Info;
 	permanent	= FALSE;
-	description = "Я могу поговорить с Фелланом ...";
+	description = "РЇ РјРѕРіСѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р¤РµР»Р»Р°РЅРѕРј ...";
 };                       
 FUNC INT DIA_Alwin_FellanRunning_Condition()
 {	
@@ -127,45 +127,45 @@ FUNC INT DIA_Alwin_FellanRunning_Condition()
 };
 FUNC VOID DIA_Alwin_FellanRunning_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_00"); //Я могу поговорить с Фелланом ...
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_01"); //Ты хочешь помочь мне? А зачем тебе это?
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_02"); //Ты скажи мне.
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_03"); //Ох, вот ты как! Хорошо - если ты заставишь его перестать молотить, я заплачу тебе 25 золотых монет.
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_04"); //Но я скажу тебе сразу - ты не сможешь уговорить этого парня. Он сошел с ума. Единственное, что может помочь, это несколько хороших тумаков!
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_00"); //РЇ РјРѕРіСѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р¤РµР»Р»Р°РЅРѕРј ...
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_01"); //РўС‹ С…РѕС‡РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ? Рђ Р·Р°С‡РµРј С‚РµР±Рµ СЌС‚Рѕ?
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_02"); //РўС‹ СЃРєР°Р¶Рё РјРЅРµ.
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_03"); //РћС…, РІРѕС‚ С‚С‹ РєР°Рє! РҐРѕСЂРѕС€Рѕ - РµСЃР»Рё С‚С‹ Р·Р°СЃС‚Р°РІРёС€СЊ РµРіРѕ РїРµСЂРµСЃС‚Р°С‚СЊ РјРѕР»РѕС‚РёС‚СЊ, СЏ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ 25 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_04"); //РќРѕ СЏ СЃРєР°Р¶Сѓ С‚РµР±Рµ СЃСЂР°Р·Сѓ - С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ СѓРіРѕРІРѕСЂРёС‚СЊ СЌС‚РѕРіРѕ РїР°СЂРЅСЏ. РћРЅ СЃРѕС€РµР» СЃ СѓРјР°. Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ, СЌС‚Рѕ РЅРµСЃРєРѕР»СЊРєРѕ С…РѕСЂРѕС€РёС… С‚СѓРјР°РєРѕРІ!
 	
 	MIS_AttackFellan = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Alwin,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Alwin,LOG_RUNNING);
-	B_LogEntry (TOPIC_Alwin,"Алвин хочет, чтобы я заставил Феллана перестать колотить молотком. Впрочем, убивать его за это не стоит.");
+	B_LogEntry (TOPIC_Alwin,"РђР»РІРёРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ Р·Р°СЃС‚Р°РІРёР» Р¤РµР»Р»Р°РЅР° РїРµСЂРµСЃС‚Р°С‚СЊ РєРѕР»РѕС‚РёС‚СЊ РјРѕР»РѕС‚РєРѕРј. Р’РїСЂРѕС‡РµРј, СѓР±РёРІР°С‚СЊ РµРіРѕ Р·Р° СЌС‚Рѕ РЅРµ СЃС‚РѕРёС‚.");
 		
 	
 	Info_ClearChoices (DIA_Alwin_FellanRunning);
-	Info_AddChoice (DIA_Alwin_FellanRunning, "Я посмотрю, что можно сделать ...", DIA_Alwin_FellanRunning_Ok);
+	Info_AddChoice (DIA_Alwin_FellanRunning, "РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ ...", DIA_Alwin_FellanRunning_Ok);
 	if (hero.guild != GIL_MIL)
 	&& (hero.guild != GIL_PAL)
 	&& (hero.guild != GIL_KDF)
 	{
-		Info_AddChoice (DIA_Alwin_FellanRunning, "Если я начну бить его, у меня будут проблемы с ополчением ...", DIA_Alwin_FellanRunning_Problems);
+		Info_AddChoice (DIA_Alwin_FellanRunning, "Р•СЃР»Рё СЏ РЅР°С‡РЅСѓ Р±РёС‚СЊ РµРіРѕ, Сѓ РјРµРЅСЏ Р±СѓРґСѓС‚ РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј ...", DIA_Alwin_FellanRunning_Problems);
 	};
 };
 
 func void DIA_Alwin_FellanRunning_Ok()
 {
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_Ok_15_00"); //Я посмотрю, что можно сделать ...
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_Ok_12_01"); //Подумай об этом. И помни, я заплачу тебе 25 золотых.
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_Ok_15_00"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ ...
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_Ok_12_01"); //РџРѕРґСѓРјР°Р№ РѕР± СЌС‚РѕРј. Р РїРѕРјРЅРё, СЏ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ 25 Р·РѕР»РѕС‚С‹С….
 	
 	Info_ClearChoices (DIA_Alwin_FellanRunning);
 };
 
 func void DIA_Alwin_FellanRunning_Problems()
 {
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_Problems_15_00"); //Если я начну бить его, у меня будут проблемы с ополчением ...
-	AI_Output (self ,other,"DIA_Alwin_Add_12_00"); //Здесь, в порту, никто не обращает внимания на драки ...
-	AI_Output (self ,other,"DIA_Alwin_Add_12_01"); //Но если ты украдешь что-нибудь, или убьешь овцу, у тебя будут большие проблемы.
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_Problems_15_00"); //Р•СЃР»Рё СЏ РЅР°С‡РЅСѓ Р±РёС‚СЊ РµРіРѕ, Сѓ РјРµРЅСЏ Р±СѓРґСѓС‚ РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј ...
+	AI_Output (self ,other,"DIA_Alwin_Add_12_00"); //Р—РґРµСЃСЊ, РІ РїРѕСЂС‚Сѓ, РЅРёРєС‚Рѕ РЅРµ РѕР±СЂР°С‰Р°РµС‚ РІРЅРёРјР°РЅРёСЏ РЅР° РґСЂР°РєРё ...
+	AI_Output (self ,other,"DIA_Alwin_Add_12_01"); //РќРѕ РµСЃР»Рё С‚С‹ СѓРєСЂР°РґРµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РёР»Рё СѓР±СЊРµС€СЊ РѕРІС†Сѓ, Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹.
 
-	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_01"); //Der irre Fellan wird nicht zur Miliz rennen und dich anzeigen. Du kцnntest hцchstens ein Problem bekommen, wenn seine Nachbarn was davon mitbekommen.
-	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_02"); //Schlдgereien sind hier nicht gerne gesehen, und je mehr Zeugen es gibt, desto schlimmer wird die Sache.
+	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_01"); //Der irre Fellan wird nicht zur Miliz rennen und dich anzeigen. Du kС†nntest hС†chstens ein Problem bekommen, wenn seine Nachbarn was davon mitbekommen.
+	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_02"); //SchlРґgereien sind hier nicht gerne gesehen, und je mehr Zeugen es gibt, desto schlimmer wird die Sache.
 	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_03"); //Aber wenn du ihn dazu bringst, dass ER dich angreift, werden alle Leute, die den Kampf mitkriegen, auf deiner Seite sein.
 };
 
@@ -179,7 +179,7 @@ INSTANCE DIA_Alwin_FellanSuccess(C_INFO)
 	condition	= DIA_Alwin_FellanSuccess_Condition;
 	information	= DIA_Alwin_FellanSuccess_Info;
 	permanent	= FALSE;
-	description	= "Феллан больше не будет стучать.";
+	description	= "Р¤РµР»Р»Р°РЅ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґРµС‚ СЃС‚СѓС‡Р°С‚СЊ.";
 };                       
 FUNC INT DIA_Alwin_FellanSuccess_Condition()
 {	
@@ -192,12 +192,12 @@ FUNC INT DIA_Alwin_FellanSuccess_Condition()
 };
 FUNC VOID DIA_Alwin_FellanSuccess_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_FellanSuccess_15_00"); //Феллан больше не будет стучать.
-	AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_01"); //Надо же! Больше нет этого стука. Наконец-то. Я уж думал, он никогда не перестанет.
+	AI_Output (other, self,"DIA_Alwin_FellanSuccess_15_00"); //Р¤РµР»Р»Р°РЅ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґРµС‚ СЃС‚СѓС‡Р°С‚СЊ.
+	AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_01"); //РќР°РґРѕ Р¶Рµ! Р‘РѕР»СЊС€Рµ РЅРµС‚ СЌС‚РѕРіРѕ СЃС‚СѓРєР°. РќР°РєРѕРЅРµС†-С‚Рѕ. РЇ СѓР¶ РґСѓРјР°Р», РѕРЅ РЅРёРєРѕРіРґР° РЅРµ РїРµСЂРµСЃС‚Р°РЅРµС‚.
 	
 	if (Npc_IsDead (Fellan) == FALSE) 
 	{
-		AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_02"); //Ты оказал мне большую услугу. Знаешь что, я дам тебе 30 золотых монет.
+		AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_02"); //РўС‹ РѕРєР°Р·Р°Р» РјРЅРµ Р±РѕР»СЊС€СѓСЋ СѓСЃР»СѓРіСѓ. Р—РЅР°РµС€СЊ С‡С‚Рѕ, СЏ РґР°Рј С‚РµР±Рµ 30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 		
 		B_GiveInvItems (self, other, ItMi_Gold, 30);
 		
@@ -219,7 +219,7 @@ INSTANCE DIA_Alwin_Endlos(C_INFO)
 	condition	= DIA_Alwin_Endlos_Condition;
 	information	= DIA_Alwin_Endlos_Info;
 	permanent	= TRUE;
-	description	= "Как твои овцы?";
+	description	= "РљР°Рє С‚РІРѕРё РѕРІС†С‹?";
 };                       
 FUNC INT DIA_Alwin_Endlos_Condition()
 {	
@@ -230,43 +230,43 @@ FUNC INT DIA_Alwin_Endlos_Condition()
 };
 FUNC VOID DIA_Alwin_Endlos_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_Endlos_15_00"); //Как твои овцы?
+	AI_Output (other, self,"DIA_Alwin_Endlos_15_00"); //РљР°Рє С‚РІРѕРё РѕРІС†С‹?
 	
 	if (MIS_AttackFellan != LOG_SUCCESS)
 	&& (Npc_IsDead (Fellan) == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_01"); //Стук этого Феллана сведет их с ума. Однажды они все разбегутся.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_01"); //РЎС‚СѓРє СЌС‚РѕРіРѕ Р¤РµР»Р»Р°РЅР° СЃРІРµРґРµС‚ РёС… СЃ СѓРјР°. РћРґРЅР°Р¶РґС‹ РѕРЅРё РІСЃРµ СЂР°Р·Р±РµРіСѓС‚СЃСЏ.
 		
 	}
 	else if (Kapitel <= 2)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_02"); //Овцы едят и становятся все толще и толще. Прямо как моя жена. ХАХАХА (громко смеется)
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_02"); //РћРІС†С‹ РµРґСЏС‚ Рё СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ РІСЃРµ С‚РѕР»С‰Рµ Рё С‚РѕР»С‰Рµ. РџСЂСЏРјРѕ РєР°Рє РјРѕСЏ Р¶РµРЅР°. РҐРђРҐРђРҐРђ (РіСЂРѕРјРєРѕ СЃРјРµРµС‚СЃСЏ)
 	}
 	else if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_03"); //Я, пожалуй, забью одну из них. На мясо для последней трапезы!
-			AI_Output (other, self,"DIA_Alwin_Endlos_15_04"); //Для кого?
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_05"); //Для наемника, который убил паладина. Конечно же, его казнят.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_06"); //Мне только нужно решить, какую из них отправить на бойню.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_03"); //РЇ, РїРѕР¶Р°Р»СѓР№, Р·Р°Р±СЊСЋ РѕРґРЅСѓ РёР· РЅРёС…. РќР° РјСЏСЃРѕ РґР»СЏ РїРѕСЃР»РµРґРЅРµР№ С‚СЂР°РїРµР·С‹!
+			AI_Output (other, self,"DIA_Alwin_Endlos_15_04"); //Р”Р»СЏ РєРѕРіРѕ?
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_05"); //Р”Р»СЏ РЅР°РµРјРЅРёРєР°, РєРѕС‚РѕСЂС‹Р№ СѓР±РёР» РїР°Р»Р°РґРёРЅР°. РљРѕРЅРµС‡РЅРѕ Р¶Рµ, РµРіРѕ РєР°Р·РЅСЏС‚.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_06"); //РњРЅРµ С‚РѕР»СЊРєРѕ РЅСѓР¶РЅРѕ СЂРµС€РёС‚СЊ, РєР°РєСѓСЋ РёР· РЅРёС… РѕС‚РїСЂР°РІРёС‚СЊ РЅР° Р±РѕР№РЅСЋ.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_07"); //Люси очень повезло, что она осталась в живых.
-			AI_Output (other, self,"DIA_Alwin_Endlos_15_08"); //Я думал, что Люси - это твоя жена.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_09"); //Правильно, но я также назвал эту овцу Люси. Я имею в виду овцу, которая была предназначена для последней трапезы Беннета.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_10"); //Но все кончилось хорошо. Люси должна быть рада.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_07"); //Р›СЋСЃРё РѕС‡РµРЅСЊ РїРѕРІРµР·Р»Рѕ, С‡С‚Рѕ РѕРЅР° РѕСЃС‚Р°Р»Р°СЃСЊ РІ Р¶РёРІС‹С….
+			AI_Output (other, self,"DIA_Alwin_Endlos_15_08"); //РЇ РґСѓРјР°Р», С‡С‚Рѕ Р›СЋСЃРё - СЌС‚Рѕ С‚РІРѕСЏ Р¶РµРЅР°.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_09"); //РџСЂР°РІРёР»СЊРЅРѕ, РЅРѕ СЏ С‚Р°РєР¶Рµ РЅР°Р·РІР°Р» СЌС‚Сѓ РѕРІС†Сѓ Р›СЋСЃРё. РЇ РёРјРµСЋ РІ РІРёРґСѓ РѕРІС†Сѓ, РєРѕС‚РѕСЂР°СЏ Р±С‹Р»Р° РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅР° РґР»СЏ РїРѕСЃР»РµРґРЅРµР№ С‚СЂР°РїРµР·С‹ Р‘РµРЅРЅРµС‚Р°.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_10"); //РќРѕ РІСЃРµ РєРѕРЅС‡РёР»РѕСЃСЊ С…РѕСЂРѕС€Рѕ. Р›СЋСЃРё РґРѕР»Р¶РЅР° Р±С‹С‚СЊ СЂР°РґР°.
 		};
 	}
 	else if (Kapitel == 4)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_11"); //Откровенно говоря, смотреть за тем, как овцы едят - такая скука!
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_11"); //РћС‚РєСЂРѕРІРµРЅРЅРѕ РіРѕРІРѕСЂСЏ, СЃРјРѕС‚СЂРµС‚СЊ Р·Р° С‚РµРј, РєР°Рє РѕРІС†С‹ РµРґСЏС‚ - С‚Р°РєР°СЏ СЃРєСѓРєР°!
 	}
 	else	//Kapitel 5
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_12"); //Я говорю им - прощайте. Лорд Хаген приказал, чтобы вес овцы пошли на провиант для его армии.
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_13"); //Ну, теперь я хотя бы буду проводить больше времени со своей женой.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_12"); //РЇ РіРѕРІРѕСЂСЋ РёРј - РїСЂРѕС‰Р°Р№С‚Рµ. Р›РѕСЂРґ РҐР°РіРµРЅ РїСЂРёРєР°Р·Р°Р», С‡С‚РѕР±С‹ РІРµСЃ РѕРІС†С‹ РїРѕС€Р»Рё РЅР° РїСЂРѕРІРёР°РЅС‚ РґР»СЏ РµРіРѕ Р°СЂРјРёРё.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_13"); //РќСѓ, С‚РµРїРµСЂСЊ СЏ С…РѕС‚СЏ Р±С‹ Р±СѓРґСѓ РїСЂРѕРІРѕРґРёС‚СЊ Р±РѕР»СЊС€Рµ РІСЂРµРјРµРЅРё СЃРѕ СЃРІРѕРµР№ Р¶РµРЅРѕР№.
 	};
 };
 

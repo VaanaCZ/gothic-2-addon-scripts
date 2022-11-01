@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------
-//				Weitere Buchstдnder in der Magierbibliothek
+//				Weitere BuchstРґnder in der Magierbibliothek
 //-------------------------------------------------------------------------------------
 //				Runensteine 
 //-------------------------------------------------------------------------------------
@@ -21,8 +21,8 @@ FUNC VOID Use_Bookstand_Rune_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Страница 1"					);
-					Doc_PrintLine	( nDocID,  0, "Рунные камни"					);
+					Doc_PrintLine	( nDocID,  0, "РЎС‚СЂР°РЅРёС†Р° 1"					);
+					Doc_PrintLine	( nDocID,  0, "Р СѓРЅРЅС‹Рµ РєР°РјРЅРё"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -30,7 +30,7 @@ FUNC VOID Use_Bookstand_Rune_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Страница 2"					);
+					Doc_PrintLine	( nDocID,  1, "РЎС‚СЂР°РЅРёС†Р° 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -57,8 +57,8 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Страница 1"					);
-					Doc_PrintLine	( nDocID,  0, "Руны и ингредиенты"	);
+					Doc_PrintLine	( nDocID,  0, "РЎС‚СЂР°РЅРёС†Р° 1"					);
+					Doc_PrintLine	( nDocID,  0, "Р СѓРЅС‹ Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -66,7 +66,7 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Страница 2"					);
+					Doc_PrintLine	( nDocID,  1, "РЎС‚СЂР°РЅРёС†Р° 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -93,8 +93,8 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Страница 1"					);
-					Doc_PrintLine	( nDocID,  0, "Учение Инноса"	);
+					Doc_PrintLine	( nDocID,  0, "РЎС‚СЂР°РЅРёС†Р° 1"					);
+					Doc_PrintLine	( nDocID,  0, "РЈС‡РµРЅРёРµ РРЅРЅРѕСЃР°"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -102,7 +102,7 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Страница 2"					);
+					Doc_PrintLine	( nDocID,  1, "РЎС‚СЂР°РЅРёС†Р° 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -129,8 +129,8 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Страница 1"					);
-					Doc_PrintLine	( nDocID,  0, "Заповеди Инноса"	);
+					Doc_PrintLine	( nDocID,  0, "РЎС‚СЂР°РЅРёС†Р° 1"					);
+					Doc_PrintLine	( nDocID,  0, "Р—Р°РїРѕРІРµРґРё РРЅРЅРѕСЃР°"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -138,7 +138,7 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Страница 2"					);
+					Doc_PrintLine	( nDocID,  1, "РЎС‚СЂР°РЅРёС†Р° 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -165,42 +165,42 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "ПЕРВЫЙ КРУГ"					);
+					Doc_PrintLine	( nDocID,  0, "РџР•Р Р’Р«Р™ РљР РЈР“"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Руны 1-го круга и ингредиенты, необходимые для их создания.");
+					Doc_PrintLines	( nDocID,  0, "Р СѓРЅС‹ 1-РіРѕ РєСЂСѓРіР° Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹, РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ РёС… СЃРѕР·РґР°РЅРёСЏ.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Свет");
-					Doc_PrintLine	( nDocID,  0, "Золотая монета");
+					Doc_PrintLine	( nDocID,  0, "РЎРІРµС‚");
+					Doc_PrintLine	( nDocID,  0, "Р—РѕР»РѕС‚Р°СЏ РјРѕРЅРµС‚Р°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Огненная стрела");
-					Doc_PrintLine	( nDocID,  0, "Сера");
+					Doc_PrintLine	( nDocID,  0, "РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Малая молния");
-					Doc_PrintLine	( nDocID,  0, "Горный хрусталь");
+					Doc_PrintLine	( nDocID,  0, "РњР°Р»Р°СЏ РјРѕР»РЅРёСЏ");
+					Doc_PrintLine	( nDocID,  0, "Р“РѕСЂРЅС‹Р№ С…СЂСѓСЃС‚Р°Р»СЊ");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Скелет гоблина");
-					Doc_PrintLine	( nDocID,  0, "Кость гоблина");
+					Doc_PrintLine	( nDocID,  0, "РЎРєРµР»РµС‚ РіРѕР±Р»РёРЅР°");
+					Doc_PrintLine	( nDocID,  0, "РљРѕСЃС‚СЊ РіРѕР±Р»РёРЅР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Лечение легких ранений");
-					Doc_PrintLine	( nDocID,  0, "Лечебная трава");
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµРЅРёРµ Р»РµРіРєРёС… СЂР°РЅРµРЅРёР№");
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµР±РЅР°СЏ С‚СЂР°РІР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Чтобы создать руну, всегда необходим ОДИН из вышеперечисленных ингредиентов."					);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ, РІСЃРµРіРґР° РЅРµРѕР±С…РѕРґРёРј РћР”РРќ РёР· РІС‹С€РµРїРµСЂРµС‡РёСЃР»РµРЅРЅС‹С… РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Маг должен знать формулу заклинания и должен иметь чистый рунный камень и свиток желаемого заклинания."					);
+					Doc_PrintLines	( nDocID,  1, "РњР°Рі РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ С„РѕСЂРјСѓР»Сѓ Р·Р°РєР»РёРЅР°РЅРёСЏ Рё РґРѕР»Р¶РµРЅ РёРјРµС‚СЊ С‡РёСЃС‚С‹Р№ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ Рё СЃРІРёС‚РѕРє Р¶РµР»Р°РµРјРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Только при выполнении этих условий он может приступить к работе за рунным столом."					);
+					Doc_PrintLines	( nDocID,  1, "РўРѕР»СЊРєРѕ РїСЂРё РІС‹РїРѕР»РЅРµРЅРёРё СЌС‚РёС… СѓСЃР»РѕРІРёР№ РѕРЅ РјРѕР¶РµС‚ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє СЂР°Р±РѕС‚Рµ Р·Р° СЂСѓРЅРЅС‹Рј СЃС‚РѕР»РѕРј."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -223,44 +223,44 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "ВТОРОЙ КРУГ"					);
+					Doc_PrintLine	( nDocID,  0, "Р’РўРћР РћР™ РљР РЈР“"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Руны 2-го круга и ингредиенты, необходимые для их создания.");
+					Doc_PrintLines	( nDocID,  0, "Р СѓРЅС‹ 2-РіРѕ РєСЂСѓРіР° Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹, РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ РёС… СЃРѕР·РґР°РЅРёСЏ.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Огненный шар");
-					Doc_PrintLine	( nDocID,  0, "Смола");
+					Doc_PrintLine	( nDocID,  0, "РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ");
+					Doc_PrintLine	( nDocID,  0, "РЎРјРѕР»Р°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Ледяная стрела");
-					Doc_PrintLine	( nDocID,  0, "Ледяной кварц");
+					Doc_PrintLine	( nDocID,  0, "Р›РµРґСЏРЅР°СЏ СЃС‚СЂРµР»Р°");
+					Doc_PrintLine	( nDocID,  0, "Р›РµРґСЏРЅРѕР№ РєРІР°СЂС†");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Вызов волка");
-					Doc_PrintLine	( nDocID,  0, "Шкура волка");
+					Doc_PrintLine	( nDocID,  0, "Р’С‹Р·РѕРІ РІРѕР»РєР°");
+					Doc_PrintLine	( nDocID,  0, "РЁРєСѓСЂР° РІРѕР»РєР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Кулак ветра");
-					Doc_PrintLine	( nDocID,  0, "Уголь");
+					Doc_PrintLine	( nDocID,  0, "РљСѓР»Р°Рє РІРµС‚СЂР°");
+					Doc_PrintLine	( nDocID,  0, "РЈРіРѕР»СЊ");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Сон");
-					Doc_PrintLine	( nDocID,  0, "Болотная трава");
+					Doc_PrintLine	( nDocID,  0, "РЎРѕРЅ");
+					Doc_PrintLine	( nDocID,  0, "Р‘РѕР»РѕС‚РЅР°СЏ С‚СЂР°РІР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Чтобы создать руну, всегда необходим ОДИН из вышеперечисленных ингредиентов."					);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ, РІСЃРµРіРґР° РЅРµРѕР±С…РѕРґРёРј РћР”РРќ РёР· РІС‹С€РµРїРµСЂРµС‡РёСЃР»РµРЅРЅС‹С… РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Маг должен знать формулу заклинания и должен иметь чистый рунный камень и свиток желаемого заклинания."					);
+					Doc_PrintLines	( nDocID,  1, "РњР°Рі РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ С„РѕСЂРјСѓР»Сѓ Р·Р°РєР»РёРЅР°РЅРёСЏ Рё РґРѕР»Р¶РµРЅ РёРјРµС‚СЊ С‡РёСЃС‚С‹Р№ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ Рё СЃРІРёС‚РѕРє Р¶РµР»Р°РµРјРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Только при выполнении этих условий он может приступить к работе за рунным столом."					);
+					Doc_PrintLines	( nDocID,  1, "РўРѕР»СЊРєРѕ РїСЂРё РІС‹РїРѕР»РЅРµРЅРёРё СЌС‚РёС… СѓСЃР»РѕРІРёР№ РѕРЅ РјРѕР¶РµС‚ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє СЂР°Р±РѕС‚Рµ Р·Р° СЂСѓРЅРЅС‹Рј СЃС‚РѕР»РѕРј."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -284,53 +284,53 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "ТРЕТИЙ КРУГ"					);
+					Doc_PrintLine	( nDocID,  0, "РўР Р•РўРР™ РљР РЈР“"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Руны 3-го круга и ингредиенты, необходимые для их создания.");
+					Doc_PrintLines	( nDocID,  0, "Р СѓРЅС‹ 3-РіРѕ РєСЂСѓРіР° Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹, РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ РёС… СЃРѕР·РґР°РЅРёСЏ.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Лечение средних ранений");
-					Doc_PrintLine	( nDocID,  0, "Лечебное растение");
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµРЅРёРµ СЃСЂРµРґРЅРёС… СЂР°РЅРµРЅРёР№");
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµР±РЅРѕРµ СЂР°СЃС‚РµРЅРёРµ");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Малая огненная буря");
-					Doc_PrintLine	( nDocID,  0, "Смола");
-					Doc_PrintLine	( nDocID,  0, "Сера");
+					Doc_PrintLine	( nDocID,  0, "РњР°Р»Р°СЏ РѕРіРЅРµРЅРЅР°СЏ Р±СѓСЂСЏ");
+					Doc_PrintLine	( nDocID,  0, "РЎРјРѕР»Р°");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Создание скелета");
-					Doc_PrintLine	( nDocID,  0, "Кость скелета");
+					Doc_PrintLine	( nDocID,  0, "РЎРѕР·РґР°РЅРёРµ СЃРєРµР»РµС‚Р°");
+					Doc_PrintLine	( nDocID,  0, "РљРѕСЃС‚СЊ СЃРєРµР»РµС‚Р°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Страх");
-					Doc_PrintLine	( nDocID,  0, "Черный жемчуг");
+					Doc_PrintLine	( nDocID,  0, "РЎС‚СЂР°С…");
+					Doc_PrintLine	( nDocID,  0, "Р§РµСЂРЅС‹Р№ Р¶РµРјС‡СѓРі");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Ледяной блок");
-					Doc_PrintLine	( nDocID,  0, "Ледяной кварц");
-					Doc_PrintLine	( nDocID,  0, "Аквамарин");
+					Doc_PrintLine	( nDocID,  0, "Р›РµРґСЏРЅРѕР№ Р±Р»РѕРє");
+					Doc_PrintLine	( nDocID,  0, "Р›РµРґСЏРЅРѕР№ РєРІР°СЂС†");
+					Doc_PrintLine	( nDocID,  0, "РђРєРІР°РјР°СЂРёРЅ");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Шаровая молния");
-					Doc_PrintLine	( nDocID,  0, "Горный хрусталь");
-					Doc_PrintLine	( nDocID,  0, "Сера");
+					Doc_PrintLine	( nDocID,  0, "РЁР°СЂРѕРІР°СЏ РјРѕР»РЅРёСЏ");
+					Doc_PrintLine	( nDocID,  0, "Р“РѕСЂРЅС‹Р№ С…СЂСѓСЃС‚Р°Р»СЊ");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  0, "Огненный шар");
-					Doc_PrintLine	( nDocID,  0, "Смола");
-					Doc_PrintLine	( nDocID,  0, "Сера");
+					Doc_PrintLine	( nDocID,  0, "РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ");
+					Doc_PrintLine	( nDocID,  0, "РЎРјРѕР»Р°");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂР°");
 					Doc_PrintLine	( nDocID,  0, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Чтобы создать руну, всегда необходим ОДИН из вышеперечисленных ингредиентов."					);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ, РІСЃРµРіРґР° РЅРµРѕР±С…РѕРґРёРј РћР”РРќ РёР· РІС‹С€РµРїРµСЂРµС‡РёСЃР»РµРЅРЅС‹С… РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Маг должен знать формулу заклинания и должен иметь чистый рунный камень и свиток желаемого заклинания."					);
+					Doc_PrintLines	( nDocID,  1, "РњР°Рі РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ С„РѕСЂРјСѓР»Сѓ Р·Р°РєР»РёРЅР°РЅРёСЏ Рё РґРѕР»Р¶РµРЅ РёРјРµС‚СЊ С‡РёСЃС‚С‹Р№ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ Рё СЃРІРёС‚РѕРє Р¶РµР»Р°РµРјРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Только при выполнении этих условий он может приступить к работе за рунным столом."					);
+					Doc_PrintLines	( nDocID,  1, "РўРѕР»СЊРєРѕ РїСЂРё РІС‹РїРѕР»РЅРµРЅРёРё СЌС‚РёС… СѓСЃР»РѕРІРёР№ РѕРЅ РјРѕР¶РµС‚ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє СЂР°Р±РѕС‚Рµ Р·Р° СЂСѓРЅРЅС‹Рј СЃС‚РѕР»РѕРј."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -354,29 +354,29 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "ЧЕТВЕРТЫЙ КРУГ"					);
+					Doc_PrintLine	( nDocID,  0, "Р§Р•РўР’Р•Р РўР«Р™ РљР РЈР“"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Руны 4-го круга и ингредиенты, необходимые для их создания.");
+					Doc_PrintLines	( nDocID,  0, "Р СѓРЅС‹ 4-РіРѕ РєСЂСѓРіР° Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹, РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ РёС… СЃРѕР·РґР°РЅРёСЏ.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Большой огненный шар");
-					Doc_PrintLine	( nDocID,  0, "Сера");
-					Doc_PrintLine	( nDocID,  0, "Смола");
+					Doc_PrintLine	( nDocID,  0, "Р‘РѕР»СЊС€РѕР№ РѕРіРЅРµРЅРЅС‹Р№ С€Р°СЂ");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂР°");
+					Doc_PrintLine	( nDocID,  0, "РЎРјРѕР»Р°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Молния");
-					Doc_PrintLine	( nDocID,  0, "Горный хрусталь");
-					Doc_PrintLine	( nDocID,  0, "Ледяной кварц");
+					Doc_PrintLine	( nDocID,  0, "РњРѕР»РЅРёСЏ");
+					Doc_PrintLine	( nDocID,  0, "Р“РѕСЂРЅС‹Р№ С…СЂСѓСЃС‚Р°Р»СЊ");
+					Doc_PrintLine	( nDocID,  0, "Р›РµРґСЏРЅРѕР№ РєРІР°СЂС†");
 					Doc_PrintLine	( nDocID,  0, "");				
 					
-					Doc_PrintLine	( nDocID,  0, "Пробуждение голема");
-					Doc_PrintLine	( nDocID,  0, "Сердце каменного голема");
+					Doc_PrintLine	( nDocID,  0, "РџСЂРѕР±СѓР¶РґРµРЅРёРµ РіРѕР»РµРјР°");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂРґС†Рµ РєР°РјРµРЅРЅРѕРіРѕ РіРѕР»РµРјР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Уничтожение нежити");
-					Doc_PrintLine	( nDocID,  0, "Святая вода");
+					Doc_PrintLine	( nDocID,  0, "РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ РЅРµР¶РёС‚Рё");
+					Doc_PrintLine	( nDocID,  0, "РЎРІСЏС‚Р°СЏ РІРѕРґР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
@@ -387,17 +387,17 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					
 					
 			
-					Doc_PrintLines	( nDocID,  1, "Чтобы создать руну, всегда необходим ОДИН из вышеперечисленных ингредиентов."					);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ, РІСЃРµРіРґР° РЅРµРѕР±С…РѕРґРёРј РћР”РРќ РёР· РІС‹С€РµРїРµСЂРµС‡РёСЃР»РµРЅРЅС‹С… РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Маг должен знать формулу заклинания и должен иметь чистый рунный камень и свиток желаемого заклинания."					);
+					Doc_PrintLines	( nDocID,  1, "РњР°Рі РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ С„РѕСЂРјСѓР»Сѓ Р·Р°РєР»РёРЅР°РЅРёСЏ Рё РґРѕР»Р¶РµРЅ РёРјРµС‚СЊ С‡РёСЃС‚С‹Р№ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ Рё СЃРІРёС‚РѕРє Р¶РµР»Р°РµРјРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Только при выполнении этих условий он может приступить к работе за рунным столом."					);
+					Doc_PrintLines	( nDocID,  1, "РўРѕР»СЊРєРѕ РїСЂРё РІС‹РїРѕР»РЅРµРЅРёРё СЌС‚РёС… СѓСЃР»РѕРІРёР№ РѕРЅ РјРѕР¶РµС‚ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє СЂР°Р±РѕС‚Рµ Р·Р° СЂСѓРЅРЅС‹Рј СЃС‚РѕР»РѕРј."					);
 					Doc_Show		( nDocID );
 		
 	};
 };  					
 //-------------------------------------------------------------------------------------
-//				Runen des fьnften Kreises und ihre Ingredenzien
+//				Runen des fСЊnften Kreises und ihre Ingredenzien
 //-------------------------------------------------------------------------------------
 FUNC VOID Use_Bookstand_Kreise_05_S1()		
 {
@@ -415,41 +415,41 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "ПЯТЫЙ КРУГ"					);
+					Doc_PrintLine	( nDocID,  0, "РџРЇРўР«Р™ РљР РЈР“"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Руны 5-го круга и ингредиенты, необходимые для их создания.");
+					Doc_PrintLines	( nDocID,  0, "Р СѓРЅС‹ 5-РіРѕ РєСЂСѓРіР° Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹, РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ РёС… СЃРѕР·РґР°РЅРёСЏ.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Ледяная волна");
-					Doc_PrintLine	( nDocID,  0, "Ледяной кварц");
-					Doc_PrintLine	( nDocID,  0, "Аквамарин");
+					Doc_PrintLine	( nDocID,  0, "Р›РµРґСЏРЅР°СЏ РІРѕР»РЅР°");
+					Doc_PrintLine	( nDocID,  0, "Р›РµРґСЏРЅРѕР№ РєРІР°СЂС†");
+					Doc_PrintLine	( nDocID,  0, "РђРєРІР°РјР°СЂРёРЅ");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Большая огненная буря");
-					Doc_PrintLine	( nDocID,  0, "Сера");
-					Doc_PrintLine	( nDocID,  0, "Огненный язык");
+					Doc_PrintLine	( nDocID,  0, "Р‘РѕР»СЊС€Р°СЏ РѕРіРЅРµРЅРЅР°СЏ Р±СѓСЂСЏ");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂР°");
+					Doc_PrintLine	( nDocID,  0, "РћРіРЅРµРЅРЅС‹Р№ СЏР·С‹Рє");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Вызов демона");
-					Doc_PrintLine	( nDocID,  0, "Сердце демона");
+					Doc_PrintLine	( nDocID,  0, "Р’С‹Р·РѕРІ РґРµРјРѕРЅР°");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂРґС†Рµ РґРµРјРѕРЅР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Лечение тяжелых ранений");
-					Doc_PrintLine	( nDocID,  0, "Лечебный корень");
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµРЅРёРµ С‚СЏР¶РµР»С‹С… СЂР°РЅРµРЅРёР№");
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµР±РЅС‹Р№ РєРѕСЂРµРЅСЊ");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Чтобы создать руну, всегда необходим ОДИН из вышеперечисленных ингредиентов."					);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ, РІСЃРµРіРґР° РЅРµРѕР±С…РѕРґРёРј РћР”РРќ РёР· РІС‹С€РµРїРµСЂРµС‡РёСЃР»РµРЅРЅС‹С… РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Маг должен знать формулу заклинания и должен иметь чистый рунный камень и свиток желаемого заклинания."					);
+					Doc_PrintLines	( nDocID,  1, "РњР°Рі РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ С„РѕСЂРјСѓР»Сѓ Р·Р°РєР»РёРЅР°РЅРёСЏ Рё РґРѕР»Р¶РµРЅ РёРјРµС‚СЊ С‡РёСЃС‚С‹Р№ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ Рё СЃРІРёС‚РѕРє Р¶РµР»Р°РµРјРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Только при выполнении этих условий он может приступить к работе за рунным столом."					);
+					Doc_PrintLines	( nDocID,  1, "РўРѕР»СЊРєРѕ РїСЂРё РІС‹РїРѕР»РЅРµРЅРёРё СЌС‚РёС… СѓСЃР»РѕРІРёР№ РѕРЅ РјРѕР¶РµС‚ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє СЂР°Р±РѕС‚Рµ Р·Р° СЂСѓРЅРЅС‹Рј СЃС‚РѕР»РѕРј."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -473,34 +473,34 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "ШЕСТОЙ КРУГ"					);
+					Doc_PrintLine	( nDocID,  0, "РЁР•РЎРўРћР™ РљР РЈР“"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Руны 6-го круга и ингредиенты, необходимые для их создания.");
+					Doc_PrintLines	( nDocID,  0, "Р СѓРЅС‹ 6-РіРѕ РєСЂСѓРіР° Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹, РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ РёС… СЃРѕР·РґР°РЅРёСЏ.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Огненный дождь");
-					Doc_PrintLine	( nDocID,  0, "Смола");
-					Doc_PrintLine	( nDocID,  0, "Сера");
-					Doc_PrintLine	( nDocID,  0, "Огненный язык");
+					Doc_PrintLine	( nDocID,  0, "РћРіРЅРµРЅРЅС‹Р№ РґРѕР¶РґСЊ");
+					Doc_PrintLine	( nDocID,  0, "РЎРјРѕР»Р°");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂР°");
+					Doc_PrintLine	( nDocID,  0, "РћРіРЅРµРЅРЅС‹Р№ СЏР·С‹Рє");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Дыхание смерти");
-					Doc_PrintLine	( nDocID,  0, "Уголь");
-					Doc_PrintLine	( nDocID,  0, "Черный жемчуг");
+					Doc_PrintLine	( nDocID,  0, "Р”С‹С…Р°РЅРёРµ СЃРјРµСЂС‚Рё");
+					Doc_PrintLine	( nDocID,  0, "РЈРіРѕР»СЊ");
+					Doc_PrintLine	( nDocID,  0, "Р§РµСЂРЅС‹Р№ Р¶РµРјС‡СѓРі");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Волна смерти");
-					Doc_PrintLine	( nDocID,  0, "Кость скелета");
-					Doc_PrintLine	( nDocID,  0, "Черный жемчуг");
+					Doc_PrintLine	( nDocID,  0, "Р’РѕР»РЅР° СЃРјРµСЂС‚Рё");
+					Doc_PrintLine	( nDocID,  0, "РљРѕСЃС‚СЊ СЃРєРµР»РµС‚Р°");
+					Doc_PrintLine	( nDocID,  0, "Р§РµСЂРЅС‹Р№ Р¶РµРјС‡СѓРі");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Армия тьмы");
-					Doc_PrintLine	( nDocID,  0, "Кость скелета");
-					Doc_PrintLine	( nDocID,  0, "Черный жемчуг");
-					Doc_PrintLine	( nDocID,  0, "Сердце каменного голема");
-					Doc_PrintLine	( nDocID,  0,  "Сердце демона");
+					Doc_PrintLine	( nDocID,  0, "РђСЂРјРёСЏ С‚СЊРјС‹");
+					Doc_PrintLine	( nDocID,  0, "РљРѕСЃС‚СЊ СЃРєРµР»РµС‚Р°");
+					Doc_PrintLine	( nDocID,  0, "Р§РµСЂРЅС‹Р№ Р¶РµРјС‡СѓРі");
+					Doc_PrintLine	( nDocID,  0, "РЎРµСЂРґС†Рµ РєР°РјРµРЅРЅРѕРіРѕ РіРѕР»РµРјР°");
+					Doc_PrintLine	( nDocID,  0,  "РЎРµСЂРґС†Рµ РґРµРјРѕРЅР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
@@ -510,17 +510,17 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLine	( nDocID,  1, "Сморщивание монстра");
-					Doc_PrintLine	( nDocID,  1, "Кость гоблина");
-					Doc_PrintLine	( nDocID,  1, "Клык тролля");
+					Doc_PrintLine	( nDocID,  1, "РЎРјРѕСЂС‰РёРІР°РЅРёРµ РјРѕРЅСЃС‚СЂР°");
+					Doc_PrintLine	( nDocID,  1, "РљРѕСЃС‚СЊ РіРѕР±Р»РёРЅР°");
+					Doc_PrintLine	( nDocID,  1, "РљР»С‹Рє С‚СЂРѕР»Р»СЏ");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Чтобы создать руну, всегда необходим ОДИН из вышеперечисленных ингредиентов."					);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ, РІСЃРµРіРґР° РЅРµРѕР±С…РѕРґРёРј РћР”РРќ РёР· РІС‹С€РµРїРµСЂРµС‡РёСЃР»РµРЅРЅС‹С… РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Маг должен знать формулу заклинания и должен иметь чистый рунный камень и свиток желаемого заклинания."					);
+					Doc_PrintLines	( nDocID,  1, "РњР°Рі РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ С„РѕСЂРјСѓР»Сѓ Р·Р°РєР»РёРЅР°РЅРёСЏ Рё РґРѕР»Р¶РµРЅ РёРјРµС‚СЊ С‡РёСЃС‚С‹Р№ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ Рё СЃРІРёС‚РѕРє Р¶РµР»Р°РµРјРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Только при выполнении этих условий он может приступить к работе за рунным столом."					);
+					Doc_PrintLines	( nDocID,  1, "РўРѕР»СЊРєРѕ РїСЂРё РІС‹РїРѕР»РЅРµРЅРёРё СЌС‚РёС… СѓСЃР»РѕРІРёР№ РѕРЅ РјРѕР¶РµС‚ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє СЂР°Р±РѕС‚Рµ Р·Р° СЂСѓРЅРЅС‹Рј СЃС‚РѕР»РѕРј."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -544,8 +544,8 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Страница 1"					);
-					Doc_PrintLine	( nDocID,  0, "Правила"	);
+					Doc_PrintLine	( nDocID,  0, "РЎС‚СЂР°РЅРёС†Р° 1"					);
+					Doc_PrintLine	( nDocID,  0, "РџСЂР°РІРёР»Р°"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -553,7 +553,7 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Страница 2"					);
+					Doc_PrintLine	( nDocID,  1, "РЎС‚СЂР°РЅРёС†Р° 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);

@@ -1,7 +1,7 @@
 INSTANCE PIR_1351_Addon_Samuel (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "—˝Ï˛˝Î¸";
+	name 		= "–°—ç–º—é—ç–ª—å";
 	guild 		= GIL_PIR;
 	id 			= 1351;
 	voice 		= 14;
@@ -19,7 +19,7 @@ INSTANCE PIR_1351_Addon_Samuel (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBAld", Face_B_Saturas, BodyTex_B, ITAR_PIR_L_Addon);	  

@@ -1,7 +1,7 @@
 INSTANCE KDF_510_Hyglas (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "’Ë„Î‡Ò";
+	name 		= "–•–∏–≥–ª–∞—Å";
 	guild 		= GIL_KDF;
 	id 			= 510;
 	voice 		= 14;

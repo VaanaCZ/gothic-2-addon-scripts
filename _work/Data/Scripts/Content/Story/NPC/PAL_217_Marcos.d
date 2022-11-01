@@ -2,7 +2,7 @@
 instance PAL_217_Marcos  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Маркос";
+	name 		= "РњР°СЂРєРѕСЃ";
 	guild 		= GIL_OUT;
 	id 			= 217;
 	voice 		= 4;

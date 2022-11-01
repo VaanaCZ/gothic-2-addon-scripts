@@ -29,7 +29,7 @@ instance DIA_Parlaf_HALLO		(C_INFO)
 	nr		 	 = 	1;
 	condition	 = 	DIA_Parlaf_HALLO_Condition;
 	information	 = 	DIA_Parlaf_HALLO_Info;
-	description	 = 	"Привет, как дела?";
+	description	 = 	"РџСЂРёРІРµС‚, РєР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Parlaf_HALLO_Condition ()
@@ -39,12 +39,12 @@ func int DIA_Parlaf_HALLO_Condition ()
 
 func void DIA_Parlaf_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_HALLO_15_00"); //Привет, как дела?
-	AI_Output (self, other, "DIA_Parlaf_HALLO_03_01"); //А как, по-твоему? Я провел целый день за точильным кругом, затачивая клинки.
+	AI_Output (other, self, "DIA_Parlaf_HALLO_15_00"); //РџСЂРёРІРµС‚, РєР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Parlaf_HALLO_03_01"); //Рђ РєР°Рє, РїРѕ-С‚РІРѕРµРјСѓ? РЇ РїСЂРѕРІРµР» С†РµР»С‹Р№ РґРµРЅСЊ Р·Р° С‚РѕС‡РёР»СЊРЅС‹Рј РєСЂСѓРіРѕРј, Р·Р°С‚Р°С‡РёРІР°СЏ РєР»РёРЅРєРё.
 	if ((Npc_IsDead(Engor))== FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlaf_HALLO_03_02"); //А вчера Энгор опять урезал наш паек. Если он будет продолжать в том же духе, мы все помрем с голода.
-		AI_Output (self, other, "DIA_Parlaf_HALLO_03_03"); //Или нас всех перебьют орки. Не самая радужная перспектива.
+		AI_Output (self, other, "DIA_Parlaf_HALLO_03_02"); //Рђ РІС‡РµСЂР° Р­РЅРіРѕСЂ РѕРїСЏС‚СЊ СѓСЂРµР·Р°Р» РЅР°С€ РїР°РµРє. Р•СЃР»Рё РѕРЅ Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РІ С‚РѕРј Р¶Рµ РґСѓС…Рµ, РјС‹ РІСЃРµ РїРѕРјСЂРµРј СЃ РіРѕР»РѕРґР°.
+		AI_Output (self, other, "DIA_Parlaf_HALLO_03_03"); //РР»Рё РЅР°СЃ РІСЃРµС… РїРµСЂРµР±СЊСЋС‚ РѕСЂРєРё. РќРµ СЃР°РјР°СЏ СЂР°РґСѓР¶РЅР°СЏ РїРµСЂСЃРїРµРєС‚РёРІР°.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -56,7 +56,7 @@ instance DIA_Parlaf_ENGOR		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Parlaf_ENGOR_Condition;
 	information	 = 	DIA_Parlaf_ENGOR_Info;
-	description	 = 	"Кто такой Энгор?";
+	description	 = 	"РљС‚Рѕ С‚Р°РєРѕР№ Р­РЅРіРѕСЂ?";
 };
 
 func int DIA_Parlaf_ENGOR_Condition ()
@@ -69,14 +69,14 @@ func int DIA_Parlaf_ENGOR_Condition ()
 };
 func void DIA_Parlaf_ENGOR_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_00"); //Кто такой Энгор?
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_01"); //Энгор заведует провизией и выдает пайки. А они становятся все меньше с каждой неделей.
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_02"); //Конечно, с ним можно договориться, но только за золото и весьма недешево.
-	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_03"); //А ты не можешь позволить себе это?
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_04"); //За те гроши, что нам платят, я могу купить только пару реп!
+	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_00"); //РљС‚Рѕ С‚Р°РєРѕР№ Р­РЅРіРѕСЂ?
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_01"); //Р­РЅРіРѕСЂ Р·Р°РІРµРґСѓРµС‚ РїСЂРѕРІРёР·РёРµР№ Рё РІС‹РґР°РµС‚ РїР°Р№РєРё. Рђ РѕРЅРё СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ РІСЃРµ РјРµРЅСЊС€Рµ СЃ РєР°Р¶РґРѕР№ РЅРµРґРµР»РµР№.
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_02"); //РљРѕРЅРµС‡РЅРѕ, СЃ РЅРёРј РјРѕР¶РЅРѕ РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ, РЅРѕ С‚РѕР»СЊРєРѕ Р·Р° Р·РѕР»РѕС‚Рѕ Рё РІРµСЃСЊРјР° РЅРµРґРµС€РµРІРѕ.
+	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_03"); //Рђ С‚С‹ РЅРµ РјРѕР¶РµС€СЊ РїРѕР·РІРѕР»РёС‚СЊ СЃРµР±Рµ СЌС‚Рѕ?
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_04"); //Р—Р° С‚Рµ РіСЂРѕС€Рё, С‡С‚Рѕ РЅР°Рј РїР»Р°С‚СЏС‚, СЏ РјРѕРіСѓ РєСѓРїРёС‚СЊ С‚РѕР»СЊРєРѕ РїР°СЂСѓ СЂРµРї!
 	
 	Log_CreateTopic (TOPIC_Trader_OC, LOG_NOTE);
-	Log_AddEntry(TOPIC_Trader_OC, "Энгор заведует припасами замка и ведет небольшой бизнес на стороне.");     
+	Log_AddEntry(TOPIC_Trader_OC, "Р­РЅРіРѕСЂ Р·Р°РІРµРґСѓРµС‚ РїСЂРёРїР°СЃР°РјРё Р·Р°РјРєР° Рё РІРµРґРµС‚ РЅРµР±РѕР»СЊС€РѕР№ Р±РёР·РЅРµСЃ РЅР° СЃС‚РѕСЂРѕРЅРµ.");     
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wo Engor
@@ -88,7 +88,7 @@ instance DIA_Parlaf_Wo		(C_INFO)
 	condition	 = 	DIA_Parlaf_Wo_Condition;
 	information	 = 	DIA_Parlaf_Wo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Где мне найти этого Энгора?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ Р­РЅРіРѕСЂР°?";
 };
 
 func int DIA_Parlaf_Wo_Condition ()
@@ -101,8 +101,8 @@ func int DIA_Parlaf_Wo_Condition ()
 };
 func void DIA_Parlaf_Wo_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_Wo_15_00"); //Где мне найти этого Энгора?
-	AI_Output (self, other, "DIA_Parlaf_Wo_03_01"); //В доме рыцарей. Пройди через открытый вход рядом с кузницей.
+	AI_Output (other, self, "DIA_Parlaf_Wo_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ Р­РЅРіРѕСЂР°?
+	AI_Output (self, other, "DIA_Parlaf_Wo_03_01"); //Р’ РґРѕРјРµ СЂС‹С†Р°СЂРµР№. РџСЂРѕР№РґРё С‡РµСЂРµР· РѕС‚РєСЂС‹С‚С‹Р№ РІС…РѕРґ СЂСЏРґРѕРј СЃ РєСѓР·РЅРёС†РµР№.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info HUNGRIG
@@ -114,7 +114,7 @@ instance DIA_Parlaf_HUNGRIG		(C_INFO)
 	condition	 = 	DIA_Parlaf_HUNGRIG_Condition;
 	information	 = 	DIA_Parlaf_HUNGRIG_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Что новенького?";
+	description	 = 	"Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?";
 };
 
 func int DIA_Parlaf_HUNGRIG_Condition ()
@@ -128,8 +128,8 @@ func int DIA_Parlaf_HUNGRIG_Condition ()
 };
 func void DIA_Parlaf_HUNGRIG_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_HUNGRIG_15_00"); //Что новенького?
-	AI_Output (self, other, "DIA_Parlaf_HUNGRIG_03_01"); //Этот чертов Энгор должен увеличить пайки!
+	AI_Output (other, self, "DIA_Parlaf_HUNGRIG_15_00"); //Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?
+	AI_Output (self, other, "DIA_Parlaf_HUNGRIG_03_01"); //Р­С‚РѕС‚ С‡РµСЂС‚РѕРІ Р­РЅРіРѕСЂ РґРѕР»Р¶РµРЅ СѓРІРµР»РёС‡РёС‚СЊ РїР°Р№РєРё!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SATT
@@ -141,7 +141,7 @@ instance DIA_Parlaf_SATT		(C_INFO)
 	condition	 = 	DIA_Parlaf_SATT_Condition;
 	information	 = 	DIA_Parlaf_SATT_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Что новенького?";
+	description	 = 	"Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?";
 };
 
 func int DIA_Parlaf_SATT_Condition ()
@@ -155,17 +155,17 @@ func int DIA_Parlaf_SATT_Condition ()
 var int DIA_Parlaf_SATT_OneTime;
 func void DIA_Parlaf_SATT_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_SATT_15_00"); //Что новенького?
+	AI_Output (other, self, "DIA_Parlaf_SATT_15_00"); //Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?
 	
 	if (DIA_Parlaf_SATT_OneTime == FALSE)
 	&& ((Npc_IsDead(Engor))== FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlaf_SATT_03_01"); //Энгор раздал мясные пайки. Ох, как долго я этого ждал.
+		AI_Output (self, other, "DIA_Parlaf_SATT_03_01"); //Р­РЅРіРѕСЂ СЂР°Р·РґР°Р» РјСЏСЃРЅС‹Рµ РїР°Р№РєРё. РћС…, РєР°Рє РґРѕР»РіРѕ СЏ СЌС‚РѕРіРѕ Р¶РґР°Р».
 		DIA_Parlaf_SATT_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Parlaf_SATT_03_02"); //Твое прибытие - это единственная действительно свежая новость.
+		AI_Output (self, other, "DIA_Parlaf_SATT_03_02"); //РўРІРѕРµ РїСЂРёР±С‹С‚РёРµ - СЌС‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅР°СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРІРµР¶Р°СЏ РЅРѕРІРѕСЃС‚СЊ.
 	};
 };
 

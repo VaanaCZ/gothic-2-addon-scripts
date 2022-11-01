@@ -1,7 +1,7 @@
 INSTANCE KDF_505_Marduk (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Мардук";
+	name 		= "РњР°СЂРґСѓРє";
 	guild 		= GIL_KDF;
 	id 			= 505;
 	voice 		= 5;

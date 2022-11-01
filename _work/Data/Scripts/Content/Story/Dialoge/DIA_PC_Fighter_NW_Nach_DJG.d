@@ -22,7 +22,7 @@ FUNC VOID DIA_GornNW_nach_DJG_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getцtet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen getС†tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_GornNW_nach_DJG_AllDragonsDead(C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_GornNW_nach_DJG_AllDragonsDead(C_INFO)
 	information	= DIA_GornNW_nach_DJG_AllDragonsDead_Info;
 	permanent	= TRUE;
 
-	description = "Ты спокоен?";
+	description = "РўС‹ СЃРїРѕРєРѕРµРЅ?";
 };                       
 FUNC INT DIA_GornNW_nach_DJG_AllDragonsDead_Condition()
 {
@@ -44,10 +44,10 @@ FUNC INT DIA_GornNW_nach_DJG_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_GornNW_nach_DJG_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_00"); //Ты спокоен?
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_01"); //Конечно, а почему нет? Драконы ведь мертвы, разве не так?
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_02"); //Все немного сложнее.
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_03"); //(смеется) Ладно. Все как всегда. Дай мне знать, если тебе понадобится мой топор.
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_00"); //РўС‹ СЃРїРѕРєРѕРµРЅ?
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_01"); //РљРѕРЅРµС‡РЅРѕ, Р° РїРѕС‡РµРјСѓ РЅРµС‚? Р”СЂР°РєРѕРЅС‹ РІРµРґСЊ РјРµСЂС‚РІС‹, СЂР°Р·РІРµ РЅРµ С‚Р°Рє?
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_02"); //Р’СЃРµ РЅРµРјРЅРѕРіРѕ СЃР»РѕР¶РЅРµРµ.
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_03"); //(СЃРјРµРµС‚СЃСЏ) Р›Р°РґРЅРѕ. Р’СЃРµ РєР°Рє РІСЃРµРіРґР°. Р”Р°Р№ РјРЅРµ Р·РЅР°С‚СЊ, РµСЃР»Рё С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РјРѕР№ С‚РѕРїРѕСЂ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -60,7 +60,7 @@ instance DIA_GornNW_nach_DJG_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Мне нужны ты и твой топор.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅС‹ С‚С‹ Рё С‚РІРѕР№ С‚РѕРїРѕСЂ.";
 };
 func int DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition ()
 {	
@@ -72,33 +72,33 @@ func int DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition ()
 };
 func void DIA_GornNW_nach_DJG_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_00"); //Мне нужны ты и твой топор.
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_01"); //Хорошо. Я не удивлен. Что я могу сделать для тебя?
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_02"); //Ты поплывешь со мной на другой остров? Нужно кое-кому надрать задницу.
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_03"); //(смеется) Конечно. Всегда готов. Просто скажи, что нужно делать.
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_00"); //РњРЅРµ РЅСѓР¶РЅС‹ С‚С‹ Рё С‚РІРѕР№ С‚РѕРїРѕСЂ.
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_01"); //РҐРѕСЂРѕС€Рѕ. РЇ РЅРµ СѓРґРёРІР»РµРЅ. Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_02"); //РўС‹ РїРѕРїР»С‹РІРµС€СЊ СЃРѕ РјРЅРѕР№ РЅР° РґСЂСѓРіРѕР№ РѕСЃС‚СЂРѕРІ? РќСѓР¶РЅРѕ РєРѕРµ-РєРѕРјСѓ РЅР°РґСЂР°С‚СЊ Р·Р°РґРЅРёС†Сѓ.
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_03"); //(СЃРјРµРµС‚СЃСЏ) РљРѕРЅРµС‡РЅРѕ. Р’СЃРµРіРґР° РіРѕС‚РѕРІ. РџСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё, С‡С‚Рѕ РЅСѓР¶РЅРѕ РґРµР»Р°С‚СЊ.
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 
-	B_LogEntry (TOPIC_Crew,"Горн был готов на все, когда я рассказал ему об острове. Если мне понадобится его топор, я могу взять его с собой.");
+	B_LogEntry (TOPIC_Crew,"Р“РѕСЂРЅ Р±С‹Р» РіРѕС‚РѕРІ РЅР° РІСЃРµ, РєРѕРіРґР° СЏ СЂР°СЃСЃРєР°Р·Р°Р» РµРјСѓ РѕР± РѕСЃС‚СЂРѕРІРµ. Р•СЃР»Рё РјРЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РµРіРѕ С‚РѕРїРѕСЂ, СЏ РјРѕРіСѓ РІР·СЏС‚СЊ РµРіРѕ СЃ СЃРѕР±РѕР№.");
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_04"); //Сейчас моя команда почти укомплектована, но я думаю, что тебе тоже могло бы найтись место на борту.
-		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_05"); //Если тебе придется вышвырнуть кого-нибудь из своей команды ради меня - выбери самого слабого.
-		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_06"); //В наше суровое время, нельзя разбрасываться людьми, способными крепко держать оружие в руках.
+		AI_Output			(other,self , "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_04"); //РЎРµР№С‡Р°СЃ РјРѕСЏ РєРѕРјР°РЅРґР° РїРѕС‡С‚Рё СѓРєРѕРјРїР»РµРєС‚РѕРІР°РЅР°, РЅРѕ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµР±Рµ С‚РѕР¶Рµ РјРѕРіР»Рѕ Р±С‹ РЅР°Р№С‚РёСЃСЊ РјРµСЃС‚Рѕ РЅР° Р±РѕСЂС‚Сѓ.
+		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_05"); //Р•СЃР»Рё С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РІС‹С€РІС‹СЂРЅСѓС‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РёР· СЃРІРѕРµР№ РєРѕРјР°РЅРґС‹ СЂР°РґРё РјРµРЅСЏ - РІС‹Р±РµСЂРё СЃР°РјРѕРіРѕ СЃР»Р°Р±РѕРіРѕ.
+		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_06"); //Р’ РЅР°С€Рµ СЃСѓСЂРѕРІРѕРµ РІСЂРµРјСЏ, РЅРµР»СЊР·СЏ СЂР°Р·Р±СЂР°СЃС‹РІР°С‚СЊСЃСЏ Р»СЋРґСЊРјРё, СЃРїРѕСЃРѕР±РЅС‹РјРё РєСЂРµРїРєРѕ РґРµСЂР¶Р°С‚СЊ РѕСЂСѓР¶РёРµ РІ СЂСѓРєР°С….
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_GornNW_nach_DJG_KnowWhereEnemy);
-		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"Я дам тебе знать, когда придет время.",DIA_GornNW_nach_DJG_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"Добро пожаловать на борт. Встретимся в гавани.",DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"РЇ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ.",DIA_GornNW_nach_DJG_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° Р±РѕСЂС‚. Р’СЃС‚СЂРµС‚РёРјСЃСЏ РІ РіР°РІР°РЅРё.",DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_15_00"); //Добро пожаловать на борт. Встретимся в гавани.
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_12_01"); //Корабль? Ха! Могу сказать одно. С тобой никогда не бывает скучно. До скорой встречи.
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_15_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° Р±РѕСЂС‚. Р’СЃС‚СЂРµС‚РёРјСЃСЏ РІ РіР°РІР°РЅРё.
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_12_01"); //РљРѕСЂР°Р±Р»СЊ? РҐР°! РњРѕРіСѓ СЃРєР°Р·Р°С‚СЊ РѕРґРЅРѕ. РЎ С‚РѕР±РѕР№ РЅРёРєРѕРіРґР° РЅРµ Р±С‹РІР°РµС‚ СЃРєСѓС‡РЅРѕ. Р”Рѕ СЃРєРѕСЂРѕР№ РІСЃС‚СЂРµС‡Рё.
 	
 	
 	B_GivePlayerXP (XP_Crewmember_Success); 
@@ -120,8 +120,8 @@ FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_15_00"); //Я дам тебе знать, когда придет время.
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_12_01"); //Хорошо.
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_15_00"); //РЇ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ.
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_12_01"); //РҐРѕСЂРѕС€Рѕ.
 
 	Gorn_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_GornNW_nach_DJG_KnowWhereEnemy);
@@ -137,7 +137,7 @@ instance DIA_GornNW_nach_DJG_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_LeaveMyShip_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Возможно, тебе лучше остаться здесь.";
+	description	 = 	"Р’РѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ Р»СѓС‡С€Рµ РѕСЃС‚Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ.";
 };
 func int DIA_GornNW_nach_DJG_LeaveMyShip_Condition ()
 {	
@@ -149,8 +149,8 @@ func int DIA_GornNW_nach_DJG_LeaveMyShip_Condition ()
 };
 func void DIA_GornNW_nach_DJG_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_LeaveMyShip_15_00"); //Возможно, тебе лучше остаться здесь.
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_LeaveMyShip_12_01"); //Ты хочешь, чтобы я отпустил тебя одного? Ммм. Мне нелегко это сделать, но это твоя война. Найди меня, если решишь, что я все же тебе нужен.
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_LeaveMyShip_15_00"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ Р»СѓС‡С€Рµ РѕСЃС‚Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ.
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_LeaveMyShip_12_01"); //РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РѕС‚РїСѓСЃС‚РёР» С‚РµР±СЏ РѕРґРЅРѕРіРѕ? РњРјРј. РњРЅРµ РЅРµР»РµРіРєРѕ СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ, РЅРѕ СЌС‚Рѕ С‚РІРѕСЏ РІРѕР№РЅР°. РќР°Р№РґРё РјРµРЅСЏ, РµСЃР»Рё СЂРµС€РёС€СЊ, С‡С‚Рѕ СЏ РІСЃРµ Р¶Рµ С‚РµР±Рµ РЅСѓР¶РµРЅ.
 	
 	Gorn_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -159,7 +159,7 @@ func void DIA_GornNW_nach_DJG_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ьberlegt!
+//	Ich habs mir СЊberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_GornNW_nach_DJG_StillNeedYou		(C_INFO)
 {
@@ -168,7 +168,7 @@ instance DIA_GornNW_nach_DJG_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_StillNeedYou_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Возвращайся. ТЫ нужен мне.";
+	description	 = 	"Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ. РўР« РЅСѓР¶РµРЅ РјРЅРµ.";
 };
 
 func int DIA_GornNW_nach_DJG_StillNeedYou_Condition ()
@@ -183,8 +183,8 @@ func int DIA_GornNW_nach_DJG_StillNeedYou_Condition ()
 
 func void DIA_GornNW_nach_DJG_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_GornNW_nach_DJG_StillNeedYou_15_00"); //Возвращайся. ТЫ нужен мне.
-	AI_Output	(self, other, "DIA_GornNW_nach_DJG_StillNeedYou_12_01"); //Наконец-то. А я уж думал, ты оставишь гнить меня здесь, пока будешь развлекаться там. До скорой встречи.
+	AI_Output	(other, self, "DIA_GornNW_nach_DJG_StillNeedYou_15_00"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ. РўР« РЅСѓР¶РµРЅ РјРЅРµ.
+	AI_Output	(self, other, "DIA_GornNW_nach_DJG_StillNeedYou_12_01"); //РќР°РєРѕРЅРµС†-С‚Рѕ. Рђ СЏ СѓР¶ РґСѓРјР°Р», С‚С‹ РѕСЃС‚Р°РІРёС€СЊ РіРЅРёС‚СЊ РјРµРЅСЏ Р·РґРµСЃСЊ, РїРѕРєР° Р±СѓРґРµС€СЊ СЂР°Р·РІР»РµРєР°С‚СЊСЃСЏ С‚Р°Рј. Р”Рѕ СЃРєРѕСЂРѕР№ РІСЃС‚СЂРµС‡Рё.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Gorn_IsOnBoard	 = LOG_SUCCESS;

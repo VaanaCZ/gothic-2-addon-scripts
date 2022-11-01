@@ -54,20 +54,20 @@ FUNC INT DIA_Garond_PMSchulden_Condition()
 
 FUNC VOID DIA_Garond_PMSchulden_Info()
 {
-	AI_Output (self, other, "DIA_Garond_PMSchulden_10_00"); //Мы ничего не будем обсуждать, пока ты не заплатишь штраф.
+	AI_Output (self, other, "DIA_Garond_PMSchulden_10_00"); //РњС‹ РЅРёС‡РµРіРѕ РЅРµ Р±СѓРґРµРј РѕР±СЃСѓР¶РґР°С‚СЊ, РїРѕРєР° С‚С‹ РЅРµ Р·Р°РїР»Р°С‚РёС€СЊ С€С‚СЂР°С„.
 
 	if (B_GetTotalPetzCounter(self) > Garond_LastPetzCounter)
 	{
-		AI_Output (self, other, "DIA_Garond_PMSchulden_10_01"); //А он возрос, учитывая все последние обвинения.
-		AI_Output (self, other, "DIA_Garond_PMSchulden_10_02"); //Проблем у тебя, похоже, только прибавилось.
+		AI_Output (self, other, "DIA_Garond_PMSchulden_10_01"); //Рђ РѕРЅ РІРѕР·СЂРѕСЃ, СѓС‡РёС‚С‹РІР°СЏ РІСЃРµ РїРѕСЃР»РµРґРЅРёРµ РѕР±РІРёРЅРµРЅРёСЏ.
+		AI_Output (self, other, "DIA_Garond_PMSchulden_10_02"); //РџСЂРѕР±Р»РµРј Сѓ С‚РµР±СЏ, РїРѕС…РѕР¶Рµ, С‚РѕР»СЊРєРѕ РїСЂРёР±Р°РІРёР»РѕСЃСЊ.
 		
 		if (Garond_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_03"); //Но я надеюсь, что  ты способен заплатить сразу за все! Учитывая все твои прегрешения, это будет...
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_03"); //РќРѕ СЏ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ  С‚С‹ СЃРїРѕСЃРѕР±РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ СЃСЂР°Р·Сѓ Р·Р° РІСЃРµ! РЈС‡РёС‚С‹РІР°СЏ РІСЃРµ С‚РІРѕРё РїСЂРµРіСЂРµС€РµРЅРёСЏ, СЌС‚Рѕ Р±СѓРґРµС‚...
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_04"); //Я очень разочарован тобой. Твой штраф теперь составляет...
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_04"); //РЇ РѕС‡РµРЅСЊ СЂР°Р·РѕС‡Р°СЂРѕРІР°РЅ С‚РѕР±РѕР№. РўРІРѕР№ С€С‚СЂР°С„ С‚РµРїРµСЂСЊ СЃРѕСЃС‚Р°РІР»СЏРµС‚...
 		};
 				
 		var int diff; diff = (B_GetTotalPetzCounter(self) - Garond_LastPetzCounter);
@@ -83,37 +83,37 @@ FUNC VOID DIA_Garond_PMSchulden_Info()
 	}
 	else if (B_GetGreatestPetzCrime(self) < Garond_LastPetzCrime)
 	{
-		AI_Output (self, other, "DIA_Garond_PMSchulden_10_05"); //Выяснились новые подробности.
+		AI_Output (self, other, "DIA_Garond_PMSchulden_10_05"); //Р’С‹СЏСЃРЅРёР»РёСЃСЊ РЅРѕРІС‹Рµ РїРѕРґСЂРѕР±РЅРѕСЃС‚Рё.
 		
 		if (Garond_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_06"); //Теперь больше никто не обвиняет тебя в убийстве.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_06"); //РўРµРїРµСЂСЊ Р±РѕР»СЊС€Рµ РЅРёРєС‚Рѕ РЅРµ РѕР±РІРёРЅСЏРµС‚ С‚РµР±СЏ РІ СѓР±РёР№СЃС‚РІРµ.
 		};
 		
 		if (Garond_LastPetzCrime == CRIME_THEFT)
 		|| ( (Garond_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_07"); //Никто не помнит, что видел, как ты воровал.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_07"); //РќРёРєС‚Рѕ РЅРµ РїРѕРјРЅРёС‚, С‡С‚Рѕ РІРёРґРµР», РєР°Рє С‚С‹ РІРѕСЂРѕРІР°Р».
 		};
 		
 		if (Garond_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Garond_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_08"); //Больше нет свидетелей, утверждающих, что ты участвовал в драке.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_08"); //Р‘РѕР»СЊС€Рµ РЅРµС‚ СЃРІРёРґРµС‚РµР»РµР№, СѓС‚РІРµСЂР¶РґР°СЋС‰РёС…, С‡С‚Рѕ С‚С‹ СѓС‡Р°СЃС‚РІРѕРІР°Р» РІ РґСЂР°РєРµ.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_09"); //Похоже, все обвинения против тебя сняты.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_09"); //РџРѕС…РѕР¶Рµ, РІСЃРµ РѕР±РІРёРЅРµРЅРёСЏ РїСЂРѕС‚РёРІ С‚РµР±СЏ СЃРЅСЏС‚С‹.
 		};
 		
-		AI_Output (self, other, "DIA_Garond_PMSchulden_10_10"); //Я понятия не имею, что там произошло, но предупреждаю тебя: не заходи слишком далеко!
+		AI_Output (self, other, "DIA_Garond_PMSchulden_10_10"); //РЇ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, С‡С‚Рѕ С‚Р°Рј РїСЂРѕРёР·РѕС€Р»Рѕ, РЅРѕ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ: РЅРµ Р·Р°С…РѕРґРё СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ!
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_11"); //Я принял решение освободить тебя от штрафа.
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_12"); //И больше я не хочу слышать о том, что ты сеешь смуту в замке!
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_11"); //РЇ РїСЂРёРЅСЏР» СЂРµС€РµРЅРёРµ РѕСЃРІРѕР±РѕРґРёС‚СЊ С‚РµР±СЏ РѕС‚ С€С‚СЂР°С„Р°.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_12"); //Р Р±РѕР»СЊС€Рµ СЏ РЅРµ С…РѕС‡Сѓ СЃР»С‹С€Р°С‚СЊ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРµРµС€СЊ СЃРјСѓС‚Сѓ РІ Р·Р°РјРєРµ!
 	
 			Garond_Schulden			= 0;
 			Garond_LastPetzCounter 	= 0;
@@ -121,9 +121,9 @@ FUNC VOID DIA_Garond_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_13"); //Я хочу довести до твоего сведения: тебе все равно придется заплатить штраф в полном объеме.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_13"); //РЇ С…РѕС‡Сѓ РґРѕРІРµСЃС‚Рё РґРѕ С‚РІРѕРµРіРѕ СЃРІРµРґРµРЅРёСЏ: С‚РµР±Рµ РІСЃРµ СЂР°РІРЅРѕ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„ РІ РїРѕР»РЅРѕРј РѕР±СЉРµРјРµ.
 			B_Say_Gold (self, other, Garond_Schulden);
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_14"); //Так как насчет этого?
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_14"); //РўР°Рє РєР°Рє РЅР°СЃС‡РµС‚ СЌС‚РѕРіРѕ?
 		};
 	};
 	
@@ -132,27 +132,27 @@ FUNC VOID DIA_Garond_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(DIA_Garond_PMSchulden);
 		Info_ClearChoices  	(DIA_Garond_PETZMASTER);
-		Info_AddChoice		(DIA_Garond_PMSchulden,"У меня нет столько золота!",DIA_Garond_PETZMASTER_PayLater);
-		Info_AddChoice		(DIA_Garond_PMSchulden,"Сколько там нужно?",DIA_Garond_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(DIA_Garond_PMSchulden,"РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°!",DIA_Garond_PETZMASTER_PayLater);
+		Info_AddChoice		(DIA_Garond_PMSchulden,"РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?",DIA_Garond_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(other, itmi_gold) >= Garond_Schulden)
 		{
-			Info_AddChoice 	(DIA_Garond_PMSchulden,"Я хочу заплатить штраф!",DIA_Garond_PETZMASTER_PayNow);
+			Info_AddChoice 	(DIA_Garond_PMSchulden,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Garond_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void DIA_Garond_PMSchulden_HowMuchAgain()
 {
-	AI_Output (other, self, "DIA_Garond_PMSchulden_HowMuchAgain_15_00"); //Сколько там было?
+	AI_Output (other, self, "DIA_Garond_PMSchulden_HowMuchAgain_15_00"); //РЎРєРѕР»СЊРєРѕ С‚Р°Рј Р±С‹Р»Рѕ?
 	B_Say_Gold (self, other, Garond_Schulden);
 
 	Info_ClearChoices  	(DIA_Garond_PMSchulden);
 	Info_ClearChoices  	(DIA_Garond_PETZMASTER);
-	Info_AddChoice		(DIA_Garond_PMSchulden,"У меня нет столько золота!",DIA_Garond_PETZMASTER_PayLater);
-	Info_AddChoice		(DIA_Garond_PMSchulden,"Сколько там нужно?",DIA_Garond_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(DIA_Garond_PMSchulden,"РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°!",DIA_Garond_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Garond_PMSchulden,"РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?",DIA_Garond_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(other, itmi_gold) >= Garond_Schulden)
 	{
-		Info_AddChoice 	(DIA_Garond_PMSchulden,"Я хочу заплатить штраф!",DIA_Garond_PETZMASTER_PayNow);
+		Info_AddChoice 	(DIA_Garond_PMSchulden,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Garond_PETZMASTER_PayNow);
 	};
 };
 
@@ -181,69 +181,69 @@ FUNC INT DIA_Garond_PETZMASTER_Condition()
 };
 FUNC VOID DIA_Garond_PETZMASTER_Info()
 {
-	Garond_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hцher ist...
+	Garond_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hС†her ist...
 	
 	// ------ SC hat mit Garond noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_00"); //Так это ты сеешь смуту в замке.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_00"); //РўР°Рє СЌС‚Рѕ С‚С‹ СЃРµРµС€СЊ СЃРјСѓС‚Сѓ РІ Р·Р°РјРєРµ.
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_01"); //Я спрашивал себя: сколько это еще будет продолжаться, прежде чем ты придешь ко мне с повинной?
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_02"); //Еще только убийств мне здесь не хватало.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_03"); //У меня на счету каждый человек - а теперь у меня стало на одного бойца меньше!
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_01"); //РЇ СЃРїСЂР°С€РёРІР°Р» СЃРµР±СЏ: СЃРєРѕР»СЊРєРѕ СЌС‚Рѕ РµС‰Рµ Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ, РїСЂРµР¶РґРµ С‡РµРј С‚С‹ РїСЂРёРґРµС€СЊ РєРѕ РјРЅРµ СЃ РїРѕРІРёРЅРЅРѕР№?
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_02"); //Р•С‰Рµ С‚РѕР»СЊРєРѕ СѓР±РёР№СЃС‚РІ РјРЅРµ Р·РґРµСЃСЊ РЅРµ С…РІР°С‚Р°Р»Рѕ.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_03"); //РЈ РјРµРЅСЏ РЅР° СЃС‡РµС‚Сѓ РєР°Р¶РґС‹Р№ С‡РµР»РѕРІРµРє - Р° С‚РµРїРµСЂСЊ Сѓ РјРµРЅСЏ СЃС‚Р°Р»Рѕ РЅР° РѕРґРЅРѕРіРѕ Р±РѕР№С†Р° РјРµРЅСЊС€Рµ!
 		Garond_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Garond_Schulden = Garond_Schulden + 500;						//PLUS Mцrder-Malus
+		Garond_Schulden = Garond_Schulden + 500;						//PLUS MС†rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_04"); //Не говоря уже обо всем остальном, в чем тебя обвиняют.
+			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_04"); //РќРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ РѕР±Рѕ РІСЃРµРј РѕСЃС‚Р°Р»СЊРЅРѕРј, РІ С‡РµРј С‚РµР±СЏ РѕР±РІРёРЅСЏСЋС‚.
 		};
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_05"); //Позволь мне объяснить тебе  кое-что. Мы здесь все в одной ловушке.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_06"); //И у меня на счету каждый человек. Включая тебя.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_07"); //Если тебе хочется убить кого-нибудь, просто выйди за ворота замка. И убивай там орков себе на здоровье.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_08"); //Я вынужден наложить на тебя штраф - и мне крайне неприятно применять такие меры.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_05"); //РџРѕР·РІРѕР»СЊ РјРЅРµ РѕР±СЉСЏСЃРЅРёС‚СЊ С‚РµР±Рµ  РєРѕРµ-С‡С‚Рѕ. РњС‹ Р·РґРµСЃСЊ РІСЃРµ РІ РѕРґРЅРѕР№ Р»РѕРІСѓС€РєРµ.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_06"); //Р Сѓ РјРµРЅСЏ РЅР° СЃС‡РµС‚Сѓ РєР°Р¶РґС‹Р№ С‡РµР»РѕРІРµРє. Р’РєР»СЋС‡Р°СЏ С‚РµР±СЏ.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_07"); //Р•СЃР»Рё С‚РµР±Рµ С…РѕС‡РµС‚СЃСЏ СѓР±РёС‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РїСЂРѕСЃС‚Рѕ РІС‹Р№РґРё Р·Р° РІРѕСЂРѕС‚Р° Р·Р°РјРєР°. Р СѓР±РёРІР°Р№ С‚Р°Рј РѕСЂРєРѕРІ СЃРµР±Рµ РЅР° Р·РґРѕСЂРѕРІСЊРµ.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_08"); //РЇ РІС‹РЅСѓР¶РґРµРЅ РЅР°Р»РѕР¶РёС‚СЊ РЅР° С‚РµР±СЏ С€С‚СЂР°С„ - Рё РјРЅРµ РєСЂР°Р№РЅРµ РЅРµРїСЂРёСЏС‚РЅРѕ РїСЂРёРјРµРЅСЏС‚СЊ С‚Р°РєРёРµ РјРµСЂС‹.
 	};		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_09"); //Ходят слухи, что ты шарил в чужих вещах.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_09"); //РҐРѕРґСЏС‚ СЃР»СѓС…Рё, С‡С‚Рѕ С‚С‹ С€Р°СЂРёР» РІ С‡СѓР¶РёС… РІРµС‰Р°С….
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_10"); //Не говоря уже обо всем другом, что мне доносили.
+			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_10"); //РќРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ РѕР±Рѕ РІСЃРµРј РґСЂСѓРіРѕРј, С‡С‚Рѕ РјРЅРµ РґРѕРЅРѕСЃРёР»Рё.
 		};
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_11"); //Тебе так просто не уйти от ответственности. Ты, похоже, не понимаешь всей серьезности ситуации.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_12"); //Тебе придется заплатить штраф в качестве компенсации за твои преступления!
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_11"); //РўРµР±Рµ С‚Р°Рє РїСЂРѕСЃС‚Рѕ РЅРµ СѓР№С‚Рё РѕС‚ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚Рё. РўС‹, РїРѕС…РѕР¶Рµ, РЅРµ РїРѕРЅРёРјР°РµС€СЊ РІСЃРµР№ СЃРµСЂСЊРµР·РЅРѕСЃС‚Рё СЃРёС‚СѓР°С†РёРё.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_12"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„ РІ РєР°С‡РµСЃС‚РІРµ РєРѕРјРїРµРЅСЃР°С†РёРё Р·Р° С‚РІРѕРё РїСЂРµСЃС‚СѓРїР»РµРЅРёСЏ!
 		
 		Garond_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_13"); //Я не люблю, когда среди моих людей случаются драки.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_13"); //РЇ РЅРµ Р»СЋР±Р»СЋ, РєРѕРіРґР° СЃСЂРµРґРё РјРѕРёС… Р»СЋРґРµР№ СЃР»СѓС‡Р°СЋС‚СЃСЏ РґСЂР°РєРё.
 	
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_14"); //А уж этот случай с овцой мне совсем не понятен.
+			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_14"); //Рђ СѓР¶ СЌС‚РѕС‚ СЃР»СѓС‡Р°Р№ СЃ РѕРІС†РѕР№ РјРЅРµ СЃРѕРІСЃРµРј РЅРµ РїРѕРЅСЏС‚РµРЅ.
 		};
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_15"); //Тебе придется заплатить за это штраф!
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_15"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ С€С‚СЂР°С„!
 		
 		
 		Garond_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 
-	// ------ Schaf getцtet (es gibt drei Schafe in der Burg) ------
+	// ------ Schaf getС†tet (es gibt drei Schafe in der Burg) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_16"); //Ты убиваешь наших овец?! Это общественная собственность.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_17"); //Тебе придется заплатить за это мясо.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_16"); //РўС‹ СѓР±РёРІР°РµС€СЊ РЅР°С€РёС… РѕРІРµС†?! Р­С‚Рѕ РѕР±С‰РµСЃС‚РІРµРЅРЅР°СЏ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚СЊ.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_17"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ РјСЏСЃРѕ.
 	
 		
 		Garond_Schulden = 100;
 	
 	};
 	
-	AI_Output (other, self, "DIA_Garond_PETZMASTER_15_18"); //Сколько?
+	AI_Output (other, self, "DIA_Garond_PETZMASTER_15_18"); //РЎРєРѕР»СЊРєРѕ?
 	
 	if (Garond_Schulden > 1000)	{	Garond_Schulden = 1000;	};
 		
@@ -251,18 +251,18 @@ FUNC VOID DIA_Garond_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(DIA_Garond_PMSchulden);
 	Info_ClearChoices  	(DIA_Garond_PETZMASTER);
-	Info_AddChoice		(DIA_Garond_PETZMASTER,"У меня нет столько золота!",DIA_Garond_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Garond_PETZMASTER,"РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°!",DIA_Garond_PETZMASTER_PayLater);
 	if (Npc_HasItems(other, itmi_gold) >= Garond_Schulden)
 	{
-		Info_AddChoice 	(DIA_Garond_PETZMASTER,"Я хочу заплатить штраф!",DIA_Garond_PETZMASTER_PayNow);
+		Info_AddChoice 	(DIA_Garond_PETZMASTER,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Garond_PETZMASTER_PayNow);
 	};
 };
 
 func void DIA_Garond_PETZMASTER_PayNow()
 {
-	AI_Output (other, self, "DIA_Garond_PETZMASTER_PayNow_15_00"); //Я хочу заплатить штраф!
+	AI_Output (other, self, "DIA_Garond_PETZMASTER_PayNow_15_00"); //РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!
 	B_GiveInvItems (other, self, itmi_gold, Garond_Schulden);
-	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayNow_10_01"); //Хорошо, я скажу об этом нашим парням, чтобы немного успокоить их. Но чтобы больше такое не повторялось!
+	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayNow_10_01"); //РҐРѕСЂРѕС€Рѕ, СЏ СЃРєР°Р¶Сѓ РѕР± СЌС‚РѕРј РЅР°С€РёРј РїР°СЂРЅСЏРј, С‡С‚РѕР±С‹ РЅРµРјРЅРѕРіРѕ СѓСЃРїРѕРєРѕРёС‚СЊ РёС…. РќРѕ С‡С‚РѕР±С‹ Р±РѕР»СЊС€Рµ С‚Р°РєРѕРµ РЅРµ РїРѕРІС‚РѕСЂСЏР»РѕСЃСЊ!
 
 	B_GrantAbsolution (LOC_OLDCAMP);
 	
@@ -276,9 +276,9 @@ func void DIA_Garond_PETZMASTER_PayNow()
 
 func void DIA_Garond_PETZMASTER_PayLater()
 {
-	AI_Output (other, self, "DIA_Garond_PETZMASTER_PayLater_15_00"); //У меня нет столько золота!
-	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayLater_10_01"); //Тогда постарайся раздобыть это золото как можно быстрее.
-	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayLater_10_02"); //И я предупреждаю тебя: если ты будешь совершать подобные преступления и в будущем, цена возрастет!
+	AI_Output (other, self, "DIA_Garond_PETZMASTER_PayLater_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°!
+	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayLater_10_01"); //РўРѕРіРґР° РїРѕСЃС‚Р°СЂР°Р№СЃСЏ СЂР°Р·РґРѕР±С‹С‚СЊ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ.
+	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayLater_10_02"); //Р СЏ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ: РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ СЃРѕРІРµСЂС€Р°С‚СЊ РїРѕРґРѕР±РЅС‹Рµ РїСЂРµСЃС‚СѓРїР»РµРЅРёСЏ Рё РІ Р±СѓРґСѓС‰РµРј, С†РµРЅР° РІРѕР·СЂР°СЃС‚РµС‚!
 	
 	Garond_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Garond_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -308,21 +308,21 @@ FUNC INT DIA_Garond_Hello_Condition()
 };
 FUNC VOID DIA_Garond_Hello_Info()
 {	
-		AI_Output (self ,other,"DIA_Garond_Hello_10_00"); //Откуда ты взялся? Ты не из старателей, и ты не один из моих людей. Так кто же ты?
-		AI_Output (other ,self,"DIA_Garond_Hello_15_01"); //Я пришел через Проход.
-		AI_Output (self ,other,"DIA_Garond_Hello_10_02"); //Через Проход...? Ты действительно прошел там?! О, Иннос всемогущий!
+		AI_Output (self ,other,"DIA_Garond_Hello_10_00"); //РћС‚РєСѓРґР° С‚С‹ РІР·СЏР»СЃСЏ? РўС‹ РЅРµ РёР· СЃС‚Р°СЂР°С‚РµР»РµР№, Рё С‚С‹ РЅРµ РѕРґРёРЅ РёР· РјРѕРёС… Р»СЋРґРµР№. РўР°Рє РєС‚Рѕ Р¶Рµ С‚С‹?
+		AI_Output (other ,self,"DIA_Garond_Hello_15_01"); //РЇ РїСЂРёС€РµР» С‡РµСЂРµР· РџСЂРѕС…РѕРґ.
+		AI_Output (self ,other,"DIA_Garond_Hello_10_02"); //Р§РµСЂРµР· РџСЂРѕС…РѕРґ...? РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂРѕС€РµР» С‚Р°Рј?! Рћ, РРЅРЅРѕСЃ РІСЃРµРјРѕРіСѓС‰РёР№!
 		
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Garond_Hello_10_03"); //Зачем ты прошел этот путь, маг?
+			AI_Output (self ,other,"DIA_Garond_Hello_10_03"); //Р—Р°С‡РµРј С‚С‹ РїСЂРѕС€РµР» СЌС‚РѕС‚ РїСѓС‚СЊ, РјР°Рі?
 		}
 		else if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self ,other,"DIA_Garond_Hello_10_04"); //Какой приказ ты выполняешь, солдат?
+			AI_Output (self ,other,"DIA_Garond_Hello_10_04"); //РљР°РєРѕР№ РїСЂРёРєР°Р· С‚С‹ РІС‹РїРѕР»РЅСЏРµС€СЊ, СЃРѕР»РґР°С‚?
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Garond_Hello_10_05"); //Я задаю себе вопрос, зачем наемнику проделывать такой путь? Что ты делаешь здесь?
+			AI_Output (self ,other,"DIA_Garond_Hello_10_05"); //РЇ Р·Р°РґР°СЋ СЃРµР±Рµ РІРѕРїСЂРѕСЃ, Р·Р°С‡РµРј РЅР°РµРјРЅРёРєСѓ РїСЂРѕРґРµР»С‹РІР°С‚СЊ С‚Р°РєРѕР№ РїСѓС‚СЊ? Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
 		};
 };
 
@@ -336,7 +336,7 @@ INSTANCE DIA_Garond_NeedProof (C_INFO)
 	nr			= 1;
 	condition	= DIA_Garond_NeedProof_Condition;
 	information	= DIA_Garond_NeedProof_Info;
-	description = "Я пришел от лорда Хагена.";
+	description = "РЇ РїСЂРёС€РµР» РѕС‚ Р»РѕСЂРґР° РҐР°РіРµРЅР°.";
 };                       
 
 FUNC INT DIA_Garond_NeedProof_Condition()
@@ -351,27 +351,27 @@ FUNC INT DIA_Garond_NeedProof_Condition()
  
 FUNC VOID DIA_Garond_NeedProof_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_NeedProof_15_00"); //Я пришел от лорда Хагена. Он хочет, чтобы я представил ему доказательства присутствия здесь драконов.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_01"); //Так ты пришел, чтобы получить эти доказательства и исчезнуть опять?
-	AI_Output (other,self ,"DIA_Garond_NeedProof_15_02"); //Да, именно на это я и рассчитывал.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_03"); //Так ему нужны доказательства? Он может получить их. Но я не могу отправить тебя назад к лорду Хагену, не предоставив ему информацию о руде.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_04"); //Послушай - лорд Хаген должен узнать все о ситуации здесь и о том, сколько руды удалось нам добыть.
-	AI_Output (other,self ,"DIA_Garond_NeedProof_15_05"); //Хорошо, и что ты хочешь, чтобы я сделал?
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_06"); //У нас здесь, в долине, три отряда старателей. Но я еще не получил от них ни одного куска руды.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_07"); //Посети все три шахты и доложи мне, сколько руды они добыли.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_08"); //После этого, я дам тебе письмо, которое ты отнесешь лорду Хагену.
-	AI_Output (other,self ,"DIA_Garond_NeedProof_15_09"); //Ну, хорошо - похоже, у меня нет выбора.
+	AI_Output (other,self ,"DIA_Garond_NeedProof_15_00"); //РЇ РїСЂРёС€РµР» РѕС‚ Р»РѕСЂРґР° РҐР°РіРµРЅР°. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРµРґСЃС‚Р°РІРёР» РµРјСѓ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° РїСЂРёСЃСѓС‚СЃС‚РІРёСЏ Р·РґРµСЃСЊ РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_01"); //РўР°Рє С‚С‹ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ СЌС‚Рё РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° Рё РёСЃС‡РµР·РЅСѓС‚СЊ РѕРїСЏС‚СЊ?
+	AI_Output (other,self ,"DIA_Garond_NeedProof_15_02"); //Р”Р°, РёРјРµРЅРЅРѕ РЅР° СЌС‚Рѕ СЏ Рё СЂР°СЃСЃС‡РёС‚С‹РІР°Р».
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_03"); //РўР°Рє РµРјСѓ РЅСѓР¶РЅС‹ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°? РћРЅ РјРѕР¶РµС‚ РїРѕР»СѓС‡РёС‚СЊ РёС…. РќРѕ СЏ РЅРµ РјРѕРіСѓ РѕС‚РїСЂР°РІРёС‚СЊ С‚РµР±СЏ РЅР°Р·Р°Рґ Рє Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ, РЅРµ РїСЂРµРґРѕСЃС‚Р°РІРёРІ РµРјСѓ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЂСѓРґРµ.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_04"); //РџРѕСЃР»СѓС€Р°Р№ - Р»РѕСЂРґ РҐР°РіРµРЅ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ РІСЃРµ Рѕ СЃРёС‚СѓР°С†РёРё Р·РґРµСЃСЊ Рё Рѕ С‚РѕРј, СЃРєРѕР»СЊРєРѕ СЂСѓРґС‹ СѓРґР°Р»РѕСЃСЊ РЅР°Рј РґРѕР±С‹С‚СЊ.
+	AI_Output (other,self ,"DIA_Garond_NeedProof_15_05"); //РҐРѕСЂРѕС€Рѕ, Рё С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СЃРґРµР»Р°Р»?
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_06"); //РЈ РЅР°СЃ Р·РґРµСЃСЊ, РІ РґРѕР»РёРЅРµ, С‚СЂРё РѕС‚СЂСЏРґР° СЃС‚Р°СЂР°С‚РµР»РµР№. РќРѕ СЏ РµС‰Рµ РЅРµ РїРѕР»СѓС‡РёР» РѕС‚ РЅРёС… РЅРё РѕРґРЅРѕРіРѕ РєСѓСЃРєР° СЂСѓРґС‹.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_07"); //РџРѕСЃРµС‚Рё РІСЃРµ С‚СЂРё С€Р°С…С‚С‹ Рё РґРѕР»РѕР¶Рё РјРЅРµ, СЃРєРѕР»СЊРєРѕ СЂСѓРґС‹ РѕРЅРё РґРѕР±С‹Р»Рё.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_08"); //РџРѕСЃР»Рµ СЌС‚РѕРіРѕ, СЏ РґР°Рј С‚РµР±Рµ РїРёСЃСЊРјРѕ, РєРѕС‚РѕСЂРѕРµ С‚С‹ РѕС‚РЅРµСЃРµС€СЊ Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ.
+	AI_Output (other,self ,"DIA_Garond_NeedProof_15_09"); //РќСѓ, С…РѕСЂРѕС€Рѕ - РїРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР°.
 	
 	MIS_ScoutMine = LOG_RUNNING;
 	B_StartOtherRoutine (Jergan,"FAJETH");
 	
-	B_LogEntry (TOPIC_MISOLDWORLD,"Прежде чем командующий Гаронд отправит меня назад, он хочет, чтобы я разыскал три группы старателей и сообщил ему, сколько руды удалось им добыть.");
+	B_LogEntry (TOPIC_MISOLDWORLD,"РџСЂРµР¶РґРµ С‡РµРј РєРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РѕС‚РїСЂР°РІРёС‚ РјРµРЅСЏ РЅР°Р·Р°Рґ, РѕРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЂР°Р·С‹СЃРєР°Р» С‚СЂРё РіСЂСѓРїРїС‹ СЃС‚Р°СЂР°С‚РµР»РµР№ Рё СЃРѕРѕР±С‰РёР» РµРјСѓ, СЃРєРѕР»СЊРєРѕ СЂСѓРґС‹ СѓРґР°Р»РѕСЃСЊ РёРј РґРѕР±С‹С‚СЊ.");
 	
 	Log_CreateTopic (TOPIC_ScoutMine,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_ScoutMine,LOG_RUNNING);
 	
-	B_LogEntry (TOPIC_ScoutMine,"Командующий Гаронд дал мне поручение. Он отправил три группы старателей добывать магическую руду. И до сих пор они не вернулись.");
-	B_LogEntry (TOPIC_ScoutMine,"Я должен найти эти три группы старателей и выяснить, сколько руды удалось им добыть.");
+	B_LogEntry (TOPIC_ScoutMine,"РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РґР°Р» РјРЅРµ РїРѕСЂСѓС‡РµРЅРёРµ. РћРЅ РѕС‚РїСЂР°РІРёР» С‚СЂРё РіСЂСѓРїРїС‹ СЃС‚Р°СЂР°С‚РµР»РµР№ РґРѕР±С‹РІР°С‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЂСѓРґСѓ. Р РґРѕ СЃРёС… РїРѕСЂ РѕРЅРё РЅРµ РІРµСЂРЅСѓР»РёСЃСЊ.");
+	B_LogEntry (TOPIC_ScoutMine,"РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё СЌС‚Рё С‚СЂРё РіСЂСѓРїРїС‹ СЃС‚Р°СЂР°С‚РµР»РµР№ Рё РІС‹СЏСЃРЅРёС‚СЊ, СЃРєРѕР»СЊРєРѕ СЂСѓРґС‹ СѓРґР°Р»РѕСЃСЊ РёРј РґРѕР±С‹С‚СЊ.");
 
 };
 // ************************************************************
@@ -385,7 +385,7 @@ INSTANCE DIA_Garond_Why (C_INFO)
 	condition	= DIA_Garond_Why_Condition;
 	information	= DIA_Garond_Why_Info;
 	permanent	= FALSE;
-	description = "Но почему именно я?";
+	description = "РќРѕ РїРѕС‡РµРјСѓ РёРјРµРЅРЅРѕ СЏ?";
 };                       
 
 FUNC INT DIA_Garond_Why_Condition()
@@ -398,12 +398,12 @@ FUNC INT DIA_Garond_Why_Condition()
 };
 FUNC VOID DIA_Garond_Why_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Why_15_00"); //Но почему именно я?
-	AI_Output (self ,other,"DIA_Garond_Why_10_01"); //Потому что ты знаешь как пробираться через ряды орков. Мои парни только зря отдадут свои жизни.
-	AI_Output (self ,other,"DIA_Garond_Why_10_02"); //Ведь тебе один раз уже удалось преодолеть все препятствия - значит, ты как нельзя лучше подходишь для этой работы.
+	AI_Output (other,self ,"DIA_Garond_Why_15_00"); //РќРѕ РїРѕС‡РµРјСѓ РёРјРµРЅРЅРѕ СЏ?
+	AI_Output (self ,other,"DIA_Garond_Why_10_01"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РєР°Рє РїСЂРѕР±РёСЂР°С‚СЊСЃСЏ С‡РµСЂРµР· СЂСЏРґС‹ РѕСЂРєРѕРІ. РњРѕРё РїР°СЂРЅРё С‚РѕР»СЊРєРѕ Р·СЂСЏ РѕС‚РґР°РґСѓС‚ СЃРІРѕРё Р¶РёР·РЅРё.
+	AI_Output (self ,other,"DIA_Garond_Why_10_02"); //Р’РµРґСЊ С‚РµР±Рµ РѕРґРёРЅ СЂР°Р· СѓР¶Рµ СѓРґР°Р»РѕСЃСЊ РїСЂРµРѕРґРѕР»РµС‚СЊ РІСЃРµ РїСЂРµРїСЏС‚СЃС‚РІРёСЏ - Р·РЅР°С‡РёС‚, С‚С‹ РєР°Рє РЅРµР»СЊР·СЏ Р»СѓС‡С€Рµ РїРѕРґС…РѕРґРёС€СЊ РґР»СЏ СЌС‚РѕР№ СЂР°Р±РѕС‚С‹.
 };
 // ************************************************************
-// 			Ausrьstung
+// 			AusrСЊstung
 // ************************************************************
 
 INSTANCE DIA_Garond_Equipment (C_INFO)
@@ -413,7 +413,7 @@ INSTANCE DIA_Garond_Equipment (C_INFO)
 	condition	= DIA_Garond_Equipment_Condition;
 	information	= DIA_Garond_Equipment_Info;
 	permanent	= FALSE;
-	description = "Мне нужно снаряжение.";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ.";
 };                       
 
 FUNC INT DIA_Garond_Equipment_Condition()
@@ -428,18 +428,18 @@ FUNC INT DIA_Garond_Equipment_Condition()
 };
 FUNC VOID DIA_Garond_Equipment_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Equipment_15_00"); //Мне нужно снаряжение.
+	AI_Output (other,self ,"DIA_Garond_Equipment_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Garond_Equipment_10_01"); //Поговори с магом Милтеном здесь, в замке. Он разбирается в таких вещах.
+		AI_Output (self ,other,"DIA_Garond_Equipment_10_01"); //РџРѕРіРѕРІРѕСЂРё СЃ РјР°РіРѕРј РњРёР»С‚РµРЅРѕРј Р·РґРµСЃСЊ, РІ Р·Р°РјРєРµ. РћРЅ СЂР°Р·Р±РёСЂР°РµС‚СЃСЏ РІ С‚Р°РєРёС… РІРµС‰Р°С….
 	};
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self ,other,"DIA_Garond_Equipment_10_02"); //Поговори об этом с Тандором. Он выдаст тебе все необходимое.
+		AI_Output (self ,other,"DIA_Garond_Equipment_10_02"); //РџРѕРіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј СЃ РўР°РЅРґРѕСЂРѕРј. РћРЅ РІС‹РґР°СЃС‚ С‚РµР±Рµ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјРѕРµ.
 		
 		Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-		B_LogEntry (TOPIC_Trader_OC,"Тандор продает оружие в замке.");
+		B_LogEntry (TOPIC_Trader_OC,"РўР°РЅРґРѕСЂ РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ РІ Р·Р°РјРєРµ.");
 	};
 };
 // ************************************************************
@@ -453,7 +453,7 @@ INSTANCE DIA_Garond_zahlen (C_INFO)
 	condition	= DIA_Garond_zahlen_Condition;
 	information	= DIA_Garond_zahlen_Info;
 	permanent	= FALSE;
-	description = "Сколько ты заплатишь мне за эту работу?";
+	description = "РЎРєРѕР»СЊРєРѕ С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ РјРЅРµ Р·Р° СЌС‚Сѓ СЂР°Р±РѕС‚Сѓ?";
 };                       
 
 FUNC INT DIA_Garond_zahlen_Condition()
@@ -467,12 +467,12 @@ FUNC INT DIA_Garond_zahlen_Condition()
 };
 FUNC VOID DIA_Garond_zahlen_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_zahlen_15_00"); //Сколько ты заплатишь мне за эту работу?
-	AI_Output (self ,other,"DIA_Garond_zahlen_10_01"); //(сердито) Я не торгуюсь с вами, наемниками.
-	AI_Output (self ,other,"DIA_Garond_zahlen_10_02"); //Ох, ладно, похоже, у меня нет выбора. Я заплачу тебе 500 золотых, если ты выполнишь мое задание.
+	AI_Output (other,self ,"DIA_Garond_zahlen_15_00"); //РЎРєРѕР»СЊРєРѕ С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ РјРЅРµ Р·Р° СЌС‚Сѓ СЂР°Р±РѕС‚Сѓ?
+	AI_Output (self ,other,"DIA_Garond_zahlen_10_01"); //(СЃРµСЂРґРёС‚Рѕ) РЇ РЅРµ С‚РѕСЂРіСѓСЋСЃСЊ СЃ РІР°РјРё, РЅР°РµРјРЅРёРєР°РјРё.
+	AI_Output (self ,other,"DIA_Garond_zahlen_10_02"); //РћС…, Р»Р°РґРЅРѕ, РїРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР°. РЇ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ 500 Р·РѕР»РѕС‚С‹С…, РµСЃР»Рё С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ РјРѕРµ Р·Р°РґР°РЅРёРµ.
 };
 // ************************************************************
-// 	Wo finde ich die Schьrfstellen?
+// 	Wo finde ich die SchСЊrfstellen?
 // ************************************************************
 
 INSTANCE DIA_Garond_Wo (C_INFO)
@@ -482,7 +482,7 @@ INSTANCE DIA_Garond_Wo (C_INFO)
 	condition	= DIA_Garond_Wo_Condition;
 	information	= DIA_Garond_Wo_Info;
 	permanent	= FALSE;
-	description = "Где мне найти эти шахты?";
+	description = "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚Рё С€Р°С…С‚С‹?";
 };                       
 
 FUNC INT DIA_Garond_Wo_Condition()
@@ -496,22 +496,22 @@ FUNC INT DIA_Garond_Wo_Condition()
 };
 FUNC VOID DIA_Garond_Wo_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Wo_15_00"); //Где мне найти эти шахты?
-	AI_Output (self ,other,"DIA_Garond_Wo_10_01"); //Вот, возьми эту карту. На ней показаны две области, где находятся шахты.
+	AI_Output (other,self ,"DIA_Garond_Wo_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚Рё С€Р°С…С‚С‹?
+	AI_Output (self ,other,"DIA_Garond_Wo_10_01"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Сѓ РєР°СЂС‚Сѓ. РќР° РЅРµР№ РїРѕРєР°Р·Р°РЅС‹ РґРІРµ РѕР±Р»Р°СЃС‚Рё, РіРґРµ РЅР°С…РѕРґСЏС‚СЃСЏ С€Р°С…С‚С‹.
 	
 	CreateInvItems (self, ItWr_Map_OldWorld_Oremines_MIS, 1);									
 	B_GiveInvItems (self, other, ItWr_Map_OldWorld_Oremines_MIS, 1);					
 
-	AI_Output (self ,other,"DIA_Garond_Wo_10_02"); //Если у тебя есть еще вопросы, обратись к Парсивалю. Он расскажет все, что тебе нужно знать о старателях.
+	AI_Output (self ,other,"DIA_Garond_Wo_10_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РµС‰Рµ РІРѕРїСЂРѕСЃС‹, РѕР±СЂР°С‚РёСЃСЊ Рє РџР°СЂСЃРёРІР°Р»СЋ. РћРЅ СЂР°СЃСЃРєР°Р¶РµС‚ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ Рѕ СЃС‚Р°СЂР°С‚РµР»СЏС….
 	
-	B_LogEntry (TOPIC_ScoutMine,"Паладин Парсиваль может дать мне информацию о старателях.");
+	B_LogEntry (TOPIC_ScoutMine,"РџР°Р»Р°РґРёРЅ РџР°СЂСЃРёРІР°Р»СЊ РјРѕР¶РµС‚ РґР°С‚СЊ РјРЅРµ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃС‚Р°СЂР°С‚РµР»СЏС….");
 };
 
 FUNC VOID B_Garond_OreCounter3 ()
 {		
-	AI_Output (self ,other,"B_Garond_OreCounter3_10_00"); //Черт! Что там происходит? Неужели сам Белиар явился, чтобы стереть нас с лица земли?!
-	AI_Output (self ,other,"B_Garond_OreCounter3_10_01"); //Мои люди почти все мертвы, а с той рудой, что у нас есть, мы НЕ МОЖЕМ ОСТАНОВИТЬ ДАЖЕ ОДНОГО ОРКА, НЕ ГОВОРЯ УЖЕ ОБ АРМИИ!
-	AI_Output (self ,other,"B_Garond_OreCounter3_10_02"); //Эта экспедиция обречена на провал.
+	AI_Output (self ,other,"B_Garond_OreCounter3_10_00"); //Р§РµСЂС‚! Р§С‚Рѕ С‚Р°Рј РїСЂРѕРёСЃС…РѕРґРёС‚? РќРµСѓР¶РµР»Рё СЃР°Рј Р‘РµР»РёР°СЂ СЏРІРёР»СЃСЏ, С‡С‚РѕР±С‹ СЃС‚РµСЂРµС‚СЊ РЅР°СЃ СЃ Р»РёС†Р° Р·РµРјР»Рё?!
+	AI_Output (self ,other,"B_Garond_OreCounter3_10_01"); //РњРѕРё Р»СЋРґРё РїРѕС‡С‚Рё РІСЃРµ РјРµСЂС‚РІС‹, Р° СЃ С‚РѕР№ СЂСѓРґРѕР№, С‡С‚Рѕ Сѓ РЅР°СЃ РµСЃС‚СЊ, РјС‹ РќР• РњРћР–Р•Рњ РћРЎРўРђРќРћР’РРўР¬ Р”РђР–Р• РћР”РќРћР“Рћ РћР РљРђ, РќР• Р“РћР’РћР РЇ РЈР–Р• РћР‘ РђР РњРР!
+	AI_Output (self ,other,"B_Garond_OreCounter3_10_02"); //Р­С‚Р° СЌРєСЃРїРµРґРёС†РёСЏ РѕР±СЂРµС‡РµРЅР° РЅР° РїСЂРѕРІР°Р».
 };
 
 // ************************************************************
@@ -524,7 +524,7 @@ INSTANCE DIA_Garond_Fajeth (C_INFO)
 	condition	= DIA_Garond_Fajeth_Condition;
 	information	= DIA_Garond_Fajeth_Info;
 	permanent	= FALSE;
-	description = "Я поговорил с Фаджетом.";
+	description = "РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ Р¤Р°РґР¶РµС‚РѕРј.";
 };                       
 
 FUNC INT DIA_Garond_Fajeth_Condition()
@@ -538,12 +538,12 @@ FUNC INT DIA_Garond_Fajeth_Condition()
 };
 FUNC VOID DIA_Garond_Fajeth_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Fajeth_15_00"); //Я поговорил с Фаджетом.
-	AI_Output (self ,other,"DIA_Garond_Fajeth_10_01"); //Что он может сказать мне?
-	AI_Output (other,self ,"DIA_Garond_Fajeth_15_02"); //Его люди добыли два ящика руды.
-	AI_Output (self ,other,"DIA_Garond_Fajeth_10_03"); //Хмм... два ящика? Мне не нужны два ящика - мне нужно ДВЕ СОТНИ.
- 	AI_Output (other,self ,"DIA_Garond_Fajeth_15_04"); //Он хочет, чтобы я передал тебе - ему нужны еще люди.
- 	AI_Output (self ,other,"DIA_Garond_Fajeth_10_05"); //Что? Я должен послать еще людей на верную смерть? Он может забыть об этом.
+	AI_Output (other,self ,"DIA_Garond_Fajeth_15_00"); //РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ Р¤Р°РґР¶РµС‚РѕРј.
+	AI_Output (self ,other,"DIA_Garond_Fajeth_10_01"); //Р§С‚Рѕ РѕРЅ РјРѕР¶РµС‚ СЃРєР°Р·Р°С‚СЊ РјРЅРµ?
+	AI_Output (other,self ,"DIA_Garond_Fajeth_15_02"); //Р•РіРѕ Р»СЋРґРё РґРѕР±С‹Р»Рё РґРІР° СЏС‰РёРєР° СЂСѓРґС‹.
+	AI_Output (self ,other,"DIA_Garond_Fajeth_10_03"); //РҐРјРј... РґРІР° СЏС‰РёРєР°? РњРЅРµ РЅРµ РЅСѓР¶РЅС‹ РґРІР° СЏС‰РёРєР° - РјРЅРµ РЅСѓР¶РЅРѕ Р”Р’Р• РЎРћРўРќР.
+ 	AI_Output (other,self ,"DIA_Garond_Fajeth_15_04"); //РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРµСЂРµРґР°Р» С‚РµР±Рµ - РµРјСѓ РЅСѓР¶РЅС‹ РµС‰Рµ Р»СЋРґРё.
+ 	AI_Output (self ,other,"DIA_Garond_Fajeth_10_05"); //Р§С‚Рѕ? РЇ РґРѕР»Р¶РµРЅ РїРѕСЃР»Р°С‚СЊ РµС‰Рµ Р»СЋРґРµР№ РЅР° РІРµСЂРЅСѓСЋ СЃРјРµСЂС‚СЊ? РћРЅ РјРѕР¶РµС‚ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕРј.
  	
  	Ore_Counter = (Ore_Counter +1);
  	B_GivePlayerXP (XP_Fajeth_Ore);
@@ -564,7 +564,7 @@ INSTANCE DIA_Garond_Silvestro (C_INFO)
 	condition	= DIA_Garond_Silvestro_Condition;
 	information	= DIA_Garond_Silvestro_Info;
 	permanent	= FALSE;
-	description = "Насчет шахты Сильвестро...";
+	description = "РќР°СЃС‡РµС‚ С€Р°С…С‚С‹ РЎРёР»СЊРІРµСЃС‚СЂРѕ...";
 };                       
 
 FUNC INT DIA_Garond_Silvestro_Condition()
@@ -579,12 +579,12 @@ FUNC INT DIA_Garond_Silvestro_Condition()
 };
 FUNC VOID DIA_Garond_Silvestro_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Silvestro_15_00"); //Насчет шахты Сильвестро...
-	AI_Output (self ,other,"DIA_Garond_Silvestro_10_01"); //Ты видел его? Ты говорил с ним?
-	AI_Output (other,self ,"DIA_Garond_Silvestro_15_02"); //Все, кто находился в шахте, мертвы. Растерзаны краулерами.
-	AI_Output (self ,other,"DIA_Garond_Silvestro_10_03"); //А что насчет руды? Ты знаешь, сколько они добыли?
-	AI_Output (other,self ,"DIA_Garond_Silvestro_15_04"); //Им удалось спрятать несколько ящиков. Они в пещере - по пути от замка к шахте.
-	AI_Output (self ,other,"DIA_Garond_Silvestro_10_05"); //Черт! Это были хорошие люди - да проявит Иннос милосердие к их душам.
+	AI_Output (other,self ,"DIA_Garond_Silvestro_15_00"); //РќР°СЃС‡РµС‚ С€Р°С…С‚С‹ РЎРёР»СЊРІРµСЃС‚СЂРѕ...
+	AI_Output (self ,other,"DIA_Garond_Silvestro_10_01"); //РўС‹ РІРёРґРµР» РµРіРѕ? РўС‹ РіРѕРІРѕСЂРёР» СЃ РЅРёРј?
+	AI_Output (other,self ,"DIA_Garond_Silvestro_15_02"); //Р’СЃРµ, РєС‚Рѕ РЅР°С…РѕРґРёР»СЃСЏ РІ С€Р°С…С‚Рµ, РјРµСЂС‚РІС‹. Р Р°СЃС‚РµСЂР·Р°РЅС‹ РєСЂР°СѓР»РµСЂР°РјРё.
+	AI_Output (self ,other,"DIA_Garond_Silvestro_10_03"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ СЂСѓРґС‹? РўС‹ Р·РЅР°РµС€СЊ, СЃРєРѕР»СЊРєРѕ РѕРЅРё РґРѕР±С‹Р»Рё?
+	AI_Output (other,self ,"DIA_Garond_Silvestro_15_04"); //РРј СѓРґР°Р»РѕСЃСЊ СЃРїСЂСЏС‚Р°С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ СЏС‰РёРєРѕРІ. РћРЅРё РІ РїРµС‰РµСЂРµ - РїРѕ РїСѓС‚Рё РѕС‚ Р·Р°РјРєР° Рє С€Р°С…С‚Рµ.
+	AI_Output (self ,other,"DIA_Garond_Silvestro_10_05"); //Р§РµСЂС‚! Р­С‚Рѕ Р±С‹Р»Рё С…РѕСЂРѕС€РёРµ Р»СЋРґРё - РґР° РїСЂРѕСЏРІРёС‚ РРЅРЅРѕСЃ РјРёР»РѕСЃРµСЂРґРёРµ Рє РёС… РґСѓС€Р°Рј.
 	
 	Ore_Counter = (Ore_Counter +1);
 	B_GivePlayerXP (XP_Silvestro_Ore);
@@ -604,7 +604,7 @@ INSTANCE DIA_Garond_Marcos (C_INFO)
 	condition	= DIA_Garond_Marcos_Condition;
 	information	= DIA_Garond_Marcos_Info;
 	permanent	= FALSE;
-	description = "Я встретил Маркоса.";
+	description = "РЇ РІСЃС‚СЂРµС‚РёР» РњР°СЂРєРѕСЃР°.";
 };                       
 
 FUNC INT DIA_Garond_Marcos_Condition()
@@ -618,12 +618,12 @@ FUNC INT DIA_Garond_Marcos_Condition()
 };
 FUNC VOID DIA_Garond_Marcos_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Marcos_15_00"); //Я встретил Маркоса.
-	AI_Output (self ,other,"DIA_Garond_Marcos_10_01"); //И? Что он может доложить? Сколько руды он добыл для нас?
-	AI_Output (other,self ,"DIA_Garond_Marcos_15_02"); //Четыре ящика. Он покинул шахту, чтобы переправить руду в безопасное место.
-	AI_Output (other,self ,"DIA_Garond_Marcos_15_03"); //Теперь он охраняет эти ящики в небольшой долине за позициями орков. Он просит прислать подкрепление.
-	AI_Output (self ,other,"DIA_Garond_Marcos_10_04"); //Что? Всего четыре ящика - и он покинул шахту? Черт, как это все плохо.
-	AI_Output (self ,other,"DIA_Garond_Marcos_10_05"); //И ему нужны еще люди?.. Что ж, ладно, я пошлю к нему двух человек.
+	AI_Output (other,self ,"DIA_Garond_Marcos_15_00"); //РЇ РІСЃС‚СЂРµС‚РёР» РњР°СЂРєРѕСЃР°.
+	AI_Output (self ,other,"DIA_Garond_Marcos_10_01"); //Р? Р§С‚Рѕ РѕРЅ РјРѕР¶РµС‚ РґРѕР»РѕР¶РёС‚СЊ? РЎРєРѕР»СЊРєРѕ СЂСѓРґС‹ РѕРЅ РґРѕР±С‹Р» РґР»СЏ РЅР°СЃ?
+	AI_Output (other,self ,"DIA_Garond_Marcos_15_02"); //Р§РµС‚С‹СЂРµ СЏС‰РёРєР°. РћРЅ РїРѕРєРёРЅСѓР» С€Р°С…С‚Сѓ, С‡С‚РѕР±С‹ РїРµСЂРµРїСЂР°РІРёС‚СЊ СЂСѓРґСѓ РІ Р±РµР·РѕРїР°СЃРЅРѕРµ РјРµСЃС‚Рѕ.
+	AI_Output (other,self ,"DIA_Garond_Marcos_15_03"); //РўРµРїРµСЂСЊ РѕРЅ РѕС…СЂР°РЅСЏРµС‚ СЌС‚Рё СЏС‰РёРєРё РІ РЅРµР±РѕР»СЊС€РѕР№ РґРѕР»РёРЅРµ Р·Р° РїРѕР·РёС†РёСЏРјРё РѕСЂРєРѕРІ. РћРЅ РїСЂРѕСЃРёС‚ РїСЂРёСЃР»Р°С‚СЊ РїРѕРґРєСЂРµРїР»РµРЅРёРµ.
+	AI_Output (self ,other,"DIA_Garond_Marcos_10_04"); //Р§С‚Рѕ? Р’СЃРµРіРѕ С‡РµС‚С‹СЂРµ СЏС‰РёРєР° - Рё РѕРЅ РїРѕРєРёРЅСѓР» С€Р°С…С‚Сѓ? Р§РµСЂС‚, РєР°Рє СЌС‚Рѕ РІСЃРµ РїР»РѕС…Рѕ.
+	AI_Output (self ,other,"DIA_Garond_Marcos_10_05"); //Р РµРјСѓ РЅСѓР¶РЅС‹ РµС‰Рµ Р»СЋРґРё?.. Р§С‚Рѕ Р¶, Р»Р°РґРЅРѕ, СЏ РїРѕС€Р»СЋ Рє РЅРµРјСѓ РґРІСѓС… С‡РµР»РѕРІРµРє.
 	
 	
 	Marcos_Guard1.flags = 0;
@@ -656,7 +656,7 @@ INSTANCE DIA_Garond_Success (C_INFO)
 	condition	= DIA_Garond_Success_Condition;
 	information	= DIA_Garond_Success_Info;
 	permanent	= FALSE;
-	description = "Что насчет письма для лорда Хагена?";
+	description = "Р§С‚Рѕ РЅР°СЃС‡РµС‚ РїРёСЃСЊРјР° РґР»СЏ Р»РѕСЂРґР° РҐР°РіРµРЅР°?";
 };                       
 
 FUNC INT DIA_Garond_Success_Condition()
@@ -670,16 +670,16 @@ FUNC INT DIA_Garond_Success_Condition()
 };
 FUNC VOID DIA_Garond_Success_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Success_15_00"); //Что насчет письма для лорда Хагена?
-	AI_Output (self ,other,"DIA_Garond_Success_10_01"); //В общей сложности у нас есть десять ящиков руды - и мы потеряли в два раза больше хороших людей.
-	AI_Output (self ,other,"DIA_Garond_Success_10_02"); //Ты получишь свое письмо. Лорд Хаген ДОЛЖЕН услышать об этом. Эта долина проклята - здесь царствует Зло.
+	AI_Output (other,self ,"DIA_Garond_Success_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РїРёСЃСЊРјР° РґР»СЏ Р»РѕСЂРґР° РҐР°РіРµРЅР°?
+	AI_Output (self ,other,"DIA_Garond_Success_10_01"); //Р’ РѕР±С‰РµР№ СЃР»РѕР¶РЅРѕСЃС‚Рё Сѓ РЅР°СЃ РµСЃС‚СЊ РґРµСЃСЏС‚СЊ СЏС‰РёРєРѕРІ СЂСѓРґС‹ - Рё РјС‹ РїРѕС‚РµСЂСЏР»Рё РІ РґРІР° СЂР°Р·Р° Р±РѕР»СЊС€Рµ С…РѕСЂРѕС€РёС… Р»СЋРґРµР№.
+	AI_Output (self ,other,"DIA_Garond_Success_10_02"); //РўС‹ РїРѕР»СѓС‡РёС€СЊ СЃРІРѕРµ РїРёСЃСЊРјРѕ. Р›РѕСЂРґ РҐР°РіРµРЅ Р”РћР›Р–Р•Рќ СѓСЃР»С‹С€Р°С‚СЊ РѕР± СЌС‚РѕРј. Р­С‚Р° РґРѕР»РёРЅР° РїСЂРѕРєР»СЏС‚Р° - Р·РґРµСЃСЊ С†Р°СЂСЃС‚РІСѓРµС‚ Р—Р»Рѕ.
 	
 	CreateInvItems (self,ItWr_PaladinLetter_MIS,1);
 	B_GiveInvItems (self,other,ItWr_PaladinLetter_MIS,1);
 	
 	KnowsPaladins_Ore = TRUE;
 	
-	B_LogEntry (TOPIC_MISOLDWORLD,"Командующий Гаронд дал мне письмо. Его должно быть достаточно для подтверждения моих слов. Я могу отнести его лорду Хагену.");
+	B_LogEntry (TOPIC_MISOLDWORLD,"РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РґР°Р» РјРЅРµ РїРёСЃСЊРјРѕ. Р•РіРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР»СЏ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ РјРѕРёС… СЃР»РѕРІ. РЇ РјРѕРіСѓ РѕС‚РЅРµСЃС‚Рё РµРіРѕ Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ.");
 	
 	MIS_ScoutMine = LOG_SUCCESS;
 	B_GivePlayerXP (XP_ScoutMine);
@@ -697,7 +697,7 @@ INSTANCE DIA_Garond_SLD (C_INFO)
 	condition	= DIA_Garond_SLD_Condition;
 	information	= DIA_Garond_SLD_Info;
 	permanent	= FALSE;
-	description = "Как насчет оплаты?";
+	description = "РљР°Рє РЅР°СЃС‡РµС‚ РѕРїР»Р°С‚С‹?";
 };                       
 
 FUNC INT DIA_Garond_SLD_Condition()
@@ -710,8 +710,8 @@ FUNC INT DIA_Garond_SLD_Condition()
 };
 FUNC VOID DIA_Garond_SLD_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_SLD_15_00"); //Как насчет оплаты?
-	AI_Output (self ,other,"DIA_Garond_SLD_10_01"); //Ох, да, точно. Я должен тебе немного золота. Вот твоя награда.
+	AI_Output (other,self ,"DIA_Garond_SLD_15_00"); //РљР°Рє РЅР°СЃС‡РµС‚ РѕРїР»Р°С‚С‹?
+	AI_Output (self ,other,"DIA_Garond_SLD_10_01"); //РћС…, РґР°, С‚РѕС‡РЅРѕ. РЇ РґРѕР»Р¶РµРЅ С‚РµР±Рµ РЅРµРјРЅРѕРіРѕ Р·РѕР»РѕС‚Р°. Р’РѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР°.
 	B_GiveInvItems (self, other, itMI_Gold, 500);
 };
 // ************************************************************
@@ -724,7 +724,7 @@ INSTANCE DIA_Garond_Running (C_INFO)
 	condition	= DIA_Garond_Running_Condition;
 	information	= DIA_Garond_Running_Info;
 	permanent	= TRUE;
-	description = "Как ситуация?";
+	description = "РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };                       
 
 FUNC INT DIA_Garond_Running_Condition()
@@ -738,20 +738,20 @@ FUNC INT DIA_Garond_Running_Condition()
 };
 FUNC VOID DIA_Garond_Running_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Running_15_00"); //Как обстановка?
+	AI_Output (other,self ,"DIA_Garond_Running_15_00"); //РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
 	
 	if (Ore_Counter == 2) 
 	{
-		AI_Output (self ,other,"DIA_Garond_Running_10_01"); //Теперь я жду только новостей с последней шахты - и надеюсь, что это будут хорошие новости.
+		AI_Output (self ,other,"DIA_Garond_Running_10_01"); //РўРµРїРµСЂСЊ СЏ Р¶РґСѓ С‚РѕР»СЊРєРѕ РЅРѕРІРѕСЃС‚РµР№ СЃ РїРѕСЃР»РµРґРЅРµР№ С€Р°С…С‚С‹ - Рё РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґСѓС‚ С…РѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё.
 		
 	}
 	else if (Ore_Counter == 1) 
 	{
-		AI_Output (self ,other,"DIA_Garond_Running_10_02"); //Мне нужны доклады о двух других шахтах. А там посмотрим.
+		AI_Output (self ,other,"DIA_Garond_Running_10_02"); //РњРЅРµ РЅСѓР¶РЅС‹ РґРѕРєР»Р°РґС‹ Рѕ РґРІСѓС… РґСЂСѓРіРёС… С€Р°С…С‚Р°С…. Рђ С‚Р°Рј РїРѕСЃРјРѕС‚СЂРёРј.
 	}
 	else //0
 	{
-		AI_Output (self ,other,"DIA_Garond_Running_10_03"); //Ты должен найти наши шахты. Мне очень нужны новости о том, как обстоят дела с добычей руды.
+		AI_Output (self ,other,"DIA_Garond_Running_10_03"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РЅР°С€Рё С€Р°С…С‚С‹. РњРЅРµ РѕС‡РµРЅСЊ РЅСѓР¶РЅС‹ РЅРѕРІРѕСЃС‚Рё Рѕ С‚РѕРј, РєР°Рє РѕР±СЃС‚РѕСЏС‚ РґРµР»Р° СЃ РґРѕР±С‹С‡РµР№ СЂСѓРґС‹.
 	};
 	
 };
@@ -766,7 +766,7 @@ INSTANCE DIA_Garond_Gorn (C_INFO)
 	condition	= DIA_Garond_Gorn_Condition;
 	information	= DIA_Garond_Gorn_Info;
 	permanent	= FALSE;
-	description = "Я хочу, чтобы ты освободил Горна.";
+	description = "РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕСЃРІРѕР±РѕРґРёР» Р“РѕСЂРЅР°.";
 };                       
 
 FUNC INT DIA_Garond_Gorn_Condition()
@@ -780,15 +780,15 @@ FUNC INT DIA_Garond_Gorn_Condition()
 };
 FUNC VOID DIA_Garond_Gorn_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Gorn_15_00"); //Я хочу, чтобы ты освободил Горна.
-	AI_Output (self ,other,"DIA_Garond_Gorn_10_01"); //Я не могу отпустить его. Он совершил слишком много преступлений и должен поплатиться за это.
-	AI_Output (other,self ,"DIA_Garond_Gorn_15_02"); //Могу я заплатить штраф за него?
-	AI_Output (self ,other,"DIA_Garond_Gorn_10_03"); //Это возможно - но обойдется тебе очень недешево. Я хочу получить за Горна 1000 золотых.
-	AI_Output (other,self ,"DIA_Garond_Gorn_15_04"); //Это огромная сумма.
-	AI_Output (self ,other,"DIA_Garond_Gorn_10_05"); //Вина Горна тоже не маленькая. Принеси мне это золото, и я освобожу его.
+	AI_Output (other,self ,"DIA_Garond_Gorn_15_00"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕСЃРІРѕР±РѕРґРёР» Р“РѕСЂРЅР°.
+	AI_Output (self ,other,"DIA_Garond_Gorn_10_01"); //РЇ РЅРµ РјРѕРіСѓ РѕС‚РїСѓСЃС‚РёС‚СЊ РµРіРѕ. РћРЅ СЃРѕРІРµСЂС€РёР» СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РїСЂРµСЃС‚СѓРїР»РµРЅРёР№ Рё РґРѕР»Р¶РµРЅ РїРѕРїР»Р°С‚РёС‚СЊСЃСЏ Р·Р° СЌС‚Рѕ.
+	AI_Output (other,self ,"DIA_Garond_Gorn_15_02"); //РњРѕРіСѓ СЏ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„ Р·Р° РЅРµРіРѕ?
+	AI_Output (self ,other,"DIA_Garond_Gorn_10_03"); //Р­С‚Рѕ РІРѕР·РјРѕР¶РЅРѕ - РЅРѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РѕС‡РµРЅСЊ РЅРµРґРµС€РµРІРѕ. РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ Р·Р° Р“РѕСЂРЅР° 1000 Р·РѕР»РѕС‚С‹С….
+	AI_Output (other,self ,"DIA_Garond_Gorn_15_04"); //Р­С‚Рѕ РѕРіСЂРѕРјРЅР°СЏ СЃСѓРјРјР°.
+	AI_Output (self ,other,"DIA_Garond_Gorn_10_05"); //Р’РёРЅР° Р“РѕСЂРЅР° С‚РѕР¶Рµ РЅРµ РјР°Р»РµРЅСЊРєР°СЏ. РџСЂРёРЅРµСЃРё РјРЅРµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ, Рё СЏ РѕСЃРІРѕР±РѕР¶Сѓ РµРіРѕ.
 	
 	MIS_RescueGorn = LOG_RUNNING; 
-	B_LogEntry (TOPIC_RescueGorn,"Гаронд требует тысячу золотых монет за освобождение Горна.");
+	B_LogEntry (TOPIC_RescueGorn,"Р“Р°СЂРѕРЅРґ С‚СЂРµР±СѓРµС‚ С‚С‹СЃСЏС‡Сѓ Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Р·Р° РѕСЃРІРѕР±РѕР¶РґРµРЅРёРµ Р“РѕСЂРЅР°.");
 };
 // ************************************************************
 // Gorn freikaufen
@@ -801,7 +801,7 @@ INSTANCE DIA_Garond_Pay (C_INFO)
 	condition	= DIA_Garond_Pay_Condition;
 	information	= DIA_Garond_Pay_Info;
 	permanent	= TRUE;
-	description = "Я хочу купить свободу Горну. (Заплатить 1000 монет)";
+	description = "РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ СЃРІРѕР±РѕРґСѓ Р“РѕСЂРЅСѓ. (Р—Р°РїР»Р°С‚РёС‚СЊ 1000 РјРѕРЅРµС‚)";
 };                       
 FUNC INT DIA_Garond_Pay_Condition()
 {
@@ -814,18 +814,18 @@ FUNC INT DIA_Garond_Pay_Condition()
 };
 FUNC VOID DIA_Garond_Pay_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Pay_15_00"); //Я хочу купить Горну свободу.
+	AI_Output (other,self ,"DIA_Garond_Pay_15_00"); //РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ Р“РѕСЂРЅСѓ СЃРІРѕР±РѕРґСѓ.
 	
 	if B_GiveInvItems (other, self, ItMI_Gold, 1000)
 	{
-		AI_Output (self ,other,"DIA_Garond_Pay_10_01"); //Хорошо. Ты можешь пойти к Герольду и сказать ему, что я приказываю освободить Горна.
+		AI_Output (self ,other,"DIA_Garond_Pay_10_01"); //РҐРѕСЂРѕС€Рѕ. РўС‹ РјРѕР¶РµС€СЊ РїРѕР№С‚Рё Рє Р“РµСЂРѕР»СЊРґСѓ Рё СЃРєР°Р·Р°С‚СЊ РµРјСѓ, С‡С‚Рѕ СЏ РїСЂРёРєР°Р·С‹РІР°СЋ РѕСЃРІРѕР±РѕРґРёС‚СЊ Р“РѕСЂРЅР°.
 		
 		Garond_Kerkerauf = TRUE;
-		B_LogEntry (TOPIC_RescueGorn,"Я заплатил Гаронду. Теперь я могу освободить Горна из темницы. Стражник Герольд не будет препятствовать.");
+		B_LogEntry (TOPIC_RescueGorn,"РЇ Р·Р°РїР»Р°С‚РёР» Р“Р°СЂРѕРЅРґСѓ. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РѕСЃРІРѕР±РѕРґРёС‚СЊ Р“РѕСЂРЅР° РёР· С‚РµРјРЅРёС†С‹. РЎС‚СЂР°Р¶РЅРёРє Р“РµСЂРѕР»СЊРґ РЅРµ Р±СѓРґРµС‚ РїСЂРµРїСЏС‚СЃС‚РІРѕРІР°С‚СЊ.");
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Garond_Pay_10_02"); //Тогда принеси мне 1000 золотых монет.
+		AI_Output (self ,other,"DIA_Garond_Pay_10_02"); //РўРѕРіРґР° РїСЂРёРЅРµСЃРё РјРЅРµ 1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	};	
 };
 // ************************************************************
@@ -838,7 +838,7 @@ INSTANCE DIA_Garond_Perm2 (C_INFO)
 	condition	= DIA_Garond_Perm2_Condition;
 	information	= DIA_Garond_Perm2_Info;
 	permanent	= TRUE;
-	description = "Что ты планируешь делать дальше?";
+	description = "Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?";
 };                       
 
 FUNC INT DIA_Garond_Perm2_Condition()
@@ -851,9 +851,9 @@ FUNC INT DIA_Garond_Perm2_Condition()
 };
 FUNC VOID DIA_Garond_Perm2_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Perm2_15_00"); //Что ты планируешь делать дальше?
-	AI_Output (self ,other,"DIA_Garond_Perm2_10_01"); //Я уже все перепробовал. Ты - моя единственная надежда, что лорд Хаген пришлет мне подкрепление.
-	AI_Output (self ,other,"DIA_Garond_Perm2_10_02"); //Но мы не падем духом и будем молиться Инносу, чтобы он не оставил нас без своей поддержки в этот мрачный час.
+	AI_Output (other,self ,"DIA_Garond_Perm2_15_00"); //Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output (self ,other,"DIA_Garond_Perm2_10_01"); //РЇ СѓР¶Рµ РІСЃРµ РїРµСЂРµРїСЂРѕР±РѕРІР°Р». РўС‹ - РјРѕСЏ РµРґРёРЅСЃС‚РІРµРЅРЅР°СЏ РЅР°РґРµР¶РґР°, С‡С‚Рѕ Р»РѕСЂРґ РҐР°РіРµРЅ РїСЂРёС€Р»РµС‚ РјРЅРµ РїРѕРґРєСЂРµРїР»РµРЅРёРµ.
+	AI_Output (self ,other,"DIA_Garond_Perm2_10_02"); //РќРѕ РјС‹ РЅРµ РїР°РґРµРј РґСѓС…РѕРј Рё Р±СѓРґРµРј РјРѕР»РёС‚СЊСЃСЏ РРЅРЅРѕСЃСѓ, С‡С‚РѕР±С‹ РѕРЅ РЅРµ РѕСЃС‚Р°РІРёР» РЅР°СЃ Р±РµР· СЃРІРѕРµР№ РїРѕРґРґРµСЂР¶РєРё РІ СЌС‚РѕС‚ РјСЂР°С‡РЅС‹Р№ С‡Р°СЃ.
 };
 //#####################################################################
 //##
@@ -898,7 +898,7 @@ instance DIA_Garond_WASGIBTSNEUES		(C_INFO)
 	condition	 = 	DIA_Garond_WASGIBTSNEUES_Condition;
 	information	 = 	DIA_Garond_WASGIBTSNEUES_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Что нового?";
+	description	 = 	"Р§С‚Рѕ РЅРѕРІРѕРіРѕ?";
 };
 
 func int DIA_Garond_WASGIBTSNEUES_Condition ()
@@ -911,9 +911,9 @@ func int DIA_Garond_WASGIBTSNEUES_Condition ()
 
 func void DIA_Garond_WASGIBTSNEUES_Info ()
 {
-	AI_Output (other, self, "DIA_Garond_WASGIBTSNEUES_15_00"); //Что нового?
-	AI_Output (self, other, "DIA_Garond_WASGIBTSNEUES_10_01"); //Черт. Что ты тут ошиваешься? Мне нужно подкрепление!
-	AI_Output (self, other, "DIA_Garond_WASGIBTSNEUES_10_02"); //Даже Милтен покинул замок. Но мне не нужно несколько человек - мне нужно БОЛЬШОЕ подкрепление!
+	AI_Output (other, self, "DIA_Garond_WASGIBTSNEUES_15_00"); //Р§С‚Рѕ РЅРѕРІРѕРіРѕ?
+	AI_Output (self, other, "DIA_Garond_WASGIBTSNEUES_10_01"); //Р§РµСЂС‚. Р§С‚Рѕ С‚С‹ С‚СѓС‚ РѕС€РёРІР°РµС€СЊСЃСЏ? РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРґРєСЂРµРїР»РµРЅРёРµ!
+	AI_Output (self, other, "DIA_Garond_WASGIBTSNEUES_10_02"); //Р”Р°Р¶Рµ РњРёР»С‚РµРЅ РїРѕРєРёРЅСѓР» Р·Р°РјРѕРє. РќРѕ РјРЅРµ РЅРµ РЅСѓР¶РЅРѕ РЅРµСЃРєРѕР»СЊРєРѕ С‡РµР»РѕРІРµРє - РјРЅРµ РЅСѓР¶РЅРѕ Р‘РћР›Р¬РЁРћР• РїРѕРґРєСЂРµРїР»РµРЅРёРµ!
 };
 //#####################################################################
 //##
@@ -959,7 +959,7 @@ instance DIA_Garond_BACKINKAP4		(C_INFO)
 	condition	 = 	DIA_Garond_BACKINKAP4_Condition;
 	information	 = 	DIA_Garond_BACKINKAP4_Info;
 	Permanent	 =	FALSE;
-	description	 = 	"Я вернулся.";
+	description	 = 	"РЇ РІРµСЂРЅСѓР»СЃСЏ.";
 };
 
 func int DIA_Garond_BACKINKAP4_Condition ()
@@ -972,22 +972,22 @@ func int DIA_Garond_BACKINKAP4_Condition ()
 
 func void DIA_Garond_BACKINKAP4_Info ()
 {
-	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_00"); //Я вернулся.
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_01"); //Я сам это вижу. А что насчет подкрепления?
-	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_02"); //Лорд Хаген прибудет, как только со всем разберется. Столько всего произошло.
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_03"); //Меня это не волнует. Мне нужны войска. Орки все прибывают и прибывают. Нам не продержаться долго.
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_04"); //Мои люди измотаны, и у нас заканчивается провизия.
-	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_05"); //Прибыли волонтеры.
+	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_00"); //РЇ РІРµСЂРЅСѓР»СЃСЏ.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_01"); //РЇ СЃР°Рј СЌС‚Рѕ РІРёР¶Сѓ. Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РїРѕРґРєСЂРµРїР»РµРЅРёСЏ?
+	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_02"); //Р›РѕСЂРґ РҐР°РіРµРЅ РїСЂРёР±СѓРґРµС‚, РєР°Рє С‚РѕР»СЊРєРѕ СЃРѕ РІСЃРµРј СЂР°Р·Р±РµСЂРµС‚СЃСЏ. РЎС‚РѕР»СЊРєРѕ РІСЃРµРіРѕ РїСЂРѕРёР·РѕС€Р»Рѕ.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_03"); //РњРµРЅСЏ СЌС‚Рѕ РЅРµ РІРѕР»РЅСѓРµС‚. РњРЅРµ РЅСѓР¶РЅС‹ РІРѕР№СЃРєР°. РћСЂРєРё РІСЃРµ РїСЂРёР±С‹РІР°СЋС‚ Рё РїСЂРёР±С‹РІР°СЋС‚. РќР°Рј РЅРµ РїСЂРѕРґРµСЂР¶Р°С‚СЊСЃСЏ РґРѕР»РіРѕ.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_04"); //РњРѕРё Р»СЋРґРё РёР·РјРѕС‚Р°РЅС‹, Рё Сѓ РЅР°СЃ Р·Р°РєР°РЅС‡РёРІР°РµС‚СЃСЏ РїСЂРѕРІРёР·РёСЏ.
+	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_05"); //РџСЂРёР±С‹Р»Рё РІРѕР»РѕРЅС‚РµСЂС‹.
 
 	if (hero.guild == GIL_DJG)
 	{
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_06"); //Ты имеешь в виду себя и твоих друзей, охотников на драконов, что ли? Вы, конечно, можете помочь нам, но вас слишком мало.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_06"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ СЃРµР±СЏ Рё С‚РІРѕРёС… РґСЂСѓР·РµР№, РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ, С‡С‚Рѕ Р»Рё? Р’С‹, РєРѕРЅРµС‡РЅРѕ, РјРѕР¶РµС‚Рµ РїРѕРјРѕС‡СЊ РЅР°Рј, РЅРѕ РІР°СЃ СЃР»РёС€РєРѕРј РјР°Р»Рѕ.
 	}
 	else
 	{
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_07"); //Ты имеешь в виду охотников на драконов? Они, конечно, могут помочь нам, но их слишком мало.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_07"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ? РћРЅРё, РєРѕРЅРµС‡РЅРѕ, РјРѕРіСѓС‚ РїРѕРјРѕС‡СЊ РЅР°Рј, РЅРѕ РёС… СЃР»РёС€РєРѕРј РјР°Р»Рѕ.
 	};
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_08"); //Если Хаген не пришлет в ближайшее время своих людей, я ничего не могу гарантировать.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_08"); //Р•СЃР»Рё РҐР°РіРµРЅ РЅРµ РїСЂРёС€Р»РµС‚ РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ СЃРІРѕРёС… Р»СЋРґРµР№, СЏ РЅРёС‡РµРіРѕ РЅРµ РјРѕРіСѓ РіР°СЂР°РЅС‚РёСЂРѕРІР°С‚СЊ.
 
 	B_InitNpcGlobals ();//Joly: zur Sicherheit
 
@@ -998,7 +998,7 @@ func void DIA_Garond_BACKINKAP4_Info ()
 	DJG_Angar_SentToStones = TRUE;
 
 
-	// Die Drachenjдger vom Spielstart verziehen sich in ihr Lager.
+	// Die DrachenjРґger vom Spielstart verziehen sich in ihr Lager.
 	//-----------------------------------------
 	B_StartOtherRoutine 	(Kjorn,	"START");
 	B_StartOtherRoutine 	(Godar,	"START");
@@ -1022,7 +1022,7 @@ instance DIA_Garond_DragonPlettBericht		(C_INFO)
 	condition	 = 	DIA_Garond_DragonPlettBericht_Condition;
 	information	 = 	DIA_Garond_DragonPlettBericht_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Насчет драконов ...";
+	description	 = 	"РќР°СЃС‡РµС‚ РґСЂР°РєРѕРЅРѕРІ ...";
 };
 
 var int DIA_Garond_DragonPlettBericht_NoPerm;
@@ -1044,12 +1044,12 @@ var int Garond_IcedragonKilled_OneTime;
 var int Garond_OricExperte_OneTime;
 func void DIA_Garond_DragonPlettBericht_Info ()
 {
-	B_LogEntry (TOPIC_DRACHENJAGD,"Гаронда по долгу службы должно интересовать, как обстоят дела с драконами, хотя мне кажется, ему на это наплевать."); 
+	B_LogEntry (TOPIC_DRACHENJAGD,"Р“Р°СЂРѕРЅРґР° РїРѕ РґРѕР»РіСѓ СЃР»СѓР¶Р±С‹ РґРѕР»Р¶РЅРѕ РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ, РєР°Рє РѕР±СЃС‚РѕСЏС‚ РґРµР»Р° СЃ РґСЂР°РєРѕРЅР°РјРё, С…РѕС‚СЏ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, РµРјСѓ РЅР° СЌС‚Рѕ РЅР°РїР»РµРІР°С‚СЊ."); 
 
 	if (Garond_DragonCounter < MIS_KilledDragons)
 	{
-		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_00"); //У меня есть новости о драконах.
-		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_01"); //Докладывай.
+		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РЅРѕРІРѕСЃС‚Рё Рѕ РґСЂР°РєРѕРЅР°С….
+		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_01"); //Р”РѕРєР»Р°РґС‹РІР°Р№.
 		
 		var int CurrentDragonCount;
 		var int Drachengeld;
@@ -1060,7 +1060,7 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 		if (Npc_IsDead(Swampdragon))
 		&& (Garond_SwampdragonKilled_OneTime == FALSE)
 		{
-			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_02"); //Я убил дракона в болоте к востоку отсюда.
+			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_02"); //РЇ СѓР±РёР» РґСЂР°РєРѕРЅР° РІ Р±РѕР»РѕС‚Рµ Рє РІРѕСЃС‚РѕРєСѓ РѕС‚СЃСЋРґР°.
 			Garond_SwampdragonKilled_OneTime = TRUE;
 			CurrentDragonCount = (CurrentDragonCount + 1);
 		};
@@ -1068,7 +1068,7 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 		if (Npc_IsDead(Rockdragon))
 		&& (Garond_RockdragonKilled_OneTime == FALSE)
 		{
-			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_03"); //Дракон в каменной крепости, к югу отсюда, мертв.
+			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_03"); //Р”СЂР°РєРѕРЅ РІ РєР°РјРµРЅРЅРѕР№ РєСЂРµРїРѕСЃС‚Рё, Рє СЋРіСѓ РѕС‚СЃСЋРґР°, РјРµСЂС‚РІ.
 			Garond_RockdragonKilled_OneTime = TRUE;
 			CurrentDragonCount = (CurrentDragonCount + 1);
 		};
@@ -1076,7 +1076,7 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 		if (Npc_IsDead(FireDragon))
 		&& (Garond_FireDragonKilled_OneTime == FALSE)
 		{
-			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_04"); //Огненный дракон из вулкана на юге больше не будет беспокоить вас.
+			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_04"); //РћРіРЅРµРЅРЅС‹Р№ РґСЂР°РєРѕРЅ РёР· РІСѓР»РєР°РЅР° РЅР° СЋРіРµ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґРµС‚ Р±РµСЃРїРѕРєРѕРёС‚СЊ РІР°СЃ.
 			Garond_FireDragonKilled_OneTime = TRUE;
 			CurrentDragonCount = (CurrentDragonCount + 1);
 		};
@@ -1084,12 +1084,12 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 		if (Npc_IsDead(Icedragon))
 		&& (Garond_IcedragonKilled_OneTime == FALSE)
 		{
-			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_05"); //Я был в западном ледяном районе и расправился с драконом, обитавшем там.
+			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_05"); //РЇ Р±С‹Р» РІ Р·Р°РїР°РґРЅРѕРј Р»РµРґСЏРЅРѕРј СЂР°Р№РѕРЅРµ Рё СЂР°СЃРїСЂР°РІРёР»СЃСЏ СЃ РґСЂР°РєРѕРЅРѕРј, РѕР±РёС‚Р°РІС€РµРј С‚Р°Рј.
 			Garond_IcedragonKilled_OneTime = TRUE;
 			CurrentDragonCount = (CurrentDragonCount + 1);
 		};
 
-		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_06"); //Это хорошие новости. Вот. Возьми эти деньги. Надеюсь, они помогут тебе обновить свое снаряжение.
+		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_06"); //Р­С‚Рѕ С…РѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё. Р’РѕС‚. Р’РѕР·СЊРјРё СЌС‚Рё РґРµРЅСЊРіРё. РќР°РґРµСЋСЃСЊ, РѕРЅРё РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ РѕР±РЅРѕРІРёС‚СЊ СЃРІРѕРµ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
 		
 		DrachenGeld = (CurrentDragonCount * Garond_KilledDragonGeld);
 		XP_LocalGarond =  (CurrentDragonCount * XP_Garond_KilledDragon);
@@ -1111,20 +1111,20 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 	&& ((Npc_IsDead(Oric))	== FALSE)
 	&& (MIS_AllDragonsDead == FALSE)
 	{
-		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_07"); //Ты можешь еще что-нибудь рассказать о драконах?
-		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_08"); //Мне нужно заниматься другими делами. Пусть мой помощник-стратег Орик расскажет тебе об этом.
-		B_LogEntry (TOPIC_DRACHENJAGD,"У офицера Гаронда, отвечающего за стратегию, Орика, возможно есть полезная информация для меня."); 
+		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_07"); //РўС‹ РјРѕР¶РµС€СЊ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ РґСЂР°РєРѕРЅР°С…?
+		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_08"); //РњРЅРµ РЅСѓР¶РЅРѕ Р·Р°РЅРёРјР°С‚СЊСЃСЏ РґСЂСѓРіРёРјРё РґРµР»Р°РјРё. РџСѓСЃС‚СЊ РјРѕР№ РїРѕРјРѕС‰РЅРёРє-СЃС‚СЂР°С‚РµРі РћСЂРёРє СЂР°СЃСЃРєР°Р¶РµС‚ С‚РµР±Рµ РѕР± СЌС‚РѕРј.
+		B_LogEntry (TOPIC_DRACHENJAGD,"РЈ РѕС„РёС†РµСЂР° Р“Р°СЂРѕРЅРґР°, РѕС‚РІРµС‡Р°СЋС‰РµРіРѕ Р·Р° СЃС‚СЂР°С‚РµРіРёСЋ, РћСЂРёРєР°, РІРѕР·РјРѕР¶РЅРѕ РµСЃС‚СЊ РїРѕР»РµР·РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ РґР»СЏ РјРµРЅСЏ."); 
 		Garond_OricExperte_OneTime = TRUE;
 	}
 	else if (MIS_AllDragonsDead == FALSE)
 	{
-		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_09"); //Последнее время были еще нападения драконов?
-		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_10"); //По счастью, нет. В настоящий момент они держатся вдалеке.
+		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_09"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ Р±С‹Р»Рё РµС‰Рµ РЅР°РїР°РґРµРЅРёСЏ РґСЂР°РєРѕРЅРѕРІ?
+		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_10"); //РџРѕ СЃС‡Р°СЃС‚СЊСЋ, РЅРµС‚. Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚ РѕРЅРё РґРµСЂР¶Р°С‚СЃСЏ РІРґР°Р»РµРєРµ.
 	};
 };
 
 //*********************************************************************
-//	Ich habe alle drachen getцtet
+//	Ich habe alle drachen getС†tet
 //*********************************************************************
 
 ///////////////////////////////////////////////////////////////////////
@@ -1137,7 +1137,7 @@ instance DIA_Garond_AllDragonDead		(C_INFO)
 	condition	 = 	DIA_Garond_AllDragonDead_Condition;
 	information	 = 	DIA_Garond_AllDragonDead_Info;
 	Permanent	 =	FALSE;
-	description	 = 	"Все драконы мертвы.";
+	description	 = 	"Р’СЃРµ РґСЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.";
 };
 
 func int DIA_Garond_AllDragonDead_Condition ()
@@ -1152,14 +1152,14 @@ func int DIA_Garond_AllDragonDead_Condition ()
 
 func void DIA_Garond_AllDragonDead_Info ()
 {
-	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_00"); //Все драконы мертвы.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_01"); //(недоверчиво) Все? То есть зло изгнано отсюда навеки?
-	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_02"); //Нет. Остался их предводитель.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_03"); //Разве не драконы были предводителями орков?
-	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_04"); //Да, это так, но у них также есть свой хозяин. Мы должны уничтожить и его тоже.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_05"); //Я, к сожалению, ничем не могу тебе помочь. Я должен охранять руду, а эти проклятые орки, кстати, тоже все еще здесь.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_06"); //Тебе придется сделать это самому.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_07"); //Да защитит тебя Иннос.
+	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_00"); //Р’СЃРµ РґСЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_01"); //(РЅРµРґРѕРІРµСЂС‡РёРІРѕ) Р’СЃРµ? РўРѕ РµСЃС‚СЊ Р·Р»Рѕ РёР·РіРЅР°РЅРѕ РѕС‚СЃСЋРґР° РЅР°РІРµРєРё?
+	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_02"); //РќРµС‚. РћСЃС‚Р°Р»СЃСЏ РёС… РїСЂРµРґРІРѕРґРёС‚РµР»СЊ.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_03"); //Р Р°Р·РІРµ РЅРµ РґСЂР°РєРѕРЅС‹ Р±С‹Р»Рё РїСЂРµРґРІРѕРґРёС‚РµР»СЏРјРё РѕСЂРєРѕРІ?
+	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_04"); //Р”Р°, СЌС‚Рѕ С‚Р°Рє, РЅРѕ Сѓ РЅРёС… С‚Р°РєР¶Рµ РµСЃС‚СЊ СЃРІРѕР№ С…РѕР·СЏРёРЅ. РњС‹ РґРѕР»Р¶РЅС‹ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Рё РµРіРѕ С‚РѕР¶Рµ.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_05"); //РЇ, Рє СЃРѕР¶Р°Р»РµРЅРёСЋ, РЅРёС‡РµРј РЅРµ РјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ. РЇ РґРѕР»Р¶РµРЅ РѕС…СЂР°РЅСЏС‚СЊ СЂСѓРґСѓ, Р° СЌС‚Рё РїСЂРѕРєР»СЏС‚С‹Рµ РѕСЂРєРё, РєСЃС‚Р°С‚Рё, С‚РѕР¶Рµ РІСЃРµ РµС‰Рµ Р·РґРµСЃСЊ.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_06"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ СЃР°РјРѕРјСѓ.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_07"); //Р”Р° Р·Р°С‰РёС‚РёС‚ С‚РµР±СЏ РРЅРЅРѕСЃ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1172,7 +1172,7 @@ instance DIA_Garond_JanBecomeSmith		(C_INFO)
 	condition	= 	DIA_Garond_JanBecomeSmith_Condition;
 	information	= 	DIA_Garond_JanBecomeSmith_Info;
 	Permanent	=	TRUE;
-	description	= 	"Я хочу поговорить о кузнеце.";
+	description	= 	"РЇ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ Рѕ РєСѓР·РЅРµС†Рµ.";
 };
 
 func int DIA_Garond_JanBecomeSmith_Condition ()
@@ -1186,45 +1186,45 @@ func int DIA_Garond_JanBecomeSmith_Condition ()
 
 func void DIA_Garond_JanBecomeSmith_Info ()
 {
-	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_00"); //Я хочу поговорить о кузнеце.
-	AI_Output			(self ,other, "DIA_Garond_JanBecomeSmith_10_01"); //Каком кузнеце? Он исчез.
-	AI_Output			(self ,other, "DIA_Garond_JanBecomeSmith_10_02"); //Он что вернулся? Тогда можешь сказать ему...
-	AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_03"); //Нет, я говорю о Яне.
+	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ Рѕ РєСѓР·РЅРµС†Рµ.
+	AI_Output			(self ,other, "DIA_Garond_JanBecomeSmith_10_01"); //РљР°РєРѕРј РєСѓР·РЅРµС†Рµ? РћРЅ РёСЃС‡РµР·.
+	AI_Output			(self ,other, "DIA_Garond_JanBecomeSmith_10_02"); //РћРЅ С‡С‚Рѕ РІРµСЂРЅСѓР»СЃСЏ? РўРѕРіРґР° РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РµРјСѓ...
+	AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_03"); //РќРµС‚, СЏ РіРѕРІРѕСЂСЋ Рѕ РЇРЅРµ.
 
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_04"); //Он охотник на драконов, как и я, и хороший кузнец.
+		AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_04"); //РћРЅ РѕС…РѕС‚РЅРёРє РЅР° РґСЂР°РєРѕРЅРѕРІ, РєР°Рє Рё СЏ, Рё С…РѕСЂРѕС€РёР№ РєСѓР·РЅРµС†.
 	}
 	else
 	{
-		AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_05"); //Одном из охотников на драконов. Он кузнец.
+		AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_05"); //РћРґРЅРѕРј РёР· РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ. РћРЅ РєСѓР·РЅРµС†.
 	};	
 
-	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_06"); //Это хорошо. Наш предыдущий кузнец слинял, трус.
-	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_07"); //Ян хотел бы поработать в кузнице.
-	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_08"); //Понимаю. Так ты думаешь, я могу доверять ему?
-	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_09"); //Да.
-	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_10"); //Если ты так уверен, то ты можешь поручиться за него.
-	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_11"); //Если из-за него возникнут проблемы, за это ответишь ты. Согласен?
+	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_06"); //Р­С‚Рѕ С…РѕСЂРѕС€Рѕ. РќР°С€ РїСЂРµРґС‹РґСѓС‰РёР№ РєСѓР·РЅРµС† СЃР»РёРЅСЏР», С‚СЂСѓСЃ.
+	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_07"); //РЇРЅ С…РѕС‚РµР» Р±С‹ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РІ РєСѓР·РЅРёС†Рµ.
+	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_08"); //РџРѕРЅРёРјР°СЋ. РўР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, СЏ РјРѕРіСѓ РґРѕРІРµСЂСЏС‚СЊ РµРјСѓ?
+	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_09"); //Р”Р°.
+	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_10"); //Р•СЃР»Рё С‚С‹ С‚Р°Рє СѓРІРµСЂРµРЅ, С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕСЂСѓС‡РёС‚СЊСЃСЏ Р·Р° РЅРµРіРѕ.
+	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_11"); //Р•СЃР»Рё РёР·-Р·Р° РЅРµРіРѕ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹, Р·Р° СЌС‚Рѕ РѕС‚РІРµС‚РёС€СЊ С‚С‹. РЎРѕРіР»Р°СЃРµРЅ?
 	
 	Info_ClearChoices 	(DIA_Garond_JanBecomeSmith);
-	Info_AddChoice 		(DIA_Garond_JanBecomeSmith,"Я подумаю над этим.",DIA_Garond_JanBecomeSmith_No);
-	Info_AddChoice		(DIA_Garond_JanBecomeSmith,"Я ручаюсь за Яна.",DIA_Garond_JanBecomeSmith_Yes); 		
+	Info_AddChoice 		(DIA_Garond_JanBecomeSmith,"РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.",DIA_Garond_JanBecomeSmith_No);
+	Info_AddChoice		(DIA_Garond_JanBecomeSmith,"РЇ СЂСѓС‡Р°СЋСЃСЊ Р·Р° РЇРЅР°.",DIA_Garond_JanBecomeSmith_Yes); 		
 };
 
 FUNC VOID DIA_Garond_JanBecomeSmith_No ()
 {
-	AI_Output (other,self ,"DIA_Garond_JanBecomeSmith_No_15_00"); //Я подумаю над этим.
-	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_No_10_01"); //Как я могу доверять ему, если даже ты сомневаешься в нем?
-	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_No_10_02"); //Если за него никто не сможет поручиться, этот Ян на пушечный выстрел не подойдет к кузнице.
+	AI_Output (other,self ,"DIA_Garond_JanBecomeSmith_No_15_00"); //РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
+	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_No_10_01"); //РљР°Рє СЏ РјРѕРіСѓ РґРѕРІРµСЂСЏС‚СЊ РµРјСѓ, РµСЃР»Рё РґР°Р¶Рµ С‚С‹ СЃРѕРјРЅРµРІР°РµС€СЊСЃСЏ РІ РЅРµРј?
+	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_No_10_02"); //Р•СЃР»Рё Р·Р° РЅРµРіРѕ РЅРёРєС‚Рѕ РЅРµ СЃРјРѕР¶РµС‚ РїРѕСЂСѓС‡РёС‚СЊСЃСЏ, СЌС‚РѕС‚ РЇРЅ РЅР° РїСѓС€РµС‡РЅС‹Р№ РІС‹СЃС‚СЂРµР» РЅРµ РїРѕРґРѕР№РґРµС‚ Рє РєСѓР·РЅРёС†Рµ.
 
 	Info_ClearChoices 	(DIA_Garond_JanBecomeSmith);
 };
 
 FUNC VOID DIA_Garond_JanBecomeSmith_Yes()
 {
-	AI_Output (other,self ,"DIA_Garond_JanBecomeSmith_Yes_15_00"); //Я ручаюсь за Яна.
-	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_Yes_10_01"); //Хорошо. Он может работать в кузнице. Но, конечно же, он должен обеспечивать моих людей мечами.
+	AI_Output (other,self ,"DIA_Garond_JanBecomeSmith_Yes_15_00"); //РЇ СЂСѓС‡Р°СЋСЃСЊ Р·Р° РЇРЅР°.
+	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_Yes_10_01"); //РҐРѕСЂРѕС€Рѕ. РћРЅ РјРѕР¶РµС‚ СЂР°Р±РѕС‚Р°С‚СЊ РІ РєСѓР·РЅРёС†Рµ. РќРѕ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, РѕРЅ РґРѕР»Р¶РµРЅ РѕР±РµСЃРїРµС‡РёРІР°С‚СЊ РјРѕРёС… Р»СЋРґРµР№ РјРµС‡Р°РјРё.
 	
 	Info_ClearChoices 	(DIA_Garond_JanBecomeSmith);
 	MIS_JanBecomesSmith = LOG_SUCCESS; 
@@ -1276,7 +1276,7 @@ instance DIA_Garond_PERM5		(C_INFO)
 	information	 = 	DIA_Garond_PERM5_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как ситуация?";
+	description	 = 	"РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };
 
 func int DIA_Garond_PERM5_Condition ()
@@ -1289,16 +1289,16 @@ func int DIA_Garond_PERM5_Condition ()
 
 func void DIA_Garond_PERM5_Info ()
 {
-	AI_Output			(other, self, "DIA_Garond_PERM5_15_00"); //Как обстановка?
+	AI_Output			(other, self, "DIA_Garond_PERM5_15_00"); //РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
 
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Garond_PERM5_10_01"); //Что за бардак! Какой-то ублюдок оставил открытыми главные ворота. Теперь мы остались совсем без защиты.
-	AI_Output			(self, other, "DIA_Garond_PERM5_10_02"); //Ну, доберусь я до этого предателя...
+	AI_Output			(self, other, "DIA_Garond_PERM5_10_01"); //Р§С‚Рѕ Р·Р° Р±Р°СЂРґР°Рє! РљР°РєРѕР№-С‚Рѕ СѓР±Р»СЋРґРѕРє РѕСЃС‚Р°РІРёР» РѕС‚РєСЂС‹С‚С‹РјРё РіР»Р°РІРЅС‹Рµ РІРѕСЂРѕС‚Р°. РўРµРїРµСЂСЊ РјС‹ РѕСЃС‚Р°Р»РёСЃСЊ СЃРѕРІСЃРµРј Р±РµР· Р·Р°С‰РёС‚С‹.
+	AI_Output			(self, other, "DIA_Garond_PERM5_10_02"); //РќСѓ, РґРѕР±РµСЂСѓСЃСЊ СЏ РґРѕ СЌС‚РѕРіРѕ РїСЂРµРґР°С‚РµР»СЏ...
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Garond_PERM5_10_03"); //Мы все здесь помрем как мухи, если Хаген не прибудет как можно скорее.
+	AI_Output			(self, other, "DIA_Garond_PERM5_10_03"); //РњС‹ РІСЃРµ Р·РґРµСЃСЊ РїРѕРјСЂРµРј РєР°Рє РјСѓС…Рё, РµСЃР»Рё РҐР°РіРµРЅ РЅРµ РїСЂРёР±СѓРґРµС‚ РєР°Рє РјРѕР¶РЅРѕ СЃРєРѕСЂРµРµ.
 	};
 };
 

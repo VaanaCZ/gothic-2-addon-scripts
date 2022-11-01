@@ -21,7 +21,7 @@ FUNC VOID DIA_Angar_NW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getцtet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen getС†tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_Angar_NW_AllDragonsDead(C_INFO)
@@ -31,7 +31,7 @@ INSTANCE DIA_Angar_NW_AllDragonsDead(C_INFO)
 	condition	= DIA_Angar_NW_AllDragonsDead_Condition;
 	information	= DIA_Angar_NW_AllDragonsDead_Info;
 
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 FUNC INT DIA_Angar_NW_AllDragonsDead_Condition()
 {
@@ -39,11 +39,11 @@ FUNC INT DIA_Angar_NW_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_Angar_NW_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_Angar_NW_AllDragonsDead_15_00"); //Как дела?
-	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_01"); //Хорошо. Но меня все равно мучают головные боли, хотя они уменьшились с тех пор, как я покинул Долину Рудников.
+	AI_Output (other,self ,"DIA_Angar_NW_AllDragonsDead_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_01"); //РҐРѕСЂРѕС€Рѕ. РќРѕ РјРµРЅСЏ РІСЃРµ СЂР°РІРЅРѕ РјСѓС‡Р°СЋС‚ РіРѕР»РѕРІРЅС‹Рµ Р±РѕР»Рё, С…РѕС‚СЏ РѕРЅРё СѓРјРµРЅСЊС€РёР»РёСЃСЊ СЃ С‚РµС… РїРѕСЂ, РєР°Рє СЏ РїРѕРєРёРЅСѓР» Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
 	if (Angar_IsOnBoard != LOG_SUCCESS) 
 	{
-	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_02"); //Я останусь здесь. Ты будешь знать, где найти меня, если я тебе понадоблюсь.
+	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_02"); //РЇ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ. РўС‹ Р±СѓРґРµС€СЊ Р·РЅР°С‚СЊ, РіРґРµ РЅР°Р№С‚Рё РјРµРЅСЏ, РµСЃР»Рё СЏ С‚РµР±Рµ РїРѕРЅР°РґРѕР±Р»СЋСЃСЊ.
 	};
 };
 
@@ -57,7 +57,7 @@ instance DIA_Angar_NW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Angar_NW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Angar_NW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я собираюсь покинуть Хоринис. Ты хочешь присоединиться ко мне?";
+	description	 = 	"РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїРѕРєРёРЅСѓС‚СЊ РҐРѕСЂРёРЅРёСЃ. РўС‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ РєРѕ РјРЅРµ?";
 };
 func int DIA_Angar_NW_KnowWhereEnemy_Condition ()
 {	
@@ -70,30 +70,30 @@ func int DIA_Angar_NW_KnowWhereEnemy_Condition ()
 };
 func void DIA_Angar_NW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //Я собираюсь покинуть Хоринис. Ты хочешь присоединиться ко мне?
-	AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //Чем дальше я буду от Долины Рудников, тем лучше. Когда мы отчаливаем?
+	AI_Output			(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїРѕРєРёРЅСѓС‚СЊ РҐРѕСЂРёРЅРёСЃ. РўС‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ РєРѕ РјРЅРµ?
+	AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //Р§РµРј РґР°Р»СЊС€Рµ СЏ Р±СѓРґСѓ РѕС‚ Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ, С‚РµРј Р»СѓС‡С€Рµ. РљРѕРіРґР° РјС‹ РѕС‚С‡Р°Р»РёРІР°РµРј?
 		
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	
-	B_LogEntry (TOPIC_Crew,"Ангар будет рад каждой миле, что разделяет его и Долину рудников. Он предложил присоединиться ко мне и путешествовать вместе.");  
+	B_LogEntry (TOPIC_Crew,"РђРЅРіР°СЂ Р±СѓРґРµС‚ СЂР°Рґ РєР°Р¶РґРѕР№ РјРёР»Рµ, С‡С‚Рѕ СЂР°Р·РґРµР»СЏРµС‚ РµРіРѕ Рё Р”РѕР»РёРЅСѓ СЂСѓРґРЅРёРєРѕРІ. РћРЅ РїСЂРµРґР»РѕР¶РёР» РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ РєРѕ РјРЅРµ Рё РїСѓС‚РµС€РµСЃС‚РІРѕРІР°С‚СЊ РІРјРµСЃС‚Рµ.");  
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Angar_NW_KnowWhereEnemy_15_02"); //У меня сейчас достаточно людей, чтобы управлять кораблем. Возможно, я обращусь к тебе позже.
-		AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //Хорошо. Ты знаешь, где найти меня.
+		AI_Output			(other,self , "DIA_Angar_NW_KnowWhereEnemy_15_02"); //РЈ РјРµРЅСЏ СЃРµР№С‡Р°СЃ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р»СЋРґРµР№, С‡С‚РѕР±С‹ СѓРїСЂР°РІР»СЏС‚СЊ РєРѕСЂР°Р±Р»РµРј. Р’РѕР·РјРѕР¶РЅРѕ, СЏ РѕР±СЂР°С‰СѓСЃСЊ Рє С‚РµР±Рµ РїРѕР·Р¶Рµ.
+		AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //РҐРѕСЂРѕС€Рѕ. РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РЅР°Р№С‚Рё РјРµРЅСЏ.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Angar_NW_KnowWhereEnemy);
-		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Я дам тебе знать, когда придет время.",DIA_Angar_NW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Иди в гавань. Встретимся там.",DIA_Angar_NW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"РЇ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ.",DIA_Angar_NW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"РРґРё РІ РіР°РІР°РЅСЊ. Р’СЃС‚СЂРµС‚РёРјСЃСЏ С‚Р°Рј.",DIA_Angar_NW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Angar_NW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Иди в гавань. Встретимся там.
-	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //Уже иду.
+	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //РРґРё РІ РіР°РІР°РЅСЊ. Р’СЃС‚СЂРµС‚РёРјСЃСЏ С‚Р°Рј.
+	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //РЈР¶Рµ РёРґСѓ.
 	 
                                                                                                                                                   
 	self.flags 		 = NPC_FLAG_IMMORTAL;
@@ -116,8 +116,8 @@ FUNC VOID DIA_Angar_NW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Angar_NW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //Я дам тебе знать, когда придет время.
-	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //Хорошо.
+	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //РЇ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ.
+	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //РҐРѕСЂРѕС€Рѕ.
 
 	Angar_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Angar_NW_KnowWhereEnemy);
@@ -133,7 +133,7 @@ instance DIA_Angar_NW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Angar_NW_LeaveMyShip_Condition;
 	information	 = 	DIA_Angar_NW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Оставайся здесь и лечись от своей головной боли.";
+	description	 = 	"РћСЃС‚Р°РІР°Р№СЃСЏ Р·РґРµСЃСЊ Рё Р»РµС‡РёСЃСЊ РѕС‚ СЃРІРѕРµР№ РіРѕР»РѕРІРЅРѕР№ Р±РѕР»Рё.";
 };
 func int DIA_Angar_NW_LeaveMyShip_Condition ()
 {	
@@ -145,8 +145,8 @@ func int DIA_Angar_NW_LeaveMyShip_Condition ()
 };
 func void DIA_Angar_NW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //Оставайся здесь и лечись от своей головной боли.
-	AI_Output			(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //Хорошо. Я пойду назад. Может, так даже будет лучше.
+	AI_Output			(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //РћСЃС‚Р°РІР°Р№СЃСЏ Р·РґРµСЃСЊ Рё Р»РµС‡РёСЃСЊ РѕС‚ СЃРІРѕРµР№ РіРѕР»РѕРІРЅРѕР№ Р±РѕР»Рё.
+	AI_Output			(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //РҐРѕСЂРѕС€Рѕ. РЇ РїРѕР№РґСѓ РЅР°Р·Р°Рґ. РњРѕР¶РµС‚, С‚Р°Рє РґР°Р¶Рµ Р±СѓРґРµС‚ Р»СѓС‡С€Рµ.
 	
 	Angar_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -155,7 +155,7 @@ func void DIA_Angar_NW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ьberlegt!
+//	Ich habs mir СЊberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Angar_NW_StillNeedYou		(C_INFO)
 {
@@ -164,7 +164,7 @@ instance DIA_Angar_NW_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Angar_NW_StillNeedYou_Condition;
 	information	 = 	DIA_Angar_NW_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Возвращайся на борт.";
+	description	 = 	"Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РЅР° Р±РѕСЂС‚.";
 };
 
 func int DIA_Angar_NW_StillNeedYou_Condition ()
@@ -179,8 +179,8 @@ func int DIA_Angar_NW_StillNeedYou_Condition ()
 
 func void DIA_Angar_NW_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Возвращайся на борт.
-	AI_Output	(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //Ты даже хуже чем я. Немного определенности тебе совсем бы не помешало. Увидимся позже.
+	AI_Output	(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РЅР° Р±РѕСЂС‚.
+	AI_Output	(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //РўС‹ РґР°Р¶Рµ С…СѓР¶Рµ С‡РµРј СЏ. РќРµРјРЅРѕРіРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕСЃС‚Рё С‚РµР±Рµ СЃРѕРІСЃРµРј Р±С‹ РЅРµ РїРѕРјРµС€Р°Р»Рѕ. РЈРІРёРґРёРјСЃСЏ РїРѕР·Р¶Рµ.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Angar_IsOnBoard	 = LOG_SUCCESS;
@@ -245,7 +245,7 @@ instance DIA_Angar_NW_FOUNDAMULETT		(C_INFO)
 	condition	 = 	DIA_Angar_NW_FOUNDAMULETT_Condition;
 	information	 = 	DIA_Angar_NW_FOUNDAMULETT_Info;
 
-	description	 = 	"Я нашел твой амулет.";
+	description	 = 	"РЇ РЅР°С€РµР» С‚РІРѕР№ Р°РјСѓР»РµС‚.";
 };
 
 func int DIA_Angar_NW_FOUNDAMULETT_Condition ()

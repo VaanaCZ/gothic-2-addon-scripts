@@ -31,7 +31,7 @@ instance DIA_Maria_Hallo		(C_INFO)
 	condition	= DIA_Maria_Hallo_Condition;
 	information	= DIA_Maria_Hallo_Info;
 	permanent  	= FALSE;
-	description = "Кто ты?";
+	description = "РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Maria_Hallo_Condition ()
@@ -41,9 +41,9 @@ func int DIA_Maria_Hallo_Condition ()
 
 func void DIA_Maria_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Hallo_15_00"); //Кто ты?
-	AI_Output (self, other, "DIA_Maria_Hallo_17_01"); //Я жена Онара, Мария.
-	AI_Output (self, other, "DIA_Maria_Hallo_17_02"); //Что тебе нужно здесь?
+	AI_Output (other, self, "DIA_Maria_Hallo_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other, "DIA_Maria_Hallo_17_01"); //РЇ Р¶РµРЅР° РћРЅР°СЂР°, РњР°СЂРёСЏ.
+	AI_Output (self, other, "DIA_Maria_Hallo_17_02"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?
 };
 
 // ************************************************************
@@ -56,7 +56,7 @@ instance DIA_Maria_Umsehen		(C_INFO)
 	condition	= DIA_Maria_Umsehen_Condition;
 	information	= DIA_Maria_Umsehen_Info;
 	permanent  	= FALSE;
-	description = "Я просто хотел посмотреть, как вы живете...";
+	description = "РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє РІС‹ Р¶РёРІРµС‚Рµ...";
 };
 
 func int DIA_Maria_Umsehen_Condition ()
@@ -69,9 +69,9 @@ func int DIA_Maria_Umsehen_Condition ()
 
 func void DIA_Maria_Umsehen_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Umsehen_15_00"); //Я просто хотел посмотреть, как вы живете...
-	AI_Output (self, other, "DIA_Maria_Umsehen_17_01"); //Когда столько людей живет на ферме, даже в доме покоя не найдешь!
-	AI_Output (self, other, "DIA_Maria_Umsehen_17_02"); //Они так и лезут сюда.
+	AI_Output (other, self, "DIA_Maria_Umsehen_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє РІС‹ Р¶РёРІРµС‚Рµ...
+	AI_Output (self, other, "DIA_Maria_Umsehen_17_01"); //РљРѕРіРґР° СЃС‚РѕР»СЊРєРѕ Р»СЋРґРµР№ Р¶РёРІРµС‚ РЅР° С„РµСЂРјРµ, РґР°Р¶Рµ РІ РґРѕРјРµ РїРѕРєРѕСЏ РЅРµ РЅР°Р№РґРµС€СЊ!
+	AI_Output (self, other, "DIA_Maria_Umsehen_17_02"); //РћРЅРё С‚Р°Рє Рё Р»РµР·СѓС‚ СЃСЋРґР°.
 };
 
 // ************************************************************
@@ -84,7 +84,7 @@ instance DIA_Maria_Soeldner	(C_INFO)
 	condition	= DIA_Maria_Soeldner_Condition;
 	information	= DIA_Maria_Soeldner_Info;
 	permanent  	= FALSE;
-	description = "Тебя беспокоят наемники?";
+	description = "РўРµР±СЏ Р±РµСЃРїРѕРєРѕСЏС‚ РЅР°РµРјРЅРёРєРё?";
 };
 
 func int DIA_Maria_Soeldner_Condition ()
@@ -97,23 +97,23 @@ func int DIA_Maria_Soeldner_Condition ()
 
 func void DIA_Maria_Soeldner_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Soeldner_15_00"); //Тебя беспокоят наемники?
+	AI_Output (other, self, "DIA_Maria_Soeldner_15_00"); //РўРµР±СЏ Р±РµСЃРїРѕРєРѕСЏС‚ РЅР°РµРјРЅРёРєРё?
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_01"); //Ох, забудь о том, что я только что сказала - с тех пор, как вы здесь, жить здесь стало значительно безопаснее.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_01"); //РћС…, Р·Р°Р±СѓРґСЊ Рѕ С‚РѕРј, С‡С‚Рѕ СЏ С‚РѕР»СЊРєРѕ С‡С‚Рѕ СЃРєР°Р·Р°Р»Р° - СЃ С‚РµС… РїРѕСЂ, РєР°Рє РІС‹ Р·РґРµСЃСЊ, Р¶РёС‚СЊ Р·РґРµСЃСЊ СЃС‚Р°Р»Рѕ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ Р±РµР·РѕРїР°СЃРЅРµРµ.
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_02"); //Ох. Ну, зато с тех пор как пришли наемники, хотя бы на ферме стало безопаснее.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_02"); //РћС…. РќСѓ, Р·Р°С‚Рѕ СЃ С‚РµС… РїРѕСЂ РєР°Рє РїСЂРёС€Р»Рё РЅР°РµРјРЅРёРєРё, С…РѕС‚СЏ Р±С‹ РЅР° С„РµСЂРјРµ СЃС‚Р°Р»Рѕ Р±РµР·РѕРїР°СЃРЅРµРµ.
 		};
 
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_03"); //Когда мы еще были сами по себе, сюда постоянно приходили стражники из города и грабили нас.
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_04"); //Они забирали большую часть урожая. И овец тоже. И ничего не давали нам взамен.
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_05"); //Некоторые из них даже воровали, что плохо лежит.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_03"); //РљРѕРіРґР° РјС‹ РµС‰Рµ Р±С‹Р»Рё СЃР°РјРё РїРѕ СЃРµР±Рµ, СЃСЋРґР° РїРѕСЃС‚РѕСЏРЅРЅРѕ РїСЂРёС…РѕРґРёР»Рё СЃС‚СЂР°Р¶РЅРёРєРё РёР· РіРѕСЂРѕРґР° Рё РіСЂР°Р±РёР»Рё РЅР°СЃ.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_04"); //РћРЅРё Р·Р°Р±РёСЂР°Р»Рё Р±РѕР»СЊС€СѓСЋ С‡Р°СЃС‚СЊ СѓСЂРѕР¶Р°СЏ. Р РѕРІРµС† С‚РѕР¶Рµ. Р РЅРёС‡РµРіРѕ РЅРµ РґР°РІР°Р»Рё РЅР°Рј РІР·Р°РјРµРЅ.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_05"); //РќРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅРёС… РґР°Р¶Рµ РІРѕСЂРѕРІР°Р»Рё, С‡С‚Рѕ РїР»РѕС…Рѕ Р»РµР¶РёС‚.
 	if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_06"); //Только не пойми меня неверно, солдат. Я знаю, что не все вы такие.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_06"); //РўРѕР»СЊРєРѕ РЅРµ РїРѕР№РјРё РјРµРЅСЏ РЅРµРІРµСЂРЅРѕ, СЃРѕР»РґР°С‚. РЇ Р·РЅР°СЋ, С‡С‚Рѕ РЅРµ РІСЃРµ РІС‹ С‚Р°РєРёРµ.
 		};	
 };
 
@@ -127,7 +127,7 @@ instance DIA_Maria_Mission	(C_INFO)
 	condition	= DIA_Maria_Mission_Condition;
 	information	= DIA_Maria_Mission_Info;
 	permanent  	= FALSE;
-	description = "А что они украли у тебя?";
+	description = "Рђ С‡С‚Рѕ РѕРЅРё СѓРєСЂР°Р»Рё Сѓ С‚РµР±СЏ?";
 };
 
 func int DIA_Maria_Mission_Condition ()
@@ -141,11 +141,11 @@ func int DIA_Maria_Mission_Condition ()
 
 func void DIA_Maria_Mission_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Mission_15_00"); //А что они украли у тебя?
-	AI_Output (self, other, "DIA_Maria_Mission_17_01"); //В основном золото и серебро. Они даже забрали мой свадебный подарок. Золотую тарелку.
+	AI_Output (other, self, "DIA_Maria_Mission_15_00"); //Рђ С‡С‚Рѕ РѕРЅРё СѓРєСЂР°Р»Рё Сѓ С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Maria_Mission_17_01"); //Р’ РѕСЃРЅРѕРІРЅРѕРј Р·РѕР»РѕС‚Рѕ Рё СЃРµСЂРµР±СЂРѕ. РћРЅРё РґР°Р¶Рµ Р·Р°Р±СЂР°Р»Рё РјРѕР№ СЃРІР°РґРµР±РЅС‹Р№ РїРѕРґР°СЂРѕРє. Р—РѕР»РѕС‚СѓСЋ С‚Р°СЂРµР»РєСѓ.
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Maria_Mission_17_02"); //Ручаюсь, она сейчас пылится в сундуке у какого-нибудь городского стражника.
+		AI_Output (self, other, "DIA_Maria_Mission_17_02"); //Р СѓС‡Р°СЋСЃСЊ, РѕРЅР° СЃРµР№С‡Р°СЃ РїС‹Р»РёС‚СЃСЏ РІ СЃСѓРЅРґСѓРєРµ Сѓ РєР°РєРѕРіРѕ-РЅРёР±СѓРґСЊ РіРѕСЂРѕРґСЃРєРѕРіРѕ СЃС‚СЂР°Р¶РЅРёРєР°.
 	};
 	MIS_Maria_BringPlate = LOG_RUNNING;
 };
@@ -160,7 +160,7 @@ instance DIA_Maria_BringPlate	(C_INFO)
 	condition	= DIA_Maria_BringPlate_Condition;
 	information	= DIA_Maria_BringPlate_Info;
 	permanent  	= FALSE;
-	description = "Я принес золотую тарелку. Это не твоя?";
+	description = "РЇ РїСЂРёРЅРµСЃ Р·РѕР»РѕС‚СѓСЋ С‚Р°СЂРµР»РєСѓ. Р­С‚Рѕ РЅРµ С‚РІРѕСЏ?";
 };
 
 func int DIA_Maria_BringPlate_Condition ()
@@ -174,8 +174,8 @@ func int DIA_Maria_BringPlate_Condition ()
 func void DIA_Maria_BringPlate_Info ()
 {
 	B_GiveInvItems (other, self, ItMi_MariasGoldPlate, 1);
-	AI_Output (other, self, "DIA_Maria_BringPlate_15_00"); //Я принес золотую тарелку. Это не твоя?
-	AI_Output (self, other, "DIA_Maria_BringPlate_17_01"); //Да! Это она! Огромное спасибо тебе!
+	AI_Output (other, self, "DIA_Maria_BringPlate_15_00"); //РЇ РїСЂРёРЅРµСЃ Р·РѕР»РѕС‚СѓСЋ С‚Р°СЂРµР»РєСѓ. Р­С‚Рѕ РЅРµ С‚РІРѕСЏ?
+	AI_Output (self, other, "DIA_Maria_BringPlate_17_01"); //Р”Р°! Р­С‚Рѕ РѕРЅР°! РћРіСЂРѕРјРЅРѕРµ СЃРїР°СЃРёР±Рѕ С‚РµР±Рµ!
 	
 	MIS_Maria_BringPlate = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Maria_Teller);
@@ -195,7 +195,7 @@ instance DIA_Maria_Belohnung	(C_INFO)
 	condition	= DIA_Maria_Belohnung_Condition;
 	information	= DIA_Maria_Belohnung_Info;
 	permanent  	= TRUE;
-	description = "А как насчет моего вознаграждения?";
+	description = "Рђ РєР°Рє РЅР°СЃС‡РµС‚ РјРѕРµРіРѕ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ?";
 };
 
 func int DIA_Maria_Belohnung_Condition ()
@@ -209,51 +209,51 @@ func int DIA_Maria_Belohnung_Condition ()
 
 func void DIA_Maria_Belohnung_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Belohnung_15_00"); //А как насчет моего вознаграждения?
+	AI_Output (other, self, "DIA_Maria_Belohnung_15_00"); //Рђ РєР°Рє РЅР°СЃС‡РµС‚ РјРѕРµРіРѕ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ?
 	
 	
 	if (other.guild == GIL_SLD)
 	|| (Npc_KnowsInfo (other, DIA_Onar_HowMuch))
 	{
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_01"); //Ты работаешь наемником на моего мужа, да?
-		AI_Output (other, self, "DIA_Maria_Belohnung_15_02"); //Точно.
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_03"); //Сколько мой муж платит тебе?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_01"); //РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР°РµРјРЅРёРєРѕРј РЅР° РјРѕРµРіРѕ РјСѓР¶Р°, РґР°?
+		AI_Output (other, self, "DIA_Maria_Belohnung_15_02"); //РўРѕС‡РЅРѕ.
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_03"); //РЎРєРѕР»СЊРєРѕ РјРѕР№ РјСѓР¶ РїР»Р°С‚РёС‚ С‚РµР±Рµ?
 		B_Say_Gold (other, self, SOLD);
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_04"); //Этого недостаточно. Иди к нему и скажи, чтобы он платил тебе больше.
-		AI_Output (other, self, "DIA_Maria_Belohnung_15_05"); //Ты думаешь, он послушает?
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_06"); //Он знает, что будет, если не послушает. Поверь мне.
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_04"); //Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РРґРё Рє РЅРµРјСѓ Рё СЃРєР°Р¶Рё, С‡С‚РѕР±С‹ РѕРЅ РїР»Р°С‚РёР» С‚РµР±Рµ Р±РѕР»СЊС€Рµ.
+		AI_Output (other, self, "DIA_Maria_Belohnung_15_05"); //РўС‹ РґСѓРјР°РµС€СЊ, РѕРЅ РїРѕСЃР»СѓС€Р°РµС‚?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_06"); //РћРЅ Р·РЅР°РµС‚, С‡С‚Рѕ Р±СѓРґРµС‚, РµСЃР»Рё РЅРµ РїРѕСЃР»СѓС€Р°РµС‚. РџРѕРІРµСЂСЊ РјРЅРµ.
 		Maria_MehrGold = TRUE;
 		Maria_Belohnung = TRUE;
 	}
 	else if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_07"); //Ты хочешь стать наемником на этой ферме?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_07"); //РўС‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј РЅР° СЌС‚РѕР№ С„РµСЂРјРµ?
 		Info_ClearChoices (DIA_Maria_Belohnung);
-		Info_AddChoice (DIA_Maria_Belohnung, "Вообще-то нет.", DIA_Maria_Belohnung_Gold);
-		Info_AddChoice (DIA_Maria_Belohnung, "Да.", DIA_Maria_Belohnung_SOLD);
+		Info_AddChoice (DIA_Maria_Belohnung, "Р’РѕРѕР±С‰Рµ-С‚Рѕ РЅРµС‚.", DIA_Maria_Belohnung_Gold);
+		Info_AddChoice (DIA_Maria_Belohnung, "Р”Р°.", DIA_Maria_Belohnung_SOLD);
 	}
 	else
 	{
 		B_GiveInvItems (self, other, itmi_gold, 50);
 		Maria_Belohnung = TRUE;
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_08"); //Вот, возьми это. Ты заслужил.
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_08"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рѕ. РўС‹ Р·Р°СЃР»СѓР¶РёР».
 	};
 };
 
 func void DIA_Maria_Belohnung_Gold()
 {
-	AI_Output (other, self, "DIA_Maria_Belohnung_Gold_15_00"); //Вообще-то нет.
+	AI_Output (other, self, "DIA_Maria_Belohnung_Gold_15_00"); //Р’РѕРѕР±С‰Рµ-С‚Рѕ РЅРµС‚.
 	B_GiveInvItems (self, other, itmi_gold, 50);
 	Maria_Belohnung = TRUE;
-	AI_Output (self, other, "DIA_Maria_Belohnung_Gold_17_01"); //Тогда возьми это золото в качестве награды. Ты заслужил его.
+	AI_Output (self, other, "DIA_Maria_Belohnung_Gold_17_01"); //РўРѕРіРґР° РІРѕР·СЊРјРё СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РіСЂР°РґС‹. РўС‹ Р·Р°СЃР»СѓР¶РёР» РµРіРѕ.
 	Info_ClearChoices (DIA_Maria_Belohnung);
 };
 
 func void DIA_Maria_Belohnung_SOLD()
 {
-	AI_Output (other, self, "DIA_Maria_Belohnung_SOLD_15_00"); //Да.
-	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_01"); //Хорошо, если ты будешь работать здесь, я прослежу, чтобы ты получал хорошее жалование.
-	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_02"); //Зайди ко мне, когда обсудишь размер жалования с моим мужем.
+	AI_Output (other, self, "DIA_Maria_Belohnung_SOLD_15_00"); //Р”Р°.
+	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_01"); //РҐРѕСЂРѕС€Рѕ, РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ СЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ, СЏ РїСЂРѕСЃР»РµР¶Сѓ, С‡С‚РѕР±С‹ С‚С‹ РїРѕР»СѓС‡Р°Р» С…РѕСЂРѕС€РµРµ Р¶Р°Р»РѕРІР°РЅРёРµ.
+	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_02"); //Р—Р°Р№РґРё РєРѕ РјРЅРµ, РєРѕРіРґР° РѕР±СЃСѓРґРёС€СЊ СЂР°Р·РјРµСЂ Р¶Р°Р»РѕРІР°РЅРёСЏ СЃ РјРѕРёРј РјСѓР¶РµРј.
 	Info_ClearChoices (DIA_Maria_Belohnung);
 };
 		
@@ -267,7 +267,7 @@ instance DIA_Maria_AboutOnar	(C_INFO)
 	condition	= DIA_Maria_AboutOnar_Condition;
 	information	= DIA_Maria_AboutOnar_Info;
 	permanent  	= FALSE;
-	description = "Расскажи мне об Онаре.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РћРЅР°СЂРµ.";
 };
 
 func int DIA_Maria_AboutOnar_Condition ()
@@ -280,12 +280,12 @@ func int DIA_Maria_AboutOnar_Condition ()
 
 func void DIA_Maria_AboutOnar_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_AboutOnar_15_00"); //Расскажи мне об Онаре.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_01"); //Он хороший человек. Немного сварливый и очень раздражительный, но у нас у всех есть свои недостатки.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_02"); //Я спросила своего мужа:  'Почему ты позволяешь солдатам из города так с собой обращаться'?
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_03"); //'Сделай же что-нибудь', - сказала я.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_04"); //И он нанял наемников. А теперь мне кажется, что мы ведем войну.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_05"); //Но, если подумать, мы ведь действительно воюем, разве нет?
+	AI_Output (other, self, "DIA_Maria_AboutOnar_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РћРЅР°СЂРµ.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_01"); //РћРЅ С…РѕСЂРѕС€РёР№ С‡РµР»РѕРІРµРє. РќРµРјРЅРѕРіРѕ СЃРІР°СЂР»РёРІС‹Р№ Рё РѕС‡РµРЅСЊ СЂР°Р·РґСЂР°Р¶РёС‚РµР»СЊРЅС‹Р№, РЅРѕ Сѓ РЅР°СЃ Сѓ РІСЃРµС… РµСЃС‚СЊ СЃРІРѕРё РЅРµРґРѕСЃС‚Р°С‚РєРё.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_02"); //РЇ СЃРїСЂРѕСЃРёР»Р° СЃРІРѕРµРіРѕ РјСѓР¶Р°:  'РџРѕС‡РµРјСѓ С‚С‹ РїРѕР·РІРѕР»СЏРµС€СЊ СЃРѕР»РґР°С‚Р°Рј РёР· РіРѕСЂРѕРґР° С‚Р°Рє СЃ СЃРѕР±РѕР№ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ'?
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_03"); //'РЎРґРµР»Р°Р№ Р¶Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ', - СЃРєР°Р·Р°Р»Р° СЏ.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_04"); //Р РѕРЅ РЅР°РЅСЏР» РЅР°РµРјРЅРёРєРѕРІ. Рђ С‚РµРїРµСЂСЊ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ РјС‹ РІРµРґРµРј РІРѕР№РЅСѓ.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_05"); //РќРѕ, РµСЃР»Рё РїРѕРґСѓРјР°С‚СЊ, РјС‹ РІРµРґСЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РІРѕСЋРµРј, СЂР°Р·РІРµ РЅРµС‚?
 };
 
 // ************************************************************
@@ -298,7 +298,7 @@ instance DIA_Maria_PERM	(C_INFO)
 	condition	= DIA_Maria_PERM_Condition;
 	information	= DIA_Maria_PERM_Info;
 	permanent  	= FALSE;
-	description = "Что интересного было в последнее время?";
+	description = "Р§С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ Р±С‹Р»Рѕ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ?";
 };
 
 func int DIA_Maria_PERM_Condition ()
@@ -311,21 +311,21 @@ func int DIA_Maria_PERM_Condition ()
 
 func void DIA_Maria_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_PERM_15_00"); //Что интересного было в последнее время?
+	AI_Output (other, self, "DIA_Maria_PERM_15_00"); //Р§С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ Р±С‹Р»Рѕ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ?
 	if (Kapitel <= 2)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_01"); //Мимо прошли паладины.
-		AI_Output (self, other, "DIA_Maria_PERM_17_02"); //Сначала мы подумали, что они собираются напасть на нашу ферму, но они прошли мимо, в Долину Рудников.
+		AI_Output (self, other, "DIA_Maria_PERM_17_01"); //РњРёРјРѕ РїСЂРѕС€Р»Рё РїР°Р»Р°РґРёРЅС‹.
+		AI_Output (self, other, "DIA_Maria_PERM_17_02"); //РЎРЅР°С‡Р°Р»Р° РјС‹ РїРѕРґСѓРјР°Р»Рё, С‡С‚Рѕ РѕРЅРё СЃРѕР±РёСЂР°СЋС‚СЃСЏ РЅР°РїР°СЃС‚СЊ РЅР° РЅР°С€Сѓ С„РµСЂРјСѓ, РЅРѕ РѕРЅРё РїСЂРѕС€Р»Рё РјРёРјРѕ, РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
 	}
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_03"); //Василий поймал вора несколько дней назад. А кроме этого, все спокойно.
+		AI_Output (self, other, "DIA_Maria_PERM_17_03"); //Р’Р°СЃРёР»РёР№ РїРѕР№РјР°Р» РІРѕСЂР° РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ. Рђ РєСЂРѕРјРµ СЌС‚РѕРіРѕ, РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ.
 	};
 	
 	if (Kapitel >= 4)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_04"); //С тех пор, как часть наемников ушла отсюда, стало значительно спокойнее.
+		AI_Output (self, other, "DIA_Maria_PERM_17_04"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє С‡Р°СЃС‚СЊ РЅР°РµРјРЅРёРєРѕРІ СѓС€Р»Р° РѕС‚СЃСЋРґР°, СЃС‚Р°Р»Рѕ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ СЃРїРѕРєРѕР№РЅРµРµ.
 	};
 };
 			

@@ -47,7 +47,7 @@ func void EVT_ORKOBERST ()
 		
 		ORkSturmDI  = TRUE;
 		
-		B_LogEntry (TOPIC_HallenVonIrdorath,"Полковник орков крепкий орешек. Где-то в его тронном зале должен быть какой-то секрет."); 
+		B_LogEntry (TOPIC_HallenVonIrdorath,"РџРѕР»РєРѕРІРЅРёРє РѕСЂРєРѕРІ РєСЂРµРїРєРёР№ РѕСЂРµС€РµРє. Р“РґРµ-С‚Рѕ РІ РµРіРѕ С‚СЂРѕРЅРЅРѕРј Р·Р°Р»Рµ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РєР°РєРѕР№-С‚Рѕ СЃРµРєСЂРµС‚."); 
 
 		EVT_ORKOBERST_OneTime = TRUE;
 	};

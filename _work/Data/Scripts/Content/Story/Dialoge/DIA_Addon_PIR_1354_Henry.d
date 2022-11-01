@@ -24,23 +24,23 @@ func VOID DIA_Addon_Henry_EXIT_Info()
 	{
 		if (gold == 500)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold500_04_00"); //500 золотых.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold500_04_00"); //500 Р·РѕР»РѕС‚С‹С….
 		}
 		else if (gold == 400)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold400_04_00"); //400 золотых.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold400_04_00"); //400 Р·РѕР»РѕС‚С‹С….
 		}
 		else if (gold == 300)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold300_04_00"); //300 золотых.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold300_04_00"); //300 Р·РѕР»РѕС‚С‹С….
 		}
 		else if (gold == 200)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold200_04_00"); //200 золотых.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold200_04_00"); //200 Р·РѕР»РѕС‚С‹С….
 		}
 		else if (gold == 100)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Gold100_04_00"); //100 золотых.
+			AI_Output (self ,other,"DIA_Addon_Henry_Gold100_04_00"); //100 Р·РѕР»РѕС‚С‹С….
 		}
 		else
 		{
@@ -120,19 +120,19 @@ FUNC INT DIA_Addon_Henry_Hello_Condition()
 
 FUNC VOID DIA_Addon_Henry_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_04_00"); //Стой!
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_04_01"); //Ты друг или враг?
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_04_00"); //РЎС‚РѕР№!
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_04_01"); //РўС‹ РґСЂСѓРі РёР»Рё РІСЂР°Рі?
 	
 	Info_ClearChoices (DIA_Addon_Henry_Hello);
-	Info_AddChoice (DIA_Addon_Henry_Hello,"Враг!",DIA_Addon_Henry_Hello_Feind);
-	Info_AddChoice (DIA_Addon_Henry_Hello,"Друг!",DIA_Addon_Henry_Hello_Freund);
+	Info_AddChoice (DIA_Addon_Henry_Hello,"Р’СЂР°Рі!",DIA_Addon_Henry_Hello_Feind);
+	Info_AddChoice (DIA_Addon_Henry_Hello,"Р”СЂСѓРі!",DIA_Addon_Henry_Hello_Freund);
 };
 var int Henry_SC_Frech;
 FUNC VOID DIA_Addon_Henry_Hello_Feind()
 {
-	AI_Output (other,self ,"DIA_Addon_Henry_Hello_Feind_15_00"); //Враг!
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Feind_04_01"); //Ищешь приключений на свою задницу, клоун? 
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Feind_04_02"); //Говори, что тебе надо, или убирайся, да поскорее.
+	AI_Output (other,self ,"DIA_Addon_Henry_Hello_Feind_15_00"); //Р’СЂР°Рі!
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Feind_04_01"); //РС‰РµС€СЊ РїСЂРёРєР»СЋС‡РµРЅРёР№ РЅР° СЃРІРѕСЋ Р·Р°РґРЅРёС†Сѓ, РєР»РѕСѓРЅ? 
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Feind_04_02"); //Р“РѕРІРѕСЂРё, С‡С‚Рѕ С‚РµР±Рµ РЅР°РґРѕ, РёР»Рё СѓР±РёСЂР°Р№СЃСЏ, РґР° РїРѕСЃРєРѕСЂРµРµ.
 	
 	Henry_SC_Frech = TRUE;
 
@@ -144,8 +144,8 @@ FUNC VOID DIA_Addon_Henry_Hello_Feind()
 
 FUNC VOID DIA_Addon_Henry_Hello_Freund()
 {
-	AI_Output (other,self ,"DIA_Addon_Henry_Hello_Freund_15_00"); //Друг!
-	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Freund_04_01"); //Так может сказать любой! Я тебя не знаю. Что тебе здесь надо?
+	AI_Output (other,self ,"DIA_Addon_Henry_Hello_Freund_15_00"); //Р”СЂСѓРі!
+	AI_Output (self ,other,"DIA_Addon_Henry_Hello_Freund_04_01"); //РўР°Рє РјРѕР¶РµС‚ СЃРєР°Р·Р°С‚СЊ Р»СЋР±РѕР№! РЇ С‚РµР±СЏ РЅРµ Р·РЅР°СЋ. Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅР°РґРѕ?
 	
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Pir_1354_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;	
@@ -177,7 +177,7 @@ FUNC INT DIA_Addon_Henry_SecondWarn_Condition()
 };
 func void DIA_Addon_henry_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Henry_SecondWarn_04_00"); //Еще один шаг вперед - и я скормлю тебя акулам.
+	AI_Output (self, other,"DIA_Addon_Henry_SecondWarn_04_00"); //Р•С‰Рµ РѕРґРёРЅ С€Р°Рі РІРїРµСЂРµРґ - Рё СЏ СЃРєРѕСЂРјР»СЋ С‚РµР±СЏ Р°РєСѓР»Р°Рј.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Pir_1354_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -212,7 +212,7 @@ func void DIA_Addon_Henry_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_Henry_Attack_04_00"); //Сам напросился... 
+	AI_Output (self, other,"DIA_Addon_Henry_Attack_04_00"); //РЎР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ... 
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -237,7 +237,7 @@ INSTANCE DIA_Addon_Henry_WantEnter(C_INFO)
 	condition	= DIA_Addon_Henry_WantEnter_Condition;
 	information	= DIA_Addon_Henry_WantEnter_Info;
 	permanent	= FALSE;
-	description	= "Я хочу попасть внутрь.";
+	description	= "РЇ С…РѕС‡Сѓ РїРѕРїР°СЃС‚СЊ РІРЅСѓС‚СЂСЊ.";
 };                       
 FUNC INT DIA_Addon_Henry_WantEnter_Condition()
 {
@@ -249,16 +249,16 @@ FUNC INT DIA_Addon_Henry_WantEnter_Condition()
 
 FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_00"); //Я хочу попасть внутрь.
-	AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_01"); //Правда? Что ж, в таком случае, ты должен заплатить. 
+	AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРїР°СЃС‚СЊ РІРЅСѓС‚СЂСЊ.
+	AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_01"); //РџСЂР°РІРґР°? Р§С‚Рѕ Р¶, РІ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ. 
 
 	B_Henry_Gold (500);
 
 	if (Henry_Zoll_WhatFor == FALSE)
 	{
-		AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_02"); //Да? А за что?
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_03"); //Не строй из себя идиота. 
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_04"); //В лагере полно всего того, что может тебя заинтересовать...
+		AI_Output (other,self ,"DIA_Addon_Henry_WantEnter_15_02"); //Р”Р°? Рђ Р·Р° С‡С‚Рѕ?
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_03"); //РќРµ СЃС‚СЂРѕР№ РёР· СЃРµР±СЏ РёРґРёРѕС‚Р°. 
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_04"); //Р’ Р»Р°РіРµСЂРµ РїРѕР»РЅРѕ РІСЃРµРіРѕ С‚РѕРіРѕ, С‡С‚Рѕ РјРѕР¶РµС‚ С‚РµР±СЏ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ...
 		Henry_Zoll_WhatFor = TRUE;
 	};
 		 
@@ -270,13 +270,13 @@ FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 	||	 (Hlp_IsItem(itm, ITAR_MIL_L) == TRUE)
 	||	 (Hlp_IsItem(itm, ITAR_MIL_M) == TRUE))
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_07"); //А ты выглядишь человеком состоятельным. 
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_08"); //Так что небольшая плата за вход тебя не разорит.  
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_09"); //Или свою роскошную броню ты у кого-то украл?
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_07"); //Рђ С‚С‹ РІС‹РіР»СЏРґРёС€СЊ С‡РµР»РѕРІРµРєРѕРј СЃРѕСЃС‚РѕСЏС‚РµР»СЊРЅС‹Рј. 
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_08"); //РўР°Рє С‡С‚Рѕ РЅРµР±РѕР»СЊС€Р°СЏ РїР»Р°С‚Р° Р·Р° РІС…РѕРґ С‚РµР±СЏ РЅРµ СЂР°Р·РѕСЂРёС‚.  
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_09"); //РР»Рё СЃРІРѕСЋ СЂРѕСЃРєРѕС€РЅСѓСЋ Р±СЂРѕРЅСЋ С‚С‹ Сѓ РєРѕРіРѕ-С‚Рѕ СѓРєСЂР°Р»?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_10"); //У тебя же есть золото, не так ли?   
+		AI_Output (self ,other,"DIA_Addon_Henry_WantEnter_04_10"); //РЈ С‚РµР±СЏ Р¶Рµ РµСЃС‚СЊ Р·РѕР»РѕС‚Рѕ, РЅРµ С‚Р°Рє Р»Рё?   
 	};
 };
 
@@ -285,10 +285,10 @@ FUNC VOID DIA_Addon_Henry_WantEnter_Info()
 // ------------------------------------------------------------
 func void B_Henry_NoJoin()
 {	
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_00"); //Если ты собираешься к нам присоединиться, тебе не повезло.
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_01"); //Такими вопросами занимается только капитан. А он сейчас с половиной команды ушел в море за добычей.
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_02"); //Но ты можешь подождать его возвращения.
-	AI_Output (self, other, "DIA_Addon_Henry_Add_04_03"); //Только не создавай никаких неприятностей!
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_00"); //Р•СЃР»Рё С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ Рє РЅР°Рј РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ, С‚РµР±Рµ РЅРµ РїРѕРІРµР·Р»Рѕ.
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_01"); //РўР°РєРёРјРё РІРѕРїСЂРѕСЃР°РјРё Р·Р°РЅРёРјР°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РєР°РїРёС‚Р°РЅ. Рђ РѕРЅ СЃРµР№С‡Р°СЃ СЃ РїРѕР»РѕРІРёРЅРѕР№ РєРѕРјР°РЅРґС‹ СѓС€РµР» РІ РјРѕСЂРµ Р·Р° РґРѕР±С‹С‡РµР№.
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_02"); //РќРѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРґРѕР¶РґР°С‚СЊ РµРіРѕ РІРѕР·РІСЂР°С‰РµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Addon_Henry_Add_04_03"); //РўРѕР»СЊРєРѕ РЅРµ СЃРѕР·РґР°РІР°Р№ РЅРёРєР°РєРёС… РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№!
 };
 // ------------------------------------------------------------
 
@@ -301,7 +301,7 @@ instance DIA_Addon_Henry_Einigen2		(C_INFO)
 	condition	= DIA_Addon_Henry_Einigen2_Condition;
 	information	= DIA_Addon_Henry_Einigen2_Info;
 
-	description	= "Вот твои 500 золотых.";
+	description	= "Р’РѕС‚ С‚РІРѕРё 500 Р·РѕР»РѕС‚С‹С….";
 };
 func int DIA_Addon_Henry_Einigen2_Condition ()
 {
@@ -315,9 +315,9 @@ func int DIA_Addon_Henry_Einigen2_Condition ()
 };
 func void DIA_Addon_Henry_Einigen2_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Einigen2_15_00"); //Вот твои 500 золотых.
+	AI_Output (other, self, "DIA_Addon_Henry_Einigen2_15_00"); //Р’РѕС‚ С‚РІРѕРё 500 Р·РѕР»РѕС‚С‹С….
 	B_GiveInvItems (other, self, ItMi_Gold, 500);		
-	AI_Output (self, other, "DIA_Addon_Henry_Einigen2_04_01"); //Прекрасно. Добро пожаловать в лагерь!  
+	AI_Output (self, other, "DIA_Addon_Henry_Einigen2_04_01"); //РџСЂРµРєСЂР°СЃРЅРѕ. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ Р»Р°РіРµСЂСЊ!  
 	B_Henry_NoJoin();
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
@@ -333,7 +333,7 @@ instance DIA_Addon_Henry_Einigen		(C_INFO)
 	condition	= DIA_Addon_Henry_Einigen_Condition;
 	information	= DIA_Addon_Henry_Einigen_Info;
 
-	description	= "Мы можем как-нибудь договориться?";
+	description	= "РњС‹ РјРѕР¶РµРј РєР°Рє-РЅРёР±СѓРґСЊ РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ?";
 };
 
 func int DIA_Addon_Henry_Einigen_Condition ()
@@ -347,12 +347,12 @@ func int DIA_Addon_Henry_Einigen_Condition ()
 
 func void DIA_Addon_Henry_Einigen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Einigen_15_00"); //Мы можем как-нибудь договориться?
-	AI_Output (self, other, "DIA_Addon_Henry_Einigen_04_01"); //Хм-м... Назови мне достойную причину, и я сделаю тебе скидку.
+	AI_Output (other, self, "DIA_Addon_Henry_Einigen_15_00"); //РњС‹ РјРѕР¶РµРј РєР°Рє-РЅРёР±СѓРґСЊ РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ?
+	AI_Output (self, other, "DIA_Addon_Henry_Einigen_04_01"); //РҐРј-Рј... РќР°Р·РѕРІРё РјРЅРµ РґРѕСЃС‚РѕР№РЅСѓСЋ РїСЂРёС‡РёРЅСѓ, Рё СЏ СЃРґРµР»Р°СЋ С‚РµР±Рµ СЃРєРёРґРєСѓ.
 };
 
 // ------------------------------------------------------------
-// 		  			Grund 1 - Fleisch fьr Morgan
+// 		  			Grund 1 - Fleisch fСЊr Morgan
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Henry_MeatForMorgan(C_INFO)
 {
@@ -361,7 +361,7 @@ INSTANCE DIA_Addon_Henry_MeatForMorgan(C_INFO)
 	condition	= DIA_Addon_Henry_MeatForMorgan_Condition;
 	information	= DIA_Addon_Henry_MeatForMorgan_Info;
 	permanent	= FALSE;
-	description	= "Я должен отдать Моргану мясо.";
+	description	= "РЇ РґРѕР»Р¶РµРЅ РѕС‚РґР°С‚СЊ РњРѕСЂРіР°РЅСѓ РјСЏСЃРѕ.";
 };                       
 FUNC INT DIA_Addon_Henry_MeatForMorgan_Condition()
 {
@@ -376,10 +376,10 @@ FUNC INT DIA_Addon_Henry_MeatForMorgan_Condition()
 
 FUNC VOID DIA_Addon_Henry_MeatForMorgan_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_MeatForMorgan_15_00"); //Я должен отдать Моргану мясо.
-	AI_Output (self ,other,"DIA_Addon_Henry_MeatForMorgan_04_01"); //Ага. И кто же тебя послал?  
-	AI_Output (other,self ,"DIA_Addon_Henry_MeatForMorgan_15_02"); //Аллигатор Джек. Он говорит, что Морган это мясо уже ждет.
-	AI_Output (self ,other,"DIA_Addon_Henry_MeatForMorgan_04_03"); //Ясно. Сам он не в настроении, верно?  
+	AI_Output (other,self ,"DIA_Addon_Henry_MeatForMorgan_15_00"); //РЇ РґРѕР»Р¶РµРЅ РѕС‚РґР°С‚СЊ РњРѕСЂРіР°РЅСѓ РјСЏСЃРѕ.
+	AI_Output (self ,other,"DIA_Addon_Henry_MeatForMorgan_04_01"); //РђРіР°. Р РєС‚Рѕ Р¶Рµ С‚РµР±СЏ РїРѕСЃР»Р°Р»?  
+	AI_Output (other,self ,"DIA_Addon_Henry_MeatForMorgan_15_02"); //РђР»Р»РёРіР°С‚РѕСЂ Р”Р¶РµРє. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РњРѕСЂРіР°РЅ СЌС‚Рѕ РјСЏСЃРѕ СѓР¶Рµ Р¶РґРµС‚.
+	AI_Output (self ,other,"DIA_Addon_Henry_MeatForMorgan_04_03"); //РЇСЃРЅРѕ. РЎР°Рј РѕРЅ РЅРµ РІ РЅР°СЃС‚СЂРѕРµРЅРёРё, РІРµСЂРЅРѕ?  
 };
 
 // ------------------------------------------------------------
@@ -392,7 +392,7 @@ instance DIA_Addon_Henry_Malcom		(C_INFO)
 	condition	= DIA_Addon_Henry_Malcom_Condition;
 	information	= DIA_Addon_Henry_Malcom_Info;
 
-	description	= "Меня послал Мальком.";
+	description	= "РњРµРЅСЏ РїРѕСЃР»Р°Р» РњР°Р»СЊРєРѕРј.";
 };
 func int DIA_Addon_Henry_Malcom_Condition ()
 {
@@ -405,14 +405,14 @@ func int DIA_Addon_Henry_Malcom_Condition ()
 };
 func void DIA_Addon_Henry_Malcom_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Malcom_15_00"); //Меня послал Мальком. Он сказал, что с деревом придется еще немного подождать.
-	AI_Output (self, other, "DIA_Addon_Henry_Malcom_04_01"); //(ворчит) Ну конечно... Я так и знал. Вечно он копается.
+	AI_Output (other, self, "DIA_Addon_Henry_Malcom_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» РњР°Р»СЊРєРѕРј. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЃ РґРµСЂРµРІРѕРј РїСЂРёРґРµС‚СЃСЏ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РїРѕРґРѕР¶РґР°С‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Henry_Malcom_04_01"); //(РІРѕСЂС‡РёС‚) РќСѓ РєРѕРЅРµС‡РЅРѕ... РЇ С‚Р°Рє Рё Р·РЅР°Р». Р’РµС‡РЅРѕ РѕРЅ РєРѕРїР°РµС‚СЃСЏ.
 
 	B_MalcomExident();
 };
 
 // ------------------------------------------------------------
-// 		  			Grund 3 - Paket fьr Skip
+// 		  			Grund 3 - Paket fСЊr Skip
 // ------------------------------------------------------------
 instance DIA_Addon_Henry_BaltramPack		(C_INFO)
 {
@@ -421,7 +421,7 @@ instance DIA_Addon_Henry_BaltramPack		(C_INFO)
 	condition	= DIA_Addon_Henry_BaltramPack_Condition;
 	information	= DIA_Addon_Henry_BaltramPack_Info;
 
-	description	= "У меня посылка для Скипа. Он здесь?";
+	description	= "РЈ РјРµРЅСЏ РїРѕСЃС‹Р»РєР° РґР»СЏ РЎРєРёРїР°. РћРЅ Р·РґРµСЃСЊ?";
 };
 func int DIA_Addon_Henry_BaltramPack_Condition ()
 {
@@ -434,8 +434,8 @@ func int DIA_Addon_Henry_BaltramPack_Condition ()
 };
 func void DIA_Addon_Henry_BaltramPack_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_BaltramPack_15_00"); //У меня посылка для Скипа. Он здесь?
-	AI_Output (self, other, "DIA_Addon_Henry_BaltramPack_04_01"); //Да, Скип здесь. И что?
+	AI_Output (other, self, "DIA_Addon_Henry_BaltramPack_15_00"); //РЈ РјРµРЅСЏ РїРѕСЃС‹Р»РєР° РґР»СЏ РЎРєРёРїР°. РћРЅ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Addon_Henry_BaltramPack_04_01"); //Р”Р°, РЎРєРёРї Р·РґРµСЃСЊ. Р С‡С‚Рѕ?
 };
 
 // ------------------------------------------------------------
@@ -450,7 +450,7 @@ instance DIA_Addon_Henry_Tribut		(C_INFO)
 	condition	= DIA_Addon_Henry_Tribut_Condition;
 	information	= DIA_Addon_Henry_Tribut_Info;
 	permanent	= TRUE;
-	description = "Пропусти меня внутрь.";
+	description = "РџСЂРѕРїСѓСЃС‚Рё РјРµРЅСЏ РІРЅСѓС‚СЂСЊ.";
 };
 func int DIA_Addon_Henry_Tribut_Condition ()
 {
@@ -464,25 +464,25 @@ func void DIA_Addon_Henry_Tribut_Info ()
 {
 	Henry_Amount = 500;
 
-	AI_Output	(other, self, "DIA_Addon_Henry_Tribut_15_00"); //Пропусти меня внутрь.
+	AI_Output	(other, self, "DIA_Addon_Henry_Tribut_15_00"); //РџСЂРѕРїСѓСЃС‚Рё РјРµРЅСЏ РІРЅСѓС‚СЂСЊ.
 	
-	AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_01"); //Хм-м...
+	AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_01"); //РҐРј-Рј...
 
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_Malcom))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_02"); //Ты принес мне сообщение от одного из лесорубов.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_02"); //РўС‹ РїСЂРёРЅРµСЃ РјРЅРµ СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚ РѕРґРЅРѕРіРѕ РёР· Р»РµСЃРѕСЂСѓР±РѕРІ.
 		Henry_Amount = (Henry_Amount - 100);
 	};	
 
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_MeatForMorgan))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_03"); //Аллигатор Джек использует тебя как мальчика на побегушках, чтобы передать мясо Моргану.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_03"); //РђР»Р»РёРіР°С‚РѕСЂ Р”Р¶РµРє РёСЃРїРѕР»СЊР·СѓРµС‚ С‚РµР±СЏ РєР°Рє РјР°Р»СЊС‡РёРєР° РЅР° РїРѕР±РµРіСѓС€РєР°С…, С‡С‚РѕР±С‹ РїРµСЂРµРґР°С‚СЊ РјСЏСЃРѕ РњРѕСЂРіР°РЅСѓ.
 		Henry_Amount = (Henry_Amount - 100);
 	};
 	
 	if (Npc_KnowsInfo (other, DIA_Addon_Henry_BaltramPack))
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_04"); //У тебя посылка для Скипа.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_04"); //РЈ С‚РµР±СЏ РїРѕСЃС‹Р»РєР° РґР»СЏ РЎРєРёРїР°.
 		Henry_Amount = (Henry_Amount - 100);
 	};
 
@@ -490,16 +490,16 @@ func void DIA_Addon_Henry_Tribut_Info ()
 	{
 		if (Henry_Amount < 500) //schon was anderes gesagt
 		{
-			AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_00"); //И что лучше всего:
+			AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_00"); //Р С‡С‚Рѕ Р»СѓС‡С€Рµ РІСЃРµРіРѕ:
 		};
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_01"); //Ты разобрался с этими подонками, засевшими в башне.
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_02"); //Не думал я, что с этим можно было справиться в одиночку.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_01"); //РўС‹ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ СЌС‚РёРјРё РїРѕРґРѕРЅРєР°РјРё, Р·Р°СЃРµРІС€РёРјРё РІ Р±Р°С€РЅРµ.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_02"); //РќРµ РґСѓРјР°Р» СЏ, С‡С‚Рѕ СЃ СЌС‚РёРј РјРѕР¶РЅРѕ Р±С‹Р»Рѕ СЃРїСЂР°РІРёС‚СЊСЃСЏ РІ РѕРґРёРЅРѕС‡РєСѓ.
 		Henry_Amount = (Henry_Amount - 200);
 	};
 
 	if (Henry_Amount <= 0)
 	{
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_03"); //Знаешь, что? Можешь пройти бесплатно.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_Add_04_03"); //Р—РЅР°РµС€СЊ, С‡С‚Рѕ? РњРѕР¶РµС€СЊ РїСЂРѕР№С‚Рё Р±РµСЃРїР»Р°С‚РЅРѕ.
 		
 		//patch M.F. 
 		self.aivar[AIV_PASSGATE] = TRUE; 
@@ -509,22 +509,22 @@ func void DIA_Addon_Henry_Tribut_Info ()
 	{
 		B_Henry_Gold (Henry_Amount);   
 
-		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_05"); //Если не согласен, можешь проваливать. Все просто.
+		AI_Output	(self, other, "DIA_Addon_Henry_Tribut_04_05"); //Р•СЃР»Рё РЅРµ СЃРѕРіР»Р°СЃРµРЅ, РјРѕР¶РµС€СЊ РїСЂРѕРІР°Р»РёРІР°С‚СЊ. Р’СЃРµ РїСЂРѕСЃС‚Рѕ.
 
 		Info_ClearChoices	(DIA_Addon_Henry_Tribut);
-		Info_AddChoice	(DIA_Addon_Henry_Tribut, "Думаю, это слишком много.", DIA_Addon_Henry_Tribut_nein );
+		Info_AddChoice	(DIA_Addon_Henry_Tribut, "Р”СѓРјР°СЋ, СЌС‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.", DIA_Addon_Henry_Tribut_nein );
 
 		if (Npc_HasItems (other,ItMi_Gold) >= Henry_Amount)
 		{
-			Info_AddChoice	(DIA_Addon_Henry_Tribut, "Хорошо. Вот золото.", DIA_Addon_Henry_Tribut_ja );
+			Info_AddChoice	(DIA_Addon_Henry_Tribut, "РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ Р·РѕР»РѕС‚Рѕ.", DIA_Addon_Henry_Tribut_ja );
 		};
 	};
 };
 func void DIA_Addon_Henry_Tribut_ja ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Tribut_ja_15_00"); //Хорошо. Вот золото.
+	AI_Output (other, self, "DIA_Addon_Henry_Tribut_ja_15_00"); //РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ Р·РѕР»РѕС‚Рѕ.
 	B_GiveInvItems (other, self, ItMi_Gold, Henry_Amount);		
-	AI_Output (self, other, "DIA_Addon_Henry_Tribut_ja_04_01"); //Благодарю. Добро пожаловать в лагерь!
+	AI_Output (self, other, "DIA_Addon_Henry_Tribut_ja_04_01"); //Р‘Р»Р°РіРѕРґР°СЂСЋ. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ Р»Р°РіРµСЂСЊ!
 	B_Henry_NoJoin();
 	
 	Info_ClearChoices	(DIA_Addon_Henry_Tribut);
@@ -532,14 +532,14 @@ func void DIA_Addon_Henry_Tribut_ja ()
 };
 func void DIA_Addon_Henry_Tribut_nein ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Tribut_nein_15_00"); //Думаю, это слишком много.
+	AI_Output (other, self, "DIA_Addon_Henry_Tribut_nein_15_00"); //Р”СѓРјР°СЋ, СЌС‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.
 	if (Henry_Amount < 500)
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Tribut_nein_04_03"); //Перестань! Я и так сделал тебе скидку.
+		AI_Output (self, other, "DIA_Addon_Henry_Tribut_nein_04_03"); //РџРµСЂРµСЃС‚Р°РЅСЊ! РЇ Рё С‚Р°Рє СЃРґРµР»Р°Р» С‚РµР±Рµ СЃРєРёРґРєСѓ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Tribut_nein_04_04"); //В таком случае можешь убираться отсюда.
+		AI_Output (self, other, "DIA_Addon_Henry_Tribut_nein_04_04"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ РјРѕР¶РµС€СЊ СѓР±РёСЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
 	};
 	
 	Info_ClearChoices	(DIA_Addon_Henry_Tribut);
@@ -562,7 +562,7 @@ INSTANCE DIA_Addon_Henry_Palisade(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_Condition;
 	information	= DIA_Addon_Henry_Palisade_Info;
 	permanent	= FALSE;
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_Condition()
 {
@@ -573,10 +573,10 @@ FUNC INT DIA_Addon_Henry_Palisade_Condition()
 };
 FUNC VOID DIA_Addon_Henry_Palisade_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_15_00"); //Что ты здесь делаешь?   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_01"); //А как ты думаешь? Я должен проследить за тем, чтобы эти жалкие лентяи построили частокол в срок.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_02"); //Если он не будет построен, капитан Грег даст мне хорошего пинка под зад.   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_03"); //Также я решаю, пропускать ли в лагерь всяких проходимцев вроде тебя.
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_01"); //Рђ РєР°Рє С‚С‹ РґСѓРјР°РµС€СЊ? РЇ РґРѕР»Р¶РµРЅ РїСЂРѕСЃР»РµРґРёС‚СЊ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ СЌС‚Рё Р¶Р°Р»РєРёРµ Р»РµРЅС‚СЏРё РїРѕСЃС‚СЂРѕРёР»Рё С‡Р°СЃС‚РѕРєРѕР» РІ СЃСЂРѕРє.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_02"); //Р•СЃР»Рё РѕРЅ РЅРµ Р±СѓРґРµС‚ РїРѕСЃС‚СЂРѕРµРЅ, РєР°РїРёС‚Р°РЅ Р“СЂРµРі РґР°СЃС‚ РјРЅРµ С…РѕСЂРѕС€РµРіРѕ РїРёРЅРєР° РїРѕРґ Р·Р°Рґ.   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_04_03"); //РўР°РєР¶Рµ СЏ СЂРµС€Р°СЋ, РїСЂРѕРїСѓСЃРєР°С‚СЊ Р»Рё РІ Р»Р°РіРµСЂСЊ РІСЃСЏРєРёС… РїСЂРѕС…РѕРґРёРјС†РµРІ РІСЂРѕРґРµ С‚РµР±СЏ.
 };
 
 // ------------------------------------------------------------
@@ -589,7 +589,7 @@ INSTANCE DIA_Addon_Henry_Palisade_WhatFor(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_WhatFor_Condition;
 	information	= DIA_Addon_Henry_Palisade_WhatFor_Info;
 	permanent	= FALSE;
-	description	= "Зачем вам понадобился частокол?";
+	description	= "Р—Р°С‡РµРј РІР°Рј РїРѕРЅР°РґРѕР±РёР»СЃСЏ С‡Р°СЃС‚РѕРєРѕР»?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_WhatFor_Condition()
 {
@@ -600,16 +600,16 @@ FUNC INT DIA_Addon_Henry_Palisade_WhatFor_Condition()
 };
 func VOID DIA_Addon_Henry_Palisade_WhatFor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_WhatFor_15_00"); //Зачем вам понадобился частокол?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_10"); //Мы не хотим стать легкой добычей для бандитов!
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_02"); //Эти ублюдки наглеют с каждым днем! В последнее время они повадились крутиться вокруг лагеря, как акулы у обломков затонувшего корабля. 
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_11"); //Несколько бандитов даже поселились в башне к югу отсюда.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_12"); //Я уверен, что это передовой отряд.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_03"); //Но если они настолько глупы, что решат напасть на нас, мы их так встретим, что они не скоро это забудут.
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_WhatFor_15_00"); //Р—Р°С‡РµРј РІР°Рј РїРѕРЅР°РґРѕР±РёР»СЃСЏ С‡Р°СЃС‚РѕРєРѕР»?
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_10"); //РњС‹ РЅРµ С…РѕС‚РёРј СЃС‚Р°С‚СЊ Р»РµРіРєРѕР№ РґРѕР±С‹С‡РµР№ РґР»СЏ Р±Р°РЅРґРёС‚РѕРІ!
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_02"); //Р­С‚Рё СѓР±Р»СЋРґРєРё РЅР°РіР»РµСЋС‚ СЃ РєР°Р¶РґС‹Рј РґРЅРµРј! Р’ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РѕРЅРё РїРѕРІР°РґРёР»РёСЃСЊ РєСЂСѓС‚РёС‚СЊСЃСЏ РІРѕРєСЂСѓРі Р»Р°РіРµСЂСЏ, РєР°Рє Р°РєСѓР»С‹ Сѓ РѕР±Р»РѕРјРєРѕРІ Р·Р°С‚РѕРЅСѓРІС€РµРіРѕ РєРѕСЂР°Р±Р»СЏ. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_11"); //РќРµСЃРєРѕР»СЊРєРѕ Р±Р°РЅРґРёС‚РѕРІ РґР°Р¶Рµ РїРѕСЃРµР»РёР»РёСЃСЊ РІ Р±Р°С€РЅРµ Рє СЋРіСѓ РѕС‚СЃСЋРґР°.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_12"); //РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЌС‚Рѕ РїРµСЂРµРґРѕРІРѕР№ РѕС‚СЂСЏРґ.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_WhatFor_04_03"); //РќРѕ РµСЃР»Рё РѕРЅРё РЅР°СЃС‚РѕР»СЊРєРѕ РіР»СѓРїС‹, С‡С‚Рѕ СЂРµС€Р°С‚ РЅР°РїР°СЃС‚СЊ РЅР° РЅР°СЃ, РјС‹ РёС… С‚Р°Рє РІСЃС‚СЂРµС‚РёРј, С‡С‚Рѕ РѕРЅРё РЅРµ СЃРєРѕСЂРѕ СЌС‚Рѕ Р·Р°Р±СѓРґСѓС‚.
 
 	Log_CreateTopic (TOPIC_Addon_BanditsTower,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_BanditsTower,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BanditsTower,"Несколько бандитов заняли башню к югу от пиратского лагеря.");
+	B_LogEntry (TOPIC_Addon_BanditsTower,"РќРµСЃРєРѕР»СЊРєРѕ Р±Р°РЅРґРёС‚РѕРІ Р·Р°РЅСЏР»Рё Р±Р°С€РЅСЋ Рє СЋРіСѓ РѕС‚ РїРёСЂР°С‚СЃРєРѕРіРѕ Р»Р°РіРµСЂСЏ.");
 
 };
 
@@ -618,9 +618,9 @@ func VOID DIA_Addon_Henry_Palisade_WhatFor_Info()
 // ------------------------------------------------------------
 func void B_Henry_WhereIsTower()
 {	
-	AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_08"); //Где именно находится башня?
-	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_07"); //Иди на юг и придерживайся правой стороны.
-	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_08"); //Ты увидишь башню на небольшом утесе.
+	AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_08"); //Р“РґРµ РёРјРµРЅРЅРѕ РЅР°С…РѕРґРёС‚СЃСЏ Р±Р°С€РЅСЏ?
+	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_07"); //РРґРё РЅР° СЋРі Рё РїСЂРёРґРµСЂР¶РёРІР°Р№СЃСЏ РїСЂР°РІРѕР№ СЃС‚РѕСЂРѕРЅС‹.
+	AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_08"); //РўС‹ СѓРІРёРґРёС€СЊ Р±Р°С€РЅСЋ РЅР° РЅРµР±РѕР»СЊС€РѕРј СѓС‚РµСЃРµ.
 };
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Henry_Turmbanditen(C_INFO)
@@ -630,7 +630,7 @@ INSTANCE DIA_Addon_Henry_Turmbanditen(C_INFO)
 	condition	= DIA_Addon_Henry_Turmbanditen_WhatFor_Condition;
 	information	= DIA_Addon_Henry_Turmbanditen_WhatFor_Info;
 	permanent	= TRUE;
-	description	= "Насчет бандитов в башне...";
+	description	= "РќР°СЃС‡РµС‚ Р±Р°РЅРґРёС‚РѕРІ РІ Р±Р°С€РЅРµ...";
 };                       
 FUNC INT DIA_Addon_Henry_Turmbanditen_WhatFor_Condition()
 {
@@ -642,20 +642,20 @@ FUNC INT DIA_Addon_Henry_Turmbanditen_WhatFor_Condition()
 };
 func VOID DIA_Addon_Henry_Turmbanditen_WhatFor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Turmbanditen_15_00"); //Насчет бандитов в башне...
+	AI_Output (other,self ,"DIA_Addon_Henry_Turmbanditen_15_00"); //РќР°СЃС‡РµС‚ Р±Р°РЅРґРёС‚РѕРІ РІ Р±Р°С€РЅРµ...
 	
 	if (C_TowerBanditsDead() == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_01"); //Да?
-		AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_01"); //Они мертвы.
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_01"); //Р”Р°?
+		AI_Output (other,self ,"DIA_Addon_Francis_BanditsDead_15_01"); //РћРЅРё РјРµСЂС‚РІС‹.
 		if (MIS_Henry_FreeBDTTower == LOG_RUNNING)
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_02"); //Прекрасно! Что ж, одной проблемой меньше.
+			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_02"); //РџСЂРµРєСЂР°СЃРЅРѕ! Р§С‚Рѕ Р¶, РѕРґРЅРѕР№ РїСЂРѕР±Р»РµРјРѕР№ РјРµРЅСЊС€Рµ.
 		}
 		else //auf eigene Faust
 		{
-			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_03"); //Ты разобрался с ними в одиночку? Позволь выразить тебе свое уважение!
-			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_04"); //Может быть, когда-нибудь ты даже станешь настоящим пиратом!
+			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_03"); //РўС‹ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ РЅРёРјРё РІ РѕРґРёРЅРѕС‡РєСѓ? РџРѕР·РІРѕР»СЊ РІС‹СЂР°Р·РёС‚СЊ С‚РµР±Рµ СЃРІРѕРµ СѓРІР°Р¶РµРЅРёРµ!
+			AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_04"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РєРѕРіРґР°-РЅРёР±СѓРґСЊ С‚С‹ РґР°Р¶Рµ СЃС‚Р°РЅРµС€СЊ РЅР°СЃС‚РѕСЏС‰РёРј РїРёСЂР°С‚РѕРј!
 		};
 		//-----------------------------------------			
 		SawPirate.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -665,19 +665,19 @@ func VOID DIA_Addon_Henry_Turmbanditen_WhatFor_Info()
 		//-----------------------------------------	
 		MIS_Henry_FreeBDTTower = LOG_SUCCESS;
 		
-		B_LogEntry (TOPIC_Addon_BanditsTower,"Бандиты из башни убиты.");
+		B_LogEntry (TOPIC_Addon_BanditsTower,"Р‘Р°РЅРґРёС‚С‹ РёР· Р±Р°С€РЅРё СѓР±РёС‚С‹.");
 		
 		B_GivePlayerXP (XP_Addon_Henry_FreeBDTTower);
 	}
 	else if (MIS_Henry_FreeBDTTower == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_07"); //Что еще ты хочешь?
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_07"); //Р§С‚Рѕ РµС‰Рµ С‚С‹ С…РѕС‡РµС€СЊ?
 		B_Henry_WhereIsTower();
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_05"); //Если ты планируешь справиться с ними самостоятельно, забудь об этом!
-		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_06"); //Скоро я пошлю туда двоих человек из моего отряда. Они позаботятся о бандитах.
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_05"); //Р•СЃР»Рё С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ РЅРёРјРё СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
+		AI_Output (self ,other,"DIA_Addon_Henry_Turmbanditen_04_06"); //РЎРєРѕСЂРѕ СЏ РїРѕС€Р»СЋ С‚СѓРґР° РґРІРѕРёС… С‡РµР»РѕРІРµРє РёР· РјРѕРµРіРѕ РѕС‚СЂСЏРґР°. РћРЅРё РїРѕР·Р°Р±РѕС‚СЏС‚СЃСЏ Рѕ Р±Р°РЅРґРёС‚Р°С….
 		Knows_HenrysEntertrupp = TRUE;
 	};
 };
@@ -692,7 +692,7 @@ INSTANCE DIA_Addon_Henry_Palisade_Bandits(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_Bandits_Condition;
 	information	= DIA_Addon_Henry_Palisade_Bandits_Info;
 	permanent	= FALSE;
-	description	= "Почему ты думаешь, что бандиты могут на вас напасть?";
+	description	= "РџРѕС‡РµРјСѓ С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ Р±Р°РЅРґРёС‚С‹ РјРѕРіСѓС‚ РЅР° РІР°СЃ РЅР°РїР°СЃС‚СЊ?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_Bandits_Condition()
 {
@@ -703,17 +703,17 @@ FUNC INT DIA_Addon_Henry_Palisade_Bandits_Condition()
 };
 func VOID DIA_Addon_Henry_Palisade_Bandits_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Bandits_15_00"); //Почему ты думаешь, что бандиты могут на вас напасть?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_04"); //Потому что между нами и бандитами война! А ты как думал?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_05"); //Сначала все было хорошо. Мы привезли сюда бандитов, они ушли на свое болото и оставили нас в покое.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_06"); //Но теперь эти подонки нападают на каждого чужака.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_07"); //Только дьявол знает, что на них нашло.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_08"); //Думаю, им нужны наши корабли. Ведь другого способа выбраться отсюда не существует. 
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_09"); //Насчет бандитов тебе лучше поговорить со Скипом. Он вел с ними какие-то дела - и чудом остался в живых.
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_10"); //Он может рассказать тебе множество интересного.
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Bandits_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ Р±Р°РЅРґРёС‚С‹ РјРѕРіСѓС‚ РЅР° РІР°СЃ РЅР°РїР°СЃС‚СЊ?
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_04"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ РјРµР¶РґСѓ РЅР°РјРё Рё Р±Р°РЅРґРёС‚Р°РјРё РІРѕР№РЅР°! Рђ С‚С‹ РєР°Рє РґСѓРјР°Р»?
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_05"); //РЎРЅР°С‡Р°Р»Р° РІСЃРµ Р±С‹Р»Рѕ С…РѕСЂРѕС€Рѕ. РњС‹ РїСЂРёРІРµР·Р»Рё СЃСЋРґР° Р±Р°РЅРґРёС‚РѕРІ, РѕРЅРё СѓС€Р»Рё РЅР° СЃРІРѕРµ Р±РѕР»РѕС‚Рѕ Рё РѕСЃС‚Р°РІРёР»Рё РЅР°СЃ РІ РїРѕРєРѕРµ.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_06"); //РќРѕ С‚РµРїРµСЂСЊ СЌС‚Рё РїРѕРґРѕРЅРєРё РЅР°РїР°РґР°СЋС‚ РЅР° РєР°Р¶РґРѕРіРѕ С‡СѓР¶Р°РєР°.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_07"); //РўРѕР»СЊРєРѕ РґСЊСЏРІРѕР» Р·РЅР°РµС‚, С‡С‚Рѕ РЅР° РЅРёС… РЅР°С€Р»Рѕ.
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_08"); //Р”СѓРјР°СЋ, РёРј РЅСѓР¶РЅС‹ РЅР°С€Рё РєРѕСЂР°Р±Р»Рё. Р’РµРґСЊ РґСЂСѓРіРѕРіРѕ СЃРїРѕСЃРѕР±Р° РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_09"); //РќР°СЃС‡РµС‚ Р±Р°РЅРґРёС‚РѕРІ С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РЎРєРёРїРѕРј. РћРЅ РІРµР» СЃ РЅРёРјРё РєР°РєРёРµ-С‚Рѕ РґРµР»Р° - Рё С‡СѓРґРѕРј РѕСЃС‚Р°Р»СЃСЏ РІ Р¶РёРІС‹С….
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_10"); //РћРЅ РјРѕР¶РµС‚ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ РјРЅРѕР¶РµСЃС‚РІРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ.
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_11"); //(издевательски) Жаль только, что тебе с ним поговорить не удастся. За вход-то ты не заплатил...
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Bandits_04_11"); //(РёР·РґРµРІР°С‚РµР»СЊСЃРєРё) Р–Р°Р»СЊ С‚РѕР»СЊРєРѕ, С‡С‚Рѕ С‚РµР±Рµ СЃ РЅРёРј РїРѕРіРѕРІРѕСЂРёС‚СЊ РЅРµ СѓРґР°СЃС‚СЃСЏ. Р—Р° РІС…РѕРґ-С‚Рѕ С‚С‹ РЅРµ Р·Р°РїР»Р°С‚РёР»...
 		Henry_Zoll_WhatFor = TRUE;
 	};
 };
@@ -737,7 +737,7 @@ instance DIA_Addon_Henry_Entercrew(C_INFO)
 	condition	= DIA_Addon_Henry_Entercrew_Condition;
 	information	= DIA_Addon_Henry_Entercrew_Info;
 	permanent	= TRUE;
-	description	= "Я хочу присоединиться к твоему отряду.";
+	description	= "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє С‚РІРѕРµРјСѓ РѕС‚СЂСЏРґСѓ.";
 };                       
 FUNC INT DIA_Addon_Henry_Entercrew_Condition()
 {
@@ -749,44 +749,44 @@ FUNC INT DIA_Addon_Henry_Entercrew_Condition()
 };
 FUNC VOID DIA_Addon_Henry_Entercrew_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Entercrew_15_00"); //Я хочу присоединиться к твоему отряду.
+	AI_Output (other,self ,"DIA_Addon_Henry_Entercrew_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє С‚РІРѕРµРјСѓ РѕС‚СЂСЏРґСѓ.
 	
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_00"); //(смеется) Нет, так дело не пойдет, приятель!
-		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_01"); //Сначала тебе надо попасть в лагерь!
+		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_00"); //(СЃРјРµРµС‚СЃСЏ) РќРµС‚, С‚Р°Рє РґРµР»Рѕ РЅРµ РїРѕР№РґРµС‚, РїСЂРёСЏС‚РµР»СЊ!
+		AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_01"); //РЎРЅР°С‡Р°Р»Р° С‚РµР±Рµ РЅР°РґРѕ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ!
 		Henry_Zoll_WhatFor = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_06"); //Ну что ж, добро пожаловать!
-		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_07"); //Еще один боец нам не помешает. 
+		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_06"); //РќСѓ С‡С‚Рѕ Р¶, РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ!
+		AI_Output (self ,other,"DIA_Addon_Henry_Entercrew_04_07"); //Р•С‰Рµ РѕРґРёРЅ Р±РѕРµС† РЅР°Рј РЅРµ РїРѕРјРµС€Р°РµС‚. 
 		if (MIS_Henry_FreeBDTTower == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_02"); //Хм-м. Я бы приказал тебе взять одного из моих ребят и выкурить засевших в башне бандитов...
-			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_03"); //Но ты это уже сделал.
+			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_02"); //РҐРј-Рј. РЇ Р±С‹ РїСЂРёРєР°Р·Р°Р» С‚РµР±Рµ РІР·СЏС‚СЊ РѕРґРЅРѕРіРѕ РёР· РјРѕРёС… СЂРµР±СЏС‚ Рё РІС‹РєСѓСЂРёС‚СЊ Р·Р°СЃРµРІС€РёС… РІ Р±Р°С€РЅРµ Р±Р°РЅРґРёС‚РѕРІ...
+			AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_03"); //РќРѕ С‚С‹ СЌС‚Рѕ СѓР¶Рµ СЃРґРµР»Р°Р».
 		}
 		else 
 		{
 			if (Npc_IsDead(SawPirate))
 			&& (Npc_IsDead(HammerPirate))
 			{
-				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_04"); //Оба моих воина мертвы, так что тебе придется заняться этим в одиночку.
-				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_05"); //Ты должен избавиться от бандитов, обосновавшихся в башне!
+				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_04"); //РћР±Р° РјРѕРёС… РІРѕРёРЅР° РјРµСЂС‚РІС‹, С‚Р°Рє С‡С‚Рѕ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РЅСЏС‚СЊСЃСЏ СЌС‚РёРј РІ РѕРґРёРЅРѕС‡РєСѓ.
+				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_05"); //РўС‹ РґРѕР»Р¶РµРЅ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ Р±Р°РЅРґРёС‚РѕРІ, РѕР±РѕСЃРЅРѕРІР°РІС€РёС…СЃСЏ РІ Р±Р°С€РЅРµ!
 				
-				B_LogEntry (TOPIC_Addon_BanditsTower,"Генри хочет, чтобы я разобрался с занявшими башню бандитами. Помочь он мне ничем не может.");
+				B_LogEntry (TOPIC_Addon_BanditsTower,"Р“РµРЅСЂРё С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ Р·Р°РЅСЏРІС€РёРјРё Р±Р°С€РЅСЋ Р±Р°РЅРґРёС‚Р°РјРё. РџРѕРјРѕС‡СЊ РѕРЅ РјРЅРµ РЅРёС‡РµРј РЅРµ РјРѕР¶РµС‚.");
 			}
 			else
 			{
-				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_06"); //Возьми одного из моих ребят, и разберись с этими бандитами.
+				AI_Output (self ,other, "DIA_Addon_Henry_Entercrew_Add_04_06"); //Р’РѕР·СЊРјРё РѕРґРЅРѕРіРѕ РёР· РјРѕРёС… СЂРµР±СЏС‚, Рё СЂР°Р·Р±РµСЂРёСЃСЊ СЃ СЌС‚РёРјРё Р±Р°РЅРґРёС‚Р°РјРё.
 				Henry_GetPartyMember = TRUE;
 			
-				B_LogEntry (TOPIC_Addon_BanditsTower,"Генри хочет, чтобы я разобрался с занявшими башню бандитами. Я могу взять с собой одного из его парней.");
+				B_LogEntry (TOPIC_Addon_BanditsTower,"Р“РµРЅСЂРё С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ Р·Р°РЅСЏРІС€РёРјРё Р±Р°С€РЅСЋ Р±Р°РЅРґРёС‚Р°РјРё. РЇ РјРѕРіСѓ РІР·СЏС‚СЊ СЃ СЃРѕР±РѕР№ РѕРґРЅРѕРіРѕ РёР· РµРіРѕ РїР°СЂРЅРµР№.");
 			};
 
 			B_Henry_WhereIsTower();
 			
-			AI_Output (other,self ,"DIA_Addon_Henry_Entercrew_15_09"); //Есть, сэр!
+			AI_Output (other,self ,"DIA_Addon_Henry_Entercrew_15_09"); //Р•СЃС‚СЊ, СЃСЌСЂ!
 	
 			MIS_Henry_FreeBDTTower = LOG_RUNNING;
 		};
@@ -804,7 +804,7 @@ instance DIA_Addon_Henry_Owen		(C_INFO)
 	condition	= DIA_Addon_Henry_Owen_Condition;
 	information	= DIA_Addon_Henry_Owen_Info;
 
-	description	= "Для меня есть еще какие-нибудь задания?";
+	description	= "Р”Р»СЏ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РєР°РєРёРµ-РЅРёР±СѓРґСЊ Р·Р°РґР°РЅРёСЏ?";
 };
 func int DIA_Addon_Henry_Owen_Condition ()
 {
@@ -817,20 +817,20 @@ func int DIA_Addon_Henry_Owen_Condition ()
 };
 func void DIA_Addon_Henry_Owen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Owen_15_01"); //Для меня есть еще какие-нибудь задания?
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_01"); //Мы уже несколько дней ждем новую партию дерева для частокола. 
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_05"); //Его должны были доставить Мальком и Оуэн.
+	AI_Output (other, self, "DIA_Addon_Henry_Owen_15_01"); //Р”Р»СЏ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РєР°РєРёРµ-РЅРёР±СѓРґСЊ Р·Р°РґР°РЅРёСЏ?
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_01"); //РњС‹ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ Р¶РґРµРј РЅРѕРІСѓСЋ РїР°СЂС‚РёСЋ РґРµСЂРµРІР° РґР»СЏ С‡Р°СЃС‚РѕРєРѕР»Р°. 
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_05"); //Р•РіРѕ РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё РґРѕСЃС‚Р°РІРёС‚СЊ РњР°Р»СЊРєРѕРј Рё РћСѓСЌРЅ.
 	if (!Npc_KnowsInfo (other, DIA_Addon_Henry_Malcom))
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_06"); //Их лагерь недалеко отсюда, у долины на юго-востоке.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_06"); //РС… Р»Р°РіРµСЂСЊ РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°, Сѓ РґРѕР»РёРЅС‹ РЅР° СЋРіРѕ-РІРѕСЃС‚РѕРєРµ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_07"); //Мальком сказал, что заготовка дерева займет некоторое время. Но не вечность же!
+		AI_Output (self, other, "DIA_Addon_Henry_Owen_04_07"); //РњР°Р»СЊРєРѕРј СЃРєР°Р·Р°Р», С‡С‚Рѕ Р·Р°РіРѕС‚РѕРІРєР° РґРµСЂРµРІР° Р·Р°Р№РјРµС‚ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ. РќРѕ РЅРµ РІРµС‡РЅРѕСЃС‚СЊ Р¶Рµ!
 	};
 	
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_08"); //Скажи ему, что мне надоело ждать!
-	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_09"); //Нет, погоди! Лучше скажи это Оуэну. Мальком слишком ненадежен.
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_08"); //РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ РјРЅРµ РЅР°РґРѕРµР»Рѕ Р¶РґР°С‚СЊ!
+	AI_Output (self, other, "DIA_Addon_Henry_Owen_04_09"); //РќРµС‚, РїРѕРіРѕРґРё! Р›СѓС‡С€Рµ СЃРєР°Р¶Рё СЌС‚Рѕ РћСѓСЌРЅСѓ. РњР°Р»СЊРєРѕРј СЃР»РёС€РєРѕРј РЅРµРЅР°РґРµР¶РµРЅ.
 	
 	
 	B_MalcomExident();
@@ -839,7 +839,7 @@ func void DIA_Addon_Henry_Owen_Info ()
 
 	Log_CreateTopic (TOPIC_Addon_HolOwen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_HolOwen,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_HolOwen,"Генри нужно дерево для строительства частокола. Я должен сказать об этом Оуэну. Его и Малькома можно найти в низине.");  
+	B_LogEntry	(TOPIC_Addon_HolOwen,"Р“РµРЅСЂРё РЅСѓР¶РЅРѕ РґРµСЂРµРІРѕ РґР»СЏ СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІР° С‡Р°СЃС‚РѕРєРѕР»Р°. РЇ РґРѕР»Р¶РµРЅ СЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј РћСѓСЌРЅСѓ. Р•РіРѕ Рё РњР°Р»СЊРєРѕРјР° РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РІ РЅРёР·РёРЅРµ.");  
 };
 
 // ------------------------------------------------------------
@@ -847,9 +847,9 @@ func void DIA_Addon_Henry_Owen_Info ()
 // ------------------------------------------------------------
 func void B_Addon_Henry_MalcomsDead()
 {	
-	AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_00"); //Что с Малькомом?
-	AI_Output (other, self, "DIA_Addon_Henry_Owen2_Add_15_01"); //Он мертв.
-	AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_02"); //Бедняга. Похоже, удача отвернулась от него...
+	AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_00"); //Р§С‚Рѕ СЃ РњР°Р»СЊРєРѕРјРѕРј?
+	AI_Output (other, self, "DIA_Addon_Henry_Owen2_Add_15_01"); //РћРЅ РјРµСЂС‚РІ.
+	AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_02"); //Р‘РµРґРЅСЏРіР°. РџРѕС…РѕР¶Рµ, СѓРґР°С‡Р° РѕС‚РІРµСЂРЅСѓР»Р°СЃСЊ РѕС‚ РЅРµРіРѕ...
 		
 };
 // ------------------------------------------------------------
@@ -860,7 +860,7 @@ instance DIA_Addon_Henry_Owen2		(C_INFO)
 	condition	= 	DIA_Addon_Henry_Owen2_Condition;
 	information	= 	DIA_Addon_Henry_Owen2_Info;
 	permanent	= 	TRUE;
-	description	= 	"Насчет Оуэна, лесоруба...";
+	description	= 	"РќР°СЃС‡РµС‚ РћСѓСЌРЅР°, Р»РµСЃРѕСЂСѓР±Р°...";
 };
 func int DIA_Addon_Henry_Owen2_Condition ()
 {
@@ -871,32 +871,32 @@ func int DIA_Addon_Henry_Owen2_Condition ()
 };
 func void DIA_Addon_Henry_Owen2_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_00"); //Насчет Оуэна, лесоруба...
+	AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_00"); //РќР°СЃС‡РµС‚ РћСѓСЌРЅР°, Р»РµСЃРѕСЂСѓР±Р°...
 	
 	if ((Npc_IsDead(PIR_1367_Addon_Owen)) == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_01"); //Он мертв.
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_02"); //Черт возьми! Видимо, мне придется отправить туда нового человека.
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_03"); //Морган очень вовремя занялся заполонившими всю округу дикими зверями.
+		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_01"); //РћРЅ РјРµСЂС‚РІ.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_02"); //Р§РµСЂС‚ РІРѕР·СЊРјРё! Р’РёРґРёРјРѕ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РѕС‚РїСЂР°РІРёС‚СЊ С‚СѓРґР° РЅРѕРІРѕРіРѕ С‡РµР»РѕРІРµРєР°.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_03"); //РњРѕСЂРіР°РЅ РѕС‡РµРЅСЊ РІРѕРІСЂРµРјСЏ Р·Р°РЅСЏР»СЃСЏ Р·Р°РїРѕР»РѕРЅРёРІС€РёРјРё РІСЃСЋ РѕРєСЂСѓРіСѓ РґРёРєРёРјРё Р·РІРµСЂСЏРјРё.
 		B_Addon_Henry_MalcomsDead();
 		//AI_Output (self, other, "DIA_Addon_Henry_Owen2_Add_04_01"); //Was? Er auch? Verdammte Mistviecher!
 		MIS_Henry_HolOwen = LOG_OBSOLETE;
 	
-		B_LogEntry	(TOPIC_Addon_HolOwen,"Оуэн и Мальком мертвы.");	
+		B_LogEntry	(TOPIC_Addon_HolOwen,"РћСѓСЌРЅ Рё РњР°Р»СЊРєРѕРј РјРµСЂС‚РІС‹.");	
 		Log_SetTopicStatus (TOPIC_Addon_HolOwen,LOG_OBSOLETE);
 	  
 	}
 	else if (Owen_ComesToHenry == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_03"); //Оуэн скоро принесет дерево.
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_04"); //Очень хорошо. И очень вовремя.
+		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_03"); //РћСѓСЌРЅ СЃРєРѕСЂРѕ РїСЂРёРЅРµСЃРµС‚ РґРµСЂРµРІРѕ.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_04"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р РѕС‡РµРЅСЊ РІРѕРІСЂРµРјСЏ.
 		B_Addon_Henry_MalcomsDead();
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_05"); //Вот твоя награда.
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_05"); //Р’РѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР°.
 		B_GiveInvItems (self, other, ItMi_Gold, 200);
 		B_StartOtherRoutine	(PIR_1367_Addon_Owen,"PostStart");
 		
 		
-		B_LogEntry	(TOPIC_Addon_HolOwen,"Оуэн отнесет Генри дерево.");
+		B_LogEntry	(TOPIC_Addon_HolOwen,"РћСѓСЌРЅ РѕС‚РЅРµСЃРµС‚ Р“РµРЅСЂРё РґРµСЂРµРІРѕ.");
 		
 		MIS_Henry_HolOwen = LOG_SUCCESS;
 		
@@ -904,8 +904,8 @@ func void DIA_Addon_Henry_Owen2_Info ()
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_06"); //Повтори, где находится лагерь лесорубов?
-		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_07"); //Недалеко отсюда, у долины на юго-востоке.
+		AI_Output (other, self, "DIA_Addon_Henry_Owen2_15_06"); //РџРѕРІС‚РѕСЂРё, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»Р°РіРµСЂСЊ Р»РµСЃРѕСЂСѓР±РѕРІ?
+		AI_Output (self, other, "DIA_Addon_Henry_Owen2_04_07"); //РќРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°, Сѓ РґРѕР»РёРЅС‹ РЅР° СЋРіРѕ-РІРѕСЃС‚РѕРєРµ.
 	};
 };
 
@@ -921,7 +921,7 @@ instance DIA_Addon_Henry_Palisade_CanHelp(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_CanHelp_Condition;
 	information	= DIA_Addon_Henry_Palisade_CanHelp_Info;
 	permanent	= TRUE;
-	description	= "Тебе нужна помощь?";
+	description	= "РўРµР±Рµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_CanHelp_Condition()
 {
@@ -933,15 +933,15 @@ FUNC INT DIA_Addon_Henry_Palisade_CanHelp_Condition()
 };
 FUNC VOID DIA_Addon_Henry_Palisade_CanHelp_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_CanHelp_15_00"); //Тебе нужна помощь?
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_CanHelp_15_00"); //РўРµР±Рµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ?
 	if (Henry_PERM_Once == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_01"); //Ты знаешь что-нибудь о постройке частоколов? 
-		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_CanHelp_15_02"); //Честно говоря, нет.
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_03"); //Тогда пользы от тебя здесь не будет. Помоги кому-нибудь еще.
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_01"); //РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїРѕСЃС‚СЂРѕР№РєРµ С‡Р°СЃС‚РѕРєРѕР»РѕРІ? 
+		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_CanHelp_15_02"); //Р§РµСЃС‚РЅРѕ РіРѕРІРѕСЂСЏ, РЅРµС‚.
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_03"); //РўРѕРіРґР° РїРѕР»СЊР·С‹ РѕС‚ С‚РµР±СЏ Р·РґРµСЃСЊ РЅРµ Р±СѓРґРµС‚. РџРѕРјРѕРіРё РєРѕРјСѓ-РЅРёР±СѓРґСЊ РµС‰Рµ.
 		Henry_PERM_Once = TRUE;
 	};
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_04"); //Можешь напиться до потери памяти, я не возражаю. Только не мешай моим рабочим. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_CanHelp_04_04"); //РњРѕР¶РµС€СЊ РЅР°РїРёС‚СЊСЃСЏ РґРѕ РїРѕС‚РµСЂРё РїР°РјСЏС‚Рё, СЏ РЅРµ РІРѕР·СЂР°Р¶Р°СЋ. РўРѕР»СЊРєРѕ РЅРµ РјРµС€Р°Р№ РјРѕРёРј СЂР°Р±РѕС‡РёРј. 
 };
 
 
@@ -959,7 +959,7 @@ INSTANCE DIA_Addon_Henry_WhatTeach(C_INFO)
 	condition	= DIA_Addon_Henry_WhatTeach_Condition;
 	information	= DIA_Addon_Henry_WhatTeach_Info;
 	permanent	= TRUE;
-	description	= "Ты можешь научить меня сражаться?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ?";
 };                       
 FUNC INT DIA_Addon_Henry_WhatTeach_Condition()
 {
@@ -972,16 +972,16 @@ FUNC INT DIA_Addon_Henry_WhatTeach_Condition()
 
 FUNC VOID DIA_Addon_Henry_WhatTeach_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Henry_WhatTeach_Add_15_00"); //Ты можешь научить меня лучше сражаться?
+	AI_Output (other, self, "DIA_Addon_Henry_WhatTeach_Add_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ Р»СѓС‡С€Рµ СЃСЂР°Р¶Р°С‚СЊСЃСЏ?
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_01"); //(смеется) Сначала заплати за проход в лагерь, а потом уже мы об этом поговорим.
-		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_02"); //Цена обучения включена в плату за вход.
+		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_01"); //(СЃРјРµРµС‚СЃСЏ) РЎРЅР°С‡Р°Р»Р° Р·Р°РїР»Р°С‚Рё Р·Р° РїСЂРѕС…РѕРґ РІ Р»Р°РіРµСЂСЊ, Р° РїРѕС‚РѕРј СѓР¶Рµ РјС‹ РѕР± СЌС‚РѕРј РїРѕРіРѕРІРѕСЂРёРј.
+		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_02"); //Р¦РµРЅР° РѕР±СѓС‡РµРЅРёСЏ РІРєР»СЋС‡РµРЅР° РІ РїР»Р°С‚Сѓ Р·Р° РІС…РѕРґ.
 		Henry_Zoll_WhatFor = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_03"); //Конечно, почему нет?
+		AI_Output (self ,other,"DIA_Addon_Henry_WhatTeach_Add_04_03"); //РљРѕРЅРµС‡РЅРѕ, РїРѕС‡РµРјСѓ РЅРµС‚?
 		Henry_Addon_TeachPlayer = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
@@ -999,17 +999,17 @@ func VOID B_Henry_CommentFightSkill ()
 {
 	if (Henry_Labercount == 0)
 	{
-		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_01"); //Ты быстро учишься. Может, тебе удастся стать настоящим пиратом.  
+		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_01"); //РўС‹ Р±С‹СЃС‚СЂРѕ СѓС‡РёС€СЊСЃСЏ. РњРѕР¶РµС‚, С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ СЃС‚Р°С‚СЊ РЅР°СЃС‚РѕСЏС‰РёРј РїРёСЂР°С‚РѕРј.  
 		Henry_Labercount = 1;
 	}
 	else if (Henry_Labercount == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_02"); //Если будешь продолжать в том же духе, то скоро ты сможешь в одиночку захватить целый корабль.
+		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_02"); //Р•СЃР»Рё Р±СѓРґРµС€СЊ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РІ С‚РѕРј Р¶Рµ РґСѓС…Рµ, С‚Рѕ СЃРєРѕСЂРѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РІ РѕРґРёРЅРѕС‡РєСѓ Р·Р°С…РІР°С‚РёС‚СЊ С†РµР»С‹Р№ РєРѕСЂР°Р±Р»СЊ.
 		Henry_Labercount = 2;
 	}
 	else if (Henry_Labercount == 2)
 	{
-		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_03"); //Никогда не забывай: дольше живет тот, кто не забывает парировать удары! 
+		AI_Output (self,other,"DIA_Addon_Henry_CommentFightSkill_04_03"); //РќРёРєРѕРіРґР° РЅРµ Р·Р°Р±С‹РІР°Р№: РґРѕР»СЊС€Рµ Р¶РёРІРµС‚ С‚РѕС‚, РєС‚Рѕ РЅРµ Р·Р°Р±С‹РІР°РµС‚ РїР°СЂРёСЂРѕРІР°С‚СЊ СѓРґР°СЂС‹! 
 		Henry_Labercount = 0;
 	};
 };
@@ -1021,7 +1021,7 @@ instance DIA_Addon_Henry_Teach(C_INFO)
 	condition	= DIA_Addon_Henry_Teach_Condition;
 	information	= DIA_Addon_Henry_Teach_Info;
 	permanent	= TRUE;
-	description	= "Учи меня!";
+	description	= "РЈС‡Рё РјРµРЅСЏ!";
 };                       
 FUNC INT DIA_Addon_Henry_Teach_Condition()
 {
@@ -1032,7 +1032,7 @@ FUNC INT DIA_Addon_Henry_Teach_Condition()
 };
 func VOID DIA_Addon_Henry_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Teach_15_00"); //Учи меня!
+	AI_Output (other,self ,"DIA_Addon_Henry_Teach_15_00"); //РЈС‡Рё РјРµРЅСЏ!
 					
 	Henry_merke2h = other.HitChance[NPC_TALENT_2H];  
 	
@@ -1051,7 +1051,7 @@ FUNC VOID DIA_Addon_Henry_Teach_Back()
 	}
 	else if  (other.HitChance[NPC_TALENT_2H] >= 90)
 	{
-		AI_Output (self ,other,"DIA_Addon_Henry_Teach_Back_04_00"); //Твое умение растет.
+		AI_Output (self ,other,"DIA_Addon_Henry_Teach_Back_04_00"); //РўРІРѕРµ СѓРјРµРЅРёРµ СЂР°СЃС‚РµС‚.
 	};
 	Info_ClearChoices (DIA_Addon_henry_Teach);
 };
@@ -1115,7 +1115,7 @@ INSTANCE DIA_Addon_Henry_Palisade_Train(C_INFO)
 	condition	= DIA_Addon_Henry_Palisade_Train_Condition;
 	information	= DIA_Addon_Henry_Palisade_Train_Info;
 	permanent	= FALSE;
-	description	= "Грег - ваш командир?";
+	description	= "Р“СЂРµРі - РІР°С€ РєРѕРјР°РЅРґРёСЂ?";
 };                       
 FUNC INT DIA_Addon_Henry_Palisade_Train_Condition()
 {
@@ -1127,19 +1127,19 @@ FUNC INT DIA_Addon_Henry_Palisade_Train_Condition()
 };
 func VOID DIA_Addon_Henry_Palisade_Train_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_00"); //Грег - ваш командир?
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_01"); //Да. Но для тебя он - КАПИТАН Грег. Это понятно?   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_02"); //Он - великий человек. Когда ты с ним встретишься, тебе лучше не быть на стороне его врагов. Ты даже не успеешь об этом пожалеть. 
+	AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_00"); //Р“СЂРµРі - РІР°С€ РєРѕРјР°РЅРґРёСЂ?
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_01"); //Р”Р°. РќРѕ РґР»СЏ С‚РµР±СЏ РѕРЅ - РљРђРџРРўРђРќ Р“СЂРµРі. Р­С‚Рѕ РїРѕРЅСЏС‚РЅРѕ?   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_02"); //РћРЅ - РІРµР»РёРєРёР№ С‡РµР»РѕРІРµРє. РљРѕРіРґР° С‚С‹ СЃ РЅРёРј РІСЃС‚СЂРµС‚РёС€СЊСЃСЏ, С‚РµР±Рµ Р»СѓС‡С€Рµ РЅРµ Р±С‹С‚СЊ РЅР° СЃС‚РѕСЂРѕРЅРµ РµРіРѕ РІСЂР°РіРѕРІ. РўС‹ РґР°Р¶Рµ РЅРµ СѓСЃРїРµРµС€СЊ РѕР± СЌС‚РѕРј РїРѕР¶Р°Р»РµС‚СЊ. 
 	
 	if (PIR_1300_Addon_Greg_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_03"); //Я с ним уже встречался.
-		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_04"); //Очень хорошо. Значит, ты понимаешь, о чем я говорю.   
+		AI_Output (other,self ,"DIA_Addon_Henry_Palisade_Train_15_03"); //РЇ СЃ РЅРёРј СѓР¶Рµ РІСЃС‚СЂРµС‡Р°Р»СЃСЏ.
+		AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_04"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р—РЅР°С‡РёС‚, С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј СЏ РіРѕРІРѕСЂСЋ.   
 	};
 
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_05"); //Впрочем, его сейчас нет в лагере.  
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_06"); //Нами командует Фрэнсис.   
-	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_07"); //Он целый день сидит перед хижиной Грега и смотрит, как мы работаем. 
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_05"); //Р’РїСЂРѕС‡РµРј, РµРіРѕ СЃРµР№С‡Р°СЃ РЅРµС‚ РІ Р»Р°РіРµСЂРµ.  
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_06"); //РќР°РјРё РєРѕРјР°РЅРґСѓРµС‚ Р¤СЂСЌРЅСЃРёСЃ.   
+	AI_Output (self ,other,"DIA_Addon_Henry_Palisade_Train_04_07"); //РћРЅ С†РµР»С‹Р№ РґРµРЅСЊ СЃРёРґРёС‚ РїРµСЂРµРґ С…РёР¶РёРЅРѕР№ Р“СЂРµРіР° Рё СЃРјРѕС‚СЂРёС‚, РєР°Рє РјС‹ СЂР°Р±РѕС‚Р°РµРј. 
 };
 
 // ************************************************************
@@ -1163,14 +1163,14 @@ FUNC INT DIA_Addon_Henry_YourOwnTrupp_Condition()
 };
 func VOID DIA_Addon_Henry_YourOwnTrupp_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_04"); //Итак, капитан дал тебе в распоряжение собственный отряд.
-	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_05"); //Позаботься о том, чтобы твои люди не сидели сложа руки!
+	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_04"); //РС‚Р°Рє, РєР°РїРёС‚Р°РЅ РґР°Р» С‚РµР±Рµ РІ СЂР°СЃРїРѕСЂСЏР¶РµРЅРёРµ СЃРѕР±СЃС‚РІРµРЅРЅС‹Р№ РѕС‚СЂСЏРґ.
+	AI_Output (self ,other,"DIA_Addon_Henry_Add_04_05"); //РџРѕР·Р°Р±РѕС‚СЊСЃСЏ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ С‚РІРѕРё Р»СЋРґРё РЅРµ СЃРёРґРµР»Рё СЃР»РѕР¶Р° СЂСѓРєРё!
 	AI_StopProcessInfos (self);
 };
 
 
 
 /*
-AI_Output (other,self ,"DIA_Addon_Henry_HenrysCrew_15_00"); //Wer gehцrt zu deinem Trupp?
+AI_Output (other,self ,"DIA_Addon_Henry_HenrysCrew_15_00"); //Wer gehС†rt zu deinem Trupp?
 AI_Output (other,self ,"DIA_Addon_Henry_Morgan_15_00"); //Wo finde ich Morgan?
 */

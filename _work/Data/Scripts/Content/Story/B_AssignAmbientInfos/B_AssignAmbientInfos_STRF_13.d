@@ -47,15 +47,15 @@ FUNC VOID DIA_STRF_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_00"); //Оставь меня в покое!
+		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_00"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_01"); //Что тебе нужно от меня? Оставь меня в покое!
+		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ? РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_02"); //Мы все умрем здесь!
+		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_02"); //РњС‹ РІСЃРµ СѓРјСЂРµРј Р·РґРµСЃСЊ!
 	};
 	
 	AI_StopProcessInfos	(self);

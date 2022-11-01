@@ -46,7 +46,7 @@ const int TwoHStonePlate 		= 7;
 const int BowStonePlate 		= 8;
 const int CrsBowStonePlate 		= 9;
 
-const string StPl_MagicAuraText = "Эта каменная табличка излучает магическую ауру.";
+const string StPl_MagicAuraText = "Р­С‚Р° РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РёР·Р»СѓС‡Р°РµС‚ РјР°РіРёС‡РµСЃРєСѓСЋ Р°СѓСЂСѓ.";
 const string StPl_StandardText 	= "";
 
 //------------------------------------------------------------------------------------------
@@ -311,7 +311,7 @@ func void Use_StonePlate ()
 //------------------------------------------------------------------------------------------
 PROTOTYPE   Prototype_StonePlate (C_ITEM)
 {	
-	name 				=	"Каменная табличка";
+	name 				=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_MULTI;
 
@@ -339,7 +339,7 @@ PROTOTYPE   Prototype_StonePlate (C_ITEM)
 //------------------------------------------------------------------------------------------
 instance ItWr_StrStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка силы I";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃРёР»С‹ I";
 	on_state[0]			=   Use_StrStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -350,7 +350,7 @@ func void Use_StrStonePlate1 ()
 };
 instance ItWr_StrStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка силы II";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃРёР»С‹ II";
 	on_state[0]			=   Use_StrStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -361,7 +361,7 @@ func void Use_StrStonePlate2 ()
 };
 instance ItWr_StrStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка силы III";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃРёР»С‹ III";
 	on_state[0]			=   Use_StrStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -376,7 +376,7 @@ func void Use_StrStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_DexStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка ловкости I";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° Р»РѕРІРєРѕСЃС‚Рё I";
 	on_state[0]			=   Use_DexStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -387,7 +387,7 @@ func void Use_DexStonePlate1 ()
 };
 instance ItWr_DexStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка ловкости II";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° Р»РѕРІРєРѕСЃС‚Рё II";
 	on_state[0]			=   Use_DexStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -398,7 +398,7 @@ func void Use_DexStonePlate2 ()
 };
 instance ItWr_DexStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка ловкости III";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° Р»РѕРІРєРѕСЃС‚Рё III";
 	on_state[0]			=   Use_DexStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -412,7 +412,7 @@ func void Use_DexStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_HitPointStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка жизненной силы I";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° Р¶РёР·РЅРµРЅРЅРѕР№ СЃРёР»С‹ I";
 	on_state[0]			=   Use_HitPointStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -423,7 +423,7 @@ func void Use_HitPointStonePlate1 ()
 };
 instance ItWr_HitPointStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка жизненной силы II";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° Р¶РёР·РЅРµРЅРЅРѕР№ СЃРёР»С‹ II";
 	on_state[0]			=   Use_HitPointStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -434,7 +434,7 @@ func void Use_HitPointStonePlate2 ()
 };
 instance ItWr_HitPointStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка жизненной силы III";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° Р¶РёР·РЅРµРЅРЅРѕР№ СЃРёР»С‹ III";
 	on_state[0]			=   Use_HitPointStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -449,7 +449,7 @@ func void Use_HitPointStonePlate3 ()
 
 instance ItWr_ManaStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка магии I";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РјР°РіРёРё I";
 	on_state[0]			=   Use_ManaStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -461,7 +461,7 @@ func void Use_ManaStonePlate1 ()
 
 instance ItWr_ManaStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка магии II";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РјР°РіРёРё II";
 	on_state[0]			=   Use_ManaStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -473,7 +473,7 @@ func void Use_ManaStonePlate2 ()
 
 instance ItWr_ManaStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка магии III";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РјР°РіРёРё III";
 	on_state[0]			=   Use_ManaStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -487,7 +487,7 @@ func void Use_ManaStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_OneHStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка одноручного оружия I";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ I";
 	on_state[0]			=   Use_OneHStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -498,7 +498,7 @@ func void Use_OneHStonePlate1 ()
 };
 instance ItWr_OneHStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка одноручного оружия II";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ II";
 	on_state[0]			=   Use_OneHStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -509,7 +509,7 @@ func void Use_OneHStonePlate2 ()
 };
 instance ItWr_OneHStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate  
 {
-	description 		=	"Каменная табличка одноручного оружия III";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ III";
 	on_state[0]			=   Use_OneHStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -523,7 +523,7 @@ func void Use_OneHStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_TwoHStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка двуручного оружия I";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ I";
 	on_state[0]			=   Use_TwoHStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -534,7 +534,7 @@ func void Use_TwoHStonePlate1 ()
 };
 instance ItWr_TwoHStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка двуручного оружия II";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ II";
 	on_state[0]			=   Use_TwoHStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -545,7 +545,7 @@ func void Use_TwoHStonePlate2 ()
 };
 instance ItWr_TwoHStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: hat Malcom in der Tasche!
 {
-	description 		=	"Каменная табличка двуручного оружия III";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ III";
 	on_state[0]			=   Use_TwoHStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -559,7 +559,7 @@ func void Use_TwoHStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_BowStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка стрельбы из лука I";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃС‚СЂРµР»СЊР±С‹ РёР· Р»СѓРєР° I";
 	on_state[0]			=   Use_BowStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -570,7 +570,7 @@ func void Use_BowStonePlate1 ()
 };
 instance ItWr_BowStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка стрельбы из лука II";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃС‚СЂРµР»СЊР±С‹ РёР· Р»СѓРєР° II";
 	on_state[0]			=   Use_BowStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -581,7 +581,7 @@ func void Use_BowStonePlate2 ()
 };
 instance ItWr_BowStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка стрельбы из лука III";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃС‚СЂРµР»СЊР±С‹ РёР· Р»СѓРєР° III";
 	on_state[0]			=   Use_BowStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -595,7 +595,7 @@ func void Use_BowStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_CrsBowStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Каменная табличка стрельбы из арбалета I";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃС‚СЂРµР»СЊР±С‹ РёР· Р°СЂР±Р°Р»РµС‚Р° I";
 	on_state[0]			=   Use_CrsBowStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -606,7 +606,7 @@ func void Use_CrsBowStonePlate1 ()
 };
 instance ItWr_CrsBowStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка стрельбы из арбалета II";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃС‚СЂРµР»СЊР±С‹ РёР· Р°СЂР±Р°Р»РµС‚Р° II";
 	on_state[0]			=   Use_CrsBowStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -617,7 +617,7 @@ func void Use_CrsBowStonePlate2 ()
 };
 instance ItWr_CrsBowStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Каменная табличка стрельбы из арбалета III";
+	description 		=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° СЃС‚СЂРµР»СЊР±С‹ РёР· Р°СЂР±Р°Р»РµС‚Р° III";
 	on_state[0]			=   Use_CrsBowStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };

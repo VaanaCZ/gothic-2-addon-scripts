@@ -31,7 +31,7 @@ instance DIA_Lee_DI_Hallo		(C_INFO)
 	condition	 = 	DIA_Lee_DI_Hallo_Condition;
 	information	 = 	DIA_Lee_DI_Hallo_Info;
 
-	description	 = 	"Что ты будешь делать?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ?";
 };
 func int DIA_Lee_DI_Hallo_Condition ()
 {	
@@ -43,8 +43,8 @@ func int DIA_Lee_DI_Hallo_Condition ()
 
 func void DIA_Lee_DI_Hallo_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //Что ты будешь делать?
-	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Кто-то должен охранять корабль. Я останусь здесь и позабочусь, чтобы он был на месте, когда ты вернешься.
+	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //Р§С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ?
+	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //РљС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ РѕС…СЂР°РЅСЏС‚СЊ РєРѕСЂР°Р±Р»СЊ. РЇ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ Рё РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ РѕРЅ Р±С‹Р» РЅР° РјРµСЃС‚Рµ, РєРѕРіРґР° С‚С‹ РІРµСЂРЅРµС€СЊСЃСЏ.
 	
 };
 
@@ -60,7 +60,7 @@ instance DIA_Lee_DI_PERM6		(C_INFO)
 	information	 = 	DIA_Lee_DI_PERM6_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как мой корабль?";
+	description	 = 	"РљР°Рє РјРѕР№ РєРѕСЂР°Р±Р»СЊ?";
 };
 
 func int DIA_Lee_DI_PERM6_Condition ()
@@ -74,15 +74,15 @@ func int DIA_Lee_DI_PERM6_Condition ()
 
 func void DIA_Lee_DI_PERM6_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //Как мой корабль?
+	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //РљР°Рє РјРѕР№ РєРѕСЂР°Р±Р»СЊ?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_01"); //Не волнуйся. Я держу все под контролем.
+		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_01"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ. РЇ РґРµСЂР¶Сѓ РІСЃРµ РїРѕРґ РєРѕРЅС‚СЂРѕР»РµРј.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Все отлично. Эти жалкие орки могут возвращаться, когда хотят. Я опять устрою им взбучку.
+		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Р’СЃРµ РѕС‚Р»РёС‡РЅРѕ. Р­С‚Рё Р¶Р°Р»РєРёРµ РѕСЂРєРё РјРѕРіСѓС‚ РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ, РєРѕРіРґР° С…РѕС‚СЏС‚. РЇ РѕРїСЏС‚СЊ СѓСЃС‚СЂРѕСЋ РёРј РІР·Р±СѓС‡РєСѓ.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -100,7 +100,7 @@ INSTANCE DIA_Lee_DI_Teach(C_INFO)
 	information	= DIA_Lee_DI_Teach_Info;
 	permanent	= TRUE;
 	
-	description = "Я хочу потренироваться.";
+	description = "РЇ С…РѕС‡Сѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.";
 };                       
 
 FUNC INT DIA_Lee_DI_Teach_Condition()
@@ -113,8 +113,8 @@ FUNC INT DIA_Lee_DI_Teach_Condition()
  
 FUNC VOID DIA_Lee_DI_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Lee_DI_Teach_15_00"); //Я хочу потренироваться.
-	AI_Output (self,other ,"DIA_Lee_DI_Teach_04_01"); //Что именно ты хочешь улучшить?
+	AI_Output (other,self ,"DIA_Lee_DI_Teach_15_00"); //РЇ С…РѕС‡Сѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.
+	AI_Output (self,other ,"DIA_Lee_DI_Teach_04_01"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР»СѓС‡С€РёС‚СЊ?
 	
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -128,7 +128,7 @@ FUNC VOID DIA_Lee_DI_Teach_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //Твоя защита ужасна, но мы что-нибудь сделаем с этим.
+			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //РўРІРѕСЏ Р·Р°С‰РёС‚Р° СѓР¶Р°СЃРЅР°, РЅРѕ РјС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°РµРј СЃ СЌС‚РёРј.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -143,7 +143,7 @@ FUNC VOID DIA_Lee_DI_Teach_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 100))
 	{
-			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_5_04_00"); //Твои кисти слишком напряжены. Ты должен держать оружие свободнее.
+			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_5_04_00"); //РўРІРѕРё РєРёСЃС‚Рё СЃР»РёС€РєРѕРј РЅР°РїСЂСЏР¶РµРЅС‹. РўС‹ РґРѕР»Р¶РµРЅ РґРµСЂР¶Р°С‚СЊ РѕСЂСѓР¶РёРµ СЃРІРѕР±РѕРґРЅРµРµ.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -158,7 +158,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 100))
 	{
-		AI_Output(self,other,"DIA_DIA_Lee_DI_Teach_2H_1_04_00"); //Всегда помни: боковой удар должен идти от бедра, а не от запястья.
+		AI_Output(self,other,"DIA_DIA_Lee_DI_Teach_2H_1_04_00"); //Р’СЃРµРіРґР° РїРѕРјРЅРё: Р±РѕРєРѕРІРѕР№ СѓРґР°СЂ РґРѕР»Р¶РµРЅ РёРґС‚Рё РѕС‚ Р±РµРґСЂР°, Р° РЅРµ РѕС‚ Р·Р°РїСЏСЃС‚СЊСЏ.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //Сильнейший удар бесполезен, если он приходится в никуда. Так что старайся точно рассчитывать удары.
+		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //РЎРёР»СЊРЅРµР№С€РёР№ СѓРґР°СЂ Р±РµСЃРїРѕР»РµР·РµРЅ, РµСЃР»Рё РѕРЅ РїСЂРёС…РѕРґРёС‚СЃСЏ РІ РЅРёРєСѓРґР°. РўР°Рє С‡С‚Рѕ СЃС‚Р°СЂР°Р№СЃСЏ С‚РѕС‡РЅРѕ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ СѓРґР°СЂС‹.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -200,7 +200,7 @@ instance DIA_Lee_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Lee_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Мы можем отчаливать.";
+	description = 	"РњС‹ РјРѕР¶РµРј РѕС‚С‡Р°Р»РёРІР°С‚СЊ.";
 };
 
 func int DIA_Lee_DI_UndeadDragonDead_Condition ()
@@ -214,24 +214,24 @@ func int DIA_Lee_DI_UndeadDragonDead_Condition ()
 var int DIA_Lee_DI_UndeadDragonDead_OneTime;
 func void DIA_Lee_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //Мы можем отчаливать. Враг мертв.
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //Очень хорошо. Тогда скажи капитану, чтобы поднимал якорь.
+	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //РњС‹ РјРѕР¶РµРј РѕС‚С‡Р°Р»РёРІР°С‚СЊ. Р’СЂР°Рі РјРµСЂС‚РІ.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РўРѕРіРґР° СЃРєР°Р¶Рё РєР°РїРёС‚Р°РЅСѓ, С‡С‚РѕР±С‹ РїРѕРґРЅРёРјР°Р» СЏРєРѕСЂСЊ.
 
 	if (DIA_Lee_DI_UndeadDragonDead_OneTime == FALSE)
 	&& (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Ты ведь доставишь меня на материк, да?
-			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Да. Хоринис проживет и без тебя.
-			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem Kцnig endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
-			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Значит, я наконец, смогу нанести так долго откладываемый визит вежливости королю.
-			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //Я столько ждал этого...
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Как ты думаешь? Разве терпение не должно быть вознаграждено?
-			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //Терпение и убийственные доводы.
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(смеется) Да. Без хорошего отряда ничего не получится. Для меня было большой честью биться с тобой бок о бок.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //РўС‹ РІРµРґСЊ РґРѕСЃС‚Р°РІРёС€СЊ РјРµРЅСЏ РЅР° РјР°С‚РµСЂРёРє, РґР°?
+			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Р”Р°. РҐРѕСЂРёРЅРёСЃ РїСЂРѕР¶РёРІРµС‚ Рё Р±РµР· С‚РµР±СЏ.
+			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem KС†nig endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
+			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Р—РЅР°С‡РёС‚, СЏ РЅР°РєРѕРЅРµС†, СЃРјРѕРіСѓ РЅР°РЅРµСЃС‚Рё С‚Р°Рє РґРѕР»РіРѕ РѕС‚РєР»Р°РґС‹РІР°РµРјС‹Р№ РІРёР·РёС‚ РІРµР¶Р»РёРІРѕСЃС‚Рё РєРѕСЂРѕР»СЋ.
+			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //РЇ СЃС‚РѕР»СЊРєРѕ Р¶РґР°Р» СЌС‚РѕРіРѕ...
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ? Р Р°Р·РІРµ С‚РµСЂРїРµРЅРёРµ РЅРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРѕ?
+			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //РўРµСЂРїРµРЅРёРµ Рё СѓР±РёР№СЃС‚РІРµРЅРЅС‹Рµ РґРѕРІРѕРґС‹.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(СЃРјРµРµС‚СЃСЏ) Р”Р°. Р‘РµР· С…РѕСЂРѕС€РµРіРѕ РѕС‚СЂСЏРґР° РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ. Р”Р»СЏ РјРµРЅСЏ Р±С‹Р»Рѕ Р±РѕР»СЊС€РѕР№ С‡РµСЃС‚СЊСЋ Р±РёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№ Р±РѕРє Рѕ Р±РѕРє.
 			DIA_Lee_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //Может быть, когда-нибудь наши пути пересекутся вновь...
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РєРѕРіРґР°-РЅРёР±СѓРґСЊ РЅР°С€Рё РїСѓС‚Рё РїРµСЂРµСЃРµРєСѓС‚СЃСЏ РІРЅРѕРІСЊ...
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

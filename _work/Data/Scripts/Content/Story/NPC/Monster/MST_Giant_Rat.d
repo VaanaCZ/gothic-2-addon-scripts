@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Giant_Rat(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Гигантская крыса";
+	name							=	"Р“РёРіР°РЅС‚СЃРєР°СЏ РєСЂС‹СЃР°";
 	guild							=	GIL_Giant_Rat;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Giant_Rat;
 	level							=	3;
@@ -78,13 +78,13 @@ INSTANCE Giant_Rat	(Mst_Default_Giant_Rat)
 
 
 //**************************************
-//	junge Giant_Rat   (fьr Spielstart) 	
+//	junge Giant_Rat   (fСЊr Spielstart) 	
 //**************************************
 
 INSTANCE YGiant_Rat	(Mst_Default_Giant_Rat)
 {
 	//----- Monster ----
-	name							=	"Молодая гигантская крыса";
+	name							=	"РњРѕР»РѕРґР°СЏ РіРёРіР°РЅС‚СЃРєР°СЏ РєСЂС‹СЃР°";
 	level							=	3;
 	
 	//----- Attribute ----

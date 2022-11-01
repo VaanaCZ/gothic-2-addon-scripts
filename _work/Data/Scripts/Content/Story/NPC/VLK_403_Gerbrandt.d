@@ -1,7 +1,7 @@
 instance VLK_403_Gerbrandt (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Γεπαπΰνδς"; 
+	name 		= "Π“ΠµΡ€Π±Ρ€Π°Π½Π΄Ρ‚"; 
 	guild 		= GIL_VLK;
 	id 			= 403;
 	voice 		= 10;

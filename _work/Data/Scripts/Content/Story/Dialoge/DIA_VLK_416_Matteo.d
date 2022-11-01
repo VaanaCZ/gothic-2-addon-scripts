@@ -74,7 +74,7 @@ FUNC INT DIA_Matteo_Hallo_Condition()
 };
 FUNC VOID DIA_Matteo_Hallo_Info()
 {	
-	AI_Output (self, other, "DIA_Matteo_Hallo_09_00"); //Чем могу помочь?
+	AI_Output (self, other, "DIA_Matteo_Hallo_09_00"); //Р§РµРј РјРѕРіСѓ РїРѕРјРѕС‡СЊ?
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_Matteo_SellWhat(C_INFO)
 	condition	= DIA_Matteo_SellWhat_Condition;
 	information	= DIA_MAtteo_SellWhat_Info;
 	permanent	= FALSE;
-	description = "Что ты продаешь?";
+	description = "Р§С‚Рѕ С‚С‹ РїСЂРѕРґР°РµС€СЊ?";
 };                       
 FUNC INT DIA_Matteo_SellWhat_Condition()
 {	
@@ -95,15 +95,15 @@ FUNC INT DIA_Matteo_SellWhat_Condition()
 };
 FUNC VOID DIA_Matteo_SellWhat_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_SellWhat_15_00"); //Что ты продаешь?
-	AI_Output (self, other, "DIA_Matteo_SellWhat_09_01"); //Я могу предложить все, что может понадобиться в твоих странствиях. Оружие, факелы, провизию... даже доспехи.
-	AI_Output (self, other, "DIA_Matteo_SellWhat_09_02"); //У меня есть очень хороший экземпляр на складе.
-	AI_Output (self, other, "DIA_Matteo_SellWhat_09_03"); //Двойные усиленные доспехи из кожи снеппера - совсем новые. Тебе это интересно?
+	AI_Output (other, self, "DIA_Matteo_SellWhat_15_00"); //Р§С‚Рѕ С‚С‹ РїСЂРѕРґР°РµС€СЊ?
+	AI_Output (self, other, "DIA_Matteo_SellWhat_09_01"); //РЇ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ РІСЃРµ, С‡С‚Рѕ РјРѕР¶РµС‚ РїРѕРЅР°РґРѕР±РёС‚СЊСЃСЏ РІ С‚РІРѕРёС… СЃС‚СЂР°РЅСЃС‚РІРёСЏС…. РћСЂСѓР¶РёРµ, С„Р°РєРµР»С‹, РїСЂРѕРІРёР·РёСЋ... РґР°Р¶Рµ РґРѕСЃРїРµС…Рё.
+	AI_Output (self, other, "DIA_Matteo_SellWhat_09_02"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РѕС‡РµРЅСЊ С…РѕСЂРѕС€РёР№ СЌРєР·РµРјРїР»СЏСЂ РЅР° СЃРєР»Р°РґРµ.
+	AI_Output (self, other, "DIA_Matteo_SellWhat_09_03"); //Р”РІРѕР№РЅС‹Рµ СѓСЃРёР»РµРЅРЅС‹Рµ РґРѕСЃРїРµС…Рё РёР· РєРѕР¶Рё СЃРЅРµРїРїРµСЂР° - СЃРѕРІСЃРµРј РЅРѕРІС‹Рµ. РўРµР±Рµ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ?
 	
 	if (Knows_Matteo == FALSE)
 	{
 		Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-		B_LogEntry (TOPIC_CityTrader,"Лавка Маттео находится у южных ворот города. Он продает снаряжение, оружие и другие товары.");
+		B_LogEntry (TOPIC_CityTrader,"Р›Р°РІРєР° РњР°С‚С‚РµРѕ РЅР°С…РѕРґРёС‚СЃСЏ Сѓ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР°. РћРЅ РїСЂРѕРґР°РµС‚ СЃРЅР°СЂСЏР¶РµРЅРёРµ, РѕСЂСѓР¶РёРµ Рё РґСЂСѓРіРёРµ С‚РѕРІР°СЂС‹.");
 		Knows_Matteo = TRUE;
 	};
 };
@@ -118,7 +118,7 @@ INSTANCE DIA_Matteo_TRADE (C_INFO)
 	condition	= DIA_Matteo_TRADE_Condition;
 	information	= DIA_Matteo_TRADE_Info;
 	permanent	= TRUE;
-	description = "Покажи мне свои товары.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	Trade		= TRUE;
 };                       
 FUNC INT DIA_Matteo_TRADE_Condition()
@@ -134,21 +134,21 @@ var int Matteo_TradeNewsPermanent;
 FUNC VOID DIA_Matteo_TRADE_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other,self ,"DIA_Matteo_TRADE_15_00"); //Покажи мне свои товары.
+	AI_Output (other,self ,"DIA_Matteo_TRADE_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	if (Kapitel == 3)
 	&& (MIS_RescueBennet != LOG_SUCCESS)
 	&& (Matteo_TradeNewsPermanent == FALSE)
 	{
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_01"); //С тех пор, как наемники прикончили Лотара, инспекции паладинов стали значительно боле строгими.
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_02"); //Я надеюсь, все успокоится, когда этого убийцу повесят.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_01"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє РЅР°РµРјРЅРёРєРё РїСЂРёРєРѕРЅС‡РёР»Рё Р›РѕС‚Р°СЂР°, РёРЅСЃРїРµРєС†РёРё РїР°Р»Р°РґРёРЅРѕРІ СЃС‚Р°Р»Рё Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ Р±РѕР»Рµ СЃС‚СЂРѕРіРёРјРё.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_02"); //РЇ РЅР°РґРµСЋСЃСЊ, РІСЃРµ СѓСЃРїРѕРєРѕРёС‚СЃСЏ, РєРѕРіРґР° СЌС‚РѕРіРѕ СѓР±РёР№С†Сѓ РїРѕРІРµСЃСЏС‚.
 	
 		Matteo_TradeNewsPermanent = 1;
 	};
 	if (Kapitel == 5)
 	&& (Matteo_TradeNewsPermanent < 2)
 	{
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_03"); //Похоже, паладины действительно серьезно настроены на этот раз. Они даже сократили охрану на своем корабле.
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_04"); //Это хорошо, что ты опять пополняешь свои запасы, кто знает, будет ли еще существовать этот город на следующей неделе.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_03"); //РџРѕС…РѕР¶Рµ, РїР°Р»Р°РґРёРЅС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРµСЂСЊРµР·РЅРѕ РЅР°СЃС‚СЂРѕРµРЅС‹ РЅР° СЌС‚РѕС‚ СЂР°Р·. РћРЅРё РґР°Р¶Рµ СЃРѕРєСЂР°С‚РёР»Рё РѕС…СЂР°РЅСѓ РЅР° СЃРІРѕРµРј РєРѕСЂР°Р±Р»Рµ.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_04"); //Р­С‚Рѕ С…РѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ РѕРїСЏС‚СЊ РїРѕРїРѕР»РЅСЏРµС€СЊ СЃРІРѕРё Р·Р°РїР°СЃС‹, РєС‚Рѕ Р·РЅР°РµС‚, Р±СѓРґРµС‚ Р»Рё РµС‰Рµ СЃСѓС‰РµСЃС‚РІРѕРІР°С‚СЊ СЌС‚РѕС‚ РіРѕСЂРѕРґ РЅР° СЃР»РµРґСѓСЋС‰РµР№ РЅРµРґРµР»Рµ.
 	
 		Matteo_TradeNewsPermanent = 2;
 	};
@@ -169,7 +169,7 @@ instance DIA_Matteo_LEATHER		(C_INFO)
 	condition	 = 	DIA_Matteo_LEATHER_Condition;
 	information	 = 	DIA_Matteo_LEATHER_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Купить кожаные доспехи. Защита: оружие 25, стрелы 20. (250 золота)";
+	description	 = 	"РљСѓРїРёС‚СЊ РєРѕР¶Р°РЅС‹Рµ РґРѕСЃРїРµС…Рё. Р—Р°С‰РёС‚Р°: РѕСЂСѓР¶РёРµ 25, СЃС‚СЂРµР»С‹ 20. (250 Р·РѕР»РѕС‚Р°)";
 };
 
 func int DIA_Matteo_LEATHER_Condition ()
@@ -182,18 +182,18 @@ func int DIA_Matteo_LEATHER_Condition ()
 };
 func void DIA_Matteo_LEATHER_Info ()
 {
-	AI_Output (other, self, "DIA_Matteo_LEATHER_15_00"); //Хорошо, давай мне эти доспехи.
+	AI_Output (other, self, "DIA_Matteo_LEATHER_15_00"); //РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РјРЅРµ СЌС‚Рё РґРѕСЃРїРµС…Рё.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 250)
 	{	
-		AI_Output (self, other, "DIA_Matteo_LEATHER_09_01"); //Они тебе понравятся. (ухмыляется)
+		AI_Output (self, other, "DIA_Matteo_LEATHER_09_01"); //РћРЅРё С‚РµР±Рµ РїРѕРЅСЂР°РІСЏС‚СЃСЏ. (СѓС…РјС‹Р»СЏРµС‚СЃСЏ)
 
 		B_GiveInvItems 	(self, other, ItAr_Leather_L, 1);
 		Matteo_LeatherBought = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Matteo_LEATHER_09_02"); //Эти доспехи стоят недешево - но они, определенно, стоят своих денег. Так что возвращайся, когда у тебя будет достаточно золота.
+		AI_Output (self, other, "DIA_Matteo_LEATHER_09_02"); //Р­С‚Рё РґРѕСЃРїРµС…Рё СЃС‚РѕСЏС‚ РЅРµРґРµС€РµРІРѕ - РЅРѕ РѕРЅРё, РѕРїСЂРµРґРµР»РµРЅРЅРѕ, СЃС‚РѕСЏС‚ СЃРІРѕРёС… РґРµРЅРµРі. РўР°Рє С‡С‚Рѕ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°.
 	};
 };
 
@@ -207,7 +207,7 @@ INSTANCE DIA_Matteo_Paladine(C_INFO)
 	condition	= DIA_Matteo_Paladine_Condition;
 	information	= DIA_MAtteo_Paladine_Info;
 	permanent	= FALSE;
-	description = "Что ты знаешь о паладинах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїР°Р»Р°РґРёРЅР°С…?";
 };                       
 FUNC INT DIA_Matteo_Paladine_Condition()
 {	
@@ -218,13 +218,13 @@ FUNC INT DIA_Matteo_Paladine_Condition()
 };
 FUNC VOID DIA_Matteo_Paladine_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_Paladine_15_00"); //Что ты знаешь о паладинах?
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_01"); //С тех пор, как эти ублюдки прибыли в город, у меня от них одни проблемы.
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_02"); //Последний раз, когда я шел в верхний квартал, стражники преградили мне дорогу и начали выяснять, что мне там нужно!
-	AI_Output (other, self, "DIA_Matteo_Paladine_15_03"); //И?
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_04"); //Конечно же, они пропустили меня!
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_05"); //Да у меня уже была лавка в этом городе, когда эти напыщенные болваны еще пешком под стол ходили!
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_06"); //А вчера эти ублюдки пришли и конфисковали половину моих товаров!
+	AI_Output (other, self, "DIA_Matteo_Paladine_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїР°Р»Р°РґРёРЅР°С…?
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_01"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє СЌС‚Рё СѓР±Р»СЋРґРєРё РїСЂРёР±С‹Р»Рё РІ РіРѕСЂРѕРґ, Сѓ РјРµРЅСЏ РѕС‚ РЅРёС… РѕРґРЅРё РїСЂРѕР±Р»РµРјС‹.
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_02"); //РџРѕСЃР»РµРґРЅРёР№ СЂР°Р·, РєРѕРіРґР° СЏ С€РµР» РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р», СЃС‚СЂР°Р¶РЅРёРєРё РїСЂРµРіСЂР°РґРёР»Рё РјРЅРµ РґРѕСЂРѕРіСѓ Рё РЅР°С‡Р°Р»Рё РІС‹СЏСЃРЅСЏС‚СЊ, С‡С‚Рѕ РјРЅРµ С‚Р°Рј РЅСѓР¶РЅРѕ!
+	AI_Output (other, self, "DIA_Matteo_Paladine_15_03"); //Р?
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_04"); //РљРѕРЅРµС‡РЅРѕ Р¶Рµ, РѕРЅРё РїСЂРѕРїСѓСЃС‚РёР»Рё РјРµРЅСЏ!
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_05"); //Р”Р° Сѓ РјРµРЅСЏ СѓР¶Рµ Р±С‹Р»Р° Р»Р°РІРєР° РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ, РєРѕРіРґР° СЌС‚Рё РЅР°РїС‹С‰РµРЅРЅС‹Рµ Р±РѕР»РІР°РЅС‹ РµС‰Рµ РїРµС€РєРѕРј РїРѕРґ СЃС‚РѕР» С…РѕРґРёР»Рё!
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_06"); //Рђ РІС‡РµСЂР° СЌС‚Рё СѓР±Р»СЋРґРєРё РїСЂРёС€Р»Рё Рё РєРѕРЅС„РёСЃРєРѕРІР°Р»Рё РїРѕР»РѕРІРёРЅСѓ РјРѕРёС… С‚РѕРІР°СЂРѕРІ!
 };
 
 // ************************************************************
@@ -237,7 +237,7 @@ INSTANCE DIA_Matteo_Confiscated(C_INFO)
 	condition	= DIA_Matteo_Confiscated_Condition;
 	information	= DIA_MAtteo_Confiscated_Info;
 	permanent	= FALSE;
-	description = "Паладины забрали твои товары?";
+	description = "РџР°Р»Р°РґРёРЅС‹ Р·Р°Р±СЂР°Р»Рё С‚РІРѕРё С‚РѕРІР°СЂС‹?";
 };                       
 FUNC INT DIA_Matteo_Confiscated_Condition()
 {	
@@ -249,10 +249,10 @@ FUNC INT DIA_Matteo_Confiscated_Condition()
 FUNC VOID DIA_Matteo_Confiscated_Info()
 {	
 
-	AI_Output (other, self, "DIA_Matteo_Confiscated_15_00"); //Паладины забрали твои товары?
-	AI_Output (self, other, "DIA_Matteo_Confiscated_09_01"); //Все, что у меня хранилось на заднем дворе.
-	AI_Output (self, other, "DIA_Matteo_Confiscated_09_02"); //Они просто поставили стражника перед входом во двор.
-	AI_Output (self, other, "DIA_Matteo_Confiscated_09_03"); //Мне еще повезло, что они не забрали все. Хотя бы доспехи оставили.
+	AI_Output (other, self, "DIA_Matteo_Confiscated_15_00"); //РџР°Р»Р°РґРёРЅС‹ Р·Р°Р±СЂР°Р»Рё С‚РІРѕРё С‚РѕРІР°СЂС‹?
+	AI_Output (self, other, "DIA_Matteo_Confiscated_09_01"); //Р’СЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ С…СЂР°РЅРёР»РѕСЃСЊ РЅР° Р·Р°РґРЅРµРј РґРІРѕСЂРµ.
+	AI_Output (self, other, "DIA_Matteo_Confiscated_09_02"); //РћРЅРё РїСЂРѕСЃС‚Рѕ РїРѕСЃС‚Р°РІРёР»Рё СЃС‚СЂР°Р¶РЅРёРєР° РїРµСЂРµРґ РІС…РѕРґРѕРј РІРѕ РґРІРѕСЂ.
+	AI_Output (self, other, "DIA_Matteo_Confiscated_09_03"); //РњРЅРµ РµС‰Рµ РїРѕРІРµР·Р»Рѕ, С‡С‚Рѕ РѕРЅРё РЅРµ Р·Р°Р±СЂР°Р»Рё РІСЃРµ. РҐРѕС‚СЏ Р±С‹ РґРѕСЃРїРµС…Рё РѕСЃС‚Р°РІРёР»Рё.
 };
 
 // ************************************************************
@@ -265,7 +265,7 @@ INSTANCE DIA_Matteo_HelpMeToOV(C_INFO)
 	condition	= DIA_Matteo_HelpMeToOV_Condition;
 	information	= DIA_MAtteo_HelpMeToOV_Info;
 	permanent	= FALSE;
-	description = "Ты можешь помочь мне попасть в верхний квартал?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?";
 };                       
 FUNC INT DIA_Matteo_HelpMeToOV_Condition()
 {	
@@ -278,25 +278,25 @@ FUNC INT DIA_Matteo_HelpMeToOV_Condition()
 };
 FUNC VOID DIA_Matteo_HelpMeToOV_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_00"); //Ты можешь помочь мне попасть в верхний квартал?
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_01"); //(ошеломленно) Что? А что тебе нужно ТАМ?
-	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_02"); //У меня важное сообщение...
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_03"); //Так-так... А ты пытался пойти мимо стражников?
+	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_01"); //(РѕС€РµР»РѕРјР»РµРЅРЅРѕ) Р§С‚Рѕ? Рђ С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РўРђРњ?
+	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_02"); //РЈ РјРµРЅСЏ РІР°Р¶РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ...
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_03"); //РўР°Рє-С‚Р°Рє... Рђ С‚С‹ РїС‹С‚Р°Р»СЃСЏ РїРѕР№С‚Рё РјРёРјРѕ СЃС‚СЂР°Р¶РЅРёРєРѕРІ?
 
 	if (Torwache_305.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_04"); //(горький смех) Ох, забудь об этом!
-		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_05"); //(смеется) Это так ТИПИЧНО для этих нищих!
+		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_04"); //(РіРѕСЂСЊРєРёР№ СЃРјРµС…) РћС…, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
+		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_05"); //(СЃРјРµРµС‚СЃСЏ) Р­С‚Рѕ С‚Р°Рє РўРРџРР§РќРћ РґР»СЏ СЌС‚РёС… РЅРёС‰РёС…!
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_06"); //Я не понимаю, зачем мне даже пытаться.
-		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_07"); //Возможно, ты прав.
+		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_06"); //РЇ РЅРµ РїРѕРЅРёРјР°СЋ, Р·Р°С‡РµРј РјРЅРµ РґР°Р¶Рµ РїС‹С‚Р°С‚СЊСЃСЏ.
+		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_07"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚С‹ РїСЂР°РІ.
 	};
 	
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_08"); //Я не знаю НАСКОЛЬКО важное у тебя сообщение - это меня не касается.
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_09"); //Но даже если ты скажешь им, что корабль, набитый орками, пришвартовался в гавани, они не пустят тебя.
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_10"); //Потому что у них есть ПРИКАЗ.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_08"); //РЇ РЅРµ Р·РЅР°СЋ РќРђРЎРљРћР›Р¬РљРћ РІР°Р¶РЅРѕРµ Сѓ С‚РµР±СЏ СЃРѕРѕР±С‰РµРЅРёРµ - СЌС‚Рѕ РјРµРЅСЏ РЅРµ РєР°СЃР°РµС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_09"); //РќРѕ РґР°Р¶Рµ РµСЃР»Рё С‚С‹ СЃРєР°Р¶РµС€СЊ РёРј, С‡С‚Рѕ РєРѕСЂР°Р±Р»СЊ, РЅР°Р±РёС‚С‹Р№ РѕСЂРєР°РјРё, РїСЂРёС€РІР°СЂС‚РѕРІР°Р»СЃСЏ РІ РіР°РІР°РЅРё, РѕРЅРё РЅРµ РїСѓСЃС‚СЏС‚ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_10"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ Сѓ РЅРёС… РµСЃС‚СЊ РџР РРљРђР—.
 };
 
 // ************************************************************
@@ -305,11 +305,11 @@ FUNC VOID DIA_Matteo_HelpMeToOV_Info()
 
 func void B_Matteo_Preis()
 {
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_01"); //Похоже, это очень важно для тебя.
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_02"); //(лукаво) Вопрос в том: НАСКОЛЬКО это важно для тебя?
-	AI_Output (other, self, "DIA_Matteo_HelpMeNow_15_03"); //На что ты намекаешь?
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_04"); //Я могу помочь тебе - я ведь, все же, один из самых влиятельных людей здесь.
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_05"); //Но это тебе обойдется в некоторую сумму.
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_01"); //РџРѕС…РѕР¶Рµ, СЌС‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ РґР»СЏ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_02"); //(Р»СѓРєР°РІРѕ) Р’РѕРїСЂРѕСЃ РІ С‚РѕРј: РќРђРЎРљРћР›Р¬РљРћ СЌС‚Рѕ РІР°Р¶РЅРѕ РґР»СЏ С‚РµР±СЏ?
+	AI_Output (other, self, "DIA_Matteo_HelpMeNow_15_03"); //РќР° С‡С‚Рѕ С‚С‹ РЅР°РјРµРєР°РµС€СЊ?
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_04"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ - СЏ РІРµРґСЊ, РІСЃРµ Р¶Рµ, РѕРґРёРЅ РёР· СЃР°РјС‹С… РІР»РёСЏС‚РµР»СЊРЅС‹С… Р»СЋРґРµР№ Р·РґРµСЃСЊ.
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_05"); //РќРѕ СЌС‚Рѕ С‚РµР±Рµ РѕР±РѕР№РґРµС‚СЃСЏ РІ РЅРµРєРѕС‚РѕСЂСѓСЋ СЃСѓРјРјСѓ.
 };
 
 
@@ -320,7 +320,7 @@ INSTANCE DIA_Matteo_HelpMeNow(C_INFO)
 	condition	= DIA_Matteo_HelpMeNow_Condition;
 	information	= DIA_MAtteo_HelpMeNow_Info;
 	permanent	= FALSE;
-	description = "Так ты можешь помочь мне попасть в верхний квартал?";
+	description = "РўР°Рє С‚С‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?";
 };                       
 FUNC INT DIA_Matteo_HelpMeNow_Condition()
 {	
@@ -333,7 +333,7 @@ FUNC INT DIA_Matteo_HelpMeNow_Condition()
 };
 FUNC VOID DIA_Matteo_HelpMeNow_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_HelpMeNow_15_00"); //Так ты можешь помочь мне попасть в верхний квартал?
+	AI_Output (other, self, "DIA_Matteo_HelpMeNow_15_00"); //РўР°Рє С‚С‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?
 	B_Matteo_Preis();
 };
 
@@ -347,7 +347,7 @@ INSTANCE DIA_Matteo_LehrlingLater(C_INFO)
 	condition	= DIA_Matteo_LehrlingLater_Condition;
 	information	= DIA_MAtteo_LehrlingLater_Info;
 	permanent	= FALSE;
-	description = "Помоги мне стать учеником одного из мастеров.";
+	description = "РџРѕРјРѕРіРё РјРЅРµ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІ.";
 };                       
 FUNC INT DIA_Matteo_LehrlingLater_Condition()
 {	
@@ -359,7 +359,7 @@ FUNC INT DIA_Matteo_LehrlingLater_Condition()
 };
 func VOID DIA_Matteo_LehrlingLater_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_LehrlingLater_15_00"); //Помоги мне стать учеником одного из мастеров.
+	AI_Output (other, self, "DIA_Matteo_LehrlingLater_15_00"); //РџРѕРјРѕРіРё РјРЅРµ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІ.
 	B_Matteo_Preis();
 };
 	
@@ -373,7 +373,7 @@ INSTANCE DIA_Matteo_PriceOfHelp(C_INFO)
 	condition	= DIA_Matteo_PriceOfHelp_Condition;
 	information	= DIA_MAtteo_PriceOfHelp_Info;
 	permanent	= FALSE;
-	description = "Что ты хочешь за свои услуги?";
+	description = "Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЃРІРѕРё СѓСЃР»СѓРіРё?";
 };                       
 FUNC INT DIA_Matteo_PriceOfHelp_Condition()
 {	
@@ -385,40 +385,40 @@ FUNC INT DIA_Matteo_PriceOfHelp_Condition()
 };
 FUNC VOID DIA_Matteo_PriceOfHelp_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_15_00"); //Что ты хочешь за свои услуги?
-	AI_Output (self, other, "DIA_Matteo_PriceOfHelp_09_01"); //100 золотых монет.
+	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_15_00"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЃРІРѕРё СѓСЃР»СѓРіРё?
+	AI_Output (self, other, "DIA_Matteo_PriceOfHelp_09_01"); //100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	
 	Info_ClearChoices 	(DIA_Matteo_PriceOfHelp);
-	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "Это все чертовски...", DIA_Matteo_PriceOfHelp_Wow);
-	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "Ах ты, шельмец!", DIA_Matteo_PriceOfHelp_Cutthroat);
+	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "Р­С‚Рѕ РІСЃРµ С‡РµСЂС‚РѕРІСЃРєРё...", DIA_Matteo_PriceOfHelp_Wow);
+	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "РђС… С‚С‹, С€РµР»СЊРјРµС†!", DIA_Matteo_PriceOfHelp_Cutthroat);
 };
 
 func void B_Matteo_RegDichAb()
 {
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_00"); //Воспринимай это проще! Это не ТВОЕ золото я имею в виду.
-	AI_Output (other, self, "B_Matteo_RegDichAb_15_01"); //А чье?
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_02"); //В принципе, это МОЕ золото.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_03"); //Гритта, племянница плотника, уже давно не отдает мне долг.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_04"); //Но эта маленькая вертихвостка постоянно дефилирует в новых платьях - это означает, что деньги у нее есть.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_05"); //Я хочу, чтобы ты выбил из нее этот долг. Но мастер Торбен - плотник - тоже очень влиятельный человек.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_06"); //Принеси мне эти деньги, и я помогу тебе.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_00"); //Р’РѕСЃРїСЂРёРЅРёРјР°Р№ СЌС‚Рѕ РїСЂРѕС‰Рµ! Р­С‚Рѕ РЅРµ РўР’РћР• Р·РѕР»РѕС‚Рѕ СЏ РёРјРµСЋ РІ РІРёРґСѓ.
+	AI_Output (other, self, "B_Matteo_RegDichAb_15_01"); //Рђ С‡СЊРµ?
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_02"); //Р’ РїСЂРёРЅС†РёРїРµ, СЌС‚Рѕ РњРћР• Р·РѕР»РѕС‚Рѕ.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_03"); //Р“СЂРёС‚С‚Р°, РїР»РµРјСЏРЅРЅРёС†Р° РїР»РѕС‚РЅРёРєР°, СѓР¶Рµ РґР°РІРЅРѕ РЅРµ РѕС‚РґР°РµС‚ РјРЅРµ РґРѕР»Рі.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_04"); //РќРѕ СЌС‚Р° РјР°Р»РµРЅСЊРєР°СЏ РІРµСЂС‚РёС…РІРѕСЃС‚РєР° РїРѕСЃС‚РѕСЏРЅРЅРѕ РґРµС„РёР»РёСЂСѓРµС‚ РІ РЅРѕРІС‹С… РїР»Р°С‚СЊСЏС… - СЌС‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ РґРµРЅСЊРіРё Сѓ РЅРµРµ РµСЃС‚СЊ.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_05"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РІС‹Р±РёР» РёР· РЅРµРµ СЌС‚РѕС‚ РґРѕР»Рі. РќРѕ РјР°СЃС‚РµСЂ РўРѕСЂР±РµРЅ - РїР»РѕС‚РЅРёРє - С‚РѕР¶Рµ РѕС‡РµРЅСЊ РІР»РёСЏС‚РµР»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_06"); //РџСЂРёРЅРµСЃРё РјРЅРµ СЌС‚Рё РґРµРЅСЊРіРё, Рё СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ.
 	
 	MIS_Matteo_Gold = LOG_RUNNING;
 	Log_CreateTopic (Topic_Matteo,LOG_MISSION);
 	Log_SetTopicStatus	(Topic_Matteo,LOG_RUNNING);
-	B_LogEntry (Topic_Matteo,"Племянница плотника Торбена Гритта должна Маттео 100 золотых монет. Если я верну их ему, он поможет мне попасть в верхний квартал.");
+	B_LogEntry (Topic_Matteo,"РџР»РµРјСЏРЅРЅРёС†Р° РїР»РѕС‚РЅРёРєР° РўРѕСЂР±РµРЅР° Р“СЂРёС‚С‚Р° РґРѕР»Р¶РЅР° РњР°С‚С‚РµРѕ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р•СЃР»Рё СЏ РІРµСЂРЅСѓ РёС… РµРјСѓ, РѕРЅ РїРѕРјРѕР¶РµС‚ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».");
 };
 
 func void DIA_Matteo_PriceOfHelp_Cutthroat()
 {
-	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_Cutthroat_15_00"); //Ах ты, шельмец!
+	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_Cutthroat_15_00"); //РђС… С‚С‹, С€РµР»СЊРјРµС†!
 	B_Matteo_RegDichAb();
 	Info_ClearChoices 	(DIA_Matteo_PriceOfHelp);
 };
 
 func void DIA_Matteo_PriceOfHelp_Wow()
 {
-	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_Wow_15_00"); //Это все чертовски...
+	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_Wow_15_00"); //Р­С‚Рѕ РІСЃРµ С‡РµСЂС‚РѕРІСЃРєРё...
 	B_Matteo_RegDichAb();
 	Info_ClearChoices 	(DIA_Matteo_PriceOfHelp);
 };
@@ -433,7 +433,7 @@ INSTANCE DIA_Matteo_WoGritta(C_INFO)
 	condition	= DIA_Matteo_WoGritta_Condition;
 	information	= DIA_MAtteo_WoGritta_Info;
 	permanent	= FALSE;
-	description = "Где мне найти эту Гритту?";
+	description = "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚Сѓ Р“СЂРёС‚С‚Сѓ?";
 };                       
 FUNC INT DIA_Matteo_WoGritta_Condition()
 {	
@@ -445,8 +445,8 @@ FUNC INT DIA_Matteo_WoGritta_Condition()
 };
 FUNC VOID DIA_Matteo_WoGritta_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WoGritta_15_00"); //Где мне найти эту Гритту?
-	AI_Output (self, other, "DIA_Matteo_WoGritta_09_01"); //Как я уже говорил - она племянница плотника - его дом находится ниже про улице, справа от кузницы.
+	AI_Output (other, self, "DIA_Matteo_WoGritta_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚Сѓ Р“СЂРёС‚С‚Сѓ?
+	AI_Output (self, other, "DIA_Matteo_WoGritta_09_01"); //РљР°Рє СЏ СѓР¶Рµ РіРѕРІРѕСЂРёР» - РѕРЅР° РїР»РµРјСЏРЅРЅРёС†Р° РїР»РѕС‚РЅРёРєР° - РµРіРѕ РґРѕРј РЅР°С…РѕРґРёС‚СЃСЏ РЅРёР¶Рµ РїСЂРѕ СѓР»РёС†Рµ, СЃРїСЂР°РІР° РѕС‚ РєСѓР·РЅРёС†С‹.
 };
 
 // ************************************************************
@@ -459,7 +459,7 @@ INSTANCE DIA_Matteo_GoldRunning(C_INFO)
 	condition	= DIA_Matteo_GoldRunning_Condition;
 	information	= DIA_MAtteo_GoldRunning_Info;
 	permanent	= TRUE;
-	description = "Вот твои 100 золотых!";
+	description = "Р’РѕС‚ С‚РІРѕРё 100 Р·РѕР»РѕС‚С‹С…!";
 };                       
 FUNC INT DIA_Matteo_GoldRunning_Condition()
 {	
@@ -471,14 +471,14 @@ FUNC INT DIA_Matteo_GoldRunning_Condition()
 };
 FUNC VOID DIA_Matteo_GoldRunning_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_GoldRunning_15_00"); //Вот твои 100 золотых!
+	AI_Output (other, self, "DIA_Matteo_GoldRunning_15_00"); //Р’РѕС‚ С‚РІРѕРё 100 Р·РѕР»РѕС‚С‹С…!
 	
 	//EXIT IF...
 	
 	if (Npc_IsDead(Gritta))
 	{
-		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_01"); //На этом золоте кровь Гритты! Я не говорил, что нужно убивать ее!
-		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_02"); //Я не хочу иметь никакого отношения к этому делу. Ты можешь забыть о нашей сделке! Не хочу даже вспоминать об этом!
+		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_01"); //РќР° СЌС‚РѕРј Р·РѕР»РѕС‚Рµ РєСЂРѕРІСЊ Р“СЂРёС‚С‚С‹! РЇ РЅРµ РіРѕРІРѕСЂРёР», С‡С‚Рѕ РЅСѓР¶РЅРѕ СѓР±РёРІР°С‚СЊ РµРµ!
+		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_02"); //РЇ РЅРµ С…РѕС‡Сѓ РёРјРµС‚СЊ РЅРёРєР°РєРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ Рє СЌС‚РѕРјСѓ РґРµР»Сѓ. РўС‹ РјРѕР¶РµС€СЊ Р·Р°Р±С‹С‚СЊ Рѕ РЅР°С€РµР№ СЃРґРµР»РєРµ! РќРµ С…РѕС‡Сѓ РґР°Р¶Рµ РІСЃРїРѕРјРёРЅР°С‚СЊ РѕР± СЌС‚РѕРј!
 		MIS_Matteo_Gold = LOG_FAILED;
 		B_CheckLog();
 		AI_StopProcessInfos	(self);
@@ -491,15 +491,15 @@ FUNC VOID DIA_Matteo_GoldRunning_Info()
 	{
 		if (Npc_HasItems(Gritta, itmi_gold) < 100)
 		{
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_03"); //И? Были какие-нибудь проблемы?
-			AI_Output (other, self, "DIA_Matteo_GoldRunning_15_04"); //Ничего такого, о чем стоило бы говорить.
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_05"); //Хорошо! Ты выполнил свою часть сделки.
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_03"); //Р? Р‘С‹Р»Рё РєР°РєРёРµ-РЅРёР±СѓРґСЊ РїСЂРѕР±Р»РµРјС‹?
+			AI_Output (other, self, "DIA_Matteo_GoldRunning_15_04"); //РќРёС‡РµРіРѕ С‚Р°РєРѕРіРѕ, Рѕ С‡РµРј СЃС‚РѕРёР»Рѕ Р±С‹ РіРѕРІРѕСЂРёС‚СЊ.
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_05"); //РҐРѕСЂРѕС€Рѕ! РўС‹ РІС‹РїРѕР»РЅРёР» СЃРІРѕСЋ С‡Р°СЃС‚СЊ СЃРґРµР»РєРё.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_06"); //Ты хочешь заплатить за нее? Хм - я бы предпочел, чтобы ты выколотил эти деньги из нее!
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_07"); //Но все же - 100 золотых есть 100 золотых.
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_08"); //Ты выполнил свою часть сделки.
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_06"); //РўС‹ С…РѕС‡РµС€СЊ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° РЅРµРµ? РҐРј - СЏ Р±С‹ РїСЂРµРґРїРѕС‡РµР», С‡С‚РѕР±С‹ С‚С‹ РІС‹РєРѕР»РѕС‚РёР» СЌС‚Рё РґРµРЅСЊРіРё РёР· РЅРµРµ!
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_07"); //РќРѕ РІСЃРµ Р¶Рµ - 100 Р·РѕР»РѕС‚С‹С… РµСЃС‚СЊ 100 Р·РѕР»РѕС‚С‹С….
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_08"); //РўС‹ РІС‹РїРѕР»РЅРёР» СЃРІРѕСЋ С‡Р°СЃС‚СЊ СЃРґРµР»РєРё.
 		};
 		
 		MIS_Matteo_Gold = LOG_SUCCESS;
@@ -507,7 +507,7 @@ FUNC VOID DIA_Matteo_GoldRunning_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_09"); //У тебя проблемы со счетом? Я не вижу 100 золотых монет.
+		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_09"); //РЈ С‚РµР±СЏ РїСЂРѕР±Р»РµРјС‹ СЃРѕ СЃС‡РµС‚РѕРј? РЇ РЅРµ РІРёР¶Сѓ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	};
 };
 
@@ -522,7 +522,7 @@ instance DIA_Matteo_Zustimmung(C_INFO)
 	condition	= DIA_Matteo_Zustimmung_Condition;
 	information	= DIA_MAtteo_Zustimmung_Info;
 	permanent	= TRUE;
-	description = "Помоги мне стать учеником одного из мастеров!";
+	description = "РџРѕРјРѕРіРё РјРЅРµ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІ!";
 };          
 var int   DIA_Matteo_Zustimmung_perm;          
 FUNC INT DIA_Matteo_Zustimmung_Condition()
@@ -537,20 +537,20 @@ FUNC INT DIA_Matteo_Zustimmung_Condition()
 };
 FUNC VOID DIA_Matteo_Zustimmung_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_Zustimmung_15_00"); //Помоги мне стать учеником одного из мастеров!
+	AI_Output (other, self, "DIA_Matteo_Zustimmung_15_00"); //РџРѕРјРѕРіРё РјРЅРµ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІ!
 	
 	if (MIS_Matteo_Gold == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_01"); //Не волнуйся, я выполню свои обещания.
-		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_02"); //Другие мастера услышат от меня о тебе только хорошее.
+		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_01"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ, СЏ РІС‹РїРѕР»РЅСЋ СЃРІРѕРё РѕР±РµС‰Р°РЅРёСЏ.
+		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_02"); //Р”СЂСѓРіРёРµ РјР°СЃС‚РµСЂР° СѓСЃР»С‹С€Р°С‚ РѕС‚ РјРµРЅСЏ Рѕ С‚РµР±Рµ С‚РѕР»СЊРєРѕ С…РѕСЂРѕС€РµРµ.
 		
 		B_GivePlayerXP (XP_Zustimmung);
-		B_LogEntry (Topic_Lehrling,"Маттео даст мне свое одобрение, если я захочу стать учеником другого мастера.");
+		B_LogEntry (Topic_Lehrling,"РњР°С‚С‚РµРѕ РґР°СЃС‚ РјРЅРµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ, РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РґСЂСѓРіРѕРіРѕ РјР°СЃС‚РµСЂР°.");
 		DIA_Matteo_Zustimmung_perm = TRUE;
 	}
 	else //LOG_RUNNING
 	{
-		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_03"); //Всему своя очередь. Сначала выполни свою часть сделки и принеси мне золото!
+		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_03"); //Р’СЃРµРјСѓ СЃРІРѕСЏ РѕС‡РµСЂРµРґСЊ. РЎРЅР°С‡Р°Р»Р° РІС‹РїРѕР»РЅРё СЃРІРѕСЋ С‡Р°СЃС‚СЊ СЃРґРµР»РєРё Рё РїСЂРёРЅРµСЃРё РјРЅРµ Р·РѕР»РѕС‚Рѕ!
 	};
 };
 
@@ -564,7 +564,7 @@ INSTANCE DIA_Matteo_HowCanYouHelp (C_INFO)
 	condition	= DIA_Matteo_HowCanYouHelp_Condition;
 	information	= DIA_MAtteo_HowCanYouHelp_Info;
 	permanent	= FALSE;
-	description = "Как ИМЕННО ты собираешься помочь мне?";
+	description = "РљР°Рє РРњР•РќРќРћ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РїРѕРјРѕС‡СЊ РјРЅРµ?";
 };                       
 FUNC INT DIA_Matteo_HowCanYouHelp_Condition()
 {	
@@ -577,16 +577,16 @@ FUNC INT DIA_Matteo_HowCanYouHelp_Condition()
 };
 FUNC VOID DIA_Matteo_HowCanYouHelp_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_HowCanYouHelp_15_00"); //Как ИМЕННО ты собираешься помочь мне?
-	AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_01"); //Это просто. Я использую свое влияние, чтобы убедить других здешних мастеров взять тебя в ученики.
+	AI_Output (other, self, "DIA_Matteo_HowCanYouHelp_15_00"); //РљР°Рє РРњР•РќРќРћ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РїРѕРјРѕС‡СЊ РјРЅРµ?
+	AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_01"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ. РЇ РёСЃРїРѕР»СЊР·СѓСЋ СЃРІРѕРµ РІР»РёСЏРЅРёРµ, С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊ РґСЂСѓРіРёС… Р·РґРµС€РЅРёС… РјР°СЃС‚РµСЂРѕРІ РІР·СЏС‚СЊ С‚РµР±СЏ РІ СѓС‡РµРЅРёРєРё.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_02"); //Став учеником, ты автоматически станешь и гражданином города и сможешь попасть в верхний квартал. Помимо этого, ты сможешь что-нибудь заработать.
+		AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_02"); //РЎС‚Р°РІ СѓС‡РµРЅРёРєРѕРј, С‚С‹ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё СЃС‚Р°РЅРµС€СЊ Рё РіСЂР°Р¶РґР°РЅРёРЅРѕРј РіРѕСЂРѕРґР° Рё СЃРјРѕР¶РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р». РџРѕРјРёРјРѕ СЌС‚РѕРіРѕ, С‚С‹ СЃРјРѕР¶РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ.
 	};
 	
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling,"Маттео может помочь мне стать учеником одного из мастеровых.");
+	B_LogEntry (TOPIC_Lehrling,"РњР°С‚С‚РµРѕ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІС‹С….");
 };	
 
 // ************************************************************
@@ -599,7 +599,7 @@ INSTANCE DIA_Matteo_WoAlsLehrling (C_INFO)
 	condition	= DIA_Matteo_WoAlsLehrling_Condition;
 	information	= DIA_MAtteo_WoAlsLehrling_Info;
 	permanent	= FALSE;
-	description = "А к кому я могу поступить в ученики?";
+	description = "Рђ Рє РєРѕРјСѓ СЏ РјРѕРіСѓ РїРѕСЃС‚СѓРїРёС‚СЊ РІ СѓС‡РµРЅРёРєРё?";
 };                       
 FUNC INT DIA_Matteo_WoAlsLehrling_Condition()
 {	
@@ -611,16 +611,16 @@ FUNC INT DIA_Matteo_WoAlsLehrling_Condition()
 };
 FUNC VOID DIA_Matteo_WoAlsLehrling_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WoAlsLehrling_15_00"); //А к кому я могу поступить в ученики?
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_01"); //К любому мастеру на этой улице.
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_02"); //Это может быть кузнец Гарад, мастер-лучник Боспер, плотник Торбен или алхимик  Константино.
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_03"); //Один из них обязательно возьмет тебя.
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_04"); //Но важно, чтобы с этим были согласны другие мастера. Таков обычай Хориниса.
+	AI_Output (other, self, "DIA_Matteo_WoAlsLehrling_15_00"); //Рђ Рє РєРѕРјСѓ СЏ РјРѕРіСѓ РїРѕСЃС‚СѓРїРёС‚СЊ РІ СѓС‡РµРЅРёРєРё?
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_01"); //Рљ Р»СЋР±РѕРјСѓ РјР°СЃС‚РµСЂСѓ РЅР° СЌС‚РѕР№ СѓР»РёС†Рµ.
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_02"); //Р­С‚Рѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ РєСѓР·РЅРµС† Р“Р°СЂР°Рґ, РјР°СЃС‚РµСЂ-Р»СѓС‡РЅРёРє Р‘РѕСЃРїРµСЂ, РїР»РѕС‚РЅРёРє РўРѕСЂР±РµРЅ РёР»Рё Р°Р»С…РёРјРёРє  РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ.
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_03"); //РћРґРёРЅ РёР· РЅРёС… РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РІРѕР·СЊРјРµС‚ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_04"); //РќРѕ РІР°Р¶РЅРѕ, С‡С‚РѕР±С‹ СЃ СЌС‚РёРј Р±С‹Р»Рё СЃРѕРіР»Р°СЃРЅС‹ РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР°. РўР°РєРѕРІ РѕР±С‹С‡Р°Р№ РҐРѕСЂРёРЅРёСЃР°.
 	
 	Log_CreateTopic (Topic_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lehrling,LOG_RUNNING);
-	B_LogEntry (Topic_Lehrling,"Я могу стать учеником мастера-лучника Боспера, кузнеца Гарада, плотника Торбена или алхимика Константино.");
-	B_LogEntry (Topic_Lehrling,"Прежде чем я стану учеником, я должен получить одобрение других мастеров.");
+	B_LogEntry (Topic_Lehrling,"РЇ РјРѕРіСѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РјР°СЃС‚РµСЂР°-Р»СѓС‡РЅРёРєР° Р‘РѕСЃРїРµСЂР°, РєСѓР·РЅРµС†Р° Р“Р°СЂР°РґР°, РїР»РѕС‚РЅРёРєР° РўРѕСЂР±РµРЅР° РёР»Рё Р°Р»С…РёРјРёРєР° РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ.");
+	B_LogEntry (Topic_Lehrling,"РџСЂРµР¶РґРµ С‡РµРј СЏ СЃС‚Р°РЅСѓ СѓС‡РµРЅРёРєРѕРј, СЏ РґРѕР»Р¶РµРЅ РїРѕР»СѓС‡РёС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ РґСЂСѓРіРёС… РјР°СЃС‚РµСЂРѕРІ.");
 };
 // ************************************************************
 // 			  				WieZustimmung 			E6
@@ -632,7 +632,7 @@ INSTANCE DIA_Matteo_WieZustimmung (C_INFO)
 	condition	= DIA_Matteo_WieZustimmung_Condition;
 	information	= DIA_MAtteo_WieZustimmung_Info;
 	permanent	= FALSE;
-	description = "Как мне получить одобрение других мастеров?";
+	description = "РљР°Рє РјРЅРµ РїРѕР»СѓС‡РёС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ РґСЂСѓРіРёС… РјР°СЃС‚РµСЂРѕРІ?";
 };                       
 FUNC INT DIA_Matteo_WieZustimmung_Condition()
 {	
@@ -644,11 +644,11 @@ FUNC INT DIA_Matteo_WieZustimmung_Condition()
 };
 FUNC VOID DIA_Matteo_WieZustimmung_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WieZustimmung_15_00"); //Как мне получить одобрение других мастеров?
-	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_01"); //Ты просто должен убедить их. Иди и поговори с ними.
-	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_02"); //Но если хотя бы двое из них будут против тебя, тебе не поступить в ученики! Так что постарайся понравиться им!
+	AI_Output (other, self, "DIA_Matteo_WieZustimmung_15_00"); //РљР°Рє РјРЅРµ РїРѕР»СѓС‡РёС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ РґСЂСѓРіРёС… РјР°СЃС‚РµСЂРѕРІ?
+	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_01"); //РўС‹ РїСЂРѕСЃС‚Рѕ РґРѕР»Р¶РµРЅ СѓР±РµРґРёС‚СЊ РёС…. РРґРё Рё РїРѕРіРѕРІРѕСЂРё СЃ РЅРёРјРё.
+	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_02"); //РќРѕ РµСЃР»Рё С…РѕС‚СЏ Р±С‹ РґРІРѕРµ РёР· РЅРёС… Р±СѓРґСѓС‚ РїСЂРѕС‚РёРІ С‚РµР±СЏ, С‚РµР±Рµ РЅРµ РїРѕСЃС‚СѓРїРёС‚СЊ РІ СѓС‡РµРЅРёРєРё! РўР°Рє С‡С‚Рѕ РїРѕСЃС‚Р°СЂР°Р№СЃСЏ РїРѕРЅСЂР°РІРёС‚СЊСЃСЏ РёРј!
 	
-	B_LogEntry (Topic_Lehrling,"Я смогу получить одобрение мастеров, только если я проявлю себя с лучшей стороны перед ними.");
+	B_LogEntry (Topic_Lehrling,"РЇ СЃРјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ РјР°СЃС‚РµСЂРѕРІ, С‚РѕР»СЊРєРѕ РµСЃР»Рё СЏ РїСЂРѕСЏРІР»СЋ СЃРµР±СЏ СЃ Р»СѓС‡С€РµР№ СЃС‚РѕСЂРѕРЅС‹ РїРµСЂРµРґ РЅРёРјРё.");
 };	
 
 // ************************************************************
@@ -661,7 +661,7 @@ INSTANCE DIA_Matteo_WarumNichtBeiDir (C_INFO)
 	condition	= DIA_Matteo_WarumNichtBeiDir_Condition;
 	information	= DIA_MAtteo_WarumNichtBeiDir_Info;
 	permanent	= FALSE;
-	description = "А почему ТЫ не возьмешь меня в ученики?";
+	description = "Рђ РїРѕС‡РµРјСѓ РўР« РЅРµ РІРѕР·СЊРјРµС€СЊ РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё?";
 };                       
 FUNC INT DIA_Matteo_WarumNichtBeiDir_Condition()
 {	
@@ -673,13 +673,13 @@ FUNC INT DIA_Matteo_WarumNichtBeiDir_Condition()
 };
 FUNC VOID DIA_Matteo_WarumNichtBeiDir_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WarumNichtBeiDir_15_00"); //А почему ТЫ не возьмешь меня в ученики?
-	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_01"); //Я бы взял - но другие мастера не согласятся.
-	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_02"); //Я только недавно взял еще одного ученика.
+	AI_Output (other, self, "DIA_Matteo_WarumNichtBeiDir_15_00"); //Рђ РїРѕС‡РµРјСѓ РўР« РЅРµ РІРѕР·СЊРјРµС€СЊ РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё?
+	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_01"); //РЇ Р±С‹ РІР·СЏР» - РЅРѕ РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР° РЅРµ СЃРѕРіР»Р°СЃСЏС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_02"); //РЇ С‚РѕР»СЊРєРѕ РЅРµРґР°РІРЅРѕ РІР·СЏР» РµС‰Рµ РѕРґРЅРѕРіРѕ СѓС‡РµРЅРёРєР°.
 };	
 
 // ************************************************************
-// 			  				Andere Mцglichkeie 			E5
+// 			  				Andere MС†glichkeie 			E5
 // ************************************************************
 INSTANCE DIA_Matteo_OtherWay (C_INFO)
 {
@@ -688,7 +688,7 @@ INSTANCE DIA_Matteo_OtherWay (C_INFO)
 	condition	= DIA_Matteo_OtherWay_Condition;
 	information	= DIA_MAtteo_OtherWay_Info;
 	permanent	= FALSE;
-	description = "А есть другой способ попасть в верхний квартал?";
+	description = "Рђ РµСЃС‚СЊ РґСЂСѓРіРѕР№ СЃРїРѕСЃРѕР± РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?";
 };                       
 FUNC INT DIA_Matteo_OtherWay_Condition()
 {	
@@ -702,8 +702,8 @@ FUNC INT DIA_Matteo_OtherWay_Condition()
 };
 FUNC VOID DIA_Matteo_OtherWay_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_OtherWay_15_00"); //А есть другой способ попасть в верхний квартал?
-	AI_Output (self, other, "DIA_Matteo_OtherWay_09_01"); //Возможно... если я что-нибудь придумаю, я дам тебе знать.
+	AI_Output (other, self, "DIA_Matteo_OtherWay_15_00"); //Рђ РµСЃС‚СЊ РґСЂСѓРіРѕР№ СЃРїРѕСЃРѕР± РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?
+	AI_Output (self, other, "DIA_Matteo_OtherWay_09_01"); //Р’РѕР·РјРѕР¶РЅРѕ... РµСЃР»Рё СЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёРґСѓРјР°СЋ, СЏ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ.
 };	
 
 // ************************************************************
@@ -716,7 +716,7 @@ INSTANCE DIA_Matteo_Minenanteil (C_INFO)
 	condition	= DIA_Matteo_Minenanteil_Condition;
 	information	= DIA_MAtteo_Minenanteil_Info;
 
-	description = "У тебя среди других товаров есть и акции горнодобывающей компании.";
+	description = "РЈ С‚РµР±СЏ СЃСЂРµРґРё РґСЂСѓРіРёС… С‚РѕРІР°СЂРѕРІ РµСЃС‚СЊ Рё Р°РєС†РёРё РіРѕСЂРЅРѕРґРѕР±С‹РІР°СЋС‰РµР№ РєРѕРјРїР°РЅРёРё.";
 };   
                     
 FUNC INT DIA_Matteo_Minenanteil_Condition()
@@ -731,8 +731,8 @@ FUNC INT DIA_Matteo_Minenanteil_Condition()
 
 FUNC VOID DIA_Matteo_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_Minenanteil_15_00"); //Я вижу, у тебя среди других товаров есть и акции горнодобывающей компании. Кто продал их тебе?
-	AI_Output (self, other, "DIA_Matteo_Minenanteil_09_01"); //(нервно) Акции? Ох. И откуда они взялись? Понятия не имею, где я взял их. Клянусь, ваша честь.
+	AI_Output (other, self, "DIA_Matteo_Minenanteil_15_00"); //РЇ РІРёР¶Сѓ, Сѓ С‚РµР±СЏ СЃСЂРµРґРё РґСЂСѓРіРёС… С‚РѕРІР°СЂРѕРІ РµСЃС‚СЊ Рё Р°РєС†РёРё РіРѕСЂРЅРѕРґРѕР±С‹РІР°СЋС‰РµР№ РєРѕРјРїР°РЅРёРё. РљС‚Рѕ РїСЂРѕРґР°Р» РёС… С‚РµР±Рµ?
+	AI_Output (self, other, "DIA_Matteo_Minenanteil_09_01"); //(РЅРµСЂРІРЅРѕ) РђРєС†РёРё? РћС…. Р РѕС‚РєСѓРґР° РѕРЅРё РІР·СЏР»РёСЃСЊ? РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РіРґРµ СЏ РІР·СЏР» РёС…. РљР»СЏРЅСѓСЃСЊ, РІР°С€Р° С‡РµСЃС‚СЊ.
 	B_GivePlayerXP (XP_Ambient);
 };	
 

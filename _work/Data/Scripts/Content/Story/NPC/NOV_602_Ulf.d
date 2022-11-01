@@ -1,7 +1,7 @@
 INSTANCE NOV_602_Ulf (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Σλότ";
+	name 		= "Π£Π»ΡΡ„";
 	guild 		= GIL_NOV;
 	id 			= 602;
 	voice 		= 3;

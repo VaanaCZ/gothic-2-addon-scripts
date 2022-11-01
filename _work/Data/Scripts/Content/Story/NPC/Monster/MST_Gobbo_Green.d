@@ -5,7 +5,7 @@
 prototype Mst_Default_Gobbo_Green (C_NPC)			
 {
 	// ------ Monster -----
-	name							=	"Ãîáëèí";
+	name							=	"Ð“Ð¾Ð±Ð»Ð¸Ð½";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_GREEN;
 	level							=	4;
@@ -26,7 +26,7 @@ prototype Mst_Default_Gobbo_Green (C_NPC)
 	protection	[PROT_FLY]			=	20;
 	protection	[PROT_MAGIC]		=	0;
 
-	// ------ Damage Types ------						//entweder EIN damagetype oder mehrere damage[x], die dann addiert werden und getrennten Rüstungsabzug bekommen
+	// ------ Damage Types ------						//entweder EIN damagetype oder mehrere damage[x], die dann addiert werden und getrennten RÑŒstungsabzug bekommen
 	damagetype 						=	DAM_EDGE;
 //	damage		[DAM_INDEX_BLUNT]	=	0;
 //	damage		[DAM_INDEX_EDGE]	=	0;
@@ -74,7 +74,7 @@ INSTANCE Gobbo_Green (Mst_Default_Gobbo_Green)
 {
 	B_SetVisuals_Gobbo_Green();
 	
-	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR ÑŒber STR bestimmt (Gobbo ist als Monster im Fistmode)
 };
 
 
@@ -106,7 +106,7 @@ INSTANCE YGobbo_Green (Mst_Default_Gobbo_Green)
 
 	B_SetVisuals_Gobbo_Green();
 	
-	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR ÑŒber STR bestimmt (Gobbo ist als Monster im Fistmode)
 };
 
 

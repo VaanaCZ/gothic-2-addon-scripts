@@ -31,7 +31,7 @@ instance DIA_Grom_HALLO		(C_INFO)
 	condition	 = 	DIA_Grom_HALLO_Condition;
 	information	 = 	DIA_Grom_HALLO_Info;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Grom_HALLO_Condition ()
@@ -41,25 +41,25 @@ func int DIA_Grom_HALLO_Condition ()
 
 func void DIA_Grom_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Все в порядке?
-	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ах, незнакомый странник. Я очень занят. Что ты хочешь?
+	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //РђС…, РЅРµР·РЅР°РєРѕРјС‹Р№ СЃС‚СЂР°РЅРЅРёРє. РЇ РѕС‡РµРЅСЊ Р·Р°РЅСЏС‚. Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ?
 
 	Info_ClearChoices	(DIA_Grom_HALLO);
-	Info_AddChoice	(DIA_Grom_HALLO, "Что здесь интересного?", DIA_Grom_HALLO_waszusehen );
-	Info_AddChoice	(DIA_Grom_HALLO, "Что ты делаешь здесь?", DIA_Grom_HALLO_was );
+	Info_AddChoice	(DIA_Grom_HALLO, "Р§С‚Рѕ Р·РґРµСЃСЊ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ?", DIA_Grom_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Grom_HALLO, "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?", DIA_Grom_HALLO_was );
 };
 
 func void DIA_Grom_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //На что интересное стоит обратить внимание здесь?
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //Интересное - это хорошо сказано. Если ты углубишься в здешний лес, то наткнешься на очень злобных парней.
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Они около десяти футов высотой, волосатые и в очень дурном расположении духа. Так что лучше не ходи туда, если не считаешь, что достаточно силен.
+	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //РќР° С‡С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРµ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //РРЅС‚РµСЂРµСЃРЅРѕРµ - СЌС‚Рѕ С…РѕСЂРѕС€Рѕ СЃРєР°Р·Р°РЅРѕ. Р•СЃР»Рё С‚С‹ СѓРіР»СѓР±РёС€СЊСЃСЏ РІ Р·РґРµС€РЅРёР№ Р»РµСЃ, С‚Рѕ РЅР°С‚РєРЅРµС€СЊСЃСЏ РЅР° РѕС‡РµРЅСЊ Р·Р»РѕР±РЅС‹С… РїР°СЂРЅРµР№.
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //РћРЅРё РѕРєРѕР»Рѕ РґРµСЃСЏС‚Рё С„СѓС‚РѕРІ РІС‹СЃРѕС‚РѕР№, РІРѕР»РѕСЃР°С‚С‹Рµ Рё РІ РѕС‡РµРЅСЊ РґСѓСЂРЅРѕРј СЂР°СЃРїРѕР»РѕР¶РµРЅРёРё РґСѓС…Р°. РўР°Рє С‡С‚Рѕ Р»СѓС‡С€Рµ РЅРµ С…РѕРґРё С‚СѓРґР°, РµСЃР»Рё РЅРµ СЃС‡РёС‚Р°РµС€СЊ, С‡С‚Рѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ.
 };
 
 func void DIA_Grom_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //Чем ты занимаешься здесь?
-	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Ну, чем обычно занимаются дровосеки и охотники?
+	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //РќСѓ, С‡РµРј РѕР±С‹С‡РЅРѕ Р·Р°РЅРёРјР°СЋС‚СЃСЏ РґСЂРѕРІРѕСЃРµРєРё Рё РѕС…РѕС‚РЅРёРєРё?
 	Info_AddChoice	(DIA_Grom_HALLO, DIALOG_BACK, DIA_Grom_HALLO_BACK );
 };
 
@@ -79,7 +79,7 @@ INSTANCE DIA_Grom_AskTeacher (C_INFO)
 	condition	= DIA_Grom_AskTeacher_Condition;
 	information	= DIA_Grom_AskTeacher_Info;
 
-	description = "Ты можешь научить меня охотиться?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?";
 };                       
 
 FUNC INT DIA_Grom_AskTeacher_Condition()
@@ -92,12 +92,12 @@ FUNC INT DIA_Grom_AskTeacher_Condition()
 
 FUNC VOID DIA_Grom_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //Ты можешь научить меня охотиться?
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Конечно. Но сначала принеси мне приличной еды. Я умираю от голода.
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Я хочу бутыль молока, буханку хлеба и жирный окорок. И тогда я научу тебя всему, что сам знаю.
+	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //РљРѕРЅРµС‡РЅРѕ. РќРѕ СЃРЅР°С‡Р°Р»Р° РїСЂРёРЅРµСЃРё РјРЅРµ РїСЂРёР»РёС‡РЅРѕР№ РµРґС‹. РЇ СѓРјРёСЂР°СЋ РѕС‚ РіРѕР»РѕРґР°.
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //РЇ С…РѕС‡Сѓ Р±СѓС‚С‹Р»СЊ РјРѕР»РѕРєР°, Р±СѓС…Р°РЅРєСѓ С…Р»РµР±Р° Рё Р¶РёСЂРЅС‹Р№ РѕРєРѕСЂРѕРє. Р С‚РѕРіРґР° СЏ РЅР°СѓС‡Сѓ С‚РµР±СЏ РІСЃРµРјСѓ, С‡С‚Рѕ СЃР°Рј Р·РЅР°СЋ.
 	Log_CreateTopic (TOPIC_GromAskTeacher, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GromAskTeacher, LOG_RUNNING);
-	B_LogEntry (TOPIC_GromAskTeacher,"Охотник Гром научит меня всему, что знает, если я принесу ему бутылку молока, буханку хлеба и окорок."); 
+	B_LogEntry (TOPIC_GromAskTeacher,"РћС…РѕС‚РЅРёРє Р“СЂРѕРј РЅР°СѓС‡РёС‚ РјРµРЅСЏ РІСЃРµРјСѓ, С‡С‚Рѕ Р·РЅР°РµС‚, РµСЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ РµРјСѓ Р±СѓС‚С‹Р»РєСѓ РјРѕР»РѕРєР°, Р±СѓС…Р°РЅРєСѓ С…Р»РµР±Р° Рё РѕРєРѕСЂРѕРє."); 
 };
 
 
@@ -112,7 +112,7 @@ INSTANCE DIA_Grom_PayTeacher (C_INFO)
 	condition	= DIA_Grom_PayTeacher_Condition;
 	information	= DIA_Grom_PayTeacher_Info;
  
- 	description = "Вот еда, как ты просил.";
+ 	description = "Р’РѕС‚ РµРґР°, РєР°Рє С‚С‹ РїСЂРѕСЃРёР».";
 };                       
 
 FUNC INT DIA_Grom_PayTeacher_Condition()
@@ -130,8 +130,8 @@ FUNC VOID DIA_Grom_PayTeacher_Info()
 	B_GiveInvItems (other, self, Itfo_Milk, 1);
 	B_GiveInvItems (other, self, Itfo_Bread, 1);
 	B_GiveInvItems (other, self, Itfo_Bacon, 1);
-	AI_Output(other,self,"DIA_Grom_PayTeacher_15_00"); //Вот еда, как ты просил.
-	AI_Output(self,other,"DIA_Grom_PayTeacher_08_01"); //Фантастика. И что теперь?
+	AI_Output(other,self,"DIA_Grom_PayTeacher_15_00"); //Р’РѕС‚ РµРґР°, РєР°Рє С‚С‹ РїСЂРѕСЃРёР».
+	AI_Output(self,other,"DIA_Grom_PayTeacher_08_01"); //Р¤Р°РЅС‚Р°СЃС‚РёРєР°. Р С‡С‚Рѕ С‚РµРїРµСЂСЊ?
 	Grom_TeachAnimalTrophy = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -146,7 +146,7 @@ instance DIA_Grom_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grom_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grom_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Научи меня охотиться.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ.";
 };
 
 func int DIA_Grom_TEACHHUNTING_Condition ()
@@ -159,7 +159,7 @@ func int DIA_Grom_TEACHHUNTING_Condition ()
 
 func void DIA_Grom_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //Научи меня охотиться.
+	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ.
 		if 	(
 				(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
@@ -168,35 +168,35 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			)
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_01"); //Что ты хочешь узнать?
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_01"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 		
 
 			Info_AddChoice		(DIA_Grom_TEACHHUNTING, DIALOG_BACK, DIA_Grom_TEACHHUNTING_BACK);
 		
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Снятие шкур",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Grom_TEACHHUNTING_Fur);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("РЎРЅСЏС‚РёРµ С€РєСѓСЂ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Grom_TEACHHUNTING_Fur);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Удаление зубов",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Grom_TEACHHUNTING_Teeth);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ Р·СѓР±РѕРІ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Grom_TEACHHUNTING_Teeth);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Удаление сердца",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ СЃРµСЂРґС†Р°",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Удаление мандибул",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grom_TEACHHUNTING_Mandibles	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РјР°РЅРґРёР±СѓР»",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grom_TEACHHUNTING_Mandibles	);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Рог мракориса",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Р РѕРі РјСЂР°РєРѕСЂРёСЃР°",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Мне нечему учить тебя. Ты и так уже все знаешь.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //РњРЅРµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ Рё С‚Р°Рє СѓР¶Рµ РІСЃРµ Р·РЅР°РµС€СЊ.
 		};
 };
 
@@ -210,7 +210,7 @@ func void DIA_Grom_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Сделай разрез вдоль ног животного, чтобы ты мог снять с него шкуру. Снимай ее с зада наперед, а не наоборот.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //РЎРґРµР»Р°Р№ СЂР°Р·СЂРµР· РІРґРѕР»СЊ РЅРѕРі Р¶РёРІРѕС‚РЅРѕРіРѕ, С‡С‚РѕР±С‹ С‚С‹ РјРѕРі СЃРЅСЏС‚СЊ СЃ РЅРµРіРѕ С€РєСѓСЂСѓ. РЎРЅРёРјР°Р№ РµРµ СЃ Р·Р°РґР° РЅР°РїРµСЂРµРґ, Р° РЅРµ РЅР°РѕР±РѕСЂРѕС‚.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -220,7 +220,7 @@ func void DIA_Grom_TEACHHUNTING_Teeth ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Челюсть животного нужно вынимать осторожно, чтобы не разломить ее, когда она отделяется от черепа.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Р§РµР»СЋСЃС‚СЊ Р¶РёРІРѕС‚РЅРѕРіРѕ РЅСѓР¶РЅРѕ РІС‹РЅРёРјР°С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРѕ, С‡С‚РѕР±С‹ РЅРµ СЂР°Р·Р»РѕРјРёС‚СЊ РµРµ, РєРѕРіРґР° РѕРЅР° РѕС‚РґРµР»СЏРµС‚СЃСЏ РѕС‚ С‡РµСЂРµРїР°.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -230,7 +230,7 @@ func void DIA_Grom_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Ты можешь вырезать сердце животного, сделав глубокий разрез в его грудной клетке. Но обычно это имеет смысл только в случае особых животных или магических существ.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //РўС‹ РјРѕР¶РµС€СЊ РІС‹СЂРµР·Р°С‚СЊ СЃРµСЂРґС†Рµ Р¶РёРІРѕС‚РЅРѕРіРѕ, СЃРґРµР»Р°РІ РіР»СѓР±РѕРєРёР№ СЂР°Р·СЂРµР· РІ РµРіРѕ РіСЂСѓРґРЅРѕР№ РєР»РµС‚РєРµ. РќРѕ РѕР±С‹С‡РЅРѕ СЌС‚Рѕ РёРјРµРµС‚ СЃРјС‹СЃР» С‚РѕР»СЊРєРѕ РІ СЃР»СѓС‡Р°Рµ РѕСЃРѕР±С‹С… Р¶РёРІРѕС‚РЅС‹С… РёР»Рё РјР°РіРёС‡РµСЃРєРёС… СЃСѓС‰РµСЃС‚РІ.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -240,7 +240,7 @@ func void DIA_Grom_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Мандибулы краулера или полевого хищника нужно отделять при помощи очень прочного металлического рычага. Они очень глубоко сидят в черепе этих животных.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //РњР°РЅРґРёР±СѓР»С‹ РєСЂР°СѓР»РµСЂР° РёР»Рё РїРѕР»РµРІРѕРіРѕ С…РёС‰РЅРёРєР° РЅСѓР¶РЅРѕ РѕС‚РґРµР»СЏС‚СЊ РїСЂРё РїРѕРјРѕС‰Рё РѕС‡РµРЅСЊ РїСЂРѕС‡РЅРѕРіРѕ РјРµС‚Р°Р»Р»РёС‡РµСЃРєРѕРіРѕ СЂС‹С‡Р°РіР°. РћРЅРё РѕС‡РµРЅСЊ РіР»СѓР±РѕРєРѕ СЃРёРґСЏС‚ РІ С‡РµСЂРµРїРµ СЌС‚РёС… Р¶РёРІРѕС‚РЅС‹С….
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -250,7 +250,7 @@ func void DIA_Grom_TEACHHUNTING_ShadowHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Чтобы отделить рог мракориса, надави на него всем своим весом, подрезая при этом основание острым ножом.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Р§С‚РѕР±С‹ РѕС‚РґРµР»РёС‚СЊ СЂРѕРі РјСЂР°РєРѕСЂРёСЃР°, РЅР°РґР°РІРё РЅР° РЅРµРіРѕ РІСЃРµРј СЃРІРѕРёРј РІРµСЃРѕРј, РїРѕРґСЂРµР·Р°СЏ РїСЂРё СЌС‚РѕРј РѕСЃРЅРѕРІР°РЅРёРµ РѕСЃС‚СЂС‹Рј РЅРѕР¶РѕРј.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };

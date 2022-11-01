@@ -3,7 +3,7 @@
 // -------------------------------------------------------------------------
 func void B_Dragon_Undead_Bla()
 {
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_00"); //Ну, сынок? У тебя есть оригинал?
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_00"); //РќСѓ, СЃС‹РЅРѕРє? РЈ С‚РµР±СЏ РµСЃС‚СЊ РѕСЂРёРіРёРЅР°Р»?
 };
 
 // *************************************************************************
@@ -59,70 +59,70 @@ FUNC INT DIA_Dragon_Undead_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Undead_Hello_Info()
 {	
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_00"); //Тебе все-таки удалось найти меня. Я долго ждал твоего прихода.
-	AI_Output (other, self, "DIA_Dragon_Undead_Hello_15_01"); //Да ладно. Не ври, что ты все это планировал.
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_02"); //(громко смеется) Что ты знаешь о моих намерениях?
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_03"); //Разве я не послал к тебе Ищущих, чтобы навести тебя на мой след?
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_04"); //Разве я не оставлял знаки о моем присутствии, столь явные, что ты не мог не заметить их?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_00"); //РўРµР±Рµ РІСЃРµ-С‚Р°РєРё СѓРґР°Р»РѕСЃСЊ РЅР°Р№С‚Рё РјРµРЅСЏ. РЇ РґРѕР»РіРѕ Р¶РґР°Р» С‚РІРѕРµРіРѕ РїСЂРёС…РѕРґР°.
+	AI_Output (other, self, "DIA_Dragon_Undead_Hello_15_01"); //Р”Р° Р»Р°РґРЅРѕ. РќРµ РІСЂРё, С‡С‚Рѕ С‚С‹ РІСЃРµ СЌС‚Рѕ РїР»Р°РЅРёСЂРѕРІР°Р».
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_02"); //(РіСЂРѕРјРєРѕ СЃРјРµРµС‚СЃСЏ) Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РјРѕРёС… РЅР°РјРµСЂРµРЅРёСЏС…?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_03"); //Р Р°Р·РІРµ СЏ РЅРµ РїРѕСЃР»Р°Р» Рє С‚РµР±Рµ РС‰СѓС‰РёС…, С‡С‚РѕР±С‹ РЅР°РІРµСЃС‚Рё С‚РµР±СЏ РЅР° РјРѕР№ СЃР»РµРґ?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_04"); //Р Р°Р·РІРµ СЏ РЅРµ РѕСЃС‚Р°РІР»СЏР» Р·РЅР°РєРё Рѕ РјРѕРµРј РїСЂРёСЃСѓС‚СЃС‚РІРёРё, СЃС‚РѕР»СЊ СЏРІРЅС‹Рµ, С‡С‚Рѕ С‚С‹ РЅРµ РјРѕРі РЅРµ Р·Р°РјРµС‚РёС‚СЊ РёС…?
 
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_05"); //А разве драконьи яйца, из которых сделаны твои доспехи, не помогли тебе добраться до меня?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_05"); //Рђ СЂР°Р·РІРµ РґСЂР°РєРѕРЅСЊРё СЏР№С†Р°, РёР· РєРѕС‚РѕСЂС‹С… СЃРґРµР»Р°РЅС‹ С‚РІРѕРё РґРѕСЃРїРµС…Рё, РЅРµ РїРѕРјРѕРіР»Рё С‚РµР±Рµ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РјРµРЅСЏ?
 	};
 
 	if (hero.guild == GIL_PAL)
 	{	
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_06"); //Разве обращенные паладины были недостаточной причиной для тебя, чтобы искать силу, управляющую ими?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_06"); //Р Р°Р·РІРµ РѕР±СЂР°С‰РµРЅРЅС‹Рµ РїР°Р»Р°РґРёРЅС‹ Р±С‹Р»Рё РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕР№ РїСЂРёС‡РёРЅРѕР№ РґР»СЏ С‚РµР±СЏ, С‡С‚РѕР±С‹ РёСЃРєР°С‚СЊ СЃРёР»Сѓ, СѓРїСЂР°РІР»СЏСЋС‰СѓСЋ РёРјРё?
 	};
 
 	if (hero.guild == GIL_KDF)
 	{	
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_07"); //Разве одержимые из  твоего племени были недостаточной причиной для тебя, чтобы искать силу, управляющую ими?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_07"); //Р Р°Р·РІРµ РѕРґРµСЂР¶РёРјС‹Рµ РёР·  С‚РІРѕРµРіРѕ РїР»РµРјРµРЅРё Р±С‹Р»Рё РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕР№ РїСЂРёС‡РёРЅРѕР№ РґР»СЏ С‚РµР±СЏ, С‡С‚РѕР±С‹ РёСЃРєР°С‚СЊ СЃРёР»Сѓ, СѓРїСЂР°РІР»СЏСЋС‰СѓСЋ РёРјРё?
 	};
 
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_08"); //Как бы ты не изворачивался, ты не можешь поспорить со всем этим.
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_08"); //РљР°Рє Р±С‹ С‚С‹ РЅРµ РёР·РІРѕСЂР°С‡РёРІР°Р»СЃСЏ, С‚С‹ РЅРµ РјРѕР¶РµС€СЊ РїРѕСЃРїРѕСЂРёС‚СЊ СЃРѕ РІСЃРµРј СЌС‚РёРј.
 	
 	//ADDON
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_01"); //Есть только одна вещь, которая не была предопределена! 
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_02"); //Ты убил одного из моих слуг! Он должен был нести коготь.
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_03"); //Как я вижу, теперь его носишь ты. За это бесчинство ты сейчас умрешь!
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_01"); //Р•СЃС‚СЊ С‚РѕР»СЊРєРѕ РѕРґРЅР° РІРµС‰СЊ, РєРѕС‚РѕСЂР°СЏ РЅРµ Р±С‹Р»Р° РїСЂРµРґРѕРїСЂРµРґРµР»РµРЅР°! 
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_02"); //РўС‹ СѓР±РёР» РѕРґРЅРѕРіРѕ РёР· РјРѕРёС… СЃР»СѓРі! РћРЅ РґРѕР»Р¶РµРЅ Р±С‹Р» РЅРµСЃС‚Рё РєРѕРіРѕС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_03"); //РљР°Рє СЏ РІРёР¶Сѓ, С‚РµРїРµСЂСЊ РµРіРѕ РЅРѕСЃРёС€СЊ С‚С‹. Р—Р° СЌС‚Рѕ Р±РµСЃС‡РёРЅСЃС‚РІРѕ С‚С‹ СЃРµР№С‡Р°СЃ СѓРјСЂРµС€СЊ!
 	
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Хватит болтать.", DIA_Dragon_Undead_Hello_attack );
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "По чьему повелению ты ведешь своих прихвостней на войну против человечества?", DIA_Dragon_Undead_Hello_Auftraggeber );
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Зачем ты здесь?", DIA_Dragon_Undead_Hello_warum );
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Кто ты?", DIA_Dragon_Undead_Hello_wer );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "РҐРІР°С‚РёС‚ Р±РѕР»С‚Р°С‚СЊ.", DIA_Dragon_Undead_Hello_attack );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "РџРѕ С‡СЊРµРјСѓ РїРѕРІРµР»РµРЅРёСЋ С‚С‹ РІРµРґРµС€СЊ СЃРІРѕРёС… РїСЂРёС…РІРѕСЃС‚РЅРµР№ РЅР° РІРѕР№РЅСѓ РїСЂРѕС‚РёРІ С‡РµР»РѕРІРµС‡РµСЃС‚РІР°?", DIA_Dragon_Undead_Hello_Auftraggeber );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Р—Р°С‡РµРј С‚С‹ Р·РґРµСЃСЊ?", DIA_Dragon_Undead_Hello_warum );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "РљС‚Рѕ С‚С‹?", DIA_Dragon_Undead_Hello_wer );
 
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Сейчас мой враг - дракон-нежить. Я должен убить его, прежде сем смогу покинуть этот проклятый остров."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"РЎРµР№С‡Р°СЃ РјРѕР№ РІСЂР°Рі - РґСЂР°РєРѕРЅ-РЅРµР¶РёС‚СЊ. РЇ РґРѕР»Р¶РµРЅ СѓР±РёС‚СЊ РµРіРѕ, РїСЂРµР¶РґРµ СЃРµРј СЃРјРѕРіСѓ РїРѕРєРёРЅСѓС‚СЊ СЌС‚РѕС‚ РїСЂРѕРєР»СЏС‚С‹Р№ РѕСЃС‚СЂРѕРІ."); 
 };
 func void DIA_Dragon_Undead_Hello_wer ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_00"); //Кто ты?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_01"); //(смеется) Ты еще не устал задавать этот вопрос? Поищи внутри себя, глупец. Ты поймешь, кто я.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_02"); //У меня нет имени. Так же, как нет имени и у тебя.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_03"); //Моим создателем мне дана божественная сила. Также как ты владеешь силой, данной тебе твоим богом.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_01"); //(СЃРјРµРµС‚СЃСЏ) РўС‹ РµС‰Рµ РЅРµ СѓСЃС‚Р°Р» Р·Р°РґР°РІР°С‚СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ? РџРѕРёС‰Рё РІРЅСѓС‚СЂРё СЃРµР±СЏ, РіР»СѓРїРµС†. РўС‹ РїРѕР№РјРµС€СЊ, РєС‚Рѕ СЏ.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_02"); //РЈ РјРµРЅСЏ РЅРµС‚ РёРјРµРЅРё. РўР°Рє Р¶Рµ, РєР°Рє РЅРµС‚ РёРјРµРЅРё Рё Сѓ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_03"); //РњРѕРёРј СЃРѕР·РґР°С‚РµР»РµРј РјРЅРµ РґР°РЅР° Р±РѕР¶РµСЃС‚РІРµРЅРЅР°СЏ СЃРёР»Р°. РўР°РєР¶Рµ РєР°Рє С‚С‹ РІР»Р°РґРµРµС€СЊ СЃРёР»РѕР№, РґР°РЅРЅРѕР№ С‚РµР±Рµ С‚РІРѕРёРј Р±РѕРіРѕРј.
 
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_04"); //Моя судьба - уничтожение этого мира.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_04"); //РњРѕСЏ СЃСѓРґСЊР±Р° - СѓРЅРёС‡С‚РѕР¶РµРЅРёРµ СЌС‚РѕРіРѕ РјРёСЂР°.
 	
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_05"); //Так же, как твоя судьба определяется прямотой и добродетелями паладина.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_05"); //РўР°Рє Р¶Рµ, РєР°Рє С‚РІРѕСЏ СЃСѓРґСЊР±Р° РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ РїСЂСЏРјРѕС‚РѕР№ Рё РґРѕР±СЂРѕРґРµС‚РµР»СЏРјРё РїР°Р»Р°РґРёРЅР°.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_06"); //Так же, как твоя рука несет смерть определенным созданиям, охотник на драконов.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_06"); //РўР°Рє Р¶Рµ, РєР°Рє С‚РІРѕСЏ СЂСѓРєР° РЅРµСЃРµС‚ СЃРјРµСЂС‚СЊ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рј СЃРѕР·РґР°РЅРёСЏРј, РѕС…РѕС‚РЅРёРє РЅР° РґСЂР°РєРѕРЅРѕРІ.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_07"); //Так же, как твоя судьба - проповедовать веру в Инноса, Маг Огня.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_07"); //РўР°Рє Р¶Рµ, РєР°Рє С‚РІРѕСЏ СЃСѓРґСЊР±Р° - РїСЂРѕРїРѕРІРµРґРѕРІР°С‚СЊ РІРµСЂСѓ РІ РРЅРЅРѕСЃР°, РњР°Рі РћРіРЅСЏ.
 		};
 
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_08"); //Разве ты не ощущаешь связь, которая соединяет нас? Да. Ты знаешь кто я.
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_09"); //(смущенно) Нет. Этого не может быть. Ксардас всегда говорил ...
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_10"); //Ксардас слаб, и не представляет угрозы для меня. Ты один достоин противостоять мне.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_11"); //Так предопределено. Пришло время принять свою судьбу.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_08"); //Р Р°Р·РІРµ С‚С‹ РЅРµ РѕС‰СѓС‰Р°РµС€СЊ СЃРІСЏР·СЊ, РєРѕС‚РѕСЂР°СЏ СЃРѕРµРґРёРЅСЏРµС‚ РЅР°СЃ? Р”Р°. РўС‹ Р·РЅР°РµС€СЊ РєС‚Рѕ СЏ.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_09"); //(СЃРјСѓС‰РµРЅРЅРѕ) РќРµС‚. Р­С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ. РљСЃР°СЂРґР°СЃ РІСЃРµРіРґР° РіРѕРІРѕСЂРёР» ...
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_10"); //РљСЃР°СЂРґР°СЃ СЃР»Р°Р±, Рё РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ СѓРіСЂРѕР·С‹ РґР»СЏ РјРµРЅСЏ. РўС‹ РѕРґРёРЅ РґРѕСЃС‚РѕРёРЅ РїСЂРѕС‚РёРІРѕСЃС‚РѕСЏС‚СЊ РјРЅРµ.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_11"); //РўР°Рє РїСЂРµРґРѕРїСЂРµРґРµР»РµРЅРѕ. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїСЂРёРЅСЏС‚СЊ СЃРІРѕСЋ СЃСѓРґСЊР±Сѓ.
 	
 	
 
@@ -130,32 +130,32 @@ func void DIA_Dragon_Undead_Hello_wer ()
 
 func void DIA_Dragon_Undead_Hello_warum ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_warum_15_00"); //Зачем ты здесь?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_01"); //Божественность, дарованная мне, вдохновляет меня погрузить этот мир в море жестокости.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_02"); //Только когда последний оплот праведности падет, смогу я, наконец, найти покой.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_warum_15_00"); //Р—Р°С‡РµРј С‚С‹ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_01"); //Р‘РѕР¶РµСЃС‚РІРµРЅРЅРѕСЃС‚СЊ, РґР°СЂРѕРІР°РЅРЅР°СЏ РјРЅРµ, РІРґРѕС…РЅРѕРІР»СЏРµС‚ РјРµРЅСЏ РїРѕРіСЂСѓР·РёС‚СЊ СЌС‚РѕС‚ РјРёСЂ РІ РјРѕСЂРµ Р¶РµСЃС‚РѕРєРѕСЃС‚Рё.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_02"); //РўРѕР»СЊРєРѕ РєРѕРіРґР° РїРѕСЃР»РµРґРЅРёР№ РѕРїР»РѕС‚ РїСЂР°РІРµРґРЅРѕСЃС‚Рё РїР°РґРµС‚, СЃРјРѕРіСѓ СЏ, РЅР°РєРѕРЅРµС†, РЅР°Р№С‚Рё РїРѕРєРѕР№.
 
 };
 
 func void DIA_Dragon_Undead_Hello_Auftraggeber ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_Auftraggeber_15_00"); //По чьему повелению ты ведешь своих прихвостней на войну против человечества?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_01"); //Мой хозяин - Владыка Ночи. Ты знаешь его. Ты можешь слышать его зов.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_03"); //Мои армии поднимутся из-под земли с его именем на устах и накроют этот мир покровом тьмы.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_Auftraggeber_15_00"); //РџРѕ С‡СЊРµРјСѓ РїРѕРІРµР»РµРЅРёСЋ С‚С‹ РІРµРґРµС€СЊ СЃРІРѕРёС… РїСЂРёС…РІРѕСЃС‚РЅРµР№ РЅР° РІРѕР№РЅСѓ РїСЂРѕС‚РёРІ С‡РµР»РѕРІРµС‡РµСЃС‚РІР°?
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_01"); //РњРѕР№ С…РѕР·СЏРёРЅ - Р’Р»Р°РґС‹РєР° РќРѕС‡Рё. РўС‹ Р·РЅР°РµС€СЊ РµРіРѕ. РўС‹ РјРѕР¶РµС€СЊ СЃР»С‹С€Р°С‚СЊ РµРіРѕ Р·РѕРІ.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_03"); //РњРѕРё Р°СЂРјРёРё РїРѕРґРЅРёРјСѓС‚СЃСЏ РёР·-РїРѕРґ Р·РµРјР»Рё СЃ РµРіРѕ РёРјРµРЅРµРј РЅР° СѓСЃС‚Р°С… Рё РЅР°РєСЂРѕСЋС‚ СЌС‚РѕС‚ РјРёСЂ РїРѕРєСЂРѕРІРѕРј С‚СЊРјС‹.
 };
 
 func void DIA_Dragon_Undead_Hello_attack ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_attack_15_00"); //Хватит болтать. Я загоню тебя обратно под камень, из-под которого ты вылез, монстр.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_01"); //(смеется) Ты еще не готов победить меня. Какое-то мгновение отделяет меня от достижения моей цели.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_attack_15_00"); //РҐРІР°С‚РёС‚ Р±РѕР»С‚Р°С‚СЊ. РЇ Р·Р°РіРѕРЅСЋ С‚РµР±СЏ РѕР±СЂР°С‚РЅРѕ РїРѕРґ РєР°РјРµРЅСЊ, РёР·-РїРѕРґ РєРѕС‚РѕСЂРѕРіРѕ С‚С‹ РІС‹Р»РµР·, РјРѕРЅСЃС‚СЂ.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_01"); //(СЃРјРµРµС‚СЃСЏ) РўС‹ РµС‰Рµ РЅРµ РіРѕС‚РѕРІ РїРѕР±РµРґРёС‚СЊ РјРµРЅСЏ. РљР°РєРѕРµ-С‚Рѕ РјРіРЅРѕРІРµРЅРёРµ РѕС‚РґРµР»СЏРµС‚ РјРµРЅСЏ РѕС‚ РґРѕСЃС‚РёР¶РµРЅРёСЏ РјРѕРµР№ С†РµР»Рё.
 	//ADDON
 	if (C_ScHasEquippedBeliarsWeapon())
 	|| (C_ScHasReadiedBeliarsWeapon())
 	|| (C_ScHasBeliarsRune())
 	{
-		AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_04"); //Ты действительно веришь, что можешь ранить меня когтем? (смеется)
+		AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_04"); //РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РІРµСЂРёС€СЊ, С‡С‚Рѕ РјРѕР¶РµС€СЊ СЂР°РЅРёС‚СЊ РјРµРЅСЏ РєРѕРіС‚РµРј? (СЃРјРµРµС‚СЃСЏ)
 	};
 	//ADDON ENDE
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_02"); //Твои кости помогут мне выпустить ветра смерти в этот мир.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_02"); //РўРІРѕРё РєРѕСЃС‚Рё РїРѕРјРѕРіСѓС‚ РјРЅРµ РІС‹РїСѓСЃС‚РёС‚СЊ РІРµС‚СЂР° СЃРјРµСЂС‚Рё РІ СЌС‚РѕС‚ РјРёСЂ.
 		
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 

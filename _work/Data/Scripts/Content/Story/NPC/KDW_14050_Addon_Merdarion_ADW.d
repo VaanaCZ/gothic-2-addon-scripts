@@ -1,7 +1,7 @@
 INSTANCE KDW_14050_Addon_Merdarion_ADW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Мердарион";
+	name 		= "РњРµСЂРґР°СЂРёРѕРЅ";
 	guild 		= GIL_KDW; 
 	id 			= 14050;
 	voice 		= 6;

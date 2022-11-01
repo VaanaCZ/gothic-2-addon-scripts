@@ -66,7 +66,7 @@ instance DIA_Coragon_HALLO		(C_INFO)
 	condition	 = 	DIA_Coragon_HALLO_Condition;
 	information	 = 	DIA_Coragon_HALLO_Info;
 	permanent    =  FALSE;
-	description	 = 	"Могу я выпить здесь?";
+	description	 = 	"РњРѕРіСѓ СЏ РІС‹РїРёС‚СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Coragon_HALLO_Condition ()
@@ -76,11 +76,11 @@ func int DIA_Coragon_HALLO_Condition ()
 
 func void DIA_Coragon_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Coragon_HALLO_15_00"); //Могу я выпить здесь?
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_00"); //Если у тебя есть деньги, ты здесь можешь даже поесть.
+	AI_Output (other, self, "DIA_Coragon_HALLO_15_00"); //РњРѕРіСѓ СЏ РІС‹РїРёС‚СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_00"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґРµРЅСЊРіРё, С‚С‹ Р·РґРµСЃСЊ РјРѕР¶РµС€СЊ РґР°Р¶Рµ РїРѕРµСЃС‚СЊ.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Я могу покупать еду и питье у трактирщика Корагона.");
+	B_LogEntry (Topic_CityTrader,"РЇ РјРѕРіСѓ РїРѕРєСѓРїР°С‚СЊ РµРґСѓ Рё РїРёС‚СЊРµ Сѓ С‚СЂР°РєС‚РёСЂС‰РёРєР° РљРѕСЂР°РіРѕРЅР°.");
 };
 
 // *********************************************************
@@ -93,7 +93,7 @@ instance DIA_Coragon_Trade		(C_INFO)
 	condition	 = 	DIA_Coragon_Trade_Condition;
 	information	 = 	DIA_Coragon_Trade_Info;
 	permanent    =  TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade 		 =  TRUE;
 };
 func int DIA_Coragon_Trade_Condition ()
@@ -106,7 +106,7 @@ func int DIA_Coragon_Trade_Condition ()
 func void DIA_Coragon_Trade_Info () //FIXME_FILER NOCH ESSEN IN INV
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Coragon_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Coragon_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 
 // *********************************************************
@@ -119,7 +119,7 @@ instance DIA_Coragon_WhatsUp	(C_INFO)
 	condition	 = 	DIA_Coragon_WhatsUp_Condition;
 	information	 = 	DIA_Coragon_WhatsUp_Info;
 	permanent    =  FALSE;
-	description	 = 	"Как идут дела?";
+	description	 = 	"РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 	
 };
 func int DIA_Coragon_WhatsUp_Condition ()
@@ -131,14 +131,14 @@ func int DIA_Coragon_WhatsUp_Condition ()
 };
 func void DIA_Coragon_WhatsUp_Info ()
 {
-	AI_Output (other, self, "DIA_Coragon_Gelaber_15_00"); //Как идут дела?
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_01"); //А, не спрашивай. На висельной площади по приказу лорда Андре раздают бесплатное пиво.
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_02"); //Ко мне практически никто не заходит. Ну, кроме этих богачей из верхнего квартала.
-	AI_Output (other, self, "DIA_Coragon_Add_15_03"); //А что с ними не так?
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_04"); //(смеется) Некоторые из этих франтов ужасно действуют на нервы.
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_05"); //Взять хотя бы Валентино. Я его просто не переношу.
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_06"); //Но клиентов мне выбирать не приходится. Сейчас мне дорога каждая монетка.
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_07"); //Все, что мне удалось скопить, у меня украли вместе с моим серебром.
+	AI_Output (other, self, "DIA_Coragon_Gelaber_15_00"); //РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_01"); //Рђ, РЅРµ СЃРїСЂР°С€РёРІР°Р№. РќР° РІРёСЃРµР»СЊРЅРѕР№ РїР»РѕС‰Р°РґРё РїРѕ РїСЂРёРєР°Р·Сѓ Р»РѕСЂРґР° РђРЅРґСЂРµ СЂР°Р·РґР°СЋС‚ Р±РµСЃРїР»Р°С‚РЅРѕРµ РїРёРІРѕ.
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_02"); //РљРѕ РјРЅРµ РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРёРєС‚Рѕ РЅРµ Р·Р°С…РѕРґРёС‚. РќСѓ, РєСЂРѕРјРµ СЌС‚РёС… Р±РѕРіР°С‡РµР№ РёР· РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р°.
+	AI_Output (other, self, "DIA_Coragon_Add_15_03"); //Рђ С‡С‚Рѕ СЃ РЅРёРјРё РЅРµ С‚Р°Рє?
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_04"); //(СЃРјРµРµС‚СЃСЏ) РќРµРєРѕС‚РѕСЂС‹Рµ РёР· СЌС‚РёС… С„СЂР°РЅС‚РѕРІ СѓР¶Р°СЃРЅРѕ РґРµР№СЃС‚РІСѓСЋС‚ РЅР° РЅРµСЂРІС‹.
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_05"); //Р’Р·СЏС‚СЊ С…РѕС‚СЏ Р±С‹ Р’Р°Р»РµРЅС‚РёРЅРѕ. РЇ РµРіРѕ РїСЂРѕСЃС‚Рѕ РЅРµ РїРµСЂРµРЅРѕС€Сѓ.
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_06"); //РќРѕ РєР»РёРµРЅС‚РѕРІ РјРЅРµ РІС‹Р±РёСЂР°С‚СЊ РЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ. РЎРµР№С‡Р°СЃ РјРЅРµ РґРѕСЂРѕРіР° РєР°Р¶РґР°СЏ РјРѕРЅРµС‚РєР°.
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_07"); //Р’СЃРµ, С‡С‚Рѕ РјРЅРµ СѓРґР°Р»РѕСЃСЊ СЃРєРѕРїРёС‚СЊ, Сѓ РјРµРЅСЏ СѓРєСЂР°Р»Рё РІРјРµСЃС‚Рµ СЃ РјРѕРёРј СЃРµСЂРµР±СЂРѕРј.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -151,7 +151,7 @@ instance DIA_Addon_Coragon_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Coragon_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Coragon_MissingPeople_Info;
 
-	description	 = 	"Что ты знаешь о пропавших людях?.";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…?.";
 };
 
 func int DIA_Addon_Coragon_MissingPeople_Condition ()
@@ -165,18 +165,18 @@ func int DIA_Addon_Coragon_MissingPeople_Condition ()
 
 func void DIA_Addon_Coragon_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Coragon_MissingPeople_15_00"); //Что ты знаешь о пропавших людях?.
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_01"); //°Я слышал, что многие из них пропали в районе порта. Неудивительно, если учитывать, что там творится. 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_02"); //°Пропал даже ученик плотника Торбена из нижней части города.  
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_03"); //°Хакон, один из рыночных торговцев, рассказал мне очень странную историю. 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_04"); //°Он говорил, что каждый день этого он встречал одного парня, а потом тот словно исчез с лица земли. Хакон даже обратился в ополчение. 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_05"); //°Горожане начинают паниковать. Не понимаю, почему это происходит. Думаю, все это чепуха.  
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_06"); //°Жизнь в Хоринисе непростая, но за воротами еще опаснее.   
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_07"); //Те, кто не остается в городе, рано или поздно попадет в руки к бандитам или в зубы к диким животным. Все просто.  
+	AI_Output	(other, self, "DIA_Addon_Coragon_MissingPeople_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…?.
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_01"); //В°РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ РјРЅРѕРіРёРµ РёР· РЅРёС… РїСЂРѕРїР°Р»Рё РІ СЂР°Р№РѕРЅРµ РїРѕСЂС‚Р°. РќРµСѓРґРёРІРёС‚РµР»СЊРЅРѕ, РµСЃР»Рё СѓС‡РёС‚С‹РІР°С‚СЊ, С‡С‚Рѕ С‚Р°Рј С‚РІРѕСЂРёС‚СЃСЏ. 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_02"); //В°РџСЂРѕРїР°Р» РґР°Р¶Рµ СѓС‡РµРЅРёРє РїР»РѕС‚РЅРёРєР° РўРѕСЂР±РµРЅР° РёР· РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.  
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_03"); //В°РҐР°РєРѕРЅ, РѕРґРёРЅ РёР· СЂС‹РЅРѕС‡РЅС‹С… С‚РѕСЂРіРѕРІС†РµРІ, СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ РѕС‡РµРЅСЊ СЃС‚СЂР°РЅРЅСѓСЋ РёСЃС‚РѕСЂРёСЋ. 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_04"); //В°РћРЅ РіРѕРІРѕСЂРёР», С‡С‚Рѕ РєР°Р¶РґС‹Р№ РґРµРЅСЊ СЌС‚РѕРіРѕ РѕРЅ РІСЃС‚СЂРµС‡Р°Р» РѕРґРЅРѕРіРѕ РїР°СЂРЅСЏ, Р° РїРѕС‚РѕРј С‚РѕС‚ СЃР»РѕРІРЅРѕ РёСЃС‡РµР· СЃ Р»РёС†Р° Р·РµРјР»Рё. РҐР°РєРѕРЅ РґР°Р¶Рµ РѕР±СЂР°С‚РёР»СЃСЏ РІ РѕРїРѕР»С‡РµРЅРёРµ. 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_05"); //В°Р“РѕСЂРѕР¶Р°РЅРµ РЅР°С‡РёРЅР°СЋС‚ РїР°РЅРёРєРѕРІР°С‚СЊ. РќРµ РїРѕРЅРёРјР°СЋ, РїРѕС‡РµРјСѓ СЌС‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚. Р”СѓРјР°СЋ, РІСЃРµ СЌС‚Рѕ С‡РµРїСѓС…Р°.  
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_06"); //В°Р–РёР·РЅСЊ РІ РҐРѕСЂРёРЅРёСЃРµ РЅРµРїСЂРѕСЃС‚Р°СЏ, РЅРѕ Р·Р° РІРѕСЂРѕС‚Р°РјРё РµС‰Рµ РѕРїР°СЃРЅРµРµ.   
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_07"); //РўРµ, РєС‚Рѕ РЅРµ РѕСЃС‚Р°РµС‚СЃСЏ РІ РіРѕСЂРѕРґРµ, СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ РїРѕРїР°РґРµС‚ РІ СЂСѓРєРё Рє Р±Р°РЅРґРёС‚Р°Рј РёР»Рё РІ Р·СѓР±С‹ Рє РґРёРєРёРј Р¶РёРІРѕС‚РЅС‹Рј. Р’СЃРµ РїСЂРѕСЃС‚Рѕ.  
 	
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Хакон, торговец на рыночной площади, и плотник Торбен знают что-то о пропавших людях."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"РҐР°РєРѕРЅ, С‚РѕСЂРіРѕРІРµС† РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё, Рё РїР»РѕС‚РЅРёРє РўРѕСЂР±РµРЅ Р·РЅР°СЋС‚ С‡С‚Рѕ-С‚Рѕ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…."); 
 };
 
 // *********************************************************
@@ -189,7 +189,7 @@ instance DIA_Coragon_Bestohlen	(C_INFO)
 	condition	 = 	DIA_Coragon_Bestohlen_Condition;
 	information	 = 	DIA_Coragon_Bestohlen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Тебя ограбили?";
+	description	 = 	"РўРµР±СЏ РѕРіСЂР°Р±РёР»Рё?";
 	
 };
 func int DIA_Coragon_Bestohlen_Condition ()
@@ -201,10 +201,10 @@ func int DIA_Coragon_Bestohlen_Condition ()
 };
 func void DIA_Coragon_Bestohlen_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_08"); //Тебя ограбили?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_09"); //Да, некоторое время назад. Тем вечером было довольно людно, и я только и делал, что разносил пиво.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_10"); //От стойки я надолго не отлучался, но этим подонкам хватило и небольшого времени.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_11"); //Я рассказал о краже ополчению, но они, конечно же, никого не нашли. Эти лентяи предпочитают накачиваться бесплатным пивом.
+	AI_Output (other, self,"DIA_Coragon_Add_15_08"); //РўРµР±СЏ РѕРіСЂР°Р±РёР»Рё?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_09"); //Р”Р°, РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РЅР°Р·Р°Рґ. РўРµРј РІРµС‡РµСЂРѕРј Р±С‹Р»Рѕ РґРѕРІРѕР»СЊРЅРѕ Р»СЋРґРЅРѕ, Рё СЏ С‚РѕР»СЊРєРѕ Рё РґРµР»Р°Р», С‡С‚Рѕ СЂР°Р·РЅРѕСЃРёР» РїРёРІРѕ.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_10"); //РћС‚ СЃС‚РѕР№РєРё СЏ РЅР°РґРѕР»РіРѕ РЅРµ РѕС‚Р»СѓС‡Р°Р»СЃСЏ, РЅРѕ СЌС‚РёРј РїРѕРґРѕРЅРєР°Рј С…РІР°С‚РёР»Рѕ Рё РЅРµР±РѕР»СЊС€РѕРіРѕ РІСЂРµРјРµРЅРё.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_11"); //РЇ СЂР°СЃСЃРєР°Р·Р°Р» Рѕ РєСЂР°Р¶Рµ РѕРїРѕР»С‡РµРЅРёСЋ, РЅРѕ РѕРЅРё, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, РЅРёРєРѕРіРѕ РЅРµ РЅР°С€Р»Рё. Р­С‚Рё Р»РµРЅС‚СЏРё РїСЂРµРґРїРѕС‡РёС‚Р°СЋС‚ РЅР°РєР°С‡РёРІР°С‚СЊСЃСЏ Р±РµСЃРїР»Р°С‚РЅС‹Рј РїРёРІРѕРј.
 	
 	MIS_Coragon_Silber = LOG_RUNNING;
 };
@@ -221,16 +221,16 @@ func void B_Coragon_Bier()
 {
 	Coragon_Bier = Coragon_Bier + 1;
 	
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_14"); //Вот, возьми это в качестве награды.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_14"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рѕ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РіСЂР°РґС‹.
 	B_GiveInvItems (self, other, ItFo_CoragonsBeer, 1);
 	
 	if (Coragon_Bier < 2)
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_21"); //Мое особое пиво. Один бочонок остался.
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_21"); //РњРѕРµ РѕСЃРѕР±РѕРµ РїРёРІРѕ. РћРґРёРЅ Р±РѕС‡РѕРЅРѕРє РѕСЃС‚Р°Р»СЃСЏ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_22"); //Буквально последние капли!
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_22"); //Р‘СѓРєРІР°Р»СЊРЅРѕ РїРѕСЃР»РµРґРЅРёРµ РєР°РїР»Рё!
 	};
 };
 
@@ -244,7 +244,7 @@ instance DIA_Coragon_BringSilber	(C_INFO)
 	condition	 = 	DIA_Coragon_BringSilber_Condition;
 	information	 = 	DIA_Coragon_BringSilber_Info;
 	permanent    =  FALSE;
-	description	 = 	"Я принес твое серебро.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ С‚РІРѕРµ СЃРµСЂРµР±СЂРѕ.";
 	
 };
 func int DIA_Coragon_BringSilber_Condition ()
@@ -257,14 +257,14 @@ func int DIA_Coragon_BringSilber_Condition ()
 };
 func void DIA_Coragon_BringSilber_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_12"); //Я принес твое серебро.
+	AI_Output (other, self,"DIA_Coragon_Add_15_12"); //РЇ РїСЂРёРЅРµСЃ С‚РІРѕРµ СЃРµСЂРµР±СЂРѕ.
 	
 	if B_GiveInvItems (other, self, ItMi_CoragonsSilber, 8)
 	{
 		Npc_RemoveInvItems (self, ItMi_CoragonsSilber,8);
 	};
 	
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_13"); //Правда?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_13"); //РџСЂР°РІРґР°?
 	B_GivePlayerXP (XP_CoragonsSilber);
 	B_Coragon_Bier();
 	
@@ -281,7 +281,7 @@ instance DIA_Coragon_Schuldenbuch	(C_INFO)
 	condition	 = 	DIA_Coragon_Schuldenbuch_Condition;
 	information	 = 	DIA_Coragon_Schuldenbuch_Info;
 	permanent    =  FALSE;
-	description	 = 	"Посмотри, что у меня есть...";
+	description	 = 	"РџРѕСЃРјРѕС‚СЂРё, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ...";
 	
 };
 func int DIA_Coragon_Schuldenbuch_Condition ()
@@ -293,9 +293,9 @@ func int DIA_Coragon_Schuldenbuch_Condition ()
 };
 func void DIA_Coragon_Schuldenbuch_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_15"); //Посмотри, что у меня есть...
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_16"); //Хм-м... (удивленно) Но это же гроссбух Лемара!
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_17"); //Что ты с ним собираешься делать?
+	AI_Output (other, self,"DIA_Coragon_Add_15_15"); //РџРѕСЃРјРѕС‚СЂРё, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ...
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_16"); //РҐРј-Рј... (СѓРґРёРІР»РµРЅРЅРѕ) РќРѕ СЌС‚Рѕ Р¶Рµ РіСЂРѕСЃСЃР±СѓС… Р›РµРјР°СЂР°!
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_17"); //Р§С‚Рѕ С‚С‹ СЃ РЅРёРј СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ?
 };
 
 
@@ -309,7 +309,7 @@ instance DIA_Coragon_GiveBook (C_INFO)
 	condition	 = 	DIA_Coragon_GiveBook_Condition;
 	information	 = 	DIA_Coragon_GiveBook_Info;
 	permanent    =  FALSE;
-	description	 = 	"Вот твоя книга.";
+	description	 = 	"Р’РѕС‚ С‚РІРѕСЏ РєРЅРёРіР°.";
 	
 };
 func int DIA_Coragon_GiveBook_Condition ()
@@ -321,9 +321,9 @@ func int DIA_Coragon_GiveBook_Condition ()
 };
 func void DIA_Coragon_GiveBook_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_18"); //Вот твоя книга.
+	AI_Output (other, self,"DIA_Coragon_Add_15_18"); //Р’РѕС‚ С‚РІРѕСЏ РєРЅРёРіР°.
 	B_GiveInvItems (other, self, ItWr_Schuldenbuch, 1);
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_19"); //Спасибо! Ты спас меня. Лемара может быть очень неприятным человеком. 
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_19"); //РЎРїР°СЃРёР±Рѕ! РўС‹ СЃРїР°СЃ РјРµРЅСЏ. Р›РµРјР°СЂР° РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‡РµРЅСЊ РЅРµРїСЂРёСЏС‚РЅС‹Рј С‡РµР»РѕРІРµРєРѕРј. 
 	B_GivePlayerXP (XP_Schuldenbuch);
 	B_Coragon_Bier();
 };
@@ -339,7 +339,7 @@ instance DIA_Coragon_ToOV (C_INFO)
 	condition	 = 	DIA_Coragon_ToOV_Condition;
 	information	 = 	DIA_Coragon_ToOV_Info;
 	permanent    =  FALSE;
-	description	 = 	"Как мне попасть в верхний квартал?";
+	description	 = 	"РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?";
 	
 };
 func int DIA_Coragon_ToOV_Condition ()
@@ -353,11 +353,11 @@ func int DIA_Coragon_ToOV_Condition ()
 };
 func void DIA_Coragon_ToOV_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_23"); //Как мне попасть в верхний квартал?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_24"); //Ты должен стать гражданином города. Найди себе работу!
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_25"); //Лучше всего наймись к одному из ремесленников из нижней части города. Тогда ты станешь гражданином.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_26"); //А если этого будет недостаточно, отправляйся в казармы и поговори с лордом Андре.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_27"); //Возможно, он примет тебя в ряды ополчения. Это откроет тебе путь в верхний квартал.
+	AI_Output (other, self,"DIA_Coragon_Add_15_23"); //РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_24"); //РўС‹ РґРѕР»Р¶РµРЅ СЃС‚Р°С‚СЊ РіСЂР°Р¶РґР°РЅРёРЅРѕРј РіРѕСЂРѕРґР°. РќР°Р№РґРё СЃРµР±Рµ СЂР°Р±РѕС‚Сѓ!
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_25"); //Р›СѓС‡С€Рµ РІСЃРµРіРѕ РЅР°Р№РјРёСЃСЊ Рє РѕРґРЅРѕРјСѓ РёР· СЂРµРјРµСЃР»РµРЅРЅРёРєРѕРІ РёР· РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°. РўРѕРіРґР° С‚С‹ СЃС‚Р°РЅРµС€СЊ РіСЂР°Р¶РґР°РЅРёРЅРѕРј.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_26"); //Рђ РµСЃР»Рё СЌС‚РѕРіРѕ Р±СѓРґРµС‚ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, РѕС‚РїСЂР°РІР»СЏР№СЃСЏ РІ РєР°Р·Р°СЂРјС‹ Рё РїРѕРіРѕРІРѕСЂРё СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂРµ.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_27"); //Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ РїСЂРёРјРµС‚ С‚РµР±СЏ РІ СЂСЏРґС‹ РѕРїРѕР»С‡РµРЅРёСЏ. Р­С‚Рѕ РѕС‚РєСЂРѕРµС‚ С‚РµР±Рµ РїСѓС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
 };
 
 
@@ -371,7 +371,7 @@ instance DIA_Coragon_Valentino (C_INFO)
 	condition	 = 	DIA_Coragon_Valentino_Condition;
 	information	 = 	DIA_Coragon_Valentino_Info;
 	permanent    =  FALSE;
-	description	 = 	"А что там насчет Валентино?";
+	description	 = 	"Рђ С‡С‚Рѕ С‚Р°Рј РЅР°СЃС‡РµС‚ Р’Р°Р»РµРЅС‚РёРЅРѕ?";
 	
 };
 func int DIA_Coragon_Valentino_Condition ()
@@ -383,11 +383,11 @@ func int DIA_Coragon_Valentino_Condition ()
 };
 func void DIA_Coragon_Valentino_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_28"); //А что там насчет Валентино?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_29"); //Он богат до неприличия, и ему не приходится работать. И он рассказывает об этом всем подряд.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_30"); //Хочешь ты его слушать или нет.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_31"); //Он пьет как конь и всегда остается до самого утра. А потом, шатаясь, отправляется домой, в верхний квартал.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_32"); //Так происходит каждый день.
+	AI_Output (other, self,"DIA_Coragon_Add_15_28"); //Рђ С‡С‚Рѕ С‚Р°Рј РЅР°СЃС‡РµС‚ Р’Р°Р»РµРЅС‚РёРЅРѕ?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_29"); //РћРЅ Р±РѕРіР°С‚ РґРѕ РЅРµРїСЂРёР»РёС‡РёСЏ, Рё РµРјСѓ РЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ СЂР°Р±РѕС‚Р°С‚СЊ. Р РѕРЅ СЂР°СЃСЃРєР°Р·С‹РІР°РµС‚ РѕР± СЌС‚РѕРј РІСЃРµРј РїРѕРґСЂСЏРґ.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_30"); //РҐРѕС‡РµС€СЊ С‚С‹ РµРіРѕ СЃР»СѓС€Р°С‚СЊ РёР»Рё РЅРµС‚.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_31"); //РћРЅ РїСЊРµС‚ РєР°Рє РєРѕРЅСЊ Рё РІСЃРµРіРґР° РѕСЃС‚Р°РµС‚СЃСЏ РґРѕ СЃР°РјРѕРіРѕ СѓС‚СЂР°. Рђ РїРѕС‚РѕРј, С€Р°С‚Р°СЏСЃСЊ, РѕС‚РїСЂР°РІР»СЏРµС‚СЃСЏ РґРѕРјРѕР№, РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_32"); //РўР°Рє РїСЂРѕРёСЃС…РѕРґРёС‚ РєР°Р¶РґС‹Р№ РґРµРЅСЊ.
 	
 	
 };
@@ -417,19 +417,19 @@ func int DIA_Coragon_News_Condition ()
 };
 func void DIA_Coragon_News_Info ()
 {
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_33"); //Прошлой ночью он не смог расплатиться по счету.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_33"); //РџСЂРѕС€Р»РѕР№ РЅРѕС‡СЊСЋ РѕРЅ РЅРµ СЃРјРѕРі СЂР°СЃРїР»Р°С‚РёС‚СЊСЃСЏ РїРѕ СЃС‡РµС‚Сѓ.
 	if (Valentino.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_34"); //Он болтал что-то о том, что его обокрали и что он заплатит мне потом. Как же! 
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_34"); //РћРЅ Р±РѕР»С‚Р°Р» С‡С‚Рѕ-С‚Рѕ Рѕ С‚РѕРј, С‡С‚Рѕ РµРіРѕ РѕР±РѕРєСЂР°Р»Рё Рё С‡С‚Рѕ РѕРЅ Р·Р°РїР»Р°С‚РёС‚ РјРЅРµ РїРѕС‚РѕРј. РљР°Рє Р¶Рµ! 
 	}
 	else //Pickpocket OHNE Niederschlagen - AUSKOMMENTIERT
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_35"); //Только что он разорялся о том, как много у него денег.
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_36"); //И тут он запускает руку в карман, делает глупое лицо и говорит, что его обокрали...
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_35"); //РўРѕР»СЊРєРѕ С‡С‚Рѕ РѕРЅ СЂР°Р·РѕСЂСЏР»СЃСЏ Рѕ С‚РѕРј, РєР°Рє РјРЅРѕРіРѕ Сѓ РЅРµРіРѕ РґРµРЅРµРі.
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_36"); //Р С‚СѓС‚ РѕРЅ Р·Р°РїСѓСЃРєР°РµС‚ СЂСѓРєСѓ РІ РєР°СЂРјР°РЅ, РґРµР»Р°РµС‚ РіР»СѓРїРѕРµ Р»РёС†Рѕ Рё РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РµРіРѕ РѕР±РѕРєСЂР°Р»Рё...
 	};
 	
-	AI_Output (other, self,"DIA_Coragon_Add_15_37"); //И? Что ты сделал?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_38"); //Я? Задал ему хорошую трепку, что же еще?
+	AI_Output (other, self,"DIA_Coragon_Add_15_37"); //Р? Р§С‚Рѕ С‚С‹ СЃРґРµР»Р°Р»?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_38"); //РЇ? Р—Р°РґР°Р» РµРјСѓ С…РѕСЂРѕС€СѓСЋ С‚СЂРµРїРєСѓ, С‡С‚Рѕ Р¶Рµ РµС‰Рµ?
 };
 
 // *********************************************************
@@ -442,7 +442,7 @@ instance DIA_Coragon_Ring (C_INFO)
 	condition	= DIA_Coragon_Ring_Condition;
 	information	= DIA_Coragon_Ring_Info;
 	permanent   = FALSE;
-	description = "Вот - возьми это кольцо.";
+	description = "Р’РѕС‚ - РІРѕР·СЊРјРё СЌС‚Рѕ РєРѕР»СЊС†Рѕ.";
 	
 };
 func int DIA_Coragon_Ring_Condition ()
@@ -455,11 +455,11 @@ func int DIA_Coragon_Ring_Condition ()
 };
 func void DIA_Coragon_Ring_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_39"); //Вот - возьми это кольцо.
+	AI_Output (other, self,"DIA_Coragon_Add_15_39"); //Р’РѕС‚ - РІРѕР·СЊРјРё СЌС‚Рѕ РєРѕР»СЊС†Рѕ.
 	B_GiveInvItems (other, self, ItRi_ValentinosRing, 1);
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_40"); //Что? Не понимаю...
-	AI_Output (other, self,"DIA_Coragon_Add_15_41"); //Оно принадлежало Валентино.
-	AI_Output (other, self,"DIA_Coragon_Add_15_42"); //Ты можешь передать его следующему, кто отдубасит его...
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_40"); //Р§С‚Рѕ? РќРµ РїРѕРЅРёРјР°СЋ...
+	AI_Output (other, self,"DIA_Coragon_Add_15_41"); //РћРЅРѕ РїСЂРёРЅР°РґР»РµР¶Р°Р»Рѕ Р’Р°Р»РµРЅС‚РёРЅРѕ.
+	AI_Output (other, self,"DIA_Coragon_Add_15_42"); //РўС‹ РјРѕР¶РµС€СЊ РїРµСЂРµРґР°С‚СЊ РµРіРѕ СЃР»РµРґСѓСЋС‰РµРјСѓ, РєС‚Рѕ РѕС‚РґСѓР±Р°СЃРёС‚ РµРіРѕ...
 
 	B_GivePlayerXP (300);
 	

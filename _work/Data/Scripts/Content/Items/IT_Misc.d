@@ -2,8 +2,8 @@
 // Wert von Kram
 // ************************************************************************************************
 
-// Items fьr Objektbenutzung und Item-Interaktion...
-// z.B. Krautstampfer, Hammer, Kochlцffel, Laborflasche, Roheisen (Schmiede)
+// Items fСЊr Objektbenutzung und Item-Interaktion...
+// z.B. Krautstampfer, Hammer, KochlС†ffel, Laborflasche, Roheisen (Schmiede)
 
 const int	Value_SwordBlade		= 10;
 const int	Value_SwordBladeHot		= 10;
@@ -66,7 +66,7 @@ const int   Value_InnosStatue		=  100;
 const int	Value_Sextant			= 1500;
 
 
-/*ursprьngliche Werte:
+/*ursprСЊngliche Werte:
 const int	Value_SilverRing		 = 200;
 const int	Value_SilverNecklace	 = 100;
 const int	Value_SilverCandleHolder = 30 ;
@@ -94,13 +94,13 @@ const int	Value_Sextant			= 30  ;
 
 
 /*******************************************************************************************
-**	Items fьr Mobsi-Benutzung               					  		  				  **
+**	Items fСЊr Mobsi-Benutzung               					  		  				  **
 *******************************************************************************************/
 // Krautstampfen
 
 INSTANCE ItMi_Stomper (C_Item)
 {
-	name 				=	"Давилка";
+	name 				=	"Р”Р°РІРёР»РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags				=	ITEM_MULTI;
@@ -117,7 +117,7 @@ INSTANCE ItMi_Stomper (C_Item)
 // Runen Bauen
 INSTANCE ItMi_RuneBlank (C_Item)
 {
-	name 				=	"Руна";
+	name 				=	"Р СѓРЅР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags				=	ITEM_MULTI;
@@ -134,7 +134,7 @@ INSTANCE ItMi_RuneBlank (C_Item)
 
 INSTANCE ItMi_Pliers (C_Item)
 {
-	name 				=	"Щипцы";
+	name 				=	"Р©РёРїС†С‹";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags				=	ITEM_MULTI;
@@ -152,7 +152,7 @@ INSTANCE ItMi_Pliers (C_Item)
 // Labor Wasserflasche
 INSTANCE ItMi_Flask (C_Item)
 {
-	name 				=	"Мензурка";
+	name 				=	"РњРµРЅР·СѓСЂРєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags				=	ITEM_MULTI;
@@ -171,7 +171,7 @@ INSTANCE ItMi_Flask (C_Item)
 // Reparieren
 INSTANCE ItMi_Hammer (C_Item)
 {
-	name 				=	"Молот";
+	name 				=	"РњРѕР»РѕС‚";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -188,10 +188,10 @@ INSTANCE ItMi_Hammer (C_Item)
 };
 
 /******************************************************************************************/
-// im Topf rьhren
+// im Topf rСЊhren
 INSTANCE ItMi_Scoop (C_Item)
 {
-	name 				=	"Ложка";
+	name 				=	"Р›РѕР¶РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -207,11 +207,11 @@ INSTANCE ItMi_Scoop (C_Item)
 	COUNT[5]			= 	value;
 };
 /******************************************************************************************/
-//	Pfanne zum Braten (fьr  Lagerfeuer)
+//	Pfanne zum Braten (fСЊr  Lagerfeuer)
 
 INSTANCE ItMi_Pan (C_Item)
 {
-	name 				=	"Сковорода";
+	name 				=	"РЎРєРѕРІРѕСЂРѕРґР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -227,11 +227,11 @@ INSTANCE ItMi_Pan (C_Item)
 	COUNT[5]			= 	value;
 };
 
-//Pfann fьr Herd
+//Pfann fСЊr Herd
 
 INSTANCE ItMi_PanFull (C_Item)
 {
-	name 				=	"Сковорода";
+	name 				=	"РЎРєРѕРІРѕСЂРѕРґР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -247,11 +247,11 @@ INSTANCE ItMi_PanFull (C_Item)
 	COUNT[5]			= 	value;
 };
 /******************************************************************************************/
-//	Sдge fьr Baumstamm
+//	SРґge fСЊr Baumstamm
 
 INSTANCE ItMi_Saw (C_Item)
 {
-	name 				=	"Пила";
+	name 				=	"РџРёР»Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -268,11 +268,11 @@ INSTANCE ItMi_Saw (C_Item)
 };	   	   
 
 /******************************************************************************************/
-//	Items fьr Schmiede	    					 								 		  **
+//	Items fСЊr Schmiede	    					 								 		  **
 
 INSTANCE ItMiSwordraw (C_Item)
 {
-	name 				=	"Сырая сталь";
+	name 				=	"РЎС‹СЂР°СЏ СЃС‚Р°Р»СЊ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -291,7 +291,7 @@ INSTANCE ItMiSwordraw (C_Item)
 /******************************************************************************************/
 INSTANCE ItMiSwordrawhot (C_Item)
 {
-	name 				=	"Раскаленная сталь";
+	name 				=	"Р Р°СЃРєР°Р»РµРЅРЅР°СЏ СЃС‚Р°Р»СЊ";
 
 	mainflag 			=	ITEM_KAT_NONE; 
 	flags 				=	ITEM_MULTI;
@@ -310,7 +310,7 @@ INSTANCE ItMiSwordrawhot (C_Item)
 /******************************************************************************************/
 INSTANCE ItMiSwordbladehot (C_Item)
 {
-	name 				=	"Раскаленный клинок";
+	name 				=	"Р Р°СЃРєР°Р»РµРЅРЅС‹Р№ РєР»РёРЅРѕРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -329,7 +329,7 @@ INSTANCE ItMiSwordbladehot (C_Item)
 /******************************************************************************************/
 INSTANCE ItMiSwordblade	(C_Item)
 {
-	name 				=	"Клинок";
+	name 				=	"РљР»РёРЅРѕРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -350,14 +350,14 @@ INSTANCE ItMiSwordblade	(C_Item)
 
 
 /*******************************************************************************************
-**	Items fьr Item-Interaktionen (ohne Mobsi benutzbar)               		 		  	  **
+**	Items fСЊr Item-Interaktionen (ohne Mobsi benutzbar)               		 		  	  **
 *******************************************************************************************/
 
 /******************************************************************************************/
 // Besen zum Fegen
 INSTANCE ItMi_Broom (C_Item)
 {
-	name 				=	"Метла";
+	name 				=	"РњРµС‚Р»Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -388,7 +388,7 @@ func void Use_Broom()
 // zum Rumklimpern
 INSTANCE ItMi_Lute (C_Item)
 {
-	name 				=	"Лютня";
+	name 				=	"Р›СЋС‚РЅСЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -412,10 +412,10 @@ func void Use_Lute()
 
 
 /******************************************************************************************/
-// Fьr Babe-Putzen
+// FСЊr Babe-Putzen
 INSTANCE ItMi_Brush(C_Item)
 {
-	name 				=	"Щетка";
+	name 				=	"Р©РµС‚РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -442,7 +442,7 @@ func void Use_Brush()
 /******************************************************************************************/
 INSTANCE ItMi_Joint(C_Item)
 {
-	name 				=	"Косяк из болотной травы";
+	name 				=	"РљРѕСЃСЏРє РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -498,11 +498,11 @@ func void Use_Alarmhorn()
 
 */
 //*******************************
-//Pдckchen
+//PРґckchen
 //*******************************
 INSTANCE ItMi_Packet(C_Item)
 {
-	name 				=	"Пакет";
+	name 				=	"РџР°РєРµС‚";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -525,7 +525,7 @@ FUNC VOID UsePacket ()
 
 INSTANCE ItMi_Pocket(C_Item)//steht drin, weil auch in Welt verteilt!!
 {
-	name 				=	"Кожаный кошелек";
+	name 				=	"РљРѕР¶Р°РЅС‹Р№ РєРѕС€РµР»РµРє";
 
 	mainflag 			=	ITEM_KAT_NONE|ITEM_MULTI;
 	flags 				=	0;
@@ -537,8 +537,8 @@ INSTANCE ItMi_Pocket(C_Item)//steht drin, weil auch in Welt verteilt!!
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UsePocket;
 	description			= 	name;
-	TEXT[2]				= 	"Небольшой мешочек,";
-	TEXT[3]				=   "не очень тяжелый.";
+	TEXT[2]				= 	"РќРµР±РѕР»СЊС€РѕР№ РјРµС€РѕС‡РµРє,";
+	TEXT[3]				=   "РЅРµ РѕС‡РµРЅСЊ С‚СЏР¶РµР»С‹Р№.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -551,11 +551,11 @@ FUNC VOID UsePocket ()
 };
 
 //******************************************************************************************
-//	Wertvolle Gegenstдnde
+//	Wertvolle GegenstРґnde
 //******************************************************************************************
 INSTANCE ItMi_Nugget(C_Item)
 {
-	name 				=	"Кусок руды";
+	name 				=	"РљСѓСЃРѕРє СЂСѓРґС‹";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -582,7 +582,7 @@ INSTANCE ItMi_Nugget(C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_Gold (C_Item)
 {
-	name 				=	"Золото";
+	name 				=	"Р—РѕР»РѕС‚Рѕ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -603,7 +603,7 @@ INSTANCE ItMi_Gold (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_OldCoin (C_Item)
 {
-	name 				=	"Старая монета";
+	name 				=	"РЎС‚Р°СЂР°СЏ РјРѕРЅРµС‚Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -625,7 +625,7 @@ INSTANCE ItMi_OldCoin (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_GoldCandleHolder (C_Item)
 {
-	name 				=	"Золотой подсвечник";
+	name 				=	"Р—РѕР»РѕС‚РѕР№ РїРѕРґСЃРІРµС‡РЅРёРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -646,7 +646,7 @@ INSTANCE ItMi_GoldCandleHolder (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_GoldNecklace (C_Item)
 {
-	name 				=	"Золотое ожерелье";
+	name 				=	"Р—РѕР»РѕС‚РѕРµ РѕР¶РµСЂРµР»СЊРµ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI | ITEM_AMULET;
@@ -671,7 +671,7 @@ INSTANCE ItMi_GoldNecklace (C_Item)
 
 INSTANCE ItMi_SilverRing (C_Item)
 {
-	name 				=	"Серебряное кольцо";
+	name 				=	"РЎРµСЂРµР±СЂСЏРЅРѕРµ РєРѕР»СЊС†Рѕ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_RING;
@@ -694,7 +694,7 @@ INSTANCE ItMi_SilverRing (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_SilverCup (C_Item)
 {
-	name 				=	"Серебряный кубок";
+	name 				=	"РЎРµСЂРµР±СЂСЏРЅС‹Р№ РєСѓР±РѕРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -712,7 +712,7 @@ INSTANCE ItMi_SilverCup (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_SilverPlate (C_Item)
 {
-	name 				=	"Серебряная тарелка";
+	name 				=	"РЎРµСЂРµР±СЂСЏРЅР°СЏ С‚Р°СЂРµР»РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -730,7 +730,7 @@ INSTANCE ItMi_SilverPlate (C_Item)
 /******************************************************************************************/
 instance ItMi_GoldPlate (C_Item)
 {
-	name 				=	"Золотая тарелка";
+	name 				=	"Р—РѕР»РѕС‚Р°СЏ С‚Р°СЂРµР»РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -748,7 +748,7 @@ instance ItMi_GoldPlate (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_GoldCup (C_Item)
 {
-	name 				=	"Золотой кубок";
+	name 				=	"Р—РѕР»РѕС‚РѕР№ РєСѓР±РѕРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -766,7 +766,7 @@ INSTANCE ItMi_GoldCup (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_BloodCup_MIS (C_Item)
 {
-	name 				=	"Кровавый кубок";
+	name 				=	"РљСЂРѕРІР°РІС‹Р№ РєСѓР±РѕРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI | ITEM_MISSION;
@@ -776,7 +776,7 @@ INSTANCE ItMi_BloodCup_MIS (C_Item)
 	visual 				=	"ItMi_GoldCup.3DS";
 	material 			=	MAT_METAL;
 
-	description			= 	"Кровавый кубок";
+	description			= 	"РљСЂРѕРІР°РІС‹Р№ РєСѓР±РѕРє";
 	
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
@@ -784,7 +784,7 @@ INSTANCE ItMi_BloodCup_MIS (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_GoldRing (C_Item)
 {
-	name 				=	"Золотое кольцо";
+	name 				=	"Р—РѕР»РѕС‚РѕРµ РєРѕР»СЊС†Рѕ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_RING;
@@ -807,7 +807,7 @@ INSTANCE ItMi_GoldRing (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_SilverChalice (C_Item)
 {
-	name 				=	"Серебряная чаша";
+	name 				=	"РЎРµСЂРµР±СЂСЏРЅР°СЏ С‡Р°С€Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -823,7 +823,7 @@ INSTANCE ItMi_SilverChalice (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_JeweleryChest (C_Item)
 {
-	name 				=	"Шкатулка с драгоценностями";
+	name 				=	"РЁРєР°С‚СѓР»РєР° СЃ РґСЂР°РіРѕС†РµРЅРЅРѕСЃС‚СЏРјРё";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -840,7 +840,7 @@ INSTANCE ItMi_JeweleryChest (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_GoldChalice (C_Item)
 {
-	name 				=	"Золотая чаша";
+	name 				=	"Р—РѕР»РѕС‚Р°СЏ С‡Р°С€Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -857,7 +857,7 @@ INSTANCE ItMi_GoldChalice (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_GoldChest (C_Item)
 {
-	name 				=	"Шкатулка";
+	name 				=	"РЁРєР°С‚СѓР»РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -874,7 +874,7 @@ INSTANCE ItMi_GoldChest (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_InnosStatue (C_Item)
 {
-	name 				=	"Статуя Инноса";
+	name 				=	"РЎС‚Р°С‚СѓСЏ РРЅРЅРѕСЃР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -891,7 +891,7 @@ INSTANCE ItMi_InnosStatue (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_Sextant (C_Item)
 {
-	name 				=	"Секстант";
+	name 				=	"РЎРµРєСЃС‚Р°РЅС‚";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -908,7 +908,7 @@ INSTANCE ItMi_Sextant (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_SilverCandleHolder (C_Item)
 {
-	name 				=	"Серебряный подсвечник";
+	name 				=	"РЎРµСЂРµР±СЂСЏРЅС‹Р№ РїРѕРґСЃРІРµС‡РЅРёРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -925,7 +925,7 @@ INSTANCE ItMi_SilverCandleHolder (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_SilverNecklace (C_Item)
 {
-	name 				=	"Серебряное ожерелье";
+	name 				=	"РЎРµСЂРµР±СЂСЏРЅРѕРµ РѕР¶РµСЂРµР»СЊРµ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI| ITEM_AMULET;
@@ -944,7 +944,7 @@ INSTANCE ItMi_SilverNecklace (C_Item)
 //*****************************************************************************************
 INSTANCE ItMi_Sulfur (C_Item)
 {
-	name 				=	"Сера";
+	name 				=	"РЎРµСЂР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -964,7 +964,7 @@ INSTANCE ItMi_Sulfur (C_Item)
 
 INSTANCE ItMi_Quartz (C_Item)
 {
-	name 				=	"Ледяной кварц";
+	name 				=	"Р›РµРґСЏРЅРѕР№ РєРІР°СЂС†";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -983,7 +983,7 @@ INSTANCE ItMi_Quartz (C_Item)
 
 INSTANCE ItMi_Pitch (C_Item)
 {
-	name 				=	"Смола";
+	name 				=	"РЎРјРѕР»Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1001,7 +1001,7 @@ INSTANCE ItMi_Pitch (C_Item)
 
 INSTANCE ItMi_Rockcrystal (C_Item)
 {
-	name 				=	"Горный хрусталь";
+	name 				=	"Р“РѕСЂРЅС‹Р№ С…СЂСѓСЃС‚Р°Р»СЊ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1019,7 +1019,7 @@ INSTANCE ItMi_Rockcrystal (C_Item)
 
 INSTANCE ItMi_Aquamarine (C_Item)
 {
-	name 				=	"Аквамарин";
+	name 				=	"РђРєРІР°РјР°СЂРёРЅ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1040,7 +1040,7 @@ INSTANCE ItMi_Aquamarine (C_Item)
 
 INSTANCE ItMi_HolyWater (C_Item)
 {
-	name 				=	"Святая вода";
+	name 				=	"РЎРІСЏС‚Р°СЏ РІРѕРґР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1058,7 +1058,7 @@ INSTANCE ItMi_HolyWater (C_Item)
 
 INSTANCE ItMi_Coal (C_Item)
 {
-	name 				=	"Уголь";
+	name 				=	"РЈРіРѕР»СЊ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1079,7 +1079,7 @@ INSTANCE ItMi_Coal (C_Item)
 
 INSTANCE ItMi_DarkPearl (C_Item)
 {
-	name 				=	"Черный жемчуг";
+	name 				=	"Р§РµСЂРЅС‹Р№ Р¶РµРјС‡СѓРі";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1098,11 +1098,11 @@ INSTANCE ItMi_DarkPearl (C_Item)
 };
 //-------------------------------------------------------------
 //					Tabak Sorten 
-//		 Apfeltabak (Basis fьr alle anderen)
+//		 Apfeltabak (Basis fСЊr alle anderen)
 //-------------------------------------------------------------
 INSTANCE ItMi_ApfelTabak(C_Item)
 {
-	name 				=	"Яблочный табак";
+	name 				=	"РЇР±Р»РѕС‡РЅС‹Р№ С‚Р°Р±Р°Рє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1115,7 +1115,7 @@ INSTANCE ItMi_ApfelTabak(C_Item)
 	
 	description			= 	name;
 	
-	TEXT[2]				=  "Кисет с яблочным табаком.";
+	TEXT[2]				=  "РљРёСЃРµС‚ СЃ СЏР±Р»РѕС‡РЅС‹Рј С‚Р°Р±Р°РєРѕРј.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-------------------------------------------------------------
@@ -1123,7 +1123,7 @@ INSTANCE ItMi_ApfelTabak(C_Item)
 //-------------------------------------------------------------
 INSTANCE ItMi_PilzTabak(C_Item)
 {
-	name 				=	"Грибной табак";
+	name 				=	"Р“СЂРёР±РЅРѕР№ С‚Р°Р±Р°Рє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1136,7 +1136,7 @@ INSTANCE ItMi_PilzTabak(C_Item)
 	
 	description			= 	name;
 	
-	TEXT[2]				=  "Темный яблочно-грибной табак";
+	TEXT[2]				=  "РўРµРјРЅС‹Р№ СЏР±Р»РѕС‡РЅРѕ-РіСЂРёР±РЅРѕР№ С‚Р°Р±Р°Рє";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -1145,7 +1145,7 @@ INSTANCE ItMi_PilzTabak(C_Item)
 //-------------------------------------------------------------
 INSTANCE ItMi_DoppelTabak(C_Item)
 {
-	name 				=	"Двойное яблоко";
+	name 				=	"Р”РІРѕР№РЅРѕРµ СЏР±Р»РѕРєРѕ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1158,7 +1158,7 @@ INSTANCE ItMi_DoppelTabak(C_Item)
 	
 	description			= 	name;
 	
-	TEXT[2]				=  "На вкус похоже на яблоко...";
+	TEXT[2]				=  "РќР° РІРєСѓСЃ РїРѕС…РѕР¶Рµ РЅР° СЏР±Р»РѕРєРѕ...";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -1167,7 +1167,7 @@ INSTANCE ItMi_DoppelTabak(C_Item)
 //-------------------------------------------------------------
 INSTANCE ItMi_Honigtabak(C_Item)
 {
-	name 				=	"Медовый табак";
+	name 				=	"РњРµРґРѕРІС‹Р№ С‚Р°Р±Р°Рє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1180,7 +1180,7 @@ INSTANCE ItMi_Honigtabak(C_Item)
 	
 	description			= 	name;
 	
-	TEXT[2]				=  "Сладкий яблочный табак";
+	TEXT[2]				=  "РЎР»Р°РґРєРёР№ СЏР±Р»РѕС‡РЅС‹Р№ С‚Р°Р±Р°Рє";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-------------------------------------------------------------
@@ -1188,7 +1188,7 @@ INSTANCE ItMi_Honigtabak(C_Item)
 //-------------------------------------------------------------
 INSTANCE ItMi_SumpfTabak(C_Item)
 {
-	name 				=	"Травяной табак";
+	name 				=	"РўСЂР°РІСЏРЅРѕР№ С‚Р°Р±Р°Рє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1201,7 +1201,7 @@ INSTANCE ItMi_SumpfTabak(C_Item)
 	
 	description			= 	name;
 	
-	TEXT[2]				=  "Смесь из болотной травы";
+	TEXT[2]				=  "РЎРјРµСЃСЊ РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };

@@ -1,7 +1,7 @@
 instance BDT_1095_Addon_Crimson (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Кримсон";
+	name 		= "РљСЂРёРјСЃРѕРЅ";
 	guild 		= GIL_BDT;
 	id 			= 1095;
 	voice 		= 10;

@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Patrick_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Patrick_NW_Hi_Condition;
 	information = DIA_Addon_Patrick_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "Итак, с вами все в порядке?";
+	description = "РС‚Р°Рє, СЃ РІР°РјРё РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 FUNC INT DIA_Addon_Patrick_NW_Hi_Condition()
 {		
@@ -72,12 +72,12 @@ FUNC INT DIA_Addon_Patrick_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_00");//Итак, с вами все в порядке?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//Все хорошо. Маги воды вывели нас из этой проклятой долины.
-	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_02");//И что вы будете делать дальше?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//Я продолжу работать на Ли. А в один прекрасный день мы покинем этот остров...
-	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_04");//И что будет тогда?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//Увидим. Если война все еще идет, мы будем сражаться с орками. Но это станет ясно позднее.
+	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_00");//РС‚Р°Рє, СЃ РІР°РјРё РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//Р’СЃРµ С…РѕСЂРѕС€Рѕ. РњР°РіРё РІРѕРґС‹ РІС‹РІРµР»Рё РЅР°СЃ РёР· СЌС‚РѕР№ РїСЂРѕРєР»СЏС‚РѕР№ РґРѕР»РёРЅС‹.
+	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_02");//Р С‡С‚Рѕ РІС‹ Р±СѓРґРµС‚Рµ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//РЇ РїСЂРѕРґРѕР»Р¶Сѓ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° Р›Рё. Рђ РІ РѕРґРёРЅ РїСЂРµРєСЂР°СЃРЅС‹Р№ РґРµРЅСЊ РјС‹ РїРѕРєРёРЅРµРј СЌС‚РѕС‚ РѕСЃС‚СЂРѕРІ...
+	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_04");//Р С‡С‚Рѕ Р±СѓРґРµС‚ С‚РѕРіРґР°?
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//РЈРІРёРґРёРј. Р•СЃР»Рё РІРѕР№РЅР° РІСЃРµ РµС‰Рµ РёРґРµС‚, РјС‹ Р±СѓРґРµРј СЃСЂР°Р¶Р°С‚СЊСЃСЏ СЃ РѕСЂРєР°РјРё. РќРѕ СЌС‚Рѕ СЃС‚Р°РЅРµС‚ СЏСЃРЅРѕ РїРѕР·РґРЅРµРµ.
 };
 
 

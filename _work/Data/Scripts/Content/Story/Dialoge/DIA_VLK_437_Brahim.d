@@ -6,7 +6,7 @@ FUNC VOID B_BrahimNewMaps ()
 {
 	if (Brahim_ShowedMaps == TRUE)
 	{
-		AI_Output			(self, other, "B_BrahimNewMaps_07_00"); //Заходи попозже. Я уверен, что смогу приготовить что-нибудь интересное для тебя.
+		AI_Output			(self, other, "B_BrahimNewMaps_07_00"); //Р—Р°С…РѕРґРё РїРѕРїРѕР·Р¶Рµ. РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЃРјРѕРіСѓ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ РґР»СЏ С‚РµР±СЏ.
 	};
 };
 INSTANCE DIA_Brahim_EXIT   (C_INFO)
@@ -78,7 +78,7 @@ instance DIA_Brahim_GREET		(C_INFO)
 	condition	 = 	DIA_Brahim_GREET_Condition;
 	information	 = 	DIA_Brahim_GREET_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 func int DIA_Brahim_GREET_Condition ()
 {
@@ -86,13 +86,13 @@ func int DIA_Brahim_GREET_Condition ()
 };
 func void DIA_Brahim_GREET_Info ()
 {
-	AI_Output (other, self, "DIA_Brahim_GREET_15_00"); //Что ты делаешь здесь?
-	AI_Output (self, other, "DIA_Brahim_GREET_07_01"); //Меня зовут Ибрагим. Я рисую карты и продаю их.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Так как ты недавно здесь, возможно, тебе пригодится карта города.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Это очень недорого и очень полезно, пока ты здесь не освоишься.
+	AI_Output (other, self, "DIA_Brahim_GREET_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Brahim_GREET_07_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РР±СЂР°РіРёРј. РЇ СЂРёСЃСѓСЋ РєР°СЂС‚С‹ Рё РїСЂРѕРґР°СЋ РёС….
+	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //РўР°Рє РєР°Рє С‚С‹ РЅРµРґР°РІРЅРѕ Р·РґРµСЃСЊ, РІРѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ РїСЂРёРіРѕРґРёС‚СЃСЏ РєР°СЂС‚Р° РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Р­С‚Рѕ РѕС‡РµРЅСЊ РЅРµРґРѕСЂРѕРіРѕ Рё РѕС‡РµРЅСЊ РїРѕР»РµР·РЅРѕ, РїРѕРєР° С‚С‹ Р·РґРµСЃСЊ РЅРµ РѕСЃРІРѕРёС€СЊСЃСЏ.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Ибрагим рисует карты и продает их в гавани.");
+	B_LogEntry (Topic_CityTrader,"РР±СЂР°РіРёРј СЂРёСЃСѓРµС‚ РєР°СЂС‚С‹ Рё РїСЂРѕРґР°РµС‚ РёС… РІ РіР°РІР°РЅРё.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -105,7 +105,7 @@ instance DIA_Addon_Brahim_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Brahim_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Brahim_MissingPeople_Info;
 
-	description	 = 	"А правда, что некоторые жители таинственным образом исчезли? ";
+	description	 = 	"Рђ РїСЂР°РІРґР°, С‡С‚Рѕ РЅРµРєРѕС‚РѕСЂС‹Рµ Р¶РёС‚РµР»Рё С‚Р°РёРЅСЃС‚РІРµРЅРЅС‹Рј РѕР±СЂР°Р·РѕРј РёСЃС‡РµР·Р»Рё? ";
 };
 
 func int DIA_Addon_Brahim_MissingPeople_Condition ()
@@ -119,10 +119,10 @@ func int DIA_Addon_Brahim_MissingPeople_Condition ()
 
 func void DIA_Addon_Brahim_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //А правда, что некоторые жители таинственным образом исчезли? 
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //Я слышал об этом. Но я не уверен, что это правда.
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Оглядись вокруг. Неужели ты хочешь провести в этой дыре свои золотые годы?
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //Неудивительно, что люди уезжают отсюда.
+	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //Рђ РїСЂР°РІРґР°, С‡С‚Рѕ РЅРµРєРѕС‚РѕСЂС‹Рµ Р¶РёС‚РµР»Рё С‚Р°РёРЅСЃС‚РІРµРЅРЅС‹Рј РѕР±СЂР°Р·РѕРј РёСЃС‡РµР·Р»Рё? 
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //РЇ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј. РќРѕ СЏ РЅРµ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЌС‚Рѕ РїСЂР°РІРґР°.
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //РћРіР»СЏРґРёСЃСЊ РІРѕРєСЂСѓРі. РќРµСѓР¶РµР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїСЂРѕРІРµСЃС‚Рё РІ СЌС‚РѕР№ РґС‹СЂРµ СЃРІРѕРё Р·РѕР»РѕС‚С‹Рµ РіРѕРґС‹?
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //РќРµСѓРґРёРІРёС‚РµР»СЊРЅРѕ, С‡С‚Рѕ Р»СЋРґРё СѓРµР·Р¶Р°СЋС‚ РѕС‚СЃСЋРґР°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -162,7 +162,7 @@ instance DIA_Brahim_BUY		(C_INFO)
 	information	 = 	DIA_Brahim_BUY_Info;
 	permanent 	 =  TRUE;
 	trade 		 =  TRUE;
-	description	 = 	"Покажи мне твои карты.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ С‚РІРѕРё РєР°СЂС‚С‹.";
 };
 
 func int DIA_Brahim_BUY_Condition ()
@@ -175,15 +175,15 @@ func int DIA_Brahim_BUY_Condition ()
 func void DIA_Brahim_BUY_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Brahim_BUY_15_00"); //Покажи мне твои карты.
+	AI_Output (other, self, "DIA_Brahim_BUY_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ С‚РІРѕРё РєР°СЂС‚С‹.
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other, "DIA_Brahim_BUY_07_01"); //Ты не найдешь лучше даже в монастыре.
+		AI_Output (self ,other, "DIA_Brahim_BUY_07_01"); //РўС‹ РЅРµ РЅР°Р№РґРµС€СЊ Р»СѓС‡С€Рµ РґР°Р¶Рµ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 	};
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other, "DIA_Brahim_BUY_07_02"); //Хорошая карта - это очень важно, особенно для людей, прибывших с материка, мистер Паладин.
+		AI_Output (self ,other, "DIA_Brahim_BUY_07_02"); //РҐРѕСЂРѕС€Р°СЏ РєР°СЂС‚Р° - СЌС‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ, РѕСЃРѕР±РµРЅРЅРѕ РґР»СЏ Р»СЋРґРµР№, РїСЂРёР±С‹РІС€РёС… СЃ РјР°С‚РµСЂРёРєР°, РјРёСЃС‚РµСЂ РџР°Р»Р°РґРёРЅ.
 	};
 	Brahim_ShowedMaps = TRUE;
 };
@@ -250,15 +250,15 @@ FUNC INT DIA_Brahim_Kap3_First_EXIT_Condition()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_Info()
 {
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_00"); //Я знал, что этот клочок бумаги заинтересует тебя.
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_15_01"); //Какой клочок?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_02"); //Ну, та старая карта, что ты только что купил.
-	AI_Output (self, other,"DIA_Brahim_Kap3_First_EXIT_07_03"); //Я знаю таких людей, как ты. Вы используете каждый шанс, чтобы найти сокровища.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_00"); //РЇ Р·РЅР°Р», С‡С‚Рѕ СЌС‚РѕС‚ РєР»РѕС‡РѕРє Р±СѓРјР°РіРё Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚ С‚РµР±СЏ.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_15_01"); //РљР°РєРѕР№ РєР»РѕС‡РѕРє?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_02"); //РќСѓ, С‚Р° СЃС‚Р°СЂР°СЏ РєР°СЂС‚Р°, С‡С‚Рѕ С‚С‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РєСѓРїРёР».
+	AI_Output (self, other,"DIA_Brahim_Kap3_First_EXIT_07_03"); //РЇ Р·РЅР°СЋ С‚Р°РєРёС… Р»СЋРґРµР№, РєР°Рє С‚С‹. Р’С‹ РёСЃРїРѕР»СЊР·СѓРµС‚Рµ РєР°Р¶РґС‹Р№ С€Р°РЅСЃ, С‡С‚РѕР±С‹ РЅР°Р№С‚Рё СЃРѕРєСЂРѕРІРёС‰Р°.
 	Info_ClearChoices (DIA_Brahim_Kap3_First_EXIT);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,DIALOG_BACK,DIA_Brahim_Kap3_First_EXIT_BACK);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Где ты взял эту карту?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Что это за карта?",DIA_Brahim_Kap3_First_EXIT_Content);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Почему ты не оставил ее себе?",DIA_Brahim_Kap3_First_EXIT_KeepIt);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Р“РґРµ С‚С‹ РІР·СЏР» СЌС‚Сѓ РєР°СЂС‚Сѓ?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Р§С‚Рѕ СЌС‚Рѕ Р·Р° РєР°СЂС‚Р°?",DIA_Brahim_Kap3_First_EXIT_Content);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РѕСЃС‚Р°РІРёР» РµРµ СЃРµР±Рµ?",DIA_Brahim_Kap3_First_EXIT_KeepIt);
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_BACK ()
@@ -268,23 +268,23 @@ FUNC VOID DIA_Brahim_Kap3_First_EXIT_BACK ()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_WhereGetIt ()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //Где ты взял эту карту?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //Ох, я нашел ее в стопке старых карт, что я купил недавно.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //Продавец, должно быть, проглядел ее.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //Р“РґРµ С‚С‹ РІР·СЏР» СЌС‚Сѓ РєР°СЂС‚Сѓ?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //РћС…, СЏ РЅР°С€РµР» РµРµ РІ СЃС‚РѕРїРєРµ СЃС‚Р°СЂС‹С… РєР°СЂС‚, С‡С‚Рѕ СЏ РєСѓРїРёР» РЅРµРґР°РІРЅРѕ.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //РџСЂРѕРґР°РІРµС†, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РїСЂРѕРіР»СЏРґРµР» РµРµ.
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_Content ()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //Что это за карта?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //Похоже, это карта сокровищ или что-то вроде.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //Но, похоже, ты из тех, кто способен выяснить это самостоятельно.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° РєР°СЂС‚Р°?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //РџРѕС…РѕР¶Рµ, СЌС‚Рѕ РєР°СЂС‚Р° СЃРѕРєСЂРѕРІРёС‰ РёР»Рё С‡С‚Рѕ-С‚Рѕ РІСЂРѕРґРµ.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //РќРѕ, РїРѕС…РѕР¶Рµ, С‚С‹ РёР· С‚РµС…, РєС‚Рѕ СЃРїРѕСЃРѕР±РµРЅ РІС‹СЏСЃРЅРёС‚СЊ СЌС‚Рѕ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ.
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_KeepIt()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //Почему ты не оставил ее себе?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Я старый человек, и времена, когда я сам искал сокровища, давно прошли.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //Пусть этим занимаются те, кто помоложе.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РѕСЃС‚Р°РІРёР» РµРµ СЃРµР±Рµ?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //РЇ СЃС‚Р°СЂС‹Р№ С‡РµР»РѕРІРµРє, Рё РІСЂРµРјРµРЅР°, РєРѕРіРґР° СЏ СЃР°Рј РёСЃРєР°Р» СЃРѕРєСЂРѕРІРёС‰Р°, РґР°РІРЅРѕ РїСЂРѕС€Р»Рё.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //РџСѓСЃС‚СЊ СЌС‚РёРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ С‚Рµ, РєС‚Рѕ РїРѕРјРѕР»РѕР¶Рµ.
 };
 
 

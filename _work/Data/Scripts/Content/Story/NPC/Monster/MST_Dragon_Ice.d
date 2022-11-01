@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Ice(C_Npc)			
 {
 	//----- Monster ----
-	name							= "Ледяной дракон";
+	name							= "Р›РµРґСЏРЅРѕР№ РґСЂР°РєРѕРЅ";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_DRAGON_ICE;
 	level							= 600;
@@ -34,7 +34,7 @@ PROTOTYPE Mst_Default_Dragon_Ice(C_Npc)
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;
 	damage		[DAM_INDEX_FIRE]	=	159;
-	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fьr Fire+Fly
+	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fСЊr Fire+Fly
 //	damage		[DAM_INDEX_MAGIC]	=	0;
 
 	//----- Kampf-Taktik ----	
@@ -75,7 +75,7 @@ func void B_SetVisuals_Dragon_Ice()
 
 INSTANCE Dragon_Ice	(Mst_Default_Dragon_Ice)
 {
-	name	=	"Финкрег";
+	name	=	"Р¤РёРЅРєСЂРµРі";
 	flags				   			= 	NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Ice();
 	Npc_SetToFistMode(self);

@@ -224,7 +224,7 @@ func void B_SetHeroWeapon()
    
 };
 //***************************************************************************
-//	Hero bekommt Ausr¸stung
+//	Hero bekommt Ausr—åstung
 //***************************************************************************
 func void B_SetHeroEquipment()
 {
@@ -549,8 +549,8 @@ func VOID CH_Guild_Info()
     Info_AddChoice	(CH_Guild, DIALOG_BACK		, CH_Guild_BACK);
     Info_AddChoice	(CH_Guild, "Novize"      	, CH_NOV);	    
     Info_AddChoice	(CH_Guild, "KDF"       		, CH_KDF);   
-    Info_AddChoice	(CH_Guild, "Sˆldner"   		, CH_SLD);
-    Info_AddChoice	(CH_Guild, "Drachenj‰ger"       , CH_DJG);
+    Info_AddChoice	(CH_Guild, "S—Üldner"   		, CH_SLD);
+    Info_AddChoice	(CH_Guild, "Drachenj–¥ger"       , CH_DJG);
     Info_AddChoice	(CH_Guild, "Miliz"       	, CH_MIL);    
     Info_AddChoice	(CH_Guild, "Paladin"  		, CH_PAL);
     Info_AddChoice	(CH_Guild, "None"        	, CH_NONE);
@@ -681,7 +681,7 @@ INSTANCE CH_Level_Stopper (C_INFO)
 	nr 				= 99;
 	condition		= CH_Level_Stopper_Condition;
 	information		= CH_Level_Stopper_Info;
-	description		= "ZUR‹CK"; 
+	description		= "ZUR–¨CK"; 
 	permanent		=  TRUE;
 };
 
@@ -1516,7 +1516,7 @@ func void CH_Level_50()
 	B_SetHeroWeapon();
 	B_SetHeroEquipment();
 };//*********************************************
-//Geschick und St‰rke
+//Geschick und St–¥rke
 //*********************************************
 //---------------------------
 var int AttributeStart;
@@ -1528,7 +1528,7 @@ INSTANCE DIA_CH_Attribute_Start (C_INFO)
 	condition	= DIA_CH_Attribute_Start_Condition;
 	information	= DIA_CH_Attribute_Start_Info;
 	permanent	= TRUE;
-	description = "St‰rke und Geschick";
+	description = "St–¥rke und Geschick";
 };                       
 
 FUNC INT DIA_CH_Attribute_Start_Condition()
@@ -1557,7 +1557,7 @@ INSTANCE DIA_CH_Attribute_Stopper (C_INFO)
 	condition	= DIA_CH_Attribute_Stopper_Condition;
 	information	= DIA_CH_Attribute_Stopper_Info;
 	permanent	= TRUE;
-	description = "ZUR‹CK";
+	description = "ZUR–¨CK";
 };                       
 
 FUNC INT DIA_CH_Attribute_Stopper_Condition()
@@ -1572,7 +1572,7 @@ FUNC VOID DIA_CH_Attribute_Stopper_Info()
 	AttributeStart = FALSE;
 };
 //*********************************************
-// Attribute St‰rke 
+// Attribute St–¥rke 
 //*********************************************
 INSTANCE DIA_CH_Strength (C_INFO)
 {
@@ -1581,7 +1581,7 @@ INSTANCE DIA_CH_Strength (C_INFO)
 	condition	= DIA_CH_Strength_Condition;
 	information	= DIA_CH_Strength_Info;
 	permanent	= TRUE;
-	description = "St‰rke steigern";
+	description = "St–¥rke steigern";
 };                       
 
 FUNC INT DIA_CH_Strength_Condition()
@@ -1596,10 +1596,10 @@ FUNC VOID DIA_CH_Strength_Info()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 	
 	
 };
@@ -1614,10 +1614,10 @@ FUNC VOID DIA_CH_Strength_1()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 };
 FUNC VOID DIA_CH_Strength_5()
 {
@@ -1626,10 +1626,10 @@ FUNC VOID DIA_CH_Strength_5()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 };
 FUNC VOID DIA_CH_Strength_10()
 {
@@ -1638,10 +1638,10 @@ FUNC VOID DIA_CH_Strength_10()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 };
 FUNC VOID DIA_CH_Strength_20()
 {
@@ -1650,10 +1650,10 @@ FUNC VOID DIA_CH_Strength_20()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St‰rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("St–¥rke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 };
 //******************************************************************************************
 // Attribut Geschicklichkeit 
@@ -1787,7 +1787,7 @@ INSTANCE DIA_CH_MAGIE_Stopper (C_INFO)
 	condition	= DIA_CH_MAGIE_Stopper_Condition;
 	information	= DIA_CH_MAGIE_Stopper_Info;
 	permanent	= TRUE;
-	description = "ZUR‹CK";
+	description = "ZUR–¨CK";
 };                       
 
 FUNC INT DIA_CH_MAGIE_Stopper_Condition()
@@ -1918,7 +1918,7 @@ FUNC VOID DIA_CH_KREISE_Info()
 	//Info_AddChoice	  (DIA_CH_KREISE,"Paladin-Runen",  CH_Training_Runen_Paladin);
 	
 	Info_AddChoice 	  (DIA_CH_KREISE,"Sechster Kreis",CH_KREISE_6);
-	Info_AddChoice 	  (DIA_CH_KREISE,"F¸nfter Kreis", CH_KREISE_5);
+	Info_AddChoice 	  (DIA_CH_KREISE,"F—ånfter Kreis", CH_KREISE_5);
 	Info_AddChoice 	  (DIA_CH_KREISE,"Vierter Kreis", CH_KREISE_4);
 	Info_AddChoice 	  (DIA_CH_KREISE,"Dritter Kreis", CH_KREISE_3);
 	Info_AddChoice 	  (DIA_CH_KREISE,"Zweiter Kreis", CH_KREISE_2);
@@ -2247,7 +2247,7 @@ FUNC VOID CH_Training_Runen_Circle_4_SPL_Pyrokinesis()
 	B_TeachPlayerTalentRunes (self, other, SPL_Pyrokinesis);		
 };
 //**********************************************************
-// F¸nfter Kreis 
+// F—ånfter Kreis 
 //--------------------------
 //**********************************************************
 FUNC VOID DIA_CH_Runen_5()
@@ -2390,7 +2390,7 @@ INSTANCE DIA_CH_Kampf_Stopper (C_INFO)
 	condition	= DIA_CH_Kampf_Stopper_Condition;
 	information	= DIA_CH_Kampf_Stopper_Info;
 	permanent	= TRUE;
-	description = "ZUR‹CK";
+	description = "ZUR–¨CK";
 };                       
 
 FUNC INT DIA_CH_Kampf_Stopper_Condition()
@@ -2811,7 +2811,7 @@ INSTANCE DIA_CH_Dieb_Stopper (C_INFO)
 	condition	= DIA_CH_Dieb_Stopper_Condition;
 	information	= DIA_CH_Dieb_Stopper_Info;
 	permanent	= TRUE;
-	description = "ZUR‹CK";
+	description = "ZUR–¨CK";
 };                       
 
 FUNC INT DIA_CH_Dieb_Stopper_Condition()
@@ -2880,7 +2880,7 @@ FUNC VOID DIA_CH_Dieb_Schleichen_Info()
 	Info_AddChoice		(DIA_CH_Dieb_Schleichen, B_BuildLearnString("Schleichen"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,CH_Training_Thief_Sneak);
 };
 //*********************************************
-//Dieb Schlˆsser ˆffnen
+//Dieb Schl—Üsser —Üffnen
 //*********************************************
 INSTANCE DIA_CH_Dieb_Picklock (C_INFO)
 {
@@ -2889,7 +2889,7 @@ INSTANCE DIA_CH_Dieb_Picklock (C_INFO)
 	condition	= DIA_CH_Dieb_Picklock_Condition;
 	information	= DIA_CH_Dieb_Picklock_Info;
 	permanent	= TRUE;
-	description = "Schlˆsser ˆffnen";
+	description = "Schl—Üsser —Üffnen";
 };                       
 
 FUNC INT DIA_CH_Dieb_Picklock_Condition()
@@ -2904,7 +2904,7 @@ FUNC VOID DIA_CH_Dieb_Picklock_Info()
 	Info_ClearChoices  	(DIA_CH_Dieb_Picklock );
 	Info_AddChoice 		(DIA_CH_Dieb_Picklock ,DIALOG_BACK,DIA_CH_Dieb_Picklock_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dieb_Picklock , B_BuildLearnString("Schlˆsser knacken"	, B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1))		,CH_Training_Thief_Picklock);
+	Info_AddChoice		(DIA_CH_Dieb_Picklock , B_BuildLearnString("Schl—Üsser knacken"	, B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1))		,CH_Training_Thief_Picklock);
 };
 //*********************************************
 //Alle Diebestalente auf einen Schlag 
@@ -2942,7 +2942,7 @@ FUNC VOID DIA_CH_Dieb_Alle_Info()
 	Info_AddChoice		(DIA_CH_Dieb_Alle , B_BuildLearnString("Alle Diebestalente", kosten_alle), CH_Training_Thief_Alle);
 };
 //***************************************************************************
-// Talente Diebesf‰higkeiten
+// Talente Diebesf–¥higkeiten
 //***************************************************************************
 FUNC VOID DIA_CH_Dieb_Alle_BACK()
 {
@@ -3000,7 +3000,7 @@ INSTANCE DIA_CH_Misc_Start (C_INFO)
 	condition	= DIA_CH_Misc_Start_Condition;
 	information	= DIA_CH_Misc_Start_Info;
 	permanent	= TRUE;
-	description = "Sonstiges (Tr‰nke,Troph‰en,Schmieden,Paladin-Runen,Sprache)";
+	description = "Sonstiges (Tr–¥nke,Troph–¥en,Schmieden,Paladin-Runen,Sprache)";
 };                       
 
 FUNC INT DIA_CH_Misc_Start_Condition()
@@ -3029,7 +3029,7 @@ INSTANCE DIA_CH_Misc_Stopper (C_INFO)
 	condition	= DIA_CH_Misc_Stopper_Condition;
 	information	= DIA_CH_Misc_Stopper_Info;
 	permanent	= TRUE;
-	description = "ZUR‹CK";
+	description = "ZUR–¨CK";
 };                       
 
 FUNC INT DIA_CH_Misc_Stopper_Condition()
@@ -3060,7 +3060,7 @@ INSTANCE DIA_CH_Misc_Alchemie (C_INFO)
 	condition	= DIA_CH_Misc_Alchemie_Condition;
 	information	= DIA_CH_Misc_Alchemie_Info;
 	permanent	= TRUE;
-	description = "Alchemie - die Kunst Tr‰nke zu brauen";
+	description = "Alchemie - die Kunst Tr–¥nke zu brauen";
 };                       
 
 FUNC INT DIA_CH_Misc_Alchemie_Condition()
@@ -3088,7 +3088,7 @@ INSTANCE DIA_CH_Misc_Alchemie_Stopper (C_INFO)
 	condition	= DIA_CH_Misc_Alchemie_Stopper_Condition;
 	information	= DIA_CH_Misc_Alchemie_Stopper_Info;
 	permanent	= TRUE;
-	description = "ZUR‹CK";
+	description = "ZUR–¨CK";
 };                       
 
 FUNC INT DIA_CH_Misc_Alchemie_Stopper_Condition()
@@ -3103,7 +3103,7 @@ FUNC VOID DIA_CH_Misc_Alchemie_Stopper_Info()
 	AlchemyStart = FALSE;
 };
 //*********************************************
-//Heiltr‰nke aller Art
+//Heiltr–¥nke aller Art
 //*********************************************
 INSTANCE DIA_CH_Misc_Health (C_INFO)
 {
@@ -3112,7 +3112,7 @@ INSTANCE DIA_CH_Misc_Health (C_INFO)
 	condition	= DIA_CH_Misc_Health_Condition;
 	information	= DIA_CH_Misc_Health_Info;
 	permanent	= TRUE;
-	description = "Heiltr‰nke aller Art";
+	description = "Heiltr–¥nke aller Art";
 };                       
 
 FUNC INT DIA_CH_Misc_Health_Condition()
@@ -3169,7 +3169,7 @@ FUNC VOID CH_Training_Alchemy_POTION_Perm_Health ()
 	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_Health);
 };
 //*********************************************
-//Manatr‰nke aller Art
+//Manatr–¥nke aller Art
 //*********************************************
 INSTANCE DIA_CH_Misc_Mana (C_INFO)
 {
@@ -3178,7 +3178,7 @@ INSTANCE DIA_CH_Misc_Mana (C_INFO)
 	condition	= DIA_CH_Misc_Mana_Condition;
 	information	= DIA_CH_Misc_Mana_Info;
 	permanent	= TRUE;
-	description = "Manatr‰nke aller Art";
+	description = "Manatr–¥nke aller Art";
 };                       
 
 FUNC INT DIA_CH_Misc_Mana_Condition()
@@ -3235,7 +3235,7 @@ FUNC VOID CH_Training_Alchemy_POTION_Perm_Mana ()
 	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_Mana);
 };
 //*********************************************
-//Spezielle Tr‰nke 
+//Spezielle Tr–¥nke 
 //*********************************************
 INSTANCE DIA_CH_Misc_Special (C_INFO)
 {
@@ -3244,7 +3244,7 @@ INSTANCE DIA_CH_Misc_Special (C_INFO)
 	condition	= DIA_CH_Misc_Special_Condition;
 	information	= DIA_CH_Misc_Special_Info;
 	permanent	= TRUE;
-	description = "Spezielle Tr‰nke";
+	description = "Spezielle Tr–¥nke";
 };                       
 
 FUNC INT DIA_CH_Misc_Special_Condition()
@@ -3269,7 +3269,7 @@ FUNC VOID DIA_CH_Misc_Special_Info()
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Elixier der St‰rke"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), CH_Training_Alchemy_POTION_Perm_STR);
+		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Elixier der St–¥rke"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), CH_Training_Alchemy_POTION_Perm_STR);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
@@ -3314,7 +3314,7 @@ INSTANCE DIA_CH_Misc_SmithStart (C_INFO)
 	condition	= DIA_CH_Misc_SmithStart_Condition;
 	information	= DIA_CH_Misc_SmithStart_Info;
 	permanent	= TRUE;
-	description = "Schmieden - M‰nnergruppe";
+	description = "Schmieden - M–¥nnergruppe";
 };                       
 FUNC INT DIA_CH_Misc_SmithStart_Condition()
 {
@@ -3341,7 +3341,7 @@ INSTANCE DIA_CH_Misc_SmithStopper (C_INFO)
 	condition	= DIA_CH_Misc_SmithStopper_Condition;
 	information	= DIA_CH_Misc_SmithStopper_Info;
 	permanent	= TRUE;
-	description = "ZUR‹CK";
+	description = "ZUR–¨CK";
 };                       
 
 FUNC INT DIA_CH_Misc_SmithStopper_Condition()
@@ -3544,7 +3544,7 @@ INSTANCE DIA_CH_Misc_Animal_Stopper (C_INFO)
 	condition	= DIA_CH_Misc_Animal_Stopper_Condition;
 	information	= DIA_CH_Misc_Animal_Stopper_Info;
 	permanent	= TRUE;
-	description = "ZUR‹CK";
+	description = "ZUR–¨CK";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_Stopper_Condition()
@@ -3568,7 +3568,7 @@ INSTANCE DIA_CH_Misc_Animal_allg (C_INFO)
 	condition	= DIA_CH_Misc_Animal_allg_Condition;
 	information	= DIA_CH_Misc_Animal_allg_Info;
 	permanent	= TRUE;
-	description = "Z‰hne, Fell, Klauen, Herzen";
+	description = "Z–¥hne, Fell, Klauen, Herzen";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_allg_Condition()
@@ -3585,7 +3585,7 @@ FUNC VOID DIA_CH_Misc_Animal_allg_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Z‰hne reissen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  CH_Training_TROPHYS_Teeth);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Z–¥hne reissen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  CH_Training_TROPHYS_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 	{ 
@@ -3632,7 +3632,7 @@ INSTANCE DIA_CH_Misc_Animal_Speziell (C_INFO)
 	condition	= DIA_CH_Misc_Animal_Speziell_Condition;
 	information	= DIA_CH_Misc_Animal_Speziell_Info;
 	permanent	= TRUE;
-	description = "Fl¸gel, Stachel, Zangen, Platten";
+	description = "Fl—ågel, Stachel, Zangen, Platten";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_Speziell_Condition()
@@ -3653,7 +3653,7 @@ FUNC VOID DIA_CH_Misc_Animal_Speziell_Info()
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Blutfliegenfl¸gel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  CH_Training_TROPHYS_BFWing);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Blutfliegenfl—ågel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  CH_Training_TROPHYS_BFWing);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 	{ 
@@ -3686,7 +3686,7 @@ FUNC VOID CH_Training_TROPHYS_Mandibles ()
 	B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate);
 };
 //--------------------------------------------
-//Animal Trophys Blut, Hˆrner, Schuppen
+//Animal Trophys Blut, H—Ürner, Schuppen
 //--------------------------------------------
 INSTANCE DIA_CH_Misc_Animal_other (C_INFO)
 {
@@ -3695,7 +3695,7 @@ INSTANCE DIA_CH_Misc_Animal_other (C_INFO)
 	condition	= DIA_CH_Misc_Animal_other_Condition;
 	information	= DIA_CH_Misc_Animal_other_Info;
 	permanent	= TRUE;
-	description = "Blut, Schuppen, Hˆrner, Zunge";
+	description = "Blut, Schuppen, H—Ürner, Zunge";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_other_Condition()
@@ -3712,7 +3712,7 @@ FUNC VOID DIA_CH_Misc_Animal_other_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Horn des Schattenl‰ufers",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  CH_Training_TROPHYS_ShadowHorn );
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Horn des Schattenl–¥ufers",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  CH_Training_TROPHYS_ShadowHorn );
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 	{ 
@@ -3823,7 +3823,7 @@ INSTANCE DIA_CH_Misc_PalHeal (C_INFO)
 	condition	= DIA_CH_Misc_PalHeal_Condition;
 	information	= DIA_CH_Misc_PalHeal_Info;
 	permanent	= TRUE;
-	description = "Licht und Heilspr¸che";
+	description = "Licht und Heilspr—åche";
 };                       
 
 FUNC INT DIA_CH_Misc_PalHeal_Condition()
@@ -3887,7 +3887,7 @@ INSTANCE DIA_CH_Misc_PalKampf (C_INFO)
 	condition	= DIA_CH_Misc_PalKampf_Condition;
 	information	= DIA_CH_Misc_PalKampf_Info;
 	permanent	= TRUE;
-	description = "Kampfspr¸che";
+	description = "Kampfspr—åche";
 };                       
 
 FUNC INT DIA_CH_Misc_PalKampf_Condition()

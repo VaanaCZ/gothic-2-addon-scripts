@@ -77,16 +77,16 @@ FUNC INT DIA_Addon_Skip_Hello_Condition()
 };
 func VOID DIA_Addon_Skip_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_00"); //Так-так, кто же это повстречался старому Скипу?
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_01"); //Я тебя знаю!
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_02"); //Помнишь бухту рядом с городом?
-	AI_Output (other,self ,"DIA_Addon_Skip_Hello_15_03"); //Скип, верно?
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_04"); //(гордо) Вижу, я произвел на тебя впечатление.
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_05"); //Но мне кажется, что я где-то еще видел твою рожу...
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_06"); //Ну конечно!
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_00"); //РўР°Рє-С‚Р°Рє, РєС‚Рѕ Р¶Рµ СЌС‚Рѕ РїРѕРІСЃС‚СЂРµС‡Р°Р»СЃСЏ СЃС‚Р°СЂРѕРјСѓ РЎРєРёРїСѓ?
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_01"); //РЇ С‚РµР±СЏ Р·РЅР°СЋ!
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_02"); //РџРѕРјРЅРёС€СЊ Р±СѓС…С‚Сѓ СЂСЏРґРѕРј СЃ РіРѕСЂРѕРґРѕРј?
+	AI_Output (other,self ,"DIA_Addon_Skip_Hello_15_03"); //РЎРєРёРї, РІРµСЂРЅРѕ?
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_04"); //(РіРѕСЂРґРѕ) Р’РёР¶Сѓ, СЏ РїСЂРѕРёР·РІРµР» РЅР° С‚РµР±СЏ РІРїРµС‡Р°С‚Р»РµРЅРёРµ.
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_05"); //РќРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ СЏ РіРґРµ-С‚Рѕ РµС‰Рµ РІРёРґРµР» С‚РІРѕСЋ СЂРѕР¶Сѓ...
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_06"); //РќСѓ РєРѕРЅРµС‡РЅРѕ!
 	B_UseFakeScroll ();
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_07"); //Не полное сходство, конечно, но это точно ты.
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_08"); //Но не расстраивайся, приятель. Мое лицо на объявлении о розыске выглядит не лучше.
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_07"); //РќРµ РїРѕР»РЅРѕРµ СЃС…РѕРґСЃС‚РІРѕ, РєРѕРЅРµС‡РЅРѕ, РЅРѕ СЌС‚Рѕ С‚РѕС‡РЅРѕ С‚С‹.
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_08"); //РќРѕ РЅРµ СЂР°СЃСЃС‚СЂР°РёРІР°Р№СЃСЏ, РїСЂРёСЏС‚РµР»СЊ. РњРѕРµ Р»РёС†Рѕ РЅР° РѕР±СЉСЏРІР»РµРЅРёРё Рѕ СЂРѕР·С‹СЃРєРµ РІС‹РіР»СЏРґРёС‚ РЅРµ Р»СѓС‡С€Рµ.
 	Npc_ExchangeRoutine	(self,"Start");
 };
 
@@ -100,7 +100,7 @@ instance DIA_Addon_SkipADW_BaltramPaket		(C_INFO)
 	condition	= DIA_Addon_SkipADW_BaltramPaket_Condition;
 	information	= DIA_Addon_SkipADW_BaltramPaket_Info;
 
-	description	= "У меня для тебя посылка от Бальтрама.";
+	description	= "РЈ РјРµРЅСЏ РґР»СЏ С‚РµР±СЏ РїРѕСЃС‹Р»РєР° РѕС‚ Р‘Р°Р»СЊС‚СЂР°РјР°.";
 };
 func int DIA_Addon_SkipADW_BaltramPaket_Condition ()
 {
@@ -111,10 +111,10 @@ func int DIA_Addon_SkipADW_BaltramPaket_Condition ()
 };
 func void DIA_Addon_SkipADW_BaltramPaket_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_SkipADW_BaltramPaket_15_00"); //У меня для тебя посылка от Бальтрама.
-	AI_Output	(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_01"); //(усмехается) Да, похоже этот парень действительно пристрастился к нашему рому.
+	AI_Output	(other, self, "DIA_Addon_SkipADW_BaltramPaket_15_00"); //РЈ РјРµРЅСЏ РґР»СЏ С‚РµР±СЏ РїРѕСЃС‹Р»РєР° РѕС‚ Р‘Р°Р»СЊС‚СЂР°РјР°.
+	AI_Output	(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_01"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) Р”Р°, РїРѕС…РѕР¶Рµ СЌС‚РѕС‚ РїР°СЂРµРЅСЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂРёСЃС‚СЂР°СЃС‚РёР»СЃСЏ Рє РЅР°С€РµРјСѓ СЂРѕРјСѓ.
 	B_GiveInvItems (other, self, ItMi_Packet_Baltram4Skip_Addon,1);
-	AI_Output	(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_02"); //Вот, передай ему две бутылки. Третью я выпил, пока его ждал.
+	AI_Output	(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_02"); //Р’РѕС‚, РїРµСЂРµРґР°Р№ РµРјСѓ РґРІРµ Р±СѓС‚С‹Р»РєРё. РўСЂРµС‚СЊСЋ СЏ РІС‹РїРёР», РїРѕРєР° РµРіРѕ Р¶РґР°Р».
 	B_GiveInvItems (self, other, ItFo_Addon_Rum, 2);		
 	B_GivePlayerXP (XP_Addon_Skip_BaltramPaket);
 	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,LogText_Addon_SkipsRumToBaltram); 
@@ -131,7 +131,7 @@ INSTANCE DIA_Addon_Skip_Job(C_INFO)
 	condition	= DIA_Addon_Skip_Job_Condition;
 	information	= DIA_Addon_Skip_Job_Info;
 
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };                       
 FUNC INT DIA_Addon_Skip_Job_Condition()
 {
@@ -140,8 +140,8 @@ FUNC INT DIA_Addon_Skip_Job_Condition()
 
 FUNC VOID DIA_Addon_Skip_Job_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_Job_15_00"); //Что ты здесь делаешь?
-	AI_Output (self ,other, "DIA_Addon_Skip_Job_08_01"); //Я только что вернулся из Хориниса и теперь жду возвращения Грега.
+	AI_Output (other, self, "DIA_Addon_Skip_Job_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self ,other, "DIA_Addon_Skip_Job_08_01"); //РЇ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РІРµСЂРЅСѓР»СЃСЏ РёР· РҐРѕСЂРёРЅРёСЃР° Рё С‚РµРїРµСЂСЊ Р¶РґСѓ РІРѕР·РІСЂР°С‰РµРЅРёСЏ Р“СЂРµРіР°.
 };
 
 // ************************************************************
@@ -154,7 +154,7 @@ instance DIA_Addon_Skip_ADW_GregGetroffen		(C_INFO)
 	condition	= DIA_Addon_Skip_ADW_GregGetroffen_Condition;
 	information	= DIA_Addon_Skip_ADW_GregGetroffen_Info;
 
-	description	= "Я видел Грега в Хоринисе.";
+	description	= "РЇ РІРёРґРµР» Р“СЂРµРіР° РІ РҐРѕСЂРёРЅРёСЃРµ.";
 };
 func int DIA_Addon_Skip_ADW_GregGetroffen_Condition ()
 {
@@ -167,16 +167,16 @@ func int DIA_Addon_Skip_ADW_GregGetroffen_Condition ()
 };
 func void DIA_Addon_Skip_ADW_GregGetroffen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Skip_ADW_GregGetroffen_15_00"); //Я видел Грега в Хоринисе.
-	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_01"); //Правда? Дьявол! Видимо, что-то пошло не так.
-	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_02"); //Он уже давно должен был вернуться сюда на своем корабле.
-	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_03"); //Полагаю, я должен вернуться в Хоринис и встретиться с ним...
-	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_04"); //(вздыхает) Нет, пожалуй, не сегодня. В конце концов, я только что оттуда.
+	AI_Output (other, self, "DIA_Addon_Skip_ADW_GregGetroffen_15_00"); //РЇ РІРёРґРµР» Р“СЂРµРіР° РІ РҐРѕСЂРёРЅРёСЃРµ.
+	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_01"); //РџСЂР°РІРґР°? Р”СЊСЏРІРѕР»! Р’РёРґРёРјРѕ, С‡С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє.
+	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_02"); //РћРЅ СѓР¶Рµ РґР°РІРЅРѕ РґРѕР»Р¶РµРЅ Р±С‹Р» РІРµСЂРЅСѓС‚СЊСЃСЏ СЃСЋРґР° РЅР° СЃРІРѕРµРј РєРѕСЂР°Р±Р»Рµ.
+	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_03"); //РџРѕР»Р°РіР°СЋ, СЏ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РҐРѕСЂРёРЅРёСЃ Рё РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РЅРёРј...
+	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_04"); //(РІР·РґС‹С…Р°РµС‚) РќРµС‚, РїРѕР¶Р°Р»СѓР№, РЅРµ СЃРµРіРѕРґРЅСЏ. Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, СЏ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РѕС‚С‚СѓРґР°.
 	B_GivePlayerXP (XP_Ambient);
 };
 
 // ************************************************************
-// 			  			Ьberfahrt - PERM
+// 			  			Р¬berfahrt - PERM
 // ************************************************************
 var int Skip_Transport_Variation;
 // ------------------------------------------------------------
@@ -187,7 +187,7 @@ instance DIA_Addon_Skip_Transport(C_INFO)
 	condition	= DIA_Addon_Skip_Transport_Condition;
 	information	= DIA_Addon_Skip_Transport_Info;
 	permanent	= TRUE;
-	description = "Ты можешь отвезти меня в Хоринис?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РѕС‚РІРµР·С‚Рё РјРµРЅСЏ РІ РҐРѕСЂРёРЅРёСЃ?";
 };                       
 FUNC INT DIA_Addon_Skip_Transport_Condition()
 {
@@ -199,25 +199,25 @@ FUNC INT DIA_Addon_Skip_Transport_Condition()
 };
 FUNC VOID DIA_Addon_Skip_Transport_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_Transport_15_00"); //Ты можешь отвезти меня в Хоринис?
+	AI_Output (other,self ,"DIA_Addon_Skip_Transport_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РѕС‚РІРµР·С‚Рё РјРµРЅСЏ РІ РҐРѕСЂРёРЅРёСЃ?
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_01"); //Нет, приятель. Сейчас я никуда не поплыву. Сначала мне нужно достать себе грога.
+		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_01"); //РќРµС‚, РїСЂРёСЏС‚РµР»СЊ. РЎРµР№С‡Р°СЃ СЏ РЅРёРєСѓРґР° РЅРµ РїРѕРїР»С‹РІСѓ. РЎРЅР°С‡Р°Р»Р° РјРЅРµ РЅСѓР¶РЅРѕ РґРѕСЃС‚Р°С‚СЊ СЃРµР±Рµ РіСЂРѕРіР°.
 	}
 	else if (Skip_Transport_Variation == 0)
 	{
-		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_02"); //Ты рехнулся? Мы потеряли корабль, приятель!
-		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_03"); //Я не собираюсь рисковать нашей последней шлюпкой только потому, что тебе лень самостоятельно дотащить свою задницу до Хориниса!
+		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_02"); //РўС‹ СЂРµС…РЅСѓР»СЃСЏ? РњС‹ РїРѕС‚РµСЂСЏР»Рё РєРѕСЂР°Р±Р»СЊ, РїСЂРёСЏС‚РµР»СЊ!
+		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_03"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ СЂРёСЃРєРѕРІР°С‚СЊ РЅР°С€РµР№ РїРѕСЃР»РµРґРЅРµР№ С€Р»СЋРїРєРѕР№ С‚РѕР»СЊРєРѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ С‚РµР±Рµ Р»РµРЅСЊ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ РґРѕС‚Р°С‰РёС‚СЊ СЃРІРѕСЋ Р·Р°РґРЅРёС†Сѓ РґРѕ РҐРѕСЂРёРЅРёСЃР°!
 		Skip_Transport_Variation = 1;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_04"); //Последний раз отвечаю: НЕТ!
+		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_04"); //РџРѕСЃР»РµРґРЅРёР№ СЂР°Р· РѕС‚РІРµС‡Р°СЋ: РќР•Рў!
 	};
 };
 
 // ************************************************************
-// 			 			Banditen + Rьstung
+// 			 			Banditen + RСЊstung
 // ************************************************************
 // ------------------------------------------------------------
 // 							About Bandits
@@ -229,7 +229,7 @@ INSTANCE DIA_Addon_Skip_Bandits(C_INFO)
 	condition	= DIA_Addon_Skip_Bandits_Condition;
 	information	= DIA_Addon_Skip_Bandits_Info;
 
-	description = "Что ты мне можешь рассказать о бандитах?";
+	description = "Р§С‚Рѕ С‚С‹ РјРЅРµ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ Р±Р°РЅРґРёС‚Р°С…?";
 };                       
 FUNC INT DIA_Addon_Skip_Bandits_Condition()
 {
@@ -237,26 +237,26 @@ FUNC INT DIA_Addon_Skip_Bandits_Condition()
 };
 func VOID DIA_Addon_Skip_Bandits_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_Bandits_15_00"); //Что ты мне можешь рассказать о бандитах?
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_01"); //Бандиты?! Они нападают на нас!
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_02"); //Как ты думаешь, почему мы строим эту ограду?
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_03"); //Мы сами привезли сюда этих подонков.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_04"); //Сначала мы с ними торговали. И скажу тебе, приятель, что у них столько золота, что они не знают, куда его девать!
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_05"); //За бутылку рома они были платить любую цену.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_06"); //Но мирные времена прошли. Теперь у нас война!
-	AI_Output (other, self, "DIA_Addon_Erol_Bandits_15_06"); //Что произошло?
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_07"); //Эти сволочи не заплатили за последнюю поставку.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_08"); //Поэтому я пошел к ним, чтобы узнать, что случилось с нашим золотом.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_09"); //Но когда я дошел до болота, эти гады напали на меня!
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_10"); //Но это еще не все. Они убили Ангуса и Хэнка - двоих наших лучших людей.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_11"); //Мой тебе совет, парень: держись от этого болота подальше.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_12"); //Бандиты нападают на каждого, кто выглядит побогаче, чем они.
+	AI_Output (other, self, "DIA_Addon_Skip_Bandits_15_00"); //Р§С‚Рѕ С‚С‹ РјРЅРµ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ Р±Р°РЅРґРёС‚Р°С…?
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_01"); //Р‘Р°РЅРґРёС‚С‹?! РћРЅРё РЅР°РїР°РґР°СЋС‚ РЅР° РЅР°СЃ!
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_02"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, РїРѕС‡РµРјСѓ РјС‹ СЃС‚СЂРѕРёРј СЌС‚Сѓ РѕРіСЂР°РґСѓ?
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_03"); //РњС‹ СЃР°РјРё РїСЂРёРІРµР·Р»Рё СЃСЋРґР° СЌС‚РёС… РїРѕРґРѕРЅРєРѕРІ.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_04"); //РЎРЅР°С‡Р°Р»Р° РјС‹ СЃ РЅРёРјРё С‚РѕСЂРіРѕРІР°Р»Рё. Р СЃРєР°Р¶Сѓ С‚РµР±Рµ, РїСЂРёСЏС‚РµР»СЊ, С‡С‚Рѕ Сѓ РЅРёС… СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°, С‡С‚Рѕ РѕРЅРё РЅРµ Р·РЅР°СЋС‚, РєСѓРґР° РµРіРѕ РґРµРІР°С‚СЊ!
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_05"); //Р—Р° Р±СѓС‚С‹Р»РєСѓ СЂРѕРјР° РѕРЅРё Р±С‹Р»Рё РїР»Р°С‚РёС‚СЊ Р»СЋР±СѓСЋ С†РµРЅСѓ.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_06"); //РќРѕ РјРёСЂРЅС‹Рµ РІСЂРµРјРµРЅР° РїСЂРѕС€Р»Рё. РўРµРїРµСЂСЊ Сѓ РЅР°СЃ РІРѕР№РЅР°!
+	AI_Output (other, self, "DIA_Addon_Erol_Bandits_15_06"); //Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ?
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_07"); //Р­С‚Рё СЃРІРѕР»РѕС‡Рё РЅРµ Р·Р°РїР»Р°С‚РёР»Рё Р·Р° РїРѕСЃР»РµРґРЅСЋСЋ РїРѕСЃС‚Р°РІРєСѓ.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_08"); //РџРѕСЌС‚РѕРјСѓ СЏ РїРѕС€РµР» Рє РЅРёРј, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РЅР°С€РёРј Р·РѕР»РѕС‚РѕРј.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_09"); //РќРѕ РєРѕРіРґР° СЏ РґРѕС€РµР» РґРѕ Р±РѕР»РѕС‚Р°, СЌС‚Рё РіР°РґС‹ РЅР°РїР°Р»Рё РЅР° РјРµРЅСЏ!
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_10"); //РќРѕ СЌС‚Рѕ РµС‰Рµ РЅРµ РІСЃРµ. РћРЅРё СѓР±РёР»Рё РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР° - РґРІРѕРёС… РЅР°С€РёС… Р»СѓС‡С€РёС… Р»СЋРґРµР№.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_11"); //РњРѕР№ С‚РµР±Рµ СЃРѕРІРµС‚, РїР°СЂРµРЅСЊ: РґРµСЂР¶РёСЃСЊ РѕС‚ СЌС‚РѕРіРѕ Р±РѕР»РѕС‚Р° РїРѕРґР°Р»СЊС€Рµ.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_12"); //Р‘Р°РЅРґРёС‚С‹ РЅР°РїР°РґР°СЋС‚ РЅР° РєР°Р¶РґРѕРіРѕ, РєС‚Рѕ РІС‹РіР»СЏРґРёС‚ РїРѕР±РѕРіР°С‡Рµ, С‡РµРј РѕРЅРё.
 	
 	
 };
 
 // ------------------------------------------------------------
-// 						Banditenrьstung
+// 						BanditenrСЊstung
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Skip_ArmorPrice(C_INFO)
 {
@@ -265,7 +265,7 @@ INSTANCE DIA_Addon_Skip_ArmorPrice(C_INFO)
 	condition	= DIA_Addon_Skip_ArmorPrice_Condition;
 	information	= DIA_Addon_Skip_ArmorPrice_Info;
 
-	description = "Мне нужны доспехи бандитов.";
+	description = "РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё Р±Р°РЅРґРёС‚РѕРІ.";
 };                       
 FUNC INT DIA_Addon_Skip_ArmorPrice_Condition()
 {
@@ -277,19 +277,19 @@ FUNC INT DIA_Addon_Skip_ArmorPrice_Condition()
 };
 func VOID DIA_Addon_Skip_ArmorPrice_Info()
 {	
-	AI_Output (other,self , "DIA_Addon_Skip_ArmorPrice_15_00"); //Мне нужны доспехи бандитов.
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_01"); //Ты хочешь пойти на болото? Ты сошел с ума! 
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_02"); //Как только они поймут, что ты - не один из них, тебе конец!
-	AI_Output (other, self, "DIA_Addon_Skip_ArmorPrice_15_02"); //Ты не знаешь, где я могу найти бандитские доспехи?
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_03"); //(вздыхает) А тебя просто так не отговорить, верно? Ну хорошо. У нас был комплект таких доспехов.
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_04"); //Он, наверное, до сих пор лежит в хижине Грега.
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_05"); //Может быть, когда Грег вернется, ты сможешь купить у него доспехи...
+	AI_Output (other,self , "DIA_Addon_Skip_ArmorPrice_15_00"); //РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_01"); //РўС‹ С…РѕС‡РµС€СЊ РїРѕР№С‚Рё РЅР° Р±РѕР»РѕС‚Рѕ? РўС‹ СЃРѕС€РµР» СЃ СѓРјР°! 
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_02"); //РљР°Рє С‚РѕР»СЊРєРѕ РѕРЅРё РїРѕР№РјСѓС‚, С‡С‚Рѕ С‚С‹ - РЅРµ РѕРґРёРЅ РёР· РЅРёС…, С‚РµР±Рµ РєРѕРЅРµС†!
+	AI_Output (other, self, "DIA_Addon_Skip_ArmorPrice_15_02"); //РўС‹ РЅРµ Р·РЅР°РµС€СЊ, РіРґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р±Р°РЅРґРёС‚СЃРєРёРµ РґРѕСЃРїРµС…Рё?
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_03"); //(РІР·РґС‹С…Р°РµС‚) Рђ С‚РµР±СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє РЅРµ РѕС‚РіРѕРІРѕСЂРёС‚СЊ, РІРµСЂРЅРѕ? РќСѓ С…РѕСЂРѕС€Рѕ. РЈ РЅР°СЃ Р±С‹Р» РєРѕРјРїР»РµРєС‚ С‚Р°РєРёС… РґРѕСЃРїРµС…РѕРІ.
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_04"); //РћРЅ, РЅР°РІРµСЂРЅРѕРµ, РґРѕ СЃРёС… РїРѕСЂ Р»РµР¶РёС‚ РІ С…РёР¶РёРЅРµ Р“СЂРµРіР°.
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_05"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РєРѕРіРґР° Р“СЂРµРі РІРµСЂРЅРµС‚СЃСЏ, С‚С‹ СЃРјРѕР¶РµС€СЊ РєСѓРїРёС‚СЊ Сѓ РЅРµРіРѕ РґРѕСЃРїРµС…Рё...
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Скип думает, что доспехи находятся в хижине Грега."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"РЎРєРёРї РґСѓРјР°РµС‚, С‡С‚Рѕ РґРѕСЃРїРµС…Рё РЅР°С…РѕРґСЏС‚СЃСЏ РІ С…РёР¶РёРЅРµ Р“СЂРµРіР°."); 
 };
 
 // ------------------------------------------------------------
-// 						In Gregs Hьtte
+// 						In Gregs HСЊtte
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Skip_GregsHut(C_INFO)
 {
@@ -298,7 +298,7 @@ INSTANCE DIA_Addon_Skip_GregsHut(C_INFO)
 	condition	= DIA_Addon_Skip_GregsHut_Condition;
 	information	= DIA_Addon_Skip_GregsHut_Info;
 	permanent	= FALSE;
-	description = "Ты можешь сказать, как попасть в хижину Грега?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ, РєР°Рє РїРѕРїР°СЃС‚СЊ РІ С…РёР¶РёРЅСѓ Р“СЂРµРіР°?";
 };                       
 FUNC INT DIA_Addon_Skip_GregsHut_Condition()
 {
@@ -311,18 +311,18 @@ FUNC INT DIA_Addon_Skip_GregsHut_Condition()
 
 FUNC VOID DIA_Addon_Skip_GregsHut_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_GregsHut_15_00"); //Ты можешь сказать, как попасть в его хижину?
-	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_01"); //Эй, эй, не так быстро!
-	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_02"); //Ты же не собираешься копаться в вещах Грега?
-	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_03"); //Когда Грег уезжал, он оставил ключ от хижины Фрэнсису и приказал ему никого не пускать внутрь.
+	AI_Output (other,self ,"DIA_Addon_Skip_GregsHut_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ, РєР°Рє РїРѕРїР°СЃС‚СЊ РІ РµРіРѕ С…РёР¶РёРЅСѓ?
+	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_01"); //Р­Р№, СЌР№, РЅРµ С‚Р°Рє Р±С‹СЃС‚СЂРѕ!
+	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_02"); //РўС‹ Р¶Рµ РЅРµ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РєРѕРїР°С‚СЊСЃСЏ РІ РІРµС‰Р°С… Р“СЂРµРіР°?
+	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_03"); //РљРѕРіРґР° Р“СЂРµРі СѓРµР·Р¶Р°Р», РѕРЅ РѕСЃС‚Р°РІРёР» РєР»СЋС‡ РѕС‚ С…РёР¶РёРЅС‹ Р¤СЂСЌРЅСЃРёСЃСѓ Рё РїСЂРёРєР°Р·Р°Р» РµРјСѓ РЅРёРєРѕРіРѕ РЅРµ РїСѓСЃРєР°С‚СЊ РІРЅСѓС‚СЂСЊ.
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"У Фрэнсиса есть ключ от хижины, но ему приказано никого в нее не пускать."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"РЈ Р¤СЂСЌРЅСЃРёСЃР° РµСЃС‚СЊ РєР»СЋС‡ РѕС‚ С…РёР¶РёРЅС‹, РЅРѕ РµРјСѓ РїСЂРёРєР°Р·Р°РЅРѕ РЅРёРєРѕРіРѕ РІ РЅРµРµ РЅРµ РїСѓСЃРєР°С‚СЊ."); 
 	
 	Knows_GregsHut = TRUE;
 };
 
 // ------------------------------------------------------------
-//					Ьber Francis --> Samuel
+//					Р¬ber Francis --> Samuel
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Skip_Francis (C_INFO)
 {
@@ -331,7 +331,7 @@ INSTANCE DIA_Addon_Skip_Francis (C_INFO)
 	condition	= DIA_Addon_Skip_Francis_Condition;
 	information	= DIA_Addon_Skip_Francis_Info;
 	permanent	= FALSE;
-	description = "Что ты мне можешь сказать о Фрэнсисе?";
+	description = "Р§С‚Рѕ С‚С‹ РјРЅРµ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?";
 };   
 FUNC INT DIA_Addon_Skip_Francis_Condition()
 {
@@ -343,15 +343,15 @@ FUNC INT DIA_Addon_Skip_Francis_Condition()
 
 FUNC VOID DIA_Addon_Skip_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_Francis_15_00"); //Что ты скажешь о Фрэнсисе?
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_01"); //Это наш казначей.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_02"); //Капитан ему доверяет. Поэтому он оставил Фрэнсиса за старшего.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_03"); //Но никто из наших не воспринимает его всерьез.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_04"); //Если хочешь узнать больше, поговори с Сэмюэлем.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_05"); //У него лаборатория в небольшой пещере на севере отсюда.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_06"); //Нет в лагере такого человека, о котором Сэмюэль не знал бы всю подноготную...
+	AI_Output (other,self ,"DIA_Addon_Skip_Francis_15_00"); //Р§С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_01"); //Р­С‚Рѕ РЅР°С€ РєР°Р·РЅР°С‡РµР№.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_02"); //РљР°РїРёС‚Р°РЅ РµРјСѓ РґРѕРІРµСЂСЏРµС‚. РџРѕСЌС‚РѕРјСѓ РѕРЅ РѕСЃС‚Р°РІРёР» Р¤СЂСЌРЅСЃРёСЃР° Р·Р° СЃС‚Р°СЂС€РµРіРѕ.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_03"); //РќРѕ РЅРёРєС‚Рѕ РёР· РЅР°С€РёС… РЅРµ РІРѕСЃРїСЂРёРЅРёРјР°РµС‚ РµРіРѕ РІСЃРµСЂСЊРµР·.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_04"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ, РїРѕРіРѕРІРѕСЂРё СЃ РЎСЌРјСЋСЌР»РµРј.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_05"); //РЈ РЅРµРіРѕ Р»Р°Р±РѕСЂР°С‚РѕСЂРёСЏ РІ РЅРµР±РѕР»СЊС€РѕР№ РїРµС‰РµСЂРµ РЅР° СЃРµРІРµСЂРµ РѕС‚СЃСЋРґР°.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_06"); //РќРµС‚ РІ Р»Р°РіРµСЂРµ С‚Р°РєРѕРіРѕ С‡РµР»РѕРІРµРєР°, Рѕ РєРѕС‚РѕСЂРѕРј РЎСЌРјСЋСЌР»СЊ РЅРµ Р·РЅР°Р» Р±С‹ РІСЃСЋ РїРѕРґРЅРѕРіРѕС‚РЅСѓСЋ...
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Я должен поговорить с Сэмюэлем. Возможно, он поможет мне."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЎСЌРјСЋСЌР»РµРј. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ РїРѕРјРѕР¶РµС‚ РјРЅРµ."); 
 };
 	
 	
@@ -368,7 +368,7 @@ INSTANCE DIA_Addon_Skip_Raven(C_INFO)
 	condition	= DIA_Addon_Skip_Raven_Condition;
 	information	= DIA_Addon_Skip_Raven_Info;
 	permanent	= FALSE;
-	description = "Ты когда-нибудь видел Ворона?";
+	description = "РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РІРёРґРµР» Р’РѕСЂРѕРЅР°?";
 };                       
 FUNC INT DIA_Addon_Skip_Raven_Condition()
 {
@@ -379,12 +379,12 @@ FUNC INT DIA_Addon_Skip_Raven_Condition()
 };
 FUNC VOID DIA_Addon_Skip_Raven_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_Raven_15_00"); //Ты когда-нибудь видел Ворона?
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_01"); //Да, бывало. Когда мы с Генри дежурили у ворот, мы наблюдали, как Ворон размещает своих людей в башне на юге.
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_02"); //От нее до нашего лагеря камень добросить можно. (смеется) Понятно, что они будут за нами шпионить.
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_03"); //А еще я видел, как он расправляется с людьми, которые ему не подчиняется.
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_04"); //С теми, кто не выполняет его приказ до последнего слова, у него разговор короткий. 
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_05"); //Запомни мои слова: не связывайся с Вороном.
+	AI_Output (other,self ,"DIA_Addon_Skip_Raven_15_00"); //РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РІРёРґРµР» Р’РѕСЂРѕРЅР°?
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_01"); //Р”Р°, Р±С‹РІР°Р»Рѕ. РљРѕРіРґР° РјС‹ СЃ Р“РµРЅСЂРё РґРµР¶СѓСЂРёР»Рё Сѓ РІРѕСЂРѕС‚, РјС‹ РЅР°Р±Р»СЋРґР°Р»Рё, РєР°Рє Р’РѕСЂРѕРЅ СЂР°Р·РјРµС‰Р°РµС‚ СЃРІРѕРёС… Р»СЋРґРµР№ РІ Р±Р°С€РЅРµ РЅР° СЋРіРµ.
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_02"); //РћС‚ РЅРµРµ РґРѕ РЅР°С€РµРіРѕ Р»Р°РіРµСЂСЏ РєР°РјРµРЅСЊ РґРѕР±СЂРѕСЃРёС‚СЊ РјРѕР¶РЅРѕ. (СЃРјРµРµС‚СЃСЏ) РџРѕРЅСЏС‚РЅРѕ, С‡С‚Рѕ РѕРЅРё Р±СѓРґСѓС‚ Р·Р° РЅР°РјРё С€РїРёРѕРЅРёС‚СЊ.
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_03"); //Рђ РµС‰Рµ СЏ РІРёРґРµР», РєР°Рє РѕРЅ СЂР°СЃРїСЂР°РІР»СЏРµС‚СЃСЏ СЃ Р»СЋРґСЊРјРё, РєРѕС‚РѕСЂС‹Рµ РµРјСѓ РЅРµ РїРѕРґС‡РёРЅСЏРµС‚СЃСЏ.
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_04"); //РЎ С‚РµРјРё, РєС‚Рѕ РЅРµ РІС‹РїРѕР»РЅСЏРµС‚ РµРіРѕ РїСЂРёРєР°Р· РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ СЃР»РѕРІР°, Сѓ РЅРµРіРѕ СЂР°Р·РіРѕРІРѕСЂ РєРѕСЂРѕС‚РєРёР№. 
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_05"); //Р—Р°РїРѕРјРЅРё РјРѕРё СЃР»РѕРІР°: РЅРµ СЃРІСЏР·С‹РІР°Р№СЃСЏ СЃ Р’РѕСЂРѕРЅРѕРј.
 };
 
 
@@ -405,7 +405,7 @@ INSTANCE DIA_Addon_Skip_AngusHank(C_INFO)
 	condition	= DIA_Addon_Skip_AngusHank_Condition;
 	information	= DIA_Addon_Skip_AngusHank_Info;
 
-	description = "Расскажи мне об Ангусе и Хэнке.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РђРЅРіСѓСЃРµ Рё РҐСЌРЅРєРµ.";
 };                       
 FUNC INT DIA_Addon_Skip_AngusHank_Condition()
 {
@@ -416,23 +416,23 @@ FUNC INT DIA_Addon_Skip_AngusHank_Condition()
 };
 func VOID DIA_Addon_Skip_AngusHank_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_AngusnHank_15_00"); //Расскажи мне об Ангусе и Хэнке.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_01"); //Ангус и Хэнк должны были встретиться с бандитами неподалеку от лагеря.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_02"); //У них с собой были различные товары. Все, что эти твари у нас заказали.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_03"); //Сталь, отмычки и так далее.  
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_04"); //Но обратно парни не вернулись. По-видимому, эти свиньи с ними расправились!
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_05"); //Морган и Билл отправились на поиски, но результатов это не принесло.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_06"); //Билл полностью подавлен. Они с Хэнком и Ангусом были друзьями.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_07"); //А он еще молод, и перенести исчезновение друзей для него непросто.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_08"); //Впрочем, жизнь продолжается. Потерю товара мы переживем. (вздыхает) Но у них был с собой грог...
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_09"); //(сердито) По меньшей мере, 20 бутылок!
+	AI_Output (other,self ,"DIA_Addon_Skip_AngusnHank_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РђРЅРіСѓСЃРµ Рё РҐСЌРЅРєРµ.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_01"); //РђРЅРіСѓСЃ Рё РҐСЌРЅРє РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ Р»Р°РіРµСЂСЏ.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_02"); //РЈ РЅРёС… СЃ СЃРѕР±РѕР№ Р±С‹Р»Рё СЂР°Р·Р»РёС‡РЅС‹Рµ С‚РѕРІР°СЂС‹. Р’СЃРµ, С‡С‚Рѕ СЌС‚Рё С‚РІР°СЂРё Сѓ РЅР°СЃ Р·Р°РєР°Р·Р°Р»Рё.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_03"); //РЎС‚Р°Р»СЊ, РѕС‚РјС‹С‡РєРё Рё С‚Р°Рє РґР°Р»РµРµ.  
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_04"); //РќРѕ РѕР±СЂР°С‚РЅРѕ РїР°СЂРЅРё РЅРµ РІРµСЂРЅСѓР»РёСЃСЊ. РџРѕ-РІРёРґРёРјРѕРјСѓ, СЌС‚Рё СЃРІРёРЅСЊРё СЃ РЅРёРјРё СЂР°СЃРїСЂР°РІРёР»РёСЃСЊ!
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_05"); //РњРѕСЂРіР°РЅ Рё Р‘РёР»Р» РѕС‚РїСЂР°РІРёР»РёСЃСЊ РЅР° РїРѕРёСЃРєРё, РЅРѕ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ СЌС‚Рѕ РЅРµ РїСЂРёРЅРµСЃР»Рѕ.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_06"); //Р‘РёР»Р» РїРѕР»РЅРѕСЃС‚СЊСЋ РїРѕРґР°РІР»РµРЅ. РћРЅРё СЃ РҐСЌРЅРєРѕРј Рё РђРЅРіСѓСЃРѕРј Р±С‹Р»Рё РґСЂСѓР·СЊСЏРјРё.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_07"); //Рђ РѕРЅ РµС‰Рµ РјРѕР»РѕРґ, Рё РїРµСЂРµРЅРµСЃС‚Рё РёСЃС‡РµР·РЅРѕРІРµРЅРёРµ РґСЂСѓР·РµР№ РґР»СЏ РЅРµРіРѕ РЅРµРїСЂРѕСЃС‚Рѕ.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_08"); //Р’РїСЂРѕС‡РµРј, Р¶РёР·РЅСЊ РїСЂРѕРґРѕР»Р¶Р°РµС‚СЃСЏ. РџРѕС‚РµСЂСЋ С‚РѕРІР°СЂР° РјС‹ РїРµСЂРµР¶РёРІРµРј. (РІР·РґС‹С…Р°РµС‚) РќРѕ Сѓ РЅРёС… Р±С‹Р» СЃ СЃРѕР±РѕР№ РіСЂРѕРі...
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_09"); //(СЃРµСЂРґРёС‚Рѕ) РџРѕ РјРµРЅСЊС€РµР№ РјРµСЂРµ, 20 Р±СѓС‚С‹Р»РѕРє!
 	MIS_ADDON_SkipsGrog = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_SkipsGrog,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_SkipsGrog,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Бандиты отобрали у Скипа 20 бутылок грога. Он хочет вернуть их.");
-	Log_AddEntry	(TOPIC_Addon_SkipsGrog,"Ангус и Хэнк должны были встретиться с бандитами. С тех пор их никто не видел.");
-	Log_AddEntry	(TOPIC_Addon_SkipsGrog,"Поиски Моргана и Билла прошли безуспешно.");
+	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Р‘Р°РЅРґРёС‚С‹ РѕС‚РѕР±СЂР°Р»Рё Сѓ РЎРєРёРїР° 20 Р±СѓС‚С‹Р»РѕРє РіСЂРѕРіР°. РћРЅ С…РѕС‡РµС‚ РІРµСЂРЅСѓС‚СЊ РёС….");
+	Log_AddEntry	(TOPIC_Addon_SkipsGrog,"РђРЅРіСѓСЃ Рё РҐСЌРЅРє РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё. РЎ С‚РµС… РїРѕСЂ РёС… РЅРёРєС‚Рѕ РЅРµ РІРёРґРµР».");
+	Log_AddEntry	(TOPIC_Addon_SkipsGrog,"РџРѕРёСЃРєРё РњРѕСЂРіР°РЅР° Рё Р‘РёР»Р»Р° РїСЂРѕС€Р»Рё Р±РµР·СѓСЃРїРµС€РЅРѕ.");
 };
 
 // ------------------------------------------------------------
@@ -445,7 +445,7 @@ INSTANCE DIA_Addon_Skip_AngusHankDead(C_INFO)
 	condition	= DIA_Addon_Skip_AngusHankDead_Condition;
 	information	= DIA_Addon_Skip_AngusHankDead_Info;
 	permanent	= FALSE;
-	description = "Насчет Ангуса и Хэнка...";
+	description = "РќР°СЃС‡РµС‚ РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР°...";
 };                       
 FUNC INT DIA_Addon_Skip_AngusHankDead_Condition()
 {
@@ -457,19 +457,19 @@ FUNC INT DIA_Addon_Skip_AngusHankDead_Condition()
 };
 func VOID DIA_Addon_Skip_AngusHankDead_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_00"); //Насчет Ангуса и Хэнка...
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_01"); //Что?
-	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_01"); //Я их нашел.
+	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_00"); //РќР°СЃС‡РµС‚ РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР°...
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_01"); //Р§С‚Рѕ?
+	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_01"); //РЇ РёС… РЅР°С€РµР».
 	//AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_02"); //Sie sind tot, richtig?
-	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_03"); //Они мертвы.
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_03"); //Убиты... Бедняги...
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_04"); //Что ж, этого можно было ожидать.
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_05"); //Если ты еще этого не сделал, расскажи Биллу.
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_06"); //Но постарайся сделать это помягче. Он еще молод.
+	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_03"); //РћРЅРё РјРµСЂС‚РІС‹.
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_03"); //РЈР±РёС‚С‹... Р‘РµРґРЅСЏРіРё...
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_04"); //Р§С‚Рѕ Р¶, СЌС‚РѕРіРѕ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ РѕР¶РёРґР°С‚СЊ.
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_05"); //Р•СЃР»Рё С‚С‹ РµС‰Рµ СЌС‚РѕРіРѕ РЅРµ СЃРґРµР»Р°Р», СЂР°СЃСЃРєР°Р¶Рё Р‘РёР»Р»Сѓ.
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_06"); //РќРѕ РїРѕСЃС‚Р°СЂР°Р№СЃСЏ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ РїРѕРјСЏРіС‡Рµ. РћРЅ РµС‰Рµ РјРѕР»РѕРґ.
 };
 
 // ------------------------------------------------------------
-// 			 			Kenne den Mцrder
+// 			 			Kenne den MС†rder
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Skip_AngusHankMurder(C_INFO)
 {
@@ -478,7 +478,7 @@ INSTANCE DIA_Addon_Skip_AngusHankMurder(C_INFO)
 	condition	= DIA_Addon_Skip_AngusHankMurder_Condition;
 	information	= DIA_Addon_Skip_AngusHankMurder_Info;
 	permanent	= FALSE;
-	description = "Я знаю, кто убил Хэнка и Ангуса.";
+	description = "РЇ Р·РЅР°СЋ, РєС‚Рѕ СѓР±РёР» РҐСЌРЅРєР° Рё РђРЅРіСѓСЃР°.";
 };                       
 FUNC INT DIA_Addon_Skip_AngusHankMurder_Condition()
 {
@@ -490,21 +490,21 @@ FUNC INT DIA_Addon_Skip_AngusHankMurder_Condition()
 };
 func VOID DIA_Addon_Skip_AngusHankMurder_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_JuanMurder_15_00"); //Я знаю, кто убил Хэнка и Ангуса.
+	AI_Output (other, self, "DIA_Addon_Skip_JuanMurder_15_00"); //РЇ Р·РЅР°СЋ, РєС‚Рѕ СѓР±РёР» РҐСЌРЅРєР° Рё РђРЅРіСѓСЃР°.
 	if (MIS_ADDON_SkipsGrog == LOG_SUCCESS)
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_01"); //Хорошо. Но они оба мертвы. Какая теперь разница?
-		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_02"); //Месть еще не сделала богатым ни одного пирата.
-		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_03"); //Мне бы свой грог назад получить.
+		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_01"); //РҐРѕСЂРѕС€Рѕ. РќРѕ РѕРЅРё РѕР±Р° РјРµСЂС‚РІС‹. РљР°РєР°СЏ С‚РµРїРµСЂСЊ СЂР°Р·РЅРёС†Р°?
+		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_02"); //РњРµСЃС‚СЊ РµС‰Рµ РЅРµ СЃРґРµР»Р°Р»Р° Р±РѕРіР°С‚С‹Рј РЅРё РѕРґРЅРѕРіРѕ РїРёСЂР°С‚Р°.
+		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_03"); //РњРЅРµ Р±С‹ СЃРІРѕР№ РіСЂРѕРі РЅР°Р·Р°Рґ РїРѕР»СѓС‡РёС‚СЊ.
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_04"); //Меня не интересует, кто их убил. Что с моим грогом?!
+		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_04"); //РњРµРЅСЏ РЅРµ РёРЅС‚РµСЂРµСЃСѓРµС‚, РєС‚Рѕ РёС… СѓР±РёР». Р§С‚Рѕ СЃ РјРѕРёРј РіСЂРѕРіРѕРј?!
 	};
 };
 
 // ------------------------------------------------------------
-// 							Grog zurьck
+// 							Grog zurСЊck
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_Grog		(C_INFO)
 {
@@ -513,7 +513,7 @@ instance DIA_Addon_Skip_Grog		(C_INFO)
 	condition	= DIA_Addon_Skip_Grog_Condition;
 	information	= DIA_Addon_Skip_Grog_Info;
 	permanent	= TRUE;
-	description	= "По поводу грога...";
+	description	= "РџРѕ РїРѕРІРѕРґСѓ РіСЂРѕРіР°...";
 };
 func int DIA_Addon_Skip_Grog_Condition ()
 {
@@ -524,18 +524,18 @@ func int DIA_Addon_Skip_Grog_Condition ()
 };
 func void DIA_Addon_Skip_Grog_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_Grog_15_00"); //По поводу грога...
+	AI_Output	(other, self, "DIA_Addon_Skip_Grog_15_00"); //РџРѕ РїРѕРІРѕРґСѓ РіСЂРѕРіР°...
 		
 	if (Npc_HasItems (other,Itfo_Addon_Grog)>= 20)
 	{
 		Info_ClearChoices	(DIA_Addon_Skip_Grog);
 		Info_AddChoice	(DIA_Addon_Skip_Grog, DIALOG_BACK, DIA_Addon_Skip_Grog_back );
-		Info_AddChoice	(DIA_Addon_Skip_Grog, "Вот твои 20 бутылок.", DIA_Addon_Skip_Grog_geben );
+		Info_AddChoice	(DIA_Addon_Skip_Grog, "Р’РѕС‚ С‚РІРѕРё 20 Р±СѓС‚С‹Р»РѕРє.", DIA_Addon_Skip_Grog_geben );
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Skip_Grog_15_01"); //У тебя пропало 20 бутылок, верно?
-		AI_Output	(self, other, "DIA_Addon_Skip_Grog_08_02"); //Да, черт подери! Все мои запасы.
+		AI_Output	(other, self, "DIA_Addon_Skip_Grog_15_01"); //РЈ С‚РµР±СЏ РїСЂРѕРїР°Р»Рѕ 20 Р±СѓС‚С‹Р»РѕРє, РІРµСЂРЅРѕ?
+		AI_Output	(self, other, "DIA_Addon_Skip_Grog_08_02"); //Р”Р°, С‡РµСЂС‚ РїРѕРґРµСЂРё! Р’СЃРµ РјРѕРё Р·Р°РїР°СЃС‹.
 	};
 };
 func void DIA_Addon_Skip_Grog_back ()
@@ -544,38 +544,38 @@ func void DIA_Addon_Skip_Grog_back ()
 };
 func void DIA_Addon_Skip_Grog_geben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_00"); //Вот тебе 20 бутылок.
+	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_00"); //Р’РѕС‚ С‚РµР±Рµ 20 Р±СѓС‚С‹Р»РѕРє.
 	B_GiveInvItems (other, self, Itfo_Addon_Grog, 20);
 	
-	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Скип получил свои 20 бутылок грога назад и теперь очень счастлив.");
+	B_LogEntry	(TOPIC_Addon_SkipsGrog,"РЎРєРёРї РїРѕР»СѓС‡РёР» СЃРІРѕРё 20 Р±СѓС‚С‹Р»РѕРє РіСЂРѕРіР° РЅР°Р·Р°Рґ Рё С‚РµРїРµСЂСЊ РѕС‡РµРЅСЊ СЃС‡Р°СЃС‚Р»РёРІ.");
 	
 	MIS_ADDON_SkipsGrog = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_SkipsGrog);
 
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_01"); //Что? Вот так вот просто?
-	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_02"); //Ну-у...
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_03"); //Ладно, я заплачу за них.
-	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_04"); //Может быть, у тебя найдется что-нибудь поинтереснее золота?
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_05"); //Хм-м... Посмотрим... У меня есть вот это кольцо.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_06"); //Я выиграл его в кости в каком-то грязном портовом кабаке пару лет назад.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_07"); //Парень, который его проиграл, сказал, что оно волшебное. Не знаю, правда ли это.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_08"); //Если хочешь, я дам тебе его вместо денег?
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_01"); //Р§С‚Рѕ? Р’РѕС‚ С‚Р°Рє РІРѕС‚ РїСЂРѕСЃС‚Рѕ?
+	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_02"); //РќСѓ-Сѓ...
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_03"); //Р›Р°РґРЅРѕ, СЏ Р·Р°РїР»Р°С‡Сѓ Р·Р° РЅРёС….
+	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_04"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, Сѓ С‚РµР±СЏ РЅР°Р№РґРµС‚СЃСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРёРЅС‚РµСЂРµСЃРЅРµРµ Р·РѕР»РѕС‚Р°?
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_05"); //РҐРј-Рј... РџРѕСЃРјРѕС‚СЂРёРј... РЈ РјРµРЅСЏ РµСЃС‚СЊ РІРѕС‚ СЌС‚Рѕ РєРѕР»СЊС†Рѕ.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_06"); //РЇ РІС‹РёРіСЂР°Р» РµРіРѕ РІ РєРѕСЃС‚Рё РІ РєР°РєРѕРј-С‚Рѕ РіСЂСЏР·РЅРѕРј РїРѕСЂС‚РѕРІРѕРј РєР°Р±Р°РєРµ РїР°СЂСѓ Р»РµС‚ РЅР°Р·Р°Рґ.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_07"); //РџР°СЂРµРЅСЊ, РєРѕС‚РѕСЂС‹Р№ РµРіРѕ РїСЂРѕРёРіСЂР°Р», СЃРєР°Р·Р°Р», С‡С‚Рѕ РѕРЅРѕ РІРѕР»С€РµР±РЅРѕРµ. РќРµ Р·РЅР°СЋ, РїСЂР°РІРґР° Р»Рё СЌС‚Рѕ.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_08"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ, СЏ РґР°Рј С‚РµР±Рµ РµРіРѕ РІРјРµСЃС‚Рѕ РґРµРЅРµРі?
 	
 	Info_ClearChoices	(DIA_Addon_Skip_Grog);
-	Info_AddChoice	(DIA_Addon_Skip_Grog, "Я возьму деньги.", DIA_Addon_Skip_Grog_gold );
-	Info_AddChoice	(DIA_Addon_Skip_Grog, "Дай мне кольцо.", DIA_Addon_Skip_Grog_ring );
+	Info_AddChoice	(DIA_Addon_Skip_Grog, "РЇ РІРѕР·СЊРјСѓ РґРµРЅСЊРіРё.", DIA_Addon_Skip_Grog_gold );
+	Info_AddChoice	(DIA_Addon_Skip_Grog, "Р”Р°Р№ РјРЅРµ РєРѕР»СЊС†Рѕ.", DIA_Addon_Skip_Grog_ring );
 };
 func void DIA_Addon_Skip_Grog_ring ()
 {
-	AI_Output			(other, self, "DIA_Addon_Skip_Grog_ring_15_00"); //Я возьму кольцо.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_ring_08_01"); //Держи.
+	AI_Output			(other, self, "DIA_Addon_Skip_Grog_ring_15_00"); //РЇ РІРѕР·СЊРјСѓ РєРѕР»СЊС†Рѕ.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_ring_08_01"); //Р”РµСЂР¶Рё.
 	B_GiveInvItems (self, other, ItRi_Prot_Edge_02, 1);		
 	Info_ClearChoices	(DIA_Addon_Skip_Grog);
 };
 func void DIA_Addon_Skip_Grog_gold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Skip_Grog_gold_15_00"); //Я возьму деньги.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_gold_08_01"); //Хорошо.
+	AI_Output			(other, self, "DIA_Addon_Skip_Grog_gold_15_00"); //РЇ РІРѕР·СЊРјСѓ РґРµРЅСЊРіРё.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_gold_08_01"); //РҐРѕСЂРѕС€Рѕ.
 	var int GrogKohle;
 	GrogKohle = (Value_Grog * 20);
 	B_GiveInvItems (self, other, ItMi_Gold, GrogKohle);		
@@ -594,7 +594,7 @@ INSTANCE DIA_Addon_Skip_News(C_INFO)
 	condition	= DIA_Addon_Skip_News_Condition;
 	information	= DIA_Addon_Skip_News_Info;
 	permanent	= FALSE;
-	description = "Ты можешь что-нибудь продать?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРґР°С‚СЊ?";
 };                       
 FUNC INT DIA_Addon_Skip_News_Condition()
 {
@@ -603,8 +603,8 @@ FUNC INT DIA_Addon_Skip_News_Condition()
 
 FUNC VOID DIA_Addon_Skip_News_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_News_15_00"); //Ты можешь мне что-нибудь продать?
-	AI_Output (self ,other,"DIA_Addon_Skip_News_08_01"); //Если ты хочешь торговать, иди к Гаретту. Он отвечает за наши запасы.
+	AI_Output (other,self ,"DIA_Addon_Skip_News_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРґР°С‚СЊ?
+	AI_Output (self ,other,"DIA_Addon_Skip_News_08_01"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ С‚РѕСЂРіРѕРІР°С‚СЊ, РёРґРё Рє Р“Р°СЂРµС‚С‚Сѓ. РћРЅ РѕС‚РІРµС‡Р°РµС‚ Р·Р° РЅР°С€Рё Р·Р°РїР°СЃС‹.
 
 	Log_CreateTopic (Topic_Addon_PIR_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_GarettTrade);
@@ -627,7 +627,7 @@ INSTANCE DIA_Addon_Skip_Anheuern(C_INFO)
 	condition	= DIA_Addon_Skip_Anheuern_Condition;
 	information	= DIA_Addon_Skip_Anheuern_Info;
 	permanent	= FALSE;
-	description = "Ты должен мне помочь.";
+	description = "РўС‹ РґРѕР»Р¶РµРЅ РјРЅРµ РїРѕРјРѕС‡СЊ.";
 };                       
 FUNC INT DIA_Addon_Skip_Anheuern_Condition()
 {
@@ -638,18 +638,18 @@ FUNC INT DIA_Addon_Skip_Anheuern_Condition()
 };
 func VOID DIA_Addon_Skip_Anheuern_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_Anheuern_15_00"); //Ты должен мне помочь.
-	AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_01"); //Каким образом?
-	AI_Output (other, self, "DIA_Addon_Skip_Anheuern_15_01"); //Нас ждет каньон.
+	AI_Output (other, self, "DIA_Addon_Skip_Anheuern_15_00"); //РўС‹ РґРѕР»Р¶РµРЅ РјРЅРµ РїРѕРјРѕС‡СЊ.
+	AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_01"); //РљР°РєРёРј РѕР±СЂР°Р·РѕРј?
+	AI_Output (other, self, "DIA_Addon_Skip_Anheuern_15_01"); //РќР°СЃ Р¶РґРµС‚ РєР°РЅСЊРѕРЅ.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_02"); //Вижу, ты взял с собой ребят. Правильно! 
+		AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_02"); //Р’РёР¶Сѓ, С‚С‹ РІР·СЏР» СЃ СЃРѕР±РѕР№ СЂРµР±СЏС‚. РџСЂР°РІРёР»СЊРЅРѕ! 
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_03"); //Тебе лучше взять с собой еще людей!
+		AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_03"); //РўРµР±Рµ Р»СѓС‡С€Рµ РІР·СЏС‚СЊ СЃ СЃРѕР±РѕР№ РµС‰Рµ Р»СЋРґРµР№!
 	};
-	AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_04"); //В каньоне чертовски опасно!
+	AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_04"); //Р’ РєР°РЅСЊРѕРЅРµ С‡РµСЂС‚РѕРІСЃРєРё РѕРїР°СЃРЅРѕ!
 };
 
 // ------------------------------------------------------------
@@ -662,7 +662,7 @@ instance DIA_Addon_Skip_ComeOn(C_INFO)
 	condition	= DIA_Addon_Skip_ComeOn_Condition;
 	information	= DIA_Addon_Skip_ComeOn_Info;
 	permanent	= TRUE;
-	description	= "Пойдем со мной.";
+	description	= "РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.";
 };
 func int DIA_Addon_Skip_ComeOn_Condition ()
 {
@@ -675,15 +675,15 @@ func int DIA_Addon_Skip_ComeOn_Condition ()
 };
 func void DIA_Addon_Skip_ComeOn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Skip_ComeOn_15_00"); //Пойдем со мной.
+	AI_Output (other, self, "DIA_Addon_Skip_ComeOn_15_00"); //РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_ComeOn_08_02"); //Подожди. Давай сначала вернемся в каньон...
+		AI_Output (self ,other, "DIA_Addon_Skip_ComeOn_08_02"); //РџРѕРґРѕР¶РґРё. Р”Р°РІР°Р№ СЃРЅР°С‡Р°Р»Р° РІРµСЂРЅРµРјСЃСЏ РІ РєР°РЅСЊРѕРЅ...
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_ComeOn_08_01"); //Идем!
+		AI_Output (self ,other, "DIA_Addon_Skip_ComeOn_08_01"); //РРґРµРј!
 		if (C_BodyStateContains (self, BS_SIT))
 		{
 			AI_StandUp (self);
@@ -708,7 +708,7 @@ INSTANCE DIA_Addon_Skip_GoHome(C_INFO)
 	condition	= DIA_Addon_Skip_GoHome_Condition;
 	information	= DIA_Addon_Skip_GoHome_Info;
 	permanent	= TRUE;
-	description = "Ты мне больше не нужен.";
+	description = "РўС‹ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.";
 };                       
 FUNC INT DIA_Addon_Skip_GoHome_Condition()
 {
@@ -720,8 +720,8 @@ FUNC INT DIA_Addon_Skip_GoHome_Condition()
 
 FUNC VOID DIA_Addon_Skip_GoHome_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_GoHome_15_00"); //Ты мне больше не нужен.
-	AI_Output (self, other, "DIA_Addon_Skip_GoHome_08_01"); //Что ж, мы неплохо прогулялись. Если что, ты можешь найти меня в лагере.
+	AI_Output (other, self, "DIA_Addon_Skip_GoHome_15_00"); //РўС‹ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.
+	AI_Output (self, other, "DIA_Addon_Skip_GoHome_08_01"); //Р§С‚Рѕ Р¶, РјС‹ РЅРµРїР»РѕС…Рѕ РїСЂРѕРіСѓР»СЏР»РёСЃСЊ. Р•СЃР»Рё С‡С‚Рѕ, С‚С‹ РјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РјРµРЅСЏ РІ Р»Р°РіРµСЂРµ.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");
@@ -749,14 +749,14 @@ FUNC INT DIA_Addon_Skip_TooFar_Condition()
 };
 func VOID DIA_Addon_Skip_TooFar_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_01"); //Мы зашли достаточно далеко!
+	AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_01"); //РњС‹ Р·Р°С€Р»Рё РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР°Р»РµРєРѕ!
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_02"); //Если ты идешь дальше, то на нас не рассчитывай!
+		AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_02"); //Р•СЃР»Рё С‚С‹ РёРґРµС€СЊ РґР°Р»СЊС€Рµ, С‚Рѕ РЅР° РЅР°СЃ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°Р№!
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_03"); //Если ты идешь дальше, то на нас не рассчитывай!
+		AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_03"); //Р•СЃР»Рё С‚С‹ РёРґРµС€СЊ РґР°Р»СЊС€Рµ, С‚Рѕ РЅР° РЅР°СЃ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°Р№!
 	};
 	
 	B_Addon_PiratesGoHome();
@@ -787,8 +787,8 @@ FUNC INT DIA_Addon_Skip_Treffpunkt_Condition()
 };
 func VOID DIA_Addon_Skip_Treffpunkt_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_00"); //Если мы потеряем друг друга, то встречаемся здесь, у водопоя.
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_02"); //Вперед!
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_00"); //Р•СЃР»Рё РјС‹ РїРѕС‚РµСЂСЏРµРј РґСЂСѓРі РґСЂСѓРіР°, С‚Рѕ РІСЃС‚СЂРµС‡Р°РµРјСЃСЏ Р·РґРµСЃСЊ, Сѓ РІРѕРґРѕРїРѕСЏ.
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_02"); //Р’РїРµСЂРµРґ!
 		
 	AI_StopProcessInfos (self); 
 };
@@ -815,7 +815,7 @@ FUNC INT DIA_Addon_Skip_Orks_Condition()
 };
 func VOID DIA_Addon_Skip_Orks_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_01"); //Орки! Ненавижу этих тварей!
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_01"); //РћСЂРєРё! РќРµРЅР°РІРёР¶Сѓ СЌС‚РёС… С‚РІР°СЂРµР№!
 
 	AI_StopProcessInfos (self); 
 };
@@ -842,9 +842,9 @@ FUNC INT DIA_Addon_Skip_AllRazorsDead_Condition()
 };
 func VOID DIA_Addon_Skip_AllRazorsDead_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_03"); //Похоже, мы перебили всех бритвозубов.
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_04"); //Если хочешь, мы можем побродить здесь еще.
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_05"); //Только не выходи из каньона. 
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_03"); //РџРѕС…РѕР¶Рµ, РјС‹ РїРµСЂРµР±РёР»Рё РІСЃРµС… Р±СЂРёС‚РІРѕР·СѓР±РѕРІ.
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_04"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ, РјС‹ РјРѕР¶РµРј РїРѕР±СЂРѕРґРёС‚СЊ Р·РґРµСЃСЊ РµС‰Рµ.
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_05"); //РўРѕР»СЊРєРѕ РЅРµ РІС‹С…РѕРґРё РёР· РєР°РЅСЊРѕРЅР°. 
 	
 	AI_StopProcessInfos (self); 
 };

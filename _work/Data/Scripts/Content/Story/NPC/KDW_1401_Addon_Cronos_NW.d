@@ -1,7 +1,7 @@
 INSTANCE KDW_1401_Addon_Cronos_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Кронос";
+	name 		= "РљСЂРѕРЅРѕСЃ";
 	guild 		= GIL_KDW;
 	id 			= 1401;
 	voice 		= 4; 

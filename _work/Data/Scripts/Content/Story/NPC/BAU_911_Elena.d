@@ -3,7 +3,7 @@
 instance BAU_911_Elena (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "≈ÎÂÌ‡";
+	name 		= "–ï–ª–µ–Ω–∞";
 	guild 		= GIL_BAU;
 	id 			= 911;
 	voice 		= 16;
@@ -31,8 +31,8 @@ instance BAU_911_Elena (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 25); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 25); //Grenzen f—år Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_911;

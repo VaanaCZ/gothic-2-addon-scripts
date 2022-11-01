@@ -1,5 +1,5 @@
 //****************************
-// 	EVT_CRYPT_01 (Funktion, die beim öffnen der truhe in Raum 3 der Crypta ausgeführt wird)
+// 	EVT_CRYPT_01 (Funktion, die beim Ñ†ffnen der truhe in Raum 3 der Crypta ausgefÑŒhrt wird)
 //****************************
 var int EVT_CRYPT_01_OneTime;
 func void EVT_CRYPT_01 ()
@@ -18,7 +18,7 @@ func void EVT_CRYPT_01 ()
 };
 
 //****************************
-// 	EVT_CRYPT_02 (Funktion, die beim öffnen der truhe in Raum 3 der Crypta ausgeführt wird)
+// 	EVT_CRYPT_02 (Funktion, die beim Ñ†ffnen der truhe in Raum 3 der Crypta ausgefÑŒhrt wird)
 //****************************
 
 var int EVT_CRYPT_02_OneTime;
@@ -38,7 +38,7 @@ func void EVT_CRYPT_02 ()
 };
 
 //****************************
-// 	EVT_CRYPT_03 (Funktion, die beim öffnen der truhe in Raum 3 der Crypta ausgeführt wird)
+// 	EVT_CRYPT_03 (Funktion, die beim Ñ†ffnen der truhe in Raum 3 der Crypta ausgefÑŒhrt wird)
 //****************************
 
 var int EVT_CRYPT_03_OneTime;
@@ -58,7 +58,7 @@ func void EVT_CRYPT_03 ()
 };
 
 //****************************
-// 	EVT_CRYPT_FINAL (Funktion, die beim öffnen aller truhen der Crypta ausgeführt wird)
+// 	EVT_CRYPT_FINAL (Funktion, die beim Ñ†ffnen aller truhen der Crypta ausgefÑŒhrt wird)
 //****************************
 
 var int EVT_CRYPT_FINAL_OneTime;

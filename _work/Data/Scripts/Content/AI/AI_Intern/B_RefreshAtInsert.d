@@ -2,7 +2,7 @@
 // B_RefreshAtInsert
 // -----------------
 // Funktion wird von der Engine aufgerufen
-// und zwar für jedem NSC (auch Monster), 
+// und zwar fÑŒr jedem NSC (auch Monster), 
 // die in die "Darstellungsglocke" kommen
 // self ist hier immr der jeweils abgehandelte NSC
 // ***********************************************
@@ -19,7 +19,7 @@ func void B_RefreshAtInsert()
 		
 	// FUNC
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
-	// ------ Nur für Humans -----
+	// ------ Nur fÑŒr Humans -----
 	if (self.guild < GIL_SEPERATOR_HUM)
 	&& (Hlp_GetInstanceID(self) != Hlp_GetInstanceID(her))
 	{

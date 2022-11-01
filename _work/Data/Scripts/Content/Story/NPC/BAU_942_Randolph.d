@@ -2,7 +2,7 @@
 instance BAU_942_Randolph (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Πενδξλότ";
+	name 		= "Π ΠµΠ½Π΄ΠΎΠ»ΡΡ„";
 	guild 		= GIL_OUT;
 	id 			= 942;
 	voice 		= 6;

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Scavenger(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Падальщик";
+	name							=	"РџР°РґР°Р»СЊС‰РёРє";
 	guild							=	GIL_SCAVENGER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCAVENGER;
 	level							=	7;

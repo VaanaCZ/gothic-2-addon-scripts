@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Paul_Hi   (C_INFO)
 	condition   = DIA_Addon_Paul_Hi_Condition;
 	information = DIA_Addon_Paul_Hi_Info;
 	permanent   = FALSE;
-	description = "У тебя есть что-нибудь из кузнечного инструмента?";
+	description = "РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР· РєСѓР·РЅРµС‡РЅРѕРіРѕ РёРЅСЃС‚СЂСѓРјРµРЅС‚Р°?";
 };
 FUNC INT DIA_Addon_Paul_Hi_Condition()
 {	
@@ -71,9 +71,9 @@ FUNC INT DIA_Addon_Paul_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Paul_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_Hi_15_00"); //У тебя есть что-нибудь из кузнечного инструмента?
-	AI_Output (self, other, "DIA_Addon_Paul_Hi_03_01"); //У Хуно есть сталь. У меня только несколько кусков руды.
-	AI_Output (self, other, "DIA_Addon_Paul_Hi_03_02"); //Но я не отдам их. Это единственное, что у меня осталось ценного.
+	AI_Output (other, self, "DIA_Addon_Paul_Hi_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР· РєСѓР·РЅРµС‡РЅРѕРіРѕ РёРЅСЃС‚СЂСѓРјРµРЅС‚Р°?
+	AI_Output (self, other, "DIA_Addon_Paul_Hi_03_01"); //РЈ РҐСѓРЅРѕ РµСЃС‚СЊ СЃС‚Р°Р»СЊ. РЈ РјРµРЅСЏ С‚РѕР»СЊРєРѕ РЅРµСЃРєРѕР»СЊРєРѕ РєСѓСЃРєРѕРІ СЂСѓРґС‹.
+	AI_Output (self, other, "DIA_Addon_Paul_Hi_03_02"); //РќРѕ СЏ РЅРµ РѕС‚РґР°Рј РёС…. Р­С‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РѕСЃС‚Р°Р»РѕСЃСЊ С†РµРЅРЅРѕРіРѕ.
 };
 //---------------------------------------------------------------------
 //	Info Huno
@@ -85,7 +85,7 @@ INSTANCE DIA_Addon_Paul_Huno   (C_INFO)
 	condition   = DIA_Addon_Paul_Huno_Condition;
 	information = DIA_Addon_Paul_Huno_Info;
 	permanent   = FALSE;
-	description	= "Ты работаешь на Хуно?";
+	description	= "РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РҐСѓРЅРѕ?";
 };
 FUNC INT DIA_Addon_Paul_Huno_Condition()
 {	
@@ -96,10 +96,10 @@ FUNC INT DIA_Addon_Paul_Huno_Condition()
 };
 FUNC VOID DIA_Addon_Paul_Huno_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_Huno_15_00"); //Ты работаешь на Хуно?
-	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_01"); //Я хотел заработать немного золота и стал работать с ним. Но с тех пор Эстебан не дал мне ничего.
-	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_02"); //Он сказал, что я ему больше не пригожусь.
-	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_03"); //А чем я могу еще заняться, кроме как продолжать работать с Хуно?
+	AI_Output (other, self, "DIA_Addon_Paul_Huno_15_00"); //РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РҐСѓРЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_01"); //РЇ С…РѕС‚РµР» Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РЅРµРјРЅРѕРіРѕ Р·РѕР»РѕС‚Р° Рё СЃС‚Р°Р» СЂР°Р±РѕС‚Р°С‚СЊ СЃ РЅРёРј. РќРѕ СЃ С‚РµС… РїРѕСЂ Р­СЃС‚РµР±Р°РЅ РЅРµ РґР°Р» РјРЅРµ РЅРёС‡РµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_02"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РµРјСѓ Р±РѕР»СЊС€Рµ РЅРµ РїСЂРёРіРѕР¶СѓСЃСЊ.
+	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_03"); //Рђ С‡РµРј СЏ РјРѕРіСѓ РµС‰Рµ Р·Р°РЅСЏС‚СЊСЃСЏ, РєСЂРѕРјРµ РєР°Рє РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЂР°Р±РѕС‚Р°С‚СЊ СЃ РҐСѓРЅРѕ?
 };
 
 //---------------------------------------------------------------------
@@ -124,7 +124,7 @@ FUNC INT DIA_Addon_Paul_Attentat_Condition()
 FUNC VOID DIA_Addon_Paul_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Paul_Attentat_03_00"); //Ничем, приятель. И тут уж ничего не поделаешь! Что ты хочешь от меня?
+	AI_Output (self, other, "DIA_Addon_Paul_Attentat_03_00"); //РќРёС‡РµРј, РїСЂРёСЏС‚РµР»СЊ. Р С‚СѓС‚ СѓР¶ РЅРёС‡РµРіРѕ РЅРµ РїРѕРґРµР»Р°РµС€СЊ! Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РѕС‚ РјРµРЅСЏ?
 };
 	
 //---------------------------------------------------------------------
@@ -137,7 +137,7 @@ INSTANCE DIA_Addon_Paul_HunoVerdacht   (C_INFO)
 	condition   = DIA_Addon_Paul_HunoVerdacht_Condition;
 	information = DIA_Addon_Paul_HunoVerdacht_Info;
 	permanent   = FALSE;
-	description	= "Хуно подозревается в причастности к нападению...";
+	description	= "РҐСѓРЅРѕ РїРѕРґРѕР·СЂРµРІР°РµС‚СЃСЏ РІ РїСЂРёС‡Р°СЃС‚РЅРѕСЃС‚Рё Рє РЅР°РїР°РґРµРЅРёСЋ...";
 };
 FUNC INT DIA_Addon_Paul_HunoVerdacht_Condition()
 {	
@@ -149,12 +149,12 @@ FUNC INT DIA_Addon_Paul_HunoVerdacht_Condition()
 };
 FUNC VOID DIA_Addon_Paul_HunoVerdacht_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_HunoVerdacht_15_00"); //Хуно подозревается в причастности к нападению...
-	AI_Output (self, other, "DIA_Addon_Paul_HunoVerdacht_03_01"); //Я ничего про это не знаю!
+	AI_Output (other, self, "DIA_Addon_Paul_HunoVerdacht_15_00"); //РҐСѓРЅРѕ РїРѕРґРѕР·СЂРµРІР°РµС‚СЃСЏ РІ РїСЂРёС‡Р°СЃС‚РЅРѕСЃС‚Рё Рє РЅР°РїР°РґРµРЅРёСЋ...
+	AI_Output (self, other, "DIA_Addon_Paul_HunoVerdacht_03_01"); //РЇ РЅРёС‡РµРіРѕ РїСЂРѕ СЌС‚Рѕ РЅРµ Р·РЅР°СЋ!
 };
 	
 //---------------------------------------------------------------------
-//	Arbeitest fьr Huno
+//	Arbeitest fСЊr Huno
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Paul_HunoArbeit (C_INFO)
 {
@@ -163,7 +163,7 @@ INSTANCE DIA_Addon_Paul_HunoArbeit (C_INFO)
 	condition   = DIA_Addon_Paul_HunoArbeit_Condition;
 	information = DIA_Addon_Paul_HunoArbeit_Info;
 	permanent   = FALSE;
-	description	= "Но ты же работаешь на Хуно! Так что ты должен что-то знать!";
+	description	= "РќРѕ С‚С‹ Р¶Рµ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РҐСѓРЅРѕ! РўР°Рє С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ С‡С‚Рѕ-С‚Рѕ Р·РЅР°С‚СЊ!";
 };
 FUNC INT DIA_Addon_Paul_HunoArbeit_Condition()
 {	
@@ -176,8 +176,8 @@ FUNC INT DIA_Addon_Paul_HunoArbeit_Condition()
 };
 FUNC VOID DIA_Addon_Paul_HunoArbeit_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_HunoArbeit_15_00"); //Но ты же работаешь на Хуно! Так что ты должен что-то знать!
-	AI_Output (self, other, "DIA_Addon_Paul_HunoArbeit_03_01"); //(в отчаянии) Я ничего не знаю - честно! Мне нужно идти!
+	AI_Output (other, self, "DIA_Addon_Paul_HunoArbeit_15_00"); //РќРѕ С‚С‹ Р¶Рµ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РҐСѓРЅРѕ! РўР°Рє С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ С‡С‚Рѕ-С‚Рѕ Р·РЅР°С‚СЊ!
+	AI_Output (self, other, "DIA_Addon_Paul_HunoArbeit_03_01"); //(РІ РѕС‚С‡Р°СЏРЅРёРё) РЇ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ - С‡РµСЃС‚РЅРѕ! РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё!
 	Npc_ExchangeRoutine(self, "AWAY");
 	AI_StopProcessInfos (self);
 };
@@ -192,7 +192,7 @@ INSTANCE DIA_Addon_Paul_FearEsteban (C_INFO)
 	condition   = DIA_Addon_Paul_FearEsteban_Condition;
 	information = DIA_Addon_Paul_FearEsteban_Info;
 	permanent   = FALSE;
-	description	= "Ты знаешь, что Эстебан сделает с тобой, если узнает, что ты прикрываешь Хуно?";
+	description	= "РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ Р­СЃС‚РµР±Р°РЅ СЃРґРµР»Р°РµС‚ СЃ С‚РѕР±РѕР№, РµСЃР»Рё СѓР·РЅР°РµС‚, С‡С‚Рѕ С‚С‹ РїСЂРёРєСЂС‹РІР°РµС€СЊ РҐСѓРЅРѕ?";
 };
 FUNC INT DIA_Addon_Paul_FearEsteban_Condition()
 {	
@@ -204,8 +204,8 @@ FUNC INT DIA_Addon_Paul_FearEsteban_Condition()
 };
 FUNC VOID DIA_Addon_Paul_FearEsteban_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_FearEsteban_15_00"); //Ты знаешь, что Эстебан сделает с тобой, если узнает, что ты прикрываешь Хуно?
-	AI_Output (self, other, "DIA_Addon_Paul_FearEsteban_03_01"); //Парень! Оставь меня в покое. Я не имею никакого отношения к этому.
+	AI_Output (other, self, "DIA_Addon_Paul_FearEsteban_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ Р­СЃС‚РµР±Р°РЅ СЃРґРµР»Р°РµС‚ СЃ С‚РѕР±РѕР№, РµСЃР»Рё СѓР·РЅР°РµС‚, С‡С‚Рѕ С‚С‹ РїСЂРёРєСЂС‹РІР°РµС€СЊ РҐСѓРЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Paul_FearEsteban_03_01"); //РџР°СЂРµРЅСЊ! РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ. РЇ РЅРµ РёРјРµСЋ РЅРёРєР°РєРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ Рє СЌС‚РѕРјСѓ.
 	Npc_ExchangeRoutine(self, "PRESTART");
 	AI_StopProcessInfos (self);
 };
@@ -220,7 +220,7 @@ INSTANCE DIA_Addon_Paul_MaulPaul (C_INFO)
 	condition   = DIA_Addon_Paul_MaulPaul_Condition;
 	information = DIA_Addon_Paul_MaulPaul_Info;
 	permanent   = FALSE;
-	description	= "Расскажи мне, что тебе известно!";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ!";
 };
 FUNC INT DIA_Addon_Paul_MaulPaul_Condition()
 {	
@@ -232,20 +232,20 @@ FUNC INT DIA_Addon_Paul_MaulPaul_Condition()
 };
 FUNC VOID DIA_Addon_Paul_MaulPaul_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_00"); //(дружелюбно) Пол, скажи мне, что тебе известно, или я размажу тебя по этой стенке!
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_01"); //Ты не можешь избить меня просто потому, что ты работаешь на босса.
-	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_02"); //(любезно) Могу!
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_03"); //Не говори глупостей!
-	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_04"); //(нетерпеливо) Пол...
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_05"); //(лихорадочно) Я знаю только, что у Хуно с Эстебаном какие-то разногласия.
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_06"); //(лихорадочно) При мне он постоянно ругается на Эстебана. Что тот испортил ему дело и все такое...
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_07"); //Я только слушал и никогда ничего не говорил.
-	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_08"); //Отлично! Вот видишь, это было не так сложно.
+	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_00"); //(РґСЂСѓР¶РµР»СЋР±РЅРѕ) РџРѕР», СЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ, РёР»Рё СЏ СЂР°Р·РјР°Р¶Сѓ С‚РµР±СЏ РїРѕ СЌС‚РѕР№ СЃС‚РµРЅРєРµ!
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_01"); //РўС‹ РЅРµ РјРѕР¶РµС€СЊ РёР·Р±РёС‚СЊ РјРµРЅСЏ РїСЂРѕСЃС‚Рѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° Р±РѕСЃСЃР°.
+	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_02"); //(Р»СЋР±РµР·РЅРѕ) РњРѕРіСѓ!
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_03"); //РќРµ РіРѕРІРѕСЂРё РіР»СѓРїРѕСЃС‚РµР№!
+	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_04"); //(РЅРµС‚РµСЂРїРµР»РёРІРѕ) РџРѕР»...
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_05"); //(Р»РёС…РѕСЂР°РґРѕС‡РЅРѕ) РЇ Р·РЅР°СЋ С‚РѕР»СЊРєРѕ, С‡С‚Рѕ Сѓ РҐСѓРЅРѕ СЃ Р­СЃС‚РµР±Р°РЅРѕРј РєР°РєРёРµ-С‚Рѕ СЂР°Р·РЅРѕРіР»Р°СЃРёСЏ.
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_06"); //(Р»РёС…РѕСЂР°РґРѕС‡РЅРѕ) РџСЂРё РјРЅРµ РѕРЅ РїРѕСЃС‚РѕСЏРЅРЅРѕ СЂСѓРіР°РµС‚СЃСЏ РЅР° Р­СЃС‚РµР±Р°РЅР°. Р§С‚Рѕ С‚РѕС‚ РёСЃРїРѕСЂС‚РёР» РµРјСѓ РґРµР»Рѕ Рё РІСЃРµ С‚Р°РєРѕРµ...
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_07"); //РЇ С‚РѕР»СЊРєРѕ СЃР»СѓС€Р°Р» Рё РЅРёРєРѕРіРґР° РЅРёС‡РµРіРѕ РЅРµ РіРѕРІРѕСЂРёР».
+	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_08"); //РћС‚Р»РёС‡РЅРѕ! Р’РѕС‚ РІРёРґРёС€СЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє СЃР»РѕР¶РЅРѕ.
 	
 	Npc_ExchangeRoutine(self, "START");
 	
 	Paul_TellAll = TRUE;
-	B_LogEntry (Topic_Addon_Esteban, "Поль сказал, что Хуно ненавидит Эстебана, потому что он проворачивает свои дела.");
+	B_LogEntry (Topic_Addon_Esteban, "РџРѕР»СЊ СЃРєР°Р·Р°Р», С‡С‚Рѕ РҐСѓРЅРѕ РЅРµРЅР°РІРёРґРёС‚ Р­СЃС‚РµР±Р°РЅР°, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РѕРЅ РїСЂРѕРІРѕСЂР°С‡РёРІР°РµС‚ СЃРІРѕРё РґРµР»Р°.");
 };
 
 //----------------------------------------------------------------------
@@ -273,7 +273,7 @@ FUNC VOID DIA_Addon_Paul_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_BDT_1070_Paul_Mine_03_00");//Наконец! Вот, я хочу, чтобы ты взял за это мою руду.
+	AI_Output (self, other, "DIA_Addon_BDT_1070_Paul_Mine_03_00");//РќР°РєРѕРЅРµС†! Р’РѕС‚, СЏ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РІР·СЏР» Р·Р° СЌС‚Рѕ РјРѕСЋ СЂСѓРґСѓ.
 	B_GiveInvItems (self, other, ItMi_Nugget,2);
 	
 	Player_SentBuddler = (Player_SentBuddler +1);
@@ -292,7 +292,7 @@ INSTANCE DIA_Addon_Paul_PERM (C_INFO)
 	condition   = DIA_Addon_Paul_PERM_Condition;
 	information = DIA_Addon_Paul_PERM_Info;
 	permanent   = TRUE;
-	description = "С тобой все в порядке?";
+	description = "РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 FUNC INT DIA_Addon_Paul_PERM_Condition()
 {	
@@ -303,22 +303,22 @@ FUNC INT DIA_Addon_Paul_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Paul_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Paul_PERM_15_00"); //С тобой все в порядке?
+	AI_Output (other, self, "DIA_Addon_Paul_PERM_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if (Npc_GetDistToWP (self,"ADW_MINE_PICK_07") <= 500)
 	{
-		AI_Output (self, other, "DIA_Addon_Paul_PERM_03_01"); //Да, я получу кучу золота из этой скалы!
+		AI_Output (self, other, "DIA_Addon_Paul_PERM_03_01"); //Р”Р°, СЏ РїРѕР»СѓС‡Сѓ РєСѓС‡Сѓ Р·РѕР»РѕС‚Р° РёР· СЌС‚РѕР№ СЃРєР°Р»С‹!
 	}
 	else 
 	{
 		if (Paul_TellAll == TRUE)
 		&& (Huno_zuSnaf == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Paul_PERM_03_02"); //Я рассказал тебе все, что я знаю!
+			AI_Output (self, other, "DIA_Addon_Paul_PERM_03_02"); //РЇ СЂР°СЃСЃРєР°Р·Р°Р» С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Paul_PERM_03_03"); //Я просто хочу делать свою работу, приятель!
+			AI_Output (self, other, "DIA_Addon_Paul_PERM_03_03"); //РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РґРµР»Р°С‚СЊ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ, РїСЂРёСЏС‚РµР»СЊ!
 		};
 	};
 };

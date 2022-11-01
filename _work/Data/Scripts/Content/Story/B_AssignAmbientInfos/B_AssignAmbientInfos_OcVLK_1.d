@@ -30,7 +30,7 @@ INSTANCE DIA_OCVLK_1_PEOPLE(C_INFO)
 	condition	= DIA_OCVLK_1_PEOPLE_Condition;
 	information	= DIA_OCVLK_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Кто командует здесь?";
+	description = "РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
@@ -44,8 +44,8 @@ FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
 
 FUNC VOID DIA_OCVLK_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //Кто командует здесь?
-	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Командующий Гаронд. Но с тех пор, как ситуация ухудшилась, он не выходил из тронного зала. Боюсь, что это все плохо кончится.
+	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ. РќРѕ СЃ С‚РµС… РїРѕСЂ, РєР°Рє СЃРёС‚СѓР°С†РёСЏ СѓС…СѓРґС€РёР»Р°СЃСЊ, РѕРЅ РЅРµ РІС‹С…РѕРґРёР» РёР· С‚СЂРѕРЅРЅРѕРіРѕ Р·Р°Р»Р°. Р‘РѕСЋСЃСЊ, С‡С‚Рѕ СЌС‚Рѕ РІСЃРµ РїР»РѕС…Рѕ РєРѕРЅС‡РёС‚СЃСЏ.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_OCVLK_1_LOCATION(C_INFO)
 	condition	= DIA_OCVLK_1_LOCATION_Condition;
 	information	= DIA_OCVLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Что тебе известно о Долине Рудников?";
+	description = "Р§С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?";
 };                       
 
 FUNC INT DIA_OCVLK_1_LOCATION_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_OCVLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_OCVLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Что тебе известно о Долине Рудников?
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //Насколько я знаю, несколько наших парней находятся в шахтах и все еще добывают руду.
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //Я бы не хотел поменяться с ними местами. Вся долина кишит орками. Не говоря уже о драконах.
+	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Р§С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, РЅРµСЃРєРѕР»СЊРєРѕ РЅР°С€РёС… РїР°СЂРЅРµР№ РЅР°С…РѕРґСЏС‚СЃСЏ РІ С€Р°С…С‚Р°С… Рё РІСЃРµ РµС‰Рµ РґРѕР±С‹РІР°СЋС‚ СЂСѓРґСѓ.
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //РЇ Р±С‹ РЅРµ С…РѕС‚РµР» РїРѕРјРµРЅСЏС‚СЊСЃСЏ СЃ РЅРёРјРё РјРµСЃС‚Р°РјРё. Р’СЃСЏ РґРѕР»РёРЅР° РєРёС€РёС‚ РѕСЂРєР°РјРё. РќРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ Рѕ РґСЂР°РєРѕРЅР°С….
 };
 
 // *************************************************************************
@@ -85,7 +85,7 @@ INSTANCE DIA_OCVLK_1_STANDARD(C_INFO)
 	condition	= DIA_OCVLK_1_STANDARD_Condition;
 	information	= DIA_OCVLK_1_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 func INT DIA_OCVLK_1_STANDARD_Condition()
 {
@@ -93,22 +93,22 @@ func INT DIA_OCVLK_1_STANDARD_Condition()
 };
 FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_STANDARD_15_00"); //Как дела?
+	AI_Output (other, self, "DIA_OCVLK_1_STANDARD_15_00"); //РљР°Рє РґРµР»Р°?
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Орки загнали нас в угол, как и хотели! Без подкрепления никому из нас не выжить! Я удивлен, что драконы все еще не прикончили нас.
+		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //РћСЂРєРё Р·Р°РіРЅР°Р»Рё РЅР°СЃ РІ СѓРіРѕР», РєР°Рє Рё С…РѕС‚РµР»Рё! Р‘РµР· РїРѕРґРєСЂРµРїР»РµРЅРёСЏ РЅРёРєРѕРјСѓ РёР· РЅР°СЃ РЅРµ РІС‹Р¶РёС‚СЊ! РЇ СѓРґРёРІР»РµРЅ, С‡С‚Рѕ РґСЂР°РєРѕРЅС‹ РІСЃРµ РµС‰Рµ РЅРµ РїСЂРёРєРѕРЅС‡РёР»Рё РЅР°СЃ.
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_02"); //По крайней мере, скоро мы, наконец, получим подкрепление.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_02"); //РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, СЃРєРѕСЂРѕ РјС‹, РЅР°РєРѕРЅРµС†, РїРѕР»СѓС‡РёРј РїРѕРґРєСЂРµРїР»РµРЅРёРµ.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //Я слышал, что драконы были уничтожены? Слава Инносу!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ РґСЂР°РєРѕРЅС‹ Р±С‹Р»Рё СѓРЅРёС‡С‚РѕР¶РµРЅС‹? РЎР»Р°РІР° РРЅРЅРѕСЃСѓ!
 		};
 	};
 
@@ -116,11 +116,11 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Все эта проклятая руда. Нам нужно было сбросить все наши запасы руды со стен крепости. Может быть, тогда орки оставили бы нас в покое.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Р’СЃРµ СЌС‚Р° РїСЂРѕРєР»СЏС‚Р°СЏ СЂСѓРґР°. РќР°Рј РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ СЃР±СЂРѕСЃРёС‚СЊ РІСЃРµ РЅР°С€Рё Р·Р°РїР°СЃС‹ СЂСѓРґС‹ СЃРѕ СЃС‚РµРЅ РєСЂРµРїРѕСЃС‚Рё. РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РѕРіРґР° РѕСЂРєРё РѕСЃС‚Р°РІРёР»Рё Р±С‹ РЅР°СЃ РІ РїРѕРєРѕРµ.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Эти идиотские ящики, что они второпях навалили перед входом, не смогут остановить орков!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Р­С‚Рё РёРґРёРѕС‚СЃРєРёРµ СЏС‰РёРєРё, С‡С‚Рѕ РѕРЅРё РІС‚РѕСЂРѕРїСЏС… РЅР°РІР°Р»РёР»Рё РїРµСЂРµРґ РІС…РѕРґРѕРј, РЅРµ СЃРјРѕРіСѓС‚ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РѕСЂРєРѕРІ!
 		};
 	};
 };

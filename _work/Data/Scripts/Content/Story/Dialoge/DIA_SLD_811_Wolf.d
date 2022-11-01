@@ -34,7 +34,7 @@ instance DIA_Wolf_Hallo		(C_INFO)
 	condition	= DIA_Wolf_Hallo_Condition;
 	information	= DIA_Wolf_Hallo_Info;
 	permanent 	= FALSE;
-	description	= "Как дела?";
+	description	= "РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Wolf_Hallo_Condition ()
@@ -44,9 +44,9 @@ func int DIA_Wolf_Hallo_Condition ()
 
 func void DIA_Wolf_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_Hallo_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Wolf_Hallo_08_01"); //Эй! Я знаю тебя! Ты из колонии.
-	AI_Output (self, other, "DIA_Wolf_Hallo_08_02"); //Что тебе нужно здесь?
+	AI_Output (other, self, "DIA_Wolf_Hallo_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Wolf_Hallo_08_01"); //Р­Р№! РЇ Р·РЅР°СЋ С‚РµР±СЏ! РўС‹ РёР· РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other, "DIA_Wolf_Hallo_08_02"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?
 };
 
 // ************************************************************
@@ -59,7 +59,7 @@ instance DIA_Wolf_WannaJoin		(C_INFO)
 	condition	= DIA_Wolf_WannaJoin_Condition;
 	information	= DIA_Wolf_WannaJoin_Info;
 	permanent 	= FALSE;
-	description	= "Я хочу присоединиться к вам.";
+	description	= "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј.";
 };
 
 func int DIA_Wolf_WannaJoin_Condition ()
@@ -73,15 +73,15 @@ func int DIA_Wolf_WannaJoin_Condition ()
 
 func void DIA_Wolf_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_00"); //Я хочу присоединиться к вам.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_01"); //Почему бы и нет? Я не имею ничего против. Я помню, как ты освободил нашу шахту, убив стражников.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_02"); //Но не рассчитывай, что тебе так просто удастся получить согласие других.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_03"); //Последнее время мы набрали всякого сброда. И даже многие старые наемники могут не помнить тебя.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_04"); //Я сам-то еле узнал тебя, ты выглядишь ужасно изможденным.
-	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_05"); //Когда Барьер пал, мне чудом удалось остаться в живых.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_06"); //Но, похоже, тебе все же повезло.
+	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_01"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚? РЇ РЅРµ РёРјРµСЋ РЅРёС‡РµРіРѕ РїСЂРѕС‚РёРІ. РЇ РїРѕРјРЅСЋ, РєР°Рє С‚С‹ РѕСЃРІРѕР±РѕРґРёР» РЅР°С€Сѓ С€Р°С…С‚Сѓ, СѓР±РёРІ СЃС‚СЂР°Р¶РЅРёРєРѕРІ.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_02"); //РќРѕ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°Р№, С‡С‚Рѕ С‚РµР±Рµ С‚Р°Рє РїСЂРѕСЃС‚Рѕ СѓРґР°СЃС‚СЃСЏ РїРѕР»СѓС‡РёС‚СЊ СЃРѕРіР»Р°СЃРёРµ РґСЂСѓРіРёС….
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_03"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РјС‹ РЅР°Р±СЂР°Р»Рё РІСЃСЏРєРѕРіРѕ СЃР±СЂРѕРґР°. Р РґР°Р¶Рµ РјРЅРѕРіРёРµ СЃС‚Р°СЂС‹Рµ РЅР°РµРјРЅРёРєРё РјРѕРіСѓС‚ РЅРµ РїРѕРјРЅРёС‚СЊ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_04"); //РЇ СЃР°Рј-С‚Рѕ РµР»Рµ СѓР·РЅР°Р» С‚РµР±СЏ, С‚С‹ РІС‹РіР»СЏРґРёС€СЊ СѓР¶Р°СЃРЅРѕ РёР·РјРѕР¶РґРµРЅРЅС‹Рј.
+	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_05"); //РљРѕРіРґР° Р‘Р°СЂСЊРµСЂ РїР°Р», РјРЅРµ С‡СѓРґРѕРј СѓРґР°Р»РѕСЃСЊ РѕСЃС‚Р°С‚СЊСЃСЏ РІ Р¶РёРІС‹С….
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_06"); //РќРѕ, РїРѕС…РѕР¶Рµ, С‚РµР±Рµ РІСЃРµ Р¶Рµ РїРѕРІРµР·Р»Рѕ.
 	
-	B_LogEntry (TOPIC_SLDRespekt,"Вольф не возражает против моего вступления в ряды наемников.");
+	B_LogEntry (TOPIC_SLDRespekt,"Р’РѕР»СЊС„ РЅРµ РІРѕР·СЂР°Р¶Р°РµС‚ РїСЂРѕС‚РёРІ РјРѕРµРіРѕ РІСЃС‚СѓРїР»РµРЅРёСЏ РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ.");
 };
 
 // ************************************************************
@@ -94,7 +94,7 @@ instance DIA_Wolf_WannaBuy		(C_INFO)
 	condition	= DIA_Wolf_WannaBuy_Condition;
 	information	= DIA_Wolf_WannaBuy_Info;
 	permanent 	= FALSE;
-	description	= "Ты можешь что-нибудь продать?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРґР°С‚СЊ?";
 };
 
 func int DIA_Wolf_WannaBuy_Condition ()
@@ -107,12 +107,12 @@ func int DIA_Wolf_WannaBuy_Condition ()
 
 func void DIA_Wolf_WannaBuy_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaBuy_15_00"); //Ты можешь что-нибудь продать?
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_01"); //Ох, лучше не спрашивай.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_02"); //Беннет, один из новых парней, теперь заведует оружием и доспехами.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_03"); //В колонии я отвечал за весь арсенал Ли, и вот пришел хороший кузнец и - пфф - я остался без работы.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_04"); //Мне очень нужна новая работа, даже если это будет охрана местных ферм.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_05"); //Меня это не волнует, лишь бы только не быть баклуши здесь.
+	AI_Output (other, self, "DIA_Wolf_WannaBuy_15_00"); //РўС‹ РјРѕР¶РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРґР°С‚СЊ?
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_01"); //РћС…, Р»СѓС‡С€Рµ РЅРµ СЃРїСЂР°С€РёРІР°Р№.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_02"); //Р‘РµРЅРЅРµС‚, РѕРґРёРЅ РёР· РЅРѕРІС‹С… РїР°СЂРЅРµР№, С‚РµРїРµСЂСЊ Р·Р°РІРµРґСѓРµС‚ РѕСЂСѓР¶РёРµРј Рё РґРѕСЃРїРµС…Р°РјРё.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_03"); //Р’ РєРѕР»РѕРЅРёРё СЏ РѕС‚РІРµС‡Р°Р» Р·Р° РІРµСЃСЊ Р°СЂСЃРµРЅР°Р» Р›Рё, Рё РІРѕС‚ РїСЂРёС€РµР» С…РѕСЂРѕС€РёР№ РєСѓР·РЅРµС† Рё - РїС„С„ - СЏ РѕСЃС‚Р°Р»СЃСЏ Р±РµР· СЂР°Р±РѕС‚С‹.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_04"); //РњРЅРµ РѕС‡РµРЅСЊ РЅСѓР¶РЅР° РЅРѕРІР°СЏ СЂР°Р±РѕС‚Р°, РґР°Р¶Рµ РµСЃР»Рё СЌС‚Рѕ Р±СѓРґРµС‚ РѕС…СЂР°РЅР° РјРµСЃС‚РЅС‹С… С„РµСЂРј.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_05"); //РњРµРЅСЏ СЌС‚Рѕ РЅРµ РІРѕР»РЅСѓРµС‚, Р»РёС€СЊ Р±С‹ С‚РѕР»СЊРєРѕ РЅРµ Р±С‹С‚СЊ Р±Р°РєР»СѓС€Рё Р·РґРµСЃСЊ.
 }; 
 
 // ************************************************************
@@ -125,7 +125,7 @@ instance DIA_Wolf_WannaLearn (C_INFO)
 	condition	= DIA_Wolf_WannaLearn_Condition;
 	information	= DIA_Wolf_WannaLearn_Info;
 	permanent 	= FALSE;
-	description	= "Ты можешь научить меня чему-нибудь?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 
 func int DIA_Wolf_WannaLearn_Condition ()
@@ -138,12 +138,12 @@ func int DIA_Wolf_WannaLearn_Condition ()
 
 func void DIA_Wolf_WannaLearn_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaLearn_15_00"); //Ты можешь научить меня чему-нибудь?
-	AI_Output (self, other, "DIA_Wolf_WannaLearn_08_01"); //Я могу научить тебя секретам обращения с луком, если хочешь. Все равно мне сейчас нечего делать.
+	AI_Output (other, self, "DIA_Wolf_WannaLearn_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other, "DIA_Wolf_WannaLearn_08_01"); //РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ СЃРµРєСЂРµС‚Р°Рј РѕР±СЂР°С‰РµРЅРёСЏ СЃ Р»СѓРєРѕРј, РµСЃР»Рё С…РѕС‡РµС€СЊ. Р’СЃРµ СЂР°РІРЅРѕ РјРЅРµ СЃРµР№С‡Р°СЃ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ.
 	
 	Wolf_TeachBow = TRUE;
 	Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTeacher,"Вольф может обучить меня обращению с луком.");
+	B_LogEntry (Topic_SoldierTeacher,"Р’РѕР»СЊС„ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РѕР±СЂР°С‰РµРЅРёСЋ СЃ Р»СѓРєРѕРј.");
 };
 
 // ************************************************************
@@ -159,7 +159,7 @@ instance DIA_Wolf_TEACH (C_INFO)
 	condition	= DIA_Wolf_TEACH_Condition;
 	information	= DIA_Wolf_TEACH_Info;
 	permanent 	= TRUE;
-	description	= "Я хочу научиться стрельбе из лука.";
+	description	= "РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ СЃС‚СЂРµР»СЊР±Рµ РёР· Р»СѓРєР°.";
 };
 
 func int DIA_Wolf_TEACH_Condition ()
@@ -172,8 +172,8 @@ func int DIA_Wolf_TEACH_Condition ()
 
 func void DIA_Wolf_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_TEACH_15_00"); //Я хочу научиться стрельбе из лука.
-	AI_Output (self, other, "DIA_Wolf_TEACH_08_01"); //Чему обучить тебя?
+	AI_Output (other, self, "DIA_Wolf_TEACH_15_00"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ СЃС‚СЂРµР»СЊР±Рµ РёР· Р»СѓРєР°.
+	AI_Output (self, other, "DIA_Wolf_TEACH_08_01"); //Р§РµРјСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ?
 	
 	Wolf_Merke_Bow = other.HitChance[NPC_TALENT_BOW];
 	
@@ -187,7 +187,7 @@ FUNC VOID DIA_Wolf_Teach_Back ()
 {
 	if (Wolf_Merke_Bow < other.HitChance[NPC_TALENT_BOW])
 	{
-		AI_Output (self ,other,"DIA_Wolf_Teach_BACK_08_00"); //Вот так. Твоя меткость значительно выросла.
+		AI_Output (self ,other,"DIA_Wolf_Teach_BACK_08_00"); //Р’РѕС‚ С‚Р°Рє. РўРІРѕСЏ РјРµС‚РєРѕСЃС‚СЊ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ РІС‹СЂРѕСЃР»Р°.
 	};
 	
 	Info_ClearChoices (DIA_Wolf_Teach);
@@ -223,7 +223,7 @@ instance DIA_Wolf_PERM		(C_INFO)
 	condition	= DIA_Wolf_PERM_Condition;
 	information	= DIA_Wolf_PERM_Info;
 	permanent	= TRUE;
-	description	= "Ну, как? Не нашел еще работы?";
+	description	= "РќСѓ, РєР°Рє? РќРµ РЅР°С€РµР» РµС‰Рµ СЂР°Р±РѕС‚С‹?";
 };
 
 func int DIA_Wolf_PERM_Condition ()
@@ -238,8 +238,8 @@ func int DIA_Wolf_PERM_Condition ()
 
 func void DIA_Wolf_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_PERM_15_00"); //Ну, как? Не нашел еще работы?
-	AI_Output (self, other, "DIA_Wolf_PERM_08_01"); //Пока нет. Дай мне знать, если подвернется какая-нибудь работа для меня.
+	AI_Output (other, self, "DIA_Wolf_PERM_15_00"); //РќСѓ, РєР°Рє? РќРµ РЅР°С€РµР» РµС‰Рµ СЂР°Р±РѕС‚С‹?
+	AI_Output (self, other, "DIA_Wolf_PERM_08_01"); //РџРѕРєР° РЅРµС‚. Р”Р°Р№ РјРЅРµ Р·РЅР°С‚СЊ, РµСЃР»Рё РїРѕРґРІРµСЂРЅРµС‚СЃСЏ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ.
 };
 
 // ************************************************************
@@ -252,7 +252,7 @@ instance DIA_Wolf_Stadt		(C_INFO)
 	condition	= DIA_Wolf_Stadt_Condition;
 	information	= DIA_Wolf_Stadt_Info;
 	permanent	= FALSE;
-	description	= "А ты не пытался найти работу в городе?";
+	description	= "Рђ С‚С‹ РЅРµ РїС‹С‚Р°Р»СЃСЏ РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ РІ РіРѕСЂРѕРґРµ?";
 };
 
 func int DIA_Wolf_Stadt_Condition ()
@@ -267,10 +267,10 @@ func int DIA_Wolf_Stadt_Condition ()
 
 func void DIA_Wolf_Stadt_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_Stadt_15_00"); //А ты не пытался найти работу в городе?
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_01"); //В городе? (смеется) Да меня туда силком не затащишь.
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_02"); //Или ты думаешь, что я стану работать солдатом ополчения? Я даже представить себя не могу в этой дурацкой униформе.
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_03"); //И эта их одержимость повиновением. Нет, забудь об этом - хотя здесь, на ферме, и нечем заняться, но, по крайней мере, я могу делать что хочу.
+	AI_Output (other, self, "DIA_Wolf_Stadt_15_00"); //Рђ С‚С‹ РЅРµ РїС‹С‚Р°Р»СЃСЏ РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ РІ РіРѕСЂРѕРґРµ?
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_01"); //Р’ РіРѕСЂРѕРґРµ? (СЃРјРµРµС‚СЃСЏ) Р”Р° РјРµРЅСЏ С‚СѓРґР° СЃРёР»РєРѕРј РЅРµ Р·Р°С‚Р°С‰РёС€СЊ.
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_02"); //РР»Рё С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЏ СЃС‚Р°РЅСѓ СЂР°Р±РѕС‚Р°С‚СЊ СЃРѕР»РґР°С‚РѕРј РѕРїРѕР»С‡РµРЅРёСЏ? РЇ РґР°Р¶Рµ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ СЃРµР±СЏ РЅРµ РјРѕРіСѓ РІ СЌС‚РѕР№ РґСѓСЂР°С†РєРѕР№ СѓРЅРёС„РѕСЂРјРµ.
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_03"); //Р СЌС‚Р° РёС… РѕРґРµСЂР¶РёРјРѕСЃС‚СЊ РїРѕРІРёРЅРѕРІРµРЅРёРµРј. РќРµС‚, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј - С…РѕС‚СЏ Р·РґРµСЃСЊ, РЅР° С„РµСЂРјРµ, Рё РЅРµС‡РµРј Р·Р°РЅСЏС‚СЊСЃСЏ, РЅРѕ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, СЏ РјРѕРіСѓ РґРµР»Р°С‚СЊ С‡С‚Рѕ С…РѕС‡Сѓ.
 };
 
 
@@ -297,7 +297,7 @@ INSTANCE DIA_Wolf_AboutCrawler(C_INFO)
 	condition	= DIA_Wolf_AboutCrawler_Condition;
 	information	= DIA_Wolf_AboutCrawler_Info;
 	permanent	= FALSE;
-	description = "Я слышал, ты умеешь делать доспехи из панцирей краулеров?";
+	description = "РЇ СЃР»С‹С€Р°Р», С‚С‹ СѓРјРµРµС€СЊ РґРµР»Р°С‚СЊ РґРѕСЃРїРµС…Рё РёР· РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ?";
 };                       
 FUNC INT DIA_Wolf_AboutCrawler_Condition()
 {
@@ -309,19 +309,19 @@ FUNC INT DIA_Wolf_AboutCrawler_Condition()
 };
 FUNC VOID DIA_Wolf_AboutCrawler_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_00"); //Я слышал, ты умеешь делать доспехи из панцирей краулеров?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_01"); //Это правда. А от кого ты об этом узнал?
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_02"); //Мне сказал охотник Гестат.
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_03"); //Ты можешь сделать такие доспехи для меня?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_04"); //Конечно. Принеси мне 10 панцирей краулеров, и я сделаю тебе доспехи.
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_05"); //Сколько ты хочешь за них?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_06"); //Забудь об этом. Я сделаю их бесплатно. В память о старых временах.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_00"); //РЇ СЃР»С‹С€Р°Р», С‚С‹ СѓРјРµРµС€СЊ РґРµР»Р°С‚СЊ РґРѕСЃРїРµС…Рё РёР· РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_01"); //Р­С‚Рѕ РїСЂР°РІРґР°. Рђ РѕС‚ РєРѕРіРѕ С‚С‹ РѕР± СЌС‚РѕРј СѓР·РЅР°Р»?
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_02"); //РњРЅРµ СЃРєР°Р·Р°Р» РѕС…РѕС‚РЅРёРє Р“РµСЃС‚Р°С‚.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_03"); //РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ С‚Р°РєРёРµ РґРѕСЃРїРµС…Рё РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_04"); //РљРѕРЅРµС‡РЅРѕ. РџСЂРёРЅРµСЃРё РјРЅРµ 10 РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ, Рё СЏ СЃРґРµР»Р°СЋ С‚РµР±Рµ РґРѕСЃРїРµС…Рё.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_05"); //РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° РЅРёС…?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_06"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РЇ СЃРґРµР»Р°СЋ РёС… Р±РµСЃРїР»Р°С‚РЅРѕ. Р’ РїР°РјСЏС‚СЊ Рѕ СЃС‚Р°СЂС‹С… РІСЂРµРјРµРЅР°С….
 	
 	MIS_Wolf_BringCrawlerPlates = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Wolf_BringCrawlerPlates,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Wolf_BringCrawlerPlates,LOG_RUNNING);
-	B_LogEntry (TOPIC_Wolf_BringCrawlerPlates,"Вольф может сделать мне доспехи из 10 панцирей краулеров.");
+	B_LogEntry (TOPIC_Wolf_BringCrawlerPlates,"Р’РѕР»СЊС„ РјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ РјРЅРµ РґРѕСЃРїРµС…Рё РёР· 10 РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ.");
 };
 
 
@@ -336,7 +336,7 @@ INSTANCE DIA_Wolf_TeachCrawlerPlates(C_INFO)
 	condition	= DIA_Wolf_TeachCrawlerPlates_Condition;
 	information	= DIA_Wolf_TeachCrawlerPlates_Info;
 	permanent	= TRUE;
-	description = B_BuildLearnString ("Научи меня снимать панцири с краулеров!", B_GetLearnCostTalent(other, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
+	description = B_BuildLearnString ("РќР°СѓС‡Рё РјРµРЅСЏ СЃРЅРёРјР°С‚СЊ РїР°РЅС†РёСЂРё СЃ РєСЂР°СѓР»РµСЂРѕРІ!", B_GetLearnCostTalent(other, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
 };                       
 FUNC INT DIA_Wolf_TeachCrawlerPlates_Condition()
 {
@@ -348,14 +348,14 @@ FUNC INT DIA_Wolf_TeachCrawlerPlates_Condition()
 };
 FUNC VOID DIA_Wolf_TeachCrawlerPlates_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_00"); //Научи меня снимать панцири с краулеров!
+	AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ СЃРЅРёРјР°С‚СЊ РїР°РЅС†РёСЂРё СЃ РєСЂР°СѓР»РµСЂРѕРІ!
 	
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 	{
-		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_01"); //Это просто. Верхняя часть панциря соединяется с туловищем только по краям. Просто берешь и отрезаешь его при помощи острого ножа.
-		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_02"); //Понятно?
-		AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_03"); //Вроде бы просто.
-		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_04"); //Ну, я так и сказал.
+		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_01"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ. Р’РµСЂС…РЅСЏСЏ С‡Р°СЃС‚СЊ РїР°РЅС†РёСЂСЏ СЃРѕРµРґРёРЅСЏРµС‚СЃСЏ СЃ С‚СѓР»РѕРІРёС‰РµРј С‚РѕР»СЊРєРѕ РїРѕ РєСЂР°СЏРј. РџСЂРѕСЃС‚Рѕ Р±РµСЂРµС€СЊ Рё РѕС‚СЂРµР·Р°РµС€СЊ РµРіРѕ РїСЂРё РїРѕРјРѕС‰Рё РѕСЃС‚СЂРѕРіРѕ РЅРѕР¶Р°.
+		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_02"); //РџРѕРЅСЏС‚РЅРѕ?
+		AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_03"); //Р’СЂРѕРґРµ Р±С‹ РїСЂРѕСЃС‚Рѕ.
+		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_04"); //РќСѓ, СЏ С‚Р°Рє Рё СЃРєР°Р·Р°Р».
 	};
 };
 
@@ -370,7 +370,7 @@ INSTANCE DIA_Wolf_BringPlates(C_INFO)
 	condition	= DIA_Wolf_BringPlates_Condition;
 	information	= DIA_Wolf_BringPlates_Info;
 	permanent	= TRUE;
-	description = "Я принес панцири краулеров для доспехов.";
+	description = "РЇ РїСЂРёРЅРµСЃ РїР°РЅС†РёСЂРё РєСЂР°СѓР»РµСЂРѕРІ РґР»СЏ РґРѕСЃРїРµС…РѕРІ.";
 };                       
 FUNC INT DIA_Wolf_BringPlates_Condition()
 {
@@ -382,9 +382,9 @@ FUNC INT DIA_Wolf_BringPlates_Condition()
 };
 FUNC VOID DIA_Wolf_BringPlates_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_BringPlates_15_00"); //Я принес панцири краулеров для доспехов.
+	AI_Output (other, self, "DIA_Wolf_BringPlates_15_00"); //РЇ РїСЂРёРЅРµСЃ РїР°РЅС†РёСЂРё РєСЂР°СѓР»РµСЂРѕРІ РґР»СЏ РґРѕСЃРїРµС…РѕРІ.
 	B_GiveInvItems (other, self, ItAt_CrawlerPlate, 10);
-	AI_Output (self, other, "DIA_Wolf_BringPlates_08_01"); //Хорошо! Давай их сюда.
+	AI_Output (self, other, "DIA_Wolf_BringPlates_08_01"); //РҐРѕСЂРѕС€Рѕ! Р”Р°РІР°Р№ РёС… СЃСЋРґР°.
 		
 	MIS_Wolf_BringCrawlerPlates = LOG_SUCCESS;
 };
@@ -403,7 +403,7 @@ INSTANCE DIA_Wolf_ArmorReady(C_INFO)
 	condition	= DIA_Wolf_ArmorReady_Condition;
 	information	= DIA_Wolf_ArmorReady_Info;
 	permanent	= TRUE;
-	description = "Как мои доспехи?";
+	description = "РљР°Рє РјРѕРё РґРѕСЃРїРµС…Рё?";
 };                       
 FUNC INT DIA_Wolf_ArmorReady_Condition()
 {
@@ -415,7 +415,7 @@ FUNC INT DIA_Wolf_ArmorReady_Condition()
 };
 FUNC VOID DIA_Wolf_ArmorReady_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_ArmorReady_15_00"); //Как мои доспехи?
+	AI_Output (other, self, "DIA_Wolf_ArmorReady_15_00"); //РљР°Рє РјРѕРё РґРѕСЃРїРµС…Рё?
 
 	if (Npc_HasItems (self, ItAt_CrawlerPlate) >= 10)
 	{
@@ -428,23 +428,23 @@ FUNC VOID DIA_Wolf_ArmorReady_Info()
 		if (Wolf_MakeArmor == TRUE)
 		&& (Wolf_Armor_Day > Wld_GetDay())
 		{
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_01"); //Скоро они будут готовы. Заходи завтра.
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_01"); //РЎРєРѕСЂРѕ РѕРЅРё Р±СѓРґСѓС‚ РіРѕС‚РѕРІС‹. Р—Р°С…РѕРґРё Р·Р°РІС‚СЂР°.
 		}
 		else
 		{
 			CreateInvItems (self, ItAr_Djg_Crawler, 1);
 			Npc_RemoveInvItems (self, ItAt_CrawlerPlate, 10);
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_02"); //Я закончил их. Вот, держи.
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_02"); //РЇ Р·Р°РєРѕРЅС‡РёР» РёС…. Р’РѕС‚, РґРµСЂР¶Рё.
 			B_GiveInvItems (self, other, ItAr_Djg_Crawler, 1);
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_03"); //Получилось неплохо, мне кажется...
-			AI_Output (other, self, "DIA_Wolf_ArmorReady_15_04"); //Спасибо!
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_05"); //Да ладно.
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_03"); //РџРѕР»СѓС‡РёР»РѕСЃСЊ РЅРµРїР»РѕС…Рѕ, РјРЅРµ РєР°Р¶РµС‚СЃСЏ...
+			AI_Output (other, self, "DIA_Wolf_ArmorReady_15_04"); //РЎРїР°СЃРёР±Рѕ!
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_05"); //Р”Р° Р»Р°РґРЅРѕ.
 			Player_GotCrawlerArmor = TRUE;
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Wolf_ArmorReady_08_06"); //Ты шутник. Сначала мне нужны панцири краулеров...
+		AI_Output (self, other, "DIA_Wolf_ArmorReady_08_06"); //РўС‹ С€СѓС‚РЅРёРє. РЎРЅР°С‡Р°Р»Р° РјРЅРµ РЅСѓР¶РЅС‹ РїР°РЅС†РёСЂРё РєСЂР°СѓР»РµСЂРѕРІ...
 		Wolf_MakeArmor = FALSE;
 		MIS_Wolf_BringCrawlerPlates = LOG_RUNNING;
 	};
@@ -495,7 +495,7 @@ instance DIA_Wolf_BENGAR		(C_INFO)
 	information	 = 	DIA_Wolf_BENGAR_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Похоже, я нашел работу для тебя на ферме Бенгара.";
+	description	 = 	"РџРѕС…РѕР¶Рµ, СЏ РЅР°С€РµР» СЂР°Р±РѕС‚Сѓ РґР»СЏ С‚РµР±СЏ РЅР° С„РµСЂРјРµ Р‘РµРЅРіР°СЂР°.";
 };
 
 func int DIA_Wolf_BENGAR_Condition ()
@@ -514,42 +514,42 @@ var int Wolf_BENGAR_geld;
 
 func void DIA_Wolf_BENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_00"); //Похоже, я нашел работу для тебя на ферме Бенгара.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_00"); //РџРѕС…РѕР¶Рµ, СЏ РЅР°С€РµР» СЂР°Р±РѕС‚Сѓ РґР»СЏ С‚РµР±СЏ РЅР° С„РµСЂРјРµ Р‘РµРЅРіР°СЂР°.
 
 	if (DIA_Wolf_BENGAR_oneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_01"); //Выкладывай.
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_02"); //Проход в Долину Рудников начинается сразу за фермой Бенгара. Ему досаждают звери, просачивающиеся через Проход.
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_03"); //Нужно, чтобы кто-нибудь защищал ферму Бенгара.
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_04"); //Ну, хоть что-то. Я хотя бы буду далеко от этой фермы, и не буду смотреть как идиот на здешнюю кузницу.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_01"); //Р’С‹РєР»Р°РґС‹РІР°Р№.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_02"); //РџСЂРѕС…РѕРґ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃСЂР°Р·Сѓ Р·Р° С„РµСЂРјРѕР№ Р‘РµРЅРіР°СЂР°. Р•РјСѓ РґРѕСЃР°Р¶РґР°СЋС‚ Р·РІРµСЂРё, РїСЂРѕСЃР°С‡РёРІР°СЋС‰РёРµСЃСЏ С‡РµСЂРµР· РџСЂРѕС…РѕРґ.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_03"); //РќСѓР¶РЅРѕ, С‡С‚РѕР±С‹ РєС‚Рѕ-РЅРёР±СѓРґСЊ Р·Р°С‰РёС‰Р°Р» С„РµСЂРјСѓ Р‘РµРЅРіР°СЂР°.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_04"); //РќСѓ, С…РѕС‚СЊ С‡С‚Рѕ-С‚Рѕ. РЇ С…РѕС‚СЏ Р±С‹ Р±СѓРґСѓ РґР°Р»РµРєРѕ РѕС‚ СЌС‚РѕР№ С„РµСЂРјС‹, Рё РЅРµ Р±СѓРґСѓ СЃРјРѕС‚СЂРµС‚СЊ РєР°Рє РёРґРёРѕС‚ РЅР° Р·РґРµС€РЅСЋСЋ РєСѓР·РЅРёС†Сѓ.
 	DIA_Wolf_BENGAR_oneTime = TRUE;
 	};
 	
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_05"); //Я согласен. А так как ты один из нас, я не возьму много за эту работу. Дай мне 300 золотых, и я сразу же отправляюсь туда.
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_05"); //РЇ СЃРѕРіР»Р°СЃРµРЅ. Рђ С‚Р°Рє РєР°Рє С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ, СЏ РЅРµ РІРѕР·СЊРјСѓ РјРЅРѕРіРѕ Р·Р° СЌС‚Сѓ СЂР°Р±РѕС‚Сѓ. Р”Р°Р№ РјРЅРµ 300 Р·РѕР»РѕС‚С‹С…, Рё СЏ СЃСЂР°Р·Сѓ Р¶Рµ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ С‚СѓРґР°.
 			Wolf_BENGAR_geld = 300;
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_06"); //Хорошо. Это будет стоить 800 золотых.
-			AI_Output			(other, self, "DIA_Wolf_BENGAR_15_07"); //Неслабая цена.
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_08"); //Да. Для одного из нас, я сделал бы это практически бесплатно. Но для тебя...
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_06"); //РҐРѕСЂРѕС€Рѕ. Р­С‚Рѕ Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ 800 Р·РѕР»РѕС‚С‹С….
+			AI_Output			(other, self, "DIA_Wolf_BENGAR_15_07"); //РќРµСЃР»Р°Р±Р°СЏ С†РµРЅР°.
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_08"); //Р”Р°. Р”Р»СЏ РѕРґРЅРѕРіРѕ РёР· РЅР°СЃ, СЏ СЃРґРµР»Р°Р» Р±С‹ СЌС‚Рѕ РїСЂР°РєС‚РёС‡РµСЃРєРё Р±РµСЃРїР»Р°С‚РЅРѕ. РќРѕ РґР»СЏ С‚РµР±СЏ...
 			Wolf_BENGAR_geld = 800;
 		};
 
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
-	Info_AddChoice	(DIA_Wolf_BENGAR, "Я подумаю над этим.", DIA_Wolf_BENGAR_nochnicht );
-	Info_AddChoice	(DIA_Wolf_BENGAR, "Вот твое золото.", DIA_Wolf_BENGAR_geld );
+	Info_AddChoice	(DIA_Wolf_BENGAR, "РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.", DIA_Wolf_BENGAR_nochnicht );
+	Info_AddChoice	(DIA_Wolf_BENGAR, "Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.", DIA_Wolf_BENGAR_geld );
 };
 func void DIA_Wolf_BENGAR_geld ()
 {
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_geld_15_00"); //Вот твое золото.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_geld_15_00"); //Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,	Wolf_BENGAR_geld))
 	{
-		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_01"); //Хорошо. Я иду туда. Посмотрим, что там за звери.
-		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_02"); //Увидимся позже.
+		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_01"); //РҐРѕСЂРѕС€Рѕ. РЇ РёРґСѓ С‚СѓРґР°. РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ С‚Р°Рј Р·Р° Р·РІРµСЂРё.
+		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_02"); //РЈРІРёРґРёРјСЃСЏ РїРѕР·Р¶Рµ.
 		
 	
 		MIS_BengarsHelpingSLD = LOG_SUCCESS;
@@ -562,15 +562,15 @@ func void DIA_Wolf_BENGAR_geld ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_03"); //Если бы у тебя были деньги, я уже был бы там.
+		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_03"); //Р•СЃР»Рё Р±С‹ Сѓ С‚РµР±СЏ Р±С‹Р»Рё РґРµРЅСЊРіРё, СЏ СѓР¶Рµ Р±С‹Р» Р±С‹ С‚Р°Рј.
 	};
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
 };
 
 func void DIA_Wolf_BENGAR_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_nochnicht_15_00"); //Я подумаю над этим.
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_nochnicht_08_01"); //Ладно, только не обмани меня.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_nochnicht_15_00"); //РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_nochnicht_08_01"); //Р›Р°РґРЅРѕ, С‚РѕР»СЊРєРѕ РЅРµ РѕР±РјР°РЅРё РјРµРЅСЏ.
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
 };
 
@@ -585,7 +585,7 @@ instance DIA_Wolf_PERMKAP3		(C_INFO)
 	information	 = 	DIA_Wolf_PERMKAP3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Wolf_PERMKAP3_Condition ()
@@ -601,18 +601,18 @@ func int DIA_Wolf_PERMKAP3_Condition ()
 var int DIA_Wolf_PERMKAP3_onetime;
 func void DIA_Wolf_PERMKAP3_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_PERMKAP3_15_00"); //Все в порядке?
+	AI_Output			(other, self, "DIA_Wolf_PERMKAP3_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 
 	if ((Npc_IsDead(Bengar))&&(DIA_Wolf_PERMKAP3_onetime == FALSE))
 	{
-		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_01"); //Мой работодатель мертв. Пусть земля ему будет пухом. Кстати, я всегда хотел иметь свою собственную ферму.
+		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_01"); //РњРѕР№ СЂР°Р±РѕС‚РѕРґР°С‚РµР»СЊ РјРµСЂС‚РІ. РџСѓСЃС‚СЊ Р·РµРјР»СЏ РµРјСѓ Р±СѓРґРµС‚ РїСѓС…РѕРј. РљСЃС‚Р°С‚Рё, СЏ РІСЃРµРіРґР° С…РѕС‚РµР» РёРјРµС‚СЊ СЃРІРѕСЋ СЃРѕР±СЃС‚РІРµРЅРЅСѓСЋ С„РµСЂРјСѓ.
 		AI_StopProcessInfos (self);	
 		Npc_ExchangeRoutine	(self,"BengarDead");
 		DIA_Wolf_PERMKAP3_onetime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_02"); //Конечно! Все спокойно.
+		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_02"); //РљРѕРЅРµС‡РЅРѕ! Р’СЃРµ СЃРїРѕРєРѕР№РЅРѕ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -698,7 +698,7 @@ instance DIA_Wolf_SHIP		(C_INFO)
 	condition	 = 	DIA_Wolf_SHIP_Condition;
 	information	 = 	DIA_Wolf_SHIP_Info;
 
-	description	 = 	"А ты не хочешь отправиться со мной в путешествие на корабле?";
+	description	 = 	"Рђ С‚С‹ РЅРµ С…РѕС‡РµС€СЊ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№ РІ РїСѓС‚РµС€РµСЃС‚РІРёРµ РЅР° РєРѕСЂР°Р±Р»Рµ?";
 };
 
 func int DIA_Wolf_SHIP_Condition ()
@@ -712,28 +712,28 @@ func int DIA_Wolf_SHIP_Condition ()
 
 func void DIA_Wolf_SHIP_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_SHIP_15_00"); //А ты не хочешь отправиться со мной в путешествие на корабле?
+	AI_Output			(other, self, "DIA_Wolf_SHIP_15_00"); //Рђ С‚С‹ РЅРµ С…РѕС‡РµС€СЊ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№ РІ РїСѓС‚РµС€РµСЃС‚РІРёРµ РЅР° РєРѕСЂР°Р±Р»Рµ?
 
 	if (MIS_BengarsHelpingSLD == LOG_SUCCESS)
 	&& (!Npc_IsDead (Bengar))
 	{
-	AI_Output			(self, other, "DIA_Wolf_SHIP_08_01"); //Нет. Теперь не хочу. Я нашел себе работу. Может быть, в другой раз.
+	AI_Output			(self, other, "DIA_Wolf_SHIP_08_01"); //РќРµС‚. РўРµРїРµСЂСЊ РЅРµ С…РѕС‡Сѓ. РЇ РЅР°С€РµР» СЃРµР±Рµ СЂР°Р±РѕС‚Сѓ. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РІ РґСЂСѓРіРѕР№ СЂР°Р·.
 	wolf_SaidNo = TRUE;
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Wolf_SHIP_08_02"); //Да, конечно. Нужно сваливать отсюда. Ты не пожалеешь об этом. Я помогу тебе защищать корабль. Куда мы направляемся?
+	AI_Output			(self, other, "DIA_Wolf_SHIP_08_02"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РќСѓР¶РЅРѕ СЃРІР°Р»РёРІР°С‚СЊ РѕС‚СЃСЋРґР°. РўС‹ РЅРµ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј. РЇ РїРѕРјРѕРіСѓ С‚РµР±Рµ Р·Р°С‰РёС‰Р°С‚СЊ РєРѕСЂР°Р±Р»СЊ. РљСѓРґР° РјС‹ РЅР°РїСЂР°РІР»СЏРµРјСЃСЏ?
 	MIS_BengarsHelpingSLD = LOG_OBSOLETE;
 	
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	                                             
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	                                             
-	B_LogEntry (TOPIC_Crew,"Вольфу надоел этот остров, и он готов на все, чтобы убраться отсюда. Он хороший боец."); 
+	B_LogEntry (TOPIC_Crew,"Р’РѕР»СЊС„Сѓ РЅР°РґРѕРµР» СЌС‚РѕС‚ РѕСЃС‚СЂРѕРІ, Рё РѕРЅ РіРѕС‚РѕРІ РЅР° РІСЃРµ, С‡С‚РѕР±С‹ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°. РћРЅ С…РѕСЂРѕС€РёР№ Р±РѕРµС†."); 
 	};
 };
 
 ///////////////////////////////////////////////////////////////////////
-//Ich muЯ zu einer Insel nicht weit von dieser hier.
+//Ich muРЇ zu einer Insel nicht weit von dieser hier.
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Wolf_KnowWhereEnemy		(C_INFO)
 {
@@ -742,7 +742,7 @@ instance DIA_Wolf_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Wolf_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Wolf_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я направляюсь на остров недалеко отсюда.";
+	description	 = 	"РЇ РЅР°РїСЂР°РІР»СЏСЋСЃСЊ РЅР° РѕСЃС‚СЂРѕРІ РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°.";
 };
 func int DIA_Wolf_KnowWhereEnemy_Condition ()
 {	
@@ -756,29 +756,29 @@ func int DIA_Wolf_KnowWhereEnemy_Condition ()
 };
 func void DIA_Wolf_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_KnowWhereEnemy_15_00"); //Я направляюсь на остров недалеко отсюда.
-	AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_01"); //И чего мы тогда ждем? Пока мы будем в море, я могу обучить тебя стрельбе из лука и арбалета.
+	AI_Output			(other, self, "DIA_Wolf_KnowWhereEnemy_15_00"); //РЇ РЅР°РїСЂР°РІР»СЏСЋСЃСЊ РЅР° РѕСЃС‚СЂРѕРІ РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°.
+	AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_01"); //Р С‡РµРіРѕ РјС‹ С‚РѕРіРґР° Р¶РґРµРј? РџРѕРєР° РјС‹ Р±СѓРґРµРј РІ РјРѕСЂРµ, СЏ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ СЃС‚СЂРµР»СЊР±Рµ РёР· Р»СѓРєР° Рё Р°СЂР±Р°Р»РµС‚Р°.
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Wolf_KnowWhereEnemy_15_02"); //Я вспомнил, что у меня уже достаточно людей.
-		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_03"); //(зло) Так вот как ты поступаешь. Сначала зовешь меня с собой, а потом даешь от ворот поворот, да?
-		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_04"); //Да пошел ты. Чтоб твое корыто потонуло.
+		AI_Output			(other,self , "DIA_Wolf_KnowWhereEnemy_15_02"); //РЇ РІСЃРїРѕРјРЅРёР», С‡С‚Рѕ Сѓ РјРµРЅСЏ СѓР¶Рµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р»СЋРґРµР№.
+		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_03"); //(Р·Р»Рѕ) РўР°Рє РІРѕС‚ РєР°Рє С‚С‹ РїРѕСЃС‚СѓРїР°РµС€СЊ. РЎРЅР°С‡Р°Р»Р° Р·РѕРІРµС€СЊ РјРµРЅСЏ СЃ СЃРѕР±РѕР№, Р° РїРѕС‚РѕРј РґР°РµС€СЊ РѕС‚ РІРѕСЂРѕС‚ РїРѕРІРѕСЂРѕС‚, РґР°?
+		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_04"); //Р”Р° РїРѕС€РµР» С‚С‹. Р§С‚РѕР± С‚РІРѕРµ РєРѕСЂС‹С‚Рѕ РїРѕС‚РѕРЅСѓР»Рѕ.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Wolf_KnowWhereEnemy);
-		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"Я еще немного подумаю.",DIA_Wolf_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"Добро пожаловать на борт!",DIA_Wolf_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"РЇ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РїРѕРґСѓРјР°СЋ.",DIA_Wolf_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° Р±РѕСЂС‚!",DIA_Wolf_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Wolf_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_00"); //Добро пожаловать на борт!
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_01"); //Приходи в гавань. Мы скоро отправляемся.
-	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_Yes_08_02"); //Можешь считать, что я уже там.
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° Р±РѕСЂС‚!
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_01"); //РџСЂРёС…РѕРґРё РІ РіР°РІР°РЅСЊ. РњС‹ СЃРєРѕСЂРѕ РѕС‚РїСЂР°РІР»СЏРµРјСЃСЏ.
+	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_Yes_08_02"); //РњРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ, С‡С‚Рѕ СЏ СѓР¶Рµ С‚Р°Рј.
 	
 	B_GivePlayerXP (XP_Crewmember_Success);                                                              
 	                                                                                                     
@@ -801,8 +801,8 @@ FUNC VOID DIA_Wolf_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Wolf_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_No_15_00"); //Я еще немного подумаю.
-	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_No_08_01"); //По-моему, ты просто болтун. Я не верю ни одному твоему слову. Проваливай.
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_No_15_00"); //РЇ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РїРѕРґСѓРјР°СЋ.
+	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_No_08_01"); //РџРѕ-РјРѕРµРјСѓ, С‚С‹ РїСЂРѕСЃС‚Рѕ Р±РѕР»С‚СѓРЅ. РЇ РЅРµ РІРµСЂСЋ РЅРё РѕРґРЅРѕРјСѓ С‚РІРѕРµРјСѓ СЃР»РѕРІСѓ. РџСЂРѕРІР°Р»РёРІР°Р№.
 
 	Wolf_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Wolf_KnowWhereEnemy);
@@ -818,7 +818,7 @@ instance DIA_Wolf_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Wolf_LeaveMyShip_Condition;
 	information	 = 	DIA_Wolf_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я решил, что ты мне не нужен.";
+	description	 = 	"РЇ СЂРµС€РёР», С‡С‚Рѕ С‚С‹ РјРЅРµ РЅРµ РЅСѓР¶РµРЅ.";
 };
 func int DIA_Wolf_LeaveMyShip_Condition ()
 {	
@@ -830,8 +830,8 @@ func int DIA_Wolf_LeaveMyShip_Condition ()
 };
 func void DIA_Wolf_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_LeaveMyShip_15_00"); //Я решил, что ты мне не нужен.
-	AI_Output			(self, other, "DIA_Wolf_LeaveMyShip_08_01"); //Сначала ты вселяешь в меня надежду, а потом даешь от ворот поворот. Ты еще пожалеешь об этом!
+	AI_Output			(other, self, "DIA_Wolf_LeaveMyShip_15_00"); //РЇ СЂРµС€РёР», С‡С‚Рѕ С‚С‹ РјРЅРµ РЅРµ РЅСѓР¶РµРЅ.
+	AI_Output			(self, other, "DIA_Wolf_LeaveMyShip_08_01"); //РЎРЅР°С‡Р°Р»Р° С‚С‹ РІСЃРµР»СЏРµС€СЊ РІ РјРµРЅСЏ РЅР°РґРµР¶РґСѓ, Р° РїРѕС‚РѕРј РґР°РµС€СЊ РѕС‚ РІРѕСЂРѕС‚ РїРѕРІРѕСЂРѕС‚. РўС‹ РµС‰Рµ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј!
 	
 	Wolf_IsOnBoard	 = LOG_FAILED;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -851,7 +851,7 @@ instance DIA_Wolf_SHIPOFF		(C_INFO)
 	information	 = 	DIA_Wolf_SHIPOFF_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Послушай.";
+	description	 = 	"РџРѕСЃР»СѓС€Р°Р№.";
 };
 
 func int DIA_Wolf_SHIPOFF_Condition ()
@@ -864,8 +864,8 @@ func int DIA_Wolf_SHIPOFF_Condition ()
 
 func void DIA_Wolf_SHIPOFF_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_SHIPOFF_15_00"); //Послушай.
-	AI_Output			(self, other, "DIA_Wolf_SHIPOFF_08_01"); //Проваливай, ублюдок.
+	AI_Output			(other, self, "DIA_Wolf_SHIPOFF_15_00"); //РџРѕСЃР»СѓС€Р°Р№.
+	AI_Output			(self, other, "DIA_Wolf_SHIPOFF_08_01"); //РџСЂРѕРІР°Р»РёРІР°Р№, СѓР±Р»СЋРґРѕРє.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };

@@ -48,9 +48,9 @@ FUNC INT DIA_Udar_Hello_Condition()
 };
 FUNC VOID DIA_Udar_Hello_Info()
 {	
-	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//Тебе крупно повезло, когда ты пробирался сюда. Я чуть не застрелил тебя.
-	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//Тогда, наверное, я должен радоваться, что у тебя такой острый глаз.
-	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//Не стоит трепаться попусту. Поговори с Сенгратом, если тебе что-нибудь нужно.
+	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//РўРµР±Рµ РєСЂСѓРїРЅРѕ РїРѕРІРµР·Р»Рѕ, РєРѕРіРґР° С‚С‹ РїСЂРѕР±РёСЂР°Р»СЃСЏ СЃСЋРґР°. РЇ С‡СѓС‚СЊ РЅРµ Р·Р°СЃС‚СЂРµР»РёР» С‚РµР±СЏ.
+	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//РўРѕРіРґР°, РЅР°РІРµСЂРЅРѕРµ, СЏ РґРѕР»Р¶РµРЅ СЂР°РґРѕРІР°С‚СЊСЃСЏ, С‡С‚Рѕ Сѓ С‚РµР±СЏ С‚Р°РєРѕР№ РѕСЃС‚СЂС‹Р№ РіР»Р°Р·.
+	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//РќРµ СЃС‚РѕРёС‚ С‚СЂРµРїР°С‚СЊСЃСЏ РїРѕРїСѓСЃС‚Сѓ. РџРѕРіРѕРІРѕСЂРё СЃ РЎРµРЅРіСЂР°С‚РѕРј, РµСЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅСѓР¶РЅРѕ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -65,7 +65,7 @@ INSTANCE DIA_Udar_YouAreBest (C_INFO)
 	condition	= DIA_Udar_YouAreBest_Condition;
 	information	= DIA_Udar_YouAreBest_Info;
 	permanent	= FALSE;
-	Description = "Я слышал, что ты ЛУЧШИЙ арбалетчик ...";
+	Description = "РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ Р›РЈР§РЁРР™ Р°СЂР±Р°Р»РµС‚С‡РёРє ...";
 };                       
 
 FUNC INT DIA_Udar_YouAreBest_Condition()
@@ -78,8 +78,8 @@ FUNC INT DIA_Udar_YouAreBest_Condition()
  
 FUNC VOID DIA_Udar_YouAreBest_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//Я слышал, что ты ЛУЧШИЙ арбалетчик во всей округе.
-	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//Ну, если так говорят, возможно, это правда. Что тебе нужно?
+	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ Р›РЈР§РЁРР™ Р°СЂР±Р°Р»РµС‚С‡РёРє РІРѕ РІСЃРµР№ РѕРєСЂСѓРіРµ.
+	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//РќСѓ, РµСЃР»Рё С‚Р°Рє РіРѕРІРѕСЂСЏС‚, РІРѕР·РјРѕР¶РЅРѕ, СЌС‚Рѕ РїСЂР°РІРґР°. Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 
 //***********************************
@@ -93,7 +93,7 @@ INSTANCE DIA_Udar_TeachMe (C_INFO)
 	condition	= DIA_Udar_TeachMe_Condition;
 	information	= DIA_Udar_TeachME_Info;
 	permanent	= FALSE;
-	Description = "Научи меня стрелять из арбалета.";
+	Description = "РќР°СѓС‡Рё РјРµРЅСЏ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р°СЂР±Р°Р»РµС‚Р°.";
 };                       
 
 FUNC INT DIA_Udar_TeachMe_Condition()
@@ -107,8 +107,8 @@ FUNC INT DIA_Udar_TeachMe_Condition()
  
 FUNC VOID DIA_Udar_TeachME_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Teacher_15_00");	//Научи меня стрелять из арбалета.
-	AI_Output	(self ,other,"DIA_Udar_Teacher_09_01");	//Убирайся! Вокруг замка бегает достаточно мишеней, на которых можно потренироваться.
+	AI_Output	(other,self ,"DIA_Udar_Teacher_15_00");	//РќР°СѓС‡Рё РјРµРЅСЏ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р°СЂР±Р°Р»РµС‚Р°.
+	AI_Output	(self ,other,"DIA_Udar_Teacher_09_01");	//РЈР±РёСЂР°Р№СЃСЏ! Р’РѕРєСЂСѓРі Р·Р°РјРєР° Р±РµРіР°РµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РјРёС€РµРЅРµР№, РЅР° РєРѕС‚РѕСЂС‹С… РјРѕР¶РЅРѕ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.
 
 };	
 
@@ -123,7 +123,7 @@ INSTANCE DIA_Udar_ImGood (C_INFO)
 	condition	= DIA_Udar_ImGood_Condition;
 	information	= DIA_Udar_ImGood_Info;
 	permanent	= FALSE;
-	Description = "Самый великий арбалетчик - я.";
+	Description = "РЎР°РјС‹Р№ РІРµР»РёРєРёР№ Р°СЂР±Р°Р»РµС‚С‡РёРє - СЏ.";
 };                       
 
 FUNC INT DIA_Udar_ImGood_Condition()
@@ -136,12 +136,12 @@ FUNC INT DIA_Udar_ImGood_Condition()
  
 FUNC VOID DIA_Udar_ImGood_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//Самый великий арбалетчик - я.
-	AI_Output	(self ,other,"DIA_Udar_ImGood_09_01");	//(смеется) Да, ты прав!
-	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//Что ж, если ты хочешь поучиться, я могу помочь.
+	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//РЎР°РјС‹Р№ РІРµР»РёРєРёР№ Р°СЂР±Р°Р»РµС‚С‡РёРє - СЏ.
+	AI_Output	(self ,other,"DIA_Udar_ImGood_09_01");	//(СЃРјРµРµС‚СЃСЏ) Р”Р°, С‚С‹ РїСЂР°РІ!
+	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//Р§С‚Рѕ Р¶, РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕСѓС‡РёС‚СЊСЃСЏ, СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ.
 	
 	Udar_TeachPlayer = TRUE;
-	B_LogEntry		(TOPIC_Teacher_OC, "Удар может обучить меня искусству стрельбы из арбалета."); 
+	B_LogEntry		(TOPIC_Teacher_OC, "РЈРґР°СЂ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ СЃС‚СЂРµР»СЊР±С‹ РёР· Р°СЂР±Р°Р»РµС‚Р°."); 
 };
 
 //***********************************
@@ -155,7 +155,7 @@ INSTANCE DIA_Udar_Teach (C_INFO)
 	condition	= DIA_Udar_Teach_Condition;
 	information	= DIA_Udar_Teach_Info;
 	permanent	= TRUE;
-	Description = "Я хочу поучиться у тебя.";
+	Description = "РЇ С…РѕС‡Сѓ РїРѕСѓС‡РёС‚СЊСЃСЏ Сѓ С‚РµР±СЏ.";
 };                       
 
 FUNC INT DIA_Udar_Teach_Condition()
@@ -168,8 +168,8 @@ FUNC INT DIA_Udar_Teach_Condition()
  
 FUNC VOID DIA_Udar_Teach_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Teach_15_00");	//Я хочу поучиться у тебя.
-	AI_Output	(self ,other,"DIA_Udar_Teach_09_01");   //Ладно, давай!
+	AI_Output	(other,self ,"DIA_Udar_Teach_15_00");	//РЇ С…РѕС‡Сѓ РїРѕСѓС‡РёС‚СЊСЃСЏ Сѓ С‚РµР±СЏ.
+	AI_Output	(self ,other,"DIA_Udar_Teach_09_01");   //Р›Р°РґРЅРѕ, РґР°РІР°Р№!
 	
 	Info_ClearChoices (DIA_Udar_Teach);
 	
@@ -185,12 +185,12 @@ FUNC VOID DIA_Udar_Teach_BACK()
 
 FUNC VOID B_Udar_TeachNoMore1 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //Ты уже знаешь основы - на большее у нас нет времени.
+	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РѕСЃРЅРѕРІС‹ - РЅР° Р±РѕР»СЊС€РµРµ Сѓ РЅР°СЃ РЅРµС‚ РІСЂРµРјРµРЅРё.
 };
 
 FUNC VOID B_Udar_TeachNoMore2 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore2_09_00"); //Чтобы улучшить владение этим оружием, тебе лучше поискать более подходящего учителя.
+	AI_Output(self,other,"B_Udar_TeachNoMore2_09_00"); //Р§С‚РѕР±С‹ СѓР»СѓС‡С€РёС‚СЊ РІР»Р°РґРµРЅРёРµ СЌС‚РёРј РѕСЂСѓР¶РёРµРј, С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ Р±РѕР»РµРµ РїРѕРґС…РѕРґСЏС‰РµРіРѕ СѓС‡РёС‚РµР»СЏ.
 };
 
 FUNC VOID DIA_Udar_Teach_Crossbow_1 ()
@@ -235,7 +235,7 @@ INSTANCE DIA_Udar_Perm (C_INFO)
 	condition	= DIA_Udar_Perm_Condition;
 	information	= DIA_Udar_Perm_Info;
 	permanent	= FALSE;
-	Description = "Как дела в замке?";
+	Description = "РљР°Рє РґРµР»Р° РІ Р·Р°РјРєРµ?";
 };                       
 FUNC INT DIA_Udar_Perm_Condition()
 {
@@ -246,9 +246,9 @@ FUNC INT DIA_Udar_Perm_Condition()
 };
 FUNC VOID DIA_Udar_Perm_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Perm_15_00");	//Как дела в замке?
-	AI_Output	(self ,other,"DIA_Udar_Perm_09_01");	//Некоторые из наших парней посвящают себя тренировкам, но, в принципе, все мы просто ждем, когда что-нибудь произойдет.
-	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Эта неопределенность изматывает. Такова стратегия этих чертовых орков. Они будут выжидать, пока наше терпение не лопнет.
+	AI_Output	(other,self ,"DIA_Udar_Perm_15_00");	//РљР°Рє РґРµР»Р° РІ Р·Р°РјРєРµ?
+	AI_Output	(self ,other,"DIA_Udar_Perm_09_01");	//РќРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅР°С€РёС… РїР°СЂРЅРµР№ РїРѕСЃРІСЏС‰Р°СЋС‚ СЃРµР±СЏ С‚СЂРµРЅРёСЂРѕРІРєР°Рј, РЅРѕ, РІ РїСЂРёРЅС†РёРїРµ, РІСЃРµ РјС‹ РїСЂРѕСЃС‚Рѕ Р¶РґРµРј, РєРѕРіРґР° С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРёР·РѕР№РґРµС‚.
+	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Р­С‚Р° РЅРµРѕРїСЂРµРґРµР»РµРЅРЅРѕСЃС‚СЊ РёР·РјР°С‚С‹РІР°РµС‚. РўР°РєРѕРІР° СЃС‚СЂР°С‚РµРіРёСЏ СЌС‚РёС… С‡РµСЂС‚РѕРІС‹С… РѕСЂРєРѕРІ. РћРЅРё Р±СѓРґСѓС‚ РІС‹Р¶РёРґР°С‚СЊ, РїРѕРєР° РЅР°С€Рµ С‚РµСЂРїРµРЅРёРµ РЅРµ Р»РѕРїРЅРµС‚.
 };	
 //***********************************
 //	Ring 
@@ -261,7 +261,7 @@ INSTANCE DIA_Udar_Ring (C_INFO)
 	condition	= DIA_Udar_Ring_Condition;
 	information	= DIA_Udar_Ring_Info;
 	permanent	= FALSE;
-	Description = "Вот, я принес тебе кольцо Тенгрона ...";
+	Description = "Р’РѕС‚, СЏ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРѕР»СЊС†Рѕ РўРµРЅРіСЂРѕРЅР° ...";
 };                       
 FUNC INT DIA_Udar_Ring_Condition()
 {
@@ -272,9 +272,9 @@ FUNC INT DIA_Udar_Ring_Condition()
 };
 FUNC VOID DIA_Udar_Ring_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//Вот, я принес тебе кольцо Тенгрона. Оно будет защищать тебя. Тенгрон говорит, что он когда-нибудь вернется и заберет это кольцо назад.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Что? Да ты знаешь, что это за кольцо? Он получил эту награду за мужество, проявленное в бою.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Говоришь, что он хочет забрать его назад? Если такова воля Инноса, так и будет. Если такова воля Инноса...
+	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//Р’РѕС‚, СЏ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРѕР»СЊС†Рѕ РўРµРЅРіСЂРѕРЅР°. РћРЅРѕ Р±СѓРґРµС‚ Р·Р°С‰РёС‰Р°С‚СЊ С‚РµР±СЏ. РўРµРЅРіСЂРѕРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РѕРЅ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РІРµСЂРЅРµС‚СЃСЏ Рё Р·Р°Р±РµСЂРµС‚ СЌС‚Рѕ РєРѕР»СЊС†Рѕ РЅР°Р·Р°Рґ.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Р§С‚Рѕ? Р”Р° С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЌС‚Рѕ Р·Р° РєРѕР»СЊС†Рѕ? РћРЅ РїРѕР»СѓС‡РёР» СЌС‚Сѓ РЅР°РіСЂР°РґСѓ Р·Р° РјСѓР¶РµСЃС‚РІРѕ, РїСЂРѕСЏРІР»РµРЅРЅРѕРµ РІ Р±РѕСЋ.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Р“РѕРІРѕСЂРёС€СЊ, С‡С‚Рѕ РѕРЅ С…РѕС‡РµС‚ Р·Р°Р±СЂР°С‚СЊ РµРіРѕ РЅР°Р·Р°Рґ? Р•СЃР»Рё С‚Р°РєРѕРІР° РІРѕР»СЏ РРЅРЅРѕСЃР°, С‚Р°Рє Рё Р±СѓРґРµС‚. Р•СЃР»Рё С‚Р°РєРѕРІР° РІРѕР»СЏ РРЅРЅРѕСЃР°...
 	
 	B_GiveInvItems (other,self,ItRi_Tengron,1);
 	TengronRing = TRUE;
@@ -338,16 +338,16 @@ func int DIA_Udar_Kap4WiederDa_Condition ()
 
 func void DIA_Udar_Kap4WiederDa_Info ()
 {
-	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //Хорошо, что ты пришел. Здесь творится сущий ад.
+	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ РїСЂРёС€РµР». Р—РґРµСЃСЊ С‚РІРѕСЂРёС‚СЃСЏ СЃСѓС‰РёР№ Р°Рґ.
 
 	if (hero.guild != GIL_DJG)
 	{
-		AI_Output			(other, self, "DIA_Udar_Kap4WiederDa_15_01"); //Что случилось?
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //Охотники на драконов ошиваются по всему замку и бахвалятся, что могут решить проблему с драконами.
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Но я скажу тебе - судя по тому, как они выглядят, они не в состоянии убить даже старого больного снеппера.
+		AI_Output			(other, self, "DIA_Udar_Kap4WiederDa_15_01"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //РћС…РѕС‚РЅРёРєРё РЅР° РґСЂР°РєРѕРЅРѕРІ РѕС€РёРІР°СЋС‚СЃСЏ РїРѕ РІСЃРµРјСѓ Р·Р°РјРєСѓ Рё Р±Р°С…РІР°Р»СЏС‚СЃСЏ, С‡С‚Рѕ РјРѕРіСѓС‚ СЂРµС€РёС‚СЊ РїСЂРѕР±Р»РµРјСѓ СЃ РґСЂР°РєРѕРЅР°РјРё.
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //РќРѕ СЏ СЃРєР°Р¶Сѓ С‚РµР±Рµ - СЃСѓРґСЏ РїРѕ С‚РѕРјСѓ, РєР°Рє РѕРЅРё РІС‹РіР»СЏРґСЏС‚, РѕРЅРё РЅРµ РІ СЃРѕСЃС‚РѕСЏРЅРёРё СѓР±РёС‚СЊ РґР°Р¶Рµ СЃС‚Р°СЂРѕРіРѕ Р±РѕР»СЊРЅРѕРіРѕ СЃРЅРµРїРїРµСЂР°.
 	};
 
-	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_04"); //Многие из нас уже отчаялись и уже не верят, что нам удастся выбраться отсюда живыми.
+	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_04"); //РњРЅРѕРіРёРµ РёР· РЅР°СЃ СѓР¶Рµ РѕС‚С‡Р°СЏР»РёСЃСЊ Рё СѓР¶Рµ РЅРµ РІРµСЂСЏС‚, С‡С‚Рѕ РЅР°Рј СѓРґР°СЃС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° Р¶РёРІС‹РјРё.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -360,7 +360,7 @@ instance DIA_Udar_Sengrath		(C_INFO)
 	condition	 = 	DIA_Udar_Sengrath_Condition;
 	information	 = 	DIA_Udar_Sengrath_Info;
 
-	description	 = 	"По-моему, вы вдвоем стояли здесь на часах?";
+	description	 = 	"РџРѕ-РјРѕРµРјСѓ, РІС‹ РІРґРІРѕРµРј СЃС‚РѕСЏР»Рё Р·РґРµСЃСЊ РЅР° С‡Р°СЃР°С…?";
 };
 
 func int DIA_Udar_Sengrath_Condition ()
@@ -375,16 +375,16 @@ func int DIA_Udar_Sengrath_Condition ()
 
 func void DIA_Udar_Sengrath_Info ()
 {
-	AI_Output			(other, self, "DIA_Udar_Sengrath_15_00"); //По-моему, вы вдвоем стояли здесь на часах?
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_01"); //Теперь нет. Сенграт стоял у края стены и заснул.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_02"); //Он выронил свой арбалет, и тот упал вниз.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_03"); //Мы видели, как один из орков схватил его и растворился в темноте.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_04"); //Сенграт проснулся и побежал в ночь по направлению к частоколу орков. С тех пор его никто не видел.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_05"); //Да пребудет с нами Иннос!
+	AI_Output			(other, self, "DIA_Udar_Sengrath_15_00"); //РџРѕ-РјРѕРµРјСѓ, РІС‹ РІРґРІРѕРµРј СЃС‚РѕСЏР»Рё Р·РґРµСЃСЊ РЅР° С‡Р°СЃР°С…?
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_01"); //РўРµРїРµСЂСЊ РЅРµС‚. РЎРµРЅРіСЂР°С‚ СЃС‚РѕСЏР» Сѓ РєСЂР°СЏ СЃС‚РµРЅС‹ Рё Р·Р°СЃРЅСѓР».
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_02"); //РћРЅ РІС‹СЂРѕРЅРёР» СЃРІРѕР№ Р°СЂР±Р°Р»РµС‚, Рё С‚РѕС‚ СѓРїР°Р» РІРЅРёР·.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_03"); //РњС‹ РІРёРґРµР»Рё, РєР°Рє РѕРґРёРЅ РёР· РѕСЂРєРѕРІ СЃС…РІР°С‚РёР» РµРіРѕ Рё СЂР°СЃС‚РІРѕСЂРёР»СЃСЏ РІ С‚РµРјРЅРѕС‚Рµ.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_04"); //РЎРµРЅРіСЂР°С‚ РїСЂРѕСЃРЅСѓР»СЃСЏ Рё РїРѕР±РµР¶Р°Р» РІ РЅРѕС‡СЊ РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ Рє С‡Р°СЃС‚РѕРєРѕР»Сѓ РѕСЂРєРѕРІ. РЎ С‚РµС… РїРѕСЂ РµРіРѕ РЅРёРєС‚Рѕ РЅРµ РІРёРґРµР».
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_05"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ РЅР°РјРё РРЅРЅРѕСЃ!
 
 	Log_CreateTopic (TOPIC_Sengrath_Missing, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Sengrath_Missing, LOG_RUNNING);
-	B_LogEntry (TOPIC_Sengrath_Missing,"Удар, гвардеец замка, скучает по своему приятелю Сенграту. Последний раз он видел его как-то поздно ночью, тот направлялся к забору орков, чтобы вернуть свой арбалет."); 
+	B_LogEntry (TOPIC_Sengrath_Missing,"РЈРґР°СЂ, РіРІР°СЂРґРµРµС† Р·Р°РјРєР°, СЃРєСѓС‡Р°РµС‚ РїРѕ СЃРІРѕРµРјСѓ РїСЂРёСЏС‚РµР»СЋ РЎРµРЅРіСЂР°С‚Сѓ. РџРѕСЃР»РµРґРЅРёР№ СЂР°Р· РѕРЅ РІРёРґРµР» РµРіРѕ РєР°Рє-С‚Рѕ РїРѕР·РґРЅРѕ РЅРѕС‡СЊСЋ, С‚РѕС‚ РЅР°РїСЂР°РІР»СЏР»СЃСЏ Рє Р·Р°Р±РѕСЂСѓ РѕСЂРєРѕРІ, С‡С‚РѕР±С‹ РІРµСЂРЅСѓС‚СЊ СЃРІРѕР№ Р°СЂР±Р°Р»РµС‚."); 
 };
 
 
@@ -398,7 +398,7 @@ instance DIA_Udar_SENGRATHGEFUNDEN		(C_INFO)
 	condition	 = 	DIA_Udar_SENGRATHGEFUNDEN_Condition;
 	information	 = 	DIA_Udar_SENGRATHGEFUNDEN_Info;
 
-	description	 = 	"Я нашел Сенграта.";
+	description	 = 	"РЇ РЅР°С€РµР» РЎРµРЅРіСЂР°С‚Р°.";
 };
 
 func int DIA_Udar_SENGRATHGEFUNDEN_Condition ()
@@ -413,11 +413,11 @@ func int DIA_Udar_SENGRATHGEFUNDEN_Condition ()
 
 func void DIA_Udar_SENGRATHGEFUNDEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_00"); //Я нашел Сенграта.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_01"); //Да? И где же он?
-	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //Он мертв. Вот его арбалет. Он был при нем.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //Должно быть, он смог вернуть свой арбалет, но орки все же прикончили его.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_04"); //Чертов дурак. Я знал, что так будет. Мы все тут погибнем.
+	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_00"); //РЇ РЅР°С€РµР» РЎРµРЅРіСЂР°С‚Р°.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_01"); //Р”Р°? Р РіРґРµ Р¶Рµ РѕРЅ?
+	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //РћРЅ РјРµСЂС‚РІ. Р’РѕС‚ РµРіРѕ Р°СЂР±Р°Р»РµС‚. РћРЅ Р±С‹Р» РїСЂРё РЅРµРј.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РѕРЅ СЃРјРѕРі РІРµСЂРЅСѓС‚СЊ СЃРІРѕР№ Р°СЂР±Р°Р»РµС‚, РЅРѕ РѕСЂРєРё РІСЃРµ Р¶Рµ РїСЂРёРєРѕРЅС‡РёР»Рё РµРіРѕ.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_04"); //Р§РµСЂС‚РѕРІ РґСѓСЂР°Рє. РЇ Р·РЅР°Р», С‡С‚Рѕ С‚Р°Рє Р±СѓРґРµС‚. РњС‹ РІСЃРµ С‚СѓС‚ РїРѕРіРёР±РЅРµРј.
 
 	TOPIC_END_Sengrath_Missing = TRUE;
 	B_GivePlayerXP (XP_SengrathFound);
@@ -451,15 +451,15 @@ func void DIA_Udar_BADFEELING_Info ()
 {
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_00"); //Еще одна такая неподготовленная атака и нам конец.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_00"); //Р•С‰Рµ РѕРґРЅР° С‚Р°РєР°СЏ РЅРµРїРѕРґРіРѕС‚РѕРІР»РµРЅРЅР°СЏ Р°С‚Р°РєР° Рё РЅР°Рј РєРѕРЅРµС†.
 	}
 	else if (MIS_AllDragonsDead == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_01"); //Орки очень нервничают. Что-то очень напугало их. Я чувствую это.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_01"); //РћСЂРєРё РѕС‡РµРЅСЊ РЅРµСЂРІРЅРёС‡Р°СЋС‚. Р§С‚Рѕ-С‚Рѕ РѕС‡РµРЅСЊ РЅР°РїСѓРіР°Р»Рѕ РёС…. РЇ С‡СѓРІСЃС‚РІСѓСЋ СЌС‚Рѕ.
 	}
 	else 
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_02"); //Мне очень не нравится все это.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_02"); //РњРЅРµ РѕС‡РµРЅСЊ РЅРµ РЅСЂР°РІРёС‚СЃСЏ РІСЃРµ СЌС‚Рѕ.
 	};
 	
 	Npc_SetRefuseTalk (self,30);

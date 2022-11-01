@@ -2,7 +2,7 @@
 instance VLK_493_Nagur (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Нагур"; 
+	name 		= "РќР°РіСѓСЂ"; 
 	guild 		= GIL_VLK;
 	id 			= 493;
 	voice 		= 8;

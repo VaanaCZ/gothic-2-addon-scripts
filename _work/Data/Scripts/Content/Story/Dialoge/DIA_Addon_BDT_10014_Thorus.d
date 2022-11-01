@@ -39,14 +39,14 @@ FUNC INT DIA_Addon_Thorus_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Hi_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_00");//Ты знаешь правила. Никто не может попасть в шахту, если у него нет красной каменной плитки.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Hi_15_01");//Дело не в шахте - мне нужно увидеть Ворона.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_02");//Это ничего не меняет. Правила есть правила, они относятся ко всем. И даже к тебе.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_03");//Возвращайся. Если ты попытаешься пробраться на верхний этаж без разрешения, стража убьет тебя. Таковы правила.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_00");//РўС‹ Р·РЅР°РµС€СЊ РїСЂР°РІРёР»Р°. РќРёРєС‚Рѕ РЅРµ РјРѕР¶РµС‚ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ, РµСЃР»Рё Сѓ РЅРµРіРѕ РЅРµС‚ РєСЂР°СЃРЅРѕР№ РєР°РјРµРЅРЅРѕР№ РїР»РёС‚РєРё.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Hi_15_01");//Р”РµР»Рѕ РЅРµ РІ С€Р°С…С‚Рµ - РјРЅРµ РЅСѓР¶РЅРѕ СѓРІРёРґРµС‚СЊ Р’РѕСЂРѕРЅР°.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_02");//Р­С‚Рѕ РЅРёС‡РµРіРѕ РЅРµ РјРµРЅСЏРµС‚. РџСЂР°РІРёР»Р° РµСЃС‚СЊ РїСЂР°РІРёР»Р°, РѕРЅРё РѕС‚РЅРѕСЃСЏС‚СЃСЏ РєРѕ РІСЃРµРј. Р РґР°Р¶Рµ Рє С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_03");//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ. Р•СЃР»Рё С‚С‹ РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РїСЂРѕР±СЂР°С‚СЊСЃСЏ РЅР° РІРµСЂС…РЅРёР№ СЌС‚Р°Р¶ Р±РµР· СЂР°Р·СЂРµС€РµРЅРёСЏ, СЃС‚СЂР°Р¶Р° СѓР±СЊРµС‚ С‚РµР±СЏ. РўР°РєРѕРІС‹ РїСЂР°РІРёР»Р°.
 	
 	if !Npc_IsDead (Esteban)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_04");//Если тебе это не нравится, можешь поговорить с Эстебаном. Он ответственный за лагерь.
+		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_04");//Р•СЃР»Рё С‚РµР±Рµ СЌС‚Рѕ РЅРµ РЅСЂР°РІРёС‚СЃСЏ, РјРѕР¶РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р­СЃС‚РµР±Р°РЅРѕРј. РћРЅ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅС‹Р№ Р·Р° Р»Р°РіРµСЂСЊ.
 	};
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "START");
@@ -61,7 +61,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Raven   (C_INFO)
 	condition   = DIA_Addon_Thorus_Raven_Condition;
 	information = DIA_Addon_Thorus_Raven_Info;
 	permanent   = FALSE;
-	description = "Это очень важно, мне нужно попасть к Ворону...";
+	description = "Р­С‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ, РјРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ Рє Р’РѕСЂРѕРЅСѓ...";
 };
 FUNC INT DIA_Addon_Thorus_Raven_Condition()
 {	
@@ -72,14 +72,14 @@ FUNC INT DIA_Addon_Thorus_Raven_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Raven_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raven_15_00");//Это очень важно, мне нужно попасть к Ворону...
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_01");//Правда? Ты действительно думаешь, что сможешь пройти к нему?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_02");//Его охранники твердо выполняют приказ не пускать НИКОГО. Ты умрешь даже раньше, чем сможешь его увидеть.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_03");//Так что лучше  выкинь эту идею из своей головы.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raven_15_00");//Р­С‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ, РјРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ Рє Р’РѕСЂРѕРЅСѓ...
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_01");//РџСЂР°РІРґР°? РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЃРјРѕР¶РµС€СЊ РїСЂРѕР№С‚Рё Рє РЅРµРјСѓ?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_02");//Р•РіРѕ РѕС…СЂР°РЅРЅРёРєРё С‚РІРµСЂРґРѕ РІС‹РїРѕР»РЅСЏСЋС‚ РїСЂРёРєР°Р· РЅРµ РїСѓСЃРєР°С‚СЊ РќРРљРћР“Рћ. РўС‹ СѓРјСЂРµС€СЊ РґР°Р¶Рµ СЂР°РЅСЊС€Рµ, С‡РµРј СЃРјРѕР¶РµС€СЊ РµРіРѕ СѓРІРёРґРµС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_03");//РўР°Рє С‡С‚Рѕ Р»СѓС‡С€Рµ  РІС‹РєРёРЅСЊ СЌС‚Сѓ РёРґРµСЋ РёР· СЃРІРѕРµР№ РіРѕР»РѕРІС‹.
 
 	Log_CreateTopic (TOPIC_Addon_RavenKDW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RavenKDW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RavenKDW,"Ворон - предводитель бандитов. Чтобы добраться до него, мне придется убить тех, кто встанет у меня на пути."); 
+	B_LogEntry (TOPIC_Addon_RavenKDW,"Р’РѕСЂРѕРЅ - РїСЂРµРґРІРѕРґРёС‚РµР»СЊ Р±Р°РЅРґРёС‚РѕРІ. Р§С‚РѕР±С‹ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РЅРµРіРѕ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СѓР±РёС‚СЊ С‚РµС…, РєС‚Рѕ РІСЃС‚Р°РЅРµС‚ Сѓ РјРµРЅСЏ РЅР° РїСѓС‚Рё."); 
 };
 //----------------------------------------------------------------------
 //	Info Zeit
@@ -91,7 +91,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Zeit   (C_INFO)
 	condition   = DIA_Addon_Thorus_Zeit_Condition;
 	information = DIA_Addon_Thorus_Zeit_Info;
 	permanent   = FALSE;
-	description = "Ты не помнишь меня? Я из Старого Лагеря...";
+	description = "РўС‹ РЅРµ РїРѕРјРЅРёС€СЊ РјРµРЅСЏ? РЇ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ...";
 };
 FUNC INT DIA_Addon_Thorus_Zeit_Condition()
 {	
@@ -102,16 +102,16 @@ FUNC INT DIA_Addon_Thorus_Zeit_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Zeit_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Zeit_15_00");//Ты не помнишь меня? Я из Старого Лагеря...
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_01");//Ты был одним из заключенных?! Возможно, ты был одним из моих стражников. И... это делает нас теперь друзьями?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_02");//Нет, не делает.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_03");//Может быть, ты тот, кто уничтожил Барьер, а может - тот, кто убил моих приятелей.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_04");//И что?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_05");//Эти времена прошли.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Zeit_15_00");//РўС‹ РЅРµ РїРѕРјРЅРёС€СЊ РјРµРЅСЏ? РЇ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ...
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_01");//РўС‹ Р±С‹Р» РѕРґРЅРёРј РёР· Р·Р°РєР»СЋС‡РµРЅРЅС‹С…?! Р’РѕР·РјРѕР¶РЅРѕ, С‚С‹ Р±С‹Р» РѕРґРЅРёРј РёР· РјРѕРёС… СЃС‚СЂР°Р¶РЅРёРєРѕРІ. Р... СЌС‚Рѕ РґРµР»Р°РµС‚ РЅР°СЃ С‚РµРїРµСЂСЊ РґСЂСѓР·СЊСЏРјРё?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_02");//РќРµС‚, РЅРµ РґРµР»Р°РµС‚.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_03");//РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ С‚РѕС‚, РєС‚Рѕ СѓРЅРёС‡С‚РѕР¶РёР» Р‘Р°СЂСЊРµСЂ, Р° РјРѕР¶РµС‚ - С‚РѕС‚, РєС‚Рѕ СѓР±РёР» РјРѕРёС… РїСЂРёСЏС‚РµР»РµР№.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_04");//Р С‡С‚Рѕ?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_05");//Р­С‚Рё РІСЂРµРјРµРЅР° РїСЂРѕС€Р»Рё.
 	
 	if !Npc_IsDead (Esteban)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_06");//Ты хочешь войти? Тогда достань себе красный камень и больше не трать мое время.
+		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_06");//РўС‹ С…РѕС‡РµС€СЊ РІРѕР№С‚Рё? РўРѕРіРґР° РґРѕСЃС‚Р°РЅСЊ СЃРµР±Рµ РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ Рё Р±РѕР»СЊС€Рµ РЅРµ С‚СЂР°С‚СЊ РјРѕРµ РІСЂРµРјСЏ.
 	};
 };
 
@@ -127,7 +127,7 @@ instance DIA_Addon_BDT_10014_Thorus_GoodOldPerm  (C_INFO)
 	condition   = DIA_Addon_Thorus_GoodOldPerm_Condition;
 	information = DIA_Addon_Thorus_GoodOldPerm_Info;
 	permanent   = TRUE;
-	description = "Ну ладно тебе, впусти меня. Во имя старых добрых времен.";
+	description = "РќСѓ Р»Р°РґРЅРѕ С‚РµР±Рµ, РІРїСѓСЃС‚Рё РјРµРЅСЏ. Р’Рѕ РёРјСЏ СЃС‚Р°СЂС‹С… РґРѕР±СЂС‹С… РІСЂРµРјРµРЅ.";
 };
 FUNC INT DIA_Addon_Thorus_GoodOldPerm_Condition()
 {	
@@ -140,18 +140,18 @@ FUNC INT DIA_Addon_Thorus_GoodOldPerm_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_GoodOldPerm_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Thorus_Add_15_00"); //Ну ладно тебе, впусти меня. Во имя старых добрых времен.
+	AI_Output (other, self, "DIA_Addon_Thorus_Add_15_00"); //РќСѓ Р»Р°РґРЅРѕ С‚РµР±Рµ, РІРїСѓСЃС‚Рё РјРµРЅСЏ. Р’Рѕ РёРјСЏ СЃС‚Р°СЂС‹С… РґРѕР±СЂС‹С… РІСЂРµРјРµРЅ.
 	if (Thorus_GoodOldPerm == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_01"); //Давай-ка я объясню тебе кое-что. Ты знаешь, почему я до сих пор жив?
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_02"); //Потому что я всегда был верен своим людям.
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_03"); //Я согласен не со всем, что делает Ворон. Но я всегда выполняю правила. 
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_04"); //И ты тоже будешь это делать!
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_01"); //Р”Р°РІР°Р№-РєР° СЏ РѕР±СЉСЏСЃРЅСЋ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ. РўС‹ Р·РЅР°РµС€СЊ, РїРѕС‡РµРјСѓ СЏ РґРѕ СЃРёС… РїРѕСЂ Р¶РёРІ?
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_02"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ СЏ РІСЃРµРіРґР° Р±С‹Р» РІРµСЂРµРЅ СЃРІРѕРёРј Р»СЋРґСЏРј.
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_03"); //РЇ СЃРѕРіР»Р°СЃРµРЅ РЅРµ СЃРѕ РІСЃРµРј, С‡С‚Рѕ РґРµР»Р°РµС‚ Р’РѕСЂРѕРЅ. РќРѕ СЏ РІСЃРµРіРґР° РІС‹РїРѕР»РЅСЏСЋ РїСЂР°РІРёР»Р°. 
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_04"); //Р С‚С‹ С‚РѕР¶Рµ Р±СѓРґРµС€СЊ СЌС‚Рѕ РґРµР»Р°С‚СЊ!
 		Thorus_GoodOldPerm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_05"); //(твердо) Нет!
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_05"); //(С‚РІРµСЂРґРѕ) РќРµС‚!
 	};
 };
 
@@ -181,7 +181,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Stein   (C_INFO)
 	condition   = DIA_Addon_Thorus_Stein_Condition;
 	information = DIA_Addon_Thorus_Stein_Info;
 	permanent   = TRUE;
-	description = "Вот, у меня есть каменная плитка...";
+	description = "Р’РѕС‚, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєР°РјРµРЅРЅР°СЏ РїР»РёС‚РєР°...";
 };
 FUNC INT DIA_Addon_Thorus_Stein_Condition()
 {	
@@ -195,8 +195,8 @@ FUNC INT DIA_Addon_Thorus_Stein_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Stein_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Stein_15_00");//Вот, у меня есть каменная плитка...
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Stein_12_01");//Это неправильный камень. Только красные камни являются пропуском.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Stein_15_00");//Р’РѕС‚, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєР°РјРµРЅРЅР°СЏ РїР»РёС‚РєР°...
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Stein_12_01");//Р­С‚Рѕ РЅРµРїСЂР°РІРёР»СЊРЅС‹Р№ РєР°РјРµРЅСЊ. РўРѕР»СЊРєРѕ РєСЂР°СЃРЅС‹Рµ РєР°РјРЅРё СЏРІР»СЏСЋС‚СЃСЏ РїСЂРѕРїСѓСЃРєРѕРј.
 };
 //----------------------------------------------------------------------
 //	Info Rein
@@ -208,7 +208,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Rein   (C_INFO)
 	condition   = DIA_Addon_Thorus_Rein_Condition;
 	information = DIA_Addon_Thorus_Rein_Info;
 	permanent   = FALSE;
-	description = "Вот, у меня есть красная каменная табличка...";
+	description = "Р’РѕС‚, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєСЂР°СЃРЅР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°...";
 };
 FUNC INT DIA_Addon_Thorus_Rein_Condition()
 {	
@@ -220,18 +220,18 @@ FUNC INT DIA_Addon_Thorus_Rein_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Rein_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_00");//Вот, у меня есть красная каменная табличка...
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_01");//Хорошо.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_02");//Ты убил Эстебана - так что ТЫ теперь будешь делать его работу.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_03");//У них возникли проблемы с краулерами в шахте.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_04");//Три работника уже погибли. Твоя задача - найти им замену.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_05");//И когда я, наконец, смогу попасть в эту чертову шахту?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_06");//Делай свою работу - а после можешь заниматься, чем хочешь.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_00");//Р’РѕС‚, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєСЂР°СЃРЅР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°...
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_01");//РҐРѕСЂРѕС€Рѕ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_02");//РўС‹ СѓР±РёР» Р­СЃС‚РµР±Р°РЅР° - С‚Р°Рє С‡С‚Рѕ РўР« С‚РµРїРµСЂСЊ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ РµРіРѕ СЂР°Р±РѕС‚Сѓ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_03");//РЈ РЅРёС… РІРѕР·РЅРёРєР»Рё РїСЂРѕР±Р»РµРјС‹ СЃ РєСЂР°СѓР»РµСЂР°РјРё РІ С€Р°С…С‚Рµ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_04");//РўСЂРё СЂР°Р±РѕС‚РЅРёРєР° СѓР¶Рµ РїРѕРіРёР±Р»Рё. РўРІРѕСЏ Р·Р°РґР°С‡Р° - РЅР°Р№С‚Рё РёРј Р·Р°РјРµРЅСѓ.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_05");//Р РєРѕРіРґР° СЏ, РЅР°РєРѕРЅРµС†, СЃРјРѕРіСѓ РїРѕРїР°СЃС‚СЊ РІ СЌС‚Сѓ С‡РµСЂС‚РѕРІСѓ С€Р°С…С‚Сѓ?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_06");//Р”РµР»Р°Р№ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ - Р° РїРѕСЃР»Рµ РјРѕР¶РµС€СЊ Р·Р°РЅРёРјР°С‚СЊСЃСЏ, С‡РµРј С…РѕС‡РµС€СЊ.
 	
 	MIS_Send_Buddler = LOG_RUNNING;
 	Log_CreateTopic (Topic_Addon_Buddler,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Buddler, LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Buddler,"Я занял место Эстебана, и теперь мне нужно послать в шахту трех шахтеров.");
+	B_LogEntry (Topic_Addon_Buddler,"РЇ Р·Р°РЅСЏР» РјРµСЃС‚Рѕ Р­СЃС‚РµР±Р°РЅР°, Рё С‚РµРїРµСЂСЊ РјРЅРµ РЅСѓР¶РЅРѕ РїРѕСЃР»Р°С‚СЊ РІ С€Р°С…С‚Сѓ С‚СЂРµС… С€Р°С…С‚РµСЂРѕРІ.");
 };
 //----------------------------------------------------------------------
 //	Info drei typen losgeschickt
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Sent   (C_INFO)
 	condition   = DIA_Addon_Thorus_Sent_Condition;
 	information = DIA_Addon_Thorus_Sent_Info;
 	permanent   = FALSE;
-	description = "Я послал трех новых ребят.";
+	description = "РЇ РїРѕСЃР»Р°Р» С‚СЂРµС… РЅРѕРІС‹С… СЂРµР±СЏС‚.";
 };
 FUNC INT DIA_Addon_Thorus_Sent_Condition()
 {	
@@ -255,8 +255,8 @@ FUNC INT DIA_Addon_Thorus_Sent_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Sent_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Sent_15_00");//Я послал трех новых ребят.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Sent_12_01");//Хорошо. Тогда у меня нет повода тебя не пускать.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Sent_15_00");//РЇ РїРѕСЃР»Р°Р» С‚СЂРµС… РЅРѕРІС‹С… СЂРµР±СЏС‚.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Sent_12_01");//РҐРѕСЂРѕС€Рѕ. РўРѕРіРґР° Сѓ РјРµРЅСЏ РЅРµС‚ РїРѕРІРѕРґР° С‚РµР±СЏ РЅРµ РїСѓСЃРєР°С‚СЊ.
 
 	MIS_Send_Buddler = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
@@ -271,7 +271,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Armor   (C_INFO)
 	condition   = DIA_Addon_Thorus_Armor_Condition;
 	information = DIA_Addon_Thorus_Armor_Info;
 	permanent   = FALSE;
-	description = "Эй, а что на тебе за доспехи? Где я могу достать такие же?";
+	description = "Р­Р№, Р° С‡С‚Рѕ РЅР° С‚РµР±Рµ Р·Р° РґРѕСЃРїРµС…Рё? Р“РґРµ СЏ РјРѕРіСѓ РґРѕСЃС‚Р°С‚СЊ С‚Р°РєРёРµ Р¶Рµ?";
 };
 FUNC INT DIA_Addon_Thorus_Armor_Condition()
 {	
@@ -282,9 +282,9 @@ FUNC INT DIA_Addon_Thorus_Armor_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Armor_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Armor_15_00");//Эй, а что на тебе за доспехи? Где я могу достать такие же?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_01");//Нигде. Эти доспехи сделаны специально для охранника Ворона.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_02");//Полагаю, что нет никакого вступительного экзамена для новых людей. Но окончательное решение принимаю не я, а Ворон.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Armor_15_00");//Р­Р№, Р° С‡С‚Рѕ РЅР° С‚РµР±Рµ Р·Р° РґРѕСЃРїРµС…Рё? Р“РґРµ СЏ РјРѕРіСѓ РґРѕСЃС‚Р°С‚СЊ С‚Р°РєРёРµ Р¶Рµ?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_01");//РќРёРіРґРµ. Р­С‚Рё РґРѕСЃРїРµС…Рё СЃРґРµР»Р°РЅС‹ СЃРїРµС†РёР°Р»СЊРЅРѕ РґР»СЏ РѕС…СЂР°РЅРЅРёРєР° Р’РѕСЂРѕРЅР°.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_02");//РџРѕР»Р°РіР°СЋ, С‡С‚Рѕ РЅРµС‚ РЅРёРєР°РєРѕРіРѕ РІСЃС‚СѓРїРёС‚РµР»СЊРЅРѕРіРѕ СЌРєР·Р°РјРµРЅР° РґР»СЏ РЅРѕРІС‹С… Р»СЋРґРµР№. РќРѕ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕРµ СЂРµС€РµРЅРёРµ РїСЂРёРЅРёРјР°СЋ РЅРµ СЏ, Р° Р’РѕСЂРѕРЅ.
 };
 //----------------------------------------------------------------------
 //	Info Gefangene
@@ -296,7 +296,7 @@ INSTANCE DIA_Addon_Thorus_Gefangene   (C_INFO)
 	condition   = DIA_Addon_Thorus_Gefangene_Condition;
 	information = DIA_Addon_Thorus_Gefangene_Info;
 	permanent   = FALSE;
-	description = "Как там заключенные?";
+	description = "РљР°Рє С‚Р°Рј Р·Р°РєР»СЋС‡РµРЅРЅС‹Рµ?";
 };
 FUNC INT DIA_Addon_Thorus_Gefangene_Condition()
 {	
@@ -308,13 +308,13 @@ FUNC INT DIA_Addon_Thorus_Gefangene_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Gefangene_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_00");//Как там заключенные?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_01");//Хм-м, они сделали свою работу. Насколько мне известно, они должны сейчас искать золото.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_02");//А что, если они убегут?..
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_03");//...Бладвин пошлет стражников за ними. Но я сильно сомневаюсь, что они настолько глупы, чтобы бежать.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_04");//Если только...
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_05");//Если только - что?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_06");//...кто-нибудь не подобьет их на это. Но я не знаю никого, кто был бы достаточно глуп для этого... по крайней мере пока Бладвин здесь.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_00");//РљР°Рє С‚Р°Рј Р·Р°РєР»СЋС‡РµРЅРЅС‹Рµ?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_01");//РҐРј-Рј, РѕРЅРё СЃРґРµР»Р°Р»Рё СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ. РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, РѕРЅРё РґРѕР»Р¶РЅС‹ СЃРµР№С‡Р°СЃ РёСЃРєР°С‚СЊ Р·РѕР»РѕС‚Рѕ.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_02");//Рђ С‡С‚Рѕ, РµСЃР»Рё РѕРЅРё СѓР±РµРіСѓС‚?..
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_03");//...Р‘Р»Р°РґРІРёРЅ РїРѕС€Р»РµС‚ СЃС‚СЂР°Р¶РЅРёРєРѕРІ Р·Р° РЅРёРјРё. РќРѕ СЏ СЃРёР»СЊРЅРѕ СЃРѕРјРЅРµРІР°СЋСЃСЊ, С‡С‚Рѕ РѕРЅРё РЅР°СЃС‚РѕР»СЊРєРѕ РіР»СѓРїС‹, С‡С‚РѕР±С‹ Р±РµР¶Р°С‚СЊ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_04");//Р•СЃР»Рё С‚РѕР»СЊРєРѕ...
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_05");//Р•СЃР»Рё С‚РѕР»СЊРєРѕ - С‡С‚Рѕ?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_06");//...РєС‚Рѕ-РЅРёР±СѓРґСЊ РЅРµ РїРѕРґРѕР±СЊРµС‚ РёС… РЅР° СЌС‚Рѕ. РќРѕ СЏ РЅРµ Р·РЅР°СЋ РЅРёРєРѕРіРѕ, РєС‚Рѕ Р±С‹Р» Р±С‹ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РіР»СѓРї РґР»СЏ СЌС‚РѕРіРѕ... РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ РїРѕРєР° Р‘Р»Р°РґРІРёРЅ Р·РґРµСЃСЊ.
 	B_Say (other, self,"$VERSTEHE");
 };
 //----------------------------------------------------------------------
@@ -339,23 +339,23 @@ FUNC INT DIA_Addon_Thorus_Speech_Condition()
 FUNC VOID DIA_Addon_Thorus_Speech_Info()
 {	
 	
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_00");//Что ты затеваешь?
-	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_01");//Что???
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_00");//Р§С‚Рѕ С‚С‹ Р·Р°С‚РµРІР°РµС€СЊ?
+	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_01");//Р§С‚Рѕ???
 	
 	if (RavenIsDead == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_02");//Теперь ты убрал с дороги и Бладвина. Я уже задаюсь вопросом, кто будет следующим. Ворон? Или, может быть, я?
-		AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_03");//Ты боишься?
-		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_04");//Драки я не боюсь. Но я боюсь того, к чему могут привести твои действия.
+		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_02");//РўРµРїРµСЂСЊ С‚С‹ СѓР±СЂР°Р» СЃ РґРѕСЂРѕРіРё Рё Р‘Р»Р°РґРІРёРЅР°. РЇ СѓР¶Рµ Р·Р°РґР°СЋСЃСЊ РІРѕРїСЂРѕСЃРѕРј, РєС‚Рѕ Р±СѓРґРµС‚ СЃР»РµРґСѓСЋС‰РёРј. Р’РѕСЂРѕРЅ? РР»Рё, РјРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ?
+		AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_03");//РўС‹ Р±РѕРёС€СЊСЃСЏ?
+		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_04");//Р”СЂР°РєРё СЏ РЅРµ Р±РѕСЋСЃСЊ. РќРѕ СЏ Р±РѕСЋСЃСЊ С‚РѕРіРѕ, Рє С‡РµРјСѓ РјРѕРіСѓС‚ РїСЂРёРІРµСЃС‚Рё С‚РІРѕРё РґРµР№СЃС‚РІРёСЏ.
 	};
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_05");//Этот лагерь - все, что у нас осталось.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_06");//Может быть, он не всегда работал идеально, но он работает.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_07");//Но с каждым человеком, которого ты убиваешь, исчезает кусочек нашего общества.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_08");//Мы - бандиты. Головорезы, преступники, изгнанники.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_09");//Куда бы мы ни пошли, нас выследят, поймают и убьют.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_10");//Для нас нет лучшего места, чем это, и нет лучшего времени, чем сейчас.
-	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_11");//Куда ты клонишь?
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_12");//Этим людям нужен лидер. Кто способен им стать? Может быть, ты? Ты, человек, который никогда долго не остается на одном месте?
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_05");//Р­С‚РѕС‚ Р»Р°РіРµСЂСЊ - РІСЃРµ, С‡С‚Рѕ Сѓ РЅР°СЃ РѕСЃС‚Р°Р»РѕСЃСЊ.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_06");//РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ РЅРµ РІСЃРµРіРґР° СЂР°Р±РѕС‚Р°Р» РёРґРµР°Р»СЊРЅРѕ, РЅРѕ РѕРЅ СЂР°Р±РѕС‚Р°РµС‚.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_07");//РќРѕ СЃ РєР°Р¶РґС‹Рј С‡РµР»РѕРІРµРєРѕРј, РєРѕС‚РѕСЂРѕРіРѕ С‚С‹ СѓР±РёРІР°РµС€СЊ, РёСЃС‡РµР·Р°РµС‚ РєСѓСЃРѕС‡РµРє РЅР°С€РµРіРѕ РѕР±С‰РµСЃС‚РІР°.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_08");//РњС‹ - Р±Р°РЅРґРёС‚С‹. Р“РѕР»РѕРІРѕСЂРµР·С‹, РїСЂРµСЃС‚СѓРїРЅРёРєРё, РёР·РіРЅР°РЅРЅРёРєРё.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_09");//РљСѓРґР° Р±С‹ РјС‹ РЅРё РїРѕС€Р»Рё, РЅР°СЃ РІС‹СЃР»РµРґСЏС‚, РїРѕР№РјР°СЋС‚ Рё СѓР±СЊСЋС‚.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_10");//Р”Р»СЏ РЅР°СЃ РЅРµС‚ Р»СѓС‡С€РµРіРѕ РјРµСЃС‚Р°, С‡РµРј СЌС‚Рѕ, Рё РЅРµС‚ Р»СѓС‡С€РµРіРѕ РІСЂРµРјРµРЅРё, С‡РµРј СЃРµР№С‡Р°СЃ.
+	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_11");//РљСѓРґР° С‚С‹ РєР»РѕРЅРёС€СЊ?
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_12");//Р­С‚РёРј Р»СЋРґСЏРј РЅСѓР¶РµРЅ Р»РёРґРµСЂ. РљС‚Рѕ СЃРїРѕСЃРѕР±РµРЅ РёРј СЃС‚Р°С‚СЊ? РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹? РўС‹, С‡РµР»РѕРІРµРє, РєРѕС‚РѕСЂС‹Р№ РЅРёРєРѕРіРґР° РґРѕР»РіРѕ РЅРµ РѕСЃС‚Р°РµС‚СЃСЏ РЅР° РѕРґРЅРѕРј РјРµСЃС‚Рµ?
 };
 //----------------------------------------------------------------------
 //	Info Answer
@@ -367,7 +367,7 @@ INSTANCE DIA_Addon_Thorus_Answer   (C_INFO)
 	condition   = DIA_Addon_Thorus_Answer_Condition;
 	information = DIA_Addon_Thorus_Answer_Info;
 	permanent   = FALSE;
-	description = "Тогда почему бы тебе не стать старшим в лагере?";
+	description = "РўРѕРіРґР° РїРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ СЃС‚Р°С‚СЊ СЃС‚Р°СЂС€РёРј РІ Р»Р°РіРµСЂРµ?";
 };
 FUNC INT DIA_Addon_Thorus_Answer_Condition()
 {	
@@ -378,25 +378,25 @@ FUNC INT DIA_Addon_Thorus_Answer_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Answer_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_00");//Тогда почему бы тебе не стать старшим в лагере?
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_00");//РўРѕРіРґР° РїРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ СЃС‚Р°С‚СЊ СЃС‚Р°СЂС€РёРј РІ Р»Р°РіРµСЂРµ?
 	
 	if (RavenIsDead == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_01");//Допустим, а что с Вороном?
-		AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_02");//У Ворона скоро будут другие заботы. Я позабочусь об этом.
+		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_01");//Р”РѕРїСѓСЃС‚РёРј, Р° С‡С‚Рѕ СЃ Р’РѕСЂРѕРЅРѕРј?
+		AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_02");//РЈ Р’РѕСЂРѕРЅР° СЃРєРѕСЂРѕ Р±СѓРґСѓС‚ РґСЂСѓРіРёРµ Р·Р°Р±РѕС‚С‹. РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР± СЌС‚РѕРј.
 	};
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_03");//Ах, да. И позаботься о том, чтобы заключенные покинули лагерь спокойно.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_04");//Хорошо. Я разберусь с охраной.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_03");//РђС…, РґР°. Р РїРѕР·Р°Р±РѕС‚СЊСЃСЏ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ Р·Р°РєР»СЋС‡РµРЅРЅС‹Рµ РїРѕРєРёРЅСѓР»Рё Р»Р°РіРµСЂСЊ СЃРїРѕРєРѕР№РЅРѕ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_04");//РҐРѕСЂРѕС€Рѕ. РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ РѕС…СЂР°РЅРѕР№.
 	
-	B_LogEntry (Topic_Addon_Sklaven,"Бладвин мертв. Теперь Торус позаботится о том, чтобы рабы смогли покинуть лагерь."); 
+	B_LogEntry (Topic_Addon_Sklaven,"Р‘Р»Р°РґРІРёРЅ РјРµСЂС‚РІ. РўРµРїРµСЂСЊ РўРѕСЂСѓСЃ РїРѕР·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ СЂР°Р±С‹ СЃРјРѕРіР»Рё РїРѕРєРёРЅСѓС‚СЊ Р»Р°РіРµСЂСЊ."); 
 	
 	if !Npc_IsDead (PrisonGuard)
 	{
-		B_LogEntry (Topic_Addon_Sklaven,"Нужно снова поговорить с охранником рабов. После этого Патрик и его люди смогут уйти."); 
+		B_LogEntry (Topic_Addon_Sklaven,"РќСѓР¶РЅРѕ СЃРЅРѕРІР° РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РѕС…СЂР°РЅРЅРёРєРѕРј СЂР°Р±РѕРІ. РџРѕСЃР»Рµ СЌС‚РѕРіРѕ РџР°С‚СЂРёРє Рё РµРіРѕ Р»СЋРґРё СЃРјРѕРіСѓС‚ СѓР№С‚Рё."); 
 	}
 	else
 	{
-		B_LogEntry (Topic_Addon_Sklaven,"С охранником покончено. Теперь Патрик с людьми может отправляться."); 
+		B_LogEntry (Topic_Addon_Sklaven,"РЎ РѕС…СЂР°РЅРЅРёРєРѕРј РїРѕРєРѕРЅС‡РµРЅРѕ. РўРµРїРµСЂСЊ РџР°С‚СЂРёРє СЃ Р»СЋРґСЊРјРё РјРѕР¶РµС‚ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ."); 
 	};
 };
 //----------------------------------------------------------------------
@@ -409,7 +409,7 @@ INSTANCE DIA_Addon_Thorus_Raventot   (C_INFO)
 	condition   = DIA_Addon_Thorus_Raventot_Condition;
 	information = DIA_Addon_Thorus_Raventot_Info;
 	permanent   = FALSE;
-	description = "Я сделал это. Ворон готов.";
+	description = "РЇ СЃРґРµР»Р°Р» СЌС‚Рѕ. Р’РѕСЂРѕРЅ РіРѕС‚РѕРІ.";
 };
 FUNC INT DIA_Addon_Thorus_Raventot_Condition()
 {	
@@ -420,13 +420,13 @@ FUNC INT DIA_Addon_Thorus_Raventot_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Raventot_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_00");//Я сделал это. Ворон готов.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_01");//Значит, ты нанес Белиару неплохой удар.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_02");//Теперь ты пойдешь дальше?
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_03");//Мои дела в долине закончены. Я могу отдохнуть несколько дней.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_04");//(смеется) Да, ты постоянно куда-то движешься, ведь так? (серьезно) Счастливого тебе пути.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_05");//Кто знает, может, наши пути еще пересекутся.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_06");//Кто знает. У тебя на пути будет много ворот и много переходов. И на одном из них ты можешь встретить меня...
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_00");//РЇ СЃРґРµР»Р°Р» СЌС‚Рѕ. Р’РѕСЂРѕРЅ РіРѕС‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_01");//Р—РЅР°С‡РёС‚, С‚С‹ РЅР°РЅРµСЃ Р‘РµР»РёР°СЂСѓ РЅРµРїР»РѕС…РѕР№ СѓРґР°СЂ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_02");//РўРµРїРµСЂСЊ С‚С‹ РїРѕР№РґРµС€СЊ РґР°Р»СЊС€Рµ?
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_03");//РњРѕРё РґРµР»Р° РІ РґРѕР»РёРЅРµ Р·Р°РєРѕРЅС‡РµРЅС‹. РЇ РјРѕРіСѓ РѕС‚РґРѕС…РЅСѓС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_04");//(СЃРјРµРµС‚СЃСЏ) Р”Р°, С‚С‹ РїРѕСЃС‚РѕСЏРЅРЅРѕ РєСѓРґР°-С‚Рѕ РґРІРёР¶РµС€СЊСЃСЏ, РІРµРґСЊ С‚Р°Рє? (СЃРµСЂСЊРµР·РЅРѕ) РЎС‡Р°СЃС‚Р»РёРІРѕРіРѕ С‚РµР±Рµ РїСѓС‚Рё.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_05");//РљС‚Рѕ Р·РЅР°РµС‚, РјРѕР¶РµС‚, РЅР°С€Рё РїСѓС‚Рё РµС‰Рµ РїРµСЂРµСЃРµРєСѓС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_06");//РљС‚Рѕ Р·РЅР°РµС‚. РЈ С‚РµР±СЏ РЅР° РїСѓС‚Рё Р±СѓРґРµС‚ РјРЅРѕРіРѕ РІРѕСЂРѕС‚ Рё РјРЅРѕРіРѕ РїРµСЂРµС…РѕРґРѕРІ. Р РЅР° РѕРґРЅРѕРј РёР· РЅРёС… С‚С‹ РјРѕР¶РµС€СЊ РІСЃС‚СЂРµС‚РёС‚СЊ РјРµРЅСЏ...
 	
 	AI_StopProcessInfos (self);
 	

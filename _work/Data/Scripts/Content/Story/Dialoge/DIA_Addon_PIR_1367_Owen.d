@@ -76,9 +76,9 @@ func int DIA_Addon_Owen_Hello_Condition ()
 };
 func void DIA_Addon_Owen_Hello_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_Hello_15_00"); //Как дела?
-	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_01"); //А ты кто такой? Один из бандитов?
-	AI_Output	(other, self, "DIA_Addon_Owen_Hello_15_02"); //А что, похож?
+	AI_Output	(other, self, "DIA_Addon_Owen_Hello_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_01"); //Рђ С‚С‹ РєС‚Рѕ С‚Р°РєРѕР№? РћРґРёРЅ РёР· Р±Р°РЅРґРёС‚РѕРІ?
+	AI_Output	(other, self, "DIA_Addon_Owen_Hello_15_02"); //Рђ С‡С‚Рѕ, РїРѕС…РѕР¶?
 
 	var C_Item itm; itm = Npc_GetEquippedArmor(other);
 	
@@ -86,17 +86,17 @@ func void DIA_Addon_Owen_Hello_Info ()
 	||	 (Hlp_IsItem(itm, ItAr_Pir_L_Addon) == TRUE)
 	||	 (Hlp_IsItem(itm, ItAr_Pir_H_Addon) == TRUE))
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_03"); //Одет ты так же, как и мы, но я тебя не знаю.
+		AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_03"); //РћРґРµС‚ С‚С‹ С‚Р°Рє Р¶Рµ, РєР°Рє Рё РјС‹, РЅРѕ СЏ С‚РµР±СЏ РЅРµ Р·РЅР°СЋ.
 	}
 	else if ((Hlp_IsItem(itm, ItAr_BDT_M) == TRUE)
 	|| (Hlp_IsItem(itm, ItAr_BDT_H) == TRUE))
 	
 	{
-	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_04"); //Честно говоря, да.
+	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_04"); //Р§РµСЃС‚РЅРѕ РіРѕРІРѕСЂСЏ, РґР°.
 	}
 	else
 	{
-	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_05"); //Нет. Судя по твоей одежде, ты издалека.
+	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_05"); //РќРµС‚. РЎСѓРґСЏ РїРѕ С‚РІРѕРµР№ РѕРґРµР¶РґРµ, С‚С‹ РёР·РґР°Р»РµРєР°.
 	};
 };
 
@@ -110,7 +110,7 @@ instance DIA_Addon_Owen_WasMachen		(C_INFO)
 	condition	= DIA_Addon_Owen_WasMachen_Condition;
 	information	= DIA_Addon_Owen_WasMachen_Info;
 
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 func int DIA_Addon_Owen_WasMachen_Condition ()
 {
@@ -121,9 +121,9 @@ func int DIA_Addon_Owen_WasMachen_Condition ()
 };
 func void DIA_Addon_Owen_WasMachen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_WasMachen_15_00"); //Что ты здесь делаешь?
-	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_01"); //Рублю деревья для нашего лагеря.
-	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_02"); //Я здесь работаю как проклятый, гну спину, а они там в лагере валяются на солнышке.
+	AI_Output	(other, self, "DIA_Addon_Owen_WasMachen_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_01"); //Р СѓР±Р»СЋ РґРµСЂРµРІСЊСЏ РґР»СЏ РЅР°С€РµРіРѕ Р»Р°РіРµСЂСЏ.
+	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_02"); //РЇ Р·РґРµСЃСЊ СЂР°Р±РѕС‚Р°СЋ РєР°Рє РїСЂРѕРєР»СЏС‚С‹Р№, РіРЅСѓ СЃРїРёРЅСѓ, Р° РѕРЅРё С‚Р°Рј РІ Р»Р°РіРµСЂРµ РІР°Р»СЏСЋС‚СЃСЏ РЅР° СЃРѕР»РЅС‹С€РєРµ.
 };
 
 // ************************************************************
@@ -136,7 +136,7 @@ instance DIA_Addon_Owen_Perm		(C_INFO)
 	condition	= DIA_Addon_Owen_Perm_Condition;
 	information	= DIA_Addon_Owen_Perm_Info;
 	permanent	= TRUE;
-	description	= "И?";
+	description	= "Р?";
 };
 func int DIA_Addon_Owen_Perm_Condition ()
 {
@@ -149,8 +149,8 @@ func int DIA_Addon_Owen_Perm_Condition ()
 
 func void DIA_Addon_Owen_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_Perm_15_00"); //И?
-	AI_Output	(self, other, "DIA_Addon_Owen_Perm_13_01"); //Если бы я знал, что все будет именно так, я бы ни за что не стал пиратом.
+	AI_Output	(other, self, "DIA_Addon_Owen_Perm_15_00"); //Р?
+	AI_Output	(self, other, "DIA_Addon_Owen_Perm_13_01"); //Р•СЃР»Рё Р±С‹ СЏ Р·РЅР°Р», С‡С‚Рѕ РІСЃРµ Р±СѓРґРµС‚ РёРјРµРЅРЅРѕ С‚Р°Рє, СЏ Р±С‹ РЅРё Р·Р° С‡С‚Рѕ РЅРµ СЃС‚Р°Р» РїРёСЂР°С‚РѕРј.
 };
 
 // ************************************************************
@@ -163,7 +163,7 @@ instance DIA_Addon_Owen_Henry		(C_INFO)
 	condition	= DIA_Addon_Owen_Henry_Condition;
 	information	= DIA_Addon_Owen_Henry_Info;
 	permanent	= TRUE;
-	description	= "Генри нужно дерево.";
+	description	= "Р“РµРЅСЂРё РЅСѓР¶РЅРѕ РґРµСЂРµРІРѕ.";
 };
 func int DIA_Addon_Owen_Henry_Condition ()
 {
@@ -175,20 +175,20 @@ func int DIA_Addon_Owen_Henry_Condition ()
 };
 func void DIA_Addon_Owen_Henry_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_Henry_15_00"); //Генри нужно дерево.
+	AI_Output	(other, self, "DIA_Addon_Owen_Henry_15_00"); //Р“РµРЅСЂРё РЅСѓР¶РЅРѕ РґРµСЂРµРІРѕ.
 
 	if (MIS_Owen_FindMalcom != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_01"); //Сначала я должен выяснить, что случилось с моим другом Малькомом.
+		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_01"); //РЎРЅР°С‡Р°Р»Р° СЏ РґРѕР»Р¶РµРЅ РІС‹СЏСЃРЅРёС‚СЊ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РјРѕРёРј РґСЂСѓРіРѕРј РњР°Р»СЊРєРѕРјРѕРј.
 	
 			
 	}
 	else 
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_02"); //Расслабься. Получит он рано или поздно свое дерево.
-		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_03"); //Так ему и передай.
+		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_02"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. РџРѕР»СѓС‡РёС‚ РѕРЅ СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ СЃРІРѕРµ РґРµСЂРµРІРѕ.
+		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_03"); //РўР°Рє РµРјСѓ Рё РїРµСЂРµРґР°Р№.
 		
-		B_LogEntry (TOPIC_Addon_HolOwen,"Я должен передать Генри, что Оуэн доставит дерево.");
+		B_LogEntry (TOPIC_Addon_HolOwen,"РЇ РґРѕР»Р¶РµРЅ РїРµСЂРµРґР°С‚СЊ Р“РµРЅСЂРё, С‡С‚Рѕ РћСѓСЌРЅ РґРѕСЃС‚Р°РІРёС‚ РґРµСЂРµРІРѕ.");
 		
 		AI_StopProcessInfos (self);
 		Owen_ComesToHenry = TRUE;
@@ -212,7 +212,7 @@ instance DIA_Addon_Owen_MalcomStunt		(C_INFO)
 	condition	= DIA_Addon_Owen_MalcomStunt_Condition;
 	information	= DIA_Addon_Owen_MalcomStunt_Info;
 
-	description	= "Как дела?";
+	description	= "РљР°Рє РґРµР»Р°?";
 };
 func int DIA_Addon_Owen_MalcomStunt_Condition ()
 {
@@ -223,20 +223,20 @@ func int DIA_Addon_Owen_MalcomStunt_Condition ()
 };
 func void DIA_Addon_Owen_MalcomStunt_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Owen_MalcomStunt_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //Мой приятель Мальком пропал.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_02"); //На нас напал один из этих луркеров.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //Мы убежали в эту пещеру.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_04"); //Но луркер последовал за нами.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Мальком начал с ним сражаться, а потом они оба упали в ту яму.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_06"); //Похоже, там на дне вода.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //Я слышал, как внизу Мальком дерется с луркером. А потом все стихло.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //Не знаю, жив ли еще Мальком.
+	AI_Output (other, self, "DIA_Addon_Owen_MalcomStunt_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //РњРѕР№ РїСЂРёСЏС‚РµР»СЊ РњР°Р»СЊРєРѕРј РїСЂРѕРїР°Р».
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_02"); //РќР° РЅР°СЃ РЅР°РїР°Р» РѕРґРёРЅ РёР· СЌС‚РёС… Р»СѓСЂРєРµСЂРѕРІ.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //РњС‹ СѓР±РµР¶Р°Р»Рё РІ СЌС‚Сѓ РїРµС‰РµСЂСѓ.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_04"); //РќРѕ Р»СѓСЂРєРµСЂ РїРѕСЃР»РµРґРѕРІР°Р» Р·Р° РЅР°РјРё.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //РњР°Р»СЊРєРѕРј РЅР°С‡Р°Р» СЃ РЅРёРј СЃСЂР°Р¶Р°С‚СЊСЃСЏ, Р° РїРѕС‚РѕРј РѕРЅРё РѕР±Р° СѓРїР°Р»Рё РІ С‚Сѓ СЏРјСѓ.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_06"); //РџРѕС…РѕР¶Рµ, С‚Р°Рј РЅР° РґРЅРµ РІРѕРґР°.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //РЇ СЃР»С‹С€Р°Р», РєР°Рє РІРЅРёР·Сѓ РњР°Р»СЊРєРѕРј РґРµСЂРµС‚СЃСЏ СЃ Р»СѓСЂРєРµСЂРѕРј. Рђ РїРѕС‚РѕРј РІСЃРµ СЃС‚РёС…Р»Рѕ.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //РќРµ Р·РЅР°СЋ, Р¶РёРІ Р»Рё РµС‰Рµ РњР°Р»СЊРєРѕРј.
 	
 	Log_CreateTopic (TOPIC_Addon_MalcomsStunt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_MalcomsStunt,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Оуэн хочет узнать, что случилось с его другом Малькомом, который упал в глубокую яму после того, как схватился с луркером.");
-	Log_AddEntry	(TOPIC_Addon_MalcomsStunt,"Оуэн сказал мне, что на дне ямы вода, и сначала упавший туда Мальком был жив. Но через некоторое время шум в яме стих.");
+	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"РћСѓСЌРЅ С…РѕС‡РµС‚ СѓР·РЅР°С‚СЊ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РµРіРѕ РґСЂСѓРіРѕРј РњР°Р»СЊРєРѕРјРѕРј, РєРѕС‚РѕСЂС‹Р№ СѓРїР°Р» РІ РіР»СѓР±РѕРєСѓСЋ СЏРјСѓ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє СЃС…РІР°С‚РёР»СЃСЏ СЃ Р»СѓСЂРєРµСЂРѕРј.");
+	Log_AddEntry	(TOPIC_Addon_MalcomsStunt,"РћСѓСЌРЅ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РЅР° РґРЅРµ СЏРјС‹ РІРѕРґР°, Рё СЃРЅР°С‡Р°Р»Р° СѓРїР°РІС€РёР№ С‚СѓРґР° РњР°Р»СЊРєРѕРј Р±С‹Р» Р¶РёРІ. РќРѕ С‡РµСЂРµР· РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ С€СѓРј РІ СЏРјРµ СЃС‚РёС….");
 	
 	MIS_Owen_FindMalcom = LOG_RUNNING;
 };
@@ -251,7 +251,7 @@ instance DIA_Addon_Owen_runter		(C_INFO)
 	condition	= DIA_Addon_Owen_runter_Condition;
 	information	= DIA_Addon_Owen_runter_Info;
 
-	description	= "Как можно спуститься на дно ямы?";
+	description	= "РљР°Рє РјРѕР¶РЅРѕ СЃРїСѓСЃС‚РёС‚СЊСЃСЏ РЅР° РґРЅРѕ СЏРјС‹?";
 };
 func int DIA_Addon_Owen_runter_Condition ()
 {
@@ -264,8 +264,8 @@ func int DIA_Addon_Owen_runter_Condition ()
 };
 func void DIA_Addon_Owen_runter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_runter_15_00"); //Как можно спуститься на дно ямы?
-	AI_Output	(self, other, "DIA_Addon_Owen_runter_13_01"); //Понятия не имею. Спуститься по стенкам или спрыгнуть, наверное.
+	AI_Output	(other, self, "DIA_Addon_Owen_runter_15_00"); //РљР°Рє РјРѕР¶РЅРѕ СЃРїСѓСЃС‚РёС‚СЊСЃСЏ РЅР° РґРЅРѕ СЏРјС‹?
+	AI_Output	(self, other, "DIA_Addon_Owen_runter_13_01"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РЎРїСѓСЃС‚РёС‚СЊСЃСЏ РїРѕ СЃС‚РµРЅРєР°Рј РёР»Рё СЃРїСЂС‹РіРЅСѓС‚СЊ, РЅР°РІРµСЂРЅРѕРµ.
 };
 
 // ------------------------------------------------------------
@@ -278,7 +278,7 @@ instance DIA_Addon_Owen_MalcomDead		(C_INFO)
 	condition	= DIA_Addon_Owen_MalcomDead_Condition;
 	information	= DIA_Addon_Owen_MalcomDead_Info;
 
-	description	= "Твой приятель Мальком мертв.";
+	description	= "РўРІРѕР№ РїСЂРёСЏС‚РµР»СЊ РњР°Р»СЊРєРѕРј РјРµСЂС‚РІ.";
 };
 func int DIA_Addon_Owen_MalcomDead_Condition ()
 {
@@ -291,15 +291,15 @@ func int DIA_Addon_Owen_MalcomDead_Condition ()
 };
 func void DIA_Addon_Owen_MalcomDead_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //Твой приятель Мальком мертв.
-	AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //Я так и знал. Бедняга. Я должен был ему помочь.
+	AI_Output	(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //РўРІРѕР№ РїСЂРёСЏС‚РµР»СЊ РњР°Р»СЊРєРѕРј РјРµСЂС‚РІ.
+	AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //РЇ С‚Р°Рє Рё Р·РЅР°Р». Р‘РµРґРЅСЏРіР°. РЇ РґРѕР»Р¶РµРЅ Р±С‹Р» РµРјСѓ РїРѕРјРѕС‡СЊ.
 	if (SC_MadeStunt == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_02"); //А ты храбрец.
-		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_03"); //Я бы ни за что не смог спуститься в эту яму.
+		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_02"); //Рђ С‚С‹ С…СЂР°Р±СЂРµС†.
+		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_03"); //РЇ Р±С‹ РЅРё Р·Р° С‡С‚Рѕ РЅРµ СЃРјРѕРі СЃРїСѓСЃС‚РёС‚СЊСЃСЏ РІ СЌС‚Сѓ СЏРјСѓ.
 	};
 	
-	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Я рассказал Оуэну о смерти Малькома. Он воспринял новость довольно спокойно.");
+	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"РЇ СЂР°СЃСЃРєР°Р·Р°Р» РћСѓСЌРЅСѓ Рѕ СЃРјРµСЂС‚Рё РњР°Р»СЊРєРѕРјР°. РћРЅ РІРѕСЃРїСЂРёРЅСЏР» РЅРѕРІРѕСЃС‚СЊ РґРѕРІРѕР»СЊРЅРѕ СЃРїРѕРєРѕР№РЅРѕ.");
 	
 	MIS_Owen_FindMalcom = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Owen_MalcomDead);

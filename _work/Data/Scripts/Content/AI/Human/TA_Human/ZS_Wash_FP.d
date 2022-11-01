@@ -1,5 +1,5 @@
 // *********************************
-// NSC sucht WASH-FP und w‰scht sich
+// NSC sucht WASH-FP und w–¥scht sich
 // *********************************
 
 func void ZS_Wash_FP ()

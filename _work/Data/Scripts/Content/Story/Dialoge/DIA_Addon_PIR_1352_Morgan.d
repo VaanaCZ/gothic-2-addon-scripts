@@ -20,25 +20,25 @@ func int DIA_Addon_Morgan_EXIT_Info ()
 {
 	if (GregIsBack == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Morgan_Perm_15_00"); //Можешь отправляться спать дальше.
+		AI_Output	(other, self, "DIA_Addon_Morgan_Perm_15_00"); //РњРѕР¶РµС€СЊ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ СЃРїР°С‚СЊ РґР°Р»СЊС€Рµ.
 		if (Morgan_Perm_Counter == 0)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_01"); //(зевает) Отличная мысль.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_01"); //(Р·РµРІР°РµС‚) РћС‚Р»РёС‡РЅР°СЏ РјС‹СЃР»СЊ.
 			Morgan_Perm_Counter = 1;
 		}
 		else if (Morgan_Perm_Counter == 1)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_02"); //(сонно) Что ж, спокойной ночи.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_02"); //(СЃРѕРЅРЅРѕ) Р§С‚Рѕ Р¶, СЃРїРѕРєРѕР№РЅРѕР№ РЅРѕС‡Рё.
 			Morgan_Perm_Counter = 2;
 		}
 		else if (Morgan_Perm_Counter == 2)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_03"); //(устало) С огромным удовольствием.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_03"); //(СѓСЃС‚Р°Р»Рѕ) РЎ РѕРіСЂРѕРјРЅС‹Рј СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј.
 			Morgan_Perm_Counter = 3;
 		}
 		else if (Morgan_Perm_Counter == 3)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_04"); //Разбуди меня, если что-нибудь произойдет.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_04"); //Р Р°Р·Р±СѓРґРё РјРµРЅСЏ, РµСЃР»Рё С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРёР·РѕР№РґРµС‚.
 			Morgan_Perm_Counter = 0;
 		};
 	};
@@ -102,10 +102,10 @@ FUNC INT DIA_Addon_Morgan_Anheuern_Condition()
 };
 func int DIA_Addon_Morgan_Anheuern_Info ()
 {
-	AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_00"); //Замечательно! Теперь Грег заставит меня пилить доски!
+	AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_00"); //Р—Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ! РўРµРїРµСЂСЊ Р“СЂРµРі Р·Р°СЃС‚Р°РІРёС‚ РјРµРЅСЏ РїРёР»РёС‚СЊ РґРѕСЃРєРё!
 	if (MIS_Addon_Greg_ClearCanyon == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_01"); //(с сарказмом) Удачи в потрошении монстров!
+		AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_01"); //(СЃ СЃР°СЂРєР°Р·РјРѕРј) РЈРґР°С‡Рё РІ РїРѕС‚СЂРѕС€РµРЅРёРё РјРѕРЅСЃС‚СЂРѕРІ!
 	};
 };
 
@@ -133,10 +133,10 @@ FUNC INT DIA_Addon_Morgan_Hello_Condition()
 };
 func VOID DIA_Addon_Morgan_Hello_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Hello_15_00"); //Эй, ты!
-	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_01"); //(сонно) А? Что тебе нужно?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_02"); //(сонно) Аллигатор Джек уже вернулся?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_03"); //(сонно) Нет? Ну, значит, скоро вернется. Приятных снов.
+	AI_Output (other,self ,"DIA_Addon_Morgan_Hello_15_00"); //Р­Р№, С‚С‹!
+	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_01"); //(СЃРѕРЅРЅРѕ) Рђ? Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_02"); //(СЃРѕРЅРЅРѕ) РђР»Р»РёРіР°С‚РѕСЂ Р”Р¶РµРє СѓР¶Рµ РІРµСЂРЅСѓР»СЃСЏ?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_03"); //(СЃРѕРЅРЅРѕ) РќРµС‚? РќСѓ, Р·РЅР°С‡РёС‚, СЃРєРѕСЂРѕ РІРµСЂРЅРµС‚СЃСЏ. РџСЂРёСЏС‚РЅС‹С… СЃРЅРѕРІ.
 	AI_StopProcessInfos (self);
 };
 
@@ -150,7 +150,7 @@ INSTANCE DIA_Addon_Morgan_Meat(C_INFO)
 	condition	= DIA_Addon_Morgan_Meat_Condition;
 	information	= DIA_Addon_Morgan_Meat_Info;
 
-	description	= "Я принес мясо.";
+	description	= "РЇ РїСЂРёРЅРµСЃ РјСЏСЃРѕ.";
 };                       
 FUNC INT DIA_Addon_Morgan_Meat_Condition()
 {
@@ -162,20 +162,20 @@ FUNC INT DIA_Addon_Morgan_Meat_Condition()
 };
 func VOID DIA_Addon_Morgan_Meat_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Meat_15_00"); //Я принес мясо.
+	AI_Output (other,self ,"DIA_Addon_Morgan_Meat_15_00"); //РЇ РїСЂРёРЅРµСЃ РјСЏСЃРѕ.
 
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_01"); //(просыпается) А-а-а. Мне нужно глотнуть рома, чтобы проснуться.
+		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_01"); //(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Рђ-Р°-Р°. РњРЅРµ РЅСѓР¶РЅРѕ РіР»РѕС‚РЅСѓС‚СЊ СЂРѕРјР°, С‡С‚РѕР±С‹ РїСЂРѕСЃРЅСѓС‚СЊСЃСЏ.
 		
 		CreateInvItems (self, ItFo_Booze, 3);									
 		B_UseItem (self,ItFo_Booze);
 		
-		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_02"); //Так-то лучше. Еще раз, что ты хотел?
-		AI_Output (other,self ,"DIA_Addon_Morgan_Meat_15_03"); //Я принес мясо. От Аллигатора Джека.
+		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_02"); //РўР°Рє-С‚Рѕ Р»СѓС‡С€Рµ. Р•С‰Рµ СЂР°Р·, С‡С‚Рѕ С‚С‹ С…РѕС‚РµР»?
+		AI_Output (other,self ,"DIA_Addon_Morgan_Meat_15_03"); //РЇ РїСЂРёРЅРµСЃ РјСЏСЃРѕ. РћС‚ РђР»Р»РёРіР°С‚РѕСЂР° Р”Р¶РµРєР°.
 	};
 
-	AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_04"); //Точно! Я вспомнил! Мясо! Давай его сюда.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_04"); //РўРѕС‡РЅРѕ! РЇ РІСЃРїРѕРјРЅРёР»! РњСЏСЃРѕ! Р”Р°РІР°Р№ РµРіРѕ СЃСЋРґР°.
 	
 	var int GivenMeat; GivenMeat = Npc_HasItems (other, ItFoMuttonRaw);
 	
@@ -188,10 +188,10 @@ func VOID DIA_Addon_Morgan_Meat_Info()
 	
 	if (GivenMeat < 10)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_05"); //Это все? Остальное, наверное, сам съел? Ну ладно...
+		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_05"); //Р­С‚Рѕ РІСЃРµ? РћСЃС‚Р°Р»СЊРЅРѕРµ, РЅР°РІРµСЂРЅРѕРµ, СЃР°Рј СЃСЉРµР»? РќСѓ Р»Р°РґРЅРѕ...
 	};
 	
-	B_LogEntry (TOPIC_Addon_BringMeat,"Я принес мясо Моргану.");
+	B_LogEntry (TOPIC_Addon_BringMeat,"РЇ РїСЂРёРЅРµСЃ РјСЏСЃРѕ РњРѕСЂРіР°РЅСѓ.");
 	
 	MIS_AlligatorJack_BringMeat = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_ALLIGatORJACK_BringMeat);
@@ -207,7 +207,7 @@ INSTANCE DIA_Addon_Morgan_Job(C_INFO)
 	condition	= DIA_Addon_Morgan_Job_Condition;
 	information	= DIA_Addon_Morgan_Job_Info;
 
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };                       
 FUNC INT DIA_Addon_Morgan_Job_Condition()
 {
@@ -218,14 +218,14 @@ FUNC INT DIA_Addon_Morgan_Job_Condition()
 };
 FUNC VOID DIA_Addon_Morgan_Job_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Morgan_Job_15_01"); //Что ты здесь делаешь?
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_01"); //Грег назначил меня командиром одного из боевых отрядов.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_02"); //Я отвечаю за снабжение лагеря. Мясо мне поставляет Аллигатор Джек.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_03"); //Еще я слежу за тем, чтобы к лагерю не подходили дикие звери, которых тут полно.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_04"); //За этим следят мои парни.
+	AI_Output (other, self, "DIA_Addon_Morgan_Job_15_01"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_01"); //Р“СЂРµРі РЅР°Р·РЅР°С‡РёР» РјРµРЅСЏ РєРѕРјР°РЅРґРёСЂРѕРј РѕРґРЅРѕРіРѕ РёР· Р±РѕРµРІС‹С… РѕС‚СЂСЏРґРѕРІ.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_02"); //РЇ РѕС‚РІРµС‡Р°СЋ Р·Р° СЃРЅР°Р±Р¶РµРЅРёРµ Р»Р°РіРµСЂСЏ. РњСЏСЃРѕ РјРЅРµ РїРѕСЃС‚Р°РІР»СЏРµС‚ РђР»Р»РёРіР°С‚РѕСЂ Р”Р¶РµРє.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_03"); //Р•С‰Рµ СЏ СЃР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ Рє Р»Р°РіРµСЂСЋ РЅРµ РїРѕРґС…РѕРґРёР»Рё РґРёРєРёРµ Р·РІРµСЂРё, РєРѕС‚РѕСЂС‹С… С‚СѓС‚ РїРѕР»РЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_04"); //Р—Р° СЌС‚РёРј СЃР»РµРґСЏС‚ РјРѕРё РїР°СЂРЅРё.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Morgan_Job_07_05"); //Я сказал им, что к возвращению Грега здесь не должно быть (зевает) ни одного зверя.
+		AI_Output (self, other, "DIA_Addon_Morgan_Job_07_05"); //РЇ СЃРєР°Р·Р°Р» РёРј, С‡С‚Рѕ Рє РІРѕР·РІСЂР°С‰РµРЅРёСЋ Р“СЂРµРіР° Р·РґРµСЃСЊ РЅРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ (Р·РµРІР°РµС‚) РЅРё РѕРґРЅРѕРіРѕ Р·РІРµСЂСЏ.
 	};
 };
 
@@ -239,7 +239,7 @@ INSTANCE DIA_Addon_Morgan_Sleep(C_INFO)
 	condition	= DIA_Addon_Morgan_Sleep_Condition;
 	information	= DIA_Addon_Morgan_Sleep_Info;
 
-	description	= "А сам ты что-нибудь делаешь?";
+	description	= "Рђ СЃР°Рј С‚С‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґРµР»Р°РµС€СЊ?";
 };                       
 FUNC INT DIA_Addon_Morgan_Sleep_Condition()
 {
@@ -250,13 +250,13 @@ FUNC INT DIA_Addon_Morgan_Sleep_Condition()
 };
 FUNC VOID DIA_Addon_Morgan_Sleep_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Sleep_15_00"); //А сам ты что-нибудь делаешь?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_01"); //На что это ты намекаешь?!
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_02"); //Да моя работа здесь самая важная.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_03"); //Я обучаю своих людей.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_04"); //Я делаю из них лучших и самых отважных бойцов, которых когда-либо видели эти воды.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_05"); //Но они не из тех, кто продает себя по дешевке.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_06"); //За свой труд они получают порядочный куш золота.
+	AI_Output (other,self ,"DIA_Addon_Morgan_Sleep_15_00"); //Рђ СЃР°Рј С‚С‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_01"); //РќР° С‡С‚Рѕ СЌС‚Рѕ С‚С‹ РЅР°РјРµРєР°РµС€СЊ?!
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_02"); //Р”Р° РјРѕСЏ СЂР°Р±РѕС‚Р° Р·РґРµСЃСЊ СЃР°РјР°СЏ РІР°Р¶РЅР°СЏ.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_03"); //РЇ РѕР±СѓС‡Р°СЋ СЃРІРѕРёС… Р»СЋРґРµР№.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_04"); //РЇ РґРµР»Р°СЋ РёР· РЅРёС… Р»СѓС‡С€РёС… Рё СЃР°РјС‹С… РѕС‚РІР°Р¶РЅС‹С… Р±РѕР№С†РѕРІ, РєРѕС‚РѕСЂС‹С… РєРѕРіРґР°-Р»РёР±Рѕ РІРёРґРµР»Рё СЌС‚Рё РІРѕРґС‹.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_05"); //РќРѕ РѕРЅРё РЅРµ РёР· С‚РµС…, РєС‚Рѕ РїСЂРѕРґР°РµС‚ СЃРµР±СЏ РїРѕ РґРµС€РµРІРєРµ.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_06"); //Р—Р° СЃРІРѕР№ С‚СЂСѓРґ РѕРЅРё РїРѕР»СѓС‡Р°СЋС‚ РїРѕСЂСЏРґРѕС‡РЅС‹Р№ РєСѓС€ Р·РѕР»РѕС‚Р°.
 };
 
 // ************************************************************
@@ -274,7 +274,7 @@ instance DIA_Addon_Morgan_JoinMorgan(C_INFO)
 	condition	= DIA_Addon_Morgan_JoinMorgan_Condition;
 	information	= DIA_Addon_Morgan_JoinMorgan_Info;
 
-	description	= "Я хочу вступить в твой отряд.";
+	description	= "РЇ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РІ С‚РІРѕР№ РѕС‚СЂСЏРґ.";
 };                       
 FUNC INT DIA_Addon_Morgan_JoinMorgan_Condition()
 {
@@ -286,17 +286,17 @@ FUNC INT DIA_Addon_Morgan_JoinMorgan_Condition()
 };
 func VOID DIA_Addon_Morgan_JoinMorgan_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_JoinMorgan_15_00"); //Я хочу вступить в твой отряд.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_01"); //(смеется) Мой отряд? Мой отряд сейчас валяется на пляже.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_03"); //Они палец о палец не ударят до тех пор, пока капитан не вернется. Это я тебе точно говорю.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_04"); //Но если ты хочешь показать всем остальным, из чего ты сделан, то ступай на северный пляж.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_05"); //Там полно луркеров... и черт знает, чего еще.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_06"); //Разберись с ними, и ты заработаешь уважение (зевает) людей...
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_07"); //Добро пожаловать в мой отряд. Хе-хе. А я пока еще посплю...
+	AI_Output (other,self ,"DIA_Addon_Morgan_JoinMorgan_15_00"); //РЇ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РІ С‚РІРѕР№ РѕС‚СЂСЏРґ.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_01"); //(СЃРјРµРµС‚СЃСЏ) РњРѕР№ РѕС‚СЂСЏРґ? РњРѕР№ РѕС‚СЂСЏРґ СЃРµР№С‡Р°СЃ РІР°Р»СЏРµС‚СЃСЏ РЅР° РїР»СЏР¶Рµ.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_03"); //РћРЅРё РїР°Р»РµС† Рѕ РїР°Р»РµС† РЅРµ СѓРґР°СЂСЏС‚ РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° РєР°РїРёС‚Р°РЅ РЅРµ РІРµСЂРЅРµС‚СЃСЏ. Р­С‚Рѕ СЏ С‚РµР±Рµ С‚РѕС‡РЅРѕ РіРѕРІРѕСЂСЋ.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_04"); //РќРѕ РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕРєР°Р·Р°С‚СЊ РІСЃРµРј РѕСЃС‚Р°Р»СЊРЅС‹Рј, РёР· С‡РµРіРѕ С‚С‹ СЃРґРµР»Р°РЅ, С‚Рѕ СЃС‚СѓРїР°Р№ РЅР° СЃРµРІРµСЂРЅС‹Р№ РїР»СЏР¶.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_05"); //РўР°Рј РїРѕР»РЅРѕ Р»СѓСЂРєРµСЂРѕРІ... Рё С‡РµСЂС‚ Р·РЅР°РµС‚, С‡РµРіРѕ РµС‰Рµ.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_06"); //Р Р°Р·Р±РµСЂРёСЃСЊ СЃ РЅРёРјРё, Рё С‚С‹ Р·Р°СЂР°Р±РѕС‚Р°РµС€СЊ СѓРІР°Р¶РµРЅРёРµ (Р·РµРІР°РµС‚) Р»СЋРґРµР№...
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_07"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РјРѕР№ РѕС‚СЂСЏРґ. РҐРµ-С…Рµ. Рђ СЏ РїРѕРєР° РµС‰Рµ РїРѕСЃРїР»СЋ...
 	
 	Log_CreateTopic (TOPIC_Addon_MorganBeach,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_MorganBeach,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MorganBeach,"Я присоединился к боевой группе Моргана. Он хочет, чтобы я очистил северный пляж от монстров.");
+	B_LogEntry (TOPIC_Addon_MorganBeach,"РЇ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє Р±РѕРµРІРѕР№ РіСЂСѓРїРїРµ РњРѕСЂРіР°РЅР°. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РѕС‡РёСЃС‚РёР» СЃРµРІРµСЂРЅС‹Р№ РїР»СЏР¶ РѕС‚ РјРѕРЅСЃС‚СЂРѕРІ.");
 	
 	MIS_Addon_MorganLurker = LOG_RUNNING;
 	AI_StopProcessInfos (self);
@@ -312,7 +312,7 @@ instance DIA_Addon_Morgan_LurkerPlatt		(C_INFO)
 	condition	= DIA_Addon_Morgan_LurkerPlatt_Condition;
 	information	= DIA_Addon_Morgan_LurkerPlatt_Info;
 	permanent	= TRUE;
-	description	= "На северном пляже теперь безопасно.";
+	description	= "РќР° СЃРµРІРµСЂРЅРѕРј РїР»СЏР¶Рµ С‚РµРїРµСЂСЊ Р±РµР·РѕРїР°СЃРЅРѕ.";
 };
 func int DIA_Addon_Morgan_LurkerPlatt_Condition ()
 {
@@ -328,18 +328,18 @@ func int DIA_Addon_Morgan_LurkerPlatt_Condition ()
 };
 func void DIA_Addon_Morgan_LurkerPlatt_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Morgan_LurkerPlatt_15_00"); //На северном пляже теперь безопасно.
-	AI_Output (self, other, "DIA_Addon_Morgan_LurkerPlatt_07_01"); //А пещера? Там ты тоже побывал?
+	AI_Output (other, self, "DIA_Addon_Morgan_LurkerPlatt_15_00"); //РќР° СЃРµРІРµСЂРЅРѕРј РїР»СЏР¶Рµ С‚РµРїРµСЂСЊ Р±РµР·РѕРїР°СЃРЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Morgan_LurkerPlatt_07_01"); //Рђ РїРµС‰РµСЂР°? РўР°Рј С‚С‹ С‚РѕР¶Рµ РїРѕР±С‹РІР°Р»?
 		
 	if (Npc_IsDead(BeachShadowbeast1))
 	{
-		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_02"); //Конечно.
-		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_03"); //Отлично. Ты хороший человек.
-		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_04"); //Вот твоя награда.
+		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_02"); //РљРѕРЅРµС‡РЅРѕ.
+		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_03"); //РћС‚Р»РёС‡РЅРѕ. РўС‹ С…РѕСЂРѕС€РёР№ С‡РµР»РѕРІРµРє.
+		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_04"); //Р’РѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР°.
 		CreateInvItems (self, ItMi_Gold, 150);									
 		B_GiveInvItems (self, other, ItMi_Gold, 150);
 		
-		B_LogEntry (TOPIC_Addon_MorganBeach,"Все чудовища на пляже убиты.");
+		B_LogEntry (TOPIC_Addon_MorganBeach,"Р’СЃРµ С‡СѓРґРѕРІРёС‰Р° РЅР° РїР»СЏР¶Рµ СѓР±РёС‚С‹.");
 		
 		MIS_Addon_MorganLurker = LOG_SUCCESS;
 				
@@ -347,10 +347,10 @@ func void DIA_Addon_Morgan_LurkerPlatt_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_05"); //Э-э-э...
-		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_06"); //Это тоже часть твоего задания. Возвращайся, когда закончишь.
+		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_05"); //Р­-СЌ-СЌ...
+		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_06"); //Р­С‚Рѕ С‚РѕР¶Рµ С‡Р°СЃС‚СЊ С‚РІРѕРµРіРѕ Р·Р°РґР°РЅРёСЏ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Р·Р°РєРѕРЅС‡РёС€СЊ.
 		
-		B_LogEntry (TOPIC_Addon_MorganBeach,"Морган попросил меня заняться пещерой.");
+		B_LogEntry (TOPIC_Addon_MorganBeach,"РњРѕСЂРіР°РЅ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ Р·Р°РЅСЏС‚СЊСЃСЏ РїРµС‰РµСЂРѕР№.");
 		
 		AI_StopProcessInfos (self);
 	};
@@ -366,7 +366,7 @@ instance DIA_Addon_Morgan_Auftrag2		(C_INFO)
 	condition	= DIA_Addon_Morgan_Auftrag2_Condition;
 	information	= DIA_Addon_Morgan_Auftrag2_Info;
 	permanent	= TRUE;
-	description	= "Для меня есть еще какие-нибудь задания?";
+	description	= "Р”Р»СЏ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РєР°РєРёРµ-РЅРёР±СѓРґСЊ Р·Р°РґР°РЅРёСЏ?";
 };
 func int DIA_Addon_Morgan_Auftrag2_Condition ()
 {
@@ -377,19 +377,19 @@ func int DIA_Addon_Morgan_Auftrag2_Condition ()
 };
 func void DIA_Addon_Morgan_Auftrag2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Morgan_Auftrag2_15_00"); //Для меня есть еще какая-нибудь работа?
+	AI_Output	(other, self, "DIA_Addon_Morgan_Auftrag2_15_00"); //Р”Р»СЏ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Р°?
 
 	if (GregIsBack == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_01"); //Пока нет.
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_02"); //Отдохни, полежи, выпей рома!
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_01"); //РџРѕРєР° РЅРµС‚.
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_02"); //РћС‚РґРѕС…РЅРё, РїРѕР»РµР¶Рё, РІС‹РїРµР№ СЂРѕРјР°!
 		CreateInvItems (self, ItFo_Booze, 3);									
 		B_UseItem (self,ItFo_Booze);
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_03"); //Чертовски забористая вещь!
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_03"); //Р§РµСЂС‚РѕРІСЃРєРё Р·Р°Р±РѕСЂРёСЃС‚Р°СЏ РІРµС‰СЊ!
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_04"); //Тебе лучше спросить капитана.
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_04"); //РўРµР±Рµ Р»СѓС‡С€Рµ СЃРїСЂРѕСЃРёС‚СЊ РєР°РїРёС‚Р°РЅР°.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -409,7 +409,7 @@ instance DIA_Addon_Morgan_FOUNDTHEM(C_INFO)
 	condition	= DIA_Addon_Morgan_FOUNDTHEM_Condition;
 	information	= DIA_Addon_Morgan_FOUNDTHEM_Info;
 	permanent	= TRUE;
-	description	= "Насчет Ангуса и Хэнка...";
+	description	= "РќР°СЃС‡РµС‚ РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР°...";
 };                       
 FUNC INT DIA_Addon_Morgan_FOUNDTHEM_Condition()
 {
@@ -422,52 +422,52 @@ FUNC INT DIA_Addon_Morgan_FOUNDTHEM_Condition()
 
 FUNC VOID DIA_Addon_Morgan_FOUNDTHEM_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_00"); //Насчет Хэнка и Ангуса...
+	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_00"); //РќР°СЃС‡РµС‚ РҐСЌРЅРєР° Рё РђРЅРіСѓСЃР°...
 	
 	if (Morgan_AngusStory == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_01"); //Не напоминай мне о них.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_02"); //Наверняка они попали в руки бандитов.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_03"); //А у Ангуса было мое кольцо.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_04"); //Нет, конечно, это было уже ЕГО кольцо. Он выиграл его у меня в кости.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_05"); //Но я бы обязательно отыгрался. А теперь оно пропало навсегда!
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_01"); //РќРµ РЅР°РїРѕРјРёРЅР°Р№ РјРЅРµ Рѕ РЅРёС….
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_02"); //РќР°РІРµСЂРЅСЏРєР° РѕРЅРё РїРѕРїР°Р»Рё РІ СЂСѓРєРё Р±Р°РЅРґРёС‚РѕРІ.
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_03"); //Рђ Сѓ РђРЅРіСѓСЃР° Р±С‹Р»Рѕ РјРѕРµ РєРѕР»СЊС†Рѕ.
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_04"); //РќРµС‚, РєРѕРЅРµС‡РЅРѕ, СЌС‚Рѕ Р±С‹Р»Рѕ СѓР¶Рµ Р•Р“Рћ РєРѕР»СЊС†Рѕ. РћРЅ РІС‹РёРіСЂР°Р» РµРіРѕ Сѓ РјРµРЅСЏ РІ РєРѕСЃС‚Рё.
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_05"); //РќРѕ СЏ Р±С‹ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РѕС‚С‹РіСЂР°Р»СЃСЏ. Рђ С‚РµРїРµСЂСЊ РѕРЅРѕ РїСЂРѕРїР°Р»Рѕ РЅР°РІСЃРµРіРґР°!
 		Morgan_AngusStory = TRUE;
 	};
 
 	Info_ClearChoices (DIA_Addon_Morgan_FOUNDTHEM);
 	if (Npc_HasItems (other, ItRi_Addon_MorgansRing_Mission) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM, "Я их нашел.", DIA_Addon_Morgan_FOUNDTHEM_Now);
+		Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM, "РЇ РёС… РЅР°С€РµР».", DIA_Addon_Morgan_FOUNDTHEM_Now);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_06"); //Если найдешь мое кольцо, принеси его мне. Я тебе достойно заплачу!
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_06"); //Р•СЃР»Рё РЅР°Р№РґРµС€СЊ РјРѕРµ РєРѕР»СЊС†Рѕ, РїСЂРёРЅРµСЃРё РµРіРѕ РјРЅРµ. РЇ С‚РµР±Рµ РґРѕСЃС‚РѕР№РЅРѕ Р·Р°РїР»Р°С‡Сѓ!
 	};
 };
 func void DIA_Addon_Morgan_FOUNDTHEM_Now()
 {
-	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_01"); //Я нашел их.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_07"); //Ну, говори. Что с ними?
-	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_03"); //Они мертвы.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_08"); //А кольцо? Что с кольцом?
+	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_01"); //РЇ РЅР°С€РµР» РёС….
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_07"); //РќСѓ, РіРѕРІРѕСЂРё. Р§С‚Рѕ СЃ РЅРёРјРё?
+	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_03"); //РћРЅРё РјРµСЂС‚РІС‹.
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_08"); //Рђ РєРѕР»СЊС†Рѕ? Р§С‚Рѕ СЃ РєРѕР»СЊС†РѕРј?
 	Info_ClearChoices (DIA_Addon_Morgan_FOUNDTHEM);
-	Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM,"Вот оно.",DIA_Addon_Morgan_FOUNDTHEM_GiveRing);
-	Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM,"У них его не было.",DIA_Addon_Morgan_FOUNDTHEM_NoRing);
+	Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM,"Р’РѕС‚ РѕРЅРѕ.",DIA_Addon_Morgan_FOUNDTHEM_GiveRing);
+	Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM,"РЈ РЅРёС… РµРіРѕ РЅРµ Р±С‹Р»Рѕ.",DIA_Addon_Morgan_FOUNDTHEM_NoRing);
 };
 func void DIA_Addon_Morgan_FOUNDTHEM_NoRing()
 {
-	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_15_00"); //У них его не было.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_01"); //(в ужасе) Что? Возвращайся и поищи получше. Оно должно было быть у Ангуса.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_02"); //Это небольшое кольцо, украшенное сложными узорами.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_03"); //Ты должен найти его! Должен!
+	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_15_00"); //РЈ РЅРёС… РµРіРѕ РЅРµ Р±С‹Р»Рѕ.
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_01"); //(РІ СѓР¶Р°СЃРµ) Р§С‚Рѕ? Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ Рё РїРѕРёС‰Рё РїРѕР»СѓС‡С€Рµ. РћРЅРѕ РґРѕР»Р¶РЅРѕ Р±С‹Р»Рѕ Р±С‹С‚СЊ Сѓ РђРЅРіСѓСЃР°.
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_02"); //Р­С‚Рѕ РЅРµР±РѕР»СЊС€РѕРµ РєРѕР»СЊС†Рѕ, СѓРєСЂР°С€РµРЅРЅРѕРµ СЃР»РѕР¶РЅС‹РјРё СѓР·РѕСЂР°РјРё.
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_03"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РµРіРѕ! Р”РѕР»Р¶РµРЅ!
 	Info_ClearChoices (DIA_Addon_Morgan_FOUNDTHEM);
 };
 func void DIA_Addon_Morgan_FOUNDTHEM_GiveRing()
 {
-	AI_Output (other, self ,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_15_00"); //Вот оно.
+	AI_Output (other, self ,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_15_00"); //Р’РѕС‚ РѕРЅРѕ.
 	B_GiveInvItems (other, self ,ItRi_Addon_MorgansRing_Mission,1);
-	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_01"); //(радостно) Да, это оно! Спасибо тебе!
-	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_02"); //Вот, возьми эту каменную табличку. Возможно, она на первый взгляд и бесполезна, но Гаретт тебе за нее хорошо заплатит.
+	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_01"); //(СЂР°РґРѕСЃС‚РЅРѕ) Р”Р°, СЌС‚Рѕ РѕРЅРѕ! РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ!
+	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_02"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Сѓ РєР°РјРµРЅРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅР° РЅР° РїРµСЂРІС‹Р№ РІР·РіР»СЏРґ Рё Р±РµСЃРїРѕР»РµР·РЅР°, РЅРѕ Р“Р°СЂРµС‚С‚ С‚РµР±Рµ Р·Р° РЅРµРµ С…РѕСЂРѕС€Рѕ Р·Р°РїР»Р°С‚РёС‚.
 	
 	MIS_Addon_Morgan_SeekTraitor = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_MorgansRing);
@@ -490,7 +490,7 @@ INSTANCE DIA_Addon_Morgan_Francis(C_INFO)
 	condition	= DIA_Addon_Morgan_Francis_Condition;
 	information	= DIA_Addon_Morgan_Francis_Info;
 
-	description	= "Что ты думаешь о Фрэнсисе?";
+	description	= "Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?";
 };                       
 FUNC INT DIA_Addon_Morgan_Francis_Condition()
 {
@@ -506,11 +506,11 @@ FUNC INT DIA_Addon_Morgan_Francis_Condition()
 
 FUNC VOID DIA_Addon_Morgan_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_00"); //Что ты думаешь о Фрэнсисе?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_01"); //Я ничего не имею против него, (угрожающе) пока он ко мне не лезет!
-	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_02"); //Он здесь начальник?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_03"); //(смеется) Он ДУМАЕТ, что он главный.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_04"); //Но когда вернется Грег, Фрэнсис снова займется своей обычной работой - пилением досок.
+	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_00"); //Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_01"); //РЇ РЅРёС‡РµРіРѕ РЅРµ РёРјРµСЋ РїСЂРѕС‚РёРІ РЅРµРіРѕ, (СѓРіСЂРѕР¶Р°СЋС‰Рµ) РїРѕРєР° РѕРЅ РєРѕ РјРЅРµ РЅРµ Р»РµР·РµС‚!
+	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_02"); //РћРЅ Р·РґРµСЃСЊ РЅР°С‡Р°Р»СЊРЅРёРє?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_03"); //(СЃРјРµРµС‚СЃСЏ) РћРЅ Р”РЈРњРђР•Рў, С‡С‚Рѕ РѕРЅ РіР»Р°РІРЅС‹Р№.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_04"); //РќРѕ РєРѕРіРґР° РІРµСЂРЅРµС‚СЃСЏ Р“СЂРµРі, Р¤СЂСЌРЅСЃРёСЃ СЃРЅРѕРІР° Р·Р°Р№РјРµС‚СЃСЏ СЃРІРѕРµР№ РѕР±С‹С‡РЅРѕР№ СЂР°Р±РѕС‚РѕР№ - РїРёР»РµРЅРёРµРј РґРѕСЃРѕРє.
 };
 
 
@@ -530,7 +530,7 @@ INSTANCE DIA_Addon_Morgan_TRAIN(C_INFO)
 	condition	= DIA_Addon_Morgan_TRAIN_Condition;
 	information	= DIA_Addon_Morgan_TRAIN_Info;
 
-	description	= "Ты можешь обучить и меня?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ Рё РјРµРЅСЏ?";
 };                       
 FUNC INT DIA_Addon_Morgan_TRAIN_Condition()
 {
@@ -541,8 +541,8 @@ FUNC INT DIA_Addon_Morgan_TRAIN_Condition()
 };
 FUNC VOID DIA_Addon_Morgan_TRAIN_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_TRAIN_15_00"); //А меня ты можешь чему-нибудь научить?
-	AI_Output (self ,other,"DIA_Addon_Morgan_TRAIN_07_01"); //Конечно. Я могу улучшить твое умение обращаться одноручным оружием.
+	AI_Output (other,self ,"DIA_Addon_Morgan_TRAIN_15_00"); //Рђ РјРµРЅСЏ С‚С‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ?
+	AI_Output (self ,other,"DIA_Addon_Morgan_TRAIN_07_01"); //РљРѕРЅРµС‡РЅРѕ. РЇ РјРѕРіСѓ СѓР»СѓС‡С€РёС‚СЊ С‚РІРѕРµ СѓРјРµРЅРёРµ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.
 	
 	Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Teacher,Log_Text_Addon_MorganTeach);
@@ -563,7 +563,7 @@ instance DIA_Addon_Morgan_Teach(C_INFO)
 	condition	= DIA_Addon_Morgan_Teach_Condition;
 	information	= DIA_Addon_Morgan_Teach_Info;
 	permanent	= TRUE;
-	description	= "Учи меня!";
+	description	= "РЈС‡Рё РјРµРЅСЏ!";
 };                       
 FUNC INT DIA_Addon_Morgan_Teach_Condition()
 {
@@ -574,7 +574,7 @@ FUNC INT DIA_Addon_Morgan_Teach_Condition()
 };
 func VOID DIA_Addon_Morgan_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Teach_15_00"); //Я готов учиться!
+	AI_Output (other,self ,"DIA_Addon_Morgan_Teach_15_00"); //РЇ РіРѕС‚РѕРІ СѓС‡РёС‚СЊСЃСЏ!
 	
 	Morgan_merke1h = other.HitChance[NPC_TALENT_1H];  
 	
@@ -589,23 +589,23 @@ func VOID DIA_Addon_Morgan_Teach_Back()
 	{
 		if (Morgan_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_00"); //Итак, забудь всю эту ерунду насчет чести и всего прочего. Либо ты убиваешь врага, либо он тебя.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_00"); //РС‚Р°Рє, Р·Р°Р±СѓРґСЊ РІСЃСЋ СЌС‚Сѓ РµСЂСѓРЅРґСѓ РЅР°СЃС‡РµС‚ С‡РµСЃС‚Рё Рё РІСЃРµРіРѕ РїСЂРѕС‡РµРіРѕ. Р›РёР±Рѕ С‚С‹ СѓР±РёРІР°РµС€СЊ РІСЂР°РіР°, Р»РёР±Рѕ РѕРЅ С‚РµР±СЏ.
 			Morgan_Labercount = 1;	
 		}
 		else if (Morgan_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_01"); //Ты научишься вкладывать больше силы в свои удары.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_01"); //РўС‹ РЅР°СѓС‡РёС€СЊСЃСЏ РІРєР»Р°РґС‹РІР°С‚СЊ Р±РѕР»СЊС€Рµ СЃРёР»С‹ РІ СЃРІРѕРё СѓРґР°СЂС‹.
 			Morgan_Labercount = 2;	
 		}
 		else if (Morgan_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_02"); //Ха-ха. Ну, теперь ты хотя бы знаешь, с какой стороны браться за меч.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_02"); //РҐР°-С…Р°. РќСѓ, С‚РµРїРµСЂСЊ С‚С‹ С…РѕС‚СЏ Р±С‹ Р·РЅР°РµС€СЊ, СЃ РєР°РєРѕР№ СЃС‚РѕСЂРѕРЅС‹ Р±СЂР°С‚СЊСЃСЏ Р·Р° РјРµС‡.
 			Morgan_Labercount = 0;	
 		};
 	}
 	else if (other.HitChance[NPC_TALENT_1H] >= 75)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_Teach_Back_07_00"); //Если ты хочешь стать еще лучше, ты должен найти более опытного учителя.
+		AI_Output (self ,other,"DIA_Addon_Morgan_Teach_Back_07_00"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РµС‰Рµ Р»СѓС‡С€Рµ, С‚С‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё Р±РѕР»РµРµ РѕРїС‹С‚РЅРѕРіРѕ СѓС‡РёС‚РµР»СЏ.
 	};
 	Info_ClearChoices (DIA_Addon_Morgan_Teach);
 };

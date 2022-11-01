@@ -1,7 +1,7 @@
 instance STRF_1125_Addon_Tonak_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Тонак"; 
+	name 		= "РўРѕРЅР°Рє"; 
 	guild 		= GIL_OUT;
 	id 			= 1125;
 	voice 		= 3;

@@ -54,7 +54,7 @@ func int DIA_KDF_507_Talamon_FirstWarn_Condition()
 
 func void DIA_KDF_507_Talamon_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_FirstWarn_04_00"); //Тебе нельзя идти дальше. Поворачивай назад!
+	AI_Output (self, other,"DIA_KDF_507_Talamon_FirstWarn_04_00"); //РўРµР±Рµ РЅРµР»СЊР·СЏ РёРґС‚Рё РґР°Р»СЊС€Рµ. РџРѕРІРѕСЂР°С‡РёРІР°Р№ РЅР°Р·Р°Рґ!
 	//AI_Output (other, self,"DIA_KDF_507_Talamon_FirstWarn_15_01"); //
 	
 	AI_StopProcessInfos	(self);
@@ -92,7 +92,7 @@ FUNC INT DIA_KDF_507_Talamon_SecondWarn_Condition()
 
 func void DIA_KDF_507_Talamon_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //Иннос обратит свой гнев против тебя, если ты не повернешь назад!
+	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //РРЅРЅРѕСЃ РѕР±СЂР°С‚РёС‚ СЃРІРѕР№ РіРЅРµРІ РїСЂРѕС‚РёРІ С‚РµР±СЏ, РµСЃР»Рё С‚С‹ РЅРµ РїРѕРІРµСЂРЅРµС€СЊ РЅР°Р·Р°Рґ!
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,KDF_507_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -131,7 +131,7 @@ func void DIA_KDF_507_Talamon_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;	//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurьckgeben
+	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurСЊckgeben
 	
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -261,11 +261,11 @@ FUNC INT DIA_Talamon_KAP5_Stop_Condition()
 
 FUNC VOID DIA_Talamon_KAP5_Stop_Info()
 {
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //Тебе нельзя идти дальше. Поворачивай назад!
-	AI_Output (other,self ,"DIA_Talamon_KAP5_Stop_15_01"); //Пирокар сказал, что мне можно взять книгу Ксардаса.
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //Ну, если он это сказал... Хорошо, ты можешь войти. Книга, которую ты ищешь, находится вон там, на алхимическом столе.
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //РўРµР±Рµ РЅРµР»СЊР·СЏ РёРґС‚Рё РґР°Р»СЊС€Рµ. РџРѕРІРѕСЂР°С‡РёРІР°Р№ РЅР°Р·Р°Рґ!
+	AI_Output (other,self ,"DIA_Talamon_KAP5_Stop_15_01"); //РџРёСЂРѕРєР°СЂ СЃРєР°Р·Р°Р», С‡С‚Рѕ РјРЅРµ РјРѕР¶РЅРѕ РІР·СЏС‚СЊ РєРЅРёРіСѓ РљСЃР°СЂРґР°СЃР°.
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //РќСѓ, РµСЃР»Рё РѕРЅ СЌС‚Рѕ СЃРєР°Р·Р°Р»... РҐРѕСЂРѕС€Рѕ, С‚С‹ РјРѕР¶РµС€СЊ РІРѕР№С‚Рё. РљРЅРёРіР°, РєРѕС‚РѕСЂСѓСЋ С‚С‹ РёС‰РµС€СЊ, РЅР°С…РѕРґРёС‚СЃСЏ РІРѕРЅ С‚Р°Рј, РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ.
 
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Таламон держал книгу Ксардаса на алхимическом столе в подвале."); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"РўР°Р»Р°РјРѕРЅ РґРµСЂР¶Р°Р» РєРЅРёРіСѓ РљСЃР°СЂРґР°СЃР° РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ РІ РїРѕРґРІР°Р»Рµ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -278,7 +278,7 @@ INSTANCE DIA_Talamon_FoundSecretDoor   (C_INFO)
 	condition   = DIA_Talamon_FoundSecretDoor_Condition;
 	information = DIA_Talamon_FoundSecretDoor_Info;
 	permanent   = FALSE;
-	description = "Я нашел секретную дверь.";
+	description = "РЇ РЅР°С€РµР» СЃРµРєСЂРµС‚РЅСѓСЋ РґРІРµСЂСЊ.";
 };
 
 FUNC INT DIA_Talamon_FoundSecretDoor_Condition()
@@ -291,13 +291,13 @@ FUNC INT DIA_Talamon_FoundSecretDoor_Condition()
 
 FUNC VOID DIA_Talamon_FoundSecretDoor_Info()
 {
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_00"); //Я нашел секретную дверь.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(удивленно) Что? Где?
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_02"); //За книжной полкой.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //А что за дверью?
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_04"); //Похоже, там старый подвал.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //Это важная новость, я должен немедленно сообщить об этом Пирокару.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //А пока ты должен выяснить, что там в этом подвале.
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_00"); //РЇ РЅР°С€РµР» СЃРµРєСЂРµС‚РЅСѓСЋ РґРІРµСЂСЊ.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(СѓРґРёРІР»РµРЅРЅРѕ) Р§С‚Рѕ? Р“РґРµ?
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_02"); //Р—Р° РєРЅРёР¶РЅРѕР№ РїРѕР»РєРѕР№.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //Рђ С‡С‚Рѕ Р·Р° РґРІРµСЂСЊСЋ?
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_04"); //РџРѕС…РѕР¶Рµ, С‚Р°Рј СЃС‚Р°СЂС‹Р№ РїРѕРґРІР°Р».
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //Р­С‚Рѕ РІР°Р¶РЅР°СЏ РЅРѕРІРѕСЃС‚СЊ, СЏ РґРѕР»Р¶РµРЅ РЅРµРјРµРґР»РµРЅРЅРѕ СЃРѕРѕР±С‰РёС‚СЊ РѕР± СЌС‚РѕРј РџРёСЂРѕРєР°СЂСѓ.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //Рђ РїРѕРєР° С‚С‹ РґРѕР»Р¶РµРЅ РІС‹СЏСЃРЅРёС‚СЊ, С‡С‚Рѕ С‚Р°Рј РІ СЌС‚РѕРј РїРѕРґРІР°Р»Рµ.
 	
 	MIS_ScoutLibrary = LOG_RUNNING;
 };
@@ -312,7 +312,7 @@ INSTANCE DIA_Talamon_ScoutSecretLibrary   (C_INFO)
 	condition   = DIA_Talamon_ScoutSecretLibrary_Condition;
 	information = DIA_Talamon_ScoutSecretLibrary_Info;
 	permanent   = TRUE;
-	description = "Я был в этом подвале.";
+	description = "РЇ Р±С‹Р» РІ СЌС‚РѕРј РїРѕРґРІР°Р»Рµ.";
 };
 
 FUNC INT DIA_Talamon_ScoutSecretLibrary_Condition()
@@ -326,22 +326,22 @@ FUNC INT DIA_Talamon_ScoutSecretLibrary_Condition()
 
 FUNC VOID DIA_Talamon_ScoutSecretLibrary_Info()
 {
-	AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_00"); //Я был в этом подвале.
-	AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_01"); //И что ты там нашел?
+	AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_00"); //РЇ Р±С‹Р» РІ СЌС‚РѕРј РїРѕРґРІР°Р»Рµ.
+	AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_01"); //Р С‡С‚Рѕ С‚С‹ С‚Р°Рј РЅР°С€РµР»?
 	
 	if (Npc_IsDead (SecretLibrarySkeleton))
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_02"); //Там был скелет воина, охраняющий дверь. Я убил его.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_03"); //Отлично.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_04"); //Мы разберемся с этим подвалом, когда победим Зло.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_02"); //РўР°Рј Р±С‹Р» СЃРєРµР»РµС‚ РІРѕРёРЅР°, РѕС…СЂР°РЅСЏСЋС‰РёР№ РґРІРµСЂСЊ. РЇ СѓР±РёР» РµРіРѕ.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_03"); //РћС‚Р»РёС‡РЅРѕ.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_04"); //РњС‹ СЂР°Р·Р±РµСЂРµРјСЃСЏ СЃ СЌС‚РёРј РїРѕРґРІР°Р»РѕРј, РєРѕРіРґР° РїРѕР±РµРґРёРј Р—Р»Рѕ.
 	
 		MIS_ScoutLibrary = LOG_SUCCESS;
 		B_GivePlayerXP (XP_ScoutSecretLibrary);
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //Там, внизу, толпы монстров.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //Там должно что-то быть, продолжай искать. И уничтожай этих монстров без всякой жалости.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //РўР°Рј, РІРЅРёР·Сѓ, С‚РѕР»РїС‹ РјРѕРЅСЃС‚СЂРѕРІ.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //РўР°Рј РґРѕР»Р¶РЅРѕ С‡С‚Рѕ-С‚Рѕ Р±С‹С‚СЊ, РїСЂРѕРґРѕР»Р¶Р°Р№ РёСЃРєР°С‚СЊ. Р СѓРЅРёС‡С‚РѕР¶Р°Р№ СЌС‚РёС… РјРѕРЅСЃС‚СЂРѕРІ Р±РµР· РІСЃСЏРєРѕР№ Р¶Р°Р»РѕСЃС‚Рё.
 	};
 };
 

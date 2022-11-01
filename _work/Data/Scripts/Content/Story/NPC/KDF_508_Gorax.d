@@ -1,7 +1,7 @@
 INSTANCE KDF_508_Gorax (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "√Ó‡ÍÒ";
+	name 		= "–ì–æ—Ä–∞–∫—Å";
 	guild 		= GIL_KDF;
 	id 			= 508;
 	voice 		= 14;
@@ -18,7 +18,7 @@ INSTANCE KDF_508_Gorax (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	//H‰ndler!
+	//H–¥ndler!
 	
 		
 	// ------ visuals ------																			

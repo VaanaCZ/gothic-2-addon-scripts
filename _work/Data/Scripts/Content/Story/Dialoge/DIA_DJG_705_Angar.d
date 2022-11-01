@@ -31,7 +31,7 @@ instance DIA_AngarDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_AngarDJG_HALLO_Condition;
 	information	 = 	DIA_AngarDJG_HALLO_Info;
 
-	description	 = 	"Я знаю тебя?";
+	description	 = 	"РЇ Р·РЅР°СЋ С‚РµР±СЏ?";
 };
 
 func int DIA_AngarDJG_HALLO_Condition ()
@@ -41,12 +41,12 @@ func int DIA_AngarDJG_HALLO_Condition ()
 
 func void DIA_AngarDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_00"); //Я знаю тебя? Ты Кор Ангар. Ты был храмовником в болотном лагере.
-	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_01"); //(смиренно) Зови меня просто Ангаром. Я потерял свой титул. Братства Спящего больше нет.
-	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_02"); //Забавно, но мне кажется, что я тебя тоже знаю. Но я точно не помню откуда.
-	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_03"); //Что с тобой?
-	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_04"); //Ох. Я уже давно мог нормально спать. Эти постоянные кошмары...
-	B_LogEntry (TOPIC_Dragonhunter,"Я нашел Ангара в Долине рудников.");
+	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_00"); //РЇ Р·РЅР°СЋ С‚РµР±СЏ? РўС‹ РљРѕСЂ РђРЅРіР°СЂ. РўС‹ Р±С‹Р» С…СЂР°РјРѕРІРЅРёРєРѕРј РІ Р±РѕР»РѕС‚РЅРѕРј Р»Р°РіРµСЂРµ.
+	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_01"); //(СЃРјРёСЂРµРЅРЅРѕ) Р—РѕРІРё РјРµРЅСЏ РїСЂРѕСЃС‚Рѕ РђРЅРіР°СЂРѕРј. РЇ РїРѕС‚РµСЂСЏР» СЃРІРѕР№ С‚РёС‚СѓР». Р‘СЂР°С‚СЃС‚РІР° РЎРїСЏС‰РµРіРѕ Р±РѕР»СЊС€Рµ РЅРµС‚.
+	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_02"); //Р—Р°Р±Р°РІРЅРѕ, РЅРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ СЏ С‚РµР±СЏ С‚РѕР¶Рµ Р·РЅР°СЋ. РќРѕ СЏ С‚РѕС‡РЅРѕ РЅРµ РїРѕРјРЅСЋ РѕС‚РєСѓРґР°.
+	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_03"); //Р§С‚Рѕ СЃ С‚РѕР±РѕР№?
+	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_04"); //РћС…. РЇ СѓР¶Рµ РґР°РІРЅРѕ РјРѕРі РЅРѕСЂРјР°Р»СЊРЅРѕ СЃРїР°С‚СЊ. Р­С‚Рё РїРѕСЃС‚РѕСЏРЅРЅС‹Рµ РєРѕС€РјР°СЂС‹...
+	B_LogEntry (TOPIC_Dragonhunter,"РЇ РЅР°С€РµР» РђРЅРіР°СЂР° РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ.");
 };
 
 
@@ -57,9 +57,9 @@ func void B_SCTellsAngarAboutMadPsi ()
 {	
 	if (Angar_KnowsMadPsi == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_00"); //Братство Спящего было порабощено злом.
-		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_01"); //Твои бывшие друзья из болотного лагеря наводнили землю, одевшись в черные рясы, и атакуют все, что движется.
-		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi_04_02"); //О чем ты говоришь?
+		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_00"); //Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ Р±С‹Р»Рѕ РїРѕСЂР°Р±РѕС‰РµРЅРѕ Р·Р»РѕРј.
+		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_01"); //РўРІРѕРё Р±С‹РІС€РёРµ РґСЂСѓР·СЊСЏ РёР· Р±РѕР»РѕС‚РЅРѕРіРѕ Р»Р°РіРµСЂСЏ РЅР°РІРѕРґРЅРёР»Рё Р·РµРјР»СЋ, РѕРґРµРІС€РёСЃСЊ РІ С‡РµСЂРЅС‹Рµ СЂСЏСЃС‹, Рё Р°С‚Р°РєСѓСЋС‚ РІСЃРµ, С‡С‚Рѕ РґРІРёР¶РµС‚СЃСЏ.
+		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi_04_02"); //Рћ С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ?
 	};
 };
 
@@ -67,8 +67,8 @@ func void B_SCTellsAngarAboutMadPsi2 ()
 {	
 	if (Angar_KnowsMadPsi == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_15_00"); //Теперь они служат врагу и стали бездушными воинами зла.
-		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_04_01"); //Боги всевышние! И почему я был так слеп! Со мной никогда больше такого не повторится, клянусь.
+		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_15_00"); //РўРµРїРµСЂСЊ РѕРЅРё СЃР»СѓР¶Р°С‚ РІСЂР°РіСѓ Рё СЃС‚Р°Р»Рё Р±РµР·РґСѓС€РЅС‹РјРё РІРѕРёРЅР°РјРё Р·Р»Р°.
+		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_04_01"); //Р‘РѕРіРё РІСЃРµРІС‹С€РЅРёРµ! Р РїРѕС‡РµРјСѓ СЏ Р±С‹Р» С‚Р°Рє СЃР»РµРї! РЎРѕ РјРЅРѕР№ РЅРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°РєРѕРіРѕ РЅРµ РїРѕРІС‚РѕСЂРёС‚СЃСЏ, РєР»СЏРЅСѓСЃСЊ.
 		B_GivePlayerXP (XP_Angar_KnowsMadPsi);
 		Angar_KnowsMadPsi = TRUE;
 	};
@@ -85,7 +85,7 @@ instance DIA_Angar_WIEKOMMSTDUHIERHER		(C_INFO)
 	condition	 = 	DIA_Angar_WIEKOMMSTDUHIERHER_Condition;
 	information	 = 	DIA_Angar_WIEKOMMSTDUHIERHER_Info;
 
-	description	 = 	"Как ты оказался здесь?";
+	description	 = 	"РљР°Рє С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Angar_WIEKOMMSTDUHIERHER_Condition ()
@@ -98,48 +98,48 @@ func int DIA_Angar_WIEKOMMSTDUHIERHER_Condition ()
 
 func void DIA_Angar_WIEKOMMSTDUHIERHER_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_15_00"); //Как ты оказался здесь?
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_01"); //После обрушения магического барьера я спрятался в горах. Затем пришло время что-то делать.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_02"); //Я бесцельно брел четыре дня, пока неожиданно не очнулся в замке. Не спрашивай меня, что произошло. Я не знаю.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_03"); //И что еще хуже, я также потерял амулет, который был со мной многие годы. Я сойду с ума, если не найду его.
+	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_15_00"); //РљР°Рє С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_01"); //РџРѕСЃР»Рµ РѕР±СЂСѓС€РµРЅРёСЏ РјР°РіРёС‡РµСЃРєРѕРіРѕ Р±Р°СЂСЊРµСЂР° СЏ СЃРїСЂСЏС‚Р°Р»СЃСЏ РІ РіРѕСЂР°С…. Р—Р°С‚РµРј РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ С‡С‚Рѕ-С‚Рѕ РґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_02"); //РЇ Р±РµСЃС†РµР»СЊРЅРѕ Р±СЂРµР» С‡РµС‚С‹СЂРµ РґРЅСЏ, РїРѕРєР° РЅРµРѕР¶РёРґР°РЅРЅРѕ РЅРµ РѕС‡РЅСѓР»СЃСЏ РІ Р·Р°РјРєРµ. РќРµ СЃРїСЂР°С€РёРІР°Р№ РјРµРЅСЏ, С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ. РЇ РЅРµ Р·РЅР°СЋ.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_03"); //Р С‡С‚Рѕ РµС‰Рµ С…СѓР¶Рµ, СЏ С‚Р°РєР¶Рµ РїРѕС‚РµСЂСЏР» Р°РјСѓР»РµС‚, РєРѕС‚РѕСЂС‹Р№ Р±С‹Р» СЃРѕ РјРЅРѕР№ РјРЅРѕРіРёРµ РіРѕРґС‹. РЇ СЃРѕР№РґСѓ СЃ СѓРјР°, РµСЃР»Рё РЅРµ РЅР°Р№РґСѓ РµРіРѕ.
 
 	Log_CreateTopic (TOPIC_AngarsAmulett, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AngarsAmulett, LOG_RUNNING);
-	B_LogEntry (TOPIC_AngarsAmulett,"Ангар потерял свой амулет и теперь в отчаянии пытается найти его."); 
+	B_LogEntry (TOPIC_AngarsAmulett,"РђРЅРіР°СЂ РїРѕС‚РµСЂСЏР» СЃРІРѕР№ Р°РјСѓР»РµС‚ Рё С‚РµРїРµСЂСЊ РІ РѕС‚С‡Р°СЏРЅРёРё РїС‹С‚Р°РµС‚СЃСЏ РЅР°Р№С‚Рё РµРіРѕ."); 
 
 
 	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, DIALOG_BACK, DIA_Angar_WIEKOMMSTDUHIERHER_gehen );
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "А где именно ты потерял свой амулет?", DIA_Angar_WIEKOMMSTDUHIERHER_amulett );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Рђ РіРґРµ РёРјРµРЅРЅРѕ С‚С‹ РїРѕС‚РµСЂСЏР» СЃРІРѕР№ Р°РјСѓР»РµС‚?", DIA_Angar_WIEKOMMSTDUHIERHER_amulett );
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Братство Спящего было порабощено злом.", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ Р±С‹Р»Рѕ РїРѕСЂР°Р±РѕС‰РµРЅРѕ Р·Р»РѕРј.", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
 	}
 	else
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "А что произошло с другими из болотного лагеря?", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Рђ С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ СЃ РґСЂСѓРіРёРјРё РёР· Р±РѕР»РѕС‚РЅРѕРіРѕ Р»Р°РіРµСЂСЏ?", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
 	};
 
 	if (DJG_Angar_SentToStones == FALSE)
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Что ты будешь делать дальше?", DIA_Angar_WIEKOMMSTDUHIERHER_nun );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Р§С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?", DIA_Angar_WIEKOMMSTDUHIERHER_nun );
 	};
 };
 func void DIA_Angar_WIEKOMMSTDUHIERHER_amulett ()
 {
-	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_15_00"); //А где именно ты потерял свой амулет?
+	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_15_00"); //Рђ РіРґРµ РёРјРµРЅРЅРѕ С‚С‹ РїРѕС‚РµСЂСЏР» СЃРІРѕР№ Р°РјСѓР»РµС‚?
 
 	if (DJG_Angar_SentToStones ==FALSE)
 	{
-		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_01"); //Где-то на юге, вскоре после того, как я очнулся в замке.
-		B_LogEntry (TOPIC_AngarsAmulett,"Этот амулет должен быть где-то на юге. Ангар собирается отправиться на его поиски."); 
+		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_01"); //Р“РґРµ-С‚Рѕ РЅР° СЋРіРµ, РІСЃРєРѕСЂРµ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє СЏ РѕС‡РЅСѓР»СЃСЏ РІ Р·Р°РјРєРµ.
+		B_LogEntry (TOPIC_AngarsAmulett,"Р­С‚РѕС‚ Р°РјСѓР»РµС‚ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РіРґРµ-С‚Рѕ РЅР° СЋРіРµ. РђРЅРіР°СЂ СЃРѕР±РёСЂР°РµС‚СЃСЏ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РЅР° РµРіРѕ РїРѕРёСЃРєРё."); 
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_02"); //Он должен быть где-то там.
-		B_LogEntry (TOPIC_AngarsAmulett,"Амулет находится около гробницы в скале на юге Долины рудников."); 
+		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_02"); //РћРЅ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РіРґРµ-С‚Рѕ С‚Р°Рј.
+		B_LogEntry (TOPIC_AngarsAmulett,"РђРјСѓР»РµС‚ РЅР°С…РѕРґРёС‚СЃСЏ РѕРєРѕР»Рѕ РіСЂРѕР±РЅРёС†С‹ РІ СЃРєР°Р»Рµ РЅР° СЋРіРµ Р”РѕР»РёРЅС‹ СЂСѓРґРЅРёРєРѕРІ."); 
 	};
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_03"); //Я подозреваю, что он был украден. Мне крайне необходимо вернуть его себе.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_03"); //РЇ РїРѕРґРѕР·СЂРµРІР°СЋ, С‡С‚Рѕ РѕРЅ Р±С‹Р» СѓРєСЂР°РґРµРЅ. РњРЅРµ РєСЂР°Р№РЅРµ РЅРµРѕР±С…РѕРґРёРјРѕ РІРµСЂРЅСѓС‚СЊ РµРіРѕ СЃРµР±Рµ.
 };
 
 func void DIA_Angar_WIEKOMMSTDUHIERHER_andere ()
@@ -150,13 +150,13 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_andere ()
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_15_00"); //А что произошло с другими из болотного лагеря?
+		AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_15_00"); //Рђ С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ СЃ РґСЂСѓРіРёРјРё РёР· Р±РѕР»РѕС‚РЅРѕРіРѕ Р»Р°РіРµСЂСЏ?
 	};
 	
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_01"); //Последнее, что я помню, - это обрушение Барьера, сопровождавшееся душераздирающим воплем.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_02"); //Нас охватил панический страх. Мы упали на землю, корчась от боли. Этот голос... Он становился все громче.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_03"); //А затем вдруг все кончилось, все побежали как безумные и исчезли в ночи, вопя истошными голосами.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_04"); //И больше я их не видел.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_01"); //РџРѕСЃР»РµРґРЅРµРµ, С‡С‚Рѕ СЏ РїРѕРјРЅСЋ, - СЌС‚Рѕ РѕР±СЂСѓС€РµРЅРёРµ Р‘Р°СЂСЊРµСЂР°, СЃРѕРїСЂРѕРІРѕР¶РґР°РІС€РµРµСЃСЏ РґСѓС€РµСЂР°Р·РґРёСЂР°СЋС‰РёРј РІРѕРїР»РµРј.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_02"); //РќР°СЃ РѕС…РІР°С‚РёР» РїР°РЅРёС‡РµСЃРєРёР№ СЃС‚СЂР°С…. РњС‹ СѓРїР°Р»Рё РЅР° Р·РµРјР»СЋ, РєРѕСЂС‡Р°СЃСЊ РѕС‚ Р±РѕР»Рё. Р­С‚РѕС‚ РіРѕР»РѕСЃ... РћРЅ СЃС‚Р°РЅРѕРІРёР»СЃСЏ РІСЃРµ РіСЂРѕРјС‡Рµ.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_03"); //Рђ Р·Р°С‚РµРј РІРґСЂСѓРі РІСЃРµ РєРѕРЅС‡РёР»РѕСЃСЊ, РІСЃРµ РїРѕР±РµР¶Р°Р»Рё РєР°Рє Р±РµР·СѓРјРЅС‹Рµ Рё РёСЃС‡РµР·Р»Рё РІ РЅРѕС‡Рё, РІРѕРїСЏ РёСЃС‚РѕС€РЅС‹РјРё РіРѕР»РѕСЃР°РјРё.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_04"); //Р Р±РѕР»СЊС€Рµ СЏ РёС… РЅРµ РІРёРґРµР».
 	
 	if (SC_KnowsMadPsi == TRUE)
 	{
@@ -166,11 +166,11 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_andere ()
 
 func void DIA_Angar_WIEKOMMSTDUHIERHER_nun ()
 {
-	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_15_00"); //А что ты будешь делать дальше?
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_01"); //Я сначала немного отдохну, а затем продолжу поиски моего амулета.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_02"); //Я слышал что-то о драконах.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_03"); //Также говорят, что в Долину Рудников пришло много воинов - охотиться на них.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_04"); //Я думаю присоединиться к ним.
+	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_15_00"); //Рђ С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_01"); //РЇ СЃРЅР°С‡Р°Р»Р° РЅРµРјРЅРѕРіРѕ РѕС‚РґРѕС…РЅСѓ, Р° Р·Р°С‚РµРј РїСЂРѕРґРѕР»Р¶Сѓ РїРѕРёСЃРєРё РјРѕРµРіРѕ Р°РјСѓР»РµС‚Р°.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_02"); //РЇ СЃР»С‹С€Р°Р» С‡С‚Рѕ-С‚Рѕ Рѕ РґСЂР°РєРѕРЅР°С….
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_03"); //РўР°РєР¶Рµ РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ РїСЂРёС€Р»Рѕ РјРЅРѕРіРѕ РІРѕРёРЅРѕРІ - РѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° РЅРёС….
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_04"); //РЇ РґСѓРјР°СЋ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅРёРј.
 
 	Angar_willDJGwerden = TRUE;
 
@@ -191,7 +191,7 @@ instance DIA_Angar_SCTellsAngarAboutMadPsi2		(C_INFO)
 	condition	 = 	DIA_Angar_SCTellsAngarAboutMadPsi2_Condition;
 	information	 = 	DIA_Angar_SCTellsAngarAboutMadPsi2_Info;
 
-	description	 = 	"Братство Спящего было порабощено злом."; //Joly: falls erst nach DIA_Angar_WIEKOMMSTDUHIERHER  (SC_KnowsMadPsi == TRUE)
+	description	 = 	"Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ Р±С‹Р»Рѕ РїРѕСЂР°Р±РѕС‰РµРЅРѕ Р·Р»РѕРј."; //Joly: falls erst nach DIA_Angar_WIEKOMMSTDUHIERHER  (SC_KnowsMadPsi == TRUE)
 };
 
 func int DIA_Angar_SCTellsAngarAboutMadPsi2_Condition ()
@@ -220,7 +220,7 @@ instance DIA_Angar_FOUNDAMULETT		(C_INFO)
 	condition	 = 	DIA_Angar_FOUNDAMULETT_Condition;
 	information	 = 	DIA_Angar_FOUNDAMULETT_Info;
 
-	description	 = 	"Я нашел твой амулет.";
+	description	 = 	"РЇ РЅР°С€РµР» С‚РІРѕР№ Р°РјСѓР»РµС‚.";
 };
 
 func int DIA_Angar_FOUNDAMULETT_Condition ()
@@ -234,8 +234,8 @@ func int DIA_Angar_FOUNDAMULETT_Condition ()
 
 func void B_AngarsAmulettAbgeben()
 {
-	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_15_00"); //Я нашел твой амулет.
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_04_01"); //Спасибо. Я уж думал, что больше никогда не увижу его.
+	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_15_00"); //РЇ РЅР°С€РµР» С‚РІРѕР№ Р°РјСѓР»РµС‚.
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_04_01"); //РЎРїР°СЃРёР±Рѕ. РЇ СѓР¶ РґСѓРјР°Р», С‡С‚Рѕ Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ СѓРІРёР¶Сѓ РµРіРѕ.
 
 	B_GiveInvItems (other, self, ItAm_Mana_Angar_MIS,1);
 	
@@ -247,24 +247,24 @@ func void DIA_Angar_FOUNDAMULETT_Info ()
 {
 	B_AngarsAmulettAbgeben ();
 
-	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "А чем он такой особенный?", DIA_Angar_FOUNDAMULETT_besonders );
-	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Что ты планируешь делать дальше?", DIA_Angar_FOUNDAMULETT_nun );
+	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Рђ С‡РµРј РѕРЅ С‚Р°РєРѕР№ РѕСЃРѕР±РµРЅРЅС‹Р№?", DIA_Angar_FOUNDAMULETT_besonders );
+	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?", DIA_Angar_FOUNDAMULETT_nun );
 };
 
 func void DIA_Angar_FOUNDAMULETT_besonders ()
 {
-	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_00"); //А чем он такой особенный?
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_besonders_04_01"); //Это подарок.
-	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_02"); //Понимаю.
+	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_00"); //Рђ С‡РµРј РѕРЅ С‚Р°РєРѕР№ РѕСЃРѕР±РµРЅРЅС‹Р№?
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_besonders_04_01"); //Р­С‚Рѕ РїРѕРґР°СЂРѕРє.
+	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_02"); //РџРѕРЅРёРјР°СЋ.
 
 
 };
 
 func void DIA_Angar_FOUNDAMULETT_nun ()
 {
-	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_nun_15_00"); //Что ты планируешь делать теперь?
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_nun_04_01"); //Выбираться из этой проклятой долины.
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_nun_04_02"); //Может быть, мы еще встретимся. Прощай.
+	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_nun_15_00"); //Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_nun_04_01"); //Р’С‹Р±РёСЂР°С‚СЊСЃСЏ РёР· СЌС‚РѕР№ РїСЂРѕРєР»СЏС‚РѕР№ РґРѕР»РёРЅС‹.
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_nun_04_02"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РјС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ. РџСЂРѕС‰Р°Р№.
 
 	AI_StopProcessInfos (self);
 	if 	((Npc_GetDistToWP(self,"OC_TO_MAGE")<1000) == FALSE) //Joly: Damit Angar nicht am OC Tor rumkronkelt, wenn er noch im OC ist.
@@ -283,7 +283,7 @@ instance DIA_Angar_DJG_ANWERBEN		(C_INFO)
 	condition	 = 	DIA_Angar_DJG_ANWERBEN_Condition;
 	information	 = 	DIA_Angar_DJG_ANWERBEN_Info;
 
-	description	 = 	"Может быть, я смогу помочь тебе найти амулет.";
+	description	 = 	"РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РЅР°Р№С‚Рё Р°РјСѓР»РµС‚.";
 };
 
 func int DIA_Angar_DJG_ANWERBEN_Condition ()
@@ -297,46 +297,46 @@ func int DIA_Angar_DJG_ANWERBEN_Condition ()
 
 func void DIA_Angar_DJG_ANWERBEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_15_00"); //Может быть, я смогу помочь тебе найти амулет.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_04_01"); //Почему бы и нет. Помощь никогда не помещает.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РЅР°Р№С‚Рё Р°РјСѓР»РµС‚.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_04_01"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚. РџРѕРјРѕС‰СЊ РЅРёРєРѕРіРґР° РЅРµ РїРѕРјРµС‰Р°РµС‚.
 
 
 	if (DJG_Angar_SentToStones == FALSE)
 		{
-		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Я должен идти.", DIA_Angar_DJG_ANWERBEN_gehen );
-		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Где ты собираешься искать?", DIA_Angar_DJG_ANWERBEN_wo );
-		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Когда ты отправляешься в путь?", DIA_Angar_DJG_ANWERBEN_wann );
+		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.", DIA_Angar_DJG_ANWERBEN_gehen );
+		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Р“РґРµ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РёСЃРєР°С‚СЊ?", DIA_Angar_DJG_ANWERBEN_wo );
+		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "РљРѕРіРґР° С‚С‹ РѕС‚РїСЂР°РІР»СЏРµС€СЊСЃСЏ РІ РїСѓС‚СЊ?", DIA_Angar_DJG_ANWERBEN_wann );
 		};
 	
 	if (Angar_willDJGwerden == TRUE)
 		{
-		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Что насчет охотников на драконов?", DIA_Angar_DJG_ANWERBEN_DJG );
+		Info_AddChoice	(DIA_Angar_DJG_ANWERBEN, "Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ?", DIA_Angar_DJG_ANWERBEN_DJG );
 		};
 };
 func void DIA_Angar_DJG_ANWERBEN_DJG ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_DJG_15_00"); //Что насчет охотников на драконов?
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_DJG_04_01"); //Я поговорю с ними позже. Может, им пригодится хороший воин.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_DJG_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ?
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_DJG_04_01"); //РЇ РїРѕРіРѕРІРѕСЂСЋ СЃ РЅРёРјРё РїРѕР·Р¶Рµ. РњРѕР¶РµС‚, РёРј РїСЂРёРіРѕРґРёС‚СЃСЏ С…РѕСЂРѕС€РёР№ РІРѕРёРЅ.
 
 };
 
 func void DIA_Angar_DJG_ANWERBEN_wann ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wann_15_00"); //Когда ты отправляешься в путь?
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wann_04_01"); //Чем быстрее, тем лучше.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wann_15_00"); //РљРѕРіРґР° С‚С‹ РѕС‚РїСЂР°РІР»СЏРµС€СЊСЃСЏ РІ РїСѓС‚СЊ?
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wann_04_01"); //Р§РµРј Р±С‹СЃС‚СЂРµРµ, С‚РµРј Р»СѓС‡С€Рµ.
 };
 
 func void DIA_Angar_DJG_ANWERBEN_wo ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wo_15_00"); //Где ты собираешься искать?
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_01"); //Я пойду на юг, туда, где я его потерял.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_02"); //Там есть склеп в пещере, окруженной кучей валунов.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wo_15_00"); //Р“РґРµ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РёСЃРєР°С‚СЊ?
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_01"); //РЇ РїРѕР№РґСѓ РЅР° СЋРі, С‚СѓРґР°, РіРґРµ СЏ РµРіРѕ РїРѕС‚РµСЂСЏР».
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_02"); //РўР°Рј РµСЃС‚СЊ СЃРєР»РµРї РІ РїРµС‰РµСЂРµ, РѕРєСЂСѓР¶РµРЅРЅРѕР№ РєСѓС‡РµР№ РІР°Р»СѓРЅРѕРІ.
 
 };
 func void DIA_Angar_DJG_ANWERBEN_gehen ()
 {
-	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_gehen_15_00"); //Мне нужно идти.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_gehen_04_01"); //Будь осторожен.
+	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_gehen_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_gehen_04_01"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -354,7 +354,7 @@ instance DIA_AngarDJG_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_AngarDJG_WASMACHSTDU_Condition;
 	information	 = 	DIA_AngarDJG_WASMACHSTDU_Info;
 
-	description	 = 	"Что-то не так?";
+	description	 = 	"Р§С‚Рѕ-С‚Рѕ РЅРµ С‚Р°Рє?";
 };
 
 func int DIA_AngarDJG_WASMACHSTDU_Condition ()
@@ -371,23 +371,23 @@ func int DIA_AngarDJG_WASMACHSTDU_Condition ()
 
 func void DIA_AngarDJG_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_00"); //Что-то не так?
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_01"); //Ты слышишь это? В жизни никогда не слышал такого ужасного шума!
-	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_02"); //Что ты имеешь в виду? Я ничего не слышу!
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_03"); //Все здесь пропитано смертью и разрушениями. Грязные твари охраняют вход в склеп перед нами.
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_04"); //Там затаилась какая-то мерзость, она посылает своих прихвостней на поверхность этого мира.
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_05"); //Я почти уверен, что мой амулет был потерян где-то здесь.
+	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_00"); //Р§С‚Рѕ-С‚Рѕ РЅРµ С‚Р°Рє?
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_01"); //РўС‹ СЃР»С‹С€РёС€СЊ СЌС‚Рѕ? Р’ Р¶РёР·РЅРё РЅРёРєРѕРіРґР° РЅРµ СЃР»С‹С€Р°Р» С‚Р°РєРѕРіРѕ СѓР¶Р°СЃРЅРѕРіРѕ С€СѓРјР°!
+	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_02"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ? РЇ РЅРёС‡РµРіРѕ РЅРµ СЃР»С‹С€Сѓ!
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_03"); //Р’СЃРµ Р·РґРµСЃСЊ РїСЂРѕРїРёС‚Р°РЅРѕ СЃРјРµСЂС‚СЊСЋ Рё СЂР°Р·СЂСѓС€РµРЅРёСЏРјРё. Р“СЂСЏР·РЅС‹Рµ С‚РІР°СЂРё РѕС…СЂР°РЅСЏСЋС‚ РІС…РѕРґ РІ СЃРєР»РµРї РїРµСЂРµРґ РЅР°РјРё.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_04"); //РўР°Рј Р·Р°С‚Р°РёР»Р°СЃСЊ РєР°РєР°СЏ-С‚Рѕ РјРµСЂР·РѕСЃС‚СЊ, РѕРЅР° РїРѕСЃС‹Р»Р°РµС‚ СЃРІРѕРёС… РїСЂРёС…РІРѕСЃС‚РЅРµР№ РЅР° РїРѕРІРµСЂС…РЅРѕСЃС‚СЊ СЌС‚РѕРіРѕ РјРёСЂР°.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_05"); //РЇ РїРѕС‡С‚Рё СѓРІРµСЂРµРЅ, С‡С‚Рѕ РјРѕР№ Р°РјСѓР»РµС‚ Р±С‹Р» РїРѕС‚РµСЂСЏРЅ РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ.
 
 	if (Angar_willDJGwerden == TRUE)
 	{
-	Info_AddChoice	(DIA_AngarDJG_WASMACHSTDU, "Ты говорил с охотниками на драконов?", DIA_AngarDJG_WASMACHSTDU_DJG );
+	Info_AddChoice	(DIA_AngarDJG_WASMACHSTDU, "РўС‹ РіРѕРІРѕСЂРёР» СЃ РѕС…РѕС‚РЅРёРєР°РјРё РЅР° РґСЂР°РєРѕРЅРѕРІ?", DIA_AngarDJG_WASMACHSTDU_DJG );
 	};
 };
 func void DIA_AngarDJG_WASMACHSTDU_DJG ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_DJG_15_00"); //Ты говорил с охотниками на драконов?
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_01"); //Да. Но я ожидал, что это будет братство, подобное тому, что было у нас в болотном лагере.
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_02"); //А эти парни - просто дикая пестрая толпа идиотов. Мне нечего с ними делать.
+	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_DJG_15_00"); //РўС‹ РіРѕРІРѕСЂРёР» СЃ РѕС…РѕС‚РЅРёРєР°РјРё РЅР° РґСЂР°РєРѕРЅРѕРІ?
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_01"); //Р”Р°. РќРѕ СЏ РѕР¶РёРґР°Р», С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ Р±СЂР°С‚СЃС‚РІРѕ, РїРѕРґРѕР±РЅРѕРµ С‚РѕРјСѓ, С‡С‚Рѕ Р±С‹Р»Рѕ Сѓ РЅР°СЃ РІ Р±РѕР»РѕС‚РЅРѕРј Р»Р°РіРµСЂРµ.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_02"); //Рђ СЌС‚Рё РїР°СЂРЅРё - РїСЂРѕСЃС‚Рѕ РґРёРєР°СЏ РїРµСЃС‚СЂР°СЏ С‚РѕР»РїР° РёРґРёРѕС‚РѕРІ. РњРЅРµ РЅРµС‡РµРіРѕ СЃ РЅРёРјРё РґРµР»Р°С‚СЊ.
 };
 
 
@@ -401,7 +401,7 @@ instance DIA_AngarDJG_WHATSINTHERE		(C_INFO)
 	condition	 = 	DIA_AngarDJG_WHATSINTHERE_Condition;
 	information	 = 	DIA_AngarDJG_WHATSINTHERE_Info;
 
-	description	 = 	"Что скрывается в этой пещере в скалах?";
+	description	 = 	"Р§С‚Рѕ СЃРєСЂС‹РІР°РµС‚СЃСЏ РІ СЌС‚РѕР№ РїРµС‰РµСЂРµ РІ СЃРєР°Р»Р°С…?";
 };
 
 func int DIA_AngarDJG_WHATSINTHERE_Condition ()
@@ -415,13 +415,13 @@ func int DIA_AngarDJG_WHATSINTHERE_Condition ()
 
 func void DIA_AngarDJG_WHATSINTHERE_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_WHATSINTHERE_15_00"); //Что скрывается в этой пещере в скалах?
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_01"); //Что-то, что не позволяет мне приблизиться к входу!
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_02"); //Его охраняет магическое существо. Я видел его ночью, он тут рыскал. Отвратительное создание.
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_03"); //Он шнырял между деревьями, и у меня было впечатление, что он высасывает всю жизнь вокруг и впитывает ее, как губка.
+	AI_Output			(other, self, "DIA_AngarDJG_WHATSINTHERE_15_00"); //Р§С‚Рѕ СЃРєСЂС‹РІР°РµС‚СЃСЏ РІ СЌС‚РѕР№ РїРµС‰РµСЂРµ РІ СЃРєР°Р»Р°С…?
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_01"); //Р§С‚Рѕ-С‚Рѕ, С‡С‚Рѕ РЅРµ РїРѕР·РІРѕР»СЏРµС‚ РјРЅРµ РїСЂРёР±Р»РёР·РёС‚СЊСЃСЏ Рє РІС…РѕРґСѓ!
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_02"); //Р•РіРѕ РѕС…СЂР°РЅСЏРµС‚ РјР°РіРёС‡РµСЃРєРѕРµ СЃСѓС‰РµСЃС‚РІРѕ. РЇ РІРёРґРµР» РµРіРѕ РЅРѕС‡СЊСЋ, РѕРЅ С‚СѓС‚ СЂС‹СЃРєР°Р». РћС‚РІСЂР°С‚РёС‚РµР»СЊРЅРѕРµ СЃРѕР·РґР°РЅРёРµ.
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_03"); //РћРЅ С€РЅС‹СЂСЏР» РјРµР¶РґСѓ РґРµСЂРµРІСЊСЏРјРё, Рё Сѓ РјРµРЅСЏ Р±С‹Р»Рѕ РІРїРµС‡Р°С‚Р»РµРЅРёРµ, С‡С‚Рѕ РѕРЅ РІС‹СЃР°СЃС‹РІР°РµС‚ РІСЃСЋ Р¶РёР·РЅСЊ РІРѕРєСЂСѓРі Рё РІРїРёС‚С‹РІР°РµС‚ РµРµ, РєР°Рє РіСѓР±РєР°.
 
-	//Log_AddEntry (TOPIC_Dragonhunter,"Ich habe Angar im Minental gefunden. Er vermutet, daЯ sich in der Felsengruft, wo er sich aufhдlt, ein Drache befindet, der hier seine untoten Helfer an die Oberflдche entsendet.");
-	B_LogEntry (TOPIC_Dragonhunter,"Я нашел Ангара в Долине рудников.");
+	//Log_AddEntry (TOPIC_Dragonhunter,"Ich habe Angar im Minental gefunden. Er vermutet, daРЇ sich in der Felsengruft, wo er sich aufhРґlt, ein Drache befindet, der hier seine untoten Helfer an die OberflРґche entsendet.");
+	B_LogEntry (TOPIC_Dragonhunter,"РЇ РЅР°С€РµР» РђРЅРіР°СЂР° РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -434,7 +434,7 @@ instance DIA_AngarDJG_WANTTOGOINTHERE		(C_INFO)
 	condition	 = 	DIA_AngarDJG_WANTTOGOINTHERE_Condition;
 	information	 = 	DIA_AngarDJG_WANTTOGOINTHERE_Info;
 
-	description	 = 	"Пойдем вместе.";
+	description	 = 	"РџРѕР№РґРµРј РІРјРµСЃС‚Рµ.";
 };
 
 func int DIA_AngarDJG_WANTTOGOINTHERE_Condition ()
@@ -448,8 +448,8 @@ func int DIA_AngarDJG_WANTTOGOINTHERE_Condition ()
 
 func void DIA_AngarDJG_WANTTOGOINTHERE_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_WANTTOGOINTHERE_15_00"); //Пойдем вместе.
-	AI_Output			(self, other, "DIA_AngarDJG_WANTTOGOINTHERE_04_01"); //Я попробую. Но нужно быть осторожными.
+	AI_Output			(other, self, "DIA_AngarDJG_WANTTOGOINTHERE_15_00"); //РџРѕР№РґРµРј РІРјРµСЃС‚Рµ.
+	AI_Output			(self, other, "DIA_AngarDJG_WANTTOGOINTHERE_04_01"); //РЇ РїРѕРїСЂРѕР±СѓСЋ. РќРѕ РЅСѓР¶РЅРѕ Р±С‹С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅС‹РјРё.
 
 	AI_StopProcessInfos (self);  
 
@@ -492,7 +492,7 @@ func int DIA_AngarDJG_UndeadMageDead_Condition ()
 
 func void DIA_AngarDJG_UndeadMageDead_Info ()
 {
-	AI_Output			(self, other, "DIA_AngarDJG_UndeadMageDead_04_00"); //(тяжело дышит) Здесь только смерть и разрушение. Я должен уходить отсюда.
+	AI_Output			(self, other, "DIA_AngarDJG_UndeadMageDead_04_00"); //(С‚СЏР¶РµР»Рѕ РґС‹С€РёС‚) Р—РґРµСЃСЊ С‚РѕР»СЊРєРѕ СЃРјРµСЂС‚СЊ Рё СЂР°Р·СЂСѓС€РµРЅРёРµ. РЇ РґРѕР»Р¶РµРЅ СѓС…РѕРґРёС‚СЊ РѕС‚СЃСЋРґР°.
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"RunToEntrance");
@@ -527,7 +527,7 @@ func int DIA_AngarDJG_UNDEADMAGECOMES_Condition ()
 
 func void DIA_AngarDJG_UNDEADMAGECOMES_Info ()
 {
-	AI_Output			(self, other, "DIA_AngarDJG_UNDEADMAGECOMES_04_00"); //(шепчет) Вот, опять! Ты слышишь это?
+	AI_Output			(self, other, "DIA_AngarDJG_UNDEADMAGECOMES_04_00"); //(С€РµРїС‡РµС‚) Р’РѕС‚, РѕРїСЏС‚СЊ! РўС‹ СЃР»С‹С€РёС€СЊ СЌС‚Рѕ?
 	
 	AI_StopProcessInfos (self);   
  	
@@ -545,7 +545,7 @@ instance DIA_Angar_WASISTLOS		(C_INFO)
 	condition	 = 	DIA_Angar_WASISTLOS_Condition;
 	information	 = 	DIA_Angar_WASISTLOS_Info;
 
-	description	 = 	"В чем дело?";
+	description	 = 	"Р’ С‡РµРј РґРµР»Рѕ?";
 };
 
 func int DIA_Angar_WASISTLOS_Condition ()
@@ -562,23 +562,23 @@ func int DIA_Angar_WASISTLOS_Condition ()
 
 func void DIA_Angar_WASISTLOS_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_WASISTLOS_15_00"); //В чем дело?
-	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_01"); //Я не могу идти дальше с тобой.
-	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_02"); //Что-то подсказывает мне, что мне не выбраться отсюда живым.
-	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_03"); //Я не могу объяснить это, но...
+	AI_Output			(other, self, "DIA_Angar_WASISTLOS_15_00"); //Р’ С‡РµРј РґРµР»Рѕ?
+	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_01"); //РЇ РЅРµ РјРѕРіСѓ РёРґС‚Рё РґР°Р»СЊС€Рµ СЃ С‚РѕР±РѕР№.
+	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_02"); //Р§С‚Рѕ-С‚Рѕ РїРѕРґСЃРєР°Р·С‹РІР°РµС‚ РјРЅРµ, С‡С‚Рѕ РјРЅРµ РЅРµ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° Р¶РёРІС‹Рј.
+	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_03"); //РЇ РЅРµ РјРѕРіСѓ РѕР±СЉСЏСЃРЅРёС‚СЊ СЌС‚Рѕ, РЅРѕ...
 	
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_04"); //Я должен уходить из этой проклятой земли как можно быстрее, иначе меня ждет та же судьба, что и моих братьев.
+		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_04"); //РЇ РґРѕР»Р¶РµРЅ СѓС…РѕРґРёС‚СЊ РёР· СЌС‚РѕР№ РїСЂРѕРєР»СЏС‚РѕР№ Р·РµРјР»Рё РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ, РёРЅР°С‡Рµ РјРµРЅСЏ Р¶РґРµС‚ С‚Р° Р¶Рµ СЃСѓРґСЊР±Р°, С‡С‚Рѕ Рё РјРѕРёС… Р±СЂР°С‚СЊРµРІ.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_05"); //Каждый раз, когда я вижу одного из этих... отродий ада, у меня появляется чувство, что я сражаюсь против своих.
+		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_05"); //РљР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° СЏ РІРёР¶Сѓ РѕРґРЅРѕРіРѕ РёР· СЌС‚РёС…... РѕС‚СЂРѕРґРёР№ Р°РґР°, Сѓ РјРµРЅСЏ РїРѕСЏРІР»СЏРµС‚СЃСЏ С‡СѓРІСЃС‚РІРѕ, С‡С‚Рѕ СЏ СЃСЂР°Р¶Р°СЋСЃСЊ РїСЂРѕС‚РёРІ СЃРІРѕРёС….
 	};
 
 	AI_StopProcessInfos (self);
 
-	B_LogEntry (TOPIC_Dragonhunter,"Ангар только что ушел. Из-за всей этой нежити у него появилось чувство, что он сражается против своих же людей.");
+	B_LogEntry (TOPIC_Dragonhunter,"РђРЅРіР°СЂ С‚РѕР»СЊРєРѕ С‡С‚Рѕ СѓС€РµР». РР·-Р·Р° РІСЃРµР№ СЌС‚РѕР№ РЅРµР¶РёС‚Рё Сѓ РЅРµРіРѕ РїРѕСЏРІРёР»РѕСЃСЊ С‡СѓРІСЃС‚РІРѕ, С‡С‚Рѕ РѕРЅ СЃСЂР°Р¶Р°РµС‚СЃСЏ РїСЂРѕС‚РёРІ СЃРІРѕРёС… Р¶Рµ Р»СЋРґРµР№.");
 			
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"LeavingOW");
@@ -594,7 +594,7 @@ instance DIA_Angar_WHYAREYOUHERE		(C_INFO)
 	condition	 = 	DIA_Angar_WHYAREYOUHERE_Condition;
 	information	 = 	DIA_Angar_WHYAREYOUHERE_Info;
 
-	description	 = 	"Ангар? Что ты делаешь здесь?";
+	description	 = 	"РђРЅРіР°СЂ? Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Angar_WHYAREYOUHERE_Condition ()
@@ -607,11 +607,11 @@ func int DIA_Angar_WHYAREYOUHERE_Condition ()
 
 func void DIA_Angar_WHYAREYOUHERE_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_WHYAREYOUHERE_15_00"); //Ангар? Что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_01"); //Я шел к Проходу, когда неожиданно наткнулся на орков. Я не смог оторваться от них.
-	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_02"); //Я подожду немного, а затем пойду через Проход. Увидимся на другой стороне!
+	AI_Output			(other, self, "DIA_Angar_WHYAREYOUHERE_15_00"); //РђРЅРіР°СЂ? Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_01"); //РЇ С€РµР» Рє РџСЂРѕС…РѕРґСѓ, РєРѕРіРґР° РЅРµРѕР¶РёРґР°РЅРЅРѕ РЅР°С‚РєРЅСѓР»СЃСЏ РЅР° РѕСЂРєРѕРІ. РЇ РЅРµ СЃРјРѕРі РѕС‚РѕСЂРІР°С‚СЊСЃСЏ РѕС‚ РЅРёС….
+	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_02"); //РЇ РїРѕРґРѕР¶РґСѓ РЅРµРјРЅРѕРіРѕ, Р° Р·Р°С‚РµРј РїРѕР№РґСѓ С‡РµСЂРµР· РџСЂРѕС…РѕРґ. РЈРІРёРґРёРјСЃСЏ РЅР° РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅРµ!
 
-	B_LogEntry (TOPIC_Dragonhunter,"Я встретил Ангара опять, он застрял в Долине рудников.");
+	B_LogEntry (TOPIC_Dragonhunter,"РЇ РІСЃС‚СЂРµС‚РёР» РђРЅРіР°СЂР° РѕРїСЏС‚СЊ, РѕРЅ Р·Р°СЃС‚СЂСЏР» РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ.");
 	B_GivePlayerXP (XP_AngarDJGAgain); 
 	AI_StopProcessInfos (self);
 };
@@ -626,7 +626,7 @@ instance DIA_Angar_PERMKAP4		(C_INFO)
 	information	 = 	DIA_Angar_PERMKAP4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты действительно справишься один?";
+	description	 = 	"РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРїСЂР°РІРёС€СЊСЃСЏ РѕРґРёРЅ?";
 };
 
 func int DIA_Angar_PERMKAP4_Condition ()
@@ -639,8 +639,8 @@ func int DIA_Angar_PERMKAP4_Condition ()
 
 func void DIA_Angar_PERMKAP4_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_PERMKAP4_15_00"); //Ты действительно справишься один?
-	AI_Output			(self, other, "DIA_Angar_PERMKAP4_04_01"); //Конечно. Ты можешь идти. Еще увидимся.
+	AI_Output			(other, self, "DIA_Angar_PERMKAP4_15_00"); //РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРїСЂР°РІРёС€СЊСЃСЏ РѕРґРёРЅ?
+	AI_Output			(self, other, "DIA_Angar_PERMKAP4_04_01"); //РљРѕРЅРµС‡РЅРѕ. РўС‹ РјРѕР¶РµС€СЊ РёРґС‚Рё. Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.
 
 	AI_StopProcessInfos (self);	
 };

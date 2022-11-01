@@ -64,7 +64,7 @@ instance DIA_Addon_Erol_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_Hallo_Condition;
 	information	 = 	DIA_Addon_Erol_Hallo_Info;
 
-	description	 = 	"В чем дело?";
+	description	 = 	"Р’ С‡РµРј РґРµР»Рѕ?";
 };
 
 func int DIA_Addon_Erol_Hallo_Condition ()
@@ -74,9 +74,9 @@ func int DIA_Addon_Erol_Hallo_Condition ()
 
 func void DIA_Addon_Erol_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_Hallo_15_00"); //В чем дело?
-	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_01"); //(в ярости) В чем дело? Ты только посмотри на этот бардак под мостом!
-	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_02"); //Я такого за всю свою жизнь не встречал! Этих тварей нужно перебить всех до единой.
+	AI_Output	(other, self, "DIA_Addon_Erol_Hallo_15_00"); //Р’ С‡РµРј РґРµР»Рѕ?
+	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_01"); //(РІ СЏСЂРѕСЃС‚Рё) Р’ С‡РµРј РґРµР»Рѕ? РўС‹ С‚РѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРё РЅР° СЌС‚РѕС‚ Р±Р°СЂРґР°Рє РїРѕРґ РјРѕСЃС‚РѕРј!
+	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_02"); //РЇ С‚Р°РєРѕРіРѕ Р·Р° РІСЃСЋ СЃРІРѕСЋ Р¶РёР·РЅСЊ РЅРµ РІСЃС‚СЂРµС‡Р°Р»! Р­С‚РёС… С‚РІР°СЂРµР№ РЅСѓР¶РЅРѕ РїРµСЂРµР±РёС‚СЊ РІСЃРµС… РґРѕ РµРґРёРЅРѕР№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -89,7 +89,7 @@ instance DIA_Addon_Erol_what		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_what_Condition;
 	information	 = 	DIA_Addon_Erol_what_Info;
 
-	description	 = 	"Что произошло?";
+	description	 = 	"Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ?";
 };
 
 func int DIA_Addon_Erol_what_Condition ()
@@ -102,19 +102,19 @@ func int DIA_Addon_Erol_what_Condition ()
 
 func void DIA_Addon_Erol_what_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_what_15_00"); //Что случилось?
-	AI_Output	(self, other, "DIA_Addon_Erol_what_10_01"); //Я со своими помощниками спокойно ехал по дороге, и вдруг эти подонки выскочили из засады и убили всех моих людей.
-	AI_Output	(self, other, "DIA_Addon_Erol_what_10_02"); //Хорошо, что я еще не забыл свой коронный хук справа, иначе я тоже был бы мертв.
+	AI_Output	(other, self, "DIA_Addon_Erol_what_15_00"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output	(self, other, "DIA_Addon_Erol_what_10_01"); //РЇ СЃРѕ СЃРІРѕРёРјРё РїРѕРјРѕС‰РЅРёРєР°РјРё СЃРїРѕРєРѕР№РЅРѕ РµС…Р°Р» РїРѕ РґРѕСЂРѕРіРµ, Рё РІРґСЂСѓРі СЌС‚Рё РїРѕРґРѕРЅРєРё РІС‹СЃРєРѕС‡РёР»Рё РёР· Р·Р°СЃР°РґС‹ Рё СѓР±РёР»Рё РІСЃРµС… РјРѕРёС… Р»СЋРґРµР№.
+	AI_Output	(self, other, "DIA_Addon_Erol_what_10_02"); //РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ СЏ РµС‰Рµ РЅРµ Р·Р°Р±С‹Р» СЃРІРѕР№ РєРѕСЂРѕРЅРЅС‹Р№ С…СѓРє СЃРїСЂР°РІР°, РёРЅР°С‡Рµ СЏ С‚РѕР¶Рµ Р±С‹Р» Р±С‹ РјРµСЂС‚РІ.
 
 	Log_CreateTopic (TOPIC_Addon_Erol, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Erol, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Erol,"На торговца Эрола напали бандиты. Они забрали все его товары. Эрол хочет, чтобы я вернул похищенные каменные таблички. Бандиты расположились на мосту неподалеку от таверны 'Мертвая Гарпия'."); 
+	B_LogEntry (TOPIC_Addon_Erol,"РќР° С‚РѕСЂРіРѕРІС†Р° Р­СЂРѕР»Р° РЅР°РїР°Р»Рё Р±Р°РЅРґРёС‚С‹. РћРЅРё Р·Р°Р±СЂР°Р»Рё РІСЃРµ РµРіРѕ С‚РѕРІР°СЂС‹. Р­СЂРѕР» С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РІРµСЂРЅСѓР» РїРѕС…РёС‰РµРЅРЅС‹Рµ РєР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё. Р‘Р°РЅРґРёС‚С‹ СЂР°СЃРїРѕР»РѕР¶РёР»РёСЃСЊ РЅР° РјРѕСЃС‚Сѓ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С‚Р°РІРµСЂРЅС‹ 'РњРµСЂС‚РІР°СЏ Р“Р°СЂРїРёСЏ'."); 
 
 	MIS_Addon_Erol_BanditStuff = LOG_RUNNING;
 
 	Info_ClearChoices	(DIA_Addon_Erol_what);
-	Info_AddChoice	(DIA_Addon_Erol_what, "Так это твои вещи лежат под мостом?", DIA_Addon_Erol_what_dein );
-	Info_AddChoice	(DIA_Addon_Erol_what, "Кто эти люди?", DIA_Addon_Erol_what_wer );
+	Info_AddChoice	(DIA_Addon_Erol_what, "РўР°Рє СЌС‚Рѕ С‚РІРѕРё РІРµС‰Рё Р»РµР¶Р°С‚ РїРѕРґ РјРѕСЃС‚РѕРј?", DIA_Addon_Erol_what_dein );
+	Info_AddChoice	(DIA_Addon_Erol_what, "РљС‚Рѕ СЌС‚Рё Р»СЋРґРё?", DIA_Addon_Erol_what_wer );
 };
 func void DIA_Addon_Erol_what_back ()
 {
@@ -122,60 +122,60 @@ func void DIA_Addon_Erol_what_back ()
 };
 func void DIA_Addon_Erol_what_dein ()
 {
-	AI_Output (other, self, "DIA_Addon_Erol_what_dein_15_00"); //Так это твои вещи лежат под мостом?
-	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_01"); //Да. Тележка, товары, все остальное.
+	AI_Output (other, self, "DIA_Addon_Erol_what_dein_15_00"); //РўР°Рє СЌС‚Рѕ С‚РІРѕРё РІРµС‰Рё Р»РµР¶Р°С‚ РїРѕРґ РјРѕСЃС‚РѕРј?
+	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_01"); //Р”Р°. РўРµР»РµР¶РєР°, С‚РѕРІР°СЂС‹, РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ.
 	if (Npc_HasItems (other, itmi_erolskelch) > 0)
 	{
-		AI_Output (other, self, "DIA_Addon_Erol_what_dein_Add_15_00"); //Я кое-что оттуда забрал...
-		AI_Output (self, other, "DIA_Addon_Erol_what_dein_Add_10_01"); //Можешь оставить эти вещи себе, ценности они не представляют.
+		AI_Output (other, self, "DIA_Addon_Erol_what_dein_Add_15_00"); //РЇ РєРѕРµ-С‡С‚Рѕ РѕС‚С‚СѓРґР° Р·Р°Р±СЂР°Р»...
+		AI_Output (self, other, "DIA_Addon_Erol_what_dein_Add_10_01"); //РњРѕР¶РµС€СЊ РѕСЃС‚Р°РІРёС‚СЊ СЌС‚Рё РІРµС‰Рё СЃРµР±Рµ, С†РµРЅРЅРѕСЃС‚Рё РѕРЅРё РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏСЋС‚.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Erol_what_dein_Add_10_02"); //Хотя все это особой ценности не представляет.
+		AI_Output (self, other, "DIA_Addon_Erol_what_dein_Add_10_02"); //РҐРѕС‚СЏ РІСЃРµ СЌС‚Рѕ РѕСЃРѕР±РѕР№ С†РµРЅРЅРѕСЃС‚Рё РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚.
 	};
-	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_02"); //Но бандиты украли у меня нечто действительно ценное. Три каменные таблички.
+	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_02"); //РќРѕ Р±Р°РЅРґРёС‚С‹ СѓРєСЂР°Р»Рё Сѓ РјРµРЅСЏ РЅРµС‡С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С†РµРЅРЅРѕРµ. РўСЂРё РєР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё.
 
 	Info_AddChoice	(DIA_Addon_Erol_what, DIALOG_BACK, DIA_Addon_Erol_what_back );
-	Info_AddChoice	(DIA_Addon_Erol_what, "Каменные таблички?", DIA_Addon_Erol_what_Was );
+	Info_AddChoice	(DIA_Addon_Erol_what, "РљР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё?", DIA_Addon_Erol_what_Was );
 };
 func void DIA_Addon_Erol_what_Was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_Was_15_00"); //Каменные таблички?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_01"); //Да. Их хотел купить у меня городской маг воды. Я обещал ему, что достану их.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_02"); //Я должен любой ценой вернуть их, иначе пострадает моя репутация.
+	AI_Output			(other, self, "DIA_Addon_Erol_what_Was_15_00"); //РљР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_01"); //Р”Р°. РС… С…РѕС‚РµР» РєСѓРїРёС‚СЊ Сѓ РјРµРЅСЏ РіРѕСЂРѕРґСЃРєРѕР№ РјР°Рі РІРѕРґС‹. РЇ РѕР±РµС‰Р°Р» РµРјСѓ, С‡С‚Рѕ РґРѕСЃС‚Р°РЅСѓ РёС….
+	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_02"); //РЇ РґРѕР»Р¶РµРЅ Р»СЋР±РѕР№ С†РµРЅРѕР№ РІРµСЂРЅСѓС‚СЊ РёС…, РёРЅР°С‡Рµ РїРѕСЃС‚СЂР°РґР°РµС‚ РјРѕСЏ СЂРµРїСѓС‚Р°С†РёСЏ.
 
-	Info_AddChoice	(DIA_Addon_Erol_what, "Где ты берешь эти таблички?", DIA_Addon_Erol_what_woher );
-	Info_AddChoice	(DIA_Addon_Erol_what, "Зачем таблички нужны магу воды?", DIA_Addon_Erol_what_KDW );
+	Info_AddChoice	(DIA_Addon_Erol_what, "Р“РґРµ С‚С‹ Р±РµСЂРµС€СЊ СЌС‚Рё С‚Р°Р±Р»РёС‡РєРё?", DIA_Addon_Erol_what_woher );
+	Info_AddChoice	(DIA_Addon_Erol_what, "Р—Р°С‡РµРј С‚Р°Р±Р»РёС‡РєРё РЅСѓР¶РЅС‹ РјР°РіСѓ РІРѕРґС‹?", DIA_Addon_Erol_what_KDW );
 };
 func void DIA_Addon_Erol_what_KDW ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_KDW_15_00"); //Зачем таблички нужны магу воды?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_KDW_10_01"); //Он сказал, что изучает их, и просил привезти как можно больше.
+	AI_Output			(other, self, "DIA_Addon_Erol_what_KDW_15_00"); //Р—Р°С‡РµРј С‚Р°Р±Р»РёС‡РєРё РЅСѓР¶РЅС‹ РјР°РіСѓ РІРѕРґС‹?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_KDW_10_01"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РёР·СѓС‡Р°РµС‚ РёС…, Рё РїСЂРѕСЃРёР» РїСЂРёРІРµР·С‚Рё РєР°Рє РјРѕР¶РЅРѕ Р±РѕР»СЊС€Рµ.
 };
 func void DIA_Addon_Erol_what_woher ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_woher_15_00"); //Где ты берешь эти таблички?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_01"); //Нахожу их в древних строениях, например, мавзолеях. А иногда их можно найти в пещерах.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_02"); //Я продал магу воды уже целую кучу табличек.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_03"); //Впрочем, здесь они встречаются довольно редко. Чаще всего я нахожу их на северо-востоке Хориниса.
+	AI_Output			(other, self, "DIA_Addon_Erol_what_woher_15_00"); //Р“РґРµ С‚С‹ Р±РµСЂРµС€СЊ СЌС‚Рё С‚Р°Р±Р»РёС‡РєРё?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_01"); //РќР°С…РѕР¶Сѓ РёС… РІ РґСЂРµРІРЅРёС… СЃС‚СЂРѕРµРЅРёСЏС…, РЅР°РїСЂРёРјРµСЂ, РјР°РІР·РѕР»РµСЏС…. Рђ РёРЅРѕРіРґР° РёС… РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РІ РїРµС‰РµСЂР°С….
+	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_02"); //РЇ РїСЂРѕРґР°Р» РјР°РіСѓ РІРѕРґС‹ СѓР¶Рµ С†РµР»СѓСЋ РєСѓС‡Сѓ С‚Р°Р±Р»РёС‡РµРє.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_03"); //Р’РїСЂРѕС‡РµРј, Р·РґРµСЃСЊ РѕРЅРё РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ РґРѕРІРѕР»СЊРЅРѕ СЂРµРґРєРѕ. Р§Р°С‰Рµ РІСЃРµРіРѕ СЏ РЅР°С…РѕР¶Сѓ РёС… РЅР° СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕРєРµ РҐРѕСЂРёРЅРёСЃР°.
 
-	Info_AddChoice	(DIA_Addon_Erol_what, "Почему бы тебе просто не поискать новые таблички?", DIA_Addon_Erol_what_neue );
+	Info_AddChoice	(DIA_Addon_Erol_what, "РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РїСЂРѕСЃС‚Рѕ РЅРµ РїРѕРёСЃРєР°С‚СЊ РЅРѕРІС‹Рµ С‚Р°Р±Р»РёС‡РєРё?", DIA_Addon_Erol_what_neue );
 };
 func void DIA_Addon_Erol_what_neue ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_neue_15_00"); //Почему бы тебе просто не поискать новые таблички?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_01"); //Во время схватки с бандитами я вывихнул лодыжку.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_02"); //С хромой ногой я далеко не уйду.
+	AI_Output			(other, self, "DIA_Addon_Erol_what_neue_15_00"); //РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РїСЂРѕСЃС‚Рѕ РЅРµ РїРѕРёСЃРєР°С‚СЊ РЅРѕРІС‹Рµ С‚Р°Р±Р»РёС‡РєРё?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_01"); //Р’Рѕ РІСЂРµРјСЏ СЃС…РІР°С‚РєРё СЃ Р±Р°РЅРґРёС‚Р°РјРё СЏ РІС‹РІРёС…РЅСѓР» Р»РѕРґС‹Р¶РєСѓ.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_02"); //РЎ С…СЂРѕРјРѕР№ РЅРѕРіРѕР№ СЏ РґР°Р»РµРєРѕ РЅРµ СѓР№РґСѓ.
 };
 func void DIA_Addon_Erol_what_wer ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_wer_15_00"); //Что за люди на тебя напали?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_01"); //Бандиты, кто еще? Они обосновались на мосту.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_02"); //Грабят каждого, кто пытается пройти.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_03"); //Я знал, что у них там засада, так что решил проехать под мостом.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_04"); //Но похоже, моя тележка показалась им слишком соблазнительной.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_05"); //Эти негодяи просто спрыгнули с моста прямо на нас.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_06"); //Надо было попробовать незаметно проехать ночью...
+	AI_Output			(other, self, "DIA_Addon_Erol_what_wer_15_00"); //Р§С‚Рѕ Р·Р° Р»СЋРґРё РЅР° С‚РµР±СЏ РЅР°РїР°Р»Рё?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_01"); //Р‘Р°РЅРґРёС‚С‹, РєС‚Рѕ РµС‰Рµ? РћРЅРё РѕР±РѕСЃРЅРѕРІР°Р»РёСЃСЊ РЅР° РјРѕСЃС‚Сѓ.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_02"); //Р“СЂР°Р±СЏС‚ РєР°Р¶РґРѕРіРѕ, РєС‚Рѕ РїС‹С‚Р°РµС‚СЃСЏ РїСЂРѕР№С‚Рё.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_03"); //РЇ Р·РЅР°Р», С‡С‚Рѕ Сѓ РЅРёС… С‚Р°Рј Р·Р°СЃР°РґР°, С‚Р°Рє С‡С‚Рѕ СЂРµС€РёР» РїСЂРѕРµС…Р°С‚СЊ РїРѕРґ РјРѕСЃС‚РѕРј.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_04"); //РќРѕ РїРѕС…РѕР¶Рµ, РјРѕСЏ С‚РµР»РµР¶РєР° РїРѕРєР°Р·Р°Р»Р°СЃСЊ РёРј СЃР»РёС€РєРѕРј СЃРѕР±Р»Р°Р·РЅРёС‚РµР»СЊРЅРѕР№.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_05"); //Р­С‚Рё РЅРµРіРѕРґСЏРё РїСЂРѕСЃС‚Рѕ СЃРїСЂС‹РіРЅСѓР»Рё СЃ РјРѕСЃС‚Р° РїСЂСЏРјРѕ РЅР° РЅР°СЃ.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_06"); //РќР°РґРѕ Р±С‹Р»Рѕ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РЅРµР·Р°РјРµС‚РЅРѕ РїСЂРѕРµС…Р°С‚СЊ РЅРѕС‡СЊСЋ...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -188,7 +188,7 @@ instance DIA_Addon_Erol_FernandosWeapons		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_FernandosWeapons_Condition;
 	information	 = 	DIA_Addon_Erol_FernandosWeapons_Info;
 
-	description	 = 	"Ты что-нибудь знаешь о поставках оружия бандитам?";
+	description	 = 	"РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС€СЊ Рѕ РїРѕСЃС‚Р°РІРєР°С… РѕСЂСѓР¶РёСЏ Р±Р°РЅРґРёС‚Р°Рј?";
 };
 
 func int DIA_Addon_Erol_FernandosWeapons_Condition ()
@@ -202,21 +202,21 @@ func int DIA_Addon_Erol_FernandosWeapons_Condition ()
 
 func void DIA_Addon_Erol_FernandosWeapons_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_FernandosWeapons_15_00"); //Ты что-нибудь знаешь о поставках оружия бандитам?
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_01"); //Поставках оружия? Да, кое-что знаю. Какая-то свинья из города продала им столько оружия, что они еле его увезли.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_02"); //Часть его хранится на мосту у напавших на меня бандитов.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_03"); //Часть увезли куда-то в сторону фермы Бенгара на верхних пастбищах.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_04"); //Возможно, бандиты хотели переправить оружие через проход.
+	AI_Output	(other, self, "DIA_Addon_Erol_FernandosWeapons_15_00"); //РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС€СЊ Рѕ РїРѕСЃС‚Р°РІРєР°С… РѕСЂСѓР¶РёСЏ Р±Р°РЅРґРёС‚Р°Рј?
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_01"); //РџРѕСЃС‚Р°РІРєР°С… РѕСЂСѓР¶РёСЏ? Р”Р°, РєРѕРµ-С‡С‚Рѕ Р·РЅР°СЋ. РљР°РєР°СЏ-С‚Рѕ СЃРІРёРЅСЊСЏ РёР· РіРѕСЂРѕРґР° РїСЂРѕРґР°Р»Р° РёРј СЃС‚РѕР»СЊРєРѕ РѕСЂСѓР¶РёСЏ, С‡С‚Рѕ РѕРЅРё РµР»Рµ РµРіРѕ СѓРІРµР·Р»Рё.
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_02"); //Р§Р°СЃС‚СЊ РµРіРѕ С…СЂР°РЅРёС‚СЃСЏ РЅР° РјРѕСЃС‚Сѓ Сѓ РЅР°РїР°РІС€РёС… РЅР° РјРµРЅСЏ Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_03"); //Р§Р°СЃС‚СЊ СѓРІРµР·Р»Рё РєСѓРґР°-С‚Рѕ РІ СЃС‚РѕСЂРѕРЅСѓ С„РµСЂРјС‹ Р‘РµРЅРіР°СЂР° РЅР° РІРµСЂС…РЅРёС… РїР°СЃС‚Р±РёС‰Р°С….
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_04"); //Р’РѕР·РјРѕР¶РЅРѕ, Р±Р°РЅРґРёС‚С‹ С…РѕС‚РµР»Рё РїРµСЂРµРїСЂР°РІРёС‚СЊ РѕСЂСѓР¶РёРµ С‡РµСЂРµР· РїСЂРѕС…РѕРґ.
 	
 	Info_ClearChoices	(DIA_Addon_Erol_FernandosWeapons);
 	Info_AddChoice	(DIA_Addon_Erol_FernandosWeapons, DIALOG_BACK, DIA_Addon_Erol_FernandosWeapons_back );
-	Info_AddChoice	(DIA_Addon_Erol_FernandosWeapons, "Где находятся эти верхние пастбища?", DIA_Addon_Erol_FernandosWeapons_bengar );
+	Info_AddChoice	(DIA_Addon_Erol_FernandosWeapons, "Р“РґРµ РЅР°С…РѕРґСЏС‚СЃСЏ СЌС‚Рё РІРµСЂС…РЅРёРµ РїР°СЃС‚Р±РёС‰Р°?", DIA_Addon_Erol_FernandosWeapons_bengar );
 };
 func void DIA_Addon_Erol_FernandosWeapons_bengar ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_FernandosWeapons_bengar_15_00"); //Где находятся эти верхние пастбища?
-	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_01"); //В центральной части Хориниса находится 'Мертвая Гарпия', таверна Орлана. 
-	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_02"); //От нее на юг ведет дорога. Она проходит через верхние пастбища к проходу в Долину Рудников.
+	AI_Output			(other, self, "DIA_Addon_Erol_FernandosWeapons_bengar_15_00"); //Р“РґРµ РЅР°С…РѕРґСЏС‚СЃСЏ СЌС‚Рё РІРµСЂС…РЅРёРµ РїР°СЃС‚Р±РёС‰Р°?
+	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_01"); //Р’ С†РµРЅС‚СЂР°Р»СЊРЅРѕР№ С‡Р°СЃС‚Рё РҐРѕСЂРёРЅРёСЃР° РЅР°С…РѕРґРёС‚СЃСЏ 'РњРµСЂС‚РІР°СЏ Р“Р°СЂРїРёСЏ', С‚Р°РІРµСЂРЅР° РћСЂР»Р°РЅР°. 
+	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_02"); //РћС‚ РЅРµРµ РЅР° СЋРі РІРµРґРµС‚ РґРѕСЂРѕРіР°. РћРЅР° РїСЂРѕС…РѕРґРёС‚ С‡РµСЂРµР· РІРµСЂС…РЅРёРµ РїР°СЃС‚Р±РёС‰Р° Рє РїСЂРѕС…РѕРґСѓ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
 	Info_ClearChoices	(DIA_Addon_Erol_FernandosWeapons);
 };
 
@@ -237,7 +237,7 @@ instance DIA_Addon_Erol_Stoneplates		(C_INFO)
 	information	 = 	DIA_Addon_Erol_Stoneplates_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Насчет этих каменных табличек...";
+	description	 = 	"РќР°СЃС‡РµС‚ СЌС‚РёС… РєР°РјРµРЅРЅС‹С… С‚Р°Р±Р»РёС‡РµРє...";
 };
 
 func int DIA_Addon_Erol_Stoneplates_Condition ()
@@ -249,11 +249,11 @@ func int DIA_Addon_Erol_Stoneplates_Condition ()
 };
 
 var int StoneplatesCounter;
-const int Addon_ErolsStoneplatesOffer = (Value_StonePlateCommon + 5); //Joly:Kohle fьr eine StonePlateCommon
+const int Addon_ErolsStoneplatesOffer = (Value_StonePlateCommon + 5); //Joly:Kohle fСЊr eine StonePlateCommon
 
 func void DIA_Addon_Erol_Stoneplates_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_Stoneplates_15_00"); //Насчет этих каменных табличек...
+	AI_Output	(other, self, "DIA_Addon_Erol_Stoneplates_15_00"); //РќР°СЃС‡РµС‚ СЌС‚РёС… РєР°РјРµРЅРЅС‹С… С‚Р°Р±Р»РёС‡РµРє...
 
 	if (Npc_HasItems (other,ItWr_StonePlateCommon_Addon) >= 1)
 	{
@@ -267,7 +267,7 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 		
 			if (StoneplatesCount == 1)
 				{
-					AI_Output		(other, self, "DIA_Addon_Erol_Stoneplates_15_01"); //У меня есть одна такая.
+					AI_Output		(other, self, "DIA_Addon_Erol_Stoneplates_15_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РѕРґРЅР° С‚Р°РєР°СЏ.
 					B_GivePlayerXP (XP_Addon_BringStoneplate);
 					B_GiveInvItems (other, self, ItWr_StonePlateCommon_Addon, 1);
 				
@@ -276,7 +276,7 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 				}
 				else
 				{
-					AI_Output		(other, self, "DIA_Addon_Erol_Stoneplates_15_02"); //У меня есть несколько штук.
+					AI_Output		(other, self, "DIA_Addon_Erol_Stoneplates_15_02"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ С€С‚СѓРє.
 		
 					if ((StoneplatesCount + StoneplatesCounter) >= 3)
 					{
@@ -294,37 +294,37 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 				};
 				
 				
-			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_03"); //Спасибо тебе.
+			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_03"); //РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ.
 		
 			if (StoneplatesCounter == 1)
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_04"); //Теперь мне не хватает только двух.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_04"); //РўРµРїРµСЂСЊ РјРЅРµ РЅРµ С…РІР°С‚Р°РµС‚ С‚РѕР»СЊРєРѕ РґРІСѓС….
 			}
 			else if	(StoneplatesCounter == 2)
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_05"); //Теперь мне не хватает только одной.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_05"); //РўРµРїРµСЂСЊ РјРЅРµ РЅРµ С…РІР°С‚Р°РµС‚ С‚РѕР»СЊРєРѕ РѕРґРЅРѕР№.
 			}
 			else // mindestens 3 Steintafeln hat er schon.
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_06"); //Этого достаточно. Маг воды получит то, что я обещал, и я смогу, наконец, вернуться домой.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_06"); //Р­С‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РњР°Рі РІРѕРґС‹ РїРѕР»СѓС‡РёС‚ С‚Рѕ, С‡С‚Рѕ СЏ РѕР±РµС‰Р°Р», Рё СЏ СЃРјРѕРіСѓ, РЅР°РєРѕРЅРµС†, РІРµСЂРЅСѓС‚СЊСЃСЏ РґРѕРјРѕР№.
 				
 				MIS_Addon_Erol_BanditStuff = LOG_SUCCESS;
 				Wld_AssignRoomToGuild ("grpwaldhuette01",	GIL_PUBLIC);
 			};
 		
-			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_07"); //Конечно же, я тебе заплачу.
+			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_07"); //РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ С‚РµР±Рµ Р·Р°РїР»Р°С‡Сѓ.
 
 			StoneplatesGeld	= (Addon_ErolsStoneplatesOffer * Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));
 		
 			CreateInvItems (self, ItMi_Gold, StoneplatesGeld); 
 			B_GiveInvItems (self, other, ItMi_Gold, StoneplatesGeld);
 			
-			Npc_RemoveInvItems	(self ,ItWr_StonePlateCommon_Addon 	, Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));//Joly: weil er zum Hдndler wird.
+			Npc_RemoveInvItems	(self ,ItWr_StonePlateCommon_Addon 	, Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));//Joly: weil er zum HРґndler wird.
 			
 			if (MIS_Addon_Erol_BanditStuff == LOG_SUCCESS)
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_08"); //Я иду домой. Если хочешь, можешь пойти со мной.
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_09"); //Когда мы доберемся до моего дома, я смогу продать тебе некоторые вещи.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_08"); //РЇ РёРґСѓ РґРѕРјРѕР№. Р•СЃР»Рё С…РѕС‡РµС€СЊ, РјРѕР¶РµС€СЊ РїРѕР№С‚Рё СЃРѕ РјРЅРѕР№.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_09"); //РљРѕРіРґР° РјС‹ РґРѕР±РµСЂРµРјСЃСЏ РґРѕ РјРѕРµРіРѕ РґРѕРјР°, СЏ СЃРјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ РЅРµРєРѕС‚РѕСЂС‹Рµ РІРµС‰Рё.
 				
 				AI_StopProcessInfos (self);
 				AI_UseMob			(self,"BENCH",-1);
@@ -337,14 +337,14 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 	{
 			if (C_ScHasMagicStonePlate () == TRUE)
 			{
-				AI_Output			(other, self, "DIA_Addon_Erol_Stoneplates_15_10"); //Эта табличка подойдет?
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_11"); //Нет. Она обладает магической силой.
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_12"); //Такие таблички маг воды не покупает.
+				AI_Output			(other, self, "DIA_Addon_Erol_Stoneplates_15_10"); //Р­С‚Р° С‚Р°Р±Р»РёС‡РєР° РїРѕРґРѕР№РґРµС‚?
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_11"); //РќРµС‚. РћРЅР° РѕР±Р»Р°РґР°РµС‚ РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»РѕР№.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_12"); //РўР°РєРёРµ С‚Р°Р±Р»РёС‡РєРё РјР°Рі РІРѕРґС‹ РЅРµ РїРѕРєСѓРїР°РµС‚.
 			}
 			else
 			{			
-				AI_Output			(other, self, "DIA_Addon_Erol_Stoneplates_15_13"); //Сколько тебе нужно табличек?
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_14"); //Чтобы спасти мою репутацию, мне нужно передать магу воды три таблички.
+				AI_Output			(other, self, "DIA_Addon_Erol_Stoneplates_15_13"); //РЎРєРѕР»СЊРєРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ С‚Р°Р±Р»РёС‡РµРє?
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_14"); //Р§С‚РѕР±С‹ СЃРїР°СЃС‚Рё РјРѕСЋ СЂРµРїСѓС‚Р°С†РёСЋ, РјРЅРµ РЅСѓР¶РЅРѕ РїРµСЂРµРґР°С‚СЊ РјР°РіСѓ РІРѕРґС‹ С‚СЂРё С‚Р°Р±Р»РёС‡РєРё.
 			}; 
 	};
 };
@@ -359,7 +359,7 @@ instance DIA_Addon_Erol_Buerger		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_Buerger_Condition;
 	information	 = 	DIA_Addon_Erol_Buerger_Info;
 
-	description	 = 	"Ты живешь в городе?";
+	description	 = 	"РўС‹ Р¶РёРІРµС€СЊ РІ РіРѕСЂРѕРґРµ?";
 };
 
 func int DIA_Addon_Erol_Buerger_Condition ()
@@ -372,9 +372,9 @@ func int DIA_Addon_Erol_Buerger_Condition ()
 
 func void DIA_Addon_Erol_Buerger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_Buerger_15_00"); //Ты живешь в городе?
-	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_01"); //Я не был там уже много лет, приятель. Меня ничего не удерживает среди этих глупых и жадных свиней, живущих в верхнем квартале.
-	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_02"); //В свое время я был довольно влиятельным горожанином. Но это было давно.
+	AI_Output	(other, self, "DIA_Addon_Erol_Buerger_15_00"); //РўС‹ Р¶РёРІРµС€СЊ РІ РіРѕСЂРѕРґРµ?
+	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_01"); //РЇ РЅРµ Р±С‹Р» С‚Р°Рј СѓР¶Рµ РјРЅРѕРіРѕ Р»РµС‚, РїСЂРёСЏС‚РµР»СЊ. РњРµРЅСЏ РЅРёС‡РµРіРѕ РЅРµ СѓРґРµСЂР¶РёРІР°РµС‚ СЃСЂРµРґРё СЌС‚РёС… РіР»СѓРїС‹С… Рё Р¶Р°РґРЅС‹С… СЃРІРёРЅРµР№, Р¶РёРІСѓС‰РёС… РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ.
+	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_02"); //Р’ СЃРІРѕРµ РІСЂРµРјСЏ СЏ Р±С‹Р» РґРѕРІРѕР»СЊРЅРѕ РІР»РёСЏС‚РµР»СЊРЅС‹Рј РіРѕСЂРѕР¶Р°РЅРёРЅРѕРј. РќРѕ СЌС‚Рѕ Р±С‹Р»Рѕ РґР°РІРЅРѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -387,7 +387,7 @@ instance DIA_Addon_Erol_PreTeach		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_PreTeach_Condition;
 	information	 = 	DIA_Addon_Erol_PreTeach_Info;
 
-	description	 = 	"Ты смог отбиться от бандитов?";
+	description	 = 	"РўС‹ СЃРјРѕРі РѕС‚Р±РёС‚СЊСЃСЏ РѕС‚ Р±Р°РЅРґРёС‚РѕРІ?";
 };
 
 func int DIA_Addon_Erol_PreTeach_Condition ()
@@ -400,10 +400,10 @@ func int DIA_Addon_Erol_PreTeach_Condition ()
 
 func void DIA_Addon_Erol_PreTeach_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_00"); //Ты смог отбиться от бандитов?
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_01"); //Да. Но они все еще сидят на мосту.
-	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_02"); //Ты можешь научить меня такому удару?
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_03"); //Конечно.
+	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_00"); //РўС‹ СЃРјРѕРі РѕС‚Р±РёС‚СЊСЃСЏ РѕС‚ Р±Р°РЅРґРёС‚РѕРІ?
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_01"); //Р”Р°. РќРѕ РѕРЅРё РІСЃРµ РµС‰Рµ СЃРёРґСЏС‚ РЅР° РјРѕСЃС‚Сѓ.
+	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_02"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‚Р°РєРѕРјСѓ СѓРґР°СЂСѓ?
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_03"); //РљРѕРЅРµС‡РЅРѕ.
 	Erol_Addon_TeachPlayer = TRUE;
 	Log_CreateTopic (Topic_OutTeacher,LOG_NOTE);
 	B_LogEntry (Topic_OutTeacher, LogText_Addon_Erol_Teach);
@@ -420,7 +420,7 @@ instance DIA_Addon_Erol_PreTrade		(C_INFO)
 	information	 = 	DIA_Addon_Erol_PreTrade_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 
 func int DIA_Addon_Erol_PreTrade_Condition ()
@@ -436,12 +436,12 @@ func int DIA_Addon_Erol_PreTrade_Condition ()
 func void DIA_Addon_Erol_PreTrade_Info ()
 {
 	B_Say (other,self,"$TRADE_2");
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_00"); //Я ничего не могу тебе продать. Все мои вещи остались под мостом.
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_01"); //Что-то у меня купить ты сможешь только тогда, когда я доберусь до дома.
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_00"); //РЇ РЅРёС‡РµРіРѕ РЅРµ РјРѕРіСѓ С‚РµР±Рµ РїСЂРѕРґР°С‚СЊ. Р’СЃРµ РјРѕРё РІРµС‰Рё РѕСЃС‚Р°Р»РёСЃСЊ РїРѕРґ РјРѕСЃС‚РѕРј.
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_01"); //Р§С‚Рѕ-С‚Рѕ Сѓ РјРµРЅСЏ РєСѓРїРёС‚СЊ С‚С‹ СЃРјРѕР¶РµС€СЊ С‚РѕР»СЊРєРѕ С‚РѕРіРґР°, РєРѕРіРґР° СЏ РґРѕР±РµСЂСѓСЃСЊ РґРѕ РґРѕРјР°.
 
 	if (MIS_Addon_Erol_BanditStuff != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_02"); //Но я не могу вернуться, пока не достану таблички для мага.
+		AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_02"); //РќРѕ СЏ РЅРµ РјРѕРіСѓ РІРµСЂРЅСѓС‚СЊСЃСЏ, РїРѕРєР° РЅРµ РґРѕСЃС‚Р°РЅСѓ С‚Р°Р±Р»РёС‡РєРё РґР»СЏ РјР°РіР°.
 	};
 };
 
@@ -455,7 +455,7 @@ instance DIA_Addon_Erol_SLD		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_SLD_Condition;
 	information	 = 	DIA_Addon_Erol_SLD_Info;
 
-	description	 = 	"Это и есть твой дом?";
+	description	 = 	"Р­С‚Рѕ Рё РµСЃС‚СЊ С‚РІРѕР№ РґРѕРј?";
 };
 
 func int DIA_Addon_Erol_SLD_Condition ()
@@ -468,11 +468,11 @@ func int DIA_Addon_Erol_SLD_Condition ()
 var int Erol_IsAtHome;
 func void DIA_Addon_Erol_SLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_00"); //(удивленно) Это и есть твой дом?
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_01"); //Да. А что? Что-нибудь не так?
-	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_02"); //У тебя нет проблем с наемниками?
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_03"); //Пока я не сую нос в их дела, они меня не трогают .
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_04"); //К тому же, они неплохие покупатели. И я плачу им, чтобы они охраняли мой дом, пока я в отъезде.
+	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_00"); //(СѓРґРёРІР»РµРЅРЅРѕ) Р­С‚Рѕ Рё РµСЃС‚СЊ С‚РІРѕР№ РґРѕРј?
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_01"); //Р”Р°. Рђ С‡С‚Рѕ? Р§С‚Рѕ-РЅРёР±СѓРґСЊ РЅРµ С‚Р°Рє?
+	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_02"); //РЈ С‚РµР±СЏ РЅРµС‚ РїСЂРѕР±Р»РµРј СЃ РЅР°РµРјРЅРёРєР°РјРё?
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_03"); //РџРѕРєР° СЏ РЅРµ СЃСѓСЋ РЅРѕСЃ РІ РёС… РґРµР»Р°, РѕРЅРё РјРµРЅСЏ РЅРµ С‚СЂРѕРіР°СЋС‚ .
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_04"); //Рљ С‚РѕРјСѓ Р¶Рµ, РѕРЅРё РЅРµРїР»РѕС…РёРµ РїРѕРєСѓРїР°С‚РµР»Рё. Р СЏ РїР»Р°С‡Сѓ РёРј, С‡С‚РѕР±С‹ РѕРЅРё РѕС…СЂР°РЅСЏР»Рё РјРѕР№ РґРѕРј, РїРѕРєР° СЏ РІ РѕС‚СЉРµР·РґРµ.
 	B_GivePlayerXP (XP_Ambient);
 	if (Erol_IsAtHome == FALSE)
 	{
@@ -492,7 +492,7 @@ instance DIA_Addon_Erol_Trade		(C_INFO)
 	information	 = 	DIA_Addon_Erol_Trade_Info;
 	Trade 		 = 	TRUE;
 	permanent	 = 	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 
 func int DIA_Addon_Erol_Trade_Condition ()
@@ -508,7 +508,7 @@ func void DIA_Addon_Erol_Trade_Info ()
 {
 	B_GiveTradeInv (self);
 	B_Say (other,self,"$TRADE_2");
-	AI_Output	(self, other, "DIA_Addon_Erol_Trade_10_00"); //Впрочем, выбора у меня нет.
+	AI_Output	(self, other, "DIA_Addon_Erol_Trade_10_00"); //Р’РїСЂРѕС‡РµРј, РІС‹Р±РѕСЂР° Сѓ РјРµРЅСЏ РЅРµС‚.
 	
 	if (Erol_IsAtHome == FALSE)
 	{
@@ -531,7 +531,7 @@ INSTANCE DIA_Addon_Erol_Teach(C_INFO)
 	condition	= DIA_Addon_Erol_Teach_Condition;
 	information	= DIA_Addon_Erol_Teach_Info;
 	permanent	= TRUE;
-	description = "Покажи мне, как сделать удар сильнее.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє СЃРґРµР»Р°С‚СЊ СѓРґР°СЂ СЃРёР»СЊРЅРµРµ.";
 };                       
 
 FUNC INT DIA_Addon_Erol_Teach_Condition()
@@ -544,26 +544,26 @@ FUNC INT DIA_Addon_Erol_Teach_Condition()
  
 FUNC VOID DIA_Addon_Erol_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Erol_Teach_15_00"); //Покажи мне, как сделать удар сильнее.
+	AI_Output (other,self ,"DIA_Addon_Erol_Teach_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє СЃРґРµР»Р°С‚СЊ СѓРґР°СЂ СЃРёР»СЊРЅРµРµ.
 
 	if (MIS_Addon_Erol_BanditStuff != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_01"); //Хорошо, но ты окажешь мне одну услугу.
-		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_02"); //Помоги мне спасти мою репутацию. Принеси мне каменные таблички для мага воды.
-		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_03"); //Тогда я покажу тебе, как увеличить твою силу в бою.
+		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_01"); //РҐРѕСЂРѕС€Рѕ, РЅРѕ С‚С‹ РѕРєР°Р¶РµС€СЊ РјРЅРµ РѕРґРЅСѓ СѓСЃР»СѓРіСѓ.
+		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_02"); //РџРѕРјРѕРіРё РјРЅРµ СЃРїР°СЃС‚Рё РјРѕСЋ СЂРµРїСѓС‚Р°С†РёСЋ. РџСЂРёРЅРµСЃРё РјРЅРµ РєР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё РґР»СЏ РјР°РіР° РІРѕРґС‹.
+		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_03"); //РўРѕРіРґР° СЏ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ, РєР°Рє СѓРІРµР»РёС‡РёС‚СЊ С‚РІРѕСЋ СЃРёР»Сѓ РІ Р±РѕСЋ.
 	}
 	else if (Erol_Bonus == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_00"); //Хорошо. Смотри внимательно. Есть один простой прием.
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_01"); //Когда ты наносишь удар, используй не силу руки, а силу всего тела.
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_02"); //В одно и то же время ты должен развернуть бедро, вынести вперед плечо и распрямить руку.
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_03"); //(смеется) Если ты нанесешь удар правильно, ты это поймешь!
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_00"); //РҐРѕСЂРѕС€Рѕ. РЎРјРѕС‚СЂРё РІРЅРёРјР°С‚РµР»СЊРЅРѕ. Р•СЃС‚СЊ РѕРґРёРЅ РїСЂРѕСЃС‚РѕР№ РїСЂРёРµРј.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_01"); //РљРѕРіРґР° С‚С‹ РЅР°РЅРѕСЃРёС€СЊ СѓРґР°СЂ, РёСЃРїРѕР»СЊР·СѓР№ РЅРµ СЃРёР»Сѓ СЂСѓРєРё, Р° СЃРёР»Сѓ РІСЃРµРіРѕ С‚РµР»Р°.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_02"); //Р’ РѕРґРЅРѕ Рё С‚Рѕ Р¶Рµ РІСЂРµРјСЏ С‚С‹ РґРѕР»Р¶РµРЅ СЂР°Р·РІРµСЂРЅСѓС‚СЊ Р±РµРґСЂРѕ, РІС‹РЅРµСЃС‚Рё РІРїРµСЂРµРґ РїР»РµС‡Рѕ Рё СЂР°СЃРїСЂСЏРјРёС‚СЊ СЂСѓРєСѓ.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_03"); //(СЃРјРµРµС‚СЃСЏ) Р•СЃР»Рё С‚С‹ РЅР°РЅРµСЃРµС€СЊ СѓРґР°СЂ РїСЂР°РІРёР»СЊРЅРѕ, С‚С‹ СЌС‚Рѕ РїРѕР№РјРµС€СЊ!
 		B_RaiseAttribute (other, ATR_STRENGTH, 1);
 		Erol_Bonus = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_04"); //Если ты хочешь добиться большего, ты должен упорно тренироваться...
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_04"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РґРѕР±РёС‚СЊСЃСЏ Р±РѕР»СЊС€РµРіРѕ, С‚С‹ РґРѕР»Р¶РµРЅ СѓРїРѕСЂРЅРѕ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ...
 		Info_ClearChoices (DIA_Addon_Erol_Teach);
 		Info_AddChoice		(DIA_Addon_Erol_Teach, DIALOG_BACK, DIA_Addon_Erol_Teach_Back);
 		Info_AddChoice		(DIA_Addon_Erol_Teach, B_BuildLearnString(PRINT_LearnSTR1			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_Addon_Erol_Teach_STR_1);

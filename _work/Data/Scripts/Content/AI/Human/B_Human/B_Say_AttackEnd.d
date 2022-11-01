@@ -23,7 +23,7 @@ func void B_Say_AttackEnd()
 			}
 			else
 			{
-				B_Say (self, other, "$ENEMYKILLED");			//Das war's für dich, Penner.
+				B_Say (self, other, "$ENEMYKILLED");			//Das war's fÑŒr dich, Penner.
 			};
 		}
 		else
@@ -80,7 +80,7 @@ func void B_Say_AttackEnd()
 					B_Say (self, other, "$MONSTERKILLED");	//Ein Mistvieh weniger!
 				};
 			}
-			else //Player hat getötet
+			else //Player hat getÑ†tet
 			{
 				B_Say (self, other, "$GOODMONSTERKILL");		
 			};
@@ -102,7 +102,7 @@ func void B_Say_AttackEnd()
 		return;
 	};
 	
-	// ------ Schaf wurde angegriffen oder getötet (von Mensch oder Monster) ------
+	// ------ Schaf wurde angegriffen oder getÑ†tet (von Mensch oder Monster) ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_SheepKiller)
 	{
 		if (other.guild < GIL_SEPERATOR_HUM)
@@ -123,7 +123,7 @@ func void B_Say_AttackEnd()
 		{
 			if (self.aivar[AIV_LASTTARGET] == Hlp_GetInstanceID (other))
 			{
-				B_Say (self, other, "$KILLMURDERER");	//Stirb, Mörder!
+				B_Say (self, other, "$KILLMURDERER");	//Stirb, MÑ†rder!
 			}
 			else
 			{
@@ -132,12 +132,12 @@ func void B_Say_AttackEnd()
 		}
 		else
 		{
-			B_Say (self, other, "$ENEMYKILLED");			//Das war's für dich, Penner.
+			B_Say (self, other, "$ENEMYKILLED");			//Das war's fÑŒr dich, Penner.
 		};
 		return;
 	};
 	
-	// ------ Monster kämpft gegen Human - ich helfe Human ------
+	// ------ Monster kÐ´mpft gegen Human - ich helfe Human ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_MonsterVsHuman)
 	{
 		if (self.voice == 9)	//wegen Lares
@@ -155,21 +155,21 @@ func void B_Say_AttackEnd()
 	// ------ GateGuards halten nicht-feindliches Monster auf ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_MonsterCloseToGate)
 	{
-		B_Say (self, other, "$STUPIDBEASTKILLED");			//So ein saublödes Vieh!
+		B_Say (self, other, "$STUPIDBEASTKILLED");			//So ein saublÑ†des Vieh!
 		return;
 	};
 	
-	// ------ Täter hat mich verletzt ------
+	// ------ TÐ´ter hat mich verletzt ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_ReactToDamage)
 	{
 		B_Say (self, other, "$NEVERHITMEAGAIN"); 			//Leg dich nie wieder mit mir an!
 		return;
 	};
 	
-	// ------ Täter hat trotz zweimaliger Warnung Waffe nicht weggesteckt ------
+	// ------ TÐ´ter hat trotz zweimaliger Warnung Waffe nicht weggesteckt ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_ReactToWeapon)
 	{
-		B_Say (self, other, "$YOUBETTERSHOULDHAVELISTENED");	//Du hättest auf mich hören sollen!
+		B_Say (self, other, "$YOUBETTERSHOULDHAVELISTENED");	//Du hÐ´ttest auf mich hÑ†ren sollen!
 		return;
 	};
 	
@@ -183,7 +183,7 @@ func void B_Say_AttackEnd()
 		}
 		else //SC ist bicht mehr in meinem Raum
 		{
-			B_Say (self, other, "$NEVERENTERROOMAGAIN");		//Und daß ich dich nie wieder da drin erwische!
+			B_Say (self, other, "$NEVERENTERROOMAGAIN");		//Und daÐ¯ ich dich nie wieder da drin erwische!
 		};
 		return;
 	};
@@ -191,7 +191,7 @@ func void B_Say_AttackEnd()
 	// ------ Spieler hat (verbotenen) Portalraum verlassen ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_LeftPortalRoom)
 	{
-		B_Say (self, other, "$NEVERENTERROOMAGAIN");		//Und daß ich dich nie wieder da drin erwische!
+		B_Say (self, other, "$NEVERENTERROOMAGAIN");		//Und daÐ¯ ich dich nie wieder da drin erwische!
 		return;
 	};
 	
@@ -202,7 +202,7 @@ func void B_Say_AttackEnd()
 		return;
 	};
 	
-	// ------ Wache beendet Kampf, greift Täter an ------
+	// ------ Wache beendet Kampf, greift TÐ´ter an ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_GuardStopsFight)
 	{
 		if (other.guild == GIL_SLD)
@@ -212,7 +212,7 @@ func void B_Say_AttackEnd()
 		}
 		else
 		{
-			B_Say (self, other, "$THEREISNOFIGHTINGHERE");		//Hier wird nicht gekämpft, klar!? Lass dir das eine Lehre sein!
+			B_Say (self, other, "$THEREISNOFIGHTINGHERE");		//Hier wird nicht gekÐ´mpft, klar!? Lass dir das eine Lehre sein!
 		};
 		return;
 	};

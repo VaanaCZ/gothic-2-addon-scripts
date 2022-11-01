@@ -1,7 +1,7 @@
 // *****************************************************
 // B_InitGuildAttitudes
 // --------------------
-// WICHTIG für ALLE Init-Funktionen in der Startup.d !!!
+// WICHTIG fÑŒr ALLE Init-Funktionen in der Startup.d !!!
 // *****************************************************
 
 func void B_InitGuildAttitudes ()

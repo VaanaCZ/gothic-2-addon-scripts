@@ -66,7 +66,7 @@ INSTANCE DIA_Gaertner_Job(C_INFO)
 	condition	= DIA_Gaertner_Job_Condition;
 	information	= DIA_Gaertner_Job_Info;
 	permanent	= FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Gaertner_Job_Condition()
@@ -76,13 +76,13 @@ FUNC INT DIA_Gaertner_Job_Condition()
 
 FUNC VOID DIA_Gaertner_Job_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Job_15_00"); //Что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //А ты как думаешь? Я садовник и ухаживаю за этим садом.
-	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //Ты, похоже, вполне доволен жизнью?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Да, и хотелось бы, чтобы все так и оставалось подольше.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //Когда-то меня даже хотели отправить в колонию за то, что я прикончил одного парня.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Но Лариусу, губернатору, нужен был садовник, и меня оставили здесь.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Со временем этот сад стал моим домом. И я вполне доволен этим.
+	AI_Output (other,self ,"DIA_Gaertner_Job_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //Рђ С‚С‹ РєР°Рє РґСѓРјР°РµС€СЊ? РЇ СЃР°РґРѕРІРЅРёРє Рё СѓС…Р°Р¶РёРІР°СЋ Р·Р° СЌС‚РёРј СЃР°РґРѕРј.
+	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //РўС‹, РїРѕС…РѕР¶Рµ, РІРїРѕР»РЅРµ РґРѕРІРѕР»РµРЅ Р¶РёР·РЅСЊСЋ?
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Р”Р°, Рё С…РѕС‚РµР»РѕСЃСЊ Р±С‹, С‡С‚РѕР±С‹ РІСЃРµ С‚Р°Рє Рё РѕСЃС‚Р°РІР°Р»РѕСЃСЊ РїРѕРґРѕР»СЊС€Рµ.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //РљРѕРіРґР°-С‚Рѕ РјРµРЅСЏ РґР°Р¶Рµ С…РѕС‚РµР»Рё РѕС‚РїСЂР°РІРёС‚СЊ РІ РєРѕР»РѕРЅРёСЋ Р·Р° С‚Рѕ, С‡С‚Рѕ СЏ РїСЂРёРєРѕРЅС‡РёР» РѕРґРЅРѕРіРѕ РїР°СЂРЅСЏ.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //РќРѕ Р›Р°СЂРёСѓСЃСѓ, РіСѓР±РµСЂРЅР°С‚РѕСЂСѓ, РЅСѓР¶РµРЅ Р±С‹Р» СЃР°РґРѕРІРЅРёРє, Рё РјРµРЅСЏ РѕСЃС‚Р°РІРёР»Рё Р·РґРµСЃСЊ.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //РЎРѕ РІСЂРµРјРµРЅРµРј СЌС‚РѕС‚ СЃР°Рґ СЃС‚Р°Р» РјРѕРёРј РґРѕРјРѕРј. Р СЏ РІРїРѕР»РЅРµ РґРѕРІРѕР»РµРЅ СЌС‚РёРј.
 };
 //*************************************************************
 //		
@@ -94,7 +94,7 @@ INSTANCE DIA_Gaertner_Plants(C_INFO)
 	condition	= DIA_Gaertner_Plants_Condition;
 	information	= DIA_Gaertner_Plants_Info;
 	permanent	= FALSE;
-	description = "Ты выращиваешь какие-нибудь травы?";
+	description = "РўС‹ РІС‹СЂР°С‰РёРІР°РµС€СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ С‚СЂР°РІС‹?";
 };                       
 
 FUNC INT DIA_Gaertner_Plants_Condition()
@@ -106,12 +106,12 @@ FUNC INT DIA_Gaertner_Plants_Condition()
 };
 FUNC VOID DIA_Gaertner_Plants_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //Ты выращиваешь какие-нибудь травы?
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Да, немного. Я выращиваю огненную траву и огненную крапиву. Также я пытался сажать болотную траву, но она не приживается здесь.
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Я только что собрал выращенное. Так что, если ты хочешь что-то купить...
+	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //РўС‹ РІС‹СЂР°С‰РёРІР°РµС€СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ С‚СЂР°РІС‹?
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Р”Р°, РЅРµРјРЅРѕРіРѕ. РЇ РІС‹СЂР°С‰РёРІР°СЋ РѕРіРЅРµРЅРЅСѓСЋ С‚СЂР°РІСѓ Рё РѕРіРЅРµРЅРЅСѓСЋ РєСЂР°РїРёРІСѓ. РўР°РєР¶Рµ СЏ РїС‹С‚Р°Р»СЃСЏ СЃР°Р¶Р°С‚СЊ Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ, РЅРѕ РѕРЅР° РЅРµ РїСЂРёР¶РёРІР°РµС‚СЃСЏ Р·РґРµСЃСЊ.
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //РЇ С‚РѕР»СЊРєРѕ С‡С‚Рѕ СЃРѕР±СЂР°Р» РІС‹СЂР°С‰РµРЅРЅРѕРµ. РўР°Рє С‡С‚Рѕ, РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-С‚Рѕ РєСѓРїРёС‚СЊ...
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Садовник губернатора может продать мне кое-какие растения.");
+	B_LogEntry (Topic_CityTrader,"РЎР°РґРѕРІРЅРёРє РіСѓР±РµСЂРЅР°С‚РѕСЂР° РјРѕР¶РµС‚ РїСЂРѕРґР°С‚СЊ РјРЅРµ РєРѕРµ-РєР°РєРёРµ СЂР°СЃС‚РµРЅРёСЏ.");
 };
 //*************************************************************
 //		Trade
@@ -123,7 +123,7 @@ INSTANCE DIA_Gaertner_Trade(C_INFO)
 	condition	= DIA_Gaertner_Trade_Condition;
 	information	= DIA_Gaertner_Trade_Info;
 	permanent	= TRUE;
-	description = "Покажи мне свои товары.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade		= TRUE;
 };                       
 
@@ -137,7 +137,7 @@ FUNC INT DIA_Gaertner_Trade_Condition()
 FUNC VOID DIA_Gaertner_Trade_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other,self ,"DIA_Gaertner_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other,self ,"DIA_Gaertner_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 //*************************************************************
 //		Krautabak
@@ -149,7 +149,7 @@ INSTANCE DIA_Gaertner_Krautabak(C_INFO)
 	condition	= DIA_Gaertner_Krautabak_Condition;
 	information	= DIA_Gaertner_Krautabak_Info;
 	permanent	= FALSE;
-	description = "У меня есть травяной табак.";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ С‚СЂР°РІСЏРЅРѕР№ С‚Р°Р±Р°Рє.";
 };                       
 
 FUNC INT DIA_Gaertner_Krautabak_Condition()
@@ -162,8 +162,8 @@ FUNC INT DIA_Gaertner_Krautabak_Condition()
 };
 FUNC VOID DIA_Gaertner_Krautabak_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //У меня есть травяной табак. Хочешь затянуться?
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Даже не знаю... А, ладно, давай. Покурю немного.
+	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ С‚СЂР°РІСЏРЅРѕР№ С‚Р°Р±Р°Рє. РҐРѕС‡РµС€СЊ Р·Р°С‚СЏРЅСѓС‚СЊСЃСЏ?
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Р”Р°Р¶Рµ РЅРµ Р·РЅР°СЋ... Рђ, Р»Р°РґРЅРѕ, РґР°РІР°Р№. РџРѕРєСѓСЂСЋ РЅРµРјРЅРѕРіРѕ.
 	
 	B_GiveInvItems (other, self, ItMi_SumpfTabak,1);
 	Npc_RemoveInvItems (self,ItMi_SumpfTabak,1);
@@ -171,9 +171,9 @@ FUNC VOID DIA_Gaertner_Krautabak_Info()
 	CreateInvItems (self, Itmi_Joint,1);
 	B_UseItem (self, itmi_Joint);
 	AI_PlayAni (self, "T_MAGRUN_2_HEASHOOT");
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_02"); //Хха... кха-кха....
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_02"); //РҐС…Р°... РєС…Р°-РєС…Р°....
 	AI_PlayAni (self, "T_HEASHOOT_2_STAND");
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //Ядреная штука. Что-то мне расхотелось курить это.
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //РЇРґСЂРµРЅР°СЏ С€С‚СѓРєР°. Р§С‚Рѕ-С‚Рѕ РјРЅРµ СЂР°СЃС…РѕС‚РµР»РѕСЃСЊ РєСѓСЂРёС‚СЊ СЌС‚Рѕ.
 	
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -187,7 +187,7 @@ INSTANCE DIA_Gaertner_Sign(C_INFO)
 	condition	= DIA_Gaertner_Sign_Condition;
 	information	= DIA_Gaertner_Sign_Info;
 	permanent	= FALSE;
-	description = "(Показать сигнал воров)";
+	description = "(РџРѕРєР°Р·Р°С‚СЊ СЃРёРіРЅР°Р» РІРѕСЂРѕРІ)";
 };                       
 
 FUNC INT DIA_Gaertner_Sign_Condition()
@@ -200,8 +200,8 @@ FUNC INT DIA_Gaertner_Sign_Condition()
 FUNC VOID DIA_Gaertner_Sign_Info()
 {	
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //Теперь ты один из нас. И я могу подкинуть тебе кое-какую информацию.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //В некоторых домах здесь есть секретные панели, которые открываются скрытыми выключателями.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //Люди хранят там самые ценные свои вещи.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //РўРµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ. Р СЏ РјРѕРіСѓ РїРѕРґРєРёРЅСѓС‚СЊ С‚РµР±Рµ РєРѕРµ-РєР°РєСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //Р’ РЅРµРєРѕС‚РѕСЂС‹С… РґРѕРјР°С… Р·РґРµСЃСЊ РµСЃС‚СЊ СЃРµРєСЂРµС‚РЅС‹Рµ РїР°РЅРµР»Рё, РєРѕС‚РѕСЂС‹Рµ РѕС‚РєСЂС‹РІР°СЋС‚СЃСЏ СЃРєСЂС‹С‚С‹РјРё РІС‹РєР»СЋС‡Р°С‚РµР»СЏРјРё.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //Р›СЋРґРё С…СЂР°РЅСЏС‚ С‚Р°Рј СЃР°РјС‹Рµ С†РµРЅРЅС‹Рµ СЃРІРѕРё РІРµС‰Рё.
 };
 

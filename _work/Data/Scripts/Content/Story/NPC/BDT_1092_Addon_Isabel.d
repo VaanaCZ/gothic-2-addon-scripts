@@ -1,7 +1,7 @@
 instance BDT_1092_Addon_Isabel (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Изабель"; 
+	name 		= "РР·Р°Р±РµР»СЊ"; 
 	guild 		= GIL_BDT;
 	id 			= 1092;
 	voice 		= 17;

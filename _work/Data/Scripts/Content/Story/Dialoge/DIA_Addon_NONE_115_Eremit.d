@@ -41,13 +41,13 @@ func int DIA_Addon_Eremit_Hello_Condition ()
 };
 func void DIA_Addon_Eremit_Hello_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_00"); //Что ты здесь делаешь?
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_00"); //Что я здесь делаю?! А что ТЫ, черт возьми, здесь делаешь?
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_01"); //Я уехал в самую безлюдную часть острова, потому что искал покой!
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_02"); //Гражданская война, бандитские набеги, нападения орков...
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_03"); //Мне надоело все это безумие, так что я решил оставить его за своей спиной.
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_04"); //Здесь, конечно, тоже встречаются орки, но совсем немного.
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_05"); //А вот люди, хвала Инносу, здесь не появляются... вернее, до сих пор не появлялись.
+	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_00"); //Р§С‚Рѕ СЏ Р·РґРµСЃСЊ РґРµР»Р°СЋ?! Рђ С‡С‚Рѕ РўР«, С‡РµСЂС‚ РІРѕР·СЊРјРё, Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_01"); //РЇ СѓРµС…Р°Р» РІ СЃР°РјСѓСЋ Р±РµР·Р»СЋРґРЅСѓСЋ С‡Р°СЃС‚СЊ РѕСЃС‚СЂРѕРІР°, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РёСЃРєР°Р» РїРѕРєРѕР№!
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_02"); //Р“СЂР°Р¶РґР°РЅСЃРєР°СЏ РІРѕР№РЅР°, Р±Р°РЅРґРёС‚СЃРєРёРµ РЅР°Р±РµРіРё, РЅР°РїР°РґРµРЅРёСЏ РѕСЂРєРѕРІ...
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_03"); //РњРЅРµ РЅР°РґРѕРµР»Рѕ РІСЃРµ СЌС‚Рѕ Р±РµР·СѓРјРёРµ, С‚Р°Рє С‡С‚Рѕ СЏ СЂРµС€РёР» РѕСЃС‚Р°РІРёС‚СЊ РµРіРѕ Р·Р° СЃРІРѕРµР№ СЃРїРёРЅРѕР№.
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_04"); //Р—РґРµСЃСЊ, РєРѕРЅРµС‡РЅРѕ, С‚РѕР¶Рµ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ РѕСЂРєРё, РЅРѕ СЃРѕРІСЃРµРј РЅРµРјРЅРѕРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_05"); //Рђ РІРѕС‚ Р»СЋРґРё, С…РІР°Р»Р° РРЅРЅРѕСЃСѓ, Р·РґРµСЃСЊ РЅРµ РїРѕСЏРІР»СЏСЋС‚СЃСЏ... РІРµСЂРЅРµРµ, РґРѕ СЃРёС… РїРѕСЂ РЅРµ РїРѕСЏРІР»СЏР»РёСЃСЊ.
 };
 
 // ********************************************************
@@ -60,7 +60,7 @@ instance DIA_Addon_Eremit_SeekTafeln (C_INFO)
 	condition	= DIA_Addon_Eremit_SeekTafeln_Condition;
 	information	= DIA_Addon_Eremit_SeekTafeln_Info;
 
-	description	= "Я ищу каменные таблички...";
+	description	= "РЇ РёС‰Сѓ РєР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё...";
 };
 func int DIA_Addon_Eremit_SeekTafeln_Condition ()
 {
@@ -68,10 +68,10 @@ func int DIA_Addon_Eremit_SeekTafeln_Condition ()
 };
 func void DIA_Addon_Eremit_SeekTafeln_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_02"); //Я ищу каменные таблички. Тебе они не попадались?
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_06"); //Да, у меня есть пара табличек. Но я тебе их не отдам!
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_07"); //Это единственное, что у меня есть почитать.
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_08"); //Конечно, полностью написанное на них я не понимаю, но некоторые тексты уже расшифровал.
+	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_02"); //РЇ РёС‰Сѓ РєР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё. РўРµР±Рµ РѕРЅРё РЅРµ РїРѕРїР°РґР°Р»РёСЃСЊ?
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_06"); //Р”Р°, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїР°СЂР° С‚Р°Р±Р»РёС‡РµРє. РќРѕ СЏ С‚РµР±Рµ РёС… РЅРµ РѕС‚РґР°Рј!
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_07"); //Р­С‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїРѕС‡РёС‚Р°С‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_08"); //РљРѕРЅРµС‡РЅРѕ, РїРѕР»РЅРѕСЃС‚СЊСЋ РЅР°РїРёСЃР°РЅРЅРѕРµ РЅР° РЅРёС… СЏ РЅРµ РїРѕРЅРёРјР°СЋ, РЅРѕ РЅРµРєРѕС‚РѕСЂС‹Рµ С‚РµРєСЃС‚С‹ СѓР¶Рµ СЂР°СЃС€РёС„СЂРѕРІР°Р».
 };
 
 // ********************************************************
@@ -86,7 +86,7 @@ instance DIA_Addon_Eremit_Teach (C_INFO)
 	condition	= DIA_Addon_Eremit_Teach_Condition;
 	information	= DIA_Addon_Eremit_Teach_Info;
 	permanent 	= TRUE;
-	description = "Насчет каменных табличек...";
+	description = "РќР°СЃС‡РµС‚ РєР°РјРµРЅРЅС‹С… С‚Р°Р±Р»РёС‡РµРє...";
 };
 func int DIA_Addon_Eremit_Teach_Condition ()
 {
@@ -99,11 +99,11 @@ func int DIA_Addon_Eremit_Teach_Condition ()
 };
 func void DIA_Addon_Eremit_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_03"); //Насчет каменных табличек...
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_25"); //Ты хочешь, чтобы я научил тебя их читать?
+	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_03"); //РќР°СЃС‡РµС‚ РєР°РјРµРЅРЅС‹С… С‚Р°Р±Р»РёС‡РµРє...
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_25"); //РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РЅР°СѓС‡РёР» С‚РµР±СЏ РёС… С‡РёС‚Р°С‚СЊ?
 	if (MIS_Eremit_Klamotten != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_26"); //(быстро) Но свои я тебе не отдам! Сам ищи себе таблички!
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_26"); //(Р±С‹СЃС‚СЂРѕ) РќРѕ СЃРІРѕРё СЏ С‚РµР±Рµ РЅРµ РѕС‚РґР°Рј! РЎР°Рј РёС‰Рё СЃРµР±Рµ С‚Р°Р±Р»РёС‡РєРё!
 	};
 
 	Info_ClearChoices (DIA_Addon_Eremit_Teach);
@@ -130,8 +130,8 @@ func void DIA_Addon_Eremit_Teach_Info ()
 // ---------------------------------------------------------------
 	func void B_Addon_Eremit_TeachLanguage()
 	{	
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_27"); //Вообще это все довольно просто. 'G' читается как 'O', 'T' - как 'Х', а 'I' - как 'Ц'. 
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_28"); //Если ты это понял, то и все остальное поймешь довольно быстро...
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_27"); //Р’РѕРѕР±С‰Рµ СЌС‚Рѕ РІСЃРµ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ. 'G' С‡РёС‚Р°РµС‚СЃСЏ РєР°Рє 'O', 'T' - РєР°Рє 'РҐ', Р° 'I' - РєР°Рє 'Р¦'. 
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_28"); //Р•СЃР»Рё С‚С‹ СЌС‚Рѕ РїРѕРЅСЏР», С‚Рѕ Рё РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ РїРѕР№РјРµС€СЊ РґРѕРІРѕР»СЊРЅРѕ Р±С‹СЃС‚СЂРѕ...
 		
 		/*
 		
@@ -162,7 +162,7 @@ func void DIA_Addon_Eremit_Teach_Yes()
 {
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_3] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_29"); //Не думаю, что могу еще чему-то тебя научить.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_29"); //РќРµ РґСѓРјР°СЋ, С‡С‚Рѕ РјРѕРіСѓ РµС‰Рµ С‡РµРјСѓ-С‚Рѕ С‚РµР±СЏ РЅР°СѓС‡РёС‚СЊ.
 		Eremit_Teach_Once = TRUE;
 	}
 	else if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_2] == TRUE)
@@ -198,7 +198,7 @@ instance DIA_Addon_Eremit_Klamotten (C_INFO)
 	condition	= DIA_Addon_Eremit_Klamotten_Condition;
 	information	= DIA_Addon_Eremit_Klamotten_Info;
 	permanent 	= TRUE;
-	description = "Я принес тебе кое-какую одежду...";
+	description = "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРѕРµ-РєР°РєСѓСЋ РѕРґРµР¶РґСѓ...";
 };
 func int DIA_Addon_Eremit_Klamotten_Condition ()
 {
@@ -209,159 +209,159 @@ func int DIA_Addon_Eremit_Klamotten_Condition ()
 };
 func void DIA_Addon_Eremit_Klamotten_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_01"); //Я принес тебе кое-какую одежду...
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_19"); //Правда? Давай ее мне, я хочу ее примерить!
+	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_01"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРѕРµ-РєР°РєСѓСЋ РѕРґРµР¶РґСѓ...
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_19"); //РџСЂР°РІРґР°? Р”Р°РІР°Р№ РµРµ РјРЅРµ, СЏ С…РѕС‡Сѓ РµРµ РїСЂРёРјРµСЂРёС‚СЊ!
 	
 	Info_ClearChoices (DIA_Addon_Eremit_Klamotten);
 	Info_AddChoice (DIA_Addon_Eremit_Klamotten, DIALOG_BACK, DIA_Addon_Eremit_Klamotten_BACK);
 	if (Npc_HasItems (other, ITAR_PIR_L_Addon) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать легкие доспехи пирата", DIA_Addon_Eremit_Klamotten_PIR_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ Р»РµРіРєРёРµ РґРѕСЃРїРµС…Рё РїРёСЂР°С‚Р°", DIA_Addon_Eremit_Klamotten_PIR_L);
 	};
 	if (Npc_HasItems (other, ITAR_PIR_M_Addon) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать средние доспехи пирата", DIA_Addon_Eremit_Klamotten_PIR_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ СЃСЂРµРґРЅРёРµ РґРѕСЃРїРµС…Рё РїРёСЂР°С‚Р°", DIA_Addon_Eremit_Klamotten_PIR_M);
 	};
 	if (Npc_HasItems (other, ITAR_PIR_H_Addon) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать доспехи капитана пиратов", DIA_Addon_Eremit_Klamotten_PIR_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РґРѕСЃРїРµС…Рё РєР°РїРёС‚Р°РЅР° РїРёСЂР°С‚РѕРІ", DIA_Addon_Eremit_Klamotten_PIR_H);
 	};
 	//if (Npc_HasItems (other, ITAR_Thorus_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Gardistenrьstung geben", DIA_Addon_Eremit_Klamotten_Thorus);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "GardistenrСЊstung geben", DIA_Addon_Eremit_Klamotten_Thorus);
 	//};
 	//if (Npc_HasItems (other, ITAR_OreBaron_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Erzbaronrьstung geben", DIA_Addon_Eremit_Klamotten_OreBaron);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "ErzbaronrСЊstung geben", DIA_Addon_Eremit_Klamotten_OreBaron);
 	//};
 	//if (Npc_HasItems (other, ITAR_Bloodwyn_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Bloodwyn's Rьstung geben", DIA_Addon_Eremit_Klamotten_Bloodwyn);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Bloodwyn's RСЊstung geben", DIA_Addon_Eremit_Klamotten_Bloodwyn);
 	//};
 	//if (Npc_HasItems (other, ITAR_Raven_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Raven's Rьstung geben", DIA_Addon_Eremit_Klamotten_Raven);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Raven's RСЊstung geben", DIA_Addon_Eremit_Klamotten_Raven);
 	//};
 	if (Npc_HasItems (other, ITAR_RANGER_Addon) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать доспехи 'Кольца воды'", DIA_Addon_Eremit_Klamotten_Ranger);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РґРѕСЃРїРµС…Рё 'РљРѕР»СЊС†Р° РІРѕРґС‹'", DIA_Addon_Eremit_Klamotten_Ranger);
 	};
 	if (Npc_HasItems (other, ITAR_KDW_L_Addon) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать легкую мантию 'Кольца воды'", DIA_Addon_Eremit_Klamotten_KDW_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ Р»РµРіРєСѓСЋ РјР°РЅС‚РёСЋ 'РљРѕР»СЊС†Р° РІРѕРґС‹'", DIA_Addon_Eremit_Klamotten_KDW_L);
 	};
 	if (Npc_HasItems (other, ITAR_KDW_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать тяжелую мантию 'Кольца воды'", DIA_Addon_Eremit_Klamotten_KDW_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ С‚СЏР¶РµР»СѓСЋ РјР°РЅС‚РёСЋ 'РљРѕР»СЊС†Р° РІРѕРґС‹'", DIA_Addon_Eremit_Klamotten_KDW_H);
 	};
 	if (Npc_HasItems (other, ITAR_Governor) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать дублет губернатора", DIA_Addon_Eremit_Klamotten_Governor);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РґСѓР±Р»РµС‚ РіСѓР±РµСЂРЅР°С‚РѕСЂР°", DIA_Addon_Eremit_Klamotten_Governor);
 	};
 	if (Npc_HasItems (other, ITAR_JUDGE) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать мантию судьи", DIA_Addon_Eremit_Klamotten_Judge);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РјР°РЅС‚РёСЋ СЃСѓРґСЊРё", DIA_Addon_Eremit_Klamotten_Judge);
 	};
 	if (Npc_HasItems (other, ITAR_SMITH) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать одежду кузнеца", DIA_Addon_Eremit_Klamotten_Smith);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РѕРґРµР¶РґСѓ РєСѓР·РЅРµС†Р°", DIA_Addon_Eremit_Klamotten_Smith);
 	};
 	if (Npc_HasItems (other, ITAR_BARKEEPER) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать одежду лендлорда", DIA_Addon_Eremit_Klamotten_Barkeeper);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РѕРґРµР¶РґСѓ Р»РµРЅРґР»РѕСЂРґР°", DIA_Addon_Eremit_Klamotten_Barkeeper);
 	};
 	if (Npc_HasItems (other, ITAR_VLK_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать одежду горожанина I", DIA_Addon_Eremit_Klamotten_VLK_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РѕРґРµР¶РґСѓ РіРѕСЂРѕР¶Р°РЅРёРЅР° I", DIA_Addon_Eremit_Klamotten_VLK_L);
 	};
 	if (Npc_HasItems (other, ITAR_VLK_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать одежду горожанина II", DIA_Addon_Eremit_Klamotten_VLK_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РѕРґРµР¶РґСѓ РіРѕСЂРѕР¶Р°РЅРёРЅР° II", DIA_Addon_Eremit_Klamotten_VLK_M);
 	};
 	if (Npc_HasItems (other, ITAR_VLK_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать одежду горожанина III", DIA_Addon_Eremit_Klamotten_VLK_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РѕРґРµР¶РґСѓ РіРѕСЂРѕР¶Р°РЅРёРЅР° III", DIA_Addon_Eremit_Klamotten_VLK_H);
 	};
 	if (Npc_HasItems (other, ITAR_VlkBabe_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать одеяние горожанина I", DIA_Addon_Eremit_Klamotten_VlkBabe_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РѕРґРµСЏРЅРёРµ РіРѕСЂРѕР¶Р°РЅРёРЅР° I", DIA_Addon_Eremit_Klamotten_VlkBabe_L);
 	};
 	if (Npc_HasItems (other, ITAR_VlkBabe_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать одеяние горожанина II", DIA_Addon_Eremit_Klamotten_VlkBabe_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РѕРґРµСЏРЅРёРµ РіРѕСЂРѕР¶Р°РЅРёРЅР° II", DIA_Addon_Eremit_Klamotten_VlkBabe_M);
 	};
 	if (Npc_HasItems (other, ITAR_VlkBabe_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать одеяние горожанина III", DIA_Addon_Eremit_Klamotten_VlkBabe_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РѕРґРµСЏРЅРёРµ РіРѕСЂРѕР¶Р°РЅРёРЅР° III", DIA_Addon_Eremit_Klamotten_VlkBabe_H);
 	};
 	/*
 	if (Npc_HasItems (other, ITAR_MIL_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Milizrьstung geben", DIA_Addon_Eremit_Klamotten_MIL_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte MilizrСЊstung geben", DIA_Addon_Eremit_Klamotten_MIL_L);
 	};
 	if (Npc_HasItems (other, ITAR_MIL_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Milizrьstung geben", DIA_Addon_Eremit_Klamotten_MIL_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere MilizrСЊstung geben", DIA_Addon_Eremit_Klamotten_MIL_M);
 	};
 	if (Npc_HasItems (other, ITAR_PAL_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Paladinrьstung geben", DIA_Addon_Eremit_Klamotten_PAL_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere PaladinrСЊstung geben", DIA_Addon_Eremit_Klamotten_PAL_M);
 	};
 	if (Npc_HasItems (other, ITAR_PAL_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Paladinrьstung geben", DIA_Addon_Eremit_Klamotten_PAL_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere PaladinrСЊstung geben", DIA_Addon_Eremit_Klamotten_PAL_H);
 	};
 	*/
 	if (Npc_HasItems (other, ITAR_PAL_SKEL) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать поношенные доспехи паладина", DIA_Addon_Eremit_Klamotten_PAL_SKEL);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РїРѕРЅРѕС€РµРЅРЅС‹Рµ РґРѕСЃРїРµС…Рё РїР°Р»Р°РґРёРЅР°", DIA_Addon_Eremit_Klamotten_PAL_SKEL);
 	};
 	if (Npc_HasItems (other, ITAR_BAU_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать легкую одежду фермера", DIA_Addon_Eremit_Klamotten_BAU_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ Р»РµРіРєСѓСЋ РѕРґРµР¶РґСѓ С„РµСЂРјРµСЂР°", DIA_Addon_Eremit_Klamotten_BAU_L);
 	};
 	if (Npc_HasItems (other, ITAR_BAU_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать среднюю одежду фермера", DIA_Addon_Eremit_Klamotten_BAU_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ СЃСЂРµРґРЅСЋСЋ РѕРґРµР¶РґСѓ С„РµСЂРјРµСЂР°", DIA_Addon_Eremit_Klamotten_BAU_M);
 	};
 	if (Npc_HasItems (other, ITAR_BauBabe_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать легкую фермерскую одежду", DIA_Addon_Eremit_Klamotten_BauBabe_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ Р»РµРіРєСѓСЋ С„РµСЂРјРµСЂСЃРєСѓСЋ РѕРґРµР¶РґСѓ", DIA_Addon_Eremit_Klamotten_BauBabe_L);
 	};
 	if (Npc_HasItems (other, ITAR_BauBabe_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать среднюю фермерскую одежду", DIA_Addon_Eremit_Klamotten_BauBabe_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ СЃСЂРµРґРЅСЋСЋ С„РµСЂРјРµСЂСЃРєСѓСЋ РѕРґРµР¶РґСѓ", DIA_Addon_Eremit_Klamotten_BauBabe_M);
 	};
 	/*
 	if (Npc_HasItems (other, ITAR_SLD_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Sцldnerrьstung geben", DIA_Addon_Eremit_Klamotten_SLD_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte SС†ldnerrСЊstung geben", DIA_Addon_Eremit_Klamotten_SLD_L);
 	};
 	if (Npc_HasItems (other, ITAR_SLD_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Sцldnerrьstung geben", DIA_Addon_Eremit_Klamotten_SLD_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere SС†ldnerrСЊstung geben", DIA_Addon_Eremit_Klamotten_SLD_M);
 	};
 	if (Npc_HasItems (other, ITAR_SLD_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Sцldnerrьstung geben", DIA_Addon_Eremit_Klamotten_SLD_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere SС†ldnerrСЊstung geben", DIA_Addon_Eremit_Klamotten_SLD_H);
 	};
 	*/
 	if (Npc_HasItems (other, ITAR_DJG_Crawler) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать доспехи из брони краулеров", DIA_Addon_Eremit_Klamotten_DJG_Crawler);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РґРѕСЃРїРµС…Рё РёР· Р±СЂРѕРЅРё РєСЂР°СѓР»РµСЂРѕРІ", DIA_Addon_Eremit_Klamotten_DJG_Crawler);
 	};
 	/*
 	if (Npc_HasItems (other, ITAR_DJG_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Drachenjдgerrьstung geben", DIA_Addon_Eremit_Klamotten_DJG_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte DrachenjРґgerrСЊstung geben", DIA_Addon_Eremit_Klamotten_DJG_L);
 	};
 	if (Npc_HasItems (other, ITAR_DJG_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Drachenjдgerrьstung geben", DIA_Addon_Eremit_Klamotten_DJG_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere DrachenjРґgerrСЊstung geben", DIA_Addon_Eremit_Klamotten_DJG_M);
 	};
 	if (Npc_HasItems (other, ITAR_DJG_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Drachenjдgerrьstung geben", DIA_Addon_Eremit_Klamotten_DJG_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere DrachenjРґgerrСЊstung geben", DIA_Addon_Eremit_Klamotten_DJG_H);
 	};
 	if (Npc_HasItems (other, ITAR_NOV_L) > 0)
 	{
@@ -378,49 +378,49 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	*/
 	if (Npc_HasItems (other, ITAR_Leather_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать кожаные доспехи", DIA_Addon_Eremit_Klamotten_Leather);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РєРѕР¶Р°РЅС‹Рµ РґРѕСЃРїРµС…Рё", DIA_Addon_Eremit_Klamotten_Leather);
 	};
 	//if (Npc_HasItems (other, ITAR_BDT_M) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Banditenrьstung geben", DIA_Addon_Eremit_Klamotten_BDT_M);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere BanditenrСЊstung geben", DIA_Addon_Eremit_Klamotten_BDT_M);
 	//};
 	//if (Npc_HasItems (other, ITAR_BDT_H) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Banditenrьstung geben", DIA_Addon_Eremit_Klamotten_BDT_H);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere BanditenrСЊstung geben", DIA_Addon_Eremit_Klamotten_BDT_H);
 	//};
 	if (Npc_HasItems (other, ITAR_XARDAS) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать мантию черной магии", DIA_Addon_Eremit_Klamotten_Xardas);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РјР°РЅС‚РёСЋ С‡РµСЂРЅРѕР№ РјР°РіРёРё", DIA_Addon_Eremit_Klamotten_Xardas);
 	};
 	if (Npc_HasItems (other, ITAR_Lester) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать робу Лестера", DIA_Addon_Eremit_Klamotten_Lester);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ СЂРѕР±Сѓ Р›РµСЃС‚РµСЂР°", DIA_Addon_Eremit_Klamotten_Lester);
 	};
 	if (Npc_HasItems (other, ITAR_Diego) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать доспехи Диего", DIA_Addon_Eremit_Klamotten_Diego);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РґРѕСЃРїРµС…Рё Р”РёРµРіРѕ", DIA_Addon_Eremit_Klamotten_Diego);
 	};
 	if (Npc_HasItems (other, ITAR_CorAngar) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать доспехи Ангара", DIA_Addon_Eremit_Klamotten_CorAngar);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РґРѕСЃРїРµС…Рё РђРЅРіР°СЂР°", DIA_Addon_Eremit_Klamotten_CorAngar);
 	};
 	if (Npc_HasItems (other, ITAR_Prisoner) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать штаны рудокопа", DIA_Addon_Eremit_Klamotten_Prisoner);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ С€С‚Р°РЅС‹ СЂСѓРґРѕРєРѕРїР°", DIA_Addon_Eremit_Klamotten_Prisoner);
 	};
 	if (Npc_HasItems (other, ITAR_Dementor) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Дать мантию Ищущих", DIA_Addon_Eremit_Klamotten_Dementor);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Р”Р°С‚СЊ РјР°РЅС‚РёСЋ РС‰СѓС‰РёС…", DIA_Addon_Eremit_Klamotten_Dementor);
 	};
 };
 // -------------------------------------------------------------
 	func void B_Eremit_Tatsache()
 	{
 		AI_EquipBestArmor (self);
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_20"); //Подходит!
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_21"); //Так-так, чем же мне тебе заплатить? Все золото я отдал пиратам за то, что они меня сюда привезли.
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_22"); //Все, что я могу тебе отдать, это эти старые каменные таблички. 
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_23"); //Забирай. Я поищу себе новые.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_20"); //РџРѕРґС…РѕРґРёС‚!
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_21"); //РўР°Рє-С‚Р°Рє, С‡РµРј Р¶Рµ РјРЅРµ С‚РµР±Рµ Р·Р°РїР»Р°С‚РёС‚СЊ? Р’СЃРµ Р·РѕР»РѕС‚Рѕ СЏ РѕС‚РґР°Р» РїРёСЂР°С‚Р°Рј Р·Р° С‚Рѕ, С‡С‚Рѕ РѕРЅРё РјРµРЅСЏ СЃСЋРґР° РїСЂРёРІРµР·Р»Рё.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_22"); //Р’СЃРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ С‚РµР±Рµ РѕС‚РґР°С‚СЊ, СЌС‚Рѕ СЌС‚Рё СЃС‚Р°СЂС‹Рµ РєР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё. 
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_23"); //Р—Р°Р±РёСЂР°Р№. РЇ РїРѕРёС‰Сѓ СЃРµР±Рµ РЅРѕРІС‹Рµ.
 		
 		B_GiveInvItems (self,other,ItWr_DexStonePlate3_Addon,1);
 		B_GiveInvItems (self,other,ItWr_StonePlateCommon_Addon ,1);     
@@ -434,7 +434,7 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 
 func void DIA_Addon_Eremit_Klamotten_BACK()
 {
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_24"); //Ну вот... Сначала ты меня обнадежил, а потом... (вздыхает)
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_24"); //РќСѓ РІРѕС‚... РЎРЅР°С‡Р°Р»Р° С‚С‹ РјРµРЅСЏ РѕР±РЅР°РґРµР¶РёР», Р° РїРѕС‚РѕРј... (РІР·РґС‹С…Р°РµС‚)
 	Info_ClearChoices (DIA_Addon_Eremit_Klamotten);
 };
 func void DIA_Addon_Eremit_Klamotten_PIR_L()
@@ -690,7 +690,7 @@ instance DIA_Addon_Eremit_PERM (C_INFO)
 	condition	= DIA_Addon_Eremit_PERM_Condition;
 	information	= DIA_Addon_Eremit_PERM_Info;
 	permanent 	= TRUE;
-	description = "Как ты здесь живешь?";
+	description = "РљР°Рє С‚С‹ Р·РґРµСЃСЊ Р¶РёРІРµС€СЊ?";
 };
 func int DIA_Addon_Eremit_PERM_Condition ()
 {
@@ -698,30 +698,30 @@ func int DIA_Addon_Eremit_PERM_Condition ()
 };
 func void DIA_Addon_Eremit_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_04"); //Как ты здесь живешь?
+	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_04"); //РљР°Рє С‚С‹ Р·РґРµСЃСЊ Р¶РёРІРµС€СЊ?
 	
 	if (MIS_Eremit_Klamotten == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_09"); //(гордо) Я все сделал сам. Дом, оружие, инструменты - все.
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_10"); //Единственное, что я привез с собой, - хорошее настроение...
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_11"); //Иногда, правда...
-		AI_Output (other, self, "DIA_Addon_Eremit_Doppelt_15_01"); //Да? 
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_12"); //Иногда я жалею, что не взял с собой одежду.
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_13"); //Я не умею ни шить, ни дубить кожу...
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_14"); //А ночами в этой части острова бывает довольно холодно.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_09"); //(РіРѕСЂРґРѕ) РЇ РІСЃРµ СЃРґРµР»Р°Р» СЃР°Рј. Р”РѕРј, РѕСЂСѓР¶РёРµ, РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ - РІСЃРµ.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_10"); //Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ СЏ РїСЂРёРІРµР· СЃ СЃРѕР±РѕР№, - С…РѕСЂРѕС€РµРµ РЅР°СЃС‚СЂРѕРµРЅРёРµ...
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_11"); //РРЅРѕРіРґР°, РїСЂР°РІРґР°...
+		AI_Output (other, self, "DIA_Addon_Eremit_Doppelt_15_01"); //Р”Р°? 
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_12"); //РРЅРѕРіРґР° СЏ Р¶Р°Р»РµСЋ, С‡С‚Рѕ РЅРµ РІР·СЏР» СЃ СЃРѕР±РѕР№ РѕРґРµР¶РґСѓ.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_13"); //РЇ РЅРµ СѓРјРµСЋ РЅРё С€РёС‚СЊ, РЅРё РґСѓР±РёС‚СЊ РєРѕР¶Сѓ...
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_14"); //Рђ РЅРѕС‡Р°РјРё РІ СЌС‚РѕР№ С‡Р°СЃС‚Рё РѕСЃС‚СЂРѕРІР° Р±С‹РІР°РµС‚ РґРѕРІРѕР»СЊРЅРѕ С…РѕР»РѕРґРЅРѕ.
 		MIS_Eremit_Klamotten = LOG_RUNNING;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_15"); //Пока я справляюсь... 
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_15"); //РџРѕРєР° СЏ СЃРїСЂР°РІР»СЏСЋСЃСЊ... 
 		if (MIS_Eremit_Klamotten == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_18"); //Но зиму пережить без одежды мне будет довольно сложно...
+			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_18"); //РќРѕ Р·РёРјСѓ РїРµСЂРµР¶РёС‚СЊ Р±РµР· РѕРґРµР¶РґС‹ РјРЅРµ Р±СѓРґРµС‚ РґРѕРІРѕР»СЊРЅРѕ СЃР»РѕР¶РЅРѕ...
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_16"); //Ладно, все равно здесь лучше, чем в городе!
-			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_17"); //Даже без одежды.
+			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_16"); //Р›Р°РґРЅРѕ, РІСЃРµ СЂР°РІРЅРѕ Р·РґРµСЃСЊ Р»СѓС‡С€Рµ, С‡РµРј РІ РіРѕСЂРѕРґРµ!
+			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_17"); //Р”Р°Р¶Рµ Р±РµР· РѕРґРµР¶РґС‹.
 		};
 	};
 };	

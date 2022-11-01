@@ -2,7 +2,7 @@
 // B_CreateAmbientInv
 // ******************
 
-//Hier stehen die Hilfsfunktionen zum befüllen der NPCs
+//Hier stehen die Hilfsfunktionen zum befÑŒllen der NPCs
 
 func void B_CreateAmbientInv_VLK (var int InventorySet)
 {

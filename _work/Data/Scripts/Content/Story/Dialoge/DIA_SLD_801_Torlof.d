@@ -49,7 +49,7 @@ func int DIA_Torlof_HALLO_Condition ()
 
 func void DIA_Torlof_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Torlof_Hallo_01_00"); //(раздраженно) Чего тебе нужно от меня?
+	AI_Output (self, other, "DIA_Torlof_Hallo_01_00"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р§РµРіРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ?
 };
 
 // ************************************************************
@@ -62,7 +62,7 @@ instance DIA_Torlof_WannaJoin (C_INFO)
 	condition	= DIA_Torlof_WannaJoin_Condition;
 	information	= DIA_Torlof_WannaJoin_Info;
 	permanent 	= FALSE;
-	description	= "Я хочу присоединиться к наемникам!";
+	description	= "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј!";
 };
 
 func int DIA_Torlof_WannaJoin_Condition ()
@@ -75,8 +75,8 @@ func int DIA_Torlof_WannaJoin_Condition ()
 
 func void DIA_Torlof_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_WannaJoin_15_00"); //Я хочу присоединиться к наемникам!
-	AI_Output (self, other, "DIA_Torlof_WannaJoin_01_01"); //Ох? И с чего ты взял, что я поддержу тебя в этом начинании?
+	AI_Output (other, self, "DIA_Torlof_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј!
+	AI_Output (self, other, "DIA_Torlof_WannaJoin_01_01"); //РћС…? Р СЃ С‡РµРіРѕ С‚С‹ РІР·СЏР», С‡С‚Рѕ СЏ РїРѕРґРґРµСЂР¶Сѓ С‚РµР±СЏ РІ СЌС‚РѕРј РЅР°С‡РёРЅР°РЅРёРё?
 };
 
 // ************************************************************
@@ -91,7 +91,7 @@ instance DIA_Torlof_Probe (C_INFO)
 	condition	= DIA_Torlof_Probe_Condition;
 	information	= DIA_Torlof_Probe_Info;
 	permanent 	= TRUE;
-	description	= "Испытай меня!";
+	description	= "РСЃРїС‹С‚Р°Р№ РјРµРЅСЏ!";
 };
 
 func int DIA_Torlof_Probe_Condition ()
@@ -106,26 +106,26 @@ func int DIA_Torlof_Probe_Condition ()
 
 func void DIA_Torlof_Probe_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_Probe_15_00"); //Испытай меня!
-	AI_Output (self, other, "DIA_Torlof_Probe_01_01"); //Тебя послал ко мне Ли?
+	AI_Output (other, self, "DIA_Torlof_Probe_15_00"); //РСЃРїС‹С‚Р°Р№ РјРµРЅСЏ!
+	AI_Output (self, other, "DIA_Torlof_Probe_01_01"); //РўРµР±СЏ РїРѕСЃР»Р°Р» РєРѕ РјРЅРµ Р›Рё?
 	
 	if (Npc_KnowsInfo (other, DIA_Lee_OtherSld))
 	{
-		AI_Output (other, self, "DIA_Torlof_Probe_15_02"); //Он сказал, ты поможешь мне.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_03"); //(вздыхает) Хорошо. Тогда слушай. Прежде чем присоединиться к нам, ты должен сделать две вещи.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_04"); //Во-первых, ты должен доказать, что способен решать задачи, которые входят в обязанности наемников. Я должен испытать тебя.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_05"); //И второе: ты должен заслужить уважение других наемников.
+		AI_Output (other, self, "DIA_Torlof_Probe_15_02"); //РћРЅ СЃРєР°Р·Р°Р», С‚С‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ.
+		AI_Output (self, other, "DIA_Torlof_Probe_01_03"); //(РІР·РґС‹С…Р°РµС‚) РҐРѕСЂРѕС€Рѕ. РўРѕРіРґР° СЃР»СѓС€Р°Р№. РџСЂРµР¶РґРµ С‡РµРј РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј, С‚С‹ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ РґРІРµ РІРµС‰Рё.
+		AI_Output (self, other, "DIA_Torlof_Probe_01_04"); //Р’Рѕ-РїРµСЂРІС‹С…, С‚С‹ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ СЃРїРѕСЃРѕР±РµРЅ СЂРµС€Р°С‚СЊ Р·Р°РґР°С‡Рё, РєРѕС‚РѕСЂС‹Рµ РІС…РѕРґСЏС‚ РІ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РЅР°РµРјРЅРёРєРѕРІ. РЇ РґРѕР»Р¶РµРЅ РёСЃРїС‹С‚Р°С‚СЊ С‚РµР±СЏ.
+		AI_Output (self, other, "DIA_Torlof_Probe_01_05"); //Р РІС‚РѕСЂРѕРµ: С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°СЃР»СѓР¶РёС‚СЊ СѓРІР°Р¶РµРЅРёРµ РґСЂСѓРіРёС… РЅР°РµРјРЅРёРєРѕРІ.
 		Torlof_Go = TRUE;
 		Npc_ExchangeRoutine	(self,"Start"); 
 		
 		Log_CreateTopic (TOPIC_BecomeSLD,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_BecomeSLD,LOG_RUNNING);
-		B_LogEntry (TOPIC_BecomeSLD,"Чтобы быть принятым в ряды наемников, я должен пройти испытание Торлофа и заслужить уважение остальных наемников.");
+		B_LogEntry (TOPIC_BecomeSLD,"Р§С‚РѕР±С‹ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚С‹Рј РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ, СЏ РґРѕР»Р¶РµРЅ РїСЂРѕР№С‚Рё РёСЃРїС‹С‚Р°РЅРёРµ РўРѕСЂР»РѕС„Р° Рё Р·Р°СЃР»СѓР¶РёС‚СЊ СѓРІР°Р¶РµРЅРёРµ РѕСЃС‚Р°Р»СЊРЅС‹С… РЅР°РµРјРЅРёРєРѕРІ.");
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Torlof_Probe_15_06"); //Нет.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_07"); //Тогда с чего бы это я должен выслушивать твой бред?
+		AI_Output (other, self, "DIA_Torlof_Probe_15_06"); //РќРµС‚.
+		AI_Output (self, other, "DIA_Torlof_Probe_01_07"); //РўРѕРіРґР° СЃ С‡РµРіРѕ Р±С‹ СЌС‚Рѕ СЏ РґРѕР»Р¶РµРЅ РІС‹СЃР»СѓС€РёРІР°С‚СЊ С‚РІРѕР№ Р±СЂРµРґ?
 		AI_StopProcessInfos(self);
 	};
 };
@@ -140,7 +140,7 @@ instance DIA_Torlof_Respekt (C_INFO)
 	condition	= DIA_Torlof_Respekt_Condition;
 	information	= DIA_Torlof_Respekt_Info;
 	permanent 	= FALSE;
-	description	= "Как мне заслужить уважение других наемников? ";
+	description	= "РљР°Рє РјРЅРµ Р·Р°СЃР»СѓР¶РёС‚СЊ СѓРІР°Р¶РµРЅРёРµ РґСЂСѓРіРёС… РЅР°РµРјРЅРёРєРѕРІ? ";
 };
 
 func int DIA_Torlof_Respekt_Condition ()
@@ -154,16 +154,16 @@ func int DIA_Torlof_Respekt_Condition ()
 
 func void DIA_Torlof_Respekt_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_Respekt_15_00"); //Как мне заслужить уважение других наемников?
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_01"); //Для большинства будет достаточно, если ты выполнишь свои задания и пройдешь мое испытание.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_02"); //Но чтобы убедить остальных, тебе придется поискать другой подход.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_03"); //Некоторые попытаются извлечь выгоду из твоего положения, а другим может не понравиться твое лицо.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_04"); //Ты должен попытаться уговорить как можно больше наших парней - но если ничего не помогает, ты всегда можешь прибегнуть к дуэли.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_05"); //Если ты победишь, ты завоюешь уважение большинства из них. Но только смотри, не убей случайно кого-нибудь. Тогда у тебя будут очень большие проблемы.
+	AI_Output (other, self, "DIA_Torlof_Respekt_15_00"); //РљР°Рє РјРЅРµ Р·Р°СЃР»СѓР¶РёС‚СЊ СѓРІР°Р¶РµРЅРёРµ РґСЂСѓРіРёС… РЅР°РµРјРЅРёРєРѕРІ?
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_01"); //Р”Р»СЏ Р±РѕР»СЊС€РёРЅСЃС‚РІР° Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, РµСЃР»Рё С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ СЃРІРѕРё Р·Р°РґР°РЅРёСЏ Рё РїСЂРѕР№РґРµС€СЊ РјРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_02"); //РќРѕ С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊ РѕСЃС‚Р°Р»СЊРЅС‹С…, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїРѕРёСЃРєР°С‚СЊ РґСЂСѓРіРѕР№ РїРѕРґС…РѕРґ.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_03"); //РќРµРєРѕС‚РѕСЂС‹Рµ РїРѕРїС‹С‚Р°СЋС‚СЃСЏ РёР·РІР»РµС‡СЊ РІС‹РіРѕРґСѓ РёР· С‚РІРѕРµРіРѕ РїРѕР»РѕР¶РµРЅРёСЏ, Р° РґСЂСѓРіРёРј РјРѕР¶РµС‚ РЅРµ РїРѕРЅСЂР°РІРёС‚СЊСЃСЏ С‚РІРѕРµ Р»РёС†Рѕ.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_04"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРїС‹С‚Р°С‚СЊСЃСЏ СѓРіРѕРІРѕСЂРёС‚СЊ РєР°Рє РјРѕР¶РЅРѕ Р±РѕР»СЊС€Рµ РЅР°С€РёС… РїР°СЂРЅРµР№ - РЅРѕ РµСЃР»Рё РЅРёС‡РµРіРѕ РЅРµ РїРѕРјРѕРіР°РµС‚, С‚С‹ РІСЃРµРіРґР° РјРѕР¶РµС€СЊ РїСЂРёР±РµРіРЅСѓС‚СЊ Рє РґСѓСЌР»Рё.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_05"); //Р•СЃР»Рё С‚С‹ РїРѕР±РµРґРёС€СЊ, С‚С‹ Р·Р°РІРѕСЋРµС€СЊ СѓРІР°Р¶РµРЅРёРµ Р±РѕР»СЊС€РёРЅСЃС‚РІР° РёР· РЅРёС…. РќРѕ С‚РѕР»СЊРєРѕ СЃРјРѕС‚СЂРё, РЅРµ СѓР±РµР№ СЃР»СѓС‡Р°Р№РЅРѕ РєРѕРіРѕ-РЅРёР±СѓРґСЊ. РўРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ РѕС‡РµРЅСЊ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹.
 	
 	Log_CreateTopic (TOPIC_SLDRespekt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_SLDRespekt,LOG_RUNNING);
-	B_LogEntry (TOPIC_SLDRespekt,"Если я хочу, чтобы наемники уважали меня, я должен пройти испытание, приготовленное мне Торлофом. Также их можно убедить, победив в дуэли.");
+	B_LogEntry (TOPIC_SLDRespekt,"Р•СЃР»Рё СЏ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РЅР°РµРјРЅРёРєРё СѓРІР°Р¶Р°Р»Рё РјРµРЅСЏ, СЏ РґРѕР»Р¶РµРЅ РїСЂРѕР№С‚Рё РёСЃРїС‹С‚Р°РЅРёРµ, РїСЂРёРіРѕС‚РѕРІР»РµРЅРЅРѕРµ РјРЅРµ РўРѕСЂР»РѕС„РѕРј. РўР°РєР¶Рµ РёС… РјРѕР¶РЅРѕ СѓР±РµРґРёС‚СЊ, РїРѕР±РµРґРёРІ РІ РґСѓСЌР»Рё.");
 	
 };
 
@@ -177,7 +177,7 @@ instance DIA_Torlof_Duellregeln (C_INFO)
 	condition	= DIA_Torlof_Duellregeln_Condition;
 	information	= DIA_Torlof_Duellregeln_Info;
 	permanent 	= FALSE;
-	description	= "Что за правила дуэлей?";
+	description	= "Р§С‚Рѕ Р·Р° РїСЂР°РІРёР»Р° РґСѓСЌР»РµР№?";
 };
 
 func int DIA_Torlof_Duellregeln_Condition ()
@@ -191,13 +191,13 @@ func int DIA_Torlof_Duellregeln_Condition ()
 
 func void DIA_Torlof_Duellregeln_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_Duellregeln_15_00"); //Каковы правила дуэли?
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_01"); //Это довольно просто. Оба дуэлянта должны иметь возможность обнажить оружие до нанесения первого удара.
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_02"); //Нельзя просто так взять и напасть на кого-нибудь без предупреждения.
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_03"); //Обязательно должен иметь место устный вызов. Оскорбление, например, или еще какая-нибудь причина для сражения.
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_04"); //Никто из наблюдателей не имеет права вмешиваться в дуэль. Если только один из дуэлянтов не будет убит.
+	AI_Output (other, self, "DIA_Torlof_Duellregeln_15_00"); //РљР°РєРѕРІС‹ РїСЂР°РІРёР»Р° РґСѓСЌР»Рё?
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_01"); //Р­С‚Рѕ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ. РћР±Р° РґСѓСЌР»СЏРЅС‚Р° РґРѕР»Р¶РЅС‹ РёРјРµС‚СЊ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РѕР±РЅР°Р¶РёС‚СЊ РѕСЂСѓР¶РёРµ РґРѕ РЅР°РЅРµСЃРµРЅРёСЏ РїРµСЂРІРѕРіРѕ СѓРґР°СЂР°.
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_02"); //РќРµР»СЊР·СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє РІР·СЏС‚СЊ Рё РЅР°РїР°СЃС‚СЊ РЅР° РєРѕРіРѕ-РЅРёР±СѓРґСЊ Р±РµР· РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_03"); //РћР±СЏР·Р°С‚РµР»СЊРЅРѕ РґРѕР»Р¶РµРЅ РёРјРµС‚СЊ РјРµСЃС‚Рѕ СѓСЃС‚РЅС‹Р№ РІС‹Р·РѕРІ. РћСЃРєРѕСЂР±Р»РµРЅРёРµ, РЅР°РїСЂРёРјРµСЂ, РёР»Рё РµС‰Рµ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ РїСЂРёС‡РёРЅР° РґР»СЏ СЃСЂР°Р¶РµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_04"); //РќРёРєС‚Рѕ РёР· РЅР°Р±Р»СЋРґР°С‚РµР»РµР№ РЅРµ РёРјРµРµС‚ РїСЂР°РІР° РІРјРµС€РёРІР°С‚СЊСЃСЏ РІ РґСѓСЌР»СЊ. Р•СЃР»Рё С‚РѕР»СЊРєРѕ РѕРґРёРЅ РёР· РґСѓСЌР»СЏРЅС‚РѕРІ РЅРµ Р±СѓРґРµС‚ СѓР±РёС‚.
 	
-	B_LogEntry (TOPIC_SLDRespekt,"Правила дуэли: Дуэль должна начаться с вызова, тогда в нее никто не имеет права вмешаться. Противника в дуэли нельзя убивать.");
+	B_LogEntry (TOPIC_SLDRespekt,"РџСЂР°РІРёР»Р° РґСѓСЌР»Рё: Р”СѓСЌР»СЊ РґРѕР»Р¶РЅР° РЅР°С‡Р°С‚СЊСЃСЏ СЃ РІС‹Р·РѕРІР°, С‚РѕРіРґР° РІ РЅРµРµ РЅРёРєС‚Рѕ РЅРµ РёРјРµРµС‚ РїСЂР°РІР° РІРјРµС€Р°С‚СЊСЃСЏ. РџСЂРѕС‚РёРІРЅРёРєР° РІ РґСѓСЌР»Рё РЅРµР»СЊР·СЏ СѓР±РёРІР°С‚СЊ.");
 };
 
 // ************************************************************
@@ -210,7 +210,7 @@ instance DIA_Torlof_DeineStimme (C_INFO)
 	condition	= DIA_Torlof_DeineStimme_Condition;
 	information	= DIA_Torlof_DeineStimme_Info;
 	permanent 	= FALSE;
-	description	= "А как насчет тебя? Ты проголосуешь за меня?";
+	description	= "Рђ РєР°Рє РЅР°СЃС‡РµС‚ С‚РµР±СЏ? РўС‹ РїСЂРѕРіРѕР»РѕСЃСѓРµС€СЊ Р·Р° РјРµРЅСЏ?";
 };
 
 func int DIA_Torlof_DeineStimme_Condition ()
@@ -226,8 +226,8 @@ func int DIA_Torlof_DeineStimme_Condition ()
 
 func void DIA_Torlof_DeineStimme_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_DeineStimme_15_00"); //А как насчет тебя? Ты проголосуешь за меня?
-	AI_Output (self, other, "DIA_Torlof_DeineStimme_01_01"); //Если ты сможешь доказать, что можешь выполнять обязанности наемника, то да.
+	AI_Output (other, self, "DIA_Torlof_DeineStimme_15_00"); //Рђ РєР°Рє РЅР°СЃС‡РµС‚ С‚РµР±СЏ? РўС‹ РїСЂРѕРіРѕР»РѕСЃСѓРµС€СЊ Р·Р° РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Torlof_DeineStimme_01_01"); //Р•СЃР»Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РјРѕР¶РµС€СЊ РІС‹РїРѕР»РЅСЏС‚СЊ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РЅР°РµРјРЅРёРєР°, С‚Рѕ РґР°.
 };
 
 
@@ -243,7 +243,7 @@ instance DIA_Torlof_RUF (C_INFO)
 	condition	= DIA_Torlof_RUF_Condition;
 	information	= DIA_Torlof_RUF_Info;
 	permanent 	= TRUE;
-	description	= "Как моя репутация среди наемников?";
+	description	= "РљР°Рє РјРѕСЏ СЂРµРїСѓС‚Р°С†РёСЏ СЃСЂРµРґРё РЅР°РµРјРЅРёРєРѕРІ?";
 };
 
 func int DIA_Torlof_RUF_Condition ()
@@ -258,8 +258,8 @@ func int DIA_Torlof_RUF_Condition ()
 
 func void DIA_Torlof_RUF_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_RUF_15_00"); //Как моя репутация среди наемников?
-	AI_Output (self, other, "DIA_Torlof_RUF_01_01"); //Так, посмотрим...
+	AI_Output (other, self, "DIA_Torlof_RUF_15_00"); //РљР°Рє РјРѕСЏ СЂРµРїСѓС‚Р°С†РёСЏ СЃСЂРµРґРё РЅР°РµРјРЅРёРєРѕРІ?
+	AI_Output (self, other, "DIA_Torlof_RUF_01_01"); //РўР°Рє, РїРѕСЃРјРѕС‚СЂРёРј...
 	
 	Points_Sld = 0;
 	
@@ -270,7 +270,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Sld_Wolf.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_02"); //Вольф говорит, что ничего не имеет против тебя.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_02"); //Р’РѕР»СЊС„ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅРёС‡РµРіРѕ РЅРµ РёРјРµРµС‚ РїСЂРѕС‚РёРІ С‚РµР±СЏ.
 		Points_Sld = Points_Sld + 1;
 	};
 	
@@ -281,13 +281,13 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (MIS_Jarvis_SldKO == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_03"); //Джарвис полагает, что ты на правильной стороне.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_03"); //Р”Р¶Р°СЂРІРёСЃ РїРѕР»Р°РіР°РµС‚, С‡С‚Рѕ С‚С‹ РЅР° РїСЂР°РІРёР»СЊРЅРѕР№ СЃС‚РѕСЂРѕРЅРµ.
 		Points_Sld = Points_Sld + 1;
 	}
 	else if (Jarvis.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_04"); //Джарвис все еще не уверен, что ты на правильной стороне.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_05"); //Он не хочет, чтобы под дудку Сильвио плясало еще больше людей. Если тебе это интересно, в этом я с ним согласен.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_04"); //Р”Р¶Р°СЂРІРёСЃ РІСЃРµ РµС‰Рµ РЅРµ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ РЅР° РїСЂР°РІРёР»СЊРЅРѕР№ СЃС‚РѕСЂРѕРЅРµ.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_05"); //РћРЅ РЅРµ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РїРѕРґ РґСѓРґРєСѓ РЎРёР»СЊРІРёРѕ РїР»СЏСЃР°Р»Рѕ РµС‰Рµ Р±РѕР»СЊС€Рµ Р»СЋРґРµР№. Р•СЃР»Рё С‚РµР±Рµ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ, РІ СЌС‚РѕРј СЏ СЃ РЅРёРј СЃРѕРіР»Р°СЃРµРЅ.
 	};
 	
 	// ------ Cord ------
@@ -297,12 +297,12 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Cord_Approved == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_06"); //Корд полагает, что ты достаточно хорош, чтобы присоединиться к нам.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_06"); //РљРѕСЂРґ РїРѕР»Р°РіР°РµС‚, С‡С‚Рѕ С‚С‹ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С…РѕСЂРѕС€, С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј.
 		Points_Sld = Points_Sld + 1;
 	}
 	else if (Cord.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_07"); //По мнению Корда, тебе нужно сначала научиться лучше владеть оружием.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_07"); //РџРѕ РјРЅРµРЅРёСЋ РљРѕСЂРґР°, С‚РµР±Рµ РЅСѓР¶РЅРѕ СЃРЅР°С‡Р°Р»Р° РЅР°СѓС‡РёС‚СЊСЃСЏ Р»СѓС‡С€Рµ РІР»Р°РґРµС‚СЊ РѕСЂСѓР¶РёРµРј.
 	};
 	
 	// ------ Cipher ------
@@ -313,12 +313,12 @@ func void DIA_Torlof_RUF_Info ()
 	else if (MIS_Cipher_Paket == LOG_SUCCESS)
 	|| 		(MIS_Cipher_BringWeed == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_08"); //Сифер говорит, что ему абсолютно ясно, что ты достоин присоединиться к нам. Похоже, что-то сделало его безгранично счастливым.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_08"); //РЎРёС„РµСЂ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РµРјСѓ Р°Р±СЃРѕР»СЋС‚РЅРѕ СЏСЃРЅРѕ, С‡С‚Рѕ С‚С‹ РґРѕСЃС‚РѕРёРЅ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ-С‚Рѕ СЃРґРµР»Р°Р»Рѕ РµРіРѕ Р±РµР·РіСЂР°РЅРёС‡РЅРѕ СЃС‡Р°СЃС‚Р»РёРІС‹Рј.
 		Points_Sld = Points_Sld + 1;
 	}
 	else if (Cipher.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_09"); //Сифер говорит, что за тобой должок, и что ты знаешь, о чем идет речь.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_09"); //РЎРёС„РµСЂ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ Р·Р° С‚РѕР±РѕР№ РґРѕР»Р¶РѕРє, Рё С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ, Рѕ С‡РµРј РёРґРµС‚ СЂРµС‡СЊ.
 	};
 	
 	// ------ Rod ------
@@ -328,12 +328,12 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Npc_HasItems (Rod, ItMw_2h_Rod) == 0)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_10"); //Род просто хочет получить свой меч назад.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_10"); //Р РѕРґ РїСЂРѕСЃС‚Рѕ С…РѕС‡РµС‚ РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕР№ РјРµС‡ РЅР°Р·Р°Рґ.
 	}
 	else if (Rod.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| 		(Rod_WetteGewonnen == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_11"); //Похоже, тебе удалось убедить Рода, что ты достаточно силен.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_11"); //РџРѕС…РѕР¶Рµ, С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ СѓР±РµРґРёС‚СЊ Р РѕРґР°, С‡С‚Рѕ С‚С‹ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ.
 		if (Rod.aivar[AIV_DefeatedByPlayer] == FALSE)
 		{
 			Points_Sld = Points_Sld + 1; //### sonst Point bei Duell ###
@@ -341,7 +341,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Rod.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_12"); //Род считает тебя слабаком.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_12"); //Р РѕРґ СЃС‡РёС‚Р°РµС‚ С‚РµР±СЏ СЃР»Р°Р±Р°РєРѕРј.
 	};
 		
 	// ------ Sentenza -------
@@ -351,13 +351,13 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Npc_HasItems (Sentenza, itmi_gold) >= 50)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_13"); //Сентенза проголосует за тебя. Он говорит, что ты весьма рассудительный человек.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_13"); //РЎРµРЅС‚РµРЅР·Р° РїСЂРѕРіРѕР»РѕСЃСѓРµС‚ Р·Р° С‚РµР±СЏ. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РІРµСЃСЊРјР° СЂР°СЃСЃСѓРґРёС‚РµР»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє.
 		Points_Sld = Points_Sld + 1;
 		Torlof_SentenzaCounted = TRUE;
 	}
 	else if (Sentenza.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_14"); //Сентенза не проголосует за тебя. Он говорит, что ты должен ему 50 золотых монет.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_14"); //РЎРµРЅС‚РµРЅР·Р° РЅРµ РїСЂРѕРіРѕР»РѕСЃСѓРµС‚ Р·Р° С‚РµР±СЏ. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РµРјСѓ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	};
 	
 	// ------ Raoul ------
@@ -367,7 +367,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Raoul.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_15"); //Рауль против тебя. Мне кажется, он на дух тебя не выносит.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_15"); //Р Р°СѓР»СЊ РїСЂРѕС‚РёРІ С‚РµР±СЏ. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РѕРЅ РЅР° РґСѓС… С‚РµР±СЏ РЅРµ РІС‹РЅРѕСЃРёС‚.
 	};
 	
 	// ------ Sylvio und Bullco ------
@@ -377,7 +377,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Bullco.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_16"); //О Сильвио и Булко даже говорить нечего. Эти два кретина всегда против всех и вся.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_16"); //Рћ РЎРёР»СЊРІРёРѕ Рё Р‘СѓР»РєРѕ РґР°Р¶Рµ РіРѕРІРѕСЂРёС‚СЊ РЅРµС‡РµРіРѕ. Р­С‚Рё РґРІР° РєСЂРµС‚РёРЅР° РІСЃРµРіРґР° РїСЂРѕС‚РёРІ РІСЃРµС… Рё РІСЃСЏ.
 	};
 	
 	// ------ Buster ------
@@ -387,17 +387,17 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Buster_Duell == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_17"); //Бастер говорит, что с тобой все в порядке.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_17"); //Р‘Р°СЃС‚РµСЂ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ СЃ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.
 		if (Buster.aivar[AIV_DefeatedByPlayer] == FALSE)
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_18"); //Хотя ты и проиграл ему.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_18"); //РҐРѕС‚СЏ С‚С‹ Рё РїСЂРѕРёРіСЂР°Р» РµРјСѓ.
 		};
 		//### Point bei Duell ###
 	}
 	else if (Buster.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_19"); //Бастер говорит, что ты струсил, когда он вызвал тебя.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_20"); //Это не очень хорошо. Возможно, тебе стоит вернуться на аванпост и вызвать его.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_19"); //Р‘Р°СЃС‚РµСЂ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ СЃС‚СЂСѓСЃРёР», РєРѕРіРґР° РѕРЅ РІС‹Р·РІР°Р» С‚РµР±СЏ.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_20"); //Р­С‚Рѕ РЅРµ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р’РѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ СЃС‚РѕРёС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР° Р°РІР°РЅРїРѕСЃС‚ Рё РІС‹Р·РІР°С‚СЊ РµРіРѕ.
 	};
 
 	// ------ Dar ------
@@ -407,7 +407,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Dar_LostAgainstCipher == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_21"); //Дар говорит, что ты трепач. Но к его голосу здесь не особенно прислушиваются.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_21"); //Р”Р°СЂ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ С‚СЂРµРїР°С‡. РќРѕ Рє РµРіРѕ РіРѕР»РѕСЃСѓ Р·РґРµСЃСЊ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ РїСЂРёСЃР»СѓС€РёРІР°СЋС‚СЃСЏ.
 	};
 
 	// ----------------------
@@ -416,23 +416,23 @@ func void DIA_Torlof_RUF_Info ()
 	
 	if (Points_Sld > 0)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_22"); //Остальные наемники ничего не сказали.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_22"); //РћСЃС‚Р°Р»СЊРЅС‹Рµ РЅР°РµРјРЅРёРєРё РЅРёС‡РµРіРѕ РЅРµ СЃРєР°Р·Р°Р»Рё.
 	};
 	
 	if (MIS_Torlof_HolPachtVonSekob != LOG_SUCCESS)
 	&& (MIS_Torlof_BengarMilizKlatschen != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_23"); //Большинство из них просто ждут, пройдешь ли ты испытание.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_23"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… РїСЂРѕСЃС‚Рѕ Р¶РґСѓС‚, РїСЂРѕР№РґРµС€СЊ Р»Рё С‚С‹ РёСЃРїС‹С‚Р°РЅРёРµ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_24"); //Ты убедил большинство из них, пройдя испытание.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_24"); //РўС‹ СѓР±РµРґРёР» Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС…, РїСЂРѕР№РґСЏ РёСЃРїС‹С‚Р°РЅРёРµ.
 		
 		
 		//ADDON>
 		if (Cord_RangerHelp_TorlofsProbe == TRUE)
 		{
-			AI_Output (self, other, "DIA_Addon_Torlof_RUF_01_00"); //(усмехается) Пусть Корд в этом и поучаствовал...
+			AI_Output (self, other, "DIA_Addon_Torlof_RUF_01_00"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РџСѓСЃС‚СЊ РљРѕСЂРґ РІ СЌС‚РѕРј Рё РїРѕСѓС‡Р°СЃС‚РІРѕРІР°Р»...
 			Points_Sld = Points_Sld + 4; 
 		}
 		//ADDON<
@@ -440,32 +440,32 @@ func void DIA_Torlof_RUF_Info ()
 		
 		else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_25"); //Хотя многие считают, что заставить фермера заплатить ренту было слишком легко, чтобы считать это испытанием.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_25"); //РҐРѕС‚СЏ РјРЅРѕРіРёРµ СЃС‡РёС‚Р°СЋС‚, С‡С‚Рѕ Р·Р°СЃС‚Р°РІРёС‚СЊ С„РµСЂРјРµСЂР° Р·Р°РїР»Р°С‚РёС‚СЊ СЂРµРЅС‚Сѓ Р±С‹Р»Рѕ СЃР»РёС€РєРѕРј Р»РµРіРєРѕ, С‡С‚РѕР±С‹ СЃС‡РёС‚Р°С‚СЊ СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµРј.
 			Points_Sld = Points_Sld + 3;
 		}
 		else //miliz klatschen
 		{
 			Points_Sld = Points_Sld + 5;
 		};
-		AI_Output (self, other, "DIA_Torlof_RUF_01_26"); //В любом случае, ты можешь рассчитывать на мой голос.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_26"); //Р’ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ, С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РјРѕР№ РіРѕР»РѕСЃ.
 		Points_Sld = Points_Sld + 1;
 	};
 	
 	// --------------------
 	// ------ Duelle ------
 	// --------------------
-	if (Sld_Duelle_gewonnen >= 3)//geдndert M.F.
+	if (Sld_Duelle_gewonnen >= 3)//geРґndert M.F.
 	{
 		Points_Sld = Points_Sld + 1;
 		
-		if (Points_Sld >= 9)//geдndert M.F.
+		if (Points_Sld >= 9)//geРґndert M.F.
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_27"); //И ты победил в нескольких честных дуэлях.
-			AI_Output (self, other, "DIA_Torlof_RUF_01_28"); //Многие наемники уважают это.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_27"); //Р С‚С‹ РїРѕР±РµРґРёР» РІ РЅРµСЃРєРѕР»СЊРєРёС… С‡РµСЃС‚РЅС‹С… РґСѓСЌР»СЏС….
+			AI_Output (self, other, "DIA_Torlof_RUF_01_28"); //РњРЅРѕРіРёРµ РЅР°РµРјРЅРёРєРё СѓРІР°Р¶Р°СЋС‚ СЌС‚Рѕ.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_29"); //Как бы то ни было, ты уже победил в нескольких честных дуэлях.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_29"); //РљР°Рє Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ, С‚С‹ СѓР¶Рµ РїРѕР±РµРґРёР» РІ РЅРµСЃРєРѕР»СЊРєРёС… С‡РµСЃС‚РЅС‹С… РґСѓСЌР»СЏС….
 		};
 	};
 		
@@ -473,21 +473,21 @@ func void DIA_Torlof_RUF_Info ()
 	// ------ ENDABRECHNUNG ------
 	// ---------------------------
 	
-	if (Points_Sld >= 9) //geдndert M.F.					//(Maximal 11 - 13 / insgesamt 6 + 3+1 oder 5+1 + 1 fьr Duell)
+	if (Points_Sld >= 9) //geРґndert M.F.					//(Maximal 11 - 13 / insgesamt 6 + 3+1 oder 5+1 + 1 fСЊr Duell)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_30"); //Большинство наемников за тебя, и мы считаем, что ты можешь присоединиться к нам в любое время.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_31"); //Иди, поговори с Ли. Он объяснит тебе детали.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_30"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РЅР°РµРјРЅРёРєРѕРІ Р·Р° С‚РµР±СЏ, Рё РјС‹ СЃС‡РёС‚Р°РµРј, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј РІ Р»СЋР±РѕРµ РІСЂРµРјСЏ.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_31"); //РРґРё, РїРѕРіРѕРІРѕСЂРё СЃ Р›Рё. РћРЅ РѕР±СЉСЏСЃРЅРёС‚ С‚РµР±Рµ РґРµС‚Р°Р»Рё.
 		Torlof_GenugStimmen = TRUE;
-		B_LogEntry (TOPIC_BecomeSLD,"Я заслужил уважение наемников. Теперь, я должен переговорить с Ли."); 
+		B_LogEntry (TOPIC_BecomeSLD,"РЇ Р·Р°СЃР»СѓР¶РёР» СѓРІР°Р¶РµРЅРёРµ РЅР°РµРјРЅРёРєРѕРІ. РўРµРїРµСЂСЊ, СЏ РґРѕР»Р¶РµРЅ РїРµСЂРµРіРѕРІРѕСЂРёС‚СЊ СЃ Р›Рё."); 
 	}
 	else if (Points_Sld >= 7) 
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_32"); //Это довольно много, но пока еще не достаточно.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_33"); //Тебе нужно еще сразиться с несколькими парнями.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_32"); //Р­С‚Рѕ РґРѕРІРѕР»СЊРЅРѕ РјРЅРѕРіРѕ, РЅРѕ РїРѕРєР° РµС‰Рµ РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_33"); //РўРµР±Рµ РЅСѓР¶РЅРѕ РµС‰Рµ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃ РЅРµСЃРєРѕР»СЊРєРёРјРё РїР°СЂРЅСЏРјРё.
 	}
 	else // <7
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_34"); //Тебе еще далеко до всеобщего одобрения, парень. Если ты хочешь, чтобы мы приняли тебя в свои ряды, тебе нужно хорошо потрудиться.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_34"); //РўРµР±Рµ РµС‰Рµ РґР°Р»РµРєРѕ РґРѕ РІСЃРµРѕР±С‰РµРіРѕ РѕРґРѕР±СЂРµРЅРёСЏ, РїР°СЂРµРЅСЊ. Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ РјС‹ РїСЂРёРЅСЏР»Рё С‚РµР±СЏ РІ СЃРІРѕРё СЂСЏРґС‹, С‚РµР±Рµ РЅСѓР¶РЅРѕ С…РѕСЂРѕС€Рѕ РїРѕС‚СЂСѓРґРёС‚СЊСЃСЏ.
 	};
 };
 
@@ -502,7 +502,7 @@ instance DIA_Torlof_Aufgaben (C_INFO)
 	condition	= DIA_Torlof_Aufgaben_Condition;
 	information	= DIA_Torlof_Aufgaben_Info;
 	permanent 	= FALSE;
-	description	= "А каковы обязанности наемника?";
+	description	= "Рђ РєР°РєРѕРІС‹ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РЅР°РµРјРЅРёРєР°?";
 };
 
 func int DIA_Torlof_Aufgaben_Condition ()
@@ -516,23 +516,23 @@ func int DIA_Torlof_Aufgaben_Condition ()
 
 func void DIA_Torlof_Aufgaben_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_Aufgaben_15_00"); //А каковы обязанности наемника?
-	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_01"); //Онар нанял нас по двум причинам: он хочет, чтобы мы сбросили с его шеи ополчение, и он хочет, чтобы мы поддерживали порядок на его фермах.
-	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_02"); //Это включает сбор ренты, когда фермеры отказываются платить.
-	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_03"); //Итак, что ты выбираешь?
+	AI_Output (other, self, "DIA_Torlof_Aufgaben_15_00"); //Рђ РєР°РєРѕРІС‹ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РЅР°РµРјРЅРёРєР°?
+	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_01"); //РћРЅР°СЂ РЅР°РЅСЏР» РЅР°СЃ РїРѕ РґРІСѓРј РїСЂРёС‡РёРЅР°Рј: РѕРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РјС‹ СЃР±СЂРѕСЃРёР»Рё СЃ РµРіРѕ С€РµРё РѕРїРѕР»С‡РµРЅРёРµ, Рё РѕРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РјС‹ РїРѕРґРґРµСЂР¶РёРІР°Р»Рё РїРѕСЂСЏРґРѕРє РЅР° РµРіРѕ С„РµСЂРјР°С….
+	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_02"); //Р­С‚Рѕ РІРєР»СЋС‡Р°РµС‚ СЃР±РѕСЂ СЂРµРЅС‚С‹, РєРѕРіРґР° С„РµСЂРјРµСЂС‹ РѕС‚РєР°Р·С‹РІР°СЋС‚СЃСЏ РїР»Р°С‚РёС‚СЊ.
+	AI_Output (self, other, "DIA_Torlof_Aufgaben_01_03"); //РС‚Р°Рє, С‡С‚Рѕ С‚С‹ РІС‹Р±РёСЂР°РµС€СЊ?
 	
 	Info_ClearChoices (DIA_Torlof_Aufgaben);
-	Info_AddChoice (DIA_Torlof_Aufgaben, "Я соберу ренту!", DIA_Torlof_Aufgaben_Pacht);
-	Info_AddChoice (DIA_Torlof_Aufgaben, "Я разберусь с ополчением, можешь забыть об этой проблеме!", DIA_Torlof_Aufgaben_Miliz);
+	Info_AddChoice (DIA_Torlof_Aufgaben, "РЇ СЃРѕР±РµСЂСѓ СЂРµРЅС‚Сѓ!", DIA_Torlof_Aufgaben_Pacht);
+	Info_AddChoice (DIA_Torlof_Aufgaben, "РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ РѕРїРѕР»С‡РµРЅРёРµРј, РјРѕР¶РµС€СЊ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕР№ РїСЂРѕР±Р»РµРјРµ!", DIA_Torlof_Aufgaben_Miliz);
 };
 
 func void B_Torlof_HolPachtVonSekob()
 {
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_00"); //Хорошо. Слушай. Фермер Секоб не платит ренту Онару уже несколько недель.
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_01"); //Онар хочет, чтобы тот выложил 50 золотых монет. Есть вопросы?
-	AI_Output (other, self, "B_Torlof_HolPachtvonSekob_15_02"); //Где ферма Секоба?
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_03"); //На севере этой долины. Если смотреть отсюда, она будет справа от большого перекрестка.
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_04"); //Если у тебя будут проблемы, фермеры на полях помогут тебе нейти дорогу.
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_00"); //РҐРѕСЂРѕС€Рѕ. РЎР»СѓС€Р°Р№. Р¤РµСЂРјРµСЂ РЎРµРєРѕР± РЅРµ РїР»Р°С‚РёС‚ СЂРµРЅС‚Сѓ РћРЅР°СЂСѓ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ.
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_01"); //РћРЅР°СЂ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ С‚РѕС‚ РІС‹Р»РѕР¶РёР» 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р•СЃС‚СЊ РІРѕРїСЂРѕСЃС‹?
+	AI_Output (other, self, "B_Torlof_HolPachtvonSekob_15_02"); //Р“РґРµ С„РµСЂРјР° РЎРµРєРѕР±Р°?
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_03"); //РќР° СЃРµРІРµСЂРµ СЌС‚РѕР№ РґРѕР»РёРЅС‹. Р•СЃР»Рё СЃРјРѕС‚СЂРµС‚СЊ РѕС‚СЃСЋРґР°, РѕРЅР° Р±СѓРґРµС‚ СЃРїСЂР°РІР° РѕС‚ Р±РѕР»СЊС€РѕРіРѕ РїРµСЂРµРєСЂРµСЃС‚РєР°.
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_04"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ РїСЂРѕР±Р»РµРјС‹, С„РµСЂРјРµСЂС‹ РЅР° РїРѕР»СЏС… РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ РЅРµР№С‚Рё РґРѕСЂРѕРіСѓ.
 	
 	MIS_Torlof_HolPachtVonSekob = LOG_RUNNING;
 	Sekob.flags = 0;
@@ -540,17 +540,17 @@ func void B_Torlof_HolPachtVonSekob()
 	CreateInvItems (sekob,ItMi_Gold,50);
 	Log_CreateTopic (TOPIC_TorlofPacht,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_TorlofPacht,LOG_RUNNING);
-	B_LogEntry (TOPIC_TorlofPacht,"Торлоф попросил меня собрать ренту с фермера Секоба. Он должен заплатить 50 золотых монет.");
+	B_LogEntry (TOPIC_TorlofPacht,"РўРѕСЂР»РѕС„ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ СЃРѕР±СЂР°С‚СЊ СЂРµРЅС‚Сѓ СЃ С„РµСЂРјРµСЂР° РЎРµРєРѕР±Р°. РћРЅ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.");
 };
 
 func void B_Torlof_BengarMilizKlatschen()
 {
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_00"); //Фермер Бенгар недавно жаловался, что ополчение из города действует ему на нервы.
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_01"); //Они давят на этого фермера - возможно, пытаются заставить его порвать отношения с Онаром.
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_02"); //Я хочу, чтобы ты отправился на его ферму и дал понять этим ополченцам, что там им делать нечего! Есть вопросы?
-	AI_Output (other, self, "B_Torlof_BengarMilizKlatschen_15_03"); //Как мне найти ферму Бенгара?
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_04"); //На юго-западе этой долины есть большая лестница, ведущая на плато в горах. На нем и находится ферма Бенгара.
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_05"); //Если ты заблудишься, поспрашивай фермеров на полях, они покажут тебе дорогу.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_00"); //Р¤РµСЂРјРµСЂ Р‘РµРЅРіР°СЂ РЅРµРґР°РІРЅРѕ Р¶Р°Р»РѕРІР°Р»СЃСЏ, С‡С‚Рѕ РѕРїРѕР»С‡РµРЅРёРµ РёР· РіРѕСЂРѕРґР° РґРµР№СЃС‚РІСѓРµС‚ РµРјСѓ РЅР° РЅРµСЂРІС‹.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_01"); //РћРЅРё РґР°РІСЏС‚ РЅР° СЌС‚РѕРіРѕ С„РµСЂРјРµСЂР° - РІРѕР·РјРѕР¶РЅРѕ, РїС‹С‚Р°СЋС‚СЃСЏ Р·Р°СЃС‚Р°РІРёС‚СЊ РµРіРѕ РїРѕСЂРІР°С‚СЊ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РћРЅР°СЂРѕРј.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_02"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕС‚РїСЂР°РІРёР»СЃСЏ РЅР° РµРіРѕ С„РµСЂРјСѓ Рё РґР°Р» РїРѕРЅСЏС‚СЊ СЌС‚РёРј РѕРїРѕР»С‡РµРЅС†Р°Рј, С‡С‚Рѕ С‚Р°Рј РёРј РґРµР»Р°С‚СЊ РЅРµС‡РµРіРѕ! Р•СЃС‚СЊ РІРѕРїСЂРѕСЃС‹?
+	AI_Output (other, self, "B_Torlof_BengarMilizKlatschen_15_03"); //РљР°Рє РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ Р‘РµРЅРіР°СЂР°?
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_04"); //РќР° СЋРіРѕ-Р·Р°РїР°РґРµ СЌС‚РѕР№ РґРѕР»РёРЅС‹ РµСЃС‚СЊ Р±РѕР»СЊС€Р°СЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ РЅР° РїР»Р°С‚Рѕ РІ РіРѕСЂР°С…. РќР° РЅРµРј Рё РЅР°С…РѕРґРёС‚СЃСЏ С„РµСЂРјР° Р‘РµРЅРіР°СЂР°.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_05"); //Р•СЃР»Рё С‚С‹ Р·Р°Р±Р»СѓРґРёС€СЊСЃСЏ, РїРѕСЃРїСЂР°С€РёРІР°Р№ С„РµСЂРјРµСЂРѕРІ РЅР° РїРѕР»СЏС…, РѕРЅРё РїРѕРєР°Р¶СѓС‚ С‚РµР±Рµ РґРѕСЂРѕРіСѓ.
  	
  	MIS_Torlof_BengarMilizKlatschen = LOG_RUNNING;
  	Bengar.flags = 0;
@@ -560,13 +560,13 @@ func void B_Torlof_BengarMilizKlatschen()
 	
 	Log_CreateTopic (TOPIC_TorlofMiliz,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_TorlofMiliz,LOG_RUNNING);
-	B_LogEntry (TOPIC_TorlofMiliz,"Торлоф попросил изгнать ополчение с фермы Бенгара. Она находится на плоскогорье.");
+	B_LogEntry (TOPIC_TorlofMiliz,"РўРѕСЂР»РѕС„ РїРѕРїСЂРѕСЃРёР» РёР·РіРЅР°С‚СЊ РѕРїРѕР»С‡РµРЅРёРµ СЃ С„РµСЂРјС‹ Р‘РµРЅРіР°СЂР°. РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РїР»РѕСЃРєРѕРіРѕСЂСЊРµ.");
 };
 
 
 func void DIA_Torlof_Aufgaben_Pacht()
 {
-	AI_Output (other, self, "DIA_Torlof_Aufgaben_Pacht_15_00"); //Я соберу ренту!
+	AI_Output (other, self, "DIA_Torlof_Aufgaben_Pacht_15_00"); //РЇ СЃРѕР±РµСЂСѓ СЂРµРЅС‚Сѓ!
 	B_Torlof_HolPachtVonSekob();
 	Torlof_Probe = Probe_Sekob;
 	Info_ClearChoices (DIA_Torlof_Aufgaben);
@@ -574,7 +574,7 @@ func void DIA_Torlof_Aufgaben_Pacht()
 
 func void DIA_Torlof_Aufgaben_Miliz()
 {
-	AI_Output (other, self, "DIA_Torlof_Aufgaben_Miliz_15_00"); //Я разберусь с ополчением, можешь забыть об этой проблеме!
+	AI_Output (other, self, "DIA_Torlof_Aufgaben_Miliz_15_00"); //РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ РѕРїРѕР»С‡РµРЅРёРµРј, РјРѕР¶РµС€СЊ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕР№ РїСЂРѕР±Р»РµРјРµ!
 	B_Torlof_BengarMilizKlatschen();
 	Torlof_Probe = Probe_Bengar;
 	Info_ClearChoices (DIA_Torlof_Aufgaben);
@@ -589,17 +589,17 @@ func void B_Torlof_TheOtherMissionDay()
 {
 	if (Torlof_TheOtherMission_Day < (Wld_GetDay() - 1)) 
 	{
-		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_00"); //Ты потратил на это слишком много времени. Онар будет недоволен.
+		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_00"); //РўС‹ РїРѕС‚СЂР°С‚РёР» РЅР° СЌС‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё. РћРЅР°СЂ Р±СѓРґРµС‚ РЅРµРґРѕРІРѕР»РµРЅ.
 		Torlof_TheOtherMission_TooLate = TRUE;
 		
 		if (EnterOW_Kapitel2 == TRUE)
 		{
-			AI_Output (self, other, "DIA_Torlof_Add_01_00"); //И ему все равно, погибнут паладины в Долине Рудников или нет...
+			AI_Output (self, other, "DIA_Torlof_Add_01_00"); //Р РµРјСѓ РІСЃРµ СЂР°РІРЅРѕ, РїРѕРіРёР±РЅСѓС‚ РїР°Р»Р°РґРёРЅС‹ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РёР»Рё РЅРµС‚...
 		};
 	}
 		else
 	{
-		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_01"); //Отлично! Когда у меня будет что-нибудь новенькое, я дам тебе знать.
+		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_01"); //РћС‚Р»РёС‡РЅРѕ! РљРѕРіРґР° Сѓ РјРµРЅСЏ Р±СѓРґРµС‚ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРµРЅСЊРєРѕРµ, СЏ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ.
 	};
 };
 // ------------------------------------------------------------
@@ -610,7 +610,7 @@ instance DIA_Torlof_SekobSuccess (C_INFO)
 	condition	= DIA_Torlof_SekobSuccess_Condition;
 	information	= DIA_Torlof_SekobSuccess_Info;
 	permanent 	= TRUE;
-	description	= "Я собрал ренту Секоба.";
+	description	= "РЇ СЃРѕР±СЂР°Р» СЂРµРЅС‚Сѓ РЎРµРєРѕР±Р°.";
 };
 
 func int DIA_Torlof_SekobSuccess_Condition ()
@@ -627,22 +627,22 @@ func int DIA_Torlof_SekobSuccess_Condition ()
 
 func void DIA_Torlof_SekobSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_SekobSuccess_15_00"); //Я собрал ренту Секоба.
+	AI_Output (other, self, "DIA_Torlof_SekobSuccess_15_00"); //РЇ СЃРѕР±СЂР°Р» СЂРµРЅС‚Сѓ РЎРµРєРѕР±Р°.
 	if (B_GiveInvItems (other, self, ItMi_Gold, 50))
 	{
-		AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_01"); //И? Он заплатил добровольно?
+		AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_01"); //Р? РћРЅ Р·Р°РїР»Р°С‚РёР» РґРѕР±СЂРѕРІРѕР»СЊРЅРѕ?
 		if (Npc_IsDead (Sekob))
 		{
-			AI_Output (other, self, "DIA_Torlof_SekobTot_15_00"); //Ну, с ним произошел несчастный случай...
+			AI_Output (other, self, "DIA_Torlof_SekobTot_15_00"); //РќСѓ, СЃ РЅРёРј РїСЂРѕРёР·РѕС€РµР» РЅРµСЃС‡Р°СЃС‚РЅС‹Р№ СЃР»СѓС‡Р°Р№...
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Torlof_SekobSuccess_15_02"); //Мне пришлось убедить его.
+			AI_Output (other, self, "DIA_Torlof_SekobSuccess_15_02"); //РњРЅРµ РїСЂРёС€Р»РѕСЃСЊ СѓР±РµРґРёС‚СЊ РµРіРѕ.
 		};
 				
 		if (Torlof_Probe == Probe_Sekob)
 		{
-			AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_03"); //Отлично! Ты прошел испытание. Это убедит большинство наемников, что ты достойный кандидат.
+			AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_03"); //РћС‚Р»РёС‡РЅРѕ! РўС‹ РїСЂРѕС€РµР» РёСЃРїС‹С‚Р°РЅРёРµ. Р­С‚Рѕ СѓР±РµРґРёС‚ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РЅР°РµРјРЅРёРєРѕРІ, С‡С‚Рѕ С‚С‹ РґРѕСЃС‚РѕР№РЅС‹Р№ РєР°РЅРґРёРґР°С‚.
 		}
 		else
 		{
@@ -651,12 +651,12 @@ func void DIA_Torlof_SekobSuccess_Info ()
 
 		MIS_Torlof_HolPachtVonSekob = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Torlof_SekobsKohlebekommen);				
-		B_LogEntry (TOPIC_BecomeSLD,"Я выполнил задачу, которую дал мне Торлоф."); 
+		B_LogEntry (TOPIC_BecomeSLD,"РЇ РІС‹РїРѕР»РЅРёР» Р·Р°РґР°С‡Сѓ, РєРѕС‚РѕСЂСѓСЋ РґР°Р» РјРЅРµ РўРѕСЂР»РѕС„."); 
 		Torlof_ProbeBestanden = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_04"); //И? Ты что, промотал все деньги?  Ты должен принести их мне! И побыстрее!
+		AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_04"); //Р? РўС‹ С‡С‚Рѕ, РїСЂРѕРјРѕС‚Р°Р» РІСЃРµ РґРµРЅСЊРіРё?  РўС‹ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё РёС… РјРЅРµ! Р РїРѕР±С‹СЃС‚СЂРµРµ!
 	};
 };
 
@@ -670,7 +670,7 @@ instance DIA_Torlof_BengarSuccess (C_INFO)
 	condition	= DIA_Torlof_BengarSuccess_Condition;
 	information	= DIA_Torlof_BengarSuccess_Info;
 	permanent 	= FALSE;
-	description	= "Я решил проблемы Бенгара с ополчением.";
+	description	= "РЇ СЂРµС€РёР» РїСЂРѕР±Р»РµРјС‹ Р‘РµРЅРіР°СЂР° СЃ РѕРїРѕР»С‡РµРЅРёРµРј.";
 };
 
 func int DIA_Torlof_BengarSuccess_Condition ()
@@ -685,14 +685,14 @@ func int DIA_Torlof_BengarSuccess_Condition ()
 
 func void DIA_Torlof_BengarSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_00"); //Я решил проблемы Бенгара с ополчением.
-	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_01"); //Ты позаботился, чтобы они не появились у него на пороге завтра утром?
-	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_02"); //Чтобы сделать это, им придется очень хорошо постараться...
-	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_03"); //Отлично!
+	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_00"); //РЇ СЂРµС€РёР» РїСЂРѕР±Р»РµРјС‹ Р‘РµРЅРіР°СЂР° СЃ РѕРїРѕР»С‡РµРЅРёРµРј.
+	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_01"); //РўС‹ РїРѕР·Р°Р±РѕС‚РёР»СЃСЏ, С‡С‚РѕР±С‹ РѕРЅРё РЅРµ РїРѕСЏРІРёР»РёСЃСЊ Сѓ РЅРµРіРѕ РЅР° РїРѕСЂРѕРіРµ Р·Р°РІС‚СЂР° СѓС‚СЂРѕРј?
+	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_02"); //Р§С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ, РёРј РїСЂРёРґРµС‚СЃСЏ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ РїРѕСЃС‚Р°СЂР°С‚СЊСЃСЏ...
+	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_03"); //РћС‚Р»РёС‡РЅРѕ!
 		
 	if (Torlof_Probe == Probe_Bengar)
 	{
-		AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_04"); //Ты прошел испытание. Ты смог разобраться с ополчением, этого достаточно, чтобы заслужить уважение большинства.
+		AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_04"); //РўС‹ РїСЂРѕС€РµР» РёСЃРїС‹С‚Р°РЅРёРµ. РўС‹ СЃРјРѕРі СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РѕРїРѕР»С‡РµРЅРёРµРј, СЌС‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ Р·Р°СЃР»СѓР¶РёС‚СЊ СѓРІР°Р¶РµРЅРёРµ Р±РѕР»СЊС€РёРЅСЃС‚РІР°.
 	}
 	else
 	{
@@ -701,7 +701,7 @@ func void DIA_Torlof_BengarSuccess_Info ()
 	
 	MIS_Torlof_BengarMilizKlatschen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Bengar_MILIZKLATSCHEN);
-	B_LogEntry (TOPIC_BecomeSLD,"Я выполнил задачу, которую дал мне Торлоф."); 
+	B_LogEntry (TOPIC_BecomeSLD,"РЇ РІС‹РїРѕР»РЅРёР» Р·Р°РґР°С‡Сѓ, РєРѕС‚РѕСЂСѓСЋ РґР°Р» РјРЅРµ РўРѕСЂР»РѕС„."); 
 	Torlof_ProbeBestanden = TRUE;
 };
 
@@ -730,9 +730,9 @@ func int DIA_Torlof_Welcome_Condition ()
 
 func void DIA_Torlof_Welcome_Info ()
 {
-	AI_Output (self, other, "DIA_Torlof_Welcome_01_00"); //Добро пожаловать в ряды наемников, парень!
-	AI_Output (other, self, "DIA_Torlof_Welcome_15_01"); //Спасибо!
-	AI_Output (self, other, "DIA_Torlof_Welcome_01_02"); //Как только у меня будет работа для тебя, я дам тебе знать.
+	AI_Output (self, other, "DIA_Torlof_Welcome_01_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ, РїР°СЂРµРЅСЊ!
+	AI_Output (other, self, "DIA_Torlof_Welcome_15_01"); //РЎРїР°СЃРёР±Рѕ!
+	AI_Output (self, other, "DIA_Torlof_Welcome_01_02"); //РљР°Рє С‚РѕР»СЊРєРѕ Сѓ РјРµРЅСЏ Р±СѓРґРµС‚ СЂР°Р±РѕС‚Р° РґР»СЏ С‚РµР±СЏ, СЏ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ.
 };
 
 // ************************************************************
@@ -743,10 +743,10 @@ func void DIA_Torlof_Welcome_Info ()
 
 	func void B_Torlof_Dragons()
 	{
-		AI_Output (self, other, "DIA_Torlof_Add_01_01"); //Где ты был?
-		AI_Output (other, self, "DIA_Torlof_Add_15_02"); //Я был в Долине Рудников! Там драконы! И паладинам приходится несладко!
-		AI_Output (self, other, "DIA_Torlof_Add_01_03"); //Да? Похоже, во всех этих историях действительно есть доля правды!
-		AI_Output (self, other, "DIA_Torlof_Add_01_04"); //Ли это будет интересно...
+		AI_Output (self, other, "DIA_Torlof_Add_01_01"); //Р“РґРµ С‚С‹ Р±С‹Р»?
+		AI_Output (other, self, "DIA_Torlof_Add_15_02"); //РЇ Р±С‹Р» РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ! РўР°Рј РґСЂР°РєРѕРЅС‹! Р РїР°Р»Р°РґРёРЅР°Рј РїСЂРёС…РѕРґРёС‚СЃСЏ РЅРµСЃР»Р°РґРєРѕ!
+		AI_Output (self, other, "DIA_Torlof_Add_01_03"); //Р”Р°? РџРѕС…РѕР¶Рµ, РІРѕ РІСЃРµС… СЌС‚РёС… РёСЃС‚РѕСЂРёСЏС… РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РµСЃС‚СЊ РґРѕР»СЏ РїСЂР°РІРґС‹!
+		AI_Output (self, other, "DIA_Torlof_Add_01_04"); //Р›Рё СЌС‚Рѕ Р±СѓРґРµС‚ РёРЅС‚РµСЂРµСЃРЅРѕ...
 		Torlof_KnowsDragons = TRUE;
 	};
 
@@ -777,8 +777,8 @@ func void DIA_Torlof_TheOtherMission_Info ()
 		B_Torlof_Dragons();
 	};
 	
-	AI_Output (self, other, "DIA_Torlof_TheOtherMission_01_00"); //Хорошо, что ты здесь. У меня есть для тебя работа...
-	AI_Output (other, self, "DIA_Torlof_TheOtherMission_15_01"); //Что такое?
+	AI_Output (self, other, "DIA_Torlof_TheOtherMission_01_00"); //РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ. РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ СЂР°Р±РѕС‚Р°...
+	AI_Output (other, self, "DIA_Torlof_TheOtherMission_15_01"); //Р§С‚Рѕ С‚Р°РєРѕРµ?
 		
 	if (Torlof_Probe == Probe_Bengar)
 	{
@@ -789,7 +789,7 @@ func void DIA_Torlof_TheOtherMission_Info ()
 		B_Torlof_BengarMilizKlatschen();
 	};
 	
-	AI_Output (self, other, "DIA_Torlof_TheOtherMission_01_02"); //И ты должен покончить с этим до завтрашнего утра!
+	AI_Output (self, other, "DIA_Torlof_TheOtherMission_01_02"); //Р С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРєРѕРЅС‡РёС‚СЊ СЃ СЌС‚РёРј РґРѕ Р·Р°РІС‚СЂР°С€РЅРµРіРѕ СѓС‚СЂР°!
 	Torlof_TheOtherMission_Day = Wld_GetDay();
 };
 
@@ -833,7 +833,7 @@ INSTANCE DIA_Torlof_WhatCanYouTeach(C_INFO)
 	condition	= DIA_Torlof_WhatCanYouTeach_Condition;
 	information	= DIA_Torlof_WhatCanYouTeach_Info;
 	permanent	= FALSE;
-	description = "Ты можешь помочь мне улучшить мои способности?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ СѓР»СѓС‡С€РёС‚СЊ РјРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё?";
 };                       
 
 FUNC INT DIA_Torlof_WhatCanYouTeach_Condition()
@@ -843,13 +843,13 @@ FUNC INT DIA_Torlof_WhatCanYouTeach_Condition()
  
 FUNC VOID DIA_Torlof_WhatCanYouTeach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_WhatCanYouTeach_15_00"); //Ты можешь помочь мне улучшить мои способности?
-	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_01"); //Я мог бы показать тебе, как лучше использовать силу в ближнем бою.
-	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_02"); //Многие бойцы проигрывают из-за того, что не умеют правильно применять свою силу.
-	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_03"); //То же самое касается ловкости и дальнобойного оружия.
+	AI_Output (other,self ,"DIA_Torlof_WhatCanYouTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ СѓР»СѓС‡С€РёС‚СЊ РјРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё?
+	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_01"); //РЇ РјРѕРі Р±С‹ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє Р»СѓС‡С€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРёР»Сѓ РІ Р±Р»РёР¶РЅРµРј Р±РѕСЋ.
+	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_02"); //РњРЅРѕРіРёРµ Р±РѕР№С†С‹ РїСЂРѕРёРіСЂС‹РІР°СЋС‚ РёР·-Р·Р° С‚РѕРіРѕ, С‡С‚Рѕ РЅРµ СѓРјРµСЋС‚ РїСЂР°РІРёР»СЊРЅРѕ РїСЂРёРјРµРЅСЏС‚СЊ СЃРІРѕСЋ СЃРёР»Сѓ.
+	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_03"); //РўРѕ Р¶Рµ СЃР°РјРѕРµ РєР°СЃР°РµС‚СЃСЏ Р»РѕРІРєРѕСЃС‚Рё Рё РґР°Р»СЊРЅРѕР±РѕР№РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ.
 
 	Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTeacher,"Торлоф может повысить мою ловкость и силу.");
+	B_LogEntry (Topic_SoldierTeacher,"РўРѕСЂР»РѕС„ РјРѕР¶РµС‚ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ Р»РѕРІРєРѕСЃС‚СЊ Рё СЃРёР»Сѓ.");
 };
 
 // *******************************************
@@ -867,7 +867,7 @@ INSTANCE DIA_Torlof_Teach(C_INFO)
 	condition	= DIA_Torlof_Teach_Condition;
 	information	= DIA_Torlof_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу улучшить свои способности!";
+	description = "РЇ С…РѕС‡Сѓ СѓР»СѓС‡С€РёС‚СЊ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё!";
 };                       
 
 FUNC INT DIA_Torlof_Teach_Condition()
@@ -880,7 +880,7 @@ FUNC INT DIA_Torlof_Teach_Condition()
  
 FUNC VOID DIA_Torlof_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_Teach_15_00"); //Я хочу улучшить свои способности!
+	AI_Output (other,self ,"DIA_Torlof_Teach_15_00"); //РЇ С…РѕС‡Сѓ СѓР»СѓС‡С€РёС‚СЊ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё!
 	if (other.guild == GIL_SLD) 
 	|| (other.guild == GIL_DJG)
 	|| (other.guild == GIL_NONE)
@@ -897,8 +897,8 @@ FUNC VOID DIA_Torlof_Teach_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Torlof_Teach_01_01"); //Я сказал, что я МОГ БЫ помочь тебе, но это не значит, что я БУДУ помогать.
-		AI_Output (self ,other,"DIA_Torlof_Teach_01_02"); //Пока ты не станешь одним из нас, тебе лучше поискать другого учителя!
+		AI_Output (self ,other,"DIA_Torlof_Teach_01_01"); //РЇ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РњРћР“ Р‘Р« РїРѕРјРѕС‡СЊ С‚РµР±Рµ, РЅРѕ СЌС‚Рѕ РЅРµ Р·РЅР°С‡РёС‚, С‡С‚Рѕ СЏ Р‘РЈР”РЈ РїРѕРјРѕРіР°С‚СЊ.
+		AI_Output (self ,other,"DIA_Torlof_Teach_01_02"); //РџРѕРєР° С‚С‹ РЅРµ СЃС‚Р°РЅРµС€СЊ РѕРґРЅРёРј РёР· РЅР°СЃ, С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ РґСЂСѓРіРѕРіРѕ СѓС‡РёС‚РµР»СЏ!
 	};
 };
 
@@ -907,7 +907,7 @@ FUNC VOID DIA_Torlof_Teach_Back ()
 	if (Torlof_Merke_STR < other.attribute[ATR_STRENGTH])
 	|| (Torlof_Merke_DEX < other.attribute[ATR_DEXTERITY])
 	{
-		AI_Output (self, other, "DIA_Torlof_Teach_Back_01_00"); //Хорошо! Теперь ты можешь более эффективно использовать свои способности!
+		AI_Output (self, other, "DIA_Torlof_Teach_Back_01_00"); //РҐРѕСЂРѕС€Рѕ! РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ Р±РѕР»РµРµ СЌС„С„РµРєС‚РёРІРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё!
 	};
 
 	Info_ClearChoices (DIA_Torlof_Teach);
@@ -1005,7 +1005,7 @@ instance DIA_Torlof_DEMENTOREN		(C_INFO)
 	condition	 = 	DIA_Torlof_DEMENTOREN_Condition;
 	information	 = 	DIA_Torlof_DEMENTOREN_Info;
 
-	description	 = 	"У тебя есть какая-нибудь работа для меня?";
+	description	 = 	"РЈ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ?";
 };
 
 func int DIA_Torlof_DEMENTOREN_Condition ()
@@ -1018,17 +1018,17 @@ func int DIA_Torlof_DEMENTOREN_Condition ()
 
 func void DIA_Torlof_DEMENTOREN_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_DEMENTOREN_15_00"); //У тебя есть какая-нибудь работа для меня?
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_01"); //Ты видел этих парней, одетых в черные рясы, которые ошиваются здесь? Меня от них в дрожь бросает, если честно.
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_02"); //Когда я ходил по морю, я видел много странных вещей, но эти парни по-настоящему испугали меня.
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_03"); //Они пришли со стороны лагеря бандитов, который находится в горах, в южной части этой долины.
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_04"); //Возможно, тебе стоит сходить туда и разобраться с этими парнями!
+	AI_Output (other, self, "DIA_Torlof_DEMENTOREN_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_01"); //РўС‹ РІРёРґРµР» СЌС‚РёС… РїР°СЂРЅРµР№, РѕРґРµС‚С‹С… РІ С‡РµСЂРЅС‹Рµ СЂСЏСЃС‹, РєРѕС‚РѕСЂС‹Рµ РѕС€РёРІР°СЋС‚СЃСЏ Р·РґРµСЃСЊ? РњРµРЅСЏ РѕС‚ РЅРёС… РІ РґСЂРѕР¶СЊ Р±СЂРѕСЃР°РµС‚, РµСЃР»Рё С‡РµСЃС‚РЅРѕ.
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_02"); //РљРѕРіРґР° СЏ С…РѕРґРёР» РїРѕ РјРѕСЂСЋ, СЏ РІРёРґРµР» РјРЅРѕРіРѕ СЃС‚СЂР°РЅРЅС‹С… РІРµС‰РµР№, РЅРѕ СЌС‚Рё РїР°СЂРЅРё РїРѕ-РЅР°СЃС‚РѕСЏС‰РµРјСѓ РёСЃРїСѓРіР°Р»Рё РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_03"); //РћРЅРё РїСЂРёС€Р»Рё СЃРѕ СЃС‚РѕСЂРѕРЅС‹ Р»Р°РіРµСЂСЏ Р±Р°РЅРґРёС‚РѕРІ, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ РІ РіРѕСЂР°С…, РІ СЋР¶РЅРѕР№ С‡Р°СЃС‚Рё СЌС‚РѕР№ РґРѕР»РёРЅС‹.
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_04"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ СЃС‚РѕРёС‚ СЃС…РѕРґРёС‚СЊ С‚СѓРґР° Рё СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ СЌС‚РёРјРё РїР°СЂРЅСЏРјРё!
 	
 	Wld_InsertNpc		(CastlemineDMT, "FP_STAND_DEMENTOR_KDF_12");
 	
 	Log_CreateTopic (TOPIC_Torlof_Dmt, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Torlof_Dmt, LOG_RUNNING);
-	B_LogEntry (TOPIC_Torlof_Dmt,"В южной части долины, в горах, в бандитском лагере, похоже, появились эти люди в черных рясах. От них у Торлофа изжога. Я должен решить эту проблему для него."); 
+	B_LogEntry (TOPIC_Torlof_Dmt,"Р’ СЋР¶РЅРѕР№ С‡Р°СЃС‚Рё РґРѕР»РёРЅС‹, РІ РіРѕСЂР°С…, РІ Р±Р°РЅРґРёС‚СЃРєРѕРј Р»Р°РіРµСЂРµ, РїРѕС…РѕР¶Рµ, РїРѕСЏРІРёР»РёСЃСЊ СЌС‚Рё Р»СЋРґРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С…. РћС‚ РЅРёС… Сѓ РўРѕСЂР»РѕС„Р° РёР·Р¶РѕРіР°. РЇ РґРѕР»Р¶РµРЅ СЂРµС€РёС‚СЊ СЌС‚Сѓ РїСЂРѕР±Р»РµРјСѓ РґР»СЏ РЅРµРіРѕ."); 
 
 	MIS_Torlof_Dmt = LOG_RUNNING;
 };
@@ -1044,7 +1044,7 @@ instance DIA_Torlof_DmtSuccess	(C_INFO)
 	condition	 = 	DIA_Torlof_DmtSuccess_Condition;
 	information	 = 	DIA_Torlof_DmtSuccess_Info;
 
-	description	 = 	"Люди с гор в черных рясах больше не будут беспокоить нас.";
+	description	 = 	"Р›СЋРґРё СЃ РіРѕСЂ РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ Р±РµСЃРїРѕРєРѕРёС‚СЊ РЅР°СЃ.";
 };
 
 func int DIA_Torlof_DmtSuccess_Condition ()
@@ -1058,9 +1058,9 @@ func int DIA_Torlof_DmtSuccess_Condition ()
 
 func void DIA_Torlof_DmtSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_DmtSuccess_15_00"); //Люди с гор в черных рясах больше не будут беспокоить нас.
-	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_01"); //Ты смог разобраться с ними? Отлично!
-	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_02"); //Я сразу не доверял этим парням. За версту было видно, что от них будут одни неприятности...
+	AI_Output (other, self, "DIA_Torlof_DmtSuccess_15_00"); //Р›СЋРґРё СЃ РіРѕСЂ РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ Р±РµСЃРїРѕРєРѕРёС‚СЊ РЅР°СЃ.
+	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_01"); //РўС‹ СЃРјРѕРі СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РЅРёРјРё? РћС‚Р»РёС‡РЅРѕ!
+	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_02"); //РЇ СЃСЂР°Р·Сѓ РЅРµ РґРѕРІРµСЂСЏР» СЌС‚РёРј РїР°СЂРЅСЏРј. Р—Р° РІРµСЂСЃС‚Сѓ Р±С‹Р»Рѕ РІРёРґРЅРѕ, С‡С‚Рѕ РѕС‚ РЅРёС… Р±СѓРґСѓС‚ РѕРґРЅРё РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё...
 	
 	MIS_Torlof_Dmt = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Torlof_DMT);
@@ -1113,7 +1113,7 @@ instance DIA_Torlof_WOISTSYLVIO		(C_INFO)
 	condition	 = 	DIA_Torlof_WOISTSYLVIO_Condition;
 	information	 = 	DIA_Torlof_WOISTSYLVIO_Info;
 
-	description	 = 	"Что, часть наемников ушла отсюда?";
+	description	 = 	"Р§С‚Рѕ, С‡Р°СЃС‚СЊ РЅР°РµРјРЅРёРєРѕРІ СѓС€Р»Р° РѕС‚СЃСЋРґР°?";
 };
 
 func int DIA_Torlof_WOISTSYLVIO_Condition ()
@@ -1126,11 +1126,11 @@ func int DIA_Torlof_WOISTSYLVIO_Condition ()
 
 func void DIA_Torlof_WOISTSYLVIO_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_WOISTSYLVIO_15_00"); //Что, часть наемников ушла отсюда?
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_01"); //Сильвио забрал нескольких парней и ушел через проход.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_02"); //Поговаривают, что там появились драконы. Когда он это услышал, его было не остановить.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_03"); //Кто знает? Сокровища драконов наверняка можно очень дорого продать.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_04"); //Но меня это не касается. Я моряк. Я принадлежу морю, и мне нет дела до душного логова дракона.
+	AI_Output			(other, self, "DIA_Torlof_WOISTSYLVIO_15_00"); //Р§С‚Рѕ, С‡Р°СЃС‚СЊ РЅР°РµРјРЅРёРєРѕРІ СѓС€Р»Р° РѕС‚СЃСЋРґР°?
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_01"); //РЎРёР»СЊРІРёРѕ Р·Р°Р±СЂР°Р» РЅРµСЃРєРѕР»СЊРєРёС… РїР°СЂРЅРµР№ Рё СѓС€РµР» С‡РµСЂРµР· РїСЂРѕС…РѕРґ.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_02"); //РџРѕРіРѕРІР°СЂРёРІР°СЋС‚, С‡С‚Рѕ С‚Р°Рј РїРѕСЏРІРёР»РёСЃСЊ РґСЂР°РєРѕРЅС‹. РљРѕРіРґР° РѕРЅ СЌС‚Рѕ СѓСЃР»С‹С€Р°Р», РµРіРѕ Р±С‹Р»Рѕ РЅРµ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_03"); //РљС‚Рѕ Р·РЅР°РµС‚? РЎРѕРєСЂРѕРІРёС‰Р° РґСЂР°РєРѕРЅРѕРІ РЅР°РІРµСЂРЅСЏРєР° РјРѕР¶РЅРѕ РѕС‡РµРЅСЊ РґРѕСЂРѕРіРѕ РїСЂРѕРґР°С‚СЊ.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_04"); //РќРѕ РјРµРЅСЏ СЌС‚Рѕ РЅРµ РєР°СЃР°РµС‚СЃСЏ. РЇ РјРѕСЂСЏРє. РЇ РїСЂРёРЅР°РґР»РµР¶Сѓ РјРѕСЂСЋ, Рё РјРЅРµ РЅРµС‚ РґРµР»Р° РґРѕ РґСѓС€РЅРѕРіРѕ Р»РѕРіРѕРІР° РґСЂР°РєРѕРЅР°.
 
 };
 
@@ -1178,7 +1178,7 @@ instance DIA_Torlof_BEMYCAPTAIN		(C_INFO)
 	condition	 = 	DIA_Torlof_BEMYCAPTAIN_Condition;
 	information	 = 	DIA_Torlof_BEMYCAPTAIN_Info;
 
-	description	 = 	"Ты моряк?";
+	description	 = 	"РўС‹ РјРѕСЂСЏРє?";
 };
 
 func int DIA_Torlof_BEMYCAPTAIN_Condition ()
@@ -1192,18 +1192,18 @@ func int DIA_Torlof_BEMYCAPTAIN_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_00"); //Ты моряк?
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_01"); //Ты что, только узнал об этом? Да, черт побери, я моряк. А почему ты спрашиваешь?
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_02"); //Я мог бы найти применение твоим талантам. Мне нужно добраться до острова.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_03"); //(смеется) До острова? Да у тебя даже нет корабля, не говоря уже о команде.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_04"); //Нет, мой мальчик. Если ты хочешь воспользоваться моими услугами в качестве капитана и учителя силы, ты должен сначала доказать мне, что ты понимаешь, о чем говоришь.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_05"); //Кроме того, у меня хватает и других проблем. Паладины не ушли из города, как я ожидал.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_06"); //Должно произойти что-то очень серьезное, чтобы они убрались оттуда.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_07"); //Направляйся в замок в Долине Рудников. Укради у стражника ключ от главных ворот и открой их. А орки позаботятся об остальном!
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_00"); //РўС‹ РјРѕСЂСЏРє?
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_01"); //РўС‹ С‡С‚Рѕ, С‚РѕР»СЊРєРѕ СѓР·РЅР°Р» РѕР± СЌС‚РѕРј? Р”Р°, С‡РµСЂС‚ РїРѕР±РµСЂРё, СЏ РјРѕСЂСЏРє. Рђ РїРѕС‡РµРјСѓ С‚С‹ СЃРїСЂР°С€РёРІР°РµС€СЊ?
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_02"); //РЇ РјРѕРі Р±С‹ РЅР°Р№С‚Рё РїСЂРёРјРµРЅРµРЅРёРµ С‚РІРѕРёРј С‚Р°Р»Р°РЅС‚Р°Рј. РњРЅРµ РЅСѓР¶РЅРѕ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РѕСЃС‚СЂРѕРІР°.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_03"); //(СЃРјРµРµС‚СЃСЏ) Р”Рѕ РѕСЃС‚СЂРѕРІР°? Р”Р° Сѓ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ РєРѕСЂР°Р±Р»СЏ, РЅРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ Рѕ РєРѕРјР°РЅРґРµ.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_04"); //РќРµС‚, РјРѕР№ РјР°Р»СЊС‡РёРє. Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РјРѕРёРјРё СѓСЃР»СѓРіР°РјРё РІ РєР°С‡РµСЃС‚РІРµ РєР°РїРёС‚Р°РЅР° Рё СѓС‡РёС‚РµР»СЏ СЃРёР»С‹, С‚С‹ РґРѕР»Р¶РµРЅ СЃРЅР°С‡Р°Р»Р° РґРѕРєР°Р·Р°С‚СЊ РјРЅРµ, С‡С‚Рѕ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј РіРѕРІРѕСЂРёС€СЊ.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_05"); //РљСЂРѕРјРµ С‚РѕРіРѕ, Сѓ РјРµРЅСЏ С…РІР°С‚Р°РµС‚ Рё РґСЂСѓРіРёС… РїСЂРѕР±Р»РµРј. РџР°Р»Р°РґРёРЅС‹ РЅРµ СѓС€Р»Рё РёР· РіРѕСЂРѕРґР°, РєР°Рє СЏ РѕР¶РёРґР°Р».
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_06"); //Р”РѕР»Р¶РЅРѕ РїСЂРѕРёР·РѕР№С‚Рё С‡С‚Рѕ-С‚Рѕ РѕС‡РµРЅСЊ СЃРµСЂСЊРµР·РЅРѕРµ, С‡С‚РѕР±С‹ РѕРЅРё СѓР±СЂР°Р»РёСЃСЊ РѕС‚С‚СѓРґР°.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_07"); //РќР°РїСЂР°РІР»СЏР№СЃСЏ РІ Р·Р°РјРѕРє РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. РЈРєСЂР°РґРё Сѓ СЃС‚СЂР°Р¶РЅРёРєР° РєР»СЋС‡ РѕС‚ РіР»Р°РІРЅС‹С… РІРѕСЂРѕС‚ Рё РѕС‚РєСЂРѕР№ РёС…. Рђ РѕСЂРєРё РїРѕР·Р°Р±РѕС‚СЏС‚СЃСЏ РѕР± РѕСЃС‚Р°Р»СЊРЅРѕРј!
 
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);      
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);    
-	B_LogEntry (TOPIC_Captain,"Прежде чем Торлоф согласится занять пост капитана, я должен заставить паладинов покинуть город. Он говорит, что нужно устроить инцидент в замке в Долине рудников. Он хочет, чтобы я украл ключ от главных ворот у стражника и впустил орков в замок. Он надеется, что это заставит паладинов покинуть город, чтобы помочь своим товарищам.");
+	B_LogEntry (TOPIC_Captain,"РџСЂРµР¶РґРµ С‡РµРј РўРѕСЂР»РѕС„ СЃРѕРіР»Р°СЃРёС‚СЃСЏ Р·Р°РЅСЏС‚СЊ РїРѕСЃС‚ РєР°РїРёС‚Р°РЅР°, СЏ РґРѕР»Р¶РµРЅ Р·Р°СЃС‚Р°РІРёС‚СЊ РїР°Р»Р°РґРёРЅРѕРІ РїРѕРєРёРЅСѓС‚СЊ РіРѕСЂРѕРґ. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅСѓР¶РЅРѕ СѓСЃС‚СЂРѕРёС‚СЊ РёРЅС†РёРґРµРЅС‚ РІ Р·Р°РјРєРµ РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СѓРєСЂР°Р» РєР»СЋС‡ РѕС‚ РіР»Р°РІРЅС‹С… РІРѕСЂРѕС‚ Сѓ СЃС‚СЂР°Р¶РЅРёРєР° Рё РІРїСѓСЃС‚РёР» РѕСЂРєРѕРІ РІ Р·Р°РјРѕРє. РћРЅ РЅР°РґРµРµС‚СЃСЏ, С‡С‚Рѕ СЌС‚Рѕ Р·Р°СЃС‚Р°РІРёС‚ РїР°Р»Р°РґРёРЅРѕРІ РїРѕРєРёРЅСѓС‚СЊ РіРѕСЂРѕРґ, С‡С‚РѕР±С‹ РїРѕРјРѕС‡СЊ СЃРІРѕРёРј С‚РѕРІР°СЂРёС‰Р°Рј.");
 };                                                                                                                                                                                                                                                                                                                                                                                                                   
 ///////////////////////////////////////////////////////////////////////                                                                                                                                                                                                                                                                                                                                              
 //	Info BeMyCaptain2s
@@ -1215,7 +1215,7 @@ instance DIA_Torlof_BEMYCAPTAIN2		(C_INFO)
 	condition	 = 	DIA_Torlof_BEMYCAPTAIN2_Condition;
 	information	 = 	DIA_Torlof_BEMYCAPTAIN2_Info;
 
-	description	 = 	"Ворота замка в Долине Рудников открыты ...";
+	description	 = 	"Р’РѕСЂРѕС‚Р° Р·Р°РјРєР° РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РѕС‚РєСЂС‹С‚С‹ ...";
 };
 
 func int DIA_Torlof_BEMYCAPTAIN2_Condition ()
@@ -1229,10 +1229,10 @@ func int DIA_Torlof_BEMYCAPTAIN2_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN2_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_00"); //Ворота замка в Долине Рудников открыты, и их заклинило. Теперь ничто не сдерживает орков, и они берут этот замок приступом.
- 	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_01"); //Паладины в замке несут тяжелые потери.
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_02"); //И, я думаю, не пройдет много времени, когда паладины из города выступят в Долину Рудников, чтобы выручить парней, осажденных в замке.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN2_01_03"); //Это хорошие новости. Теперь ничто не мешает мне покинуть это богом проклятое место.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_00"); //Р’РѕСЂРѕС‚Р° Р·Р°РјРєР° РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РѕС‚РєСЂС‹С‚С‹, Рё РёС… Р·Р°РєР»РёРЅРёР»Рѕ. РўРµРїРµСЂСЊ РЅРёС‡С‚Рѕ РЅРµ СЃРґРµСЂР¶РёРІР°РµС‚ РѕСЂРєРѕРІ, Рё РѕРЅРё Р±РµСЂСѓС‚ СЌС‚РѕС‚ Р·Р°РјРѕРє РїСЂРёСЃС‚СѓРїРѕРј.
+ 	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_01"); //РџР°Р»Р°РґРёРЅС‹ РІ Р·Р°РјРєРµ РЅРµСЃСѓС‚ С‚СЏР¶РµР»С‹Рµ РїРѕС‚РµСЂРё.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_02"); //Р, СЏ РґСѓРјР°СЋ, РЅРµ РїСЂРѕР№РґРµС‚ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё, РєРѕРіРґР° РїР°Р»Р°РґРёРЅС‹ РёР· РіРѕСЂРѕРґР° РІС‹СЃС‚СѓРїСЏС‚ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ, С‡С‚РѕР±С‹ РІС‹СЂСѓС‡РёС‚СЊ РїР°СЂРЅРµР№, РѕСЃР°Р¶РґРµРЅРЅС‹С… РІ Р·Р°РјРєРµ.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN2_01_03"); //Р­С‚Рѕ С…РѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё. РўРµРїРµСЂСЊ РЅРёС‡С‚Рѕ РЅРµ РјРµС€Р°РµС‚ РјРЅРµ РїРѕРєРёРЅСѓС‚СЊ СЌС‚Рѕ Р±РѕРіРѕРј РїСЂРѕРєР»СЏС‚РѕРµ РјРµСЃС‚Рѕ.
 	B_GivePlayerXP (XP_Ambient);
 	
 };
@@ -1247,7 +1247,7 @@ instance DIA_Torlof_BEMYCAPTAIN3		(C_INFO)
 	information	 = 	DIA_Torlof_BEMYCAPTAIN3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Теперь ты поможешь мне добраться до острова?";
+	description	 = 	"РўРµРїРµСЂСЊ С‚С‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РѕСЃС‚СЂРѕРІР°?";
 };
 var int Torlof_PaidToBeCaptain;
 func int DIA_Torlof_BEMYCAPTAIN3_Condition ()
@@ -1262,37 +1262,37 @@ func int DIA_Torlof_BEMYCAPTAIN3_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN3_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_15_00"); //Теперь ты поможешь мне добраться до острова?
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_01"); //Ох, да. Ты хотел добраться до острова. Ммм. Вот мои условия.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_02"); //Ты заплатишь мне 2500 золотом, и я готов стать капитаном твоего корабля.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_03"); //А также я готов повышать твою силу и ловкость, когда ты только этого захочешь.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_15_00"); //РўРµРїРµСЂСЊ С‚С‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РѕСЃС‚СЂРѕРІР°?
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_01"); //РћС…, РґР°. РўС‹ С…РѕС‚РµР» РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РѕСЃС‚СЂРѕРІР°. РњРјРј. Р’РѕС‚ РјРѕРё СѓСЃР»РѕРІРёСЏ.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_02"); //РўС‹ Р·Р°РїР»Р°С‚РёС€СЊ РјРЅРµ 2500 Р·РѕР»РѕС‚РѕРј, Рё СЏ РіРѕС‚РѕРІ СЃС‚Р°С‚СЊ РєР°РїРёС‚Р°РЅРѕРј С‚РІРѕРµРіРѕ РєРѕСЂР°Р±Р»СЏ.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_03"); //Рђ С‚Р°РєР¶Рµ СЏ РіРѕС‚РѕРІ РїРѕРІС‹С€Р°С‚СЊ С‚РІРѕСЋ СЃРёР»Сѓ Рё Р»РѕРІРєРѕСЃС‚СЊ, РєРѕРіРґР° С‚С‹ С‚РѕР»СЊРєРѕ СЌС‚РѕРіРѕ Р·Р°С…РѕС‡РµС€СЊ.
 
 	Info_ClearChoices	(DIA_Torlof_BEMYCAPTAIN3);
-	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "Это чертовски большая сумма.", DIA_Torlof_BEMYCAPTAIN3_zuViel );
-	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "Хорошо. Вот твое золото.", DIA_Torlof_BEMYCAPTAIN3_ok );
+	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "Р­С‚Рѕ С‡РµСЂС‚РѕРІСЃРєРё Р±РѕР»СЊС€Р°СЏ СЃСѓРјРјР°.", DIA_Torlof_BEMYCAPTAIN3_zuViel );
+	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.", DIA_Torlof_BEMYCAPTAIN3_ok );
 
 };
 func void DIA_Torlof_BEMYCAPTAIN3_zuViel ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_zuViel_15_00"); //Это чертовски большая сумма.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_01"); //Да. Помощь профессионала стоит дорого. Но у тебя нет другого выбора. Тебе не найти другого капитана для своего корабля.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_02"); //Так что плати денежки и не создавай проблем.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_zuViel_15_00"); //Р­С‚Рѕ С‡РµСЂС‚РѕРІСЃРєРё Р±РѕР»СЊС€Р°СЏ СЃСѓРјРјР°.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_01"); //Р”Р°. РџРѕРјРѕС‰СЊ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»Р° СЃС‚РѕРёС‚ РґРѕСЂРѕРіРѕ. РќРѕ Сѓ С‚РµР±СЏ РЅРµС‚ РґСЂСѓРіРѕРіРѕ РІС‹Р±РѕСЂР°. РўРµР±Рµ РЅРµ РЅР°Р№С‚Рё РґСЂСѓРіРѕРіРѕ РєР°РїРёС‚Р°РЅР° РґР»СЏ СЃРІРѕРµРіРѕ РєРѕСЂР°Р±Р»СЏ.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_02"); //РўР°Рє С‡С‚Рѕ РїР»Р°С‚Рё РґРµРЅРµР¶РєРё Рё РЅРµ СЃРѕР·РґР°РІР°Р№ РїСЂРѕР±Р»РµРј.
 	Info_ClearChoices	(DIA_Torlof_BEMYCAPTAIN3);
-	B_LogEntry (TOPIC_Captain,"Торлоф теперь готов командовать кораблем. Правда, он хочет получить за эту работу 2500 золотых монет.");     
+	B_LogEntry (TOPIC_Captain,"РўРѕСЂР»РѕС„ С‚РµРїРµСЂСЊ РіРѕС‚РѕРІ РєРѕРјР°РЅРґРѕРІР°С‚СЊ РєРѕСЂР°Р±Р»РµРј. РџСЂР°РІРґР°, РѕРЅ С…РѕС‡РµС‚ РїРѕР»СѓС‡РёС‚СЊ Р·Р° СЌС‚Сѓ СЂР°Р±РѕС‚Сѓ 2500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.");     
 };
 
 func void DIA_Torlof_BEMYCAPTAIN3_ok ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_ok_15_00"); //Хорошо. Вот твое золото.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_ok_15_00"); //РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.
 	if (B_GiveInvItems (other, self, ItMi_Gold,	2500))
 	{
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_01"); //Превосходно. Теперь тебе остается только рассказать подробно, что я должен делать.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_01"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ. РўРµРїРµСЂСЊ С‚РµР±Рµ РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РїРѕРґСЂРѕР±РЅРѕ, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ.
 		Torlof_PaidToBeCaptain = TRUE;
-		B_LogEntry (TOPIC_Captain,"После того, как Торлоф получил 2500 золотых монет, он, наконец, готов идти со мной.");     
+		B_LogEntry (TOPIC_Captain,"РџРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє РўРѕСЂР»РѕС„ РїРѕР»СѓС‡РёР» 2500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚, РѕРЅ, РЅР°РєРѕРЅРµС†, РіРѕС‚РѕРІ РёРґС‚Рё СЃРѕ РјРЅРѕР№.");     
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_02"); //Ты пытаешься надуть меня? Сначала добудь деньги. Тогда и поговорим.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_02"); //РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РЅР°РґСѓС‚СЊ РјРµРЅСЏ? РЎРЅР°С‡Р°Р»Р° РґРѕР±СѓРґСЊ РґРµРЅСЊРіРё. РўРѕРіРґР° Рё РїРѕРіРѕРІРѕСЂРёРј.
 	};
 	Info_ClearChoices	(DIA_Torlof_BEMYCAPTAIN3);
 };
@@ -1309,7 +1309,7 @@ instance DIA_Torlof_BEMYCAPTAIN4		(C_INFO)
 	information	 = 	DIA_Torlof_BEMYCAPTAIN4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Будь моим капитаном.";
+	description	 = 	"Р‘СѓРґСЊ РјРѕРёРј РєР°РїРёС‚Р°РЅРѕРј.";
 };
 
 func int DIA_Torlof_BEMYCAPTAIN4_Condition ()
@@ -1323,11 +1323,11 @@ func int DIA_Torlof_BEMYCAPTAIN4_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN4_Info ()
 {
-		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_00"); //Будь моим капитаном.
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_01"); //Хорошо. Дай мне корабль и крепкую команду, и я доставлю тебя на этот проклятый остров.
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_02"); //У тебя есть морская карта? Без нее мы далеко не уплывем.
-		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_03"); //Я позабочусь обо всем. Увидимся в порту.
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_04"); //Мне не терпится увидеть, как это все у тебя получится.
+		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_00"); //Р‘СѓРґСЊ РјРѕРёРј РєР°РїРёС‚Р°РЅРѕРј.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_01"); //РҐРѕСЂРѕС€Рѕ. Р”Р°Р№ РјРЅРµ РєРѕСЂР°Р±Р»СЊ Рё РєСЂРµРїРєСѓСЋ РєРѕРјР°РЅРґСѓ, Рё СЏ РґРѕСЃС‚Р°РІР»СЋ С‚РµР±СЏ РЅР° СЌС‚РѕС‚ РїСЂРѕРєР»СЏС‚С‹Р№ РѕСЃС‚СЂРѕРІ.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_02"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РјРѕСЂСЃРєР°СЏ РєР°СЂС‚Р°? Р‘РµР· РЅРµРµ РјС‹ РґР°Р»РµРєРѕ РЅРµ СѓРїР»С‹РІРµРј.
+		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_03"); //РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР±Рѕ РІСЃРµРј. РЈРІРёРґРёРјСЃСЏ РІ РїРѕСЂС‚Сѓ.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_04"); //РњРЅРµ РЅРµ С‚РµСЂРїРёС‚СЃСЏ СѓРІРёРґРµС‚СЊ, РєР°Рє СЌС‚Рѕ РІСЃРµ Сѓ С‚РµР±СЏ РїРѕР»СѓС‡РёС‚СЃСЏ.
 	
 		AI_StopProcessInfos (self);
 		SCGotCaptain = TRUE;
@@ -1350,7 +1350,7 @@ instance DIA_Torlof_LOSFAHREN		(C_INFO)
 	information	 = 	DIA_Torlof_LOSFAHREN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Мы отправляемся к острову.";
+	description	 = 	"РњС‹ РѕС‚РїСЂР°РІР»СЏРµРјСЃСЏ Рє РѕСЃС‚СЂРѕРІСѓ.";
 };
 
 func int DIA_Torlof_LOSFAHREN_Condition ()
@@ -1364,21 +1364,21 @@ func int DIA_Torlof_LOSFAHREN_Condition ()
 
 func void DIA_Torlof_LOSFAHREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_LOSFAHREN_15_00"); //Мы отправляемся к острову.
+	AI_Output			(other, self, "DIA_Torlof_LOSFAHREN_15_00"); //РњС‹ РѕС‚РїСЂР°РІР»СЏРµРјСЃСЏ Рє РѕСЃС‚СЂРѕРІСѓ.
 
 	if ((B_CaptainConditions (self)) == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_01"); //Хорошо. Дай мне морскую карту, и мы поднимаем паруса.
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_02"); //(кричит) Поднять паруса!
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_03"); //Проверь, успел ли ты взять все необходимое. Возврата не будет.
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_04"); //Если ты во всем уверен, иди, вздремни в капитанской каюте. Это путешествие будет долгим.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_01"); //РҐРѕСЂРѕС€Рѕ. Р”Р°Р№ РјРЅРµ РјРѕСЂСЃРєСѓСЋ РєР°СЂС‚Сѓ, Рё РјС‹ РїРѕРґРЅРёРјР°РµРј РїР°СЂСѓСЃР°.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_02"); //(РєСЂРёС‡РёС‚) РџРѕРґРЅСЏС‚СЊ РїР°СЂСѓСЃР°!
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_03"); //РџСЂРѕРІРµСЂСЊ, СѓСЃРїРµР» Р»Рё С‚С‹ РІР·СЏС‚СЊ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјРѕРµ. Р’РѕР·РІСЂР°С‚Р° РЅРµ Р±СѓРґРµС‚.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_04"); //Р•СЃР»Рё С‚С‹ РІРѕ РІСЃРµРј СѓРІРµСЂРµРЅ, РёРґРё, РІР·РґСЂРµРјРЅРё РІ РєР°РїРёС‚Р°РЅСЃРєРѕР№ РєР°СЋС‚Рµ. Р­С‚Рѕ РїСѓС‚РµС€РµСЃС‚РІРёРµ Р±СѓРґРµС‚ РґРѕР»РіРёРј.
 	AI_StopProcessInfos (self);
 	B_CaptainCallsAllOnBoard (self);
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_05"); //Без корабля, команды и морской карты никакого путешествия не будет, приятель.
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_06"); //Мне нужно, по крайней мере, 5 человек, готовых встать под мое начало.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_05"); //Р‘РµР· РєРѕСЂР°Р±Р»СЏ, РєРѕРјР°РЅРґС‹ Рё РјРѕСЂСЃРєРѕР№ РєР°СЂС‚С‹ РЅРёРєР°РєРѕРіРѕ РїСѓС‚РµС€РµСЃС‚РІРёСЏ РЅРµ Р±СѓРґРµС‚, РїСЂРёСЏС‚РµР»СЊ.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_06"); //РњРЅРµ РЅСѓР¶РЅРѕ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, 5 С‡РµР»РѕРІРµРє, РіРѕС‚РѕРІС‹С… РІСЃС‚Р°С‚СЊ РїРѕРґ РјРѕРµ РЅР°С‡Р°Р»Рѕ.
 	AI_StopProcessInfos (self);
 	};
 };
@@ -1394,7 +1394,7 @@ instance DIA_Torlof_PERM5_NOTCAPTAIN		(C_INFO)
 	information	 = 	DIA_Torlof_PERM5_NOTCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я решил взять другого капитана.";
+	description	 = 	"РЇ СЂРµС€РёР» РІР·СЏС‚СЊ РґСЂСѓРіРѕРіРѕ РєР°РїРёС‚Р°РЅР°.";
 };
 
 func int DIA_Torlof_PERM5_NOTCAPTAIN_Condition ()
@@ -1409,8 +1409,8 @@ func int DIA_Torlof_PERM5_NOTCAPTAIN_Condition ()
 
 func void DIA_Torlof_PERM5_NOTCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_PERM5_NOTCAPTAIN_15_00"); //Я решил взять другого капитана. Верни мне мои деньги.
-	AI_Output			(self, other, "DIA_Torlof_PERM5_NOTCAPTAIN_01_01"); //Черта с два! Если ты заплатил мне вперед, а затем отказался от моих услуг, это твои проблемы.
+	AI_Output			(other, self, "DIA_Torlof_PERM5_NOTCAPTAIN_15_00"); //РЇ СЂРµС€РёР» РІР·СЏС‚СЊ РґСЂСѓРіРѕРіРѕ РєР°РїРёС‚Р°РЅР°. Р’РµСЂРЅРё РјРЅРµ РјРѕРё РґРµРЅСЊРіРё.
+	AI_Output			(self, other, "DIA_Torlof_PERM5_NOTCAPTAIN_01_01"); //Р§РµСЂС‚Р° СЃ РґРІР°! Р•СЃР»Рё С‚С‹ Р·Р°РїР»Р°С‚РёР» РјРЅРµ РІРїРµСЂРµРґ, Р° Р·Р°С‚РµРј РѕС‚РєР°Р·Р°Р»СЃСЏ РѕС‚ РјРѕРёС… СѓСЃР»СѓРі, СЌС‚Рѕ С‚РІРѕРё РїСЂРѕР±Р»РµРјС‹.
 	AI_StopProcessInfos (self);
 };
 

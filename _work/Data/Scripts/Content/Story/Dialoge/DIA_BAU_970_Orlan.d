@@ -31,7 +31,7 @@ instance DIA_Orlan_Wein		(C_INFO)
 	condition	 = 	DIA_Orlan_Wein_Condition;
 	information	 = 	DIA_Orlan_Wein_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Я принес вино из монастыря.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ РІРёРЅРѕ РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ.";
 };
 func int DIA_Orlan_Wein_Condition ()
 {	
@@ -43,19 +43,19 @@ func int DIA_Orlan_Wein_Condition ()
 };
 func void DIA_Orlan_Wein_Info ()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_15_00"); //Я принес вино из монастыря.
-	AI_Output (self, other, "DIA_Orlan_Wein_05_01"); //Превосходно. Это именно то, что мне нужно.
-	AI_Output (self, other, "DIA_Orlan_Wein_05_02"); //Я уже договорился о цене с мастером Гораксом. Я дам тебе 100 золотых монет прямо сейчас.
+	AI_Output (other, self, "DIA_Orlan_Wein_15_00"); //РЇ РїСЂРёРЅРµСЃ РІРёРЅРѕ РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ.
+	AI_Output (self, other, "DIA_Orlan_Wein_05_01"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ. Р­С‚Рѕ РёРјРµРЅРЅРѕ С‚Рѕ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ.
+	AI_Output (self, other, "DIA_Orlan_Wein_05_02"); //РЇ СѓР¶Рµ РґРѕРіРѕРІРѕСЂРёР»СЃСЏ Рѕ С†РµРЅРµ СЃ РјР°СЃС‚РµСЂРѕРј Р“РѕСЂР°РєСЃРѕРј. РЇ РґР°Рј С‚РµР±Рµ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ.
 	
 	Info_ClearChoices (DIA_Orlan_Wein);
 	
-	Info_AddChoice (DIA_Orlan_Wein,"Хорошо, давай мне это золото.",DIA_Orlan_Wein_JA);
-	Info_AddChoice (DIA_Orlan_Wein,"Ты пытаешься надуть меня?",DIA_Orlan_Wein_NEIN);
+	Info_AddChoice (DIA_Orlan_Wein,"РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РјРЅРµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ.",DIA_Orlan_Wein_JA);
+	Info_AddChoice (DIA_Orlan_Wein,"РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РЅР°РґСѓС‚СЊ РјРµРЅСЏ?",DIA_Orlan_Wein_NEIN);
 };
 FUNC VOID DIA_Orlan_Wein_JA()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_JA_15_00"); //Хорошо, давай мне это золото.
-	AI_Output (self, other, "DIA_Orlan_Wein_JA_05_01"); //Держи. С тобой приятно иметь дело.
+	AI_Output (other, self, "DIA_Orlan_Wein_JA_15_00"); //РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РјРЅРµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ.
+	AI_Output (self, other, "DIA_Orlan_Wein_JA_05_01"); //Р”РµСЂР¶Рё. РЎ С‚РѕР±РѕР№ РїСЂРёСЏС‚РЅРѕ РёРјРµС‚СЊ РґРµР»Рѕ.
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 100);
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
@@ -64,19 +64,19 @@ FUNC VOID DIA_Orlan_Wein_JA()
 };
 FUNC VOID DIA_Orlan_Wein_NEIN()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_NEIN_15_00"); //Ты пытаешься надуть меня? Оно стоит 240 монет.
-	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_01"); //Так, Горакс предупредил тебя, да? Ну хорошо, может быть, мы сможем договориться. Послушай, давай поступим так - я дам тебе 100 монет за это вино.
-	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_02"); //Ты скажешь Гораксу, что я обманул тебя, а я дам тебе в придачу ЧЕТЫРЕ свитка с заклинаниями.
+	AI_Output (other, self, "DIA_Orlan_Wein_NEIN_15_00"); //РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РЅР°РґСѓС‚СЊ РјРµРЅСЏ? РћРЅРѕ СЃС‚РѕРёС‚ 240 РјРѕРЅРµС‚.
+	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_01"); //РўР°Рє, Р“РѕСЂР°РєСЃ РїСЂРµРґСѓРїСЂРµРґРёР» С‚РµР±СЏ, РґР°? РќСѓ С…РѕСЂРѕС€Рѕ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, РјС‹ СЃРјРѕР¶РµРј РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ. РџРѕСЃР»СѓС€Р°Р№, РґР°РІР°Р№ РїРѕСЃС‚СѓРїРёРј С‚Р°Рє - СЏ РґР°Рј С‚РµР±Рµ 100 РјРѕРЅРµС‚ Р·Р° СЌС‚Рѕ РІРёРЅРѕ.
+	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_02"); //РўС‹ СЃРєР°Р¶РµС€СЊ Р“РѕСЂР°РєСЃСѓ, С‡С‚Рѕ СЏ РѕР±РјР°РЅСѓР» С‚РµР±СЏ, Р° СЏ РґР°Рј С‚РµР±Рµ РІ РїСЂРёРґР°С‡Сѓ Р§Р•РўР«Р Р• СЃРІРёС‚РєР° СЃ Р·Р°РєР»РёРЅР°РЅРёСЏРјРё.
 	
 	Info_ClearChoices (DIA_Orlan_Wein);
-	Info_AddChoice (DIA_Orlan_Wein,"Эй, давай сюда 240 монет.",DIA_Orlan_Wein_Nie);
-	Info_AddChoice (DIA_Orlan_Wein,"Хм, звучит заманчиво. Давай сюда эти свитки.",DIA_Orlan_Wein_Okay);
-	Info_AddChoice (DIA_Orlan_Wein,"А что это за свитки?",DIA_Orlan_Wein_Was);
+	Info_AddChoice (DIA_Orlan_Wein,"Р­Р№, РґР°РІР°Р№ СЃСЋРґР° 240 РјРѕРЅРµС‚.",DIA_Orlan_Wein_Nie);
+	Info_AddChoice (DIA_Orlan_Wein,"РҐРј, Р·РІСѓС‡РёС‚ Р·Р°РјР°РЅС‡РёРІРѕ. Р”Р°РІР°Р№ СЃСЋРґР° СЌС‚Рё СЃРІРёС‚РєРё.",DIA_Orlan_Wein_Okay);
+	Info_AddChoice (DIA_Orlan_Wein,"Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° СЃРІРёС‚РєРё?",DIA_Orlan_Wein_Was);
 };
 FUNC VOID DIA_Orlan_Wein_Nie()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_Nie_15_00"); //Эй, давай сюда 240 монет.
-	AI_Output (self, other, "DIA_Orlan_Wein_Nie_05_01"); //Ты не хочешь вести со мной бизнес, да? (вздыхает) Ну хорошо, вот твое золото.
+	AI_Output (other, self, "DIA_Orlan_Wein_Nie_15_00"); //Р­Р№, РґР°РІР°Р№ СЃСЋРґР° 240 РјРѕРЅРµС‚.
+	AI_Output (self, other, "DIA_Orlan_Wein_Nie_05_01"); //РўС‹ РЅРµ С…РѕС‡РµС€СЊ РІРµСЃС‚Рё СЃРѕ РјРЅРѕР№ Р±РёР·РЅРµСЃ, РґР°? (РІР·РґС‹С…Р°РµС‚) РќСѓ С…РѕСЂРѕС€Рѕ, РІРѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 240);
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
@@ -92,8 +92,8 @@ FUNC VOID DIA_Orlan_Wein_Okay()
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 100);
 	
-	AI_Output (other, self, "DIA_Orlan_Wein_Okay_15_00"); //Хм, звучит заманчиво. Давай сюда эти свитки.
-	AI_Output (self, other, "DIA_Orlan_Wein_Okay_05_01"); //Вот твои свитки и золото.
+	AI_Output (other, self, "DIA_Orlan_Wein_Okay_15_00"); //РҐРј, Р·РІСѓС‡РёС‚ Р·Р°РјР°РЅС‡РёРІРѕ. Р”Р°РІР°Р№ СЃСЋРґР° СЌС‚Рё СЃРІРёС‚РєРё.
+	AI_Output (self, other, "DIA_Orlan_Wein_Okay_05_01"); //Р’РѕС‚ С‚РІРѕРё СЃРІРёС‚РєРё Рё Р·РѕР»РѕС‚Рѕ.
 	
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
 	
@@ -106,8 +106,8 @@ FUNC VOID DIA_Orlan_Wein_Okay()
 };
 FUNC VOID DIA_Orlan_Wein_Was()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_Was_15_00"); //А что это за свитки?
-	AI_Output (self, other, "DIA_Orlan_Wein_Was_05_01"); //Понятия не имею - я в этом ничего не понимаю. Они достались мне от гостя, который... э-э... забыл их здесь, да!
+	AI_Output (other, self, "DIA_Orlan_Wein_Was_15_00"); //Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° СЃРІРёС‚РєРё?
+	AI_Output (self, other, "DIA_Orlan_Wein_Was_05_01"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ - СЏ РІ СЌС‚РѕРј РЅРёС‡РµРіРѕ РЅРµ РїРѕРЅРёРјР°СЋ. РћРЅРё РґРѕСЃС‚Р°Р»РёСЃСЊ РјРЅРµ РѕС‚ РіРѕСЃС‚СЏ, РєРѕС‚РѕСЂС‹Р№... СЌ-СЌ... Р·Р°Р±С‹Р» РёС… Р·РґРµСЃСЊ, РґР°!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WerBistDu
@@ -119,7 +119,7 @@ instance DIA_Orlan_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Orlan_WERBISTDU_Condition;
 	information	 = 	DIA_Orlan_WERBISTDU_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Orlan_WERBISTDU_Condition ()
@@ -129,11 +129,11 @@ func int DIA_Orlan_WERBISTDU_Condition ()
 
 func void DIA_Orlan_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_WERBISTDU_15_00"); //Ты кто?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_01"); //Я Орлан, хозяин этой скромной таверны.
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_02"); //Ты что-нибудь ищешь, чужеземец? Может быть, приличный меч или хорошие доспехи?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_03"); //Глоток вина, или, может быть, тебе нужна информация?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_04"); //Я могу дать тебе все это и даже больше, если у тебя есть звонкие монеты.
+	AI_Output			(other, self, "DIA_Orlan_WERBISTDU_15_00"); //РўС‹ РєС‚Рѕ?
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_01"); //РЇ РћСЂР»Р°РЅ, С…РѕР·СЏРёРЅ СЌС‚РѕР№ СЃРєСЂРѕРјРЅРѕР№ С‚Р°РІРµСЂРЅС‹.
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_02"); //РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёС‰РµС€СЊ, С‡СѓР¶РµР·РµРјРµС†? РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїСЂРёР»РёС‡РЅС‹Р№ РјРµС‡ РёР»Рё С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё?
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_03"); //Р“Р»РѕС‚РѕРє РІРёРЅР°, РёР»Рё, РјРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ?
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_04"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РІСЃРµ СЌС‚Рѕ Рё РґР°Р¶Рµ Р±РѕР»СЊС€Рµ, РµСЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ Р·РІРѕРЅРєРёРµ РјРѕРЅРµС‚С‹.
 
 };
 
@@ -147,7 +147,7 @@ instance DIA_Addon_Orlan_Greg		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_Greg_Condition;
 	information	 = 	DIA_Addon_Orlan_Greg_Info;
 
-	description	 = 	"Ты знаешь человека с повязкой на глазу?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ С‡РµР»РѕРІРµРєР° СЃ РїРѕРІСЏР·РєРѕР№ РЅР° РіР»Р°Р·Сѓ?";
 };
 
 func int DIA_Addon_Orlan_Greg_Condition ()
@@ -162,11 +162,11 @@ func int DIA_Addon_Orlan_Greg_Condition ()
 
 func void DIA_Addon_Orlan_Greg_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_Greg_15_00"); //Ты знаешь человека с повязкой на глазу?
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_01"); //Я видел его здесь раньше. Неприятный тип.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_02"); //Некоторое время назад он снял у меня верхнюю комнату. При нем был огромный сундук.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_03"); //Ему нужно было постоянно напоминать о том, что пора платить за комнату. А он совершенно не обращал на это внимания.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_04"); //А в один прекрасный день он просто исчез вместе со своим ящиком. Не люблю таких людей.
+	AI_Output	(other, self, "DIA_Addon_Orlan_Greg_15_00"); //РўС‹ Р·РЅР°РµС€СЊ С‡РµР»РѕРІРµРєР° СЃ РїРѕРІСЏР·РєРѕР№ РЅР° РіР»Р°Р·Сѓ?
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_01"); //РЇ РІРёРґРµР» РµРіРѕ Р·РґРµСЃСЊ СЂР°РЅСЊС€Рµ. РќРµРїСЂРёСЏС‚РЅС‹Р№ С‚РёРї.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_02"); //РќРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РЅР°Р·Р°Рґ РѕРЅ СЃРЅСЏР» Сѓ РјРµРЅСЏ РІРµСЂС…РЅСЋСЋ РєРѕРјРЅР°С‚Сѓ. РџСЂРё РЅРµРј Р±С‹Р» РѕРіСЂРѕРјРЅС‹Р№ СЃСѓРЅРґСѓРє.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_03"); //Р•РјСѓ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ РЅР°РїРѕРјРёРЅР°С‚СЊ Рѕ С‚РѕРј, С‡С‚Рѕ РїРѕСЂР° РїР»Р°С‚РёС‚СЊ Р·Р° РєРѕРјРЅР°С‚Сѓ. Рђ РѕРЅ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµ РѕР±СЂР°С‰Р°Р» РЅР° СЌС‚Рѕ РІРЅРёРјР°РЅРёСЏ.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_04"); //Рђ РІ РѕРґРёРЅ РїСЂРµРєСЂР°СЃРЅС‹Р№ РґРµРЅСЊ РѕРЅ РїСЂРѕСЃС‚Рѕ РёСЃС‡РµР· РІРјРµСЃС‚Рµ СЃРѕ СЃРІРѕРёРј СЏС‰РёРєРѕРј. РќРµ Р»СЋР±Р»СЋ С‚Р°РєРёС… Р»СЋРґРµР№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -179,7 +179,7 @@ instance DIA_Addon_Orlan_Ranger		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_Ranger_Condition;
 	information	 = 	DIA_Addon_Orlan_Ranger_Info;
 
-	description	 = 	"У меня паранойя, или ты действительно постоянно смотришь на мое кольцо?";
+	description	 = 	"РЈ РјРµРЅСЏ РїР°СЂР°РЅРѕР№СЏ, РёР»Рё С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ СЃРјРѕС‚СЂРёС€СЊ РЅР° РјРѕРµ РєРѕР»СЊС†Рѕ?";
 };
 func int DIA_Addon_Orlan_Ranger_Condition ()
 {
@@ -191,32 +191,32 @@ func int DIA_Addon_Orlan_Ranger_Condition ()
 };
 func void DIA_Addon_Orlan_Ranger_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_15_00"); //У меня паранойя, или ты действительно постоянно смотришь на мое кольцо?
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_05_01"); //Я не совсем уверен, как это понимать...
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_15_00"); //РЈ РјРµРЅСЏ РїР°СЂР°РЅРѕР№СЏ, РёР»Рё С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ СЃРјРѕС‚СЂРёС€СЊ РЅР° РјРѕРµ РєРѕР»СЊС†Рѕ?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_05_01"); //РЇ РЅРµ СЃРѕРІСЃРµРј СѓРІРµСЂРµРЅ, РєР°Рє СЌС‚Рѕ РїРѕРЅРёРјР°С‚СЊ...
 
 	Orlan_KnowsSCAsRanger = TRUE;
 
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);
-	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Я стал членом Кольца Воды!", DIA_Addon_Orlan_Ranger_Idiot);
-	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Это аквамарин. Видел когда-нибудь такой?", DIA_Addon_Orlan_Ranger_Aqua);
+	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "РЇ СЃС‚Р°Р» С‡Р»РµРЅРѕРј РљРѕР»СЊС†Р° Р’РѕРґС‹!", DIA_Addon_Orlan_Ranger_Idiot);
+	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Р­С‚Рѕ Р°РєРІР°РјР°СЂРёРЅ. Р’РёРґРµР» РєРѕРіРґР°-РЅРёР±СѓРґСЊ С‚Р°РєРѕР№?", DIA_Addon_Orlan_Ranger_Aqua);
 };
 func void DIA_Addon_Orlan_Ranger_Aqua()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Aqua_15_00"); //Это аквамарин. Видел когда-нибудь такой?
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_01"); //Видел. Добро пожаловать в штаб-квартиру, брат по Кольцу.
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Aqua_15_00"); //Р­С‚Рѕ Р°РєРІР°РјР°СЂРёРЅ. Р’РёРґРµР» РєРѕРіРґР°-РЅРёР±СѓРґСЊ С‚Р°РєРѕР№?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_01"); //Р’РёРґРµР». Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ С€С‚Р°Р±-РєРІР°СЂС‚РёСЂСѓ, Р±СЂР°С‚ РїРѕ РљРѕР»СЊС†Сѓ.
 	if (Npc_KnowsInfo (other, DIA_Addon_Orlan_NoMeeting)) //verrissen
 	{
-		AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_02"); //Хотя, конечно, выглядишь ты не особенно одаренным...
+		AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_02"); //РҐРѕС‚СЏ, РєРѕРЅРµС‡РЅРѕ, РІС‹РіР»СЏРґРёС€СЊ С‚С‹ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ РѕРґР°СЂРµРЅРЅС‹Рј...
 	};
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_03"); //Что я могу для тебя сделать?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_03"); //Р§С‚Рѕ СЏ РјРѕРіСѓ РґР»СЏ С‚РµР±СЏ СЃРґРµР»Р°С‚СЊ?
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);
 	B_GivePlayerXP (XP_Ambient);
 };
 func void DIA_Addon_Orlan_Ranger_Idiot ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Lares_15_00"); //Я стал членом Кольца Воды!
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_01"); //Действительно? Не могу поверить, что такого болвана приняли в общество.
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_02"); //Итак, что тебе нужно?
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Lares_15_00"); //РЇ СЃС‚Р°Р» С‡Р»РµРЅРѕРј РљРѕР»СЊС†Р° Р’РѕРґС‹!
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_01"); //Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ? РќРµ РјРѕРіСѓ РїРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ С‚Р°РєРѕРіРѕ Р±РѕР»РІР°РЅР° РїСЂРёРЅСЏР»Рё РІ РѕР±С‰РµСЃС‚РІРѕ.
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_02"); //РС‚Р°Рє, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);	
 };
 
@@ -230,7 +230,7 @@ instance DIA_Addon_Orlan_Teleportstein		(C_INFO)
 	condition	= DIA_Addon_Orlan_Teleportstein_Condition;
 	information	= DIA_Addon_Orlan_Teleportstein_Info;
 
-	description	= "Ты когда-нибудь использовал телепорты?";
+	description	= "РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РёСЃРїРѕР»СЊР·РѕРІР°Р» С‚РµР»РµРїРѕСЂС‚С‹?";
 };
 
 func int DIA_Addon_Orlan_Teleportstein_Condition ()
@@ -244,31 +244,31 @@ func int DIA_Addon_Orlan_Teleportstein_Condition ()
 
 func void DIA_Addon_Orlan_Teleportstein_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_Teleportstein_15_00"); //Ты когда-нибудь использовал телепорты?
-	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_01"); //Ты рехнулся? Пока маги воды не убедят меня, что это безопасно, я и близко подходить к ним не буду.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_02"); //Меня попросили спрятать один из телепортов. Больше я не хочу иметь с этими штуками ничего общего.
+	AI_Output	(other, self, "DIA_Addon_Orlan_Teleportstein_15_00"); //РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РёСЃРїРѕР»СЊР·РѕРІР°Р» С‚РµР»РµРїРѕСЂС‚С‹?
+	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_01"); //РўС‹ СЂРµС…РЅСѓР»СЃСЏ? РџРѕРєР° РјР°РіРё РІРѕРґС‹ РЅРµ СѓР±РµРґСЏС‚ РјРµРЅСЏ, С‡С‚Рѕ СЌС‚Рѕ Р±РµР·РѕРїР°СЃРЅРѕ, СЏ Рё Р±Р»РёР·РєРѕ РїРѕРґС…РѕРґРёС‚СЊ Рє РЅРёРј РЅРµ Р±СѓРґСѓ.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_02"); //РњРµРЅСЏ РїРѕРїСЂРѕСЃРёР»Рё СЃРїСЂСЏС‚Р°С‚СЊ РѕРґРёРЅ РёР· С‚РµР»РµРїРѕСЂС‚РѕРІ. Р‘РѕР»СЊС€Рµ СЏ РЅРµ С…РѕС‡Сѓ РёРјРµС‚СЊ СЃ СЌС‚РёРјРё С€С‚СѓРєР°РјРё РЅРёС‡РµРіРѕ РѕР±С‰РµРіРѕ.
 
 	B_GivePlayerXP (XP_Ambient);
 	Info_ClearChoices	(DIA_Addon_Orlan_Teleportstein);
-	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "А я могу посмотреть на этот телепорт?", DIA_Addon_Orlan_Teleportstein_sehen );
-	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "Где находится телепорт?", DIA_Addon_Orlan_Teleportstein_wo );
+	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "Рђ СЏ РјРѕРіСѓ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РЅР° СЌС‚РѕС‚ С‚РµР»РµРїРѕСЂС‚?", DIA_Addon_Orlan_Teleportstein_sehen );
+	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ С‚РµР»РµРїРѕСЂС‚?", DIA_Addon_Orlan_Teleportstein_wo );
 };
 func void DIA_Addon_Orlan_Teleportstein_sehen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_sehen_15_00"); //А я могу посмотреть на этот телепорт?
-	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_sehen_05_01"); //Смотри, если хочешь. Вот ключ - я запер вход.
+	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_sehen_15_00"); //Рђ СЏ РјРѕРіСѓ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РЅР° СЌС‚РѕС‚ С‚РµР»РµРїРѕСЂС‚?
+	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_sehen_05_01"); //РЎРјРѕС‚СЂРё, РµСЃР»Рё С…РѕС‡РµС€СЊ. Р’РѕС‚ РєР»СЋС‡ - СЏ Р·Р°РїРµСЂ РІС…РѕРґ.
 	CreateInvItems (self, ITKE_ORLAN_TELEPORTSTATION, 1);									
 	B_GiveInvItems (self, other, ITKE_ORLAN_TELEPORTSTATION, 1);
 	
 	Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"Орлан запер камень-телепорт в пещере к юго-западу от своей таверны."); 
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"РћСЂР»Р°РЅ Р·Р°РїРµСЂ РєР°РјРµРЅСЊ-С‚РµР»РµРїРѕСЂС‚ РІ РїРµС‰РµСЂРµ Рє СЋРіРѕ-Р·Р°РїР°РґСѓ РѕС‚ СЃРІРѕРµР№ С‚Р°РІРµСЂРЅС‹."); 
 };
 
 func void DIA_Addon_Orlan_Teleportstein_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_wo_15_00"); //Где находится телепорт?
-	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_wo_05_01"); //Недалеко от моей таверны, на юге, есть пещера. В ней маги воды его и обнаружили.
+	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_wo_15_00"); //Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ С‚РµР»РµРїРѕСЂС‚?
+	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_wo_05_01"); //РќРµРґР°Р»РµРєРѕ РѕС‚ РјРѕРµР№ С‚Р°РІРµСЂРЅС‹, РЅР° СЋРіРµ, РµСЃС‚СЊ РїРµС‰РµСЂР°. Р’ РЅРµР№ РјР°РіРё РІРѕРґС‹ РµРіРѕ Рё РѕР±РЅР°СЂСѓР¶РёР»Рё.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -281,7 +281,7 @@ instance DIA_Addon_Orlan_NoMeeting (C_INFO)
 	condition	= DIA_Addon_Orlan_NoMeeting_Condition;
 	information	= DIA_Addon_Orlan_NoMeeting_Info;
 
-	description	= "Я хочу присоединиться к Кольцу Воды!";
+	description	= "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹!";
 };
 func int DIA_Addon_Orlan_NoMeeting_Condition ()
 {
@@ -295,8 +295,8 @@ func int DIA_Addon_Orlan_NoMeeting_Condition ()
 };
 func void DIA_Addon_Orlan_NoMeeting_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_NoMeeting_15_00"); //Я хочу присоединиться к Кольцу Воды!
-	AI_Output (self, other, "DIA_Addon_Orlan_NoMeeting_05_01"); //Здесь нет никаких колец. Налить тебе выпить?
+	AI_Output (other, self, "DIA_Addon_Orlan_NoMeeting_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹!
+	AI_Output (self, other, "DIA_Addon_Orlan_NoMeeting_05_01"); //Р—РґРµСЃСЊ РЅРµС‚ РЅРёРєР°РєРёС… РєРѕР»РµС†. РќР°Р»РёС‚СЊ С‚РµР±Рµ РІС‹РїРёС‚СЊ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -309,7 +309,7 @@ instance DIA_Addon_Orlan_WhenRangerMeeting		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_WhenRangerMeeting_Condition;
 	information	 = 	DIA_Addon_Orlan_WhenRangerMeeting_Info;
 
-	description	 = 	"Мне сказали, что в твоей таверне будет встреча членов этого общества.";
+	description	 = 	"РњРЅРµ СЃРєР°Р·Р°Р»Рё, С‡С‚Рѕ РІ С‚РІРѕРµР№ С‚Р°РІРµСЂРЅРµ Р±СѓРґРµС‚ РІСЃС‚СЂРµС‡Р° С‡Р»РµРЅРѕРІ СЌС‚РѕРіРѕ РѕР±С‰РµСЃС‚РІР°.";
 };
 
 func int DIA_Addon_Orlan_WhenRangerMeeting_Condition ()
@@ -323,34 +323,34 @@ func int DIA_Addon_Orlan_WhenRangerMeeting_Condition ()
 
 func void DIA_Addon_Orlan_WhenRangerMeeting_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_15_00"); //Мне сказали, что в твоей таверне будет встреча членов этого общества.
-	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_01"); //Верно. Она вот-вот должна начаться.
-	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_02"); //Остальные почему-то задерживаются.
+	AI_Output	(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_15_00"); //РњРЅРµ СЃРєР°Р·Р°Р»Рё, С‡С‚Рѕ РІ С‚РІРѕРµР№ С‚Р°РІРµСЂРЅРµ Р±СѓРґРµС‚ РІСЃС‚СЂРµС‡Р° С‡Р»РµРЅРѕРІ СЌС‚РѕРіРѕ РѕР±С‰РµСЃС‚РІР°.
+	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_01"); //Р’РµСЂРЅРѕ. РћРЅР° РІРѕС‚-РІРѕС‚ РґРѕР»Р¶РЅР° РЅР°С‡Р°С‚СЊСЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_02"); //РћСЃС‚Р°Р»СЊРЅС‹Рµ РїРѕС‡РµРјСѓ-С‚Рѕ Р·Р°РґРµСЂР¶РёРІР°СЋС‚СЃСЏ.
 
 	B_GivePlayerXP (XP_Ambient);
 	B_Addon_Orlan_RangersReadyForcoming ();
 	self.flags = 0;
 
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "Остальные должны вот-вот появиться.", DIA_Addon_Orlan_WhenRangerMeeting_theyCome );
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "Встреча будет сегодня?", DIA_Addon_Orlan_WhenRangerMeeting_Today );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "РћСЃС‚Р°Р»СЊРЅС‹Рµ РґРѕР»Р¶РЅС‹ РІРѕС‚-РІРѕС‚ РїРѕСЏРІРёС‚СЊСЃСЏ.", DIA_Addon_Orlan_WhenRangerMeeting_theyCome );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "Р’СЃС‚СЂРµС‡Р° Р±СѓРґРµС‚ СЃРµРіРѕРґРЅСЏ?", DIA_Addon_Orlan_WhenRangerMeeting_Today );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_Today ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_Today_15_00"); //Встреча будет сегодня?
-	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_01"); //Да, насколько я помню.
-	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_02"); //Надеюсь, мы начнем не слишком поздно.
+	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_Today_15_00"); //Р’СЃС‚СЂРµС‡Р° Р±СѓРґРµС‚ СЃРµРіРѕРґРЅСЏ?
+	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_01"); //Р”Р°, РЅР°СЃРєРѕР»СЊРєРѕ СЏ РїРѕРјРЅСЋ.
+	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_02"); //РќР°РґРµСЋСЃСЊ, РјС‹ РЅР°С‡РЅРµРј РЅРµ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ.
 	B_MakeRangerReadyForMeetingALL ();
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(еще)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(РµС‰Рµ)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_theyCome ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_15_00"); //Остальные должны вот-вот появиться.
-	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_05_01"); //Посмотрим...
+	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_15_00"); //РћСЃС‚Р°Р»СЊРЅС‹Рµ РґРѕР»Р¶РЅС‹ РІРѕС‚-РІРѕС‚ РїРѕСЏРІРёС‚СЊСЃСЏ.
+	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_05_01"); //РџРѕСЃРјРѕС‚СЂРёРј...
 	B_MakeRangerReadyForMeetingALL ();
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(еще)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(РµС‰Рµ)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_Los ()
 {
@@ -359,7 +359,7 @@ func void DIA_Addon_Orlan_WhenRangerMeeting_Los ()
 };
 
 //-----------------------------------------------------
-// BESSERE RЬSTUNG
+// BESSERE RР¬STUNG
 //-----------------------------------------------------
 
 instance DIA_Orlan_RUESTUNG		(C_INFO)
@@ -370,7 +370,7 @@ instance DIA_Orlan_RUESTUNG		(C_INFO)
 	information	 = 	DIA_Orlan_RUESTUNG_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Что за доспехи ты можешь предложить?";
+	description	 = 	"Р§С‚Рѕ Р·Р° РґРѕСЃРїРµС…Рё С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ?";
 };
 
 var int DIA_Orlan_RUESTUNG_noPerm;
@@ -389,22 +389,22 @@ func int DIA_Orlan_RUESTUNG_Condition ()
 
 func void DIA_Orlan_RUESTUNG_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_RUESTUNG_15_00"); //Что за доспехи ты можешь предложить?
-	AI_Output			(self, other, "DIA_Orlan_RUESTUNG_05_01"); //У меня есть очень хороший экземпляр, я уверен, это заинтересует тебя.
+	AI_Output			(other, self, "DIA_Orlan_RUESTUNG_15_00"); //Р§С‚Рѕ Р·Р° РґРѕСЃРїРµС…Рё С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ?
+	AI_Output			(self, other, "DIA_Orlan_RUESTUNG_05_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РѕС‡РµРЅСЊ С…РѕСЂРѕС€РёР№ СЌРєР·РµРјРїР»СЏСЂ, СЏ СѓРІРµСЂРµРЅ, СЌС‚Рѕ Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚ С‚РµР±СЏ.
 
 	Info_ClearChoices		(DIA_Orlan_RUESTUNG);
 
 	Info_AddChoice			(DIA_Orlan_RUESTUNG, DIALOG_BACK	,	DIA_Orlan_RUESTUNG_BACK);	
-	Info_AddChoice			(DIA_Orlan_RUESTUNG, "Кожаные доспехи. Защита: оружие 25, стрелы 20, огонь 5 (250 золота)" , DIA_Orlan_RUESTUNG_Buy);	
+	Info_AddChoice			(DIA_Orlan_RUESTUNG, "РљРѕР¶Р°РЅС‹Рµ РґРѕСЃРїРµС…Рё. Р—Р°С‰РёС‚Р°: РѕСЂСѓР¶РёРµ 25, СЃС‚СЂРµР»С‹ 20, РѕРіРѕРЅСЊ 5 (250 Р·РѕР»РѕС‚Р°)" , DIA_Orlan_RUESTUNG_Buy);	
 };  
 
 func void DIA_Orlan_RUESTUNG_Buy ()
 {
-	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_Buy_15_00"); //Я бы хотел купить кожаные доспехи.
+	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_Buy_15_00"); //РЇ Р±С‹ С…РѕС‚РµР» РєСѓРїРёС‚СЊ РєРѕР¶Р°РЅС‹Рµ РґРѕСЃРїРµС…Рё.
 
 	if (B_GiveInvItems		(other, self, ItMi_Gold, VALUE_ITAR_Leather_L))
 		{
-			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_01"); //Мудрый выбор.
+			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_01"); //РњСѓРґСЂС‹Р№ РІС‹Р±РѕСЂ.
 
 			CreateInvItems 		(self, ItAr_Leather_L, 1);
 			B_GiveInvItems		(self, other, ItAr_Leather_L, 1);
@@ -413,7 +413,7 @@ func void DIA_Orlan_RUESTUNG_Buy ()
 		}
 	else
 		{
-			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_02"); //Извини. Заходи, когда у тебя появятся деньги.
+			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_02"); //РР·РІРёРЅРё. Р—Р°С…РѕРґРё, РєРѕРіРґР° Сѓ С‚РµР±СЏ РїРѕСЏРІСЏС‚СЃСЏ РґРµРЅСЊРіРё.
 		};
 
 	Info_ClearChoices		(DIA_Orlan_RUESTUNG);
@@ -421,8 +421,8 @@ func void DIA_Orlan_RUESTUNG_Buy ()
 
 func void DIA_Orlan_RUESTUNG_BACK ()
 {
-	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_BACK_15_00"); //Я подумаю над этим.
-	AI_Output				(self, other,"DIA_Orlan_RUESTUNG_BACK_05_01"); //Как хочешь. Только не думай слишком долго.
+	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_BACK_15_00"); //РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
+	AI_Output				(self, other,"DIA_Orlan_RUESTUNG_BACK_05_01"); //РљР°Рє С…РѕС‡РµС€СЊ. РўРѕР»СЊРєРѕ РЅРµ РґСѓРјР°Р№ СЃР»РёС€РєРѕРј РґРѕР»РіРѕ.
 
 	Info_ClearChoices		(DIA_Orlan_RUESTUNG);
 };
@@ -440,7 +440,7 @@ instance DIA_Orlan_TRADE		(C_INFO)
 	trade		 = 	TRUE;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 
 func int DIA_Orlan_TRADE_Condition ()
@@ -453,27 +453,27 @@ func int DIA_Orlan_TRADE_Condition ()
 
 func void DIA_Orlan_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_TRADE_15_00"); //Покажи мне свои товары.
+	AI_Output			(other, self, "DIA_Orlan_TRADE_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	B_GiveTradeInv (self);
 	
 		//ADDON>
 		if ((SC_IsRanger == TRUE) || (Orlan_KnowsSCAsRanger == TRUE)||(SCIsWearingRangerRing == TRUE))
 			{
-				AI_Output			(self, other, "DIA_Addon_Orlan_TRADE_05_00"); //Конечно, брат по Кольцу.
+				AI_Output			(self, other, "DIA_Addon_Orlan_TRADE_05_00"); //РљРѕРЅРµС‡РЅРѕ, Р±СЂР°С‚ РїРѕ РљРѕР»СЊС†Сѓ.
 				Orlan_KnowsSCAsRanger = TRUE;
 			}
 		//ADDON<
 		else if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 			{
-				AI_Output			(self, other, "DIA_Orlan_TRADE_05_01"); //Конечно. Для меня большая честь услужить такому важному гостю.
+				AI_Output			(self, other, "DIA_Orlan_TRADE_05_01"); //РљРѕРЅРµС‡РЅРѕ. Р”Р»СЏ РјРµРЅСЏ Р±РѕР»СЊС€Р°СЏ С‡РµСЃС‚СЊ СѓСЃР»СѓР¶РёС‚СЊ С‚Р°РєРѕРјСѓ РІР°Р¶РЅРѕРјСѓ РіРѕСЃС‚СЋ.
 			}
 		else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG) || (hero.guild == GIL_MIL))
 			{
-				AI_Output			(self, other, "DIA_Orlan_TRADE_05_02"); //Конечно, сэр.
+				AI_Output			(self, other, "DIA_Orlan_TRADE_05_02"); //РљРѕРЅРµС‡РЅРѕ, СЃСЌСЂ.
 			}
 		else
 			{
-				AI_Output			(self, other, "DIA_Orlan_TRADE_05_03"); //Если ты сможешь заплатить.
+				AI_Output			(self, other, "DIA_Orlan_TRADE_05_03"); //Р•СЃР»Рё С‚С‹ СЃРјРѕР¶РµС€СЊ Р·Р°РїР»Р°С‚РёС‚СЊ.
 			};
 };
 
@@ -489,7 +489,7 @@ instance DIA_Orlan_HotelZimmer		(C_INFO)
 	information	 = 	DIA_Orlan_HotelZimmer_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Сколько ты берешь за комнату?";
+	description	 = 	"РЎРєРѕР»СЊРєРѕ С‚С‹ Р±РµСЂРµС€СЊ Р·Р° РєРѕРјРЅР°С‚Сѓ?";
 };
 var int Orlan_SCGotHotelZimmer;
 var int Orlan_SCGotHotelZimmerDay;
@@ -504,28 +504,28 @@ func int DIA_Orlan_HotelZimmer_Condition ()
 
 func void DIA_Orlan_HotelZimmer_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_15_00"); //Сколько ты берешь за комнату?
+	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_15_00"); //РЎРєРѕР»СЊРєРѕ С‚С‹ Р±РµСЂРµС€СЊ Р·Р° РєРѕРјРЅР°С‚Сѓ?
 	
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF)|| (SC_IsRanger == TRUE)||(SCIsWearingRangerRing == TRUE)|| (Orlan_KnowsSCAsRanger == TRUE))
 		{
 			//ADDON>
 			if ((SC_IsRanger == TRUE)||(SCIsWearingRangerRing == TRUE)|| (Orlan_KnowsSCAsRanger == TRUE))
 			{
-				AI_Output			(self, other, "DIA_Addon_Orlan_HotelZimmer_05_00"); //Братья по Кольцу живут у меня бесплатно.
+				AI_Output			(self, other, "DIA_Addon_Orlan_HotelZimmer_05_00"); //Р‘СЂР°С‚СЊСЏ РїРѕ РљРѕР»СЊС†Сѓ Р¶РёРІСѓС‚ Сѓ РјРµРЅСЏ Р±РµСЃРїР»Р°С‚РЅРѕ.
 				Orlan_RangerHelpZimmer = TRUE;
 				Orlan_KnowsSCAsRanger = TRUE;
 			}
 			//ADDON<
 			else if (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_01"); //Для рыцаря короля у меня всегда найдется свободная комната. Совершенно бесплатно, естественно.
+				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_01"); //Р”Р»СЏ СЂС‹С†Р°СЂСЏ РєРѕСЂРѕР»СЏ Сѓ РјРµРЅСЏ РІСЃРµРіРґР° РЅР°Р№РґРµС‚СЃСЏ СЃРІРѕР±РѕРґРЅР°СЏ РєРѕРјРЅР°С‚Р°. РЎРѕРІРµСЂС€РµРЅРЅРѕ Р±РµСЃРїР»Р°С‚РЅРѕ, РµСЃС‚РµСЃС‚РІРµРЅРЅРѕ.
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_02"); //Я бы никогда не посмел взять деньги за свои услуги с представителя Инноса на земле.
+				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_02"); //РЇ Р±С‹ РЅРёРєРѕРіРґР° РЅРµ РїРѕСЃРјРµР» РІР·СЏС‚СЊ РґРµРЅСЊРіРё Р·Р° СЃРІРѕРё СѓСЃР»СѓРіРё СЃ РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЏ РРЅРЅРѕСЃР° РЅР° Р·РµРјР»Рµ.
 			};
 			
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_03"); //Вот ключ от верхних комнат. Выбирай, которая больше понравится.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_03"); //Р’РѕС‚ РєР»СЋС‡ РѕС‚ РІРµСЂС…РЅРёС… РєРѕРјРЅР°С‚. Р’С‹Р±РёСЂР°Р№, РєРѕС‚РѕСЂР°СЏ Р±РѕР»СЊС€Рµ РїРѕРЅСЂР°РІРёС‚СЃСЏ.
 			CreateInvItems (self, ITKE_ORLAN_HOTELZIMMER, 1);									
 			B_GiveInvItems (self, other, ITKE_ORLAN_HOTELZIMMER, 1);					
 			Orlan_SCGotHotelZimmer = TRUE;
@@ -533,19 +533,19 @@ func void DIA_Orlan_HotelZimmer_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_04"); //Ты платишь 50 золотых монет в неделю - и комната твоя.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_04"); //РўС‹ РїР»Р°С‚РёС€СЊ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ РІ РЅРµРґРµР»СЋ - Рё РєРѕРјРЅР°С‚Р° С‚РІРѕСЏ.
 		
 			Info_ClearChoices	(DIA_Orlan_HotelZimmer);
-			Info_AddChoice	(DIA_Orlan_HotelZimmer, "Черт побери, как дорого-то!", DIA_Orlan_HotelZimmer_nein );
-			Info_AddChoice	(DIA_Orlan_HotelZimmer, "Хорошо. Вот золото.", DIA_Orlan_HotelZimmer_ja );
+			Info_AddChoice	(DIA_Orlan_HotelZimmer, "Р§РµСЂС‚ РїРѕР±РµСЂРё, РєР°Рє РґРѕСЂРѕРіРѕ-С‚Рѕ!", DIA_Orlan_HotelZimmer_nein );
+			Info_AddChoice	(DIA_Orlan_HotelZimmer, "РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ Р·РѕР»РѕС‚Рѕ.", DIA_Orlan_HotelZimmer_ja );
 		};	
 };
 func void DIA_Orlan_HotelZimmer_ja ()
 {
 		if (B_GiveInvItems (other, self, ItMi_Gold,50))
 		{
-			AI_Output			(other, self, "DIA_Orlan_HotelZimmer_ja_15_00"); //Хорошо. Вот золото.
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_01"); //А вот ключ. Комнаты находятся вверх по лестнице. Но не загадь ее и не забывай платить ренту вовремя, понятно?
+			AI_Output			(other, self, "DIA_Orlan_HotelZimmer_ja_15_00"); //РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ Р·РѕР»РѕС‚Рѕ.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_01"); //Рђ РІРѕС‚ РєР»СЋС‡. РљРѕРјРЅР°С‚С‹ РЅР°С…РѕРґСЏС‚СЃСЏ РІРІРµСЂС… РїРѕ Р»РµСЃС‚РЅРёС†Рµ. РќРѕ РЅРµ Р·Р°РіР°РґСЊ РµРµ Рё РЅРµ Р·Р°Р±С‹РІР°Р№ РїР»Р°С‚РёС‚СЊ СЂРµРЅС‚Сѓ РІРѕРІСЂРµРјСЏ, РїРѕРЅСЏС‚РЅРѕ?
 			CreateInvItems (self, ITKE_ORLAN_HOTELZIMMER, 1);									
 			B_GiveInvItems (self, other, ITKE_ORLAN_HOTELZIMMER, 1);					
 			Orlan_SCGotHotelZimmerDay = Wld_GetDay(); 
@@ -553,15 +553,15 @@ func void DIA_Orlan_HotelZimmer_ja ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_02"); //У тебя нет 50-ти. Сначала деньги, потом удовольствие.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_02"); //РЈ С‚РµР±СЏ РЅРµС‚ 50-С‚Рё. РЎРЅР°С‡Р°Р»Р° РґРµРЅСЊРіРё, РїРѕС‚РѕРј СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµ.
 		};
 	Info_ClearChoices	(DIA_Orlan_HotelZimmer);
 };
 
 func void DIA_Orlan_HotelZimmer_nein ()
 {
-	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_nein_15_00"); //Черт побери, как дорого-то!
-	AI_Output			(self, other, "DIA_Orlan_HotelZimmer_nein_05_01"); //Тогда попробуй поискать ночлег в другом месте, дружок.
+	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_nein_15_00"); //Р§РµСЂС‚ РїРѕР±РµСЂРё, РєР°Рє РґРѕСЂРѕРіРѕ-С‚Рѕ!
+	AI_Output			(self, other, "DIA_Orlan_HotelZimmer_nein_05_01"); //РўРѕРіРґР° РїРѕРїСЂРѕР±СѓР№ РїРѕРёСЃРєР°С‚СЊ РЅРѕС‡Р»РµРі РІ РґСЂСѓРіРѕРј РјРµСЃС‚Рµ, РґСЂСѓР¶РѕРє.
 	Info_ClearChoices	(DIA_Orlan_HotelZimmer);
 };
 
@@ -626,33 +626,33 @@ func void DIA_Orlan_MieteFaellig_Info ()
 {
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_00"); //(неискренне) Я очень рад визиту такого гостя. Оставайся здесь, сколько пожелаешь. Это честь для меня.
+		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_00"); //(РЅРµРёСЃРєСЂРµРЅРЅРµ) РЇ РѕС‡РµРЅСЊ СЂР°Рґ РІРёР·РёС‚Сѓ С‚Р°РєРѕРіРѕ РіРѕСЃС‚СЏ. РћСЃС‚Р°РІР°Р№СЃСЏ Р·РґРµСЃСЊ, СЃРєРѕР»СЊРєРѕ РїРѕР¶РµР»Р°РµС€СЊ. Р­С‚Рѕ С‡РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ.
 		DIA_Orlan_MieteFaellig_NoMore = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_01"); //Когда я, наконец, получу мою ренту?
+		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_01"); //РљРѕРіРґР° СЏ, РЅР°РєРѕРЅРµС†, РїРѕР»СѓС‡Сѓ РјРѕСЋ СЂРµРЅС‚Сѓ?
 	
 		Info_ClearChoices	(DIA_Orlan_MieteFaellig);
-		Info_AddChoice	(DIA_Orlan_MieteFaellig, "Забудь об этом. Я больше не буду платить тебе.", DIA_Orlan_MieteFaellig_nein );
-		Info_AddChoice	(DIA_Orlan_MieteFaellig, "Вот твои 50 монет.", DIA_Orlan_MieteFaellig_ja );
+		Info_AddChoice	(DIA_Orlan_MieteFaellig, "Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РЇ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓ РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ.", DIA_Orlan_MieteFaellig_nein );
+		Info_AddChoice	(DIA_Orlan_MieteFaellig, "Р’РѕС‚ С‚РІРѕРё 50 РјРѕРЅРµС‚.", DIA_Orlan_MieteFaellig_ja );
 	};
 };
 
 var int DIA_Orlan_MieteFaellig_OneTime;
 func void DIA_Orlan_MieteFaellig_ja ()
 {
-		AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_00"); //Вот твои 50 монет.
+		AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_00"); //Р’РѕС‚ С‚РІРѕРё 50 РјРѕРЅРµС‚.
 	
 		if (B_GiveInvItems (other, self, ItMi_Gold,50))
 		{
-			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_01"); //Как раз вовремя.
+			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_01"); //РљР°Рє СЂР°Р· РІРѕРІСЂРµРјСЏ.
 
 			if (DIA_Orlan_MieteFaellig_OneTime == FALSE)
 			{
-				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_02"); //Где ты шлялся весь день?
-				AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_03"); //Тебе лучше не знать.
-				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_04"); //Мммм. Ну, да. Это, в общем-то, не мое дело.
+				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_02"); //Р“РґРµ С‚С‹ С€Р»СЏР»СЃСЏ РІРµСЃСЊ РґРµРЅСЊ?
+				AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_03"); //РўРµР±Рµ Р»СѓС‡С€Рµ РЅРµ Р·РЅР°С‚СЊ.
+				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_04"); //РњРјРјРј. РќСѓ, РґР°. Р­С‚Рѕ, РІ РѕР±С‰РµРј-С‚Рѕ, РЅРµ РјРѕРµ РґРµР»Рѕ.
 				DIA_Orlan_MieteFaellig_OneTime = TRUE;
 			};
 			
@@ -661,7 +661,7 @@ func void DIA_Orlan_MieteFaellig_ja ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_05"); //Ты что, пытаешься надуть меня? У даже тебя нет денег, чтобы заплатить за еду. Я проучу тебя, ах ты...
+			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_05"); //РўС‹ С‡С‚Рѕ, РїС‹С‚Р°РµС€СЊСЃСЏ РЅР°РґСѓС‚СЊ РјРµРЅСЏ? РЈ РґР°Р¶Рµ С‚РµР±СЏ РЅРµС‚ РґРµРЅРµРі, С‡С‚РѕР±С‹ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° РµРґСѓ. РЇ РїСЂРѕСѓС‡Сѓ С‚РµР±СЏ, Р°С… С‚С‹...
 			AI_StopProcessInfos (self);
 			B_Attack (self, other, AR_NONE, 1);
 		};
@@ -669,8 +669,8 @@ func void DIA_Orlan_MieteFaellig_ja ()
 
 func void DIA_Orlan_MieteFaellig_nein ()
 {
-	AI_Output			(other, self, "DIA_Orlan_MieteFaellig_nein_15_00"); //Забудь об этом. Я больше не буду платить тебе.
-	AI_Output			(self, other, "DIA_Orlan_MieteFaellig_nein_05_01"); //Тогда мне придется проучить тебя. Презренный жулик!
+	AI_Output			(other, self, "DIA_Orlan_MieteFaellig_nein_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РЇ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓ РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ.
+	AI_Output			(self, other, "DIA_Orlan_MieteFaellig_nein_05_01"); //РўРѕРіРґР° РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїСЂРѕСѓС‡РёС‚СЊ С‚РµР±СЏ. РџСЂРµР·СЂРµРЅРЅС‹Р№ Р¶СѓР»РёРє!
 	Orlan_AngriffWegenMiete = TRUE;
 	
 	Info_ClearChoices	(DIA_Orlan_MieteFaellig);
@@ -704,27 +704,27 @@ func int DIA_Orlan_WETTKAMPFLAEUFT_Condition ()
 
 func void DIA_Orlan_WETTKAMPFLAEUFT_Info ()
 {
-			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_00"); //Вот ты где, наконец. Я ждал тебя.
-			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_01"); //Что случилось?
-			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_02"); //Состязание 'кто кого перепьет' наконец-то закончилось.
-			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_03"); //Кто победил?
+			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_00"); //Р’РѕС‚ С‚С‹ РіРґРµ, РЅР°РєРѕРЅРµС†. РЇ Р¶РґР°Р» С‚РµР±СЏ.
+			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_01"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_02"); //РЎРѕСЃС‚СЏР·Р°РЅРёРµ 'РєС‚Рѕ РєРѕРіРѕ РїРµСЂРµРїСЊРµС‚' РЅР°РєРѕРЅРµС†-С‚Рѕ Р·Р°РєРѕРЅС‡РёР»РѕСЃСЊ.
+			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_03"); //РљС‚Рѕ РїРѕР±РµРґРёР»?
 	
 			if 	(
 				((Mob_HasItems	("CHEST_RUKHAR", ItFo_Booze)) == FALSE)
 				&& ((Mob_HasItems	("CHEST_RUKHAR", ItFo_Water)) == TRUE)
 				)
 					{
-						AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_04"); //На этот раз Рендольф. Рухару нынче не повезло.
+						AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_04"); //РќР° СЌС‚РѕС‚ СЂР°Р· Р РµРЅРґРѕР»СЊС„. Р СѓС…Р°СЂСѓ РЅС‹РЅС‡Рµ РЅРµ РїРѕРІРµР·Р»Рѕ.
 					}
 				else
 				{
-					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_05"); //Как всегда Рухар напоил Рендольфа в стельку. Этого следовало ожидать.
+					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_05"); //РљР°Рє РІСЃРµРіРґР° Р СѓС…Р°СЂ РЅР°РїРѕРёР» Р РµРЅРґРѕР»СЊС„Р° РІ СЃС‚РµР»СЊРєСѓ. Р­С‚РѕРіРѕ СЃР»РµРґРѕРІР°Р»Рѕ РѕР¶РёРґР°С‚СЊ.
 					Rukhar_Won_Wettkampf = TRUE;
 				};
 			
 			if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 				{
-					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_06"); //Я надеюсь, это было в последний раз. Я не хочу, чтобы подобное повторялось в моем доме. Заруби это у себя на носу.
+					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_06"); //РЇ РЅР°РґРµСЋСЃСЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РІ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·. РЇ РЅРµ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РїРѕРґРѕР±РЅРѕРµ РїРѕРІС‚РѕСЂСЏР»РѕСЃСЊ РІ РјРѕРµРј РґРѕРјРµ. Р—Р°СЂСѓР±Рё СЌС‚Рѕ Сѓ СЃРµР±СЏ РЅР° РЅРѕСЃСѓ.
 				};
 			
 			B_GivePlayerXP (XP_Rukhar_WettkampfVorbei);	
@@ -775,9 +775,9 @@ func int DIA_Orlan_EINGEBROCKT_Condition ()
 
 func void DIA_Orlan_EINGEBROCKT_Info ()
 {
-			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_00"); //Да уж, доставил ты мне проблем. Теперь мне нужно быть поосторожнее с Рухаром.
-			AI_Output	(other, self, "DIA_Orlan_EINGEBROCKT_15_01"); //Почему?
-			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_02"); //Пока он устраивает здесь это свое состязание, лучше, чтобы никто посторонний не знал о нем. Это плохо для бизнеса, понимаешь?
+			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_00"); //Р”Р° СѓР¶, РґРѕСЃС‚Р°РІРёР» С‚С‹ РјРЅРµ РїСЂРѕР±Р»РµРј. РўРµРїРµСЂСЊ РјРЅРµ РЅСѓР¶РЅРѕ Р±С‹С‚СЊ РїРѕРѕСЃС‚РѕСЂРѕР¶РЅРµРµ СЃ Р СѓС…Р°СЂРѕРј.
+			AI_Output	(other, self, "DIA_Orlan_EINGEBROCKT_15_01"); //РџРѕС‡РµРјСѓ?
+			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_02"); //РџРѕРєР° РѕРЅ СѓСЃС‚СЂР°РёРІР°РµС‚ Р·РґРµСЃСЊ СЌС‚Рѕ СЃРІРѕРµ СЃРѕСЃС‚СЏР·Р°РЅРёРµ, Р»СѓС‡С€Рµ, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РїРѕСЃС‚РѕСЂРѕРЅРЅРёР№ РЅРµ Р·РЅР°Р» Рѕ РЅРµРј. Р­С‚Рѕ РїР»РѕС…Рѕ РґР»СЏ Р±РёР·РЅРµСЃР°, РїРѕРЅРёРјР°РµС€СЊ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -790,7 +790,7 @@ instance DIA_Orlan_Perm		(C_INFO)
 	condition	 = 	DIA_Orlan_Perm_Condition;
 	information	 = 	DIA_Orlan_Perm_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как дела в таверне?";
+	description	 = 	"РљР°Рє РґРµР»Р° РІ С‚Р°РІРµСЂРЅРµ?";
 };
 
 func int DIA_Orlan_Perm_Condition ()
@@ -803,17 +803,17 @@ func int DIA_Orlan_Perm_Condition ()
 
 func void DIA_Orlan_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Orlan_Perm_15_00"); //Как дела в таверне?
+	AI_Output (other, self, "DIA_Orlan_Perm_15_00"); //РљР°Рє РґРµР»Р° РІ С‚Р°РІРµСЂРЅРµ?
 	
 	if (Kapitel <= 2)
 	{
-		AI_Output (self, other, "DIA_Orlan_Perm_05_01"); //Бывало и лучше.
-		AI_Output (self, other, "DIA_Orlan_Perm_05_02"); //Люди нынче не так охотно развязывают свои кошельки, как это было раньше.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_01"); //Р‘С‹РІР°Р»Рѕ Рё Р»СѓС‡С€Рµ.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_02"); //Р›СЋРґРё РЅС‹РЅС‡Рµ РЅРµ С‚Р°Рє РѕС…РѕС‚РЅРѕ СЂР°Р·РІСЏР·С‹РІР°СЋС‚ СЃРІРѕРё РєРѕС€РµР»СЊРєРё, РєР°Рє СЌС‚Рѕ Р±С‹Р»Рѕ СЂР°РЅСЊС€Рµ.
 	}
 	else if (Kapitel >= 3)
 	{
-		AI_Output (self, other, "DIA_Orlan_Perm_05_03"); //Надеюсь, эти черные маги скоро уйдут, иначе, боюсь, мне придется закрыть таверну.
-		AI_Output (self, other, "DIA_Orlan_Perm_05_04"); //Почти никто не осмеливается больше заглядывать сюда.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_03"); //РќР°РґРµСЋСЃСЊ, СЌС‚Рё С‡РµСЂРЅС‹Рµ РјР°РіРё СЃРєРѕСЂРѕ СѓР№РґСѓС‚, РёРЅР°С‡Рµ, Р±РѕСЋСЃСЊ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РєСЂС‹С‚СЊ С‚Р°РІРµСЂРЅСѓ.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_04"); //РџРѕС‡С‚Рё РЅРёРєС‚Рѕ РЅРµ РѕСЃРјРµР»РёРІР°РµС‚СЃСЏ Р±РѕР»СЊС€Рµ Р·Р°РіР»СЏРґС‹РІР°С‚СЊ СЃСЋРґР°.
 	};
 };
 
@@ -827,7 +827,7 @@ INSTANCE DIA_Orlan_Minenanteil (C_INFO)
 	condition	= DIA_Orlan_Minenanteil_Condition;
 	information	= DIA_Orlan_Minenanteil_Info;
 
-	description = "Ты продаешь акции?";
+	description = "РўС‹ РїСЂРѕРґР°РµС€СЊ Р°РєС†РёРё?";
 };   
                     
 FUNC INT DIA_Orlan_Minenanteil_Condition()
@@ -842,8 +842,8 @@ FUNC INT DIA_Orlan_Minenanteil_Condition()
 
 FUNC VOID DIA_Orlan_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Orlan_Minenanteil_15_00"); //Ты продаешь акции?
-	AI_Output (self, other, "DIA_Orlan_Minenanteil_05_01"); //Конечно. Ты тоже можешь купить, если цена тебя устраивает.
+	AI_Output (other, self, "DIA_Orlan_Minenanteil_15_00"); //РўС‹ РїСЂРѕРґР°РµС€СЊ Р°РєС†РёРё?
+	AI_Output (self, other, "DIA_Orlan_Minenanteil_05_01"); //РљРѕРЅРµС‡РЅРѕ. РўС‹ С‚РѕР¶Рµ РјРѕР¶РµС€СЊ РєСѓРїРёС‚СЊ, РµСЃР»Рё С†РµРЅР° С‚РµР±СЏ СѓСЃС‚СЂР°РёРІР°РµС‚.
 	B_GivePlayerXP (XP_Ambient);
 };	
 

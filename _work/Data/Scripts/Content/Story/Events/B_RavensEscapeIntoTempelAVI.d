@@ -8,7 +8,7 @@ func void B_RAVENSESCAPEINTOTEMPELAVI ()
 		
 		Log_CreateTopic (TOPIC_Addon_RavenKDW, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_RavenKDW, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_RavenKDW,"Я вошел в покои Ворона, но он скрылся от меня за большой дверью. Я не могу последовать за ним. Мне кажется, что эта дверь ведет в храм Аданоса. Я должен доложить об этом Сатурасу."); 
+		B_LogEntry (TOPIC_Addon_RavenKDW,"РЇ РІРѕС€РµР» РІ РїРѕРєРѕРё Р’РѕСЂРѕРЅР°, РЅРѕ РѕРЅ СЃРєСЂС‹Р»СЃСЏ РѕС‚ РјРµРЅСЏ Р·Р° Р±РѕР»СЊС€РѕР№ РґРІРµСЂСЊСЋ. РЇ РЅРµ РјРѕРіСѓ РїРѕСЃР»РµРґРѕРІР°С‚СЊ Р·Р° РЅРёРј. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ СЌС‚Р° РґРІРµСЂСЊ РІРµРґРµС‚ РІ С…СЂР°Рј РђРґР°РЅРѕСЃР°. РЇ РґРѕР»Р¶РµРЅ РґРѕР»РѕР¶РёС‚СЊ РѕР± СЌС‚РѕРј РЎР°С‚СѓСЂР°СЃСѓ."); 
 		
 		B_RAVENSESCAPEINTOTEMPELAVI_OneTime = TRUE;
 	};

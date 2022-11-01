@@ -30,7 +30,7 @@ instance DIA_PAL_263_PERM		(C_INFO)
 	condition	 = 	DIA_PAL_263_PERM_Condition;
 	information	 = 	DIA_PAL_263_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Докладывай, солдат!";
+	description	 = 	"Р”РѕРєР»Р°РґС‹РІР°Р№, СЃРѕР»РґР°С‚!";
 };
 
 func int DIA_PAL_263_PERM_Condition ()
@@ -43,10 +43,10 @@ func int DIA_PAL_263_PERM_Condition ()
 };
 func void DIA_PAL_263_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Докладывай, солдат!
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Есть, сэр! Удерживаю позицию, как приказано. Потери минимальны. Провизия кончается, орки спокойны.
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //Последняя атака дракона полностью уничтожила внешнюю стену. Но с тех пор не происходило ничего необычного.
-	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //Хорошо, держись.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Р”РѕРєР»Р°РґС‹РІР°Р№, СЃРѕР»РґР°С‚!
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Р•СЃС‚СЊ, СЃСЌСЂ! РЈРґРµСЂР¶РёРІР°СЋ РїРѕР·РёС†РёСЋ, РєР°Рє РїСЂРёРєР°Р·Р°РЅРѕ. РџРѕС‚РµСЂРё РјРёРЅРёРјР°Р»СЊРЅС‹. РџСЂРѕРІРёР·РёСЏ РєРѕРЅС‡Р°РµС‚СЃСЏ, РѕСЂРєРё СЃРїРѕРєРѕР№РЅС‹.
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //РџРѕСЃР»РµРґРЅСЏСЏ Р°С‚Р°РєР° РґСЂР°РєРѕРЅР° РїРѕР»РЅРѕСЃС‚СЊСЋ СѓРЅРёС‡С‚РѕР¶РёР»Р° РІРЅРµС€РЅСЋСЋ СЃС‚РµРЅСѓ. РќРѕ СЃ С‚РµС… РїРѕСЂ РЅРµ РїСЂРѕРёСЃС…РѕРґРёР»Рѕ РЅРёС‡РµРіРѕ РЅРµРѕР±С‹С‡РЅРѕРіРѕ.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //РҐРѕСЂРѕС€Рѕ, РґРµСЂР¶РёСЃСЊ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM_OTH
@@ -58,7 +58,7 @@ instance DIA_PAL_263_PERM_OTH		(C_INFO)
 	condition	 = 	DIA_PAL_263_PERM_OTH_Condition;
 	information	 = 	DIA_PAL_263_PERM_OTH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как ситуация?";
+	description	 = 	"РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };
 
 func int DIA_PAL_263_PERM_OTH_Condition ()
@@ -71,8 +71,8 @@ func int DIA_PAL_263_PERM_OTH_Condition ()
 };
 func void DIA_PAL_263_PERM_OTH_Info ()
 {
-	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //Как обстановка?
-	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //Мы держим ситуацию под контролем. Тебе не о чем беспокоиться, гражданский. Все будет хорошо.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
+	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //РњС‹ РґРµСЂР¶РёРј СЃРёС‚СѓР°С†РёСЋ РїРѕРґ РєРѕРЅС‚СЂРѕР»РµРј. РўРµР±Рµ РЅРµ Рѕ С‡РµРј Р±РµСЃРїРѕРєРѕРёС‚СЊСЃСЏ, РіСЂР°Р¶РґР°РЅСЃРєРёР№. Р’СЃРµ Р±СѓРґРµС‚ С…РѕСЂРѕС€Рѕ.
 };
 
 

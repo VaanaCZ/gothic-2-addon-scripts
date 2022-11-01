@@ -33,7 +33,7 @@ INSTANCE DIA_NONE_101_MARIO_DI_Job (C_INFO)
 	information = DIA_NONE_101_MARIO_DI_Job_Info;
 	permanent   = TRUE;
 
-	description	= "Тогда у тебя есть шанс показать свои боевые способности.";
+	description	= "РўРѕРіРґР° Сѓ С‚РµР±СЏ РµСЃС‚СЊ С€Р°РЅСЃ РїРѕРєР°Р·Р°С‚СЊ СЃРІРѕРё Р±РѕРµРІС‹Рµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 };
 
 FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
@@ -47,10 +47,10 @@ FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_Job_Info()
 {
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //Тогда у тебя есть шанс показать свои боевые способности.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_01"); //Помедленнее. Всему свое время.
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_02"); //Ммм. Я именно этого и ожидал от тебя.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_03"); //Подожди.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //РўРѕРіРґР° Сѓ С‚РµР±СЏ РµСЃС‚СЊ С€Р°РЅСЃ РїРѕРєР°Р·Р°С‚СЊ СЃРІРѕРё Р±РѕРµРІС‹Рµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_01"); //РџРѕРјРµРґР»РµРЅРЅРµРµ. Р’СЃРµРјСѓ СЃРІРѕРµ РІСЂРµРјСЏ.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_02"); //РњРјРј. РЇ РёРјРµРЅРЅРѕ СЌС‚РѕРіРѕ Рё РѕР¶РёРґР°Р» РѕС‚ С‚РµР±СЏ.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_03"); //РџРѕРґРѕР¶РґРё.
 };
 
 //*********************************************************************
@@ -75,10 +75,10 @@ FUNC INT DIA_NONE_101_MARIO_DI_ambush_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_ambush_Info()
 {
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //Подойди поближе. Так, мой друг. А теперь покажи мне, на что ты способен.
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Что ты имеешь в виду?
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //Это просто. Хозяин уже устал от тебя.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //Мне стоило убить тебя раньше. Но мои друзья и я сейчас исправим эту ошибку.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //РџРѕРґРѕР№РґРё РїРѕР±Р»РёР¶Рµ. РўР°Рє, РјРѕР№ РґСЂСѓРі. Рђ С‚РµРїРµСЂСЊ РїРѕРєР°Р¶Рё РјРЅРµ, РЅР° С‡С‚Рѕ С‚С‹ СЃРїРѕСЃРѕР±РµРЅ.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ. РҐРѕР·СЏРёРЅ СѓР¶Рµ СѓСЃС‚Р°Р» РѕС‚ С‚РµР±СЏ.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //РњРЅРµ СЃС‚РѕРёР»Рѕ СѓР±РёС‚СЊ С‚РµР±СЏ СЂР°РЅСЊС€Рµ. РќРѕ РјРѕРё РґСЂСѓР·СЊСЏ Рё СЏ СЃРµР№С‡Р°СЃ РёСЃРїСЂР°РІРёРј СЌС‚Сѓ РѕС€РёР±РєСѓ.
 	
 	Info_ClearChoices	(DIA_NONE_101_MARIO_DI_ambush);
 	Info_AddChoice	(DIA_NONE_101_MARIO_DI_ambush, DIALOG_ENDE, DIA_NONE_101_MARIO_DI_ambush_ambush );

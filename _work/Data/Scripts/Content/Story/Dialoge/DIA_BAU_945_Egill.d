@@ -32,7 +32,7 @@ instance DIA_Egill_HALLO		(C_INFO)
 	condition	 = 	DIA_Egill_HALLO_Condition;
 	information	 = 	DIA_Egill_HALLO_Info;
 
-	description	 = 	"Что новенького?";
+	description	 = 	"Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?";
 };
 
 func int DIA_Egill_HALLO_Condition ()
@@ -42,15 +42,15 @@ func int DIA_Egill_HALLO_Condition ()
 
 func void DIA_Egill_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_HALLO_15_00"); //В чем дело?
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //Давно уже я не видел чужака на нашей земле, который не хотел бы ободрать нас, как липку.
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //Надеюсь, я не ошибаюсь в тебе.
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_03"); //Я Эгилл.
+	AI_Output			(other, self, "DIA_Egill_HALLO_15_00"); //Р’ С‡РµРј РґРµР»Рѕ?
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //Р”Р°РІРЅРѕ СѓР¶Рµ СЏ РЅРµ РІРёРґРµР» С‡СѓР¶Р°РєР° РЅР° РЅР°С€РµР№ Р·РµРјР»Рµ, РєРѕС‚РѕСЂС‹Р№ РЅРµ С…РѕС‚РµР» Р±С‹ РѕР±РѕРґСЂР°С‚СЊ РЅР°СЃ, РєР°Рє Р»РёРїРєСѓ.
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //РќР°РґРµСЋСЃСЊ, СЏ РЅРµ РѕС€РёР±Р°СЋСЃСЊ РІ С‚РµР±Рµ.
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_03"); //РЇ Р­РіРёР»Р».
 	
 	if (Hlp_IsValidNpc (Ehnim))
 		&& (!C_NpcIsDown (Ehnim))
 		{
-			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //А этот чудак вон там - мой брат Эним.
+			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //Рђ СЌС‚РѕС‚ С‡СѓРґР°Рє РІРѕРЅ С‚Р°Рј - РјРѕР№ Р±СЂР°С‚ Р­РЅРёРј.
 		};
 };
 
@@ -65,7 +65,7 @@ instance DIA_Egill_FELDARBEIT		(C_INFO)
 	condition	 = 	DIA_Egill_FELDARBEIT_Condition;
 	information	 = 	DIA_Egill_FELDARBEIT_Info;
 
-	description	 = 	"Как идет работа в поле?";
+	description	 = 	"РљР°Рє РёРґРµС‚ СЂР°Р±РѕС‚Р° РІ РїРѕР»Рµ?";
 };
 
 func int DIA_Egill_FELDARBEIT_Condition ()
@@ -78,8 +78,8 @@ func int DIA_Egill_FELDARBEIT_Condition ()
 
 func void DIA_Egill_FELDARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_FELDARBEIT_15_00"); //Как идет работа в поле?
-	AI_Output			(self, other, "DIA_Egill_FELDARBEIT_08_01"); //Отлично. Если бы только эти мерзкие полевые хищники не портили наш урожай...
+	AI_Output			(other, self, "DIA_Egill_FELDARBEIT_15_00"); //РљР°Рє РёРґРµС‚ СЂР°Р±РѕС‚Р° РІ РїРѕР»Рµ?
+	AI_Output			(self, other, "DIA_Egill_FELDARBEIT_08_01"); //РћС‚Р»РёС‡РЅРѕ. Р•СЃР»Рё Р±С‹ С‚РѕР»СЊРєРѕ СЌС‚Рё РјРµСЂР·РєРёРµ РїРѕР»РµРІС‹Рµ С…РёС‰РЅРёРєРё РЅРµ РїРѕСЂС‚РёР»Рё РЅР°С€ СѓСЂРѕР¶Р°Р№...
 
 };
 
@@ -94,7 +94,7 @@ instance DIA_Egill_FELDRAEUBER		(C_INFO)
 	condition	 = 	DIA_Egill_FELDRAEUBER_Condition;
 	information	 = 	DIA_Egill_FELDRAEUBER_Info;
 
-	description	 = 	"Почему вы ничего не делаете с этими полевыми хищниками?";
+	description	 = 	"РџРѕС‡РµРјСѓ РІС‹ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°РµС‚Рµ СЃ СЌС‚РёРјРё РїРѕР»РµРІС‹РјРё С…РёС‰РЅРёРєР°РјРё?";
 };
 
 func int DIA_Egill_FELDRAEUBER_Condition ()
@@ -107,9 +107,9 @@ func int DIA_Egill_FELDRAEUBER_Condition ()
 
 func void DIA_Egill_FELDRAEUBER_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //Почему вы ничего не делаете с этими полевыми хищниками?
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //Ты шутишь? С тех пор, как я работаю на этой ферме, я убил их столько, что уже сбился со счета.
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //Но на место убитых приходят новые.
+	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //РџРѕС‡РµРјСѓ РІС‹ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°РµС‚Рµ СЃ СЌС‚РёРјРё РїРѕР»РµРІС‹РјРё С…РёС‰РЅРёРєР°РјРё?
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //РўС‹ С€СѓС‚РёС€СЊ? РЎ С‚РµС… РїРѕСЂ, РєР°Рє СЏ СЂР°Р±РѕС‚Р°СЋ РЅР° СЌС‚РѕР№ С„РµСЂРјРµ, СЏ СѓР±РёР» РёС… СЃС‚РѕР»СЊРєРѕ, С‡С‚Рѕ СѓР¶Рµ СЃР±РёР»СЃСЏ СЃРѕ СЃС‡РµС‚Р°.
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //РќРѕ РЅР° РјРµСЃС‚Рѕ СѓР±РёС‚С‹С… РїСЂРёС…РѕРґСЏС‚ РЅРѕРІС‹Рµ.
 };
 
 
@@ -123,7 +123,7 @@ instance DIA_Egill_STREIT2		(C_INFO)
 	condition	 = 	DIA_Egill_STREIT2_Condition;
 	information	 = 	DIA_Egill_STREIT2_Info;
 
-	description	 = 	"Твой брат говорит то же самое.";
+	description	 = 	"РўРІРѕР№ Р±СЂР°С‚ РіРѕРІРѕСЂРёС‚ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ.";
 };
 
 func int DIA_Egill_STREIT2_Condition ()
@@ -144,11 +144,11 @@ func int DIA_Egill_STREIT2_Condition ()
 
 func void DIA_Egill_STREIT2_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //Твой брат говорит то же самое.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_01"); //(насмешливо) Ага. А что еще он говорит?
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Что он тоже убил множество полевых хищников.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Что? Да этот тормоз даже не может самостоятельно найти путь домой.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_04"); //Скажи ему, чтобы он больше не бахвалился.
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //РўРІРѕР№ Р±СЂР°С‚ РіРѕРІРѕСЂРёС‚ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_01"); //(РЅР°СЃРјРµС€Р»РёРІРѕ) РђРіР°. Рђ С‡С‚Рѕ РµС‰Рµ РѕРЅ РіРѕРІРѕСЂРёС‚?
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Р§С‚Рѕ РѕРЅ С‚РѕР¶Рµ СѓР±РёР» РјРЅРѕР¶РµСЃС‚РІРѕ РїРѕР»РµРІС‹С… С…РёС‰РЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Р§С‚Рѕ? Р”Р° СЌС‚РѕС‚ С‚РѕСЂРјРѕР· РґР°Р¶Рµ РЅРµ РјРѕР¶РµС‚ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ РЅР°Р№С‚Рё РїСѓС‚СЊ РґРѕРјРѕР№.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_04"); //РЎРєР°Р¶Рё РµРјСѓ, С‡С‚РѕР±С‹ РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ Р±Р°С…РІР°Р»РёР»СЃСЏ.
 
 	AI_StopProcessInfos (self);
 };
@@ -165,7 +165,7 @@ instance DIA_Egill_STREIT4		(C_INFO)
 	condition	 = 	DIA_Egill_STREIT4_Condition;
 	information	 = 	DIA_Egill_STREIT4_Info;
 
-	description	 = 	"Эним немного раздражен твоими словами.";
+	description	 = 	"Р­РЅРёРј РЅРµРјРЅРѕРіРѕ СЂР°Р·РґСЂР°Р¶РµРЅ С‚РІРѕРёРјРё СЃР»РѕРІР°РјРё.";
 };
 
 func int DIA_Egill_STREIT4_Condition ()
@@ -185,8 +185,8 @@ func int DIA_Egill_STREIT4_Condition ()
 
 func void DIA_Egill_STREIT4_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Эним немного раздражен твоими словами.
-	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //Пусть не расхаживает как павлин, распустив хвост, а то я ему голову оторву. Скажи ему это.
+	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Р­РЅРёРј РЅРµРјРЅРѕРіРѕ СЂР°Р·РґСЂР°Р¶РµРЅ С‚РІРѕРёРјРё СЃР»РѕРІР°РјРё.
+	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //РџСѓСЃС‚СЊ РЅРµ СЂР°СЃС…Р°Р¶РёРІР°РµС‚ РєР°Рє РїР°РІР»РёРЅ, СЂР°СЃРїСѓСЃС‚РёРІ С…РІРѕСЃС‚, Р° С‚Рѕ СЏ РµРјСѓ РіРѕР»РѕРІСѓ РѕС‚РѕСЂРІСѓ. РЎРєР°Р¶Рё РµРјСѓ СЌС‚Рѕ.
 
 	AI_StopProcessInfos (self);
 };
@@ -217,7 +217,7 @@ func int DIA_Egill_PERMKAP1_Condition ()
 
 func void DIA_Egill_PERMKAP1_Info ()
 {
-	AI_Output			(self, other, "DIA_Egill_PERMKAP1_08_00"); //Тебе мало того, что ты натворил? Я думаю, тебе лучше уйти.
+	AI_Output			(self, other, "DIA_Egill_PERMKAP1_08_00"); //РўРµР±Рµ РјР°Р»Рѕ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ РЅР°С‚РІРѕСЂРёР»? РЇ РґСѓРјР°СЋ, С‚РµР±Рµ Р»СѓС‡С€Рµ СѓР№С‚Рё.
 
 	AI_StopProcessInfos (self);
 };

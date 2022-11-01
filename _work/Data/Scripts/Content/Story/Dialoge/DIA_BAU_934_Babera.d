@@ -31,7 +31,7 @@ instance DIA_Babera_HALLO		(C_INFO)
 	condition	 = 	DIA_Babera_HALLO_Condition;
 	information	 = 	DIA_Babera_HALLO_Info;
 
-	description	 = 	"Привет, красавица.";
+	description	 = 	"РџСЂРёРІРµС‚, РєСЂР°СЃР°РІРёС†Р°.";
 };
 
 func int DIA_Babera_HALLO_Condition ()
@@ -41,8 +41,8 @@ func int DIA_Babera_HALLO_Condition ()
 
 func void DIA_Babera_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //Привет, красавица.
-	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //Хватит клеиться ко мне. Скажи лучше сразу, что тебе нужно. Я занята.
+	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //РџСЂРёРІРµС‚, РєСЂР°СЃР°РІРёС†Р°.
+	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //РҐРІР°С‚РёС‚ РєР»РµРёС‚СЊСЃСЏ РєРѕ РјРЅРµ. РЎРєР°Р¶Рё Р»СѓС‡С€Рµ СЃСЂР°Р·Сѓ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ. РЇ Р·Р°РЅСЏС‚Р°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ instance DIA_Babera_WIESIEHTSAUS		(C_INFO)
 	condition	 = 	DIA_Babera_WIESIEHTSAUS_Condition;
 	information	 = 	DIA_Babera_WIESIEHTSAUS_Info;
 
-	description	 = 	"Как идет работа в поле?";
+	description	 = 	"РљР°Рє РёРґРµС‚ СЂР°Р±РѕС‚Р° РІ РїРѕР»Рµ?";
 };
 
 func int DIA_Babera_WIESIEHTSAUS_Condition ()
@@ -68,32 +68,32 @@ func int DIA_Babera_WIESIEHTSAUS_Condition ()
 
 func void DIA_Babera_WIESIEHTSAUS_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //Как идет работа в поле?
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Посмотри на эти огромные поля, которые нм нужно обработать, и ты сам все поймешь.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Ты хочешь поработать на поле?
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //РљР°Рє РёРґРµС‚ СЂР°Р±РѕС‚Р° РІ РїРѕР»Рµ?
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //РџРѕСЃРјРѕС‚СЂРё РЅР° СЌС‚Рё РѕРіСЂРѕРјРЅС‹Рµ РїРѕР»СЏ, РєРѕС‚РѕСЂС‹Рµ РЅРј РЅСѓР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ, Рё С‚С‹ СЃР°Рј РІСЃРµ РїРѕР№РјРµС€СЊ.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //РўС‹ С…РѕС‡РµС€СЊ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РЅР° РїРѕР»Рµ?
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 
 	if (hero.guild == GIL_NONE)
 		{
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Вообще-то нет. Я хочу стать наемником.", DIA_Babera_WIESIEHTSAUS_Nein );
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Может быть.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Р’РѕРѕР±С‰Рµ-С‚Рѕ РЅРµС‚. РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј.", DIA_Babera_WIESIEHTSAUS_Nein );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "РњРѕР¶РµС‚ Р±С‹С‚СЊ.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
 		};
 };
 func void DIA_Babera_WIESIEHTSAUS_Vielleicht ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Может быть.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //Тогда тебе лучше поговорить с нашим фермером, Секобом. Может, у него найдется работа для тебя.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Ну, или попробуй найти работу на ферме Онара. Она находится в конце этой дороги.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Но только будь повежливее с наемниками. Они не любят чужаков.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //РўРѕРіРґР° С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅР°С€РёРј С„РµСЂРјРµСЂРѕРј, РЎРµРєРѕР±РѕРј. РњРѕР¶РµС‚, Сѓ РЅРµРіРѕ РЅР°Р№РґРµС‚СЃСЏ СЂР°Р±РѕС‚Р° РґР»СЏ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //РќСѓ, РёР»Рё РїРѕРїСЂРѕР±СѓР№ РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ РЅР° С„РµСЂРјРµ РћРЅР°СЂР°. РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РІ РєРѕРЅС†Рµ СЌС‚РѕР№ РґРѕСЂРѕРіРё.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //РќРѕ С‚РѕР»СЊРєРѕ Р±СѓРґСЊ РїРѕРІРµР¶Р»РёРІРµРµ СЃ РЅР°РµРјРЅРёРєР°РјРё. РћРЅРё РЅРµ Р»СЋР±СЏС‚ С‡СѓР¶Р°РєРѕРІ.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
 
 func void DIA_Babera_WIESIEHTSAUS_Nein ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Вообще-то нет. Я хочу стать наемником.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Тогда ты зря сюда пришел. Все наемники на ферме Онара.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Р’РѕРѕР±С‰Рµ-С‚Рѕ РЅРµС‚. РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //РўРѕРіРґР° С‚С‹ Р·СЂСЏ СЃСЋРґР° РїСЂРёС€РµР». Р’СЃРµ РЅР°РµРјРЅРёРєРё РЅР° С„РµСЂРјРµ РћРЅР°СЂР°.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
@@ -108,7 +108,7 @@ instance DIA_Babera_BRONKO		(C_INFO)
 	condition	 = 	DIA_Babera_BRONKO_Condition;
 	information	 = 	DIA_Babera_BRONKO_Info;
 
-	description	 = 	"(спросить о Бронко)";
+	description	 = 	"(СЃРїСЂРѕСЃРёС‚СЊ Рѕ Р‘СЂРѕРЅРєРѕ)";
 };
 
 func int DIA_Babera_BRONKO_Condition ()
@@ -124,20 +124,20 @@ func int DIA_Babera_BRONKO_Condition ()
 
 func void DIA_Babera_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //Скажи, вон тот тип, что стоит там...
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //Это Бронко. Зачем он тебе?
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //Это ваш фермер?
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(смеется) Это он сказал тебе? Наш фермер Секоб. А Бронко просто болтун и бездельник. Но сильный как бык.
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Вот почему никто не протестует против того, что он не работает.
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //РЎРєР°Р¶Рё, РІРѕРЅ С‚РѕС‚ С‚РёРї, С‡С‚Рѕ СЃС‚РѕРёС‚ С‚Р°Рј...
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //Р­С‚Рѕ Р‘СЂРѕРЅРєРѕ. Р—Р°С‡РµРј РѕРЅ С‚РµР±Рµ?
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //Р­С‚Рѕ РІР°С€ С„РµСЂРјРµСЂ?
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(СЃРјРµРµС‚СЃСЏ) Р­С‚Рѕ РѕРЅ СЃРєР°Р·Р°Р» С‚РµР±Рµ? РќР°С€ С„РµСЂРјРµСЂ РЎРµРєРѕР±. Рђ Р‘СЂРѕРЅРєРѕ РїСЂРѕСЃС‚Рѕ Р±РѕР»С‚СѓРЅ Рё Р±РµР·РґРµР»СЊРЅРёРє. РќРѕ СЃРёР»СЊРЅС‹Р№ РєР°Рє Р±С‹Рє.
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Р’РѕС‚ РїРѕС‡РµРјСѓ РЅРёРєС‚Рѕ РЅРµ РїСЂРѕС‚РµСЃС‚СѓРµС‚ РїСЂРѕС‚РёРІ С‚РѕРіРѕ, С‡С‚Рѕ РѕРЅ РЅРµ СЂР°Р±РѕС‚Р°РµС‚.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Babera_BRONKO_16_05"); //Он никого не боится. Только наемников.
+			AI_Output			(self, other, "DIA_Babera_BRONKO_16_05"); //РћРЅ РЅРёРєРѕРіРѕ РЅРµ Р±РѕРёС‚СЃСЏ. РўРѕР»СЊРєРѕ РЅР°РµРјРЅРёРєРѕРІ.
 
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Babera_BRONKO_16_06"); //Только наемники могут заставить его работать. Он очень боится их.
+			AI_Output			(self, other, "DIA_Babera_BRONKO_16_06"); //РўРѕР»СЊРєРѕ РЅР°РµРјРЅРёРєРё РјРѕРіСѓС‚ Р·Р°СЃС‚Р°РІРёС‚СЊ РµРіРѕ СЂР°Р±РѕС‚Р°С‚СЊ. РћРЅ РѕС‡РµРЅСЊ Р±РѕРёС‚СЃСЏ РёС….
 
 		};
 	Babera_BronkoKeinBauer = TRUE;
@@ -153,7 +153,7 @@ instance DIA_Babera_Rosi		(C_INFO)
 	condition	 = 	DIA_Babera_Rosi_Condition;
 	information	 = 	DIA_Babera_Rosi_Info;
 
-	description	 = 	"А где Рози?";
+	description	 = 	"Рђ РіРґРµ Р РѕР·Рё?";
 };
 
 func int DIA_Babera_Rosi_Condition ()
@@ -168,10 +168,10 @@ func int DIA_Babera_Rosi_Condition ()
 
 func void DIA_Babera_Rosi_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_Rosi_15_00"); //А где Рози?
-	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //Она больше не могла выносить такую жизнь и ушла на север, в лес.
-	B_LogEntry (TOPIC_RosisFlucht,"Рози сбежала с фермы Секоба. Бабера говорит, что она направилась на север, в лес."); 
-	B_LogEntry (TOPIC_bringRosiBackToSekob,"Рози сбежала с фермы Секоба. Бабера говорит, что она направилась на север, в лес."); 
+	AI_Output			(other, self, "DIA_Babera_Rosi_15_00"); //Рђ РіРґРµ Р РѕР·Рё?
+	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //РћРЅР° Р±РѕР»СЊС€Рµ РЅРµ РјРѕРіР»Р° РІС‹РЅРѕСЃРёС‚СЊ С‚Р°РєСѓСЋ Р¶РёР·РЅСЊ Рё СѓС€Р»Р° РЅР° СЃРµРІРµСЂ, РІ Р»РµСЃ.
+	B_LogEntry (TOPIC_RosisFlucht,"Р РѕР·Рё СЃР±РµР¶Р°Р»Р° СЃ С„РµСЂРјС‹ РЎРµРєРѕР±Р°. Р‘Р°Р±РµСЂР° РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РѕРЅР° РЅР°РїСЂР°РІРёР»Р°СЃСЊ РЅР° СЃРµРІРµСЂ, РІ Р»РµСЃ."); 
+	B_LogEntry (TOPIC_bringRosiBackToSekob,"Р РѕР·Рё СЃР±РµР¶Р°Р»Р° СЃ С„РµСЂРјС‹ РЎРµРєРѕР±Р°. Р‘Р°Р±РµСЂР° РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РѕРЅР° РЅР°РїСЂР°РІРёР»Р°СЃСЊ РЅР° СЃРµРІРµСЂ, РІ Р»РµСЃ."); 
 };
 
 
@@ -186,7 +186,7 @@ instance DIA_Babera_DUSTOERST		(C_INFO)
 	information	 = 	DIA_Babera_DUSTOERST_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"А кроме этого?";
+	description	 = 	"Рђ РєСЂРѕРјРµ СЌС‚РѕРіРѕ?";
 };
 
 func int DIA_Babera_DUSTOERST_Condition ()
@@ -199,8 +199,8 @@ func int DIA_Babera_DUSTOERST_Condition ()
 
 func void DIA_Babera_DUSTOERST_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_DUSTOERST_15_00"); //Есть что-нибудь еще?
-	AI_Output			(self, other, "DIA_Babera_DUSTOERST_16_01"); //Я занята.
+	AI_Output			(other, self, "DIA_Babera_DUSTOERST_15_00"); //Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
+	AI_Output			(self, other, "DIA_Babera_DUSTOERST_16_01"); //РЇ Р·Р°РЅСЏС‚Р°.
 	AI_StopProcessInfos (self);
 };
 

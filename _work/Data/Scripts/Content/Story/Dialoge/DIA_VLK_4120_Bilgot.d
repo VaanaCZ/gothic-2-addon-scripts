@@ -38,28 +38,28 @@ func int DIA_Bilgot_HALLO_Condition ()
 };
 func void DIA_Bilgot_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Bilgot_HALLO_05_00"); //Эй, откуда ты взялся? Ты пришел из замка?
+	AI_Output (self, other, "DIA_Bilgot_HALLO_05_00"); //Р­Р№, РѕС‚РєСѓРґР° С‚С‹ РІР·СЏР»СЃСЏ? РўС‹ РїСЂРёС€РµР» РёР· Р·Р°РјРєР°?
 
-	Info_AddChoice	(DIA_Bilgot_HALLO, "Да, я пришел из замка - ну и что?", DIA_Bilgot_HALLO_Burg );
-	Info_AddChoice	(DIA_Bilgot_HALLO, "Я просто случайно забрел сюда...", DIA_Bilgot_HALLO_Zufall );
+	Info_AddChoice	(DIA_Bilgot_HALLO, "Р”Р°, СЏ РїСЂРёС€РµР» РёР· Р·Р°РјРєР° - РЅСѓ Рё С‡С‚Рѕ?", DIA_Bilgot_HALLO_Burg );
+	Info_AddChoice	(DIA_Bilgot_HALLO, "РЇ РїСЂРѕСЃС‚Рѕ СЃР»СѓС‡Р°Р№РЅРѕ Р·Р°Р±СЂРµР» СЃСЋРґР°...", DIA_Bilgot_HALLO_Zufall );
 };
 func void DIA_Bilgot_HALLO_Zufall ()
 {
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Zufall_15_00"); //Я просто случайно забрел сюда...
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_01"); //Парень, никто не заходит сюда СЛУЧАЙНО. Мы заперты здесь - окруженные снепперами!
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_02"); //И дня не проходит, чтобы они не загрызли кого-нибудь из наших.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_03"); //Так ты не скажешь мне, откуда ты пришел? Хорошо - пусть тогда тебя съедят снепперы!
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Zufall_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ СЃР»СѓС‡Р°Р№РЅРѕ Р·Р°Р±СЂРµР» СЃСЋРґР°...
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_01"); //РџР°СЂРµРЅСЊ, РЅРёРєС‚Рѕ РЅРµ Р·Р°С…РѕРґРёС‚ СЃСЋРґР° РЎР›РЈР§РђР™РќРћ. РњС‹ Р·Р°РїРµСЂС‚С‹ Р·РґРµСЃСЊ - РѕРєСЂСѓР¶РµРЅРЅС‹Рµ СЃРЅРµРїРїРµСЂР°РјРё!
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_02"); //Р РґРЅСЏ РЅРµ РїСЂРѕС…РѕРґРёС‚, С‡С‚РѕР±С‹ РѕРЅРё РЅРµ Р·Р°РіСЂС‹Р·Р»Рё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РёР· РЅР°С€РёС….
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_03"); //РўР°Рє С‚С‹ РЅРµ СЃРєР°Р¶РµС€СЊ РјРЅРµ, РѕС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР»? РҐРѕСЂРѕС€Рѕ - РїСѓСЃС‚СЊ С‚РѕРіРґР° С‚РµР±СЏ СЃСЉРµРґСЏС‚ СЃРЅРµРїРїРµСЂС‹!
 	
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Bilgot_HALLO_Burg ()
 {
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_00"); //Да, я пришел из замка - ну и что?
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_01"); //Как там дела?
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_02"); //Не лучше, чем здесь. Орки все еще там, если ты это имел в виду.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_03"); //Черт. Нигде нельзя чувствовать себя в безопасности.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_04"); //Я скажу тебе кое-что. Если бы я не был напуган до смерти, я бы бежал отсюда.
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_00"); //Р”Р°, СЏ РїСЂРёС€РµР» РёР· Р·Р°РјРєР° - РЅСѓ Рё С‡С‚Рѕ?
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_01"); //РљР°Рє С‚Р°Рј РґРµР»Р°?
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_02"); //РќРµ Р»СѓС‡С€Рµ, С‡РµРј Р·РґРµСЃСЊ. РћСЂРєРё РІСЃРµ РµС‰Рµ С‚Р°Рј, РµСЃР»Рё С‚С‹ СЌС‚Рѕ РёРјРµР» РІ РІРёРґСѓ.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_03"); //Р§РµСЂС‚. РќРёРіРґРµ РЅРµР»СЊР·СЏ С‡СѓРІСЃС‚РІРѕРІР°С‚СЊ СЃРµР±СЏ РІ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_04"); //РЇ СЃРєР°Р¶Сѓ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ. Р•СЃР»Рё Р±С‹ СЏ РЅРµ Р±С‹Р» РЅР°РїСѓРіР°РЅ РґРѕ СЃРјРµСЂС‚Рё, СЏ Р±С‹ Р±РµР¶Р°Р» РѕС‚СЃСЋРґР°.
 	
 	Info_ClearChoices	(DIA_Bilgot_HALLO);
 };
@@ -73,7 +73,7 @@ instance DIA_Bilgot_Job		(C_INFO)
 	condition	 = 	DIA_Bilgot_Job_Condition;
 	information	 = 	DIA_Bilgot_Job_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"А что ты вообще здесь делаешь, кстати?";
+	description	 = 	"Рђ С‡С‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ, РєСЃС‚Р°С‚Рё?";
 };
 func int DIA_Bilgot_Job_Condition ()
 {
@@ -81,12 +81,12 @@ func int DIA_Bilgot_Job_Condition ()
 };
 func void DIA_Bilgot_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Job_15_00"); //А что ты вообще здесь делаешь, кстати?
-	AI_Output (self, other, "DIA_Bilgot_Job_05_01"); //Я здесь как мальчик на побегушках. Поднеси-подай, посмотри, где там снепперы, Билгот туда, Билгот сюда.
-	AI_Output (self, other, "DIA_Bilgot_Job_05_02"); //Мне лучше было остаться дома со своей старухой. Там было не лучше, но, по крайней мере, там была приличная еда.
-	AI_Output (self, other, "DIA_Bilgot_Job_05_03"); //А теперь я - все, что осталось от отряда, которым командовал Фаджет.
-	AI_Output (self, other, "DIA_Bilgot_Job_05_04"); //Откуда мне было знать, что этой экспедиции не суждено было вернуться?
-	AI_Output (self, other, "DIA_Bilgot_Job_05_05"); //Мой приятель Олав улизнул. Может быть, хотя бы ему удалось вырваться...
+	AI_Output (other, self, "DIA_Bilgot_Job_15_00"); //Рђ С‡С‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ, РєСЃС‚Р°С‚Рё?
+	AI_Output (self, other, "DIA_Bilgot_Job_05_01"); //РЇ Р·РґРµСЃСЊ РєР°Рє РјР°Р»СЊС‡РёРє РЅР° РїРѕР±РµРіСѓС€РєР°С…. РџРѕРґРЅРµСЃРё-РїРѕРґР°Р№, РїРѕСЃРјРѕС‚СЂРё, РіРґРµ С‚Р°Рј СЃРЅРµРїРїРµСЂС‹, Р‘РёР»РіРѕС‚ С‚СѓРґР°, Р‘РёР»РіРѕС‚ СЃСЋРґР°.
+	AI_Output (self, other, "DIA_Bilgot_Job_05_02"); //РњРЅРµ Р»СѓС‡С€Рµ Р±С‹Р»Рѕ РѕСЃС‚Р°С‚СЊСЃСЏ РґРѕРјР° СЃРѕ СЃРІРѕРµР№ СЃС‚Р°СЂСѓС…РѕР№. РўР°Рј Р±С‹Р»Рѕ РЅРµ Р»СѓС‡С€Рµ, РЅРѕ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‚Р°Рј Р±С‹Р»Р° РїСЂРёР»РёС‡РЅР°СЏ РµРґР°.
+	AI_Output (self, other, "DIA_Bilgot_Job_05_03"); //Рђ С‚РµРїРµСЂСЊ СЏ - РІСЃРµ, С‡С‚Рѕ РѕСЃС‚Р°Р»РѕСЃСЊ РѕС‚ РѕС‚СЂСЏРґР°, РєРѕС‚РѕСЂС‹Рј РєРѕРјР°РЅРґРѕРІР°Р» Р¤Р°РґР¶РµС‚.
+	AI_Output (self, other, "DIA_Bilgot_Job_05_04"); //РћС‚РєСѓРґР° РјРЅРµ Р±С‹Р»Рѕ Р·РЅР°С‚СЊ, С‡С‚Рѕ СЌС‚РѕР№ СЌРєСЃРїРµРґРёС†РёРё РЅРµ СЃСѓР¶РґРµРЅРѕ Р±С‹Р»Рѕ РІРµСЂРЅСѓС‚СЊСЃСЏ?
+	AI_Output (self, other, "DIA_Bilgot_Job_05_05"); //РњРѕР№ РїСЂРёСЏС‚РµР»СЊ РћР»Р°РІ СѓР»РёР·РЅСѓР». РњРѕР¶РµС‚ Р±С‹С‚СЊ, С…РѕС‚СЏ Р±С‹ РµРјСѓ СѓРґР°Р»РѕСЃСЊ РІС‹СЂРІР°С‚СЊСЃСЏ...
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hilfe
@@ -98,7 +98,7 @@ instance DIA_Bilgot_Hilfe		(C_INFO)
 	condition	 = 	DIA_Bilgot_Hilfe_Condition;
 	information	 = 	DIA_Bilgot_Hilfe_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Что ты знаешь о снепперах?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ СЃРЅРµРїРїРµСЂР°С…?";
 };
 func int DIA_Bilgot_Hilfe_Condition ()
 {
@@ -109,18 +109,18 @@ func int DIA_Bilgot_Hilfe_Condition ()
 };
 func void DIA_Bilgot_Hilfe_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_00"); //Что ты знаешь о снепперах?
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_01"); //Зачем тебе знать это? И не говори мне, что просто из любопытства!
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_02"); //Я собираюсь поохотиться на этих снепперов,
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_03"); //Это безумие. Я наблюдал за ними - что за кровожадные твари!
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_04"); //Тогда расскажи мне, что ты о них знаешь.
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_05"); //Хм... я мог бы помочь тебе, но только при одном условии!
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_06"); //Что ты хочешь?
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_07"); //Если тебе удастся убить снепперов - ты должен вытащить меня отсюда!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ СЃРЅРµРїРїРµСЂР°С…?
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_01"); //Р—Р°С‡РµРј С‚РµР±Рµ Р·РЅР°С‚СЊ СЌС‚Рѕ? Р РЅРµ РіРѕРІРѕСЂРё РјРЅРµ, С‡С‚Рѕ РїСЂРѕСЃС‚Рѕ РёР· Р»СЋР±РѕРїС‹С‚СЃС‚РІР°!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_02"); //РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїРѕРѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° СЌС‚РёС… СЃРЅРµРїРїРµСЂРѕРІ,
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_03"); //Р­С‚Рѕ Р±РµР·СѓРјРёРµ. РЇ РЅР°Р±Р»СЋРґР°Р» Р·Р° РЅРёРјРё - С‡С‚Рѕ Р·Р° РєСЂРѕРІРѕР¶Р°РґРЅС‹Рµ С‚РІР°СЂРё!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_04"); //РўРѕРіРґР° СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚С‹ Рѕ РЅРёС… Р·РЅР°РµС€СЊ.
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_05"); //РҐРј... СЏ РјРѕРі Р±С‹ РїРѕРјРѕС‡СЊ С‚РµР±Рµ, РЅРѕ С‚РѕР»СЊРєРѕ РїСЂРё РѕРґРЅРѕРј СѓСЃР»РѕРІРёРё!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_06"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_07"); //Р•СЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ СѓР±РёС‚СЊ СЃРЅРµРїРїРµСЂРѕРІ - С‚С‹ РґРѕР»Р¶РµРЅ РІС‹С‚Р°С‰РёС‚СЊ РјРµРЅСЏ РѕС‚СЃСЋРґР°!
 	
 	if ((Npc_IsDead (Fed)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bilgot_Hilfe_05_08"); //Мне здесь долго не продержаться - ты говорил с Федом? У этого парня крыша поехала, и я не хочу кончить как он!
+		AI_Output (self, other, "DIA_Bilgot_Hilfe_05_08"); //РњРЅРµ Р·РґРµСЃСЊ РґРѕР»РіРѕ РЅРµ РїСЂРѕРґРµСЂР¶Р°С‚СЊСЃСЏ - С‚С‹ РіРѕРІРѕСЂРёР» СЃ Р¤РµРґРѕРј? РЈ СЌС‚РѕРіРѕ РїР°СЂРЅСЏ РєСЂС‹С€Р° РїРѕРµС…Р°Р»Р°, Рё СЏ РЅРµ С…РѕС‡Сѓ РєРѕРЅС‡РёС‚СЊ РєР°Рє РѕРЅ!
 	};
 };
 
@@ -135,7 +135,7 @@ instance DIA_Bilgot_KNOWSLEADSNAPPER		(C_INFO)
 	condition	 = 	DIA_Bilgot_KNOWSLEADSNAPPER_Condition;
 	information	 = 	DIA_Bilgot_KNOWSLEADSNAPPER_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Расскажи мне, что ты знаешь. И я вытащу тебя отсюда!";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ. Р СЏ РІС‹С‚Р°С‰Сѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°!";
 };
 
 func int DIA_Bilgot_KNOWSLEADSNAPPER_Condition ()
@@ -149,25 +149,25 @@ func int DIA_Bilgot_KNOWSLEADSNAPPER_Condition ()
 
 func void DIA_Bilgot_KNOWSLEADSNAPPER_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_00"); //Расскажи мне, что ты знаешь. И я вытащу тебя отсюда!
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_01"); //Я знал, что могу рассчитывать на тебя. Так что будь внимателен. Я довольно долго наблюдаю за снепперами.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_02"); //Они очень хитры и могут, ну, как бы... общаться. Они никогда не ходят поодиночке и нападают только стаей.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_03"); //Но есть еще кое-что. Среди них есть один особенный. Он редко показывается, но я видел его.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_04"); //Другие снепперы низко кланяются, когда проходят мимо него, но никогда не отходят далеко.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_05"); //Пока этот зверь не тронется с места, ни один снеппер поблизости даже не шевельнется.
-	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_06"); //Где мне найти этого кровожадного зверя?
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_07"); //Я видел его на ступенях старой сторожевой башни.
+	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ. Р СЏ РІС‹С‚Р°С‰Сѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°!
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_01"); //РЇ Р·РЅР°Р», С‡С‚Рѕ РјРѕРіСѓ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° С‚РµР±СЏ. РўР°Рє С‡С‚Рѕ Р±СѓРґСЊ РІРЅРёРјР°С‚РµР»РµРЅ. РЇ РґРѕРІРѕР»СЊРЅРѕ РґРѕР»РіРѕ РЅР°Р±Р»СЋРґР°СЋ Р·Р° СЃРЅРµРїРїРµСЂР°РјРё.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_02"); //РћРЅРё РѕС‡РµРЅСЊ С…РёС‚СЂС‹ Рё РјРѕРіСѓС‚, РЅСѓ, РєР°Рє Р±С‹... РѕР±С‰Р°С‚СЊСЃСЏ. РћРЅРё РЅРёРєРѕРіРґР° РЅРµ С…РѕРґСЏС‚ РїРѕРѕРґРёРЅРѕС‡РєРµ Рё РЅР°РїР°РґР°СЋС‚ С‚РѕР»СЊРєРѕ СЃС‚Р°РµР№.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_03"); //РќРѕ РµСЃС‚СЊ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ. РЎСЂРµРґРё РЅРёС… РµСЃС‚СЊ РѕРґРёРЅ РѕСЃРѕР±РµРЅРЅС‹Р№. РћРЅ СЂРµРґРєРѕ РїРѕРєР°Р·С‹РІР°РµС‚СЃСЏ, РЅРѕ СЏ РІРёРґРµР» РµРіРѕ.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_04"); //Р”СЂСѓРіРёРµ СЃРЅРµРїРїРµСЂС‹ РЅРёР·РєРѕ РєР»Р°РЅСЏСЋС‚СЃСЏ, РєРѕРіРґР° РїСЂРѕС…РѕРґСЏС‚ РјРёРјРѕ РЅРµРіРѕ, РЅРѕ РЅРёРєРѕРіРґР° РЅРµ РѕС‚С…РѕРґСЏС‚ РґР°Р»РµРєРѕ.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_05"); //РџРѕРєР° СЌС‚РѕС‚ Р·РІРµСЂСЊ РЅРµ С‚СЂРѕРЅРµС‚СЃСЏ СЃ РјРµСЃС‚Р°, РЅРё РѕРґРёРЅ СЃРЅРµРїРїРµСЂ РїРѕР±Р»РёР·РѕСЃС‚Рё РґР°Р¶Рµ РЅРµ С€РµРІРµР»СЊРЅРµС‚СЃСЏ.
+	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_06"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ РєСЂРѕРІРѕР¶Р°РґРЅРѕРіРѕ Р·РІРµСЂСЏ?
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_07"); //РЇ РІРёРґРµР» РµРіРѕ РЅР° СЃС‚СѓРїРµРЅСЏС… СЃС‚Р°СЂРѕР№ СЃС‚РѕСЂРѕР¶РµРІРѕР№ Р±Р°С€РЅРё.
 
-	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_08"); //Отлично. Мне кажется, я понял. Спасибо!
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_09"); //Помни, ты дал мне слово!
+	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_08"); //РћС‚Р»РёС‡РЅРѕ. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЏ РїРѕРЅСЏР». РЎРїР°СЃРёР±Рѕ!
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_09"); //РџРѕРјРЅРё, С‚С‹ РґР°Р» РјРЅРµ СЃР»РѕРІРѕ!
 
-	Wld_InsertNpc (NewMine_LeadSnapper,"OW_ORC_LOOKOUT_2_01"); //Der Rudelfьhrer
+	Wld_InsertNpc (NewMine_LeadSnapper,"OW_ORC_LOOKOUT_2_01"); //Der RudelfСЊhrer
 	
-	B_LogEntry (TOPIC_FajethKillSnapper,"Билгот рассказал мне о вожаке стаи Снепперов. Он должен быть на ступеньках старой сторожевой башни."); 
+	B_LogEntry (TOPIC_FajethKillSnapper,"Р‘РёР»РіРѕС‚ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ РІРѕР¶Р°РєРµ СЃС‚Р°Рё РЎРЅРµРїРїРµСЂРѕРІ. РћРЅ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РЅР° СЃС‚СѓРїРµРЅСЊРєР°С… СЃС‚Р°СЂРѕР№ СЃС‚РѕСЂРѕР¶РµРІРѕР№ Р±Р°С€РЅРё."); 
 	
 	Log_CreateTopic (TOPIC_BilgotEscort,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BilgotEscort,LOG_RUNNING);
-	B_LogEntry (TOPIC_BilgotEscort,"Билгот хочет, чтобы я вывел его из долины.");
+	B_LogEntry (TOPIC_BilgotEscort,"Р‘РёР»РіРѕС‚ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РІС‹РІРµР» РµРіРѕ РёР· РґРѕР»РёРЅС‹.");
 		
 };
 ///////////////////////////////////////////////////////////////////////
@@ -180,7 +180,7 @@ instance DIA_Bilgot_TAKEYOUWITHME		(C_INFO)
 	condition	 = 	DIA_Bilgot_TAKEYOUWITHME_Condition;
 	information	 = 	DIA_Bilgot_TAKEYOUWITHME_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"(Сдержать обещание)";
+	description	 = 	"(РЎРґРµСЂР¶Р°С‚СЊ РѕР±РµС‰Р°РЅРёРµ)";
 };
 func int DIA_Bilgot_TAKEYOUWITHME_Condition ()
 {
@@ -192,10 +192,10 @@ func int DIA_Bilgot_TAKEYOUWITHME_Condition ()
 };
 func void DIA_Bilgot_TAKEYOUWITHME_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_00"); //Время пришло, Билгот! Пакуй свои вещи, мы отправляемся в путь.
-	//Joly: SC bringt den Typ bis zum Pass AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_01"); //GroЯartig! Es reicht mir schon, wenn du mich ьber die groЯe Brьcke am Fluss vor der belagerten Burg bringst. Den Rest schaff ich dann schon.
+	AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_00"); //Р’СЂРµРјСЏ РїСЂРёС€Р»Рѕ, Р‘РёР»РіРѕС‚! РџР°РєСѓР№ СЃРІРѕРё РІРµС‰Рё, РјС‹ РѕС‚РїСЂР°РІР»СЏРµРјСЃСЏ РІ РїСѓС‚СЊ.
+	//Joly: SC bringt den Typ bis zum Pass AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_01"); //GroРЇartig! Es reicht mir schon, wenn du mich СЊber die groРЇe BrСЊcke am Fluss vor der belagerten Burg bringst. Den Rest schaff ich dann schon.
 	//Joly: SC bringt den Typ bis zum Pass AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_02"); //Dann beeil dich!
-	AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_03"); //Я готов!
+	AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_03"); //РЇ РіРѕС‚РѕРІ!
 
 	Npc_ExchangeRoutine	(self, "FOLLOWTOOCBRIDGE");
 	Bilgot.flags	= 0;	
@@ -213,7 +213,7 @@ instance DIA_Bilgot_LAUFSCHNELLER		(C_INFO)
 	condition	 = 	DIA_Bilgot_LAUFSCHNELLER_Condition;
 	information	 = 	DIA_Bilgot_LAUFSCHNELLER_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Ты не мог бы идти немного быстрее?!";
+	description	 = 	"РўС‹ РЅРµ РјРѕРі Р±С‹ РёРґС‚Рё РЅРµРјРЅРѕРіРѕ Р±С‹СЃС‚СЂРµРµ?!";
 };
 
 func int DIA_Bilgot_LAUFSCHNELLER_Condition ()
@@ -227,8 +227,8 @@ func int DIA_Bilgot_LAUFSCHNELLER_Condition ()
 
 func void DIA_Bilgot_LAUFSCHNELLER_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_LAUFSCHNELLER_15_00"); //Ты не мог бы идти немного быстрее?!
-	AI_Output (self, other, "DIA_Bilgot_LAUFSCHNELLER_05_01"); //Я иду так быстро, как могу.
+	AI_Output (other, self, "DIA_Bilgot_LAUFSCHNELLER_15_00"); //РўС‹ РЅРµ РјРѕРі Р±С‹ РёРґС‚Рё РЅРµРјРЅРѕРіРѕ Р±С‹СЃС‚СЂРµРµ?!
+	AI_Output (self, other, "DIA_Bilgot_LAUFSCHNELLER_05_01"); //РЇ РёРґСѓ С‚Р°Рє Р±С‹СЃС‚СЂРѕ, РєР°Рє РјРѕРіСѓ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info BeiBrueckeAngekommen
@@ -252,10 +252,10 @@ func int DIA_Bilgot_BEIBRUECKEANGEKOMMEN_Condition ()
 
 func void DIA_Bilgot_BEIBRUECKEANGEKOMMEN_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_00"); //Хорошо, пришли. Дальше иди один. Но будь осторожен!
-	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_01"); //Спасибо!
-	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_02"); //Смотри, чтобы тебя не съели. Я очень огорчусь.
-	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_03"); //Прощай!
+	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_00"); //РҐРѕСЂРѕС€Рѕ, РїСЂРёС€Р»Рё. Р”Р°Р»СЊС€Рµ РёРґРё РѕРґРёРЅ. РќРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ!
+	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_01"); //РЎРїР°СЃРёР±Рѕ!
+	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_02"); //РЎРјРѕС‚СЂРё, С‡С‚РѕР±С‹ С‚РµР±СЏ РЅРµ СЃСЉРµР»Рё. РЇ РѕС‡РµРЅСЊ РѕРіРѕСЂС‡СѓСЃСЊ.
+	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_03"); //РџСЂРѕС‰Р°Р№!
 	
 	AI_StopProcessInfos (self);	
 	TschuessBilgot = TRUE;
@@ -275,7 +275,7 @@ instance DIA_Bilgot_LetztePause		(C_INFO)
 	condition	 = 	DIA_Bilgot_LetztePause_Condition;
 	information	 = 	DIA_Bilgot_LetztePause_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Что ты делаешь здесь? Я думал, ты пошел через Проход?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ? РЇ РґСѓРјР°Р», С‚С‹ РїРѕС€РµР» С‡РµСЂРµР· РџСЂРѕС…РѕРґ?";
 };
 
 func int DIA_Bilgot_LetztePause_Condition ()
@@ -288,10 +288,10 @@ func int DIA_Bilgot_LetztePause_Condition ()
 
 func void DIA_Bilgot_LetztePause_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_00"); //Что ты делаешь здесь? Я думал, ты пошел через Проход?
-	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_01"); //Я просто не в силах идти. Мне нужно передохнуть немного. Я справлюсь. Не волнуйся!
-	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_02"); //Как скажешь.
-	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_03"); //Просто немного передохну.
+	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ? РЇ РґСѓРјР°Р», С‚С‹ РїРѕС€РµР» С‡РµСЂРµР· РџСЂРѕС…РѕРґ?
+	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_01"); //РЇ РїСЂРѕСЃС‚Рѕ РЅРµ РІ СЃРёР»Р°С… РёРґС‚Рё. РњРЅРµ РЅСѓР¶РЅРѕ РїРµСЂРµРґРѕС…РЅСѓС‚СЊ РЅРµРјРЅРѕРіРѕ. РЇ СЃРїСЂР°РІР»СЋСЃСЊ. РќРµ РІРѕР»РЅСѓР№СЃСЏ!
+	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_02"); //РљР°Рє СЃРєР°Р¶РµС€СЊ.
+	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_03"); //РџСЂРѕСЃС‚Рѕ РЅРµРјРЅРѕРіРѕ РїРµСЂРµРґРѕС…РЅСѓ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -305,7 +305,7 @@ instance DIA_Bilgot_Olav		(C_INFO)
 	condition	 = 	DIA_Bilgot_Olav_Condition;
 	information	 = 	DIA_Bilgot_Olav_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я нашел Олава.";
+	description	 = 	"РЇ РЅР°С€РµР» РћР»Р°РІР°.";
 };
 
 func int DIA_Bilgot_Olav_Condition ()
@@ -319,10 +319,10 @@ func int DIA_Bilgot_Olav_Condition ()
 
 func void DIA_Bilgot_Olav_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Olav_15_00"); //Я нашел Олава.
-	AI_Output (self, other, "DIA_Bilgot_Olav_05_01"); //И как он?
-	AI_Output (other, self, "DIA_Bilgot_Olav_15_02"); //Он мертв. Его съели волки.
-	AI_Output (self, other, "DIA_Bilgot_Olav_05_03"); //Ох, черт. Надеюсь, хотя бы мне удастся выбраться отсюда.
+	AI_Output (other, self, "DIA_Bilgot_Olav_15_00"); //РЇ РЅР°С€РµР» РћР»Р°РІР°.
+	AI_Output (self, other, "DIA_Bilgot_Olav_05_01"); //Р РєР°Рє РѕРЅ?
+	AI_Output (other, self, "DIA_Bilgot_Olav_15_02"); //РћРЅ РјРµСЂС‚РІ. Р•РіРѕ СЃСЉРµР»Рё РІРѕР»РєРё.
+	AI_Output (self, other, "DIA_Bilgot_Olav_05_03"); //РћС…, С‡РµСЂС‚. РќР°РґРµСЋСЃСЊ, С…РѕС‚СЏ Р±С‹ РјРЅРµ СѓРґР°СЃС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
 	
 	B_GivePlayerXP (XP_Ambient);
 };

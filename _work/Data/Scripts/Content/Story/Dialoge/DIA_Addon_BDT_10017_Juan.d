@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Juan_HI   (C_INFO)
 	condition   = DIA_Addon_Juan_HI_Condition;
 	information = DIA_Addon_Juan_HI_Info;
 	permanent   = FALSE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_Juan_HI_Condition()
 {	
@@ -71,12 +71,12 @@ FUNC INT DIA_Addon_Juan_HI_Condition()
 };
 FUNC VOID DIA_Addon_Juan_HI_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_HI_15_00");//Как дела?
-	AI_Output (self,other,"DIA_Addon_Juan_HI_13_01");//Что тебе нужно? Если тебе нечего мне сказать, проходи мимо.
+	AI_Output (other,self,"DIA_Addon_Juan_HI_15_00");//РљР°Рє РґРµР»Р°?
+	AI_Output (self,other,"DIA_Addon_Juan_HI_13_01");//Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? Р•СЃР»Рё С‚РµР±Рµ РЅРµС‡РµРіРѕ РјРЅРµ СЃРєР°Р·Р°С‚СЊ, РїСЂРѕС…РѕРґРё РјРёРјРѕ.
 	
 	if !Npc_IsDead (Freund)
 	{
-		AI_Output (self,other,"DIA_Addon_Juan_HI_13_02");//Иначе мой приятель сделает из тебя фарш. Так что тебе нужно?
+		AI_Output (self,other,"DIA_Addon_Juan_HI_13_02");//РРЅР°С‡Рµ РјРѕР№ РїСЂРёСЏС‚РµР»СЊ СЃРґРµР»Р°РµС‚ РёР· С‚РµР±СЏ С„Р°СЂС€. РўР°Рє С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 		B_StartOtherRoutine (Freund,"STAND");
 	};
 };	
@@ -91,7 +91,7 @@ INSTANCE DIA_Addon_Juan_Losung   (C_INFO)
 	condition   = DIA_Addon_Juan_Losung_Condition;
 	information = DIA_Addon_Juan_Losung_Info;
 	permanent   = FALSE;
-	description = "Говорят, у тебя есть интересные вещи...";
+	description = "Р“РѕРІРѕСЂСЏС‚, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РёРЅС‚РµСЂРµСЃРЅС‹Рµ РІРµС‰Рё...";
 };
 FUNC INT DIA_Addon_Juan_Losung_Condition()
 {	
@@ -103,12 +103,12 @@ FUNC INT DIA_Addon_Juan_Losung_Condition()
 };
 FUNC VOID DIA_Addon_Juan_Losung_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//Говорят, у тебя есть интересные вещи...
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_01");//И что? Эстебан хочет меня обуть? Я все время работаю, целыми днями не выхожу из этой жалкой дыры...
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//...а он просто посылает кого-то, чтобы забрать мои вещи? Я же не склад!
-	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//Ну и что? Это не мои проблемы.
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Это Я создаю тебе проблемы. Ты хочешь доставить товары - отлично, заплати за них!
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//Возьми золото у Эстебана или у Ворона, или я не знаю где еще. Мне без разницы. Если кому-то нужны эти товары, за них придется заплатить!
+	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//Р“РѕРІРѕСЂСЏС‚, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РёРЅС‚РµСЂРµСЃРЅС‹Рµ РІРµС‰Рё...
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_01");//Р С‡С‚Рѕ? Р­СЃС‚РµР±Р°РЅ С…РѕС‡РµС‚ РјРµРЅСЏ РѕР±СѓС‚СЊ? РЇ РІСЃРµ РІСЂРµРјСЏ СЂР°Р±РѕС‚Р°СЋ, С†РµР»С‹РјРё РґРЅСЏРјРё РЅРµ РІС‹С…РѕР¶Сѓ РёР· СЌС‚РѕР№ Р¶Р°Р»РєРѕР№ РґС‹СЂС‹...
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//...Р° РѕРЅ РїСЂРѕСЃС‚Рѕ РїРѕСЃС‹Р»Р°РµС‚ РєРѕРіРѕ-С‚Рѕ, С‡С‚РѕР±С‹ Р·Р°Р±СЂР°С‚СЊ РјРѕРё РІРµС‰Рё? РЇ Р¶Рµ РЅРµ СЃРєР»Р°Рґ!
+	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//РќСѓ Рё С‡С‚Рѕ? Р­С‚Рѕ РЅРµ РјРѕРё РїСЂРѕР±Р»РµРјС‹.
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Р­С‚Рѕ РЇ СЃРѕР·РґР°СЋ С‚РµР±Рµ РїСЂРѕР±Р»РµРјС‹. РўС‹ С…РѕС‡РµС€СЊ РґРѕСЃС‚Р°РІРёС‚СЊ С‚РѕРІР°СЂС‹ - РѕС‚Р»РёС‡РЅРѕ, Р·Р°РїР»Р°С‚Рё Р·Р° РЅРёС…!
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//Р’РѕР·СЊРјРё Р·РѕР»РѕС‚Рѕ Сѓ Р­СЃС‚РµР±Р°РЅР° РёР»Рё Сѓ Р’РѕСЂРѕРЅР°, РёР»Рё СЏ РЅРµ Р·РЅР°СЋ РіРґРµ РµС‰Рµ. РњРЅРµ Р±РµР· СЂР°Р·РЅРёС†С‹. Р•СЃР»Рё РєРѕРјСѓ-С‚Рѕ РЅСѓР¶РЅС‹ СЌС‚Рё С‚РѕРІР°СЂС‹, Р·Р° РЅРёС… РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ!
 };
 
 //---------------------------------------------------------------------
@@ -121,7 +121,7 @@ INSTANCE DIA_Addon_Juan_AufsMaul (C_INFO)
 	condition   = DIA_Addon_Juan_AufsMaul_Condition;
 	information = DIA_Addon_Juan_AufsMaul_Info;
 	permanent   = FALSE;
-	description = "Я пришел не от Эстебана!";
+	description = "РЇ РїСЂРёС€РµР» РЅРµ РѕС‚ Р­СЃС‚РµР±Р°РЅР°!";
 };
 FUNC INT DIA_Addon_Juan_AufsMaul_Condition()
 {	
@@ -132,8 +132,8 @@ FUNC INT DIA_Addon_Juan_AufsMaul_Condition()
 };
 FUNC VOID DIA_Addon_Juan_AufsMaul_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_AufsMaul_15_00"); //Я пришел не от Эстебана!
-	AI_Output (self,other,"DIA_Addon_Juan_AufsMaul_13_01"); //Да? Ну тогда... э-э... Секундочку! Замри! У тебя на плече какая-то мошка.
+	AI_Output (other,self,"DIA_Addon_Juan_AufsMaul_15_00"); //РЇ РїСЂРёС€РµР» РЅРµ РѕС‚ Р­СЃС‚РµР±Р°РЅР°!
+	AI_Output (self,other,"DIA_Addon_Juan_AufsMaul_13_01"); //Р”Р°? РќСѓ С‚РѕРіРґР°... СЌ-СЌ... РЎРµРєСѓРЅРґРѕС‡РєСѓ! Р—Р°РјСЂРё! РЈ С‚РµР±СЏ РЅР° РїР»РµС‡Рµ РєР°РєР°СЏ-С‚Рѕ РјРѕС€РєР°.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);

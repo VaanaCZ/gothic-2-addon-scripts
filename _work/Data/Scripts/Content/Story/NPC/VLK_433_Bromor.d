@@ -2,7 +2,7 @@
 instance VLK_433_Bromor (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Бромор"; 
+	name 		= "Р‘СЂРѕРјРѕСЂ"; 
 	guild 		= GIL_VLK;
 	id 			= 433;
 	voice 		= 7;

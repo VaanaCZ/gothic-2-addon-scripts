@@ -7,7 +7,7 @@
 instance VLK_449_Lares_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Λΰπερ"; 
+	name 		= "Π›Π°Ρ€ΠµΡ"; 
 	guild 		= GIL_NONE;
 	id 			= 4490;
 	voice 		= 9;	//Joly: hat zu viel mit Diego zu tun, als dass man ihm Diegos Stimme gibt: Deswegen Stimme 8

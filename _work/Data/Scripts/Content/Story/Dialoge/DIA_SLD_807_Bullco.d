@@ -31,7 +31,7 @@ instance DIA_Bullco_Hallo		(C_INFO)
 	condition	= DIA_Bullco_Hallo_Condition;
 	information	= DIA_Bullco_Hallo_Info;
 	permanent	= TRUE;
-	description	= "Нам двоим нужно поболтать...";
+	description	= "РќР°Рј РґРІРѕРёРј РЅСѓР¶РЅРѕ РїРѕР±РѕР»С‚Р°С‚СЊ...";
 };
 
 func int DIA_Bullco_Hallo_Condition ()
@@ -41,14 +41,14 @@ func int DIA_Bullco_Hallo_Condition ()
 
 func void DIA_Bullco_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_HALLO_15_00"); //Нам двоим нужно поболтать...
+	AI_Output (other, self, "DIA_Bullco_HALLO_15_00"); //РќР°Рј РґРІРѕРёРј РЅСѓР¶РЅРѕ РїРѕР±РѕР»С‚Р°С‚СЊ...
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other, "DIA_Bullco_HALLO_06_01"); //Послушай, ты победил! Теперь оставь меня в покое.
+		AI_Output (self, other, "DIA_Bullco_HALLO_06_01"); //РџРѕСЃР»СѓС€Р°Р№, С‚С‹ РїРѕР±РµРґРёР»! РўРµРїРµСЂСЊ РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_HALLO_06_02"); //Я ничего не хочу знать об этом.
+		AI_Output (self, other, "DIA_Bullco_HALLO_06_02"); //РЇ РЅРёС‡РµРіРѕ РЅРµ С…РѕС‡Сѓ Р·РЅР°С‚СЊ РѕР± СЌС‚РѕРј.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -77,7 +77,7 @@ func int DIA_Bullco_Quatscher_Condition ()
 
 func void DIA_Bullco_Quatscher_Info ()
 {
-	AI_Output (self, other, "DIA_Bullco_Quatscher_06_00"); //Сильвио не любит болтунов. Ты мог бы понять это уже.
+	AI_Output (self, other, "DIA_Bullco_Quatscher_06_00"); //РЎРёР»СЊРІРёРѕ РЅРµ Р»СЋР±РёС‚ Р±РѕР»С‚СѓРЅРѕРІ. РўС‹ РјРѕРі Р±С‹ РїРѕРЅСЏС‚СЊ СЌС‚Рѕ СѓР¶Рµ.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "PEE");
@@ -114,10 +114,10 @@ func int DIA_Bullco_PleaseLeave_Condition ()
 
 func void DIA_Bullco_PleaseLeave_Info ()
 {
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_00"); //Нам нужно поговорить. Тебе и мне.
-	AI_Output (other, self, "DIA_Bullco_PleaseLeave_15_01"); //Что тебе нужно?
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_02"); //Я думаю, будет лучше для всех, если твоя физиономия больше не будет маячить на этой ферме.
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_03"); //Чтобы завтра утром тебя здесь не было. Мы поняли друг друга?
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_00"); //РќР°Рј РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ. РўРµР±Рµ Рё РјРЅРµ.
+	AI_Output (other, self, "DIA_Bullco_PleaseLeave_15_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_02"); //РЇ РґСѓРјР°СЋ, Р±СѓРґРµС‚ Р»СѓС‡С€Рµ РґР»СЏ РІСЃРµС…, РµСЃР»Рё С‚РІРѕСЏ С„РёР·РёРѕРЅРѕРјРёСЏ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґРµС‚ РјР°СЏС‡РёС‚СЊ РЅР° СЌС‚РѕР№ С„РµСЂРјРµ.
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_03"); //Р§С‚РѕР±С‹ Р·Р°РІС‚СЂР° СѓС‚СЂРѕРј С‚РµР±СЏ Р·РґРµСЃСЊ РЅРµ Р±С‹Р»Рѕ. РњС‹ РїРѕРЅСЏР»Рё РґСЂСѓРі РґСЂСѓРіР°?
 
 	Bullco_Leave_Day = B_GetDayPlus();	
 	Bullco_scharf = TRUE;
@@ -155,13 +155,13 @@ func void DIA_Bullco_DailyCheck_Info ()
 {
 	if (Bullco_HitCounter == 0)
 	{
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_00"); //Ты все еще здесь...
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_01"); //А я-то думал, мы договорились, что я позволю тебе уйти с миром.
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_02"); //Тебе стоило прислушаться к моим словам.
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_00"); //РўС‹ РІСЃРµ РµС‰Рµ Р·РґРµСЃСЊ...
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_01"); //Рђ СЏ-С‚Рѕ РґСѓРјР°Р», РјС‹ РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ, С‡С‚Рѕ СЏ РїРѕР·РІРѕР»СЋ С‚РµР±Рµ СѓР№С‚Рё СЃ РјРёСЂРѕРј.
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_02"); //РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїСЂРёСЃР»СѓС€Р°С‚СЊСЃСЏ Рє РјРѕРёРј СЃР»РѕРІР°Рј.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_03"); //Глазам своим не верю! Этот урод все еще здесь!
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_03"); //Р“Р»Р°Р·Р°Рј СЃРІРѕРёРј РЅРµ РІРµСЂСЋ! Р­С‚РѕС‚ СѓСЂРѕРґ РІСЃРµ РµС‰Рµ Р·РґРµСЃСЊ!
 	};
 	
 	Bullco_HitCounter = Bullco_HitCounter + 1;
@@ -183,7 +183,7 @@ instance DIA_Bullco_WontLeave (C_INFO)
 	condition	= DIA_Bullco_WontLeave_Condition;
 	information	= DIA_Bullco_WontLeave_Info;
 	permanent	= FALSE;
-	description = "Я НЕ СОБИРАЮСЬ уходить отсюда!";
+	description = "РЇ РќР• РЎРћР‘РР РђР®РЎР¬ СѓС…РѕРґРёС‚СЊ РѕС‚СЃСЋРґР°!";
 };
 
 func int DIA_Bullco_WontLeave_Condition ()
@@ -196,17 +196,17 @@ func int DIA_Bullco_WontLeave_Condition ()
 
 func void DIA_Bullco_WontLeave_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_WontLeave_15_00"); //Я НЕ СОБИРАЮСЬ уходить отсюда!
+	AI_Output (other, self, "DIA_Bullco_WontLeave_15_00"); //РЇ РќР• РЎРћР‘РР РђР®РЎР¬ СѓС…РѕРґРёС‚СЊ РѕС‚СЃСЋРґР°!
 
 	if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bullco_WontLeave_06_01"); //(вздыхает) Похоже, нам придется обсудить этот вопрос опять.
+		AI_Output (self, other, "DIA_Bullco_WontLeave_06_01"); //(РІР·РґС‹С…Р°РµС‚) РџРѕС…РѕР¶Рµ, РЅР°Рј РїСЂРёРґРµС‚СЃСЏ РѕР±СЃСѓРґРёС‚СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ РѕРїСЏС‚СЊ.
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 1);		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_WontLeave_06_02"); //(ворчливо) Да, да, иди, расскажи это кому-нибудь, кому это интересно.
+		AI_Output (self, other, "DIA_Bullco_WontLeave_06_02"); //(РІРѕСЂС‡Р»РёРІРѕ) Р”Р°, РґР°, РёРґРё, СЂР°СЃСЃРєР°Р¶Рё СЌС‚Рѕ РєРѕРјСѓ-РЅРёР±СѓРґСЊ, РєРѕРјСѓ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ.
 		Bullco_scharf = FALSE;
 		AI_StopProcessInfos (self);
 	};
@@ -224,7 +224,7 @@ instance DIA_Bullco_PepesSchafe (C_INFO)
 	condition	= DIA_Bullco_PepesSchafe_Condition;
 	information	= DIA_Bullco_PepesSchafe_Info;
 	permanent	= FALSE;
-	description = "Тебе имя Пепе говорит о чем-нибудь?";
+	description = "РўРµР±Рµ РёРјСЏ РџРµРїРµ РіРѕРІРѕСЂРёС‚ Рѕ С‡РµРј-РЅРёР±СѓРґСЊ?";
 };
 
 func int DIA_Bullco_PepesSchafe_Condition ()
@@ -239,17 +239,17 @@ func int DIA_Bullco_PepesSchafe_Condition ()
 
 func void DIA_Bullco_PepesSchafe_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_00"); //Тебе имя Пепе говорит о чем-нибудь?
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_01"); //Я абсолютно не понимаю, о чем ты говоришь, но твой тон мне не нравится!
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_02"); //Ты должен был охранять овец.
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_03"); //Какое мне дело до овец?
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_04"); //До них есть дело Ли.
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_05"); //На что ты намекаешь?
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_06"); //Если ты продолжишь действовать мне на нервы, я позабочусь, чтобы тебе пришлось заплатить за овец.
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_07"); //Так что если тебя волнует твое жалование, оставь меня в покое!
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_08"); //(в ярости) Ты, ты...
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_09"); //(спокойно) Да?
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_10"); //(себе под нос) Мерзкий коварный ублюдок...
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_00"); //РўРµР±Рµ РёРјСЏ РџРµРїРµ РіРѕРІРѕСЂРёС‚ Рѕ С‡РµРј-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_01"); //РЇ Р°Р±СЃРѕР»СЋС‚РЅРѕ РЅРµ РїРѕРЅРёРјР°СЋ, Рѕ С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ, РЅРѕ С‚РІРѕР№ С‚РѕРЅ РјРЅРµ РЅРµ РЅСЂР°РІРёС‚СЃСЏ!
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_02"); //РўС‹ РґРѕР»Р¶РµРЅ Р±С‹Р» РѕС…СЂР°РЅСЏС‚СЊ РѕРІРµС†.
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_03"); //РљР°РєРѕРµ РјРЅРµ РґРµР»Рѕ РґРѕ РѕРІРµС†?
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_04"); //Р”Рѕ РЅРёС… РµСЃС‚СЊ РґРµР»Рѕ Р›Рё.
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_05"); //РќР° С‡С‚Рѕ С‚С‹ РЅР°РјРµРєР°РµС€СЊ?
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_06"); //Р•СЃР»Рё С‚С‹ РїСЂРѕРґРѕР»Р¶РёС€СЊ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РјРЅРµ РЅР° РЅРµСЂРІС‹, СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ С‚РµР±Рµ РїСЂРёС€Р»РѕСЃСЊ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° РѕРІРµС†.
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_07"); //РўР°Рє С‡С‚Рѕ РµСЃР»Рё С‚РµР±СЏ РІРѕР»РЅСѓРµС‚ С‚РІРѕРµ Р¶Р°Р»РѕРІР°РЅРёРµ, РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_08"); //(РІ СЏСЂРѕСЃС‚Рё) РўС‹, С‚С‹...
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_09"); //(СЃРїРѕРєРѕР№РЅРѕ) Р”Р°?
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_10"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњРµСЂР·РєРёР№ РєРѕРІР°СЂРЅС‹Р№ СѓР±Р»СЋРґРѕРє...
 	
 	Bullco_scharf = FALSE;
 	B_GivePlayerXP (XP_Ambient);

@@ -1,7 +1,7 @@
 INSTANCE BAU_982_Grimbald (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Гримбальд";
+	name 		= "Р“СЂРёРјР±Р°Р»СЊРґ";
 	guild 		= GIL_OUT;
 	id 			= 982;
 	voice 		= 7;

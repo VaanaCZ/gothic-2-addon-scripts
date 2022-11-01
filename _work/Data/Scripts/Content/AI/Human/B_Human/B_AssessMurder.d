@@ -2,8 +2,8 @@
 // B_AssessMurder
 // --------------
 // Wird durch Wahrnehmung PERC_ASSESSMURDER aufgerufen
-// wird ÜBERALL her (AUCH aus ZS_Attack) aufgerufen								
-// ÄNDERT evtl. ATTACKREASON + überschreibt evtl. CRIME
+// wird Ð¬BERALL her (AUCH aus ZS_Attack) aufgerufen								
+// Ð”NDERT evtl. ATTACKREASON + ÑŒberschreibt evtl. CRIME
 // reagiert bei Mord an Human oder Mord an Schafen
 // ****************************************************
 
@@ -11,34 +11,34 @@ FUNC VOID B_AssessMurder()
 {
 	//EXIT IF...
 	
-	// ------ ich war selber der Mörder ------
+	// ------ ich war selber der MÑ†rder ------
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(other)) 
 	{
 		return;
 	};
 
-	// ------ DISTANZ zu Täter UND auch zu Opfer größer als PERC_DIST_INTERMEDIAT (AssesMurder-Wahrnehmung steht auf DIST_MAX) ------
+	// ------ DISTANZ zu TÐ´ter UND auch zu Opfer grÑ†Ð¯er als PERC_DIST_INTERMEDIAT (AssesMurder-Wahrnehmung steht auf DIST_MAX) ------
 	if (Npc_GetDistToNpc(self, other) > PERC_DIST_INTERMEDIAT)
 	&& (Npc_GetDistToNpc(self, victim) > PERC_DIST_INTERMEDIAT)
 	{
 		return;
 	};
 	
-	// ------- Burgzinnenwachen sollen sich nicht zu Tode stürzen, etc. ------
+	// ------- Burgzinnenwachen sollen sich nicht zu Tode stÑŒrzen, etc. ------
 	if (Npc_GetHeightToNpc(self, other) > PERC_DIST_HEIGHT)
 	&& (Npc_GetHeightToNpc(self, victim) > PERC_DIST_HEIGHT)
 	{
 		return;
 	};
 	
-	// ------ Täter hinter Wand -------
+	// ------ TÐ´ter hinter Wand -------
 	if (!Npc_CanSeeNpcFreeLOS(self,other))
 	&& (!Npc_CanSeeNpcFreeLOS(self,victim))
 	{
 		return;
 	};
 		
-	// ------ Meine Gilde feindlich zu Täter-Gilde ------ 	//Opfer ist tot!
+	// ------ Meine Gilde feindlich zu TÐ´ter-Gilde ------ 	//Opfer ist tot!
 	if (B_AssessEnemy())	
 	{ 
 		return; //angreifen oder fliehen
@@ -63,21 +63,21 @@ FUNC VOID B_AssessMurder()
 		};
 	};
 	
-	// ------ Täter UND Opfer BEIDE Monster ------
+	// ------ TÐ´ter UND Opfer BEIDE Monster ------
 	if (other.guild > GIL_SEPERATOR_HUM)
 	&& (victim.guild > GIL_SEPERATOR_HUM)
 	{
 		return;
 	};
 	
-	// ------ Täter Monster (Opfer Human) ------
+	// ------ TÐ´ter Monster (Opfer Human) ------
 	if (other.guild > GIL_SEPERATOR_HUM)
 	{
 		B_Attack (self, other, AR_MonsterMurderedHuman, 0);				//angreifen oder fliehen
 		return;
 	};
 	
-	// ------ Opfer Monster (Täter Human) ------
+	// ------ Opfer Monster (TÐ´ter Human) ------
 	if (victim.guild > GIL_SEPERATOR_HUM)
 	{
 		return;
@@ -106,16 +106,16 @@ FUNC VOID B_AssessMurder()
 	};
 	
 	
-	// ------ Täter und Opfer BEIDE Human ------
+	// ------ TÐ´ter und Opfer BEIDE Human ------
 	// + Ich war HOSTILE oder ANGRY zum Opfer 
-	// + Ich bin FRIENDLY oder NEUTRAL zum Mörder
+	// + Ich bin FRIENDLY oder NEUTRAL zum MÑ†rder
 	if ( (Npc_GetAttitude(self,victim) == ATT_HOSTILE) || (Npc_GetAttitude(self,victim) == ATT_ANGRY) )
 	&& ( (Npc_GetAttitude(self,other) == ATT_FRIENDLY) || (Npc_GetAttitude(self,other) == ATT_NEUTRAL) )
 	{
 		return;
 	};
 		
-	// ------ Täter war Player und ich bin NPCType_Friend ------
+	// ------ TÐ´ter war Player und ich bin NPCType_Friend ------
 	if ( Npc_IsPlayer(other) && (self.npctype == NPCTYPE_FRIEND) )
 	{
 		return;
@@ -140,10 +140,10 @@ FUNC VOID B_AssessMurder()
 		return;
 	};
 	
-	// ------ Folgende Human-Gilden dürfen getötet werden -----
+	// ------ Folgende Human-Gilden dÑŒrfen getÑ†tet werden -----
 	if (victim.guild == GIL_DMT)//self abgefragt in C_WantToAttackMurder (s.o.)
 	|| ((victim.guild == GIL_BDT) 
-	&&  !C_NpcBelongsToBL (victim)) //Addon: Lager Banditen dürfen nicht getötet werden!  
+	&&  !C_NpcBelongsToBL (victim)) //Addon: Lager Banditen dÑŒrfen nicht getÑ†tet werden!  
 	{
 		return;
 	};

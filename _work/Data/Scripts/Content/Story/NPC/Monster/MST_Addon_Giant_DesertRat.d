@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Giant_DesertRat(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Пустынная крыса";
+	name							=	"РџСѓСЃС‚С‹РЅРЅР°СЏ РєСЂС‹СЃР°";
 	guild							=	GIL_Giant_Rat;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Giant_Rat;
 	level							=	10;

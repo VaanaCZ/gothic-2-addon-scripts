@@ -1,7 +1,7 @@
 instance BDT_1075_Addon_Fortuno (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Фортуно";
+	name 		= "Р¤РѕСЂС‚СѓРЅРѕ";
 	guild 		= GIL_BDT;
 	id 			= 1075;
 	voice 		= 13;

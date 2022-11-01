@@ -12,7 +12,7 @@ CONST int BookXP1000	= 1000;
 const int LPMultiplier	= 1000;
 const int XPMultiplier	= 5;
 //---------------------------------------------------------------------------------------------------------------------------
-//		USEFUNC wird von allen LP Büchern benutzt 
+//		USEFUNC wird von allen LP BÑŒchern benutzt 
 //---------------------------------------------------------------------------------------------------------------------------
 FUNC VOID UseLPBook(var int constanze)
 	{
@@ -32,7 +32,7 @@ FUNC VOID UseLPBook(var int constanze)
 		};
 	};
 //---------------------------------------------------------------------------------------------------------------------------
-//		USEFUNC wird von allen XP Büchern benutzt 
+//		USEFUNC wird von allen XP BÑŒchern benutzt 
 //---------------------------------------------------------------------------------------------------------------------------
 FUNC VOID UseXPBook(var int constanze)
 	{
@@ -59,11 +59,11 @@ FUNC VOID UseXPBook(var int constanze)
 	
 */
 //---------------------------------------------------------------------------------------------------------------------------
-//				Xpunktbücher
+//				XpunktbÑŒcher
 //---------------------------------------------------------------------------------------------------------------------------
 PROTOTYPE ItWr_Addon_XPBook (C_ITEM)
 {
-	name 					=	"Îïûò ïîêîëåíèé";
+	name 					=	"ÐžÐ¿Ñ‹Ñ‚ Ð¿Ð¾ÐºÐ¾Ð»ÐµÐ½Ð¸Ð¹";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -118,11 +118,11 @@ FUNC VOID UseBookXP1000()
 	UseXPBook(BookXP1000);
 };
 //---------------------------------------------------------------------------------------------------------------------------
-//				Lernpunktbücher
+//				LernpunktbÑŒcher
 //---------------------------------------------------------------------------------------------------------------------------
 PROTOTYPE ItWr_Addon_LPBook (C_ITEM)
 {
-	name 					=	"Êíèãà çíàíèé";
+	name 					=	"ÐšÐ½Ð¸Ð³Ð° Ð·Ð½Ð°Ð½Ð¸Ð¹";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;

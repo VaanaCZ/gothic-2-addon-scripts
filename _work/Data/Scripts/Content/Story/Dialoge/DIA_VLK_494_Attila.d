@@ -77,124 +77,124 @@ func int DIA_Attila_Hallo_Condition ()
 };
 func void DIA_Attila_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Attila_Hallo_09_00"); //(спокойно) Ах, наконец. Я ждал тебя, чужеземец.
+	AI_Output (self, other, "DIA_Attila_Hallo_09_00"); //(СЃРїРѕРєРѕР№РЅРѕ) РђС…, РЅР°РєРѕРЅРµС†. РЇ Р¶РґР°Р» С‚РµР±СЏ, С‡СѓР¶РµР·РµРјРµС†.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Что тебе нужно от меня?",DIA_Attila_Hallo_Was);
-	Info_AddChoice		(DIA_Attila_Hallo,"Кто ты?",DIA_Attila_Hallo_Wer);
+	Info_AddChoice		(DIA_Attila_Hallo,"Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ?",DIA_Attila_Hallo_Was);
+	Info_AddChoice		(DIA_Attila_Hallo,"РљС‚Рѕ С‚С‹?",DIA_Attila_Hallo_Wer);
 	
 	B_GivePlayerXP (XP_Attila_MetHim);
 };
 FUNC VOID DIA_Attila_Hallo_Wer()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Wer_15_00"); //Кто ты?
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Меня зовут Аттила... но разве мое имя важно? Наши имена ничего не значат.
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //Ты это должен знать, чужеземец. (тихо смеется)
+	AI_Output (other, self, "DIA_Attila_Hallo_Wer_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РђС‚С‚РёР»Р°... РЅРѕ СЂР°Р·РІРµ РјРѕРµ РёРјСЏ РІР°Р¶РЅРѕ? РќР°С€Рё РёРјРµРЅР° РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°С‡Р°С‚.
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //РўС‹ СЌС‚Рѕ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡СѓР¶РµР·РµРјРµС†. (С‚РёС…Рѕ СЃРјРµРµС‚СЃСЏ)
 	
 	Knows_Attila_Wer = TRUE;
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
 	if (Knows_Attila_Was == FALSE)
 	{
-		Info_AddChoice		(DIA_Attila_Hallo,"Что тебе нужно от меня?",DIA_Attila_Hallo_Was);
+		Info_AddChoice		(DIA_Attila_Hallo,"Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ?",DIA_Attila_Hallo_Was);
 	};
-	Info_AddChoice		(DIA_Attila_Hallo,"К чему весь этот фарс?",DIA_Attila_Hallo_Theater);
+	Info_AddChoice		(DIA_Attila_Hallo,"Рљ С‡РµРјСѓ РІРµСЃСЊ СЌС‚РѕС‚ С„Р°СЂСЃ?",DIA_Attila_Hallo_Theater);
 }; 
 FUNC VOID DIA_Attila_Hallo_Was()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Was_15_00"); //Что тебе нужно от меня?
-	AI_Output (self, other, "DIA_Attila_Hallo_Was_09_01"); //Я здесь, чтобы объяснить тебе несколько вещей. И кроме этого, я собираюсь убить тебя.
+	AI_Output (other, self, "DIA_Attila_Hallo_Was_15_00"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Attila_Hallo_Was_09_01"); //РЇ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РѕР±СЉСЏСЃРЅРёС‚СЊ С‚РµР±Рµ РЅРµСЃРєРѕР»СЊРєРѕ РІРµС‰РµР№. Р РєСЂРѕРјРµ СЌС‚РѕРіРѕ, СЏ СЃРѕР±РёСЂР°СЋСЃСЊ СѓР±РёС‚СЊ С‚РµР±СЏ.
 	Knows_Attila_Was = TRUE;
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
 	if (Knows_Attila_Wer == FALSE)
 	{
-		Info_AddChoice		(DIA_Attila_Hallo,"Кто ты?",DIA_Attila_Hallo_Wer);
+		Info_AddChoice		(DIA_Attila_Hallo,"РљС‚Рѕ С‚С‹?",DIA_Attila_Hallo_Wer);
 	};
-		Info_AddChoice		(DIA_Attila_Hallo,"Кто платит тебе за это?",DIA_Attila_Hallo_Auftrag);
-		Info_AddChoice		(DIA_Attila_Hallo,"К чему весь этот фарс?",DIA_Attila_Hallo_Theater);
+		Info_AddChoice		(DIA_Attila_Hallo,"РљС‚Рѕ РїР»Р°С‚РёС‚ С‚РµР±Рµ Р·Р° СЌС‚Рѕ?",DIA_Attila_Hallo_Auftrag);
+		Info_AddChoice		(DIA_Attila_Hallo,"Рљ С‡РµРјСѓ РІРµСЃСЊ СЌС‚РѕС‚ С„Р°СЂСЃ?",DIA_Attila_Hallo_Theater);
 };
 FUNC VOID DIA_Attila_Hallo_Theater()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Theater_15_00"); //К чему весь этот фарс?
-	AI_Output (self, other, "DIA_Attila_Hallo_Theater_09_01"); //Ты не должен умереть в неведении. Считай это проявлением уважения к приговоренным.
+	AI_Output (other, self, "DIA_Attila_Hallo_Theater_15_00"); //Рљ С‡РµРјСѓ РІРµСЃСЊ СЌС‚РѕС‚ С„Р°СЂСЃ?
+	AI_Output (self, other, "DIA_Attila_Hallo_Theater_09_01"); //РўС‹ РЅРµ РґРѕР»Р¶РµРЅ СѓРјРµСЂРµС‚СЊ РІ РЅРµРІРµРґРµРЅРёРё. РЎС‡РёС‚Р°Р№ СЌС‚Рѕ РїСЂРѕСЏРІР»РµРЅРёРµРј СѓРІР°Р¶РµРЅРёСЏ Рє РїСЂРёРіРѕРІРѕСЂРµРЅРЅС‹Рј.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Я, пожалуй, пойду. (КОНЕЦ)",DIA_Attila_Hallo_Ende);
-	Info_AddChoice		(DIA_Attila_Hallo,"Кто платит тебе за это?",DIA_Attila_Hallo_Auftrag);
-	Info_AddChoice		(DIA_Attila_Hallo,"Почему ты хочешь убить меня?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"РЇ, РїРѕР¶Р°Р»СѓР№, РїРѕР№РґСѓ. (РљРћРќР•Р¦)",DIA_Attila_Hallo_Ende);
+	Info_AddChoice		(DIA_Attila_Hallo,"РљС‚Рѕ РїР»Р°С‚РёС‚ С‚РµР±Рµ Р·Р° СЌС‚Рѕ?",DIA_Attila_Hallo_Auftrag);
+	Info_AddChoice		(DIA_Attila_Hallo,"РџРѕС‡РµРјСѓ С‚С‹ С…РѕС‡РµС€СЊ СѓР±РёС‚СЊ РјРµРЅСЏ?",DIA_Attila_Hallo_Warum);
 	
 };
 FUNC VOID DIA_Attila_Hallo_Ende()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Ende_15_00"); //Я, пожалуй, пойду...
-	AI_Output (self, other, "DIA_Attila_Hallo_Ende_09_01"); //Боюсь... я не могу позволить тебе этого. Смирись. Пришло время умереть.
+	AI_Output (other, self, "DIA_Attila_Hallo_Ende_15_00"); //РЇ, РїРѕР¶Р°Р»СѓР№, РїРѕР№РґСѓ...
+	AI_Output (self, other, "DIA_Attila_Hallo_Ende_09_01"); //Р‘РѕСЋСЃСЊ... СЏ РЅРµ РјРѕРіСѓ РїРѕР·РІРѕР»РёС‚СЊ С‚РµР±Рµ СЌС‚РѕРіРѕ. РЎРјРёСЂРёСЃСЊ. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ СѓРјРµСЂРµС‚СЊ.
 	AI_DrawWeapon (self);
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Кто платит тебе за это?",DIA_Attila_Hallo_Auftrag);
-	Info_AddChoice		(DIA_Attila_Hallo,"Почему ты хочешь убить меня?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"РљС‚Рѕ РїР»Р°С‚РёС‚ С‚РµР±Рµ Р·Р° СЌС‚Рѕ?",DIA_Attila_Hallo_Auftrag);
+	Info_AddChoice		(DIA_Attila_Hallo,"РџРѕС‡РµРјСѓ С‚С‹ С…РѕС‡РµС€СЊ СѓР±РёС‚СЊ РјРµРЅСЏ?",DIA_Attila_Hallo_Warum);
 };
 FUNC VOID DIA_Attila_Hallo_Auftrag()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Auftrag_15_00"); //Кто платит тебе за это?
-	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_01"); //Мои хозяева стараются работать в тени, как и я.
-	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_02"); //В условиях моего контракта записано, что я не имею права разглашать ни их имя, ни их резиденцию.
+	AI_Output (other, self, "DIA_Attila_Hallo_Auftrag_15_00"); //РљС‚Рѕ РїР»Р°С‚РёС‚ С‚РµР±Рµ Р·Р° СЌС‚Рѕ?
+	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_01"); //РњРѕРё С…РѕР·СЏРµРІР° СЃС‚Р°СЂР°СЋС‚СЃСЏ СЂР°Р±РѕС‚Р°С‚СЊ РІ С‚РµРЅРё, РєР°Рє Рё СЏ.
+	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_02"); //Р’ СѓСЃР»РѕРІРёСЏС… РјРѕРµРіРѕ РєРѕРЅС‚СЂР°РєС‚Р° Р·Р°РїРёСЃР°РЅРѕ, С‡С‚Рѕ СЏ РЅРµ РёРјРµСЋ РїСЂР°РІР° СЂР°Р·РіР»Р°С€Р°С‚СЊ РЅРё РёС… РёРјСЏ, РЅРё РёС… СЂРµР·РёРґРµРЅС†РёСЋ.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Почему ты хочешь убить меня?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"РџРѕС‡РµРјСѓ С‚С‹ С…РѕС‡РµС€СЊ СѓР±РёС‚СЊ РјРµРЅСЏ?",DIA_Attila_Hallo_Warum);
 };
 FUNC VOID DIA_Attila_Hallo_Warum()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Warum_15_00"); //Почему ты хочешь убить меня?
+	AI_Output (other, self, "DIA_Attila_Hallo_Warum_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ С…РѕС‡РµС€СЊ СѓР±РёС‚СЊ РјРµРЅСЏ?
 	
 	if (Betrayal_Halvor == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_01"); //Ты сдал Халвора. Теперь он сидит в тюрьме. Так не пойдет.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_01"); //РўС‹ СЃРґР°Р» РҐР°Р»РІРѕСЂР°. РўРµРїРµСЂСЊ РѕРЅ СЃРёРґРёС‚ РІ С‚СЋСЂСЊРјРµ. РўР°Рє РЅРµ РїРѕР№РґРµС‚.
 	}; 
 	if (Rengaru_InKnast == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_02"); //Ты продал Ренгару ополчению. Он всего лишь мелкий воришка, но тебе не следовало делать этого.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_02"); //РўС‹ РїСЂРѕРґР°Р» Р РµРЅРіР°СЂСѓ РѕРїРѕР»С‡РµРЅРёСЋ. РћРЅ РІСЃРµРіРѕ Р»РёС€СЊ РјРµР»РєРёР№ РІРѕСЂРёС€РєР°, РЅРѕ С‚РµР±Рµ РЅРµ СЃР»РµРґРѕРІР°Р»Рѕ РґРµР»Р°С‚СЊ СЌС‚РѕРіРѕ.
 	};
 	if (Nagur_Ausgeliefert == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_03"); //Нагур попал за решетку по твоей вине. Кое-кому кажется, что это непростительная ошибка.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_03"); //РќР°РіСѓСЂ РїРѕРїР°Р» Р·Р° СЂРµС€РµС‚РєСѓ РїРѕ С‚РІРѕРµР№ РІРёРЅРµ. РљРѕРµ-РєРѕРјСѓ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ СЌС‚Рѕ РЅРµРїСЂРѕСЃС‚РёС‚РµР»СЊРЅР°СЏ РѕС€РёР±РєР°.
 	};
 	
-	AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_04"); //Мои хозяева недовольны этим. Чтобы не дать тебе совершить еще одну ошибку, они послали меня.
+	AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_04"); //РњРѕРё С…РѕР·СЏРµРІР° РЅРµРґРѕРІРѕР»СЊРЅС‹ СЌС‚РёРј. Р§С‚РѕР±С‹ РЅРµ РґР°С‚СЊ С‚РµР±Рµ СЃРѕРІРµСЂС€РёС‚СЊ РµС‰Рµ РѕРґРЅСѓ РѕС€РёР±РєСѓ, РѕРЅРё РїРѕСЃР»Р°Р»Рё РјРµРЅСЏ.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Я могу дат тебе золото ...",DIA_Attila_Hallo_Gold);
-	Info_AddChoice		(DIA_Attila_Hallo,"Дай мне хотя бы вынуть свое оружие.",DIA_Attila_Hallo_Attacke);
+	Info_AddChoice		(DIA_Attila_Hallo,"РЇ РјРѕРіСѓ РґР°С‚ С‚РµР±Рµ Р·РѕР»РѕС‚Рѕ ...",DIA_Attila_Hallo_Gold);
+	Info_AddChoice		(DIA_Attila_Hallo,"Р”Р°Р№ РјРЅРµ С…РѕС‚СЏ Р±С‹ РІС‹РЅСѓС‚СЊ СЃРІРѕРµ РѕСЂСѓР¶РёРµ.",DIA_Attila_Hallo_Attacke);
 	
 };
 FUNC VOID DIA_Attila_Hallo_Gold()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Gold_15_00"); //Я могу дать тебе золото - много золота.
-	AI_Output (self, other, "DIA_Attila_Hallo_Gold_09_01"); //Тщетно. Я не за этим сюда пришел. Единственная цена, которую ты заплатишь - твоя жизнь. И заплатишь ты ее прямо сейчас.
+	AI_Output (other, self, "DIA_Attila_Hallo_Gold_15_00"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ Р·РѕР»РѕС‚Рѕ - РјРЅРѕРіРѕ Р·РѕР»РѕС‚Р°.
+	AI_Output (self, other, "DIA_Attila_Hallo_Gold_09_01"); //РўС‰РµС‚РЅРѕ. РЇ РЅРµ Р·Р° СЌС‚РёРј СЃСЋРґР° РїСЂРёС€РµР». Р•РґРёРЅСЃС‚РІРµРЅРЅР°СЏ С†РµРЅР°, РєРѕС‚РѕСЂСѓСЋ С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ - С‚РІРѕСЏ Р¶РёР·РЅСЊ. Р Р·Р°РїР»Р°С‚РёС€СЊ С‚С‹ РµРµ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 	
 };
 FUNC VOID DIA_Attila_Hallo_Attacke()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Attacke_15_00"); //Дай мне хотя бы вынуть свое оружие.
+	AI_Output (other, self, "DIA_Attila_Hallo_Attacke_15_00"); //Р”Р°Р№ РјРЅРµ С…РѕС‚СЏ Р±С‹ РІС‹РЅСѓС‚СЊ СЃРІРѕРµ РѕСЂСѓР¶РёРµ.
 	if (Npc_HasEquippedWeapon (other) == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_01"); //Хорошо, приготовься к своей последней битве.
+		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_01"); //РҐРѕСЂРѕС€Рѕ, РїСЂРёРіРѕС‚РѕРІСЊСЃСЏ Рє СЃРІРѕРµР№ РїРѕСЃР»РµРґРЅРµР№ Р±РёС‚РІРµ.
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 1);	
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_02"); //Да у тебя нет никакого оружия на поясе. У тебя осталось очень мало времени, чужеземец. Смерть уже близко.
+		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_02"); //Р”Р° Сѓ С‚РµР±СЏ РЅРµС‚ РЅРёРєР°РєРѕРіРѕ РѕСЂСѓР¶РёСЏ РЅР° РїРѕСЏСЃРµ. РЈ С‚РµР±СЏ РѕСЃС‚Р°Р»РѕСЃСЊ РѕС‡РµРЅСЊ РјР°Р»Рѕ РІСЂРµРјРµРЅРё, С‡СѓР¶РµР·РµРјРµС†. РЎРјРµСЂС‚СЊ СѓР¶Рµ Р±Р»РёР·РєРѕ.
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 2);	
 	};
 	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Willkommen Schlьssel fьr die Diebesgilde 
+//	Info Willkommen SchlСЊssel fСЊr die Diebesgilde 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_Willkommen  	(C_INFO)
 {
@@ -217,13 +217,13 @@ func int DIA_Attila_Willkommen_Condition ()
 
 func void DIA_Attila_Willkommen_Info ()
 {
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_00"); //Ах, наконец. Я ждал тебя, чужеземец.
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_00"); //РђС…, РЅР°РєРѕРЅРµС†. РЇ Р¶РґР°Р» С‚РµР±СЏ, С‡СѓР¶РµР·РµРјРµС†.
 	B_GivePlayerXP (XP_Attila_Friend);
-	AI_Output (other, self, "DIA_Attila_Willkommen_15_01"); //Кто ты и что тебе нужно от меня?
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_02"); //Это неважно. Важно лишь то, что ты делал. Ты оставался лояльным - даже если ты сам не знал об этом.
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_03"); //Некоторые покровители прослышали про твою лояльность. И они дают тебе шанс. Так используй его.
-	AI_Output (other, self, "DIA_Attila_Willkommen_15_04"); //Эй, просто скажи мне кто они.
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_05"); //У меня есть для тебя подарок. А все остальное в твоих руках, чужеземец. (тихо смеется)
+	AI_Output (other, self, "DIA_Attila_Willkommen_15_01"); //РљС‚Рѕ С‚С‹ Рё С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_02"); //Р­С‚Рѕ РЅРµРІР°Р¶РЅРѕ. Р’Р°Р¶РЅРѕ Р»РёС€СЊ С‚Рѕ, С‡С‚Рѕ С‚С‹ РґРµР»Р°Р». РўС‹ РѕСЃС‚Р°РІР°Р»СЃСЏ Р»РѕСЏР»СЊРЅС‹Рј - РґР°Р¶Рµ РµСЃР»Рё С‚С‹ СЃР°Рј РЅРµ Р·РЅР°Р» РѕР± СЌС‚РѕРј.
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_03"); //РќРµРєРѕС‚РѕСЂС‹Рµ РїРѕРєСЂРѕРІРёС‚РµР»Рё РїСЂРѕСЃР»С‹С€Р°Р»Рё РїСЂРѕ С‚РІРѕСЋ Р»РѕСЏР»СЊРЅРѕСЃС‚СЊ. Р РѕРЅРё РґР°СЋС‚ С‚РµР±Рµ С€Р°РЅСЃ. РўР°Рє РёСЃРїРѕР»СЊР·СѓР№ РµРіРѕ.
+	AI_Output (other, self, "DIA_Attila_Willkommen_15_04"); //Р­Р№, РїСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё РјРЅРµ РєС‚Рѕ РѕРЅРё.
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_05"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РїРѕРґР°СЂРѕРє. Рђ РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ РІ С‚РІРѕРёС… СЂСѓРєР°С…, С‡СѓР¶РµР·РµРјРµС†. (С‚РёС…Рѕ СЃРјРµРµС‚СЃСЏ)
 	
 	B_GiveInvItems (self,other,ItKe_ThiefGuildKey_MIS,1);
 	Attila_Key = TRUE;
@@ -231,7 +231,7 @@ func void DIA_Attila_Willkommen_Info ()
 	Npc_ExchangeRoutine (self, "AFTER");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Nach Schluessel Ьbergabe
+//	Info Nach Schluessel Р¬bergabe
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_NachSchluessel		(C_INFO)
 {
@@ -254,12 +254,12 @@ func int DIA_Attila_NachSchluessel_Condition ()
 
 func void DIA_Attila_NachSchluessel_Info ()
 {
-	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_00"); //Моя задача выполнена - пока.
-	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_01"); //Но кто знает, может, наши пути опять пересекутся...
+	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_00"); //РњРѕСЏ Р·Р°РґР°С‡Р° РІС‹РїРѕР»РЅРµРЅР° - РїРѕРєР°.
+	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_01"); //РќРѕ РєС‚Рѕ Р·РЅР°РµС‚, РјРѕР¶РµС‚, РЅР°С€Рё РїСѓС‚Рё РѕРїСЏС‚СЊ РїРµСЂРµСЃРµРєСѓС‚СЃСЏ...
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Nach Schluessel Ьbergabe Wer bist du?
+//	Info Nach Schluessel Р¬bergabe Wer bist du?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_Wer		(C_INFO)
 {
@@ -268,7 +268,7 @@ instance DIA_Attila_Wer		(C_INFO)
 	condition	 = 	DIA_Attila_Wer_Condition;
 	information	 = 	DIA_Attila_Wer_Info;
 	permanent	 =	FALSE;					
-	description	 =  "Кто ты?";
+	description	 =  "РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Attila_Wer_Condition ()
@@ -281,9 +281,9 @@ func int DIA_Attila_Wer_Condition ()
 
 func void DIA_Attila_Wer_Info ()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Wer_15_00"); //Кто ты?
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Меня зовут Аттила... но разве мое имя важно? Наши имена ничего не значат.
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //Ты это должен знать, чужеземец. (тихо смеется)
+	AI_Output (other, self, "DIA_Attila_Hallo_Wer_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РђС‚С‚РёР»Р°... РЅРѕ СЂР°Р·РІРµ РјРѕРµ РёРјСЏ РІР°Р¶РЅРѕ? РќР°С€Рё РёРјРµРЅР° РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°С‡Р°С‚.
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //РўС‹ СЌС‚Рѕ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡СѓР¶РµР·РµРјРµС†. (С‚РёС…Рѕ СЃРјРµРµС‚СЃСЏ)
 	
 	AI_StopProcessInfos (self);
 };

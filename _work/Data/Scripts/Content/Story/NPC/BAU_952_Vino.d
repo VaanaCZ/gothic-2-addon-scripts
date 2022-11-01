@@ -3,7 +3,7 @@
 instance BAU_952_Vino (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Âèíî";
+	name 		= "Ð’Ð¸Ð½Ð¾";
 	guild 		= GIL_OUT;
 	id 			= 952;
 	voice 		= 5;
@@ -31,8 +31,8 @@ instance BAU_952_Vino (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 10); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 10); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_952;

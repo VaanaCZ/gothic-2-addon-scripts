@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_StoneGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Каменный голем";
+	name							=	"РљР°РјРµРЅРЅС‹Р№ РіРѕР»РµРј";
 	guild							=	GIL_STONEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 	level							=	25;
@@ -77,7 +77,7 @@ INSTANCE StoneGolem	(Mst_Default_StoneGolem)
 
 INSTANCE Summoned_Golem (Mst_Default_StoneGolem)
 {
-	name							=	"Вызванный голем";
+	name							=	"Р’С‹Р·РІР°РЅРЅС‹Р№ РіРѕР»РµРј";
 	guild							=	GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_GOLEM;
 	level							=	0;
@@ -133,7 +133,7 @@ func void B_GolemRise ()
 	{
 		AI_PlayAni (self,"T_RISE");
 		self.NoFocus	= FALSE;
-		self.name			=	"Каменный голем";
+		self.name			=	"РљР°РјРµРЅРЅС‹Р№ РіРѕР»РµРј";
 		self.flags				   			= 	0;
 		
 		AI_StartState 		(self, ZS_MM_Attack, 0, "");
@@ -145,7 +145,7 @@ func void B_GolemRise ()
 };
 
 //************************************************************************************
-//	Shattered_Golem ->liegt am Boden und setzt sich bei Annдherung des Hero zusammen
+//	Shattered_Golem ->liegt am Boden und setzt sich bei AnnРґherung des Hero zusammen
 //************************************************************************************
 
 INSTANCE Shattered_Golem (Mst_Default_StoneGolem)
@@ -171,13 +171,13 @@ INSTANCE Shattered_Golem (Mst_Default_StoneGolem)
 
 //##################################################
 //##
-//##	Magischer Golem   	fьr Prьfung des Feuers
+//##	Magischer Golem   	fСЊr PrСЊfung des Feuers
 //##
 //##################################################
 
 INSTANCE MagicGolem	(Mst_Default_StoneGolem)
 {
-	name							=	"Магический голем";
+	name							=	"РњР°РіРёС‡РµСЃРєРёР№ РіРѕР»РµРј";
 	//Level
 	level							=	10;
 	

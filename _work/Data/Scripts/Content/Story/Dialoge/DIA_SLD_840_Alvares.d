@@ -43,10 +43,10 @@ func int DIA_Alvares_HAUAB_Condition ()
 func void DIA_Alvares_HAUAB_Info ()
 {
 	Akils_SLDStillthere = TRUE;
-	AI_Output (self, other, "DIA_Alvares_HAUAB_11_00"); //Что бы ни привело тебя сюда - тебе лучше забыть об этом и убраться подальше.
+	AI_Output (self, other, "DIA_Alvares_HAUAB_11_00"); //Р§С‚Рѕ Р±С‹ РЅРё РїСЂРёРІРµР»Рѕ С‚РµР±СЏ СЃСЋРґР° - С‚РµР±Рµ Р»СѓС‡С€Рµ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕРј Рё СѓР±СЂР°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ.
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Фермеру Акилу угрожают наемники."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"Р¤РµСЂРјРµСЂСѓ РђРєРёР»Сѓ СѓРіСЂРѕР¶Р°СЋС‚ РЅР°РµРјРЅРёРєРё."); 
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -71,28 +71,28 @@ func int DIA_Alvares_ATTACK_Condition ()
 };
 func void DIA_Alvares_ATTACK_Info ()
 {
-	AI_Output (self, other, "DIA_Alvares_ATTACK_11_00"); //Эй, ты все еще здесь. Я дам тебе выбор, чужак: проваливай или умри!
+	AI_Output (self, other, "DIA_Alvares_ATTACK_11_00"); //Р­Р№, С‚С‹ РІСЃРµ РµС‰Рµ Р·РґРµСЃСЊ. РЇ РґР°Рј С‚РµР±Рµ РІС‹Р±РѕСЂ, С‡СѓР¶Р°Рє: РїСЂРѕРІР°Р»РёРІР°Р№ РёР»Рё СѓРјСЂРё!
 	
 	Info_ClearChoices (DIA_Alvares_ATTACK);
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Кто вы такие, парни - пара клоунов?",DIA_Alvares_ATTACK_Kerle);
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Я хочу присоединиться к вам, наемникам.",DIA_Alvares_ATTACK_Soeldner);
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Вы, парни, сейчас исчезнете отсюда ...",DIA_Alvares_ATTACK_Witz);	 
-	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Мне не нужны проблемы.",DIA_Alvares_ATTACK_Aerger);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"РљС‚Рѕ РІС‹ С‚Р°РєРёРµ, РїР°СЂРЅРё - РїР°СЂР° РєР»РѕСѓРЅРѕРІ?",DIA_Alvares_ATTACK_Kerle);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј, РЅР°РµРјРЅРёРєР°Рј.",DIA_Alvares_ATTACK_Soeldner);
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Р’С‹, РїР°СЂРЅРё, СЃРµР№С‡Р°СЃ РёСЃС‡РµР·РЅРµС‚Рµ РѕС‚СЃСЋРґР° ...",DIA_Alvares_ATTACK_Witz);	 
+	Info_AddChoice 	  (DIA_Alvares_ATTACK,"РњРЅРµ РЅРµ РЅСѓР¶РЅС‹ РїСЂРѕР±Р»РµРјС‹.",DIA_Alvares_ATTACK_Aerger);
 	
 	if (MIS_Baltram_ScoutAkil == LOG_RUNNING)
 	{
-		Info_AddChoice 	  (DIA_Alvares_ATTACK,"Я просто пришел сюда за товаром.",DIA_Alvares_ATTACK_Lieferung);
+		Info_AddChoice 	  (DIA_Alvares_ATTACK,"РЇ РїСЂРѕСЃС‚Рѕ РїСЂРёС€РµР» СЃСЋРґР° Р·Р° С‚РѕРІР°СЂРѕРј.",DIA_Alvares_ATTACK_Lieferung);
 	};
 	
 	
 };
 FUNC VOID DIA_Alvares_ATTACK_Witz()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_00"); //Вы, парни, сейчас исчезнете отсюда. Все понятно?
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_01"); //Смотри-ка, новый герой нарисовался - и очень глупый герой.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_02"); //Ты знаешь, о чем я думаю?
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_03"); //Да кому какое дело, о чем ты думаешь?
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_04"); //Я думаю, что хороший герой - это мертвый герой. Так что сделай мне одолжение - умри поскорее!
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_00"); //Р’С‹, РїР°СЂРЅРё, СЃРµР№С‡Р°СЃ РёСЃС‡РµР·РЅРµС‚Рµ РѕС‚СЃСЋРґР°. Р’СЃРµ РїРѕРЅСЏС‚РЅРѕ?
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_01"); //РЎРјРѕС‚СЂРё-РєР°, РЅРѕРІС‹Р№ РіРµСЂРѕР№ РЅР°СЂРёСЃРѕРІР°Р»СЃСЏ - Рё РѕС‡РµРЅСЊ РіР»СѓРїС‹Р№ РіРµСЂРѕР№.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_02"); //РўС‹ Р·РЅР°РµС€СЊ, Рѕ С‡РµРј СЏ РґСѓРјР°СЋ?
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Witz_15_03"); //Р”Р° РєРѕРјСѓ РєР°РєРѕРµ РґРµР»Рѕ, Рѕ С‡РµРј С‚С‹ РґСѓРјР°РµС€СЊ?
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Witz_11_04"); //РЇ РґСѓРјР°СЋ, С‡С‚Рѕ С…РѕСЂРѕС€РёР№ РіРµСЂРѕР№ - СЌС‚Рѕ РјРµСЂС‚РІС‹Р№ РіРµСЂРѕР№. РўР°Рє С‡С‚Рѕ СЃРґРµР»Р°Р№ РјРЅРµ РѕРґРѕР»Р¶РµРЅРёРµ - СѓРјСЂРё РїРѕСЃРєРѕСЂРµРµ!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -100,9 +100,9 @@ FUNC VOID DIA_Alvares_ATTACK_Witz()
 };
 FUNC VOID DIA_Alvares_ATTACK_Kerle()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Kerle_15_00"); //Кто вы такие, парни - пара клоунов?
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_01"); //Ты правильно понял. И я буду продолжать смеяться, когда твой труп будет лежать в дорожной пыли.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_02"); //(зовет) Энгардо, давай начинать! Ты берешь на себя фермера - а я разберусь с этим клоуном!
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Kerle_15_00"); //РљС‚Рѕ РІС‹ С‚Р°РєРёРµ, РїР°СЂРЅРё - РїР°СЂР° РєР»РѕСѓРЅРѕРІ?
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_01"); //РўС‹ РїСЂР°РІРёР»СЊРЅРѕ РїРѕРЅСЏР». Р СЏ Р±СѓРґСѓ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЃРјРµСЏС‚СЊСЃСЏ, РєРѕРіРґР° С‚РІРѕР№ С‚СЂСѓРї Р±СѓРґРµС‚ Р»РµР¶Р°С‚СЊ РІ РґРѕСЂРѕР¶РЅРѕР№ РїС‹Р»Рё.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_02"); //(Р·РѕРІРµС‚) Р­РЅРіР°СЂРґРѕ, РґР°РІР°Р№ РЅР°С‡РёРЅР°С‚СЊ! РўС‹ Р±РµСЂРµС€СЊ РЅР° СЃРµР±СЏ С„РµСЂРјРµСЂР° - Р° СЏ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ СЌС‚РёРј РєР»РѕСѓРЅРѕРј!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -110,23 +110,23 @@ FUNC VOID DIA_Alvares_ATTACK_Kerle()
 };
 FUNC VOID DIA_Alvares_ATTACK_Aerger()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Aerger_15_00"); //Мне не нужны проблемы.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_01"); //А мы как раз ищем проблемы. Мы проделали долгий путь, чтобы найти их.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_02"); //Да, мы собираемся создать целую кучу проблем. И начну я с тебя, если ты сейчас же не свалишь отсюда.
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Aerger_15_00"); //РњРЅРµ РЅРµ РЅСѓР¶РЅС‹ РїСЂРѕР±Р»РµРјС‹.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_01"); //Рђ РјС‹ РєР°Рє СЂР°Р· РёС‰РµРј РїСЂРѕР±Р»РµРјС‹. РњС‹ РїСЂРѕРґРµР»Р°Р»Рё РґРѕР»РіРёР№ РїСѓС‚СЊ, С‡С‚РѕР±С‹ РЅР°Р№С‚Рё РёС….
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_02"); //Р”Р°, РјС‹ СЃРѕР±РёСЂР°РµРјСЃСЏ СЃРѕР·РґР°С‚СЊ С†РµР»СѓСЋ РєСѓС‡Сѓ РїСЂРѕР±Р»РµРј. Р РЅР°С‡РЅСѓ СЏ СЃ С‚РµР±СЏ, РµСЃР»Рё С‚С‹ СЃРµР№С‡Р°СЃ Р¶Рµ РЅРµ СЃРІР°Р»РёС€СЊ РѕС‚СЃСЋРґР°.
 	
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Alvares_ATTACK_Lieferung()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Lieferung_15_00"); //Я просто пришел сюда за товаром.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Lieferung_11_01"); //И мы тоже. Но мы были здесь первыми. Так что проваливай, пока я не сделал тебе больно.
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Lieferung_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ РїСЂРёС€РµР» СЃСЋРґР° Р·Р° С‚РѕРІР°СЂРѕРј.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Lieferung_11_01"); //Р РјС‹ С‚РѕР¶Рµ. РќРѕ РјС‹ Р±С‹Р»Рё Р·РґРµСЃСЊ РїРµСЂРІС‹РјРё. РўР°Рє С‡С‚Рѕ РїСЂРѕРІР°Р»РёРІР°Р№, РїРѕРєР° СЏ РЅРµ СЃРґРµР»Р°Р» С‚РµР±Рµ Р±РѕР»СЊРЅРѕ.
 	
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Alvares_ATTACK_Soeldner()
 {
-	AI_Output (other, self, "DIA_Alvares_ATTACK_Soeldner_15_00"); //Я хочу присоединиться к вам, наемникам.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Soeldner_11_01"); //Ох, правда? Тогда проваливай - или ты уже никогда не сможешь ни к кому присоединиться.
+	AI_Output (other, self, "DIA_Alvares_ATTACK_Soeldner_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј, РЅР°РµРјРЅРёРєР°Рј.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Soeldner_11_01"); //РћС…, РїСЂР°РІРґР°? РўРѕРіРґР° РїСЂРѕРІР°Р»РёРІР°Р№ - РёР»Рё С‚С‹ СѓР¶Рµ РЅРёРєРѕРіРґР° РЅРµ СЃРјРѕР¶РµС€СЊ РЅРё Рє РєРѕРјСѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -153,8 +153,8 @@ func int DIA_Alvares_Schluss_Condition ()
 };
 func void DIA_Alvares_Schluss_Info ()
 {
-	AI_Output (self, other, "DIA_Alvares_Schluss_11_00"); //Я дал тебе шанс. Но, похоже, ты не прислушиваешься к здравому смыслу.
-	AI_Output (self, other, "DIA_Alvares_Schluss_11_01"); //Хорошо - значит, мне придется убить тебя. (зовет) Энгардо, давай, прикончим их!
+	AI_Output (self, other, "DIA_Alvares_Schluss_11_00"); //РЇ РґР°Р» С‚РµР±Рµ С€Р°РЅСЃ. РќРѕ, РїРѕС…РѕР¶Рµ, С‚С‹ РЅРµ РїСЂРёСЃР»СѓС€РёРІР°РµС€СЊСЃСЏ Рє Р·РґСЂР°РІРѕРјСѓ СЃРјС‹СЃР»Сѓ.
+	AI_Output (self, other, "DIA_Alvares_Schluss_11_01"); //РҐРѕСЂРѕС€Рѕ - Р·РЅР°С‡РёС‚, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СѓР±РёС‚СЊ С‚РµР±СЏ. (Р·РѕРІРµС‚) Р­РЅРіР°СЂРґРѕ, РґР°РІР°Р№, РїСЂРёРєРѕРЅС‡РёРј РёС…!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);	

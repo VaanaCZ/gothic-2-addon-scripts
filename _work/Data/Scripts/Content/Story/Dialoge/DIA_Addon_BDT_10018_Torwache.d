@@ -9,7 +9,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_EXIT (C_INFO)
 	condition	= DIA_Addon_BDT_10018_Torwache_EXIT_Condition;
 	information	= DIA_Addon_BDT_10018_Torwache_EXIT_Info;
 	permanent	= TRUE;
-	description	= "Мы еще поговорим.";
+	description	= "РњС‹ РµС‰Рµ РїРѕРіРѕРІРѕСЂРёРј.";
 };        
          
 FUNC INT DIA_Addon_BDT_10018_Torwache_EXIT_Condition()
@@ -18,16 +18,16 @@ FUNC INT DIA_Addon_BDT_10018_Torwache_EXIT_Condition()
 };
 FUNC VOID DIA_Addon_BDT_10018_Torwache_EXIT_Info()
 {
-	AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_EXIT_15_00"); //Мы еще поговорим.
+	AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_EXIT_15_00"); //РњС‹ РµС‰Рµ РїРѕРіРѕРІРѕСЂРёРј.
 	
 	if (BDT_100018_Einmal == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_EXIT_04_01"); //Ты знаешь, что я тебе скажу...
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_EXIT_04_01"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЏ С‚РµР±Рµ СЃРєР°Р¶Сѓ...
 		BDT_100018_Einmal = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_EXIT_04_02"); //Отвали.
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_EXIT_04_02"); //РћС‚РІР°Р»Рё.
 	};
 	AI_StopProcessInfos	(self);
 };
@@ -73,18 +73,18 @@ func void DIA_Addon_BDT_10018_Torwache_FirstWarn_Info()
 	
 	if ( BDT_100018_Tells == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_00"); //Эй, притормози! Ты туда не попадешь, так что отвали!
-		AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_FirstWarn_15_01"); //Уйди с дороги - мне нужно поговорить с Вороном.
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_02"); //Никто не должен входить сюда. Прямой приказ Ворона.
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_00"); //Р­Р№, РїСЂРёС‚РѕСЂРјРѕР·Рё! РўС‹ С‚СѓРґР° РЅРµ РїРѕРїР°РґРµС€СЊ, С‚Р°Рє С‡С‚Рѕ РѕС‚РІР°Р»Рё!
+		AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_FirstWarn_15_01"); //РЈР№РґРё СЃ РґРѕСЂРѕРіРё - РјРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р’РѕСЂРѕРЅРѕРј.
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_02"); //РќРёРєС‚Рѕ РЅРµ РґРѕР»Р¶РµРЅ РІС…РѕРґРёС‚СЊ СЃСЋРґР°. РџСЂСЏРјРѕР№ РїСЂРёРєР°Р· Р’РѕСЂРѕРЅР°.
 		BDT_100018_Tells = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_Tempel,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Tempel,LOG_RUNNING);
-		B_LogEntry (Topic_Addon_Tempel,"Охранник у ворот не пропустит меня в храм. Я должен найти способ попасть внутрь.");
+		B_LogEntry (Topic_Addon_Tempel,"РћС…СЂР°РЅРЅРёРє Сѓ РІРѕСЂРѕС‚ РЅРµ РїСЂРѕРїСѓСЃС‚РёС‚ РјРµРЅСЏ РІ С…СЂР°Рј. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё СЃРїРѕСЃРѕР± РїРѕРїР°СЃС‚СЊ РІРЅСѓС‚СЂСЊ.");
 	}
 	else
 	{	
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_03"); //Снова ты? Ты начинаешь меня доставать!
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_03"); //РЎРЅРѕРІР° С‚С‹? РўС‹ РЅР°С‡РёРЅР°РµС€СЊ РјРµРЅСЏ РґРѕСЃС‚Р°РІР°С‚СЊ!
 		//AI_StopProcessInfos(self);
 	};			
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,BDT_10018_Checkpoint);
@@ -117,7 +117,7 @@ FUNC INT DIA_Addon_BDT_10018_Torwache_SecondWarn_Condition()
 
 func void DIA_Addon_BDT_10018_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_SecondWarn_04_00"); //Следующий шаг станет для тебя последним!
+	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_SecondWarn_04_00"); //РЎР»РµРґСѓСЋС‰РёР№ С€Р°Рі СЃС‚Р°РЅРµС‚ РґР»СЏ С‚РµР±СЏ РїРѕСЃР»РµРґРЅРёРј!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_10018_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -155,7 +155,7 @@ func void DIA_Addon_BDT_10018_Torwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_Attack_04_00"); //За Ворона!
+	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_Attack_04_00"); //Р—Р° Р’РѕСЂРѕРЅР°!
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -170,7 +170,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Hi   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Hi_Condition;
 	information = DIA_Addon_10018_Torwache_Hi_Info;
 	permanent   = FALSE;
-	description = "Это чертовски важно, я просто должен попасть к нему.";
+	description = "Р­С‚Рѕ С‡РµСЂС‚РѕРІСЃРєРё РІР°Р¶РЅРѕ, СЏ РїСЂРѕСЃС‚Рѕ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ Рє РЅРµРјСѓ.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Hi_Condition()
 {	
@@ -178,10 +178,10 @@ FUNC INT DIA_Addon_10018_Torwache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Hi_15_00");//Это чертовски важно, я просто должен попасть к нему.
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Hi_04_01");//Нет. Это НЕ важно. Только Бладвин может находиться здесь.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Hi_15_00");//Р­С‚Рѕ С‡РµСЂС‚РѕРІСЃРєРё РІР°Р¶РЅРѕ, СЏ РїСЂРѕСЃС‚Рѕ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ Рє РЅРµРјСѓ.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Hi_04_01");//РќРµС‚. Р­С‚Рѕ РќР• РІР°Р¶РЅРѕ. РўРѕР»СЊРєРѕ Р‘Р»Р°РґРІРёРЅ РјРѕР¶РµС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ Р·РґРµСЃСЊ.
 	
-	B_LogEntry (Topic_Addon_Tempel,"В храм позволено заходить только Бладвину. Возможно, я смогу попасть туда через него.");
+	B_LogEntry (Topic_Addon_Tempel,"Р’ С…СЂР°Рј РїРѕР·РІРѕР»РµРЅРѕ Р·Р°С…РѕРґРёС‚СЊ С‚РѕР»СЊРєРѕ Р‘Р»Р°РґРІРёРЅСѓ. Р’РѕР·РјРѕР¶РЅРѕ, СЏ СЃРјРѕРіСѓ РїРѕРїР°СЃС‚СЊ С‚СѓРґР° С‡РµСЂРµР· РЅРµРіРѕ.");
 };
 //----------------------------------------------------------------------
 //	Info Bloodwyn
@@ -193,7 +193,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Bloodwyn   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Bloodwyn_Condition;
 	information = DIA_Addon_10018_Torwache_Bloodwyn_Info;
 	permanent   = FALSE;
-	description = "Бладвин? А разве он не погиб?";
+	description = "Р‘Р»Р°РґРІРёРЅ? Рђ СЂР°Р·РІРµ РѕРЅ РЅРµ РїРѕРіРёР±?";
 };
 FUNC INT DIA_Addon_10018_Torwache_Bloodwyn_Condition()
 {	
@@ -205,8 +205,8 @@ FUNC INT DIA_Addon_10018_Torwache_Bloodwyn_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Bloodwyn_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_15_00");//Бладвин? А разве он не погиб?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_04_01");//Он сильнее, чем когда-либо. И если он выяснит, что кто-то создает проблемы, он порубит тебя в фарш.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_15_00");//Р‘Р»Р°РґРІРёРЅ? Рђ СЂР°Р·РІРµ РѕРЅ РЅРµ РїРѕРіРёР±?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_04_01");//РћРЅ СЃРёР»СЊРЅРµРµ, С‡РµРј РєРѕРіРґР°-Р»РёР±Рѕ. Р РµСЃР»Рё РѕРЅ РІС‹СЏСЃРЅРёС‚, С‡С‚Рѕ РєС‚Рѕ-С‚Рѕ СЃРѕР·РґР°РµС‚ РїСЂРѕР±Р»РµРјС‹, РѕРЅ РїРѕСЂСѓР±РёС‚ С‚РµР±СЏ РІ С„Р°СЂС€.
 };
 //----------------------------------------------------------------------
 //	Info Bribe
@@ -218,7 +218,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Bribe   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Bribe_Condition;
 	information = DIA_Addon_10018_Torwache_Bribe_Info;
 	permanent   = FALSE;
-	description = "Я дам тебе тысячу золотых, если ты впустишь меня.";
+	description = "РЇ РґР°Рј С‚РµР±Рµ С‚С‹СЃСЏС‡Сѓ Р·РѕР»РѕС‚С‹С…, РµСЃР»Рё С‚С‹ РІРїСѓСЃС‚РёС€СЊ РјРµРЅСЏ.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Bribe_Condition()
 {	
@@ -230,8 +230,8 @@ FUNC INT DIA_Addon_10018_Torwache_Bribe_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Bribe_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bribe_15_00");//Я дам тебе тысячу золотых, если ты впустишь меня.
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bribe_04_01");//Теряешь свое время, приятель.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bribe_15_00");//РЇ РґР°Рј С‚РµР±Рµ С‚С‹СЃСЏС‡Сѓ Р·РѕР»РѕС‚С‹С…, РµСЃР»Рё С‚С‹ РІРїСѓСЃС‚РёС€СЊ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bribe_04_01");//РўРµСЂСЏРµС€СЊ СЃРІРѕРµ РІСЂРµРјСЏ, РїСЂРёСЏС‚РµР»СЊ.
 };
 //----------------------------------------------------------------------
 //	Info Drin
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Drin   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Drin_Condition;
 	information = DIA_Addon_10018_Torwache_Drin_Info;
 	permanent   = FALSE;
-	description = "Бладвин там, внутри? Тогда позови его.";
+	description = "Р‘Р»Р°РґРІРёРЅ С‚Р°Рј, РІРЅСѓС‚СЂРё? РўРѕРіРґР° РїРѕР·РѕРІРё РµРіРѕ.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Drin_Condition()
 {	
@@ -255,14 +255,14 @@ FUNC INT DIA_Addon_10018_Torwache_Drin_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Drin_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Drin_15_00");//Бладвин там, внутри? Тогда позови его.
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_01");//Ха! Ты действительно думаешь, что я это сделаю?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_02");//Может быть, в лагере ты теперь и важная персона. Но твоя власть заканчивается ПРЯМО ЗДЕСЬ. Теперь понял?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_03");//Так что пойди поработай в шахте или займись чем-нибудь еще - но не загораживай здесь проход!
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Drin_15_00");//Р‘Р»Р°РґРІРёРЅ С‚Р°Рј, РІРЅСѓС‚СЂРё? РўРѕРіРґР° РїРѕР·РѕРІРё РµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_01");//РҐР°! РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЏ СЌС‚Рѕ СЃРґРµР»Р°СЋ?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_02");//РњРѕР¶РµС‚ Р±С‹С‚СЊ, РІ Р»Р°РіРµСЂРµ С‚С‹ С‚РµРїРµСЂСЊ Рё РІР°Р¶РЅР°СЏ РїРµСЂСЃРѕРЅР°. РќРѕ С‚РІРѕСЏ РІР»Р°СЃС‚СЊ Р·Р°РєР°РЅС‡РёРІР°РµС‚СЃСЏ РџР РЇРњРћ Р—Р”Р•РЎР¬. РўРµРїРµСЂСЊ РїРѕРЅСЏР»?
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_03");//РўР°Рє С‡С‚Рѕ РїРѕР№РґРё РїРѕСЂР°Р±РѕС‚Р°Р№ РІ С€Р°С…С‚Рµ РёР»Рё Р·Р°Р№РјРёСЃСЊ С‡РµРј-РЅРёР±СѓРґСЊ РµС‰Рµ - РЅРѕ РЅРµ Р·Р°РіРѕСЂР°Р¶РёРІР°Р№ Р·РґРµСЃСЊ РїСЂРѕС…РѕРґ!
 	
 	MIS_BloodwynRaus = LOG_RUNNING;
 
-	B_LogEntry (Topic_Addon_Tempel,"Бладвин находится в храме. Но это мне ничего не дает. Возможно, мне стоит наведаться в шахту.");
+	B_LogEntry (Topic_Addon_Tempel,"Р‘Р»Р°РґРІРёРЅ РЅР°С…РѕРґРёС‚СЃСЏ РІ С…СЂР°РјРµ. РќРѕ СЌС‚Рѕ РјРЅРµ РЅРёС‡РµРіРѕ РЅРµ РґР°РµС‚. Р’РѕР·РјРѕР¶РЅРѕ, РјРЅРµ СЃС‚РѕРёС‚ РЅР°РІРµРґР°С‚СЊСЃСЏ РІ С€Р°С…С‚Сѓ.");
 };
 //----------------------------------------------------------------------
 //	Info kopf
@@ -274,7 +274,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_kopf   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_kopf_Condition;
 	information = DIA_Addon_10018_Torwache_kopf_Info;
 	permanent   = FALSE;
-	description = "(показать голову Бладвина)";
+	description = "(РїРѕРєР°Р·Р°С‚СЊ РіРѕР»РѕРІСѓ Р‘Р»Р°РґРІРёРЅР°)";
 };
 FUNC INT DIA_Addon_10018_Torwache_kopf_Condition()
 {	
@@ -285,9 +285,9 @@ FUNC INT DIA_Addon_10018_Torwache_kopf_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_kopf_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_kopf_15_00");//Вот! Ты все еще хочешь остановить меня?!
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_01");//Это что... это... Бладвин?.. (тошнит) Это...
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_02");//Н-нет... Я хочу сказать... Да, проходи...
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_kopf_15_00");//Р’РѕС‚! РўС‹ РІСЃРµ РµС‰Рµ С…РѕС‡РµС€СЊ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ?!
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_01");//Р­С‚Рѕ С‡С‚Рѕ... СЌС‚Рѕ... Р‘Р»Р°РґРІРёРЅ?.. (С‚РѕС€РЅРёС‚) Р­С‚Рѕ...
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_02");//Рќ-РЅРµС‚... РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ... Р”Р°, РїСЂРѕС…РѕРґРё...
 	
 	MIS_BloodwynRaus = LOG_SUCCESS;
 	

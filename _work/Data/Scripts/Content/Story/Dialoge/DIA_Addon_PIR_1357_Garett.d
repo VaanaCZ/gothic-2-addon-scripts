@@ -77,10 +77,10 @@ FUNC INT DIA_Addon_Garett_Anheuern_Condition()
 };
 FUNC VOID DIA_Addon_Garett_Anheuern_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_00"); //Даже не предлагай мне присоединиться к твоей группе.
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_01"); //Как ты думаешь, что здесь начнется, если я уйду?
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_02"); //Да тут к моему возвращению не останется ни одного ящика!
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_03"); //Нет, я должен оставаться здесь и охранять наши запасы.
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_00"); //Р”Р°Р¶Рµ РЅРµ РїСЂРµРґР»Р°РіР°Р№ РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє С‚РІРѕРµР№ РіСЂСѓРїРїРµ.
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_01"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ Р·РґРµСЃСЊ РЅР°С‡РЅРµС‚СЃСЏ, РµСЃР»Рё СЏ СѓР№РґСѓ?
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_02"); //Р”Р° С‚СѓС‚ Рє РјРѕРµРјСѓ РІРѕР·РІСЂР°С‰РµРЅРёСЋ РЅРµ РѕСЃС‚Р°РЅРµС‚СЃСЏ РЅРё РѕРґРЅРѕРіРѕ СЏС‰РёРєР°!
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_03"); //РќРµС‚, СЏ РґРѕР»Р¶РµРЅ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ Рё РѕС…СЂР°РЅСЏС‚СЊ РЅР°С€Рё Р·Р°РїР°СЃС‹.
 };
 
 // ************************************************************
@@ -106,10 +106,10 @@ FUNC INT DIA_Addon_Garett_Hello_Condition()
 };
 FUNC VOID DIA_Addon_Garett_Hello_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_00"); //Так-так. Новое лицо. Надеюсь, ты не один из этих грязных бандитов?
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_01"); //Мое имя Гаретт. Если тебе что-нибудь понадобится, спроси у меня.
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_02"); //Я могу достать практически что угодно. Вино, оружие - все, что может тебе понадобиться.
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_03"); //Кроме самогона. Если тебе нужен самогон, иди к Сэмюэлю.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_00"); //РўР°Рє-С‚Р°Рє. РќРѕРІРѕРµ Р»РёС†Рѕ. РќР°РґРµСЋСЃСЊ, С‚С‹ РЅРµ РѕРґРёРЅ РёР· СЌС‚РёС… РіСЂСЏР·РЅС‹С… Р±Р°РЅРґРёС‚РѕРІ?
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_01"); //РњРѕРµ РёРјСЏ Р“Р°СЂРµС‚С‚. Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ, СЃРїСЂРѕСЃРё Сѓ РјРµРЅСЏ.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_02"); //РЇ РјРѕРіСѓ РґРѕСЃС‚Р°С‚СЊ РїСЂР°РєС‚РёС‡РµСЃРєРё С‡С‚Рѕ СѓРіРѕРґРЅРѕ. Р’РёРЅРѕ, РѕСЂСѓР¶РёРµ - РІСЃРµ, С‡С‚Рѕ РјРѕР¶РµС‚ С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЊСЃСЏ.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_03"); //РљСЂРѕРјРµ СЃР°РјРѕРіРѕРЅР°. Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РµРЅ СЃР°РјРѕРіРѕРЅ, РёРґРё Рє РЎСЌРјСЋСЌР»СЋ.
 
 	Log_CreateTopic (Topic_Addon_PIR_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_GarettTrade);
@@ -126,7 +126,7 @@ INSTANCE DIA_Addon_Garett_Samuel(C_INFO)
 	condition	= DIA_Addon_Garett_Samuel_Condition;
 	information	= DIA_Addon_Garett_Samuel_Info;
 	permanent	= FALSE;
-	description = "Кто такой Сэмюэль?";
+	description = "РљС‚Рѕ С‚Р°РєРѕР№ РЎСЌРјСЋСЌР»СЊ?";
 };                       
 FUNC INT DIA_Addon_Garett_Samuel_Condition()
 {
@@ -138,12 +138,12 @@ FUNC INT DIA_Addon_Garett_Samuel_Condition()
 };
 FUNC VOID DIA_Addon_Garett_Samuel_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Samuel_15_00"); //Кто такой Сэмюэль?
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_01"); //Наш самогонщик. У него есть пещера на берегу, недалеко от лагеря.
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_02"); //Просто иди по берегу на север, и ты ее найдешь.
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_03"); //Я бы посоветовал тебе запастись грогом.
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_04"); //Не все наши ребята приветливо относятся к новичкам, надеюсь, ты меня понимаешь.
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_05"); //А бутылка-другая грога может сотворить настоящие чудеса!
+	AI_Output (other,self,"DIA_Addon_Garett_Samuel_15_00"); //РљС‚Рѕ С‚Р°РєРѕР№ РЎСЌРјСЋСЌР»СЊ?
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_01"); //РќР°С€ СЃР°РјРѕРіРѕРЅС‰РёРє. РЈ РЅРµРіРѕ РµСЃС‚СЊ РїРµС‰РµСЂР° РЅР° Р±РµСЂРµРіСѓ, РЅРµРґР°Р»РµРєРѕ РѕС‚ Р»Р°РіРµСЂСЏ.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_02"); //РџСЂРѕСЃС‚Рѕ РёРґРё РїРѕ Р±РµСЂРµРіСѓ РЅР° СЃРµРІРµСЂ, Рё С‚С‹ РµРµ РЅР°Р№РґРµС€СЊ.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_03"); //РЇ Р±С‹ РїРѕСЃРѕРІРµС‚РѕРІР°Р» С‚РµР±Рµ Р·Р°РїР°СЃС‚РёСЃСЊ РіСЂРѕРіРѕРј.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_04"); //РќРµ РІСЃРµ РЅР°С€Рё СЂРµР±СЏС‚Р° РїСЂРёРІРµС‚Р»РёРІРѕ РѕС‚РЅРѕСЃСЏС‚СЃСЏ Рє РЅРѕРІРёС‡РєР°Рј, РЅР°РґРµСЋСЃСЊ, С‚С‹ РјРµРЅСЏ РїРѕРЅРёРјР°РµС€СЊ.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_05"); //Рђ Р±СѓС‚С‹Р»РєР°-РґСЂСѓРіР°СЏ РіСЂРѕРіР° РјРѕР¶РµС‚ СЃРѕС‚РІРѕСЂРёС‚СЊ РЅР°СЃС‚РѕСЏС‰РёРµ С‡СѓРґРµСЃР°!
 
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_SamuelTrade);
 };
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Garett_Warez(C_INFO)
 	condition	= DIA_Addon_Garett_Warez_Condition;
 	information	= DIA_Addon_Garett_Warez_Info;
 
-	description = "Откуда ты получаешь свои товары?";
+	description = "РћС‚РєСѓРґР° С‚С‹ РїРѕР»СѓС‡Р°РµС€СЊ СЃРІРѕРё С‚РѕРІР°СЂС‹?";
 };                       
 FUNC INT DIA_Addon_Garett_Warez_Condition()
 {
@@ -166,10 +166,10 @@ FUNC INT DIA_Addon_Garett_Warez_Condition()
 };
 func VOID DIA_Addon_Garett_Warez_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Warez_15_00"); //Откуда ты получаешь свои товары?
-	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_01"); //Когда Скип ездит в Хоринис, он всегда привозит оттуда множество вещей.
-	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_02"); //До недавнего времени часть из них он напрямую продавал бандитам.
-	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_03"); //Но сейчас у нас с бандитами война, так что все товары оказываются у меня.
+	AI_Output (other,self,"DIA_Addon_Garett_Warez_15_00"); //РћС‚РєСѓРґР° С‚С‹ РїРѕР»СѓС‡Р°РµС€СЊ СЃРІРѕРё С‚РѕРІР°СЂС‹?
+	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_01"); //РљРѕРіРґР° РЎРєРёРї РµР·РґРёС‚ РІ РҐРѕСЂРёРЅРёСЃ, РѕРЅ РІСЃРµРіРґР° РїСЂРёРІРѕР·РёС‚ РѕС‚С‚СѓРґР° РјРЅРѕР¶РµСЃС‚РІРѕ РІРµС‰РµР№.
+	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_02"); //Р”Рѕ РЅРµРґР°РІРЅРµРіРѕ РІСЂРµРјРµРЅРё С‡Р°СЃС‚СЊ РёР· РЅРёС… РѕРЅ РЅР°РїСЂСЏРјСѓСЋ РїСЂРѕРґР°РІР°Р» Р±Р°РЅРґРёС‚Р°Рј.
+	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_03"); //РќРѕ СЃРµР№С‡Р°СЃ Сѓ РЅР°СЃ СЃ Р±Р°РЅРґРёС‚Р°РјРё РІРѕР№РЅР°, С‚Р°Рє С‡С‚Рѕ РІСЃРµ С‚РѕРІР°СЂС‹ РѕРєР°Р·С‹РІР°СЋС‚СЃСЏ Сѓ РјРµРЅСЏ.
 };
 
 // ************************************************************
@@ -182,7 +182,7 @@ INSTANCE DIA_Addon_Garett_Bandits(C_INFO)
 	condition	= DIA_Addon_Garett_Bandits_Condition;
 	information	= DIA_Addon_Garett_Bandits_Info;
 
-	description = "Что ты знаешь об этих бандитах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РёС… Р±Р°РЅРґРёС‚Р°С…?";
 };                       
 FUNC INT DIA_Addon_Garett_Bandits_Condition()
 {
@@ -193,10 +193,10 @@ FUNC INT DIA_Addon_Garett_Bandits_Condition()
 };
 func VOID DIA_Addon_Garett_Bandits_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Bandits_15_00"); //Что ты знаешь о бандитах?
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_01"); //Об этом тебе лучше спросить у Скипа.
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_02"); //Он довольно много общался с этой шайкой.
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_03"); //А сейчас Грег приказал нам убивать каждого бандита, подходящего к лагерю.
+	AI_Output (other,self,"DIA_Addon_Garett_Bandits_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р±Р°РЅРґРёС‚Р°С…?
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_01"); //РћР± СЌС‚РѕРј С‚РµР±Рµ Р»СѓС‡С€Рµ СЃРїСЂРѕСЃРёС‚СЊ Сѓ РЎРєРёРїР°.
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_02"); //РћРЅ РґРѕРІРѕР»СЊРЅРѕ РјРЅРѕРіРѕ РѕР±С‰Р°Р»СЃСЏ СЃ СЌС‚РѕР№ С€Р°Р№РєРѕР№.
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_03"); //Рђ СЃРµР№С‡Р°СЃ Р“СЂРµРі РїСЂРёРєР°Р·Р°Р» РЅР°Рј СѓР±РёРІР°С‚СЊ РєР°Р¶РґРѕРіРѕ Р±Р°РЅРґРёС‚Р°, РїРѕРґС…РѕРґСЏС‰РµРіРѕ Рє Р»Р°РіРµСЂСЋ.
 };
 
 
@@ -216,7 +216,7 @@ INSTANCE DIA_Addon_Garett_Greg(C_INFO)
 	condition	= DIA_Addon_Garett_Greg_Condition;
 	information	= DIA_Addon_Garett_Greg_Info;
 	permanent	= FALSE;
-	description = "Ваш капитан Грег. Какой он?";
+	description = "Р’Р°С€ РєР°РїРёС‚Р°РЅ Р“СЂРµРі. РљР°РєРѕР№ РѕРЅ?";
 };                       
 FUNC INT DIA_Addon_Garett_Greg_Condition ()
 {
@@ -225,14 +225,14 @@ FUNC INT DIA_Addon_Garett_Greg_Condition ()
 
 FUNC VOID DIA_Addon_Garett_Greg_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Garett_Greg_15_00"); //Ваш капитан Грег. Какой он?
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_01"); //С этим старым морским волком лучше не шутить.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_02"); //К тому же он жаден до невозможности.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_03"); //Фрэнсис, его казначей, платит нам ровно столько, сколько нужно, чтобы мы не подняли бунт.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_04"); //А если нам попадается что-нибудь действительно ценное, капитан тут же забирает это себе.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_05"); //Однажды на королевском фрегате я нашел золотой компас.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_06"); //Конечно же, этот ублюдок Грег отобрал его у меня.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_07"); //Наверняка он его где-нибудь закопал. Он так поступает со всеми своими сокровищами.
+	AI_Output (other, self, "DIA_Addon_Garett_Greg_15_00"); //Р’Р°С€ РєР°РїРёС‚Р°РЅ Р“СЂРµРі. РљР°РєРѕР№ РѕРЅ?
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_01"); //РЎ СЌС‚РёРј СЃС‚Р°СЂС‹Рј РјРѕСЂСЃРєРёРј РІРѕР»РєРѕРј Р»СѓС‡С€Рµ РЅРµ С€СѓС‚РёС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_02"); //Рљ С‚РѕРјСѓ Р¶Рµ РѕРЅ Р¶Р°РґРµРЅ РґРѕ РЅРµРІРѕР·РјРѕР¶РЅРѕСЃС‚Рё.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_03"); //Р¤СЂСЌРЅСЃРёСЃ, РµРіРѕ РєР°Р·РЅР°С‡РµР№, РїР»Р°С‚РёС‚ РЅР°Рј СЂРѕРІРЅРѕ СЃС‚РѕР»СЊРєРѕ, СЃРєРѕР»СЊРєРѕ РЅСѓР¶РЅРѕ, С‡С‚РѕР±С‹ РјС‹ РЅРµ РїРѕРґРЅСЏР»Рё Р±СѓРЅС‚.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_04"); //Рђ РµСЃР»Рё РЅР°Рј РїРѕРїР°РґР°РµС‚СЃСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С†РµРЅРЅРѕРµ, РєР°РїРёС‚Р°РЅ С‚СѓС‚ Р¶Рµ Р·Р°Р±РёСЂР°РµС‚ СЌС‚Рѕ СЃРµР±Рµ.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_05"); //РћРґРЅР°Р¶РґС‹ РЅР° РєРѕСЂРѕР»РµРІСЃРєРѕРј С„СЂРµРіР°С‚Рµ СЏ РЅР°С€РµР» Р·РѕР»РѕС‚РѕР№ РєРѕРјРїР°СЃ.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_06"); //РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЌС‚РѕС‚ СѓР±Р»СЋРґРѕРє Р“СЂРµРі РѕС‚РѕР±СЂР°Р» РµРіРѕ Сѓ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_07"); //РќР°РІРµСЂРЅСЏРєР° РѕРЅ РµРіРѕ РіРґРµ-РЅРёР±СѓРґСЊ Р·Р°РєРѕРїР°Р». РћРЅ С‚Р°Рє РїРѕСЃС‚СѓРїР°РµС‚ СЃРѕ РІСЃРµРјРё СЃРІРѕРёРјРё СЃРѕРєСЂРѕРІРёС‰Р°РјРё.
 };
 
 // ------------------------------------------------------------
@@ -245,7 +245,7 @@ INSTANCE DIA_Addon_Garett_Tips(C_INFO)
 	condition	= DIA_Addon_Garett_Tips_Condition;
 	information	= DIA_Addon_Garett_Tips_Info;
 
-	description = "А где он мог закопать твой компас?";
+	description = "Рђ РіРґРµ РѕРЅ РјРѕРі Р·Р°РєРѕРїР°С‚СЊ С‚РІРѕР№ РєРѕРјРїР°СЃ?";
 };                       
 FUNC INT DIA_Addon_Garett_Tips_Condition()
 {
@@ -257,18 +257,18 @@ FUNC INT DIA_Addon_Garett_Tips_Condition()
 
 FUNC VOID DIA_Addon_Garett_Tips_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_00"); //А где он мог закопать твой компас?
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_01"); //Однажды Грег сказал мне, что компас охраняет сама Смерть. А потом он расхохотался.
-	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_02"); //Что-нибудь еще?
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_03"); //На юге есть бухточка, добраться до которой можно только по морю.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_04"); //Грег нередко там бывает, Может быть, тебе удастся там что-нибудь найти.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_05"); //Однажды я сам попытался исследовать это место, но оказалось, что оно кишит монстрами.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_06"); //Если ты все же решишься туда отправиться, не забудь кирку.
+	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_00"); //Рђ РіРґРµ РѕРЅ РјРѕРі Р·Р°РєРѕРїР°С‚СЊ С‚РІРѕР№ РєРѕРјРїР°СЃ?
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_01"); //РћРґРЅР°Р¶РґС‹ Р“СЂРµРі СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РєРѕРјРїР°СЃ РѕС…СЂР°РЅСЏРµС‚ СЃР°РјР° РЎРјРµСЂС‚СЊ. Рђ РїРѕС‚РѕРј РѕРЅ СЂР°СЃС…РѕС…РѕС‚Р°Р»СЃСЏ.
+	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_02"); //Р§С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_03"); //РќР° СЋРіРµ РµСЃС‚СЊ Р±СѓС…С‚РѕС‡РєР°, РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РєРѕС‚РѕСЂРѕР№ РјРѕР¶РЅРѕ С‚РѕР»СЊРєРѕ РїРѕ РјРѕСЂСЋ.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_04"); //Р“СЂРµРі РЅРµСЂРµРґРєРѕ С‚Р°Рј Р±С‹РІР°РµС‚, РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ С‚Р°Рј С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅР°Р№С‚Рё.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_05"); //РћРґРЅР°Р¶РґС‹ СЏ СЃР°Рј РїРѕРїС‹С‚Р°Р»СЃСЏ РёСЃСЃР»РµРґРѕРІР°С‚СЊ СЌС‚Рѕ РјРµСЃС‚Рѕ, РЅРѕ РѕРєР°Р·Р°Р»РѕСЃСЊ, С‡С‚Рѕ РѕРЅРѕ РєРёС€РёС‚ РјРѕРЅСЃС‚СЂР°РјРё.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_06"); //Р•СЃР»Рё С‚С‹ РІСЃРµ Р¶Рµ СЂРµС€РёС€СЊСЃСЏ С‚СѓРґР° РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ, РЅРµ Р·Р°Р±СѓРґСЊ РєРёСЂРєСѓ.
 	MIS_Addon_Garett_BringKompass = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_Kompass,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_Kompass,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Kompass,"Грег отобрал у Гаррета драгоценный компас. Гаррет думает, что Грег закопал его где-то на южном пляже.");
+	B_LogEntry (TOPIC_Addon_Kompass,"Р“СЂРµРі РѕС‚РѕР±СЂР°Р» Сѓ Р“Р°СЂСЂРµС‚Р° РґСЂР°РіРѕС†РµРЅРЅС‹Р№ РєРѕРјРїР°СЃ. Р“Р°СЂСЂРµС‚ РґСѓРјР°РµС‚, С‡С‚Рѕ Р“СЂРµРі Р·Р°РєРѕРїР°Р» РµРіРѕ РіРґРµ-С‚Рѕ РЅР° СЋР¶РЅРѕРј РїР»СЏР¶Рµ.");
 };
 
 // ------------------------------------------------------------
@@ -281,7 +281,7 @@ INSTANCE DIA_Addon_Garett_GiveKompass(C_INFO)
 	condition	= DIA_Addon_Garett_GiveKompass_Condition;
 	information	= DIA_Addon_Garett_GiveKompass_Info;
 	permanent	= FALSE;
-	description = "Вот твой компас.";
+	description = "Р’РѕС‚ С‚РІРѕР№ РєРѕРјРїР°СЃ.";
 };                       
 FUNC INT DIA_Addon_Garett_GiveKompass_Condition()
 {
@@ -293,30 +293,30 @@ FUNC INT DIA_Addon_Garett_GiveKompass_Condition()
 };
 FUNC VOID DIA_Addon_Garett_GiveKompass_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_GiveKompass_15_00"); //Вот твой компас.
+	AI_Output (other,self,"DIA_Addon_Garett_GiveKompass_15_00"); //Р’РѕС‚ С‚РІРѕР№ РєРѕРјРїР°СЃ.
 	
-	//Patch m.f. - weil Hдndler
+	//Patch m.f. - weil HРґndler
 	if B_GiveInvItems (other,self,ItMI_Addon_Kompass_Mis,1)
 	{
 		Npc_RemoveInvItems (self, ItMI_Addon_Kompass_Mis,1);
 	};
-	AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_01"); //(радостно) Да, это он! Вот уж не думал, что снова его увижу.
-	AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_02"); //Спасибо, приятель!
+	AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_01"); //(СЂР°РґРѕСЃС‚РЅРѕ) Р”Р°, СЌС‚Рѕ РѕРЅ! Р’РѕС‚ СѓР¶ РЅРµ РґСѓРјР°Р», С‡С‚Рѕ СЃРЅРѕРІР° РµРіРѕ СѓРІРёР¶Сѓ.
+	AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_02"); //РЎРїР°СЃРёР±Рѕ, РїСЂРёСЏС‚РµР»СЊ!
 	
 	if (Npc_HasItems (self, ItBE_Addon_Prot_EdgPoi) > 0)
 	{ 
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_03"); //На этот раз Грег его не получит.
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_04"); //Возьми в награду этот пояс. Это одна из самых ценных моих вещей.
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_03"); //РќР° СЌС‚РѕС‚ СЂР°Р· Р“СЂРµРі РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС‚.
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_04"); //Р’РѕР·СЊРјРё РІ РЅР°РіСЂР°РґСѓ СЌС‚РѕС‚ РїРѕСЏСЃ. Р­С‚Рѕ РѕРґРЅР° РёР· СЃР°РјС‹С… С†РµРЅРЅС‹С… РјРѕРёС… РІРµС‰РµР№.
 		B_GiveInvItems (self, other, ItBE_Addon_Prot_EdgPoi, 1);
 	}
 	else if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_05"); //Помнишь, ты купил у меня пояс.
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_06"); //Ты заплатил за него порядочную сумму... Нет, конечно он стоит этих денег. В общем, можешь взять их обратно.
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_05"); //РџРѕРјРЅРёС€СЊ, С‚С‹ РєСѓРїРёР» Сѓ РјРµРЅСЏ РїРѕСЏСЃ.
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_06"); //РўС‹ Р·Р°РїР»Р°С‚РёР» Р·Р° РЅРµРіРѕ РїРѕСЂСЏРґРѕС‡РЅСѓСЋ СЃСѓРјРјСѓ... РќРµС‚, РєРѕРЅРµС‡РЅРѕ РѕРЅ СЃС‚РѕРёС‚ СЌС‚РёС… РґРµРЅРµРі. Р’ РѕР±С‰РµРј, РјРѕР¶РµС€СЊ РІР·СЏС‚СЊ РёС… РѕР±СЂР°С‚РЅРѕ.
 		B_GiveInvItems (self, other, itmi_gold, Value_ItBE_Addon_Prot_EdgPoi);
 	};
 	
-	B_LogEntry (TOPIC_Addon_Kompass,"Гаррет был очень рад, когда я вернул ему компас.");
+	B_LogEntry (TOPIC_Addon_Kompass,"Р“Р°СЂСЂРµС‚ Р±С‹Р» РѕС‡РµРЅСЊ СЂР°Рґ, РєРѕРіРґР° СЏ РІРµСЂРЅСѓР» РµРјСѓ РєРѕРјРїР°СЃ.");
 	MIS_Addon_Garett_BringKompass = LOG_SUCCESS;
 	B_GivePlayerXP (XP_ADDON_Garett_Bring_Kompass);
 };
@@ -331,7 +331,7 @@ INSTANCE DIA_Addon_Garett_Francis(C_INFO)
 	condition	= DIA_Addon_Garett_Francis_Condition;
 	information	= DIA_Addon_Garett_Francis_Info;
 	permanent	= FALSE;
-	description = "Что ты мне можешь сказать о Фрэнсисе?";
+	description = "Р§С‚Рѕ С‚С‹ РјРЅРµ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?";
 };                       
 FUNC INT DIA_Addon_Garett_Francis_Condition()
 {
@@ -343,16 +343,16 @@ FUNC INT DIA_Addon_Garett_Francis_Condition()
 
 FUNC VOID DIA_Addon_Garett_Francis_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Francis_15_00"); //Что ты можешь мне сказать о Фрэнсисе?
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_01"); //Когда Грега нет, он остается за старшего.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_02"); //Но честно говоря, лидер из него никакой.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_03"); //Он даже Моргана не может заставить оторвать свою ленивую задницу от кровати.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_04"); //Чем-то полезным сейчас занимается только Генри со своими ребятами.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_05"); //Остальные же просто бездельничают.
+	AI_Output (other,self,"DIA_Addon_Garett_Francis_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РјРЅРµ СЃРєР°Р·Р°С‚СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_01"); //РљРѕРіРґР° Р“СЂРµРіР° РЅРµС‚, РѕРЅ РѕСЃС‚Р°РµС‚СЃСЏ Р·Р° СЃС‚Р°СЂС€РµРіРѕ.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_02"); //РќРѕ С‡РµСЃС‚РЅРѕ РіРѕРІРѕСЂСЏ, Р»РёРґРµСЂ РёР· РЅРµРіРѕ РЅРёРєР°РєРѕР№.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_03"); //РћРЅ РґР°Р¶Рµ РњРѕСЂРіР°РЅР° РЅРµ РјРѕР¶РµС‚ Р·Р°СЃС‚Р°РІРёС‚СЊ РѕС‚РѕСЂРІР°С‚СЊ СЃРІРѕСЋ Р»РµРЅРёРІСѓСЋ Р·Р°РґРЅРёС†Сѓ РѕС‚ РєСЂРѕРІР°С‚Рё.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_04"); //Р§РµРј-С‚Рѕ РїРѕР»РµР·РЅС‹Рј СЃРµР№С‡Р°СЃ Р·Р°РЅРёРјР°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р“РµРЅСЂРё СЃРѕ СЃРІРѕРёРјРё СЂРµР±СЏС‚Р°РјРё.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_05"); //РћСЃС‚Р°Р»СЊРЅС‹Рµ Р¶Рµ РїСЂРѕСЃС‚Рѕ Р±РµР·РґРµР»СЊРЅРёС‡Р°СЋС‚.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_06"); //Надеюсь, что Грег скоро вернется.
-		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_07"); //Он-то покажет этим лентяям, что к чему.
+		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_06"); //РќР°РґРµСЋСЃСЊ, С‡С‚Рѕ Р“СЂРµРі СЃРєРѕСЂРѕ РІРµСЂРЅРµС‚СЃСЏ.
+		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_07"); //РћРЅ-С‚Рѕ РїРѕРєР°Р¶РµС‚ СЌС‚РёРј Р»РµРЅС‚СЏСЏРј, С‡С‚Рѕ Рє С‡РµРјСѓ.
 	};
 };
 
@@ -366,7 +366,7 @@ INSTANCE DIA_Addon_Garett_PERM   (C_INFO)
 	condition   = DIA_Addon_Garett_PERM_Condition;
 	information = DIA_Addon_Garett_PERM_Info;
 	permanent   = TRUE;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };
 FUNC INT DIA_Addon_Garett_PERM_Condition()
 {	
@@ -374,16 +374,16 @@ FUNC INT DIA_Addon_Garett_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Garett_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_Garett_PERM_15_00"); //Есть новости?
+	AI_Output (other,self ,"DIA_Addon_Garett_PERM_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
 	
 	if (GregIsBack == FALSE)
 	|| (Npc_IsDead(Greg))
 	{
-		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_02"); //С тех пор как Грег уехал, ничего интересного не случалось.
+		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_02"); //РЎ С‚РµС… РїРѕСЂ РєР°Рє Р“СЂРµРі СѓРµС…Р°Р», РЅРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РЅРµ СЃР»СѓС‡Р°Р»РѕСЃСЊ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_01"); //После того как Грег вернулся, все начало приходить в норму.
+		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_01"); //РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє Р“СЂРµРі РІРµСЂРЅСѓР»СЃСЏ, РІСЃРµ РЅР°С‡Р°Р»Рѕ РїСЂРёС…РѕРґРёС‚СЊ РІ РЅРѕСЂРјСѓ.
 	};
 };
 

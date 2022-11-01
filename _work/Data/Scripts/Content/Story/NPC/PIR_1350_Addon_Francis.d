@@ -1,7 +1,7 @@
 INSTANCE PIR_1350_Addon_Francis (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Френсис";
+	name 		= "Р¤СЂРµРЅСЃРёСЃ";
 	guild 		= GIL_PIR;
 	id 			= 1350;
 	voice 		= 13;

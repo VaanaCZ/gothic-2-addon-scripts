@@ -66,7 +66,7 @@ INSTANCE DIA_Ramirez_Zeichen   (C_INFO)
 	condition   = DIA_Ramirez_Zeichen_Condition;
 	information = DIA_Ramirez_Zeichen_Info;
 	permanent   = FALSE;
-	description = "(Показать сигнал воров)";
+	description = "(РџРѕРєР°Р·Р°С‚СЊ СЃРёРіРЅР°Р» РІРѕСЂРѕРІ)";
 };
 
 FUNC INT DIA_Ramirez_Zeichen_Condition()
@@ -79,7 +79,7 @@ FUNC INT DIA_Ramirez_Zeichen_Condition()
 FUNC VOID DIA_Ramirez_Zeichen_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other, "DIA_Ramirez_Zeichen_14_00");//Так, так, кого я вижу. (зевает) Я потрясен.
+	AI_Output (self, other, "DIA_Ramirez_Zeichen_14_00");//РўР°Рє, С‚Р°Рє, РєРѕРіРѕ СЏ РІРёР¶Сѓ. (Р·РµРІР°РµС‚) РЇ РїРѕС‚СЂСЏСЃРµРЅ.
 };
 
 //////////////////////////////////////////////////////////////////////
@@ -110,14 +110,14 @@ FUNC VOID DIA_Ramirez_Hallo_Info()
 	if (self.aivar [AIV_TalkedToPlayer] == FALSE)
 	&& (Join_Thiefs == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_00");//Ты что, заблудился? По-моему, это не самое подходящее место для тебя.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_01");//Если здесь с тобой что-нибудь случится, тебе никто не придет на помощь. Так что будь осторожен. (широкая ухмылка)
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_00");//РўС‹ С‡С‚Рѕ, Р·Р°Р±Р»СѓРґРёР»СЃСЏ? РџРѕ-РјРѕРµРјСѓ, СЌС‚Рѕ РЅРµ СЃР°РјРѕРµ РїРѕРґС…РѕРґСЏС‰РµРµ РјРµСЃС‚Рѕ РґР»СЏ С‚РµР±СЏ.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_01");//Р•СЃР»Рё Р·РґРµСЃСЊ СЃ С‚РѕР±РѕР№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃР»СѓС‡РёС‚СЃСЏ, С‚РµР±Рµ РЅРёРєС‚Рѕ РЅРµ РїСЂРёРґРµС‚ РЅР° РїРѕРјРѕС‰СЊ. РўР°Рє С‡С‚Рѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ. (С€РёСЂРѕРєР°СЏ СѓС…РјС‹Р»РєР°)
 	};
 	if  (Join_Thiefs == TRUE)  
 	{
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_02");//Итак, ты с нами. Что ж, тогда я желаю тебе успеха - но будь осторожен.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_03");//Ох, и еще одно - меня не интересует кто ты там наверху, и  кем ты работаешь.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_04");//Но здесь, внизу, ты один из нас. Вор. Не больше и не меньше.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_02");//РС‚Р°Рє, С‚С‹ СЃ РЅР°РјРё. Р§С‚Рѕ Р¶, С‚РѕРіРґР° СЏ Р¶РµР»Р°СЋ С‚РµР±Рµ СѓСЃРїРµС…Р° - РЅРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_03");//РћС…, Рё РµС‰Рµ РѕРґРЅРѕ - РјРµРЅСЏ РЅРµ РёРЅС‚РµСЂРµСЃСѓРµС‚ РєС‚Рѕ С‚С‹ С‚Р°Рј РЅР°РІРµСЂС…Сѓ, Рё  РєРµРј С‚С‹ СЂР°Р±РѕС‚Р°РµС€СЊ.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_04");//РќРѕ Р·РґРµСЃСЊ, РІРЅРёР·Сѓ, С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ. Р’РѕСЂ. РќРµ Р±РѕР»СЊС€Рµ Рё РЅРµ РјРµРЅСЊС€Рµ.
 		DIA_Ramirez_Hallo_permanent = TRUE;
 	};
 	
@@ -148,14 +148,14 @@ FUNC INT DIA_Ramirez_Beute_Condition()
 };
 FUNC VOID DIA_Ramirez_Beute_Info()
 {
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_00");//Послушай, ты что, пытаешься так пошутить? Ты набиваешь карманы нашим золотом... ты что, пытаешься красть у нас?
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_01");//Не стоит расстраиваться так из-за пары монет.
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_02");//Я хочу сказать, эта мелочь, что есть здесь - это ВСЕ, что вам удалось награбить? Это все, что гильдия воров Хориниса может предложить?
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_03");//Кто сказал, что наши сокровища хранятся здесь?
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_04");//Да, я тоже не могу в это поверить. А где вы прячете ваши сокровища?
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_05");//В очень надежном месте.
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_06");//Понимаю.
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_07");//Хорошо, ты можешь оставить себе это золото. Но я буду присматривать за тобой. Так что не пытайся повторить этот трюк.
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_00");//РџРѕСЃР»СѓС€Р°Р№, С‚С‹ С‡С‚Рѕ, РїС‹С‚Р°РµС€СЊСЃСЏ С‚Р°Рє РїРѕС€СѓС‚РёС‚СЊ? РўС‹ РЅР°Р±РёРІР°РµС€СЊ РєР°СЂРјР°РЅС‹ РЅР°С€РёРј Р·РѕР»РѕС‚РѕРј... С‚С‹ С‡С‚Рѕ, РїС‹С‚Р°РµС€СЊСЃСЏ РєСЂР°СЃС‚СЊ Сѓ РЅР°СЃ?
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_01");//РќРµ СЃС‚РѕРёС‚ СЂР°СЃСЃС‚СЂР°РёРІР°С‚СЊСЃСЏ С‚Р°Рє РёР·-Р·Р° РїР°СЂС‹ РјРѕРЅРµС‚.
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_02");//РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, СЌС‚Р° РјРµР»РѕС‡СЊ, С‡С‚Рѕ РµСЃС‚СЊ Р·РґРµСЃСЊ - СЌС‚Рѕ Р’РЎР•, С‡С‚Рѕ РІР°Рј СѓРґР°Р»РѕСЃСЊ РЅР°РіСЂР°Р±РёС‚СЊ? Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ РіРёР»СЊРґРёСЏ РІРѕСЂРѕРІ РҐРѕСЂРёРЅРёСЃР° РјРѕР¶РµС‚ РїСЂРµРґР»РѕР¶РёС‚СЊ?
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_03");//РљС‚Рѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅР°С€Рё СЃРѕРєСЂРѕРІРёС‰Р° С…СЂР°РЅСЏС‚СЃСЏ Р·РґРµСЃСЊ?
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_04");//Р”Р°, СЏ С‚РѕР¶Рµ РЅРµ РјРѕРіСѓ РІ СЌС‚Рѕ РїРѕРІРµСЂРёС‚СЊ. Рђ РіРґРµ РІС‹ РїСЂСЏС‡РµС‚Рµ РІР°С€Рё СЃРѕРєСЂРѕРІРёС‰Р°?
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_05");//Р’ РѕС‡РµРЅСЊ РЅР°РґРµР¶РЅРѕРј РјРµСЃС‚Рµ.
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_06");//РџРѕРЅРёРјР°СЋ.
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_07");//РҐРѕСЂРѕС€Рѕ, С‚С‹ РјРѕР¶РµС€СЊ РѕСЃС‚Р°РІРёС‚СЊ СЃРµР±Рµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ. РќРѕ СЏ Р±СѓРґСѓ РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ Р·Р° С‚РѕР±РѕР№. РўР°Рє С‡С‚Рѕ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРІС‚РѕСЂРёС‚СЊ СЌС‚РѕС‚ С‚СЂСЋРє.
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Lernen freischalten
@@ -167,7 +167,7 @@ INSTANCE DIA_Ramirez_Bezahlen   (C_INFO)
 	condition   = DIA_Ramirez_Bezahlen_Condition;
 	information = DIA_Ramirez_Bezahlen_Info;
 	permanent   = TRUE;
-	description	= "Ты можешь научить меня чему-нибудь?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 //--------------------------------------
 var int DIA_Ramirez_Bezahlen_permanent;
@@ -192,26 +192,26 @@ FUNC VOID DIA_Ramirez_Bezahlen_Info()
 		Ramirez_Cost = 300;
 	};	
 		
-	AI_Output (other, self, "DIA_Ramirez_Bezahlen_15_00");//Ты можешь научить меня чему-нибудь?
+	AI_Output (other, self, "DIA_Ramirez_Bezahlen_15_00");//РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
 	
 	if (Npc_GetTalentSkill  (other, NPC_TALENT_PICKLOCK) == TRUE)
 	{ 
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_01");//Мне нечему тебя учить. Ты уже знаешь об отмычках все.
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_01");//РњРЅРµ РЅРµС‡РµРјСѓ С‚РµР±СЏ СѓС‡РёС‚СЊ. РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РѕР± РѕС‚РјС‹С‡РєР°С… РІСЃРµ.
 		if (other.attribute[ATR_DEXTERITY] < T_MAX)
 		{
-			AI_Output (self, other, "DIA_Ramirez_Add_14_00"); //Теперь тебе остается только повышать свою ловкость...
+			AI_Output (self, other, "DIA_Ramirez_Add_14_00"); //РўРµРїРµСЂСЊ С‚РµР±Рµ РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РїРѕРІС‹С€Р°С‚СЊ СЃРІРѕСЋ Р»РѕРІРєРѕСЃС‚СЊ...
 		};
 		DIA_Ramirez_Bezahlen_permanent = TRUE;
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_02");//Я могу показать тебе, как пользоваться отмычками. Это будет стоить тебе...
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_02");//РЇ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РѕС‚РјС‹С‡РєР°РјРё. Р­С‚Рѕ Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ С‚РµР±Рµ...
 		B_Say_Gold (self, other, Ramirez_Cost);
 		
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
-		Info_AddChoice (DIA_Ramirez_Bezahlen,"Может быть, позже ...(НАЗАД)",DIA_Ramirez_Bezahlen_Spaeter);
-		Info_AddChoice (DIA_Ramirez_Bezahlen,"Хорошо, я готов заплатить...",DIA_Ramirez_Bezahlen_Okay);
+		Info_AddChoice (DIA_Ramirez_Bezahlen,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ ...(РќРђР—РђР”)",DIA_Ramirez_Bezahlen_Spaeter);
+		Info_AddChoice (DIA_Ramirez_Bezahlen,"РҐРѕСЂРѕС€Рѕ, СЏ РіРѕС‚РѕРІ Р·Р°РїР»Р°С‚РёС‚СЊ...",DIA_Ramirez_Bezahlen_Okay);
 	};
 };
 FUNC VOID DIA_Ramirez_Bezahlen_Spaeter()
@@ -220,19 +220,19 @@ FUNC VOID DIA_Ramirez_Bezahlen_Spaeter()
 };
 FUNC VOID DIA_Ramirez_Bezahlen_Okay()
 {
-	AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_00");//Хорошо, я готов заплатить...
+	AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_00");//РҐРѕСЂРѕС€Рѕ, СЏ РіРѕС‚РѕРІ Р·Р°РїР»Р°С‚РёС‚СЊ...
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, Ramirez_Cost)
 	{
-		AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_01");//...вот золото.
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_Okay_14_02");//Отлично. Я к твоим услугам.
+		AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_01");//...РІРѕС‚ Р·РѕР»РѕС‚Рѕ.
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_Okay_14_02");//РћС‚Р»РёС‡РЅРѕ. РЇ Рє С‚РІРѕРёРј СѓСЃР»СѓРіР°Рј.
 		Ramirez_TeachPlayer = TRUE;
 		DIA_Ramirez_Bezahlen_permanent = TRUE;
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_Okay_14_03");//Возвращайся, когда раздобудешь золото.
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_Okay_14_03");//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° СЂР°Р·РґРѕР±СѓРґРµС€СЊ Р·РѕР»РѕС‚Рѕ.
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
 	};
 
@@ -247,7 +247,7 @@ INSTANCE DIA_Ramirez_Teach   (C_INFO)
 	condition   = DIA_Ramirez_Teach_Condition;
 	information = DIA_Ramirez_Teach_Info;
 	permanent   = TRUE;
-	description = "Научи меня вскрывать замки!";
+	description = "РќР°СѓС‡Рё РјРµРЅСЏ РІСЃРєСЂС‹РІР°С‚СЊ Р·Р°РјРєРё!";
 };
 
 FUNC INT DIA_Ramirez_Teach_Condition()
@@ -260,20 +260,20 @@ FUNC INT DIA_Ramirez_Teach_Condition()
 };
 FUNC VOID DIA_Ramirez_Teach_Info()
 {
-	AI_Output (other,self, "DIA_Ramirez_Teach_15_00");//Научи меня пользоваться отмычками!
+	AI_Output (other,self, "DIA_Ramirez_Teach_15_00");//РќР°СѓС‡Рё РјРµРЅСЏ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РѕС‚РјС‹С‡РєР°РјРё!
 	
 	if (Ramirez_Zweimal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_06");//Вскрытие замков - это высшее искусство.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_01");//Для этого нужны чувствительные пальчики и интуиция. И пара хороших отмычек.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_02");//Некоторые сундуки, впрочем, закрыты на особые замки, которые можно открыть только правильным ключом.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_06");//Р’СЃРєСЂС‹С‚РёРµ Р·Р°РјРєРѕРІ - СЌС‚Рѕ РІС‹СЃС€РµРµ РёСЃРєСѓСЃСЃС‚РІРѕ.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_01");//Р”Р»СЏ СЌС‚РѕРіРѕ РЅСѓР¶РЅС‹ С‡СѓРІСЃС‚РІРёС‚РµР»СЊРЅС‹Рµ РїР°Р»СЊС‡РёРєРё Рё РёРЅС‚СѓРёС†РёСЏ. Р РїР°СЂР° С…РѕСЂРѕС€РёС… РѕС‚РјС‹С‡РµРє.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_02");//РќРµРєРѕС‚РѕСЂС‹Рµ СЃСѓРЅРґСѓРєРё, РІРїСЂРѕС‡РµРј, Р·Р°РєСЂС‹С‚С‹ РЅР° РѕСЃРѕР±С‹Рµ Р·Р°РјРєРё, РєРѕС‚РѕСЂС‹Рµ РјРѕР¶РЅРѕ РѕС‚РєСЂС‹С‚СЊ С‚РѕР»СЊРєРѕ РїСЂР°РІРёР»СЊРЅС‹Рј РєР»СЋС‡РѕРј.
 		Ramirez_Zweimal = TRUE;
 	}
 	if B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK)
 	{
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_03");//Итак, встань перед замком, и поворачивай отмычку влево и вправо.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_04");//Если ты будешь поворачивать ее слишком быстро или слишком сильно, она сломается.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_05");//Но чем более опытным ты будешь становиться, тем проще тебе будет управляться с этим воровским инструментом.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_03");//РС‚Р°Рє, РІСЃС‚Р°РЅСЊ РїРµСЂРµРґ Р·Р°РјРєРѕРј, Рё РїРѕРІРѕСЂР°С‡РёРІР°Р№ РѕС‚РјС‹С‡РєСѓ РІР»РµРІРѕ Рё РІРїСЂР°РІРѕ.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_04");//Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РїРѕРІРѕСЂР°С‡РёРІР°С‚СЊ РµРµ СЃР»РёС€РєРѕРј Р±С‹СЃС‚СЂРѕ РёР»Рё СЃР»РёС€РєРѕРј СЃРёР»СЊРЅРѕ, РѕРЅР° СЃР»РѕРјР°РµС‚СЃСЏ.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_05");//РќРѕ С‡РµРј Р±РѕР»РµРµ РѕРїС‹С‚РЅС‹Рј С‚С‹ Р±СѓРґРµС€СЊ СЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ, С‚РµРј РїСЂРѕС‰Рµ С‚РµР±Рµ Р±СѓРґРµС‚ СѓРїСЂР°РІР»СЏС‚СЊСЃСЏ СЃ СЌС‚РёРј РІРѕСЂРѕРІСЃРєРёРј РёРЅСЃС‚СЂСѓРјРµРЅС‚РѕРј.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -286,7 +286,7 @@ INSTANCE DIA_Ramirez_Viertel   (C_INFO)
 	condition   = DIA_Ramirez_Viertel_Condition;
 	information = DIA_Ramirez_Viertel_Info;
 	permanent   = FALSE;
-	description = "Где ты порекомендуешь мне попробовать свои силы?";
+	description = "Р“РґРµ С‚С‹ РїРѕСЂРµРєРѕРјРµРЅРґСѓРµС€СЊ РјРЅРµ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ СЃРІРѕРё СЃРёР»С‹?";
 };
 FUNC INT DIA_Ramirez_Viertel_Condition()
 {
@@ -297,11 +297,11 @@ FUNC INT DIA_Ramirez_Viertel_Condition()
 };
 FUNC VOID DIA_Ramirez_Viertel_Info()
 {	
-	AI_Output (other, self, "DIA_Ramirez_Viertel_15_00");//Где ты порекомендуешь мне попробовать свои силы?
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_01");//В верхней части города, конечно же.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_02");//Но если ты хочешь пробраться в какой-то дом, лучше дождаться ночи, ночью все спят - за исключением городской стражи.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_03");//Они патрулируют город всю ночь. Я знаю одного из них - Вамбо. Его интересует только золото.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_04");//Его услуги стоят недешево, но если ты ему заплатишь, тебе больше не о чем не нужно будет волноваться.
+	AI_Output (other, self, "DIA_Ramirez_Viertel_15_00");//Р“РґРµ С‚С‹ РїРѕСЂРµРєРѕРјРµРЅРґСѓРµС€СЊ РјРЅРµ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ СЃРІРѕРё СЃРёР»С‹?
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_01");//Р’ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°, РєРѕРЅРµС‡РЅРѕ Р¶Рµ.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_02");//РќРѕ РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїСЂРѕР±СЂР°С‚СЊСЃСЏ РІ РєР°РєРѕР№-С‚Рѕ РґРѕРј, Р»СѓС‡С€Рµ РґРѕР¶РґР°С‚СЊСЃСЏ РЅРѕС‡Рё, РЅРѕС‡СЊСЋ РІСЃРµ СЃРїСЏС‚ - Р·Р° РёСЃРєР»СЋС‡РµРЅРёРµРј РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_03");//РћРЅРё РїР°С‚СЂСѓР»РёСЂСѓСЋС‚ РіРѕСЂРѕРґ РІСЃСЋ РЅРѕС‡СЊ. РЇ Р·РЅР°СЋ РѕРґРЅРѕРіРѕ РёР· РЅРёС… - Р’Р°РјР±Рѕ. Р•РіРѕ РёРЅС‚РµСЂРµСЃСѓРµС‚ С‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Рѕ.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_04");//Р•РіРѕ СѓСЃР»СѓРіРё СЃС‚РѕСЏС‚ РЅРµРґРµС€РµРІРѕ, РЅРѕ РµСЃР»Рё С‚С‹ РµРјСѓ Р·Р°РїР»Р°С‚РёС€СЊ, С‚РµР±Рµ Р±РѕР»СЊС€Рµ РЅРµ Рѕ С‡РµРј РЅРµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ РІРѕР»РЅРѕРІР°С‚СЊСЃСЏ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Sextant
@@ -313,7 +313,7 @@ INSTANCE DIA_Ramirez_Sextant   (C_INFO)
 	condition   = DIA_Ramirez_Sextant_Condition;
 	information = DIA_Ramirez_Sextant_Info;
 	permanent   = FALSE;
-	description = "У тебя есть работа для меня?";
+	description = "РЈ С‚РµР±СЏ РµСЃС‚СЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ?";
 };
 
 FUNC INT DIA_Ramirez_Sextant_Condition()
@@ -327,14 +327,14 @@ FUNC INT DIA_Ramirez_Sextant_Condition()
 };
 FUNC VOID DIA_Ramirez_Sextant_Info()
 {
-	AI_Output (other, self, "DIA_Ramirez_Sextant_15_00");//У тебя есть работа для меня?
-	AI_Output (self, other, "DIA_Ramirez_Sextant_14_01");//Хмм... есть вещица, которую я хотел бы заполучить. Но я нигде не могу найти ее.
-	AI_Output (other, self, "DIA_Ramirez_Sextant_15_02");//Что ты хотел бы получить?
-	AI_Output (self, other, "DIA_Ramirez_Sextant_14_03");//Секстант. Принеси мне секстант - я заплачу за него хорошую цену.
+	AI_Output (other, self, "DIA_Ramirez_Sextant_15_00");//РЈ С‚РµР±СЏ РµСЃС‚СЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Ramirez_Sextant_14_01");//РҐРјРј... РµСЃС‚СЊ РІРµС‰РёС†Р°, РєРѕС‚РѕСЂСѓСЋ СЏ С…РѕС‚РµР» Р±С‹ Р·Р°РїРѕР»СѓС‡РёС‚СЊ. РќРѕ СЏ РЅРёРіРґРµ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё РµРµ.
+	AI_Output (other, self, "DIA_Ramirez_Sextant_15_02");//Р§С‚Рѕ С‚С‹ С…РѕС‚РµР» Р±С‹ РїРѕР»СѓС‡РёС‚СЊ?
+	AI_Output (self, other, "DIA_Ramirez_Sextant_14_03");//РЎРµРєСЃС‚Р°РЅС‚. РџСЂРёРЅРµСЃРё РјРЅРµ СЃРµРєСЃС‚Р°РЅС‚ - СЏ Р·Р°РїР»Р°С‡Сѓ Р·Р° РЅРµРіРѕ С…РѕСЂРѕС€СѓСЋ С†РµРЅСѓ.
 	
 	Log_CreateTopic (Topic_RamirezSextant,LOG_MISSION);
 	Log_SetTopicStatus (Topic_RamirezSextant, LOG_RUNNING);
-	B_LogEntry (Topic_RamirezSextant, "Рамирез хочет, чтобы я принес ему секстант.");
+	B_LogEntry (Topic_RamirezSextant, "Р Р°РјРёСЂРµР· С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ РµРјСѓ СЃРµРєСЃС‚Р°РЅС‚.");
 	
 	MIS_RamirezSextant = LOG_RUNNING;
 };
@@ -348,7 +348,7 @@ INSTANCE DIA_Ramirez_Success   (C_INFO)
 	condition   = DIA_Ramirez_Success_Condition;
 	information = DIA_Ramirez_Success_Info;
 	permanent   = FALSE;
-	description = "Я принес тебе секстант.";
+	description = "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ СЃРµРєСЃС‚Р°РЅС‚.";
 };
 
 FUNC INT DIA_Ramirez_Success_Condition()
@@ -361,10 +361,10 @@ FUNC INT DIA_Ramirez_Success_Condition()
 };
 FUNC VOID DIA_Ramirez_Success_Info()
 {
-	AI_Output (other, self, "DIA_Ramirez_Success_15_00");//Я принес тебе секстант.
+	AI_Output (other, self, "DIA_Ramirez_Success_15_00");//РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ СЃРµРєСЃС‚Р°РЅС‚.
 	B_GiveInvItems (other, self, Itmi_Sextant,1);
-	AI_Output (self, other, "DIA_Ramirez_Success_14_01");//Невероятно. Тебе удалось найти его!
-	AI_Output (self, other, "DIA_Ramirez_Success_14_02");//Вот, держи, ты заслужил эти деньги.
+	AI_Output (self, other, "DIA_Ramirez_Success_14_01");//РќРµРІРµСЂРѕСЏС‚РЅРѕ. РўРµР±Рµ СѓРґР°Р»РѕСЃСЊ РЅР°Р№С‚Рё РµРіРѕ!
+	AI_Output (self, other, "DIA_Ramirez_Success_14_02");//Р’РѕС‚, РґРµСЂР¶Рё, С‚С‹ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рё РґРµРЅСЊРіРё.
 	
 	B_GiveInvItems (self, other, Itmi_Gold,Value_Sextant/2);
 	Ramirez_Sextant = TRUE;

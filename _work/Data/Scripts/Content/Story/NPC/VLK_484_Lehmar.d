@@ -2,7 +2,7 @@
 instance VLK_484_Lehmar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Лемар"; 
+	name 		= "Р›РµРјР°СЂ"; 
 	guild 		= GIL_VLK;
 	id 			= 484;
 	voice 		= 9;

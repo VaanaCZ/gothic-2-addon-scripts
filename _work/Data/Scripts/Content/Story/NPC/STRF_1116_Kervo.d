@@ -2,7 +2,7 @@
 instance STRF_1116_Kervo (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= " Â‚Ó"; 
+	name 		= "–ö–µ—Ä–≤–æ"; 
 	guild 		= GIL_STRF;
 	id 			= 1116;
 	voice 		= 13;
@@ -30,8 +30,8 @@ instance STRF_1116_Kervo (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 5); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 5); //Grenzen f—år Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_1116;

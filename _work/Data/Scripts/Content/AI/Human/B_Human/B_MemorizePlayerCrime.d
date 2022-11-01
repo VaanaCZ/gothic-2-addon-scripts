@@ -1,7 +1,7 @@
 // ***********************************************************************
 // B_MemorizePlayerCrime
 // ---------------------	
-// Neue Tat überschreibt alte Tat, wenn sie schwerer oder gleichschwer ist
+// Neue Tat ÑŒberschreibt alte Tat, wenn sie schwerer oder gleichschwer ist
 // Tag wird gemerkt
 // CrimeAbsolutionLevel wird gemerkt
 // ---------------------------------
@@ -27,7 +27,7 @@ func void B_MemorizePlayerCrime (var C_NPC slf, var C_NPC taeter, var int crime)
 	
 	// FUNC
 	
-	// ------ PETZCRIME für HomeLocation überschreiben, wenn schwerer als vorherige ------
+	// ------ PETZCRIME fÑŒr HomeLocation ÑŒberschreiben, wenn schwerer als vorherige ------
 	if (crime > B_GetPlayerCrime(slf)) 
 	{
 		B_DeletePetzCrime(slf);
@@ -35,12 +35,12 @@ func void B_MemorizePlayerCrime (var C_NPC slf, var C_NPC taeter, var int crime)
 		B_AddPetzCrime(slf, crime);
 	};
 
-	// ------ neue Straftat überschreibt alte, wenn sie schwerer (oder gleichschwer) ist ------	
+	// ------ neue Straftat ÑŒberschreibt alte, wenn sie schwerer (oder gleichschwer) ist ------	
 	if (crime >= B_GetPlayerCrime(slf))
 	{
 		slf.aivar[AIV_NpcSawPlayerCommit] 		= crime;
 		slf.aivar[AIV_NpcSawPlayerCommitDay] 	= Wld_GetDay();
-		slf.aivar[AIV_CrimeAbsolutionLevel] 	= B_GetCurrentAbsolutionLevel(slf); //bleibt für NSCs, die NICHT zu City/Monastery/Farm gehören, immer 0 
+		slf.aivar[AIV_CrimeAbsolutionLevel] 	= B_GetCurrentAbsolutionLevel(slf); //bleibt fÑŒr NSCs, die NICHT zu City/Monastery/Farm gehÑ†ren, immer 0 
 	};
 };
 

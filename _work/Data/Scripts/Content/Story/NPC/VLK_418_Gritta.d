@@ -2,7 +2,7 @@
 instance VLK_418_Gritta (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ãðèòòà";	
+	name 		= "Ð“Ñ€Ð¸Ñ‚Ñ‚Ð°";	
 	guild 		= GIL_VLK;
 	id 			= 418;
 	voice 		= 16;
@@ -24,7 +24,7 @@ instance VLK_418_Gritta (Npc_Default)
 																		
 		
 	// ------ Inventory ------
-	CreateInvItems (self,ItMi_Gold, 100);		//für die Matteo Mission
+	CreateInvItems (self,ItMi_Gold, 100);		//fÑŒr die Matteo Mission
 	//KEIN AmbientInv!!!
 		
 	// ------ visuals ------																			

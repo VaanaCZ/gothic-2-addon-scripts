@@ -77,31 +77,31 @@ FUNC VOID DIA_Addon_Fortuno_Hi_Info()
 {
 	if (Fortuno_Einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_00");//(тревожно) Темное облако накрыло дом... ОН приближается...
-		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_01");//С кровью... которая нужна, чтобы позвать его... ОН, кто видит меня... он видит меня... О, нет, уйди, уйди прочь...
-		AI_Output (other, self, "DIA_Addon_Fortuno_Hi_15_02");//С тобой все в порядке?
+		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_00");//(С‚СЂРµРІРѕР¶РЅРѕ) РўРµРјРЅРѕРµ РѕР±Р»Р°РєРѕ РЅР°РєСЂС‹Р»Рѕ РґРѕРј... РћРќ РїСЂРёР±Р»РёР¶Р°РµС‚СЃСЏ...
+		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_01");//РЎ РєСЂРѕРІСЊСЋ... РєРѕС‚РѕСЂР°СЏ РЅСѓР¶РЅР°, С‡С‚РѕР±С‹ РїРѕР·РІР°С‚СЊ РµРіРѕ... РћРќ, РєС‚Рѕ РІРёРґРёС‚ РјРµРЅСЏ... РѕРЅ РІРёРґРёС‚ РјРµРЅСЏ... Рћ, РЅРµС‚, СѓР№РґРё, СѓР№РґРё РїСЂРѕС‡СЊ...
+		AI_Output (other, self, "DIA_Addon_Fortuno_Hi_15_02");//РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 		Fortuno_Einmal = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_Fortuno,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Fortuno,LOG_RUNNING);
 		
-		B_LogEntry (Topic_Addon_Fortuno,"Фортуно сошел с ума. Ему нужен 'зеленый послушник'.");
+		B_LogEntry (Topic_Addon_Fortuno,"Р¤РѕСЂС‚СѓРЅРѕ СЃРѕС€РµР» СЃ СѓРјР°. Р•РјСѓ РЅСѓР¶РµРЅ 'Р·РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє'.");
 		
 	};
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_03");//Зеленый... зеленый послушник... Я не могу найти...
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_03");//Р—РµР»РµРЅС‹Р№... Р·РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє... РЇ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё...
 	
 	Info_ClearChoices (DIA_Addon_Fortuno_Hi);
-	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Я вернусь позже... (КОНЕЦ)",DIA_Addon_Fortuno_Hi_BACK);	
+	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"РЇ РІРµСЂРЅСѓСЃСЊ РїРѕР·Р¶Рµ... (РљРћРќР•Р¦)",DIA_Addon_Fortuno_Hi_BACK);	
 	
-	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Я могу тебе помочь?",DIA_Addon_Fortuno_Hi_HILFE);
+	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"РЇ РјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ?",DIA_Addon_Fortuno_Hi_HILFE);
 	
 	if Npc_HasItems (other, ItMi_Joint ) >= 1
 	{
-		Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Вот возьми эту болотную траву.",DIA_Addon_Fortuno_Hi_JOINT);
+		Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Р’РѕС‚ РІРѕР·СЊРјРё СЌС‚Сѓ Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ.",DIA_Addon_Fortuno_Hi_JOINT);
 	};
 	if Npc_HasItems (other, ItMi_Addon_Joint_01 ) >= 1
 	{ 
-		Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Вот, возьми этот 'Зеленый послушник'.",DIA_Addon_Fortuno_Hi_GREEN);
+		Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚РѕС‚ 'Р—РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє'.",DIA_Addon_Fortuno_Hi_GREEN);
 	};
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_BACK()
@@ -111,37 +111,37 @@ FUNC VOID DIA_Addon_Fortuno_Hi_BACK()
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_HILFE()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_HILFE_15_00");//Я могу тебе помочь?
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_HILFE_13_01");//Зеленый... зеленый послушник поможет послушнику...
+	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_HILFE_15_00");//РЇ РјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ?
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_HILFE_13_01");//Р—РµР»РµРЅС‹Р№... Р·РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє РїРѕРјРѕР¶РµС‚ РїРѕСЃР»СѓС€РЅРёРєСѓ...
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_JOINT()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_JOINT_15_00");//Вот возьми эту болотную траву.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_JOINT_15_00");//Р’РѕС‚ РІРѕР·СЊРјРё СЌС‚Сѓ Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ.
 	
 	if B_GiveInvItems (other, self,ItMi_Joint,1)
 	{
 		AI_UseItem (self, ItMI_Joint);
 	};
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_JOINT_13_01");//Не зеленый, не сильный, не зеленый, не сильный...
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_JOINT_13_01");//РќРµ Р·РµР»РµРЅС‹Р№, РЅРµ СЃРёР»СЊРЅС‹Р№, РЅРµ Р·РµР»РµРЅС‹Р№, РЅРµ СЃРёР»СЊРЅС‹Р№...
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_GREEN()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_GREEN_15_00");//Вот, возьми этот 'Зеленый послушник'.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_GREEN_15_00");//Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚РѕС‚ 'Р—РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє'.
 	
 	if B_GiveInvItems (other, self,ItMi_Addon_Joint_01,1)
 	{
 		AI_UseItem (self, ItMI_Addon_Joint_01);
 		
 	};
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_01");//(приходя в себя) А-А-А-Х...
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_02");//Моя голова... кто... я... Фортуно... Что случилось?
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_01");//(РїСЂРёС…РѕРґСЏ РІ СЃРµР±СЏ) Рђ-Рђ-Рђ-РҐ...
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_02");//РњРѕСЏ РіРѕР»РѕРІР°... РєС‚Рѕ... СЏ... Р¤РѕСЂС‚СѓРЅРѕ... Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
 	
 	Info_ClearChoices (DIA_Addon_Fortuno_Hi);
 	Fortuno_Geheilt_01 = TRUE;
 	
 	B_GivePlayerXP (XP_Addon_Fortuno_01);
 	
-	B_LogEntry (Topic_Addon_Fortuno,"'Зеленый послушник' помог Фортуно придти в себя.");
+	B_LogEntry (Topic_Addon_Fortuno,"'Р—РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє' РїРѕРјРѕРі Р¤РѕСЂС‚СѓРЅРѕ РїСЂРёРґС‚Рё РІ СЃРµР±СЏ.");
 };
 
 
@@ -155,7 +155,7 @@ INSTANCE DIA_Addon_Fortuno_wer   (C_INFO)
 	condition   = DIA_Addon_Fortuno_wer_Condition;
 	information = DIA_Addon_Fortuno_wer_Info;
 	permanent   = FALSE;
-	description	= "Да, скажи мне, что с тобой случилось.";
+	description	= "Р”Р°, СЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ СЃ С‚РѕР±РѕР№ СЃР»СѓС‡РёР»РѕСЃСЊ.";
 };
 FUNC INT DIA_Addon_Fortuno_wer_Condition()
 {	
@@ -166,15 +166,15 @@ FUNC INT DIA_Addon_Fortuno_wer_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_wer_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_00");//Да, скажи мне, что с тобой случилось.
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_01");//Когда-то я принадлежал к Братству Спящих. Тогда все было в порядке.
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_02");//Да, все мы - осужденные преступники, но для нас, послушников, жизнь была беззаботной...
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_03");//Эй, я тоже был заключенным в Долине Рудников. Расскажи что-нибудь новенькое.
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_04");//Я... я ничего не помню. Тьма покрывает мою память...
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_05");//Ну же, сосредоточься. Что случилось? Когда ты пришел в себя?
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_06");//Ворон... Я помню только Ворона и... и темные залы.
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_07");//Что сделал Ворон? Что он сделал с тобой?
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_08");//(вздыхает) Мне жаль. Чувство такое, будто мой разум сам заключен в тюрьму. Я и сам этого не понимаю...
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_00");//Р”Р°, СЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ СЃ С‚РѕР±РѕР№ СЃР»СѓС‡РёР»РѕСЃСЊ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_01");//РљРѕРіРґР°-С‚Рѕ СЏ РїСЂРёРЅР°РґР»РµР¶Р°Р» Рє Р‘СЂР°С‚СЃС‚РІСѓ РЎРїСЏС‰РёС…. РўРѕРіРґР° РІСЃРµ Р±С‹Р»Рѕ РІ РїРѕСЂСЏРґРєРµ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_02");//Р”Р°, РІСЃРµ РјС‹ - РѕСЃСѓР¶РґРµРЅРЅС‹Рµ РїСЂРµСЃС‚СѓРїРЅРёРєРё, РЅРѕ РґР»СЏ РЅР°СЃ, РїРѕСЃР»СѓС€РЅРёРєРѕРІ, Р¶РёР·РЅСЊ Р±С‹Р»Р° Р±РµР·Р·Р°Р±РѕС‚РЅРѕР№...
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_03");//Р­Р№, СЏ С‚РѕР¶Рµ Р±С‹Р» Р·Р°РєР»СЋС‡РµРЅРЅС‹Рј РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. Р Р°СЃСЃРєР°Р¶Рё С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРµРЅСЊРєРѕРµ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_04");//РЇ... СЏ РЅРёС‡РµРіРѕ РЅРµ РїРѕРјРЅСЋ. РўСЊРјР° РїРѕРєСЂС‹РІР°РµС‚ РјРѕСЋ РїР°РјСЏС‚СЊ...
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_05");//РќСѓ Р¶Рµ, СЃРѕСЃСЂРµРґРѕС‚РѕС‡СЊСЃСЏ. Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ? РљРѕРіРґР° С‚С‹ РїСЂРёС€РµР» РІ СЃРµР±СЏ?
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_06");//Р’РѕСЂРѕРЅ... РЇ РїРѕРјРЅСЋ С‚РѕР»СЊРєРѕ Р’РѕСЂРѕРЅР° Рё... Рё С‚РµРјРЅС‹Рµ Р·Р°Р»С‹.
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_07");//Р§С‚Рѕ СЃРґРµР»Р°Р» Р’РѕСЂРѕРЅ? Р§С‚Рѕ РѕРЅ СЃРґРµР»Р°Р» СЃ С‚РѕР±РѕР№?
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_08");//(РІР·РґС‹С…Р°РµС‚) РњРЅРµ Р¶Р°Р»СЊ. Р§СѓРІСЃС‚РІРѕ С‚Р°РєРѕРµ, Р±СѓРґС‚Рѕ РјРѕР№ СЂР°Р·СѓРј СЃР°Рј Р·Р°РєР»СЋС‡РµРЅ РІ С‚СЋСЂСЊРјСѓ. РЇ Рё СЃР°Рј СЌС‚РѕРіРѕ РЅРµ РїРѕРЅРёРјР°СЋ...
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info FREE
@@ -186,7 +186,7 @@ INSTANCE DIA_Addon_Fortuno_FREE   (C_INFO)
 	condition   = DIA_Addon_Fortuno_FREE_Condition;
 	information = DIA_Addon_Fortuno_FREE_Info;
 	permanent   = FALSE;
-	description	= "Должен же быть способ вернуть тебе память.";
+	description	= "Р”РѕР»Р¶РµРЅ Р¶Рµ Р±С‹С‚СЊ СЃРїРѕСЃРѕР± РІРµСЂРЅСѓС‚СЊ С‚РµР±Рµ РїР°РјСЏС‚СЊ.";
 };
 FUNC INT DIA_Addon_Fortuno_FREE_Condition()
 {	
@@ -197,12 +197,12 @@ FUNC INT DIA_Addon_Fortuno_FREE_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_FREE_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_00");//Должен же быть способ вернуть тебе память.
-	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_01");//Да... да, наверное, это возможно.
-	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_02");//Гуру знают различные способы изменять дух и волю.
-	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_03");//А ТЫ что-нибудь помнишь про это?
-	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_04");//Нет, я боюсь, это знание исчезло вместе с гуру...
-	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_05");//Проклятье. Ладно, если есть способ освободить твой разум, я найду его.
+	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_00");//Р”РѕР»Р¶РµРЅ Р¶Рµ Р±С‹С‚СЊ СЃРїРѕСЃРѕР± РІРµСЂРЅСѓС‚СЊ С‚РµР±Рµ РїР°РјСЏС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_01");//Р”Р°... РґР°, РЅР°РІРµСЂРЅРѕРµ, СЌС‚Рѕ РІРѕР·РјРѕР¶РЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_02");//Р“СѓСЂСѓ Р·РЅР°СЋС‚ СЂР°Р·Р»РёС‡РЅС‹Рµ СЃРїРѕСЃРѕР±С‹ РёР·РјРµРЅСЏС‚СЊ РґСѓС… Рё РІРѕР»СЋ.
+	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_03");//Рђ РўР« С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРјРЅРёС€СЊ РїСЂРѕ СЌС‚Рѕ?
+	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_04");//РќРµС‚, СЏ Р±РѕСЋСЃСЊ, СЌС‚Рѕ Р·РЅР°РЅРёРµ РёСЃС‡РµР·Р»Рѕ РІРјРµСЃС‚Рµ СЃ РіСѓСЂСѓ...
+	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_05");//РџСЂРѕРєР»СЏС‚СЊРµ. Р›Р°РґРЅРѕ, РµСЃР»Рё РµСЃС‚СЊ СЃРїРѕСЃРѕР± РѕСЃРІРѕР±РѕРґРёС‚СЊ С‚РІРѕР№ СЂР°Р·СѓРј, СЏ РЅР°Р№РґСѓ РµРіРѕ.
 
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_BL_09");
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_BL_10");
@@ -210,7 +210,7 @@ FUNC VOID DIA_Addon_Fortuno_FREE_Info()
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_LOCH_01");
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_LOCH_01");
 	
-	B_LogEntry (Topic_Addon_Fortuno,"Разум Фортуно прояснился, но он все еще ничего не помнит.");
+	B_LogEntry (Topic_Addon_Fortuno,"Р Р°Р·СѓРј Р¤РѕСЂС‚СѓРЅРѕ РїСЂРѕСЏСЃРЅРёР»СЃСЏ, РЅРѕ РѕРЅ РІСЃРµ РµС‰Рµ РЅРёС‡РµРіРѕ РЅРµ РїРѕРјРЅРёС‚.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Herb
@@ -222,7 +222,7 @@ INSTANCE DIA_Addon_Fortuno_Herb   (C_INFO)
 	condition   = DIA_Addon_Fortuno_Herb_Condition;
 	information = DIA_Addon_Fortuno_Herb_Info;
 	permanent   = FALSE;
-	description	= "Тебе нужна еще болотная трава?";
+	description	= "РўРµР±Рµ РЅСѓР¶РЅР° РµС‰Рµ Р±РѕР»РѕС‚РЅР°СЏ С‚СЂР°РІР°?";
 };
 FUNC INT DIA_Addon_Fortuno_Herb_Condition()
 {
@@ -233,9 +233,9 @@ FUNC INT DIA_Addon_Fortuno_Herb_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_Herb_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Herb_15_00");//Тебе нужна еще болотная трава?
-	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_01");//Да-а-а, определенно. Я куплю всю траву, которую ты мне принесешь.
-	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_02");//Я даже заплачу за нее больше, чем Фиск.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Herb_15_00");//РўРµР±Рµ РЅСѓР¶РЅР° РµС‰Рµ Р±РѕР»РѕС‚РЅР°СЏ С‚СЂР°РІР°?
+	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_01");//Р”Р°-Р°-Р°, РѕРїСЂРµРґРµР»РµРЅРЅРѕ. РЇ РєСѓРїР»СЋ РІСЃСЋ С‚СЂР°РІСѓ, РєРѕС‚РѕСЂСѓСЋ С‚С‹ РјРЅРµ РїСЂРёРЅРµСЃРµС€СЊ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_02");//РЇ РґР°Р¶Рµ Р·Р°РїР»Р°С‡Сѓ Р·Р° РЅРµРµ Р±РѕР»СЊС€Рµ, С‡РµРј Р¤РёСЃРє.
 };
 FUNC VOID B_Fortuno_InfoManager()
 {
@@ -243,8 +243,8 @@ FUNC VOID B_Fortuno_InfoManager()
 	Info_AddChoice (DIA_Addon_Fortuno_Trade,DIALOG_BACK,DIA_Addon_Fortuno_Trade_BACK);
 	if (Npc_HasItems (other, ITPl_SwampHerb) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Fortuno_Trade,"(отдать всю болотную траву)",DIA_Addon_Fortuno_Trade_all);
-		Info_AddChoice (DIA_Addon_Fortuno_Trade,"(отдать 1 болотную траву)",DIA_Addon_Fortuno_Trade_1);
+		Info_AddChoice (DIA_Addon_Fortuno_Trade,"(РѕС‚РґР°С‚СЊ РІСЃСЋ Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ)",DIA_Addon_Fortuno_Trade_all);
+		Info_AddChoice (DIA_Addon_Fortuno_Trade,"(РѕС‚РґР°С‚СЊ 1 Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ)",DIA_Addon_Fortuno_Trade_1);
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -257,7 +257,7 @@ INSTANCE DIA_Addon_Fortuno_Trade   (C_INFO)
 	condition   = DIA_Addon_Fortuno_Trade_Condition;
 	information = DIA_Addon_Fortuno_Trade_Info;
 	permanent   = TRUE;
-	description	= "У меня есть болотная трава для тебя...";
+	description	= "РЈ РјРµРЅСЏ РµСЃС‚СЊ Р±РѕР»РѕС‚РЅР°СЏ С‚СЂР°РІР° РґР»СЏ С‚РµР±СЏ...";
 };
 FUNC INT DIA_Addon_Fortuno_Trade_Condition()
 {	
@@ -269,7 +269,7 @@ FUNC INT DIA_Addon_Fortuno_Trade_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_Trade_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Trade_15_00");//У меня есть болотная трава для тебя...
+	AI_Output (other, self, "DIA_Addon_Fortuno_Trade_15_00");//РЈ РјРµРЅСЏ РµСЃС‚СЊ Р±РѕР»РѕС‚РЅР°СЏ С‚СЂР°РІР° РґР»СЏ С‚РµР±СЏ...
 	B_Fortuno_InfoManager();
 };
 FUNC VOID DIA_Addon_Fortuno_Trade_BACK()
@@ -314,7 +314,7 @@ INSTANCE DIA_Addon_Fortuno_Trank   (C_INFO)
 	condition   = DIA_Addon_Fortuno_Trank_Condition;
 	information = DIA_Addon_Fortuno_Trank_Info;
 	permanent   = FALSE;
-	description	= "У меня есть зелье для тебя...";
+	description	= "РЈ РјРµРЅСЏ РµСЃС‚СЊ Р·РµР»СЊРµ РґР»СЏ С‚РµР±СЏ...";
 };
 FUNC INT DIA_Addon_Fortuno_Trank_Condition()
 {
@@ -328,8 +328,8 @@ FUNC INT DIA_Addon_Fortuno_Trank_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_Trank_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Trank_15_00");//У меня есть зелье, которое поможет тебе вспомнить.
-	AI_Output (self, other, "DIA_Addon_Fortuno_Trank_13_01");//Я верю тебе.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Trank_15_00");//РЈ РјРµРЅСЏ РµСЃС‚СЊ Р·РµР»СЊРµ, РєРѕС‚РѕСЂРѕРµ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РІСЃРїРѕРјРЅРёС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Trank_13_01");//РЇ РІРµСЂСЋ С‚РµР±Рµ.
 	
 	if (Npc_HasItems (other, ItPo_Addon_Geist_02) >= 1)//der richtige
 	{
@@ -342,7 +342,7 @@ FUNC VOID DIA_Addon_Fortuno_Trank_Info()
 	}
 	else
 	{
-		if B_GiveInvItems (other, self, ItPo_Addon_Geist_01,1)//der...дh...tцdliche
+		if B_GiveInvItems (other, self, ItPo_Addon_Geist_01,1)//der...Рґh...tС†dliche
 		{
 			Log_SetTopicStatus (Topic_Addon_Fortuno,LOG_OBSOLETE);
 			AI_StopProcessInfos (self);
@@ -360,7 +360,7 @@ INSTANCE DIA_Addon_Fortuno_more   (C_INFO)
 	condition   = DIA_Addon_Fortuno_more_Condition;
 	information = DIA_Addon_Fortuno_more_Info;
 	permanent   = FALSE;
-	description	= "И?..";
+	description	= "Р?..";
 };
 FUNC INT DIA_Addon_Fortuno_more_Condition()
 {
@@ -371,28 +371,28 @@ FUNC INT DIA_Addon_Fortuno_more_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_more_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_00");//И?..
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_01");//Ах! Я... Я снова помню! Теперь я понимаю... О, Аданос, что же я наделал?
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_02");//Да, что ты наделал? И самое главное - что наделал Ворон?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_03");//Я помог ему... заключить контракт. С НИМ. Ему были нужны различные зелья... Я варил их для него.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_04");//Он пытался открыть портал и попасть в храм.
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_05");//Зачем? Что ему нужно в храме?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_06");//Мощный артефакт... Он погребен вместе с тем, кто создал его. Великий воин, павший перед ЕГО мощью...
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_07");//А потом?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_08");//Мы не смогли открыть портал...
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_09");//Но Ворон был УВЕРЕН, что он сможет сделать это, если раскопает гробницу жреца.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_10");//Вот зачем он привел сюда рабов. Тех, кого он может заставить откопать древние силы, покоящиеся здесь.
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_11");//Гробница жреца?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_12");//Место упокоения жреца Аданоса. Она находится в шахте.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_13");//Еще я помню каменные таблички. Он считал, что они укажут ему путь.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_14");//И когда он сумел расшифровать то, что на них написано, я ему стал не нужен.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_15");//Он использовал на мне заклинания забвения... а ты освободил меня.
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_00");//Р?..
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_01");//РђС…! РЇ... РЇ СЃРЅРѕРІР° РїРѕРјРЅСЋ! РўРµРїРµСЂСЊ СЏ РїРѕРЅРёРјР°СЋ... Рћ, РђРґР°РЅРѕСЃ, С‡С‚Рѕ Р¶Рµ СЏ РЅР°РґРµР»Р°Р»?
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_02");//Р”Р°, С‡С‚Рѕ С‚С‹ РЅР°РґРµР»Р°Р»? Р СЃР°РјРѕРµ РіР»Р°РІРЅРѕРµ - С‡С‚Рѕ РЅР°РґРµР»Р°Р» Р’РѕСЂРѕРЅ?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_03");//РЇ РїРѕРјРѕРі РµРјСѓ... Р·Р°РєР»СЋС‡РёС‚СЊ РєРѕРЅС‚СЂР°РєС‚. РЎ РќРРњ. Р•РјСѓ Р±С‹Р»Рё РЅСѓР¶РЅС‹ СЂР°Р·Р»РёС‡РЅС‹Рµ Р·РµР»СЊСЏ... РЇ РІР°СЂРёР» РёС… РґР»СЏ РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_04");//РћРЅ РїС‹С‚Р°Р»СЃСЏ РѕС‚РєСЂС‹С‚СЊ РїРѕСЂС‚Р°Р» Рё РїРѕРїР°СЃС‚СЊ РІ С…СЂР°Рј.
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_05");//Р—Р°С‡РµРј? Р§С‚Рѕ РµРјСѓ РЅСѓР¶РЅРѕ РІ С…СЂР°РјРµ?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_06");//РњРѕС‰РЅС‹Р№ Р°СЂС‚РµС„Р°РєС‚... РћРЅ РїРѕРіСЂРµР±РµРЅ РІРјРµСЃС‚Рµ СЃ С‚РµРј, РєС‚Рѕ СЃРѕР·РґР°Р» РµРіРѕ. Р’РµР»РёРєРёР№ РІРѕРёРЅ, РїР°РІС€РёР№ РїРµСЂРµРґ Р•Р“Рћ РјРѕС‰СЊСЋ...
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_07");//Рђ РїРѕС‚РѕРј?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_08");//РњС‹ РЅРµ СЃРјРѕРіР»Рё РѕС‚РєСЂС‹С‚СЊ РїРѕСЂС‚Р°Р»...
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_09");//РќРѕ Р’РѕСЂРѕРЅ Р±С‹Р» РЈР’Р•Р Р•Рќ, С‡С‚Рѕ РѕРЅ СЃРјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ, РµСЃР»Рё СЂР°СЃРєРѕРїР°РµС‚ РіСЂРѕР±РЅРёС†Сѓ Р¶СЂРµС†Р°.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_10");//Р’РѕС‚ Р·Р°С‡РµРј РѕРЅ РїСЂРёРІРµР» СЃСЋРґР° СЂР°Р±РѕРІ. РўРµС…, РєРѕРіРѕ РѕРЅ РјРѕР¶РµС‚ Р·Р°СЃС‚Р°РІРёС‚СЊ РѕС‚РєРѕРїР°С‚СЊ РґСЂРµРІРЅРёРµ СЃРёР»С‹, РїРѕРєРѕСЏС‰РёРµСЃСЏ Р·РґРµСЃСЊ.
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_11");//Р“СЂРѕР±РЅРёС†Р° Р¶СЂРµС†Р°?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_12");//РњРµСЃС‚Рѕ СѓРїРѕРєРѕРµРЅРёСЏ Р¶СЂРµС†Р° РђРґР°РЅРѕСЃР°. РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РІ С€Р°С…С‚Рµ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_13");//Р•С‰Рµ СЏ РїРѕРјРЅСЋ РєР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё. РћРЅ СЃС‡РёС‚Р°Р», С‡С‚Рѕ РѕРЅРё СѓРєР°Р¶СѓС‚ РµРјСѓ РїСѓС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_14");//Р РєРѕРіРґР° РѕРЅ СЃСѓРјРµР» СЂР°СЃС€РёС„СЂРѕРІР°С‚СЊ С‚Рѕ, С‡С‚Рѕ РЅР° РЅРёС… РЅР°РїРёСЃР°РЅРѕ, СЏ РµРјСѓ СЃС‚Р°Р» РЅРµ РЅСѓР¶РµРЅ.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_15");//РћРЅ РёСЃРїРѕР»СЊР·РѕРІР°Р» РЅР° РјРЅРµ Р·Р°РєР»РёРЅР°РЅРёСЏ Р·Р°Р±РІРµРЅРёСЏ... Р° С‚С‹ РѕСЃРІРѕР±РѕРґРёР» РјРµРЅСЏ.
 	
 	SC_KnowsFortunoInfos = TRUE;
 	
-	B_LogEntry (TOPIC_Addon_RavenKDW,"Ворону нужен мощный артефакт из храма Аданоса."); 
-	Log_AddEntry (TOPIC_Addon_RavenKDW,"Ворону зачем-то понадобилась гробница жреца древней религии, которую он раскопал в шахте."); 
-	Log_AddEntry (TOPIC_Addon_RavenKDW,"Ворон считает, что для осуществления его планов ему необходимы каменные таблички."); 
+	B_LogEntry (TOPIC_Addon_RavenKDW,"Р’РѕСЂРѕРЅСѓ РЅСѓР¶РµРЅ РјРѕС‰РЅС‹Р№ Р°СЂС‚РµС„Р°РєС‚ РёР· С…СЂР°РјР° РђРґР°РЅРѕСЃР°."); 
+	Log_AddEntry (TOPIC_Addon_RavenKDW,"Р’РѕСЂРѕРЅСѓ Р·Р°С‡РµРј-С‚Рѕ РїРѕРЅР°РґРѕР±РёР»Р°СЃСЊ РіСЂРѕР±РЅРёС†Р° Р¶СЂРµС†Р° РґСЂРµРІРЅРµР№ СЂРµР»РёРіРёРё, РєРѕС‚РѕСЂСѓСЋ РѕРЅ СЂР°СЃРєРѕРїР°Р» РІ С€Р°С…С‚Рµ."); 
+	Log_AddEntry (TOPIC_Addon_RavenKDW,"Р’РѕСЂРѕРЅ СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ РґР»СЏ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЏ РµРіРѕ РїР»Р°РЅРѕРІ РµРјСѓ РЅРµРѕР±С…РѕРґРёРјС‹ РєР°РјРµРЅРЅС‹Рµ С‚Р°Р±Р»РёС‡РєРё."); 
 	
 	Npc_ExchangeRoutine (self, "START");
 	B_GivePlayerXP (XP_Addon_Fortuno_03);
@@ -420,6 +420,6 @@ FUNC INT DIA_Addon_Fortuno_Attentat_Condition()
 FUNC VOID DIA_Addon_Fortuno_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Fortuno_Attentat_13_00");//Нападение? Прости, я... отсутствовал... некоторое время. Я ничего про это не знаю.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Attentat_13_00");//РќР°РїР°РґРµРЅРёРµ? РџСЂРѕСЃС‚Рё, СЏ... РѕС‚СЃСѓС‚СЃС‚РІРѕРІР°Р»... РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ. РЇ РЅРёС‡РµРіРѕ РїСЂРѕ СЌС‚Рѕ РЅРµ Р·РЅР°СЋ.
 };
 

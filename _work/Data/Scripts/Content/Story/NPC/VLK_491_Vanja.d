@@ -3,7 +3,7 @@
 instance VLK_491_Vanja (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ваня";
+	name 		= "Р’Р°РЅСЏ";
 	guild 		= GIL_VLK;
 	id 			= 491;
 	voice 		= 17;

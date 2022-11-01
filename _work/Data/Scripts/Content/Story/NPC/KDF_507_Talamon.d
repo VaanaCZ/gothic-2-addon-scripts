@@ -1,7 +1,7 @@
 INSTANCE KDF_507_Talamon (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Таламон";
+	name 		= "РўР°Р»Р°РјРѕРЅ";
 	guild 		= GIL_KDF;
 	id 			= 507;
 	voice 		= 4;

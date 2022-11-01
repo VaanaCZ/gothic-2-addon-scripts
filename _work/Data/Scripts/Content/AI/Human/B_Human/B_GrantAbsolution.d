@@ -2,7 +2,7 @@
 // B_GrantAbsolution
 // -----------------
 // Resettet alle Absolution/News/Petz - Variablen
-// für die angegebene Location
+// fÑŒr die angegebene Location
 // **********************************************
 
 func void B_GrantAbsolution (var int location)
@@ -57,7 +57,7 @@ func void B_GrantAbsolution (var int location)
 	
 	// ------ Banditenlager ------
 	if (location == LOC_BL)
-	//KEIN LOC_ALL FÜR BANDITEN!!
+	//KEIN LOC_ALL FÐ¬R BANDITEN!!
 	{
 		ABSOLUTIONLEVEL_BL 	= ABSOLUTIONLEVEL_BL + 1;
 		

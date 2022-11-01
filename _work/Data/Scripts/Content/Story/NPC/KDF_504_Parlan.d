@@ -1,7 +1,7 @@
 INSTANCE KDF_504_Parlan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Οΰπλΰν";
+	name 		= "ΠΠ°Ρ€Π»Π°Π½";
 	guild 		= GIL_KDF;
 	id 			= 504;
 	voice 		= 5;

@@ -31,7 +31,7 @@ const int MENU_OPT_START_Y	= 2000;
 
 INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ОПЦИИ";
+	text[0]		=	"РћРџР¦РР";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -44,8 +44,8 @@ INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Игровые опции";
-	text[1]		= "Игровые опции";  // Kommentar
+	text[0]		= "РРіСЂРѕРІС‹Рµ РѕРїС†РёРё";
+	text[1]		= "РРіСЂРѕРІС‹Рµ РѕРїС†РёРё";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*0;
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Опции визуализации";
-	text[1]		= "Дальность обзора, детализация и эффекты.";  // Kommentar
+	text[0]		= "РћРїС†РёРё РІРёР·СѓР°Р»РёР·Р°С†РёРё";
+	text[1]		= "Р”Р°Р»СЊРЅРѕСЃС‚СЊ РѕР±Р·РѕСЂР°, РґРµС‚Р°Р»РёР·Р°С†РёСЏ Рё СЌС„С„РµРєС‚С‹.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -78,8 +78,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"Опции графики";
-	text[1]		=	"Опции графики";  // Kommentar
+	text[0]		=	"РћРїС†РёРё РіСЂР°С„РёРєРё";
+	text[1]		=	"РћРїС†РёРё РіСЂР°С„РёРєРё";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -95,8 +95,8 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Опции звука";
-	text[1]		= "Опции звука";  // Kommentar
+	text[0]		= "РћРїС†РёРё Р·РІСѓРєР°";
+	text[1]		= "РћРїС†РёРё Р·РІСѓРєР°";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -113,8 +113,8 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Управление";
-	text[1]		= "Управление";  // Kommentar
+	text[0]		= "РЈРїСЂР°РІР»РµРЅРёРµ";
+	text[1]		= "РЈРїСЂР°РІР»РµРЅРёРµ";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*4;
@@ -130,8 +130,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Расширенная конфигурация";
-	text[1]		= "Некоторые дополнительные настройки";  // Kommentar
+	text[0]		= "Р Р°СЃС€РёСЂРµРЅРЅР°СЏ РєРѕРЅС„РёРіСѓСЂР°С†РёСЏ";
+	text[1]		= "РќРµРєРѕС‚РѕСЂС‹Рµ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -150,8 +150,8 @@ INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Производительность/качество";
-	text[1]		= "Оптимизация производительности и качества";  // Kommentar
+	text[0]		= "РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚СЊ/РєР°С‡РµСЃС‚РІРѕ";
+	text[1]		= "РћРїС‚РёРјРёР·Р°С†РёСЏ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё Рё РєР°С‡РµСЃС‚РІР°";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*6;
@@ -167,7 +167,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "Особое#Высокая производительность|Среднее качество|Высокое качество";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "РћСЃРѕР±РѕРµ#Р’С‹СЃРѕРєР°СЏ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚СЊ|РЎСЂРµРґРЅРµРµ РєР°С‡РµСЃС‚РІРѕ|Р’С‹СЃРѕРєРѕРµ РєР°С‡РµСЃС‚РІРѕ";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension
@@ -185,7 +185,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y+300;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

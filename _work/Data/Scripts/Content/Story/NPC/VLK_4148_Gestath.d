@@ -1,7 +1,7 @@
 INSTANCE VLK_4148_Gestath (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Гестат";
+	name 		= "Р“РµСЃС‚Р°С‚";
 	guild 		= GIL_OUT;
 	id 			= 4148;
 	voice 		= 9;

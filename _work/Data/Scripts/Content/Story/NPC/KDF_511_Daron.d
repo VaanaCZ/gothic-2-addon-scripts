@@ -1,7 +1,7 @@
 INSTANCE KDF_511_Daron (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Дарон";
+	name 		= "Р”Р°СЂРѕРЅ";
 	guild 		= GIL_VLK;
 	id 			= 511;
 	voice 		= 10;

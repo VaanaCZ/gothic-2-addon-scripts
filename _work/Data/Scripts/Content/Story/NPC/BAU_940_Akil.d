@@ -3,7 +3,7 @@
 instance BAU_940_Akil (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "¿ÍËÎ";
+	name 		= "–ê–∫–∏–ª";
 	guild 		= GIL_OUT;
 	id 			= 940;
 	voice 		= 13;

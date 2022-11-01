@@ -2,7 +2,7 @@
 instance VLK_435_Nadja (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Õ‡‰ˇ";	
+	name 		= "–ù–∞–¥—è";	
 	guild 		= GIL_VLK;
 	id 			= 435;
 	voice 		= 16;
@@ -41,7 +41,7 @@ instance VLK_435_Nadja (Npc_Default)
 	daily_routine 		= Rtn_Start_435;
 };
 
-FUNC VOID Rtn_Start_435 () // Nadja h‰lt sich f¸r gewˆhnlich unten auf...
+FUNC VOID Rtn_Start_435 () // Nadja h–¥lt sich f—år gew—Ühnlich unten auf...
 {	
 	TA_Stand_Drinking	(05,00,17,00,"NW_PUFF_DANCE");
 	TA_Dance			(17,00,21,00,"NW_PUFF_DANCE");

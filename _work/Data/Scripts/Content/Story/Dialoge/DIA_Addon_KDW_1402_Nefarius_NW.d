@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Nefarius_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Nefarius_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Nefarius_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wдre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wРґre einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Nefarius_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Nefarius_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_Hallo_Condition;
 	information	 = 	DIA_Addon_Nefarius_Hallo_Info;
 
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Addon_Nefarius_Hallo_Condition ()
@@ -94,11 +94,11 @@ func int DIA_Addon_Nefarius_Hallo_Condition ()
 
 func void DIA_Addon_Nefarius_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_Hallo_15_00"); //Как дела?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Hallo_05_01"); //А что ТЫ здесь делаешь? Вот это сюрприз!
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Hallo_05_02"); //Я думал, ты погиб.
-	AI_Output	(other, self, "DIA_Addon_Nefarius_Hallo_15_03"); //Почти.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Hallo_05_04"); //Из-за тебя поднялся большой шум, ты знаешь об этом? Сатураса было не узнать - те события полностью вывели его из себя.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_Hallo_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Hallo_05_01"); //Рђ С‡С‚Рѕ РўР« Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ? Р’РѕС‚ СЌС‚Рѕ СЃСЋСЂРїСЂРёР·!
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Hallo_05_02"); //РЇ РґСѓРјР°Р», С‚С‹ РїРѕРіРёР±.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_Hallo_15_03"); //РџРѕС‡С‚Рё.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Hallo_05_04"); //РР·-Р·Р° С‚РµР±СЏ РїРѕРґРЅСЏР»СЃСЏ Р±РѕР»СЊС€РѕР№ С€СѓРј, С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј? РЎР°С‚СѓСЂР°СЃР° Р±С‹Р»Рѕ РЅРµ СѓР·РЅР°С‚СЊ - С‚Рµ СЃРѕР±С‹С‚РёСЏ РїРѕР»РЅРѕСЃС‚СЊСЋ РІС‹РІРµР»Рё РµРіРѕ РёР· СЃРµР±СЏ.
 	
 };
 
@@ -112,7 +112,7 @@ instance DIA_Addon_Nefarius_keineahnung		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_keineahnung_Condition;
 	information	 = 	DIA_Addon_Nefarius_keineahnung_Info;
 
-	description	 = 	"Что это за портал?";
+	description	 = 	"Р§С‚Рѕ СЌС‚Рѕ Р·Р° РїРѕСЂС‚Р°Р»?";
 };
 
 func int DIA_Addon_Nefarius_keineahnung_Condition ()
@@ -125,10 +125,10 @@ func int DIA_Addon_Nefarius_keineahnung_Condition ()
 
 func void DIA_Addon_Nefarius_keineahnung_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_keineahnung_15_00"); //Что это за портал?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_keineahnung_05_01"); //Мы считаем, что он ведет в затерянную долину, в которой находится город древней цивилизации.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_keineahnung_05_02"); //Но пока за порталом находится лишь многометровая толща камня.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_keineahnung_05_03"); //Никаких следов магии телепортации нам обнаружить не удалось. Очень загадочно...
+	AI_Output	(other, self, "DIA_Addon_Nefarius_keineahnung_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° РїРѕСЂС‚Р°Р»?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_keineahnung_05_01"); //РњС‹ СЃС‡РёС‚Р°РµРј, С‡С‚Рѕ РѕРЅ РІРµРґРµС‚ РІ Р·Р°С‚РµСЂСЏРЅРЅСѓСЋ РґРѕР»РёРЅСѓ, РІ РєРѕС‚РѕСЂРѕР№ РЅР°С…РѕРґРёС‚СЃСЏ РіРѕСЂРѕРґ РґСЂРµРІРЅРµР№ С†РёРІРёР»РёР·Р°С†РёРё.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_keineahnung_05_02"); //РќРѕ РїРѕРєР° Р·Р° РїРѕСЂС‚Р°Р»РѕРј РЅР°С…РѕРґРёС‚СЃСЏ Р»РёС€СЊ РјРЅРѕРіРѕРјРµС‚СЂРѕРІР°СЏ С‚РѕР»С‰Р° РєР°РјРЅСЏ.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_keineahnung_05_03"); //РќРёРєР°РєРёС… СЃР»РµРґРѕРІ РјР°РіРёРё С‚РµР»РµРїРѕСЂС‚Р°С†РёРё РЅР°Рј РѕР±РЅР°СЂСѓР¶РёС‚СЊ РЅРµ СѓРґР°Р»РѕСЃСЊ. РћС‡РµРЅСЊ Р·Р°РіР°РґРѕС‡РЅРѕ...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -141,7 +141,7 @@ instance DIA_Addon_Nefarius_WieMechanik		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_WieMechanik_Condition;
 	information	 = 	DIA_Addon_Nefarius_WieMechanik_Info;
 
-	description	 = 	"Ты знаешь, как активировать портал?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ, РєР°Рє Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РїРѕСЂС‚Р°Р»?";
 };
 
 func int DIA_Addon_Nefarius_WieMechanik_Condition ()
@@ -154,10 +154,10 @@ func int DIA_Addon_Nefarius_WieMechanik_Condition ()
 
 func void DIA_Addon_Nefarius_WieMechanik_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_WieMechanik_15_00"); //Ты знаешь, как активировать портал?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_WieMechanik_05_01"); //Похоже, что пропавшие части орнамента складываются в ключ.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_WieMechanik_05_03"); //Он-то и нужен нам, чтобы открыть портал.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_WieMechanik_05_02"); //Ключ должен точно войти в кольцевидное углубление рядом с порталом.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_WieMechanik_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РєР°Рє Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РїРѕСЂС‚Р°Р»?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_WieMechanik_05_01"); //РџРѕС…РѕР¶Рµ, С‡С‚Рѕ РїСЂРѕРїР°РІС€РёРµ С‡Р°СЃС‚Рё РѕСЂРЅР°РјРµРЅС‚Р° СЃРєР»Р°РґС‹РІР°СЋС‚СЃСЏ РІ РєР»СЋС‡.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_WieMechanik_05_03"); //РћРЅ-С‚Рѕ Рё РЅСѓР¶РµРЅ РЅР°Рј, С‡С‚РѕР±С‹ РѕС‚РєСЂС‹С‚СЊ РїРѕСЂС‚Р°Р».
+	AI_Output	(self, other, "DIA_Addon_Nefarius_WieMechanik_05_02"); //РљР»СЋС‡ РґРѕР»Р¶РµРЅ С‚РѕС‡РЅРѕ РІРѕР№С‚Рё РІ РєРѕР»СЊС†РµРІРёРґРЅРѕРµ СѓРіР»СѓР±Р»РµРЅРёРµ СЂСЏРґРѕРј СЃ РїРѕСЂС‚Р°Р»РѕРј.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -170,7 +170,7 @@ instance DIA_Addon_Nefarius_SCbringOrnaments		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_SCbringOrnaments_Condition;
 	information	 = 	DIA_Addon_Nefarius_SCbringOrnaments_Info;
 
-	description	 = 	"Я принес часть орнамента.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ С‡Р°СЃС‚СЊ РѕСЂРЅР°РјРµРЅС‚Р°.";
 };
 
 func int DIA_Addon_Nefarius_SCbringOrnaments_Condition ()
@@ -183,29 +183,29 @@ func int DIA_Addon_Nefarius_SCbringOrnaments_Condition ()
 
 func void DIA_Addon_Nefarius_SCbringOrnaments_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_SCbringOrnaments_15_00"); //Я принес часть орнамента.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_01"); //Правда? Это замечательно.
-	AI_Output	(other, self, "DIA_Addon_Nefarius_SCbringOrnaments_15_02"); //Ты знаешь, где остальные части?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_03"); //Если верить древним письменам, ключ был разделен на четыре части.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_04"); //Эти части все еще находятся на острове...
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_05"); //С помощью Мердариона мне удалось расшифровать некоторые надписи.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_06"); //Они указывают на места, где были спрятаны части орнамента.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_07"); //Эти места я отметил вот на этой карте.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_SCbringOrnaments_15_00"); //РЇ РїСЂРёРЅРµСЃ С‡Р°СЃС‚СЊ РѕСЂРЅР°РјРµРЅС‚Р°.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_01"); //РџСЂР°РІРґР°? Р­С‚Рѕ Р·Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_SCbringOrnaments_15_02"); //РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ С‡Р°СЃС‚Рё?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_03"); //Р•СЃР»Рё РІРµСЂРёС‚СЊ РґСЂРµРІРЅРёРј РїРёСЃСЊРјРµРЅР°Рј, РєР»СЋС‡ Р±С‹Р» СЂР°Р·РґРµР»РµРЅ РЅР° С‡РµС‚С‹СЂРµ С‡Р°СЃС‚Рё.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_04"); //Р­С‚Рё С‡Р°СЃС‚Рё РІСЃРµ РµС‰Рµ РЅР°С…РѕРґСЏС‚СЃСЏ РЅР° РѕСЃС‚СЂРѕРІРµ...
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_05"); //РЎ РїРѕРјРѕС‰СЊСЋ РњРµСЂРґР°СЂРёРѕРЅР° РјРЅРµ СѓРґР°Р»РѕСЃСЊ СЂР°СЃС€РёС„СЂРѕРІР°С‚СЊ РЅРµРєРѕС‚РѕСЂС‹Рµ РЅР°РґРїРёСЃРё.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_06"); //РћРЅРё СѓРєР°Р·С‹РІР°СЋС‚ РЅР° РјРµСЃС‚Р°, РіРґРµ Р±С‹Р»Рё СЃРїСЂСЏС‚Р°РЅС‹ С‡Р°СЃС‚Рё РѕСЂРЅР°РјРµРЅС‚Р°.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_07"); //Р­С‚Рё РјРµСЃС‚Р° СЏ РѕС‚РјРµС‚РёР» РІРѕС‚ РЅР° СЌС‚РѕР№ РєР°СЂС‚Рµ.
 	CreateInvItems (self, ItWr_Map_NewWorld_Ornaments_Addon, 1);									
 	B_GiveInvItems (self, other, ItWr_Map_NewWorld_Ornaments_Addon, 1);		
 	MIS_Addon_Nefarius_BringMissingOrnaments = LOG_RUNNING;
 
 	Log_CreateTopic (TOPIC_Addon_Ornament, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Ornament, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Ornament,"Маги воды нашли портал, который ведет в неизвестную часть Хориниса."); 
-	B_LogEntry (TOPIC_Addon_Ornament,"Нефариус хочет активировать портал при помощи украшенного кольца. Ему все еще не хватает трех частей этого кольца. Я должен найти их. Он дал мне карту, на которой отмечены места, где я должен искать фрагменты."); 
+	B_LogEntry (TOPIC_Addon_Ornament,"РњР°РіРё РІРѕРґС‹ РЅР°С€Р»Рё РїРѕСЂС‚Р°Р», РєРѕС‚РѕСЂС‹Р№ РІРµРґРµС‚ РІ РЅРµРёР·РІРµСЃС‚РЅСѓСЋ С‡Р°СЃС‚СЊ РҐРѕСЂРёРЅРёСЃР°."); 
+	B_LogEntry (TOPIC_Addon_Ornament,"РќРµС„Р°СЂРёСѓСЃ С…РѕС‡РµС‚ Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РїРѕСЂС‚Р°Р» РїСЂРё РїРѕРјРѕС‰Рё СѓРєСЂР°С€РµРЅРЅРѕРіРѕ РєРѕР»СЊС†Р°. Р•РјСѓ РІСЃРµ РµС‰Рµ РЅРµ С…РІР°С‚Р°РµС‚ С‚СЂРµС… С‡Р°СЃС‚РµР№ СЌС‚РѕРіРѕ РєРѕР»СЊС†Р°. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РёС…. РћРЅ РґР°Р» РјРЅРµ РєР°СЂС‚Сѓ, РЅР° РєРѕС‚РѕСЂРѕР№ РѕС‚РјРµС‡РµРЅС‹ РјРµСЃС‚Р°, РіРґРµ СЏ РґРѕР»Р¶РµРЅ РёСЃРєР°С‚СЊ С„СЂР°РіРјРµРЅС‚С‹."); 
 	
 	
 	B_StartotherRoutine	(BAU_4300_Addon_Cavalorn,"OrnamentSteinring");
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_08"); //Ты должен искать части ключа именно там.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_09"); //Обращай внимание на древние постройки. Они могут быть полуразрушенными, но все же легко узнаваемыми.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_10"); //Это может быть что угодно: валун, круг камней, мавзолей или что-нибудь подобное.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_11"); //Но к чему эта болтовня? Ты сам все увидишь. Удачи!
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_08"); //РўС‹ РґРѕР»Р¶РµРЅ РёСЃРєР°С‚СЊ С‡Р°СЃС‚Рё РєР»СЋС‡Р° РёРјРµРЅРЅРѕ С‚Р°Рј.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_09"); //РћР±СЂР°С‰Р°Р№ РІРЅРёРјР°РЅРёРµ РЅР° РґСЂРµРІРЅРёРµ РїРѕСЃС‚СЂРѕР№РєРё. РћРЅРё РјРѕРіСѓС‚ Р±С‹С‚СЊ РїРѕР»СѓСЂР°Р·СЂСѓС€РµРЅРЅС‹РјРё, РЅРѕ РІСЃРµ Р¶Рµ Р»РµРіРєРѕ СѓР·РЅР°РІР°РµРјС‹РјРё.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_10"); //Р­С‚Рѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ С‡С‚Рѕ СѓРіРѕРґРЅРѕ: РІР°Р»СѓРЅ, РєСЂСѓРі РєР°РјРЅРµР№, РјР°РІР·РѕР»РµР№ РёР»Рё С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРґРѕР±РЅРѕРµ.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_11"); //РќРѕ Рє С‡РµРјСѓ СЌС‚Р° Р±РѕР»С‚РѕРІРЅСЏ? РўС‹ СЃР°Рј РІСЃРµ СѓРІРёРґРёС€СЊ. РЈРґР°С‡Рё!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -218,7 +218,7 @@ instance DIA_Addon_Nefarius_WhyPortalClosed		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_WhyPortalClosed_Condition;
 	information	 = 	DIA_Addon_Nefarius_WhyPortalClosed_Info;
 
-	description	 = 	"Для чего орнамент был разбит?";
+	description	 = 	"Р”Р»СЏ С‡РµРіРѕ РѕСЂРЅР°РјРµРЅС‚ Р±С‹Р» СЂР°Р·Р±РёС‚?";
 };
 
 func int DIA_Addon_Nefarius_WhyPortalClosed_Condition ()
@@ -231,11 +231,11 @@ func int DIA_Addon_Nefarius_WhyPortalClosed_Condition ()
 
 func void DIA_Addon_Nefarius_WhyPortalClosed_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_WhyPortalClosed_15_00"); //Для чего орнамент был разбит?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_01"); //Тот, кто сделал это, не хотел, чтобы портал открыли снова.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_02"); //Чем больше я изучаю эти надписи, тем больше убеждаюсь, что жрецы этой цивилизации не были дураками.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_03"); //У них были веские причины закрыть доступ в свою долину.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_04"); //Мы не знаем, что нас там ждет, но ничем хорошим это точно не окажется...
+	AI_Output	(other, self, "DIA_Addon_Nefarius_WhyPortalClosed_15_00"); //Р”Р»СЏ С‡РµРіРѕ РѕСЂРЅР°РјРµРЅС‚ Р±С‹Р» СЂР°Р·Р±РёС‚?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_01"); //РўРѕС‚, РєС‚Рѕ СЃРґРµР»Р°Р» СЌС‚Рѕ, РЅРµ С…РѕС‚РµР», С‡С‚РѕР±С‹ РїРѕСЂС‚Р°Р» РѕС‚РєСЂС‹Р»Рё СЃРЅРѕРІР°.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_02"); //Р§РµРј Р±РѕР»СЊС€Рµ СЏ РёР·СѓС‡Р°СЋ СЌС‚Рё РЅР°РґРїРёСЃРё, С‚РµРј Р±РѕР»СЊС€Рµ СѓР±РµР¶РґР°СЋСЃСЊ, С‡С‚Рѕ Р¶СЂРµС†С‹ СЌС‚РѕР№ С†РёРІРёР»РёР·Р°С†РёРё РЅРµ Р±С‹Р»Рё РґСѓСЂР°РєР°РјРё.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_03"); //РЈ РЅРёС… Р±С‹Р»Рё РІРµСЃРєРёРµ РїСЂРёС‡РёРЅС‹ Р·Р°РєСЂС‹С‚СЊ РґРѕСЃС‚СѓРї РІ СЃРІРѕСЋ РґРѕР»РёРЅСѓ.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_04"); //РњС‹ РЅРµ Р·РЅР°РµРј, С‡С‚Рѕ РЅР°СЃ С‚Р°Рј Р¶РґРµС‚, РЅРѕ РЅРёС‡РµРј С…РѕСЂРѕС€РёРј СЌС‚Рѕ С‚РѕС‡РЅРѕ РЅРµ РѕРєР°Р¶РµС‚СЃСЏ...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -249,7 +249,7 @@ instance DIA_Addon_Nefarius_MissingOrnaments		(C_INFO)
 	information	 = 	DIA_Addon_Nefarius_MissingOrnaments_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Насчет пропавших фрагментов...";
+	description	 = 	"РќР°СЃС‡РµС‚ РїСЂРѕРїР°РІС€РёС… С„СЂР°РіРјРµРЅС‚РѕРІ...";
 };
 
 func int DIA_Addon_Nefarius_MissingOrnaments_Condition ()
@@ -261,12 +261,12 @@ func int DIA_Addon_Nefarius_MissingOrnaments_Condition ()
 };
 
 var int MissingOrnamentsCounter;
-const int Addon_NefariussMissingOrnamentsOffer = 100; //Joly:Kohle fьr ein Ornament
+const int Addon_NefariussMissingOrnamentsOffer = 100; //Joly:Kohle fСЊr ein Ornament
 
 func void DIA_Addon_Nefarius_MissingOrnaments_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_00"); //Насчет пропавших фрагментов...
-	AI_Output	(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_01"); //Да?
+	AI_Output	(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_00"); //РќР°СЃС‡РµС‚ РїСЂРѕРїР°РІС€РёС… С„СЂР°РіРјРµРЅС‚РѕРІ...
+	AI_Output	(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_01"); //Р”Р°?
 
 	if (Npc_HasItems (other,ItMi_Ornament_Addon) >= 1)
 	{
@@ -280,7 +280,7 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info ()
 		
 			if (MissingOrnamentsCount == 1)
 				{
-					AI_Output		(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_02"); //Я нашел еще один.
+					AI_Output		(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_02"); //РЇ РЅР°С€РµР» РµС‰Рµ РѕРґРёРЅ.
 					B_GivePlayerXP (XP_Addon_BringMissingOrnament);
 					Npc_RemoveInvItems	(other,	ItMi_Ornament_Addon,	1);
 					AI_PrintScreen (PRINT_ItemGegeben, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);	// "1 Gegenstand gegeben"	
@@ -288,10 +288,10 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info ()
 				}
 				else
 				{
-					AI_Output		(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_03"); //Я нашел их.
+					AI_Output		(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_03"); //РЇ РЅР°С€РµР» РёС….
 		
 					Npc_RemoveInvItems	(other,	ItMi_Ornament_Addon,	MissingOrnamentsCount);
-					concatText = ConcatStrings(IntToString(MissingOrnamentsCount), PRINT_ItemsGegeben);		// "x Gegenstдnde gegeben"
+					concatText = ConcatStrings(IntToString(MissingOrnamentsCount), PRINT_ItemsGegeben);		// "x GegenstРґnde gegeben"
 					AI_PrintScreen (concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 		
 					XP_Addon_BringMissingOrnaments = (MissingOrnamentsCount * XP_Addon_BringMissingOrnament);
@@ -300,25 +300,25 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info ()
 					B_GivePlayerXP (XP_Addon_BringMissingOrnaments);
 				};
 		
-			AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_04"); //Отлично!
+			AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_04"); //РћС‚Р»РёС‡РЅРѕ!
 		
 			if (MissingOrnamentsCounter == 1)
 			{
-				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_05"); //Осталось найти еще два. Думаю, ты справишься.
+				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_05"); //РћСЃС‚Р°Р»РѕСЃСЊ РЅР°Р№С‚Рё РµС‰Рµ РґРІР°. Р”СѓРјР°СЋ, С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ.
 			}
 			else if	(MissingOrnamentsCounter == 2)
 			{
-				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_06"); //Найди еще один, и они будут у нас все.
+				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_06"); //РќР°Р№РґРё РµС‰Рµ РѕРґРёРЅ, Рё РѕРЅРё Р±СѓРґСѓС‚ Сѓ РЅР°СЃ РІСЃРµ.
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_07"); //Теперь у нас есть все части. Осталось их собрать.
-				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_08"); //Мы используем наши объединенные силы, чтобы сделать из фрагментов кольцо.
+				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_07"); //РўРµРїРµСЂСЊ Сѓ РЅР°СЃ РµСЃС‚СЊ РІСЃРµ С‡Р°СЃС‚Рё. РћСЃС‚Р°Р»РѕСЃСЊ РёС… СЃРѕР±СЂР°С‚СЊ.
+				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_08"); //РњС‹ РёСЃРїРѕР»СЊР·СѓРµРј РЅР°С€Рё РѕР±СЉРµРґРёРЅРµРЅРЅС‹Рµ СЃРёР»С‹, С‡С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ РёР· С„СЂР°РіРјРµРЅС‚РѕРІ РєРѕР»СЊС†Рѕ.
 		
 				MIS_Addon_Nefarius_BringMissingOrnaments = LOG_SUCCESS;
 			};
 		
-			AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_09"); //Вот, возьми в награду это золото.
+			AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_09"); //Р’РѕС‚, РІРѕР·СЊРјРё РІ РЅР°РіСЂР°РґСѓ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ.
 		
 			MissingOrnamentsGeld	= (MissingOrnamentsCount * Addon_NefariussMissingOrnamentsOffer);
 		
@@ -327,7 +327,7 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info ()
 		
 			if (MIS_Addon_Nefarius_BringMissingOrnaments == LOG_SUCCESS)
 			{
-				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_10"); //Следуй за мной!
+				AI_Output			(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_10"); //РЎР»РµРґСѓР№ Р·Р° РјРЅРѕР№!
 				AI_StopProcessInfos (self);
 				Npc_ExchangeRoutine	(self,"PreRingritual");
 				B_StartotherRoutine	(KDW_1400_Addon_Saturas_NW,"PreRingritual");
@@ -339,9 +339,9 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info ()
 	}
 	else
 	{
-			AI_Output (other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_11"); //Напомни, сколько всего фрагментов?
-			AI_Output (self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_12"); //Четыре...
-			AI_Output (self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_13"); //Ты найдешь оставшиеся фрагменты в местах, которые я отметил на карте.
+			AI_Output (other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_11"); //РќР°РїРѕРјРЅРё, СЃРєРѕР»СЊРєРѕ РІСЃРµРіРѕ С„СЂР°РіРјРµРЅС‚РѕРІ?
+			AI_Output (self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_12"); //Р§РµС‚С‹СЂРµ...
+			AI_Output (self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_13"); //РўС‹ РЅР°Р№РґРµС€СЊ РѕСЃС‚Р°РІС€РёРµСЃСЏ С„СЂР°РіРјРµРЅС‚С‹ РІ РјРµСЃС‚Р°С…, РєРѕС‚РѕСЂС‹Рµ СЏ РѕС‚РјРµС‚РёР» РЅР° РєР°СЂС‚Рµ.
 	};
 };
 
@@ -369,10 +369,10 @@ func int DIA_Addon_Nefarius_Ringritual_Condition ()
 
 func void DIA_Addon_Nefarius_Ringritual_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Ringritual_05_00"); //А теперь отойди назад.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Ringritual_05_00"); //Рђ С‚РµРїРµСЂСЊ РѕС‚РѕР№РґРё РЅР°Р·Р°Рґ.
 	Npc_SetRefuseTalk (self,60); 
 	RitualRingRuns = LOG_RUNNING;
-	B_LogEntry (TOPIC_Addon_Ornament,"Я принес все части кольца Нефариусу. Теперь маги воды смогут собрать кольцо."); 
+	B_LogEntry (TOPIC_Addon_Ornament,"РЇ РїСЂРёРЅРµСЃ РІСЃРµ С‡Р°СЃС‚Рё РєРѕР»СЊС†Р° РќРµС„Р°СЂРёСѓСЃСѓ. РўРµРїРµСЂСЊ РјР°РіРё РІРѕРґС‹ СЃРјРѕРіСѓС‚ СЃРѕР±СЂР°С‚СЊ РєРѕР»СЊС†Рѕ."); 
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Ringritual");
@@ -406,10 +406,10 @@ func int DIA_Addon_Nefarius_RingRitualEnds_Condition ()
 
 func void DIA_Addon_Nefarius_RingRitualEnds_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_00"); //Орнамент снова собран.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_01"); //Ты принес нам недостающие фрагменты, поэтому мы удостаиваем тебя чести вставить ключ в портал.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_02"); //Иди к Сатурасу и забери у него кольцо.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_03"); //Надеюсь, портал откроется.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_00"); //РћСЂРЅР°РјРµРЅС‚ СЃРЅРѕРІР° СЃРѕР±СЂР°РЅ.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_01"); //РўС‹ РїСЂРёРЅРµСЃ РЅР°Рј РЅРµРґРѕСЃС‚Р°СЋС‰РёРµ С„СЂР°РіРјРµРЅС‚С‹, РїРѕСЌС‚РѕРјСѓ РјС‹ СѓРґРѕСЃС‚Р°РёРІР°РµРј С‚РµР±СЏ С‡РµСЃС‚Рё РІСЃС‚Р°РІРёС‚СЊ РєР»СЋС‡ РІ РїРѕСЂС‚Р°Р».
+	AI_Output	(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_02"); //РРґРё Рє РЎР°С‚СѓСЂР°СЃСѓ Рё Р·Р°Р±РµСЂРё Сѓ РЅРµРіРѕ РєРѕР»СЊС†Рѕ.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_03"); //РќР°РґРµСЋСЃСЊ, РїРѕСЂС‚Р°Р» РѕС‚РєСЂРѕРµС‚СЃСЏ.
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -419,7 +419,7 @@ func void DIA_Addon_Nefarius_RingRitualEnds_Info ()
 	B_StartotherRoutine	(KDW_1404_Addon_Riordian_NW,"Start");
 	B_StartotherRoutine	(KDW_1405_Addon_Merdarion_NW,"Start");
 	RitualRingRuns = LOG_SUCCESS;
-	B_LogEntry (TOPIC_Addon_Ornament,"Украшенное кольцо восстановлено. Я должен забрать его у Сатураса."); 
+	B_LogEntry (TOPIC_Addon_Ornament,"РЈРєСЂР°С€РµРЅРЅРѕРµ РєРѕР»СЊС†Рѕ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРѕ. РЇ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ РµРіРѕ Сѓ РЎР°С‚СѓСЂР°СЃР°."); 
 
 };
 
@@ -433,7 +433,7 @@ instance DIA_Addon_Nefarius_OpenedPortal		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_OpenedPortal_Condition;
 	information	 = 	DIA_Addon_Nefarius_OpenedPortal_Info;
 
-	description	 = 	"И что теперь?";
+	description	 = 	"Р С‡С‚Рѕ С‚РµРїРµСЂСЊ?";
 };
 
 func int DIA_Addon_Nefarius_OpenedPortal_Condition ()
@@ -446,7 +446,7 @@ func int DIA_Addon_Nefarius_OpenedPortal_Condition ()
 
 func void DIA_Addon_Nefarius_OpenedPortal_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_OpenedPortal_15_00"); //Что теперь?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_OpenedPortal_05_01"); //Чего ты ждешь? Отойди с дороги.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_OpenedPortal_15_00"); //Р§С‚Рѕ С‚РµРїРµСЂСЊ?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_OpenedPortal_05_01"); //Р§РµРіРѕ С‚С‹ Р¶РґРµС€СЊ? РћС‚РѕР№РґРё СЃ РґРѕСЂРѕРіРё.
 };
 

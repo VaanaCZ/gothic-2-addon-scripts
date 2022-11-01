@@ -1,7 +1,7 @@
 instance VLK_402_Richter (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "ั๓ไüÿ";
+	name 		= "ะกัะดัั";
 	guild 		= GIL_VLK;
 	id 			= 402;
 	voice 		= 10;

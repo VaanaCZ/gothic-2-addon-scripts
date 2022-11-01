@@ -32,7 +32,7 @@ INSTANCE DIA_Lester_DI_Hello (C_INFO)
 	information	= DIA_Lester_DI_Hello_Info;
 	permanent	 = 	TRUE;
 
-	description = "Ты хочешь что-то сказать мне?";
+	description = "РўС‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-С‚Рѕ СЃРєР°Р·Р°С‚СЊ РјРЅРµ?";
 };    
                    
 FUNC INT DIA_Lester_DI_Hello_Condition()
@@ -46,28 +46,28 @@ var int DIA_Lester_DI_SCGotWarning1;
 var int DIA_Lester_DI_SCGotWarning2;
 FUNC VOID DIA_Lester_DI_Hello_Info()
 {	
-	AI_Output	(other ,self,"DIA_Lester_DI_Hello_15_00");	//Ты хочешь что-то сказать мне?
+	AI_Output	(other ,self,"DIA_Lester_DI_Hello_15_00");	//РўС‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-С‚Рѕ СЃРєР°Р·Р°С‚СЊ РјРЅРµ?
 
 	if (Npc_IsDead(Mario_DI) == FALSE)
 	&& (ORkSturmDI  == TRUE)
 	&& (DIA_Lester_DI_SCGotWarning1 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Марио слинял, когда на нас напали орки. Несмотря на весь хаос, что творился на корабле, я смог проследить за ним.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//Он просто пошел через ряды орков, и те его даже пальцем не тронули.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Я с самого начала не доверял этому парню. Он заодно с врагом.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//РњР°СЂРёРѕ СЃР»РёРЅСЏР», РєРѕРіРґР° РЅР° РЅР°СЃ РЅР°РїР°Р»Рё РѕСЂРєРё. РќРµСЃРјРѕС‚СЂСЏ РЅР° РІРµСЃСЊ С…Р°РѕСЃ, С‡С‚Рѕ С‚РІРѕСЂРёР»СЃСЏ РЅР° РєРѕСЂР°Р±Р»Рµ, СЏ СЃРјРѕРі РїСЂРѕСЃР»РµРґРёС‚СЊ Р·Р° РЅРёРј.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//РћРЅ РїСЂРѕСЃС‚Рѕ РїРѕС€РµР» С‡РµСЂРµР· СЂСЏРґС‹ РѕСЂРєРѕРІ, Рё С‚Рµ РµРіРѕ РґР°Р¶Рµ РїР°Р»СЊС†РµРј РЅРµ С‚СЂРѕРЅСѓР»Рё.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//РЇ СЃ СЃР°РјРѕРіРѕ РЅР°С‡Р°Р»Р° РЅРµ РґРѕРІРµСЂСЏР» СЌС‚РѕРјСѓ РїР°СЂРЅСЋ. РћРЅ Р·Р°РѕРґРЅРѕ СЃ РІСЂР°РіРѕРј.
 		B_GivePlayerXP (XP_Ambient);
 		DIA_Lester_DI_SCGotWarning1 = TRUE;
 	}
 	else if (Npc_IsDead(Mario_DI) == FALSE)
 	&& (DIA_Lester_DI_SCGotWarning2 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_04");	//Этот странный парень, который называет себя Марио, мне не нравится. У него тяжелая аура.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_05");	//Будь осторожен, мой друг.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_04");	//Р­С‚РѕС‚ СЃС‚СЂР°РЅРЅС‹Р№ РїР°СЂРµРЅСЊ, РєРѕС‚РѕСЂС‹Р№ РЅР°Р·С‹РІР°РµС‚ СЃРµР±СЏ РњР°СЂРёРѕ, РјРЅРµ РЅРµ РЅСЂР°РІРёС‚СЃСЏ. РЈ РЅРµРіРѕ С‚СЏР¶РµР»Р°СЏ Р°СѓСЂР°.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_05");	//Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, РјРѕР№ РґСЂСѓРі.
 		DIA_Lester_DI_SCGotWarning2 = TRUE;
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//Пока нет. Может быть позже.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//РџРѕРєР° РЅРµС‚. РњРѕР¶РµС‚ Р±С‹С‚СЊ РїРѕР·Р¶Рµ.
 	};
 };
 
@@ -81,7 +81,7 @@ INSTANCE DIA_Lester_DI_MarioArsch (C_INFO)
 	condition	= DIA_Lester_DI_MarioArsch_Condition;
 	information	= DIA_Lester_DI_MarioArsch_Info;
 
-	description = "Ты был прав. Марио предал нас.";
+	description = "РўС‹ Р±С‹Р» РїСЂР°РІ. РњР°СЂРёРѕ РїСЂРµРґР°Р» РЅР°СЃ.";
 };    
                    
 FUNC INT DIA_Lester_DI_MarioArsch_Condition()
@@ -95,9 +95,9 @@ FUNC INT DIA_Lester_DI_MarioArsch_Condition()
 
 FUNC VOID DIA_Lester_DI_MarioArsch_Info()
 {	
-	AI_Output	(other ,self,"DIA_Lester_DI_MarioArsch_15_00");	//Ты был прав. Марио предал нас.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//Да. Возможно я не очень-то проницательный, но в этом случае мне было ясно с самого начала.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//Постарайся тщательнее выбирать себе компаньонов в будущем.
+	AI_Output	(other ,self,"DIA_Lester_DI_MarioArsch_15_00");	//РўС‹ Р±С‹Р» РїСЂР°РІ. РњР°СЂРёРѕ РїСЂРµРґР°Р» РЅР°СЃ.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//Р”Р°. Р’РѕР·РјРѕР¶РЅРѕ СЏ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ РїСЂРѕРЅРёС†Р°С‚РµР»СЊРЅС‹Р№, РЅРѕ РІ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ РјРЅРµ Р±С‹Р»Рѕ СЏСЃРЅРѕ СЃ СЃР°РјРѕРіРѕ РЅР°С‡Р°Р»Р°.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//РџРѕСЃС‚Р°СЂР°Р№СЃСЏ С‚С‰Р°С‚РµР»СЊРЅРµРµ РІС‹Р±РёСЂР°С‚СЊ СЃРµР±Рµ РєРѕРјРїР°РЅСЊРѕРЅРѕРІ РІ Р±СѓРґСѓС‰РµРј.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -113,7 +113,7 @@ INSTANCE DIA_PC_Lester_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_PC_Lester_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description = "Мы здесь долго не задержимся.";
+	description = "РњС‹ Р·РґРµСЃСЊ РґРѕР»РіРѕ РЅРµ Р·Р°РґРµСЂР¶РёРјСЃСЏ.";
 };                       
 FUNC INT DIA_PC_Lester_DI_UndeadDragonDead_Condition()
 {
@@ -126,28 +126,28 @@ FUNC INT DIA_PC_Lester_DI_UndeadDragonDead_Condition()
 var int DIA_PC_Lester_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_PC_Lester_DI_UndeadDragonDead_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_00"); //Мы здесь долго не задержимся.
+	AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_00"); //РњС‹ Р·РґРµСЃСЊ РґРѕР»РіРѕ РЅРµ Р·Р°РґРµСЂР¶РёРјСЃСЏ.
 
 	if (DIA_PC_Lester_DI_UndeadDragonDead_OneTime == FALSE )
 	{
 		if ((Npc_GetDistToWP(self,"DI_DRACONIANAREA_19")<4000) )
 			{
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //Похоже, мои головные боли ушли.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_02"); //Как тебе удалось это?
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_03"); //Я уничтожил врага.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //Он, должно быть, был очень силен. Так кто это был, все-таки?
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_05"); //Дракон-нежить.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //РџРѕС…РѕР¶Рµ, РјРѕРё РіРѕР»РѕРІРЅС‹Рµ Р±РѕР»Рё СѓС€Р»Рё.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_02"); //РљР°Рє С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ СЌС‚Рѕ?
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_03"); //РЇ СѓРЅРёС‡С‚РѕР¶РёР» РІСЂР°РіР°.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //РћРЅ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, Р±С‹Р» РѕС‡РµРЅСЊ СЃРёР»РµРЅ. РўР°Рє РєС‚Рѕ СЌС‚Рѕ Р±С‹Р», РІСЃРµ-С‚Р°РєРё?
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_05"); //Р”СЂР°РєРѕРЅ-РЅРµР¶РёС‚СЊ.
 			};
 	
 		if (SC_KnowsMadPsi == TRUE)
 			{
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_06"); //Твой бывший друг из Болотного Лагеря доставил мне немало хлопот.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_07"); //Да. Вера способна двигать горы. Так было всегда. К сожалению, они служили не тому богу.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_08"); //Мне понадобится некоторое время, чтобы осознать все это.
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_06"); //РўРІРѕР№ Р±С‹РІС€РёР№ РґСЂСѓРі РёР· Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ РґРѕСЃС‚Р°РІРёР» РјРЅРµ РЅРµРјР°Р»Рѕ С…Р»РѕРїРѕС‚.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_07"); //Р”Р°. Р’РµСЂР° СЃРїРѕСЃРѕР±РЅР° РґРІРёРіР°С‚СЊ РіРѕСЂС‹. РўР°Рє Р±С‹Р»Рѕ РІСЃРµРіРґР°. Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РѕРЅРё СЃР»СѓР¶РёР»Рё РЅРµ С‚РѕРјСѓ Р±РѕРіСѓ.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_08"); //РњРЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ, С‡С‚РѕР±С‹ РѕСЃРѕР·РЅР°С‚СЊ РІСЃРµ СЌС‚Рѕ.
 			};
 		DIA_PC_Lester_DI_UndeadDragonDead_OneTime = TRUE;
 	};
-	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //По счастью, больше ничего такого не повторится. Во всем мире нет столько болотной травы, сколько я готов сейчас выкурить.
+	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //РџРѕ СЃС‡Р°СЃС‚СЊСЋ, Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ С‚Р°РєРѕРіРѕ РЅРµ РїРѕРІС‚РѕСЂРёС‚СЃСЏ. Р’Рѕ РІСЃРµРј РјРёСЂРµ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹, СЃРєРѕР»СЊРєРѕ СЏ РіРѕС‚РѕРІ СЃРµР№С‡Р°СЃ РІС‹РєСѓСЂРёС‚СЊ.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");		
 };

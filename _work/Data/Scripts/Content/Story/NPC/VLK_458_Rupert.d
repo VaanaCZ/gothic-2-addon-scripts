@@ -2,7 +2,7 @@
 instance VLK_458_Rupert (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Руперт"; 
+	name 		= "Р СѓРїРµСЂС‚"; 
 	guild 		= GIL_VLK;
 	id 			= 458;
 	voice 		= 3;

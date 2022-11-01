@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Swamp_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Сила Глаза иссякла. Твоя жизнь закончится здесь, человек.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //РЎРёР»Р° Р“Р»Р°Р·Р° РёСЃСЃСЏРєР»Р°. РўРІРѕСЏ Р¶РёР·РЅСЊ Р·Р°РєРѕРЅС‡РёС‚СЃСЏ Р·РґРµСЃСЊ, С‡РµР»РѕРІРµРє.
 
 	Swampdragon = Hlp_GetNpc (dragon_swamp);
 
@@ -72,18 +72,18 @@ FUNC INT DIA_Dragon_Swamp_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Swamp_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Горе тебе, если ты сделаешь еще один шаг вперед!
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Р“РѕСЂРµ С‚РµР±Рµ, РµСЃР»Рё С‚С‹ СЃРґРµР»Р°РµС€СЊ РµС‰Рµ РѕРґРёРЅ С€Р°Рі РІРїРµСЂРµРґ!
 
 	if (Mis_KilledDragons == 0)
 		{
-			AI_Output	(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ах. Глаз Инноса, похоже, работает.
+			AI_Output	(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //РђС…. Р“Р»Р°Р· РРЅРЅРѕСЃР°, РїРѕС…РѕР¶Рµ, СЂР°Р±РѕС‚Р°РµС‚.
 		};
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //Многие из вас приходили сюда. Я смел их всех.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Хватит болтать. Твои громкие слова не пугают меня, вонючее порождение болота.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Скажи мне то, что я хочу знать, или я утоплю тебя в твоей же крови.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ха-ха-ха. Ты смеешь угрожать мне, жалкий червь? Назови хотя бы одну причину, почему мне не разорвать тебя на мелкие клочки прямо сейчас.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Я посланник Инноса, и со мной его Глаз. У тебя нет выбора. Ты должен подчиниться моей воле, или ты будешь уничтожен.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //(ревет) Ах-х. Говори, что тебе нужно от меня.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //РњРЅРѕРіРёРµ РёР· РІР°СЃ РїСЂРёС…РѕРґРёР»Рё СЃСЋРґР°. РЇ СЃРјРµР» РёС… РІСЃРµС….
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //РҐРІР°С‚РёС‚ Р±РѕР»С‚Р°С‚СЊ. РўРІРѕРё РіСЂРѕРјРєРёРµ СЃР»РѕРІР° РЅРµ РїСѓРіР°СЋС‚ РјРµРЅСЏ, РІРѕРЅСЋС‡РµРµ РїРѕСЂРѕР¶РґРµРЅРёРµ Р±РѕР»РѕС‚Р°.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //РЎРєР°Р¶Рё РјРЅРµ С‚Рѕ, С‡С‚Рѕ СЏ С…РѕС‡Сѓ Р·РЅР°С‚СЊ, РёР»Рё СЏ СѓС‚РѕРїР»СЋ С‚РµР±СЏ РІ С‚РІРѕРµР№ Р¶Рµ РєСЂРѕРІРё.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //РҐР°-С…Р°-С…Р°. РўС‹ СЃРјРµРµС€СЊ СѓРіСЂРѕР¶Р°С‚СЊ РјРЅРµ, Р¶Р°Р»РєРёР№ С‡РµСЂРІСЊ? РќР°Р·РѕРІРё С…РѕС‚СЏ Р±С‹ РѕРґРЅСѓ РїСЂРёС‡РёРЅСѓ, РїРѕС‡РµРјСѓ РјРЅРµ РЅРµ СЂР°Р·РѕСЂРІР°С‚СЊ С‚РµР±СЏ РЅР° РјРµР»РєРёРµ РєР»РѕС‡РєРё РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //РЇ РїРѕСЃР»Р°РЅРЅРёРє РРЅРЅРѕСЃР°, Рё СЃРѕ РјРЅРѕР№ РµРіРѕ Р“Р»Р°Р·. РЈ С‚РµР±СЏ РЅРµС‚ РІС‹Р±РѕСЂР°. РўС‹ РґРѕР»Р¶РµРЅ РїРѕРґС‡РёРЅРёС‚СЊСЃСЏ РјРѕРµР№ РІРѕР»Рµ, РёР»Рё С‚С‹ Р±СѓРґРµС€СЊ СѓРЅРёС‡С‚РѕР¶РµРЅ.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //(СЂРµРІРµС‚) РђС…-С…. Р“РѕРІРѕСЂРё, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ.
 };
 
 
@@ -96,7 +96,7 @@ instance DIA_Dragon_Swamp_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Swamp_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Swamp_WERBISTDU_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Dragon_Swamp_WERBISTDU_Condition ()
@@ -109,8 +109,8 @@ func int DIA_Dragon_Swamp_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Swamp_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //Кто ты?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //Меня зовут Пандродор. И лучше всего тебе побыстрее уползти обратно под камень, из которого ты выполз.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РџР°РЅРґСЂРѕРґРѕСЂ. Р Р»СѓС‡С€Рµ РІСЃРµРіРѕ С‚РµР±Рµ РїРѕР±С‹СЃС‚СЂРµРµ СѓРїРѕР»Р·С‚Рё РѕР±СЂР°С‚РЅРѕ РїРѕРґ РєР°РјРµРЅСЊ, РёР· РєРѕС‚РѕСЂРѕРіРѕ С‚С‹ РІС‹РїРѕР»Р·.
 	
 };
 
@@ -124,7 +124,7 @@ instance DIA_Dragon_Swamp_WOSINDDIEANDEREN		(C_INFO)
 	condition	 = 	DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition;
 	information	 = 	DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info;
 
-	description	 = 	"Где мне найти остальных из вас, омерзительных созданий?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РѕСЃС‚Р°Р»СЊРЅС‹С… РёР· РІР°СЃ, РѕРјРµСЂР·РёС‚РµР»СЊРЅС‹С… СЃРѕР·РґР°РЅРёР№?";
 };
 
 func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
@@ -137,10 +137,10 @@ func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
 
 func void DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Где мне найти остальных из вас, омерзительных созданий?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Стихии, из которых состоит все, поддерживают целостность этого мира.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Каждая из них отвечает за свою часть мира.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Ищи стихии и ты найдешь остальных.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РѕСЃС‚Р°Р»СЊРЅС‹С… РёР· РІР°СЃ, РѕРјРµСЂР·РёС‚РµР»СЊРЅС‹С… СЃРѕР·РґР°РЅРёР№?
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //РЎС‚РёС…РёРё, РёР· РєРѕС‚РѕСЂС‹С… СЃРѕСЃС‚РѕРёС‚ РІСЃРµ, РїРѕРґРґРµСЂР¶РёРІР°СЋС‚ С†РµР»РѕСЃС‚РЅРѕСЃС‚СЊ СЌС‚РѕРіРѕ РјРёСЂР°.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //РљР°Р¶РґР°СЏ РёР· РЅРёС… РѕС‚РІРµС‡Р°РµС‚ Р·Р° СЃРІРѕСЋ С‡Р°СЃС‚СЊ РјРёСЂР°.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //РС‰Рё СЃС‚РёС…РёРё Рё С‚С‹ РЅР°Р№РґРµС€СЊ РѕСЃС‚Р°Р»СЊРЅС‹С….
 };
 
 

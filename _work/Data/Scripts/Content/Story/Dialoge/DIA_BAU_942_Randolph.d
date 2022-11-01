@@ -31,7 +31,7 @@ instance DIA_Randolph_SchwereLuft		(C_INFO)
 	condition	 = 	DIA_Randolph_SchwereLuft_Condition;
 	information	 = 	DIA_Randolph_SchwereLuft_Info;
 	permanent  	 =  FALSE;
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 func int DIA_Randolph_SchwereLuft_Condition ()
 {	
@@ -44,14 +44,14 @@ func int DIA_Randolph_SchwereLuft_Condition ()
 };
 func void DIA_Randolph_SchwereLuft_Info ()
 {
-	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_00"); //Все в порядке?
-	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_01"); //Хммм... Как только кто-нибудь здесь скажет неверное слово, начнется танец смерти... так что будь осторожнее - или резни не миновать.
-	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_02"); //Ты будешь участвовать в схватке?
-	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_03"); //Я не останусь в стороне, когда начнется драка. Но я также не собираюсь провоцировать ее.
+	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_01"); //РҐРјРјРј... РљР°Рє С‚РѕР»СЊРєРѕ РєС‚Рѕ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ СЃРєР°Р¶РµС‚ РЅРµРІРµСЂРЅРѕРµ СЃР»РѕРІРѕ, РЅР°С‡РЅРµС‚СЃСЏ С‚Р°РЅРµС† СЃРјРµСЂС‚Рё... С‚Р°Рє С‡С‚Рѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ - РёР»Рё СЂРµР·РЅРё РЅРµ РјРёРЅРѕРІР°С‚СЊ.
+	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_02"); //РўС‹ Р±СѓРґРµС€СЊ СѓС‡Р°СЃС‚РІРѕРІР°С‚СЊ РІ СЃС…РІР°С‚РєРµ?
+	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_03"); //РЇ РЅРµ РѕСЃС‚Р°РЅСѓСЃСЊ РІ СЃС‚РѕСЂРѕРЅРµ, РєРѕРіРґР° РЅР°С‡РЅРµС‚СЃСЏ РґСЂР°РєР°. РќРѕ СЏ С‚Р°РєР¶Рµ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РїСЂРѕРІРѕС†РёСЂРѕРІР°С‚СЊ РµРµ.
 	Akils_SLDStillthere = TRUE;
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Фермеру Акилу угрожают наемники."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"Р¤РµСЂРјРµСЂСѓ РђРєРёР»Сѓ СѓРіСЂРѕР¶Р°СЋС‚ РЅР°РµРјРЅРёРєРё."); 
 	B_NpcClearObsessionByDMT (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Randolph_HALLO		(C_INFO)
 	condition	 = 	DIA_Randolph_HALLO_Condition;
 	information	 = 	DIA_Randolph_HALLO_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Randolph_HALLO_Condition ()
@@ -78,21 +78,21 @@ func int DIA_Randolph_HALLO_Condition ()
 };
 func void DIA_Randolph_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Randolph_HALLO_15_00"); //Все в порядке?
+	AI_Output (other, self, "DIA_Randolph_HALLO_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if Npc_IsDead (Akil)
 	&& Npc_IsDead (Kati)
 	{
-		AI_Output (self, other, "DIA_Randolph_HALLO_06_01"); //Теперь, когда Кати и Акил отправились в царство Инноса, я буду управлять этой фермой.
+		AI_Output (self, other, "DIA_Randolph_HALLO_06_01"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° РљР°С‚Рё Рё РђРєРёР» РѕС‚РїСЂР°РІРёР»РёСЃСЊ РІ С†Р°СЂСЃС‚РІРѕ РРЅРЅРѕСЃР°, СЏ Р±СѓРґСѓ СѓРїСЂР°РІР»СЏС‚СЊ СЌС‚РѕР№ С„РµСЂРјРѕР№.
 		
 		Npc_ExchangeRoutine (self,"START");
 		AI_ContinueRoutine  (self);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Randolph_HALLO_06_02"); //Да, я в порядке. Этот Альварес становился все наглее и наглее с каждым днем. Хорошо, что все кончилось.
+		AI_Output (self, other, "DIA_Randolph_HALLO_06_02"); //Р”Р°, СЏ РІ РїРѕСЂСЏРґРєРµ. Р­С‚РѕС‚ РђР»СЊРІР°СЂРµСЃ СЃС‚Р°РЅРѕРІРёР»СЃСЏ РІСЃРµ РЅР°РіР»РµРµ Рё РЅР°РіР»РµРµ СЃ РєР°Р¶РґС‹Рј РґРЅРµРј. РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ РІСЃРµ РєРѕРЅС‡РёР»РѕСЃСЊ.
 	};
-	AI_Output (self, other, "DIA_Randolph_HALLO_06_03"); //От чего я не отказался бы сейчас - так это от стаканчика хорошего вина в таверне.
+	AI_Output (self, other, "DIA_Randolph_HALLO_06_03"); //РћС‚ С‡РµРіРѕ СЏ РЅРµ РѕС‚РєР°Р·Р°Р»СЃСЏ Р±С‹ СЃРµР№С‡Р°СЃ - С‚Р°Рє СЌС‚Рѕ РѕС‚ СЃС‚Р°РєР°РЅС‡РёРєР° С…РѕСЂРѕС€РµРіРѕ РІРёРЅР° РІ С‚Р°РІРµСЂРЅРµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -105,7 +105,7 @@ instance DIA_Randolph_Baltram		(C_INFO)
 	condition	 = 	DIA_Randolph_Baltram_Condition;
 	information	 = 	DIA_Randolph_Baltram_Info;
 	permanent  	 =  FALSE;
-	description	 = 	"Меня прислал Бальтрам ...";
+	description	 = 	"РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р‘Р°Р»СЊС‚СЂР°Рј ...";
 };
 
 func int DIA_Randolph_Baltram_Condition ()
@@ -123,8 +123,8 @@ func int DIA_Randolph_Baltram_Condition ()
 
 func void DIA_Randolph_Baltram_Info ()
 {
-	AI_Output (other, self, "DIA_Randolph_Baltram_15_00"); //Меня прислал Бальтрам. Я должен забрать пакет для него.
-	AI_Output (self, other, "DIA_Randolph_Baltram_06_01"); //Хорошо. Я уже все приготовил. Вот твой пакет.
+	AI_Output (other, self, "DIA_Randolph_Baltram_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р‘Р°Р»СЊС‚СЂР°Рј. РЇ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ РїР°РєРµС‚ РґР»СЏ РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Randolph_Baltram_06_01"); //РҐРѕСЂРѕС€Рѕ. РЇ СѓР¶Рµ РІСЃРµ РїСЂРёРіРѕС‚РѕРІРёР». Р’РѕС‚ С‚РІРѕР№ РїР°РєРµС‚.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
@@ -140,7 +140,7 @@ instance DIA_Randolph_Geschichte		(C_INFO)
 	condition	 = 	DIA_Randolph_Geschichte_Condition;
 	information	 = 	DIA_Randolph_Geschichte_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Ты ведь нездешний, да?";
+	description	 = 	"РўС‹ РІРµРґСЊ РЅРµР·РґРµС€РЅРёР№, РґР°?";
 };
 
 func int DIA_Randolph_Geschichte_Condition ()
@@ -154,24 +154,24 @@ func int DIA_Randolph_Geschichte_Condition ()
 
 func void DIA_Randolph_Geschichte_Info ()
 {
-	AI_Output (other, self, "DIA_Randolph_Geschichte_15_00"); //Ты ведь нездешний, да?
-	AI_Output (self, other, "DIA_Randolph_Geschichte_06_01"); //Я пришел с южных островов. Когда-то ходили глашатаи и объявляли, что на Хоринисе нужны люди, чтобы добывать магическую руду.
-	AI_Output (self, other, "DIA_Randolph_Geschichte_06_02"); //Но когда я приехал сюда, они возвели этот огромный барьер. И мне расхотелось идти туда. Поэтому я начал работать в порту.
-	AI_Output (self, other, "DIA_Randolph_Geschichte_06_03"); //Затем сюда перестали заплывать корабли, и я пошел работать на Акила. У меня была работа и похуже, сейчас еще ничего.
+	AI_Output (other, self, "DIA_Randolph_Geschichte_15_00"); //РўС‹ РІРµРґСЊ РЅРµР·РґРµС€РЅРёР№, РґР°?
+	AI_Output (self, other, "DIA_Randolph_Geschichte_06_01"); //РЇ РїСЂРёС€РµР» СЃ СЋР¶РЅС‹С… РѕСЃС‚СЂРѕРІРѕРІ. РљРѕРіРґР°-С‚Рѕ С…РѕРґРёР»Рё РіР»Р°С€Р°С‚Р°Рё Рё РѕР±СЉСЏРІР»СЏР»Рё, С‡С‚Рѕ РЅР° РҐРѕСЂРёРЅРёСЃРµ РЅСѓР¶РЅС‹ Р»СЋРґРё, С‡С‚РѕР±С‹ РґРѕР±С‹РІР°С‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЂСѓРґСѓ.
+	AI_Output (self, other, "DIA_Randolph_Geschichte_06_02"); //РќРѕ РєРѕРіРґР° СЏ РїСЂРёРµС…Р°Р» СЃСЋРґР°, РѕРЅРё РІРѕР·РІРµР»Рё СЌС‚РѕС‚ РѕРіСЂРѕРјРЅС‹Р№ Р±Р°СЂСЊРµСЂ. Р РјРЅРµ СЂР°СЃС…РѕС‚РµР»РѕСЃСЊ РёРґС‚Рё С‚СѓРґР°. РџРѕСЌС‚РѕРјСѓ СЏ РЅР°С‡Р°Р» СЂР°Р±РѕС‚Р°С‚СЊ РІ РїРѕСЂС‚Сѓ.
+	AI_Output (self, other, "DIA_Randolph_Geschichte_06_03"); //Р—Р°С‚РµРј СЃСЋРґР° РїРµСЂРµСЃС‚Р°Р»Рё Р·Р°РїР»С‹РІР°С‚СЊ РєРѕСЂР°Р±Р»Рё, Рё СЏ РїРѕС€РµР» СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РђРєРёР»Р°. РЈ РјРµРЅСЏ Р±С‹Р»Р° СЂР°Р±РѕС‚Р° Рё РїРѕС…СѓР¶Рµ, СЃРµР№С‡Р°СЃ РµС‰Рµ РЅРёС‡РµРіРѕ.
 };
 /*
 	Du kommst nicht aus der Gegend, richtig? 
-	Ich komme von den sьdlichen Inseln. Irgendwann hieЯ es, sie brдuchten Leute in Khorinis, wegen dem magischen Erz. 
+	Ich komme von den sСЊdlichen Inseln. Irgendwann hieРЇ es, sie brРґuchten Leute in Khorinis, wegen dem magischen Erz. 
 	Aber als ich ankam war da diese riesige Barriere. Und da wollte ich nicht rein. Ich hab dann angefangen im Hafen zu arbeiten. 
 	Und seitdem keine Schiffe mehr kommen, bin ich halt zu Akil gegangen. Naja, ich hab schon schlechtere Jobs gemacht.  
 	
 	
 	Hey, ich kenne da noch jemanden, der dir ein paar Sachen besorgen kann. 
-	Ein Freund, der mit mir zusammen aus dem Sьden gekommen ist. 
-	Aber ich brauche 10 Goldmьnzen, um beim Wett - Trinken in der Taverne mitzumachen.  
+	Ein Freund, der mit mir zusammen aus dem SСЊden gekommen ist. 
+	Aber ich brauche 10 GoldmСЊnzen, um beim Wett - Trinken in der Taverne mitzumachen.  
 	Also wenn du die Info willst, dann gib mir das Gold. 
 	
-//Wenn du die Taverne suchst dann geh einfach ьber die Brьcke und folge dem Weg, dann kommst direkt daran vorbei.
+//Wenn du die Taverne suchst dann geh einfach СЊber die BrСЊcke und folge dem Weg, dann kommst direkt daran vorbei.
 */
 ///////////////////////////////////////////////////////////////////////
 //	Info Taverne
@@ -183,7 +183,7 @@ instance DIA_Randolph_TAVERNE		(C_INFO)
 	condition	 = 	DIA_Randolph_TAVERNE_Condition;
 	information	 = 	DIA_Randolph_TAVERNE_Info;
 
-	description	 = 	"Ты бываешь в таверне?";
+	description	 = 	"РўС‹ Р±С‹РІР°РµС€СЊ РІ С‚Р°РІРµСЂРЅРµ?";
 };
 
 func int DIA_Randolph_TAVERNE_Condition ()
@@ -197,9 +197,9 @@ func int DIA_Randolph_TAVERNE_Condition ()
 
 func void DIA_Randolph_TAVERNE_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_TAVERNE_15_00"); //Ты бываешь в таверне?
-	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_01"); //Бывал.
-	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_02"); //Но больше я не могу позволить себе ходить туда.
+	AI_Output			(other, self, "DIA_Randolph_TAVERNE_15_00"); //РўС‹ Р±С‹РІР°РµС€СЊ РІ С‚Р°РІРµСЂРЅРµ?
+	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_01"); //Р‘С‹РІР°Р».
+	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_02"); //РќРѕ Р±РѕР»СЊС€Рµ СЏ РЅРµ РјРѕРіСѓ РїРѕР·РІРѕР»РёС‚СЊ СЃРµР±Рµ С…РѕРґРёС‚СЊ С‚СѓРґР°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ instance DIA_Randolph_WASISTINTAVERNE		(C_INFO)
 	condition	 = 	DIA_Randolph_WASISTINTAVERNE_Condition;
 	information	 = 	DIA_Randolph_WASISTINTAVERNE_Info;
 
-	description	 = 	"А что там происходит, в таверне?";
+	description	 = 	"Рђ С‡С‚Рѕ С‚Р°Рј РїСЂРѕРёСЃС…РѕРґРёС‚, РІ С‚Р°РІРµСЂРЅРµ?";
 };
 
 func int DIA_Randolph_WASISTINTAVERNE_Condition ()
@@ -226,13 +226,13 @@ func int DIA_Randolph_WASISTINTAVERNE_Condition ()
 
 func void DIA_Randolph_WASISTINTAVERNE_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_WASISTINTAVERNE_15_00"); //А что там происходит, в таверне?
-	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_01"); //Там проводят азартные игры.
-	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_02"); //Двое состязаются друг с другом. Тот, кто может выпить больше пива - побеждает.
-	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_03"); //В последнее время я только проигрывал, и теперь у меня совсем не осталось денег.
+	AI_Output			(other, self, "DIA_Randolph_WASISTINTAVERNE_15_00"); //Рђ С‡С‚Рѕ С‚Р°Рј РїСЂРѕРёСЃС…РѕРґРёС‚, РІ С‚Р°РІРµСЂРЅРµ?
+	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_01"); //РўР°Рј РїСЂРѕРІРѕРґСЏС‚ Р°Р·Р°СЂС‚РЅС‹Рµ РёРіСЂС‹.
+	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_02"); //Р”РІРѕРµ СЃРѕСЃС‚СЏР·Р°СЋС‚СЃСЏ РґСЂСѓРі СЃ РґСЂСѓРіРѕРј. РўРѕС‚, РєС‚Рѕ РјРѕР¶РµС‚ РІС‹РїРёС‚СЊ Р±РѕР»СЊС€Рµ РїРёРІР° - РїРѕР±РµР¶РґР°РµС‚.
+	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_03"); //Р’ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ СЏ С‚РѕР»СЊРєРѕ РїСЂРѕРёРіСЂС‹РІР°Р», Рё С‚РµРїРµСЂСЊ Сѓ РјРµРЅСЏ СЃРѕРІСЃРµРј РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ РґРµРЅРµРі.
 	Log_CreateTopic (TOPIC_Wettsaufen, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Wettsaufen, LOG_RUNNING);
-	B_LogEntry (TOPIC_Wettsaufen,"В таверне можно заключить пари."); 
+	B_LogEntry (TOPIC_Wettsaufen,"Р’ С‚Р°РІРµСЂРЅРµ РјРѕР¶РЅРѕ Р·Р°РєР»СЋС‡РёС‚СЊ РїР°СЂРё."); 
 
 };
 
@@ -246,7 +246,7 @@ instance DIA_Randolph_GEGENWEN		(C_INFO)
 	condition	 = 	DIA_Randolph_GEGENWEN_Condition;
 	information	 = 	DIA_Randolph_GEGENWEN_Info;
 
-	description	 = 	"С кем ты соревновался?";
+	description	 = 	"РЎ РєРµРј С‚С‹ СЃРѕСЂРµРІРЅРѕРІР°Р»СЃСЏ?";
 };
 
 func int DIA_Randolph_GEGENWEN_Condition ()
@@ -260,15 +260,15 @@ func int DIA_Randolph_GEGENWEN_Condition ()
 
 func void DIA_Randolph_GEGENWEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_GEGENWEN_15_00"); //С кем ты соревновался?
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_01"); //С Рухаром, этим старым бездельником. Он всегда побеждал меня.
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_02"); //Но у меня есть подозрение, что эта грязная свинья все время подмешивала в мое пиво джин.
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_03"); //Я думаю, он держит джин в своем чертовом сундуке. Вот подлец!
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_04"); //Кто-нибудь должен подменить джин в его сундуке на воду. Тогда он может подливать ее в мое пиво сколько хочет.
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_05"); //Если бы только у меня были деньги, чтобы сразиться с ним еще раз.
+	AI_Output			(other, self, "DIA_Randolph_GEGENWEN_15_00"); //РЎ РєРµРј С‚С‹ СЃРѕСЂРµРІРЅРѕРІР°Р»СЃСЏ?
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_01"); //РЎ Р СѓС…Р°СЂРѕРј, СЌС‚РёРј СЃС‚Р°СЂС‹Рј Р±РµР·РґРµР»СЊРЅРёРєРѕРј. РћРЅ РІСЃРµРіРґР° РїРѕР±РµР¶РґР°Р» РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_02"); //РќРѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїРѕРґРѕР·СЂРµРЅРёРµ, С‡С‚Рѕ СЌС‚Р° РіСЂСЏР·РЅР°СЏ СЃРІРёРЅСЊСЏ РІСЃРµ РІСЂРµРјСЏ РїРѕРґРјРµС€РёРІР°Р»Р° РІ РјРѕРµ РїРёРІРѕ РґР¶РёРЅ.
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_03"); //РЇ РґСѓРјР°СЋ, РѕРЅ РґРµСЂР¶РёС‚ РґР¶РёРЅ РІ СЃРІРѕРµРј С‡РµСЂС‚РѕРІРѕРј СЃСѓРЅРґСѓРєРµ. Р’РѕС‚ РїРѕРґР»РµС†!
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_04"); //РљС‚Рѕ-РЅРёР±СѓРґСЊ РґРѕР»Р¶РµРЅ РїРѕРґРјРµРЅРёС‚СЊ РґР¶РёРЅ РІ РµРіРѕ СЃСѓРЅРґСѓРєРµ РЅР° РІРѕРґСѓ. РўРѕРіРґР° РѕРЅ РјРѕР¶РµС‚ РїРѕРґР»РёРІР°С‚СЊ РµРµ РІ РјРѕРµ РїРёРІРѕ СЃРєРѕР»СЊРєРѕ С…РѕС‡РµС‚.
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_05"); //Р•СЃР»Рё Р±С‹ С‚РѕР»СЊРєРѕ Сѓ РјРµРЅСЏ Р±С‹Р»Рё РґРµРЅСЊРіРё, С‡С‚РѕР±С‹ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃ РЅРёРј РµС‰Рµ СЂР°Р·.
 
-	B_LogEntry (TOPIC_Wettsaufen,"Рендольф рассказал мне о Рухаре и состязании 'кто кого перепьет'. У Рендольфа недостаточно денег, чтобы заключить пари с Рухаром еще раз."); 
-	B_LogEntry (TOPIC_Wettsaufen,"Рендольф подозревает Рухара в жульничестве в состязании 'кто кого перепьет'. Рендольф хотел бы подменить бутылку джина в сундуке Рухара на бутылку с водой."); 
+	B_LogEntry (TOPIC_Wettsaufen,"Р РµРЅРґРѕР»СЊС„ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ Р СѓС…Р°СЂРµ Рё СЃРѕСЃС‚СЏР·Р°РЅРёРё 'РєС‚Рѕ РєРѕРіРѕ РїРµСЂРµРїСЊРµС‚'. РЈ Р РµРЅРґРѕР»СЊС„Р° РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі, С‡С‚РѕР±С‹ Р·Р°РєР»СЋС‡РёС‚СЊ РїР°СЂРё СЃ Р СѓС…Р°СЂРѕРј РµС‰Рµ СЂР°Р·."); 
+	B_LogEntry (TOPIC_Wettsaufen,"Р РµРЅРґРѕР»СЊС„ РїРѕРґРѕР·СЂРµРІР°РµС‚ Р СѓС…Р°СЂР° РІ Р¶СѓР»СЊРЅРёС‡РµСЃС‚РІРµ РІ СЃРѕСЃС‚СЏР·Р°РЅРёРё 'РєС‚Рѕ РєРѕРіРѕ РїРµСЂРµРїСЊРµС‚'. Р РµРЅРґРѕР»СЊС„ С…РѕС‚РµР» Р±С‹ РїРѕРґРјРµРЅРёС‚СЊ Р±СѓС‚С‹Р»РєСѓ РґР¶РёРЅР° РІ СЃСѓРЅРґСѓРєРµ Р СѓС…Р°СЂР° РЅР° Р±СѓС‚С‹Р»РєСѓ СЃ РІРѕРґРѕР№."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -281,7 +281,7 @@ instance DIA_Randolph_WASBRAUCHSTDU		(C_INFO)
 	condition	 = 	DIA_Randolph_WASBRAUCHSTDU_Condition;
 	information	 = 	DIA_Randolph_WASBRAUCHSTDU_Info;
 
-	description	 = 	"Сколько денег тебе нужно для этого состязания?";
+	description	 = 	"РЎРєРѕР»СЊРєРѕ РґРµРЅРµРі С‚РµР±Рµ РЅСѓР¶РЅРѕ РґР»СЏ СЌС‚РѕРіРѕ СЃРѕСЃС‚СЏР·Р°РЅРёСЏ?";
 };
 
 func int DIA_Randolph_WASBRAUCHSTDU_Condition ()
@@ -296,8 +296,8 @@ func int DIA_Randolph_WASBRAUCHSTDU_Condition ()
 
 func void DIA_Randolph_WASBRAUCHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_WASBRAUCHSTDU_15_00"); //Сколько денег тебе нужно для этого состязания?
-	AI_Output			(self, other, "DIA_Randolph_WASBRAUCHSTDU_06_01"); //10 золотых.
+	AI_Output			(other, self, "DIA_Randolph_WASBRAUCHSTDU_15_00"); //РЎРєРѕР»СЊРєРѕ РґРµРЅРµРі С‚РµР±Рµ РЅСѓР¶РЅРѕ РґР»СЏ СЌС‚РѕРіРѕ СЃРѕСЃС‚СЏР·Р°РЅРёСЏ?
+	AI_Output			(self, other, "DIA_Randolph_WASBRAUCHSTDU_06_01"); //10 Р·РѕР»РѕС‚С‹С….
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -311,7 +311,7 @@ instance DIA_Randolph_ICHGEBEDIRGELD		(C_INFO)
 	information	 = 	DIA_Randolph_ICHGEBEDIRGELD_Info;
 	permanent	 =  TRUE;
 
-	description	 = 	"Я дам тебе деньги, чтобы ты сразился с Рухаром.";
+	description	 = 	"РЇ РґР°Рј С‚РµР±Рµ РґРµРЅСЊРіРё, С‡С‚РѕР±С‹ С‚С‹ СЃСЂР°Р·РёР»СЃСЏ СЃ Р СѓС…Р°СЂРѕРј.";
 };
 
 var int DIA_Randolph_ICHGEBEDIRGELD_noPerm;
@@ -328,14 +328,14 @@ func int DIA_Randolph_ICHGEBEDIRGELD_Condition ()
 
 func void DIA_Randolph_ICHGEBEDIRGELD_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_ICHGEBEDIRGELD_15_00"); //Я дам тебе деньги, чтобы ты сразился с Рухаром.
+	AI_Output			(other, self, "DIA_Randolph_ICHGEBEDIRGELD_15_00"); //РЇ РґР°Рј С‚РµР±Рµ РґРµРЅСЊРіРё, С‡С‚РѕР±С‹ С‚С‹ СЃСЂР°Р·РёР»СЃСЏ СЃ Р СѓС…Р°СЂРѕРј.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,10))
 		{
-			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_01"); //(восторженно) Правда? Огромное спасибо. Я скоро верну их тебе.
-			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_02"); //Если я смогу победить, я даже верну тебе их с процентами. Еще увидимся.
+			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_01"); //(РІРѕСЃС‚РѕСЂР¶РµРЅРЅРѕ) РџСЂР°РІРґР°? РћРіСЂРѕРјРЅРѕРµ СЃРїР°СЃРёР±Рѕ. РЇ СЃРєРѕСЂРѕ РІРµСЂРЅСѓ РёС… С‚РµР±Рµ.
+			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_02"); //Р•СЃР»Рё СЏ СЃРјРѕРіСѓ РїРѕР±РµРґРёС‚СЊ, СЏ РґР°Р¶Рµ РІРµСЂРЅСѓ С‚РµР±Рµ РёС… СЃ РїСЂРѕС†РµРЅС‚Р°РјРё. Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.
 		
-			B_LogEntry (TOPIC_Wettsaufen,"Пари заключено. Я должен наблюдать за ним."); 
+			B_LogEntry (TOPIC_Wettsaufen,"РџР°СЂРё Р·Р°РєР»СЋС‡РµРЅРѕ. РЇ РґРѕР»Р¶РµРЅ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° РЅРёРј."); 
 			B_GivePlayerXP (XP_Randolph_WettkampfStart);
 		
 			DIA_Randolph_ICHGEBEDIRGELD_noPerm = TRUE;
@@ -350,7 +350,7 @@ func void DIA_Randolph_ICHGEBEDIRGELD_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_03"); //Да ладно. У тебя даже этого-то нет.
+			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_03"); //Р”Р° Р»Р°РґРЅРѕ. РЈ С‚РµР±СЏ РґР°Р¶Рµ СЌС‚РѕРіРѕ-С‚Рѕ РЅРµС‚.
 		};
 	B_NpcClearObsessionByDMT (self);
 };
@@ -366,7 +366,7 @@ instance DIA_Randolph_WETTKAMPFZUENDE		(C_INFO)
 	information	 = 	DIA_Randolph_WETTKAMPFZUENDE_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Похмелье?";
+	description	 = 	"РџРѕС…РјРµР»СЊРµ?";
 };
 
 func int DIA_Randolph_WETTKAMPFZUENDE_Condition ()
@@ -380,27 +380,27 @@ func int DIA_Randolph_WETTKAMPFZUENDE_Condition ()
 VAR int DIA_Randolph_WETTKAMPFZUENDE_OneTime;
 func void DIA_Randolph_WETTKAMPFZUENDE_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_WETTKAMPFZUENDE_15_00"); //Похмелье?
+	AI_Output			(other, self, "DIA_Randolph_WETTKAMPFZUENDE_15_00"); //РџРѕС…РјРµР»СЊРµ?
 	
 	
 	if (Rukhar_Won_Wettkampf == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_01"); //Да уж, врагу такого не пожелаешь. И я не могу избавиться от него. Я больше капли в рот не возьму, клянусь!
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_02"); //Твои деньги пропали. Извини.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_01"); //Р”Р° СѓР¶, РІСЂР°РіСѓ С‚Р°РєРѕРіРѕ РЅРµ РїРѕР¶РµР»Р°РµС€СЊ. Р СЏ РЅРµ РјРѕРіСѓ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ РЅРµРіРѕ. РЇ Р±РѕР»СЊС€Рµ РєР°РїР»Рё РІ СЂРѕС‚ РЅРµ РІРѕР·СЊРјСѓ, РєР»СЏРЅСѓСЃСЊ!
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_02"); //РўРІРѕРё РґРµРЅСЊРіРё РїСЂРѕРїР°Р»Рё. РР·РІРёРЅРё.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_03"); //Нет. Я чувствую себя отлично, правда.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_03"); //РќРµС‚. РЇ С‡СѓРІСЃС‚РІСѓСЋ СЃРµР±СЏ РѕС‚Р»РёС‡РЅРѕ, РїСЂР°РІРґР°.
 		
 			if (DIA_Randolph_WETTKAMPFZUENDE_OneTime == FALSE)
 			{
-				AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_04"); //Все, наконец, получилось. Спасибо еще раз за деньги. Вот, получи их назад.
+				AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_04"); //Р’СЃРµ, РЅР°РєРѕРЅРµС†, РїРѕР»СѓС‡РёР»РѕСЃСЊ. РЎРїР°СЃРёР±Рѕ РµС‰Рµ СЂР°Р· Р·Р° РґРµРЅСЊРіРё. Р’РѕС‚, РїРѕР»СѓС‡Рё РёС… РЅР°Р·Р°Рґ.
 				CreateInvItems (self, ItMi_Gold, 20);									
 				B_GiveInvItems (self, other, ItMi_Gold, 12);
 				DIA_Randolph_WETTKAMPFZUENDE_OneTime = TRUE;					
 			};
 			
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_05"); //Похоже, Рухар не скоро еще оправится после этого.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_05"); //РџРѕС…РѕР¶Рµ, Р СѓС…Р°СЂ РЅРµ СЃРєРѕСЂРѕ РµС‰Рµ РѕРїСЂР°РІРёС‚СЃСЏ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ.
 		};
 
 	B_NpcClearObsessionByDMT (self);
@@ -417,7 +417,7 @@ instance DIA_Randolph_PERM		(C_INFO)
 	information	 = 	DIA_Randolph_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты из ума выжил?";
+	description	 = 	"РўС‹ РёР· СѓРјР° РІС‹Р¶РёР»?";
 };
 
 func int DIA_Randolph_PERM_Condition ()
@@ -439,7 +439,7 @@ func void DIA_Randolph_PERM_Info ()
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Randolph_PERM_15_00"); //Ты в порядке?
+			AI_Output			(other, self, "DIA_Randolph_PERM_15_00"); //РўС‹ РІ РїРѕСЂСЏРґРєРµ?
 
 			if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 			&& (MIS_HealRandolph != LOG_SUCCESS)
@@ -448,28 +448,28 @@ func void DIA_Randolph_PERM_Info ()
 					&& (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == TRUE)
 					&& (DIA_Randolph_PERM_GotMoney == FALSE)
 					{
-						AI_Output			(other, self, "DIA_Randolph_PERM_15_01"); //Ты послал меня, не дав денег, и не предупредил, что это лекарство такое дорогое?!
-						AI_Output			(other, self, "DIA_Randolph_PERM_15_02"); //Сагитта хочет 300 золотых за него.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_03"); //Я могу дать тебе только 150 золотых. Пожалуйста. Ты должен помочь мне. Пожалуйста.
+						AI_Output			(other, self, "DIA_Randolph_PERM_15_01"); //РўС‹ РїРѕСЃР»Р°Р» РјРµРЅСЏ, РЅРµ РґР°РІ РґРµРЅРµРі, Рё РЅРµ РїСЂРµРґСѓРїСЂРµРґРёР», С‡С‚Рѕ СЌС‚Рѕ Р»РµРєР°СЂСЃС‚РІРѕ С‚Р°РєРѕРµ РґРѕСЂРѕРіРѕРµ?!
+						AI_Output			(other, self, "DIA_Randolph_PERM_15_02"); //РЎР°РіРёС‚С‚Р° С…РѕС‡РµС‚ 300 Р·РѕР»РѕС‚С‹С… Р·Р° РЅРµРіРѕ.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_03"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ С‚РѕР»СЊРєРѕ 150 Р·РѕР»РѕС‚С‹С…. РџРѕР¶Р°Р»СѓР№СЃС‚Р°. РўС‹ РґРѕР»Р¶РµРЅ РїРѕРјРѕС‡СЊ РјРЅРµ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°.
 						CreateInvItems (self, ItMi_Gold, 150);									
 						B_GiveInvItems (self, other, ItMi_Gold, 150);					
 						DIA_Randolph_PERM_GotMoney = TRUE;
 					}
 					else
 					{
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_04"); //Мне плохо. Каждый раз, когда я перестаю пить, это похмелье убивает меня. Мне очень нужна помощь.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_05"); //Но есть лекарство, которое может помочь.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_06"); //Сагитта, ведьма-целительница, уже готовила его для меня. Но я не думаю, что теперь смогу добраться до нее сам. Там повсюду орки.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_04"); //РњРЅРµ РїР»РѕС…Рѕ. РљР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° СЏ РїРµСЂРµСЃС‚Р°СЋ РїРёС‚СЊ, СЌС‚Рѕ РїРѕС…РјРµР»СЊРµ СѓР±РёРІР°РµС‚ РјРµРЅСЏ. РњРЅРµ РѕС‡РµРЅСЊ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_05"); //РќРѕ РµСЃС‚СЊ Р»РµРєР°СЂСЃС‚РІРѕ, РєРѕС‚РѕСЂРѕРµ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_06"); //РЎР°РіРёС‚С‚Р°, РІРµРґСЊРјР°-С†РµР»РёС‚РµР»СЊРЅРёС†Р°, СѓР¶Рµ РіРѕС‚РѕРІРёР»Р° РµРіРѕ РґР»СЏ РјРµРЅСЏ. РќРѕ СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµРїРµСЂСЊ СЃРјРѕРіСѓ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РЅРµРµ СЃР°Рј. РўР°Рј РїРѕРІСЃСЋРґСѓ РѕСЂРєРё.
 					};
 					Log_CreateTopic (TOPIC_HealRandolph, LOG_MISSION);
 					Log_SetTopicStatus(TOPIC_HealRandolph, LOG_RUNNING);
-					B_LogEntry (TOPIC_HealRandolph,"Рендольф, похоже, решил бросить пить и послал меня к Саггите за лекарством от похмельного синдрома."); 
+					B_LogEntry (TOPIC_HealRandolph,"Р РµРЅРґРѕР»СЊС„, РїРѕС…РѕР¶Рµ, СЂРµС€РёР» Р±СЂРѕСЃРёС‚СЊ РїРёС‚СЊ Рё РїРѕСЃР»Р°Р» РјРµРЅСЏ Рє РЎР°РіРіРёС‚Рµ Р·Р° Р»РµРєР°СЂСЃС‚РІРѕРј РѕС‚ РїРѕС…РјРµР»СЊРЅРѕРіРѕ СЃРёРЅРґСЂРѕРјР°."); 
 
 					MIS_HealRandolph = LOG_RUNNING;
 				}
 			else
 				{
-					AI_Output			(self, other, "DIA_Randolph_PERM_06_07"); //Я все еще чувствую слабость в ногах, но мне уже стало лучше.
+					AI_Output			(self, other, "DIA_Randolph_PERM_06_07"); //РЇ РІСЃРµ РµС‰Рµ С‡СѓРІСЃС‚РІСѓСЋ СЃР»Р°Р±РѕСЃС‚СЊ РІ РЅРѕРіР°С…, РЅРѕ РјРЅРµ СѓР¶Рµ СЃС‚Р°Р»Рѕ Р»СѓС‡С€Рµ.
 				};	
 		};	
 };
@@ -485,7 +485,7 @@ instance DIA_Randolph_Heilung		(C_INFO)
 	information	 = 	DIA_Randolph_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Спиртное ударило тебе в голову, ха?";
+	description	 = 	"РЎРїРёСЂС‚РЅРѕРµ СѓРґР°СЂРёР»Рѕ С‚РµР±Рµ РІ РіРѕР»РѕРІСѓ, С…Р°?";
 };
 
 func int DIA_Randolph_Heilung_Condition ()
@@ -499,8 +499,8 @@ func int DIA_Randolph_Heilung_Condition ()
 
 func void DIA_Randolph_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_Heilung_15_00"); //Спиртное ударило тебе в голову, ха?
-	AI_Output			(self, other, "DIA_Randolph_Heilung_06_01"); //Я больше капли в рот не возьму. Только ни в этой жизни. Ты можешь мне поверить, парень.
+	AI_Output			(other, self, "DIA_Randolph_Heilung_15_00"); //РЎРїРёСЂС‚РЅРѕРµ СѓРґР°СЂРёР»Рѕ С‚РµР±Рµ РІ РіРѕР»РѕРІСѓ, С…Р°?
+	AI_Output			(self, other, "DIA_Randolph_Heilung_06_01"); //РЇ Р±РѕР»СЊС€Рµ РєР°РїР»Рё РІ СЂРѕС‚ РЅРµ РІРѕР·СЊРјСѓ. РўРѕР»СЊРєРѕ РЅРё РІ СЌС‚РѕР№ Р¶РёР·РЅРё. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРІРµСЂРёС‚СЊ, РїР°СЂРµРЅСЊ.
 	B_NpcClearObsessionByDMT (self);
 };
 
@@ -515,7 +515,7 @@ instance DIA_Randolph_SAGITTAHEAL		(C_INFO)
 	condition	 = 	DIA_Randolph_SAGITTAHEAL_Condition;
 	information	 = 	DIA_Randolph_SAGITTAHEAL_Info;
 
-	description	 = 	"Держи. Это облегчит твое похмелье. ";
+	description	 = 	"Р”РµСЂР¶Рё. Р­С‚Рѕ РѕР±Р»РµРіС‡РёС‚ С‚РІРѕРµ РїРѕС…РјРµР»СЊРµ. ";
 };
 
 func int DIA_Randolph_SAGITTAHEAL_Condition ()
@@ -529,7 +529,7 @@ func int DIA_Randolph_SAGITTAHEAL_Condition ()
 
 func void DIA_Randolph_SAGITTAHEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_00"); //Держи. Это облегчит твое похмелье.
+	AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_00"); //Р”РµСЂР¶Рё. Р­С‚Рѕ РѕР±Р»РµРіС‡РёС‚ С‚РІРѕРµ РїРѕС…РјРµР»СЊРµ.
 	B_GiveInvItems 		(other, self, ItPo_HealRandolph_MIS, 1);					
 	
 	if (Npc_IsInState (self,ZS_Pick_FP))
@@ -537,20 +537,20 @@ func void DIA_Randolph_SAGITTAHEAL_Info ()
 			B_UseItem 			(self,ItPo_HealRandolph_MIS);
 		};	
 		
-	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_01"); //Ох! Спасибо, друг. Теперь я смогу хотя бы поспать.
-	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_02"); //Чем я могу отплатить тебе за это?
+	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_01"); //РћС…! РЎРїР°СЃРёР±Рѕ, РґСЂСѓРі. РўРµРїРµСЂСЊ СЏ СЃРјРѕРіСѓ С…РѕС‚СЏ Р±С‹ РїРѕСЃРїР°С‚СЊ.
+	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_02"); //Р§РµРј СЏ РјРѕРіСѓ РѕС‚РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ Р·Р° СЌС‚Рѕ?
 	
 	if (DIA_Randolph_PERM_GotMoney == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_03"); //Я думаю, эти несколько монет могут только помочь мне спасти лицо. Но боюсь, это все, что у меня есть.
+			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_03"); //РЇ РґСѓРјР°СЋ, СЌС‚Рё РЅРµСЃРєРѕР»СЊРєРѕ РјРѕРЅРµС‚ РјРѕРіСѓС‚ С‚РѕР»СЊРєРѕ РїРѕРјРѕС‡СЊ РјРЅРµ СЃРїР°СЃС‚Рё Р»РёС†Рѕ. РќРѕ Р±РѕСЋСЃСЊ, СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
 		
 			CreateInvItems (self, ItMi_Gold, 150);									
 			B_GiveInvItems (self, other, ItMi_Gold, 150);					
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_04"); //Я заплатил за тебя кучу денег. Твои жалкие несколько монет никак не могут компенсировать мои затраты.
-			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_05"); //Ну, в таком случае мне повезло, что я встретил такого великодушного паладина, тебе так не кажется?
+			AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_04"); //РЇ Р·Р°РїР»Р°С‚РёР» Р·Р° С‚РµР±СЏ РєСѓС‡Сѓ РґРµРЅРµРі. РўРІРѕРё Р¶Р°Р»РєРёРµ РЅРµСЃРєРѕР»СЊРєРѕ РјРѕРЅРµС‚ РЅРёРєР°Рє РЅРµ РјРѕРіСѓС‚ РєРѕРјРїРµРЅСЃРёСЂРѕРІР°С‚СЊ РјРѕРё Р·Р°С‚СЂР°С‚С‹.
+			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_05"); //РќСѓ, РІ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ РјРЅРµ РїРѕРІРµР·Р»Рѕ, С‡С‚Рѕ СЏ РІСЃС‚СЂРµС‚РёР» С‚Р°РєРѕРіРѕ РІРµР»РёРєРѕРґСѓС€РЅРѕРіРѕ РїР°Р»Р°РґРёРЅР°, С‚РµР±Рµ С‚Р°Рє РЅРµ РєР°Р¶РµС‚СЃСЏ?
 			
 		};
 	

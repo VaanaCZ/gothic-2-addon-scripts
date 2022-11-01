@@ -2,7 +2,7 @@
 instance VLK_457_Brian (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "¡‡È‡Ì"; 
+	name 		= "–ë—Ä–∞–π–∞–Ω"; 
 	guild 		= GIL_VLK;
 	id 			= 457;
 	voice 		= 4;
@@ -19,7 +19,7 @@ instance VLK_457_Brian (Npc_Default)
 	EquipItem	(self, ItMw_1h_VLK_Axe); 
 		
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_B_Normal_Kirgo, BodyTex_B,ITAR_SMITH);	

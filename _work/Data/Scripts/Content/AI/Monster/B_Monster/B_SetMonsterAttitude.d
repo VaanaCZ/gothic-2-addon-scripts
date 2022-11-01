@@ -1,7 +1,7 @@
 // ******************************************************************
 // B_SetMonsterAttitude
 // --------------------
-// Alle Menschen (ausser Dementoren) können mit der Sammelbezeichnung 
+// Alle Menschen (ausser Dementoren) kÑ†nnen mit der Sammelbezeichnung 
 // GIL_SEPERATOR_HUM angegeben werden
 // ******************************************************************
 

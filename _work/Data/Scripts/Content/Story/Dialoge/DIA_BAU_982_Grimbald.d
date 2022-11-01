@@ -31,7 +31,7 @@ instance DIA_Grimbald_HALLO		(C_INFO)
 	condition	 = 	DIA_Grimbald_HALLO_Condition;
 	information	 = 	DIA_Grimbald_HALLO_Info;
 
-	description	 = 	"Ты чего-то ждешь?";
+	description	 = 	"РўС‹ С‡РµРіРѕ-С‚Рѕ Р¶РґРµС€СЊ?";
 };
 
 func int DIA_Grimbald_HALLO_Condition ()
@@ -42,62 +42,62 @@ var int Grimbald_PissOff;
 
 func void DIA_Grimbald_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_15_00"); //Ты чего-то ждешь?
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_15_00"); //РўС‹ С‡РµРіРѕ-С‚Рѕ Р¶РґРµС€СЊ?
 	
 	if 	(
 		(Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //Я охочусь. По-моему, это очевидно.
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //РЇ РѕС…РѕС‡СѓСЃСЊ. РџРѕ-РјРѕРµРјСѓ, СЌС‚Рѕ РѕС‡РµРІРёРґРЅРѕ.
 				Grimbald_PissOff = TRUE;
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //Больше нет. Ты ведь уже пришел.
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //Р‘РѕР»СЊС€Рµ РЅРµС‚. РўС‹ РІРµРґСЊ СѓР¶Рµ РїСЂРёС€РµР».
 				
 				Info_ClearChoices	(DIA_Grimbald_HALLO);
-				Info_AddChoice	(DIA_Grimbald_HALLO, "Меня ждут дела.", DIA_Grimbald_HALLO_nein );
-				Info_AddChoice	(DIA_Grimbald_HALLO, "Что ты задумал?", DIA_Grimbald_HALLO_Was );
-				Info_AddChoice	(DIA_Grimbald_HALLO, "Почему я?", DIA_Grimbald_HALLO_ich );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "РњРµРЅСЏ Р¶РґСѓС‚ РґРµР»Р°.", DIA_Grimbald_HALLO_nein );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "Р§С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р»?", DIA_Grimbald_HALLO_Was );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "РџРѕС‡РµРјСѓ СЏ?", DIA_Grimbald_HALLO_ich );
 			};
 };
 
 func void DIA_Grimbald_HALLO_ich ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_ich_15_00"); //Почему я?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_ich_07_01"); //Похоже, ты сильный человек. Я бы не отказался от твоей помощи.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_ich_15_00"); //РџРѕС‡РµРјСѓ СЏ?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_ich_07_01"); //РџРѕС…РѕР¶Рµ, С‚С‹ СЃРёР»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє. РЇ Р±С‹ РЅРµ РѕС‚РєР°Р·Р°Р»СЃСЏ РѕС‚ С‚РІРѕРµР№ РїРѕРјРѕС‰Рё.
 };
 
 func void DIA_Grimbald_HALLO_Was ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //Что ты задумал?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //Я хочу поохотиться на снепперов вон там, но боюсь, мне не справиться с ними в одиночку.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //Р§С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р»?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //РЇ С…РѕС‡Сѓ РїРѕРѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° СЃРЅРµРїРїРµСЂРѕРІ РІРѕРЅ С‚Р°Рј, РЅРѕ Р±РѕСЋСЃСЊ, РјРЅРµ РЅРµ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ РЅРёРјРё РІ РѕРґРёРЅРѕС‡РєСѓ.
 
-	Info_AddChoice	(DIA_Grimbald_HALLO, "Можешь не рассчитывать на меня.", DIA_Grimbald_HALLO_Was_neinnein );
-	Info_AddChoice	(DIA_Grimbald_HALLO, "Хорошо, я помогу тебе. Но ты пойдешь впереди.", DIA_Grimbald_HALLO_Was_ja );
+	Info_AddChoice	(DIA_Grimbald_HALLO, "РњРѕР¶РµС€СЊ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РјРµРЅСЏ.", DIA_Grimbald_HALLO_Was_neinnein );
+	Info_AddChoice	(DIA_Grimbald_HALLO, "РҐРѕСЂРѕС€Рѕ, СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ. РќРѕ С‚С‹ РїРѕР№РґРµС€СЊ РІРїРµСЂРµРґРё.", DIA_Grimbald_HALLO_Was_ja );
 };
 func void DIA_Grimbald_HALLO_Was_neinnein ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neinnein_15_00"); //Можешь не рассчитывать на меня.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neinnein_07_01"); //Тогда проваливай, трус.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neinnein_15_00"); //РњРѕР¶РµС€СЊ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neinnein_07_01"); //РўРѕРіРґР° РїСЂРѕРІР°Р»РёРІР°Р№, С‚СЂСѓСЃ.
 	Grimbald_PissOff = TRUE;
 	Info_ClearChoices	(DIA_Grimbald_HALLO);
 };
 
 func void DIA_Grimbald_HALLO_Was_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //Хорошо, я помогу тебе. Но ты пойдешь впереди.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Конечно. Только не приближайся слишком близко к черному троллю. Он разорвет тебя на куски, понял?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //И я не прощу тебе, если ты решишь выйти из игры.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //РҐРѕСЂРѕС€Рѕ, СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ. РќРѕ С‚С‹ РїРѕР№РґРµС€СЊ РІРїРµСЂРµРґРё.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //РљРѕРЅРµС‡РЅРѕ. РўРѕР»СЊРєРѕ РЅРµ РїСЂРёР±Р»РёР¶Р°Р№СЃСЏ СЃР»РёС€РєРѕРј Р±Р»РёР·РєРѕ Рє С‡РµСЂРЅРѕРјСѓ С‚СЂРѕР»Р»СЋ. РћРЅ СЂР°Р·РѕСЂРІРµС‚ С‚РµР±СЏ РЅР° РєСѓСЃРєРё, РїРѕРЅСЏР»?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //Р СЏ РЅРµ РїСЂРѕС‰Сѓ С‚РµР±Рµ, РµСЃР»Рё С‚С‹ СЂРµС€РёС€СЊ РІС‹Р№С‚Рё РёР· РёРіСЂС‹.
 	B_StartOtherRoutine	(self,"Jagd");
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Grimbald_HALLO_nein ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //Меня ждут дела.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //Не мели чепуху. Что такого важного может ждать тебя в этой глуши?
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //РњРµРЅСЏ Р¶РґСѓС‚ РґРµР»Р°.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //РќРµ РјРµР»Рё С‡РµРїСѓС…Сѓ. Р§С‚Рѕ С‚Р°РєРѕРіРѕ РІР°Р¶РЅРѕРіРѕ РјРѕР¶РµС‚ Р¶РґР°С‚СЊ С‚РµР±СЏ РІ СЌС‚РѕР№ РіР»СѓС€Рё?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -111,7 +111,7 @@ instance DIA_Grimbald_Jagd		(C_INFO)
 	information	 = 	DIA_Grimbald_Jagd_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты можешь научить меня охотиться?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?";
 };
 
 func int DIA_Grimbald_Jagd_Condition ()
@@ -125,46 +125,46 @@ func int DIA_Grimbald_Jagd_Condition ()
 
 func void DIA_Grimbald_Jagd_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //Ты можешь научить меня охотиться?
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?
 	if 	((Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 		|| (Grimbald_PissOff == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Ммм. Хорошо. Ты не особенно-то помог мне, но не стоит быть слишком строгим.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //РњРјРј. РҐРѕСЂРѕС€Рѕ. РўС‹ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ-С‚Рѕ РїРѕРјРѕРі РјРЅРµ, РЅРѕ РЅРµ СЃС‚РѕРёС‚ Р±С‹С‚СЊ СЃР»РёС€РєРѕРј СЃС‚СЂРѕРіРёРј.
 		Grimbald_TeachAnimalTrophy = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_02"); //Конечно. Но не бесплатно.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_02"); //РљРѕРЅРµС‡РЅРѕ. РќРѕ РЅРµ Р±РµСЃРїР»Р°С‚РЅРѕ.
 		B_Say_Gold (self, other, 200);
 	
 		Info_ClearChoices	(DIA_Grimbald_Jagd);
-		Info_AddChoice	(DIA_Grimbald_Jagd, "Я подумаю над этим.", DIA_Grimbald_Jagd_zuviel );
-		Info_AddChoice	(DIA_Grimbald_Jagd, "Хорошо.", DIA_Grimbald_Jagd_ja );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.", DIA_Grimbald_Jagd_zuviel );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "РҐРѕСЂРѕС€Рѕ.", DIA_Grimbald_Jagd_ja );
 	};
 };
 
 func void DIA_Grimbald_Jagd_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_ja_15_00"); //Хорошо, вот деньги.
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_ja_15_00"); //РҐРѕСЂРѕС€Рѕ, РІРѕС‚ РґРµРЅСЊРіРё.
 
 		if (B_GiveInvItems (other, self, ItMi_Gold,200))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_01"); //Отлично. Скажешь, когда захочешь научиться чему-нибудь.
+			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_01"); //РћС‚Р»РёС‡РЅРѕ. РЎРєР°Р¶РµС€СЊ, РєРѕРіРґР° Р·Р°С…РѕС‡РµС€СЊ РЅР°СѓС‡РёС‚СЊСЃСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ.
 			Grimbald_TeachAnimalTrophy = TRUE;
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_02"); //Принеси мне деньги, и я готов обучать тебя.
+			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_02"); //РџСЂРёРЅРµСЃРё РјРЅРµ РґРµРЅСЊРіРё, Рё СЏ РіРѕС‚РѕРІ РѕР±СѓС‡Р°С‚СЊ С‚РµР±СЏ.
 		};
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };  
 
 func void DIA_Grimbald_Jagd_zuviel ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //Я подумаю над этим.
-	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //Как хочешь.
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
+	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //РљР°Рє С…РѕС‡РµС€СЊ.
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };
 
@@ -179,7 +179,7 @@ instance DIA_Grimbald_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grimbald_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grimbald_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Научи меня охотиться.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ.";
 };
 
 func int DIA_Grimbald_TEACHHUNTING_Condition ()
@@ -192,7 +192,7 @@ func int DIA_Grimbald_TEACHHUNTING_Condition ()
 var int DIA_Grimbald_TEACHHUNTING_OneTime;
 func void DIA_Grimbald_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //Научи меня охотиться.
+	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ.
 	if (DIA_Grimbald_TEACHHUNTING_OneTime == FALSE)
 	{
 		B_StartOtherRoutine	(self,"JagdOver");
@@ -207,34 +207,34 @@ func void DIA_Grimbald_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 			)
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_01"); //Что именно ты хочешь узнать?
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_01"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 	
 				Info_AddChoice		(DIA_Grimbald_TEACHHUNTING, DIALOG_BACK, DIA_Grimbald_TEACHHUNTING_BACK);
 			
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Жало кровавой мухи",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Grimbald_TEACHHUNTING_BFSting);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Р–Р°Р»Рѕ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Grimbald_TEACHHUNTING_BFSting);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Крылья кровавой мухи",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Grimbald_TEACHHUNTING_BFWing	);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("РљСЂС‹Р»СЊСЏ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Grimbald_TEACHHUNTING_BFWing	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Удаление когтей",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Grimbald_TEACHHUNTING_Claws	);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РєРѕРіС‚РµР№",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Grimbald_TEACHHUNTING_Claws	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Удаление мандибул",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grimbald_TEACHHUNTING_Mandibles);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РјР°РЅРґРёР±СѓР»",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grimbald_TEACHHUNTING_Mandibles);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Удаление панцирей краулеров",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Grimbald_TEACHHUNTING_CrawlerPlate);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Grimbald_TEACHHUNTING_CrawlerPlate);
 				};
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //Ты уже знаешь все, чему я мог научить тебя.
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РІСЃРµ, С‡РµРјСѓ СЏ РјРѕРі РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
 			};
 };
 
@@ -247,7 +247,7 @@ func void DIA_Grimbald_TEACHHUNTING_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFSting_07_00"); //Вырезать жало кровавой мухи довольно просто. Тебе нужно найти его основание и с силой воткнуть туда нож.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFSting_07_00"); //Р’С‹СЂРµР·Р°С‚СЊ Р¶Р°Р»Рѕ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ. РўРµР±Рµ РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё РµРіРѕ РѕСЃРЅРѕРІР°РЅРёРµ Рё СЃ СЃРёР»РѕР№ РІРѕС‚РєРЅСѓС‚СЊ С‚СѓРґР° РЅРѕР¶.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -256,7 +256,7 @@ func void DIA_Grimbald_TEACHHUNTING_BFWing()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFWing_07_00"); //Крылья кровавой мухи можно вырвать или вырезать при помощи острого ножа.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFWing_07_00"); //РљСЂС‹Р»СЊСЏ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё РјРѕР¶РЅРѕ РІС‹СЂРІР°С‚СЊ РёР»Рё РІС‹СЂРµР·Р°С‚СЊ РїСЂРё РїРѕРјРѕС‰Рё РѕСЃС‚СЂРѕРіРѕ РЅРѕР¶Р°.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -265,7 +265,7 @@ func void DIA_Grimbald_TEACHHUNTING_Claws ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Есть несколько способов вырезать когти. Для одних животных необходим сильный точный удар ножом, а у других их нужно вырезать очень аккуратно.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Р•СЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ СЃРїРѕСЃРѕР±РѕРІ РІС‹СЂРµР·Р°С‚СЊ РєРѕРіС‚Рё. Р”Р»СЏ РѕРґРЅРёС… Р¶РёРІРѕС‚РЅС‹С… РЅРµРѕР±С…РѕРґРёРј СЃРёР»СЊРЅС‹Р№ С‚РѕС‡РЅС‹Р№ СѓРґР°СЂ РЅРѕР¶РѕРј, Р° Сѓ РґСЂСѓРіРёС… РёС… РЅСѓР¶РЅРѕ РІС‹СЂРµР·Р°С‚СЊ РѕС‡РµРЅСЊ Р°РєРєСѓСЂР°С‚РЅРѕ.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -274,7 +274,7 @@ func void DIA_Grimbald_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //У краулеров и полевых хищников сильные мандибулы, которые можно отделить от головы сильным точным ударом.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //РЈ РєСЂР°СѓР»РµСЂРѕРІ Рё РїРѕР»РµРІС‹С… С…РёС‰РЅРёРєРѕРІ СЃРёР»СЊРЅС‹Рµ РјР°РЅРґРёР±СѓР»С‹, РєРѕС‚РѕСЂС‹Рµ РјРѕР¶РЅРѕ РѕС‚РґРµР»РёС‚СЊ РѕС‚ РіРѕР»РѕРІС‹ СЃРёР»СЊРЅС‹Рј С‚РѕС‡РЅС‹Рј СѓРґР°СЂРѕРј.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -283,7 +283,7 @@ func void DIA_Grimbald_TEACHHUNTING_CrawlerPlate ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Панцири с краулеров снять нелегко, но это все же можно сделать при помощи острого прочного предмета.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //РџР°РЅС†РёСЂРё СЃ РєСЂР°СѓР»РµСЂРѕРІ СЃРЅСЏС‚СЊ РЅРµР»РµРіРєРѕ, РЅРѕ СЌС‚Рѕ РІСЃРµ Р¶Рµ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ РїСЂРё РїРѕРјРѕС‰Рё РѕСЃС‚СЂРѕРіРѕ РїСЂРѕС‡РЅРѕРіРѕ РїСЂРµРґРјРµС‚Р°.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -299,7 +299,7 @@ instance DIA_Grimbald_NovChase		(C_INFO)
 	condition	 = 	DIA_Grimbald_NovChase_Condition;
 	information	 = 	DIA_Grimbald_NovChase_Info;
 
-	description	 = 	"Ты не видел здесь послушника?";
+	description	 = 	"РўС‹ РЅРµ РІРёРґРµР» Р·РґРµСЃСЊ РїРѕСЃР»СѓС€РЅРёРєР°?";
 
 };
 
@@ -313,9 +313,9 @@ func int DIA_Grimbald_NovChase_Condition ()
 
 func void DIA_Grimbald_NovChase_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //Ты не видел здесь послушника?
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //Сегодня здесь прошло много разных странных личностей, включая тех двух клоунов у каменной арки.
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //А недавно с ними о чем-то разговаривал послушник магов Огня.
+	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //РўС‹ РЅРµ РІРёРґРµР» Р·РґРµСЃСЊ РїРѕСЃР»СѓС€РЅРёРєР°?
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //РЎРµРіРѕРґРЅСЏ Р·РґРµСЃСЊ РїСЂРѕС€Р»Рѕ РјРЅРѕРіРѕ СЂР°Р·РЅС‹С… СЃС‚СЂР°РЅРЅС‹С… Р»РёС‡РЅРѕСЃС‚РµР№, РІРєР»СЋС‡Р°СЏ С‚РµС… РґРІСѓС… РєР»РѕСѓРЅРѕРІ Сѓ РєР°РјРµРЅРЅРѕР№ Р°СЂРєРё.
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //Рђ РЅРµРґР°РІРЅРѕ СЃ РЅРёРјРё Рѕ С‡РµРј-С‚Рѕ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» РїРѕСЃР»СѓС€РЅРёРє РјР°РіРѕРІ РћРіРЅСЏ.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -342,7 +342,7 @@ func int DIA_Grimbald_Trolltot_Condition ()
 
 func void DIA_Grimbald_Trolltot_Info ()
 {
-	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //Черный тролль мертв. Отличная работа. Я не верил, что его вообще можно убить. Никогда этого не забуду.
+	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //Р§РµСЂРЅС‹Р№ С‚СЂРѕР»Р»СЊ РјРµСЂС‚РІ. РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°. РЇ РЅРµ РІРµСЂРёР», С‡С‚Рѕ РµРіРѕ РІРѕРѕР±С‰Рµ РјРѕР¶РЅРѕ СѓР±РёС‚СЊ. РќРёРєРѕРіРґР° СЌС‚РѕРіРѕ РЅРµ Р·Р°Р±СѓРґСѓ.
 	B_GivePlayerXP (XP_Ambient);
 };
 

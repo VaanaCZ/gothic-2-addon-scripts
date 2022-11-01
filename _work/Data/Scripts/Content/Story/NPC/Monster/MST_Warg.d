@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Warg(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Варг";
+	name							=	"Р’Р°СЂРі";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WARG;
 	level							=	30;		
@@ -89,9 +89,9 @@ INSTANCE Warg	(Mst_Default_Warg)
 
 INSTANCE BlackWolf	(Mst_Default_Warg)
 {
-	name							=	"Черный волк";
+	name							=	"Р§РµСЂРЅС‹Р№ РІРѕР»Рє";
 	level							=	 6;		
-	//fьr Inventory
+	//fСЊr Inventory
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;

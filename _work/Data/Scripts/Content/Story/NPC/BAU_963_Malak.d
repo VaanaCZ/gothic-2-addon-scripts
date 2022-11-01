@@ -3,7 +3,7 @@
 instance BAU_963_Malak (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ã‡Î‡Í";
+	name 		= "–ú–∞–ª–∞–∫";
 	guild 		= GIL_OUT;
 	id 			= 963;
 	voice 		= 8;
@@ -31,8 +31,8 @@ instance BAU_963_Malak (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 35); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 35); //Grenzen f—år Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_963;

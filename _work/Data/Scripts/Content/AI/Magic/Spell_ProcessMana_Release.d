@@ -3,7 +3,7 @@
 // -------------------------
 // wird aufgerufen, NACHDEM die Action Taste losgelassen wurde, 
 // und in Spell_ProcessMana der Spruch NOCH NICHT GECASTED und NOCH NICHT GESTOPPT wurde
-// es macht keinen Sinn, diese Funktion was anderes als SPL_SENDSTOP oder SPL_SENDCAST zurückliefern zu lassen
+// es macht keinen Sinn, diese Funktion was anderes als SPL_SENDSTOP oder SPL_SENDCAST zurÑŒckliefern zu lassen
 // self 	= Der Caster
 // other 	= Das Opfer (kann auch leer sein)
 // ***********************************************************************************************************

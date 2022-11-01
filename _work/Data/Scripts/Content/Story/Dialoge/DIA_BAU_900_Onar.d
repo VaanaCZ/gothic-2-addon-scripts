@@ -40,8 +40,8 @@ FUNC INT DIA_Onar_Hallo_Condition()
 };
 FUNC VOID DIA_Onar_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Onar_Hallo_14_00"); //Кто пустил тебя сюда?!
-	AI_Output (self, other, "DIA_Onar_Hallo_14_01"); //Что ты делаешь на моей ферме?!
+	AI_Output (self, other, "DIA_Onar_Hallo_14_00"); //РљС‚Рѕ РїСѓСЃС‚РёР» С‚РµР±СЏ СЃСЋРґР°?!
+	AI_Output (self, other, "DIA_Onar_Hallo_14_01"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ РЅР° РјРѕРµР№ С„РµСЂРјРµ?!
 };
 
 // ************************************************************
@@ -54,7 +54,7 @@ INSTANCE DIA_Onar_PERM (C_INFO)
 	condition   = DIA_Onar_PERM_Condition;
 	information = DIA_Onar_PERM_Info;
 	permanent   = TRUE;
-	description = "Здесь все в порядке, на твоей ферме?";
+	description = "Р—РґРµСЃСЊ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ, РЅР° С‚РІРѕРµР№ С„РµСЂРјРµ?";
 };
 FUNC INT DIA_Onar_PERM_Condition()
 {
@@ -62,32 +62,32 @@ FUNC INT DIA_Onar_PERM_Condition()
 };
 FUNC VOID DIA_Onar_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Onar_PERM_15_00"); //Здесь все в порядке, на твоей ферме?
+	AI_Output (other, self, "DIA_Onar_PERM_15_00"); //Р—РґРµСЃСЊ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ, РЅР° С‚РІРѕРµР№ С„РµСЂРјРµ?
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_01"); //Я не понимаю, какое тебе до этого может быть дело. Ты не работаешь здесь!
+		AI_Output (self, other, "DIA_Onar_PERM_14_01"); //РЇ РЅРµ РїРѕРЅРёРјР°СЋ, РєР°РєРѕРµ С‚РµР±Рµ РґРѕ СЌС‚РѕРіРѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ РґРµР»Рѕ. РўС‹ РЅРµ СЂР°Р±РѕС‚Р°РµС€СЊ Р·РґРµСЃСЊ!
 	};
 	
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_02"); //Очень надеюсь, что да! В конце концов, именно за это я тебе и плачу!
-		AI_Output (self, other, "DIA_Onar_PERM_14_03"); //Тебе лучше пойти, поговорить с Торлофом, может быть, у него есть работа для тебя.
+		AI_Output (self, other, "DIA_Onar_PERM_14_02"); //РћС‡РµРЅСЊ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ РґР°! Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РёРјРµРЅРЅРѕ Р·Р° СЌС‚Рѕ СЏ С‚РµР±Рµ Рё РїР»Р°С‡Сѓ!
+		AI_Output (self, other, "DIA_Onar_PERM_14_03"); //РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕР№С‚Рё, РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РўРѕСЂР»РѕС„РѕРј, РјРѕР¶РµС‚ Р±С‹С‚СЊ, Сѓ РЅРµРіРѕ РµСЃС‚СЊ СЂР°Р±РѕС‚Р° РґР»СЏ С‚РµР±СЏ.
 	};
 	
 	if (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_04"); //Да, конечно. Ты можешь идти, охотиться на своих драконов.
+		AI_Output (self, other, "DIA_Onar_PERM_14_04"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РўС‹ РјРѕР¶РµС€СЊ РёРґС‚Рё, РѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° СЃРІРѕРёС… РґСЂР°РєРѕРЅРѕРІ.
 	};
 	
 	if (other.guild == GIL_NOV) || (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_05"); //Вам, лицемерным ублюдкам из монастыря, сюда вход закрыт!
+		AI_Output (self, other, "DIA_Onar_PERM_14_05"); //Р’Р°Рј, Р»РёС†РµРјРµСЂРЅС‹Рј СѓР±Р»СЋРґРєР°Рј РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ, СЃСЋРґР° РІС…РѕРґ Р·Р°РєСЂС‹С‚!
 	};
 	
 	if (other.guild == GIL_MIL) || (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_06"); //Наше гостеприимство не распространяется на войска короля.
+		AI_Output (self, other, "DIA_Onar_PERM_14_06"); //РќР°С€Рµ РіРѕСЃС‚РµРїСЂРёРёРјСЃС‚РІРѕ РЅРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏРµС‚СЃСЏ РЅР° РІРѕР№СЃРєР° РєРѕСЂРѕР»СЏ.
 	};
 };
 
@@ -101,7 +101,7 @@ INSTANCE DIA_Onar_Work (C_INFO)
 	condition   = DIA_Onar_Work_Condition;
 	information = DIA_Onar_Work_Info;
 	permanent   = FALSE;
-	description = "Я хочу работать на тебя!";
+	description = "РЇ С…РѕС‡Сѓ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° С‚РµР±СЏ!";
 };
 FUNC INT DIA_Onar_Work_Condition()
 {
@@ -112,10 +112,10 @@ FUNC INT DIA_Onar_Work_Condition()
 };
 FUNC VOID DIA_Onar_Work_Info()
 {
-	AI_Output (other, self, "DIA_Onar_Work_15_00"); //Я хочу работать на тебя!
-	AI_Output (self, other, "DIA_Onar_Work_14_01"); //Мне сейчас не нужны рабочие.
-	AI_Output (self, other, "DIA_Onar_Work_14_02"); //Мои люди прекрасно со всем справляются.
-	AI_Output (self, other, "DIA_Onar_Work_14_03"); //Тебе нечего делать в моем доме, убирайся!
+	AI_Output (other, self, "DIA_Onar_Work_15_00"); //РЇ С…РѕС‡Сѓ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° С‚РµР±СЏ!
+	AI_Output (self, other, "DIA_Onar_Work_14_01"); //РњРЅРµ СЃРµР№С‡Р°СЃ РЅРµ РЅСѓР¶РЅС‹ СЂР°Р±РѕС‡РёРµ.
+	AI_Output (self, other, "DIA_Onar_Work_14_02"); //РњРѕРё Р»СЋРґРё РїСЂРµРєСЂР°СЃРЅРѕ СЃРѕ РІСЃРµРј СЃРїСЂР°РІР»СЏСЋС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Onar_Work_14_03"); //РўРµР±Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ РІ РјРѕРµРј РґРѕРјРµ, СѓР±РёСЂР°Р№СЃСЏ!
 };
 
 
@@ -129,7 +129,7 @@ INSTANCE DIA_Onar_WorkAsSld (C_INFO)
 	condition   = DIA_Onar_WorkAsSld_Condition;
 	information = DIA_Onar_WorkAsSld_Info;
 	permanent   = FALSE;
-	description = "Я хочу поработать здесь в качестве наемника!";
+	description = "РЇ С…РѕС‡Сѓ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РµРјРЅРёРєР°!";
 };
 FUNC INT DIA_Onar_WorkAsSld_Condition()
 {
@@ -142,9 +142,9 @@ FUNC INT DIA_Onar_WorkAsSld_Condition()
 };
 FUNC VOID DIA_Onar_WorkAsSld_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WorkAsSld_15_00"); //Я хочу поработать здесь в качестве наемника!
-	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_01"); //Ты? Наемника? Не смеши меня! Если бы из тебя мог получиться хороший наемник, Ли наверняка рассказал бы мне о тебе.
-	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_02"); //А теперь убирайся отсюда, и поживее!
+	AI_Output (other, self, "DIA_Onar_WorkAsSld_15_00"); //РЇ С…РѕС‡Сѓ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РµРјРЅРёРєР°!
+	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_01"); //РўС‹? РќР°РµРјРЅРёРєР°? РќРµ СЃРјРµС€Рё РјРµРЅСЏ! Р•СЃР»Рё Р±С‹ РёР· С‚РµР±СЏ РјРѕРі РїРѕР»СѓС‡РёС‚СЊСЃСЏ С…РѕСЂРѕС€РёР№ РЅР°РµРјРЅРёРє, Р›Рё РЅР°РІРµСЂРЅСЏРєР° СЂР°СЃСЃРєР°Р·Р°Р» Р±С‹ РјРЅРµ Рѕ С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_02"); //Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°, Рё РїРѕР¶РёРІРµРµ!
 	Onar_WegenSldWerden = TRUE;
 };
 
@@ -158,7 +158,7 @@ INSTANCE DIA_Onar_Aufstand (C_INFO)
 	condition   = DIA_Onar_Aufstand_Condition;
 	information = DIA_Onar_Aufstand_Info;
 	permanent   = FALSE;
-	description = "Ты противостоишь городу, как я слышал?";
+	description = "РўС‹ РїСЂРѕС‚РёРІРѕСЃС‚РѕРёС€СЊ РіРѕСЂРѕРґСѓ, РєР°Рє СЏ СЃР»С‹С€Р°Р»?";
 };
 FUNC INT DIA_Onar_Aufstand_Condition()
 {
@@ -166,12 +166,12 @@ FUNC INT DIA_Onar_Aufstand_Condition()
 };
 FUNC VOID DIA_Onar_Aufstand_Info()
 {
-	AI_Output (other, self, "DIA_Onar_Aufstand_15_00"); //Ты противостоишь городу, как я слышал?
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_01"); //А теперь послушай ты. Я унаследовал эту ферму и эту землю от своего отца.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_02"); //А он унаследовал ее от СВОЕГО отца.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_03"); //Я не позволю этому жадному идиоту, называющему себя королем, разорить меня только для того, чтобы накормить свои бесполезные армии.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_04"); //Война с орками длится уже целую вечность. И к чему мы пришли? Мы стоим на грани поражения.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_05"); //Нет - я предпочитаю оборонять свою ферму самостоятельно! Деньги, что я сберегу таким образом, пойдут на оплату моей собственной армии.
+	AI_Output (other, self, "DIA_Onar_Aufstand_15_00"); //РўС‹ РїСЂРѕС‚РёРІРѕСЃС‚РѕРёС€СЊ РіРѕСЂРѕРґСѓ, РєР°Рє СЏ СЃР»С‹С€Р°Р»?
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_01"); //Рђ С‚РµРїРµСЂСЊ РїРѕСЃР»СѓС€Р°Р№ С‚С‹. РЇ СѓРЅР°СЃР»РµРґРѕРІР°Р» СЌС‚Сѓ С„РµСЂРјСѓ Рё СЌС‚Сѓ Р·РµРјР»СЋ РѕС‚ СЃРІРѕРµРіРѕ РѕС‚С†Р°.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_02"); //Рђ РѕРЅ СѓРЅР°СЃР»РµРґРѕРІР°Р» РµРµ РѕС‚ РЎР’РћР•Р“Рћ РѕС‚С†Р°.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_03"); //РЇ РЅРµ РїРѕР·РІРѕР»СЋ СЌС‚РѕРјСѓ Р¶Р°РґРЅРѕРјСѓ РёРґРёРѕС‚Сѓ, РЅР°Р·С‹РІР°СЋС‰РµРјСѓ СЃРµР±СЏ РєРѕСЂРѕР»РµРј, СЂР°Р·РѕСЂРёС‚СЊ РјРµРЅСЏ С‚РѕР»СЊРєРѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РЅР°РєРѕСЂРјРёС‚СЊ СЃРІРѕРё Р±РµСЃРїРѕР»РµР·РЅС‹Рµ Р°СЂРјРёРё.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_04"); //Р’РѕР№РЅР° СЃ РѕСЂРєР°РјРё РґР»РёС‚СЃСЏ СѓР¶Рµ С†РµР»СѓСЋ РІРµС‡РЅРѕСЃС‚СЊ. Р Рє С‡РµРјСѓ РјС‹ РїСЂРёС€Р»Рё? РњС‹ СЃС‚РѕРёРј РЅР° РіСЂР°РЅРё РїРѕСЂР°Р¶РµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_05"); //РќРµС‚ - СЏ РїСЂРµРґРїРѕС‡РёС‚Р°СЋ РѕР±РѕСЂРѕРЅСЏС‚СЊ СЃРІРѕСЋ С„РµСЂРјСѓ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ! Р”РµРЅСЊРіРё, С‡С‚Рѕ СЏ СЃР±РµСЂРµРіСѓ С‚Р°РєРёРј РѕР±СЂР°Р·РѕРј, РїРѕР№РґСѓС‚ РЅР° РѕРїР»Р°С‚Сѓ РјРѕРµР№ СЃРѕР±СЃС‚РІРµРЅРЅРѕР№ Р°СЂРјРёРё.
 };
 
 // ************************************************************
@@ -184,7 +184,7 @@ INSTANCE DIA_Onar_WegenPepe (C_INFO)
 	condition   = DIA_Onar_WegenPepe_Condition;
 	information = DIA_Onar_WegenPepe_Info;
 	permanent   = FALSE;
-	description = "Можешь благодарить Булко, у тебя стало на несколько овец меньше.";
+	description = "РњРѕР¶РµС€СЊ Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ Р‘СѓР»РєРѕ, Сѓ С‚РµР±СЏ СЃС‚Р°Р»Рѕ РЅР° РЅРµСЃРєРѕР»СЊРєРѕ РѕРІРµС† РјРµРЅСЊС€Рµ.";
 };
 FUNC INT DIA_Onar_WegenPepe_Condition()
 {
@@ -195,11 +195,11 @@ FUNC INT DIA_Onar_WegenPepe_Condition()
 };
 FUNC VOID DIA_Onar_WegenPepe_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WegenPepe_15_00"); //Можешь благодарить Булко, у тебя стало на несколько овец меньше.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_01"); //О чем это ты говоришь? Кто такой Булко?
-	AI_Output (other, self, "DIA_Onar_WegenPepe_15_02"); //Один из наемников.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_03"); //Какое мне до этого дело? Если он притронулся к моим овцам, он будет отвечать перед Ли.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_04"); //Зачем ты отвлекаешь меня по таким пустякам?
+	AI_Output (other, self, "DIA_Onar_WegenPepe_15_00"); //РњРѕР¶РµС€СЊ Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ Р‘СѓР»РєРѕ, Сѓ С‚РµР±СЏ СЃС‚Р°Р»Рѕ РЅР° РЅРµСЃРєРѕР»СЊРєРѕ РѕРІРµС† РјРµРЅСЊС€Рµ.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_01"); //Рћ С‡РµРј СЌС‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ? РљС‚Рѕ С‚Р°РєРѕР№ Р‘СѓР»РєРѕ?
+	AI_Output (other, self, "DIA_Onar_WegenPepe_15_02"); //РћРґРёРЅ РёР· РЅР°РµРјРЅРёРєРѕРІ.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_03"); //РљР°РєРѕРµ РјРЅРµ РґРѕ СЌС‚РѕРіРѕ РґРµР»Рѕ? Р•СЃР»Рё РѕРЅ РїСЂРёС‚СЂРѕРЅСѓР»СЃСЏ Рє РјРѕРёРј РѕРІС†Р°Рј, РѕРЅ Р±СѓРґРµС‚ РѕС‚РІРµС‡Р°С‚СЊ РїРµСЂРµРґ Р›Рё.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_04"); //Р—Р°С‡РµРј С‚С‹ РѕС‚РІР»РµРєР°РµС€СЊ РјРµРЅСЏ РїРѕ С‚Р°РєРёРј РїСѓСЃС‚СЏРєР°Рј?
 	Onar_WegenPepe = TRUE;
 };
 
@@ -213,7 +213,7 @@ INSTANCE DIA_Onar_WegenSekob (C_INFO)
 	condition   = DIA_Onar_WegenSekob_Condition;
 	information = DIA_Onar_WegenSekob_Info;
 	permanent   = FALSE;
-	description = "Я пришел по поводу ренты Секоба...";
+	description = "РЇ РїСЂРёС€РµР» РїРѕ РїРѕРІРѕРґСѓ СЂРµРЅС‚С‹ РЎРµРєРѕР±Р°...";
 };
 FUNC INT DIA_Onar_WegenSekob_Condition()
 {
@@ -224,24 +224,24 @@ FUNC INT DIA_Onar_WegenSekob_Condition()
 };
 FUNC VOID DIA_Onar_WegenSekob_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_00"); //Я пришел по поводу ренты Секоба...
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_00"); //РЇ РїСЂРёС€РµР» РїРѕ РїРѕРІРѕРґСѓ СЂРµРЅС‚С‹ РЎРµРєРѕР±Р°...
 
 	if (other.guild == GIL_SLD) || (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_WegenSekob_14_01"); //Что, черт возьми, тебе нужно здесь? Отнеси деньги Торлофу.
+		AI_Output (self, other, "DIA_Onar_WegenSekob_14_01"); //Р§С‚Рѕ, С‡РµСЂС‚ РІРѕР·СЊРјРё, С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ? РћС‚РЅРµСЃРё РґРµРЅСЊРіРё РўРѕСЂР»РѕС„Сѓ.
 	
 	}
 	else //GIL_NONE
 	{
-		AI_Output (self, other, "DIA_Onar_WegenSekob_14_02"); //Какого дьявола ты лезешь в это дело?
-		AI_Output (other, self, "DIA_Onar_WegenSekob_15_03"); //Я хочу стать наемником. Собрать ренту - это мое испытание.
+		AI_Output (self, other, "DIA_Onar_WegenSekob_14_02"); //РљР°РєРѕРіРѕ РґСЊСЏРІРѕР»Р° С‚С‹ Р»РµР·РµС€СЊ РІ СЌС‚Рѕ РґРµР»Рѕ?
+		AI_Output (other, self, "DIA_Onar_WegenSekob_15_03"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј. РЎРѕР±СЂР°С‚СЊ СЂРµРЅС‚Сѓ - СЌС‚Рѕ РјРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ.
 		Onar_WegenSldWerden = TRUE;
 	};
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_04"); //Но у Секоба нет денег. Я даже пытался выбить их из него.
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_05"); //Он сказал, что это из-за плохого урожая...
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_06"); //(вопит) Ты безмозглый кретин! Ты что думаешь, он носит деньги с собой? Он их где-то прячет!
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_07"); //Да ты знаешь, сколько дождей было в этот год? Плохой урожай! Надо же!
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_08"); //Иди, и найди способ выбить из него эти деньги.
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_04"); //РќРѕ Сѓ РЎРµРєРѕР±Р° РЅРµС‚ РґРµРЅРµРі. РЇ РґР°Р¶Рµ РїС‹С‚Р°Р»СЃСЏ РІС‹Р±РёС‚СЊ РёС… РёР· РЅРµРіРѕ.
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_05"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЌС‚Рѕ РёР·-Р·Р° РїР»РѕС…РѕРіРѕ СѓСЂРѕР¶Р°СЏ...
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_06"); //(РІРѕРїРёС‚) РўС‹ Р±РµР·РјРѕР·РіР»С‹Р№ РєСЂРµС‚РёРЅ! РўС‹ С‡С‚Рѕ РґСѓРјР°РµС€СЊ, РѕРЅ РЅРѕСЃРёС‚ РґРµРЅСЊРіРё СЃ СЃРѕР±РѕР№? РћРЅ РёС… РіРґРµ-С‚Рѕ РїСЂСЏС‡РµС‚!
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_07"); //Р”Р° С‚С‹ Р·РЅР°РµС€СЊ, СЃРєРѕР»СЊРєРѕ РґРѕР¶РґРµР№ Р±С‹Р»Рѕ РІ СЌС‚РѕС‚ РіРѕРґ? РџР»РѕС…РѕР№ СѓСЂРѕР¶Р°Р№! РќР°РґРѕ Р¶Рµ!
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_08"); //РРґРё, Рё РЅР°Р№РґРё СЃРїРѕСЃРѕР± РІС‹Р±РёС‚СЊ РёР· РЅРµРіРѕ СЌС‚Рё РґРµРЅСЊРіРё.
 	Onar_WegenSekob = TRUE;
 };
 
@@ -256,7 +256,7 @@ INSTANCE DIA_Onar_LeeSentMe   (C_INFO)
 	condition   = DIA_Onar_LeeSentMe_Condition;
 	information = DIA_Onar_LeeSentMe_Info;
 	permanent   = FALSE;
-	description = "Меня послал Ли. Я хочу работать в качестве наемника!";
+	description = "РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›Рё. РЇ С…РѕС‡Сѓ СЂР°Р±РѕС‚Р°С‚СЊ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РµРјРЅРёРєР°!";
 };
 FUNC INT DIA_Onar_LeeSentMe_Condition()
 {
@@ -268,22 +268,22 @@ FUNC INT DIA_Onar_LeeSentMe_Condition()
 };
 FUNC VOID DIA_Onar_LeeSentMe_Info()
 {
-	AI_Output (other, self, "DIA_Onar_LeeSentMe_15_00"); //Меня послал Ли. Я хочу работать в качестве наемника!
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_01"); //Он уже говорил со мной.
+	AI_Output (other, self, "DIA_Onar_LeeSentMe_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›Рё. РЇ С…РѕС‡Сѓ СЂР°Р±РѕС‚Р°С‚СЊ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РµРјРЅРёРєР°!
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_01"); //РћРЅ СѓР¶Рµ РіРѕРІРѕСЂРёР» СЃРѕ РјРЅРѕР№.
 	
 	if (Onar_WegenSldWerden == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_02"); //При нашей первой встрече у меня сложилось о тебе не самое лучшее мнение.
-		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_03"); //Но раз Ли полагает, что ты справишься, я, пожалуй, дам тебе шанс.
+		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_02"); //РџСЂРё РЅР°С€РµР№ РїРµСЂРІРѕР№ РІСЃС‚СЂРµС‡Рµ Сѓ РјРµРЅСЏ СЃР»РѕР¶РёР»РѕСЃСЊ Рѕ С‚РµР±Рµ РЅРµ СЃР°РјРѕРµ Р»СѓС‡С€РµРµ РјРЅРµРЅРёРµ.
+		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_03"); //РќРѕ СЂР°Р· Р›Рё РїРѕР»Р°РіР°РµС‚, С‡С‚Рѕ С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ, СЏ, РїРѕР¶Р°Р»СѓР№, РґР°Рј С‚РµР±Рµ С€Р°РЅСЃ.
 	};
 	
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_04"); //В конце концов, он отвечает за тебя. Так что приступай к своим обязанностям.
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_05"); //Но не выводи меня из себя! Оставь фермеров и служанок в покое, и даже не думай стащить что-нибудь, понятно?
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_06"); //А что касается всего остального, поговори с Ли.
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_07"); //А нам с тобой нужно обсудить только твое жалование.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_04"); //Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РѕРЅ РѕС‚РІРµС‡Р°РµС‚ Р·Р° С‚РµР±СЏ. РўР°Рє С‡С‚Рѕ РїСЂРёСЃС‚СѓРїР°Р№ Рє СЃРІРѕРёРј РѕР±СЏР·Р°РЅРЅРѕСЃС‚СЏРј.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_05"); //РќРѕ РЅРµ РІС‹РІРѕРґРё РјРµРЅСЏ РёР· СЃРµР±СЏ! РћСЃС‚Р°РІСЊ С„РµСЂРјРµСЂРѕРІ Рё СЃР»СѓР¶Р°РЅРѕРє РІ РїРѕРєРѕРµ, Рё РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№ СЃС‚Р°С‰РёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РїРѕРЅСЏС‚РЅРѕ?
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_06"); //Рђ С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РІСЃРµРіРѕ РѕСЃС‚Р°Р»СЊРЅРѕРіРѕ, РїРѕРіРѕРІРѕСЂРё СЃ Р›Рё.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_07"); //Рђ РЅР°Рј СЃ С‚РѕР±РѕР№ РЅСѓР¶РЅРѕ РѕР±СЃСѓРґРёС‚СЊ С‚РѕР»СЊРєРѕ С‚РІРѕРµ Р¶Р°Р»РѕРІР°РЅРёРµ.
 
 	Onar_Approved = TRUE;
-	B_LogEntry (TOPIC_BecomeSLD,"Онар дал мне свое одобрение. Теперь ничто не препятствует моему вступлению в ряды наемников.");
+	B_LogEntry (TOPIC_BecomeSLD,"РћРЅР°СЂ РґР°Р» РјРЅРµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ. РўРµРїРµСЂСЊ РЅРёС‡С‚Рѕ РЅРµ РїСЂРµРїСЏС‚СЃС‚РІСѓРµС‚ РјРѕРµРјСѓ РІСЃС‚СѓРїР»РµРЅРёСЋ РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ.");
 };
 
 
@@ -302,7 +302,7 @@ INSTANCE DIA_Onar_HowMuch   (C_INFO)
 	condition   = DIA_Onar_HowMuch_Condition;
 	information = DIA_Onar_HowMuch_Info;
 	permanent   = FALSE;
-	description = "Так что насчет моего жалования?";
+	description = "РўР°Рє С‡С‚Рѕ РЅР°СЃС‡РµС‚ РјРѕРµРіРѕ Р¶Р°Р»РѕРІР°РЅРёСЏ?";
 };
 FUNC INT DIA_Onar_HowMuch_Condition()
 {
@@ -313,78 +313,78 @@ FUNC INT DIA_Onar_HowMuch_Condition()
 };
 FUNC VOID DIA_Onar_HowMuch_Info()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_15_00"); //Так что насчет моего жалования?
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_01"); //Так, посмотрим...
+	AI_Output (other, self, "DIA_Onar_HowMuch_15_00"); //РўР°Рє С‡С‚Рѕ РЅР°СЃС‡РµС‚ РјРѕРµРіРѕ Р¶Р°Р»РѕРІР°РЅРёСЏ?
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_01"); //РўР°Рє, РїРѕСЃРјРѕС‚СЂРёРј...
 	
 	SOLD = 50;
 	
 	if (Onar_WegenSldWerden == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_02"); //Я не самого лучшего мнения о тебе.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_02"); //РЇ РЅРµ СЃР°РјРѕРіРѕ Р»СѓС‡С€РµРіРѕ РјРЅРµРЅРёСЏ Рѕ С‚РµР±Рµ.
 	};
 	
 	if (Onar_WegenSekob == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_03"); //Ты не отличаешься особой сообразительностью. Это очевидно после твоих похождений к Секобу.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_03"); //РўС‹ РЅРµ РѕС‚Р»РёС‡Р°РµС€СЊСЃСЏ РѕСЃРѕР±РѕР№ СЃРѕРѕР±СЂР°Р·РёС‚РµР»СЊРЅРѕСЃС‚СЊСЋ. Р­С‚Рѕ РѕС‡РµРІРёРґРЅРѕ РїРѕСЃР»Рµ С‚РІРѕРёС… РїРѕС…РѕР¶РґРµРЅРёР№ Рє РЎРµРєРѕР±Сѓ.
 		SOLD = SOLD - 10;
 	};
 	
 	if (ABSOLUTIONLEVEL_Farm > 1)
 	|| ( (B_GetGreatestPetzCrime (self) > CRIME_NONE) && (ABSOLUTIONLEVEL_Farm > 0) )
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_04"); //Ты уже неоднократно создавал проблемы здесь, на ферме.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_04"); //РўС‹ СѓР¶Рµ РЅРµРѕРґРЅРѕРєСЂР°С‚РЅРѕ СЃРѕР·РґР°РІР°Р» РїСЂРѕР±Р»РµРјС‹ Р·РґРµСЃСЊ, РЅР° С„РµСЂРјРµ.
 		SOLD = SOLD - 10;
 	};
 	
 	if (Onar_WegenPepe == TRUE)
 	&& ( (Onar_WegenSekob == TRUE) || (Onar_WegenSldWerden == TRUE) )
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_05"); //И ты постоянно допекаешь меня всяким вздором.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_05"); //Р С‚С‹ РїРѕСЃС‚РѕСЏРЅРЅРѕ РґРѕРїРµРєР°РµС€СЊ РјРµРЅСЏ РІСЃСЏРєРёРј РІР·РґРѕСЂРѕРј.
 		SOLD = SOLD - 10;
 	};
 	
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_06"); //Дай мне подумать...
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_06"); //Р”Р°Р№ РјРЅРµ РїРѕРґСѓРјР°С‚СЊ...
 	B_Say_Gold (self, other, SOLD);
 	
 	
 	Onar_SOLD_Day = Wld_GetDay();
 	Onar_SOLD_XP = other.exp;
 	
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_07"); //Что скажешь?
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_07"); //Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
-	Info_AddChoice (DIA_Onar_HowMuch, "Хорошо!", DIA_Onar_HowMuch_Ok);
-	Info_AddChoice (DIA_Onar_HowMuch, "Здесь не все...", DIA_Onar_HowMuch_More);
-	Info_AddChoice (DIA_Onar_HowMuch, "В день?", DIA_Onar_HowMuch_PerDay);
+	Info_AddChoice (DIA_Onar_HowMuch, "РҐРѕСЂРѕС€Рѕ!", DIA_Onar_HowMuch_Ok);
+	Info_AddChoice (DIA_Onar_HowMuch, "Р—РґРµСЃСЊ РЅРµ РІСЃРµ...", DIA_Onar_HowMuch_More);
+	Info_AddChoice (DIA_Onar_HowMuch, "Р’ РґРµРЅСЊ?", DIA_Onar_HowMuch_PerDay);
 };
 
 func void DIA_Onar_HowMuch_PerDay()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_PerDay_15_00"); //В день?
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_01"); //Кем ты себя возомнил? В неделю! Да и это для тебя много.
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_02"); //Давай, подойди сюда и забери свои деньги.
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_03"); //Я не собираюсь подносить их тебе.
+	AI_Output (other, self, "DIA_Onar_HowMuch_PerDay_15_00"); //Р’ РґРµРЅСЊ?
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_01"); //РљРµРј С‚С‹ СЃРµР±СЏ РІРѕР·РѕРјРЅРёР»? Р’ РЅРµРґРµР»СЋ! Р”Р° Рё СЌС‚Рѕ РґР»СЏ С‚РµР±СЏ РјРЅРѕРіРѕ.
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_02"); //Р”Р°РІР°Р№, РїРѕРґРѕР№РґРё СЃСЋРґР° Рё Р·Р°Р±РµСЂРё СЃРІРѕРё РґРµРЅСЊРіРё.
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_03"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РїРѕРґРЅРѕСЃРёС‚СЊ РёС… С‚РµР±Рµ.
 };
 
 func void DIA_Onar_HowMuch_More()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_More_15_00"); //Здесь не все...
-	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_01"); //Конечно, но ты можешь поработать на меня совсем бесплатно, если хочешь.
-	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_02"); //Это все, что ты получишь!
+	AI_Output (other, self, "DIA_Onar_HowMuch_More_15_00"); //Р—РґРµСЃСЊ РЅРµ РІСЃРµ...
+	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_01"); //РљРѕРЅРµС‡РЅРѕ, РЅРѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РЅР° РјРµРЅСЏ СЃРѕРІСЃРµРј Р±РµСЃРїР»Р°С‚РЅРѕ, РµСЃР»Рё С…РѕС‡РµС€СЊ.
+	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_02"); //Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
 	
 	Log_CreateTopic (Topic_Bonus, LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Я могу получить у Онара причитающееся мне вознаграждение, когда мне это заблагорассудится.");
+	B_LogEntry (Topic_Bonus,"РЇ РјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ Сѓ РћРЅР°СЂР° РїСЂРёС‡РёС‚Р°СЋС‰РµРµСЃСЏ РјРЅРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ, РєРѕРіРґР° РјРЅРµ СЌС‚Рѕ Р·Р°Р±Р»Р°РіРѕСЂР°СЃСЃСѓРґРёС‚СЃСЏ.");
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
 };
 	
 func void DIA_Onar_HowMuch_Ok()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_Ok_15_00"); //Хорошо!
-	AI_Output (self, other, "DIA_Onar_HowMuch_Ok_14_01"); //Я тоже так думаю. А теперь иди, поговори с Ли.
+	AI_Output (other, self, "DIA_Onar_HowMuch_Ok_15_00"); //РҐРѕСЂРѕС€Рѕ!
+	AI_Output (self, other, "DIA_Onar_HowMuch_Ok_14_01"); //РЇ С‚РѕР¶Рµ С‚Р°Рє РґСѓРјР°СЋ. Рђ С‚РµРїРµСЂСЊ РёРґРё, РїРѕРіРѕРІРѕСЂРё СЃ Р›Рё.
 	
 	Log_CreateTopic (Topic_Bonus, LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Я могу получить у Онара причитающееся мне вознаграждение, когда мне это заблагорассудится.");
+	B_LogEntry (Topic_Bonus,"РЇ РјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ Сѓ РћРЅР°СЂР° РїСЂРёС‡РёС‚Р°СЋС‰РµРµСЃСЏ РјРЅРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ, РєРѕРіРґР° РјРЅРµ СЌС‚Рѕ Р·Р°Р±Р»Р°РіРѕСЂР°СЃСЃСѓРґРёС‚СЃСЏ.");
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
 };
@@ -400,7 +400,7 @@ INSTANCE DIA_Onar_CollectGold (C_INFO)
 	condition   = DIA_Onar_CollectGold_Condition;
 	information = DIA_Onar_CollectGold_Info;
 	permanent   = TRUE;
-	description = "Заплати мне мое жалование!";
+	description = "Р—Р°РїР»Р°С‚Рё РјРЅРµ РјРѕРµ Р¶Р°Р»РѕРІР°РЅРёРµ!";
 };
 FUNC INT DIA_Onar_CollectGold_Condition()
 {
@@ -412,49 +412,49 @@ FUNC INT DIA_Onar_CollectGold_Condition()
 };
 FUNC VOID DIA_Onar_CollectGold_Info()
 {
-	AI_Output (other, self, "DIA_Onar_CollectGold_15_00"); //Заплати мне мое жалование!
+	AI_Output (other, self, "DIA_Onar_CollectGold_15_00"); //Р—Р°РїР»Р°С‚Рё РјРЅРµ РјРѕРµ Р¶Р°Р»РѕРІР°РЅРёРµ!
 	
 	if (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_01"); //Я плачу наемникам, а не охотникам на драконов.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_01"); //РЇ РїР»Р°С‡Сѓ РЅР°РµРјРЅРёРєР°Рј, Р° РЅРµ РѕС…РѕС‚РЅРёРєР°Рј РЅР° РґСЂР°РєРѕРЅРѕРІ.
 	}
 	else if (Torlof_TheOtherMission_TooLate == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_02"); //Ты плохо справляешься со своими поручениями!
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_03"); //Я спросил Торлофа, как у тебя идут дела. И он сказал мне, что на выполнение работы у тебя уходит целая вечность.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_04"); //Я не собираюсь платить лодырям.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_05"); //Теперь ты должен отработать несколько недель без оплаты! Может быть, тогда ты усвоишь этот урок.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_02"); //РўС‹ РїР»РѕС…Рѕ СЃРїСЂР°РІР»СЏРµС€СЊСЃСЏ СЃРѕ СЃРІРѕРёРјРё РїРѕСЂСѓС‡РµРЅРёСЏРјРё!
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_03"); //РЇ СЃРїСЂРѕСЃРёР» РўРѕСЂР»РѕС„Р°, РєР°Рє Сѓ С‚РµР±СЏ РёРґСѓС‚ РґРµР»Р°. Р РѕРЅ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РЅР° РІС‹РїРѕР»РЅРµРЅРёРµ СЂР°Р±РѕС‚С‹ Сѓ С‚РµР±СЏ СѓС…РѕРґРёС‚ С†РµР»Р°СЏ РІРµС‡РЅРѕСЃС‚СЊ.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_04"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РїР»Р°С‚РёС‚СЊ Р»РѕРґС‹СЂСЏРј.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_05"); //РўРµРїРµСЂСЊ С‚С‹ РґРѕР»Р¶РµРЅ РѕС‚СЂР°Р±РѕС‚Р°С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ Р±РµР· РѕРїР»Р°С‚С‹! РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РѕРіРґР° С‚С‹ СѓСЃРІРѕРёС€СЊ СЌС‚РѕС‚ СѓСЂРѕРє.
 	}
 	else if (B_GetGreatestPetzCrime(self) > CRIME_NONE)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_06"); //Я слышал, что ты устроил заварушку. Сначала пойди к Ли и урегулируй этот вопрос.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_06"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ СѓСЃС‚СЂРѕРёР» Р·Р°РІР°СЂСѓС€РєСѓ. РЎРЅР°С‡Р°Р»Р° РїРѕР№РґРё Рє Р›Рё Рё СѓСЂРµРіСѓР»РёСЂСѓР№ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ.
 	}
 	else if (Wld_GetDay() <= Onar_SOLD_Day)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_07"); //Ты что, совсем выжил из ума?
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_08"); //Ты должен поработать у меня хотя бы день. Ты получишь свое жалование завтра.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_07"); //РўС‹ С‡С‚Рѕ, СЃРѕРІСЃРµРј РІС‹Р¶РёР» РёР· СѓРјР°?
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_08"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ Сѓ РјРµРЅСЏ С…РѕС‚СЏ Р±С‹ РґРµРЅСЊ. РўС‹ РїРѕР»СѓС‡РёС€СЊ СЃРІРѕРµ Р¶Р°Р»РѕРІР°РЅРёРµ Р·Р°РІС‚СЂР°.
 	}
 	else if (Wld_GetDay() - 2 >= Onar_SOLD_Day)
 	{
 		if (Wld_GetDay() - 2 == Onar_SOLD_Day)
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_09"); //Где ты был вчера?
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_09"); //Р“РґРµ С‚С‹ Р±С‹Р» РІС‡РµСЂР°?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_10"); //Где ты был последние пару дней?
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_10"); //Р“РґРµ С‚С‹ Р±С‹Р» РїРѕСЃР»РµРґРЅРёРµ РїР°СЂСѓ РґРЅРµР№?
 		};
 	
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_11"); //Да ты здесь даже не появлялся!
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_12"); //Кто знает, где ты шлялся.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_11"); //Р”Р° С‚С‹ Р·РґРµСЃСЊ РґР°Р¶Рµ РЅРµ РїРѕСЏРІР»СЏР»СЃСЏ!
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_12"); //РљС‚Рѕ Р·РЅР°РµС‚, РіРґРµ С‚С‹ С€Р»СЏР»СЃСЏ.
 		Onar_SOLD_Day = Wld_GetDay();
 		Onar_SOLD_XP = other.exp;
 	}
-	else //genau 1 Tag spдter...
+	else //genau 1 Tag spРґter...
 	{
 		if (other.exp > Onar_SOLD_XP + 200)
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_13"); //(сокрушенно) Ох, ладно. Вот твое жалование.
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_13"); //(СЃРѕРєСЂСѓС€РµРЅРЅРѕ) РћС…, Р»Р°РґРЅРѕ. Р’РѕС‚ С‚РІРѕРµ Р¶Р°Р»РѕРІР°РЅРёРµ.
 			
 			//patch m.F. 
 			B_GiveInvItems (self, other, itmi_gold, SOLD);
@@ -462,8 +462,8 @@ FUNC VOID DIA_Onar_CollectGold_Info()
 		}
 		else //nur gepennt
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_14"); //Что? Да ты же ничего не делал, только спал и слонялся из угла в угол!
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_15"); //Я не собираюсь платить за это!
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_14"); //Р§С‚Рѕ? Р”Р° С‚С‹ Р¶Рµ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°Р», С‚РѕР»СЊРєРѕ СЃРїР°Р» Рё СЃР»РѕРЅСЏР»СЃСЏ РёР· СѓРіР»Р° РІ СѓРіРѕР»!
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_15"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ!
 		};
 		
 		Onar_SOLD_Day = Wld_GetDay();
@@ -482,7 +482,7 @@ INSTANCE DIA_Onar_MariaGold (C_INFO)
 	condition   = DIA_Onar_MariaGold_Condition;
 	information = DIA_Onar_MariaGold_Info;
 	permanent   = FALSE;
-	description = "Мария думает, что я получаю недостаточно.";
+	description = "РњР°СЂРёСЏ РґСѓРјР°РµС‚, С‡С‚Рѕ СЏ РїРѕР»СѓС‡Р°СЋ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.";
 };
 FUNC INT DIA_Onar_MariaGold_Condition()
 {
@@ -493,14 +493,14 @@ FUNC INT DIA_Onar_MariaGold_Condition()
 };
 FUNC VOID DIA_Onar_MariaGold_Info()
 {
-	AI_Output (other, self, "DIA_Onar_MariaGold_15_00"); //Мария думает, что я получаю недостаточно.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_01"); //Что?
-	AI_Output (other, self, "DIA_Onar_MariaGold_15_02"); //Она сказала, что ты должен платить мне больше.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_03"); //(ворчливо) Эта баба сует свой нос во все щели.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_04"); //Она сказала сколько?
-	AI_Output (other, self, "DIA_Onar_MariaGold_15_05"); //Нет.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_06"); //Хорошо, начиная со следующего жалования, ты будешь получать на 10 монет больше.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_07"); //Но ни монетой больше, понятно?
+	AI_Output (other, self, "DIA_Onar_MariaGold_15_00"); //РњР°СЂРёСЏ РґСѓРјР°РµС‚, С‡С‚Рѕ СЏ РїРѕР»СѓС‡Р°СЋ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_01"); //Р§С‚Рѕ?
+	AI_Output (other, self, "DIA_Onar_MariaGold_15_02"); //РћРЅР° СЃРєР°Р·Р°Р»Р°, С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РїР»Р°С‚РёС‚СЊ РјРЅРµ Р±РѕР»СЊС€Рµ.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_03"); //(РІРѕСЂС‡Р»РёРІРѕ) Р­С‚Р° Р±Р°Р±Р° СЃСѓРµС‚ СЃРІРѕР№ РЅРѕСЃ РІРѕ РІСЃРµ С‰РµР»Рё.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_04"); //РћРЅР° СЃРєР°Р·Р°Р»Р° СЃРєРѕР»СЊРєРѕ?
+	AI_Output (other, self, "DIA_Onar_MariaGold_15_05"); //РќРµС‚.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_06"); //РҐРѕСЂРѕС€Рѕ, РЅР°С‡РёРЅР°СЏ СЃРѕ СЃР»РµРґСѓСЋС‰РµРіРѕ Р¶Р°Р»РѕРІР°РЅРёСЏ, С‚С‹ Р±СѓРґРµС€СЊ РїРѕР»СѓС‡Р°С‚СЊ РЅР° 10 РјРѕРЅРµС‚ Р±РѕР»СЊС€Рµ.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_07"); //РќРѕ РЅРё РјРѕРЅРµС‚РѕР№ Р±РѕР»СЊС€Рµ, РїРѕРЅСЏС‚РЅРѕ?
 	
 	SOLD = SOLD + 10;
 };	
@@ -519,7 +519,7 @@ instance DIA_Onar_WannaSheep	(C_INFO)
 	condition	 = 	DIA_Onar_WannaSheep_Condition;
 	information	 = 	DIA_Onar_WannaSheep_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу купить овцу!";
+	description	 = 	"РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ РѕРІС†Сѓ!";
 };
 func int DIA_Onar_WannaSheep_Condition ()
 {	
@@ -530,16 +530,16 @@ func int DIA_Onar_WannaSheep_Condition ()
 };
 func void DIA_Onar_WannaSheep_Info ()
 {
-	AI_Output (other, self, "DIA_Onar_WannaSheep_15_00"); //Я хочу купить овцу!
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_01"); //А что ты тогда здесь делаешь? Ты где-то видишь здесь овцу?
-	AI_Output (other, self, "DIA_Onar_WannaSheep_15_02"); //Я...
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_03"); //Если ты хочешь купить овцу, иди на пастбище. Оно находится справа от моего дома.
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_04"); //Пепе продаст тебе одну.
+	AI_Output (other, self, "DIA_Onar_WannaSheep_15_00"); //РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ РѕРІС†Сѓ!
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_01"); //Рђ С‡С‚Рѕ С‚С‹ С‚РѕРіРґР° Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ? РўС‹ РіРґРµ-С‚Рѕ РІРёРґРёС€СЊ Р·РґРµСЃСЊ РѕРІС†Сѓ?
+	AI_Output (other, self, "DIA_Onar_WannaSheep_15_02"); //РЇ...
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_03"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РєСѓРїРёС‚СЊ РѕРІС†Сѓ, РёРґРё РЅР° РїР°СЃС‚Р±РёС‰Рµ. РћРЅРѕ РЅР°С…РѕРґРёС‚СЃСЏ СЃРїСЂР°РІР° РѕС‚ РјРѕРµРіРѕ РґРѕРјР°.
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_04"); //РџРµРїРµ РїСЂРѕРґР°СЃС‚ С‚РµР±Рµ РѕРґРЅСѓ.
 	
 	if (Npc_IsDead (Pepe))
 	{
-		AI_Output (other, self, "DIA_Onar_WannaSheep_15_05"); //Боюсь, что Пепе мертв.
-		AI_Output (self, other, "DIA_Onar_WannaSheep_14_06"); //Ох! В таком случае... оставь 200 золота мне, и сам выбери себе овцу на пастбище.
+		AI_Output (other, self, "DIA_Onar_WannaSheep_15_05"); //Р‘РѕСЋСЃСЊ, С‡С‚Рѕ РџРµРїРµ РјРµСЂС‚РІ.
+		AI_Output (self, other, "DIA_Onar_WannaSheep_14_06"); //РћС…! Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ... РѕСЃС‚Р°РІСЊ 200 Р·РѕР»РѕС‚Р° РјРЅРµ, Рё СЃР°Рј РІС‹Р±РµСЂРё СЃРµР±Рµ РѕРІС†Сѓ РЅР° РїР°СЃС‚Р±РёС‰Рµ.
 		
 		Onar_SellSheep = TRUE;
 	};
@@ -555,7 +555,7 @@ instance DIA_Onar_BuyLiesel	(C_INFO)
 	condition	 = 	DIA_Onar_BuyLiesel_Condition;
 	information	 = 	DIA_Onar_BuyLiesel_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Вот, держи, 200 золотых монет. Дай мне овцу.";
+	description	 = 	"Р’РѕС‚, РґРµСЂР¶Рё, 200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р”Р°Р№ РјРЅРµ РѕРІС†Сѓ.";
 };
 func int DIA_Onar_BuyLiesel_Condition ()
 {	
@@ -566,12 +566,12 @@ func int DIA_Onar_BuyLiesel_Condition ()
 };
 func void DIA_Onar_BuyLiesel_Info ()
 {
-	AI_Output (other, self, "DIA_Onar_BuyLiesel_15_00"); //Вот, держи, 200 золотых монет. Дай мне овцу.
+	AI_Output (other, self, "DIA_Onar_BuyLiesel_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё, 200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р”Р°Р№ РјРЅРµ РѕРІС†Сѓ.
 	
 	if (B_GiveInvItems  (other, self, ItMi_Gold, 200))
 	{
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_01"); //Ты можешь сам выбрать себе овцу на пастбище.
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02"); //Одна из них обязательно пойдет за тобой. Большинство моих овец отзываются на имя Бетси.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_01"); //РўС‹ РјРѕР¶РµС€СЊ СЃР°Рј РІС‹Р±СЂР°С‚СЊ СЃРµР±Рµ РѕРІС†Сѓ РЅР° РїР°СЃС‚Р±РёС‰Рµ.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02"); //РћРґРЅР° РёР· РЅРёС… РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїРѕР№РґРµС‚ Р·Р° С‚РѕР±РѕР№. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РјРѕРёС… РѕРІРµС† РѕС‚Р·С‹РІР°СЋС‚СЃСЏ РЅР° РёРјСЏ Р‘РµС‚СЃРё.
 		
 		Wld_InsertNpc	(Follow_Sheep,"NW_BIGFARM_SHEEP2_02");
 	
@@ -579,6 +579,6 @@ func void DIA_Onar_BuyLiesel_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_03"); //У тебя нет столько золота! Не трать понапрасну мое драгоценное время.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_03"); //РЈ С‚РµР±СЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°! РќРµ С‚СЂР°С‚СЊ РїРѕРЅР°РїСЂР°СЃРЅСѓ РјРѕРµ РґСЂР°РіРѕС†РµРЅРЅРѕРµ РІСЂРµРјСЏ.
 	};
 };

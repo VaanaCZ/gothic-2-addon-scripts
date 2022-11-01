@@ -59,20 +59,20 @@ func void DIA_SylvioDJG_HelloAgain_Info ()
 {
 	if((other.guild == GIL_SLD)||(other.guild == GIL_DJG))
 	{
-		AI_Output			(self, other,"DIA_SylvioDJG_HelloAgain_09_00"); //Ох, будь я проклят! Ты тоже решил подзаработать, ха? Я знал это! У тебя душа наемника.
-		AI_Output			(self, other,"DIA_SylvioDJG_HelloAgain_09_01"); //Послушай, если ты думаешь, что загребешь здесь кучу золота, ты жестоко ошибаешься. Я был здесь первым.
+		AI_Output			(self, other,"DIA_SylvioDJG_HelloAgain_09_00"); //РћС…, Р±СѓРґСЊ СЏ РїСЂРѕРєР»СЏС‚! РўС‹ С‚РѕР¶Рµ СЂРµС€РёР» РїРѕРґР·Р°СЂР°Р±РѕС‚Р°С‚СЊ, С…Р°? РЇ Р·РЅР°Р» СЌС‚Рѕ! РЈ С‚РµР±СЏ РґСѓС€Р° РЅР°РµРјРЅРёРєР°.
+		AI_Output			(self, other,"DIA_SylvioDJG_HelloAgain_09_01"); //РџРѕСЃР»СѓС€Р°Р№, РµСЃР»Рё С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ Р·Р°РіСЂРµР±РµС€СЊ Р·РґРµСЃСЊ РєСѓС‡Сѓ Р·РѕР»РѕС‚Р°, С‚С‹ Р¶РµСЃС‚РѕРєРѕ РѕС€РёР±Р°РµС€СЊСЃСЏ. РЇ Р±С‹Р» Р·РґРµСЃСЊ РїРµСЂРІС‹Рј.
 	}
 	else if (other.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_SylvioDJG_HelloAgain_09_02"); //Эй, ты! Меня тошнит от магов! Иди куда-нибудь еще! Здесь для тебя ничего нет.
+		AI_Output			(self, other, "DIA_SylvioDJG_HelloAgain_09_02"); //Р­Р№, С‚С‹! РњРµРЅСЏ С‚РѕС€РЅРёС‚ РѕС‚ РјР°РіРѕРІ! РРґРё РєСѓРґР°-РЅРёР±СѓРґСЊ РµС‰Рµ! Р—РґРµСЃСЊ РґР»СЏ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµС‚.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_SylvioDJG_HelloAgain_09_03"); //Эй ты, паладин! Возвращайся в свою шахту. Здесь для тебя ничего нет.
+		AI_Output			(self, other, "DIA_SylvioDJG_HelloAgain_09_03"); //Р­Р№ С‚С‹, РїР°Р»Р°РґРёРЅ! Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РІ СЃРІРѕСЋ С€Р°С…С‚Сѓ. Р—РґРµСЃСЊ РґР»СЏ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµС‚.
 	};
 	
-	AI_Output			(other, self, "DIA_SylvioDJG_HelloAgain_15_04"); //Понял. Никто не хочет расставаться с награбленным.
-	AI_Output			(self, other, "DIA_SylvioDJG_HelloAgain_09_05"); //Ты сам сказал это. Исчезни.
+	AI_Output			(other, self, "DIA_SylvioDJG_HelloAgain_15_04"); //РџРѕРЅСЏР». РќРёРєС‚Рѕ РЅРµ С…РѕС‡РµС‚ СЂР°СЃСЃС‚Р°РІР°С‚СЊСЃСЏ СЃ РЅР°РіСЂР°Р±Р»РµРЅРЅС‹Рј.
+	AI_Output			(self, other, "DIA_SylvioDJG_HelloAgain_09_05"); //РўС‹ СЃР°Рј СЃРєР°Р·Р°Р» СЌС‚Рѕ. РСЃС‡РµР·РЅРё.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -85,7 +85,7 @@ instance DIA_Sylvio_VERSAGER		(C_INFO)
 	condition	 = 	DIA_Sylvio_VERSAGER_Condition;
 	information	 = 	DIA_Sylvio_VERSAGER_Info;
 
-	description	 = 	"А что если не исчезну?";
+	description	 = 	"Рђ С‡С‚Рѕ РµСЃР»Рё РЅРµ РёСЃС‡РµР·РЅСѓ?";
 };
 
 func int DIA_Sylvio_VERSAGER_Condition ()
@@ -99,8 +99,8 @@ func int DIA_Sylvio_VERSAGER_Condition ()
 
 func void DIA_Sylvio_VERSAGER_Info ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_VERSAGER_15_00"); //А что если не исчезну?
-	AI_Output			(self, other, "DIA_Sylvio_VERSAGER_09_01"); //Не строй из себя крутого, выскочка, иначе тебя ждет такой же конец, как вот тех неудачников, лежащих в снегу.
+	AI_Output			(other, self, "DIA_Sylvio_VERSAGER_15_00"); //Рђ С‡С‚Рѕ РµСЃР»Рё РЅРµ РёСЃС‡РµР·РЅСѓ?
+	AI_Output			(self, other, "DIA_Sylvio_VERSAGER_09_01"); //РќРµ СЃС‚СЂРѕР№ РёР· СЃРµР±СЏ РєСЂСѓС‚РѕРіРѕ, РІС‹СЃРєРѕС‡РєР°, РёРЅР°С‡Рµ С‚РµР±СЏ Р¶РґРµС‚ С‚Р°РєРѕР№ Р¶Рµ РєРѕРЅРµС†, РєР°Рє РІРѕС‚ С‚РµС… РЅРµСѓРґР°С‡РЅРёРєРѕРІ, Р»РµР¶Р°С‰РёС… РІ СЃРЅРµРіСѓ.
 };
 
 
@@ -114,7 +114,7 @@ instance DIA_Sylvio_DEINELEUTE		(C_INFO)
 	condition	 = 	DIA_Sylvio_DEINELEUTE_Condition;
 	information	 = 	DIA_Sylvio_DEINELEUTE_Info;
 
-	description	 = 	"Это твои люди?";
+	description	 = 	"Р­С‚Рѕ С‚РІРѕРё Р»СЋРґРё?";
 };
 
 func int DIA_Sylvio_DEINELEUTE_Condition ()
@@ -129,8 +129,8 @@ func int DIA_Sylvio_DEINELEUTE_Condition ()
 
 func void DIA_Sylvio_DEINELEUTE_Info ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_DEINELEUTE_15_00"); //Это твои люди?
-	AI_Output			(self, other, "DIA_Sylvio_DEINELEUTE_09_01"); //Больше нет. Не такая уж большая потеря. Эти идиоты все равно мало что стоили.
+	AI_Output			(other, self, "DIA_Sylvio_DEINELEUTE_15_00"); //Р­С‚Рѕ С‚РІРѕРё Р»СЋРґРё?
+	AI_Output			(self, other, "DIA_Sylvio_DEINELEUTE_09_01"); //Р‘РѕР»СЊС€Рµ РЅРµС‚. РќРµ С‚Р°РєР°СЏ СѓР¶ Р±РѕР»СЊС€Р°СЏ РїРѕС‚РµСЂСЏ. Р­С‚Рё РёРґРёРѕС‚С‹ РІСЃРµ СЂР°РІРЅРѕ РјР°Р»Рѕ С‡С‚Рѕ СЃС‚РѕРёР»Рё.
 };
 
 
@@ -144,7 +144,7 @@ instance DIA_Sylvio_WASISTPASSIERT		(C_INFO)
 	condition	 = 	DIA_Sylvio_WASISTPASSIERT_Condition;
 	information	 = 	DIA_Sylvio_WASISTPASSIERT_Info;
 
-	description	 = 	"Что случилось с ними?";
+	description	 = 	"Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РЅРёРјРё?";
 };
 
 func int DIA_Sylvio_WASISTPASSIERT_Condition ()
@@ -158,70 +158,70 @@ func int DIA_Sylvio_WASISTPASSIERT_Condition ()
 
 func void DIA_Sylvio_WASISTPASSIERT_Info ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_15_00"); //Что случилось с ними?
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_09_01"); //Они не смогли пройти мимо этих ледяных гигантов. Те затоптали их.
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_09_02"); //Если ты такой крутой, может, ты попробуешь?
+	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_15_00"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РЅРёРјРё?
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_09_01"); //РћРЅРё РЅРµ СЃРјРѕРіР»Рё РїСЂРѕР№С‚Рё РјРёРјРѕ СЌС‚РёС… Р»РµРґСЏРЅС‹С… РіРёРіР°РЅС‚РѕРІ. РўРµ Р·Р°С‚РѕРїС‚Р°Р»Рё РёС….
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_09_02"); //Р•СЃР»Рё С‚С‹ С‚Р°РєРѕР№ РєСЂСѓС‚РѕР№, РјРѕР¶РµС‚, С‚С‹ РїРѕРїСЂРѕР±СѓРµС€СЊ?
 
 
-	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "Хорошо. Почему бы и нет?", DIA_Sylvio_WASISTPASSIERT_ok );
-	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "Чем это тебе поможет, если я сделаю это?", DIA_Sylvio_WASISTPASSIERT_washastdudavon );
-	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "А что мне с этого будет?", DIA_Sylvio_WASISTPASSIERT_warum );
-	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "Почему ты не расправишься с ними сам?", DIA_Sylvio_WASISTPASSIERT_selbst );
+	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "РҐРѕСЂРѕС€Рѕ. РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚?", DIA_Sylvio_WASISTPASSIERT_ok );
+	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "Р§РµРј СЌС‚Рѕ С‚РµР±Рµ РїРѕРјРѕР¶РµС‚, РµСЃР»Рё СЏ СЃРґРµР»Р°СЋ СЌС‚Рѕ?", DIA_Sylvio_WASISTPASSIERT_washastdudavon );
+	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "Рђ С‡С‚Рѕ РјРЅРµ СЃ СЌС‚РѕРіРѕ Р±СѓРґРµС‚?", DIA_Sylvio_WASISTPASSIERT_warum );
+	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЂР°СЃРїСЂР°РІРёС€СЊСЃСЏ СЃ РЅРёРјРё СЃР°Рј?", DIA_Sylvio_WASISTPASSIERT_selbst );
 
 	Log_CreateTopic (TOPIC_SylvioKillIceGolem, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_SylvioKillIceGolem, LOG_RUNNING);
-	B_LogEntry (TOPIC_SylvioKillIceGolem,"Сильвио испугался двух ледяных големов у входа в заснеженный район Долины рудников."); 
+	B_LogEntry (TOPIC_SylvioKillIceGolem,"РЎРёР»СЊРІРёРѕ РёСЃРїСѓРіР°Р»СЃСЏ РґРІСѓС… Р»РµРґСЏРЅС‹С… РіРѕР»РµРјРѕРІ Сѓ РІС…РѕРґР° РІ Р·Р°СЃРЅРµР¶РµРЅРЅС‹Р№ СЂР°Р№РѕРЅ Р”РѕР»РёРЅС‹ СЂСѓРґРЅРёРєРѕРІ."); 
 
 	MIS_DJG_Sylvio_KillIceGolem = LOG_RUNNING;
 };
 func void DIA_Sylvio_WASISTPASSIERT_selbst ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_selbst_15_00"); //Почему ты не расправишься с ними сам?
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_selbst_09_01"); //Давай, давай. Не мели чепухи.
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_selbst_09_02"); //По-моему, у тебя дрожат коленки.
+	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_selbst_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЂР°СЃРїСЂР°РІРёС€СЊСЃСЏ СЃ РЅРёРјРё СЃР°Рј?
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_selbst_09_01"); //Р”Р°РІР°Р№, РґР°РІР°Р№. РќРµ РјРµР»Рё С‡РµРїСѓС…Рё.
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_selbst_09_02"); //РџРѕ-РјРѕРµРјСѓ, Сѓ С‚РµР±СЏ РґСЂРѕР¶Р°С‚ РєРѕР»РµРЅРєРё.
 	
-	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "Я не играю в твои игры.", DIA_Sylvio_WASISTPASSIERT_keinInteresse );
+	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "РЇ РЅРµ РёРіСЂР°СЋ РІ С‚РІРѕРё РёРіСЂС‹.", DIA_Sylvio_WASISTPASSIERT_keinInteresse );
 
 };
 var int DJG_Sylvio_PromisedMoney;
 func void DIA_Sylvio_WASISTPASSIERT_warum ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_warum_15_00"); //Что я за это получу?
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_warum_09_01"); //Не знаю. Ну, скажем... 1000 золотых монет. Как тебе это?
+	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_warum_15_00"); //Р§С‚Рѕ СЏ Р·Р° СЌС‚Рѕ РїРѕР»СѓС‡Сѓ?
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_warum_09_01"); //РќРµ Р·РЅР°СЋ. РќСѓ, СЃРєР°Р¶РµРј... 1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. РљР°Рє С‚РµР±Рµ СЌС‚Рѕ?
 
 	DJG_Sylvio_PromisedMoney = TRUE;
 };
 
 func void DIA_Sylvio_WASISTPASSIERT_washastdudavon ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_washastdudavon_15_00"); //Чем это тебе поможет, если я сделаю это?
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_washastdudavon_09_01"); //Тебе это все равно. Но, отвечая на твой вопрос, скажу: я хочу попасть в этот ледяной район.
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_washastdudavon_09_02"); //К сожалению, на моем пути стоят эти чертовы твари.
+	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_washastdudavon_15_00"); //Р§РµРј СЌС‚Рѕ С‚РµР±Рµ РїРѕРјРѕР¶РµС‚, РµСЃР»Рё СЏ СЃРґРµР»Р°СЋ СЌС‚Рѕ?
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_washastdudavon_09_01"); //РўРµР±Рµ СЌС‚Рѕ РІСЃРµ СЂР°РІРЅРѕ. РќРѕ, РѕС‚РІРµС‡Р°СЏ РЅР° С‚РІРѕР№ РІРѕРїСЂРѕСЃ, СЃРєР°Р¶Сѓ: СЏ С…РѕС‡Сѓ РїРѕРїР°СЃС‚СЊ РІ СЌС‚РѕС‚ Р»РµРґСЏРЅРѕР№ СЂР°Р№РѕРЅ.
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_washastdudavon_09_02"); //Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РЅР° РјРѕРµРј РїСѓС‚Рё СЃС‚РѕСЏС‚ СЌС‚Рё С‡РµСЂС‚РѕРІС‹ С‚РІР°СЂРё.
 	
-	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "Что тебе делать в этом ледяном районе?", DIA_Sylvio_WASISTPASSIERT_Eisregion );
+	Info_AddChoice	(DIA_Sylvio_WASISTPASSIERT, "Р§С‚Рѕ С‚РµР±Рµ РґРµР»Р°С‚СЊ РІ СЌС‚РѕРј Р»РµРґСЏРЅРѕРј СЂР°Р№РѕРЅРµ?", DIA_Sylvio_WASISTPASSIERT_Eisregion );
 
 };
 
 func void DIA_Sylvio_WASISTPASSIERT_keinInteresse ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_NEIN_15_00"); //Я не играю в твои игры.
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_NEIN_09_01"); //Ах-х. Тогда убирайся отсюда, трус.
+	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_NEIN_15_00"); //РЇ РЅРµ РёРіСЂР°СЋ РІ С‚РІРѕРё РёРіСЂС‹.
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_NEIN_09_01"); //РђС…-С…. РўРѕРіРґР° СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°, С‚СЂСѓСЃ.
 
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Sylvio_WASISTPASSIERT_Eisregion ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_15_00"); //Что тебе делать в этом ледяном районе?
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_09_01"); //Ты когда-нибудь перестанешь задавать вопросы, а? Хорошо, я скажу тебе.
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_09_02"); //Там, за этими утесами, находится ледяная долина. Ты такой никогда раньше не видел.
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_09_03"); //Там скрывается ледяной дракон вместе со своей ордой.
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_09_04"); //Мне нужно это. Так как? Да или нет?
+	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_15_00"); //Р§С‚Рѕ С‚РµР±Рµ РґРµР»Р°С‚СЊ РІ СЌС‚РѕРј Р»РµРґСЏРЅРѕРј СЂР°Р№РѕРЅРµ?
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_09_01"); //РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РїРµСЂРµСЃС‚Р°РЅРµС€СЊ Р·Р°РґР°РІР°С‚СЊ РІРѕРїСЂРѕСЃС‹, Р°? РҐРѕСЂРѕС€Рѕ, СЏ СЃРєР°Р¶Сѓ С‚РµР±Рµ.
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_09_02"); //РўР°Рј, Р·Р° СЌС‚РёРјРё СѓС‚РµСЃР°РјРё, РЅР°С…РѕРґРёС‚СЃСЏ Р»РµРґСЏРЅР°СЏ РґРѕР»РёРЅР°. РўС‹ С‚Р°РєРѕР№ РЅРёРєРѕРіРґР° СЂР°РЅСЊС€Рµ РЅРµ РІРёРґРµР».
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_09_03"); //РўР°Рј СЃРєСЂС‹РІР°РµС‚СЃСЏ Р»РµРґСЏРЅРѕР№ РґСЂР°РєРѕРЅ РІРјРµСЃС‚Рµ СЃРѕ СЃРІРѕРµР№ РѕСЂРґРѕР№.
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_keinInteresse_09_04"); //РњРЅРµ РЅСѓР¶РЅРѕ СЌС‚Рѕ. РўР°Рє РєР°Рє? Р”Р° РёР»Рё РЅРµС‚?
 };
 func void DIA_Sylvio_WASISTPASSIERT_ok ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_ok_15_00"); //Хорошо. Почему бы и нет?
-	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_ok_09_01"); //Тогда поторопись. Я не могу долго ждать.
+	AI_Output			(other, self, "DIA_Sylvio_WASISTPASSIERT_ok_15_00"); //РҐРѕСЂРѕС€Рѕ. РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚?
+	AI_Output			(self, other, "DIA_Sylvio_WASISTPASSIERT_ok_09_01"); //РўРѕРіРґР° РїРѕС‚РѕСЂРѕРїРёСЃСЊ. РЇ РЅРµ РјРѕРіСѓ РґРѕР»РіРѕ Р¶РґР°С‚СЊ.
 
 	AI_StopProcessInfos	(self);
 };
@@ -236,7 +236,7 @@ instance DIA_Sylvio_ICEGOLEMSKILLED		(C_INFO)
 	condition	 = 	DIA_Sylvio_ICEGOLEMSKILLED_Condition;
 	information	 = 	DIA_Sylvio_ICEGOLEMSKILLED_Info;
 
-	description	 = 	"Твой путь чист!";
+	description	 = 	"РўРІРѕР№ РїСѓС‚СЊ С‡РёСЃС‚!";
 };
 
 func int DIA_Sylvio_ICEGOLEMSKILLED_Condition ()
@@ -252,13 +252,13 @@ func int DIA_Sylvio_ICEGOLEMSKILLED_Condition ()
 
 func void DIA_Sylvio_ICEGOLEMSKILLED_Info ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_ICEGOLEMSKILLED_15_00"); //Твой путь чист! Ледяных гигантов больше нет.
-	AI_Output			(self, other, "DIA_Sylvio_ICEGOLEMSKILLED_09_01"); //Отличная работа. Посмотрим, что там у нас есть.
+	AI_Output			(other, self, "DIA_Sylvio_ICEGOLEMSKILLED_15_00"); //РўРІРѕР№ РїСѓС‚СЊ С‡РёСЃС‚! Р›РµРґСЏРЅС‹С… РіРёРіР°РЅС‚РѕРІ Р±РѕР»СЊС€Рµ РЅРµС‚.
+	AI_Output			(self, other, "DIA_Sylvio_ICEGOLEMSKILLED_09_01"); //РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°. РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ С‚Р°Рј Сѓ РЅР°СЃ РµСЃС‚СЊ.
 
 	if (DJG_Sylvio_PromisedMoney  == TRUE)
 	{
-	AI_Output			(other, self, "DIA_Sylvio_ICEGOLEMSKILLED_15_02"); //Минуточку. А как мои деньги?
-	AI_Output			(self, other, "DIA_Sylvio_ICEGOLEMSKILLED_09_03"); //Всему свое время.
+	AI_Output			(other, self, "DIA_Sylvio_ICEGOLEMSKILLED_15_02"); //РњРёРЅСѓС‚РѕС‡РєСѓ. Рђ РєР°Рє РјРѕРё РґРµРЅСЊРіРё?
+	AI_Output			(self, other, "DIA_Sylvio_ICEGOLEMSKILLED_09_03"); //Р’СЃРµРјСѓ СЃРІРѕРµ РІСЂРµРјСЏ.
 	};
 
 	AI_StopProcessInfos	(self);
@@ -280,7 +280,7 @@ instance DIA_Sylvio_WASJETZT		(C_INFO)
 	condition	 = 	DIA_Sylvio_WASJETZT_Condition;
 	information	 = 	DIA_Sylvio_WASJETZT_Info;
 
-	description	 = 	"Что еще?";
+	description	 = 	"Р§С‚Рѕ РµС‰Рµ?";
 };
 
 func int DIA_Sylvio_WASJETZT_Condition ()
@@ -294,53 +294,53 @@ func int DIA_Sylvio_WASJETZT_Condition ()
 
 func void DIA_Sylvio_WASJETZT_Info ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_15_00"); //Что еще?
-	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_09_01"); //Ну. Мне что-то обстановка там не очень нравится.
-	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_09_02"); //Будет лучше всего, если ты пойдешь вперед, а я пойду за тобой.
+	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_15_00"); //Р§С‚Рѕ РµС‰Рµ?
+	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_09_01"); //РќСѓ. РњРЅРµ С‡С‚Рѕ-С‚Рѕ РѕР±СЃС‚Р°РЅРѕРІРєР° С‚Р°Рј РЅРµ РѕС‡РµРЅСЊ РЅСЂР°РІРёС‚СЃСЏ.
+	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_09_02"); //Р‘СѓРґРµС‚ Р»СѓС‡С€Рµ РІСЃРµРіРѕ, РµСЃР»Рё С‚С‹ РїРѕР№РґРµС€СЊ РІРїРµСЂРµРґ, Р° СЏ РїРѕР№РґСѓ Р·Р° С‚РѕР±РѕР№.
 
-	Info_AddChoice	(DIA_Sylvio_WASJETZT, "Хорошо, пошли.", DIA_Sylvio_WASJETZT_ok );
-	Info_AddChoice	(DIA_Sylvio_WASJETZT, "Ты боишься?", DIA_Sylvio_WASJETZT_trennen );
-	Info_AddChoice	(DIA_Sylvio_WASJETZT, "Я не собираюсь делать всю грязную работу за тебя.", DIA_Sylvio_WASJETZT_nein );
+	Info_AddChoice	(DIA_Sylvio_WASJETZT, "РҐРѕСЂРѕС€Рѕ, РїРѕС€Р»Рё.", DIA_Sylvio_WASJETZT_ok );
+	Info_AddChoice	(DIA_Sylvio_WASJETZT, "РўС‹ Р±РѕРёС€СЊСЃСЏ?", DIA_Sylvio_WASJETZT_trennen );
+	Info_AddChoice	(DIA_Sylvio_WASJETZT, "РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РґРµР»Р°С‚СЊ РІСЃСЋ РіСЂСЏР·РЅСѓСЋ СЂР°Р±РѕС‚Сѓ Р·Р° С‚РµР±СЏ.", DIA_Sylvio_WASJETZT_nein );
 	if (DJG_Sylvio_PromisedMoney  == TRUE)
 	{
-	Info_AddChoice	(DIA_Sylvio_WASJETZT, "Сначала, я хочу увидеть свои деньги.", DIA_Sylvio_WASJETZT_Geld );
+	Info_AddChoice	(DIA_Sylvio_WASJETZT, "РЎРЅР°С‡Р°Р»Р°, СЏ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ СЃРІРѕРё РґРµРЅСЊРіРё.", DIA_Sylvio_WASJETZT_Geld );
 	};
 };
 func void DIA_Sylvio_WASJETZT_trennen ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_trennen_15_00"); //Ты боишься?
-	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_trennen_09_01"); //Чушь, хватит болтать. Иди вперед.
+	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_trennen_15_00"); //РўС‹ Р±РѕРёС€СЊСЃСЏ?
+	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_trennen_09_01"); //Р§СѓС€СЊ, С…РІР°С‚РёС‚ Р±РѕР»С‚Р°С‚СЊ. РРґРё РІРїРµСЂРµРґ.
 
 };
 
 func void DIA_Sylvio_WASJETZT_ok ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_ok_15_00"); //Хорошо, пошли.
-	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_ok_09_01"); //Давай, быстрее!
+	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_ok_15_00"); //РҐРѕСЂРѕС€Рѕ, РїРѕС€Р»Рё.
+	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_ok_09_01"); //Р”Р°РІР°Р№, Р±С‹СЃС‚СЂРµРµ!
 
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Sylvio_WASJETZT_nein ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_nein_15_00"); //Я не собираюсь делать всю грязную работу за тебя.
-	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_nein_09_01"); //Трус!
+	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_nein_15_00"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РґРµР»Р°С‚СЊ РІСЃСЋ РіСЂСЏР·РЅСѓСЋ СЂР°Р±РѕС‚Сѓ Р·Р° С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_nein_09_01"); //РўСЂСѓСЃ!
 
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Sylvio_WASJETZT_Geld ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_Geld_15_00"); //Сначала, я хочу увидеть свои деньги.
-	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_Geld_09_01"); //Когда мы завалим дракона, у тебя будет столько денег, что не сможешь унести.
+	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_Geld_15_00"); //РЎРЅР°С‡Р°Р»Р°, СЏ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ СЃРІРѕРё РґРµРЅСЊРіРё.
+	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_Geld_09_01"); //РљРѕРіРґР° РјС‹ Р·Р°РІР°Р»РёРј РґСЂР°РєРѕРЅР°, Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ СЃС‚РѕР»СЊРєРѕ РґРµРЅРµРі, С‡С‚Рѕ РЅРµ СЃРјРѕР¶РµС€СЊ СѓРЅРµСЃС‚Рё.
 
-	Info_AddChoice	(DIA_Sylvio_WASJETZT, "Я хочу получить свои деньги сейчас.", DIA_Sylvio_WASJETZT_jetztGeld );
+	Info_AddChoice	(DIA_Sylvio_WASJETZT, "РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕРё РґРµРЅСЊРіРё СЃРµР№С‡Р°СЃ.", DIA_Sylvio_WASJETZT_jetztGeld );
 };
 
 func void DIA_Sylvio_WASJETZT_jetztGeld ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_jetztGeld_15_00"); //Я хочу получить свои деньги сейчас.
-	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_jetztGeld_09_01"); //Либо ты пойдешь впереди меня, либо мне придется разобраться с тобой.
+	AI_Output			(other, self, "DIA_Sylvio_WASJETZT_jetztGeld_15_00"); //РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕРё РґРµРЅСЊРіРё СЃРµР№С‡Р°СЃ.
+	AI_Output			(self, other, "DIA_Sylvio_WASJETZT_jetztGeld_09_01"); //Р›РёР±Рѕ С‚С‹ РїРѕР№РґРµС€СЊ РІРїРµСЂРµРґРё РјРµРЅСЏ, Р»РёР±Рѕ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ С‚РѕР±РѕР№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -354,7 +354,7 @@ instance DIA_Sylvio_KOMMSTDU		(C_INFO)
 	information	 = 	DIA_Sylvio_KOMMSTDU_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я думал, ты направляешься в ледяной район.";
+	description	 = 	"РЇ РґСѓРјР°Р», С‚С‹ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ РІ Р»РµРґСЏРЅРѕР№ СЂР°Р№РѕРЅ.";
 };
 
 func int DIA_Sylvio_KOMMSTDU_Condition ()
@@ -368,8 +368,8 @@ func int DIA_Sylvio_KOMMSTDU_Condition ()
 
 func void DIA_Sylvio_KOMMSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_KOMMSTDU_15_00"); //Я думал, ты направляешься в ледяной район.
-	AI_Output			(self, other, "DIA_Sylvio_KOMMSTDU_09_01"); //Иди вперед. А я пойду сзади.
+	AI_Output			(other, self, "DIA_Sylvio_KOMMSTDU_15_00"); //РЇ РґСѓРјР°Р», С‚С‹ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ РІ Р»РµРґСЏРЅРѕР№ СЂР°Р№РѕРЅ.
+	AI_Output			(self, other, "DIA_Sylvio_KOMMSTDU_09_01"); //РРґРё РІРїРµСЂРµРґ. Рђ СЏ РїРѕР№РґСѓ СЃР·Р°РґРё.
 
 	AI_StopProcessInfos	(self);	 
 };
@@ -385,7 +385,7 @@ instance DIA_Sylvio_DUHIER		(C_INFO)
 	information	 = 	DIA_Sylvio_DUHIER_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Мне не помешала бы твоя помощь.";
+	description	 = 	"РњРЅРµ РЅРµ РїРѕРјРµС€Р°Р»Р° Р±С‹ С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.";
 };
 
 func int DIA_Sylvio_DUHIER_Condition ()
@@ -399,8 +399,8 @@ func int DIA_Sylvio_DUHIER_Condition ()
 
 func void DIA_Sylvio_DUHIER_Info ()
 {
-	AI_Output			(other, self, "DIA_Sylvio_DUHIER_15_00"); //Мне не помешала бы твоя помощь.
-	AI_Output			(self, other, "DIA_Sylvio_DUHIER_09_01"); //Чушь. Ты и так великолепно справляешься.
+	AI_Output			(other, self, "DIA_Sylvio_DUHIER_15_00"); //РњРЅРµ РЅРµ РїРѕРјРµС€Р°Р»Р° Р±С‹ С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.
+	AI_Output			(self, other, "DIA_Sylvio_DUHIER_09_01"); //Р§СѓС€СЊ. РўС‹ Рё С‚Р°Рє РІРµР»РёРєРѕР»РµРїРЅРѕ СЃРїСЂР°РІР»СЏРµС€СЊСЃСЏ.
 	
 	AI_StopProcessInfos	(self);	 
 };
@@ -427,10 +427,10 @@ func int DIA_SylvioDJG_WHATNEXT_Condition ()
 
 func void DIA_SylvioDJG_WHATNEXT_Info ()
 {
-	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_00"); //Ледяной дракон мертв! А теперь ты отдашь мне все, что у тебя есть!
-	AI_Output	(other, self, "DIA_SylvioDJG_WHATNEXT_15_01"); //Ни за что!
-	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_02"); //Это я получу всю славу за убийство ледяного дракона.
-	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_03"); //А твоя маленькая роль в этом деле окончена!
+	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_00"); //Р›РµРґСЏРЅРѕР№ РґСЂР°РєРѕРЅ РјРµСЂС‚РІ! Рђ С‚РµРїРµСЂСЊ С‚С‹ РѕС‚РґР°С€СЊ РјРЅРµ РІСЃРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ!
+	AI_Output	(other, self, "DIA_SylvioDJG_WHATNEXT_15_01"); //РќРё Р·Р° С‡С‚Рѕ!
+	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_02"); //Р­С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ РІСЃСЋ СЃР»Р°РІСѓ Р·Р° СѓР±РёР№СЃС‚РІРѕ Р»РµРґСЏРЅРѕРіРѕ РґСЂР°РєРѕРЅР°.
+	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_03"); //Рђ С‚РІРѕСЏ РјР°Р»РµРЅСЊРєР°СЏ СЂРѕР»СЊ РІ СЌС‚РѕРј РґРµР»Рµ РѕРєРѕРЅС‡РµРЅР°!
 
 	TOPIC_END_SylvioKillIceGolem = TRUE;
 	B_GivePlayerXP (XP_Ambient);
@@ -445,7 +445,7 @@ func void DIA_SylvioDJG_WHATNEXT_ATTACK ()
 	Npc_ExchangeRoutine (self,	"Start");
 	B_StartOtherRoutine (DJG_Bullco,"Start");
 
-	B_LogEntry (TOPIC_Dragonhunter,"Эта грязная свинья Сильвио собирался присвоить себе мою победу над ледяными драконами. Мы немного повздорили."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Р­С‚Р° РіСЂСЏР·РЅР°СЏ СЃРІРёРЅСЊСЏ РЎРёР»СЊРІРёРѕ СЃРѕР±РёСЂР°Р»СЃСЏ РїСЂРёСЃРІРѕРёС‚СЊ СЃРµР±Рµ РјРѕСЋ РїРѕР±РµРґСѓ РЅР°Рґ Р»РµРґСЏРЅС‹РјРё РґСЂР°РєРѕРЅР°РјРё. РњС‹ РЅРµРјРЅРѕРіРѕ РїРѕРІР·РґРѕСЂРёР»Рё."); 
 
 	B_Attack (self, other, AR_NONE, 1);	
 	B_Attack (DJG_Bullco, other, AR_NONE, 1);	
@@ -476,7 +476,7 @@ func int DIA_SylvioDJG_BUTNOW_Condition ()
 
 func void DIA_SylvioDJG_BUTNOW_Info ()
 {
-	AI_Output	(self, other, "DIA_SylvioDJG_BUTNOW_09_00"); //Пришло время расплаты.
+	AI_Output	(self, other, "DIA_SylvioDJG_BUTNOW_09_00"); //РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ СЂР°СЃРїР»Р°С‚С‹.
 	
 	AI_StopProcessInfos	(self);
 
@@ -582,18 +582,18 @@ func int DIA_SylvioDJG_ANGEBOTMACHEN_Condition ()
 
 func void DIA_SylvioDJG_ANGEBOTMACHEN_Info ()
 {
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_00"); //PaЯ auf, ich mach euch ein Angebot.
-	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_01"); //Na, dann laЯ mal hцren.
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_02"); //Ihr hockt garantiert nicht zufдllig hier vor der Eisregion da drьben. Ihr spielt mit dem Gedanken da rein zu gehen und euch die Beute dahinter zu schnappen.
-	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_03"); //Und wenn es so wдre?
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_04"); //Wir kцnnten gemeinsam hinein gehen!
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_00"); //PaРЇ auf, ich mach euch ein Angebot.
+	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_01"); //Na, dann laРЇ mal hС†ren.
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_02"); //Ihr hockt garantiert nicht zufРґllig hier vor der Eisregion da drСЊben. Ihr spielt mit dem Gedanken da rein zu gehen und euch die Beute dahinter zu schnappen.
+	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_03"); //Und wenn es so wРґre?
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_04"); //Wir kС†nnten gemeinsam hinein gehen!
 	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_05"); //Warum denkst du sollten WIR das tun?
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_06"); //Mich interssieren die Schдtze nicht, die sich dahinter verbergen. Was es da zu holen gibt, kцnnt ihr meinet wegen behalten.
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_06"); //Mich interssieren die SchРґtze nicht, die sich dahinter verbergen. Was es da zu holen gibt, kС†nnt ihr meinet wegen behalten.
 	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_07"); //Mmh!
 	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_08"); //Ihr seid zwar gut, aber mit drei Mann sind wir schneller wieder raus.
-	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_09"); //Bilde dir aber nicht ein, daЯ du uns ьbers Ohr hauen kannst! Ausserdem ist der Eisdrache nicht von schlechten Eltern. Wir kriegen alles, sagst du?
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_10"); //Genau! Jetzt, wo ich weiЯ, daЯ es um einen Drachen geht...
-	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_11"); //Verdammt! Na schцn, von mir aus! Sag bescheid, wenn du bereit bist!
+	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_09"); //Bilde dir aber nicht ein, daРЇ du uns СЊbers Ohr hauen kannst! Ausserdem ist der Eisdrache nicht von schlechten Eltern. Wir kriegen alles, sagst du?
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_10"); //Genau! Jetzt, wo ich weiРЇ, daРЇ es um einen Drachen geht...
+	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_11"); //Verdammt! Na schС†n, von mir aus! Sag bescheid, wenn du bereit bist!
 
 	Log_AddEntry (TOPIC_Dragonhunter,"Sylvio vermutet einen Drachen in der Eisregion."); 
 };
@@ -626,7 +626,7 @@ FUNC INT DIA_SylvioDJG_WAIT_Condition()
 func VOID DIA_SylvioDJG_WAIT_Info()
 {
 	AI_Output 			(other,self,"DIA_SylvioDJG_WAIT_15_00"); //Warte mal einen Moment!
-	AI_Output 			(self,other,"DIA_SylvioDJG_WAIT_09_01"); //Was ist denn? Gehґ gefдlligst weiter!
+	AI_Output 			(self,other,"DIA_SylvioDJG_WAIT_09_01"); //Was ist denn? GehТ‘ gefРґlligst weiter!
 	AI_StopProcessInfos	(self);
 };
 
@@ -656,7 +656,7 @@ FUNC INT DIA_SylvioDJG_IceWait1_Condition()
 
 func VOID DIA_SylvioDJG_IceWait1_Info()
 {
-	AI_Output 			(other,self,"DIA_SylvioDJG_IceWait1_15_00"); //Ich bin soweit! LaЯ uns losgehen!
+	AI_Output 			(other,self,"DIA_SylvioDJG_IceWait1_15_00"); //Ich bin soweit! LaРЇ uns losgehen!
 	AI_Output 			(self,other,"DIA_SylvioDJG_IceWait1_09_01"); //Dann werden wir ja sehen, wie gut du bist.
 	Info_AddChoice		(DIA_SylvioDJG_IceWait1, "losgehen", DIA_SylvioDJG_IceWait1_losgehen );
 
@@ -710,7 +710,7 @@ func VOID DIA_SylvioDJG_IceWait2_Info()
 
 	AI_Output (self, other,"DIA_SylvioDJG_IceWait2_09_00"); //So! Die erste Ebene scheint nun sicher!
 	AI_Output (other, self,"DIA_SylvioDJG_IceWait2_15_01"); //Geh weiter!
-	AI_Output (self, other,"DIA_SylvioDJG_IceWait2_09_02"); //Hцr dir das an! Der Kleine, kriegt wohl nicht genug, was? 
+	AI_Output (self, other,"DIA_SylvioDJG_IceWait2_09_02"); //HС†r dir das an! Der Kleine, kriegt wohl nicht genug, was? 
 	Info_AddChoice	(DIA_SylvioDJG_IceWait2, DIALOG_ENDE, DIA_SylvioDJG_IceWait2_weiter );
 };
 
@@ -764,14 +764,14 @@ func VOID DIA_SylvioDJG_GoForIceDragon_Info()
 {
 	AI_GotoNpc	(self,	other);
 
-	AI_Output 	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_00"); //So. Jetzt heiЯt, es dem Drachen das Handwerk zu legen. Was du machst? Ist mit ehrlich gesagt egal!
+	AI_Output 	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_00"); //So. Jetzt heiРЇt, es dem Drachen das Handwerk zu legen. Was du machst? Ist mit ehrlich gesagt egal!
 	AI_Output	(other, self,"DIA_SylvioDJG_GoForIceDragon_15_01"); //Ich warne dich, Sylvio, verarsch mich jetzt nicht!
-	AI_Output 	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_02"); //Bis hierhin warst du eine...na ja...sagen wir...Hilfe. Aber jetzt, da wir an den ganzen Golemfeldern vorbei sind, ьberlass die Hauptarbeit mal lieber einem Profi. Sonst passiert dir noch was.
+	AI_Output 	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_02"); //Bis hierhin warst du eine...na ja...sagen wir...Hilfe. Aber jetzt, da wir an den ganzen Golemfeldern vorbei sind, СЊberlass die Hauptarbeit mal lieber einem Profi. Sonst passiert dir noch was.
 	AI_Output	(other, self,"DIA_SylvioDJG_GoForIceDragon_15_03"); //Keine Chance!
-	AI_Output	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_04"); //Na gut! Wenn du nicht anders willst. Aber beschwer dich nachher nicht ich hдtte...
+	AI_Output	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_04"); //Na gut! Wenn du nicht anders willst. Aber beschwer dich nachher nicht ich hРґtte...
 	AI_Output	(other, self,"DIA_SylvioDJG_GoForIceDragon_15_05"); //Halt endlich die Klappe!
 
-	Log_AddEntry (TOPIC_Dragonhunter,"Sylvio wollte mich erst los werden, nachdem wir die Icegolemebene hinter uns gelassen hatten. SchlieЯlich griffen wir dann doch gemeinsam den Eisdrachen an."); 
+	Log_AddEntry (TOPIC_Dragonhunter,"Sylvio wollte mich erst los werden, nachdem wir die Icegolemebene hinter uns gelassen hatten. SchlieРЇlich griffen wir dann doch gemeinsam den Eisdrachen an."); 
 	
 	B_GivePlayerXP (XP_SylvioDJGIceClear);
 	
@@ -829,14 +829,14 @@ func void DIA_SylvioDJG_WHATNEXT_Info ()
 {
 	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_00"); //Der Eisdrache ist tot! Und du gibst mir jetzt alles, was du bei dir hast!
 	AI_Output	(other, self, "DIA_SylvioDJG_WHATNEXT_15_01"); //Was ist los? Ich denke ja gar nicht daran!	
-	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_02"); //Ich werde derjenige sein, der als Eisdrachentцter gefeiert wird. Deine kleine Rolle bei der Sache, wird jetzt aus der Welt geschafft!
+	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_02"); //Ich werde derjenige sein, der als EisdrachentС†ter gefeiert wird. Deine kleine Rolle bei der Sache, wird jetzt aus der Welt geschafft!
 	
 	AI_StopProcessInfos	(self);
 	
 	self.flags =0;
 	DJG_Bullco.flags =0;
 
-	Log_AddEntry (TOPIC_Dragonhunter,"Das dreckige Schwein Sylvio wollte mir den Sieg ьber den Eisdrachen steitig machen. Es gab eine kleine Auseinandersetzung."); 
+	Log_AddEntry (TOPIC_Dragonhunter,"Das dreckige Schwein Sylvio wollte mir den Sieg СЊber den Eisdrachen steitig machen. Es gab eine kleine Auseinandersetzung."); 
 
 	B_Attack (self, other, AR_NONE, 1);	
 	B_Attack (DJG_Bullco, other, AR_NONE, 1);	

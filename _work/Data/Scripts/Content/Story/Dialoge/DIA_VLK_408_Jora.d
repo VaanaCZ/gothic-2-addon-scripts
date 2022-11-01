@@ -8,7 +8,7 @@ INSTANCE DIA_Jora_EXIT   (C_INFO)
 	condition   = DIA_Jora_EXIT_Condition;
 	information = DIA_Jora_EXIT_Info;
 	permanent   = TRUE;
-	description = "Мне нужно идти!";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё!";
 };
 
 FUNC INT DIA_Jora_EXIT_Condition()
@@ -21,7 +21,7 @@ FUNC VOID DIA_Jora_EXIT_Info()
 	if ( (Jora_Dieb == LOG_FAILED) || (Jora_Dieb == LOG_SUCCESS) )
 	&& (Jora_Gold == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Jora_EXIT_08_00"); //Эй! Как насчет моих денег?
+		AI_Output (self, other, "DIA_Jora_EXIT_08_00"); //Р­Р№! РљР°Рє РЅР°СЃС‡РµС‚ РјРѕРёС… РґРµРЅРµРі?
 	};
 	
 	AI_StopProcessInfos (self);
@@ -48,7 +48,7 @@ func int DIA_Jora_Sperre_Condition ()
 };
 func void DIA_Jora_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Jora_Sperre_08_00"); //Ты каторжник из колонии. Я ничего не буду тебе продавать!
+	AI_Output (self, other, "DIA_Jora_Sperre_08_00"); //РўС‹ РєР°С‚РѕСЂР¶РЅРёРє РёР· РєРѕР»РѕРЅРёРё. РЇ РЅРёС‡РµРіРѕ РЅРµ Р±СѓРґСѓ С‚РµР±Рµ РїСЂРѕРґР°РІР°С‚СЊ!
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -62,7 +62,7 @@ instance DIA_Jora_WAREZ		(C_INFO)
 	information	 = 	DIA_Jora_WAREZ_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 func int DIA_Jora_WAREZ_Condition ()
 {
@@ -71,7 +71,7 @@ func int DIA_Jora_WAREZ_Condition ()
 func void DIA_Jora_WAREZ_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Jora_WAREZ_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Jora_WAREZ_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -96,13 +96,13 @@ func int DIA_Jora_GREET_Condition ()
 };
 func void DIA_Jora_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Jora_GREET_08_00"); //Да пребудет с тобой Иннос, чужеземец. Если тебе что-то нужно для твоих странствий, ты обратился по адресу.
-	AI_Output (self, other, "DIA_Jora_GREET_08_01"); //Но я предупреждаю тебя: если ты хочешь взять что-нибудь, не заплатив, я позову стражу!
-	AI_Output (other, self, "DIA_Jora_GREET_15_02"); //Минутку. Я что, похож на вора?
-	AI_Output (self, other, "DIA_Jora_GREET_08_03"); //(презрительно) Ха! Ты будешь не первым, кто что-нибудь спер у меня сегодня.
+	AI_Output (self, other, "DIA_Jora_GREET_08_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РРЅРЅРѕСЃ, С‡СѓР¶РµР·РµРјРµС†. Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РЅСѓР¶РЅРѕ РґР»СЏ С‚РІРѕРёС… СЃС‚СЂР°РЅСЃС‚РІРёР№, С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ РїРѕ Р°РґСЂРµСЃСѓ.
+	AI_Output (self, other, "DIA_Jora_GREET_08_01"); //РќРѕ СЏ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ: РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РІР·СЏС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РЅРµ Р·Р°РїР»Р°С‚РёРІ, СЏ РїРѕР·РѕРІСѓ СЃС‚СЂР°Р¶Сѓ!
+	AI_Output (other, self, "DIA_Jora_GREET_15_02"); //РњРёРЅСѓС‚РєСѓ. РЇ С‡С‚Рѕ, РїРѕС…РѕР¶ РЅР° РІРѕСЂР°?
+	AI_Output (self, other, "DIA_Jora_GREET_08_03"); //(РїСЂРµР·СЂРёС‚РµР»СЊРЅРѕ) РҐР°! РўС‹ Р±СѓРґРµС€СЊ РЅРµ РїРµСЂРІС‹Рј, РєС‚Рѕ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРїРµСЂ Сѓ РјРµРЅСЏ СЃРµРіРѕРґРЅСЏ.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Джора торгует различным оружием на рыночной площади.");
+	B_LogEntry (Topic_CityTrader,"Р”Р¶РѕСЂР° С‚РѕСЂРіСѓРµС‚ СЂР°Р·Р»РёС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.");
 };
 
 // *******************************************************
@@ -115,7 +115,7 @@ instance DIA_Jora_Bestohlen	(C_INFO)
 	condition	 = 	DIA_Jora_Bestohlen_Condition;
 	information	 = 	DIA_Jora_Bestohlen_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Кто-то обокрал тебя?";
+	description	 = 	"РљС‚Рѕ-С‚Рѕ РѕР±РѕРєСЂР°Р» С‚РµР±СЏ?";
 };
 func int DIA_Jora_Bestohlen_Condition ()
 {
@@ -123,14 +123,14 @@ func int DIA_Jora_Bestohlen_Condition ()
 };
 func void DIA_Jora_Bestohlen_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_Bestohlen_15_00"); //Кто-то обокрал тебя?
-	AI_Output (self, other, "DIA_Jora_Bestohlen_08_01"); //Я не могу доказать это. Этот парень был чертовски хитер. Представился как Ренгару - если это действительно его имя.
-	AI_Output (self, other, "DIA_Jora_Bestohlen_08_02"); //Он уже несколько дней ошивается на рыночной площади.
+	AI_Output (other, self, "DIA_Jora_Bestohlen_15_00"); //РљС‚Рѕ-С‚Рѕ РѕР±РѕРєСЂР°Р» С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Jora_Bestohlen_08_01"); //РЇ РЅРµ РјРѕРіСѓ РґРѕРєР°Р·Р°С‚СЊ СЌС‚Рѕ. Р­С‚РѕС‚ РїР°СЂРµРЅСЊ Р±С‹Р» С‡РµСЂС‚РѕРІСЃРєРё С…РёС‚РµСЂ. РџСЂРµРґСЃС‚Р°РІРёР»СЃСЏ РєР°Рє Р РµРЅРіР°СЂСѓ - РµСЃР»Рё СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РµРіРѕ РёРјСЏ.
+	AI_Output (self, other, "DIA_Jora_Bestohlen_08_02"); //РћРЅ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РѕС€РёРІР°РµС‚СЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
 	if (Npc_GetDistToWP (self, "NW_CITY_MERCHANT_PATH_38") <= 500)
 	{
-		AI_Output (self, other, "DIA_Jora_Bestohlen_08_03"); //А каждый вечер он зависает у пивной бочки вниз по улице. Готов поклясться, этот ублюдок пропивает МОИ деньги!
+		AI_Output (self, other, "DIA_Jora_Bestohlen_08_03"); //Рђ РєР°Р¶РґС‹Р№ РІРµС‡РµСЂ РѕРЅ Р·Р°РІРёСЃР°РµС‚ Сѓ РїРёРІРЅРѕР№ Р±РѕС‡РєРё РІРЅРёР· РїРѕ СѓР»РёС†Рµ. Р“РѕС‚РѕРІ РїРѕРєР»СЏСЃС‚СЊСЃСЏ, СЌС‚РѕС‚ СѓР±Р»СЋРґРѕРє РїСЂРѕРїРёРІР°РµС‚ РњРћР РґРµРЅСЊРіРё!
 	};
-	AI_Output (self, other, "DIA_Jora_Bestohlen_08_04"); //Я отвернулся всего на мгновение, и мой кошелек пропал!
+	AI_Output (self, other, "DIA_Jora_Bestohlen_08_04"); //РЇ РѕС‚РІРµСЂРЅСѓР»СЃСЏ РІСЃРµРіРѕ РЅР° РјРіРЅРѕРІРµРЅРёРµ, Рё РјРѕР№ РєРѕС€РµР»РµРє РїСЂРѕРїР°Р»!
 };
 
 
@@ -140,7 +140,7 @@ func void DIA_Jora_Bestohlen_Info ()
 
 func void B_Jora_GoldForClue()
 {
-	AI_Output (self ,other,"DIA_Jora_Add_08_04"); //Послушай - если ты вернешь золото, украденное этим Ренгару, я расскажу тебе кое-что.
+	AI_Output (self ,other,"DIA_Jora_Add_08_04"); //РџРѕСЃР»СѓС€Р°Р№ - РµСЃР»Рё С‚С‹ РІРµСЂРЅРµС€СЊ Р·РѕР»РѕС‚Рѕ, СѓРєСЂР°РґРµРЅРЅРѕРµ СЌС‚РёРј Р РµРЅРіР°СЂСѓ, СЏ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ.
 };
 
 
@@ -154,7 +154,7 @@ instance DIA_Jora_HolDeinGold	(C_INFO)
 	condition	 = 	DIA_Jora_HolDeinGold_Condition;
 	information	 = 	DIA_Jora_HolDeinGold_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я мог бы вернуть тебе это золото.";
+	description	 = 	"РЇ РјРѕРі Р±С‹ РІРµСЂРЅСѓС‚СЊ С‚РµР±Рµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ.";
 };
 func int DIA_Jora_HolDeinGold_Condition ()
 {
@@ -165,71 +165,71 @@ func int DIA_Jora_HolDeinGold_Condition ()
 };
 func void DIA_Jora_HolDeinGold_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_15_00"); //Я мог бы вернуть тебе это золото.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_08_01"); //(недоверчиво) Да? А зачем тебе это?
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_15_00"); //РЇ РјРѕРі Р±С‹ РІРµСЂРЅСѓС‚СЊ С‚РµР±Рµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_08_01"); //(РЅРµРґРѕРІРµСЂС‡РёРІРѕ) Р”Р°? Рђ Р·Р°С‡РµРј С‚РµР±Рµ СЌС‚Рѕ?
 
 	Info_ClearChoices (DIA_Jora_HolDeinGold);
-	Info_AddChoice 		(DIA_Jora_HolDeinGold,"Я хочу получить часть золота в качестве вознаграждения!",DIA_Jora_HolDeinGold_WillBelohnung);
+	Info_AddChoice 		(DIA_Jora_HolDeinGold,"РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ С‡Р°СЃС‚СЊ Р·РѕР»РѕС‚Р° РІ РєР°С‡РµСЃС‚РІРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ!",DIA_Jora_HolDeinGold_WillBelohnung);
 	if (Mis_Andre_GuildOfThieves == LOG_RUNNING)
 	{
-		Info_AddChoice (DIA_Jora_HolDeinGold,"Я ищу подходы к гильдии воров!", DIA_Jora_HolDeinGold_GHDG);
+		Info_AddChoice (DIA_Jora_HolDeinGold,"РЇ РёС‰Сѓ РїРѕРґС…РѕРґС‹ Рє РіРёР»СЊРґРёРё РІРѕСЂРѕРІ!", DIA_Jora_HolDeinGold_GHDG);
 	};
 	if (other.guild == GIL_NONE)
 	&& (Player_IsApprentice == APP_NONE)
 	{
-		Info_AddChoice (DIA_Jora_HolDeinGold,"Как сказать... ну, ты мог бы, например, помочь мне попасть в верхний квартал?", DIA_Jora_HolDeinGold_ToOV);
+		Info_AddChoice (DIA_Jora_HolDeinGold,"РљР°Рє СЃРєР°Р·Р°С‚СЊ... РЅСѓ, С‚С‹ РјРѕРі Р±С‹, РЅР°РїСЂРёРјРµСЂ, РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?", DIA_Jora_HolDeinGold_ToOV);
 	};
 };
 
 func void DIA_Jora_HolDeinGold_ToOV()
 {
-	AI_Output (other, self,"DIA_Jora_Add_15_00"); //Как сказать... ну, ты мог бы, например, помочь мне попасть в верхний квартал?
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_08_03"); //(смеется) Ты обратился не по адресу. Я нездешний, как и большинство торговцев на этой площади.
-	AI_Output (self ,other,"DIA_Jora_Add_08_01"); //Если ты хочешь попасть в верхний квартал, поговори с местными торговцами в нижней части города.
+	AI_Output (other, self,"DIA_Jora_Add_15_00"); //РљР°Рє СЃРєР°Р·Р°С‚СЊ... РЅСѓ, С‚С‹ РјРѕРі Р±С‹, РЅР°РїСЂРёРјРµСЂ, РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_08_03"); //(СЃРјРµРµС‚СЃСЏ) РўС‹ РѕР±СЂР°С‚РёР»СЃСЏ РЅРµ РїРѕ Р°РґСЂРµСЃСѓ. РЇ РЅРµР·РґРµС€РЅРёР№, РєР°Рє Рё Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ С‚РѕСЂРіРѕРІС†РµРІ РЅР° СЌС‚РѕР№ РїР»РѕС‰Р°РґРё.
+	AI_Output (self ,other,"DIA_Jora_Add_08_01"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р», РїРѕРіРѕРІРѕСЂРё СЃ РјРµСЃС‚РЅС‹РјРё С‚РѕСЂРіРѕРІС†Р°РјРё РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
 };
 
 func void DIA_Jora_HolDeinGold_GHDG()
 {
-	AI_Output (other, self,"DIA_Jora_Add_15_02"); //Я ищу подходы к гильдии воров!
-	AI_Output (self ,other,"DIA_Jora_Add_08_03"); //Тут я мог бы помочь тебе.
+	AI_Output (other, self,"DIA_Jora_Add_15_02"); //РЇ РёС‰Сѓ РїРѕРґС…РѕРґС‹ Рє РіРёР»СЊРґРёРё РІРѕСЂРѕРІ!
+	AI_Output (self ,other,"DIA_Jora_Add_08_03"); //РўСѓС‚ СЏ РјРѕРі Р±С‹ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
 	B_Jora_GoldForClue();
 
 	Info_ClearChoices (DIA_Jora_HolDeinGold);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Я попробую.",	DIA_Jora_HolDeinGold_DoIt);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Сколько золота было в этом кошельке?",			DIA_Jora_HolDeinGold_HowMuch);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Почему ты не позвал стражу?",DIA_Jora_HolDeinGold_Wache);	
+	Info_AddChoice (DIA_Jora_HolDeinGold,"РЇ РїРѕРїСЂРѕР±СѓСЋ.",	DIA_Jora_HolDeinGold_DoIt);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"РЎРєРѕР»СЊРєРѕ Р·РѕР»РѕС‚Р° Р±С‹Р»Рѕ РІ СЌС‚РѕРј РєРѕС€РµР»СЊРєРµ?",			DIA_Jora_HolDeinGold_HowMuch);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РїРѕР·РІР°Р» СЃС‚СЂР°Р¶Сѓ?",DIA_Jora_HolDeinGold_Wache);	
 };
 
 func void DIA_Jora_HolDeinGold_WillBelohnung()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_WillBelohnung_15_00"); //Я хочу получить часть золота в качестве вознаграждения!
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_WillBelohnung_08_01"); //Сначала верни мне мой кошелек. А там уж поговорим о твоем вознаграждении!
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_WillBelohnung_15_00"); //РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ С‡Р°СЃС‚СЊ Р·РѕР»РѕС‚Р° РІ РєР°С‡РµСЃС‚РІРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ!
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_WillBelohnung_08_01"); //РЎРЅР°С‡Р°Р»Р° РІРµСЂРЅРё РјРЅРµ РјРѕР№ РєРѕС€РµР»РµРє. Рђ С‚Р°Рј СѓР¶ РїРѕРіРѕРІРѕСЂРёРј Рѕ С‚РІРѕРµРј РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРё!
 	Info_ClearChoices (DIA_Jora_HolDeinGold);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Я попробую.",	DIA_Jora_HolDeinGold_DoIt);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Сколько золота было в этом кошельке?",			DIA_Jora_HolDeinGold_HowMuch);
-	Info_AddChoice (DIA_Jora_HolDeinGold,"Почему ты не позвал стражу?",DIA_Jora_HolDeinGold_Wache);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"РЇ РїРѕРїСЂРѕР±СѓСЋ.",	DIA_Jora_HolDeinGold_DoIt);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"РЎРєРѕР»СЊРєРѕ Р·РѕР»РѕС‚Р° Р±С‹Р»Рѕ РІ СЌС‚РѕРј РєРѕС€РµР»СЊРєРµ?",			DIA_Jora_HolDeinGold_HowMuch);
+	Info_AddChoice (DIA_Jora_HolDeinGold,"РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РїРѕР·РІР°Р» СЃС‚СЂР°Р¶Сѓ?",DIA_Jora_HolDeinGold_Wache);
 };
 
 func void DIA_Jora_HolDeinGold_Wache()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_Wache_15_00"); //Почему ты не позвал стражу?
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_Wache_08_01"); //Стража реагирует, только если вор пойман с поличным.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_Wache_08_02"); //А когда я заметил, что мой кошелек пропал, его и след простыл!
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_Wache_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РїРѕР·РІР°Р» СЃС‚СЂР°Р¶Сѓ?
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_Wache_08_01"); //РЎС‚СЂР°Р¶Р° СЂРµР°РіРёСЂСѓРµС‚, С‚РѕР»СЊРєРѕ РµСЃР»Рё РІРѕСЂ РїРѕР№РјР°РЅ СЃ РїРѕР»РёС‡РЅС‹Рј.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_Wache_08_02"); //Рђ РєРѕРіРґР° СЏ Р·Р°РјРµС‚РёР», С‡С‚Рѕ РјРѕР№ РєРѕС€РµР»РµРє РїСЂРѕРїР°Р», РµРіРѕ Рё СЃР»РµРґ РїСЂРѕСЃС‚С‹Р»!
 };
 
 func void DIA_Jora_HolDeinGold_HowMuch()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_HowMuch_15_00"); //Сколько золота было в этом кошельке?
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_HowMuch_08_01"); //50 золотых - это солидная сумма по нынешним временам.
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_HowMuch_15_00"); //РЎРєРѕР»СЊРєРѕ Р·РѕР»РѕС‚Р° Р±С‹Р»Рѕ РІ СЌС‚РѕРј РєРѕС€РµР»СЊРєРµ?
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_HowMuch_08_01"); //50 Р·РѕР»РѕС‚С‹С… - СЌС‚Рѕ СЃРѕР»РёРґРЅР°СЏ СЃСѓРјРјР° РїРѕ РЅС‹РЅРµС€РЅРёРј РІСЂРµРјРµРЅР°Рј.
 };
 
 func void DIA_Jora_HolDeinGold_DoIt()
 {
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_DoIt_15_00"); //Я посмотрю, что можно сделать.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_01"); //Будь осторожен! Если ты просто вырубишь этого ублюдка, на тебя самого набросится стража.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_02"); //Последнее время обстановка здесь значительно обострилась. С тех пор, как паладины прибыли в город, стража набрасывается на всех, кто вступает в драку.
-	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_03"); //Так что придумай что-нибудь...
-	AI_Output (other, self, "DIA_Jora_HolDeinGold_DoIt_15_04"); //Попробую.
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_DoIt_15_00"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_01"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ! Р•СЃР»Рё С‚С‹ РїСЂРѕСЃС‚Рѕ РІС‹СЂСѓР±РёС€СЊ СЌС‚РѕРіРѕ СѓР±Р»СЋРґРєР°, РЅР° С‚РµР±СЏ СЃР°РјРѕРіРѕ РЅР°Р±СЂРѕСЃРёС‚СЃСЏ СЃС‚СЂР°Р¶Р°.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_02"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РѕР±СЃС‚Р°РЅРѕРІРєР° Р·РґРµСЃСЊ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ РѕР±РѕСЃС‚СЂРёР»Р°СЃСЊ. РЎ С‚РµС… РїРѕСЂ, РєР°Рє РїР°Р»Р°РґРёРЅС‹ РїСЂРёР±С‹Р»Рё РІ РіРѕСЂРѕРґ, СЃС‚СЂР°Р¶Р° РЅР°Р±СЂР°СЃС‹РІР°РµС‚СЃСЏ РЅР° РІСЃРµС…, РєС‚Рѕ РІСЃС‚СѓРїР°РµС‚ РІ РґСЂР°РєСѓ.
+	AI_Output (self, other, "DIA_Jora_HolDeinGold_DoIt_08_03"); //РўР°Рє С‡С‚Рѕ РїСЂРёРґСѓРјР°Р№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ...
+	AI_Output (other, self, "DIA_Jora_HolDeinGold_DoIt_15_04"); //РџРѕРїСЂРѕР±СѓСЋ.
 		
 	Jora_Dieb = LOG_RUNNING;
 	Jora_Gold = LOG_RUNNING;
@@ -239,9 +239,9 @@ func void DIA_Jora_HolDeinGold_DoIt()
 	Log_CreateTopic (TOPIC_Jora,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Jora,LOG_RUNNING);
 	
-	B_LogEntry (TOPIC_Jora, "Парень по имени Ренгару ограбил торговца Джору. Он весь день околачивается на рынке.");
-	B_LogEntry (TOPIC_Jora, "Я должен вернуть украденное золото Джоры.");
-	B_LogEntry (TOPIC_JoraDieb, "Ренгару ограбил торговца Джору. Если я поймаю его, мне за это полагается награда.");
+	B_LogEntry (TOPIC_Jora, "РџР°СЂРµРЅСЊ РїРѕ РёРјРµРЅРё Р РµРЅРіР°СЂСѓ РѕРіСЂР°Р±РёР» С‚РѕСЂРіРѕРІС†Р° Р”Р¶РѕСЂСѓ. РћРЅ РІРµСЃСЊ РґРµРЅСЊ РѕРєРѕР»Р°С‡РёРІР°РµС‚СЃСЏ РЅР° СЂС‹РЅРєРµ.");
+	B_LogEntry (TOPIC_Jora, "РЇ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊ СѓРєСЂР°РґРµРЅРЅРѕРµ Р·РѕР»РѕС‚Рѕ Р”Р¶РѕСЂС‹.");
+	B_LogEntry (TOPIC_JoraDieb, "Р РµРЅРіР°СЂСѓ РѕРіСЂР°Р±РёР» С‚РѕСЂРіРѕРІС†Р° Р”Р¶РѕСЂСѓ. Р•СЃР»Рё СЏ РїРѕР№РјР°СЋ РµРіРѕ, РјРЅРµ Р·Р° СЌС‚Рѕ РїРѕР»Р°РіР°РµС‚СЃСЏ РЅР°РіСЂР°РґР°.");
 
 	Info_ClearChoices 	(DIA_Jora_HolDeinGold);
 };
@@ -256,7 +256,7 @@ instance DIA_Jora_WegenDieb	(C_INFO)
 	condition	 = 	DIA_Jora_WegenDieb_Condition;
 	information	 = 	DIA_Jora_WegenDieb_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Насчет вора...";
+	description	 = 	"РќР°СЃС‡РµС‚ РІРѕСЂР°...";
 };
 func int DIA_Jora_WegenDieb_Condition ()
 {
@@ -267,38 +267,38 @@ func int DIA_Jora_WegenDieb_Condition ()
 };
 func void DIA_Jora_WegenDieb_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_15_00"); //Насчет вора...
-	AI_Output (self, other, "DIA_Jora_WegenDieb_08_01"); //Да, как продвигается дело? Ты поймал его? И что более важно, ты забрал у него мое золото?
+	AI_Output (other, self, "DIA_Jora_WegenDieb_15_00"); //РќР°СЃС‡РµС‚ РІРѕСЂР°...
+	AI_Output (self, other, "DIA_Jora_WegenDieb_08_01"); //Р”Р°, РєР°Рє РїСЂРѕРґРІРёРіР°РµС‚СЃСЏ РґРµР»Рѕ? РўС‹ РїРѕР№РјР°Р» РµРіРѕ? Р С‡С‚Рѕ Р±РѕР»РµРµ РІР°Р¶РЅРѕ, С‚С‹ Р·Р°Р±СЂР°Р» Сѓ РЅРµРіРѕ РјРѕРµ Р·РѕР»РѕС‚Рѕ?
 	
 	Info_ClearChoices (DIA_Jora_WegenDieb);
 	
 	if (Npc_IsDead (Rengaru))
 	{
-		Info_AddChoice (DIA_Jora_WegenDieb,"Ну, с ним произошел несчастный случай.",DIA_Jora_WegenDieb_Tot);
+		Info_AddChoice (DIA_Jora_WegenDieb,"РќСѓ, СЃ РЅРёРј РїСЂРѕРёР·РѕС€РµР» РЅРµСЃС‡Р°СЃС‚РЅС‹Р№ СЃР»СѓС‡Р°Р№.",DIA_Jora_WegenDieb_Tot);
 	}
 	else if (Rengaru_InKnast == TRUE)
 	{	
-		Info_AddChoice (DIA_Jora_WegenDieb,"Да, я поймал его.",DIA_Jora_WegenDieb_ImKnast);
+		Info_AddChoice (DIA_Jora_WegenDieb,"Р”Р°, СЏ РїРѕР№РјР°Р» РµРіРѕ.",DIA_Jora_WegenDieb_ImKnast);
 	}
 	else if (Npc_KnowsInfo (other, DIA_Rengaru_HALLODIEB))
 	{
-		Info_AddChoice (DIA_Jora_WegenDieb,"Он сбежал от меня.",DIA_Jora_WegenDieb_Entkommen);
+		Info_AddChoice (DIA_Jora_WegenDieb,"РћРЅ СЃР±РµР¶Р°Р» РѕС‚ РјРµРЅСЏ.",DIA_Jora_WegenDieb_Entkommen);
 	};
 	
-	Info_AddChoice (DIA_Jora_WegenDieb,"Я все еще работаю над этим!",DIA_Jora_WegenDieb_Continue);
+	Info_AddChoice (DIA_Jora_WegenDieb,"РЇ РІСЃРµ РµС‰Рµ СЂР°Р±РѕС‚Р°СЋ РЅР°Рґ СЌС‚РёРј!",DIA_Jora_WegenDieb_Continue);
 };
 
 func void DIA_Jora_WegenDieb_Continue()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_Continue_15_00"); //Я все еще работаю над этим!
-	AI_Output (self, other, "DIA_Jora_WegenDieb_Continue_08_01"); //Не забудь принести мне это золото назад!
+	AI_Output (other, self, "DIA_Jora_WegenDieb_Continue_15_00"); //РЇ РІСЃРµ РµС‰Рµ СЂР°Р±РѕС‚Р°СЋ РЅР°Рґ СЌС‚РёРј!
+	AI_Output (self, other, "DIA_Jora_WegenDieb_Continue_08_01"); //РќРµ Р·Р°Р±СѓРґСЊ РїСЂРёРЅРµСЃС‚Рё РјРЅРµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ РЅР°Р·Р°Рґ!
 	Info_ClearChoices (DIA_Jora_WegenDieb);
 };
 
 func void DIA_Jora_WegenDieb_Entkommen()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_Entkommen_15_00"); //Он сбежал от меня.
-	AI_Output (self, other, "DIA_Jora_WegenDieb_Entkommen_08_01"); //А мое золото? Он унес его с собой?
+	AI_Output (other, self, "DIA_Jora_WegenDieb_Entkommen_15_00"); //РћРЅ СЃР±РµР¶Р°Р» РѕС‚ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Jora_WegenDieb_Entkommen_08_01"); //Рђ РјРѕРµ Р·РѕР»РѕС‚Рѕ? РћРЅ СѓРЅРµСЃ РµРіРѕ СЃ СЃРѕР±РѕР№?
 	Jora_Dieb = LOG_FAILED;
 	B_CheckLog();
 	Info_ClearChoices (DIA_Jora_WegenDieb);
@@ -307,8 +307,8 @@ func void DIA_Jora_WegenDieb_Entkommen()
 
 func void DIA_Jora_WegenDieb_ImKnast()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_ImKnast_15_00"); //Да, я поймал его. Пусть немного посидит за решеткой, подумает...
-	AI_Output (self, other, "DIA_Jora_WegenDieb_ImKnast_08_01"); //А что насчет моего золота?
+	AI_Output (other, self, "DIA_Jora_WegenDieb_ImKnast_15_00"); //Р”Р°, СЏ РїРѕР№РјР°Р» РµРіРѕ. РџСѓСЃС‚СЊ РЅРµРјРЅРѕРіРѕ РїРѕСЃРёРґРёС‚ Р·Р° СЂРµС€РµС‚РєРѕР№, РїРѕРґСѓРјР°РµС‚...
+	AI_Output (self, other, "DIA_Jora_WegenDieb_ImKnast_08_01"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РјРѕРµРіРѕ Р·РѕР»РѕС‚Р°?
 	Jora_Dieb = LOG_SUCCESS;
 	B_CheckLog();
 	Info_ClearChoices (DIA_Jora_WegenDieb);
@@ -316,9 +316,9 @@ func void DIA_Jora_WegenDieb_ImKnast()
 
 func void DIA_Jora_WegenDieb_Tot()
 {
-	AI_Output (other, self, "DIA_Jora_WegenDieb_Tot_15_00"); //Ну, с ним произошел несчастный случай.
-	AI_Output (self, other, "DIA_Jora_WegenDieb_Tot_08_01"); //Ну, хотя бы он теперь не сможет никого обокрасть! Правосудие Инноса свершилось!
-	AI_Output (self, other, "DIA_Jora_WegenDieb_Tot_08_02"); //Где мое золото?
+	AI_Output (other, self, "DIA_Jora_WegenDieb_Tot_15_00"); //РќСѓ, СЃ РЅРёРј РїСЂРѕРёР·РѕС€РµР» РЅРµСЃС‡Р°СЃС‚РЅС‹Р№ СЃР»СѓС‡Р°Р№.
+	AI_Output (self, other, "DIA_Jora_WegenDieb_Tot_08_01"); //РќСѓ, С…РѕС‚СЏ Р±С‹ РѕРЅ С‚РµРїРµСЂСЊ РЅРµ СЃРјРѕР¶РµС‚ РЅРёРєРѕРіРѕ РѕР±РѕРєСЂР°СЃС‚СЊ! РџСЂР°РІРѕСЃСѓРґРёРµ РРЅРЅРѕСЃР° СЃРІРµСЂС€РёР»РѕСЃСЊ!
+	AI_Output (self, other, "DIA_Jora_WegenDieb_Tot_08_02"); //Р“РґРµ РјРѕРµ Р·РѕР»РѕС‚Рѕ?
 	Jora_Dieb = LOG_SUCCESS;
 	B_CheckLog();
 	Info_ClearChoices (DIA_Jora_WegenDieb);
@@ -326,7 +326,7 @@ func void DIA_Jora_WegenDieb_Tot()
 
 
 // *******************************************************
-// 					Gold zurьckbringen
+// 					Gold zurСЊckbringen
 // *******************************************************
 instance DIA_Jora_BringGold (C_INFO)
 {
@@ -335,7 +335,7 @@ instance DIA_Jora_BringGold (C_INFO)
 	condition	 = 	DIA_Jora_BringGold_Condition;
 	information	 = 	DIA_Jora_BringGold_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Вот 50 золотых, что он украл у тебя.";
+	description	 = 	"Р’РѕС‚ 50 Р·РѕР»РѕС‚С‹С…, С‡С‚Рѕ РѕРЅ СѓРєСЂР°Р» Сѓ С‚РµР±СЏ.";
 };
 
 func int DIA_Jora_BringGold_Condition ()
@@ -348,18 +348,18 @@ func int DIA_Jora_BringGold_Condition ()
 };
 func void DIA_Jora_BringGold_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_BringGold_15_00"); //Вот 50 золотых, что он украл у тебя.
+	AI_Output (other, self, "DIA_Jora_BringGold_15_00"); //Р’РѕС‚ 50 Р·РѕР»РѕС‚С‹С…, С‡С‚Рѕ РѕРЅ СѓРєСЂР°Р» Сѓ С‚РµР±СЏ.
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 50))
 	{
-		AI_Output (self, other,"DIA_Jora_BringGold_08_01"); //Хвала Инносу! Есть еще правосудие в этом городе.
+		AI_Output (self, other,"DIA_Jora_BringGold_08_01"); //РҐРІР°Р»Р° РРЅРЅРѕСЃСѓ! Р•СЃС‚СЊ РµС‰Рµ РїСЂР°РІРѕСЃСѓРґРёРµ РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ.
 	
 		Jora_Gold = LOG_SUCCESS;
 		B_GivePlayerXP(XP_Jora_Gold);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Jora_BringGold_08_03"); //Эй, здесь не все 50 золотых! Ты что, тоже пытаешься меня обокрасть?
+		AI_Output (self, other,"DIA_Jora_BringGold_08_03"); //Р­Р№, Р·РґРµСЃСЊ РЅРµ РІСЃРµ 50 Р·РѕР»РѕС‚С‹С…! РўС‹ С‡С‚Рѕ, С‚РѕР¶Рµ РїС‹С‚Р°РµС€СЊСЃСЏ РјРµРЅСЏ РѕР±РѕРєСЂР°СЃС‚СЊ?
 	};
 };
 
@@ -377,7 +377,7 @@ instance DIA_Jora_GHDgInfo (C_INFO)
 	condition	 = 	DIA_Jora_GHDgInfo_Condition;
 	information	 = 	DIA_Jora_GHDgInfo_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Что ты знаешь о гильдии воров?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РіРёР»СЊРґРёРё РІРѕСЂРѕРІ?";
 };
 
 func int DIA_Jora_GHDgInfo_Condition ()
@@ -391,19 +391,19 @@ func int DIA_Jora_GHDgInfo_Condition ()
 };
 func void DIA_Jora_GHDgInfo_Info ()
 {
-	AI_Output (other, self,"DIA_Jora_Add_15_05"); //Что ты знаешь о гильдии воров?
+	AI_Output (other, self,"DIA_Jora_Add_15_05"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РіРёР»СЊРґРёРё РІРѕСЂРѕРІ?
 	if (Jora_Gold != LOG_SUCCESS)
 	{
 		B_Jora_GoldForClue();
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jora_Add_08_06"); //Хорошо - я скажу - но ты ничего не слышал от меня, если что, понятно?
-		AI_Output (self ,other,"DIA_Jora_Add_08_07"); //В портовом кабаке постоянно ошиваются какие-то темные личности.
-		AI_Output (self ,other,"DIA_Jora_Add_08_08"); //Готов поклясться, что бармен что-то знает об этом...
-		AI_Output (self ,other,"DIA_Jora_Add_08_09"); //Если ты хочешь выследить этих воров, тебе стоит поговорить с НИМ.
-		AI_Output (self ,other,"DIA_Jora_Add_08_10"); //Ты можешь притвориться, что ищешь какую-нибудь темную работенку, например. Может, он купится на это.
-		AI_Output (self ,other,"DIA_Jora_Add_08_11"); //Но будь осторожен. С этими людьми лучше не шутить.
+		AI_Output (self ,other,"DIA_Jora_Add_08_06"); //РҐРѕСЂРѕС€Рѕ - СЏ СЃРєР°Р¶Сѓ - РЅРѕ С‚С‹ РЅРёС‡РµРіРѕ РЅРµ СЃР»С‹С€Р°Р» РѕС‚ РјРµРЅСЏ, РµСЃР»Рё С‡С‚Рѕ, РїРѕРЅСЏС‚РЅРѕ?
+		AI_Output (self ,other,"DIA_Jora_Add_08_07"); //Р’ РїРѕСЂС‚РѕРІРѕРј РєР°Р±Р°РєРµ РїРѕСЃС‚РѕСЏРЅРЅРѕ РѕС€РёРІР°СЋС‚СЃСЏ РєР°РєРёРµ-С‚Рѕ С‚РµРјРЅС‹Рµ Р»РёС‡РЅРѕСЃС‚Рё.
+		AI_Output (self ,other,"DIA_Jora_Add_08_08"); //Р“РѕС‚РѕРІ РїРѕРєР»СЏСЃС‚СЊСЃСЏ, С‡С‚Рѕ Р±Р°СЂРјРµРЅ С‡С‚Рѕ-С‚Рѕ Р·РЅР°РµС‚ РѕР± СЌС‚РѕРј...
+		AI_Output (self ,other,"DIA_Jora_Add_08_09"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РІС‹СЃР»РµРґРёС‚СЊ СЌС‚РёС… РІРѕСЂРѕРІ, С‚РµР±Рµ СЃС‚РѕРёС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РќРРњ.
+		AI_Output (self ,other,"DIA_Jora_Add_08_10"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРёС‚РІРѕСЂРёС‚СЊСЃСЏ, С‡С‚Рѕ РёС‰РµС€СЊ РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ С‚РµРјРЅСѓСЋ СЂР°Р±РѕС‚РµРЅРєСѓ, РЅР°РїСЂРёРјРµСЂ. РњРѕР¶РµС‚, РѕРЅ РєСѓРїРёС‚СЃСЏ РЅР° СЌС‚Рѕ.
+		AI_Output (self ,other,"DIA_Jora_Add_08_11"); //РќРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ. РЎ СЌС‚РёРјРё Р»СЋРґСЊРјРё Р»СѓС‡С€Рµ РЅРµ С€СѓС‚РёС‚СЊ.
 		
 		Jora_GhdgHinweis = TRUE;
 	};
@@ -419,7 +419,7 @@ instance DIA_Jora_Belohnung (C_INFO)
 	condition	 = 	DIA_Jora_Belohnung_Condition;
 	information	 = 	DIA_Jora_Belohnung_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я хочу получить часть золота в качестве вознаграждения!";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ С‡Р°СЃС‚СЊ Р·РѕР»РѕС‚Р° РІ РєР°С‡РµСЃС‚РІРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ!";
 };
 
 func int DIA_Jora_Belohnung_Condition ()
@@ -431,17 +431,17 @@ func int DIA_Jora_Belohnung_Condition ()
 };
 func void DIA_Jora_Belohnung_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_Belohnung_15_00"); //Я хочу получить часть золота в качестве вознаграждения!
+	AI_Output (other, self, "DIA_Jora_Belohnung_15_00"); //РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ С‡Р°СЃС‚СЊ Р·РѕР»РѕС‚Р° РІ РєР°С‡РµСЃС‚РІРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ!
 	if (Jora_GhdgHinweis == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Jora_Add_08_12"); //Но я уже дал тебе ценный совет.
-		AI_Output (self ,other,"DIA_Jora_Add_08_13"); //Этого должно хватить в качестве вознаграждения.
+		AI_Output (self ,other,"DIA_Jora_Add_08_12"); //РќРѕ СЏ СѓР¶Рµ РґР°Р» С‚РµР±Рµ С†РµРЅРЅС‹Р№ СЃРѕРІРµС‚.
+		AI_Output (self ,other,"DIA_Jora_Add_08_13"); //Р­С‚РѕРіРѕ РґРѕР»Р¶РЅРѕ С…РІР°С‚РёС‚СЊ РІ РєР°С‡РµСЃС‚РІРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ.
 	};
-	AI_Output (self ,other,"DIA_Jora_Add_08_14"); //А сели тебе нужно золото, то выслеживай воров и получай награду за их голову у лорда Андрэ.
+	AI_Output (self ,other,"DIA_Jora_Add_08_14"); //Рђ СЃРµР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РѕР»РѕС‚Рѕ, С‚Рѕ РІС‹СЃР»РµР¶РёРІР°Р№ РІРѕСЂРѕРІ Рё РїРѕР»СѓС‡Р°Р№ РЅР°РіСЂР°РґСѓ Р·Р° РёС… РіРѕР»РѕРІСѓ Сѓ Р»РѕСЂРґР° РђРЅРґСЂСЌ.
 	
 	if (Npc_GetDistToWP (self, "NW_CITY_MERCHANT_PATH_38") <= 500)
 	{
-		AI_Output (self, other, "DIA_Jora_Belohnung_08_03"); //А теперь извини, меня ждут клиенты...
+		AI_Output (self, other, "DIA_Jora_Belohnung_08_03"); //Рђ С‚РµРїРµСЂСЊ РёР·РІРёРЅРё, РјРµРЅСЏ Р¶РґСѓС‚ РєР»РёРµРЅС‚С‹...
 	};
 	AI_StopProcessInfos (self); 
 };
@@ -456,7 +456,7 @@ instance DIA_Jora_AlriksSchwert	(C_INFO)
 	condition	 = 	DIA_Jora_AlriksSchwert_Condition;
 	information	 = 	DIA_Jora_AlriksSchwert_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Альрик говорит, что у тебя его меч...";
+	description	 = 	"РђР»СЊСЂРёРє РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµРіРѕ РјРµС‡...";
 };
 func int DIA_Jora_AlriksSchwert_Condition ()
 {
@@ -467,28 +467,28 @@ func int DIA_Jora_AlriksSchwert_Condition ()
 };
 func void DIA_Jora_AlriksSchwert_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_00"); //Альрик говорит, что у тебя его меч...
-	AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_01"); //Ты имеешь в виду этого оборванца, что продал мне свое оружие за несколько факелов и кусок мяса?
-	AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_02"); //Да, это он.
+	AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_00"); //РђР»СЊСЂРёРє РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµРіРѕ РјРµС‡...
+	AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_01"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ СЌС‚РѕРіРѕ РѕР±РѕСЂРІР°РЅС†Р°, С‡С‚Рѕ РїСЂРѕРґР°Р» РјРЅРµ СЃРІРѕРµ РѕСЂСѓР¶РёРµ Р·Р° РЅРµСЃРєРѕР»СЊРєРѕ С„Р°РєРµР»РѕРІ Рё РєСѓСЃРѕРє РјСЏСЃР°?
+	AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_02"); //Р”Р°, СЌС‚Рѕ РѕРЅ.
 	
 	if (Npc_HasItems (self, ItMw_AlriksSword_Mis) > 0)
 	{
-		AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_03"); //Его меч все еще у меня.
-		AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_04"); //Сколько ты хочешь за него?
+		AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_03"); //Р•РіРѕ РјРµС‡ РІСЃРµ РµС‰Рµ Сѓ РјРµРЅСЏ.
+		AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_04"); //РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° РЅРµРіРѕ?
 		if (Jora_Gold == LOG_SUCCESS) 
 		{
-			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_05"); //Ну - для тебя...
-			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_06"); //А, ладно! Забирай его так. Ведь ты помог мне вернуть мое золото...
+			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_05"); //РќСѓ - РґР»СЏ С‚РµР±СЏ...
+			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_06"); //Рђ, Р»Р°РґРЅРѕ! Р—Р°Р±РёСЂР°Р№ РµРіРѕ С‚Р°Рє. Р’РµРґСЊ С‚С‹ РїРѕРјРѕРі РјРЅРµ РІРµСЂРЅСѓС‚СЊ РјРѕРµ Р·РѕР»РѕС‚Рѕ...
 			B_GiveInvItems (self, other, ItMw_AlriksSword_Mis, 1);
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_07"); //Ну - только для тебя - 50 золотых монет.
+			AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_07"); //РќСѓ - С‚РѕР»СЊРєРѕ РґР»СЏ С‚РµР±СЏ - 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_08"); //(раздраженно) У меня его больше нет! Черт его знает, кому я его продал!
+		AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_08"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) РЈ РјРµРЅСЏ РµРіРѕ Р±РѕР»СЊС€Рµ РЅРµС‚! Р§РµСЂС‚ РµРіРѕ Р·РЅР°РµС‚, РєРѕРјСѓ СЏ РµРіРѕ РїСЂРѕРґР°Р»!
 	};
 };
 
@@ -503,7 +503,7 @@ instance DIA_Jora_BUYAlriksSchwert	(C_INFO)
 	condition	 = 	DIA_Jora_BUYAlriksSchwert_Condition;
 	information	 = 	DIA_Jora_BUYAlriksSchwert_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Вот 50 золотых монет. Давай мне меч Альрика.";
+	description	 = 	"Р’РѕС‚ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р”Р°РІР°Р№ РјРЅРµ РјРµС‡ РђР»СЊСЂРёРєР°.";
 };
 func int DIA_Jora_BUYAlriksSchwert_Condition ()
 {
@@ -515,25 +515,25 @@ func int DIA_Jora_BUYAlriksSchwert_Condition ()
 };
 func void DIA_Jora_BUYAlriksSchwert_Info ()
 {
-	AI_Output (other, self, "DIA_Jora_BUYAlriksSchwert_15_00"); //Вот 50 золотых монет. Давай мне меч Альрика.
+	AI_Output (other, self, "DIA_Jora_BUYAlriksSchwert_15_00"); //Р’РѕС‚ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р”Р°РІР°Р№ РјРЅРµ РјРµС‡ РђР»СЊСЂРёРєР°.
 
 	if (B_GiveInvItems(other,self,itmi_gold,50))
 	{
 		//if (Jora_Gold == LOG_RUNNING)
 		//{
 			//AI_Output (other, self, "DIA_Jora_BUYAlriksSchwert_15_02"); //Moment, ich wollte das Schwert kaufen...
-			//AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_03"); //Das kannst du doch immer noch tun - fьr 50 Goldstьcke ist es deins...
+			//AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_03"); //Das kannst du doch immer noch tun - fСЊr 50 GoldstСЊcke ist es deins...
 			//Jora_Gold = LOG_SUCCESS;
 		//}
 		//else
 		//{
-			AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_04"); //Вот, держи - (ухмыляется) это выгодная сделка.
+			AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_04"); //Р’РѕС‚, РґРµСЂР¶Рё - (СѓС…РјС‹Р»СЏРµС‚СЃСЏ) СЌС‚Рѕ РІС‹РіРѕРґРЅР°СЏ СЃРґРµР»РєР°.
 			B_GiveInvItems (self, other, ItMw_AlriksSword_Mis, 1);
 		//};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_05"); //У тебя недостаточно золота. Но не волнуйся - я попридержу пока этот меч. Заходи позже, если хочешь...
+		AI_Output (self, other, "DIA_Jora_BUYAlriksSchwert_08_05"); //РЈ С‚РµР±СЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°. РќРѕ РЅРµ РІРѕР»РЅСѓР№СЃСЏ - СЏ РїРѕРїСЂРёРґРµСЂР¶Сѓ РїРѕРєР° СЌС‚РѕС‚ РјРµС‡. Р—Р°С…РѕРґРё РїРѕР·Р¶Рµ, РµСЃР»Рё С…РѕС‡РµС€СЊ...
 	};
 };
 

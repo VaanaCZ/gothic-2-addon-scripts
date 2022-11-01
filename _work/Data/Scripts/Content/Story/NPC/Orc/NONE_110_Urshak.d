@@ -1,7 +1,7 @@
 INSTANCE  NONE_110_Urshak	(Mst_Default_OrcShaman)			
 {
 	//-------- primary data --------
-	name 		=		"Óð-Øàê";
+	name 		=		"Ð£Ñ€-Ð¨Ð°Ðº";
 	guild 		=		GIL_FRIENDLY_ORC;	
 	id 			=		110;
 	voice 		=		18;

@@ -73,62 +73,62 @@ func int DIA_Mil_333_Stadtwache_FirstWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_00"); //СТОЙ!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_00"); //РЎРўРћР™!
 		
 	// ------ PETZMASTER LIGHT ------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
-		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(вздыхает) Что еще?
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //Ты прекрасно знаешь, что!
+		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(РІР·РґС‹С…Р°РµС‚) Р§С‚Рѕ РµС‰Рµ?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //РўС‹ РїСЂРµРєСЂР°СЃРЅРѕ Р·РЅР°РµС€СЊ, С‡С‚Рѕ!
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //Ты разыскиваешься за убийство в городе!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //РўС‹ СЂР°Р·С‹СЃРєРёРІР°РµС€СЊСЃСЏ Р·Р° СѓР±РёР№СЃС‚РІРѕ РІ РіРѕСЂРѕРґРµ!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_04"); //Мы не потерпим здесь грязных воров!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_04"); //РњС‹ РЅРµ РїРѕС‚РµСЂРїРёРј Р·РґРµСЃСЊ РіСЂСЏР·РЅС‹С… РІРѕСЂРѕРІ!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //Нам не нужны смутьяны в городе!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //РќР°Рј РЅРµ РЅСѓР¶РЅС‹ СЃРјСѓС‚СЊСЏРЅС‹ РІ РіРѕСЂРѕРґРµ!
 		};
 	
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //С чего ты взял, что мы должны впустить тебя?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //РЎ С‡РµРіРѕ С‚С‹ РІР·СЏР», С‡С‚Рѕ РјС‹ РґРѕР»Р¶РЅС‹ РІРїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ?
 	}
 	else // ------ normales Reinkommen ------
 	{
 		 var C_Item itm; itm = Npc_GetEquippedArmor(other);
 		
-		// ------ ohne Rьstung ODER als Bauer ------
+		// ------ ohne RСЊstung ODER als Bauer ------
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_L) == TRUE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_M) == TRUE)
 		{
-			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //Да?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //Ты похож на нищего. В этом городе нам не нужны люди, у которых нет денег.
+			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //Р”Р°?
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //РўС‹ РїРѕС…РѕР¶ РЅР° РЅРёС‰РµРіРѕ. Р’ СЌС‚РѕРј РіРѕСЂРѕРґРµ РЅР°Рј РЅРµ РЅСѓР¶РЅС‹ Р»СЋРґРё, Сѓ РєРѕС‚РѕСЂС‹С… РЅРµС‚ РґРµРЅРµРі.
 			
 			if (Npc_HasItems(other, ItWr_Passierschein))
 			{
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_09"); //Но у меня есть пропуск!
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_10"); //Он годен только для других ворот!
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_09"); //РќРѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїСЂРѕРїСѓСЃРє!
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_10"); //РћРЅ РіРѕРґРµРЅ С‚РѕР»СЊРєРѕ РґР»СЏ РґСЂСѓРіРёС… РІРѕСЂРѕС‚!
 			};
 			
 			if (Npc_KnowsInfo (other, DIA_Mil_310_Stadtwache_MilizWerden))
 			{
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //Но я хочу вступить в городскую стражу!
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //Ха! Не смеши меня! Иди к другим воротам и попробуй рассказать это там.
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //Я уже был там, они отправили меня сюда.
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //(грязный смех) Ох, парень! Они всегда посылают к нам сливки общества...
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //РќРѕ СЏ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РІ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ!
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //РҐР°! РќРµ СЃРјРµС€Рё РјРµРЅСЏ! РРґРё Рє РґСЂСѓРіРёРј РІРѕСЂРѕС‚Р°Рј Рё РїРѕРїСЂРѕР±СѓР№ СЂР°СЃСЃРєР°Р·Р°С‚СЊ СЌС‚Рѕ С‚Р°Рј.
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //РЇ СѓР¶Рµ Р±С‹Р» С‚Р°Рј, РѕРЅРё РѕС‚РїСЂР°РІРёР»Рё РјРµРЅСЏ СЃСЋРґР°.
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //(РіСЂСЏР·РЅС‹Р№ СЃРјРµС…) РћС…, РїР°СЂРµРЅСЊ! РћРЅРё РІСЃРµРіРґР° РїРѕСЃС‹Р»Р°СЋС‚ Рє РЅР°Рј СЃР»РёРІРєРё РѕР±С‰РµСЃС‚РІР°...
 			};
 		}
- 	 	// ------ alle anderen Rьstungen ------
+ 	 	// ------ alle anderen RСЊstungen ------
 		else 
 		{
-			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(спокойно) Что?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_16"); //Я просто хотел посмотреть на тебя. Ох, да, похоже, у тебя есть деньги. Проходи.
+			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(СЃРїРѕРєРѕР№РЅРѕ) Р§С‚Рѕ?
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_16"); //РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїРѕСЃРјРѕС‚СЂРµС‚СЊ РЅР° С‚РµР±СЏ. РћС…, РґР°, РїРѕС…РѕР¶Рµ, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґРµРЅСЊРіРё. РџСЂРѕС…РѕРґРё.
 			
 			self.aivar[AIV_PASSGATE] = TRUE;
 			Stadtwache_310.aivar[AIV_PASSGATE] = TRUE; 	//Wache vom anderen Stadttor
@@ -169,7 +169,7 @@ FUNC INT DIA_Mil_333_Stadtwache_SecondWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_06_00"); //У тебя со слухом все в порядке? Еще один шаг, и ты познакомишься с моим мечом!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_06_00"); //РЈ С‚РµР±СЏ СЃРѕ СЃР»СѓС…РѕРј РІСЃРµ РІ РїРѕСЂСЏРґРєРµ? Р•С‰Рµ РѕРґРёРЅ С€Р°Рі, Рё С‚С‹ РїРѕР·РЅР°РєРѕРјРёС€СЊСЃСЏ СЃ РјРѕРёРј РјРµС‡РѕРј!
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,Mil_333_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -207,7 +207,7 @@ func void DIA_Mil_333_Stadtwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_06_00"); //Ты сам напросился...
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_06_00"); //РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ...
 	
 	AI_StopProcessInfos	(self);			
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -225,7 +225,7 @@ INSTANCE DIA_Mil_333_Stadtwache_Bribe (C_INFO)
 	condition	= DIA_Mil_333_Stadtwache_Bribe_Condition;
 	information	= DIA_Mil_333_Stadtwache_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Вот 100 золотых. Позволь мне пройти!";
+	description	= "Р’РѕС‚ 100 Р·РѕР»РѕС‚С‹С…. РџРѕР·РІРѕР»СЊ РјРЅРµ РїСЂРѕР№С‚Рё!";
 };                       
 
 FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
@@ -238,15 +238,15 @@ FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
 	
 func void DIA_Mil_333_Stadtwache_Bribe_Info()
 {
-	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Вот 100 золотых. Позволь мне пройти!
+	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Р’РѕС‚ 100 Р·РѕР»РѕС‚С‹С…. РџРѕР·РІРѕР»СЊ РјРЅРµ РїСЂРѕР№С‚Рё!
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 100))
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_01"); //(жадно) 100 золотых - это неплохо. Проходи, конечно.
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_01"); //(Р¶Р°РґРЅРѕ) 100 Р·РѕР»РѕС‚С‹С… - СЌС‚Рѕ РЅРµРїР»РѕС…Рѕ. РџСЂРѕС…РѕРґРё, РєРѕРЅРµС‡РЅРѕ.
 		
 		if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_02"); //И сразу иди к Андрэ! Или я в следующий раз опять возьму с тебя 100 золотых!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_02"); //Р СЃСЂР°Р·Сѓ РёРґРё Рє РђРЅРґСЂСЌ! РР»Рё СЏ РІ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р· РѕРїСЏС‚СЊ РІРѕР·СЊРјСѓ СЃ С‚РµР±СЏ 100 Р·РѕР»РѕС‚С‹С…!
 		};
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -254,12 +254,12 @@ func void DIA_Mil_333_Stadtwache_Bribe_Info()
 		Mil_333_schonmalreingelassen = TRUE;
 		B_CheckLog();
 		
-		// ------ wenn bezahlt, persцnliche Absolution erteilen -------
+		// ------ wenn bezahlt, persС†nliche Absolution erteilen -------
 		MIL_333_Personal_AbsolutionLevel = B_GetCurrentAbsolutionLevel(self) + 1;
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_03"); //Что?! Где?! Я не вижу золота. Проваливай!
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_03"); //Р§С‚Рѕ?! Р“РґРµ?! РЇ РЅРµ РІРёР¶Сѓ Р·РѕР»РѕС‚Р°. РџСЂРѕРІР°Р»РёРІР°Р№!
 	};
 	
 	AI_StopProcessInfos (self);
@@ -291,7 +291,7 @@ FUNC INT DIA_Mil_333_Stadtwache_PERM_Condition()
 	
 func void DIA_Mil_333_Stadtwache_PERM_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_PERM_06_00"); //Проходи!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_PERM_06_00"); //РџСЂРѕС…РѕРґРё!
 	
 	AI_StopProcessInfos (self);
 };

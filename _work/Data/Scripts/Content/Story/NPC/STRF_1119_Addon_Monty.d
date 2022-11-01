@@ -1,7 +1,7 @@
 instance STRF_1119_Addon_Monty (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Монти"; 
+	name 		= "РњРѕРЅС‚Рё"; 
 	guild 		= GIL_STRF;
 	id 			= 1119;
 	voice 		= 8;

@@ -1,7 +1,7 @@
 instance BDT_10014_Addon_Thorus (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Торус";
+	name 		= "РўРѕСЂСѓСЃ";
 	guild 		= GIL_BDT;
 	id 			= 10014;
 	voice 		= 12;

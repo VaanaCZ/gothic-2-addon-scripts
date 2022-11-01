@@ -23,8 +23,8 @@ FUNC VOID DIA_Carl_EXIT_Info()
 ///////////////////////////////////////////////////////////////////////
 FUNC VOID B_CarlSayHallo ()
 {
-	AI_Output (self, other, "DIA_Carl_Hallo_05_00"); //Похоже, в городе есть несколько воров, которые крадут у зажиточных горожан.
-	AI_Output (self, other, "DIA_Carl_Hallo_05_01"); //Городская стража недавно перевернула портовый квартал вверх дном, но они ничего не нашли.
+	AI_Output (self, other, "DIA_Carl_Hallo_05_00"); //РџРѕС…РѕР¶Рµ, РІ РіРѕСЂРѕРґРµ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РІРѕСЂРѕРІ, РєРѕС‚РѕСЂС‹Рµ РєСЂР°РґСѓС‚ Сѓ Р·Р°Р¶РёС‚РѕС‡РЅС‹С… РіРѕСЂРѕР¶Р°РЅ.
+	AI_Output (self, other, "DIA_Carl_Hallo_05_01"); //Р“РѕСЂРѕРґСЃРєР°СЏ СЃС‚СЂР°Р¶Р° РЅРµРґР°РІРЅРѕ РїРµСЂРµРІРµСЂРЅСѓР»Р° РїРѕСЂС‚РѕРІС‹Р№ РєРІР°СЂС‚Р°Р» РІРІРµСЂС… РґРЅРѕРј, РЅРѕ РѕРЅРё РЅРёС‡РµРіРѕ РЅРµ РЅР°С€Р»Рё.
 	
 };
 // ************************************************************
@@ -85,26 +85,26 @@ FUNC INT DIA_Carl_Hallo_Condition()
 };
 FUNC VOID DIA_Carl_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Carl_Hallo_05_02"); //Что привело тебя в этот бедный район? Что ты ищешь здесь?
+	AI_Output (self, other, "DIA_Carl_Hallo_05_02"); //Р§С‚Рѕ РїСЂРёРІРµР»Рѕ С‚РµР±СЏ РІ СЌС‚РѕС‚ Р±РµРґРЅС‹Р№ СЂР°Р№РѕРЅ? Р§С‚Рѕ С‚С‹ РёС‰РµС€СЊ Р·РґРµСЃСЊ?
 	
 	Info_ClearChoices (DIA_Carl_Hallo);
-	Info_AddChoice (DIA_Carl_Hallo,"Я заблудился.",DIA_Carl_Hallo_verlaufen);
-	Info_AddChoice (DIA_Carl_Hallo,"Я просто брожу, осматриваю окрестности.",DIA_Carl_Hallo_umsehen);
+	Info_AddChoice (DIA_Carl_Hallo,"РЇ Р·Р°Р±Р»СѓРґРёР»СЃСЏ.",DIA_Carl_Hallo_verlaufen);
+	Info_AddChoice (DIA_Carl_Hallo,"РЇ РїСЂРѕСЃС‚Рѕ Р±СЂРѕР¶Сѓ, РѕСЃРјР°С‚СЂРёРІР°СЋ РѕРєСЂРµСЃС‚РЅРѕСЃС‚Рё.",DIA_Carl_Hallo_umsehen);
 	
 	
 };
 FUNC VOID DIA_Carl_Hallo_verlaufen()
 {
-	AI_Output (other, self, "DIA_Carl_Hallo_verlaufen_15_00");//Я заблудился.
-	AI_Output (self, other, "DIA_Carl_Hallo_verlaufen_05_01");//Тогда смотри, чтобы тебя не ограбили.
+	AI_Output (other, self, "DIA_Carl_Hallo_verlaufen_15_00");//РЇ Р·Р°Р±Р»СѓРґРёР»СЃСЏ.
+	AI_Output (self, other, "DIA_Carl_Hallo_verlaufen_05_01");//РўРѕРіРґР° СЃРјРѕС‚СЂРё, С‡С‚РѕР±С‹ С‚РµР±СЏ РЅРµ РѕРіСЂР°Р±РёР»Рё.
 	B_CarlSayHallo();
 	Info_ClearChoices (DIA_Carl_Hallo);
 	
 };
 FUNC VOID DIA_Carl_Hallo_umsehen()
 {
-	AI_Output (other, self, "DIA_Carl_Hallo_umsehen_15_00");//Я просто брожу, осматриваю окрестности.
-	AI_Output (self, other, "DIA_Carl_Hallo_umsehen_05_01");//Ага. Смотри, зазеваешься и лишишься кошелька.
+	AI_Output (other, self, "DIA_Carl_Hallo_umsehen_15_00");//РЇ РїСЂРѕСЃС‚Рѕ Р±СЂРѕР¶Сѓ, РѕСЃРјР°С‚СЂРёРІР°СЋ РѕРєСЂРµСЃС‚РЅРѕСЃС‚Рё.
+	AI_Output (self, other, "DIA_Carl_Hallo_umsehen_05_01");//РђРіР°. РЎРјРѕС‚СЂРё, Р·Р°Р·РµРІР°РµС€СЊСЃСЏ Рё Р»РёС€РёС€СЊСЃСЏ РєРѕС€РµР»СЊРєР°.
 	B_CarlSayHallo();
 	Info_ClearChoices (DIA_Carl_Hallo);
 };
@@ -118,7 +118,7 @@ INSTANCE DIA_Carl_Diebe   (C_INFO)
 	condition   = DIA_Carl_Diebe_Condition;
 	information = DIA_Carl_Diebe_Info;
 	permanent   = FALSE;
-	description	= "Что ты знаешь о ворах?";
+	description	= "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РІРѕСЂР°С…?";
 };
 
 FUNC INT DIA_Carl_Diebe_Condition()
@@ -127,10 +127,10 @@ FUNC INT DIA_Carl_Diebe_Condition()
 };
 FUNC VOID DIA_Carl_Diebe_Info()
 {
-	AI_Output (other, self, "DIA_Carl_Diebe_15_00");//Что ты знаешь о ворах?
-	AI_Output (self, other, "DIA_Carl_Diebe_05_01");//Ничего. Но все горожане напуганы и становятся недоверчивыми - особенно к чужакам.
-	AI_Output (self, other, "DIA_Carl_Diebe_05_02");//Смотри, чтобы тебя не застали в чужом доме. У нас этого не любят.
-	AI_Output (self, other, "DIA_Carl_Diebe_05_03");//Да, ты должен сам защищаться от воров. Хорошая дубинка - лучше всего.
+	AI_Output (other, self, "DIA_Carl_Diebe_15_00");//Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РІРѕСЂР°С…?
+	AI_Output (self, other, "DIA_Carl_Diebe_05_01");//РќРёС‡РµРіРѕ. РќРѕ РІСЃРµ РіРѕСЂРѕР¶Р°РЅРµ РЅР°РїСѓРіР°РЅС‹ Рё СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ РЅРµРґРѕРІРµСЂС‡РёРІС‹РјРё - РѕСЃРѕР±РµРЅРЅРѕ Рє С‡СѓР¶Р°РєР°Рј.
+	AI_Output (self, other, "DIA_Carl_Diebe_05_02");//РЎРјРѕС‚СЂРё, С‡С‚РѕР±С‹ С‚РµР±СЏ РЅРµ Р·Р°СЃС‚Р°Р»Рё РІ С‡СѓР¶РѕРј РґРѕРјРµ. РЈ РЅР°СЃ СЌС‚РѕРіРѕ РЅРµ Р»СЋР±СЏС‚.
+	AI_Output (self, other, "DIA_Carl_Diebe_05_03");//Р”Р°, С‚С‹ РґРѕР»Р¶РµРЅ СЃР°Рј Р·Р°С‰РёС‰Р°С‚СЊСЃСЏ РѕС‚ РІРѕСЂРѕРІ. РҐРѕСЂРѕС€Р°СЏ РґСѓР±РёРЅРєР° - Р»СѓС‡С€Рµ РІСЃРµРіРѕ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Lernen
@@ -142,7 +142,7 @@ INSTANCE DIA_Carl_Lernen   (C_INFO)
 	condition   = DIA_Carl_Lernen_Condition;
 	information = DIA_Carl_Lernen_Info;
 	permanent   = FALSE;
-	description	= "Ты можешь научить меня чему-нибудь?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 
 FUNC INT DIA_Carl_Lernen_Condition()
@@ -151,17 +151,17 @@ FUNC INT DIA_Carl_Lernen_Condition()
 };
 FUNC VOID DIA_Carl_Lernen_Info()
 {
-	AI_Output (other, self, "DIA_Carl_Lernen_15_00");//Ты можешь научить меня чему-нибудь?
-	AI_Output (self, other, "DIA_Carl_Lernen_05_01");//Ох, я всего лишь кую скобяные изделия и гвозди и чиню различные железяки.
-	AI_Output (self, other, "DIA_Carl_Lernen_05_02");//Но я мало что знаю об изготовлении оружия, чтобы учить тебя этому.
-	AI_Output (self, other, "DIA_Carl_Lernen_05_03");//Если ты хочешь обучиться этому ремеслу, поговори с Гарадом. Он-то уж точно знает, как ковать оружие!
-	AI_Output (self, other, "DIA_Carl_Lernen_05_04");//Но если ты хочешь немного потренировать свои мускулы, тут я могу помочь.
+	AI_Output (other, self, "DIA_Carl_Lernen_15_00");//РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other, "DIA_Carl_Lernen_05_01");//РћС…, СЏ РІСЃРµРіРѕ Р»РёС€СЊ РєСѓСЋ СЃРєРѕР±СЏРЅС‹Рµ РёР·РґРµР»РёСЏ Рё РіРІРѕР·РґРё Рё С‡РёРЅСЋ СЂР°Р·Р»РёС‡РЅС‹Рµ Р¶РµР»РµР·СЏРєРё.
+	AI_Output (self, other, "DIA_Carl_Lernen_05_02");//РќРѕ СЏ РјР°Р»Рѕ С‡С‚Рѕ Р·РЅР°СЋ РѕР± РёР·РіРѕС‚РѕРІР»РµРЅРёРё РѕСЂСѓР¶РёСЏ, С‡С‚РѕР±С‹ СѓС‡РёС‚СЊ С‚РµР±СЏ СЌС‚РѕРјСѓ.
+	AI_Output (self, other, "DIA_Carl_Lernen_05_03");//Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РѕР±СѓС‡РёС‚СЊСЃСЏ СЌС‚РѕРјСѓ СЂРµРјРµСЃР»Сѓ, РїРѕРіРѕРІРѕСЂРё СЃ Р“Р°СЂР°РґРѕРј. РћРЅ-С‚Рѕ СѓР¶ С‚РѕС‡РЅРѕ Р·РЅР°РµС‚, РєР°Рє РєРѕРІР°С‚СЊ РѕСЂСѓР¶РёРµ!
+	AI_Output (self, other, "DIA_Carl_Lernen_05_04");//РќРѕ РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РЅРµРјРЅРѕРіРѕ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊ СЃРІРѕРё РјСѓСЃРєСѓР»С‹, С‚СѓС‚ СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ.
 	
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Карл, кузнец в портовом квартале, может сделать меня сильнее.");
+	B_LogEntry (Topic_CityTeacher,"РљР°СЂР», РєСѓР·РЅРµС† РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ, РјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ РјРµРЅСЏ СЃРёР»СЊРЅРµРµ.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Fьr's lernen bezahlen 
+//	Info FСЊr's lernen bezahlen 
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Carl_Wieviel   (C_INFO)
 {
@@ -170,7 +170,7 @@ INSTANCE DIA_Carl_Wieviel   (C_INFO)
 	condition   = DIA_Carl_Wieviel_Condition;
 	information = DIA_Carl_Wieviel_Info;
 	permanent   = FALSE;
-	description	= "Сколько ты берешь за обучение?";
+	description	= "РЎРєРѕР»СЊРєРѕ С‚С‹ Р±РµСЂРµС€СЊ Р·Р° РѕР±СѓС‡РµРЅРёРµ?";
 };
 
 FUNC INT DIA_Carl_Wieviel_Condition()
@@ -182,16 +182,16 @@ FUNC INT DIA_Carl_Wieviel_Condition()
 };
 FUNC VOID DIA_Carl_Wieviel_Info()
 {
-	AI_Output (other, self, "DIA_Carl_Wieviel_15_00");//Сколько ты берешь за обучение?
+	AI_Output (other, self, "DIA_Carl_Wieviel_15_00");//РЎРєРѕР»СЊРєРѕ С‚С‹ Р±РµСЂРµС€СЊ Р·Р° РѕР±СѓС‡РµРЅРёРµ?
 	
 	if Npc_KnowsInfo (other,DIA_Edda_Statue)
 	{
-		AI_Output (self, other, "DIA_Carl_Wieviel_05_01");//Я слышал, что ты сделал для Эдды. Я буду тренировать тебя бесплатно.
+		AI_Output (self, other, "DIA_Carl_Wieviel_05_01");//РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» РґР»СЏ Р­РґРґС‹. РЇ Р±СѓРґСѓ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ С‚РµР±СЏ Р±РµСЃРїР»Р°С‚РЅРѕ.
 		Carl_TeachSTR = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Carl_Wieviel_05_02");//50 золотых монет - и я помогу тебе стать сильнее.
+		AI_Output (self, other, "DIA_Carl_Wieviel_05_02");//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ - Рё СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -204,7 +204,7 @@ INSTANCE DIA_Carl_bezahlen   (C_INFO)
 	condition   = DIA_Carl_bezahlen_Condition;
 	information = DIA_Carl_bezahlen_Info;
 	permanent   = TRUE;
-	description	= "Я хочу потренироваться с тобой. (заплатить 50 золотых).";
+	description	= "РЇ С…РѕС‡Сѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ СЃ С‚РѕР±РѕР№. (Р·Р°РїР»Р°С‚РёС‚СЊ 50 Р·РѕР»РѕС‚С‹С…).";
 };
 FUNC INT DIA_Carl_bezahlen_Condition()
 {	
@@ -216,23 +216,23 @@ FUNC INT DIA_Carl_bezahlen_Condition()
 };
 FUNC VOID DIA_Carl_bezahlen_Info()
 {
-	AI_Output (other, self, "DIA_Carl_bezahlen_15_00");//Я хочу потренироваться с тобой.
+	AI_Output (other, self, "DIA_Carl_bezahlen_15_00");//РЇ С…РѕС‡Сѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ СЃ С‚РѕР±РѕР№.
 	
 	if Npc_KnowsInfo (other,DIA_Edda_Statue)
 	{
-		AI_Output (self, other, "DIA_Carl_bezahlen_05_01");//Я слышал, что ты сделал для Эдды. Я буду тренировать тебя бесплатно.
+		AI_Output (self, other, "DIA_Carl_bezahlen_05_01");//РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» РґР»СЏ Р­РґРґС‹. РЇ Р±СѓРґСѓ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ С‚РµР±СЏ Р±РµСЃРїР»Р°С‚РЅРѕ.
 		Carl_TeachSTR = TRUE;
 	}
 	else 
 	{
 		if B_GiveInvItems (other, self, ItMi_Gold, 50)
 		{
-			AI_Output (self, other, "DIA_Carl_bezahlen_05_02");//Хорошо, мы можем начать, как только ты будешь готов.
+			AI_Output (self, other, "DIA_Carl_bezahlen_05_02");//РҐРѕСЂРѕС€Рѕ, РјС‹ РјРѕР¶РµРј РЅР°С‡Р°С‚СЊ, РєР°Рє С‚РѕР»СЊРєРѕ С‚С‹ Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 			Carl_TeachSTR = TRUE;
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Carl_bezahlen_05_03");//Принеси золото, и я потренирую тебя.
+			AI_Output (self, other, "DIA_Carl_bezahlen_05_03");//РџСЂРёРЅРµСЃРё Р·РѕР»РѕС‚Рѕ, Рё СЏ РїРѕС‚СЂРµРЅРёСЂСѓСЋ С‚РµР±СЏ.
 		};
 	};
 };
@@ -247,7 +247,7 @@ INSTANCE DIA_Carl_Teach(C_INFO)
 	condition	= DIA_Carl_Teach_Condition;
 	information	= DIA_Carl_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу стать сильнее.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.";
 };                       
 
 FUNC INT DIA_Carl_Teach_Condition()
@@ -260,7 +260,7 @@ FUNC INT DIA_Carl_Teach_Condition()
  
 FUNC VOID DIA_Carl_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Carl_Teach_15_00"); //Я хочу стать сильнее.
+	AI_Output (other,self ,"DIA_Carl_Teach_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 
 	Info_ClearChoices (DIA_Carl_Teach);
 	Info_AddChoice		(DIA_Carl_Teach, DIALOG_BACK, DIA_Carl_Teach_Back);

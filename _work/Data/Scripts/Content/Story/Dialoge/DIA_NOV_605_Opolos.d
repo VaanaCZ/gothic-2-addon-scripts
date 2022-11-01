@@ -45,8 +45,8 @@ FUNC INT DIA_Opolos_Hello_Condition()
 };
 FUNC VOID DIA_Opolos_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Opolos_Hello_12_00"); //Привет, ты, должно быть, тот самый новичок.
-	AI_Output (self ,other,"DIA_Opolos_Hello_12_01"); //Я Ополос. Я присматриваю за овцами.
+	AI_Output (self ,other,"DIA_Opolos_Hello_12_00"); //РџСЂРёРІРµС‚, С‚С‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С‚РѕС‚ СЃР°РјС‹Р№ РЅРѕРІРёС‡РѕРє.
+	AI_Output (self ,other,"DIA_Opolos_Hello_12_01"); //РЇ РћРїРѕР»РѕСЃ. РЇ РїСЂРёСЃРјР°С‚СЂРёРІР°СЋ Р·Р° РѕРІС†Р°РјРё.
 };
 // *************************************************************************
 // 							Wurst verteilen
@@ -58,7 +58,7 @@ INSTANCE DIA_Opolos_Wurst(C_INFO)
 	condition	= DIA_Opolos_Wurst_Condition;
 	information	= DIA_Opolos_Wurst_Info;
 	permanent	= FALSE;
-	description = "Я принес баранью колбасу ...";
+	description = "РЇ РїСЂРёРЅРµСЃ Р±Р°СЂР°РЅСЊСЋ РєРѕР»Р±Р°СЃСѓ ...";
 };                       
 
 FUNC INT DIA_Opolos_Wurst_Condition()
@@ -74,8 +74,8 @@ FUNC INT DIA_Opolos_Wurst_Condition()
 
 FUNC VOID DIA_Opolos_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Opolos_Wurst_15_00"); //Я принес баранью колбасу ...
-	AI_Output (self, other, "DIA_Opolos_Wurst_12_01"); //Ох, фантастика! Наконец-то! Вкуснейшая баранья колбаса!
+	AI_Output (other, self, "DIA_Opolos_Wurst_15_00"); //РЇ РїСЂРёРЅРµСЃ Р±Р°СЂР°РЅСЊСЋ РєРѕР»Р±Р°СЃСѓ ...
+	AI_Output (self, other, "DIA_Opolos_Wurst_12_01"); //РћС…, С„Р°РЅС‚Р°СЃС‚РёРєР°! РќР°РєРѕРЅРµС†-С‚Рѕ! Р’РєСѓСЃРЅРµР№С€Р°СЏ Р±Р°СЂР°РЅСЊСЏ РєРѕР»Р±Р°СЃР°!
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
 	
@@ -98,7 +98,7 @@ INSTANCE DIA_Opolos_HowLong   (C_INFO)
 	condition   = DIA_Opolos_HowLong_Condition;
 	information = DIA_Opolos_HowLong_Info;
 	permanent   = FALSE;
-	description	= "Ты давно в монастыре?";
+	description	= "РўС‹ РґР°РІРЅРѕ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?";
 };
 FUNC INT DIA_Opolos_HowLong_Condition()
 {
@@ -109,16 +109,16 @@ FUNC INT DIA_Opolos_HowLong_Condition()
 };
 FUNC VOID DIA_Opolos_HowLong_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_HowLong_15_00"); //Ты давно в монастыре?
-	AI_Output (self ,other,"DIA_Opolos_HowLong_12_01"); //Уже три года. Но до сих пор меня не пускают в библиотеку. А мне так хочется...
-	AI_Output (other,self ,"DIA_Opolos_HowLong_15_02"); //А почему?
-	AI_Output (self ,other,"DIA_Opolos_HowLong_12_03"); //Моя работа здесь - пасти овец - а не изучать писания.
-	AI_Output (self ,other,"DIA_Opolos_HowLong_12_04"); //И пока мастер Парлан не освободит меня от этой обязанности, мне не позволят начать обучение в библиотеке.
+	AI_Output (other,self ,"DIA_Opolos_HowLong_15_00"); //РўС‹ РґР°РІРЅРѕ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?
+	AI_Output (self ,other,"DIA_Opolos_HowLong_12_01"); //РЈР¶Рµ С‚СЂРё РіРѕРґР°. РќРѕ РґРѕ СЃРёС… РїРѕСЂ РјРµРЅСЏ РЅРµ РїСѓСЃРєР°СЋС‚ РІ Р±РёР±Р»РёРѕС‚РµРєСѓ. Рђ РјРЅРµ С‚Р°Рє С…РѕС‡РµС‚СЃСЏ...
+	AI_Output (other,self ,"DIA_Opolos_HowLong_15_02"); //Рђ РїРѕС‡РµРјСѓ?
+	AI_Output (self ,other,"DIA_Opolos_HowLong_12_03"); //РњРѕСЏ СЂР°Р±РѕС‚Р° Р·РґРµСЃСЊ - РїР°СЃС‚Рё РѕРІРµС† - Р° РЅРµ РёР·СѓС‡Р°С‚СЊ РїРёСЃР°РЅРёСЏ.
+	AI_Output (self ,other,"DIA_Opolos_HowLong_12_04"); //Р РїРѕРєР° РјР°СЃС‚РµСЂ РџР°СЂР»Р°РЅ РЅРµ РѕСЃРІРѕР±РѕРґРёС‚ РјРµРЅСЏ РѕС‚ СЌС‚РѕР№ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё, РјРЅРµ РЅРµ РїРѕР·РІРѕР»СЏС‚ РЅР°С‡Р°С‚СЊ РѕР±СѓС‡РµРЅРёРµ РІ Р±РёР±Р»РёРѕС‚РµРєРµ.
 	
 	MIS_HelpOpolos = LOG_RUNNING;
 	Log_CreateTopic (Topic_OpolosStudy,LOG_MISSION);
 	Log_SetTopicStatus (Topic_OpolosStudy,LOG_RUNNING);
-	B_LogEntry (Topic_OpolosStudy,"Ополос сторожит овец. А он хотел бы изучать свитки в библиотеке.");
+	B_LogEntry (Topic_OpolosStudy,"РћРїРѕР»РѕСЃ СЃС‚РѕСЂРѕР¶РёС‚ РѕРІРµС†. Рђ РѕРЅ С…РѕС‚РµР» Р±С‹ РёР·СѓС‡Р°С‚СЊ СЃРІРёС‚РєРё РІ Р±РёР±Р»РёРѕС‚РµРєРµ.");
 };
 //*********************************************************************
 //		Auf was muss ich hier im Kloster achten?
@@ -130,7 +130,7 @@ INSTANCE DIA_Opolos_Monastery   (C_INFO)
 	condition   = DIA_Opolos_Monastery_Condition;
 	information = DIA_Opolos_Monastery_Info;
 	permanent   = FALSE;
-	description	= "Как я должен вести себя в монастыре?";
+	description	= "РљР°Рє СЏ РґРѕР»Р¶РµРЅ РІРµСЃС‚Рё СЃРµР±СЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?";
 };
 FUNC INT DIA_Opolos_Monastery_Condition()
 {	
@@ -142,10 +142,10 @@ FUNC INT DIA_Opolos_Monastery_Condition()
 };
 FUNC VOID DIA_Opolos_Monastery_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_Monastery_15_00"); //Как я должен вести себя в монастыре?
-	AI_Output (self ,other,"DIA_Opolos_Monastery_12_01"); //Никогда не лги магам. Уважай своих братьев по общине.
-	AI_Output (self ,other,"DIA_Opolos_Monastery_12_02"); //Уважай собственность монастыря. Если ты нарушишь эти правила, тебе придется отвечать перед мастером Парланом.
-	AI_Output (self ,other,"DIA_Opolos_Monastery_12_03"); //Помимо этого, я могу посоветовать тебе быть осторожнее с Агоном. Если ты не будешь бдительным, ты можешь кончить как Бабо.
+	AI_Output (other,self ,"DIA_Opolos_Monastery_15_00"); //РљР°Рє СЏ РґРѕР»Р¶РµРЅ РІРµСЃС‚Рё СЃРµР±СЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?
+	AI_Output (self ,other,"DIA_Opolos_Monastery_12_01"); //РќРёРєРѕРіРґР° РЅРµ Р»РіРё РјР°РіР°Рј. РЈРІР°Р¶Р°Р№ СЃРІРѕРёС… Р±СЂР°С‚СЊРµРІ РїРѕ РѕР±С‰РёРЅРµ.
+	AI_Output (self ,other,"DIA_Opolos_Monastery_12_02"); //РЈРІР°Р¶Р°Р№ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚СЊ РјРѕРЅР°СЃС‚С‹СЂСЏ. Р•СЃР»Рё С‚С‹ РЅР°СЂСѓС€РёС€СЊ СЌС‚Рё РїСЂР°РІРёР»Р°, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РѕС‚РІРµС‡Р°С‚СЊ РїРµСЂРµРґ РјР°СЃС‚РµСЂРѕРј РџР°СЂР»Р°РЅРѕРј.
+	AI_Output (self ,other,"DIA_Opolos_Monastery_12_03"); //РџРѕРјРёРјРѕ СЌС‚РѕРіРѕ, СЏ РјРѕРіСѓ РїРѕСЃРѕРІРµС‚РѕРІР°С‚СЊ С‚РµР±Рµ Р±С‹С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ СЃ РђРіРѕРЅРѕРј. Р•СЃР»Рё С‚С‹ РЅРµ Р±СѓРґРµС€СЊ Р±РґРёС‚РµР»СЊРЅС‹Рј, С‚С‹ РјРѕР¶РµС€СЊ РєРѕРЅС‡РёС‚СЊ РєР°Рє Р‘Р°Р±Рѕ.
 };
 //*********************************************************************
 //		Kannst du mir was beibringen?
@@ -157,7 +157,7 @@ INSTANCE DIA_Opolos_beibringen   (C_INFO)
 	condition   = DIA_Opolos_beibringen_Condition;
 	information = DIA_Opolos_beibringen_Info;
 	permanent   = FALSE;
-	description	= "Ты можешь чему-нибудь научить меня?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 FUNC INT DIA_Opolos_beibringen_Condition()
 {	
@@ -170,16 +170,16 @@ FUNC INT DIA_Opolos_beibringen_Condition()
 };
 FUNC VOID DIA_Opolos_beibringen_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_beibringen_15_00"); //Ты можешь чему-нибудь научить меня?
-	AI_Output (self ,other,"DIA_Opolos_beibringen_12_01"); //Конечно, мне часто приходилось драться. Я могу научить тебя, как стать сильнее.
-	AI_Output (self ,other,"DIA_Opolos_beibringen_12_02"); //Но я бы хотел узнать что-нибудь о зельях, особенно о магических.
-	AI_Output (other,self ,"DIA_Opolos_beibringen_15_03"); //Чем я могу помочь тебе в этом?
-	AI_Output (self ,other,"DIA_Opolos_beibringen_12_04"); //Ну, если ты работаешь на Неораса, то у тебя наверняка будет возможность 'позаимствовать' ненадолго один из его рецептов.
-	AI_Output (self ,other,"DIA_Opolos_beibringen_12_05"); //Если ты принесешь его мне, чтобы я мог изучить его, то я потренирую тебя.
+	AI_Output (other,self ,"DIA_Opolos_beibringen_15_00"); //РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?
+	AI_Output (self ,other,"DIA_Opolos_beibringen_12_01"); //РљРѕРЅРµС‡РЅРѕ, РјРЅРµ С‡Р°СЃС‚Рѕ РїСЂРёС…РѕРґРёР»РѕСЃСЊ РґСЂР°С‚СЊСЃСЏ. РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ, РєР°Рє СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
+	AI_Output (self ,other,"DIA_Opolos_beibringen_12_02"); //РќРѕ СЏ Р±С‹ С…РѕС‚РµР» СѓР·РЅР°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ Р·РµР»СЊСЏС…, РѕСЃРѕР±РµРЅРЅРѕ Рѕ РјР°РіРёС‡РµСЃРєРёС….
+	AI_Output (other,self ,"DIA_Opolos_beibringen_15_03"); //Р§РµРј СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ СЌС‚РѕРј?
+	AI_Output (self ,other,"DIA_Opolos_beibringen_12_04"); //РќСѓ, РµСЃР»Рё С‚С‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РќРµРѕСЂР°СЃР°, С‚Рѕ Сѓ С‚РµР±СЏ РЅР°РІРµСЂРЅСЏРєР° Р±СѓРґРµС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ 'РїРѕР·Р°РёРјСЃС‚РІРѕРІР°С‚СЊ' РЅРµРЅР°РґРѕР»РіРѕ РѕРґРёРЅ РёР· РµРіРѕ СЂРµС†РµРїС‚РѕРІ.
+	AI_Output (self ,other,"DIA_Opolos_beibringen_12_05"); //Р•СЃР»Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РµРіРѕ РјРЅРµ, С‡С‚РѕР±С‹ СЏ РјРѕРі РёР·СѓС‡РёС‚СЊ РµРіРѕ, С‚Рѕ СЏ РїРѕС‚СЂРµРЅРёСЂСѓСЋ С‚РµР±СЏ.
 	
 	Log_CreateTopic (Topic_OpolosRezept,LOG_MISSION);
 	Log_SetTopicStatus(Topic_OpolosRezept,LOG_RUNNING);
-	B_LogEntry (Topic_OpolosRezept,"Ополос хочет взглянуть на рецепт приготовления зелий маны. Возможно мне удастся позаимствовать его, работая на Неораса.");
+	B_LogEntry (Topic_OpolosRezept,"РћРїРѕР»РѕСЃ С…РѕС‡РµС‚ РІР·РіР»СЏРЅСѓС‚СЊ РЅР° СЂРµС†РµРїС‚ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ Р·РµР»РёР№ РјР°РЅС‹. Р’РѕР·РјРѕР¶РЅРѕ РјРЅРµ СѓРґР°СЃС‚СЃСЏ РїРѕР·Р°РёРјСЃС‚РІРѕРІР°С‚СЊ РµРіРѕ, СЂР°Р±РѕС‚Р°СЏ РЅР° РќРµРѕСЂР°СЃР°.");
 };
 //*********************************************************************
 // rezept
@@ -191,7 +191,7 @@ INSTANCE DIA_Opolos_rezept   (C_INFO)
 	condition   = DIA_Opolos_rezept_Condition;
 	information = DIA_Opolos_rezept_Info;
 	permanent   = TRUE;
-	description	= "Насчет рецепта ...";
+	description	= "РќР°СЃС‡РµС‚ СЂРµС†РµРїС‚Р° ...";
 };
 //-----------------------------------
 var int DIA_Opolos_rezept_permanent;
@@ -209,12 +209,12 @@ FUNC VOID DIA_Opolos_rezept_Info()
 {
 	if (Npc_HasItems (other, ItWr_Manarezept) >= 1)
 	{
-		AI_Output (other,self ,"DIA_Opolos_rezept_15_00"); //Я принес рецепт, как ты и хотел.
-		AI_Output (self ,other,"DIA_Opolos_rezept_12_01"); //Хорошо, дай я прочту его.
+		AI_Output (other,self ,"DIA_Opolos_rezept_15_00"); //РЇ РїСЂРёРЅРµСЃ СЂРµС†РµРїС‚, РєР°Рє С‚С‹ Рё С…РѕС‚РµР».
+		AI_Output (self ,other,"DIA_Opolos_rezept_12_01"); //РҐРѕСЂРѕС€Рѕ, РґР°Р№ СЏ РїСЂРѕС‡С‚Сѓ РµРіРѕ.
 		B_UseFakeScroll ();
-		AI_Output (self ,other,"DIA_Opolos_rezept_12_02"); //Ага... хм ... да ... понятно ... так, так ...
+		AI_Output (self ,other,"DIA_Opolos_rezept_12_02"); //РђРіР°... С…Рј ... РґР° ... РїРѕРЅСЏС‚РЅРѕ ... С‚Р°Рє, С‚Р°Рє ...
 		B_UseFakeScroll ();
-		AI_Output (self ,other,"DIA_Opolos_rezept_12_03"); //Хорошо. Огромное спасибо. Если хочешь, ты можешь потренироваться со мной.
+		AI_Output (self ,other,"DIA_Opolos_rezept_12_03"); //РҐРѕСЂРѕС€Рѕ. РћРіСЂРѕРјРЅРѕРµ СЃРїР°СЃРёР±Рѕ. Р•СЃР»Рё С…РѕС‡РµС€СЊ, С‚С‹ РјРѕР¶РµС€СЊ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ СЃРѕ РјРЅРѕР№.
 		
 		DIA_Opolos_rezept_permanent = TRUE;
 		Opolos_TeachSTR = TRUE;
@@ -223,13 +223,13 @@ FUNC VOID DIA_Opolos_rezept_Info()
 		B_GivePlayerXP (XP_Ambient);
 		
 		Log_CreateTopic (Topic_KlosterTeacher,LOG_NOTE);
-		B_LogEntry (Topic_KlosterTeacher,"Ополос может помочь мне стать сильнее.");
+		B_LogEntry (Topic_KlosterTeacher,"РћРїРѕР»РѕСЃ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.");
 
 	}
 	else if (MIS_NEORASRezept == LOG_SUCCESS)
 	{
-		AI_Output (other,self ,"DIA_Opolos_rezept_15_04"); //Я уже вернул этот рецепт Неорасу.
-		AI_Output (self ,other,"DIA_Opolos_rezept_12_05"); //Ох, черт - мне, наверное, никогда не удастся научиться чему-нибудь здесь. Ладно. Я все равно потренирую тебя.
+		AI_Output (other,self ,"DIA_Opolos_rezept_15_04"); //РЇ СѓР¶Рµ РІРµСЂРЅСѓР» СЌС‚РѕС‚ СЂРµС†РµРїС‚ РќРµРѕСЂР°СЃСѓ.
+		AI_Output (self ,other,"DIA_Opolos_rezept_12_05"); //РћС…, С‡РµСЂС‚ - РјРЅРµ, РЅР°РІРµСЂРЅРѕРµ, РЅРёРєРѕРіРґР° РЅРµ СѓРґР°СЃС‚СЃСЏ РЅР°СѓС‡РёС‚СЊСЃСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ. Р›Р°РґРЅРѕ. РЇ РІСЃРµ СЂР°РІРЅРѕ РїРѕС‚СЂРµРЅРёСЂСѓСЋ С‚РµР±СЏ.
 		
 		Opolos_Rezept = LOG_FAILED;
 		
@@ -237,11 +237,11 @@ FUNC VOID DIA_Opolos_rezept_Info()
 		Opolos_TeachSTR = TRUE;
 		
 		Log_CreateTopic (Topic_KlosterTeacher,LOG_NOTE);
-		B_LogEntry (Topic_KlosterTeacher,"Ополос может помочь мне стать сильнее.");
+		B_LogEntry (Topic_KlosterTeacher,"РћРїРѕР»РѕСЃ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.");
 	}
 	else 
 	{
-		AI_Output (other,self ,"DIA_Opolos_rezept_15_06"); //Вернемся к этому позже.
+		AI_Output (other,self ,"DIA_Opolos_rezept_15_06"); //Р’РµСЂРЅРµРјСЃСЏ Рє СЌС‚РѕРјСѓ РїРѕР·Р¶Рµ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -254,7 +254,7 @@ instance DIA_Opolos_TEACH_STR		(C_INFO)
 	condition	 = 	DIA_Opolos_TEACH_STR_Condition;
 	information	 = 	DIA_Opolos_TEACH_STR_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу стать сильнее.";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.";
 };
 func int DIA_Opolos_TEACH_STR_Condition ()
 {	
@@ -267,7 +267,7 @@ func int DIA_Opolos_TEACH_STR_Condition ()
 };
 func void DIA_Opolos_TEACH_STR_Info ()
 {
-		AI_Output (other, self, "DIA_Opolos_TEACH_STR_15_00"); //Я хочу стать сильнее.
+		AI_Output (other, self, "DIA_Opolos_TEACH_STR_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 		
 		Info_ClearChoices   (DIA_Opolos_TEACH_STR);	
 		Info_AddChoice 		(DIA_Opolos_TEACH_STR,DIALOG_BACK,DIA_Opolos_TEACH_STR_BACK);		
@@ -278,7 +278,7 @@ FUNC VOID DIA_Opolos_TEACH_STR_BACK()
 {
 	if (other.attribute[ATR_STRENGTH] >= T_MED)  
 	{
-		AI_Output (self, other, "DIA_Opolos_TEACH_STR_12_00"); //Ты стал очень сильным. Мне больше нечему учить тебя.
+		AI_Output (self, other, "DIA_Opolos_TEACH_STR_12_00"); //РўС‹ СЃС‚Р°Р» РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹Рј. РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	};
 	
 	Info_ClearChoices   (DIA_Opolos_TEACH_STR);	
@@ -311,7 +311,7 @@ INSTANCE DIA_Opolos_Agon   (C_INFO)
 	condition   = DIA_Opolos_Agon_Condition;
 	information = DIA_Opolos_Agon_Info;
 	permanent   = FALSE;
-	description	= "А кто такие Агон и Бабо?";
+	description	= "Рђ РєС‚Рѕ С‚Р°РєРёРµ РђРіРѕРЅ Рё Р‘Р°Р±Рѕ?";
 };
 FUNC INT DIA_Opolos_Agon_Condition()
 {
@@ -323,12 +323,12 @@ FUNC INT DIA_Opolos_Agon_Condition()
 };
 FUNC VOID DIA_Opolos_Agon_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_Agon_15_00"); //А кто такие Агон и Бабо?
-	AI_Output (self ,other,"DIA_Opolos_Agon_12_01"); //Агон заведует садом. Он тоже послушник, но ведет себя так, как будто он уже Избранный.
-	AI_Output (self ,other,"DIA_Opolos_Agon_12_02"); //Бабо пришел в монастырь незадолго до тебя. И сначала он помогал Агону в саду.
-	AI_Output (self ,other,"DIA_Opolos_Agon_12_03"); //Похоже, они что-то там не поделили, и с тех пор Бабо подметает двор.
-	AI_Output (other,self ,"DIA_Opolos_Agon_15_04"); //Ты знаешь, что произошло?
-	AI_Output (self ,other,"DIA_Opolos_Agon_12_05"); //Точно не знаю. Тебе лучше самому спросить их. Но слова Агона имеет больший вес, чем слово любого другого послушника, потому что он племянник губернатора.
+	AI_Output (other,self ,"DIA_Opolos_Agon_15_00"); //Рђ РєС‚Рѕ С‚Р°РєРёРµ РђРіРѕРЅ Рё Р‘Р°Р±Рѕ?
+	AI_Output (self ,other,"DIA_Opolos_Agon_12_01"); //РђРіРѕРЅ Р·Р°РІРµРґСѓРµС‚ СЃР°РґРѕРј. РћРЅ С‚РѕР¶Рµ РїРѕСЃР»СѓС€РЅРёРє, РЅРѕ РІРµРґРµС‚ СЃРµР±СЏ С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ РѕРЅ СѓР¶Рµ РР·Р±СЂР°РЅРЅС‹Р№.
+	AI_Output (self ,other,"DIA_Opolos_Agon_12_02"); //Р‘Р°Р±Рѕ РїСЂРёС€РµР» РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РЅРµР·Р°РґРѕР»РіРѕ РґРѕ С‚РµР±СЏ. Р СЃРЅР°С‡Р°Р»Р° РѕРЅ РїРѕРјРѕРіР°Р» РђРіРѕРЅСѓ РІ СЃР°РґСѓ.
+	AI_Output (self ,other,"DIA_Opolos_Agon_12_03"); //РџРѕС…РѕР¶Рµ, РѕРЅРё С‡С‚Рѕ-С‚Рѕ С‚Р°Рј РЅРµ РїРѕРґРµР»РёР»Рё, Рё СЃ С‚РµС… РїРѕСЂ Р‘Р°Р±Рѕ РїРѕРґРјРµС‚Р°РµС‚ РґРІРѕСЂ.
+	AI_Output (other,self ,"DIA_Opolos_Agon_15_04"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ?
+	AI_Output (self ,other,"DIA_Opolos_Agon_12_05"); //РўРѕС‡РЅРѕ РЅРµ Р·РЅР°СЋ. РўРµР±Рµ Р»СѓС‡С€Рµ СЃР°РјРѕРјСѓ СЃРїСЂРѕСЃРёС‚СЊ РёС…. РќРѕ СЃР»РѕРІР° РђРіРѕРЅР° РёРјРµРµС‚ Р±РѕР»СЊС€РёР№ РІРµСЃ, С‡РµРј СЃР»РѕРІРѕ Р»СЋР±РѕРіРѕ РґСЂСѓРіРѕРіРѕ РїРѕСЃР»СѓС€РЅРёРєР°, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РѕРЅ РїР»РµРјСЏРЅРЅРёРє РіСѓР±РµСЂРЅР°С‚РѕСЂР°.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SHEEP
@@ -340,7 +340,7 @@ instance DIA_Opolos_LIESEL		(C_INFO)
 	condition	 = 	DIA_Opolos_LIESEL_Condition;
 	information	 = 	DIA_Opolos_LIESEL_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Смотри, Я привел Бетси.";
+	description	 = 	"РЎРјРѕС‚СЂРё, РЇ РїСЂРёРІРµР» Р‘РµС‚СЃРё.";
 };
 func int DIA_Opolos_LIESEL_Condition ()
 {	
@@ -354,7 +354,7 @@ func void DIA_Opolos_LIESEL_Info ()
 {
 	
 	
-	AI_Output (other, self, "DIA_Opolos_LIESEL_15_00"); //Смотри, Я привел Бетси. Могу я оставить ее с тобой?
+	AI_Output (other, self, "DIA_Opolos_LIESEL_15_00"); //РЎРјРѕС‚СЂРё, РЇ РїСЂРёРІРµР» Р‘РµС‚СЃРё. РњРѕРіСѓ СЏ РѕСЃС‚Р°РІРёС‚СЊ РµРµ СЃ С‚РѕР±РѕР№?
 	
 	Npc_PerceiveAll (self);
 	
@@ -367,12 +367,12 @@ func void DIA_Opolos_LIESEL_Info ()
 		other.start_aistate = ZS_MM_AllScheduler; 
 		
 		Liesel_Giveaway = TRUE;
-		AI_Output (self, hero, "DIA_Opolos_LIESEL_12_01"); //Да, конечно. Какая красивая овечка. Я позабочусь о ней.
+		AI_Output (self, hero, "DIA_Opolos_LIESEL_12_01"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РљР°РєР°СЏ РєСЂР°СЃРёРІР°СЏ РѕРІРµС‡РєР°. РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ Рѕ РЅРµР№.
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Opolos_Add_15_00"); //Хм... куда же это я его подевал. Я приду позже.
+		AI_Output (other, self, "DIA_Opolos_Add_15_00"); //РҐРј... РєСѓРґР° Р¶Рµ СЌС‚Рѕ СЏ РµРіРѕ РїРѕРґРµРІР°Р». РЇ РїСЂРёРґСѓ РїРѕР·Р¶Рµ.
 	};
 	
 	
@@ -388,7 +388,7 @@ INSTANCE DIA_Opolos_Biblothek   (C_INFO)
 	condition   = DIA_Opolos_Biblothek_Condition;
 	information = DIA_Opolos_Biblothek_Info;
 	permanent   = TRUE;
-	description	= "Насчет библиотеки ...";
+	description	= "РќР°СЃС‡РµС‚ Р±РёР±Р»РёРѕС‚РµРєРё ...";
 };
 FUNC INT DIA_Opolos_Biblothek_Condition()
 {
@@ -400,24 +400,24 @@ FUNC INT DIA_Opolos_Biblothek_Condition()
 };
 FUNC VOID DIA_Opolos_Biblothek_Info()
 {
-	AI_Output (other ,self,"DIA_Opolos_Biblothek_15_00"); //Насчет библиотеки ...
+	AI_Output (other ,self,"DIA_Opolos_Biblothek_15_00"); //РќР°СЃС‡РµС‚ Р±РёР±Р»РёРѕС‚РµРєРё ...
 	
 	if (Parlan_Erlaubnis == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_01"); //Это запертая комната слева, рядом с воротами.
-		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_02"); //Ключ от нее можно получить только тогда, когда мастер Парлан решит, что ты готов изучать писания.
+		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_01"); //Р­С‚Рѕ Р·Р°РїРµСЂС‚Р°СЏ РєРѕРјРЅР°С‚Р° СЃР»РµРІР°, СЂСЏРґРѕРј СЃ РІРѕСЂРѕС‚Р°РјРё.
+		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_02"); //РљР»СЋС‡ РѕС‚ РЅРµРµ РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ С‚РѕР»СЊРєРѕ С‚РѕРіРґР°, РєРѕРіРґР° РјР°СЃС‚РµСЂ РџР°СЂР»Р°РЅ СЂРµС€РёС‚, С‡С‚Рѕ С‚С‹ РіРѕС‚РѕРІ РёР·СѓС‡Р°С‚СЊ РїРёСЃР°РЅРёСЏ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_03"); //Ты везунчик! Ты получил ключ от библиотеки, не пробыв тут и нескольких дней.
-		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_04"); //Не упусти свой шанс изучить древние писания!
+		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_03"); //РўС‹ РІРµР·СѓРЅС‡РёРє! РўС‹ РїРѕР»СѓС‡РёР» РєР»СЋС‡ РѕС‚ Р±РёР±Р»РёРѕС‚РµРєРё, РЅРµ РїСЂРѕР±С‹РІ С‚СѓС‚ Рё РЅРµСЃРєРѕР»СЊРєРёС… РґРЅРµР№.
+		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_04"); //РќРµ СѓРїСѓСЃС‚Рё СЃРІРѕР№ С€Р°РЅСЃ РёР·СѓС‡РёС‚СЊ РґСЂРµРІРЅРёРµ РїРёСЃР°РЅРёСЏ!
 	};
 	
 	
 	AI_StopProcessInfos (self);
 };
 //*********************************************************************
-//		Sc hat Opolos das Studieren ermцglicht (Kap. 2)
+//		Sc hat Opolos das Studieren ermС†glicht (Kap. 2)
 //*********************************************************************
 INSTANCE DIA_Opolos_HelloAgain   (C_INFO)
 {
@@ -439,8 +439,8 @@ FUNC INT DIA_Opolos_HelloAgain_Condition()
 };
 FUNC VOID DIA_Opolos_HelloAgain_Info()
 {
-	AI_Output (self ,other,"DIA_Opolos_HelloAgain_12_00"); //Привет. Спасибо, что помог мне. Теперь я не упущу свой шанс.
-	AI_Output (self ,other,"DIA_Opolos_HelloAgain_12_01"); //Но у тебя, наверняка, теперь нет времени на разговоры с простым послушником, Мастер.
+	AI_Output (self ,other,"DIA_Opolos_HelloAgain_12_00"); //РџСЂРёРІРµС‚. РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РїРѕРјРѕРі РјРЅРµ. РўРµРїРµСЂСЊ СЏ РЅРµ СѓРїСѓС‰Сѓ СЃРІРѕР№ С€Р°РЅСЃ.
+	AI_Output (self ,other,"DIA_Opolos_HelloAgain_12_01"); //РќРѕ Сѓ С‚РµР±СЏ, РЅР°РІРµСЂРЅСЏРєР°, С‚РµРїРµСЂСЊ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЂР°Р·РіРѕРІРѕСЂС‹ СЃ РїСЂРѕСЃС‚С‹Рј РїРѕСЃР»СѓС€РЅРёРєРѕРј, РњР°СЃС‚РµСЂ.
 	
 	B_GivePlayerXP (XP_Ambient); 
 	AI_StopProcessInfos (self);
@@ -456,7 +456,7 @@ INSTANCE DIA_Opolos_HowIsIt   (C_INFO)
 	condition   = DIA_Opolos_HowIsIt_Condition;
 	information = DIA_Opolos_HowIsIt_Info;
 	permanent   = TRUE;
-	description	= "Как дела?";
+	description	= "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Opolos_HowIsIt_Condition()
 {
@@ -467,16 +467,16 @@ FUNC INT DIA_Opolos_HowIsIt_Condition()
 };
 FUNC VOID DIA_Opolos_HowIsIt_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_HowIsIt_15_00"); //Как дела?
+	AI_Output (other,self ,"DIA_Opolos_HowIsIt_15_00"); //РљР°Рє РґРµР»Р°?
 	
 	if (MIS_HelpOpolos == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_01"); //Отлично. С тех пор, как мне разрешили посещать библиотеку, все просто превосходно.
+		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_01"); //РћС‚Р»РёС‡РЅРѕ. РЎ С‚РµС… РїРѕСЂ, РєР°Рє РјРЅРµ СЂР°Р·СЂРµС€РёР»Рё РїРѕСЃРµС‰Р°С‚СЊ Р±РёР±Р»РёРѕС‚РµРєСѓ, РІСЃРµ РїСЂРѕСЃС‚Рѕ РїСЂРµРІРѕСЃС…РѕРґРЅРѕ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_02"); //Я смиренно выполняю все, что мне поручено, Мастер.
-		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_03"); //Каждый день Иннос подвергает меня новым испытаниям. Я буду продолжать работать над собой.
+		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_02"); //РЇ СЃРјРёСЂРµРЅРЅРѕ РІС‹РїРѕР»РЅСЏСЋ РІСЃРµ, С‡С‚Рѕ РјРЅРµ РїРѕСЂСѓС‡РµРЅРѕ, РњР°СЃС‚РµСЂ.
+		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_03"); //РљР°Р¶РґС‹Р№ РґРµРЅСЊ РРЅРЅРѕСЃ РїРѕРґРІРµСЂРіР°РµС‚ РјРµРЅСЏ РЅРѕРІС‹Рј РёСЃРїС‹С‚Р°РЅРёСЏРј. РЇ Р±СѓРґСѓ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЂР°Р±РѕС‚Р°С‚СЊ РЅР°Рґ СЃРѕР±РѕР№.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -547,7 +547,7 @@ INSTANCE DIA_Opolos_Kap3_PERM   (C_INFO)
 	condition   = DIA_Opolos_Kap3_PERM_Condition;
 	information = DIA_Opolos_Kap3_PERM_Info;
 	permanent   = TRUE;
-	description = "Как твои овцы?";
+	description = "РљР°Рє С‚РІРѕРё РѕРІС†С‹?";
 };
 FUNC INT DIA_Opolos_Kap3_PERM_Condition()
 {
@@ -559,18 +559,18 @@ FUNC INT DIA_Opolos_Kap3_PERM_Condition()
 };
 FUNC VOID DIA_Opolos_Kap3_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_15_00"); //Как твои овцы?
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_12_01"); //А как ты думаешь? Они стоят вокруг и жуют траву.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_12_02"); //Хотел бы я знать, что происходит снаружи. Маги, похоже, очень нервничают.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_15_00"); //РљР°Рє С‚РІРѕРё РѕРІС†С‹?
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_12_01"); //Рђ РєР°Рє С‚С‹ РґСѓРјР°РµС€СЊ? РћРЅРё СЃС‚РѕСЏС‚ РІРѕРєСЂСѓРі Рё Р¶СѓСЋС‚ С‚СЂР°РІСѓ.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_12_02"); //РҐРѕС‚РµР» Р±С‹ СЏ Р·РЅР°С‚СЊ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ СЃРЅР°СЂСѓР¶Рё. РњР°РіРё, РїРѕС…РѕР¶Рµ, РѕС‡РµРЅСЊ РЅРµСЂРІРЅРёС‡Р°СЋС‚.
 
 	Info_ClearChoices (DIA_Opolos_Kap3_PERM);
 	Info_AddChoice (DIA_Opolos_Kap3_PERM,DIALOG_BACK,DIA_Opolos_Kap3_PERM_BACK);
-	Info_AddChoice (DIA_Opolos_Kap3_PERM,"В Долине Рудников появились драконы.",DIA_Opolos_Kap3_PERM_DRAGONS);
-	Info_AddChoice (DIA_Opolos_Kap3_PERM,"Неизвестные в черных рясах стоят на каждом перекрестке.",DIA_Opolos_Kap3_PERM_DMT);
+	Info_AddChoice (DIA_Opolos_Kap3_PERM,"Р’ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РїРѕСЏРІРёР»РёСЃСЊ РґСЂР°РєРѕРЅС‹.",DIA_Opolos_Kap3_PERM_DRAGONS);
+	Info_AddChoice (DIA_Opolos_Kap3_PERM,"РќРµРёР·РІРµСЃС‚РЅС‹Рµ РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… СЃС‚РѕСЏС‚ РЅР° РєР°Р¶РґРѕРј РїРµСЂРµРєСЂРµСЃС‚РєРµ.",DIA_Opolos_Kap3_PERM_DMT);
 	
 	if (MIS_NOVIZENCHASE == LOG_RUNNING)
 	{
-		Info_AddChoice (DIA_Opolos_Kap3_PERM,"Педро предал нас.",DIA_Opolos_Kap3_PERM_PEDRO);
+		Info_AddChoice (DIA_Opolos_Kap3_PERM,"РџРµРґСЂРѕ РїСЂРµРґР°Р» РЅР°СЃ.",DIA_Opolos_Kap3_PERM_PEDRO);
 	};
 };
 
@@ -583,11 +583,11 @@ var int Opolos_Dragons;
 
 FUNC VOID DIA_Opolos_Kap3_PERM_DRAGONS()
 {
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_00"); //В Долине Рудников появились драконы. Вместе с армией орков они осаждают королевские войска.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DRAGONS_12_01"); //Драконы - я всегда думал, что они существуют только в детских сказках.
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_02"); //Они здесь, поверь мне.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DRAGONS_12_03"); //Но королевские паладины разберутся с ними, разве нет?
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_04"); //Посмотрим.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_00"); //Р’ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РїРѕСЏРІРёР»РёСЃСЊ РґСЂР°РєРѕРЅС‹. Р’РјРµСЃС‚Рµ СЃ Р°СЂРјРёРµР№ РѕСЂРєРѕРІ РѕРЅРё РѕСЃР°Р¶РґР°СЋС‚ РєРѕСЂРѕР»РµРІСЃРєРёРµ РІРѕР№СЃРєР°.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DRAGONS_12_01"); //Р”СЂР°РєРѕРЅС‹ - СЏ РІСЃРµРіРґР° РґСѓРјР°Р», С‡С‚Рѕ РѕРЅРё СЃСѓС‰РµСЃС‚РІСѓСЋС‚ С‚РѕР»СЊРєРѕ РІ РґРµС‚СЃРєРёС… СЃРєР°Р·РєР°С….
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_02"); //РћРЅРё Р·РґРµСЃСЊ, РїРѕРІРµСЂСЊ РјРЅРµ.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DRAGONS_12_03"); //РќРѕ РєРѕСЂРѕР»РµРІСЃРєРёРµ РїР°Р»Р°РґРёРЅС‹ СЂР°Р·Р±РµСЂСѓС‚СЃСЏ СЃ РЅРёРјРё, СЂР°Р·РІРµ РЅРµС‚?
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_04"); //РџРѕСЃРјРѕС‚СЂРёРј.
 	
 	if (Opolos_Dragons == FALSE)
 	{
@@ -600,11 +600,11 @@ var int Opolos_DMT;
 
 FUNC VOID DIA_Opolos_Kap3_PERM_DMT()
 {
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_00"); //Неизвестные в черных рясах стоят на каждом перекрестке.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DMT_12_01"); //Что ты имеешь в виду? Какие еще неизвестные?
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_02"); //Никто не знает, откуда они взялись. Они носят длинные черные рясы и скрывают свои лица.
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_03"); //Похоже, это какие-то маги. По крайней мере, они владеют магией.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DMT_12_04"); //Это все очень тревожно, но я уверен, что Высший Совет решит эту проблему.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_00"); //РќРµРёР·РІРµСЃС‚РЅС‹Рµ РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… СЃС‚РѕСЏС‚ РЅР° РєР°Р¶РґРѕРј РїРµСЂРµРєСЂРµСЃС‚РєРµ.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DMT_12_01"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ? РљР°РєРёРµ РµС‰Рµ РЅРµРёР·РІРµСЃС‚РЅС‹Рµ?
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_02"); //РќРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚, РѕС‚РєСѓРґР° РѕРЅРё РІР·СЏР»РёСЃСЊ. РћРЅРё РЅРѕСЃСЏС‚ РґР»РёРЅРЅС‹Рµ С‡РµСЂРЅС‹Рµ СЂСЏСЃС‹ Рё СЃРєСЂС‹РІР°СЋС‚ СЃРІРѕРё Р»РёС†Р°.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_03"); //РџРѕС…РѕР¶Рµ, СЌС‚Рѕ РєР°РєРёРµ-С‚Рѕ РјР°РіРё. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РѕРЅРё РІР»Р°РґРµСЋС‚ РјР°РіРёРµР№.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DMT_12_04"); //Р­С‚Рѕ РІСЃРµ РѕС‡РµРЅСЊ С‚СЂРµРІРѕР¶РЅРѕ, РЅРѕ СЏ СѓРІРµСЂРµРЅ, С‡С‚Рѕ Р’С‹СЃС€РёР№ РЎРѕРІРµС‚ СЂРµС€РёС‚ СЌС‚Сѓ РїСЂРѕР±Р»РµРјСѓ.
 	
 	if (Opolos_DMT == FALSE)
 	{
@@ -617,10 +617,10 @@ var int Opolos_Pedro;
 
 FUNC VOID DIA_Opolos_Kap3_PERM_PEDRO()
 {
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_PEDRO_15_00"); //Педро предал нас.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_PEDRO_12_01"); //Я слышал об этом, но я думал, что и тебе об этом известно. Вот почему я ничего не сказал.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_PEDRO_12_02"); //Неужели враг сильнее нас - ну я хочу сказать, сможем ли мы победить его?
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_PEDRO_15_03"); //Мы еще не мертвы.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_PEDRO_15_00"); //РџРµРґСЂРѕ РїСЂРµРґР°Р» РЅР°СЃ.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_PEDRO_12_01"); //РЇ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј, РЅРѕ СЏ РґСѓРјР°Р», С‡С‚Рѕ Рё С‚РµР±Рµ РѕР± СЌС‚РѕРј РёР·РІРµСЃС‚РЅРѕ. Р’РѕС‚ РїРѕС‡РµРјСѓ СЏ РЅРёС‡РµРіРѕ РЅРµ СЃРєР°Р·Р°Р».
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_PEDRO_12_02"); //РќРµСѓР¶РµР»Рё РІСЂР°Рі СЃРёР»СЊРЅРµРµ РЅР°СЃ - РЅСѓ СЏ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, СЃРјРѕР¶РµРј Р»Рё РјС‹ РїРѕР±РµРґРёС‚СЊ РµРіРѕ?
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_PEDRO_15_03"); //РњС‹ РµС‰Рµ РЅРµ РјРµСЂС‚РІС‹.
 	
 	if (Opolos_Pedro == FALSE)
 	{

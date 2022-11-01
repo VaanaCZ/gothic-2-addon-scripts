@@ -3,20 +3,20 @@
 // ***************************************************
 func void B_AssignSchiffswachenGuard (var C_NPC Schiffswache)
 {	
-	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt aufґs Schiff!!!!
-	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: Fьr die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuЯ nach der Aktion wieder geдndert werden, z. B = 0;
+	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt aufТ‘s Schiff!!!!
+	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: FСЊr die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuРЇ nach der Aktion wieder geРґndert werden, z. B = 0;
 	{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_04_00"); //Мы следим за тобой. Помни об этом.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_04_00"); //РњС‹ СЃР»РµРґРёРј Р·Р° С‚РѕР±РѕР№. РџРѕРјРЅРё РѕР± СЌС‚РѕРј.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //Не создавай здесь проблем, хорошо?
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //РќРµ СЃРѕР·РґР°РІР°Р№ Р·РґРµСЃСЊ РїСЂРѕР±Р»РµРј, С…РѕСЂРѕС€Рѕ?
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Даже не думай воровать здесь, понял?
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Р”Р°Р¶Рµ РЅРµ РґСѓРјР°Р№ РІРѕСЂРѕРІР°С‚СЊ Р·РґРµСЃСЊ, РїРѕРЅСЏР»?
 			};
 		AI_StopProcessInfos (Schiffswache);
 		Npc_SetRefuseTalk 	(Schiffswache,60);
@@ -54,30 +54,30 @@ func void B_AssignSchiffswachenInfos (var C_NPC Schiffswache)
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Эти проклятые орки штурмуют замок Гаронда. Мы должны действовать немедленно.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Р­С‚Рё РїСЂРѕРєР»СЏС‚С‹Рµ РѕСЂРєРё С€С‚СѓСЂРјСѓСЋС‚ Р·Р°РјРѕРє Р“Р°СЂРѕРЅРґР°. РњС‹ РґРѕР»Р¶РЅС‹ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РЅРµРјРµРґР»РµРЅРЅРѕ.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Если бы нам удалось найти этого предателя, что открыл главные ворота замка, мы бы ему показали!
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Р•СЃР»Рё Р±С‹ РЅР°Рј СѓРґР°Р»РѕСЃСЊ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ РїСЂРµРґР°С‚РµР»СЏ, С‡С‚Рѕ РѕС‚РєСЂС‹Р» РіР»Р°РІРЅС‹Рµ РІРѕСЂРѕС‚Р° Р·Р°РјРєР°, РјС‹ Р±С‹ РµРјСѓ РїРѕРєР°Р·Р°Р»Рё!
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //Мы не можем ждать дольше. Нашим парням в Долине Рудников нужна помощь, чтобы справиться со следующей волной орков.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //РњС‹ РЅРµ РјРѕР¶РµРј Р¶РґР°С‚СЊ РґРѕР»СЊС€Рµ. РќР°С€РёРј РїР°СЂРЅСЏРј РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ, С‡С‚РѕР±С‹ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃРѕ СЃР»РµРґСѓСЋС‰РµР№ РІРѕР»РЅРѕР№ РѕСЂРєРѕРІ.
 			};
 		}
 	else
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Гаронд объявил всеобщую мобилизацию. Мы скоро отправляемся в Долину Рудников.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Р“Р°СЂРѕРЅРґ РѕР±СЉСЏРІРёР» РІСЃРµРѕР±С‰СѓСЋ РјРѕР±РёР»РёР·Р°С†РёСЋ. РњС‹ СЃРєРѕСЂРѕ РѕС‚РїСЂР°РІР»СЏРµРјСЃСЏ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04"); //Оркам нужно преподнести урок.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04"); //РћСЂРєР°Рј РЅСѓР¶РЅРѕ РїСЂРµРїРѕРґРЅРµСЃС‚Рё СѓСЂРѕРє.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05"); //Я не могу дождаться, когда мы, наконец, покажем этим оркам. Ну ничего, скоро мы начнем теснить их.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05"); //РЇ РЅРµ РјРѕРіСѓ РґРѕР¶РґР°С‚СЊСЃСЏ, РєРѕРіРґР° РјС‹, РЅР°РєРѕРЅРµС†, РїРѕРєР°Р¶РµРј СЌС‚РёРј РѕСЂРєР°Рј. РќСѓ РЅРёС‡РµРіРѕ, СЃРєРѕСЂРѕ РјС‹ РЅР°С‡РЅРµРј С‚РµСЃРЅРёС‚СЊ РёС….
 			};
 		};
 	AI_StopProcessInfos	(Schiffswache);

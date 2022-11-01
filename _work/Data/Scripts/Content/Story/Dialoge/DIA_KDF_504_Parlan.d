@@ -31,9 +31,9 @@ var int Parlan_Hammer; //damit es nur EINMAL kommt
 
 func void B_Parlan_HAMMER()
 {
-	AI_Output (self, other, "DIA_Parlan_HAMMER_05_00"); //(строго) Подожди минутку, сын мой, сын мой.
-	AI_Output (self, other, "DIA_Parlan_HAMMER_05_01"); //Ходят слухи, что ценный артефакт 'исчез' из нашего святилища.
-	AI_Output (self, other, "DIA_Parlan_HAMMER_05_02"); //Я не хочу ничего даже слышать об этом - я жду, что он вернется на свое законное место.
+	AI_Output (self, other, "DIA_Parlan_HAMMER_05_00"); //(СЃС‚СЂРѕРіРѕ) РџРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ, СЃС‹РЅ РјРѕР№, СЃС‹РЅ РјРѕР№.
+	AI_Output (self, other, "DIA_Parlan_HAMMER_05_01"); //РҐРѕРґСЏС‚ СЃР»СѓС…Рё, С‡С‚Рѕ С†РµРЅРЅС‹Р№ Р°СЂС‚РµС„Р°РєС‚ 'РёСЃС‡РµР·' РёР· РЅР°С€РµРіРѕ СЃРІСЏС‚РёР»РёС‰Р°.
+	AI_Output (self, other, "DIA_Parlan_HAMMER_05_02"); //РЇ РЅРµ С…РѕС‡Сѓ РЅРёС‡РµРіРѕ РґР°Р¶Рµ СЃР»С‹С€Р°С‚СЊ РѕР± СЌС‚РѕРј - СЏ Р¶РґСѓ, С‡С‚Рѕ РѕРЅ РІРµСЂРЅРµС‚СЃСЏ РЅР° СЃРІРѕРµ Р·Р°РєРѕРЅРЅРѕРµ РјРµСЃС‚Рѕ.
 	
 	Parlan_Hammer = TRUE;
 };
@@ -79,16 +79,16 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 						B_Parlan_HAMMER();
 					};
 	
-	AI_Output (self, other, "DIA_Parlan_PMSchulden_05_00"); //Ты нарушил законы нашей общины.
+	AI_Output (self, other, "DIA_Parlan_PMSchulden_05_00"); //РўС‹ РЅР°СЂСѓС€РёР» Р·Р°РєРѕРЅС‹ РЅР°С€РµР№ РѕР±С‰РёРЅС‹.
 
 	if (B_GetTotalPetzCounter(self) > Parlan_LastPetzCounter)
 	{
-		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_01"); //И хотя ты уже был обвинен, ты лишь усугубляешь свою вину.
+		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_01"); //Р С…РѕС‚СЏ С‚С‹ СѓР¶Рµ Р±С‹Р» РѕР±РІРёРЅРµРЅ, С‚С‹ Р»РёС€СЊ СѓСЃСѓРіСѓР±Р»СЏРµС€СЊ СЃРІРѕСЋ РІРёРЅСѓ.
 		
 		if (Parlan_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_02"); //Твой грех может быть отпущен только посредством пожертвования большой суммы монастырю.
-			AI_Output (other, self, "DIA_Parlan_PMAdd_15_00"); //Сколько?
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_02"); //РўРІРѕР№ РіСЂРµС… РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚РїСѓС‰РµРЅ С‚РѕР»СЊРєРѕ РїРѕСЃСЂРµРґСЃС‚РІРѕРј РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёСЏ Р±РѕР»СЊС€РѕР№ СЃСѓРјРјС‹ РјРѕРЅР°СЃС‚С‹СЂСЋ.
+			AI_Output (other, self, "DIA_Parlan_PMAdd_15_00"); //РЎРєРѕР»СЊРєРѕ?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Parlan_LastPetzCounter);
 		
@@ -103,42 +103,42 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_03"); //За кого ты себя принимаешь? Молись Инносу, чтобы он даровал прощение твоих грехов!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_03"); //Р—Р° РєРѕРіРѕ С‚С‹ СЃРµР±СЏ РїСЂРёРЅРёРјР°РµС€СЊ? РњРѕР»РёСЃСЊ РРЅРЅРѕСЃСѓ, С‡С‚РѕР±С‹ РѕРЅ РґР°СЂРѕРІР°Р» РїСЂРѕС‰РµРЅРёРµ С‚РІРѕРёС… РіСЂРµС…РѕРІ!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Parlan_LastPetzCrime)
 	{
-		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_04"); //Твоя ситуация изменилась.
+		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_04"); //РўРІРѕСЏ СЃРёС‚СѓР°С†РёСЏ РёР·РјРµРЅРёР»Р°СЃСЊ.
 		
 		if (Parlan_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_05"); //Больше нет свидетелей убийства, совершенного тобой!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_05"); //Р‘РѕР»СЊС€Рµ РЅРµС‚ СЃРІРёРґРµС‚РµР»РµР№ СѓР±РёР№СЃС‚РІР°, СЃРѕРІРµСЂС€РµРЅРЅРѕРіРѕ С‚РѕР±РѕР№!
 		};
 		
 		if (Parlan_LastPetzCrime == CRIME_THEFT)
 		|| ( (Parlan_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_06"); //Никто не может засвидетельствовать, что ты воровал!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_06"); //РќРёРєС‚Рѕ РЅРµ РјРѕР¶РµС‚ Р·Р°СЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕРІР°С‚СЊ, С‡С‚Рѕ С‚С‹ РІРѕСЂРѕРІР°Р»!
 		};
 		
 		if (Parlan_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Parlan_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_07"); //Никто больше не может засвидетельствовать, что ты принимал участие в драке!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_07"); //РќРёРєС‚Рѕ Р±РѕР»СЊС€Рµ РЅРµ РјРѕР¶РµС‚ Р·Р°СЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕРІР°С‚СЊ, С‡С‚Рѕ С‚С‹ РїСЂРёРЅРёРјР°Р» СѓС‡Р°СЃС‚РёРµ РІ РґСЂР°РєРµ!
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_08"); //Все обвинения против тебя не находят подтверждения!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_08"); //Р’СЃРµ РѕР±РІРёРЅРµРЅРёСЏ РїСЂРѕС‚РёРІ С‚РµР±СЏ РЅРµ РЅР°С…РѕРґСЏС‚ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ!
 		};
 		
-		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_09"); //Возможно, тебе удастся провести меня, но Иннос все видит!
+		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_09"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РїСЂРѕРІРµСЃС‚Рё РјРµРЅСЏ, РЅРѕ РРЅРЅРѕСЃ РІСЃРµ РІРёРґРёС‚!
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_10"); //Твои грехи забыты.
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_11"); //И постарайся, чтобы мы больше не возвращались к этому разговору!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_10"); //РўРІРѕРё РіСЂРµС…Рё Р·Р°Р±С‹С‚С‹.
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_11"); //Р РїРѕСЃС‚Р°СЂР°Р№СЃСЏ, С‡С‚РѕР±С‹ РјС‹ Р±РѕР»СЊС€Рµ РЅРµ РІРѕР·РІСЂР°С‰Р°Р»РёСЃСЊ Рє СЌС‚РѕРјСѓ СЂР°Р·РіРѕРІРѕСЂСѓ!
 	
 			Parlan_Schulden			= 0;
 			Parlan_LastPetzCounter 	= 0;
@@ -146,9 +146,9 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_12"); //Ты должен заплатить штраф. Такова воля Инноса!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_12"); //РўС‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„. РўР°РєРѕРІР° РІРѕР»СЏ РРЅРЅРѕСЃР°!
 			B_Say_Gold (self, other, Parlan_Schulden);
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_13"); //Освободись от своей вины!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_13"); //РћСЃРІРѕР±РѕРґРёСЃСЊ РѕС‚ СЃРІРѕРµР№ РІРёРЅС‹!
 		};
 	};
 	
@@ -157,27 +157,27 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(DIA_Parlan_PMSchulden);
 		Info_ClearChoices  	(DIA_Parlan_PETZMASTER);
-		Info_AddChoice		(DIA_Parlan_PMSchulden,"У меня недостаточно золота!",DIA_Parlan_PETZMASTER_PayLater);
-		Info_AddChoice		(DIA_Parlan_PMSchulden,"Сколько там нужно?",DIA_Parlan_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(DIA_Parlan_PMSchulden,"РЈ РјРµРЅСЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°!",DIA_Parlan_PETZMASTER_PayLater);
+		Info_AddChoice		(DIA_Parlan_PMSchulden,"РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?",DIA_Parlan_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(other, itmi_gold) >= Parlan_Schulden)
 		{
-			Info_AddChoice 	(DIA_Parlan_PMSchulden,"Я хочу заплатить штраф!",DIA_Parlan_PETZMASTER_PayNow);
+			Info_AddChoice 	(DIA_Parlan_PMSchulden,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Parlan_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void DIA_Parlan_PMSchulden_HowMuchAgain()
 {
-	AI_Output (other, self, "DIA_Parlan_PMSchulden_HowMuchAgain_15_00"); //Сколько там нужно?
+	AI_Output (other, self, "DIA_Parlan_PMSchulden_HowMuchAgain_15_00"); //РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?
 	B_Say_Gold (self, other, Parlan_Schulden);
 
 	Info_ClearChoices  	(DIA_Parlan_PMSchulden);
 	Info_ClearChoices  	(DIA_Parlan_PETZMASTER);
-	Info_AddChoice		(DIA_Parlan_PMSchulden,"У меня недостаточно золота!",DIA_Parlan_PETZMASTER_PayLater);
-	Info_AddChoice		(DIA_Parlan_PMSchulden,"Сколько там нужно?",DIA_Parlan_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(DIA_Parlan_PMSchulden,"РЈ РјРµРЅСЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°!",DIA_Parlan_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Parlan_PMSchulden,"РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?",DIA_Parlan_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(other, itmi_gold) >= Parlan_Schulden)
 	{
-		Info_AddChoice 	(DIA_Parlan_PMSchulden,"Я хочу заплатить штраф!",DIA_Parlan_PETZMASTER_PayNow);
+		Info_AddChoice 	(DIA_Parlan_PMSchulden,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Parlan_PETZMASTER_PayNow);
 	};
 };
 
@@ -215,65 +215,65 @@ FUNC VOID DIA_Parlan_PETZMASTER_Info()
 						B_Parlan_HAMMER();
 					};
 	
-	Parlan_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hцher ist...
+	Parlan_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hС†her ist...
 	
 	// ------ SC hat mit Parlan noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_00"); //Мы еще не успели даже поговорить, а ты уже взвалил на себя груз вины!
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_00"); //РњС‹ РµС‰Рµ РЅРµ СѓСЃРїРµР»Рё РґР°Р¶Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ, Р° С‚С‹ СѓР¶Рµ РІР·РІР°Р»РёР» РЅР° СЃРµР±СЏ РіСЂСѓР· РІРёРЅС‹!
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_01"); //Ты обвиняешься в худшем из всех преступлений! Убийстве!
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_01"); //РўС‹ РѕР±РІРёРЅСЏРµС€СЊСЃСЏ РІ С…СѓРґС€РµРј РёР· РІСЃРµС… РїСЂРµСЃС‚СѓРїР»РµРЅРёР№! РЈР±РёР№СЃС‚РІРµ!
 	
 		Parlan_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Parlan_Schulden = Parlan_Schulden + 500;						//PLUS Mцrder-Malus
+		Parlan_Schulden = Parlan_Schulden + 500;						//PLUS MС†rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_02"); //И ты взвалил на себя груз новой вины!
+			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_02"); //Р С‚С‹ РІР·РІР°Р»РёР» РЅР° СЃРµР±СЏ РіСЂСѓР· РЅРѕРІРѕР№ РІРёРЅС‹!
 		};
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_03"); //Если бы было решать мне, ты был бы проклят на месте, ты убийца!
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_04"); //Но если ты заплатишь штраф за свое преступление, впрочем, мы простим тебе твои грехи.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_03"); //Р•СЃР»Рё Р±С‹ Р±С‹Р»Рѕ СЂРµС€Р°С‚СЊ РјРЅРµ, С‚С‹ Р±С‹Р» Р±С‹ РїСЂРѕРєР»СЏС‚ РЅР° РјРµСЃС‚Рµ, С‚С‹ СѓР±РёР№С†Р°!
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_04"); //РќРѕ РµСЃР»Рё С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ С€С‚СЂР°С„ Р·Р° СЃРІРѕРµ РїСЂРµСЃС‚СѓРїР»РµРЅРёРµ, РІРїСЂРѕС‡РµРј, РјС‹ РїСЂРѕСЃС‚РёРј С‚РµР±Рµ С‚РІРѕРё РіСЂРµС…Рё.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_05"); //Воровство - нарушение законов монастыря!
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_05"); //Р’РѕСЂРѕРІСЃС‚РІРѕ - РЅР°СЂСѓС€РµРЅРёРµ Р·Р°РєРѕРЅРѕРІ РјРѕРЅР°СЃС‚С‹СЂСЏ!
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_06"); //Кроме того, ты нарушил и другие законы.
+			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_06"); //РљСЂРѕРјРµ С‚РѕРіРѕ, С‚С‹ РЅР°СЂСѓС€РёР» Рё РґСЂСѓРіРёРµ Р·Р°РєРѕРЅС‹.
 		};
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_07"); //Эти прегрешения должны быть наказаны. Таков закон Инноса.
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_08"); //Ты должен заплатить штраф монастырю.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_07"); //Р­С‚Рё РїСЂРµРіСЂРµС€РµРЅРёСЏ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РЅР°РєР°Р·Р°РЅС‹. РўР°РєРѕРІ Р·Р°РєРѕРЅ РРЅРЅРѕСЃР°.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_08"); //РўС‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„ РјРѕРЅР°СЃС‚С‹СЂСЋ.
 		
 		Parlan_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_09"); //Мы не терпим драк в монастыре. Такое поведение нарушает наши правила.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_09"); //РњС‹ РЅРµ С‚РµСЂРїРёРј РґСЂР°Рє РІ РјРѕРЅР°СЃС‚С‹СЂРµ. РўР°РєРѕРµ РїРѕРІРµРґРµРЅРёРµ РЅР°СЂСѓС€Р°РµС‚ РЅР°С€Рё РїСЂР°РІРёР»Р°.
 		
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_10"); //И зачем ты убил нашу овцу?
+			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_10"); //Р Р·Р°С‡РµРј С‚С‹ СѓР±РёР» РЅР°С€Сѓ РѕРІС†Сѓ?
 		};
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_11"); //Мы живем здесь в соответствии с законами. Они касаются и тебя.
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_12"); //За твое преступление, ты должен сделать пожертвование монастырю.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_11"); //РњС‹ Р¶РёРІРµРј Р·РґРµСЃСЊ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ Р·Р°РєРѕРЅР°РјРё. РћРЅРё РєР°СЃР°СЋС‚СЃСЏ Рё С‚РµР±СЏ.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_12"); //Р—Р° С‚РІРѕРµ РїСЂРµСЃС‚СѓРїР»РµРЅРёРµ, С‚С‹ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ РјРѕРЅР°СЃС‚С‹СЂСЋ.
 		
 		Parlan_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getцtet ------
+	// ------ Schaf getС†tet ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_13"); //Ты убил нашу овцу. Ты должен заплатить компенсацию за нее!
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_13"); //РўС‹ СѓР±РёР» РЅР°С€Сѓ РѕРІС†Сѓ. РўС‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ РєРѕРјРїРµРЅСЃР°С†РёСЋ Р·Р° РЅРµРµ!
 		
 		
 		Parlan_Schulden = 100;
 	};
 	
-	AI_Output (other, self, "DIA_Parlan_PETZMASTER_15_14"); //Сколько?
+	AI_Output (other, self, "DIA_Parlan_PETZMASTER_15_14"); //РЎРєРѕР»СЊРєРѕ?
 	
 	if (Parlan_Schulden > 1000)	{	Parlan_Schulden = 1000;	};
 		
@@ -281,18 +281,18 @@ FUNC VOID DIA_Parlan_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(DIA_Parlan_PMSchulden);
 	Info_ClearChoices  	(DIA_Parlan_PETZMASTER);
-	Info_AddChoice		(DIA_Parlan_PETZMASTER,"У меня недостаточно золота!",DIA_Parlan_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Parlan_PETZMASTER,"РЈ РјРµРЅСЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°!",DIA_Parlan_PETZMASTER_PayLater);
 	if (Npc_HasItems(other, itmi_gold) >= Parlan_Schulden)
 	{
-		Info_AddChoice 	(DIA_Parlan_PETZMASTER,"Я хочу заплатить штраф!",DIA_Parlan_PETZMASTER_PayNow);
+		Info_AddChoice 	(DIA_Parlan_PETZMASTER,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Parlan_PETZMASTER_PayNow);
 	};
 };
 
 func void DIA_Parlan_PETZMASTER_PayNow()
 {
-	AI_Output (other, self, "DIA_Parlan_PETZMASTER_PayNow_15_00"); //Я хочу заплатить штраф!
+	AI_Output (other, self, "DIA_Parlan_PETZMASTER_PayNow_15_00"); //РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!
 	B_GiveInvItems (other, self, itmi_gold, Parlan_Schulden);
-	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayNow_05_01"); //Я принимаю твое пожертвование. Твои прегрешения забыты. Я надеюсь, Иннос даст тебе мудрость не совершать больше подобных ошибок.
+	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayNow_05_01"); //РЇ РїСЂРёРЅРёРјР°СЋ С‚РІРѕРµ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ. РўРІРѕРё РїСЂРµРіСЂРµС€РµРЅРёСЏ Р·Р°Р±С‹С‚С‹. РЇ РЅР°РґРµСЋСЃСЊ, РРЅРЅРѕСЃ РґР°СЃС‚ С‚РµР±Рµ РјСѓРґСЂРѕСЃС‚СЊ РЅРµ СЃРѕРІРµСЂС€Р°С‚СЊ Р±РѕР»СЊС€Рµ РїРѕРґРѕР±РЅС‹С… РѕС€РёР±РѕРє.
 
 	B_GrantAbsolution (LOC_MONASTERY);
 	
@@ -306,9 +306,9 @@ func void DIA_Parlan_PETZMASTER_PayNow()
 
 func void DIA_Parlan_PETZMASTER_PayLater()
 {
-	AI_Output (other, self, "DIA_Parlan_PETZMASTER_PayLater_15_00"); //У меня недостаточно золота!
-	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayLater_05_01"); //Тебе стоило подумать об этом до того, как грешить.
-	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayLater_05_02"); //Возможно, это тебя чему-нибудь научит. Не создавай проблем, и тебе не нужно будет платить.
+	AI_Output (other, self, "DIA_Parlan_PETZMASTER_PayLater_15_00"); //РЈ РјРµРЅСЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°!
+	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayLater_05_01"); //РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕРґСѓРјР°С‚СЊ РѕР± СЌС‚РѕРј РґРѕ С‚РѕРіРѕ, РєР°Рє РіСЂРµС€РёС‚СЊ.
+	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayLater_05_02"); //Р’РѕР·РјРѕР¶РЅРѕ, СЌС‚Рѕ С‚РµР±СЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚. РќРµ СЃРѕР·РґР°РІР°Р№ РїСЂРѕР±Р»РµРј, Рё С‚РµР±Рµ РЅРµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ РїР»Р°С‚РёС‚СЊ.
 	
 	Parlan_LastPetzCounter 		= B_GetTotalPetzCounter(self);
 	Parlan_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -340,39 +340,39 @@ func int DIA_Parlan_WELCOME_Condition ()
 
 func void B_DIA_Parlan_WELCOME_GoForTribute ()
 {
-			AI_Output (self, other, "DIA_Parlan_WELCOME_05_09"); //Когда с этим будет покончено, мы поговорим о твоей работе здесь, в монастыре.
+			AI_Output (self, other, "DIA_Parlan_WELCOME_05_09"); //РљРѕРіРґР° СЃ СЌС‚РёРј Р±СѓРґРµС‚ РїРѕРєРѕРЅС‡РµРЅРѕ, РјС‹ РїРѕРіРѕРІРѕСЂРёРј Рѕ С‚РІРѕРµР№ СЂР°Р±РѕС‚Рµ Р·РґРµСЃСЊ, РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 };
 func void B_DIA_Parlan_WELCOME_BringTribute2Gorax ()
 {
-			AI_Output (self, other, "DIA_Addon_Parlan_WELCOME_05_00"); //Отнеси свое пожертвование Гораксу. Он им распорядится.
+			AI_Output (self, other, "DIA_Addon_Parlan_WELCOME_05_00"); //РћС‚РЅРµСЃРё СЃРІРѕРµ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ Р“РѕСЂР°РєСЃСѓ. РћРЅ РёРј СЂР°СЃРїРѕСЂСЏРґРёС‚СЃСЏ.
 };
 
 func void DIA_Parlan_WELCOME_Info ()
 {
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_00"); //Добро пожаловать, новый послушник. Я Парлан.
-	AI_Output (other, self, "DIA_Parlan_WELCOME_15_01"); //А я...
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_02"); //(прерывает) ...ПОСЛУШНИК. Не важно, кем ты был раньше. Теперь ты слуга Инноса. Только это имеет значение.
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_03"); //И с принятием в Братство Огня, все твои предыдущие прегрешения будут забыты.
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_04"); //Да благословит Иннос этого человека, отдавшего свою жизнь служению Ему, и смоет все его грехи.
-	AI_Output (other, self, "DIA_Parlan_WELCOME_15_05"); //И что теперь?
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_06"); //Прежде всего, ты должен выполнять свои обязанности послушника. Ты будешь работать и служить Братству.
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, РЅРѕРІС‹Р№ РїРѕСЃР»СѓС€РЅРёРє. РЇ РџР°СЂР»Р°РЅ.
+	AI_Output (other, self, "DIA_Parlan_WELCOME_15_01"); //Рђ СЏ...
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_02"); //(РїСЂРµСЂС‹РІР°РµС‚) ...РџРћРЎР›РЈРЁРќРРљ. РќРµ РІР°Р¶РЅРѕ, РєРµРј С‚С‹ Р±С‹Р» СЂР°РЅСЊС€Рµ. РўРµРїРµСЂСЊ С‚С‹ СЃР»СѓРіР° РРЅРЅРѕСЃР°. РўРѕР»СЊРєРѕ СЌС‚Рѕ РёРјРµРµС‚ Р·РЅР°С‡РµРЅРёРµ.
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_03"); //Р СЃ РїСЂРёРЅСЏС‚РёРµРј РІ Р‘СЂР°С‚СЃС‚РІРѕ РћРіРЅСЏ, РІСЃРµ С‚РІРѕРё РїСЂРµРґС‹РґСѓС‰РёРµ РїСЂРµРіСЂРµС€РµРЅРёСЏ Р±СѓРґСѓС‚ Р·Р°Р±С‹С‚С‹.
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_04"); //Р”Р° Р±Р»Р°РіРѕСЃР»РѕРІРёС‚ РРЅРЅРѕСЃ СЌС‚РѕРіРѕ С‡РµР»РѕРІРµРєР°, РѕС‚РґР°РІС€РµРіРѕ СЃРІРѕСЋ Р¶РёР·РЅСЊ СЃР»СѓР¶РµРЅРёСЋ Р•РјСѓ, Рё СЃРјРѕРµС‚ РІСЃРµ РµРіРѕ РіСЂРµС…Рё.
+	AI_Output (other, self, "DIA_Parlan_WELCOME_15_05"); //Р С‡С‚Рѕ С‚РµРїРµСЂСЊ?
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_06"); //РџСЂРµР¶РґРµ РІСЃРµРіРѕ, С‚С‹ РґРѕР»Р¶РµРЅ РІС‹РїРѕР»РЅСЏС‚СЊ СЃРІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РїРѕСЃР»СѓС€РЅРёРєР°. РўС‹ Р±СѓРґРµС€СЊ СЂР°Р±РѕС‚Р°С‚СЊ Рё СЃР»СѓР¶РёС‚СЊ Р‘СЂР°С‚СЃС‚РІСѓ.
 	
 	B_GrantAbsolution (LOC_ALL);
 	Snd_Play ("LEVELUP");
 	
 		Log_CreateTopic (Topic_Gemeinschaft,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Gemeinschaft,LOG_RUNNING);
-		B_LogEntry (Topic_Gemeinschaft, "В обязанности послушника входит выполнять работы на благо общины.");
+		B_LogEntry (Topic_Gemeinschaft, "Р’ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РїРѕСЃР»СѓС€РЅРёРєР° РІС…РѕРґРёС‚ РІС‹РїРѕР»РЅСЏС‚СЊ СЂР°Р±РѕС‚С‹ РЅР° Р±Р»Р°РіРѕ РѕР±С‰РёРЅС‹.");
 	
 	if (Pedro_NOV_Aufnahme_LostInnosStatue_Daron == FALSE)//ADDON
 	{
 		if (Liesel_Giveaway ==  FALSE)
 		{
-			AI_Output (self, other, "DIA_Parlan_WELCOME_05_07"); //Но сначала отведи свою овцу к Ополосу, он позаботится о ней.
+			AI_Output (self, other, "DIA_Parlan_WELCOME_05_07"); //РќРѕ СЃРЅР°С‡Р°Р»Р° РѕС‚РІРµРґРё СЃРІРѕСЋ РѕРІС†Сѓ Рє РћРїРѕР»РѕСЃСѓ, РѕРЅ РїРѕР·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ РЅРµР№.
 		};
 		if (DIA_Gorax_GOLD_perm == FALSE) 
 		{
-			AI_Output (self, other, "DIA_Parlan_WELCOME_05_08"); //Ты можешь отдать свое золото Гораксу, нашему управляющему. Ты найдешь его в винодельне.
+			AI_Output (self, other, "DIA_Parlan_WELCOME_05_08"); //РўС‹ РјРѕР¶РµС€СЊ РѕС‚РґР°С‚СЊ СЃРІРѕРµ Р·РѕР»РѕС‚Рѕ Р“РѕСЂР°РєСЃСѓ, РЅР°С€РµРјСѓ СѓРїСЂР°РІР»СЏСЋС‰РµРјСѓ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РІРёРЅРѕРґРµР»СЊРЅРµ.
 			B_DIA_Parlan_WELCOME_GoForTribute ();		
 		};
 	}
@@ -398,7 +398,7 @@ instance DIA_Parlan_Auge		(C_INFO)
 	condition	 = 	DIA_Parlan_Auge_Condition;
 	information	 = 	DIA_Parlan_Auge_Info;
 	permanent 	 =  FALSE; 
-	description	 =  "Я ищу Глаз Инноса.";
+	description	 =  "РЇ РёС‰Сѓ Р“Р»Р°Р· РРЅРЅРѕСЃР°.";
 };
 func int DIA_Parlan_Auge_Condition ()
 {	
@@ -409,10 +409,10 @@ func int DIA_Parlan_Auge_Condition ()
 };
 func void DIA_Parlan_Auge_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Auge_15_00"); //Я ищу Глаз Инноса.
-	AI_Output (self, other, "DIA_Parlan_Auge_05_01"); //Я не знаю, кто сказал тебе о нем, но к этому божественному артефакту никто не смеет прикасаться.
-	AI_Output (other, self, "DIA_Parlan_Auge_15_02"); //Где хранится Глаз Инноса?
-	AI_Output (self, other, "DIA_Parlan_Auge_05_03"); //Осень немногие знают эту тайну. Попробуй найти его - и тебе это не удастся.
+	AI_Output (other, self, "DIA_Parlan_Auge_15_00"); //РЇ РёС‰Сѓ Р“Р»Р°Р· РРЅРЅРѕСЃР°.
+	AI_Output (self, other, "DIA_Parlan_Auge_05_01"); //РЇ РЅРµ Р·РЅР°СЋ, РєС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ Рѕ РЅРµРј, РЅРѕ Рє СЌС‚РѕРјСѓ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕРјСѓ Р°СЂС‚РµС„Р°РєС‚Сѓ РЅРёРєС‚Рѕ РЅРµ СЃРјРµРµС‚ РїСЂРёРєР°СЃР°С‚СЊСЃСЏ.
+	AI_Output (other, self, "DIA_Parlan_Auge_15_02"); //Р“РґРµ С…СЂР°РЅРёС‚СЃСЏ Р“Р»Р°Р· РРЅРЅРѕСЃР°?
+	AI_Output (self, other, "DIA_Parlan_Auge_05_03"); //РћСЃРµРЅСЊ РЅРµРјРЅРѕРіРёРµ Р·РЅР°СЋС‚ СЌС‚Сѓ С‚Р°Р№РЅСѓ. РџРѕРїСЂРѕР±СѓР№ РЅР°Р№С‚Рё РµРіРѕ - Рё С‚РµР±Рµ СЌС‚Рѕ РЅРµ СѓРґР°СЃС‚СЃСЏ.
 };
 
 
@@ -426,7 +426,7 @@ instance DIA_Parlan_Amulett		(C_INFO)
 	condition	 = 	DIA_Parlan_Amulett_Condition;
 	information	 = 	DIA_Parlan_Amulett_Info;
 	permanent 	 =  FALSE; 
-	description	 =  "Расскажи мне о Глазе Инноса.";
+	description	 =  "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р“Р»Р°Р·Рµ РРЅРЅРѕСЃР°.";
 };
 func int DIA_Parlan_Amulett_Condition ()
 {	
@@ -438,9 +438,9 @@ func int DIA_Parlan_Amulett_Condition ()
 };
 func void DIA_Parlan_Amulett_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Amulett_15_00"); //Расскажи мне о Глазе Инноса.
-	AI_Output (self, other, "DIA_Parlan_Amulett_05_01"); //Хорошо. Глаз Инноса содержит частицу божественной силы Инноса. Только ОДИН избранный слуга Инноса может носить этот амулет.
-	AI_Output (self, other, "DIA_Parlan_Amulett_05_02"); //Он был создан, чтобы защитить нас от сил Зла, когда придет время.
+	AI_Output (other, self, "DIA_Parlan_Amulett_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р“Р»Р°Р·Рµ РРЅРЅРѕСЃР°.
+	AI_Output (self, other, "DIA_Parlan_Amulett_05_01"); //РҐРѕСЂРѕС€Рѕ. Р“Р»Р°Р· РРЅРЅРѕСЃР° СЃРѕРґРµСЂР¶РёС‚ С‡Р°СЃС‚РёС†Сѓ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕР№ СЃРёР»С‹ РРЅРЅРѕСЃР°. РўРѕР»СЊРєРѕ РћР”РРќ РёР·Р±СЂР°РЅРЅС‹Р№ СЃР»СѓРіР° РРЅРЅРѕСЃР° РјРѕР¶РµС‚ РЅРѕСЃРёС‚СЊ СЌС‚РѕС‚ Р°РјСѓР»РµС‚.
+	AI_Output (self, other, "DIA_Parlan_Amulett_05_02"); //РћРЅ Р±С‹Р» СЃРѕР·РґР°РЅ, С‡С‚РѕР±С‹ Р·Р°С‰РёС‚РёС‚СЊ РЅР°СЃ РѕС‚ СЃРёР» Р—Р»Р°, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hagen
@@ -452,7 +452,7 @@ instance DIA_Parlan_Hagen		(C_INFO)
 	condition	 = 	DIA_Parlan_Hagen_Condition;
 	information	 = 	DIA_Parlan_Hagen_Info;
 	permanent 	 =  FALSE; 
-	description	 =  "Я должен поговорить с командующим паладинами!";
+	description	 =  "РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј РїР°Р»Р°РґРёРЅР°РјРё!";
 };
 func int DIA_Parlan_Hagen_Condition ()
 {	
@@ -464,8 +464,8 @@ func int DIA_Parlan_Hagen_Condition ()
 };
 func void DIA_Parlan_Hagen_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Hagen_15_00"); //Я должен поговорить с командующим паладинами!
-	AI_Output (self, other, "DIA_Parlan_Hagen_05_01"); //Лорд Хаген не принимает послушников - только магом позволено видеть его.
+	AI_Output (other, self, "DIA_Parlan_Hagen_15_00"); //РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј РїР°Р»Р°РґРёРЅР°РјРё!
+	AI_Output (self, other, "DIA_Parlan_Hagen_05_01"); //Р›РѕСЂРґ РҐР°РіРµРЅ РЅРµ РїСЂРёРЅРёРјР°РµС‚ РїРѕСЃР»СѓС€РЅРёРєРѕРІ - С‚РѕР»СЊРєРѕ РјР°РіРѕРј РїРѕР·РІРѕР»РµРЅРѕ РІРёРґРµС‚СЊ РµРіРѕ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WORK
@@ -477,7 +477,7 @@ instance DIA_Parlan_WORK		(C_INFO)
 	condition	 = 	DIA_Parlan_WORK_Condition;
 	information	 = 	DIA_Parlan_WORK_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Чем я могу служить общине?";
+	description	 = 	"Р§РµРј СЏ РјРѕРіСѓ СЃР»СѓР¶РёС‚СЊ РѕР±С‰РёРЅРµ?";
 };
 //------------------------------------
 var int DIA_Parlan_WORK_perm;
@@ -494,17 +494,17 @@ func int DIA_Parlan_WORK_Condition ()
 };
 func void DIA_Parlan_WORK_Info ()
 {
-	AI_Output			(other, self, "DIA_Parlan_WORK_15_00"); //Чем я могу служить общине?
+	AI_Output			(other, self, "DIA_Parlan_WORK_15_00"); //Р§РµРј СЏ РјРѕРіСѓ СЃР»СѓР¶РёС‚СЊ РѕР±С‰РёРЅРµ?
 	
 	//HACK
 	if (Liesel_Giveaway ==  FALSE)
 	|| (DIA_Gorax_GOLD_perm == FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlan_WELCOME_05_06"); //Прежде всего, ты должен выполнять свои обязанности послушника. Ты будешь работать и служить Братству.
+		AI_Output (self, other, "DIA_Parlan_WELCOME_05_06"); //РџСЂРµР¶РґРµ РІСЃРµРіРѕ, С‚С‹ РґРѕР»Р¶РµРЅ РІС‹РїРѕР»РЅСЏС‚СЊ СЃРІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РїРѕСЃР»СѓС€РЅРёРєР°. РўС‹ Р±СѓРґРµС€СЊ СЂР°Р±РѕС‚Р°С‚СЊ Рё СЃР»СѓР¶РёС‚СЊ Р‘СЂР°С‚СЃС‚РІСѓ.
 		
 		if 	(Liesel_Giveaway ==  FALSE)
 		{
-			AI_Output (self, other, "DIA_Parlan_WELCOME_05_07"); //Но сначала отведи свою овцу к Ополосу, он позаботится о ней.
+			AI_Output (self, other, "DIA_Parlan_WELCOME_05_07"); //РќРѕ СЃРЅР°С‡Р°Р»Р° РѕС‚РІРµРґРё СЃРІРѕСЋ РѕРІС†Сѓ Рє РћРїРѕР»РѕСЃСѓ, РѕРЅ РїРѕР·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ РЅРµР№.
 		};
 		if  (DIA_Gorax_GOLD_perm == FALSE)
 		{
@@ -517,8 +517,8 @@ func void DIA_Parlan_WORK_Info ()
 				//ADDON<
 				else
 				{	
-					AI_Output (self, other, "DIA_Parlan_WELCOME_05_08"); //Ты можешь отдать свое золото Гораксу, нашему управляющему. Ты найдешь его в винодельне.
-					AI_Output (self, other, "DIA_Parlan_WELCOME_05_09"); //Когда с этим будет покончено, мы поговорим о твоей работе здесь, в монастыре.
+					AI_Output (self, other, "DIA_Parlan_WELCOME_05_08"); //РўС‹ РјРѕР¶РµС€СЊ РѕС‚РґР°С‚СЊ СЃРІРѕРµ Р·РѕР»РѕС‚Рѕ Р“РѕСЂР°РєСЃСѓ, РЅР°С€РµРјСѓ СѓРїСЂР°РІР»СЏСЋС‰РµРјСѓ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РІРёРЅРѕРґРµР»СЊРЅРµ.
+					AI_Output (self, other, "DIA_Parlan_WELCOME_05_09"); //РљРѕРіРґР° СЃ СЌС‚РёРј Р±СѓРґРµС‚ РїРѕРєРѕРЅС‡РµРЅРѕ, РјС‹ РїРѕРіРѕРІРѕСЂРёРј Рѕ С‚РІРѕРµР№ СЂР°Р±РѕС‚Рµ Р·РґРµСЃСЊ, РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 				};
 		};
 		
@@ -526,19 +526,19 @@ func void DIA_Parlan_WORK_Info ()
 	}
 	else if Wld_IsTime (22,00,07,30)
 	{
-		AI_Output (self, other, "DIA_Parlan_WORK_NIGHT_05_01"); //Сейчас время мира. Работа послушников начинается рано утром и продолжается дотемна.
-		AI_Output (self, other, "DIA_Parlan_WORK_NIGHT_05_02"); //Ты тоже должен спать. Возвращайся ко мне, когда придет время работы.
+		AI_Output (self, other, "DIA_Parlan_WORK_NIGHT_05_01"); //РЎРµР№С‡Р°СЃ РІСЂРµРјСЏ РјРёСЂР°. Р Р°Р±РѕС‚Р° РїРѕСЃР»СѓС€РЅРёРєРѕРІ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЂР°РЅРѕ СѓС‚СЂРѕРј Рё РїСЂРѕРґРѕР»Р¶Р°РµС‚СЃСЏ РґРѕС‚РµРјРЅР°.
+		AI_Output (self, other, "DIA_Parlan_WORK_NIGHT_05_02"); //РўС‹ С‚РѕР¶Рµ РґРѕР»Р¶РµРЅ СЃРїР°С‚СЊ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹.
 		
 		AI_StopProcessInfos (self);
 	} 
 	else
 	{
-		AI_Output (self, other, "DIA_Parlan_WORK_05_03"); //Поговори с другими магами. Они дадут тебе поручения.
-		AI_Output (self, other, "DIA_Parlan_WORK_05_04"); //Я буду наблюдать за твоей работой, и если ты хорошо будешь справляться с ней, ты получишь позволение войти в библиотеку, чтобы изучать учение Инноса.
+		AI_Output (self, other, "DIA_Parlan_WORK_05_03"); //РџРѕРіРѕРІРѕСЂРё СЃ РґСЂСѓРіРёРјРё РјР°РіР°РјРё. РћРЅРё РґР°РґСѓС‚ С‚РµР±Рµ РїРѕСЂСѓС‡РµРЅРёСЏ.
+		AI_Output (self, other, "DIA_Parlan_WORK_05_04"); //РЇ Р±СѓРґСѓ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° С‚РІРѕРµР№ СЂР°Р±РѕС‚РѕР№, Рё РµСЃР»Рё С‚С‹ С…РѕСЂРѕС€Рѕ Р±СѓРґРµС€СЊ СЃРїСЂР°РІР»СЏС‚СЊСЃСЏ СЃ РЅРµР№, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РїРѕР·РІРѕР»РµРЅРёРµ РІРѕР№С‚Рё РІ Р±РёР±Р»РёРѕС‚РµРєСѓ, С‡С‚РѕР±С‹ РёР·СѓС‡Р°С‚СЊ СѓС‡РµРЅРёРµ РРЅРЅРѕСЃР°.
 		
 		DIA_Parlan_WORK_perm = TRUE;
 		MIS_KlosterArbeit = LOG_RUNNING; 
-		B_LogEntry (Topic_Gemeinschaft, "Если я выполню все задания магов, мне будет даровано право посещать библиотеку.");
+		B_LogEntry (Topic_Gemeinschaft, "Р•СЃР»Рё СЏ РІС‹РїРѕР»РЅСЋ РІСЃРµ Р·Р°РґР°РЅРёСЏ РјР°РіРѕРІ, РјРЅРµ Р±СѓРґРµС‚ РґР°СЂРѕРІР°РЅРѕ РїСЂР°РІРѕ РїРѕСЃРµС‰Р°С‚СЊ Р±РёР±Р»РёРѕС‚РµРєСѓ.");
 	
 	};
 };
@@ -552,7 +552,7 @@ instance DIA_Parlan_Stand		(C_INFO)
 	condition	 = 	DIA_Parlan_Stand_Condition;
 	information	 = 	DIA_Parlan_Stand_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Могу я войти в библиотеку?";
+	description	 = 	"РњРѕРіСѓ СЏ РІРѕР№С‚Рё РІ Р±РёР±Р»РёРѕС‚РµРєСѓ?";
 };
 func int DIA_Parlan_Stand_Condition ()
 {
@@ -566,51 +566,51 @@ func void DIA_Parlan_Stand_Info ()
 {
 	Kloster_Punkte = 0;
 	
-	AI_Output (other, self, "DIA_Parlan_Stand_15_00"); //Могу я войти в библиотеку?
+	AI_Output (other, self, "DIA_Parlan_Stand_15_00"); //РњРѕРіСѓ СЏ РІРѕР№С‚Рё РІ Р±РёР±Р»РёРѕС‚РµРєСѓ?
 	
 	if (MIS_NeorasPflanzen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_01"); //Ты принес огненную крапиву брату Неорасу.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_01"); //РўС‹ РїСЂРёРЅРµСЃ РѕРіРЅРµРЅРЅСѓСЋ РєСЂР°РїРёРІСѓ Р±СЂР°С‚Сѓ РќРµРѕСЂР°СЃСѓ.
 		Kloster_Punkte = (Kloster_Punkte + 2);
 	};
 	if (MIS_Neorasrezept == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_02"); //Ты нашел рецепт брата Неораса.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_02"); //РўС‹ РЅР°С€РµР» СЂРµС†РµРїС‚ Р±СЂР°С‚Р° РќРµРѕСЂР°СЃР°.
 		Kloster_Punkte = (Kloster_Punkte + 2);
 	};
 	if (MIS_IsgarothWolf == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_03"); //Ты убил черного волка, терроризировавшего часовню.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_03"); //РўС‹ СѓР±РёР» С‡РµСЂРЅРѕРіРѕ РІРѕР»РєР°, С‚РµСЂСЂРѕСЂРёР·РёСЂРѕРІР°РІС€РµРіРѕ С‡Р°СЃРѕРІРЅСЋ.
 		Kloster_Punkte = (Kloster_Punkte + 1);
 	};
 	if (MIS_ParlanFegen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_04"); //Ты смог найти четырех послушников и подмести кельи.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_04"); //РўС‹ СЃРјРѕРі РЅР°Р№С‚Рё С‡РµС‚С‹СЂРµС… РїРѕСЃР»СѓС€РЅРёРєРѕРІ Рё РїРѕРґРјРµСЃС‚Рё РєРµР»СЊРё.
 		Kloster_Punkte = (Kloster_Punkte + 3);
 	};
 	if (MIS_GoraxEssen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_05"); //Ты честно раздал еду послушникам, как и просил тебя брат Горакс.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_05"); //РўС‹ С‡РµСЃС‚РЅРѕ СЂР°Р·РґР°Р» РµРґСѓ РїРѕСЃР»СѓС€РЅРёРєР°Рј, РєР°Рє Рё РїСЂРѕСЃРёР» С‚РµР±СЏ Р±СЂР°С‚ Р“РѕСЂР°РєСЃ.
 		Kloster_Punkte = (Kloster_Punkte + 1);
 	}
 	else if (MIS_GoraxEssen == LOG_FAILED)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_06"); //Горакс неудовлетворен тобой, так как нечестно распределил еду.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_06"); //Р“РѕСЂР°РєСЃ РЅРµСѓРґРѕРІР»РµС‚РІРѕСЂРµРЅ С‚РѕР±РѕР№, С‚Р°Рє РєР°Рє РЅРµС‡РµСЃС‚РЅРѕ СЂР°СЃРїСЂРµРґРµР»РёР» РµРґСѓ.
 	};	
 	if (MIS_GoraxWein == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_07"); //Ты продал вино, как того и хотел Горакс.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_07"); //РўС‹ РїСЂРѕРґР°Р» РІРёРЅРѕ, РєР°Рє С‚РѕРіРѕ Рё С…РѕС‚РµР» Р“РѕСЂР°РєСЃ.
 		Kloster_Punkte = (Kloster_Punkte + 1);
 	}
 	else if (MIS_GoraxWein == LOG_FAILED)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_08"); //Чем меньше мы будем говорить о вине, тем лучше...
+		AI_Output (self, other, "DIA_Parlan_Stand_05_08"); //Р§РµРј РјРµРЅСЊС€Рµ РјС‹ Р±СѓРґРµРј РіРѕРІРѕСЂРёС‚СЊ Рѕ РІРёРЅРµ, С‚РµРј Р»СѓС‡С€Рµ...
 	};	
 	
 	if (Kloster_Punkte >= 8)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_09"); //Да, ты хорошо поработал. Теперь пришло время начать постигать учение Инноса. Поговори с мастером Хигласом в библиотеке.
-		AI_Output (self, other, "DIA_Parlan_Stand_05_10"); //Я выдаю тебе этот ключ.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_09"); //Р”Р°, С‚С‹ С…РѕСЂРѕС€Рѕ РїРѕСЂР°Р±РѕС‚Р°Р». РўРµРїРµСЂСЊ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ РЅР°С‡Р°С‚СЊ РїРѕСЃС‚РёРіР°С‚СЊ СѓС‡РµРЅРёРµ РРЅРЅРѕСЃР°. РџРѕРіРѕРІРѕСЂРё СЃ РјР°СЃС‚РµСЂРѕРј РҐРёРіР»Р°СЃРѕРј РІ Р±РёР±Р»РёРѕС‚РµРєРµ.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_10"); //РЇ РІС‹РґР°СЋ С‚РµР±Рµ СЌС‚РѕС‚ РєР»СЋС‡.
 		Parlan_Erlaubnis = TRUE;
 		MIS_KlosterArbeit = LOG_SUCCESS;
 		Wld_AssignRoomToGuild ("Kloster02",GIL_PUBLIC);
@@ -651,11 +651,11 @@ func void DIA_Parlan_Stand_Info ()
 	}
 	else if (Kloster_Punkte >= 1)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_11"); //Ты работал, конечно, но пока ты должен продолжать служить общине.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_11"); //РўС‹ СЂР°Р±РѕС‚Р°Р», РєРѕРЅРµС‡РЅРѕ, РЅРѕ РїРѕРєР° С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЃР»СѓР¶РёС‚СЊ РѕР±С‰РёРЅРµ.
 	}
 	else  //0 Punkte
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_12"); //Сначала выполни свои поручения на благо общины. А когда ты закончишь свою работу, мы вернемся к этому разговору.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_12"); //РЎРЅР°С‡Р°Р»Р° РІС‹РїРѕР»РЅРё СЃРІРѕРё РїРѕСЂСѓС‡РµРЅРёСЏ РЅР° Р±Р»Р°РіРѕ РѕР±С‰РёРЅС‹. Рђ РєРѕРіРґР° С‚С‹ Р·Р°РєРѕРЅС‡РёС€СЊ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ, РјС‹ РІРµСЂРЅРµРјСЃСЏ Рє СЌС‚РѕРјСѓ СЂР°Р·РіРѕРІРѕСЂСѓ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -668,7 +668,7 @@ instance DIA_Parlan_Aufgabe		(C_INFO)
 	condition	 = 	DIA_Parlan_Aufgabe_Condition;
 	information	 = 	DIA_Parlan_Aufgabe_Info;
 	permanent	 =  FALSE;
-	description	 = 	"У тебя есть какое-нибудь задание для меня?";
+	description	 = 	"РЈ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ Р·Р°РґР°РЅРёРµ РґР»СЏ РјРµРЅСЏ?";
 };
 
 func int DIA_Parlan_Aufgabe_Condition ()
@@ -680,17 +680,17 @@ func int DIA_Parlan_Aufgabe_Condition ()
 };
 func void DIA_Parlan_Aufgabe_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Aufgabe_15_00"); //У тебя есть поручения для меня?
-	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_01"); //Хмм... Да, ты, действительно можешь сделать кое-что для общины.
-	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_02"); //Кельям послушников не помешает хорошая уборка. Позаботься об этом.
-	AI_Output (other, self, "DIA_Parlan_Aufgabe_15_03"); //Но это займет целую вечность...
-	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_04"); //Тогда тебе лучше не терять время попусту, разве нет?
+	AI_Output (other, self, "DIA_Parlan_Aufgabe_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РїРѕСЂСѓС‡РµРЅРёСЏ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_01"); //РҐРјРј... Р”Р°, С‚С‹, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РєРѕРµ-С‡С‚Рѕ РґР»СЏ РѕР±С‰РёРЅС‹.
+	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_02"); //РљРµР»СЊСЏРј РїРѕСЃР»СѓС€РЅРёРєРѕРІ РЅРµ РїРѕРјРµС€Р°РµС‚ С…РѕСЂРѕС€Р°СЏ СѓР±РѕСЂРєР°. РџРѕР·Р°Р±РѕС‚СЊСЃСЏ РѕР± СЌС‚РѕРј.
+	AI_Output (other, self, "DIA_Parlan_Aufgabe_15_03"); //РќРѕ СЌС‚Рѕ Р·Р°Р№РјРµС‚ С†РµР»СѓСЋ РІРµС‡РЅРѕСЃС‚СЊ...
+	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_04"); //РўРѕРіРґР° С‚РµР±Рµ Р»СѓС‡С€Рµ РЅРµ С‚РµСЂСЏС‚СЊ РІСЂРµРјСЏ РїРѕРїСѓСЃС‚Сѓ, СЂР°Р·РІРµ РЅРµС‚?
 	
 	MIS_ParlanFegen = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_ParlanFegen,LOG_MISSION);
 	Log_SetTopicStatus (Topic_ParlanFegen,LOG_RUNNING);
-	B_LogEntry 	(Topic_ParlanFegen,"Мастер Парлан хочет, чтобы я подмел кельи четырех послушников. Это займет целую вечность."); 
+	B_LogEntry 	(Topic_ParlanFegen,"РњР°СЃС‚РµСЂ РџР°СЂР»Р°РЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕРґРјРµР» РєРµР»СЊРё С‡РµС‚С‹СЂРµС… РїРѕСЃР»СѓС€РЅРёРєРѕРІ. Р­С‚Рѕ Р·Р°Р№РјРµС‚ С†РµР»СѓСЋ РІРµС‡РЅРѕСЃС‚СЊ."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info alle sind am Fegen 
@@ -702,7 +702,7 @@ instance DIA_Parlan_Fegen		(C_INFO)
 	condition	 = 	DIA_Parlan_Fegen_Condition;
 	information	 = 	DIA_Parlan_Fegen_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Насчет келий послушников...";
+	description	 = 	"РќР°СЃС‡РµС‚ РєРµР»РёР№ РїРѕСЃР»СѓС€РЅРёРєРѕРІ...";
 };
 //------------------------------------
 var int DIA_Parlan_Fegen_permanent; 
@@ -717,12 +717,12 @@ func int DIA_Parlan_Fegen_Condition ()
 };
 func void DIA_Parlan_Fegen_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Fegen_15_00"); //Насчет келий послушников...
+	AI_Output (other, self, "DIA_Parlan_Fegen_15_00"); //РќР°СЃС‡РµС‚ РєРµР»РёР№ РїРѕСЃР»СѓС€РЅРёРєРѕРІ...
 	
 	if (NOV_Helfer >= 4)
 	{
-		AI_Output (self, other, "DIA_Parlan_Fegen_05_01"); //Тебе удалось найти четырех послушников себе в помощь. Я думаю, теперь они могут вернуться к своей работе.
-		AI_Output (self, other, "DIA_Parlan_Fegen_05_02"); //Отлично, послушник. Ты выполнил мое поручение.
+		AI_Output (self, other, "DIA_Parlan_Fegen_05_01"); //РўРµР±Рµ СѓРґР°Р»РѕСЃСЊ РЅР°Р№С‚Рё С‡РµС‚С‹СЂРµС… РїРѕСЃР»СѓС€РЅРёРєРѕРІ СЃРµР±Рµ РІ РїРѕРјРѕС‰СЊ. РЇ РґСѓРјР°СЋ, С‚РµРїРµСЂСЊ РѕРЅРё РјРѕРіСѓС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ.
+		AI_Output (self, other, "DIA_Parlan_Fegen_05_02"); //РћС‚Р»РёС‡РЅРѕ, РїРѕСЃР»СѓС€РЅРёРє. РўС‹ РІС‹РїРѕР»РЅРёР» РјРѕРµ РїРѕСЂСѓС‡РµРЅРёРµ.
 		MIS_ParlanFegen = LOG_SUCCESS; 
 		B_GivePlayerXP (XP_ParlanFegen);
 		DIA_Parlan_Fegen_permanent = TRUE;
@@ -734,7 +734,7 @@ func void DIA_Parlan_Fegen_Info ()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Parlan_Fegen_05_03"); //Бесспорно - это непростая задача. Но с помощью Инноса ты справишься.
+		AI_Output (self, other, "DIA_Parlan_Fegen_05_03"); //Р‘РµСЃСЃРїРѕСЂРЅРѕ - СЌС‚Рѕ РЅРµРїСЂРѕСЃС‚Р°СЏ Р·Р°РґР°С‡Р°. РќРѕ СЃ РїРѕРјРѕС‰СЊСЋ РРЅРЅРѕСЃР° С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -747,7 +747,7 @@ instance DIA_Parlan_LEARN		(C_INFO)
 	condition	 = 	DIA_Parlan_LEARN_Condition;
 	information	 = 	DIA_Parlan_LEARN_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Как мне изучить основы магии?";
+	description	 = 	"РљР°Рє РјРЅРµ РёР·СѓС‡РёС‚СЊ РѕСЃРЅРѕРІС‹ РјР°РіРёРё?";
 };
 
 func int DIA_Parlan_LEARN_Condition ()
@@ -760,11 +760,11 @@ func int DIA_Parlan_LEARN_Condition ()
 };
 func void DIA_Parlan_LEARN_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_LEARN_15_00"); //Как мне изучить основы магии?
-	AI_Output (self, other, "DIA_Parlan_LEARN_05_01"); //Ты здесь не для того, чтобы получить дар магии. Ты здесь, чтобы служить Инносу.
-	AI_Output (self, other, "DIA_Parlan_LEARN_05_02"); //Но я могу показать тебе, как повысить твои магические способности.
+	AI_Output (other, self, "DIA_Parlan_LEARN_15_00"); //РљР°Рє РјРЅРµ РёР·СѓС‡РёС‚СЊ РѕСЃРЅРѕРІС‹ РјР°РіРёРё?
+	AI_Output (self, other, "DIA_Parlan_LEARN_05_01"); //РўС‹ Р·РґРµСЃСЊ РЅРµ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РґР°СЂ РјР°РіРёРё. РўС‹ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ СЃР»СѓР¶РёС‚СЊ РРЅРЅРѕСЃСѓ.
+	AI_Output (self, other, "DIA_Parlan_LEARN_05_02"); //РќРѕ СЏ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РїРѕРІС‹СЃРёС‚СЊ С‚РІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 	
-	B_LogEntry (Topic_KlosterTeacher,"Мастер Парлан может помочь мне повысить мою магическую энергию.");
+	B_LogEntry (Topic_KlosterTeacher,"РњР°СЃС‚РµСЂ РџР°СЂР»Р°РЅ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЌРЅРµСЂРіРёСЋ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info KNOWSJUDGE
@@ -776,7 +776,7 @@ instance DIA_Parlan_KNOWSJUDGE		(C_INFO)
 	condition	 = 	DIA_Parlan_KNOWSJUDGE_Condition;
 	information	 = 	DIA_Parlan_KNOWSJUDGE_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я хочу пройти Испытание Огнем.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј.";
 };
 func int DIA_Parlan_KNOWSJUDGE_Condition ()
 {	
@@ -789,12 +789,12 @@ func int DIA_Parlan_KNOWSJUDGE_Condition ()
 };
 func void DIA_Parlan_KNOWSJUDGE_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_KNOWSJUDGE_15_00"); //Я хочу пройти Испытание Огнем.
-	AI_Output (self, other, "DIA_Parlan_KNOWSJUDGE_05_01"); //Что?.. Хм... (удостоверяясь) Ты это действительно серьезно?
-	AI_Output (other, self, "DIA_Parlan_KNOWSJUDGE_15_02"); //Я настаиваю.
-	AI_Output (self, other, "DIA_Parlan_KNOWSJUDGE_05_03"); //Ты необычный послушник. Хорошо, если ты настаиваешь, поговори с мастером Пирокаром.
+	AI_Output (other, self, "DIA_Parlan_KNOWSJUDGE_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј.
+	AI_Output (self, other, "DIA_Parlan_KNOWSJUDGE_05_01"); //Р§С‚Рѕ?.. РҐРј... (СѓРґРѕСЃС‚РѕРІРµСЂСЏСЏСЃСЊ) РўС‹ СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРµСЂСЊРµР·РЅРѕ?
+	AI_Output (other, self, "DIA_Parlan_KNOWSJUDGE_15_02"); //РЇ РЅР°СЃС‚Р°РёРІР°СЋ.
+	AI_Output (self, other, "DIA_Parlan_KNOWSJUDGE_05_03"); //РўС‹ РЅРµРѕР±С‹С‡РЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє. РҐРѕСЂРѕС€Рѕ, РµСЃР»Рё С‚С‹ РЅР°СЃС‚Р°РёРІР°РµС€СЊ, РїРѕРіРѕРІРѕСЂРё СЃ РјР°СЃС‚РµСЂРѕРј РџРёСЂРѕРєР°СЂРѕРј.
 	
-	B_LogEntry (TOPIC_FireContest,"Если я хочу потребовать пройти Испытание огнем, я должен поговорить с Мастером Пирокаром.");
+	B_LogEntry (TOPIC_FireContest,"Р•СЃР»Рё СЏ С…РѕС‡Сѓ РїРѕС‚СЂРµР±РѕРІР°С‚СЊ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РѕРіРЅРµРј, СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РњР°СЃС‚РµСЂРѕРј РџРёСЂРѕРєР°СЂРѕРј.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH_MANA
@@ -806,7 +806,7 @@ instance DIA_Parlan_TEACH_MANA		(C_INFO)
 	condition	 = 	DIA_Parlan_TEACH_MANA_Condition;
 	information	 = 	DIA_Parlan_TEACH_MANA_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу повысить мои магические способности.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 };
 func int DIA_Parlan_TEACH_MANA_Condition ()
 {	
@@ -821,7 +821,7 @@ func int DIA_Parlan_TEACH_MANA_Condition ()
 };
 func void DIA_Parlan_TEACH_MANA_Info ()
 {
-		AI_Output (other, self, "DIA_Parlan_TEACH_MANA_15_00"); //Я хочу повысить мои магические способности.
+		AI_Output (other, self, "DIA_Parlan_TEACH_MANA_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 		
 		Info_ClearChoices   (DIA_Parlan_TEACH_MANA);	
 		Info_AddChoice 		(DIA_Parlan_TEACH_MANA,DIALOG_BACK,DIA_Parlan_TEACH_MANA_BACK);		
@@ -832,8 +832,8 @@ FUNC VOID DIA_Parlan_TEACH_MANA_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_MED)  
 	{
-		AI_Output (self, other, "DIA_Parlan_TEACH_MANA_05_00"); //Твоя магическая энергия выросла. Я не могу помочь тебе повысить ее еще больше.
-		AI_Output (self, other, "DIA_Parlan_TEACH_MANA_05_01"); //Если ты хочешь научиться большему, поговори с Пирокаром.
+		AI_Output (self, other, "DIA_Parlan_TEACH_MANA_05_00"); //РўРІРѕСЏ РјР°РіРёС‡РµСЃРєР°СЏ СЌРЅРµСЂРіРёСЏ РІС‹СЂРѕСЃР»Р°. РЇ РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РїРѕРІС‹СЃРёС‚СЊ РµРµ РµС‰Рµ Р±РѕР»СЊС€Рµ.
+		AI_Output (self, other, "DIA_Parlan_TEACH_MANA_05_01"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РЅР°СѓС‡РёС‚СЊСЃСЏ Р±РѕР»СЊС€РµРјСѓ, РїРѕРіРѕРІРѕСЂРё СЃ РџРёСЂРѕРєР°СЂРѕРј.
 		Parlan_Sends = TRUE;
 	};
 	
@@ -879,9 +879,9 @@ func int DIA_Parlan_MAGE_Condition ()
 };
 func void DIA_Parlan_MAGE_Info ()
 {
-	AI_Output (self, other, "DIA_Parlan_MAGE_05_00"); //Ты принес клятву, брат. Добро пожаловать в наши ряды.
-	AI_Output (self, other, "DIA_Parlan_MAGE_05_01"); //Я научу тебя первому Кругу магии, когда у тебя будет достаточно опыта.
-	AI_Output (self, other, "DIA_Parlan_MAGE_05_02"); //Возьми этот рунный камень в качестве символа силы, которая теперь находится в твоих руках.
+	AI_Output (self, other, "DIA_Parlan_MAGE_05_00"); //РўС‹ РїСЂРёРЅРµСЃ РєР»СЏС‚РІСѓ, Р±СЂР°С‚. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РЅР°С€Рё СЂСЏРґС‹.
+	AI_Output (self, other, "DIA_Parlan_MAGE_05_01"); //РЇ РЅР°СѓС‡Сѓ С‚РµР±СЏ РїРµСЂРІРѕРјСѓ РљСЂСѓРіСѓ РјР°РіРёРё, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕРїС‹С‚Р°.
+	AI_Output (self, other, "DIA_Parlan_MAGE_05_02"); //Р’РѕР·СЊРјРё СЌС‚РѕС‚ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ РІ РєР°С‡РµСЃС‚РІРµ СЃРёРјРІРѕР»Р° СЃРёР»С‹, РєРѕС‚РѕСЂР°СЏ С‚РµРїРµСЂСЊ РЅР°С…РѕРґРёС‚СЃСЏ РІ С‚РІРѕРёС… СЂСѓРєР°С….
 	
 	B_GiveInvItems (self, other, Itmi_RunebLank,1);
 };
@@ -895,7 +895,7 @@ instance DIA_Parlan_CIRCLE1		(C_INFO)
 	condition	 = 	DIA_Parlan_CIRCLE1_Condition;
 	information	 = 	DIA_Parlan_CIRCLE1_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Научи меня первому Кругу магии.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ РїРµСЂРІРѕРјСѓ РљСЂСѓРіСѓ РјР°РіРёРё.";
 };
 func int DIA_Parlan_CIRCLE1_Condition ()
 {	
@@ -908,13 +908,13 @@ func int DIA_Parlan_CIRCLE1_Condition ()
 };
 func void DIA_Parlan_CIRCLE1_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE1_15_00"); //Научи меня первому Кругу магии.
+	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE1_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РїРµСЂРІРѕРјСѓ РљСЂСѓРіСѓ РјР°РіРёРё.
 	
 	if B_TeachMagicCircle (self, other, 1)
 	{
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_01"); //Первый Круг магии позволит тебе использовать руны, созданные тобой.
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_02"); //Теперь ты достоин узнать формулы заклинаний для создания собственных рун.
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_03"); //Каждый из нас специализируется на своей области магии. Так что хорошо подумай, в какой области хочешь специализироваться ты.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_01"); //РџРµСЂРІС‹Р№ РљСЂСѓРі РјР°РіРёРё РїРѕР·РІРѕР»РёС‚ С‚РµР±Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЂСѓРЅС‹, СЃРѕР·РґР°РЅРЅС‹Рµ С‚РѕР±РѕР№.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_02"); //РўРµРїРµСЂСЊ С‚С‹ РґРѕСЃС‚РѕРёРЅ СѓР·РЅР°С‚СЊ С„РѕСЂРјСѓР»С‹ Р·Р°РєР»РёРЅР°РЅРёР№ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СЃРѕР±СЃС‚РІРµРЅРЅС‹С… СЂСѓРЅ.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_03"); //РљР°Р¶РґС‹Р№ РёР· РЅР°СЃ СЃРїРµС†РёР°Р»РёР·РёСЂСѓРµС‚СЃСЏ РЅР° СЃРІРѕРµР№ РѕР±Р»Р°СЃС‚Рё РјР°РіРёРё. РўР°Рє С‡С‚Рѕ С…РѕСЂРѕС€Рѕ РїРѕРґСѓРјР°Р№, РІ РєР°РєРѕР№ РѕР±Р»Р°СЃС‚Рё С…РѕС‡РµС€СЊ СЃРїРµС†РёР°Р»РёР·РёСЂРѕРІР°С‚СЊСЃСЏ С‚С‹.
 	};
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -927,7 +927,7 @@ instance DIA_Parlan_CIRCLE2		(C_INFO)
 	condition	 = 	DIA_Parlan_CIRCLE2_Condition;
 	information	 = 	DIA_Parlan_CIRCLE2_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Научи меня второму Кругу магии.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ РІС‚РѕСЂРѕРјСѓ РљСЂСѓРіСѓ РјР°РіРёРё.";
 };
 func int DIA_Parlan_CIRCLE2_Condition ()
 {	
@@ -940,20 +940,20 @@ func int DIA_Parlan_CIRCLE2_Condition ()
 };
 func void DIA_Parlan_CIRCLE2_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE2_15_00"); //Научи меня второму Кругу магии.
+	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE2_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РІС‚РѕСЂРѕРјСѓ РљСЂСѓРіСѓ РјР°РіРёРё.
 	
 	if (Kapitel >= 2)
 	{
 		if B_TeachMagicCircle (self, other, 2)
 		{
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_01"); //Войди во второй Круг и научись использовать более сильную магию.
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_02"); //Но также помни, что на тебе лежит большой груз ответственности. Не передо мной и Пирокаром - перед Инносом.
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_03"); //Он покажет тебе направление - но путь формируют твои дела.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_01"); //Р’РѕР№РґРё РІРѕ РІС‚РѕСЂРѕР№ РљСЂСѓРі Рё РЅР°СѓС‡РёСЃСЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р±РѕР»РµРµ СЃРёР»СЊРЅСѓСЋ РјР°РіРёСЋ.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_02"); //РќРѕ С‚Р°РєР¶Рµ РїРѕРјРЅРё, С‡С‚Рѕ РЅР° С‚РµР±Рµ Р»РµР¶РёС‚ Р±РѕР»СЊС€РѕР№ РіСЂСѓР· РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚Рё. РќРµ РїРµСЂРµРґРѕ РјРЅРѕР№ Рё РџРёСЂРѕРєР°СЂРѕРј - РїРµСЂРµРґ РРЅРЅРѕСЃРѕРј.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_03"); //РћРЅ РїРѕРєР°Р¶РµС‚ С‚РµР±Рµ РЅР°РїСЂР°РІР»РµРЅРёРµ - РЅРѕ РїСѓС‚СЊ С„РѕСЂРјРёСЂСѓСЋС‚ С‚РІРѕРё РґРµР»Р°.
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_04"); //Время еще не пришло.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_04"); //Р’СЂРµРјСЏ РµС‰Рµ РЅРµ РїСЂРёС€Р»Рѕ.
 	};
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -966,7 +966,7 @@ instance DIA_Parlan_CIRCLE3		(C_INFO)
 	condition	 = 	DIA_Parlan_CIRCLE3_Condition;
 	information	 = 	DIA_Parlan_CIRCLE3_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Научи меня третьему Кругу магии.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ С‚СЂРµС‚СЊРµРјСѓ РљСЂСѓРіСѓ РјР°РіРёРё.";
 };
 func int DIA_Parlan_CIRCLE3_Condition ()
 {	
@@ -979,22 +979,22 @@ func int DIA_Parlan_CIRCLE3_Condition ()
 };
 func void DIA_Parlan_CIRCLE3_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE3_15_00"); //Научи меня третьему Кругу магии.
+	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE3_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ С‚СЂРµС‚СЊРµРјСѓ РљСЂСѓРіСѓ РјР°РіРёРё.
 	
 	if (Kapitel >= 3)
 	{
 		if B_TeachMagicCircle (self, other, 3)
 		{
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_01"); //Да, время пришло. Войди в третий Круг магии. Тебя ждут новые заклинания.
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_02"); //Они тебе понадобятся - Зло хочет погрузить землю в хаос, и остановить его можно только с помощью силы Инноса.
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_03"); //Я научил тебя всем Кругам, которыми владею сам. Карас введет тебя в другие Круги.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_01"); //Р”Р°, РІСЂРµРјСЏ РїСЂРёС€Р»Рѕ. Р’РѕР№РґРё РІ С‚СЂРµС‚РёР№ РљСЂСѓРі РјР°РіРёРё. РўРµР±СЏ Р¶РґСѓС‚ РЅРѕРІС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_02"); //РћРЅРё С‚РµР±Рµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ - Р—Р»Рѕ С…РѕС‡РµС‚ РїРѕРіСЂСѓР·РёС‚СЊ Р·РµРјР»СЋ РІ С…Р°РѕСЃ, Рё РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РµРіРѕ РјРѕР¶РЅРѕ С‚РѕР»СЊРєРѕ СЃ РїРѕРјРѕС‰СЊСЋ СЃРёР»С‹ РРЅРЅРѕСЃР°.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_03"); //РЇ РЅР°СѓС‡РёР» С‚РµР±СЏ РІСЃРµРј РљСЂСѓРіР°Рј, РєРѕС‚РѕСЂС‹РјРё РІР»Р°РґРµСЋ СЃР°Рј. РљР°СЂР°СЃ РІРІРµРґРµС‚ С‚РµР±СЏ РІ РґСЂСѓРіРёРµ РљСЂСѓРіРё.
 			
-			B_LogEntry (Topic_KlosterTeacher,"Брат Парлан обучил меня первым трем Кругам. Брат Каррас поможет мне изучить следующие Круги.");
+			B_LogEntry (Topic_KlosterTeacher,"Р‘СЂР°С‚ РџР°СЂР»Р°РЅ РѕР±СѓС‡РёР» РјРµРЅСЏ РїРµСЂРІС‹Рј С‚СЂРµРј РљСЂСѓРіР°Рј. Р‘СЂР°С‚ РљР°СЂСЂР°СЃ РїРѕРјРѕР¶РµС‚ РјРЅРµ РёР·СѓС‡РёС‚СЊ СЃР»РµРґСѓСЋС‰РёРµ РљСЂСѓРіРё.");
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_04"); //Для изучения третьего Круга еще не пришло время.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_04"); //Р”Р»СЏ РёР·СѓС‡РµРЅРёСЏ С‚СЂРµС‚СЊРµРіРѕ РљСЂСѓРіР° РµС‰Рµ РЅРµ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ.
 	};
 };		
 ///////////////////////////////////////////////////////////////////////
@@ -1007,7 +1007,7 @@ instance DIA_Parlan_TEACH		(C_INFO)
 	condition	 = 	DIA_Parlan_TEACH_Condition;
 	information	 = 	DIA_Parlan_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Обучи меня (созданию рун).";
+	description	 = 	"РћР±СѓС‡Рё РјРµРЅСЏ (СЃРѕР·РґР°РЅРёСЋ СЂСѓРЅ).";
 };
 func int DIA_Parlan_TEACH_Condition ()
 {	
@@ -1021,7 +1021,7 @@ func void DIA_Parlan_TEACH_Info ()
 	var int abletolearn;
 	abletolearn = 0;
 	
-	AI_Output (other, self, "DIA_Parlan_TEACH_15_00"); //Обучи меня!
+	AI_Output (other, self, "DIA_Parlan_TEACH_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ!
 	
 	Info_ClearChoices (DIA_Parlan_TEACH);
 	Info_AddChoice (DIA_Parlan_TEACH,DIALOG_BACK,DIA_Parlan_TEACH_BACK);
@@ -1076,7 +1076,7 @@ func void DIA_Parlan_TEACH_Info ()
 	};
 	if (abletolearn < 1)
 	{
-		AI_Output (self, other, "DIA_Parlan_TEACH_05_01"); //Пока я ничему не могу научить тебя.
+		AI_Output (self, other, "DIA_Parlan_TEACH_05_01"); //РџРѕРєР° СЏ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	};
 };
 FUNC VOID DIA_Parlan_TEACH_BACK()
@@ -1154,7 +1154,7 @@ FUNC VOID DIA_Parlan_Kap2_EXIT_Info()
 
 func void B_Parlan_Exit()
 {
-	AI_Output (self ,other,"DIA_Parlan_EXIT_05_00"); //Да защитит тебя Иннос.
+	AI_Output (self ,other,"DIA_Parlan_EXIT_05_00"); //Р”Р° Р·Р°С‰РёС‚РёС‚ С‚РµР±СЏ РРЅРЅРѕСЃ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1214,41 +1214,41 @@ FUNC VOID DIA_Parlan_IAmParlan_Info()
 {
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_00"); //Я вижу, ты решил сражаться на нашей стороне. Я рад.
-		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_01"); //Нам нужны каждые сильные руки. Ты должен поговорить с Мардуком, он отвечает за вас, паладинов.
+		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_00"); //РЇ РІРёР¶Сѓ, С‚С‹ СЂРµС€РёР» СЃСЂР°Р¶Р°С‚СЊСЃСЏ РЅР° РЅР°С€РµР№ СЃС‚РѕСЂРѕРЅРµ. РЇ СЂР°Рґ.
+		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_01"); //РќР°Рј РЅСѓР¶РЅС‹ РєР°Р¶РґС‹Рµ СЃРёР»СЊРЅС‹Рµ СЂСѓРєРё. РўС‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РњР°СЂРґСѓРєРѕРј, РѕРЅ РѕС‚РІРµС‡Р°РµС‚ Р·Р° РІР°СЃ, РїР°Р»Р°РґРёРЅРѕРІ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_02"); //Я не знаю, почему тебя пустили в монастырь. Я Парлан, и я отвечаю за наших послушников.
-		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_03"); //Я не хочу, чтобы ты отрывал их от работы своими дурацкими вопросами. Надеюсь, это ясно?
+		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_02"); //РЇ РЅРµ Р·РЅР°СЋ, РїРѕС‡РµРјСѓ С‚РµР±СЏ РїСѓСЃС‚РёР»Рё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. РЇ РџР°СЂР»Р°РЅ, Рё СЏ РѕС‚РІРµС‡Р°СЋ Р·Р° РЅР°С€РёС… РїРѕСЃР»СѓС€РЅРёРєРѕРІ.
+		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_03"); //РЇ РЅРµ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕС‚СЂС‹РІР°Р» РёС… РѕС‚ СЂР°Р±РѕС‚С‹ СЃРІРѕРёРјРё РґСѓСЂР°С†РєРёРјРё РІРѕРїСЂРѕСЃР°РјРё. РќР°РґРµСЋСЃСЊ, СЌС‚Рѕ СЏСЃРЅРѕ?
 		
 		Parlan_DontTalkToNovice = LOG_RUNNING;
 			
 		Info_ClearChoices (DIA_Parlan_IAmParlan);
-		Info_AddChoice (DIA_Parlan_IAmParlan,"Я буду делать то, что сочту нужным.",DIA_Parlan_IAmParlan_MyChoice);
-		Info_AddChoice (DIA_Parlan_IAmParlan,"Конечно.",DIA_Parlan_IAmParlan_OK);
+		Info_AddChoice (DIA_Parlan_IAmParlan,"РЇ Р±СѓРґСѓ РґРµР»Р°С‚СЊ С‚Рѕ, С‡С‚Рѕ СЃРѕС‡С‚Сѓ РЅСѓР¶РЅС‹Рј.",DIA_Parlan_IAmParlan_MyChoice);
+		Info_AddChoice (DIA_Parlan_IAmParlan,"РљРѕРЅРµС‡РЅРѕ.",DIA_Parlan_IAmParlan_OK);
 	};
 	Wld_InsertItem (ItKe_KlosterBibliothek,"NW_MONASTERY_CORRIDOR_02"); 
 };
 
 FUNC VOID DIA_Parlan_IAmParlan_MyChoice ()
 {
-	AI_Output (other,self ,"DIA_Parlan_IAmParlan_MyChoice_15_00"); //Я буду делать то, что сочту нужным.
-	AI_Output (self ,other,"DIA_Parlan_IAmParlan_MyChoice_05_01"); //Возможно, тому, что тебя терпят здесь, есть причины, но предел есть всему.
-	AI_Output (self ,other,"DIA_Parlan_IAmParlan_MyChoice_05_02"); //Если ты будешь создавать проблемы, ты ответишь за это. Так что лучше держись подальше от послушников.
+	AI_Output (other,self ,"DIA_Parlan_IAmParlan_MyChoice_15_00"); //РЇ Р±СѓРґСѓ РґРµР»Р°С‚СЊ С‚Рѕ, С‡С‚Рѕ СЃРѕС‡С‚Сѓ РЅСѓР¶РЅС‹Рј.
+	AI_Output (self ,other,"DIA_Parlan_IAmParlan_MyChoice_05_01"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚РѕРјСѓ, С‡С‚Рѕ С‚РµР±СЏ С‚РµСЂРїСЏС‚ Р·РґРµСЃСЊ, РµСЃС‚СЊ РїСЂРёС‡РёРЅС‹, РЅРѕ РїСЂРµРґРµР» РµСЃС‚СЊ РІСЃРµРјСѓ.
+	AI_Output (self ,other,"DIA_Parlan_IAmParlan_MyChoice_05_02"); //Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ СЃРѕР·РґР°РІР°С‚СЊ РїСЂРѕР±Р»РµРјС‹, С‚С‹ РѕС‚РІРµС‚РёС€СЊ Р·Р° СЌС‚Рѕ. РўР°Рє С‡С‚Рѕ Р»СѓС‡С€Рµ РґРµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РїРѕСЃР»СѓС€РЅРёРєРѕРІ.
 	 
 	Info_ClearChoices (DIA_Parlan_IAmParlan);
 };
 
 FUNC VOID DIA_Parlan_IAmParlan_OK()
 {
-	AI_Output (other,self ,"DIA_Parlan_IAmParlan_OK_15_00"); //Конечно.
-	AI_Output (self ,other,"DIA_Parlan_IAmParlan_OK_05_01"); //Очень надеюсь на это.
+	AI_Output (other,self ,"DIA_Parlan_IAmParlan_OK_15_00"); //РљРѕРЅРµС‡РЅРѕ.
+	AI_Output (self ,other,"DIA_Parlan_IAmParlan_OK_05_01"); //РћС‡РµРЅСЊ РЅР°РґРµСЋСЃСЊ РЅР° СЌС‚Рѕ.
 
 	Info_ClearChoices (DIA_Parlan_IAmParlan);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Schlьssel fьr Bibliothek
+//	SchlСЊssel fСЊr Bibliothek
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Parlan_Bibliothek   (C_INFO)
 {
@@ -1257,7 +1257,7 @@ INSTANCE DIA_Parlan_Bibliothek   (C_INFO)
 	condition   = DIA_Parlan_Bibliothek_Condition;
 	information = DIA_Parlan_Bibliothek_Info;
 	permanent   = FALSE;
-	description = "У тебя есть что-нибудь для меня?";
+	description = "РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґР»СЏ РјРµРЅСЏ?";
 };
 FUNC INT DIA_Parlan_Bibliothek_Condition()
 {
@@ -1271,13 +1271,13 @@ FUNC INT DIA_Parlan_Bibliothek_Condition()
 };
 FUNC VOID DIA_Parlan_Bibliothek_Info()
 {
-	AI_Output (other ,self,"DIA_Parlan_Bibliothek_15_00"); //У тебя есть что-нибудь для меня?
-	AI_Output (self ,other,"DIA_Parlan_Bibliothek_05_01"); //Да. Как читателю библиотеки, тебе выдается ключ от нее. Там ты найдешь братьев Караса и Хигласа.
-	AI_Output (self ,other,"DIA_Parlan_Bibliothek_05_02"); //Если хочешь, ты можешь поговорить с ними.
+	AI_Output (other ,self,"DIA_Parlan_Bibliothek_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self ,other,"DIA_Parlan_Bibliothek_05_01"); //Р”Р°. РљР°Рє С‡РёС‚Р°С‚РµР»СЋ Р±РёР±Р»РёРѕС‚РµРєРё, С‚РµР±Рµ РІС‹РґР°РµС‚СЃСЏ РєР»СЋС‡ РѕС‚ РЅРµРµ. РўР°Рј С‚С‹ РЅР°Р№РґРµС€СЊ Р±СЂР°С‚СЊРµРІ РљР°СЂР°СЃР° Рё РҐРёРіР»Р°СЃР°.
+	AI_Output (self ,other,"DIA_Parlan_Bibliothek_05_02"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ, С‚С‹ РјРѕР¶РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРјРё.
 	
 	if (other.guild != GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_03"); //Но оставь в покое послушников!
+		AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_03"); //РќРѕ РѕСЃС‚Р°РІСЊ РІ РїРѕРєРѕРµ РїРѕСЃР»СѓС€РЅРёРєРѕРІ!
 	};
 	B_GiveInvItems (self,other,ItKe_KlosterBibliothek,1);
 };
@@ -1306,9 +1306,9 @@ FUNC INT DIA_Parlan_DontDisturb_Condition()
 };
 FUNC VOID DIA_Parlan_DontDisturb_Info()
 {
-	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_00"); //(угрожающе) Я не люблю повторять. Оставь послушников в покое.
-	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_01"); //Они должны очищать свой дух физическим трудом и готовить себя к жизни в монастыре.
-	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_02"); //(резко) Я не потерплю вмешательства в их работу!
+	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_00"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РЇ РЅРµ Р»СЋР±Р»СЋ РїРѕРІС‚РѕСЂСЏС‚СЊ. РћСЃС‚Р°РІСЊ РїРѕСЃР»СѓС€РЅРёРєРѕРІ РІ РїРѕРєРѕРµ.
+	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_01"); //РћРЅРё РґРѕР»Р¶РЅС‹ РѕС‡РёС‰Р°С‚СЊ СЃРІРѕР№ РґСѓС… С„РёР·РёС‡РµСЃРєРёРј С‚СЂСѓРґРѕРј Рё РіРѕС‚РѕРІРёС‚СЊ СЃРµР±СЏ Рє Р¶РёР·РЅРё РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
+	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_02"); //(СЂРµР·РєРѕ) РЇ РЅРµ РїРѕС‚РµСЂРїР»СЋ РІРјРµС€Р°С‚РµР»СЊСЃС‚РІР° РІ РёС… СЂР°Р±РѕС‚Сѓ!
 	
 	Parlan_DontTalkToNovice = LOG_RUNNING;
 };
@@ -1324,7 +1324,7 @@ INSTANCE DIA_Parlan_Kap3U4U5_PERM   (C_INFO)
 	condition   = DIA_Parlan_Kap3U4U5_PERM_Condition;
 	information = DIA_Parlan_Kap3U4U5_PERM_Info;
 	permanent   = TRUE;
-	description = "Где мне найти...";
+	description = "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё...";
 };
 FUNC INT DIA_Parlan_Kap3U4U5_PERM_Condition()
 {
@@ -1336,14 +1336,14 @@ FUNC INT DIA_Parlan_Kap3U4U5_PERM_Condition()
 };
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3_PERM_15_00"); //Где мне найти...
+	AI_Output (other,self ,"DIA_Parlan_Kap3_PERM_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё...
 	
 	Info_ClearChoices (DIA_Parlan_Kap3U4U5_PERM);
 	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,DIALOG_Back,DIA_Parlan_Kap3U4U5_PERM_Back);
-	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...церковь?",DIA_Parlan_Kap3U4U5_PERM_Church);
-	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...библиотеку?",DIA_Parlan_Kap3U4U5_PERM_Library);
-	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...часовню?",DIA_Parlan_Kap3U4U5_PERM_Chapel);
-	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...подвал?",DIA_Parlan_Kap3U4U5_PERM_Cellar);
+	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...С†РµСЂРєРѕРІСЊ?",DIA_Parlan_Kap3U4U5_PERM_Church);
+	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...Р±РёР±Р»РёРѕС‚РµРєСѓ?",DIA_Parlan_Kap3U4U5_PERM_Library);
+	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...С‡Р°СЃРѕРІРЅСЋ?",DIA_Parlan_Kap3U4U5_PERM_Chapel);
+	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...РїРѕРґРІР°Р»?",DIA_Parlan_Kap3U4U5_PERM_Cellar);
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Back()
@@ -1353,31 +1353,31 @@ FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Back()
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Church()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Church_15_00"); //...церковь?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Church_05_01"); //Die Kirche ist das grцЯte Gebдude im Kloster. Du kannst sie gar nicht ьbersehen.
-	AI_Output (self, other, "DIA_Parlan_Add_05_00"); //О, господи! Неужели Иннос ослепил тебя?!
-	AI_Output (self, other, "DIA_Parlan_Add_05_01"); //(цинично) Где церковь? Ох, боже, и куда же она подевалась?!
+	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Church_15_00"); //...С†РµСЂРєРѕРІСЊ?
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Church_05_01"); //Die Kirche ist das grС†РЇte GebРґude im Kloster. Du kannst sie gar nicht СЊbersehen.
+	AI_Output (self, other, "DIA_Parlan_Add_05_00"); //Рћ, РіРѕСЃРїРѕРґРё! РќРµСѓР¶РµР»Рё РРЅРЅРѕСЃ РѕСЃР»РµРїРёР» С‚РµР±СЏ?!
+	AI_Output (self, other, "DIA_Parlan_Add_05_01"); //(С†РёРЅРёС‡РЅРѕ) Р“РґРµ С†РµСЂРєРѕРІСЊ? РћС…, Р±РѕР¶Рµ, Рё РєСѓРґР° Р¶Рµ РѕРЅР° РїРѕРґРµРІР°Р»Р°СЃСЊ?!
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Library()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Library_15_00"); //...библиотеку?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Library_05_01"); //Die Bibliothek ist am Ende des Sдulenganges, direkt gegenьber der Kirche.
-	AI_Output (self, other, "DIA_Parlan_Add_05_02"); //Библиотека находится в конце колоннады слева, прямо напротив церкви.
+	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Library_15_00"); //...Р±РёР±Р»РёРѕС‚РµРєСѓ?
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Library_05_01"); //Die Bibliothek ist am Ende des SРґulenganges, direkt gegenСЊber der Kirche.
+	AI_Output (self, other, "DIA_Parlan_Add_05_02"); //Р‘РёР±Р»РёРѕС‚РµРєР° РЅР°С…РѕРґРёС‚СЃСЏ РІ РєРѕРЅС†Рµ РєРѕР»РѕРЅРЅР°РґС‹ СЃР»РµРІР°, РїСЂСЏРјРѕ РЅР°РїСЂРѕС‚РёРІ С†РµСЂРєРІРё.
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Chapel()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Chapel_15_00"); //...часовню?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Chapel_05_01"); //Wenn du das Kloster betrittst, findest du die Kapelle auf der halben Hцhe des linken Sдulenganges.
-	AI_Output (self, other, "DIA_Parlan_Add_05_03"); //Часовня находится в комнате посередине левой колоннады. Там паладины молятся Инносу.
+	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Chapel_15_00"); //...С‡Р°СЃРѕРІРЅСЋ?
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Chapel_05_01"); //Wenn du das Kloster betrittst, findest du die Kapelle auf der halben HС†he des linken SРґulenganges.
+	AI_Output (self, other, "DIA_Parlan_Add_05_03"); //Р§Р°СЃРѕРІРЅСЏ РЅР°С…РѕРґРёС‚СЃСЏ РІ РєРѕРјРЅР°С‚Рµ РїРѕСЃРµСЂРµРґРёРЅРµ Р»РµРІРѕР№ РєРѕР»РѕРЅРЅР°РґС‹. РўР°Рј РїР°Р»Р°РґРёРЅС‹ РјРѕР»СЏС‚СЃСЏ РРЅРЅРѕСЃСѓ.
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Cellar()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Cellar_15_00"); //...подвал?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Cellar_05_01"); //Der Eingang in die Katakomben ist direkt gegenьber der Kapelle auf halber Hцhe des Sдulenganges.
-	AI_Output (self, other, "DIA_Parlan_Add_05_04"); //Вход в подвал находится посередине колоннады справа.
+	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Cellar_15_00"); //...РїРѕРґРІР°Р»?
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Cellar_05_01"); //Der Eingang in die Katakomben ist direkt gegenСЊber der Kapelle auf halber HС†he des SРґulenganges.
+	AI_Output (self, other, "DIA_Parlan_Add_05_04"); //Р’С…РѕРґ РІ РїРѕРґРІР°Р» РЅР°С…РѕРґРёС‚СЃСЏ РїРѕСЃРµСЂРµРґРёРЅРµ РєРѕР»РѕРЅРЅР°РґС‹ СЃРїСЂР°РІР°.
 };
 
 

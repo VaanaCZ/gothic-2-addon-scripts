@@ -39,17 +39,17 @@ FUNC INT DIA_Addon_10023_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10023_Wache_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_00");//Эй, куда ты идешь? Ты хочешь попасть в тот проход?
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_01");//Ну да, а почему бы нет?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_02");//Там еще группа рабов. Я не возражаю, чтобы ты туда шел, но не надо их избивать до такого состояния, чтобы они не могли работать. 
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_03");//В конце концов, мы не хотим, чтобы они просто так сидели. Они должны добывать золото.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_04");//Ясно. А кто это приказал?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_05");//Это прямой приказ Бладвина.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_06");//А я думал, здесь командует Ворон.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_07");//Верно - но рабы ему больше не нужны, он отдал их Бладвину.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_00");//Р­Р№, РєСѓРґР° С‚С‹ РёРґРµС€СЊ? РўС‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ С‚РѕС‚ РїСЂРѕС…РѕРґ?
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_01");//РќСѓ РґР°, Р° РїРѕС‡РµРјСѓ Р±С‹ РЅРµС‚?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_02");//РўР°Рј РµС‰Рµ РіСЂСѓРїРїР° СЂР°Р±РѕРІ. РЇ РЅРµ РІРѕР·СЂР°Р¶Р°СЋ, С‡С‚РѕР±С‹ С‚С‹ С‚СѓРґР° С€РµР», РЅРѕ РЅРµ РЅР°РґРѕ РёС… РёР·Р±РёРІР°С‚СЊ РґРѕ С‚Р°РєРѕРіРѕ СЃРѕСЃС‚РѕСЏРЅРёСЏ, С‡С‚РѕР±С‹ РѕРЅРё РЅРµ РјРѕРіР»Рё СЂР°Р±РѕС‚Р°С‚СЊ. 
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_03");//Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РјС‹ РЅРµ С…РѕС‚РёРј, С‡С‚РѕР±С‹ РѕРЅРё РїСЂРѕСЃС‚Рѕ С‚Р°Рє СЃРёРґРµР»Рё. РћРЅРё РґРѕР»Р¶РЅС‹ РґРѕР±С‹РІР°С‚СЊ Р·РѕР»РѕС‚Рѕ.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_04");//РЇСЃРЅРѕ. Рђ РєС‚Рѕ СЌС‚Рѕ РїСЂРёРєР°Р·Р°Р»?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_05");//Р­С‚Рѕ РїСЂСЏРјРѕР№ РїСЂРёРєР°Р· Р‘Р»Р°РґРІРёРЅР°.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_06");//Рђ СЏ РґСѓРјР°Р», Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚ Р’РѕСЂРѕРЅ.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_07");//Р’РµСЂРЅРѕ - РЅРѕ СЂР°Р±С‹ РµРјСѓ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РЅС‹, РѕРЅ РѕС‚РґР°Р» РёС… Р‘Р»Р°РґРІРёРЅСѓ.
 	
 	Pardos.attribute[ATR_HITPOINTS] 		= 70;
-	B_LogEntry (Topic_Addon_Sklaven,"Ворону больше не нужны рабы. Теперь они принадлежат Бладвину."); 
+	B_LogEntry (Topic_Addon_Sklaven,"Р’РѕСЂРѕРЅСѓ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РЅС‹ СЂР°Р±С‹. РўРµРїРµСЂСЊ РѕРЅРё РїСЂРёРЅР°РґР»РµР¶Р°С‚ Р‘Р»Р°РґРІРёРЅСѓ."); 
 };
 //---------------------------------------------------------------------
 //	Info go
@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_10023_Wache_go   (C_INFO)
 	condition   = DIA_Addon_10023_Wache_go_Condition;
 	information = DIA_Addon_10023_Wache_go_Info;
 	permanent   = TRUE;
-	description = "Отпусти их!";
+	description = "РћС‚РїСѓСЃС‚Рё РёС…!";
 };
 FUNC INT DIA_Addon_10023_Wache_go_Condition()
 {	
@@ -71,32 +71,32 @@ FUNC INT DIA_Addon_10023_Wache_go_Condition()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_Info()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_15_00");//Отпусти их!
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_15_00");//РћС‚РїСѓСЃС‚Рё РёС…!
 	
 	if (PrisonGuard_Rules == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_01");//Слушай. Здесь командует Бладвин. Рабы принадлежат ему, так что только у него есть право отпустить их.
-		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_02");//Ну, еще у Торуса есть возможность замолвить словечко. А ты?
+		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_01");//РЎР»СѓС€Р°Р№. Р—РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚ Р‘Р»Р°РґРІРёРЅ. Р Р°Р±С‹ РїСЂРёРЅР°РґР»РµР¶Р°С‚ РµРјСѓ, С‚Р°Рє С‡С‚Рѕ С‚РѕР»СЊРєРѕ Сѓ РЅРµРіРѕ РµСЃС‚СЊ РїСЂР°РІРѕ РѕС‚РїСѓСЃС‚РёС‚СЊ РёС….
+		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_02");//РќСѓ, РµС‰Рµ Сѓ РўРѕСЂСѓСЃР° РµСЃС‚СЊ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°РјРѕР»РІРёС‚СЊ СЃР»РѕРІРµС‡РєРѕ. Рђ С‚С‹?
 		PrisonGuard_Rules = TRUE;
-		B_LogEntry (Topic_Addon_Sklaven,"Право освободить рабов есть только у Бладвина и Торуса.");
+		B_LogEntry (Topic_Addon_Sklaven,"РџСЂР°РІРѕ РѕСЃРІРѕР±РѕРґРёС‚СЊ СЂР°Р±РѕРІ РµСЃС‚СЊ С‚РѕР»СЊРєРѕ Сѓ Р‘Р»Р°РґРІРёРЅР° Рё РўРѕСЂСѓСЃР°.");
 	};
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_03");//У тебя есть какое-то право на это?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_03");//РЈ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєРѕРµ-С‚Рѕ РїСЂР°РІРѕ РЅР° СЌС‚Рѕ?
 	
 	Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 	Info_AddChoice (DIA_Addon_10023_Wache_go,DIALOG_BACK,DIA_Addon_10023_Wache_go_BACK);
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Thorus_Answer)
 	{
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"Я поговорил с Торусом.",DIA_Addon_10023_Wache_go_Thorus);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РўРѕСЂСѓСЃРѕРј.",DIA_Addon_10023_Wache_go_Thorus);
 	}
 	else if Npc_IsDead (Bloodwyn)
 	&& (Npc_HasItems (other,ItMi_Addon_Bloodwyn_Kopf) >=1)
 	{
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"(показать голову Бладвина)",DIA_Addon_10023_Wache_go_Blood);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"(РїРѕРєР°Р·Р°С‚СЊ РіРѕР»РѕРІСѓ Р‘Р»Р°РґРІРёРЅР°)",DIA_Addon_10023_Wache_go_Blood);
 	}
 	else
 	{
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"Я решаю, КТО идет в шахту.",DIA_Addon_10023_Wache_go_WER);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"РЇ СЂРµС€Р°СЋ, РљРўРћ РёРґРµС‚ РІ С€Р°С…С‚Сѓ.",DIA_Addon_10023_Wache_go_WER);
 	};
 };	
 FUNC VOID DIA_Addon_10023_Wache_go_BACK()
@@ -105,8 +105,8 @@ FUNC VOID DIA_Addon_10023_Wache_go_BACK()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_WER()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_WER_15_00");//Я решаю, КТО идет в шахту.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_WER_11_01");//Ты делаешь работу Эстебана. Таким образом, у тебя нет НИКАКОГО права вмешиваться. Свободен.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_WER_15_00");//РЇ СЂРµС€Р°СЋ, РљРўРћ РёРґРµС‚ РІ С€Р°С…С‚Сѓ.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_WER_11_01");//РўС‹ РґРµР»Р°РµС€СЊ СЂР°Р±РѕС‚Сѓ Р­СЃС‚РµР±Р°РЅР°. РўР°РєРёРј РѕР±СЂР°Р·РѕРј, Сѓ С‚РµР±СЏ РЅРµС‚ РќРРљРђРљРћР“Рћ РїСЂР°РІР° РІРјРµС€РёРІР°С‚СЊСЃСЏ. РЎРІРѕР±РѕРґРµРЅ.
 	Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 };
 //----------------------------------------
@@ -115,29 +115,29 @@ var int Wache_einmal;
 FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 {
 	
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_00");//Вот. Этого достаточно?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_01");//(резко) Убери. Я даже видеть этого не хочу.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_02");//Лучше бы тебе отпустить рабов СЕЙЧАС ЖЕ.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");//Погоди минутку. Бладвин - не единственный, кто здесь решает. Пока у меня не будет приказа от Торуса, я никого не отпущу.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_00");//Р’РѕС‚. Р­С‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_01");//(СЂРµР·РєРѕ) РЈР±РµСЂРё. РЇ РґР°Р¶Рµ РІРёРґРµС‚СЊ СЌС‚РѕРіРѕ РЅРµ С…РѕС‡Сѓ.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_02");//Р›СѓС‡С€Рµ Р±С‹ С‚РµР±Рµ РѕС‚РїСѓСЃС‚РёС‚СЊ СЂР°Р±РѕРІ РЎР•Р™Р§РђРЎ Р–Р•.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");//РџРѕРіРѕРґРё РјРёРЅСѓС‚РєСѓ. Р‘Р»Р°РґРІРёРЅ - РЅРµ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ Р·РґРµСЃСЊ СЂРµС€Р°РµС‚. РџРѕРєР° Сѓ РјРµРЅСЏ РЅРµ Р±СѓРґРµС‚ РїСЂРёРєР°Р·Р° РѕС‚ РўРѕСЂСѓСЃР°, СЏ РЅРёРєРѕРіРѕ РЅРµ РѕС‚РїСѓС‰Сѓ.
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Thorus_Answer)
 	{
 		Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"Я поговорил с Торусом.",DIA_Addon_10023_Wache_go_Thorus);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РўРѕСЂСѓСЃРѕРј.",DIA_Addon_10023_Wache_go_Thorus);
 	}
 	else
 	{
 		if (Wache_einmal == FALSE)
 		{
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_04");//Но ты только что сказал, что рабы принадлежат Бладвину.
-			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_05");//Да, но я также сказал, что никого не отпущу без приказа от Торуса.
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_06");//Ты из тех ребят, кто не может даже помочиться без приказа?
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_04");//РќРѕ С‚С‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЂР°Р±С‹ РїСЂРёРЅР°РґР»РµР¶Р°С‚ Р‘Р»Р°РґРІРёРЅСѓ.
+			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_05");//Р”Р°, РЅРѕ СЏ С‚Р°РєР¶Рµ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅРёРєРѕРіРѕ РЅРµ РѕС‚РїСѓС‰Сѓ Р±РµР· РїСЂРёРєР°Р·Р° РѕС‚ РўРѕСЂСѓСЃР°.
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_06");//РўС‹ РёР· С‚РµС… СЂРµР±СЏС‚, РєС‚Рѕ РЅРµ РјРѕР¶РµС‚ РґР°Р¶Рµ РїРѕРјРѕС‡РёС‚СЊСЃСЏ Р±РµР· РїСЂРёРєР°Р·Р°?
 			Wache_einmal = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_07");//Я же тебе сказал...
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_08");//...хватит, дальше я знаю.
+			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_07");//РЇ Р¶Рµ С‚РµР±Рµ СЃРєР°Р·Р°Р»...
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_08");//...С…РІР°С‚РёС‚, РґР°Р»СЊС€Рµ СЏ Р·РЅР°СЋ.
 		};
 		Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 	}; 
@@ -146,10 +146,10 @@ FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_Thorus()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00");//Я поговорил с Торусом. Он приказал отпустить рабов.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01");//Ну, если Торус приказал. Но я спрашиваю себя, зачем ему это могло понадобиться...
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02");//...кажется, тебе не платят за то, чтобы ты задавал вопросы.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03");//Ладно, ладно. Я теперь здесь, как понятно, не нужен, так что я пойду съем кусочек мяса.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00");//РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РўРѕСЂСѓСЃРѕРј. РћРЅ РїСЂРёРєР°Р·Р°Р» РѕС‚РїСѓСЃС‚РёС‚СЊ СЂР°Р±РѕРІ.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01");//РќСѓ, РµСЃР»Рё РўРѕСЂСѓСЃ РїСЂРёРєР°Р·Р°Р». РќРѕ СЏ СЃРїСЂР°С€РёРІР°СЋ СЃРµР±СЏ, Р·Р°С‡РµРј РµРјСѓ СЌС‚Рѕ РјРѕРіР»Рѕ РїРѕРЅР°РґРѕР±РёС‚СЊСЃСЏ...
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02");//...РєР°Р¶РµС‚СЃСЏ, С‚РµР±Рµ РЅРµ РїР»Р°С‚СЏС‚ Р·Р° С‚Рѕ, С‡С‚РѕР±С‹ С‚С‹ Р·Р°РґР°РІР°Р» РІРѕРїСЂРѕСЃС‹.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03");//Р›Р°РґРЅРѕ, Р»Р°РґРЅРѕ. РЇ С‚РµРїРµСЂСЊ Р·РґРµСЃСЊ, РєР°Рє РїРѕРЅСЏС‚РЅРѕ, РЅРµ РЅСѓР¶РµРЅ, С‚Р°Рє С‡С‚Рѕ СЏ РїРѕР№РґСѓ СЃСЉРµРј РєСѓСЃРѕС‡РµРє РјСЏСЃР°.
 	
 	Ready_Togo = TRUE;
 	AI_StopProcessInfos (self);

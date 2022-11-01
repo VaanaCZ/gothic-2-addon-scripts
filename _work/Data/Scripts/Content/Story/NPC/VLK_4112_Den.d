@@ -2,7 +2,7 @@
 instance VLK_4112_Den (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Δεν"; 
+	name 		= "Π”ΠµΠ½"; 
 	guild 		= GIL_MIL;
 	id 			= 4112;
 	voice 		= 5;

@@ -2,7 +2,7 @@
 instance VLK_471_Edda (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "›‰‰‡";	
+	name 		= "–≠–¥–¥–∞";	
 	guild 		= GIL_VLK;
 	id 			= 471;
 	voice 		= 17;

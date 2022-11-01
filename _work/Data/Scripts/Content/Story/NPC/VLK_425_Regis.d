@@ -2,7 +2,7 @@
 instance VLK_425_Regis (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "–Â„ËÒ"; 
+	name 		= "–†–µ–≥–∏—Å"; 
 	guild 		= GIL_VLK;
 	id 			= 425;
 	voice 		= 13;

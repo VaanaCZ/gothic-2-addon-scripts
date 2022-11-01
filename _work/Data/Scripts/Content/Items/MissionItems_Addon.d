@@ -4,7 +4,7 @@
 //****************************************************************************
 INSTANCE ItWr_SaturasFirstMessage_Addon_Sealed	(C_Item)
 {
-	name 				=	"Запечатанное послание";
+	name 				=	"Р—Р°РїРµС‡Р°С‚Р°РЅРЅРѕРµ РїРѕСЃР»Р°РЅРёРµ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -16,7 +16,7 @@ INSTANCE ItWr_SaturasFirstMessage_Addon_Sealed	(C_Item)
 	on_state[0]			=   Use_SaturasFirstMessage_Sealed;
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
-	TEXT[2]				=   "Это письмо было тщательно запечатано.";
+	TEXT[2]				=   "Р­С‚Рѕ РїРёСЃСЊРјРѕ Р±С‹Р»Рѕ С‚С‰Р°С‚РµР»СЊРЅРѕ Р·Р°РїРµС‡Р°С‚Р°РЅРѕ.";
 
 };
 var int Use_SaturasFirstMessage_OneTime;
@@ -28,18 +28,18 @@ func void Use_SaturasFirstMessage ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 	); 
 					Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
-					Doc_PrintLine	( nDocID,  0, "Дорогой Ватрас,"					);
-					Doc_PrintLines	( nDocID,  0, "Мы нашли портал. Ты был прав."					);
-					Doc_PrintLines	( nDocID,  0, "Похоже, что это действительно были последователи Аданоса. Я прошу тебя проверить это еще раз, пользуясь моими записями."					);
-					Doc_PrintLines	( nDocID,  0, "Эти любопытные каменные создания не появлялись уже несколько дней."					);
-					Doc_PrintLines	( nDocID,  0, "Однако земля продолжает трястись безо всякой видимой причины."					);
-					Doc_PrintLines	( nDocID,  0, "Полагаю, что наши исследования вскорости принесут новые результаты."					);
-					Doc_PrintLines	( nDocID,  0, "Найденный нами орнамент имеет гораздо большее значение, чем мы думали. Похоже, что это артефакт-ключ. Увы, у нас только часть его. Мы должны заняться им."					);
-					Doc_PrintLines	( nDocID,  0, "Отправь одного из членов Кольца Воды, чтобы он вернул нам орнамент. Если возможно, не посылай Кавалорна."					);
-					Doc_PrintLines	( nDocID,  0, "Он и так достаточно потрудился, доставляя тебе это письмо. "					);
-					Doc_PrintLines	( nDocID,  0, "Надеюсь, то, что мы делаем, - правильно."					);
+					Doc_PrintLine	( nDocID,  0, "Р”РѕСЂРѕРіРѕР№ Р’Р°С‚СЂР°СЃ,"					);
+					Doc_PrintLines	( nDocID,  0, "РњС‹ РЅР°С€Р»Рё РїРѕСЂС‚Р°Р». РўС‹ Р±С‹Р» РїСЂР°РІ."					);
+					Doc_PrintLines	( nDocID,  0, "РџРѕС…РѕР¶Рµ, С‡С‚Рѕ СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р±С‹Р»Рё РїРѕСЃР»РµРґРѕРІР°С‚РµР»Рё РђРґР°РЅРѕСЃР°. РЇ РїСЂРѕС€Сѓ С‚РµР±СЏ РїСЂРѕРІРµСЂРёС‚СЊ СЌС‚Рѕ РµС‰Рµ СЂР°Р·, РїРѕР»СЊР·СѓСЏСЃСЊ РјРѕРёРјРё Р·Р°РїРёСЃСЏРјРё."					);
+					Doc_PrintLines	( nDocID,  0, "Р­С‚Рё Р»СЋР±РѕРїС‹С‚РЅС‹Рµ РєР°РјРµРЅРЅС‹Рµ СЃРѕР·РґР°РЅРёСЏ РЅРµ РїРѕСЏРІР»СЏР»РёСЃСЊ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№."					);
+					Doc_PrintLines	( nDocID,  0, "РћРґРЅР°РєРѕ Р·РµРјР»СЏ РїСЂРѕРґРѕР»Р¶Р°РµС‚ С‚СЂСЏСЃС‚РёСЃСЊ Р±РµР·Рѕ РІСЃСЏРєРѕР№ РІРёРґРёРјРѕР№ РїСЂРёС‡РёРЅС‹."					);
+					Doc_PrintLines	( nDocID,  0, "РџРѕР»Р°РіР°СЋ, С‡С‚Рѕ РЅР°С€Рё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ РІСЃРєРѕСЂРѕСЃС‚Рё РїСЂРёРЅРµСЃСѓС‚ РЅРѕРІС‹Рµ СЂРµР·СѓР»СЊС‚Р°С‚С‹."					);
+					Doc_PrintLines	( nDocID,  0, "РќР°Р№РґРµРЅРЅС‹Р№ РЅР°РјРё РѕСЂРЅР°РјРµРЅС‚ РёРјРµРµС‚ РіРѕСЂР°Р·РґРѕ Р±РѕР»СЊС€РµРµ Р·РЅР°С‡РµРЅРёРµ, С‡РµРј РјС‹ РґСѓРјР°Р»Рё. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ СЌС‚Рѕ Р°СЂС‚РµС„Р°РєС‚-РєР»СЋС‡. РЈРІС‹, Сѓ РЅР°СЃ С‚РѕР»СЊРєРѕ С‡Р°СЃС‚СЊ РµРіРѕ. РњС‹ РґРѕР»Р¶РЅС‹ Р·Р°РЅСЏС‚СЊСЃСЏ РёРј."					);
+					Doc_PrintLines	( nDocID,  0, "РћС‚РїСЂР°РІСЊ РѕРґРЅРѕРіРѕ РёР· С‡Р»РµРЅРѕРІ РљРѕР»СЊС†Р° Р’РѕРґС‹, С‡С‚РѕР±С‹ РѕРЅ РІРµСЂРЅСѓР» РЅР°Рј РѕСЂРЅР°РјРµРЅС‚. Р•СЃР»Рё РІРѕР·РјРѕР¶РЅРѕ, РЅРµ РїРѕСЃС‹Р»Р°Р№ РљР°РІР°Р»РѕСЂРЅР°."					);
+					Doc_PrintLines	( nDocID,  0, "РћРЅ Рё С‚Р°Рє РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїРѕС‚СЂСѓРґРёР»СЃСЏ, РґРѕСЃС‚Р°РІР»СЏСЏ С‚РµР±Рµ СЌС‚Рѕ РїРёСЃСЊРјРѕ. "					);
+					Doc_PrintLines	( nDocID,  0, "РќР°РґРµСЋСЃСЊ, С‚Рѕ, С‡С‚Рѕ РјС‹ РґРµР»Р°РµРј, - РїСЂР°РІРёР»СЊРЅРѕ."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Сатурас"					);
+					Doc_PrintLine	( nDocID,  0, "РЎР°С‚СѓСЂР°СЃ"					);
 					Doc_Show		( nDocID );
 		
 		if (Use_SaturasFirstMessage_OneTime == FALSE)
@@ -47,7 +47,7 @@ func void Use_SaturasFirstMessage ()
 		{
 			Log_CreateTopic (TOPIC_Addon_KDW, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Addon_KDW, LOG_RUNNING);
-			B_LogEntry (TOPIC_Addon_KDW,"Я забрал у бандита письмо, которое Кавалорн должен был доставить магу воды Ватрасу. Теперь это моя задача."); 
+			B_LogEntry (TOPIC_Addon_KDW,"РЇ Р·Р°Р±СЂР°Р» Сѓ Р±Р°РЅРґРёС‚Р° РїРёСЃСЊРјРѕ, РєРѕС‚РѕСЂРѕРµ РљР°РІР°Р»РѕСЂРЅ РґРѕР»Р¶РµРЅ Р±С‹Р» РґРѕСЃС‚Р°РІРёС‚СЊ РјР°РіСѓ РІРѕРґС‹ Р’Р°С‚СЂР°СЃСѓ. РўРµРїРµСЂСЊ СЌС‚Рѕ РјРѕСЏ Р·Р°РґР°С‡Р°."); 
 			Use_SaturasFirstMessage_OneTime = TRUE;
 		};
 
@@ -55,14 +55,14 @@ func void Use_SaturasFirstMessage ()
 		{
 			Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-			Log_AddEntry (TOPIC_Addon_RingOfWater,"Существует какое-то сообщество, которое называется 'Кольцо Воды'. Похоже, что управляют им маги воды."); 
+			Log_AddEntry (TOPIC_Addon_RingOfWater,"РЎСѓС‰РµСЃС‚РІСѓРµС‚ РєР°РєРѕРµ-С‚Рѕ СЃРѕРѕР±С‰РµСЃС‚РІРѕ, РєРѕС‚РѕСЂРѕРµ РЅР°Р·С‹РІР°РµС‚СЃСЏ 'РљРѕР»СЊС†Рѕ Р’РѕРґС‹'. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ СѓРїСЂР°РІР»СЏСЋС‚ РёРј РјР°РіРё РІРѕРґС‹."); 
 		};
 
 		if (SC_IsRanger == FALSE)
 		{
 			Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-			Log_AddEntry (TOPIC_Addon_RingOfWater,"Кавалорн принадлежит к Кольцу Воды."); 
+			Log_AddEntry (TOPIC_Addon_RingOfWater,"РљР°РІР°Р»РѕСЂРЅ РїСЂРёРЅР°РґР»РµР¶РёС‚ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹."); 
 		};
 	
 		SC_KnowsRanger = TRUE;
@@ -76,12 +76,12 @@ func void Use_SaturasFirstMessage_Sealed ()
 
 //****************************************************************************
 //				Cavalorn's Brief an Vatras von Saturas
-//				Das Siegel wurde geцffnet		
+//				Das Siegel wurde geС†ffnet		
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItWr_SaturasFirstMessage_Addon	(C_Item)
 {
-	name 				=	"Распечатанное письмо";
+	name 				=	"Р Р°СЃРїРµС‡Р°С‚Р°РЅРЅРѕРµ РїРёСЃСЊРјРѕ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -93,18 +93,18 @@ INSTANCE ItWr_SaturasFirstMessage_Addon	(C_Item)
 	on_state[0]			=   Use_SaturasFirstMessage;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[2]				=   "Письмо Сатураса Ватрасу";
+	TEXT[2]				=   "РџРёСЃСЊРјРѕ РЎР°С‚СѓСЂР°СЃР° Р’Р°С‚СЂР°СЃСѓ";
 };
 
 
 //****************************************************************************
-//				Portalschlьsselbruchstьck
+//				PortalschlСЊsselbruchstСЊck
 //			---------------------------------------------
 //****************************************************************************
 
 INSTANCE  ItMi_Ornament_Addon (C_ITEM)
 {
-	name 				=	"Орнамент";
+	name 				=	"РћСЂРЅР°РјРµРЅС‚";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION|ITEM_MULTI;
@@ -116,14 +116,14 @@ INSTANCE  ItMi_Ornament_Addon (C_ITEM)
 
 	description			= 	name;
 
-	TEXT	[0]			=	"Фрагмент большого, богато украшенного кольца";
+	TEXT	[0]			=	"Р¤СЂР°РіРјРµРЅС‚ Р±РѕР»СЊС€РѕРіРѕ, Р±РѕРіР°С‚Рѕ СѓРєСЂР°С€РµРЅРЅРѕРіРѕ РєРѕР»СЊС†Р°";
 
 	INV_ZBIAS			= 	INVCAM_ENTF_MISC5_STANDARD;
 };
 
 INSTANCE  ItMi_Ornament_Addon_Vatras (C_ITEM) //Joly:  gibt Vatras dem SC um ihn zu Lares zu bringen. Nur hiermit wird Saturas zufrieden gestellt -> erst dann Nefarius Auftrag!!!!!!!!!
 {
-	name 				=	"Орнамент";
+	name 				=	"РћСЂРЅР°РјРµРЅС‚";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION|ITEM_MULTI;
@@ -135,7 +135,7 @@ INSTANCE  ItMi_Ornament_Addon_Vatras (C_ITEM) //Joly:  gibt Vatras dem SC um ihn
 
 	description			= 	name;
 
-	TEXT	[0]			=	"Фрагмент большого, богато украшенного кольца";
+	TEXT	[0]			=	"Р¤СЂР°РіРјРµРЅС‚ Р±РѕР»СЊС€РѕРіРѕ, Р±РѕРіР°С‚Рѕ СѓРєСЂР°С€РµРЅРЅРѕРіРѕ РєРѕР»СЊС†Р°";
 
 	INV_ZBIAS			= 	INVCAM_ENTF_MISC5_STANDARD;
 };
@@ -148,7 +148,7 @@ INSTANCE  ItMi_Ornament_Addon_Vatras (C_ITEM) //Joly:  gibt Vatras dem SC um ihn
 
 instance ItWr_Map_NewWorld_Ornaments_Addon (C_Item)
 {
-	name 		= "Карта Нефариуса";  // 
+	name 		= "РљР°СЂС‚Р° РќРµС„Р°СЂРёСѓСЃР°";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -162,8 +162,8 @@ instance ItWr_Map_NewWorld_Ornaments_Addon (C_Item)
 	on_state[0]	= Use_Map_NewWorld_Ornaments;
 
 	description	= name;
-	TEXT[0]		= "На этой карте отмечены места, где, как полагает";
-	TEXT[1]		= "Нефариус, можно найти недостающие орнаменты.";
+	TEXT[0]		= "РќР° СЌС‚РѕР№ РєР°СЂС‚Рµ РѕС‚РјРµС‡РµРЅС‹ РјРµСЃС‚Р°, РіРґРµ, РєР°Рє РїРѕР»Р°РіР°РµС‚";
+	TEXT[1]		= "РќРµС„Р°СЂРёСѓСЃ, РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РЅРµРґРѕСЃС‚Р°СЋС‰РёРµ РѕСЂРЅР°РјРµРЅС‚С‹.";
 	TEXT[2]		= "";
 	TEXT[5]		= NAME_Value;
 	COUNT[5]	= value;
@@ -194,7 +194,7 @@ instance ItWr_Map_NewWorld_Ornaments_Addon (C_Item)
 
 instance ItWr_Map_NewWorld_Dexter (C_Item)
 {
-	name 		= "Карта Хориниса";  // 
+	name 		= "РљР°СЂС‚Р° РҐРѕСЂРёРЅРёСЃР°";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -208,9 +208,9 @@ instance ItWr_Map_NewWorld_Dexter (C_Item)
 	on_state[0]	= Use_Map_NewWorld_Dexter;
 
 	description	= name;
-	TEXT[0]		= "Скип пометил место,";
-	TEXT[1]		= "где я могу найти предводителя";
-	TEXT[2]		= "бандитов Декстера.";
+	TEXT[0]		= "РЎРєРёРї РїРѕРјРµС‚РёР» РјРµСЃС‚Рѕ,";
+	TEXT[1]		= "РіРґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РїСЂРµРґРІРѕРґРёС‚РµР»СЏ";
+	TEXT[2]		= "Р±Р°РЅРґРёС‚РѕРІ Р”РµРєСЃС‚РµСЂР°.";
 	TEXT[5]		= NAME_Value;
 	COUNT[5]	= value;
 };
@@ -239,7 +239,7 @@ instance ItWr_Map_NewWorld_Dexter (C_Item)
 
 PROTOTYPE Rangerring_Prototype (C_ITEM)
 {
-	name 					=	"Аквамариновое кольцо";
+	name 					=	"РђРєРІР°РјР°СЂРёРЅРѕРІРѕРµ РєРѕР»СЊС†Рѕ";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_RING|ITEM_MISSION; //Joly:kein Multiitem. Die ringe sind individuell
@@ -253,7 +253,7 @@ PROTOTYPE Rangerring_Prototype (C_ITEM)
 	on_equip				=	Equip_ItRi_Ranger_Addon;
 	on_unequip				=	UnEquip_ItRi_Ranger_Addon;
 
-	description				= "Опознавательный знак членов Кольца Воды";
+	description				= "РћРїРѕР·РЅР°РІР°С‚РµР»СЊРЅС‹Р№ Р·РЅР°Рє С‡Р»РµРЅРѕРІ РљРѕР»СЊС†Р° Р’РѕРґС‹";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -296,18 +296,18 @@ FUNC VOID UnEquip_ItRi_Ranger_Addon ()
 //Lares Ring
 INSTANCE ItRi_Ranger_Lares_Addon (Rangerring_Prototype)
 {
-	TEXT[1]					= "Это кольцо принадлежит Ларесу.";
+	TEXT[1]					= "Р­С‚Рѕ РєРѕР»СЊС†Рѕ РїСЂРёРЅР°РґР»РµР¶РёС‚ Р›Р°СЂРµСЃСѓ.";
 };
 
 //PCs Ring
 INSTANCE ItRi_Ranger_Addon (Rangerring_Prototype)
 {
-	TEXT[1]					= "Это кольцо принадлежит  мне.";
+	TEXT[1]					= "Р­С‚Рѕ РєРѕР»СЊС†Рѕ РїСЂРёРЅР°РґР»РµР¶РёС‚  РјРЅРµ.";
 };
 //Lance Ring
 INSTANCE ItRi_LanceRing (Rangerring_Prototype)
 {
-	TEXT[1]					= "Это кольцо принадлежит Лансу.";
+	TEXT[1]					= "Р­С‚Рѕ РєРѕР»СЊС†Рѕ РїСЂРёРЅР°РґР»РµР¶РёС‚ Р›Р°РЅСЃСѓ.";
 };
 
 
@@ -319,7 +319,7 @@ INSTANCE ItRi_LanceRing (Rangerring_Prototype)
 
 INSTANCE ItMi_PortalRing_Addon (C_Item)
 {
-	name 				=	"Украшенное кольцо";
+	name 				=	"РЈРєСЂР°С€РµРЅРЅРѕРµ РєРѕР»СЊС†Рѕ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -329,17 +329,17 @@ INSTANCE ItMi_PortalRing_Addon (C_Item)
 	visual 				=	"ItMi_PortalRing_01.3DS"; 
 	material 			=	MAT_STONE;
 
-	description			= 	"Это кольцо открывает портал.";
+	description			= 	"Р­С‚Рѕ РєРѕР»СЊС†Рѕ РѕС‚РєСЂС‹РІР°РµС‚ РїРѕСЂС‚Р°Р».";
 	INV_ZBIAS			= 	INVCAM_ENTF_MISC3_STANDARD;
 };
 
 //**********************************************************************************
-//	Empfehlungsschreiben fьr Andre, Miliz zu werden (von Martin)
+//	Empfehlungsschreiben fСЊr Andre, Miliz zu werden (von Martin)
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_Martin_MilizEmpfehlung_Addon		(C_Item)
 {
-	name 				=	"Рекомендательное письмо Мартина";
+	name 				=	"Р РµРєРѕРјРµРЅРґР°С‚РµР»СЊРЅРѕРµ РїРёСЃСЊРјРѕ РњР°СЂС‚РёРЅР°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -350,10 +350,10 @@ INSTANCE ItWr_Martin_MilizEmpfehlung_Addon		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_MartinMilizEmpfehlung_Addon;
 	scemeName			=	"MAP";
-	description			=  	"Рекомендательное письмо для лорда Андре";
+	description			=  	"Р РµРєРѕРјРµРЅРґР°С‚РµР»СЊРЅРѕРµ РїРёСЃСЊРјРѕ РґР»СЏ Р»РѕСЂРґР° РђРЅРґСЂРµ";
 	
-	TEXT[2]				= 	"Это письмо поможет мне";
-	TEXT[3]				= 	"присоединиться к ополчению.";
+	TEXT[2]				= 	"Р­С‚Рѕ РїРёСЃСЊРјРѕ РїРѕРјРѕР¶РµС‚ РјРЅРµ";
+	TEXT[3]				= 	"РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РѕРїРѕР»С‡РµРЅРёСЋ.";
 
 	
 };
@@ -370,14 +370,14 @@ func void Use_MartinMilizEmpfehlung_Addon ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "Уважаемый лорд Андре!"								);
+					Doc_PrintLines	(nDocID,  0, "РЈРІР°Р¶Р°РµРјС‹Р№ Р»РѕСЂРґ РђРЅРґСЂРµ!"								);
 					Doc_PrintLines	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "С этим письмом я отправляю вам нового рекрута для ополчения.");
-					Doc_PrintLines	(nDocID,  0, "Он уже помог мне в одном важном и непростом деле.");
-					Doc_PrintLines	(nDocID,  0, "Я уверен, что он достоин защищать короля и спокойствие граждан этого города.");
-					Doc_PrintLine	(nDocID,  0, "Иннос, храни короля!"							);
+					Doc_PrintLines	(nDocID,  0, "РЎ СЌС‚РёРј РїРёСЃСЊРјРѕРј СЏ РѕС‚РїСЂР°РІР»СЏСЋ РІР°Рј РЅРѕРІРѕРіРѕ СЂРµРєСЂСѓС‚Р° РґР»СЏ РѕРїРѕР»С‡РµРЅРёСЏ.");
+					Doc_PrintLines	(nDocID,  0, "РћРЅ СѓР¶Рµ РїРѕРјРѕРі РјРЅРµ РІ РѕРґРЅРѕРј РІР°Р¶РЅРѕРј Рё РЅРµРїСЂРѕСЃС‚РѕРј РґРµР»Рµ.");
+					Doc_PrintLines	(nDocID,  0, "РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РѕРЅ РґРѕСЃС‚РѕРёРЅ Р·Р°С‰РёС‰Р°С‚СЊ РєРѕСЂРѕР»СЏ Рё СЃРїРѕРєРѕР№СЃС‚РІРёРµ РіСЂР°Р¶РґР°РЅ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°.");
+					Doc_PrintLine	(nDocID,  0, "РРЅРЅРѕСЃ, С…СЂР°РЅРё РєРѕСЂРѕР»СЏ!"							);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "     Интендант Мартин"						);
+					Doc_PrintLine	(nDocID,  0, "     РРЅС‚РµРЅРґР°РЅС‚ РњР°СЂС‚РёРЅ"						);
 					Doc_Show		(nDocID);
 		
 };
@@ -389,7 +389,7 @@ func void Use_MartinMilizEmpfehlung_Addon ()
 
 INSTANCE ItWr_RavensKidnapperMission_Addon		(C_Item)
 {
-	name 				=	"Приказы";
+	name 				=	"РџСЂРёРєР°Р·С‹";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -402,8 +402,8 @@ INSTANCE ItWr_RavensKidnapperMission_Addon		(C_Item)
 	scemeName			=	"MAP";
 	description			=  	name;
 	
-	TEXT[2]				= 	"Я забрал это письмо у";
-	TEXT[3]				= 	"предводителя бандитов Декстера";
+	TEXT[2]				= 	"РЇ Р·Р°Р±СЂР°Р» СЌС‚Рѕ РїРёСЃСЊРјРѕ Сѓ";
+	TEXT[3]				= 	"РїСЂРµРґРІРѕРґРёС‚РµР»СЏ Р±Р°РЅРґРёС‚РѕРІ Р”РµРєСЃС‚РµСЂР°";
 
 	
 };
@@ -415,7 +415,7 @@ func void Use_RavensKidnapperMission_Addon ()
  	{
 	 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_WhoStolePeople,"Теперь у меня есть письменные доказательства того, что Ворон, бывший рудный барон, стоит за похищениями граждан Хориниса. Убежище Ворона находится где-то за горами на северо-востоке. Я должен показать этот документ Ватрасу."); 
+		B_LogEntry (TOPIC_Addon_WhoStolePeople,"РўРµРїРµСЂСЊ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїРёСЃСЊРјРµРЅРЅС‹Рµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° С‚РѕРіРѕ, С‡С‚Рѕ Р’РѕСЂРѕРЅ, Р±С‹РІС€РёР№ СЂСѓРґРЅС‹Р№ Р±Р°СЂРѕРЅ, СЃС‚РѕРёС‚ Р·Р° РїРѕС…РёС‰РµРЅРёСЏРјРё РіСЂР°Р¶РґР°РЅ РҐРѕСЂРёРЅРёСЃР°. РЈР±РµР¶РёС‰Рµ Р’РѕСЂРѕРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РіРґРµ-С‚Рѕ Р·Р° РіРѕСЂР°РјРё РЅР° СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕРєРµ. РЇ РґРѕР»Р¶РµРЅ РїРѕРєР°Р·Р°С‚СЊ СЌС‚РѕС‚ РґРѕРєСѓРјРµРЅС‚ Р’Р°С‚СЂР°СЃСѓ."); 
 		Use_RavensKidnapperMission_Addon_OneTime = TRUE;
 	};
 
@@ -428,27 +428,27 @@ func void Use_RavensKidnapperMission_Addon ()
 				Doc_SetPage		(nDocID,  0, "letters.TGA", 0);
 				Doc_SetFont		(nDocID, -1, FONT_Book);
 				Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
-				Doc_PrintLines	(nDocID,  0, "Декстер, ублюдок!");
+				Doc_PrintLines	(nDocID,  0, "Р”РµРєСЃС‚РµСЂ, СѓР±Р»СЋРґРѕРє!");
 				Doc_PrintLine	(nDocID,  0, ""														);
-				Doc_PrintLines	(nDocID,  0, "Когда я еще был рудным бароном, ты не был настолько ненадежен.");
-				Doc_PrintLines	(nDocID,  0, "Если ты в ближайшее время не пришлешь мне новую партию похищенных людей, то у нас начнутся серьезные проблемы с ребятами.");
-				Doc_PrintLines	(nDocID,  0, "Мне нужны новые рабы, или ребята взбунтуются. Думаю, мне не нужно объяснять тебе, что это означает.");
-				Doc_PrintLines	(nDocID,  0, "Уже скоро я попаду в храм. Меньше всего мне сейчас нужны эти проблемы.");
-				Doc_PrintLines	(nDocID,  0, "И еще одно:"								);
-				Doc_PrintLines	(nDocID,  0, "Рано или поздно нам придется найти путь через северо-восточные горы. Если мы не будем платить пиратам, они перестанут заниматься нашими перевозками.");
+				Doc_PrintLines	(nDocID,  0, "РљРѕРіРґР° СЏ РµС‰Рµ Р±С‹Р» СЂСѓРґРЅС‹Рј Р±Р°СЂРѕРЅРѕРј, С‚С‹ РЅРµ Р±С‹Р» РЅР°СЃС‚РѕР»СЊРєРѕ РЅРµРЅР°РґРµР¶РµРЅ.");
+				Doc_PrintLines	(nDocID,  0, "Р•СЃР»Рё С‚С‹ РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ РЅРµ РїСЂРёС€Р»РµС€СЊ РјРЅРµ РЅРѕРІСѓСЋ РїР°СЂС‚РёСЋ РїРѕС…РёС‰РµРЅРЅС‹С… Р»СЋРґРµР№, С‚Рѕ Сѓ РЅР°СЃ РЅР°С‡РЅСѓС‚СЃСЏ СЃРµСЂСЊРµР·РЅС‹Рµ РїСЂРѕР±Р»РµРјС‹ СЃ СЂРµР±СЏС‚Р°РјРё.");
+				Doc_PrintLines	(nDocID,  0, "РњРЅРµ РЅСѓР¶РЅС‹ РЅРѕРІС‹Рµ СЂР°Р±С‹, РёР»Рё СЂРµР±СЏС‚Р° РІР·Р±СѓРЅС‚СѓСЋС‚СЃСЏ. Р”СѓРјР°СЋ, РјРЅРµ РЅРµ РЅСѓР¶РЅРѕ РѕР±СЉСЏСЃРЅСЏС‚СЊ С‚РµР±Рµ, С‡С‚Рѕ СЌС‚Рѕ РѕР·РЅР°С‡Р°РµС‚.");
+				Doc_PrintLines	(nDocID,  0, "РЈР¶Рµ СЃРєРѕСЂРѕ СЏ РїРѕРїР°РґСѓ РІ С…СЂР°Рј. РњРµРЅСЊС€Рµ РІСЃРµРіРѕ РјРЅРµ СЃРµР№С‡Р°СЃ РЅСѓР¶РЅС‹ СЌС‚Рё РїСЂРѕР±Р»РµРјС‹.");
+				Doc_PrintLines	(nDocID,  0, "Р РµС‰Рµ РѕРґРЅРѕ:"								);
+				Doc_PrintLines	(nDocID,  0, "Р Р°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ РЅР°Рј РїСЂРёРґРµС‚СЃСЏ РЅР°Р№С‚Рё РїСѓС‚СЊ С‡РµСЂРµР· СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕС‡РЅС‹Рµ РіРѕСЂС‹. Р•СЃР»Рё РјС‹ РЅРµ Р±СѓРґРµРј РїР»Р°С‚РёС‚СЊ РїРёСЂР°С‚Р°Рј, РѕРЅРё РїРµСЂРµСЃС‚Р°РЅСѓС‚ Р·Р°РЅРёРјР°С‚СЊСЃСЏ РЅР°С€РёРјРё РїРµСЂРµРІРѕР·РєР°РјРё.");
 				Doc_PrintLine	(nDocID,  0, ""														);
-				Doc_PrintLine	(nDocID,  0, "     Ворон"											);
+				Doc_PrintLine	(nDocID,  0, "     Р’РѕСЂРѕРЅ"											);
 				Doc_Show		(nDocID);
 		
 };
 
 //**********************************************************************************
-//	Empfehlungsschreiben fьr Pedro, ins Kloster eingelassen zu werden.
+//	Empfehlungsschreiben fСЊr Pedro, ins Kloster eingelassen zu werden.
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_Vatras_KDFEmpfehlung_Addon		(C_Item)
 {
-	name 				=	"Рекомендательное письмо Ватраса";
+	name 				=	"Р РµРєРѕРјРµРЅРґР°С‚РµР»СЊРЅРѕРµ РїРёСЃСЊРјРѕ Р’Р°С‚СЂР°СЃР°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -459,11 +459,11 @@ INSTANCE ItWr_Vatras_KDFEmpfehlung_Addon		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_VatrasKDFEmpfehlung_Addon;
 	scemeName			=	"MAP";
-	description			=  	"Рекомендательное письмо Ватраса";
+	description			=  	"Р РµРєРѕРјРµРЅРґР°С‚РµР»СЊРЅРѕРµ РїРёСЃСЊРјРѕ Р’Р°С‚СЂР°СЃР°";
 	
-	TEXT[2]				= 	"Это письмо поможет мне";
-	TEXT[3]				= 	"попасть в монастырь магов огня,";
-	TEXT[4]				= 	"не заплатив за вход.";
+	TEXT[2]				= 	"Р­С‚Рѕ РїРёСЃСЊРјРѕ РїРѕРјРѕР¶РµС‚ РјРЅРµ";
+	TEXT[3]				= 	"РїРѕРїР°СЃС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РјР°РіРѕРІ РѕРіРЅСЏ,";
+	TEXT[4]				= 	"РЅРµ Р·Р°РїР»Р°С‚РёРІ Р·Р° РІС…РѕРґ.";
 
 	
 };
@@ -480,13 +480,13 @@ func void Use_VatrasKDFEmpfehlung_Addon ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Братья огня!");
+					Doc_PrintLines	( nDocID,  0, "Р‘СЂР°С‚СЊСЏ РѕРіРЅСЏ!");
 					Doc_PrintLines	( nDocID,  0, "");					
-					Doc_PrintLines	( nDocID,  0, "Мне стало известно, что за вход в ваш монастырь вы требуете плату.");
-					Doc_PrintLines	( nDocID,  0, "С этим письмом я направляю вам молодого человека, который страстно желает присоединиться к вам."					);
-					//Doc_PrintLine	( nDocID,  0, "Ich hoffe, dass ich nicht persцnlich erscheinen muss ihm den Einlass ");
+					Doc_PrintLines	( nDocID,  0, "РњРЅРµ СЃС‚Р°Р»Рѕ РёР·РІРµСЃС‚РЅРѕ, С‡С‚Рѕ Р·Р° РІС…РѕРґ РІ РІР°С€ РјРѕРЅР°СЃС‚С‹СЂСЊ РІС‹ С‚СЂРµР±СѓРµС‚Рµ РїР»Р°С‚Сѓ.");
+					Doc_PrintLines	( nDocID,  0, "РЎ СЌС‚РёРј РїРёСЃСЊРјРѕРј СЏ РЅР°РїСЂР°РІР»СЏСЋ РІР°Рј РјРѕР»РѕРґРѕРіРѕ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ СЃС‚СЂР°СЃС‚РЅРѕ Р¶РµР»Р°РµС‚ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј."					);
+					//Doc_PrintLine	( nDocID,  0, "Ich hoffe, dass ich nicht persС†nlich erscheinen muss ihm den Einlass ");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Ватрас");
+					Doc_PrintLine	( nDocID,  0, "Р’Р°С‚СЂР°СЃ");
 					Doc_Show		( nDocID );				
 		
 };
@@ -494,7 +494,7 @@ func void Use_VatrasKDFEmpfehlung_Addon ()
 /******************************************************************************************/
 INSTANCE ItMi_LostInnosStatue_Daron (C_Item)
 {
-	name 				=	"Драгоценная статуэтка Инноса";
+	name 				=	"Р”СЂР°РіРѕС†РµРЅРЅР°СЏ СЃС‚Р°С‚СѓСЌС‚РєР° РРЅРЅРѕСЃР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -516,7 +516,7 @@ INSTANCE ItMi_LostInnosStatue_Daron (C_Item)
 
 INSTANCE ItWr_LuciasLoveLetter_Addon		(C_Item)
 {
-	name 				=	"Прощальное письмо Люсии";
+	name 				=	"РџСЂРѕС‰Р°Р»СЊРЅРѕРµ РїРёСЃСЊРјРѕ Р›СЋСЃРёРё";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -535,7 +535,7 @@ func void Use_LuciasLoveLetter_Addon ()
  
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Люсия написала Элвриху прощальное письмо. Оно должно его заинтересовать."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"Р›СЋСЃРёСЏ РЅР°РїРёСЃР°Р»Р° Р­Р»РІСЂРёС…Сѓ РїСЂРѕС‰Р°Р»СЊРЅРѕРµ РїРёСЃСЊРјРѕ. РћРЅРѕ РґРѕР»Р¶РЅРѕ РµРіРѕ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ."); 
 	MIS_LuciasLetter = LOG_RUNNING;
 	var int nDocID;
 		
@@ -547,13 +547,13 @@ func void Use_LuciasLoveLetter_Addon ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Дорогой Элврих!");
+					Doc_PrintLines	( nDocID,  0, "Р”РѕСЂРѕРіРѕР№ Р­Р»РІСЂРёС…!");
 					Doc_PrintLines	( nDocID,  0, "");					
-					Doc_PrintLines	( nDocID,  0, "Я не могу найти слова, чтобы выразить свое сожаление.");
-					Doc_PrintLines	( nDocID,  0, "Я знаю, что ты не поймешь меня, но я пришла к выводу, что и для нас обоих будет лучше, если ты найдешь себе более достойную девушку, чем я."					);
-					Doc_PrintLines	( nDocID,  0, "Я не вернусь оттуда, куда я сейчас направляюсь. Забудь меня. Такому честному парню, как ты, не нужна проститутка. Прощай!");
+					Doc_PrintLines	( nDocID,  0, "РЇ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё СЃР»РѕРІР°, С‡С‚РѕР±С‹ РІС‹СЂР°Р·РёС‚СЊ СЃРІРѕРµ СЃРѕР¶Р°Р»РµРЅРёРµ.");
+					Doc_PrintLines	( nDocID,  0, "РЇ Р·РЅР°СЋ, С‡С‚Рѕ С‚С‹ РЅРµ РїРѕР№РјРµС€СЊ РјРµРЅСЏ, РЅРѕ СЏ РїСЂРёС€Р»Р° Рє РІС‹РІРѕРґСѓ, С‡С‚Рѕ Рё РґР»СЏ РЅР°СЃ РѕР±РѕРёС… Р±СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё С‚С‹ РЅР°Р№РґРµС€СЊ СЃРµР±Рµ Р±РѕР»РµРµ РґРѕСЃС‚РѕР№РЅСѓСЋ РґРµРІСѓС€РєСѓ, С‡РµРј СЏ."					);
+					Doc_PrintLines	( nDocID,  0, "РЇ РЅРµ РІРµСЂРЅСѓСЃСЊ РѕС‚С‚СѓРґР°, РєСѓРґР° СЏ СЃРµР№С‡Р°СЃ РЅР°РїСЂР°РІР»СЏСЋСЃСЊ. Р—Р°Р±СѓРґСЊ РјРµРЅСЏ. РўР°РєРѕРјСѓ С‡РµСЃС‚РЅРѕРјСѓ РїР°СЂРЅСЋ, РєР°Рє С‚С‹, РЅРµ РЅСѓР¶РЅР° РїСЂРѕСЃС‚РёС‚СѓС‚РєР°. РџСЂРѕС‰Р°Р№!");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "     Люсия");
+					Doc_PrintLine	( nDocID,  0, "     Р›СЋСЃРёСЏ");
 					Doc_Show		( nDocID );				
 };
 
@@ -564,7 +564,7 @@ func void Use_LuciasLoveLetter_Addon ()
 
 PROTOTYPE  EffectItemPrototype_Addon (C_Item)	
 {
-	name 				=	"Камень";
+	name 				=	"РљР°РјРµРЅСЊ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -598,7 +598,7 @@ INSTANCE ItMi_OrnamentEffekt_BIGFARM_Addon (EffectItemPrototype_Addon)
 // Hacke 
 INSTANCE ItMi_Rake (C_Item)
 {
-	name 				=	"Мотыга";
+	name 				=	"РњРѕС‚С‹РіР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -612,8 +612,8 @@ INSTANCE ItMi_Rake (C_Item)
 	on_state[1]			= 	Use_Rake;
 	description			= 	name;
 	
-	//TEXT[3]				=   "(Lдsst sich bei geцffnetem Inventar benutzen)";
-	//TEXT[4]				=   "('Aktionstaste' + 'Pfeil- Vorne' gedrьckt halten)";
+	//TEXT[3]				=   "(LРґsst sich bei geС†ffnetem Inventar benutzen)";
+	//TEXT[4]				=   "('Aktionstaste' + 'Pfeil- Vorne' gedrСЊckt halten)";
 	
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
@@ -627,9 +627,9 @@ func void Use_Rake()
 };
 
 /******************************************************************************************/
-INSTANCE ItRi_Addon_BanditTrader(C_Item)	//Hдndlergildenring
+INSTANCE ItRi_Addon_BanditTrader(C_Item)	//HРґndlergildenring
 {
-	name 					=	"Кольцо гильдии";
+	name 					=	"РљРѕР»СЊС†Рѕ РіРёР»СЊРґРёРё";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_RING;
@@ -641,9 +641,9 @@ INSTANCE ItRi_Addon_BanditTrader(C_Item)	//Hдndlergildenring
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	description				= 	"Гравированное кольцо";
+	description				= 	"Р“СЂР°РІРёСЂРѕРІР°РЅРЅРѕРµ РєРѕР»СЊС†Рѕ";
 	
-	TEXT[2]					= 	"гильдии торговцев Араксоса";
+	TEXT[2]					= 	"РіРёР»СЊРґРёРё С‚РѕСЂРіРѕРІС†РµРІ РђСЂР°РєСЃРѕСЃР°";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -659,7 +659,7 @@ INSTANCE ItRi_Addon_BanditTrader(C_Item)	//Hдndlergildenring
 
 INSTANCE ItWr_Addon_BanditTrader		(C_Item)
 {
-	name 				=	"Список товаров";
+	name 				=	"РЎРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -672,8 +672,8 @@ INSTANCE ItWr_Addon_BanditTrader		(C_Item)
 	scemeName			=	"MAP";
 	description			=  	name;
 	
-	TEXT[2]				= 	"Я нашел это письмо у бандитов";
-	TEXT[3]				= 	"за фермой Секоба.";
+	TEXT[2]				= 	"РЇ РЅР°С€РµР» СЌС‚Рѕ РїРёСЃСЊРјРѕ Сѓ Р±Р°РЅРґРёС‚РѕРІ";
+	TEXT[3]				= 	"Р·Р° С„РµСЂРјРѕР№ РЎРµРєРѕР±Р°.";
 
 	
 };
@@ -690,21 +690,21 @@ func void Use_ItWr_Addon_BanditTrader ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLines	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "15 коротких мечей");
-					Doc_PrintLines	( nDocID,  0, "20 рапир"					);
-					Doc_PrintLines	( nDocID,  0, "25 буханок хлеба");
-					Doc_PrintLines	( nDocID,  0, "15 бутылок вина"					);
+					Doc_PrintLines	( nDocID,  0, "15 РєРѕСЂРѕС‚РєРёС… РјРµС‡РµР№");
+					Doc_PrintLines	( nDocID,  0, "20 СЂР°РїРёСЂ"					);
+					Doc_PrintLines	( nDocID,  0, "25 Р±СѓС…Р°РЅРѕРє С…Р»РµР±Р°");
+					Doc_PrintLines	( nDocID,  0, "15 Р±СѓС‚С‹Р»РѕРє РІРёРЅР°"					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Это был последний раз."					);
-					Doc_PrintLines	( nDocID,  0, "Все становится слишком опасным."					);
+					Doc_PrintLines	( nDocID,  0, "Р­С‚Рѕ Р±С‹Р» РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·."					);
+					Doc_PrintLines	( nDocID,  0, "Р’СЃРµ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅС‹Рј."					);
 					Doc_PrintLines	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "ФЕРНАНДО");
+					Doc_PrintLine	( nDocID,  0, "Р¤Р•Р РќРђРќР”Рћ");
 					Doc_Show		( nDocID );				
 	
 	if (MIS_Vatras_FindTheBanditTrader != 0)
 	&& (Use_ItWr_Addon_BanditTrader_OneTime == FALSE)
 	{
-		B_LogEntry (TOPIC_Addon_BanditTrader,"Я нашел документ, доказывающий, что Фернандо является поставщиком оружия, которого я ищу."); 
+		B_LogEntry (TOPIC_Addon_BanditTrader,"РЇ РЅР°С€РµР» РґРѕРєСѓРјРµРЅС‚, РґРѕРєР°Р·С‹РІР°СЋС‰РёР№, С‡С‚Рѕ Р¤РµСЂРЅР°РЅРґРѕ СЏРІР»СЏРµС‚СЃСЏ РїРѕСЃС‚Р°РІС‰РёРєРѕРј РѕСЂСѓР¶РёСЏ, РєРѕС‚РѕСЂРѕРіРѕ СЏ РёС‰Сѓ."); 
 		Use_ItWr_Addon_BanditTrader_OneTime = TRUE;
 	};
 };
@@ -715,7 +715,7 @@ func void Use_ItWr_Addon_BanditTrader ()
 //****************************************************************************
 INSTANCE ItWr_Vatras2Saturas_FindRaven	(C_Item)
 {
-	name 				=	"Письмо";
+	name 				=	"РџРёСЃСЊРјРѕ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -727,7 +727,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven	(C_Item)
 	on_state[0]			=   Use_Vatras2Saturas_FindRaven_Sealed;
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
-	TEXT[2]				=   "Письмо Ватраса Сатурасу";
+	TEXT[2]				=   "РџРёСЃСЊРјРѕ Р’Р°С‚СЂР°СЃР° РЎР°С‚СѓСЂР°СЃСѓ";
 
 };
 func void Use_Vatras2Saturas_FindRaven ()
@@ -738,15 +738,15 @@ func void Use_Vatras2Saturas_FindRaven ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 	); 
 					Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
-					Doc_PrintLine	( nDocID,  0, "Дорогой Сатурас!"					);
+					Doc_PrintLine	( nDocID,  0, "Р”РѕСЂРѕРіРѕР№ РЎР°С‚СѓСЂР°СЃ!"					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Надеюсь, что скоро твоя цель будет достигнута. В городе ситуация, похоже, налаживается. Но я боюсь, что это обманчивое ощущение. Поторопись! Ты нужен мне здесь."					);
-					Doc_PrintLines	( nDocID,  0, "Я изучил твои записи и могу подтвердить твои подозрения. Это действительно были последователи Аданоса. Будь осторожен и не дай лжепророкам ослепить себя."					);
-					Doc_PrintLines	( nDocID,  0, "Пропавших жителей Хориниса отправили к бывшему рудному барону Ворону. Он находится там, куда должен вести портал."					);
-					Doc_PrintLines	( nDocID,  0, "И еще одно. Я посылаю тебе помощника. Это тот, кто передаст тебе это сообщение. В его глазах есть нечто особенное... Я не уверен, но, возможно, это ОН. Хотя мы представляли его по-другому."					);
-					Doc_PrintLines	( nDocID,  0, "Проверь его. Думаю, что я прав."					);
+					Doc_PrintLines	( nDocID,  0, "РќР°РґРµСЋСЃСЊ, С‡С‚Рѕ СЃРєРѕСЂРѕ С‚РІРѕСЏ С†РµР»СЊ Р±СѓРґРµС‚ РґРѕСЃС‚РёРіРЅСѓС‚Р°. Р’ РіРѕСЂРѕРґРµ СЃРёС‚СѓР°С†РёСЏ, РїРѕС…РѕР¶Рµ, РЅР°Р»Р°Р¶РёРІР°РµС‚СЃСЏ. РќРѕ СЏ Р±РѕСЋСЃСЊ, С‡С‚Рѕ СЌС‚Рѕ РѕР±РјР°РЅС‡РёРІРѕРµ РѕС‰СѓС‰РµРЅРёРµ. РџРѕС‚РѕСЂРѕРїРёСЃСЊ! РўС‹ РЅСѓР¶РµРЅ РјРЅРµ Р·РґРµСЃСЊ."					);
+					Doc_PrintLines	( nDocID,  0, "РЇ РёР·СѓС‡РёР» С‚РІРѕРё Р·Р°РїРёСЃРё Рё РјРѕРіСѓ РїРѕРґС‚РІРµСЂРґРёС‚СЊ С‚РІРѕРё РїРѕРґРѕР·СЂРµРЅРёСЏ. Р­С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р±С‹Р»Рё РїРѕСЃР»РµРґРѕРІР°С‚РµР»Рё РђРґР°РЅРѕСЃР°. Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ Рё РЅРµ РґР°Р№ Р»Р¶РµРїСЂРѕСЂРѕРєР°Рј РѕСЃР»РµРїРёС‚СЊ СЃРµР±СЏ."					);
+					Doc_PrintLines	( nDocID,  0, "РџСЂРѕРїР°РІС€РёС… Р¶РёС‚РµР»РµР№ РҐРѕСЂРёРЅРёСЃР° РѕС‚РїСЂР°РІРёР»Рё Рє Р±С‹РІС€РµРјСѓ СЂСѓРґРЅРѕРјСѓ Р±Р°СЂРѕРЅСѓ Р’РѕСЂРѕРЅСѓ. РћРЅ РЅР°С…РѕРґРёС‚СЃСЏ С‚Р°Рј, РєСѓРґР° РґРѕР»Р¶РµРЅ РІРµСЃС‚Рё РїРѕСЂС‚Р°Р»."					);
+					Doc_PrintLines	( nDocID,  0, "Р РµС‰Рµ РѕРґРЅРѕ. РЇ РїРѕСЃС‹Р»Р°СЋ С‚РµР±Рµ РїРѕРјРѕС‰РЅРёРєР°. Р­С‚Рѕ С‚РѕС‚, РєС‚Рѕ РїРµСЂРµРґР°СЃС‚ С‚РµР±Рµ СЌС‚Рѕ СЃРѕРѕР±С‰РµРЅРёРµ. Р’ РµРіРѕ РіР»Р°Р·Р°С… РµСЃС‚СЊ РЅРµС‡С‚Рѕ РѕСЃРѕР±РµРЅРЅРѕРµ... РЇ РЅРµ СѓРІРµСЂРµРЅ, РЅРѕ, РІРѕР·РјРѕР¶РЅРѕ, СЌС‚Рѕ РћРќ. РҐРѕС‚СЏ РјС‹ РїСЂРµРґСЃС‚Р°РІР»СЏР»Рё РµРіРѕ РїРѕ-РґСЂСѓРіРѕРјСѓ."					);
+					Doc_PrintLines	( nDocID,  0, "РџСЂРѕРІРµСЂСЊ РµРіРѕ. Р”СѓРјР°СЋ, С‡С‚Рѕ СЏ РїСЂР°РІ."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Ватрас"					);
+					Doc_PrintLine	( nDocID,  0, "Р’Р°С‚СЂР°СЃ"					);
 					Doc_Show		( nDocID );
 		
 }; 
@@ -759,7 +759,7 @@ func void Use_Vatras2Saturas_FindRaven_Sealed ()
 }; 
 INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 {
-	name 				=	"Открытое письмо";
+	name 				=	"РћС‚РєСЂС‹С‚РѕРµ РїРёСЃСЊРјРѕ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -771,7 +771,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 	on_state[0]			=   Use_Vatras2Saturas_FindRaven;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[2]				=   "Письмо Ватраса Сатурасу";
+	TEXT[2]				=   "РџРёСЃСЊРјРѕ Р’Р°С‚СЂР°СЃР° РЎР°С‚СѓСЂР°СЃСѓ";
 };
 
 //------------------------------------------------------------------------------------------
@@ -779,7 +779,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItAm_Addon_WispDetector (C_Item)  
 {
-	name 			=	"Рудный амулет";
+	name 			=	"Р СѓРґРЅС‹Р№ Р°РјСѓР»РµС‚";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -796,7 +796,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 	on_equip		=	Equip_WispDetector;
 	on_unequip		=	UnEquip_WispDetector;
 
-	description		=  "Рудный амулет блуждающего огонька";
+	description		=  "Р СѓРґРЅС‹Р№ Р°РјСѓР»РµС‚ Р±Р»СѓР¶РґР°СЋС‰РµРіРѕ РѕРіРѕРЅСЊРєР°";
 
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -845,7 +845,7 @@ INSTANCE ItWr_Vatras2Saturas_FindRaven_opened	(C_Item)
 	
 INSTANCE ItFo_Addon_Krokofleisch_Mission (C_Item)
 {	
-	name 				=	"Мясо болотной крысы";
+	name 				=	"РњСЏСЃРѕ Р±РѕР»РѕС‚РЅРѕР№ РєСЂС‹СЃС‹";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -857,7 +857,7 @@ INSTANCE ItFo_Addon_Krokofleisch_Mission (C_Item)
 	scemeName			=	"MEAT";
 	
 	description			= 	name;
-	TEXT[1]				=	"Это мясо пахнет рыбой!";
+	TEXT[1]				=	"Р­С‚Рѕ РјСЏСЃРѕ РїР°С…РЅРµС‚ СЂС‹Р±РѕР№!";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	Value_RawMeat;
@@ -866,7 +866,7 @@ INSTANCE ItFo_Addon_Krokofleisch_Mission (C_Item)
 
 INSTANCE ItRi_Addon_MorgansRing_Mission (C_Item)
 {	
-	name 				=	"Кольцо Моргана";
+	name 				=	"РљРѕР»СЊС†Рѕ РњРѕСЂРіР°РЅР°";
 
 	mainflag 			=	ITEM_KAT_MAGIC;
 	flags 				=	ITEM_RING|ITEM_MISSION;
@@ -885,7 +885,7 @@ INSTANCE ItRi_Addon_MorgansRing_Mission (C_Item)
 	description		= name;
 	
 	
-	TEXT[1]			= "Кольцо украшено множеством рун.";
+	TEXT[1]			= "РљРѕР»СЊС†Рѕ СѓРєСЂР°С€РµРЅРѕ РјРЅРѕР¶РµСЃС‚РІРѕРј СЂСѓРЅ.";
 	TEXT[2]			= NAME_ADDON_BONUS_1H;
 	COUNT[2]		= 10;
 	TEXT[5]			= NAME_Value;
@@ -910,7 +910,7 @@ FUNC VOID UnEquip_MorgansRing()
 
 INSTANCE ItMi_Focus (C_Item)
 {
-	name 				=	"Фокусирующий камень";
+	name 				=	"Р¤РѕРєСѓСЃРёСЂСѓСЋС‰РёР№ РєР°РјРµРЅСЊ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -927,11 +927,11 @@ INSTANCE ItMi_Focus (C_Item)
 
 };
 //---------------------------------------------------------------------------
-//				Stahl Paket fьr Huno
+//				Stahl Paket fСЊr Huno
 //---------------------------------------------------------------------------
 INSTANCE ItMi_Addon_Steel_Paket(C_Item)
 {
-	name 				=	"Пакет со сталью";
+	name 				=	"РџР°РєРµС‚ СЃРѕ СЃС‚Р°Р»СЊСЋ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -943,8 +943,8 @@ INSTANCE ItMi_Addon_Steel_Paket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Пакет очень тяжелый.";
-	TEXT[3]				=	"В нем находится большой слиток стали.";
+	TEXT[2]				= 	"РџР°РєРµС‚ РѕС‡РµРЅСЊ С‚СЏР¶РµР»С‹Р№.";
+	TEXT[3]				=	"Р’ РЅРµРј РЅР°С…РѕРґРёС‚СЃСЏ Р±РѕР»СЊС€РѕР№ СЃР»РёС‚РѕРє СЃС‚Р°Р»Рё.";
 	
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	value;
@@ -956,7 +956,7 @@ INSTANCE ItMi_Addon_Steel_Paket(C_Item)
 //------------------------------------------------------------------------------------------
 instance ItWr_StonePlateCommon_Addon (C_Item)
 {
-	name 				=	"Старая каменная табличка";
+	name 				=	"РЎС‚Р°СЂР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION|ITEM_MULTI;
@@ -974,7 +974,7 @@ instance ItWr_StonePlateCommon_Addon (C_Item)
 	inv_rotz			=   0;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Серая каменная табличка";
+	TEXT[2]				= 	"РЎРµСЂР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 	TEXT[3]				=	"";
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -994,13 +994,13 @@ func void Use_StonePlateCommon ()
 		Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 		Doc_SetMargins	( nDocID, -1, 70, 50, 90, 50, 1   	);  //  0 -> margins are in pixels
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Каста воинов навлекла на нас божественный гнев.");	
+		Doc_PrintLines	( nDocID,  0, "РљР°СЃС‚Р° РІРѕРёРЅРѕРІ РЅР°РІР»РµРєР»Р° РЅР° РЅР°СЃ Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ РіРЅРµРІ.");	
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "РАДЕМЕС, потомок Куарходрона, был изгнан. Но его злая сила действовала на нас даже из места его изгнания.");
+		Doc_PrintLines	( nDocID,  0, "Р РђР”Р•РњР•РЎ, РїРѕС‚РѕРјРѕРє РљСѓР°СЂС…РѕРґСЂРѕРЅР°, Р±С‹Р» РёР·РіРЅР°РЅ. РќРѕ РµРіРѕ Р·Р»Р°СЏ СЃРёР»Р° РґРµР№СЃС‚РІРѕРІР°Р»Р° РЅР° РЅР°СЃ РґР°Р¶Рµ РёР· РјРµСЃС‚Р° РµРіРѕ РёР·РіРЅР°РЅРёСЏ.");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Мы были беззащитны перед ней.");
+		Doc_PrintLines	( nDocID,  0, "РњС‹ Р±С‹Р»Рё Р±РµР·Р·Р°С‰РёС‚РЅС‹ РїРµСЂРµРґ РЅРµР№.");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Гнев АДАНОСА обрушился на ЯРКЕНДАР!");	
+		Doc_PrintLines	( nDocID,  0, "Р“РЅРµРІ РђР”РђРќРћРЎРђ РѕР±СЂСѓС€РёР»СЃСЏ РЅР° РЇР РљР•РќР”РђР !");	
 	}
 	else //Spieler beherrscht Sprache nicht
 	{
@@ -1031,7 +1031,7 @@ func void Use_StonePlateCommon ()
 
 INSTANCE ItMi_Addon_Stone_01(C_Item) //Esteban und Thorus  //Joly:Die Banditen benutzen diese Steintafeln als Zahlungsmittel.
 {
-	name 				=	"Красная каменная табличка";
+	name 				=	"РљСЂР°СЃРЅР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1053,7 +1053,7 @@ INSTANCE ItMi_Addon_Stone_01(C_Item) //Esteban und Thorus  //Joly:Die Banditen b
 	
 	
 	description			= 	name;
-	TEXT[2]				= 	"Красная каменная табличка";
+	TEXT[2]				= 	"РљСЂР°СЃРЅР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1069,7 +1069,7 @@ FUNC VOID Use_Addon_Stone_01()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "Мы, последние трое из Совета Пяти, установили в храме ловушки и спрятали вход, чтобы меч больше никогда не покинул храм.");
+		Doc_PrintLines	( nDocID,  0, "РњС‹, РїРѕСЃР»РµРґРЅРёРµ С‚СЂРѕРµ РёР· РЎРѕРІРµС‚Р° РџСЏС‚Рё, СѓСЃС‚Р°РЅРѕРІРёР»Рё РІ С…СЂР°РјРµ Р»РѕРІСѓС€РєРё Рё СЃРїСЂСЏС‚Р°Р»Рё РІС…РѕРґ, С‡С‚РѕР±С‹ РјРµС‡ Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ РїРѕРєРёРЅСѓР» С…СЂР°Рј.");
 	}
 	else
 	{
@@ -1082,9 +1082,9 @@ FUNC VOID Use_Addon_Stone_01()
 //---------------------------------------------------------------------------
 //		Steintafel 5		
 //---------------------------------------------------------------------------
-INSTANCE ItMi_Addon_Stone_05(C_Item) //Valley - Totenwдchter
+INSTANCE ItMi_Addon_Stone_05(C_Item) //Valley - TotenwРґchter
 {
-	name 				=	"Желтая каменная табличка"; 
+	name 				=	"Р–РµР»С‚Р°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°"; 
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1105,7 +1105,7 @@ INSTANCE ItMi_Addon_Stone_05(C_Item) //Valley - Totenwдchter
 	inv_rotz			=   0;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Желтая каменная табличка";
+	TEXT[2]				= 	"Р–РµР»С‚Р°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1121,7 +1121,7 @@ FUNC VOID Use_Addon_Stone_05()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "Я, тот, кто был против решения Совета Трех, создал первую ловушку. Лишь я знаю правильную дверь.");
+		Doc_PrintLines	( nDocID,  0, "РЇ, С‚РѕС‚, РєС‚Рѕ Р±С‹Р» РїСЂРѕС‚РёРІ СЂРµС€РµРЅРёСЏ РЎРѕРІРµС‚Р° РўСЂРµС…, СЃРѕР·РґР°Р» РїРµСЂРІСѓСЋ Р»РѕРІСѓС€РєСѓ. Р›РёС€СЊ СЏ Р·РЅР°СЋ РїСЂР°РІРёР»СЊРЅСѓСЋ РґРІРµСЂСЊ.");
 	}
 	else
 	{
@@ -1136,7 +1136,7 @@ FUNC VOID Use_Addon_Stone_05()
 //---------------------------------------------------------------------------
 INSTANCE ItMi_Addon_Stone_03(C_Item) //Valley - Priester
 {
-	name 				=	"Синяя каменная табличка";
+	name 				=	"РЎРёРЅСЏСЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1157,7 +1157,7 @@ INSTANCE ItMi_Addon_Stone_03(C_Item) //Valley - Priester
 	effect				=	"SPELLFX_WEAKGLIMMER";
 	
 	description			= 	name;
-	TEXT[2]				= 	"Синяя каменная табличка";
+	TEXT[2]				= 	"РЎРёРЅСЏСЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1173,7 +1173,7 @@ FUNC VOID Use_Addon_Stone_03()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "КАРДИМОН создал вторую ловушку. Лишь тот, кто следует по пути света, достигнет третьего зала.");
+		Doc_PrintLines	( nDocID,  0, "РљРђР Р”РРњРћРќ СЃРѕР·РґР°Р» РІС‚РѕСЂСѓСЋ Р»РѕРІСѓС€РєСѓ. Р›РёС€СЊ С‚РѕС‚, РєС‚Рѕ СЃР»РµРґСѓРµС‚ РїРѕ РїСѓС‚Рё СЃРІРµС‚Р°, РґРѕСЃС‚РёРіРЅРµС‚ С‚СЂРµС‚СЊРµРіРѕ Р·Р°Р»Р°.");
 	}
 	else
 	{
@@ -1190,7 +1190,7 @@ FUNC VOID Use_Addon_Stone_03()
 //---------------------------------------------------------------------------
 INSTANCE ItMi_Addon_Stone_04(C_Item)  //DAS DING AUS DEM SENAT /SUMPF  //Joly: Haus der Heiler
 {
-	name 				=	"Зеленая каменная табличка"; 
+	name 				=	"Р—РµР»РµРЅР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°"; 
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1211,7 +1211,7 @@ INSTANCE ItMi_Addon_Stone_04(C_Item)  //DAS DING AUS DEM SENAT /SUMPF  //Joly: H
 	effect				=	"SPELLFX_WEAKGLIMMER";
 	
 	description			= 	name;
-	TEXT[2]				= 	"Зеленая каменная табличка";
+	TEXT[2]				= 	"Р—РµР»РµРЅР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1227,7 +1227,7 @@ FUNC VOID Use_Addon_Stone_04()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "Третью ловушку создал КУАРХОДРОН. Лишь он знает, как открыть вход.");
+		Doc_PrintLines	( nDocID,  0, "РўСЂРµС‚СЊСЋ Р»РѕРІСѓС€РєСѓ СЃРѕР·РґР°Р» РљРЈРђР РҐРћР”Р РћРќ. Р›РёС€СЊ РѕРЅ Р·РЅР°РµС‚, РєР°Рє РѕС‚РєСЂС‹С‚СЊ РІС…РѕРґ.");
 	}
 	else
 	{
@@ -1242,7 +1242,7 @@ FUNC VOID Use_Addon_Stone_04()
 //---------------------------------------------------------------------------
 INSTANCE ItMi_Addon_Stone_02(C_Item) //Bibliothek der Erbauer.
 {
-	name 				=	"Фиолетовая каменная табличка"; 
+	name 				=	"Р¤РёРѕР»РµС‚РѕРІР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°"; 
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1263,7 +1263,7 @@ INSTANCE ItMi_Addon_Stone_02(C_Item) //Bibliothek der Erbauer.
 	effect				=	"SPELLFX_WEAKGLIMMER";
 	
 	description			= 	name;
-	TEXT[2]				= 	"Фиолетовая каменная табличка";
+	TEXT[2]				= 	"Р¤РёРѕР»РµС‚РѕРІР°СЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°";
 	TEXT[3]				=	"";
 };
 //---------------------------------------------------------------------------
@@ -1279,11 +1279,11 @@ FUNC VOID Use_Addon_Stone_02()
 	Doc_PrintLine	( nDocID,  0, "");
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		Doc_PrintLines	( nDocID,  0, "Внешние ворота с помощью КАРДИМОНА закрыл Куадходрон. Этот ритуал стал для них смертельным.");
+		Doc_PrintLines	( nDocID,  0, "Р’РЅРµС€РЅРёРµ РІРѕСЂРѕС‚Р° СЃ РїРѕРјРѕС‰СЊСЋ РљРђР Р”РРњРћРќРђ Р·Р°РєСЂС‹Р» РљСѓР°РґС…РѕРґСЂРѕРЅ. Р­С‚РѕС‚ СЂРёС‚СѓР°Р» СЃС‚Р°Р» РґР»СЏ РЅРёС… СЃРјРµСЂС‚РµР»СЊРЅС‹Рј.");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Рассказать о происшедшем могу только я.");
+		Doc_PrintLines	( nDocID,  0, "Р Р°СЃСЃРєР°Р·Р°С‚СЊ Рѕ РїСЂРѕРёСЃС€РµРґС€РµРј РјРѕРіСѓ С‚РѕР»СЊРєРѕ СЏ.");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Надеюсь, что РАДЕМЕС останется гнить в храме навеки!");
+		Doc_PrintLines	( nDocID,  0, "РќР°РґРµСЋСЃСЊ, С‡С‚Рѕ Р РђР”Р•РњР•РЎ РѕСЃС‚Р°РЅРµС‚СЃСЏ РіРЅРёС‚СЊ РІ С…СЂР°РјРµ РЅР°РІРµРєРё!");
 	}
 	else
 	{
@@ -1307,7 +1307,7 @@ FUNC VOID Use_Addon_Stone_02()
 
 INSTANCE ItMI_Addon_Kompass_Mis (C_Item)
 {
-	name 				=	"Золотой компас";
+	name 				=	"Р—РѕР»РѕС‚РѕР№ РєРѕРјРїР°СЃ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -1327,7 +1327,7 @@ INSTANCE ItMI_Addon_Kompass_Mis (C_Item)
 
 INSTANCE ItSE_Addon_FrancisChest	(C_Item)
 {
-	name 				=	"Сундук с сокровищами";
+	name 				=	"РЎСѓРЅРґСѓРє СЃ СЃРѕРєСЂРѕРІРёС‰Р°РјРё";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -1339,9 +1339,9 @@ INSTANCE ItSE_Addon_FrancisChest	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   FrancisChest;
 	
-	description			= 	"Сундук с сокровищами";
+	description			= 	"РЎСѓРЅРґСѓРє СЃ СЃРѕРєСЂРѕРІРёС‰Р°РјРё";
 	
-	TEXT[0]				= 	"Сундук очень тяжелый.";
+	TEXT[0]				= 	"РЎСѓРЅРґСѓРє РѕС‡РµРЅСЊ С‚СЏР¶РµР»С‹Р№.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -1360,12 +1360,12 @@ FUNC VOID FrancisChest ()
 		CreateInvItems (hero,ITWR_Addon_FrancisAbrechnung_Mis,1);
 		
 		Snd_Play ("Geldbeutel");
-		Print ("Вы нашли несколько предметов!");
+		Print ("Р’С‹ РЅР°С€Р»Рё РЅРµСЃРєРѕР»СЊРєРѕ РїСЂРµРґРјРµС‚РѕРІ!");
 };
 
 INSTANCE ITWR_Addon_FrancisAbrechnung_Mis (C_ITEM)
 {
-	name 					=	"Книга платежей";
+	name 					=	"РљРЅРёРіР° РїР»Р°С‚РµР¶РµР№";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1397,63 +1397,63 @@ INSTANCE ITWR_Addon_FrancisAbrechnung_Mis (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Купеческий корабль 'Русалка'"	);
+					Doc_PrintLine	( nDocID,  0, "РљСѓРїРµС‡РµСЃРєРёР№ РєРѕСЂР°Р±Р»СЊ 'Р СѓСЃР°Р»РєР°'"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Общая добыча: 14560 золотых");
+					Doc_PrintLine	( nDocID,  0, "РћР±С‰Р°СЏ РґРѕР±С‹С‡Р°: 14560 Р·РѕР»РѕС‚С‹С…");
 					Doc_PrintLine	( nDocID,  0, "-----------------------"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Команда: 9840");
-					Doc_PrintLine	( nDocID,  0, "Офицеры: 2500");
-					Doc_PrintLine	( nDocID,  0, "Капитан: 1000");
+					Doc_PrintLine	( nDocID,  0, "РљРѕРјР°РЅРґР°: 9840");
+					Doc_PrintLine	( nDocID,  0, "РћС„РёС†РµСЂС‹: 2500");
+					Doc_PrintLine	( nDocID,  0, "РљР°РїРёС‚Р°РЅ: 1000");
 					Doc_PrintLine	( nDocID,  0, "-----------------------"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Личная доля: 2220");
+					Doc_PrintLine	( nDocID,  0, "Р›РёС‡РЅР°СЏ РґРѕР»СЏ: 2220");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Купеческий корабль 'Мириам'"	);
+					Doc_PrintLine	( nDocID,  0, "РљСѓРїРµС‡РµСЃРєРёР№ РєРѕСЂР°Р±Р»СЊ 'РњРёСЂРёР°Рј'"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Общая добыча: 4890 золотых");
+					Doc_PrintLine	( nDocID,  0, "РћР±С‰Р°СЏ РґРѕР±С‹С‡Р°: 4890 Р·РѕР»РѕС‚С‹С…");
 					Doc_PrintLine	( nDocID,  0, "-----------------------"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Команда: 2390");
-					Doc_PrintLine	( nDocID,  0, "Офицеры: 500");
-					Doc_PrintLine	( nDocID,  0, "Капитан: 500");
+					Doc_PrintLine	( nDocID,  0, "РљРѕРјР°РЅРґР°: 2390");
+					Doc_PrintLine	( nDocID,  0, "РћС„РёС†РµСЂС‹: 500");
+					Doc_PrintLine	( nDocID,  0, "РљР°РїРёС‚Р°РЅ: 500");
 					Doc_PrintLine	( nDocID,  0, "----------------------"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Личная доля: 1000");
+					Doc_PrintLine	( nDocID,  0, "Р›РёС‡РЅР°СЏ РґРѕР»СЏ: 1000");
 					Doc_PrintLine	( nDocID,  0, "");
 	
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "Купеческий корабль 'Нико'"	);
+					Doc_PrintLine	( nDocID,  1, "РљСѓРїРµС‡РµСЃРєРёР№ РєРѕСЂР°Р±Р»СЊ 'РќРёРєРѕ'"	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "Общая добыча: 9970 золотых");
+					Doc_PrintLine	( nDocID,  1, "РћР±С‰Р°СЏ РґРѕР±С‹С‡Р°: 9970 Р·РѕР»РѕС‚С‹С…");
 					Doc_PrintLine	( nDocID,  1, "----------------------"	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Команда: 5610");
-					Doc_PrintLine	( nDocID,  1, "Офицеры: 1500");
-					Doc_PrintLine	( nDocID,  1, "Капитан: 1000");
+					Doc_PrintLine	( nDocID,  1, "РљРѕРјР°РЅРґР°: 5610");
+					Doc_PrintLine	( nDocID,  1, "РћС„РёС†РµСЂС‹: 1500");
+					Doc_PrintLine	( nDocID,  1, "РљР°РїРёС‚Р°РЅ: 1000");
 					Doc_PrintLine	( nDocID,  1, "----------------------"	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Личная доля: 1860");
+					Doc_PrintLine	( nDocID,  1, "Р›РёС‡РЅР°СЏ РґРѕР»СЏ: 1860");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Купеческий корабль 'Мария'"	);
+					Doc_PrintLine	( nDocID,  1, "РљСѓРїРµС‡РµСЃРєРёР№ РєРѕСЂР°Р±Р»СЊ 'РњР°СЂРёСЏ'"	);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "Общая добыча: 7851 золотых");
+					Doc_PrintLine	( nDocID,  1, "РћР±С‰Р°СЏ РґРѕР±С‹С‡Р°: 7851 Р·РѕР»РѕС‚С‹С…");
 					Doc_PrintLine	( nDocID,  1, "----------------------"	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Команда: 4400");
-					Doc_PrintLine	( nDocID,  1, "Офицеры: 750");
-					Doc_PrintLine	( nDocID,  1, "Капитан: 1000");
+					Doc_PrintLine	( nDocID,  1, "РљРѕРјР°РЅРґР°: 4400");
+					Doc_PrintLine	( nDocID,  1, "РћС„РёС†РµСЂС‹: 750");
+					Doc_PrintLine	( nDocID,  1, "РљР°РїРёС‚Р°РЅ: 1000");
 					Doc_PrintLine	( nDocID,  1, "----------------------"	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Личная доля: 1701");
+					Doc_PrintLine	( nDocID,  1, "Р›РёС‡РЅР°СЏ РґРѕР»СЏ: 1701");
 					Doc_PrintLine	( nDocID,  1, "");
 					
 					Francis_HasProof = TRUE;
@@ -1470,7 +1470,7 @@ INSTANCE ITWR_Addon_FrancisAbrechnung_Mis (C_ITEM)
 
 INSTANCE ITWR_Addon_GregsLogbuch_Mis (C_ITEM)
 {
-	name 					=	"Дневник";
+	name 					=	"Р”РЅРµРІРЅРёРє";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1481,7 +1481,7 @@ INSTANCE ITWR_Addon_GregsLogbuch_Mis (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Дневник Грега";
+	description				= 	"Р”РЅРµРІРЅРёРє Р“СЂРµРіР°";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseGregsLogbuch;
@@ -1501,26 +1501,26 @@ INSTANCE ITWR_Addon_GregsLogbuch_Mis (C_ITEM)
 
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
-					Doc_PrintLines	( nDocID,  0, "Я по горло сыт этим пляжем! Везде песок. Я не могу спокойно спать - все чешется. Мне уже не терпится забрать у Ворона золото за пленников и снова выйти в море. Надо поговорить с этим надутым болваном.");
+					Doc_PrintLines	( nDocID,  0, "РЇ РїРѕ РіРѕСЂР»Рѕ СЃС‹С‚ СЌС‚РёРј РїР»СЏР¶РµРј! Р’РµР·РґРµ РїРµСЃРѕРє. РЇ РЅРµ РјРѕРіСѓ СЃРїРѕРєРѕР№РЅРѕ СЃРїР°С‚СЊ - РІСЃРµ С‡РµС€РµС‚СЃСЏ. РњРЅРµ СѓР¶Рµ РЅРµ С‚РµСЂРїРёС‚СЃСЏ Р·Р°Р±СЂР°С‚СЊ Сѓ Р’РѕСЂРѕРЅР° Р·РѕР»РѕС‚Рѕ Р·Р° РїР»РµРЅРЅРёРєРѕРІ Рё СЃРЅРѕРІР° РІС‹Р№С‚Рё РІ РјРѕСЂРµ. РќР°РґРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ СЌС‚РёРј РЅР°РґСѓС‚С‹Рј Р±РѕР»РІР°РЅРѕРј.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Да как он смеет?! Его чертов помощник прогнал меня. Но он меня плохо знает! Я собственными руками отправлю этого лизоблюда Бладвина на корм рыбам."	);
-					Doc_PrintLines	( nDocID,  0, "Если он не расплатится, я буду очень сердит.");
+					Doc_PrintLines	( nDocID,  0, "Р”Р° РєР°Рє РѕРЅ СЃРјРµРµС‚?! Р•РіРѕ С‡РµСЂС‚РѕРІ РїРѕРјРѕС‰РЅРёРє РїСЂРѕРіРЅР°Р» РјРµРЅСЏ. РќРѕ РѕРЅ РјРµРЅСЏ РїР»РѕС…Рѕ Р·РЅР°РµС‚! РЇ СЃРѕР±СЃС‚РІРµРЅРЅС‹РјРё СЂСѓРєР°РјРё РѕС‚РїСЂР°РІР»СЋ СЌС‚РѕРіРѕ Р»РёР·РѕР±Р»СЋРґР° Р‘Р»Р°РґРІРёРЅР° РЅР° РєРѕСЂРј СЂС‹Р±Р°Рј."	);
+					Doc_PrintLines	( nDocID,  0, "Р•СЃР»Рё РѕРЅ РЅРµ СЂР°СЃРїР»Р°С‚РёС‚СЃСЏ, СЏ Р±СѓРґСѓ РѕС‡РµРЅСЊ СЃРµСЂРґРёС‚.");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
-					Doc_PrintLines	( nDocID,  1, "Эти бандиты совсем обнаглели! Они до сих пор не заплатили за последнюю партию. Но у нас пока недостаточно информации. Нужно выяснить, что задумал Ворон."	);
+					Doc_PrintLines	( nDocID,  1, "Р­С‚Рё Р±Р°РЅРґРёС‚С‹ СЃРѕРІСЃРµРј РѕР±РЅР°РіР»РµР»Рё! РћРЅРё РґРѕ СЃРёС… РїРѕСЂ РЅРµ Р·Р°РїР»Р°С‚РёР»Рё Р·Р° РїРѕСЃР»РµРґРЅСЋСЋ РїР°СЂС‚РёСЋ. РќРѕ Сѓ РЅР°СЃ РїРѕРєР° РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРЅС„РѕСЂРјР°С†РёРё. РќСѓР¶РЅРѕ РІС‹СЏСЃРЅРёС‚СЊ, С‡С‚Рѕ Р·Р°РґСѓРјР°Р» Р’РѕСЂРѕРЅ."	);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Я перевезу основную часть команды на материк. Они будут охранять руду. В лагере останется Фрэнсис с небольшой группой людей."	);
-					Doc_PrintLines	( nDocID,  1, "Времени терять нельзя. Я отдал доспехи Бонесу. Он проберется в лагерь бандитов и узнает, что планирует Ворон.");
+					Doc_PrintLines	( nDocID,  1, "РЇ РїРµСЂРµРІРµР·Сѓ РѕСЃРЅРѕРІРЅСѓСЋ С‡Р°СЃС‚СЊ РєРѕРјР°РЅРґС‹ РЅР° РјР°С‚РµСЂРёРє. РћРЅРё Р±СѓРґСѓС‚ РѕС…СЂР°РЅСЏС‚СЊ СЂСѓРґСѓ. Р’ Р»Р°РіРµСЂРµ РѕСЃС‚Р°РЅРµС‚СЃСЏ Р¤СЂСЌРЅСЃРёСЃ СЃ РЅРµР±РѕР»СЊС€РѕР№ РіСЂСѓРїРїРѕР№ Р»СЋРґРµР№."	);
+					Doc_PrintLines	( nDocID,  1, "Р’СЂРµРјРµРЅРё С‚РµСЂСЏС‚СЊ РЅРµР»СЊР·СЏ. РЇ РѕС‚РґР°Р» РґРѕСЃРїРµС…Рё Р‘РѕРЅРµСЃСѓ. РћРЅ РїСЂРѕР±РµСЂРµС‚СЃСЏ РІ Р»Р°РіРµСЂСЊ Р±Р°РЅРґРёС‚РѕРІ Рё СѓР·РЅР°РµС‚, С‡С‚Рѕ РїР»Р°РЅРёСЂСѓРµС‚ Р’РѕСЂРѕРЅ.");
 					
 					Greg_GaveArmorToBones = TRUE;
 					
 					Doc_Show		( nDocID );
 };
 //-----------------------------------------------------------------------
-//Bloodwyns Truhenschlьssel - Schwere Garderьstung
+//Bloodwyns TruhenschlСЊssel - Schwere GarderСЊstung
 //-----------------------------------------------------------------------
 INSTANCE ITKE_Addon_Bloodwyn_01 (C_Item)
 {
@@ -1534,15 +1534,15 @@ INSTANCE ITKE_Addon_Bloodwyn_01 (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Ключ Бладвина";
+	description			= 	"РљР»СЋС‡ Р‘Р»Р°РґРІРёРЅР°";
 	
-	TEXT[2]				=	"Ключ от сундука";
+	TEXT[2]				=	"РљР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-----------------------------------------------------------------------
-//Heiler Truhenschlьssel - 
+//Heiler TruhenschlСЊssel - 
 //-----------------------------------------------------------------------
 INSTANCE ITKE_Addon_Heiler (C_Item)
 {
@@ -1556,10 +1556,10 @@ INSTANCE ITKE_Addon_Heiler (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Ключ каменного стража";
+	description			= 	"РљР»СЋС‡ РєР°РјРµРЅРЅРѕРіРѕ СЃС‚СЂР°Р¶Р°";
 	
-	TEXT[2]				=	"Ключ от сундука";
-	TEXT[3]				=   "В странном древнем строении на болоте";
+	TEXT[2]				=	"РљР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°";
+	TEXT[3]				=   "Р’ СЃС‚СЂР°РЅРЅРѕРј РґСЂРµРІРЅРµРј СЃС‚СЂРѕРµРЅРёРё РЅР° Р±РѕР»РѕС‚Рµ";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -1569,7 +1569,7 @@ INSTANCE ITKE_Addon_Heiler (C_Item)
 
 INSTANCE  ItMi_TempelTorKey (C_ITEM)
 {	
-	name 				=	"Каменная табличка Куарходрона";
+	name 				=	"РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РљСѓР°СЂС…РѕРґСЂРѕРЅР°";
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_MULTI;
 
@@ -1580,7 +1580,7 @@ INSTANCE  ItMi_TempelTorKey (C_ITEM)
 	scemeName			=	"MAP";
 	on_state[0]			=	Use_TempelTorKey;
 
-	TEXT[2]		= "Ключ от храма Аданоса";
+	TEXT[2]		= "РљР»СЋС‡ РѕС‚ С…СЂР°РјР° РђРґР°РЅРѕСЃР°";
 
 };
 func void Use_TempelTorKey ()
@@ -1598,7 +1598,7 @@ func void Use_TempelTorKey ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					//Doc_PrintLines	( nDocID,  0, "  Eligam Shameris"					); 
 				
-					Doc_PrintLine	( nDocID,  0, "  Яхедра Акантар"					); 
+					Doc_PrintLine	( nDocID,  0, "  РЇС…РµРґСЂР° РђРєР°РЅС‚Р°СЂ"					); 
  
  					Doc_Show		( nDocID ); 
 };
@@ -1607,7 +1607,7 @@ func void Use_TempelTorKey ()
 //-----------------------------------------------------------------------
 INSTANCE ItMi_Addon_Bloodwyn_Kopf (C_Item)
 {
-	name 				=	"Голова Бладвина";
+	name 				=	"Р“РѕР»РѕРІР° Р‘Р»Р°РґРІРёРЅР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -1628,7 +1628,7 @@ INSTANCE ItMi_Addon_Bloodwyn_Kopf (C_Item)
 
 instance ItWR_Addon_TreasureMap (C_Item)
 {
-	name 		= "Карта сокровищ"; 
+	name 		= "РљР°СЂС‚Р° СЃРѕРєСЂРѕРІРёС‰"; 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -1643,7 +1643,7 @@ instance ItWR_Addon_TreasureMap (C_Item)
 
 	description	= name;
 	TEXT[0]		= "";
-	TEXT[1]		= "На карте отмечено несколько мест.";
+	TEXT[1]		= "РќР° РєР°СЂС‚Рµ РѕС‚РјРµС‡РµРЅРѕ РЅРµСЃРєРѕР»СЊРєРѕ РјРµСЃС‚.";
 	TEXT[5]		= NAME_Value;
 	COUNT[5]	= value;
 };
@@ -1669,7 +1669,7 @@ instance ItWR_Addon_TreasureMap (C_Item)
 
 INSTANCE ItMi_Addon_GregsTreasureBottle_MIS	(C_Item)
 {
-	name 				=	"Послание в бутылке";
+	name 				=	"РџРѕСЃР»Р°РЅРёРµ РІ Р±СѓС‚С‹Р»РєРµ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -1681,7 +1681,7 @@ INSTANCE ItMi_Addon_GregsTreasureBottle_MIS	(C_Item)
 	on_state[0]			=   Use_GregsBottle;
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
-	TEXT[2]				=   "В бутылке находится листок бумаги.";
+	TEXT[2]				=   "Р’ Р±СѓС‚С‹Р»РєРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»РёСЃС‚РѕРє Р±СѓРјР°РіРё.";
 
 };
 func void Use_GregsBottle ()
@@ -1692,7 +1692,7 @@ func void Use_GregsBottle ()
 /******************************************************************************************/
 INSTANCE itmi_erolskelch (C_Item)
 {
-	name 				=	"Поцарапанная серебряная чаша";
+	name 				=	"РџРѕС†Р°СЂР°РїР°РЅРЅР°СЏ СЃРµСЂРµР±СЂСЏРЅР°СЏ С‡Р°С€Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

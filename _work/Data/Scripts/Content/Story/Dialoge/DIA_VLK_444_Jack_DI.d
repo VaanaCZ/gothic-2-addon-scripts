@@ -48,23 +48,23 @@ func void DIA_Jack_DI_GREET_Info ()
 {
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_00"); //Надеюсь, ты знаешь, что делаешь, приятель.
-		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_01"); //На это не уйдет много времени.
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_02"); //Будь осторожен, и возвращайся назад целым и невредимым.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_00"); //РќР°РґРµСЋСЃСЊ, С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РґРµР»Р°РµС€СЊ, РїСЂРёСЏС‚РµР»СЊ.
+		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_01"); //РќР° СЌС‚Рѕ РЅРµ СѓР№РґРµС‚ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_02"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, Рё РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РЅР°Р·Р°Рґ С†РµР»С‹Рј Рё РЅРµРІСЂРµРґРёРјС‹Рј.
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
 		if (DIA_Jack_DI_GREET_OneTime == FALSE)
 		{
-			AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_03"); //Что ты здесь делаешь?
+			AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_03"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
 			B_GivePlayerXP (XP_Ambient);
 			DIA_Jack_DI_GREET_OneTime = TRUE;
 		};
 
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_04"); //Если на нас опять обрушится этот ад, я уведу корабль отсюда. С тобой или без тебя! Ты слышал?
-		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_05"); //Не болтай ерунды. Я со всем справлюсь.
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_06"); //Тогда поторопись.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_04"); //Р•СЃР»Рё РЅР° РЅР°СЃ РѕРїСЏС‚СЊ РѕР±СЂСѓС€РёС‚СЃСЏ СЌС‚РѕС‚ Р°Рґ, СЏ СѓРІРµРґСѓ РєРѕСЂР°Р±Р»СЊ РѕС‚СЃСЋРґР°. РЎ С‚РѕР±РѕР№ РёР»Рё Р±РµР· С‚РµР±СЏ! РўС‹ СЃР»С‹С€Р°Р»?
+		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_05"); //РќРµ Р±РѕР»С‚Р°Р№ РµСЂСѓРЅРґС‹. РЇ СЃРѕ РІСЃРµРј СЃРїСЂР°РІР»СЋСЃСЊ.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_06"); //РўРѕРіРґР° РїРѕС‚РѕСЂРѕРїРёСЃСЊ.
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine	(self,"Start");	
 	};
@@ -81,7 +81,7 @@ instance DIA_Jack_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Jack_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Я сделал это. Я уничтожил врага!";
+	description = 	"РЇ СЃРґРµР»Р°Р» СЌС‚Рѕ. РЇ СѓРЅРёС‡С‚РѕР¶РёР» РІСЂР°РіР°!";
 
 };
 
@@ -94,19 +94,19 @@ func int DIA_Jack_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Jack_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Jack_DI_UndeadDragonDead_15_00"); //Я сделал это. Я уничтожил врага!
-	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_01"); //Я надеялся, что все кончится хорошо. Но, должен признать, последние несколько часов я не был так уверен.
-	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_02"); //Мы можем наконец поднять паруса?
+	AI_Output			(other ,self, "DIA_Jack_DI_UndeadDragonDead_15_00"); //РЇ СЃРґРµР»Р°Р» СЌС‚Рѕ. РЇ СѓРЅРёС‡С‚РѕР¶РёР» РІСЂР°РіР°!
+	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_01"); //РЇ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ РІСЃРµ РєРѕРЅС‡РёС‚СЃСЏ С…РѕСЂРѕС€Рѕ. РќРѕ, РґРѕР»Р¶РµРЅ РїСЂРёР·РЅР°С‚СЊ, РїРѕСЃР»РµРґРЅРёРµ РЅРµСЃРєРѕР»СЊРєРѕ С‡Р°СЃРѕРІ СЏ РЅРµ Р±С‹Р» С‚Р°Рє СѓРІРµСЂРµРЅ.
+	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_02"); //РњС‹ РјРѕР¶РµРј РЅР°РєРѕРЅРµС† РїРѕРґРЅСЏС‚СЊ РїР°СЂСѓСЃР°?
 
 	Info_ClearChoices	(DIA_Jack_DI_UndeadDragonDead);
-	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Подожди немного.", DIA_Jack_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Да. Закончим с этим.", DIA_Jack_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "РџРѕРґРѕР¶РґРё РЅРµРјРЅРѕРіРѕ.", DIA_Jack_DI_UndeadDragonDead_moment );
+	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Р”Р°. Р—Р°РєРѕРЅС‡РёРј СЃ СЌС‚РёРј.", DIA_Jack_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Jack_DI_UndeadDragonDead_moment ()
 {
-	AI_Output			(other, self, "DIA_Jack_DI_UndeadDragonDead_moment_15_00"); //Подожди немного. Я еще кое-что должен сделать.
-	AI_Output			(self, other, "DIA_Jack_DI_UndeadDragonDead_moment_14_01"); //Тогда поторопись. Я не хочу подхватить здесь цингу.
+	AI_Output			(other, self, "DIA_Jack_DI_UndeadDragonDead_moment_15_00"); //РџРѕРґРѕР¶РґРё РЅРµРјРЅРѕРіРѕ. РЇ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Jack_DI_UndeadDragonDead_moment_14_01"); //РўРѕРіРґР° РїРѕС‚РѕСЂРѕРїРёСЃСЊ. РЇ РЅРµ С…РѕС‡Сѓ РїРѕРґС…РІР°С‚РёС‚СЊ Р·РґРµСЃСЊ С†РёРЅРіСѓ.
 	AI_StopProcessInfos (self);
 };
 

@@ -47,25 +47,25 @@ FUNC VOID DIA_GornOW_Hello_Info()
 	VAR C_NPC Milten;
 	Milten			= Hlp_GetNpc(PC_Mage_OW);
 	
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//Хватит бездельничать здесь - ты свободен!
-	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //Да уж. Давно пора было вытащить меня отсюда.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//Но я совсем не ожидал, что это будешь ты, впрочем. Я чертовски рад видеть тебя.
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//(ухмыляется) Гаронд говорит, что ты ешь слишком много и он больше не может себе позволить кормить тебя.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//Раз уж ты упомянул об этом, я бы не отказался от пары кружек пива. Но нужно выбираться отсюда. Эта камера мне уже порядком надоела.
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//РҐРІР°С‚РёС‚ Р±РµР·РґРµР»СЊРЅРёС‡Р°С‚СЊ Р·РґРµСЃСЊ - С‚С‹ СЃРІРѕР±РѕРґРµРЅ!
+	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //Р”Р° СѓР¶. Р”Р°РІРЅРѕ РїРѕСЂР° Р±С‹Р»Рѕ РІС‹С‚Р°С‰РёС‚СЊ РјРµРЅСЏ РѕС‚СЃСЋРґР°.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//РќРѕ СЏ СЃРѕРІСЃРµРј РЅРµ РѕР¶РёРґР°Р», С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС€СЊ С‚С‹, РІРїСЂРѕС‡РµРј. РЇ С‡РµСЂС‚РѕРІСЃРєРё СЂР°Рґ РІРёРґРµС‚СЊ С‚РµР±СЏ.
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//(СѓС…РјС‹Р»СЏРµС‚СЃСЏ) Р“Р°СЂРѕРЅРґ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РµС€СЊ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ Рё РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ РјРѕР¶РµС‚ СЃРµР±Рµ РїРѕР·РІРѕР»РёС‚СЊ РєРѕСЂРјРёС‚СЊ С‚РµР±СЏ.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//Р Р°Р· СѓР¶ С‚С‹ СѓРїРѕРјСЏРЅСѓР» РѕР± СЌС‚РѕРј, СЏ Р±С‹ РЅРµ РѕС‚РєР°Р·Р°Р»СЃСЏ РѕС‚ РїР°СЂС‹ РєСЂСѓР¶РµРє РїРёРІР°. РќРѕ РЅСѓР¶РЅРѕ РІС‹Р±РёСЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°. Р­С‚Р° РєР°РјРµСЂР° РјРЅРµ СѓР¶Рµ РїРѕСЂСЏРґРєРѕРј РЅР°РґРѕРµР»Р°.
 	
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //Подожди, у меня есть кое-что, что могло бы пригодиться тебе.
-		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //Я нашел эти доспехи здесь, в камере. Наверное, их спрятал какой-то заключенный.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //РџРѕРґРѕР¶РґРё, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ, С‡С‚Рѕ РјРѕРіР»Рѕ Р±С‹ РїСЂРёРіРѕРґРёС‚СЊСЃСЏ С‚РµР±Рµ.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //РЇ РЅР°С€РµР» СЌС‚Рё РґРѕСЃРїРµС…Рё Р·РґРµСЃСЊ, РІ РєР°РјРµСЂРµ. РќР°РІРµСЂРЅРѕРµ, РёС… СЃРїСЂСЏС‚Р°Р» РєР°РєРѕР№-С‚Рѕ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№.
 		B_GiveInvItems (self, other, itar_sld_M, 1);
-		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Для меня они слишком малы, но тебе могут подойти ...
-		AI_Output (other,self ,"DIA_GornOW_Add_15_03"); //Спасибо! Увидимся у Милтена ...
+		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Р”Р»СЏ РјРµРЅСЏ РѕРЅРё СЃР»РёС€РєРѕРј РјР°Р»С‹, РЅРѕ С‚РµР±Рµ РјРѕРіСѓС‚ РїРѕРґРѕР№С‚Рё ...
+		AI_Output (other,self ,"DIA_GornOW_Add_15_03"); //РЎРїР°СЃРёР±Рѕ! РЈРІРёРґРёРјСЃСЏ Сѓ РњРёР»С‚РµРЅР° ...
 	}
 	else
 	{
-		AI_Output 	(other,self ,"DIA_GornOW_Hello_15_05");	//Ладно, увидимся у Милтена.
+		AI_Output 	(other,self ,"DIA_GornOW_Hello_15_05");	//Р›Р°РґРЅРѕ, СѓРІРёРґРёРјСЃСЏ Сѓ РњРёР»С‚РµРЅР°.
 	};
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_06");	//Конечно.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_06");	//РљРѕРЅРµС‡РЅРѕ.
 	
 	AI_StopProcessInfos (self);
 	
@@ -100,20 +100,20 @@ FUNC INT DIA_GornOW_MetMilten_Condition()
 };
 FUNC VOID DIA_GornOW_MetMilten_Info()
 {	
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//Послушай - мне здесь уже порядком надоело. Я думаю, нужно выбираться из этой долины.
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//Как ты прошел через проход?
-	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//Там есть путь через заброшенную шахту.
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//Хорошо. Я выжду нужный момент и уберусь отсюда.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//РџРѕСЃР»СѓС€Р°Р№ - РјРЅРµ Р·РґРµСЃСЊ СѓР¶Рµ РїРѕСЂСЏРґРєРѕРј РЅР°РґРѕРµР»Рѕ. РЇ РґСѓРјР°СЋ, РЅСѓР¶РЅРѕ РІС‹Р±РёСЂР°С‚СЊСЃСЏ РёР· СЌС‚РѕР№ РґРѕР»РёРЅС‹.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//РљР°Рє С‚С‹ РїСЂРѕС€РµР» С‡РµСЂРµР· РїСЂРѕС…РѕРґ?
+	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//РўР°Рј РµСЃС‚СЊ РїСѓС‚СЊ С‡РµСЂРµР· Р·Р°Р±СЂРѕС€РµРЅРЅСѓСЋ С€Р°С…С‚Сѓ.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//РҐРѕСЂРѕС€Рѕ. РЇ РІС‹Р¶РґСѓ РЅСѓР¶РЅС‹Р№ РјРѕРјРµРЅС‚ Рё СѓР±РµСЂСѓСЃСЊ РѕС‚СЃСЋРґР°.
 	
 	if (other.guild != GIL_SLD)
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//А куда ты пойдешь?
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//Я слышал, Ли еще жив. Я хочу опять присоединиться к нему.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//Рђ РєСѓРґР° С‚С‹ РїРѕР№РґРµС€СЊ?
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//РЇ СЃР»С‹С€Р°Р», Р›Рё РµС‰Рµ Р¶РёРІ. РЇ С…РѕС‡Сѓ РѕРїСЏС‚СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅРµРјСѓ.
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//Тогда иди на ферму Онара. Ли и его парни сейчас там. Ему всегда нужны парни вроде тебя.
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//Так и сделаю. Схожу, проверю, как они там.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//РўРѕРіРґР° РёРґРё РЅР° С„РµСЂРјСѓ РћРЅР°СЂР°. Р›Рё Рё РµРіРѕ РїР°СЂРЅРё СЃРµР№С‡Р°СЃ С‚Р°Рј. Р•РјСѓ РІСЃРµРіРґР° РЅСѓР¶РЅС‹ РїР°СЂРЅРё РІСЂРѕРґРµ С‚РµР±СЏ.
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//РўР°Рє Рё СЃРґРµР»Р°СЋ. РЎС…РѕР¶Сѓ, РїСЂРѕРІРµСЂСЋ, РєР°Рє РѕРЅРё С‚Р°Рј.
 	};
 };	
 
@@ -127,7 +127,7 @@ INSTANCE DIA_GornOW_SeeYou (C_INFO)
 	condition	= DIA_GornOW_SeeYou_Condition;
 	information	= DIA_GornOW_Seeyou_Info;
 	permanent	= TRUE;
-	description = "Еще увидимся.";
+	description = "Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.";
 };                       
 FUNC INT DIA_GornOW_SeeYou_Condition()
 {
@@ -140,8 +140,8 @@ FUNC INT DIA_GornOW_SeeYou_Condition()
  
 FUNC VOID DIA_GornOW_SeeYou_Info()
 {	
-	AI_Output	(other,self ,"DIA_GornOW_SeeYou_15_00");//Еще увидимся.
-	AI_Output	(self ,other,"DIA_GornOW_SeeYou_12_01");//Это точно.
+	AI_Output	(other,self ,"DIA_GornOW_SeeYou_15_00");//Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.
+	AI_Output	(self ,other,"DIA_GornOW_SeeYou_12_01");//Р­С‚Рѕ С‚РѕС‡РЅРѕ.
 	
 	/*
 	if (other.guild == GIL_KDF)

@@ -1,7 +1,7 @@
 instance BDT_1084_Addon_Senyan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Сеньян";
+	name 		= "РЎРµРЅСЊСЏРЅ";
 	guild 		= GIL_BDT;
 	id 			= 1084;
 	voice 		= 12;

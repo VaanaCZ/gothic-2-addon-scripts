@@ -3,7 +3,7 @@
 //**********************************************************************************
 INSTANCE ITWr_Addon_Hinweis_02		(C_Item)
 {
-	name 				=	"Важное сообщение";
+	name 				=	"Р’Р°Р¶РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -15,7 +15,7 @@ INSTANCE ITWr_Addon_Hinweis_02		(C_Item)
 	on_state[0]			=   Use_Hinweis_02;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=  "С таверны в бандитском лагере";
+	TEXT[0]				=  "РЎ С‚Р°РІРµСЂРЅС‹ РІ Р±Р°РЅРґРёС‚СЃРєРѕРј Р»Р°РіРµСЂРµ";
 };
 func void Use_Hinweis_02 ()
 {
@@ -29,14 +29,14 @@ func void Use_Hinweis_02 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Парни,");
+					Doc_PrintLine	( nDocID,  0, "РџР°СЂРЅРё,");
 					Doc_PrintLines	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Лу пропал в болотах. Вероятно, его съели болотные акулы.");	
-					Doc_PrintLines	( nDocID,  0, "Но что еще хуже - ключ от двери пропал вместе с ним."					);
+					Doc_PrintLines	( nDocID,  0, "Р›Сѓ РїСЂРѕРїР°Р» РІ Р±РѕР»РѕС‚Р°С…. Р’РµСЂРѕСЏС‚РЅРѕ, РµРіРѕ СЃСЉРµР»Рё Р±РѕР»РѕС‚РЅС‹Рµ Р°РєСѓР»С‹.");	
+					Doc_PrintLines	( nDocID,  0, "РќРѕ С‡С‚Рѕ РµС‰Рµ С…СѓР¶Рµ - РєР»СЋС‡ РѕС‚ РґРІРµСЂРё РїСЂРѕРїР°Р» РІРјРµСЃС‚Рµ СЃ РЅРёРј."					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Кто найдет его, сможет забрать вещи Лу.");	
+					Doc_PrintLines	( nDocID,  0, "РљС‚Рѕ РЅР°Р№РґРµС‚ РµРіРѕ, СЃРјРѕР¶РµС‚ Р·Р°Р±СЂР°С‚СЊ РІРµС‰Рё Р›Сѓ.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Снаф");
+					Doc_PrintLine	( nDocID,  0, "РЎРЅР°С„");
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
@@ -45,7 +45,7 @@ func void Use_Hinweis_02 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Health_04		(C_Item)
 {
-	name 				=	"Рецепт лечебного зелья";
+	name 				=	"Р РµС†РµРїС‚ Р»РµС‡РµР±РЅРѕРіРѕ Р·РµР»СЊСЏ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -56,10 +56,10 @@ INSTANCE ITWr_Addon_Health_04		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_Heilrezept_04;
 	scemeName			=	"MAP";
-	description			= 	"Чистое здоровье";
+	description			= 	"Р§РёСЃС‚РѕРµ Р·РґРѕСЂРѕРІСЊРµ";
 	
-	TEXT[2]				=	"Для приготовления этого сильного зелья";
-	TEXT[3]				=	"необходимо знание рецепта лечебного эликсира.";
+	TEXT[2]				=	"Р”Р»СЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ СЌС‚РѕРіРѕ СЃРёР»СЊРЅРѕРіРѕ Р·РµР»СЊСЏ";
+	TEXT[3]				=	"РЅРµРѕР±С…РѕРґРёРјРѕ Р·РЅР°РЅРёРµ СЂРµС†РµРїС‚Р° Р»РµС‡РµР±РЅРѕРіРѕ СЌР»РёРєСЃРёСЂР°.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -74,7 +74,7 @@ func void Use_Heilrezept_04 ()
 			{
 				PLAYER_TALENT_ALCHEMY[POTION_Health_04] = TRUE;
 				Snd_Play ("LevelUP");
-				B_LogEntry (TOPIC_TalentAlchemy,"Также необходимо иметь 1 луговой горец и 3 лечебные эссенции.");
+				B_LogEntry (TOPIC_TalentAlchemy,"РўР°РєР¶Рµ РЅРµРѕР±С…РѕРґРёРјРѕ РёРјРµС‚СЊ 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС† Рё 3 Р»РµС‡РµР±РЅС‹Рµ СЌСЃСЃРµРЅС†РёРё.");
 			};
 		};
 		nDocID = 	Doc_Create		()			  ;							// DocManager
@@ -85,13 +85,13 @@ func void Use_Heilrezept_04 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Создание лечебного зелья:");
+					Doc_PrintLines	( nDocID,  0, "РЎРѕР·РґР°РЅРёРµ Р»РµС‡РµР±РЅРѕРіРѕ Р·РµР»СЊСЏ:");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Необходим один луговой горец и три лечебные эссенции.");	
-					Doc_PrintLines	( nDocID,  0, "Перемешать и варить согласно рецепту лечебного эликсира.");	
+					Doc_PrintLines	( nDocID,  0, "РќРµРѕР±С…РѕРґРёРј РѕРґРёРЅ Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС† Рё С‚СЂРё Р»РµС‡РµР±РЅС‹Рµ СЌСЃСЃРµРЅС†РёРё.");	
+					Doc_PrintLines	( nDocID,  0, "РџРµСЂРµРјРµС€Р°С‚СЊ Рё РІР°СЂРёС‚СЊ СЃРѕРіР»Р°СЃРЅРѕ СЂРµС†РµРїС‚Сѓ Р»РµС‡РµР±РЅРѕРіРѕ СЌР»РёРєСЃРёСЂР°.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Это зелье может создать только алхимик, знающий рецепт лечебного эликсира.");	
+					Doc_PrintLines	( nDocID,  0, "Р­С‚Рѕ Р·РµР»СЊРµ РјРѕР¶РµС‚ СЃРѕР·РґР°С‚СЊ С‚РѕР»СЊРєРѕ Р°Р»С…РёРјРёРє, Р·РЅР°СЋС‰РёР№ СЂРµС†РµРїС‚ Р»РµС‡РµР±РЅРѕРіРѕ СЌР»РёРєСЃРёСЂР°.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -102,7 +102,7 @@ func void Use_Heilrezept_04 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Mana_04		(C_Item)
 {
-	name 				=	"Рецепт маны";
+	name 				=	"Р РµС†РµРїС‚ РјР°РЅС‹";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -114,10 +114,10 @@ INSTANCE ITWr_Addon_Mana_04		(C_Item)
 	on_state[0]			=   Use_Manarezept_04;
 	scemeName			=	"MAP";
 
-	description			= 	"Чистая мана";
+	description			= 	"Р§РёСЃС‚Р°СЏ РјР°РЅР°";
 	
-	TEXT[2]				=	"Для приготовления этого сильного зелья";
-	TEXT[3]				=	"необходимо знание рецепта эликсира маны.";
+	TEXT[2]				=	"Р”Р»СЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ СЌС‚РѕРіРѕ СЃРёР»СЊРЅРѕРіРѕ Р·РµР»СЊСЏ";
+	TEXT[3]				=	"РЅРµРѕР±С…РѕРґРёРјРѕ Р·РЅР°РЅРёРµ СЂРµС†РµРїС‚Р° СЌР»РёРєСЃРёСЂР° РјР°РЅС‹.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -132,7 +132,7 @@ func void Use_Manarezept_04 ()
 			{
 				PLAYER_TALENT_ALCHEMY[POTION_Mana_04] = TRUE;
 				Snd_Play ("LevelUP");
-				B_LogEntry (TOPIC_TalentAlchemy,"Также необходимо иметь 1 луговой горец и 3 эссенции маны.");
+				B_LogEntry (TOPIC_TalentAlchemy,"РўР°РєР¶Рµ РЅРµРѕР±С…РѕРґРёРјРѕ РёРјРµС‚СЊ 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС† Рё 3 СЌСЃСЃРµРЅС†РёРё РјР°РЅС‹.");
 			};
 		};
 		nDocID = 	Doc_Create		()			  ;							// DocManager
@@ -143,13 +143,13 @@ func void Use_Manarezept_04 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Создание зелья маны:");
+					Doc_PrintLines	( nDocID,  0, "РЎРѕР·РґР°РЅРёРµ Р·РµР»СЊСЏ РјР°РЅС‹:");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Необходим один луговой горец и три эссенции маны.");	
-					Doc_PrintLines	( nDocID,  0, "Перемешать и варить согласно рецепту эликсира маны.");	
+					Doc_PrintLines	( nDocID,  0, "РќРµРѕР±С…РѕРґРёРј РѕРґРёРЅ Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС† Рё С‚СЂРё СЌСЃСЃРµРЅС†РёРё РјР°РЅС‹.");	
+					Doc_PrintLines	( nDocID,  0, "РџРµСЂРµРјРµС€Р°С‚СЊ Рё РІР°СЂРёС‚СЊ СЃРѕРіР»Р°СЃРЅРѕ СЂРµС†РµРїС‚Сѓ СЌР»РёРєСЃРёСЂР° РјР°РЅС‹.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Это зелье может создать только алхимик, знающий рецепт эликсира маны.");	
+					Doc_PrintLines	( nDocID,  0, "Р­С‚Рѕ Р·РµР»СЊРµ РјРѕР¶РµС‚ СЃРѕР·РґР°С‚СЊ С‚РѕР»СЊРєРѕ Р°Р»С…РёРјРёРє, Р·РЅР°СЋС‰РёР№ СЂРµС†РµРїС‚ СЌР»РёРєСЃРёСЂР° РјР°РЅС‹.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -160,7 +160,7 @@ func void Use_Manarezept_04 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Hinweis_01		(C_Item)
 {
-	name 				=	"Важное сообщение";
+	name 				=	"Р’Р°Р¶РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -172,7 +172,7 @@ INSTANCE ITWr_Addon_Hinweis_01		(C_Item)
 	on_state[0]			=   Use_Hinweis_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=  "прикрепленное к хижине в болотах";
+	TEXT[0]				=  "РїСЂРёРєСЂРµРїР»РµРЅРЅРѕРµ Рє С…РёР¶РёРЅРµ РІ Р±РѕР»РѕС‚Р°С…";
 };
 func void Use_Hinweis_01 ()
 {
@@ -186,14 +186,14 @@ func void Use_Hinweis_01 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Парни,");
-					Doc_PrintLines	( nDocID,  0, "В этих сундуках находится неприкосновенный запас.");	
-					Doc_PrintLines	( nDocID,  0, "Он предназначен ДЛЯ ВСЕХ. Но воспользоваться им можно только в случае крайней необходимости");	
-					Doc_PrintLines	( nDocID,  0, "и в разумных пределах."					);
-					Doc_PrintLines	( nDocID,  0, "Надеюсь, все будут придерживаться этого правила."					);
+					Doc_PrintLine	( nDocID,  0, "РџР°СЂРЅРё,");
+					Doc_PrintLines	( nDocID,  0, "Р’ СЌС‚РёС… СЃСѓРЅРґСѓРєР°С… РЅР°С…РѕРґРёС‚СЃСЏ РЅРµРїСЂРёРєРѕСЃРЅРѕРІРµРЅРЅС‹Р№ Р·Р°РїР°СЃ.");	
+					Doc_PrintLines	( nDocID,  0, "РћРЅ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅ Р”Р›РЇ Р’РЎР•РҐ. РќРѕ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РёРј РјРѕР¶РЅРѕ С‚РѕР»СЊРєРѕ РІ СЃР»СѓС‡Р°Рµ РєСЂР°Р№РЅРµР№ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё");	
+					Doc_PrintLines	( nDocID,  0, "Рё РІ СЂР°Р·СѓРјРЅС‹С… РїСЂРµРґРµР»Р°С…."					);
+					Doc_PrintLines	( nDocID,  0, "РќР°РґРµСЋСЃСЊ, РІСЃРµ Р±СѓРґСѓС‚ РїСЂРёРґРµСЂР¶РёРІР°С‚СЊСЃСЏ СЌС‚РѕРіРѕ РїСЂР°РІРёР»Р°."					);
 					Doc_PrintLines	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Флетчер");
+					Doc_PrintLine	( nDocID,  0, "Р¤Р»РµС‚С‡РµСЂ");
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
@@ -202,7 +202,7 @@ func void Use_Hinweis_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_William_01		(C_Item)
 {
-	name 				=	"Записка";
+	name 				=	"Р—Р°РїРёСЃРєР°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -214,7 +214,7 @@ INSTANCE ITWr_Addon_William_01		(C_Item)
 	on_state[0]			=   Use_William_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"Найдена на теле рыбака Вильяма.";
+	Text[0]				=	"РќР°Р№РґРµРЅР° РЅР° С‚РµР»Рµ СЂС‹Р±Р°РєР° Р’РёР»СЊСЏРјР°.";
 };
 func void Use_William_01 ()
 {
@@ -228,15 +228,15 @@ func void Use_William_01 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Вильям, ");
-					Doc_PrintLines	( nDocID,  0, "В полнолуние я отвлеку стражу.");	
-					Doc_PrintLines	( nDocID,  0, "Постарайся выбраться отсюда, но будь осторожен!");	
-					Doc_PrintLines	( nDocID,  0, "Если ты пойдешь по дороге, ты сможешь выйти из болот."					);
-					Doc_PrintLines	( nDocID,  0, "Лагерь пиратов находится по другую сторону долины на западе."					);
-					Doc_PrintLines	( nDocID,  0, "Оттуда ты сможешь вернуться домой на корабле.");	
+					Doc_PrintLine	( nDocID,  0, "Р’РёР»СЊСЏРј, ");
+					Doc_PrintLines	( nDocID,  0, "Р’ РїРѕР»РЅРѕР»СѓРЅРёРµ СЏ РѕС‚РІР»РµРєСѓ СЃС‚СЂР°Р¶Сѓ.");	
+					Doc_PrintLines	( nDocID,  0, "РџРѕСЃС‚Р°СЂР°Р№СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°, РЅРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ!");	
+					Doc_PrintLines	( nDocID,  0, "Р•СЃР»Рё С‚С‹ РїРѕР№РґРµС€СЊ РїРѕ РґРѕСЂРѕРіРµ, С‚С‹ СЃРјРѕР¶РµС€СЊ РІС‹Р№С‚Рё РёР· Р±РѕР»РѕС‚."					);
+					Doc_PrintLines	( nDocID,  0, "Р›Р°РіРµСЂСЊ РїРёСЂР°С‚РѕРІ РЅР°С…РѕРґРёС‚СЃСЏ РїРѕ РґСЂСѓРіСѓСЋ СЃС‚РѕСЂРѕРЅСѓ РґРѕР»РёРЅС‹ РЅР° Р·Р°РїР°РґРµ."					);
+					Doc_PrintLines	( nDocID,  0, "РћС‚С‚СѓРґР° С‚С‹ СЃРјРѕР¶РµС€СЊ РІРµСЂРЅСѓС‚СЊСЃСЏ РґРѕРјРѕР№ РЅР° РєРѕСЂР°Р±Р»Рµ.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Желаю удачи");	
+					Doc_PrintLine	( nDocID,  0, "Р–РµР»Р°СЋ СѓРґР°С‡Рё");	
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
@@ -244,7 +244,7 @@ func void Use_William_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_MCELIXIER_01		(C_Item)
 {
-	name 				=	"Рецепт";
+	name 				=	"Р РµС†РµРїС‚";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -256,8 +256,8 @@ INSTANCE ITWr_Addon_MCELIXIER_01		(C_Item)
 	on_state[0]			=   Use_MCELIXIER_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Рецепт эликсира изменения сознания.";
-	Text[1]				= 	"Это зелье помогает восстановить память.";
+	Text[0]				= 	"Р РµС†РµРїС‚ СЌР»РёРєСЃРёСЂР° РёР·РјРµРЅРµРЅРёСЏ СЃРѕР·РЅР°РЅРёСЏ.";
+	Text[1]				= 	"Р­С‚Рѕ Р·РµР»СЊРµ РїРѕРјРѕРіР°РµС‚ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ РїР°РјСЏС‚СЊ.";
 };
 func void Use_MCELIXIER_01 ()
 {
@@ -271,13 +271,13 @@ func void Use_MCELIXIER_01 ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Эликсир изменения сознания");	
+					Doc_PrintLine	( nDocID,  0, "Р­Р»РёРєСЃРёСЂ РёР·РјРµРЅРµРЅРёСЏ СЃРѕР·РЅР°РЅРёСЏ");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Для создания этого эликсира необходим секрет из жал двух кровавых мух.");	
-					Doc_PrintLines	( nDocID,  0, "К нему нужно добавить один экстракт маны и одну лечебную эссенцию.");	
-					Doc_PrintLines	( nDocID,  0, "Перемешать, вскипятить и добавить красный жгучий перец."					);
+					Doc_PrintLines	( nDocID,  0, "Р”Р»СЏ СЃРѕР·РґР°РЅРёСЏ СЌС‚РѕРіРѕ СЌР»РёРєСЃРёСЂР° РЅРµРѕР±С…РѕРґРёРј СЃРµРєСЂРµС‚ РёР· Р¶Р°Р» РґРІСѓС… РєСЂРѕРІР°РІС‹С… РјСѓС….");	
+					Doc_PrintLines	( nDocID,  0, "Рљ РЅРµРјСѓ РЅСѓР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ РѕРґРёРЅ СЌРєСЃС‚СЂР°РєС‚ РјР°РЅС‹ Рё РѕРґРЅСѓ Р»РµС‡РµР±РЅСѓСЋ СЌСЃСЃРµРЅС†РёСЋ.");	
+					Doc_PrintLines	( nDocID,  0, "РџРµСЂРµРјРµС€Р°С‚СЊ, РІСЃРєРёРїСЏС‚РёС‚СЊ Рё РґРѕР±Р°РІРёС‚СЊ РєСЂР°СЃРЅС‹Р№ Р¶РіСѓС‡РёР№ РїРµСЂРµС†."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Это зелье может приготовить только опытный алхимик, владеющий навыком экстрагирования секрета из жал кровавых мух.");	
+					Doc_PrintLines	( nDocID,  0, "Р­С‚Рѕ Р·РµР»СЊРµ РјРѕР¶РµС‚ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ С‚РѕР»СЊРєРѕ РѕРїС‹С‚РЅС‹Р№ Р°Р»С…РёРјРёРє, РІР»Р°РґРµСЋС‰РёР№ РЅР°РІС‹РєРѕРј СЌРєСЃС‚СЂР°РіРёСЂРѕРІР°РЅРёСЏ СЃРµРєСЂРµС‚Р° РёР· Р¶Р°Р» РєСЂРѕРІР°РІС‹С… РјСѓС….");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
@@ -287,7 +287,7 @@ func void Use_MCELIXIER_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Pirates_01		(C_Item)
 {
-	name 				=	"Сальная записка";
+	name 				=	"РЎР°Р»СЊРЅР°СЏ Р·Р°РїРёСЃРєР°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -299,7 +299,7 @@ INSTANCE ITWr_Addon_Pirates_01		(C_Item)
 	on_state[0]			=   Use_Pirates_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=	"Найдена в кармане Ангуса.";
+	TEXT[0]				=	"РќР°Р№РґРµРЅР° РІ РєР°СЂРјР°РЅРµ РђРЅРіСѓСЃР°.";
 };
 func void Use_Pirates_01 ()
 {
@@ -312,25 +312,25 @@ func void Use_Pirates_01 ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Пираты, "					);
+					Doc_PrintLine	( nDocID,  0, "РџРёСЂР°С‚С‹, "					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Получите последнюю посылку, предназначенную для нас.");	
-					Doc_PrintLine	( nDocID,  0, "Затем принесите ее в вашу пещеру. Я встречу вас там.");	
-					Doc_PrintLines	( nDocID,  0, "Я заплачу за эту посылку двойную цену."					);
+					Doc_PrintLines	( nDocID,  0, "РџРѕР»СѓС‡РёС‚Рµ РїРѕСЃР»РµРґРЅСЋСЋ РїРѕСЃС‹Р»РєСѓ, РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРЅСѓСЋ РґР»СЏ РЅР°СЃ.");	
+					Doc_PrintLine	( nDocID,  0, "Р—Р°С‚РµРј РїСЂРёРЅРµСЃРёС‚Рµ РµРµ РІ РІР°С€Сѓ РїРµС‰РµСЂСѓ. РЇ РІСЃС‚СЂРµС‡Сѓ РІР°СЃ С‚Р°Рј.");	
+					Doc_PrintLines	( nDocID,  0, "РЇ Р·Р°РїР»Р°С‡Сѓ Р·Р° СЌС‚Сѓ РїРѕСЃС‹Р»РєСѓ РґРІРѕР№РЅСѓСЋ С†РµРЅСѓ."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "До встречи.");	
-					Doc_PrintLine	( nDocID,  0, "Том");	
+					Doc_PrintLines	( nDocID,  0, "Р”Рѕ РІСЃС‚СЂРµС‡Рё.");	
+					Doc_PrintLine	( nDocID,  0, "РўРѕРј");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
-//	Rezept fьr grьnene Novizen
+//	Rezept fСЊr grСЊnene Novizen
 //**********************************************************************************
 INSTANCE ITWr_Addon_Joint_01		(C_Item)
 {
-	name 				=	"Зеленый послушник";
+	name 				=	"Р—РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -342,7 +342,7 @@ INSTANCE ITWr_Addon_Joint_01		(C_Item)
 	on_state[0]			=   Use_Joint_Rezept_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				= 	"В сундуке Фортуно";
+	TEXT[0]				= 	"Р’ СЃСѓРЅРґСѓРєРµ Р¤РѕСЂС‚СѓРЅРѕ";
 };
 func void Use_Joint_Rezept_01 ()
 {
@@ -356,14 +356,14 @@ func void Use_Joint_Rezept_01 ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Зеленый послушник"					);
+					Doc_PrintLine	( nDocID,  0, "Р—РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "(...) Косяки здесь довольно хороши, но в болотном лагере они получались все же лучше.");	
+					Doc_PrintLines	( nDocID,  0, "(...) РљРѕСЃСЏРєРё Р·РґРµСЃСЊ РґРѕРІРѕР»СЊРЅРѕ С…РѕСЂРѕС€Рё, РЅРѕ РІ Р±РѕР»РѕС‚РЅРѕРј Р»Р°РіРµСЂРµ РѕРЅРё РїРѕР»СѓС‡Р°Р»РёСЃСЊ РІСЃРµ Р¶Рµ Р»СѓС‡С€Рµ.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Если я возьму эссенцию двух болотных трав и добавлю луговой горец, получится косяк с эффектом зеленого послушника."					);
+					Doc_PrintLines	( nDocID,  0, "Р•СЃР»Рё СЏ РІРѕР·СЊРјСѓ СЌСЃСЃРµРЅС†РёСЋ РґРІСѓС… Р±РѕР»РѕС‚РЅС‹С… С‚СЂР°РІ Рё РґРѕР±Р°РІР»СЋ Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†, РїРѕР»СѓС‡РёС‚СЃСЏ РєРѕСЃСЏРє СЃ СЌС„С„РµРєС‚РѕРј Р·РµР»РµРЅРѕРіРѕ РїРѕСЃР»СѓС€РЅРёРєР°."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Зеленый послушник помогает от любой боли и просветляет разум.");	
+					Doc_PrintLines	( nDocID,  0, "Р—РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє РїРѕРјРѕРіР°РµС‚ РѕС‚ Р»СЋР±РѕР№ Р±РѕР»Рё Рё РїСЂРѕСЃРІРµС‚Р»СЏРµС‚ СЂР°Р·СѓРј.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
@@ -374,7 +374,7 @@ func void Use_Joint_Rezept_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Lou_Rezept		(C_Item)
 {
-	name 				=	"Рецепт Молота Лу";
+	name 				=	"Р РµС†РµРїС‚ РњРѕР»РѕС‚Р° Р›Сѓ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -386,7 +386,7 @@ INSTANCE ITWr_Addon_Lou_Rezept		(C_Item)
 	on_state[0]			=   UseLouRezept;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Рецепт Молота Лу";
+	Text[0]				= 	"Р РµС†РµРїС‚ РњРѕР»РѕС‚Р° Р›Сѓ";
 };
 func void UseLouRezept ()
 {
@@ -401,18 +401,18 @@ func void UseLouRezept ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Рецепт Молота Лу"					);
+					Doc_PrintLine	( nDocID,  0, "Р РµС†РµРїС‚ РњРѕР»РѕС‚Р° Р›Сѓ"					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Ингредиенты для приготовления Молота:");	
+					Doc_PrintLine	( nDocID,  0, "РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ РњРѕР»РѕС‚Р°:");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Возьмите бутылку воды, две репы и немного болотной травы.");	
-					Doc_PrintLines	( nDocID,  0, "Добавьте перемолотый зуб болотной акулы."					);
-					Doc_PrintLines	( nDocID,  0, "Поместите все в бутылку, добавьте рома и вскипятите."					);
+					Doc_PrintLines	( nDocID,  0, "Р’РѕР·СЊРјРёС‚Рµ Р±СѓС‚С‹Р»РєСѓ РІРѕРґС‹, РґРІРµ СЂРµРїС‹ Рё РЅРµРјРЅРѕРіРѕ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹.");	
+					Doc_PrintLines	( nDocID,  0, "Р”РѕР±Р°РІСЊС‚Рµ РїРµСЂРµРјРѕР»РѕС‚С‹Р№ Р·СѓР± Р±РѕР»РѕС‚РЅРѕР№ Р°РєСѓР»С‹."					);
+					Doc_PrintLines	( nDocID,  0, "РџРѕРјРµСЃС‚РёС‚Рµ РІСЃРµ РІ Р±СѓС‚С‹Р»РєСѓ, РґРѕР±Р°РІСЊС‚Рµ СЂРѕРјР° Рё РІСЃРєРёРїСЏС‚РёС‚Рµ."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Удачи.");	
+					Doc_PrintLine	( nDocID,  0, "РЈРґР°С‡Рё.");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Старик, рассказавший мне этот рецепт, предупреждал, что лучше не дышать испарениями этого пойла!");	
+					Doc_PrintLines	( nDocID,  0, "РЎС‚Р°СЂРёРє, СЂР°СЃСЃРєР°Р·Р°РІС€РёР№ РјРЅРµ СЌС‚РѕС‚ СЂРµС†РµРїС‚, РїСЂРµРґСѓРїСЂРµР¶РґР°Р», С‡С‚Рѕ Р»СѓС‡С€Рµ РЅРµ РґС‹С€Р°С‚СЊ РёСЃРїР°СЂРµРЅРёСЏРјРё СЌС‚РѕРіРѕ РїРѕР№Р»Р°!");	
 					Doc_Show		( nDocID );
 
 };
@@ -421,7 +421,7 @@ func void UseLouRezept ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Lou_Rezept2		(C_Item)
 {
-	name 				=	"Рецепт двойного Молота Лу";
+	name 				=	"Р РµС†РµРїС‚ РґРІРѕР№РЅРѕРіРѕ РњРѕР»РѕС‚Р° Р›Сѓ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -433,7 +433,7 @@ INSTANCE ITWr_Addon_Lou_Rezept2		(C_Item)
 	on_state[0]			=   UseLouRezept2;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Рецепт двойного Молота Лу";
+	Text[0]				= 	"Р РµС†РµРїС‚ РґРІРѕР№РЅРѕРіРѕ РњРѕР»РѕС‚Р° Р›Сѓ";
 };
 func void UseLouRezept2 ()
 {
@@ -447,13 +447,13 @@ func void UseLouRezept2 ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Двойной Молот Лу"					);
+					Doc_PrintLine	( nDocID,  0, "Р”РІРѕР№РЅРѕР№ РњРѕР»РѕС‚ Р›Сѓ"					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Возьмите Молот Лу и перегоните его еще раз.");
+					Doc_PrintLines	( nDocID,  0, "Р’РѕР·СЊРјРёС‚Рµ РњРѕР»РѕС‚ Р›Сѓ Рё РїРµСЂРµРіРѕРЅРёС‚Рµ РµРіРѕ РµС‰Рµ СЂР°Р·.");
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Этот напиток способен приготовить только очень опытный винокур.");	
+					Doc_PrintLines	( nDocID,  0, "Р­С‚РѕС‚ РЅР°РїРёС‚РѕРє СЃРїРѕСЃРѕР±РµРЅ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ С‚РѕР»СЊРєРѕ РѕС‡РµРЅСЊ РѕРїС‹С‚РЅС‹Р№ РІРёРЅРѕРєСѓСЂ.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Если за это возьмется дилетант, он рискует не ослепнуть и даже лишиться жизни.");	
+					Doc_PrintLines	( nDocID,  0, "Р•СЃР»Рё Р·Р° СЌС‚Рѕ РІРѕР·СЊРјРµС‚СЃСЏ РґРёР»РµС‚Р°РЅС‚, РѕРЅ СЂРёСЃРєСѓРµС‚ РЅРµ РѕСЃР»РµРїРЅСѓС‚СЊ Рё РґР°Р¶Рµ Р»РёС€РёС‚СЊСЃСЏ Р¶РёР·РЅРё.");	
 					
 					Doc_Show		( nDocID );
 
@@ -464,7 +464,7 @@ func void UseLouRezept2 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Piratentod		(C_Item)
 {
-	name 				=	"Быстрая селедка";
+	name 				=	"Р‘С‹СЃС‚СЂР°СЏ СЃРµР»РµРґРєР°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -476,7 +476,7 @@ INSTANCE ITWr_Addon_Piratentod		(C_Item)
 	on_state[0]			=   UseRezeptPiratentod;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"Рецепт Быстрой селедки.";
+	Text[0]				=	"Р РµС†РµРїС‚ Р‘С‹СЃС‚СЂРѕР№ СЃРµР»РµРґРєРё.";
 };
 func void UseRezeptPiratentod ()
 {
@@ -490,16 +490,16 @@ func void UseRezeptPiratentod ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Быстрая селедка"					);
+					Doc_PrintLine	( nDocID,  0, "Р‘С‹СЃС‚СЂР°СЏ СЃРµР»РµРґРєР°"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Пойло для настоящих мужчин");	
+					Doc_PrintLine	( nDocID,  0, "РџРѕР№Р»Рѕ РґР»СЏ РЅР°СЃС‚РѕСЏС‰РёС… РјСѓР¶С‡РёРЅ");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Как всегда, необходима бутылка воды. Добавьте немного рома и свежую рыбу.");	
-					Doc_PrintLines	( nDocID,  0, "Как только жидкость станет желтой, выньте рыбу и добавьте пучок"					);
-					Doc_PrintLines	( nDocID,  0, "свежесорванной снеппер-травы."					);
+					Doc_PrintLines	( nDocID,  0, "РљР°Рє РІСЃРµРіРґР°, РЅРµРѕР±С…РѕРґРёРјР° Р±СѓС‚С‹Р»РєР° РІРѕРґС‹. Р”РѕР±Р°РІСЊС‚Рµ РЅРµРјРЅРѕРіРѕ СЂРѕРјР° Рё СЃРІРµР¶СѓСЋ СЂС‹Р±Сѓ.");	
+					Doc_PrintLines	( nDocID,  0, "РљР°Рє С‚РѕР»СЊРєРѕ Р¶РёРґРєРѕСЃС‚СЊ СЃС‚Р°РЅРµС‚ Р¶РµР»С‚РѕР№, РІС‹РЅСЊС‚Рµ СЂС‹Р±Сѓ Рё РґРѕР±Р°РІСЊС‚Рµ РїСѓС‡РѕРє"					);
+					Doc_PrintLines	( nDocID,  0, "СЃРІРµР¶РµСЃРѕСЂРІР°РЅРЅРѕР№ СЃРЅРµРїРїРµСЂ-С‚СЂР°РІС‹."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Осторожно! Это пойло обладает очень сильным эффектом.");	
+					Doc_PrintLines	( nDocID,  0, "РћСЃС‚РѕСЂРѕР¶РЅРѕ! Р­С‚Рѕ РїРѕР№Р»Рѕ РѕР±Р»Р°РґР°РµС‚ РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹Рј СЌС„С„РµРєС‚РѕРј.");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_Show		( nDocID );
 
@@ -507,7 +507,7 @@ func void UseRezeptPiratentod ()
 //------------------------------------------------------------------------------------------
 INSTANCE Fakescroll_Addon (C_Item)
 {	
-	name 					=	"Клочок бумаги";
+	name 					=	"РљР»РѕС‡РѕРє Р±СѓРјР°РіРё";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;	
@@ -529,7 +529,7 @@ INSTANCE Fakescroll_Addon (C_Item)
 //------------------------------------------------------------------------------------------
 INSTANCE ItWr_Addon_AxtAnleitung (C_ITEM)
 {	
-	name 				=	"Инструкция изготовления бандитского топора";
+	name 				=	"РРЅСЃС‚СЂСѓРєС†РёСЏ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ Р±Р°РЅРґРёС‚СЃРєРѕРіРѕ С‚РѕРїРѕСЂР°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -541,7 +541,7 @@ INSTANCE ItWr_Addon_AxtAnleitung (C_ITEM)
 	on_state[0]			=   UseAxtAnleitung;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Инструкция изготовления легкого острого топора.";
+	Text[0]				= 	"РРЅСЃС‚СЂСѓРєС†РёСЏ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ Р»РµРіРєРѕРіРѕ РѕСЃС‚СЂРѕРіРѕ С‚РѕРїРѕСЂР°.";
 };
 func void UseAxtAnleitung ()
 {
@@ -556,18 +556,18 @@ func void UseAxtAnleitung ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Бандитский топор"					);
+					Doc_PrintLine	( nDocID,  0, "Р‘Р°РЅРґРёС‚СЃРєРёР№ С‚РѕРїРѕСЂ"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Одноручный топор");	
+					Doc_PrintLine	( nDocID,  0, "РћРґРЅРѕСЂСѓС‡РЅС‹Р№ С‚РѕРїРѕСЂ");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Этот топор может выковать любой, знакомый с основами кузнечного дела.");	
-					Doc_PrintLines	( nDocID,  0, "Необходимы два куска раскаленной сырой стали."					);
-					Doc_PrintLines	( nDocID,  0, "Один кусок руды и три зуба волка, снеппера или подобного им зверя."					);
+					Doc_PrintLines	( nDocID,  0, "Р­С‚РѕС‚ С‚РѕРїРѕСЂ РјРѕР¶РµС‚ РІС‹РєРѕРІР°С‚СЊ Р»СЋР±РѕР№, Р·РЅР°РєРѕРјС‹Р№ СЃ РѕСЃРЅРѕРІР°РјРё РєСѓР·РЅРµС‡РЅРѕРіРѕ РґРµР»Р°.");	
+					Doc_PrintLines	( nDocID,  0, "РќРµРѕР±С…РѕРґРёРјС‹ РґРІР° РєСѓСЃРєР° СЂР°СЃРєР°Р»РµРЅРЅРѕР№ СЃС‹СЂРѕР№ СЃС‚Р°Р»Рё."					);
+					Doc_PrintLines	( nDocID,  0, "РћРґРёРЅ РєСѓСЃРѕРє СЂСѓРґС‹ Рё С‚СЂРё Р·СѓР±Р° РІРѕР»РєР°, СЃРЅРµРїРїРµСЂР° РёР»Рё РїРѕРґРѕР±РЅРѕРіРѕ РёРј Р·РІРµСЂСЏ."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Перекуйте руду и зубы вместе со сталью на наковальне.");	
+					Doc_PrintLine	( nDocID,  0, "РџРµСЂРµРєСѓР№С‚Рµ СЂСѓРґСѓ Рё Р·СѓР±С‹ РІРјРµСЃС‚Рµ СЃРѕ СЃС‚Р°Р»СЊСЋ РЅР° РЅР°РєРѕРІР°Р»СЊРЅРµ.");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Такой топор очень легок и наносит значительный урон.");
+					Doc_PrintLine	( nDocID,  0, "РўР°РєРѕР№ С‚РѕРїРѕСЂ РѕС‡РµРЅСЊ Р»РµРіРѕРє Рё РЅР°РЅРѕСЃРёС‚ Р·РЅР°С‡РёС‚РµР»СЊРЅС‹Р№ СѓСЂРѕРЅ.");
 					Doc_PrintLines	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
@@ -576,7 +576,7 @@ func void UseAxtAnleitung ()
 //------------------------------------------------------------------------------------------
 INSTANCE ItWr_Addon_SUMMONANCIENTGHOST (C_ITEM)
 {	
-	name 				=	"Вызов 'Куарходрона'";
+	name 				=	"Р’С‹Р·РѕРІ 'РљСѓР°СЂС…РѕРґСЂРѕРЅР°'";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -588,7 +588,7 @@ INSTANCE ItWr_Addon_SUMMONANCIENTGHOST (C_ITEM)
 	on_state[0]			=   UseSummonAncientGhost;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"С помощью этого свитка можно вызвать Куарходрона.";
+	Text[0]				=	"РЎ РїРѕРјРѕС‰СЊСЋ СЌС‚РѕРіРѕ СЃРІРёС‚РєР° РјРѕР¶РЅРѕ РІС‹Р·РІР°С‚СЊ РљСѓР°СЂС…РѕРґСЂРѕРЅР°.";
 };
 func void UseSummonAncientGhost ()
 {
@@ -621,7 +621,7 @@ func void UseSummonAncientGhost ()
 
 instance ItWr_Map_AddonWorld (C_Item)
 {
-	name 		= "Забытая долина зодчих.";  
+	name 		= "Р—Р°Р±С‹С‚Р°СЏ РґРѕР»РёРЅР° Р·РѕРґС‡РёС….";  
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;

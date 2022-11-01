@@ -3,7 +3,7 @@
 instance NONE_Addon_114_Lance_ADW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "À‡ÌÒ";
+	name 		= "–õ–∞–Ω—Å";
 	guild 		= GIL_NONE;
 	id 			= 114;
 	voice 		= 3;
@@ -35,8 +35,8 @@ instance NONE_Addon_114_Lance_ADW (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 25); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 25); //Grenzen f—år Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_PreStart_114;

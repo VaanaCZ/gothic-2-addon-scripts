@@ -16,25 +16,25 @@ INSTANCE Gil_Values(C_GILVALUES)
 	WATER_DEPTH_KNEE 		[GIL_HUMAN] = 65;				// Wassertiefe ab der WWalk-Mode aktiv (in cm)
 	WATER_DEPTH_CHEST		[GIL_HUMAN] = 140;				// Wassertiefe ab der Swim-Mode aktiv (in cm)
 
-	STEP_HEIGHT		 		[GIL_HUMAN] = 60;				// Stufenhöhe für autom. Höhenüberwindung
-	JUMPLOW_HEIGHT	 		[GIL_HUMAN] = 105;				// Höhe bis zu der JumpUpLow benutzt wird (in cm)
-	JUMPMID_HEIGHT	 		[GIL_HUMAN] = 205;				// Höhe bis zu der JumpUpMid benutzt wird (in cm)
-	JUMPUP_HEIGHT 			[GIL_HUMAN] = 200; 				// Sprunghöhe wenn höher als JumpUpMid (in cm) Ist effektiv höher, da von Boden bis Körpermitte gemessen!!!
+	STEP_HEIGHT		 		[GIL_HUMAN] = 60;				// StufenhÑ†he fÑŒr autom. HÑ†henÑŒberwindung
+	JUMPLOW_HEIGHT	 		[GIL_HUMAN] = 105;				// HÑ†he bis zu der JumpUpLow benutzt wird (in cm)
+	JUMPMID_HEIGHT	 		[GIL_HUMAN] = 205;				// HÑ†he bis zu der JumpUpMid benutzt wird (in cm)
+	JUMPUP_HEIGHT 			[GIL_HUMAN] = 200; 				// SprunghÑ†he wenn hÑ†her als JumpUpMid (in cm) Ist effektiv hÑ†her, da von Boden bis KÑ†rpermitte gemessen!!!
 
 	SLIDE_ANGLE		 		[GIL_HUMAN] = 50;				// Winkel ab der Model in Slide (in Grad)
 	DISABLE_AUTOROLL		[GIL_HUMAN] = 0;
 	SURFACE_ALIGN			[GIL_HUMAN] = 0;
 
-	TURN_SPEED				[GIL_HUMAN] = 240;				// dieser Wert gilt nur für NSCs!
-															// Turn-Speed für den Spieler ist PROGRAMMINTERN auf 100° im Normalmodus und 200° im Kampfmodus eingestellt!
+	TURN_SPEED				[GIL_HUMAN] = 240;				// dieser Wert gilt nur fÑŒr NSCs!
+															// Turn-Speed fÑŒr den Spieler ist PROGRAMMINTERN auf 100Â° im Normalmodus und 200Â° im Kampfmodus eingestellt!
 	// Kletterkanten - Winkel
 	CLIMB_HEADING_ANGLE		[GIL_HUMAN] = 50;
 	CLIMB_HORIZ_ANGLE		[GIL_HUMAN] = 50;
 	CLIMB_GROUND_ANGLE  	[GIL_HUMAN] = 50;
 
-	// Fallhöhe / Fallschaden
-	FALLDOWN_HEIGHT			[GIL_HUMAN] = 500;				// Fallhöhe in cm ohne Schaden zu nehmen
-	FALLDOWN_DAMAGE			[GIL_HUMAN] = 20;				// Schaden in HPs für jeden weiteren Meter
+	// FallhÑ†he / Fallschaden
+	FALLDOWN_HEIGHT			[GIL_HUMAN] = 500;				// FallhÑ†he in cm ohne Schaden zu nehmen
+	FALLDOWN_DAMAGE			[GIL_HUMAN] = 20;				// Schaden in HPs fÑŒr jeden weiteren Meter
 
 	// Kampf
 	FIGHT_RANGE_BASE		[GIL_HUMAN]	= 60;				// Bip01 bis BBox
@@ -55,7 +55,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_MEATBUG] = 2;
 	TURN_SPEED				[GIL_MEATBUG] = 120;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_MEATBUG] = 800;
 	FALLDOWN_DAMAGE			[GIL_MEATBUG] = 1;
 
@@ -88,7 +88,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	TURN_SPEED				[GIL_SHEEP] = 120; //!!! NICHT kleiner als 100, sonst wird Turn-Ani nicht gespielt (Bug)
 
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_SHEEP] = 400;
 	FALLDOWN_DAMAGE			[GIL_SHEEP] = 10;
 
@@ -125,7 +125,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_GOBBO] = 50;
 	CLIMB_GROUND_ANGLE  	[GIL_GOBBO] = 50;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_GOBBO] = 500;
 	FALLDOWN_DAMAGE			[GIL_GOBBO] = 10;
 
@@ -155,7 +155,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_GOBBO_SKELETON] = CLIMB_HORIZ_ANGLE		[GIL_GOBBO];
 	CLIMB_GROUND_ANGLE  	[GIL_GOBBO_SKELETON] = CLIMB_GROUND_ANGLE  		[GIL_GOBBO];
                                                                                       
-	// Fallhöhe / Fallschaden                      // Fallhöhe / Fallschaden          
+	// FallhÑ†he / Fallschaden                      // FallhÑ†he / Fallschaden          
 	FALLDOWN_HEIGHT			[GIL_GOBBO_SKELETON] = FALLDOWN_HEIGHT			[GIL_GOBBO];
 	FALLDOWN_DAMAGE			[GIL_GOBBO_SKELETON] = FALLDOWN_DAMAGE			[GIL_GOBBO];
                                                                                       
@@ -188,7 +188,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_SUMMONED_GOBBO_SKELETON] = CLIMB_HORIZ_ANGLE		[GIL_GOBBO];
 	CLIMB_GROUND_ANGLE  	[GIL_SUMMONED_GOBBO_SKELETON] = CLIMB_GROUND_ANGLE  	[GIL_GOBBO];
                                                                                                 
-	// Fallhöhe / Fallschaden                               // Fallhöhe / Fallschaden           
+	// FallhÑ†he / Fallschaden                               // FallhÑ†he / Fallschaden           
 	FALLDOWN_HEIGHT			[GIL_SUMMONED_GOBBO_SKELETON] = FALLDOWN_HEIGHT			[GIL_GOBBO];
 	FALLDOWN_DAMAGE			[GIL_SUMMONED_GOBBO_SKELETON] = FALLDOWN_DAMAGE			[GIL_GOBBO];
                                                                                                 
@@ -216,7 +216,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_SCAVENGER] = 0;
 	TURN_SPEED				[GIL_SCAVENGER] = 180; 
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_SCAVENGER] = 400;
 	FALLDOWN_DAMAGE			[GIL_SCAVENGER] = 10;
 
@@ -249,7 +249,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_GIANT_RAT] = 1;
 	TURN_SPEED				[GIL_GIANT_RAT] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_GIANT_RAT] = 400;
 	FALLDOWN_DAMAGE			[GIL_GIANT_RAT] = 10;
 
@@ -281,7 +281,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_GIANT_BUG] = 1;
 	TURN_SPEED				[GIL_GIANT_BUG] = 240; 
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_GIANT_BUG] = 400;
 	FALLDOWN_DAMAGE			[GIL_GIANT_BUG] = 10;
 
@@ -304,8 +304,8 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SWIM_TIME				[GIL_BLOODFLY] = TIME_INFINITE;
 	DIVE_TIME				[GIL_BLOODFLY] = 0;
 
-// .Der Wert "999999" für fiegende Monster führt dazu, dass Wasserpolys wie statische Polys behandelt werden
-//	auch auf diesen "laufen" und niemals ins Schwimmen/Tauchen kommen können.
+// .Der Wert "999999" fÑŒr fiegende Monster fÑŒhrt dazu, dass Wasserpolys wie statische Polys behandelt werden
+//	auch auf diesen "laufen" und niemals ins Schwimmen/Tauchen kommen kÑ†nnen.
 	WATER_DEPTH_KNEE		[GIL_BLOODFLY] = 999999;
 	WATER_DEPTH_CHEST		[GIL_BLOODFLY] = 999999;
 
@@ -317,7 +317,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN			[GIL_BLOODFLY] = 0;
 	TURN_SPEED				[GIL_BLOODFLY] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_BLOODFLY] = 9999;
 	FALLDOWN_DAMAGE			[GIL_BLOODFLY] = 0;
 
@@ -344,7 +344,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_WARAN] = 1;
 	TURN_SPEED				[GIL_WARAN] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_WARAN] = 500;
 	FALLDOWN_DAMAGE			[GIL_WARAN] = 10;
 
@@ -378,7 +378,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_WOLF] = 1;
 	TURN_SPEED				[GIL_WOLF] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_WOLF] = 500;
 	FALLDOWN_DAMAGE			[GIL_WOLF] = 10;
 
@@ -411,7 +411,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_SUMMONED_WOLF] = SURFACE_ALIGN	 		[GIL_WOLF]; 
 	TURN_SPEED				[GIL_SUMMONED_WOLF] = TURN_SPEED			[GIL_WOLF]; 
                                                                                      
-	// Fallhöhe / Fallschaden                     // Fallhöhe / Fallschaden          
+	// FallhÑ†he / Fallschaden                     // FallhÑ†he / Fallschaden          
 	FALLDOWN_HEIGHT			[GIL_SUMMONED_WOLF] = FALLDOWN_HEIGHT		[GIL_WOLF]; 
 	FALLDOWN_DAMAGE			[GIL_SUMMONED_WOLF] = FALLDOWN_DAMAGE		[GIL_WOLF];
 
@@ -442,7 +442,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_MINECRAWLER] = 2;
 	TURN_SPEED				[GIL_MINECRAWLER] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_MINECRAWLER] = 1000;
 	FALLDOWN_DAMAGE			[GIL_MINECRAWLER] = 1;
 
@@ -468,7 +468,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_LURKER] = 1;
 	TURN_SPEED				[GIL_LURKER] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_LURKER] = 400;
 	FALLDOWN_DAMAGE			[GIL_LURKER] = 20;
 
@@ -500,7 +500,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_SKELETON] = CLIMB_HORIZ_ANGLE		[GIL_HUMAN];                    									
 	CLIMB_GROUND_ANGLE  	[GIL_SKELETON] = CLIMB_GROUND_ANGLE  	[GIL_HUMAN];                   
                                                                     
-	// Fallhöhe / Fallschaden                                        
+	// FallhÑ†he / Fallschaden                                        
 	FALLDOWN_HEIGHT			[GIL_SKELETON] = FALLDOWN_HEIGHT		[GIL_HUMAN];                
 	FALLDOWN_DAMAGE			[GIL_SKELETON] = FALLDOWN_DAMAGE		[GIL_HUMAN];                                                        
                                                                           
@@ -534,7 +534,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_SUMMONED_SKELETON] = CLIMB_HORIZ_ANGLE		[GIL_SKELETON];
 	CLIMB_GROUND_ANGLE  	[GIL_SUMMONED_SKELETON] = CLIMB_GROUND_ANGLE  	[GIL_SKELETON];
                                                                                             
-	// Fallhöhe / Fallschaden                         // Fallhöhe / Fallschaden             
+	// FallhÑ†he / Fallschaden                         // FallhÑ†he / Fallschaden             
 	FALLDOWN_HEIGHT			[GIL_SUMMONED_SKELETON] = FALLDOWN_HEIGHT		[GIL_SKELETON];
 	FALLDOWN_DAMAGE			[GIL_SUMMONED_SKELETON] = FALLDOWN_DAMAGE		[GIL_SKELETON];
                                                                                             
@@ -552,8 +552,8 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SWIM_TIME		 		[GIL_SKELETON_MAGE] = TIME_INFINITE;
 	DIVE_TIME		 		[GIL_SKELETON_MAGE] = 0;
 
-// .Der Wert "999999" für fiegende Monster führt dazu, dass Wasserpolys wie statische Polys behandelt werden
-//	auch auf diesen "laufen" und niemals ins Schwimmen/Tauchen kommen können.
+// .Der Wert "999999" fÑŒr fiegende Monster fÑŒhrt dazu, dass Wasserpolys wie statische Polys behandelt werden
+//	auch auf diesen "laufen" und niemals ins Schwimmen/Tauchen kommen kÑ†nnen.
 	WATER_DEPTH_KNEE 		[GIL_SKELETON_MAGE] = 999999;
 	WATER_DEPTH_CHEST		[GIL_SKELETON_MAGE] = 999999;
 
@@ -565,7 +565,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_SKELETON_MAGE] = 0;
 	TURN_SPEED				[GIL_SKELETON_MAGE] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_SKELETON_MAGE] = 9999;
 	FALLDOWN_DAMAGE			[GIL_SKELETON_MAGE] = 0;
 
@@ -597,7 +597,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_ZOMBIE] = 50;
 	CLIMB_GROUND_ANGLE  	[GIL_ZOMBIE] = 50;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_ZOMBIE] = 9999;
 	FALLDOWN_DAMAGE			[GIL_ZOMBIE] = 0;
 
@@ -632,7 +632,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_SUMMONEDZOMBIE] = 50;
 	CLIMB_GROUND_ANGLE  	[GIL_SUMMONEDZOMBIE] = 50;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_SUMMONEDZOMBIE] = 9999;
 	FALLDOWN_DAMAGE			[GIL_SUMMONEDZOMBIE] = 0;
 
@@ -666,7 +666,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_SNAPPER] = 1;
 	TURN_SPEED				[GIL_SNAPPER] = 240;
 	
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_SNAPPER] = 400;
 	FALLDOWN_DAMAGE			[GIL_SNAPPER] = 10;
 
@@ -700,7 +700,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_SHADOWBEAST] = 2;
 	TURN_SPEED				[GIL_SHADOWBEAST] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_SHADOWBEAST] = 600;
 	FALLDOWN_DAMAGE			[GIL_SHADOWBEAST] = 10;
 
@@ -726,7 +726,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_SHADOWBEAST_SKELETON] = SURFACE_ALIGN	 		[GIL_SHADOWBEAST];
 	TURN_SPEED				[GIL_SHADOWBEAST_SKELETON] = TURN_SPEED				[GIL_SHADOWBEAST];
                                                                                                   
-	// Fallhöhe / Fallschaden                            // Fallhöhe / Fallschaden                
+	// FallhÑ†he / Fallschaden                            // FallhÑ†he / Fallschaden                
 	FALLDOWN_HEIGHT			[GIL_SHADOWBEAST_SKELETON] = FALLDOWN_HEIGHT		[GIL_SHADOWBEAST];
 	FALLDOWN_DAMAGE			[GIL_SHADOWBEAST_SKELETON] = FALLDOWN_DAMAGE		[GIL_SHADOWBEAST];
                                                                                                   
@@ -741,8 +741,8 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SWIM_TIME		 		[GIL_HARPY] = TIME_INFINITE;
 	DIVE_TIME		 		[GIL_HARPY] = 0;
 
-// .Der Wert "999999" für fiegende Monster führt dazu, dass Wasserpolys wie statische Polys behandelt werden
-//	auch auf diesen "laufen" und niemals ins Schwimmen/Tauchen kommen können.
+// .Der Wert "999999" fÑŒr fiegende Monster fÑŒhrt dazu, dass Wasserpolys wie statische Polys behandelt werden
+//	auch auf diesen "laufen" und niemals ins Schwimmen/Tauchen kommen kÑ†nnen.
 	WATER_DEPTH_KNEE 		[GIL_HARPY] = 999999;
 	WATER_DEPTH_CHEST		[GIL_HARPY] = 999999;
 
@@ -754,7 +754,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_HARPY] = 0;
 	TURN_SPEED				[GIL_HARPY] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_HARPY] = 9999;
 	FALLDOWN_DAMAGE			[GIL_HARPY] = 0;
 
@@ -783,7 +783,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_STONEGOLEM] = 0;
 	TURN_SPEED				[GIL_STONEGOLEM] = 120;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_STONEGOLEM] = 9999;
 	FALLDOWN_DAMAGE			[GIL_STONEGOLEM] = 0;
 
@@ -812,7 +812,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_FIREGOLEM] = SURFACE_ALIGN	 		[GIL_STONEGOLEM];
 	TURN_SPEED				[GIL_FIREGOLEM] = TURN_SPEED			[GIL_STONEGOLEM];
                                                                                       
-	// Fallhöhe / Fallschaden                 // Fallhöhe / Fallschaden               
+	// FallhÑ†he / Fallschaden                 // FallhÑ†he / Fallschaden               
 	FALLDOWN_HEIGHT			[GIL_FIREGOLEM] = FALLDOWN_HEIGHT		[GIL_STONEGOLEM];
 	FALLDOWN_DAMAGE			[GIL_FIREGOLEM] = FALLDOWN_DAMAGE		[GIL_STONEGOLEM];
                                                                                       
@@ -841,7 +841,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_ICEGOLEM] = SURFACE_ALIGN	 		[GIL_STONEGOLEM];
 	TURN_SPEED				[GIL_ICEGOLEM] = TURN_SPEED				[GIL_STONEGOLEM];    
                                                                                       
-	// Fallhöhe / Fallschaden                // Fallhöhe / Fallschaden                
+	// FallhÑ†he / Fallschaden                // FallhÑ†he / Fallschaden                
 	FALLDOWN_HEIGHT			[GIL_ICEGOLEM] = FALLDOWN_HEIGHT		[GIL_STONEGOLEM];    
 	FALLDOWN_DAMAGE			[GIL_ICEGOLEM] = FALLDOWN_DAMAGE		[GIL_STONEGOLEM];    
                                                                                       
@@ -870,7 +870,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_SUMMONED_GOLEM] = SURFACE_ALIGN	 	[GIL_STONEGOLEM];
 	TURN_SPEED				[GIL_SUMMONED_GOLEM] = TURN_SPEED			[GIL_STONEGOLEM];    
                                                                                             
-	// Fallhöhe / Fallschaden                      // Fallhöhe / Fallschaden                
+	// FallhÑ†he / Fallschaden                      // FallhÑ†he / Fallschaden                
 	FALLDOWN_HEIGHT			[GIL_SUMMONED_GOLEM] = FALLDOWN_HEIGHT		[GIL_STONEGOLEM];    
 	FALLDOWN_DAMAGE			[GIL_SUMMONED_GOLEM] = FALLDOWN_DAMAGE		[GIL_STONEGOLEM];    
                                                                                             
@@ -892,8 +892,8 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SWIM_TIME		 		[GIL_DEMON] = TIME_INFINITE;
 	DIVE_TIME		 		[GIL_DEMON] = 0;
 
-// .Der Wert "999999" für fiegende Monster führt dazu, dass Wasserpolys wie statische Polys behandelt werden
-//	auch auf diesen "laufen" und niemals ins Schwimmen/Tauchen kommen können.
+// .Der Wert "999999" fÑŒr fiegende Monster fÑŒhrt dazu, dass Wasserpolys wie statische Polys behandelt werden
+//	auch auf diesen "laufen" und niemals ins Schwimmen/Tauchen kommen kÑ†nnen.
 	WATER_DEPTH_KNEE 		[GIL_DEMON] = 999999;
 	WATER_DEPTH_CHEST		[GIL_DEMON] = 999999;
 
@@ -905,7 +905,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_DEMON] = 0;
 	TURN_SPEED				[GIL_DEMON] = 240;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_DEMON] = 9999;
 	FALLDOWN_DAMAGE			[GIL_DEMON] = 0;
 
@@ -938,7 +938,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_SUMMONED_DEMON] = SURFACE_ALIGN	 	[GIL_DEMON];
 	TURN_SPEED				[GIL_SUMMONED_DEMON] = TURN_SPEED			[GIL_DEMON];
                                                                                       
-	// Fallhöhe / Fallschaden                      // Fallhöhe / Fallschaden          
+	// FallhÑ†he / Fallschaden                      // FallhÑ†he / Fallschaden          
 	FALLDOWN_HEIGHT			[GIL_SUMMONED_DEMON] = FALLDOWN_HEIGHT		[GIL_DEMON];
 	FALLDOWN_DAMAGE			[GIL_SUMMONED_DEMON] = FALLDOWN_DAMAGE		[GIL_DEMON];
                                                                                       
@@ -968,7 +968,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	DISABLE_AUTOROLL 		[GIL_TROLL] = 1;
 	TURN_SPEED				[GIL_TROLL] = 60;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_TROLL] = 800;
 	FALLDOWN_DAMAGE			[GIL_TROLL] = 10;
 
@@ -990,11 +990,11 @@ INSTANCE Gil_Values(C_GILVALUES)
 
 	DISABLE_AUTOROLL		[GIL_SWAMPSHARK]	= 1;
 
-// SURFACE_ALIGN 2 ist WICHTIG damit der Swampshark nich an jeder Kante hängenbleibt!
+// SURFACE_ALIGN 2 ist WICHTIG damit der Swampshark nich an jeder Kante hÐ´ngenbleibt!
 	SURFACE_ALIGN			[GIL_SWAMPSHARK]	= 2;
 	TURN_SPEED				[GIL_SWAMPSHARK] 	= 80;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_SWAMPSHARK] = 500;
 	FALLDOWN_DAMAGE			[GIL_SWAMPSHARK] = 10;
 
@@ -1011,19 +1011,19 @@ INSTANCE Gil_Values(C_GILVALUES)
 	WATER_DEPTH_KNEE 		[GIL_DRAGON] = 100;
 	WATER_DEPTH_CHEST		[GIL_DRAGON] = 300;
 
-	STEP_HEIGHT		 		[GIL_DRAGON] = 200; //sonst "fällt" der Drache in manchen Drehungsframes (geht in FallDown)
+	STEP_HEIGHT		 		[GIL_DRAGON] = 200; //sonst "fÐ´llt" der Drache in manchen Drehungsframes (geht in FallDown)
 	SLIDE_ANGLE		 		[GIL_DRAGON] = 50;
 
 	DISABLE_AUTOROLL 		[GIL_DRAGON] = 1;
 	TURN_SPEED				[GIL_DRAGON] = 120;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_DRAGON] = 9999;
 	FALLDOWN_DAMAGE			[GIL_DRAGON] = 0;
 
 	// Kampf
 	FIGHT_RANGE_BASE		[GIL_DRAGON] = 250;
-	FIGHT_RANGE_FIST		[GIL_DRAGON] = 250; //W = Base + Fist = 600 //Schiebefaktor NICHT 450 (*0.75) sondern Kürzer!!!
+	FIGHT_RANGE_FIST		[GIL_DRAGON] = 250; //W = Base + Fist = 600 //Schiebefaktor NICHT 450 (*0.75) sondern KÑŒrzer!!!
 	FIGHT_RANGE_G			[GIL_DRAGON] = 400; //G = W + G = 900
 	
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -1043,7 +1043,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	SURFACE_ALIGN	 		[GIL_MOLERAT] = 1;
 	TURN_SPEED				[GIL_MOLERAT] = 120;
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_MOLERAT] = 400;
 	FALLDOWN_DAMAGE			[GIL_MOLERAT] = 10;
 
@@ -1080,7 +1080,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_ORC] = 50; 
 	CLIMB_GROUND_ANGLE  	[GIL_ORC] = 50; 
 
-	// Fallhöhe / Fallschaden
+	// FallhÑ†he / Fallschaden
 	FALLDOWN_HEIGHT			[GIL_ORC] = 600;
 	FALLDOWN_DAMAGE			[GIL_ORC] = 10;
 
@@ -1110,7 +1110,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_FRIENDLY_ORC] = CLIMB_HORIZ_ANGLE		[GIL_ORC];
 	CLIMB_GROUND_ANGLE  	[GIL_FRIENDLY_ORC] = CLIMB_GROUND_ANGLE  	[GIL_ORC];
                                                                                   
-	// Fallhöhe / Fallschaden                    // Fallhöhe / Fallschaden        
+	// FallhÑ†he / Fallschaden                    // FallhÑ†he / Fallschaden        
 	FALLDOWN_HEIGHT			[GIL_FRIENDLY_ORC] = FALLDOWN_HEIGHT		[GIL_ORC];
 	FALLDOWN_DAMAGE			[GIL_FRIENDLY_ORC] = FALLDOWN_DAMAGE		[GIL_ORC];
                                                                                   
@@ -1140,7 +1140,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_UNDEADORC] = CLIMB_HORIZ_ANGLE		[GIL_ORC];        
 	CLIMB_GROUND_ANGLE  	[GIL_UNDEADORC] = CLIMB_GROUND_ANGLE  	[GIL_ORC];        
                                                                                     
-	// Fallhöhe / Fallschaden                 // Fallhöhe / Fallschaden             
+	// FallhÑ†he / Fallschaden                 // FallhÑ†he / Fallschaden             
 	FALLDOWN_HEIGHT			[GIL_UNDEADORC] = FALLDOWN_HEIGHT		[GIL_ORC];     
 	FALLDOWN_DAMAGE			[GIL_UNDEADORC] = FALLDOWN_DAMAGE		[GIL_ORC];    
                                                                                     
@@ -1173,7 +1173,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_DRACONIAN] = CLIMB_HORIZ_ANGLE		[GIL_ORC];        
 	CLIMB_GROUND_ANGLE  	[GIL_DRACONIAN] = CLIMB_GROUND_ANGLE  	[GIL_ORC];        
                                                                                      
-	// Fallhöhe / Fallschaden                 // Fallhöhe / Fallschaden              
+	// FallhÑ†he / Fallschaden                 // FallhÑ†he / Fallschaden              
 	FALLDOWN_HEIGHT			[GIL_DRACONIAN] = FALLDOWN_HEIGHT		[GIL_ORC];     
 	FALLDOWN_DAMAGE			[GIL_DRACONIAN] = FALLDOWN_DAMAGE		[GIL_ORC];    
                                                                                      
@@ -1207,7 +1207,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_ALLIGATOR] = CLIMB_HORIZ_ANGLE		[GIL_WARAN];        
 	CLIMB_GROUND_ANGLE  	[GIL_ALLIGATOR] = CLIMB_GROUND_ANGLE  	[GIL_WARAN];        
                                                                                      
-	// Fallhöhe / Fallschaden                 // Fallhöhe / Fallschaden              
+	// FallhÑ†he / Fallschaden                 // FallhÑ†he / Fallschaden              
 	FALLDOWN_HEIGHT			[GIL_ALLIGATOR] = FALLDOWN_HEIGHT		[GIL_WARAN];     
 	FALLDOWN_DAMAGE			[GIL_ALLIGATOR] = FALLDOWN_DAMAGE		[GIL_WARAN];    
                                                                                      
@@ -1237,7 +1237,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_SWAMPGOLEM] = CLIMB_HORIZ_ANGLE	[GIL_STONEGOLEM];        
 	CLIMB_GROUND_ANGLE  	[GIL_SWAMPGOLEM] = CLIMB_GROUND_ANGLE  	[GIL_STONEGOLEM];        
                                                                                      
-	// Fallhöhe / Fallschaden                 // Fallhöhe / Fallschaden              
+	// FallhÑ†he / Fallschaden                 // FallhÑ†he / Fallschaden              
 	FALLDOWN_HEIGHT			[GIL_SWAMPGOLEM] = FALLDOWN_HEIGHT		[GIL_STONEGOLEM];     
 	FALLDOWN_DAMAGE			[GIL_SWAMPGOLEM] = FALLDOWN_DAMAGE		[GIL_STONEGOLEM];    
                                                                                      
@@ -1266,7 +1266,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_GARGOYLE] = CLIMB_HORIZ_ANGLE		[GIL_SHADOWBEAST];        
 	CLIMB_GROUND_ANGLE  	[GIL_GARGOYLE] = CLIMB_GROUND_ANGLE  	[GIL_SHADOWBEAST];        
                                                                                      
-	// Fallhöhe / Fallschaden                 // Fallhöhe / Fallschaden              
+	// FallhÑ†he / Fallschaden                 // FallhÑ†he / Fallschaden              
 	FALLDOWN_HEIGHT			[GIL_GARGOYLE] = FALLDOWN_HEIGHT		[GIL_SHADOWBEAST];     
 	FALLDOWN_DAMAGE			[GIL_GARGOYLE] = FALLDOWN_DAMAGE		[GIL_SHADOWBEAST];    
                                                                                      
@@ -1276,7 +1276,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	FIGHT_RANGE_G			[GIL_GARGOYLE] = FIGHT_RANGE_G			[GIL_SHADOWBEAST]; 
 
 
-// Steinwächter
+// SteinwÐ´chter
 
 	SWIM_TIME		 		[GIL_STONEGUARDIAN] = SWIM_TIME		 		[GIL_STONEGOLEM];        
 	DIVE_TIME		 		[GIL_STONEGUARDIAN] = DIVE_TIME		 		[GIL_STONEGOLEM];        
@@ -1296,7 +1296,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_STONEGUARDIAN] = CLIMB_HORIZ_ANGLE		[GIL_HUMAN];        
 	CLIMB_GROUND_ANGLE  	[GIL_STONEGUARDIAN] = CLIMB_GROUND_ANGLE  	[GIL_HUMAN];        
                                                                                      
-	// Fallhöhe / Fallschaden                 // Fallhöhe / Fallschaden              
+	// FallhÑ†he / Fallschaden                 // FallhÑ†he / Fallschaden              
 	FALLDOWN_HEIGHT			[GIL_STONEGUARDIAN] = FALLDOWN_HEIGHT		[GIL_HUMAN];     
 	FALLDOWN_DAMAGE			[GIL_STONEGUARDIAN] = FALLDOWN_DAMAGE		[GIL_HUMAN];    
                                                                                      
@@ -1311,7 +1311,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	BLOOD_AMOUNT			[GIL_STONEGUARDIAN] = 5;
 	BLOOD_MAX_DISTANCE		[GIL_STONEGUARDIAN] = 60; 
 	
-	// Steinwächter
+	// SteinwÐ´chter
 
 	SWIM_TIME		 		[GIL_SUMMONEDGUARDIAN] = SWIM_TIME		 		[GIL_STONEGOLEM];        
 	DIVE_TIME		 		[GIL_SUMMONEDGUARDIAN] = DIVE_TIME		 		[GIL_STONEGOLEM];        
@@ -1331,7 +1331,7 @@ INSTANCE Gil_Values(C_GILVALUES)
 	CLIMB_HORIZ_ANGLE		[GIL_SUMMONEDGUARDIAN] = CLIMB_HORIZ_ANGLE		[GIL_HUMAN];        
 	CLIMB_GROUND_ANGLE  	[GIL_SUMMONEDGUARDIAN] = CLIMB_GROUND_ANGLE  	[GIL_HUMAN];        
                                                                                      
-	// Fallhöhe / Fallschaden                 // Fallhöhe / Fallschaden              
+	// FallhÑ†he / Fallschaden                 // FallhÑ†he / Fallschaden              
 	FALLDOWN_HEIGHT			[GIL_SUMMONEDGUARDIAN] = FALLDOWN_HEIGHT		[GIL_HUMAN];     
 	FALLDOWN_DAMAGE			[GIL_SUMMONEDGUARDIAN] = FALLDOWN_DAMAGE		[GIL_HUMAN];    
                                                                                      

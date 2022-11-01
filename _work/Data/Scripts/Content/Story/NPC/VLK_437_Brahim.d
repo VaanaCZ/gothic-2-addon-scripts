@@ -2,7 +2,7 @@
 instance VLK_437_Brahim (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "»·‡„ËÏ"; 
+	name 		= "–ò–±—Ä–∞–≥–∏–º"; 
 	guild 		= GIL_VLK;
 	id 			= 437;
 	voice 		= 7;
@@ -21,7 +21,7 @@ instance VLK_437_Brahim (Npc_Default)
 	// ------ Equippte Waffen ------																
 	
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 
 
 		

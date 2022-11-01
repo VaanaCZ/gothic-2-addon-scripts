@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Meatbug(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"ÃˇÒÌÓÈ ÊÛÍ";
+	name							=	"–ú—è—Å–Ω–æ–π –∂—É–∫";
 	guild							=	GIL_MEATBUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MEATBUG;
 	level							=	1;
@@ -30,7 +30,7 @@ PROTOTYPE Mst_Default_Meatbug(C_Npc)
 	damagetype 						= 	DAM_EDGE;
 	
 	//----- Kampf-Taktik ----
-//	fight_tactic					= ;		// k‰mpfen nicht!
+//	fight_tactic					= ;		// k–¥mpfen nicht!
 
 	//----- Senses & Ranges ----
 	Senses			= 	SENSE_SMELL;

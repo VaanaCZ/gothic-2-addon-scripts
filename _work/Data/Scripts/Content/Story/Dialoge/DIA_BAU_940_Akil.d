@@ -21,22 +21,22 @@ func int DIA_Akil_EXIT_Condition ()
 
 func void DIA_Akil_EXIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Akil_EXIT_15_00"); //Я должен идти.
+	AI_Output			(other, self, "DIA_Akil_EXIT_15_00"); //РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.
 
 	if (Akil_Sauer == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Akil_EXIT_13_01"); //Не буду задерживать тебя.
+			AI_Output			(self, other, "DIA_Akil_EXIT_13_01"); //РќРµ Р±СѓРґСѓ Р·Р°РґРµСЂР¶РёРІР°С‚СЊ С‚РµР±СЏ.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Akil_EXIT_13_02"); //Пока! Всегда рад буду помочь чем-нибудь.
+			AI_Output			(self, other, "DIA_Akil_EXIT_13_02"); //РџРѕРєР°! Р’СЃРµРіРґР° СЂР°Рґ Р±СѓРґСѓ РїРѕРјРѕС‡СЊ С‡РµРј-РЅРёР±СѓРґСЊ.
 		};
 		
 		AI_StopProcessInfos (self);
 };
 
 //////////////////////////////////////////////////////////////////////
-//	Info Hallo mit Sцldnern
+//	Info Hallo mit SС†ldnern
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Akil_Hallo	(C_INFO)
 {
@@ -45,7 +45,7 @@ instance DIA_Akil_Hallo	(C_INFO)
 	condition	 = 	DIA_Akil_Hallo_Condition;
 	information	 = 	DIA_Akil_Hallo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"У тебя какие-то проблемы?";
+	description	 = 	"РЈ С‚РµР±СЏ РєР°РєРёРµ-С‚Рѕ РїСЂРѕР±Р»РµРјС‹?";
 };
 func int DIA_Akil_Hallo_Condition ()
 {
@@ -57,14 +57,14 @@ func int DIA_Akil_Hallo_Condition ()
 };
 func void DIA_Akil_Hallo_Info ()
 {
-	AI_Output  (other, self, "DIA_Akil_Hallo_15_00"); //У тебя какие-то проблемы?
-	AI_Output  (self, other, "DIA_Akil_Hallo_13_01"); //(в поту)... Э-э... нет, нет... все в порядке. (нервно) Это... тебе лучше уйти сейчас.
-	AI_Output  (other, self, "DIA_Akil_Hallo_15_02"); //Ты в этом уверен?
-	AI_Output  (self, other, "DIA_Akil_Hallo_13_03"); //Э-э... да, да... все в порядке. Ты... э-э... я... я сейчас не могу говорить с тобой.
+	AI_Output  (other, self, "DIA_Akil_Hallo_15_00"); //РЈ С‚РµР±СЏ РєР°РєРёРµ-С‚Рѕ РїСЂРѕР±Р»РµРјС‹?
+	AI_Output  (self, other, "DIA_Akil_Hallo_13_01"); //(РІ РїРѕС‚Сѓ)... Р­-СЌ... РЅРµС‚, РЅРµС‚... РІСЃРµ РІ РїРѕСЂСЏРґРєРµ. (РЅРµСЂРІРЅРѕ) Р­С‚Рѕ... С‚РµР±Рµ Р»СѓС‡С€Рµ СѓР№С‚Рё СЃРµР№С‡Р°СЃ.
+	AI_Output  (other, self, "DIA_Akil_Hallo_15_02"); //РўС‹ РІ СЌС‚РѕРј СѓРІРµСЂРµРЅ?
+	AI_Output  (self, other, "DIA_Akil_Hallo_13_03"); //Р­-СЌ... РґР°, РґР°... РІСЃРµ РІ РїРѕСЂСЏРґРєРµ. РўС‹... СЌ-СЌ... СЏ... СЏ СЃРµР№С‡Р°СЃ РЅРµ РјРѕРіСѓ РіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№.
 	
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Фермеру Акилу угрожают наемники."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"Р¤РµСЂРјРµСЂСѓ РђРєРёР»Сѓ СѓРіСЂРѕР¶Р°СЋС‚ РЅР°РµРјРЅРёРєРё."); 
 
 	Akils_SLDStillthere = TRUE;
 	AI_StopProcessInfos (self);
@@ -94,7 +94,7 @@ func int DIA_Akil_Nichtjetzt_Condition ()
 };
 func void DIA_Akil_Nichtjetzt_Info ()
 {
-	AI_Output (self, other, "DIA_Akil_Nichtjetzt_13_00"); //Э-э... не сейчас, я сейчас не могу говорить с тобой.
+	AI_Output (self, other, "DIA_Akil_Nichtjetzt_13_00"); //Р­-СЌ... РЅРµ СЃРµР№С‡Р°СЃ, СЏ СЃРµР№С‡Р°СЃ РЅРµ РјРѕРіСѓ РіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№.
 	AI_StopProcessInfos (self);
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -119,25 +119,25 @@ func int DIA_Akil_NachKampf_Condition ()
 };
 func void DIA_Akil_NachKampf_Info ()
 {
-	AI_Output (self, other, "DIA_Akil_NachKampf_13_00"); //Слава Инносу. Я уж думал, мне конец.
-	AI_Output (self, other, "DIA_Akil_NachKampf_13_01"); //Меня зовут Акил. Я фермер на этом маленьком клочке земли.
-	AI_Output (other, self, "DIA_Akil_NachKampf_15_02"); //Кто эти люди?
+	AI_Output (self, other, "DIA_Akil_NachKampf_13_00"); //РЎР»Р°РІР° РРЅРЅРѕСЃСѓ. РЇ СѓР¶ РґСѓРјР°Р», РјРЅРµ РєРѕРЅРµС†.
+	AI_Output (self, other, "DIA_Akil_NachKampf_13_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РђРєРёР». РЇ С„РµСЂРјРµСЂ РЅР° СЌС‚РѕРј РјР°Р»РµРЅСЊРєРѕРј РєР»РѕС‡РєРµ Р·РµРјР»Рё.
+	AI_Output (other, self, "DIA_Akil_NachKampf_15_02"); //РљС‚Рѕ СЌС‚Рё Р»СЋРґРё?
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Akil_NachKampf_13_03"); //Ты должен знать их. Это наемники с фермы Онара. Как и ты.
+			AI_Output (self, other, "DIA_Akil_NachKampf_13_03"); //РўС‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ РёС…. Р­С‚Рѕ РЅР°РµРјРЅРёРєРё СЃ С„РµСЂРјС‹ РћРЅР°СЂР°. РљР°Рє Рё С‚С‹.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Akil_NachKampf_13_04"); //Это наемники с фермы Онара. Эти ублюдки только и знают, что грабить и убивать.
+			AI_Output (self, other, "DIA_Akil_NachKampf_13_04"); //Р­С‚Рѕ РЅР°РµРјРЅРёРєРё СЃ С„РµСЂРјС‹ РћРЅР°СЂР°. Р­С‚Рё СѓР±Р»СЋРґРєРё С‚РѕР»СЊРєРѕ Рё Р·РЅР°СЋС‚, С‡С‚Рѕ РіСЂР°Р±РёС‚СЊ Рё СѓР±РёРІР°С‚СЊ.
 		};
 		
-	AI_Output (self, other, "DIA_Akil_NachKampf_13_05"); //Я боялся худшего...
-	AI_Output (self, other, "DIA_Akil_NachKampf_13_06"); //(глубоко вздыхает)... слава Инносу до этого не дошло. Скажи мне, что я могу сделать для тебя?
+	AI_Output (self, other, "DIA_Akil_NachKampf_13_05"); //РЇ Р±РѕСЏР»СЃСЏ С…СѓРґС€РµРіРѕ...
+	AI_Output (self, other, "DIA_Akil_NachKampf_13_06"); //(РіР»СѓР±РѕРєРѕ РІР·РґС‹С…Р°РµС‚)... СЃР»Р°РІР° РРЅРЅРѕСЃСѓ РґРѕ СЌС‚РѕРіРѕ РЅРµ РґРѕС€Р»Рѕ. РЎРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 	
 	Info_ClearChoices (DIA_Akil_NachKampf);
-	Info_AddChoice (DIA_Akil_NachKampf,"Ничего. Я просто рад, что у тебя теперь все в порядке.",DIA_Akil_NachKampf_Ehre);
-	Info_AddChoice (DIA_Akil_NachKampf,"Как насчет нескольких золотых?",DIA_Akil_NachKampf_Gold);
+	Info_AddChoice (DIA_Akil_NachKampf,"РќРёС‡РµРіРѕ. РЇ РїСЂРѕСЃС‚Рѕ СЂР°Рґ, С‡С‚Рѕ Сѓ С‚РµР±СЏ С‚РµРїРµСЂСЊ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.",DIA_Akil_NachKampf_Ehre);
+	Info_AddChoice (DIA_Akil_NachKampf,"РљР°Рє РЅР°СЃС‡РµС‚ РЅРµСЃРєРѕР»СЊРєРёС… Р·РѕР»РѕС‚С‹С…?",DIA_Akil_NachKampf_Gold);
 	
 	Npc_ExchangeRoutine	(self,"Start"); 
 
@@ -164,17 +164,17 @@ func void DIA_Akil_NachKampf_Info ()
 };
 FUNC VOID DIA_Akil_NachKampf_Ehre()
 {
-	AI_Output (other, self, "DIA_Akil_NachKampf_Ehre_15_00"); //Ничего. Я просто рад, что у тебя теперь все в порядке.
-	AI_Output (self, other, "DIA_Akil_NachKampf_Ehre_13_01"); //Ты настоящий друг. Да хранит тебя Иннос на твоем пути.
+	AI_Output (other, self, "DIA_Akil_NachKampf_Ehre_15_00"); //РќРёС‡РµРіРѕ. РЇ РїСЂРѕСЃС‚Рѕ СЂР°Рґ, С‡С‚Рѕ Сѓ С‚РµР±СЏ С‚РµРїРµСЂСЊ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.
+	AI_Output (self, other, "DIA_Akil_NachKampf_Ehre_13_01"); //РўС‹ РЅР°СЃС‚РѕСЏС‰РёР№ РґСЂСѓРі. Р”Р° С…СЂР°РЅРёС‚ С‚РµР±СЏ РРЅРЅРѕСЃ РЅР° С‚РІРѕРµРј РїСѓС‚Рё.
 	
 	B_GivePlayerXP (XP_Akil_SLDWegVomHofEhre);
 	Info_ClearChoices (DIA_Akil_NachKampf);
 };
 FUNC VOID DIA_Akil_NachKampf_Gold()
 {
-	AI_Output (other, self, "DIA_Akil_NachKampf_Gold_15_00"); //Как насчет нескольких золотых?
-	AI_Output (self, other, "DIA_Akil_NachKampf_Gold_13_01"); //Боюсь, мне придется разочаровать тебя - мы бедные фермеры. Нам еле на жизнь хватает.
-	AI_Output (self, other, "DIA_Akil_NachKampf_Gold_13_02"); //Все, что я могу предложить тебе - это еду. Иди к Кати, пусть она накормит тебя.
+	AI_Output (other, self, "DIA_Akil_NachKampf_Gold_15_00"); //РљР°Рє РЅР°СЃС‡РµС‚ РЅРµСЃРєРѕР»СЊРєРёС… Р·РѕР»РѕС‚С‹С…?
+	AI_Output (self, other, "DIA_Akil_NachKampf_Gold_13_01"); //Р‘РѕСЋСЃСЊ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЂР°Р·РѕС‡Р°СЂРѕРІР°С‚СЊ С‚РµР±СЏ - РјС‹ Р±РµРґРЅС‹Рµ С„РµСЂРјРµСЂС‹. РќР°Рј РµР»Рµ РЅР° Р¶РёР·РЅСЊ С…РІР°С‚Р°РµС‚.
+	AI_Output (self, other, "DIA_Akil_NachKampf_Gold_13_02"); //Р’СЃРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ - СЌС‚Рѕ РµРґСѓ. РРґРё Рє РљР°С‚Рё, РїСѓСЃС‚СЊ РѕРЅР° РЅР°РєРѕСЂРјРёС‚ С‚РµР±СЏ.
 	
 	B_GivePlayerXP (XP_Akil_SLDWegVomHof);
 	Info_ClearChoices (DIA_Akil_NachKampf);
@@ -190,7 +190,7 @@ instance DIA_Akil_Soeldner		(C_INFO)
 	condition	 = 	DIA_Akil_Soeldner_Condition;
 	information	 = 	DIA_Akil_Soeldner_Info;
 	permanent    =  FALSE;
-	description	 = 	"Что эти наемники хотели от тебя?";
+	description	 = 	"Р§С‚Рѕ СЌС‚Рё РЅР°РµРјРЅРёРєРё С…РѕС‚РµР»Рё РѕС‚ С‚РµР±СЏ?";
 };
 
 func int DIA_Akil_Soeldner_Condition ()
@@ -202,16 +202,16 @@ func int DIA_Akil_Soeldner_Condition ()
 };
 func void DIA_Akil_Soeldner_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Soeldner_15_00"); //Что эти наемники хотели от тебя?
+	AI_Output (other, self, "DIA_Akil_Soeldner_15_00"); //Р§С‚Рѕ СЌС‚Рё РЅР°РµРјРЅРёРєРё С…РѕС‚РµР»Рё РѕС‚ С‚РµР±СЏ?
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-				AI_Output (self, other, "DIA_Akil_Soeldner_13_01"); //Ты издеваешься надо мной? Эти наемники хотели собрать ренту.
+				AI_Output (self, other, "DIA_Akil_Soeldner_13_01"); //РўС‹ РёР·РґРµРІР°РµС€СЊСЃСЏ РЅР°РґРѕ РјРЅРѕР№? Р­С‚Рё РЅР°РµРјРЅРёРєРё С…РѕС‚РµР»Рё СЃРѕР±СЂР°С‚СЊ СЂРµРЅС‚Сѓ.
 		}
 	else
 		{
-				AI_Output (self, other, "DIA_Akil_Soeldner_13_02"); //Ты этого не знаешь? Их нанял Онар, лендлорд. Они охраняют его ферму и собирают ренту для него.
-				AI_Output (self, other, "DIA_Akil_Soeldner_13_03"); //Это означает, что они ходят с фермы на ферму и забирают то, что им больше нравится. А те, кто не могут платить, рискуют расстаться с жизнью.
+				AI_Output (self, other, "DIA_Akil_Soeldner_13_02"); //РўС‹ СЌС‚РѕРіРѕ РЅРµ Р·РЅР°РµС€СЊ? РС… РЅР°РЅСЏР» РћРЅР°СЂ, Р»РµРЅРґР»РѕСЂРґ. РћРЅРё РѕС…СЂР°РЅСЏСЋС‚ РµРіРѕ С„РµСЂРјСѓ Рё СЃРѕР±РёСЂР°СЋС‚ СЂРµРЅС‚Сѓ РґР»СЏ РЅРµРіРѕ.
+				AI_Output (self, other, "DIA_Akil_Soeldner_13_03"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ РѕРЅРё С…РѕРґСЏС‚ СЃ С„РµСЂРјС‹ РЅР° С„РµСЂРјСѓ Рё Р·Р°Р±РёСЂР°СЋС‚ С‚Рѕ, С‡С‚Рѕ РёРј Р±РѕР»СЊС€Рµ РЅСЂР°РІРёС‚СЃСЏ. Рђ С‚Рµ, РєС‚Рѕ РЅРµ РјРѕРіСѓС‚ РїР»Р°С‚РёС‚СЊ, СЂРёСЃРєСѓСЋС‚ СЂР°СЃСЃС‚Р°С‚СЊСЃСЏ СЃ Р¶РёР·РЅСЊСЋ.
 		};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -224,7 +224,7 @@ instance DIA_Addon_Akil_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Akil_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Akil_MissingPeople_Info;
 
-	description	 = 	"Ты слышал что-нибудь о пропавших горожанах?";
+	description	 = 	"РўС‹ СЃР»С‹С€Р°Р» С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїСЂРѕРїР°РІС€РёС… РіРѕСЂРѕР¶Р°РЅР°С…?";
 };
 
 func int DIA_Addon_Akil_MissingPeople_Condition ()
@@ -238,17 +238,17 @@ func int DIA_Addon_Akil_MissingPeople_Condition ()
 
 func void DIA_Addon_Akil_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Akil_MissingPeople_15_00"); //Ты слышал что-нибудь о пропавших горожанах?
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_01"); //Слышал? Не смеши меня. У меня самого пропало несколько людей.
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_02"); //У меня на полях работали Тонак и Телбор. Но три дня назад они пропали.
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_03"); //Я точно знаю, что они не стали бы просто так уходить с фермы, не сказав об этом мне. 
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_04"); //Однако они исчезли, и никто не знает, где они сейчас.
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_05"); //Если ты узнаешь что-нибудь об их судьбе, обязательно дай мне знать.
+	AI_Output	(other, self, "DIA_Addon_Akil_MissingPeople_15_00"); //РўС‹ СЃР»С‹С€Р°Р» С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїСЂРѕРїР°РІС€РёС… РіРѕСЂРѕР¶Р°РЅР°С…?
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_01"); //РЎР»С‹С€Р°Р»? РќРµ СЃРјРµС€Рё РјРµРЅСЏ. РЈ РјРµРЅСЏ СЃР°РјРѕРіРѕ РїСЂРѕРїР°Р»Рѕ РЅРµСЃРєРѕР»СЊРєРѕ Р»СЋРґРµР№.
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_02"); //РЈ РјРµРЅСЏ РЅР° РїРѕР»СЏС… СЂР°Р±РѕС‚Р°Р»Рё РўРѕРЅР°Рє Рё РўРµР»Р±РѕСЂ. РќРѕ С‚СЂРё РґРЅСЏ РЅР°Р·Р°Рґ РѕРЅРё РїСЂРѕРїР°Р»Рё.
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_03"); //РЇ С‚РѕС‡РЅРѕ Р·РЅР°СЋ, С‡С‚Рѕ РѕРЅРё РЅРµ СЃС‚Р°Р»Рё Р±С‹ РїСЂРѕСЃС‚Рѕ С‚Р°Рє СѓС…РѕРґРёС‚СЊ СЃ С„РµСЂРјС‹, РЅРµ СЃРєР°Р·Р°РІ РѕР± СЌС‚РѕРј РјРЅРµ. 
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_04"); //РћРґРЅР°РєРѕ РѕРЅРё РёСЃС‡РµР·Р»Рё, Рё РЅРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚, РіРґРµ РѕРЅРё СЃРµР№С‡Р°СЃ.
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_05"); //Р•СЃР»Рё С‚С‹ СѓР·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РѕР± РёС… СЃСѓРґСЊР±Рµ, РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ.
 	B_GivePlayerXP (XP_Ambient);
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Фермер Акил беспокоится о двух пропавших работниках - Тонаке и Телборе"); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Р¤РµСЂРјРµСЂ РђРєРёР» Р±РµСЃРїРѕРєРѕРёС‚СЃСЏ Рѕ РґРІСѓС… РїСЂРѕРїР°РІС€РёС… СЂР°Р±РѕС‚РЅРёРєР°С… - РўРѕРЅР°РєРµ Рё РўРµР»Р±РѕСЂРµ"); 
 
 	MIS_Akil_BringMissPeopleBack = LOG_RUNNING;
 };
@@ -262,7 +262,7 @@ instance DIA_Addon_Akil_ReturnPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Akil_ReturnPeople_Condition;
 	information	 = 	DIA_Addon_Akil_ReturnPeople_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Насчет твоих работников...";
+	description	 = 	"РќР°СЃС‡РµС‚ С‚РІРѕРёС… СЂР°Р±РѕС‚РЅРёРєРѕРІ...";
 };
 
 func int DIA_Addon_Akil_ReturnPeople_Condition ()
@@ -277,18 +277,18 @@ func int DIA_Addon_Akil_ReturnPeople_Condition ()
 
 func void DIA_Addon_Akil_ReturnPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Akil_ReturnPeople_15_00"); //Насчет твоих работников...
+	AI_Output	(other, self, "DIA_Addon_Akil_ReturnPeople_15_00"); //РќР°СЃС‡РµС‚ С‚РІРѕРёС… СЂР°Р±РѕС‚РЅРёРєРѕРІ...
 	
 	if (Npc_GetDistToWP (Tonak_NW,"NW_FARM2_FIELD_TANOK")<= 1000)
 	&& (Npc_GetDistToWP (Telbor_NW,"NW_FARM2_FIELD_TELBOR")<= 1000)
 	{
-		AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_01"); //Ты привел их назад! Ты очень храбрый человек.
+		AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_01"); //РўС‹ РїСЂРёРІРµР» РёС… РЅР°Р·Р°Рґ! РўС‹ РѕС‡РµРЅСЊ С…СЂР°Р±СЂС‹Р№ С‡РµР»РѕРІРµРє.
 	}
 	else 
 	{
-		AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_02"); //Хоть один из них выжил.
+		AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_02"); //РҐРѕС‚СЊ РѕРґРёРЅ РёР· РЅРёС… РІС‹Р¶РёР».
 	};
-	AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_03"); //Возьми в качестве награды это золото.
+	AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_03"); //Р’РѕР·СЊРјРё РІ РєР°С‡РµСЃС‚РІРµ РЅР°РіСЂР°РґС‹ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ.
 	B_GiveInvItems (self, other, itmi_Gold, 100);
 	
 	B_GivePlayerXP (XP_Ambient);
@@ -304,7 +304,7 @@ instance DIA_Akil_Lieferung		(C_INFO)
 	condition	 = 	DIA_Akil_Lieferung_Condition;
 	information	 = 	DIA_Akil_Lieferung_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"Меня прислал Бальтрам ...";
+	description	 = 	"РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р‘Р°Р»СЊС‚СЂР°Рј ...";
 };
 
 func int DIA_Akil_Lieferung_Condition ()
@@ -317,14 +317,14 @@ func int DIA_Akil_Lieferung_Condition ()
 };
 func void DIA_Akil_Lieferung_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Lieferung_15_00"); //Меня прислал Бальтрам. Я должен забрать посылку для него.
-	AI_Output (self, other, "DIA_Akil_Lieferung_13_01"); //Так ты его новый посыльный. Хорошо, я уже приготовил ее.
+	AI_Output (other, self, "DIA_Akil_Lieferung_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р‘Р°Р»СЊС‚СЂР°Рј. РЇ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ РїРѕСЃС‹Р»РєСѓ РґР»СЏ РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Akil_Lieferung_13_01"); //РўР°Рє С‚С‹ РµРіРѕ РЅРѕРІС‹Р№ РїРѕСЃС‹Р»СЊРЅС‹Р№. РҐРѕСЂРѕС€Рѕ, СЏ СѓР¶Рµ РїСЂРёРіРѕС‚РѕРІРёР» РµРµ.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
 	
-	B_LogEntry (TOPIC_Baltram, "Я получил посылку. Теперь я могу доставить ее Бальтраму...");
-	B_LogEntry (TOPIC_Nagur,   "Я получил посылку. Теперь я могу отнести ее Нагуру...");
+	B_LogEntry (TOPIC_Baltram, "РЇ РїРѕР»СѓС‡РёР» РїРѕСЃС‹Р»РєСѓ. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РґРѕСЃС‚Р°РІРёС‚СЊ РµРµ Р‘Р°Р»СЊС‚СЂР°РјСѓ...");
+	B_LogEntry (TOPIC_Nagur,   "РЇ РїРѕР»СѓС‡РёР» РїРѕСЃС‹Р»РєСѓ. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РѕС‚РЅРµСЃС‚Рё РµРµ РќР°РіСѓСЂСѓ...");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -337,7 +337,7 @@ instance DIA_Akil_Gegend		(C_INFO)
 	condition	 = 	DIA_Akil_Gegend_Condition;
 	information	 = 	DIA_Akil_Gegend_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"Ты знаешь здешние места...";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ Р·РґРµС€РЅРёРµ РјРµСЃС‚Р°...";
 };
 
 func int DIA_Akil_Gegend_Condition ()
@@ -353,8 +353,8 @@ var int Knows_Taverne;
 //-------------------------------
 func void DIA_Akil_Gegend_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_15_00"); //Ты знаешь здешние места...
-	AI_Output (self, other, "DIA_Akil_Gegend_13_01"); //Конечно, что ты хочешь узнать?
+	AI_Output (other, self, "DIA_Akil_Gegend_15_00"); //РўС‹ Р·РЅР°РµС€СЊ Р·РґРµС€РЅРёРµ РјРµСЃС‚Р°...
+	AI_Output (self, other, "DIA_Akil_Gegend_13_01"); //РљРѕРЅРµС‡РЅРѕ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 };
 /*
 FUNC VOID DIA_Akil_Gegend_BACK()
@@ -390,7 +390,7 @@ instance DIA_Akil_Hof		(C_INFO)
 	condition	 = 	DIA_Akil_Hof_Condition;
 	information	 = 	DIA_Akil_Hof_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"Как мне найти ферму Онара?";
+	description	 = 	"РљР°Рє РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ РћРЅР°СЂР°?";
 };
 
 func int DIA_Akil_Hof_Condition ()
@@ -402,9 +402,9 @@ func int DIA_Akil_Hof_Condition ()
 };
 func void DIA_Akil_Hof_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_Onar_15_00"); //Как мне найти ферму Онара?
-	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_01"); //Спустись по каменной лестнице вон там, а дальше иди по дороге на восток.
-	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_02"); //По пути тебе встретится таверна. От нее иди дальше на восток, пока не выйдешь на большое поле. Вот там-то эти наемники и живут.
+	AI_Output (other, self, "DIA_Akil_Gegend_Onar_15_00"); //РљР°Рє РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ РћРЅР°СЂР°?
+	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_01"); //РЎРїСѓСЃС‚РёСЃСЊ РїРѕ РєР°РјРµРЅРЅРѕР№ Р»РµСЃС‚РЅРёС†Рµ РІРѕРЅ С‚Р°Рј, Р° РґР°Р»СЊС€Рµ РёРґРё РїРѕ РґРѕСЂРѕРіРµ РЅР° РІРѕСЃС‚РѕРє.
+	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_02"); //РџРѕ РїСѓС‚Рё С‚РµР±Рµ РІСЃС‚СЂРµС‚РёС‚СЃСЏ С‚Р°РІРµСЂРЅР°. РћС‚ РЅРµРµ РёРґРё РґР°Р»СЊС€Рµ РЅР° РІРѕСЃС‚РѕРє, РїРѕРєР° РЅРµ РІС‹Р№РґРµС€СЊ РЅР° Р±РѕР»СЊС€РѕРµ РїРѕР»Рµ. Р’РѕС‚ С‚Р°Рј-С‚Рѕ СЌС‚Рё РЅР°РµРјРЅРёРєРё Рё Р¶РёРІСѓС‚.
 	Knows_Taverne = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -417,7 +417,7 @@ instance DIA_Akil_Taverne		(C_INFO)
 	condition	 = 	DIA_Akil_Taverne_Condition;
 	information	 = 	DIA_Akil_Taverne_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"Что это за таверна к востоку отсюда?";
+	description	 = 	"Р§С‚Рѕ СЌС‚Рѕ Р·Р° С‚Р°РІРµСЂРЅР° Рє РІРѕСЃС‚РѕРєСѓ РѕС‚СЃСЋРґР°?";
 };
 
 func int DIA_Akil_Taverne_Condition ()
@@ -429,8 +429,8 @@ func int DIA_Akil_Taverne_Condition ()
 };
 func void DIA_Akil_Taverne_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_Taverne_15_00"); //Что это за таверна к востоку отсюда?
-	AI_Output (self, other, "DIA_Akil_Gegend_Taverne_13_01"); //Спроси об этом Рендольфа. Он знает о ней лучше меня. Он бывал там несколько раз.
+	AI_Output (other, self, "DIA_Akil_Gegend_Taverne_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° С‚Р°РІРµСЂРЅР° Рє РІРѕСЃС‚РѕРєСѓ РѕС‚СЃСЋРґР°?
+	AI_Output (self, other, "DIA_Akil_Gegend_Taverne_13_01"); //РЎРїСЂРѕСЃРё РѕР± СЌС‚РѕРј Р РµРЅРґРѕР»СЊС„Р°. РћРЅ Р·РЅР°РµС‚ Рѕ РЅРµР№ Р»СѓС‡С€Рµ РјРµРЅСЏ. РћРЅ Р±С‹РІР°Р» С‚Р°Рј РЅРµСЃРєРѕР»СЊРєРѕ СЂР°Р·.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wald
@@ -442,7 +442,7 @@ instance DIA_Akil_Wald		(C_INFO)
 	condition	 = 	DIA_Akil_Wald_Condition;
 	information	 = 	DIA_Akil_Wald_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"А что там, в лесу за твоей фермой?";
+	description	 = 	"Рђ С‡С‚Рѕ С‚Р°Рј, РІ Р»РµСЃСѓ Р·Р° С‚РІРѕРµР№ С„РµСЂРјРѕР№?";
 };
 func int DIA_Akil_Wald_Condition ()
 {
@@ -455,9 +455,9 @@ func int DIA_Akil_Wald_Condition ()
 };
 func void DIA_Akil_Wald_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_Wald_15_00"); //А что там, в лесу за твоей фермой?
-	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_01"); //Там бродят монстры. И волки еще самые безобидные из них.
-	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_02"); //Также говорят, что там устроили себе логово бандиты. Ну - хотя бы они не трогают мою ферму.
+	AI_Output (other, self, "DIA_Akil_Gegend_Wald_15_00"); //Рђ С‡С‚Рѕ С‚Р°Рј, РІ Р»РµСЃСѓ Р·Р° С‚РІРѕРµР№ С„РµСЂРјРѕР№?
+	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_01"); //РўР°Рј Р±СЂРѕРґСЏС‚ РјРѕРЅСЃС‚СЂС‹. Р РІРѕР»РєРё РµС‰Рµ СЃР°РјС‹Рµ Р±РµР·РѕР±РёРґРЅС‹Рµ РёР· РЅРёС….
+	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_02"); //РўР°РєР¶Рµ РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ С‚Р°Рј СѓСЃС‚СЂРѕРёР»Рё СЃРµР±Рµ Р»РѕРіРѕРІРѕ Р±Р°РЅРґРёС‚С‹. РќСѓ - С…РѕС‚СЏ Р±С‹ РѕРЅРё РЅРµ С‚СЂРѕРіР°СЋС‚ РјРѕСЋ С„РµСЂРјСѓ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm
@@ -470,7 +470,7 @@ instance DIA_Akil_Perm		(C_INFO)
 	information	 = 	DIA_Akil_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Есть что-нибудь интересное?";
+	description	 = 	"Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ?";
 };
 
 func int DIA_Akil_Perm_Condition ()
@@ -484,38 +484,38 @@ func int DIA_Akil_Perm_Condition ()
 
 func void DIA_Akil_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Perm_15_00"); //Есть что-нибудь интересное?
+	AI_Output (other, self, "DIA_Akil_Perm_15_00"); //Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ?
 
 	if (Kapitel == 3)
 	{
 		if (MIS_Akil_SchafDiebe == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_01"); //Нет. Я надеюсь, теперь мои овцы больше не будут пропадать.
+			AI_Output (self, other, "DIA_Akil_Perm_13_01"); //РќРµС‚. РЇ РЅР°РґРµСЋСЃСЊ, С‚РµРїРµСЂСЊ РјРѕРё РѕРІС†С‹ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ РїСЂРѕРїР°РґР°С‚СЊ.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_02"); //Мои овцы постоянно пропадают. Скоро нам нечего будет есть.
+			AI_Output (self, other, "DIA_Akil_Perm_13_02"); //РњРѕРё РѕРІС†С‹ РїРѕСЃС‚РѕСЏРЅРЅРѕ РїСЂРѕРїР°РґР°СЋС‚. РЎРєРѕСЂРѕ РЅР°Рј РЅРµС‡РµРіРѕ Р±СѓРґРµС‚ РµСЃС‚СЊ.
 		};
 	}
 	else //Kapitel 4 & 5
 	{
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_03"); //Орки теперь повсюду. Говорят даже, что у них здесь где-то есть штаб-квартира. Расспроси об этом фермера Лобарта.
+			AI_Output (self, other, "DIA_Akil_Perm_13_03"); //РћСЂРєРё С‚РµРїРµСЂСЊ РїРѕРІСЃСЋРґСѓ. Р“РѕРІРѕСЂСЏС‚ РґР°Р¶Рµ, С‡С‚Рѕ Сѓ РЅРёС… Р·РґРµСЃСЊ РіРґРµ-С‚Рѕ РµСЃС‚СЊ С€С‚Р°Р±-РєРІР°СЂС‚РёСЂР°. Р Р°СЃСЃРїСЂРѕСЃРё РѕР± СЌС‚РѕРј С„РµСЂРјРµСЂР° Р›РѕР±Р°СЂС‚Р°.
 
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_04"); //Говорят, что в округе появились люди-ящеры. На твоем месте я бы не ходил в пещеры.
+			AI_Output (self, other, "DIA_Akil_Perm_13_04"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РІ РѕРєСЂСѓРіРµ РїРѕСЏРІРёР»РёСЃСЊ Р»СЋРґРё-СЏС‰РµСЂС‹. РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РЅРµ С…РѕРґРёР» РІ РїРµС‰РµСЂС‹.
 
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_05"); //Люди в черных рясах ищут тебя.
-			AI_Output (other, self, "DIA_Akil_Perm_15_06"); //Это не новость.
-			AI_Output (self, other, "DIA_Akil_Perm_13_07"); //Ну и ладно. Я просто подумал, что тебе стоит знать это.
+			AI_Output (self, other, "DIA_Akil_Perm_13_05"); //Р›СЋРґРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… РёС‰СѓС‚ С‚РµР±СЏ.
+			AI_Output (other, self, "DIA_Akil_Perm_15_06"); //Р­С‚Рѕ РЅРµ РЅРѕРІРѕСЃС‚СЊ.
+			AI_Output (self, other, "DIA_Akil_Perm_13_07"); //РќСѓ Рё Р»Р°РґРЅРѕ. РЇ РїСЂРѕСЃС‚Рѕ РїРѕРґСѓРјР°Р», С‡С‚Рѕ С‚РµР±Рµ СЃС‚РѕРёС‚ Р·РЅР°С‚СЊ СЌС‚Рѕ.
 		};		
 	};
 };
@@ -563,7 +563,7 @@ instance DIA_Akil_SCHAFDIEB		(C_INFO)
 	condition	 = 	DIA_Akil_SCHAFDIEB_Condition;
 	information	 = 	DIA_Akil_SCHAFDIEB_Info;
 
-	description	 = 	"Это не новость.";
+	description	 = 	"Р­С‚Рѕ РЅРµ РЅРѕРІРѕСЃС‚СЊ.";
 };
 
 func int DIA_Akil_SCHAFDIEB_Condition ()
@@ -576,39 +576,39 @@ func int DIA_Akil_SCHAFDIEB_Condition ()
 
 func void DIA_Akil_SCHAFDIEB_Info ()
 {
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_15_00"); //Есть еще новости?
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_13_01"); //Кто-то постоянно крадет моих овец. Я теперь не могу спокойно спать по ночам.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_15_00"); //Р•СЃС‚СЊ РµС‰Рµ РЅРѕРІРѕСЃС‚Рё?
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_13_01"); //РљС‚Рѕ-С‚Рѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ РєСЂР°РґРµС‚ РјРѕРёС… РѕРІРµС†. РЇ С‚РµРїРµСЂСЊ РЅРµ РјРѕРіСѓ СЃРїРѕРєРѕР№РЅРѕ СЃРїР°С‚СЊ РїРѕ РЅРѕС‡Р°Рј.
 
 	Info_ClearChoices	(DIA_Akil_SCHAFDIEB);
-	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Это не мои проблемы.", DIA_Akil_SCHAFDIEB_nein );
-	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Сколько овец у тебя пропало?", DIA_Akil_SCHAFDIEB_wieviel );
-	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Кто может делать это?", DIA_Akil_SCHAFDIEB_wer );
+	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Р­С‚Рѕ РЅРµ РјРѕРё РїСЂРѕР±Р»РµРјС‹.", DIA_Akil_SCHAFDIEB_nein );
+	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "РЎРєРѕР»СЊРєРѕ РѕРІРµС† Сѓ С‚РµР±СЏ РїСЂРѕРїР°Р»Рѕ?", DIA_Akil_SCHAFDIEB_wieviel );
+	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "РљС‚Рѕ РјРѕР¶РµС‚ РґРµР»Р°С‚СЊ СЌС‚Рѕ?", DIA_Akil_SCHAFDIEB_wer );
 	MIS_Akil_SchafDiebe	= LOG_RUNNING;
 	Log_CreateTopic (TOPIC_AkilSchafDiebe, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilSchafDiebe, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilSchafDiebe,"Овцы Акила продолжают пропадать. Он подозревает, что к этому причастны бандиты, живущие в пещере в соседнем лесу."); 
+	B_LogEntry (TOPIC_AkilSchafDiebe,"РћРІС†С‹ РђРєРёР»Р° РїСЂРѕРґРѕР»Р¶Р°СЋС‚ РїСЂРѕРїР°РґР°С‚СЊ. РћРЅ РїРѕРґРѕР·СЂРµРІР°РµС‚, С‡С‚Рѕ Рє СЌС‚РѕРјСѓ РїСЂРёС‡Р°СЃС‚РЅС‹ Р±Р°РЅРґРёС‚С‹, Р¶РёРІСѓС‰РёРµ РІ РїРµС‰РµСЂРµ РІ СЃРѕСЃРµРґРЅРµРј Р»РµСЃСѓ."); 
 };
 
 func void DIA_Akil_SCHAFDIEB_wer ()
 {
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_wer_15_00"); //Кто может делать это?
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_01"); //У меня есть подозрения.
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_02"); //Какие-то темные личности обосновались в пещере вон в том лесу.
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_03"); //Мне трудно поверить, что они питаются только ягодами. Я почти уверен, что именно они виновны в исчезновении моих овец.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_wer_15_00"); //РљС‚Рѕ РјРѕР¶РµС‚ РґРµР»Р°С‚СЊ СЌС‚Рѕ?
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРѕРґРѕР·СЂРµРЅРёСЏ.
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_02"); //РљР°РєРёРµ-С‚Рѕ С‚РµРјРЅС‹Рµ Р»РёС‡РЅРѕСЃС‚Рё РѕР±РѕСЃРЅРѕРІР°Р»РёСЃСЊ РІ РїРµС‰РµСЂРµ РІРѕРЅ РІ С‚РѕРј Р»РµСЃСѓ.
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_03"); //РњРЅРµ С‚СЂСѓРґРЅРѕ РїРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ РѕРЅРё РїРёС‚Р°СЋС‚СЃСЏ С‚РѕР»СЊРєРѕ СЏРіРѕРґР°РјРё. РЇ РїРѕС‡С‚Рё СѓРІРµСЂРµРЅ, С‡С‚Рѕ РёРјРµРЅРЅРѕ РѕРЅРё РІРёРЅРѕРІРЅС‹ РІ РёСЃС‡РµР·РЅРѕРІРµРЅРёРё РјРѕРёС… РѕРІРµС†.
 	Info_ClearChoices	(DIA_Akil_SCHAFDIEB);
 };
 
 func void DIA_Akil_SCHAFDIEB_wieviel ()
 {
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_wieviel_15_00"); //Сколько овец у тебя пропало?
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wieviel_13_01"); //По крайней мере, три.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_wieviel_15_00"); //РЎРєРѕР»СЊРєРѕ РѕРІРµС† Сѓ С‚РµР±СЏ РїСЂРѕРїР°Р»Рѕ?
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wieviel_13_01"); //РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‚СЂРё.
 
 };
 
 func void DIA_Akil_SCHAFDIEB_nein ()
 {
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_nein_15_00"); //Это не мои проблемы.
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_nein_13_01"); //Понимаю. У тебя других забот полно.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_nein_15_00"); //Р­С‚Рѕ РЅРµ РјРѕРё РїСЂРѕР±Р»РµРјС‹.
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_nein_13_01"); //РџРѕРЅРёРјР°СЋ. РЈ С‚РµР±СЏ РґСЂСѓРіРёС… Р·Р°Р±РѕС‚ РїРѕР»РЅРѕ.
 	Info_ClearChoices	(DIA_Akil_SCHAFDIEB);
 
 };
@@ -623,7 +623,7 @@ instance DIA_Akil_SCHAFDIEBEPLATT		(C_INFO)
 	condition	 = 	DIA_Akil_SCHAFDIEBEPLATT_Condition;
 	information	 = 	DIA_Akil_SCHAFDIEBEPLATT_Info;
 
-	description	 = 	"Я нашел тех, кто воровал у тебя овец.";
+	description	 = 	"РЇ РЅР°С€РµР» С‚РµС…, РєС‚Рѕ РІРѕСЂРѕРІР°Р» Сѓ С‚РµР±СЏ РѕРІРµС†.";
 };
 
 func int DIA_Akil_SCHAFDIEBEPLATT_Condition ()
@@ -640,23 +640,23 @@ func int DIA_Akil_SCHAFDIEBEPLATT_Condition ()
 
 func void DIA_Akil_SCHAFDIEBEPLATT_Info ()
 {
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEBEPLATT_15_00"); //Я нашел тех, кто воровал у тебя овец.
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEBEPLATT_15_01"); //Ты был прав. Это были бандиты из пещеры в лесу. Но больше они у тебя ничего не украдут.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEBEPLATT_15_00"); //РЇ РЅР°С€РµР» С‚РµС…, РєС‚Рѕ РІРѕСЂРѕРІР°Р» Сѓ С‚РµР±СЏ РѕРІРµС†.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEBEPLATT_15_01"); //РўС‹ Р±С‹Р» РїСЂР°РІ. Р­С‚Рѕ Р±С‹Р»Рё Р±Р°РЅРґРёС‚С‹ РёР· РїРµС‰РµСЂС‹ РІ Р»РµСЃСѓ. РќРѕ Р±РѕР»СЊС€Рµ РѕРЅРё Сѓ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ СѓРєСЂР°РґСѓС‚.
 
 	if 		((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 			{
-				AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_02"); //Спасибо тебе, о, благородный служитель Инноса.
+				AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_02"); //РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ, Рѕ, Р±Р»Р°РіРѕСЂРѕРґРЅС‹Р№ СЃР»СѓР¶РёС‚РµР»СЊ РРЅРЅРѕСЃР°.
 			}
 	else if (hero.guild == GIL_MIL)
 			{
-				AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_03"); //Спасибо. Теперь я вижу, что ополчение иногда помогает нам, мелким фермерам.
+				AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_03"); //РЎРїР°СЃРёР±Рѕ. РўРµРїРµСЂСЊ СЏ РІРёР¶Сѓ, С‡С‚Рѕ РѕРїРѕР»С‡РµРЅРёРµ РёРЅРѕРіРґР° РїРѕРјРѕРіР°РµС‚ РЅР°Рј, РјРµР»РєРёРј С„РµСЂРјРµСЂР°Рј.
 			}
 	else 
 			{
-				AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_04"); //Спасибо. Ты очень странный наемник. Не такой, как другие.
+				AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_04"); //РЎРїР°СЃРёР±Рѕ. РўС‹ РѕС‡РµРЅСЊ СЃС‚СЂР°РЅРЅС‹Р№ РЅР°РµРјРЅРёРє. РќРµ С‚Р°РєРѕР№, РєР°Рє РґСЂСѓРіРёРµ.
 			};
 		
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_05"); //Возьми это в качестве благодарности за бескорыстную услугу, что ты оказал мне.
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_05"); //Р’РѕР·СЊРјРё СЌС‚Рѕ РІ РєР°С‡РµСЃС‚РІРµ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё Р·Р° Р±РµСЃРєРѕСЂС‹СЃС‚РЅСѓСЋ СѓСЃР»СѓРіСѓ, С‡С‚Рѕ С‚С‹ РѕРєР°Р·Р°Р» РјРЅРµ.
 
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);					
@@ -674,7 +674,7 @@ instance DIA_Akil_AkilsSchaf		(C_INFO)
 	condition	 = 	DIA_Akil_AkilsSchaf_Condition;
 	information	 = 	DIA_Akil_AkilsSchaf_Info;
 
-	description	 = 	"(вернуть овцу Акила)";
+	description	 = 	"(РІРµСЂРЅСѓС‚СЊ РѕРІС†Сѓ РђРєРёР»Р°)";
 };
 
 func int DIA_Akil_AkilsSchaf_Condition ()
@@ -690,7 +690,7 @@ func int DIA_Akil_AkilsSchaf_Condition ()
 func void DIA_Akil_AkilsSchaf_Info ()
 {
 	//Joly: AI_Output			(other, self, "DIA_Akil_AkilsSchaf_15_00"); //Ich habe die Schafdiebe gefunden.
-	AI_Output			(self, other, "DIA_Akil_AkilsSchaf_13_01"); //Очень хорошо. Вот несколько золотых. Надеюсь, этого достаточно.
+	AI_Output			(self, other, "DIA_Akil_AkilsSchaf_13_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р’РѕС‚ РЅРµСЃРєРѕР»СЊРєРѕ Р·РѕР»РѕС‚С‹С…. РќР°РґРµСЋСЃСЊ, СЌС‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 	
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);					

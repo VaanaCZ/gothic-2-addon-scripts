@@ -1,11 +1,11 @@
 INSTANCE NOV_600_Pedro (Npc_Default) 
 {
 	// ------ NSC ------
-	name 		= "œÂ‰Ó";
+	name 		= "–ü–µ–¥—Ä–æ";
 	guild 		= GIL_NOV;
 	id 			= 600;
 	voice 		= 9;
-	flags       = NPC_FLAG_IMMORTAL;	//Joly: HAUPTSTORY: NOV_600_Pedro ist erst noch immortel -> Pedro klaut das Auge Innos im Kapitel 3, ist sp‰ter Knacki auf der Dracheninsel																	
+	flags       = NPC_FLAG_IMMORTAL;	//Joly: HAUPTSTORY: NOV_600_Pedro ist erst noch immortel -> Pedro klaut das Auge Innos im Kapitel 3, ist sp–¥ter Knacki auf der Dracheninsel																	
 	npctype		= NPCTYPE_MAIN;
 	
 	// ------ Attribute ------

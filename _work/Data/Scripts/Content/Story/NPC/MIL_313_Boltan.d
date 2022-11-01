@@ -2,7 +2,7 @@
 instance Mil_313_Boltan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Болтан";	
+	name 		= "Р‘РѕР»С‚Р°РЅ";	
 	guild 		= GIL_MIL;
 	id 			= 313;
 	voice 		= 5;

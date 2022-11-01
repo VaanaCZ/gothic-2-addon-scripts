@@ -40,47 +40,47 @@ func int DIA_Bronko_HALLO_Condition ()
 
 func void DIA_Bronko_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Bronko_HALLO_06_00"); //(отечески) И куда это мы направляемся, а?
-	AI_Output			(other, self, "DIA_Bronko_HALLO_15_01"); //А ты что, здесь старший?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_06_00"); //(РѕС‚РµС‡РµСЃРєРё) Р РєСѓРґР° СЌС‚Рѕ РјС‹ РЅР°РїСЂР°РІР»СЏРµРјСЃСЏ, Р°?
+	AI_Output			(other, self, "DIA_Bronko_HALLO_15_01"); //Рђ С‚С‹ С‡С‚Рѕ, Р·РґРµСЃСЊ СЃС‚Р°СЂС€РёР№?
 
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output			(self, other, "DIA_Bronko_HALLO_06_02"); //Сейчас в морду получишь, придурок.
+			AI_Output			(self, other, "DIA_Bronko_HALLO_06_02"); //РЎРµР№С‡Р°СЃ РІ РјРѕСЂРґСѓ РїРѕР»СѓС‡РёС€СЊ, РїСЂРёРґСѓСЂРѕРє.
 		};
 		
-	AI_Output			(self, other, "DIA_Bronko_HALLO_06_03"); //Если ты хочешь свободно ходить по моей земле, ты должен заплатить мне 5 золотых, или душу из тебя вытрясу!
+	AI_Output			(self, other, "DIA_Bronko_HALLO_06_03"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЃРІРѕР±РѕРґРЅРѕ С…РѕРґРёС‚СЊ РїРѕ РјРѕРµР№ Р·РµРјР»Рµ, С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ РјРЅРµ 5 Р·РѕР»РѕС‚С‹С…, РёР»Рё РґСѓС€Сѓ РёР· С‚РµР±СЏ РІС‹С‚СЂСЏСЃСѓ!
 	
 	Info_ClearChoices	(DIA_Bronko_HALLO);
 
-	Info_AddChoice	(DIA_Bronko_HALLO, "Забудь об этом. Ты ничего не получишь от меня.", DIA_Bronko_HALLO_vergisses );
-	Info_AddChoice	(DIA_Bronko_HALLO, "Похоже, у меня нет выбора - вот твои деньги.", DIA_Bronko_HALLO_hiergeld );
-	Info_AddChoice	(DIA_Bronko_HALLO, "Твоей земле? Ты что, местный фермер?", DIA_Bronko_HALLO_deinland );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РўС‹ РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС€СЊ РѕС‚ РјРµРЅСЏ.", DIA_Bronko_HALLO_vergisses );
+	Info_AddChoice	(DIA_Bronko_HALLO, "РџРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР° - РІРѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё.", DIA_Bronko_HALLO_hiergeld );
+	Info_AddChoice	(DIA_Bronko_HALLO, "РўРІРѕРµР№ Р·РµРјР»Рµ? РўС‹ С‡С‚Рѕ, РјРµСЃС‚РЅС‹Р№ С„РµСЂРјРµСЂ?", DIA_Bronko_HALLO_deinland );
 
 };
 
 func void DIA_Bronko_HALLO_deinland ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_deinland_15_00"); //Твоей земле? Ты что, местный фермер?
-	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_01"); //Естественно. А почему еще ты должен платить мне пошлину?
-	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_02"); //Я не возражаю, если ты поспрашиваешь остальных обо мне. Хе-хе!
+	AI_Output			(other, self, "DIA_Bronko_HALLO_deinland_15_00"); //РўРІРѕРµР№ Р·РµРјР»Рµ? РўС‹ С‡С‚Рѕ, РјРµСЃС‚РЅС‹Р№ С„РµСЂРјРµСЂ?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_01"); //Р•СЃС‚РµСЃС‚РІРµРЅРЅРѕ. Рђ РїРѕС‡РµРјСѓ РµС‰Рµ С‚С‹ РґРѕР»Р¶РµРЅ РїР»Р°С‚РёС‚СЊ РјРЅРµ РїРѕС€Р»РёРЅСѓ?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_02"); //РЇ РЅРµ РІРѕР·СЂР°Р¶Р°СЋ, РµСЃР»Рё С‚С‹ РїРѕСЃРїСЂР°С€РёРІР°РµС€СЊ РѕСЃС‚Р°Р»СЊРЅС‹С… РѕР±Рѕ РјРЅРµ. РҐРµ-С…Рµ!
 
 };
 
 func void DIA_Bronko_HALLO_hiergeld ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_hiergeld_15_00"); //Похоже, у меня нет выбора - вот твои деньги.
+	AI_Output			(other, self, "DIA_Bronko_HALLO_hiergeld_15_00"); //РџРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР° - РІРѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё.
 
 	if ((Npc_HasItems (other,ItMi_Gold)) >= 5)
 		{
 			B_GiveInvItems (other, self, ItMi_Gold, 5);						
 
-			AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_01"); //(притворно) Спасибо. Удачного пути.
+			AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_01"); //(РїСЂРёС‚РІРѕСЂРЅРѕ) РЎРїР°СЃРёР±Рѕ. РЈРґР°С‡РЅРѕРіРѕ РїСѓС‚Рё.
 		
 			AI_StopProcessInfos (self);	 
 		}
 	else
 		{
-		 	AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_02"); //У тебя нет даже 5 монет. Ты хочешь надуть меня?
+		 	AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_02"); //РЈ С‚РµР±СЏ РЅРµС‚ РґР°Р¶Рµ 5 РјРѕРЅРµС‚. РўС‹ С…РѕС‡РµС€СЊ РЅР°РґСѓС‚СЊ РјРµРЅСЏ?
 		 	
 		 	AI_StopProcessInfos (self);	 	
 		 	B_Attack (self, other, AR_NONE, 1);	
@@ -89,35 +89,35 @@ func void DIA_Bronko_HALLO_hiergeld ()
 
 func void DIA_Bronko_HALLO_vergisses ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_vergisses_15_00"); //Забудь об этом. Ты ничего не получишь от меня.
+	AI_Output			(other, self, "DIA_Bronko_HALLO_vergisses_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РўС‹ РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС€СЊ РѕС‚ РјРµРЅСЏ.
 
 	if ((hero.guild == GIL_NONE)||(hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_01"); //Тогда, боюсь, мне придется набить тебе морду.
+			AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_01"); //РўРѕРіРґР°, Р±РѕСЋСЃСЊ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РЅР°Р±РёС‚СЊ С‚РµР±Рµ РјРѕСЂРґСѓ.
 		}
 	else
 		{
 			if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 			{
-				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_02"); //У вас, парней из городской стражи, плохо с финансами, ха?
+				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_02"); //РЈ РІР°СЃ, РїР°СЂРЅРµР№ РёР· РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё, РїР»РѕС…Рѕ СЃ С„РёРЅР°РЅСЃР°РјРё, С…Р°?
 			};
 	
 			if (hero.guild == GIL_KDF)
 			{
-				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_03"); //Меня не волнует, что ты маг. Тебе придется заплатить. Понятно?
+				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_03"); //РњРµРЅСЏ РЅРµ РІРѕР»РЅСѓРµС‚, С‡С‚Рѕ С‚С‹ РјР°Рі. РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ. РџРѕРЅСЏС‚РЅРѕ?
 			};		
 		};
 
 	Info_ClearChoices	(DIA_Bronko_HALLO);
 
-	Info_AddChoice	(DIA_Bronko_HALLO, "Похоже, у меня нет выбора - вот твои деньги.", DIA_Bronko_HALLO_hiergeld );
-	Info_AddChoice	(DIA_Bronko_HALLO, "Тогда попробуй, возьми их сам.", DIA_Bronko_HALLO_attack );
+	Info_AddChoice	(DIA_Bronko_HALLO, "РџРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР° - РІРѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё.", DIA_Bronko_HALLO_hiergeld );
+	Info_AddChoice	(DIA_Bronko_HALLO, "РўРѕРіРґР° РїРѕРїСЂРѕР±СѓР№, РІРѕР·СЊРјРё РёС… СЃР°Рј.", DIA_Bronko_HALLO_attack );
 };
 
 func void DIA_Bronko_HALLO_attack ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_attack_15_00"); //Тогда попробуй, возьми их сам.
-	AI_Output			(self, other, "DIA_Bronko_HALLO_attack_06_01"); //Ну, раз ты так...
+	AI_Output			(other, self, "DIA_Bronko_HALLO_attack_15_00"); //РўРѕРіРґР° РїРѕРїСЂРѕР±СѓР№, РІРѕР·СЊРјРё РёС… СЃР°Рј.
+	AI_Output			(self, other, "DIA_Bronko_HALLO_attack_06_01"); //РќСѓ, СЂР°Р· С‚С‹ С‚Р°Рє...
 
 	AI_StopProcessInfos (self);	 	
 	B_Attack (self, other, AR_NONE, 1);	
@@ -134,7 +134,7 @@ instance DIA_Bronko_KEINBAUER		(C_INFO)
 	information	 = 	DIA_Bronko_KEINBAUER_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты?! Фермер?! Не смеши меня.";
+	description	 = 	"РўС‹?! Р¤РµСЂРјРµСЂ?! РќРµ СЃРјРµС€Рё РјРµРЅСЏ.";
 };
 
 var int DIA_Bronko_KEINBAUER_noPerm;
@@ -153,8 +153,8 @@ func int DIA_Bronko_KEINBAUER_Condition ()
 
 func void DIA_Bronko_KEINBAUER_Info ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_15_00"); //Ты?! Фермер?! Не смеши меня. Да ты вообще никто.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_06_01"); //Чтоооо? Хочешь получить по морде?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_15_00"); //РўС‹?! Р¤РµСЂРјРµСЂ?! РќРµ СЃРјРµС€Рё РјРµРЅСЏ. Р”Р° С‚С‹ РІРѕРѕР±С‰Рµ РЅРёРєС‚Рѕ.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_06_01"); //Р§С‚РѕРѕРѕРѕ? РҐРѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РїРѕ РјРѕСЂРґРµ?
 
 	Info_ClearChoices	(DIA_Bronko_KEINBAUER);
 
@@ -162,23 +162,23 @@ func void DIA_Bronko_KEINBAUER_Info ()
 		{
 			if(Babera_BronkoKeinBauer == TRUE)
 				{
-					Info_AddChoice	(DIA_Bronko_KEINBAUER, "(пригрозить Бронко наемниками)", DIA_Bronko_KEINBAUER_SLD );
+					Info_AddChoice	(DIA_Bronko_KEINBAUER, "(РїСЂРёРіСЂРѕР·РёС‚СЊ Р‘СЂРѕРЅРєРѕ РЅР°РµРјРЅРёРєР°РјРё)", DIA_Bronko_KEINBAUER_SLD );
 				};
 			if (MIS_Sekob_Bronko_eingeschuechtert == LOG_RUNNING)
 				{	
-					Info_AddChoice	(DIA_Bronko_KEINBAUER, "Фермер здесь - Секоб, а ты просто мелкий жулик.", DIA_Bronko_KEINBAUER_sekobderbauer );
+					Info_AddChoice	(DIA_Bronko_KEINBAUER, "Р¤РµСЂРјРµСЂ Р·РґРµСЃСЊ - РЎРµРєРѕР±, Р° С‚С‹ РїСЂРѕСЃС‚Рѕ РјРµР»РєРёР№ Р¶СѓР»РёРє.", DIA_Bronko_KEINBAUER_sekobderbauer );
 				};
 		};
 
-	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Ну... Давай посмотрим, что ты можешь.", DIA_Bronko_KEINBAUER_attack );
-	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Забудь!", DIA_Bronko_KEINBAUER_schongut );
+	Info_AddChoice	(DIA_Bronko_KEINBAUER, "РќСѓ... Р”Р°РІР°Р№ РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ.", DIA_Bronko_KEINBAUER_attack );
+	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Р—Р°Р±СѓРґСЊ!", DIA_Bronko_KEINBAUER_schongut );
 
 };
 
 func void DIA_Bronko_KEINBAUER_attack ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_attack_15_00"); //Ну... Давай посмотрим, что ты можешь.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_attack_06_01"); //Я надеялся, что ты скажешь это.
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_attack_15_00"); //РќСѓ... Р”Р°РІР°Р№ РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_attack_06_01"); //РЇ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ СЌС‚Рѕ.
 	
 	AI_StopProcessInfos (self);	 	
 	B_Attack (self, other, AR_NONE, 1);	
@@ -186,32 +186,32 @@ func void DIA_Bronko_KEINBAUER_attack ()
 
 func void DIA_Bronko_KEINBAUER_sekobderbauer ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_00"); //Фермер здесь - Секоб, а ты просто мелкий жулик, который пытается обманом вытянуть деньги из кошельков простых людей.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_01"); //Кто это сказал?
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_02"); //Я сказал. Секоб хочет, чтобы ты вернулся к работе, а не шлялся здесь без дела.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_03"); //И что? Что ты теперь будешь делать?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_00"); //Р¤РµСЂРјРµСЂ Р·РґРµСЃСЊ - РЎРµРєРѕР±, Р° С‚С‹ РїСЂРѕСЃС‚Рѕ РјРµР»РєРёР№ Р¶СѓР»РёРє, РєРѕС‚РѕСЂС‹Р№ РїС‹С‚Р°РµС‚СЃСЏ РѕР±РјР°РЅРѕРј РІС‹С‚СЏРЅСѓС‚СЊ РґРµРЅСЊРіРё РёР· РєРѕС€РµР»СЊРєРѕРІ РїСЂРѕСЃС‚С‹С… Р»СЋРґРµР№.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_01"); //РљС‚Рѕ СЌС‚Рѕ СЃРєР°Р·Р°Р»?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_02"); //РЇ СЃРєР°Р·Р°Р». РЎРµРєРѕР± С…РѕС‡РµС‚, С‡С‚РѕР±С‹ С‚С‹ РІРµСЂРЅСѓР»СЃСЏ Рє СЂР°Р±РѕС‚Рµ, Р° РЅРµ С€Р»СЏР»СЃСЏ Р·РґРµСЃСЊ Р±РµР· РґРµР»Р°.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_03"); //Р С‡С‚Рѕ? Р§С‚Рѕ С‚С‹ С‚РµРїРµСЂСЊ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ?
 };
 
 func void DIA_Bronko_KEINBAUER_schongut ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_schongut_15_00"); //Забудь!
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_schongut_06_01"); //Проваливай!
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_schongut_15_00"); //Р—Р°Р±СѓРґСЊ!
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_schongut_06_01"); //РџСЂРѕРІР°Р»РёРІР°Р№!
 
  	AI_StopProcessInfos (self);	 	
 };
 
 func void DIA_Bronko_KEINBAUER_SLD ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_00"); //Хорошо, тогда, пожалуй, мне придется сказать Онару, что здесь есть наглый фермер, который отказывается платить ренту.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_01"); //Черт. Подожди минутку. Онар пошлет сюда наемников.
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_02"); //И что?
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_03"); //Хорошо, хорошо. Я дам тебе все, что ты захочешь, но только не вмешивай в это дело наемников, хорошо?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_00"); //РҐРѕСЂРѕС€Рѕ, С‚РѕРіРґР°, РїРѕР¶Р°Р»СѓР№, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЃРєР°Р·Р°С‚СЊ РћРЅР°СЂСѓ, С‡С‚Рѕ Р·РґРµСЃСЊ РµСЃС‚СЊ РЅР°РіР»С‹Р№ С„РµСЂРјРµСЂ, РєРѕС‚РѕСЂС‹Р№ РѕС‚РєР°Р·С‹РІР°РµС‚СЃСЏ РїР»Р°С‚РёС‚СЊ СЂРµРЅС‚Сѓ.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_01"); //Р§РµСЂС‚. РџРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ. РћРЅР°СЂ РїРѕС€Р»РµС‚ СЃСЋРґР° РЅР°РµРјРЅРёРєРѕРІ.
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_02"); //Р С‡С‚Рѕ?
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_03"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ. РЇ РґР°Рј С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ С‚С‹ Р·Р°С…РѕС‡РµС€СЊ, РЅРѕ С‚РѕР»СЊРєРѕ РЅРµ РІРјРµС€РёРІР°Р№ РІ СЌС‚Рѕ РґРµР»Рѕ РЅР°РµРјРЅРёРєРѕРІ, С…РѕСЂРѕС€Рѕ?
 
 	if (B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self,ItMi_Gold)))
 	{
-		AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_04"); //Вот, я даже отдам тебе все мое золото.
+		AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_04"); //Р’РѕС‚, СЏ РґР°Р¶Рµ РѕС‚РґР°Рј С‚РµР±Рµ РІСЃРµ РјРѕРµ Р·РѕР»РѕС‚Рѕ.
 	};
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_05"); //И я вернусь в поле и буду работать. Все, что угодно, только не надо наемников.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_05"); //Р СЏ РІРµСЂРЅСѓСЃСЊ РІ РїРѕР»Рµ Рё Р±СѓРґСѓ СЂР°Р±РѕС‚Р°С‚СЊ. Р’СЃРµ, С‡С‚Рѕ СѓРіРѕРґРЅРѕ, С‚РѕР»СЊРєРѕ РЅРµ РЅР°РґРѕ РЅР°РµРјРЅРёРєРѕРІ.
 
 	AI_StopProcessInfos (self);	 	
 	DIA_Bronko_KEINBAUER_noPerm = TRUE;
@@ -231,7 +231,7 @@ instance DIA_Bronko_FLEISSIG		(C_INFO)
 	information	 = 	DIA_Bronko_FLEISSIG_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"(подразнить Бронко)";
+	description	 = 	"(РїРѕРґСЂР°Р·РЅРёС‚СЊ Р‘СЂРѕРЅРєРѕ)";
 };
 
 func int DIA_Bronko_FLEISSIG_Condition ()
@@ -250,20 +250,20 @@ func void DIA_Bronko_FLEISSIG_Info ()
 	
 	if (MIS_Sekob_Bronko_eingeschuechtert == LOG_SUCCESS)
 		{
-			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_00"); //Как дела? Работаешь как пчелка, да?
+			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_00"); //РљР°Рє РґРµР»Р°? Р Р°Р±РѕС‚Р°РµС€СЊ РєР°Рє РїС‡РµР»РєР°, РґР°?
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_01"); //Как дела? Желание трепаться еще не пропало?
+			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_01"); //РљР°Рє РґРµР»Р°? Р–РµР»Р°РЅРёРµ С‚СЂРµРїР°С‚СЊСЃСЏ РµС‰Рµ РЅРµ РїСЂРѕРїР°Р»Рѕ?
 		};
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_02"); //Ты наемник, да? Я мог бы догадаться.
+			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_02"); //РўС‹ РЅР°РµРјРЅРёРє, РґР°? РЇ РјРѕРі Р±С‹ РґРѕРіР°РґР°С‚СЊСЃСЏ.
 		}
 	else if (MIS_Sekob_Bronko_eingeschuechtert == LOG_SUCCESS)
 		{
-			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_03"); //(в страхе) Ты ведь не приведешь сюда этих наемников, да?
+			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_03"); //(РІ СЃС‚СЂР°С…Рµ) РўС‹ РІРµРґСЊ РЅРµ РїСЂРёРІРµРґРµС€СЊ СЃСЋРґР° СЌС‚РёС… РЅР°РµРјРЅРёРєРѕРІ, РґР°?
 		};
 
 	if 	(
@@ -272,10 +272,10 @@ func void DIA_Bronko_FLEISSIG_Info ()
 		|| 	(hero.guild == GIL_DJG)
 		)
 			{
-				AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_04"); //Не бей меня, пожалуйста.
+				AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_04"); //РќРµ Р±РµР№ РјРµРЅСЏ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°.
 			};
 
-	AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_05"); //Я даже вернусь к работе, хорошо?
+	AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_05"); //РЇ РґР°Р¶Рµ РІРµСЂРЅСѓСЃСЊ Рє СЂР°Р±РѕС‚Рµ, С…РѕСЂРѕС€Рѕ?
 
 	MIS_Sekob_Bronko_eingeschuechtert	= LOG_SUCCESS;
 	AI_StopProcessInfos (self);	 

@@ -30,7 +30,7 @@ instance DIA_Addon_Riordian_HelloADW		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_HelloADW_Condition;
 	information	 = 	DIA_Addon_Riordian_HelloADW_Info;
 
-	description	 = 	"Ты ожидал увидеть здесь ТАКОЕ?";
+	description	 = 	"РўС‹ РѕР¶РёРґР°Р» СѓРІРёРґРµС‚СЊ Р·РґРµСЃСЊ РўРђРљРћР•?";
 };
 
 func int DIA_Addon_Riordian_HelloADW_Condition ()
@@ -40,10 +40,10 @@ func int DIA_Addon_Riordian_HelloADW_Condition ()
 
 func void DIA_Addon_Riordian_HelloADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_HelloADW_15_00"); //Ты ожидал увидеть здесь ТАКОЕ?
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_01"); //Нет, вовсе нет. Я поражен тем, какие размеры должен был иметь этот город.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_02"); //Большинство зданий погребено под камнем и землей, но те руины, что избежали этой участи, разбросаны по всей долине.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_03"); //Здесь, должно быть, жили тысячи человек.
+	AI_Output	(other, self, "DIA_Addon_Riordian_HelloADW_15_00"); //РўС‹ РѕР¶РёРґР°Р» СѓРІРёРґРµС‚СЊ Р·РґРµСЃСЊ РўРђРљРћР•?
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_01"); //РќРµС‚, РІРѕРІСЃРµ РЅРµС‚. РЇ РїРѕСЂР°Р¶РµРЅ С‚РµРј, РєР°РєРёРµ СЂР°Р·РјРµСЂС‹ РґРѕР»Р¶РµРЅ Р±С‹Р» РёРјРµС‚СЊ СЌС‚РѕС‚ РіРѕСЂРѕРґ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_02"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ Р·РґР°РЅРёР№ РїРѕРіСЂРµР±РµРЅРѕ РїРѕРґ РєР°РјРЅРµРј Рё Р·РµРјР»РµР№, РЅРѕ С‚Рµ СЂСѓРёРЅС‹, С‡С‚Рѕ РёР·Р±РµР¶Р°Р»Рё СЌС‚РѕР№ СѓС‡Р°СЃС‚Рё, СЂР°Р·Р±СЂРѕСЃР°РЅС‹ РїРѕ РІСЃРµР№ РґРѕР»РёРЅРµ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_03"); //Р—РґРµСЃСЊ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, Р¶РёР»Рё С‚С‹СЃСЏС‡Рё С‡РµР»РѕРІРµРє.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -56,7 +56,7 @@ instance DIA_Addon_Riordian_WhatToFind		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_WhatToFind_Condition;
 	information	 = 	DIA_Addon_Riordian_WhatToFind_Info;
 
-	description	 = 	"Что вы здесь уже обнаружили?";
+	description	 = 	"Р§С‚Рѕ РІС‹ Р·РґРµСЃСЊ СѓР¶Рµ РѕР±РЅР°СЂСѓР¶РёР»Рё?";
 };
 
 func int DIA_Addon_Riordian_WhatToFind_Condition ()
@@ -69,14 +69,14 @@ func int DIA_Addon_Riordian_WhatToFind_Condition ()
 
 func void DIA_Addon_Riordian_WhatToFind_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_WhatToFind_15_00"); //Что вы здесь уже обнаружили?
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_01"); //На востоке раскинулось огромное болото, на котором находится большая крепость.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_02"); //Насколько мы поняли, в ней обосновались бандиты.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_03"); //На твоем месте я бы туда не ходил. Там повсюду сторожевые посты и охранники.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_04"); //Держись от болота подальше, пока не наберешься опыта... или не найдешь способ обмануть бандитов.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_05"); //На западе располагается пиратский лагерь.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_06"); //Я точно не уверен, но по-моему, пираты нас тоже уже заметили.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_07"); //Впрочем, их, похоже, не очень-то беспокоит наше присутствие.
+	AI_Output	(other, self, "DIA_Addon_Riordian_WhatToFind_15_00"); //Р§С‚Рѕ РІС‹ Р·РґРµСЃСЊ СѓР¶Рµ РѕР±РЅР°СЂСѓР¶РёР»Рё?
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_01"); //РќР° РІРѕСЃС‚РѕРєРµ СЂР°СЃРєРёРЅСѓР»РѕСЃСЊ РѕРіСЂРѕРјРЅРѕРµ Р±РѕР»РѕС‚Рѕ, РЅР° РєРѕС‚РѕСЂРѕРј РЅР°С…РѕРґРёС‚СЃСЏ Р±РѕР»СЊС€Р°СЏ РєСЂРµРїРѕСЃС‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_02"); //РќР°СЃРєРѕР»СЊРєРѕ РјС‹ РїРѕРЅСЏР»Рё, РІ РЅРµР№ РѕР±РѕСЃРЅРѕРІР°Р»РёСЃСЊ Р±Р°РЅРґРёС‚С‹.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_03"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ С‚СѓРґР° РЅРµ С…РѕРґРёР». РўР°Рј РїРѕРІСЃСЋРґСѓ СЃС‚РѕСЂРѕР¶РµРІС‹Рµ РїРѕСЃС‚С‹ Рё РѕС…СЂР°РЅРЅРёРєРё.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_04"); //Р”РµСЂР¶РёСЃСЊ РѕС‚ Р±РѕР»РѕС‚Р° РїРѕРґР°Р»СЊС€Рµ, РїРѕРєР° РЅРµ РЅР°Р±РµСЂРµС€СЊСЃСЏ РѕРїС‹С‚Р°... РёР»Рё РЅРµ РЅР°Р№РґРµС€СЊ СЃРїРѕСЃРѕР± РѕР±РјР°РЅСѓС‚СЊ Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_05"); //РќР° Р·Р°РїР°РґРµ СЂР°СЃРїРѕР»Р°РіР°РµС‚СЃСЏ РїРёСЂР°С‚СЃРєРёР№ Р»Р°РіРµСЂСЊ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_06"); //РЇ С‚РѕС‡РЅРѕ РЅРµ СѓРІРµСЂРµРЅ, РЅРѕ РїРѕ-РјРѕРµРјСѓ, РїРёСЂР°С‚С‹ РЅР°СЃ С‚РѕР¶Рµ СѓР¶Рµ Р·Р°РјРµС‚РёР»Рё.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_07"); //Р’РїСЂРѕС‡РµРј, РёС…, РїРѕС…РѕР¶Рµ, РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ Р±РµСЃРїРѕРєРѕРёС‚ РЅР°С€Рµ РїСЂРёСЃСѓС‚СЃС‚РІРёРµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -90,7 +90,7 @@ instance DIA_Addon_Riordian_Gegend		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Gegend_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Расскажи мне об этой местности побольше.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё РїРѕР±РѕР»СЊС€Рµ.";
 };
 
 func int DIA_Addon_Riordian_Gegend_Condition ()
@@ -104,8 +104,8 @@ func int DIA_Addon_Riordian_Gegend_Condition ()
 var int DIA_Addon_Riordian_Gegend_Info_OneTime;
 func void DIA_Addon_Riordian_Gegend_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Gegend_15_00"); //Расскажи мне об этой местности побольше.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Gegend_10_01"); //Что ты хочешь узнать?
+	AI_Output	(other, self, "DIA_Addon_Riordian_Gegend_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё РїРѕР±РѕР»СЊС€Рµ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Gegend_10_01"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 	
 	Info_ClearChoices	(DIA_Addon_Riordian_Gegend);
 	Info_AddChoice	(DIA_Addon_Riordian_Gegend, DIALOG_BACK, DIA_Addon_Riordian_Gegend_Back );
@@ -113,16 +113,16 @@ func void DIA_Addon_Riordian_Gegend_Info ()
 	if (DIA_Addon_Riordian_Gegend_Info_OneTime == FALSE)
 	&& (Npc_HasItems (other,ItWr_Map_AddonWorld) == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Существует ли карта этой местности?", DIA_Addon_Riordian_Gegend_map );
+		Info_AddChoice	(DIA_Addon_Riordian_Gegend, "РЎСѓС‰РµСЃС‚РІСѓРµС‚ Р»Рё РєР°СЂС‚Р° СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё?", DIA_Addon_Riordian_Gegend_map );
 		DIA_Addon_Riordian_Gegend_Info_OneTime = TRUE;
 	};
 	
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Где вы заметили пиратов?", DIA_Addon_Riordian_Gegend_Piraten );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Напомни, где обосновались бандиты?", DIA_Addon_Riordian_Gegend_bandits );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Вы уже побывали на западе?", DIA_Addon_Riordian_Gegend_west );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Что я найду на востоке?", DIA_Addon_Riordian_Gegend_ost );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Что расположено на юге?", DIA_Addon_Riordian_Gegend_sued );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Что находится на севере?", DIA_Addon_Riordian_Gegend_nord );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Р“РґРµ РІС‹ Р·Р°РјРµС‚РёР»Рё РїРёСЂР°С‚РѕРІ?", DIA_Addon_Riordian_Gegend_Piraten );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "РќР°РїРѕРјРЅРё, РіРґРµ РѕР±РѕСЃРЅРѕРІР°Р»РёСЃСЊ Р±Р°РЅРґРёС‚С‹?", DIA_Addon_Riordian_Gegend_bandits );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Р’С‹ СѓР¶Рµ РїРѕР±С‹РІР°Р»Рё РЅР° Р·Р°РїР°РґРµ?", DIA_Addon_Riordian_Gegend_west );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Р§С‚Рѕ СЏ РЅР°Р№РґСѓ РЅР° РІРѕСЃС‚РѕРєРµ?", DIA_Addon_Riordian_Gegend_ost );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Р§С‚Рѕ СЂР°СЃРїРѕР»РѕР¶РµРЅРѕ РЅР° СЋРіРµ?", DIA_Addon_Riordian_Gegend_sued );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Р§С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° СЃРµРІРµСЂРµ?", DIA_Addon_Riordian_Gegend_nord );
 };
 func void DIA_Addon_Riordian_Gegend_Back ()
 {
@@ -130,55 +130,55 @@ func void DIA_Addon_Riordian_Gegend_Back ()
 };
 func void DIA_Addon_Riordian_Gegend_map ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_map_15_00"); //Существует ли карта этой местности?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_map_10_01"); //Да, Кронос уже нарисовал карту. Обратись к нему.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_map_15_00"); //РЎСѓС‰РµСЃС‚РІСѓРµС‚ Р»Рё РєР°СЂС‚Р° СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_map_10_01"); //Р”Р°, РљСЂРѕРЅРѕСЃ СѓР¶Рµ РЅР°СЂРёСЃРѕРІР°Р» РєР°СЂС‚Сѓ. РћР±СЂР°С‚РёСЃСЊ Рє РЅРµРјСѓ.
 };
 func void DIA_Addon_Riordian_Gegend_bandits ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_bandits_15_00"); //Напомни, где обосновались бандиты?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_01"); //Их крепость и сторожевые посты находятся на востоке.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_02"); //Чтобы добраться до крепости, тебе придется пересечь болото.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_bandits_15_00"); //РќР°РїРѕРјРЅРё, РіРґРµ РѕР±РѕСЃРЅРѕРІР°Р»РёСЃСЊ Р±Р°РЅРґРёС‚С‹?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_01"); //РС… РєСЂРµРїРѕСЃС‚СЊ Рё СЃС‚РѕСЂРѕР¶РµРІС‹Рµ РїРѕСЃС‚С‹ РЅР°С…РѕРґСЏС‚СЃСЏ РЅР° РІРѕСЃС‚РѕРєРµ.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_02"); //Р§С‚РѕР±С‹ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РєСЂРµРїРѕСЃС‚Рё, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїРµСЂРµСЃРµС‡СЊ Р±РѕР»РѕС‚Рѕ.
 };
 func void DIA_Addon_Riordian_Gegend_Piraten ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_Piraten_15_00"); //Где вы заметили пиратов?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_Piraten_10_01"); //На западе. Некоторые пираты подходили к этому месту довольно близко.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_Piraten_10_02"); //Думаю, они охотились.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_Piraten_15_00"); //Р“РґРµ РІС‹ Р·Р°РјРµС‚РёР»Рё РїРёСЂР°С‚РѕРІ?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_Piraten_10_01"); //РќР° Р·Р°РїР°РґРµ. РќРµРєРѕС‚РѕСЂС‹Рµ РїРёСЂР°С‚С‹ РїРѕРґС…РѕРґРёР»Рё Рє СЌС‚РѕРјСѓ РјРµСЃС‚Сѓ РґРѕРІРѕР»СЊРЅРѕ Р±Р»РёР·РєРѕ.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_Piraten_10_02"); //Р”СѓРјР°СЋ, РѕРЅРё РѕС…РѕС‚РёР»РёСЃСЊ.
 };
 
 func void DIA_Addon_Riordian_Gegend_nord ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_nord_15_00"); //Что находится на севере?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_01"); //Если верить записям зодчих, там расположено большое ущелье, окруженное скалами.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_02"); //Ландшафт там составляют песок и растрескавшаяся от засухи земля.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_nord_15_00"); //Р§С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° СЃРµРІРµСЂРµ?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_01"); //Р•СЃР»Рё РІРµСЂРёС‚СЊ Р·Р°РїРёСЃСЏРј Р·РѕРґС‡РёС…, С‚Р°Рј СЂР°СЃРїРѕР»РѕР¶РµРЅРѕ Р±РѕР»СЊС€РѕРµ СѓС‰РµР»СЊРµ, РѕРєСЂСѓР¶РµРЅРЅРѕРµ СЃРєР°Р»Р°РјРё.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_02"); //Р›Р°РЅРґС€Р°С„С‚ С‚Р°Рј СЃРѕСЃС‚Р°РІР»СЏСЋС‚ РїРµСЃРѕРє Рё СЂР°СЃС‚СЂРµСЃРєР°РІС€Р°СЏСЃСЏ РѕС‚ Р·Р°СЃСѓС…Рё Р·РµРјР»СЏ.
 };
 
 func void DIA_Addon_Riordian_Gegend_sued ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_sued_15_00"); //Что расположено на юге?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_01"); //Местность на юге очень труднопроходимая.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_02"); //Ты найдешь там тропинки-серпантины, водопады и скалы причудливых форм.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_sued_15_00"); //Р§С‚Рѕ СЂР°СЃРїРѕР»РѕР¶РµРЅРѕ РЅР° СЋРіРµ?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_01"); //РњРµСЃС‚РЅРѕСЃС‚СЊ РЅР° СЋРіРµ РѕС‡РµРЅСЊ С‚СЂСѓРґРЅРѕРїСЂРѕС…РѕРґРёРјР°СЏ.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_02"); //РўС‹ РЅР°Р№РґРµС€СЊ С‚Р°Рј С‚СЂРѕРїРёРЅРєРё-СЃРµСЂРїР°РЅС‚РёРЅС‹, РІРѕРґРѕРїР°РґС‹ Рё СЃРєР°Р»С‹ РїСЂРёС‡СѓРґР»РёРІС‹С… С„РѕСЂРј.
 };
 
 func void DIA_Addon_Riordian_Gegend_ost ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_ost_15_00"); //Что я найду на востоке?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_01"); //Огромное болото. Эта местность очень опасна.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_02"); //Там можно встретить не только бандитов, но и чрезвычайно опасных животных.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_03"); //Будь осторожнее.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_ost_15_00"); //Р§С‚Рѕ СЏ РЅР°Р№РґСѓ РЅР° РІРѕСЃС‚РѕРєРµ?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_01"); //РћРіСЂРѕРјРЅРѕРµ Р±РѕР»РѕС‚Рѕ. Р­С‚Р° РјРµСЃС‚РЅРѕСЃС‚СЊ РѕС‡РµРЅСЊ РѕРїР°СЃРЅР°.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_02"); //РўР°Рј РјРѕР¶РЅРѕ РІСЃС‚СЂРµС‚РёС‚СЊ РЅРµ С‚РѕР»СЊРєРѕ Р±Р°РЅРґРёС‚РѕРІ, РЅРѕ Рё С‡СЂРµР·РІС‹С‡Р°Р№РЅРѕ РѕРїР°СЃРЅС‹С… Р¶РёРІРѕС‚РЅС‹С….
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_03"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ.
 };
 var int DIA_Addon_Riordian_Gegend_west_OneTime;
 func void DIA_Addon_Riordian_Gegend_west ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_west_15_00"); //Вы уже побывали на западе?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_01"); //Еще нет. Но мы знаем, что там находится берег моря.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_02"); //Видимо, на этом берегу устроили свой лагерь пираты.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_west_15_00"); //Р’С‹ СѓР¶Рµ РїРѕР±С‹РІР°Р»Рё РЅР° Р·Р°РїР°РґРµ?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_01"); //Р•С‰Рµ РЅРµС‚. РќРѕ РјС‹ Р·РЅР°РµРј, С‡С‚Рѕ С‚Р°Рј РЅР°С…РѕРґРёС‚СЃСЏ Р±РµСЂРµРі РјРѕСЂСЏ.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_02"); //Р’РёРґРёРјРѕ, РЅР° СЌС‚РѕРј Р±РµСЂРµРіСѓ СѓСЃС‚СЂРѕРёР»Рё СЃРІРѕР№ Р»Р°РіРµСЂСЊ РїРёСЂР°С‚С‹.
 
 	if (DIA_Addon_Riordian_Gegend_west_OneTime == FALSE)
 	&& (Npc_HasItems (VLK_4304_Addon_William,ITWr_Addon_William_01))
 	{
-		AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_03"); //На востоке, недалеко отсюда, мы нашли тело рыбака.
-		AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_04"); //Тебе стоит на него взглянуть.
+		AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_03"); //РќР° РІРѕСЃС‚РѕРєРµ, РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°, РјС‹ РЅР°С€Р»Рё С‚РµР»Рѕ СЂС‹Р±Р°РєР°.
+		AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_04"); //РўРµР±Рµ СЃС‚РѕРёС‚ РЅР° РЅРµРіРѕ РІР·РіР»СЏРЅСѓС‚СЊ.
 		B_LogEntry (TOPIC_Addon_MissingPeople,LogText_Addon_WilliamLeiche); 
 		DIA_Addon_Riordian_Gegend_west_OneTime = TRUE;
 	};
@@ -194,7 +194,7 @@ instance DIA_Addon_Riordian_HousesOfRulers		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_HousesOfRulers_Condition;
 	information	 = 	DIA_Addon_Riordian_HousesOfRulers_Info;
 
-	description	 = 	"Меня послал Сатурас.";
+	description	 = 	"РњРµРЅСЏ РїРѕСЃР»Р°Р» РЎР°С‚СѓСЂР°СЃ.";
 };
 
 func int DIA_Addon_Riordian_HousesOfRulers_Condition ()
@@ -207,9 +207,9 @@ func int DIA_Addon_Riordian_HousesOfRulers_Condition ()
 
 func void DIA_Addon_Riordian_HousesOfRulers_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_HousesOfRulers_15_00"); //Меня послал Сатурас. Я должен исследовать пять дворцов Яркендара.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_01"); //На то, чтобы найти сведения об их местонахождении в записях зодчих, мне понадобилось приличное количество времени.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_02"); //Но зато теперь я могу дать тебе точную информацию.
+	AI_Output	(other, self, "DIA_Addon_Riordian_HousesOfRulers_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» РЎР°С‚СѓСЂР°СЃ. РЇ РґРѕР»Р¶РµРЅ РёСЃСЃР»РµРґРѕРІР°С‚СЊ РїСЏС‚СЊ РґРІРѕСЂС†РѕРІ РЇСЂРєРµРЅРґР°СЂР°.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_01"); //РќР° С‚Рѕ, С‡С‚РѕР±С‹ РЅР°Р№С‚Рё СЃРІРµРґРµРЅРёСЏ РѕР± РёС… РјРµСЃС‚РѕРЅР°С…РѕР¶РґРµРЅРёРё РІ Р·Р°РїРёСЃСЏС… Р·РѕРґС‡РёС…, РјРЅРµ РїРѕРЅР°РґРѕР±РёР»РѕСЃСЊ РїСЂРёР»РёС‡РЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІСЂРµРјРµРЅРё.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_02"); //РќРѕ Р·Р°С‚Рѕ С‚РµРїРµСЂСЊ СЏ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ С‚РѕС‡РЅСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ.
 	MIS_Riordian_HousesOfRulers = LOG_RUNNING;
 };
 
@@ -223,7 +223,7 @@ instance DIA_Addon_Riordian_WhereAreHouses		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_WhereAreHouses_Condition;
 	information	 = 	DIA_Addon_Riordian_WhereAreHouses_Info;
 
-	description	 = 	"Где находятся пять дворцов?";
+	description	 = 	"Р“РґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РїСЏС‚СЊ РґРІРѕСЂС†РѕРІ?";
 };
 
 func int DIA_Addon_Riordian_WhereAreHouses_Condition ()
@@ -237,35 +237,35 @@ func int DIA_Addon_Riordian_WhereAreHouses_Condition ()
 var int B_WhreAreHousesOfRulersOneTime;
 func void B_WhreAreHousesOfRulers ()
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_00"); //Дворец ученых - это огромная библиотека. Она находится далеко на севере.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_01"); //Дворец воинов расположен на востоке. Он представляет из себя крепость, окруженную скалами.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_02"); //Дворцы жрецов и стражей мертвых расположены недалеко друг от друга. Ты найдешь их на юго-западе.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_03"); //А дворец-госпиталь целителей должен быть где-то на юго-востоке.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_00"); //Р”РІРѕСЂРµС† СѓС‡РµРЅС‹С… - СЌС‚Рѕ РѕРіСЂРѕРјРЅР°СЏ Р±РёР±Р»РёРѕС‚РµРєР°. РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РґР°Р»РµРєРѕ РЅР° СЃРµРІРµСЂРµ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_01"); //Р”РІРѕСЂРµС† РІРѕРёРЅРѕРІ СЂР°СЃРїРѕР»РѕР¶РµРЅ РЅР° РІРѕСЃС‚РѕРєРµ. РћРЅ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ РёР· СЃРµР±СЏ РєСЂРµРїРѕСЃС‚СЊ, РѕРєСЂСѓР¶РµРЅРЅСѓСЋ СЃРєР°Р»Р°РјРё.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_02"); //Р”РІРѕСЂС†С‹ Р¶СЂРµС†РѕРІ Рё СЃС‚СЂР°Р¶РµР№ РјРµСЂС‚РІС‹С… СЂР°СЃРїРѕР»РѕР¶РµРЅС‹ РЅРµРґР°Р»РµРєРѕ РґСЂСѓРі РѕС‚ РґСЂСѓРіР°. РўС‹ РЅР°Р№РґРµС€СЊ РёС… РЅР° СЋРіРѕ-Р·Р°РїР°РґРµ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_03"); //Рђ РґРІРѕСЂРµС†-РіРѕСЃРїРёС‚Р°Р»СЊ С†РµР»РёС‚РµР»РµР№ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РіРґРµ-С‚Рѕ РЅР° СЋРіРѕ-РІРѕСЃС‚РѕРєРµ.
 
 	if (B_WhreAreHousesOfRulersOneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_04"); //Если эти дворцы еще сохранились, ты узнаешь их по особой манере постройки.
+		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_04"); //Р•СЃР»Рё СЌС‚Рё РґРІРѕСЂС†С‹ РµС‰Рµ СЃРѕС…СЂР°РЅРёР»РёСЃСЊ, С‚С‹ СѓР·РЅР°РµС€СЊ РёС… РїРѕ РѕСЃРѕР±РѕР№ РјР°РЅРµСЂРµ РїРѕСЃС‚СЂРѕР№РєРё.
 		B_WhreAreHousesOfRulersOneTime = TRUE;
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_05"); //Все дворцы строились на возвышениях. К украшенному колоннами входу в каждый из них вела крутая лестница.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_05"); //Р’СЃРµ РґРІРѕСЂС†С‹ СЃС‚СЂРѕРёР»РёСЃСЊ РЅР° РІРѕР·РІС‹С€РµРЅРёСЏС…. Рљ СѓРєСЂР°С€РµРЅРЅРѕРјСѓ РєРѕР»РѕРЅРЅР°РјРё РІС…РѕРґСѓ РІ РєР°Р¶РґС‹Р№ РёР· РЅРёС… РІРµР»Р° РєСЂСѓС‚Р°СЏ Р»РµСЃС‚РЅРёС†Р°.
 
 	if (B_WhreAreHousesOfRulersOneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_06"); //Надеюсь, тебе это поможет.
+		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_06"); //РќР°РґРµСЋСЃСЊ, С‚РµР±Рµ СЌС‚Рѕ РїРѕРјРѕР¶РµС‚.
 	};
 
 	Log_CreateTopic (TOPIC_Addon_HousesOfRulers, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_HousesOfRulers, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_HousesOfRulers,"Замок ученых - это огромная библиотека. Она находится где-то на севере."); 
-	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Замок воинов - это окруженная скалами крепость на востоке."); 
-	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Замки жрецов и стражей мертвых находятся недалеко друг от друга. Я смогу найти их на юго-западе."); 
-	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Дворец-госпиталь целителей находится на юго-востоке."); 
+	B_LogEntry (TOPIC_Addon_HousesOfRulers,"Р—Р°РјРѕРє СѓС‡РµРЅС‹С… - СЌС‚Рѕ РѕРіСЂРѕРјРЅР°СЏ Р±РёР±Р»РёРѕС‚РµРєР°. РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РіРґРµ-С‚Рѕ РЅР° СЃРµРІРµСЂРµ."); 
+	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Р—Р°РјРѕРє РІРѕРёРЅРѕРІ - СЌС‚Рѕ РѕРєСЂСѓР¶РµРЅРЅР°СЏ СЃРєР°Р»Р°РјРё РєСЂРµРїРѕСЃС‚СЊ РЅР° РІРѕСЃС‚РѕРєРµ."); 
+	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Р—Р°РјРєРё Р¶СЂРµС†РѕРІ Рё СЃС‚СЂР°Р¶РµР№ РјРµСЂС‚РІС‹С… РЅР°С…РѕРґСЏС‚СЃСЏ РЅРµРґР°Р»РµРєРѕ РґСЂСѓРі РѕС‚ РґСЂСѓРіР°. РЇ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РёС… РЅР° СЋРіРѕ-Р·Р°РїР°РґРµ."); 
+	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Р”РІРѕСЂРµС†-РіРѕСЃРїРёС‚Р°Р»СЊ С†РµР»РёС‚РµР»РµР№ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° СЋРіРѕ-РІРѕСЃС‚РѕРєРµ."); 
 };
 
 func void DIA_Addon_Riordian_WhereAreHouses_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_WhereAreHouses_15_00"); //Где находятся пять дворцов?
+	AI_Output	(other, self, "DIA_Addon_Riordian_WhereAreHouses_15_00"); //Р“РґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РїСЏС‚СЊ РґРІРѕСЂС†РѕРІ?
 	B_WhreAreHousesOfRulers ();
 };
 
@@ -280,7 +280,7 @@ instance DIA_Addon_Riordian_FoundHouse		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_FoundHouse_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Насчет дворцов...";
+	description	 = 	"РќР°СЃС‡РµС‚ РґРІРѕСЂС†РѕРІ...";
 };
 
 func int DIA_Addon_Riordian_FoundHouse_Condition ()
@@ -304,31 +304,31 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 {
 	RiordianHouseNeuigkeit = 0;
 	
-	AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_00"); //Насчет дворцов...
-	AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_01"); //Да?
+	AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_00"); //РќР°СЃС‡РµС‚ РґРІРѕСЂС†РѕРІ...
+	AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_01"); //Р”Р°?
 	
 	if (SC_COMESINTO_CANYONLIBRARY_FUNC_OneTime == TRUE)
 	&& (FOUNDHOUSEINFO [Library] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_02"); //Библиотекой ученых, похоже, заинтересовались орки.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_03"); //Ты полагаешь, что они способны прочитать записи на древнем языке?
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_04"); //Нет, я так не думаю, но кто знает...
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_05"); //Ладно, в любом случае, тебе лучше от них избавиться.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_02"); //Р‘РёР±Р»РёРѕС‚РµРєРѕР№ СѓС‡РµРЅС‹С…, РїРѕС…РѕР¶Рµ, Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°Р»РёСЃСЊ РѕСЂРєРё.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_03"); //РўС‹ РїРѕР»Р°РіР°РµС€СЊ, С‡С‚Рѕ РѕРЅРё СЃРїРѕСЃРѕР±РЅС‹ РїСЂРѕС‡РёС‚Р°С‚СЊ Р·Р°РїРёСЃРё РЅР° РґСЂРµРІРЅРµРј СЏР·С‹РєРµ?
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_04"); //РќРµС‚, СЏ С‚Р°Рє РЅРµ РґСѓРјР°СЋ, РЅРѕ РєС‚Рѕ Р·РЅР°РµС‚...
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_05"); //Р›Р°РґРЅРѕ, РІ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ, С‚РµР±Рµ Р»СѓС‡С€Рµ РѕС‚ РЅРёС… РёР·Р±Р°РІРёС‚СЊСЃСЏ.
 		FOUNDHOUSEINFO[Library] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 		
 		Log_CreateTopic (TOPIC_Addon_CanyonOrcs, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_CanyonOrcs, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CanyonOrcs,"Маг воды Риордан будет доволен, если я очищу каньон от орков."); 
+		B_LogEntry (TOPIC_Addon_CanyonOrcs,"РњР°Рі РІРѕРґС‹ Р РёРѕСЂРґР°РЅ Р±СѓРґРµС‚ РґРѕРІРѕР»РµРЅ, РµСЃР»Рё СЏ РѕС‡РёС‰Сѓ РєР°РЅСЊРѕРЅ РѕС‚ РѕСЂРєРѕРІ."); 
 	};
 	
 	if ((Npc_IsDead(StoneGuardian_Heiler)) || (Npc_HasItems (other,ItMi_Addon_Stone_04)) || (Saturas_SCFound_ItMi_Addon_Stone_04 == TRUE) )
 	&& (FOUNDHOUSEINFO [Heiler] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_06"); //Дворец целителей находится в центре болота. Его охраняют каменные стражи.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_07"); //Значит, он все еще стоит?
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_08"); //Да, но неизвестно, сколько это еще продлится...
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_09"); //Мне больно видеть разрушение древних строений, свидетелей прошлого...
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_06"); //Р”РІРѕСЂРµС† С†РµР»РёС‚РµР»РµР№ РЅР°С…РѕРґРёС‚СЃСЏ РІ С†РµРЅС‚СЂРµ Р±РѕР»РѕС‚Р°. Р•РіРѕ РѕС…СЂР°РЅСЏСЋС‚ РєР°РјРµРЅРЅС‹Рµ СЃС‚СЂР°Р¶Рё.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_07"); //Р—РЅР°С‡РёС‚, РѕРЅ РІСЃРµ РµС‰Рµ СЃС‚РѕРёС‚?
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_08"); //Р”Р°, РЅРѕ РЅРµРёР·РІРµСЃС‚РЅРѕ, СЃРєРѕР»СЊРєРѕ СЌС‚Рѕ РµС‰Рµ РїСЂРѕРґР»РёС‚СЃСЏ...
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_09"); //РњРЅРµ Р±РѕР»СЊРЅРѕ РІРёРґРµС‚СЊ СЂР°Р·СЂСѓС€РµРЅРёРµ РґСЂРµРІРЅРёС… СЃС‚СЂРѕРµРЅРёР№, СЃРІРёРґРµС‚РµР»РµР№ РїСЂРѕС€Р»РѕРіРѕ...
 		FOUNDHOUSEINFO[Heiler] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 	};	
@@ -336,9 +336,9 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	if (RavenIsInTempel == TRUE)
 	&& (FOUNDHOUSEINFO [Warrior] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_10"); //Во дворце воинов поселился Ворон.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_11"); //(цинично) Он сделал хороший выбор.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_12"); //Это самая неприступная крепость во всей долине.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_10"); //Р’Рѕ РґРІРѕСЂС†Рµ РІРѕРёРЅРѕРІ РїРѕСЃРµР»РёР»СЃСЏ Р’РѕСЂРѕРЅ.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_11"); //(С†РёРЅРёС‡РЅРѕ) РћРЅ СЃРґРµР»Р°Р» С…РѕСЂРѕС€РёР№ РІС‹Р±РѕСЂ.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_12"); //Р­С‚Рѕ СЃР°РјР°СЏ РЅРµРїСЂРёСЃС‚СѓРїРЅР°СЏ РєСЂРµРїРѕСЃС‚СЊ РІРѕ РІСЃРµР№ РґРѕР»РёРЅРµ.
 		FOUNDHOUSEINFO[Warrior] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 	};	
@@ -346,10 +346,10 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	if ((Npc_IsDead(Minecrawler_Priest)) || (Npc_HasItems (other,ItMi_Addon_Stone_03)) || (Saturas_SCFound_ItMi_Addon_Stone_03 == TRUE))
 	&& (FOUNDHOUSEINFO [Priest] == FALSE)//crawler
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_13"); //Во дворце жрецов было множество краулеров...
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_14"); //Но ведь эти животные встречаются здесь очень редко, верно?
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_15"); //Да, ты прав.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_16"); //Странные вещи здесь творятся...
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_13"); //Р’Рѕ РґРІРѕСЂС†Рµ Р¶СЂРµС†РѕРІ Р±С‹Р»Рѕ РјРЅРѕР¶РµСЃС‚РІРѕ РєСЂР°СѓР»РµСЂРѕРІ...
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_14"); //РќРѕ РІРµРґСЊ СЌС‚Рё Р¶РёРІРѕС‚РЅС‹Рµ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ Р·РґРµСЃСЊ РѕС‡РµРЅСЊ СЂРµРґРєРѕ, РІРµСЂРЅРѕ?
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_15"); //Р”Р°, С‚С‹ РїСЂР°РІ.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_16"); //РЎС‚СЂР°РЅРЅС‹Рµ РІРµС‰Рё Р·РґРµСЃСЊ С‚РІРѕСЂСЏС‚СЃСЏ...
 		
 		FOUNDHOUSEINFO[Priest] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
@@ -358,10 +358,10 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	if ((Npc_IsDead(MayaZombie04_Totenw)) || (Npc_HasItems (other,ItMi_Addon_Stone_02)) || (Saturas_SCFound_ItMi_Addon_Stone_02 == TRUE))
 	&& (FOUNDHOUSEINFO [Totenw] == FALSE)//Zombies
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_17"); //Дом стражей мертвых защищают силы зла.
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_18"); //Я раньше никогда не встречал такое количество зомби в одном месте.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_19"); //Какая печальная судьба! Стражи мертвых пали жертвой своих же способностей.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_20"); //Их тесная связь с миром мертвых сослужила им злую службу. Надеюсь, ты освободил их от страданий.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_17"); //Р”РѕРј СЃС‚СЂР°Р¶РµР№ РјРµСЂС‚РІС‹С… Р·Р°С‰РёС‰Р°СЋС‚ СЃРёР»С‹ Р·Р»Р°.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_18"); //РЇ СЂР°РЅСЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ РІСЃС‚СЂРµС‡Р°Р» С‚Р°РєРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·РѕРјР±Рё РІ РѕРґРЅРѕРј РјРµСЃС‚Рµ.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_19"); //РљР°РєР°СЏ РїРµС‡Р°Р»СЊРЅР°СЏ СЃСѓРґСЊР±Р°! РЎС‚СЂР°Р¶Рё РјРµСЂС‚РІС‹С… РїР°Р»Рё Р¶РµСЂС‚РІРѕР№ СЃРІРѕРёС… Р¶Рµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚РµР№.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_20"); //РС… С‚РµСЃРЅР°СЏ СЃРІСЏР·СЊ СЃ РјРёСЂРѕРј РјРµСЂС‚РІС‹С… СЃРѕСЃР»СѓР¶РёР»Р° РёРј Р·Р»СѓСЋ СЃР»СѓР¶Р±Сѓ. РќР°РґРµСЋСЃСЊ, С‚С‹ РѕСЃРІРѕР±РѕРґРёР» РёС… РѕС‚ СЃС‚СЂР°РґР°РЅРёР№.
 		FOUNDHOUSEINFO[Totenw] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 	};	
@@ -376,7 +376,7 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_21"); //Напомни мне, где они находятся?
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_21"); //РќР°РїРѕРјРЅРё РјРЅРµ, РіРґРµ РѕРЅРё РЅР°С…РѕРґСЏС‚СЃСЏ?
 		B_WhreAreHousesOfRulers ();
 	};
 };
@@ -391,7 +391,7 @@ instance DIA_Addon_Riordian_OrksWeg		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_OrksWeg_Condition;
 	information	 = 	DIA_Addon_Riordian_OrksWeg_Info;
 
-	description	 = 	"Скоро орки потеряют интерес к этой местности.";
+	description	 = 	"РЎРєРѕСЂРѕ РѕСЂРєРё РїРѕС‚РµСЂСЏСЋС‚ РёРЅС‚РµСЂРµСЃ Рє СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё.";
 };
 
 func int DIA_Addon_Riordian_OrksWeg_Condition ()
@@ -405,20 +405,20 @@ func int DIA_Addon_Riordian_OrksWeg_Condition ()
 
 func void DIA_Addon_Riordian_OrksWeg_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_00"); //Скоро орки потеряют интерес к этой местности.
-	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_01"); //Почему ты так считаешь?
+	AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_00"); //РЎРєРѕСЂРѕ РѕСЂРєРё РїРѕС‚РµСЂСЏСЋС‚ РёРЅС‚РµСЂРµСЃ Рє СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё.
+	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_01"); //РџРѕС‡РµРјСѓ С‚С‹ С‚Р°Рє СЃС‡РёС‚Р°РµС€СЊ?
 
 	if (OrcShaman_Sit_CanyonLibraryKey.aivar [AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_02"); //Я убил их командира.
+		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_02"); //РЇ СѓР±РёР» РёС… РєРѕРјР°РЅРґРёСЂР°.
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_03"); //Их предводитель мертв.
+		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_03"); //РС… РїСЂРµРґРІРѕРґРёС‚РµР»СЊ РјРµСЂС‚РІ.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_04"); //Будем надеяться, ты прав.
-	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_05"); //Нам сейчас не нужны лишние заботы.
+	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_04"); //Р‘СѓРґРµРј РЅР°РґРµСЏС‚СЊСЃСЏ, С‚С‹ РїСЂР°РІ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_05"); //РќР°Рј СЃРµР№С‡Р°СЃ РЅРµ РЅСѓР¶РЅС‹ Р»РёС€РЅРёРµ Р·Р°Р±РѕС‚С‹.
 	
 	TOPIC_END_CanyonOrcs = TRUE;
 	B_GivePlayerXP (XP_Addon_Riordian_OrksWeg);
@@ -434,7 +434,7 @@ instance DIA_Addon_Riordian_FoundAllHouses		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_FoundAllHouses_Condition;
 	information	 = 	DIA_Addon_Riordian_FoundAllHouses_Info;
 
-	description	 = 	"Я нашел все дворцы.";
+	description	 = 	"РЇ РЅР°С€РµР» РІСЃРµ РґРІРѕСЂС†С‹.";
 };
 
 func int DIA_Addon_Riordian_FoundAllHouses_Condition ()
@@ -448,11 +448,11 @@ func int DIA_Addon_Riordian_FoundAllHouses_Condition ()
 
 func void DIA_Addon_Riordian_FoundAllHouses_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_00"); //Я нашел все дворцы.
-	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_01"); //Они все находились там, где я указал?
-	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_02"); //Ну... более-менее.
-	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_03"); //Отлично! Значит, моя работа была не напрасной.
-	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_04"); //Благодарю тебя.
+	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_00"); //РЇ РЅР°С€РµР» РІСЃРµ РґРІРѕСЂС†С‹.
+	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_01"); //РћРЅРё РІСЃРµ РЅР°С…РѕРґРёР»РёСЃСЊ С‚Р°Рј, РіРґРµ СЏ СѓРєР°Р·Р°Р»?
+	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_02"); //РќСѓ... Р±РѕР»РµРµ-РјРµРЅРµРµ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_03"); //РћС‚Р»РёС‡РЅРѕ! Р—РЅР°С‡РёС‚, РјРѕСЏ СЂР°Р±РѕС‚Р° Р±С‹Р»Р° РЅРµ РЅР°РїСЂР°СЃРЅРѕР№.
+	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_04"); //Р‘Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ.
 	MIS_Riordian_HousesOfRulers = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_FoundAllHouses);
 };
@@ -467,7 +467,7 @@ instance DIA_Addon_Riordian_ADW_PreTeach		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_ADW_PreTeach_Condition;
 	information	 = 	DIA_Addon_Riordian_ADW_PreTeach_Info;
 
-	description	 = 	"Ты можешь меня чему-нибудь научить?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ?";
 };
 
 func int DIA_Addon_Riordian_ADW_PreTeach_Condition ()
@@ -477,13 +477,13 @@ func int DIA_Addon_Riordian_ADW_PreTeach_Condition ()
 
 func void DIA_Addon_Riordian_ADW_PreTeach_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_ADW_PreTeach_15_00"); //Ты можешь меня чему-нибудь научить?
-	AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_01"); //Да, я могу обучить тебя искусству алхимии.
+	AI_Output	(other, self, "DIA_Addon_Riordian_ADW_PreTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ?
+	AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_01"); //Р”Р°, СЏ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё.
 
 	if  (Npc_HasItems (other,ItAm_Addon_WispDetector))
 	&& (DIA_Addon_Riordian_Teach_NoPerm == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_02"); //А еще я могу показать тебе, как научить твой огонек искать различные предметы.
+		AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_02"); //Рђ РµС‰Рµ СЏ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РЅР°СѓС‡РёС‚СЊ С‚РІРѕР№ РѕРіРѕРЅРµРє РёСЃРєР°С‚СЊ СЂР°Р·Р»РёС‡РЅС‹Рµ РїСЂРµРґРјРµС‚С‹.
 	
 		Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
 		Log_AddEntry		(TOPIC_Addon_KDWTeacher, LogText_Addon_RiordianTeach);
@@ -505,7 +505,7 @@ instance DIA_Addon_Riordian_ADW_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_ADW_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Покажи мне, как тренировать моего блуждающего огонька.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ РјРѕРµРіРѕ Р±Р»СѓР¶РґР°СЋС‰РµРіРѕ РѕРіРѕРЅСЊРєР°.";
 };
 var int DIA_Addon_Riordian_ADW_Teach_NoPerm;
 
@@ -663,7 +663,7 @@ INSTANCE DIA_Riordian_ADW_TeachAlchemy   (C_INFO)
 	condition   = DIA_Riordian_ADW_TeachAlchemy_Condition;
 	information = DIA_Riordian_ADW_TeachAlchemy_Info;
 	permanent   = TRUE;
-	description = "Научи меня смешивать зелья.";
+	description = "РќР°СѓС‡Рё РјРµРЅСЏ СЃРјРµС€РёРІР°С‚СЊ Р·РµР»СЊСЏ.";
 };
 //----------------------------------------
 var int DIA_Riordian_ADW_TeachAlchemy_permanent;
@@ -681,7 +681,7 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Addon_Riordian_ADW_TeachAlchemy_15_00");//Научи меня смешивать зелья.
+	AI_Output (other, self,"DIA_Addon_Riordian_ADW_TeachAlchemy_15_00");//РќР°СѓС‡Рё РјРµРЅСЏ СЃРјРµС€РёРІР°С‚СЊ Р·РµР»СЊСЏ.
 
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	|| ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
@@ -697,47 +697,47 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 	};
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Лечебная эссенция", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)),DIA_Riordian_ADW_TeachAlchemy_Health_01);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Р›РµС‡РµР±РЅР°СЏ СЌСЃСЃРµРЅС†РёСЏ", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)),DIA_Riordian_ADW_TeachAlchemy_Health_01);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Лечебный экстракт", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Riordian_ADW_TeachAlchemy_Health_02);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Р›РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Riordian_ADW_TeachAlchemy_Health_02);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Эссенция маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Riordian_ADW_TeachAlchemy_Mana_01);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Р­СЃСЃРµРЅС†РёСЏ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Riordian_ADW_TeachAlchemy_Mana_01);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Экстракт маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)),DIA_Riordian_ADW_TeachAlchemy_Mana_02);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Р­РєСЃС‚СЂР°РєС‚ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)),DIA_Riordian_ADW_TeachAlchemy_Mana_02);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Эликсир маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)),DIA_Riordian_ADW_TeachAlchemy_Mana_03);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)),DIA_Riordian_ADW_TeachAlchemy_Mana_03);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Эликсир духа", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Riordian_ADW_TeachAlchemy_Perm_Mana);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ РґСѓС…Р°", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Riordian_ADW_TeachAlchemy_Perm_Mana);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Эликсир ловкости", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)),DIA_Riordian_ADW_TeachAlchemy_Perm_DEX);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ Р»РѕРІРєРѕСЃС‚Рё", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)),DIA_Riordian_ADW_TeachAlchemy_Perm_DEX);
 		talente = (talente + 1);
 	};
 
@@ -745,19 +745,19 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_01"); //Магические зелья изготавливаются на алхимическом столе. Мы установили такой стол в одном из зданий наверху.
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_02"); //Тебе понадобится пустая колба, ингредиенты и, конечно, знание рецепта зелья.
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_03"); //Рецептам ты можешь научиться у меня. Все остальное тебе придется добыть самому.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_01"); //РњР°РіРёС‡РµСЃРєРёРµ Р·РµР»СЊСЏ РёР·РіРѕС‚Р°РІР»РёРІР°СЋС‚СЃСЏ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ. РњС‹ СѓСЃС‚Р°РЅРѕРІРёР»Рё С‚Р°РєРѕР№ СЃС‚РѕР» РІ РѕРґРЅРѕРј РёР· Р·РґР°РЅРёР№ РЅР°РІРµСЂС…Сѓ.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_02"); //РўРµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РїСѓСЃС‚Р°СЏ РєРѕР»Р±Р°, РёРЅРіСЂРµРґРёРµРЅС‚С‹ Рё, РєРѕРЅРµС‡РЅРѕ, Р·РЅР°РЅРёРµ СЂРµС†РµРїС‚Р° Р·РµР»СЊСЏ.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_03"); //Р РµС†РµРїС‚Р°Рј С‚С‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊСЃСЏ Сѓ РјРµРЅСЏ. Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РґРѕР±С‹С‚СЊ СЃР°РјРѕРјСѓ.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_04"); //Какой рецепт ты хочешь выучить?
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_04"); //РљР°РєРѕР№ СЂРµС†РµРїС‚ С‚С‹ С…РѕС‡РµС€СЊ РІС‹СѓС‡РёС‚СЊ?
 		};
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_05"); //Я уже научил тебя всему, что знал сам.
+		AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_05"); //РЇ СѓР¶Рµ РЅР°СѓС‡РёР» С‚РµР±СЏ РІСЃРµРјСѓ, С‡С‚Рѕ Р·РЅР°Р» СЃР°Рј.
 		DIA_Riordian_ADW_TeachAlchemy_permanent = TRUE;
 	};
 };

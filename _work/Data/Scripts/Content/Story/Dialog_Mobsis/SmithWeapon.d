@@ -34,9 +34,9 @@ FUNC VOID PC_SmithWeapon_End_Info()
 
 
 // *****************
-// AmboЯ-Dialoge
+// AmboРЇ-Dialoge
 // -------------
-// hдngen am Spieler
+// hРґngen am Spieler
 // *****************
 
 
@@ -47,7 +47,7 @@ INSTANCE PC_Common (C_INFO)
 	condition		= PC_Common_Condition;
 	information		= PC_Common_Info;
 	permanent		= TRUE;
-	description		= "Выковать обычное оружие";
+	description		= "Р’С‹РєРѕРІР°С‚СЊ РѕР±С‹С‡РЅРѕРµ РѕСЂСѓР¶РёРµ";
 };
 
 FUNC INT PC_Common_Condition()
@@ -71,7 +71,7 @@ INSTANCE PC_Ore (C_INFO)
 	condition		= PC_Ore_Condition;
 	information		= PC_Ore_Info;
 	permanent		= TRUE;
-	description		= "Выковать рудное оружие";
+	description		= "Р’С‹РєРѕРІР°С‚СЊ СЂСѓРґРЅРѕРµ РѕСЂСѓР¶РёРµ";
 };
 
 FUNC INT PC_Ore_Condition()
@@ -575,8 +575,8 @@ FUNC VOID PC_ItMw_2H_Special_04_Info ()
 // ****************************************************
 // SMITHWEAPON_S1
 // --------------
-// Funktion wird durch AmboЯ-Mobsi-Benutzung aufgerufen!
-// benцtigtes Item dafьr: ItMiSwordrawhot
+// Funktion wird durch AmboРЇ-Mobsi-Benutzung aufgerufen!
+// benС†tigtes Item dafСЊr: ItMiSwordrawhot
 // *****************************************************
 
 FUNC VOID SMITHWEAPON_S1 ()

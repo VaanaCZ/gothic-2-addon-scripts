@@ -89,29 +89,29 @@ FUNC VOID DIA_MiltenNW_KAP3_Hello_Info()
 {	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_00"); //(не веря) Я не могу поверить в это. Ты действительно стал паладином?
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_01"); //Похоже на то.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_02"); //(в эйфории) Если такие как ты становятся паладинами, то прихвостням Белиара нужно держать ухо востро.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_03"); //Какая-то горстка орков для тебя не проблема.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_04"); //Проблема не только в орках.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_05"); //Я знаю, но все равно хорошо, что ты на нашей стороне.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_06"); //Ну да.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_07"); //Что ты делаешь здесь, в монастыре? Дай я угадаю. Ты хочешь быть посвященным в искусство магии.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_08"); //Возможно.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_09"); //Я знал это - лучше всего тебе поговорить с Мардуком, он отвечает за вас, паладинов. Ты найдешь его перед часовней.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_00"); //(РЅРµ РІРµСЂСЏ) РЇ РЅРµ РјРѕРіСѓ РїРѕРІРµСЂРёС‚СЊ РІ СЌС‚Рѕ. РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃС‚Р°Р» РїР°Р»Р°РґРёРЅРѕРј?
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_01"); //РџРѕС…РѕР¶Рµ РЅР° С‚Рѕ.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_02"); //(РІ СЌР№С„РѕСЂРёРё) Р•СЃР»Рё С‚Р°РєРёРµ РєР°Рє С‚С‹ СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ РїР°Р»Р°РґРёРЅР°РјРё, С‚Рѕ РїСЂРёС…РІРѕСЃС‚РЅСЏРј Р‘РµР»РёР°СЂР° РЅСѓР¶РЅРѕ РґРµСЂР¶Р°С‚СЊ СѓС…Рѕ РІРѕСЃС‚СЂРѕ.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_03"); //РљР°РєР°СЏ-С‚Рѕ РіРѕСЂСЃС‚РєР° РѕСЂРєРѕРІ РґР»СЏ С‚РµР±СЏ РЅРµ РїСЂРѕР±Р»РµРјР°.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_04"); //РџСЂРѕР±Р»РµРјР° РЅРµ С‚РѕР»СЊРєРѕ РІ РѕСЂРєР°С….
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_05"); //РЇ Р·РЅР°СЋ, РЅРѕ РІСЃРµ СЂР°РІРЅРѕ С…РѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ РЅР° РЅР°С€РµР№ СЃС‚РѕСЂРѕРЅРµ.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_06"); //РќСѓ РґР°.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_07"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ, РІ РјРѕРЅР°СЃС‚С‹СЂРµ? Р”Р°Р№ СЏ СѓРіР°РґР°СЋ. РўС‹ С…РѕС‡РµС€СЊ Р±С‹С‚СЊ РїРѕСЃРІСЏС‰РµРЅРЅС‹Рј РІ РёСЃРєСѓСЃСЃС‚РІРѕ РјР°РіРёРё.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_08"); //Р’РѕР·РјРѕР¶РЅРѕ.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_09"); //РЇ Р·РЅР°Р» СЌС‚Рѕ - Р»СѓС‡С€Рµ РІСЃРµРіРѕ С‚РµР±Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РњР°СЂРґСѓРєРѕРј, РѕРЅ РѕС‚РІРµС‡Р°РµС‚ Р·Р° РІР°СЃ, РїР°Р»Р°РґРёРЅРѕРІ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РїРµСЂРµРґ С‡Р°СЃРѕРІРЅРµР№.
 	};
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_10"); //Я вижу, что слухи оказались правдой.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_11"); //Какие слухи?
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_12"); //Что ты присоединился к охотникам за драконами.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_13"); //Ну, ты никогда не был человеком церкви. Тем не менее, ты сражаешься за наше общее дело, и только это имеет значение.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_14"); //Это все?
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_15"); //Я рад, конечно, и судя по тому, как ты выглядишь, все орки должны бояться тебя.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_16"); //Дело не только в орках.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_17"); //Я знаю, но, тем не менее, они доставляют проблемы. А ты важная птица.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_18"); //Ты победил Спящего. Нам всем однажды может понадобиться твоя помощь.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_19"); //Ох, ладно.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_10"); //РЇ РІРёР¶Сѓ, С‡С‚Рѕ СЃР»СѓС…Рё РѕРєР°Р·Р°Р»РёСЃСЊ РїСЂР°РІРґРѕР№.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_11"); //РљР°РєРёРµ СЃР»СѓС…Рё?
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_12"); //Р§С‚Рѕ С‚С‹ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РѕС…РѕС‚РЅРёРєР°Рј Р·Р° РґСЂР°РєРѕРЅР°РјРё.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_13"); //РќСѓ, С‚С‹ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р» С‡РµР»РѕРІРµРєРѕРј С†РµСЂРєРІРё. РўРµРј РЅРµ РјРµРЅРµРµ, С‚С‹ СЃСЂР°Р¶Р°РµС€СЊСЃСЏ Р·Р° РЅР°С€Рµ РѕР±С‰РµРµ РґРµР»Рѕ, Рё С‚РѕР»СЊРєРѕ СЌС‚Рѕ РёРјРµРµС‚ Р·РЅР°С‡РµРЅРёРµ.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_14"); //Р­С‚Рѕ РІСЃРµ?
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_15"); //РЇ СЂР°Рґ, РєРѕРЅРµС‡РЅРѕ, Рё СЃСѓРґСЏ РїРѕ С‚РѕРјСѓ, РєР°Рє С‚С‹ РІС‹РіР»СЏРґРёС€СЊ, РІСЃРµ РѕСЂРєРё РґРѕР»Р¶РЅС‹ Р±РѕСЏС‚СЊСЃСЏ С‚РµР±СЏ.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_16"); //Р”РµР»Рѕ РЅРµ С‚РѕР»СЊРєРѕ РІ РѕСЂРєР°С….
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_17"); //РЇ Р·РЅР°СЋ, РЅРѕ, С‚РµРј РЅРµ РјРµРЅРµРµ, РѕРЅРё РґРѕСЃС‚Р°РІР»СЏСЋС‚ РїСЂРѕР±Р»РµРјС‹. Рђ С‚С‹ РІР°Р¶РЅР°СЏ РїС‚РёС†Р°.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_18"); //РўС‹ РїРѕР±РµРґРёР» РЎРїСЏС‰РµРіРѕ. РќР°Рј РІСЃРµРј РѕРґРЅР°Р¶РґС‹ РјРѕР¶РµС‚ РїРѕРЅР°РґРѕР±РёС‚СЊСЃСЏ С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_19"); //РћС…, Р»Р°РґРЅРѕ.
 	};		
 };	
 
@@ -126,7 +126,7 @@ INSTANCE DIA_MiltenNW_Monastery(C_INFO)
 	condition	= DIA_MiltenNW_Monastery_Condition;
 	information	= DIA_MiltenNW_Monastery_Info;
 	permanent	= FALSE;
-	description = "Как ты смог добраться до монастыря так быстро?";
+	description = "РљР°Рє С‚С‹ СЃРјРѕРі РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РјРѕРЅР°СЃС‚С‹СЂСЏ С‚Р°Рє Р±С‹СЃС‚СЂРѕ?";
 };                       
 FUNC INT DIA_MiltenNW_Monastery_Condition()
 {
@@ -137,9 +137,9 @@ FUNC INT DIA_MiltenNW_Monastery_Condition()
 };
 FUNC VOID DIA_MiltenNW_Monastery_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_Monastery_15_00"); //Как ты смог добраться до монастыря так быстро?
-	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_01"); //Откуда такой вопрос? Я проскользнул через Проход и направился прямо в монастырь.
-	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_02"); //Должен признать, что это было непросто - уйти от всех монстров, что поселились по эту сторону от долины, но проблем оказалось все же меньше, чем я ожидал.
+	AI_Output (other,self ,"DIA_MiltenNW_Monastery_15_00"); //РљР°Рє С‚С‹ СЃРјРѕРі РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РјРѕРЅР°СЃС‚С‹СЂСЏ С‚Р°Рє Р±С‹СЃС‚СЂРѕ?
+	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_01"); //РћС‚РєСѓРґР° С‚Р°РєРѕР№ РІРѕРїСЂРѕСЃ? РЇ РїСЂРѕСЃРєРѕР»СЊР·РЅСѓР» С‡РµСЂРµР· РџСЂРѕС…РѕРґ Рё РЅР°РїСЂР°РІРёР»СЃСЏ РїСЂСЏРјРѕ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.
+	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_02"); //Р”РѕР»Р¶РµРЅ РїСЂРёР·РЅР°С‚СЊ, С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµРїСЂРѕСЃС‚Рѕ - СѓР№С‚Рё РѕС‚ РІСЃРµС… РјРѕРЅСЃС‚СЂРѕРІ, С‡С‚Рѕ РїРѕСЃРµР»РёР»РёСЃСЊ РїРѕ СЌС‚Сѓ СЃС‚РѕСЂРѕРЅСѓ РѕС‚ РґРѕР»РёРЅС‹, РЅРѕ РїСЂРѕР±Р»РµРј РѕРєР°Р·Р°Р»РѕСЃСЊ РІСЃРµ Р¶Рµ РјРµРЅСЊС€Рµ, С‡РµРј СЏ РѕР¶РёРґР°Р».
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ INSTANCE DIA_MiltenNW_FourFriends(C_INFO)
 	condition	= DIA_MiltenNW_FourFriends_Condition;
 	information	= DIA_MiltenNW_FourFriends_Info;
 	permanent	= FALSE;
-	description = "Ты знаешь, где остальные?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ?";
 };                       
 FUNC INT DIA_MiltenNW_FourFriends_Condition()
 {
@@ -164,33 +164,33 @@ FUNC INT DIA_MiltenNW_FourFriends_Condition()
 };
 FUNC VOID DIA_MiltenNW_FourFriends_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_00"); //Ты знаешь, где остальные?
+	AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ?
 	if (Npc_IsDead (PC_FIGHTER_NW_vor_DJG) == FALSE)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_01"); //Горн, похоже, ничуть не изменился после заключения в тюрьме Гаронда.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_01"); //Р“РѕСЂРЅ, РїРѕС…РѕР¶Рµ, РЅРёС‡СѓС‚СЊ РЅРµ РёР·РјРµРЅРёР»СЃСЏ РїРѕСЃР»Рµ Р·Р°РєР»СЋС‡РµРЅРёСЏ РІ С‚СЋСЂСЊРјРµ Р“Р°СЂРѕРЅРґР°.
 		
 		if (MIS_RescueGorn != LOG_SUCCESS)
 		{
-			AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_02"); //Как ему удалось выбраться?
-			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_03"); //Мне пришлось солгать Гаронду, так что он снял все обвинения.
-			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_04"); //Но это только между нами, понятно?
+			AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_02"); //РљР°Рє РµРјСѓ СѓРґР°Р»РѕСЃСЊ РІС‹Р±СЂР°С‚СЊСЃСЏ?
+			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_03"); //РњРЅРµ РїСЂРёС€Р»РѕСЃСЊ СЃРѕР»РіР°С‚СЊ Р“Р°СЂРѕРЅРґСѓ, С‚Р°Рє С‡С‚Рѕ РѕРЅ СЃРЅСЏР» РІСЃРµ РѕР±РІРёРЅРµРЅРёСЏ.
+			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_04"); //РќРѕ СЌС‚Рѕ С‚РѕР»СЊРєРѕ РјРµР¶РґСѓ РЅР°РјРё, РїРѕРЅСЏС‚РЅРѕ?
 		};
 		
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_05"); //В любом случае, он хотел отправиться к Ли и посмотреть, что происходит на ферме.
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_06"); //После голодания в темнице, он, вероятно, сейчас пытается восполнить потерю в весе и испытывает на прочность кладовку наемников.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_05"); //Р’ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ, РѕРЅ С…РѕС‚РµР» РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ Рє Р›Рё Рё РїРѕСЃРјРѕС‚СЂРµС‚СЊ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РЅР° С„РµСЂРјРµ.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_06"); //РџРѕСЃР»Рµ РіРѕР»РѕРґР°РЅРёСЏ РІ С‚РµРјРЅРёС†Рµ, РѕРЅ, РІРµСЂРѕСЏС‚РЅРѕ, СЃРµР№С‡Р°СЃ РїС‹С‚Р°РµС‚СЃСЏ РІРѕСЃРїРѕР»РЅРёС‚СЊ РїРѕС‚РµСЂСЋ РІ РІРµСЃРµ Рё РёСЃРїС‹С‚С‹РІР°РµС‚ РЅР° РїСЂРѕС‡РЅРѕСЃС‚СЊ РєР»Р°РґРѕРІРєСѓ РЅР°РµРјРЅРёРєРѕРІ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_07"); //Горн не виноват.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_07"); //Р“РѕСЂРЅ РЅРµ РІРёРЅРѕРІР°С‚.
 	};
 	if (Npc_IsDead (PC_THIEF_NW) == FALSE)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_08"); //Диего бормотал что-то о расплате. Но я понятия не имею, что он хотел сказать этим.
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_09"); //Но я подозреваю, что он сейчас в городе. Ты знаешь его - он всегда там, где можно поживиться.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_08"); //Р”РёРµРіРѕ Р±РѕСЂРјРѕС‚Р°Р» С‡С‚Рѕ-С‚Рѕ Рѕ СЂР°СЃРїР»Р°С‚Рµ. РќРѕ СЏ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, С‡С‚Рѕ РѕРЅ С…РѕС‚РµР» СЃРєР°Р·Р°С‚СЊ СЌС‚РёРј.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_09"); //РќРѕ СЏ РїРѕРґРѕР·СЂРµРІР°СЋ, С‡С‚Рѕ РѕРЅ СЃРµР№С‡Р°СЃ РІ РіРѕСЂРѕРґРµ. РўС‹ Р·РЅР°РµС€СЊ РµРіРѕ - РѕРЅ РІСЃРµРіРґР° С‚Р°Рј, РіРґРµ РјРѕР¶РЅРѕ РїРѕР¶РёРІРёС‚СЊСЃСЏ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_10"); //Диего выкупил Горна - похоже, что Барьер изменил и его.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_10"); //Р”РёРµРіРѕ РІС‹РєСѓРїРёР» Р“РѕСЂРЅР° - РїРѕС…РѕР¶Рµ, С‡С‚Рѕ Р‘Р°СЂСЊРµСЂ РёР·РјРµРЅРёР» Рё РµРіРѕ.
 	};
 };
 //*************************************************************
@@ -204,7 +204,7 @@ INSTANCE DIA_MiltenNW_KAP3_Entry(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_Entry_Condition;
 	information	= DIA_MiltenNW_KAP3_Entry_Info;
 	permanent	= TRUE;
-	description = "Мне нужно попасть в монастырь. Это срочно!";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. Р­С‚Рѕ СЃСЂРѕС‡РЅРѕ!";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_Entry_Condition()
 {
@@ -217,10 +217,10 @@ FUNC INT DIA_MiltenNW_KAP3_Entry_Condition()
 };
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_15_00"); //Мне нужно попасть в монастырь. Это срочно!
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. Р­С‚Рѕ СЃСЂРѕС‡РЅРѕ!
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self,other,"DIA_MiltenNW_KAP3_Entry_03_01"); //Да, конечно. Вот ключ.
+		AI_Output (self,other,"DIA_MiltenNW_KAP3_Entry_03_01"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. Р’РѕС‚ РєР»СЋС‡.
 		
 		CreateInvItems (self,ItKe_Innos_Mis,1);
 		B_GiveInvItems (self,other,ItKe_Innos_Mis,1); 
@@ -229,16 +229,16 @@ FUNC VOID DIA_MiltenNW_KAP3_Entry_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_02"); //Я не могу пустить тебя в монастырь. У меня будут проблемы с Высшим Советом.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_03"); //Без разрешения верховных магов, я никого не могу пустить в монастырь.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_02"); //РЇ РЅРµ РјРѕРіСѓ РїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. РЈ РјРµРЅСЏ Р±СѓРґСѓС‚ РїСЂРѕР±Р»РµРјС‹ СЃ Р’С‹СЃС€РёРј РЎРѕРІРµС‚РѕРј.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_03"); //Р‘РµР· СЂР°Р·СЂРµС€РµРЅРёСЏ РІРµСЂС…РѕРІРЅС‹С… РјР°РіРѕРІ, СЏ РЅРёРєРѕРіРѕ РЅРµ РјРѕРіСѓ РїСѓСЃС‚РёС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.
 	
 		Info_ClearChoices (DIA_MiltenNW_KAP3_Entry);
 		Info_AddChoice (DIA_MiltenNW_KAP3_Entry,DIALOG_Back,DIA_MiltenNW_KAP3_Entry_BACK);
-		Info_AddChoice (DIA_MiltenNW_KAP3_Entry,"Но это важно!",DIA_MiltenNW_KAP3_Entry_Important);
+		Info_AddChoice (DIA_MiltenNW_KAP3_Entry,"РќРѕ СЌС‚Рѕ РІР°Р¶РЅРѕ!",DIA_MiltenNW_KAP3_Entry_Important);
 	
 		if (Npc_HasItems (other,ItWr_PermissionToWearInnosEye_MIS) >=1)
 		{	
-			Info_AddChoice (DIA_MiltenNW_KAP3_Entry,"У меня есть письмо от лорда Хагена.",DIA_MiltenNW_KAP3_Entry_Permit); 
+			Info_AddChoice (DIA_MiltenNW_KAP3_Entry,"РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРёСЃСЊРјРѕ РѕС‚ Р»РѕСЂРґР° РҐР°РіРµРЅР°.",DIA_MiltenNW_KAP3_Entry_Permit); 
 		};
 	};	
 };	
@@ -250,21 +250,21 @@ FUNC VOID DIA_MiltenNW_KAP3_Entry_BACK ()
 
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Important ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Important_15_00"); //Но это важно!
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Important_03_01"); //Это не поможет. Пирокар оторвет мне голову за это.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Important_15_00"); //РќРѕ СЌС‚Рѕ РІР°Р¶РЅРѕ!
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Important_03_01"); //Р­С‚Рѕ РЅРµ РїРѕРјРѕР¶РµС‚. РџРёСЂРѕРєР°СЂ РѕС‚РѕСЂРІРµС‚ РјРЅРµ РіРѕР»РѕРІСѓ Р·Р° СЌС‚Рѕ.
 	
 	Info_ClearChoices (DIA_MiltenNW_KAP3_Entry);
 };
 
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Permit ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Permit_15_00"); //У меня есть письмо от лорда Хагена.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_01"); //Покажи.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Permit_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРёСЃСЊРјРѕ РѕС‚ Р»РѕСЂРґР° РҐР°РіРµРЅР°.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_01"); //РџРѕРєР°Р¶Рё.
 	
 	B_GiveInvItems (other,self,ItWr_PermissionToWearInnosEye_MIS,1);
 	B_UseFakeScroll ();	
 	
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_02"); //(колеблясь) Хорошо. Вот ключ от монастыря. Ты найдешь Пирокара в церкви.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_02"); //(РєРѕР»РµР±Р»СЏСЃСЊ) РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ РєР»СЋС‡ РѕС‚ РјРѕРЅР°СЃС‚С‹СЂСЏ. РўС‹ РЅР°Р№РґРµС€СЊ РџРёСЂРѕРєР°СЂР° РІ С†РµСЂРєРІРё.
 	
 	CreateInvItems (self,ItKe_Innos_Mis,1);
 	B_GiveInvItems (self,other,ItKe_Innos_Mis,1); 
@@ -286,7 +286,7 @@ INSTANCE DIA_MiltenNW_KAP3_NovizenChase(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_NovizenChase_Condition;
 	information	= DIA_MiltenNW_KAP3_NovizenChase_Info;
 	permanent	= FALSE;
-	description = "Ты знаешь, где Педро?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РџРµРґСЂРѕ?";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_NovizenChase_Condition()
 {
@@ -300,15 +300,15 @@ FUNC INT DIA_MiltenNW_KAP3_NovizenChase_Condition()
 
 FUNC VOID DIA_MiltenNW_KAP3_NovizenChase_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_NovizenChase_15_00"); //Ты знаешь, где Педро?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_01"); //Ты думаешь, я стоял бы здесь если бы я знал, где скрывается этот предатель?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_02"); //Он должен заплатить за то, что сделал. Я надеюсь, нам удастся вернуть Глаз.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_03"); //Ты должен помочь нам. Найди его и принеси назад Глаз Инноса.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_NovizenChase_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РџРµРґСЂРѕ?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_01"); //РўС‹ РґСѓРјР°РµС€СЊ, СЏ СЃС‚РѕСЏР» Р±С‹ Р·РґРµСЃСЊ РµСЃР»Рё Р±С‹ СЏ Р·РЅР°Р», РіРґРµ СЃРєСЂС‹РІР°РµС‚СЃСЏ СЌС‚РѕС‚ РїСЂРµРґР°С‚РµР»СЊ?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_02"); //РћРЅ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° С‚Рѕ, С‡С‚Рѕ СЃРґРµР»Р°Р». РЇ РЅР°РґРµСЋСЃСЊ, РЅР°Рј СѓРґР°СЃС‚СЃСЏ РІРµСЂРЅСѓС‚СЊ Р“Р»Р°Р·.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_03"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРјРѕС‡СЊ РЅР°Рј. РќР°Р№РґРё РµРіРѕ Рё РїСЂРёРЅРµСЃРё РЅР°Р·Р°Рґ Р“Р»Р°Р· РРЅРЅРѕСЃР°.
 	//Joly: AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_04"); //Ich werde sehen, was ich tun kann.
 };	
 
 //***************************************************************
-//	WeiЯt du etwas ьber die vermummten Gestalten?
+//	WeiРЇt du etwas СЊber die vermummten Gestalten?
 //***************************************************************
 
 INSTANCE DIA_MiltenNW_KAP3_Perm(C_INFO)
@@ -318,7 +318,7 @@ INSTANCE DIA_MiltenNW_KAP3_Perm(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_Perm_Condition;
 	information	= DIA_MiltenNW_KAP3_Perm_Info;
 	permanent	= FALSE;
-	description = "Ты знаешь, что-нибудь о людях в черных рясах?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ Р»СЋРґСЏС… РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С…?";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_Perm_Condition()
 {
@@ -330,9 +330,9 @@ FUNC INT DIA_MiltenNW_KAP3_Perm_Condition()
 
 FUNC VOID DIA_MiltenNW_KAP3_Perm_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Perm_15_00"); //Ты знаешь, что-нибудь о людях в черных рясах?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_01"); //Нет, но у меня плохое предчувствие насчет них.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_02"); //Будь осторожен, если наткнешься на них.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Perm_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ Р»СЋРґСЏС… РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С…?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_01"); //РќРµС‚, РЅРѕ Сѓ РјРµРЅСЏ РїР»РѕС…РѕРµ РїСЂРµРґС‡СѓРІСЃС‚РІРёРµ РЅР°СЃС‡РµС‚ РЅРёС….
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_02"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, РµСЃР»Рё РЅР°С‚РєРЅРµС€СЊСЃСЏ РЅР° РЅРёС….
 };	
 	
 
@@ -378,7 +378,7 @@ INSTANCE DIA_MiltenNW_KAP4_PERM(C_INFO)
 	condition	= DIA_MiltenNW_KAP4_PERM_Condition;
 	information	= DIA_MiltenNW_KAP4_PERM_Info;
 	permanent	= TRUE;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };                       
 FUNC INT DIA_MiltenNW_KAP4_PERM_Condition()
 {
@@ -389,28 +389,28 @@ FUNC INT DIA_MiltenNW_KAP4_PERM_Condition()
 };
 FUNC VOID DIA_MiltenNW_KAP4_PERM_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_00"); //Есть новости?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_01"); //Это я должен тебя спрашивать. Мы все здесь очень обеспокоены.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_02"); //Высший Совет пытается предугадать следующий ход врага.
-	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_03"); //Что-нибудь еще?
+	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_01"); //Р­С‚Рѕ СЏ РґРѕР»Р¶РµРЅ С‚РµР±СЏ СЃРїСЂР°С€РёРІР°С‚СЊ. РњС‹ РІСЃРµ Р·РґРµСЃСЊ РѕС‡РµРЅСЊ РѕР±РµСЃРїРѕРєРѕРµРЅС‹.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_02"); //Р’С‹СЃС€РёР№ РЎРѕРІРµС‚ РїС‹С‚Р°РµС‚СЃСЏ РїСЂРµРґСѓРіР°РґР°С‚СЊ СЃР»РµРґСѓСЋС‰РёР№ С…РѕРґ РІСЂР°РіР°.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_03"); //Р§С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_04"); //Последнее время все больше сообщений о нападении орков, даже за пределами Долины Рудников.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_05"); //Мне это все не нравится - я не думаю, что у нас осталось много времени.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_04"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РІСЃРµ Р±РѕР»СЊС€Рµ СЃРѕРѕР±С‰РµРЅРёР№ Рѕ РЅР°РїР°РґРµРЅРёРё РѕСЂРєРѕРІ, РґР°Р¶Рµ Р·Р° РїСЂРµРґРµР»Р°РјРё Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_05"); //РњРЅРµ СЌС‚Рѕ РІСЃРµ РЅРµ РЅСЂР°РІРёС‚СЃСЏ - СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ Сѓ РЅР°СЃ РѕСЃС‚Р°Р»РѕСЃСЊ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё.
 	}
 	else if (hero.guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_06"); //Фермер сообщил о появлении чешуйчатых существ у его фермы.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_07"); //Я не знаю, что все это значит, но я думаю, что враг что-то задумал.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_06"); //Р¤РµСЂРјРµСЂ СЃРѕРѕР±С‰РёР» Рѕ РїРѕСЏРІР»РµРЅРёРё С‡РµС€СѓР№С‡Р°С‚С‹С… СЃСѓС‰РµСЃС‚РІ Сѓ РµРіРѕ С„РµСЂРјС‹.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_07"); //РЇ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ РІСЃРµ СЌС‚Рѕ Р·РЅР°С‡РёС‚, РЅРѕ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РІСЂР°Рі С‡С‚Рѕ-С‚Рѕ Р·Р°РґСѓРјР°Р».
 	}
 	else if (MIS_FindTheObesessed == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_08"); //Мы получаем все больше сообщений об одержимых людях. Враг стал силен, значительно сильнее, чем я ожидал.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_08"); //РњС‹ РїРѕР»СѓС‡Р°РµРј РІСЃРµ Р±РѕР»СЊС€Рµ СЃРѕРѕР±С‰РµРЅРёР№ РѕР± РѕРґРµСЂР¶РёРјС‹С… Р»СЋРґСЏС…. Р’СЂР°Рі СЃС‚Р°Р» СЃРёР»РµРЅ, Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ СЃРёР»СЊРЅРµРµ, С‡РµРј СЏ РѕР¶РёРґР°Р».
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_09"); //Нет, ситуация все еще очень серьезная. Все, что нам остается, - это верить в Инноса.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_09"); //РќРµС‚, СЃРёС‚СѓР°С†РёСЏ РІСЃРµ РµС‰Рµ РѕС‡РµРЅСЊ СЃРµСЂСЊРµР·РЅР°СЏ. Р’СЃРµ, С‡С‚Рѕ РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ, - СЌС‚Рѕ РІРµСЂРёС‚СЊ РІ РРЅРЅРѕСЃР°.
 	};
 };
 
@@ -446,7 +446,7 @@ FUNC VOID DIA_MiltenNW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  				   Ich habe alle Drachen getцtet. (Perm Kap 5)
+// 	  				   Ich habe alle Drachen getС†tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_MiltenNW_AllDragonsDead(C_INFO)
@@ -456,7 +456,7 @@ INSTANCE DIA_MiltenNW_AllDragonsDead(C_INFO)
 	condition	= DIA_MiltenNW_AllDragonsDead_Condition;
 	information	= DIA_MiltenNW_AllDragonsDead_Info;
 	permanent	= FALSE;
-	description = "Я убил всех драконов.";
+	description = "РЇ СѓР±РёР» РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ.";
 };                       
 FUNC INT DIA_MiltenNW_AllDragonsDead_Condition()
 {
@@ -467,15 +467,15 @@ FUNC INT DIA_MiltenNW_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_MiltenNW_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_00"); //Я убил всех драконов.
-	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_01"); //Правда? Значит, есть еще проблеск надежды на горизонте. Теперь все, что нам остается, - это отрубить голову Злу.
-	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_02"); //Если ты действительно сделал это, мы обязательно победим в этой войне.
-	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_03"); //Кому, мне?
-	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_04"); //Тебе, конечно же. Кому же еще?
+	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_00"); //РЇ СѓР±РёР» РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_01"); //РџСЂР°РІРґР°? Р—РЅР°С‡РёС‚, РµСЃС‚СЊ РµС‰Рµ РїСЂРѕР±Р»РµСЃРє РЅР°РґРµР¶РґС‹ РЅР° РіРѕСЂРёР·РѕРЅС‚Рµ. РўРµРїРµСЂСЊ РІСЃРµ, С‡С‚Рѕ РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ, - СЌС‚Рѕ РѕС‚СЂСѓР±РёС‚СЊ РіРѕР»РѕРІСѓ Р—Р»Сѓ.
+	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_02"); //Р•СЃР»Рё С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРґРµР»Р°Р» СЌС‚Рѕ, РјС‹ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїРѕР±РµРґРёРј РІ СЌС‚РѕР№ РІРѕР№РЅРµ.
+	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_03"); //РљРѕРјСѓ, РјРЅРµ?
+	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_04"); //РўРµР±Рµ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ. РљРѕРјСѓ Р¶Рµ РµС‰Рµ?
 	
 	if (MiltenNW_IsOnBoard	 == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_05"); //Мы должны выступать как можно скорее, иначе может стать слишком поздно.
+		AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_05"); //РњС‹ РґРѕР»Р¶РЅС‹ РІС‹СЃС‚СѓРїР°С‚СЊ РєР°Рє РјРѕР¶РЅРѕ СЃРєРѕСЂРµРµ, РёРЅР°С‡Рµ РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ.
 	};
 };
 
@@ -500,7 +500,7 @@ func int DIA_MiltenNW_SCWasInLib_Condition ()
 };
 func void DIA_MiltenNW_SCWasInLib_Info ()
 {
-	AI_Output			(self, other, "DIA_MiltenNW_SCWasInLib_03_00"); //Эй, я слышал, ты провел много времени в монастырском подвале. Что ты нашел там?
+	AI_Output			(self, other, "DIA_MiltenNW_SCWasInLib_03_00"); //Р­Р№, СЏ СЃР»С‹С€Р°Р», С‚С‹ РїСЂРѕРІРµР» РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё РІ РјРѕРЅР°СЃС‚С‹СЂСЃРєРѕРј РїРѕРґРІР°Р»Рµ. Р§С‚Рѕ С‚С‹ РЅР°С€РµР» С‚Р°Рј?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -513,7 +513,7 @@ instance DIA_MiltenNW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_MiltenNW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_MiltenNW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я знаю, где скрывается враг.";
+	description	 = 	"РЇ Р·РЅР°СЋ, РіРґРµ СЃРєСЂС‹РІР°РµС‚СЃСЏ РІСЂР°Рі.";
 };
 
 func int DIA_MiltenNW_KnowWhereEnemy_Condition ()
@@ -527,53 +527,53 @@ func int DIA_MiltenNW_KnowWhereEnemy_Condition ()
 var int SCToldMiltenHeKnowWhereEnemy;
 func void DIA_MiltenNW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_KnowWhereEnemy_15_00"); //Я знаю, где скрывается враг. На небольшом острове, недалеко отсюда.
-	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_01"); //Это наш шанс. Мы должны отправляться туда немедленно и уничтожить зло раз и навсегда.
+	AI_Output			(other, self, "DIA_MiltenNW_KnowWhereEnemy_15_00"); //РЇ Р·РЅР°СЋ, РіРґРµ СЃРєСЂС‹РІР°РµС‚СЃСЏ РІСЂР°Рі. РќР° РЅРµР±РѕР»СЊС€РѕРј РѕСЃС‚СЂРѕРІРµ, РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°.
+	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_01"); //Р­С‚Рѕ РЅР°С€ С€Р°РЅСЃ. РњС‹ РґРѕР»Р¶РЅС‹ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ С‚СѓРґР° РЅРµРјРµРґР»РµРЅРЅРѕ Рё СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Р·Р»Рѕ СЂР°Р· Рё РЅР°РІСЃРµРіРґР°.
 	SCToldMiltenHeKnowWhereEnemy = TRUE;
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);  
   	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING);
   	if ((Npc_IsDead(DiegoNW))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_02"); //Ты говорил с Диего? Я думаю, он согласится присоединиться к тебе.
- 		B_LogEntry (TOPIC_Crew,"Диего может оказаться полезным. Он никогда подолгу не задерживается на одном месте.");
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_02"); //РўС‹ РіРѕРІРѕСЂРёР» СЃ Р”РёРµРіРѕ? РЇ РґСѓРјР°СЋ, РѕРЅ СЃРѕРіР»Р°СЃРёС‚СЃСЏ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє С‚РµР±Рµ.
+ 		B_LogEntry (TOPIC_Crew,"Р”РёРµРіРѕ РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РїРѕР»РµР·РЅС‹Рј. РћРЅ РЅРёРєРѕРіРґР° РїРѕРґРѕР»РіСѓ РЅРµ Р·Р°РґРµСЂР¶РёРІР°РµС‚СЃСЏ РЅР° РѕРґРЅРѕРј РјРµСЃС‚Рµ.");
  	};
 
   	if ((Npc_IsDead(GornNW_nach_DJG))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_03"); //А что насчет Горна? Поговори с ним. Я слышал, он вернулся из Долины Рудников.
- 		B_LogEntry (TOPIC_Crew,"Горн, определенно, может оказаться полезным. Никогда не помешает иметь на своей стороне такого закаленного бойца. Возможно, он сможет тренировать меня.");
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_03"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ Р“РѕСЂРЅР°? РџРѕРіРѕРІРѕСЂРё СЃ РЅРёРј. РЇ СЃР»С‹С€Р°Р», РѕРЅ РІРµСЂРЅСѓР»СЃСЏ РёР· Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ.
+ 		B_LogEntry (TOPIC_Crew,"Р“РѕСЂРЅ, РѕРїСЂРµРґРµР»РµРЅРЅРѕ, РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РїРѕР»РµР·РЅС‹Рј. РќРёРєРѕРіРґР° РЅРµ РїРѕРјРµС€Р°РµС‚ РёРјРµС‚СЊ РЅР° СЃРІРѕРµР№ СЃС‚РѕСЂРѕРЅРµ С‚Р°РєРѕРіРѕ Р·Р°РєР°Р»РµРЅРЅРѕРіРѕ Р±РѕР№С†Р°. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ СЃРјРѕР¶РµС‚ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ РјРµРЅСЏ.");
  	};
 	
 	if ((Npc_IsDead(Lester))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_04"); //И не забудь Лестера. Если ты не вытащишь его из долины, он сгниет там.
- 		B_LogEntry (TOPIC_Crew,"Если я не возьму Лестера с собой, ему никогда не выбраться из этой долины.");
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_04"); //Р РЅРµ Р·Р°Р±СѓРґСЊ Р›РµСЃС‚РµСЂР°. Р•СЃР»Рё С‚С‹ РЅРµ РІС‹С‚Р°С‰РёС€СЊ РµРіРѕ РёР· РґРѕР»РёРЅС‹, РѕРЅ СЃРіРЅРёРµС‚ С‚Р°Рј.
+ 		B_LogEntry (TOPIC_Crew,"Р•СЃР»Рё СЏ РЅРµ РІРѕР·СЊРјСѓ Р›РµСЃС‚РµСЂР° СЃ СЃРѕР±РѕР№, РµРјСѓ РЅРёРєРѕРіРґР° РЅРµ РІС‹Р±СЂР°С‚СЊСЃСЏ РёР· СЌС‚РѕР№ РґРѕР»РёРЅС‹.");
  	};
 	
-	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_05"); //Я также вижу свою роль во всем этом. Я могу повысить твою ману и помочь в создании рун. Когда мы приступим?
+	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_05"); //РЇ С‚Р°РєР¶Рµ РІРёР¶Сѓ СЃРІРѕСЋ СЂРѕР»СЊ РІРѕ РІСЃРµРј СЌС‚РѕРј. РЇ РјРѕРіСѓ РїРѕРІС‹СЃРёС‚СЊ С‚РІРѕСЋ РјР°РЅСѓ Рё РїРѕРјРѕС‡СЊ РІ СЃРѕР·РґР°РЅРёРё СЂСѓРЅ. РљРѕРіРґР° РјС‹ РїСЂРёСЃС‚СѓРїРёРј?
 	
-	B_LogEntry (TOPIC_Crew,"Если Милтен отправится в путь со мной, он может научить меня создавать руны и повысить мою ману.");
+	B_LogEntry (TOPIC_Crew,"Р•СЃР»Рё РњРёР»С‚РµРЅ РѕС‚РїСЂР°РІРёС‚СЃСЏ РІ РїСѓС‚СЊ СЃРѕ РјРЅРѕР№, РѕРЅ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЃРѕР·РґР°РІР°С‚СЊ СЂСѓРЅС‹ Рё РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ РјР°РЅСѓ.");
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_MiltenNW_KnowWhereEnemy_15_06"); //Не так быстро, у меня уже достаточно людей.
-		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_07"); //Ты знаешь, я всегда готов пойти с тобой. Если передумаешь, только скажи.
-		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_08"); //Удачи, да не оставит тебя Иннос без своей защиты.
+		AI_Output			(other,self , "DIA_MiltenNW_KnowWhereEnemy_15_06"); //РќРµ С‚Р°Рє Р±С‹СЃС‚СЂРѕ, Сѓ РјРµРЅСЏ СѓР¶Рµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р»СЋРґРµР№.
+		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_07"); //РўС‹ Р·РЅР°РµС€СЊ, СЏ РІСЃРµРіРґР° РіРѕС‚РѕРІ РїРѕР№С‚Рё СЃ С‚РѕР±РѕР№. Р•СЃР»Рё РїРµСЂРµРґСѓРјР°РµС€СЊ, С‚РѕР»СЊРєРѕ СЃРєР°Р¶Рё.
+		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_08"); //РЈРґР°С‡Рё, РґР° РЅРµ РѕСЃС‚Р°РІРёС‚ С‚РµР±СЏ РРЅРЅРѕСЃ Р±РµР· СЃРІРѕРµР№ Р·Р°С‰РёС‚С‹.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_MiltenNW_KnowWhereEnemy);
-		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"Сейчас я не могу найти тебе место.",DIA_MiltenNW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"Добро пожаловать на борт!",DIA_MiltenNW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"РЎРµР№С‡Р°СЃ СЏ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё С‚РµР±Рµ РјРµСЃС‚Рѕ.",DIA_MiltenNW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° Р±РѕСЂС‚!",DIA_MiltenNW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_MiltenNW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_00"); //Добро пожаловать на борт!
-	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_01"); //Встретимся в гавани. Жди меня там.
-	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_Yes_03_02"); //Хорошо. Я буду там, когда ты будешь готов.
+	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° Р±РѕСЂС‚!
+	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_01"); //Р’СЃС‚СЂРµС‚РёРјСЃСЏ РІ РіР°РІР°РЅРё. Р–РґРё РјРµРЅСЏ С‚Р°Рј.
+	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_Yes_03_02"); //РҐРѕСЂРѕС€Рѕ. РЇ Р±СѓРґСѓ С‚Р°Рј, РєРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	MiltenNW_IsOnBoard	 = LOG_SUCCESS;
@@ -596,8 +596,8 @@ FUNC VOID DIA_MiltenNW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_MiltenNW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_No_15_00"); //Сейчас я не могу найти тебе место.
-	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_No_03_01"); //Ты знаешь, что я готов идти с тобой до конца. Если передумаешь, только скажи.
+	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_No_15_00"); //РЎРµР№С‡Р°СЃ СЏ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё С‚РµР±Рµ РјРµСЃС‚Рѕ.
+	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_No_03_01"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЏ РіРѕС‚РѕРІ РёРґС‚Рё СЃ С‚РѕР±РѕР№ РґРѕ РєРѕРЅС†Р°. Р•СЃР»Рё РїРµСЂРµРґСѓРјР°РµС€СЊ, С‚РѕР»СЊРєРѕ СЃРєР°Р¶Рё.
 
 	MiltenNW_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_MiltenNW_KnowWhereEnemy);
@@ -613,7 +613,7 @@ instance DIA_MiltenNW_WhereCaptain		(C_INFO)
 	condition	 = 	DIA_MiltenNW_WhereCaptain_Condition;
 	information	 = 	DIA_MiltenNW_WhereCaptain_Info;
 	
-	description	 = 	"Где мне найти капитана?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєР°РїРёС‚Р°РЅР°?";
 
 };
 func int DIA_MiltenNW_WhereCaptain_Condition ()
@@ -627,14 +627,14 @@ func int DIA_MiltenNW_WhereCaptain_Condition ()
 };
 func void DIA_MiltenNW_WhereCaptain_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_WhereCaptain_15_00"); //Где мне найти капитана?
-	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_01"); //Спроси Йоргена. Он ведь моряк. Он, должно быть, все еще в монастыре.
-	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_02"); //Но если он не сможет помочь, попробуй поспрашивать на фермах или в городе, может быть, найдется человек, способный управлять твоим кораблем.
-	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_03"); //Лучше всего поговорить с Ли или поспрашивать в гавани Хориниса. Больше ничего сейчас мне в голову не приходит.
+	AI_Output			(other, self, "DIA_MiltenNW_WhereCaptain_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєР°РїРёС‚Р°РЅР°?
+	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_01"); //РЎРїСЂРѕСЃРё Р™РѕСЂРіРµРЅР°. РћРЅ РІРµРґСЊ РјРѕСЂСЏРє. РћРЅ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РІСЃРµ РµС‰Рµ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
+	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_02"); //РќРѕ РµСЃР»Рё РѕРЅ РЅРµ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ, РїРѕРїСЂРѕР±СѓР№ РїРѕСЃРїСЂР°С€РёРІР°С‚СЊ РЅР° С„РµСЂРјР°С… РёР»Рё РІ РіРѕСЂРѕРґРµ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, РЅР°Р№РґРµС‚СЃСЏ С‡РµР»РѕРІРµРє, СЃРїРѕСЃРѕР±РЅС‹Р№ СѓРїСЂР°РІР»СЏС‚СЊ С‚РІРѕРёРј РєРѕСЂР°Р±Р»РµРј.
+	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_03"); //Р›СѓС‡С€Рµ РІСЃРµРіРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р›Рё РёР»Рё РїРѕСЃРїСЂР°С€РёРІР°С‚СЊ РІ РіР°РІР°РЅРё РҐРѕСЂРёРЅРёСЃР°. Р‘РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ СЃРµР№С‡Р°СЃ РјРЅРµ РІ РіРѕР»РѕРІСѓ РЅРµ РїСЂРёС…РѕРґРёС‚.
  
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                                                            
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                                                          
-	B_LogEntry (TOPIC_Captain,"Возможно, стоит взять с собой Йоргена в качестве капитана. Он все еще должен быть в монастыре. Хотя, кроме него есть и другие кандидаты на фермах и в городе. Возможно, мне стоит поговорить с Ли или поспрашивать в гавани.");
+	B_LogEntry (TOPIC_Captain,"Р’РѕР·РјРѕР¶РЅРѕ, СЃС‚РѕРёС‚ РІР·СЏС‚СЊ СЃ СЃРѕР±РѕР№ Р™РѕСЂРіРµРЅР° РІ РєР°С‡РµСЃС‚РІРµ РєР°РїРёС‚Р°РЅР°. РћРЅ РІСЃРµ РµС‰Рµ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ. РҐРѕС‚СЏ, РєСЂРѕРјРµ РЅРµРіРѕ РµСЃС‚СЊ Рё РґСЂСѓРіРёРµ РєР°РЅРґРёРґР°С‚С‹ РЅР° С„РµСЂРјР°С… Рё РІ РіРѕСЂРѕРґРµ. Р’РѕР·РјРѕР¶РЅРѕ, РјРЅРµ СЃС‚РѕРёС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р›Рё РёР»Рё РїРѕСЃРїСЂР°С€РёРІР°С‚СЊ РІ РіР°РІР°РЅРё.");
 	
 };
 
@@ -648,7 +648,7 @@ instance DIA_MiltenNW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_MiltenNW_LeaveMyShip_Condition;
 	information	 = 	DIA_MiltenNW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я не могу взять тебя с собой.";
+	description	 = 	"РЇ РЅРµ РјРѕРіСѓ РІР·СЏС‚СЊ С‚РµР±СЏ СЃ СЃРѕР±РѕР№.";
 };
 func int DIA_MiltenNW_LeaveMyShip_Condition ()
 {	
@@ -660,8 +660,8 @@ func int DIA_MiltenNW_LeaveMyShip_Condition ()
 };
 func void DIA_MiltenNW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_LeaveMyShip_15_00"); //Я не могу взять тебя с собой.
-	AI_Output			(self, other, "DIA_MiltenNW_LeaveMyShip_03_01"); //Ты лучше знаешь, кто тебе нужен. Если передумаешь, я буду ждать тебя в монастыре.
+	AI_Output			(other, self, "DIA_MiltenNW_LeaveMyShip_15_00"); //РЇ РЅРµ РјРѕРіСѓ РІР·СЏС‚СЊ С‚РµР±СЏ СЃ СЃРѕР±РѕР№.
+	AI_Output			(self, other, "DIA_MiltenNW_LeaveMyShip_03_01"); //РўС‹ Р»СѓС‡С€Рµ Р·РЅР°РµС€СЊ, РєС‚Рѕ С‚РµР±Рµ РЅСѓР¶РµРЅ. Р•СЃР»Рё РїРµСЂРµРґСѓРјР°РµС€СЊ, СЏ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 	
 	MiltenNW_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -670,7 +670,7 @@ func void DIA_MiltenNW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ьberlegt!
+//	Ich habs mir СЊberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_MiltenNW_StillNeedYou		(C_INFO)
 {
@@ -679,11 +679,11 @@ instance DIA_MiltenNW_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_MiltenNW_StillNeedYou_Condition;
 	information	 = 	DIA_MiltenNW_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Ты нужен мне.";
+	description	 = 	"РўС‹ РЅСѓР¶РµРЅ РјРЅРµ.";
 };
 func int DIA_MiltenNW_StillNeedYou_Condition ()
 {	
-	if ((MiltenNW_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natьrlich nur eine variable abfragen
+	if ((MiltenNW_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natСЊrlich nur eine variable abfragen
 	|| (MiltenNW_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{
@@ -692,10 +692,10 @@ func int DIA_MiltenNW_StillNeedYou_Condition ()
 };
 func void DIA_MiltenNW_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_StillNeedYou_15_00"); //Ты нужен мне.
+	AI_Output			(other, self, "DIA_MiltenNW_StillNeedYou_15_00"); //РўС‹ РЅСѓР¶РµРЅ РјРЅРµ.
 
-	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_01"); //Твое решение делает мне честь. Вперед, мы не можем терять времени!
-	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_02"); //Я отправляюсь в порт. Встретимся там.
+	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_01"); //РўРІРѕРµ СЂРµС€РµРЅРёРµ РґРµР»Р°РµС‚ РјРЅРµ С‡РµСЃС‚СЊ. Р’РїРµСЂРµРґ, РјС‹ РЅРµ РјРѕР¶РµРј С‚РµСЂСЏС‚СЊ РІСЂРµРјРµРЅРё!
+	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_02"); //РЇ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ РІ РїРѕСЂС‚. Р’СЃС‚СЂРµС‚РёРјСЃСЏ С‚Р°Рј.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	MiltenNW_IsOnBoard	 = LOG_SUCCESS;
@@ -725,7 +725,7 @@ INSTANCE DIA_MiltenNW_Teach(C_INFO)
 	condition	= DIA_MiltenNW_Teach_Condition;
 	information	= DIA_MiltenNW_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу изучить новые заклинания.";
+	description = "РЇ С…РѕС‡Сѓ РёР·СѓС‡РёС‚СЊ РЅРѕРІС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ.";
 };                       
 
 FUNC INT DIA_MiltenNW_Teach_Condition()
@@ -737,7 +737,7 @@ FUNC INT DIA_MiltenNW_Teach_Condition()
 }; 
 FUNC VOID DIA_MiltenNW_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_Teach_15_00");//Я хочу изучить кое-какие заклинания.
+	AI_Output (other,self ,"DIA_MiltenNW_Teach_15_00");//РЇ С…РѕС‡Сѓ РёР·СѓС‡РёС‚СЊ РєРѕРµ-РєР°РєРёРµ Р·Р°РєР»РёРЅР°РЅРёСЏ.
 	
 	if  (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 2)
 	{
@@ -759,7 +759,7 @@ FUNC VOID DIA_MiltenNW_Teach_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_Teach_03_01");//Ты все еще не достиг второго круга магии. Я ничему не могу научить тебя.
+		AI_Output (self ,other,"DIA_MiltenNW_Teach_03_01");//РўС‹ РІСЃРµ РµС‰Рµ РЅРµ РґРѕСЃС‚РёРі РІС‚РѕСЂРѕРіРѕ РєСЂСѓРіР° РјР°РіРёРё. РЇ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	};
 };	
 FUNC VOID DIA_MiltenNW_Teach_BACK()
@@ -788,7 +788,7 @@ instance DIA_MiltenNW_Mana		(C_INFO)
 	condition	 = 	DIA_MiltenNW_Mana_Condition;
 	information	 = 	DIA_MiltenNW_Mana_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу повысить мои магические способности.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 };
 func int DIA_MiltenNW_Mana_Condition ()
 {	
@@ -799,7 +799,7 @@ func int DIA_MiltenNW_Mana_Condition ()
 };
 func void DIA_MiltenNW_Mana_Info ()
 {
-	AI_Output (other, self, "DIA_MiltenNW_Mana_15_00"); //Я хочу повысить свои магические способности.
+	AI_Output (other, self, "DIA_MiltenNW_Mana_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 	
 	Info_ClearChoices   (DIA_MiltenNW_Mana);
 	Info_AddChoice 		(DIA_MiltenNW_Mana, DIALOG_BACK, DIA_MiltenNW_Mana_BACK);
@@ -811,7 +811,7 @@ func void DIA_MiltenNW_Mana_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "DIA_MiltenNW_Mana_03_00"); //Твоя магическая энергия велика. Слишком велика, чтобы я мог увеличить ее.
+		AI_Output (self, other, "DIA_MiltenNW_Mana_03_00"); //РўРІРѕСЏ РјР°РіРёС‡РµСЃРєР°СЏ СЌРЅРµСЂРіРёСЏ РІРµР»РёРєР°. РЎР»РёС€РєРѕРј РІРµР»РёРєР°, С‡С‚РѕР±С‹ СЏ РјРѕРі СѓРІРµР»РёС‡РёС‚СЊ РµРµ.
 	};
 	Info_ClearChoices (DIA_MiltenNW_Mana);
 };

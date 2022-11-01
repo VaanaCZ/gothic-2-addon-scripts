@@ -1,10 +1,10 @@
  //**********************************************************************************
-//	ItWr_XardasLetterToOpenBook_MIS  an den SC um die HALLEN von Irdorath zu цffnen!
+//	ItWr_XardasLetterToOpenBook_MIS  an den SC um die HALLEN von Irdorath zu С†ffnen!
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_XardasLetterToOpenBook_MIS		(C_Item)
 {
-	name 				=	"Письмо Ксардаса";
+	name 				=	"РџРёСЃСЊРјРѕ РљСЃР°СЂРґР°СЃР°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -29,27 +29,27 @@ func void Use_XardasLetterToOpenBook ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Я полагал, что один из драконов в Долине рудников являлся источником Зла."					);
-					Doc_PrintLines	( nDocID,  0, "Я ошибался."					);
-					Doc_PrintLines	( nDocID,  0, "Если все прошло так, как я предполагаю,"					);
-					Doc_PrintLines	( nDocID,  0, "ты сейчас должен искать Чертоги Ирдората."					);
-					Doc_PrintLines	( nDocID,  0, "В книге, что ты отдал Пирокару, содержатся все необходимые тебе ключи."					);
-					Doc_PrintLines	( nDocID,  0, "Я должен был догадаться, почему"					);
-					Doc_PrintLines	( nDocID,  0, "Ищущие так хотели заполучить ее."					);
-					Doc_PrintLines	( nDocID,  0, "Ты должен вернуть ее себе!"					);
-					Doc_PrintLines	( nDocID,  0, "Эту книгу открывают слова 'ХАРАК БЕНДАРДО'. Никому не говори об этом!"					);
-					Doc_PrintLines	( nDocID,  0, "А меня сейчас ждут более важные дела."					);
-					Doc_PrintLines	( nDocID,  0, "Я не смогу помочь тебе в твоей последней задаче. Только ты можешь уничтожить источник Зла."					);
-					Doc_PrintLines	( nDocID,  0, "Мы еще встретимся!"					);
+					Doc_PrintLines	( nDocID,  0, "РЇ РїРѕР»Р°РіР°Р», С‡С‚Рѕ РѕРґРёРЅ РёР· РґСЂР°РєРѕРЅРѕРІ РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ СЏРІР»СЏР»СЃСЏ РёСЃС‚РѕС‡РЅРёРєРѕРј Р—Р»Р°."					);
+					Doc_PrintLines	( nDocID,  0, "РЇ РѕС€РёР±Р°Р»СЃСЏ."					);
+					Doc_PrintLines	( nDocID,  0, "Р•СЃР»Рё РІСЃРµ РїСЂРѕС€Р»Рѕ С‚Р°Рє, РєР°Рє СЏ РїСЂРµРґРїРѕР»Р°РіР°СЋ,"					);
+					Doc_PrintLines	( nDocID,  0, "С‚С‹ СЃРµР№С‡Р°СЃ РґРѕР»Р¶РµРЅ РёСЃРєР°С‚СЊ Р§РµСЂС‚РѕРіРё РСЂРґРѕСЂР°С‚Р°."					);
+					Doc_PrintLines	( nDocID,  0, "Р’ РєРЅРёРіРµ, С‡С‚Рѕ С‚С‹ РѕС‚РґР°Р» РџРёСЂРѕРєР°СЂСѓ, СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ С‚РµР±Рµ РєР»СЋС‡Рё."					);
+					Doc_PrintLines	( nDocID,  0, "РЇ РґРѕР»Р¶РµРЅ Р±С‹Р» РґРѕРіР°РґР°С‚СЊСЃСЏ, РїРѕС‡РµРјСѓ"					);
+					Doc_PrintLines	( nDocID,  0, "РС‰СѓС‰РёРµ С‚Р°Рє С…РѕС‚РµР»Рё Р·Р°РїРѕР»СѓС‡РёС‚СЊ РµРµ."					);
+					Doc_PrintLines	( nDocID,  0, "РўС‹ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊ РµРµ СЃРµР±Рµ!"					);
+					Doc_PrintLines	( nDocID,  0, "Р­С‚Сѓ РєРЅРёРіСѓ РѕС‚РєСЂС‹РІР°СЋС‚ СЃР»РѕРІР° 'РҐРђР РђРљ Р‘Р•РќР”РђР Р”Рћ'. РќРёРєРѕРјСѓ РЅРµ РіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј!"					);
+					Doc_PrintLines	( nDocID,  0, "Рђ РјРµРЅСЏ СЃРµР№С‡Р°СЃ Р¶РґСѓС‚ Р±РѕР»РµРµ РІР°Р¶РЅС‹Рµ РґРµР»Р°."					);
+					Doc_PrintLines	( nDocID,  0, "РЇ РЅРµ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ С‚РІРѕРµР№ РїРѕСЃР»РµРґРЅРµР№ Р·Р°РґР°С‡Рµ. РўРѕР»СЊРєРѕ С‚С‹ РјРѕР¶РµС€СЊ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ РёСЃС‚РѕС‡РЅРёРє Р—Р»Р°."					);
+					Doc_PrintLines	( nDocID,  0, "РњС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ!"					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "                             Ксардас."					);
+					Doc_PrintLine	( nDocID,  0, "                             РљСЃР°СЂРґР°СЃ."					);
 					Doc_Show		( nDocID );
 
 	if(MIS_Xardas_SCCanOpenIrdorathBook == FALSE)
 	{
-		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"В этом письме Ксардас сообщил мне слова, открывающие книгу ЧЕРТОГИ ИРДОРАТА."); 
+		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Р’ СЌС‚РѕРј РїРёСЃСЊРјРµ РљСЃР°СЂРґР°СЃ СЃРѕРѕР±С‰РёР» РјРЅРµ СЃР»РѕРІР°, РѕС‚РєСЂС‹РІР°СЋС‰РёРµ РєРЅРёРіСѓ Р§Р•Р РўРћР“Р РР Р”РћР РђРўРђ."); 
 	};
 
 	MIS_Xardas_SCCanOpenIrdorathBook  = TRUE;	//Joly:  Spieler kann nun das Buch im Kloster lesen und findet so die geheime Bibliothek!
@@ -57,12 +57,12 @@ func void Use_XardasLetterToOpenBook ()
 
 
 //**********************************************************************************
-//	ItKe_MonastarySecretLibrary_Mis 		Schlьssel zur geheimen Bibliothek
+//	ItKe_MonastarySecretLibrary_Mis 		SchlСЊssel zur geheimen Bibliothek
 //**********************************************************************************
 
 INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 {
-	name 				=	"Ключ" ;
+	name 				=	"РљР»СЋС‡" ;
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -74,7 +74,7 @@ INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 
 	description			= 	name;
 	
-	TEXT[0]				= 	"из книги 'Чертоги Ирдората'";
+	TEXT[0]				= 	"РёР· РєРЅРёРіРё 'Р§РµСЂС‚РѕРіРё РСЂРґРѕСЂР°С‚Р°'";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -84,7 +84,7 @@ INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 
 INSTANCE ItWr_HallsofIrdorath_Mis (C_ITEM) 
 {	
-	name 					=	"Чертоги Ирдората";
+	name 					=	"Р§РµСЂС‚РѕРіРё РСЂРґРѕСЂР°С‚Р°";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -118,7 +118,7 @@ FUNC VOID Use_HallsofIrdorath ()
 			B_GivePlayerXP (XP_HallsofIrdorathIsOpen);
 			ItWr_HallsofIrdorathIsOpen = TRUE;
 			
-			B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Я смог открыть книгу Ксардаса. В ней находилось секретное сообщение и странный ключ. Кто знает, что еще смогу найти я в монастырских подвалах."); 
+			B_LogEntry (TOPIC_BuchHallenVonIrdorath,"РЇ СЃРјРѕРі РѕС‚РєСЂС‹С‚СЊ РєРЅРёРіСѓ РљСЃР°СЂРґР°СЃР°. Р’ РЅРµР№ РЅР°С…РѕРґРёР»РѕСЃСЊ СЃРµРєСЂРµС‚РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ Рё СЃС‚СЂР°РЅРЅС‹Р№ РєР»СЋС‡. РљС‚Рѕ Р·РЅР°РµС‚, С‡С‚Рѕ РµС‰Рµ СЃРјРѕРіСѓ РЅР°Р№С‚Рё СЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЃРєРёС… РїРѕРґРІР°Р»Р°С…."); 
 		}
 		else
 		{
@@ -136,7 +136,7 @@ FUNC VOID Use_HallsofIrdorath ()
 
 INSTANCE ItWr_HallsofIrdorath_Open_Mis (C_ITEM) 
 {	
-	name 					=	"Чертоги Ирдората";
+	name 					=	"Р§РµСЂС‚РѕРіРё РСЂРґРѕСЂР°С‚Р°";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -157,7 +157,7 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 {   	 
 	if (ItWr_SCReadsHallsofIrdorath == FALSE)
 	{
-		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Я прочел книгу Ксардаса. В ней упоминается секретная библиотека. Она должна быть где-то здесь, в подвалах монастыря."); 
+		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"РЇ РїСЂРѕС‡РµР» РєРЅРёРіСѓ РљСЃР°СЂРґР°СЃР°. Р’ РЅРµР№ СѓРїРѕРјРёРЅР°РµС‚СЃСЏ СЃРµРєСЂРµС‚РЅР°СЏ Р±РёР±Р»РёРѕС‚РµРєР°. РћРЅР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ, РІ РїРѕРґРІР°Р»Р°С… РјРѕРЅР°СЃС‚С‹СЂСЏ."); 
 	};
 	
 	ItWr_SCReadsHallsofIrdorath = TRUE;
@@ -177,24 +177,24 @@ FUNC VOID Use_HallsofIrdorath_Open ()
  					Doc_PrintLine	( nDocID,  0, ""					);										
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "... и я закрыл вход в библиотеку секретной дверью, чтобы защитить мои записи о храмах Белиара.");
-					Doc_PrintLines	( nDocID,  0, "Если бы мои братья знали бы об этих записях, эти идиоты, вероятно, уничтожили бы их.");		
+					Doc_PrintLines	( nDocID,  0, "... Рё СЏ Р·Р°РєСЂС‹Р» РІС…РѕРґ РІ Р±РёР±Р»РёРѕС‚РµРєСѓ СЃРµРєСЂРµС‚РЅРѕР№ РґРІРµСЂСЊСЋ, С‡С‚РѕР±С‹ Р·Р°С‰РёС‚РёС‚СЊ РјРѕРё Р·Р°РїРёСЃРё Рѕ С…СЂР°РјР°С… Р‘РµР»РёР°СЂР°.");
+					Doc_PrintLines	( nDocID,  0, "Р•СЃР»Рё Р±С‹ РјРѕРё Р±СЂР°С‚СЊСЏ Р·РЅР°Р»Рё Р±С‹ РѕР± СЌС‚РёС… Р·Р°РїРёСЃСЏС…, СЌС‚Рё РёРґРёРѕС‚С‹, РІРµСЂРѕСЏС‚РЅРѕ, СѓРЅРёС‡С‚РѕР¶РёР»Рё Р±С‹ РёС….");		
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);										
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "А теперь, они знают только, что эти храмы когда-то существовали."	);
+					Doc_PrintLines	( nDocID,  1, "Рђ С‚РµРїРµСЂСЊ, РѕРЅРё Р·РЅР°СЋС‚ С‚РѕР»СЊРєРѕ, С‡С‚Рѕ СЌС‚Рё С…СЂР°РјС‹ РєРѕРіРґР°-С‚Рѕ СЃСѓС‰РµСЃС‚РІРѕРІР°Р»Рё."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "На всякий случай, я заклял нескольких слуг охранять эту библиотеку.");
+					Doc_PrintLines	( nDocID,  1, "РќР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№, СЏ Р·Р°РєР»СЏР» РЅРµСЃРєРѕР»СЊРєРёС… СЃР»СѓРі РѕС…СЂР°РЅСЏС‚СЊ СЌС‚Сѓ Р±РёР±Р»РёРѕС‚РµРєСѓ.");
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Этот ключ открывает последнюю дверь.");
+					Doc_PrintLines	( nDocID,  1, "Р­С‚РѕС‚ РєР»СЋС‡ РѕС‚РєСЂС‹РІР°РµС‚ РїРѕСЃР»РµРґРЅСЋСЋ РґРІРµСЂСЊ.");
 					
 					Doc_Show		( nDocID );
 
@@ -206,7 +206,7 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 
 INSTANCE ItWr_XardasSeamapBook_Mis (C_ITEM) 
 {	
-	name 					=	"Пыльная книга";
+	name 					=	"РџС‹Р»СЊРЅР°СЏ РєРЅРёРіР°";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -240,45 +240,45 @@ FUNC VOID Use_XardasSeamapBook_Mis ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
  					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "... Теперь я почти уверен, что здание, о котором идет речь -- Чертоги Ирдората. Они находятся на острове, недалеко от гавани Хориниса. Интерес Белиара к этим шахтам вполне очевиден ...");
+					Doc_PrintLines	( nDocID,  0, "... РўРµРїРµСЂСЊ СЏ РїРѕС‡С‚Рё СѓРІРµСЂРµРЅ, С‡С‚Рѕ Р·РґР°РЅРёРµ, Рѕ РєРѕС‚РѕСЂРѕРј РёРґРµС‚ СЂРµС‡СЊ -- Р§РµСЂС‚РѕРіРё РСЂРґРѕСЂР°С‚Р°. РћРЅРё РЅР°С…РѕРґСЏС‚СЃСЏ РЅР° РѕСЃС‚СЂРѕРІРµ, РЅРµРґР°Р»РµРєРѕ РѕС‚ РіР°РІР°РЅРё РҐРѕСЂРёРЅРёСЃР°. РРЅС‚РµСЂРµСЃ Р‘РµР»РёР°СЂР° Рє СЌС‚РёРј С€Р°С…С‚Р°Рј РІРїРѕР»РЅРµ РѕС‡РµРІРёРґРµРЅ ...");
 					Doc_PrintLines	( nDocID,  0, "");		
 	
 					if (hero.guild == GIL_PAL)
 					{
-						Doc_PrintLines	( nDocID,  0, "... Чем они сильнее, тем, похоже, для него выше их ценность как слуг-нежити. Эти обращенные паладины очень сильны, и с ними очень тяжело справиться. Один из них попал в мои руки. Мне остается только надеяться, что другие не почувствуют его присутствие здесь ...");		
+						Doc_PrintLines	( nDocID,  0, "... Р§РµРј РѕРЅРё СЃРёР»СЊРЅРµРµ, С‚РµРј, РїРѕС…РѕР¶Рµ, РґР»СЏ РЅРµРіРѕ РІС‹С€Рµ РёС… С†РµРЅРЅРѕСЃС‚СЊ РєР°Рє СЃР»СѓРі-РЅРµР¶РёС‚Рё. Р­С‚Рё РѕР±СЂР°С‰РµРЅРЅС‹Рµ РїР°Р»Р°РґРёРЅС‹ РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹, Рё СЃ РЅРёРјРё РѕС‡РµРЅСЊ С‚СЏР¶РµР»Рѕ СЃРїСЂР°РІРёС‚СЊСЃСЏ. РћРґРёРЅ РёР· РЅРёС… РїРѕРїР°Р» РІ РјРѕРё СЂСѓРєРё. РњРЅРµ РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РЅР°РґРµСЏС‚СЊСЃСЏ, С‡С‚Рѕ РґСЂСѓРіРёРµ РЅРµ РїРѕС‡СѓРІСЃС‚РІСѓСЋС‚ РµРіРѕ РїСЂРёСЃСѓС‚СЃС‚РІРёРµ Р·РґРµСЃСЊ ...");		
 						
 						//2.Seite
-						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "... Обращенный паладин, похоже, ни на что не реагирует. Я запер его доспехи и остальные его вещи в задней комнате. Дверь в нее можно открыть только изнутри. Я создал руну телепортации, позволяющую переместиться туда. Инструкции по пользованию ей находятся в альманахе, где Избранный сможет найти их ..."	);
+						Doc_PrintLines	( nDocID,  1, "... РћР±СЂР°С‰РµРЅРЅС‹Р№ РїР°Р»Р°РґРёРЅ, РїРѕС…РѕР¶Рµ, РЅРё РЅР° С‡С‚Рѕ РЅРµ СЂРµР°РіРёСЂСѓРµС‚. РЇ Р·Р°РїРµСЂ РµРіРѕ РґРѕСЃРїРµС…Рё Рё РѕСЃС‚Р°Р»СЊРЅС‹Рµ РµРіРѕ РІРµС‰Рё РІ Р·Р°РґРЅРµР№ РєРѕРјРЅР°С‚Рµ. Р”РІРµСЂСЊ РІ РЅРµРµ РјРѕР¶РЅРѕ РѕС‚РєСЂС‹С‚СЊ С‚РѕР»СЊРєРѕ РёР·РЅСѓС‚СЂРё. РЇ СЃРѕР·РґР°Р» СЂСѓРЅСѓ С‚РµР»РµРїРѕСЂС‚Р°С†РёРё, РїРѕР·РІРѕР»СЏСЋС‰СѓСЋ РїРµСЂРµРјРµСЃС‚РёС‚СЊСЃСЏ С‚СѓРґР°. РРЅСЃС‚СЂСѓРєС†РёРё РїРѕ РїРѕР»СЊР·РѕРІР°РЅРёСЋ РµР№ РЅР°С…РѕРґСЏС‚СЃСЏ РІ Р°Р»СЊРјР°РЅР°С…Рµ, РіРґРµ РР·Р±СЂР°РЅРЅС‹Р№ СЃРјРѕР¶РµС‚ РЅР°Р№С‚Рё РёС… ..."	);
 					};
 					
 					if (hero.guild == GIL_KDF)
 					{
-						Doc_PrintLines	( nDocID,  0, "... В значении этих знамений невозможно ошибиться! Когда Избранный придет, ему понадобится вся помощь, которую мы сможем предоставить. Белиар уже очень силен. Мне удалось раздобыть несколько ценных артефактов, которые я схороню здесь, на всякий случай. Я полагаю, что избранный будет выходцем из наших рядов,");
+						Doc_PrintLines	( nDocID,  0, "... Р’ Р·РЅР°С‡РµРЅРёРё СЌС‚РёС… Р·РЅР°РјРµРЅРёР№ РЅРµРІРѕР·РјРѕР¶РЅРѕ РѕС€РёР±РёС‚СЊСЃСЏ! РљРѕРіРґР° РР·Р±СЂР°РЅРЅС‹Р№ РїСЂРёРґРµС‚, РµРјСѓ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РІСЃСЏ РїРѕРјРѕС‰СЊ, РєРѕС‚РѕСЂСѓСЋ РјС‹ СЃРјРѕР¶РµРј РїСЂРµРґРѕСЃС‚Р°РІРёС‚СЊ. Р‘РµР»РёР°СЂ СѓР¶Рµ РѕС‡РµРЅСЊ СЃРёР»РµРЅ. РњРЅРµ СѓРґР°Р»РѕСЃСЊ СЂР°Р·РґРѕР±С‹С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ С†РµРЅРЅС‹С… Р°СЂС‚РµС„Р°РєС‚РѕРІ, РєРѕС‚РѕСЂС‹Рµ СЏ СЃС…РѕСЂРѕРЅСЋ Р·РґРµСЃСЊ, РЅР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№. РЇ РїРѕР»Р°РіР°СЋ, С‡С‚Рѕ РёР·Р±СЂР°РЅРЅС‹Р№ Р±СѓРґРµС‚ РІС‹С…РѕРґС†РµРј РёР· РЅР°С€РёС… СЂСЏРґРѕРІ,");
 						
 						//2.Seite
-						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
-						Doc_PrintLines	( nDocID,  1, "поэтому я записал в этом альманахе инструкции для него."					);
+						Doc_PrintLines	( nDocID,  1, "РїРѕСЌС‚РѕРјСѓ СЏ Р·Р°РїРёСЃР°Р» РІ СЌС‚РѕРј Р°Р»СЊРјР°РЅР°С…Рµ РёРЅСЃС‚СЂСѓРєС†РёРё РґР»СЏ РЅРµРіРѕ."					);
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "... Теперь я уверен. Мы не можем противиться судьбе. Как только Белиар почувствует, что достаточно силен, он поднимется и попытается взять бразды правления миром в свои руки. Я должен найти Избранного, иначе нам всем конец."); 
+						Doc_PrintLines	( nDocID,  1, "... РўРµРїРµСЂСЊ СЏ СѓРІРµСЂРµРЅ. РњС‹ РЅРµ РјРѕР¶РµРј РїСЂРѕС‚РёРІРёС‚СЊСЃСЏ СЃСѓРґСЊР±Рµ. РљР°Рє С‚РѕР»СЊРєРѕ Р‘РµР»РёР°СЂ РїРѕС‡СѓРІСЃС‚РІСѓРµС‚, С‡С‚Рѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ, РѕРЅ РїРѕРґРЅРёРјРµС‚СЃСЏ Рё РїРѕРїС‹С‚Р°РµС‚СЃСЏ РІР·СЏС‚СЊ Р±СЂР°Р·РґС‹ РїСЂР°РІР»РµРЅРёСЏ РјРёСЂРѕРј РІ СЃРІРѕРё СЂСѓРєРё. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РР·Р±СЂР°РЅРЅРѕРіРѕ, РёРЅР°С‡Рµ РЅР°Рј РІСЃРµРј РєРѕРЅРµС†."); 
 					};
 					
 					if (hero.guild == GIL_DJG)
 					{
-						Doc_PrintLines	( nDocID,  0, "... И будет война, война за судьбу мира. Похоже, только я один могу интерпретировать эти знамения. Все вокруг меня, похоже, игнорируют их. Избранный придет, и его пришествие возвестит о начале войны. Эта война стара как сам мир, но ее конец, похоже, уже близок.");
+						Doc_PrintLines	( nDocID,  0, "... Р Р±СѓРґРµС‚ РІРѕР№РЅР°, РІРѕР№РЅР° Р·Р° СЃСѓРґСЊР±Сѓ РјРёСЂР°. РџРѕС…РѕР¶Рµ, С‚РѕР»СЊРєРѕ СЏ РѕРґРёРЅ РјРѕРіСѓ РёРЅС‚РµСЂРїСЂРµС‚РёСЂРѕРІР°С‚СЊ СЌС‚Рё Р·РЅР°РјРµРЅРёСЏ. Р’СЃРµ РІРѕРєСЂСѓРі РјРµРЅСЏ, РїРѕС…РѕР¶Рµ, РёРіРЅРѕСЂРёСЂСѓСЋС‚ РёС…. РР·Р±СЂР°РЅРЅС‹Р№ РїСЂРёРґРµС‚, Рё РµРіРѕ РїСЂРёС€РµСЃС‚РІРёРµ РІРѕР·РІРµСЃС‚РёС‚ Рѕ РЅР°С‡Р°Р»Рµ РІРѕР№РЅС‹. Р­С‚Р° РІРѕР№РЅР° СЃС‚Р°СЂР° РєР°Рє СЃР°Рј РјРёСЂ, РЅРѕ РµРµ РєРѕРЅРµС†, РїРѕС…РѕР¶Рµ, СѓР¶Рµ Р±Р»РёР·РѕРє.");
 						
 						//2.Seite
-						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
-						Doc_PrintLines	( nDocID,  1, "Я же не буду сидеть, сложа руки и наблюдать за тем, как другие берут судьбу мира в свои руки."					);
+						Doc_PrintLines	( nDocID,  1, "РЇ Р¶Рµ РЅРµ Р±СѓРґСѓ СЃРёРґРµС‚СЊ, СЃР»РѕР¶Р° СЂСѓРєРё Рё РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° С‚РµРј, РєР°Рє РґСЂСѓРіРёРµ Р±РµСЂСѓС‚ СЃСѓРґСЊР±Сѓ РјРёСЂР° РІ СЃРІРѕРё СЂСѓРєРё."					);
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "... Я изучал античные письмена и нашел в них, как создать легендарное оружие древних Повелителей Драконов. Однако, я понятия не имею, как раздобыть необходимые ингредиенты. Я записал рецепт в альманахе, так, на всякий случай. Кто знает, какие ужасы принесет с собой будущее - может быть, даже драконов."); 
+						Doc_PrintLines	( nDocID,  1, "... РЇ РёР·СѓС‡Р°Р» Р°РЅС‚РёС‡РЅС‹Рµ РїРёСЃСЊРјРµРЅР° Рё РЅР°С€РµР» РІ РЅРёС…, РєР°Рє СЃРѕР·РґР°С‚СЊ Р»РµРіРµРЅРґР°СЂРЅРѕРµ РѕСЂСѓР¶РёРµ РґСЂРµРІРЅРёС… РџРѕРІРµР»РёС‚РµР»РµР№ Р”СЂР°РєРѕРЅРѕРІ. РћРґРЅР°РєРѕ, СЏ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РєР°Рє СЂР°Р·РґРѕР±С‹С‚СЊ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёРЅРіСЂРµРґРёРµРЅС‚С‹. РЇ Р·Р°РїРёСЃР°Р» СЂРµС†РµРїС‚ РІ Р°Р»СЊРјР°РЅР°С…Рµ, С‚Р°Рє, РЅР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№. РљС‚Рѕ Р·РЅР°РµС‚, РєР°РєРёРµ СѓР¶Р°СЃС‹ РїСЂРёРЅРµСЃРµС‚ СЃ СЃРѕР±РѕР№ Р±СѓРґСѓС‰РµРµ - РјРѕР¶РµС‚ Р±С‹С‚СЊ, РґР°Р¶Рµ РґСЂР°РєРѕРЅРѕРІ."); 
 					};					
 					
 					Doc_Show		( nDocID );
@@ -292,7 +292,7 @@ FUNC VOID Use_XardasSeamapBook_Mis ()
 
 INSTANCE ItWr_UseLampIdiot_Mis	(C_Item)
 {
-	name 				=	"Помятая записка";
+	name 				=	"РџРѕРјСЏС‚Р°СЏ Р·Р°РїРёСЃРєР°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -304,7 +304,7 @@ INSTANCE ItWr_UseLampIdiot_Mis	(C_Item)
 	on_state[0]			=   UseItWr_UseLampIdiot_Mis;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=	"из книги 'Чертоги Ирдората'";
+	TEXT[0]				=	"РёР· РєРЅРёРіРё 'Р§РµСЂС‚РѕРіРё РСЂРґРѕСЂР°С‚Р°'";
 };
 func void UseItWr_UseLampIdiot_Mis ()
 {   
@@ -321,8 +321,8 @@ func void UseItWr_UseLampIdiot_Mis ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, "               Лампа несет свет "						);
-					Doc_PrintLine	(nDocID,  0, "               нижним уровням"						);
+					Doc_PrintLine	(nDocID,  0, "               Р›Р°РјРїР° РЅРµСЃРµС‚ СЃРІРµС‚ "						);
+					Doc_PrintLine	(nDocID,  0, "               РЅРёР¶РЅРёРј СѓСЂРѕРІРЅСЏРј"						);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -346,7 +346,7 @@ func void UseItWr_UseLampIdiot_Mis ()
 
 INSTANCE ItWr_Seamap_Irdorath (C_Item)
 {	
-	name 					=	"Морская карта острова Ирдорат";
+	name 					=	"РњРѕСЂСЃРєР°СЏ РєР°СЂС‚Р° РѕСЃС‚СЂРѕРІР° РСЂРґРѕСЂР°С‚";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -386,7 +386,7 @@ FUNC VOID Use_Seamap_Irdorath ()
 	{
 		Log_CreateTopic (TOPIC_SHIP, LOG_MISSION);                                                                   
 	    Log_SetTopicStatus(TOPIC_SHIP, LOG_RUNNING);                                                                 
-	    B_LogEntry (TOPIC_SHIP,"Похоже, я должен добраться до этого странного вражеского острова. Но для этого мне нужен корабль, команда и капитан.");
+	    B_LogEntry (TOPIC_SHIP,"РџРѕС…РѕР¶Рµ, СЏ РґРѕР»Р¶РµРЅ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЌС‚РѕРіРѕ СЃС‚СЂР°РЅРЅРѕРіРѕ РІСЂР°Р¶РµСЃРєРѕРіРѕ РѕСЃС‚СЂРѕРІР°. РќРѕ РґР»СЏ СЌС‚РѕРіРѕ РјРЅРµ РЅСѓР¶РµРЅ РєРѕСЂР°Р±Р»СЊ, РєРѕРјР°РЅРґР° Рё РєР°РїРёС‚Р°РЅ.");
 		B_GivePlayerXP (XP_SCKnowsWayToIrdorath);
 	};
 
@@ -394,13 +394,13 @@ FUNC VOID Use_Seamap_Irdorath ()
 };
 
 //**********************************************************************
-//	Gefдlschter Brief von Lee zum benutzen des Schiffes
+//	GefРґlschter Brief von Lee zum benutzen des Schiffes
 //**********************************************************************
 
 
 INSTANCE ITWr_ForgedShipLetter_MIS	(C_Item)
 {
-	name 				=	"Корабельное свидетельство";
+	name 				=	"РљРѕСЂР°Р±РµР»СЊРЅРѕРµ СЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -412,14 +412,14 @@ INSTANCE ITWr_ForgedShipLetter_MIS	(C_Item)
 	on_state[0]			=   UseITWr_ForgedShipLetter_MIS;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[3]				=	"Письмо о подтверждении полномочий";
-	TEXT[4]				=   "на распоряжение кораблем паладинов.";
+	TEXT[3]				=	"РџРёСЃСЊРјРѕ Рѕ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРё РїРѕР»РЅРѕРјРѕС‡РёР№";
+	TEXT[4]				=   "РЅР° СЂР°СЃРїРѕСЂСЏР¶РµРЅРёРµ РєРѕСЂР°Р±Р»РµРј РїР°Р»Р°РґРёРЅРѕРІ.";
 };
 func void UseITWr_ForgedShipLetter_MIS ()
 {   
 		var int nDocID;
 		
-//Joly:VORSICHT : Dieser Brief ist ein ERMДCHTIGUNGSSCHREIBEN fьr das Schiff und kann von LEE oder dem Richter stammen. NICHT zwangslдufig von Lord Hagen oder gefдlscht!!!!!!!!!
+//Joly:VORSICHT : Dieser Brief ist ein ERMР”CHTIGUNGSSCHREIBEN fСЊr das Schiff und kann von LEE oder dem Richter stammen. NICHT zwangslРґufig von Lord Hagen oder gefРґlscht!!!!!!!!!
 
 		nDocID = 	Doc_Create		();
 					Doc_SetPages	(nDocID,  1);
@@ -427,20 +427,20 @@ func void UseITWr_ForgedShipLetter_MIS ()
 					Doc_SetFont		(nDocID, -1, FONT_BookHeadline);
 					Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "     Предоставление полномочий"							);
+					Doc_PrintLine	(nDocID,  0, "     РџСЂРµРґРѕСЃС‚Р°РІР»РµРЅРёРµ РїРѕР»РЅРѕРјРѕС‡РёР№"							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, "        Этот документ наделяет предъявителя"					);
-					Doc_PrintLine	(nDocID,  0, "        правом свободно распоряжаться"		);
-					Doc_PrintLine	(nDocID,  0, "        королевской военной галерой Лорда Хагена"		);
-					Doc_PrintLine	(nDocID,  0, "        в течение неограниченного периода времени."			);
+					Doc_PrintLine	(nDocID,  0, "        Р­С‚РѕС‚ РґРѕРєСѓРјРµРЅС‚ РЅР°РґРµР»СЏРµС‚ РїСЂРµРґСЉСЏРІРёС‚РµР»СЏ"					);
+					Doc_PrintLine	(nDocID,  0, "        РїСЂР°РІРѕРј СЃРІРѕР±РѕРґРЅРѕ СЂР°СЃРїРѕСЂСЏР¶Р°С‚СЊСЃСЏ"		);
+					Doc_PrintLine	(nDocID,  0, "        РєРѕСЂРѕР»РµРІСЃРєРѕР№ РІРѕРµРЅРЅРѕР№ РіР°Р»РµСЂРѕР№ Р›РѕСЂРґР° РҐР°РіРµРЅР°"		);
+					Doc_PrintLine	(nDocID,  0, "        РІ С‚РµС‡РµРЅРёРµ РЅРµРѕРіСЂР°РЅРёС‡РµРЅРЅРѕРіРѕ РїРµСЂРёРѕРґР° РІСЂРµРјРµРЅРё."			);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "            Королевская печать"							);
+					Doc_PrintLine	(nDocID,  0, "            РљРѕСЂРѕР»РµРІСЃРєР°СЏ РїРµС‡Р°С‚СЊ"							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -451,7 +451,7 @@ func void UseITWr_ForgedShipLetter_MIS ()
 
 INSTANCE ITKE_OC_MAINGATE_MIS(C_Item)
 {
-	name 				=	"Ключ от башни главных ворот";
+	name 				=	"РљР»СЋС‡ РѕС‚ Р±Р°С€РЅРё РіР»Р°РІРЅС‹С… РІРѕСЂРѕС‚";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -465,9 +465,9 @@ INSTANCE ITKE_OC_MAINGATE_MIS(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
-INSTANCE ITKE_SHIP_LEVELCHANGE_MIS(C_Item)	//Joly: fьhrt zum Levelchange Kapitel 6!!!!!!!!!!!!!!!!!!!!!!
+INSTANCE ITKE_SHIP_LEVELCHANGE_MIS(C_Item)	//Joly: fСЊhrt zum Levelchange Kapitel 6!!!!!!!!!!!!!!!!!!!!!!
 {
-	name 				=	"Ключ от капитанской каюты";
+	name 				=	"РљР»СЋС‡ РѕС‚ РєР°РїРёС‚Р°РЅСЃРєРѕР№ РєР°СЋС‚С‹";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -498,7 +498,7 @@ INSTANCE ItPo_PotionOfDeath_01_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Слезы Инноса";
+	description		= 	"РЎР»РµР·С‹ РРЅРЅРѕСЃР°";
 	
 	TEXT[1]			= 	"???";				
 	COUNT[1]		= 	Mana_Essenz;
@@ -562,9 +562,9 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Слезы Инноса";
-	TEXT[1]			= 	"Это зелье наделяет магов Огня особыми способностями.";
-	Text[2]			=   "Любой другой принявший его, найдет свою смерть.";
+	description		= 	"РЎР»РµР·С‹ РРЅРЅРѕСЃР°";
+	TEXT[1]			= 	"Р­С‚Рѕ Р·РµР»СЊРµ РЅР°РґРµР»СЏРµС‚ РјР°РіРѕРІ РћРіРЅСЏ РѕСЃРѕР±С‹РјРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЏРјРё.";
+	Text[2]			=   "Р›СЋР±РѕР№ РґСЂСѓРіРѕР№ РїСЂРёРЅСЏРІС€РёР№ РµРіРѕ, РЅР°Р№РґРµС‚ СЃРІРѕСЋ СЃРјРµСЂС‚СЊ.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -577,7 +577,7 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 
 INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 {
-	name 			=	"Божественная аура Инноса";
+	name 			=	"Р‘РѕР¶РµСЃС‚РІРµРЅРЅР°СЏ Р°СѓСЂР° РРЅРЅРѕСЃР°";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -594,10 +594,10 @@ INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Божественная аура Инноса.";
+	description		= "Р‘РѕР¶РµСЃС‚РІРµРЅРЅР°СЏ Р°СѓСЂР° РРЅРЅРѕСЃР°.";
 	
-	TEXT[2]			= "Этот амулет защищает владельца";
-	TEXT[3]			= "от всех форм урона.";
+	TEXT[2]			= "Р­С‚РѕС‚ Р°РјСѓР»РµС‚ Р·Р°С‰РёС‰Р°РµС‚ РІР»Р°РґРµР»СЊС†Р°";
+	TEXT[3]			= "РѕС‚ РІСЃРµС… С„РѕСЂРј СѓСЂРѕРЅР°.";
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
 	
@@ -630,7 +630,7 @@ INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 	};
 	
 /******************************************************************************************/
-//	Heiltrank fьr Randolph																	//
+//	Heiltrank fСЊr Randolph																	//
 /******************************************************************************************/
 INSTANCE ItPo_HealRandolph_MIS(C_Item)
 {
@@ -649,7 +649,7 @@ INSTANCE ItPo_HealRandolph_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Лекарство от привыкания";
+	description		= 	"Р›РµРєР°СЂСЃС‚РІРѕ РѕС‚ РїСЂРёРІС‹РєР°РЅРёСЏ";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;

@@ -83,7 +83,7 @@ func int DIA_Brian_HALLO_Condition ()
 
 func void DIA_Brian_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Brian_HALLO_04_00"); //Ты недавно в городе, да? Я Брайан! Ученик мастера Гарада.
+	AI_Output (self, other, "DIA_Brian_HALLO_04_00"); //РўС‹ РЅРµРґР°РІРЅРѕ РІ РіРѕСЂРѕРґРµ, РґР°? РЇ Р‘СЂР°Р№Р°РЅ! РЈС‡РµРЅРёРє РјР°СЃС‚РµСЂР° Р“Р°СЂР°РґР°.
 };
 
 // *****************************************************
@@ -96,7 +96,7 @@ instance DIA_Brian_AboutLehrling (C_INFO)
 	condition	= DIA_Brian_AboutLehrling_Condition;
 	information	= DIA_Brian_AboutLehrling_Info;
 	permanent 	= FALSE;
-	description = "Каково это, быть учеником кузнеца?";
+	description = "РљР°РєРѕРІРѕ СЌС‚Рѕ, Р±С‹С‚СЊ СѓС‡РµРЅРёРєРѕРј РєСѓР·РЅРµС†Р°?";
 };
 
 func int DIA_Brian_AboutLehrling_Condition ()
@@ -110,11 +110,11 @@ func int DIA_Brian_AboutLehrling_Condition ()
 
 func void DIA_Brian_AboutLehrling_Info ()
 {
-	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_00"); //Каково это, быть учеником кузнеца?
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_01"); //Почему ты спрашиваешь? Ты хочешь стать моим преемником?
-	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_02"); //Может быть.
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_03"); //Почему бы и нет... Я почти закончил свое обучение и собираюсь вскоре покинуть город.
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_04"); //Но не из-за Гарада. Он хороший мастер, я многому научился у него.
+	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_00"); //РљР°РєРѕРІРѕ СЌС‚Рѕ, Р±С‹С‚СЊ СѓС‡РµРЅРёРєРѕРј РєСѓР·РЅРµС†Р°?
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_01"); //РџРѕС‡РµРјСѓ С‚С‹ СЃРїСЂР°С€РёРІР°РµС€СЊ? РўС‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РјРѕРёРј РїСЂРµРµРјРЅРёРєРѕРј?
+	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_02"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ.
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_03"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚... РЇ РїРѕС‡С‚Рё Р·Р°РєРѕРЅС‡РёР» СЃРІРѕРµ РѕР±СѓС‡РµРЅРёРµ Рё СЃРѕР±РёСЂР°СЋСЃСЊ РІСЃРєРѕСЂРµ РїРѕРєРёРЅСѓС‚СЊ РіРѕСЂРѕРґ.
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_04"); //РќРѕ РЅРµ РёР·-Р·Р° Р“Р°СЂР°РґР°. РћРЅ С…РѕСЂРѕС€РёР№ РјР°СЃС‚РµСЂ, СЏ РјРЅРѕРіРѕРјСѓ РЅР°СѓС‡РёР»СЃСЏ Сѓ РЅРµРіРѕ.
 	
 };
 
@@ -128,7 +128,7 @@ instance DIA_Brian_WhyLeave (C_INFO)
 	condition	= DIA_Brian_WhyLeave_Condition;
 	information	= DIA_Brian_WhyLeave_Info;
 	permanent 	= FALSE;
-	description = "Почему ты хочешь покинуть город?";
+	description = "РџРѕС‡РµРјСѓ С‚С‹ С…РѕС‡РµС€СЊ РїРѕРєРёРЅСѓС‚СЊ РіРѕСЂРѕРґ?";
 };
 
 func int DIA_Brian_WhyLeave_Condition ()
@@ -141,11 +141,11 @@ func int DIA_Brian_WhyLeave_Condition ()
 
 func void DIA_Brian_WhyLeave_Info ()
 {
-	AI_Output (other,self , "DIA_Brian_WhyLeave_15_00"); //Почему ты хочешь покинуть город?
-	AI_Output (self,other , "DIA_Brian_WhyLeave_04_00"); //Потому что люди здесь действуют мне на нервы! А особенно остальные мастера.
-	AI_Output (self, other, "DIA_Brian_WhyLeave_04_01"); //Я еще не забыл, чего это стоило - стать учеником Гарада.
-	AI_Output (self, other, "DIA_Brian_WhyLeave_04_02"); //Каждый из этих шутников был готов вставить свою шпильку.
-	AI_Output (self, other, "DIA_Brian_WhyLeave_04_03"); //Я хочу сам решать, кого могу, а кого не могу брать в ученики.
+	AI_Output (other,self , "DIA_Brian_WhyLeave_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ С…РѕС‡РµС€СЊ РїРѕРєРёРЅСѓС‚СЊ РіРѕСЂРѕРґ?
+	AI_Output (self,other , "DIA_Brian_WhyLeave_04_00"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ Р»СЋРґРё Р·РґРµСЃСЊ РґРµР№СЃС‚РІСѓСЋС‚ РјРЅРµ РЅР° РЅРµСЂРІС‹! Рђ РѕСЃРѕР±РµРЅРЅРѕ РѕСЃС‚Р°Р»СЊРЅС‹Рµ РјР°СЃС‚РµСЂР°.
+	AI_Output (self, other, "DIA_Brian_WhyLeave_04_01"); //РЇ РµС‰Рµ РЅРµ Р·Р°Р±С‹Р», С‡РµРіРѕ СЌС‚Рѕ СЃС‚РѕРёР»Рѕ - СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј Р“Р°СЂР°РґР°.
+	AI_Output (self, other, "DIA_Brian_WhyLeave_04_02"); //РљР°Р¶РґС‹Р№ РёР· СЌС‚РёС… С€СѓС‚РЅРёРєРѕРІ Р±С‹Р» РіРѕС‚РѕРІ РІСЃС‚Р°РІРёС‚СЊ СЃРІРѕСЋ С€РїРёР»СЊРєСѓ.
+	AI_Output (self, other, "DIA_Brian_WhyLeave_04_03"); //РЇ С…РѕС‡Сѓ СЃР°Рј СЂРµС€Р°С‚СЊ, РєРѕРіРѕ РјРѕРіСѓ, Р° РєРѕРіРѕ РЅРµ РјРѕРіСѓ Р±СЂР°С‚СЊ РІ СѓС‡РµРЅРёРєРё.
 };
 
 // *****************************************************
@@ -158,7 +158,7 @@ instance DIA_Brian_OtherMasters (C_INFO)
 	condition	= DIA_Brian_OtherMasters_Condition;
 	information	= DIA_Brian_OtherMasters_Info;
 	permanent 	= FALSE;
-	description = "А кто здесь другие мастера?";
+	description = "Рђ РєС‚Рѕ Р·РґРµСЃСЊ РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР°?";
 };
 func int DIA_Brian_OtherMasters_Condition ()
 {
@@ -171,17 +171,17 @@ func int DIA_Brian_OtherMasters_Condition ()
 
 func void DIA_Brian_OtherMasters_Info ()
 {
-	AI_Output (other, self, "DIA_Brian_Add_15_00"); //А кто здесь другие мастера?
-	AI_Output (self ,other, "DIA_Brian_Add_04_01"); //Ну, это плотник Торбен, мастер-лучник Боспер, алхимик Константино и Маттео.
-	AI_Output (self ,other, "DIA_Brian_Add_04_02"); //Он продает доспехи, но, в первую очередь, он торговец.
-	AI_Output (self ,other, "DIA_Brian_Add_04_03"); //У каждого мастера есть свой дом на этой улице.
-	AI_Output (self ,other, "DIA_Brian_Add_04_04"); //А лавка Константино находится в подземном проходе, ведущем к храму.
+	AI_Output (other, self, "DIA_Brian_Add_15_00"); //Рђ РєС‚Рѕ Р·РґРµСЃСЊ РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР°?
+	AI_Output (self ,other, "DIA_Brian_Add_04_01"); //РќСѓ, СЌС‚Рѕ РїР»РѕС‚РЅРёРє РўРѕСЂР±РµРЅ, РјР°СЃС‚РµСЂ-Р»СѓС‡РЅРёРє Р‘РѕСЃРїРµСЂ, Р°Р»С…РёРјРёРє РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ Рё РњР°С‚С‚РµРѕ.
+	AI_Output (self ,other, "DIA_Brian_Add_04_02"); //РћРЅ РїСЂРѕРґР°РµС‚ РґРѕСЃРїРµС…Рё, РЅРѕ, РІ РїРµСЂРІСѓСЋ РѕС‡РµСЂРµРґСЊ, РѕРЅ С‚РѕСЂРіРѕРІРµС†.
+	AI_Output (self ,other, "DIA_Brian_Add_04_03"); //РЈ РєР°Р¶РґРѕРіРѕ РјР°СЃС‚РµСЂР° РµСЃС‚СЊ СЃРІРѕР№ РґРѕРј РЅР° СЌС‚РѕР№ СѓР»РёС†Рµ.
+	AI_Output (self ,other, "DIA_Brian_Add_04_04"); //Рђ Р»Р°РІРєР° РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РЅР°С…РѕРґРёС‚СЃСЏ РІ РїРѕРґР·РµРјРЅРѕРј РїСЂРѕС…РѕРґРµ, РІРµРґСѓС‰РµРј Рє С…СЂР°РјСѓ.
 };
 
 
 
 // *****************************************************
-// 					Ьber Meister Harad
+// 					Р¬ber Meister Harad
 // *****************************************************
 instance DIA_Brian_AboutHarad (C_INFO)
 {
@@ -190,7 +190,7 @@ instance DIA_Brian_AboutHarad (C_INFO)
 	condition	= DIA_Brian_AboutHarad_Condition;
 	information	= DIA_Brian_AboutHarad_Info;
 	permanent 	= FALSE;
-	description = "Расскажи мне о мастере Гараде.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјР°СЃС‚РµСЂРµ Р“Р°СЂР°РґРµ.";
 };
 
 func int DIA_Brian_AboutHarad_Condition ()
@@ -203,11 +203,11 @@ func int DIA_Brian_AboutHarad_Condition ()
 
 func void DIA_Brian_AboutHarad_Info ()
 {
-	AI_Output (other, self, "DIA_Brian_AboutHarad_15_00"); //Расскажи мне о мастере Гараде.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_01"); //Он сейчас не в лучшем расположении духа.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_02"); //Несколько дней назад пришли паладины и приказали ему ковать мечи для них.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_03"); //Они даже запретили ему продавать мечи кому-либо еще.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_04"); //Теперь он, как раб, работает дни и ночи напролет, чтобы как можно быстрее закончить свою работу.
+	AI_Output (other, self, "DIA_Brian_AboutHarad_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјР°СЃС‚РµСЂРµ Р“Р°СЂР°РґРµ.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_01"); //РћРЅ СЃРµР№С‡Р°СЃ РЅРµ РІ Р»СѓС‡С€РµРј СЂР°СЃРїРѕР»РѕР¶РµРЅРёРё РґСѓС…Р°.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_02"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ РїСЂРёС€Р»Рё РїР°Р»Р°РґРёРЅС‹ Рё РїСЂРёРєР°Р·Р°Р»Рё РµРјСѓ РєРѕРІР°С‚СЊ РјРµС‡Рё РґР»СЏ РЅРёС….
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_03"); //РћРЅРё РґР°Р¶Рµ Р·Р°РїСЂРµС‚РёР»Рё РµРјСѓ РїСЂРѕРґР°РІР°С‚СЊ РјРµС‡Рё РєРѕРјСѓ-Р»РёР±Рѕ РµС‰Рµ.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_04"); //РўРµРїРµСЂСЊ РѕРЅ, РєР°Рє СЂР°Р±, СЂР°Р±РѕС‚Р°РµС‚ РґРЅРё Рё РЅРѕС‡Рё РЅР°РїСЂРѕР»РµС‚, С‡С‚РѕР±С‹ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ Р·Р°РєРѕРЅС‡РёС‚СЊ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ.
 };
 
 // *****************************************************
@@ -220,7 +220,7 @@ instance DIA_Brian_NEEDWEAPONS		(C_INFO)
 	condition	= DIA_Brian_NEEDWEAPONS_Condition;
 	information	= DIA_Brian_NEEDWEAPONS_Info;
 	permanent 	= FALSE;
-	description	= "Могу я купить оружие у тебя?";
+	description	= "РњРѕРіСѓ СЏ РєСѓРїРёС‚СЊ РѕСЂСѓР¶РёРµ Сѓ С‚РµР±СЏ?";
 };
 
 func int DIA_Brian_NEEDWEAPONS_Condition ()
@@ -230,10 +230,10 @@ func int DIA_Brian_NEEDWEAPONS_Condition ()
 
 func void DIA_Brian_NEEDWEAPONS_Info ()
 {
-	AI_Output (other, self, "DIA_Brian_NEEDWEAPONS_15_00"); //Могу я купить оружие у тебя?
-	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_01"); //Нет. Я всего лишь помощник.
-	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_02"); //Оружие, которое делается в этой кузнице, забирает ополчение. Они уносят его к башням, где оно хранится.
-	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_03"); //Но во всем остальном, что касается кузнечного дела, я могу помочь.
+	AI_Output (other, self, "DIA_Brian_NEEDWEAPONS_15_00"); //РњРѕРіСѓ СЏ РєСѓРїРёС‚СЊ РѕСЂСѓР¶РёРµ Сѓ С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_01"); //РќРµС‚. РЇ РІСЃРµРіРѕ Р»РёС€СЊ РїРѕРјРѕС‰РЅРёРє.
+	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_02"); //РћСЂСѓР¶РёРµ, РєРѕС‚РѕСЂРѕРµ РґРµР»Р°РµС‚СЃСЏ РІ СЌС‚РѕР№ РєСѓР·РЅРёС†Рµ, Р·Р°Р±РёСЂР°РµС‚ РѕРїРѕР»С‡РµРЅРёРµ. РћРЅРё СѓРЅРѕСЃСЏС‚ РµРіРѕ Рє Р±Р°С€РЅСЏРј, РіРґРµ РѕРЅРѕ С…СЂР°РЅРёС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Brian_NEEDWEAPONS_04_03"); //РќРѕ РІРѕ РІСЃРµРј РѕСЃС‚Р°Р»СЊРЅРѕРј, С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РєСѓР·РЅРµС‡РЅРѕРіРѕ РґРµР»Р°, СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ.
 };
 
 
@@ -251,7 +251,7 @@ instance DIA_Brian_WASKAUFEN		(C_INFO)
 	condition	= DIA_Brian_WASKAUFEN_Condition;
 	information	= DIA_Brian_WASKAUFEN_Info;
 	permanent	= TRUE;
-	description	= "Что я могу купить у тебя?";
+	description	= "Р§С‚Рѕ СЏ РјРѕРіСѓ РєСѓРїРёС‚СЊ Сѓ С‚РµР±СЏ?";
 	trade		= TRUE;
 };
 
@@ -265,28 +265,28 @@ func int DIA_Brian_WASKAUFEN_Condition ()
 
 func void DIA_Brian_WASKAUFEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Brian_WASKAUFEN_15_00"); //Что я могу купить у тебя?
+	AI_Output			(other, self, "DIA_Brian_WASKAUFEN_15_00"); //Р§С‚Рѕ СЏ РјРѕРіСѓ РєСѓРїРёС‚СЊ Сѓ С‚РµР±СЏ?
 	B_GiveTradeInv (self);
 
 	if (Npc_IsDead(Harad))
 	{
-		AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_01"); //Если у меня еще есть парочка лишних стальных болванок, ты можешь взять их. Боюсь, что это все.
+		AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_01"); //Р•СЃР»Рё Сѓ РјРµРЅСЏ РµС‰Рµ РµСЃС‚СЊ РїР°СЂРѕС‡РєР° Р»РёС€РЅРёС… СЃС‚Р°Р»СЊРЅС‹С… Р±РѕР»РІР°РЅРѕРє, С‚С‹ РјРѕР¶РµС€СЊ РІР·СЏС‚СЊ РёС…. Р‘РѕСЋСЃСЊ, С‡С‚Рѕ СЌС‚Рѕ РІСЃРµ.
 		
 		if (MIS_Jack_NewLighthouseOfficer == 0)
 		{
-			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_02"); //С тех пор как Гарада больше нет здесь, ополчение глаз с меня не спускает.
-			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_03"); //Мне не позволено продолжать работать в кузнице. Они боятся, что я все распродам и свалю.
+			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_02"); //РЎ С‚РµС… РїРѕСЂ РєР°Рє Р“Р°СЂР°РґР° Р±РѕР»СЊС€Рµ РЅРµС‚ Р·РґРµСЃСЊ, РѕРїРѕР»С‡РµРЅРёРµ РіР»Р°Р· СЃ РјРµРЅСЏ РЅРµ СЃРїСѓСЃРєР°РµС‚.
+			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_03"); //РњРЅРµ РЅРµ РїРѕР·РІРѕР»РµРЅРѕ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЂР°Р±РѕС‚Р°С‚СЊ РІ РєСѓР·РЅРёС†Рµ. РћРЅРё Р±РѕСЏС‚СЃСЏ, С‡С‚Рѕ СЏ РІСЃРµ СЂР°СЃРїСЂРѕРґР°Рј Рё СЃРІР°Р»СЋ.
 		};
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_05"); //Я могу продать тебе стальные заготовки.
+		AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_05"); //РЇ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ СЃС‚Р°Р»СЊРЅС‹Рµ Р·Р°РіРѕС‚РѕРІРєРё.
 	};
 	
 	if (Brian_Trade_Einmal == FALSE)
 	{
 		Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-		B_LogEntry (Topic_CityTrader,"Брайан, подмастерье Гарада, продает стальные заготовки."); 
+		B_LogEntry (Topic_CityTrader,"Р‘СЂР°Р№Р°РЅ, РїРѕРґРјР°СЃС‚РµСЂСЊРµ Р“Р°СЂР°РґР°, РїСЂРѕРґР°РµС‚ СЃС‚Р°Р»СЊРЅС‹Рµ Р·Р°РіРѕС‚РѕРІРєРё."); 
 		Brian_Trade_Einmal = TRUE;
 	};
 	Npc_RemoveInvItems (self,ItMiSwordblade,Npc_HasItems (self,ItMiSwordblade));
@@ -329,7 +329,7 @@ FUNC VOID DIA_Brian_KAP3_EXIT_Info()
 
 
 //*********************************************************************
-//	Kannst du auch Schmuckstьcke reparieren?
+//	Kannst du auch SchmuckstСЊcke reparieren?
 //*********************************************************************
 instance DIA_Brian_RepairNecklace		(C_INFO)
 {
@@ -338,7 +338,7 @@ instance DIA_Brian_RepairNecklace		(C_INFO)
 	condition	 = 	DIA_Brian_RepairNecklace_Condition;
 	information	 = 	DIA_Brian_RepairNecklace_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты можешь ремонтировать ювелирные изделия?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ СЂРµРјРѕРЅС‚РёСЂРѕРІР°С‚СЊ СЋРІРµР»РёСЂРЅС‹Рµ РёР·РґРµР»РёСЏ?";
 };
 
 func int DIA_Brian_RepairNecklace_Condition ()
@@ -357,12 +357,12 @@ func int DIA_Brian_RepairNecklace_Condition ()
 
 func void DIA_Brian_RepairNecklace_Info ()
 {
-	AI_Output (other,self ,"DIA_Brian_RepairNecklace_15_00"); //Ты можешь ремонтировать ювелирные изделия?
-	AI_Output (self	,other,"DIA_Brian_RepairNecklace_04_01"); //Я всего лишь помощник, я радуюсь, когда мне позволяют сделать хотя бы кинжал.
+	AI_Output (other,self ,"DIA_Brian_RepairNecklace_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЂРµРјРѕРЅС‚РёСЂРѕРІР°С‚СЊ СЋРІРµР»РёСЂРЅС‹Рµ РёР·РґРµР»РёСЏ?
+	AI_Output (self	,other,"DIA_Brian_RepairNecklace_04_01"); //РЇ РІСЃРµРіРѕ Р»РёС€СЊ РїРѕРјРѕС‰РЅРёРє, СЏ СЂР°РґСѓСЋСЃСЊ, РєРѕРіРґР° РјРЅРµ РїРѕР·РІРѕР»СЏСЋС‚ СЃРґРµР»Р°С‚СЊ С…РѕС‚СЏ Р±С‹ РєРёРЅР¶Р°Р».
 	
 	if ((Npc_IsDead (Harad))== FALSE)
 	{
-		AI_Output (self ,other,"DIA_Brian_RepairNecklace_04_02"); //Ювелирные изделия? Тебе лучше обратиться к мастеру.
+		AI_Output (self ,other,"DIA_Brian_RepairNecklace_04_02"); //Р®РІРµР»РёСЂРЅС‹Рµ РёР·РґРµР»РёСЏ? РўРµР±Рµ Р»СѓС‡С€Рµ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє РјР°СЃС‚РµСЂСѓ.
 	};
 	
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE; 	
@@ -448,7 +448,7 @@ instance DIA_Brian_NEWLIGHTHOUSEOFFICER		(C_INFO)
 	condition	 = 	DIA_Brian_NEWLIGHTHOUSEOFFICER_Condition;
 	information	 = 	DIA_Brian_NEWLIGHTHOUSEOFFICER_Info;
 
-	description	 = 	"Я слышал, что ты интересовался маяком старого Джека.";
+	description	 = 	"РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ РёРЅС‚РµСЂРµСЃРѕРІР°Р»СЃСЏ РјР°СЏРєРѕРј СЃС‚Р°СЂРѕРіРѕ Р”Р¶РµРєР°.";
 };
 
 func int DIA_Brian_NEWLIGHTHOUSEOFFICER_Condition ()
@@ -463,12 +463,12 @@ func int DIA_Brian_NEWLIGHTHOUSEOFFICER_Condition ()
 
 func void DIA_Brian_NEWLIGHTHOUSEOFFICER_Info ()
 {
-	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_00"); //Я слышал, что ты интересовался маяком старого Джека.
-	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_01"); //Джек собирается выйти в море. Но ему не на кого оставить маяк.
-	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_02"); //Но Джек должен понимать, что в его отсутствие я превращу маяк в кузницу.
-	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_03"); //Это проблема?
-	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_04"); //(смеется) Не для меня. Мне все равно не заполучить кузницу Гарада. Я уже выбросил эту мысль из головы.
-	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_05"); //Согласен. Встретимся у Джека.
+	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_00"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ РёРЅС‚РµСЂРµСЃРѕРІР°Р»СЃСЏ РјР°СЏРєРѕРј СЃС‚Р°СЂРѕРіРѕ Р”Р¶РµРєР°.
+	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_01"); //Р”Р¶РµРє СЃРѕР±РёСЂР°РµС‚СЃСЏ РІС‹Р№С‚Рё РІ РјРѕСЂРµ. РќРѕ РµРјСѓ РЅРµ РЅР° РєРѕРіРѕ РѕСЃС‚Р°РІРёС‚СЊ РјР°СЏРє.
+	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_02"); //РќРѕ Р”Р¶РµРє РґРѕР»Р¶РµРЅ РїРѕРЅРёРјР°С‚СЊ, С‡С‚Рѕ РІ РµРіРѕ РѕС‚СЃСѓС‚СЃС‚РІРёРµ СЏ РїСЂРµРІСЂР°С‰Сѓ РјР°СЏРє РІ РєСѓР·РЅРёС†Сѓ.
+	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_03"); //Р­С‚Рѕ РїСЂРѕР±Р»РµРјР°?
+	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_04"); //(СЃРјРµРµС‚СЃСЏ) РќРµ РґР»СЏ РјРµРЅСЏ. РњРЅРµ РІСЃРµ СЂР°РІРЅРѕ РЅРµ Р·Р°РїРѕР»СѓС‡РёС‚СЊ РєСѓР·РЅРёС†Сѓ Р“Р°СЂР°РґР°. РЇ СѓР¶Рµ РІС‹Р±СЂРѕСЃРёР» СЌС‚Сѓ РјС‹СЃР»СЊ РёР· РіРѕР»РѕРІС‹.
+	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_05"); //РЎРѕРіР»Р°СЃРµРЅ. Р’СЃС‚СЂРµС‚РёРјСЃСЏ Сѓ Р”Р¶РµРєР°.
 	MIS_Jack_NewLighthouseOfficer = LOG_SUCCESS;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Lighthouse");
@@ -487,7 +487,7 @@ instance DIA_Brian_LIGHTHOUSEFREE		(C_INFO)
 	permanent	 = 	TRUE;
 
 
-	description	 = 	"И, что скажешь?";
+	description	 = 	"Р, С‡С‚Рѕ СЃРєР°Р¶РµС€СЊ?";
 };
 
 func int DIA_Brian_LIGHTHOUSEFREE_Condition ()
@@ -502,8 +502,8 @@ func int DIA_Brian_LIGHTHOUSEFREE_Condition ()
 
 func void DIA_Brian_LIGHTHOUSEFREE_Info ()
 {
-	AI_Output			(other, self, "DIA_Brian_LIGHTHOUSEFREE_15_00"); //И что скажешь?
-	AI_Output			(self, other, "DIA_Brian_LIGHTHOUSEFREE_04_01"); //Боже, какой бардак. Джек не узнает это место, когда я все здесь устрою как надо.
+	AI_Output			(other, self, "DIA_Brian_LIGHTHOUSEFREE_15_00"); //Р С‡С‚Рѕ СЃРєР°Р¶РµС€СЊ?
+	AI_Output			(self, other, "DIA_Brian_LIGHTHOUSEFREE_04_01"); //Р‘РѕР¶Рµ, РєР°РєРѕР№ Р±Р°СЂРґР°Рє. Р”Р¶РµРє РЅРµ СѓР·РЅР°РµС‚ СЌС‚Рѕ РјРµСЃС‚Рѕ, РєРѕРіРґР° СЏ РІСЃРµ Р·РґРµСЃСЊ СѓСЃС‚СЂРѕСЋ РєР°Рє РЅР°РґРѕ.
 };
 
 

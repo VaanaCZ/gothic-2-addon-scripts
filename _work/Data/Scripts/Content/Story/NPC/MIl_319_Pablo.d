@@ -2,7 +2,7 @@
 instance Mil_319_Pablo (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Пабло";	
+	name 		= "РџР°Р±Р»Рѕ";	
 	guild 		= GIL_MIL;
 	id 			= 319;
 	voice 		= 12;

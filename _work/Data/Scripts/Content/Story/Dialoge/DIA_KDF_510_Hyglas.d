@@ -31,7 +31,7 @@ instance DIA_Hyglas_Feuer		(C_INFO)
 	condition	 = 	DIA_Hyglas_Feuer_Condition;
 	information	 = 	DIA_Hyglas_Feuer_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Мне необходимо пройти Испытание Огнем.";
+	description	 =  "РњРЅРµ РЅРµРѕР±С…РѕРґРёРјРѕ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј.";
 };
 func int DIA_Hyglas_Feuer_Condition ()
 {	
@@ -44,9 +44,9 @@ func int DIA_Hyglas_Feuer_Condition ()
 };
 func void DIA_Hyglas_Feuer_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_Feuer_15_00"); //Мне необходимо пройти Испытание Огнем.
-	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01"); //Испытание Огнем - это обряд из древних времен, и не проводилось уже давно.
-	AI_Output (self, other, "DIA_Hyglas_Feuer_14_02"); //То, чего ты требуешь, очень опасно. Даже и не думай об этом.
+	AI_Output (other, self, "DIA_Hyglas_Feuer_15_00"); //РњРЅРµ РЅРµРѕР±С…РѕРґРёРјРѕ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01"); //РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј - СЌС‚Рѕ РѕР±СЂСЏРґ РёР· РґСЂРµРІРЅРёС… РІСЂРµРјРµРЅ, Рё РЅРµ РїСЂРѕРІРѕРґРёР»РѕСЃСЊ СѓР¶Рµ РґР°РІРЅРѕ.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_02"); //РўРѕ, С‡РµРіРѕ С‚С‹ С‚СЂРµР±СѓРµС€СЊ, РѕС‡РµРЅСЊ РѕРїР°СЃРЅРѕ. Р”Р°Р¶Рµ Рё РЅРµ РґСѓРјР°Р№ РѕР± СЌС‚РѕРј.
 };    
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -69,12 +69,12 @@ func int DIA_Hyglas_Hallo_Condition ()
 };
 func void DIA_Hyglas_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Hyglas_Hallo_14_00"); //Я Мастер Хиглас, Страж Огня и Хранитель Знаний.
+	AI_Output (self, other, "DIA_Hyglas_Hallo_14_00"); //РЇ РњР°СЃС‚РµСЂ РҐРёРіР»Р°СЃ, РЎС‚СЂР°Р¶ РћРіРЅСЏ Рё РҐСЂР°РЅРёС‚РµР»СЊ Р—РЅР°РЅРёР№.
 	
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Hyglas_Hallo_14_01"); //Итак, Мастер Парлан дал тебе разрешение изучать священные книги.
-		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02"); //Тогда бери их и изучай. Может быть, ты найдешь просвещение в этих писаниях.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_01"); //РС‚Р°Рє, РњР°СЃС‚РµСЂ РџР°СЂР»Р°РЅ РґР°Р» С‚РµР±Рµ СЂР°Р·СЂРµС€РµРЅРёРµ РёР·СѓС‡Р°С‚СЊ СЃРІСЏС‰РµРЅРЅС‹Рµ РєРЅРёРіРё.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02"); //РўРѕРіРґР° Р±РµСЂРё РёС… Рё РёР·СѓС‡Р°Р№. РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ РЅР°Р№РґРµС€СЊ РїСЂРѕСЃРІРµС‰РµРЅРёРµ РІ СЌС‚РёС… РїРёСЃР°РЅРёСЏС….
 	};
 };    
 ///////////////////////////////////////////////////////////////////////
@@ -87,7 +87,7 @@ instance DIA_Hyglas_JOB		(C_INFO)
 	condition	 = 	DIA_Hyglas_JOB_Condition;
 	information	 = 	DIA_Hyglas_JOB_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Что ты изучаешь, Мастер?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РёР·СѓС‡Р°РµС€СЊ, РњР°СЃС‚РµСЂ?";
 };
 func int DIA_Hyglas_JOB_Condition ()
 {	
@@ -95,14 +95,14 @@ func int DIA_Hyglas_JOB_Condition ()
 };
 func void DIA_Hyglas_JOB_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_JOB_15_00"); //Что ты изучаешь, Мастер?
-	AI_Output (self, other, "DIA_Hyglas_JOB_14_01"); //Я посвятил себя изучению огня - силы Инноса.
-	AI_Output (self, other, "DIA_Hyglas_JOB_14_02"); //Это его дар, и в то же время, могучее оружие - я создаю руны, содержащие частицу его силы.
+	AI_Output (other, self, "DIA_Hyglas_JOB_15_00"); //Р§С‚Рѕ С‚С‹ РёР·СѓС‡Р°РµС€СЊ, РњР°СЃС‚РµСЂ?
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_01"); //РЇ РїРѕСЃРІСЏС‚РёР» СЃРµР±СЏ РёР·СѓС‡РµРЅРёСЋ РѕРіРЅСЏ - СЃРёР»С‹ РРЅРЅРѕСЃР°.
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_02"); //Р­С‚Рѕ РµРіРѕ РґР°СЂ, Рё РІ С‚Рѕ Р¶Рµ РІСЂРµРјСЏ, РјРѕРіСѓС‡РµРµ РѕСЂСѓР¶РёРµ - СЏ СЃРѕР·РґР°СЋ СЂСѓРЅС‹, СЃРѕРґРµСЂР¶Р°С‰РёРµ С‡Р°СЃС‚РёС†Сѓ РµРіРѕ СЃРёР»С‹.
 	
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (other, self, "DIA_Hyglas_JOB_15_03"); //Как это интересно! А не мог бы ты научить и меня этому?
-		AI_Output (self, other, "DIA_Hyglas_JOB_14_04"); //Магию дарует Иннос. И только его слугам, Магам Огня, дано познать, как пользоваться этой силой.
+		AI_Output (other, self, "DIA_Hyglas_JOB_15_03"); //РљР°Рє СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ! Рђ РЅРµ РјРѕРі Р±С‹ С‚С‹ РЅР°СѓС‡РёС‚СЊ Рё РјРµРЅСЏ СЌС‚РѕРјСѓ?
+		AI_Output (self, other, "DIA_Hyglas_JOB_14_04"); //РњР°РіРёСЋ РґР°СЂСѓРµС‚ РРЅРЅРѕСЃ. Р С‚РѕР»СЊРєРѕ РµРіРѕ СЃР»СѓРіР°Рј, РњР°РіР°Рј РћРіРЅСЏ, РґР°РЅРѕ РїРѕР·РЅР°С‚СЊ, РєР°Рє РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ СЌС‚РѕР№ СЃРёР»РѕР№.
 	};
 };    
 ///////////////////////////////////////////////////////////////////////
@@ -115,7 +115,7 @@ instance DIA_Hyglas_CONTEST		(C_INFO)
 	condition	 = 	DIA_Hyglas_CONTEST_Condition;
 	information	 = 	DIA_Hyglas_CONTEST_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Я потребовал прохождения Испытания Огнем.";
+	description	 = 	"РЇ РїРѕС‚СЂРµР±РѕРІР°Р» РїСЂРѕС…РѕР¶РґРµРЅРёСЏ РСЃРїС‹С‚Р°РЅРёСЏ РћРіРЅРµРј.";
 };
 func int DIA_Hyglas_CONTEST_Condition ()
 {
@@ -126,13 +126,13 @@ func int DIA_Hyglas_CONTEST_Condition ()
 };
 func void DIA_Hyglas_CONTEST_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_00"); //Я должен пройти Испытание Огнем. Ультар дал мне задание создать руну огненной стрелы.
-	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_01"); //И ты хочешь, чтобы я обучил тебя этому?
-	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_02"); //Я не знаю другого способа выполнить это задание.
-	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_03"); //Хмм...
-	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04"); //Хорошо, я научу тебя. Но сначала, ты должен найти все необходимые ингредиенты.
+	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_00"); //РЇ РґРѕР»Р¶РµРЅ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј. РЈР»СЊС‚Р°СЂ РґР°Р» РјРЅРµ Р·Р°РґР°РЅРёРµ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ РѕРіРЅРµРЅРЅРѕР№ СЃС‚СЂРµР»С‹.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_01"); //Р С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РѕР±СѓС‡РёР» С‚РµР±СЏ СЌС‚РѕРјСѓ?
+	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_02"); //РЇ РЅРµ Р·РЅР°СЋ РґСЂСѓРіРѕРіРѕ СЃРїРѕСЃРѕР±Р° РІС‹РїРѕР»РЅРёС‚СЊ СЌС‚Рѕ Р·Р°РґР°РЅРёРµ.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_03"); //РҐРјРј...
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04"); //РҐРѕСЂРѕС€Рѕ, СЏ РЅР°СѓС‡Сѓ С‚РµР±СЏ. РќРѕ СЃРЅР°С‡Р°Р»Р°, С‚С‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РІСЃРµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёРЅРіСЂРµРґРёРµРЅС‚С‹.
 	
-	B_LogEntry (TOPIC_Rune,"Хиглас готов обучить меня создавать руну Огненная стрела, если я принесу ему все необходимые ингредиенты.");
+	B_LogEntry (TOPIC_Rune,"РҐРёРіР»Р°СЃ РіРѕС‚РѕРІ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ СЃРѕР·РґР°РІР°С‚СЊ СЂСѓРЅСѓ РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°, РµСЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ РµРјСѓ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёРЅРіСЂРµРґРёРµРЅС‚С‹.");
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info FIREBOLT
@@ -144,7 +144,7 @@ instance DIA_Hyglas_FIREBOLT		(C_INFO)
 	condition	 = 	DIA_Hyglas_FIREBOLT_Condition;
 	information	 = 	DIA_Hyglas_FIREBOLT_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Какие ингредиенты нужны для создания руны огненной стрелы?";
+	description	 = 	"РљР°РєРёРµ РёРЅРіСЂРµРґРёРµРЅС‚С‹ РЅСѓР¶РЅС‹ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СЂСѓРЅС‹ РѕРіРЅРµРЅРЅРѕР№ СЃС‚СЂРµР»С‹?";
 };
 func int DIA_Hyglas_FIREBOLT_Condition ()
 {	
@@ -157,8 +157,8 @@ func int DIA_Hyglas_FIREBOLT_Condition ()
 };
 func void DIA_Hyglas_FIREBOLT_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_FIREBOLT_15_00"); //Какие ингредиенты нужны для создания руны огненной стрелы?
-	AI_Output (self, other, "DIA_Hyglas_FIREBOLT_14_01"); //Прочти об этом - ты найдешь эту информацию здесь, в книгах.
+	AI_Output (other, self, "DIA_Hyglas_FIREBOLT_15_00"); //РљР°РєРёРµ РёРЅРіСЂРµРґРёРµРЅС‚С‹ РЅСѓР¶РЅС‹ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СЂСѓРЅС‹ РѕРіРЅРµРЅРЅРѕР№ СЃС‚СЂРµР»С‹?
+	AI_Output (self, other, "DIA_Hyglas_FIREBOLT_14_01"); //РџСЂРѕС‡С‚Рё РѕР± СЌС‚РѕРј - С‚С‹ РЅР°Р№РґРµС€СЊ СЌС‚Сѓ РёРЅС„РѕСЂРјР°С†РёСЋ Р·РґРµСЃСЊ, РІ РєРЅРёРіР°С….
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TALENT_FIREBOLT
@@ -170,7 +170,7 @@ instance DIA_Hyglas_TALENT_FIREBOLT		(C_INFO)
 	condition	 = 	DIA_Hyglas_TALENT_FIREBOLT_Condition;
 	information	 = 	DIA_Hyglas_TALENT_FIREBOLT_Info;
 	permanent 	 =  TRUE; 
-	description	 = 	"Научи меня создавать руну ОГНЕННОЙ СТРЕЛЫ.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ СЃРѕР·РґР°РІР°С‚СЊ СЂСѓРЅСѓ РћР“РќР•РќРќРћР™ РЎРўР Р•Р›Р«.";
 
 };
 func int DIA_Hyglas_TALENT_FIREBOLT_Condition ()
@@ -186,13 +186,13 @@ func int DIA_Hyglas_TALENT_FIREBOLT_Condition ()
 };
 func void DIA_Hyglas_TALENT_FIREBOLT_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_TALENT_FIREBOLT_15_00"); //Научи меня создавать руну ОГНЕННОЙ СТРЕЛЫ.
+	AI_Output (other, self, "DIA_Hyglas_TALENT_FIREBOLT_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ СЃРѕР·РґР°РІР°С‚СЊ СЂСѓРЅСѓ РћР“РќР•РќРќРћР™ РЎРўР Р•Р›Р«.
 	
 	if (B_TeachPlayerTalentRunes (self, other, SPL_Firebolt))	
 	{
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_01"); //Чтобы создать руну огненной стрелы, ты должен объединить на рунном столе серу с рунным камнем.
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02"); //Сила свитка огненной стрелы перетечет в эту руну, и ты станешь обладателем оружия Инноса.
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_03"); //Когда у тебя будет все необходимое, подойди к рунному столу и создай свою руну.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_01"); //Р§С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ РѕРіРЅРµРЅРЅРѕР№ СЃС‚СЂРµР»С‹, С‚С‹ РґРѕР»Р¶РµРЅ РѕР±СЉРµРґРёРЅРёС‚СЊ РЅР° СЂСѓРЅРЅРѕРј СЃС‚РѕР»Рµ СЃРµСЂСѓ СЃ СЂСѓРЅРЅС‹Рј РєР°РјРЅРµРј.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02"); //РЎРёР»Р° СЃРІРёС‚РєР° РѕРіРЅРµРЅРЅРѕР№ СЃС‚СЂРµР»С‹ РїРµСЂРµС‚РµС‡РµС‚ РІ СЌС‚Сѓ СЂСѓРЅСѓ, Рё С‚С‹ СЃС‚Р°РЅРµС€СЊ РѕР±Р»Р°РґР°С‚РµР»РµРј РѕСЂСѓР¶РёСЏ РРЅРЅРѕСЃР°.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_03"); //РљРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјРѕРµ, РїРѕРґРѕР№РґРё Рє СЂСѓРЅРЅРѕРјСѓ СЃС‚РѕР»Сѓ Рё СЃРѕР·РґР°Р№ СЃРІРѕСЋ СЂСѓРЅСѓ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -205,7 +205,7 @@ instance DIA_Hyglas_BLANK_RUNE		(C_INFO)
 	condition	 = 	DIA_Hyglas_BLANK_RUNE_Condition;
 	information	 = 	DIA_Hyglas_BLANK_RUNE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Где я могу найти рунный камень?";
+	description	 = 	"Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ?";
 };
 func int DIA_Hyglas_BLANK_RUNE_Condition ()
 {	
@@ -219,8 +219,8 @@ func int DIA_Hyglas_BLANK_RUNE_Condition ()
 };
 func void DIA_Hyglas_BLANK_RUNE_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_BLANK_RUNE_15_00"); //Где я могу найти рунный камень?
-	AI_Output (self, other, "DIA_Hyglas_BLANK_RUNE_14_01"); //Послушай, тебе ведь необходимо пройти Испытание Огнем - не мне. Поиски входят в это испытание.
+	AI_Output (other, self, "DIA_Hyglas_BLANK_RUNE_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ?
+	AI_Output (self, other, "DIA_Hyglas_BLANK_RUNE_14_01"); //РџРѕСЃР»СѓС€Р°Р№, С‚РµР±Рµ РІРµРґСЊ РЅРµРѕР±С…РѕРґРёРјРѕ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј - РЅРµ РјРЅРµ. РџРѕРёСЃРєРё РІС…РѕРґСЏС‚ РІ СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info GOTRUNE
@@ -232,7 +232,7 @@ instance DIA_Hyglas_GOTRUNE		(C_INFO)
 	condition	 = 	DIA_Hyglas_GOTRUNE_Condition;
 	information	 = 	DIA_Hyglas_GOTRUNE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Я создал руну.";
+	description	 = 	"РЇ СЃРѕР·РґР°Р» СЂСѓРЅСѓ.";
 };
 func int DIA_Hyglas_GOTRUNE_Condition ()
 {
@@ -245,11 +245,11 @@ func int DIA_Hyglas_GOTRUNE_Condition ()
 };
 func void DIA_Hyglas_GOTRUNE_Info ()
 {
-	AI_Output (other, self, "DIA_Hyglas_GOTRUNE_15_00"); //Я создал руну.
-	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_01"); //Хорошо, хорошо. Я думаю, ты прошел этот тест. Впрочем, это было не так уж и сложно.
-	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_02"); //Теперь иди к Ультару и покажи ему плоды своего труда.
+	AI_Output (other, self, "DIA_Hyglas_GOTRUNE_15_00"); //РЇ СЃРѕР·РґР°Р» СЂСѓРЅСѓ.
+	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_01"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ. РЇ РґСѓРјР°СЋ, С‚С‹ РїСЂРѕС€РµР» СЌС‚РѕС‚ С‚РµСЃС‚. Р’РїСЂРѕС‡РµРј, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє СѓР¶ Рё СЃР»РѕР¶РЅРѕ.
+	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_02"); //РўРµРїРµСЂСЊ РёРґРё Рє РЈР»СЊС‚Р°СЂСѓ Рё РїРѕРєР°Р¶Рё РµРјСѓ РїР»РѕРґС‹ СЃРІРѕРµРіРѕ С‚СЂСѓРґР°.
 	
-	B_LogEntry (TOPIC_Rune,"Я создал руну Огненная стрела."); 
+	B_LogEntry (TOPIC_Rune,"РЇ СЃРѕР·РґР°Р» СЂСѓРЅСѓ РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -261,7 +261,7 @@ instance DIA_Hyglas_TEACH		(C_INFO)
 	condition	 = 	DIA_Hyglas_TEACH_Condition;
 	information	 = 	DIA_Hyglas_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Научи меня.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ.";
 };
 func int DIA_Hyglas_TEACH_Condition ()
 {	
@@ -276,7 +276,7 @@ func void DIA_Hyglas_TEACH_Info ()
 	var int abletolearn;
 	
 	abletolearn = 0;
-	AI_Output (other, self, "DIA_Hyglas_TEACH_15_00"); //Обучи меня.
+	AI_Output (other, self, "DIA_Hyglas_TEACH_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ.
 	
 	
 	Info_ClearChoices (DIA_Hyglas_TEACH);
@@ -416,7 +416,7 @@ INSTANCE DIA_Hyglas_BringBook   (C_INFO)
 	condition   = DIA_Hyglas_BringBook_Condition;
 	information = DIA_Hyglas_BringBook_Info;
 	permanent   = FALSE;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };
 FUNC INT DIA_Hyglas_BringBook_Condition()
 {
@@ -429,26 +429,26 @@ FUNC INT DIA_Hyglas_BringBook_Condition()
 };
 FUNC VOID DIA_Hyglas_BringBook_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_00"); //Есть какие-нибудь новости?
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_01"); //Хмм, да. Ну, ты, вероятно, заметил эти фигуры в черных робах.
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_02"); //Я встречал их.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_03"); //Вот! А теперь перейдем к сути дела. В настоящий момент, мы наблюдаем очень редкое созвездие.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_04"); //Если быть более точным, созвездие Быка сейчас находится в прямой взаимосвязи с созвездием Воина. Я полагаю, ты знаешь, что это означает.
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_05"); //Хмм. Ну, если быть честным...
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_06"); //Да, хорошо, я понимаю. Ну, я не могу объяснить тебе сейчас все детали, но это, определенно, предвещает великие перемены. А я не люблю перемены.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_07"); //Поэтому, я хочу, чтобы ты принес мне из города книгу. Она называется 'Божественная сила звезд'. Тебе, возможно, придется поискать ее, но я уверен, что ты справишься с этим.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_00"); //Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РЅРѕРІРѕСЃС‚Рё?
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_01"); //РҐРјРј, РґР°. РќСѓ, С‚С‹, РІРµСЂРѕСЏС‚РЅРѕ, Р·Р°РјРµС‚РёР» СЌС‚Рё С„РёРіСѓСЂС‹ РІ С‡РµСЂРЅС‹С… СЂРѕР±Р°С….
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_02"); //РЇ РІСЃС‚СЂРµС‡Р°Р» РёС….
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_03"); //Р’РѕС‚! Рђ С‚РµРїРµСЂСЊ РїРµСЂРµР№РґРµРј Рє СЃСѓС‚Рё РґРµР»Р°. Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚, РјС‹ РЅР°Р±Р»СЋРґР°РµРј РѕС‡РµРЅСЊ СЂРµРґРєРѕРµ СЃРѕР·РІРµР·РґРёРµ.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_04"); //Р•СЃР»Рё Р±С‹С‚СЊ Р±РѕР»РµРµ С‚РѕС‡РЅС‹Рј, СЃРѕР·РІРµР·РґРёРµ Р‘С‹РєР° СЃРµР№С‡Р°СЃ РЅР°С…РѕРґРёС‚СЃСЏ РІ РїСЂСЏРјРѕР№ РІР·Р°РёРјРѕСЃРІСЏР·Рё СЃ СЃРѕР·РІРµР·РґРёРµРј Р’РѕРёРЅР°. РЇ РїРѕР»Р°РіР°СЋ, С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЌС‚Рѕ РѕР·РЅР°С‡Р°РµС‚.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_05"); //РҐРјРј. РќСѓ, РµСЃР»Рё Р±С‹С‚СЊ С‡РµСЃС‚РЅС‹Рј...
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_06"); //Р”Р°, С…РѕСЂРѕС€Рѕ, СЏ РїРѕРЅРёРјР°СЋ. РќСѓ, СЏ РЅРµ РјРѕРіСѓ РѕР±СЉСЏСЃРЅРёС‚СЊ С‚РµР±Рµ СЃРµР№С‡Р°СЃ РІСЃРµ РґРµС‚Р°Р»Рё, РЅРѕ СЌС‚Рѕ, РѕРїСЂРµРґРµР»РµРЅРЅРѕ, РїСЂРµРґРІРµС‰Р°РµС‚ РІРµР»РёРєРёРµ РїРµСЂРµРјРµРЅС‹. Рђ СЏ РЅРµ Р»СЋР±Р»СЋ РїРµСЂРµРјРµРЅС‹.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_07"); //РџРѕСЌС‚РѕРјСѓ, СЏ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РїСЂРёРЅРµСЃ РјРЅРµ РёР· РіРѕСЂРѕРґР° РєРЅРёРіСѓ. РћРЅР° РЅР°Р·С‹РІР°РµС‚СЃСЏ 'Р‘РѕР¶РµСЃС‚РІРµРЅРЅР°СЏ СЃРёР»Р° Р·РІРµР·Рґ'. РўРµР±Рµ, РІРѕР·РјРѕР¶РЅРѕ, РїСЂРёРґРµС‚СЃСЏ РїРѕРёСЃРєР°С‚СЊ РµРµ, РЅРѕ СЏ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ СЃ СЌС‚РёРј.
 	
 	Info_ClearChoices (DIA_Hyglas_BringBook);
-	Info_AddChoice (DIA_Hyglas_BringBook,"Достань эту книгу сам.",DIA_Hyglas_BringBook_GetItYourself);
-	Info_AddChoice (DIA_Hyglas_BringBook,"А что мне с этого будет?",DIA_Hyglas_BringBook_GetForIt);
-	Info_AddChoice (DIA_Hyglas_BringBook,"Я попробую найти ее.",DIA_Hyglas_BringBook_Yes);
+	Info_AddChoice (DIA_Hyglas_BringBook,"Р”РѕСЃС‚Р°РЅСЊ СЌС‚Сѓ РєРЅРёРіСѓ СЃР°Рј.",DIA_Hyglas_BringBook_GetItYourself);
+	Info_AddChoice (DIA_Hyglas_BringBook,"Рђ С‡С‚Рѕ РјРЅРµ СЃ СЌС‚РѕРіРѕ Р±СѓРґРµС‚?",DIA_Hyglas_BringBook_GetForIt);
+	Info_AddChoice (DIA_Hyglas_BringBook,"РЇ РїРѕРїСЂРѕР±СѓСЋ РЅР°Р№С‚Рё РµРµ.",DIA_Hyglas_BringBook_Yes);
 };
 
 FUNC VOID DIA_Hyglas_BringBook_GetItYourself()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetItYourself_15_00"); //Достань эту книгу сам.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_01"); //Как ты смеешь говорить со мной в таком тоне?! Твое поведение недопустимо, ты обязан проявлять уважение ко мне!
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_02"); //Убирайся с глаз моих и подумай о своем поведении.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetItYourself_15_00"); //Р”РѕСЃС‚Р°РЅСЊ СЌС‚Сѓ РєРЅРёРіСѓ СЃР°Рј.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_01"); //РљР°Рє С‚С‹ СЃРјРµРµС€СЊ РіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№ РІ С‚Р°РєРѕРј С‚РѕРЅРµ?! РўРІРѕРµ РїРѕРІРµРґРµРЅРёРµ РЅРµРґРѕРїСѓСЃС‚РёРјРѕ, С‚С‹ РѕР±СЏР·Р°РЅ РїСЂРѕСЏРІР»СЏС‚СЊ СѓРІР°Р¶РµРЅРёРµ РєРѕ РјРЅРµ!
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_02"); //РЈР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС… Рё РїРѕРґСѓРјР°Р№ Рѕ СЃРІРѕРµРј РїРѕРІРµРґРµРЅРёРё.
 	
 	MIS_HyglasBringBook = LOG_OBSOLETE;
 	
@@ -457,19 +457,19 @@ FUNC VOID DIA_Hyglas_BringBook_GetItYourself()
 
 FUNC VOID DIA_Hyglas_BringBook_GetForIt()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_00"); //И что я за это получу?
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_01"); //Что ты имеешь в виду?
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_02"); //Я бы хотел знать, что ты дашь мне, если я принесу эту книгу.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_03"); //Ничего. А что ты ожидал получить? Если у тебя есть время, чтобы выполнить для меня задание в городе, это твоя обязанность помочь мне.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_00"); //Р С‡С‚Рѕ СЏ Р·Р° СЌС‚Рѕ РїРѕР»СѓС‡Сѓ?
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_01"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetForIt_15_02"); //РЇ Р±С‹ С…РѕС‚РµР» Р·РЅР°С‚СЊ, С‡С‚Рѕ С‚С‹ РґР°С€СЊ РјРЅРµ, РµСЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ СЌС‚Сѓ РєРЅРёРіСѓ.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetForIt_14_03"); //РќРёС‡РµРіРѕ. Рђ С‡С‚Рѕ С‚С‹ РѕР¶РёРґР°Р» РїРѕР»СѓС‡РёС‚СЊ? Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РІСЂРµРјСЏ, С‡С‚РѕР±С‹ РІС‹РїРѕР»РЅРёС‚СЊ РґР»СЏ РјРµРЅСЏ Р·Р°РґР°РЅРёРµ РІ РіРѕСЂРѕРґРµ, СЌС‚Рѕ С‚РІРѕСЏ РѕР±СЏР·Р°РЅРЅРѕСЃС‚СЊ РїРѕРјРѕС‡СЊ РјРЅРµ.
 	
 	Info_ClearChoices (DIA_Hyglas_BringBook); 
 };
 
 FUNC VOID DIA_Hyglas_BringBook_Yes()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_Yes_15_00"); //Я попробую найти ее.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_01"); //Хорошо - это сэкономит мое время, и я смогу заняться другими делами.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_02"); //Но не трать на это слишком много времени. Как раз времени-то, боюсь, у нас очень мало.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_Yes_15_00"); //РЇ РїРѕРїСЂРѕР±СѓСЋ РЅР°Р№С‚Рё РµРµ.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_01"); //РҐРѕСЂРѕС€Рѕ - СЌС‚Рѕ СЃСЌРєРѕРЅРѕРјРёС‚ РјРѕРµ РІСЂРµРјСЏ, Рё СЏ СЃРјРѕРіСѓ Р·Р°РЅСЏС‚СЊСЃСЏ РґСЂСѓРіРёРјРё РґРµР»Р°РјРё.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_02"); //РќРѕ РЅРµ С‚СЂР°С‚СЊ РЅР° СЌС‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё. РљР°Рє СЂР°Р· РІСЂРµРјРµРЅРё-С‚Рѕ, Р±РѕСЋСЃСЊ, Сѓ РЅР°СЃ РѕС‡РµРЅСЊ РјР°Р»Рѕ.
 	
 	MIS_HyglasBringBook = LOG_RUNNING;
 	
@@ -477,7 +477,7 @@ FUNC VOID DIA_Hyglas_BringBook_Yes()
 	
 	Log_CreateTopic (TOPIC_HyglasBringBook,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HyglasBringBook,LOG_RUNNING);
-	B_LogEntry (TOPIC_HyglasBringBook,"Хиглас хочет, чтобы я принес ему книгу 'Божественная сила звезд'. Она может быть у одного из торговцев в городе.");
+	B_LogEntry (TOPIC_HyglasBringBook,"РҐРёРіР»Р°СЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ РµРјСѓ РєРЅРёРіСѓ 'Р‘РѕР¶РµСЃС‚РІРµРЅРЅР°СЏ СЃРёР»Р° Р·РІРµР·Рґ'. РћРЅР° РјРѕР¶РµС‚ Р±С‹С‚СЊ Сѓ РѕРґРЅРѕРіРѕ РёР· С‚РѕСЂРіРѕРІС†РµРІ РІ РіРѕСЂРѕРґРµ.");
 };
 
 //*********************************************************************
@@ -491,7 +491,7 @@ INSTANCE DIA_Hyglas_HaveBook   (C_INFO)
 	condition   = DIA_Hyglas_HaveBook_Condition;
 	information = DIA_Hyglas_HaveBook_Info;
 	permanent   = FALSE;
-	description = "Я принес тебе книгу.";
+	description = "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРЅРёРіСѓ.";
 };
 FUNC INT DIA_Hyglas_HaveBook_Condition()
 {
@@ -503,15 +503,15 @@ FUNC INT DIA_Hyglas_HaveBook_Condition()
 };
 FUNC VOID DIA_Hyglas_HaveBook_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_HaveBook_15_00"); //Я принес тебе книгу.
+	AI_Output (other,self ,"DIA_Hyglas_HaveBook_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРЅРёРіСѓ.
 	
 	IF Mis_HyglasBringBook == LOG_RUNNING
 	{
-		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_01"); //Очень хорошо, давай ее сюда.
+		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ, РґР°РІР°Р№ РµРµ СЃСЋРґР°.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_02"); //Ты все же передумал. Очень хорошо. Так где же эта книга?
+		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_02"); //РўС‹ РІСЃРµ Р¶Рµ РїРµСЂРµРґСѓРјР°Р». РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РўР°Рє РіРґРµ Р¶Рµ СЌС‚Р° РєРЅРёРіР°?
 	};		
 		
 	B_GiveInvItems (other,self,ItWr_Astronomy_Mis,1);
@@ -520,7 +520,7 @@ FUNC VOID DIA_Hyglas_HaveBook_Info()
 	B_GivePlayerXP (XP_HyglasBringBook);
 	
 	
-	AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_03"); //Теперь ты можешь удалиться. А я должен уединиться и заняться ее изучением.
+	AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_03"); //РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ СѓРґР°Р»РёС‚СЊСЃСЏ. Рђ СЏ РґРѕР»Р¶РµРЅ СѓРµРґРёРЅРёС‚СЊСЃСЏ Рё Р·Р°РЅСЏС‚СЊСЃСЏ РµРµ РёР·СѓС‡РµРЅРёРµРј.
 	
 };
 
@@ -564,7 +564,7 @@ INSTANCE DIA_Hyglas_Kap4_PERM   (C_INFO)
 	condition   = DIA_Hyglas_Kap4_PERM_Condition;
 	information = DIA_Hyglas_Kap4_PERM_Info;
 	permanent   = TRUE;
-	description = "Ничего пока не нашел?";
+	description = "РќРёС‡РµРіРѕ РїРѕРєР° РЅРµ РЅР°С€РµР»?";
 };
 FUNC INT DIA_Hyglas_Kap4_PERM_Condition()
 {
@@ -575,24 +575,24 @@ FUNC INT DIA_Hyglas_Kap4_PERM_Condition()
 };
 FUNC VOID DIA_Hyglas_Kap4_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_00"); //Ничего пока не нашел?
+	AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_00"); //РќРёС‡РµРіРѕ РїРѕРєР° РЅРµ РЅР°С€РµР»?
 	
 	if (Mis_HyglasBringBook == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_01"); //Ну, я не совсем уверен, но текущее расположение звезд, похоже, сулит многие опасности.
-		AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_02"); //Какого рода опасности?
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_03"); //Ну, материя между мирами, похоже, очень слаба. Нужна только небольшая часть силы, которая потребовалась бы в обычное время, чтобы прорвать брешь в этой материи.
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_04"); //Демоны могут использовать эти порталы, чтобы войти в наш мир, не встретив сопротивления.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_01"); //РќСѓ, СЏ РЅРµ СЃРѕРІСЃРµРј СѓРІРµСЂРµРЅ, РЅРѕ С‚РµРєСѓС‰РµРµ СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ Р·РІРµР·Рґ, РїРѕС…РѕР¶Рµ, СЃСѓР»РёС‚ РјРЅРѕРіРёРµ РѕРїР°СЃРЅРѕСЃС‚Рё.
+		AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_02"); //РљР°РєРѕРіРѕ СЂРѕРґР° РѕРїР°СЃРЅРѕСЃС‚Рё?
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_03"); //РќСѓ, РјР°С‚РµСЂРёСЏ РјРµР¶РґСѓ РјРёСЂР°РјРё, РїРѕС…РѕР¶Рµ, РѕС‡РµРЅСЊ СЃР»Р°Р±Р°. РќСѓР¶РЅР° С‚РѕР»СЊРєРѕ РЅРµР±РѕР»СЊС€Р°СЏ С‡Р°СЃС‚СЊ СЃРёР»С‹, РєРѕС‚РѕСЂР°СЏ РїРѕС‚СЂРµР±РѕРІР°Р»Р°СЃСЊ Р±С‹ РІ РѕР±С‹С‡РЅРѕРµ РІСЂРµРјСЏ, С‡С‚РѕР±С‹ РїСЂРѕСЂРІР°С‚СЊ Р±СЂРµС€СЊ РІ СЌС‚РѕР№ РјР°С‚РµСЂРёРё.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_04"); //Р”РµРјРѕРЅС‹ РјРѕРіСѓС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЌС‚Рё РїРѕСЂС‚Р°Р»С‹, С‡С‚РѕР±С‹ РІРѕР№С‚Рё РІ РЅР°С€ РјРёСЂ, РЅРµ РІСЃС‚СЂРµС‚РёРІ СЃРѕРїСЂРѕС‚РёРІР»РµРЅРёСЏ.
 		
 		Hyglas_SendsToKarras = TRUE;
 	}
 	else if (Mis_HyglasBringBook == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_05"); //Нет, я все еще жду эту книгу.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_05"); //РќРµС‚, СЏ РІСЃРµ РµС‰Рµ Р¶РґСѓ СЌС‚Сѓ РєРЅРёРіСѓ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_06"); //Я говорил тебе, что я все равно продолжаю свои исследования, но на них, конечно же, потребуется больше времени, если у меня не будет необходимых материалов.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_06"); //РЇ РіРѕРІРѕСЂРёР» С‚РµР±Рµ, С‡С‚Рѕ СЏ РІСЃРµ СЂР°РІРЅРѕ РїСЂРѕРґРѕР»Р¶Р°СЋ СЃРІРѕРё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ, РЅРѕ РЅР° РЅРёС…, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ Р±РѕР»СЊС€Рµ РІСЂРµРјРµРЅРё, РµСЃР»Рё Сѓ РјРµРЅСЏ РЅРµ Р±СѓРґРµС‚ РЅРµРѕР±С…РѕРґРёРјС‹С… РјР°С‚РµСЂРёР°Р»РѕРІ.
 	};
 	
 };

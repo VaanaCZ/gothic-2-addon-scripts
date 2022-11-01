@@ -69,7 +69,7 @@ INSTANCE DIA_Addon_Scatty_Hi   (C_INFO)
 	condition   = DIA_Addon_Scatty_Hi_Condition;
 	information = DIA_Addon_Scatty_Hi_Info;
 	permanent   = FALSE;
-	description = "Как торговля?";
+	description = "РљР°Рє С‚РѕСЂРіРѕРІР»СЏ?";
 };
 FUNC INT DIA_Addon_Scatty_Hi_Condition()
 {	
@@ -77,13 +77,13 @@ FUNC INT DIA_Addon_Scatty_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Как идут дела?
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_01");//С тех пор как гробница была открыта, покупателей не так много.
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Ворону больше не нужны рабы, поэтому они теперь добывают золото. По приказу Бладвина.
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//Рудокопы не слишком усердствуют. (бормочет) А рудокопам, которые не усердствуют, не так много и нужно.
+	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_01");//РЎ С‚РµС… РїРѕСЂ РєР°Рє РіСЂРѕР±РЅРёС†Р° Р±С‹Р»Р° РѕС‚РєСЂС‹С‚Р°, РїРѕРєСѓРїР°С‚РµР»РµР№ РЅРµ С‚Р°Рє РјРЅРѕРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Р’РѕСЂРѕРЅСѓ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РЅС‹ СЂР°Р±С‹, РїРѕСЌС‚РѕРјСѓ РѕРЅРё С‚РµРїРµСЂСЊ РґРѕР±С‹РІР°СЋС‚ Р·РѕР»РѕС‚Рѕ. РџРѕ РїСЂРёРєР°Р·Сѓ Р‘Р»Р°РґРІРёРЅР°.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//Р СѓРґРѕРєРѕРїС‹ РЅРµ СЃР»РёС€РєРѕРј СѓСЃРµСЂРґСЃС‚РІСѓСЋС‚. (Р±РѕСЂРјРѕС‡РµС‚) Рђ СЂСѓРґРѕРєРѕРїР°Рј, РєРѕС‚РѕСЂС‹Рµ РЅРµ СѓСЃРµСЂРґСЃС‚РІСѓСЋС‚, РЅРµ С‚Р°Рє РјРЅРѕРіРѕ Рё РЅСѓР¶РЅРѕ.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Скатти продает различные товары.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"РЎРєР°С‚С‚Рё РїСЂРѕРґР°РµС‚ СЂР°Р·Р»РёС‡РЅС‹Рµ С‚РѕРІР°СЂС‹.");
 };
 /*
 	Ich bin hier auch sowas wie der Proviantmeister. Wenn du was brauchst, kannst du mit mir handeln. 
@@ -99,7 +99,7 @@ INSTANCE DIA_Addon_Scatty_last   (C_INFO)
 	condition   = DIA_Addon_Scatty_last_Condition;
 	information = DIA_Addon_Scatty_last_Info;
 	permanent   = FALSE;
-	description = "Бладвин? Он сейчас командует?";
+	description = "Р‘Р»Р°РґРІРёРЅ? РћРЅ СЃРµР№С‡Р°СЃ РєРѕРјР°РЅРґСѓРµС‚?";
 };
 FUNC INT DIA_Addon_Scatty_last_Condition()
 {	
@@ -111,12 +111,12 @@ FUNC INT DIA_Addon_Scatty_last_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_last_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_last_15_00");//Бладвин? Он сейчас командует?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Он старший по шахте. Но сам он почти никогда не спускается. Большинство времени он проводит в храме с Вороном.
-	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//'Почти никогда' - это как часто, если быть точным?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//Последний раз я видел его, когда он выходил из гробницы...
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//(быстро) ...Хотя нет, подожди! Последний раз был, когда он посылал рабов добывать золото.
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//В отличие от Ворона, его ОЧЕНЬ интересует золото.
+	AI_Output (other, self, "DIA_Addon_Scatty_last_15_00");//Р‘Р»Р°РґРІРёРЅ? РћРЅ СЃРµР№С‡Р°СЃ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//РћРЅ СЃС‚Р°СЂС€РёР№ РїРѕ С€Р°С…С‚Рµ. РќРѕ СЃР°Рј РѕРЅ РїРѕС‡С‚Рё РЅРёРєРѕРіРґР° РЅРµ СЃРїСѓСЃРєР°РµС‚СЃСЏ. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РІСЂРµРјРµРЅРё РѕРЅ РїСЂРѕРІРѕРґРёС‚ РІ С…СЂР°РјРµ СЃ Р’РѕСЂРѕРЅРѕРј.
+	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//'РџРѕС‡С‚Рё РЅРёРєРѕРіРґР°' - СЌС‚Рѕ РєР°Рє С‡Р°СЃС‚Рѕ, РµСЃР»Рё Р±С‹С‚СЊ С‚РѕС‡РЅС‹Рј?
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//РџРѕСЃР»РµРґРЅРёР№ СЂР°Р· СЏ РІРёРґРµР» РµРіРѕ, РєРѕРіРґР° РѕРЅ РІС‹С…РѕРґРёР» РёР· РіСЂРѕР±РЅРёС†С‹...
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//(Р±С‹СЃС‚СЂРѕ) ...РҐРѕС‚СЏ РЅРµС‚, РїРѕРґРѕР¶РґРё! РџРѕСЃР»РµРґРЅРёР№ СЂР°Р· Р±С‹Р», РєРѕРіРґР° РѕРЅ РїРѕСЃС‹Р»Р°Р» СЂР°Р±РѕРІ РґРѕР±С‹РІР°С‚СЊ Р·РѕР»РѕС‚Рѕ.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//Р’ РѕС‚Р»РёС‡РёРµ РѕС‚ Р’РѕСЂРѕРЅР°, РµРіРѕ РћР§Р•РќР¬ РёРЅС‚РµСЂРµСЃСѓРµС‚ Р·РѕР»РѕС‚Рѕ.
 };
 //---------------------------------------------------------------------
 //	Info Gruft
@@ -128,7 +128,7 @@ INSTANCE DIA_Addon_Scatty_Gruft   (C_INFO)
 	condition   = DIA_Addon_Scatty_Gruft_Condition;
 	information = DIA_Addon_Scatty_Gruft_Info;
 	permanent   = FALSE;
-	description = "А что это за гробница?";
+	description = "Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° РіСЂРѕР±РЅРёС†Р°?";
 };
 FUNC INT DIA_Addon_Scatty_Gruft_Condition()
 {	
@@ -139,12 +139,12 @@ FUNC INT DIA_Addon_Scatty_Gruft_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Gruft_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//А что это за гробница?
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//Проклятая, роковая гробница! Ее хранители убили множество народу!
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//Хранители? Ты имеешь в виде таких каменных существ? Плоских и с круглой головой?
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//В точности! Они выходят из глубин камня целыми дюжинами.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//Я с самого начала знал, что раскапывать гробницу - плохая идея.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//Но Ворон был просто одержим идеей копать здесь. А когда гробницу все-таки раскопали, он пошел туда со своими охранниками.
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° РіСЂРѕР±РЅРёС†Р°?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//РџСЂРѕРєР»СЏС‚Р°СЏ, СЂРѕРєРѕРІР°СЏ РіСЂРѕР±РЅРёС†Р°! Р•Рµ С…СЂР°РЅРёС‚РµР»Рё СѓР±РёР»Рё РјРЅРѕР¶РµСЃС‚РІРѕ РЅР°СЂРѕРґСѓ!
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//РҐСЂР°РЅРёС‚РµР»Рё? РўС‹ РёРјРµРµС€СЊ РІ РІРёРґРµ С‚Р°РєРёС… РєР°РјРµРЅРЅС‹С… СЃСѓС‰РµСЃС‚РІ? РџР»РѕСЃРєРёС… Рё СЃ РєСЂСѓРіР»РѕР№ РіРѕР»РѕРІРѕР№?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//Р’ С‚РѕС‡РЅРѕСЃС‚Рё! РћРЅРё РІС‹С…РѕРґСЏС‚ РёР· РіР»СѓР±РёРЅ РєР°РјРЅСЏ С†РµР»С‹РјРё РґСЋР¶РёРЅР°РјРё.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//РЇ СЃ СЃР°РјРѕРіРѕ РЅР°С‡Р°Р»Р° Р·РЅР°Р», С‡С‚Рѕ СЂР°СЃРєР°РїС‹РІР°С‚СЊ РіСЂРѕР±РЅРёС†Сѓ - РїР»РѕС…Р°СЏ РёРґРµСЏ.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//РќРѕ Р’РѕСЂРѕРЅ Р±С‹Р» РїСЂРѕСЃС‚Рѕ РѕРґРµСЂР¶РёРј РёРґРµРµР№ РєРѕРїР°С‚СЊ Р·РґРµСЃСЊ. Рђ РєРѕРіРґР° РіСЂРѕР±РЅРёС†Сѓ РІСЃРµ-С‚Р°РєРё СЂР°СЃРєРѕРїР°Р»Рё, РѕРЅ РїРѕС€РµР» С‚СѓРґР° СЃРѕ СЃРІРѕРёРјРё РѕС…СЂР°РЅРЅРёРєР°РјРё.
 };
 //---------------------------------------------------------------------
 //	Info GruftAgain
@@ -156,7 +156,7 @@ INSTANCE DIA_Addon_Scatty_GruftAgain   (C_INFO)
 	condition   = DIA_Addon_Scatty_GruftAgain_Condition;
 	information = DIA_Addon_Scatty_GruftAgain_Info;
 	permanent   = FALSE;
-	description = "Что Ворону нужно в гробнице?";
+	description = "Р§С‚Рѕ Р’РѕСЂРѕРЅСѓ РЅСѓР¶РЅРѕ РІ РіСЂРѕР±РЅРёС†Рµ?";
 };
 FUNC INT DIA_Addon_Scatty_GruftAgain_Condition()
 {	
@@ -167,17 +167,17 @@ FUNC INT DIA_Addon_Scatty_GruftAgain_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_GruftAgain_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Что Ворону нужно в гробнице?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//(резко останавливается) Хм... ты очень любопытен. Ты напоминаешь мне одного парня, что я когда-то знал.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//Он был таким же любопытным. И в какой-то момент это стало причиной его гибели.
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Давай-ка к делу. Что случилось в гробнице?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//Ну... Э-э... Что-то у меня горло пересохло...
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//Эй, Скатти, НЕ СЕЙЧАС. Это важно, так что Ворону там нужно?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//Ладно. (глубокий вдох) Он... он звал... призывал кого-то. Он произносил слова на чужом языке.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Яркий свет вырвался из гробницы, и я услышал вопль, который пробрал меня до костей - демонический вопль.
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_08");//А потом?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//Это все, что я знаю. После этого Бладвин вышел из гробницы и сказал, чтобы я проваливал. Что я и сделал.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Через короткое время Ворон со своими людьми вернулся в храм. И с тех пор никто не видел Ворона.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Р§С‚Рѕ Р’РѕСЂРѕРЅСѓ РЅСѓР¶РЅРѕ РІ РіСЂРѕР±РЅРёС†Рµ?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//(СЂРµР·РєРѕ РѕСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ) РҐРј... С‚С‹ РѕС‡РµРЅСЊ Р»СЋР±РѕРїС‹С‚РµРЅ. РўС‹ РЅР°РїРѕРјРёРЅР°РµС€СЊ РјРЅРµ РѕРґРЅРѕРіРѕ РїР°СЂРЅСЏ, С‡С‚Рѕ СЏ РєРѕРіРґР°-С‚Рѕ Р·РЅР°Р».
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//РћРЅ Р±С‹Р» С‚Р°РєРёРј Р¶Рµ Р»СЋР±РѕРїС‹С‚РЅС‹Рј. Р РІ РєР°РєРѕР№-С‚Рѕ РјРѕРјРµРЅС‚ СЌС‚Рѕ СЃС‚Р°Р»Рѕ РїСЂРёС‡РёРЅРѕР№ РµРіРѕ РіРёР±РµР»Рё.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Р”Р°РІР°Р№-РєР° Рє РґРµР»Сѓ. Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ РІ РіСЂРѕР±РЅРёС†Рµ?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//РќСѓ... Р­-СЌ... Р§С‚Рѕ-С‚Рѕ Сѓ РјРµРЅСЏ РіРѕСЂР»Рѕ РїРµСЂРµСЃРѕС…Р»Рѕ...
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//Р­Р№, РЎРєР°С‚С‚Рё, РќР• РЎР•Р™Р§РђРЎ. Р­С‚Рѕ РІР°Р¶РЅРѕ, С‚Р°Рє С‡С‚Рѕ Р’РѕСЂРѕРЅСѓ С‚Р°Рј РЅСѓР¶РЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//Р›Р°РґРЅРѕ. (РіР»СѓР±РѕРєРёР№ РІРґРѕС…) РћРЅ... РѕРЅ Р·РІР°Р»... РїСЂРёР·С‹РІР°Р» РєРѕРіРѕ-С‚Рѕ. РћРЅ РїСЂРѕРёР·РЅРѕСЃРёР» СЃР»РѕРІР° РЅР° С‡СѓР¶РѕРј СЏР·С‹РєРµ.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//РЇСЂРєРёР№ СЃРІРµС‚ РІС‹СЂРІР°Р»СЃСЏ РёР· РіСЂРѕР±РЅРёС†С‹, Рё СЏ СѓСЃР»С‹С€Р°Р» РІРѕРїР»СЊ, РєРѕС‚РѕСЂС‹Р№ РїСЂРѕР±СЂР°Р» РјРµРЅСЏ РґРѕ РєРѕСЃС‚РµР№ - РґРµРјРѕРЅРёС‡РµСЃРєРёР№ РІРѕРїР»СЊ.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_08");//Рђ РїРѕС‚РѕРј?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ. РџРѕСЃР»Рµ СЌС‚РѕРіРѕ Р‘Р»Р°РґРІРёРЅ РІС‹С€РµР» РёР· РіСЂРѕР±РЅРёС†С‹ Рё СЃРєР°Р·Р°Р», С‡С‚РѕР±С‹ СЏ РїСЂРѕРІР°Р»РёРІР°Р». Р§С‚Рѕ СЏ Рё СЃРґРµР»Р°Р».
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Р§РµСЂРµР· РєРѕСЂРѕС‚РєРѕРµ РІСЂРµРјСЏ Р’РѕСЂРѕРЅ СЃРѕ СЃРІРѕРёРјРё Р»СЋРґСЊРјРё РІРµСЂРЅСѓР»СЃСЏ РІ С…СЂР°Рј. Р СЃ С‚РµС… РїРѕСЂ РЅРёРєС‚Рѕ РЅРµ РІРёРґРµР» Р’РѕСЂРѕРЅР°.
 };
 //---------------------------------------------------------------------
 //	Info Trinken
@@ -189,7 +189,7 @@ INSTANCE DIA_Addon_Scatty_Trinken   (C_INFO)
 	condition   = DIA_Addon_Scatty_Trinken_Condition;
 	information = DIA_Addon_Scatty_Trinken_Info;
 	permanent   = FALSE;
-	description = "Хочешь выпить?";
+	description = "РҐРѕС‡РµС€СЊ РІС‹РїРёС‚СЊ?";
 };
 FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 {	
@@ -200,9 +200,9 @@ FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Trinken_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Хочешь выпить?
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Хорошо бы... пива. Но вряд ли в лагере есть пиво.
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//Но, может быть, у Люсии есть бутылочка...
+	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//РҐРѕС‡РµС€СЊ РІС‹РїРёС‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//РҐРѕСЂРѕС€Рѕ Р±С‹... РїРёРІР°. РќРѕ РІСЂСЏРґ Р»Рё РІ Р»Р°РіРµСЂРµ РµСЃС‚СЊ РїРёРІРѕ.
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//РќРѕ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, Сѓ Р›СЋСЃРёРё РµСЃС‚СЊ Р±СѓС‚С‹Р»РѕС‡РєР°...
 };
 //---------------------------------------------------------------------
 //	Info Bier geben
@@ -214,7 +214,7 @@ INSTANCE DIA_Addon_Scatty_Bier   (C_INFO)
 	condition   = DIA_Addon_Scatty_Bier_Condition;
 	information = DIA_Addon_Scatty_Bier_Info;
 	permanent   = FALSE;
-	description = "За твое здоровье. (дать пиво)";
+	description = "Р—Р° С‚РІРѕРµ Р·РґРѕСЂРѕРІСЊРµ. (РґР°С‚СЊ РїРёРІРѕ)";
 };
 FUNC INT DIA_Addon_Scatty_Bier_Condition()
 {	
@@ -226,13 +226,13 @@ FUNC INT DIA_Addon_Scatty_Bier_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Bier_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Bier_15_00");//Вот, пожалуйста.
+	AI_Output (other, self, "DIA_Addon_Scatty_Bier_15_00");//Р’РѕС‚, РїРѕР¶Р°Р»СѓР№СЃС‚Р°.
 	
 	if B_GiveInvItems (other, self, ItFo_Beer, 1)
 	{
 		AI_UseItem (self, ItFo_Beer);
 	};
-	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//О, спасибо, это вкусно. Спасибо. Ты - мой герой.
+	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//Рћ, СЃРїР°СЃРёР±Рѕ, СЌС‚Рѕ РІРєСѓСЃРЅРѕ. РЎРїР°СЃРёР±Рѕ. РўС‹ - РјРѕР№ РіРµСЂРѕР№.
 	
 	B_GivePlayerXP (XP_Ambient* 5);
 };
@@ -256,9 +256,9 @@ FUNC INT DIA_Addon_Scatty_Gold_Condition()
 FUNC VOID DIA_Addon_Scatty_Gold_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Возьми кирку в руки и рубани по золотой жиле - каждый может это сделать.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//Но, если так сделать, разлетится много самородков. Поэтому копать должны люди, которые понимают в этом деле.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//Я смогу рассказать тебе больше, когда у тебя будет больше опыта.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Р’РѕР·СЊРјРё РєРёСЂРєСѓ РІ СЂСѓРєРё Рё СЂСѓР±Р°РЅРё РїРѕ Р·РѕР»РѕС‚РѕР№ Р¶РёР»Рµ - РєР°Р¶РґС‹Р№ РјРѕР¶РµС‚ СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//РќРѕ, РµСЃР»Рё С‚Р°Рє СЃРґРµР»Р°С‚СЊ, СЂР°Р·Р»РµС‚РёС‚СЃСЏ РјРЅРѕРіРѕ СЃР°РјРѕСЂРѕРґРєРѕРІ. РџРѕСЌС‚РѕРјСѓ РєРѕРїР°С‚СЊ РґРѕР»Р¶РЅС‹ Р»СЋРґРё, РєРѕС‚РѕСЂС‹Рµ РїРѕРЅРёРјР°СЋС‚ РІ СЌС‚РѕРј РґРµР»Рµ.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//РЇ СЃРјРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ Р±РѕР»СЊС€Рµ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
 
 	B_Upgrade_Hero_HackChance(5);
 };
@@ -274,7 +274,7 @@ INSTANCE DIA_Addon_Scatty_teach   (C_INFO)
 	condition   = DIA_Addon_Scatty_teach_Condition;
 	information = DIA_Addon_Scatty_teach_Info;
 	permanent   = TRUE;
-	description = "Научиться добывать золото (2 LP/10 процентов)";
+	description = "РќР°СѓС‡РёС‚СЊСЃСЏ РґРѕР±С‹РІР°С‚СЊ Р·РѕР»РѕС‚Рѕ (2 LP/10 РїСЂРѕС†РµРЅС‚РѕРІ)";
 };
 FUNC INT DIA_Addon_Scatty_teach_Condition()
 {	
@@ -286,14 +286,14 @@ FUNC INT DIA_Addon_Scatty_teach_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_teach_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//Расскажи мне еще что-нибудь о том, как копать золото.
+	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ С‚РѕРј, РєР°Рє РєРѕРїР°С‚СЊ Р·РѕР»РѕС‚Рѕ.
 	
 	if (other.lp >= 1)  
 	{
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//В первую очередь ты должен знать, что золото - это не руда. Оно мягкое, как масло. Если ты ударишь слишком сильно, все разлетится.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//У каждого рудокопа есть свои приемы, позволяющие ему отделить самородки от породы.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//В конечном итоге, эти приемы и отличают просто рудокопа от хорошего рудокопа.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//Кроме этого, повторенье - мать ученья. Только работая ты станешь хорошим рудокопом.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Р’ РїРµСЂРІСѓСЋ РѕС‡РµСЂРµРґСЊ С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡С‚Рѕ Р·РѕР»РѕС‚Рѕ - СЌС‚Рѕ РЅРµ СЂСѓРґР°. РћРЅРѕ РјСЏРіРєРѕРµ, РєР°Рє РјР°СЃР»Рѕ. Р•СЃР»Рё С‚С‹ СѓРґР°СЂРёС€СЊ СЃР»РёС€РєРѕРј СЃРёР»СЊРЅРѕ, РІСЃРµ СЂР°Р·Р»РµС‚РёС‚СЃСЏ.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//РЈ РєР°Р¶РґРѕРіРѕ СЂСѓРґРѕРєРѕРїР° РµСЃС‚СЊ СЃРІРѕРё РїСЂРёРµРјС‹, РїРѕР·РІРѕР»СЏСЋС‰РёРµ РµРјСѓ РѕС‚РґРµР»РёС‚СЊ СЃР°РјРѕСЂРѕРґРєРё РѕС‚ РїРѕСЂРѕРґС‹.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//Р’ РєРѕРЅРµС‡РЅРѕРј РёС‚РѕРіРµ, СЌС‚Рё РїСЂРёРµРјС‹ Рё РѕС‚Р»РёС‡Р°СЋС‚ РїСЂРѕСЃС‚Рѕ СЂСѓРґРѕРєРѕРїР° РѕС‚ С…РѕСЂРѕС€РµРіРѕ СЂСѓРґРѕРєРѕРїР°.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//РљСЂРѕРјРµ СЌС‚РѕРіРѕ, РїРѕРІС‚РѕСЂРµРЅСЊРµ - РјР°С‚СЊ СѓС‡РµРЅСЊСЏ. РўРѕР»СЊРєРѕ СЂР°Р±РѕС‚Р°СЏ С‚С‹ СЃС‚Р°РЅРµС€СЊ С…РѕСЂРѕС€РёРј СЂСѓРґРѕРєРѕРїРѕРј.
 		
 		other.lp = (other.lp -1);
 		B_Upgrade_Hero_HackChance(10);
@@ -315,7 +315,7 @@ INSTANCE DIA_Addon_Scatty_tot   (C_INFO)
 	condition   = DIA_Addon_Scatty_tot_Condition;
 	information = DIA_Addon_Scatty_tot_Info;
 	permanent   = FALSE;
-	description = "Бладвин мертв.";
+	description = "Р‘Р»Р°РґРІРёРЅ РјРµСЂС‚РІ.";
 };
 FUNC INT DIA_Addon_Scatty_tot_Condition()
 {	
@@ -326,8 +326,8 @@ FUNC INT DIA_Addon_Scatty_tot_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_tot_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_tot_15_00");//Бладвин мертв.
-	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Хм, есть не так много людей, чьей смерти я бы желал... но мертвый Бладвин лучше живого.
+	AI_Output (other, self, "DIA_Addon_Scatty_tot_15_00");//Р‘Р»Р°РґРІРёРЅ РјРµСЂС‚РІ.
+	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//РҐРј, РµСЃС‚СЊ РЅРµ С‚Р°Рє РјРЅРѕРіРѕ Р»СЋРґРµР№, С‡СЊРµР№ СЃРјРµСЂС‚Рё СЏ Р±С‹ Р¶РµР»Р°Р»... РЅРѕ РјРµСЂС‚РІС‹Р№ Р‘Р»Р°РґРІРёРЅ Р»СѓС‡С€Рµ Р¶РёРІРѕРіРѕ.
 };
 //---------------------------------------------------------------------
 //	Info trade

@@ -47,12 +47,12 @@ func void DIA_Addon_Cord_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Cord_MeetingIsRunning_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_00"); //Добро пожаловать в Кольцо Воды, брат.
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РљРѕР»СЊС†Рѕ Р’РѕРґС‹, Р±СЂР°С‚.
 		DIA_Addon_Cord_MeetingIsRunning_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_01"); //Ты должен поговорить с Ватрасом...
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_01"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р’Р°С‚СЂР°СЃРѕРј...
 	};
 	
 	AI_StopProcessInfos (self);
@@ -84,15 +84,15 @@ FUNC INT DIA_Cord_Hallo_Condition()
 
 FUNC VOID DIA_Cord_Hallo_Info()
 {
-	AI_Output (self ,other, "DIA_Cord_Hallo_14_00"); //Если у тебя проблемы с волками или полевыми хищниками, поговори с одним из наемников помоложе.
-	AI_Output (self ,other, "DIA_Cord_Hallo_14_01"); //А ко мне ты можешь обратиться, когда появятся паладины.
+	AI_Output (self ,other, "DIA_Cord_Hallo_14_00"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РїСЂРѕР±Р»РµРјС‹ СЃ РІРѕР»РєР°РјРё РёР»Рё РїРѕР»РµРІС‹РјРё С…РёС‰РЅРёРєР°РјРё, РїРѕРіРѕРІРѕСЂРё СЃ РѕРґРЅРёРј РёР· РЅР°РµРјРЅРёРєРѕРІ РїРѕРјРѕР»РѕР¶Рµ.
+	AI_Output (self ,other, "DIA_Cord_Hallo_14_01"); //Рђ РєРѕ РјРЅРµ С‚С‹ РјРѕР¶РµС€СЊ РѕР±СЂР°С‚РёС‚СЊСЃСЏ, РєРѕРіРґР° РїРѕСЏРІСЏС‚СЃСЏ РїР°Р»Р°РґРёРЅС‹.
 	
 	if (SC_IsRanger == FALSE)
 	{	
-		AI_Output (other, self, "DIA_Cord_Hallo_15_02"); //Что?
-		AI_Output (self ,other, "DIA_Cord_Hallo_14_03"); //Когда вы, крестьяне, обращаетесь ко мне, вы всегда просите убить ни в чем не повинных зверей.
-		AI_Output (other, self, "DIA_Cord_Hallo_15_04"); //Я не крестьянин.
-		AI_Output (self ,other, "DIA_Cord_Hallo_14_05"); //Ох? И чего же тогда ты хочешь?
+		AI_Output (other, self, "DIA_Cord_Hallo_15_02"); //Р§С‚Рѕ?
+		AI_Output (self ,other, "DIA_Cord_Hallo_14_03"); //РљРѕРіРґР° РІС‹, РєСЂРµСЃС‚СЊСЏРЅРµ, РѕР±СЂР°С‰Р°РµС‚РµСЃСЊ РєРѕ РјРЅРµ, РІС‹ РІСЃРµРіРґР° РїСЂРѕСЃРёС‚Рµ СѓР±РёС‚СЊ РЅРё РІ С‡РµРј РЅРµ РїРѕРІРёРЅРЅС‹С… Р·РІРµСЂРµР№.
+		AI_Output (other, self, "DIA_Cord_Hallo_15_04"); //РЇ РЅРµ РєСЂРµСЃС‚СЊСЏРЅРёРЅ.
+		AI_Output (self ,other, "DIA_Cord_Hallo_14_05"); //РћС…? Р С‡РµРіРѕ Р¶Рµ С‚РѕРіРґР° С‚С‹ С…РѕС‡РµС€СЊ?
 	};
 };
 
@@ -108,7 +108,7 @@ INSTANCE DIA_Cord_WannaJoin   (C_INFO)
 	condition   = DIA_Cord_WannaJoin_Condition;
 	information = DIA_Cord_WannaJoin_Info;
 	permanent   = TRUE;
-	description = "Я хочу стать наемником!";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј!";
 };
 
 FUNC INT DIA_Cord_WannaJoin_Condition()
@@ -122,62 +122,62 @@ FUNC INT DIA_Cord_WannaJoin_Condition()
 
 FUNC VOID B_Cord_BeBetter ()
 {
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_14"); //Пока ты едва умеешь обращаться с оружием, и тебе здесь не место!
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_14"); //РџРѕРєР° С‚С‹ РµРґРІР° СѓРјРµРµС€СЊ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ РѕСЂСѓР¶РёРµРј, Рё С‚РµР±Рµ Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
 };
 
 FUNC VOID DIA_Cord_WannaJoin_Info()
 {
-	AI_Output (other, self, "DIA_Cord_WannaJoin_15_00"); //Я хочу стать наемником!
+	AI_Output (other, self, "DIA_Cord_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј!
 	if (Cord_SchonmalGefragt == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_01"); //Ты больше похож на того, кто был рожден работать на поле, парень.
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_02"); //Ты умеешь обращаться с оружием?
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_01"); //РўС‹ Р±РѕР»СЊС€Рµ РїРѕС…РѕР¶ РЅР° С‚РѕРіРѕ, РєС‚Рѕ Р±С‹Р» СЂРѕР¶РґРµРЅ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РїРѕР»Рµ, РїР°СЂРµРЅСЊ.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_02"); //РўС‹ СѓРјРµРµС€СЊ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ РѕСЂСѓР¶РёРµРј?
 		Cord_SchonmalGefragt = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_03"); //Ты повысил свои навыки?
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_03"); //РўС‹ РїРѕРІС‹СЃРёР» СЃРІРѕРё РЅР°РІС‹РєРё?
 	};
 	
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_04"); //Итак, как насчет одноручного оружия?
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_04"); //РС‚Р°Рє, РєР°Рє РЅР°СЃС‡РµС‚ РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ?
 	if (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_05"); //Я не так уж плох в этом.
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_05"); //РЇ РЅРµ С‚Р°Рє СѓР¶ РїР»РѕС… РІ СЌС‚РѕРј.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_06"); //Что-о-ожж...
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_06"); //Р§С‚Рѕ-Рѕ-РѕР¶Р¶...
 	};
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_07"); //А что насчет двуручного оружия?
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_07"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ?
 	if (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_08"); //Я умею обращаться с ним.
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_08"); //РЇ СѓРјРµСЋ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ РЅРёРј.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_09"); //И скоро я стану еще лучше!
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_09"); //Р СЃРєРѕСЂРѕ СЏ СЃС‚Р°РЅСѓ РµС‰Рµ Р»СѓС‡С€Рµ!
 	};
 	
 	if (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 	|| (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_10"); //Ну, по крайней мере, ты не зеленый новичок. Хорошо. Я проголосую за тебя.
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_11"); //Если тебе еще что-то нужно знать, ты можешь спросить у меня.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_10"); //РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‚С‹ РЅРµ Р·РµР»РµРЅС‹Р№ РЅРѕРІРёС‡РѕРє. РҐРѕСЂРѕС€Рѕ. РЇ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚РµР±СЏ.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_11"); //Р•СЃР»Рё С‚РµР±Рµ РµС‰Рµ С‡С‚Рѕ-С‚Рѕ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ, С‚С‹ РјРѕР¶РµС€СЊ СЃРїСЂРѕСЃРёС‚СЊ Сѓ РјРµРЅСЏ.
 		Cord_Approved = TRUE;
 		B_GivePlayerXP (XP_Cord_Approved);
-		B_LogEntry (TOPIC_SLDRespekt,"Голос Корда у меня в кармане.");
+		B_LogEntry (TOPIC_SLDRespekt,"Р“РѕР»РѕСЃ РљРѕСЂРґР° Сѓ РјРµРЅСЏ РІ РєР°СЂРјР°РЅРµ.");
 		Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTeacher,"Корд может обучить меня владению одноручным и двуручным оружием.");
+		B_LogEntry (Topic_SoldierTeacher,"РљРѕСЂРґ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РІР»Р°РґРµРЅРёСЋ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј Рё РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_12"); //Другими словами: ты зеленый новичок!
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_13"); //Мы наемники, должны быть уверены, что можем всецело положиться на наших товарищей. От этого зависит наша жизнь.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_12"); //Р”СЂСѓРіРёРјРё СЃР»РѕРІР°РјРё: С‚С‹ Р·РµР»РµРЅС‹Р№ РЅРѕРІРёС‡РѕРє!
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_13"); //РњС‹ РЅР°РµРјРЅРёРєРё, РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СѓРІРµСЂРµРЅС‹, С‡С‚Рѕ РјРѕР¶РµРј РІСЃРµС†РµР»Рѕ РїРѕР»РѕР¶РёС‚СЊСЃСЏ РЅР° РЅР°С€РёС… С‚РѕРІР°СЂРёС‰РµР№. РћС‚ СЌС‚РѕРіРѕ Р·Р°РІРёСЃРёС‚ РЅР°С€Р° Р¶РёР·РЅСЊ.
 		B_Cord_BeBetter ();
 		
 		Log_CreateTopic (TOPIC_CordProve,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_CordProve,LOG_RUNNING); 
-		B_LogEntry (TOPIC_CordProve,"Корд отдаст свой голос за меня, когда я научусь сражаться лучше."); 
+		B_LogEntry (TOPIC_CordProve,"РљРѕСЂРґ РѕС‚РґР°СЃС‚ СЃРІРѕР№ РіРѕР»РѕСЃ Р·Р° РјРµРЅСЏ, РєРѕРіРґР° СЏ РЅР°СѓС‡СѓСЃСЊ СЃСЂР°Р¶Р°С‚СЊСЃСЏ Р»СѓС‡С€Рµ."); 
 	};
 };
 
@@ -191,7 +191,7 @@ instance DIA_Addon_Cord_YouAreRanger		(C_INFO)
 	condition	 = 	DIA_Addon_Cord_YouAreRanger_Condition;
 	information	 = 	DIA_Addon_Cord_YouAreRanger_Info;
 
-	description	 = 	"Говорят, ты принадлежишь к Кольцу Воды?";
+	description	 = 	"Р“РѕРІРѕСЂСЏС‚, С‚С‹ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹?";
 };
 
 func int DIA_Addon_Cord_YouAreRanger_Condition ()
@@ -205,35 +205,35 @@ func int DIA_Addon_Cord_YouAreRanger_Condition ()
 
 func void DIA_Addon_Cord_YouAreRanger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_00"); //Говорят, ты принадлежишь к Кольцу Воды?
+	AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_00"); //Р“РѕРІРѕСЂСЏС‚, С‚С‹ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹?
 	
 	if (SC_IsRanger == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_01"); //Что за крыса не смогла удержать на замке свой болтливый рот?
+		AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_01"); //Р§С‚Рѕ Р·Р° РєСЂС‹СЃР° РЅРµ СЃРјРѕРіР»Р° СѓРґРµСЂР¶Р°С‚СЊ РЅР° Р·Р°РјРєРµ СЃРІРѕР№ Р±РѕР»С‚Р»РёРІС‹Р№ СЂРѕС‚?
 		
 		if (SC_KnowsCordAsRangerFromLee == TRUE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_02"); //Мне сказал Ли.
+			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_02"); //РњРЅРµ СЃРєР°Р·Р°Р» Р›Рё.
 		};
 	
 		if (SC_KnowsCordAsRangerFromLares == TRUE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_03"); //Ларес сказал, что ты поможешь мне, если я скажу, что он взял меня под свое крыло.
+			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_03"); //Р›Р°СЂРµСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ, РµСЃР»Рё СЏ СЃРєР°Р¶Сѓ, С‡С‚Рѕ РѕРЅ РІР·СЏР» РјРµРЅСЏ РїРѕРґ СЃРІРѕРµ РєСЂС‹Р»Рѕ.
 		};
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_04"); //(вздыхает) Похоже, что теперь мне придется возиться с тобой, так?
-	//AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_05"); //Was muss ich denn jetzt fьr dich machen, damit du die Schnauze hдlst?
-	AI_Output	(self, other, "DIA_Addon_Cord_Add_14_01"); //Ну хорошо, что тебе нужно?
-	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_06"); //И хорошо подумай над тем, что ты мне скажешь. Потому что, если мне не понравится то, что я услышу, я с тебя кожу сдеру.
+	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_04"); //(РІР·РґС‹С…Р°РµС‚) РџРѕС…РѕР¶Рµ, С‡С‚Рѕ С‚РµРїРµСЂСЊ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РІРѕР·РёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№, С‚Р°Рє?
+	//AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_05"); //Was muss ich denn jetzt fСЊr dich machen, damit du die Schnauze hРґlst?
+	AI_Output	(self, other, "DIA_Addon_Cord_Add_14_01"); //РќСѓ С…РѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_06"); //Р С…РѕСЂРѕС€Рѕ РїРѕРґСѓРјР°Р№ РЅР°Рґ С‚РµРј, С‡С‚Рѕ С‚С‹ РјРЅРµ СЃРєР°Р¶РµС€СЊ. РџРѕС‚РѕРјСѓ С‡С‚Рѕ, РµСЃР»Рё РјРЅРµ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ С‚Рѕ, С‡С‚Рѕ СЏ СѓСЃР»С‹С€Сѓ, СЏ СЃ С‚РµР±СЏ РєРѕР¶Сѓ СЃРґРµСЂСѓ.
 	
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
-	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "На самом деле, мне ничего не нужно. Я и сам справлюсь.", DIA_Addon_Cord_YouAreRanger_nix );
-	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Мне нужна твоя броня.", DIA_Addon_Cord_YouAreRanger_ruestung );
-	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Мне нужно твое оружие!", DIA_Addon_Cord_YouAreRanger_waffe );
+	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "РќР° СЃР°РјРѕРј РґРµР»Рµ, РјРЅРµ РЅРёС‡РµРіРѕ РЅРµ РЅСѓР¶РЅРѕ. РЇ Рё СЃР°Рј СЃРїСЂР°РІР»СЋСЃСЊ.", DIA_Addon_Cord_YouAreRanger_nix );
+	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "РњРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ Р±СЂРѕРЅСЏ.", DIA_Addon_Cord_YouAreRanger_ruestung );
+	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "РњРЅРµ РЅСѓР¶РЅРѕ С‚РІРѕРµ РѕСЂСѓР¶РёРµ!", DIA_Addon_Cord_YouAreRanger_waffe );
 	if (Cord_Approved == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Научи меня сражаться.", DIA_Addon_Cord_YouAreRanger_kampf );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "РќР°СѓС‡Рё РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ.", DIA_Addon_Cord_YouAreRanger_kampf );
 	};
 	if (hero.guild == GIL_NONE)
 	{
@@ -241,18 +241,18 @@ func void DIA_Addon_Cord_YouAreRanger_Info ()
 	};
 	if (hero.guild == GIL_NONE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Ты бы мог помочь мне стать наемником.", DIA_Addon_Cord_YouAreRanger_SLDAufnahme );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "РўС‹ Р±С‹ РјРѕРі РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј.", DIA_Addon_Cord_YouAreRanger_SLDAufnahme );
 	};
-	//Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Bezahl mich fьr mein Schweigen.", DIA_Addon_Cord_YouAreRanger_Gold );
+	//Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Bezahl mich fСЊr mein Schweigen.", DIA_Addon_Cord_YouAreRanger_Gold );
 };
 var int Cord_SC_Dreist;
 func void 	B_DIA_Addon_Cord_YouAreRanger_WARN ()
 {
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_WARN_14_00"); //(угрожающе) И горе тебе, если мне станет известно, что ты распускаешь язык. Предупреждаю первый и единственный раз, понятно?
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_WARN_14_00"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Р РіРѕСЂРµ С‚РµР±Рµ, РµСЃР»Рё РјРЅРµ СЃС‚Р°РЅРµС‚ РёР·РІРµСЃС‚РЅРѕ, С‡С‚Рѕ С‚С‹ СЂР°СЃРїСѓСЃРєР°РµС€СЊ СЏР·С‹Рє. РџСЂРµРґСѓРїСЂРµР¶РґР°СЋ РїРµСЂРІС‹Р№ Рё РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ СЂР°Р·, РїРѕРЅСЏС‚РЅРѕ?
 };
 func void 	B_DIA_Addon_Cord_YouAreRanger_FRESSE ()
 {
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_FRESSE_14_00"); //(в ярости) Ну хватит! На этот раз ты зашел слишком далеко. Я выбью из тебя дурь.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_FRESSE_14_00"); //(РІ СЏСЂРѕСЃС‚Рё) РќСѓ С…РІР°С‚РёС‚! РќР° СЌС‚РѕС‚ СЂР°Р· С‚С‹ Р·Р°С€РµР» СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ. РЇ РІС‹Р±СЊСЋ РёР· С‚РµР±СЏ РґСѓСЂСЊ.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 	Cord_RangerHelp_GetSLD = FALSE;
@@ -261,11 +261,11 @@ func void 	B_DIA_Addon_Cord_YouAreRanger_FRESSE ()
 };
 func void DIA_Addon_Cord_YouAreRanger_ruestung ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_ruestung_15_00"); //Мне нужна твоя броня.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_ruestung_15_00"); //РњРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ Р±СЂРѕРЅСЏ.
 
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_ruestung_14_01"); //Повтори это еще раз - и тебе придется собирать свои зубы с земли.
+		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_ruestung_14_01"); //РџРѕРІС‚РѕСЂРё СЌС‚Рѕ РµС‰Рµ СЂР°Р· - Рё С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ СЃРѕР±РёСЂР°С‚СЊ СЃРІРѕРё Р·СѓР±С‹ СЃ Р·РµРјР»Рё.
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -276,12 +276,12 @@ func void DIA_Addon_Cord_YouAreRanger_ruestung ()
 
 func void DIA_Addon_Cord_YouAreRanger_waffe ()
 {
-	AI_Output (other, self, "DIA_Addon_Cord_YouAreRanger_Add_15_00"); //Мне нужно твое оружие!
+	AI_Output (other, self, "DIA_Addon_Cord_YouAreRanger_Add_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ С‚РІРѕРµ РѕСЂСѓР¶РёРµ!
 
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Cord_Add_14_03"); //(угрожающе) Неужели?
-		AI_Output (self, other, "DIA_Addon_Cord_Add_14_02"); //(мрачно) Тогда попробуй его забрать!
+		AI_Output (self, other, "DIA_Addon_Cord_Add_14_03"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РќРµСѓР¶РµР»Рё?
+		AI_Output (self, other, "DIA_Addon_Cord_Add_14_02"); //(РјСЂР°С‡РЅРѕ) РўРѕРіРґР° РїРѕРїСЂРѕР±СѓР№ РµРіРѕ Р·Р°Р±СЂР°С‚СЊ!
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -292,11 +292,11 @@ func void DIA_Addon_Cord_YouAreRanger_waffe ()
 
 func void DIA_Addon_Cord_YouAreRanger_weg ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_weg_15_00"); //Уходи отсюда. Я хочу занять твое место на этой ферме.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_weg_15_00"); //РЈС…РѕРґРё РѕС‚СЃСЋРґР°. РЇ С…РѕС‡Сѓ Р·Р°РЅСЏС‚СЊ С‚РІРѕРµ РјРµСЃС‚Рѕ РЅР° СЌС‚РѕР№ С„РµСЂРјРµ.
 
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_weg_14_01"); //Не шути со мной, малыш, иначе я переломаю тебе все кости.
+		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_weg_14_01"); //РќРµ С€СѓС‚Рё СЃРѕ РјРЅРѕР№, РјР°Р»С‹С€, РёРЅР°С‡Рµ СЏ РїРµСЂРµР»РѕРјР°СЋ С‚РµР±Рµ РІСЃРµ РєРѕСЃС‚Рё.
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -309,35 +309,35 @@ var int DIA_Addon_Cord_YouAreRanger_SCGotOffer;
 
 func void DIA_Addon_Cord_YouAreRanger_kampf ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_kampf_15_00"); //Научи меня сражаться.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_kampf_14_01"); //Хорошо. Что еще?
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_kampf_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_kampf_14_01"); //РҐРѕСЂРѕС€Рѕ. Р§С‚Рѕ РµС‰Рµ?
 	Cord_RangerHelp_Fight = TRUE;
 
 	if (DIA_Addon_Cord_YouAreRanger_SCGotOffer == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Это все.", DIA_Addon_Cord_YouAreRanger_reicht );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Р­С‚Рѕ РІСЃРµ.", DIA_Addon_Cord_YouAreRanger_reicht );
 		DIA_Addon_Cord_YouAreRanger_SCGotOffer = TRUE;
 	};
 };
 func void DIA_Addon_Cord_YouAreRanger_SLDAufnahme ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_15_00"); //Ты бы мог помочь мне стать наемником.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_14_01"); //(смеется) Все понятно. Ладно, я попытаюсь. Что еще?
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_15_00"); //РўС‹ Р±С‹ РјРѕРі РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_14_01"); //(СЃРјРµРµС‚СЃСЏ) Р’СЃРµ РїРѕРЅСЏС‚РЅРѕ. Р›Р°РґРЅРѕ, СЏ РїРѕРїС‹С‚Р°СЋСЃСЊ. Р§С‚Рѕ РµС‰Рµ?
 
 	Cord_RangerHelp_GetSLD = TRUE;
 	
 	if (DIA_Addon_Cord_YouAreRanger_SCGotOffer == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Это все.", DIA_Addon_Cord_YouAreRanger_reicht );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Р­С‚Рѕ РІСЃРµ.", DIA_Addon_Cord_YouAreRanger_reicht );
 		DIA_Addon_Cord_YouAreRanger_SCGotOffer = TRUE;
 	};
 };
 func void DIA_Addon_Cord_YouAreRanger_Gold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_Gold_15_00"); //Заплати мне за молчание.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_Gold_15_00"); //Р—Р°РїР»Р°С‚Рё РјРЅРµ Р·Р° РјРѕР»С‡Р°РЅРёРµ.
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_Gold_14_01"); //Вот как? Тебе не повезло. Я не тот, кого можно шантажировать, приятель.
+		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_Gold_14_01"); //Р’РѕС‚ РєР°Рє? РўРµР±Рµ РЅРµ РїРѕРІРµР·Р»Рѕ. РЇ РЅРµ С‚РѕС‚, РєРѕРіРѕ РјРѕР¶РЅРѕ С€Р°РЅС‚Р°Р¶РёСЂРѕРІР°С‚СЊ, РїСЂРёСЏС‚РµР»СЊ.
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -347,15 +347,15 @@ func void DIA_Addon_Cord_YouAreRanger_Gold ()
 };
 func void DIA_Addon_Cord_YouAreRanger_nix ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_nix_15_00"); //На самом деле, мне ничего не нужно. Я и сам справлюсь.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_nix_14_01"); //Как скажешь.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_nix_15_00"); //РќР° СЃР°РјРѕРј РґРµР»Рµ, РјРЅРµ РЅРёС‡РµРіРѕ РЅРµ РЅСѓР¶РЅРѕ. РЇ Рё СЃР°Рј СЃРїСЂР°РІР»СЋСЃСЊ.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_nix_14_01"); //РљР°Рє СЃРєР°Р¶РµС€СЊ.
 	B_DIA_Addon_Cord_YouAreRanger_WARN ();
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
 };
 func void DIA_Addon_Cord_YouAreRanger_reicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_reicht_15_00"); //Это все.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_reicht_14_01"); //Ну, это не сложно.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_reicht_15_00"); //Р­С‚Рѕ РІСЃРµ.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_reicht_14_01"); //РќСѓ, СЌС‚Рѕ РЅРµ СЃР»РѕР¶РЅРѕ.
 	B_DIA_Addon_Cord_YouAreRanger_WARN ();
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
 };
@@ -371,7 +371,7 @@ instance DIA_Addon_Cord_RangerHelp2GetSLD		(C_INFO)
 	information	 = 	DIA_Addon_Cord_RangerHelp2GetSLD_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Помоги мне стать наемником.";
+	description	 = 	"РџРѕРјРѕРіРё РјРЅРµ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј.";
 };
 var int DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm;
 func int DIA_Addon_Cord_RangerHelp2GetSLD_Condition ()
@@ -385,80 +385,80 @@ func int DIA_Addon_Cord_RangerHelp2GetSLD_Condition ()
 };
 func void B_Cord_RangerHelpObsolete ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_00"); //Я уже позаботился об этом.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_01"); //В таком случае, я не смогу тебе помочь.
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_02"); //Что ты имеешь в виду?
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_03"); //Я имею в виду, что не смогу тебе помочь.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_04"); //Или ты хочешь, чтобы я лично убедил бы каждого наемника в том, что ты можешь к нам присоединиться?
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_05"); //Этим тебе придется заняться самому.
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_00"); //РЇ СѓР¶Рµ РїРѕР·Р°Р±РѕС‚РёР»СЃСЏ РѕР± СЌС‚РѕРј.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_01"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, СЏ РЅРµ СЃРјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_02"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_03"); //РЇ РёРјРµСЋ РІ РІРёРґСѓ, С‡С‚Рѕ РЅРµ СЃРјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_04"); //РР»Рё С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ Р»РёС‡РЅРѕ СѓР±РµРґРёР» Р±С‹ РєР°Р¶РґРѕРіРѕ РЅР°РµРјРЅРёРєР° РІ С‚РѕРј, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ Рє РЅР°Рј РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ?
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_05"); //Р­С‚РёРј С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РЅСЏС‚СЊСЃСЏ СЃР°РјРѕРјСѓ.
 	DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm = TRUE;
 	TOPIC_End_RangerHelpSLD = TRUE;
 };
 func void B_Cord_ComeLaterWhenDone ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cord_ComeLaterWhenDone_14_00"); //Так что вперед. Сделаешь это, и возвращайся ко мне.
+	AI_Output	(self, other, "DIA_Addon_Cord_ComeLaterWhenDone_14_00"); //РўР°Рє С‡С‚Рѕ РІРїРµСЂРµРґ. РЎРґРµР»Р°РµС€СЊ СЌС‚Рѕ, Рё РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ.
 	AI_StopProcessInfos (self);
 };
 func void B_Cord_IDoItForYou ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_00"); //Понятно. Что ж, это просто. Возвращайся завтра, и все будет сделано.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_01"); //Но за это тебе придется кое-что для меня сделать.
-	AI_Output	(other, self, "DIA_Addon_Cord_IDoItForYou_15_02"); //И что же именно?
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_03"); //Недалеко отсюда, в холмах на юго-востоке, расположен небольшой бандитский лагерь.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_04"); //Если отсюда ты пойдешь на юго-восток, ты вскорости увидишь их башню.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_05"); //Один из моих людей, Патрик, несколько дней назад отправился туда, чтобы заключить сделку с этими подонками.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_06"); //Я говорил ему, что это плохая мысль, но этот идиот меня не послушал.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_07"); //Думаю, они расправились с ним. Но не уверен.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_08"); //Ты должен выяснить, что с ним случилось.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_00"); //РџРѕРЅСЏС‚РЅРѕ. Р§С‚Рѕ Р¶, СЌС‚Рѕ РїСЂРѕСЃС‚Рѕ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ Р·Р°РІС‚СЂР°, Рё РІСЃРµ Р±СѓРґРµС‚ СЃРґРµР»Р°РЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_01"); //РќРѕ Р·Р° СЌС‚Рѕ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РєРѕРµ-С‡С‚Рѕ РґР»СЏ РјРµРЅСЏ СЃРґРµР»Р°С‚СЊ.
+	AI_Output	(other, self, "DIA_Addon_Cord_IDoItForYou_15_02"); //Р С‡С‚Рѕ Р¶Рµ РёРјРµРЅРЅРѕ?
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_03"); //РќРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°, РІ С…РѕР»РјР°С… РЅР° СЋРіРѕ-РІРѕСЃС‚РѕРєРµ, СЂР°СЃРїРѕР»РѕР¶РµРЅ РЅРµР±РѕР»СЊС€РѕР№ Р±Р°РЅРґРёС‚СЃРєРёР№ Р»Р°РіРµСЂСЊ.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_04"); //Р•СЃР»Рё РѕС‚СЃСЋРґР° С‚С‹ РїРѕР№РґРµС€СЊ РЅР° СЋРіРѕ-РІРѕСЃС‚РѕРє, С‚С‹ РІСЃРєРѕСЂРѕСЃС‚Рё СѓРІРёРґРёС€СЊ РёС… Р±Р°С€РЅСЋ.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_05"); //РћРґРёРЅ РёР· РјРѕРёС… Р»СЋРґРµР№, РџР°С‚СЂРёРє, РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ РѕС‚РїСЂР°РІРёР»СЃСЏ С‚СѓРґР°, С‡С‚РѕР±С‹ Р·Р°РєР»СЋС‡РёС‚СЊ СЃРґРµР»РєСѓ СЃ СЌС‚РёРјРё РїРѕРґРѕРЅРєР°РјРё.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_06"); //РЇ РіРѕРІРѕСЂРёР» РµРјСѓ, С‡С‚Рѕ СЌС‚Рѕ РїР»РѕС…Р°СЏ РјС‹СЃР»СЊ, РЅРѕ СЌС‚РѕС‚ РёРґРёРѕС‚ РјРµРЅСЏ РЅРµ РїРѕСЃР»СѓС€Р°Р».
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_07"); //Р”СѓРјР°СЋ, РѕРЅРё СЂР°СЃРїСЂР°РІРёР»РёСЃСЊ СЃ РЅРёРј. РќРѕ РЅРµ СѓРІРµСЂРµРЅ.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_08"); //РўС‹ РґРѕР»Р¶РµРЅ РІС‹СЏСЃРЅРёС‚СЊ, С‡С‚Рѕ СЃ РЅРёРј СЃР»СѓС‡РёР»РѕСЃСЊ.
 
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Корд готов решить проблему с испытанием Торлофа. Приятель Корда Патрик пропал. Корд Хочет, чтобы я отправился в лагерь бандитов в горах на юго-востоке и выяснил, нет ли там Патрика."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"РљРѕСЂРґ РіРѕС‚РѕРІ СЂРµС€РёС‚СЊ РїСЂРѕР±Р»РµРјСѓ СЃ РёСЃРїС‹С‚Р°РЅРёРµРј РўРѕСЂР»РѕС„Р°. РџСЂРёСЏС‚РµР»СЊ РљРѕСЂРґР° РџР°С‚СЂРёРє РїСЂРѕРїР°Р». РљРѕСЂРґ РҐРѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РѕС‚РїСЂР°РІРёР»СЃСЏ РІ Р»Р°РіРµСЂСЊ Р±Р°РЅРґРёС‚РѕРІ РІ РіРѕСЂР°С… РЅР° СЋРіРѕ-РІРѕСЃС‚РѕРєРµ Рё РІС‹СЏСЃРЅРёР», РЅРµС‚ Р»Рё С‚Р°Рј РџР°С‚СЂРёРєР°."); 
 
 	
 	Info_ClearChoices	(DIA_Addon_Cord_RangerHelp2GetSLD);	
-	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "Забудь об этом. Это гораздо сложнее, чем задание Торлофа.", B_Cord_IDoItForYou_mist );
-	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "А почему ты думаешь, что со мной они не расправятся так же, как с Патриком?", B_Cord_IDoItForYou_Dexter );
+	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. Р­С‚Рѕ РіРѕСЂР°Р·РґРѕ СЃР»РѕР¶РЅРµРµ, С‡РµРј Р·Р°РґР°РЅРёРµ РўРѕСЂР»РѕС„Р°.", B_Cord_IDoItForYou_mist );
+	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "Рђ РїРѕС‡РµРјСѓ С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЃРѕ РјРЅРѕР№ РѕРЅРё РЅРµ СЂР°СЃРїСЂР°РІСЏС‚СЃСЏ С‚Р°Рє Р¶Рµ, РєР°Рє СЃ РџР°С‚СЂРёРєРѕРј?", B_Cord_IDoItForYou_Dexter );
 		
 	DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm = TRUE;
 };
 func void B_Cord_IDoItForYou_mist ()
 {
-	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_mist_15_00"); //Забудь об этом. Это гораздо сложнее, чем задание Торлофа.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_01"); //Да нет. Такой маленький и безобидный человек, как ты, не вызовет у них интереса.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_02"); //А вот мне туда идти нельзя. Эти парни хватаются за оружие при одном виде наемника.
+	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_mist_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. Р­С‚Рѕ РіРѕСЂР°Р·РґРѕ СЃР»РѕР¶РЅРµРµ, С‡РµРј Р·Р°РґР°РЅРёРµ РўРѕСЂР»РѕС„Р°.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_01"); //Р”Р° РЅРµС‚. РўР°РєРѕР№ РјР°Р»РµРЅСЊРєРёР№ Рё Р±РµР·РѕР±РёРґРЅС‹Р№ С‡РµР»РѕРІРµРє, РєР°Рє С‚С‹, РЅРµ РІС‹Р·РѕРІРµС‚ Сѓ РЅРёС… РёРЅС‚РµСЂРµСЃР°.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_02"); //Рђ РІРѕС‚ РјРЅРµ С‚СѓРґР° РёРґС‚Рё РЅРµР»СЊР·СЏ. Р­С‚Рё РїР°СЂРЅРё С…РІР°С‚Р°СЋС‚СЃСЏ Р·Р° РѕСЂСѓР¶РёРµ РїСЂРё РѕРґРЅРѕРј РІРёРґРµ РЅР°РµРјРЅРёРєР°.
 };
 func void B_Cord_IDoItForYou_Dexter ()
 {
-	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_Dexter_15_00"); //А почему ты думаешь, что со мной они не расправятся так же, как с Патриком?
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_01"); //Дело в том, что я знаю имя предводителя бандитов. Его зовут Декстер. Просто скажи им, что ты знаешь этого парня.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_02"); //Это должно лишить их желания свернуть тебе шею.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_03"); //Конечно, это все довольно опасно.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_04"); //Но ты справишься.
+	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_Dexter_15_00"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЃРѕ РјРЅРѕР№ РѕРЅРё РЅРµ СЂР°СЃРїСЂР°РІСЏС‚СЃСЏ С‚Р°Рє Р¶Рµ, РєР°Рє СЃ РџР°С‚СЂРёРєРѕРј?
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_01"); //Р”РµР»Рѕ РІ С‚РѕРј, С‡С‚Рѕ СЏ Р·РЅР°СЋ РёРјСЏ РїСЂРµРґРІРѕРґРёС‚РµР»СЏ Р±Р°РЅРґРёС‚РѕРІ. Р•РіРѕ Р·РѕРІСѓС‚ Р”РµРєСЃС‚РµСЂ. РџСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё РёРј, С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ СЌС‚РѕРіРѕ РїР°СЂРЅСЏ.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_02"); //Р­С‚Рѕ РґРѕР»Р¶РЅРѕ Р»РёС€РёС‚СЊ РёС… Р¶РµР»Р°РЅРёСЏ СЃРІРµСЂРЅСѓС‚СЊ С‚РµР±Рµ С€РµСЋ.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_03"); //РљРѕРЅРµС‡РЅРѕ, СЌС‚Рѕ РІСЃРµ РґРѕРІРѕР»СЊРЅРѕ РѕРїР°СЃРЅРѕ.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_04"); //РќРѕ С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ.
 	Info_ClearChoices	(DIA_Addon_Cord_RangerHelp2GetSLD);	
 	
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Главаря бандитов зовут Декстер."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Р“Р»Р°РІР°СЂСЏ Р±Р°РЅРґРёС‚РѕРІ Р·РѕРІСѓС‚ Р”РµРєСЃС‚РµСЂ."); 
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Наемник Корд ищет своего приятеля Патрика."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"РќР°РµРјРЅРёРє РљРѕСЂРґ РёС‰РµС‚ СЃРІРѕРµРіРѕ РїСЂРёСЏС‚РµР»СЏ РџР°С‚СЂРёРєР°."); 
 		
 	MIS_Addon_Cord_Look4Patrick = LOG_RUNNING;
 	Ranger_SCKnowsDexter = TRUE; 
 };
 func void DIA_Addon_Cord_RangerHelp2GetSLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_00"); //Помоги мне стать наемником.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_01"); //Надо подумать... Хм-м. Если ты хочешь чего-то здесь добиться, тебе нужно поговорить с Торлофом.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_02"); //Ты уже встречался с ним?
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_00"); //РџРѕРјРѕРіРё РјРЅРµ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_01"); //РќР°РґРѕ РїРѕРґСѓРјР°С‚СЊ... РҐРј-Рј. Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ С‡РµРіРѕ-С‚Рѕ Р·РґРµСЃСЊ РґРѕР±РёС‚СЊСЃСЏ, С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РўРѕСЂР»РѕС„РѕРј.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_02"); //РўС‹ СѓР¶Рµ РІСЃС‚СЂРµС‡Р°Р»СЃСЏ СЃ РЅРёРј?
 
 	if (Torlof_Go == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_03"); //Еще нет.
+		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_03"); //Р•С‰Рµ РЅРµС‚.
 		B_Cord_ComeLaterWhenDone ();
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_04"); //Да. Он рассказал мне об испытании и прочем...
-		AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_05"); //Ага. И какое же задание тебе дали?
+		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_04"); //Р”Р°. РћРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ РѕР± РёСЃРїС‹С‚Р°РЅРёРё Рё РїСЂРѕС‡РµРј...
+		AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_05"); //РђРіР°. Р РєР°РєРѕРµ Р¶Рµ Р·Р°РґР°РЅРёРµ С‚РµР±Рµ РґР°Р»Рё?
 		
 		if	(Torlof_ProbeBestanden == TRUE)
 		|| ((MIS_Torlof_BengarMilizKlatschen == LOG_RUNNING)&& (Npc_IsDead (Rumbold))&& (Npc_IsDead (Rick)))
@@ -468,17 +468,17 @@ func void DIA_Addon_Cord_RangerHelp2GetSLD_Info ()
 		}		
 		else if (Torlof_Probe == 0)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_06"); //Я пока не получил задание.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_06"); //РЇ РїРѕРєР° РЅРµ РїРѕР»СѓС‡РёР» Р·Р°РґР°РЅРёРµ.
 			B_Cord_ComeLaterWhenDone ();
 		}		
 		else if (Torlof_Probe == Probe_Sekob)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_07"); //Я должен собрать ренту на ферме Секоба.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_07"); //РЇ РґРѕР»Р¶РµРЅ СЃРѕР±СЂР°С‚СЊ СЂРµРЅС‚Сѓ РЅР° С„РµСЂРјРµ РЎРµРєРѕР±Р°.
 			B_Cord_IDoItForYou ();
 		}
 		else if (Torlof_Probe == Probe_Bengar)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_08"); //Я должен избавить Бенгара от солдат ополчения.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_08"); //РЇ РґРѕР»Р¶РµРЅ РёР·Р±Р°РІРёС‚СЊ Р‘РµРЅРіР°СЂР° РѕС‚ СЃРѕР»РґР°С‚ РѕРїРѕР»С‡РµРЅРёСЏ.
 			B_Cord_IDoItForYou ();
 		}
 		else 
@@ -498,7 +498,7 @@ instance DIA_Addon_Cord_TalkedToDexter		(C_INFO)
 	condition	 = 	DIA_Addon_Cord_TalkedToDexter_Condition;
 	information	 = 	DIA_Addon_Cord_TalkedToDexter_Info;
 
-	description	 = 	"Я встретился с Декстером.";
+	description	 = 	"РЇ РІСЃС‚СЂРµС‚РёР»СЃСЏ СЃ Р”РµРєСЃС‚РµСЂРѕРј.";
 };
 
 func int DIA_Addon_Cord_TalkedToDexter_Condition ()
@@ -513,33 +513,33 @@ func int DIA_Addon_Cord_TalkedToDexter_Condition ()
 
 func void DIA_Addon_Cord_TalkedToDexter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_00"); //Я встретился с Декстером.
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_01"); //И?
+	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_00"); //РЇ РІСЃС‚СЂРµС‚РёР»СЃСЏ СЃ Р”РµРєСЃС‚РµСЂРѕРј.
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_01"); //Р?
 	
 	if (Npc_IsDead(BDT_1060_Dexter))
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_02"); //Он мертв.
+		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_02"); //РћРЅ РјРµСЂС‚РІ.
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_03"); //Я не нашел следов твоего друга Патрика.
+	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_03"); //РЇ РЅРµ РЅР°С€РµР» СЃР»РµРґРѕРІ С‚РІРѕРµРіРѕ РґСЂСѓРіР° РџР°С‚СЂРёРєР°.
 	
 	if (Dexter_KnowsPatrick == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_04"); //Декстер его вспомнил, но сказал, что последний раз его видел очень давно.
-		AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_05"); //Ты уверен, что Декстер не лгал?
-		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_06"); //Не уверен. Но это все, что я могу тебе сказать.
+		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_04"); //Р”РµРєСЃС‚РµСЂ РµРіРѕ РІСЃРїРѕРјРЅРёР», РЅРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р· РµРіРѕ РІРёРґРµР» РѕС‡РµРЅСЊ РґР°РІРЅРѕ.
+		AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_05"); //РўС‹ СѓРІРµСЂРµРЅ, С‡С‚Рѕ Р”РµРєСЃС‚РµСЂ РЅРµ Р»РіР°Р»?
+		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_06"); //РќРµ СѓРІРµСЂРµРЅ. РќРѕ СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ.
 		
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_07"); //Не понимаю... Не мог же Патрик просто так взять и исчезнуть.
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_08"); //Что ж, ты выполнил условия сделки...
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_07"); //РќРµ РїРѕРЅРёРјР°СЋ... РќРµ РјРѕРі Р¶Рµ РџР°С‚СЂРёРє РїСЂРѕСЃС‚Рѕ С‚Р°Рє РІР·СЏС‚СЊ Рё РёСЃС‡РµР·РЅСѓС‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_08"); //Р§С‚Рѕ Р¶, С‚С‹ РІС‹РїРѕР»РЅРёР» СѓСЃР»РѕРІРёСЏ СЃРґРµР»РєРё...
 
 	MIS_Addon_Cord_Look4Patrick = LOG_SUCCESS;
 	TOPIC_End_RangerHelpSLD = TRUE;
 	B_GivePlayerXP (XP_Addon_Cord_Look4Patrick);
 
-	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_09"); //Что насчет задания Торлофа?
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_10"); //Не беспокойся, я обо всем позаботился. Твое задание выполнено, и ты прошел испытание. Можешь поговорить с Торлофом.
+	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_09"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ Р·Р°РґР°РЅРёСЏ РўРѕСЂР»РѕС„Р°?
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_10"); //РќРµ Р±РµСЃРїРѕРєРѕР№СЃСЏ, СЏ РѕР±Рѕ РІСЃРµРј РїРѕР·Р°Р±РѕС‚РёР»СЃСЏ. РўРІРѕРµ Р·Р°РґР°РЅРёРµ РІС‹РїРѕР»РЅРµРЅРѕ, Рё С‚С‹ РїСЂРѕС€РµР» РёСЃРїС‹С‚Р°РЅРёРµ. РњРѕР¶РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РўРѕСЂР»РѕС„РѕРј.
 
 	Cord_RangerHelp_TorlofsProbe = TRUE;
 
@@ -563,7 +563,7 @@ INSTANCE DIA_Cord_ReturnPatrick   (C_INFO)
 	condition   = DIA_Cord_ReturnPatrick_Condition;
 	information = DIA_Cord_ReturnPatrick_Info;
 	permanent   = FALSE;
-	description = "Патрик вернулся.";
+	description = "РџР°С‚СЂРёРє РІРµСЂРЅСѓР»СЃСЏ.";
 };
 
 FUNC INT DIA_Cord_ReturnPatrick_Condition()
@@ -576,15 +576,15 @@ FUNC INT DIA_Cord_ReturnPatrick_Condition()
 };
 FUNC VOID DIA_Cord_ReturnPatrick_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_00"); //Патрик вернулся.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_01"); //Отлично! Я уже почти потерял надежду. Ты...
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_02"); //У меня есть одна просьба.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_03"); //Да?
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_04"); //Давай обойдемся без благодарностей.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_05"); //Но я и не собирался тебя благодарить.
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_06"); //Что?..
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_07"); //(усмехается) Я собирался сказать тебе, что ты нахальный и скользкий малый.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_09"); //(усмехается) Продолжай в том же духе!
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_00"); //РџР°С‚СЂРёРє РІРµСЂРЅСѓР»СЃСЏ.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_01"); //РћС‚Р»РёС‡РЅРѕ! РЇ СѓР¶Рµ РїРѕС‡С‚Рё РїРѕС‚РµСЂСЏР» РЅР°РґРµР¶РґСѓ. РўС‹...
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_02"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РѕРґРЅР° РїСЂРѕСЃСЊР±Р°.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_03"); //Р”Р°?
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_04"); //Р”Р°РІР°Р№ РѕР±РѕР№РґРµРјСЃСЏ Р±РµР· Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚РµР№.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_05"); //РќРѕ СЏ Рё РЅРµ СЃРѕР±РёСЂР°Р»СЃСЏ С‚РµР±СЏ Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ.
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_06"); //Р§С‚Рѕ?..
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_07"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РЇ СЃРѕР±РёСЂР°Р»СЃСЏ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ, С‡С‚Рѕ С‚С‹ РЅР°С…Р°Р»СЊРЅС‹Р№ Рё СЃРєРѕР»СЊР·РєРёР№ РјР°Р»С‹Р№.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_09"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РџСЂРѕРґРѕР»Р¶Р°Р№ РІ С‚РѕРј Р¶Рµ РґСѓС…Рµ!
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
@@ -599,7 +599,7 @@ INSTANCE DIA_Cord_ExplainSkills   (C_INFO)
 	condition   = DIA_Cord_ExplainSkills_Condition;
 	information = DIA_Cord_ExplainSkills_Info;
 	permanent   = FALSE;
-	description = "Что я должен изучить сначала, обращение с одноручным или двуручным оружием?";
+	description = "Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РёР·СѓС‡РёС‚СЊ СЃРЅР°С‡Р°Р»Р°, РѕР±СЂР°С‰РµРЅРёРµ СЃ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РёР»Рё РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј?";
 };
 
 FUNC INT DIA_Cord_ExplainSkills_Condition()
@@ -611,14 +611,14 @@ FUNC INT DIA_Cord_ExplainSkills_Condition()
 };
 FUNC VOID DIA_Cord_ExplainSkills_Info()
 {
-	AI_Output (other, self, "DIA_Cord_ExplainSkills_15_00"); //Что я должен изучить сначала, обращение с одноручным или двуручным оружием?
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_01"); //Эти два вида оружия весьма похожи друг на друга.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_02"); //Когда ты достигаешь следующего уровня в одном из них, ты автоматически повышаешь и уровень владения другим.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_03"); //Если, например, ты хорошо владеешь одноручным мечом, но все еще новичок в том, что касается двуручного...
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_04"); //...навык владения двуручным оружием также повысится, когда ты будешь тренировать одноручное.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_05"); //Если ты тренируешься только с одним типом оружия, ты найдешь процесс обучения более изматывающим.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_06"); //Если же ты всегда тренируешь оба вида оружия, ты достигнешь того же результата, затратив меньше усилий.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_07"); //И еще, результат все равно будет один и тем же - так что тебе выбирать.
+	AI_Output (other, self, "DIA_Cord_ExplainSkills_15_00"); //Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РёР·СѓС‡РёС‚СЊ СЃРЅР°С‡Р°Р»Р°, РѕР±СЂР°С‰РµРЅРёРµ СЃ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РёР»Рё РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј?
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_01"); //Р­С‚Рё РґРІР° РІРёРґР° РѕСЂСѓР¶РёСЏ РІРµСЃСЊРјР° РїРѕС…РѕР¶Рё РґСЂСѓРі РЅР° РґСЂСѓРіР°.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_02"); //РљРѕРіРґР° С‚С‹ РґРѕСЃС‚РёРіР°РµС€СЊ СЃР»РµРґСѓСЋС‰РµРіРѕ СѓСЂРѕРІРЅСЏ РІ РѕРґРЅРѕРј РёР· РЅРёС…, С‚С‹ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РїРѕРІС‹С€Р°РµС€СЊ Рё СѓСЂРѕРІРµРЅСЊ РІР»Р°РґРµРЅРёСЏ РґСЂСѓРіРёРј.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_03"); //Р•СЃР»Рё, РЅР°РїСЂРёРјРµСЂ, С‚С‹ С…РѕСЂРѕС€Рѕ РІР»Р°РґРµРµС€СЊ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј, РЅРѕ РІСЃРµ РµС‰Рµ РЅРѕРІРёС‡РѕРє РІ С‚РѕРј, С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РґРІСѓСЂСѓС‡РЅРѕРіРѕ...
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_04"); //...РЅР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј С‚Р°РєР¶Рµ РїРѕРІС‹СЃРёС‚СЃСЏ, РєРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ РѕРґРЅРѕСЂСѓС‡РЅРѕРµ.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_05"); //Р•СЃР»Рё С‚С‹ С‚СЂРµРЅРёСЂСѓРµС€СЊСЃСЏ С‚РѕР»СЊРєРѕ СЃ РѕРґРЅРёРј С‚РёРїРѕРј РѕСЂСѓР¶РёСЏ, С‚С‹ РЅР°Р№РґРµС€СЊ РїСЂРѕС†РµСЃСЃ РѕР±СѓС‡РµРЅРёСЏ Р±РѕР»РµРµ РёР·РјР°С‚С‹РІР°СЋС‰РёРј.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_06"); //Р•СЃР»Рё Р¶Рµ С‚С‹ РІСЃРµРіРґР° С‚СЂРµРЅРёСЂСѓРµС€СЊ РѕР±Р° РІРёРґР° РѕСЂСѓР¶РёСЏ, С‚С‹ РґРѕСЃС‚РёРіРЅРµС€СЊ С‚РѕРіРѕ Р¶Рµ СЂРµР·СѓР»СЊС‚Р°С‚Р°, Р·Р°С‚СЂР°С‚РёРІ РјРµРЅСЊС€Рµ СѓСЃРёР»РёР№.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_07"); //Р РµС‰Рµ, СЂРµР·СѓР»СЊС‚Р°С‚ РІСЃРµ СЂР°РІРЅРѕ Р±СѓРґРµС‚ РѕРґРёРЅ Рё С‚РµРј Р¶Рµ - С‚Р°Рє С‡С‚Рѕ С‚РµР±Рµ РІС‹Р±РёСЂР°С‚СЊ.
 };
 // ************************************************************
 // 			  				ExplainWeapons
@@ -630,7 +630,7 @@ INSTANCE DIA_Cord_ExplainWeapons   (C_INFO)
 	condition   = DIA_Cord_ExplainWeapons_Condition;
 	information = DIA_Cord_ExplainWeapons_Info;
 	permanent   = FALSE;
-	description = "Каковы преимущества одноручного и двуручного оружия?";
+	description = "РљР°РєРѕРІС‹ РїСЂРµРёРјСѓС‰РµСЃС‚РІР° РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ Рё РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ?";
 };
 
 FUNC INT DIA_Cord_ExplainWeapons_Condition()
@@ -643,12 +643,12 @@ FUNC INT DIA_Cord_ExplainWeapons_Condition()
 
 FUNC VOID DIA_Cord_ExplainWeapons_Info()
 {
-	AI_Output (other, self, "DIA_Cord_ExplainWeapons_15_00"); //Каковы преимущества одноручного и двуручного оружия?
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_01"); //Хороший вопрос. Я вижу, что ты размышлял над этим вопросом.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_02"); //Одноручное оружие быстрее, но оно наносит меньший урон врагам.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_03"); //Двуручное оружие наносит больший урон, но им не получится размахивать так же быстро, как одноручным.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_04"); //Также, чтобы владеть двуручным мечом, тебе понадобится больше сил. Это означает необходимость дополнительных тренировок.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_05"); //Чтобы стать настоящим профессионалом, придется затратить много усилий.
+	AI_Output (other, self, "DIA_Cord_ExplainWeapons_15_00"); //РљР°РєРѕРІС‹ РїСЂРµРёРјСѓС‰РµСЃС‚РІР° РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ Рё РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ?
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_01"); //РҐРѕСЂРѕС€РёР№ РІРѕРїСЂРѕСЃ. РЇ РІРёР¶Сѓ, С‡С‚Рѕ С‚С‹ СЂР°Р·РјС‹С€Р»СЏР» РЅР°Рґ СЌС‚РёРј РІРѕРїСЂРѕСЃРѕРј.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_02"); //РћРґРЅРѕСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ Р±С‹СЃС‚СЂРµРµ, РЅРѕ РѕРЅРѕ РЅР°РЅРѕСЃРёС‚ РјРµРЅСЊС€РёР№ СѓСЂРѕРЅ РІСЂР°РіР°Рј.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_03"); //Р”РІСѓСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ РЅР°РЅРѕСЃРёС‚ Р±РѕР»СЊС€РёР№ СѓСЂРѕРЅ, РЅРѕ РёРј РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ СЂР°Р·РјР°С…РёРІР°С‚СЊ С‚Р°Рє Р¶Рµ Р±С‹СЃС‚СЂРѕ, РєР°Рє РѕРґРЅРѕСЂСѓС‡РЅС‹Рј.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_04"); //РўР°РєР¶Рµ, С‡С‚РѕР±С‹ РІР»Р°РґРµС‚СЊ РґРІСѓСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј, С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ Р±РѕР»СЊС€Рµ СЃРёР». Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚СЊ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… С‚СЂРµРЅРёСЂРѕРІРѕРє.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_05"); //Р§С‚РѕР±С‹ СЃС‚Р°С‚СЊ РЅР°СЃС‚РѕСЏС‰РёРј РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»РѕРј, РїСЂРёРґРµС‚СЃСЏ Р·Р°С‚СЂР°С‚РёС‚СЊ РјРЅРѕРіРѕ СѓСЃРёР»РёР№.
 };
 
 // ******************************************************
@@ -666,7 +666,7 @@ INSTANCE DIA_Cord_Teach(C_INFO)
 	condition	= DIA_Cord_Teach_Condition;
 	information	= DIA_Cord_Teach_Info;
 	permanent	= TRUE;
-	description = "Научи меня сражаться!";
+	description = "РќР°СѓС‡Рё РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ!";
 };                       
 
 FUNC INT DIA_Cord_Teach_Condition()
@@ -676,12 +676,12 @@ FUNC INT DIA_Cord_Teach_Condition()
 
 FUNC VOID B_Cord_Zeitverschwendung ()
 {
-	AI_Output (self ,other,"DIA_Cord_Teach_14_03"); //Я не хочу тратить свое время на новичков.
+	AI_Output (self ,other,"DIA_Cord_Teach_14_03"); //РЇ РЅРµ С…РѕС‡Сѓ С‚СЂР°С‚РёС‚СЊ СЃРІРѕРµ РІСЂРµРјСЏ РЅР° РЅРѕРІРёС‡РєРѕРІ.
 };
 
 FUNC VOID DIA_Cord_Teach_Info()
 {	
-	AI_Output (other,self, "DIA_Cord_Teach_15_00"); //Научи меня сражаться!
+	AI_Output (other,self, "DIA_Cord_Teach_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ!
 	if (Cord_Approved == TRUE)
 	|| (hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG)
@@ -692,19 +692,19 @@ FUNC VOID DIA_Cord_Teach_Info()
 		{
 		
 		
-			AI_Output (self ,other,"DIA_Cord_Teach_14_01"); //Я могу обучить тебя владению любым оружием - с чего начнем?
+			AI_Output (self ,other,"DIA_Cord_Teach_14_01"); //РЇ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РІР»Р°РґРµРЅРёСЋ Р»СЋР±С‹Рј РѕСЂСѓР¶РёРµРј - СЃ С‡РµРіРѕ РЅР°С‡РЅРµРј?
 			Cord_Approved = TRUE;
 		}
 		else if  (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 		{
-			AI_Output (self ,other,"DIA_Cord_Teach_14_02"); //Я могу обучить тебя владению одноручным мечом. Но ты пока недостаточно хорош, чтобы использовать двуручный меч.
+			AI_Output (self ,other,"DIA_Cord_Teach_14_02"); //РЇ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РІР»Р°РґРµРЅРёСЋ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј. РќРѕ С‚С‹ РїРѕРєР° РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С…РѕСЂРѕС€, С‡С‚РѕР±С‹ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґРІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡.
 			B_Cord_Zeitverschwendung();
 			Cord_Approved = TRUE;
 		}
 		else if (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 		{
-			AI_Output (self ,other,"DIA_Cord_Teach_14_04"); //Что касается одноручного оружия, то здесь ты зеленый новичок! Хотя в обращении с двуручным ты не так уж и плох.
-			AI_Output (self ,other,"DIA_Cord_Teach_14_05"); //Если ты захочешь потренироваться с одноручным оружием, тебе придется найти другого учителя.
+			AI_Output (self ,other,"DIA_Cord_Teach_14_04"); //Р§С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ, С‚Рѕ Р·РґРµСЃСЊ С‚С‹ Р·РµР»РµРЅС‹Р№ РЅРѕРІРёС‡РѕРє! РҐРѕС‚СЏ РІ РѕР±СЂР°С‰РµРЅРёРё СЃ РґРІСѓСЂСѓС‡РЅС‹Рј С‚С‹ РЅРµ С‚Р°Рє СѓР¶ Рё РїР»РѕС….
+			AI_Output (self ,other,"DIA_Cord_Teach_14_05"); //Р•СЃР»Рё С‚С‹ Р·Р°С…РѕС‡РµС€СЊ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ СЃ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РЅР°Р№С‚Рё РґСЂСѓРіРѕРіРѕ СѓС‡РёС‚РµР»СЏ.
 			Cord_Approved = TRUE;
 		}
 		else
@@ -738,7 +738,7 @@ FUNC VOID DIA_Cord_Teach_Info()
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Cord_Teach_14_06"); //Я тренирую только наемников и достойных кандидатов!
+		AI_Output (self ,other,"DIA_Cord_Teach_14_06"); //РЇ С‚СЂРµРЅРёСЂСѓСЋ С‚РѕР»СЊРєРѕ РЅР°РµРјРЅРёРєРѕРІ Рё РґРѕСЃС‚РѕР№РЅС‹С… РєР°РЅРґРёРґР°С‚РѕРІ!
 	};
 };
 
@@ -747,7 +747,7 @@ FUNC VOID DIA_Cord_Teach_Back ()
 	if (Cord_Merke_1h < other.HitChance[NPC_TALENT_1H])
 	|| (Cord_Merke_2h < other.HitChance[NPC_TALENT_2H])
 	{
-		AI_Output (self ,other,"DIA_Cord_Teach_BACK_14_00"); //Ты стал значительно лучше - так держать!
+		AI_Output (self ,other,"DIA_Cord_Teach_BACK_14_00"); //РўС‹ СЃС‚Р°Р» Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ Р»СѓС‡С€Рµ - С‚Р°Рє РґРµСЂР¶Р°С‚СЊ!
 	};
 	
 	Info_ClearChoices (DIA_Cord_Teach);

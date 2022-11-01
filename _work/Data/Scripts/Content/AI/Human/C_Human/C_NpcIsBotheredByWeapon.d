@@ -37,13 +37,13 @@ func int C_NpcIsBotheredByWeapon (var C_NPC slf, var C_NPC oth)
 		return FALSE;
 	};
 	
-	// ------ F‰uste z‰hlen nicht ------
+	// ------ F–¥uste z–¥hlen nicht ------
 	if (Npc_IsInFightMode (oth, FMODE_FIST)) 														
 	{
 		return FALSE; 
 	};
 	
-	// ------ Gute und neutrale Spells z‰hlen nicht ------
+	// ------ Gute und neutrale Spells z–¥hlen nicht ------
 	if ( Npc_IsInFightMode (oth, FMODE_MAGIC) && (Npc_GetActiveSpellCat(oth) != SPELL_BAD) )		
 	{
 		return FALSE;

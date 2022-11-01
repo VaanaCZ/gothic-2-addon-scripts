@@ -45,11 +45,11 @@ FUNC INT DIA_Kjorn_Hello_Condition()
 
 FUNC VOID DIA_Kjorn_Hello_Info()
 {
-	AI_Output	(self ,other,"DIA_Kjorn_Hello_06_00"); //Эй, иди сюда!
-	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_01"); //Чего тебе?
-	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_02"); //Эта долина - опасное место, и без правильного снаряжения ты сразу можешь считать себя трупом.
-	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_03"); //Я полагаю, что у ТЕБЯ как раз правильное снаряжение.
-	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_04"); //Угадал. И я даже могу продать его тебе.
+	AI_Output	(self ,other,"DIA_Kjorn_Hello_06_00"); //Р­Р№, РёРґРё СЃСЋРґР°!
+	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_01"); //Р§РµРіРѕ С‚РµР±Рµ?
+	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_02"); //Р­С‚Р° РґРѕР»РёРЅР° - РѕРїР°СЃРЅРѕРµ РјРµСЃС‚Рѕ, Рё Р±РµР· РїСЂР°РІРёР»СЊРЅРѕРіРѕ СЃРЅР°СЂСЏР¶РµРЅРёСЏ С‚С‹ СЃСЂР°Р·Сѓ РјРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ СЃРµР±СЏ С‚СЂСѓРїРѕРј.
+	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_03"); //РЇ РїРѕР»Р°РіР°СЋ, С‡С‚Рѕ Сѓ РўР•Р‘РЇ РєР°Рє СЂР°Р· РїСЂР°РІРёР»СЊРЅРѕРµ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
+	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_04"); //РЈРіР°РґР°Р». Р СЏ РґР°Р¶Рµ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ РµРіРѕ С‚РµР±Рµ.
 };
 
 //*********************************************************************
@@ -63,7 +63,7 @@ INSTANCE DIA_Kjorn_TRADE   (C_INFO)
 	information = DIA_Kjorn_TRADE_Info;
 	Trade		= TRUE;
 	permanent   = TRUE;
-	description	= "Что ты можешь предложить мне?";
+	description	= "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?";
 				
 };
 
@@ -75,7 +75,7 @@ FUNC INT DIA_Kjorn_TRADE_Condition()
 FUNC VOID DIA_Kjorn_TRADE_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output	(other,self ,"DIA_Kjorn_TRADE_15_00"); //Что ты можешь предложить мне?
+	AI_Output	(other,self ,"DIA_Kjorn_TRADE_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?
 
 };
 
@@ -89,7 +89,7 @@ INSTANCE DIA_Kjorn_SellInfos   (C_INFO)
 	condition   = DIA_Kjorn_SellInfos_Condition;
 	information = DIA_Kjorn_SellInfos_Info;
 	permanent   = FALSE;
-	description	= "А информацией ты не торгуешь?";
+	description	= "Рђ РёРЅС„РѕСЂРјР°С†РёРµР№ С‚С‹ РЅРµ С‚РѕСЂРіСѓРµС€СЊ?";
 				
 };
 
@@ -100,14 +100,14 @@ FUNC INT DIA_Kjorn_SellInfos_Condition()
 
 FUNC VOID DIA_Kjorn_SellInfos_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_SellInfos_15_00"); //А информацией ты не торгуешь?
-	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_01"); //Может быть. Если цена подходящая, я расскажу тебе все, что я знаю.
-	AI_Output 	(other,self ,"DIA_Kjorn_SellInfos_15_02"); //Сколько ты берешь?
-	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_03"); //Хмм... трудно сказать. Но, думаю, 50 золотых за каждую информацию, что ты получишь, будет нормально.
+	AI_Output	(other,self ,"DIA_Kjorn_SellInfos_15_00"); //Рђ РёРЅС„РѕСЂРјР°С†РёРµР№ С‚С‹ РЅРµ С‚РѕСЂРіСѓРµС€СЊ?
+	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_01"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ. Р•СЃР»Рё С†РµРЅР° РїРѕРґС…РѕРґСЏС‰Р°СЏ, СЏ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ.
+	AI_Output 	(other,self ,"DIA_Kjorn_SellInfos_15_02"); //РЎРєРѕР»СЊРєРѕ С‚С‹ Р±РµСЂРµС€СЊ?
+	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_03"); //РҐРјРј... С‚СЂСѓРґРЅРѕ СЃРєР°Р·Р°С‚СЊ. РќРѕ, РґСѓРјР°СЋ, 50 Р·РѕР»РѕС‚С‹С… Р·Р° РєР°Р¶РґСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ, С‡С‚Рѕ С‚С‹ РїРѕР»СѓС‡РёС€СЊ, Р±СѓРґРµС‚ РЅРѕСЂРјР°Р»СЊРЅРѕ.
 };
 
 //*********************************************************************
-//	Ich brauche Infos ьber.. 
+//	Ich brauche Infos СЊber.. 
 //*********************************************************************
 INSTANCE DIA_Kjorn_BuyInfos   (C_INFO)
 {
@@ -116,7 +116,7 @@ INSTANCE DIA_Kjorn_BuyInfos   (C_INFO)
 	condition   = DIA_Kjorn_BuyInfos_Condition;
 	information = DIA_Kjorn_BuyInfos_Info;
 	permanent   = TRUE;
-	description	= "Мне нужна кое-какая информация.";
+	description	= "РњРЅРµ РЅСѓР¶РЅР° РєРѕРµ-РєР°РєР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ.";
 				
 };
 
@@ -130,35 +130,35 @@ FUNC INT DIA_Kjorn_BuyInfos_Condition()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_BuyInfos_15_00"); //Мне нужна информация.
-	AI_Output 	(self ,other,"DIA_Kjorn_BuyInfos_06_01"); //50 золотых!
+	AI_Output	(other,self ,"DIA_Kjorn_BuyInfos_15_00"); //РњРЅРµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ.
+	AI_Output 	(self ,other,"DIA_Kjorn_BuyInfos_06_01"); //50 Р·РѕР»РѕС‚С‹С…!
 	
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
-	Info_AddChoice (DIA_Kjorn_BuyInfos,"Это слишком дорого для меня.",DIA_Kjorn_BuyInfos_HoldMoney);	
+	Info_AddChoice (DIA_Kjorn_BuyInfos,"Р­С‚Рѕ СЃР»РёС€РєРѕРј РґРѕСЂРѕРіРѕ РґР»СЏ РјРµРЅСЏ.",DIA_Kjorn_BuyInfos_HoldMoney);	
 	
 	IF (Npc_HasItems (other,ItMi_Gold) >=50)
 	{	
-		Info_AddChoice (DIA_Kjorn_BuyInfos,"Да, держи.",DIA_Kjorn_BuyInfos_GiveMoney);
+		Info_AddChoice (DIA_Kjorn_BuyInfos,"Р”Р°, РґРµСЂР¶Рё.",DIA_Kjorn_BuyInfos_GiveMoney);
 	};	
 };
 
 FUNC VOID DIA_Kjorn_BuyInfos_HoldMoney ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_HoldMoney_15_00"); //Это слишком дорого для меня.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_HoldMoney_15_00"); //Р­С‚Рѕ СЃР»РёС€РєРѕРј РґРѕСЂРѕРіРѕ РґР»СЏ РјРµРЅСЏ.
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
 };
 
 FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_GiveMoney_15_00"); //Вот, держи.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_GiveMoney_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё.
 	
 	B_GiveInvItems (other,self,ItMi_Gold,50);
 	
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_GiveMoney_15_01"); //Теперь скажи мне...
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_GiveMoney_15_01"); //РўРµРїРµСЂСЊ СЃРєР°Р¶Рё РјРЅРµ...
 	
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
 	
-	//----- Zurьck -----
+	//----- ZurСЊck -----
 	
 	Info_AddChoice (DIA_Kjorn_BuyInfos,DIALOG_BACK,DIA_Kjorn_BuyInfos_Back);
 	
@@ -166,50 +166,50 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	
 	if KjornToldDragon == 0
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... насчет драконов.",DIA_Kjorn_BuyInfos_Dragon1);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... РЅР°СЃС‡РµС‚ РґСЂР°РєРѕРЅРѕРІ.",DIA_Kjorn_BuyInfos_Dragon1);
 	}
 	else if KjornToldDragon == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... еще о драконах.",DIA_Kjorn_BuyInfos_Dragon2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... РµС‰Рµ Рѕ РґСЂР°РєРѕРЅР°С….",DIA_Kjorn_BuyInfos_Dragon2);
 	};
 	
 	//----- Das Minental -----
 	
 	if KjornToldColony == 0
 	{	
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... о Долине Рудников.",DIA_Kjorn_BuyInfos_Colony1);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.",DIA_Kjorn_BuyInfos_Colony1);
 	}
 	else if KjornToldColony == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... еще о Долине Рудников.",DIA_Kjorn_BuyInfos_Colony2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... РµС‰Рµ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.",DIA_Kjorn_BuyInfos_Colony2);
 	};
 	
 	//----- die Burg -----
 	
 	if KJornToldOldCamp == 0
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... о замке.",DIA_Kjorn_BuyInfos_OldCamp1);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... Рѕ Р·Р°РјРєРµ.",DIA_Kjorn_BuyInfos_OldCamp1);
 	};
 	
 	//----- Die Orks -----
 	
 	if KjornToldOrks == 0
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... об орках.",DIA_Kjorn_BuyInfos_Orks1);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... РѕР± РѕСЂРєР°С….",DIA_Kjorn_BuyInfos_Orks1);
 	}
 	else if KjornToldOrks == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... еще об орках.",DIA_Kjorn_BuyInfos_Orks2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... РµС‰Рµ РѕР± РѕСЂРєР°С….",DIA_Kjorn_BuyInfos_Orks2);
 	};	
 	
 };
 
-//------ Zurьck -----
+//------ ZurСЊck -----
 
 FUNC VOID DIA_Kjorn_BuyInfos_Back ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Back_15_00"); //Знаешь, верни мне мои деньги, я передумал.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Back_06_01"); //Как хочешь.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Back_15_00"); //Р—РЅР°РµС€СЊ, РІРµСЂРЅРё РјРЅРµ РјРѕРё РґРµРЅСЊРіРё, СЏ РїРµСЂРµРґСѓРјР°Р».
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Back_06_01"); //РљР°Рє С…РѕС‡РµС€СЊ.
 	
 	B_GiveInvItems (self,other,ItMi_Gold,50);
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -219,10 +219,10 @@ FUNC VOID DIA_Kjorn_BuyInfos_Back ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Dragon1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon1_15_00"); //Расскажи мне о драконах.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_01"); //Драконы - это древние невероятно сильные создания. Когда-то их было многие тысячи.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_02"); //Но уже больше сотни лет ни одного из них не было видно.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_03"); //Их кровь горяча, как кипящее масло. Если они посмотрят в твои глаза, твое сердце обратится в камень. Ну, так я слышал...
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon1_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РґСЂР°РєРѕРЅР°С….
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_01"); //Р”СЂР°РєРѕРЅС‹ - СЌС‚Рѕ РґСЂРµРІРЅРёРµ РЅРµРІРµСЂРѕСЏС‚РЅРѕ СЃРёР»СЊРЅС‹Рµ СЃРѕР·РґР°РЅРёСЏ. РљРѕРіРґР°-С‚Рѕ РёС… Р±С‹Р»Рѕ РјРЅРѕРіРёРµ С‚С‹СЃСЏС‡Рё.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_02"); //РќРѕ СѓР¶Рµ Р±РѕР»СЊС€Рµ СЃРѕС‚РЅРё Р»РµС‚ РЅРё РѕРґРЅРѕРіРѕ РёР· РЅРёС… РЅРµ Р±С‹Р»Рѕ РІРёРґРЅРѕ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_03"); //РС… РєСЂРѕРІСЊ РіРѕСЂСЏС‡Р°, РєР°Рє РєРёРїСЏС‰РµРµ РјР°СЃР»Рѕ. Р•СЃР»Рё РѕРЅРё РїРѕСЃРјРѕС‚СЂСЏС‚ РІ С‚РІРѕРё РіР»Р°Р·Р°, С‚РІРѕРµ СЃРµСЂРґС†Рµ РѕР±СЂР°С‚РёС‚СЃСЏ РІ РєР°РјРµРЅСЊ. РќСѓ, С‚Р°Рє СЏ СЃР»С‹С€Р°Р»...
 	
 	KjornToldDragon = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -230,12 +230,12 @@ FUNC VOID DIA_Kjorn_BuyInfos_Dragon1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Dragon2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon2_15_00"); //Расскажи мне подробнее о драконах.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_01"); //Все драконы разные.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_02"); //Некоторые из них могут покрыть землю слоем льда несколько футов толщиной.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_03"); //Другие же предпочитают жить в болотистой местности или в вулканах.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon2_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ Рѕ РґСЂР°РєРѕРЅР°С….
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_01"); //Р’СЃРµ РґСЂР°РєРѕРЅС‹ СЂР°Р·РЅС‹Рµ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_02"); //РќРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅРёС… РјРѕРіСѓС‚ РїРѕРєСЂС‹С‚СЊ Р·РµРјР»СЋ СЃР»РѕРµРј Р»СЊРґР° РЅРµСЃРєРѕР»СЊРєРѕ С„СѓС‚РѕРІ С‚РѕР»С‰РёРЅРѕР№.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_03"); //Р”СЂСѓРіРёРµ Р¶Рµ РїСЂРµРґРїРѕС‡РёС‚Р°СЋС‚ Р¶РёС‚СЊ РІ Р±РѕР»РѕС‚РёСЃС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё РёР»Рё РІ РІСѓР»РєР°РЅР°С….
 	
-	B_LogEntry (TOPIC_DRACHENJAGD,"Охотник на драконов Кйорн полагает, что драконы бывают различных типов. Некоторые из них предпочитают холодные, сырые места, а другим, по его мнению, больше нравится огонь."); 
+	B_LogEntry (TOPIC_DRACHENJAGD,"РћС…РѕС‚РЅРёРє РЅР° РґСЂР°РєРѕРЅРѕРІ РљР№РѕСЂРЅ РїРѕР»Р°РіР°РµС‚, С‡С‚Рѕ РґСЂР°РєРѕРЅС‹ Р±С‹РІР°СЋС‚ СЂР°Р·Р»РёС‡РЅС‹С… С‚РёРїРѕРІ. РќРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅРёС… РїСЂРµРґРїРѕС‡РёС‚Р°СЋС‚ С…РѕР»РѕРґРЅС‹Рµ, СЃС‹СЂС‹Рµ РјРµСЃС‚Р°, Р° РґСЂСѓРіРёРј, РїРѕ РµРіРѕ РјРЅРµРЅРёСЋ, Р±РѕР»СЊС€Рµ РЅСЂР°РІРёС‚СЃСЏ РѕРіРѕРЅСЊ."); 
 
 	KjornToldDragon = 2;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -246,11 +246,11 @@ FUNC VOID DIA_Kjorn_BuyInfos_Dragon2 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Colony1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony1_15_00"); //Расскажи мне о Долине Рудников.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_01"); //Долина Рудников Хориниса известна всей стране из-за своей магической руды.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_02"); //Эти горы - единственное место, где встречается магическая руда.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_03"); //Оружие, выкованное из этой руды, никогда не ломается и может пробить даже самую прочную броню.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_04"); //До последнего времени вся долина была окружена магическим барьером. Он был непроницаем, и никто не мог выйти наружу.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony1_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_01"); //Р”РѕР»РёРЅР° Р СѓРґРЅРёРєРѕРІ РҐРѕСЂРёРЅРёСЃР° РёР·РІРµСЃС‚РЅР° РІСЃРµР№ СЃС‚СЂР°РЅРµ РёР·-Р·Р° СЃРІРѕРµР№ РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_02"); //Р­С‚Рё РіРѕСЂС‹ - РµРґРёРЅСЃС‚РІРµРЅРЅРѕРµ РјРµСЃС‚Рѕ, РіРґРµ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ РјР°РіРёС‡РµСЃРєР°СЏ СЂСѓРґР°.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_03"); //РћСЂСѓР¶РёРµ, РІС‹РєРѕРІР°РЅРЅРѕРµ РёР· СЌС‚РѕР№ СЂСѓРґС‹, РЅРёРєРѕРіРґР° РЅРµ Р»РѕРјР°РµС‚СЃСЏ Рё РјРѕР¶РµС‚ РїСЂРѕР±РёС‚СЊ РґР°Р¶Рµ СЃР°РјСѓСЋ РїСЂРѕС‡РЅСѓСЋ Р±СЂРѕРЅСЋ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_04"); //Р”Рѕ РїРѕСЃР»РµРґРЅРµРіРѕ РІСЂРµРјРµРЅРё РІСЃСЏ РґРѕР»РёРЅР° Р±С‹Р»Р° РѕРєСЂСѓР¶РµРЅР° РјР°РіРёС‡РµСЃРєРёРј Р±Р°СЂСЊРµСЂРѕРј. РћРЅ Р±С‹Р» РЅРµРїСЂРѕРЅРёС†Р°РµРј, Рё РЅРёРєС‚Рѕ РЅРµ РјРѕРі РІС‹Р№С‚Рё РЅР°СЂСѓР¶Сѓ.
 
 	KjornToldColony = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -258,11 +258,11 @@ FUNC VOID DIA_Kjorn_BuyInfos_Colony1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Colony2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony2_15_00"); //Расскажи мне подробнее о Долине Рудников.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_01"); //Долина сильно изменилась за последние несколько дней.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_02"); //Когда пришли орки, вместе с ними появились и другие ужасные создания, многих из которых раньше никогда здесь не видели.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_03"); //Говорят, что несколько охотников-одиночек все еще находятся в долине, но я не уверен, что они еще живы.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_04"); //Создается впечатление, что все создания Белиара вдруг толпами ринулись в эту долину.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony2_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_01"); //Р”РѕР»РёРЅР° СЃРёР»СЊРЅРѕ РёР·РјРµРЅРёР»Р°СЃСЊ Р·Р° РїРѕСЃР»РµРґРЅРёРµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_02"); //РљРѕРіРґР° РїСЂРёС€Р»Рё РѕСЂРєРё, РІРјРµСЃС‚Рµ СЃ РЅРёРјРё РїРѕСЏРІРёР»РёСЃСЊ Рё РґСЂСѓРіРёРµ СѓР¶Р°СЃРЅС‹Рµ СЃРѕР·РґР°РЅРёСЏ, РјРЅРѕРіРёС… РёР· РєРѕС‚РѕСЂС‹С… СЂР°РЅСЊС€Рµ РЅРёРєРѕРіРґР° Р·РґРµСЃСЊ РЅРµ РІРёРґРµР»Рё.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_03"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РЅРµСЃРєРѕР»СЊРєРѕ РѕС…РѕС‚РЅРёРєРѕРІ-РѕРґРёРЅРѕС‡РµРє РІСЃРµ РµС‰Рµ РЅР°С…РѕРґСЏС‚СЃСЏ РІ РґРѕР»РёРЅРµ, РЅРѕ СЏ РЅРµ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РѕРЅРё РµС‰Рµ Р¶РёРІС‹.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_04"); //РЎРѕР·РґР°РµС‚СЃСЏ РІРїРµС‡Р°С‚Р»РµРЅРёРµ, С‡С‚Рѕ РІСЃРµ СЃРѕР·РґР°РЅРёСЏ Р‘РµР»РёР°СЂР° РІРґСЂСѓРі С‚РѕР»РїР°РјРё СЂРёРЅСѓР»РёСЃСЊ РІ СЌС‚Сѓ РґРѕР»РёРЅСѓ.
 	
 	KjornToldColony = 2;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -272,9 +272,9 @@ FUNC VOID DIA_Kjorn_BuyInfos_Colony2 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_OldCamp1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_OldCamp1_15_00"); //Расскажи мне о замке.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_01"); //Он находится в самом центре Долины Рудников.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_02"); //Когда долина еще была тюрьмой, рудные бароны контролировали всю торговлю рудой отсюда.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_OldCamp1_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р·Р°РјРєРµ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_01"); //РћРЅ РЅР°С…РѕРґРёС‚СЃСЏ РІ СЃР°РјРѕРј С†РµРЅС‚СЂРµ Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_02"); //РљРѕРіРґР° РґРѕР»РёРЅР° РµС‰Рµ Р±С‹Р»Р° С‚СЋСЂСЊРјРѕР№, СЂСѓРґРЅС‹Рµ Р±Р°СЂРѕРЅС‹ РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°Р»Рё РІСЃСЋ С‚РѕСЂРіРѕРІР»СЋ СЂСѓРґРѕР№ РѕС‚СЃСЋРґР°.
 	
 	KjornToldOldCamp = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -285,10 +285,10 @@ FUNC VOID DIA_Kjorn_BuyInfos_OldCamp1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Orks1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks1_15_00"); //Расскажи мне об орках.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_01"); //Орки появились здесь недавно. По крайней мере, те орки, что сейчас перед замком.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_02"); //Но мне удивительно, как организованно они себя ведут. Орки обычно атакуют слепо, не взирая ни на что.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_03"); //А эти орки выжидают подходящего момента. Они ждут, но мы не знаем чего.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks1_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РѕСЂРєР°С….
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_01"); //РћСЂРєРё РїРѕСЏРІРёР»РёСЃСЊ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‚Рµ РѕСЂРєРё, С‡С‚Рѕ СЃРµР№С‡Р°СЃ РїРµСЂРµРґ Р·Р°РјРєРѕРј.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_02"); //РќРѕ РјРЅРµ СѓРґРёРІРёС‚РµР»СЊРЅРѕ, РєР°Рє РѕСЂРіР°РЅРёР·РѕРІР°РЅРЅРѕ РѕРЅРё СЃРµР±СЏ РІРµРґСѓС‚. РћСЂРєРё РѕР±С‹С‡РЅРѕ Р°С‚Р°РєСѓСЋС‚ СЃР»РµРїРѕ, РЅРµ РІР·РёСЂР°СЏ РЅРё РЅР° С‡С‚Рѕ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_03"); //Рђ СЌС‚Рё РѕСЂРєРё РІС‹Р¶РёРґР°СЋС‚ РїРѕРґС…РѕРґСЏС‰РµРіРѕ РјРѕРјРµРЅС‚Р°. РћРЅРё Р¶РґСѓС‚, РЅРѕ РјС‹ РЅРµ Р·РЅР°РµРј С‡РµРіРѕ.
 	
 	KjornToldOrks = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -296,9 +296,9 @@ FUNC VOID DIA_Kjorn_BuyInfos_Orks1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Orks2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks2_15_00"); //Расскажи мне подробнее об орках.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_01"); //Орков возглавляют элитные воины. Эти воины очень сильны и облачены в хорошие доспехи. Их почти невозможно убить.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_02"); //Я как-то видел, как один из них срубил большой дуб одним ударом своего топора.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks2_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ РѕР± РѕСЂРєР°С….
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_01"); //РћСЂРєРѕРІ РІРѕР·РіР»Р°РІР»СЏСЋС‚ СЌР»РёС‚РЅС‹Рµ РІРѕРёРЅС‹. Р­С‚Рё РІРѕРёРЅС‹ РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹ Рё РѕР±Р»Р°С‡РµРЅС‹ РІ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё. РС… РїРѕС‡С‚Рё РЅРµРІРѕР·РјРѕР¶РЅРѕ СѓР±РёС‚СЊ.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_02"); //РЇ РєР°Рє-С‚Рѕ РІРёРґРµР», РєР°Рє РѕРґРёРЅ РёР· РЅРёС… СЃСЂСѓР±РёР» Р±РѕР»СЊС€РѕР№ РґСѓР± РѕРґРЅРёРј СѓРґР°СЂРѕРј СЃРІРѕРµРіРѕ С‚РѕРїРѕСЂР°.
 	
 	KjornToldOrks = 2;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -314,7 +314,7 @@ INSTANCE DIA_Kjorn_AllDragonsDead   (C_INFO)
 	condition   = DIA_Kjorn_AllDragonsDead_Condition;
 	information = DIA_Kjorn_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Я убил всех драконов!";
+	description	= "РЇ СѓР±РёР» РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ!";
 				
 };
 
@@ -328,9 +328,9 @@ FUNC INT DIA_Kjorn_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Kjorn_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_AllDragonsDead_15_00"); //Я убил всех драконов!
-	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_01"); //(смеется) Конечно, а я паладин.
-	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_02"); //Возможно, ты убил ОДНОГО, но чтобы всех? Иди, поищи дурака, который поверит тебе.
+	AI_Output	(other,self ,"DIA_Kjorn_AllDragonsDead_15_00"); //РЇ СѓР±РёР» РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ!
+	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_01"); //(СЃРјРµРµС‚СЃСЏ) РљРѕРЅРµС‡РЅРѕ, Р° СЏ РїР°Р»Р°РґРёРЅ.
+	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_02"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚С‹ СѓР±РёР» РћР”РќРћР“Рћ, РЅРѕ С‡С‚РѕР±С‹ РІСЃРµС…? РРґРё, РїРѕРёС‰Рё РґСѓСЂР°РєР°, РєРѕС‚РѕСЂС‹Р№ РїРѕРІРµСЂРёС‚ С‚РµР±Рµ.
 };
 
 // ************************************************************

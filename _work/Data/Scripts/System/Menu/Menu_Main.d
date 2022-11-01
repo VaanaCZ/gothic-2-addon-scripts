@@ -35,8 +35,8 @@ const int MENU_MAIN_Y = 2500;
 instance MENUITEM_MAIN_NEWGAME(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Новая игра";
-	text[1]		= "Старт нового приключения";  // Kommentar
+	text[0]		= "РќРѕРІР°СЏ РёРіСЂР°";
+	text[1]		= "РЎС‚Р°СЂС‚ РЅРѕРІРѕРіРѕ РїСЂРёРєР»СЋС‡РµРЅРёСЏ";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*0;
@@ -57,8 +57,8 @@ instance MENUITEM_MAIN_NEWGAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_SAVEGAME_LOAD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Загрузка игры";
-	text[1]		=	"Продолжить сохраненную игру";  // Kommentar
+	text[0]		=	"Р—Р°РіСЂСѓР·РєР° РёРіСЂС‹";
+	text[1]		=	"РџСЂРѕРґРѕР»Р¶РёС‚СЊ СЃРѕС…СЂР°РЅРµРЅРЅСѓСЋ РёРіСЂСѓ";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		=  0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*1;
@@ -73,8 +73,8 @@ INSTANCE MENUITEM_MAIN_SAVEGAME_LOAD(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_SAVEGAME_SAVE(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Сохранение игры";
-	text[1]		= "Сохранение текущей игры";  // Kommentar
+	text[0]		= "РЎРѕС…СЂР°РЅРµРЅРёРµ РёРіСЂС‹";
+	text[1]		= "РЎРѕС…СЂР°РЅРµРЅРёРµ С‚РµРєСѓС‰РµР№ РёРіСЂС‹";  // Kommentar
 	
 	// Positionen  und Dimensionen
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*2;
@@ -95,8 +95,8 @@ instance MENUITEM_MAIN_SAVEGAME_SAVE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_RESUME(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Продолжить";
-	text[1]		=   "Продолжить текущую игру";  // Kommentar
+	text[0]		=	"РџСЂРѕРґРѕР»Р¶РёС‚СЊ";
+	text[1]		=   "РџСЂРѕРґРѕР»Р¶РёС‚СЊ С‚РµРєСѓС‰СѓСЋ РёРіСЂСѓ";  // Kommentar
 	
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_MAIN_Y + MENU_MAIN_DY*3;
@@ -115,8 +115,8 @@ INSTANCE MENUITEM_MAIN_RESUME(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_OPTIONS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Опции";
-	text[1]		= "Опции графики, звука и игровые опции";  // Kommentar
+	text[0]		= "РћРїС†РёРё";
+	text[1]		= "РћРїС†РёРё РіСЂР°С„РёРєРё, Р·РІСѓРєР° Рё РёРіСЂРѕРІС‹Рµ РѕРїС†РёРё";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*4;
@@ -132,8 +132,8 @@ instance MENUITEM_MAIN_OPTIONS(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Заставка";
-	text[1]		= "Проиграть заставку";
+	text[0]		= "Р—Р°СЃС‚Р°РІРєР°";
+	text[1]		= "РџСЂРѕРёРіСЂР°С‚СЊ Р·Р°СЃС‚Р°РІРєСѓ";
 	// Positionen  und Dimensione	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*5;
 	dimx		= 8100;		dimy		=  750;
@@ -147,8 +147,8 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Титры";
-	text[1]		= "Титры";  // Kommentar
+	text[0]		= "РўРёС‚СЂС‹";
+	text[1]		= "РўРёС‚СЂС‹";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*6;
@@ -168,8 +168,8 @@ INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_EXIT(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Выйти из игры";
-	text[1]		= "Выйти из Gothic II";  // Kommentar
+	text[0]		= "Р’С‹Р№С‚Рё РёР· РёРіСЂС‹";
+	text[1]		= "Р’С‹Р№С‚Рё РёР· Gothic II";  // Kommentar
 	
 	// Positionen  und Dimensionen
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*7;	

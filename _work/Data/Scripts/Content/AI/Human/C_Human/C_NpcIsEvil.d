@@ -1,7 +1,7 @@
 // ******************************************************************
 // C_NpcIsEvil
 // -------------
-// überprüft anhand der gilden ob slf evil ist
+// ÑŒberprÑŒft anhand der gilden ob slf evil ist
 // ******************************************************************
 
 func int C_NpcIsEvil(var C_NPC slf)

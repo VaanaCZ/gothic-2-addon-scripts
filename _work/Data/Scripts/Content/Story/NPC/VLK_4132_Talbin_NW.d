@@ -6,7 +6,7 @@
 instance VLK_4132_Talbin_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "“‡Î·ËÌ";
+	name 		= "–¢–∞–ª–±–∏–Ω";
 	guild 		= GIL_VLK;
 	id 			= 4132;
 	voice 		= 7;
@@ -35,8 +35,8 @@ instance VLK_4132_Talbin_NW (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 30); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 30); //Grenzen f—år Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_PreStart_4132;

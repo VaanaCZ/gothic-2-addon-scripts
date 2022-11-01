@@ -1,7 +1,7 @@
 instance STRF_1121_Addon_Telbor (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Телбор"; 
+	name 		= "РўРµР»Р±РѕСЂ"; 
 	guild 		= GIL_STRF;
 	id 			= 1121;
 	voice 		= 12;

@@ -31,7 +31,7 @@ instance DIA_Rumbold_PrePerm (C_INFO)
 	condition	= DIA_Rumbold_PrePerm_Condition;
 	information	= DIA_Rumbold_PrePerm_Info;
 	permanent 	= TRUE;
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Rumbold_PrePerm_Condition ()
@@ -44,8 +44,8 @@ func int DIA_Rumbold_PrePerm_Condition ()
 
 func void DIA_Rumbold_PrePerm_Info ()
 {
-	AI_Output			(other, self, "DIA_Rumbold_PrePerm_15_00"); //Что вы делаете здесь?
-	AI_Output			(self, other, "DIA_Rumbold_PrePerm_10_01"); //Проваливай! Понял?
+	AI_Output			(other, self, "DIA_Rumbold_PrePerm_15_00"); //Р§С‚Рѕ РІС‹ РґРµР»Р°РµС‚Рµ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Rumbold_PrePerm_10_01"); //РџСЂРѕРІР°Р»РёРІР°Р№! РџРѕРЅСЏР»?
 
 	AI_StopProcessInfos (self);
 };
@@ -73,27 +73,27 @@ func int DIA_Rumbold_Hallo_Condition ()
 
 func void DIA_Rumbold_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Rumbold_Hallo_10_00"); //Посмотрите на него! Еще один клоун! Что ты здесь делаешь, а?
+	AI_Output (self, other, "DIA_Rumbold_Hallo_10_00"); //РџРѕСЃРјРѕС‚СЂРёС‚Рµ РЅР° РЅРµРіРѕ! Р•С‰Рµ РѕРґРёРЅ РєР»РѕСѓРЅ! Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ, Р°?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Rumbold_Hallo_10_01"); //Кто ты, черт тебя побери?
+		AI_Output (self, other, "DIA_Rumbold_Hallo_10_01"); //РљС‚Рѕ С‚С‹, С‡РµСЂС‚ С‚РµР±СЏ РїРѕР±РµСЂРё?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rumbold_Hallo_10_02"); //Еще один из этих грязных наемников!
+		AI_Output (self, other, "DIA_Rumbold_Hallo_10_02"); //Р•С‰Рµ РѕРґРёРЅ РёР· СЌС‚РёС… РіСЂСЏР·РЅС‹С… РЅР°РµРјРЅРёРєРѕРІ!
 	};
 		
 	Info_ClearChoices	(DIA_Rumbold_HALLO);
 
-	Info_AddChoice	(DIA_Rumbold_HALLO, "Я никто.", DIA_Rumbold_HALLO_schwanzeinziehen );
-	Info_AddChoice	(DIA_Rumbold_HALLO, "Я хочу, чтобы вы исчезли отсюда.", DIA_Rumbold_HALLO_verschwindet );
-	Info_AddChoice	(DIA_Rumbold_HALLO, "Я твой худший кошмар.", DIA_Rumbold_HALLO_Attack );
+	Info_AddChoice	(DIA_Rumbold_HALLO, "РЇ РЅРёРєС‚Рѕ.", DIA_Rumbold_HALLO_schwanzeinziehen );
+	Info_AddChoice	(DIA_Rumbold_HALLO, "РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РІС‹ РёСЃС‡РµР·Р»Рё РѕС‚СЃСЋРґР°.", DIA_Rumbold_HALLO_verschwindet );
+	Info_AddChoice	(DIA_Rumbold_HALLO, "РЇ С‚РІРѕР№ С…СѓРґС€РёР№ РєРѕС€РјР°СЂ.", DIA_Rumbold_HALLO_Attack );
 
 };
 func void DIA_Rumbold_HALLO_Attack ()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_Attack_15_00"); //Я твой худший кошмар.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_Attack_10_01"); //Считай, что ты уже труп!
+	AI_Output (other, self, "DIA_Rumbold_HALLO_Attack_15_00"); //РЇ С‚РІРѕР№ С…СѓРґС€РёР№ РєРѕС€РјР°СЂ.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_Attack_10_01"); //РЎС‡РёС‚Р°Р№, С‡С‚Рѕ С‚С‹ СѓР¶Рµ С‚СЂСѓРї!
 
 	Info_ClearChoices	(DIA_Rumbold_HALLO);
 	Info_AddChoice	(DIA_Rumbold_HALLO, DIALOG_ENDE, DIA_Rumbold_HALLO_ENDAttack );
@@ -101,20 +101,20 @@ func void DIA_Rumbold_HALLO_Attack ()
 
 func void DIA_Rumbold_HALLO_verschwindet ()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_verschwindet_15_00"); //Я хочу, чтобы вы исчезли отсюда.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_verschwindet_10_01"); //Так-так. То есть, ты хочешь, чтобы мы исчезли?
-	AI_Output (self, other, "DIA_Rumbold_HALLO_verschwindet_10_02"); //(угрожающе) А что будет, если мы этого не сделаем, эй?
+	AI_Output (other, self, "DIA_Rumbold_HALLO_verschwindet_15_00"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РІС‹ РёСЃС‡РµР·Р»Рё РѕС‚СЃСЋРґР°.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_verschwindet_10_01"); //РўР°Рє-С‚Р°Рє. РўРѕ РµСЃС‚СЊ, С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ РјС‹ РёСЃС‡РµР·Р»Рё?
+	AI_Output (self, other, "DIA_Rumbold_HALLO_verschwindet_10_02"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Рђ С‡С‚Рѕ Р±СѓРґРµС‚, РµСЃР»Рё РјС‹ СЌС‚РѕРіРѕ РЅРµ СЃРґРµР»Р°РµРј, СЌР№?
 
 	Info_ClearChoices	(DIA_Rumbold_HALLO);
 
-	Info_AddChoice	(DIA_Rumbold_HALLO, "А что если я заплачу вам, чтобы вы убрались отсюда?", DIA_Rumbold_HALLO_geld);
-	Info_AddChoice	(DIA_Rumbold_HALLO, "В таком случае, вы больше никогда не сможете беспокоить этих фермеров.", DIA_Rumbold_HALLO_AufsMaul);
+	Info_AddChoice	(DIA_Rumbold_HALLO, "Рђ С‡С‚Рѕ РµСЃР»Рё СЏ Р·Р°РїР»Р°С‡Сѓ РІР°Рј, С‡С‚РѕР±С‹ РІС‹ СѓР±СЂР°Р»РёСЃСЊ РѕС‚СЃСЋРґР°?", DIA_Rumbold_HALLO_geld);
+	Info_AddChoice	(DIA_Rumbold_HALLO, "Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, РІС‹ Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ СЃРјРѕР¶РµС‚Рµ Р±РµСЃРїРѕРєРѕРёС‚СЊ СЌС‚РёС… С„РµСЂРјРµСЂРѕРІ.", DIA_Rumbold_HALLO_AufsMaul);
 };
 
 func void DIA_Rumbold_HALLO_AufsMaul()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_AufsMaul_15_00"); //В таком случае, вы больше никогда не сможете беспокоить этих фермеров.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_AufsMaul_10_01"); //Ты откусил больше, чем можешь проглотить, кретин!
+	AI_Output (other, self, "DIA_Rumbold_HALLO_AufsMaul_15_00"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, РІС‹ Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ СЃРјРѕР¶РµС‚Рµ Р±РµСЃРїРѕРєРѕРёС‚СЊ СЌС‚РёС… С„РµСЂРјРµСЂРѕРІ.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_AufsMaul_10_01"); //РўС‹ РѕС‚РєСѓСЃРёР» Р±РѕР»СЊС€Рµ, С‡РµРј РјРѕР¶РµС€СЊ РїСЂРѕРіР»РѕС‚РёС‚СЊ, РєСЂРµС‚РёРЅ!
 	
 	Info_ClearChoices	(DIA_Rumbold_HALLO);
 	Info_AddChoice	(DIA_Rumbold_HALLO, DIALOG_ENDE, DIA_Rumbold_HALLO_ENDAttack );
@@ -122,25 +122,25 @@ func void DIA_Rumbold_HALLO_AufsMaul()
 
 func void DIA_Rumbold_HALLO_geld ()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_15_00"); //А что если я заплачу вам, чтобы вы убрались отсюда?
-	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_01"); //Ты хочешь заплатить за Бенгара? Это другое дело.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_02"); //Дай подумать. Учитывая все, что он нам задолжал, это будет 65 золотых монет.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_03"); //Либо плати, либо убирайся с дороги.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_04"); //Ох. А ты что, казначей Бенгара?
+	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_15_00"); //Рђ С‡С‚Рѕ РµСЃР»Рё СЏ Р·Р°РїР»Р°С‡Сѓ РІР°Рј, С‡С‚РѕР±С‹ РІС‹ СѓР±СЂР°Р»РёСЃСЊ РѕС‚СЃСЋРґР°?
+	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_01"); //РўС‹ С…РѕС‡РµС€СЊ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° Р‘РµРЅРіР°СЂР°? Р­С‚Рѕ РґСЂСѓРіРѕРµ РґРµР»Рѕ.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_02"); //Р”Р°Р№ РїРѕРґСѓРјР°С‚СЊ. РЈС‡РёС‚С‹РІР°СЏ РІСЃРµ, С‡С‚Рѕ РѕРЅ РЅР°Рј Р·Р°РґРѕР»Р¶Р°Р», СЌС‚Рѕ Р±СѓРґРµС‚ 65 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_03"); //Р›РёР±Рѕ РїР»Р°С‚Рё, Р»РёР±Рѕ СѓР±РёСЂР°Р№СЃСЏ СЃ РґРѕСЂРѕРіРё.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_04"); //РћС…. Рђ С‚С‹ С‡С‚Рѕ, РєР°Р·РЅР°С‡РµР№ Р‘РµРЅРіР°СЂР°?
 	
 	Info_ClearChoices (DIA_Rumbold_HALLO);
-	Info_AddChoice (DIA_Rumbold_HALLO, "Ты с ума сошел? Это слишком много.", DIA_Rumbold_HALLO_Geld_TooMuch);
+	Info_AddChoice (DIA_Rumbold_HALLO, "РўС‹ СЃ СѓРјР° СЃРѕС€РµР»? Р­С‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.", DIA_Rumbold_HALLO_Geld_TooMuch);
 	if (Npc_HasItems (other, itmi_gold) >= 65)
 	{
-		Info_AddChoice (DIA_Rumbold_HALLO, "Вот деньги. А теперь проваливайте.", DIA_Rumbold_HALLO_geld_ok);
+		Info_AddChoice (DIA_Rumbold_HALLO, "Р’РѕС‚ РґРµРЅСЊРіРё. Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№С‚Рµ.", DIA_Rumbold_HALLO_geld_ok);
 	};
 };
 
 func void DIA_Rumbold_HALLO_geld_ok ()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_ok_15_00"); //Вот деньги. А теперь проваливайте.
+	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_ok_15_00"); //Р’РѕС‚ РґРµРЅСЊРіРё. Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№С‚Рµ.
 	B_GiveInvItems (other, self, ItMi_Gold, 65);
-	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_ok_10_01"); //Меня не волнует, кто платит за Бенгара. Удачи. (себе под нос) Кретин!
+	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_ok_10_01"); //РњРµРЅСЏ РЅРµ РІРѕР»РЅСѓРµС‚, РєС‚Рѕ РїР»Р°С‚РёС‚ Р·Р° Р‘РµРЅРіР°СЂР°. РЈРґР°С‡Рё. (СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РљСЂРµС‚РёРЅ!
 	
 	AI_StopProcessInfos (self);
 
@@ -165,15 +165,15 @@ func void DIA_Rumbold_HALLO_geld_ok ()
 
 func void DIA_Rumbold_HALLO_Geld_TooMuch()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_TooMuch_15_00"); //Ты с ума сошел? Это слишком много.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_TooMuch_10_01"); //Тогда прочь с дороги!
+	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_TooMuch_15_00"); //РўС‹ СЃ СѓРјР° СЃРѕС€РµР»? Р­С‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_TooMuch_10_01"); //РўРѕРіРґР° РїСЂРѕС‡СЊ СЃ РґРѕСЂРѕРіРё!
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Rumbold_HALLO_schwanzeinziehen ()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_schwanzeinziehen_15_00"); //Я никто.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_schwanzeinziehen_10_01"); //Тогда убирайся с моей дороги!
+	AI_Output (other, self, "DIA_Rumbold_HALLO_schwanzeinziehen_15_00"); //РЇ РЅРёРєС‚Рѕ.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_schwanzeinziehen_10_01"); //РўРѕРіРґР° СѓР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РґРѕСЂРѕРіРё!
 
 	AI_StopProcessInfos (self);
 };
@@ -200,7 +200,7 @@ instance DIA_Rumbold_FightNow (C_INFO)
 	condition	= DIA_Rumbold_FightNow_Condition;
 	information	= DIA_Rumbold_FightNow_Info;
 	permanent 	= TRUE;
-	description = "Оставьте этого фермера в покое!";
+	description = "РћСЃС‚Р°РІСЊС‚Рµ СЌС‚РѕРіРѕ С„РµСЂРјРµСЂР° РІ РїРѕРєРѕРµ!";
 };
 
 func int DIA_Rumbold_FightNow_Condition ()
@@ -214,8 +214,8 @@ func int DIA_Rumbold_FightNow_Condition ()
 
 func void DIA_Rumbold_FightNow_Info ()
 {
-	AI_Output (other, self, "DIA_Rumbold_FightNow_15_00"); //Оставьте этого фермера в покое!
-	AI_Output (self, other, "DIA_Rumbold_FightNow_10_01"); //Ты что, оглох, сынок?
+	AI_Output (other, self, "DIA_Rumbold_FightNow_15_00"); //РћСЃС‚Р°РІСЊС‚Рµ СЌС‚РѕРіРѕ С„РµСЂРјРµСЂР° РІ РїРѕРєРѕРµ!
+	AI_Output (self, other, "DIA_Rumbold_FightNow_10_01"); //РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…, СЃС‹РЅРѕРє?
 	
 	Info_ClearChoices	(DIA_Rumbold_FightNow);
 	Info_AddChoice	(DIA_Rumbold_FightNow, DIALOG_ENDE, DIA_Rumbold_FightNow_ENDAttack );
@@ -243,7 +243,7 @@ instance DIA_Rumbold_StillThere (C_INFO)
 	condition	= DIA_Rumbold_StillThere_Condition;
 	information	= DIA_Rumbold_StillThere_Info;
 	permanent 	= TRUE;
-	description = "Вы еще здесь?!";
+	description = "Р’С‹ РµС‰Рµ Р·РґРµСЃСЊ?!";
 };
 
 func int DIA_Rumbold_StillThere_Condition ()
@@ -257,8 +257,8 @@ func int DIA_Rumbold_StillThere_Condition ()
 
 func void DIA_Rumbold_StillThere_Info ()
 {
-	AI_Output (other, self, "DIA_Rumbold_StillThere_15_00"); //Вы еще здесь?!
-	AI_Output (self, other, "DIA_Rumbold_StillThere_10_01"); //Сейчас ты у меня попляшешь!
+	AI_Output (other, self, "DIA_Rumbold_StillThere_15_00"); //Р’С‹ РµС‰Рµ Р·РґРµСЃСЊ?!
+	AI_Output (self, other, "DIA_Rumbold_StillThere_10_01"); //РЎРµР№С‡Р°СЃ С‚С‹ Сѓ РјРµРЅСЏ РїРѕРїР»СЏС€РµС€СЊ!
 	
 	Info_ClearChoices	(DIA_Rumbold_StillThere);
 	Info_AddChoice	(DIA_Rumbold_StillThere, DIALOG_ENDE, DIA_Rumbold_StillThere_ENDAttack );

@@ -14,9 +14,9 @@ FUNC VOID B_GiveTradeInv_Zuris (var C_NPC slf)
 		CreateInvItems (slf,ItPo_Health_01	,10);
 		CreateInvItems (slf, ItPo_Health_Addon_04,	2);
 		CreateInvItems (slf, ItPo_Mana_Addon_04,		2);
-		CreateInvItems (slf,ItMi_ApfelTabak	,2); //für Abuyin
-		CreateInvItems (slf,ItWr_Astronomy_Mis,1);	//Für  Mission HygalsBringBook
-		CreateInvItems (slf,ItFo_Addon_Pfeffer_01,1);//FÜR Mission fortuno
+		CreateInvItems (slf,ItMi_ApfelTabak	,2); //fÑŒr Abuyin
+		CreateInvItems (slf,ItWr_Astronomy_Mis,1);	//FÑŒr  Mission HygalsBringBook
+		CreateInvItems (slf,ItFo_Addon_Pfeffer_01,1);//FÐ¬R Mission fortuno
 		
 		// ------ Scrolls ------
 		CreateInvItems (slf,ItSc_Light			,6);

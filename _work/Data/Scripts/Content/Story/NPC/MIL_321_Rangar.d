@@ -2,7 +2,7 @@
 instance Mil_321_Rangar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Рангар";	
+	name 		= "Р Р°РЅРіР°СЂ";	
 	guild 		= GIL_MIL;
 	id 			= 321;
 	voice 		= 7;

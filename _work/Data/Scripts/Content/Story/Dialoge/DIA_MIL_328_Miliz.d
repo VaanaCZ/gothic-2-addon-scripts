@@ -38,11 +38,11 @@ func int DIA_328_Miliz_Hi_Condition ()
 };
 func void DIA_328_Miliz_Hi_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Эй, тебе нечего делать здесь. Понятно?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Кто ты такой?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Это не твое дело! Здесь я главный. Понял?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Главный? Над чем? Над этими сундуками?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Эй, этот склад находится в моем ведении, понял? Так что проваливай, или я раскрою твой череп.
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Р­Р№, С‚РµР±Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ Р·РґРµСЃСЊ. РџРѕРЅСЏС‚РЅРѕ?
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //РљС‚Рѕ С‚С‹ С‚Р°РєРѕР№?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ! Р—РґРµСЃСЊ СЏ РіР»Р°РІРЅС‹Р№. РџРѕРЅСЏР»?
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Р“Р»Р°РІРЅС‹Р№? РќР°Рґ С‡РµРј? РќР°Рґ СЌС‚РёРјРё СЃСѓРЅРґСѓРєР°РјРё?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Р­Р№, СЌС‚РѕС‚ СЃРєР»Р°Рґ РЅР°С…РѕРґРёС‚СЃСЏ РІ РјРѕРµРј РІРµРґРµРЅРёРё, РїРѕРЅСЏР»? РўР°Рє С‡С‚Рѕ РїСЂРѕРІР°Р»РёРІР°Р№, РёР»Рё СЏ СЂР°СЃРєСЂРѕСЋ С‚РІРѕР№ С‡РµСЂРµРї.
 	
 	AI_StopProcessInfos (self);
 	
@@ -69,8 +69,8 @@ func int DIA_328_Miliz_Kill_Condition ()
 };
 func void DIA_328_Miliz_Kill_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Эй, ты все еще здесь! Разве я не сказал тебе, чтобы ты проваливал?
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //Ну, держись! Сейчас я покажу тебе, кто здесь главный!
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Р­Р№, С‚С‹ РІСЃРµ РµС‰Рµ Р·РґРµСЃСЊ! Р Р°Р·РІРµ СЏ РЅРµ СЃРєР°Р·Р°Р» С‚РµР±Рµ, С‡С‚РѕР±С‹ С‚С‹ РїСЂРѕРІР°Р»РёРІР°Р»?
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //РќСѓ, РґРµСЂР¶РёСЃСЊ! РЎРµР№С‡Р°СЃ СЏ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ, РєС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№!
 	
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);

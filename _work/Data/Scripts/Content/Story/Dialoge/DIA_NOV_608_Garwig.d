@@ -28,7 +28,7 @@ INSTANCE DIA_Garwig_Wurst(C_INFO)
 	condition	= DIA_Garwig_Wurst_Condition;
 	information	= DIA_Garwig_Wurst_Info;
 	permanent	= FALSE;
-	description = "Хочешь колбасы?";
+	description = "РҐРѕС‡РµС€СЊ РєРѕР»Р±Р°СЃС‹?";
 };                       
 
 FUNC INT DIA_Garwig_Wurst_Condition()
@@ -44,8 +44,8 @@ FUNC INT DIA_Garwig_Wurst_Condition()
 
 FUNC VOID DIA_Garwig_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Garwig_Wurst_15_00"); //Хочешь колбасы?
-	AI_Output (self, other, "DIA_Garwig_Wurst_06_01"); //Ах, как вкусно. Огромное спасибо тебе, брат.
+	AI_Output (other, self, "DIA_Garwig_Wurst_15_00"); //РҐРѕС‡РµС€СЊ РєРѕР»Р±Р°СЃС‹?
+	AI_Output (self, other, "DIA_Garwig_Wurst_06_01"); //РђС…, РєР°Рє РІРєСѓСЃРЅРѕ. РћРіСЂРѕРјРЅРѕРµ СЃРїР°СЃРёР±Рѕ С‚РµР±Рµ, Р±СЂР°С‚.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -80,9 +80,9 @@ FUNC INT DIA_Garwig_Hello_Condition()
 };
 FUNC VOID DIA_Garwig_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Garwig_Hello_06_00"); //Да пребудет с тобой Иннос, я никогда не видел тебя раньше. Ты новенький здесь?
-	AI_Output (other ,self,"DIA_Garwig_Hello_15_01"); //Да, я только что стал послушником.
-	AI_Output (self ,other,"DIA_Garwig_Hello_06_02"); //Тогда я желаю тебе освоиться здесь побыстрее. Дай мне знать, если тебе понадобится помощь.
+	AI_Output (self ,other,"DIA_Garwig_Hello_06_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РРЅРЅРѕСЃ, СЏ РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР» С‚РµР±СЏ СЂР°РЅСЊС€Рµ. РўС‹ РЅРѕРІРµРЅСЊРєРёР№ Р·РґРµСЃСЊ?
+	AI_Output (other ,self,"DIA_Garwig_Hello_15_01"); //Р”Р°, СЏ С‚РѕР»СЊРєРѕ С‡С‚Рѕ СЃС‚Р°Р» РїРѕСЃР»СѓС€РЅРёРєРѕРј.
+	AI_Output (self ,other,"DIA_Garwig_Hello_06_02"); //РўРѕРіРґР° СЏ Р¶РµР»Р°СЋ С‚РµР±Рµ РѕСЃРІРѕРёС‚СЊСЃСЏ Р·РґРµСЃСЊ РїРѕР±С‹СЃС‚СЂРµРµ. Р”Р°Р№ РјРЅРµ Р·РЅР°С‚СЊ, РµСЃР»Рё С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РїРѕРјРѕС‰СЊ.
 };
 //**************************************************************************
 //	Info Hello 
@@ -94,7 +94,7 @@ INSTANCE DIA_Garwig_Room   (C_INFO)
 	condition   = DIA_Garwig_Room_Condition;
 	information = DIA_Garwig_Room_Info;
 	permanent   = FALSE;
-	description	= "Что это за комната?";
+	description	= "Р§С‚Рѕ СЌС‚Рѕ Р·Р° РєРѕРјРЅР°С‚Р°?";
 };
 FUNC INT DIA_Garwig_Room_Condition()
 {	
@@ -102,10 +102,10 @@ FUNC INT DIA_Garwig_Room_Condition()
 };
 FUNC VOID DIA_Garwig_Room_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Room_15_00"); //Что это за комната?
-	AI_Output (self ,other,"DIA_Garwig_Room_06_01"); //Здесь хранятся священные реликвии монастыря.
-	AI_Output (other,self ,"DIA_Garwig_Room_15_02"); //Какие реликвии?
-	AI_Output (self ,other,"DIA_Garwig_Room_06_03"); //Здесь покоится Молот Инноса, а также Щит Огня. Это самые важные реликвии Церкви Инноса здесь, вдали от столицы королевства.
+	AI_Output (other,self ,"DIA_Garwig_Room_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° РєРѕРјРЅР°С‚Р°?
+	AI_Output (self ,other,"DIA_Garwig_Room_06_01"); //Р—РґРµСЃСЊ С…СЂР°РЅСЏС‚СЃСЏ СЃРІСЏС‰РµРЅРЅС‹Рµ СЂРµР»РёРєРІРёРё РјРѕРЅР°СЃС‚С‹СЂСЏ.
+	AI_Output (other,self ,"DIA_Garwig_Room_15_02"); //РљР°РєРёРµ СЂРµР»РёРєРІРёРё?
+	AI_Output (self ,other,"DIA_Garwig_Room_06_03"); //Р—РґРµСЃСЊ РїРѕРєРѕРёС‚СЃСЏ РњРѕР»РѕС‚ РРЅРЅРѕСЃР°, Р° С‚Р°РєР¶Рµ Р©РёС‚ РћРіРЅСЏ. Р­С‚Рѕ СЃР°РјС‹Рµ РІР°Р¶РЅС‹Рµ СЂРµР»РёРєРІРёРё Р¦РµСЂРєРІРё РРЅРЅРѕСЃР° Р·РґРµСЃСЊ, РІРґР°Р»Рё РѕС‚ СЃС‚РѕР»РёС†С‹ РєРѕСЂРѕР»РµРІСЃС‚РІР°.
 };
 //**************************************************************************
 //	Info Hammer 
@@ -117,7 +117,7 @@ INSTANCE DIA_Garwig_Hammer  (C_INFO)
 	condition   = DIA_Garwig_Hammer_Condition;
 	information = DIA_Garwig_Hammer_Info;
 	permanent   = TRUE;
-	description	= "Расскажи мне об этом молоте.";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј РјРѕР»РѕС‚Рµ.";
 };
 FUNC INT DIA_Garwig_Hammer_Condition()
 {
@@ -128,10 +128,10 @@ FUNC INT DIA_Garwig_Hammer_Condition()
 };
 FUNC VOID DIA_Garwig_Hammer_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Hammer_15_00"); //Расскажи мне об этом молоте.
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_01"); //Это священный Молот Инноса. Этим молотом святой Робар поразил Каменного Часового.
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_02"); //В священных писаниях говорится, что Каменный часовой был неуязвим. Он возвышался над полем боя, как башня, и оружие его врагов разбивалось о его каменную кожу.
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_03"); //С именем Инноса на устах, Робар бросился на этого монстра и поразил его одним могучим ударом своего молота.
+	AI_Output (other,self ,"DIA_Garwig_Hammer_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј РјРѕР»РѕС‚Рµ.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_01"); //Р­С‚Рѕ СЃРІСЏС‰РµРЅРЅС‹Р№ РњРѕР»РѕС‚ РРЅРЅРѕСЃР°. Р­С‚РёРј РјРѕР»РѕС‚РѕРј СЃРІСЏС‚РѕР№ Р РѕР±Р°СЂ РїРѕСЂР°Р·РёР» РљР°РјРµРЅРЅРѕРіРѕ Р§Р°СЃРѕРІРѕРіРѕ.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_02"); //Р’ СЃРІСЏС‰РµРЅРЅС‹С… РїРёСЃР°РЅРёСЏС… РіРѕРІРѕСЂРёС‚СЃСЏ, С‡С‚Рѕ РљР°РјРµРЅРЅС‹Р№ С‡Р°СЃРѕРІРѕР№ Р±С‹Р» РЅРµСѓСЏР·РІРёРј. РћРЅ РІРѕР·РІС‹С€Р°Р»СЃСЏ РЅР°Рґ РїРѕР»РµРј Р±РѕСЏ, РєР°Рє Р±Р°С€РЅСЏ, Рё РѕСЂСѓР¶РёРµ РµРіРѕ РІСЂР°РіРѕРІ СЂР°Р·Р±РёРІР°Р»РѕСЃСЊ Рѕ РµРіРѕ РєР°РјРµРЅРЅСѓСЋ РєРѕР¶Сѓ.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_03"); //РЎ РёРјРµРЅРµРј РРЅРЅРѕСЃР° РЅР° СѓСЃС‚Р°С…, Р РѕР±Р°СЂ Р±СЂРѕСЃРёР»СЃСЏ РЅР° СЌС‚РѕРіРѕ РјРѕРЅСЃС‚СЂР° Рё РїРѕСЂР°Р·РёР» РµРіРѕ РѕРґРЅРёРј РјРѕРіСѓС‡РёРј СѓРґР°СЂРѕРј СЃРІРѕРµРіРѕ РјРѕР»РѕС‚Р°.
 };
 //**************************************************************************
 //	Info Schild 
@@ -143,7 +143,7 @@ INSTANCE DIA_Garwig_Shield  (C_INFO)
 	condition   = DIA_Garwig_Shield_Condition;
 	information = DIA_Garwig_Shield_Info;
 	permanent   = FALSE;
-	description	= "Расскажи мне об этом щите.";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј С‰РёС‚Рµ.";
 };
 FUNC INT DIA_Garwig_Shield_Condition()
 {
@@ -154,9 +154,9 @@ FUNC INT DIA_Garwig_Shield_Condition()
 };
 FUNC VOID DIA_Garwig_Shield_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Shield_15_00"); //Расскажи мне об этом щите.
-	AI_Output (self ,other,"DIA_Garwig_Shield_06_01"); //Щит Огня принадлежал Доминику в битве на Южных островах.
-	AI_Output (self ,other,"DIA_Garwig_Shield_06_02"); //Но сила этого щита не должна  больше использоваться - поэтому, мы прибили его на стене.
+	AI_Output (other,self ,"DIA_Garwig_Shield_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј С‰РёС‚Рµ.
+	AI_Output (self ,other,"DIA_Garwig_Shield_06_01"); //Р©РёС‚ РћРіРЅСЏ РїСЂРёРЅР°РґР»РµР¶Р°Р» Р”РѕРјРёРЅРёРєСѓ РІ Р±РёС‚РІРµ РЅР° Р®Р¶РЅС‹С… РѕСЃС‚СЂРѕРІР°С….
+	AI_Output (self ,other,"DIA_Garwig_Shield_06_02"); //РќРѕ СЃРёР»Р° СЌС‚РѕРіРѕ С‰РёС‚Р° РЅРµ РґРѕР»Р¶РЅР°  Р±РѕР»СЊС€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ - РїРѕСЌС‚РѕРјСѓ, РјС‹ РїСЂРёР±РёР»Рё РµРіРѕ РЅР° СЃС‚РµРЅРµ.
 };
 //**************************************************************************
 //	Info Auge Innos
@@ -168,7 +168,7 @@ INSTANCE DIA_Garwig_Auge  (C_INFO)
 	condition   = DIA_Garwig_Auge_Condition;
 	information = DIA_Garwig_Auge_Info;
 	permanent   = FALSE;
-	description	= "А Глаз Инноса тоже храниться здесь?";
+	description	= "Рђ Р“Р»Р°Р· РРЅРЅРѕСЃР° С‚РѕР¶Рµ С…СЂР°РЅРёС‚СЊСЃСЏ Р·РґРµСЃСЊ?";
 };
 FUNC INT DIA_Garwig_Auge_Condition()
 {
@@ -180,8 +180,8 @@ FUNC INT DIA_Garwig_Auge_Condition()
 };
 FUNC VOID DIA_Garwig_Auge_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Auge_15_00"); //А Глаз Инноса тоже храниться здесь?
-	AI_Output (self ,other,"DIA_Garwig_Auge_06_01"); //Конечно нет. Что за странная мысль. Никто не знает, где хранится этот божественный артефакт.
+	AI_Output (other,self ,"DIA_Garwig_Auge_15_00"); //Рђ Р“Р»Р°Р· РРЅРЅРѕСЃР° С‚РѕР¶Рµ С…СЂР°РЅРёС‚СЊСЃСЏ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Garwig_Auge_06_01"); //РљРѕРЅРµС‡РЅРѕ РЅРµС‚. Р§С‚Рѕ Р·Р° СЃС‚СЂР°РЅРЅР°СЏ РјС‹СЃР»СЊ. РќРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚, РіРґРµ С…СЂР°РЅРёС‚СЃСЏ СЌС‚РѕС‚ Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ Р°СЂС‚РµС„Р°РєС‚.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SLEEP
@@ -193,7 +193,7 @@ instance DIA_Garwig_SLEEP		(C_INFO)
 	condition	 = 	DIA_Garwig_SLEEP_Condition;
 	information	 = 	DIA_Garwig_SLEEP_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 func int DIA_Garwig_SLEEP_Condition ()
 {
@@ -204,14 +204,14 @@ func int DIA_Garwig_SLEEP_Condition ()
 };
 func void DIA_Garwig_SLEEP_Info ()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_15_00"); //Что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_06_01"); //Я страж священных артефактов.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_06_01"); //РЇ СЃС‚СЂР°Р¶ СЃРІСЏС‰РµРЅРЅС‹С… Р°СЂС‚РµС„Р°РєС‚РѕРІ.
 	
 	Info_ClearChoices 	(DIA_Garwig_SLEEP);
 	Info_AddChoice 		(DIA_Garwig_SLEEP,DIALOG_BACK,DIA_Garwig_SLEEP_BACK);
-	Info_AddChoice 		(DIA_Garwig_SLEEP,"Что если я сменю тебя ненадолго?",DIA_Garwig_SLEEP_EXCHANGE);
-	Info_AddChoice 		(DIA_Garwig_SLEEP,"Почему эти артефакты охраняются?",DIA_Garwig_SLEEP_THIEF);
-	Info_AddChoice 		(DIA_Garwig_SLEEP,"Ты когда-нибудь спишь?",DIA_Garwig_SLEEP_NEVER);
+	Info_AddChoice 		(DIA_Garwig_SLEEP,"Р§С‚Рѕ РµСЃР»Рё СЏ СЃРјРµРЅСЋ С‚РµР±СЏ РЅРµРЅР°РґРѕР»РіРѕ?",DIA_Garwig_SLEEP_EXCHANGE);
+	Info_AddChoice 		(DIA_Garwig_SLEEP,"РџРѕС‡РµРјСѓ СЌС‚Рё Р°СЂС‚РµС„Р°РєС‚С‹ РѕС…СЂР°РЅСЏСЋС‚СЃСЏ?",DIA_Garwig_SLEEP_THIEF);
+	Info_AddChoice 		(DIA_Garwig_SLEEP,"РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ СЃРїРёС€СЊ?",DIA_Garwig_SLEEP_NEVER);
 };
 FUNC VOID DIA_Garwig_SLEEP_BACK()
 {
@@ -219,30 +219,30 @@ FUNC VOID DIA_Garwig_SLEEP_BACK()
 };
 FUNC VOID DIA_Garwig_SLEEP_EXCHANGE()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_EXCHANGE_15_00"); //Что если я сменю тебя ненадолго?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_01"); //Это испытание? Маги послали тебя испытать меня, правильно? Оох, я знал это!
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_02"); //Но я пройду это испытание. Скажи своим магам, что я был непоколебимым как скала и что я буду сопротивляться всем искушениям. Что я хороший страж.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_EXCHANGE_15_00"); //Р§С‚Рѕ РµСЃР»Рё СЏ СЃРјРµРЅСЋ С‚РµР±СЏ РЅРµРЅР°РґРѕР»РіРѕ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_01"); //Р­С‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ? РњР°РіРё РїРѕСЃР»Р°Р»Рё С‚РµР±СЏ РёСЃРїС‹С‚Р°С‚СЊ РјРµРЅСЏ, РїСЂР°РІРёР»СЊРЅРѕ? РћРѕС…, СЏ Р·РЅР°Р» СЌС‚Рѕ!
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_02"); //РќРѕ СЏ РїСЂРѕР№РґСѓ СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ. РЎРєР°Р¶Рё СЃРІРѕРёРј РјР°РіР°Рј, С‡С‚Рѕ СЏ Р±С‹Р» РЅРµРїРѕРєРѕР»РµР±РёРјС‹Рј РєР°Рє СЃРєР°Р»Р° Рё С‡С‚Рѕ СЏ Р±СѓРґСѓ СЃРѕРїСЂРѕС‚РёРІР»СЏС‚СЊСЃСЏ РІСЃРµРј РёСЃРєСѓС€РµРЅРёСЏРј. Р§С‚Рѕ СЏ С…РѕСЂРѕС€РёР№ СЃС‚СЂР°Р¶.
 };
 FUNC VOID DIA_Garwig_SLEEP_THIEF()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_THIEF_15_00"); //Почему эти артефакты охраняются? Есть причины полагать, что они могут быть украдены?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_01"); //Что за бредовая мысль. С чего ты это взял?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_02"); //Только те, кто служит Инносу, могут входить в монастырь. И ни у кого из истинных верующих такая мысль даже появиться не может.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_THIEF_15_00"); //РџРѕС‡РµРјСѓ СЌС‚Рё Р°СЂС‚РµС„Р°РєС‚С‹ РѕС…СЂР°РЅСЏСЋС‚СЃСЏ? Р•СЃС‚СЊ РїСЂРёС‡РёРЅС‹ РїРѕР»Р°РіР°С‚СЊ, С‡С‚Рѕ РѕРЅРё РјРѕРіСѓС‚ Р±С‹С‚СЊ СѓРєСЂР°РґРµРЅС‹?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_01"); //Р§С‚Рѕ Р·Р° Р±СЂРµРґРѕРІР°СЏ РјС‹СЃР»СЊ. РЎ С‡РµРіРѕ С‚С‹ СЌС‚Рѕ РІР·СЏР»?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_02"); //РўРѕР»СЊРєРѕ С‚Рµ, РєС‚Рѕ СЃР»СѓР¶РёС‚ РРЅРЅРѕСЃСѓ, РјРѕРіСѓС‚ РІС…РѕРґРёС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. Р РЅРё Сѓ РєРѕРіРѕ РёР· РёСЃС‚РёРЅРЅС‹С… РІРµСЂСѓСЋС‰РёС… С‚Р°РєР°СЏ РјС‹СЃР»СЊ РґР°Р¶Рµ РїРѕСЏРІРёС‚СЊСЃСЏ РЅРµ РјРѕР¶РµС‚.
 };
 FUNC VOID DIA_Garwig_SLEEP_NEVER()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_NEVER_15_00"); //Ты когда-нибудь спишь?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_01"); //Что за необычное замечание. Конечно же, я никогда не сплю. Сам Иннос дарует мне силы обходиться без сна.
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_02"); //Как же иначе мог бы я выполнять священные обязанности стража?
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_NEVER_15_00"); //РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ СЃРїРёС€СЊ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_01"); //Р§С‚Рѕ Р·Р° РЅРµРѕР±С‹С‡РЅРѕРµ Р·Р°РјРµС‡Р°РЅРёРµ. РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РЅРёРєРѕРіРґР° РЅРµ СЃРїР»СЋ. РЎР°Рј РРЅРЅРѕСЃ РґР°СЂСѓРµС‚ РјРЅРµ СЃРёР»С‹ РѕР±С…РѕРґРёС‚СЊСЃСЏ Р±РµР· СЃРЅР°.
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_02"); //РљР°Рє Р¶Рµ РёРЅР°С‡Рµ РјРѕРі Р±С‹ СЏ РІС‹РїРѕР»РЅСЏС‚СЊ СЃРІСЏС‰РµРЅРЅС‹Рµ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё СЃС‚СЂР°Р¶Р°?
 	
 	Info_ClearChoices 	(DIA_Garwig_SLEEP);
-	Info_AddChoice (DIA_Garwig_SLEEP,"Ты действительно НИКОГДА не спишь?",DIA_Garwig_SLEEP_AGAIN);
+	Info_AddChoice (DIA_Garwig_SLEEP,"РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РќРРљРћР“Р”Рђ РЅРµ СЃРїРёС€СЊ?",DIA_Garwig_SLEEP_AGAIN);
 };
 FUNC VOID DIA_Garwig_SLEEP_AGAIN()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_AGAIN_15_00"); //Ты действительно НИКОГДА не спишь?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_01"); //Нет. Если страж заснет, он провалит свое испытание.
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_02"); //Но я не провалюсь, ведь Иннос дает мне силы и выносливость, и я никогда не устаю.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_AGAIN_15_00"); //РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РќРРљРћР“Р”Рђ РЅРµ СЃРїРёС€СЊ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_01"); //РќРµС‚. Р•СЃР»Рё СЃС‚СЂР°Р¶ Р·Р°СЃРЅРµС‚, РѕРЅ РїСЂРѕРІР°Р»РёС‚ СЃРІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ.
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_02"); //РќРѕ СЏ РЅРµ РїСЂРѕРІР°Р»СЋСЃСЊ, РІРµРґСЊ РРЅРЅРѕСЃ РґР°РµС‚ РјРЅРµ СЃРёР»С‹ Рё РІС‹РЅРѕСЃР»РёРІРѕСЃС‚СЊ, Рё СЏ РЅРёРєРѕРіРґР° РЅРµ СѓСЃС‚Р°СЋ.
 	
 	
 };
@@ -271,18 +271,18 @@ func void DIA_Garwig_THIEF_Info ()
 					
 	if (Hammer_Taken == TRUE) 
 	{ 
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_00"); //(разочаровано) Вор! Ты опозорил не только себя и меня, но и весь монастырь!
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_01"); //Ты поплатишься за это святотатство. И, заклинаю Инносом - ВЕРНИ МНЕ ЭТОТ МОЛОТ!
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_00"); //(СЂР°Р·РѕС‡Р°СЂРѕРІР°РЅРѕ) Р’РѕСЂ! РўС‹ РѕРїРѕР·РѕСЂРёР» РЅРµ С‚РѕР»СЊРєРѕ СЃРµР±СЏ Рё РјРµРЅСЏ, РЅРѕ Рё РІРµСЃСЊ РјРѕРЅР°СЃС‚С‹СЂСЊ!
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_01"); //РўС‹ РїРѕРїР»Р°С‚РёС€СЊСЃСЏ Р·Р° СЌС‚Рѕ СЃРІСЏС‚РѕС‚Р°С‚СЃС‚РІРѕ. Р, Р·Р°РєР»РёРЅР°СЋ РРЅРЅРѕСЃРѕРј - Р’Р•Р РќР РњРќР• Р­РўРћРў РњРћР›РћРў!
 		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_02"); //(в отчаянии) Молот исчез! Как это могло произойти?
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_03"); //Я провалил испытание. Иннос накажет меня!
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_02"); //(РІ РѕС‚С‡Р°СЏРЅРёРё) РњРѕР»РѕС‚ РёСЃС‡РµР·! РљР°Рє СЌС‚Рѕ РјРѕРіР»Рѕ РїСЂРѕРёР·РѕР№С‚Рё?
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_03"); //РЇ РїСЂРѕРІР°Р»РёР» РёСЃРїС‹С‚Р°РЅРёРµ. РРЅРЅРѕСЃ РЅР°РєР°Р¶РµС‚ РјРµРЅСЏ!
 	};	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Hammer zurьckbringen (immer wenn Spieler den Hammer hat)
+//	Info Hammer zurСЊckbringen (immer wenn Spieler den Hammer hat)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Garwig_Abgeben		(C_INFO)
 {
@@ -291,7 +291,7 @@ instance DIA_Garwig_Abgeben		(C_INFO)
 	condition	 = 	DIA_Garwig_Abgeben_Condition;
 	information	 = 	DIA_Garwig_Abgeben_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Я принес молот назад.";
+	description	 =  "РЇ РїСЂРёРЅРµСЃ РјРѕР»РѕС‚ РЅР°Р·Р°Рґ.";
 };
 func int DIA_Garwig_Abgeben_Condition ()
 {	
@@ -302,17 +302,17 @@ func int DIA_Garwig_Abgeben_Condition ()
 };
 func void DIA_Garwig_Abgeben_Info ()
 {
-	AI_Output (other, self, "DIA_Garwig_Abgeben_15_00"); //Я принес молот назад.
+	AI_Output (other, self, "DIA_Garwig_Abgeben_15_00"); //РЇ РїСЂРёРЅРµСЃ РјРѕР»РѕС‚ РЅР°Р·Р°Рґ.
 	
 	if (Hammer_Taken == TRUE)
 	{
-		AI_Output (self, other, "DIA_Garwig_Abgeben_06_01"); //Ах ты подлый вор!
+		AI_Output (self, other, "DIA_Garwig_Abgeben_06_01"); //РђС… С‚С‹ РїРѕРґР»С‹Р№ РІРѕСЂ!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Garwig_Abgeben_06_02"); //Так это ты взял его...
+		AI_Output (self, other, "DIA_Garwig_Abgeben_06_02"); //РўР°Рє СЌС‚Рѕ С‚С‹ РІР·СЏР» РµРіРѕ...
 	};
-	AI_Output (self, other, "DIA_Garwig_Abgeben_06_03"); //Но я не вправе судить тебя. Пусть Иннос осудит тебя, и ты понесешь заслуженную кару!
+	AI_Output (self, other, "DIA_Garwig_Abgeben_06_03"); //РќРѕ СЏ РЅРµ РІРїСЂР°РІРµ СЃСѓРґРёС‚СЊ С‚РµР±СЏ. РџСѓСЃС‚СЊ РРЅРЅРѕСЃ РѕСЃСѓРґРёС‚ С‚РµР±СЏ, Рё С‚С‹ РїРѕРЅРµСЃРµС€СЊ Р·Р°СЃР»СѓР¶РµРЅРЅСѓСЋ РєР°СЂСѓ!
 	
 	B_GiveInvItems (other,self, Holy_Hammer_MIS,1);
 	Hammer_Taken = FALSE;

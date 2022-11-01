@@ -81,12 +81,12 @@ func void DIA_Addon_Martin_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Martin_MeetingIsRunning_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_07_00"); //Итак, ты новенький? Добро пожаловать в Братство, брат по Кольцу.
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_07_00"); //РС‚Р°Рє, С‚С‹ РЅРѕРІРµРЅСЊРєРёР№? Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ Р‘СЂР°С‚СЃС‚РІРѕ, Р±СЂР°С‚ РїРѕ РљРѕР»СЊС†Сѓ.
 		DIA_Addon_Martin_MeetingIsRunning_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_07_01"); //Сначала ты должен сходить к Ватрасу. Возможно, потом у меня найдется для тебя время.
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_07_01"); //РЎРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ СЃС…РѕРґРёС‚СЊ Рє Р’Р°С‚СЂР°СЃСѓ. Р’РѕР·РјРѕР¶РЅРѕ, РїРѕС‚РѕРј Сѓ РјРµРЅСЏ РЅР°Р№РґРµС‚СЃСЏ РґР»СЏ С‚РµР±СЏ РІСЂРµРјСЏ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -119,7 +119,7 @@ func int DIA_Addon_Martin_Hallo_Condition ()
 
 func void DIA_Addon_Martin_Hallo_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Martin_Hallo_07_00"); //Эй, ты! Нечего тебе здесь делать. Здесь могут находиться только паладины и люди из ополчения.
+	AI_Output	(self, other, "DIA_Addon_Martin_Hallo_07_00"); //Р­Р№, С‚С‹! РќРµС‡РµРіРѕ С‚РµР±Рµ Р·РґРµСЃСЊ РґРµР»Р°С‚СЊ. Р—РґРµСЃСЊ РјРѕРіСѓС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ С‚РѕР»СЊРєРѕ РїР°Р»Р°РґРёРЅС‹ Рё Р»СЋРґРё РёР· РѕРїРѕР»С‡РµРЅРёСЏ.
 };
 
 
@@ -133,7 +133,7 @@ instance DIA_Addon_Martin_WasMachstDu		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_WasMachstDu_Condition;
 	information	 = 	DIA_Addon_Martin_WasMachstDu_Info;
 
-	description	 = 	"А что это за место?";
+	description	 = 	"Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° РјРµСЃС‚Рѕ?";
 };
 
 func int DIA_Addon_Martin_WasMachstDu_Condition ()
@@ -146,14 +146,14 @@ func int DIA_Addon_Martin_WasMachstDu_Condition ()
 
 func void DIA_Addon_Martin_WasMachstDu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_WasMachstDu_15_00"); //А что это за место?
-	AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_01"); //Здесь хранятся запасы королевской гвардии паладинов.
+	AI_Output	(other, self, "DIA_Addon_Martin_WasMachstDu_15_00"); //Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° РјРµСЃС‚Рѕ?
+	AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_01"); //Р—РґРµСЃСЊ С…СЂР°РЅСЏС‚СЃСЏ Р·Р°РїР°СЃС‹ РєРѕСЂРѕР»РµРІСЃРєРѕР№ РіРІР°СЂРґРёРё РїР°Р»Р°РґРёРЅРѕРІ.
 	
 	if (other.guild == GIL_NONE)
 	&& (SC_IsRanger == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_02"); //Я - интендант, и я отвечаю за то, чтобы не пропало ничего из находящегося здесь. А тебе здесь не место.
-		AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_03"); //Так что не трогай здесь ничего, иначе останешься без рук.
+		AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_02"); //РЇ - РёРЅС‚РµРЅРґР°РЅС‚, Рё СЏ РѕС‚РІРµС‡Р°СЋ Р·Р° С‚Рѕ, С‡С‚РѕР±С‹ РЅРµ РїСЂРѕРїР°Р»Рѕ РЅРёС‡РµРіРѕ РёР· РЅР°С…РѕРґСЏС‰РµРіРѕСЃСЏ Р·РґРµСЃСЊ. Рђ С‚РµР±Рµ Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ.
+		AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_03"); //РўР°Рє С‡С‚Рѕ РЅРµ С‚СЂРѕРіР°Р№ Р·РґРµСЃСЊ РЅРёС‡РµРіРѕ, РёРЅР°С‡Рµ РѕСЃС‚Р°РЅРµС€СЊСЃСЏ Р±РµР· СЂСѓРє.
 	};
 };
 
@@ -167,7 +167,7 @@ instance DIA_Addon_Martin_PreTrade		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_PreTrade_Condition;
 	information	 = 	DIA_Addon_Martin_PreTrade_Info;
 
-	description	 = 	"Ты можешь мне продать что-нибудь из вещей паладинов?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїСЂРѕРґР°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР· РІРµС‰РµР№ РїР°Р»Р°РґРёРЅРѕРІ?";
 };
 
 func int DIA_Addon_Martin_PreTrade_Condition ()
@@ -180,11 +180,11 @@ func int DIA_Addon_Martin_PreTrade_Condition ()
 
 func void DIA_Addon_Martin_PreTrade_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_00"); //Ты можешь мне продать что-нибудь из вещей паладинов?
-	AI_Output	(self, other, "DIA_Addon_Martin_PreTrade_07_01"); //Хм-м... Скажем так, если ты компенсируешь мне те неприятности, которые у меня возникнут, когда пропажи обнаружатся, то мы можем договориться.
-	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_02"); //И часто случаются пропажи вещей?
-	AI_Output	(self, other, "DIA_Addon_Martin_PreTrade_07_03"); //Нет, пока интендант говорит, что все в порядке.
-	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_04"); //Понимаю.
+	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїСЂРѕРґР°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР· РІРµС‰РµР№ РїР°Р»Р°РґРёРЅРѕРІ?
+	AI_Output	(self, other, "DIA_Addon_Martin_PreTrade_07_01"); //РҐРј-Рј... РЎРєР°Р¶РµРј С‚Р°Рє, РµСЃР»Рё С‚С‹ РєРѕРјРїРµРЅСЃРёСЂСѓРµС€СЊ РјРЅРµ С‚Рµ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё, РєРѕС‚РѕСЂС‹Рµ Сѓ РјРµРЅСЏ РІРѕР·РЅРёРєРЅСѓС‚, РєРѕРіРґР° РїСЂРѕРїР°Р¶Рё РѕР±РЅР°СЂСѓР¶Р°С‚СЃСЏ, С‚Рѕ РјС‹ РјРѕР¶РµРј РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ.
+	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_02"); //Р С‡Р°СЃС‚Рѕ СЃР»СѓС‡Р°СЋС‚СЃСЏ РїСЂРѕРїР°Р¶Рё РІРµС‰РµР№?
+	AI_Output	(self, other, "DIA_Addon_Martin_PreTrade_07_03"); //РќРµС‚, РїРѕРєР° РёРЅС‚РµРЅРґР°РЅС‚ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.
+	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_04"); //РџРѕРЅРёРјР°СЋ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -197,7 +197,7 @@ instance DIA_Addon_Martin_Farim		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_Farim_Condition;
 	information	 = 	DIA_Addon_Martin_Farim_Info;
 
-	description	 = 	"У рыбака Фарима проблемы с ополчением. У него постоянно отбирают весь улов.";
+	description	 = 	"РЈ СЂС‹Р±Р°РєР° Р¤Р°СЂРёРјР° РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј. РЈ РЅРµРіРѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ РѕС‚Р±РёСЂР°СЋС‚ РІРµСЃСЊ СѓР»РѕРІ.";
 };
 
 func int DIA_Addon_Martin_Farim_Condition ()
@@ -211,16 +211,16 @@ func int DIA_Addon_Martin_Farim_Condition ()
 
 func void DIA_Addon_Martin_Farim_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_00"); //У рыбака Фарима проблемы с ополчением. У него постоянно отбирают весь улов.
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_01"); //И почему меня это должно интересовать?
-	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_02"); //Ну, у тебя есть определенное влияние среди паладинов.
-	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_03"); //Фариму нужна твоя защита. Он готов отдавать тебе за нее часть улова.
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_04"); //Я понимаю, о чем ты говоришь.
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_05"); //Рыба! Как будто у меня без этого не хватало забот!
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_06"); //Скажи своему приятелю, чтобы он пришел ко мне и рассказал, что именно у него стряслось с ополчением.
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_07"); //Я разберусь с этим делом.
+	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_00"); //РЈ СЂС‹Р±Р°РєР° Р¤Р°СЂРёРјР° РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј. РЈ РЅРµРіРѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ РѕС‚Р±РёСЂР°СЋС‚ РІРµСЃСЊ СѓР»РѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_01"); //Р РїРѕС‡РµРјСѓ РјРµРЅСЏ СЌС‚Рѕ РґРѕР»Р¶РЅРѕ РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ?
+	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_02"); //РќСѓ, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РѕРїСЂРµРґРµР»РµРЅРЅРѕРµ РІР»РёСЏРЅРёРµ СЃСЂРµРґРё РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_03"); //Р¤Р°СЂРёРјСѓ РЅСѓР¶РЅР° С‚РІРѕСЏ Р·Р°С‰РёС‚Р°. РћРЅ РіРѕС‚РѕРІ РѕС‚РґР°РІР°С‚СЊ С‚РµР±Рµ Р·Р° РЅРµРµ С‡Р°СЃС‚СЊ СѓР»РѕРІР°.
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_04"); //РЇ РїРѕРЅРёРјР°СЋ, Рѕ С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_05"); //Р С‹Р±Р°! РљР°Рє Р±СѓРґС‚Рѕ Сѓ РјРµРЅСЏ Р±РµР· СЌС‚РѕРіРѕ РЅРµ С…РІР°С‚Р°Р»Рѕ Р·Р°Р±РѕС‚!
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_06"); //РЎРєР°Р¶Рё СЃРІРѕРµРјСѓ РїСЂРёСЏС‚РµР»СЋ, С‡С‚РѕР±С‹ РѕРЅ РїСЂРёС€РµР» РєРѕ РјРЅРµ Рё СЂР°СЃСЃРєР°Р·Р°Р», С‡С‚Рѕ РёРјРµРЅРЅРѕ Сѓ РЅРµРіРѕ СЃС‚СЂСЏСЃР»РѕСЃСЊ СЃ РѕРїРѕР»С‡РµРЅРёРµРј.
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_07"); //РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ СЌС‚РёРј РґРµР»РѕРј.
 	
-	B_LogEntry (TOPIC_Addon_FarimsFish,	"Интендант Мартин позаботится об этом."); 
+	B_LogEntry (TOPIC_Addon_FarimsFish,	"РРЅС‚РµРЅРґР°РЅС‚ РњР°СЂС‚РёРЅ РїРѕР·Р°Р±РѕС‚РёС‚СЃСЏ РѕР± СЌС‚РѕРј."); 
 
 	Martin_KnowsFarim = TRUE;
 	B_GivePlayerXP (XP_Addon_FarimSchutz);
@@ -238,7 +238,7 @@ instance DIA_Addon_Martin_Trade		(C_INFO)
 	Trade		 = 	TRUE;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Что ты можешь предложить мне?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?";
 };
 
 func int DIA_Addon_Martin_Trade_Condition ()
@@ -259,9 +259,9 @@ func void DIA_Addon_Martin_Trade_Info ()
 	};
 	
 	
-	AI_Output	(other, self, "DIA_Addon_Martin_Trade_15_00"); //Что ты можешь предложить?
+	AI_Output	(other, self, "DIA_Addon_Martin_Trade_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ?
 	B_GiveTradeInv (self);
-	AI_Output	(self, other, "DIA_Addon_Martin_Trade_07_01"); //Что ж, смотри внимательно.
+	AI_Output	(self, other, "DIA_Addon_Martin_Trade_07_01"); //Р§С‚Рѕ Р¶, СЃРјРѕС‚СЂРё РІРЅРёРјР°С‚РµР»СЊРЅРѕ.
 };
 
 
@@ -275,7 +275,7 @@ instance DIA_Addon_Martin_Rangerhelp		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_Rangerhelp_Condition;
 	information	 = 	DIA_Addon_Martin_Rangerhelp_Info;
 
-	description	 = 	"Меня послал Ларес. Он сказал, что ты можешь мне помочь.";
+	description	 = 	"РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›Р°СЂРµСЃ. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ.";
 };
 
 func int DIA_Addon_Martin_Rangerhelp_Condition ()
@@ -290,22 +290,22 @@ func int DIA_Addon_Martin_Rangerhelp_Condition ()
 
 func void DIA_Addon_Martin_Rangerhelp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_00"); //Меня послал Ларес. Он сказал, что ты можешь мне помочь.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_01"); //Да? И что же тебе от меня нужно?
-	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_02"); //Я хочу присоединиться к ополчению.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_03"); //(смеется) Итак, ты хочешь вступить в наши ряды? Мы, знаешь ли, не берем просто так людей с улицы.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_04"); //Тебе, возможно, придется...
-	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_05"); //Оставь свои нравоучения при себе. Просто скажи, что нужно сделать для то, чтобы вступить в ополчение.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_06"); //(удивленно) Ну хорошо. Тогда слушай меня внимательно.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_07"); //Надо сказать, что работа интенданта - та еще каторга. Разобраться со всеми этими ящиками и мешками совсем не просто.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_08"); //А каждый раз, когда я после работы расслабляюсь в таверне Кардифа, кто-то копается в ящиках с запасами, и наутро я обнаруживаю, что что-то пропало.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_09"); //(сердито) Довольно странно, что эти паладины ничего не замечают.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_10"); //Я так просто рехнусь. Не могу же я всю ночь торчать здесь, как последний идиот.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_11"); //Ты, с другой стороны...
-	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_12"); //Я понял. Ты хочешь, чтобы я посторожил ящики, пока ты пьешь в таверне.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_13"); //Соглашайся или уходи.
+	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›Р°СЂРµСЃ. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_01"); //Р”Р°? Р С‡С‚Рѕ Р¶Рµ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅСѓР¶РЅРѕ?
+	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_02"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РѕРїРѕР»С‡РµРЅРёСЋ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_03"); //(СЃРјРµРµС‚СЃСЏ) РС‚Р°Рє, С‚С‹ С…РѕС‡РµС€СЊ РІСЃС‚СѓРїРёС‚СЊ РІ РЅР°С€Рё СЂСЏРґС‹? РњС‹, Р·РЅР°РµС€СЊ Р»Рё, РЅРµ Р±РµСЂРµРј РїСЂРѕСЃС‚Рѕ С‚Р°Рє Р»СЋРґРµР№ СЃ СѓР»РёС†С‹.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_04"); //РўРµР±Рµ, РІРѕР·РјРѕР¶РЅРѕ, РїСЂРёРґРµС‚СЃСЏ...
+	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_05"); //РћСЃС‚Р°РІСЊ СЃРІРѕРё РЅСЂР°РІРѕСѓС‡РµРЅРёСЏ РїСЂРё СЃРµР±Рµ. РџСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё, С‡С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚Рѕ, С‡С‚РѕР±С‹ РІСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_06"); //(СѓРґРёРІР»РµРЅРЅРѕ) РќСѓ С…РѕСЂРѕС€Рѕ. РўРѕРіРґР° СЃР»СѓС€Р°Р№ РјРµРЅСЏ РІРЅРёРјР°С‚РµР»СЊРЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_07"); //РќР°РґРѕ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ СЂР°Р±РѕС‚Р° РёРЅС‚РµРЅРґР°РЅС‚Р° - С‚Р° РµС‰Рµ РєР°С‚РѕСЂРіР°. Р Р°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃРѕ РІСЃРµРјРё СЌС‚РёРјРё СЏС‰РёРєР°РјРё Рё РјРµС€РєР°РјРё СЃРѕРІСЃРµРј РЅРµ РїСЂРѕСЃС‚Рѕ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_08"); //Рђ РєР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° СЏ РїРѕСЃР»Рµ СЂР°Р±РѕС‚С‹ СЂР°СЃСЃР»Р°Р±Р»СЏСЋСЃСЊ РІ С‚Р°РІРµСЂРЅРµ РљР°СЂРґРёС„Р°, РєС‚Рѕ-С‚Рѕ РєРѕРїР°РµС‚СЃСЏ РІ СЏС‰РёРєР°С… СЃ Р·Р°РїР°СЃР°РјРё, Рё РЅР°СѓС‚СЂРѕ СЏ РѕР±РЅР°СЂСѓР¶РёРІР°СЋ, С‡С‚Рѕ С‡С‚Рѕ-С‚Рѕ РїСЂРѕРїР°Р»Рѕ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_09"); //(СЃРµСЂРґРёС‚Рѕ) Р”РѕРІРѕР»СЊРЅРѕ СЃС‚СЂР°РЅРЅРѕ, С‡С‚Рѕ СЌС‚Рё РїР°Р»Р°РґРёРЅС‹ РЅРёС‡РµРіРѕ РЅРµ Р·Р°РјРµС‡Р°СЋС‚.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_10"); //РЇ С‚Р°Рє РїСЂРѕСЃС‚Рѕ СЂРµС…РЅСѓСЃСЊ. РќРµ РјРѕРіСѓ Р¶Рµ СЏ РІСЃСЋ РЅРѕС‡СЊ С‚РѕСЂС‡Р°С‚СЊ Р·РґРµСЃСЊ, РєР°Рє РїРѕСЃР»РµРґРЅРёР№ РёРґРёРѕС‚.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_11"); //РўС‹, СЃ РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅС‹...
+	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_12"); //РЇ РїРѕРЅСЏР». РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РїРѕСЃС‚РѕСЂРѕР¶РёР» СЏС‰РёРєРё, РїРѕРєР° С‚С‹ РїСЊРµС€СЊ РІ С‚Р°РІРµСЂРЅРµ.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_13"); //РЎРѕРіР»Р°С€Р°Р№СЃСЏ РёР»Рё СѓС…РѕРґРё.
 
-	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Я должен следить за ящиками интенданта Мартина. Если я поймаю человека, который ворует вещи из ящиков, Мартин поможет мне вступить в ополчение."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"РЇ РґРѕР»Р¶РµРЅ СЃР»РµРґРёС‚СЊ Р·Р° СЏС‰РёРєР°РјРё РёРЅС‚РµРЅРґР°РЅС‚Р° РњР°СЂС‚РёРЅР°. Р•СЃР»Рё СЏ РїРѕР№РјР°СЋ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ РІРѕСЂСѓРµС‚ РІРµС‰Рё РёР· СЏС‰РёРєРѕРІ, РњР°СЂС‚РёРЅ РїРѕРјРѕР¶РµС‚ РјРЅРµ РІСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ."); 
 
 }; 
 
@@ -319,7 +319,7 @@ instance DIA_Addon_Martin_Auftrag		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_Auftrag_Condition;
 	information	 = 	DIA_Addon_Martin_Auftrag_Info;
 
-	description	 = 	"Хорошо, я присмотрю за твоими ящиками.";
+	description	 = 	"РҐРѕСЂРѕС€Рѕ, СЏ РїСЂРёСЃРјРѕС‚СЂСЋ Р·Р° С‚РІРѕРёРјРё СЏС‰РёРєР°РјРё.";
 };
 
 func int DIA_Addon_Martin_Auftrag_Condition ()
@@ -336,22 +336,22 @@ var int MIS_Addon_Martin_GetRangar_Day;
 
 func void DIA_Addon_Martin_Auftrag_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Auftrag_15_00"); //Хорошо, я присмотрю за твоими ящиками.
-	AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_01"); //Отлично.
+	AI_Output	(other, self, "DIA_Addon_Martin_Auftrag_15_00"); //РҐРѕСЂРѕС€Рѕ, СЏ РїСЂРёСЃРјРѕС‚СЂСЋ Р·Р° С‚РІРѕРёРјРё СЏС‰РёРєР°РјРё.
+	AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_01"); //РћС‚Р»РёС‡РЅРѕ.
 	
 	if (Wld_IsTime (23,00,04,00))
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_02"); //Тогда я пошел в таверну. И горе тебе, если у тебя что-нибудь пропадет.
+		AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_02"); //РўРѕРіРґР° СЏ РїРѕС€РµР» РІ С‚Р°РІРµСЂРЅСѓ. Р РіРѕСЂРµ С‚РµР±Рµ, РµСЃР»Рё Сѓ С‚РµР±СЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРїР°РґРµС‚.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_03"); //Возвращайся вечером и заступай на стражу. Я в это время буду в таверне.
+		AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_03"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РІРµС‡РµСЂРѕРј Рё Р·Р°СЃС‚СѓРїР°Р№ РЅР° СЃС‚СЂР°Р¶Сѓ. РЇ РІ СЌС‚Рѕ РІСЂРµРјСЏ Р±СѓРґСѓ РІ С‚Р°РІРµСЂРЅРµ.
 	};
 
 	B_StartOtherRoutine	(MIL_321_Rangar,"PrePalCampKlau"); 
 
 	Info_ClearChoices	(DIA_Addon_Martin_Auftrag);
-	Info_AddChoice	(DIA_Addon_Martin_Auftrag, "(еще)", DIA_Addon_Martin_Auftrag_weiter );
+	Info_AddChoice	(DIA_Addon_Martin_Auftrag, "(РµС‰Рµ)", DIA_Addon_Martin_Auftrag_weiter );
 
 };
 
@@ -379,7 +379,7 @@ instance DIA_Addon_Martin_FromVatras (C_INFO)
 	condition	= DIA_Addon_Martin_FromVatras_Condition;
 	information	= DIA_Addon_Martin_FromVatras_Info;
 
-	description	= "Ты ищешь человека, который продает оружие бандитам?";
+	description	= "РўС‹ РёС‰РµС€СЊ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ Р±Р°РЅРґРёС‚Р°Рј?";
 };
 func int DIA_Addon_Martin_FromVatras_Condition ()
 {
@@ -390,12 +390,12 @@ func int DIA_Addon_Martin_FromVatras_Condition ()
 };
 func void DIA_Addon_Martin_FromVatras_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_00"); //Ты ищешь человека, который продает оружие бандитам?
-	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_01"); //Кто тебе это сказал?
-	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_02"); //Ватрас.
-	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_03"); //Ясно. Ну и что ты знаешь об этом деле?
-	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_04"); //Немного, но я постараюсь выяснить больше.
-	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_05"); //Итак?..
+	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_00"); //РўС‹ РёС‰РµС€СЊ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ Р±Р°РЅРґРёС‚Р°Рј?
+	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_01"); //РљС‚Рѕ С‚РµР±Рµ СЌС‚Рѕ СЃРєР°Р·Р°Р»?
+	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_02"); //Р’Р°С‚СЂР°СЃ.
+	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_03"); //РЇСЃРЅРѕ. РќСѓ Рё С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј РґРµР»Рµ?
+	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_04"); //РќРµРјРЅРѕРіРѕ, РЅРѕ СЏ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ РІС‹СЏСЃРЅРёС‚СЊ Р±РѕР»СЊС€Рµ.
+	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_05"); //РС‚Р°Рє?..
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Tell Me
@@ -407,7 +407,7 @@ instance DIA_Addon_Martin_TellAll (C_INFO)
 	condition	= DIA_Addon_Martin_TellAll_Condition;
 	information	= DIA_Addon_Martin_TellAll_Info;
 
-	description	= "Расскажи мне, что тебе известно о торговце оружием?";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ Рѕ С‚РѕСЂРіРѕРІС†Рµ РѕСЂСѓР¶РёРµРј?";
 };
 func int DIA_Addon_Martin_TellAll_Condition ()
 {
@@ -418,12 +418,12 @@ func int DIA_Addon_Martin_TellAll_Condition ()
 };
 func void DIA_Addon_Martin_TellAll_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Martin_TellAll_15_00"); //Расскажи мне, что тебе известно о торговце оружием?
-	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_01"); //Мы знаем, что за этим стоит один из влиятельных торговцев, живущих в верхнем квартале.
-	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_02"); //Часть проданного оружия даже была взята из запасов ополчения.
-	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_03"); //Но мы все еще не знаем, кто именно занимается продажами.
-	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_04"); //Если тебе хватит смелости разобраться с группой, состоящей по меньшей мере из пяти бандитов, то возможно, ты найдешь какие-либо улики...
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Мартин утверждает, что поставщик оружия - один из влиятельных горожан, живущих в верхнем квартале."); 
+	AI_Output (other, self, "DIA_Addon_Martin_TellAll_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ Рѕ С‚РѕСЂРіРѕРІС†Рµ РѕСЂСѓР¶РёРµРј?
+	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_01"); //РњС‹ Р·РЅР°РµРј, С‡С‚Рѕ Р·Р° СЌС‚РёРј СЃС‚РѕРёС‚ РѕРґРёРЅ РёР· РІР»РёСЏС‚РµР»СЊРЅС‹С… С‚РѕСЂРіРѕРІС†РµРІ, Р¶РёРІСѓС‰РёС… РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ.
+	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_02"); //Р§Р°СЃС‚СЊ РїСЂРѕРґР°РЅРЅРѕРіРѕ РѕСЂСѓР¶РёСЏ РґР°Р¶Рµ Р±С‹Р»Р° РІР·СЏС‚Р° РёР· Р·Р°РїР°СЃРѕРІ РѕРїРѕР»С‡РµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_03"); //РќРѕ РјС‹ РІСЃРµ РµС‰Рµ РЅРµ Р·РЅР°РµРј, РєС‚Рѕ РёРјРµРЅРЅРѕ Р·Р°РЅРёРјР°РµС‚СЃСЏ РїСЂРѕРґР°Р¶Р°РјРё.
+	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_04"); //Р•СЃР»Рё С‚РµР±Рµ С…РІР°С‚РёС‚ СЃРјРµР»РѕСЃС‚Рё СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РіСЂСѓРїРїРѕР№, СЃРѕСЃС‚РѕСЏС‰РµР№ РїРѕ РјРµРЅСЊС€РµР№ РјРµСЂРµ РёР· РїСЏС‚Рё Р±Р°РЅРґРёС‚РѕРІ, С‚Рѕ РІРѕР·РјРѕР¶РЅРѕ, С‚С‹ РЅР°Р№РґРµС€СЊ РєР°РєРёРµ-Р»РёР±Рѕ СѓР»РёРєРё...
+	B_LogEntry (TOPIC_Addon_BanditTrader,"РњР°СЂС‚РёРЅ СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ РїРѕСЃС‚Р°РІС‰РёРє РѕСЂСѓР¶РёСЏ - РѕРґРёРЅ РёР· РІР»РёСЏС‚РµР»СЊРЅС‹С… РіРѕСЂРѕР¶Р°РЅ, Р¶РёРІСѓС‰РёС… РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ."); 
 };	
 ///////////////////////////////////////////////////////////////////////
 //	About Bandits
@@ -435,7 +435,7 @@ instance DIA_Addon_Martin_AboutBandits (C_INFO)
 	condition	= DIA_Addon_Martin_AboutBandits_Condition;
 	information	= DIA_Addon_Martin_AboutBandits_Info;
 
-	description	= "Какова ситуация с бандитами?";
+	description	= "РљР°РєРѕРІР° СЃРёС‚СѓР°С†РёСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё?";
 };
 func int DIA_Addon_Martin_AboutBandits_Condition ()
 {
@@ -446,14 +446,14 @@ func int DIA_Addon_Martin_AboutBandits_Condition ()
 };
 func void DIA_Addon_Martin_AboutBandits_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Martin_AboutBandits_15_00"); //Какова ситуация с бандитами?
-	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_01"); //Мы знаем, что они устраивают засады на дорогах, соединяющих город с фермами.
-	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_02"); //Еще нам известно, что несколько дней назад они получили крупную партию оружия.
-	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_03"); //Думаю, сейчас самое время для поиска улик, указывающих на личность сотрудничающего с ними торговца.
+	AI_Output (other, self, "DIA_Addon_Martin_AboutBandits_15_00"); //РљР°РєРѕРІР° СЃРёС‚СѓР°С†РёСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё?
+	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_01"); //РњС‹ Р·РЅР°РµРј, С‡С‚Рѕ РѕРЅРё СѓСЃС‚СЂР°РёРІР°СЋС‚ Р·Р°СЃР°РґС‹ РЅР° РґРѕСЂРѕРіР°С…, СЃРѕРµРґРёРЅСЏСЋС‰РёС… РіРѕСЂРѕРґ СЃ С„РµСЂРјР°РјРё.
+	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_02"); //Р•С‰Рµ РЅР°Рј РёР·РІРµСЃС‚РЅРѕ, С‡С‚Рѕ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ РѕРЅРё РїРѕР»СѓС‡РёР»Рё РєСЂСѓРїРЅСѓСЋ РїР°СЂС‚РёСЋ РѕСЂСѓР¶РёСЏ.
+	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_03"); //Р”СѓРјР°СЋ, СЃРµР№С‡Р°СЃ СЃР°РјРѕРµ РІСЂРµРјСЏ РґР»СЏ РїРѕРёСЃРєР° СѓР»РёРє, СѓРєР°Р·С‹РІР°СЋС‰РёС… РЅР° Р»РёС‡РЅРѕСЃС‚СЊ СЃРѕС‚СЂСѓРґРЅРёС‡Р°СЋС‰РµРіРѕ СЃ РЅРёРјРё С‚РѕСЂРіРѕРІС†Р°.
 	//AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_04"); //Ich werd sehen, was ich tun kann
 	
 	MIS_Martin_FindTheBanditTrader = LOG_RUNNING;
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Бандиты устраивают засады на дорогах между городом и фермами. Возможно, там я найду улики, указывающие на поставщика оружия."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"Р‘Р°РЅРґРёС‚С‹ СѓСЃС‚СЂР°РёРІР°СЋС‚ Р·Р°СЃР°РґС‹ РЅР° РґРѕСЂРѕРіР°С… РјРµР¶РґСѓ РіРѕСЂРѕРґРѕРј Рё С„РµСЂРјР°РјРё. Р’РѕР·РјРѕР¶РЅРѕ, С‚Р°Рј СЏ РЅР°Р№РґСѓ СѓР»РёРєРё, СѓРєР°Р·С‹РІР°СЋС‰РёРµ РЅР° РїРѕСЃС‚Р°РІС‰РёРєР° РѕСЂСѓР¶РёСЏ."); 
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -467,7 +467,7 @@ instance DIA_Addon_Martin_Fernando		(C_INFO)
 	information	 = 	DIA_Addon_Martin_Fernando_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Насчет торговца оружием...";
+	description	 = 	"РќР°СЃС‡РµС‚ С‚РѕСЂРіРѕРІС†Р° РѕСЂСѓР¶РёРµРј...";
 };
 
 func int DIA_Addon_Martin_Fernando_Condition ()
@@ -482,14 +482,14 @@ var int Martin_IrrlichtHint;
 
 func void DIA_Addon_Martin_Fernando_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_00"); //Насчет торговца оружием...
+	AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_00"); //РќР°СЃС‡РµС‚ С‚РѕСЂРіРѕРІС†Р° РѕСЂСѓР¶РёРµРј...
 
 	if 	(Npc_HasItems (other,ItMw_Addon_BanditTrader))
 	||(Npc_HasItems (other,ItRi_Addon_BanditTrader))
 	||((Npc_HasItems (other,ItWr_Addon_BanditTrader))&&(BanditTrader_Lieferung_Gelesen == TRUE))
 	||(Fernando_HatsZugegeben == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_01"); //Что тебе удалось узнать?
+		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_01"); //Р§С‚Рѕ С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ СѓР·РЅР°С‚СЊ?
 	
 		var int FernandoHints;
 		FernandoHints = 0;
@@ -503,62 +503,62 @@ func void DIA_Addon_Martin_Fernando_Info ()
 				
 				if (Npc_HasItems (other,ItMw_Addon_BanditTrader))
 				{
-					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_02"); //Такие шпаги я нашел у бандитов. На эфесе выгравирована буква 'Ф'.
+					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_02"); //РўР°РєРёРµ С€РїР°РіРё СЏ РЅР°С€РµР» Сѓ Р±Р°РЅРґРёС‚РѕРІ. РќР° СЌС„РµСЃРµ РІС‹РіСЂР°РІРёСЂРѕРІР°РЅР° Р±СѓРєРІР° 'Р¤'.
 					FernandoHints = (FernandoHints + 1);
 				};
 				if (Npc_HasItems (other,ItRi_Addon_BanditTrader))
 				{
-					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_03"); //У бандитов я нашел это кольцо. Оно указывает на морского торговца.
+					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_03"); //РЈ Р±Р°РЅРґРёС‚РѕРІ СЏ РЅР°С€РµР» СЌС‚Рѕ РєРѕР»СЊС†Рѕ. РћРЅРѕ СѓРєР°Р·С‹РІР°РµС‚ РЅР° РјРѕСЂСЃРєРѕРіРѕ С‚РѕСЂРіРѕРІС†Р°.
 					FernandoHints = (FernandoHints + 1);
 				};
 				if ((Npc_HasItems (other,ItWr_Addon_BanditTrader))&&(BanditTrader_Lieferung_Gelesen == TRUE))
 				{
-					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_04"); //Этот список оружия и прочих доставленных бандитам вещей подписан неким Фернандо.
+					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_04"); //Р­С‚РѕС‚ СЃРїРёСЃРѕРє РѕСЂСѓР¶РёСЏ Рё РїСЂРѕС‡РёС… РґРѕСЃС‚Р°РІР»РµРЅРЅС‹С… Р±Р°РЅРґРёС‚Р°Рј РІРµС‰РµР№ РїРѕРґРїРёСЃР°РЅ РЅРµРєРёРј Р¤РµСЂРЅР°РЅРґРѕ.
 					FernandoHints = (FernandoHints + 3);
 				};
 			
 				if (Fernando_HatsZugegeben == TRUE)
 				{
-					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_05"); //И кроме того, Фернандо, старый торговец из верхнего квартала, сознался в том, что ведет дела с бандитами.
+					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_05"); //Р РєСЂРѕРјРµ С‚РѕРіРѕ, Р¤РµСЂРЅР°РЅРґРѕ, СЃС‚Р°СЂС‹Р№ С‚РѕСЂРіРѕРІРµС† РёР· РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р°, СЃРѕР·РЅР°Р»СЃСЏ РІ С‚РѕРј, С‡С‚Рѕ РІРµРґРµС‚ РґРµР»Р° СЃ Р±Р°РЅРґРёС‚Р°РјРё.
 					FernandoHints = (FernandoHints + 1);
 				};
 			}
 			else
 			{
-				AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_06"); //Фернандо сказал, что снабжает бандитов оружием.
+				AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_06"); //Р¤РµСЂРЅР°РЅРґРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЃРЅР°Р±Р¶Р°РµС‚ Р±Р°РЅРґРёС‚РѕРІ РѕСЂСѓР¶РёРµРј.
 			};
 			
 		if (FernandoHints >= 3)
 		{
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_07"); //Думаю, этого достаточно. Итак, Фернандо... Что ж, он получит по заслугам.
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_08"); //А он всегда так спокойно себя вел, когда речь заходила об этом.
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_09"); //Ну теперь-то ему предстоит долгое время гнить за решеткой.
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_10"); //Должен сказать, ты сделал большое дело.
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_11"); //Ватрас будет доволен, когда узнает эту новость.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_07"); //Р”СѓРјР°СЋ, СЌС‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РС‚Р°Рє, Р¤РµСЂРЅР°РЅРґРѕ... Р§С‚Рѕ Р¶, РѕРЅ РїРѕР»СѓС‡РёС‚ РїРѕ Р·Р°СЃР»СѓРіР°Рј.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_08"); //Рђ РѕРЅ РІСЃРµРіРґР° С‚Р°Рє СЃРїРѕРєРѕР№РЅРѕ СЃРµР±СЏ РІРµР», РєРѕРіРґР° СЂРµС‡СЊ Р·Р°С…РѕРґРёР»Р° РѕР± СЌС‚РѕРј.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_09"); //РќСѓ С‚РµРїРµСЂСЊ-С‚Рѕ РµРјСѓ РїСЂРµРґСЃС‚РѕРёС‚ РґРѕР»РіРѕРµ РІСЂРµРјСЏ РіРЅРёС‚СЊ Р·Р° СЂРµС€РµС‚РєРѕР№.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_10"); //Р”РѕР»Р¶РµРЅ СЃРєР°Р·Р°С‚СЊ, С‚С‹ СЃРґРµР»Р°Р» Р±РѕР»СЊС€РѕРµ РґРµР»Рѕ.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_11"); //Р’Р°С‚СЂР°СЃ Р±СѓРґРµС‚ РґРѕРІРѕР»РµРЅ, РєРѕРіРґР° СѓР·РЅР°РµС‚ СЌС‚Сѓ РЅРѕРІРѕСЃС‚СЊ.
 			B_StartOtherRoutine	(Fernando,"Prison");
 			Fernando_ImKnast = TRUE;
 			MIs_Martin_FindTheBanditTrader = LOG_SUCCESS;
-			B_LogEntry (TOPIC_Addon_BanditTrader,"Мартин позаботится о том, чтобы Фернандо был наказан. Я должен сообщить об этом Ватрасу."); 
+			B_LogEntry (TOPIC_Addon_BanditTrader,"РњР°СЂС‚РёРЅ РїРѕР·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ Р¤РµСЂРЅР°РЅРґРѕ Р±С‹Р» РЅР°РєР°Р·Р°РЅ. РЇ РґРѕР»Р¶РµРЅ СЃРѕРѕР±С‰РёС‚СЊ РѕР± СЌС‚РѕРј Р’Р°С‚СЂР°СЃСѓ."); 
 
 			B_GivePlayerXP (XP_Addon_FernandoMartin);
 		}
 		else
 		{
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_12"); //И? Что еще?
-			AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_13"); //Это все.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_12"); //Р? Р§С‚Рѕ РµС‰Рµ?
+			AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_13"); //Р­С‚Рѕ РІСЃРµ.
 		
 			if (Fernando_HatsZugegeben == TRUE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_14"); //Хорошо, конечно, что он признался, но без веских улик мы не сможем посадить его за решетку.
-				AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_15"); //Я не хочу выставлять себя на посмешище перед лордом Хагеном. Тебе придется найти еще какие-то доказательства.
+				AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_14"); //РҐРѕСЂРѕС€Рѕ, РєРѕРЅРµС‡РЅРѕ, С‡С‚Рѕ РѕРЅ РїСЂРёР·РЅР°Р»СЃСЏ, РЅРѕ Р±РµР· РІРµСЃРєРёС… СѓР»РёРє РјС‹ РЅРµ СЃРјРѕР¶РµРј РїРѕСЃР°РґРёС‚СЊ РµРіРѕ Р·Р° СЂРµС€РµС‚РєСѓ.
+				AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_15"); //РЇ РЅРµ С…РѕС‡Сѓ РІС‹СЃС‚Р°РІР»СЏС‚СЊ СЃРµР±СЏ РЅР° РїРѕСЃРјРµС€РёС‰Рµ РїРµСЂРµРґ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј. РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ РЅР°Р№С‚Рё РµС‰Рµ РєР°РєРёРµ-С‚Рѕ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Addon_Martin_Fernando_07_16"); //Этого недостаточно. Твои улики могут указывать практически на любого торговца из верхнего квартала.
-				AI_Output (self, other, "DIA_Addon_Martin_Fernando_07_17"); //Думаю, тебе придется продолжить выслеживать бандитов и проследить путь последней полученной ими партии оружия.
+				AI_Output (self, other, "DIA_Addon_Martin_Fernando_07_16"); //Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РўРІРѕРё СѓР»РёРєРё РјРѕРіСѓС‚ СѓРєР°Р·С‹РІР°С‚СЊ РїСЂР°РєС‚РёС‡РµСЃРєРё РЅР° Р»СЋР±РѕРіРѕ С‚РѕСЂРіРѕРІС†Р° РёР· РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р°.
+				AI_Output (self, other, "DIA_Addon_Martin_Fernando_07_17"); //Р”СѓРјР°СЋ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїСЂРѕРґРѕР»Р¶РёС‚СЊ РІС‹СЃР»РµР¶РёРІР°С‚СЊ Р±Р°РЅРґРёС‚РѕРІ Рё РїСЂРѕСЃР»РµРґРёС‚СЊ РїСѓС‚СЊ РїРѕСЃР»РµРґРЅРµР№ РїРѕР»СѓС‡РµРЅРЅРѕР№ РёРјРё РїР°СЂС‚РёРё РѕСЂСѓР¶РёСЏ.
 				if (Martin_IrrlichtHint == FALSE)
 				{
-					AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_18"); //Может быть, тебе стоит еще раз поговорить с Ватрасом...
+					AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_18"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ СЃС‚РѕРёС‚ РµС‰Рµ СЂР°Р· РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р’Р°С‚СЂР°СЃРѕРј...
 					Martin_IrrlichtHint = TRUE;
 				};
 			};
@@ -566,9 +566,9 @@ func void DIA_Addon_Martin_Fernando_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_19"); //Еще раз, что я должен сделать?
-		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_20"); //Ты должен выяснить, кто стоит за поставками бандитам оружия, и принести мне доказательства его вины.
-		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_21"); //Но это должны быть действительно убедительные доказательства. Иначе я не смогу арестовать торговца.
+		AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_19"); //Р•С‰Рµ СЂР°Р·, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?
+		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_20"); //РўС‹ РґРѕР»Р¶РµРЅ РІС‹СЏСЃРЅРёС‚СЊ, РєС‚Рѕ СЃС‚РѕРёС‚ Р·Р° РїРѕСЃС‚Р°РІРєР°РјРё Р±Р°РЅРґРёС‚Р°Рј РѕСЂСѓР¶РёСЏ, Рё РїСЂРёРЅРµСЃС‚Рё РјРЅРµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° РµРіРѕ РІРёРЅС‹.
+		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_21"); //РќРѕ СЌС‚Рѕ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СѓР±РµРґРёС‚РµР»СЊРЅС‹Рµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°. РРЅР°С‡Рµ СЏ РЅРµ СЃРјРѕРіСѓ Р°СЂРµСЃС‚РѕРІР°С‚СЊ С‚РѕСЂРіРѕРІС†Р°.
 	};
 };
 
@@ -583,7 +583,7 @@ instance DIA_Addon_Martin_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Martin_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Все ящики на месте?";
+	description	 = 	"Р’СЃРµ СЏС‰РёРєРё РЅР° РјРµСЃС‚Рµ?";
 };
 
 func int DIA_Addon_Martin_Perm_Condition ()
@@ -596,30 +596,30 @@ func int DIA_Addon_Martin_Perm_Condition ()
 
 func void DIA_Addon_Martin_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Perm_15_00"); //Все ящики на месте?
+	AI_Output	(other, self, "DIA_Addon_Martin_Perm_15_00"); //Р’СЃРµ СЏС‰РёРєРё РЅР° РјРµСЃС‚Рµ?
 	
 	if (MIS_Addon_Martin_GetRangar_Day <= (Wld_GetDay()-2))
 	&&	(MIS_Addon_Martin_GetRangar == LOG_RUNNING)
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_01"); //(сердито) Проклятый лентяй, ты должен был охранять эти ящики! Еще несколько вещей пропало!
+		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_01"); //(СЃРµСЂРґРёС‚Рѕ) РџСЂРѕРєР»СЏС‚С‹Р№ Р»РµРЅС‚СЏР№, С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹Р» РѕС…СЂР°РЅСЏС‚СЊ СЌС‚Рё СЏС‰РёРєРё! Р•С‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РІРµС‰РµР№ РїСЂРѕРїР°Р»Рѕ!
 
 		if (Wld_IsTime (24,00,03,00))
 		{
-			AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_02"); //Отправляйся в гавань и поймай того ублюдка, который это сделал! Ты меня понял?
+			AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_02"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ РІ РіР°РІР°РЅСЊ Рё РїРѕР№РјР°Р№ С‚РѕРіРѕ СѓР±Р»СЋРґРєР°, РєРѕС‚РѕСЂС‹Р№ СЌС‚Рѕ СЃРґРµР»Р°Р»! РўС‹ РјРµРЅСЏ РїРѕРЅСЏР»?
 		}
 		else
 		{
-			AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_03"); //И этой ночью, когда я уйду, будь повнимательнее!
+			AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_03"); //Р СЌС‚РѕР№ РЅРѕС‡СЊСЋ, РєРѕРіРґР° СЏ СѓР№РґСѓ, Р±СѓРґСЊ РїРѕРІРЅРёРјР°С‚РµР»СЊРЅРµРµ!
 		};	
 	}	
 	else if ((MIS_Addon_Martin_GetRangar != 0) || (hero.guild != GIL_NONE) || (Sc_IsRanger == TRUE))
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_04"); //Давай, давай, смейся. Попробовал бы ты постоять целый день на пирсе, пытаясь разобраться во всем этом хаосе.
-		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_05"); //Паладины привезли с собой столько всякого хлама, что это даже не смешно.
+		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_04"); //Р”Р°РІР°Р№, РґР°РІР°Р№, СЃРјРµР№СЃСЏ. РџРѕРїСЂРѕР±РѕРІР°Р» Р±С‹ С‚С‹ РїРѕСЃС‚РѕСЏС‚СЊ С†РµР»С‹Р№ РґРµРЅСЊ РЅР° РїРёСЂСЃРµ, РїС‹С‚Р°СЏСЃСЊ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ РІРѕ РІСЃРµРј СЌС‚РѕРј С…Р°РѕСЃРµ.
+		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_05"); //РџР°Р»Р°РґРёРЅС‹ РїСЂРёРІРµР·Р»Рё СЃ СЃРѕР±РѕР№ СЃС‚РѕР»СЊРєРѕ РІСЃСЏРєРѕРіРѕ С…Р»Р°РјР°, С‡С‚Рѕ СЌС‚Рѕ РґР°Р¶Рµ РЅРµ СЃРјРµС€РЅРѕ.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_06"); //Ничего не трогай, иначе я позову стражу. Тебе все понятно?
+		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_06"); //РќРёС‡РµРіРѕ РЅРµ С‚СЂРѕРіР°Р№, РёРЅР°С‡Рµ СЏ РїРѕР·РѕРІСѓ СЃС‚СЂР°Р¶Сѓ. РўРµР±Рµ РІСЃРµ РїРѕРЅСЏС‚РЅРѕ?
 	};
 };
 
@@ -633,7 +633,7 @@ instance DIA_Addon_Martin_GotRangar		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_GotRangar_Condition;
 	information	 = 	DIA_Addon_Martin_GotRangar_Info;
 
-	description	 = 	"Я узнал, кто ворует вещи.";
+	description	 = 	"РЇ СѓР·РЅР°Р», РєС‚Рѕ РІРѕСЂСѓРµС‚ РІРµС‰Рё.";
 };
 
 func int DIA_Addon_Martin_GotRangar_Condition ()
@@ -647,14 +647,14 @@ func int DIA_Addon_Martin_GotRangar_Condition ()
 
 func void DIA_Addon_Martin_GotRangar_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_00"); //Я узнал, кто ворует вещи.
-	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_01"); //В твоих ящиках копался Рагнар.
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_02"); //Ну наконец-то. Теперь я, по крайней мере, буду знать, за кем мне присматривать. Вот сволочь! Ну, если я его поймаю...
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_03"); //А я-то всегда удивлялся, почему паладины ничего не замечают.
-	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_04"); //И? Почему?
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_05"); //Это же очевидно! Эти идиоты не могут отличить одного солдата ополчения от другого. Для них мы все на одно лицо.
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_06"); //Хорошая работа, приятель.
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_07"); //Если тебе что-нибудь понадобится, только скажи.
+	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_00"); //РЇ СѓР·РЅР°Р», РєС‚Рѕ РІРѕСЂСѓРµС‚ РІРµС‰Рё.
+	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_01"); //Р’ С‚РІРѕРёС… СЏС‰РёРєР°С… РєРѕРїР°Р»СЃСЏ Р Р°РіРЅР°СЂ.
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_02"); //РќСѓ РЅР°РєРѕРЅРµС†-С‚Рѕ. РўРµРїРµСЂСЊ СЏ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, Р±СѓРґСѓ Р·РЅР°С‚СЊ, Р·Р° РєРµРј РјРЅРµ РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ. Р’РѕС‚ СЃРІРѕР»РѕС‡СЊ! РќСѓ, РµСЃР»Рё СЏ РµРіРѕ РїРѕР№РјР°СЋ...
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_03"); //Рђ СЏ-С‚Рѕ РІСЃРµРіРґР° СѓРґРёРІР»СЏР»СЃСЏ, РїРѕС‡РµРјСѓ РїР°Р»Р°РґРёРЅС‹ РЅРёС‡РµРіРѕ РЅРµ Р·Р°РјРµС‡Р°СЋС‚.
+	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_04"); //Р? РџРѕС‡РµРјСѓ?
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_05"); //Р­С‚Рѕ Р¶Рµ РѕС‡РµРІРёРґРЅРѕ! Р­С‚Рё РёРґРёРѕС‚С‹ РЅРµ РјРѕРіСѓС‚ РѕС‚Р»РёС‡РёС‚СЊ РѕРґРЅРѕРіРѕ СЃРѕР»РґР°С‚Р° РѕРїРѕР»С‡РµРЅРёСЏ РѕС‚ РґСЂСѓРіРѕРіРѕ. Р”Р»СЏ РЅРёС… РјС‹ РІСЃРµ РЅР° РѕРґРЅРѕ Р»РёС†Рѕ.
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_06"); //РҐРѕСЂРѕС€Р°СЏ СЂР°Р±РѕС‚Р°, РїСЂРёСЏС‚РµР»СЊ.
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_07"); //Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ, С‚РѕР»СЊРєРѕ СЃРєР°Р¶Рё.
 
 	MIS_Addon_Martin_GetRangar = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Martin_GotRangar_Report);
@@ -670,7 +670,7 @@ instance DIA_Addon_Martin_GetMiliz		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_GetMiliz_Condition;
 	information	 = 	DIA_Addon_Martin_GetMiliz_Info;
 
-	description	 = 	"Ты знаешь, что мне от тебя нужно.";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РјРЅРµ РѕС‚ С‚РµР±СЏ РЅСѓР¶РЅРѕ.";
 };
 
 func int DIA_Addon_Martin_GetMiliz_Condition ()
@@ -683,16 +683,16 @@ func int DIA_Addon_Martin_GetMiliz_Condition ()
 
 func void DIA_Addon_Martin_GetMiliz_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_GetMiliz_15_00"); //Ты знаешь, что мне от тебя нужно.
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_01"); //А, да. Ты хочешь вступить в ополчение, верно?
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_02"); //Что ж, ты уже доказал мне, на что способен.
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_03"); //Скажем так, я бы скорее хотел бы видеть тебя на нашей стороне, чем на чьей-либо еще.
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_04"); //Поэтому я помогу тебе. Возьми мое рекомендательное письмо и покажи его Андре, нашему командиру.
+	AI_Output	(other, self, "DIA_Addon_Martin_GetMiliz_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РјРЅРµ РѕС‚ С‚РµР±СЏ РЅСѓР¶РЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_01"); //Рђ, РґР°. РўС‹ С…РѕС‡РµС€СЊ РІСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ, РІРµСЂРЅРѕ?
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_02"); //Р§С‚Рѕ Р¶, С‚С‹ СѓР¶Рµ РґРѕРєР°Р·Р°Р» РјРЅРµ, РЅР° С‡С‚Рѕ СЃРїРѕСЃРѕР±РµРЅ.
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_03"); //РЎРєР°Р¶РµРј С‚Р°Рє, СЏ Р±С‹ СЃРєРѕСЂРµРµ С…РѕС‚РµР» Р±С‹ РІРёРґРµС‚СЊ С‚РµР±СЏ РЅР° РЅР°С€РµР№ СЃС‚РѕСЂРѕРЅРµ, С‡РµРј РЅР° С‡СЊРµР№-Р»РёР±Рѕ РµС‰Рµ.
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_04"); //РџРѕСЌС‚РѕРјСѓ СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ. Р’РѕР·СЊРјРё РјРѕРµ СЂРµРєРѕРјРµРЅРґР°С‚РµР»СЊРЅРѕРµ РїРёСЃСЊРјРѕ Рё РїРѕРєР°Р¶Рё РµРіРѕ РђРЅРґСЂРµ, РЅР°С€РµРјСѓ РєРѕРјР°РЅРґРёСЂСѓ.
 	CreateInvItems (self, ItWr_Martin_MilizEmpfehlung_Addon, 1);									
 	B_GiveInvItems (self, other, ItWr_Martin_MilizEmpfehlung_Addon, 1);		
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_05"); //Ты найдешь его в казармах. Уверен, он сможет найти тебе применение.
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_05"); //РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РєР°Р·Р°СЂРјР°С…. РЈРІРµСЂРµРЅ, РѕРЅ СЃРјРѕР¶РµС‚ РЅР°Р№С‚Рё С‚РµР±Рµ РїСЂРёРјРµРЅРµРЅРёРµ.
 
-	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Мартин дал мне рекомендательное письмо для лорда Андре. Прочитав его, Андре примет меня в ополчение. Найти Андре можно в казармах."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"РњР°СЂС‚РёРЅ РґР°Р» РјРЅРµ СЂРµРєРѕРјРµРЅРґР°С‚РµР»СЊРЅРѕРµ РїРёСЃСЊРјРѕ РґР»СЏ Р»РѕСЂРґР° РђРЅРґСЂРµ. РџСЂРѕС‡РёС‚Р°РІ РµРіРѕ, РђРЅРґСЂРµ РїСЂРёРјРµС‚ РјРµРЅСЏ РІ РѕРїРѕР»С‡РµРЅРёРµ. РќР°Р№С‚Рё РђРЅРґСЂРµ РјРѕР¶РЅРѕ РІ РєР°Р·Р°СЂРјР°С…."); 
 };
 
 

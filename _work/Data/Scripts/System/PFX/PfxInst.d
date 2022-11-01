@@ -3969,7 +3969,7 @@ INSTANCE TORCH_SMOKE (C_PARTICLEFX)
 };
 
 // GREENSMOKE ist momentan noch identisch mit LIGHTSMOKE
-// Grüner Rauch: visname_s = "GREENSMOKE.TGA"
+// GrÑŒner Rauch: visname_s = "GREENSMOKE.TGA"
 INSTANCE GreenSmoke (C_PARTICLEFX)
 {
      ppsvalue = 1.;
@@ -4487,7 +4487,7 @@ INSTANCE LIGHTSMOKE (C_PARTICLEFX)
 };
 
 // MAGICPOTIONSMOKE ist momentan noch identisch mit LIGHTSMOKE
-// Grüner Rauch: visname_s = "GREENSMOKE.TGA"
+// GrÑŒner Rauch: visname_s = "GREENSMOKE.TGA"
 INSTANCE MAGICPOTIONSMOKE (C_PARTICLEFX)
 {
      ppsvalue = 5.;
@@ -5611,8 +5611,8 @@ INSTANCE ACID (C_PARTICLEFX)
      visalphastart = 100.;
 };
 // Blutspritzer bei Treffer
-// Wahrscheinlich sollte dieser Effekt pro Spezies unterschiedlich sein (z.B. grünes Blut für Crawler)
-// Später sollte sich die Stärke des Effekts auch der Schadenshöhe anpassen
+// Wahrscheinlich sollte dieser Effekt pro Spezies unterschiedlich sein (z.B. grÑŒnes Blut fÑŒr Crawler)
+// SpÐ´ter sollte sich die StÐ´rke des Effekts auch der SchadenshÑ†he anpassen
 
 INSTANCE PFX_BLOOD (C_PARTICLEFX)
 {

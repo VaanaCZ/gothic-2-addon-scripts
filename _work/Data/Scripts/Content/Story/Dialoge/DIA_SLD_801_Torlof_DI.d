@@ -31,7 +31,7 @@ INSTANCE DIA_Torlof_DI_Hallo   (C_INFO)
 	information = DIA_Torlof_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "Все спокойно?";
+	description = "Р’СЃРµ СЃРїРѕРєРѕР№РЅРѕ?";
 
 };
 
@@ -45,15 +45,15 @@ FUNC INT DIA_Torlof_DI_Hallo_Condition()
 
 FUNC VOID DIA_Torlof_DI_Hallo_Info()
 {
-	AI_Output (other,self ,"DIA_Torlof_DI_Hallo_15_00"); //Все спокойно?
+	AI_Output (other,self ,"DIA_Torlof_DI_Hallo_15_00"); //Р’СЃРµ СЃРїРѕРєРѕР№РЅРѕ?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_01"); //Пока да. Но все может измениться в одно мгновение. Будь осторожен.
+		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_01"); //РџРѕРєР° РґР°. РќРѕ РІСЃРµ РјРѕР¶РµС‚ РёР·РјРµРЅРёС‚СЊСЃСЏ РІ РѕРґРЅРѕ РјРіРЅРѕРІРµРЅРёРµ. Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_02"); //Если эти презренные орки будут оставаться там, где они есть сейчас, я не вижу никакой проблемы.
+		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_02"); //Р•СЃР»Рё СЌС‚Рё РїСЂРµР·СЂРµРЅРЅС‹Рµ РѕСЂРєРё Р±СѓРґСѓС‚ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ С‚Р°Рј, РіРґРµ РѕРЅРё РµСЃС‚СЊ СЃРµР№С‡Р°СЃ, СЏ РЅРµ РІРёР¶Сѓ РЅРёРєР°РєРѕР№ РїСЂРѕР±Р»РµРјС‹.
 		B_StartOtherRoutine	(Torlof_DI,"Start");
 	};
 	AI_StopProcessInfos (self);
@@ -70,7 +70,7 @@ INSTANCE DIA_Torlof_DI_Teach (C_INFO)
 	condition	= DIA_Torlof_DI_Teach_Condition;
 	information	= DIA_Torlof_DI_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу улучшить свои способности!";
+	description = "РЇ С…РѕС‡Сѓ СѓР»СѓС‡С€РёС‚СЊ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё!";
 };                       
 
 FUNC INT DIA_Torlof_DI_Teach_Condition()
@@ -83,7 +83,7 @@ FUNC INT DIA_Torlof_DI_Teach_Condition()
  
 FUNC VOID DIA_Torlof_DI_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_DI_Teach_15_00"); //Я хочу улучшить свои способности!
+	AI_Output (other,self ,"DIA_Torlof_DI_Teach_15_00"); //РЇ С…РѕС‡Сѓ СѓР»СѓС‡С€РёС‚СЊ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё!
 	
 	Info_ClearChoices (DIA_Torlof_DI_Teach); 
 	Info_AddChoice		(DIA_Torlof_DI_Teach, DIALOG_BACK, DIA_Torlof_DI_Teach_Back);
@@ -155,7 +155,7 @@ instance DIA_Torlof_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Torlof_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Я уничтожил врагов.";
+	description = 	"РЇ СѓРЅРёС‡С‚РѕР¶РёР» РІСЂР°РіРѕРІ.";
 
 };
 
@@ -168,18 +168,18 @@ func int DIA_Torlof_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Torlof_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Torlof_DI_UndeadDragonDead_15_00"); //Я уничтожил врагов.
-	AI_Output			(self ,other, "DIA_Torlof_DI_UndeadDragonDead_01_01"); //Я ничего другого и не ожидал. Как все прошло? Мы можем отправляться назад?
+	AI_Output			(other ,self, "DIA_Torlof_DI_UndeadDragonDead_15_00"); //РЇ СѓРЅРёС‡С‚РѕР¶РёР» РІСЂР°РіРѕРІ.
+	AI_Output			(self ,other, "DIA_Torlof_DI_UndeadDragonDead_01_01"); //РЇ РЅРёС‡РµРіРѕ РґСЂСѓРіРѕРіРѕ Рё РЅРµ РѕР¶РёРґР°Р». РљР°Рє РІСЃРµ РїСЂРѕС€Р»Рѕ? РњС‹ РјРѕР¶РµРј РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ РЅР°Р·Р°Рґ?
 
 	Info_ClearChoices	(DIA_Torlof_DI_UndeadDragonDead);
-	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "Мне нужно еще пару минут.", DIA_Torlof_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "Да. Все кончено.", DIA_Torlof_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "РњРЅРµ РЅСѓР¶РЅРѕ РµС‰Рµ РїР°СЂСѓ РјРёРЅСѓС‚.", DIA_Torlof_DI_UndeadDragonDead_moment );
+	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "Р”Р°. Р’СЃРµ РєРѕРЅС‡РµРЅРѕ.", DIA_Torlof_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Torlof_DI_UndeadDragonDead_moment ()
 {
-	AI_Output			(other, self, "DIA_Torlof_DI_UndeadDragonDead_moment_15_00"); //Мне нужно еще пару минут.
-	AI_Output			(self, other, "DIA_Torlof_DI_UndeadDragonDead_moment_01_01"); //Поторопись!
+	AI_Output			(other, self, "DIA_Torlof_DI_UndeadDragonDead_moment_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РµС‰Рµ РїР°СЂСѓ РјРёРЅСѓС‚.
+	AI_Output			(self, other, "DIA_Torlof_DI_UndeadDragonDead_moment_01_01"); //РџРѕС‚РѕСЂРѕРїРёСЃСЊ!
 	AI_StopProcessInfos (self);
 };
 

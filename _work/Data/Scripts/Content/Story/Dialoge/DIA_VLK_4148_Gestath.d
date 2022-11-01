@@ -22,7 +22,7 @@ FUNC VOID DIA_Gestath_EXIT_Info()
 	
 	if (Hlp_IsItem (heroArmor, ITAR_DJG_Crawler) == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //(сухо) Хорошие доспехи!
+		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //(СЃСѓС…Рѕ) РҐРѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё!
 	};
 	AI_StopProcessInfos (self);
 };
@@ -37,7 +37,7 @@ instance DIA_Gestath_HALLO		(C_INFO)
 	condition	 = 	DIA_Gestath_HALLO_Condition;
 	information	 = 	DIA_Gestath_HALLO_Info;
 
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Gestath_HALLO_Condition ()
@@ -47,47 +47,47 @@ func int DIA_Gestath_HALLO_Condition ()
 
 func void DIA_Gestath_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_15_00"); //Как дела?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(сухо) Это мужественный поступок - прийти сюда. А ты не заблудился, часом?
+	AI_Output			(other, self, "DIA_Gestath_HALLO_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(СЃСѓС…Рѕ) Р­С‚Рѕ РјСѓР¶РµСЃС‚РІРµРЅРЅС‹Р№ РїРѕСЃС‚СѓРїРѕРє - РїСЂРёР№С‚Рё СЃСЋРґР°. Рђ С‚С‹ РЅРµ Р·Р°Р±Р»СѓРґРёР»СЃСЏ, С‡Р°СЃРѕРј?
 	Gestath_TeachAnimalTrophy = TRUE;
 	Info_ClearChoices	(DIA_Gestath_HALLO);
-	Info_AddChoice	(DIA_Gestath_HALLO, "Что здесь есть интересного?", DIA_Gestath_HALLO_waszusehen );
-	Info_AddChoice	(DIA_Gestath_HALLO, "А что ты делаешь здесь?", DIA_Gestath_HALLO_was );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Р§С‚Рѕ Р·РґРµСЃСЊ РµСЃС‚СЊ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ?", DIA_Gestath_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?", DIA_Gestath_HALLO_was );
 };
 func void DIA_Gestath_HALLO_plate ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //У тебя хорошие доспехи.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Да. Такие нелегко найти. Они из панцирей краулеров. Парень по имени Вольф сделал их для меня.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Я был каторжником здесь, в колонии. Дал ему пару панцирей краулеров, и пару дней спустя доспехи были готовы. Этот парень - мастер.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //РЈ С‚РµР±СЏ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Р”Р°. РўР°РєРёРµ РЅРµР»РµРіРєРѕ РЅР°Р№С‚Рё. РћРЅРё РёР· РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ. РџР°СЂРµРЅСЊ РїРѕ РёРјРµРЅРё Р’РѕР»СЊС„ СЃРґРµР»Р°Р» РёС… РґР»СЏ РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //РЇ Р±С‹Р» РєР°С‚РѕСЂР¶РЅРёРєРѕРј Р·РґРµСЃСЊ, РІ РєРѕР»РѕРЅРёРё. Р”Р°Р» РµРјСѓ РїР°СЂСѓ РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ, Рё РїР°СЂСѓ РґРЅРµР№ СЃРїСѓСЃС‚СЏ РґРѕСЃРїРµС…Рё Р±С‹Р»Рё РіРѕС‚РѕРІС‹. Р­С‚РѕС‚ РїР°СЂРµРЅСЊ - РјР°СЃС‚РµСЂ.
 
 	Wolf_ProduceCrawlerArmor = TRUE;
 	
 	Info_AddChoice	(DIA_Gestath_HALLO, DIALOG_BACK, DIA_Gestath_HALLO_Back );
-	Info_AddChoice	(DIA_Gestath_HALLO, "А где сейчас Вольф?", DIA_Gestath_HALLO_plate_woWolf );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Рђ РіРґРµ СЃРµР№С‡Р°СЃ Р’РѕР»СЊС„?", DIA_Gestath_HALLO_plate_woWolf );
 };
 func void DIA_Gestath_HALLO_plate_woWolf ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //А где сейчас Вольф?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Я давно уже не видел его. Раньше он был наемником здесь, в колонии.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Я думаю, он все еще со своими парнями.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Рђ РіРґРµ СЃРµР№С‡Р°СЃ Р’РѕР»СЊС„?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //РЇ РґР°РІРЅРѕ СѓР¶Рµ РЅРµ РІРёРґРµР» РµРіРѕ. Р Р°РЅСЊС€Рµ РѕРЅ Р±С‹Р» РЅР°РµРјРЅРёРєРѕРј Р·РґРµСЃСЊ, РІ РєРѕР»РѕРЅРёРё.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //РЇ РґСѓРјР°СЋ, РѕРЅ РІСЃРµ РµС‰Рµ СЃРѕ СЃРІРѕРёРјРё РїР°СЂРЅСЏРјРё.
 };
 
 func void DIA_Gestath_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //А что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Зарабатываю деньги.
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Здесь, где нет ничего?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Я охотник. Специализируюсь на сложных случаях.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Огненные ящеры, краулеры, драконьи снепперы... Другие не охотятся на таких зверей. Это приносит неплохие деньги.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Р—Р°СЂР°Р±Р°С‚С‹РІР°СЋ РґРµРЅСЊРіРё.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Р—РґРµСЃСЊ, РіРґРµ РЅРµС‚ РЅРёС‡РµРіРѕ?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //РЇ РѕС…РѕС‚РЅРёРє. РЎРїРµС†РёР°Р»РёР·РёСЂСѓСЋСЃСЊ РЅР° СЃР»РѕР¶РЅС‹С… СЃР»СѓС‡Р°СЏС….
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //РћРіРЅРµРЅРЅС‹Рµ СЏС‰РµСЂС‹, РєСЂР°СѓР»РµСЂС‹, РґСЂР°РєРѕРЅСЊРё СЃРЅРµРїРїРµСЂС‹... Р”СЂСѓРіРёРµ РЅРµ РѕС…РѕС‚СЏС‚СЃСЏ РЅР° С‚Р°РєРёС… Р·РІРµСЂРµР№. Р­С‚Рѕ РїСЂРёРЅРѕСЃРёС‚ РЅРµРїР»РѕС…РёРµ РґРµРЅСЊРіРё.
 	
-	Info_AddChoice	(DIA_Gestath_HALLO, "У тебя хорошие доспехи.", DIA_Gestath_HALLO_plate );
+	Info_AddChoice	(DIA_Gestath_HALLO, "РЈ С‚РµР±СЏ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё.", DIA_Gestath_HALLO_plate );
 };
 
 func void DIA_Gestath_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Что здесь есть интересного?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Куча огненных ящеров, орков и еще не знаю чего. Наверх я не ходил.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //И тебе бы не советовал. Твари, что живут там, не особенно дружелюбны.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Р§С‚Рѕ Р·РґРµСЃСЊ РµСЃС‚СЊ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //РљСѓС‡Р° РѕРіРЅРµРЅРЅС‹С… СЏС‰РµСЂРѕРІ, РѕСЂРєРѕРІ Рё РµС‰Рµ РЅРµ Р·РЅР°СЋ С‡РµРіРѕ. РќР°РІРµСЂС… СЏ РЅРµ С…РѕРґРёР».
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //Р С‚РµР±Рµ Р±С‹ РЅРµ СЃРѕРІРµС‚РѕРІР°Р». РўРІР°СЂРё, С‡С‚Рѕ Р¶РёРІСѓС‚ С‚Р°Рј, РЅРµ РѕСЃРѕР±РµРЅРЅРѕ РґСЂСѓР¶РµР»СЋР±РЅС‹.
 };
 
 func void DIA_Gestath_HALLO_Back ()
@@ -106,7 +106,7 @@ instance DIA_Gestath_Drachen		(C_INFO)
 	information	 = 	DIA_Gestath_Drachen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты умеешь потрошить драконов?";
+	description	 = 	"РўС‹ СѓРјРµРµС€СЊ РїРѕС‚СЂРѕС€РёС‚СЊ РґСЂР°РєРѕРЅРѕРІ?";
 };
 var int Gestath_DragonTrophy;
 
@@ -121,14 +121,14 @@ func int DIA_Gestath_Drachen_Condition ()
 
 func void DIA_Gestath_Drachen_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Ты умеешь потрошить драконов?
+	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //РўС‹ СѓРјРµРµС€СЊ РїРѕС‚СЂРѕС€РёС‚СЊ РґСЂР°РєРѕРЅРѕРІ?
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(смеется) Спроси меня об этом попозже, когда будешь готов к чему-нибудь подобному, хорошо?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(СЃРјРµРµС‚СЃСЏ) РЎРїСЂРѕСЃРё РјРµРЅСЏ РѕР± СЌС‚РѕРј РїРѕРїРѕР·Р¶Рµ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ Рє С‡РµРјСѓ-РЅРёР±СѓРґСЊ РїРѕРґРѕР±РЅРѕРјСѓ, С…РѕСЂРѕС€Рѕ?
 	}
 	else
 	{	
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //Конечно. Почему нет?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //РљРѕРЅРµС‡РЅРѕ. РџРѕС‡РµРјСѓ РЅРµС‚?
 		Gestath_DragonTrophy = TRUE;
 	};
 };
@@ -143,7 +143,7 @@ instance DIA_Gestath_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Gestath_TEACHHUNTING_Condition;
 	information	 = 	DIA_Gestath_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Научи меня потрошить животных.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ РїРѕС‚СЂРѕС€РёС‚СЊ Р¶РёРІРѕС‚РЅС‹С….";
 };
 
 func int DIA_Gestath_TEACHHUNTING_Condition ()
@@ -157,7 +157,7 @@ func int DIA_Gestath_TEACHHUNTING_Condition ()
 var int DIA_Gestath_TEACHHUNTING_OneTime;
 func void DIA_Gestath_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //Научи меня потрошить животных.
+	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РїРѕС‚СЂРѕС€РёС‚СЊ Р¶РёРІРѕС‚РЅС‹С….
 	if 	(
 			(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
@@ -174,48 +174,48 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 			{
 				if (DIA_Gestath_TEACHHUNTING_OneTime == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //Почему нет? У меня есть немного свободного времени.
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //РџРѕС‡РµРјСѓ РЅРµС‚? РЈ РјРµРЅСЏ РµСЃС‚СЊ РЅРµРјРЅРѕРіРѕ СЃРІРѕР±РѕРґРЅРѕРіРѕ РІСЂРµРјРµРЅРё.
 						DIA_Gestath_TEACHHUNTING_OneTime = TRUE;
 					}
 				else
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Что ты хочешь узнать?
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 					};
 	
 				Info_AddChoice		(DIA_Gestath_TEACHHUNTING, DIALOG_BACK, DIA_Gestath_TEACHHUNTING_BACK);
 			
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Огненный язык",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  DIA_Gestath_TEACHHUNTING_FireTongue);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("РћРіРЅРµРЅРЅС‹Р№ СЏР·С‹Рє",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  DIA_Gestath_TEACHHUNTING_FireTongue);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Удаление панцирей краулеров",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Gestath_TEACHHUNTING_CrawlerPlate	);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Gestath_TEACHHUNTING_CrawlerPlate	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Удаление мандибул",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Gestath_TEACHHUNTING_Mandibles	);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РјР°РЅРґРёР±СѓР»",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Gestath_TEACHHUNTING_Mandibles	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Рог драконьего снеппера",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gestath_TEACHHUNTING_DrgSnapperHorn);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Р РѕРі РґСЂР°РєРѕРЅСЊРµРіРѕ СЃРЅРµРїРїРµСЂР°",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gestath_TEACHHUNTING_DrgSnapperHorn);
 				};
 				
 				if (Gestath_DragonTrophy == TRUE)
 				{	
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Удаление чешуи драконов",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ С‡РµС€СѓРё РґСЂР°РєРѕРЅРѕРІ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
 					};
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Сбор крови дракона",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  DIA_Gestath_TEACHHUNTING_DragonBlood);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("РЎР±РѕСЂ РєСЂРѕРІРё РґСЂР°РєРѕРЅР°",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  DIA_Gestath_TEACHHUNTING_DragonBlood);
 					};
 				};			
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //Сейчас я даже не представляю, чему еще можно обучить тебя.
+				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //РЎРµР№С‡Р°СЃ СЏ РґР°Р¶Рµ РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏСЋ, С‡РµРјСѓ РµС‰Рµ РјРѕР¶РЅРѕ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ.
 			};
 };
 
@@ -228,7 +228,7 @@ func void DIA_Gestath_TEACHHUNTING_FireTongue()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_FireTongue))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //Язык огненного ящера нужно вырезать одним точным движением ножа, удерживая его при этом другой рукой.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //РЇР·С‹Рє РѕРіРЅРµРЅРЅРѕРіРѕ СЏС‰РµСЂР° РЅСѓР¶РЅРѕ РІС‹СЂРµР·Р°С‚СЊ РѕРґРЅРёРј С‚РѕС‡РЅС‹Рј РґРІРёР¶РµРЅРёРµРј РЅРѕР¶Р°, СѓРґРµСЂР¶РёРІР°СЏ РµРіРѕ РїСЂРё СЌС‚РѕРј РґСЂСѓРіРѕР№ СЂСѓРєРѕР№.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -237,7 +237,7 @@ func void DIA_Gestath_TEACHHUNTING_CrawlerPlate()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_CrawlerPlate_09_00"); //Чтобы снять панцирь с краулера, нужен хороший прочный нож.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_CrawlerPlate_09_00"); //Р§С‚РѕР±С‹ СЃРЅСЏС‚СЊ РїР°РЅС†РёСЂСЊ СЃ РєСЂР°СѓР»РµСЂР°, РЅСѓР¶РµРЅ С…РѕСЂРѕС€РёР№ РїСЂРѕС‡РЅС‹Р№ РЅРѕР¶.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -246,7 +246,7 @@ func void DIA_Gestath_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Мандибулы сидят глубоко в черепе полевых хищников и краулеров. Чтобы вытащить их, нужно приложить некоторое усилие.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //РњР°РЅРґРёР±СѓР»С‹ СЃРёРґСЏС‚ РіР»СѓР±РѕРєРѕ РІ С‡РµСЂРµРїРµ РїРѕР»РµРІС‹С… С…РёС‰РЅРёРєРѕРІ Рё РєСЂР°СѓР»РµСЂРѕРІ. Р§С‚РѕР±С‹ РІС‹С‚Р°С‰РёС‚СЊ РёС…, РЅСѓР¶РЅРѕ РїСЂРёР»РѕР¶РёС‚СЊ РЅРµРєРѕС‚РѕСЂРѕРµ СѓСЃРёР»РёРµ.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -255,7 +255,7 @@ func void DIA_Gestath_TEACHHUNTING_DrgSnapperHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Лучше всего отделять рог драконьего снеппера от черепа при помощи толстого ножа.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Р›СѓС‡С€Рµ РІСЃРµРіРѕ РѕС‚РґРµР»СЏС‚СЊ СЂРѕРі РґСЂР°РєРѕРЅСЊРµРіРѕ СЃРЅРµРїРїРµСЂР° РѕС‚ С‡РµСЂРµРїР° РїСЂРё РїРѕРјРѕС‰Рё С‚РѕР»СЃС‚РѕРіРѕ РЅРѕР¶Р°.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -264,7 +264,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Чешую дракона очень сложно оторвать. Но когда ты уже думаешь, что у тебя ничего не получится, раз - и она все же отделяется.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Р§РµС€СѓСЋ РґСЂР°РєРѕРЅР° РѕС‡РµРЅСЊ СЃР»РѕР¶РЅРѕ РѕС‚РѕСЂРІР°С‚СЊ. РќРѕ РєРѕРіРґР° С‚С‹ СѓР¶Рµ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ, СЂР°Р· - Рё РѕРЅР° РІСЃРµ Р¶Рµ РѕС‚РґРµР»СЏРµС‚СЃСЏ.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -273,7 +273,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonBlood ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonBlood))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Лучше всего брать кровь из брюха. Найди слабое место и вонзи туда острый нож.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Р›СѓС‡С€Рµ РІСЃРµРіРѕ Р±СЂР°С‚СЊ РєСЂРѕРІСЊ РёР· Р±СЂСЋС…Р°. РќР°Р№РґРё СЃР»Р°Р±РѕРµ РјРµСЃС‚Рѕ Рё РІРѕРЅР·Рё С‚СѓРґР° РѕСЃС‚СЂС‹Р№ РЅРѕР¶.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };

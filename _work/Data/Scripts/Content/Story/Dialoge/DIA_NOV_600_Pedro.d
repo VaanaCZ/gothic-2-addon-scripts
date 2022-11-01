@@ -35,9 +35,9 @@ func int DIA_Pedro_WELCOME_Condition ()
 };
 func void DIA_Pedro_WELCOME_Info ()
 {
-	AI_Output (self, other, "DIA_Pedro_WELCOME_09_00"); //Добро пожаловать в монастырь Инноса, чужеземец.
-	AI_Output (self, other, "DIA_Pedro_WELCOME_09_01"); //Я брат Педро, скромный слуга Инноса и хранитель врат этого священного монастыря.
-	AI_Output (self, other, "DIA_Pedro_WELCOME_09_02"); //Что ты хочешь?
+	AI_Output (self, other, "DIA_Pedro_WELCOME_09_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РРЅРЅРѕСЃР°, С‡СѓР¶РµР·РµРјРµС†.
+	AI_Output (self, other, "DIA_Pedro_WELCOME_09_01"); //РЇ Р±СЂР°С‚ РџРµРґСЂРѕ, СЃРєСЂРѕРјРЅС‹Р№ СЃР»СѓРіР° РРЅРЅРѕСЃР° Рё С…СЂР°РЅРёС‚РµР»СЊ РІСЂР°С‚ СЌС‚РѕРіРѕ СЃРІСЏС‰РµРЅРЅРѕРіРѕ РјРѕРЅР°СЃС‚С‹СЂСЏ.
+	AI_Output (self, other, "DIA_Pedro_WELCOME_09_02"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ?
 };
 // *************************************************************************
 // 							Wurst verteilen
@@ -49,7 +49,7 @@ INSTANCE DIA_Pedro_Wurst(C_INFO)
 	condition	= DIA_Pedro_Wurst_Condition;
 	information	= DIA_Pedro_Wurst_Info;
 	permanent	= FALSE;
-	description = "Вот, возьми колбасу, брат!";
+	description = "Р’РѕС‚, РІРѕР·СЊРјРё РєРѕР»Р±Р°СЃСѓ, Р±СЂР°С‚!";
 };                       
 
 FUNC INT DIA_Pedro_Wurst_Condition()
@@ -65,12 +65,12 @@ FUNC INT DIA_Pedro_Wurst_Condition()
 
 FUNC VOID DIA_Pedro_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Pedro_Wurst_15_00"); //Вот, возьми колбасу, брат!
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_01"); //Я рад, что ты подумал обо мне. Обычно обо мне забывают.
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_02"); //Ты можешь дать мне еще одну колбаску?
-	AI_Output (other, self, "DIA_Pedro_Wurst_15_03"); //Забудь об этом, тогда ее на всех не хватит.
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_04"); //Эй, всего одну колбаску - никто даже не заметит этого. А ты кое-что получишь за это - я знаю место, где растет огненная крапива.
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_05"); //Если ты отнесешь ее Неорасу, он наверняка даст тебе ключ от библиотеки. Что скажешь?
+	AI_Output (other, self, "DIA_Pedro_Wurst_15_00"); //Р’РѕС‚, РІРѕР·СЊРјРё РєРѕР»Р±Р°СЃСѓ, Р±СЂР°С‚!
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_01"); //РЇ СЂР°Рґ, С‡С‚Рѕ С‚С‹ РїРѕРґСѓРјР°Р» РѕР±Рѕ РјРЅРµ. РћР±С‹С‡РЅРѕ РѕР±Рѕ РјРЅРµ Р·Р°Р±С‹РІР°СЋС‚.
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_02"); //РўС‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ РµС‰Рµ РѕРґРЅСѓ РєРѕР»Р±Р°СЃРєСѓ?
+	AI_Output (other, self, "DIA_Pedro_Wurst_15_03"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, С‚РѕРіРґР° РµРµ РЅР° РІСЃРµС… РЅРµ С…РІР°С‚РёС‚.
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_04"); //Р­Р№, РІСЃРµРіРѕ РѕРґРЅСѓ РєРѕР»Р±Р°СЃРєСѓ - РЅРёРєС‚Рѕ РґР°Р¶Рµ РЅРµ Р·Р°РјРµС‚РёС‚ СЌС‚РѕРіРѕ. Рђ С‚С‹ РєРѕРµ-С‡С‚Рѕ РїРѕР»СѓС‡РёС€СЊ Р·Р° СЌС‚Рѕ - СЏ Р·РЅР°СЋ РјРµСЃС‚Рѕ, РіРґРµ СЂР°СЃС‚РµС‚ РѕРіРЅРµРЅРЅР°СЏ РєСЂР°РїРёРІР°.
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_05"); //Р•СЃР»Рё С‚С‹ РѕС‚РЅРµСЃРµС€СЊ РµРµ РќРµРѕСЂР°СЃСѓ, РѕРЅ РЅР°РІРµСЂРЅСЏРєР° РґР°СЃС‚ С‚РµР±Рµ РєР»СЋС‡ РѕС‚ Р±РёР±Р»РёРѕС‚РµРєРё. Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -85,21 +85,21 @@ FUNC VOID DIA_Pedro_Wurst_Info()
 	AI_PrintScreen	(NovizeText, -1, YPOS_GOLDGIVEN, FONT_ScreenSmall, 2);
 	
 	Info_ClearChoices (DIA_Pedro_Wurst);
-	Info_AddChoice (DIA_Pedro_Wurst,"Ладно, держи еще одну колбасу.",DIA_Pedro_Wurst_JA);
-	Info_AddChoice (DIA_Pedro_Wurst,"Нет, забудь об этом.",DIA_Pedro_Wurst_NEIN);
+	Info_AddChoice (DIA_Pedro_Wurst,"Р›Р°РґРЅРѕ, РґРµСЂР¶Рё РµС‰Рµ РѕРґРЅСѓ РєРѕР»Р±Р°СЃСѓ.",DIA_Pedro_Wurst_JA);
+	Info_AddChoice (DIA_Pedro_Wurst,"РќРµС‚, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.",DIA_Pedro_Wurst_NEIN);
 };
 FUNC VOID DIA_Pedro_Wurst_JA()
 {
-	AI_Output (other, self, "DIA_Pedro_Wurst_JA_15_00"); //Ладно, держи еще одну колбасу.
-	AI_Output (self, other, "DIA_Pedro_Wurst_JA_09_01"); //Отлично. Огненная крапива растет слева и справа по другую сторону моста.
+	AI_Output (other, self, "DIA_Pedro_Wurst_JA_15_00"); //Р›Р°РґРЅРѕ, РґРµСЂР¶Рё РµС‰Рµ РѕРґРЅСѓ РєРѕР»Р±Р°СЃСѓ.
+	AI_Output (self, other, "DIA_Pedro_Wurst_JA_09_01"); //РћС‚Р»РёС‡РЅРѕ. РћРіРЅРµРЅРЅР°СЏ РєСЂР°РїРёРІР° СЂР°СЃС‚РµС‚ СЃР»РµРІР° Рё СЃРїСЂР°РІР° РїРѕ РґСЂСѓРіСѓСЋ СЃС‚РѕСЂРѕРЅСѓ РјРѕСЃС‚Р°.
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Info_ClearChoices (DIA_Pedro_Wurst);
 	
 };
 FUNC VOID DIA_Pedro_Wurst_NEIN()
 {
-	AI_Output (other, self, "DIA_Pedro_Wurst_NEIN_15_00"); //Нет, забудь об этом.
-	AI_Output (self, other, "DIA_Pedro_Wurst_NEIN_09_01"); //Ты хочешь выслужиться перед Гораксом, да? Эх, новые послушники все одинаковые...
+	AI_Output (other, self, "DIA_Pedro_Wurst_NEIN_15_00"); //РќРµС‚, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
+	AI_Output (self, other, "DIA_Pedro_Wurst_NEIN_09_01"); //РўС‹ С…РѕС‡РµС€СЊ РІС‹СЃР»СѓР¶РёС‚СЊСЃСЏ РїРµСЂРµРґ Р“РѕСЂР°РєСЃРѕРј, РґР°? Р­С…, РЅРѕРІС‹Рµ РїРѕСЃР»СѓС€РЅРёРєРё РІСЃРµ РѕРґРёРЅР°РєРѕРІС‹Рµ...
 	
 	Info_ClearChoices (DIA_Pedro_Wurst);
 };
@@ -112,7 +112,7 @@ instance DIA_Pedro_EINLASS		(C_INFO)
 	condition	= 	DIA_Pedro_EINLASS_Condition;
 	information	= 	DIA_Pedro_EINLASS_Info;
 	permanent	=	FALSE;
-	description	= 	"Я хочу войти в монастырь.";
+	description	= 	"РЇ С…РѕС‡Сѓ РІРѕР№С‚Рё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.";
 };
 func int DIA_Pedro_EINLASS_Condition ()
 {	
@@ -123,9 +123,9 @@ func int DIA_Pedro_EINLASS_Condition ()
 };
 func void DIA_Pedro_EINLASS_Info ()
 {
-	AI_Output (other, self, "DIA_Pedro_EINLASS_15_00"); //Я хочу войти в монастырь.
-	AI_Output (self, other, "DIA_Pedro_EINLASS_09_01"); //Доступ в монастырь открыт только для слуг Инноса.
-	AI_Output (self, other, "DIA_Pedro_EINLASS_09_02"); //Если ты хочешь помолиться Инносу, иди к одному из придорожных алтарей. Ты найдешь там успокоение в молитвах.
+	AI_Output (other, self, "DIA_Pedro_EINLASS_15_00"); //РЇ С…РѕС‡Сѓ РІРѕР№С‚Рё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.
+	AI_Output (self, other, "DIA_Pedro_EINLASS_09_01"); //Р”РѕСЃС‚СѓРї РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РѕС‚РєСЂС‹С‚ С‚РѕР»СЊРєРѕ РґР»СЏ СЃР»СѓРі РРЅРЅРѕСЃР°.
+	AI_Output (self, other, "DIA_Pedro_EINLASS_09_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕРјРѕР»РёС‚СЊСЃСЏ РРЅРЅРѕСЃСѓ, РёРґРё Рє РѕРґРЅРѕРјСѓ РёР· РїСЂРёРґРѕСЂРѕР¶РЅС‹С… Р°Р»С‚Р°СЂРµР№. РўС‹ РЅР°Р№РґРµС€СЊ С‚Р°Рј СѓСЃРїРѕРєРѕРµРЅРёРµ РІ РјРѕР»РёС‚РІР°С….
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEMPEL
@@ -137,7 +137,7 @@ instance DIA_Pedro_TEMPEL		(C_INFO)
 	condition	 = 	DIA_Pedro_TEMPEL_Condition;
 	information	 = 	DIA_Pedro_TEMPEL_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Что нужно сделать, чтобы меня приняли в монастырь?";
+	description	 = 	"Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РјРµРЅСЏ РїСЂРёРЅСЏР»Рё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ?";
 };
 //-----------------------------------
 
@@ -152,26 +152,26 @@ func int DIA_Pedro_TEMPEL_Condition ()
 };
 func void DIA_Pedro_TEMPEL_Info ()
 {	
- 	AI_Output (other, self, "DIA_Pedro_TEMPEL_15_00"); //Что нужно сделать, чтобы меня приняли в монастырь?
+ 	AI_Output (other, self, "DIA_Pedro_TEMPEL_15_00"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РјРµРЅСЏ РїСЂРёРЅСЏР»Рё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ?
  	
  	if (other.guild != GIL_NONE)
  	{
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_01"); //Поступление в монастырь невозможно для тебя - ты уже выбрал свой путь.
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_01"); //РџРѕСЃС‚СѓРїР»РµРЅРёРµ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РЅРµРІРѕР·РјРѕР¶РЅРѕ РґР»СЏ С‚РµР±СЏ - С‚С‹ СѓР¶Рµ РІС‹Р±СЂР°Р» СЃРІРѕР№ РїСѓС‚СЊ.
  	}
  	else
  	{
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_02"); //Если ты хочешь быть принятым в Братство Инноса, ты должен знать и выполнять правила монастыря.
-		//AI_Output (self, other, "DIA_Pedro_TEMPEL_09_03"); //AuЯerdem verlangen wir von jedem neuen Novizen die Gaben an Innos. Ein Schaf und ...
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚С‹Рј РІ Р‘СЂР°С‚СЃС‚РІРѕ РРЅРЅРѕСЃР°, С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ Рё РІС‹РїРѕР»РЅСЏС‚СЊ РїСЂР°РІРёР»Р° РјРѕРЅР°СЃС‚С‹СЂСЏ.
+		//AI_Output (self, other, "DIA_Pedro_TEMPEL_09_03"); //AuРЇerdem verlangen wir von jedem neuen Novizen die Gaben an Innos. Ein Schaf und ...
 		//B_Say_Gold (self, other, Summe_Kloster);  
- 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_03"); //Также каждый новичок должен принести дар Инносу.
- 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_04"); //Овцу и 1000 золотых.
- 		AI_Output (other, self, "DIA_Pedro_TEMPEL_15_04"); //Это целая куча золота.
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_05"); //Это знак того, что ты начинаешь новую жизнь в качестве слуги Инноса. Когда ты будешь принят, все твои предыдущие прегрешения будут прощены.
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_06"); //И хорошенько подумай - потом ты не сможешь отказаться от своего решения стать слугой Инноса.
+ 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_03"); //РўР°РєР¶Рµ РєР°Р¶РґС‹Р№ РЅРѕРІРёС‡РѕРє РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё РґР°СЂ РРЅРЅРѕСЃСѓ.
+ 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_04"); //РћРІС†Сѓ Рё 1000 Р·РѕР»РѕС‚С‹С….
+ 		AI_Output (other, self, "DIA_Pedro_TEMPEL_15_04"); //Р­С‚Рѕ С†РµР»Р°СЏ РєСѓС‡Р° Р·РѕР»РѕС‚Р°.
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_05"); //Р­С‚Рѕ Р·РЅР°Рє С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ РЅР°С‡РёРЅР°РµС€СЊ РЅРѕРІСѓСЋ Р¶РёР·РЅСЊ РІ РєР°С‡РµСЃС‚РІРµ СЃР»СѓРіРё РРЅРЅРѕСЃР°. РљРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ РїСЂРёРЅСЏС‚, РІСЃРµ С‚РІРѕРё РїСЂРµРґС‹РґСѓС‰РёРµ РїСЂРµРіСЂРµС€РµРЅРёСЏ Р±СѓРґСѓС‚ РїСЂРѕС‰РµРЅС‹.
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_06"); //Р С…РѕСЂРѕС€РµРЅСЊРєРѕ РїРѕРґСѓРјР°Р№ - РїРѕС‚РѕРј С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РѕС‚РєР°Р·Р°С‚СЊСЃСЏ РѕС‚ СЃРІРѕРµРіРѕ СЂРµС€РµРЅРёСЏ СЃС‚Р°С‚СЊ СЃР»СѓРіРѕР№ РРЅРЅРѕСЃР°.
  		SC_KnowsKlosterTribut = TRUE;
   		Log_CreateTopic (Topic_Kloster,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Kloster,LOG_RUNNING);
-		B_LogEntry (Topic_Kloster,"Чтобы стать послушником монастыря Инноса, мне нужна овца и огромная сумма золотом.");
+		B_LogEntry (Topic_Kloster,"Р§С‚РѕР±С‹ СЃС‚Р°С‚СЊ РїРѕСЃР»СѓС€РЅРёРєРѕРј РјРѕРЅР°СЃС‚С‹СЂСЏ РРЅРЅРѕСЃР°, РјРЅРµ РЅСѓР¶РЅР° РѕРІС†Р° Рё РѕРіСЂРѕРјРЅР°СЏ СЃСѓРјРјР° Р·РѕР»РѕС‚РѕРј.");
  	};
 };
 
@@ -185,7 +185,7 @@ instance DIA_Addon_Pedro_Statuette (C_INFO)
 	condition	 = 	DIA_Addon_Pedro_Statuette_Condition;
 	information	 = 	DIA_Addon_Pedro_Statuette_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"У меня есть вот эта статуэтка...";
+	description	 = 	"РЈ РјРµРЅСЏ РµСЃС‚СЊ РІРѕС‚ СЌС‚Р° СЃС‚Р°С‚СѓСЌС‚РєР°...";
 };
 func int DIA_Addon_Pedro_Statuette_Condition ()
 {	
@@ -199,20 +199,20 @@ func int DIA_Addon_Pedro_Statuette_Condition ()
 };
 func void DIA_Addon_Pedro_Statuette_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_00"); //У меня есть вот эта статуэтка. Думаю, она пропала из монастыря. 
-	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_01"); //Теперь я могу войти?
+	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РІРѕС‚ СЌС‚Р° СЃС‚Р°С‚СѓСЌС‚РєР°. Р”СѓРјР°СЋ, РѕРЅР° РїСЂРѕРїР°Р»Р° РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ. 
+	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_01"); //РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РІРѕР№С‚Рё?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_02"); //Ну, думаю, что в таких исключительных обстоятельствах, ты можешь стать послушником бесплатно.
+		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_02"); //РќСѓ, РґСѓРјР°СЋ, С‡С‚Рѕ РІ С‚Р°РєРёС… РёСЃРєР»СЋС‡РёС‚РµР»СЊРЅС‹С… РѕР±СЃС‚РѕСЏС‚РµР»СЊСЃС‚РІР°С…, С‚С‹ РјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ РїРѕСЃР»СѓС€РЅРёРєРѕРј Р±РµСЃРїР»Р°С‚РЅРѕ.
 
 		Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Послушник Педро пропустил меня в монастырь, потому что я нес пропавшую статуэтку. Я должен отдать ее кому-то в монастыре."); 
+		B_LogEntry (TOPIC_Addon_RangerHelpKDF,"РџРѕСЃР»СѓС€РЅРёРє РџРµРґСЂРѕ РїСЂРѕРїСѓСЃС‚РёР» РјРµРЅСЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЏ РЅРµСЃ РїСЂРѕРїР°РІС€СѓСЋ СЃС‚Р°С‚СѓСЌС‚РєСѓ. РЇ РґРѕР»Р¶РµРЅ РѕС‚РґР°С‚СЊ РµРµ РєРѕРјСѓ-С‚Рѕ РІ РјРѕРЅР°СЃС‚С‹СЂРµ."); 
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_03"); //Боюсь, даже эта драгоценность не откроет тебе путь внутрь. 
-		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_04"); //Ты уже выбрал свой путь. Монастырь для тебя закрыт.
+		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_03"); //Р‘РѕСЋСЃСЊ, РґР°Р¶Рµ СЌС‚Р° РґСЂР°РіРѕС†РµРЅРЅРѕСЃС‚СЊ РЅРµ РѕС‚РєСЂРѕРµС‚ С‚РµР±Рµ РїСѓС‚СЊ РІРЅСѓС‚СЂСЊ. 
+		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_04"); //РўС‹ СѓР¶Рµ РІС‹Р±СЂР°Р» СЃРІРѕР№ РїСѓС‚СЊ. РњРѕРЅР°СЃС‚С‹СЂСЊ РґР»СЏ С‚РµР±СЏ Р·Р°РєСЂС‹С‚.
 	};
 };
 
@@ -223,7 +223,7 @@ instance DIA_Addon_Pedro_Statuette_Abgeben (C_INFO)
 	condition	 = 	DIA_Addon_Pedro_Statuette_Abgeben_Condition;
 	information	 = 	DIA_Addon_Pedro_Statuette_Abgeben_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я могу отдать статуэтку тебе?";
+	description	 = 	"РЇ РјРѕРіСѓ РѕС‚РґР°С‚СЊ СЃС‚Р°С‚СѓСЌС‚РєСѓ С‚РµР±Рµ?";
 };
 func int DIA_Addon_Pedro_Statuette_Abgeben_Condition ()
 {	
@@ -238,8 +238,8 @@ func int DIA_Addon_Pedro_Statuette_Abgeben_Condition ()
 };
 func void DIA_Addon_Pedro_Statuette_Abgeben_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_Abgeben_15_00"); //Я могу отдать статуэтку тебе?
-	AI_Output (self, other, "DIA_Addon_Pedro_Statuette_Abgeben_09_01"); //Конечно. Я позабочусь о ней. Благодарю тебя за щедрость.
+	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_Abgeben_15_00"); //РЇ РјРѕРіСѓ РѕС‚РґР°С‚СЊ СЃС‚Р°С‚СѓСЌС‚РєСѓ С‚РµР±Рµ?
+	AI_Output (self, other, "DIA_Addon_Pedro_Statuette_Abgeben_09_01"); //РљРѕРЅРµС‡РЅРѕ. РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ Рѕ РЅРµР№. Р‘Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ Р·Р° С‰РµРґСЂРѕСЃС‚СЊ.
 	MIS_Addon_Daron_GetStatue = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_ReportLostInnosStatue2Daron);
 };
@@ -253,7 +253,7 @@ instance DIA_Pedro_Rules		(C_INFO)
 	condition	 = 	DIA_Pedro_Rules_Condition;
 	information	 = 	DIA_Pedro_Rules_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Что это за правила, по которым вы живете?";
+	description	 = 	"Р§С‚Рѕ СЌС‚Рѕ Р·Р° РїСЂР°РІРёР»Р°, РїРѕ РєРѕС‚РѕСЂС‹Рј РІС‹ Р¶РёРІРµС‚Рµ?";
 };
 func int DIA_Pedro_Rules_Condition ()
 {	
@@ -264,16 +264,16 @@ func int DIA_Pedro_Rules_Condition ()
 };
 func void DIA_Pedro_Rules_Info ()
 {
-	AI_Output (other, self,"DIA_Pedro_Rules_15_00"); //Что это за правила, по которым вы живете?
-	AI_Output (self, other,"DIA_Pedro_Rules_09_01"); //Иннос - бог правды и закона. Поэтому мы НИКОГДА не лжем и не совершаем преступлений.
-	AI_Output (self, other,"DIA_Pedro_Rules_09_02"); //Если ты согрешишь против брата из нашей общины или украдешь нашу собственность, тебе придется заплатить за это штраф.
-	AI_Output (self, other,"DIA_Pedro_Rules_09_03"); //Иннос также бог правления и огня.
-	AI_Output (self, other,"DIA_Pedro_Rules_09_04"); //Будучи послушником, ты должен проявлять ПОСЛУШАНИЕ и УВАЖЕНИЕ  ко всем Магам Огня.
-	AI_Output (other,self ,"DIA_Pedro_Rules_15_05"); //Понятно.
-	AI_Output (self ,other,"DIA_Pedro_Rules_09_06"); //Кроме того, послушник ОБЯЗАН выполнять работу в монастыре на благо общины.
+	AI_Output (other, self,"DIA_Pedro_Rules_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° РїСЂР°РІРёР»Р°, РїРѕ РєРѕС‚РѕСЂС‹Рј РІС‹ Р¶РёРІРµС‚Рµ?
+	AI_Output (self, other,"DIA_Pedro_Rules_09_01"); //РРЅРЅРѕСЃ - Р±РѕРі РїСЂР°РІРґС‹ Рё Р·Р°РєРѕРЅР°. РџРѕСЌС‚РѕРјСѓ РјС‹ РќРРљРћР“Р”Рђ РЅРµ Р»Р¶РµРј Рё РЅРµ СЃРѕРІРµСЂС€Р°РµРј РїСЂРµСЃС‚СѓРїР»РµРЅРёР№.
+	AI_Output (self, other,"DIA_Pedro_Rules_09_02"); //Р•СЃР»Рё С‚С‹ СЃРѕРіСЂРµС€РёС€СЊ РїСЂРѕС‚РёРІ Р±СЂР°С‚Р° РёР· РЅР°С€РµР№ РѕР±С‰РёРЅС‹ РёР»Рё СѓРєСЂР°РґРµС€СЊ РЅР°С€Сѓ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚СЊ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ С€С‚СЂР°С„.
+	AI_Output (self, other,"DIA_Pedro_Rules_09_03"); //РРЅРЅРѕСЃ С‚Р°РєР¶Рµ Р±РѕРі РїСЂР°РІР»РµРЅРёСЏ Рё РѕРіРЅСЏ.
+	AI_Output (self, other,"DIA_Pedro_Rules_09_04"); //Р‘СѓРґСѓС‡Рё РїРѕСЃР»СѓС€РЅРёРєРѕРј, С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРѕСЏРІР»СЏС‚СЊ РџРћРЎР›РЈРЁРђРќРР• Рё РЈР’РђР–Р•РќРР•  РєРѕ РІСЃРµРј РњР°РіР°Рј РћРіРЅСЏ.
+	AI_Output (other,self ,"DIA_Pedro_Rules_15_05"); //РџРѕРЅСЏС‚РЅРѕ.
+	AI_Output (self ,other,"DIA_Pedro_Rules_09_06"); //РљСЂРѕРјРµ С‚РѕРіРѕ, РїРѕСЃР»СѓС€РЅРёРє РћР‘РЇР—РђРќ РІС‹РїРѕР»РЅСЏС‚СЊ СЂР°Р±РѕС‚Сѓ РІ РјРѕРЅР°СЃС‚С‹СЂРµ РЅР° Р±Р»Р°РіРѕ РѕР±С‰РёРЅС‹.
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Pedro_Rules_09_07"); //Если ты готов следовать этим правилам, и у тебя есть приношение Инносу, мы готовы принять тебя в монастырь в качестве послушника.
+		AI_Output (self ,other,"DIA_Pedro_Rules_09_07"); //Р•СЃР»Рё С‚С‹ РіРѕС‚РѕРІ СЃР»РµРґРѕРІР°С‚СЊ СЌС‚РёРј РїСЂР°РІРёР»Р°Рј, Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РїСЂРёРЅРѕС€РµРЅРёРµ РРЅРЅРѕСЃСѓ, РјС‹ РіРѕС‚РѕРІС‹ РїСЂРёРЅСЏС‚СЊ С‚РµР±СЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РІ РєР°С‡РµСЃС‚РІРµ РїРѕСЃР»СѓС€РЅРёРєР°.
 	};
 };
 
@@ -286,7 +286,7 @@ instance DIA_Pedro_AUFNAHME		(C_INFO)
 	condition	 = 	DIA_Pedro_AUFNAHME_Condition;
 	information	 = 	DIA_Pedro_AUFNAHME_Info;
 	permanent 	 =  TRUE; 
-	description	 = 	"Я хочу стать послушником.";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РїРѕСЃР»СѓС€РЅРёРєРѕРј.";
 };
 var int DIA_Pedro_AUFNAHME_NOPERM;
 func int DIA_Pedro_AUFNAHME_Condition ()
@@ -300,24 +300,24 @@ func int DIA_Pedro_AUFNAHME_Condition ()
 func void B_DIA_Pedro_AUFNAHME_Choice ()
 {
 		Info_ClearChoices (DIA_Pedro_AUFNAHME);
-		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Я еще немного подумаю над этим.",DIA_Pedro_AUFNAHME_NO);
-		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Да, я хочу посвятить свою жизнь служению Инносу.",DIA_Pedro_AUFNAHME_YES);
+		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"РЇ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.",DIA_Pedro_AUFNAHME_NO);
+		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Р”Р°, СЏ С…РѕС‡Сѓ РїРѕСЃРІСЏС‚РёС‚СЊ СЃРІРѕСЋ Р¶РёР·РЅСЊ СЃР»СѓР¶РµРЅРёСЋ РРЅРЅРѕСЃСѓ.",DIA_Pedro_AUFNAHME_YES);
 };
 func void DIA_Pedro_AUFNAHME_Info ()
 {
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_15_00"); //Я хочу стать послушником.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РїРѕСЃР»СѓС€РЅРёРєРѕРј.
 	
 	Npc_PerceiveAll (self);
 	
 	if (hero.guild != GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_01"); //Ты уже выбрал свой путь. Путь магии закрыт для тебя.
+		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_01"); //РўС‹ СѓР¶Рµ РІС‹Р±СЂР°Р» СЃРІРѕР№ РїСѓС‚СЊ. РџСѓС‚СЊ РјР°РіРёРё Р·Р°РєСЂС‹С‚ РґР»СЏ С‚РµР±СЏ.
 		DIA_Pedro_AUFNAHME_NOPERM = TRUE;
 	}
 	//ADDON>
 	else if (Npc_KnowsInfo (other, DIA_Addon_Pedro_Statuette))
 	{
-		AI_Output (self, other, "DIA_Addon_Pedro_AUFNAHME_09_02"); //Твое решение окончательно? Пути назад для тебя уже не будет.
+		AI_Output (self, other, "DIA_Addon_Pedro_AUFNAHME_09_02"); //РўРІРѕРµ СЂРµС€РµРЅРёРµ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕ? РџСѓС‚Рё РЅР°Р·Р°Рґ РґР»СЏ С‚РµР±СЏ СѓР¶Рµ РЅРµ Р±СѓРґРµС‚.
 		B_DIA_Pedro_AUFNAHME_Choice ();
 	}
 	//<ADDON
@@ -327,26 +327,26 @@ func void DIA_Pedro_AUFNAHME_Info ()
 	&& (Npc_GetDistToNpc(self, other) < 1000)
 	{
 		
-		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_03"); //Я вижу, ты принес необходимое приношение. Если ты действительно желаешь этого, ты можешь стать послушником.
-		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_04"); //Однако, если ты примешь это решение, пути назад не будет - хорошо подумай, твой ли это путь!
+		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_03"); //РЇ РІРёР¶Сѓ, С‚С‹ РїСЂРёРЅРµСЃ РЅРµРѕР±С…РѕРґРёРјРѕРµ РїСЂРёРЅРѕС€РµРЅРёРµ. Р•СЃР»Рё С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р¶РµР»Р°РµС€СЊ СЌС‚РѕРіРѕ, С‚С‹ РјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ РїРѕСЃР»СѓС€РЅРёРєРѕРј.
+		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_04"); //РћРґРЅР°РєРѕ, РµСЃР»Рё С‚С‹ РїСЂРёРјРµС€СЊ СЌС‚Рѕ СЂРµС€РµРЅРёРµ, РїСѓС‚Рё РЅР°Р·Р°Рґ РЅРµ Р±СѓРґРµС‚ - С…РѕСЂРѕС€Рѕ РїРѕРґСѓРјР°Р№, С‚РІРѕР№ Р»Рё СЌС‚Рѕ РїСѓС‚СЊ!
 		
 		B_DIA_Pedro_AUFNAHME_Choice ();
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_02"); //Ты не принес необходимое приношение.
+		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_02"); //РўС‹ РЅРµ РїСЂРёРЅРµСЃ РЅРµРѕР±С…РѕРґРёРјРѕРµ РїСЂРёРЅРѕС€РµРЅРёРµ.
 	};
 };
 
 FUNC VOID DIA_Pedro_AUFNAHME_YES()
 {
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_00"); //Да, я хочу посвятить свою жизнь служению Инносу.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_01"); //Тогда добро пожаловать, брат. Я даю тебе этот ключ от монастырских ворот.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_02"); //В знак твоего добровольного принятия этого решения, ты должен сам открыть эти ворота и войти внутрь.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_03"); //Теперь ты послушник. Носи эту робу в знак того, что теперь ты член нашего братства.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_04"); //Когда ты войдешь в монастырь, подойди к Парлану. С этого момента он будет отвечать за тебя.
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_05"); //Мои прегрешения теперь прощены?
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_06"); //Пока еще нет. Поговори с мастером Парланом. Он благословит тебя и очистит от твоих грехов.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_00"); //Р”Р°, СЏ С…РѕС‡Сѓ РїРѕСЃРІСЏС‚РёС‚СЊ СЃРІРѕСЋ Р¶РёР·РЅСЊ СЃР»СѓР¶РµРЅРёСЋ РРЅРЅРѕСЃСѓ.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_01"); //РўРѕРіРґР° РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, Р±СЂР°С‚. РЇ РґР°СЋ С‚РµР±Рµ СЌС‚РѕС‚ РєР»СЋС‡ РѕС‚ РјРѕРЅР°СЃС‚С‹СЂСЃРєРёС… РІРѕСЂРѕС‚.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_02"); //Р’ Р·РЅР°Рє С‚РІРѕРµРіРѕ РґРѕР±СЂРѕРІРѕР»СЊРЅРѕРіРѕ РїСЂРёРЅСЏС‚РёСЏ СЌС‚РѕРіРѕ СЂРµС€РµРЅРёСЏ, С‚С‹ РґРѕР»Р¶РµРЅ СЃР°Рј РѕС‚РєСЂС‹С‚СЊ СЌС‚Рё РІРѕСЂРѕС‚Р° Рё РІРѕР№С‚Рё РІРЅСѓС‚СЂСЊ.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_03"); //РўРµРїРµСЂСЊ С‚С‹ РїРѕСЃР»СѓС€РЅРёРє. РќРѕСЃРё СЌС‚Сѓ СЂРѕР±Сѓ РІ Р·РЅР°Рє С‚РѕРіРѕ, С‡С‚Рѕ С‚РµРїРµСЂСЊ С‚С‹ С‡Р»РµРЅ РЅР°С€РµРіРѕ Р±СЂР°С‚СЃС‚РІР°.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_04"); //РљРѕРіРґР° С‚С‹ РІРѕР№РґРµС€СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, РїРѕРґРѕР№РґРё Рє РџР°СЂР»Р°РЅСѓ. РЎ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° РѕРЅ Р±СѓРґРµС‚ РѕС‚РІРµС‡Р°С‚СЊ Р·Р° С‚РµР±СЏ.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_05"); //РњРѕРё РїСЂРµРіСЂРµС€РµРЅРёСЏ С‚РµРїРµСЂСЊ РїСЂРѕС‰РµРЅС‹?
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_06"); //РџРѕРєР° РµС‰Рµ РЅРµС‚. РџРѕРіРѕРІРѕСЂРё СЃ РјР°СЃС‚РµСЂРѕРј РџР°СЂР»Р°РЅРѕРј. РћРЅ Р±Р»Р°РіРѕСЃР»РѕРІРёС‚ С‚РµР±СЏ Рё РѕС‡РёСЃС‚РёС‚ РѕС‚ С‚РІРѕРёС… РіСЂРµС…РѕРІ.
 	
 	CreateInvItems 		(self,ItKe_Innos_MIS,1);
 	B_GiveInvItems 		(self, hero, ItKe_Innos_MIS,1); 
@@ -375,13 +375,13 @@ FUNC VOID DIA_Pedro_AUFNAHME_YES()
 };
 FUNC VOID DIA_Pedro_AUFNAHME_NO()
 {
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_NO_15_00"); //Я еще немного подумаю над этим.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_NO_09_01"); //Возвращайся, когда будешь готов.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_NO_15_00"); //РЇ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_NO_09_01"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 	
 	Info_ClearChoices (DIA_Pedro_AUFNAHME);
 };
 //*********************************************************************
-//	Erzдhl mir vom Leben im Kloster.
+//	ErzРґhl mir vom Leben im Kloster.
 //*********************************************************************
 instance DIA_Pedro_Monastery		(C_INFO)
 {
@@ -390,7 +390,7 @@ instance DIA_Pedro_Monastery		(C_INFO)
 	condition	 = 	DIA_Pedro_Monastery_Condition;
 	information	 = 	DIA_Pedro_Monastery_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Расскажи мне о жизни в монастыре.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р¶РёР·РЅРё РІ РјРѕРЅР°СЃС‚С‹СЂРµ.";
 };
 func int DIA_Pedro_Monastery_Condition ()
 {		
@@ -398,9 +398,9 @@ func int DIA_Pedro_Monastery_Condition ()
 };
 func void DIA_Pedro_Monastery_Info ()
 {
-	AI_Output (other, self, "DIA_Pedro_Monastery_15_00"); //Расскажи мне о жизни в монастыре.
-	AI_Output (self, other, "DIA_Pedro_Monastery_09_01"); //Мы живем в монастыре, чтобы служить Инносу. Мы, послушники, выполняем различные работы и изучаем писания, когда у нас появляется такая возможность.
-	AI_Output (self, other, "DIA_Pedro_Monastery_09_02"); //Маги присматривают за нами, а также изучают искусство магии.
+	AI_Output (other, self, "DIA_Pedro_Monastery_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р¶РёР·РЅРё РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
+	AI_Output (self, other, "DIA_Pedro_Monastery_09_01"); //РњС‹ Р¶РёРІРµРј РІ РјРѕРЅР°СЃС‚С‹СЂРµ, С‡С‚РѕР±С‹ СЃР»СѓР¶РёС‚СЊ РРЅРЅРѕСЃСѓ. РњС‹, РїРѕСЃР»СѓС€РЅРёРєРё, РІС‹РїРѕР»РЅСЏРµРј СЂР°Р·Р»РёС‡РЅС‹Рµ СЂР°Р±РѕС‚С‹ Рё РёР·СѓС‡Р°РµРј РїРёСЃР°РЅРёСЏ, РєРѕРіРґР° Сѓ РЅР°СЃ РїРѕСЏРІР»СЏРµС‚СЃСЏ С‚Р°РєР°СЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ.
+	AI_Output (self, other, "DIA_Pedro_Monastery_09_02"); //РњР°РіРё РїСЂРёСЃРјР°С‚СЂРёРІР°СЋС‚ Р·Р° РЅР°РјРё, Р° С‚Р°РєР¶Рµ РёР·СѓС‡Р°СЋС‚ РёСЃРєСѓСЃСЃС‚РІРѕ РјР°РіРёРё.
 }; 
 
 

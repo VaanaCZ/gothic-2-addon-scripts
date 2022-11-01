@@ -32,7 +32,7 @@ instance DIA_Till_HALLO		(C_INFO)
 	condition	 = 	DIA_Till_HALLO_Condition;
 	information	 = 	DIA_Till_HALLO_Info;
 
-	description	 = 	"Привет.";
+	description	 = 	"РџСЂРёРІРµС‚.";
 };
 
 func int DIA_Till_HALLO_Condition ()
@@ -45,36 +45,36 @@ func int DIA_Till_HALLO_Condition ()
 
 func void DIA_Till_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_HALLO_15_00"); //Привет.
-	AI_Output			(self, other, "DIA_Till_HALLO_03_01"); //Я не разговариваю с рабочими. Сколько тебе это повторять?
+	AI_Output			(other, self, "DIA_Till_HALLO_15_00"); //РџСЂРёРІРµС‚.
+	AI_Output			(self, other, "DIA_Till_HALLO_03_01"); //РЇ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ СЃ СЂР°Р±РѕС‡РёРјРё. РЎРєРѕР»СЊРєРѕ С‚РµР±Рµ СЌС‚Рѕ РїРѕРІС‚РѕСЂСЏС‚СЊ?
 	B_StartOtherRoutine (Till,"Start"); 
 
 	Info_ClearChoices	(DIA_Till_HALLO);
 
 	if (Kapitel < 5)
 	{
-		Info_AddChoice	(DIA_Till_HALLO, "Я не рабочий.", DIA_Till_HALLO_keinervoneuch );
+		Info_AddChoice	(DIA_Till_HALLO, "РЇ РЅРµ СЂР°Р±РѕС‡РёР№.", DIA_Till_HALLO_keinervoneuch );
 	
 		if (Npc_IsDead(Sekob)== FALSE)
 		{
-			Info_AddChoice	(DIA_Till_HALLO, "Ты командуешь здесь?", DIA_Till_HALLO_selber );
+			Info_AddChoice	(DIA_Till_HALLO, "РўС‹ РєРѕРјР°РЅРґСѓРµС€СЊ Р·РґРµСЃСЊ?", DIA_Till_HALLO_selber );
 		};
 	};
 };
 
 func void DIA_Till_HALLO_selber ()
 {
-	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_00"); //Ты командуешь здесь?
-	AI_Output			(self, other, "DIA_Till_HALLO_selber_03_01"); //Э-э. Нет, я всего лишь сын Секоба. Но когда старика больше не будет с нами, все земля, что ты видишь вокруг, перейдет ко мне.
-	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_02"); //Потрясающе!
+	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_00"); //РўС‹ РєРѕРјР°РЅРґСѓРµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Till_HALLO_selber_03_01"); //Р­-СЌ. РќРµС‚, СЏ РІСЃРµРіРѕ Р»РёС€СЊ СЃС‹РЅ РЎРµРєРѕР±Р°. РќРѕ РєРѕРіРґР° СЃС‚Р°СЂРёРєР° Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґРµС‚ СЃ РЅР°РјРё, РІСЃРµ Р·РµРјР»СЏ, С‡С‚Рѕ С‚С‹ РІРёРґРёС€СЊ РІРѕРєСЂСѓРі, РїРµСЂРµР№РґРµС‚ РєРѕ РјРЅРµ.
+	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_02"); //РџРѕС‚СЂСЏСЃР°СЋС‰Рµ!
 
 	Info_ClearChoices	(DIA_Till_HALLO);
 };
 
 func void DIA_Till_HALLO_keinervoneuch ()
 {
-	AI_Output			(other, self, "DIA_Till_HALLO_keinervoneuch_15_00"); //Я не рабочий.
-	AI_Output			(self, other, "DIA_Till_HALLO_keinervoneuch_03_01"); //А чего тебе тогда надо? У нас ничего нет. Так что лучше уходи.
+	AI_Output			(other, self, "DIA_Till_HALLO_keinervoneuch_15_00"); //РЇ РЅРµ СЂР°Р±РѕС‡РёР№.
+	AI_Output			(self, other, "DIA_Till_HALLO_keinervoneuch_03_01"); //Рђ С‡РµРіРѕ С‚РµР±Рµ С‚РѕРіРґР° РЅР°РґРѕ? РЈ РЅР°СЃ РЅРёС‡РµРіРѕ РЅРµС‚. РўР°Рє С‡С‚Рѕ Р»СѓС‡С€Рµ СѓС…РѕРґРё.
 
 	Info_ClearChoices	(DIA_Till_HALLO);
 };
@@ -90,7 +90,7 @@ instance DIA_Till_FELDARBEITER		(C_INFO)
 	condition	 = 	DIA_Till_FELDARBEITER_Condition;
 	information	 = 	DIA_Till_FELDARBEITER_Info;
 
-	description	 = 	"Вы так всегда обращаетесь со своими работниками?";
+	description	 = 	"Р’С‹ С‚Р°Рє РІСЃРµРіРґР° РѕР±СЂР°С‰Р°РµС‚РµСЃСЊ СЃРѕ СЃРІРѕРёРјРё СЂР°Р±РѕС‚РЅРёРєР°РјРё?";
 };
 
 func int DIA_Till_FELDARBEITER_Condition ()
@@ -104,8 +104,8 @@ func int DIA_Till_FELDARBEITER_Condition ()
 
 func void DIA_Till_FELDARBEITER_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_FELDARBEITER_15_00"); //Вы так всегда обращаетесь со своими работниками?
-	AI_Output			(self, other, "DIA_Till_FELDARBEITER_03_01"); //Конечно  - иначе нельзя. Если не поддерживать дисциплину, никто не будет - это известное правило.
+	AI_Output			(other, self, "DIA_Till_FELDARBEITER_15_00"); //Р’С‹ С‚Р°Рє РІСЃРµРіРґР° РѕР±СЂР°С‰Р°РµС‚РµСЃСЊ СЃРѕ СЃРІРѕРёРјРё СЂР°Р±РѕС‚РЅРёРєР°РјРё?
+	AI_Output			(self, other, "DIA_Till_FELDARBEITER_03_01"); //РљРѕРЅРµС‡РЅРѕ  - РёРЅР°С‡Рµ РЅРµР»СЊР·СЏ. Р•СЃР»Рё РЅРµ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ РґРёСЃС†РёРїР»РёРЅСѓ, РЅРёРєС‚Рѕ РЅРµ Р±СѓРґРµС‚ - СЌС‚Рѕ РёР·РІРµСЃС‚РЅРѕРµ РїСЂР°РІРёР»Рѕ.
 
 };
 
@@ -120,7 +120,7 @@ instance DIA_Till_SEKOB		(C_INFO)
 	condition	 = 	DIA_Till_SEKOB_Condition;
 	information	 = 	DIA_Till_SEKOB_Info;
 
-	description	 = 	"Мне нужно поговорить с твоим отцом.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РІРѕРёРј РѕС‚С†РѕРј.";
 };
 
 func int DIA_Till_SEKOB_Condition ()
@@ -138,14 +138,14 @@ func int DIA_Till_SEKOB_Condition ()
 
 func void DIA_Till_SEKOB_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_SEKOB_15_00"); //Мне нужно поговорить с твоим отцом.
-	AI_Output			(self, other, "DIA_Till_SEKOB_03_01"); //У него нет на это времени. Я его представитель. Чем я могу помочь тебе?
-	AI_Output			(other, self, "DIA_Till_SEKOB_15_02"); //Поможешь, если отведешь к своему отцу.
-	AI_Output			(self, other, "DIA_Till_SEKOB_03_03"); //Ты считаешь себя крепким парнем и хорошим бойцом, да?
-	AI_Output			(other, self, "DIA_Till_SEKOB_15_04"); //Лучшим.
-	AI_Output			(self, other, "DIA_Till_SEKOB_03_05"); //Возможно, тогда стоит позвать его.
-	AI_Output			(other, self, "DIA_Till_SEKOB_15_06"); //Не беспокойся, мальчик. Я найду его сам.
-	AI_Output			(self, other, "DIA_Till_SEKOB_03_07"); //Как скажешь.
+	AI_Output			(other, self, "DIA_Till_SEKOB_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РІРѕРёРј РѕС‚С†РѕРј.
+	AI_Output			(self, other, "DIA_Till_SEKOB_03_01"); //РЈ РЅРµРіРѕ РЅРµС‚ РЅР° СЌС‚Рѕ РІСЂРµРјРµРЅРё. РЇ РµРіРѕ РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЊ. Р§РµРј СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ?
+	AI_Output			(other, self, "DIA_Till_SEKOB_15_02"); //РџРѕРјРѕР¶РµС€СЊ, РµСЃР»Рё РѕС‚РІРµРґРµС€СЊ Рє СЃРІРѕРµРјСѓ РѕС‚С†Сѓ.
+	AI_Output			(self, other, "DIA_Till_SEKOB_03_03"); //РўС‹ СЃС‡РёС‚Р°РµС€СЊ СЃРµР±СЏ РєСЂРµРїРєРёРј РїР°СЂРЅРµРј Рё С…РѕСЂРѕС€РёРј Р±РѕР№С†РѕРј, РґР°?
+	AI_Output			(other, self, "DIA_Till_SEKOB_15_04"); //Р›СѓС‡С€РёРј.
+	AI_Output			(self, other, "DIA_Till_SEKOB_03_05"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚РѕРіРґР° СЃС‚РѕРёС‚ РїРѕР·РІР°С‚СЊ РµРіРѕ.
+	AI_Output			(other, self, "DIA_Till_SEKOB_15_06"); //РќРµ Р±РµСЃРїРѕРєРѕР№СЃСЏ, РјР°Р»СЊС‡РёРє. РЇ РЅР°Р№РґСѓ РµРіРѕ СЃР°Рј.
+	AI_Output			(self, other, "DIA_Till_SEKOB_03_07"); //РљР°Рє СЃРєР°Р¶РµС€СЊ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -160,7 +160,7 @@ instance DIA_Till_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Till_WASMACHSTDU_Condition;
 	information	 = 	DIA_Till_WASMACHSTDU_Info;
 
-	description	 = 	"Чем ты занимаешься?";
+	description	 = 	"Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };
 
 func int DIA_Till_WASMACHSTDU_Condition ()
@@ -175,12 +175,12 @@ func int DIA_Till_WASMACHSTDU_Condition ()
 
 func void DIA_Till_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_00"); //А что ты делаешь, когда не играешь в хозяина этой фермы?
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_01"); //Стою на страже.
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_02"); //Грязные ополченцы из города все чаще забредают на наши земли и воруют все, что плохо лежит.
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_03"); //Эти ублюдки были здесь только на прошлой неделе, они украли наших овец.
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_04"); //Если бы я добрался до одного из них, ему бы не поздоровилось.
-	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_05"); //Конечно!
+	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_00"); //Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ, РєРѕРіРґР° РЅРµ РёРіСЂР°РµС€СЊ РІ С…РѕР·СЏРёРЅР° СЌС‚РѕР№ С„РµСЂРјС‹?
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_01"); //РЎС‚РѕСЋ РЅР° СЃС‚СЂР°Р¶Рµ.
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_02"); //Р“СЂСЏР·РЅС‹Рµ РѕРїРѕР»С‡РµРЅС†С‹ РёР· РіРѕСЂРѕРґР° РІСЃРµ С‡Р°С‰Рµ Р·Р°Р±СЂРµРґР°СЋС‚ РЅР° РЅР°С€Рё Р·РµРјР»Рё Рё РІРѕСЂСѓСЋС‚ РІСЃРµ, С‡С‚Рѕ РїР»РѕС…Рѕ Р»РµР¶РёС‚.
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_03"); //Р­С‚Рё СѓР±Р»СЋРґРєРё Р±С‹Р»Рё Р·РґРµСЃСЊ С‚РѕР»СЊРєРѕ РЅР° РїСЂРѕС€Р»РѕР№ РЅРµРґРµР»Рµ, РѕРЅРё СѓРєСЂР°Р»Рё РЅР°С€РёС… РѕРІРµС†.
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_04"); //Р•СЃР»Рё Р±С‹ СЏ РґРѕР±СЂР°Р»СЃСЏ РґРѕ РѕРґРЅРѕРіРѕ РёР· РЅРёС…, РµРјСѓ Р±С‹ РЅРµ РїРѕР·РґРѕСЂРѕРІРёР»РѕСЃСЊ.
+	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_05"); //РљРѕРЅРµС‡РЅРѕ!
 
 };
 
@@ -194,7 +194,7 @@ instance DIA_Till_WARUMNICHTSLD		(C_INFO)
 	condition	 = 	DIA_Till_WARUMNICHTSLD_Condition;
 	information	 = 	DIA_Till_WARUMNICHTSLD_Info;
 
-	description	 = 	"А разве наемники не помогают вам защищаться от ополчения?";
+	description	 = 	"Рђ СЂР°Р·РІРµ РЅР°РµРјРЅРёРєРё РЅРµ РїРѕРјРѕРіР°СЋС‚ РІР°Рј Р·Р°С‰РёС‰Р°С‚СЊСЃСЏ РѕС‚ РѕРїРѕР»С‡РµРЅРёСЏ?";
 };
 
 func int DIA_Till_WARUMNICHTSLD_Condition ()
@@ -209,8 +209,8 @@ func int DIA_Till_WARUMNICHTSLD_Condition ()
 
 func void DIA_Till_WARUMNICHTSLD_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_WARUMNICHTSLD_15_00"); //А разве наемники не помогают вам защищаться от ополчения?
-	AI_Output			(self, other, "DIA_Till_WARUMNICHTSLD_03_01"); //Да пока наемники почешутся, я уже успеваю прогнать всех воров.
+	AI_Output			(other, self, "DIA_Till_WARUMNICHTSLD_15_00"); //Рђ СЂР°Р·РІРµ РЅР°РµРјРЅРёРєРё РЅРµ РїРѕРјРѕРіР°СЋС‚ РІР°Рј Р·Р°С‰РёС‰Р°С‚СЊСЃСЏ РѕС‚ РѕРїРѕР»С‡РµРЅРёСЏ?
+	AI_Output			(self, other, "DIA_Till_WARUMNICHTSLD_03_01"); //Р”Р° РїРѕРєР° РЅР°РµРјРЅРёРєРё РїРѕС‡РµС€СѓС‚СЃСЏ, СЏ СѓР¶Рµ СѓСЃРїРµРІР°СЋ РїСЂРѕРіРЅР°С‚СЊ РІСЃРµС… РІРѕСЂРѕРІ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -223,7 +223,7 @@ instance DIA_Till_BRONKO		(C_INFO)
 	condition	 = 	DIA_Till_BRONKO_Condition;
 	information	 = 	DIA_Till_BRONKO_Info;
 
-	description	 = 	"(спросить о Бронко)";
+	description	 = 	"(СЃРїСЂРѕСЃРёС‚СЊ Рѕ Р‘СЂРѕРЅРєРѕ)";
 };
 
 func int DIA_Till_BRONKO_Condition ()
@@ -240,15 +240,15 @@ func int DIA_Till_BRONKO_Condition ()
 
 func void DIA_Till_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKO_15_00"); //Это ваш работник требует плату со всех проходящих мимо, утверждая, что ОН тут фермер!
-	AI_Output			(self, other, "DIA_Till_BRONKO_03_01"); //(робко) Эээ. Да. Я знаю. Это Бронко. Он делает то, что хочет.
-	AI_Output			(self, other, "DIA_Till_BRONKO_03_02"); //Я уже столько раз задавал ему трепку, чтобы он взялся за ум и начал работать, но все без толку...
-	AI_Output			(other, self, "DIA_Till_BRONKO_15_03"); //Да?
-	AI_Output			(self, other, "DIA_Till_BRONKO_03_04"); //Он все равно не хочет работать.
+	AI_Output			(other, self, "DIA_Till_BRONKO_15_00"); //Р­С‚Рѕ РІР°С€ СЂР°Р±РѕС‚РЅРёРє С‚СЂРµР±СѓРµС‚ РїР»Р°С‚Сѓ СЃРѕ РІСЃРµС… РїСЂРѕС…РѕРґСЏС‰РёС… РјРёРјРѕ, СѓС‚РІРµСЂР¶РґР°СЏ, С‡С‚Рѕ РћРќ С‚СѓС‚ С„РµСЂРјРµСЂ!
+	AI_Output			(self, other, "DIA_Till_BRONKO_03_01"); //(СЂРѕР±РєРѕ) Р­СЌСЌ. Р”Р°. РЇ Р·РЅР°СЋ. Р­С‚Рѕ Р‘СЂРѕРЅРєРѕ. РћРЅ РґРµР»Р°РµС‚ С‚Рѕ, С‡С‚Рѕ С…РѕС‡РµС‚.
+	AI_Output			(self, other, "DIA_Till_BRONKO_03_02"); //РЇ СѓР¶Рµ СЃС‚РѕР»СЊРєРѕ СЂР°Р· Р·Р°РґР°РІР°Р» РµРјСѓ С‚СЂРµРїРєСѓ, С‡С‚РѕР±С‹ РѕРЅ РІР·СЏР»СЃСЏ Р·Р° СѓРј Рё РЅР°С‡Р°Р» СЂР°Р±РѕС‚Р°С‚СЊ, РЅРѕ РІСЃРµ Р±РµР· С‚РѕР»РєСѓ...
+	AI_Output			(other, self, "DIA_Till_BRONKO_15_03"); //Р”Р°?
+	AI_Output			(self, other, "DIA_Till_BRONKO_03_04"); //РћРЅ РІСЃРµ СЂР°РІРЅРѕ РЅРµ С…РѕС‡РµС‚ СЂР°Р±РѕС‚Р°С‚СЊ.
 	
 	if (Npc_IsDead(Sekob)== FALSE)
 	{
-		AI_Output			(self, other, "DIA_Till_BRONKO_03_05"); //Моему отцу очень не нравится, что мне все еще не удалось убедить его вернуться к работе.
+		AI_Output			(self, other, "DIA_Till_BRONKO_03_05"); //РњРѕРµРјСѓ РѕС‚С†Сѓ РѕС‡РµРЅСЊ РЅРµ РЅСЂР°РІРёС‚СЃСЏ, С‡С‚Рѕ РјРЅРµ РІСЃРµ РµС‰Рµ РЅРµ СѓРґР°Р»РѕСЃСЊ СѓР±РµРґРёС‚СЊ РµРіРѕ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє СЂР°Р±РѕС‚Рµ.
 	};
 };
 
@@ -264,7 +264,7 @@ instance DIA_Till_BRONKOZURARBEIT		(C_INFO)
 	information	 = 	DIA_Till_BRONKOZURARBEIT_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Возможно, я смогу помочь тебе.";
+	description	 = 	"Р’РѕР·РјРѕР¶РЅРѕ, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.";
 };
 
 var int DIA_Till_BRONKOZURARBEIT_noPerm;
@@ -283,23 +283,23 @@ func int DIA_Till_BRONKOZURARBEIT_Condition ()
 
 func void DIA_Till_BRONKOZURARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_15_00"); //Может быть, я смогу помочь.
-	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_03_01"); //Что ты хочешь сказать этим? Хорошо, послушай, если ты сможешь заставить Бронко работать, я заплачу тебе, скажем, 10 золотых монет. Что скажешь?
+	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ.
+	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_03_01"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ СЌС‚РёРј? РҐРѕСЂРѕС€Рѕ, РїРѕСЃР»СѓС€Р°Р№, РµСЃР»Рё С‚С‹ СЃРјРѕР¶РµС€СЊ Р·Р°СЃС‚Р°РІРёС‚СЊ Р‘СЂРѕРЅРєРѕ СЂР°Р±РѕС‚Р°С‚СЊ, СЏ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ, СЃРєР°Р¶РµРј, 10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 
 	Till_Angebot = 10;
 
 	Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
 
-	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Нет проблем. Но мне нужно больше денег.", DIA_Till_BRONKOZURARBEIT_mehr );
-	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Хорошо. Я посмотрю, что можно сделать.", DIA_Till_BRONKOZURARBEIT_ok );
-	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Я подумаю над этим.", DIA_Till_BRONKOZURARBEIT_nochnicht );
+	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РќРµС‚ РїСЂРѕР±Р»РµРј. РќРѕ РјРЅРµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ РґРµРЅРµРі.", DIA_Till_BRONKOZURARBEIT_mehr );
+	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РҐРѕСЂРѕС€Рѕ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.", DIA_Till_BRONKOZURARBEIT_ok );
+	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.", DIA_Till_BRONKOZURARBEIT_nochnicht );
 
 };
 
 func void DIA_Till_BRONKOZURARBEIT_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_nochnicht_15_00"); //Я подумаю над этим.
-	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_nochnicht_03_01"); //Как хочешь.
+	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_nochnicht_15_00"); //РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
+	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_nochnicht_03_01"); //РљР°Рє С…РѕС‡РµС€СЊ.
 
 	Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
 	AI_StopProcessInfos (self);
@@ -307,15 +307,15 @@ func void DIA_Till_BRONKOZURARBEIT_nochnicht ()
 
 func void DIA_Till_BRONKOZURARBEIT_ok ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_ok_15_00"); //Хорошо. Я посмотрю, что можно сделать.
-	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_ok_03_01"); //Но поторопись с этим.
+	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_ok_15_00"); //РҐРѕСЂРѕС€Рѕ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_ok_03_01"); //РќРѕ РїРѕС‚РѕСЂРѕРїРёСЃСЊ СЃ СЌС‚РёРј.
 	
 	DIA_Till_BRONKOZURARBEIT_noPerm = TRUE;
 	MIS_Sekob_Bronko_eingeschuechtert = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Bronkoeingeschuechtert, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Bronkoeingeschuechtert, LOG_RUNNING);
-	B_LogEntry (TOPIC_Bronkoeingeschuechtert,"Тилл не может заставить Бронко работать. Тилл хочет, чтобы это попробовал сделать я."); 
+	B_LogEntry (TOPIC_Bronkoeingeschuechtert,"РўРёР»Р» РЅРµ РјРѕР¶РµС‚ Р·Р°СЃС‚Р°РІРёС‚СЊ Р‘СЂРѕРЅРєРѕ СЂР°Р±РѕС‚Р°С‚СЊ. РўРёР»Р» С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЌС‚Рѕ РїРѕРїСЂРѕР±РѕРІР°Р» СЃРґРµР»Р°С‚СЊ СЏ."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -324,53 +324,53 @@ func void DIA_Till_BRONKOZURARBEIT_mehr ()
 {
 	if (Till_IchMachsNurEinmal == TRUE)
 		{
-			AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_mehr_15_00"); //Я хочу больше.
+			AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_mehr_15_00"); //РЇ С…РѕС‡Сѓ Р±РѕР»СЊС€Рµ.
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_mehr_15_01"); //Нет проблем. Но мне нужно больше денег.
+			AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_mehr_15_01"); //РќРµС‚ РїСЂРѕР±Р»РµРј. РќРѕ РјРЅРµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ РґРµРЅРµРі.
 			Till_IchMachsNurEinmal = TRUE;
 		};
 
 	 if (Till_Angebot == 10)
 	 	{
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_02"); //Хорошо. 20 золотых монет.
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_02"); //РҐРѕСЂРѕС€Рѕ. 20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Я хочу больше.", DIA_Till_BRONKOZURARBEIT_mehr );
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Хорошо. Я посмотрю, что можно сделать.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РЇ С…РѕС‡Сѓ Р±РѕР»СЊС€Рµ.", DIA_Till_BRONKOZURARBEIT_mehr );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РҐРѕСЂРѕС€Рѕ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.", DIA_Till_BRONKOZURARBEIT_ok );
 			Till_Angebot = 20;
 		}
 	 else if (Till_Angebot == 20)
 		{
 			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_03"); //30?
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Я хочу больше.", DIA_Till_BRONKOZURARBEIT_mehr );
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Хорошо. Я посмотрю, что можно сделать.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РЇ С…РѕС‡Сѓ Р±РѕР»СЊС€Рµ.", DIA_Till_BRONKOZURARBEIT_mehr );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РҐРѕСЂРѕС€Рѕ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.", DIA_Till_BRONKOZURARBEIT_ok );
 			Till_Angebot = 30;
 		}
 	 else if (Till_Angebot == 30)
 		{	
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_04"); //Может быть... 50?
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_04"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ... 50?
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Я хочу больше.", DIA_Till_BRONKOZURARBEIT_mehr );
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Хорошо. Я посмотрю, что можно сделать.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РЇ С…РѕС‡Сѓ Р±РѕР»СЊС€Рµ.", DIA_Till_BRONKOZURARBEIT_mehr );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РҐРѕСЂРѕС€Рѕ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.", DIA_Till_BRONKOZURARBEIT_ok );
 			Till_Angebot = 50;
 		}
 	 else if (Till_Angebot == 50)
 		{	
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_05"); //Хорошо. 70?
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_05"); //РҐРѕСЂРѕС€Рѕ. 70?
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Я хочу больше.", DIA_Till_BRONKOZURARBEIT_mehr );
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Хорошо. Я посмотрю, что можно сделать.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РЇ С…РѕС‡Сѓ Р±РѕР»СЊС€Рµ.", DIA_Till_BRONKOZURARBEIT_mehr );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РҐРѕСЂРѕС€Рѕ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.", DIA_Till_BRONKOZURARBEIT_ok );
 		Till_Angebot = 70;
 		}
 	 else if (Till_Angebot == 70)
 		{	
 	
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_06"); //Хорошо, хорошо! Я дам тебе 100 золотых монет. Но это все, что у меня есть.
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_06"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ! РЇ РґР°Рј С‚РµР±Рµ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. РќРѕ СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
 
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Хорошо. Я посмотрю, что можно сделать.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "РҐРѕСЂРѕС€Рѕ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.", DIA_Till_BRONKOZURARBEIT_ok );
 
 			Till_Angebot = 100;
 		};
@@ -386,7 +386,7 @@ instance DIA_Till_BRONKOWIEDERANARBEIT		(C_INFO)
 	condition	 = 	DIA_Till_BRONKOWIEDERANARBEIT_Condition;
 	information	 = 	DIA_Till_BRONKOWIEDERANARBEIT_Info;
 
-	description	 = 	"Бронко вернулся к работе.";
+	description	 = 	"Р‘СЂРѕРЅРєРѕ РІРµСЂРЅСѓР»СЃСЏ Рє СЂР°Р±РѕС‚Рµ.";
 };
 
 func int DIA_Till_BRONKOWIEDERANARBEIT_Condition ()
@@ -403,22 +403,22 @@ func int DIA_Till_BRONKOWIEDERANARBEIT_Condition ()
 
 func void DIA_Till_BRONKOWIEDERANARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_00"); //Бронко вернулся к работе.
-	AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_01"); //Правда? Это превосходно.
-	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_02"); //Да. И тепрь я хочу получить мои деньги.
+	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_00"); //Р‘СЂРѕРЅРєРѕ РІРµСЂРЅСѓР»СЃСЏ Рє СЂР°Р±РѕС‚Рµ.
+	AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_01"); //РџСЂР°РІРґР°? Р­С‚Рѕ РїСЂРµРІРѕСЃС…РѕРґРЅРѕ.
+	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_02"); //Р”Р°. Р С‚РµРїСЂСЊ СЏ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ РјРѕРё РґРµРЅСЊРіРё.
 	
 	IntToFloat	(Till_Angebot);
 	
 	if (Till_Angebot <= 50)
 		{
-			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_03"); //(колеблясь) Мммм. Хорошо. Сделка есть сделка, правда?
+			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_03"); //(РєРѕР»РµР±Р»СЏСЃСЊ) РњРјРјРј. РҐРѕСЂРѕС€Рѕ. РЎРґРµР»РєР° РµСЃС‚СЊ СЃРґРµР»РєР°, РїСЂР°РІРґР°?
 
 			CreateInvItems (self, ItMi_Gold, Till_Angebot);									
 			B_GiveInvItems (self, other, ItMi_Gold, Till_Angebot);
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_04"); //К сожалению, у меня нет такой суммы. Но я очень благодарен тебе за помощь.
+			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_04"); //Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, Сѓ РјРµРЅСЏ РЅРµС‚ С‚Р°РєРѕР№ СЃСѓРјРјС‹. РќРѕ СЏ РѕС‡РµРЅСЊ Р±Р»Р°РіРѕРґР°СЂРµРЅ С‚РµР±Рµ Р·Р° РїРѕРјРѕС‰СЊ.
 
 			Till_HatSeinGeldBehalten = TRUE;
 		};
@@ -440,7 +440,7 @@ instance DIA_Till_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Till_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"(подразнить Тилла)";
+	description	 = 	"(РїРѕРґСЂР°Р·РЅРёС‚СЊ РўРёР»Р»Р°)";
 };
 
 func int DIA_Till_PERMKAP1_Condition ()
@@ -459,34 +459,34 @@ func void DIA_Till_PERMKAP1_Info ()
 			if (MIS_bringRosiBackToSekob != LOG_SUCCESS)
 			&& (Rosi_FleeFromSekob_Kap5 == TRUE)
 			{
-				AI_Output			(other, self, "DIA_Till_PERMKAP1_15_00"); //А до дома-то далеко, а? Папочка не сможет помочь тебе здесь.
-				AI_Output			(self, other, "DIA_Till_PERMKAP1_03_01"); //Когда-нибудь я набью тебе морду.
+				AI_Output			(other, self, "DIA_Till_PERMKAP1_15_00"); //Рђ РґРѕ РґРѕРјР°-С‚Рѕ РґР°Р»РµРєРѕ, Р°? РџР°РїРѕС‡РєР° РЅРµ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ С‚РµР±Рµ Р·РґРµСЃСЊ.
+				AI_Output			(self, other, "DIA_Till_PERMKAP1_03_01"); //РљРѕРіРґР°-РЅРёР±СѓРґСЊ СЏ РЅР°Р±СЊСЋ С‚РµР±Рµ РјРѕСЂРґСѓ.
 			};
 			
-			AI_Output			(other, self, "DIA_Till_PERMKAP1_15_02"); //Ты трус, радуйся, если я оставлю тебя в живых.
-			AI_Output			(self, other, "DIA_Till_PERMKAP1_03_03"); //Тогда оставь меня в покое.
+			AI_Output			(other, self, "DIA_Till_PERMKAP1_15_02"); //РўС‹ С‚СЂСѓСЃ, СЂР°РґСѓР№СЃСЏ, РµСЃР»Рё СЏ РѕСЃС‚Р°РІР»СЋ С‚РµР±СЏ РІ Р¶РёРІС‹С….
+			AI_Output			(self, other, "DIA_Till_PERMKAP1_03_03"); //РўРѕРіРґР° РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
 			AI_StopProcessInfos (self);	
 		}
 		else
 		{		
 			if 	(self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 				{
-					AI_Output			(other, self, "DIA_Till_PERMKAP1_15_04"); //Может, тебе стоит питаться получше, чтобы ты вырос большим и сильным.
-					AI_Output			(self, other, "DIA_Till_PERMKAP1_03_05"); //Когда-нибудь я поквитаюсь с тобой.
+					AI_Output			(other, self, "DIA_Till_PERMKAP1_15_04"); //РњРѕР¶РµС‚, С‚РµР±Рµ СЃС‚РѕРёС‚ РїРёС‚Р°С‚СЊСЃСЏ РїРѕР»СѓС‡С€Рµ, С‡С‚РѕР±С‹ С‚С‹ РІС‹СЂРѕСЃ Р±РѕР»СЊС€РёРј Рё СЃРёР»СЊРЅС‹Рј.
+					AI_Output			(self, other, "DIA_Till_PERMKAP1_03_05"); //РљРѕРіРґР°-РЅРёР±СѓРґСЊ СЏ РїРѕРєРІРёС‚Р°СЋСЃСЊ СЃ С‚РѕР±РѕР№.
 					AI_StopProcessInfos (self);
 				}
 			else
 				{
 					if (Till_HatSeinGeldBehalten == TRUE)
 						{
-							AI_Output			(other, self, "DIA_Till_PERMKAP1_15_06"); //Ах ты жалкий маленький...
-							AI_Output			(self, other, "DIA_Till_PERMKAP1_03_07"); //Уходи.
+							AI_Output			(other, self, "DIA_Till_PERMKAP1_15_06"); //РђС… С‚С‹ Р¶Р°Р»РєРёР№ РјР°Р»РµРЅСЊРєРёР№...
+							AI_Output			(self, other, "DIA_Till_PERMKAP1_03_07"); //РЈС…РѕРґРё.
 							AI_StopProcessInfos (self);
 						}			
 					else
 						{
-							AI_Output			(other, self, "DIA_Till_PERMKAP1_15_08"); //Тебе сегодня никто еще не бил в морду?
-							AI_Output			(self, other, "DIA_Till_PERMKAP1_03_09"); //Оставь меня в покое, ты, идиот!
+							AI_Output			(other, self, "DIA_Till_PERMKAP1_15_08"); //РўРµР±Рµ СЃРµРіРѕРґРЅСЏ РЅРёРєС‚Рѕ РµС‰Рµ РЅРµ Р±РёР» РІ РјРѕСЂРґСѓ?
+							AI_Output			(self, other, "DIA_Till_PERMKAP1_03_09"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, С‚С‹, РёРґРёРѕС‚!
 						};
 				};
 		};

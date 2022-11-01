@@ -75,8 +75,8 @@ FUNC INT DIA_Rupert_Hello_Condition()
 };
 FUNC VOID DIA_Rupert_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Rupert_Hello_03_00"); //Привет, чужеземец!
-	AI_Output (self ,other,"DIA_Rupert_Hello_03_01"); //Ты, должно быть, голоден и хочешь пить. Может, тебя заинтересуют мои товары?
+	AI_Output (self ,other,"DIA_Rupert_Hello_03_00"); //РџСЂРёРІРµС‚, С‡СѓР¶РµР·РµРјРµС†!
+	AI_Output (self ,other,"DIA_Rupert_Hello_03_01"); //РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РіРѕР»РѕРґРµРЅ Рё С…РѕС‡РµС€СЊ РїРёС‚СЊ. РњРѕР¶РµС‚, С‚РµР±СЏ Р·Р°РёРЅС‚РµСЂРµСЃСѓСЋС‚ РјРѕРё С‚РѕРІР°СЂС‹?
 };	
 
 // ************************************************************
@@ -89,7 +89,7 @@ INSTANCE DIA_Rupert_ZuPal(C_INFO)
 	condition	= DIA_Rupert_ZuPal_Condition;
 	information	= DIA_Rupert_ZuPal_Info;
 	permanent	= FALSE;
-	description = "Откровенно говоря, я пришел, чтобы встретиться с паладинами...";
+	description = "РћС‚РєСЂРѕРІРµРЅРЅРѕ РіРѕРІРѕСЂСЏ, СЏ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РїР°Р»Р°РґРёРЅР°РјРё...";
 };                       
 FUNC INT DIA_Rupert_ZuPal_Condition()
 {
@@ -100,8 +100,8 @@ FUNC INT DIA_Rupert_ZuPal_Condition()
 };
 FUNC VOID DIA_Rupert_ZuPal_Info()
 {	
-	AI_Output (other, self,"DIA_Rupert_ZuPal_15_00"); //Откровенно говоря, я пришел, чтобы встретиться с паладинами...
-	AI_Output (self ,other,"DIA_Rupert_ZuPal_03_01"); //У тебя мало шансов на это. С тех пор, как паладины обосновались в верхнем квартале, туда стало очень трудно попасть.
+	AI_Output (other, self,"DIA_Rupert_ZuPal_15_00"); //РћС‚РєСЂРѕРІРµРЅРЅРѕ РіРѕРІРѕСЂСЏ, СЏ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РїР°Р»Р°РґРёРЅР°РјРё...
+	AI_Output (self ,other,"DIA_Rupert_ZuPal_03_01"); //РЈ С‚РµР±СЏ РјР°Р»Рѕ С€Р°РЅСЃРѕРІ РЅР° СЌС‚Рѕ. РЎ С‚РµС… РїРѕСЂ, РєР°Рє РїР°Р»Р°РґРёРЅС‹ РѕР±РѕСЃРЅРѕРІР°Р»РёСЃСЊ РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ, С‚СѓРґР° СЃС‚Р°Р»Рѕ РѕС‡РµРЅСЊ С‚СЂСѓРґРЅРѕ РїРѕРїР°СЃС‚СЊ.
 };	
 
 // ************************************************************
@@ -114,7 +114,7 @@ INSTANCE DIA_Rupert_HelpMeIntoOV(C_INFO)
 	condition	= DIA_Rupert_HelpMeIntoOV_Condition;
 	information	= DIA_Rupert_HelpMeIntoOV_Info;
 	permanent	= FALSE;
-	description = "Ты можешь помочь мне попасть в верхний квартал?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?";
 };                       
 FUNC INT DIA_Rupert_HelpMeIntoOV_Condition()
 {
@@ -126,15 +126,15 @@ FUNC INT DIA_Rupert_HelpMeIntoOV_Condition()
 };
 FUNC VOID DIA_Rupert_HelpMeIntoOV_Info()
 {	
-	AI_Output (other, self,"DIA_Rupert_HelpMeIntoOV_15_00"); //Ты можешь помочь мне попасть в верхний квартал?
-	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_01"); //Я? Нет, мое слово мало что значит!
-	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_02"); //Всего несколько людей в нижней части города влиятельны настолько, что могут заставить стражу пропустить тебя.
-	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_03"); //Маттео, мой босс, - один из них. Возможно, тебе стоит поговорить с ним.
+	AI_Output (other, self,"DIA_Rupert_HelpMeIntoOV_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?
+	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_01"); //РЇ? РќРµС‚, РјРѕРµ СЃР»РѕРІРѕ РјР°Р»Рѕ С‡С‚Рѕ Р·РЅР°С‡РёС‚!
+	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_02"); //Р’СЃРµРіРѕ РЅРµСЃРєРѕР»СЊРєРѕ Р»СЋРґРµР№ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР° РІР»РёСЏС‚РµР»СЊРЅС‹ РЅР°СЃС‚РѕР»СЊРєРѕ, С‡С‚Рѕ РјРѕРіСѓС‚ Р·Р°СЃС‚Р°РІРёС‚СЊ СЃС‚СЂР°Р¶Сѓ РїСЂРѕРїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ.
+	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_03"); //РњР°С‚С‚РµРѕ, РјРѕР№ Р±РѕСЃСЃ, - РѕРґРёРЅ РёР· РЅРёС…. Р’РѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ СЃС‚РѕРёС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј.
 	
 	Log_CreateTopic (TOPIC_OV,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_OV,LOG_RUNNING);
-	B_LogEntry (TOPIC_OV,"Чтобы попасть в верхний квартал, мне нужна помощь влиятельных граждан из нижней части города.");
-	B_LogEntry (TOPIC_OV,"Торговец Маттео - один из влиятельных граждан нижней части города.");
+	B_LogEntry (TOPIC_OV,"Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р», РјРЅРµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ РІР»РёСЏС‚РµР»СЊРЅС‹С… РіСЂР°Р¶РґР°РЅ РёР· РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.");
+	B_LogEntry (TOPIC_OV,"РўРѕСЂРіРѕРІРµС† РњР°С‚С‚РµРѕ - РѕРґРёРЅ РёР· РІР»РёСЏС‚РµР»СЊРЅС‹С… РіСЂР°Р¶РґР°РЅ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.");
 };	
 
 // ***************************************************************
@@ -147,7 +147,7 @@ INSTANCE DIA_Rupert_WoMatteo(C_INFO)
 	condition	= DIA_Rupert_WoMatteo_Condition;
 	information	= DIA_Rupert_WoMatteo_Info;
 	permanent	= FALSE;
-	description = "Где я могу найти Маттео?";
+	description = "Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РњР°С‚С‚РµРѕ?";
 };                      
 FUNC INT DIA_Rupert_WoMatteo_Condition()
 {
@@ -159,19 +159,19 @@ FUNC INT DIA_Rupert_WoMatteo_Condition()
 };
 FUNC VOID DIA_Rupert_WoMatteo_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_WoMatteo_15_00"); //Где я могу найти Маттео?
-	AI_Output (self ,other,"DIA_Rupert_WoMatteo_03_01"); //Ты стоишь прямо перед его лавкой. Просто войди внутрь. Он практически всегда там.
+	AI_Output (other,self ,"DIA_Rupert_WoMatteo_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РњР°С‚С‚РµРѕ?
+	AI_Output (self ,other,"DIA_Rupert_WoMatteo_03_01"); //РўС‹ СЃС‚РѕРёС€СЊ РїСЂСЏРјРѕ РїРµСЂРµРґ РµРіРѕ Р»Р°РІРєРѕР№. РџСЂРѕСЃС‚Рѕ РІРѕР№РґРё РІРЅСѓС‚СЂСЊ. РћРЅ РїСЂР°РєС‚РёС‡РµСЃРєРё РІСЃРµРіРґР° С‚Р°Рј.
 	
 	if (Knows_Matteo == FALSE)
 	{
 		Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-		B_LogEntry (TOPIC_CityTrader,"Лавка Маттео находится у южных ворот города. Он продает снаряжение, оружие и другие товары.");
+		B_LogEntry (TOPIC_CityTrader,"Р›Р°РІРєР° РњР°С‚С‚РµРѕ РЅР°С…РѕРґРёС‚СЃСЏ Сѓ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР°. РћРЅ РїСЂРѕРґР°РµС‚ СЃРЅР°СЂСЏР¶РµРЅРёРµ, РѕСЂСѓР¶РёРµ Рё РґСЂСѓРіРёРµ С‚РѕРІР°СЂС‹.");
 		Knows_Matteo = TRUE;
 	};
 };
 
 // ***************************************************************
-//							Wer hat EinfluЯ
+//							Wer hat EinfluРЇ
 // ***************************************************************
 INSTANCE DIA_Rupert_WerEinfluss(C_INFO)
 {
@@ -180,7 +180,7 @@ INSTANCE DIA_Rupert_WerEinfluss(C_INFO)
 	condition	= DIA_Rupert_WerEinfluss_Condition;
 	information	= DIA_Rupert_WerEinfluss_Info;
 	permanent	= FALSE;
-	description = "А что насчет других влиятельных горожан?";
+	description = "Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РґСЂСѓРіРёС… РІР»РёСЏС‚РµР»СЊРЅС‹С… РіРѕСЂРѕР¶Р°РЅ?";
 };                      
 FUNC INT DIA_Rupert_WerEinfluss_Condition()
 {
@@ -192,12 +192,12 @@ FUNC INT DIA_Rupert_WerEinfluss_Condition()
 };
 FUNC VOID DIA_Rupert_WerEinfluss_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_WerEinfluss_15_00"); //А что насчет других влиятельных горожан?
-	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_01"); //Торговцы и мастера ремесленники, здесь, на главной улице - самые влиятельные фигуры в городе.
-	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_02"); //Ты должен попытаться стать учеником одного из них, как я.
-	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_03"); //С тех пор, как я работаю на Маттео, люди в городе относятся ко мне с уважением!
+	AI_Output (other,self ,"DIA_Rupert_WerEinfluss_15_00"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РґСЂСѓРіРёС… РІР»РёСЏС‚РµР»СЊРЅС‹С… РіРѕСЂРѕР¶Р°РЅ?
+	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_01"); //РўРѕСЂРіРѕРІС†С‹ Рё РјР°СЃС‚РµСЂР° СЂРµРјРµСЃР»РµРЅРЅРёРєРё, Р·РґРµСЃСЊ, РЅР° РіР»Р°РІРЅРѕР№ СѓР»РёС†Рµ - СЃР°РјС‹Рµ РІР»РёСЏС‚РµР»СЊРЅС‹Рµ С„РёРіСѓСЂС‹ РІ РіРѕСЂРѕРґРµ.
+	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_02"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРїС‹С‚Р°С‚СЊСЃСЏ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РЅРёС…, РєР°Рє СЏ.
+	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_03"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє СЏ СЂР°Р±РѕС‚Р°СЋ РЅР° РњР°С‚С‚РµРѕ, Р»СЋРґРё РІ РіРѕСЂРѕРґРµ РѕС‚РЅРѕСЃСЏС‚СЃСЏ РєРѕ РјРЅРµ СЃ СѓРІР°Р¶РµРЅРёРµРј!
 	
-	B_LogEntry (TOPIC_OV,"Я должен попытаться стать учеником одного из мастеров.");
+	B_LogEntry (TOPIC_OV,"РЇ РґРѕР»Р¶РµРЅ РїРѕРїС‹С‚Р°С‚СЊСЃСЏ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІ.");
 };
 
 // ***************************************************************
@@ -210,7 +210,7 @@ INSTANCE DIA_Rupert_Work(C_INFO)
 	condition	= DIA_Rupert_Work_Condition;
 	information	= DIA_Rupert_Work_Info;
 	permanent	= FALSE;
-	description = "Мне нужны деньги и я ищу работу.";
+	description = "РњРЅРµ РЅСѓР¶РЅС‹ РґРµРЅСЊРіРё Рё СЏ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.";
 };                      
 FUNC INT DIA_Rupert_Work_Condition()
 {
@@ -221,9 +221,9 @@ FUNC INT DIA_Rupert_Work_Condition()
 };
 FUNC VOID DIA_Rupert_Work_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_Work_15_00"); //Мне нужны деньги и я ищу работу.
-	AI_Output (self ,other,"DIA_Rupert_Work_03_01"); //Я слышал, что у Боспера проблемы с поставщиками. Его лавка находится вон там.
-	AI_Output (self ,other,"DIA_Rupert_Work_03_02"); //Говорят, он платит довольно хорошо.
+	AI_Output (other,self ,"DIA_Rupert_Work_15_00"); //РњРЅРµ РЅСѓР¶РЅС‹ РґРµРЅСЊРіРё Рё СЏ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.
+	AI_Output (self ,other,"DIA_Rupert_Work_03_01"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ Сѓ Р‘РѕСЃРїРµСЂР° РїСЂРѕР±Р»РµРјС‹ СЃ РїРѕСЃС‚Р°РІС‰РёРєР°РјРё. Р•РіРѕ Р»Р°РІРєР° РЅР°С…РѕРґРёС‚СЃСЏ РІРѕРЅ С‚Р°Рј.
+	AI_Output (self ,other,"DIA_Rupert_Work_03_02"); //Р“РѕРІРѕСЂСЏС‚, РѕРЅ РїР»Р°С‚РёС‚ РґРѕРІРѕР»СЊРЅРѕ С…РѕСЂРѕС€Рѕ.
 };
 
 // ***************************************************************
@@ -236,7 +236,7 @@ INSTANCE DIA_Rupert_YourOffer(C_INFO)
 	condition	= DIA_Rupert_YourOffer_Condition;
 	information	= DIA_Rupert_YourOffer_Info;
 	permanent	= FALSE;
-	description = "Что ты можешь предложить мне?";
+	description = "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?";
 };                      
 FUNC INT DIA_Rupert_YourOffer_Condition()
 {
@@ -244,12 +244,12 @@ FUNC INT DIA_Rupert_YourOffer_Condition()
 };
 FUNC VOID DIA_Rupert_YourOffer_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_YourOffer_15_00"); //Что ты можешь предложить?
-	AI_Output (self ,other,"DIA_Rupert_YourOffer_03_01"); //Сейчас, у меня мало что есть.
+	AI_Output (other,self ,"DIA_Rupert_YourOffer_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ?
+	AI_Output (self ,other,"DIA_Rupert_YourOffer_03_01"); //РЎРµР№С‡Р°СЃ, Сѓ РјРµРЅСЏ РјР°Р»Рѕ С‡С‚Рѕ РµСЃС‚СЊ.
 	if (hero.guild != GIL_SLD)
 	&& (hero.guild != GIL_DJG)
 	{ 
-		AI_Output (self ,other,"DIA_Rupert_YourOffer_03_02"); //Этот чертов лендлорд не поставляет больше продукты, а того, что мы получаем с маленьких ферм, недостаточно для удовлетворения потребностей города.
+		AI_Output (self ,other,"DIA_Rupert_YourOffer_03_02"); //Р­С‚РѕС‚ С‡РµСЂС‚РѕРІ Р»РµРЅРґР»РѕСЂРґ РЅРµ РїРѕСЃС‚Р°РІР»СЏРµС‚ Р±РѕР»СЊС€Рµ РїСЂРѕРґСѓРєС‚С‹, Р° С‚РѕРіРѕ, С‡С‚Рѕ РјС‹ РїРѕР»СѓС‡Р°РµРј СЃ РјР°Р»РµРЅСЊРєРёС… С„РµСЂРј, РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР»СЏ СѓРґРѕРІР»РµС‚РІРѕСЂРµРЅРёСЏ РїРѕС‚СЂРµР±РЅРѕСЃС‚РµР№ РіРѕСЂРѕРґР°.
 	};
 };
 
@@ -263,7 +263,7 @@ INSTANCE DIA_Rupert_Trade(C_INFO)
 	condition	= DIA_Rupert_Trade_Condition;
 	information	= DIA_Rupert_Trade_Info;
 	permanent	= TRUE;
-	description = "Покажи мне свои товары.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade		= TRUE;
 };                       
 FUNC INT DIA_Rupert_Trade_Condition()
@@ -280,11 +280,11 @@ FUNC VOID DIA_Rupert_Trade_Info()
 		CreateInvItems (self, ItFo_cheese, 5);
 	};
 	
-	AI_Output (other,self ,"DIA_Rupert_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other,self ,"DIA_Rupert_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output (self,other,"DIA_Rupert_Trade_03_01"); //Я приношу извинения за скудный выбор. Человек вашего положения наверняка привык к лучшему.
+		AI_Output (self,other,"DIA_Rupert_Trade_03_01"); //РЇ РїСЂРёРЅРѕС€Сѓ РёР·РІРёРЅРµРЅРёСЏ Р·Р° СЃРєСѓРґРЅС‹Р№ РІС‹Р±РѕСЂ. Р§РµР»РѕРІРµРє РІР°С€РµРіРѕ РїРѕР»РѕР¶РµРЅРёСЏ РЅР°РІРµСЂРЅСЏРєР° РїСЂРёРІС‹Рє Рє Р»СѓС‡С€РµРјСѓ.
 	};
 };
 
@@ -298,7 +298,7 @@ INSTANCE DIA_Rupert_Bauernaufstand(C_INFO)
 	condition	= DIA_Rupert_Bauernaufstand_Condition;
 	information	= DIA_Rupert_Bauernaufstand_Info;
 	permanent	= FALSE;
-	description = "Расскажи мне о восстании крестьян.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РІРѕСЃСЃС‚Р°РЅРёРё РєСЂРµСЃС‚СЊСЏРЅ.";
 };                       
 FUNC INT DIA_Rupert_Bauernaufstand_Condition()
 {	
@@ -310,16 +310,16 @@ FUNC INT DIA_Rupert_Bauernaufstand_Condition()
 };
 FUNC VOID DIA_Rupert_Bauernaufstand_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_Bauernaufstand_15_00"); //Расскажи мне о восстании крестьян.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_01"); //Это довольно просто: Онар, жирный лендлорд, больше не платит налоги городу.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_02"); //Только представь! Мы воюем с орками, а этот жирный гусь забирает все себе!
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_03"); //Обычно городская стража принимает жесткие меры в таких случаях.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_04"); //Но теперь самое интересное: говорят, что Онар нанял наемников, чтобы те не подпускали к его ферме городские войска!
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_05"); //НАЕМНИКОВ! Это все кончится войной! Как будто ОДНОЙ войны не достаточно!
+	AI_Output (other,self ,"DIA_Rupert_Bauernaufstand_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РІРѕСЃСЃС‚Р°РЅРёРё РєСЂРµСЃС‚СЊСЏРЅ.
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_01"); //Р­С‚Рѕ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ: РћРЅР°СЂ, Р¶РёСЂРЅС‹Р№ Р»РµРЅРґР»РѕСЂРґ, Р±РѕР»СЊС€Рµ РЅРµ РїР»Р°С‚РёС‚ РЅР°Р»РѕРіРё РіРѕСЂРѕРґСѓ.
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_02"); //РўРѕР»СЊРєРѕ РїСЂРµРґСЃС‚Р°РІСЊ! РњС‹ РІРѕСЋРµРј СЃ РѕСЂРєР°РјРё, Р° СЌС‚РѕС‚ Р¶РёСЂРЅС‹Р№ РіСѓСЃСЊ Р·Р°Р±РёСЂР°РµС‚ РІСЃРµ СЃРµР±Рµ!
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_03"); //РћР±С‹С‡РЅРѕ РіРѕСЂРѕРґСЃРєР°СЏ СЃС‚СЂР°Р¶Р° РїСЂРёРЅРёРјР°РµС‚ Р¶РµСЃС‚РєРёРµ РјРµСЂС‹ РІ С‚Р°РєРёС… СЃР»СѓС‡Р°СЏС….
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_04"); //РќРѕ С‚РµРїРµСЂСЊ СЃР°РјРѕРµ РёРЅС‚РµСЂРµСЃРЅРѕРµ: РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ РћРЅР°СЂ РЅР°РЅСЏР» РЅР°РµРјРЅРёРєРѕРІ, С‡С‚РѕР±С‹ С‚Рµ РЅРµ РїРѕРґРїСѓСЃРєР°Р»Рё Рє РµРіРѕ С„РµСЂРјРµ РіРѕСЂРѕРґСЃРєРёРµ РІРѕР№СЃРєР°!
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_05"); //РќРђР•РњРќРРљРћР’! Р­С‚Рѕ РІСЃРµ РєРѕРЅС‡РёС‚СЃСЏ РІРѕР№РЅРѕР№! РљР°Рє Р±СѓРґС‚Рѕ РћР”РќРћР™ РІРѕР№РЅС‹ РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ!
 };
 
 // ***************************************************************
-//							Sцldner
+//							SС†ldner
 // ***************************************************************
 INSTANCE DIA_Rupert_Mercs(C_INFO)
 {
@@ -328,7 +328,7 @@ INSTANCE DIA_Rupert_Mercs(C_INFO)
 	condition	= DIA_Rupert_Mercs_Condition;
 	information	= DIA_Rupert_Mercs_Info;
 	permanent	= FALSE;
-	description = "Что ты знаешь о наемниках Онара?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РЅР°РµРјРЅРёРєР°С… РћРЅР°СЂР°?";
 };                       
 FUNC INT DIA_Rupert_Mercs_Condition()
 {	
@@ -341,10 +341,10 @@ FUNC INT DIA_Rupert_Mercs_Condition()
 };
 FUNC VOID DIA_Rupert_Mercs_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_Mercs_15_00"); //Что ты знаешь о наемниках Онара?
-	AI_Output (self	,other,"DIA_Rupert_Mercs_03_01"); //Я слышал, что большинство из них бывшие каторжники из колонии.
-	AI_Output (self	,other,"DIA_Rupert_Mercs_03_02"); //А их главарь, по слухам, был большой шишкой при короле - генералом или что-то в этом роде, - которого осудили за предательство!
-	AI_Output (self	,other,"DIA_Rupert_Mercs_03_03"); //Ужасные времена!
+	AI_Output (other,self ,"DIA_Rupert_Mercs_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РЅР°РµРјРЅРёРєР°С… РћРЅР°СЂР°?
+	AI_Output (self	,other,"DIA_Rupert_Mercs_03_01"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… Р±С‹РІС€РёРµ РєР°С‚РѕСЂР¶РЅРёРєРё РёР· РєРѕР»РѕРЅРёРё.
+	AI_Output (self	,other,"DIA_Rupert_Mercs_03_02"); //Рђ РёС… РіР»Р°РІР°СЂСЊ, РїРѕ СЃР»СѓС…Р°Рј, Р±С‹Р» Р±РѕР»СЊС€РѕР№ С€РёС€РєРѕР№ РїСЂРё РєРѕСЂРѕР»Рµ - РіРµРЅРµСЂР°Р»РѕРј РёР»Рё С‡С‚Рѕ-С‚Рѕ РІ СЌС‚РѕРј СЂРѕРґРµ, - РєРѕС‚РѕСЂРѕРіРѕ РѕСЃСѓРґРёР»Рё Р·Р° РїСЂРµРґР°С‚РµР»СЊСЃС‚РІРѕ!
+	AI_Output (self	,other,"DIA_Rupert_Mercs_03_03"); //РЈР¶Р°СЃРЅС‹Рµ РІСЂРµРјРµРЅР°!
 };
 
 

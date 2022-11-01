@@ -1,7 +1,7 @@
 INSTANCE NOV_612_Babo (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Αΰαξ";
+	name 		= "Π‘Π°Π±ΠΎ";
 	guild 		= GIL_NOV;
 	id 			= 612;
 	voice 		= 3;

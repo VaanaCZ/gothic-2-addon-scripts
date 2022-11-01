@@ -1,7 +1,7 @@
 // *****************************
 // B_SetAttitude
 // -----------------------------
-// setzt die Attitüde zum Player
+// setzt die AttitÑŒde zum Player
 // (temp UND perm)
 // *****************************
 

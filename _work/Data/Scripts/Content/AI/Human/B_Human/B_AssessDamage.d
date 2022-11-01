@@ -1,8 +1,8 @@
 // ****************************************************************
 // B_AssessDamage
 // --------------
-// wird durchWahrnehmung PERC_AssessDamage ÜBERALL her aufgerufen
-// (also auch aus ZS_Attack, AR kann sich allerdings NICHT ändern!)
+// wird durchWahrnehmung PERC_AssessDamage Ð¬BERALL her aufgerufen
+// (also auch aus ZS_Attack, AR kann sich allerdings NICHT Ð´ndern!)
 // ****************************************************************
 
 func void B_AssessDamage ()
@@ -104,10 +104,10 @@ func void B_AssessDamage ()
 			if (!Npc_IsInState(self, ZS_ReactToDamage))
 			{
 				Npc_ClearAIQueue	(self);
-				B_ClearPerceptions	(self);							//schaltet alle Wahrnehmungen ab - so kann keine später priorisierte diesen Stateaufruf verhindern (s. z.B. AssessFightSound + AssessDamage)
+				B_ClearPerceptions	(self);							//schaltet alle Wahrnehmungen ab - so kann keine spÐ´ter priorisierte diesen Stateaufruf verhindern (s. z.B. AssessFightSound + AssessDamage)
 				AI_StartState		(self, ZS_ReactToDamage, 0, "");
-				return;												//im unterern B_Attack wird ein ClearQueue aufgerufen, der den AI_StartState direkt wieder aus der queue löscht
-																	// - sicherheithalber bei allen AI_StartState-Aufrufen return anfügen
+				return;												//im unterern B_Attack wird ein ClearQueue aufgerufen, der den AI_StartState direkt wieder aus der queue lÑ†scht
+																	// - sicherheithalber bei allen AI_StartState-Aufrufen return anfÑŒgen
 			};
 		};
 	};	

@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Rock_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Но хватит болтать. Твоя временная сила иссякла. Глаз потерял свою силу. Приготовься умереть.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //РќРѕ С…РІР°С‚РёС‚ Р±РѕР»С‚Р°С‚СЊ. РўРІРѕСЏ РІСЂРµРјРµРЅРЅР°СЏ СЃРёР»Р° РёСЃСЃСЏРєР»Р°. Р“Р»Р°Р· РїРѕС‚РµСЂСЏР» СЃРІРѕСЋ СЃРёР»Сѓ. РџСЂРёРіРѕС‚РѕРІСЊСЃСЏ СѓРјРµСЂРµС‚СЊ.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -54,14 +54,14 @@ FUNC INT DIA_Dragon_Rock_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Rock_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Еще один самонадеянный человечишка осмелился взобраться на мою скалу. Вы, люди, такие жалкие. Такие мужественные и такие слабые.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Р•С‰Рµ РѕРґРёРЅ СЃР°РјРѕРЅР°РґРµСЏРЅРЅС‹Р№ С‡РµР»РѕРІРµС‡РёС€РєР° РѕСЃРјРµР»РёР»СЃСЏ РІР·РѕР±СЂР°С‚СЊСЃСЏ РЅР° РјРѕСЋ СЃРєР°Р»Сѓ. Р’С‹, Р»СЋРґРё, С‚Р°РєРёРµ Р¶Р°Р»РєРёРµ. РўР°РєРёРµ РјСѓР¶РµСЃС‚РІРµРЅРЅС‹Рµ Рё С‚Р°РєРёРµ СЃР»Р°Р±С‹Рµ.
 	if (Mis_KilledDragons == 0)
 	{
-		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Смотри-ка, действительно разговаривает.
+		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //РЎРјРѕС‚СЂРё-РєР°, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЂР°Р·РіРѕРІР°СЂРёРІР°РµС‚.
 	};
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Я вырву твои внутренности и скормлю их крысам.
-	AI_Output (other, self, "DIA_Dragon_Rock_Add_15_00"); //Не так быстро. Со мной Глаз Инноса. Ты будешь повиноваться мне и отвечать на мои вопросы.
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //(ревет) Ах-х. Задавай свои вопросы.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //РЇ РІС‹СЂРІСѓ С‚РІРѕРё РІРЅСѓС‚СЂРµРЅРЅРѕСЃС‚Рё Рё СЃРєРѕСЂРјР»СЋ РёС… РєСЂС‹СЃР°Рј.
+	AI_Output (other, self, "DIA_Dragon_Rock_Add_15_00"); //РќРµ С‚Р°Рє Р±С‹СЃС‚СЂРѕ. РЎРѕ РјРЅРѕР№ Р“Р»Р°Р· РРЅРЅРѕСЃР°. РўС‹ Р±СѓРґРµС€СЊ РїРѕРІРёРЅРѕРІР°С‚СЊСЃСЏ РјРЅРµ Рё РѕС‚РІРµС‡Р°С‚СЊ РЅР° РјРѕРё РІРѕРїСЂРѕСЃС‹.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //(СЂРµРІРµС‚) РђС…-С…. Р—Р°РґР°РІР°Р№ СЃРІРѕРё РІРѕРїСЂРѕСЃС‹.
 
 };
 
@@ -75,7 +75,7 @@ instance DIA_Dragon_Rock_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Rock_WERBISTDU_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Dragon_Rock_WERBISTDU_Condition ()
@@ -88,8 +88,8 @@ func int DIA_Dragon_Rock_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Rock_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Кто ты?
-	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Меня зовут Педракан, и я медленно-медленно буду снимать с тебя шкуру, когда доберусь до тебя.
+	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РџРµРґСЂР°РєР°РЅ, Рё СЏ РјРµРґР»РµРЅРЅРѕ-РјРµРґР»РµРЅРЅРѕ Р±СѓРґСѓ СЃРЅРёРјР°С‚СЊ СЃ С‚РµР±СЏ С€РєСѓСЂСѓ, РєРѕРіРґР° РґРѕР±РµСЂСѓСЃСЊ РґРѕ С‚РµР±СЏ.
 
 };
 
@@ -103,7 +103,7 @@ instance DIA_Dragon_Rock_HIERARCHIE		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_HIERARCHIE_Condition;
 	information	 = 	DIA_Dragon_Rock_HIERARCHIE_Info;
 
-	description	 = 	"Кто самый сильный из вас, драконов?";
+	description	 = 	"РљС‚Рѕ СЃР°РјС‹Р№ СЃРёР»СЊРЅС‹Р№ РёР· РІР°СЃ, РґСЂР°РєРѕРЅРѕРІ?";
 };
 
 func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
@@ -116,12 +116,12 @@ func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
 
 func void DIA_Dragon_Rock_HIERARCHIE_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Кто самый сильный из вас, драконов?
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //Мы черпаем нашу силу из стихий этого мира. Иерархия очевидна и проста.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //Земля, покрытая мягкой почвой, дарует жизнь всем созданиям, живущим под солнцем. Но она может раскрыться и поглотить тебя целиком, если ты подойдешь слишком близко.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //Скала, которая скорее расколется, нежели поддастся, гордо возвышается над всем и похоронит беспечных под собой. А еще она дает лучшую защиту от прилива.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Искры жизни живут в глубоких огнях этого мира. А еще огонь обжигает все своим дыханием, не оставляя за собой ничего, кроме пепла.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Все эти стихии сохраняют и уничтожают. Но только в воде, которая стала твердой как скала, все превращается в вечную колонну из соли, где жизнь едва ли возможна.
+	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //РљС‚Рѕ СЃР°РјС‹Р№ СЃРёР»СЊРЅС‹Р№ РёР· РІР°СЃ, РґСЂР°РєРѕРЅРѕРІ?
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //РњС‹ С‡РµСЂРїР°РµРј РЅР°С€Сѓ СЃРёР»Сѓ РёР· СЃС‚РёС…РёР№ СЌС‚РѕРіРѕ РјРёСЂР°. РРµСЂР°СЂС…РёСЏ РѕС‡РµРІРёРґРЅР° Рё РїСЂРѕСЃС‚Р°.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //Р—РµРјР»СЏ, РїРѕРєСЂС‹С‚Р°СЏ РјСЏРіРєРѕР№ РїРѕС‡РІРѕР№, РґР°СЂСѓРµС‚ Р¶РёР·РЅСЊ РІСЃРµРј СЃРѕР·РґР°РЅРёСЏРј, Р¶РёРІСѓС‰РёРј РїРѕРґ СЃРѕР»РЅС†РµРј. РќРѕ РѕРЅР° РјРѕР¶РµС‚ СЂР°СЃРєСЂС‹С‚СЊСЃСЏ Рё РїРѕРіР»РѕС‚РёС‚СЊ С‚РµР±СЏ С†РµР»РёРєРѕРј, РµСЃР»Рё С‚С‹ РїРѕРґРѕР№РґРµС€СЊ СЃР»РёС€РєРѕРј Р±Р»РёР·РєРѕ.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //РЎРєР°Р»Р°, РєРѕС‚РѕСЂР°СЏ СЃРєРѕСЂРµРµ СЂР°СЃРєРѕР»РµС‚СЃСЏ, РЅРµР¶РµР»Рё РїРѕРґРґР°СЃС‚СЃСЏ, РіРѕСЂРґРѕ РІРѕР·РІС‹С€Р°РµС‚СЃСЏ РЅР°Рґ РІСЃРµРј Рё РїРѕС…РѕСЂРѕРЅРёС‚ Р±РµСЃРїРµС‡РЅС‹С… РїРѕРґ СЃРѕР±РѕР№. Рђ РµС‰Рµ РѕРЅР° РґР°РµС‚ Р»СѓС‡С€СѓСЋ Р·Р°С‰РёС‚Сѓ РѕС‚ РїСЂРёР»РёРІР°.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //РСЃРєСЂС‹ Р¶РёР·РЅРё Р¶РёРІСѓС‚ РІ РіР»СѓР±РѕРєРёС… РѕРіРЅСЏС… СЌС‚РѕРіРѕ РјРёСЂР°. Рђ РµС‰Рµ РѕРіРѕРЅСЊ РѕР±Р¶РёРіР°РµС‚ РІСЃРµ СЃРІРѕРёРј РґС‹С…Р°РЅРёРµРј, РЅРµ РѕСЃС‚Р°РІР»СЏСЏ Р·Р° СЃРѕР±РѕР№ РЅРёС‡РµРіРѕ, РєСЂРѕРјРµ РїРµРїР»Р°.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Р’СЃРµ СЌС‚Рё СЃС‚РёС…РёРё СЃРѕС…СЂР°РЅСЏСЋС‚ Рё СѓРЅРёС‡С‚РѕР¶Р°СЋС‚. РќРѕ С‚РѕР»СЊРєРѕ РІ РІРѕРґРµ, РєРѕС‚РѕСЂР°СЏ СЃС‚Р°Р»Р° С‚РІРµСЂРґРѕР№ РєР°Рє СЃРєР°Р»Р°, РІСЃРµ РїСЂРµРІСЂР°С‰Р°РµС‚СЃСЏ РІ РІРµС‡РЅСѓСЋ РєРѕР»РѕРЅРЅСѓ РёР· СЃРѕР»Рё, РіРґРµ Р¶РёР·РЅСЊ РµРґРІР° Р»Рё РІРѕР·РјРѕР¶РЅР°.
 
 };
 

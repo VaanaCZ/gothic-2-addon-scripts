@@ -31,7 +31,7 @@ instance DIA_Ehnim_HALLO		(C_INFO)
 	condition	 = 	DIA_Ehnim_HALLO_Condition;
 	information	 = 	DIA_Ehnim_HALLO_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Ehnim_HALLO_Condition ()
@@ -41,17 +41,17 @@ func int DIA_Ehnim_HALLO_Condition ()
 
 func void DIA_Ehnim_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_HALLO_15_00"); //Кто ты?
-	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_01"); //Меня зовут Эним. Я работаю здесь.
+	AI_Output			(other, self, "DIA_Ehnim_HALLO_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р­РЅРёРј. РЇ СЂР°Р±РѕС‚Р°СЋ Р·РґРµСЃСЊ.
 
 	if	(
 		(Hlp_IsValidNpc (Egill))
 		&& (!C_NpcIsDown (Egill))
 		)
 			{
-				AI_Output			(self, other, "DIA_Ehnim_HALLO_12_02"); //А коротышка вон там - мой брат Эгилл.
+				AI_Output			(self, other, "DIA_Ehnim_HALLO_12_02"); //Рђ РєРѕСЂРѕС‚С‹С€РєР° РІРѕРЅ С‚Р°Рј - РјРѕР№ Р±СЂР°С‚ Р­РіРёР»Р».
 			};
-	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_03"); //Мы работаем здесь, на ферме Акила, уже несколько лет.
+	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_03"); //РњС‹ СЂР°Р±РѕС‚Р°РµРј Р·РґРµСЃСЊ, РЅР° С„РµСЂРјРµ РђРєРёР»Р°, СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ Р»РµС‚.
 
 };
 
@@ -66,7 +66,7 @@ instance DIA_Ehnim_FELDARBEIT		(C_INFO)
 	condition	 = 	DIA_Ehnim_FELDARBEIT_Condition;
 	information	 = 	DIA_Ehnim_FELDARBEIT_Info;
 
-	description	 = 	"Как идет работа в поле?";
+	description	 = 	"РљР°Рє РёРґРµС‚ СЂР°Р±РѕС‚Р° РІ РїРѕР»Рµ?";
 };
 
 func int DIA_Ehnim_FELDARBEIT_Condition ()
@@ -79,9 +79,9 @@ func int DIA_Ehnim_FELDARBEIT_Condition ()
 
 func void DIA_Ehnim_FELDARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_FELDARBEIT_15_00"); //Как идет работа?
-	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_01"); //Ты хочешь помочь? Тут есть еще одна мотыга. Бери ее и выходи в поле.
-	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_02"); //Нужно только быть осторожным, чтобы полевые хищники не подкрались к тебе незаметно. Они сожрут тебя, даже моргнуть не успеешь.
+	AI_Output			(other, self, "DIA_Ehnim_FELDARBEIT_15_00"); //РљР°Рє РёРґРµС‚ СЂР°Р±РѕС‚Р°?
+	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_01"); //РўС‹ С…РѕС‡РµС€СЊ РїРѕРјРѕС‡СЊ? РўСѓС‚ РµСЃС‚СЊ РµС‰Рµ РѕРґРЅР° РјРѕС‚С‹РіР°. Р‘РµСЂРё РµРµ Рё РІС‹С…РѕРґРё РІ РїРѕР»Рµ.
+	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_02"); //РќСѓР¶РЅРѕ С‚РѕР»СЊРєРѕ Р±С‹С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅС‹Рј, С‡С‚РѕР±С‹ РїРѕР»РµРІС‹Рµ С…РёС‰РЅРёРєРё РЅРµ РїРѕРґРєСЂР°Р»РёСЃСЊ Рє С‚РµР±Рµ РЅРµР·Р°РјРµС‚РЅРѕ. РћРЅРё СЃРѕР¶СЂСѓС‚ С‚РµР±СЏ, РґР°Р¶Рµ РјРѕСЂРіРЅСѓС‚СЊ РЅРµ СѓСЃРїРµРµС€СЊ.
 
 };
 
@@ -95,7 +95,7 @@ instance DIA_Ehnim_FELDRAEUBER		(C_INFO)
 	condition	 = 	DIA_Ehnim_FELDRAEUBER_Condition;
 	information	 = 	DIA_Ehnim_FELDRAEUBER_Info;
 
-	description	 = 	"Почему вы ничего не делаете с этими полевыми хищниками?";
+	description	 = 	"РџРѕС‡РµРјСѓ РІС‹ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°РµС‚Рµ СЃ СЌС‚РёРјРё РїРѕР»РµРІС‹РјРё С…РёС‰РЅРёРєР°РјРё?";
 };
 
 func int DIA_Ehnim_FELDRAEUBER_Condition ()
@@ -108,8 +108,8 @@ func int DIA_Ehnim_FELDRAEUBER_Condition ()
 
 func void DIA_Ehnim_FELDRAEUBER_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_FELDRAEUBER_15_00"); //Почему вы ничего не делаете с этими полевыми хищниками?
-	AI_Output			(self, other, "DIA_Ehnim_FELDRAEUBER_12_01"); //Я убил их столько, что уже сбился со счета. Но проблема в том, что на место убитых приходят новые.
+	AI_Output			(other, self, "DIA_Ehnim_FELDRAEUBER_15_00"); //РџРѕС‡РµРјСѓ РІС‹ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°РµС‚Рµ СЃ СЌС‚РёРјРё РїРѕР»РµРІС‹РјРё С…РёС‰РЅРёРєР°РјРё?
+	AI_Output			(self, other, "DIA_Ehnim_FELDRAEUBER_12_01"); //РЇ СѓР±РёР» РёС… СЃС‚РѕР»СЊРєРѕ, С‡С‚Рѕ СѓР¶Рµ СЃР±РёР»СЃСЏ СЃРѕ СЃС‡РµС‚Р°. РќРѕ РїСЂРѕР±Р»РµРјР° РІ С‚РѕРј, С‡С‚Рѕ РЅР° РјРµСЃС‚Рѕ СѓР±РёС‚С‹С… РїСЂРёС…РѕРґСЏС‚ РЅРѕРІС‹Рµ.
 
 };
 
@@ -123,7 +123,7 @@ instance DIA_Ehnim_STREIT1		(C_INFO)
 	condition	 = 	DIA_Ehnim_STREIT1_Condition;
 	information	 = 	DIA_Ehnim_STREIT1_Info;
 
-	description	 = 	"Твой брат сказал мне то же самое.";
+	description	 = 	"РўРІРѕР№ Р±СЂР°С‚ СЃРєР°Р·Р°Р» РјРЅРµ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ.";
 };
 
 func int DIA_Ehnim_STREIT1_Condition ()
@@ -148,9 +148,9 @@ func int DIA_Ehnim_STREIT1_Condition ()
 
 func void DIA_Ehnim_STREIT1_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT1_15_00"); //Твой брат сказал мне то же самое.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_01"); //Что? Этот трус? Да он всегда исчезает, как только эти твари хотя бы приблизятся к нашей земле.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_02"); //Ему не стоит нести такую чушь.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT1_15_00"); //РўРІРѕР№ Р±СЂР°С‚ СЃРєР°Р·Р°Р» РјРЅРµ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_01"); //Р§С‚Рѕ? Р­С‚РѕС‚ С‚СЂСѓСЃ? Р”Р° РѕРЅ РІСЃРµРіРґР° РёСЃС‡РµР·Р°РµС‚, РєР°Рє С‚РѕР»СЊРєРѕ СЌС‚Рё С‚РІР°СЂРё С…РѕС‚СЏ Р±С‹ РїСЂРёР±Р»РёР·СЏС‚СЃСЏ Рє РЅР°С€РµР№ Р·РµРјР»Рµ.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_02"); //Р•РјСѓ РЅРµ СЃС‚РѕРёС‚ РЅРµСЃС‚Рё С‚Р°РєСѓСЋ С‡СѓС€СЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -163,7 +163,7 @@ instance DIA_Ehnim_STREIT3		(C_INFO)
 	condition	 = 	DIA_Ehnim_STREIT3_Condition;
 	information	 = 	DIA_Ehnim_STREIT3_Info;
 
-	description	 = 	"Твой брат думает, что ты хвастун.";
+	description	 = 	"РўРІРѕР№ Р±СЂР°С‚ РґСѓРјР°РµС‚, С‡С‚Рѕ С‚С‹ С…РІР°СЃС‚СѓРЅ.";
 };
 
 func int DIA_Ehnim_STREIT3_Condition ()
@@ -183,10 +183,10 @@ func int DIA_Ehnim_STREIT3_Condition ()
 
 func void DIA_Ehnim_STREIT3_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT3_15_00"); //Твой брат думает, что ты хвастун.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_01"); //Что? У него действительно хватило мужества сказать это?
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_02"); //Ему лучше следить за своим языком, а то мне придется опять преподать ему урок.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_03"); //Иди, и скажи ему это.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT3_15_00"); //РўРІРѕР№ Р±СЂР°С‚ РґСѓРјР°РµС‚, С‡С‚Рѕ С‚С‹ С…РІР°СЃС‚СѓРЅ.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_01"); //Р§С‚Рѕ? РЈ РЅРµРіРѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РІР°С‚РёР»Рѕ РјСѓР¶РµСЃС‚РІР° СЃРєР°Р·Р°С‚СЊ СЌС‚Рѕ?
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_02"); //Р•РјСѓ Р»СѓС‡С€Рµ СЃР»РµРґРёС‚СЊ Р·Р° СЃРІРѕРёРј СЏР·С‹РєРѕРј, Р° С‚Рѕ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РѕРїСЏС‚СЊ РїСЂРµРїРѕРґР°С‚СЊ РµРјСѓ СѓСЂРѕРє.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_03"); //РРґРё, Рё СЃРєР°Р¶Рё РµРјСѓ СЌС‚Рѕ.
 	AI_StopProcessInfos (self);
 };
 
@@ -201,7 +201,7 @@ instance DIA_Ehnim_STREIT5		(C_INFO)
 	information	 = 	DIA_Ehnim_STREIT5_Info;
 	permanent	 =  TRUE;
 
-	description	 = 	"Я думаю, вам двоим нужно просто остыть.";
+	description	 = 	"РЇ РґСѓРјР°СЋ, РІР°Рј РґРІРѕРёРј РЅСѓР¶РЅРѕ РїСЂРѕСЃС‚Рѕ РѕСЃС‚С‹С‚СЊ.";
 };
 
 var int DIA_Ehnim_STREIT5_noPerm;
@@ -224,21 +224,21 @@ func int DIA_Ehnim_STREIT5_Condition ()
 
 func void DIA_Ehnim_STREIT5_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT5_15_00"); //Я думаю, вам двоим нужно просто остыть.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_01"); //Этот ублюдок не отказался от своих слов, я прав?
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_02"); //Я ему пасть порву. Сажи ему это.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT5_15_00"); //РЇ РґСѓРјР°СЋ, РІР°Рј РґРІРѕРёРј РЅСѓР¶РЅРѕ РїСЂРѕСЃС‚Рѕ РѕСЃС‚С‹С‚СЊ.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_01"); //Р­С‚РѕС‚ СѓР±Р»СЋРґРѕРє РЅРµ РѕС‚РєР°Р·Р°Р»СЃСЏ РѕС‚ СЃРІРѕРёС… СЃР»РѕРІ, СЏ РїСЂР°РІ?
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_02"); //РЇ РµРјСѓ РїР°СЃС‚СЊ РїРѕСЂРІСѓ. РЎР°Р¶Рё РµРјСѓ СЌС‚Рѕ.
 
 	Info_ClearChoices	(DIA_Ehnim_STREIT5);
 
-	Info_AddChoice	(DIA_Ehnim_STREIT5, "Делай, что хочешь. А я ухожу.", DIA_Ehnim_STREIT5_gehen );
-	Info_AddChoice	(DIA_Ehnim_STREIT5, "Почему ты не скажешь это ему сам?", DIA_Ehnim_STREIT5_Attack );
+	Info_AddChoice	(DIA_Ehnim_STREIT5, "Р”РµР»Р°Р№, С‡С‚Рѕ С…РѕС‡РµС€СЊ. Рђ СЏ СѓС…РѕР¶Сѓ.", DIA_Ehnim_STREIT5_gehen );
+	Info_AddChoice	(DIA_Ehnim_STREIT5, "РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЃРєР°Р¶РµС€СЊ СЌС‚Рѕ РµРјСѓ СЃР°Рј?", DIA_Ehnim_STREIT5_Attack );
 
 
 };
 func void DIA_Ehnim_STREIT5_Attack ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT5_Attack_15_00"); //Почему ты не скажешь это ему сам?
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_Attack_12_01"); //Сейчас пойду и сделаю это .
+	AI_Output			(other, self, "DIA_Ehnim_STREIT5_Attack_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЃРєР°Р¶РµС€СЊ СЌС‚Рѕ РµРјСѓ СЃР°Рј?
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_Attack_12_01"); //РЎРµР№С‡Р°СЃ РїРѕР№РґСѓ Рё СЃРґРµР»Р°СЋ СЌС‚Рѕ .
 
 	AI_StopProcessInfos (self);
 
@@ -252,8 +252,8 @@ func void DIA_Ehnim_STREIT5_Attack ()
 
 func void DIA_Ehnim_STREIT5_gehen ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT5_gehen_15_00"); //Делай, что хочешь. А я ухожу.
-	AI_Output			(self ,other, "DIA_Ehnim_STREIT5_gehen_12_01"); //Да, уходи отсюда.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT5_gehen_15_00"); //Р”РµР»Р°Р№, С‡С‚Рѕ С…РѕС‡РµС€СЊ. Рђ СЏ СѓС…РѕР¶Сѓ.
+	AI_Output			(self ,other, "DIA_Ehnim_STREIT5_gehen_12_01"); //Р”Р°, СѓС…РѕРґРё РѕС‚СЃСЋРґР°.
 	
 	AI_StopProcessInfos (self);
 };
@@ -285,7 +285,7 @@ func int DIA_Ehnim_PERMKAP1_Condition ()
 
 func void DIA_Ehnim_PERMKAP1_Info ()
 {
-	AI_Output			(self, other, "DIA_Ehnim_PERMKAP1_12_00"); //Тебе мало того, что ты натворил? Я думаю, тебе лучше уйти.
+	AI_Output			(self, other, "DIA_Ehnim_PERMKAP1_12_00"); //РўРµР±Рµ РјР°Р»Рѕ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ РЅР°С‚РІРѕСЂРёР»? РЇ РґСѓРјР°СЋ, С‚РµР±Рµ Р»СѓС‡С€Рµ СѓР№С‚Рё.
 
 	AI_StopProcessInfos (self);
 };
@@ -315,72 +315,72 @@ func int DIA_Ehnim_MoleRatFett_Condition ()
 
 func void DIA_Ehnim_MoleRatFett_Info ()
 {
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_00"); //Ты ВСЕ ЕЩЕ здесь?
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_01"); //Ну да. Все еще ссоритесь?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_02"); //Не твое дело. Забудь об этом. Скажи, ты не был недавно на ферме Лобарта?
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_03"); //Может быть. А что?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_04"); //Ох, ничего такого. Я просто хотел поговорить с Вино о  его винокурне.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_00"); //РўС‹ Р’РЎР• Р•Р©Р• Р·РґРµСЃСЊ?
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_01"); //РќСѓ РґР°. Р’СЃРµ РµС‰Рµ СЃСЃРѕСЂРёС‚РµСЃСЊ?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_02"); //РќРµ С‚РІРѕРµ РґРµР»Рѕ. Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РЎРєР°Р¶Рё, С‚С‹ РЅРµ Р±С‹Р» РЅРµРґР°РІРЅРѕ РЅР° С„РµСЂРјРµ Р›РѕР±Р°СЂС‚Р°?
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_03"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ. Рђ С‡С‚Рѕ?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_04"); //РћС…, РЅРёС‡РµРіРѕ С‚Р°РєРѕРіРѕ. РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р’РёРЅРѕ Рѕ  РµРіРѕ РІРёРЅРѕРєСѓСЂРЅРµ.
 	
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "У меня сейчас нет времени на это.", DIA_Ehnim_MoleRatFett_nein );
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Винокурня? Какая винокурня?", DIA_Ehnim_MoleRatFett_was );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "РЈ РјРµРЅСЏ СЃРµР№С‡Р°СЃ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.", DIA_Ehnim_MoleRatFett_nein );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Р’РёРЅРѕРєСѓСЂРЅСЏ? РљР°РєР°СЏ РІРёРЅРѕРєСѓСЂРЅСЏ?", DIA_Ehnim_MoleRatFett_was );
 
 	if (Npc_IsDead(Vino))
 	{
-		Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Вино мертв.", DIA_Ehnim_MoleRatFett_tot );
+		Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Р’РёРЅРѕ РјРµСЂС‚РІ.", DIA_Ehnim_MoleRatFett_tot );
 	};
 
 };
 func void DIA_Ehnim_MoleRatFett_tot ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_tot_15_00"); //Вино мертв.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_tot_12_01"); //О боже. Ужас-то какой.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_tot_15_00"); //Р’РёРЅРѕ РјРµСЂС‚РІ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_tot_12_01"); //Рћ Р±РѕР¶Рµ. РЈР¶Р°СЃ-С‚Рѕ РєР°РєРѕР№.
 
 };
 
 func void DIA_Ehnim_MoleRatFett_was ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_15_00"); //Винокурня? Какая винокурня?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_01"); //Ох. Мне, наверное, не стоило говорить об этом. Вино всегда так трепетно относился к этому своему маленькому секрету.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_02"); //Ну ладно, все равно уже я проболтался. В лесу, неподалеку от фермы, Вино устроил секретную винокурню.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_03"); //Несколько дней назад, он попросил меня дать ему что-нибудь, чтобы смазать механизм решетки, установленной там.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_04"); //Последнее время шли дожди, и она заржавела. Лебедку заклинило, и он не может поднять решетку.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_15_00"); //Р’РёРЅРѕРєСѓСЂРЅСЏ? РљР°РєР°СЏ РІРёРЅРѕРєСѓСЂРЅСЏ?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_01"); //РћС…. РњРЅРµ, РЅР°РІРµСЂРЅРѕРµ, РЅРµ СЃС‚РѕРёР»Рѕ РіРѕРІРѕСЂРёС‚СЊ РѕР± СЌС‚РѕРј. Р’РёРЅРѕ РІСЃРµРіРґР° С‚Р°Рє С‚СЂРµРїРµС‚РЅРѕ РѕС‚РЅРѕСЃРёР»СЃСЏ Рє СЌС‚РѕРјСѓ СЃРІРѕРµРјСѓ РјР°Р»РµРЅСЊРєРѕРјСѓ СЃРµРєСЂРµС‚Сѓ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_02"); //РќСѓ Р»Р°РґРЅРѕ, РІСЃРµ СЂР°РІРЅРѕ СѓР¶Рµ СЏ РїСЂРѕР±РѕР»С‚Р°Р»СЃСЏ. Р’ Р»РµСЃСѓ, РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С„РµСЂРјС‹, Р’РёРЅРѕ СѓСЃС‚СЂРѕРёР» СЃРµРєСЂРµС‚РЅСѓСЋ РІРёРЅРѕРєСѓСЂРЅСЋ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_03"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ, РѕРЅ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РґР°С‚СЊ РµРјСѓ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡С‚РѕР±С‹ СЃРјР°Р·Р°С‚СЊ РјРµС…Р°РЅРёР·Рј СЂРµС€РµС‚РєРё, СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅРѕР№ С‚Р°Рј.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_04"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ С€Р»Рё РґРѕР¶РґРё, Рё РѕРЅР° Р·Р°СЂР¶Р°РІРµР»Р°. Р›РµР±РµРґРєСѓ Р·Р°РєР»РёРЅРёР»Рѕ, Рё РѕРЅ РЅРµ РјРѕР¶РµС‚ РїРѕРґРЅСЏС‚СЊ СЂРµС€РµС‚РєСѓ.
 
 	Log_CreateTopic (TOPIC_FoundVinosKellerei, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_FoundVinosKellerei, LOG_RUNNING);
-	B_LogEntry (TOPIC_FoundVinosKellerei,"Эним рассказал мне, что Вино содержит секретный винокуренный завод в лесу около фермы Акила. Но механизм, открывающий дверь, заклинило, и починить его можно только смазав шестеренки жиром крысокрота."); 
+	B_LogEntry (TOPIC_FoundVinosKellerei,"Р­РЅРёРј СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Р’РёРЅРѕ СЃРѕРґРµСЂР¶РёС‚ СЃРµРєСЂРµС‚РЅС‹Р№ РІРёРЅРѕРєСѓСЂРµРЅРЅС‹Р№ Р·Р°РІРѕРґ РІ Р»РµСЃСѓ РѕРєРѕР»Рѕ С„РµСЂРјС‹ РђРєРёР»Р°. РќРѕ РјРµС…Р°РЅРёР·Рј, РѕС‚РєСЂС‹РІР°СЋС‰РёР№ РґРІРµСЂСЊ, Р·Р°РєР»РёРЅРёР»Рѕ, Рё РїРѕС‡РёРЅРёС‚СЊ РµРіРѕ РјРѕР¶РЅРѕ С‚РѕР»СЊРєРѕ СЃРјР°Р·Р°РІ С€РµСЃС‚РµСЂРµРЅРєРё Р¶РёСЂРѕРј РєСЂС‹СЃРѕРєСЂРѕС‚Р°."); 
 	
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "И? Ты достал смазку?", DIA_Ehnim_MoleRatFett_was_Fett );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Р? РўС‹ РґРѕСЃС‚Р°Р» СЃРјР°Р·РєСѓ?", DIA_Ehnim_MoleRatFett_was_Fett );
 };
 func void DIA_Ehnim_MoleRatFett_was_Fett ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_15_00"); //И? Ты достал смазку?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_12_01"); //Да, конечно. Самую лучшую. Жир крысокрота. Потрясающая вещь, скажу я тебе. Ее используют даже для смазки корабельных пушек.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_15_00"); //Р? РўС‹ РґРѕСЃС‚Р°Р» СЃРјР°Р·РєСѓ?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_12_01"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РЎР°РјСѓСЋ Р»СѓС‡С€СѓСЋ. Р–РёСЂ РєСЂС‹СЃРѕРєСЂРѕС‚Р°. РџРѕС‚СЂСЏСЃР°СЋС‰Р°СЏ РІРµС‰СЊ, СЃРєР°Р¶Сѓ СЏ С‚РµР±Рµ. Р•Рµ РёСЃРїРѕР»СЊР·СѓСЋС‚ РґР°Р¶Рµ РґР»СЏ СЃРјР°Р·РєРё РєРѕСЂР°Р±РµР»СЊРЅС‹С… РїСѓС€РµРє.
 	
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Продай мне этого жира.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "РџСЂРѕРґР°Р№ РјРЅРµ СЌС‚РѕРіРѕ Р¶РёСЂР°.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill );
 
 };
 var int Ehnim_MoleRatFettOffer;
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_00"); //Продай мне этого жира.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_01"); //Это обойдется тебе недешево, приятель. Он очень редко встречается в этой части страны.
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_02"); //Сколько?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_03"); //Ммм. 100 золотых?
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_00"); //РџСЂРѕРґР°Р№ РјРЅРµ СЌС‚РѕРіРѕ Р¶РёСЂР°.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_01"); //Р­С‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РЅРµРґРµС€РµРІРѕ, РїСЂРёСЏС‚РµР»СЊ. РћРЅ РѕС‡РµРЅСЊ СЂРµРґРєРѕ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ РІ СЌС‚РѕР№ С‡Р°СЃС‚Рё СЃС‚СЂР°РЅС‹.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_02"); //РЎРєРѕР»СЊРєРѕ?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_03"); //РњРјРј. 100 Р·РѕР»РѕС‚С‹С…?
 	Ehnim_MoleRatFettOffer = 100;
 
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Это слишком много.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel );
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Договорились.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Р­С‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja );
 
 };
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_15_00"); //Договорились.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_15_00"); //Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,Ehnim_MoleRatFettOffer))
 		{
-			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_01"); //Хорошо. Вот, держи.
+			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_01"); //РҐРѕСЂРѕС€Рѕ. Р’РѕС‚, РґРµСЂР¶Рё.
 			
 			if (Npc_HasItems (self,ItMi_Moleratlubric_MIS))
 			{
@@ -388,17 +388,17 @@ func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 				
 				if (Npc_IsDead(Vino) == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_02"); //(себе под нос) Ох. Вино убьет меня за это.
+						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_02"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…. Р’РёРЅРѕ СѓР±СЊРµС‚ РјРµРЅСЏ Р·Р° СЌС‚Рѕ.
 					};					
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_03"); //Черт, и куда же она подевалась? Что за досада. Извини. Похоже, у меня ее не осталось. Вот, возьми свои деньги назад .
+				AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_03"); //Р§РµСЂС‚, Рё РєСѓРґР° Р¶Рµ РѕРЅР° РїРѕРґРµРІР°Р»Р°СЃСЊ? Р§С‚Рѕ Р·Р° РґРѕСЃР°РґР°. РР·РІРёРЅРё. РџРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РµРµ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ. Р’РѕС‚, РІРѕР·СЊРјРё СЃРІРѕРё РґРµРЅСЊРіРё РЅР°Р·Р°Рґ .
 				B_GiveInvItems (self, other, ItMi_Gold,Ehnim_MoleRatFettOffer);
 				
 				if (Npc_IsDead(Egill) == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_04"); //Готов поклясться, это проделки моего брата. Вот ублюдок.
+						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_04"); //Р“РѕС‚РѕРІ РїРѕРєР»СЏСЃС‚СЊСЃСЏ, СЌС‚Рѕ РїСЂРѕРґРµР»РєРё РјРѕРµРіРѕ Р±СЂР°С‚Р°. Р’РѕС‚ СѓР±Р»СЋРґРѕРє.
 						AI_StopProcessInfos (self);
 						other.aivar[AIV_INVINCIBLE] = FALSE;
 						B_Attack (self, Egill, AR_NONE, 0);
@@ -407,33 +407,33 @@ func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_05"); //Так, вообще-то не поступают. Сначала ты договариваешься о сделке, а затем оказывается, что у тебя даже нет денег! Уходи, я не хочу тебя видеть!
+			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_05"); //РўР°Рє, РІРѕРѕР±С‰Рµ-С‚Рѕ РЅРµ РїРѕСЃС‚СѓРїР°СЋС‚. РЎРЅР°С‡Р°Р»Р° С‚С‹ РґРѕРіРѕРІР°СЂРёРІР°РµС€СЊСЃСЏ Рѕ СЃРґРµР»РєРµ, Р° Р·Р°С‚РµРј РѕРєР°Р·С‹РІР°РµС‚СЃСЏ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ РґРµРЅРµРі! РЈС…РѕРґРё, СЏ РЅРµ С…РѕС‡Сѓ С‚РµР±СЏ РІРёРґРµС‚СЊ!
 		};
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_15_00"); //Это слишком много.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_12_01"); //Хорошо, хорошо. 70 золотых. Но это мое последняя цена.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_15_00"); //Р­С‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_12_01"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ. 70 Р·РѕР»РѕС‚С‹С…. РќРѕ СЌС‚Рѕ РјРѕРµ РїРѕСЃР»РµРґРЅСЏСЏ С†РµРЅР°.
 	Ehnim_MoleRatFettOffer = 70;
 
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Это все равно слишком много.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch );
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Договорились.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Р­С‚Рѕ РІСЃРµ СЂР°РІРЅРѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja );
 
 };
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_immernoch_15_00"); //Это все равно слишком много.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_immernoch_12_01"); //(сердито) Тогда забудь об этом. Прощай.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_immernoch_15_00"); //Р­С‚Рѕ РІСЃРµ СЂР°РІРЅРѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_immernoch_12_01"); //(СЃРµСЂРґРёС‚Рѕ) РўРѕРіРґР° Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РџСЂРѕС‰Р°Р№.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Ehnim_MoleRatFett_nein ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_nein_15_00"); //У меня сейчас нет времени на это.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_nein_12_01"); //Тогда ее буду отвлекать тебя, парень.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_nein_15_00"); //РЈ РјРµРЅСЏ СЃРµР№С‡Р°СЃ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_nein_12_01"); //РўРѕРіРґР° РµРµ Р±СѓРґСѓ РѕС‚РІР»РµРєР°С‚СЊ С‚РµР±СЏ, РїР°СЂРµРЅСЊ.
 	AI_StopProcessInfos (self);
 };
 
@@ -463,7 +463,7 @@ func int DIA_Ehnim_PERMKAP3_Condition ()
 
 func void DIA_Ehnim_PERMKAP3_Info ()
 {
-	AI_Output			(self, other, "DIA_Ehnim_PERMKAP3_12_00"); //У меня нет времени на тебя.
+	AI_Output			(self, other, "DIA_Ehnim_PERMKAP3_12_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° С‚РµР±СЏ.
 	AI_StopProcessInfos (self);
 };
 

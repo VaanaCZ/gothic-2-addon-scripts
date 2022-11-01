@@ -33,7 +33,7 @@ INSTANCE DIA_Gorn_DI_Hallo (C_INFO)
 	information	= DIA_Gorn_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "Все тип-топ?";
+	description = "Р’СЃРµ С‚РёРї-С‚РѕРї?";
 };                       
 
 FUNC INT DIA_Gorn_DI_Hallo_Condition()
@@ -46,15 +46,15 @@ FUNC INT DIA_Gorn_DI_Hallo_Condition()
 
 FUNC VOID DIA_Gorn_DI_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_Gorn_DI_Hallo_15_00"); //Все тип-топ?
+	AI_Output (other,self ,"DIA_Gorn_DI_Hallo_15_00"); //Р’СЃРµ С‚РёРї-С‚РѕРї?
 
 	if (ORkSturmDI == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_01"); //Пока да. Помни, я хочу действовать.
+			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_01"); //РџРѕРєР° РґР°. РџРѕРјРЅРё, СЏ С…РѕС‡Сѓ РґРµР№СЃС‚РІРѕРІР°С‚СЊ.
 		}
 	else
 		{
-			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_02"); //Там еще есть орки? Пришли их ко мне. Я как раз немного разогрелся.
+			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_02"); //РўР°Рј РµС‰Рµ РµСЃС‚СЊ РѕСЂРєРё? РџСЂРёС€Р»Рё РёС… РєРѕ РјРЅРµ. РЇ РєР°Рє СЂР°Р· РЅРµРјРЅРѕРіРѕ СЂР°Р·РѕРіСЂРµР»СЃСЏ.
 		};
 };
 
@@ -71,7 +71,7 @@ INSTANCE DIA_Gorn_DI_Teach(C_INFO)
 	information	= DIA_Gorn_DI_Teach_Info;
 	permanent	= TRUE;
 	
-	description = "Я хочу потренироваться.";
+	description = "РЇ С…РѕС‡Сѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.";
 };                       
 
 FUNC INT DIA_Gorn_DI_Teach_Condition()
@@ -84,8 +84,8 @@ FUNC INT DIA_Gorn_DI_Teach_Condition()
  
 FUNC VOID DIA_Gorn_DI_Teach_Info()
 {	
-	AI_Output (other, self , 	"DIA_Gorn_DI_Teach_15_00"); //Я хочу потренироваться.
-	AI_Output (self, other, 	"DIA_Gorn_DI_Teach_12_01"); //Это не помешает.
+	AI_Output (other, self , 	"DIA_Gorn_DI_Teach_15_00"); //РЇ С…РѕС‡Сѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.
+	AI_Output (self, other, 	"DIA_Gorn_DI_Teach_12_01"); //Р­С‚Рѕ РЅРµ РїРѕРјРµС€Р°РµС‚.
 	
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -97,7 +97,7 @@ FUNC VOID DIA_Gorn_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 100))
 	{
-		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_1_12_00"); //Да уж. Когда-то ты был лучше.
+		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_1_12_00"); //Р”Р° СѓР¶. РљРѕРіРґР°-С‚Рѕ С‚С‹ Р±С‹Р» Р»СѓС‡С€Рµ.
 	};
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -109,7 +109,7 @@ FUNC VOID DIA_Gorn_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Оружие нужно держать выше. Даже слепой легко пробьет твою защиту своей тростью.
+		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //РћСЂСѓР¶РёРµ РЅСѓР¶РЅРѕ РґРµСЂР¶Р°С‚СЊ РІС‹С€Рµ. Р”Р°Р¶Рµ СЃР»РµРїРѕР№ Р»РµРіРєРѕ РїСЂРѕР±СЊРµС‚ С‚РІРѕСЋ Р·Р°С‰РёС‚Сѓ СЃРІРѕРµР№ С‚СЂРѕСЃС‚СЊСЋ.
 	};
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -133,7 +133,7 @@ instance DIA_Gorn_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Gorn_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Ты все это время был на корабле?";
+	description = 	"РўС‹ РІСЃРµ СЌС‚Рѕ РІСЂРµРјСЏ Р±С‹Р» РЅР° РєРѕСЂР°Р±Р»Рµ?";
 };
 
 func int DIA_Gorn_DI_UndeadDragonDead_Condition ()
@@ -147,34 +147,34 @@ func int DIA_Gorn_DI_UndeadDragonDead_Condition ()
 var int DIA_Gorn_DI_UndeadDragonDead_OneTime;
 func void DIA_Gorn_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_00"); //Ты все это время был на корабле?
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Конечно. Только представь, чтоб мы делали, если бы он пропал.
+	AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_00"); //РўС‹ РІСЃРµ СЌС‚Рѕ РІСЂРµРјСЏ Р±С‹Р» РЅР° РєРѕСЂР°Р±Р»Рµ?
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //РљРѕРЅРµС‡РЅРѕ. РўРѕР»СЊРєРѕ РїСЂРµРґСЃС‚Р°РІСЊ, С‡С‚РѕР± РјС‹ РґРµР»Р°Р»Рё, РµСЃР»Рё Р±С‹ РѕРЅ РїСЂРѕРїР°Р».
 
 	if (DIA_Gorn_DI_UndeadDragonDead_OneTime == FALSE)
 		{
 			if (hero.guild == GIL_DJG)
 			{
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_02"); //А что случилось?
-				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_03"); //Ничего. Я собираюсь отправляться домой.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(смеется) Домой? А где это? Насколько я знаю, у тебя нет дома.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //Хочешь предложение? Мы ворвемся в первую же попавшуюся таверну и напьемся до бессознательного состояния.
-				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_06"); //Ммм. Может быть.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //Эй, расслабься, дружище. Все кончено.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_02"); //Рђ С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_03"); //РќРёС‡РµРіРѕ. РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ РґРѕРјРѕР№.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(СЃРјРµРµС‚СЃСЏ) Р”РѕРјРѕР№? Рђ РіРґРµ СЌС‚Рѕ? РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, Сѓ С‚РµР±СЏ РЅРµС‚ РґРѕРјР°.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //РҐРѕС‡РµС€СЊ РїСЂРµРґР»РѕР¶РµРЅРёРµ? РњС‹ РІРѕСЂРІРµРјСЃСЏ РІ РїРµСЂРІСѓСЋ Р¶Рµ РїРѕРїР°РІС€СѓСЋСЃСЏ С‚Р°РІРµСЂРЅСѓ Рё РЅР°РїСЊРµРјСЃСЏ РґРѕ Р±РµСЃСЃРѕР·РЅР°С‚РµР»СЊРЅРѕРіРѕ СЃРѕСЃС‚РѕСЏРЅРёСЏ.
+				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_06"); //РњРјРј. РњРѕР¶РµС‚ Р±С‹С‚СЊ.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //Р­Р№, СЂР°СЃСЃР»Р°Р±СЊСЃСЏ, РґСЂСѓР¶РёС‰Рµ. Р’СЃРµ РєРѕРЅС‡РµРЅРѕ.
 			};
 			DIA_Gorn_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 	
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_plunder))
 			{
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_08"); //Кто-то должен сказать об этом Биффу, иначе он сгниет на этом острове.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_08"); //РљС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ СЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј Р‘РёС„С„Сѓ, РёРЅР°С‡Рµ РѕРЅ СЃРіРЅРёРµС‚ РЅР° СЌС‚РѕРј РѕСЃС‚СЂРѕРІРµ.
 
 				if (Npc_IsDead(Biff_DI)== FALSE)
 					{
-						AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_09"); //Он будет здесь вовремя.
+						AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_09"); //РћРЅ Р±СѓРґРµС‚ Р·РґРµСЃСЊ РІРѕРІСЂРµРјСЏ.
 					};
 			};			
 	
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //Здесь нам больше нечего делать. Скажи капитану, чтобы поднимал якорь.
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //Р—РґРµСЃСЊ РЅР°Рј Р±РѕР»СЊС€Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ. РЎРєР°Р¶Рё РєР°РїРёС‚Р°РЅСѓ, С‡С‚РѕР±С‹ РїРѕРґРЅРёРјР°Р» СЏРєРѕСЂСЊ.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

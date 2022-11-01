@@ -47,44 +47,44 @@ FUNC INT DIA_Sld_820_Halt_Condition()
 
 FUNC VOID DIA_Sld_820_Halt_Info()
 {	
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_00"); //И куда ты идешь?
-	AI_Output (other, self, "DIA_Sld_820_Halt_15_01"); //В дом, конечно же.
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_02"); //Онар платит нам за то, чтобы мы не пускали в дом парней вроде тебя!
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_00"); //Р РєСѓРґР° С‚С‹ РёРґРµС€СЊ?
+	AI_Output (other, self, "DIA_Sld_820_Halt_15_01"); //Р’ РґРѕРј, РєРѕРЅРµС‡РЅРѕ Р¶Рµ.
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_02"); //РћРЅР°СЂ РїР»Р°С‚РёС‚ РЅР°Рј Р·Р° С‚Рѕ, С‡С‚РѕР±С‹ РјС‹ РЅРµ РїСѓСЃРєР°Р»Рё РІ РґРѕРј РїР°СЂРЅРµР№ РІСЂРѕРґРµ С‚РµР±СЏ!
 
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Sld_820_Halt_07_03"); //Здесь не место ополчению! Он именно так и сказал.
+		AI_Output (self, other, "DIA_Sld_820_Halt_07_03"); //Р—РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ РѕРїРѕР»С‡РµРЅРёСЋ! РћРЅ РёРјРµРЅРЅРѕ С‚Р°Рє Рё СЃРєР°Р·Р°Р».
 	};
 
-	AI_Output (other, self, "DIA_Sld_820_Halt_15_04"); //Я хочу поговорить с Ли!
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_05"); //Что тебе нужно от него?
+	AI_Output (other, self, "DIA_Sld_820_Halt_15_04"); //РЇ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р›Рё!
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_05"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РЅРµРіРѕ?
 	
 	Info_ClearChoices (DIA_Sld_820_Halt);
-	Info_AddChoice (DIA_Sld_820_Halt, "Он и я давние знакомые...", DIA_Sld_820_Halt_KenneLee);
+	Info_AddChoice (DIA_Sld_820_Halt, "РћРЅ Рё СЏ РґР°РІРЅРёРµ Р·РЅР°РєРѕРјС‹Рµ...", DIA_Sld_820_Halt_KenneLee);
 	if (other.guild == GIL_NONE)
 	{
-		Info_AddChoice (DIA_Sld_820_Halt, "Я хочу присоединиться к наемникам!", DIA_Sld_820_Halt_WannaJoin);
+		Info_AddChoice (DIA_Sld_820_Halt, "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј!", DIA_Sld_820_Halt_WannaJoin);
 	};
 };
 
 func void B_Sld_820_LeeIsRight()
 {
-	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Ли в правом крыле. И даже не пытайся заглянуть куда-либо еще!
+	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Р›Рё РІ РїСЂР°РІРѕРј РєСЂС‹Р»Рµ. Р РґР°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ Р·Р°РіР»СЏРЅСѓС‚СЊ РєСѓРґР°-Р»РёР±Рѕ РµС‰Рµ!
 };
 
 func void DIA_Sld_820_Halt_WannaJoin()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //Я хочу присоединиться к наемникам!
-	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //Ах, свежее пушечное мясо! Добро пожаловать.
+	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј!
+	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //РђС…, СЃРІРµР¶РµРµ РїСѓС€РµС‡РЅРѕРµ РјСЏСЃРѕ! Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ.
 	B_Sld_820_LeeIsRight();
-	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //Но только предупреждаю: оставь Онара в покое! Он очень не любит, когда с ним заговаривают посторонние. Особенно парни вроде тебя.
+	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //РќРѕ С‚РѕР»СЊРєРѕ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ: РѕСЃС‚Р°РІСЊ РћРЅР°СЂР° РІ РїРѕРєРѕРµ! РћРЅ РѕС‡РµРЅСЊ РЅРµ Р»СЋР±РёС‚, РєРѕРіРґР° СЃ РЅРёРј Р·Р°РіРѕРІР°СЂРёРІР°СЋС‚ РїРѕСЃС‚РѕСЂРѕРЅРЅРёРµ. РћСЃРѕР±РµРЅРЅРѕ РїР°СЂРЅРё РІСЂРѕРґРµ С‚РµР±СЏ.
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Sld_820_Halt_KenneLee()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //Он и я давние знакомые...
-	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //ТЫ приятель Ли? Я не верю в это! Но все равно, проходи, и если он не узнает тебя, тогда держись... (смеется)
+	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //РћРЅ Рё СЏ РґР°РІРЅРёРµ Р·РЅР°РєРѕРјС‹Рµ...
+	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //РўР« РїСЂРёСЏС‚РµР»СЊ Р›Рё? РЇ РЅРµ РІРµСЂСЋ РІ СЌС‚Рѕ! РќРѕ РІСЃРµ СЂР°РІРЅРѕ, РїСЂРѕС…РѕРґРё, Рё РµСЃР»Рё РѕРЅ РЅРµ СѓР·РЅР°РµС‚ С‚РµР±СЏ, С‚РѕРіРґР° РґРµСЂР¶РёСЃСЊ... (СЃРјРµРµС‚СЃСЏ)
 	B_Sld_820_LeeIsRight();
 	AI_StopProcessInfos	(self);
 };
@@ -100,7 +100,7 @@ INSTANCE DIA_Sld_820_PERM(C_INFO)
 	condition	= DIA_Sld_820_PERM_Condition;
 	information	= DIA_Sld_820_PERM_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Sld_820_PERM_Condition()
@@ -110,8 +110,8 @@ FUNC INT DIA_Sld_820_PERM_Condition()
 
 FUNC VOID DIA_Sld_820_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Sld_820_PERM_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Sld_820_PERM_07_01"); //Проходи, если хочешь, но не надо трепаться здесь.
+	AI_Output (other, self, "DIA_Sld_820_PERM_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Sld_820_PERM_07_01"); //РџСЂРѕС…РѕРґРё, РµСЃР»Рё С…РѕС‡РµС€СЊ, РЅРѕ РЅРµ РЅР°РґРѕ С‚СЂРµРїР°С‚СЊСЃСЏ Р·РґРµСЃСЊ.
 	AI_StopProcessInfos	(self);
 };
 

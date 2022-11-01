@@ -3,7 +3,7 @@
 instance BAU_941_Kati (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Кати";
+	name 		= "РљР°С‚Рё";
 	guild 		= GIL_OUT;
 	id 			= 941;
 	voice 		= 16;

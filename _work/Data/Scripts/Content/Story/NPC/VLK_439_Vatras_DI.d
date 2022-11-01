@@ -8,7 +8,7 @@
 instance VLK_439_Vatras_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ватрас"; 
+	name 		= "Р’Р°С‚СЂР°СЃ"; 
 	guild 		= GIL_VLK;
 	id 			= 4390;
 	voice 		= 5;

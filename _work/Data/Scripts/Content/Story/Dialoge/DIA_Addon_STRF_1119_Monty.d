@@ -32,7 +32,7 @@ INSTANCE DIA_Addon_Monty_Hi   (C_INFO)
 	condition   = DIA_Addon_Monty_Hi_Condition;
 	information = DIA_Addon_Monty_Hi_Info;
 	permanent   = FALSE;
-	description = "Как идут дела?";
+	description = "РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_Monty_Hi_Condition()
 {	
@@ -40,12 +40,12 @@ FUNC INT DIA_Addon_Monty_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Monty_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Как идут дела?
-	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Я жив - и это все, что имеет для меня значение.
+	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//РЇ Р¶РёРІ - Рё СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ РёРјРµРµС‚ РґР»СЏ РјРµРЅСЏ Р·РЅР°С‡РµРЅРёРµ.
 	
 	if (Monty_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Monty_Hi_08_02");//Если ты хочешь что-либо обсудить, тебе нужен Патрик.
+		AI_Output (self, other, "DIA_Addon_Monty_Hi_08_02");//Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-Р»РёР±Рѕ РѕР±СЃСѓРґРёС‚СЊ, С‚РµР±Рµ РЅСѓР¶РµРЅ РџР°С‚СЂРёРє.
 		Monty_einmal = TRUE;
 	};
 };
@@ -68,8 +68,8 @@ FUNC INT DIA_Addon_Monty_Hacken_Condition()
 FUNC VOID DIA_Addon_Monty_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Для эффективной работы очень важен угол удара.
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Угол должен быть не слишком тупым и не слишком острым. Тогда ты добудешь самородки и не выронишь кирку.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Р”Р»СЏ СЌС„С„РµРєС‚РёРІРЅРѕР№ СЂР°Р±РѕС‚С‹ РѕС‡РµРЅСЊ РІР°Р¶РµРЅ СѓРіРѕР» СѓРґР°СЂР°.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//РЈРіРѕР» РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РЅРµ СЃР»РёС€РєРѕРј С‚СѓРїС‹Рј Рё РЅРµ СЃР»РёС€РєРѕРј РѕСЃС‚СЂС‹Рј. РўРѕРіРґР° С‚С‹ РґРѕР±СѓРґРµС€СЊ СЃР°РјРѕСЂРѕРґРєРё Рё РЅРµ РІС‹СЂРѕРЅРёС€СЊ РєРёСЂРєСѓ.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

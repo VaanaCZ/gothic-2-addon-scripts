@@ -1,7 +1,7 @@
 INSTANCE PIR_1362_Addon_Bones (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Бонес";
+	name 		= "Р‘РѕРЅРµСЃ";
 	guild 		= GIL_PIR;
 	id 			= 1362;
 	voice 		= 1;

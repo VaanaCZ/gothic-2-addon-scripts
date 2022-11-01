@@ -43,7 +43,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет огня";
+	description		= "РђРјСѓР»РµС‚ РѕРіРЅСЏ";
 	
 	TEXT[2]			= NAME_Prot_Fire;
 	COUNT[2]		= Am_ProtFire;
@@ -85,7 +85,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет упряжи";
+	description		= "РђРјСѓР»РµС‚ СѓРїСЂСЏР¶Рё";
 	
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= Am_ProtEdge;
@@ -130,7 +130,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет дубовой кожи";
+	description		= "РђРјСѓР»РµС‚ РґСѓР±РѕРІРѕР№ РєРѕР¶Рё";
 	
 	TEXT[2]			= NAME_Prot_Point;
 	COUNT[2]		= Am_ProtPoint;
@@ -154,7 +154,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	};
 
 /******************************************************************************************/
-	INSTANCE  ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF fьr alle Minenanteile (Mission -> MIS_Serpentes_MinenAnteil_KDF == LOG_SUCCESS)
+	INSTANCE  ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF fСЊr alle Minenanteile (Mission -> MIS_Serpentes_MinenAnteil_KDF == LOG_SUCCESS)
 {
 	name 			=	NAME_Amulett;
 
@@ -173,7 +173,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет духовной силы";
+	description		= "РђРјСѓР»РµС‚ РґСѓС…РѕРІРЅРѕР№ СЃРёР»С‹";
 	
 	TEXT[2]			= NAME_Prot_Magic;
 	COUNT[2]		= Am_ProtMage;
@@ -197,7 +197,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 
 /******************************************************************************************/
 
-	INSTANCE  ItAm_Prot_Total_01(C_ITEM)//ItAm_AmulettOfDeath_Mis (alle + 30)  MAGIER_EXKLUSIV_AMULETT fьr den Endkampf des KDFs  (Kapitel 5)
+	INSTANCE  ItAm_Prot_Total_01(C_ITEM)//ItAm_AmulettOfDeath_Mis (alle + 30)  MAGIER_EXKLUSIV_AMULETT fСЊr den Endkampf des KDFs  (Kapitel 5)
 
 {
 	name 			=	NAME_Amulett;
@@ -217,7 +217,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет металлической кожи";
+	description		= "РђРјСѓР»РµС‚ РјРµС‚Р°Р»Р»РёС‡РµСЃРєРѕР№ РєРѕР¶Рё";
 	
 	TEXT[1]			= NAME_Prot_Fire;
 	COUNT[1]		= AM_TProtFire;
@@ -254,7 +254,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	};
 
 /******************************************************************************************/
-	INSTANCE  ItAm_Dex_01(C_Item)	//Joly: von Dar an KDF und DJG vergeben ab Kapitel 4 \ Xardas_Secret-area fьr PAL	(Kapitel 3)
+	INSTANCE  ItAm_Dex_01(C_Item)	//Joly: von Dar an KDF und DJG vergeben ab Kapitel 4 \ Xardas_Secret-area fСЊr PAL	(Kapitel 3)
 {
 	name 			=	NAME_Amulett;
 
@@ -273,7 +273,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет ловкости";
+	description		= "РђРјСѓР»РµС‚ Р»РѕРІРєРѕСЃС‚Рё";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= Am_Dex;
@@ -317,7 +317,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет силы";
+	description		= "РђРјСѓР»РµС‚ СЃРёР»С‹";
 	
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= Am_Strg;
@@ -341,7 +341,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 
 /******************************************************************************************/
 
-	INSTANCE  ItAm_Hp_01(C_Item)  //von Bennet dem Schmied an den PAL und dem KDF        (Kapitel 3)\Xardas_Secret-area fьr DJG	(Kapitel 3)
+	INSTANCE  ItAm_Hp_01(C_Item)  //von Bennet dem Schmied an den PAL und dem KDF        (Kapitel 3)\Xardas_Secret-area fСЊr DJG	(Kapitel 3)
 {
 	name 			=	NAME_Amulett;
 
@@ -360,7 +360,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет жизни";
+	description		= "РђРјСѓР»РµС‚ Р¶РёР·РЅРё";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= Am_Hp;
@@ -413,7 +413,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет магии";
+	description		= "РђРјСѓР»РµС‚ РјР°РіРёРё";
 	
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= Am_Mana;
@@ -446,9 +446,9 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	};
 
 /******************************************************************************************/
-	INSTANCE  ItAm_Dex_Strg_01(C_Item)	// wird dem PAL von Ulthar ьberreicht fьr die Reinigung der Schreine Kapitel 3\
+	INSTANCE  ItAm_Dex_Strg_01(C_Item)	// wird dem PAL von Ulthar СЊberreicht fСЊr die Reinigung der Schreine Kapitel 3\
 {
-	name 			=	"Амулет мощи";
+	name 			=	"РђРјСѓР»РµС‚ РјРѕС‰Рё";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -465,7 +465,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет мощи";
+	description		= "РђРјСѓР»РµС‚ РјРѕС‰Рё";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= Am_DexStrg_Dex;
@@ -493,9 +493,9 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	};
 
 /******************************************************************************************/
-	INSTANCE  ItAm_Hp_Mana_01 (C_Item)	//Xardas_Secret-area fьr KDF	(Kapitel 3)
+	INSTANCE  ItAm_Hp_Mana_01 (C_Item)	//Xardas_Secret-area fСЊr KDF	(Kapitel 3)
 {
-	name 			=	"Амулет просвещения";
+	name 			=	"РђРјСѓР»РµС‚ РїСЂРѕСЃРІРµС‰РµРЅРёСЏ";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -512,7 +512,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Амулет просвещения";
+	description		= "РђРјСѓР»РµС‚ РїСЂРѕСЃРІРµС‰РµРЅРёСЏ";
 	
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= Am_HpMana_Hp;

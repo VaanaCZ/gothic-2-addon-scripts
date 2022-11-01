@@ -2,7 +2,7 @@
 instance VLK_461_Carl (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Κΰπλ"; 
+	name 		= "ΠΠ°Ρ€Π»"; 
 	guild 		= GIL_VLK;
 	id 			= 461;
 	voice 		= 5;

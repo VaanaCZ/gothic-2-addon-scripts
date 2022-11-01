@@ -6,8 +6,8 @@ func int B_GetPlayerCrime (var C_NPC slf)
 {
 	// EXIT IF...
 	
-	// ------ wenn Schlägerei länger als 2 Tage her, Crime "verjährt" ------
-	if (slf.aivar[AIV_NpcSawPlayerCommit] <= CRIME_ATTACK) //WICHTIG! Alles was weniger schlimm ist, als Attack darf höchstens dieselbe Verjährungszeit haben!
+	// ------ wenn SchlÐ´gerei lÐ´nger als 2 Tage her, Crime "verjÐ´hrt" ------
+	if (slf.aivar[AIV_NpcSawPlayerCommit] <= CRIME_ATTACK) //WICHTIG! Alles was weniger schlimm ist, als Attack darf hÑ†chstens dieselbe VerjÐ´hrungszeit haben!
 	{
 		if (slf.aivar[AIV_NpcSawPlayerCommitDay] < (Wld_GetDay()-2))
 		{
@@ -18,7 +18,7 @@ func int B_GetPlayerCrime (var C_NPC slf)
 	// ------ wenn seit der Tat Absolution erteilt wurde, ist die Tat vergeben  ------
 	if (slf.aivar[AIV_CrimeAbsolutionLevel] < B_GetCurrentAbsolutionLevel(slf))
 	{
-		//Für NSCs, die nicht City/Monastery/Farm angehören, 
+		//FÑŒr NSCs, die nicht City/Monastery/Farm angehÑ†ren, 
 		//ist B_GetCurrentAbsolutionLevel immer 0, 
 		//somit ist die Abfrage hier immer false
 																	
@@ -27,7 +27,7 @@ func int B_GetPlayerCrime (var C_NPC slf)
 	
 	// FUNC
 	
-	// ------ Inhalt der AIV(=Crime) zurückliefern ------
+	// ------ Inhalt der AIV(=Crime) zurÑŒckliefern ------
 	return slf.aivar[AIV_NpcSawPlayerCommit];
 };
 

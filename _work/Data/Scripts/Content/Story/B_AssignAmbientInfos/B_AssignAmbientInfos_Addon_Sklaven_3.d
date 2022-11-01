@@ -47,15 +47,15 @@ FUNC VOID DIA_Skalven_3_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_00"); //(испуганно) Что ты хочешь от меня? Уйди прочь!
+		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_00"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РѕС‚ РјРµРЅСЏ? РЈР№РґРё РїСЂРѕС‡СЊ!
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_01"); //(нервно) Я ничего не делал! Оставь меня.
+		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_01"); //(РЅРµСЂРІРЅРѕ) РЇ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°Р»! РћСЃС‚Р°РІСЊ РјРµРЅСЏ.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_02"); //(испуганно) Пожалуйста, не трогай меня!
+		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_02"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµ С‚СЂРѕРіР°Р№ РјРµРЅСЏ!
 	};
 	
 	AI_StopProcessInfos	(self);

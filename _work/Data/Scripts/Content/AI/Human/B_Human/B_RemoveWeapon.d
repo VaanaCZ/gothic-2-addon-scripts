@@ -10,5 +10,5 @@ func void B_RemoveWeapon (var C_NPC slf)
 	//	AI_StopAim (slf);
 	//};
 	
-	AI_RemoveWeapon (slf); //Fäuste, NK/FK-Waffen oder Magie wegstecken
+	AI_RemoveWeapon (slf); //FÐ´uste, NK/FK-Waffen oder Magie wegstecken
 };

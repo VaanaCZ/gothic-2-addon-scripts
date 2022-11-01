@@ -64,7 +64,7 @@ instance DIA_Addon_Farim_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_Hallo_Condition;
 	information	 = 	DIA_Addon_Farim_Hallo_Info;
 
-	description	 = 	"Ты рыбак?";
+	description	 = 	"РўС‹ СЂС‹Р±Р°Рє?";
 };
 
 func int DIA_Addon_Farim_Hallo_Condition ()
@@ -74,16 +74,16 @@ func int DIA_Addon_Farim_Hallo_Condition ()
 
 func void DIA_Addon_Farim_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_Hallo_15_00"); //Ты рыбак?
-	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_01"); //Интересно, как же ты догадался?
-	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_02"); //Не мог бы ты оставить меня в покое?
+	AI_Output	(other, self, "DIA_Addon_Farim_Hallo_15_00"); //РўС‹ СЂС‹Р±Р°Рє?
+	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_01"); //РРЅС‚РµСЂРµСЃРЅРѕ, РєР°Рє Р¶Рµ С‚С‹ РґРѕРіР°РґР°Р»СЃСЏ?
+	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_02"); //РќРµ РјРѕРі Р±С‹ С‚С‹ РѕСЃС‚Р°РІРёС‚СЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ?
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_02"); //Не принимай это на свой счет, но в последнее время от ополчения у меня одни неприятности.
+		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_02"); //РќРµ РїСЂРёРЅРёРјР°Р№ СЌС‚Рѕ РЅР° СЃРІРѕР№ СЃС‡РµС‚, РЅРѕ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РѕС‚ РѕРїРѕР»С‡РµРЅРёСЏ Сѓ РјРµРЅСЏ РѕРґРЅРё РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_03"); //Не принимай на свой счет. Просто в последнее время у меня неприятности с ополчением.
+		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_03"); //РќРµ РїСЂРёРЅРёРјР°Р№ РЅР° СЃРІРѕР№ СЃС‡РµС‚. РџСЂРѕСЃС‚Рѕ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ Сѓ РјРµРЅСЏ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё СЃ РѕРїРѕР»С‡РµРЅРёРµРј.
 	};
 };
 
@@ -97,7 +97,7 @@ instance DIA_Addon_Farim_MilizProbs		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_MilizProbs_Condition;
 	information	 = 	DIA_Addon_Farim_MilizProbs_Info;
 
-	description	 = 	"Неприятности с ополчением?";
+	description	 = 	"РќРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё СЃ РѕРїРѕР»С‡РµРЅРёРµРј?";
 };
 
 func int DIA_Addon_Farim_MilizProbs_Condition ()
@@ -110,53 +110,53 @@ func int DIA_Addon_Farim_MilizProbs_Condition ()
 
 func void DIA_Addon_Farim_MilizProbs_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_MilizProbs_15_00"); //Неприятности с ополчением?
+	AI_Output	(other, self, "DIA_Addon_Farim_MilizProbs_15_00"); //РќРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё СЃ РѕРїРѕР»С‡РµРЅРёРµРј?
 	if (((hero.guild == GIL_MIL)||(hero.guild == GIL_PAL)) == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_01"); //Эти подонки приходят ко мне и забирают все, что им вздумается.
+		AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_01"); //Р­С‚Рё РїРѕРґРѕРЅРєРё РїСЂРёС…РѕРґСЏС‚ РєРѕ РјРЅРµ Рё Р·Р°Р±РёСЂР°СЋС‚ РІСЃРµ, С‡С‚Рѕ РёРј РІР·РґСѓРјР°РµС‚СЃСЏ.
 	};
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_02"); //На прошлой неделе они забрали весь мой улов. Сказали, что он пойдет на благое дело.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_03"); //Я, конечно, понимаю, что после того, как фермеры прекратили торговать с городом, все выкручиваются, как могут.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_04"); //Иногда им не хватает еды. Не удивительно, что они забирают мою рыбу.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_05"); //Но если они продолжат так поступать, мне самому нечего будет есть.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_02"); //РќР° РїСЂРѕС€Р»РѕР№ РЅРµРґРµР»Рµ РѕРЅРё Р·Р°Р±СЂР°Р»Рё РІРµСЃСЊ РјРѕР№ СѓР»РѕРІ. РЎРєР°Р·Р°Р»Рё, С‡С‚Рѕ РѕРЅ РїРѕР№РґРµС‚ РЅР° Р±Р»Р°РіРѕРµ РґРµР»Рѕ.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_03"); //РЇ, РєРѕРЅРµС‡РЅРѕ, РїРѕРЅРёРјР°СЋ, С‡С‚Рѕ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє С„РµСЂРјРµСЂС‹ РїСЂРµРєСЂР°С‚РёР»Рё С‚РѕСЂРіРѕРІР°С‚СЊ СЃ РіРѕСЂРѕРґРѕРј, РІСЃРµ РІС‹РєСЂСѓС‡РёРІР°СЋС‚СЃСЏ, РєР°Рє РјРѕРіСѓС‚.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_04"); //РРЅРѕРіРґР° РёРј РЅРµ С…РІР°С‚Р°РµС‚ РµРґС‹. РќРµ СѓРґРёРІРёС‚РµР»СЊРЅРѕ, С‡С‚Рѕ РѕРЅРё Р·Р°Р±РёСЂР°СЋС‚ РјРѕСЋ СЂС‹Р±Сѓ.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_05"); //РќРѕ РµСЃР»Рё РѕРЅРё РїСЂРѕРґРѕР»Р¶Р°С‚ С‚Р°Рє РїРѕСЃС‚СѓРїР°С‚СЊ, РјРЅРµ СЃР°РјРѕРјСѓ РЅРµС‡РµРіРѕ Р±СѓРґРµС‚ РµСЃС‚СЊ.
 	
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
-	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Отдай мне всю свою рыбу.", DIA_Addon_Farim_MilizProbs_klauen );
-	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Может быть, я смогу помочь.", DIA_Addon_Farim_MilizProbs_helfen );
-	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Ты рассказывал об этом паладинам?", DIA_Addon_Farim_MilizProbs_paladine );
+	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "РћС‚РґР°Р№ РјРЅРµ РІСЃСЋ СЃРІРѕСЋ СЂС‹Р±Сѓ.", DIA_Addon_Farim_MilizProbs_klauen );
+	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ.", DIA_Addon_Farim_MilizProbs_helfen );
+	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "РўС‹ СЂР°СЃСЃРєР°Р·С‹РІР°Р» РѕР± СЌС‚РѕРј РїР°Р»Р°РґРёРЅР°Рј?", DIA_Addon_Farim_MilizProbs_paladine );
 };
 func void DIA_Addon_Farim_MilizProbs_paladine ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_paladine_15_00"); //Ты рассказывал об этом паладинам?
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_paladine_11_01"); //Ты шутишь? Ты действительно думаешь, что их заинтересует, что у какого-то бедняка возникли проблемы с ополчением?
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_paladine_15_00"); //РўС‹ СЂР°СЃСЃРєР°Р·С‹РІР°Р» РѕР± СЌС‚РѕРј РїР°Р»Р°РґРёРЅР°Рј?
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_paladine_11_01"); //РўС‹ С€СѓС‚РёС€СЊ? РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ РёС… Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚, С‡С‚Рѕ Сѓ РєР°РєРѕРіРѕ-С‚Рѕ Р±РµРґРЅСЏРєР° РІРѕР·РЅРёРєР»Рё РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј?
 };
 var int Farim_PissedOff;
 func void DIA_Addon_Farim_MilizProbs_klauen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_klauen_15_00"); //Отдай мне всю свою рыбу.
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_01"); //(сердито) Я так и знал! Ты просто очередной подонок.
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_klauen_15_00"); //РћС‚РґР°Р№ РјРЅРµ РІСЃСЋ СЃРІРѕСЋ СЂС‹Р±Сѓ.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_01"); //(СЃРµСЂРґРёС‚Рѕ) РЇ С‚Р°Рє Рё Р·РЅР°Р»! РўС‹ РїСЂРѕСЃС‚Рѕ РѕС‡РµСЂРµРґРЅРѕР№ РїРѕРґРѕРЅРѕРє.
 	
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_02"); //Боюсь, ты опоздал. Здесь уже побывали твои друзья, которые все забрали.
+		AI_Output (self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_02"); //Р‘РѕСЋСЃСЊ, С‚С‹ РѕРїРѕР·РґР°Р». Р—РґРµСЃСЊ СѓР¶Рµ РїРѕР±С‹РІР°Р»Рё С‚РІРѕРё РґСЂСѓР·СЊСЏ, РєРѕС‚РѕСЂС‹Рµ РІСЃРµ Р·Р°Р±СЂР°Р»Рё.
 	};
 	
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_04"); //Думаю, тебе лучше уйти.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_04"); //Р”СѓРјР°СЋ, С‚РµР±Рµ Р»СѓС‡С€Рµ СѓР№С‚Рё.
 	Farim_PissedOff = TRUE;
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 };
 func void DIA_Addon_Farim_MilizProbs_helfen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_00"); //Может быть, я смогу тебе помочь.
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_02"); //Не знаю... Полагаю, тут нужен кто-нибудь, имеющий влияние на ополчение или паладинов.
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_03"); //Хотя вряд ли паладины будут покупать у меня рыбу.
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_04"); //Я посмотрю, что можно сделать.
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ СЃРјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_02"); //РќРµ Р·РЅР°СЋ... РџРѕР»Р°РіР°СЋ, С‚СѓС‚ РЅСѓР¶РµРЅ РєС‚Рѕ-РЅРёР±СѓРґСЊ, РёРјРµСЋС‰РёР№ РІР»РёСЏРЅРёРµ РЅР° РѕРїРѕР»С‡РµРЅРёРµ РёР»Рё РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_03"); //РҐРѕС‚СЏ РІСЂСЏРґ Р»Рё РїР°Р»Р°РґРёРЅС‹ Р±СѓРґСѓС‚ РїРѕРєСѓРїР°С‚СЊ Сѓ РјРµРЅСЏ СЂС‹Р±Сѓ.
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_04"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 	
 	Log_CreateTopic (TOPIC_Addon_FarimsFish, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_FarimsFish, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_FarimsFish,"У рыбака Фарима проблемы с ополчением. Они забирают у него столько рыбы, что ему не хватает на жизнь. Чтобы помочь ему, я должен поговорить с кем-нибудь, имеющим влияние среди паладинов."); 
+	B_LogEntry (TOPIC_Addon_FarimsFish,"РЈ СЂС‹Р±Р°РєР° Р¤Р°СЂРёРјР° РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј. РћРЅРё Р·Р°Р±РёСЂР°СЋС‚ Сѓ РЅРµРіРѕ СЃС‚РѕР»СЊРєРѕ СЂС‹Р±С‹, С‡С‚Рѕ РµРјСѓ РЅРµ С…РІР°С‚Р°РµС‚ РЅР° Р¶РёР·РЅСЊ. Р§С‚РѕР±С‹ РїРѕРјРѕС‡СЊ РµРјСѓ, СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РєРµРј-РЅРёР±СѓРґСЊ, РёРјРµСЋС‰РёРј РІР»РёСЏРЅРёРµ СЃСЂРµРґРё РїР°Р»Р°РґРёРЅРѕРІ."); 
 		
 	MIS_Addon_Farim_PaladinFisch = LOG_RUNNING;
 };
@@ -171,7 +171,7 @@ instance DIA_Addon_Farim_MartinHelps		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_MartinHelps_Condition;
 	information	 = 	DIA_Addon_Farim_MartinHelps_Info;
 
-	description	 = 	"Я знаю, как решить твои проблемы с ополчением.";
+	description	 = 	"РЇ Р·РЅР°СЋ, РєР°Рє СЂРµС€РёС‚СЊ С‚РІРѕРё РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј.";
 };
 
 func int DIA_Addon_Farim_MartinHelps_Condition ()
@@ -185,21 +185,21 @@ func int DIA_Addon_Farim_MartinHelps_Condition ()
 
 func void DIA_Addon_Farim_MartinHelps_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_00"); //Я знаю, как решить твои проблемы с ополчением.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_01"); //И как же?
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_00"); //РЇ Р·РЅР°СЋ, РєР°Рє СЂРµС€РёС‚СЊ С‚РІРѕРё РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_01"); //Р РєР°Рє Р¶Рµ?
 
 	if (hero.guild == GIL_MIL)||(hero.guild == GIL_PAL)
 	{
-		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_02"); //Я бываю здесь слишком редко, чтобы постоянно присматривать за твоей рыбой.
-		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_03"); //Но я знаю кое-кого, кто может тебе помочь.
+		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_02"); //РЇ Р±С‹РІР°СЋ Р·РґРµСЃСЊ СЃР»РёС€РєРѕРј СЂРµРґРєРѕ, С‡С‚РѕР±С‹ РїРѕСЃС‚РѕСЏРЅРЅРѕ РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ Р·Р° С‚РІРѕРµР№ СЂС‹Р±РѕР№.
+		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_03"); //РќРѕ СЏ Р·РЅР°СЋ РєРѕРµ-РєРѕРіРѕ, РєС‚Рѕ РјРѕР¶РµС‚ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_04"); //Мартин, интендант паладинов, хочет выслушать твою историю об ополчении и рыбе.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_05"); //Думаешь, он сможет сделать так, чтобы люди из ополчения оставили меня в покое?
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_06"); //Он так сказал.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_07"); //Отлично! Спасибо тебе! Мне нечем тебе заплатить... Хотя постой...
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_08"); //Я нашел этот странный камень на одном из островов у побережья Хориниса.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_09"); //Не думаю, что он очень ценный, но такой человек, как ты, наверняка найдет ему применение.
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_04"); //РњР°СЂС‚РёРЅ, РёРЅС‚РµРЅРґР°РЅС‚ РїР°Р»Р°РґРёРЅРѕРІ, С…РѕС‡РµС‚ РІС‹СЃР»СѓС€Р°С‚СЊ С‚РІРѕСЋ РёСЃС‚РѕСЂРёСЋ РѕР± РѕРїРѕР»С‡РµРЅРёРё Рё СЂС‹Р±Рµ.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_05"); //Р”СѓРјР°РµС€СЊ, РѕРЅ СЃРјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ С‚Р°Рє, С‡С‚РѕР±С‹ Р»СЋРґРё РёР· РѕРїРѕР»С‡РµРЅРёСЏ РѕСЃС‚Р°РІРёР»Рё РјРµРЅСЏ РІ РїРѕРєРѕРµ?
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_06"); //РћРЅ С‚Р°Рє СЃРєР°Р·Р°Р».
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_07"); //РћС‚Р»РёС‡РЅРѕ! РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ! РњРЅРµ РЅРµС‡РµРј С‚РµР±Рµ Р·Р°РїР»Р°С‚РёС‚СЊ... РҐРѕС‚СЏ РїРѕСЃС‚РѕР№...
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_08"); //РЇ РЅР°С€РµР» СЌС‚РѕС‚ СЃС‚СЂР°РЅРЅС‹Р№ РєР°РјРµРЅСЊ РЅР° РѕРґРЅРѕРј РёР· РѕСЃС‚СЂРѕРІРѕРІ Сѓ РїРѕР±РµСЂРµР¶СЊСЏ РҐРѕСЂРёРЅРёСЃР°.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_09"); //РќРµ РґСѓРјР°СЋ, С‡С‚Рѕ РѕРЅ РѕС‡РµРЅСЊ С†РµРЅРЅС‹Р№, РЅРѕ С‚Р°РєРѕР№ С‡РµР»РѕРІРµРє, РєР°Рє С‚С‹, РЅР°РІРµСЂРЅСЏРєР° РЅР°Р№РґРµС‚ РµРјСѓ РїСЂРёРјРµРЅРµРЅРёРµ.
 		
 	B_GiveInvItems (self, other, ItMi_Aquamarine, 1);		
 	
@@ -217,7 +217,7 @@ instance DIA_Addon_Farim_Landstreicher		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_Landstreicher_Condition;
 	information	 = 	DIA_Addon_Farim_Landstreicher_Info;
 
-	description	 = 	"Ты знаешь что-нибудь о пропавших людях?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…?";
 };
 
 func int DIA_Addon_Farim_Landstreicher_Condition ()
@@ -231,9 +231,9 @@ func int DIA_Addon_Farim_Landstreicher_Condition ()
 
 func void DIA_Addon_Farim_Landstreicher_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Farim_Landstreicher_15_01"); //Ты знаешь что-нибудь о пропавших людях?
-	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_02"); //Мой друг Вильям встречался с какими-то подозрительными типами. И к чему это его привело?
-	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_03"); //Однажды он просто не пришел на работу. Больше я его не видел.
+	AI_Output (other, self, "DIA_Addon_Farim_Landstreicher_15_01"); //РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…?
+	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_02"); //РњРѕР№ РґСЂСѓРі Р’РёР»СЊСЏРј РІСЃС‚СЂРµС‡Р°Р»СЃСЏ СЃ РєР°РєРёРјРё-С‚Рѕ РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅС‹РјРё С‚РёРїР°РјРё. Р Рє С‡РµРјСѓ СЌС‚Рѕ РµРіРѕ РїСЂРёРІРµР»Рѕ?
+	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_03"); //РћРґРЅР°Р¶РґС‹ РѕРЅ РїСЂРѕСЃС‚Рѕ РЅРµ РїСЂРёС€РµР» РЅР° СЂР°Р±РѕС‚Сѓ. Р‘РѕР»СЊС€Рµ СЏ РµРіРѕ РЅРµ РІРёРґРµР».
 	SCKnowsFarimAsWilliamsFriend = TRUE;
 };
 
@@ -248,7 +248,7 @@ instance DIA_Addon_Farim_William		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_William_Condition;
 	information	 = 	DIA_Addon_Farim_William_Info;
 
-	description	 = 	"Пропал твой приятель Вильям?";
+	description	 = 	"РџСЂРѕРїР°Р» С‚РІРѕР№ РїСЂРёСЏС‚РµР»СЊ Р’РёР»СЊСЏРј?";
 };
 
 func int DIA_Addon_Farim_William_Condition ()
@@ -262,72 +262,72 @@ func int DIA_Addon_Farim_William_Condition ()
 
 func void DIA_Addon_Farim_William_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_William_15_00"); //Пропал твой приятель Вильям?
-	AI_Output	(self, other, "DIA_Addon_Farim_William_11_01"); //Именно так. Он был рыбаком, но на мой взгляд он слишком зазнался.
-	AI_Output	(self, other, "DIA_Addon_Farim_William_11_02"); //Ему следовало держаться подальше от этой шайки.
+	AI_Output	(other, self, "DIA_Addon_Farim_William_15_00"); //РџСЂРѕРїР°Р» С‚РІРѕР№ РїСЂРёСЏС‚РµР»СЊ Р’РёР»СЊСЏРј?
+	AI_Output	(self, other, "DIA_Addon_Farim_William_11_01"); //РРјРµРЅРЅРѕ С‚Р°Рє. РћРЅ Р±С‹Р» СЂС‹Р±Р°РєРѕРј, РЅРѕ РЅР° РјРѕР№ РІР·РіР»СЏРґ РѕРЅ СЃР»РёС€РєРѕРј Р·Р°Р·РЅР°Р»СЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Farim_William_11_02"); //Р•РјСѓ СЃР»РµРґРѕРІР°Р»Рѕ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ СЌС‚РѕР№ С€Р°Р№РєРё.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
 	Log_AddEntry (TOPIC_Addon_MissingPeople, LogText_Addon_WilliamMissing); 
 	
 	Info_ClearChoices	(DIA_Addon_Farim_William);	
-	Info_AddChoice	(DIA_Addon_Farim_William, "Но что это были за люди?", DIA_Addon_Farim_William_typen );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Думаю, он еще появится.", DIA_Addon_Farim_William_auftauchen );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Чем он занимался?", DIA_Addon_Farim_William_WasGemacht );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Когда ты видел Вильяма в последний раз?", DIA_Addon_Farim_William_WannWeg );
+	Info_AddChoice	(DIA_Addon_Farim_William, "РќРѕ С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рё Р·Р° Р»СЋРґРё?", DIA_Addon_Farim_William_typen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Р”СѓРјР°СЋ, РѕРЅ РµС‰Рµ РїРѕСЏРІРёС‚СЃСЏ.", DIA_Addon_Farim_William_auftauchen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Р§РµРј РѕРЅ Р·Р°РЅРёРјР°Р»СЃСЏ?", DIA_Addon_Farim_William_WasGemacht );
+	Info_AddChoice	(DIA_Addon_Farim_William, "РљРѕРіРґР° С‚С‹ РІРёРґРµР» Р’РёР»СЊСЏРјР° РІ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·?", DIA_Addon_Farim_William_WannWeg );
 };
 func void DIA_Addon_Farim_William_WasGemacht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_WasGemacht_15_00"); //Чем он занимался?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_01"); //У него были какие-то темные делишки с этими жуликами.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_02"); //Думаю, он продавал им контрабанду.
-	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, weiЯ ich nicht, was er stattdessen fьr sie gemacht hat.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_WasGemacht_15_00"); //Р§РµРј РѕРЅ Р·Р°РЅРёРјР°Р»СЃСЏ?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_01"); //РЈ РЅРµРіРѕ Р±С‹Р»Рё РєР°РєРёРµ-С‚Рѕ С‚РµРјРЅС‹Рµ РґРµР»РёС€РєРё СЃ СЌС‚РёРјРё Р¶СѓР»РёРєР°РјРё.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_02"); //Р”СѓРјР°СЋ, РѕРЅ РїСЂРѕРґР°РІР°Р» РёРј РєРѕРЅС‚СЂР°Р±Р°РЅРґСѓ.
+	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, weiРЇ ich nicht, was er stattdessen fСЊr sie gemacht hat.
 };
 func void DIA_Addon_Farim_William_typen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_typen_15_00"); //Но что это были за люди?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_01"); //Я не знаю ни кто они, ни что им было нужно в Хоринисе.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_02"); //Могу только сказать тебе, где они встречались с Вильямом.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_03"); //Я один раз увидел его, когда рыбачил в заливе.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_typen_15_00"); //РќРѕ С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рё Р·Р° Р»СЋРґРё?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_01"); //РЇ РЅРµ Р·РЅР°СЋ РЅРё РєС‚Рѕ РѕРЅРё, РЅРё С‡С‚Рѕ РёРј Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ РІ РҐРѕСЂРёРЅРёСЃРµ.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_02"); //РњРѕРіСѓ С‚РѕР»СЊРєРѕ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РіРґРµ РѕРЅРё РІСЃС‚СЂРµС‡Р°Р»РёСЃСЊ СЃ Р’РёР»СЊСЏРјРѕРј.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_03"); //РЇ РѕРґРёРЅ СЂР°Р· СѓРІРёРґРµР» РµРіРѕ, РєРѕРіРґР° СЂС‹Р±Р°С‡РёР» РІ Р·Р°Р»РёРІРµ.
 	
-	Info_AddChoice	(DIA_Addon_Farim_William, "Где именно находится это место?", DIA_Addon_Farim_William_Wo );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Р“РґРµ РёРјРµРЅРЅРѕ РЅР°С…РѕРґРёС‚СЃСЏ СЌС‚Рѕ РјРµСЃС‚Рѕ?", DIA_Addon_Farim_William_Wo );
 };
 func void DIA_Addon_Farim_William_Wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Wo_15_00"); //Где именно находится это место?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_01"); //К северу отсюда есть небольшая бухта.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_02"); //Туда можно приплыть самому или на лодке.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_03"); //На берегу этой бухты расположен небольшой рыбацкий лагерь. Там-то я их и видел.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Wo_15_00"); //Р“РґРµ РёРјРµРЅРЅРѕ РЅР°С…РѕРґРёС‚СЃСЏ СЌС‚Рѕ РјРµСЃС‚Рѕ?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_01"); //Рљ СЃРµРІРµСЂСѓ РѕС‚СЃСЋРґР° РµСЃС‚СЊ РЅРµР±РѕР»СЊС€Р°СЏ Р±СѓС…С‚Р°.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_02"); //РўСѓРґР° РјРѕР¶РЅРѕ РїСЂРёРїР»С‹С‚СЊ СЃР°РјРѕРјСѓ РёР»Рё РЅР° Р»РѕРґРєРµ.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_03"); //РќР° Р±РµСЂРµРіСѓ СЌС‚РѕР№ Р±СѓС…С‚С‹ СЂР°СЃРїРѕР»РѕР¶РµРЅ РЅРµР±РѕР»СЊС€РѕР№ СЂС‹Р±Р°С†РєРёР№ Р»Р°РіРµСЂСЊ. РўР°Рј-С‚Рѕ СЏ РёС… Рё РІРёРґРµР».
 	self.flags = 0;	//Joly: hat seine Pflicht getan
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Рыбак Фарим пожаловался мне, что пропал его приятель Вильям. Фарим рассказал, что Вильям встречался с какими-то головорезами на пляже к северу от гавани."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Р С‹Р±Р°Рє Р¤Р°СЂРёРј РїРѕР¶Р°Р»РѕРІР°Р»СЃСЏ РјРЅРµ, С‡С‚Рѕ РїСЂРѕРїР°Р» РµРіРѕ РїСЂРёСЏС‚РµР»СЊ Р’РёР»СЊСЏРј. Р¤Р°СЂРёРј СЂР°СЃСЃРєР°Р·Р°Р», С‡С‚Рѕ Р’РёР»СЊСЏРј РІСЃС‚СЂРµС‡Р°Р»СЃСЏ СЃ РєР°РєРёРјРё-С‚Рѕ РіРѕР»РѕРІРѕСЂРµР·Р°РјРё РЅР° РїР»СЏР¶Рµ Рє СЃРµРІРµСЂСѓ РѕС‚ РіР°РІР°РЅРё."); 
 
-	Info_AddChoice	(DIA_Addon_Farim_William, "Я услышал все, что хотел знать.", DIA_Addon_Farim_William_Tschau );
+	Info_AddChoice	(DIA_Addon_Farim_William, "РЇ СѓСЃР»С‹С€Р°Р» РІСЃРµ, С‡С‚Рѕ С…РѕС‚РµР» Р·РЅР°С‚СЊ.", DIA_Addon_Farim_William_Tschau );
 };
 func void DIA_Addon_Farim_William_WannWeg ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_WannWeg_15_00"); //Когда ты видел Вильяма в последний раз?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_WannWeg_11_01"); //Несколько дней назад.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_WannWeg_15_00"); //РљРѕРіРґР° С‚С‹ РІРёРґРµР» Р’РёР»СЊСЏРјР° РІ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_WannWeg_11_01"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ.
 
-	Info_AddChoice	(DIA_Addon_Farim_William, "Может быть, он просто ушел в море рыбачить?", DIA_Addon_Farim_William_Fischen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ РїСЂРѕСЃС‚Рѕ СѓС€РµР» РІ РјРѕСЂРµ СЂС‹Р±Р°С‡РёС‚СЊ?", DIA_Addon_Farim_William_Fischen );
 };
 func void DIA_Addon_Farim_William_Fischen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Fischen_15_00"); //Может быть, он просто ушел в море рыбачить?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Fischen_11_01"); //Не похоже. Его лодка стоит на якоре в гавани.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Fischen_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ РїСЂРѕСЃС‚Рѕ СѓС€РµР» РІ РјРѕСЂРµ СЂС‹Р±Р°С‡РёС‚СЊ?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Fischen_11_01"); //РќРµ РїРѕС…РѕР¶Рµ. Р•РіРѕ Р»РѕРґРєР° СЃС‚РѕРёС‚ РЅР° СЏРєРѕСЂРµ РІ РіР°РІР°РЅРё.
 };
 func void DIA_Addon_Farim_William_auftauchen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_auftauchen_15_00"); //Думаю, он еще появится.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_01"); //Вряд ли. Его не было слишком долго.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_02"); //Боюсь, через некоторое время его тело прибьет к берегу волнами.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_auftauchen_15_00"); //Р”СѓРјР°СЋ, РѕРЅ РµС‰Рµ РїРѕСЏРІРёС‚СЃСЏ.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_01"); //Р’СЂСЏРґ Р»Рё. Р•РіРѕ РЅРµ Р±С‹Р»Рѕ СЃР»РёС€РєРѕРј РґРѕР»РіРѕ.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_02"); //Р‘РѕСЋСЃСЊ, С‡РµСЂРµР· РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РµРіРѕ С‚РµР»Рѕ РїСЂРёР±СЊРµС‚ Рє Р±РµСЂРµРіСѓ РІРѕР»РЅР°РјРё.
 };
 func void DIA_Addon_Farim_William_Tschau ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Tschau_15_00"); //Я услышал все, что хотел знать.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Tschau_11_01"); //Тебе не стоит беспокоиться. Не думаю, что ты его найдешь.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Tschau_15_00"); //РЇ СѓСЃР»С‹С€Р°Р» РІСЃРµ, С‡С‚Рѕ С…РѕС‚РµР» Р·РЅР°С‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Tschau_11_01"); //РўРµР±Рµ РЅРµ СЃС‚РѕРёС‚ Р±РµСЃРїРѕРєРѕРёС‚СЊСЃСЏ. РќРµ РґСѓРјР°СЋ, С‡С‚Рѕ С‚С‹ РµРіРѕ РЅР°Р№РґРµС€СЊ.
 	Info_ClearChoices	(DIA_Addon_Farim_William);	
 };
 
@@ -342,7 +342,7 @@ instance DIA_Addon_Farim_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Farim_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как клюет?";
+	description	 = 	"РљР°Рє РєР»СЋРµС‚?";
 };
 
 func int DIA_Addon_Farim_Perm_Condition ()
@@ -355,15 +355,15 @@ func int DIA_Addon_Farim_Perm_Condition ()
 
 func void DIA_Addon_Farim_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_Perm_15_00"); //Как клюет?
+	AI_Output	(other, self, "DIA_Addon_Farim_Perm_15_00"); //РљР°Рє РєР»СЋРµС‚?
 
 	if (Farim_PissedOff == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_01"); //Прекрати изображать интерес.
+		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_01"); //РџСЂРµРєСЂР°С‚Рё РёР·РѕР±СЂР°Р¶Р°С‚СЊ РёРЅС‚РµСЂРµСЃ.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_02"); //Бывало и получше. Выжить сейчас сложно, а вот погибнуть - проще простого.
+		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_02"); //Р‘С‹РІР°Р»Рѕ Рё РїРѕР»СѓС‡С€Рµ. Р’С‹Р¶РёС‚СЊ СЃРµР№С‡Р°СЃ СЃР»РѕР¶РЅРѕ, Р° РІРѕС‚ РїРѕРіРёР±РЅСѓС‚СЊ - РїСЂРѕС‰Рµ РїСЂРѕСЃС‚РѕРіРѕ.
 	};
 };
 
@@ -394,12 +394,12 @@ func int DIA_Addon_Farim_WilliamReport_Condition ()
 
 func void DIA_Addon_Farim_WilliamReport_Info ()
 {
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_01"); //А, это снова ты!
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_02"); //Есть какие-нибудь новости о Вильяме?
-	AI_Output (other, self, "DIA_Addon_Farim_Add_15_02"); //Он мертв.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_03"); //(вздыхает) Так я и думал.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_04"); //Что ж, спасибо, что рассказал.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_05"); //Пойду-ка я в кабак и пропью его долю из нашего последнего улова. Он бы хотел, чтобы я так поступил...
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_01"); //Рђ, СЌС‚Рѕ СЃРЅРѕРІР° С‚С‹!
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_02"); //Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РЅРѕРІРѕСЃС‚Рё Рѕ Р’РёР»СЊСЏРјРµ?
+	AI_Output (other, self, "DIA_Addon_Farim_Add_15_02"); //РћРЅ РјРµСЂС‚РІ.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_03"); //(РІР·РґС‹С…Р°РµС‚) РўР°Рє СЏ Рё РґСѓРјР°Р».
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_04"); //Р§С‚Рѕ Р¶, СЃРїР°СЃРёР±Рѕ, С‡С‚Рѕ СЂР°СЃСЃРєР°Р·Р°Р».
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_05"); //РџРѕР№РґСѓ-РєР° СЏ РІ РєР°Р±Р°Рє Рё РїСЂРѕРїСЊСЋ РµРіРѕ РґРѕР»СЋ РёР· РЅР°С€РµРіРѕ РїРѕСЃР»РµРґРЅРµРіРѕ СѓР»РѕРІР°. РћРЅ Р±С‹ С…РѕС‚РµР», С‡С‚РѕР±С‹ СЏ С‚Р°Рє РїРѕСЃС‚СѓРїРёР»...
 };
 
 

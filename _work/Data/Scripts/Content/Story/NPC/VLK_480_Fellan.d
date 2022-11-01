@@ -2,7 +2,7 @@
 instance VLK_480_Fellan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Τελλΰν"; 
+	name 		= "Π¤ΠµΠ»Π»Π°Π½"; 
 	guild 		= GIL_VLK;
 	id 			= 480;
 	voice 		= 6;

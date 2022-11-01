@@ -31,7 +31,7 @@ instance DIA_Wulfgar_Hallo		(C_INFO)
 	condition	 = 	DIA_Wulfgar_Hallo_Condition;
 	information	 = 	DIA_Wulfgar_Hallo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Каковы твои обязанности?";
+	description	 = 	"РљР°РєРѕРІС‹ С‚РІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё?";
 };
 
 func int DIA_Wulfgar_Hallo_Condition ()
@@ -41,9 +41,9 @@ func int DIA_Wulfgar_Hallo_Condition ()
 
 func void DIA_Wulfgar_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //Каковы твои обязанности?
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //(презрительно) Эти олухи машут мечами, как крестьяне.
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //(убежденно) Но когда они пройдут обучение под моим руководством, каждый из них станет серьезным воином.
+	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //РљР°РєРѕРІС‹ С‚РІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё?
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //(РїСЂРµР·СЂРёС‚РµР»СЊРЅРѕ) Р­С‚Рё РѕР»СѓС…Рё РјР°С€СѓС‚ РјРµС‡Р°РјРё, РєР°Рє РєСЂРµСЃС‚СЊСЏРЅРµ.
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //(СѓР±РµР¶РґРµРЅРЅРѕ) РќРѕ РєРѕРіРґР° РѕРЅРё РїСЂРѕР№РґСѓС‚ РѕР±СѓС‡РµРЅРёРµ РїРѕРґ РјРѕРёРј СЂСѓРєРѕРІРѕРґСЃС‚РІРѕРј, РєР°Р¶РґС‹Р№ РёР· РЅРёС… СЃС‚Р°РЅРµС‚ СЃРµСЂСЊРµР·РЅС‹Рј РІРѕРёРЅРѕРј.
 };
 
 // *************************************************
@@ -56,7 +56,7 @@ instance DIA_Wulfgar_WannaJoin		(C_INFO)
 	condition	 = 	DIA_Wulfgar_WannaJoin_Condition;
 	information	 = 	DIA_Wulfgar_WannaJoin_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я хочу вступить в ополчение!";
+	description	 = 	"РЇ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ!";
 };
 
 func int DIA_Wulfgar_WannaJoin_Condition ()
@@ -70,18 +70,18 @@ func int DIA_Wulfgar_WannaJoin_Condition ()
 
 func void DIA_Wulfgar_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_00"); //Я хочу вступить в ополчение!
-	AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_01"); //Да? А ты гражданин этого города?
+	AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ!
+	AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_01"); //Р”Р°? Рђ С‚С‹ РіСЂР°Р¶РґР°РЅРёРЅ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°?
 	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_02"); //Нет.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //Тогда лорд Андрэ не примет тебя.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //Конечно, ты можешь поговорить с ним, но я не думаю, что он сделает для тебя исключение.
+		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_02"); //РќРµС‚.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //РўРѕРіРґР° Р»РѕСЂРґ РђРЅРґСЂСЌ РЅРµ РїСЂРёРјРµС‚ С‚РµР±СЏ.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //РљРѕРЅРµС‡РЅРѕ, С‚С‹ РјРѕР¶РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј, РЅРѕ СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ РѕРЅ СЃРґРµР»Р°РµС‚ РґР»СЏ С‚РµР±СЏ РёСЃРєР»СЋС‡РµРЅРёРµ.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_05"); //Да.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_06"); //Тогда поговори с лордом Андрэ. Он решает, кого можно принять, а кого нет.
+		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_05"); //Р”Р°.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_06"); //РўРѕРіРґР° РїРѕРіРѕРІРѕСЂРё СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂСЌ. РћРЅ СЂРµС€Р°РµС‚, РєРѕРіРѕ РјРѕР¶РЅРѕ РїСЂРёРЅСЏС‚СЊ, Р° РєРѕРіРѕ РЅРµС‚.
 	};
 };
 
@@ -95,7 +95,7 @@ instance DIA_Wulfgar_AboutMiliz		(C_INFO)
 	condition	 = 	DIA_Wulfgar_AboutMiliz_Condition;
 	information	 = 	DIA_Wulfgar_AboutMiliz_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Каково это, служить в ополчении?";
+	description	 = 	"РљР°РєРѕРІРѕ СЌС‚Рѕ, СЃР»СѓР¶РёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРё?";
 };
 
 func int DIA_Wulfgar_AboutMiliz_Condition ()
@@ -109,12 +109,12 @@ func int DIA_Wulfgar_AboutMiliz_Condition ()
 
 func void DIA_Wulfgar_AboutMiliz_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //Каково это, служить в ополчении?
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_01"); //Сейчас нами командует лорд Андрэ.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_02"); //Раньше ополчение подчинялось губернатору. (смеется) Он понятия не имел, чем мы занимались здесь.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //Но лорд Андрэ знает свое дело. Он заботится о своих людях.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //Каждый, кто вступает в ополчение, получает неплохие доспехи и хорошее оружие.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_05"); //А если ты выполняешь свою работу хорошо, то можешь рассчитывать на поощрение. Лорд Андрэ дает награду за каждого пойманного преступника.
+	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //РљР°РєРѕРІРѕ СЌС‚Рѕ, СЃР»СѓР¶РёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРё?
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_01"); //РЎРµР№С‡Р°СЃ РЅР°РјРё РєРѕРјР°РЅРґСѓРµС‚ Р»РѕСЂРґ РђРЅРґСЂСЌ.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_02"); //Р Р°РЅСЊС€Рµ РѕРїРѕР»С‡РµРЅРёРµ РїРѕРґС‡РёРЅСЏР»РѕСЃСЊ РіСѓР±РµСЂРЅР°С‚РѕСЂСѓ. (СЃРјРµРµС‚СЃСЏ) РћРЅ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµР», С‡РµРј РјС‹ Р·Р°РЅРёРјР°Р»РёСЃСЊ Р·РґРµСЃСЊ.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //РќРѕ Р»РѕСЂРґ РђРЅРґСЂСЌ Р·РЅР°РµС‚ СЃРІРѕРµ РґРµР»Рѕ. РћРЅ Р·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ СЃРІРѕРёС… Р»СЋРґСЏС….
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //РљР°Р¶РґС‹Р№, РєС‚Рѕ РІСЃС‚СѓРїР°РµС‚ РІ РѕРїРѕР»С‡РµРЅРёРµ, РїРѕР»СѓС‡Р°РµС‚ РЅРµРїР»РѕС…РёРµ РґРѕСЃРїРµС…Рё Рё С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_05"); //Рђ РµСЃР»Рё С‚С‹ РІС‹РїРѕР»РЅСЏРµС€СЊ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ С…РѕСЂРѕС€Рѕ, С‚Рѕ РјРѕР¶РµС€СЊ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РїРѕРѕС‰СЂРµРЅРёРµ. Р›РѕСЂРґ РђРЅРґСЂСЌ РґР°РµС‚ РЅР°РіСЂР°РґСѓ Р·Р° РєР°Р¶РґРѕРіРѕ РїРѕР№РјР°РЅРЅРѕРіРѕ РїСЂРµСЃС‚СѓРїРЅРёРєР°.
 };
 
 // *************************************************
@@ -127,7 +127,7 @@ instance DIA_Wulfgar_CanYouTrain		(C_INFO)
 	condition	 = 	DIA_Wulfgar_CanYouTrain_Condition;
 	information	 = 	DIA_Wulfgar_CanYouTrain_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты можешь обучить меня сражению на мечах?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ СЃСЂР°Р¶РµРЅРёСЋ РЅР° РјРµС‡Р°С…?";
 };
 
 func int DIA_Wulfgar_CanYouTrain_Condition ()
@@ -141,21 +141,21 @@ func int DIA_Wulfgar_CanYouTrain_Condition ()
 
 func void DIA_Wulfgar_CanYouTrain_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_00"); //Ты можешь обучить меня сражению на мечах?
-	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //По приказу лорда Андрэ мы тренируем всех, кто в состоянии защищать город.
+	AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ СЃСЂР°Р¶РµРЅРёСЋ РЅР° РјРµС‡Р°С…?
+	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //РџРѕ РїСЂРёРєР°Р·Сѓ Р»РѕСЂРґР° РђРЅРґСЂСЌ РјС‹ С‚СЂРµРЅРёСЂСѓРµРј РІСЃРµС…, РєС‚Рѕ РІ СЃРѕСЃС‚РѕСЏРЅРёРё Р·Р°С‰РёС‰Р°С‚СЊ РіРѕСЂРѕРґ.
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_02"); //Впрочем, это не касается наемников. Забудь об этом.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_02"); //Р’РїСЂРѕС‡РµРј, СЌС‚Рѕ РЅРµ РєР°СЃР°РµС‚СЃСЏ РЅР°РµРјРЅРёРєРѕРІ. Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //Но это касается только боевого обучения. Все остальные виды обучения предназначены только для ополчения.
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_04"); //А ты меч-то можешь удержать?
-		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Думаю, что да...
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_06"); //(вздыхает) Хорошо, ты можешь приступать, когда пожелаешь.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //РќРѕ СЌС‚Рѕ РєР°СЃР°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р±РѕРµРІРѕРіРѕ РѕР±СѓС‡РµРЅРёСЏ. Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ РІРёРґС‹ РѕР±СѓС‡РµРЅРёСЏ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅС‹ С‚РѕР»СЊРєРѕ РґР»СЏ РѕРїРѕР»С‡РµРЅРёСЏ.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_04"); //Рђ С‚С‹ РјРµС‡-С‚Рѕ РјРѕР¶РµС€СЊ СѓРґРµСЂР¶Р°С‚СЊ?
+		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Р”СѓРјР°СЋ, С‡С‚Рѕ РґР°...
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_06"); //(РІР·РґС‹С…Р°РµС‚) РҐРѕСЂРѕС€Рѕ, С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёСЃС‚СѓРїР°С‚СЊ, РєРѕРіРґР° РїРѕР¶РµР»Р°РµС€СЊ.
 		Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-		B_LogEntry (Topic_CityTeacher, "Вульфгар, городской гвардеец, может обучить меня искусству обращения с одноручным и двуручным оружием.");
+		B_LogEntry (Topic_CityTeacher, "Р’СѓР»СЊС„РіР°СЂ, РіРѕСЂРѕРґСЃРєРѕР№ РіРІР°СЂРґРµРµС†, РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ РѕР±СЂР°С‰РµРЅРёСЏ СЃ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј Рё РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 		Wulfgar_Teach1H = TRUE;	
 	};
 };
@@ -170,7 +170,7 @@ instance DIA_Wulfgar_Advantage		(C_INFO)
 	condition	 = 	DIA_Wulfgar_Advantage_Condition;
 	information	 = 	DIA_Wulfgar_Advantage_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Каковы преимущества двуручного оружия?";
+	description	 = 	"РљР°РєРѕРІС‹ РїСЂРµРёРјСѓС‰РµСЃС‚РІР° РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ?";
 };
 
 func int DIA_Wulfgar_Advantage_Condition ()
@@ -184,9 +184,9 @@ func int DIA_Wulfgar_Advantage_Condition ()
 
 func void DIA_Wulfgar_Advantage_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //Каковы преимущества двуручного оружия?
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //Это просто. С одноручным оружием ты быстрее. Это может стать значительным преимуществом в бою.
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //Двуручное оружие более тяжеловесно и замедляет тебя. При сражении им нужно просчитывать свои действия на шаг вперед, но оно наносит больший урон.
+	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //РљР°РєРѕРІС‹ РїСЂРµРёРјСѓС‰РµСЃС‚РІР° РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ?
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ. РЎ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј С‚С‹ Р±С‹СЃС‚СЂРµРµ. Р­С‚Рѕ РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ Р·РЅР°С‡РёС‚РµР»СЊРЅС‹Рј РїСЂРµРёРјСѓС‰РµСЃС‚РІРѕРј РІ Р±РѕСЋ.
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //Р”РІСѓСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ Р±РѕР»РµРµ С‚СЏР¶РµР»РѕРІРµСЃРЅРѕ Рё Р·Р°РјРµРґР»СЏРµС‚ С‚РµР±СЏ. РџСЂРё СЃСЂР°Р¶РµРЅРёРё РёРј РЅСѓР¶РЅРѕ РїСЂРѕСЃС‡РёС‚С‹РІР°С‚СЊ СЃРІРѕРё РґРµР№СЃС‚РІРёСЏ РЅР° С€Р°Рі РІРїРµСЂРµРґ, РЅРѕ РѕРЅРѕ РЅР°РЅРѕСЃРёС‚ Р±РѕР»СЊС€РёР№ СѓСЂРѕРЅ.
 };
 
 // *************************************************
@@ -199,7 +199,7 @@ instance DIA_Wulfgar_HowToBegin	(C_INFO)
 	condition	 = 	DIA_Wulfgar_HowToBegin_Condition;
 	information	 = 	DIA_Wulfgar_HowToBegin_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"С чего мне лучше начать? С одноручного или двуручного оружия?";
+	description	 = 	"РЎ С‡РµРіРѕ РјРЅРµ Р»СѓС‡С€Рµ РЅР°С‡Р°С‚СЊ? РЎ РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ РёР»Рё РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ?";
 };
 
 func int DIA_Wulfgar_HowToBegin_Condition ()
@@ -213,13 +213,13 @@ func int DIA_Wulfgar_HowToBegin_Condition ()
 
 func void DIA_Wulfgar_HowToBegin_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_HowToBegin_15_00"); //С чего мне лучше начать? С одноручного или двуручного оружия?
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_01"); //Выбирай сам.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_02"); //Но даже если ты специализируешься только в одном типе оружия, со временем ты начнешь автоматически изучать и другой тип.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //Если, например, ты хорошо сражаешься одноручным оружием, но все еще новичок в использовании двуручного...
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...твой навык владения двуручным оружием повышается каждый раз, когда ты тренируешься с одноручным...
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //Правда, в этом случае обучение изматывает сильнее, чем когда ты тренируешься с различным типом оружия по очереди.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_06"); //Тебе нужно просто начать - и ты сам поймешь, о чем я говорю.
+	AI_Output (other, self, "DIA_Wulfgar_HowToBegin_15_00"); //РЎ С‡РµРіРѕ РјРЅРµ Р»СѓС‡С€Рµ РЅР°С‡Р°С‚СЊ? РЎ РѕРґРЅРѕСЂСѓС‡РЅРѕРіРѕ РёР»Рё РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ?
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_01"); //Р’С‹Р±РёСЂР°Р№ СЃР°Рј.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_02"); //РќРѕ РґР°Р¶Рµ РµСЃР»Рё С‚С‹ СЃРїРµС†РёР°Р»РёР·РёСЂСѓРµС€СЊСЃСЏ С‚РѕР»СЊРєРѕ РІ РѕРґРЅРѕРј С‚РёРїРµ РѕСЂСѓР¶РёСЏ, СЃРѕ РІСЂРµРјРµРЅРµРј С‚С‹ РЅР°С‡РЅРµС€СЊ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РёР·СѓС‡Р°С‚СЊ Рё РґСЂСѓРіРѕР№ С‚РёРї.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //Р•СЃР»Рё, РЅР°РїСЂРёРјРµСЂ, С‚С‹ С…РѕСЂРѕС€Рѕ СЃСЂР°Р¶Р°РµС€СЊСЃСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј, РЅРѕ РІСЃРµ РµС‰Рµ РЅРѕРІРёС‡РѕРє РІ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё РґРІСѓСЂСѓС‡РЅРѕРіРѕ...
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...С‚РІРѕР№ РЅР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј РїРѕРІС‹С€Р°РµС‚СЃСЏ РєР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° С‚С‹ С‚СЂРµРЅРёСЂСѓРµС€СЊСЃСЏ СЃ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј...
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //РџСЂР°РІРґР°, РІ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ РѕР±СѓС‡РµРЅРёРµ РёР·РјР°С‚С‹РІР°РµС‚ СЃРёР»СЊРЅРµРµ, С‡РµРј РєРѕРіРґР° С‚С‹ С‚СЂРµРЅРёСЂСѓРµС€СЊСЃСЏ СЃ СЂР°Р·Р»РёС‡РЅС‹Рј С‚РёРїРѕРј РѕСЂСѓР¶РёСЏ РїРѕ РѕС‡РµСЂРµРґРё.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_06"); //РўРµР±Рµ РЅСѓР¶РЅРѕ РїСЂРѕСЃС‚Рѕ РЅР°С‡Р°С‚СЊ - Рё С‚С‹ СЃР°Рј РїРѕР№РјРµС€СЊ, Рѕ С‡РµРј СЏ РіРѕРІРѕСЂСЋ.
 };
 
 // *************************************************
@@ -232,7 +232,7 @@ INSTANCE DIA_Wulfgar_Teach(C_INFO)
 	condition	= DIA_Wulfgar_Teach_Condition;
 	information	= DIA_Wulfgar_Teach_Info;
 	permanent	= TRUE;
-	description = "Начнем обучение.";
+	description = "РќР°С‡РЅРµРј РѕР±СѓС‡РµРЅРёРµ.";
 };                       
 
 FUNC INT DIA_Wulfgar_Teach_Condition()
@@ -246,18 +246,18 @@ FUNC INT DIA_Wulfgar_Teach_Condition()
  
 FUNC VOID DIA_Wulfgar_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Wulfgar_Teach_15_00"); //Начнем обучение.
+	AI_Output (other,self ,"DIA_Wulfgar_Teach_15_00"); //РќР°С‡РЅРµРј РѕР±СѓС‡РµРЅРёРµ.
 	
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Wulfgar_Add_04_00"); //Я не обучаю наемников!
+		AI_Output (self, other, "DIA_Wulfgar_Add_04_00"); //РЇ РЅРµ РѕР±СѓС‡Р°СЋ РЅР°РµРјРЅРёРєРѕРІ!
 	}
 	else
 	{
 		if (other.guild == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Wulfgar_Add_04_01"); //Конечно, уважаемый.
+			AI_Output (self, other, "DIA_Wulfgar_Add_04_01"); //РљРѕРЅРµС‡РЅРѕ, СѓРІР°Р¶Р°РµРјС‹Р№.
 		};
 		
 		Info_ClearChoices 	(DIA_Wulfgar_Teach);
@@ -348,11 +348,11 @@ FUNC INT DIA_Wulfgar_AlsMil_Condition()
  
 FUNC VOID DIA_Wulfgar_AlsMil_Info()
 {	
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //Значит, лорд Андрэ принял тебя!
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //Я надеюсь, ты будешь регулярно тренироваться здесь.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Руга научит тебя пользоваться арбалетом, а Мортис поможет тебе стать сильнее.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Но самое важное - это научиться правильно держать свой меч.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //Я еще сделаю из тебя отличного воина!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //Р—РЅР°С‡РёС‚, Р»РѕСЂРґ РђРЅРґСЂСЌ РїСЂРёРЅСЏР» С‚РµР±СЏ!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //РЇ РЅР°РґРµСЋСЃСЊ, С‚С‹ Р±СѓРґРµС€СЊ СЂРµРіСѓР»СЏСЂРЅРѕ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Р СѓРіР° РЅР°СѓС‡РёС‚ С‚РµР±СЏ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ Р°СЂР±Р°Р»РµС‚РѕРј, Р° РњРѕСЂС‚РёСЃ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //РќРѕ СЃР°РјРѕРµ РІР°Р¶РЅРѕРµ - СЌС‚Рѕ РЅР°СѓС‡РёС‚СЊСЃСЏ РїСЂР°РІРёР»СЊРЅРѕ РґРµСЂР¶Р°С‚СЊ СЃРІРѕР№ РјРµС‡.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //РЇ РµС‰Рµ СЃРґРµР»Р°СЋ РёР· С‚РµР±СЏ РѕС‚Р»РёС‡РЅРѕРіРѕ РІРѕРёРЅР°!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -378,9 +378,9 @@ func int DIA_Wulfgar_Bonus_Condition ()
 };
 func void DIA_Wulfgar_Bonus_Info ()
 {
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //Ранняя пташка? Я обычно один в это время дня. Но раз уж ты здесь, то можно потренироваться.
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //Будь внимательным. Ты можешь обмануть некоторых противников, если уклонишься от удара, а затем атакуешь в правильный момент.
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //Помни об этом в своем следующем бою!
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //Р Р°РЅРЅСЏСЏ РїС‚Р°С€РєР°? РЇ РѕР±С‹С‡РЅРѕ РѕРґРёРЅ РІ СЌС‚Рѕ РІСЂРµРјСЏ РґРЅСЏ. РќРѕ СЂР°Р· СѓР¶ С‚С‹ Р·РґРµСЃСЊ, С‚Рѕ РјРѕР¶РЅРѕ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //Р‘СѓРґСЊ РІРЅРёРјР°С‚РµР»СЊРЅС‹Рј. РўС‹ РјРѕР¶РµС€СЊ РѕР±РјР°РЅСѓС‚СЊ РЅРµРєРѕС‚РѕСЂС‹С… РїСЂРѕС‚РёРІРЅРёРєРѕРІ, РµСЃР»Рё СѓРєР»РѕРЅРёС€СЊСЃСЏ РѕС‚ СѓРґР°СЂР°, Р° Р·Р°С‚РµРј Р°С‚Р°РєСѓРµС€СЊ РІ РїСЂР°РІРёР»СЊРЅС‹Р№ РјРѕРјРµРЅС‚.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //РџРѕРјРЅРё РѕР± СЌС‚РѕРј РІ СЃРІРѕРµРј СЃР»РµРґСѓСЋС‰РµРј Р±РѕСЋ!
 	
 	B_RaiseFightTalent (other, NPC_TALENT_1H, 2);
 };

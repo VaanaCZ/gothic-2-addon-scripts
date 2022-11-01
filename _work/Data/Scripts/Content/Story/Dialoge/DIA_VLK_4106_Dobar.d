@@ -42,7 +42,7 @@ func int DIA_Dobar_HALLO_Condition ()
 func void DIA_Dobar_HALLO_Info ()
 {
 	
-	AI_Output (self, other, "DIA_Dobar_HALLO_08_00"); //(раздражительно) Что тебе нужно?
+	AI_Output (self, other, "DIA_Dobar_HALLO_08_00"); //(СЂР°Р·РґСЂР°Р¶РёС‚РµР»СЊРЅРѕ) Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ich verstehe mich auf's schmieden.
@@ -54,7 +54,7 @@ instance DIA_Dobar_Talent		(C_INFO)
 	condition	 = 	DIA_Dobar_Talent_Condition;
 	information	 = 	DIA_Dobar_Talent_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Я немного знаю кузнечное дело.";
+	description	 =  "РЇ РЅРµРјРЅРѕРіРѕ Р·РЅР°СЋ РєСѓР·РЅРµС‡РЅРѕРµ РґРµР»Рѕ.";
 };
 func int DIA_Dobar_Talent_Condition ()
 {	
@@ -65,8 +65,8 @@ func int DIA_Dobar_Talent_Condition ()
 };
 func void DIA_Dobar_Talent_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //Я немного знаю кузнечное дело.
-	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //Хорошо... и что?
+	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //РЇ РЅРµРјРЅРѕРіРѕ Р·РЅР°СЋ РєСѓР·РЅРµС‡РЅРѕРµ РґРµР»Рѕ.
+	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //РҐРѕСЂРѕС€Рѕ... Рё С‡С‚Рѕ?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Schmiede
@@ -78,7 +78,7 @@ instance DIA_Dobar_Schmiede		(C_INFO)
 	condition	 = 	DIA_Dobar_Schmiede_Condition;
 	information	 = 	DIA_Dobar_Schmiede_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Могу я воспользоваться твоей кузницей?";
+	description	 = 	"РњРѕРіСѓ СЏ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ С‚РІРѕРµР№ РєСѓР·РЅРёС†РµР№?";
 };
 
 func int DIA_Dobar_Schmiede_Condition ()
@@ -90,9 +90,9 @@ func int DIA_Dobar_Schmiede_Condition ()
 };
 func void DIA_Dobar_Schmiede_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Schmiede_15_00"); //Могу я воспользоваться твоей кузницей?
-	AI_Output (self, other, "DIA_Dobar_Schmiede_08_01"); //У меня много работы. Мы будем только мешать друг другу. Лучше дождись темноты.
-	AI_Output (self, other, "DIA_Dobar_Schmiede_08_02"); //Тогда Парлаф и я пойдем спать, и ты сможешь спокойно поработать.
+	AI_Output (other, self, "DIA_Dobar_Schmiede_15_00"); //РњРѕРіСѓ СЏ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ С‚РІРѕРµР№ РєСѓР·РЅРёС†РµР№?
+	AI_Output (self, other, "DIA_Dobar_Schmiede_08_01"); //РЈ РјРµРЅСЏ РјРЅРѕРіРѕ СЂР°Р±РѕС‚С‹. РњС‹ Р±СѓРґРµРј С‚РѕР»СЊРєРѕ РјРµС€Р°С‚СЊ РґСЂСѓРі РґСЂСѓРіСѓ. Р›СѓС‡С€Рµ РґРѕР¶РґРёСЃСЊ С‚РµРјРЅРѕС‚С‹.
+	AI_Output (self, other, "DIA_Dobar_Schmiede_08_02"); //РўРѕРіРґР° РџР°СЂР»Р°С„ Рё СЏ РїРѕР№РґРµРј СЃРїР°С‚СЊ, Рё С‚С‹ СЃРјРѕР¶РµС€СЊ СЃРїРѕРєРѕР№РЅРѕ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info beibringen
@@ -104,7 +104,7 @@ instance DIA_Dobar_beibringen		(C_INFO)
 	condition	 = 	DIA_Dobar_beibringen_Condition;
 	information	 = 	DIA_Dobar_beibringen_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Ты можешь научить меня чему-нибудь?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 
 func int DIA_Dobar_beibringen_Condition ()
@@ -116,13 +116,13 @@ func int DIA_Dobar_beibringen_Condition ()
 };
 func void DIA_Dobar_beibringen_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //Ты можешь научить меня чему-нибудь?
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //Ты уже знаешь основы. Я могу показать тебе, как улучшить твою работу.
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //И ты сможешь ковать более совершенное оружие.
+	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РѕСЃРЅРѕРІС‹. РЇ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє СѓР»СѓС‡С€РёС‚СЊ С‚РІРѕСЋ СЂР°Р±РѕС‚Сѓ.
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //Р С‚С‹ СЃРјРѕР¶РµС€СЊ РєРѕРІР°С‚СЊ Р±РѕР»РµРµ СЃРѕРІРµСЂС€РµРЅРЅРѕРµ РѕСЂСѓР¶РёРµ.
 	
 	Dobar_Learnsmith = TRUE;
 	Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher_OC, "Добар может обучить меня ковать хорошее оружие.");
+	B_LogEntry		(TOPIC_Teacher_OC, "Р”РѕР±Р°СЂ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РєРѕРІР°С‚СЊ С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Teach
@@ -133,7 +133,7 @@ instance DIA_Dobar_Teach		(C_INFO)
 	nr			 = 	3;
 	condition	 = 	DIA_Dobar_Teach_Condition;
 	information	 = 	DIA_Dobar_Teach_Info;
-	description	 = 	B_BuildLearnString ("Покажи мне, как выковать хороший меч!", B_GetLearnCostTalent (other, NPC_TALENT_SMITH, WEAPON_1H_Special_01));
+	description	 = 	B_BuildLearnString ("РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє РІС‹РєРѕРІР°С‚СЊ С…РѕСЂРѕС€РёР№ РјРµС‡!", B_GetLearnCostTalent (other, NPC_TALENT_SMITH, WEAPON_1H_Special_01));
 	permanent	 =  TRUE;
 };
 func int DIA_Dobar_Teach_Condition ()
@@ -146,13 +146,13 @@ func int DIA_Dobar_Teach_Condition ()
 };
 func void DIA_Dobar_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Teach_15_00"); //Покажи мне, как выковать хороший меч!
+	AI_Output (other, self, "DIA_Dobar_Teach_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє РІС‹РєРѕРІР°С‚СЊ С…РѕСЂРѕС€РёР№ РјРµС‡!
 	
 	if B_TeachPlayerTalentSmith	(self, hero, WEAPON_1H_Special_01) 
 	{	
-		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //Разогрей сталь, чтобы она равномерно светилась по всей длине, без этого хороший меч не выковать.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //Если ты будешь помнить это, сделанные тобой клинки будут прочнее и острее.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //Это все, что тебе нужно знать. Если тебе нужна сырая сталь, поговори с Энгором.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //Р Р°Р·РѕРіСЂРµР№ СЃС‚Р°Р»СЊ, С‡С‚РѕР±С‹ РѕРЅР° СЂР°РІРЅРѕРјРµСЂРЅРѕ СЃРІРµС‚РёР»Р°СЃСЊ РїРѕ РІСЃРµР№ РґР»РёРЅРµ, Р±РµР· СЌС‚РѕРіРѕ С…РѕСЂРѕС€РёР№ РјРµС‡ РЅРµ РІС‹РєРѕРІР°С‚СЊ.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РїРѕРјРЅРёС‚СЊ СЌС‚Рѕ, СЃРґРµР»Р°РЅРЅС‹Рµ С‚РѕР±РѕР№ РєР»РёРЅРєРё Р±СѓРґСѓС‚ РїСЂРѕС‡РЅРµРµ Рё РѕСЃС‚СЂРµРµ.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ. Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅР° СЃС‹СЂР°СЏ СЃС‚Р°Р»СЊ, РїРѕРіРѕРІРѕСЂРё СЃ Р­РЅРіРѕСЂРѕРј.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ instance DIA_Dobar_Waffe		(C_INFO)
 	condition	 = 	DIA_Dobar_Waffe_Condition;
 	information	 = 	DIA_Dobar_Waffe_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты можешь сделать оружие для меня?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РѕСЂСѓР¶РёРµ РґР»СЏ РјРµРЅСЏ?";
 };
 func int DIA_Dobar_Waffe_Condition ()
 {
@@ -173,11 +173,11 @@ func int DIA_Dobar_Waffe_Condition ()
 };
 func void DIA_Dobar_Waffe_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //Ты можешь сделать оружие для меня?
-	AI_Output (self, other, "DIA_Dobar_Waffe_08_01"); //У меня нет времени на это. Тандор распоряжается всем оружием - я только кую его, а Парлаф затачивает.
+	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РѕСЂСѓР¶РёРµ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Dobar_Waffe_08_01"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ. РўР°РЅРґРѕСЂ СЂР°СЃРїРѕСЂСЏР¶Р°РµС‚СЃСЏ РІСЃРµРј РѕСЂСѓР¶РёРµРј - СЏ С‚РѕР»СЊРєРѕ РєСѓСЋ РµРіРѕ, Р° РџР°СЂР»Р°С„ Р·Р°С‚Р°С‡РёРІР°РµС‚.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Тандор продает оружие в замке.");
+	B_LogEntry (TOPIC_Trader_OC,"РўР°РЅРґРѕСЂ РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ РІ Р·Р°РјРєРµ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm
@@ -189,7 +189,7 @@ instance DIA_Dobar_NEWS		(C_INFO)
 	condition	 = 	DIA_Dobar_NEWS_Condition;
 	information	 = 	DIA_Dobar_NEWS_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как работа?";
+	description	 = 	"РљР°Рє СЂР°Р±РѕС‚Р°?";
 };
 func int DIA_Dobar_NEWS_Condition ()
 {
@@ -199,24 +199,24 @@ func void DIA_Dobar_NEWS_Info ()
 {
 	
 	
-	AI_Output (other, self, "DIA_Dobar_NEWS_15_00"); //Как работа?
+	AI_Output (other, self, "DIA_Dobar_NEWS_15_00"); //РљР°Рє СЂР°Р±РѕС‚Р°?
 	
 	if (Dobar_einmalig == FALSE)
 	{
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_01"); //Я кую оружие для рыцарей замка. С тех пор, как мы прибыли сюда, я не отхожу от кузницы.
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_02"); //Это оружие нам очень пригодится. Мы еще покажем этим проклятым оркам!
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_01"); //РЇ РєСѓСЋ РѕСЂСѓР¶РёРµ РґР»СЏ СЂС‹С†Р°СЂРµР№ Р·Р°РјРєР°. РЎ С‚РµС… РїРѕСЂ, РєР°Рє РјС‹ РїСЂРёР±С‹Р»Рё СЃСЋРґР°, СЏ РЅРµ РѕС‚С…РѕР¶Сѓ РѕС‚ РєСѓР·РЅРёС†С‹.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_02"); //Р­С‚Рѕ РѕСЂСѓР¶РёРµ РЅР°Рј РѕС‡РµРЅСЊ РїСЂРёРіРѕРґРёС‚СЃСЏ. РњС‹ РµС‰Рµ РїРѕРєР°Р¶РµРј СЌС‚РёРј РїСЂРѕРєР»СЏС‚С‹Рј РѕСЂРєР°Рј!
 
 		if ((Npc_IsDead(Parlaf)) == FALSE)
 		{
 			B_TurnToNpc (self, Parlaf);
-			AI_Output (self, other, "DIA_Dobar_NEWS_08_03"); //(зовет) Эй, Парлаф - затачивай эти мечи получше - орки чертовски сильные противники!
+			AI_Output (self, other, "DIA_Dobar_NEWS_08_03"); //(Р·РѕРІРµС‚) Р­Р№, РџР°СЂР»Р°С„ - Р·Р°С‚Р°С‡РёРІР°Р№ СЌС‚Рё РјРµС‡Рё РїРѕР»СѓС‡С€Рµ - РѕСЂРєРё С‡РµСЂС‚РѕРІСЃРєРё СЃРёР»СЊРЅС‹Рµ РїСЂРѕС‚РёРІРЅРёРєРё!
 			B_TurnToNpc (self, other); 
 		};
 		Dobar_einmalig = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_04"); //Могло бы быть и лучше. Если бы ты постоянно не отвлекал меня, работа продвигалась бы быстрее.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_04"); //РњРѕРіР»Рѕ Р±С‹ Р±С‹С‚СЊ Рё Р»СѓС‡С€Рµ. Р•СЃР»Рё Р±С‹ С‚С‹ РїРѕСЃС‚РѕСЏРЅРЅРѕ РЅРµ РѕС‚РІР»РµРєР°Р» РјРµРЅСЏ, СЂР°Р±РѕС‚Р° РїСЂРѕРґРІРёРіР°Р»Р°СЃСЊ Р±С‹ Р±С‹СЃС‚СЂРµРµ.
 	};
 };
 
@@ -232,7 +232,7 @@ INSTANCE DIA_Dobar_PICKPOCKET (C_INFO)
 	condition	= DIA_Dobar_PICKPOCKET_Condition;
 	information	= DIA_Dobar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть его кусок руды будет сложно)";
+	description = "(РЈРєСЂР°СЃС‚СЊ РµРіРѕ РєСѓСЃРѕРє СЂСѓРґС‹ Р±СѓРґРµС‚ СЃР»РѕР¶РЅРѕ)";
 };                       
 
 FUNC INT DIA_Dobar_PICKPOCKET_Condition()

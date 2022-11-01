@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10027_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10027_Buddler_Hi_Condition;
 	information = DIA_Addon_10027_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_10027_Buddler_Hi_Condition()
 {	
@@ -36,15 +36,15 @@ FUNC INT DIA_Addon_10027_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10027_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00");//Как дела?
+	AI_Output (other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00");//РљР°Рє РґРµР»Р°?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//Я работаю на железных баронов уже очень долго. Хорошо, что теперь работают другие.
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//РЇ СЂР°Р±РѕС‚Р°СЋ РЅР° Р¶РµР»РµР·РЅС‹С… Р±Р°СЂРѕРЅРѕРІ СѓР¶Рµ РѕС‡РµРЅСЊ РґРѕР»РіРѕ. РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚РµРїРµСЂСЊ СЂР°Р±РѕС‚Р°СЋС‚ РґСЂСѓРіРёРµ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Черт. Теперь нам снова придется копать самим, да?
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Р§РµСЂС‚. РўРµРїРµСЂСЊ РЅР°Рј СЃРЅРѕРІР° РїСЂРёРґРµС‚СЃСЏ РєРѕРїР°С‚СЊ СЃР°РјРёРј, РґР°?
 	};
 };
 //---------------------------------------------------------------------
@@ -66,8 +66,8 @@ FUNC INT DIA_Addon_10027_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10027_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Работай головой, парень. Добыча золота - чисто интеллектуальный процесс. Не пытайся победить камень - он сильнее тебя.
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Освободи свой разум и попробуй стать единым с золотом. Это как медитация, как молитва.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Р Р°Р±РѕС‚Р°Р№ РіРѕР»РѕРІРѕР№, РїР°СЂРµРЅСЊ. Р”РѕР±С‹С‡Р° Р·РѕР»РѕС‚Р° - С‡РёСЃС‚Рѕ РёРЅС‚РµР»Р»РµРєС‚СѓР°Р»СЊРЅС‹Р№ РїСЂРѕС†РµСЃСЃ. РќРµ РїС‹С‚Р°Р№СЃСЏ РїРѕР±РµРґРёС‚СЊ РєР°РјРµРЅСЊ - РѕРЅ СЃРёР»СЊРЅРµРµ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//РћСЃРІРѕР±РѕРґРё СЃРІРѕР№ СЂР°Р·СѓРј Рё РїРѕРїСЂРѕР±СѓР№ СЃС‚Р°С‚СЊ РµРґРёРЅС‹Рј СЃ Р·РѕР»РѕС‚РѕРј. Р­С‚Рѕ РєР°Рє РјРµРґРёС‚Р°С†РёСЏ, РєР°Рє РјРѕР»РёС‚РІР°.
 	
 	B_Upgrade_Hero_HackChance(10);
 };

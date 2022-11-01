@@ -75,10 +75,10 @@ FUNC INT DIA_Addon_Skinner_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Skinner_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//Ты зачем меня разбудил, а? Я уверен, что ты толком и не знаешь...
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//Нет - не надо ничего говорить. Оправдываться слишком поздно.
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_02");//У тебя теперь есть выбор. Ты можешь сразиться со мной и моей Бетти. А можешь попробовать убежать.
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//И на твоем месте я бы начинал разбег...
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//РўС‹ Р·Р°С‡РµРј РјРµРЅСЏ СЂР°Р·Р±СѓРґРёР», Р°? РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ С‚РѕР»РєРѕРј Рё РЅРµ Р·РЅР°РµС€СЊ...
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//РќРµС‚ - РЅРµ РЅР°РґРѕ РЅРёС‡РµРіРѕ РіРѕРІРѕСЂРёС‚СЊ. РћРїСЂР°РІРґС‹РІР°С‚СЊСЃСЏ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_02");//РЈ С‚РµР±СЏ С‚РµРїРµСЂСЊ РµСЃС‚СЊ РІС‹Р±РѕСЂ. РўС‹ РјРѕР¶РµС€СЊ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№ Рё РјРѕРµР№ Р‘РµС‚С‚Рё. Рђ РјРѕР¶РµС€СЊ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ СѓР±РµР¶Р°С‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//Р РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РЅР°С‡РёРЅР°Р» СЂР°Р·Р±РµРі...
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_Skinner_Attentat   (C_INFO)
 	condition   = DIA_Addon_Skinner_Attentat_Condition;
 	information = DIA_Addon_Skinner_Attentat_Info;
 	permanent   = FALSE;
-	description = "По поводу нападения...";
+	description = "РџРѕ РїРѕРІРѕРґСѓ РЅР°РїР°РґРµРЅРёСЏ...";
 };
 FUNC INT DIA_Addon_Skinner_Attentat_Condition()
 {	
@@ -104,18 +104,18 @@ FUNC INT DIA_Addon_Skinner_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Skinner_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_Attentat_15_00");//По поводу нападения...
-	AI_Output (self, other, "DIA_Addon_Skinner_Attentat_08_01");//Что тебе нужно?
+	AI_Output (other, self, "DIA_Addon_Skinner_Attentat_15_00");//РџРѕ РїРѕРІРѕРґСѓ РЅР°РїР°РґРµРЅРёСЏ...
+	AI_Output (self, other, "DIA_Addon_Skinner_Attentat_08_01");//Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	
 	Info_ClearChoices (DIA_Addon_Skinner_Attentat);
 	
-	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Я хочу убрать Эстебана.",DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA);
-	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Я хочу найти предателя.",DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
+	Info_AddChoice (DIA_Addon_Skinner_Attentat,"РЇ С…РѕС‡Сѓ СѓР±СЂР°С‚СЊ Р­СЃС‚РµР±Р°РЅР°.",DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA);
+	Info_AddChoice (DIA_Addon_Skinner_Attentat,"РЇ С…РѕС‡Сѓ РЅР°Р№С‚Рё РїСЂРµРґР°С‚РµР»СЏ.",DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
 };
 FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_15_00");//Я хочу убрать Эстебана.
-	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_08_01");//Отлично.
+	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_15_00");//РЇ С…РѕС‡Сѓ СѓР±СЂР°С‚СЊ Р­СЃС‚РµР±Р°РЅР°.
+	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_08_01");//РћС‚Р»РёС‡РЅРѕ.
 	
 	Judas_Counter = (Judas_Counter + 1);
 	
@@ -123,8 +123,8 @@ FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 };
 FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_PRO()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00");//Я хочу найти предателя.
-	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_08_01");//Дерьмо.
+	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00");//РЇ С…РѕС‡Сѓ РЅР°Р№С‚Рё РїСЂРµРґР°С‚РµР»СЏ.
+	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_08_01");//Р”РµСЂСЊРјРѕ.
 	
 	Info_ClearChoices (DIA_Addon_Skinner_Attentat);
 };

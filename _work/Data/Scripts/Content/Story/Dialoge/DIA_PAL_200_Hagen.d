@@ -52,7 +52,7 @@ FUNC INT DIA_Hagen_PMSchulden_Condition()
 
 FUNC VOID DIA_Hagen_PMSchulden_Info()
 {
-	AI_Output (self, other, "DIA_Hagen_PMSchulden_04_00"); //Хорошо, что ты пришел. Ты можешь заплатить штраф прямо сейчас.
+	AI_Output (self, other, "DIA_Hagen_PMSchulden_04_00"); //РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ РїСЂРёС€РµР». РўС‹ РјРѕР¶РµС€СЊ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ.
 
 	if (B_GetTotalPetzCounter(self) > Hagen_LastPetzCounter)
 	{
@@ -65,51 +65,51 @@ FUNC VOID DIA_Hagen_PMSchulden_Info()
 		
 		if (Hagen_Schulden > 1000)	{	Hagen_Schulden = 1000;	};
 		
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_01"); //Ты не очень-то серьезно относишься к законам города, да?
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_02"); //Список твоих преступлений все растет и растет.
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_01"); //РўС‹ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ СЃРµСЂСЊРµР·РЅРѕ РѕС‚РЅРѕСЃРёС€СЊСЃСЏ Рє Р·Р°РєРѕРЅР°Рј РіРѕСЂРѕРґР°, РґР°?
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_02"); //РЎРїРёСЃРѕРє С‚РІРѕРёС… РїСЂРµСЃС‚СѓРїР»РµРЅРёР№ РІСЃРµ СЂР°СЃС‚РµС‚ Рё СЂР°СЃС‚РµС‚.
 		if (Hagen_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_03"); //И не говори мне, что ты не знал этого!
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_03"); //Р РЅРµ РіРѕРІРѕСЂРё РјРЅРµ, С‡С‚Рѕ С‚С‹ РЅРµ Р·РЅР°Р» СЌС‚РѕРіРѕ!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_04"); //Ты заплатишь максимальный штраф.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_04"); //РўС‹ Р·Р°РїР»Р°С‚РёС€СЊ РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ С€С‚СЂР°С„.
 			B_Say_Gold (self, other, Hagen_Schulden);
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Hagen_LastPetzCrime)
 	{
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_05"); //Похоже, ситуация изменилась.
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_05"); //РџРѕС…РѕР¶Рµ, СЃРёС‚СѓР°С†РёСЏ РёР·РјРµРЅРёР»Р°СЃСЊ.
 		
 		if (Hagen_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_06"); //Больше нет свидетелей убийства, совершенного тобой!
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_06"); //Р‘РѕР»СЊС€Рµ РЅРµС‚ СЃРІРёРґРµС‚РµР»РµР№ СѓР±РёР№СЃС‚РІР°, СЃРѕРІРµСЂС€РµРЅРЅРѕРіРѕ С‚РѕР±РѕР№!
 		};
 		
 		if (Hagen_LastPetzCrime == CRIME_THEFT)
 		|| ( (Hagen_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_07"); //Никто теперь не может подтвердить, что ты воровал!
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_07"); //РќРёРєС‚Рѕ С‚РµРїРµСЂСЊ РЅРµ РјРѕР¶РµС‚ РїРѕРґС‚РІРµСЂРґРёС‚СЊ, С‡С‚Рѕ С‚С‹ РІРѕСЂРѕРІР°Р»!
 		};
 		
 		if (Hagen_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Hagen_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_08"); //Больше нет свидетелей твоей драки.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_08"); //Р‘РѕР»СЊС€Рµ РЅРµС‚ СЃРІРёРґРµС‚РµР»РµР№ С‚РІРѕРµР№ РґСЂР°РєРё.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_09"); //Все обвинения против тебя больше не находят подтверждений.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_09"); //Р’СЃРµ РѕР±РІРёРЅРµРЅРёСЏ РїСЂРѕС‚РёРІ С‚РµР±СЏ Р±РѕР»СЊС€Рµ РЅРµ РЅР°С…РѕРґСЏС‚ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёР№.
 		};
 		
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_10"); //Я не знаю, что случилось в городе, и не хочу знать.
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_11"); //Просто позаботься, чтобы у тебя не было проблем здесь.
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_10"); //РЇ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ РІ РіРѕСЂРѕРґРµ, Рё РЅРµ С…РѕС‡Сѓ Р·РЅР°С‚СЊ.
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_11"); //РџСЂРѕСЃС‚Рѕ РїРѕР·Р°Р±РѕС‚СЊСЃСЏ, С‡С‚РѕР±С‹ Сѓ С‚РµР±СЏ РЅРµ Р±С‹Р»Рѕ РїСЂРѕР±Р»РµРј Р·РґРµСЃСЊ.
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_12"); //Как бы то ни было, я решил простить твои прегрешения.
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_13"); //Смотри, чтобы этого больше не повторялось.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_12"); //РљР°Рє Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ, СЏ СЂРµС€РёР» РїСЂРѕСЃС‚РёС‚СЊ С‚РІРѕРё РїСЂРµРіСЂРµС€РµРЅРёСЏ.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_13"); //РЎРјРѕС‚СЂРё, С‡С‚РѕР±С‹ СЌС‚РѕРіРѕ Р±РѕР»СЊС€Рµ РЅРµ РїРѕРІС‚РѕСЂСЏР»РѕСЃСЊ.
 	
 			Hagen_Schulden			= 0;
 			Hagen_LastPetzCounter 	= 0;
@@ -117,9 +117,9 @@ FUNC VOID DIA_Hagen_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_14"); //Ты, тем не менее, заплатишь штраф в полном объеме.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_14"); //РўС‹, С‚РµРј РЅРµ РјРµРЅРµРµ, Р·Р°РїР»Р°С‚РёС€СЊ С€С‚СЂР°С„ РІ РїРѕР»РЅРѕРј РѕР±СЉРµРјРµ.
 			B_Say_Gold (self, other, Hagen_Schulden);
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_15"); //Итак, ты будешь платить?
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_15"); //РС‚Р°Рє, С‚С‹ Р±СѓРґРµС€СЊ РїР»Р°С‚РёС‚СЊ?
 		};
 	};
 	
@@ -128,27 +128,27 @@ FUNC VOID DIA_Hagen_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(DIA_Hagen_PMSchulden);
 		Info_ClearChoices  	(DIA_Hagen_PETZMASTER);
-		Info_AddChoice		(DIA_Hagen_PMSchulden,"У меня нет столько золота!",DIA_Hagen_PETZMASTER_PayLater);
-		Info_AddChoice		(DIA_Hagen_PMSchulden,"Сколько там нужно?",DIA_Hagen_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(DIA_Hagen_PMSchulden,"РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°!",DIA_Hagen_PETZMASTER_PayLater);
+		Info_AddChoice		(DIA_Hagen_PMSchulden,"РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?",DIA_Hagen_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(other, itmi_gold) >= Hagen_Schulden)
 		{
-			Info_AddChoice 	(DIA_Hagen_PMSchulden,"Я хочу заплатить штраф!",DIA_Hagen_PETZMASTER_PayNow);
+			Info_AddChoice 	(DIA_Hagen_PMSchulden,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Hagen_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void DIA_Hagen_PMSchulden_HowMuchAgain()
 {
-	AI_Output (other, self, "DIA_Hagen_PMSchulden_HowMuchAgain_15_00"); //Сколько там на этот раз?
+	AI_Output (other, self, "DIA_Hagen_PMSchulden_HowMuchAgain_15_00"); //РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅР° СЌС‚РѕС‚ СЂР°Р·?
 	B_Say_Gold (self, other, Hagen_Schulden);
 
 	Info_ClearChoices  	(DIA_Hagen_PMSchulden);
 	Info_ClearChoices  	(DIA_Hagen_PETZMASTER);
-	Info_AddChoice		(DIA_Hagen_PMSchulden,"У меня нет столько золота!",DIA_Hagen_PETZMASTER_PayLater);
-	Info_AddChoice		(DIA_Hagen_PMSchulden,"Сколько там нужно?",DIA_Hagen_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(DIA_Hagen_PMSchulden,"РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°!",DIA_Hagen_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Hagen_PMSchulden,"РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?",DIA_Hagen_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(other, itmi_gold) >= Hagen_Schulden)
 	{
-		Info_AddChoice 	(DIA_Hagen_PMSchulden,"Я хочу заплатить штраф!",DIA_Hagen_PETZMASTER_PayNow);
+		Info_AddChoice 	(DIA_Hagen_PMSchulden,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Hagen_PETZMASTER_PayNow);
 	};
 };
 
@@ -177,66 +177,66 @@ FUNC INT DIA_Hagen_PETZMASTER_Condition()
 };
 FUNC VOID DIA_Hagen_PETZMASTER_Info()
 {
-	Hagen_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hцher ist...
+	Hagen_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hС†her ist...
 	
 	// ------ SC hat mit Hagen noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_00"); //Твоя слава опережает тебя. Ты нарушил законы города.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_00"); //РўРІРѕСЏ СЃР»Р°РІР° РѕРїРµСЂРµР¶Р°РµС‚ С‚РµР±СЏ. РўС‹ РЅР°СЂСѓС€РёР» Р·Р°РєРѕРЅС‹ РіРѕСЂРѕРґР°.
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_01"); //Ты влип в дерьмо по уши.
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_02"); //Убийство - серьезное преступление!
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_01"); //РўС‹ РІР»РёРї РІ РґРµСЂСЊРјРѕ РїРѕ СѓС€Рё.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_02"); //РЈР±РёР№СЃС‚РІРѕ - СЃРµСЂСЊРµР·РЅРѕРµ РїСЂРµСЃС‚СѓРїР»РµРЅРёРµ!
 		Hagen_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Hagen_Schulden = Hagen_Schulden + 500;						//PLUS Mцrder-Malus
+		Hagen_Schulden = Hagen_Schulden + 500;						//PLUS MС†rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_03"); //Не говоря уже о других обвинениях.
+			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_03"); //РќРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ Рѕ РґСЂСѓРіРёС… РѕР±РІРёРЅРµРЅРёСЏС….
 		};
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_04"); //Страже приказано казнить убийц на месте.
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_05"); //Убийства неприемлемы в этом городе. Но ты можешь подтвердить свое раскаяние, заплатив штраф.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_04"); //РЎС‚СЂР°Р¶Рµ РїСЂРёРєР°Р·Р°РЅРѕ РєР°Р·РЅРёС‚СЊ СѓР±РёР№С† РЅР° РјРµСЃС‚Рµ.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_05"); //РЈР±РёР№СЃС‚РІР° РЅРµРїСЂРёРµРјР»РµРјС‹ РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ. РќРѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРґС‚РІРµСЂРґРёС‚СЊ СЃРІРѕРµ СЂР°СЃРєР°СЏРЅРёРµ, Р·Р°РїР»Р°С‚РёРІ С€С‚СЂР°С„.
 
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_06"); //Ты обвиняешься в воровстве!
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_06"); //РўС‹ РѕР±РІРёРЅСЏРµС€СЊСЃСЏ РІ РІРѕСЂРѕРІСЃС‚РІРµ!
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_07"); //Не говоря уже о других преступлениях, о которых я слышал.
+			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_07"); //РќРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ Рѕ РґСЂСѓРіРёС… РїСЂРµСЃС‚СѓРїР»РµРЅРёСЏС…, Рѕ РєРѕС‚РѕСЂС‹С… СЏ СЃР»С‹С€Р°Р».
 		};
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_08"); //Это нарушение законов города. Ты должен заплатить штраф.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_08"); //Р­С‚Рѕ РЅР°СЂСѓС€РµРЅРёРµ Р·Р°РєРѕРЅРѕРІ РіРѕСЂРѕРґР°. РўС‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„.
 		
 		Hagen_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_09"); //Ты ввязался в драку. Таким образом ты нарушил закон.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_09"); //РўС‹ РІРІСЏР·Р°Р»СЃСЏ РІ РґСЂР°РєСѓ. РўР°РєРёРј РѕР±СЂР°Р·РѕРј С‚С‹ РЅР°СЂСѓС€РёР» Р·Р°РєРѕРЅ.
 		
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_10"); //А что там еще с овцой?
+			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_10"); //Рђ С‡С‚Рѕ С‚Р°Рј РµС‰Рµ СЃ РѕРІС†РѕР№?
 		};
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_11"); //Нарушение законов города - это нарушение законов Инноса.
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_12"); //Следовательно, ты должен заплатить за это.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_11"); //РќР°СЂСѓС€РµРЅРёРµ Р·Р°РєРѕРЅРѕРІ РіРѕСЂРѕРґР° - СЌС‚Рѕ РЅР°СЂСѓС€РµРЅРёРµ Р·Р°РєРѕРЅРѕРІ РРЅРЅРѕСЃР°.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_12"); //РЎР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ.
 		
 		Hagen_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getцtet (nahezu uninteressant - in der City gibt es keine Schafe) ------
+	// ------ Schaf getС†tet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_13"); //Ты убил нашу овцу - я сначала даже не поверил в это.
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_14"); //Зачем ты делаешь все это?!
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_15"); //Ты должен заплатить компенсацию!
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_13"); //РўС‹ СѓР±РёР» РЅР°С€Сѓ РѕРІС†Сѓ - СЏ СЃРЅР°С‡Р°Р»Р° РґР°Р¶Рµ РЅРµ РїРѕРІРµСЂРёР» РІ СЌС‚Рѕ.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_14"); //Р—Р°С‡РµРј С‚С‹ РґРµР»Р°РµС€СЊ РІСЃРµ СЌС‚Рѕ?!
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_15"); //РўС‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ РєРѕРјРїРµРЅСЃР°С†РёСЋ!
 		
 		Hagen_Schulden = 100;
 	};
 	
-	AI_Output (other, self, "DIA_Hagen_PETZMASTER_15_16"); //Сколько?
+	AI_Output (other, self, "DIA_Hagen_PETZMASTER_15_16"); //РЎРєРѕР»СЊРєРѕ?
 	
 	if (Hagen_Schulden > 1000)	{	Hagen_Schulden = 1000;	};
 		
@@ -244,18 +244,18 @@ FUNC VOID DIA_Hagen_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(DIA_Hagen_PMSchulden);
 	Info_ClearChoices  	(DIA_Hagen_PETZMASTER);
-	Info_AddChoice		(DIA_Hagen_PETZMASTER,"У меня нет столько золота!",DIA_Hagen_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Hagen_PETZMASTER,"РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°!",DIA_Hagen_PETZMASTER_PayLater);
 	if (Npc_HasItems(other, itmi_gold) >= Hagen_Schulden)
 	{
-		Info_AddChoice 	(DIA_Hagen_PETZMASTER,"Я хочу заплатить штраф!",DIA_Hagen_PETZMASTER_PayNow);
+		Info_AddChoice 	(DIA_Hagen_PETZMASTER,"РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!",DIA_Hagen_PETZMASTER_PayNow);
 	};
 };
 
 func void DIA_Hagen_PETZMASTER_PayNow()
 {
-	AI_Output (other, self, "DIA_Hagen_PETZMASTER_PayNow_15_00"); //Я хочу заплатить штраф!
+	AI_Output (other, self, "DIA_Hagen_PETZMASTER_PayNow_15_00"); //РЇ С…РѕС‡Сѓ Р·Р°РїР»Р°С‚РёС‚СЊ С€С‚СЂР°С„!
 	B_GiveInvItems (other, self, itmi_gold, Hagen_Schulden);
-	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayNow_04_01"); //Хорошо! Я позабочусь, чтобы все в городе узнали об этом. Это в некоторой степени восстановит твою репутацию.
+	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayNow_04_01"); //РҐРѕСЂРѕС€Рѕ! РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ РІСЃРµ РІ РіРѕСЂРѕРґРµ СѓР·РЅР°Р»Рё РѕР± СЌС‚РѕРј. Р­С‚Рѕ РІ РЅРµРєРѕС‚РѕСЂРѕР№ СЃС‚РµРїРµРЅРё РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚ С‚РІРѕСЋ СЂРµРїСѓС‚Р°С†РёСЋ.
 
 	B_GrantAbsolution (LOC_CITY);
 	
@@ -269,9 +269,9 @@ func void DIA_Hagen_PETZMASTER_PayNow()
 
 func void DIA_Hagen_PETZMASTER_PayLater()
 {
-	AI_Output (other, self, "DIA_Hagen_PETZMASTER_PayLater_15_00"); //У меня нет столько золота!
-	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayLater_04_01"); //Тогда позаботься о том, чтобы раздобыть это золото как можно быстрее.
-	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayLater_04_02"); //И я предупреждаю тебя: если ты при этом усугубишь свою вину, на пощаду не рассчитывай.
+	AI_Output (other, self, "DIA_Hagen_PETZMASTER_PayLater_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°!
+	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayLater_04_01"); //РўРѕРіРґР° РїРѕР·Р°Р±РѕС‚СЊСЃСЏ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ СЂР°Р·РґРѕР±С‹С‚СЊ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ.
+	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayLater_04_02"); //Р СЏ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ: РµСЃР»Рё С‚С‹ РїСЂРё СЌС‚РѕРј СѓСЃСѓРіСѓР±РёС€СЊ СЃРІРѕСЋ РІРёРЅСѓ, РЅР° РїРѕС‰Р°РґСѓ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°Р№.
 	
 	Hagen_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Hagen_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -301,17 +301,17 @@ func int DIA_Lord_Hagen_Hallo_Condition ()
 };
 func void DIA_Lord_Hagen_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_00"); //Я уже слышал о тебе.
+	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_00"); //РЇ СѓР¶Рµ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ.
 	if (Npc_KnowsInfo (other, DIA_Lothar_EyeInnos))
 	|| (Andre_EyeInnos == TRUE)
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_03"); //Лотар докладывал, что ты хочешь поговорить со мной.
-		AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_01"); //Ты чужеземец, который требует Глаз Инноса.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_03"); //Р›РѕС‚Р°СЂ РґРѕРєР»Р°РґС‹РІР°Р», С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№.
+		AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_01"); //РўС‹ С‡СѓР¶РµР·РµРјРµС†, РєРѕС‚РѕСЂС‹Р№ С‚СЂРµР±СѓРµС‚ Р“Р»Р°Р· РРЅРЅРѕСЃР°.
 	};
 	
-	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_02"); //Я лорд Хаген.
-	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_03"); //Паладин короля, воин нашего владыки Инноса и главнокомандующий Хориниса.
-	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_04"); //Я очень занятой человек. Поэтому не трать мое время попусту. А теперь скажи, зачем ты здесь.
+	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_02"); //РЇ Р»РѕСЂРґ РҐР°РіРµРЅ.
+	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_03"); //РџР°Р»Р°РґРёРЅ РєРѕСЂРѕР»СЏ, РІРѕРёРЅ РЅР°С€РµРіРѕ РІР»Р°РґС‹РєРё РРЅРЅРѕСЃР° Рё РіР»Р°РІРЅРѕРєРѕРјР°РЅРґСѓСЋС‰РёР№ РҐРѕСЂРёРЅРёСЃР°.
+	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_04"); //РЇ РѕС‡РµРЅСЊ Р·Р°РЅСЏС‚РѕР№ С‡РµР»РѕРІРµРє. РџРѕСЌС‚РѕРјСѓ РЅРµ С‚СЂР°С‚СЊ РјРѕРµ РІСЂРµРјСЏ РїРѕРїСѓСЃС‚Сѓ. Рђ С‚РµРїРµСЂСЊ СЃРєР°Р¶Рё, Р·Р°С‡РµРј С‚С‹ Р·РґРµСЃСЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -324,7 +324,7 @@ INSTANCE DIA_Lord_Hagen_Frieden (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Frieden_Condition;
 	information	 = 	DIA_Lord_Hagen_Frieden_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Я принес предложение мира от наемников!";
+	description	 =  "РЇ РїСЂРёРЅРµСЃ РїСЂРµРґР»РѕР¶РµРЅРёРµ РјРёСЂР° РѕС‚ РЅР°РµРјРЅРёРєРѕРІ!";
 };
 func int DIA_Lord_Hagen_Frieden_Condition ()
 {	
@@ -336,20 +336,20 @@ func int DIA_Lord_Hagen_Frieden_Condition ()
 };
 func void DIA_Lord_Hagen_Frieden_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Frieden_15_00"); //Я принес предложение мира от наемников!
+	AI_Output (other, self, "DIA_Lord_Hagen_Frieden_15_00"); //РЇ РїСЂРёРЅРµСЃ РїСЂРµРґР»РѕР¶РµРЅРёРµ РјРёСЂР° РѕС‚ РЅР°РµРјРЅРёРєРѕРІ!
 	B_GiveInvItems (other, self, itwr_Passage_MIS, 1);
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_01"); //(раздражительно) Хм... покажи!
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_01"); //(СЂР°Р·РґСЂР°Р¶РёС‚РµР»СЊРЅРѕ) РҐРј... РїРѕРєР°Р¶Рё!
 	B_UseFakeScroll ();
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_02"); //Я знаю генерала Ли. Мне также известно об обстоятельствах, при которых он был приговорен к исправительным работам в колонии.
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_03"); //Я считаю его благородным человеком. Я готов даровать ему помилование - но только ему!
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_04"); //Это не касается его людей, впрочем. Большинство из них - отъявленные головорезы и заслуживают наказания!
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_05"); //Я ни за что не помилую их. Можешь так и передать Ли.
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_02"); //РЇ Р·РЅР°СЋ РіРµРЅРµСЂР°Р»Р° Р›Рё. РњРЅРµ С‚Р°РєР¶Рµ РёР·РІРµСЃС‚РЅРѕ РѕР± РѕР±СЃС‚РѕСЏС‚РµР»СЊСЃС‚РІР°С…, РїСЂРё РєРѕС‚РѕСЂС‹С… РѕРЅ Р±С‹Р» РїСЂРёРіРѕРІРѕСЂРµРЅ Рє РёСЃРїСЂР°РІРёС‚РµР»СЊРЅС‹Рј СЂР°Р±РѕС‚Р°Рј РІ РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_03"); //РЇ СЃС‡РёС‚Р°СЋ РµРіРѕ Р±Р»Р°РіРѕСЂРѕРґРЅС‹Рј С‡РµР»РѕРІРµРєРѕРј. РЇ РіРѕС‚РѕРІ РґР°СЂРѕРІР°С‚СЊ РµРјСѓ РїРѕРјРёР»РѕРІР°РЅРёРµ - РЅРѕ С‚РѕР»СЊРєРѕ РµРјСѓ!
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_04"); //Р­С‚Рѕ РЅРµ РєР°СЃР°РµС‚СЃСЏ РµРіРѕ Р»СЋРґРµР№, РІРїСЂРѕС‡РµРј. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… - РѕС‚СЉСЏРІР»РµРЅРЅС‹Рµ РіРѕР»РѕРІРѕСЂРµР·С‹ Рё Р·Р°СЃР»СѓР¶РёРІР°СЋС‚ РЅР°РєР°Р·Р°РЅРёСЏ!
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_05"); //РЇ РЅРё Р·Р° С‡С‚Рѕ РЅРµ РїРѕРјРёР»СѓСЋ РёС…. РњРѕР¶РµС€СЊ С‚Р°Рє Рё РїРµСЂРµРґР°С‚СЊ Р›Рё.
 	Hagen_FriedenAbgelehnt = TRUE;
 	if (!Npc_KnowsInfo (other, DIA_Lord_Hagen_Armee))
 	{
-		AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_06"); //Это все?
+		AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_06"); //Р­С‚Рѕ РІСЃРµ?
 	};
-	B_LogEntry (Topic_Frieden,"Лорд Хаген готов даровать прощение Ли, но не другим наемникам."); 
+	B_LogEntry (Topic_Frieden,"Р›РѕСЂРґ РҐР°РіРµРЅ РіРѕС‚РѕРІ РґР°СЂРѕРІР°С‚СЊ РїСЂРѕС‰РµРЅРёРµ Р›Рё, РЅРѕ РЅРµ РґСЂСѓРіРёРј РЅР°РµРјРЅРёРєР°Рј."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -362,7 +362,7 @@ INSTANCE DIA_Lord_Hagen_Armee (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Armee_Condition;
 	information	 = 	DIA_Lord_Hagen_Armee_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Силы зла собираются очень близко отсюда. В Долине Рудников.";
+	description	 =  "РЎРёР»С‹ Р·Р»Р° СЃРѕР±РёСЂР°СЋС‚СЃСЏ РѕС‡РµРЅСЊ Р±Р»РёР·РєРѕ РѕС‚СЃСЋРґР°. Р’ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.";
 };
 func int DIA_Lord_Hagen_Armee_Condition ()
 {	
@@ -374,20 +374,20 @@ func int DIA_Lord_Hagen_Armee_Condition ()
 };
 func void DIA_Lord_Hagen_Armee_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_00"); //Силы зла собираются очень близко отсюда. В Долине Рудников.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_01"); //В Долине Рудников? Мы отправили туда экспедицию. До нас также доходили сведения, что Проход оккупирован орками.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_02"); //Но до сего момента до меня не доходило никаких сведений об армии Зла.
+	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_00"); //РЎРёР»С‹ Р·Р»Р° СЃРѕР±РёСЂР°СЋС‚СЃСЏ РѕС‡РµРЅСЊ Р±Р»РёР·РєРѕ РѕС‚СЃСЋРґР°. Р’ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_01"); //Р’ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ? РњС‹ РѕС‚РїСЂР°РІРёР»Рё С‚СѓРґР° СЌРєСЃРїРµРґРёС†РёСЋ. Р”Рѕ РЅР°СЃ С‚Р°РєР¶Рµ РґРѕС…РѕРґРёР»Рё СЃРІРµРґРµРЅРёСЏ, С‡С‚Рѕ РџСЂРѕС…РѕРґ РѕРєРєСѓРїРёСЂРѕРІР°РЅ РѕСЂРєР°РјРё.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_02"); //РќРѕ РґРѕ СЃРµРіРѕ РјРѕРјРµРЅС‚Р° РґРѕ РјРµРЅСЏ РЅРµ РґРѕС…РѕРґРёР»Рѕ РЅРёРєР°РєРёС… СЃРІРµРґРµРЅРёР№ РѕР± Р°СЂРјРёРё Р—Р»Р°.
 	if (Npc_KnowsInfo (other, DIA_Lord_Hagen_Frieden))
 	{
-		AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_03"); //Это, что, такая уловка, чтобы я поверил, что мне необходимо заключить союз с наемниками?
-		AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_04"); //Нет.
+		AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_03"); //Р­С‚Рѕ, С‡С‚Рѕ, С‚Р°РєР°СЏ СѓР»РѕРІРєР°, С‡С‚РѕР±С‹ СЏ РїРѕРІРµСЂРёР», С‡С‚Рѕ РјРЅРµ РЅРµРѕР±С…РѕРґРёРјРѕ Р·Р°РєР»СЋС‡РёС‚СЊ СЃРѕСЋР· СЃ РЅР°РµРјРЅРёРєР°РјРё?
+		AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_04"); //РќРµС‚.
 	};
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_05"); //(скептически) Что это еще за армия?
-	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_06"); //Армия драконов, которые собрали вокруг себя орды прислужников.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_07"); //Драконов? Согласно старинным писаниям, драконов не видели уже много веков.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_08"); //Скажи мне - почему я должен верить тому, что ты говоришь?
-	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_09"); //Вопрос не в том, должен ли ты мне верить. Вопрос в том, можешь ли ты себе позволить НЕ поверить мне в случае, если я говорю правду.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_10"); //Пока я не получу доказательств, я не могу позволить себе послать еще людей туда.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_05"); //(СЃРєРµРїС‚РёС‡РµСЃРєРё) Р§С‚Рѕ СЌС‚Рѕ РµС‰Рµ Р·Р° Р°СЂРјРёСЏ?
+	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_06"); //РђСЂРјРёСЏ РґСЂР°РєРѕРЅРѕРІ, РєРѕС‚РѕСЂС‹Рµ СЃРѕР±СЂР°Р»Рё РІРѕРєСЂСѓРі СЃРµР±СЏ РѕСЂРґС‹ РїСЂРёСЃР»СѓР¶РЅРёРєРѕРІ.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_07"); //Р”СЂР°РєРѕРЅРѕРІ? РЎРѕРіР»Р°СЃРЅРѕ СЃС‚Р°СЂРёРЅРЅС‹Рј РїРёСЃР°РЅРёСЏРј, РґСЂР°РєРѕРЅРѕРІ РЅРµ РІРёРґРµР»Рё СѓР¶Рµ РјРЅРѕРіРѕ РІРµРєРѕРІ.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_08"); //РЎРєР°Р¶Рё РјРЅРµ - РїРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ РІРµСЂРёС‚СЊ С‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ?
+	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_09"); //Р’РѕРїСЂРѕСЃ РЅРµ РІ С‚РѕРј, РґРѕР»Р¶РµРЅ Р»Рё С‚С‹ РјРЅРµ РІРµСЂРёС‚СЊ. Р’РѕРїСЂРѕСЃ РІ С‚РѕРј, РјРѕР¶РµС€СЊ Р»Рё С‚С‹ СЃРµР±Рµ РїРѕР·РІРѕР»РёС‚СЊ РќР• РїРѕРІРµСЂРёС‚СЊ РјРЅРµ РІ СЃР»СѓС‡Р°Рµ, РµСЃР»Рё СЏ РіРѕРІРѕСЂСЋ РїСЂР°РІРґСѓ.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_10"); //РџРѕРєР° СЏ РЅРµ РїРѕР»СѓС‡Сѓ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІ, СЏ РЅРµ РјРѕРіСѓ РїРѕР·РІРѕР»РёС‚СЊ СЃРµР±Рµ РїРѕСЃР»Р°С‚СЊ РµС‰Рµ Р»СЋРґРµР№ С‚СѓРґР°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -400,7 +400,7 @@ INSTANCE DIA_Lord_Hagen_Proof (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Proof_Condition;
 	information	 = 	DIA_Lord_Hagen_Proof_Info;
 	permanent	 = 	TRUE;
-	description	 =  "То есть ты хочешь, чтобы я принес тебе доказательство?";
+	description	 =  "РўРѕ РµСЃС‚СЊ С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ С‚РµР±Рµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ?";
 };
 func int DIA_Lord_Hagen_Proof_Condition ()
 {	
@@ -412,18 +412,18 @@ func int DIA_Lord_Hagen_Proof_Condition ()
 };
 func void DIA_Lord_Hagen_Proof_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_00"); //То есть ты хочешь, чтобы я принес тебе доказательство?
+	AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_00"); //РўРѕ РµСЃС‚СЊ С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ С‚РµР±Рµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ?
 
 	IF (hero.guild != GIL_NONE)
 	&& (hero.guild != GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_01"); //Именно. Пройди через Проход в Долину Рудников. Когда ты будешь там, найди нашу экспедицию, а когда ты найдешь их, поговори с командующим Гарондом.
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_02"); //Вряд ли кто-то лучше него знает ситуацию там.
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_03"); //Если он подтвердит твои слова, я буду готов помочь тебе.
-		AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_04"); //Значит ли это, что ты отдашь мне Глаз Инноса?
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_05"); //Глаз Инноса... хорошо. Принеси мне доказательство, и я распоряжусь, чтобы тебе было позволено надеть этот амулет.
-		AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_06"); //То есть я могу считать, что ты дал слово?
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_07"); //Можешь, так как я действительно дал его.
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_01"); //РРјРµРЅРЅРѕ. РџСЂРѕР№РґРё С‡РµСЂРµР· РџСЂРѕС…РѕРґ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ. РљРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ С‚Р°Рј, РЅР°Р№РґРё РЅР°С€Сѓ СЌРєСЃРїРµРґРёС†РёСЋ, Р° РєРѕРіРґР° С‚С‹ РЅР°Р№РґРµС€СЊ РёС…, РїРѕРіРѕРІРѕСЂРё СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј Р“Р°СЂРѕРЅРґРѕРј.
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_02"); //Р’СЂСЏРґ Р»Рё РєС‚Рѕ-С‚Рѕ Р»СѓС‡С€Рµ РЅРµРіРѕ Р·РЅР°РµС‚ СЃРёС‚СѓР°С†РёСЋ С‚Р°Рј.
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_03"); //Р•СЃР»Рё РѕРЅ РїРѕРґС‚РІРµСЂРґРёС‚ С‚РІРѕРё СЃР»РѕРІР°, СЏ Р±СѓРґСѓ РіРѕС‚РѕРІ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+		AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_04"); //Р—РЅР°С‡РёС‚ Р»Рё СЌС‚Рѕ, С‡С‚Рѕ С‚С‹ РѕС‚РґР°С€СЊ РјРЅРµ Р“Р»Р°Р· РРЅРЅРѕСЃР°?
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_05"); //Р“Р»Р°Р· РРЅРЅРѕСЃР°... С…РѕСЂРѕС€Рѕ. РџСЂРёРЅРµСЃРё РјРЅРµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ, Рё СЏ СЂР°СЃРїРѕСЂСЏР¶СѓСЃСЊ, С‡С‚РѕР±С‹ С‚РµР±Рµ Р±С‹Р»Рѕ РїРѕР·РІРѕР»РµРЅРѕ РЅР°РґРµС‚СЊ СЌС‚РѕС‚ Р°РјСѓР»РµС‚.
+		AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_06"); //РўРѕ РµСЃС‚СЊ СЏ РјРѕРіСѓ СЃС‡РёС‚Р°С‚СЊ, С‡С‚Рѕ С‚С‹ РґР°Р» СЃР»РѕРІРѕ?
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_07"); //РњРѕР¶РµС€СЊ, С‚Р°Рє РєР°Рє СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґР°Р» РµРіРѕ.
 		Hagen_BringProof = TRUE;
 	}
 	else
@@ -449,7 +449,7 @@ INSTANCE DIA_Lord_Hagen_Auge (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Auge_Condition;
 	information	 = 	DIA_Lord_Hagen_Auge_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Что ты знаешь о Глазе Инноса?";
+	description	 =  "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р“Р»Р°Р·Рµ РРЅРЅРѕСЃР°?";
 };
 func int DIA_Lord_Hagen_Auge_Condition ()
 {	
@@ -457,14 +457,14 @@ func int DIA_Lord_Hagen_Auge_Condition ()
 };
 func void DIA_Lord_Hagen_Auge_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Auge_15_00"); //Что ты знаешь о Глазе Инноса?
-	AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_01"); //Это божественный артефакт. (задумчиво) В древних пророчествах он упоминается в связи с драконами.
-	AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_02"); //Однако писания также говорят, что его может носить только Избранный Инноса.
+	AI_Output (other, self, "DIA_Lord_Hagen_Auge_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р“Р»Р°Р·Рµ РРЅРЅРѕСЃР°?
+	AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_01"); //Р­С‚Рѕ Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ Р°СЂС‚РµС„Р°РєС‚. (Р·Р°РґСѓРјС‡РёРІРѕ) Р’ РґСЂРµРІРЅРёС… РїСЂРѕСЂРѕС‡РµСЃС‚РІР°С… РѕРЅ СѓРїРѕРјРёРЅР°РµС‚СЃСЏ РІ СЃРІСЏР·Рё СЃ РґСЂР°РєРѕРЅР°РјРё.
+	AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_02"); //РћРґРЅР°РєРѕ РїРёСЃР°РЅРёСЏ С‚Р°РєР¶Рµ РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ РµРіРѕ РјРѕР¶РµС‚ РЅРѕСЃРёС‚СЊ С‚РѕР»СЊРєРѕ РР·Р±СЂР°РЅРЅС‹Р№ РРЅРЅРѕСЃР°.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (other, self, "DIA_Lord_Hagen_Auge_15_03"); //Я и есть Избранный Инноса!
-		AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_04"); //Тогда, возможно, ты действительно достоин получить этот амулет.
+		AI_Output (other, self, "DIA_Lord_Hagen_Auge_15_03"); //РЇ Рё РµСЃС‚СЊ РР·Р±СЂР°РЅРЅС‹Р№ РРЅРЅРѕСЃР°!
+		AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_04"); //РўРѕРіРґР°, РІРѕР·РјРѕР¶РЅРѕ, С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґРѕСЃС‚РѕРёРЅ РїРѕР»СѓС‡РёС‚СЊ СЌС‚РѕС‚ Р°РјСѓР»РµС‚.
 	};
 };
 
@@ -478,7 +478,7 @@ INSTANCE DIA_Lord_Hagen_Pass (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Pass_Condition;
 	information	 = 	DIA_Lord_Hagen_Pass_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Как я пройду через Проход?";
+	description	 =  "РљР°Рє СЏ РїСЂРѕР№РґСѓ С‡РµСЂРµР· РџСЂРѕС…РѕРґ?";
 };
 func int DIA_Lord_Hagen_Pass_Condition ()
 {	
@@ -490,9 +490,9 @@ func int DIA_Lord_Hagen_Pass_Condition ()
 };
 func void DIA_Lord_Hagen_Pass_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Pass_15_00"); //Как я пройду через Проход?
-	AI_Output (self, other, "DIA_Lord_Hagen_Pass_04_01"); //Я дам тебе ключ от ворот Прохода. Однако тебе самому придется решать, как пробраться через толпы орков.
-	AI_Output (self, other, "DIA_Lord_Hagen_Pass_04_02"); //Да защитит тебя Иннос.
+	AI_Output (other, self, "DIA_Lord_Hagen_Pass_15_00"); //РљР°Рє СЏ РїСЂРѕР№РґСѓ С‡РµСЂРµР· РџСЂРѕС…РѕРґ?
+	AI_Output (self, other, "DIA_Lord_Hagen_Pass_04_01"); //РЇ РґР°Рј С‚РµР±Рµ РєР»СЋС‡ РѕС‚ РІРѕСЂРѕС‚ РџСЂРѕС…РѕРґР°. РћРґРЅР°РєРѕ С‚РµР±Рµ СЃР°РјРѕРјСѓ РїСЂРёРґРµС‚СЃСЏ СЂРµС€Р°С‚СЊ, РєР°Рє РїСЂРѕР±СЂР°С‚СЊСЃСЏ С‡РµСЂРµР· С‚РѕР»РїС‹ РѕСЂРєРѕРІ.
+	AI_Output (self, other, "DIA_Lord_Hagen_Pass_04_02"); //Р”Р° Р·Р°С‰РёС‚РёС‚ С‚РµР±СЏ РРЅРЅРѕСЃ.
 		
 	AI_StopProcessInfos (self);
 	MIS_OLDWORLD = LOG_RUNNING;
@@ -502,14 +502,14 @@ func void DIA_Lord_Hagen_Pass_Info ()
 	
 	Log_CreateTopic (Topic_MISOLDWORLD,LOG_MISSION);
 	Log_SetTopicStatus (Topic_MISOLDWORLD,LOG_RUNNING);
-	B_LogEntry (Topic_MISOLDWORLD,"Лорд Хаген хочет, чтобы я принес ему доказательства существования армии Зла. Я должен отправиться в Долину рудников и поговорить с командующим Гарондом.");
+	B_LogEntry (Topic_MISOLDWORLD,"Р›РѕСЂРґ РҐР°РіРµРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ РµРјСѓ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ Р°СЂРјРёРё Р—Р»Р°. РЇ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РІ Р”РѕР»РёРЅСѓ СЂСѓРґРЅРёРєРѕРІ Рё РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј Р“Р°СЂРѕРЅРґРѕРј.");
 	
 	if (Fernando_ImKnast == FALSE)
 	{
 		B_StartOtherRoutine (Fernando,"WAIT"); 
 	};
 	
-	Wld_InsertNpc (BDT_1020_Bandit_L, "NW_TROLLAREA_PATH_47");	//Joly: //ADDON stцrt dann nicht mehr
+	Wld_InsertNpc (BDT_1020_Bandit_L, "NW_TROLLAREA_PATH_47");	//Joly: //ADDON stС†rt dann nicht mehr
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -522,7 +522,7 @@ instance DIA_Addon_Lord_Hagen_Ornament		(C_INFO)
 	condition	= DIA_Addon_Lord_Hagen_Ornament_Condition;
 	information	= DIA_Addon_Lord_Hagen_Ornament_Info;
 
-	description	= "Я ищу металлический орнамент.";
+	description	= "РЇ РёС‰Сѓ РјРµС‚Р°Р»Р»РёС‡РµСЃРєРёР№ РѕСЂРЅР°РјРµРЅС‚.";
 };
 
 func int DIA_Addon_Lord_Hagen_Ornament_Condition ()
@@ -536,9 +536,9 @@ func int DIA_Addon_Lord_Hagen_Ornament_Condition ()
 
 func void DIA_Addon_Lord_Hagen_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lord_Hagen_GiveOrnament_15_00"); //Я ищу металлический орнамент. Он должен был быть в круге камней у фермы Лобарта. 
-	AI_Output	(self, other, "DIA_Addon_Lord_Hagen_GiveOrnament_04_01"); //Ты имеешь в виду вот эту вещь? Мы думали, что это магическая руна, но оказалось, что она совершенно бесполезна.
-	AI_Output	(self, other, "DIA_Addon_Lord_Hagen_GiveOrnament_04_02"); //Можешь ее забрать. Мне она не нужна.
+	AI_Output	(other, self, "DIA_Addon_Lord_Hagen_GiveOrnament_15_00"); //РЇ РёС‰Сѓ РјРµС‚Р°Р»Р»РёС‡РµСЃРєРёР№ РѕСЂРЅР°РјРµРЅС‚. РћРЅ РґРѕР»Р¶РµРЅ Р±С‹Р» Р±С‹С‚СЊ РІ РєСЂСѓРіРµ РєР°РјРЅРµР№ Сѓ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°. 
+	AI_Output	(self, other, "DIA_Addon_Lord_Hagen_GiveOrnament_04_01"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РІРѕС‚ СЌС‚Сѓ РІРµС‰СЊ? РњС‹ РґСѓРјР°Р»Рё, С‡С‚Рѕ СЌС‚Рѕ РјР°РіРёС‡РµСЃРєР°СЏ СЂСѓРЅР°, РЅРѕ РѕРєР°Р·Р°Р»РѕСЃСЊ, С‡С‚Рѕ РѕРЅР° СЃРѕРІРµСЂС€РµРЅРЅРѕ Р±РµСЃРїРѕР»РµР·РЅР°.
+	AI_Output	(self, other, "DIA_Addon_Lord_Hagen_GiveOrnament_04_02"); //РњРѕР¶РµС€СЊ РµРµ Р·Р°Р±СЂР°С‚СЊ. РњРЅРµ РѕРЅР° РЅРµ РЅСѓР¶РЅР°.
 	
 	CreateInvItems (self, ItMi_Ornament_Addon, 1);									
 	B_GiveInvItems (self, other, ItMi_Ornament_Addon, 1);	
@@ -556,7 +556,7 @@ INSTANCE DIA_Lord_Hagen_Khorinis (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Khorinis_Condition;
 	information	 = 	DIA_Lord_Hagen_Khorinis_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Зачем вы пришли в Хоринис?";
+	description	 =  "Р—Р°С‡РµРј РІС‹ РїСЂРёС€Р»Рё РІ РҐРѕСЂРёРЅРёСЃ?";
 };
 func int DIA_Lord_Hagen_Khorinis_Condition ()
 {	
@@ -568,9 +568,9 @@ func int DIA_Lord_Hagen_Khorinis_Condition ()
 };
 func void DIA_Lord_Hagen_Khorinis_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Khorinis_15_00"); //Зачем вы пришли в Хоринис?
-	AI_Output (self, other, "DIA_Lord_Hagen_Khorinis_04_01"); //Мы выполняем важное задание королевства. Приказы нам исходят непосредственно от короля Робара.
-	AI_Output (self, other, "DIA_Lord_Hagen_Khorinis_04_02"); //Я говорил тебе, что мы отправили экспедицию в Долину Рудников. Это главная причина нашего присутствия здесь.
+	AI_Output (other, self, "DIA_Lord_Hagen_Khorinis_15_00"); //Р—Р°С‡РµРј РІС‹ РїСЂРёС€Р»Рё РІ РҐРѕСЂРёРЅРёСЃ?
+	AI_Output (self, other, "DIA_Lord_Hagen_Khorinis_04_01"); //РњС‹ РІС‹РїРѕР»РЅСЏРµРј РІР°Р¶РЅРѕРµ Р·Р°РґР°РЅРёРµ РєРѕСЂРѕР»РµРІСЃС‚РІР°. РџСЂРёРєР°Р·С‹ РЅР°Рј РёСЃС…РѕРґСЏС‚ РЅРµРїРѕСЃСЂРµРґСЃС‚РІРµРЅРЅРѕ РѕС‚ РєРѕСЂРѕР»СЏ Р РѕР±Р°СЂР°.
+	AI_Output (self, other, "DIA_Lord_Hagen_Khorinis_04_02"); //РЇ РіРѕРІРѕСЂРёР» С‚РµР±Рµ, С‡С‚Рѕ РјС‹ РѕС‚РїСЂР°РІРёР»Рё СЌРєСЃРїРµРґРёС†РёСЋ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ. Р­С‚Рѕ РіР»Р°РІРЅР°СЏ РїСЂРёС‡РёРЅР° РЅР°С€РµРіРѕ РїСЂРёСЃСѓС‚СЃС‚РІРёСЏ Р·РґРµСЃСЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -583,7 +583,7 @@ INSTANCE DIA_Lord_Hagen_Minental (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Minental_Condition;
 	information	 = 	DIA_Lord_Hagen_Minental_Info;
 	permanent	 = 	TRUE;
-	description	 =  "А что ваши люди делают в Долине Рудников?";
+	description	 =  "Рђ С‡С‚Рѕ РІР°С€Рё Р»СЋРґРё РґРµР»Р°СЋС‚ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?";
 };
 func int DIA_Lord_Hagen_Minental_Condition ()
 {	
@@ -595,33 +595,33 @@ func int DIA_Lord_Hagen_Minental_Condition ()
 };
 func void DIA_Lord_Hagen_Minental_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Minental_15_00"); //А что ваши люди делают в Долине Рудников?
+	AI_Output (other, self, "DIA_Lord_Hagen_Minental_15_00"); //Рђ С‡С‚Рѕ РІР°С€Рё Р»СЋРґРё РґРµР»Р°СЋС‚ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?
 
 	if (Hagen_BringProof == FALSE)
 	{
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_01"); //Я не вижу причин рассказывать тебе об этом!
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_01"); //РЇ РЅРµ РІРёР¶Сѓ РїСЂРёС‡РёРЅ СЂР°СЃСЃРєР°Р·С‹РІР°С‚СЊ С‚РµР±Рµ РѕР± СЌС‚РѕРј!
 	}
 	else
 	{
 		if (Garond.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_02"); //Ты был там. Ты должен знать.
+			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_02"); //РўС‹ Р±С‹Р» С‚Р°Рј. РўС‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_03"); //Хорошо, так как ты все равно идешь туда, я все же расскажу тебе.
+			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_03"); //РҐРѕСЂРѕС€Рѕ, С‚Р°Рє РєР°Рє С‚С‹ РІСЃРµ СЂР°РІРЅРѕ РёРґРµС€СЊ С‚СѓРґР°, СЏ РІСЃРµ Р¶Рµ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ.
 		};
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_04"); //Причиной всему - магическая руда. Она может решить исход этой войны.
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_05"); //Без достаточного количества оружия из магической руды у королевской армии нет ни единого шанса против элитных воинов орков.
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_04"); //РџСЂРёС‡РёРЅРѕР№ РІСЃРµРјСѓ - РјР°РіРёС‡РµСЃРєР°СЏ СЂСѓРґР°. РћРЅР° РјРѕР¶РµС‚ СЂРµС€РёС‚СЊ РёСЃС…РѕРґ СЌС‚РѕР№ РІРѕР№РЅС‹.
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_05"); //Р‘РµР· РґРѕСЃС‚Р°С‚РѕС‡РЅРѕРіРѕ РєРѕР»РёС‡РµСЃС‚РІР° РѕСЂСѓР¶РёСЏ РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹ Сѓ РєРѕСЂРѕР»РµРІСЃРєРѕР№ Р°СЂРјРёРё РЅРµС‚ РЅРё РµРґРёРЅРѕРіРѕ С€Р°РЅСЃР° РїСЂРѕС‚РёРІ СЌР»РёС‚РЅС‹С… РІРѕРёРЅРѕРІ РѕСЂРєРѕРІ.
 		if (other.guild != GIL_SLD)
 		{
-			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_06"); //А шахты с магической рудой, находящиеся на острове, - последние, к которым у нас еще есть доступ.
+			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_06"); //Рђ С€Р°С…С‚С‹ СЃ РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґРѕР№, РЅР°С…РѕРґСЏС‰РёРµСЃСЏ РЅР° РѕСЃС‚СЂРѕРІРµ, - РїРѕСЃР»РµРґРЅРёРµ, Рє РєРѕС‚РѕСЂС‹Рј Сѓ РЅР°СЃ РµС‰Рµ РµСЃС‚СЊ РґРѕСЃС‚СѓРї.
 		};
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_07"); //Как только наш корабль будет загружен рудой, мы отправимся назад, на материк.
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_07"); //РљР°Рє С‚РѕР»СЊРєРѕ РЅР°С€ РєРѕСЂР°Р±Р»СЊ Р±СѓРґРµС‚ Р·Р°РіСЂСѓР¶РµРЅ СЂСѓРґРѕР№, РјС‹ РѕС‚РїСЂР°РІРёРјСЃСЏ РЅР°Р·Р°Рґ, РЅР° РјР°С‚РµСЂРёРє.
 		KnowsPaladins_Ore = TRUE;
 		
-		AI_Output (other, self, "DIA_Lord_Hagen_Minental_15_08"); //Значит, война против орков идет плохо, да?
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_09"); //Я и так сказал тебе слишком много.
+		AI_Output (other, self, "DIA_Lord_Hagen_Minental_15_08"); //Р—РЅР°С‡РёС‚, РІРѕР№РЅР° РїСЂРѕС‚РёРІ РѕСЂРєРѕРІ РёРґРµС‚ РїР»РѕС…Рѕ, РґР°?
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_09"); //РЇ Рё С‚Р°Рє СЃРєР°Р·Р°Р» С‚РµР±Рµ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.
 	};
 };
 
@@ -635,7 +635,7 @@ instance DIA_Hagen_CanTeach		(C_INFO)
 	condition	 = 	DIA_Hagen_CanTeach_Condition;
 	information	 = 	DIA_Hagen_CanTeach_Info;
 	PERMANENT 	 =  FALSE;
-	description	 = 	"Я ищу мастера-мечника.";
+	description	 = 	"РЇ РёС‰Сѓ РјР°СЃС‚РµСЂР°-РјРµС‡РЅРёРєР°.";
 };
 func int DIA_Hagen_CanTeach_Condition ()
 {	
@@ -649,11 +649,11 @@ func int DIA_Hagen_CanTeach_Condition ()
 };
 func void DIA_Hagen_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Hagen_CanTeach_15_00"); //Я ищу мастера-мечника.
-	AI_Output (self, other, "DIA_Hagen_CanTeach_04_01"); //Да? Считай, что ты нашел его.
+	AI_Output (other, self, "DIA_Hagen_CanTeach_15_00"); //РЇ РёС‰Сѓ РјР°СЃС‚РµСЂР°-РјРµС‡РЅРёРєР°.
+	AI_Output (self, other, "DIA_Hagen_CanTeach_04_01"); //Р”Р°? РЎС‡РёС‚Р°Р№, С‡С‚Рѕ С‚С‹ РЅР°С€РµР» РµРіРѕ.
 	
 	LordHagen_Teach2H = TRUE;
-	B_LogEntry (TOPIC_CityTeacher,"Лорд Хаген может обучить меня сражаться двуручным оружием.");
+	B_LogEntry (TOPIC_CityTeacher,"Р›РѕСЂРґ РҐР°РіРµРЅ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 };
 //**************************************
 //			Ich will trainieren
@@ -665,7 +665,7 @@ INSTANCE DIA_Hagen_Teach(C_INFO)
 	condition	= DIA_Hagen_Teach_Condition;
 	information	= DIA_Hagen_Teach_Info;
 	permanent	= TRUE;
-	description = "Начнем (изучить бой двуручным оружием).";
+	description = "РќР°С‡РЅРµРј (РёР·СѓС‡РёС‚СЊ Р±РѕР№ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј).";
 };                       
 //----------------------------------
 var int DIA_Hagen_Teach_permanent;
@@ -681,7 +681,7 @@ FUNC INT DIA_Hagen_Teach_Condition()
  
 FUNC VOID DIA_Hagen_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Hagen_Teach_15_00"); //Приступим к обучению!
+	AI_Output (other,self ,"DIA_Hagen_Teach_15_00"); //РџСЂРёСЃС‚СѓРїРёРј Рє РѕР±СѓС‡РµРЅРёСЋ!
 	
 	Info_ClearChoices 	(DIA_Hagen_Teach);
 	Info_AddChoice 		(DIA_Hagen_Teach,	DIALOG_BACK		,DIA_Hagen_Teach_Back);
@@ -693,8 +693,8 @@ FUNC VOID DIA_Hagen_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_2H] >= 100)
 	{
-		AI_Output (self,other,"DIA_Hagen_Teach_04_00"); //Ты стал великолепным мечником. Мне больше нечему учить тебя.
-		AI_Output (self,other,"DIA_Hagen_Teach_04_01"); //Да ведет твою руку в будущих свершениях мудрость мастера-мечника.
+		AI_Output (self,other,"DIA_Hagen_Teach_04_00"); //РўС‹ СЃС‚Р°Р» РІРµР»РёРєРѕР»РµРїРЅС‹Рј РјРµС‡РЅРёРєРѕРј. РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ.
+		AI_Output (self,other,"DIA_Hagen_Teach_04_01"); //Р”Р° РІРµРґРµС‚ С‚РІРѕСЋ СЂСѓРєСѓ РІ Р±СѓРґСѓС‰РёС… СЃРІРµСЂС€РµРЅРёСЏС… РјСѓРґСЂРѕСЃС‚СЊ РјР°СЃС‚РµСЂР°-РјРµС‡РЅРёРєР°.
 		DIA_Hagen_Teach_permanent = TRUE;
 	};
 	Info_ClearChoices (DIA_Hagen_Teach);
@@ -738,7 +738,7 @@ INSTANCE DIA_Lord_Hagen_Knight		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Knight_Condition;
 	information	 = 	DIA_Lord_Hagen_Knight_Info;
 	permanent	 = 	TRUE; 
-	description	 = 	"Я хочу поступить на службу в орден.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕСЃС‚СѓРїРёС‚СЊ РЅР° СЃР»СѓР¶Р±Сѓ РІ РѕСЂРґРµРЅ.";
 };
 FUNC INT DIA_Lord_Hagen_Knight_Condition ()
 {	
@@ -750,23 +750,23 @@ FUNC INT DIA_Lord_Hagen_Knight_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_Knight_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_Knight_15_00"); //Я хочу поступить на службу в орден.
+	AI_Output			(other, self, "DIA_Lord_Hagen_Knight_15_00"); //РЇ С…РѕС‡Сѓ РїРѕСЃС‚СѓРїРёС‚СЊ РЅР° СЃР»СѓР¶Р±Сѓ РІ РѕСЂРґРµРЅ.
 	
 	if (MIS_RescueBennet == LOG_SUCCESS)
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_Knight_04_01"); //Хорошо, ты доказал, что у тебя есть мужество, опыт и знания, чтобы служить Инносу.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_02"); //Твои дела свидетельствуют о том, что у тебя чистое сердце.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_03"); //Если таково твое желание, наш орден с радостью примет тебя.
+		AI_Output			(self, other, "DIA_Lord_Hagen_Knight_04_01"); //РҐРѕСЂРѕС€Рѕ, С‚С‹ РґРѕРєР°Р·Р°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РјСѓР¶РµСЃС‚РІРѕ, РѕРїС‹С‚ Рё Р·РЅР°РЅРёСЏ, С‡С‚РѕР±С‹ СЃР»СѓР¶РёС‚СЊ РРЅРЅРѕСЃСѓ.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_02"); //РўРІРѕРё РґРµР»Р° СЃРІРёРґРµС‚РµР»СЊСЃС‚РІСѓСЋС‚ Рѕ С‚РѕРј, С‡С‚Рѕ Сѓ С‚РµР±СЏ С‡РёСЃС‚РѕРµ СЃРµСЂРґС†Рµ.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_03"); //Р•СЃР»Рё С‚Р°РєРѕРІРѕ С‚РІРѕРµ Р¶РµР»Р°РЅРёРµ, РЅР°С€ РѕСЂРґРµРЅ СЃ СЂР°РґРѕСЃС‚СЊСЋ РїСЂРёРјРµС‚ С‚РµР±СЏ.
 		
 		Info_ClearChoices (DIA_Lord_Hagen_Knight);
-		Info_AddChoice (DIA_Lord_Hagen_Knight,"Я еще не совсем уверен.",DIA_Lord_Hagen_Knight_No);
-		Info_AddChoice (DIA_Lord_Hagen_Knight,"Я готов!",DIA_Lord_Hagen_Knight_Yes);
+		Info_AddChoice (DIA_Lord_Hagen_Knight,"РЇ РµС‰Рµ РЅРµ СЃРѕРІСЃРµРј СѓРІРµСЂРµРЅ.",DIA_Lord_Hagen_Knight_No);
+		Info_AddChoice (DIA_Lord_Hagen_Knight,"РЇ РіРѕС‚РѕРІ!",DIA_Lord_Hagen_Knight_Yes);
 	}
 	else
 	{
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_04"); //Стать воином Инноса означает  полностью посвятить себя служению Инносу.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_05"); //Только самые благородные и мужественные воины могут быть приняты в орден.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_06"); //Если ты твердо решил стать паладином, ты должен доказать, что достоин этого.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_04"); //РЎС‚Р°С‚СЊ РІРѕРёРЅРѕРј РРЅРЅРѕСЃР° РѕР·РЅР°С‡Р°РµС‚  РїРѕР»РЅРѕСЃС‚СЊСЋ РїРѕСЃРІСЏС‚РёС‚СЊ СЃРµР±СЏ СЃР»СѓР¶РµРЅРёСЋ РРЅРЅРѕСЃСѓ.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_05"); //РўРѕР»СЊРєРѕ СЃР°РјС‹Рµ Р±Р»Р°РіРѕСЂРѕРґРЅС‹Рµ Рё РјСѓР¶РµСЃС‚РІРµРЅРЅС‹Рµ РІРѕРёРЅС‹ РјРѕРіСѓС‚ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚С‹ РІ РѕСЂРґРµРЅ.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_06"); //Р•СЃР»Рё С‚С‹ С‚РІРµСЂРґРѕ СЂРµС€РёР» СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј, С‚С‹ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РґРѕСЃС‚РѕРёРЅ СЌС‚РѕРіРѕ.
 	};
 	
 	Hagen_GaveInfoKnight = TRUE;	
@@ -774,22 +774,22 @@ FUNC VOID DIA_Lord_Hagen_Knight_Info ()
 
 FUNC VOID DIA_Lord_Hagen_Knight_No ()
 {
-	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_No_15_00"); //Я еще не совсем уверен.
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_No_04_01"); //Тогда иди и освободи свое сердце от сомнений. Возвращайся, когда будешь готов.
+	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_No_15_00"); //РЇ РµС‰Рµ РЅРµ СЃРѕРІСЃРµРј СѓРІРµСЂРµРЅ.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_No_04_01"); //РўРѕРіРґР° РёРґРё Рё РѕСЃРІРѕР±РѕРґРё СЃРІРѕРµ СЃРµСЂРґС†Рµ РѕС‚ СЃРѕРјРЅРµРЅРёР№. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 
 	Info_ClearChoices (DIA_Lord_Hagen_Knight);
 };
 
 FUNC VOID DIA_Lord_Hagen_Knight_Yes()
 {
-	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_Yes_15_00"); //Я готов!
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_01"); //(торжественно) Тогда так тому и быть!
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_02"); //(торжественно) Много людей вступило на этот путь и отдало свои жизни во имя Инноса.
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_03"); //(торжественно) Ты клянешься, что твои дела не опозорят их честь и будут прославлять Инноса?
-	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_Yes_15_04"); //Клянусь!
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_05"); //Тогда отныне ты принадлежишь к нашему братству.
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_06"); //Я произвожу тебя в воины Инноса.
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_07"); //Я даю тебе оружие и доспехи рыцаря. Носи их с гордостью, рыцарь!
+	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_Yes_15_00"); //РЇ РіРѕС‚РѕРІ!
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_01"); //(С‚РѕСЂР¶РµСЃС‚РІРµРЅРЅРѕ) РўРѕРіРґР° С‚Р°Рє С‚РѕРјСѓ Рё Р±С‹С‚СЊ!
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_02"); //(С‚РѕСЂР¶РµСЃС‚РІРµРЅРЅРѕ) РњРЅРѕРіРѕ Р»СЋРґРµР№ РІСЃС‚СѓРїРёР»Рѕ РЅР° СЌС‚РѕС‚ РїСѓС‚СЊ Рё РѕС‚РґР°Р»Рѕ СЃРІРѕРё Р¶РёР·РЅРё РІРѕ РёРјСЏ РРЅРЅРѕСЃР°.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_03"); //(С‚РѕСЂР¶РµСЃС‚РІРµРЅРЅРѕ) РўС‹ РєР»СЏРЅРµС€СЊСЃСЏ, С‡С‚Рѕ С‚РІРѕРё РґРµР»Р° РЅРµ РѕРїРѕР·РѕСЂСЏС‚ РёС… С‡РµСЃС‚СЊ Рё Р±СѓРґСѓС‚ РїСЂРѕСЃР»Р°РІР»СЏС‚СЊ РРЅРЅРѕСЃР°?
+	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_Yes_15_04"); //РљР»СЏРЅСѓСЃСЊ!
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_05"); //РўРѕРіРґР° РѕС‚РЅС‹РЅРµ С‚С‹ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє РЅР°С€РµРјСѓ Р±СЂР°С‚СЃС‚РІСѓ.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_06"); //РЇ РїСЂРѕРёР·РІРѕР¶Сѓ С‚РµР±СЏ РІ РІРѕРёРЅС‹ РРЅРЅРѕСЃР°.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_07"); //РЇ РґР°СЋ С‚РµР±Рµ РѕСЂСѓР¶РёРµ Рё РґРѕСЃРїРµС…Рё СЂС‹С†Р°СЂСЏ. РќРѕСЃРё РёС… СЃ РіРѕСЂРґРѕСЃС‚СЊСЋ, СЂС‹С†Р°СЂСЊ!
 
 	CreateInvItems (self,ITAR_PAL_M,1);
 	B_GiveInvItems (self,other,ITAR_PAL_M,1);
@@ -808,14 +808,14 @@ FUNC VOID DIA_Lord_Hagen_Knight_Yes()
 	AI_UnequipArmor (other);
 	AI_EquipArmor 	(other,ITAR_PAL_M);
 
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_08"); //С этого времени благодаря твоему рангу ты будешь иметь доступ в монастырь.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_08"); //РЎ СЌС‚РѕРіРѕ РІСЂРµРјРµРЅРё Р±Р»Р°РіРѕРґР°СЂСЏ С‚РІРѕРµРјСѓ СЂР°РЅРіСѓ С‚С‹ Р±СѓРґРµС€СЊ РёРјРµС‚СЊ РґРѕСЃС‚СѓРї РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.
 
 	if ((Npc_IsDead(Albrecht))== FALSE)
 	{
-		AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_09"); //Альбрехт научит тебя магии, иди и поговори с ним.
+		AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_09"); //РђР»СЊР±СЂРµС…С‚ РЅР°СѓС‡РёС‚ С‚РµР±СЏ РјР°РіРёРё, РёРґРё Рё РїРѕРіРѕРІРѕСЂРё СЃ РЅРёРј.
 	};
 	
-	AI_Output (self ,other,"DIA_Lord_Hagen_Add_04_02"); //И, конечно же, наши казармы в верхней части города всегда открыты для тебя.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Add_04_02"); //Р, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, РЅР°С€Рё РєР°Р·Р°СЂРјС‹ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР° РІСЃРµРіРґР° РѕС‚РєСЂС‹С‚С‹ РґР»СЏ С‚РµР±СЏ.
 
 	hero.guild = GIL_PAL;
 	Npc_SetTrueGuild (other, GIL_PAL);
@@ -825,7 +825,7 @@ FUNC VOID DIA_Lord_Hagen_Knight_Yes()
 
 
 //***********************************************
-//	Wie kann ich mich wьrdig erweisen
+//	Wie kann ich mich wСЊrdig erweisen
 //***********************************************
 
 INSTANCE DIA_Lord_Hagen_WhatProof		(C_INFO)
@@ -835,7 +835,7 @@ INSTANCE DIA_Lord_Hagen_WhatProof		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_WhatProof_Condition;
 	information	 = 	DIA_Lord_Hagen_WhatProof_Info;
 	permanent	 = 	FALSE; 
-	description	 = 	"Как я могу доказать, что достоин?";
+	description	 = 	"РљР°Рє СЏ РјРѕРіСѓ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РґРѕСЃС‚РѕРёРЅ?";
 };
 
 FUNC INT DIA_Lord_Hagen_WhatProof_Condition ()
@@ -849,15 +849,15 @@ FUNC INT DIA_Lord_Hagen_WhatProof_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_WhatProof_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_WhatProof_15_00"); //Как я могу доказать, что достоин?
-	AI_Output			(self, other, "DIA_Lord_Hagen_WhatProof_04_01"); //Твои дела покажут, достоин ты или нет.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_02"); //Мы сражаемся за свободу и справедливость во имя Инноса.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_03"); //Мы сражаемся против Белиара и его приспешников, которые жаждут уничтожить орден Инноса.
-	AI_Output			(other, self, "DIA_Lord_Hagen_WhatProof_15_04"); //Я понимаю.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_05"); //Ты ничего не понимаешь! Наша честь - наша жизнь, а наша жизнь - Иннос.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_06"); //Паладин идет в бой с именем Инноса на устах, и многие из нас положили свою жизнь на алтарь вечной борьбы Добра со Злом.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_07"); //Все мы как один посвятили себя этой борьбе. Если мы потерпим поражение, мы оскверним память наших павших товарищей.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_08"); //Только тот, кто сердцем понимает это, достоин быть паладином.
+	AI_Output			(other, self, "DIA_Lord_Hagen_WhatProof_15_00"); //РљР°Рє СЏ РјРѕРіСѓ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РґРѕСЃС‚РѕРёРЅ?
+	AI_Output			(self, other, "DIA_Lord_Hagen_WhatProof_04_01"); //РўРІРѕРё РґРµР»Р° РїРѕРєР°Р¶СѓС‚, РґРѕСЃС‚РѕРёРЅ С‚С‹ РёР»Рё РЅРµС‚.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_02"); //РњС‹ СЃСЂР°Р¶Р°РµРјСЃСЏ Р·Р° СЃРІРѕР±РѕРґСѓ Рё СЃРїСЂР°РІРµРґР»РёРІРѕСЃС‚СЊ РІРѕ РёРјСЏ РРЅРЅРѕСЃР°.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_03"); //РњС‹ СЃСЂР°Р¶Р°РµРјСЃСЏ РїСЂРѕС‚РёРІ Р‘РµР»РёР°СЂР° Рё РµРіРѕ РїСЂРёСЃРїРµС€РЅРёРєРѕРІ, РєРѕС‚РѕСЂС‹Рµ Р¶Р°Р¶РґСѓС‚ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ РѕСЂРґРµРЅ РРЅРЅРѕСЃР°.
+	AI_Output			(other, self, "DIA_Lord_Hagen_WhatProof_15_04"); //РЇ РїРѕРЅРёРјР°СЋ.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_05"); //РўС‹ РЅРёС‡РµРіРѕ РЅРµ РїРѕРЅРёРјР°РµС€СЊ! РќР°С€Р° С‡РµСЃС‚СЊ - РЅР°С€Р° Р¶РёР·РЅСЊ, Р° РЅР°С€Р° Р¶РёР·РЅСЊ - РРЅРЅРѕСЃ.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_06"); //РџР°Р»Р°РґРёРЅ РёРґРµС‚ РІ Р±РѕР№ СЃ РёРјРµРЅРµРј РРЅРЅРѕСЃР° РЅР° СѓСЃС‚Р°С…, Рё РјРЅРѕРіРёРµ РёР· РЅР°СЃ РїРѕР»РѕР¶РёР»Рё СЃРІРѕСЋ Р¶РёР·РЅСЊ РЅР° Р°Р»С‚Р°СЂСЊ РІРµС‡РЅРѕР№ Р±РѕСЂСЊР±С‹ Р”РѕР±СЂР° СЃРѕ Р—Р»РѕРј.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_07"); //Р’СЃРµ РјС‹ РєР°Рє РѕРґРёРЅ РїРѕСЃРІСЏС‚РёР»Рё СЃРµР±СЏ СЌС‚РѕР№ Р±РѕСЂСЊР±Рµ. Р•СЃР»Рё РјС‹ РїРѕС‚РµСЂРїРёРј РїРѕСЂР°Р¶РµРЅРёРµ, РјС‹ РѕСЃРєРІРµСЂРЅРёРј РїР°РјСЏС‚СЊ РЅР°С€РёС… РїР°РІС€РёС… С‚РѕРІР°СЂРёС‰РµР№.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_08"); //РўРѕР»СЊРєРѕ С‚РѕС‚, РєС‚Рѕ СЃРµСЂРґС†РµРј РїРѕРЅРёРјР°РµС‚ СЌС‚Рѕ, РґРѕСЃС‚РѕРёРЅ Р±С‹С‚СЊ РїР°Р»Р°РґРёРЅРѕРј.
 };
 
 
@@ -909,7 +909,7 @@ INSTANCE DIA_Lord_Hagen_KAP3U4_PERM(C_INFO)
 	condition	= DIA_Lord_Hagen_KAP3U4_PERM_Condition;
 	information	= DIA_Lord_Hagen_KAP3U4_PERM_Info;
 	permanent	= TRUE;
-	description = "Как ситуация?";
+	description = "РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };                       
 FUNC INT DIA_Lord_Hagen_KAP3U4_PERM_Condition()
 {
@@ -920,21 +920,21 @@ FUNC INT DIA_Lord_Hagen_KAP3U4_PERM_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_KAP3U4_PERM_Info()
 {	
-	AI_Output (other,self ,"DIA_Lord_Hagen_KAP3U4_PERM_15_00"); //Как ситуация?
+	AI_Output (other,self ,"DIA_Lord_Hagen_KAP3U4_PERM_15_00"); //РљР°Рє СЃРёС‚СѓР°С†РёСЏ?
 	
 	if (MIS_OLDWORLD == LOG_SUCCESS)
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_04"); //Я должен найти способ спасти эту экспедицию.
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_05"); //Мы должны сделать что-то с драконами.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_04"); //РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё СЃРїРѕСЃРѕР± СЃРїР°СЃС‚Рё СЌС‚Сѓ СЌРєСЃРїРµРґРёС†РёСЋ.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_05"); //РњС‹ РґРѕР»Р¶РЅС‹ СЃРґРµР»Р°С‚СЊ С‡С‚Рѕ-С‚Рѕ СЃ РґСЂР°РєРѕРЅР°РјРё.
 		if (Hagen_KnowsEyeKaputt == FALSE)
 		{
-			AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_06"); //(себе под нос) Возможно, Глаз Инноса может спасти нас всех...
+			AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_06"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р’РѕР·РјРѕР¶РЅРѕ, Р“Р»Р°Р· РРЅРЅРѕСЃР° РјРѕР¶РµС‚ СЃРїР°СЃС‚Рё РЅР°СЃ РІСЃРµС…...
 		};
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lord_Hagen_KAP3U4_PERM_04_01"); //Я с ума сойду здесь. Я солдат, а не бюрократ.
-		AI_Output (self ,other,"DIA_Lord_Hagen_KAP3U4_PERM_04_02"); //Из-за всей этой бумажной работы, что я должен делать, я уже почти забыл ощущение от клинка в руке.
+		AI_Output (self ,other,"DIA_Lord_Hagen_KAP3U4_PERM_04_01"); //РЇ СЃ СѓРјР° СЃРѕР№РґСѓ Р·РґРµСЃСЊ. РЇ СЃРѕР»РґР°С‚, Р° РЅРµ Р±СЋСЂРѕРєСЂР°С‚.
+		AI_Output (self ,other,"DIA_Lord_Hagen_KAP3U4_PERM_04_02"); //РР·-Р·Р° РІСЃРµР№ СЌС‚РѕР№ Р±СѓРјР°Р¶РЅРѕР№ СЂР°Р±РѕС‚С‹, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ, СЏ СѓР¶Рµ РїРѕС‡С‚Рё Р·Р°Р±С‹Р» РѕС‰СѓС‰РµРЅРёРµ РѕС‚ РєР»РёРЅРєР° РІ СЂСѓРєРµ.
 	};
 };
 
@@ -949,7 +949,7 @@ INSTANCE DIA_Lord_Hagen_EyeBroken(C_INFO)
 	condition	= DIA_Lord_Hagen_EyeBroken_Condition;
 	information	= DIA_Lord_Hagen_EyeBroken_Info;
 	permanent	= FALSE;
-	description = "Глаз у меня, но он поврежден.";
+	description = "Р“Р»Р°Р· Сѓ РјРµРЅСЏ, РЅРѕ РѕРЅ РїРѕРІСЂРµР¶РґРµРЅ.";
 };                       
 FUNC INT DIA_Lord_Hagen_EyeBroken_Condition()
 {
@@ -963,9 +963,9 @@ FUNC INT DIA_Lord_Hagen_EyeBroken_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_EyeBroken_Info()
 {	
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_07"); //Глаз у меня, но он поврежден.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_08"); //ЧТО? О, Иннос! Что ты наделал? Нам нужен этот Глаз!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_09"); //Поговори с  Пирокаром! Должен быть способ восстановить его.
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_07"); //Р“Р»Р°Р· Сѓ РјРµРЅСЏ, РЅРѕ РѕРЅ РїРѕРІСЂРµР¶РґРµРЅ.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_08"); //Р§РўРћ? Рћ, РРЅРЅРѕСЃ! Р§С‚Рѕ С‚С‹ РЅР°РґРµР»Р°Р»? РќР°Рј РЅСѓР¶РµРЅ СЌС‚РѕС‚ Р“Р»Р°Р·!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_09"); //РџРѕРіРѕРІРѕСЂРё СЃ  РџРёСЂРѕРєР°СЂРѕРј! Р”РѕР»Р¶РµРЅ Р±С‹С‚СЊ СЃРїРѕСЃРѕР± РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ РµРіРѕ.
 	Hagen_KnowsEyeKaputt = TRUE;
 };
 
@@ -980,7 +980,7 @@ instance DIA_Lord_Hagen_BACKINTOWN		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_BACKINTOWN_Condition;
 	information	 = 	DIA_Lord_Hagen_BACKINTOWN_Info;
 	permanent	 = 	FALSE; 
-	description	 = 	"Я принес тебе новости от Гаронда.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РЅРѕРІРѕСЃС‚Рё РѕС‚ Р“Р°СЂРѕРЅРґР°.";
 };
 func int DIA_Lord_Hagen_BACKINTOWN_Condition ()
 {	
@@ -993,20 +993,20 @@ func int DIA_Lord_Hagen_BACKINTOWN_Condition ()
 };
 func void DIA_Lord_Hagen_BACKINTOWN_Info ()
 {
-	AI_Output	(other, self, "DIA_Lord_Hagen_BACKINTOWN_15_00"); //Я принес тебе новости от Гаронда. Вот, он начертал эти строки для тебя.
+	AI_Output	(other, self, "DIA_Lord_Hagen_BACKINTOWN_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РЅРѕРІРѕСЃС‚Рё РѕС‚ Р“Р°СЂРѕРЅРґР°. Р’РѕС‚, РѕРЅ РЅР°С‡РµСЂС‚Р°Р» СЌС‚Рё СЃС‚СЂРѕРєРё РґР»СЏ С‚РµР±СЏ.
 	B_GiveInvItems 	(other, self,ItWr_PaladinLetter_MIS,1);
 	B_UseFakeScroll 	();  
-	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_01"); //Наша ситуация хуже, чем я опасался. Но доложи мне о ситуации в Долине Рудников.
-	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_02"); //Паладины заперты в замке Долины Рудников, окруженном орками.
-	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_03"); //Они потеряли много людей в старательских операциях и добыли очень мало руды.
-	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_04"); //И, должен добавить, без помощи извне им всем скоро придет конец. Вот такие дела.
-	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_05"); //Я должен найти способ спасти эту экспедицию. Ты многое сделал для нас. Иннос благодарит тебя...
-	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_06"); //Мне не интересна его благодарность. Мне нужен его глаз.
-	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_07"); //Да, конечно. Я держу свое слово. Возьми это письмо. Оно откроет перед тобой монастырские врата.
-	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_08"); //Поговори с Пирокаром, высшим Магом Огня, и покажи ему это письмо с полномочиями. Он предоставит тебе доступ к Глазу Инноса.
+	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_01"); //РќР°С€Р° СЃРёС‚СѓР°С†РёСЏ С…СѓР¶Рµ, С‡РµРј СЏ РѕРїР°СЃР°Р»СЃСЏ. РќРѕ РґРѕР»РѕР¶Рё РјРЅРµ Рѕ СЃРёС‚СѓР°С†РёРё РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_02"); //РџР°Р»Р°РґРёРЅС‹ Р·Р°РїРµСЂС‚С‹ РІ Р·Р°РјРєРµ Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ, РѕРєСЂСѓР¶РµРЅРЅРѕРј РѕСЂРєР°РјРё.
+	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_03"); //РћРЅРё РїРѕС‚РµСЂСЏР»Рё РјРЅРѕРіРѕ Р»СЋРґРµР№ РІ СЃС‚Р°СЂР°С‚РµР»СЊСЃРєРёС… РѕРїРµСЂР°С†РёСЏС… Рё РґРѕР±С‹Р»Рё РѕС‡РµРЅСЊ РјР°Р»Рѕ СЂСѓРґС‹.
+	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_04"); //Р, РґРѕР»Р¶РµРЅ РґРѕР±Р°РІРёС‚СЊ, Р±РµР· РїРѕРјРѕС‰Рё РёР·РІРЅРµ РёРј РІСЃРµРј СЃРєРѕСЂРѕ РїСЂРёРґРµС‚ РєРѕРЅРµС†. Р’РѕС‚ С‚Р°РєРёРµ РґРµР»Р°.
+	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_05"); //РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё СЃРїРѕСЃРѕР± СЃРїР°СЃС‚Рё СЌС‚Сѓ СЌРєСЃРїРµРґРёС†РёСЋ. РўС‹ РјРЅРѕРіРѕРµ СЃРґРµР»Р°Р» РґР»СЏ РЅР°СЃ. РРЅРЅРѕСЃ Р±Р»Р°РіРѕРґР°СЂРёС‚ С‚РµР±СЏ...
+	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_06"); //РњРЅРµ РЅРµ РёРЅС‚РµСЂРµСЃРЅР° РµРіРѕ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚СЊ. РњРЅРµ РЅСѓР¶РµРЅ РµРіРѕ РіР»Р°Р·.
+	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_07"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РЇ РґРµСЂР¶Сѓ СЃРІРѕРµ СЃР»РѕРІРѕ. Р’РѕР·СЊРјРё СЌС‚Рѕ РїРёСЃСЊРјРѕ. РћРЅРѕ РѕС‚РєСЂРѕРµС‚ РїРµСЂРµРґ С‚РѕР±РѕР№ РјРѕРЅР°СЃС‚С‹СЂСЃРєРёРµ РІСЂР°С‚Р°.
+	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_08"); //РџРѕРіРѕРІРѕСЂРё СЃ РџРёСЂРѕРєР°СЂРѕРј, РІС‹СЃС€РёРј РњР°РіРѕРј РћРіРЅСЏ, Рё РїРѕРєР°Р¶Рё РµРјСѓ СЌС‚Рѕ РїРёСЃСЊРјРѕ СЃ РїРѕР»РЅРѕРјРѕС‡РёСЏРјРё. РћРЅ РїСЂРµРґРѕСЃС‚Р°РІРёС‚ С‚РµР±Рµ РґРѕСЃС‚СѓРї Рє Р“Р»Р°Р·Сѓ РРЅРЅРѕСЃР°.
 	
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_00"); //И еще одно, прежде чем ты уйдешь...
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_01"); //Возьми эту руну в знак моей благодарности. Она вернет тебя в город, когда ты этого захочешь.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_00"); //Р РµС‰Рµ РѕРґРЅРѕ, РїСЂРµР¶РґРµ С‡РµРј С‚С‹ СѓР№РґРµС€СЊ...
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_01"); //Р’РѕР·СЊРјРё СЌС‚Сѓ СЂСѓРЅСѓ РІ Р·РЅР°Рє РјРѕРµР№ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё. РћРЅР° РІРµСЂРЅРµС‚ С‚РµР±СЏ РІ РіРѕСЂРѕРґ, РєРѕРіРґР° С‚С‹ СЌС‚РѕРіРѕ Р·Р°С…РѕС‡РµС€СЊ.
 	B_GiveInvItems (self, other, ItRu_TeleportSeaport, 1);
 	
 	
@@ -1015,13 +1015,13 @@ func void DIA_Lord_Hagen_BACKINTOWN_Info ()
 	MIS_InnosEyeStolen = TRUE;
 	MIS_OLDWORLD = LOG_SUCCESS;
 	
-	B_LogEntry (TOPIC_INNOSEYE,"Лорд Хаген дал мне записку. Она заставит мастера Пирокара в монастыре отдать мне Глаз Инноса.");
+	B_LogEntry (TOPIC_INNOSEYE,"Р›РѕСЂРґ РҐР°РіРµРЅ РґР°Р» РјРЅРµ Р·Р°РїРёСЃРєСѓ. РћРЅР° Р·Р°СЃС‚Р°РІРёС‚ РјР°СЃС‚РµСЂР° РџРёСЂРѕРєР°СЂР° РІ РјРѕРЅР°СЃС‚С‹СЂРµ РѕС‚РґР°С‚СЊ РјРЅРµ Р“Р»Р°Р· РРЅРЅРѕСЃР°.");
 
 			Wld_InsertNpc 		(VLK_4250_Jorgen,"NW_MONASTERY_BRIDGE_01");
 			Wld_InsertNpc		(BDT_1050_Landstreicher, "NW_TROLLAREA_NOVCHASE_01");
 			Wld_InsertNpc		(BDT_1051_Wegelagerer, "NW_TROLLAREA_RITUALFOREST_09"); 
 			Wld_InsertNpc		(BDT_1052_Wegelagerer, "NW_TROLLAREA_RITUALFOREST_09");
-			B_KillNpc 			(BDT_1020_Bandit_L);	//Joly: macht Platz fьr DMT_1200_Dementor
+			B_KillNpc 			(BDT_1020_Bandit_L);	//Joly: macht Platz fСЊr DMT_1200_Dementor
 			Wld_InsertNpc		(DMT_1200_Dementor, "NW_TROLLAREA_RITUALPATH_01");
 			//Wld_InsertNpc		(DMT_1201_Dementor, "NW_TROLLAREA_RITUALPATH_01");
 			Wld_InsertNpc		(DMT_1202_Dementor, "NW_TROLLAREA_RITUAL_01");
@@ -1069,7 +1069,7 @@ INSTANCE DIA_Lord_Hagen_RescueBennet		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_RescueBennet_Condition;
 	information	 = 	DIA_Lord_Hagen_RescueBennet_Info;
 	permanent	 = 	TRUE; 
-	description	 = 	"Мне нужно поговорить с тобой о Беннете.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ Р‘РµРЅРЅРµС‚Рµ.";
 };
 
 FUNC INT DIA_Lord_Hagen_RescueBennet_Condition ()
@@ -1083,38 +1083,38 @@ FUNC INT DIA_Lord_Hagen_RescueBennet_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_RescueBennet_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_15_00"); //Мне нужно поговорить с тобой о Беннете.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ Р‘РµРЅРЅРµС‚Рµ.
 	
 	if (Hagen_einmalBennet == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_04_01"); //Но этот наемник убил одного их моих людей.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_04_01"); //РќРѕ СЌС‚РѕС‚ РЅР°РµРјРЅРёРє СѓР±РёР» РѕРґРЅРѕРіРѕ РёС… РјРѕРёС… Р»СЋРґРµР№.
 		Hagen_einmalBennet = TRUE;
 	};
 	
 	Info_ClearChoices  (DIA_Lord_Hagen_RescueBennet);
 	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,DIALOG_BACK,DIA_Lord_Hagen_RescueBennet_Back);
-	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Почему ты так уверен, что убийца именно Беннет?",DIA_Lord_Hagen_RescueBennet_WhySure);
+	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"РџРѕС‡РµРјСѓ С‚С‹ С‚Р°Рє СѓРІРµСЂРµРЅ, С‡С‚Рѕ СѓР±РёР№С†Р° РёРјРµРЅРЅРѕ Р‘РµРЅРЅРµС‚?",DIA_Lord_Hagen_RescueBennet_WhySure);
 	/*
 	if (RescueBennet_KnowsWitness == TRUE)
 	{
 		Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Wer ist der Zeuge?",DIA_Lord_Hagen_RescueBennet_Witness);
 	};
 	*/
-	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Я верю, что Беннет невиновен.",DIA_Lord_Hagen_RescueBennet_Innoscent);
+	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"РЇ РІРµСЂСЋ, С‡С‚Рѕ Р‘РµРЅРЅРµС‚ РЅРµРІРёРЅРѕРІРµРЅ.",DIA_Lord_Hagen_RescueBennet_Innoscent);
 		
 	if (MIS_RescueBennet == LOG_RUNNING)
 	&& (MIS_RitualInnosEyeRepair == LOG_RUNNING)
 	&& (Hagen_KnowsEyeKaputt == TRUE)
 	{
-		Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Беннет мог бы помочь нам починить Глаз Инноса.",DIA_Lord_Hagen_RescueBennet_Hilfe);
+		Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Р‘РµРЅРЅРµС‚ РјРѕРі Р±С‹ РїРѕРјРѕС‡СЊ РЅР°Рј РїРѕС‡РёРЅРёС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°.",DIA_Lord_Hagen_RescueBennet_Hilfe);
 	};
 };
 
 func void DIA_Lord_Hagen_RescueBennet_Hilfe()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_16"); //Беннет мог бы помочь нам починить Глаз Инноса.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_17"); //Даже если бы он мог вызвать самого Инноса на землю...
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_18"); //Он убил паладина. За это он будет казнен!
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_16"); //Р‘РµРЅРЅРµС‚ РјРѕРі Р±С‹ РїРѕРјРѕС‡СЊ РЅР°Рј РїРѕС‡РёРЅРёС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_17"); //Р”Р°Р¶Рµ РµСЃР»Рё Р±С‹ РѕРЅ РјРѕРі РІС‹Р·РІР°С‚СЊ СЃР°РјРѕРіРѕ РРЅРЅРѕСЃР° РЅР° Р·РµРјР»СЋ...
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_18"); //РћРЅ СѓР±РёР» РїР°Р»Р°РґРёРЅР°. Р—Р° СЌС‚Рѕ РѕРЅ Р±СѓРґРµС‚ РєР°Р·РЅРµРЅ!
 };
 
 FUNC VOID DIA_Lord_Hagen_RescueBennet_Back()
@@ -1124,16 +1124,16 @@ FUNC VOID DIA_Lord_Hagen_RescueBennet_Back()
 
 FUNC VOID DIA_Lord_Hagen_RescueBennet_WhySure()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_WhySure_15_00"); //Почему ты так уверен, что убийца именно Беннет?
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_WhySure_04_01"); //У нас есть свидетель.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_WhySure_04_02"); //Как видишь, нет никаких сомнений в виновности этого наемника.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_WhySure_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ С‚Р°Рє СѓРІРµСЂРµРЅ, С‡С‚Рѕ СѓР±РёР№С†Р° РёРјРµРЅРЅРѕ Р‘РµРЅРЅРµС‚?
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_WhySure_04_01"); //РЈ РЅР°СЃ РµСЃС‚СЊ СЃРІРёРґРµС‚РµР»СЊ.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_WhySure_04_02"); //РљР°Рє РІРёРґРёС€СЊ, РЅРµС‚ РЅРёРєР°РєРёС… СЃРѕРјРЅРµРЅРёР№ РІ РІРёРЅРѕРІРЅРѕСЃС‚Рё СЌС‚РѕРіРѕ РЅР°РµРјРЅРёРєР°.
 	//neu zusammengefasst M.F.
-	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Witness_15_00"); //Кто этот свидетель?
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Корнелиус, секретарь губернатора, видел, как произошло убийство.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Его описание подходит к Беннету, в этом нет никаких сомнений. По моему мнению, это достаточное доказательство.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Этот наемник будет повешен за измену.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Witness_15_00"); //РљС‚Рѕ СЌС‚РѕС‚ СЃРІРёРґРµС‚РµР»СЊ?
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //РљРѕСЂРЅРµР»РёСѓСЃ, СЃРµРєСЂРµС‚Р°СЂСЊ РіСѓР±РµСЂРЅР°С‚РѕСЂР°, РІРёРґРµР», РєР°Рє РїСЂРѕРёР·РѕС€Р»Рѕ СѓР±РёР№СЃС‚РІРѕ.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Р•РіРѕ РѕРїРёСЃР°РЅРёРµ РїРѕРґС…РѕРґРёС‚ Рє Р‘РµРЅРЅРµС‚Сѓ, РІ СЌС‚РѕРј РЅРµС‚ РЅРёРєР°РєРёС… СЃРѕРјРЅРµРЅРёР№. РџРѕ РјРѕРµРјСѓ РјРЅРµРЅРёСЋ, СЌС‚Рѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕРµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Р­С‚РѕС‚ РЅР°РµРјРЅРёРє Р±СѓРґРµС‚ РїРѕРІРµС€РµРЅ Р·Р° РёР·РјРµРЅСѓ.
 
-	B_LogEntry (TOPIC_RESCUEBENNET,"Корнелиус, секретарь губернатора, является свидетелем. Он утверждает, что был свидетелем убийства."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"РљРѕСЂРЅРµР»РёСѓСЃ, СЃРµРєСЂРµС‚Р°СЂСЊ РіСѓР±РµСЂРЅР°С‚РѕСЂР°, СЏРІР»СЏРµС‚СЃСЏ СЃРІРёРґРµС‚РµР»РµРј. РћРЅ СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ Р±С‹Р» СЃРІРёРґРµС‚РµР»РµРј СѓР±РёР№СЃС‚РІР°."); 
 
 	RecueBennet_KnowsCornelius = TRUE;
 	//RescueBennet_KnowsWitness = TRUE; 
@@ -1142,22 +1142,22 @@ FUNC VOID DIA_Lord_Hagen_RescueBennet_WhySure()
 FUNC VOID DIA_Lord_Hagen_RescueBennet_Witness()
 {
 	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Witness_15_00"); //Wer ist der Zeuge?
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Cornelius, der Sekretдr des Statthalters, hat den Mord gesehen.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Seine Beschreibung trifft zweifelsfrei auf Bennet zu. Damit ist die Sache fьr mich erledigt.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Der Sцldner wird wegen Landesverrats hдngen.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Cornelius, der SekretРґr des Statthalters, hat den Mord gesehen.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Seine Beschreibung trifft zweifelsfrei auf Bennet zu. Damit ist die Sache fСЊr mich erledigt.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Der SС†ldner wird wegen Landesverrats hРґngen.
 
-	B_LogEntry (TOPIC_RESCUEBENNET,"Cornelius, der Sekretдr des Stadthalters, ist also der Zeuge. Er behauptet, den Mord beobachtet zu haben."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"Cornelius, der SekretРґr des Stadthalters, ist also der Zeuge. Er behauptet, den Mord beobachtet zu haben."); 
 
 	RecueBennet_KnowsCornelius = TRUE;
 };
 */
 FUNC VOID DIA_Lord_Hagen_RescueBennet_Innoscent()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Innoscent_15_00"); //Я верю, что Беннет невиновен.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_01"); //Доказательства налицо. Он виновен.
-	AI_Output			(other,self , "DIA_Lord_Hagen_RescueBennet_Innoscent_15_02"); //А что если доказательства неверны?
-	AI_Output			(self ,other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_03"); //Выбирай слова. Ты выдвигаешь серьезное обвинение.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_04"); //Если ты не можешь представить доказательство того, что свидетель солгал, тебе лучше попридержать язык.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Innoscent_15_00"); //РЇ РІРµСЂСЋ, С‡С‚Рѕ Р‘РµРЅРЅРµС‚ РЅРµРІРёРЅРѕРІРµРЅ.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_01"); //Р”РѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° РЅР°Р»РёС†Рѕ. РћРЅ РІРёРЅРѕРІРµРЅ.
+	AI_Output			(other,self , "DIA_Lord_Hagen_RescueBennet_Innoscent_15_02"); //Рђ С‡С‚Рѕ РµСЃР»Рё РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° РЅРµРІРµСЂРЅС‹?
+	AI_Output			(self ,other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_03"); //Р’С‹Р±РёСЂР°Р№ СЃР»РѕРІР°. РўС‹ РІС‹РґРІРёРіР°РµС€СЊ СЃРµСЂСЊРµР·РЅРѕРµ РѕР±РІРёРЅРµРЅРёРµ.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_04"); //Р•СЃР»Рё С‚С‹ РЅРµ РјРѕР¶РµС€СЊ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ С‚РѕРіРѕ, С‡С‚Рѕ СЃРІРёРґРµС‚РµР»СЊ СЃРѕР»РіР°Р», С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРїСЂРёРґРµСЂР¶Р°С‚СЊ СЏР·С‹Рє.
 };
 
 
@@ -1172,7 +1172,7 @@ INSTANCE DIA_Lord_Hagen_Cornelius		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Cornelius_Condition;
 	information	 = 	DIA_Lord_Hagen_Cornelius_Info;
 	permanent	 = 	TRUE; 
-	description	 = 	"Корнелиус солгал.";
+	description	 = 	"РљРѕСЂРЅРµР»РёСѓСЃ СЃРѕР»РіР°Р».";
 };
 
 FUNC INT DIA_Lord_Hagen_Cornelius_Condition ()
@@ -1187,28 +1187,28 @@ FUNC INT DIA_Lord_Hagen_Cornelius_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_Cornelius_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_Cornelius_15_00"); //Корнелиус солгал.
-	AI_Output			(self, other, "DIA_Lord_Hagen_Cornelius_04_01"); //Откуда тебе это известно?
-	AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_02"); //Вот, у меня его дневник. Все в нем.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_03"); //(в ярости) Ах, гнусная мразь!
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_04"); //Перед лицом новых доказательств мне не остается ничего другого.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_05"); //Властью, данной мне королем и церковью, я провозглашаю...
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_06"); //...что с заключенного Беннета снимаются все обвинения и он подлежит освобождению.
+	AI_Output			(other, self, "DIA_Lord_Hagen_Cornelius_15_00"); //РљРѕСЂРЅРµР»РёСѓСЃ СЃРѕР»РіР°Р».
+	AI_Output			(self, other, "DIA_Lord_Hagen_Cornelius_04_01"); //РћС‚РєСѓРґР° С‚РµР±Рµ СЌС‚Рѕ РёР·РІРµСЃС‚РЅРѕ?
+	AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_02"); //Р’РѕС‚, Сѓ РјРµРЅСЏ РµРіРѕ РґРЅРµРІРЅРёРє. Р’СЃРµ РІ РЅРµРј.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_03"); //(РІ СЏСЂРѕСЃС‚Рё) РђС…, РіРЅСѓСЃРЅР°СЏ РјСЂР°Р·СЊ!
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_04"); //РџРµСЂРµРґ Р»РёС†РѕРј РЅРѕРІС‹С… РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІ РјРЅРµ РЅРµ РѕСЃС‚Р°РµС‚СЃСЏ РЅРёС‡РµРіРѕ РґСЂСѓРіРѕРіРѕ.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_05"); //Р’Р»Р°СЃС‚СЊСЋ, РґР°РЅРЅРѕР№ РјРЅРµ РєРѕСЂРѕР»РµРј Рё С†РµСЂРєРѕРІСЊСЋ, СЏ РїСЂРѕРІРѕР·РіР»Р°С€Р°СЋ...
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_06"); //...С‡С‚Рѕ СЃ Р·Р°РєР»СЋС‡РµРЅРЅРѕРіРѕ Р‘РµРЅРЅРµС‚Р° СЃРЅРёРјР°СЋС‚СЃСЏ РІСЃРµ РѕР±РІРёРЅРµРЅРёСЏ Рё РѕРЅ РїРѕРґР»РµР¶РёС‚ РѕСЃРІРѕР±РѕР¶РґРµРЅРёСЋ.
 	
 	B_StartOtherRoutine (Bennet,"START");
 	B_StartOtherRoutine (Hodges,"START");
 	
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_07"); //Корнелиус должен быть немедленно посажен под арест за лжесвидетельство.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_07"); //РљРѕСЂРЅРµР»РёСѓСЃ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РЅРµРјРµРґР»РµРЅРЅРѕ РїРѕСЃР°Р¶РµРЅ РїРѕРґ Р°СЂРµСЃС‚ Р·Р° Р»Р¶РµСЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕ.
 	
 	if (Npc_IsDead (Cornelius) == TRUE)
 	{
-		AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_08"); //Можешь не беспокоиться. Корнелиус мертв.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_09"); //Значит, он уже понес заслуженное наказание. Отлично.
+		AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_08"); //РњРѕР¶РµС€СЊ РЅРµ Р±РµСЃРїРѕРєРѕРёС‚СЊСЃСЏ. РљРѕСЂРЅРµР»РёСѓСЃ РјРµСЂС‚РІ.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_09"); //Р—РЅР°С‡РёС‚, РѕРЅ СѓР¶Рµ РїРѕРЅРµСЃ Р·Р°СЃР»СѓР¶РµРЅРЅРѕРµ РЅР°РєР°Р·Р°РЅРёРµ. РћС‚Р»РёС‡РЅРѕ.
 	}
 	else if (CorneliusFlee == TRUE)
 	{
-		AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_10"); //Он сбежал.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_11"); //Рано или поздно, он объявится. И тогда мы арестуем его.
+		AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_10"); //РћРЅ СЃР±РµР¶Р°Р».
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_11"); //Р Р°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ, РѕРЅ РѕР±СЉСЏРІРёС‚СЃСЏ. Р С‚РѕРіРґР° РјС‹ Р°СЂРµСЃС‚СѓРµРј РµРіРѕ.
 		B_StartOtherRoutine (Cornelius,"FLED");
 	}
 	else 
@@ -1223,7 +1223,7 @@ FUNC VOID DIA_Lord_Hagen_Cornelius_Info ()
 	
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_12"); //Твои дела спасли нас от бесчестья.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_12"); //РўРІРѕРё РґРµР»Р° СЃРїР°СЃР»Рё РЅР°СЃ РѕС‚ Р±РµСЃС‡РµСЃС‚СЊСЏ.
 	};
 };
 //--------Hier endet der gesamte Befreie den Schmied Klumpatsch-------------
@@ -1242,7 +1242,7 @@ INSTANCE DIA_Lord_Hagen_AugeAmStart	(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_AugeAmStart_Condition;
 	information	 = 	DIA_Lord_Hagen_AugeAmStart_Info;
 	permanent	 = 	FALSE; 
-	description	 = 	"Я надел Глаз!";
+	description	 = 	"РЇ РЅР°РґРµР» Р“Р»Р°Р·!";
 };
 
 FUNC INT DIA_Lord_Hagen_AugeAmStart_Condition ()
@@ -1256,15 +1256,15 @@ FUNC INT DIA_Lord_Hagen_AugeAmStart_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_AugeAmStart_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_10"); //Я надел Глаз!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_11"); //(благоговейно) Ты носишь Глаз!
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_10"); //РЇ РЅР°РґРµР» Р“Р»Р°Р·!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_11"); //(Р±Р»Р°РіРѕРіРѕРІРµР№РЅРѕ) РўС‹ РЅРѕСЃРёС€СЊ Р“Р»Р°Р·!
 	if (Hagen_KnowsEyeKaputt == TRUE)
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_12"); //И ты восстановил его!
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_12"); //Р С‚С‹ РІРѕСЃСЃС‚Р°РЅРѕРІРёР» РµРіРѕ!
 	};
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_13"); //Значит ты Избранный Инноса!
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_14"); //Я должен отправляться в путь и убить всех драконов в Долине Рудников!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_15"); //Иди с Инносом и уничтожь Зло с его помощью!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_13"); //Р—РЅР°С‡РёС‚ С‚С‹ РР·Р±СЂР°РЅРЅС‹Р№ РРЅРЅРѕСЃР°!
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_14"); //РЇ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ РІ РїСѓС‚СЊ Рё СѓР±РёС‚СЊ РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_15"); //РРґРё СЃ РРЅРЅРѕСЃРѕРј Рё СѓРЅРёС‡С‚РѕР¶СЊ Р—Р»Рѕ СЃ РµРіРѕ РїРѕРјРѕС‰СЊСЋ!
 };
 
 
@@ -1315,7 +1315,7 @@ instance DIA_Lord_Hagen_ANTIPALADINE(C_INFO)
 	information	 = 	DIA_Lord_Hagen_ANTIPALADINE_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Элитные воины орков нападают на наши земли.";
+	description	 = 	"Р­Р»РёС‚РЅС‹Рµ РІРѕРёРЅС‹ РѕСЂРєРѕРІ РЅР°РїР°РґР°СЋС‚ РЅР° РЅР°С€Рё Р·РµРјР»Рё.";
 };
 
 func int DIA_Lord_Hagen_ANTIPALADINE_Condition ()
@@ -1331,44 +1331,44 @@ var int Hagen_SawOrcRing;
 
 func void DIA_Lord_Hagen_ANTIPALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_00"); //Элитные воины орков нападают на наши земли.
+	AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_00"); //Р­Р»РёС‚РЅС‹Рµ РІРѕРёРЅС‹ РѕСЂРєРѕРІ РЅР°РїР°РґР°СЋС‚ РЅР° РЅР°С€Рё Р·РµРјР»Рё.
 
 	Log_CreateTopic (TOPIC_OrcElite, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_OrcElite, LOG_RUNNING);
-	B_LogEntry (TOPIC_OrcElite,"Я рассказал лорду Хагену о приближающихся ордах предводителей орков."); 
+	B_LogEntry (TOPIC_OrcElite,"РЇ СЂР°СЃСЃРєР°Р·Р°Р» Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ Рѕ РїСЂРёР±Р»РёР¶Р°СЋС‰РёС…СЃСЏ РѕСЂРґР°С… РїСЂРµРґРІРѕРґРёС‚РµР»РµР№ РѕСЂРєРѕРІ."); 
 
 	if (TalkedTo_AntiPaladin == TRUE)
 	&& (MIS_KillOrkOberst == 0)
 		{
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_01"); //Откуда у тебя такая информация?
-			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_02"); //Я говорил с одним из них. Твое имя также упоминалось.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_01"); //РћС‚РєСѓРґР° Сѓ С‚РµР±СЏ С‚Р°РєР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ?
+			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_02"); //РЇ РіРѕРІРѕСЂРёР» СЃ РѕРґРЅРёРј РёР· РЅРёС…. РўРІРѕРµ РёРјСЏ С‚Р°РєР¶Рµ СѓРїРѕРјРёРЅР°Р»РѕСЃСЊ.
 		};
 
-		AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_03"); //Чушь. Мои люди не докладывали о массированном вторжении орков.
-		AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_04"); //Возможно, какие-то их разведчики заблудились в близлежащих лесах.
+		AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_03"); //Р§СѓС€СЊ. РњРѕРё Р»СЋРґРё РЅРµ РґРѕРєР»Р°РґС‹РІР°Р»Рё Рѕ РјР°СЃСЃРёСЂРѕРІР°РЅРЅРѕРј РІС‚РѕСЂР¶РµРЅРёРё РѕСЂРєРѕРІ.
+		AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_04"); //Р’РѕР·РјРѕР¶РЅРѕ, РєР°РєРёРµ-С‚Рѕ РёС… СЂР°Р·РІРµРґС‡РёРєРё Р·Р°Р±Р»СѓРґРёР»РёСЃСЊ РІ Р±Р»РёР·Р»РµР¶Р°С‰РёС… Р»РµСЃР°С….
 
 	if (Npc_HasItems (other,ItRi_OrcEliteRing))
 		{
-			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_05"); //Это не разведчики. Я взял это кольцо с трупа одного из них.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_06"); //Покажи.
+			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_05"); //Р­С‚Рѕ РЅРµ СЂР°Р·РІРµРґС‡РёРєРё. РЇ РІР·СЏР» СЌС‚Рѕ РєРѕР»СЊС†Рѕ СЃ С‚СЂСѓРїР° РѕРґРЅРѕРіРѕ РёР· РЅРёС….
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_06"); //РџРѕРєР°Р¶Рё.
 			B_GiveInvItems 		(other, self, ItRi_OrcEliteRing,1);
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_07"); //Ммм. Это действительно неприятно.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_08"); //Это знак их силы. Значит, орки выбрались из-за своих частоколов и сражаются в открытом поле.
-			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_09"); //Я не видел, чтобы их было много. В основном, это их предводители и всего несколько бойцов.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_10"); //Да? Значит, они замышляют что-то еще. Это не похоже на орков, чтобы их лидеры в одиночку покидали свои защитные частоколы.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_11"); //Но это может стать хорошей возможностью, впрочем, нанести им чувствительный удар.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_12"); //Если они потеряют своих лидеров, их боевой дух резко снизится.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_13"); //У тебя новое задание, рыцарь. Иди и убей всех лидеров орков, каких найдешь в прилежащих землях.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_14"); //Принеси мне их кольца. Это будет серьезный удар по оркам.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_07"); //РњРјРј. Р­С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРµРїСЂРёСЏС‚РЅРѕ.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_08"); //Р­С‚Рѕ Р·РЅР°Рє РёС… СЃРёР»С‹. Р—РЅР°С‡РёС‚, РѕСЂРєРё РІС‹Р±СЂР°Р»РёСЃСЊ РёР·-Р·Р° СЃРІРѕРёС… С‡Р°СЃС‚РѕРєРѕР»РѕРІ Рё СЃСЂР°Р¶Р°СЋС‚СЃСЏ РІ РѕС‚РєСЂС‹С‚РѕРј РїРѕР»Рµ.
+			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_09"); //РЇ РЅРµ РІРёРґРµР», С‡С‚РѕР±С‹ РёС… Р±С‹Р»Рѕ РјРЅРѕРіРѕ. Р’ РѕСЃРЅРѕРІРЅРѕРј, СЌС‚Рѕ РёС… РїСЂРµРґРІРѕРґРёС‚РµР»Рё Рё РІСЃРµРіРѕ РЅРµСЃРєРѕР»СЊРєРѕ Р±РѕР№С†РѕРІ.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_10"); //Р”Р°? Р—РЅР°С‡РёС‚, РѕРЅРё Р·Р°РјС‹С€Р»СЏСЋС‚ С‡С‚Рѕ-С‚Рѕ РµС‰Рµ. Р­С‚Рѕ РЅРµ РїРѕС…РѕР¶Рµ РЅР° РѕСЂРєРѕРІ, С‡С‚РѕР±С‹ РёС… Р»РёРґРµСЂС‹ РІ РѕРґРёРЅРѕС‡РєСѓ РїРѕРєРёРґР°Р»Рё СЃРІРѕРё Р·Р°С‰РёС‚РЅС‹Рµ С‡Р°СЃС‚РѕРєРѕР»С‹.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_11"); //РќРѕ СЌС‚Рѕ РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ С…РѕСЂРѕС€РµР№ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊСЋ, РІРїСЂРѕС‡РµРј, РЅР°РЅРµСЃС‚Рё РёРј С‡СѓРІСЃС‚РІРёС‚РµР»СЊРЅС‹Р№ СѓРґР°СЂ.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_12"); //Р•СЃР»Рё РѕРЅРё РїРѕС‚РµСЂСЏСЋС‚ СЃРІРѕРёС… Р»РёРґРµСЂРѕРІ, РёС… Р±РѕРµРІРѕР№ РґСѓС… СЂРµР·РєРѕ СЃРЅРёР·РёС‚СЃСЏ.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_13"); //РЈ С‚РµР±СЏ РЅРѕРІРѕРµ Р·Р°РґР°РЅРёРµ, СЂС‹С†Р°СЂСЊ. РРґРё Рё СѓР±РµР№ РІСЃРµС… Р»РёРґРµСЂРѕРІ РѕСЂРєРѕРІ, РєР°РєРёС… РЅР°Р№РґРµС€СЊ РІ РїСЂРёР»РµР¶Р°С‰РёС… Р·РµРјР»СЏС….
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_14"); //РџСЂРёРЅРµСЃРё РјРЅРµ РёС… РєРѕР»СЊС†Р°. Р­С‚Рѕ Р±СѓРґРµС‚ СЃРµСЂСЊРµР·РЅС‹Р№ СѓРґР°СЂ РїРѕ РѕСЂРєР°Рј.
 			
-			B_LogEntry (TOPIC_OrcElite,"Я смог принести Хагену кольцо предводителя орков в качестве доказательства. Он хочет, чтобы я принес ему все кольца предводителей, которые я найду."); 
+			B_LogEntry (TOPIC_OrcElite,"РЇ СЃРјРѕРі РїСЂРёРЅРµСЃС‚Рё РҐР°РіРµРЅСѓ РєРѕР»СЊС†Рѕ РїСЂРµРґРІРѕРґРёС‚РµР»СЏ РѕСЂРєРѕРІ РІ РєР°С‡РµСЃС‚РІРµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ РµРјСѓ РІСЃРµ РєРѕР»СЊС†Р° РїСЂРµРґРІРѕРґРёС‚РµР»РµР№, РєРѕС‚РѕСЂС‹Рµ СЏ РЅР°Р№РґСѓ."); 
 	
 			if (Npc_IsDead(Ingmar)==FALSE)
 			&& (MIS_KillOrkOberst == 0)
 			{
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_15"); //Поговори с Ингмаром. Он может дать тебе несколько тактических советов по сражению с лидерами орков.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_16"); //Элитные воины орков - его специализация. Ему часто приходилось иметь с ними дело.
-			B_LogEntry (TOPIC_OrcElite,"Ингмар очень много знает об элитных воинах орков."); 
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_15"); //РџРѕРіРѕРІРѕСЂРё СЃ РРЅРіРјР°СЂРѕРј. РћРЅ РјРѕР¶РµС‚ РґР°С‚СЊ С‚РµР±Рµ РЅРµСЃРєРѕР»СЊРєРѕ С‚Р°РєС‚РёС‡РµСЃРєРёС… СЃРѕРІРµС‚РѕРІ РїРѕ СЃСЂР°Р¶РµРЅРёСЋ СЃ Р»РёРґРµСЂР°РјРё РѕСЂРєРѕРІ.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_16"); //Р­Р»РёС‚РЅС‹Рµ РІРѕРёРЅС‹ РѕСЂРєРѕРІ - РµРіРѕ СЃРїРµС†РёР°Р»РёР·Р°С†РёСЏ. Р•РјСѓ С‡Р°СЃС‚Рѕ РїСЂРёС…РѕРґРёР»РѕСЃСЊ РёРјРµС‚СЊ СЃ РЅРёРјРё РґРµР»Рѕ.
+			B_LogEntry (TOPIC_OrcElite,"РРЅРіРјР°СЂ РѕС‡РµРЅСЊ РјРЅРѕРіРѕ Р·РЅР°РµС‚ РѕР± СЌР»РёС‚РЅС‹С… РІРѕРёРЅР°С… РѕСЂРєРѕРІ."); 
 			};
 			
 
@@ -1379,11 +1379,11 @@ func void DIA_Lord_Hagen_ANTIPALADINE_Info ()
 		{
 			if  (MIS_KillOrkOberst == LOG_SUCCESS)
 			{
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_17"); //Одного твоего слова, что ты убил полководца орков, недостаточно для меня.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_17"); //РћРґРЅРѕРіРѕ С‚РІРѕРµРіРѕ СЃР»РѕРІР°, С‡С‚Рѕ С‚С‹ СѓР±РёР» РїРѕР»РєРѕРІРѕРґС†Р° РѕСЂРєРѕРІ, РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР»СЏ РјРµРЅСЏ.
 			};
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_18"); //Мне нужны вещественные доказательства, чтобы я мог принять меры.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_18"); //РњРЅРµ РЅСѓР¶РЅС‹ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Рµ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°, С‡С‚РѕР±С‹ СЏ РјРѕРі РїСЂРёРЅСЏС‚СЊ РјРµСЂС‹.
 		
-			B_LogEntry (TOPIC_OrcElite,"Хаген отказывается верить мне. Он требует доказательств того, что элитные воины орков нападают на цивилизованные земли. Ну, меня бы удивило, если бы он повел себя по-другому."); 
+			B_LogEntry (TOPIC_OrcElite,"РҐР°РіРµРЅ РѕС‚РєР°Р·С‹РІР°РµС‚СЃСЏ РІРµСЂРёС‚СЊ РјРЅРµ. РћРЅ С‚СЂРµР±СѓРµС‚ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІ С‚РѕРіРѕ, С‡С‚Рѕ СЌР»РёС‚РЅС‹Рµ РІРѕРёРЅС‹ РѕСЂРєРѕРІ РЅР°РїР°РґР°СЋС‚ РЅР° С†РёРІРёР»РёР·РѕРІР°РЅРЅС‹Рµ Р·РµРјР»Рё. РќСѓ, РјРµРЅСЏ Р±С‹ СѓРґРёРІРёР»Рѕ, РµСЃР»Рё Р±С‹ РѕРЅ РїРѕРІРµР» СЃРµР±СЏ РїРѕ-РґСЂСѓРіРѕРјСѓ."); 
 		};
 };
 
@@ -1398,7 +1398,7 @@ instance DIA_Lord_Hagen_RINGEBRINGEN		(C_INFO)
 	information	 = 	DIA_Lord_Hagen_RINGEBRINGEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я могу еще кое-что сообщить о предводителях орков.";
+	description	 = 	"РЇ РјРѕРіСѓ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ СЃРѕРѕР±С‰РёС‚СЊ Рѕ РїСЂРµРґРІРѕРґРёС‚РµР»СЏС… РѕСЂРєРѕРІ.";
 };
 
 func int DIA_Lord_Hagen_RINGEBRINGEN_Condition ()
@@ -1415,29 +1415,29 @@ var int OrkRingCounter;
 
 func void DIA_Lord_Hagen_RINGEBRINGEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_00"); //Я могу еще кое-что сообщить о предводителях орков.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_01"); //Рассказывай.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_00"); //РЇ РјРѕРіСѓ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ СЃРѕРѕР±С‰РёС‚СЊ Рѕ РїСЂРµРґРІРѕРґРёС‚РµР»СЏС… РѕСЂРєРѕРІ.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_01"); //Р Р°СЃСЃРєР°Р·С‹РІР°Р№.
 
 	var int Ringcount;
 	var int XP_PAL_OrcRings;
 	var int OrcRingGeld;
 	var int HagensRingOffer;
 
-	HagensRingOffer = 150; //Joly: Geld fьr einen Orkring
+	HagensRingOffer = 150; //Joly: Geld fСЊr einen Orkring
 
 	Ringcount = Npc_HasItems(other, ItRi_OrcEliteRing);
 
 
 	if (Ringcount == 1)
 		{
-			AI_Output		(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_02"); //Я могу дать тебе еще одно кольцо орков.
+			AI_Output		(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_02"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РµС‰Рµ РѕРґРЅРѕ РєРѕР»СЊС†Рѕ РѕСЂРєРѕРІ.
 			B_GivePlayerXP (XP_PAL_OrcRing);
 			B_GiveInvItems (other, self, ItRi_OrcEliteRing,1);
 			OrkRingCounter = OrkRingCounter + 1;
 		}
 		else
 		{
-			AI_Output		(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_03"); //Я могу дать тебе еще несколько колец орков.
+			AI_Output		(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_03"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РєРѕР»РµС† РѕСЂРєРѕРІ.
 
 			B_GiveInvItems (other, self, ItRi_OrcEliteRing,  Ringcount);
 
@@ -1447,24 +1447,24 @@ func void DIA_Lord_Hagen_RINGEBRINGEN_Info ()
 			B_GivePlayerXP (XP_PAL_OrcRings);
 		};
 
-	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_04"); //Я горжусь тобой. Так держать!
+	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_04"); //РЇ РіРѕСЂР¶СѓСЃСЊ С‚РѕР±РѕР№. РўР°Рє РґРµСЂР¶Р°С‚СЊ!
 
 	if (OrkRingCounter <= 10)
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_05"); //Возможно, еще не все предводители орков уничтожены.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_05"); //Р’РѕР·РјРѕР¶РЅРѕ, РµС‰Рµ РЅРµ РІСЃРµ РїСЂРµРґРІРѕРґРёС‚РµР»Рё РѕСЂРєРѕРІ СѓРЅРёС‡С‚РѕР¶РµРЅС‹.
 	}
 	else if	(OrkRingCounter <= 20)
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_06"); //Но скоро мы поставим их на колени.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_06"); //РќРѕ СЃРєРѕСЂРѕ РјС‹ РїРѕСЃС‚Р°РІРёРј РёС… РЅР° РєРѕР»РµРЅРё.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_07"); //Я удивлюсь, если ты еще их повстречаешь.
-		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_08"); //Ты можешь приносить мне их кольца, но я думаю, орки уже получили хороший урок.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_07"); //РЇ СѓРґРёРІР»СЋСЃСЊ, РµСЃР»Рё С‚С‹ РµС‰Рµ РёС… РїРѕРІСЃС‚СЂРµС‡Р°РµС€СЊ.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_08"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРёРЅРѕСЃРёС‚СЊ РјРЅРµ РёС… РєРѕР»СЊС†Р°, РЅРѕ СЏ РґСѓРјР°СЋ, РѕСЂРєРё СѓР¶Рµ РїРѕР»СѓС‡РёР»Рё С…РѕСЂРѕС€РёР№ СѓСЂРѕРє.
 		TOPIC_END_OrcElite = TRUE;
 	};
 
-	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_09"); //Вот. Возьми это золото, купи себе на него хорошее снаряжение.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_09"); //Р’РѕС‚. Р’РѕР·СЊРјРё СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ, РєСѓРїРё СЃРµР±Рµ РЅР° РЅРµРіРѕ С…РѕСЂРѕС€РµРµ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
 
 	OrcRingGeld	= (Ringcount * HagensRingOffer);	
 
@@ -1516,7 +1516,7 @@ INSTANCE DIA_Lord_Hagen_AllDragonsDead(C_INFO)
 	condition	= DIA_Lord_Hagen_AllDragonsDead_Condition;
 	information	= DIA_Lord_Hagen_AllDragonsDead_Info;
 	permanent	= FALSE;
-	description = "Драконы мертвы.";
+	description = "Р”СЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.";
 };                       
 FUNC INT DIA_Lord_Hagen_AllDragonsDead_Condition()
 {
@@ -1527,17 +1527,17 @@ FUNC INT DIA_Lord_Hagen_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_Lord_Hagen_AllDragonsDead_15_00"); //Драконы мертвы.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_19"); //Я знал, что Иннос даст тебе силы, чтобы победить драконов!
-	AI_Output (self ,other,"DIA_Lord_Hagen_AllDragonsDead_04_02"); //Как там с рудой?
-	AI_Output (other,self ,"DIA_Lord_Hagen_AllDragonsDead_15_03"); //Орки все еще осаждают замок в Долине Рудников. Гаронд не сможет покинуть замок, пока осада не снята.
+	AI_Output (other,self ,"DIA_Lord_Hagen_AllDragonsDead_15_00"); //Р”СЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_19"); //РЇ Р·РЅР°Р», С‡С‚Рѕ РРЅРЅРѕСЃ РґР°СЃС‚ С‚РµР±Рµ СЃРёР»С‹, С‡С‚РѕР±С‹ РїРѕР±РµРґРёС‚СЊ РґСЂР°РєРѕРЅРѕРІ!
+	AI_Output (self ,other,"DIA_Lord_Hagen_AllDragonsDead_04_02"); //РљР°Рє С‚Р°Рј СЃ СЂСѓРґРѕР№?
+	AI_Output (other,self ,"DIA_Lord_Hagen_AllDragonsDead_15_03"); //РћСЂРєРё РІСЃРµ РµС‰Рµ РѕСЃР°Р¶РґР°СЋС‚ Р·Р°РјРѕРє РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. Р“Р°СЂРѕРЅРґ РЅРµ СЃРјРѕР¶РµС‚ РїРѕРєРёРЅСѓС‚СЊ Р·Р°РјРѕРє, РїРѕРєР° РѕСЃР°РґР° РЅРµ СЃРЅСЏС‚Р°.
 	
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_20"); //(в ярости) Черт!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_21"); //Если Гаронд не способен справиться с ситуацией, я должен взять управление в свои руки.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_22"); //Кучка орков не остановит меня! Только не меня!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_23"); //Я уже отдал приказ своим людям. Мы готовимся выступать.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_24"); //Мы ВСЕ отправимся туда. Я оставлю только минимальную охрану на корабле.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_25"); //Этого должно быть достаточно, чтобы, наконец, разделаться с этими орками!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_20"); //(РІ СЏСЂРѕСЃС‚Рё) Р§РµСЂС‚!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_21"); //Р•СЃР»Рё Р“Р°СЂРѕРЅРґ РЅРµ СЃРїРѕСЃРѕР±РµРЅ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ СЃРёС‚СѓР°С†РёРµР№, СЏ РґРѕР»Р¶РµРЅ РІР·СЏС‚СЊ СѓРїСЂР°РІР»РµРЅРёРµ РІ СЃРІРѕРё СЂСѓРєРё.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_22"); //РљСѓС‡РєР° РѕСЂРєРѕРІ РЅРµ РѕСЃС‚Р°РЅРѕРІРёС‚ РјРµРЅСЏ! РўРѕР»СЊРєРѕ РЅРµ РјРµРЅСЏ!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_23"); //РЇ СѓР¶Рµ РѕС‚РґР°Р» РїСЂРёРєР°Р· СЃРІРѕРёРј Р»СЋРґСЏРј. РњС‹ РіРѕС‚РѕРІРёРјСЃСЏ РІС‹СЃС‚СѓРїР°С‚СЊ.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_24"); //РњС‹ Р’РЎР• РѕС‚РїСЂР°РІРёРјСЃСЏ С‚СѓРґР°. РЇ РѕСЃС‚Р°РІР»СЋ С‚РѕР»СЊРєРѕ РјРёРЅРёРјР°Р»СЊРЅСѓСЋ РѕС…СЂР°РЅСѓ РЅР° РєРѕСЂР°Р±Р»Рµ.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_25"); //Р­С‚РѕРіРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹, РЅР°РєРѕРЅРµС†, СЂР°Р·РґРµР»Р°С‚СЊСЃСЏ СЃ СЌС‚РёРјРё РѕСЂРєР°РјРё!
 
 	MIS_SCVisitShip = LOG_RUNNING;
 	AI_StopProcessInfos (self);
@@ -1555,7 +1555,7 @@ INSTANCE DIA_Lord_Hagen_NeedShip(C_INFO)
 	condition	= DIA_Lord_Hagen_NeedShip_Condition;
 	information	= DIA_Lord_Hagen_NeedShip_Info;
 	permanent	= FALSE;
-	description = "Мне нужен корабль.";
+	description = "РњРЅРµ РЅСѓР¶РµРЅ РєРѕСЂР°Р±Р»СЊ.";
 };                       
 FUNC INT DIA_Lord_Hagen_NeedShip_Condition()
 {
@@ -1566,21 +1566,21 @@ FUNC INT DIA_Lord_Hagen_NeedShip_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_NeedShip_Info()
 {	
-	AI_Output (other,self ,"DIA_Lord_Hagen_NeedShip_15_00"); //Мне нужен корабль.
+	AI_Output (other,self ,"DIA_Lord_Hagen_NeedShip_15_00"); //РњРЅРµ РЅСѓР¶РµРЅ РєРѕСЂР°Р±Р»СЊ.
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_01"); //Он много кому нужен, солдат.
+		AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_01"); //РћРЅ РјРЅРѕРіРѕ РєРѕРјСѓ РЅСѓР¶РµРЅ, СЃРѕР»РґР°С‚.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_02"); //(смеется) Я слышу это чуть ли не каждый день, дорогой. Но...
+		AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_02"); //(СЃРјРµРµС‚СЃСЏ) РЇ СЃР»С‹С€Сѓ СЌС‚Рѕ С‡СѓС‚СЊ Р»Рё РЅРµ РєР°Р¶РґС‹Р№ РґРµРЅСЊ, РґРѕСЂРѕРіРѕР№. РќРѕ...
 	};
 
-	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_03"); //У тебя даже нет капитана, не говоря уже о команде.
-	AI_Output (other,self ,"DIA_Lord_Hagen_NeedShip_15_04"); //Как насчет корабля, стоящего в гавани?
-	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_05"); //Он принадлежит мне, и точка. Мы должны перевозить руду на этом корабле.
-	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_06"); //Когда мы покончим с этим, ты можешь обратиться ко мне опять.
+	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_03"); //РЈ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ РєР°РїРёС‚Р°РЅР°, РЅРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ Рѕ РєРѕРјР°РЅРґРµ.
+	AI_Output (other,self ,"DIA_Lord_Hagen_NeedShip_15_04"); //РљР°Рє РЅР°СЃС‡РµС‚ РєРѕСЂР°Р±Р»СЏ, СЃС‚РѕСЏС‰РµРіРѕ РІ РіР°РІР°РЅРё?
+	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_05"); //РћРЅ РїСЂРёРЅР°РґР»РµР¶РёС‚ РјРЅРµ, Рё С‚РѕС‡РєР°. РњС‹ РґРѕР»Р¶РЅС‹ РїРµСЂРµРІРѕР·РёС‚СЊ СЂСѓРґСѓ РЅР° СЌС‚РѕРј РєРѕСЂР°Р±Р»Рµ.
+	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_06"); //РљРѕРіРґР° РјС‹ РїРѕРєРѕРЅС‡РёРј СЃ СЌС‚РёРј, С‚С‹ РјРѕР¶РµС€СЊ РѕР±СЂР°С‚РёС‚СЊСЃСЏ РєРѕ РјРЅРµ РѕРїСЏС‚СЊ.
 };
 
 
@@ -1595,7 +1595,7 @@ INSTANCE DIA_Lord_Hagen_GateOpen (C_INFO)
 	condition	= DIA_Lord_Hagen_GateOpen_Condition;
 	information	= DIA_Lord_Hagen_GateOpen_Info;
 	permanent	= FALSE;
-	description = "Орки ворвались в замок в Долине Рудников!";
+	description = "РћСЂРєРё РІРѕСЂРІР°Р»РёСЃСЊ РІ Р·Р°РјРѕРє РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ!";
 };                       
 FUNC INT DIA_Lord_Hagen_GateOpen_Condition()
 {
@@ -1607,10 +1607,10 @@ FUNC INT DIA_Lord_Hagen_GateOpen_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_GateOpen_Info()
 {	
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_29"); //Орки ворвались в замок в Долине Рудников!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_30"); //О, Иннос! Что именно там произошло?
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_31"); //Почему-то ворота оказались открытыми...
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_32"); //Почему-то?! Но как это возможно... В замке наверняка есть предатель!
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_29"); //РћСЂРєРё РІРѕСЂРІР°Р»РёСЃСЊ РІ Р·Р°РјРѕРє РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_30"); //Рћ, РРЅРЅРѕСЃ! Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚Р°Рј РїСЂРѕРёР·РѕС€Р»Рѕ?
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_31"); //РџРѕС‡РµРјСѓ-С‚Рѕ РІРѕСЂРѕС‚Р° РѕРєР°Р·Р°Р»РёСЃСЊ РѕС‚РєСЂС‹С‚С‹РјРё...
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_32"); //РџРѕС‡РµРјСѓ-С‚Рѕ?! РќРѕ РєР°Рє СЌС‚Рѕ РІРѕР·РјРѕР¶РЅРѕ... Р’ Р·Р°РјРєРµ РЅР°РІРµСЂРЅСЏРєР° РµСЃС‚СЊ РїСЂРµРґР°С‚РµР»СЊ!
 };
 
 // ************************************************************
@@ -1624,7 +1624,7 @@ INSTANCE DIA_Lord_Hagen_Perm5 (C_INFO)
 	condition	= DIA_Lord_Hagen_Perm5_Condition;
 	information	= DIA_Lord_Hagen_Perm5_Info;
 	permanent	= TRUE;
-	description = "Чего ты ждешь?";
+	description = "Р§РµРіРѕ С‚С‹ Р¶РґРµС€СЊ?";
 };                       
 FUNC INT DIA_Lord_Hagen_Perm5_Condition()
 {
@@ -1635,14 +1635,14 @@ FUNC INT DIA_Lord_Hagen_Perm5_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_Perm5_Info()
 {	
-	AI_Output (other,self, "DIA_Lord_Hagen_Add_15_33"); //Чего ты ждешь?
+	AI_Output (other,self, "DIA_Lord_Hagen_Add_15_33"); //Р§РµРіРѕ С‚С‹ Р¶РґРµС€СЊ?
 	if (MIS_OCGateOpen == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_26"); //Мы все еще ждем груз со снаряжением и провизией. Как только он будет у нас, мы сразу же тронемся в путь!
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_26"); //РњС‹ РІСЃРµ РµС‰Рµ Р¶РґРµРј РіСЂСѓР· СЃРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµРј Рё РїСЂРѕРІРёР·РёРµР№. РљР°Рє С‚РѕР»СЊРєРѕ РѕРЅ Р±СѓРґРµС‚ Сѓ РЅР°СЃ, РјС‹ СЃСЂР°Р·Сѓ Р¶Рµ С‚СЂРѕРЅРµРјСЃСЏ РІ РїСѓС‚СЊ!
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_27"); //Теперь, когда замок взят штурмом, нам нужно больше провизии.
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_28"); //Но это не задержит нас надолго.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_27"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° Р·Р°РјРѕРє РІР·СЏС‚ С€С‚СѓСЂРјРѕРј, РЅР°Рј РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ РїСЂРѕРІРёР·РёРё.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_28"); //РќРѕ СЌС‚Рѕ РЅРµ Р·Р°РґРµСЂР¶РёС‚ РЅР°СЃ РЅР°РґРѕР»РіРѕ.
 	};
 };

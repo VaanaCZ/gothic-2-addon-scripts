@@ -1,7 +1,7 @@
 // ***************************************************
 // B_TeachFightTalentPercent
 // -------------------------
-// Kosten abhängig von "verwandtem" Waffentalent-Level
+// Kosten abhÐ´ngig von "verwandtem" Waffentalent-Level
 // ***************************************************
 
 // -------------------------------
@@ -22,9 +22,9 @@ func int B_TeachFightTalentPercent (var C_NPC slf, var C_NPC oth, var int talent
 		return FALSE;
 	};
 	
-	// ------ Lernen NICHT über teacherMax ------
+	// ------ Lernen NICHT ÑŒber teacherMax ------
 	var int realHitChance;
-	if 		(talent == NPC_TALENT_1H)		{	realHitChance = oth.HitChance[NPC_TALENT_1H];		}	// Umwandeln von const-Parameter in VAR für folgende If-Abfrage
+	if 		(talent == NPC_TALENT_1H)		{	realHitChance = oth.HitChance[NPC_TALENT_1H];		}	// Umwandeln von const-Parameter in VAR fÑŒr folgende If-Abfrage
 	else if (talent == NPC_TALENT_2H)		{	realHitChance = oth.HitChance[NPC_TALENT_2H];		}
 	else if (talent == NPC_TALENT_BOW)		{	realHitChance = oth.HitChance[NPC_TALENT_BOW];		}
 	else if (talent == NPC_TALENT_CROSSBOW) {	realHitChance = oth.HitChance[NPC_TALENT_CROSSBOW];	};

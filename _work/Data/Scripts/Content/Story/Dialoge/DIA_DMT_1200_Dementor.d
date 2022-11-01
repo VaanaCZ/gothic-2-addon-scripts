@@ -26,7 +26,7 @@ FUNC VOID DIA_BridgeDementor_EXIT_Info()
 
 };	
 ///////////////////////////////////////////////////////////////////////
-//	Info BridgeDementor (steht an der Brьcke)
+//	Info BridgeDementor (steht an der BrСЊcke)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_BridgeDementor		(C_INFO)
 {
@@ -53,9 +53,9 @@ func void DIA_BridgeDementor_Info ()
 	Wld_PlayEffect("spellFX_Fear",  self, self, 0, 0, 0, FALSE );
 	AI_PlayAni (self,"T_PRACTICEMAGIC5");	
 	
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_00"); //Мы знали, что ты придешь!
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_01"); //Мой Хозяин одержит победу и склонит весь мир к своим ногам.
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_02"); //Ты наивный идиот! Ты понятия не имеешь, на что ты замахнулся, и я накажу тебя за это здесь и сейчас!
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_00"); //РњС‹ Р·РЅР°Р»Рё, С‡С‚Рѕ С‚С‹ РїСЂРёРґРµС€СЊ!
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_01"); //РњРѕР№ РҐРѕР·СЏРёРЅ РѕРґРµСЂР¶РёС‚ РїРѕР±РµРґСѓ Рё СЃРєР»РѕРЅРёС‚ РІРµСЃСЊ РјРёСЂ Рє СЃРІРѕРёРј РЅРѕРіР°Рј.
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_02"); //РўС‹ РЅР°РёРІРЅС‹Р№ РёРґРёРѕС‚! РўС‹ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµРµС€СЊ, РЅР° С‡С‚Рѕ С‚С‹ Р·Р°РјР°С…РЅСѓР»СЃСЏ, Рё СЏ РЅР°РєР°Р¶Сѓ С‚РµР±СЏ Р·Р° СЌС‚Рѕ Р·РґРµСЃСЊ Рё СЃРµР№С‡Р°СЃ!
 
 	Npc_SetRefuseTalk (self,30);	
 };

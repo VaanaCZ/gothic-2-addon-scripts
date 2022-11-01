@@ -42,24 +42,24 @@ FUNC INT DIA_Marcos_Hallo_Condition()
 };
 FUNC VOID DIA_Marcos_Hallo_Info()
 {	
-	AI_Output (self, other, "DIA_Marcos_Hallo_04_00");//СТОЙ - во имя Инноса! Я Маркос, паладин короля. Говори, что тебе нужно, и говори правду!
+	AI_Output (self, other, "DIA_Marcos_Hallo_04_00");//РЎРўРћР™ - РІРѕ РёРјСЏ РРЅРЅРѕСЃР°! РЇ РњР°СЂРєРѕСЃ, РїР°Р»Р°РґРёРЅ РєРѕСЂРѕР»СЏ. Р“РѕРІРѕСЂРё, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ, Рё РіРѕРІРѕСЂРё РїСЂР°РІРґСѓ!
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_01");//Избранный Инноса всегда говорит правду.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_02");//Прошу простить меня, о, преподобный маг. Я не понял сразу, с кем я говорю.
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_03");//Да, ничего, все нормально.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_04");//Если мне будет позволено спросить - что привело тебя сюда?
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_01");//РР·Р±СЂР°РЅРЅС‹Р№ РРЅРЅРѕСЃР° РІСЃРµРіРґР° РіРѕРІРѕСЂРёС‚ РїСЂР°РІРґСѓ.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_02");//РџСЂРѕС€Сѓ РїСЂРѕСЃС‚РёС‚СЊ РјРµРЅСЏ, Рѕ, РїСЂРµРїРѕРґРѕР±РЅС‹Р№ РјР°Рі. РЇ РЅРµ РїРѕРЅСЏР» СЃСЂР°Р·Сѓ, СЃ РєРµРј СЏ РіРѕРІРѕСЂСЋ.
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_03");//Р”Р°, РЅРёС‡РµРіРѕ, РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_04");//Р•СЃР»Рё РјРЅРµ Р±СѓРґРµС‚ РїРѕР·РІРѕР»РµРЅРѕ СЃРїСЂРѕСЃРёС‚СЊ - С‡С‚Рѕ РїСЂРёРІРµР»Рѕ С‚РµР±СЏ СЃСЋРґР°?
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_05");//Расслабься, я состою на службе у лорда Хагена.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_06");//Ты один из его людей. Какие задачи привели тебя сюда?
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_05");//Р Р°СЃСЃР»Р°Р±СЊСЃСЏ, СЏ СЃРѕСЃС‚РѕСЋ РЅР° СЃР»СѓР¶Р±Рµ Сѓ Р»РѕСЂРґР° РҐР°РіРµРЅР°.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_06");//РўС‹ РѕРґРёРЅ РёР· РµРіРѕ Р»СЋРґРµР№. РљР°РєРёРµ Р·Р°РґР°С‡Рё РїСЂРёРІРµР»Рё С‚РµР±СЏ СЃСЋРґР°?
 	}
 	else //SLD
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_07");//Расслабься, мы работаем на одного хозяина - лорда Хагена.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_08");//С каких это пор лорд Хаген стал нанимать наемников? Говори, что тебе нужно здесь?
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_07");//Р Р°СЃСЃР»Р°Р±СЊСЃСЏ, РјС‹ СЂР°Р±РѕС‚Р°РµРј РЅР° РѕРґРЅРѕРіРѕ С…РѕР·СЏРёРЅР° - Р»РѕСЂРґР° РҐР°РіРµРЅР°.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_08");//РЎ РєР°РєРёС… СЌС‚Рѕ РїРѕСЂ Р»РѕСЂРґ РҐР°РіРµРЅ СЃС‚Р°Р» РЅР°РЅРёРјР°С‚СЊ РЅР°РµРјРЅРёРєРѕРІ? Р“РѕРІРѕСЂРё, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?
 	};
 
 };
@@ -73,7 +73,7 @@ INSTANCE DIA_Marcos_Hagen(C_INFO)
 	condition	= DIA_Marcos_Hagen_Condition;
 	information	= DIA_Marcos_Hagen_Info;
 	permanent	= FALSE;
-	description	= "Я должен доставить лорду Хагену доказательства существования драконов.";
+	description	= "РЇ РґРѕР»Р¶РµРЅ РґРѕСЃС‚Р°РІРёС‚СЊ Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ РґСЂР°РєРѕРЅРѕРІ.";
 };                       
 
 FUNC INT DIA_Marcos_Hagen_Condition()
@@ -86,11 +86,11 @@ FUNC INT DIA_Marcos_Hagen_Condition()
 };
 FUNC VOID DIA_Marcos_Hagen_Info()
 {	
-	AI_Output (other, self, "DIA_Marcos_Hagen_15_00");//Я должен доставить лорду Хагену доказательства существования драконов.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_01");//Тогда ты не должен терять времени и рисковать своей жизнью понапрасну.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_02");//Ты думаешь, ты сможешь найти здесь драконью чешуйку и отнести ему?
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_03");//Попробуй добраться до замка и поговорить с командующим Гарондом.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_04");//Он должен узнать, что ты выполняешь задание лорда Хагена! Он найдет способ помочь тебе.
+	AI_Output (other, self, "DIA_Marcos_Hagen_15_00");//РЇ РґРѕР»Р¶РµРЅ РґРѕСЃС‚Р°РІРёС‚СЊ Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_01");//РўРѕРіРґР° С‚С‹ РЅРµ РґРѕР»Р¶РµРЅ С‚РµСЂСЏС‚СЊ РІСЂРµРјРµРЅРё Рё СЂРёСЃРєРѕРІР°С‚СЊ СЃРІРѕРµР№ Р¶РёР·РЅСЊСЋ РїРѕРЅР°РїСЂР°СЃРЅСѓ.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_02");//РўС‹ РґСѓРјР°РµС€СЊ, С‚С‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё Р·РґРµСЃСЊ РґСЂР°РєРѕРЅСЊСЋ С‡РµС€СѓР№РєСѓ Рё РѕС‚РЅРµСЃС‚Рё РµРјСѓ?
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_03");//РџРѕРїСЂРѕР±СѓР№ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ Р·Р°РјРєР° Рё РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј Р“Р°СЂРѕРЅРґРѕРј.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_04");//РћРЅ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ, С‡С‚Рѕ С‚С‹ РІС‹РїРѕР»РЅСЏРµС€СЊ Р·Р°РґР°РЅРёРµ Р»РѕСЂРґР° РҐР°РіРµРЅР°! РћРЅ РЅР°Р№РґРµС‚ СЃРїРѕСЃРѕР± РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
 };	
 
 // ************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_Marcos_Garond(C_INFO)
 	condition	= DIA_Marcos_Garond_Condition;
 	information	= DIA_Marcos_Garond_Info;
 	permanent	= FALSE;
-	description	= "Я пришел от Гаронда ...";
+	description	= "РЇ РїСЂРёС€РµР» РѕС‚ Р“Р°СЂРѕРЅРґР° ...";
 };                       
 
 FUNC INT DIA_Marcos_Garond_Condition()
@@ -116,19 +116,19 @@ FUNC INT DIA_Marcos_Garond_Condition()
 };
 FUNC VOID DIA_Marcos_Garond_Info()
 {	
-	AI_Output (other, self, "DIA_Marcos_Garond_15_00");//Я пришел от Гаронда - он хочет знать, какое количество руды готово к транспортировке.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_01");//Скажи Гаронду, что мне пришлось оставить шахту, так как нападения орков стали слишком частыми.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_02");//Я попытался добраться до замка с оставшимися людьми, но в конце концов я единственный остался в живых.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_03");//Я спрятал руду в безопасном месте. Там ЧЕТЫРЕ ящика. Иди к Гаронду и доложи ему об этом.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_04");//Скажи ему, что я буду охранять руду, пока жив. Но я не знаю, сколько времени пройдет, прежде чем орки найдут меня здесь.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_05");//Скажи ему, чтобы прислал подкрепление.
-	AI_Output (other, self, "DIA_Marcos_Garond_15_06");//Я дам ему знать.
+	AI_Output (other, self, "DIA_Marcos_Garond_15_00");//РЇ РїСЂРёС€РµР» РѕС‚ Р“Р°СЂРѕРЅРґР° - РѕРЅ С…РѕС‡РµС‚ Р·РЅР°С‚СЊ, РєР°РєРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЂСѓРґС‹ РіРѕС‚РѕРІРѕ Рє С‚СЂР°РЅСЃРїРѕСЂС‚РёСЂРѕРІРєРµ.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_01");//РЎРєР°Р¶Рё Р“Р°СЂРѕРЅРґСѓ, С‡С‚Рѕ РјРЅРµ РїСЂРёС€Р»РѕСЃСЊ РѕСЃС‚Р°РІРёС‚СЊ С€Р°С…С‚Сѓ, С‚Р°Рє РєР°Рє РЅР°РїР°РґРµРЅРёСЏ РѕСЂРєРѕРІ СЃС‚Р°Р»Рё СЃР»РёС€РєРѕРј С‡Р°СЃС‚С‹РјРё.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_02");//РЇ РїРѕРїС‹С‚Р°Р»СЃСЏ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ Р·Р°РјРєР° СЃ РѕСЃС‚Р°РІС€РёРјРёСЃСЏ Р»СЋРґСЊРјРё, РЅРѕ РІ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ СЏ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ РѕСЃС‚Р°Р»СЃСЏ РІ Р¶РёРІС‹С….
+	AI_Output (self, other, "DIA_Marcos_Garond_04_03");//РЇ СЃРїСЂСЏС‚Р°Р» СЂСѓРґСѓ РІ Р±РµР·РѕРїР°СЃРЅРѕРј РјРµСЃС‚Рµ. РўР°Рј Р§Р•РўР«Р Р• СЏС‰РёРєР°. РРґРё Рє Р“Р°СЂРѕРЅРґСѓ Рё РґРѕР»РѕР¶Рё РµРјСѓ РѕР± СЌС‚РѕРј.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_04");//РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ СЏ Р±СѓРґСѓ РѕС…СЂР°РЅСЏС‚СЊ СЂСѓРґСѓ, РїРѕРєР° Р¶РёРІ. РќРѕ СЏ РЅРµ Р·РЅР°СЋ, СЃРєРѕР»СЊРєРѕ РІСЂРµРјРµРЅРё РїСЂРѕР№РґРµС‚, РїСЂРµР¶РґРµ С‡РµРј РѕСЂРєРё РЅР°Р№РґСѓС‚ РјРµРЅСЏ Р·РґРµСЃСЊ.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_05");//РЎРєР°Р¶Рё РµРјСѓ, С‡С‚РѕР±С‹ РїСЂРёСЃР»Р°Р» РїРѕРґРєСЂРµРїР»РµРЅРёРµ.
+	AI_Output (other, self, "DIA_Marcos_Garond_15_06");//РЇ РґР°Рј РµРјСѓ Р·РЅР°С‚СЊ.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Паладин Маркос охраняет ЧЕТЫРЕ ящика в небольшой долине.");
+	B_LogEntry (TOPIC_ScoutMine,"РџР°Р»Р°РґРёРЅ РњР°СЂРєРѕСЃ РѕС…СЂР°РЅСЏРµС‚ Р§Р•РўР«Р Р• СЏС‰РёРєР° РІ РЅРµР±РѕР»СЊС€РѕР№ РґРѕР»РёРЅРµ.");
 	
 	Log_CreateTopic (Topic_MarcosJungs,LOG_MISSION);
 	Log_SetTopicStatus (Topic_MarcosJungs,LOG_RUNNING);
-	B_LogEntry (Topic_MarcosJungs,"Маркос хочет, чтобы Гаронд послал ему подмогу.");
+	B_LogEntry (Topic_MarcosJungs,"РњР°СЂРєРѕСЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ Р“Р°СЂРѕРЅРґ РїРѕСЃР»Р°Р» РµРјСѓ РїРѕРґРјРѕРіСѓ.");
 	
 	MIS_Marcos_Jungs = LOG_RUNNING;
 	Marcos_Ore = TRUE;
@@ -145,7 +145,7 @@ INSTANCE DIA_Marcos_Perm(C_INFO)
 	condition	= DIA_Marcos_Perm_Condition;
 	information	= DIA_Marcos_Perm_Info;
 	permanent	= TRUE;
-	description	= "Как ситуация?";
+	description	= "РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };                       
 
 FUNC INT DIA_Marcos_Perm_Condition()
@@ -160,21 +160,21 @@ FUNC INT DIA_Marcos_Perm_Condition()
 FUNC VOID DIA_Marcos_Perm_Info()
 {	
 
-	AI_Output (other, self, "DIA_Marcos_Perm_15_00");//Как обстановка?
+	AI_Output (other, self, "DIA_Marcos_Perm_15_00");//РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
 	
 	if (self.attribute [ATR_HITPOINTS]) < (self.attribute [ATR_HITPOINTS_MAX] /2)  
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_01");//Мне очень нужны лечебные зелья!
+		AI_Output (self, other, "DIA_Marcos_Perm_04_01");//РњРЅРµ РѕС‡РµРЅСЊ РЅСѓР¶РЅС‹ Р»РµС‡РµР±РЅС‹Рµ Р·РµР»СЊСЏ!
 		B_UseItem (self, ItPo_Health_03);  
 		
 	}
 	else if (MIS_Marcos_Jungs == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_02");//Я выдержу, и я надеюсь, что Гаронд скоро пришлет подкрепление.
+		AI_Output (self, other, "DIA_Marcos_Perm_04_02");//РЇ РІС‹РґРµСЂР¶Сѓ, Рё СЏ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ Р“Р°СЂРѕРЅРґ СЃРєРѕСЂРѕ РїСЂРёС€Р»РµС‚ РїРѕРґРєСЂРµРїР»РµРЅРёРµ.
 	}
 	else if (MIS_Marcos_Jungs == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_03");//Спасибо тебе за помощь. Иннос даст нам силы и поможет нам продержаться.
+		AI_Output (self, other, "DIA_Marcos_Perm_04_03");//РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ Р·Р° РїРѕРјРѕС‰СЊ. РРЅРЅРѕСЃ РґР°СЃС‚ РЅР°Рј СЃРёР»С‹ Рё РїРѕРјРѕР¶РµС‚ РЅР°Рј РїСЂРѕРґРµСЂР¶Р°С‚СЊСЃСЏ.
 		
 		if (Marcos_einmalig == FALSE)
 		{
@@ -184,7 +184,7 @@ FUNC VOID DIA_Marcos_Perm_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_04");//Я держусь, потому что со мной Иннос!
+		AI_Output (self, other, "DIA_Marcos_Perm_04_04");//РЇ РґРµСЂР¶СѓСЃСЊ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЃРѕ РјРЅРѕР№ РРЅРЅРѕСЃ!
 	};
 	
 	AI_StopProcessInfos (self);

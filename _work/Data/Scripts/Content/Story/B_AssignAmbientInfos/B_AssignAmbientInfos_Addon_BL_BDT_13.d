@@ -30,7 +30,7 @@ instance DIA_Addon_BL_BDT_13_Chef(C_INFO)
 	condition	= DIA_Addon_BL_BDT_13_Chef_Condition;
 	information	= DIA_Addon_BL_BDT_13_Chef_Info;
 	permanent	= TRUE;
-	description = "Кто здесь главный?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_13_Chef_Condition()
@@ -39,22 +39,22 @@ FUNC INT DIA_Addon_BL_BDT_13_Chef_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_13_Chef_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Chef_15_00");//Кто здесь главный?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Chef_15_00");//РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
 	
 	if (RavenIsDead == TRUE)
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_01");//(торжественно) Наш славный командир Торус. Он сделает нас всех богатыми!
+			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_01");//(С‚РѕСЂР¶РµСЃС‚РІРµРЅРЅРѕ) РќР°С€ СЃР»Р°РІРЅС‹Р№ РєРѕРјР°РЅРґРёСЂ РўРѕСЂСѓСЃ. РћРЅ СЃРґРµР»Р°РµС‚ РЅР°СЃ РІСЃРµС… Р±РѕРіР°С‚С‹РјРё!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_02");//Наш славный лидер... мм... даже не знаю...
+			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_02");//РќР°С€ СЃР»Р°РІРЅС‹Р№ Р»РёРґРµСЂ... РјРј... РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ...
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_03");//(торжественно) Наш славный командир Ворон. Он сделает нас всех богатыми!
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_03");//(С‚РѕСЂР¶РµСЃС‚РІРµРЅРЅРѕ) РќР°С€ СЃР»Р°РІРЅС‹Р№ РєРѕРјР°РЅРґРёСЂ Р’РѕСЂРѕРЅ. РћРЅ СЃРґРµР»Р°РµС‚ РЅР°СЃ РІСЃРµС… Р±РѕРіР°С‚С‹РјРё!
 			
 	};
 };
@@ -67,7 +67,7 @@ instance DIA_Addon_BL_BDT_13_Lager(C_INFO)
 	condition	= DIA_Addon_BL_BDT_13_Lager_Condition;
 	information	= DIA_Addon_BL_BDT_13_Lager_Info;
 	permanent	= TRUE;
-	description = "Что ты знаешь про лагерь?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РїСЂРѕ Р»Р°РіРµСЂСЊ?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_13_Lager_Condition()
@@ -76,9 +76,9 @@ FUNC INT DIA_Addon_BL_BDT_13_Lager_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_13_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Lager_15_00");//Что ты знаешь про лагерь?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_01");//Поговори со Снафом, если тебе нужна информация. Этот жирный повар многое знает.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_02");//Если тебе надо будет что-нибудь купить, поговори с Фиском. У него есть всякие штуки...
+	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Lager_15_00");//Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РїСЂРѕ Р»Р°РіРµСЂСЊ?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_01");//РџРѕРіРѕРІРѕСЂРё СЃРѕ РЎРЅР°С„РѕРј, РµСЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ. Р­С‚РѕС‚ Р¶РёСЂРЅС‹Р№ РїРѕРІР°СЂ РјРЅРѕРіРѕРµ Р·РЅР°РµС‚.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_02");//Р•СЃР»Рё С‚РµР±Рµ РЅР°РґРѕ Р±СѓРґРµС‚ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РєСѓРїРёС‚СЊ, РїРѕРіРѕРІРѕСЂРё СЃ Р¤РёСЃРєРѕРј. РЈ РЅРµРіРѕ РµСЃС‚СЊ РІСЃСЏРєРёРµ С€С‚СѓРєРё...
 };
 // *************************************************************************
 // 								News
@@ -89,7 +89,7 @@ instance DIA_Addon_BL_BDT_13_News(C_INFO)
 	condition	= DIA_Addon_BL_BDT_13_News_Condition;
 	information	= DIA_Addon_BL_BDT_13_News_Info;
 	permanent	= TRUE;
-	description = "Какие новости?";
+	description = "РљР°РєРёРµ РЅРѕРІРѕСЃС‚Рё?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_13_News_Condition()
@@ -99,17 +99,17 @@ FUNC INT DIA_Addon_BL_BDT_13_News_Condition()
 
 FUNC VOID DIA_Addon_BL_BDT_13_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_13_News_15_00");//Какие новости?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_13_News_15_00");//РљР°РєРёРµ РЅРѕРІРѕСЃС‚Рё?
 	
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_01");//Ворон мертв. Теперь нам НИКОГДА не выбраться с этого острова.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_01");//Р’РѕСЂРѕРЅ РјРµСЂС‚РІ. РўРµРїРµСЂСЊ РЅР°Рј РќРРљРћР“Р”Рђ РЅРµ РІС‹Р±СЂР°С‚СЊСЃСЏ СЃ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_02");//Пираты подняли паруса и уплыли.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_03");//Теперь на берегу сидит лишь пара идиотов, и у них нет нормального корабля.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_04");//Сам Белиар не знает, как мы отсюда выберемся.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_02");//РџРёСЂР°С‚С‹ РїРѕРґРЅСЏР»Рё РїР°СЂСѓСЃР° Рё СѓРїР»С‹Р»Рё.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_03");//РўРµРїРµСЂСЊ РЅР° Р±РµСЂРµРіСѓ СЃРёРґРёС‚ Р»РёС€СЊ РїР°СЂР° РёРґРёРѕС‚РѕРІ, Рё Сѓ РЅРёС… РЅРµС‚ РЅРѕСЂРјР°Р»СЊРЅРѕРіРѕ РєРѕСЂР°Р±Р»СЏ.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_04");//РЎР°Рј Р‘РµР»РёР°СЂ РЅРµ Р·РЅР°РµС‚, РєР°Рє РјС‹ РѕС‚СЃСЋРґР° РІС‹Р±РµСЂРµРјСЃСЏ.
 	};
 };
 // *************************************************************************
@@ -121,7 +121,7 @@ instance DIA_Addon_BL_BDT_13_Gold(C_INFO)
 	condition	= DIA_Addon_BL_BDT_13_Gold_Condition;
 	information	= DIA_Addon_BL_BDT_13_Gold_Info;
 	permanent	= TRUE;
-	description = "Как мне достать много золота и побыстрее?";
+	description = "РљР°Рє РјРЅРµ РґРѕСЃС‚Р°С‚СЊ РјРЅРѕРіРѕ Р·РѕР»РѕС‚Р° Рё РїРѕР±С‹СЃС‚СЂРµРµ?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_13_Gold_Condition()
@@ -136,24 +136,24 @@ FUNC VOID DIA_Addon_BL_BDT_13_Gold_Info()
 {	
 	BDT_13_Nerver = (BDT_13_Nerver +1);
 	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Gold_15_00");//Как мне достать много золота и побыстрее?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Gold_15_00");//РљР°Рє РјРЅРµ РґРѕСЃС‚Р°С‚СЊ РјРЅРѕРіРѕ Р·РѕР»РѕС‚Р° Рё РїРѕР±С‹СЃС‚СЂРµРµ?
 	
 	if (BDT_13_Nerver <= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_01");//Хороший вопрос. Разве мы все не за этим здесь?
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_02");//Тебе нужно взять у Торуса красный камень, тогда ты сможешь войти в шахту.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_01");//РҐРѕСЂРѕС€РёР№ РІРѕРїСЂРѕСЃ. Р Р°Р·РІРµ РјС‹ РІСЃРµ РЅРµ Р·Р° СЌС‚РёРј Р·РґРµСЃСЊ?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_02");//РўРµР±Рµ РЅСѓР¶РЅРѕ РІР·СЏС‚СЊ Сѓ РўРѕСЂСѓСЃР° РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ, С‚РѕРіРґР° С‚С‹ СЃРјРѕР¶РµС€СЊ РІРѕР№С‚Рё РІ С€Р°С…С‚Сѓ.
 	}
 	else if (BDT_13_Kill == FALSE)
 	{
 		BDT_13_Nerver = 0;
 		BDT_13_Kill = TRUE;
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_03");//Эй, что ты вертишься вокруг меня? Пошел вон!
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_03");//Р­Р№, С‡С‚Рѕ С‚С‹ РІРµСЂС‚РёС€СЊСЃСЏ РІРѕРєСЂСѓРі РјРµРЅСЏ? РџРѕС€РµР» РІРѕРЅ!
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
 		BDT_13_Nerver = 0;
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_04");//Кончились игры и веселье!
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_04");//РљРѕРЅС‡РёР»РёСЃСЊ РёРіСЂС‹ Рё РІРµСЃРµР»СЊРµ!
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 1);
 	};

@@ -38,13 +38,13 @@ func int B_AssessEnemy()
 		return FALSE;
 	};
 	
-	// ------- Burgzinnenwachen sollen sich nicht zu Tode stürzen, etc. ------
+	// ------- Burgzinnenwachen sollen sich nicht zu Tode stÑŒrzen, etc. ------
 	if (Npc_GetHeightToNpc(self, other) > PERC_DIST_HEIGHT)
 	{
 		return FALSE;
 	};
 	
-	// ------- für Party-NSCs -------
+	// ------- fÑŒr Party-NSCs -------
 	if (self.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
 		if (Npc_GetDistToNpc (self, other) > 1500) //Sollen nicht so weit weg angreifen
@@ -75,14 +75,14 @@ func int B_AssessEnemy()
 		return FALSE;
 	};
 	
-	// ------- OVERRIDE für Enemies, die noch vorher quatschen sollen ------
+	// ------- OVERRIDE fÑŒr Enemies, die noch vorher quatschen sollen ------
 	if ( (self.aivar[AIV_EnemyOverride] == TRUE) || (other.aivar[AIV_EnemyOverride] == TRUE) )
 	&& (other.guild < GIL_SEPERATOR_HUM)
 	{
 		return FALSE;
 	};
 	
-	// ------- Sicherheitsabfrage (B_AssessEnemy wird auch von anderen Funktionen aufgerufen, nicht nur über Wahrnehmung) ------
+	// ------- Sicherheitsabfrage (B_AssessEnemy wird auch von anderen Funktionen aufgerufen, nicht nur ÑŒber Wahrnehmung) ------
 	if (Npc_GetAttitude (self, other) != ATT_HOSTILE)
 	{
 		return FALSE;
@@ -102,13 +102,13 @@ func int B_AssessEnemy()
 	// ------ ich bin nicht GILDEN-Hostile zu other ------
 	if (Wld_GetGuildAttitude(self.guild, other.guild) != ATT_HOSTILE)
 	{
-		// ------ ABER ich bin temp_hostile (d.h. hab gerade gegen den Spieler gekämpft) ------
+		// ------ ABER ich bin temp_hostile (d.h. hab gerade gegen den Spieler gekÐ´mpft) ------
 		if (Npc_GetAttitude (self, other) == ATT_HOSTILE)
 		// -------------------------
 		// && Npc_IsPlayer(other) - auskommentiert, weil ich NUR zum Player Temp_Att haben kann ------
 		// ------ NICHT direkt nach ZS-Attack-Abbruch reagieren ------
 		&& ( (Npc_GetStateTime(self) > 2) || Npc_IsInState(self, ZS_ObservePlayer) )
-		// ------ Kampf nur fortsetzen, wenn Spieler näher als 10m ------
+		// ------ Kampf nur fortsetzen, wenn Spieler nÐ´her als 10m ------
 		&& (Npc_GetDistToNpc(self,other) <= PERC_DIST_INTERMEDIAT)
 		{
 			B_Attack (self, other, self.aivar[AIV_LastPlayerAR], 0);

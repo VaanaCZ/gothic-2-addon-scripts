@@ -1,7 +1,7 @@
 INSTANCE PIR_1357_Addon_Garett (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ãàðåòò";
+	name 		= "Ð“Ð°Ñ€ÐµÑ‚Ñ‚";
 	guild 		= GIL_PIR;
 	id 			= 1357;
 	voice 		= 9;
@@ -18,7 +18,7 @@ INSTANCE PIR_1357_Addon_Garett (Npc_Default)
 	EquipItem (self, ItMw_Piratensaebel);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÐ´ndler
 	CreateInvItems (self, ItBE_Addon_Prot_EdgPoi, 1); 
 		
 	// ------ visuals ------																			

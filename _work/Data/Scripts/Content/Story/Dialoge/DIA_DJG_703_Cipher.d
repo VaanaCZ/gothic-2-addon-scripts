@@ -41,7 +41,7 @@ instance DIA_Cipher_HALLO		(C_INFO)
 	condition	 = 	DIA_Cipher_HALLO_Condition;
 	information	 = 	DIA_Cipher_HALLO_Info;
 
-	description	 = 	"Отличный лагерь.";
+	description	 = 	"РћС‚Р»РёС‡РЅС‹Р№ Р»Р°РіРµСЂСЊ.";
 };
 
 func int DIA_Cipher_HALLO_Condition ()
@@ -51,8 +51,8 @@ func int DIA_Cipher_HALLO_Condition ()
 
 func void DIA_Cipher_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Cipher_HALLO_15_00"); //Отличный лагерь.
-	AI_Output			(self, other, "DIA_Cipher_HALLO_07_01"); //Скажешь тоже. Здесь воняет, как на скотобойне. Повсюду трупы животных и сгнившие деревья.
+	AI_Output			(other, self, "DIA_Cipher_HALLO_15_00"); //РћС‚Р»РёС‡РЅС‹Р№ Р»Р°РіРµСЂСЊ.
+	AI_Output			(self, other, "DIA_Cipher_HALLO_07_01"); //РЎРєР°Р¶РµС€СЊ С‚РѕР¶Рµ. Р—РґРµСЃСЊ РІРѕРЅСЏРµС‚, РєР°Рє РЅР° СЃРєРѕС‚РѕР±РѕР№РЅРµ. РџРѕРІСЃСЋРґСѓ С‚СЂСѓРїС‹ Р¶РёРІРѕС‚РЅС‹С… Рё СЃРіРЅРёРІС€РёРµ РґРµСЂРµРІСЊСЏ.
 };
 
 
@@ -65,7 +65,7 @@ instance DIA_CipherDJG_HELLOAGAIN		(C_INFO)
 	condition	 = 	DIA_CipherDJG_HELLOAGAIN_Condition;
 	information	 = 	DIA_CipherDJG_HELLOAGAIN_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_CipherDJG_HELLOAGAIN_Condition ()
@@ -82,39 +82,39 @@ func int DIA_CipherDJG_HELLOAGAIN_Condition ()
 
 func void DIA_CipherDJG_HELLOAGAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_CipherDJG_HELLOAGAIN_15_00"); //Что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_01"); //Я давно уже здесь сижу. Выжидаю подходящий момент.
-	AI_Output			(other, self, "DIA_CipherDJG_HELLOAGAIN_15_02"); //Подходящий момент? Для чего?
-	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_03"); //Там где-то должен прятаться дракон. Это вонючее болото затопило все вокруг вскоре после того, как он появился здесь.
-	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_04"); //Я еще хорошо помню время, когда здесь невозможно было ноги замочить.
-	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_05"); //Но теперь я ни за что не пойду туда один.
+	AI_Output			(other, self, "DIA_CipherDJG_HELLOAGAIN_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_01"); //РЇ РґР°РІРЅРѕ СѓР¶Рµ Р·РґРµСЃСЊ СЃРёР¶Сѓ. Р’С‹Р¶РёРґР°СЋ РїРѕРґС…РѕРґСЏС‰РёР№ РјРѕРјРµРЅС‚.
+	AI_Output			(other, self, "DIA_CipherDJG_HELLOAGAIN_15_02"); //РџРѕРґС…РѕРґСЏС‰РёР№ РјРѕРјРµРЅС‚? Р”Р»СЏ С‡РµРіРѕ?
+	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_03"); //РўР°Рј РіРґРµ-С‚Рѕ РґРѕР»Р¶РµРЅ РїСЂСЏС‚Р°С‚СЊСЃСЏ РґСЂР°РєРѕРЅ. Р­С‚Рѕ РІРѕРЅСЋС‡РµРµ Р±РѕР»РѕС‚Рѕ Р·Р°С‚РѕРїРёР»Рѕ РІСЃРµ РІРѕРєСЂСѓРі РІСЃРєРѕСЂРµ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє РѕРЅ РїРѕСЏРІРёР»СЃСЏ Р·РґРµСЃСЊ.
+	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_04"); //РЇ РµС‰Рµ С…РѕСЂРѕС€Рѕ РїРѕРјРЅСЋ РІСЂРµРјСЏ, РєРѕРіРґР° Р·РґРµСЃСЊ РЅРµРІРѕР·РјРѕР¶РЅРѕ Р±С‹Р»Рѕ РЅРѕРіРё Р·Р°РјРѕС‡РёС‚СЊ.
+	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_05"); //РќРѕ С‚РµРїРµСЂСЊ СЏ РЅРё Р·Р° С‡С‚Рѕ РЅРµ РїРѕР№РґСѓ С‚СѓРґР° РѕРґРёРЅ.
 
 	if ((Npc_IsDead(DJG_Rod)) == FALSE)
 		{
-			AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_06"); //Правда, со мной Род. Но он побежит сломя голову даже при виде мясного жука.
+			AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_06"); //РџСЂР°РІРґР°, СЃРѕ РјРЅРѕР№ Р РѕРґ. РќРѕ РѕРЅ РїРѕР±РµР¶РёС‚ СЃР»РѕРјСЏ РіРѕР»РѕРІСѓ РґР°Р¶Рµ РїСЂРё РІРёРґРµ РјСЏСЃРЅРѕРіРѕ Р¶СѓРєР°.
 		};
 
-	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_07"); //А как насчет тебя? Ты ведь тоже пришел сюда не на прогулку, правда? Пойдем туда вместе.
+	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_07_07"); //Рђ РєР°Рє РЅР°СЃС‡РµС‚ С‚РµР±СЏ? РўС‹ РІРµРґСЊ С‚РѕР¶Рµ РїСЂРёС€РµР» СЃСЋРґР° РЅРµ РЅР° РїСЂРѕРіСѓР»РєСѓ, РїСЂР°РІРґР°? РџРѕР№РґРµРј С‚СѓРґР° РІРјРµСЃС‚Рµ.
 
-	B_LogEntry (TOPIC_Dragonhunter,"Сифер сказал мне, что в болотах Долины рудников живет дракон."); 
+	B_LogEntry (TOPIC_Dragonhunter,"РЎРёС„РµСЂ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РІ Р±РѕР»РѕС‚Р°С… Р”РѕР»РёРЅС‹ СЂСѓРґРЅРёРєРѕРІ Р¶РёРІРµС‚ РґСЂР°РєРѕРЅ."); 
 
-	Info_AddChoice	(DIA_CipherDJG_HELLOAGAIN, "Я предпочитаю действовать в одиночку.", 	DIA_CipherDJG_HELLOAGAIN_GoAlone);
-	Info_AddChoice	(DIA_CipherDJG_HELLOAGAIN, "Почему бы и нет. Помощь мне не помешает.", DIA_CipherDJG_HELLOAGAIN_GoTogether);
+	Info_AddChoice	(DIA_CipherDJG_HELLOAGAIN, "РЇ РїСЂРµРґРїРѕС‡РёС‚Р°СЋ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РІ РѕРґРёРЅРѕС‡РєСѓ.", 	DIA_CipherDJG_HELLOAGAIN_GoAlone);
+	Info_AddChoice	(DIA_CipherDJG_HELLOAGAIN, "РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚. РџРѕРјРѕС‰СЊ РјРЅРµ РЅРµ РїРѕРјРµС€Р°РµС‚.", DIA_CipherDJG_HELLOAGAIN_GoTogether);
 
 
 
 };
 func void DIA_CipherDJG_HELLOAGAIN_GoAlone ()
 {
-	AI_Output			(other, self, "DIA_CipherDJG_HELLOAGAIN_GoAlone_15_00"); //Я предпочитаю действовать в одиночку.
-	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_GoAlone_07_01"); //Как знаешь. Значит, я ошибался в тебе!
+	AI_Output			(other, self, "DIA_CipherDJG_HELLOAGAIN_GoAlone_15_00"); //РЇ РїСЂРµРґРїРѕС‡РёС‚Р°СЋ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РІ РѕРґРёРЅРѕС‡РєСѓ.
+	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_GoAlone_07_01"); //РљР°Рє Р·РЅР°РµС€СЊ. Р—РЅР°С‡РёС‚, СЏ РѕС€РёР±Р°Р»СЃСЏ РІ С‚РµР±Рµ!
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_CipherDJG_HELLOAGAIN_GoTogether ()
 {
-	AI_Output			(other, self, "DIA_CipherDJG_HELLOAGAIN_GoTogether_15_00"); //Почему бы и нет. Помощь мне не помешает.
-	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_GoTogether_07_01"); //Это хорошо. Тогда я, наконец, смогу выбраться отсюда. Эта вонь невыносима. Просто дай мне слово!
+	AI_Output			(other, self, "DIA_CipherDJG_HELLOAGAIN_GoTogether_15_00"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚. РџРѕРјРѕС‰СЊ РјРЅРµ РЅРµ РїРѕРјРµС€Р°РµС‚.
+	AI_Output			(self, other, "DIA_CipherDJG_HELLOAGAIN_GoTogether_07_01"); //Р­С‚Рѕ С…РѕСЂРѕС€Рѕ. РўРѕРіРґР° СЏ, РЅР°РєРѕРЅРµС†, СЃРјРѕРіСѓ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°. Р­С‚Р° РІРѕРЅСЊ РЅРµРІС‹РЅРѕСЃРёРјР°. РџСЂРѕСЃС‚Рѕ РґР°Р№ РјРЅРµ СЃР»РѕРІРѕ!
 
 	DJG_SwampParty = TRUE;
 	Info_ClearChoices	(DIA_CipherDJG_HELLOAGAIN);
@@ -131,7 +131,7 @@ instance DIA_CipherDJG_GOTOGETHERAGAIN		(C_INFO)
 
 
 
-	description	 = 	"Я передумал! Пойдем вместе!";
+	description	 = 	"РЇ РїРµСЂРµРґСѓРјР°Р»! РџРѕР№РґРµРј РІРјРµСЃС‚Рµ!";
 };
 
 func int DIA_CipherDJG_GOTOGETHERAGAIN_Condition ()
@@ -149,8 +149,8 @@ func int DIA_CipherDJG_GOTOGETHERAGAIN_Condition ()
 
 func void DIA_CipherDJG_GOTOGETHERAGAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_CipherDJG_GOTOGETHERAGAIN_15_00"); //Я передумал! Пойдем вместе!
-	AI_Output			(self, other, "DIA_CipherDJG_GOTOGETHERAGAIN_07_01"); //Просто дай мне слово!
+	AI_Output			(other, self, "DIA_CipherDJG_GOTOGETHERAGAIN_15_00"); //РЇ РїРµСЂРµРґСѓРјР°Р»! РџРѕР№РґРµРј РІРјРµСЃС‚Рµ!
+	AI_Output			(self, other, "DIA_CipherDJG_GOTOGETHERAGAIN_07_01"); //РџСЂРѕСЃС‚Рѕ РґР°Р№ РјРЅРµ СЃР»РѕРІРѕ!
 	DJG_SwampParty = TRUE;
 };
 
@@ -167,7 +167,7 @@ instance DIA_CipherDJG_GO		(C_INFO)
 
 
 
-	description	 = 	"Сейчас самый подходящий момент, чтобы идти туда!";
+	description	 = 	"РЎРµР№С‡Р°СЃ СЃР°РјС‹Р№ РїРѕРґС…РѕРґСЏС‰РёР№ РјРѕРјРµРЅС‚, С‡С‚РѕР±С‹ РёРґС‚Рё С‚СѓРґР°!";
 };
 
 func int DIA_CipherDJG_GO_Condition ()
@@ -185,8 +185,8 @@ func int DIA_CipherDJG_GO_Condition ()
 var int DJG_SwampParty_GoGoGo;
 func void DIA_CipherDJG_GO_Info ()
 {
-	AI_Output			(other, self, "DIA_CipherDJG_GO_15_00"); //Сейчас самый подходящий момент, чтобы идти туда!
-	AI_Output			(self, other, "DIA_CipherDJG_GO_07_01"); //Тогда пойдем!
+	AI_Output			(other, self, "DIA_CipherDJG_GO_15_00"); //РЎРµР№С‡Р°СЃ СЃР°РјС‹Р№ РїРѕРґС…РѕРґСЏС‰РёР№ РјРѕРјРµРЅС‚, С‡С‚РѕР±С‹ РёРґС‚Рё С‚СѓРґР°!
+	AI_Output			(self, other, "DIA_CipherDJG_GO_07_01"); //РўРѕРіРґР° РїРѕР№РґРµРј!
 
 	AI_StopProcessInfos	(self);	
 	DJG_SwampParty_GoGoGo = TRUE;
@@ -223,9 +223,9 @@ FUNC INT DIA_CipherDJG_SwampWait2_Condition()
 
 func VOID DIA_CipherDJG_SwampWait2_Info()
 {
-	AI_Output (self, other,"DIA_CipherDJG_SwampWait2_07_00"); //Болото начинается сразу за следующим поворотом. Я предлагаю идти прямо туда.
-	AI_Output (self, other,"DIA_CipherDJG_SwampWait2_07_01"); //Ну, ты также можешь проверить вон тот проход, чтобы эти твари не напали на нас сзади. Что ты выбираешь?
-	AI_Output (other, self,"DIA_CipherDJG_SwampWait2_15_02"); //Не будем терять времени!
+	AI_Output (self, other,"DIA_CipherDJG_SwampWait2_07_00"); //Р‘РѕР»РѕС‚Рѕ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃСЂР°Р·Сѓ Р·Р° СЃР»РµРґСѓСЋС‰РёРј РїРѕРІРѕСЂРѕС‚РѕРј. РЇ РїСЂРµРґР»Р°РіР°СЋ РёРґС‚Рё РїСЂСЏРјРѕ С‚СѓРґР°.
+	AI_Output (self, other,"DIA_CipherDJG_SwampWait2_07_01"); //РќСѓ, С‚С‹ С‚Р°РєР¶Рµ РјРѕР¶РµС€СЊ РїСЂРѕРІРµСЂРёС‚СЊ РІРѕРЅ С‚РѕС‚ РїСЂРѕС…РѕРґ, С‡С‚РѕР±С‹ СЌС‚Рё С‚РІР°СЂРё РЅРµ РЅР°РїР°Р»Рё РЅР° РЅР°СЃ СЃР·Р°РґРё. Р§С‚Рѕ С‚С‹ РІС‹Р±РёСЂР°РµС€СЊ?
+	AI_Output (other, self,"DIA_CipherDJG_SwampWait2_15_02"); //РќРµ Р±СѓРґРµРј С‚РµСЂСЏС‚СЊ РІСЂРµРјРµРЅРё!
 
 	Info_AddChoice	(DIA_CipherDJG_SwampWait2, DIALOG_ENDE, DIA_CipherDJG_SwampWait2_weiter );
 };
@@ -272,18 +272,18 @@ func VOID DIA_CipherDJG_GoForSwampDragon_Info()
 {
 	if (Npc_KnowsInfo(other, DIA_Dragon_Swamp_Exit)) //Joly: schon zum Drachen gesprochen!
 	{
-	AI_Output			(self, other, "DIA_CipherDJG_GoForSwampDragon_07_00"); //(рычит) В атаку!
+	AI_Output			(self, other, "DIA_CipherDJG_GoForSwampDragon_07_00"); //(СЂС‹С‡РёС‚) Р’ Р°С‚Р°РєСѓ!
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,"SwampDragon");
 	B_StartOtherRoutine	(DJG_Rod,"SwampDragon");
 	}
 	else	//Joly: noch nicht zum Drachen gesprochen! griefen an, wenn der Dialog mit "Swampi" zu ende ist
 	{
-	AI_Output			(self, other, "DIA_CipherDJG_GoForSwampDragon_07_01"); //Я уже слышу эту тварь. Мы должны быть осторожны!
-	AI_Output			(self, other, "DIA_CipherDJG_GoForSwampDragon_07_02"); //Иди вперед и посмотри, можем ли мы атаковать.
+	AI_Output			(self, other, "DIA_CipherDJG_GoForSwampDragon_07_01"); //РЇ СѓР¶Рµ СЃР»С‹С€Сѓ СЌС‚Сѓ С‚РІР°СЂСЊ. РњС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅС‹!
+	AI_Output			(self, other, "DIA_CipherDJG_GoForSwampDragon_07_02"); //РРґРё РІРїРµСЂРµРґ Рё РїРѕСЃРјРѕС‚СЂРё, РјРѕР¶РµРј Р»Рё РјС‹ Р°С‚Р°РєРѕРІР°С‚СЊ.
 	AI_StopProcessInfos	(self);
 	};
-	self.flags =0;	//Joly: Wer weiЯ!!?!
+	self.flags =0;	//Joly: Wer weiРЇ!!?!
 	DJG_Rod.flags =0; 
 };
 
@@ -312,9 +312,9 @@ func int DIA_CipherDJG_SWAMPDRAGONDEAD_Condition ()
 
 func void DIA_CipherDJG_SWAMPDRAGONDEAD_Info ()
 {
-	AI_Output			(self, other, "DIA_CipherDJG_SWAMPDRAGONDEAD_07_00"); //Черт. Он мертв?
-	AI_Output			(other, self, "DIA_CipherDJG_SWAMPDRAGONDEAD_15_01"); //Успокойся. Все кончено!
-	AI_Output			(self, other, "DIA_CipherDJG_SWAMPDRAGONDEAD_07_02"); //Ух, ну и громадина.
+	AI_Output			(self, other, "DIA_CipherDJG_SWAMPDRAGONDEAD_07_00"); //Р§РµСЂС‚. РћРЅ РјРµСЂС‚РІ?
+	AI_Output			(other, self, "DIA_CipherDJG_SWAMPDRAGONDEAD_15_01"); //РЈСЃРїРѕРєРѕР№СЃСЏ. Р’СЃРµ РєРѕРЅС‡РµРЅРѕ!
+	AI_Output			(self, other, "DIA_CipherDJG_SWAMPDRAGONDEAD_07_02"); //РЈС…, РЅСѓ Рё РіСЂРѕРјР°РґРёРЅР°.
 	
 	AI_StopProcessInfos	(self);
 	B_GivePlayerXP (XP_CipherDJGDeadDragon);
@@ -337,7 +337,7 @@ instance DIA_CipherDJG_WHATNEXT		(C_INFO)
 	information	 = 	DIA_CipherDJG_WHATNEXT_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Болотный дракон мертв!";
+	description	 = 	"Р‘РѕР»РѕС‚РЅС‹Р№ РґСЂР°РєРѕРЅ РјРµСЂС‚РІ!";
 };
 
 func int DIA_CipherDJG_WHATNEXT_Condition ()
@@ -350,11 +350,11 @@ func int DIA_CipherDJG_WHATNEXT_Condition ()
 
 func void DIA_CipherDJG_WHATNEXT_Info ()
 {
-	AI_Output	(other, self, "DIA_CipherDJG_WHATNEXT_15_00"); //Болотный дракон мертв! Что ты будешь делать дальше?
-	AI_Output	(self, other, "DIA_CipherDJG_WHATNEXT_07_01"); //Понятия не имею. Я еще об этом не думал. А ты теперь можешь вернуться в Хоринис как герой.
-	AI_Output	(self, other, "DIA_CipherDJG_WHATNEXT_07_02"); //Ручаюсь, на этом можно сделать состояние. Подумай над этим.
+	AI_Output	(other, self, "DIA_CipherDJG_WHATNEXT_15_00"); //Р‘РѕР»РѕС‚РЅС‹Р№ РґСЂР°РєРѕРЅ РјРµСЂС‚РІ! Р§С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output	(self, other, "DIA_CipherDJG_WHATNEXT_07_01"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РЇ РµС‰Рµ РѕР± СЌС‚РѕРј РЅРµ РґСѓРјР°Р». Рђ С‚С‹ С‚РµРїРµСЂСЊ РјРѕР¶РµС€СЊ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РҐРѕСЂРёРЅРёСЃ РєР°Рє РіРµСЂРѕР№.
+	AI_Output	(self, other, "DIA_CipherDJG_WHATNEXT_07_02"); //Р СѓС‡Р°СЋСЃСЊ, РЅР° СЌС‚РѕРј РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ СЃРѕСЃС‚РѕСЏРЅРёРµ. РџРѕРґСѓРјР°Р№ РЅР°Рґ СЌС‚РёРј.
 
-	B_LogEntry (TOPIC_Dragonhunter,"Сифер думает, что теперь, когда болотный дракон мертв, он может заработать кучу денег как великий 'герой'. Что ж, посмотрим."); 
+	B_LogEntry (TOPIC_Dragonhunter,"РЎРёС„РµСЂ РґСѓРјР°РµС‚, С‡С‚Рѕ С‚РµРїРµСЂСЊ, РєРѕРіРґР° Р±РѕР»РѕС‚РЅС‹Р№ РґСЂР°РєРѕРЅ РјРµСЂС‚РІ, РѕРЅ РјРѕР¶РµС‚ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РєСѓС‡Сѓ РґРµРЅРµРі РєР°Рє РІРµР»РёРєРёР№ 'РіРµСЂРѕР№'. Р§С‚Рѕ Р¶, РїРѕСЃРјРѕС‚СЂРёРј."); 
 
 	AI_StopProcessInfos	(self);
 };

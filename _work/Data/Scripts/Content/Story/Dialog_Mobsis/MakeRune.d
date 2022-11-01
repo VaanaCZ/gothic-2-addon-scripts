@@ -3,7 +3,7 @@
 // MAKERUNE_S1
 // --------------
 // Funktion wird durch Runentisch-Mobsi-Benutzung aufgerufen!
-// benцtigtes Item dafьr: ItMi_RuneBlank
+// benС†tigtes Item dafСЊr: ItMi_RuneBlank
 // *****************************************************
 FUNC VOID MAKERUNE_S1 ()
 {
@@ -54,7 +54,7 @@ INSTANCE PC_Circle_01 (C_Info)
 	condition		= PC_Circle_01_Condition;
 	information		= PC_Circle_01_Info;
 	permanent		= TRUE;
-	description		= "Создать руну 1-го круга"; 
+	description		= "РЎРѕР·РґР°С‚СЊ СЂСѓРЅСѓ 1-РіРѕ РєСЂСѓРіР°"; 
 };
 
 FUNC INT PC_Circle_01_Condition ()
@@ -108,7 +108,7 @@ INSTANCE PC_Circle_02 (C_Info)
 	condition		= PC_Circle_02_Condition;
 	information		= PC_Circle_02_Info;
 	permanent		= TRUE;
-	description		= "Создать руну 2-го круга"; 
+	description		= "РЎРѕР·РґР°С‚СЊ СЂСѓРЅСѓ 2-РіРѕ РєСЂСѓРіР°"; 
 };
 FUNC INT PC_Circle_02_Condition ()
 {
@@ -169,7 +169,7 @@ INSTANCE PC_Circle_03 (C_Info)
 	condition		= PC_Circle_03_Condition;
 	information		= PC_Circle_03_Info;
 	permanent		= TRUE;
-	description		= "Создать руну 3-го круга"; 
+	description		= "РЎРѕР·РґР°С‚СЊ СЂСѓРЅСѓ 3-РіРѕ РєСЂСѓРіР°"; 
 };
 FUNC INT PC_Circle_03_Condition ()
 {	
@@ -237,7 +237,7 @@ INSTANCE PC_Circle_04 (C_Info)
 	condition		= PC_Circle_04_Condition;
 	information		= PC_Circle_04_Info;
 	permanent		= TRUE;
-	description		= "Создать руну 4-го круга"; 
+	description		= "РЎРѕР·РґР°С‚СЊ СЂСѓРЅСѓ 4-РіРѕ РєСЂСѓРіР°"; 
 };
 FUNC INT PC_Circle_04_Condition ()
 {	
@@ -289,7 +289,7 @@ INSTANCE PC_Circle_05 (C_Info)
 	condition		= PC_Circle_05_Condition;
 	information		= PC_Circle_05_Info;
 	permanent		= TRUE;
-	description		= "Создать руну 5-го круга"; 
+	description		= "РЎРѕР·РґР°С‚СЊ СЂСѓРЅСѓ 5-РіРѕ РєСЂСѓРіР°"; 
 };
 FUNC INT PC_Circle_05_Condition ()
 {
@@ -337,7 +337,7 @@ INSTANCE PC_Circle_06 (C_Info)
 	condition		= PC_Circle_06_Condition;
 	information		= PC_Circle_06_Info;
 	permanent		= TRUE;
-	description		= "Создать руну 6-го круга"; 
+	description		= "РЎРѕР·РґР°С‚СЊ СЂСѓРЅСѓ 6-РіРѕ РєСЂСѓРіР°"; 
 };
 FUNC INT PC_Circle_06_Condition ()
 {	
@@ -390,7 +390,7 @@ INSTANCE PC_SPL_MasterOfDisaster (C_Info)
 	condition		= PC_SPL_MasterOfDisaster_Condition;
 	information		= PC_SPL_MasterOfDisaster_Info;
 	permanent		= TRUE;
-	description		= "Секрет библиотеки!"; 
+	description		= "РЎРµРєСЂРµС‚ Р±РёР±Р»РёРѕС‚РµРєРё!"; 
 };
 FUNC INT PC_SPL_MasterOfDisaster_Condition ()
 {	
@@ -408,7 +408,7 @@ FUNC VOID PC_SPL_MasterOfDisaster_Info()
 	Info_AddChoice 	  (PC_SPL_MasterOfDisaster,DIALOG_BACK,PC_SPL_MasterOfDisaster_BACK);
 	if (PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] == TRUE)
 	{
-		Info_AddChoice 	  (PC_SPL_MasterOfDisaster,"Секрет библиотеки!",PC_SPL_MasterOfDisaster_Create);
+		Info_AddChoice 	  (PC_SPL_MasterOfDisaster,"РЎРµРєСЂРµС‚ Р±РёР±Р»РёРѕС‚РµРєРё!",PC_SPL_MasterOfDisaster_Create);
 	};
 	
 };	
@@ -441,7 +441,7 @@ INSTANCE PC_SPL_PalTeleportSecret (C_Info)
 	condition		= PC_SPL_PalTeleportSecret_Condition;
 	information		= PC_SPL_PalTeleportSecret_Info;
 	permanent		= TRUE;
-	description		= "Создать руну телепорта"; 
+	description		= "РЎРѕР·РґР°С‚СЊ СЂСѓРЅСѓ С‚РµР»РµРїРѕСЂС‚Р°"; 
 };
 FUNC INT PC_SPL_PalTeleportSecret_Condition ()
 {	
@@ -459,7 +459,7 @@ FUNC VOID PC_SPL_PalTeleportSecret_Info()
 	Info_AddChoice 	  (PC_SPL_PalTeleportSecret,DIALOG_BACK,PC_SPL_PalTeleportSecret_BACK);
 	if (PLAYER_TALENT_RUNES[SPL_PalTeleportSecret] == TRUE)
 	{
-		Info_AddChoice 	  (PC_SPL_PalTeleportSecret,"Секрет библиотеки!",PC_SPL_PalTeleportSecret_Create);
+		Info_AddChoice 	  (PC_SPL_PalTeleportSecret,"РЎРµРєСЂРµС‚ Р±РёР±Р»РёРѕС‚РµРєРё!",PC_SPL_PalTeleportSecret_Create);
 	};
 	
 };	

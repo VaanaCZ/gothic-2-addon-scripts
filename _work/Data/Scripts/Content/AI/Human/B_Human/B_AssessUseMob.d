@@ -2,7 +2,7 @@
 // B_AssessUseMob
 // --------------
 // wird durch Wahrnehmung ASSESSUSEMOB aufgerufen
-// wird von ÜBERALL her aufgerufen (auch von ZS_Attack)
+// wird von Ð¬BERALL her aufgerufen (auch von ZS_Attack)
 // ****************************************************
 
 func void B_AssessUseMob ()
@@ -29,7 +29,7 @@ func void B_AssessUseMob ()
 	{
 		if (Npc_IsDetectedMobOwnedByNpc(other, self))
 		{
-			//weiter (kein Abbruch bei persönlichem Besitz)
+			//weiter (kein Abbruch bei persÑ†nlichem Besitz)
 		}
 		else
 		{
@@ -37,7 +37,7 @@ func void B_AssessUseMob ()
 		};		
 	};
 
-	// ------ Mob gehörte mir nicht ------
+	// ------ Mob gehÑ†rte mir nicht ------
 	if (!C_IsUsedMobMyPossession (self, other))
 	{
 		return;

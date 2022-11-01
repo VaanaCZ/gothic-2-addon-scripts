@@ -32,7 +32,7 @@ INSTANCE DIA_None_101_Mario_Job (C_INFO)
 	condition   = DIA_None_101_Mario_Job_Condition;
 	information = DIA_None_101_Mario_Job_Info;
 	permanent   = TRUE;
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 FUNC INT DIA_None_101_Mario_Job_Condition()
@@ -47,9 +47,9 @@ FUNC INT DIA_None_101_Mario_Job_Condition()
 
 FUNC VOID DIA_None_101_Mario_Job_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_Job_15_00"); //Что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_01"); //Надеюсь, скоро придет какой-нибудь корабль, и я наймусь на него.
-	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_02"); //Это шатание без дела уже действует мне на нервы.
+	AI_Output (other,self ,"DIA_None_101_Mario_Job_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_01"); //РќР°РґРµСЋСЃСЊ, СЃРєРѕСЂРѕ РїСЂРёРґРµС‚ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РєРѕСЂР°Р±Р»СЊ, Рё СЏ РЅР°Р№РјСѓСЃСЊ РЅР° РЅРµРіРѕ.
+	AI_Output (self ,other,"DIA_None_101_Mario_Job_07_02"); //Р­С‚Рѕ С€Р°С‚Р°РЅРёРµ Р±РµР· РґРµР»Р° СѓР¶Рµ РґРµР№СЃС‚РІСѓРµС‚ РјРЅРµ РЅР° РЅРµСЂРІС‹.
 };
 
 //*********************************************************************
@@ -76,13 +76,13 @@ FUNC INT DIA_None_101_Mario_YouNeedMe_Condition()
 
 FUNC VOID DIA_None_101_Mario_YouNeedMe_Info()
 {
-	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_00"); //Я слышал, что ты набираешь команду на свой корабль?
-	AI_Output (other,self ,"DIA_None_101_Mario_YouNeedMe_15_01"); //И?
-	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_02"); //Я готов!
+	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_00"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ РЅР°Р±РёСЂР°РµС€СЊ РєРѕРјР°РЅРґСѓ РЅР° СЃРІРѕР№ РєРѕСЂР°Р±Р»СЊ?
+	AI_Output (other,self ,"DIA_None_101_Mario_YouNeedMe_15_01"); //Р?
+	AI_Output (self ,other,"DIA_None_101_Mario_YouNeedMe_07_02"); //РЇ РіРѕС‚РѕРІ!
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	
-	B_LogEntry (TOPIC_Crew,"Марио бывший моряк, заговорил со мной в портовой таверне. Он хочет плыть на корабле.");
+	B_LogEntry (TOPIC_Crew,"РњР°СЂРёРѕ Р±С‹РІС€РёР№ РјРѕСЂСЏРє, Р·Р°РіРѕРІРѕСЂРёР» СЃРѕ РјРЅРѕР№ РІ РїРѕСЂС‚РѕРІРѕР№ С‚Р°РІРµСЂРЅРµ. РћРЅ С…РѕС‡РµС‚ РїР»С‹С‚СЊ РЅР° РєРѕСЂР°Р±Р»Рµ.");
 };
 
 //*********************************************************************
@@ -95,7 +95,7 @@ INSTANCE DIA_None_101_Mario_WhyNeedYou   (C_INFO)
 	condition   = DIA_None_101_Mario_WhyNeedYou_Condition;
 	information = DIA_None_101_Mario_WhyNeedYou_Info;
 	permanent   = FALSE;
-	description	= "Почему я должен брать тебя?";
+	description	= "РџРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ Р±СЂР°С‚СЊ С‚РµР±СЏ?";
 };
 
 FUNC INT DIA_None_101_Mario_WhyNeedYou_Condition()
@@ -109,12 +109,12 @@ FUNC INT DIA_None_101_Mario_WhyNeedYou_Condition()
 
 FUNC VOID DIA_None_101_Mario_WhyNeedYou_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_WhyNeedYou_15_00"); //Почему я должен брать тебя?
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_01"); //Это просто. Потому что я нужен тебе.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_02"); //Я... я был лейтенантом в королевском флоте.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_03"); //Я служил моряком на 'Короле Робаре' и 'Гордости Миртаны'.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_04"); //В битве у восточного архипелага я собственноручно отправил пару десятков орков назад в царство Белиара.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_05"); //К сожалению, нас осталось слишком мало, когда наш флагман затонул и нам пришлось отступить.
+	AI_Output (other,self ,"DIA_None_101_Mario_WhyNeedYou_15_00"); //РџРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ Р±СЂР°С‚СЊ С‚РµР±СЏ?
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_01"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ. РџРѕС‚РѕРјСѓ С‡С‚Рѕ СЏ РЅСѓР¶РµРЅ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_02"); //РЇ... СЏ Р±С‹Р» Р»РµР№С‚РµРЅР°РЅС‚РѕРј РІ РєРѕСЂРѕР»РµРІСЃРєРѕРј С„Р»РѕС‚Рµ.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_03"); //РЇ СЃР»СѓР¶РёР» РјРѕСЂСЏРєРѕРј РЅР° 'РљРѕСЂРѕР»Рµ Р РѕР±Р°СЂРµ' Рё 'Р“РѕСЂРґРѕСЃС‚Рё РњРёСЂС‚Р°РЅС‹'.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_04"); //Р’ Р±РёС‚РІРµ Сѓ РІРѕСЃС‚РѕС‡РЅРѕРіРѕ Р°СЂС…РёРїРµР»Р°РіР° СЏ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЂСѓС‡РЅРѕ РѕС‚РїСЂР°РІРёР» РїР°СЂСѓ РґРµСЃСЏС‚РєРѕРІ РѕСЂРєРѕРІ РЅР°Р·Р°Рґ РІ С†Р°СЂСЃС‚РІРѕ Р‘РµР»РёР°СЂР°.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyNeedYou_07_05"); //Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РЅР°СЃ РѕСЃС‚Р°Р»РѕСЃСЊ СЃР»РёС€РєРѕРј РјР°Р»Рѕ, РєРѕРіРґР° РЅР°С€ С„Р»Р°РіРјР°РЅ Р·Р°С‚РѕРЅСѓР» Рё РЅР°Рј РїСЂРёС€Р»РѕСЃСЊ РѕС‚СЃС‚СѓРїРёС‚СЊ.
 
 };
 
@@ -128,7 +128,7 @@ INSTANCE DIA_None_101_Mario_WhyHere   (C_INFO)
 	condition   = DIA_None_101_Mario_WhyHere_Condition;
 	information = DIA_None_101_Mario_WhyHere_Info;
 	permanent   = FALSE;
-	description	= "А что ты делаешь здесь?";
+	description	= "Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 FUNC INT DIA_None_101_Mario_WhyHere_Condition()
@@ -142,9 +142,9 @@ FUNC INT DIA_None_101_Mario_WhyHere_Condition()
 
 FUNC VOID DIA_None_101_Mario_WhyHere_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_WhyHere_15_00"); //А что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyHere_07_01"); //Флоту пришлось бежать, и мы лишились жалования.
-	AI_Output (self ,other,"DIA_None_101_Mario_WhyHere_07_02"); //После моего списания на берег я застрял в этой дыре, и вот теперь ищу новое судно.
+	AI_Output (other,self ,"DIA_None_101_Mario_WhyHere_15_00"); //Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyHere_07_01"); //Р¤Р»РѕС‚Сѓ РїСЂРёС€Р»РѕСЃСЊ Р±РµР¶Р°С‚СЊ, Рё РјС‹ Р»РёС€РёР»РёСЃСЊ Р¶Р°Р»РѕРІР°РЅРёСЏ.
+	AI_Output (self ,other,"DIA_None_101_Mario_WhyHere_07_02"); //РџРѕСЃР»Рµ РјРѕРµРіРѕ СЃРїРёСЃР°РЅРёСЏ РЅР° Р±РµСЂРµРі СЏ Р·Р°СЃС‚СЂСЏР» РІ СЌС‚РѕР№ РґС‹СЂРµ, Рё РІРѕС‚ С‚РµРїРµСЂСЊ РёС‰Сѓ РЅРѕРІРѕРµ СЃСѓРґРЅРѕ.
 };
 
 //*********************************************************************
@@ -157,7 +157,7 @@ INSTANCE DIA_None_101_Mario_Abilities   (C_INFO)
 	condition   = DIA_None_101_Mario_Abilities_Condition;
 	information = DIA_None_101_Mario_Abilities_Info;
 	permanent   = FALSE;
-	description	= "Что ты можешь делать?";
+	description	= "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РґРµР»Р°С‚СЊ?";
 };
 
 FUNC INT DIA_None_101_Mario_Abilities_Condition()
@@ -171,11 +171,11 @@ FUNC INT DIA_None_101_Mario_Abilities_Condition()
 
 FUNC VOID DIA_None_101_Mario_Abilities_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_Abilities_15_00"); //Что ты можешь делать?
-	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_01"); //Я обучен абордажу и ближнему бою, к тому же я метко стреляю из корабельной пушки.
-	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_02"); //Я уверен, что я смогу обучить тебя чему-нибудь во время путешествия.
+	AI_Output (other,self ,"DIA_None_101_Mario_Abilities_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РґРµР»Р°С‚СЊ?
+	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_01"); //РЇ РѕР±СѓС‡РµРЅ Р°Р±РѕСЂРґР°Р¶Сѓ Рё Р±Р»РёР¶РЅРµРјСѓ Р±РѕСЋ, Рє С‚РѕРјСѓ Р¶Рµ СЏ РјРµС‚РєРѕ СЃС‚СЂРµР»СЏСЋ РёР· РєРѕСЂР°Р±РµР»СЊРЅРѕР№ РїСѓС€РєРё.
+	AI_Output (self ,other,"DIA_None_101_Mario_Abilities_07_02"); //РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЏ СЃРјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РІРѕ РІСЂРµРјСЏ РїСѓС‚РµС€РµСЃС‚РІРёСЏ.
 
-	B_LogEntry (TOPIC_Crew,"Марио, похоже, собаку съел в том, что касается  морских боев. Возможно, он сможет научить меня кое-чему.");
+	B_LogEntry (TOPIC_Crew,"РњР°СЂРёРѕ, РїРѕС…РѕР¶Рµ, СЃРѕР±Р°РєСѓ СЃСЉРµР» РІ С‚РѕРј, С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ  РјРѕСЂСЃРєРёС… Р±РѕРµРІ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ СЃРјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РєРѕРµ-С‡РµРјСѓ.");
 };
 
 //*********************************************************************
@@ -188,7 +188,7 @@ INSTANCE DIA_None_101_Mario_YourPrice   (C_INFO)
 	condition   = DIA_None_101_Mario_YourPrice_Condition;
 	information = DIA_None_101_Mario_YourPrice_Info;
 	permanent   = FALSE;
-	description	= "Что ты за это хочешь?";
+	description	= "Р§С‚Рѕ С‚С‹ Р·Р° СЌС‚Рѕ С…РѕС‡РµС€СЊ?";
 };
 
 FUNC INT DIA_None_101_Mario_YourPrice_Condition()
@@ -202,13 +202,13 @@ FUNC INT DIA_None_101_Mario_YourPrice_Condition()
 
 FUNC VOID DIA_None_101_Mario_YourPrice_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_YourPrice_15_00"); //Что ты за это хочешь?
-	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_01"); //Что я хочу? Да я буду рад просто убраться отсюда.
-	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_02"); //Я помогу тебе, а ты поможешь мне выбраться из этой дыры.
+	AI_Output (other,self ,"DIA_None_101_Mario_YourPrice_15_00"); //Р§С‚Рѕ С‚С‹ Р·Р° СЌС‚Рѕ С…РѕС‡РµС€СЊ?
+	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_01"); //Р§С‚Рѕ СЏ С…РѕС‡Сѓ? Р”Р° СЏ Р±СѓРґСѓ СЂР°Рґ РїСЂРѕСЃС‚Рѕ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
+	AI_Output (self ,other,"DIA_None_101_Mario_YourPrice_07_02"); //РЇ РїРѕРјРѕРіСѓ С‚РµР±Рµ, Р° С‚С‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ РІС‹Р±СЂР°С‚СЊСЃСЏ РёР· СЌС‚РѕР№ РґС‹СЂС‹.
 };
 
 //*********************************************************************
-//	Die Reise kann gefдhrlich werden.
+//	Die Reise kann gefРґhrlich werden.
 //*********************************************************************
 INSTANCE DIA_None_101_Mario_CouldBeDangerous   (C_INFO)
 {
@@ -217,7 +217,7 @@ INSTANCE DIA_None_101_Mario_CouldBeDangerous   (C_INFO)
 	condition   = DIA_None_101_Mario_CouldBeDangerous_Condition;
 	information = DIA_None_101_Mario_CouldBeDangerous_Info;
 	permanent   = FALSE;
-	description	= "Путешествие может быть опасным.";
+	description	= "РџСѓС‚РµС€РµСЃС‚РІРёРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕРїР°СЃРЅС‹Рј.";
 };
 
 FUNC INT DIA_None_101_Mario_CouldBeDangerous_Condition()
@@ -231,10 +231,10 @@ FUNC INT DIA_None_101_Mario_CouldBeDangerous_Condition()
 
 FUNC VOID DIA_None_101_Mario_CouldBeDangerous_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_CouldBeDangerous_15_00"); //Путешествие может быть опасным.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_01"); //Я привык к опасности. Когда ты вдали от дома, каждый день для тебя полон опасностей.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_02"); //Любой шторм может стать для тебя последним, а монстры с глубин могут проглотить твой корабль целиком.
-	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_03"); //Не говоря уже о галерах орков. Поверь мне, я ничего не боюсь. Матрос, который боится, обречен на гибель.
+	AI_Output (other,self ,"DIA_None_101_Mario_CouldBeDangerous_15_00"); //РџСѓС‚РµС€РµСЃС‚РІРёРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕРїР°СЃРЅС‹Рј.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_01"); //РЇ РїСЂРёРІС‹Рє Рє РѕРїР°СЃРЅРѕСЃС‚Рё. РљРѕРіРґР° С‚С‹ РІРґР°Р»Рё РѕС‚ РґРѕРјР°, РєР°Р¶РґС‹Р№ РґРµРЅСЊ РґР»СЏ С‚РµР±СЏ РїРѕР»РѕРЅ РѕРїР°СЃРЅРѕСЃС‚РµР№.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_02"); //Р›СЋР±РѕР№ С€С‚РѕСЂРј РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ РґР»СЏ С‚РµР±СЏ РїРѕСЃР»РµРґРЅРёРј, Р° РјРѕРЅСЃС‚СЂС‹ СЃ РіР»СѓР±РёРЅ РјРѕРіСѓС‚ РїСЂРѕРіР»РѕС‚РёС‚СЊ С‚РІРѕР№ РєРѕСЂР°Р±Р»СЊ С†РµР»РёРєРѕРј.
+	AI_Output (self ,other,"DIA_None_101_Mario_CouldBeDangerous_07_03"); //РќРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ Рѕ РіР°Р»РµСЂР°С… РѕСЂРєРѕРІ. РџРѕРІРµСЂСЊ РјРЅРµ, СЏ РЅРёС‡РµРіРѕ РЅРµ Р±РѕСЋСЃСЊ. РњР°С‚СЂРѕСЃ, РєРѕС‚РѕСЂС‹Р№ Р±РѕРёС‚СЃСЏ, РѕР±СЂРµС‡РµРЅ РЅР° РіРёР±РµР»СЊ.
 };
 
 //*********************************************************************
@@ -247,7 +247,7 @@ INSTANCE DIA_None_101_Mario_DontNeedYou   (C_INFO)
 	condition   = DIA_None_101_Mario_DontNeedYou_Condition;
 	information = DIA_None_101_Mario_DontNeedYou_Info;
 	permanent   = FALSE;
-	description	= "Ты не нужен мне.";
+	description	= "РўС‹ РЅРµ РЅСѓР¶РµРЅ РјРЅРµ.";
 };
 
 FUNC INT DIA_None_101_Mario_DontNeedYou_Condition()
@@ -261,10 +261,10 @@ FUNC INT DIA_None_101_Mario_DontNeedYou_Condition()
 
 FUNC VOID DIA_None_101_Mario_DontNeedYou_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_DontNeedYou_15_00"); //Ты не нужен мне.
-	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_01"); //Я лучший матрос, которого можно найти здесь.
-	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_02"); //Мне кажется, ты не очень-то разбираешься в навигации.
-	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_03"); //Так что дважды подумай, прежде чем доверяться кому-нибудь.
+	AI_Output (other,self ,"DIA_None_101_Mario_DontNeedYou_15_00"); //РўС‹ РЅРµ РЅСѓР¶РµРЅ РјРЅРµ.
+	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_01"); //РЇ Р»СѓС‡С€РёР№ РјР°С‚СЂРѕСЃ, РєРѕС‚РѕСЂРѕРіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё Р·РґРµСЃСЊ.
+	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_02"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ СЂР°Р·Р±РёСЂР°РµС€СЊСЃСЏ РІ РЅР°РІРёРіР°С†РёРё.
+	AI_Output (self ,other,"DIA_None_101_Mario_DontNeedYou_07_03"); //РўР°Рє С‡С‚Рѕ РґРІР°Р¶РґС‹ РїРѕРґСѓРјР°Р№, РїСЂРµР¶РґРµ С‡РµРј РґРѕРІРµСЂСЏС‚СЊСЃСЏ РєРѕРјСѓ-РЅРёР±СѓРґСЊ.
 };
 
 //*********************************************************************
@@ -277,7 +277,7 @@ INSTANCE DIA_None_101_Mario_NeedGoodMen   (C_INFO)
 	condition   = DIA_None_101_Mario_NeedGoodMen_Condition;
 	information = DIA_None_101_Mario_NeedGoodMen_Info;
 	permanent   = FALSE;
-	description	= "Я всегда найду место для хороших людей.";
+	description	= "РЇ РІСЃРµРіРґР° РЅР°Р№РґСѓ РјРµСЃС‚Рѕ РґР»СЏ С…РѕСЂРѕС€РёС… Р»СЋРґРµР№.";
 };
 
 FUNC INT DIA_None_101_Mario_NeedGoodMen_Condition()
@@ -291,8 +291,8 @@ FUNC INT DIA_None_101_Mario_NeedGoodMen_Condition()
 
 FUNC VOID DIA_None_101_Mario_NeedGoodMen_Info()
 {
-	AI_Output (other,self ,"DIA_None_101_Mario_NeedGoodMen_15_00"); //Я всегда найду место для хороших людей.
-	AI_Output (self ,other,"DIA_None_101_Mario_NeedGoodMen_07_01"); //Конечно, увидимся на корабле.
+	AI_Output (other,self ,"DIA_None_101_Mario_NeedGoodMen_15_00"); //РЇ РІСЃРµРіРґР° РЅР°Р№РґСѓ РјРµСЃС‚Рѕ РґР»СЏ С…РѕСЂРѕС€РёС… Р»СЋРґРµР№.
+	AI_Output (self ,other,"DIA_None_101_Mario_NeedGoodMen_07_01"); //РљРѕРЅРµС‡РЅРѕ, СѓРІРёРґРёРјСЃСЏ РЅР° РєРѕСЂР°Р±Р»Рµ.
 	
 	B_GivePlayerXP (XP_Crewmember_Success);
 	
@@ -319,7 +319,7 @@ instance DIA_Mario_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Mario_LeaveMyShip_Condition;
 	information	 = 	DIA_Mario_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я все-таки не могу взять тебя с собой!";
+	description	 = 	"РЇ РІСЃРµ-С‚Р°РєРё РЅРµ РјРѕРіСѓ РІР·СЏС‚СЊ С‚РµР±СЏ СЃ СЃРѕР±РѕР№!";
 };
 func int DIA_Mario_LeaveMyShip_Condition ()
 {	
@@ -331,8 +331,8 @@ func int DIA_Mario_LeaveMyShip_Condition ()
 };
 func void DIA_Mario_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Mario_LeaveMyShip_15_00"); //Я понял, что ты мне не нужен!
-	AI_Output			(self, other, "DIA_Mario_LeaveMyShip_07_01"); //Как скажешь. Ты знаешь, где искать меня!
+	AI_Output			(other, self, "DIA_Mario_LeaveMyShip_15_00"); //РЇ РїРѕРЅСЏР», С‡С‚Рѕ С‚С‹ РјРЅРµ РЅРµ РЅСѓР¶РµРЅ!
+	AI_Output			(self, other, "DIA_Mario_LeaveMyShip_07_01"); //РљР°Рє СЃРєР°Р¶РµС€СЊ. РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РёСЃРєР°С‚СЊ РјРµРЅСЏ!
 	
 	Mario_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -341,7 +341,7 @@ func void DIA_Mario_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ьberlegt!
+//	Ich habs mir СЊberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Mario_StillNeedYou		(C_INFO)
 {
@@ -350,11 +350,11 @@ instance DIA_Mario_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Mario_StillNeedYou_Condition;
 	information	 = 	DIA_Mario_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Ты мне все-таки нужен!";
+	description	 = 	"РўС‹ РјРЅРµ РІСЃРµ-С‚Р°РєРё РЅСѓР¶РµРЅ!";
 };
 func int DIA_Mario_StillNeedYou_Condition ()
 {	
-	if((Mario_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natьrlich nur eine variable abfragen
+	if((Mario_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natСЊrlich nur eine variable abfragen
 	|| (Mario_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{
@@ -363,11 +363,11 @@ func int DIA_Mario_StillNeedYou_Condition ()
 };
 func void DIA_Mario_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_Mario_StillNeedYou_15_00"); //Ты мне все-таки нужен!
+	AI_Output			(other, self, "DIA_Mario_StillNeedYou_15_00"); //РўС‹ РјРЅРµ РІСЃРµ-С‚Р°РєРё РЅСѓР¶РµРЅ!
 	
 	if (Mario_IsOnBoard == LOG_OBSOLETE)
 	{
-		AI_Output	(self, other, "DIA_Mario_StillNeedYou_07_01"); //Я знал! Увидимся на корабле!
+		AI_Output	(self, other, "DIA_Mario_StillNeedYou_07_01"); //РЇ Р·РЅР°Р»! РЈРІРёРґРёРјСЃСЏ РЅР° РєРѕСЂР°Р±Р»Рµ!
 		
 		Mario_IsOnBoard	 = LOG_SUCCESS;
 		crewmember_Count = (Crewmember_Count +1);
@@ -383,7 +383,7 @@ func void DIA_Mario_StillNeedYou_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Mario_StillNeedYou_07_02"); //Ты не смеешь так обращаться со мной. Плевать я на тебя хотел!
+		AI_Output	(self, other, "DIA_Mario_StillNeedYou_07_02"); //РўС‹ РЅРµ СЃРјРµРµС€СЊ С‚Р°Рє РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃРѕ РјРЅРѕР№. РџР»РµРІР°С‚СЊ СЏ РЅР° С‚РµР±СЏ С…РѕС‚РµР»!
 	
 		AI_StopProcessInfos (self);
 		

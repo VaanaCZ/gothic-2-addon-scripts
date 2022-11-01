@@ -2,7 +2,7 @@
 instance VLK_4302_Addon_Elvrich (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ýëâðèõ"; 
+	name 		= "Ð­Ð»Ð²Ñ€Ð¸Ñ…"; 
 	guild 		= GIL_NONE;
 	id 			= 4302;
 	voice 		= 4;

@@ -1,7 +1,7 @@
 instance BDT_1086_Addon_Scatty (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "—Í‡ÚÚË";
+	name 		= "–°–∫–∞—Ç—Ç–∏";
 	guild 		= GIL_BDT;
 	id 			= 1086;
 	voice 		= 1;

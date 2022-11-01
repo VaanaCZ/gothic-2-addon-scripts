@@ -4,7 +4,7 @@
 
 INSTANCE StandardBrief		(C_Item)
 {
-	name 				=	"Письмо";
+	name 				=	"РџРёСЃСЊРјРѕ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -82,7 +82,7 @@ INSTANCE StandardBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "StandardBook Page 2"	);
@@ -105,7 +105,7 @@ INSTANCE StandardBuch (C_ITEM)
 
 instance ItWr_Map_NewWorld (C_Item)
 {
-	name 		= "Карта земель Хориниса";  // 
+	name 		= "РљР°СЂС‚Р° Р·РµРјРµР»СЊ РҐРѕСЂРёРЅРёСЃР°";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -143,7 +143,7 @@ instance ItWr_Map_NewWorld (C_Item)
 
 instance ItWr_Map_NewWorld_City (C_Item)
 {
-	name 		= "Карта города Хоринис";  // 
+	name 		= "РљР°СЂС‚Р° РіРѕСЂРѕРґР° РҐРѕСЂРёРЅРёСЃ";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -181,7 +181,7 @@ instance ItWr_Map_NewWorld_City (C_Item)
 
 instance ItWr_Map_OldWorld (C_Item)
 {
-	name 		= "Карта долины рудников";
+	name 		= "РљР°СЂС‚Р° РґРѕР»РёРЅС‹ СЂСѓРґРЅРёРєРѕРІ";
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -224,7 +224,7 @@ var int Lerne_Zweihand;
 //---------------------------------------------------------------------------------------------------------------------------
 INSTANCE ItWr_EinhandBuch (C_ITEM)
 {
-	name 					=	"Искусство сражения";
+	name 					=	"РСЃРєСѓСЃСЃС‚РІРѕ СЃСЂР°Р¶РµРЅРёСЏ";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -235,10 +235,10 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Южное искусство обороны";
+	description				= 	"Р®Р¶РЅРѕРµ РёСЃРєСѓСЃСЃС‚РІРѕ РѕР±РѕСЂРѕРЅС‹";
 	
-	TEXT[2] 				=  "Книга, посвященная искусству";
-	TEXT[3] 				=  "сражения одноручным оружием.";
+	TEXT[2] 				=  "РљРЅРёРіР°, РїРѕСЃРІСЏС‰РµРЅРЅР°СЏ РёСЃРєСѓСЃСЃС‚РІСѓ";
+	TEXT[3] 				=  "СЃСЂР°Р¶РµРЅРёСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseEinhandBuch;
@@ -267,20 +267,20 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Южное искусство обороны"	);
+					Doc_PrintLines	( nDocID,  0, "Р®Р¶РЅРѕРµ РёСЃРєСѓСЃСЃС‚РІРѕ РѕР±РѕСЂРѕРЅС‹"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Южане меньше полагаются на грубую физическую силу, нежели северяне, и отдают предпочтение ловкости. В горячем климате своей родины они предпочитают носить легкие доспехи, позволяющие двигаться более свободно. Таким образом, южане разработали стиль боя, фундаментально   отличающийся от того, к которому привыкли мы. "					);
+					Doc_PrintLines	( nDocID,  0, "Р®Р¶Р°РЅРµ РјРµРЅСЊС€Рµ РїРѕР»Р°РіР°СЋС‚СЃСЏ РЅР° РіСЂСѓР±СѓСЋ С„РёР·РёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ, РЅРµР¶РµР»Рё СЃРµРІРµСЂСЏРЅРµ, Рё РѕС‚РґР°СЋС‚ РїСЂРµРґРїРѕС‡С‚РµРЅРёРµ Р»РѕРІРєРѕСЃС‚Рё. Р’ РіРѕСЂСЏС‡РµРј РєР»РёРјР°С‚Рµ СЃРІРѕРµР№ СЂРѕРґРёРЅС‹ РѕРЅРё РїСЂРµРґРїРѕС‡РёС‚Р°СЋС‚ РЅРѕСЃРёС‚СЊ Р»РµРіРєРёРµ РґРѕСЃРїРµС…Рё, РїРѕР·РІРѕР»СЏСЋС‰РёРµ РґРІРёРіР°С‚СЊСЃСЏ Р±РѕР»РµРµ СЃРІРѕР±РѕРґРЅРѕ. РўР°РєРёРј РѕР±СЂР°Р·РѕРј, СЋР¶Р°РЅРµ СЂР°Р·СЂР°Р±РѕС‚Р°Р»Рё СЃС‚РёР»СЊ Р±РѕСЏ, С„СѓРЅРґР°РјРµРЅС‚Р°Р»СЊРЅРѕ   РѕС‚Р»РёС‡Р°СЋС‰РёР№СЃСЏ РѕС‚ С‚РѕРіРѕ, Рє РєРѕС‚РѕСЂРѕРјСѓ РїСЂРёРІС‹РєР»Рё РјС‹. "					);
 					
 					
 
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Вероятно, самый известный прием, используемый южанами - это блок одноручным оружием и шаг назад. Шаг назад позволяет бойцу ослабить атакующий удар и в то же время занять превосходную стойку, из которой можно провести контратаку."	);
+					Doc_PrintLines	( nDocID,  1, "Р’РµСЂРѕСЏС‚РЅРѕ, СЃР°РјС‹Р№ РёР·РІРµСЃС‚РЅС‹Р№ РїСЂРёРµРј, РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ СЋР¶Р°РЅР°РјРё - СЌС‚Рѕ Р±Р»РѕРє РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј Рё С€Р°Рі РЅР°Р·Р°Рґ. РЁР°Рі РЅР°Р·Р°Рґ РїРѕР·РІРѕР»СЏРµС‚ Р±РѕР№С†Сѓ РѕСЃР»Р°Р±РёС‚СЊ Р°С‚Р°РєСѓСЋС‰РёР№ СѓРґР°СЂ Рё РІ С‚Рѕ Р¶Рµ РІСЂРµРјСЏ Р·Р°РЅСЏС‚СЊ РїСЂРµРІРѕСЃС…РѕРґРЅСѓСЋ СЃС‚РѕР№РєСѓ, РёР· РєРѕС‚РѕСЂРѕР№ РјРѕР¶РЅРѕ РїСЂРѕРІРµСЃС‚Рё РєРѕРЅС‚СЂР°С‚Р°РєСѓ."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					
 					
@@ -291,7 +291,7 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 //---------------------------------------------------------------------------------------------------------------------------
 INSTANCE ItWr_ZweihandBuch (C_ITEM)
 {
-	name 					=	"Тактика боя";
+	name 					=	"РўР°РєС‚РёРєР° Р±РѕСЏ";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -302,10 +302,10 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Двойные блоки";
+	description				= 	"Р”РІРѕР№РЅС‹Рµ Р±Р»РѕРєРё";
 	
-	TEXT[2] 				=  "Книга, посвященная искусству";
-	TEXT[3] 				=  "сражения двуручным оружием.";
+	TEXT[2] 				=  "РљРЅРёРіР°, РїРѕСЃРІСЏС‰РµРЅРЅР°СЏ РёСЃРєСѓСЃСЃС‚РІСѓ";
+	TEXT[3] 				=  "СЃСЂР°Р¶РµРЅРёСЏ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseZweihandBuch;
@@ -333,20 +333,20 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Двойные блоки"	);
+					Doc_PrintLines	( nDocID,  0, "Р”РІРѕР№РЅС‹Рµ Р±Р»РѕРєРё"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Блокировка вражеского клинка при помощи двуручного оружия - прием, используемый сильными бойцами, позволяющий остановить атаку и заставить атакующего прервать свою комбинацию. "					);
+					Doc_PrintLines	( nDocID,  0, "Р‘Р»РѕРєРёСЂРѕРІРєР° РІСЂР°Р¶РµСЃРєРѕРіРѕ РєР»РёРЅРєР° РїСЂРё РїРѕРјРѕС‰Рё РґРІСѓСЂСѓС‡РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ - РїСЂРёРµРј, РёСЃРїРѕР»СЊР·СѓРµРјС‹Р№ СЃРёР»СЊРЅС‹РјРё Р±РѕР№С†Р°РјРё, РїРѕР·РІРѕР»СЏСЋС‰РёР№ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ Р°С‚Р°РєСѓ Рё Р·Р°СЃС‚Р°РІРёС‚СЊ Р°С‚Р°РєСѓСЋС‰РµРіРѕ РїСЂРµСЂРІР°С‚СЊ СЃРІРѕСЋ РєРѕРјР±РёРЅР°С†РёСЋ. "					);
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Результатом такого блока обычно является остановка противника, что дает возможность перехватить инициативу и нанести поражение врагу несколькими выверенными ударами.    "	);
+					Doc_PrintLines	( nDocID,  1, "Р РµР·СѓР»СЊС‚Р°С‚РѕРј С‚Р°РєРѕРіРѕ Р±Р»РѕРєР° РѕР±С‹С‡РЅРѕ СЏРІР»СЏРµС‚СЃСЏ РѕСЃС‚Р°РЅРѕРІРєР° РїСЂРѕС‚РёРІРЅРёРєР°, С‡С‚Рѕ РґР°РµС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРµСЂРµС…РІР°С‚РёС‚СЊ РёРЅРёС†РёР°С‚РёРІСѓ Рё РЅР°РЅРµСЃС‚Рё РїРѕСЂР°Р¶РµРЅРёРµ РІСЂР°РіСѓ РЅРµСЃРєРѕР»СЊРєРёРјРё РІС‹РІРµСЂРµРЅРЅС‹РјРё СѓРґР°СЂР°РјРё.    "	);
 					
 					Doc_Show		( nDocID );
 };

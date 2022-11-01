@@ -2,7 +2,7 @@
 instance Mil_317_Ruga (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "–Û„‡";	
+	name 		= "–†—É–≥–∞";	
 	guild 		= GIL_MIL;
 	id 			= 317;
 	voice 		= 11;

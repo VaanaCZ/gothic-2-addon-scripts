@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10025_Wache_Hi   (C_INFO)
 	condition   = DIA_Addon_10025_Wache_Hi_Condition;
 	information = DIA_Addon_10025_Wache_Hi_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 {	
@@ -36,13 +36,13 @@ FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10025_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//Как дела?
-	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//Я готовлю вкусное тушеное мясо для рудокопов и охранников.
+	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//РЇ РіРѕС‚РѕРІР»СЋ РІРєСѓСЃРЅРѕРµ С‚СѓС€РµРЅРѕРµ РјСЏСЃРѕ РґР»СЏ СЂСѓРґРѕРєРѕРїРѕРІ Рё РѕС…СЂР°РЅРЅРёРєРѕРІ.
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//А рабы почти ничего не получат. Немного застоявшейся воды и старый хлеб, не более того.
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Этим городским крысам это не сильно повредит.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Рђ СЂР°Р±С‹ РїРѕС‡С‚Рё РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡Р°С‚. РќРµРјРЅРѕРіРѕ Р·Р°СЃС‚РѕСЏРІС€РµР№СЃСЏ РІРѕРґС‹ Рё СЃС‚Р°СЂС‹Р№ С…Р»РµР±, РЅРµ Р±РѕР»РµРµ С‚РѕРіРѕ.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Р­С‚РёРј РіРѕСЂРѕРґСЃРєРёРј РєСЂС‹СЃР°Рј СЌС‚Рѕ РЅРµ СЃРёР»СЊРЅРѕ РїРѕРІСЂРµРґРёС‚.
 	};
 };
 

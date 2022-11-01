@@ -7,7 +7,7 @@
 instance None_101_Mario (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ìàðèî";
+	name 		= "ÐœÐ°Ñ€Ð¸Ð¾";
 	guild 		= GIL_NONE;
 	id 			= 101;
 	voice 		= 7;
@@ -35,8 +35,8 @@ instance None_101_Mario (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 85); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 85); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 		
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_101;

@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Tom_HI   (C_INFO)
 	condition   = DIA_Addon_Tom_HI_Condition;
 	information = DIA_Addon_Tom_HI_Info;
 	permanent   = FALSE;
-	description = "Почему ты торчишь здесь?";
+	description = "РџРѕС‡РµРјСѓ С‚С‹ С‚РѕСЂС‡РёС€СЊ Р·РґРµСЃСЊ?";
 };
 FUNC INT DIA_Addon_Tom_HI_Condition()
 {	
@@ -71,13 +71,13 @@ FUNC INT DIA_Addon_Tom_HI_Condition()
 };
 FUNC VOID DIA_Addon_Tom_HI_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_HI_15_00"); //Почему ты торчишь здесь?
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_01"); //У меня проблемы. В данный момент мне лучше не показываться в лагере.
-	AI_Output (other,self,"DIA_Addon_Tom_HI_15_02"); //Что не так?
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_03"); //У меня были хорошие отношения с пиратами, понимаешь?
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_04"); //Я всегда встречал ребят возле лагеря и торговал с ними.
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_05"); //Я отоварил половину лагеря! 'Том, принеси мне то, Том, принеси мне это'.
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_06"); //А потом вмешался этот ублюдок Эстебан.
+	AI_Output (other,self,"DIA_Addon_Tom_HI_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ С‚РѕСЂС‡РёС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_01"); //РЈ РјРµРЅСЏ РїСЂРѕР±Р»РµРјС‹. Р’ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РјРЅРµ Р»СѓС‡С€Рµ РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ РІ Р»Р°РіРµСЂРµ.
+	AI_Output (other,self,"DIA_Addon_Tom_HI_15_02"); //Р§С‚Рѕ РЅРµ С‚Р°Рє?
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_03"); //РЈ РјРµРЅСЏ Р±С‹Р»Рё С…РѕСЂРѕС€РёРµ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РїРёСЂР°С‚Р°РјРё, РїРѕРЅРёРјР°РµС€СЊ?
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_04"); //РЇ РІСЃРµРіРґР° РІСЃС‚СЂРµС‡Р°Р» СЂРµР±СЏС‚ РІРѕР·Р»Рµ Р»Р°РіРµСЂСЏ Рё С‚РѕСЂРіРѕРІР°Р» СЃ РЅРёРјРё.
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_05"); //РЇ РѕС‚РѕРІР°СЂРёР» РїРѕР»РѕРІРёРЅСѓ Р»Р°РіРµСЂСЏ! 'РўРѕРј, РїСЂРёРЅРµСЃРё РјРЅРµ С‚Рѕ, РўРѕРј, РїСЂРёРЅРµСЃРё РјРЅРµ СЌС‚Рѕ'.
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_06"); //Рђ РїРѕС‚РѕРј РІРјРµС€Р°Р»СЃСЏ СЌС‚РѕС‚ СѓР±Р»СЋРґРѕРє Р­СЃС‚РµР±Р°РЅ.
 };
 //---------------------------------------------------------------------
 //	Info Juan
@@ -89,7 +89,7 @@ INSTANCE DIA_Addon_Tom_Juan   (C_INFO)
 	condition   = DIA_Addon_Tom_Juan_Condition;
 	information = DIA_Addon_Tom_Juan_Info;
 	permanent   = FALSE;
-	description = "Что произошло?";
+	description = "Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ?";
 };
 FUNC INT DIA_Addon_Tom_Juan_Condition()
 {	
@@ -100,13 +100,13 @@ FUNC INT DIA_Addon_Tom_Juan_Condition()
 };
 FUNC VOID DIA_Addon_Tom_Juan_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_Juan_15_00"); //Что случилось?
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_01"); //Эстебан послал одного из своих ребят - Хуана. Этот мерзавец устроил нам засаду.
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_02"); //Я как раз собирался заключить сделку с пиратами, когда он выскочил из темноты и сбил меня с ног двумя ударами!
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_03"); //Этот парень очень быстр! Но недостаточно быстр. Мне удалось убежать от него.
+	AI_Output (other,self,"DIA_Addon_Tom_Juan_15_00"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_01"); //Р­СЃС‚РµР±Р°РЅ РїРѕСЃР»Р°Р» РѕРґРЅРѕРіРѕ РёР· СЃРІРѕРёС… СЂРµР±СЏС‚ - РҐСѓР°РЅР°. Р­С‚РѕС‚ РјРµСЂР·Р°РІРµС† СѓСЃС‚СЂРѕРёР» РЅР°Рј Р·Р°СЃР°РґСѓ.
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_02"); //РЇ РєР°Рє СЂР°Р· СЃРѕР±РёСЂР°Р»СЃСЏ Р·Р°РєР»СЋС‡РёС‚СЊ СЃРґРµР»РєСѓ СЃ РїРёСЂР°С‚Р°РјРё, РєРѕРіРґР° РѕРЅ РІС‹СЃРєРѕС‡РёР» РёР· С‚РµРјРЅРѕС‚С‹ Рё СЃР±РёР» РјРµРЅСЏ СЃ РЅРѕРі РґРІСѓРјСЏ СѓРґР°СЂР°РјРё!
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_03"); //Р­С‚РѕС‚ РїР°СЂРµРЅСЊ РѕС‡РµРЅСЊ Р±С‹СЃС‚СЂ! РќРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р±С‹СЃС‚СЂ. РњРЅРµ СѓРґР°Р»РѕСЃСЊ СѓР±РµР¶Р°С‚СЊ РѕС‚ РЅРµРіРѕ.
 	SC_Knows_JuanMurderedAngus = TRUE;
 	
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Хэнка и Ангуса подстерег и убил Хуан.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"РҐСЌРЅРєР° Рё РђРЅРіСѓСЃР° РїРѕРґСЃС‚РµСЂРµРі Рё СѓР±РёР» РҐСѓР°РЅ.");
 };
 
 //---------------------------------------------------------------------
@@ -119,7 +119,7 @@ INSTANCE DIA_Addon_Tom_Esteban   (C_INFO)
 	condition   = DIA_Addon_Tom_Esteban_Condition;
 	information = DIA_Addon_Tom_Esteban_Info;
 	permanent   = FALSE;
-	description = "И с тех пор ты сидишь здесь?";
+	description = "Р СЃ С‚РµС… РїРѕСЂ С‚С‹ СЃРёРґРёС€СЊ Р·РґРµСЃСЊ?";
 };
 FUNC INT DIA_Addon_Tom_Esteban_Condition()
 {	
@@ -130,11 +130,11 @@ FUNC INT DIA_Addon_Tom_Esteban_Condition()
 };
 FUNC VOID DIA_Addon_Tom_Esteban_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_Esteban_15_00"); //И с тех пор ты сидишь здесь?
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_01"); //Сначала я зашел в лагерь и сказал Фиску, Хуно и другим, что они могут забыть про свои заказы.
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_02"); //И что виноват Эстебан.
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_03"); //И если Эстебан узнает, что это я сказал всем, что ОН виноват, я могу прощаться с жизнью.
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_04"); //Поэтому я и не могу вернуться в лагерь.
+	AI_Output (other,self,"DIA_Addon_Tom_Esteban_15_00"); //Р СЃ С‚РµС… РїРѕСЂ С‚С‹ СЃРёРґРёС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_01"); //РЎРЅР°С‡Р°Р»Р° СЏ Р·Р°С€РµР» РІ Р»Р°РіРµСЂСЊ Рё СЃРєР°Р·Р°Р» Р¤РёСЃРєСѓ, РҐСѓРЅРѕ Рё РґСЂСѓРіРёРј, С‡С‚Рѕ РѕРЅРё РјРѕРіСѓС‚ Р·Р°Р±С‹С‚СЊ РїСЂРѕ СЃРІРѕРё Р·Р°РєР°Р·С‹.
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_02"); //Р С‡С‚Рѕ РІРёРЅРѕРІР°С‚ Р­СЃС‚РµР±Р°РЅ.
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_03"); //Р РµСЃР»Рё Р­СЃС‚РµР±Р°РЅ СѓР·РЅР°РµС‚, С‡С‚Рѕ СЌС‚Рѕ СЏ СЃРєР°Р·Р°Р» РІСЃРµРј, С‡С‚Рѕ РћРќ РІРёРЅРѕРІР°С‚, СЏ РјРѕРіСѓ РїСЂРѕС‰Р°С‚СЊСЃСЏ СЃ Р¶РёР·РЅСЊСЋ.
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_04"); //РџРѕСЌС‚РѕРјСѓ СЏ Рё РЅРµ РјРѕРіСѓ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ Р»Р°РіРµСЂСЊ.
 	
 	Tom_tells = TRUE;
 };
@@ -149,7 +149,7 @@ INSTANCE DIA_Addon_Tom_Dead   (C_INFO)
 	condition   = DIA_Addon_Tom_Dead_Condition;
 	information = DIA_Addon_Tom_Dead_Info;
 	permanent   = FALSE;
-	description = "Эстебан мертв.";
+	description = "Р­СЃС‚РµР±Р°РЅ РјРµСЂС‚РІ.";
 };
 FUNC INT DIA_Addon_Tom_Dead_Condition()
 {	
@@ -161,11 +161,11 @@ FUNC INT DIA_Addon_Tom_Dead_Condition()
 };
 FUNC VOID DIA_Addon_Tom_Dead_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_00"); //Эстебан мертв.
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_01"); //Правда? Приятель, вот это УДАЧА!
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_02"); //Кто сделал это?
-	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_03"); //(игриво) Ну, скажем, некто, кого ты знаешь...
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_04"); //Спасибо, что пришел ко мне. Теперь я могу вернуться в лагерь...
+	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_00"); //Р­СЃС‚РµР±Р°РЅ РјРµСЂС‚РІ.
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_01"); //РџСЂР°РІРґР°? РџСЂРёСЏС‚РµР»СЊ, РІРѕС‚ СЌС‚Рѕ РЈР”РђР§Рђ!
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_02"); //РљС‚Рѕ СЃРґРµР»Р°Р» СЌС‚Рѕ?
+	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_03"); //(РёРіСЂРёРІРѕ) РќСѓ, СЃРєР°Р¶РµРј, РЅРµРєС‚Рѕ, РєРѕРіРѕ С‚С‹ Р·РЅР°РµС€СЊ...
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_04"); //РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РїСЂРёС€РµР» РєРѕ РјРЅРµ. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ Р»Р°РіРµСЂСЊ...
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
@@ -182,7 +182,7 @@ INSTANCE DIA_Addon_Tom_PERM   (C_INFO)
 	condition   = DIA_Addon_Tom_PERM_Condition;
 	information = DIA_Addon_Tom_PERM_Info;
 	permanent   = TRUE;
-	description = "Что еще?";
+	description = "Р§С‚Рѕ РµС‰Рµ?";
 };
 FUNC INT DIA_Addon_Tom_PERM_Condition()
 {	
@@ -193,21 +193,21 @@ FUNC INT DIA_Addon_Tom_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Tom_PERM_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_PERM_15_00"); //Что еще?
+	AI_Output (other,self,"DIA_Addon_Tom_PERM_15_00"); //Р§С‚Рѕ РµС‰Рµ?
 
 	if (Npc_GetDistToWP (self,"BL_INN_05_B") <= 500)
 	{
-		AI_Output (self,other,"DIA_Addon_Tom_PERM_11_01"); //Теперь я могу спокойно пить варево Люсии.
+		AI_Output (self,other,"DIA_Addon_Tom_PERM_11_01"); //РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ СЃРїРѕРєРѕР№РЅРѕ РїРёС‚СЊ РІР°СЂРµРІРѕ Р›СЋСЃРёРё.
 	}
 	else
 	{	
 		if (Npc_KnowsInfo (other, DIA_Addon_Tom_Dead))
 		{
-			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_02"); //Теперь я, наконец, могу показаться в лагере!
+			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_02"); //РўРµРїРµСЂСЊ СЏ, РЅР°РєРѕРЅРµС†, РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊСЃСЏ РІ Р»Р°РіРµСЂРµ!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_03"); //А иначе бы я сидел тут и считал камни...
+			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_03"); //Рђ РёРЅР°С‡Рµ Р±С‹ СЏ СЃРёРґРµР» С‚СѓС‚ Рё СЃС‡РёС‚Р°Р» РєР°РјРЅРё...
 		};
 	};
 };

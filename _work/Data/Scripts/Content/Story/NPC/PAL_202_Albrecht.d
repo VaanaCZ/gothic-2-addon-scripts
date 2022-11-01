@@ -2,7 +2,7 @@
 instance Pal_202_Albrecht (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "ΐλόαπευς";
+	name 		= "ΠΠ»ΡΠ±Ρ€ΠµΡ…Ρ‚";
 	guild 		= GIL_PAL;
 	id 			= 202;
 	voice 		= 3;

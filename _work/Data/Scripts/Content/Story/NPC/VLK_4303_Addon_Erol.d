@@ -2,7 +2,7 @@
 instance VLK_4303_Addon_Erol (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ýðîë";
+	name 		= "Ð­Ñ€Ð¾Ð»";
 	guild 		= GIL_NONE;
 	id 			= 4303;
 	voice 		= 10;
@@ -20,7 +20,7 @@ instance VLK_4303_Addon_Erol (Npc_Default)
 	CreateInvItems (self, ItPo_Health_01, 3);									
 	
 	// ------ Inventory ------
-	// Händler
+	// HÐ´ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_Corristo , BodyTex_N, ITAR_VLK_L);

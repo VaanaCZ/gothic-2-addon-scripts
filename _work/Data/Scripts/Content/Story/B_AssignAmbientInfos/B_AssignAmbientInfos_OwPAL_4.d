@@ -47,15 +47,15 @@ FUNC VOID DIA_OWPAL_4_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_00"); //Иннос - моя честь, а моя честь - моя жизнь.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_00"); //РРЅРЅРѕСЃ - РјРѕСЏ С‡РµСЃС‚СЊ, Р° РјРѕСЏ С‡РµСЃС‚СЊ - РјРѕСЏ Р¶РёР·РЅСЊ.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //Мы будем стоять здесь насмерть, пока Иннос дарует нам свой святой свет.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //РњС‹ Р±СѓРґРµРј СЃС‚РѕСЏС‚СЊ Р·РґРµСЃСЊ РЅР°СЃРјРµСЂС‚СЊ, РїРѕРєР° РРЅРЅРѕСЃ РґР°СЂСѓРµС‚ РЅР°Рј СЃРІРѕР№ СЃРІСЏС‚РѕР№ СЃРІРµС‚.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_02"); //С помощью Инноса мы изгоним отсюда всех этих дьявольских созданий.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_02"); //РЎ РїРѕРјРѕС‰СЊСЋ РРЅРЅРѕСЃР° РјС‹ РёР·РіРѕРЅРёРј РѕС‚СЃСЋРґР° РІСЃРµС… СЌС‚РёС… РґСЊСЏРІРѕР»СЊСЃРєРёС… СЃРѕР·РґР°РЅРёР№.
 	};
 	
 	AI_StopProcessInfos	(self);

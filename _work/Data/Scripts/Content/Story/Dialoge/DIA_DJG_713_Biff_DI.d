@@ -46,16 +46,16 @@ func int DIA_Biff_DI_HALLO_Condition ()
 
 func void DIA_Biff_DI_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //И? Где все те сокровища, что ты мне обещал?
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //Р? Р“РґРµ РІСЃРµ С‚Рµ СЃРѕРєСЂРѕРІРёС‰Р°, С‡С‚Рѕ С‚С‹ РјРЅРµ РѕР±РµС‰Р°Р»?
 
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_ORKS)==FALSE)
 		{
-				AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_01"); //Что я там говорил тебе раньше, в море?
+				AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_01"); //Р§С‚Рѕ СЏ С‚Р°Рј РіРѕРІРѕСЂРёР» С‚РµР±Рµ СЂР°РЅСЊС€Рµ, РІ РјРѕСЂРµ?
 		};
 
-	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //Сейчас твоя задача - охранять корабль.
-	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //Мне не улыбается плыть назад.
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //Черт. Если бы я знал это заранее, я бы лучше остался в Хоринисе.
+	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //РЎРµР№С‡Р°СЃ С‚РІРѕСЏ Р·Р°РґР°С‡Р° - РѕС…СЂР°РЅСЏС‚СЊ РєРѕСЂР°Р±Р»СЊ.
+	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //РњРЅРµ РЅРµ СѓР»С‹Р±Р°РµС‚СЃСЏ РїР»С‹С‚СЊ РЅР°Р·Р°Рґ.
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //Р§РµСЂС‚. Р•СЃР»Рё Р±С‹ СЏ Р·РЅР°Р» СЌС‚Рѕ Р·Р°СЂР°РЅРµРµ, СЏ Р±С‹ Р»СѓС‡С€Рµ РѕСЃС‚Р°Р»СЃСЏ РІ РҐРѕСЂРёРЅРёСЃРµ.
 	AI_StopProcessInfos (self);
 };
 
@@ -70,7 +70,7 @@ instance DIA_Biff_DI_perm		(C_INFO)
 	information	 = 	DIA_Biff_DI_perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"На борту все спокойно?";
+	description	 = 	"РќР° Р±РѕСЂС‚Сѓ РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ?";
 };
 
 func int DIA_Biff_DI_perm_Condition ()
@@ -84,8 +84,8 @@ func int DIA_Biff_DI_perm_Condition ()
 
 func void DIA_Biff_DI_perm_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_DI_perm_15_00"); //На борту все спокойно?
-	AI_Output			(self, other, "DIA_Biff_DI_perm_07_01"); //(сердито) Да, да. Все тихо.
+	AI_Output			(other, self, "DIA_Biff_DI_perm_15_00"); //РќР° Р±РѕСЂС‚Сѓ РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ?
+	AI_Output			(self, other, "DIA_Biff_DI_perm_07_01"); //(СЃРµСЂРґРёС‚Рѕ) Р”Р°, РґР°. Р’СЃРµ С‚РёС…Рѕ.
 	AI_StopProcessInfos (self);
 };
 
@@ -114,9 +114,9 @@ func int DIA_Biff_DI_ORKS_Condition ()
 
 func void DIA_Biff_DI_ORKS_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_00"); //Эти мерзкие твари!
-	AI_Output			(other, self, "DIA_Biff_DI_ORKS_15_01"); //Черт, что ты делаешь здесь? Ты должен был охранять корабль.
-	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_02"); //Да никуда он не денется.
+	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_00"); //Р­С‚Рё РјРµСЂР·РєРёРµ С‚РІР°СЂРё!
+	AI_Output			(other, self, "DIA_Biff_DI_ORKS_15_01"); //Р§РµСЂС‚, С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ? РўС‹ РґРѕР»Р¶РµРЅ Р±С‹Р» РѕС…СЂР°РЅСЏС‚СЊ РєРѕСЂР°Р±Р»СЊ.
+	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_02"); //Р”Р° РЅРёРєСѓРґР° РѕРЅ РЅРµ РґРµРЅРµС‚СЃСЏ.
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -145,11 +145,11 @@ func int DIA_Biff_DI_UNDEADDRGDEAD_Condition ()
 
 func void DIA_Biff_DI_UNDEADDRGDEAD_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //Что, все кончено?
-	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Вроде бы да.
-	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //И теперь, могу я...
-	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //Ты можешь перевернуть весь остров, ели хочешь.
-	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //Отлично.
+	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //Р§С‚Рѕ, РІСЃРµ РєРѕРЅС‡РµРЅРѕ?
+	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Р’СЂРѕРґРµ Р±С‹ РґР°.
+	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //Р С‚РµРїРµСЂСЊ, РјРѕРіСѓ СЏ...
+	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //РўС‹ РјРѕР¶РµС€СЊ РїРµСЂРµРІРµСЂРЅСѓС‚СЊ РІРµСЃСЊ РѕСЃС‚СЂРѕРІ, РµР»Рё С…РѕС‡РµС€СЊ.
+	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //РћС‚Р»РёС‡РЅРѕ.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"PlunderTempel");
@@ -181,7 +181,7 @@ func int DIA_Biff_DI_plunder_Condition ()
 
 func void DIA_Biff_DI_plunder_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_plunder_07_00"); //Черт. Не сейчас.
+	AI_Output			(self, other, "DIA_Biff_DI_plunder_07_00"); //Р§РµСЂС‚. РќРµ СЃРµР№С‡Р°СЃ.
 	AI_StopProcessInfos (self);
 };
 

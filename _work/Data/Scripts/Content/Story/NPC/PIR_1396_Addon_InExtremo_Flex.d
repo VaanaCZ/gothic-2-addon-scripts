@@ -5,7 +5,7 @@ instance PIR_1396_Addon_InExtremo_Flex(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Τλεκρ";
+	name =					"Π¤Π»ΠµΠΊΡ";
    	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;

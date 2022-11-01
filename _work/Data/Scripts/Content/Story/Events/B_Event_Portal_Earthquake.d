@@ -1,5 +1,5 @@
 //****************************
-// 	B_EVENT_PORTAL_EARTHQUAKE (Funktion, die beim Ausfahren der DI brücke ausgeführt wird.)
+// 	B_EVENT_PORTAL_EARTHQUAKE (Funktion, die beim Ausfahren der DI brÑŒcke ausgefÑŒhrt wird.)
 //****************************
 func void B_EVENT_PORTAL_EARTHQUAKE ()
 {

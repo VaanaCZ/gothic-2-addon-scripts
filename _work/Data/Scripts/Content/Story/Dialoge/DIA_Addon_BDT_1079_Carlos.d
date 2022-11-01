@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Carlos_EXIT   (C_INFO)
 	condition   = DIA_Addon_Carlos_EXIT_Condition;
 	information = DIA_Addon_Carlos_EXIT_Info;
 	permanent   = TRUE;
-	description = "Еще увидимся.";
+	description = "Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.";
 };
 FUNC INT DIA_Addon_Carlos_EXIT_Condition()
 {
@@ -74,24 +74,24 @@ FUNC INT DIA_Addon_Carlos_HI_Condition()
 };
 FUNC VOID DIA_Addon_Carlos_HI_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_12_00"); //Эй, это ты тот парень, что укокошил Франко?
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_12_00"); //Р­Р№, СЌС‚Рѕ С‚С‹ С‚РѕС‚ РїР°СЂРµРЅСЊ, С‡С‚Рѕ СѓРєРѕРєРѕС€РёР» Р¤СЂР°РЅРєРѕ?
 
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
-	Info_AddChoice (DIA_Addon_Carlos_HI, "Что? Я? Нет!" ,DIA_Addon_Carlos_HI_No);
-	Info_AddChoice (DIA_Addon_Carlos_HI, "Да, а почему ты спрашиваешь?" ,DIA_Addon_Carlos_HI_Yes);
+	Info_AddChoice (DIA_Addon_Carlos_HI, "Р§С‚Рѕ? РЇ? РќРµС‚!" ,DIA_Addon_Carlos_HI_No);
+	Info_AddChoice (DIA_Addon_Carlos_HI, "Р”Р°, Р° РїРѕС‡РµРјСѓ С‚С‹ СЃРїСЂР°С€РёРІР°РµС€СЊ?" ,DIA_Addon_Carlos_HI_Yes);
 };
 
 func void DIA_Addon_Carlos_HI_Yes()
 {
-	AI_Output (other,self,"DIA_Addon_Carlos_HI_Yes_15_00"); //Да, а почему ты спрашиваешь?
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_Yes_12_01"); //(зло) Потому что теперь мне придется заниматься его работой. Просто прекрасно, молодец! Спасибо огромное!
+	AI_Output (other,self,"DIA_Addon_Carlos_HI_Yes_15_00"); //Р”Р°, Р° РїРѕС‡РµРјСѓ С‚С‹ СЃРїСЂР°С€РёРІР°РµС€СЊ?
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_Yes_12_01"); //(Р·Р»Рѕ) РџРѕС‚РѕРјСѓ С‡С‚Рѕ С‚РµРїРµСЂСЊ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РЅРёРјР°С‚СЊСЃСЏ РµРіРѕ СЂР°Р±РѕС‚РѕР№. РџСЂРѕСЃС‚Рѕ РїСЂРµРєСЂР°СЃРЅРѕ, РјРѕР»РѕРґРµС†! РЎРїР°СЃРёР±Рѕ РѕРіСЂРѕРјРЅРѕРµ!
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
 };
 
 func void DIA_Addon_Carlos_HI_No()
 {
-	AI_Output (other,self,"DIA_Addon_Carlos_HI_No_15_00"); //Что? Я? Нет!
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_No_12_01"); //А, ничего личного!
+	AI_Output (other,self,"DIA_Addon_Carlos_HI_No_15_00"); //Р§С‚Рѕ? РЇ? РќРµС‚!
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_No_12_01"); //Рђ, РЅРёС‡РµРіРѕ Р»РёС‡РЅРѕРіРѕ!
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
 };
 
@@ -118,18 +118,18 @@ FUNC VOID DIA_Addon_Carlos_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
 	
-	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_00");//После того как нападающий был убит, Торус приказал мне найти нового человека для лагеря.
+	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_00");//РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє РЅР°РїР°РґР°СЋС‰РёР№ Р±С‹Р» СѓР±РёС‚, РўРѕСЂСѓСЃ РїСЂРёРєР°Р·Р°Р» РјРЅРµ РЅР°Р№С‚Рё РЅРѕРІРѕРіРѕ С‡РµР»РѕРІРµРєР° РґР»СЏ Р»Р°РіРµСЂСЏ.
 	
 	if (Logan_Inside == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_01");//И Франко послал Логана.
+		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_01");//Р Р¤СЂР°РЅРєРѕ РїРѕСЃР»Р°Р» Р›РѕРіР°РЅР°.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_02");//И Франко послал нового парня.
+		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_02");//Р Р¤СЂР°РЅРєРѕ РїРѕСЃР»Р°Р» РЅРѕРІРѕРіРѕ РїР°СЂРЅСЏ.
 	};
 	
-	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_03");//Эй, я просто делаю то, что мне сказал Торус. Я ничего не знаю про само нападение.
+	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_03");//Р­Р№, СЏ РїСЂРѕСЃС‚Рѕ РґРµР»Р°СЋ С‚Рѕ, С‡С‚Рѕ РјРЅРµ СЃРєР°Р·Р°Р» РўРѕСЂСѓСЃ. РЇ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ РїСЂРѕ СЃР°РјРѕ РЅР°РїР°РґРµРЅРёРµ.
 };
 
 //---------------------------------------------------------------------
@@ -142,7 +142,7 @@ INSTANCE DIA_Addon_Carlos_PERM   (C_INFO)
 	condition   = DIA_Addon_Carlos_PERM_Condition;
 	information = DIA_Addon_Carlos_PERM_Info;
 	permanent   = TRUE;
-	description	= "И как тебе нравится быть командиром у охотников?";
+	description	= "Р РєР°Рє С‚РµР±Рµ РЅСЂР°РІРёС‚СЃСЏ Р±С‹С‚СЊ РєРѕРјР°РЅРґРёСЂРѕРј Сѓ РѕС…РѕС‚РЅРёРєРѕРІ?";
 };
 FUNC INT DIA_Addon_Carlos_PERM_Condition()
 {	
@@ -150,8 +150,8 @@ FUNC INT DIA_Addon_Carlos_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Carlos_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Carlos_PERM_15_00"); //И как тебе нравится быть командиром у охотников?
-	AI_Output (self, other, "DIA_Addon_Carlos_PERM_12_00"); //Оставь меня в покое!
+	AI_Output (other, self, "DIA_Addon_Carlos_PERM_15_00"); //Р РєР°Рє С‚РµР±Рµ РЅСЂР°РІРёС‚СЃСЏ Р±С‹С‚СЊ РєРѕРјР°РЅРґРёСЂРѕРј Сѓ РѕС…РѕС‚РЅРёРєРѕРІ?
+	AI_Output (self, other, "DIA_Addon_Carlos_PERM_12_00"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	AI_StopProcessInfos (self);
 };
 

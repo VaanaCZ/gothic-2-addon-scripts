@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Monty_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Monty_NW_Hi_Condition;
 	information = DIA_Addon_Monty_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "Ну что, ты вернулся к своей работе?";
+	description = "РќСѓ С‡С‚Рѕ, С‚С‹ РІРµСЂРЅСѓР»СЃСЏ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ?";
 };
 FUNC INT DIA_Addon_Monty_NW_Hi_Condition()
 {		
@@ -36,10 +36,10 @@ FUNC INT DIA_Addon_Monty_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Monty_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_00");//Ну что, ты вернулся к своей работе?
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//Представляешь, пока меня не было, они ничуть не продвинулись вперед. Мне пришлось снова засесть за чертежи.
-	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Что ж, не буду тебя отвлекать.
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//(смеется) Спасибо. Удачи!
+	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_00");//РќСѓ С‡С‚Рѕ, С‚С‹ РІРµСЂРЅСѓР»СЃСЏ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ?
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//РџСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ, РїРѕРєР° РјРµРЅСЏ РЅРµ Р±С‹Р»Рѕ, РѕРЅРё РЅРёС‡СѓС‚СЊ РЅРµ РїСЂРѕРґРІРёРЅСѓР»РёСЃСЊ РІРїРµСЂРµРґ. РњРЅРµ РїСЂРёС€Р»РѕСЃСЊ СЃРЅРѕРІР° Р·Р°СЃРµСЃС‚СЊ Р·Р° С‡РµСЂС‚РµР¶Рё.
+	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Р§С‚Рѕ Р¶, РЅРµ Р±СѓРґСѓ С‚РµР±СЏ РѕС‚РІР»РµРєР°С‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//(СЃРјРµРµС‚СЃСЏ) РЎРїР°СЃРёР±Рѕ. РЈРґР°С‡Рё!
 };
 // ************************************************************
 // 			  				PICK POCKET

@@ -82,111 +82,111 @@ FUNC INT DIA_Moe_Hallo_Condition()
 };
 FUNC VOID DIA_Moe_Hallo_Info()
 {
-	AI_Output (self ,other,"DIA_Moe_Hallo_01_00"); //Эй, я не знаю тебя. Чего тебе здесь нужно? Ты идешь в кабак?
+	AI_Output (self ,other,"DIA_Moe_Hallo_01_00"); //Р­Р№, СЏ РЅРµ Р·РЅР°СЋ С‚РµР±СЏ. Р§РµРіРѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ? РўС‹ РёРґРµС€СЊ РІ РєР°Р±Р°Рє?
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Нет, я не иду в кабак ... (КОНЕЦ)",DIA_Moe_Hallo_Gehen);
-	Info_AddChoice 	  (DIA_Moe_Hallo,"Ох, так это портовый трактир ...",DIA_Moe_Hallo_Witz);
-	Info_AddChoice 	  (DIA_Moe_Hallo,"Ты имеешь что-то против?",DIA_Moe_Hallo_Reizen);
+	Info_AddChoice    (DIA_Moe_Hallo,"РќРµС‚, СЏ РЅРµ РёРґСѓ РІ РєР°Р±Р°Рє ... (РљРћРќР•Р¦)",DIA_Moe_Hallo_Gehen);
+	Info_AddChoice 	  (DIA_Moe_Hallo,"РћС…, С‚Р°Рє СЌС‚Рѕ РїРѕСЂС‚РѕРІС‹Р№ С‚СЂР°РєС‚РёСЂ ...",DIA_Moe_Hallo_Witz);
+	Info_AddChoice 	  (DIA_Moe_Hallo,"РўС‹ РёРјРµРµС€СЊ С‡С‚Рѕ-С‚Рѕ РїСЂРѕС‚РёРІ?",DIA_Moe_Hallo_Reizen);
 };
 FUNC VOID DIA_Moe_Hallo_Gehen()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Gehen_15_00"); //Нет, я не иду в кабак...
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_01"); //Я так и подумал. Но это не так уж важно - мы можем перейти прямо к делу.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_02"); //Так как ты здесь новичок, я хочу сделать тебе заманчивое предложение. Ты даешь мне 50 золотых монет и можешь идти дальше.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_03"); //Это плата за свободный вход в кабак.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Gehen_15_00"); //РќРµС‚, СЏ РЅРµ РёРґСѓ РІ РєР°Р±Р°Рє...
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_01"); //РЇ С‚Р°Рє Рё РїРѕРґСѓРјР°Р». РќРѕ СЌС‚Рѕ РЅРµ С‚Р°Рє СѓР¶ РІР°Р¶РЅРѕ - РјС‹ РјРѕР¶РµРј РїРµСЂРµР№С‚Рё РїСЂСЏРјРѕ Рє РґРµР»Сѓ.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_02"); //РўР°Рє РєР°Рє С‚С‹ Р·РґРµСЃСЊ РЅРѕРІРёС‡РѕРє, СЏ С…РѕС‡Сѓ СЃРґРµР»Р°С‚СЊ С‚РµР±Рµ Р·Р°РјР°РЅС‡РёРІРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ. РўС‹ РґР°РµС€СЊ РјРЅРµ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Рё РјРѕР¶РµС€СЊ РёРґС‚Рё РґР°Р»СЊС€Рµ.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_03"); //Р­С‚Рѕ РїР»Р°С‚Р° Р·Р° СЃРІРѕР±РѕРґРЅС‹Р№ РІС…РѕРґ РІ РєР°Р±Р°Рє.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Давай спросим, что думает по этому поводу ополчение...",DIA_Moe_Hallo_Miliz);
-	Info_AddChoice    (DIA_Moe_Hallo,"Забудь об этом, ты не получишь ни цента!",DIA_Moe_Hallo_Vergisses);
-	Info_AddChoice    (DIA_Moe_Hallo,"Хорошо, я заплачу.",DIA_Moe_Hallo_Zahlen);
-	Info_AddChoice    (DIA_Moe_Hallo,"Но я не хочу идти в кабак!",DIA_Moe_Hallo_Kneipe);
+	Info_AddChoice    (DIA_Moe_Hallo,"Р”Р°РІР°Р№ СЃРїСЂРѕСЃРёРј, С‡С‚Рѕ РґСѓРјР°РµС‚ РїРѕ СЌС‚РѕРјСѓ РїРѕРІРѕРґСѓ РѕРїРѕР»С‡РµРЅРёРµ...",DIA_Moe_Hallo_Miliz);
+	Info_AddChoice    (DIA_Moe_Hallo,"Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, С‚С‹ РЅРµ РїРѕР»СѓС‡РёС€СЊ РЅРё С†РµРЅС‚Р°!",DIA_Moe_Hallo_Vergisses);
+	Info_AddChoice    (DIA_Moe_Hallo,"РҐРѕСЂРѕС€Рѕ, СЏ Р·Р°РїР»Р°С‡Сѓ.",DIA_Moe_Hallo_Zahlen);
+	Info_AddChoice    (DIA_Moe_Hallo,"РќРѕ СЏ РЅРµ С…РѕС‡Сѓ РёРґС‚Рё РІ РєР°Р±Р°Рє!",DIA_Moe_Hallo_Kneipe);
 };
 FUNC VOID DIA_Moe_Hallo_Kneipe()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Kneipe_15_00"); //Но я не хочу идти в кабак!
-	AI_Output (self ,other,"DIA_Moe_Hallo_Kneipe_01_01"); //Понимаешь, рано или поздно все заходят в кабак. Так что лучше тебе заплатить прямо сейчас - и больше эта проблема не будет волновать тебя.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Kneipe_15_00"); //РќРѕ СЏ РЅРµ С…РѕС‡Сѓ РёРґС‚Рё РІ РєР°Р±Р°Рє!
+	AI_Output (self ,other,"DIA_Moe_Hallo_Kneipe_01_01"); //РџРѕРЅРёРјР°РµС€СЊ, СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ РІСЃРµ Р·Р°С…РѕРґСЏС‚ РІ РєР°Р±Р°Рє. РўР°Рє С‡С‚Рѕ Р»СѓС‡С€Рµ С‚РµР±Рµ Р·Р°РїР»Р°С‚РёС‚СЊ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ - Рё Р±РѕР»СЊС€Рµ СЌС‚Р° РїСЂРѕР±Р»РµРјР° РЅРµ Р±СѓРґРµС‚ РІРѕР»РЅРѕРІР°С‚СЊ С‚РµР±СЏ.
 };
 FUNC VOID  DIA_Moe_Hallo_Witz()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Witz_15_00"); //Ох, так это портовый трактир. А я то принял его за дворец губернатора.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Witz_01_01"); //Эй - держи свои шуточки при себе, кретин, или я заставлю тебя грызть булыжники из мостовой.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Witz_15_00"); //РћС…, С‚Р°Рє СЌС‚Рѕ РїРѕСЂС‚РѕРІС‹Р№ С‚СЂР°РєС‚РёСЂ. Рђ СЏ С‚Рѕ РїСЂРёРЅСЏР» РµРіРѕ Р·Р° РґРІРѕСЂРµС† РіСѓР±РµСЂРЅР°С‚РѕСЂР°.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Witz_01_01"); //Р­Р№ - РґРµСЂР¶Рё СЃРІРѕРё С€СѓС‚РѕС‡РєРё РїСЂРё СЃРµР±Рµ, РєСЂРµС‚РёРЅ, РёР»Рё СЏ Р·Р°СЃС‚Р°РІР»СЋ С‚РµР±СЏ РіСЂС‹Р·С‚СЊ Р±СѓР»С‹Р¶РЅРёРєРё РёР· РјРѕСЃС‚РѕРІРѕР№.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Понимаю, чтобы пройти дальше мне придется сломать тебе пару ребер ...",DIA_Moe_Hallo_Pruegel);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ты пытаешься создать мне проблемы?",DIA_Moe_Hallo_Aerger);
-	Info_AddChoice    (DIA_Moe_Hallo,"Успокойся, я просто хотел выпить пива.",DIA_Moe_Hallo_Ruhig);
-	Info_AddChoice    (DIA_Moe_Hallo,"Но я не хочу идти в кабак!",DIA_Moe_Hallo_Kneipe);
+	Info_AddChoice    (DIA_Moe_Hallo,"РџРѕРЅРёРјР°СЋ, С‡С‚РѕР±С‹ РїСЂРѕР№С‚Рё РґР°Р»СЊС€Рµ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЃР»РѕРјР°С‚СЊ С‚РµР±Рµ РїР°СЂСѓ СЂРµР±РµСЂ ...",DIA_Moe_Hallo_Pruegel);
+	Info_AddChoice    (DIA_Moe_Hallo,"РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ СЃРѕР·РґР°С‚СЊ РјРЅРµ РїСЂРѕР±Р»РµРјС‹?",DIA_Moe_Hallo_Aerger);
+	Info_AddChoice    (DIA_Moe_Hallo,"РЈСЃРїРѕРєРѕР№СЃСЏ, СЏ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РІС‹РїРёС‚СЊ РїРёРІР°.",DIA_Moe_Hallo_Ruhig);
+	Info_AddChoice    (DIA_Moe_Hallo,"РќРѕ СЏ РЅРµ С…РѕС‡Сѓ РёРґС‚Рё РІ РєР°Р±Р°Рє!",DIA_Moe_Hallo_Kneipe);
 };
 FUNC VOID DIA_Moe_Hallo_Reizen()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Reizen_15_00"); //Ты имеешь что-то против?
-	AI_Output (self ,other,"DIA_Moe_Hallo_Reizen_01_01"); //Тебе нечего здесь делать, малыш.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Reizen_15_00"); //РўС‹ РёРјРµРµС€СЊ С‡С‚Рѕ-С‚Рѕ РїСЂРѕС‚РёРІ?
+	AI_Output (self ,other,"DIA_Moe_Hallo_Reizen_01_01"); //РўРµР±Рµ РЅРµС‡РµРіРѕ Р·РґРµСЃСЊ РґРµР»Р°С‚СЊ, РјР°Р»С‹С€.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Понимаю, чтобы пройти дальше мне придется сломать тебе пару ребер ...",DIA_Moe_Hallo_Pruegel);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ты пытаешься создать мне проблемы?",DIA_Moe_Hallo_Aerger);
-	Info_AddChoice    (DIA_Moe_Hallo,"Успокойся, я просто хотел выпить пива.",DIA_Moe_Hallo_Ruhig);
+	Info_AddChoice    (DIA_Moe_Hallo,"РџРѕРЅРёРјР°СЋ, С‡С‚РѕР±С‹ РїСЂРѕР№С‚Рё РґР°Р»СЊС€Рµ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЃР»РѕРјР°С‚СЊ С‚РµР±Рµ РїР°СЂСѓ СЂРµР±РµСЂ ...",DIA_Moe_Hallo_Pruegel);
+	Info_AddChoice    (DIA_Moe_Hallo,"РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ СЃРѕР·РґР°С‚СЊ РјРЅРµ РїСЂРѕР±Р»РµРјС‹?",DIA_Moe_Hallo_Aerger);
+	Info_AddChoice    (DIA_Moe_Hallo,"РЈСЃРїРѕРєРѕР№СЃСЏ, СЏ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РІС‹РїРёС‚СЊ РїРёРІР°.",DIA_Moe_Hallo_Ruhig);
 };
 FUNC VOID DIA_Moe_Hallo_Miliz()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Miliz_15_00"); //Давай спросим, что думает по этому поводу ополчение...
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_01"); //(смеется) Ополчения здесь нет. А ты знаешь, почему их здесь не бывает?
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_02"); //Ты находишься в портовом квартале, малыш. Никто из ополчения не осмелится вступать здесь в драку со мной.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_03"); //Они только иногда заглядывают в 'Красный Фонарь'. Понимаешь, здесь есть только ты и я. (мерзкая ухмылка)
+	AI_Output (other ,self,"DIA_Moe_Hallo_Miliz_15_00"); //Р”Р°РІР°Р№ СЃРїСЂРѕСЃРёРј, С‡С‚Рѕ РґСѓРјР°РµС‚ РїРѕ СЌС‚РѕРјСѓ РїРѕРІРѕРґСѓ РѕРїРѕР»С‡РµРЅРёРµ...
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_01"); //(СЃРјРµРµС‚СЃСЏ) РћРїРѕР»С‡РµРЅРёСЏ Р·РґРµСЃСЊ РЅРµС‚. Рђ С‚С‹ Р·РЅР°РµС€СЊ, РїРѕС‡РµРјСѓ РёС… Р·РґРµСЃСЊ РЅРµ Р±С‹РІР°РµС‚?
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_02"); //РўС‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ, РјР°Р»С‹С€. РќРёРєС‚Рѕ РёР· РѕРїРѕР»С‡РµРЅРёСЏ РЅРµ РѕСЃРјРµР»РёС‚СЃСЏ РІСЃС‚СѓРїР°С‚СЊ Р·РґРµСЃСЊ РІ РґСЂР°РєСѓ СЃРѕ РјРЅРѕР№.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_03"); //РћРЅРё С‚РѕР»СЊРєРѕ РёРЅРѕРіРґР° Р·Р°РіР»СЏРґС‹РІР°СЋС‚ РІ 'РљСЂР°СЃРЅС‹Р№ Р¤РѕРЅР°СЂСЊ'. РџРѕРЅРёРјР°РµС€СЊ, Р·РґРµСЃСЊ РµСЃС‚СЊ С‚РѕР»СЊРєРѕ С‚С‹ Рё СЏ. (РјРµСЂР·РєР°СЏ СѓС…РјС‹Р»РєР°)
 };
 FUNC VOID DIA_Moe_Hallo_Pruegel()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Pruegel_15_00"); //Понимаю, чтобы пройти дальше, мне придется сломать тебе пару ребер.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Pruegel_01_01"); //Можешь попробовать, малыш. Покажи мне, на что ты способен!
+	AI_Output (other ,self,"DIA_Moe_Hallo_Pruegel_15_00"); //РџРѕРЅРёРјР°СЋ, С‡С‚РѕР±С‹ РїСЂРѕР№С‚Рё РґР°Р»СЊС€Рµ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЃР»РѕРјР°С‚СЊ С‚РµР±Рµ РїР°СЂСѓ СЂРµР±РµСЂ.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Pruegel_01_01"); //РњРѕР¶РµС€СЊ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ, РјР°Р»С‹С€. РџРѕРєР°Р¶Рё РјРЅРµ, РЅР° С‡С‚Рѕ С‚С‹ СЃРїРѕСЃРѕР±РµРЅ!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Aerger()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Aerger_15_00"); //Ты пытаешься создать мне проблемы?
-	AI_Output (self ,other,"DIA_Moe_Hallo_Aerger_01_01"); //Конечно, я мастер создавать проблемы. Так что защищайся, кретин!
+	AI_Output (other ,self,"DIA_Moe_Hallo_Aerger_15_00"); //РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ СЃРѕР·РґР°С‚СЊ РјРЅРµ РїСЂРѕР±Р»РµРјС‹?
+	AI_Output (self ,other,"DIA_Moe_Hallo_Aerger_01_01"); //РљРѕРЅРµС‡РЅРѕ, СЏ РјР°СЃС‚РµСЂ СЃРѕР·РґР°РІР°С‚СЊ РїСЂРѕР±Р»РµРјС‹. РўР°Рє С‡С‚Рѕ Р·Р°С‰РёС‰Р°Р№СЃСЏ, РєСЂРµС‚РёРЅ!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Ruhig()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Ruhig_15_00"); //Успокойся, я просто хотел выпить пива.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Ruhig_01_01"); //Хорошо, но это будет стоить тебе 50 монет. Это плата за вход. (ухмыляется)
+	AI_Output (other ,self,"DIA_Moe_Hallo_Ruhig_15_00"); //РЈСЃРїРѕРєРѕР№СЃСЏ, СЏ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РІС‹РїРёС‚СЊ РїРёРІР°.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Ruhig_01_01"); //РҐРѕСЂРѕС€Рѕ, РЅРѕ СЌС‚Рѕ Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ С‚РµР±Рµ 50 РјРѕРЅРµС‚. Р­С‚Рѕ РїР»Р°С‚Р° Р·Р° РІС…РѕРґ. (СѓС…РјС‹Р»СЏРµС‚СЃСЏ)
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Забудь об этом, ты не получишь ни цента!",DIA_Moe_Hallo_Vergisses);
-	Info_AddChoice    (DIA_Moe_Hallo,"Хорошо, я заплачу.",DIA_Moe_Hallo_Zahlen);
+	Info_AddChoice    (DIA_Moe_Hallo,"Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, С‚С‹ РЅРµ РїРѕР»СѓС‡РёС€СЊ РЅРё С†РµРЅС‚Р°!",DIA_Moe_Hallo_Vergisses);
+	Info_AddChoice    (DIA_Moe_Hallo,"РҐРѕСЂРѕС€Рѕ, СЏ Р·Р°РїР»Р°С‡Сѓ.",DIA_Moe_Hallo_Zahlen);
 	
 };
 FUNC VOID DIA_Moe_Hallo_Zahlen()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_00"); //Хорошо, я заплачу.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_00"); //РҐРѕСЂРѕС€Рѕ, СЏ Р·Р°РїР»Р°С‡Сѓ.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold,50)
 	{
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_01"); //Отлично. Раз сегодня ты такой щедрый, теперь ты можешь отдать мне все содержимое твоего кошелька.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_01"); //РћС‚Р»РёС‡РЅРѕ. Р Р°Р· СЃРµРіРѕРґРЅСЏ С‚С‹ С‚Р°РєРѕР№ С‰РµРґСЂС‹Р№, С‚РµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ РѕС‚РґР°С‚СЊ РјРЅРµ РІСЃРµ СЃРѕРґРµСЂР¶РёРјРѕРµ С‚РІРѕРµРіРѕ РєРѕС€РµР»СЊРєР°.
 		
 		Info_ClearChoices (DIA_Moe_Hallo);
-		Info_AddChoice    (DIA_Moe_Hallo,"Забудь об этом, ты не получишь ни цента!",DIA_Moe_Hallo_Vergisses);
-		Info_AddChoice    (DIA_Moe_Hallo,"Хорошо, это все, что у меня есть.",DIA_Moe_Hallo_Alles);
+		Info_AddChoice    (DIA_Moe_Hallo,"Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, С‚С‹ РЅРµ РїРѕР»СѓС‡РёС€СЊ РЅРё С†РµРЅС‚Р°!",DIA_Moe_Hallo_Vergisses);
+		Info_AddChoice    (DIA_Moe_Hallo,"РҐРѕСЂРѕС€Рѕ, СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.",DIA_Moe_Hallo_Alles);
 	}
 	else if (Npc_HasItems (hero, ItMi_Gold) > 9)
 	{
-		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_02"); //...но у меня нет с собой столько золота.
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_03"); //Это не важно. Просто отдай мне все, что у тебя есть.
+		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_02"); //...РЅРѕ Сѓ РјРµРЅСЏ РЅРµС‚ СЃ СЃРѕР±РѕР№ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р°.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_03"); //Р­С‚Рѕ РЅРµ РІР°Р¶РЅРѕ. РџСЂРѕСЃС‚Рѕ РѕС‚РґР°Р№ РјРЅРµ РІСЃРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.
 		
 		Info_ClearChoices (DIA_Moe_Hallo);
-		Info_AddChoice    (DIA_Moe_Hallo,"Забудь об этом, ты не получишь ни цента!",DIA_Moe_Hallo_Vergisses);
-		Info_AddChoice    (DIA_Moe_Hallo,"Хорошо, это все, что у меня есть.",DIA_Moe_Hallo_Alles);
+		Info_AddChoice    (DIA_Moe_Hallo,"Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, С‚С‹ РЅРµ РїРѕР»СѓС‡РёС€СЊ РЅРё С†РµРЅС‚Р°!",DIA_Moe_Hallo_Vergisses);
+		Info_AddChoice    (DIA_Moe_Hallo,"РҐРѕСЂРѕС€Рѕ, СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.",DIA_Moe_Hallo_Alles);
 	}
 	else
 	{
-		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_04"); //...но у меня нет даже и 10 монет.
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_05"); //Черт, неужели сегодня мне не повезло?!
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_06"); //Хорошо, (вздох) ты можешь идти.
+		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_04"); //...РЅРѕ Сѓ РјРµРЅСЏ РЅРµС‚ РґР°Р¶Рµ Рё 10 РјРѕРЅРµС‚.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_05"); //Р§РµСЂС‚, РЅРµСѓР¶РµР»Рё СЃРµРіРѕРґРЅСЏ РјРЅРµ РЅРµ РїРѕРІРµР·Р»Рѕ?!
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_06"); //РҐРѕСЂРѕС€Рѕ, (РІР·РґРѕС…) С‚С‹ РјРѕР¶РµС€СЊ РёРґС‚Рё.
 		
 		AI_StopProcessInfos (self);
 	};
@@ -194,19 +194,19 @@ FUNC VOID DIA_Moe_Hallo_Zahlen()
 };
 FUNC VOID DIA_Moe_Hallo_Vergisses()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Vergisses_15_00"); //Забудь об этом, ты не получишь ни цента!
-	AI_Output (self ,other,"DIA_Moe_Hallo_Vergisses_01_01"); //Тогда я возьму все, что у тебя есть, - а ты будешь лежать распростертым на земле передо мной.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Vergisses_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, С‚С‹ РЅРµ РїРѕР»СѓС‡РёС€СЊ РЅРё С†РµРЅС‚Р°!
+	AI_Output (self ,other,"DIA_Moe_Hallo_Vergisses_01_01"); //РўРѕРіРґР° СЏ РІРѕР·СЊРјСѓ РІСЃРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ, - Р° С‚С‹ Р±СѓРґРµС€СЊ Р»РµР¶Р°С‚СЊ СЂР°СЃРїСЂРѕСЃС‚РµСЂС‚С‹Рј РЅР° Р·РµРјР»Рµ РїРµСЂРµРґРѕ РјРЅРѕР№.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Alles()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Alles_15_00"); //Хорошо, это все, что у меня есть.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Alles_15_00"); //РҐРѕСЂРѕС€Рѕ, СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
 	
 	B_GiveInvItems (other, self, ItMi_Gold, Npc_HasItems (other,ItMi_Gold));
 	
-	AI_Output (self ,other,"DIA_Moe_Hallo_Alles_01_01"); //Отлично, этого достаточно. Я сегодня великодушен. (ухмыляется)
+	AI_Output (self ,other,"DIA_Moe_Hallo_Alles_01_01"); //РћС‚Р»РёС‡РЅРѕ, СЌС‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РЇ СЃРµРіРѕРґРЅСЏ РІРµР»РёРєРѕРґСѓС€РµРЅ. (СѓС…РјС‹Р»СЏРµС‚СЃСЏ)
 	AI_StopProcessInfos (self);
 };
 //************************************************
@@ -220,7 +220,7 @@ INSTANCE DIA_Moe_Harbor(C_INFO)
 	condition	= DIA_Moe_Harbor_Condition;
 	information	= DIA_Moe_Harbor_Info;
 	permanent	= TRUE;
-	description = "Ты знаешь о порте почти все, да?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ Рѕ РїРѕСЂС‚Рµ РїРѕС‡С‚Рё РІСЃРµ, РґР°?";
 };                       
 
 FUNC INT DIA_Moe_Harbor_Condition()
@@ -230,14 +230,14 @@ FUNC INT DIA_Moe_Harbor_Condition()
  
 FUNC VOID DIA_Moe_Harbor_Info()
 {	
-	AI_Output (other,self ,"DIA_Moe_Harbor_15_00"); //Ты знаешь о порте почти все, да?
-	AI_Output (self ,other,"DIA_Moe_Harbor_01_01"); //Конечно. А что?
+	AI_Output (other,self ,"DIA_Moe_Harbor_15_00"); //РўС‹ Р·РЅР°РµС€СЊ Рѕ РїРѕСЂС‚Рµ РїРѕС‡С‚Рё РІСЃРµ, РґР°?
+	AI_Output (self ,other,"DIA_Moe_Harbor_01_01"); //РљРѕРЅРµС‡РЅРѕ. Рђ С‡С‚Рѕ?
 	
 	Info_ClearChoices (DIA_Moe_Harbor);
 	Info_AddChoice		(DIA_Moe_Harbor, DIALOG_BACK, DIA_Moe_Harbor_Back);
-	Info_AddChoice		(DIA_Moe_Harbor,"Как тут с кораблями?",DIA_Moe_Harbor_Ship);
-	Info_AddChoice		(DIA_Moe_Harbor,"Почему я не вижу здесь никого из ополчения?",DIA_Moe_Harbor_Militia);
-	Info_AddChoice 		(DIA_Moe_Harbor,"Какие слухи бродят в последнее время?",DIA_Moe_Harbor_Rumors);
+	Info_AddChoice		(DIA_Moe_Harbor,"РљР°Рє С‚СѓС‚ СЃ РєРѕСЂР°Р±Р»СЏРјРё?",DIA_Moe_Harbor_Ship);
+	Info_AddChoice		(DIA_Moe_Harbor,"РџРѕС‡РµРјСѓ СЏ РЅРµ РІРёР¶Сѓ Р·РґРµСЃСЊ РЅРёРєРѕРіРѕ РёР· РѕРїРѕР»С‡РµРЅРёСЏ?",DIA_Moe_Harbor_Militia);
+	Info_AddChoice 		(DIA_Moe_Harbor,"РљР°РєРёРµ СЃР»СѓС…Рё Р±СЂРѕРґСЏС‚ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ?",DIA_Moe_Harbor_Rumors);
 };
 
 FUNC VOID DIA_Moe_Harbor_Back ()
@@ -247,43 +247,43 @@ FUNC VOID DIA_Moe_Harbor_Back ()
 
 FUNC VOID DIA_Moe_Harbor_Ship ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Ship_15_00"); //Как тут с кораблями?
-	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_01"); //Единственный корабль, который пришел за последнее время, - это корабль паладинов.
-	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_02"); //Он стоит вон там, за скалами к юго-западу.
+	AI_Output (other,self ,"DIA_Moe_Harbor_Ship_15_00"); //РљР°Рє С‚СѓС‚ СЃ РєРѕСЂР°Р±Р»СЏРјРё?
+	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_01"); //Р•РґРёРЅСЃС‚РІРµРЅРЅС‹Р№ РєРѕСЂР°Р±Р»СЊ, РєРѕС‚РѕСЂС‹Р№ РїСЂРёС€РµР» Р·Р° РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ, - СЌС‚Рѕ РєРѕСЂР°Р±Р»СЊ РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_02"); //РћРЅ СЃС‚РѕРёС‚ РІРѕРЅ С‚Р°Рј, Р·Р° СЃРєР°Р»Р°РјРё Рє СЋРіРѕ-Р·Р°РїР°РґСѓ.
 	
 };
 
 FUNC VOID DIA_Moe_Harbor_Militia ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Militia_15_00"); //Почему я не вижу здесь никого из ополчения?
-	AI_Output (self ,other,"DIA_Moe_Harbor_Militia_01_01"); //Они не осмеливаются соваться сюда. У нас здесь свои порядки.
+	AI_Output (other,self ,"DIA_Moe_Harbor_Militia_15_00"); //РџРѕС‡РµРјСѓ СЏ РЅРµ РІРёР¶Сѓ Р·РґРµСЃСЊ РЅРёРєРѕРіРѕ РёР· РѕРїРѕР»С‡РµРЅРёСЏ?
+	AI_Output (self ,other,"DIA_Moe_Harbor_Militia_01_01"); //РћРЅРё РЅРµ РѕСЃРјРµР»РёРІР°СЋС‚СЃСЏ СЃРѕРІР°С‚СЊСЃСЏ СЃСЋРґР°. РЈ РЅР°СЃ Р·РґРµСЃСЊ СЃРІРѕРё РїРѕСЂСЏРґРєРё.
 };
 
 FUNC VOID DIA_Moe_Harbor_Rumors ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_00"); //Какие слухи бродят в последнее время?
+	AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_00"); //РљР°РєРёРµ СЃР»СѓС…Рё Р±СЂРѕРґСЏС‚ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ?
 	
 	if (Kapitel == 1)
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_01"); //Мы здесь не любим людей, которые задают слишком много вопросов. Особенно, если они чужаки.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_01"); //РњС‹ Р·РґРµСЃСЊ РЅРµ Р»СЋР±РёРј Р»СЋРґРµР№, РєРѕС‚РѕСЂС‹Рµ Р·Р°РґР°СЋС‚ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РІРѕРїСЂРѕСЃРѕРІ. РћСЃРѕР±РµРЅРЅРѕ, РµСЃР»Рё РѕРЅРё С‡СѓР¶Р°РєРё.
 	}
 	else if (Kapitel == 2)
 	{
 		if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_02"); //Ничего, да и что может случиться? Все тихо.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_02"); //РќРёС‡РµРіРѕ, РґР° Рё С‡С‚Рѕ РјРѕР¶РµС‚ СЃР»СѓС‡РёС‚СЊСЃСЏ? Р’СЃРµ С‚РёС…Рѕ.
 		}
 		else if (hero.guild == GIL_KDF)
 		|| (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_03"); //(наиграно) Все плохо. Времена настали тяжелые, но мы все еще пытаемся не сбиться с праведного пути.
-			AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_04"); //Хватит издеваться надо мной.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_05"); //Как ты мог подумать такое обо мне? Я глубоко оскорблен.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_03"); //(РЅР°РёРіСЂР°РЅРѕ) Р’СЃРµ РїР»РѕС…Рѕ. Р’СЂРµРјРµРЅР° РЅР°СЃС‚Р°Р»Рё С‚СЏР¶РµР»С‹Рµ, РЅРѕ РјС‹ РІСЃРµ РµС‰Рµ РїС‹С‚Р°РµРјСЃСЏ РЅРµ СЃР±РёС‚СЊСЃСЏ СЃ РїСЂР°РІРµРґРЅРѕРіРѕ РїСѓС‚Рё.
+			AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_04"); //РҐРІР°С‚РёС‚ РёР·РґРµРІР°С‚СЊСЃСЏ РЅР°РґРѕ РјРЅРѕР№.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_05"); //РљР°Рє С‚С‹ РјРѕРі РїРѕРґСѓРјР°С‚СЊ С‚Р°РєРѕРµ РѕР±Рѕ РјРЅРµ? РЇ РіР»СѓР±РѕРєРѕ РѕСЃРєРѕСЂР±Р»РµРЅ.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_06"); //Становится жарко. Лорд Андрэ пытается сунуть свой нос туда, где ему делать нечего.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_07"); //Эти шишки никогда не понимали, как здесь ведутся дела.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_06"); //РЎС‚Р°РЅРѕРІРёС‚СЃСЏ Р¶Р°СЂРєРѕ. Р›РѕСЂРґ РђРЅРґСЂСЌ РїС‹С‚Р°РµС‚СЃСЏ СЃСѓРЅСѓС‚СЊ СЃРІРѕР№ РЅРѕСЃ С‚СѓРґР°, РіРґРµ РµРјСѓ РґРµР»Р°С‚СЊ РЅРµС‡РµРіРѕ.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_07"); //Р­С‚Рё С€РёС€РєРё РЅРёРєРѕРіРґР° РЅРµ РїРѕРЅРёРјР°Р»Рё, РєР°Рє Р·РґРµСЃСЊ РІРµРґСѓС‚СЃСЏ РґРµР»Р°.
 		};
 		
 	}
@@ -295,29 +295,29 @@ FUNC VOID DIA_Moe_Harbor_Rumors ()
 			|| (hero.guild == GIL_PAL)
 			|| (hero.guild == GIL_KDF)
 			{
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_08"); //К этому делу мы не имеем никакого отношения.
-				AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_09"); //К какому делу?
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_10"); //К этому убийству паладина там, наверху. Я бы на твоем месте подумал о наемниках вместо того, чтобы попусту проводить время здесь.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_08"); //Рљ СЌС‚РѕРјСѓ РґРµР»Сѓ РјС‹ РЅРµ РёРјРµРµРј РЅРёРєР°РєРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ.
+				AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_09"); //Рљ РєР°РєРѕРјСѓ РґРµР»Сѓ?
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_10"); //Рљ СЌС‚РѕРјСѓ СѓР±РёР№СЃС‚РІСѓ РїР°Р»Р°РґРёРЅР° С‚Р°Рј, РЅР°РІРµСЂС…Сѓ. РЇ Р±С‹ РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ РїРѕРґСѓРјР°Р» Рѕ РЅР°РµРјРЅРёРєР°С… РІРјРµСЃС‚Рѕ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРѕРїСѓСЃС‚Сѓ РїСЂРѕРІРѕРґРёС‚СЊ РІСЂРµРјСЏ Р·РґРµСЃСЊ.
 			}
 			else
 			{
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_11"); //Я знаю, что ты не имеешь к этому никакого отношения, но убийство паладина сильно напугало этих вельмож.
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_12"); //Хочешь дружеский совет? Тебе лучше убираться из города. По крайней мере, на некоторое время.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_11"); //РЇ Р·РЅР°СЋ, С‡С‚Рѕ С‚С‹ РЅРµ РёРјРµРµС€СЊ Рє СЌС‚РѕРјСѓ РЅРёРєР°РєРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ, РЅРѕ СѓР±РёР№СЃС‚РІРѕ РїР°Р»Р°РґРёРЅР° СЃРёР»СЊРЅРѕ РЅР°РїСѓРіР°Р»Рѕ СЌС‚РёС… РІРµР»СЊРјРѕР¶.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_12"); //РҐРѕС‡РµС€СЊ РґСЂСѓР¶РµСЃРєРёР№ СЃРѕРІРµС‚? РўРµР±Рµ Р»СѓС‡С€Рµ СѓР±РёСЂР°С‚СЊСЃСЏ РёР· РіРѕСЂРѕРґР°. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РЅР° РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ.
 			};	
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_13"); //С тех пор, как выяснилось, что наемники не имели отношения к этому паладину, ополчение не осмеливается даже заглядывать сюда.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_14"); //Я думаю, они боятся уйти отсюда с расквашенным носом. А по мне, так даже лучше.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_13"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє РІС‹СЏСЃРЅРёР»РѕСЃСЊ, С‡С‚Рѕ РЅР°РµРјРЅРёРєРё РЅРµ РёРјРµР»Рё РѕС‚РЅРѕС€РµРЅРёСЏ Рє СЌС‚РѕРјСѓ РїР°Р»Р°РґРёРЅСѓ, РѕРїРѕР»С‡РµРЅРёРµ РЅРµ РѕСЃРјРµР»РёРІР°РµС‚СЃСЏ РґР°Р¶Рµ Р·Р°РіР»СЏРґС‹РІР°С‚СЊ СЃСЋРґР°.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_14"); //РЇ РґСѓРјР°СЋ, РѕРЅРё Р±РѕСЏС‚СЃСЏ СѓР№С‚Рё РѕС‚СЃСЋРґР° СЃ СЂР°СЃРєРІР°С€РµРЅРЅС‹Рј РЅРѕСЃРѕРј. Рђ РїРѕ РјРЅРµ, С‚Р°Рє РґР°Р¶Рµ Р»СѓС‡С€Рµ.
 		};
 	}
 	else if (Kapitel == 4)
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_15"); //Здесь абсолютно ничего не происходит.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_15"); //Р—РґРµСЃСЊ Р°Р±СЃРѕР»СЋС‚РЅРѕ РЅРёС‡РµРіРѕ РЅРµ РїСЂРѕРёСЃС…РѕРґРёС‚.
 	}
 	else //Kapitel 5
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_16"); //Наконец-то эти разжиревшие паладины покидают гавань. Давно пора.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_16"); //РќР°РєРѕРЅРµС†-С‚Рѕ СЌС‚Рё СЂР°Р·Р¶РёСЂРµРІС€РёРµ РїР°Р»Р°РґРёРЅС‹ РїРѕРєРёРґР°СЋС‚ РіР°РІР°РЅСЊ. Р”Р°РІРЅРѕ РїРѕСЂР°.
 	};
 };
 
@@ -345,7 +345,7 @@ func int DIA_Moe_LEHMARGELDEINTREIBEN_Condition ()
 };
 func void DIA_Moe_LEHMARGELDEINTREIBEN_Info ()
 {
-	AI_Output (self, other, "DIA_Moe_LEHMARGELDEINTREIBEN_01_00"); //Эй, ты! Лемар передает тебе привет.
+	AI_Output (self, other, "DIA_Moe_LEHMARGELDEINTREIBEN_01_00"); //Р­Р№, С‚С‹! Р›РµРјР°СЂ РїРµСЂРµРґР°РµС‚ С‚РµР±Рµ РїСЂРёРІРµС‚.
 
 	AI_StopProcessInfos (self);
 

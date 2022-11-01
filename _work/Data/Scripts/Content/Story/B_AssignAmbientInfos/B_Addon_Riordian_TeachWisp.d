@@ -4,17 +4,17 @@
 ///////////////////////////////////////////////////////////////////////
 func void B_DIA_Addon_Riordian_Teach_15_00 ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Teach_15_00"); //Покажи мне, как тренировать моего блуждающего огонька.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Teach_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ РјРѕРµРіРѕ Р±Р»СѓР¶РґР°СЋС‰РµРіРѕ РѕРіРѕРЅСЊРєР°.
 };
 func void  B_DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //Теперь твой блуждающий огонек сможет найти больше полезных для тебя предметов.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //РўРµРїРµСЂСЊ С‚РІРѕР№ Р±Р»СѓР¶РґР°СЋС‰РёР№ РѕРіРѕРЅРµРє СЃРјРѕР¶РµС‚ РЅР°Р№С‚Рё Р±РѕР»СЊС€Рµ РїРѕР»РµР·РЅС‹С… РґР»СЏ С‚РµР±СЏ РїСЂРµРґРјРµС‚РѕРІ.
 };
 func void B_DIA_Addon_Riordian_Teach_10_08 () 
 {
-	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //Теперь твой блуждающий огонек будет искать интересные для тебя предметы. Мне больше нечему учить тебя.
+	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //РўРµРїРµСЂСЊ С‚РІРѕР№ Р±Р»СѓР¶РґР°СЋС‰РёР№ РѕРіРѕРЅРµРє Р±СѓРґРµС‚ РёСЃРєР°С‚СЊ РёРЅС‚РµСЂРµСЃРЅС‹Рµ РґР»СЏ С‚РµР±СЏ РїСЂРµРґРјРµС‚С‹. РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ.
 };
 func void B_DIA_Addon_Riordian_Teach_10_01 () 
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_Teach2_10_00"); //Что ты хочешь, чтобы искал твой блуждающий огонек?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Teach2_10_00"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ РёСЃРєР°Р» С‚РІРѕР№ Р±Р»СѓР¶РґР°СЋС‰РёР№ РѕРіРѕРЅРµРє?
 };

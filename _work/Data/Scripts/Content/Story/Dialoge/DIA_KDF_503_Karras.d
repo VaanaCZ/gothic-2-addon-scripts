@@ -45,20 +45,20 @@ func void DIA_Karras_Hello_Info ()
 {
 	if (hero.guild == GIL_NOV)
 	{
-		AI_Output			(self, other, "DIA_Karras_Hello_10_00"); //Что я могу сделать для тебя, послушник?
+		AI_Output			(self, other, "DIA_Karras_Hello_10_00"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ, РїРѕСЃР»СѓС€РЅРёРє?
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Karras_Hello_10_01"); //Что я могу сделать для тебя, брат?
+		AI_Output			(self, other, "DIA_Karras_Hello_10_01"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ, Р±СЂР°С‚?
 	}
 	else if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Karras_Hello_10_02"); //Благородные воины Инноса редко останавливаются здесь.
-		AI_Output			(self, other, "DIA_Karras_Hello_10_03"); //Что я могу сделать для тебя?
+		AI_Output			(self, other, "DIA_Karras_Hello_10_02"); //Р‘Р»Р°РіРѕСЂРѕРґРЅС‹Рµ РІРѕРёРЅС‹ РРЅРЅРѕСЃР° СЂРµРґРєРѕ РѕСЃС‚Р°РЅР°РІР»РёРІР°СЋС‚СЃСЏ Р·РґРµСЃСЊ.
+		AI_Output			(self, other, "DIA_Karras_Hello_10_03"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Karras_Hello_10_04"); //(недоверчиво) Что ты делаешь здесь?
+		AI_Output			(self, other, "DIA_Karras_Hello_10_04"); //(РЅРµРґРѕРІРµСЂС‡РёРІРѕ) Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
 	};
 	
 };
@@ -72,7 +72,7 @@ instance DIA_Karras_Mission		(C_INFO)
 	condition	 = 	DIA_Karras_Mission_Condition;
 	information	 = 	DIA_Karras_Mission_Info;
 	permanent    =  FALSE;
-	description	 = 	"Я пришел почитать писания.";
+	description	 = 	"РЇ РїСЂРёС€РµР» РїРѕС‡РёС‚Р°С‚СЊ РїРёСЃР°РЅРёСЏ.";
 };
 func int DIA_Karras_Mission_Condition ()
 {	
@@ -83,9 +83,9 @@ func int DIA_Karras_Mission_Condition ()
 };
 func void DIA_Karras_Mission_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_Mission_15_00"); //Я пришел почитать писания.
-	AI_Output (self, other, "DIA_Karras_Mission_10_01"); //Понимаю. Если тебе удастся выкроить время при изучении писаний, обратись ко мне.
-	AI_Output (self, other, "DIA_Karras_Mission_10_02"); //Есть один вопрос, в котором мне не помешала бы помощь здравомыслящего послушника.
+	AI_Output (other, self, "DIA_Karras_Mission_15_00"); //РЇ РїСЂРёС€РµР» РїРѕС‡РёС‚Р°С‚СЊ РїРёСЃР°РЅРёСЏ.
+	AI_Output (self, other, "DIA_Karras_Mission_10_01"); //РџРѕРЅРёРјР°СЋ. Р•СЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РІС‹РєСЂРѕРёС‚СЊ РІСЂРµРјСЏ РїСЂРё РёР·СѓС‡РµРЅРёРё РїРёСЃР°РЅРёР№, РѕР±СЂР°С‚РёСЃСЊ РєРѕ РјРЅРµ.
+	AI_Output (self, other, "DIA_Karras_Mission_10_02"); //Р•СЃС‚СЊ РѕРґРёРЅ РІРѕРїСЂРѕСЃ, РІ РєРѕС‚РѕСЂРѕРј РјРЅРµ РЅРµ РїРѕРјРµС€Р°Р»Р° Р±С‹ РїРѕРјРѕС‰СЊ Р·РґСЂР°РІРѕРјС‹СЃР»СЏС‰РµРіРѕ РїРѕСЃР»СѓС€РЅРёРєР°.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Aufgabe
@@ -97,7 +97,7 @@ instance DIA_Karras_Aufgabe		(C_INFO)
 	condition	 = 	DIA_Karras_Aufgabe_Condition;
 	information	 = 	DIA_Karras_Aufgabe_Info;
 	permanent    =  FALSE;
-	description	 = 	"У тебя есть поручение для меня?";
+	description	 = 	"РЈ С‚РµР±СЏ РµСЃС‚СЊ РїРѕСЂСѓС‡РµРЅРёРµ РґР»СЏ РјРµРЅСЏ?";
 };
 func int DIA_Karras_Aufgabe_Condition ()
 {	
@@ -108,20 +108,20 @@ func int DIA_Karras_Aufgabe_Condition ()
 };
 func void DIA_Karras_Aufgabe_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_Aufgabe_15_00"); //У тебя есть поручение для меня?
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_01"); //Да. Это касается безумного Игнаца. Он живет в  Хоринисе и экспериментирует с различными зельями и лечебными настойками. Но также он занимается магическими заклинаниями.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_02"); //И это очень беспокоит меня. Я задаю себе вопрос - а угодна ли эта магия Инносу?
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_03"); //Чтобы проверить это, мне хотелось бы заполучить некоторые из его свитков.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_04"); //Я хочу, чтобы ты отправился в город и купил у него три свитка для меня.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_05"); //Но никому ни слова - понятно?
-	AI_Output (other, self, "DIA_Karras_Aufgabe_15_06"); //Конечно.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_07"); //Вот 150 золотых монет. Это должно компенсировать твои затраты.
+	AI_Output (other, self, "DIA_Karras_Aufgabe_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РїРѕСЂСѓС‡РµРЅРёРµ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_01"); //Р”Р°. Р­С‚Рѕ РєР°СЃР°РµС‚СЃСЏ Р±РµР·СѓРјРЅРѕРіРѕ РРіРЅР°С†Р°. РћРЅ Р¶РёРІРµС‚ РІ  РҐРѕСЂРёРЅРёСЃРµ Рё СЌРєСЃРїРµСЂРёРјРµРЅС‚РёСЂСѓРµС‚ СЃ СЂР°Р·Р»РёС‡РЅС‹РјРё Р·РµР»СЊСЏРјРё Рё Р»РµС‡РµР±РЅС‹РјРё РЅР°СЃС‚РѕР№РєР°РјРё. РќРѕ С‚Р°РєР¶Рµ РѕРЅ Р·Р°РЅРёРјР°РµС‚СЃСЏ РјР°РіРёС‡РµСЃРєРёРјРё Р·Р°РєР»РёРЅР°РЅРёСЏРјРё.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_02"); //Р СЌС‚Рѕ РѕС‡РµРЅСЊ Р±РµСЃРїРѕРєРѕРёС‚ РјРµРЅСЏ. РЇ Р·Р°РґР°СЋ СЃРµР±Рµ РІРѕРїСЂРѕСЃ - Р° СѓРіРѕРґРЅР° Р»Рё СЌС‚Р° РјР°РіРёСЏ РРЅРЅРѕСЃСѓ?
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_03"); //Р§С‚РѕР±С‹ РїСЂРѕРІРµСЂРёС‚СЊ СЌС‚Рѕ, РјРЅРµ С…РѕС‚РµР»РѕСЃСЊ Р±С‹ Р·Р°РїРѕР»СѓС‡РёС‚СЊ РЅРµРєРѕС‚РѕСЂС‹Рµ РёР· РµРіРѕ СЃРІРёС‚РєРѕРІ.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_04"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕС‚РїСЂР°РІРёР»СЃСЏ РІ РіРѕСЂРѕРґ Рё РєСѓРїРёР» Сѓ РЅРµРіРѕ С‚СЂРё СЃРІРёС‚РєР° РґР»СЏ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_05"); //РќРѕ РЅРёРєРѕРјСѓ РЅРё СЃР»РѕРІР° - РїРѕРЅСЏС‚РЅРѕ?
+	AI_Output (other, self, "DIA_Karras_Aufgabe_15_06"); //РљРѕРЅРµС‡РЅРѕ.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_07"); //Р’РѕС‚ 150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р­С‚Рѕ РґРѕР»Р¶РЅРѕ РєРѕРјРїРµРЅСЃРёСЂРѕРІР°С‚СЊ С‚РІРѕРё Р·Р°С‚СЂР°С‚С‹.
 	
 	MIS_KarrasVergessen = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_KarrasCharm,LOG_MISSION);
 	Log_SetTopicStatus  (Topic_KarrasCharm,LOG_RUNNING);
-	B_LogEntry (Topic_KarrasCharm,"Мастер Каррас отправил меня в город. Он хочет, чтобы я принес ему три свитка с заклинаниями, которые изготавливает и продает Игнац.");
+	B_LogEntry (Topic_KarrasCharm,"РњР°СЃС‚РµСЂ РљР°СЂСЂР°СЃ РѕС‚РїСЂР°РІРёР» РјРµРЅСЏ РІ РіРѕСЂРѕРґ. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ РµРјСѓ С‚СЂРё СЃРІРёС‚РєР° СЃ Р·Р°РєР»РёРЅР°РЅРёСЏРјРё, РєРѕС‚РѕСЂС‹Рµ РёР·РіРѕС‚Р°РІР»РёРІР°РµС‚ Рё РїСЂРѕРґР°РµС‚ РРіРЅР°С†.");
 
 	B_GiveInvItems (self, other, ItMi_Gold,150);
 };
@@ -135,7 +135,7 @@ instance DIA_Karras_Success		(C_INFO)
 	condition	 = 	DIA_Karras_Success_Condition;
 	information	 = 	DIA_Karras_Success_Info;
 	permanent    =  FALSE;
-	description	 = 	"Вот свитки, которые ты хотел получить.";
+	description	 = 	"Р’РѕС‚ СЃРІРёС‚РєРё, РєРѕС‚РѕСЂС‹Рµ С‚С‹ С…РѕС‚РµР» РїРѕР»СѓС‡РёС‚СЊ.";
 };
 func int DIA_Karras_Success_Condition ()
 {	
@@ -147,10 +147,10 @@ func int DIA_Karras_Success_Condition ()
 };
 func void DIA_Karras_Success_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_Success_15_00"); //Вот свитки, которые ты хотел получить.
-	AI_Output (self, other, "DIA_Karras_Success_10_01"); //Отлично, мой юный друг.
-	AI_Output (self, other, "DIA_Karras_Success_10_02"); //Теперь ты можешь полностью посвятить себя обучению в библиотеке.
-	AI_Output (self, other, "DIA_Karras_Success_10_03"); //И возьми этот свиток в качестве награды.
+	AI_Output (other, self, "DIA_Karras_Success_15_00"); //Р’РѕС‚ СЃРІРёС‚РєРё, РєРѕС‚РѕСЂС‹Рµ С‚С‹ С…РѕС‚РµР» РїРѕР»СѓС‡РёС‚СЊ.
+	AI_Output (self, other, "DIA_Karras_Success_10_01"); //РћС‚Р»РёС‡РЅРѕ, РјРѕР№ СЋРЅС‹Р№ РґСЂСѓРі.
+	AI_Output (self, other, "DIA_Karras_Success_10_02"); //РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ РїРѕР»РЅРѕСЃС‚СЊСЋ РїРѕСЃРІСЏС‚РёС‚СЊ СЃРµР±СЏ РѕР±СѓС‡РµРЅРёСЋ РІ Р±РёР±Р»РёРѕС‚РµРєРµ.
+	AI_Output (self, other, "DIA_Karras_Success_10_03"); //Р РІРѕР·СЊРјРё СЌС‚РѕС‚ СЃРІРёС‚РѕРє РІ РєР°С‡РµСЃС‚РІРµ РЅР°РіСЂР°РґС‹.
 	
 	MIS_KarrasVergessen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_KarrasCharm);
@@ -167,7 +167,7 @@ instance DIA_Karras_Trade		(C_INFO)
 	condition	 = 	DIA_Karras_Trade_Condition;
 	information	 = 	DIA_Karras_Trade_Info;
 	permanent    =  TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade		 =  TRUE; 
 };
 func int DIA_Karras_Trade_Condition ()
@@ -180,7 +180,7 @@ func int DIA_Karras_Trade_Condition ()
 func void DIA_Karras_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Karras_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Karras_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info JOB
@@ -192,7 +192,7 @@ instance DIA_Karras_JOB		(C_INFO)
 	condition	 = 	DIA_Karras_JOB_Condition;
 	information	 = 	DIA_Karras_JOB_Info;
 	permanent    =  FALSE;
-	description	 = 	"А чем именно ты занимаешься?";
+	description	 = 	"Рђ С‡РµРј РёРјРµРЅРЅРѕ С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };
 func int DIA_Karras_JOB_Condition ()
 {	
@@ -200,19 +200,19 @@ func int DIA_Karras_JOB_Condition ()
 };
 func void DIA_Karras_JOB_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_JOB_15_00"); //А чем именно ты занимаешься?
-	AI_Output (self, other, "DIA_Karras_JOB_10_01"); //Я отвечаю за обучение магов искусству сферического проявления.
-	AI_Output (other, self, "DIA_Karras_JOB_15_02"); //Что это означает?
-	AI_Output (self, other, "DIA_Karras_JOB_10_03"); //Ну, я обучаю их вызову существ из других измерений или сфер.
-	AI_Output (self, other, "DIA_Karras_JOB_10_04"); //Это обычно называется просто вызовом, хотя это определение недостаточно полно отражает суть искусства вызова слуг.
-	AI_Output (self, other, "DIA_Karras_JOB_10_05"); //Кроме того, у меня есть очень интересные свитки, которых нет даже у Горакса.
+	AI_Output (other, self, "DIA_Karras_JOB_15_00"); //Рђ С‡РµРј РёРјРµРЅРЅРѕ С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other, "DIA_Karras_JOB_10_01"); //РЇ РѕС‚РІРµС‡Р°СЋ Р·Р° РѕР±СѓС‡РµРЅРёРµ РјР°РіРѕРІ РёСЃРєСѓСЃСЃС‚РІСѓ СЃС„РµСЂРёС‡РµСЃРєРѕРіРѕ РїСЂРѕСЏРІР»РµРЅРёСЏ.
+	AI_Output (other, self, "DIA_Karras_JOB_15_02"); //Р§С‚Рѕ СЌС‚Рѕ РѕР·РЅР°С‡Р°РµС‚?
+	AI_Output (self, other, "DIA_Karras_JOB_10_03"); //РќСѓ, СЏ РѕР±СѓС‡Р°СЋ РёС… РІС‹Р·РѕРІСѓ СЃСѓС‰РµСЃС‚РІ РёР· РґСЂСѓРіРёС… РёР·РјРµСЂРµРЅРёР№ РёР»Рё СЃС„РµСЂ.
+	AI_Output (self, other, "DIA_Karras_JOB_10_04"); //Р­С‚Рѕ РѕР±С‹С‡РЅРѕ РЅР°Р·С‹РІР°РµС‚СЃСЏ РїСЂРѕСЃС‚Рѕ РІС‹Р·РѕРІРѕРј, С…РѕС‚СЏ СЌС‚Рѕ РѕРїСЂРµРґРµР»РµРЅРёРµ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїРѕР»РЅРѕ РѕС‚СЂР°Р¶Р°РµС‚ СЃСѓС‚СЊ РёСЃРєСѓСЃСЃС‚РІР° РІС‹Р·РѕРІР° СЃР»СѓРі.
+	AI_Output (self, other, "DIA_Karras_JOB_10_05"); //РљСЂРѕРјРµ С‚РѕРіРѕ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РѕС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅС‹Рµ СЃРІРёС‚РєРё, РєРѕС‚РѕСЂС‹С… РЅРµС‚ РґР°Р¶Рµ Сѓ Р“РѕСЂР°РєСЃР°.
 	
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Karras_JOB_10_06"); //Но я могу продать их только членам нашего Ордена.
+		AI_Output (self, other, "DIA_Karras_JOB_10_06"); //РќРѕ СЏ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ РёС… С‚РѕР»СЊРєРѕ С‡Р»РµРЅР°Рј РЅР°С€РµРіРѕ РћСЂРґРµРЅР°.
 	};
 	Log_CreateTopic (Topic_KlosterTrader,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTrader,"Мастер Каррас из монастыря может продать мне свитки с заклинаниями. Но для этого я должен быть магом огня.");
+	B_LogEntry (Topic_KlosterTrader,"РњР°СЃС‚РµСЂ РљР°СЂСЂР°СЃ РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ РјРѕР¶РµС‚ РїСЂРѕРґР°С‚СЊ РјРЅРµ СЃРІРёС‚РєРё СЃ Р·Р°РєР»РёРЅР°РЅРёСЏРјРё. РќРѕ РґР»СЏ СЌС‚РѕРіРѕ СЏ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РјР°РіРѕРј РѕРіРЅСЏ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -224,7 +224,7 @@ instance DIA_Karras_TEACH		(C_INFO)
 	condition	 = 	DIA_Karras_TEACH_Condition;
 	information	 = 	DIA_Karras_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Обучи меня (созданию рун).";
+	description	 = 	"РћР±СѓС‡Рё РјРµРЅСЏ (СЃРѕР·РґР°РЅРёСЋ СЂСѓРЅ).";
 };
 
 func int DIA_Karras_TEACH_Condition ()
@@ -238,7 +238,7 @@ func void DIA_Karras_TEACH_Info ()
 {
 	var int abletolearn;
 	abletolearn = 0;
-	AI_Output (other, self, "DIA_Karras_TEACH_15_00"); //Обучи меня.
+	AI_Output (other, self, "DIA_Karras_TEACH_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ.
 	
 		Info_ClearChoices   (DIA_Karras_TEACH);
 		
@@ -280,7 +280,7 @@ func void DIA_Karras_TEACH_Info ()
 		};
 		if 	(abletolearn < 1)
 		{
-			AI_Output (self, other, "DIA_Karras_TEACH_10_01"); //В настоящий момент мне нечему учить тебя.
+			AI_Output (self, other, "DIA_Karras_TEACH_10_01"); //Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚ РјРЅРµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ.
 		}
 		else
 		{
@@ -326,7 +326,7 @@ instance DIA_Karras_CIRCLE4		(C_INFO)
 	condition	 = 	DIA_Karras_CIRCLE4_Condition;
 	information	 = 	DIA_Karras_CIRCLE4_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу изучить четвертый Круг Магии.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РёР·СѓС‡РёС‚СЊ С‡РµС‚РІРµСЂС‚С‹Р№ РљСЂСѓРі РњР°РіРёРё.";
 };
 func int DIA_Karras_CIRCLE4_Condition ()
 {	
@@ -337,19 +337,19 @@ func int DIA_Karras_CIRCLE4_Condition ()
 };
 func void DIA_Karras_CIRCLE4_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_CIRCLE4_15_00"); //Я хочу изучить четвертый Круг Магии.
+	AI_Output (other, self, "DIA_Karras_CIRCLE4_15_00"); //РЇ С…РѕС‡Сѓ РёР·СѓС‡РёС‚СЊ С‡РµС‚РІРµСЂС‚С‹Р№ РљСЂСѓРі РњР°РіРёРё.
 	
 	if (MIS_ReadyforChapter4 == TRUE)
 	{
 		if B_TeachMagicCircle (self,other, 4)
 		{
-			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_01"); //Хорошо. Для этого ты располагаешь всем необходимым. Войди же в четвертый круг, да пребудет с тобой сила этой новой магии.
-			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_02"); //Ты через многое прошел, и Иннос будет продолжать освещать твой путь.
+			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_01"); //РҐРѕСЂРѕС€Рѕ. Р”Р»СЏ СЌС‚РѕРіРѕ С‚С‹ СЂР°СЃРїРѕР»Р°РіР°РµС€СЊ РІСЃРµРј РЅРµРѕР±С…РѕРґРёРјС‹Рј. Р’РѕР№РґРё Р¶Рµ РІ С‡РµС‚РІРµСЂС‚С‹Р№ РєСЂСѓРі, РґР° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ СЃРёР»Р° СЌС‚РѕР№ РЅРѕРІРѕР№ РјР°РіРёРё.
+			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_02"); //РўС‹ С‡РµСЂРµР· РјРЅРѕРіРѕРµ РїСЂРѕС€РµР», Рё РРЅРЅРѕСЃ Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РѕСЃРІРµС‰Р°С‚СЊ С‚РІРѕР№ РїСѓС‚СЊ.
 		};
 	}
 	else
 	{
-			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_03"); //Он еще далеко не закончен.
+			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_03"); //РћРЅ РµС‰Рµ РґР°Р»РµРєРѕ РЅРµ Р·Р°РєРѕРЅС‡РµРЅ.
 	};
 };
 /////////////////////////////////////////////////////////////////////////
@@ -362,7 +362,7 @@ instance DIA_Karras_CIRCLE5		(C_INFO)
 	condition	 = 	DIA_Karras_CIRCLE5_Condition;
 	information	 = 	DIA_Karras_CIRCLE5_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу изучить пятый Круг Магии.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РёР·СѓС‡РёС‚СЊ РїСЏС‚С‹Р№ РљСЂСѓРі РњР°РіРёРё.";
 };
 func int DIA_Karras_CIRCLE5_Condition ()
 {	
@@ -373,22 +373,22 @@ func int DIA_Karras_CIRCLE5_Condition ()
 };
 func void DIA_Karras_CIRCLE5_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_CIRCLE5_15_00"); //Я хочу изучить пятый Круг Магии.
+	AI_Output (other, self, "DIA_Karras_CIRCLE5_15_00"); //РЇ С…РѕС‡Сѓ РёР·СѓС‡РёС‚СЊ РїСЏС‚С‹Р№ РљСЂСѓРі РњР°РіРёРё.
 	
 	if (Kapitel >= 5)
 	{
 		if B_TeachMagicCircle (self,other, 5)
 		{
-			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_01"); //Войди же в пятый круг магии. Тебе станет подвластна могущественная магия, несравнимая с тем, чем ты владел ранее.
-			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_02"); //Используй эту силу во благо, брат - тьма еще сильна, и сильны твои враги.
-			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_03"); //Я не могу сопроводить тебя по пути к шестому и наивысшему Кругу Магии. Сам Пирокар введет тебя в него, когда придет время.
+			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_01"); //Р’РѕР№РґРё Р¶Рµ РІ РїСЏС‚С‹Р№ РєСЂСѓРі РјР°РіРёРё. РўРµР±Рµ СЃС‚Р°РЅРµС‚ РїРѕРґРІР»Р°СЃС‚РЅР° РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅР°СЏ РјР°РіРёСЏ, РЅРµСЃСЂР°РІРЅРёРјР°СЏ СЃ С‚РµРј, С‡РµРј С‚С‹ РІР»Р°РґРµР» СЂР°РЅРµРµ.
+			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_02"); //РСЃРїРѕР»СЊР·СѓР№ СЌС‚Сѓ СЃРёР»Сѓ РІРѕ Р±Р»Р°РіРѕ, Р±СЂР°С‚ - С‚СЊРјР° РµС‰Рµ СЃРёР»СЊРЅР°, Рё СЃРёР»СЊРЅС‹ С‚РІРѕРё РІСЂР°РіРё.
+			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_03"); //РЇ РЅРµ РјРѕРіСѓ СЃРѕРїСЂРѕРІРѕРґРёС‚СЊ С‚РµР±СЏ РїРѕ РїСѓС‚Рё Рє С€РµСЃС‚РѕРјСѓ Рё РЅР°РёРІС‹СЃС€РµРјСѓ РљСЂСѓРіСѓ РњР°РіРёРё. РЎР°Рј РџРёСЂРѕРєР°СЂ РІРІРµРґРµС‚ С‚РµР±СЏ РІ РЅРµРіРѕ, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ.
 			
-			B_LogEntry (Topic_KlosterTeacher,"Мастер Пирокар посвятит меня в 6-й круг магии.");
+			B_LogEntry (Topic_KlosterTeacher,"РњР°СЃС‚РµСЂ РџРёСЂРѕРєР°СЂ РїРѕСЃРІСЏС‚РёС‚ РјРµРЅСЏ РІ 6-Р№ РєСЂСѓРі РјР°РіРёРё.");
 		};
 	}
 	else
 	{
-			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_04"); //Время еще не пришло.
+			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_04"); //Р’СЂРµРјСЏ РµС‰Рµ РЅРµ РїСЂРёС€Р»Рѕ.
 	};
 };
 //#####################################################################
@@ -478,37 +478,37 @@ func void DIA_Karras_ChasePedro_Info ()
 {
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Karras_ChasePedro_10_00"); //Брат, тебе нельзя терять времени. Ты должен найти Педро и вернуть Глаз Инноса монастырю.
-		AI_Output (self ,other,"DIA_Karras_ChasePedro_10_01"); //Если Глаз не вернуть, мы все обречены.
+		AI_Output (self ,other,"DIA_Karras_ChasePedro_10_00"); //Р‘СЂР°С‚, С‚РµР±Рµ РЅРµР»СЊР·СЏ С‚РµСЂСЏС‚СЊ РІСЂРµРјРµРЅРё. РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РџРµРґСЂРѕ Рё РІРµСЂРЅСѓС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР° РјРѕРЅР°СЃС‚С‹СЂСЋ.
+		AI_Output (self ,other,"DIA_Karras_ChasePedro_10_01"); //Р•СЃР»Рё Р“Р»Р°Р· РЅРµ РІРµСЂРЅСѓС‚СЊ, РјС‹ РІСЃРµ РѕР±СЂРµС‡РµРЅС‹.
 	}
 	else
 	{
-		AI_Output	(self ,other, "DIA_Karras_ChasePedro_10_02"); //Что ты делаешь здесь? Разве ты не должен сейчас искать коварного предателя Педро?
+		AI_Output	(self ,other, "DIA_Karras_ChasePedro_10_02"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ? Р Р°Р·РІРµ С‚С‹ РЅРµ РґРѕР»Р¶РµРЅ СЃРµР№С‡Р°СЃ РёСЃРєР°С‚СЊ РєРѕРІР°СЂРЅРѕРіРѕ РїСЂРµРґР°С‚РµР»СЏ РџРµРґСЂРѕ?
 	
 		Info_ClearChoices (DIA_Karras_ChasePedro);
-		Info_AddChoice (DIA_Karras_ChasePedro,"Это подождет. Есть другие, более важные дела.",DIA_Karras_ChasePedro_Later);
-		Info_AddChoice (DIA_Karras_ChasePedro,"Ему все равно далеко не уйти.",DIA_Karras_ChasePedro_WontEscape);
+		Info_AddChoice (DIA_Karras_ChasePedro,"Р­С‚Рѕ РїРѕРґРѕР¶РґРµС‚. Р•СЃС‚СЊ РґСЂСѓРіРёРµ, Р±РѕР»РµРµ РІР°Р¶РЅС‹Рµ РґРµР»Р°.",DIA_Karras_ChasePedro_Later);
+		Info_AddChoice (DIA_Karras_ChasePedro,"Р•РјСѓ РІСЃРµ СЂР°РІРЅРѕ РґР°Р»РµРєРѕ РЅРµ СѓР№С‚Рё.",DIA_Karras_ChasePedro_WontEscape);
 	};
 
 };	
 
 func void DIA_Karras_ChasePedro_Later ()
 {
-	AI_Output (other,self ,"DIA_Karras_ChasePedro_Later_15_00"); //Это подождет. Есть другие, более важные дела.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_01"); //Да ты представляешь, что эта потеря означает для монастыря? Глаз Инноса - грозное оружие.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_02"); //Никто не в состоянии предугадать, что враг намеревается сделать с этим амулетом, но он что-то задумал, и мы должны предотвратить эту беду.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_03"); //Так отправляйся же немедленно на поиски и найди этого вора!
+	AI_Output (other,self ,"DIA_Karras_ChasePedro_Later_15_00"); //Р­С‚Рѕ РїРѕРґРѕР¶РґРµС‚. Р•СЃС‚СЊ РґСЂСѓРіРёРµ, Р±РѕР»РµРµ РІР°Р¶РЅС‹Рµ РґРµР»Р°.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_01"); //Р”Р° С‚С‹ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ, С‡С‚Рѕ СЌС‚Р° РїРѕС‚РµСЂСЏ РѕР·РЅР°С‡Р°РµС‚ РґР»СЏ РјРѕРЅР°СЃС‚С‹СЂСЏ? Р“Р»Р°Р· РРЅРЅРѕСЃР° - РіСЂРѕР·РЅРѕРµ РѕСЂСѓР¶РёРµ.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_02"); //РќРёРєС‚Рѕ РЅРµ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РїСЂРµРґСѓРіР°РґР°С‚СЊ, С‡С‚Рѕ РІСЂР°Рі РЅР°РјРµСЂРµРІР°РµС‚СЃСЏ СЃРґРµР»Р°С‚СЊ СЃ СЌС‚РёРј Р°РјСѓР»РµС‚РѕРј, РЅРѕ РѕРЅ С‡С‚Рѕ-С‚Рѕ Р·Р°РґСѓРјР°Р», Рё РјС‹ РґРѕР»Р¶РЅС‹ РїСЂРµРґРѕС‚РІСЂР°С‚РёС‚СЊ СЌС‚Сѓ Р±РµРґСѓ.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_03"); //РўР°Рє РѕС‚РїСЂР°РІР»СЏР№СЃСЏ Р¶Рµ РЅРµРјРµРґР»РµРЅРЅРѕ РЅР° РїРѕРёСЃРєРё Рё РЅР°Р№РґРё СЌС‚РѕРіРѕ РІРѕСЂР°!
 
 	AI_StopProcessInfos (self);
 };
 
 FUNC VOID DIA_Karras_ChasePedro_WontEscape ()
 {
-	AI_Output (other,self ,"DIA_Karras_ChasePedro_WontEscape_15_00"); //Ему все равно далеко не уйти.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_01"); //Я очень надеюсь на это, ради твоего же блага. Если же ему удастся уйти из-за того, что ты болтаешься здесь, я лично позабочусь о том, чтобы ты предстал перед трибуналом.
-	AI_Output (other,self ,"DIA_Karras_ChasePedro_WontEscape_15_02"); //А в чем меня можно обвинить?
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_03"); //В заговоре с врагом. Не нужно большого воображения, чтобы представить себе наказание за такое преступление.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_04"); //А теперь не теряй времени попусту. В противном случае, боюсь, при следующей нашей встрече ты будешь гореть на костре.
+	AI_Output (other,self ,"DIA_Karras_ChasePedro_WontEscape_15_00"); //Р•РјСѓ РІСЃРµ СЂР°РІРЅРѕ РґР°Р»РµРєРѕ РЅРµ СѓР№С‚Рё.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_01"); //РЇ РѕС‡РµРЅСЊ РЅР°РґРµСЋСЃСЊ РЅР° СЌС‚Рѕ, СЂР°РґРё С‚РІРѕРµРіРѕ Р¶Рµ Р±Р»Р°РіР°. Р•СЃР»Рё Р¶Рµ РµРјСѓ СѓРґР°СЃС‚СЃСЏ СѓР№С‚Рё РёР·-Р·Р° С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ Р±РѕР»С‚Р°РµС€СЊСЃСЏ Р·РґРµСЃСЊ, СЏ Р»РёС‡РЅРѕ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ С‚С‹ РїСЂРµРґСЃС‚Р°Р» РїРµСЂРµРґ С‚СЂРёР±СѓРЅР°Р»РѕРј.
+	AI_Output (other,self ,"DIA_Karras_ChasePedro_WontEscape_15_02"); //Рђ РІ С‡РµРј РјРµРЅСЏ РјРѕР¶РЅРѕ РѕР±РІРёРЅРёС‚СЊ?
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_03"); //Р’ Р·Р°РіРѕРІРѕСЂРµ СЃ РІСЂР°РіРѕРј. РќРµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€РѕРіРѕ РІРѕРѕР±СЂР°Р¶РµРЅРёСЏ, С‡С‚РѕР±С‹ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ СЃРµР±Рµ РЅР°РєР°Р·Р°РЅРёРµ Р·Р° С‚Р°РєРѕРµ РїСЂРµСЃС‚СѓРїР»РµРЅРёРµ.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_04"); //Рђ С‚РµРїРµСЂСЊ РЅРµ С‚РµСЂСЏР№ РІСЂРµРјРµРЅРё РїРѕРїСѓСЃС‚Сѓ. Р’ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ, Р±РѕСЋСЃСЊ, РїСЂРё СЃР»РµРґСѓСЋС‰РµР№ РЅР°С€РµР№ РІСЃС‚СЂРµС‡Рµ С‚С‹ Р±СѓРґРµС€СЊ РіРѕСЂРµС‚СЊ РЅР° РєРѕСЃС‚СЂРµ.
 
 	AI_StopProcessInfos (self);
 };
@@ -540,7 +540,7 @@ func int DIA_Karras_NeedInfo_Condition ()
 func void DIA_Karras_NeedInfo_Info ()
 {
 	
-	AI_Output (self ,other,"DIA_Karras_NeedInfo_10_00"); //Ты знаешь, что тебе нужно делать. Так иди же!
+	AI_Output (self ,other,"DIA_Karras_NeedInfo_10_00"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РґРµР»Р°С‚СЊ. РўР°Рє РёРґРё Р¶Рµ!
 	
 	AI_StopProcessInfos (self);
 };
@@ -559,7 +559,7 @@ instance DIA_Karras_InnosEyeRetrieved		(C_INFO)
 	condition	 = 	DIA_Karras_InnosEyeRetrieved_Condition;
 	information	 = 	DIA_Karras_InnosEyeRetrieved_Info;
 	permanent	 = 	FALSE;
-	description	 =	"Я принес назад Глаз Инноса.";
+	description	 =	"РЇ РїСЂРёРЅРµСЃ РЅР°Р·Р°Рґ Р“Р»Р°Р· РРЅРЅРѕСЃР°.";
 };
 
 func int DIA_Karras_InnosEyeRetrieved_Condition ()
@@ -573,12 +573,12 @@ func int DIA_Karras_InnosEyeRetrieved_Condition ()
 func void DIA_Karras_InnosEyeRetrieved_Info ()
 {
 	
-	AI_Output (other,self ,"DIA_Karras_InnosEyeRetrieved_15_00"); //Я принес назад Глаз Инноса.
-	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_01"); //Я так рад, что тебе удалось вырвать Глаз из лап врага.
-	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_02"); //Но опасность все еще нависает над нами. Враг разрабатывает новые планы и претворяет их в жизнь с необычайной агрессивностью.
-	AI_Output (other,self ,"DIA_Karras_InnosEyeRetrieved_15_03"); //Я уже почувствовал это на своей шкуре.
-	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_04"); //Сейчас не время для шуток. Ситуация серьезна. Очень серьезна. Теперь мы даже не знаем, кому можно доверять, а кому нет.
-	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_05"); //Враг уже преуспел в искушении послушника Педро. Он может преуспеть в этом и со многими другими.
+	AI_Output (other,self ,"DIA_Karras_InnosEyeRetrieved_15_00"); //РЇ РїСЂРёРЅРµСЃ РЅР°Р·Р°Рґ Р“Р»Р°Р· РРЅРЅРѕСЃР°.
+	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_01"); //РЇ С‚Р°Рє СЂР°Рґ, С‡С‚Рѕ С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ РІС‹СЂРІР°С‚СЊ Р“Р»Р°Р· РёР· Р»Р°Рї РІСЂР°РіР°.
+	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_02"); //РќРѕ РѕРїР°СЃРЅРѕСЃС‚СЊ РІСЃРµ РµС‰Рµ РЅР°РІРёСЃР°РµС‚ РЅР°Рґ РЅР°РјРё. Р’СЂР°Рі СЂР°Р·СЂР°Р±Р°С‚С‹РІР°РµС‚ РЅРѕРІС‹Рµ РїР»Р°РЅС‹ Рё РїСЂРµС‚РІРѕСЂСЏРµС‚ РёС… РІ Р¶РёР·РЅСЊ СЃ РЅРµРѕР±С‹С‡Р°Р№РЅРѕР№ Р°РіСЂРµСЃСЃРёРІРЅРѕСЃС‚СЊСЋ.
+	AI_Output (other,self ,"DIA_Karras_InnosEyeRetrieved_15_03"); //РЇ СѓР¶Рµ РїРѕС‡СѓРІСЃС‚РІРѕРІР°Р» СЌС‚Рѕ РЅР° СЃРІРѕРµР№ С€РєСѓСЂРµ.
+	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_04"); //РЎРµР№С‡Р°СЃ РЅРµ РІСЂРµРјСЏ РґР»СЏ С€СѓС‚РѕРє. РЎРёС‚СѓР°С†РёСЏ СЃРµСЂСЊРµР·РЅР°. РћС‡РµРЅСЊ СЃРµСЂСЊРµР·РЅР°. РўРµРїРµСЂСЊ РјС‹ РґР°Р¶Рµ РЅРµ Р·РЅР°РµРј, РєРѕРјСѓ РјРѕР¶РЅРѕ РґРѕРІРµСЂСЏС‚СЊ, Р° РєРѕРјСѓ РЅРµС‚.
+	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_05"); //Р’СЂР°Рі СѓР¶Рµ РїСЂРµСѓСЃРїРµР» РІ РёСЃРєСѓС€РµРЅРёРё РїРѕСЃР»СѓС€РЅРёРєР° РџРµРґСЂРѕ. РћРЅ РјРѕР¶РµС‚ РїСЂРµСѓСЃРїРµС‚СЊ РІ СЌС‚РѕРј Рё СЃРѕ РјРЅРѕРіРёРјРё РґСЂСѓРіРёРјРё.
 
 	B_GivePlayerXP (XP_AMBIENT);
 };
@@ -593,7 +593,7 @@ INSTANCE DIA_Karras_KAP3_Perm   (C_INFO)
 	condition   = DIA_Karras_KAP3_Perm_Condition;
 	information = DIA_Karras_KAP3_Perm_Info;
 	permanent   = TRUE;
-	description = "Как продвигаются твои исследования?";
+	description = "РљР°Рє РїСЂРѕРґРІРёРіР°СЋС‚СЃСЏ С‚РІРѕРё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ?";
 };
 FUNC INT DIA_Karras_KAP3_Perm_Condition()
 {
@@ -605,38 +605,38 @@ FUNC INT DIA_Karras_KAP3_Perm_Condition()
 };
 FUNC VOID DIA_Karras_KAP3_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_00"); //Как продвигаются твои исследования?
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_00"); //РљР°Рє РїСЂРѕРґРІРёРіР°СЋС‚СЃСЏ С‚РІРѕРё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ?
 
 	if (MIS_KarrasResearchDMT == FALSE)
 	&& (PyrokarToldKarrasToResearchDMT == TRUE)
 	&& (hero.guild == GIL_KDF)
 	{
 		
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_01"); //Я смог выяснить кое-что об Ищущих.
-		AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_02"); //И что это такое?
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_03"); //Они имеют очевидное демоническое происхождение. Ну, по крайней мере, они находятся или находились под влиянием демонов.
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_04"); //Будь осторожен при встрече с ними.
-		AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_05"); //Надо же! Какая свежая концепция!
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_06"); //Я приношу свои извинения, но у меня недостаточно материала, чтобы сделать более детальные утверждения.
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_07"); //Но ты мог бы принести мне что-нибудь, принадлежащее им, для изучения...
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_01"); //РЇ СЃРјРѕРі РІС‹СЏСЃРЅРёС‚СЊ РєРѕРµ-С‡С‚Рѕ РѕР± РС‰СѓС‰РёС….
+		AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_02"); //Р С‡С‚Рѕ СЌС‚Рѕ С‚Р°РєРѕРµ?
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_03"); //РћРЅРё РёРјРµСЋС‚ РѕС‡РµРІРёРґРЅРѕРµ РґРµРјРѕРЅРёС‡РµСЃРєРѕРµ РїСЂРѕРёСЃС…РѕР¶РґРµРЅРёРµ. РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РѕРЅРё РЅР°С…РѕРґСЏС‚СЃСЏ РёР»Рё РЅР°С…РѕРґРёР»РёСЃСЊ РїРѕРґ РІР»РёСЏРЅРёРµРј РґРµРјРѕРЅРѕРІ.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_04"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ РїСЂРё РІСЃС‚СЂРµС‡Рµ СЃ РЅРёРјРё.
+		AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_05"); //РќР°РґРѕ Р¶Рµ! РљР°РєР°СЏ СЃРІРµР¶Р°СЏ РєРѕРЅС†РµРїС†РёСЏ!
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_06"); //РЇ РїСЂРёРЅРѕС€Сѓ СЃРІРѕРё РёР·РІРёРЅРµРЅРёСЏ, РЅРѕ Сѓ РјРµРЅСЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РјР°С‚РµСЂРёР°Р»Р°, С‡С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ Р±РѕР»РµРµ РґРµС‚Р°Р»СЊРЅС‹Рµ СѓС‚РІРµСЂР¶РґРµРЅРёСЏ.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_07"); //РќРѕ С‚С‹ РјРѕРі Р±С‹ РїСЂРёРЅРµСЃС‚Рё РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РїСЂРёРЅР°РґР»РµР¶Р°С‰РµРµ РёРј, РґР»СЏ РёР·СѓС‡РµРЅРёСЏ...
 		
 		MIS_KarrasResearchDMT = LOG_RUNNING;
-		B_LogEntry (TOPIC_DEMENTOREN,"Чтобы продолжать свои исследования, Каррасу нужно что-нибудь, что было в прямом контакте с Ищущими."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Р§С‚РѕР±С‹ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЃРІРѕРё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ, РљР°СЂСЂР°СЃСѓ РЅСѓР¶РЅРѕ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡С‚Рѕ Р±С‹Р»Рѕ РІ РїСЂСЏРјРѕРј РєРѕРЅС‚Р°РєС‚Рµ СЃ РС‰СѓС‰РёРјРё."); 
 
 		Info_ClearChoices (DIA_Karras_KAP3_Perm);
 		Info_AddChoice (DIA_Karras_KAP3_Perm,DIALOG_BACK,DIA_Karras_KAP3_Perm_Back);
-		Info_AddChoice (DIA_Karras_KAP3_Perm,"Я попробую что-нибудь сделать.",DIA_Karras_KAP3_Perm_WillSee);
-		Info_AddChoice (DIA_Karras_KAP3_Perm,"Может иметь к этому отношение Спящий?",DIA_Karras_KAP3_Perm_Sleeper);
-		Info_AddChoice (DIA_Karras_KAP3_Perm,"Что именно тебе нужно?",DIA_Karras_KAP3_Perm_Material);
+		Info_AddChoice (DIA_Karras_KAP3_Perm,"РЇ РїРѕРїСЂРѕР±СѓСЋ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°С‚СЊ.",DIA_Karras_KAP3_Perm_WillSee);
+		Info_AddChoice (DIA_Karras_KAP3_Perm,"РњРѕР¶РµС‚ РёРјРµС‚СЊ Рє СЌС‚РѕРјСѓ РѕС‚РЅРѕС€РµРЅРёРµ РЎРїСЏС‰РёР№?",DIA_Karras_KAP3_Perm_Sleeper);
+		Info_AddChoice (DIA_Karras_KAP3_Perm,"Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?",DIA_Karras_KAP3_Perm_Material);
 	}
 	else if MIS_KarrasResearchDMT == LOG_RUNNING 
 	{
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_08"); //Я все еще работаю над интерпретацией данных об Ищущих.
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_09"); //Как только я что-нибудь выясню, я, конечно же, немедленно информирую тебя.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_08"); //РЇ РІСЃРµ РµС‰Рµ СЂР°Р±РѕС‚Р°СЋ РЅР°Рґ РёРЅС‚РµСЂРїСЂРµС‚Р°С†РёРµР№ РґР°РЅРЅС‹С… РѕР± РС‰СѓС‰РёС….
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_09"); //РљР°Рє С‚РѕР»СЊРєРѕ СЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹СЏСЃРЅСЋ, СЏ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, РЅРµРјРµРґР»РµРЅРЅРѕ РёРЅС„РѕСЂРјРёСЂСѓСЋ С‚РµР±СЏ.
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_10"); //У врага много обликов. Какой из них представляет наибольшую опасность для монастыря - чрезвычайно трудно определить.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_10"); //РЈ РІСЂР°РіР° РјРЅРѕРіРѕ РѕР±Р»РёРєРѕРІ. РљР°РєРѕР№ РёР· РЅРёС… РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ РЅР°РёР±РѕР»СЊС€СѓСЋ РѕРїР°СЃРЅРѕСЃС‚СЊ РґР»СЏ РјРѕРЅР°СЃС‚С‹СЂСЏ - С‡СЂРµР·РІС‹С‡Р°Р№РЅРѕ С‚СЂСѓРґРЅРѕ РѕРїСЂРµРґРµР»РёС‚СЊ.
 	};
 };
 
@@ -648,31 +648,31 @@ FUNC VOID DIA_Karras_KAP3_Perm_Back()
 
 FUNC VOID DIA_Karras_KAP3_Perm_Sleeper()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Sleeper_15_00"); //Может иметь к этому отношение Спящий?
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Sleeper_10_01"); //Я слышал о Спящем. Но, исходя из имеющейся у меня информации, я ничего не могу сказать об этом.
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Sleeper_10_02"); //К нему могут иметь отношение бесчисленное количество демонов, и любой из них может быть причастен.
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Sleeper_15_00"); //РњРѕР¶РµС‚ РёРјРµС‚СЊ Рє СЌС‚РѕРјСѓ РѕС‚РЅРѕС€РµРЅРёРµ РЎРїСЏС‰РёР№?
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Sleeper_10_01"); //РЇ СЃР»С‹С€Р°Р» Рѕ РЎРїСЏС‰РµРј. РќРѕ, РёСЃС…РѕРґСЏ РёР· РёРјРµСЋС‰РµР№СЃСЏ Сѓ РјРµРЅСЏ РёРЅС„РѕСЂРјР°С†РёРё, СЏ РЅРёС‡РµРіРѕ РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј.
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Sleeper_10_02"); //Рљ РЅРµРјСѓ РјРѕРіСѓС‚ РёРјРµС‚СЊ РѕС‚РЅРѕС€РµРЅРёРµ Р±РµСЃС‡РёСЃР»РµРЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РґРµРјРѕРЅРѕРІ, Рё Р»СЋР±РѕР№ РёР· РЅРёС… РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСЂРёС‡Р°СЃС‚РµРЅ.
 };
 
 FUNC VOID DIA_Karras_KAP3_Perm_Corpse()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Corpse_15_00"); //Ты хочешь, чтобы я принес тебе труп, что ли?
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_01"); //Нет! Ты с ума сошел?! Опасность, представляемая нахождением демонической сущности в стенах монастыря, слишком велика.
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_02"); //Будет достаточно, если ты найдешь какие-нибудь предметы, типичные для этих созданий.
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_03"); //Остатки демонической ауры, прилипшие к ним, должны дать достаточно информации для изучения.
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Corpse_15_00"); //РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ С‚РµР±Рµ С‚СЂСѓРї, С‡С‚Рѕ Р»Рё?
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_01"); //РќРµС‚! РўС‹ СЃ СѓРјР° СЃРѕС€РµР»?! РћРїР°СЃРЅРѕСЃС‚СЊ, РїСЂРµРґСЃС‚Р°РІР»СЏРµРјР°СЏ РЅР°С…РѕР¶РґРµРЅРёРµРј РґРµРјРѕРЅРёС‡РµСЃРєРѕР№ СЃСѓС‰РЅРѕСЃС‚Рё РІ СЃС‚РµРЅР°С… РјРѕРЅР°СЃС‚С‹СЂСЏ, СЃР»РёС€РєРѕРј РІРµР»РёРєР°.
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_02"); //Р‘СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, РµСЃР»Рё С‚С‹ РЅР°Р№РґРµС€СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РїСЂРµРґРјРµС‚С‹, С‚РёРїРёС‡РЅС‹Рµ РґР»СЏ СЌС‚РёС… СЃРѕР·РґР°РЅРёР№.
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_03"); //РћСЃС‚Р°С‚РєРё РґРµРјРѕРЅРёС‡РµСЃРєРѕР№ Р°СѓСЂС‹, РїСЂРёР»РёРїС€РёРµ Рє РЅРёРј, РґРѕР»Р¶РЅС‹ РґР°С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРЅС„РѕСЂРјР°С†РёРё РґР»СЏ РёР·СѓС‡РµРЅРёСЏ.
 };
 
 FUNC VOID DIA_Karras_KAP3_Perm_Material()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Material_15_00"); //Что именно тебе нужно?
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Material_10_01"); //Откуда я знаю? Любой предмет, который принадлежит только этим созданиям.
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Material_15_00"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Material_10_01"); //РћС‚РєСѓРґР° СЏ Р·РЅР°СЋ? Р›СЋР±РѕР№ РїСЂРµРґРјРµС‚, РєРѕС‚РѕСЂС‹Р№ РїСЂРёРЅР°РґР»РµР¶РёС‚ С‚РѕР»СЊРєРѕ СЌС‚РёРј СЃРѕР·РґР°РЅРёСЏРј.
 	
-	Info_AddChoice (DIA_Karras_KAP3_Perm,"Ты хочешь, чтобы я принес тебе труп?",DIA_Karras_KAP3_Perm_Corpse);
+	Info_AddChoice (DIA_Karras_KAP3_Perm,"РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ С‚РµР±Рµ С‚СЂСѓРї?",DIA_Karras_KAP3_Perm_Corpse);
 };
 
 FUNC VOID DIA_Karras_KAP3_Perm_WillSee()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_WillSee_15_00"); //Я попробую что-нибудь сделать.
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_WillSee_10_01"); //Это было бы очень полезным. А пока я займусь своими обычными исследованиями.
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_WillSee_15_00"); //РЇ РїРѕРїСЂРѕР±СѓСЋ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°С‚СЊ.
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_WillSee_10_01"); //Р­С‚Рѕ Р±С‹Р»Рѕ Р±С‹ РѕС‡РµРЅСЊ РїРѕР»РµР·РЅС‹Рј. Рђ РїРѕРєР° СЏ Р·Р°Р№РјСѓСЃСЊ СЃРІРѕРёРјРё РѕР±С‹С‡РЅС‹РјРё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏРјРё.
 	Info_ClearChoices (DIA_Karras_KAP3_Perm);
 };
 
@@ -687,7 +687,7 @@ INSTANCE DIA_Karras_HaveBook   (C_INFO)
 	condition   = DIA_Karras_HaveBook_Condition;
 	information = DIA_Karras_HaveBook_Info;
 	permanent   = FALSE;
-	description = "Я принес Альманах Одержимых.";
+	description = "РЇ РїСЂРёРЅРµСЃ РђР»СЊРјР°РЅР°С… РћРґРµСЂР¶РёРјС‹С….";
 };
 FUNC INT DIA_Karras_HaveBook_Condition()
 {
@@ -701,20 +701,20 @@ FUNC INT DIA_Karras_HaveBook_Condition()
 var int KarrasGotResearchDMTBook_Day;
 FUNC VOID DIA_Karras_HaveBook_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_HaveBook_15_00"); //Я принес Альманах Одержимых. Может быть, он чем-нибудь тебе поможет.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_01"); //Покажи.
+	AI_Output (other,self ,"DIA_Karras_HaveBook_15_00"); //РЇ РїСЂРёРЅРµСЃ РђР»СЊРјР°РЅР°С… РћРґРµСЂР¶РёРјС‹С…. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ С‡РµРј-РЅРёР±СѓРґСЊ С‚РµР±Рµ РїРѕРјРѕР¶РµС‚.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_01"); //РџРѕРєР°Р¶Рё.
 	
 	Npc_RemoveInvItems	(other,	ITWR_DementorObsessionBook_MIS,	1);
     AI_PrintScreen (PRINT_ItemGegeben, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);	// "1 Gegenstand gegeben"	
 		
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_02"); //Да, это может подойти. Я должен изучить эту книгу.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_03"); //Но я уже уверен в одном.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_04"); //По моему мнению, Ищущие - это крайне извращенная жизненная форма, созданная Белиаром.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_05"); //Эти создания имеют частично демоническую и частично человеческую природу.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_06"); //Однако я пока не могу сказать, имеем ли мы дело с типичной спиритуальной одержимостью или с чистой физической мутацией.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_07"); //Заходи попозже. Тогда я определенно смогу сказать больше.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_02"); //Р”Р°, СЌС‚Рѕ РјРѕР¶РµС‚ РїРѕРґРѕР№С‚Рё. РЇ РґРѕР»Р¶РµРЅ РёР·СѓС‡РёС‚СЊ СЌС‚Сѓ РєРЅРёРіСѓ.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_03"); //РќРѕ СЏ СѓР¶Рµ СѓРІРµСЂРµРЅ РІ РѕРґРЅРѕРј.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_04"); //РџРѕ РјРѕРµРјСѓ РјРЅРµРЅРёСЋ, РС‰СѓС‰РёРµ - СЌС‚Рѕ РєСЂР°Р№РЅРµ РёР·РІСЂР°С‰РµРЅРЅР°СЏ Р¶РёР·РЅРµРЅРЅР°СЏ С„РѕСЂРјР°, СЃРѕР·РґР°РЅРЅР°СЏ Р‘РµР»РёР°СЂРѕРј.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_05"); //Р­С‚Рё СЃРѕР·РґР°РЅРёСЏ РёРјРµСЋС‚ С‡Р°СЃС‚РёС‡РЅРѕ РґРµРјРѕРЅРёС‡РµСЃРєСѓСЋ Рё С‡Р°СЃС‚РёС‡РЅРѕ С‡РµР»РѕРІРµС‡РµСЃРєСѓСЋ РїСЂРёСЂРѕРґСѓ.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_06"); //РћРґРЅР°РєРѕ СЏ РїРѕРєР° РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ, РёРјРµРµРј Р»Рё РјС‹ РґРµР»Рѕ СЃ С‚РёРїРёС‡РЅРѕР№ СЃРїРёСЂРёС‚СѓР°Р»СЊРЅРѕР№ РѕРґРµСЂР¶РёРјРѕСЃС‚СЊСЋ РёР»Рё СЃ С‡РёСЃС‚РѕР№ С„РёР·РёС‡РµСЃРєРѕР№ РјСѓС‚Р°С†РёРµР№.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_07"); //Р—Р°С…РѕРґРё РїРѕРїРѕР·Р¶Рµ. РўРѕРіРґР° СЏ РѕРїСЂРµРґРµР»РµРЅРЅРѕ СЃРјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ Р±РѕР»СЊС€Рµ.
 	MIS_KarrasResearchDMT = LOG_SUCCESS;
-	B_LogEntry (TOPIC_DEMENTOREN,"Каррас смог использовать Альманах одержимых для продолжения своих исследований. Я должен вернуться к нему позже."); 
+	B_LogEntry (TOPIC_DEMENTOREN,"РљР°СЂСЂР°СЃ СЃРјРѕРі РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РђР»СЊРјР°РЅР°С… РѕРґРµСЂР¶РёРјС‹С… РґР»СЏ РїСЂРѕРґРѕР»Р¶РµРЅРёСЏ СЃРІРѕРёС… РёСЃСЃР»РµРґРѕРІР°РЅРёР№. РЇ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє РЅРµРјСѓ РїРѕР·Р¶Рµ."); 
 	KarrasGotResearchDMTBook_Day = Wld_GetDay(); 
 	B_GivePlayerXP (XP_KarrasResearchDMT);
 };
@@ -731,7 +731,7 @@ INSTANCE DIA_Karras_ResearchDMTEnd   (C_INFO)
 	information = DIA_Karras_ResearchDMTEnd_Info;
 	permanent   = TRUE;
 
-	description = "Выяснил что-нибудь новое об Ищущих?";
+	description = "Р’С‹СЏСЃРЅРёР» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРѕРµ РѕР± РС‰СѓС‰РёС…?";
 };
 FUNC INT DIA_Karras_ResearchDMTEnd_Condition()
 {
@@ -745,33 +745,33 @@ FUNC INT DIA_Karras_ResearchDMTEnd_Condition()
 
 FUNC VOID DIA_Karras_ResearchDMTEnd_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_ResearchDMTEnd_15_00"); //Выяснил что-нибудь новое об Ищущих?
+	AI_Output (other,self ,"DIA_Karras_ResearchDMTEnd_15_00"); //Р’С‹СЏСЃРЅРёР» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРѕРµ РѕР± РС‰СѓС‰РёС…?
 
 	if (KarrasGotResearchDMTBook_Day <= (Wld_GetDay()-2))
 	{
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_01"); //Да. Теперь я знаю, кем или чем эти Ищущие являются в действительности.
-		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_02"); //Выкладывай!
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_03"); //Когда-то они были людьми, как ты или я. Они сделали трагическую ошибку, посвятив себя нечистой магии очень сильного архидемона.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_04"); //Под влиянием этого архидемона, а также очень сильных наркотиков, единственной целью их существования стало служение ему, и со временем от их былой сущности осталась лишь тень.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_05"); //Сегодня же, они не более чем орудие зла, не обладающее собственной волей, и они никогда не перестанут охотиться на последователей Инноса.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_06"); //Мы должны проявлять осторожность. Похоже, они боятся этих священных чертогов Инноса.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_07"); //Однако, если их сила продолжит расти, я не смогу поручиться, что мы будем здесь в безопасности.
-		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_08"); //Спасибо. Это все было очень поучительно.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_09"); //Правда? Мне кажется, что это поднимает только еще больше вопросов. Например, кем они были раньше, и какой архидемон сделал их тем, что они есть сейчас?
-		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_10"); //У меня есть догадка. Это все похоже на Братство Спящего. Я знаю этих парней.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_11"); //Надеюсь, ты понимаешь, с чем имеешь дело. Будь осторожен, брат.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_12"); //Да, конечно же! Вот твой альманах. Мне он больше не нужен.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_01"); //Р”Р°. РўРµРїРµСЂСЊ СЏ Р·РЅР°СЋ, РєРµРј РёР»Рё С‡РµРј СЌС‚Рё РС‰СѓС‰РёРµ СЏРІР»СЏСЋС‚СЃСЏ РІ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕСЃС‚Рё.
+		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_02"); //Р’С‹РєР»Р°РґС‹РІР°Р№!
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_03"); //РљРѕРіРґР°-С‚Рѕ РѕРЅРё Р±С‹Р»Рё Р»СЋРґСЊРјРё, РєР°Рє С‚С‹ РёР»Рё СЏ. РћРЅРё СЃРґРµР»Р°Р»Рё С‚СЂР°РіРёС‡РµСЃРєСѓСЋ РѕС€РёР±РєСѓ, РїРѕСЃРІСЏС‚РёРІ СЃРµР±СЏ РЅРµС‡РёСЃС‚РѕР№ РјР°РіРёРё РѕС‡РµРЅСЊ СЃРёР»СЊРЅРѕРіРѕ Р°СЂС…РёРґРµРјРѕРЅР°.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_04"); //РџРѕРґ РІР»РёСЏРЅРёРµРј СЌС‚РѕРіРѕ Р°СЂС…РёРґРµРјРѕРЅР°, Р° С‚Р°РєР¶Рµ РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹С… РЅР°СЂРєРѕС‚РёРєРѕРІ, РµРґРёРЅСЃС‚РІРµРЅРЅРѕР№ С†РµР»СЊСЋ РёС… СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ СЃС‚Р°Р»Рѕ СЃР»СѓР¶РµРЅРёРµ РµРјСѓ, Рё СЃРѕ РІСЂРµРјРµРЅРµРј РѕС‚ РёС… Р±С‹Р»РѕР№ СЃСѓС‰РЅРѕСЃС‚Рё РѕСЃС‚Р°Р»Р°СЃСЊ Р»РёС€СЊ С‚РµРЅСЊ.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_05"); //РЎРµРіРѕРґРЅСЏ Р¶Рµ, РѕРЅРё РЅРµ Р±РѕР»РµРµ С‡РµРј РѕСЂСѓРґРёРµ Р·Р»Р°, РЅРµ РѕР±Р»Р°РґР°СЋС‰РµРµ СЃРѕР±СЃС‚РІРµРЅРЅРѕР№ РІРѕР»РµР№, Рё РѕРЅРё РЅРёРєРѕРіРґР° РЅРµ РїРµСЂРµСЃС‚Р°РЅСѓС‚ РѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµР№ РРЅРЅРѕСЃР°.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_06"); //РњС‹ РґРѕР»Р¶РЅС‹ РїСЂРѕСЏРІР»СЏС‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРѕСЃС‚СЊ. РџРѕС…РѕР¶Рµ, РѕРЅРё Р±РѕСЏС‚СЃСЏ СЌС‚РёС… СЃРІСЏС‰РµРЅРЅС‹С… С‡РµСЂС‚РѕРіРѕРІ РРЅРЅРѕСЃР°.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_07"); //РћРґРЅР°РєРѕ, РµСЃР»Рё РёС… СЃРёР»Р° РїСЂРѕРґРѕР»Р¶РёС‚ СЂР°СЃС‚Рё, СЏ РЅРµ СЃРјРѕРіСѓ РїРѕСЂСѓС‡РёС‚СЊСЃСЏ, С‡С‚Рѕ РјС‹ Р±СѓРґРµРј Р·РґРµСЃСЊ РІ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.
+		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_08"); //РЎРїР°СЃРёР±Рѕ. Р­С‚Рѕ РІСЃРµ Р±С‹Р»Рѕ РѕС‡РµРЅСЊ РїРѕСѓС‡РёС‚РµР»СЊРЅРѕ.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_09"); //РџСЂР°РІРґР°? РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ СЌС‚Рѕ РїРѕРґРЅРёРјР°РµС‚ С‚РѕР»СЊРєРѕ РµС‰Рµ Р±РѕР»СЊС€Рµ РІРѕРїСЂРѕСЃРѕРІ. РќР°РїСЂРёРјРµСЂ, РєРµРј РѕРЅРё Р±С‹Р»Рё СЂР°РЅСЊС€Рµ, Рё РєР°РєРѕР№ Р°СЂС…РёРґРµРјРѕРЅ СЃРґРµР»Р°Р» РёС… С‚РµРј, С‡С‚Рѕ РѕРЅРё РµСЃС‚СЊ СЃРµР№С‡Р°СЃ?
+		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_10"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґРѕРіР°РґРєР°. Р­С‚Рѕ РІСЃРµ РїРѕС…РѕР¶Рµ РЅР° Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ. РЇ Р·РЅР°СЋ СЌС‚РёС… РїР°СЂРЅРµР№.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_11"); //РќР°РґРµСЋСЃСЊ, С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, СЃ С‡РµРј РёРјРµРµС€СЊ РґРµР»Рѕ. Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, Р±СЂР°С‚.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_12"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ Р¶Рµ! Р’РѕС‚ С‚РІРѕР№ Р°Р»СЊРјР°РЅР°С…. РњРЅРµ РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.
 
 		CreateInvItems	(other,	ITWR_DementorObsessionBook_MIS,	1);
 		AI_PrintScreen	(PRINT_ItemErhalten, -1, YPOS_ItemTaken, FONT_ScreenSmall, 2);	// "1 Gegenstand erhalten"
 
 		SC_KnowsMadPsi = TRUE;
-		B_LogEntry (TOPIC_DEMENTOREN,"Исследования Карраса завершились успехом. Похоже, есть связь между Ищущими и Братством Спящего."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"РСЃСЃР»РµРґРѕРІР°РЅРёСЏ РљР°СЂСЂР°СЃР° Р·Р°РІРµСЂС€РёР»РёСЃСЊ СѓСЃРїРµС…РѕРј. РџРѕС…РѕР¶Рµ, РµСЃС‚СЊ СЃРІСЏР·СЊ РјРµР¶РґСѓ РС‰СѓС‰РёРјРё Рё Р‘СЂР°С‚СЃС‚РІРѕРј РЎРїСЏС‰РµРіРѕ."); 
 		B_GivePlayerXP (XP_SC_KnowsMadPsi);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_13"); //Я работаю над этим. Заходи позже.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_13"); //РЇ СЂР°Р±РѕС‚Р°СЋ РЅР°Рґ СЌС‚РёРј. Р—Р°С…РѕРґРё РїРѕР·Р¶Рµ.
 	};
 };
 
@@ -787,7 +787,7 @@ INSTANCE DIA_Karras_Prot_BlackEye   (C_INFO)
 	information = DIA_Karras_Prot_BlackEye_Info;
 	permanent   = TRUE;
 
-	description = "Есть ли способ защититься от ментальных атак Ищущих?";
+	description = "Р•СЃС‚СЊ Р»Рё СЃРїРѕСЃРѕР± Р·Р°С‰РёС‚РёС‚СЊСЃСЏ РѕС‚ РјРµРЅС‚Р°Р»СЊРЅС‹С… Р°С‚Р°Рє РС‰СѓС‰РёС…?";
 };
 FUNC INT DIA_Karras_Prot_BlackEye_Condition()
 {
@@ -801,21 +801,21 @@ FUNC INT DIA_Karras_Prot_BlackEye_Condition()
 };
 FUNC VOID DIA_Karras_Prot_BlackEye_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_Prot_BlackEye_15_00"); //Есть ли способ защититься от ментальных атак Ищущих?
+	AI_Output (other,self ,"DIA_Karras_Prot_BlackEye_15_00"); //Р•СЃС‚СЊ Р»Рё СЃРїРѕСЃРѕР± Р·Р°С‰РёС‚РёС‚СЊСЃСЏ РѕС‚ РјРµРЅС‚Р°Р»СЊРЅС‹С… Р°С‚Р°Рє РС‰СѓС‰РёС…?
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_01"); //Конечно. Амулет, изготовленный из камня с благословенной земли, мог бы оказать защитное действие.
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_02"); //К сожалению, у меня не осталось таких камней.
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_03"); //Некоторые из алтарей, возведенных нами, сложены из таких камней.
-		AI_Output (other,self ,"DIA_Karras_Prot_BlackEye_15_04"); //Хорошо. Я попробую раздобыть такой камень.
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_05"); //Да, сделай это. Но даже не думай, чтобы повредить какой-нибудь алтарь, ты слышишь меня?
-		B_LogEntry (TOPIC_DEMENTOREN,"Каррас может дать мне некоторую защиту от ментальных атак Ищущих. Для этого ему нужен камень из благословенной земли. Некоторые алтари сделаны из таких камней."); 
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_01"); //РљРѕРЅРµС‡РЅРѕ. РђРјСѓР»РµС‚, РёР·РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РёР· РєР°РјРЅСЏ СЃ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРЅРѕР№ Р·РµРјР»Рё, РјРѕРі Р±С‹ РѕРєР°Р·Р°С‚СЊ Р·Р°С‰РёС‚РЅРѕРµ РґРµР№СЃС‚РІРёРµ.
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_02"); //Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, Сѓ РјРµРЅСЏ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ С‚Р°РєРёС… РєР°РјРЅРµР№.
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_03"); //РќРµРєРѕС‚РѕСЂС‹Рµ РёР· Р°Р»С‚Р°СЂРµР№, РІРѕР·РІРµРґРµРЅРЅС‹С… РЅР°РјРё, СЃР»РѕР¶РµРЅС‹ РёР· С‚Р°РєРёС… РєР°РјРЅРµР№.
+		AI_Output (other,self ,"DIA_Karras_Prot_BlackEye_15_04"); //РҐРѕСЂРѕС€Рѕ. РЇ РїРѕРїСЂРѕР±СѓСЋ СЂР°Р·РґРѕР±С‹С‚СЊ С‚Р°РєРѕР№ РєР°РјРµРЅСЊ.
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_05"); //Р”Р°, СЃРґРµР»Р°Р№ СЌС‚Рѕ. РќРѕ РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№, С‡С‚РѕР±С‹ РїРѕРІСЂРµРґРёС‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ Р°Р»С‚Р°СЂСЊ, С‚С‹ СЃР»С‹С€РёС€СЊ РјРµРЅСЏ?
+		B_LogEntry (TOPIC_DEMENTOREN,"РљР°СЂСЂР°СЃ РјРѕР¶РµС‚ РґР°С‚СЊ РјРЅРµ РЅРµРєРѕС‚РѕСЂСѓСЋ Р·Р°С‰РёС‚Сѓ РѕС‚ РјРµРЅС‚Р°Р»СЊРЅС‹С… Р°С‚Р°Рє РС‰СѓС‰РёС…. Р”Р»СЏ СЌС‚РѕРіРѕ РµРјСѓ РЅСѓР¶РµРЅ РєР°РјРµРЅСЊ РёР· Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРЅРѕР№ Р·РµРјР»Рё. РќРµРєРѕС‚РѕСЂС‹Рµ Р°Р»С‚Р°СЂРё СЃРґРµР»Р°РЅС‹ РёР· С‚Р°РєРёС… РєР°РјРЅРµР№."); 
 		MIS_Karras_FindBlessedStone = LOG_RUNNING;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_06"); //Понятия не имею. Я пока знаю слишком мало, чтобы дать ответ на твой вопрос. Задай мне его еще раз попозже.
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_06"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РЇ РїРѕРєР° Р·РЅР°СЋ СЃР»РёС€РєРѕРј РјР°Р»Рѕ, С‡С‚РѕР±С‹ РґР°С‚СЊ РѕС‚РІРµС‚ РЅР° С‚РІРѕР№ РІРѕРїСЂРѕСЃ. Р—Р°РґР°Р№ РјРЅРµ РµРіРѕ РµС‰Рµ СЂР°Р· РїРѕРїРѕР·Р¶Рµ.
 	};
 };
 
@@ -830,7 +830,7 @@ INSTANCE DIA_Karras_KarrasBlessedStone   (C_INFO)
 	condition   = DIA_Karras_KarrasBlessedStone_Condition;
 	information = DIA_Karras_KarrasBlessedStone_Info;
 
-	description = "Я принес несколько камней с благословенной земли.";
+	description = "РЇ РїСЂРёРЅРµСЃ РЅРµСЃРєРѕР»СЊРєРѕ РєР°РјРЅРµР№ СЃ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРЅРѕР№ Р·РµРјР»Рё.";
 };
 FUNC INT DIA_Karras_KarrasBlessedStone_Condition()
 {
@@ -844,14 +844,14 @@ FUNC INT DIA_Karras_KarrasBlessedStone_Condition()
 var int KarrasMakesBlessedStone_Day;
 FUNC VOID DIA_Karras_KarrasBlessedStone_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_KarrasBlessedStone_15_00"); //Я принес несколько камней с благословенной земли.
+	AI_Output (other,self ,"DIA_Karras_KarrasBlessedStone_15_00"); //РЇ РїСЂРёРЅРµСЃ РЅРµСЃРєРѕР»СЊРєРѕ РєР°РјРЅРµР№ СЃ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРЅРѕР№ Р·РµРјР»Рё.
 	B_GiveInvItems (other, self, ItMi_KarrasBlessedStone_Mis,1);
-	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_01"); //Это хорошо. Надеюсь, все алтари по-прежнему стоят на своих местах.
-	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_02"); //Хорошо. Я сделаю для тебя амулет, защищающий от черного взгляда Ищущих.
-	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_03"); //Дай мне немного времени. Над этим нужно поработать.
+	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_01"); //Р­С‚Рѕ С…РѕСЂРѕС€Рѕ. РќР°РґРµСЋСЃСЊ, РІСЃРµ Р°Р»С‚Р°СЂРё РїРѕ-РїСЂРµР¶РЅРµРјСѓ СЃС‚РѕСЏС‚ РЅР° СЃРІРѕРёС… РјРµСЃС‚Р°С….
+	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_02"); //РҐРѕСЂРѕС€Рѕ. РЇ СЃРґРµР»Р°СЋ РґР»СЏ С‚РµР±СЏ Р°РјСѓР»РµС‚, Р·Р°С‰РёС‰Р°СЋС‰РёР№ РѕС‚ С‡РµСЂРЅРѕРіРѕ РІР·РіР»СЏРґР° РС‰СѓС‰РёС….
+	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_03"); //Р”Р°Р№ РјРЅРµ РЅРµРјРЅРѕРіРѕ РІСЂРµРјРµРЅРё. РќР°Рґ СЌС‚РёРј РЅСѓР¶РЅРѕ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ.
 	KarrasMakesBlessedStone_Day = Wld_GetDay(); 
 	MIS_Karras_FindBlessedStone	= LOG_SUCCESS;
-	B_LogEntry (TOPIC_DEMENTOREN,"Каррас даст мне амулет, который будет защищать меня от ментальных атак Ищущих. Это должно сильно облегчить мне жизнь."); 
+	B_LogEntry (TOPIC_DEMENTOREN,"РљР°СЂСЂР°СЃ РґР°СЃС‚ РјРЅРµ Р°РјСѓР»РµС‚, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ Р·Р°С‰РёС‰Р°С‚СЊ РјРµРЅСЏ РѕС‚ РјРµРЅС‚Р°Р»СЊРЅС‹С… Р°С‚Р°Рє РС‰СѓС‰РёС…. Р­С‚Рѕ РґРѕР»Р¶РЅРѕ СЃРёР»СЊРЅРѕ РѕР±Р»РµРіС‡РёС‚СЊ РјРЅРµ Р¶РёР·РЅСЊ."); 
 	B_GivePlayerXP (XP_Karras_FoundBlessedStone);
 	AI_StopProcessInfos (self);
 };
@@ -868,7 +868,7 @@ INSTANCE DIA_Karras_ItAm_Prot_BlackEye_Mis   (C_INFO)
 	information = DIA_Karras_ItAm_Prot_BlackEye_Mis_Info;
 	permanent	 = 	TRUE;
 
-	description = "Так как насчет защитного амулета, что ты обещал мне?";
+	description = "РўР°Рє РєР°Рє РЅР°СЃС‡РµС‚ Р·Р°С‰РёС‚РЅРѕРіРѕ Р°РјСѓР»РµС‚Р°, С‡С‚Рѕ С‚С‹ РѕР±РµС‰Р°Р» РјРЅРµ?";
 };
 var int DIA_Karras_ItAm_Prot_BlackEye_Mis_NoPerm;
 FUNC INT DIA_Karras_ItAm_Prot_BlackEye_Mis_Condition()
@@ -883,22 +883,22 @@ FUNC INT DIA_Karras_ItAm_Prot_BlackEye_Mis_Condition()
 
 FUNC VOID DIA_Karras_ItAm_Prot_BlackEye_Mis_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_ItAm_Prot_BlackEye_Mis_15_00"); //Так как насчет защитного амулета, что ты обещал мне?
+	AI_Output (other,self ,"DIA_Karras_ItAm_Prot_BlackEye_Mis_15_00"); //РўР°Рє РєР°Рє РЅР°СЃС‡РµС‚ Р·Р°С‰РёС‚РЅРѕРіРѕ Р°РјСѓР»РµС‚Р°, С‡С‚Рѕ С‚С‹ РѕР±РµС‰Р°Р» РјРЅРµ?
 	
 	if (KarrasMakesBlessedStone_Day<=(Wld_GetDay()-2))
 	{
-		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_01"); //Я закончил. Вот, взгляни. Он получился очень изящным.
+		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_01"); //РЇ Р·Р°РєРѕРЅС‡РёР». Р’РѕС‚, РІР·РіР»СЏРЅРё. РћРЅ РїРѕР»СѓС‡РёР»СЃСЏ РѕС‡РµРЅСЊ РёР·СЏС‰РЅС‹Рј.
 		CreateInvItems (self, ItAm_Prot_BlackEye_Mis, 1);									
 		B_GiveInvItems (self, other, ItAm_Prot_BlackEye_Mis, 1);					
-		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_02"); //Носи его, не снимая, и Ищущие не смогут затянуть тебя в свою ментальную пропасть.
-		AI_Output (other,self ,"DIA_Karras_ItAm_Prot_BlackEye_Mis_15_03"); //Спасибо.
-		B_LogEntry (TOPIC_DEMENTOREN,"Каррас дал мне амулет, который будет защищать меня от черного взгляда Ищущих."); 
+		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_02"); //РќРѕСЃРё РµРіРѕ, РЅРµ СЃРЅРёРјР°СЏ, Рё РС‰СѓС‰РёРµ РЅРµ СЃРјРѕРіСѓС‚ Р·Р°С‚СЏРЅСѓС‚СЊ С‚РµР±СЏ РІ СЃРІРѕСЋ РјРµРЅС‚Р°Р»СЊРЅСѓСЋ РїСЂРѕРїР°СЃС‚СЊ.
+		AI_Output (other,self ,"DIA_Karras_ItAm_Prot_BlackEye_Mis_15_03"); //РЎРїР°СЃРёР±Рѕ.
+		B_LogEntry (TOPIC_DEMENTOREN,"РљР°СЂСЂР°СЃ РґР°Р» РјРЅРµ Р°РјСѓР»РµС‚, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ Р·Р°С‰РёС‰Р°С‚СЊ РјРµРЅСЏ РѕС‚ С‡РµСЂРЅРѕРіРѕ РІР·РіР»СЏРґР° РС‰СѓС‰РёС…."); 
 		DIA_Karras_ItAm_Prot_BlackEye_Mis_NoPerm = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_04"); //Спокойствие. Я все еще работаю над ним.
+		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_04"); //РЎРїРѕРєРѕР№СЃС‚РІРёРµ. РЇ РІСЃРµ РµС‰Рµ СЂР°Р±РѕС‚Р°СЋ РЅР°Рґ РЅРёРј.
 	};
 };
 

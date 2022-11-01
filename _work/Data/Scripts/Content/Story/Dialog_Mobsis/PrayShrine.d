@@ -54,7 +54,7 @@ INSTANCE PC_PrayShrine_HEALSHRINE (C_Info)
 	condition		= PC_PrayShrine_HEALSHRINE_Condition;
 	information		= PC_PrayShrine_HEALSHRINE_Info;
 	permanent		= TRUE;
-	description		= "Очистить алтарь"; 
+	description		= "РћС‡РёСЃС‚РёС‚СЊ Р°Р»С‚Р°СЂСЊ"; 
 };
 
 FUNC INT PC_PrayShrine_HEALSHRINE_Condition ()
@@ -144,7 +144,7 @@ FUNC VOID PC_PrayShrine_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 }; 
 //*******************************************************
-//Fьr das Heil der Paladine beten
+//FСЊr das Heil der Paladine beten
 //*******************************************************
 INSTANCE PC_PrayShrine_Paladine (C_Info)
 {
@@ -153,7 +153,7 @@ INSTANCE PC_PrayShrine_Paladine (C_Info)
 	condition		= PC_PrayShrine_Paladine_Condition;
 	information		= PC_PrayShrine_Paladine_Info;
 	permanent		= FALSE;
-	description		= "Помолиться за паладинов."; 
+	description		= "РџРѕРјРѕР»РёС‚СЊСЃСЏ Р·Р° РїР°Р»Р°РґРёРЅРѕРІ."; 
 };
 
 FUNC INT PC_PrayShrine_Paladine_Condition ()
@@ -183,7 +183,7 @@ INSTANCE PC_PrayShrine_Pray (C_Info)
 	condition		= PC_PrayShrine_Pray_Condition;
 	information		= PC_PrayShrine_Pray_Info;
 	permanent		= TRUE;
-	description		= "Помолиться"; 
+	description		= "РџРѕРјРѕР»РёС‚СЊСЃСЏ"; 
 };
 
 FUNC INT PC_PrayShrine_Pray_Condition ()
@@ -206,19 +206,19 @@ FUNC VOID PC_PrayShrine_Pray_Info()
 		{		
 			Info_ClearChoices (PC_PrayShrine_Pray);
 			Info_AddChoice (PC_PrayShrine_Pray,Dialog_Back,PC_PrayShrine_Pray_Back);
-			Info_AddChoice (PC_PrayShrine_Pray,"Я хочу помолиться и пожертвовать 0 золотых монет.",PC_PrayShrine_Pray_NoPay);
+			Info_AddChoice (PC_PrayShrine_Pray,"РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 0 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.",PC_PrayShrine_Pray_NoPay);
 			
 			if (Npc_HasItems (hero,ItMi_Gold) >=10)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Я хочу помолиться и пожертвовать 10 золотых монет.",PC_PrayShrine_Pray_SmallPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.",PC_PrayShrine_Pray_SmallPay);
 			};
 			if (Npc_HasItems (hero,ItMi_Gold) >=50)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Я хочу помолиться и пожертвовать 50 золотых монет.",PC_PrayShrine_Pray_MediumPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.",PC_PrayShrine_Pray_MediumPay);
 			};
 			if (Npc_HasItems (hero,ItMi_Gold) >=100)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Я хочу помолиться и пожертвовать 100 золотых монет.",PC_PrayShrine_Pray_BigPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.",PC_PrayShrine_Pray_BigPay);
 			};
 		};
 }; 

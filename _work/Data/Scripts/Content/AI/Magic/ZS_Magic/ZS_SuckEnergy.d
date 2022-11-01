@@ -28,10 +28,10 @@ func void B_StopSuckEnergy()
 	}
 	else
 	{
-		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-Attitüde hostile ist 
+		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-AttitÑŒde hostile ist 
 	};
 	
-	// nach Aufruf dieses Befehles wird die Loop über return LOOP_END beendet
+	// nach Aufruf dieses Befehles wird die Loop ÑŒber return LOOP_END beendet
 };
 
 // **************

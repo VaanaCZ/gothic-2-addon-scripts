@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Finn_Hacker   (C_INFO)
 	condition   = DIA_Addon_Finn_Hacker_Condition;
 	information = DIA_Addon_Finn_Hacker_Info;
 	permanent   = TRUE;
-	description = "Снова за работой?"; 
+	description = "РЎРЅРѕРІР° Р·Р° СЂР°Р±РѕС‚РѕР№?"; 
 };
 FUNC INT DIA_Addon_Finn_Hacker_Condition()
 {	
@@ -76,8 +76,8 @@ FUNC INT DIA_Addon_Finn_Hacker_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Hacker_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hacker_15_00"); //Снова за работой?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hacker_07_01"); //Да, я хочу выбрать из этой шахты все золото до последнего кусочка.
+	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hacker_15_00"); //РЎРЅРѕРІР° Р·Р° СЂР°Р±РѕС‚РѕР№?
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hacker_07_01"); //Р”Р°, СЏ С…РѕС‡Сѓ РІС‹Р±СЂР°С‚СЊ РёР· СЌС‚РѕР№ С€Р°С…С‚С‹ РІСЃРµ Р·РѕР»РѕС‚Рѕ РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ РєСѓСЃРѕС‡РєР°.
 };
 //----------------------------------------------------------------------
 //	Info Hacke
@@ -100,8 +100,8 @@ FUNC INT DIA_Addon_Finn_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hi_15_00"); //Привет!
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hi_07_01"); //(сердито) Что тебе нужно?
+	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hi_15_00"); //РџСЂРёРІРµС‚!
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hi_07_01"); //(СЃРµСЂРґРёС‚Рѕ) Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 
 //----------------------------------------------------------------------
@@ -114,7 +114,7 @@ INSTANCE DIA_Addon_Finn_Hacke   (C_INFO)
 	condition   = DIA_Addon_Finn_Hacke_Condition;
 	information = DIA_Addon_Finn_Hacke_Info;
 	permanent   = FALSE;
-	description = "Где я могу взять кирку?";
+	description = "Р“РґРµ СЏ РјРѕРіСѓ РІР·СЏС‚СЊ РєРёСЂРєСѓ?";
 };
 FUNC INT DIA_Addon_Finn_Hacke_Condition()
 {	
@@ -122,10 +122,10 @@ FUNC INT DIA_Addon_Finn_Hacke_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Hacke_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_Hacke_15_00"); //Где я могу взять кирку?
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_01"); //Спроси у кузнеца Хуно. Но наличие кирки еще не даст тебе права войти в шахту.
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_02"); //Если ты хочешь войти, тебе нужно поговорить с Эстебаном.
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_03"); //А с Торусом можешь даже не пытаться говорить - он впустит тебя, только если у тебя будет красный камень.
+	AI_Output (other, self, "DIA_Addon_Finn_Hacke_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РІР·СЏС‚СЊ РєРёСЂРєСѓ?
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_01"); //РЎРїСЂРѕСЃРё Сѓ РєСѓР·РЅРµС†Р° РҐСѓРЅРѕ. РќРѕ РЅР°Р»РёС‡РёРµ РєРёСЂРєРё РµС‰Рµ РЅРµ РґР°СЃС‚ С‚РµР±Рµ РїСЂР°РІР° РІРѕР№С‚Рё РІ С€Р°С…С‚Сѓ.
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РІРѕР№С‚Рё, С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р­СЃС‚РµР±Р°РЅРѕРј.
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_03"); //Рђ СЃ РўРѕСЂСѓСЃРѕРј РјРѕР¶РµС€СЊ РґР°Р¶Рµ РЅРµ РїС‹С‚Р°С‚СЊСЃСЏ РіРѕРІРѕСЂРёС‚СЊ - РѕРЅ РІРїСѓСЃС‚РёС‚ С‚РµР±СЏ, С‚РѕР»СЊРєРѕ РµСЃР»Рё Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ.
 };
 
 //----------------------------------------------------------------------
@@ -138,7 +138,7 @@ INSTANCE DIA_Addon_Finn_Esteban   (C_INFO)
 	condition   = DIA_Addon_Finn_Esteban_Condition;
 	information = DIA_Addon_Finn_Esteban_Info;
 	permanent   = FALSE;
-	description = "Скажи мне, что ты думаешь об Эстебане?";
+	description = "РЎРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ РѕР± Р­СЃС‚РµР±Р°РЅРµ?";
 };
 FUNC INT DIA_Addon_Finn_Esteban_Condition()
 {	
@@ -149,9 +149,9 @@ FUNC INT DIA_Addon_Finn_Esteban_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Esteban_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_Esteban_15_00"); //Скажи мне, что ты думаешь об Эстебане?
-	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_01"); //(осторожно) Он здесь босс... он... по-моему, он свой парень.
-	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_02"); //(нерешительно) Он всегда отправляет в шахту правильных ребят. Тех, кто знает свое дело, я имею в виду.
+	AI_Output (other, self, "DIA_Addon_Finn_Esteban_15_00"); //РЎРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ РѕР± Р­СЃС‚РµР±Р°РЅРµ?
+	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_01"); //(РѕСЃС‚РѕСЂРѕР¶РЅРѕ) РћРЅ Р·РґРµСЃСЊ Р±РѕСЃСЃ... РѕРЅ... РїРѕ-РјРѕРµРјСѓ, РѕРЅ СЃРІРѕР№ РїР°СЂРµРЅСЊ.
+	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_02"); //(РЅРµСЂРµС€РёС‚РµР»СЊРЅРѕ) РћРЅ РІСЃРµРіРґР° РѕС‚РїСЂР°РІР»СЏРµС‚ РІ С€Р°С…С‚Сѓ РїСЂР°РІРёР»СЊРЅС‹С… СЂРµР±СЏС‚. РўРµС…, РєС‚Рѕ Р·РЅР°РµС‚ СЃРІРѕРµ РґРµР»Рѕ, СЏ РёРјРµСЋ РІ РІРёРґСѓ.
 };
 
 //----------------------------------------------------------------------
@@ -164,7 +164,7 @@ INSTANCE DIA_Addon_Finn_Profi (C_INFO)
 	condition   = DIA_Addon_Finn_Profi_Condition;
 	information = DIA_Addon_Finn_Profi_Info;
 	permanent   = FALSE;
-	description = "А ты знаешь это дело?";
+	description = "Рђ С‚С‹ Р·РЅР°РµС€СЊ СЌС‚Рѕ РґРµР»Рѕ?";
 };
 FUNC INT DIA_Addon_Finn_Profi_Condition()
 {	
@@ -175,8 +175,8 @@ FUNC INT DIA_Addon_Finn_Profi_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Profi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_Profi_15_00"); //А ты знаешь это дело?
-	AI_Output (self, other, "DIA_Addon_Finn_Profi_07_01"); //Я в нем лучший!
+	AI_Output (other, self, "DIA_Addon_Finn_Profi_15_00"); //Рђ С‚С‹ Р·РЅР°РµС€СЊ СЌС‚Рѕ РґРµР»Рѕ?
+	AI_Output (self, other, "DIA_Addon_Finn_Profi_07_01"); //РЇ РІ РЅРµРј Р»СѓС‡С€РёР№!
 };
 
 //----------------------------------------------------------------------
@@ -204,12 +204,12 @@ FUNC VOID DIA_Addon_Finn_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_00"); //Конечно, босс. Ты хочешь, чтобы в шахте работали лучшие люди? Тогда я вернусь к делу...
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_00"); //РљРѕРЅРµС‡РЅРѕ, Р±РѕСЃСЃ. РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ РІ С€Р°С…С‚Рµ СЂР°Р±РѕС‚Р°Р»Рё Р»СѓС‡С€РёРµ Р»СЋРґРё? РўРѕРіРґР° СЏ РІРµСЂРЅСѓСЃСЊ Рє РґРµР»Сѓ...
 	
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_01");//Да, и кое-что еще. Это один секрет рудокопов.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_02");//От века и поныне хорошая идея - рубить посильнее.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_03");//Если ты копнешь пару раз без видимого результата, попробуй провести концом кирки вдоль камня.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_04");//Если тебе повезет, таким образом ты получишь несколько кусков за раз.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_01");//Р”Р°, Рё РєРѕРµ-С‡С‚Рѕ РµС‰Рµ. Р­С‚Рѕ РѕРґРёРЅ СЃРµРєСЂРµС‚ СЂСѓРґРѕРєРѕРїРѕРІ.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_02");//РћС‚ РІРµРєР° Рё РїРѕРЅС‹РЅРµ С…РѕСЂРѕС€Р°СЏ РёРґРµСЏ - СЂСѓР±РёС‚СЊ РїРѕСЃРёР»СЊРЅРµРµ.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_03");//Р•СЃР»Рё С‚С‹ РєРѕРїРЅРµС€СЊ РїР°СЂСѓ СЂР°Р· Р±РµР· РІРёРґРёРјРѕРіРѕ СЂРµР·СѓР»СЊС‚Р°С‚Р°, РїРѕРїСЂРѕР±СѓР№ РїСЂРѕРІРµСЃС‚Рё РєРѕРЅС†РѕРј РєРёСЂРєРё РІРґРѕР»СЊ РєР°РјРЅСЏ.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_04");//Р•СЃР»Рё С‚РµР±Рµ РїРѕРІРµР·РµС‚, С‚Р°РєРёРј РѕР±СЂР°Р·РѕРј С‚С‹ РїРѕР»СѓС‡РёС€СЊ РЅРµСЃРєРѕР»СЊРєРѕ РєСѓСЃРєРѕРІ Р·Р° СЂР°Р·.
 	
 	B_Upgrade_hero_HackChance(10);
 	Knows_Truemmerschlag = TRUE;
@@ -242,15 +242,15 @@ FUNC INT DIA_Addon_Finn_Gold_Condition()
 FUNC VOID DIA_Addon_Finn_Gold_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_00");//Ну и еще одно, что следует знать. Золото - это не руда. Есть большая разница.
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_01");//Я имею в виду, что ни одна женщина не будет носить на шее ожерелье из кусков руды. (смеется)
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_02");//Когда будешь копать, иди сверху вниз. Так самородки будет проще вынуть.
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_03");//Есть и рудокопы, которые делают все наоборот - но это много сложнее.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_00");//РќСѓ Рё РµС‰Рµ РѕРґРЅРѕ, С‡С‚Рѕ СЃР»РµРґСѓРµС‚ Р·РЅР°С‚СЊ. Р—РѕР»РѕС‚Рѕ - СЌС‚Рѕ РЅРµ СЂСѓРґР°. Р•СЃС‚СЊ Р±РѕР»СЊС€Р°СЏ СЂР°Р·РЅРёС†Р°.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_01");//РЇ РёРјРµСЋ РІ РІРёРґСѓ, С‡С‚Рѕ РЅРё РѕРґРЅР° Р¶РµРЅС‰РёРЅР° РЅРµ Р±СѓРґРµС‚ РЅРѕСЃРёС‚СЊ РЅР° С€РµРµ РѕР¶РµСЂРµР»СЊРµ РёР· РєСѓСЃРєРѕРІ СЂСѓРґС‹. (СЃРјРµРµС‚СЃСЏ)
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_02");//РљРѕРіРґР° Р±СѓРґРµС€СЊ РєРѕРїР°С‚СЊ, РёРґРё СЃРІРµСЂС…Сѓ РІРЅРёР·. РўР°Рє СЃР°РјРѕСЂРѕРґРєРё Р±СѓРґРµС‚ РїСЂРѕС‰Рµ РІС‹РЅСѓС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_03");//Р•СЃС‚СЊ Рё СЂСѓРґРѕРєРѕРїС‹, РєРѕС‚РѕСЂС‹Рµ РґРµР»Р°СЋС‚ РІСЃРµ РЅР°РѕР±РѕСЂРѕС‚ - РЅРѕ СЌС‚Рѕ РјРЅРѕРіРѕ СЃР»РѕР¶РЅРµРµ.
 
 	B_Upgrade_hero_HackChance(10);
 };
 //---------------------------------------------------------------------
-//	Info einschдtzen
+//	Info einschРґtzen
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 {
@@ -259,7 +259,7 @@ INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 	condition   = DIA_Addon_Finn_ein_Condition;
 	information = DIA_Addon_Finn_ein_Info;
 	permanent   = TRUE;
-	description = "Можешь ты оценить мои умения рудокопа?";
+	description = "РњРѕР¶РµС€СЊ С‚С‹ РѕС†РµРЅРёС‚СЊ РјРѕРё СѓРјРµРЅРёСЏ СЂСѓРґРѕРєРѕРїР°?";
 };
 FUNC INT DIA_Addon_Finn_ein_Condition()
 {	
@@ -272,46 +272,46 @@ var int Finn_einmal;
 var int Finn_Gratulation;
 FUNC VOID DIA_Addon_Finn_ein_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_ein_15_00");//Можешь ты оценить мои умения рудокопа?
+	AI_Output (other, self, "DIA_Addon_Finn_ein_15_00");//РњРѕР¶РµС€СЊ С‚С‹ РѕС†РµРЅРёС‚СЊ РјРѕРё СѓРјРµРЅРёСЏ СЂСѓРґРѕРєРѕРїР°?
 	
 	if (Finn_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_01");//Конечно. Я занимаюсь этим больше 35 лет. Нет ничего, чтобы я не мог оценить!
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_01");//РљРѕРЅРµС‡РЅРѕ. РЇ Р·Р°РЅРёРјР°СЋСЃСЊ СЌС‚РёРј Р±РѕР»СЊС€Рµ 35 Р»РµС‚. РќРµС‚ РЅРёС‡РµРіРѕ, С‡С‚РѕР±С‹ СЏ РЅРµ РјРѕРі РѕС†РµРЅРёС‚СЊ!
 		Finn_einmal = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_Finn_ein_07_02");//Что касается тебя, то ты...
+	AI_Output (self, other, "DIA_Addon_Finn_ein_07_02");//Р§С‚Рѕ РєР°СЃР°РµС‚СЃСЏ С‚РµР±СЏ, С‚Рѕ С‚С‹...
 
 	if (Hero_HackChance < 20)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_03"); //совершенный новичок.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_03"); //СЃРѕРІРµСЂС€РµРЅРЅС‹Р№ РЅРѕРІРёС‡РѕРє.
 	}
 	else if (Hero_HackChance < 40)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_04"); //вполне сносный работник.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_04"); //РІРїРѕР»РЅРµ СЃРЅРѕСЃРЅС‹Р№ СЂР°Р±РѕС‚РЅРёРє.
 	}
 	else if (Hero_HackChance < 55)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_05"); //опытный золотоискатель.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_05"); //РѕРїС‹С‚РЅС‹Р№ Р·РѕР»РѕС‚РѕРёСЃРєР°С‚РµР»СЊ.
 	}
 	else if (Hero_HackChance < 75)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_06"); //настоящий рудокоп.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_06"); //РЅР°СЃС‚РѕСЏС‰РёР№ СЂСѓРґРѕРєРѕРї.
 	}
 	else if (Hero_HackChance < 90)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_07"); //чертовски хороший рудокоп.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_07"); //С‡РµСЂС‚РѕРІСЃРєРё С…РѕСЂРѕС€РёР№ СЂСѓРґРѕРєРѕРї.
 	}
 	else if (Hero_HackChance < 98)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_08"); //великий рудокоп.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_08"); //РІРµР»РёРєРёР№ СЂСѓРґРѕРєРѕРї.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_09"); //гуру среди рудокопов.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_09"); //РіСѓСЂСѓ СЃСЂРµРґРё СЂСѓРґРѕРєРѕРїРѕРІ.
 		
 		if (Finn_Gratulation == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Finn_ein_07_10");//Теперь ты так же хорош, как я. Поздравляю, партнер.
+			AI_Output (self, other, "DIA_Addon_Finn_ein_07_10");//РўРµРїРµСЂСЊ С‚С‹ С‚Р°Рє Р¶Рµ С…РѕСЂРѕС€, РєР°Рє СЏ. РџРѕР·РґСЂР°РІР»СЏСЋ, РїР°СЂС‚РЅРµСЂ.
 			B_GivePlayerXP (XP_Ambient*2);
 			Snd_Play ("LevelUP");
 			Finn_Gratulation = TRUE;
@@ -336,7 +336,7 @@ INSTANCE DIA_Addon_Finn_Attentat   (C_INFO)
 	condition   = DIA_Addon_Finn_Attentat_Condition;
 	information = DIA_Addon_Finn_Attentat_Info;
 	permanent   = FALSE;
-	description	= "Насчет попытки покушения на Эстебана...";
+	description	= "РќР°СЃС‡РµС‚ РїРѕРїС‹С‚РєРё РїРѕРєСѓС€РµРЅРёСЏ РЅР° Р­СЃС‚РµР±Р°РЅР°...";
 };
 FUNC INT DIA_Addon_Finn_Attentat_Condition()
 {	
@@ -348,31 +348,31 @@ FUNC INT DIA_Addon_Finn_Attentat_Condition()
 FUNC VOID DIA_Addon_Finn_Attentat_Info()
 {
 	B_Say (other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); //Wegen des Attentats auf Esteban
-	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_00"); //(осторожно) Да?
-	AI_Output (other, self, "DIA_Addon_Finn_Attentat_15_01"); //У тебя есть идеи, кто стоит за всем этим?
-	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_02"); //А зачем тебе это?
+	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_00"); //(РѕСЃС‚РѕСЂРѕР¶РЅРѕ) Р”Р°?
+	AI_Output (other, self, "DIA_Addon_Finn_Attentat_15_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РёРґРµРё, РєС‚Рѕ СЃС‚РѕРёС‚ Р·Р° РІСЃРµРј СЌС‚РёРј?
+	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_02"); //Рђ Р·Р°С‡РµРј С‚РµР±Рµ СЌС‚Рѕ?
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Я хочу поговорить с ним...",DIA_Addon_Finn_Attentat_WannaTalk);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Эстебан больше не хочет видеть его среди живых!",DIA_Addon_Finn_Attentat_ForTheBoss);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"РЇ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј...",DIA_Addon_Finn_Attentat_WannaTalk);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Р­СЃС‚РµР±Р°РЅ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡РµС‚ РІРёРґРµС‚СЊ РµРіРѕ СЃСЂРµРґРё Р¶РёРІС‹С…!",DIA_Addon_Finn_Attentat_ForTheBoss);
 };
 	
 func void B_Addon_Finn_TellAll()
 {
-	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_00"); //(повествуя) Когда произошло нападение, я собирался забрать свою кирку от кузнеца Хуно.
-	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_01"); //Но его на месте не было.
-	AI_Output (other, self, "DIA_Addon_Finn_TellAll_15_02"); //И?
-	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_03"); //А обычно он ВСЕГДА на месте. ОЧЕНЬ подозрительно - вот что я думаю.
+	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_00"); //(РїРѕРІРµСЃС‚РІСѓСЏ) РљРѕРіРґР° РїСЂРѕРёР·РѕС€Р»Рѕ РЅР°РїР°РґРµРЅРёРµ, СЏ СЃРѕР±РёСЂР°Р»СЃСЏ Р·Р°Р±СЂР°С‚СЊ СЃРІРѕСЋ РєРёСЂРєСѓ РѕС‚ РєСѓР·РЅРµС†Р° РҐСѓРЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_01"); //РќРѕ РµРіРѕ РЅР° РјРµСЃС‚Рµ РЅРµ Р±С‹Р»Рѕ.
+	AI_Output (other, self, "DIA_Addon_Finn_TellAll_15_02"); //Р?
+	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_03"); //Рђ РѕР±С‹С‡РЅРѕ РѕРЅ Р’РЎР•Р“Р”Рђ РЅР° РјРµСЃС‚Рµ. РћР§Р•РќР¬ РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ - РІРѕС‚ С‡С‚Рѕ СЏ РґСѓРјР°СЋ.
 	
 	Finn_TellAll = TRUE;
-	B_LogEntry (Topic_Addon_Esteban, "Финн сказал, что Хуно не присутствовал при атаке.");
+	B_LogEntry (Topic_Addon_Esteban, "Р¤РёРЅРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РҐСѓРЅРѕ РЅРµ РїСЂРёСЃСѓС‚СЃС‚РІРѕРІР°Р» РїСЂРё Р°С‚Р°РєРµ.");
 };
 	
 func void DIA_Addon_Finn_Attentat_ForTheBoss()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_ForTheBoss_15_00"); //Эстебан больше не хочет видеть его среди живых!
-	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_01"); //О! Ты работаешь на босса?
-	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_02"); //Тогда я тебе скажу, что я знаю.
+	AI_Output (other, self, "DIA_Addon_Finn_ForTheBoss_15_00"); //Р­СЃС‚РµР±Р°РЅ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡РµС‚ РІРёРґРµС‚СЊ РµРіРѕ СЃСЂРµРґРё Р¶РёРІС‹С…!
+	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_01"); //Рћ! РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° Р±РѕСЃСЃР°?
+	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_02"); //РўРѕРіРґР° СЏ С‚РµР±Рµ СЃРєР°Р¶Сѓ, С‡С‚Рѕ СЏ Р·РЅР°СЋ.
 	
 	B_Addon_Finn_TellAll();
 	
@@ -381,19 +381,19 @@ func void DIA_Addon_Finn_Attentat_ForTheBoss()
 	
 func void DIA_Addon_Finn_Attentat_WannaTalk()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_WannaTalk_15_00"); //Я хочу поговорить с ним...
-	AI_Output (self, other, "DIA_Addon_Finn_WannaTalk_07_01"); //(осторожно) Да? И что тебе от него нужно?
+	AI_Output (other, self, "DIA_Addon_Finn_WannaTalk_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј...
+	AI_Output (self, other, "DIA_Addon_Finn_WannaTalk_07_01"); //(РѕСЃС‚РѕСЂРѕР¶РЅРѕ) Р”Р°? Р С‡С‚Рѕ С‚РµР±Рµ РѕС‚ РЅРµРіРѕ РЅСѓР¶РЅРѕ?
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Это не твое дело!",DIA_Addon_Finn_Attentat_ForgetIt);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"У меня есть для него информация, которая может оказаться интересной!",DIA_Addon_Finn_Attentat_HaveInfos);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Я хочу устранить Эстебана, и мне нужен союзник!",DIA_Addon_Finn_Attentat_KillEsteban);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ!",DIA_Addon_Finn_Attentat_ForgetIt);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ РЅРµРіРѕ РёРЅС„РѕСЂРјР°С†РёСЏ, РєРѕС‚РѕСЂР°СЏ РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РёРЅС‚РµСЂРµСЃРЅРѕР№!",DIA_Addon_Finn_Attentat_HaveInfos);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"РЇ С…РѕС‡Сѓ СѓСЃС‚СЂР°РЅРёС‚СЊ Р­СЃС‚РµР±Р°РЅР°, Рё РјРЅРµ РЅСѓР¶РµРЅ СЃРѕСЋР·РЅРёРє!",DIA_Addon_Finn_Attentat_KillEsteban);
 };	
 		
 func void DIA_Addon_Finn_Attentat_KillEsteban()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_KillEsteban_15_00"); //Я хочу устранить Эстебана, и мне нужен союзник!
-	AI_Output (self, other, "DIA_Addon_Finn_KillEsteban_07_01"); //Я в это дело ввязываться не буду!
+	AI_Output (other, self, "DIA_Addon_Finn_KillEsteban_15_00"); //РЇ С…РѕС‡Сѓ СѓСЃС‚СЂР°РЅРёС‚СЊ Р­СЃС‚РµР±Р°РЅР°, Рё РјРЅРµ РЅСѓР¶РµРЅ СЃРѕСЋР·РЅРёРє!
+	AI_Output (self, other, "DIA_Addon_Finn_KillEsteban_07_01"); //РЇ РІ СЌС‚Рѕ РґРµР»Рѕ РІРІСЏР·С‹РІР°С‚СЊСЃСЏ РЅРµ Р±СѓРґСѓ!
 	
 	Finn_Petzt = TRUE;
 	
@@ -403,19 +403,19 @@ func void DIA_Addon_Finn_Attentat_KillEsteban()
 
 func void DIA_Addon_Finn_Attentat_HaveInfos()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_HaveInfos_15_00"); //У меня есть для него информация, которая может оказаться интересной!
-	AI_Output (self, other, "DIA_Addon_Finn_HaveInfos_07_01"); //Ты в сговоре с тем, кто это устроил, правда?
+	AI_Output (other, self, "DIA_Addon_Finn_HaveInfos_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ РЅРµРіРѕ РёРЅС„РѕСЂРјР°С†РёСЏ, РєРѕС‚РѕСЂР°СЏ РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РёРЅС‚РµСЂРµСЃРЅРѕР№!
+	AI_Output (self, other, "DIA_Addon_Finn_HaveInfos_07_01"); //РўС‹ РІ СЃРіРѕРІРѕСЂРµ СЃ С‚РµРј, РєС‚Рѕ СЌС‚Рѕ СѓСЃС‚СЂРѕРёР», РїСЂР°РІРґР°?
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Я хочу устранить Эстебана, и мне нужен союзник!",DIA_Addon_Finn_Attentat_KillEsteban);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Это не твое дело!",DIA_Addon_Finn_Attentat_ForgetIt);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Конечно, нет!",DIA_Addon_Finn_Attentat_NoNo);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"РЇ С…РѕС‡Сѓ СѓСЃС‚СЂР°РЅРёС‚СЊ Р­СЃС‚РµР±Р°РЅР°, Рё РјРЅРµ РЅСѓР¶РµРЅ СЃРѕСЋР·РЅРёРє!",DIA_Addon_Finn_Attentat_KillEsteban);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ!",DIA_Addon_Finn_Attentat_ForgetIt);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"РљРѕРЅРµС‡РЅРѕ, РЅРµС‚!",DIA_Addon_Finn_Attentat_NoNo);
 };
 
 	func void DIA_Addon_Finn_Attentat_NoNo()
 	{
-		AI_Output (other, self, "DIA_Addon_Finn_NoNo_15_00"); //Конечно, нет!
-		AI_Output (self, other, "DIA_Addon_Finn_NoNo_07_01"); //(оценивающе) Хорошо! Я расскажу тебе то, что я знаю.
+		AI_Output (other, self, "DIA_Addon_Finn_NoNo_15_00"); //РљРѕРЅРµС‡РЅРѕ, РЅРµС‚!
+		AI_Output (self, other, "DIA_Addon_Finn_NoNo_07_01"); //(РѕС†РµРЅРёРІР°СЋС‰Рµ) РҐРѕСЂРѕС€Рѕ! РЇ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ С‚Рѕ, С‡С‚Рѕ СЏ Р·РЅР°СЋ.
 		
 		B_Addon_Finn_TellAll();
 		Info_ClearChoices (DIA_Addon_Finn_Attentat);
@@ -423,8 +423,8 @@ func void DIA_Addon_Finn_Attentat_HaveInfos()
 
 func void DIA_Addon_Finn_Attentat_ForgetIt()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_ForgetIt_15_00"); //Это не твое дело!
-	AI_Output (self, other, "DIA_Addon_Finn_ForgetIt_07_01"); //Да? Ну тогда я ничего об этом не знаю.
+	AI_Output (other, self, "DIA_Addon_Finn_ForgetIt_15_00"); //Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ!
+	AI_Output (self, other, "DIA_Addon_Finn_ForgetIt_07_01"); //Р”Р°? РќСѓ С‚РѕРіРґР° СЏ РЅРёС‡РµРіРѕ РѕР± СЌС‚РѕРј РЅРµ Р·РЅР°СЋ.
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
 };
@@ -439,7 +439,7 @@ INSTANCE DIA_Addon_Finn_Again  (C_INFO)
 	condition   = DIA_Addon_Finn_Again_Condition;
 	information = DIA_Addon_Finn_Again_Info;
 	permanent   = TRUE;
-	description	= "И снова о нападении...";
+	description	= "Р СЃРЅРѕРІР° Рѕ РЅР°РїР°РґРµРЅРёРё...";
 };
 FUNC INT DIA_Addon_Finn_Again_Condition()
 {	
@@ -451,31 +451,31 @@ FUNC INT DIA_Addon_Finn_Again_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Again_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_Again_15_00"); //И снова о нападении...
+	AI_Output (other, self, "DIA_Addon_Finn_Again_15_00"); //Р СЃРЅРѕРІР° Рѕ РЅР°РїР°РґРµРЅРёРё...
 	if (Finn_TellAll == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_Again_07_01"); //Я тебе уже сказал все, что я знаю.
+		AI_Output (self, other, "DIA_Addon_Finn_Again_07_01"); //РЇ С‚РµР±Рµ СѓР¶Рµ СЃРєР°Р·Р°Р» РІСЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ.
 		
 		Info_ClearChoices (DIA_Addon_Finn_Again);
-		Info_AddChoice (DIA_Addon_Finn_Again, "Хорошо... (назад)", DIA_Addon_Finn_Again_Exit);
-		Info_AddChoice (DIA_Addon_Finn_Again, "Тогда расскажи мне еще раз!", DIA_Addon_Finn_Again_Nochmal);		
+		Info_AddChoice (DIA_Addon_Finn_Again, "РҐРѕСЂРѕС€Рѕ... (РЅР°Р·Р°Рґ)", DIA_Addon_Finn_Again_Exit);
+		Info_AddChoice (DIA_Addon_Finn_Again, "РўРѕРіРґР° СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ СЂР°Р·!", DIA_Addon_Finn_Again_Nochmal);		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_Again_07_02"); //Оставь меня в покое с этой чепухой!
+		AI_Output (self, other, "DIA_Addon_Finn_Again_07_02"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ СЃ СЌС‚РѕР№ С‡РµРїСѓС…РѕР№!
 		AI_StopProcessInfos(self);
 	};
 };
 
 func void DIA_Addon_Finn_Again_Exit()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_Again_Exit_15_00"); //(оценивающе) Ладно...
+	AI_Output (other, self, "DIA_Addon_Finn_Again_Exit_15_00"); //(РѕС†РµРЅРёРІР°СЋС‰Рµ) Р›Р°РґРЅРѕ...
 	Info_ClearChoices (DIA_Addon_Finn_Again);
 };
 
 func void DIA_Addon_Finn_Again_Nochmal()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_Again_Nochmal_15_00"); //Тогда расскажи мне еще раз!
+	AI_Output (other, self, "DIA_Addon_Finn_Again_Nochmal_15_00"); //РўРѕРіРґР° СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ СЂР°Р·!
 	
 	B_Addon_Finn_TellAll();
 	

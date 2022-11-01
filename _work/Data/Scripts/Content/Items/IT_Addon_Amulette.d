@@ -76,7 +76,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
 
-	description		=  "Амулет Франко";
+	description		=  "РђРјСѓР»РµС‚ Р¤СЂР°РЅРєРѕ";
 
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= STR_FRANCO;
@@ -138,7 +138,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Амулет целителей";
+	description		=  "РђРјСѓР»РµС‚ С†РµР»РёС‚РµР»РµР№";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Amulett_Solo_Bonus;
@@ -203,7 +203,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Кольцо целителей";
+	description		=  "РљРѕР»СЊС†Рѕ С†РµР»РёС‚РµР»РµР№";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Ring_Solo_Bonus;
@@ -249,7 +249,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		//aktuelle Hitpoints werden nicht gesteigert. (Sonst Heilmaschine)
 	};
 //---------------------------------------------------------------------------------------------------------
-	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //Hцhle zum Canyon
+	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //HС†hle zum Canyon
 {
 	name 			=	NAME_Ring;
 
@@ -268,7 +268,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Кольцо целителей";
+	description		=  "РљРѕР»СЊС†Рѕ С†РµР»РёС‚РµР»РµР№";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Ring_Solo_Bonus;
@@ -336,7 +336,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Амулет жрецов";
+	description		=  "РђРјСѓР»РµС‚ Р¶СЂРµС†РѕРІ";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Amulett_Solo_Bonus;
@@ -401,7 +401,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Кольцо жрецов";
+	description		=  "РљРѕР»СЊС†Рѕ Р¶СЂРµС†РѕРІ";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -466,7 +466,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Кольцо жрецов";
+	description		=  "РљРѕР»СЊС†Рѕ Р¶СЂРµС†РѕРІ";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -513,9 +513,9 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		
 	};
 //------------------------------------------------------------------------------------------
-// Kumulatives Stдrke Amulett (Maya) 
+// Kumulatives StРґrke Amulett (Maya) 
 //------------------------------------------------------------------------------------------
-	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranhцhle strand
+	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranhС†hle strand
 {
 	name 			=	NAME_Amulett;
 
@@ -534,7 +534,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Амулет воинов";
+	description		=  "РђРјСѓР»РµС‚ РІРѕРёРЅРѕРІ";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Amulett_Solo_Bonus;
@@ -600,7 +600,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Кольцо воинов";
+	description		=  "РљРѕР»СЊС†Рѕ РІРѕРёРЅРѕРІ";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Ring_Solo_Bonus;
@@ -667,7 +667,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Кольцо воинов";
+	description		=  "РљРѕР»СЊС†Рѕ РІРѕРёРЅРѕРІ";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Ring_Solo_Bonus;

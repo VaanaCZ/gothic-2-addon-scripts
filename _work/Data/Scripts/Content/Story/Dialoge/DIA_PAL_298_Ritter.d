@@ -28,7 +28,7 @@ instance DIA_PAL_298_Pass		(C_INFO)
 	condition	 = 	DIA_PAL_298_Pass_Condition;
 	information	 = 	DIA_PAL_298_Pass_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Куда ведет эта дорога?";
+	description	 = 	"РљСѓРґР° РІРµРґРµС‚ СЌС‚Р° РґРѕСЂРѕРіР°?";
 };
 func int DIA_PAL_298_Pass_Condition ()
 {	
@@ -39,10 +39,10 @@ func int DIA_PAL_298_Pass_Condition ()
 };
 func void DIA_PAL_298_Pass_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//Куда ведет эта дорога?
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//За этими воротами лежит проход в Долину Рудников.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//На этой стороне мы, а на другой орки.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Лучше бы тебе повернуть назад - ты не сможешь пробиться туда.
+	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//РљСѓРґР° РІРµРґРµС‚ СЌС‚Р° РґРѕСЂРѕРіР°?
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Р—Р° СЌС‚РёРјРё РІРѕСЂРѕС‚Р°РјРё Р»РµР¶РёС‚ РїСЂРѕС…РѕРґ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//РќР° СЌС‚РѕР№ СЃС‚РѕСЂРѕРЅРµ РјС‹, Р° РЅР° РґСЂСѓРіРѕР№ РѕСЂРєРё.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Р›СѓС‡С€Рµ Р±С‹ С‚РµР±Рµ РїРѕРІРµСЂРЅСѓС‚СЊ РЅР°Р·Р°Рґ - С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РїСЂРѕР±РёС‚СЊСЃСЏ С‚СѓРґР°.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRESPASS
@@ -65,9 +65,9 @@ func int DIA_PAL_298_TRESPASS_Condition ()
 };
 func void DIA_PAL_298_TRESPASS_Info ()
 {
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//Ты уверен, что хочешь пойти туда? Боюсь, далеко ты не уйдешь - там орки.
-	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Если есть путь в Долину Рудников, Я найду его.
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//Хорошо, тогда иди. Иди с Инносом.
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//РўС‹ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С…РѕС‡РµС€СЊ РїРѕР№С‚Рё С‚СѓРґР°? Р‘РѕСЋСЃСЊ, РґР°Р»РµРєРѕ С‚С‹ РЅРµ СѓР№РґРµС€СЊ - С‚Р°Рј РѕСЂРєРё.
+	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Р•СЃР»Рё РµСЃС‚СЊ РїСѓС‚СЊ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ, РЇ РЅР°Р№РґСѓ РµРіРѕ.
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//РҐРѕСЂРѕС€Рѕ, С‚РѕРіРґР° РёРґРё. РРґРё СЃ РРЅРЅРѕСЃРѕРј.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 
@@ -79,7 +79,7 @@ instance DIA_PAL_298_Perm1		(C_INFO)
 	condition	 = 	DIA_PAL_298_Perm1_Condition;
 	information	 = 	DIA_PAL_298_Perm1_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"А что если я все же пойду, на свой страх и риск?";
+	description	 = 	"Рђ С‡С‚Рѕ РµСЃР»Рё СЏ РІСЃРµ Р¶Рµ РїРѕР№РґСѓ, РЅР° СЃРІРѕР№ СЃС‚СЂР°С… Рё СЂРёСЃРє?";
 };
 func int DIA_PAL_298_Perm1_Condition ()
 {	
@@ -91,8 +91,8 @@ func int DIA_PAL_298_Perm1_Condition ()
 };
 func void DIA_PAL_298_Perm1_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//А что если я все же пойду, на свой страх и риск?
-	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Тогда ты погибнешь. Вот почему мы здесь. Чтобы у тебя не возникали такие идиотские идеи.
+	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//Рђ С‡С‚Рѕ РµСЃР»Рё СЏ РІСЃРµ Р¶Рµ РїРѕР№РґСѓ, РЅР° СЃРІРѕР№ СЃС‚СЂР°С… Рё СЂРёСЃРє?
+	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//РўРѕРіРґР° С‚С‹ РїРѕРіРёР±РЅРµС€СЊ. Р’РѕС‚ РїРѕС‡РµРјСѓ РјС‹ Р·РґРµСЃСЊ. Р§С‚РѕР±С‹ Сѓ С‚РµР±СЏ РЅРµ РІРѕР·РЅРёРєР°Р»Рё С‚Р°РєРёРµ РёРґРёРѕС‚СЃРєРёРµ РёРґРµРё.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 
@@ -104,7 +104,7 @@ instance DIA_PAL_298_Perm2		(C_INFO)
 	condition	 = 	DIA_PAL_298_Perm2_Condition;
 	information	 = 	DIA_PAL_298_Perm2_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как ситуация?";
+	description	 = 	"РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };
 func int DIA_PAL_298_Perm2_Condition ()
 {	
@@ -115,8 +115,8 @@ func int DIA_PAL_298_Perm2_Condition ()
 };
 func void DIA_PAL_298_Perm2_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Perm2_15_00");//Как обстановка?
-	AI_Output (self, other, "DIA_PAL_298_Perm2_09_01");//Все спокойно. Мы держим ситуацию под контролем.
+	AI_Output (other, self, "DIA_PAL_298_Perm2_15_00");//РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
+	AI_Output (self, other, "DIA_PAL_298_Perm2_09_01");//Р’СЃРµ СЃРїРѕРєРѕР№РЅРѕ. РњС‹ РґРµСЂР¶РёРј СЃРёС‚СѓР°С†РёСЋ РїРѕРґ РєРѕРЅС‚СЂРѕР»РµРј.
 };
 
 

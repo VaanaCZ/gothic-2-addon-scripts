@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Blattcrawler(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Богомол";
+	name							=	"Р‘РѕРіРѕРјРѕР»";
 	guild							=	GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_BLATTCRAWLER;
 	level							=	15;

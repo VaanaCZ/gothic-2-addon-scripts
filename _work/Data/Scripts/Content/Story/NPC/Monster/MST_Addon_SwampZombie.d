@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_SwampZombie(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Болотный труп";
+	name							=	"Р‘РѕР»РѕС‚РЅС‹Р№ С‚СЂСѓРї";
 	guild							=	GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ZOMBIE;
 	level							=	15;

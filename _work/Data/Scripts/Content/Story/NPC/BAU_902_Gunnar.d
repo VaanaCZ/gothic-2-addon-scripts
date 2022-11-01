@@ -3,7 +3,7 @@
 instance BAU_902_Gunnar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "√ÛÌÌ‡";
+	name 		= "–ì—É–Ω–Ω–∞—Ä";
 	guild 		= GIL_BAU;
 	id 			= 902;
 	voice 		= 10;
@@ -32,8 +32,8 @@ instance BAU_902_Gunnar (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 25); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 25); //Grenzen f—år Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_902;

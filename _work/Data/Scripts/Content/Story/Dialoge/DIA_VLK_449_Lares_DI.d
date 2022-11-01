@@ -34,7 +34,7 @@ INSTANCE DIA_Lares_DI_Hallo (C_INFO)
 	information	= DIA_Lares_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 FUNC INT DIA_Lares_DI_Hallo_Condition()
 {
@@ -45,15 +45,15 @@ FUNC INT DIA_Lares_DI_Hallo_Condition()
 };
 FUNC VOID DIA_Lares_DI_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_Hallo_15_00"); //Как дела?
+	AI_Output (other,self ,"DIA_Lares_DI_Hallo_15_00"); //РљР°Рє РґРµР»Р°?
 
 	if (ORkSturmDI == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_01"); //Поторопись. Орки, наверняка, вернутся опять.
+		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_01"); //РџРѕС‚РѕСЂРѕРїРёСЃСЊ. РћСЂРєРё, РЅР°РІРµСЂРЅСЏРєР°, РІРµСЂРЅСѓС‚СЃСЏ РѕРїСЏС‚СЊ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_02"); //Хорошо. Хотя этот грот немного пугает меня.
+		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_02"); //РҐРѕСЂРѕС€Рѕ. РҐРѕС‚СЏ СЌС‚РѕС‚ РіСЂРѕС‚ РЅРµРјРЅРѕРіРѕ РїСѓРіР°РµС‚ РјРµРЅСЏ.
 	};
 };
 
@@ -69,7 +69,7 @@ INSTANCE DIA_Lares_DI_Training (C_INFO)
 	information	= DIA_Lares_DI_Training_Info;
 	permanent	 = 	TRUE;
 
-	description = "Научи меня тому, что знаешь сам.";
+	description = "РќР°СѓС‡Рё РјРµРЅСЏ С‚РѕРјСѓ, С‡С‚Рѕ Р·РЅР°РµС€СЊ СЃР°Рј.";
 };                       
 FUNC INT DIA_Lares_DI_Training_Condition()
 {
@@ -81,14 +81,14 @@ FUNC INT DIA_Lares_DI_Training_Condition()
 
 FUNC VOID DIA_Lares_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //Научи меня тому, что знаешь сам.
-	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //Нет проблем.
+	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ С‚РѕРјСѓ, С‡С‚Рѕ Р·РЅР°РµС€СЊ СЃР°Рј.
+	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //РќРµС‚ РїСЂРѕР±Р»РµРј.
 	
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Научиться красться"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "РќР°СѓС‡РёС‚СЊСЃСЏ РєСЂР°СЃС‚СЊСЃСЏ"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -101,13 +101,13 @@ FUNC VOID DIA_Lares_DI_Training_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //Тебе нужно согнуть немного переднюю ногу и выпрямить спину - так ты займешь правильную стойку.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //РўРµР±Рµ РЅСѓР¶РЅРѕ СЃРѕРіРЅСѓС‚СЊ РЅРµРјРЅРѕРіРѕ РїРµСЂРµРґРЅСЋСЋ РЅРѕРіСѓ Рё РІС‹РїСЂСЏРјРёС‚СЊ СЃРїРёРЅСѓ - С‚Р°Рє С‚С‹ Р·Р°Р№РјРµС€СЊ РїСЂР°РІРёР»СЊРЅСѓСЋ СЃС‚РѕР№РєСѓ.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Научиться красться"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "РќР°СѓС‡РёС‚СЊСЃСЏ РєСЂР°СЃС‚СЊСЃСЏ"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -120,13 +120,13 @@ FUNC VOID DIA_Lares_DI_Training_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_5_09_00"); //Не напрягай бедра, это позволит тебе вовремя уклониться от контратаки.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_5_09_00"); //РќРµ РЅР°РїСЂСЏРіР°Р№ Р±РµРґСЂР°, СЌС‚Рѕ РїРѕР·РІРѕР»РёС‚ С‚РµР±Рµ РІРѕРІСЂРµРјСЏ СѓРєР»РѕРЅРёС‚СЊСЃСЏ РѕС‚ РєРѕРЅС‚СЂР°С‚Р°РєРё.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Научиться красться"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "РќР°СѓС‡РёС‚СЊСЃСЏ РєСЂР°СЃС‚СЊСЃСЏ"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -144,14 +144,14 @@ func void DIA_Lares_DI_Training_DEX_1 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 1, T_MED))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_1_09_00"); //Верхняя часть твоего туловища должна действовать согласованно с нижней.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_1_09_00"); //Р’РµСЂС…РЅСЏСЏ С‡Р°СЃС‚СЊ С‚РІРѕРµРіРѕ С‚СѓР»РѕРІРёС‰Р° РґРѕР»Р¶РЅР° РґРµР№СЃС‚РІРѕРІР°С‚СЊ СЃРѕРіР»Р°СЃРѕРІР°РЅРЅРѕ СЃ РЅРёР¶РЅРµР№.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Научиться красться"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "РќР°СѓС‡РёС‚СЊСЃСЏ РєСЂР°СЃС‚СЊСЃСЏ"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -168,14 +168,14 @@ func void DIA_Lares_DI_Training_DEX_5 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 5, T_MED))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_5_09_00"); //Всегда следи за своими ногами.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_5_09_00"); //Р’СЃРµРіРґР° СЃР»РµРґРё Р·Р° СЃРІРѕРёРјРё РЅРѕРіР°РјРё.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Научиться красться"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "РќР°СѓС‡РёС‚СЊСЃСЏ РєСЂР°СЃС‚СЊСЃСЏ"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -189,14 +189,14 @@ func void DIA_Lares_DI_Training_SNEAK ()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_SNEAK_09_00"); //Всегда используй всю площадь подошвы, когда крадешься.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_SNEAK_09_00"); //Р’СЃРµРіРґР° РёСЃРїРѕР»СЊР·СѓР№ РІСЃСЋ РїР»РѕС‰Р°РґСЊ РїРѕРґРѕС€РІС‹, РєРѕРіРґР° РєСЂР°РґРµС€СЊСЃСЏ.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Научиться красться"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "РќР°СѓС‡РёС‚СЊСЃСЏ РєСЂР°СЃС‚СЊСЃСЏ"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -223,7 +223,7 @@ INSTANCE DIA_Lares_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_Lares_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description = "Похоже, все это тебя не особенно волнует.";
+	description = "РџРѕС…РѕР¶Рµ, РІСЃРµ СЌС‚Рѕ С‚РµР±СЏ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ РІРѕР»РЅСѓРµС‚.";
 };                       
 FUNC INT DIA_Lares_DI_UndeadDragonDead_Condition()
 {
@@ -236,13 +236,13 @@ FUNC INT DIA_Lares_DI_UndeadDragonDead_Condition()
 var int DIA_Lares_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_Lares_DI_UndeadDragonDead_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_00"); //Похоже, все это тебя не особенно волнует.
-	AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_01"); //Ах, знаешь, я был уверен, что ты справишься.
+	AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_00"); //РџРѕС…РѕР¶Рµ, РІСЃРµ СЌС‚Рѕ С‚РµР±СЏ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ РІРѕР»РЅСѓРµС‚.
+	AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_01"); //РђС…, Р·РЅР°РµС€СЊ, СЏ Р±С‹Р» СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ.
 
 	if (DIA_Lares_DI_UndeadDragonDead_OneTime == FALSE )
 	{
-		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //Что ты собираешься делать дальше?
-		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Пока не знаю. Пожалуй, я пока побуду с тобой.
+		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //РџРѕРєР° РЅРµ Р·РЅР°СЋ. РџРѕР¶Р°Р»СѓР№, СЏ РїРѕРєР° РїРѕР±СѓРґСѓ СЃ С‚РѕР±РѕР№.
 		
 		DIA_Lares_DI_UndeadDragonDead_OneTime = TRUE;
 	};

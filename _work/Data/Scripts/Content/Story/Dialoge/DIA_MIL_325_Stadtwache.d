@@ -58,8 +58,8 @@ func int DIA_Mil_325_Miliz_FirstWarn_Condition()
 
 func void DIA_Mil_325_Miliz_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_00"); //СТОЙ!
-	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_01"); //Сюда вход запрещен!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_00"); //РЎРўРћР™!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_01"); //РЎСЋРґР° РІС…РѕРґ Р·Р°РїСЂРµС‰РµРЅ!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -92,7 +92,7 @@ FUNC INT DIA_Mil_325_Miliz_SecondWarn_Condition()
 
 func void DIA_Mil_325_Miliz_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //Ты что, оглох? Еще один шаг, и я порублю тебя в капусту!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…? Р•С‰Рµ РѕРґРёРЅ С€Р°Рі, Рё СЏ РїРѕСЂСѓР±Р»СЋ С‚РµР±СЏ РІ РєР°РїСѓСЃС‚Сѓ!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -130,7 +130,7 @@ func void DIA_Mil_325_Miliz_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Attack_12_00"); //Это была твоя ошибка!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Attack_12_00"); //Р­С‚Рѕ Р±С‹Р»Р° С‚РІРѕСЏ РѕС€РёР±РєР°!
 	
 	AI_StopProcessInfos	(self);		
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -148,7 +148,7 @@ INSTANCE DIA_Mil_325_Miliz_Pass (C_INFO)
 	condition	= DIA_Mil_325_Miliz_Pass_Condition;
 	information	= DIA_Mil_325_Miliz_Pass_Info;
 	permanent	= FALSE;
-	description	= "Я состою в королевской армии. Я хочу взять снаряжение!";
+	description	= "РЇ СЃРѕСЃС‚РѕСЋ РІ РєРѕСЂРѕР»РµРІСЃРєРѕР№ Р°СЂРјРёРё. РЇ С…РѕС‡Сѓ РІР·СЏС‚СЊ СЃРЅР°СЂСЏР¶РµРЅРёРµ!";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
@@ -162,18 +162,18 @@ FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
 	
 func void DIA_Mil_325_Miliz_Pass_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //Я состою в королевской армии. Я хочу взять снаряжение!
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //У тебя есть разрешение на это?
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //РЇ СЃРѕСЃС‚РѕСЋ РІ РєРѕСЂРѕР»РµРІСЃРєРѕР№ Р°СЂРјРёРё. РЇ С…РѕС‡Сѓ РІР·СЏС‚СЊ СЃРЅР°СЂСЏР¶РµРЅРёРµ!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ СЂР°Р·СЂРµС€РµРЅРёРµ РЅР° СЌС‚Рѕ?
 	
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
-	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "Нет.", DIA_Mil_325_Miliz_Pass_No);
-	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "Конечно.", DIA_Mil_325_Miliz_Pass_Yes);
+	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "РќРµС‚.", DIA_Mil_325_Miliz_Pass_No);
+	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "РљРѕРЅРµС‡РЅРѕ.", DIA_Mil_325_Miliz_Pass_Yes);
 };
 
 func void DIA_Mil_325_Miliz_Pass_Yes()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_Yes_15_00"); //Конечно.
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_Yes_12_01"); //Хорошо, ты можешь войти!
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_Yes_15_00"); //РљРѕРЅРµС‡РЅРѕ.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_Yes_12_01"); //РҐРѕСЂРѕС€Рѕ, С‚С‹ РјРѕР¶РµС€СЊ РІРѕР№С‚Рё!
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	AI_StopProcessInfos (self);
@@ -181,8 +181,8 @@ func void DIA_Mil_325_Miliz_Pass_Yes()
 
 func void DIA_Mil_325_Miliz_Pass_No()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_No_15_00"); //Нет.
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_No_12_01"); //Тогда убирайся отсюда.
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_No_15_00"); //РќРµС‚.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_No_12_01"); //РўРѕРіРґР° СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°.
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	AI_StopProcessInfos (self);
 };
@@ -199,7 +199,7 @@ INSTANCE DIA_Mil_325_Miliz_PERM (C_INFO)
 	condition	= DIA_Mil_325_Miliz_PERM_Condition;
 	information	= DIA_Mil_325_Miliz_PERM_Info;
 	permanent	= TRUE;
-	description	= "Почему никому нельзя входить на этот склад?";
+	description	= "РџРѕС‡РµРјСѓ РЅРёРєРѕРјСѓ РЅРµР»СЊР·СЏ РІС…РѕРґРёС‚СЊ РЅР° СЌС‚РѕС‚ СЃРєР»Р°Рґ?";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
@@ -209,8 +209,8 @@ FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
 	
 func void DIA_Mil_325_Miliz_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //Почему никому нельзя входить на этот склад?
-	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //Достопочтенный лорд Хаген хранит здесь товары, конфискованные для королевской армии.
+	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //РџРѕС‡РµРјСѓ РЅРёРєРѕРјСѓ РЅРµР»СЊР·СЏ РІС…РѕРґРёС‚СЊ РЅР° СЌС‚РѕС‚ СЃРєР»Р°Рґ?
+	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //Р”РѕСЃС‚РѕРїРѕС‡С‚РµРЅРЅС‹Р№ Р»РѕСЂРґ РҐР°РіРµРЅ С…СЂР°РЅРёС‚ Р·РґРµСЃСЊ С‚РѕРІР°СЂС‹, РєРѕРЅС„РёСЃРєРѕРІР°РЅРЅС‹Рµ РґР»СЏ РєРѕСЂРѕР»РµРІСЃРєРѕР№ Р°СЂРјРёРё.
 };
 
 

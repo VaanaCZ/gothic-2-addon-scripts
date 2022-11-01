@@ -36,10 +36,10 @@ FUNC INT DIA_Addon_10031_Wache_Scatty_Condition()
 };
 FUNC VOID DIA_Addon_10031_Wache_Scatty_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Эй, хочешь пойти поработать? Тогда не забудь закупиться у Скатти.
-	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//А что мне нужно?
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//Ну, по крайней мере кирка. И немного еды тоже не помешает.
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//Или, скажем, лечебные зелья. Внизу встречаются краулеры.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Р­Р№, С…РѕС‡РµС€СЊ РїРѕР№С‚Рё РїРѕСЂР°Р±РѕС‚Р°С‚СЊ? РўРѕРіРґР° РЅРµ Р·Р°Р±СѓРґСЊ Р·Р°РєСѓРїРёС‚СЊСЃСЏ Сѓ РЎРєР°С‚С‚Рё.
+	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//Рђ С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ РєРёСЂРєР°. Р РЅРµРјРЅРѕРіРѕ РµРґС‹ С‚РѕР¶Рµ РЅРµ РїРѕРјРµС€Р°РµС‚.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//РР»Рё, СЃРєР°Р¶РµРј, Р»РµС‡РµР±РЅС‹Рµ Р·РµР»СЊСЏ. Р’РЅРёР·Сѓ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ РєСЂР°СѓР»РµСЂС‹.
 	AI_StopProcessInfos (self);
 };
 //----------------------------------------------------------------------
@@ -54,7 +54,7 @@ INSTANCE DIA_Addon_BDT_10031_Wache_Hi   (C_INFO)
 	condition   = DIA_Addon_10031_Wache_Hi_Condition;
 	information = DIA_Addon_10031_Wache_Hi_Info;
 	permanent   = TRUE;
-	description = "Все в порядке?";
+	description = "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 FUNC INT DIA_Addon_10031_Wache_Hi_Condition()
 {	
@@ -62,15 +62,15 @@ FUNC INT DIA_Addon_10031_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10031_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Hi_15_00");//Все в порядке?
+	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Hi_15_00");//Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if (Sklaven_Flucht == TRUE)
 	&& (Wache_Joker == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//О, приятель. Рабы, видно, очень спешили.
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Когда они услышали, что они свободны, они побежали, как кролики!
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//Рћ, РїСЂРёСЏС‚РµР»СЊ. Р Р°Р±С‹, РІРёРґРЅРѕ, РѕС‡РµРЅСЊ СЃРїРµС€РёР»Рё.
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//РљРѕРіРґР° РѕРЅРё СѓСЃР»С‹С€Р°Р»Рё, С‡С‚Рѕ РѕРЅРё СЃРІРѕР±РѕРґРЅС‹, РѕРЅРё РїРѕР±РµР¶Р°Р»Рё, РєР°Рє РєСЂРѕР»РёРєРё!
 		Wache_Joker = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Да. Так что не создавай никому проблем, и все у тебя будет в порядке.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Р”Р°. РўР°Рє С‡С‚Рѕ РЅРµ СЃРѕР·РґР°РІР°Р№ РЅРёРєРѕРјСѓ РїСЂРѕР±Р»РµРј, Рё РІСЃРµ Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ.
 	
 };

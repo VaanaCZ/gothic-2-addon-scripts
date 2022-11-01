@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10026_Wache_Hi   (C_INFO)
 	condition   = DIA_Addon_10026_Wache_Hi_Condition;
 	information = DIA_Addon_10026_Wache_Hi_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_10026_Wache_Hi_Condition()
 {	
@@ -36,20 +36,20 @@ FUNC INT DIA_Addon_10026_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10026_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Hi_15_00");//Как дела?
+	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Hi_15_00");//РљР°Рє РґРµР»Р°?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
 		CreateInvItems (self, ItFo_Bacon,1);
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//Жаль, что у нас так мало рабов. Нам следует достать новых.
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//С этими ребятами покончено. Возможно, потому что они почти ничего не ели. (смеется)
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//Р–Р°Р»СЊ, С‡С‚Рѕ Сѓ РЅР°СЃ С‚Р°Рє РјР°Р»Рѕ СЂР°Р±РѕРІ. РќР°Рј СЃР»РµРґСѓРµС‚ РґРѕСЃС‚Р°С‚СЊ РЅРѕРІС‹С….
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//РЎ СЌС‚РёРјРё СЂРµР±СЏС‚Р°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ. Р’РѕР·РјРѕР¶РЅРѕ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РѕРЅРё РїРѕС‡С‚Рё РЅРёС‡РµРіРѕ РЅРµ РµР»Рё. (СЃРјРµРµС‚СЃСЏ)
 		B_UseItem (self, ItFo_Bacon);
 		
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//Но я лучше отправлю рудокопов работать дальше, чем дам этим собакам хоть кусок мяса.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//РќРѕ СЏ Р»СѓС‡С€Рµ РѕС‚РїСЂР°РІР»СЋ СЂСѓРґРѕРєРѕРїРѕРІ СЂР°Р±РѕС‚Р°С‚СЊ РґР°Р»СЊС€Рµ, С‡РµРј РґР°Рј СЌС‚РёРј СЃРѕР±Р°РєР°Рј С…РѕС‚СЊ РєСѓСЃРѕРє РјСЏСЃР°.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04");//Рабы ушли, очень жаль. Ну что ж, тогда нам придется снова загнать туда рудокопов.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04");//Р Р°Р±С‹ СѓС€Р»Рё, РѕС‡РµРЅСЊ Р¶Р°Р»СЊ. РќСѓ С‡С‚Рѕ Р¶, С‚РѕРіРґР° РЅР°Рј РїСЂРёРґРµС‚СЃСЏ СЃРЅРѕРІР° Р·Р°РіРЅР°С‚СЊ С‚СѓРґР° СЂСѓРґРѕРєРѕРїРѕРІ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_BDT_10026_Wache_Gruft   (C_INFO)
 	condition   = DIA_Addon_10026_Wache_Gruft_Condition;
 	information = DIA_Addon_10026_Wache_Gruft_Info;
 	permanent   = TRUE;
-	description = "Ты знаешь что-нибудь про гробницу?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕ РіСЂРѕР±РЅРёС†Сѓ?";
 };
 FUNC INT DIA_Addon_10026_Wache_Gruft_Condition()
 {	
@@ -72,9 +72,9 @@ FUNC INT DIA_Addon_10026_Wache_Gruft_Condition()
 };
 FUNC VOID DIA_Addon_10026_Wache_Gruft_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00");//Ты знаешь что-нибудь про гробницу?
-	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//Да. Она в конце этого прохода.
-	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//(спокойно) Просто следуй по трупам - и ты найдешь ее.
+	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00");//РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕ РіСЂРѕР±РЅРёС†Сѓ?
+	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//Р”Р°. РћРЅР° РІ РєРѕРЅС†Рµ СЌС‚РѕРіРѕ РїСЂРѕС…РѕРґР°.
+	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//(СЃРїРѕРєРѕР№РЅРѕ) РџСЂРѕСЃС‚Рѕ СЃР»РµРґСѓР№ РїРѕ С‚СЂСѓРїР°Рј - Рё С‚С‹ РЅР°Р№РґРµС€СЊ РµРµ.
 };
 
 

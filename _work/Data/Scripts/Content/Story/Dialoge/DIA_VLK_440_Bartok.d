@@ -31,7 +31,7 @@ INSTANCE DIA_Bartok_PICKPOCKET (C_INFO)
 	condition	= DIA_Bartok_PICKPOCKET_Condition;
 	information	= DIA_Bartok_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть его колчан со стрелами будет просто)";
+	description = "(РЈРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕР»С‡Р°РЅ СЃРѕ СЃС‚СЂРµР»Р°РјРё Р±СѓРґРµС‚ РїСЂРѕСЃС‚Рѕ)";
 };                       
 
 FUNC INT DIA_Bartok_PICKPOCKET_Condition()
@@ -85,7 +85,7 @@ INSTANCE DIA_Bartok_Hallo (C_INFO)
 	condition	= DIA_Bartok_Hallo_Condition;
 	information	= DIA_Bartok_Hallo_Info;
 	permanent	= FALSE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 FUNC INT DIA_Bartok_Hallo_Condition()
 {
@@ -93,11 +93,11 @@ FUNC INT DIA_Bartok_Hallo_Condition()
 };
 FUNC VOID DIA_Bartok_Hallo_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_Hello_15_00"); //Как дела?
-	AI_Output (self ,other,"DIA_Bartok_Hello_04_01"); //Ты ведь нездешний, да? Ничего - я тоже.
-	AI_Output (other ,self,"DIA_Bartok_Hello_15_02"); //А откуда ты пришел?
-	AI_Output (self ,other,"DIA_Bartok_Hello_04_03"); //Из леса, я там охотился на падальщиков и волков вместе с другими охотниками.
-	AI_Output (self ,other,"DIA_Bartok_Hello_04_04"); //Но я бросил это занятие. Настали опасные времена. Повсюду шатается всякий сброд...
+	AI_Output (other ,self,"DIA_Bartok_Hello_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Bartok_Hello_04_01"); //РўС‹ РІРµРґСЊ РЅРµР·РґРµС€РЅРёР№, РґР°? РќРёС‡РµРіРѕ - СЏ С‚РѕР¶Рµ.
+	AI_Output (other ,self,"DIA_Bartok_Hello_15_02"); //Рђ РѕС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР»?
+	AI_Output (self ,other,"DIA_Bartok_Hello_04_03"); //РР· Р»РµСЃР°, СЏ С‚Р°Рј РѕС…РѕС‚РёР»СЃСЏ РЅР° РїР°РґР°Р»СЊС‰РёРєРѕРІ Рё РІРѕР»РєРѕРІ РІРјРµСЃС‚Рµ СЃ РґСЂСѓРіРёРјРё РѕС…РѕС‚РЅРёРєР°РјРё.
+	AI_Output (self ,other,"DIA_Bartok_Hello_04_04"); //РќРѕ СЏ Р±СЂРѕСЃРёР» СЌС‚Рѕ Р·Р°РЅСЏС‚РёРµ. РќР°СЃС‚Р°Р»Рё РѕРїР°СЃРЅС‹Рµ РІСЂРµРјРµРЅР°. РџРѕРІСЃСЋРґСѓ С€Р°С‚Р°РµС‚СЃСЏ РІСЃСЏРєРёР№ СЃР±СЂРѕРґ...
 };
 // *****************************************************
 //						Jaeger
@@ -109,7 +109,7 @@ INSTANCE DIA_Bartok_Jaeger(C_INFO)
 	condition	= DIA_Bartok_Jaeger_Condition;
 	information	= DIA_Bartok_Jaeger_Info;
 	permanent	= FALSE;
-	description	= "Где мне найти других охотников?";
+	description	= "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РґСЂСѓРіРёС… РѕС…РѕС‚РЅРёРєРѕРІ?";
 };                       
 FUNC INT DIA_Bartok_Jaeger_Condition()
 {
@@ -120,12 +120,12 @@ FUNC INT DIA_Bartok_Jaeger_Condition()
 };
 FUNC VOID DIA_Bartok_Jaeger_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_Jager_15_00"); //Где мне найти других охотников?
-	AI_Output (self ,other,"DIA_Bartok_Jager_04_01"); //У нас был лагерь около таверны, на полпути к ферме Онара.
-	AI_Output (self ,other,"DIA_Bartok_Jager_04_02"); //Но я не знаю, остался ли там кто еще.
+	AI_Output (other ,self,"DIA_Bartok_Jager_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РґСЂСѓРіРёС… РѕС…РѕС‚РЅРёРєРѕРІ?
+	AI_Output (self ,other,"DIA_Bartok_Jager_04_01"); //РЈ РЅР°СЃ Р±С‹Р» Р»Р°РіРµСЂСЊ РѕРєРѕР»Рѕ С‚Р°РІРµСЂРЅС‹, РЅР° РїРѕР»РїСѓС‚Рё Рє С„РµСЂРјРµ РћРЅР°СЂР°.
+	AI_Output (self ,other,"DIA_Bartok_Jager_04_02"); //РќРѕ СЏ РЅРµ Р·РЅР°СЋ, РѕСЃС‚Р°Р»СЃСЏ Р»Рё С‚Р°Рј РєС‚Рѕ РµС‰Рµ.
 	
-	AI_Output (self ,other,"DIA_Addon_Bartok_Jager_04_00"); //Нас в городе было двое. До недавнего времени.
-	AI_Output (self ,other,"DIA_Addon_Bartok_Jager_04_01"); //Со мной был мой друг Трокар, превосходный охотник.
+	AI_Output (self ,other,"DIA_Addon_Bartok_Jager_04_00"); //РќР°СЃ РІ РіРѕСЂРѕРґРµ Р±С‹Р»Рѕ РґРІРѕРµ. Р”Рѕ РЅРµРґР°РІРЅРµРіРѕ РІСЂРµРјРµРЅРё.
+	AI_Output (self ,other,"DIA_Addon_Bartok_Jager_04_01"); //РЎРѕ РјРЅРѕР№ Р±С‹Р» РјРѕР№ РґСЂСѓРі РўСЂРѕРєР°СЂ, РїСЂРµРІРѕСЃС…РѕРґРЅС‹Р№ РѕС…РѕС‚РЅРёРє.
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -138,7 +138,7 @@ instance DIA_Addon_Bartok_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Bartok_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Bartok_MissingPeople_Info;
 
-	description	 = 	"А где Трокар сейчас?";
+	description	 = 	"Рђ РіРґРµ РўСЂРѕРєР°СЂ СЃРµР№С‡Р°СЃ?";
 };
 
 func int DIA_Addon_Bartok_MissingPeople_Condition ()
@@ -151,31 +151,31 @@ func int DIA_Addon_Bartok_MissingPeople_Condition ()
 
 func void DIA_Addon_Bartok_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bartok_MissingPeople_15_00"); //А где Трокар сейчас?
-	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_01"); //Это очень необычная история.
-	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_02"); //Несколько дней назад мы выпивали в таверне Корагона и разговаривали об охоте.
-	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_03"); //Не спрашивай меня, что было дальше. К тому времени я уже изрядно накачался.
-	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_04"); //Я помню, как Трокар говорил что-то о том, что собирается добыть несколько косяков из болотной травы. С тех пор я его не видел.
+	AI_Output	(other, self, "DIA_Addon_Bartok_MissingPeople_15_00"); //Рђ РіРґРµ РўСЂРѕРєР°СЂ СЃРµР№С‡Р°СЃ?
+	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_01"); //Р­С‚Рѕ РѕС‡РµРЅСЊ РЅРµРѕР±С‹С‡РЅР°СЏ РёСЃС‚РѕСЂРёСЏ.
+	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_02"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ РјС‹ РІС‹РїРёРІР°Р»Рё РІ С‚Р°РІРµСЂРЅРµ РљРѕСЂР°РіРѕРЅР° Рё СЂР°Р·РіРѕРІР°СЂРёРІР°Р»Рё РѕР± РѕС…РѕС‚Рµ.
+	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_03"); //РќРµ СЃРїСЂР°С€РёРІР°Р№ РјРµРЅСЏ, С‡С‚Рѕ Р±С‹Р»Рѕ РґР°Р»СЊС€Рµ. Рљ С‚РѕРјСѓ РІСЂРµРјРµРЅРё СЏ СѓР¶Рµ РёР·СЂСЏРґРЅРѕ РЅР°РєР°С‡Р°Р»СЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_04"); //РЇ РїРѕРјРЅСЋ, РєР°Рє РўСЂРѕРєР°СЂ РіРѕРІРѕСЂРёР» С‡С‚Рѕ-С‚Рѕ Рѕ С‚РѕРј, С‡С‚Рѕ СЃРѕР±РёСЂР°РµС‚СЃСЏ РґРѕР±С‹С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РєРѕСЃСЏРєРѕРІ РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹. РЎ С‚РµС… РїРѕСЂ СЏ РµРіРѕ РЅРµ РІРёРґРµР».
 
 	MIS_Bartok_MissingTrokar = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Addon_Bartok_MissingPeople);
-	Info_AddChoice	(DIA_Addon_Bartok_MissingPeople, "А ты не искал его?", DIA_Addon_Bartok_MissingPeople_such );
-	Info_AddChoice	(DIA_Addon_Bartok_MissingPeople, "А где можно найти косяк из болотной травы?", DIA_Addon_Bartok_MissingPeople_wo );
+	Info_AddChoice	(DIA_Addon_Bartok_MissingPeople, "Рђ С‚С‹ РЅРµ РёСЃРєР°Р» РµРіРѕ?", DIA_Addon_Bartok_MissingPeople_such );
+	Info_AddChoice	(DIA_Addon_Bartok_MissingPeople, "Рђ РіРґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РєРѕСЃСЏРє РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹?", DIA_Addon_Bartok_MissingPeople_wo );
 };
 func void DIA_Addon_Bartok_MissingPeople_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bartok_MissingPeople_wo_15_00"); //А где можно найти косяк из болотной травы?
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_wo_04_01"); //Здесь, в порту. По крайней мере, мне так говорили.
+	AI_Output			(other, self, "DIA_Addon_Bartok_MissingPeople_wo_15_00"); //Рђ РіРґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РєРѕСЃСЏРє РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹?
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_wo_04_01"); //Р—РґРµСЃСЊ, РІ РїРѕСЂС‚Сѓ. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РјРЅРµ С‚Р°Рє РіРѕРІРѕСЂРёР»Рё.
 };
 func void DIA_Addon_Bartok_MissingPeople_such ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bartok_MissingPeople_such_15_00"); //А ты не искал его?
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_01"); //Нет. Но я сообщил об этом ополчению.
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_02"); //Они его пока не нашли.
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_03"); //Надеюсь, его не сожрали волки или еще кто-нибудь похуже.
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_04"); //Я боюсь, что однажды на охоте я найду его изуродованный труп.
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_05"); //Я этого не вынесу.
+	AI_Output			(other, self, "DIA_Addon_Bartok_MissingPeople_such_15_00"); //Рђ С‚С‹ РЅРµ РёСЃРєР°Р» РµРіРѕ?
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_01"); //РќРµС‚. РќРѕ СЏ СЃРѕРѕР±С‰РёР» РѕР± СЌС‚РѕРј РѕРїРѕР»С‡РµРЅРёСЋ.
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_02"); //РћРЅРё РµРіРѕ РїРѕРєР° РЅРµ РЅР°С€Р»Рё.
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_03"); //РќР°РґРµСЋСЃСЊ, РµРіРѕ РЅРµ СЃРѕР¶СЂР°Р»Рё РІРѕР»РєРё РёР»Рё РµС‰Рµ РєС‚Рѕ-РЅРёР±СѓРґСЊ РїРѕС…СѓР¶Рµ.
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_04"); //РЇ Р±РѕСЋСЃСЊ, С‡С‚Рѕ РѕРґРЅР°Р¶РґС‹ РЅР° РѕС…РѕС‚Рµ СЏ РЅР°Р№РґСѓ РµРіРѕ РёР·СѓСЂРѕРґРѕРІР°РЅРЅС‹Р№ С‚СЂСѓРї.
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_05"); //РЇ СЌС‚РѕРіРѕ РЅРµ РІС‹РЅРµСЃСѓ.
 };
 
 // *****************************************************
@@ -188,7 +188,7 @@ INSTANCE DIA_Bartok_Bosper (C_INFO)
 	condition	= DIA_Bartok_Bosper_Condition;
 	information	= DIA_Bartok_Bosper_Info;
 	permanent	= FALSE;
-	description	= "Боспер говорит, что ты работал на него...";
+	description	= "Р‘РѕСЃРїРµСЂ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ СЂР°Р±РѕС‚Р°Р» РЅР° РЅРµРіРѕ...";
 };                       
 FUNC INT DIA_Bartok_Bosper_Condition()
 {
@@ -200,14 +200,14 @@ FUNC INT DIA_Bartok_Bosper_Condition()
 };
 FUNC VOID DIA_Bartok_Bosper_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_Bosper_15_00"); //Боспер говорит, что ты работал на него...
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_01"); //Да, было дело. Но его интересовали только эти чертовы шкуры.
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_02"); //Я говорил ему, как опасно стало охотиться. Но он не хотел ничего слушать.
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_03"); //Правда, платил он хорошо - грех жаловаться.
-	AI_Output (other ,self,"DIA_Bartok_Bosper_15_04"); //Ты можешь рассказать что-нибудь о нем?
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_05"); //(смеется) У Боспера недавно украли лук. Прямо средь бела дня.
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_06"); //Кто-то вломился в его лавку, схватил лук и был таков.
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_07"); //Воры наглеют прямо на глазах!
+	AI_Output (other ,self,"DIA_Bartok_Bosper_15_00"); //Р‘РѕСЃРїРµСЂ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ СЂР°Р±РѕС‚Р°Р» РЅР° РЅРµРіРѕ...
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_01"); //Р”Р°, Р±С‹Р»Рѕ РґРµР»Рѕ. РќРѕ РµРіРѕ РёРЅС‚РµСЂРµСЃРѕРІР°Р»Рё С‚РѕР»СЊРєРѕ СЌС‚Рё С‡РµСЂС‚РѕРІС‹ С€РєСѓСЂС‹.
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_02"); //РЇ РіРѕРІРѕСЂРёР» РµРјСѓ, РєР°Рє РѕРїР°СЃРЅРѕ СЃС‚Р°Р»Рѕ РѕС…РѕС‚РёС‚СЊСЃСЏ. РќРѕ РѕРЅ РЅРµ С…РѕС‚РµР» РЅРёС‡РµРіРѕ СЃР»СѓС€Р°С‚СЊ.
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_03"); //РџСЂР°РІРґР°, РїР»Р°С‚РёР» РѕРЅ С…РѕСЂРѕС€Рѕ - РіСЂРµС… Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ.
+	AI_Output (other ,self,"DIA_Bartok_Bosper_15_04"); //РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РЅРµРј?
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_05"); //(СЃРјРµРµС‚СЃСЏ) РЈ Р‘РѕСЃРїРµСЂР° РЅРµРґР°РІРЅРѕ СѓРєСЂР°Р»Рё Р»СѓРє. РџСЂСЏРјРѕ СЃСЂРµРґСЊ Р±РµР»Р° РґРЅСЏ.
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_06"); //РљС‚Рѕ-С‚Рѕ РІР»РѕРјРёР»СЃСЏ РІ РµРіРѕ Р»Р°РІРєСѓ, СЃС…РІР°С‚РёР» Р»СѓРє Рё Р±С‹Р» С‚Р°РєРѕРІ.
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_07"); //Р’РѕСЂС‹ РЅР°РіР»РµСЋС‚ РїСЂСЏРјРѕ РЅР° РіР»Р°Р·Р°С…!
 	
 	if (MIS_Bosper_Bogen != LOG_SUCCESS) 
 	{    
@@ -225,7 +225,7 @@ INSTANCE DIA_Bartok_WannaLearn (C_INFO)
 	condition	= DIA_Bartok_WannaLearn_Condition;
 	information	= DIA_Bartok_WannaLearn_Info;
 	permanent	= FALSE;
-	description	= "Ты можешь научить меня охотиться?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?";
 };                       
 FUNC INT DIA_Bartok_WannaLearn_Condition()
 {
@@ -236,17 +236,17 @@ FUNC INT DIA_Bartok_WannaLearn_Condition()
 };
 FUNC VOID DIA_Bartok_WannaLearn_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_WannaLearn_15_00"); //Ты можешь научить меня охотиться?
-	AI_Output (self ,other,"DIA_Bartok_WannaLearn_04_01"); //Я могу научить тебя красться и правильно держать лук.
+	AI_Output (other ,self,"DIA_Bartok_WannaLearn_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?
+	AI_Output (self ,other,"DIA_Bartok_WannaLearn_04_01"); //РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ РєСЂР°СЃС‚СЊСЃСЏ Рё РїСЂР°РІРёР»СЊРЅРѕ РґРµСЂР¶Р°С‚СЊ Р»СѓРє.
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Bartok_WannaLearn_04_02"); //Если ты хочешь научиться снимать шкуры с животных - иди к Босперу. Это он научил меня.
+		AI_Output (self ,other,"DIA_Bartok_WannaLearn_04_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РЅР°СѓС‡РёС‚СЊСЃСЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С… - РёРґРё Рє Р‘РѕСЃРїРµСЂСѓ. Р­С‚Рѕ РѕРЅ РЅР°СѓС‡РёР» РјРµРЅСЏ.
 	};
 	
 	Bartok_TeachPlayer = TRUE;
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Барток может обучить меня красться и стрельбе из лука.");
+	B_LogEntry (Topic_CityTeacher, "Р‘Р°СЂС‚РѕРє РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РєСЂР°СЃС‚СЊСЃСЏ Рё СЃС‚СЂРµР»СЊР±Рµ РёР· Р»СѓРєР°.");
 };
 
 // *****************************************************
@@ -259,7 +259,7 @@ INSTANCE DIA_Bartok_TeachSneak (C_INFO)
 	condition	= DIA_Bartok_TeachSneak_Condition;
 	information	= DIA_Bartok_TeachSneak_Info;
 	permanent	= TRUE;
-	description	= B_BuildLearnString ("Научи меня красться!", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
+	description	= B_BuildLearnString ("РќР°СѓС‡Рё РјРµРЅСЏ РєСЂР°СЃС‚СЊСЃСЏ!", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
 };                       
 FUNC INT DIA_Bartok_TeachSneak_Condition()
 {
@@ -271,15 +271,15 @@ FUNC INT DIA_Bartok_TeachSneak_Condition()
 };
 FUNC VOID DIA_Bartok_TeachSneak_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_TeachSneak_15_00"); //Научи меня красться!
+	AI_Output (other ,self,"DIA_Bartok_TeachSneak_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РєСЂР°СЃС‚СЊСЃСЏ!
 	
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 	{
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_01"); //Хорошо - сначала ты должен научиться правильно распределять свой вес.
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_02"); //Для этого согни ноги в коленях и старайся всегда опускать ногу на пятку.
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_03"); //Все нагрузка должна приходиться на опорную ногу, пока другая нога не будет твердо стоять на земле.
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_04"); //К большинству зверей невозможно подкрасться, если только они не спят. Они просто учуют тебя.
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_05"); //Так что будь внимателен при охоте.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_01"); //РҐРѕСЂРѕС€Рѕ - СЃРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ РЅР°СѓС‡РёС‚СЊСЃСЏ РїСЂР°РІРёР»СЊРЅРѕ СЂР°СЃРїСЂРµРґРµР»СЏС‚СЊ СЃРІРѕР№ РІРµСЃ.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_02"); //Р”Р»СЏ СЌС‚РѕРіРѕ СЃРѕРіРЅРё РЅРѕРіРё РІ РєРѕР»РµРЅСЏС… Рё СЃС‚Р°СЂР°Р№СЃСЏ РІСЃРµРіРґР° РѕРїСѓСЃРєР°С‚СЊ РЅРѕРіСѓ РЅР° РїСЏС‚РєСѓ.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_03"); //Р’СЃРµ РЅР°РіСЂСѓР·РєР° РґРѕР»Р¶РЅР° РїСЂРёС…РѕРґРёС‚СЊСЃСЏ РЅР° РѕРїРѕСЂРЅСѓСЋ РЅРѕРіСѓ, РїРѕРєР° РґСЂСѓРіР°СЏ РЅРѕРіР° РЅРµ Р±СѓРґРµС‚ С‚РІРµСЂРґРѕ СЃС‚РѕСЏС‚СЊ РЅР° Р·РµРјР»Рµ.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_04"); //Рљ Р±РѕР»СЊС€РёРЅСЃС‚РІСѓ Р·РІРµСЂРµР№ РЅРµРІРѕР·РјРѕР¶РЅРѕ РїРѕРґРєСЂР°СЃС‚СЊСЃСЏ, РµСЃР»Рё С‚РѕР»СЊРєРѕ РѕРЅРё РЅРµ СЃРїСЏС‚. РћРЅРё РїСЂРѕСЃС‚Рѕ СѓС‡СѓСЋС‚ С‚РµР±СЏ.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_05"); //РўР°Рє С‡С‚Рѕ Р±СѓРґСЊ РІРЅРёРјР°С‚РµР»РµРЅ РїСЂРё РѕС…РѕС‚Рµ.
 	};
 };
 
@@ -296,7 +296,7 @@ INSTANCE DIA_Bartok_Teach (C_INFO)
 	condition	= DIA_Bartok_Teach_Condition;
 	information	= DIA_Bartok_Teach_Info;
 	permanent	= TRUE;
-	Description = "Я хочу научиться лучше стрелять из лука!";
+	Description = "РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ Р»СѓС‡С€Рµ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР°!";
 };                       
 FUNC INT DIA_Bartok_Teach_Condition()
 {
@@ -307,8 +307,8 @@ FUNC INT DIA_Bartok_Teach_Condition()
 };
 func VOID DIA_Bartok_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Bartok_TeachBow_15_00"); //Я хочу научиться лучше стрелять из лука!
-	AI_Output (self ,other,"DIA_Bartok_TeachBow_04_01"); //Хорошо, посмотрим, чему я могу тебя научить...
+	AI_Output (other,self ,"DIA_Bartok_TeachBow_15_00"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ Р»СѓС‡С€Рµ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР°!
+	AI_Output (self ,other,"DIA_Bartok_TeachBow_04_01"); //РҐРѕСЂРѕС€Рѕ, РїРѕСЃРјРѕС‚СЂРёРј, С‡РµРјСѓ СЏ РјРѕРіСѓ С‚РµР±СЏ РЅР°СѓС‡РёС‚СЊ...
 	
 	Bosper_MerkeBow = other.HitChance[NPC_TALENT_BOW];
 	
@@ -323,11 +323,11 @@ FUNC VOID DIA_Bartok_Teach_BACK()
 {
 	if (other.HitChance[NPC_TALENT_BOW] >= 60)
 	{
-		AI_Output(self,other,"DIA_Bartok_TeachBow_BACK_04_00"); //Тебе лучше поискать кого-нибудь, кто знает больше, чем я.
+		AI_Output(self,other,"DIA_Bartok_TeachBow_BACK_04_00"); //РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ Р·РЅР°РµС‚ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ.
 	}
 	else if (Bosper_MerkeBow < other.HitChance[NPC_TALENT_BOW])
 	{
-		AI_Output(self,other,"DIA_Bartok_TeachBow_BACK_04_01"); //Хорошо, ты стал стрелять значительно лучше.
+		AI_Output(self,other,"DIA_Bartok_TeachBow_BACK_04_01"); //РҐРѕСЂРѕС€Рѕ, С‚С‹ СЃС‚Р°Р» СЃС‚СЂРµР»СЏС‚СЊ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ Р»СѓС‡С€Рµ.
 	};
 	
 	Info_ClearChoices (DIA_Bartok_Teach);
@@ -366,7 +366,7 @@ INSTANCE DIA_Bartok_Zusammen (C_INFO)
 	condition	= DIA_Bartok_Zusammen_Condition;
 	information	= DIA_Bartok_Zusammen_Info;
 	permanent	= TRUE;
-	description	= "Почему бы нам не поохотиться вместе?";
+	description	= "РџРѕС‡РµРјСѓ Р±С‹ РЅР°Рј РЅРµ РїРѕРѕС…РѕС‚РёС‚СЊСЃСЏ РІРјРµСЃС‚Рµ?";
 };                       
 FUNC INT DIA_Bartok_Zusammen_Condition()
 {
@@ -380,40 +380,40 @@ FUNC VOID DIA_Bartok_Zusammen_Info()
 {	
 	if (Bartok_Later == FALSE)
 	{
-		AI_Output (other ,self,"DIA_Bartok_Zusammen_15_00"); //Почему бы нам не поохотиться вместе?
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_01"); //Хм. Вдвоем охотиться не так опасно, это точно...
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_02"); //А что ты знаешь об охоте, а?
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_03"); //Я имею в виду, ты знаешь, как снимать шкуры с животных?
+		AI_Output (other ,self,"DIA_Bartok_Zusammen_15_00"); //РџРѕС‡РµРјСѓ Р±С‹ РЅР°Рј РЅРµ РїРѕРѕС…РѕС‚РёС‚СЊСЃСЏ РІРјРµСЃС‚Рµ?
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_01"); //РҐРј. Р’РґРІРѕРµРј РѕС…РѕС‚РёС‚СЊСЃСЏ РЅРµ С‚Р°Рє РѕРїР°СЃРЅРѕ, СЌС‚Рѕ С‚РѕС‡РЅРѕ...
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_02"); //Рђ С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± РѕС…РѕС‚Рµ, Р°?
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_03"); //РЇ РёРјРµСЋ РІ РІРёРґСѓ, С‚С‹ Р·РЅР°РµС€СЊ, РєР°Рє СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С…?
 	};
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == TRUE)
 	{
 		if (Bartok_Later == TRUE)
 		{
-			AI_Output (self ,other,"DIA_Bartok_HuntNOW_04_01"); //У тебя есть 50 монет?
+			AI_Output (self ,other,"DIA_Bartok_HuntNOW_04_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ 50 РјРѕРЅРµС‚?
 		}
 		else
 		{
-			AI_Output (other ,self,"DIA_Bartok_Zusammen_15_04"); //Да.
-			AI_Output (self ,other,"DIA_Bartok_Zusammen_04_05"); //Хорошо, я хочу получить 50 золотых монет. А ты можешь забирать себе шкуры и продавать их Босперу.
-			AI_Output (self ,other,"DIA_Bartok_Zusammen_04_06"); //Это будет честно, правда?
+			AI_Output (other ,self,"DIA_Bartok_Zusammen_15_04"); //Р”Р°.
+			AI_Output (self ,other,"DIA_Bartok_Zusammen_04_05"); //РҐРѕСЂРѕС€Рѕ, СЏ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Рђ С‚С‹ РјРѕР¶РµС€СЊ Р·Р°Р±РёСЂР°С‚СЊ СЃРµР±Рµ С€РєСѓСЂС‹ Рё РїСЂРѕРґР°РІР°С‚СЊ РёС… Р‘РѕСЃРїРµСЂСѓ.
+			AI_Output (self ,other,"DIA_Bartok_Zusammen_04_06"); //Р­С‚Рѕ Р±СѓРґРµС‚ С‡РµСЃС‚РЅРѕ, РїСЂР°РІРґР°?
 		};
 		
 		Info_ClearChoices (DIA_Bartok_Zusammen);
-		Info_AddChoice	  (DIA_Bartok_Zusammen, "Позже...", DIA_Bartok_Zusammen_Later);
-		Info_AddChoice	  (DIA_Bartok_Zusammen, "Вот, держи...", DIA_Bartok_Zusammen_Pay);
+		Info_AddChoice	  (DIA_Bartok_Zusammen, "РџРѕР·Р¶Рµ...", DIA_Bartok_Zusammen_Later);
+		Info_AddChoice	  (DIA_Bartok_Zusammen, "Р’РѕС‚, РґРµСЂР¶Рё...", DIA_Bartok_Zusammen_Pay);
 	}
 	else
 	{
-		AI_Output (other ,self,"DIA_Bartok_Zusammen_15_07"); //Нет.
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_08"); //Тогда овчинка выделки не стоит.
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_09"); //Возвращайся, когда научишься чему-нибудь.
+		AI_Output (other ,self,"DIA_Bartok_Zusammen_15_07"); //РќРµС‚.
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_08"); //РўРѕРіРґР° РѕРІС‡РёРЅРєР° РІС‹РґРµР»РєРё РЅРµ СЃС‚РѕРёС‚.
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_09"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° РЅР°СѓС‡РёС€СЊСЃСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ.
 	};
 };
 
 func void DIA_Bartok_Zusammen_Later()
 {
-	AI_Output (other ,self,"DIA_Bartok_HuntNOW_Later_15_00"); //Позже...
+	AI_Output (other ,self,"DIA_Bartok_HuntNOW_Later_15_00"); //РџРѕР·Р¶Рµ...
 	Bartok_Later = TRUE;
 	Info_ClearChoices (DIA_Bartok_Zusammen);
 };
@@ -424,12 +424,12 @@ func void DIA_Bartok_Zusammen_Pay()
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 50))
 	{
-		AI_Output (other ,self,"DIA_Bartok_HuntNOW_GO_15_00"); //Вот, держи...
+		AI_Output (other ,self,"DIA_Bartok_HuntNOW_GO_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё...
 		Bartok_Bereit = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_03"); //Где? Не вижу! У тебя нет золота.
+		AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_03"); //Р“РґРµ? РќРµ РІРёР¶Сѓ! РЈ С‚РµР±СЏ РЅРµС‚ Р·РѕР»РѕС‚Р°.
 	};
 };
 
@@ -447,7 +447,7 @@ INSTANCE DIA_Bartok_HuntNOW (C_INFO)
 	condition	= DIA_Bartok_HuntNOW_Condition;
 	information	= DIA_Bartok_HuntNOW_Info;
 	permanent	= FALSE;
-	description	= "Пойдем охотиться!";
+	description	= "РџРѕР№РґРµРј РѕС…РѕС‚РёС‚СЊСЃСЏ!";
 };                       
 FUNC INT DIA_Bartok_HuntNOW_Condition()
 {
@@ -458,9 +458,9 @@ FUNC INT DIA_Bartok_HuntNOW_Condition()
 };
 FUNC VOID DIA_Bartok_HuntNOW_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_HuntNOW_15_00"); //Пойдем охотиться!
-	AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_01"); //Хорошо, пошли за мной. За южными воротами начинается лес. Там водится более чем достаточно всяких тварей.
-	AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_02"); //(себе под нос) Даже больше, чем хотелось бы...
+	AI_Output (other ,self,"DIA_Bartok_HuntNOW_15_00"); //РџРѕР№РґРµРј РѕС…РѕС‚РёС‚СЊСЃСЏ!
+	AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_01"); //РҐРѕСЂРѕС€Рѕ, РїРѕС€Р»Рё Р·Р° РјРЅРѕР№. Р—Р° СЋР¶РЅС‹РјРё РІРѕСЂРѕС‚Р°РјРё РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃ. РўР°Рј РІРѕРґРёС‚СЃСЏ Р±РѕР»РµРµ С‡РµРј РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РІСЃСЏРєРёС… С‚РІР°СЂРµР№.
+	AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_02"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р”Р°Р¶Рµ Р±РѕР»СЊС€Рµ, С‡РµРј С…РѕС‚РµР»РѕСЃСЊ Р±С‹...
 	Bartok_Los = TRUE;
 		
 	AI_StopProcessInfos (self);
@@ -498,17 +498,17 @@ FUNC INT DIA_Bartok_ImWald_Condition()
 };
 FUNC VOID DIA_Bartok_ImWald_Info()
 {	
-	AI_Output (self ,other,"DIA_Bartok_ImWald_04_00"); //Как ты думаешь, стоит нам углубиться в лес или нет?
+	AI_Output (self ,other,"DIA_Bartok_ImWald_04_00"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, СЃС‚РѕРёС‚ РЅР°Рј СѓРіР»СѓР±РёС‚СЊСЃСЏ РІ Р»РµСЃ РёР»Рё РЅРµС‚?
 	
 	Info_ClearChoices (DIA_Bartok_ImWald);
-	Info_AddChoice	  (DIA_Bartok_ImWald, "Пойдем назад!", DIA_Bartok_ImWald_NachHause);
-	Info_AddChoice	  (DIA_Bartok_ImWald, "Стоит.", DIA_Bartok_ImWald_Weiter);
+	Info_AddChoice	  (DIA_Bartok_ImWald, "РџРѕР№РґРµРј РЅР°Р·Р°Рґ!", DIA_Bartok_ImWald_NachHause);
+	Info_AddChoice	  (DIA_Bartok_ImWald, "РЎС‚РѕРёС‚.", DIA_Bartok_ImWald_Weiter);
 };
 
 func void DIA_Bartok_ImWald_NachHause()
 {
-	AI_Output (other ,self,"DIA_Bartok_ImWald_NachHause_15_00"); //Пойдем назад!
-	AI_Output (self ,other,"DIA_Bartok_ImWald_NachHause_04_01"); //Я тоже так думаю. А то мы так попадем прямо в объятия орка.
+	AI_Output (other ,self,"DIA_Bartok_ImWald_NachHause_15_00"); //РџРѕР№РґРµРј РЅР°Р·Р°Рґ!
+	AI_Output (self ,other,"DIA_Bartok_ImWald_NachHause_04_01"); //РЇ С‚РѕР¶Рµ С‚Р°Рє РґСѓРјР°СЋ. Рђ С‚Рѕ РјС‹ С‚Р°Рє РїРѕРїР°РґРµРј РїСЂСЏРјРѕ РІ РѕР±СЉСЏС‚РёСЏ РѕСЂРєР°.
 	
 	Info_ClearChoices (DIA_Bartok_ImWald);
 	AI_StopProcessInfos (self);
@@ -518,8 +518,8 @@ func void DIA_Bartok_ImWald_NachHause()
 
 func void DIA_Bartok_ImWald_Weiter()
 {
-	AI_Output (other ,self,"DIA_Bartok_ImWald_Weiter_15_00"); //Стоит.
-	AI_Output (self ,other,"DIA_Bartok_ImWald_Weiter_04_01"); //Хорошо. (по себя) Будем надеяться, что нам повезет...
+	AI_Output (other ,self,"DIA_Bartok_ImWald_Weiter_15_00"); //РЎС‚РѕРёС‚.
+	AI_Output (self ,other,"DIA_Bartok_ImWald_Weiter_04_01"); //РҐРѕСЂРѕС€Рѕ. (РїРѕ СЃРµР±СЏ) Р‘СѓРґРµРј РЅР°РґРµСЏС‚СЊСЃСЏ, С‡С‚Рѕ РЅР°Рј РїРѕРІРµР·РµС‚...
 	
 	if (!Npc_IsDead(CityOrc))
 	{
@@ -556,8 +556,8 @@ FUNC INT DIA_Bartok_Angekommen_Condition()
 };
 FUNC VOID DIA_Bartok_Angekommen_Info()
 {	
-	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_00"); //Все! Я думаю, мне лучше вернуться в город.
-	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_01"); //Здесь для меня слишком опасно - и даже для нас двоих.
+	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_00"); //Р’СЃРµ! РЇ РґСѓРјР°СЋ, РјРЅРµ Р»СѓС‡С€Рµ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РіРѕСЂРѕРґ.
+	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_01"); //Р—РґРµСЃСЊ РґР»СЏ РјРµРЅСЏ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ - Рё РґР°Р¶Рµ РґР»СЏ РЅР°СЃ РґРІРѕРёС….
 	
 	if (Bartok_OrkStillThere == TRUE)
 	//&& (Npc_IsDead (CityOrc))
@@ -567,8 +567,8 @@ FUNC VOID DIA_Bartok_Angekommen_Info()
 		Bartok_OrkGesagt = TRUE;
 	};
 	
-	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_03"); //Еще увидимся!
-	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_04"); //Ты можешь продать шкуры Босперу.
+	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_03"); //Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ!
+	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_04"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ С€РєСѓСЂС‹ Р‘РѕСЃРїРµСЂСѓ.
 	
 	Bartok_Ende = TRUE;
 	AI_StopProcessInfos (self);
@@ -587,7 +587,7 @@ INSTANCE DIA_Bartok_PERM (C_INFO)
 	condition	= DIA_Bartok_PERM_Condition;
 	information	= DIA_Bartok_PERM_Info;
 	permanent	= TRUE;
-	description = "Все в порядке?";
+	description = "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };                       
 FUNC INT DIA_Bartok_PERM_Condition()
 {
@@ -598,19 +598,19 @@ FUNC INT DIA_Bartok_PERM_Condition()
 };
 FUNC VOID DIA_Bartok_PERM_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_PERM_15_00"); //Все в порядке?
+	AI_Output (other ,self,"DIA_Bartok_PERM_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if (Bartok_Ende == TRUE)
 	{		
-		AI_Output (self ,other,"DIA_Bartok_PERM_04_01"); //Да. Но я больше не выйду из города. По крайней мере, в ближайшее время.
+		AI_Output (self ,other,"DIA_Bartok_PERM_04_01"); //Р”Р°. РќРѕ СЏ Р±РѕР»СЊС€Рµ РЅРµ РІС‹Р№РґСѓ РёР· РіРѕСЂРѕРґР°. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.
 		if (Bartok_OrkGesagt == TRUE)
 		{
-			AI_Output (self ,other,"DIA_Bartok_PERM_04_02"); //У меня все еще поджилки трясутся от одной мысли об этом орке.
+			AI_Output (self ,other,"DIA_Bartok_PERM_04_02"); //РЈ РјРµРЅСЏ РІСЃРµ РµС‰Рµ РїРѕРґР¶РёР»РєРё С‚СЂСЏСЃСѓС‚СЃСЏ РѕС‚ РѕРґРЅРѕР№ РјС‹СЃР»Рё РѕР± СЌС‚РѕРј РѕСЂРєРµ.
 		};
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Bartok_PERM_04_03"); //Конечно. Давая прикончим еще парочку зверей!
+		AI_Output (self ,other,"DIA_Bartok_PERM_04_03"); //РљРѕРЅРµС‡РЅРѕ. Р”Р°РІР°СЏ РїСЂРёРєРѕРЅС‡РёРј РµС‰Рµ РїР°СЂРѕС‡РєСѓ Р·РІРµСЂРµР№!
 	};
 };
 

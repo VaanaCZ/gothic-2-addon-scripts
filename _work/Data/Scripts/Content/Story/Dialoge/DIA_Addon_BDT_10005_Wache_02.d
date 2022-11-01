@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Wache_02_Hi   (C_INFO)
 	condition   = DIA_Addon_Wache_02_Hi_Condition;
 	information = DIA_Addon_Wache_02_Hi_Info;
 	permanent   = FALSE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 {	
@@ -71,10 +71,10 @@ FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//Как дела?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Подожди-ка, а мы с тобой не знакомы?
+	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//РџРѕРґРѕР¶РґРё-РєР°, Р° РјС‹ СЃ С‚РѕР±РѕР№ РЅРµ Р·РЅР°РєРѕРјС‹?
 	B_UseFakeScroll ();
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Хм-м... нет, ты не похож. Проходи, не задерживайся.
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//РҐРј-Рј... РЅРµС‚, С‚С‹ РЅРµ РїРѕС…РѕР¶. РџСЂРѕС…РѕРґРё, РЅРµ Р·Р°РґРµСЂР¶РёРІР°Р№СЃСЏ.
 };
 //--------------------------------------------------------------------
 //	Info Attentat
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Wache_02_Attentat   (C_INFO)
 	condition   = DIA_Addon_Wache_02_Attentat_Condition;
 	information = DIA_Addon_Wache_02_Attentat_Info;
 	permanent   = FALSE;
-	description = "Что тебе известно о нападении?";
+	description = "Р§С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ Рѕ РЅР°РїР°РґРµРЅРёРё?";
 };
 FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 {	
@@ -98,9 +98,9 @@ FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Что ты знаешь о нападении?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Что я знаю о нем? (смеется) Я сломал этому парню ноги.
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(угрожающе) И я сделаю это с каждым, кто попробует напасть на Эстебана...
+	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РЅР°РїР°РґРµРЅРёРё?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Р§С‚Рѕ СЏ Р·РЅР°СЋ Рѕ РЅРµРј? (СЃРјРµРµС‚СЃСЏ) РЇ СЃР»РѕРјР°Р» СЌС‚РѕРјСѓ РїР°СЂРЅСЋ РЅРѕРіРё.
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Р СЏ СЃРґРµР»Р°СЋ СЌС‚Рѕ СЃ РєР°Р¶РґС‹Рј, РєС‚Рѕ РїРѕРїСЂРѕР±СѓРµС‚ РЅР°РїР°СЃС‚СЊ РЅР° Р­СЃС‚РµР±Р°РЅР°...
 };
 //--------------------------------------------------------------------
 //	Info perm
@@ -112,7 +112,7 @@ INSTANCE DIA_Addon_Wache_02_perm   (C_INFO)
 	condition   = DIA_Addon_Wache_02_perm_Condition;
 	information = DIA_Addon_Wache_02_perm_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_Wache_02_perm_Condition()
 {	
@@ -123,12 +123,12 @@ FUNC INT DIA_Addon_Wache_02_perm_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_perm_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//Как дела?
-	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//Пока что тихо.
+	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//РџРѕРєР° С‡С‚Рѕ С‚РёС…Рѕ.
 	
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Ты найдешь предателя - мы позаботимся о нем...
+		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//РўС‹ РЅР°Р№РґРµС€СЊ РїСЂРµРґР°С‚РµР»СЏ - РјС‹ РїРѕР·Р°Р±РѕС‚РёРјСЃСЏ Рѕ РЅРµРј...
 	};
 };
 

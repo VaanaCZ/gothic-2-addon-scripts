@@ -42,7 +42,7 @@ FUNC INT DIA_Girion_Hallo_Condition()
 };
 FUNC VOID DIA_Girion_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Girion_Hallo_08_00"); //ß Ãèðèîí, ìàñòåð áîÿ äâóðó÷íûì îðóæèåì è ïàëàäèí êîðîëÿ. Ïî êàêîìó ïîâîäó òû áåñïîêîèøü ìåíÿ?
+	AI_Output (self, other, "DIA_Girion_Hallo_08_00"); //Ð¯ Ð“Ð¸Ñ€Ð¸Ð¾Ð½, Ð¼Ð°ÑÑ‚ÐµÑ€ Ð±Ð¾Ñ Ð´Ð²ÑƒÑ€ÑƒÑ‡Ð½Ñ‹Ð¼ Ð¾Ñ€ÑƒÐ¶Ð¸ÐµÐ¼ Ð¸ Ð¿Ð°Ð»Ð°Ð´Ð¸Ð½ ÐºÐ¾Ñ€Ð¾Ð»Ñ. ÐŸÐ¾ ÐºÐ°ÐºÐ¾Ð¼Ñƒ Ð¿Ð¾Ð²Ð¾Ð´Ñƒ Ñ‚Ñ‹ Ð±ÐµÑÐ¿Ð¾ÐºÐ¾Ð¸ÑˆÑŒ Ð¼ÐµÐ½Ñ?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Can You Teach Me?
@@ -54,7 +54,7 @@ instance DIA_Girion_CanTeach		(C_INFO)
 	condition	 = 	DIA_Girion_CanTeach_Condition;
 	information	 = 	DIA_Girion_CanTeach_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Òû ìîæåøü îáó÷èòü ìåíÿ?";
+	description	 = 	"Ð¢Ñ‹ Ð¼Ð¾Ð¶ÐµÑˆÑŒ Ð¾Ð±ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¼ÐµÐ½Ñ?";
 };
 func int DIA_Girion_CanTeach_Condition ()
 {	
@@ -65,20 +65,20 @@ func int DIA_Girion_CanTeach_Condition ()
 };
 func void DIA_Girion_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Girion_CanTeach_15_00"); //Òû ìîæåøü îáó÷èòü ìåíÿ?
+	AI_Output (other, self, "DIA_Girion_CanTeach_15_00"); //Ð¢Ñ‹ Ð¼Ð¾Ð¶ÐµÑˆÑŒ Ð¾Ð±ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¼ÐµÐ½Ñ?
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_01"); //Ýòî õîðîøî, ÷òî òû õî÷åøü îáó÷èòüñÿ ñàìîìó áëàãîðîäíîìó èç âñåõ áîåâûõ ñòèëåé. Êàê è ïîäîáàåò íàñòîÿùåìó âîèíó Èííîñà.
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_02"); //ß îáó÷ó òåáÿ. Îáðàòèñü êî ìíå, êîãäà áóäåøü ãîòîâ.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_01"); //Ð­Ñ‚Ð¾ Ñ…Ð¾Ñ€Ð¾ÑˆÐ¾, Ñ‡Ñ‚Ð¾ Ñ‚Ñ‹ Ñ…Ð¾Ñ‡ÐµÑˆÑŒ Ð¾Ð±ÑƒÑ‡Ð¸Ñ‚ÑŒÑÑ ÑÐ°Ð¼Ð¾Ð¼Ñƒ Ð±Ð»Ð°Ð³Ð¾Ñ€Ð¾Ð´Ð½Ð¾Ð¼Ñƒ Ð¸Ð· Ð²ÑÐµÑ… Ð±Ð¾ÐµÐ²Ñ‹Ñ… ÑÑ‚Ð¸Ð»ÐµÐ¹. ÐšÐ°Ðº Ð¸ Ð¿Ð¾Ð´Ð¾Ð±Ð°ÐµÑ‚ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐ¼Ñƒ Ð²Ð¾Ð¸Ð½Ñƒ Ð˜Ð½Ð½Ð¾ÑÐ°.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_02"); //Ð¯ Ð¾Ð±ÑƒÑ‡Ñƒ Ñ‚ÐµÐ±Ñ. ÐžÐ±Ñ€Ð°Ñ‚Ð¸ÑÑŒ ÐºÐ¾ Ð¼Ð½Ðµ, ÐºÐ¾Ð³Ð´Ð° Ð±ÑƒÐ´ÐµÑˆÑŒ Ð³Ð¾Ñ‚Ð¾Ð².
 		
 		Girion_Teach2H = TRUE;	
-		B_LogEntry (TOPIC_CityTeacher,"Ïàëàäèí Ãèðèîí ìîæåò îáó÷èòü ìåíÿ èñêóññòâó ñðàæåíèÿ äâóðó÷íûì îðóæèåì.");
+		B_LogEntry (TOPIC_CityTeacher,"ÐŸÐ°Ð»Ð°Ð´Ð¸Ð½ Ð“Ð¸Ñ€Ð¸Ð¾Ð½ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¾Ð±ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¼ÐµÐ½Ñ Ð¸ÑÐºÑƒÑÑÑ‚Ð²Ñƒ ÑÑ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ð´Ð²ÑƒÑ€ÑƒÑ‡Ð½Ñ‹Ð¼ Ð¾Ñ€ÑƒÐ¶Ð¸ÐµÐ¼.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_03"); //Åñëè òû õî÷åøü îáó÷èòüñÿ ÷åìó-íèáóäü, òåáå ëó÷øå ïîèñêàòü ó÷èòåëÿ íå èç íàøåãî îðäåíà.
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_04"); //ß âîèí, à íå ó÷èòåëü.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_03"); //Ð•ÑÐ»Ð¸ Ñ‚Ñ‹ Ñ…Ð¾Ñ‡ÐµÑˆÑŒ Ð¾Ð±ÑƒÑ‡Ð¸Ñ‚ÑŒÑÑ Ñ‡ÐµÐ¼Ñƒ-Ð½Ð¸Ð±ÑƒÐ´ÑŒ, Ñ‚ÐµÐ±Ðµ Ð»ÑƒÑ‡ÑˆÐµ Ð¿Ð¾Ð¸ÑÐºÐ°Ñ‚ÑŒ ÑƒÑ‡Ð¸Ñ‚ÐµÐ»Ñ Ð½Ðµ Ð¸Ð· Ð½Ð°ÑˆÐµÐ³Ð¾ Ð¾Ñ€Ð´ÐµÐ½Ð°.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_04"); //Ð¯ Ð²Ð¾Ð¸Ð½, Ð° Ð½Ðµ ÑƒÑ‡Ð¸Ñ‚ÐµÐ»ÑŒ.
 	};
 };
 //**************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_Girion_Teach(C_INFO)
 	condition	= DIA_Girion_Teach_Condition;
 	information	= DIA_Girion_Teach_Info;
 	permanent	= TRUE;
-	description = "ß ãîòîâ ê îáó÷åíèþ.";
+	description = "Ð¯ Ð³Ð¾Ñ‚Ð¾Ð² Ðº Ð¾Ð±ÑƒÑ‡ÐµÐ½Ð¸ÑŽ.";
 };                       
 //----------------------------------
 var int DIA_Girion_Teach_permanent;
@@ -111,7 +111,7 @@ FUNC VOID DIA_Girion_Teach_Info()
 {	
 	girion_merk2h = other.HitChance[NPC_TALENT_2H];  
 	
-	AI_Output (other,self ,"DIA_Girion_Teach_15_00"); //ß ãîòîâ ê îáó÷åíèþ.
+	AI_Output (other,self ,"DIA_Girion_Teach_15_00"); //Ð¯ Ð³Ð¾Ñ‚Ð¾Ð² Ðº Ð¾Ð±ÑƒÑ‡ÐµÐ½Ð¸ÑŽ.
 	
 	Info_ClearChoices 	(DIA_Girion_Teach);
 	Info_AddChoice 		(DIA_Girion_Teach,	DIALOG_BACK		,DIA_Girion_Teach_Back);
@@ -123,10 +123,10 @@ FUNC VOID DIA_Girion_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_2H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_00"); //Âîîáùå-òî ãîâîðÿ, òâîå îáó÷åíèå åùå íå çàâåðøåíî, íî ÿ áîëüøå íè÷åìó íå ìîãó íàó÷èòü òåáÿ.
-		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_01"); //Åñëè òû õî÷åøü îòòî÷èòü ñâîå ìàñòåðñòâî åùå áîëüøå, òåáå ëó÷øå ïîèñêàòü íàñòîÿùåãî ìàñòåðà ìå÷à.
-		AI_Output (other,self,"DIA_DIA_Girion_Teach_15_02"); //Ãäå ìíå íàéòè òàêîãî ÷åëîâåêà?
-		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_03"); //Ëîðä Õàãåí - ìàñòåð-ìå÷íèê. Îí, íàâåðíÿêà ñìîæåò îáó÷èòü òåáÿ.
+		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_00"); //Ð’Ð¾Ð¾Ð±Ñ‰Ðµ-Ñ‚Ð¾ Ð³Ð¾Ð²Ð¾Ñ€Ñ, Ñ‚Ð²Ð¾Ðµ Ð¾Ð±ÑƒÑ‡ÐµÐ½Ð¸Ðµ ÐµÑ‰Ðµ Ð½Ðµ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¾, Ð½Ð¾ Ñ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð½Ð¸Ñ‡ÐµÐ¼Ñƒ Ð½Ðµ Ð¼Ð¾Ð³Ñƒ Ð½Ð°ÑƒÑ‡Ð¸Ñ‚ÑŒ Ñ‚ÐµÐ±Ñ.
+		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_01"); //Ð•ÑÐ»Ð¸ Ñ‚Ñ‹ Ñ…Ð¾Ñ‡ÐµÑˆÑŒ Ð¾Ñ‚Ñ‚Ð¾Ñ‡Ð¸Ñ‚ÑŒ ÑÐ²Ð¾Ðµ Ð¼Ð°ÑÑ‚ÐµÑ€ÑÑ‚Ð²Ð¾ ÐµÑ‰Ðµ Ð±Ð¾Ð»ÑŒÑˆÐµ, Ñ‚ÐµÐ±Ðµ Ð»ÑƒÑ‡ÑˆÐµ Ð¿Ð¾Ð¸ÑÐºÐ°Ñ‚ÑŒ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐ³Ð¾ Ð¼Ð°ÑÑ‚ÐµÑ€Ð° Ð¼ÐµÑ‡Ð°.
+		AI_Output (other,self,"DIA_DIA_Girion_Teach_15_02"); //Ð“Ð´Ðµ Ð¼Ð½Ðµ Ð½Ð°Ð¹Ñ‚Ð¸ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ñ‡ÐµÐ»Ð¾Ð²ÐµÐºÐ°?
+		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_03"); //Ð›Ð¾Ñ€Ð´ Ð¥Ð°Ð³ÐµÐ½ - Ð¼Ð°ÑÑ‚ÐµÑ€-Ð¼ÐµÑ‡Ð½Ð¸Ðº. ÐžÐ½, Ð½Ð°Ð²ÐµÑ€Ð½ÑÐºÐ° ÑÐ¼Ð¾Ð¶ÐµÑ‚ Ð¾Ð±ÑƒÑ‡Ð¸Ñ‚ÑŒ Ñ‚ÐµÐ±Ñ.
 		
 		DIA_Girion_Teach_permanent = TRUE;
 	};
@@ -141,19 +141,19 @@ FUNC VOID DIA_Girion_Teach_2H_1 ()
 	{
 		if (Girion_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_00"); //Ñðàæàéñÿ ñ ÷åñòüþ. Áîé - íàøà æèçíü, à ÷òî çà æèçíü áåç ÷åñòè?
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_00"); //Ð¡Ñ€Ð°Ð¶Ð°Ð¹ÑÑ Ñ Ñ‡ÐµÑÑ‚ÑŒÑŽ. Ð‘Ð¾Ð¹ - Ð½Ð°ÑˆÐ° Ð¶Ð¸Ð·Ð½ÑŒ, Ð° Ñ‡Ñ‚Ð¾ Ð·Ð° Ð¶Ð¸Ð·Ð½ÑŒ Ð±ÐµÐ· Ñ‡ÐµÑÑ‚Ð¸?
 		};
 		if (Girion_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_01"); //Áóäü îñòîðîæåí è áûñòð â áîþ. Óäèâëÿé ñâîåãî ïðîòèâíèêà.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_01"); //Ð‘ÑƒÐ´ÑŒ Ð¾ÑÑ‚Ð¾Ñ€Ð¾Ð¶ÐµÐ½ Ð¸ Ð±Ñ‹ÑÑ‚Ñ€ Ð² Ð±Ð¾ÑŽ. Ð£Ð´Ð¸Ð²Ð»ÑÐ¹ ÑÐ²Ð¾ÐµÐ³Ð¾ Ð¿Ñ€Ð¾Ñ‚Ð¸Ð²Ð½Ð¸ÐºÐ°.
 		};
 		if (Girion_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_02"); //Íèêîãäà íå âñòóïàé â áîé íåïîäãîòîâëåííûì. Íåèçâåñòíî, ñêîëüêî îí áóäåò äëèòüñÿ.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_02"); //ÐÐ¸ÐºÐ¾Ð³Ð´Ð° Ð½Ðµ Ð²ÑÑ‚ÑƒÐ¿Ð°Ð¹ Ð² Ð±Ð¾Ð¹ Ð½ÐµÐ¿Ð¾Ð´Ð³Ð¾Ñ‚Ð¾Ð²Ð»ÐµÐ½Ð½Ñ‹Ð¼. ÐÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð¾, ÑÐºÐ¾Ð»ÑŒÐºÐ¾ Ð¾Ð½ Ð±ÑƒÐ´ÐµÑ‚ Ð´Ð»Ð¸Ñ‚ÑŒÑÑ.
 		};
 		if (Girion_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_03"); //Ïàëàäèí âñåãäà ãîòîâ ê áîþ. Íî íèêîãäà íå íà÷èíàåò áîé, â êîòîðîì íå ìîæåò ïîáåäèòü.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_03"); //ÐŸÐ°Ð»Ð°Ð´Ð¸Ð½ Ð²ÑÐµÐ³Ð´Ð° Ð³Ð¾Ñ‚Ð¾Ð² Ðº Ð±Ð¾ÑŽ. ÐÐ¾ Ð½Ð¸ÐºÐ¾Ð³Ð´Ð° Ð½Ðµ Ð½Ð°Ñ‡Ð¸Ð½Ð°ÐµÑ‚ Ð±Ð¾Ð¹, Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¿Ð¾Ð±ÐµÐ´Ð¸Ñ‚ÑŒ.
 		};
 		
 		Girion_Labercount = Girion_Labercount +1;
@@ -176,19 +176,19 @@ FUNC VOID DIA_Girion_Teach_2H_5 ()
 	{
 		if (Girion_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_00"); //Ïàëàäèí ñðàæàåòñÿ íå òîëüêî ìå÷îì, íî è ãîëîâîé.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_00"); //ÐŸÐ°Ð»Ð°Ð´Ð¸Ð½ ÑÑ€Ð°Ð¶Ð°ÐµÑ‚ÑÑ Ð½Ðµ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¼ÐµÑ‡Ð¾Ð¼, Ð½Ð¾ Ð¸ Ð³Ð¾Ð»Ð¾Ð²Ð¾Ð¹.
 		};
 		if (Girion_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_01"); //Òû äîëæåí ïîíèìàòü, êîãäà ëó÷øå îòñòóïèòü.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_01"); //Ð¢Ñ‹ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð¿Ð¾Ð½Ð¸Ð¼Ð°Ñ‚ÑŒ, ÐºÐ¾Ð³Ð´Ð° Ð»ÑƒÑ‡ÑˆÐµ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ð¸Ñ‚ÑŒ.
 		};
 		if (Girion_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_02"); //Ïîìíè, åñëè òû ñðàæàåøüñÿ õîðîøî, òû êîíòðîëèðóåøü ñâîåãî ïðîòèâíèêà è íå äàåøü åìó øàíñà êîíòðîëèðîâàòü ñåáÿ.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_02"); //ÐŸÐ¾Ð¼Ð½Ð¸, ÐµÑÐ»Ð¸ Ñ‚Ñ‹ ÑÑ€Ð°Ð¶Ð°ÐµÑˆÑŒÑÑ Ñ…Ð¾Ñ€Ð¾ÑˆÐ¾, Ñ‚Ñ‹ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ð¸Ñ€ÑƒÐµÑˆÑŒ ÑÐ²Ð¾ÐµÐ³Ð¾ Ð¿Ñ€Ð¾Ñ‚Ð¸Ð²Ð½Ð¸ÐºÐ° Ð¸ Ð½Ðµ Ð´Ð°ÐµÑˆÑŒ ÐµÐ¼Ñƒ ÑˆÐ°Ð½ÑÐ° ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐµÐ±Ñ.
 		};
 		if (Girion_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_03"); //Îòñòóïëåíèå - ýòî âñåãäà ïîòåðÿ.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_03"); //ÐžÑ‚ÑÑ‚ÑƒÐ¿Ð»ÐµÐ½Ð¸Ðµ - ÑÑ‚Ð¾ Ð²ÑÐµÐ³Ð´Ð° Ð¿Ð¾Ñ‚ÐµÑ€Ñ.
 		};
 		
 		Girion_Labercount = Girion_Labercount +1;
@@ -228,7 +228,7 @@ func int DIA_Girion_CATCHPLAYERSTOLENSHIP_Condition ()
 {
 	if (Kapitel >= 5)
 	&& (MIS_ShipIsFree == TRUE) 
-	&& (Npc_GetDistToWP(self,"NW_CITY_WAY_TO_SHIP_25")<1000) //Joly: ist nur hier, wenn SC die Wachen überredet hat, ihm das Schiff zu geben.
+	&& (Npc_GetDistToWP(self,"NW_CITY_WAY_TO_SHIP_25")<1000) //Joly: ist nur hier, wenn SC die Wachen ÑŒberredet hat, ihm das Schiff zu geben.
 	{
 		return TRUE;
 	};
@@ -236,33 +236,33 @@ func int DIA_Girion_CATCHPLAYERSTOLENSHIP_Condition ()
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_Info ()
 {
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_08_00"); //Ýé! Òû ìîæåøü ñêàçàòü ìíå, ÷òî òû äåëàåøü çäåñü?
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_08_00"); //Ð­Ð¹! Ð¢Ñ‹ Ð¼Ð¾Ð¶ÐµÑˆÑŒ ÑÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¼Ð½Ðµ, Ñ‡Ñ‚Ð¾ Ñ‚Ñ‹ Ð´ÐµÐ»Ð°ÐµÑˆÑŒ Ð·Ð´ÐµÑÑŒ?
 
 	Info_ClearChoices	(DIA_Girion_CATCHPLAYERSTOLENSHIP);
-	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "ß íå çíàþ, î ÷åì òû ãîâîðèøü.", DIA_Girion_CATCHPLAYERSTOLENSHIP_no );
-	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Ïðî÷ü ñ ìîåé äîðîãè, èëè ìíå ïðèäåòñÿ óáèòü òåáÿ.", DIA_Girion_CATCHPLAYERSTOLENSHIP_weg );
-	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Ìíå íóæåí ýòîò êîðàáëü.", DIA_Girion_CATCHPLAYERSTOLENSHIP_ship );
+	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Ð¯ Ð½Ðµ Ð·Ð½Ð°ÑŽ, Ð¾ Ñ‡ÐµÐ¼ Ñ‚Ñ‹ Ð³Ð¾Ð²Ð¾Ñ€Ð¸ÑˆÑŒ.", DIA_Girion_CATCHPLAYERSTOLENSHIP_no );
+	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "ÐŸÑ€Ð¾Ñ‡ÑŒ Ñ Ð¼Ð¾ÐµÐ¹ Ð´Ð¾Ñ€Ð¾Ð³Ð¸, Ð¸Ð»Ð¸ Ð¼Ð½Ðµ Ð¿Ñ€Ð¸Ð´ÐµÑ‚ÑÑ ÑƒÐ±Ð¸Ñ‚ÑŒ Ñ‚ÐµÐ±Ñ.", DIA_Girion_CATCHPLAYERSTOLENSHIP_weg );
+	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "ÐœÐ½Ðµ Ð½ÑƒÐ¶ÐµÐ½ ÑÑ‚Ð¾Ñ‚ ÐºÐ¾Ñ€Ð°Ð±Ð»ÑŒ.", DIA_Girion_CATCHPLAYERSTOLENSHIP_ship );
 
 };
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_no ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_15_00"); //ß íå çíàþ, î ÷åì òû ãîâîðèøü.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_01"); //ß ãîâîðþ î òîì, ÷òî òû ñäåëàë ñ êîðàáåëüíîé ñòðàæåé. Ýòî äåëî ïëîõî ïàõíåò.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_15_00"); //Ð¯ Ð½Ðµ Ð·Ð½Ð°ÑŽ, Ð¾ Ñ‡ÐµÐ¼ Ñ‚Ñ‹ Ð³Ð¾Ð²Ð¾Ñ€Ð¸ÑˆÑŒ.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_01"); //Ð¯ Ð³Ð¾Ð²Ð¾Ñ€ÑŽ Ð¾ Ñ‚Ð¾Ð¼, Ñ‡Ñ‚Ð¾ Ñ‚Ñ‹ ÑÐ´ÐµÐ»Ð°Ð» Ñ ÐºÐ¾Ñ€Ð°Ð±ÐµÐ»ÑŒÐ½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð¶ÐµÐ¹. Ð­Ñ‚Ð¾ Ð´ÐµÐ»Ð¾ Ð¿Ð»Ð¾Ñ…Ð¾ Ð¿Ð°Ñ…Ð½ÐµÑ‚.
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_02"); //Äàæå íåñìîòðÿ íà òî, ÷òî òû ìàã, ÿ íå äîâåðÿþ òåáå.
+		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_02"); //Ð”Ð°Ð¶Ðµ Ð½ÐµÑÐ¼Ð¾Ñ‚Ñ€Ñ Ð½Ð° Ñ‚Ð¾, Ñ‡Ñ‚Ð¾ Ñ‚Ñ‹ Ð¼Ð°Ð³, Ñ Ð½Ðµ Ð´Ð¾Ð²ÐµÑ€ÑÑŽ Ñ‚ÐµÐ±Ðµ.
 	};
 };
 var int Girion_WantstoKillSC;
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_weg ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_15_00"); //Ïðî÷ü ñ ìîåé äîðîãè, èëè ìíå ïðèäåòñÿ óáèòü òåáÿ.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_01"); //Âîçìîæíî, òåáå óäàëîñü îáìàíóòü îõðàíó êîðàáëÿ, íî ñî ìíîé òåáå òàê ïðîñòî íå ñïðàâèòüñÿ, ìîé ìàëåíüêèé äðóã.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_15_00"); //ÐŸÑ€Ð¾Ñ‡ÑŒ Ñ Ð¼Ð¾ÐµÐ¹ Ð´Ð¾Ñ€Ð¾Ð³Ð¸, Ð¸Ð»Ð¸ Ð¼Ð½Ðµ Ð¿Ñ€Ð¸Ð´ÐµÑ‚ÑÑ ÑƒÐ±Ð¸Ñ‚ÑŒ Ñ‚ÐµÐ±Ñ.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_01"); //Ð’Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾, Ñ‚ÐµÐ±Ðµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ð±Ð¼Ð°Ð½ÑƒÑ‚ÑŒ Ð¾Ñ…Ñ€Ð°Ð½Ñƒ ÐºÐ¾Ñ€Ð°Ð±Ð»Ñ, Ð½Ð¾ ÑÐ¾ Ð¼Ð½Ð¾Ð¹ Ñ‚ÐµÐ±Ðµ Ñ‚Ð°Ðº Ð¿Ñ€Ð¾ÑÑ‚Ð¾ Ð½Ðµ ÑÐ¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒÑÑ, Ð¼Ð¾Ð¹ Ð¼Ð°Ð»ÐµÐ½ÑŒÐºÐ¸Ð¹ Ð´Ñ€ÑƒÐ³.
 	if (hero.guild == GIL_PAL)
 	{
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_02"); //Äàæå õîòÿ òû îäèí èç íàñ, ýòî íå äàåò òåáå ïðàâà âîðîâàòü ñîáñòâåííîñòü êîðîëÿ. Óìðè, ïðîêëÿòûé ïðåäàòåëü.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_02"); //Ð”Ð°Ð¶Ðµ Ñ…Ð¾Ñ‚Ñ Ñ‚Ñ‹ Ð¾Ð´Ð¸Ð½ Ð¸Ð· Ð½Ð°Ñ, ÑÑ‚Ð¾ Ð½Ðµ Ð´Ð°ÐµÑ‚ Ñ‚ÐµÐ±Ðµ Ð¿Ñ€Ð°Ð²Ð° Ð²Ð¾Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ÑÑ‚ÑŒ ÐºÐ¾Ñ€Ð¾Ð»Ñ. Ð£Ð¼Ñ€Ð¸, Ð¿Ñ€Ð¾ÐºÐ»ÑÑ‚Ñ‹Ð¹ Ð¿Ñ€ÐµÐ´Ð°Ñ‚ÐµÐ»ÑŒ.
 	};
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -271,33 +271,33 @@ func void DIA_Girion_CATCHPLAYERSTOLENSHIP_weg ()
 
 func void B_GirionStayOnShip()
 {
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_09"); //Êîãäà ìû ïîêîí÷èì ñ ýòèì äåëîì, òû âåðíåøü ýòîò êîðàáëü îáðàòíî ìíå, ïîíÿòíî?
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_09"); //ÐšÐ¾Ð³Ð´Ð° Ð¼Ñ‹ Ð¿Ð¾ÐºÐ¾Ð½Ñ‡Ð¸Ð¼ Ñ ÑÑ‚Ð¸Ð¼ Ð´ÐµÐ»Ð¾Ð¼, Ñ‚Ñ‹ Ð²ÐµÑ€Ð½ÐµÑˆÑŒ ÑÑ‚Ð¾Ñ‚ ÐºÐ¾Ñ€Ð°Ð±Ð»ÑŒ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾ Ð¼Ð½Ðµ, Ð¿Ð¾Ð½ÑÑ‚Ð½Ð¾?
 };
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_ship ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_00"); //Ìíå íóæåí ýòîò êîðàáëü. Ïîýòîìó ÿ çàáèðàþ åãî.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_00"); //ÐœÐ½Ðµ Ð½ÑƒÐ¶ÐµÐ½ ÑÑ‚Ð¾Ñ‚ ÐºÐ¾Ñ€Ð°Ð±Ð»ÑŒ. ÐŸÐ¾ÑÑ‚Ð¾Ð¼Ñƒ Ñ Ð·Ð°Ð±Ð¸Ñ€Ð°ÑŽ ÐµÐ³Ð¾.
 	
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_01"); //Òû íå ìîæåøü ñäåëàòü ýòî. Ýòî òðàíñïîðò äëÿ ðóäû...
+		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_01"); //Ð¢Ñ‹ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑˆÑŒ ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ ÑÑ‚Ð¾. Ð­Ñ‚Ð¾ Ñ‚Ñ€Ð°Ð½ÑÐ¿Ð¾Ñ€Ñ‚ Ð´Ð»Ñ Ñ€ÑƒÐ´Ñ‹...
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_02"); //Êàê òû ñìååøü?! Òû, âîíþ÷åå îòðîäüå...
+		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_02"); //ÐšÐ°Ðº Ñ‚Ñ‹ ÑÐ¼ÐµÐµÑˆÑŒ?! Ð¢Ñ‹, Ð²Ð¾Ð½ÑŽÑ‡ÐµÐµ Ð¾Ñ‚Ñ€Ð¾Ð´ÑŒÐµ...
 	};
 	
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_03"); //Ðóäû â Äîëèíå Ðóäíèêîâ íåäîñòàòî÷íî, ÷òîáû óäîâëåòâîðèòü ïîòðåáíîñòè êîðîëÿ. ß áûë òàì. Òàì íå÷åãî äåëàòü. Ìèññèÿ Õàãåíà - ôàðñ ÷èñòîé âîäû.
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_04"); //Íàñòîÿùèé âðàã ïóñòèë ñâîè êîðíè íà îñòðîâå íåïîäàëåêó îòñþäà. ß ïîïëûâó òóäà è ïîëîæó êîíåö ýòîìó âñåìó.
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_05"); //Ëèáî ïðèñîåäèíÿéñÿ êî ìíå, ëèáî ìíå ïðèäåòñÿ ðàçäåëàòüñÿ ñ òîáîé. Âûáèðàé.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_06"); //Ì-ì-ì. Ïîõîæå, ó ìåíÿ íåò âûáîðà.
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_07"); //Ïðàâèëüíî.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_08"); //Ëàäíî, õîðîøî. ß ïðèñîåäèíþñü ê òåáå, íî ïðè îäíîì óñëîâèè.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_03"); //Ð ÑƒÐ´Ñ‹ Ð² Ð”Ð¾Ð»Ð¸Ð½Ðµ Ð ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½ÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾, Ñ‡Ñ‚Ð¾Ð±Ñ‹ ÑƒÐ´Ð¾Ð²Ð»ÐµÑ‚Ð²Ð¾Ñ€Ð¸Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð½Ð¾ÑÑ‚Ð¸ ÐºÐ¾Ñ€Ð¾Ð»Ñ. Ð¯ Ð±Ñ‹Ð» Ñ‚Ð°Ð¼. Ð¢Ð°Ð¼ Ð½ÐµÑ‡ÐµÐ³Ð¾ Ð´ÐµÐ»Ð°Ñ‚ÑŒ. ÐœÐ¸ÑÑÐ¸Ñ Ð¥Ð°Ð³ÐµÐ½Ð° - Ñ„Ð°Ñ€Ñ Ñ‡Ð¸ÑÑ‚Ð¾Ð¹ Ð²Ð¾Ð´Ñ‹.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_04"); //ÐÐ°ÑÑ‚Ð¾ÑÑ‰Ð¸Ð¹ Ð²Ñ€Ð°Ð³ Ð¿ÑƒÑÑ‚Ð¸Ð» ÑÐ²Ð¾Ð¸ ÐºÐ¾Ñ€Ð½Ð¸ Ð½Ð° Ð¾ÑÑ‚Ñ€Ð¾Ð²Ðµ Ð½ÐµÐ¿Ð¾Ð´Ð°Ð»ÐµÐºÑƒ Ð¾Ñ‚ÑÑŽÐ´Ð°. Ð¯ Ð¿Ð¾Ð¿Ð»Ñ‹Ð²Ñƒ Ñ‚ÑƒÐ´Ð° Ð¸ Ð¿Ð¾Ð»Ð¾Ð¶Ñƒ ÐºÐ¾Ð½ÐµÑ† ÑÑ‚Ð¾Ð¼Ñƒ Ð²ÑÐµÐ¼Ñƒ.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_05"); //Ð›Ð¸Ð±Ð¾ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½ÑÐ¹ÑÑ ÐºÐ¾ Ð¼Ð½Ðµ, Ð»Ð¸Ð±Ð¾ Ð¼Ð½Ðµ Ð¿Ñ€Ð¸Ð´ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°Ñ‚ÑŒÑÑ Ñ Ñ‚Ð¾Ð±Ð¾Ð¹. Ð’Ñ‹Ð±Ð¸Ñ€Ð°Ð¹.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_06"); //Ðœ-Ð¼-Ð¼. ÐŸÐ¾Ñ…Ð¾Ð¶Ðµ, Ñƒ Ð¼ÐµÐ½Ñ Ð½ÐµÑ‚ Ð²Ñ‹Ð±Ð¾Ñ€Ð°.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_07"); //ÐŸÑ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_08"); //Ð›Ð°Ð´Ð½Ð¾, Ñ…Ð¾Ñ€Ð¾ÑˆÐ¾. Ð¯ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½ÑŽÑÑŒ Ðº Ñ‚ÐµÐ±Ðµ, Ð½Ð¾ Ð¿Ñ€Ð¸ Ð¾Ð´Ð½Ð¾Ð¼ ÑƒÑÐ»Ð¾Ð²Ð¸Ð¸.
 
 	B_GirionStayOnShip();
 
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_10"); //ß ïåðåæèâó ýòî.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_11"); //Òîãäà äåëàé òî, ÷òî äîëæåí. À ÿ ïîäîæäó òåáÿ çäåñü.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_10"); //Ð¯ Ð¿ÐµÑ€ÐµÐ¶Ð¸Ð²Ñƒ ÑÑ‚Ð¾.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_11"); //Ð¢Ð¾Ð³Ð´Ð° Ð´ÐµÐ»Ð°Ð¹ Ñ‚Ð¾, Ñ‡Ñ‚Ð¾ Ð´Ð¾Ð»Ð¶ÐµÐ½. Ð Ñ Ð¿Ð¾Ð´Ð¾Ð¶Ð´Ñƒ Ñ‚ÐµÐ±Ñ Ð·Ð´ÐµÑÑŒ.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Ship");
@@ -329,7 +329,7 @@ FUNC INT DIA_Girion_Verrat_Condition()
 
 FUNC VOID DIA_Girion_Verrat_Info()
 {
-	AI_Output			(self, other, "DIA_Girion_Verrat_08_00"); //Ïðåäàòåëü!
+	AI_Output			(self, other, "DIA_Girion_Verrat_08_00"); //ÐŸÑ€ÐµÐ´Ð°Ñ‚ÐµÐ»ÑŒ!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };

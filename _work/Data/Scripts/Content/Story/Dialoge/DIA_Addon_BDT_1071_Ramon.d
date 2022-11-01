@@ -58,18 +58,18 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 {
 	if Npc_IsDead (Franco)
 	{
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_00"); //Эй, что там случилось?
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_01"); //Я укокошил Франко.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_02"); //Так что? Значит это теперь ТВОЯ забота - заставлять этих лентяев выполнять свою работу.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_03"); //Эй, я здесь не для того, чтобы нянчиться с охотниками. Мне надо попасть в лагерь.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_04"); //Забудь об этом. Ты убил Франко - теперь ты старший, так делай свою работу.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_05"); //Если я старший, то я решаю, кто входит следующим.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_06"); //А я решил, что следующим вхожу я.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_07"); //(смеется) Это не так просто. Мы НИКОГО не просили, так что НИКТО не войдет.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_08"); //Торус может послать нового командира охотникам, тогда там освободится место для меня.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_09"); //(смеется) Ты не отстанешь, верно? Ну ладно, тогда давай сюда.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_10"); //Торус позаботится о том, чтобы охотники не остались без командира.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_11"); //Чего ты ждешь? И не забудь взять кирку.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_00"); //Р­Р№, С‡С‚Рѕ С‚Р°Рј СЃР»СѓС‡РёР»РѕСЃСЊ?
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_01"); //РЇ СѓРєРѕРєРѕС€РёР» Р¤СЂР°РЅРєРѕ.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_02"); //РўР°Рє С‡С‚Рѕ? Р—РЅР°С‡РёС‚ СЌС‚Рѕ С‚РµРїРµСЂСЊ РўР’РћРЇ Р·Р°Р±РѕС‚Р° - Р·Р°СЃС‚Р°РІР»СЏС‚СЊ СЌС‚РёС… Р»РµРЅС‚СЏРµРІ РІС‹РїРѕР»РЅСЏС‚СЊ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_03"); //Р­Р№, СЏ Р·РґРµСЃСЊ РЅРµ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РЅСЏРЅС‡РёС‚СЊСЃСЏ СЃ РѕС…РѕС‚РЅРёРєР°РјРё. РњРЅРµ РЅР°РґРѕ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_04"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РўС‹ СѓР±РёР» Р¤СЂР°РЅРєРѕ - С‚РµРїРµСЂСЊ С‚С‹ СЃС‚Р°СЂС€РёР№, С‚Р°Рє РґРµР»Р°Р№ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_05"); //Р•СЃР»Рё СЏ СЃС‚Р°СЂС€РёР№, С‚Рѕ СЏ СЂРµС€Р°СЋ, РєС‚Рѕ РІС…РѕРґРёС‚ СЃР»РµРґСѓСЋС‰РёРј.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_06"); //Рђ СЏ СЂРµС€РёР», С‡С‚Рѕ СЃР»РµРґСѓСЋС‰РёРј РІС…РѕР¶Сѓ СЏ.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_07"); //(СЃРјРµРµС‚СЃСЏ) Р­С‚Рѕ РЅРµ С‚Р°Рє РїСЂРѕСЃС‚Рѕ. РњС‹ РќРРљРћР“Рћ РЅРµ РїСЂРѕСЃРёР»Рё, С‚Р°Рє С‡С‚Рѕ РќРРљРўРћ РЅРµ РІРѕР№РґРµС‚.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_08"); //РўРѕСЂСѓСЃ РјРѕР¶РµС‚ РїРѕСЃР»Р°С‚СЊ РЅРѕРІРѕРіРѕ РєРѕРјР°РЅРґРёСЂР° РѕС…РѕС‚РЅРёРєР°Рј, С‚РѕРіРґР° С‚Р°Рј РѕСЃРІРѕР±РѕРґРёС‚СЃСЏ РјРµСЃС‚Рѕ РґР»СЏ РјРµРЅСЏ.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_09"); //(СЃРјРµРµС‚СЃСЏ) РўС‹ РЅРµ РѕС‚СЃС‚Р°РЅРµС€СЊ, РІРµСЂРЅРѕ? РќСѓ Р»Р°РґРЅРѕ, С‚РѕРіРґР° РґР°РІР°Р№ СЃСЋРґР°.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_10"); //РўРѕСЂСѓСЃ РїРѕР·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ РѕС…РѕС‚РЅРёРєРё РЅРµ РѕСЃС‚Р°Р»РёСЃСЊ Р±РµР· РєРѕРјР°РЅРґРёСЂР°.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_11"); //Р§РµРіРѕ С‚С‹ Р¶РґРµС€СЊ? Р РЅРµ Р·Р°Р±СѓРґСЊ РІР·СЏС‚СЊ РєРёСЂРєСѓ.
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
 		Player_HasTalkedToBanditCamp = TRUE;
@@ -84,31 +84,31 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 	}
 	else if (Ramon_News == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_12"); //Эй, чего тебе нужно? Не могу вообразить, что у тебя есть разрешение на проход в лагерь.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_12"); //Р­Р№, С‡РµРіРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РќРµ РјРѕРіСѓ РІРѕРѕР±СЂР°Р·РёС‚СЊ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ СЂР°Р·СЂРµС€РµРЅРёРµ РЅР° РїСЂРѕС…РѕРґ РІ Р»Р°РіРµСЂСЊ.
 		
 		if Npc_KnowsInfo (other, DIA_Addon_Franco_HI)
 		{
-			AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_13"); //Меня послал Франко. Он хочет узнать, не нужен ли кто-нибудь в лагере.
+			AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_13"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р¤СЂР°РЅРєРѕ. РћРЅ С…РѕС‡РµС‚ СѓР·РЅР°С‚СЊ, РЅРµ РЅСѓР¶РµРЅ Р»Рё РєС‚Рѕ-РЅРёР±СѓРґСЊ РІ Р»Р°РіРµСЂРµ.
 		};
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_14"); //Да, нужен. Вчера еще один парень дал дуба.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_15"); //Этот идиот поссорился с Эстебаном.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_16"); //Кто такой Эстебан?
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_17"); //Командир нижнего лагеря. Он определяет, кто пойдет в шахту.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_18"); //Так что скажи Франко, что Торусу нужен новый человек. Понял?
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_14"); //Р”Р°, РЅСѓР¶РµРЅ. Р’С‡РµСЂР° РµС‰Рµ РѕРґРёРЅ РїР°СЂРµРЅСЊ РґР°Р» РґСѓР±Р°.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_15"); //Р­С‚РѕС‚ РёРґРёРѕС‚ РїРѕСЃСЃРѕСЂРёР»СЃСЏ СЃ Р­СЃС‚РµР±Р°РЅРѕРј.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_16"); //РљС‚Рѕ С‚Р°РєРѕР№ Р­СЃС‚РµР±Р°РЅ?
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_17"); //РљРѕРјР°РЅРґРёСЂ РЅРёР¶РЅРµРіРѕ Р»Р°РіРµСЂСЏ. РћРЅ РѕРїСЂРµРґРµР»СЏРµС‚, РєС‚Рѕ РїРѕР№РґРµС‚ РІ С€Р°С…С‚Сѓ.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_18"); //РўР°Рє С‡С‚Рѕ СЃРєР°Р¶Рё Р¤СЂР°РЅРєРѕ, С‡С‚Рѕ РўРѕСЂСѓСЃСѓ РЅСѓР¶РµРЅ РЅРѕРІС‹Р№ С‡РµР»РѕРІРµРє. РџРѕРЅСЏР»?
 		
 		Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-		B_LogEntry (Topic_Addon_Franco,"Торусу нужен еще один человек. Это может заинтересовать Франко.");
+		B_LogEntry (Topic_Addon_Franco,"РўРѕСЂСѓСЃСѓ РЅСѓР¶РµРЅ РµС‰Рµ РѕРґРёРЅ С‡РµР»РѕРІРµРє. Р­С‚Рѕ РјРѕР¶РµС‚ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ Р¤СЂР°РЅРєРѕ.");
 		
 		Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
-		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Торус? Сам Торус?",DIA_Addon_Ramon_FirstWarn_YES);
-		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Торус? Никогда про него слышал...",DIA_Addon_Ramon_FirstWarn_NO);
+		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"РўРѕСЂСѓСЃ? РЎР°Рј РўРѕСЂСѓСЃ?",DIA_Addon_Ramon_FirstWarn_YES);
+		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"РўРѕСЂСѓСЃ? РќРёРєРѕРіРґР° РїСЂРѕ РЅРµРіРѕ СЃР»С‹С€Р°Р»...",DIA_Addon_Ramon_FirstWarn_NO);
 		
 		Ramon_News = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_19"); //Эй, притормози. Ты сюда не попадешь, так что проваливай!
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_19"); //Р­Р№, РїСЂРёС‚РѕСЂРјРѕР·Рё. РўС‹ СЃСЋРґР° РЅРµ РїРѕРїР°РґРµС€СЊ, С‚Р°Рє С‡С‚Рѕ РїСЂРѕРІР°Р»РёРІР°Р№!
 		AI_StopProcessInfos(self);
 	};
 				
@@ -117,23 +117,23 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 };
 FUNC VOID DIA_Addon_Ramon_FirstWarn_YES()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_00"); //Торус? Сам Торус?
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_01"); //Да. САМ Торус. Тот, кто принимает новых людей.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_02"); //Тот, кто решает, когда новый человек уходит с болота и приходит в лагерь.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_03"); //Может, ты хочешь сказать, что ты и раньше был знаком с Торусом?
-	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_04"); //Ну... да...
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_05"); //Послушай, ВСЕ знают Торуса.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_06"); //И это значит, что ты не попадешь внутрь - и я даже не пошлю ему весточку!
+	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_00"); //РўРѕСЂСѓСЃ? РЎР°Рј РўРѕСЂСѓСЃ?
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_01"); //Р”Р°. РЎРђРњ РўРѕСЂСѓСЃ. РўРѕС‚, РєС‚Рѕ РїСЂРёРЅРёРјР°РµС‚ РЅРѕРІС‹С… Р»СЋРґРµР№.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_02"); //РўРѕС‚, РєС‚Рѕ СЂРµС€Р°РµС‚, РєРѕРіРґР° РЅРѕРІС‹Р№ С‡РµР»РѕРІРµРє СѓС…РѕРґРёС‚ СЃ Р±РѕР»РѕС‚Р° Рё РїСЂРёС…РѕРґРёС‚ РІ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_03"); //РњРѕР¶РµС‚, С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚С‹ Рё СЂР°РЅСЊС€Рµ Р±С‹Р» Р·РЅР°РєРѕРј СЃ РўРѕСЂСѓСЃРѕРј?
+	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_04"); //РќСѓ... РґР°...
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_05"); //РџРѕСЃР»СѓС€Р°Р№, Р’РЎР• Р·РЅР°СЋС‚ РўРѕСЂСѓСЃР°.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_06"); //Р СЌС‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ С‚С‹ РЅРµ РїРѕРїР°РґРµС€СЊ РІРЅСѓС‚СЂСЊ - Рё СЏ РґР°Р¶Рµ РЅРµ РїРѕС€Р»СЋ РµРјСѓ РІРµСЃС‚РѕС‡РєСѓ!
 	
 	Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
 };
 FUNC VOID DIA_Addon_Ramon_FirstWarn_NO()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_NO_15_00"); //Торус? Никогда про него слышал...
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_01"); //О, парень, ты его не знаешь? Он был начальником стражи в Старом Лагере.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_02"); //Все доверяют этому человеку.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_03"); //Он вызывает новых людей и решает, когда новички должны попасть в лагерь.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_04"); //Если ты проживешь достаточно долго, ты с ним познакомишься.
+	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_NO_15_00"); //РўРѕСЂСѓСЃ? РќРёРєРѕРіРґР° РїСЂРѕ РЅРµРіРѕ СЃР»С‹С€Р°Р»...
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_01"); //Рћ, РїР°СЂРµРЅСЊ, С‚С‹ РµРіРѕ РЅРµ Р·РЅР°РµС€СЊ? РћРЅ Р±С‹Р» РЅР°С‡Р°Р»СЊРЅРёРєРѕРј СЃС‚СЂР°Р¶Рё РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_02"); //Р’СЃРµ РґРѕРІРµСЂСЏСЋС‚ СЌС‚РѕРјСѓ С‡РµР»РѕРІРµРєСѓ.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_03"); //РћРЅ РІС‹Р·С‹РІР°РµС‚ РЅРѕРІС‹С… Р»СЋРґРµР№ Рё СЂРµС€Р°РµС‚, РєРѕРіРґР° РЅРѕРІРёС‡РєРё РґРѕР»Р¶РЅС‹ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_04"); //Р•СЃР»Рё С‚С‹ РїСЂРѕР¶РёРІРµС€СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРѕР»РіРѕ, С‚С‹ СЃ РЅРёРј РїРѕР·РЅР°РєРѕРјРёС€СЊСЃСЏ.
 	
 	Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
 };
@@ -164,7 +164,7 @@ FUNC INT DIA_Addon_Ramon_SecondWarn_Condition()
 
 func void DIA_Addon_Ramon_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Ramon_SecondWarn_07_00"); //Следующий шаг будет твоим последним!
+	AI_Output (self, other,"DIA_Addon_Ramon_SecondWarn_07_00"); //РЎР»РµРґСѓСЋС‰РёР№ С€Р°Рі Р±СѓРґРµС‚ С‚РІРѕРёРј РїРѕСЃР»РµРґРЅРёРј!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_1071_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -202,7 +202,7 @@ func void DIA_Addon_Ramon_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_Ramon_Attack_07_00"); //Некоторые люди совершенно необучаемы...
+	AI_Output (self, other,"DIA_Addon_Ramon_Attack_07_00"); //РќРµРєРѕС‚РѕСЂС‹Рµ Р»СЋРґРё СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµРѕР±СѓС‡Р°РµРјС‹...
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -217,7 +217,7 @@ INSTANCE DIA_Addon_Ramon_News (C_INFO)
 	condition	= DIA_Addon_Ramon_News_Condition;
 	information	= DIA_Addon_Ramon_News_Info;
 	permanent	= FALSE;
-	description	= "Я тот новый человек.";
+	description	= "РЇ С‚РѕС‚ РЅРѕРІС‹Р№ С‡РµР»РѕРІРµРє.";
 };                       
 
 FUNC INT DIA_Addon_Ramon_News_Condition()
@@ -229,8 +229,8 @@ FUNC INT DIA_Addon_Ramon_News_Condition()
 };
 func void DIA_Addon_Ramon_News_Info()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_News_15_00"); //Я тот новый человек.
-	AI_Output (self, other,"DIA_Addon_Ramon_News_07_01"); //Эй, не пытайся меня обдурить. Все равно Франко решает, кто из вас пойдет в лагерь.
+	AI_Output (other, self,"DIA_Addon_Ramon_News_15_00"); //РЇ С‚РѕС‚ РЅРѕРІС‹Р№ С‡РµР»РѕРІРµРє.
+	AI_Output (self, other,"DIA_Addon_Ramon_News_07_01"); //Р­Р№, РЅРµ РїС‹С‚Р°Р№СЃСЏ РјРµРЅСЏ РѕР±РґСѓСЂРёС‚СЊ. Р’СЃРµ СЂР°РІРЅРѕ Р¤СЂР°РЅРєРѕ СЂРµС€Р°РµС‚, РєС‚Рѕ РёР· РІР°СЃ РїРѕР№РґРµС‚ РІ Р»Р°РіРµСЂСЊ.
 };
 // ************************************************************
 // 			Lie
@@ -242,7 +242,7 @@ INSTANCE DIA_Addon_Ramon_Lie (C_INFO)
 	condition	= DIA_Addon_Ramon_Lie_Condition;
 	information	= DIA_Addon_Ramon_Lie_Info;
 	permanent	= FALSE;
-	description	= "Франко послал меня...";
+	description	= "Р¤СЂР°РЅРєРѕ РїРѕСЃР»Р°Р» РјРµРЅСЏ...";
 };                       
 
 FUNC INT DIA_Addon_Ramon_Lie_Condition()
@@ -255,8 +255,8 @@ FUNC INT DIA_Addon_Ramon_Lie_Condition()
 };
 func void DIA_Addon_Ramon_Lie_Info()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_Lie_15_00"); //Франко послал меня...
-	AI_Output (self, other,"DIA_Addon_Ramon_Lie_07_01"); //Не-а. Проваливай, а не то я переломаю тебе кости...
+	AI_Output (other, self,"DIA_Addon_Ramon_Lie_15_00"); //Р¤СЂР°РЅРєРѕ РїРѕСЃР»Р°Р» РјРµРЅСЏ...
+	AI_Output (self, other,"DIA_Addon_Ramon_Lie_07_01"); //РќРµ-Р°. РџСЂРѕРІР°Р»РёРІР°Р№, Р° РЅРµ С‚Рѕ СЏ РїРµСЂРµР»РѕРјР°СЋ С‚РµР±Рµ РєРѕСЃС‚Рё...
 	
 	AI_StopProcessInfos (self);
 };
@@ -270,7 +270,7 @@ INSTANCE DIA_Addon_Ramon_Perm (C_INFO)
 	condition	= DIA_Addon_Ramon_Perm_Condition;
 	information	= DIA_Addon_Ramon_Perm_Info;
 	permanent	= TRUE;
-	description	= "Ситуация под контролем?";
+	description	= "РЎРёС‚СѓР°С†РёСЏ РїРѕРґ РєРѕРЅС‚СЂРѕР»РµРј?";
 };                       
 
 FUNC INT DIA_Addon_Ramon_Perm_Condition()
@@ -283,8 +283,8 @@ FUNC INT DIA_Addon_Ramon_Perm_Condition()
 };
 func void DIA_Addon_Ramon_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_Perm_15_00"); //Ситуация под контролем?
-	AI_Output (self, other,"DIA_Addon_Ramon_Perm_07_01"); //Здесь все в порядке, пока в лагерь не попытается пройти кто-нибудь, кому НЕ ПОЛОЖЕНО.
+	AI_Output (other, self,"DIA_Addon_Ramon_Perm_15_00"); //РЎРёС‚СѓР°С†РёСЏ РїРѕРґ РєРѕРЅС‚СЂРѕР»РµРј?
+	AI_Output (self, other,"DIA_Addon_Ramon_Perm_07_01"); //Р—РґРµСЃСЊ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ, РїРѕРєР° РІ Р»Р°РіРµСЂСЊ РЅРµ РїРѕРїС‹С‚Р°РµС‚СЃСЏ РїСЂРѕР№С‚Рё РєС‚Рѕ-РЅРёР±СѓРґСЊ, РєРѕРјСѓ РќР• РџРћР›РћР–Р•РќРћ.
 	
 	AI_StopProcessInfos (self);
 };

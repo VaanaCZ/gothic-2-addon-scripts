@@ -670,7 +670,7 @@ instance Itemhoshi (Npc_Default)
 	CreateInvItems(self,ItRw_Addon_MagicBolt,100);
 
 //------------------------------------------------------------
-//	Alle Gürtel
+//	Alle GÑŒrtel
 //------------------------------------------------------------	
 //Gothic2
 
@@ -1014,8 +1014,8 @@ instance Itemhoshi (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1102,8 +1102,8 @@ instance TA_Testmodell (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1169,7 +1169,7 @@ FUNC VOID Rtn_Follow_1500 ()
 
 
 //*************************************************
-//	Testdialoge für Followmode und Guideplayer ----
+//	Testdialoge fÑŒr Followmode und Guideplayer ----
 //*************************************************
 
 //--- Exit ---
@@ -1290,7 +1290,7 @@ INSTANCE Info_TA_Testmodell_FollowEnd (C_INFO)
 	condition	= DIA_TA_Testmodell_FollowEnd_Condition;
 	information	= DIA_TA_Testmodell_FollowEnd_Info;
 	permanent	= TRUE;
-	description = "Hör auf mir zu folgen!";
+	description = "HÑ†r auf mir zu folgen!";
 };                       
 
 FUNC INT DIA_TA_Testmodell_FollowEnd_Condition()
@@ -1350,8 +1350,8 @@ instance TA_Smalltalkpartner (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1444,7 +1444,7 @@ FUNC VOID UseGold ()
 
 INSTANCE Armor(C_Item)
 {
-	name 				=	"Ein Beutel voller Rüstungen!";
+	name 				=	"Ein Beutel voller RÑŒstungen!";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -1603,11 +1603,11 @@ func void UsePatrickHelper ()
 	self.attribute[ATR_MANA] =			400;
 	
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 			6);
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //hängt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //hÐ´ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SNEAK, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ACROBAT, 			0);
 	
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//hängt ab von DEX (auf Scriptebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//hÐ´ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SMITH, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_RUNES, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);

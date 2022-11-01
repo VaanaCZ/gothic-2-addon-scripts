@@ -10,7 +10,7 @@ instance DIA_Addon_GivePotion(C_INFO)
 	condition	= DIA_Addon_GivePotion_Condition;
 	information	= DIA_Addon_GivePotion_Info;
 	permanent	= TRUE;
-	description = "(дать лечебное зелье)";
+	description = "(РґР°С‚СЊ Р»РµС‡РµР±РЅРѕРµ Р·РµР»СЊРµ)";
 };                       
 FUNC INT DIA_Addon_GivePotion_Condition()
 {
@@ -31,23 +31,23 @@ func VOID DIA_Addon_GivePotion_Info()
 	Info_AddChoice (DIA_Addon_GivePotion,DIALOG_BACK,DIA_Addon_GivePotion_BACK);
 	if (Npc_HasItems (other,ItPo_Health_03) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(дать лечебный эликсир)",DIA_Addon_GivePotion_ItPo_Health_03);
+		Info_AddChoice (DIA_Addon_GivePotion,"(РґР°С‚СЊ Р»РµС‡РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ)",DIA_Addon_GivePotion_ItPo_Health_03);
 	};
 	if (Npc_HasItems (other,ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(дать лечебный экстракт)",DIA_Addon_GivePotion_ItPo_Health_02);
+		Info_AddChoice (DIA_Addon_GivePotion,"(РґР°С‚СЊ Р»РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚)",DIA_Addon_GivePotion_ItPo_Health_02);
 	};
 	if (Npc_HasItems (other,ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(дать лечебную эссенцию)",DIA_Addon_GivePotion_ItPo_Health_01);
+		Info_AddChoice (DIA_Addon_GivePotion,"(РґР°С‚СЊ Р»РµС‡РµР±РЅСѓСЋ СЌСЃСЃРµРЅС†РёСЋ)",DIA_Addon_GivePotion_ItPo_Health_01);
 	};
 };
 // ------------------------------------------------------------
 func void B_Addon_DrinkPotion ()
 {
-	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //Вот, возьми это лечебное зелье.
+	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рѕ Р»РµС‡РµР±РЅРѕРµ Р·РµР»СЊРµ.
 
-	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //geдndert m.F. 
+	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //geРґndert m.F. 
 	{
 		if (Npc_HasItems(self,ItPo_Health_03) > 0)			
 		{

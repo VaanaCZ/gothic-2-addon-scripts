@@ -2,7 +2,7 @@
 instance VLK_462_Thorben (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Торбен";
+	name 		= "РўРѕСЂР±РµРЅ";
 	guild 		= GIL_VLK;
 	id 			= 462;
 	voice 		= 6;

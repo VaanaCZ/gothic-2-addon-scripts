@@ -2,7 +2,7 @@
 instance Pal_201_Ingmar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "»Ì„Ï‡";
+	name 		= "–ò–Ω–≥–º–∞—Ä";
 	guild 		= GIL_PAL;
 	id 			= 201;
 	voice 		= 06;

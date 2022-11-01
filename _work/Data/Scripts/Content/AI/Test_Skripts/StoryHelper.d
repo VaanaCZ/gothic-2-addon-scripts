@@ -17,7 +17,7 @@ INSTANCE ItPo_Story(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER";
 
-	description		= 	"Macht, daß es weitergeht bei Raven Video I";
+	description		= 	"Macht, daÐ¯ es weitergeht bei Raven Video I";
 };
 
 	FUNC VOID UseItPo_Story()
@@ -151,7 +151,7 @@ FUNC VOID StoryHelper_KAPITEL1ANFANG()
 	B_Kapitelwechsel		(1, NEWWORLD_ZEN );
 	
 	
-	//-------- Menü --------	
+	//-------- MenÑŒ --------	
 	//Info_ClearChoices	( StoryHelper_INFO1 );
 	AI_StopProcessInfos	( self );
 };
@@ -200,7 +200,7 @@ FUNC VOID StoryHelper_KAPITEL2ANFANG()
 	B_Kapitelwechsel		(2, NEWWORLD_ZEN );
 	
 	
-	//-------- Menü --------	
+	//-------- MenÑŒ --------	
 	//Info_ClearChoices	( StoryHelper_INFO2 );
 	AI_StopProcessInfos	( self );
 };
@@ -254,7 +254,7 @@ FUNC VOID StoryHelper_KAPITEL3ANFANG()
 	B_Kapitelwechsel		(3, NEWWORLD_ZEN );	
 
 	
-	//-------- Menü --------	
+	//-------- MenÑŒ --------	
 	Info_ClearChoices	( StoryHelper_INFO3 );
 	AI_StopProcessInfos	( self );
 };
@@ -315,7 +315,7 @@ FUNC VOID StoryHelper_KAPITEL4ANFANG()
 	B_NPC_IsAliveCheck (NEWWORLD_ZEN);
 	B_Kapitelwechsel		(4, NEWWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÑŒ --------	
 	Info_ClearChoices	( StoryHelper_INFO4 );
 	AI_StopProcessInfos	( self );
 };
@@ -376,11 +376,11 @@ FUNC VOID StoryHelper_KAPITEL5ANFANG()
 	B_NPC_IsAliveCheck (NEWWORLD_ZEN);
 	B_Kapitelwechsel		(4, NEWWORLD_ZEN );
 	//-------- was neu geschieht --------
-	CreateInvItems (hero,ItAt_IcedragonHeart,1);			//damit man eins für die DI hat!!
+	CreateInvItems (hero,ItAt_IcedragonHeart,1);			//damit man eins fÑŒr die DI hat!!
 	MIS_AllDragonsDead = TRUE;
 	B_Kapitelwechsel		(5, NEWWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÑŒ --------	
 	Info_ClearChoices	( StoryHelper_INFO5 );
 	AI_StopProcessInfos	( self );
 };
@@ -428,7 +428,7 @@ FUNC VOID StoryHelper_KAPITEL6ANFANG()
 	//-------- was neu geschieht --------	
 	B_Kapitelwechsel		(6, NEWWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÑŒ --------	
 	Info_ClearChoices	( StoryHelper_INFO6 );
 	AI_StopProcessInfos	( self );
 };

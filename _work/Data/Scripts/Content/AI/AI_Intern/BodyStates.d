@@ -37,7 +37,7 @@ const int BS_UNCONSCIOUS			=	22;
 const int BS_DEAD					=  	23;
 
 const int BS_AIMNEAR				=  	24;			// wird z.Zt nicht benutzt
-const int BS_AIMFAR					=  	25;			// d.h. Bogenschütze kann weiterschießen, auch wenn er geschlagen wird
+const int BS_AIMFAR					=  	25;			// d.h. BogenschÑŒtze kann weiterschieÐ¯en, auch wenn er geschlagen wird
 const int BS_HIT					=  	26	|	BS_FLAG_INTERRUPTABLE;
 const int BS_PARADE					=  	27;
 
@@ -56,7 +56,7 @@ const int BS_MOD_BURNING			=   1024;
 const int BS_MOD_CONTROLLED			=   2048;
 const int BS_MOD_TRANSFORMED		=	4096;
 
-// Mobsi-Schema-Namen, hier möglichen BodyState zugeordnet
+// Mobsi-Schema-Namen, hier mÑ†glichen BodyState zugeordnet
 CONST STRING MOB_SIT					=	"BENCH,CHAIR,GROUND,THRONE";
 CONST STRING MOB_LIE					=	"BED,BEDHIGH,BEDLOW";
 CONST STRING MOB_CLIMB					=	"CLIMB,LADDER,RANKE";

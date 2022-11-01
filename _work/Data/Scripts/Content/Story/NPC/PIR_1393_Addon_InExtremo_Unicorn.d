@@ -6,7 +6,7 @@ instance PIR_1393_Addon_InExtremo_Unicorn(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Единорог";
+	name =					"Р•РґРёРЅРѕСЂРѕРі";
 	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;

@@ -28,7 +28,7 @@ instance DIA_Addon_BL_BDT_1_Chef(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Chef_Condition;
 	information	= DIA_Addon_BL_BDT_1_Chef_Info;
 	permanent	= TRUE;
-	description = "Кто здесь главный?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Chef_Condition()
@@ -38,23 +38,23 @@ FUNC INT DIA_Addon_BL_BDT_1_Chef_Condition()
 
 FUNC VOID DIA_Addon_BL_BDT_1_Chef_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Chef_15_00");//Кто здесь главный?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Chef_15_00");//РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
 	
 	if (RavenIsDead == TRUE)
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//Так много командиров приходит и уходит... Через некоторое время ты теряешь их из виду...
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//РўР°Рє РјРЅРѕРіРѕ РєРѕРјР°РЅРґРёСЂРѕРІ РїСЂРёС…РѕРґРёС‚ Рё СѓС…РѕРґРёС‚... Р§РµСЂРµР· РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ С‚С‹ С‚РµСЂСЏРµС€СЊ РёС… РёР· РІРёРґСѓ...
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_02");//Я думаю, Торус сейчас за главного...
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_02");//РЇ РґСѓРјР°СЋ, РўРѕСЂСѓСЃ СЃРµР№С‡Р°СЃ Р·Р° РіР»Р°РІРЅРѕРіРѕ...
 		};
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Ворон сейчас наш командир. Он привел нас сюда и построил лагерь.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//Он контролирует шахту, без него все давным-давно поубивали бы друг друга за золото.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Р’РѕСЂРѕРЅ СЃРµР№С‡Р°СЃ РЅР°С€ РєРѕРјР°РЅРґРёСЂ. РћРЅ РїСЂРёРІРµР» РЅР°СЃ СЃСЋРґР° Рё РїРѕСЃС‚СЂРѕРёР» Р»Р°РіРµСЂСЊ.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//РћРЅ РєРѕРЅС‚СЂРѕР»РёСЂСѓРµС‚ С€Р°С…С‚Сѓ, Р±РµР· РЅРµРіРѕ РІСЃРµ РґР°РІРЅС‹Рј-РґР°РІРЅРѕ РїРѕСѓР±РёРІР°Р»Рё Р±С‹ РґСЂСѓРі РґСЂСѓРіР° Р·Р° Р·РѕР»РѕС‚Рѕ.
 	};
 };
 // *************************************************************************
@@ -66,7 +66,7 @@ instance DIA_Addon_BL_BDT_1_Lager(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Lager_Condition;
 	information	= DIA_Addon_BL_BDT_1_Lager_Info;
 	permanent	= FALSE;
-	description = "Что вы знаете про лагерь?";
+	description = "Р§С‚Рѕ РІС‹ Р·РЅР°РµС‚Рµ РїСЂРѕ Р»Р°РіРµСЂСЊ?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Lager_Condition()
@@ -79,10 +79,10 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_1_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");//Что вы знаете про лагерь?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//После того как стало известно о золотой шахте, эти бродяги, должно быть, все перегрызлись.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");//Ворон убил худших из них, а остальных вышвырнул из шахты.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//С тех пор никто не допускается в верхнюю часть. Он даже притащил заключенных, чтобы работать в шахте.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");//Р§С‚Рѕ РІС‹ Р·РЅР°РµС‚Рµ РїСЂРѕ Р»Р°РіРµСЂСЊ?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє СЃС‚Р°Р»Рѕ РёР·РІРµСЃС‚РЅРѕ Рѕ Р·РѕР»РѕС‚РѕР№ С€Р°С…С‚Рµ, СЌС‚Рё Р±СЂРѕРґСЏРіРё, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РІСЃРµ РїРµСЂРµРіСЂС‹Р·Р»РёСЃСЊ.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");//Р’РѕСЂРѕРЅ СѓР±РёР» С…СѓРґС€РёС… РёР· РЅРёС…, Р° РѕСЃС‚Р°Р»СЊРЅС‹С… РІС‹С€РІС‹СЂРЅСѓР» РёР· С€Р°С…С‚С‹.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//РЎ С‚РµС… РїРѕСЂ РЅРёРєС‚Рѕ РЅРµ РґРѕРїСѓСЃРєР°РµС‚СЃСЏ РІ РІРµСЂС…РЅСЋСЋ С‡Р°СЃС‚СЊ. РћРЅ РґР°Р¶Рµ РїСЂРёС‚Р°С‰РёР» Р·Р°РєР»СЋС‡РµРЅРЅС‹С…, С‡С‚РѕР±С‹ СЂР°Р±РѕС‚Р°С‚СЊ РІ С€Р°С…С‚Рµ.
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
 		B_LogEntry (TOPIC_Addon_RavenKDW, LogText_Addon_RavensGoldmine); 
@@ -100,7 +100,7 @@ instance DIA_Addon_BL_BDT_1_Lager2(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Lager2_Condition;
 	information	= DIA_Addon_BL_BDT_1_Lager2_Info;
 	permanent	= TRUE;
-	description = "Что вы знаете про лагерь?";
+	description = "Р§С‚Рѕ РІС‹ Р·РЅР°РµС‚Рµ РїСЂРѕ Р»Р°РіРµСЂСЊ?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
@@ -112,9 +112,9 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_1_Lager2_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager2_15_00");//Что вы знаете про лагерь?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");//Если ты на кого-нибудь нападешь, они ВСЕ набросятся на тебя.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_02");//Если у тебя нет хорошего повода разобраться с кем-то, конечно. Тогда никто не будет вмешиваться.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager2_15_00");//Р§С‚Рѕ РІС‹ Р·РЅР°РµС‚Рµ РїСЂРѕ Р»Р°РіРµСЂСЊ?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");//Р•СЃР»Рё С‚С‹ РЅР° РєРѕРіРѕ-РЅРёР±СѓРґСЊ РЅР°РїР°РґРµС€СЊ, РѕРЅРё Р’РЎР• РЅР°Р±СЂРѕСЃСЏС‚СЃСЏ РЅР° С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_02");//Р•СЃР»Рё Сѓ С‚РµР±СЏ РЅРµС‚ С…РѕСЂРѕС€РµРіРѕ РїРѕРІРѕРґР° СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РєРµРј-С‚Рѕ, РєРѕРЅРµС‡РЅРѕ. РўРѕРіРґР° РЅРёРєС‚Рѕ РЅРµ Р±СѓРґРµС‚ РІРјРµС€РёРІР°С‚СЊСЃСЏ.
 };
 // *************************************************************************
 // 								News
@@ -125,7 +125,7 @@ instance DIA_Addon_BL_BDT_1_News(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_News_Condition;
 	information	= DIA_Addon_BL_BDT_1_News_Info;
 	permanent	= TRUE;
-	description = "Какие новости?";
+	description = "РљР°РєРёРµ РЅРѕРІРѕСЃС‚Рё?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_News_Condition()
@@ -135,14 +135,14 @@ FUNC INT DIA_Addon_BL_BDT_1_News_Condition()
 
 FUNC VOID DIA_Addon_BL_BDT_1_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_News_15_00");//Какие новости?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_News_15_00");//РљР°РєРёРµ РЅРѕРІРѕСЃС‚Рё?
 	
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Ворон мертв. Что же нам теперь делать?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Р’РѕСЂРѕРЅ РјРµСЂС‚РІ. Р§С‚Рѕ Р¶Рµ РЅР°Рј С‚РµРїРµСЂСЊ РґРµР»Р°С‚СЊ?
 	};
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//Пираты не захотят везти нас на материк, потому что им так и не заплатили за несколько последних перевозок.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//Нам следует зарезать одного или двух, тогда остальным придется взять нас.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//РџРёСЂР°С‚С‹ РЅРµ Р·Р°С…РѕС‚СЏС‚ РІРµР·С‚Рё РЅР°СЃ РЅР° РјР°С‚РµСЂРёРє, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РёРј С‚Р°Рє Рё РЅРµ Р·Р°РїР»Р°С‚РёР»Рё Р·Р° РЅРµСЃРєРѕР»СЊРєРѕ РїРѕСЃР»РµРґРЅРёС… РїРµСЂРµРІРѕР·РѕРє.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//РќР°Рј СЃР»РµРґСѓРµС‚ Р·Р°СЂРµР·Р°С‚СЊ РѕРґРЅРѕРіРѕ РёР»Рё РґРІСѓС…, С‚РѕРіРґР° РѕСЃС‚Р°Р»СЊРЅС‹Рј РїСЂРёРґРµС‚СЃСЏ РІР·СЏС‚СЊ РЅР°СЃ.
 };
 // *************************************************************************
 // 									Sklaven
@@ -153,7 +153,7 @@ instance DIA_Addon_BL_BDT_1_Sklaven(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Sklaven_Condition;
 	information	= DIA_Addon_BL_BDT_1_Sklaven_Info;
 	permanent	= TRUE;
-	description = "Что вы знаете про заключенных?";
+	description = "Р§С‚Рѕ РІС‹ Р·РЅР°РµС‚Рµ РїСЂРѕ Р·Р°РєР»СЋС‡РµРЅРЅС‹С…?";
 };  
 FUNC INT DIA_Addon_BL_BDT_1_Sklaven_Condition()
 {	
@@ -167,14 +167,14 @@ FUNC INT DIA_Addon_BL_BDT_1_Sklaven_Condition()
 FUNC VOID DIA_Addon_BL_BDT_1_Sklaven_Info()
 {	
 	 
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Что вы знаете про заключенных?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");//Ворон хочет что-то выкопать. Сначала это делали разбойники, но слишком многие погибли.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//Поэтому он и привел заключенных - если они откинут копыта, ничего страшного.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Р§С‚Рѕ РІС‹ Р·РЅР°РµС‚Рµ РїСЂРѕ Р·Р°РєР»СЋС‡РµРЅРЅС‹С…?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");//Р’РѕСЂРѕРЅ С…РѕС‡РµС‚ С‡С‚Рѕ-С‚Рѕ РІС‹РєРѕРїР°С‚СЊ. РЎРЅР°С‡Р°Р»Р° СЌС‚Рѕ РґРµР»Р°Р»Рё СЂР°Р·Р±РѕР№РЅРёРєРё, РЅРѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРёРµ РїРѕРіРёР±Р»Рё.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//РџРѕСЌС‚РѕРјСѓ РѕРЅ Рё РїСЂРёРІРµР» Р·Р°РєР»СЋС‡РµРЅРЅС‹С… - РµСЃР»Рё РѕРЅРё РѕС‚РєРёРЅСѓС‚ РєРѕРїС‹С‚Р°, РЅРёС‡РµРіРѕ СЃС‚СЂР°С€РЅРѕРіРѕ.
 	
 	if (BDT_1_Ausbuddeln == FALSE)
 	{
-		AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_03");//А что хочет выкопать Ворон?
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_04");//Без понятия, но явно дело не только в золоте.
+		AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_03");//Рђ С‡С‚Рѕ С…РѕС‡РµС‚ РІС‹РєРѕРїР°С‚СЊ Р’РѕСЂРѕРЅ?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_04");//Р‘РµР· РїРѕРЅСЏС‚РёСЏ, РЅРѕ СЏРІРЅРѕ РґРµР»Рѕ РЅРµ С‚РѕР»СЊРєРѕ РІ Р·РѕР»РѕС‚Рµ.
 		BDT_1_Ausbuddeln = TRUE;
 	};
 };

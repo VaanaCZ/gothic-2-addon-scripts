@@ -2,7 +2,7 @@
 instance VLK_479_Lucy (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ћюси"; //Alwins Frau
+	name 		= "–Ы—О—Б–Є"; //Alwins Frau
 	guild 		= GIL_VLK;
 	id 			= 479;
 	voice 		= 17;

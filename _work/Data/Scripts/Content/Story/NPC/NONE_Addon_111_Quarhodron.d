@@ -1,7 +1,7 @@
 INSTANCE NONE_ADDON_111_Quarhodron (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Куарходрон";
+	name 		= "РљСѓР°СЂС…РѕРґСЂРѕРЅ";
 	guild 		= GIL_NONE;
 	id 			= 111;
 	voice 		= 11;

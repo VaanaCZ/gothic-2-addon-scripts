@@ -2,7 +2,7 @@
 instance VLK_4108_Engor (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ýíãîð";
+	name 		= "Ð­Ð½Ð³Ð¾Ñ€";
 	guild 		= GIL_MIL;
 	id 			= 4108;
 	voice 		= 13;
@@ -19,7 +19,7 @@ instance VLK_4108_Engor (Npc_Default)
 	EquipItem			(self, ItMw_1H_Mil_Sword);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÐ´ndler
 
 	
 	

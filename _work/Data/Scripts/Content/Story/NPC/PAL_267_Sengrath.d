@@ -2,7 +2,7 @@
 instance PAL_267_Sengrath (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Сенграт";
+	name 		= "РЎРµРЅРіСЂР°С‚";
 	guild 		= GIL_PAL;
 	id 			= 267;
 	voice 		= 3;

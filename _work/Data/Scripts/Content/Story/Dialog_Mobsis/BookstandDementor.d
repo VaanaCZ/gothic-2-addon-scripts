@@ -1,4 +1,4 @@
-FUNC VOID Use_BookstandDementor_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandDementor_S1()		//AlchemiebÑŒcher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	

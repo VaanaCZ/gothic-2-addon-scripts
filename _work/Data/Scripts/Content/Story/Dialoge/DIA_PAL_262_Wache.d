@@ -37,14 +37,14 @@ func int DIA_PAL_262_GREET_Condition ()
 };
 func void DIA_PAL_262_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_PAL_262_GREET_10_00"); //Стой - ты кто такой?
-	AI_Output (other, self, "DIA_PAL_262_GREET_15_01"); //Вопрос не в том, кто я такой, а откуда я пришел. А пришел я через Проход.
-	AI_Output (other, self, "DIA_PAL_262_GREET_15_02"); //Ты все еще хочешь остановить меня, или, может, я все же пройду?
-	AI_Output (self, other, "DIA_PAL_262_GREET_10_03"); //Ну, откуда же я мог знать? Конечно же, ты можешь пройти.
+	AI_Output (self, other, "DIA_PAL_262_GREET_10_00"); //РЎС‚РѕР№ - С‚С‹ РєС‚Рѕ С‚Р°РєРѕР№?
+	AI_Output (other, self, "DIA_PAL_262_GREET_15_01"); //Р’РѕРїСЂРѕСЃ РЅРµ РІ С‚РѕРј, РєС‚Рѕ СЏ С‚Р°РєРѕР№, Р° РѕС‚РєСѓРґР° СЏ РїСЂРёС€РµР». Рђ РїСЂРёС€РµР» СЏ С‡РµСЂРµР· РџСЂРѕС…РѕРґ.
+	AI_Output (other, self, "DIA_PAL_262_GREET_15_02"); //РўС‹ РІСЃРµ РµС‰Рµ С…РѕС‡РµС€СЊ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ, РёР»Рё, РјРѕР¶РµС‚, СЏ РІСЃРµ Р¶Рµ РїСЂРѕР№РґСѓ?
+	AI_Output (self, other, "DIA_PAL_262_GREET_10_03"); //РќСѓ, РѕС‚РєСѓРґР° Р¶Рµ СЏ РјРѕРі Р·РЅР°С‚СЊ? РљРѕРЅРµС‡РЅРѕ Р¶Рµ, С‚С‹ РјРѕР¶РµС€СЊ РїСЂРѕР№С‚Рё.
 
 	/*
 	AI_Output (self, other, "DIA_Addon_PAL_262_GREET_10_00"); //Halt - wer bist du?
-	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_01"); //Viel wichtiger ist die Frage, wo ich herkomme. Ich bin ьber den Pass gekommen.
+	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_01"); //Viel wichtiger ist die Frage, wo ich herkomme. Ich bin СЊber den Pass gekommen.
 	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_02"); //Also willst du mich jetzt aufhalten oder kann ich rein?
 	AI_Output (self, other, "DIA_Addon_PAL_262_GREET_10_03"); //Konnte ich ja nicht wissen. Klar kannst du rein.
 	*/
@@ -61,7 +61,7 @@ instance DIA_Wache_PERM		(C_INFO)
 	condition	 = 	DIA_Wache_PERM_Condition;
 	information	 = 	DIA_Wache_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Кто командует здесь?";
+	description	 = 	"РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Wache_PERM_Condition ()
@@ -78,9 +78,9 @@ func void DIA_Wache_PERM_Info ()
 	AI_Output (self, other, "DIA_Wache_PERM_10_01"); //Unser Kommandant Garond und seine beiden Berater, die Paladine Oric und Parcival.
 	AI_Output (self, other, "DIA_Wache_PERM_10_02"); //Geh einfach rein. Tagsuber halten sie sich im Thronsaal im Erdgeschoss auf.
 	*/
-	AI_Output (other, self, "DIA_Addon_Wache_PERM_15_00"); //Кто здесь главный?
-	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_01"); //Наш командир Гаронд и два его советника - Орик и Парсиваль.
-	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_02"); //Проходи внутрь. В дневное время ты можешь найти их в тронном зале на первом этаже. 
+	AI_Output (other, self, "DIA_Addon_Wache_PERM_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_01"); //РќР°С€ РєРѕРјР°РЅРґРёСЂ Р“Р°СЂРѕРЅРґ Рё РґРІР° РµРіРѕ СЃРѕРІРµС‚РЅРёРєР° - РћСЂРёРє Рё РџР°СЂСЃРёРІР°Р»СЊ.
+	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_02"); //РџСЂРѕС…РѕРґРё РІРЅСѓС‚СЂСЊ. Р’ РґРЅРµРІРЅРѕРµ РІСЂРµРјСЏ С‚С‹ РјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РёС… РІ С‚СЂРѕРЅРЅРѕРј Р·Р°Р»Рµ РЅР° РїРµСЂРІРѕРј СЌС‚Р°Р¶Рµ. 
 };
 
 

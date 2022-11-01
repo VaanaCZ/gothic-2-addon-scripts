@@ -1,7 +1,7 @@
 instance BDT_1082_Addon_Skinner (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Скиннер";
+	name 		= "РЎРєРёРЅРЅРµСЂ";
 	guild 		= GIL_BDT;
 	id 			= 1082;
 	voice 		= 8;

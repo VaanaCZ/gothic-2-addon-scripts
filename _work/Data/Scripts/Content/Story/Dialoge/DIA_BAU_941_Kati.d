@@ -53,14 +53,14 @@ func void DIA_Kati_SLDNOCHDA_Info ()
 	
 	if (Hilfe == FALSE)
 	{
-		AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Эти головорезы угрожают моему мужу! Мы простые граждане Хориниса, преданные королю, а эти наемники хотят ограбить нас!
+		AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Р­С‚Рё РіРѕР»РѕРІРѕСЂРµР·С‹ СѓРіСЂРѕР¶Р°СЋС‚ РјРѕРµРјСѓ РјСѓР¶Сѓ! РњС‹ РїСЂРѕСЃС‚С‹Рµ РіСЂР°Р¶РґР°РЅРµ РҐРѕСЂРёРЅРёСЃР°, РїСЂРµРґР°РЅРЅС‹Рµ РєРѕСЂРѕР»СЋ, Р° СЌС‚Рё РЅР°РµРјРЅРёРєРё С…РѕС‚СЏС‚ РѕРіСЂР°Р±РёС‚СЊ РЅР°СЃ!
 		Hilfe = TRUE;
 	};
-	AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_01"); //Ну не стой же здесь. Сделай что-нибудь! Помоги нам!
+	AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_01"); //РќСѓ РЅРµ СЃС‚РѕР№ Р¶Рµ Р·РґРµСЃСЊ. РЎРґРµР»Р°Р№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ! РџРѕРјРѕРіРё РЅР°Рј!
 	Akils_SLDStillthere = TRUE;
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Фермеру Акилу угрожают наемники."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"Р¤РµСЂРјРµСЂСѓ РђРєРёР»Сѓ СѓРіСЂРѕР¶Р°СЋС‚ РЅР°РµРјРЅРёРєРё."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -74,7 +74,7 @@ instance DIA_Kati_HALLO		(C_INFO)
 	condition	 = 	DIA_Kati_HALLO_Condition;
 	information	 = 	DIA_Kati_HALLO_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Kati_HALLO_Condition ()
@@ -87,11 +87,11 @@ func int DIA_Kati_HALLO_Condition ()
 };
 func void DIA_Kati_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_HALLO_15_00"); //С тобой все в порядке?
+	AI_Output (other, self, "DIA_Kati_HALLO_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if (Npc_IsDead (Akil))
 	{
-		AI_Output (self, other, "DIA_Kati_HALLO_16_01"); //(рыдает) Мой любимый муж мертв! Ох, Иннос, за что ты меня так наказываешь?!
+		AI_Output (self, other, "DIA_Kati_HALLO_16_01"); //(СЂС‹РґР°РµС‚) РњРѕР№ Р»СЋР±РёРјС‹Р№ РјСѓР¶ РјРµСЂС‚РІ! РћС…, РРЅРЅРѕСЃ, Р·Р° С‡С‚Рѕ С‚С‹ РјРµРЅСЏ С‚Р°Рє РЅР°РєР°Р·С‹РІР°РµС€СЊ?!
 		
 		Npc_ExchangeRoutine	(self,"Start");
 		B_StartOtherRoutine	(Randolph,"Start");
@@ -100,7 +100,7 @@ func void DIA_Kati_HALLO_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Kati_HALLO_16_02"); //Да, я в порядке, спасибо.
+		AI_Output (self, other, "DIA_Kati_HALLO_16_02"); //Р”Р°, СЏ РІ РїРѕСЂСЏРґРєРµ, СЃРїР°СЃРёР±Рѕ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -113,7 +113,7 @@ instance DIA_Kati_ESSEN		(C_INFO)
 	condition	 = 	DIA_Kati_ESSEN_Condition;
 	information	 = 	DIA_Kati_ESSEN_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Акил говорит, что ты можешь накормить меня.";
+	description	 = 	"РђРєРёР» РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РЅР°РєРѕСЂРјРёС‚СЊ РјРµРЅСЏ.";
 };
 
 func int DIA_Kati_ESSEN_Condition ()
@@ -126,9 +126,9 @@ func int DIA_Kati_ESSEN_Condition ()
 };
 func void DIA_Kati_ESSEN_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_ESSEN_15_00"); //Акил говорит, что ты можешь накормить меня.
-	AI_Output (self, other, "DIA_Kati_ESSEN_16_01"); //С тех пор как рухнул Барьер, для нас настали тяжелые времена. Жить здесь стало небезопасно.
-	AI_Output (self, other, "DIA_Kati_ESSEN_16_02"); //Вот, держи ломоть хлеба, немного молока и бутылку воды. Извини, но это все, чем мы можем поделиться.
+	AI_Output (other, self, "DIA_Kati_ESSEN_15_00"); //РђРєРёР» РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РЅР°РєРѕСЂРјРёС‚СЊ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Kati_ESSEN_16_01"); //РЎ С‚РµС… РїРѕСЂ РєР°Рє СЂСѓС…РЅСѓР» Р‘Р°СЂСЊРµСЂ, РґР»СЏ РЅР°СЃ РЅР°СЃС‚Р°Р»Рё С‚СЏР¶РµР»С‹Рµ РІСЂРµРјРµРЅР°. Р–РёС‚СЊ Р·РґРµСЃСЊ СЃС‚Р°Р»Рѕ РЅРµР±РµР·РѕРїР°СЃРЅРѕ.
+	AI_Output (self, other, "DIA_Kati_ESSEN_16_02"); //Р’РѕС‚, РґРµСЂР¶Рё Р»РѕРјРѕС‚СЊ С…Р»РµР±Р°, РЅРµРјРЅРѕРіРѕ РјРѕР»РѕРєР° Рё Р±СѓС‚С‹Р»РєСѓ РІРѕРґС‹. РР·РІРёРЅРё, РЅРѕ СЌС‚Рѕ РІСЃРµ, С‡РµРј РјС‹ РјРѕР¶РµРј РїРѕРґРµР»РёС‚СЊСЃСЏ.
 	
 	B_GiveInvItems (self, other, ItFo_Bread, 1);			
 	B_GiveInvItems (self, other, ItFo_Water, 1);			
@@ -146,7 +146,7 @@ instance DIA_Kati_Baltram		(C_INFO)
 	condition	 = 	DIA_Kati_Baltram_Condition;
 	information	 = 	DIA_Kati_Baltram_Info;
 	permanent	 = 	FALSE;
-	description	 = "Меня прислал Бальтрам ...";
+	description	 = "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р‘Р°Р»СЊС‚СЂР°Рј ...";
 };
 func int DIA_Kati_Baltram_Condition ()
 {
@@ -159,8 +159,8 @@ func int DIA_Kati_Baltram_Condition ()
 };
 func void DIA_Kati_Baltram_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_Baltram_15_00"); //Меня прислал Бальтрам. Я должен забрать посылку для него.
-	AI_Output (self, other, "DIA_Kati_Baltram_16_01"); //Да, конечно. Вот, я уже упаковала ее.
+	AI_Output (other, self, "DIA_Kati_Baltram_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р‘Р°Р»СЊС‚СЂР°Рј. РЇ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ РїРѕСЃС‹Р»РєСѓ РґР»СЏ РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Kati_Baltram_16_01"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. Р’РѕС‚, СЏ СѓР¶Рµ СѓРїР°РєРѕРІР°Р»Р° РµРµ.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
@@ -176,7 +176,7 @@ instance DIA_Kati_BAUERNAUFSTAND		(C_INFO)
 	condition	 = 	DIA_Kati_BAUERNAUFSTAND_Condition;
 	information	 = 	DIA_Kati_BAUERNAUFSTAND_Info;
 	permanent    =  FALSE;
-	description	 = 	"Почему вы не противостоите тирании Онара?";
+	description	 = 	"РџРѕС‡РµРјСѓ РІС‹ РЅРµ РїСЂРѕС‚РёРІРѕСЃС‚РѕРёС‚Рµ С‚РёСЂР°РЅРёРё РћРЅР°СЂР°?";
 };
 
 func int DIA_Kati_BAUERNAUFSTAND_Condition ()
@@ -189,9 +189,9 @@ func int DIA_Kati_BAUERNAUFSTAND_Condition ()
 
 func void DIA_Kati_BAUERNAUFSTAND_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //Почему вы не противостоите тирании Онара?
-	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Для фермеров, живущих у города, это имеет смысл. Им лучше быть на стороне ополчения, чем полагаться на наемников Онара.
-	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //С другой стороны, есть Бенгар и Секоб, которые скорее откажутся от своих ферм, чем будут работать на короля.
+	AI_Output (other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //РџРѕС‡РµРјСѓ РІС‹ РЅРµ РїСЂРѕС‚РёРІРѕСЃС‚РѕРёС‚Рµ С‚РёСЂР°РЅРёРё РћРЅР°СЂР°?
+	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Р”Р»СЏ С„РµСЂРјРµСЂРѕРІ, Р¶РёРІСѓС‰РёС… Сѓ РіРѕСЂРѕРґР°, СЌС‚Рѕ РёРјРµРµС‚ СЃРјС‹СЃР». РРј Р»СѓС‡С€Рµ Р±С‹С‚СЊ РЅР° СЃС‚РѕСЂРѕРЅРµ РѕРїРѕР»С‡РµРЅРёСЏ, С‡РµРј РїРѕР»Р°РіР°С‚СЊСЃСЏ РЅР° РЅР°РµРјРЅРёРєРѕРІ РћРЅР°СЂР°.
+	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //РЎ РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅС‹, РµСЃС‚СЊ Р‘РµРЅРіР°СЂ Рё РЎРµРєРѕР±, РєРѕС‚РѕСЂС‹Рµ СЃРєРѕСЂРµРµ РѕС‚РєР°Р¶СѓС‚СЃСЏ РѕС‚ СЃРІРѕРёС… С„РµСЂРј, С‡РµРј Р±СѓРґСѓС‚ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РєРѕСЂРѕР»СЏ.
 
 };
 
@@ -205,7 +205,7 @@ instance DIA_Kati_ANDEREHOEFE		(C_INFO)
 	condition	 = 	DIA_Kati_ANDEREHOEFE_Condition;
 	information	 = 	DIA_Kati_ANDEREHOEFE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Где находятся фермы Бенгара и Секоба?";
+	description	 = 	"Р“РґРµ РЅР°С…РѕРґСЏС‚СЃСЏ С„РµСЂРјС‹ Р‘РµРЅРіР°СЂР° Рё РЎРµРєРѕР±Р°?";
 };
 
 func int DIA_Kati_ANDEREHOEFE_Condition ()
@@ -218,8 +218,8 @@ func int DIA_Kati_ANDEREHOEFE_Condition ()
 
 func void DIA_Kati_ANDEREHOEFE_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //Где находятся фермы Бенгара и Секоба?
-	AI_Output (self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //Неподалеку от фермы лендлорда. Иди на восток отсюда, и ты найдешь их.
+	AI_Output (other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //Р“РґРµ РЅР°С…РѕРґСЏС‚СЃСЏ С„РµСЂРјС‹ Р‘РµРЅРіР°СЂР° Рё РЎРµРєРѕР±Р°?
+	AI_Output (self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //РќРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С„РµСЂРјС‹ Р»РµРЅРґР»РѕСЂРґР°. РРґРё РЅР° РІРѕСЃС‚РѕРє РѕС‚СЃСЋРґР°, Рё С‚С‹ РЅР°Р№РґРµС€СЊ РёС….
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -232,7 +232,7 @@ instance DIA_Kati_HIERWEG		(C_INFO)
 	condition	 = 	DIA_Kati_HIERWEG_Condition;
 	information	 = 	DIA_Kati_HIERWEG_Info;
 	permanent	 =  FALSE;
-	description	 = 	"А вы не думали о том, чтобы уехать отсюда?";
+	description	 = 	"Рђ РІС‹ РЅРµ РґСѓРјР°Р»Рё Рѕ С‚РѕРј, С‡С‚РѕР±С‹ СѓРµС…Р°С‚СЊ РѕС‚СЃСЋРґР°?";
 };
 
 func int DIA_Kati_HIERWEG_Condition ()
@@ -245,10 +245,10 @@ func int DIA_Kati_HIERWEG_Condition ()
 
 func void DIA_Kati_HIERWEG_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_HIERWEG_15_00"); //А вы не думали о том, чтобы уехать отсюда?
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_01"); //Не так-то просто уехать из этой части страны. Вся эта земля окружена стеной высоких, непроходимых гор.
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_02"); //Выбраться отсюда можно только лежит через Долину Рудников  или через гавань города.
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_03"); //Так как мы не можем позволить себе купить место на корабле, а Долина Рудников - это место, откуда не возвращаются, мы вынуждены оставаться здесь.
+	AI_Output (other, self, "DIA_Kati_HIERWEG_15_00"); //Рђ РІС‹ РЅРµ РґСѓРјР°Р»Рё Рѕ С‚РѕРј, С‡С‚РѕР±С‹ СѓРµС…Р°С‚СЊ РѕС‚СЃСЋРґР°?
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_01"); //РќРµ С‚Р°Рє-С‚Рѕ РїСЂРѕСЃС‚Рѕ СѓРµС…Р°С‚СЊ РёР· СЌС‚РѕР№ С‡Р°СЃС‚Рё СЃС‚СЂР°РЅС‹. Р’СЃСЏ СЌС‚Р° Р·РµРјР»СЏ РѕРєСЂСѓР¶РµРЅР° СЃС‚РµРЅРѕР№ РІС‹СЃРѕРєРёС…, РЅРµРїСЂРѕС…РѕРґРёРјС‹С… РіРѕСЂ.
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_02"); //Р’С‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° РјРѕР¶РЅРѕ С‚РѕР»СЊРєРѕ Р»РµР¶РёС‚ С‡РµСЂРµР· Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ  РёР»Рё С‡РµСЂРµР· РіР°РІР°РЅСЊ РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_03"); //РўР°Рє РєР°Рє РјС‹ РЅРµ РјРѕР¶РµРј РїРѕР·РІРѕР»РёС‚СЊ СЃРµР±Рµ РєСѓРїРёС‚СЊ РјРµСЃС‚Рѕ РЅР° РєРѕСЂР°Р±Р»Рµ, Р° Р”РѕР»РёРЅР° Р СѓРґРЅРёРєРѕРІ - СЌС‚Рѕ РјРµСЃС‚Рѕ, РѕС‚РєСѓРґР° РЅРµ РІРѕР·РІСЂР°С‰Р°СЋС‚СЃСЏ, РјС‹ РІС‹РЅСѓР¶РґРµРЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -261,7 +261,7 @@ instance DIA_Kati_PASS		(C_INFO)
 	condition	 = 	DIA_Kati_PASS_Condition;
 	information	 = 	DIA_Kati_PASS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Что ты знаешь о Проходе?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РџСЂРѕС…РѕРґРµ?";
 };
 
 func int DIA_Kati_PASS_Condition ()
@@ -274,8 +274,8 @@ func int DIA_Kati_PASS_Condition ()
 
 func void DIA_Kati_PASS_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_PASS_15_00"); //Что ты знаешь о Проходе?
-	AI_Output (self, other, "DIA_Kati_PASS_16_01"); //Сама я там никогда не была. Но я знаю, что он где-то неподалеку от фермы Бенгара на высокогорных пастбищах.
+	AI_Output (other, self, "DIA_Kati_PASS_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РџСЂРѕС…РѕРґРµ?
+	AI_Output (self, other, "DIA_Kati_PASS_16_01"); //РЎР°РјР° СЏ С‚Р°Рј РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р»Р°. РќРѕ СЏ Р·РЅР°СЋ, С‡С‚Рѕ РѕРЅ РіРґРµ-С‚Рѕ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С„РµСЂРјС‹ Р‘РµРЅРіР°СЂР° РЅР° РІС‹СЃРѕРєРѕРіРѕСЂРЅС‹С… РїР°СЃС‚Р±РёС‰Р°С….
 };
 
 
@@ -289,7 +289,7 @@ instance DIA_Kati_PERMKAP1		(C_INFO)
 	condition	 = 	DIA_Kati_PERMKAP1_Condition;
 	information	 = 	DIA_Kati_PERMKAP1_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Береги своего мужа.";
+	description	 = 	"Р‘РµСЂРµРіРё СЃРІРѕРµРіРѕ РјСѓР¶Р°.";
 };
 
 func int DIA_Kati_PERMKAP1_Condition ()
@@ -310,8 +310,8 @@ func int DIA_Kati_PERMKAP1_Condition ()
 
 func void DIA_Kati_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Kati_PERMKAP1_15_00"); //Береги своего мужа.
-	AI_Output			(self, other, "DIA_Kati_PERMKAP1_16_01"); //Я стараюсь изо всех сил.
+	AI_Output			(other, self, "DIA_Kati_PERMKAP1_15_00"); //Р‘РµСЂРµРіРё СЃРІРѕРµРіРѕ РјСѓР¶Р°.
+	AI_Output			(self, other, "DIA_Kati_PERMKAP1_16_01"); //РЇ СЃС‚Р°СЂР°СЋСЃСЊ РёР·Рѕ РІСЃРµС… СЃРёР».
 	AI_StopProcessInfos (self);
 };
 
@@ -359,7 +359,7 @@ instance DIA_Kati_PERM		(C_INFO)
 	information	 = 	DIA_Kati_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"С тобой все в порядке?";
+	description	 = 	"РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Kati_PERM_Condition ()
@@ -373,9 +373,9 @@ func int DIA_Kati_PERM_Condition ()
 
 func void DIA_Kati_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Kati_PERM_15_00"); //С тобой все в порядке?
-	AI_Output			(self, other, "DIA_Kati_PERM_16_01"); //Мы справимся. Вот только не знаю, сколько еще нам придется терпеть этих дьяволов в черном.
-	AI_Output			(self, other, "DIA_Kati_PERM_16_02"); //Я так долго не вынесу. Они шныряют вокруг дома и везде суют свой нос.
+	AI_Output			(other, self, "DIA_Kati_PERM_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output			(self, other, "DIA_Kati_PERM_16_01"); //РњС‹ СЃРїСЂР°РІРёРјСЃСЏ. Р’РѕС‚ С‚РѕР»СЊРєРѕ РЅРµ Р·РЅР°СЋ, СЃРєРѕР»СЊРєРѕ РµС‰Рµ РЅР°Рј РїСЂРёРґРµС‚СЃСЏ С‚РµСЂРїРµС‚СЊ СЌС‚РёС… РґСЊСЏРІРѕР»РѕРІ РІ С‡РµСЂРЅРѕРј.
+	AI_Output			(self, other, "DIA_Kati_PERM_16_02"); //РЇ С‚Р°Рє РґРѕР»РіРѕ РЅРµ РІС‹РЅРµСЃСѓ. РћРЅРё С€РЅС‹СЂСЏСЋС‚ РІРѕРєСЂСѓРі РґРѕРјР° Рё РІРµР·РґРµ СЃСѓСЋС‚ СЃРІРѕР№ РЅРѕСЃ.
 };
 
 

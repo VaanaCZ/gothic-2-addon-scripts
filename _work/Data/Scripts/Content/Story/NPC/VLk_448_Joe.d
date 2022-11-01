@@ -2,7 +2,7 @@
 instance VLK_448_Joe (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Äæî"; 
+	name 		= "Ð”Ð¶Ð¾"; 
 	guild 		= GIL_OUT;
 	id 			= 448;
 	voice 		= 10;

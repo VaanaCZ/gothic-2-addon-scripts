@@ -10,7 +10,7 @@ func void ENTER_OLDWORLD_FIRSTTIME_TRIGGER ()
 			// Start 
 			B_KillNpc (Bruder);
 			B_KillNpc (VLK_Leiche3);
-			//Weg von Mine2 zu Cavalorns Hütte
+			//Weg von Mine2 zu Cavalorns HÑŒtte
 			B_KillNpc (VLK_Leiche2);
 			B_KillNpc (STRF_Leiche1);
 			B_KillNpc (STRF_Leiche2);
@@ -32,7 +32,7 @@ func void ENTER_OLDWORLD_FIRSTTIME_TRIGGER ()
 			B_KillNpc (PAL_Leiche4);
 			B_KillNpc (PAL_Leiche5);
 			
-			//in der Wolfshöhle gemauerter Raum
+			//in der WolfshÑ†hle gemauerter Raum
 			B_KillNpc (Olav);
 			
 			PlayVideo ( "DRAGONATTACK.BIK");	

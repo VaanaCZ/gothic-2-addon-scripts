@@ -2,7 +2,7 @@
 instance VLK_410_Baltram (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "¡‡Î¸Ú‡Ï";
+	name 		= "–ë–∞–ª—å—Ç—Ä–∞–º";
 	guild 		= GIL_VLK;
 	id 			= 410;
 	voice 		= 1;
@@ -21,7 +21,7 @@ instance VLK_410_Baltram (Npc_Default)
 	EquipItem (self, ItMw_ShortSword2);
 	
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Weak_Markus_Kark, BodyTex_N, ITAR_VLK_M);	

@@ -31,7 +31,7 @@ INSTANCE DIA_Ruga_PICKPOCKET (C_INFO)
 	condition	= DIA_Ruga_PICKPOCKET_Condition;
 	information	= DIA_Ruga_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот ключ будет легко)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ Р±СѓРґРµС‚ Р»РµРіРєРѕ)";
 };                       
 
 FUNC INT DIA_Ruga_PICKPOCKET_Condition()
@@ -95,11 +95,11 @@ func int DIA_Ruga_Hallo_Condition ()
 };
 func void DIA_Ruga_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //Что ты делаешь здесь?
-	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //Я обучаю парней стрельбе из арбалета и помогаю им стать более ловкими.
+	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //РЇ РѕР±СѓС‡Р°СЋ РїР°СЂРЅРµР№ СЃС‚СЂРµР»СЊР±Рµ РёР· Р°СЂР±Р°Р»РµС‚Р° Рё РїРѕРјРѕРіР°СЋ РёРј СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРјРё.
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Руга, городской гвардеец, может помочь мне повысить мою ловкость и научить меня пользоваться арбалетом. Но для этого я должен служить королю.");
+	B_LogEntry (Topic_CityTeacher, "Р СѓРіР°, РіРѕСЂРѕРґСЃРєРѕР№ РіРІР°СЂРґРµРµС†, РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ Р»РѕРІРєРѕСЃС‚СЊ Рё РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ Р°СЂР±Р°Р»РµС‚РѕРј. РќРѕ РґР»СЏ СЌС‚РѕРіРѕ СЏ РґРѕР»Р¶РµРЅ СЃР»СѓР¶РёС‚СЊ РєРѕСЂРѕР»СЋ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Train
@@ -111,7 +111,7 @@ instance DIA_Ruga_Train		(C_INFO)
 	condition	 = 	DIA_Ruga_Train_Condition;
 	information	 = 	DIA_Ruga_Train_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Ты не мог бы потренировать меня?";
+	description	 = 	"РўС‹ РЅРµ РјРѕРі Р±С‹ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊ РјРµРЅСЏ?";
 };
 
 func int DIA_Ruga_Train_Condition ()
@@ -123,15 +123,15 @@ func int DIA_Ruga_Train_Condition ()
 };
 func void DIA_Ruga_Train_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //Ты можешь потренировать меня?
+	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊ РјРµРЅСЏ?
 	
 	if (hero.guild == GIL_MIL)
 	|| (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //Конечно. Если у тебя достаточно опыта, я готов помочь тебе.
-		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //Но нужно понимать, что ловкость и стрельба неотделимы друг от друга, как арбалет и стрела. Одно...
-		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //... ничего не стоит без другого. Я понял.
+		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //РљРѕРЅРµС‡РЅРѕ. Р•СЃР»Рё Сѓ С‚РµР±СЏ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕРїС‹С‚Р°, СЏ РіРѕС‚РѕРІ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //РќРѕ РЅСѓР¶РЅРѕ РїРѕРЅРёРјР°С‚СЊ, С‡С‚Рѕ Р»РѕРІРєРѕСЃС‚СЊ Рё СЃС‚СЂРµР»СЊР±Р° РЅРµРѕС‚РґРµР»РёРјС‹ РґСЂСѓРі РѕС‚ РґСЂСѓРіР°, РєР°Рє Р°СЂР±Р°Р»РµС‚ Рё СЃС‚СЂРµР»Р°. РћРґРЅРѕ...
+		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //... РЅРёС‡РµРіРѕ РЅРµ СЃС‚РѕРёС‚ Р±РµР· РґСЂСѓРіРѕРіРѕ. РЇ РїРѕРЅСЏР».
 	
 		Ruga_TeachCrossbow = TRUE;
 		Ruga_TeachDEX 	   = TRUE;
@@ -139,13 +139,13 @@ func void DIA_Ruga_Train_Info ()
 	else if ((hero.guild == GIL_SLD)
 	|| 		 (hero.guild == GIL_DJG))
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //Убирайся с глаз моих, (презрительно) наемник.
+		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //РЈР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС…, (РїСЂРµР·СЂРёС‚РµР»СЊРЅРѕ) РЅР°РµРјРЅРёРє.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{	 
-		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Нет. Я тренирую только людей, состоящих на службе у короля. Больше никого.
-		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Но нам всегда нужны хорошие люди. Так что, если хочешь поступить в ополчение, поговори с лордом Андрэ.
+		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //РќРµС‚. РЇ С‚СЂРµРЅРёСЂСѓСЋ С‚РѕР»СЊРєРѕ Р»СЋРґРµР№, СЃРѕСЃС‚РѕСЏС‰РёС… РЅР° СЃР»СѓР¶Р±Рµ Сѓ РєРѕСЂРѕР»СЏ. Р‘РѕР»СЊС€Рµ РЅРёРєРѕРіРѕ.
+		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //РќРѕ РЅР°Рј РІСЃРµРіРґР° РЅСѓР¶РЅС‹ С…РѕСЂРѕС€РёРµ Р»СЋРґРё. РўР°Рє С‡С‚Рѕ, РµСЃР»Рё С…РѕС‡РµС€СЊ РїРѕСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ, РїРѕРіРѕРІРѕСЂРё СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂСЌ.
 	};     
 };
 //**************************************
@@ -158,7 +158,7 @@ INSTANCE DIA_Ruga_Teach(C_INFO)
 	condition	= DIA_Ruga_Teach_Condition;
 	information	= DIA_Ruga_Teach_Info;
 	permanent	= TRUE;
-	description = "Покажи мне, как стрелять из арбалета.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє СЃС‚СЂРµР»СЏС‚СЊ РёР· Р°СЂР±Р°Р»РµС‚Р°.";
 };                       
 //-------------------------------------
 var int DIA_Ruga_Teach_permanent;
@@ -174,7 +174,7 @@ FUNC INT DIA_Ruga_Teach_Condition()
  
 FUNC VOID DIA_Ruga_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //Покажи мне, как стрелять из арбалета.
+	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє СЃС‚СЂРµР»СЏС‚СЊ РёР· Р°СЂР±Р°Р»РµС‚Р°.
 
 	Info_ClearChoices 	(DIA_Ruga_Teach);
 	Info_AddChoice 		(DIA_Ruga_Teach,	DIALOG_BACK		,DIA_Ruga_Teach_Back);
@@ -186,7 +186,7 @@ FUNC VOID DIA_Ruga_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_CROSSBOW] >= 90)
 	{
-		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //Мне больше нечему учить тебя. Тебе лучше поискать другого учителя.
+		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ. РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ РґСЂСѓРіРѕРіРѕ СѓС‡РёС‚РµР»СЏ.
 		DIA_Ruga_Teach_permanent = TRUE;
 		
 	};
@@ -224,7 +224,7 @@ instance DIA_Ruga_TEACHDEX		(C_INFO)
 	condition	 = 	DIA_Ruga_TEACHDEX_Condition;
 	information	 = 	DIA_Ruga_TEACHDEX_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу стать более ловким.";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј.";
 };
 //------------------------------------
 var int DIA_Ruga_TEACHDEX_permanent;
@@ -239,7 +239,7 @@ func int DIA_Ruga_TEACHDEX_Condition ()
 };
 func void DIA_Ruga_TEACHDEX_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_TEACHDEX_15_00"); //Я хочу стать более ловким.
+	AI_Output (other, self, "DIA_Ruga_TEACHDEX_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј.
 	
 	Info_ClearChoices   (DIA_Ruga_TEACHDEX);
 	Info_AddChoice 		(DIA_Ruga_TEACHDEX, DIALOG_BACK, DIA_Ruga_TEACHDEX_BACK);
@@ -251,7 +251,7 @@ func void DIA_Ruga_TEACHDEX_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //Это все, чему я мог обучить тебя. Если ты хочешь стать еще более ловким, тебе лучше поискать другого учителя.
+		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //Р­С‚Рѕ РІСЃРµ, С‡РµРјСѓ СЏ РјРѕРі РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ. Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РµС‰Рµ Р±РѕР»РµРµ Р»РѕРІРєРёРј, С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ РґСЂСѓРіРѕРіРѕ СѓС‡РёС‚РµР»СЏ.
 		DIA_Ruga_TEACHDEX_permanent = TRUE;
 	};
 	Info_ClearChoices (DIA_Ruga_TEACHDEX);

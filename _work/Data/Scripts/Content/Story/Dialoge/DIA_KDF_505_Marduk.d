@@ -30,7 +30,7 @@ instance DIA_Marduk_JOB		(C_INFO)
 	condition	 = 	DIA_Marduk_JOB_Condition;
 	information	 = 	DIA_Marduk_JOB_Info;
 	permanent	 =	FALSE;	
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 func int DIA_Marduk_JOB_Condition ()
 {
@@ -38,8 +38,8 @@ func int DIA_Marduk_JOB_Condition ()
 };
 func void DIA_Marduk_JOB_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_JOB_15_00"); //Что ты делаешь здесь?
-	AI_Output (self, other, "DIA_Marduk_JOB_05_01"); //Я готовлю паладинов к сражению против Зла.
+	AI_Output (other, self, "DIA_Marduk_JOB_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Marduk_JOB_05_01"); //РЇ РіРѕС‚РѕРІР»СЋ РїР°Р»Р°РґРёРЅРѕРІ Рє СЃСЂР°Р¶РµРЅРёСЋ РїСЂРѕС‚РёРІ Р—Р»Р°.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Arbeit
@@ -51,7 +51,7 @@ instance DIA_Marduk_Arbeit		(C_INFO)
 	condition	 = 	DIA_Marduk_Arbeit_Condition;
 	information	 = 	DIA_Marduk_Arbeit_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Могу я сделать что-нибудь для тебя, мастер?";
+	description	 = 	"РњРѕРіСѓ СЏ СЃРґРµР»Р°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґР»СЏ С‚РµР±СЏ, РјР°СЃС‚РµСЂ?";
 };
 func int DIA_Marduk_Arbeit_Condition ()
 {	
@@ -62,15 +62,15 @@ func int DIA_Marduk_Arbeit_Condition ()
 };
 func void DIA_Marduk_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_Arbeit_15_00"); //Могу я сделать что-нибудь для тебя, мастер?
-	AI_Output (self, other, "DIA_Marduk_Arbeit_05_01"); //Для меня? Нет, мне не нужна твоя помощь. Лучше помолись за воинов Инноса, отправившихся в Долину Рудников.
+	AI_Output (other, self, "DIA_Marduk_Arbeit_15_00"); //РњРѕРіСѓ СЏ СЃРґРµР»Р°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґР»СЏ С‚РµР±СЏ, РјР°СЃС‚РµСЂ?
+	AI_Output (self, other, "DIA_Marduk_Arbeit_05_01"); //Р”Р»СЏ РјРµРЅСЏ? РќРµС‚, РјРЅРµ РЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ. Р›СѓС‡С€Рµ РїРѕРјРѕР»РёСЃСЊ Р·Р° РІРѕРёРЅРѕРІ РРЅРЅРѕСЃР°, РѕС‚РїСЂР°РІРёРІС€РёС…СЃСЏ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
 	
 	MIS_MardukBeten = LOG_RUNNING;
 	B_StartOtherRoutine (Sergio,"WAIT");
 	
 	Log_CreateTopic (Topic_MardukBeten,LOG_MISSION);
 	Log_SetTopicStatus (Topic_MardukBeten,LOG_RUNNING);
-	B_LogEntry (Topic_MardukBeten,"У мастера Мардука нет заданий для меня. Он сказал, что мне лучше пойти помолиться за паладинов.");
+	B_LogEntry (Topic_MardukBeten,"РЈ РјР°СЃС‚РµСЂР° РњР°СЂРґСѓРєР° РЅРµС‚ Р·Р°РґР°РЅРёР№ РґР»СЏ РјРµРЅСЏ. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РјРЅРµ Р»СѓС‡С€Рµ РїРѕР№С‚Рё РїРѕРјРѕР»РёС‚СЊСЃСЏ Р·Р° РїР°Р»Р°РґРёРЅРѕРІ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gebetet
@@ -82,7 +82,7 @@ instance DIA_Marduk_Gebetet		(C_INFO)
 	condition	 = 	DIA_Marduk_Gebetet_Condition;
 	information	 = 	DIA_Marduk_Gebetet_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я помолился за паладинов.";
+	description	 = 	"РЇ РїРѕРјРѕР»РёР»СЃСЏ Р·Р° РїР°Р»Р°РґРёРЅРѕРІ.";
 };
 func int DIA_Marduk_Gebetet_Condition ()
 {	
@@ -94,15 +94,15 @@ func int DIA_Marduk_Gebetet_Condition ()
 };
 func void DIA_Marduk_Gebetet_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_Gebetet_15_00"); //Я помолился за паладинов.
-	AI_Output (self, other, "DIA_Marduk_Gebetet_05_01"); //Это хорошо. А теперь возвращайся к своей работе.
+	AI_Output (other, self, "DIA_Marduk_Gebetet_15_00"); //РЇ РїРѕРјРѕР»РёР»СЃСЏ Р·Р° РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output (self, other, "DIA_Marduk_Gebetet_05_01"); //Р­С‚Рѕ С…РѕСЂРѕС€Рѕ. Рђ С‚РµРїРµСЂСЊ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ.
 	
 	MIS_MardukBeten = LOG_SUCCESS;
 	B_GivePlayerXP (XP_MardukBeten);
 	B_StartOtherRoutine (Sergio,"START");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Das Bцse
+//	Info Das BС†se
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Marduk_Evil		(C_INFO)
 {
@@ -110,7 +110,7 @@ instance DIA_Marduk_Evil		(C_INFO)
 	condition	 = 	DIA_Marduk_Evil_Condition;
 	information	 = 	DIA_Marduk_Evil_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Что такое 'Зло'?";
+	description	 = 	"Р§С‚Рѕ С‚Р°РєРѕРµ 'Р—Р»Рѕ'?";
 };
 func int DIA_Marduk_Evil_Condition ()
 {
@@ -121,11 +121,11 @@ func int DIA_Marduk_Evil_Condition ()
 };
 func void DIA_Marduk_Evil_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_Evil_15_00"); //Что такое 'Зло'?
-	AI_Output (self ,other, "DIA_Marduk_Evil_05_01"); //Зло повсюду. Оно порождение Белиара, извечного противника Инноса.
-	AI_Output (self ,other, "DIA_Marduk_Evil_05_02"); //Это всепоглощающая тьма, которая пытается навсегда закрыть от нас Свет Инноса.
-	AI_Output (self ,other, "DIA_Marduk_Evil_05_03"); //Белиар - Повелитель Тьмы, Ненависти и Разрушений.
-	AI_Output (self ,other, "DIA_Marduk_Evil_05_04"); //Только те из нас, чьи сердца горят Святым Огнем Инноса, несут сияющий Свет Инноса в наш мир и изгоняют тьму.
+	AI_Output (other, self, "DIA_Marduk_Evil_15_00"); //Р§С‚Рѕ С‚Р°РєРѕРµ 'Р—Р»Рѕ'?
+	AI_Output (self ,other, "DIA_Marduk_Evil_05_01"); //Р—Р»Рѕ РїРѕРІСЃСЋРґСѓ. РћРЅРѕ РїРѕСЂРѕР¶РґРµРЅРёРµ Р‘РµР»РёР°СЂР°, РёР·РІРµС‡РЅРѕРіРѕ РїСЂРѕС‚РёРІРЅРёРєР° РРЅРЅРѕСЃР°.
+	AI_Output (self ,other, "DIA_Marduk_Evil_05_02"); //Р­С‚Рѕ РІСЃРµРїРѕРіР»РѕС‰Р°СЋС‰Р°СЏ С‚СЊРјР°, РєРѕС‚РѕСЂР°СЏ РїС‹С‚Р°РµС‚СЃСЏ РЅР°РІСЃРµРіРґР° Р·Р°РєСЂС‹С‚СЊ РѕС‚ РЅР°СЃ РЎРІРµС‚ РРЅРЅРѕСЃР°.
+	AI_Output (self ,other, "DIA_Marduk_Evil_05_03"); //Р‘РµР»РёР°СЂ - РџРѕРІРµР»РёС‚РµР»СЊ РўСЊРјС‹, РќРµРЅР°РІРёСЃС‚Рё Рё Р Р°Р·СЂСѓС€РµРЅРёР№.
+	AI_Output (self ,other, "DIA_Marduk_Evil_05_04"); //РўРѕР»СЊРєРѕ С‚Рµ РёР· РЅР°СЃ, С‡СЊРё СЃРµСЂРґС†Р° РіРѕСЂСЏС‚ РЎРІСЏС‚С‹Рј РћРіРЅРµРј РРЅРЅРѕСЃР°, РЅРµСЃСѓС‚ СЃРёСЏСЋС‰РёР№ РЎРІРµС‚ РРЅРЅРѕСЃР° РІ РЅР°С€ РјРёСЂ Рё РёР·РіРѕРЅСЏСЋС‚ С‚СЊРјСѓ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Paladine
@@ -136,7 +136,7 @@ instance DIA_Marduk_Pal		(C_INFO)
 	condition	 = 	DIA_Marduk_Pal_Condition;
 	information	 = 	DIA_Marduk_Pal_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Но в монастыре живут только маги и послушники.";
+	description	 = 	"РќРѕ РІ РјРѕРЅР°СЃС‚С‹СЂРµ Р¶РёРІСѓС‚ С‚РѕР»СЊРєРѕ РјР°РіРё Рё РїРѕСЃР»СѓС€РЅРёРєРё.";
 };
 func int DIA_Marduk_Pal_Condition ()
 {
@@ -147,10 +147,10 @@ func int DIA_Marduk_Pal_Condition ()
 };
 func void DIA_Marduk_Pal_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_Pal_15_00"); //Но в монастыре живут только маги и послушники.
-	AI_Output (self, other, "DIA_Marduk_Pal_05_01"); //Правильно. В отличие от нашей общины, которая чтит Слово Инноса...
-	AI_Output (self, other, "DIA_Marduk_Pal_05_02"); //...паладины чтят превыше всего дела нашего Владыки.
-	AI_Output (self, other, "DIA_Marduk_Pal_05_03"); //Мы все - представители Инноса, но паладины - его воины, идущие в бой с его именем на устах и прославляя его величие.
+	AI_Output (other, self, "DIA_Marduk_Pal_15_00"); //РќРѕ РІ РјРѕРЅР°СЃС‚С‹СЂРµ Р¶РёРІСѓС‚ С‚РѕР»СЊРєРѕ РјР°РіРё Рё РїРѕСЃР»СѓС€РЅРёРєРё.
+	AI_Output (self, other, "DIA_Marduk_Pal_05_01"); //РџСЂР°РІРёР»СЊРЅРѕ. Р’ РѕС‚Р»РёС‡РёРµ РѕС‚ РЅР°С€РµР№ РѕР±С‰РёРЅС‹, РєРѕС‚РѕСЂР°СЏ С‡С‚РёС‚ РЎР»РѕРІРѕ РРЅРЅРѕСЃР°...
+	AI_Output (self, other, "DIA_Marduk_Pal_05_02"); //...РїР°Р»Р°РґРёРЅС‹ С‡С‚СЏС‚ РїСЂРµРІС‹С€Рµ РІСЃРµРіРѕ РґРµР»Р° РЅР°С€РµРіРѕ Р’Р»Р°РґС‹РєРё.
+	AI_Output (self, other, "DIA_Marduk_Pal_05_03"); //РњС‹ РІСЃРµ - РїСЂРµРґСЃС‚Р°РІРёС‚РµР»Рё РРЅРЅРѕСЃР°, РЅРѕ РїР°Р»Р°РґРёРЅС‹ - РµРіРѕ РІРѕРёРЅС‹, РёРґСѓС‰РёРµ РІ Р±РѕР№ СЃ РµРіРѕ РёРјРµРЅРµРј РЅР° СѓСЃС‚Р°С… Рё РїСЂРѕСЃР»Р°РІР»СЏСЏ РµРіРѕ РІРµР»РёС‡РёРµ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info BEFORETEACH
@@ -162,7 +162,7 @@ instance DIA_Marduk_BEFORETEACH		(C_INFO)
 	condition	 = 	DIA_Marduk_BEFORETEACH_Condition;
 	information	 = 	DIA_Marduk_BEFORETEACH_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты можешь чему-нибудь научить меня?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 func int DIA_Marduk_BEFORETEACH_Condition ()
 {	
@@ -173,12 +173,12 @@ func int DIA_Marduk_BEFORETEACH_Condition ()
 };
 func void DIA_Marduk_BEFORETEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_BEFORETEACH_15_00"); //Ты можешь чему-нибудь научить меня?
-	AI_Output (self, other, "DIA_Marduk_BEFORETEACH_05_01"); //Я эксперт в магии льда и грома. Я могу обучить тебя этим дисциплинам.
+	AI_Output (other, self, "DIA_Marduk_BEFORETEACH_15_00"); //РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Marduk_BEFORETEACH_05_01"); //РЇ СЌРєСЃРїРµСЂС‚ РІ РјР°РіРёРё Р»СЊРґР° Рё РіСЂРѕРјР°. РЇ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ СЌС‚РёРј РґРёСЃС†РёРїР»РёРЅР°Рј.
 	
 	if (other.guild != GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Marduk_BEFORETEACH_05_02"); //Однако я обучаю только магов.
+		AI_Output (self, other, "DIA_Marduk_BEFORETEACH_05_02"); //РћРґРЅР°РєРѕ СЏ РѕР±СѓС‡Р°СЋ С‚РѕР»СЊРєРѕ РјР°РіРѕРІ.
 	};
 	
 };
@@ -192,7 +192,7 @@ instance DIA_Marduk_TEACH		(C_INFO)
 	condition	 = 	DIA_Marduk_TEACH_Condition;
 	information	 = 	DIA_Marduk_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Обучи меня (созданию рун).";
+	description	 = 	"РћР±СѓС‡Рё РјРµРЅСЏ (СЃРѕР·РґР°РЅРёСЋ СЂСѓРЅ).";
 };
 func int DIA_Marduk_TEACH_Condition ()
 {	
@@ -208,7 +208,7 @@ func void DIA_Marduk_TEACH_Info ()
 		
 		abletolearn = 0;
 		
-		AI_Output (other, self, "DIA_Marduk_TEACH_15_00"); //Обучи меня.
+		AI_Output (other, self, "DIA_Marduk_TEACH_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ.
 
 		Info_ClearChoices 	(DIA_Marduk_TEACH);
 		Info_AddChoice 		(DIA_Marduk_TEACH,DIALOG_BACK,DIA_Marduk_TEACH_BACK);
@@ -250,7 +250,7 @@ func void DIA_Marduk_TEACH_Info ()
 		};
 		if (abletolearn < 1)
 		{
-			AI_Output (self, other, "DIA_Marduk_TEACH_05_01"); //Сейчас я не могу обучить тебя.
+			AI_Output (self, other, "DIA_Marduk_TEACH_05_01"); //РЎРµР№С‡Р°СЃ СЏ РЅРµ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ.
 			Info_ClearChoices 	(DIA_Marduk_TEACH);
 		};
 	
@@ -373,62 +373,62 @@ FUNC INT DIA_Marduk_Kap3_Hello_Condition()
 };
 FUNC VOID DIA_Marduk_Kap3_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Info_05_00"); //Добро пожаловать, сын мой.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Info_05_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, СЃС‹РЅ РјРѕР№.
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Info_05_01"); //С каких это пор ты стал паладином?
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Info_05_01"); //РЎ РєР°РєРёС… СЌС‚Рѕ РїРѕСЂ С‚С‹ СЃС‚Р°Р» РїР°Р»Р°РґРёРЅРѕРј?
 	};
 	if (hero.Guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Info_05_02"); //Откуда ты пришел?
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Info_05_02"); //РћС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР»?
 	};
 	
 	Info_ClearChoices (DIA_Marduk_Kap3_Hello);
-	Info_AddChoice (DIA_Marduk_Kap3_Hello,"Это не твое дело.",DIA_Marduk_Kap3_Hello_NotYourConcern);
+	Info_AddChoice (DIA_Marduk_Kap3_Hello,"Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ.",DIA_Marduk_Kap3_Hello_NotYourConcern);
 	
 	if (hero.guild == GIL_PAL)
 	{
-		Info_AddChoice (DIA_Marduk_Kap3_Hello,"Совсем недавно.",DIA_Marduk_Kap3_Hello_Soon);
+		Info_AddChoice (DIA_Marduk_Kap3_Hello,"РЎРѕРІСЃРµРј РЅРµРґР°РІРЅРѕ.",DIA_Marduk_Kap3_Hello_Soon);
 	};
 	if (hero.Guild == GIL_DJG)
 	{
-		Info_AddChoice (DIA_Marduk_Kap3_Hello,"Я пришел с фермы.",DIA_Marduk_Kap3_Hello_DJG);
+		Info_AddChoice (DIA_Marduk_Kap3_Hello,"РЇ РїСЂРёС€РµР» СЃ С„РµСЂРјС‹.",DIA_Marduk_Kap3_Hello_DJG);
 	};
 	
 };
 
 FUNC VOID DIA_Marduk_Kap3_Hello_NotYourConcern ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_NotYourConcern_15_00"); //Это не твое дело.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_NotYourConcern_15_00"); //Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ.
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_01"); //(ворчливо) Паладин всегда должен быть вежливым и скромным. Ты должен защищать тех, кто не может защитить себя сам.
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_02"); //(ворчливо) Это привилегия, и ты должен быть благодарен, что Иннос дает тебе такую возможность. Подумай об этом!
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_01"); //(РІРѕСЂС‡Р»РёРІРѕ) РџР°Р»Р°РґРёРЅ РІСЃРµРіРґР° РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РІРµР¶Р»РёРІС‹Рј Рё СЃРєСЂРѕРјРЅС‹Рј. РўС‹ РґРѕР»Р¶РµРЅ Р·Р°С‰РёС‰Р°С‚СЊ С‚РµС…, РєС‚Рѕ РЅРµ РјРѕР¶РµС‚ Р·Р°С‰РёС‚РёС‚СЊ СЃРµР±СЏ СЃР°Рј.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_02"); //(РІРѕСЂС‡Р»РёРІРѕ) Р­С‚Рѕ РїСЂРёРІРёР»РµРіРёСЏ, Рё С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Р±Р»Р°РіРѕРґР°СЂРµРЅ, С‡С‚Рѕ РРЅРЅРѕСЃ РґР°РµС‚ С‚РµР±Рµ С‚Р°РєСѓСЋ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ. РџРѕРґСѓРјР°Р№ РѕР± СЌС‚РѕРј!
 	};
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_03"); //(зло) Эх, раньше всякий сброд не пускали в монастырь. Твое поведение доказывает, что это были хорошие времена.
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_04"); //(предупреждающе) Я предупреждаю тебя, не стоит сеять тут смуту - ты будешь немедленно наказан. Мы не будем проявлять фальшивое великодушие.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_03"); //(Р·Р»Рѕ) Р­С…, СЂР°РЅСЊС€Рµ РІСЃСЏРєРёР№ СЃР±СЂРѕРґ РЅРµ РїСѓСЃРєР°Р»Рё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. РўРІРѕРµ РїРѕРІРµРґРµРЅРёРµ РґРѕРєР°Р·С‹РІР°РµС‚, С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рё С…РѕСЂРѕС€РёРµ РІСЂРµРјРµРЅР°.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_04"); //(РїСЂРµРґСѓРїСЂРµР¶РґР°СЋС‰Рµ) РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ, РЅРµ СЃС‚РѕРёС‚ СЃРµСЏС‚СЊ С‚СѓС‚ СЃРјСѓС‚Сѓ - С‚С‹ Р±СѓРґРµС€СЊ РЅРµРјРµРґР»РµРЅРЅРѕ РЅР°РєР°Р·Р°РЅ. РњС‹ РЅРµ Р±СѓРґРµРј РїСЂРѕСЏРІР»СЏС‚СЊ С„Р°Р»СЊС€РёРІРѕРµ РІРµР»РёРєРѕРґСѓС€РёРµ.
 	};	
 	Info_ClearChoices (DIA_Marduk_Kap3_Hello);
 };
 
 FUNC VOID DIA_Marduk_Kap3_Hello_Soon ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_Soon_15_00"); //Совсем недавно.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Soon_05_01"); //Тогда добро пожаловать. В этой битве нам нужны все, у кого есть мужество противостоять злу.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Soon_05_02"); //Судьба всех нас лежит в руках людей вроде тебя. Да придаст тебе Иннос так необходимое тебе мужество.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_Soon_15_00"); //РЎРѕРІСЃРµРј РЅРµРґР°РІРЅРѕ.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Soon_05_01"); //РўРѕРіРґР° РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ. Р’ СЌС‚РѕР№ Р±РёС‚РІРµ РЅР°Рј РЅСѓР¶РЅС‹ РІСЃРµ, Сѓ РєРѕРіРѕ РµСЃС‚СЊ РјСѓР¶РµСЃС‚РІРѕ РїСЂРѕС‚РёРІРѕСЃС‚РѕСЏС‚СЊ Р·Р»Сѓ.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Soon_05_02"); //РЎСѓРґСЊР±Р° РІСЃРµС… РЅР°СЃ Р»РµР¶РёС‚ РІ СЂСѓРєР°С… Р»СЋРґРµР№ РІСЂРѕРґРµ С‚РµР±СЏ. Р”Р° РїСЂРёРґР°СЃС‚ С‚РµР±Рµ РРЅРЅРѕСЃ С‚Р°Рє РЅРµРѕР±С…РѕРґРёРјРѕРµ С‚РµР±Рµ РјСѓР¶РµСЃС‚РІРѕ.
 	
 	Info_ClearChoices (DIA_Marduk_Kap3_Hello);
 };
 
 FUNC VOID DIA_Marduk_Kap3_Hello_DJG ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_DJG_15_00"); //Я пришел с фермы.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_DJG_05_01"); //Тогда добро пожаловать во имя гостеприимства. Надеюсь, ты оценишь его.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_DJG_05_02"); //Но не забывай, что ты в гостях, иначе у тебя будут большие проблемы.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_DJG_15_00"); //РЇ РїСЂРёС€РµР» СЃ С„РµСЂРјС‹.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_DJG_05_01"); //РўРѕРіРґР° РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІРѕ РёРјСЏ РіРѕСЃС‚РµРїСЂРёРёРјСЃС‚РІР°. РќР°РґРµСЋСЃСЊ, С‚С‹ РѕС†РµРЅРёС€СЊ РµРіРѕ.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_DJG_05_02"); //РќРѕ РЅРµ Р·Р°Р±С‹РІР°Р№, С‡С‚Рѕ С‚С‹ РІ РіРѕСЃС‚СЏС…, РёРЅР°С‡Рµ Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹.
 	
 	Info_ClearChoices (DIA_Marduk_Kap3_Hello);
 };
@@ -443,7 +443,7 @@ INSTANCE DIA_Marduk_TrainPals   (C_INFO)
 	condition   = DIA_Marduk_TrainPals_Condition;
 	information = DIA_Marduk_TrainPals_Info;
 	permanent   = TRUE;
-	description = "Чему ты можешь обучить меня?";
+	description = "Р§РµРјСѓ С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 
 //---------------------------------
@@ -459,42 +459,42 @@ FUNC INT DIA_Marduk_TrainPals_Condition()
 };
 FUNC VOID DIA_Marduk_TrainPals_Info()
 {
-	AI_Output (other,self ,"DIA_Marduk_TrainPals_15_00"); //Чему ты можешь обучить меня?
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_01"); //Естественно, я не могу обучить тебя боевым искусствам.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_02"); //Но я могу, впрочем, донести сущность Инноса и его дары до тебя.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_03"); //Кроме того, я мои обязанности входит подготовить тебя к Освящению Меча.
-	AI_Output (other,self ,"DIA_Marduk_TrainPals_15_04"); //А магии?
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_05"); //Здесь мы учим только нашей магии. Ты должен изучать магию паладинов в городе.
+	AI_Output (other,self ,"DIA_Marduk_TrainPals_15_00"); //Р§РµРјСѓ С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_01"); //Р•СЃС‚РµСЃС‚РІРµРЅРЅРѕ, СЏ РЅРµ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ Р±РѕРµРІС‹Рј РёСЃРєСѓСЃСЃС‚РІР°Рј.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_02"); //РќРѕ СЏ РјРѕРіСѓ, РІРїСЂРѕС‡РµРј, РґРѕРЅРµСЃС‚Рё СЃСѓС‰РЅРѕСЃС‚СЊ РРЅРЅРѕСЃР° Рё РµРіРѕ РґР°СЂС‹ РґРѕ С‚РµР±СЏ.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_03"); //РљСЂРѕРјРµ С‚РѕРіРѕ, СЏ РјРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РІС…РѕРґРёС‚ РїРѕРґРіРѕС‚РѕРІРёС‚СЊ С‚РµР±СЏ Рє РћСЃРІСЏС‰РµРЅРёСЋ РњРµС‡Р°.
+	AI_Output (other,self ,"DIA_Marduk_TrainPals_15_04"); //Рђ РјР°РіРёРё?
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_05"); //Р—РґРµСЃСЊ РјС‹ СѓС‡РёРј С‚РѕР»СЊРєРѕ РЅР°С€РµР№ РјР°РіРёРё. РўС‹ РґРѕР»Р¶РµРЅ РёР·СѓС‡Р°С‚СЊ РјР°РіРёСЋ РїР°Р»Р°РґРёРЅРѕРІ РІ РіРѕСЂРѕРґРµ.
 	
 	Info_ClearChoices (DIA_Marduk_TrainPals); 
-	Info_AddChoice (DIA_Marduk_TrainPals,"Может быть, позже.",DIA_Marduk_TrainPals_Later);
-	Info_AddChoice (DIA_Marduk_TrainPals,"Что ты хочешь этим сказать?",DIA_Marduk_TrainPals_Meaning);
-	Info_AddChoice (DIA_Marduk_TrainPals,"Что такое Освящение Меча?",DIA_Marduk_TrainPals_Blessing);
+	Info_AddChoice (DIA_Marduk_TrainPals,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ.",DIA_Marduk_TrainPals_Later);
+	Info_AddChoice (DIA_Marduk_TrainPals,"Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЌС‚РёРј СЃРєР°Р·Р°С‚СЊ?",DIA_Marduk_TrainPals_Meaning);
+	Info_AddChoice (DIA_Marduk_TrainPals,"Р§С‚Рѕ С‚Р°РєРѕРµ РћСЃРІСЏС‰РµРЅРёРµ РњРµС‡Р°?",DIA_Marduk_TrainPals_Blessing);
 };
 
 FUNC VOID DIA_Marduk_TrainPals_Later()
 {
-	AI_Output (other,self ,"DIA_Marduk_TrainPals_Later_15_00"); //Может быть, позже.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Later_05_01"); //Добро пожаловать в любое время.
+	AI_Output (other,self ,"DIA_Marduk_TrainPals_Later_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Later_05_01"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ Р»СЋР±РѕРµ РІСЂРµРјСЏ.
 	
 	Info_ClearChoices (DIA_Marduk_TrainPals);
 };
 
 FUNC VOID DIA_Marduk_TrainPals_Meaning()
 {
-	AI_Output (other,self ,"DIA_Marduk_TrainPals_Meaning_15_00"); //Что ты хочешь сказать этим?
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_01"); //Когда Иннос покидал наш мир, он оставил человечеству частицу своей божественной силы.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_02"); //Только немногим из людей позволено использовать его силу и нести в мир правосудие от его имени.
-	AI_Output (other,self ,"DIA_Marduk_TrainPals_Meaning_15_03"); //А что ты хочешь донести до меня?
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_04"); //Я могу наставить тебя на правильный путь, чтобы ты познал сущность Инноса и следовал по этому пути.
+	AI_Output (other,self ,"DIA_Marduk_TrainPals_Meaning_15_00"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ СЌС‚РёРј?
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_01"); //РљРѕРіРґР° РРЅРЅРѕСЃ РїРѕРєРёРґР°Р» РЅР°С€ РјРёСЂ, РѕРЅ РѕСЃС‚Р°РІРёР» С‡РµР»РѕРІРµС‡РµСЃС‚РІСѓ С‡Р°СЃС‚РёС†Сѓ СЃРІРѕРµР№ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕР№ СЃРёР»С‹.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_02"); //РўРѕР»СЊРєРѕ РЅРµРјРЅРѕРіРёРј РёР· Р»СЋРґРµР№ РїРѕР·РІРѕР»РµРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РµРіРѕ СЃРёР»Сѓ Рё РЅРµСЃС‚Рё РІ РјРёСЂ РїСЂР°РІРѕСЃСѓРґРёРµ РѕС‚ РµРіРѕ РёРјРµРЅРё.
+	AI_Output (other,self ,"DIA_Marduk_TrainPals_Meaning_15_03"); //Рђ С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РґРѕРЅРµСЃС‚Рё РґРѕ РјРµРЅСЏ?
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_04"); //РЇ РјРѕРіСѓ РЅР°СЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ РЅР° РїСЂР°РІРёР»СЊРЅС‹Р№ РїСѓС‚СЊ, С‡С‚РѕР±С‹ С‚С‹ РїРѕР·РЅР°Р» СЃСѓС‰РЅРѕСЃС‚СЊ РРЅРЅРѕСЃР° Рё СЃР»РµРґРѕРІР°Р» РїРѕ СЌС‚РѕРјСѓ РїСѓС‚Рё.
 };
 
 FUNC VOID DIA_Marduk_TrainPals_Blessing()
 {
-	AI_Output (other,self ,"DIA_Marduk_TrainPals_Blessing_15_00"); //Что такое Освящение Меча?
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_01"); //Освящение Меча - это один из самых священных ритуалов паладинов.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_02"); //Во время этой церемонии святая сила Инноса протекает через меч паладина и придает мечу невообразимую силу.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_03"); //Меч, освященный таким образом, - самое ценное, что есть у паладина, и он не расстается с ним до конца своих дней.
+	AI_Output (other,self ,"DIA_Marduk_TrainPals_Blessing_15_00"); //Р§С‚Рѕ С‚Р°РєРѕРµ РћСЃРІСЏС‰РµРЅРёРµ РњРµС‡Р°?
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_01"); //РћСЃРІСЏС‰РµРЅРёРµ РњРµС‡Р° - СЌС‚Рѕ РѕРґРёРЅ РёР· СЃР°РјС‹С… СЃРІСЏС‰РµРЅРЅС‹С… СЂРёС‚СѓР°Р»РѕРІ РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_02"); //Р’Рѕ РІСЂРµРјСЏ СЌС‚РѕР№ С†РµСЂРµРјРѕРЅРёРё СЃРІСЏС‚Р°СЏ СЃРёР»Р° РРЅРЅРѕСЃР° РїСЂРѕС‚РµРєР°РµС‚ С‡РµСЂРµР· РјРµС‡ РїР°Р»Р°РґРёРЅР° Рё РїСЂРёРґР°РµС‚ РјРµС‡Сѓ РЅРµРІРѕРѕР±СЂР°Р·РёРјСѓСЋ СЃРёР»Сѓ.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_03"); //РњРµС‡, РѕСЃРІСЏС‰РµРЅРЅС‹Р№ С‚Р°РєРёРј РѕР±СЂР°Р·РѕРј, - СЃР°РјРѕРµ С†РµРЅРЅРѕРµ, С‡С‚Рѕ РµСЃС‚СЊ Сѓ РїР°Р»Р°РґРёРЅР°, Рё РѕРЅ РЅРµ СЂР°СЃСЃС‚Р°РµС‚СЃСЏ СЃ РЅРёРј РґРѕ РєРѕРЅС†Р° СЃРІРѕРёС… РґРЅРµР№.
 
 	Marduk_TrainPals_permanent = TRUE;
 };
@@ -509,7 +509,7 @@ INSTANCE DIA_Marduk_SwordBlessing   (C_INFO)
 	condition   = DIA_Marduk_SwordBlessing_Condition;
 	information = DIA_Marduk_SwordBlessing_Info;
 	permanent   = TRUE;
-	description = "Я хочу освятить мой меч.";
+	description = "РЇ С…РѕС‡Сѓ РѕСЃРІСЏС‚РёС‚СЊ РјРѕР№ РјРµС‡.";
 };
 FUNC INT DIA_Marduk_SwordBlessing_Condition()
 {
@@ -520,16 +520,16 @@ FUNC INT DIA_Marduk_SwordBlessing_Condition()
 };
 FUNC VOID DIA_Marduk_SwordBlessing_Info()
 {
-	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_15_00"); //Я хочу освятить мой меч.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_01"); //Если ты твердо решил сделать этот шаг, тебе сначала нужно найти магический меч.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_02"); //Затем ты должен вернуться в эту часовню и молиться.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_03"); //Во время молитвы и после разумного пожертвования нашему Владыке Инносу ты должен попросить у Инноса благоволения и помощи в битве против Зла.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_04"); //Если Иннос будет благосклонен к тебе, твой меч в тот же момент будет освящен нашим Владыкой.
+	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_15_00"); //РЇ С…РѕС‡Сѓ РѕСЃРІСЏС‚РёС‚СЊ РјРѕР№ РјРµС‡.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_01"); //Р•СЃР»Рё С‚С‹ С‚РІРµСЂРґРѕ СЂРµС€РёР» СЃРґРµР»Р°С‚СЊ СЌС‚РѕС‚ С€Р°Рі, С‚РµР±Рµ СЃРЅР°С‡Р°Р»Р° РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё РјР°РіРёС‡РµСЃРєРёР№ РјРµС‡.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_02"); //Р—Р°С‚РµРј С‚С‹ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ СЌС‚Сѓ С‡Р°СЃРѕРІРЅСЋ Рё РјРѕР»РёС‚СЊСЃСЏ.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_03"); //Р’Рѕ РІСЂРµРјСЏ РјРѕР»РёС‚РІС‹ Рё РїРѕСЃР»Рµ СЂР°Р·СѓРјРЅРѕРіРѕ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёСЏ РЅР°С€РµРјСѓ Р’Р»Р°РґС‹РєРµ РРЅРЅРѕСЃСѓ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРїСЂРѕСЃРёС‚СЊ Сѓ РРЅРЅРѕСЃР° Р±Р»Р°РіРѕРІРѕР»РµРЅРёСЏ Рё РїРѕРјРѕС‰Рё РІ Р±РёС‚РІРµ РїСЂРѕС‚РёРІ Р—Р»Р°.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_04"); //Р•СЃР»Рё РРЅРЅРѕСЃ Р±СѓРґРµС‚ Р±Р»Р°РіРѕСЃРєР»РѕРЅРµРЅ Рє С‚РµР±Рµ, С‚РІРѕР№ РјРµС‡ РІ С‚РѕС‚ Р¶Рµ РјРѕРјРµРЅС‚ Р±СѓРґРµС‚ РѕСЃРІСЏС‰РµРЅ РЅР°С€РёРј Р’Р»Р°РґС‹РєРѕР№.
 	
 	Info_ClearChoices (DIA_Marduk_SwordBlessing);
 	Info_AddChoice (DIA_Marduk_SwordBlessing,DIALOG_BACK,DIA_Marduk_SwordBlessing_Back);
-	Info_AddChoice (DIA_Marduk_SwordBlessing,"Что за пожертвование?",DIA_Marduk_SwordBlessing_Donation); 
-	Info_AddChoice (DIA_Marduk_SwordBlessing,"Где мне найти магический меч?",DIA_Marduk_SwordBlessing_OreBlade);
+	Info_AddChoice (DIA_Marduk_SwordBlessing,"Р§С‚Рѕ Р·Р° РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ?",DIA_Marduk_SwordBlessing_Donation); 
+	Info_AddChoice (DIA_Marduk_SwordBlessing,"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РјР°РіРёС‡РµСЃРєРёР№ РјРµС‡?",DIA_Marduk_SwordBlessing_OreBlade);
 };
 
 FUNC VOID DIA_Marduk_SwordBlessing_Back()
@@ -539,20 +539,20 @@ FUNC VOID DIA_Marduk_SwordBlessing_Back()
 
 FUNC VOID DIA_Marduk_SwordBlessing_Donation ()
 {
-	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_Donation_15_00"); //Что за пожертвование?
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_Donation_05_01"); //Ну, учитывая милость, что будет оказана тебе, суммы в 5000 монет будет более чем достаточно.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_Donation_05_02"); //Конечно, ты можешь пожертвовать больше.
+	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_Donation_15_00"); //Р§С‚Рѕ Р·Р° РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ?
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_Donation_05_01"); //РќСѓ, СѓС‡РёС‚С‹РІР°СЏ РјРёР»РѕСЃС‚СЊ, С‡С‚Рѕ Р±СѓРґРµС‚ РѕРєР°Р·Р°РЅР° С‚РµР±Рµ, СЃСѓРјРјС‹ РІ 5000 РјРѕРЅРµС‚ Р±СѓРґРµС‚ Р±РѕР»РµРµ С‡РµРј РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_Donation_05_02"); //РљРѕРЅРµС‡РЅРѕ, С‚С‹ РјРѕР¶РµС€СЊ РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ Р±РѕР»СЊС€Рµ.
 };
 
 FUNC VOID DIA_Marduk_SwordBlessing_OreBlade ()
 {
-	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_OreBlade_15_00"); //Где мне найти магический меч?
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_OreBlade_05_01"); //Попробуй поговорить в городе с кузнецом Гарадом.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_OreBlade_05_02"); //Он обеспечивает паладинов магическими клинками, пока они находятся на острове.
+	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_OreBlade_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РјР°РіРёС‡РµСЃРєРёР№ РјРµС‡?
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_OreBlade_05_01"); //РџРѕРїСЂРѕР±СѓР№ РїРѕРіРѕРІРѕСЂРёС‚СЊ РІ РіРѕСЂРѕРґРµ СЃ РєСѓР·РЅРµС†РѕРј Р“Р°СЂР°РґРѕРј.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_OreBlade_05_02"); //РћРЅ РѕР±РµСЃРїРµС‡РёРІР°РµС‚ РїР°Р»Р°РґРёРЅРѕРІ РјР°РіРёС‡РµСЃРєРёРјРё РєР»РёРЅРєР°РјРё, РїРѕРєР° РѕРЅРё РЅР°С…РѕРґСЏС‚СЃСЏ РЅР° РѕСЃС‚СЂРѕРІРµ.
 	if (Npc_IsDead (HARAD) == TRUE)
 	{
-		AI_Output (other,self ,"DIA_Marduk_SwordBlessing_OreBlade_15_03"); //Гарад мертв.
-		AI_Output (self ,other,"DIA_Marduk_SwordBlessing_OreBlade_05_04"); //Мне очень жаль, но тогда тебе придется ждать возвращения на материк вместе с другими паладинами.
+		AI_Output (other,self ,"DIA_Marduk_SwordBlessing_OreBlade_15_03"); //Р“Р°СЂР°Рґ РјРµСЂС‚РІ.
+		AI_Output (self ,other,"DIA_Marduk_SwordBlessing_OreBlade_05_04"); //РњРЅРµ РѕС‡РµРЅСЊ Р¶Р°Р»СЊ, РЅРѕ С‚РѕРіРґР° С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р¶РґР°С‚СЊ РІРѕР·РІСЂР°С‰РµРЅРёСЏ РЅР° РјР°С‚РµСЂРёРє РІРјРµСЃС‚Рµ СЃ РґСЂСѓРіРёРјРё РїР°Р»Р°РґРёРЅР°РјРё.
 	}; 
 };
 
@@ -566,7 +566,7 @@ INSTANCE DIA_Marduk_Kap3_PERM   (C_INFO)
 	condition   = DIA_Marduk_Kap3_PERM_Condition;
 	information = DIA_Marduk_Kap3_PERM_Info;
 	permanent   = TRUE;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };
 FUNC INT DIA_Marduk_Kap3_PERM_Condition()
 {
@@ -577,35 +577,35 @@ FUNC INT DIA_Marduk_Kap3_PERM_Condition()
 };
 FUNC VOID DIA_Marduk_Kap3_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_15_00"); //Есть новости?
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
 	
 	if (MIS_NovizenChase == LOG_RUNNING)
 	{
-		AI_Output (self, other,"DIA_Marduk_Kap3_PERM_05_01"); //Да, врагу удалось внедрить предателя в наши ряды.
-		AI_Output (self, other,"DIA_Marduk_Kap3_PERM_05_02"); //Он украл Глаз Инноса, один из самых важных наших артефактов. И это только вершина айсберга.
-		//Joly:AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_15_03"); //Чт ты имеешь в виду?
+		AI_Output (self, other,"DIA_Marduk_Kap3_PERM_05_01"); //Р”Р°, РІСЂР°РіСѓ СѓРґР°Р»РѕСЃСЊ РІРЅРµРґСЂРёС‚СЊ РїСЂРµРґР°С‚РµР»СЏ РІ РЅР°С€Рё СЂСЏРґС‹.
+		AI_Output (self, other,"DIA_Marduk_Kap3_PERM_05_02"); //РћРЅ СѓРєСЂР°Р» Р“Р»Р°Р· РРЅРЅРѕСЃР°, РѕРґРёРЅ РёР· СЃР°РјС‹С… РІР°Р¶РЅС‹С… РЅР°С€РёС… Р°СЂС‚РµС„Р°РєС‚РѕРІ. Р СЌС‚Рѕ С‚РѕР»СЊРєРѕ РІРµСЂС€РёРЅР° Р°Р№СЃР±РµСЂРіР°.
+		//Joly:AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_15_03"); //Р§С‚ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
 	};
 	
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_04"); //(озабоченно) Враг, по-видимому, уже вошел в город.
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_15_05"); //Чт ты имеешь в виду?
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_06"); //Один из паладинов, Лотар, был убит на улице.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_07"); //(зло) Прямо средь бела дня! Это зашло слишком далеко, но я боюсь, что это только начало.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_04"); //(РѕР·Р°Р±РѕС‡РµРЅРЅРѕ) Р’СЂР°Рі, РїРѕ-РІРёРґРёРјРѕРјСѓ, СѓР¶Рµ РІРѕС€РµР» РІ РіРѕСЂРѕРґ.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_15_05"); //Р§С‚ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_06"); //РћРґРёРЅ РёР· РїР°Р»Р°РґРёРЅРѕРІ, Р›РѕС‚Р°СЂ, Р±С‹Р» СѓР±РёС‚ РЅР° СѓР»РёС†Рµ.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_07"); //(Р·Р»Рѕ) РџСЂСЏРјРѕ СЃСЂРµРґСЊ Р±РµР»Р° РґРЅСЏ! Р­С‚Рѕ Р·Р°С€Р»Рѕ СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ, РЅРѕ СЏ Р±РѕСЋСЃСЊ, С‡С‚Рѕ СЌС‚Рѕ С‚РѕР»СЊРєРѕ РЅР°С‡Р°Р»Рѕ.
 	
 	Info_ClearChoices (DIA_Marduk_Kap3_PERM);
 	Info_AddChoice (DIA_Marduk_Kap3_PERM,DIALOG_BACK,DIA_Marduk_Kap3_PERM_BAck);
-	Info_AddChoice (DIA_Marduk_Kap3_PERM,"Что будет теперь?",DIA_Marduk_Kap3_PERM_AndNow);
+	Info_AddChoice (DIA_Marduk_Kap3_PERM,"Р§С‚Рѕ Р±СѓРґРµС‚ С‚РµРїРµСЂСЊ?",DIA_Marduk_Kap3_PERM_AndNow);
 	if (MIS_RescueBennet == LOG_SUCCESS)
 	{
-		Info_AddChoice (DIA_Marduk_Kap3_PERM,"Беннет не виновен.",DIA_Marduk_Kap3_PERM_BennetisNotGuilty);
+		Info_AddChoice (DIA_Marduk_Kap3_PERM,"Р‘РµРЅРЅРµС‚ РЅРµ РІРёРЅРѕРІРµРЅ.",DIA_Marduk_Kap3_PERM_BennetisNotGuilty);
 	}	
 	else
 	{
-		Info_AddChoice (DIA_Marduk_Kap3_PERM,"Убийца был пойман?",DIA_Marduk_Kap3_PERM_Murderer);
+		Info_AddChoice (DIA_Marduk_Kap3_PERM,"РЈР±РёР№С†Р° Р±С‹Р» РїРѕР№РјР°РЅ?",DIA_Marduk_Kap3_PERM_Murderer);
 	};
 	
 	if (MIS_NovizenChase == LOG_RUNNING)
 	{
-		Info_AddChoice (DIA_Marduk_Kap3_PERM,"Куда побежал вор?",DIA_Marduk_Kap3_PERM_thief);
+		Info_AddChoice (DIA_Marduk_Kap3_PERM,"РљСѓРґР° РїРѕР±РµР¶Р°Р» РІРѕСЂ?",DIA_Marduk_Kap3_PERM_thief);
 	}; 
 };
 
@@ -616,42 +616,42 @@ FUNC VOID DIA_Marduk_Kap3_PERM_BAck ()
 
 FUNC VOID DIA_Marduk_Kap3_PERM_AndNow ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_AndNow_15_00"); //Что будет теперь?
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_AndNow_15_00"); //Р§С‚Рѕ Р±СѓРґРµС‚ С‚РµРїРµСЂСЊ?
 	if (MIS_NovizenChase == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_01"); //Мы будем преследовать вора, куда бы он не побежал. Мы найдем его, и он понесет заслуженное наказание.
-		AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_AndNow_15_02"); //Для этого сначала нужно знать, кто этот вор.
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_03"); //Мы скоро выясним это. И не важно, сколько времени на это понадобится, но мы найдем его.
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_04"); //Клянусь Инносом.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_01"); //РњС‹ Р±СѓРґРµРј РїСЂРµСЃР»РµРґРѕРІР°С‚СЊ РІРѕСЂР°, РєСѓРґР° Р±С‹ РѕРЅ РЅРµ РїРѕР±РµР¶Р°Р». РњС‹ РЅР°Р№РґРµРј РµРіРѕ, Рё РѕРЅ РїРѕРЅРµСЃРµС‚ Р·Р°СЃР»СѓР¶РµРЅРЅРѕРµ РЅР°РєР°Р·Р°РЅРёРµ.
+		AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_AndNow_15_02"); //Р”Р»СЏ СЌС‚РѕРіРѕ СЃРЅР°С‡Р°Р»Р° РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ, РєС‚Рѕ СЌС‚РѕС‚ РІРѕСЂ.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_03"); //РњС‹ СЃРєРѕСЂРѕ РІС‹СЏСЃРЅРёРј СЌС‚Рѕ. Р РЅРµ РІР°Р¶РЅРѕ, СЃРєРѕР»СЊРєРѕ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ, РЅРѕ РјС‹ РЅР°Р№РґРµРј РµРіРѕ.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_04"); //РљР»СЏРЅСѓСЃСЊ РРЅРЅРѕСЃРѕРј.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_05"); //Убийство, а тем более паладина, несомненно, одно из самых тяжелых преступлений.
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_06"); //Убийца наверняка будет приговорен к смерти.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_05"); //РЈР±РёР№СЃС‚РІРѕ, Р° С‚РµРј Р±РѕР»РµРµ РїР°Р»Р°РґРёРЅР°, РЅРµСЃРѕРјРЅРµРЅРЅРѕ, РѕРґРЅРѕ РёР· СЃР°РјС‹С… С‚СЏР¶РµР»С‹С… РїСЂРµСЃС‚СѓРїР»РµРЅРёР№.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_06"); //РЈР±РёР№С†Р° РЅР°РІРµСЂРЅСЏРєР° Р±СѓРґРµС‚ РїСЂРёРіРѕРІРѕСЂРµРЅ Рє СЃРјРµСЂС‚Рё.
 	};
 };
 
 FUNC VOID DIA_Marduk_Kap3_PERM_BennetisNotGuilty ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_15_00"); //Беннет не виновен. Свидетель солгал.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_05_01"); //Откуда ты это знаешь?
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_15_02"); //Я нашел доказательства.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_05_03"); //Иногда мне кажется, что предательство и жадность - наши самые величайшие враги.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_15_00"); //Р‘РµРЅРЅРµС‚ РЅРµ РІРёРЅРѕРІРµРЅ. РЎРІРёРґРµС‚РµР»СЊ СЃРѕР»РіР°Р».
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_05_01"); //РћС‚РєСѓРґР° С‚С‹ СЌС‚Рѕ Р·РЅР°РµС€СЊ?
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_15_02"); //РЇ РЅР°С€РµР» РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_05_03"); //РРЅРѕРіРґР° РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ РїСЂРµРґР°С‚РµР»СЊСЃС‚РІРѕ Рё Р¶Р°РґРЅРѕСЃС‚СЊ - РЅР°С€Рё СЃР°РјС‹Рµ РІРµР»РёС‡Р°Р№С€РёРµ РІСЂР°РіРё.
 };
 
 FUNC VOID DIA_Marduk_Kap3_PERM_Murderer ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_Murderer_15_00"); //Убийца был пойман?
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_Murderer_05_01"); //По счастью, да. Им оказался один из головорезов с фермы Онара.
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_Murderer_15_02"); //Кто?
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_Murderer_05_03"); //Я не знаю его имени. Но среди наемников, определенно, есть личности, от которых можно ожидать подобного.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_Murderer_15_00"); //РЈР±РёР№С†Р° Р±С‹Р» РїРѕР№РјР°РЅ?
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_Murderer_05_01"); //РџРѕ СЃС‡Р°СЃС‚СЊСЋ, РґР°. РРј РѕРєР°Р·Р°Р»СЃСЏ РѕРґРёРЅ РёР· РіРѕР»РѕРІРѕСЂРµР·РѕРІ СЃ С„РµСЂРјС‹ РћРЅР°СЂР°.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_Murderer_15_02"); //РљС‚Рѕ?
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_Murderer_05_03"); //РЇ РЅРµ Р·РЅР°СЋ РµРіРѕ РёРјРµРЅРё. РќРѕ СЃСЂРµРґРё РЅР°РµРјРЅРёРєРѕРІ, РѕРїСЂРµРґРµР»РµРЅРЅРѕ, РµСЃС‚СЊ Р»РёС‡РЅРѕСЃС‚Рё, РѕС‚ РєРѕС‚РѕСЂС‹С… РјРѕР¶РЅРѕ РѕР¶РёРґР°С‚СЊ РїРѕРґРѕР±РЅРѕРіРѕ.
 };
 
 FUNC VOID DIA_Marduk_Kap3_PERM_thief ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_thief_15_00"); //Куда побежал вор?
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_thief_05_01"); //Я не знаю, он выбежал из ворот как одержимый и исчез.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_thief_05_02"); //Не важно, где он скрывается, под каким камнем он спрятался, гнев Инноса поразит его и выжжет его черное сердце.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_thief_15_00"); //РљСѓРґР° РїРѕР±РµР¶Р°Р» РІРѕСЂ?
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_thief_05_01"); //РЇ РЅРµ Р·РЅР°СЋ, РѕРЅ РІС‹Р±РµР¶Р°Р» РёР· РІРѕСЂРѕС‚ РєР°Рє РѕРґРµСЂР¶РёРјС‹Р№ Рё РёСЃС‡РµР·.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_thief_05_02"); //РќРµ РІР°Р¶РЅРѕ, РіРґРµ РѕРЅ СЃРєСЂС‹РІР°РµС‚СЃСЏ, РїРѕРґ РєР°РєРёРј РєР°РјРЅРµРј РѕРЅ СЃРїСЂСЏС‚Р°Р»СЃСЏ, РіРЅРµРІ РРЅРЅРѕСЃР° РїРѕСЂР°Р·РёС‚ РµРіРѕ Рё РІС‹Р¶Р¶РµС‚ РµРіРѕ С‡РµСЂРЅРѕРµ СЃРµСЂРґС†Рµ.
 };
 
 //#####################################################################
@@ -694,7 +694,7 @@ INSTANCE DIA_Marduk_Kap4U5_PERM   (C_INFO)
 	condition   = DIA_Marduk_Kap4U5_PERM_Condition;
 	information = DIA_Marduk_Kap4U5_PERM_Info;
 	permanent   = TRUE;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };
 FUNC INT DIA_Marduk_Kap4U5_PERM_Condition()
 {
@@ -706,8 +706,8 @@ FUNC INT DIA_Marduk_Kap4U5_PERM_Condition()
 };
 FUNC VOID DIA_Marduk_Kap4U5_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap4U5_PERM_15_00"); //Есть новости?
-	AI_Output (self ,other,"DIA_Marduk_Kap4U5_PERM_05_01"); //Нет, о, боже, ситуация все еще очень критическая.
+	AI_Output (other,self ,"DIA_Marduk_Kap4U5_PERM_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
+	AI_Output (self ,other,"DIA_Marduk_Kap4U5_PERM_05_01"); //РќРµС‚, Рѕ, Р±РѕР¶Рµ, СЃРёС‚СѓР°С†РёСЏ РІСЃРµ РµС‰Рµ РѕС‡РµРЅСЊ РєСЂРёС‚РёС‡РµСЃРєР°СЏ.
 };
 
 //#####################################################################

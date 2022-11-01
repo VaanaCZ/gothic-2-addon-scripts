@@ -1,7 +1,7 @@
 INSTANCE NONE_ADDON_112_Rhademes (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Радемес";
+	name 		= "Р Р°РґРµРјРµСЃ";
 	guild 		= GIL_NONE;
 	id 			= 112;
 	voice 		= 3;

@@ -8,11 +8,11 @@
 instance VLK_4250_Jorgen_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Éîðãåí";
+	name 		= "Ð™Ð¾Ñ€Ð³ÐµÐ½";
 	guild 		= GIL_NONE;
 	id 			= 42500;
 	voice 		= 7;
-	flags       = NPC_FLAG_IMMORTAL;	//Joly:letzter NSC, der stehen bleiben muß -> Letzter Dialog!!				//NPC_FLAG_IMMORTAL oder 0
+	flags       = NPC_FLAG_IMMORTAL;	//Joly:letzter NSC, der stehen bleiben muÐ¯ -> Letzter Dialog!!				//NPC_FLAG_IMMORTAL oder 0
 	npctype		= NPCTYPE_MAIN;
 	
 	// ------ aivar ------
@@ -41,7 +41,7 @@ instance VLK_4250_Jorgen_DI (Npc_Default)
 	B_GiveNpcTalents (self);
 	
 	// ------ Kampf-Talente ------																		
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills (self, 70); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_42500;

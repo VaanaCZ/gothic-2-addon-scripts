@@ -2,7 +2,7 @@
 instance DJG_708_Kurgan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= " Û„‡Ì";
+	name 		= "–ö—É—Ä–≥–∞–Ω";
 	guild 		= GIL_DJG;
 	id 			= 708;
 	voice 		= 1;
@@ -31,8 +31,8 @@ instance DJG_708_Kurgan (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 60); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 60); //Grenzen f—år Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_PreStart_708;

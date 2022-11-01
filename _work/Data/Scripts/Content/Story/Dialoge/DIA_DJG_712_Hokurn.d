@@ -45,46 +45,46 @@ FUNC INT DIA_Hokurn_Hello_Condition()
 
 FUNC VOID DIA_Hokurn_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Hokurn_Hello_01_00"); //У тебя не найдется чего-нибудь выпить?
-	AI_Output (other,self ,"DIA_Hokurn_Hello_15_01"); //Полагаю, вода тебе не подойдет.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_01_02"); //Нет, черт побери!!! Мне нужно что-нибудь алкогольное, чтобы я, наконец, мог избавиться от этой проклятой головной боли.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_01_03"); //Когда мне долго не удается промочить горло, мой череп раскалывается и мне кажется, что он вот-вот взорвется.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_01_00"); //РЈ С‚РµР±СЏ РЅРµ РЅР°Р№РґРµС‚СЃСЏ С‡РµРіРѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ?
+	AI_Output (other,self ,"DIA_Hokurn_Hello_15_01"); //РџРѕР»Р°РіР°СЋ, РІРѕРґР° С‚РµР±Рµ РЅРµ РїРѕРґРѕР№РґРµС‚.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_01_02"); //РќРµС‚, С‡РµСЂС‚ РїРѕР±РµСЂРё!!! РњРЅРµ РЅСѓР¶РЅРѕ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р°Р»РєРѕРіРѕР»СЊРЅРѕРµ, С‡С‚РѕР±С‹ СЏ, РЅР°РєРѕРЅРµС†, РјРѕРі РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ СЌС‚РѕР№ РїСЂРѕРєР»СЏС‚РѕР№ РіРѕР»РѕРІРЅРѕР№ Р±РѕР»Рё.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_01_03"); //РљРѕРіРґР° РјРЅРµ РґРѕР»РіРѕ РЅРµ СѓРґР°РµС‚СЃСЏ РїСЂРѕРјРѕС‡РёС‚СЊ РіРѕСЂР»Рѕ, РјРѕР№ С‡РµСЂРµРї СЂР°СЃРєР°Р»С‹РІР°РµС‚СЃСЏ Рё РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ РѕРЅ РІРѕС‚-РІРѕС‚ РІР·РѕСЂРІРµС‚СЃСЏ.
 
 	Info_ClearChoices (DIA_Hokurn_Hello);
-	Info_AddChoice (DIA_Hokurn_Hello,"Я ничем не могу помочь тебе.",DIA_Hokurn_Hello_No);
+	Info_AddChoice (DIA_Hokurn_Hello,"РЇ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.",DIA_Hokurn_Hello_No);
 	
 	IF(	(Npc_HasItems (other,ItFo_Beer) 	>=1)	
 	||	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	||	(Npc_HasItems (other,ItFo_Wine) 	>=1))
 	{
-		Info_AddChoice (DIA_Hokurn_Hello,"Вот, возьми это.",DIA_Hokurn_Hello_Yes);
+		Info_AddChoice (DIA_Hokurn_Hello,"Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рѕ.",DIA_Hokurn_Hello_Yes);
 	};
 };
 
 FUNC VOID DIA_Hokurn_Hello_No ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_No_15_00"); //Я ничем не могу помочь тебе.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_No_01_01"); //Тогда проваливай!
+	AI_Output (other,self ,"DIA_Hokurn_Hello_No_15_00"); //РЇ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_No_01_01"); //РўРѕРіРґР° РїСЂРѕРІР°Р»РёРІР°Р№!
 
 	Info_ClearChoices (DIA_Hokurn_Hello);
 	Info_AddChoice (DIA_Hokurn_Hello,DIALOG_ENDE,DIA_Hokurn_Hello_END);
-	Info_AddChoice (DIA_Hokurn_Hello,"Еще одно...",DIA_Hokurn_Hello_ASK1);
+	Info_AddChoice (DIA_Hokurn_Hello,"Р•С‰Рµ РѕРґРЅРѕ...",DIA_Hokurn_Hello_ASK1);
 };
 
 FUNC VOID DIA_Hokurn_Hello_ASK1 ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK1_15_00"); //Еще одно...
-	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK1_01_01"); //(ревет) Ты что, не понял меня? УБИРАЙСЯ!!!
+	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK1_15_00"); //Р•С‰Рµ РѕРґРЅРѕ...
+	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK1_01_01"); //(СЂРµРІРµС‚) РўС‹ С‡С‚Рѕ, РЅРµ РїРѕРЅСЏР» РјРµРЅСЏ? РЈР‘РР РђР™РЎРЇ!!!
 	
 	Info_ClearChoices (DIA_Hokurn_Hello);
 	Info_AddChoice (DIA_Hokurn_Hello,DIALOG_ENDE,DIA_Hokurn_Hello_END);
-	Info_AddChoice (DIA_Hokurn_Hello,"Это важно.",DIA_Hokurn_Hello_ASK2);
+	Info_AddChoice (DIA_Hokurn_Hello,"Р­С‚Рѕ РІР°Р¶РЅРѕ.",DIA_Hokurn_Hello_ASK2);
 };
 
 FUNC VOID DIA_Hokurn_Hello_ASK2 ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK2_15_00"); //Это важно.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK2_01_01"); //(ревет) Ты сам напросился.
+	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK2_15_00"); //Р­С‚Рѕ РІР°Р¶РЅРѕ.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK2_01_01"); //(СЂРµРІРµС‚) РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -97,13 +97,13 @@ FUNC VOID DIA_Hokurn_Hello_END ()
 
 FUNC VOID B_Hokurn_Sauf ()
 {
-	AI_Output (self ,other,"B_Hokurn_Sauf_01_00"); //(рыгает) Ох, какое блаженство!
-	AI_Output (self ,other,"B_Hokurn_Sauf_01_01"); //Теперь я опять могу размышлять здраво. Что я могу сделать для тебя?
+	AI_Output (self ,other,"B_Hokurn_Sauf_01_00"); //(СЂС‹РіР°РµС‚) РћС…, РєР°РєРѕРµ Р±Р»Р°Р¶РµРЅСЃС‚РІРѕ!
+	AI_Output (self ,other,"B_Hokurn_Sauf_01_01"); //РўРµРїРµСЂСЊ СЏ РѕРїСЏС‚СЊ РјРѕРіСѓ СЂР°Р·РјС‹С€Р»СЏС‚СЊ Р·РґСЂР°РІРѕ. Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 };
 
 FUNC VOID DIA_Hokurn_Hello_Yes ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_Yes_15_00"); //Вот, возьми это.
+	AI_Output (other,self ,"DIA_Hokurn_Hello_Yes_15_00"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рѕ.
 	
 	IF		(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	{
@@ -138,7 +138,7 @@ INSTANCE DIA_Hokurn_Drink   (C_INFO)
 	condition   = DIA_Hokurn_Drink_Condition;
 	information = DIA_Hokurn_Drink_Info;
 	permanent   = TRUE;
-	description = "Я принес тебе выпивку.";
+	description = "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІС‹РїРёРІРєСѓ.";
 };
 
 FUNC INT DIA_Hokurn_Drink_Condition()
@@ -154,8 +154,8 @@ FUNC INT DIA_Hokurn_Drink_Condition()
 
 FUNC VOID DIA_Hokurn_Drink_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Drink_15_00"); //Я принес тебе выпивку.
-	AI_Output (self ,other,"DIA_Hokurn_Drink_01_01"); //(жадно) Давай сюда!!!
+	AI_Output (other,self ,"DIA_Hokurn_Drink_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІС‹РїРёРІРєСѓ.
+	AI_Output (self ,other,"DIA_Hokurn_Drink_01_01"); //(Р¶Р°РґРЅРѕ) Р”Р°РІР°Р№ СЃСЋРґР°!!!
 	
 	IF	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	{
@@ -188,7 +188,7 @@ INSTANCE DIA_Hokurn_Question   (C_INFO)
 	condition   = DIA_Hokurn_Question_Condition;
 	information = DIA_Hokurn_Question_Info;
 	permanent   = TRUE;
-	description = "Мне нужна кое-какая информация.";
+	description = "РњРЅРµ РЅСѓР¶РЅР° РєРѕРµ-РєР°РєР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ.";
 };
 
 FUNC INT DIA_Hokurn_Question_Condition()
@@ -201,9 +201,9 @@ FUNC INT DIA_Hokurn_Question_Condition()
 
 FUNC VOID DIA_Hokurn_Question_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Question_15_00"); //Мне нужна кое-какая информация.
-	AI_Output (self ,other,"DIA_Hokurn_Question_01_01"); //(раздраженно) Я думал, ты меня понял. Я говорю только с друзьями.
-	AI_Output (self ,other,"DIA_Hokurn_Question_01_02"); //А друзья всегда делятся со мной выпивкой. Понял? Теперь проваливай!
+	AI_Output (other,self ,"DIA_Hokurn_Question_15_00"); //РњРЅРµ РЅСѓР¶РЅР° РєРѕРµ-РєР°РєР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ.
+	AI_Output (self ,other,"DIA_Hokurn_Question_01_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) РЇ РґСѓРјР°Р», С‚С‹ РјРµРЅСЏ РїРѕРЅСЏР». РЇ РіРѕРІРѕСЂСЋ С‚РѕР»СЊРєРѕ СЃ РґСЂСѓР·СЊСЏРјРё.
+	AI_Output (self ,other,"DIA_Hokurn_Question_01_02"); //Рђ РґСЂСѓР·СЊСЏ РІСЃРµРіРґР° РґРµР»СЏС‚СЃСЏ СЃРѕ РјРЅРѕР№ РІС‹РїРёРІРєРѕР№. РџРѕРЅСЏР»? РўРµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№!
 };
 
 //*********************************************************************
@@ -216,7 +216,7 @@ INSTANCE DIA_Hokurn_Learn   (C_INFO)
 	condition   = DIA_Hokurn_Learn_Condition;
 	information = DIA_Hokurn_Learn_Info;
 	permanent   = FALSE;
-	description = "Я ищу человека, который мог бы научить меня чему-нибудь.";
+	description = "РЇ РёС‰Сѓ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ РјРѕРі Р±С‹ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ.";
 };
 
 FUNC INT DIA_Hokurn_Learn_Condition()
@@ -229,30 +229,30 @@ FUNC INT DIA_Hokurn_Learn_Condition()
 
 FUNC VOID DIA_Hokurn_Learn_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_15_00"); //Я ищу человека, который мог бы научить меня чему-нибудь.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_01_01"); //Я мог бы обучить тебя некоторым вещам. Я лучший боец на многие мили вокруг.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_01_02"); //Так как мы друзья, я сделаю тебе скидку. Это будет стоить 300 золотых монет.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_15_00"); //РЇ РёС‰Сѓ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ РјРѕРі Р±С‹ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_01_01"); //РЇ РјРѕРі Р±С‹ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РЅРµРєРѕС‚РѕСЂС‹Рј РІРµС‰Р°Рј. РЇ Р»СѓС‡С€РёР№ Р±РѕРµС† РЅР° РјРЅРѕРіРёРµ РјРёР»Рё РІРѕРєСЂСѓРі.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_01_02"); //РўР°Рє РєР°Рє РјС‹ РґСЂСѓР·СЊСЏ, СЏ СЃРґРµР»Р°СЋ С‚РµР±Рµ СЃРєРёРґРєСѓ. Р­С‚Рѕ Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ 300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 
 	Info_ClearChoices (DIA_Hokurn_Learn);
-	Info_AddChoice	(DIA_Hokurn_Learn,"Это слишком дорого для меня.",DIA_Hokurn_Learn_TooExpensive);
+	Info_AddChoice	(DIA_Hokurn_Learn,"Р­С‚Рѕ СЃР»РёС€РєРѕРј РґРѕСЂРѕРіРѕ РґР»СЏ РјРµРЅСЏ.",DIA_Hokurn_Learn_TooExpensive);
 	if (Npc_HasItems (other,ItMi_Gold) >= 300)
 	{
-		Info_AddChoice	(DIA_Hokurn_Learn,"Хорошо, вот деньги.",DIA_Hokurn_Learn_OK);
+		Info_AddChoice	(DIA_Hokurn_Learn,"РҐРѕСЂРѕС€Рѕ, РІРѕС‚ РґРµРЅСЊРіРё.",DIA_Hokurn_Learn_OK);
 	};	 
 };
 
 FUNC VOID DIA_Hokurn_Learn_TooExpensive ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_TooExpensive_15_00"); //Это для меня слишком дорого.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_01"); //Слишком дорого? Это меньше, чем любой другой запросил бы на моем месте.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_02"); //Ну, сам подумай.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_TooExpensive_15_00"); //Р­С‚Рѕ РґР»СЏ РјРµРЅСЏ СЃР»РёС€РєРѕРј РґРѕСЂРѕРіРѕ.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_01"); //РЎР»РёС€РєРѕРј РґРѕСЂРѕРіРѕ? Р­С‚Рѕ РјРµРЅСЊС€Рµ, С‡РµРј Р»СЋР±РѕР№ РґСЂСѓРіРѕР№ Р·Р°РїСЂРѕСЃРёР» Р±С‹ РЅР° РјРѕРµРј РјРµСЃС‚Рµ.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_02"); //РќСѓ, СЃР°Рј РїРѕРґСѓРјР°Р№.
 	
 	Info_ClearChoices (DIA_Hokurn_Learn);
 };
 
 FUNC VOID DIA_Hokurn_Learn_OK ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_OK_15_00"); //Хорошо, вот деньги.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_OK_15_00"); //РҐРѕСЂРѕС€Рѕ, РІРѕС‚ РґРµРЅСЊРіРё.
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	Hokurn_TeachPlayer = TRUE;
 	Info_ClearChoices (DIA_Hokurn_Learn);
@@ -268,7 +268,7 @@ INSTANCE DIA_Hokurn_PayTeacher   (C_INFO)
 	condition   = DIA_Hokurn_PayTeacher_Condition;
 	information = DIA_Hokurn_PayTeacher_Info;
 	permanent   = TRUE;
-	description = "Вот твои деньги. Я хочу, чтобы ты обучил меня.";
+	description = "Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё. РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕР±СѓС‡РёР» РјРµРЅСЏ.";
 };
 
 FUNC INT DIA_Hokurn_PayTeacher_Condition()
@@ -283,8 +283,8 @@ FUNC INT DIA_Hokurn_PayTeacher_Condition()
 
 FUNC VOID DIA_Hokurn_PayTeacher_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_PayTeacher_15_00"); //Вот твои деньги. Я хочу, чтобы ты обучил меня.
-	AI_Output (self ,other,"DIA_Hokurn_PayTeacher_01_01"); //Ты не пожалеешь!
+	AI_Output (other,self ,"DIA_Hokurn_PayTeacher_15_00"); //Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё. РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕР±СѓС‡РёР» РјРµРЅСЏ.
+	AI_Output (self ,other,"DIA_Hokurn_PayTeacher_01_01"); //РўС‹ РЅРµ РїРѕР¶Р°Р»РµРµС€СЊ!
 
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	Hokurn_TeachPlayer = TRUE;
@@ -300,7 +300,7 @@ INSTANCE DIA_Hokurn_DrinkAndLearn   (C_INFO)
 	condition   = DIA_Hokurn_DrinkAndLearn_Condition;
 	information = DIA_Hokurn_DrinkAndLearn_Info;
 	permanent   = TRUE;
-	description = "Вот, держи выпивку.";
+	description = "Р’РѕС‚, РґРµСЂР¶Рё РІС‹РїРёРІРєСѓ.";
 };
 
 FUNC INT DIA_Hokurn_DrinkAndLearn_Condition()
@@ -316,7 +316,7 @@ FUNC INT DIA_Hokurn_DrinkAndLearn_Condition()
 
 FUNC VOID DIA_Hokurn_DrinkAndLearn_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_DrinkAndLearn_15_00"); //Вот, держи выпивку.
+	AI_Output (other,self ,"DIA_Hokurn_DrinkAndLearn_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё РІС‹РїРёРІРєСѓ.
 	
 	IF	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	{
@@ -336,7 +336,7 @@ FUNC VOID DIA_Hokurn_DrinkAndLearn_Info()
 	
 	HokurnLastDrink = Wld_GetDay ();
 	
-	AI_Output (self ,other,"DIA_Hokurn_DrinkAndLearn_01_01"); //Мне стало гораздо лучше. Я теперь готов ко всему.
+	AI_Output (self ,other,"DIA_Hokurn_DrinkAndLearn_01_01"); //РњРЅРµ СЃС‚Р°Р»Рѕ РіРѕСЂР°Р·РґРѕ Р»СѓС‡С€Рµ. РЇ С‚РµРїРµСЂСЊ РіРѕС‚РѕРІ РєРѕ РІСЃРµРјСѓ.
 
 };
 
@@ -351,7 +351,7 @@ INSTANCE DIA_Hokurn_Teach(C_INFO)
 	condition	= DIA_Hokurn_Teach_Condition;
 	information	= DIA_Hokurn_Teach_Info;
 	permanent	= TRUE;
-	description = "Начнем обучение.";
+	description = "РќР°С‡РЅРµРј РѕР±СѓС‡РµРЅРёРµ.";
 };                       
 
 FUNC INT DIA_Hokurn_Teach_Condition()
@@ -364,21 +364,21 @@ FUNC INT DIA_Hokurn_Teach_Condition()
  
 FUNC VOID DIA_Hokurn_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Hokurn_Teach_15_00"); //Давай начнем обучение.
+	AI_Output (other,self ,"DIA_Hokurn_Teach_15_00"); //Р”Р°РІР°Р№ РЅР°С‡РЅРµРј РѕР±СѓС‡РµРЅРёРµ.
 	
 	if (HokurnLastDrink < Wld_GetDay ())
 	{
-		AI_Output (self ,other,"DIA_Hokurn_Teach_01_01"); //Сначала принеси мне что-нибудь выпить!
+		AI_Output (self ,other,"DIA_Hokurn_Teach_01_01"); //РЎРЅР°С‡Р°Р»Р° РїСЂРёРЅРµСЃРё РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ!
 	}
 	else
 	{	 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Hokurn_Teach_01_02"); //А потом мы посмотрим, что можно выжать из твоих ржавых паладинских костей, ха?
+			AI_Output (self ,other,"DIA_Hokurn_Teach_01_02"); //Рђ РїРѕС‚РѕРј РјС‹ РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ РјРѕР¶РЅРѕ РІС‹Р¶Р°С‚СЊ РёР· С‚РІРѕРёС… СЂР¶Р°РІС‹С… РїР°Р»Р°РґРёРЅСЃРєРёС… РєРѕСЃС‚РµР№, С…Р°?
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Hokurn_Teach_01_03"); //Что ты понимаешь. Даже маги не чуждаются оружия ближнего боя.
+			AI_Output (self ,other,"DIA_Hokurn_Teach_01_03"); //Р§С‚Рѕ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ. Р”Р°Р¶Рµ РјР°РіРё РЅРµ С‡СѓР¶РґР°СЋС‚СЃСЏ РѕСЂСѓР¶РёСЏ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ.
 		};
 
 		Info_ClearChoices 	(DIA_Hokurn_Teach);
@@ -396,7 +396,7 @@ FUNC VOID DIA_Hokurn_Teach_Back ()
 };
 FUNC VOID B_Hokurn_TeachedEnough ()
 {
-	AI_Output(self,other,"B_Hokurn_TeachedEnough_01_00"); //Тебе больше не нужен учитель в этом виде боевого искусства.
+	AI_Output(self,other,"B_Hokurn_TeachedEnough_01_00"); //РўРµР±Рµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ СѓС‡РёС‚РµР»СЊ РІ СЌС‚РѕРј РІРёРґРµ Р±РѕРµРІРѕРіРѕ РёСЃРєСѓСЃСЃС‚РІР°.
 };
 
 FUNC VOID DIA_Hokurn_Teach_2H_1 ()
@@ -444,7 +444,7 @@ FUNC VOID DIA_Hokurn_Teach_1H_5 ()
 };
 
 //*********************************************************************
-//	Wieso hдngt ihr hier ьberhaupt rum?
+//	Wieso hРґngt ihr hier СЊberhaupt rum?
 //*********************************************************************
 INSTANCE DIA_Hokurn_StayHere   (C_INFO)
 {
@@ -453,7 +453,7 @@ INSTANCE DIA_Hokurn_StayHere   (C_INFO)
 	condition   = DIA_Hokurn_StayHere_Condition;
 	information = DIA_Hokurn_StayHere_Info;
 	permanent   = FALSE;
-	description = "А что ты вообще здесь делаешь, кстати?";
+	description = "Рђ С‡С‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ, РєСЃС‚Р°С‚Рё?";
 };
 
 FUNC INT DIA_Hokurn_StayHere_Condition()
@@ -466,12 +466,12 @@ FUNC INT DIA_Hokurn_StayHere_Condition()
 
 FUNC VOID DIA_Hokurn_StayHere_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_StayHere_15_00"); //Кстати, а что ты вообще здесь делаешь?
-	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_01"); //Если честно, понятия не имею, что мы делаем здесь и когда все начнется.
-	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_02"); //И пока у меня есть выпивка, меня это совершенно не волнует.
+	AI_Output (other,self ,"DIA_Hokurn_StayHere_15_00"); //РљСЃС‚Р°С‚Рё, Р° С‡С‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_01"); //Р•СЃР»Рё С‡РµСЃС‚РЅРѕ, РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, С‡С‚Рѕ РјС‹ РґРµР»Р°РµРј Р·РґРµСЃСЊ Рё РєРѕРіРґР° РІСЃРµ РЅР°С‡РЅРµС‚СЃСЏ.
+	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_02"); //Р РїРѕРєР° Сѓ РјРµРЅСЏ РµСЃС‚СЊ РІС‹РїРёРІРєР°, РјРµРЅСЏ СЌС‚Рѕ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµ РІРѕР»РЅСѓРµС‚.
 	
 	/*
-	AI_Output (other,self ,"DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier ьberhaupt?
+	AI_Output (other,self ,"DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier СЊberhaupt?
 	AI_Output (self ,other,"DIA_Addon_Hokurn_StayHere_01_01"); //Keine Ahnung, was wir hier machen oder wann es los geht.
 	AI_Output (self ,other,"DIA_Addon_Hokurn_StayHere_01_02"); //Ist mir auch egal, solange ich genug zu trinken habe.
 	*/
@@ -488,7 +488,7 @@ INSTANCE DIA_Hokurn_WhereDragon   (C_INFO)
 	condition   = DIA_Hokurn_WhereDragon_Condition;
 	information = DIA_Hokurn_WhereDragon_Info;
 	permanent   = TRUE;
-	description = "Ты знаешь, где находятся драконы?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РґСЂР°РєРѕРЅС‹?";
 };
 
 FUNC INT DIA_Hokurn_WhereDragon_Condition()
@@ -503,48 +503,48 @@ FUNC INT DIA_Hokurn_WhereDragon_Condition()
 
 FUNC VOID DIA_Hokurn_WhereDragon_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_15_00"); //Ты знаешь, где находятся драконы?
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_01_01"); //А что я получу за то, что скажу это тебе?
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РґСЂР°РєРѕРЅС‹?
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_01_01"); //Рђ С‡С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° С‚Рѕ, С‡С‚Рѕ СЃРєР°Р¶Сѓ СЌС‚Рѕ С‚РµР±Рµ?
 
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"Ничего, я сам их найду.",DIA_Hokurn_WhereDragon_FindMyself);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"Я был бы не прочь заплатить тебе за эту информацию.",DIA_Hokurn_WhereDragon_Gold);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"РќРёС‡РµРіРѕ, СЏ СЃР°Рј РёС… РЅР°Р№РґСѓ.",DIA_Hokurn_WhereDragon_FindMyself);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"РЇ Р±С‹Р» Р±С‹ РЅРµ РїСЂРѕС‡СЊ Р·Р°РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ Р·Р° СЌС‚Сѓ РёРЅС„РѕСЂРјР°С†РёСЋ.",DIA_Hokurn_WhereDragon_Gold);
 	if Npc_HasItems (other,ITFO_BOOZE) >=1
 	{
-		Info_AddChoice (DIA_Hokurn_WhereDragon,"У меня есть еще одна бутылочка джина!",DIA_Hokurn_WhereDragon_Booze);	 
+		Info_AddChoice (DIA_Hokurn_WhereDragon,"РЈ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РѕРґРЅР° Р±СѓС‚С‹Р»РѕС‡РєР° РґР¶РёРЅР°!",DIA_Hokurn_WhereDragon_Booze);	 
 	};
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_FindMyself ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Ничего, я сам их найду.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_FindMyself_01_01"); //Тебе лучше быть поосторожнее. Впереди тебя ждет много кровопролитных боев.
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_FindMyself_15_00"); //РќРёС‡РµРіРѕ, СЏ СЃР°Рј РёС… РЅР°Р№РґСѓ.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_FindMyself_01_01"); //РўРµР±Рµ Р»СѓС‡С€Рµ Р±С‹С‚СЊ РїРѕРѕСЃС‚РѕСЂРѕР¶РЅРµРµ. Р’РїРµСЂРµРґРё С‚РµР±СЏ Р¶РґРµС‚ РјРЅРѕРіРѕ РєСЂРѕРІРѕРїСЂРѕР»РёС‚РЅС‹С… Р±РѕРµРІ.
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_Gold ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Gold_15_00"); //Я был бы не прочь заплатить тебе за эту информацию.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Gold_01_01"); //Заплатить мне? Хмм. Хорошо, я продам тебе эту информацию за 200 золотых монет.
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Gold_15_00"); //РЇ Р±С‹Р» Р±С‹ РЅРµ РїСЂРѕС‡СЊ Р·Р°РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ Р·Р° СЌС‚Сѓ РёРЅС„РѕСЂРјР°С†РёСЋ.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Gold_01_01"); //Р—Р°РїР»Р°С‚РёС‚СЊ РјРЅРµ? РҐРјРј. РҐРѕСЂРѕС€Рѕ, СЏ РїСЂРѕРґР°Рј С‚РµР±Рµ СЌС‚Сѓ РёРЅС„РѕСЂРјР°С†РёСЋ Р·Р° 200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"Это слишком много!",DIA_Hokurn_WhereDragon_TooMuch);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"Р­С‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ!",DIA_Hokurn_WhereDragon_TooMuch);
 	if Npc_HasItems (other,ItMi_Gold) >=200
 	{
-		Info_AddChoice (DIA_Hokurn_WhereDragon,"Договорились. Вот твои деньги!",DIA_Hokurn_WhereDragon_OK);
+		Info_AddChoice (DIA_Hokurn_WhereDragon,"Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ. Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё!",DIA_Hokurn_WhereDragon_OK);
 	};
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_TooMuch ()
 {
-	AI_Output	(other,self ,"DIA_Hokurn_WhereDragon_TooMuch_15_00"); //Это слишком много!
-	AI_Output 	(self ,other,"DIA_Hokurn_WhereDragon_TooMuch_01_01"); //Тогда забудь об этом.
+	AI_Output	(other,self ,"DIA_Hokurn_WhereDragon_TooMuch_15_00"); //Р­С‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ!
+	AI_Output 	(self ,other,"DIA_Hokurn_WhereDragon_TooMuch_01_01"); //РўРѕРіРґР° Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
 	Info_ClearChoices	(DIA_Hokurn_WhereDragon); 
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_OK ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_OK_15_00"); //Договорились. Вот твои деньги!
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_OK_15_00"); //Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ. Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё!
 	B_GiveInvItems (other,self,ItMi_gold,200);
 	
 	HokurnTellsDragon = TRUE;
@@ -553,11 +553,11 @@ FUNC VOID DIA_Hokurn_WhereDragon_OK ()
 
 FUNC VOID DIA_Hokurn_WhereDragon_Booze ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Booze_15_00"); //У меня есть еще одна бутылочка джина!
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_01"); //За хорошее вино я готов сразиться со всеми драконами мира.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_02"); //Договорились. Давай мне эту бутылку!
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Booze_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РѕРґРЅР° Р±СѓС‚С‹Р»РѕС‡РєР° РґР¶РёРЅР°!
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_01"); //Р—Р° С…РѕСЂРѕС€РµРµ РІРёРЅРѕ СЏ РіРѕС‚РѕРІ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РІСЃРµРјРё РґСЂР°РєРѕРЅР°РјРё РјРёСЂР°.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_02"); //Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ. Р”Р°РІР°Р№ РјРЅРµ СЌС‚Сѓ Р±СѓС‚С‹Р»РєСѓ!
 	B_GiveInvItems ( other,self,ItFo_booze,1);
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_03"); //Я припасу ее на черный день.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_03"); //РЇ РїСЂРёРїР°СЃСѓ РµРµ РЅР° С‡РµСЂРЅС‹Р№ РґРµРЅСЊ.
 
 	HokurnTellsDragon = TRUE;
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
@@ -573,7 +573,7 @@ INSTANCE DIA_Hokurn_Dragon   (C_INFO)
 	condition   = DIA_Hokurn_Dragon_Condition;
 	information = DIA_Hokurn_Dragon_Info;
 	permanent   = TRUE;
-	description = "Хорошо, теперь скажи, где все эти драконы?";
+	description = "РҐРѕСЂРѕС€Рѕ, С‚РµРїРµСЂСЊ СЃРєР°Р¶Рё, РіРґРµ РІСЃРµ СЌС‚Рё РґСЂР°РєРѕРЅС‹?";
 };
 
 FUNC INT DIA_Hokurn_Dragon_Condition()
@@ -586,10 +586,10 @@ FUNC INT DIA_Hokurn_Dragon_Condition()
 
 FUNC VOID DIA_Hokurn_Dragon_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Dragon_15_00"); //Хорошо, теперь скажи, где все эти драконы?
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_01"); //Ну, если честно, я не могу сказать тебе ничего определенного, но я слышал, что всего должно быть четыре дракона.
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_02"); //Прошлой ночью над самой высокой горой мы видели багровое свечение.
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_03"); //Готов поклясться свой матерью, что если ты ищешь драконов, одного из них ты найдешь там.
+	AI_Output (other,self ,"DIA_Hokurn_Dragon_15_00"); //РҐРѕСЂРѕС€Рѕ, С‚РµРїРµСЂСЊ СЃРєР°Р¶Рё, РіРґРµ РІСЃРµ СЌС‚Рё РґСЂР°РєРѕРЅС‹?
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_01"); //РќСѓ, РµСЃР»Рё С‡РµСЃС‚РЅРѕ, СЏ РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ РЅРёС‡РµРіРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ, РЅРѕ СЏ СЃР»С‹С€Р°Р», С‡С‚Рѕ РІСЃРµРіРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С‡РµС‚С‹СЂРµ РґСЂР°РєРѕРЅР°.
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_02"); //РџСЂРѕС€Р»РѕР№ РЅРѕС‡СЊСЋ РЅР°Рґ СЃР°РјРѕР№ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕР№ РјС‹ РІРёРґРµР»Рё Р±Р°РіСЂРѕРІРѕРµ СЃРІРµС‡РµРЅРёРµ.
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_03"); //Р“РѕС‚РѕРІ РїРѕРєР»СЏСЃС‚СЊСЃСЏ СЃРІРѕР№ РјР°С‚РµСЂСЊСЋ, С‡С‚Рѕ РµСЃР»Рё С‚С‹ РёС‰РµС€СЊ РґСЂР°РєРѕРЅРѕРІ, РѕРґРЅРѕРіРѕ РёР· РЅРёС… С‚С‹ РЅР°Р№РґРµС€СЊ С‚Р°Рј.
 };
 
 //*********************************************************************
@@ -602,7 +602,7 @@ INSTANCE DIA_Hokurn_AllDragonsDead   (C_INFO)
 	condition   = DIA_Hokurn_AllDragonsDead_Condition;
 	information = DIA_Hokurn_AllDragonsDead_Info;
 	permanent   = TRUE;
-	description	= "Я убил всех драконов.";
+	description	= "РЇ СѓР±РёР» РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ.";
 				
 };
 
@@ -616,8 +616,8 @@ FUNC INT DIA_Hokurn_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Hokurn_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Hokurn_AllDragonsDead_15_00"); //Я убил всех драконов.
-	AI_Output 	(self ,other,"DIA_Hokurn_AllDragonsDead_01_01"); //Иди, рассказывай сказки кому-нибудь другому.
+	AI_Output	(other,self ,"DIA_Hokurn_AllDragonsDead_15_00"); //РЇ СѓР±РёР» РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output 	(self ,other,"DIA_Hokurn_AllDragonsDead_01_01"); //РРґРё, СЂР°СЃСЃРєР°Р·С‹РІР°Р№ СЃРєР°Р·РєРё РєРѕРјСѓ-РЅРёР±СѓРґСЊ РґСЂСѓРіРѕРјСѓ.
 };
 
 // ************************************************************

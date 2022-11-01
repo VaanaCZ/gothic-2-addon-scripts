@@ -18,7 +18,7 @@ FUNC VOID DIA_Baltram_EXIT_Info()
 {
 	AI_StopProcessInfos (self);
 };
-///////////////////////////////////////////////////////////////////////AUSKOMMENTIERT WEGEN ADDON M.F. (Missionen passen nicht mehr, SpielfluЯ hemmend)
+///////////////////////////////////////////////////////////////////////AUSKOMMENTIERT WEGEN ADDON M.F. (Missionen passen nicht mehr, SpielfluРЇ hemmend)
 //	Info Sperre
 ///////////////////////////////////////////////////////////////////////
 /*
@@ -43,7 +43,7 @@ func int DIA_Baltram_Sperre_Condition ()
 };
 func void DIA_Baltram_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Baltram_Sperre_01_00"); //Was willst du? Du bist ein Strдfling aus der Minenkolonie. Mit dir mache ich keine Geschдfte!
+	AI_Output (self, other, "DIA_Baltram_Sperre_01_00"); //Was willst du? Du bist ein StrРґfling aus der Minenkolonie. Mit dir mache ich keine GeschРґfte!
 	AI_StopProcessInfos (self);	 
 };
 */
@@ -74,14 +74,14 @@ func void DIA_Baltram_Hallo_Info ()
 	if (hero.guild != GIL_SLD)
 	&& (hero.guild != GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_00"); //Добро пожаловать, чужеземец, меня зовут Бальтрам. Ты хочешь запастись продовольствием?
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_01"); //Боюсь, что мне придется разочаровать тебя. В настоящий момент я мало что могу предложить.
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_02"); //Но скоро я жду новую поставку.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, С‡СѓР¶РµР·РµРјРµС†, РјРµРЅСЏ Р·РѕРІСѓС‚ Р‘Р°Р»СЊС‚СЂР°Рј. РўС‹ С…РѕС‡РµС€СЊ Р·Р°РїР°СЃС‚РёСЃСЊ РїСЂРѕРґРѕРІРѕР»СЊСЃС‚РІРёРµРј?
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_01"); //Р‘РѕСЋСЃСЊ, С‡С‚Рѕ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЂР°Р·РѕС‡Р°СЂРѕРІР°С‚СЊ С‚РµР±СЏ. Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚ СЏ РјР°Р»Рѕ С‡С‚Рѕ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_02"); //РќРѕ СЃРєРѕСЂРѕ СЏ Р¶РґСѓ РЅРѕРІСѓСЋ РїРѕСЃС‚Р°РІРєСѓ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_03"); //Если ты пришел купить у меня съестные припасы, ты пришел напрасно.
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_04"); //Я не самого лучшего мнения о вас, наемниках! От вас одни проблемы.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_03"); //Р•СЃР»Рё С‚С‹ РїСЂРёС€РµР» РєСѓРїРёС‚СЊ Сѓ РјРµРЅСЏ СЃСЉРµСЃС‚РЅС‹Рµ РїСЂРёРїР°СЃС‹, С‚С‹ РїСЂРёС€РµР» РЅР°РїСЂР°СЃРЅРѕ.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_04"); //РЇ РЅРµ СЃР°РјРѕРіРѕ Р»СѓС‡С€РµРіРѕ РјРЅРµРЅРёСЏ Рѕ РІР°СЃ, РЅР°РµРјРЅРёРєР°С…! РћС‚ РІР°СЃ РѕРґРЅРё РїСЂРѕР±Р»РµРјС‹.
 	};
 };
 
@@ -110,16 +110,16 @@ func int DIA_Addon_Baltram_LaresAbloese_Condition ()
 
 func void DIA_Addon_Baltram_LaresAbloese_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_00"); //Почему ты так подозрительно на меня смотришь?
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_01"); //Я заметил у тебя знак Кольца Воды.
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_02"); //Ты тоже член этого общества?
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_03"); //А что, если так?
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_04"); //Я должен передать тебе, что дежурящий в порту Ларес хочет, чтобы его сменили.
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_05"); //Хорошо. Я прослежу, чтобы это сделали.
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_06"); //Понятно.
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ С‚Р°Рє РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ РЅР° РјРµРЅСЏ СЃРјРѕС‚СЂРёС€СЊ?
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_01"); //РЇ Р·Р°РјРµС‚РёР» Сѓ С‚РµР±СЏ Р·РЅР°Рє РљРѕР»СЊС†Р° Р’РѕРґС‹.
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_02"); //РўС‹ С‚РѕР¶Рµ С‡Р»РµРЅ СЌС‚РѕРіРѕ РѕР±С‰РµСЃС‚РІР°?
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_03"); //Рђ С‡С‚Рѕ, РµСЃР»Рё С‚Р°Рє?
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_04"); //РЇ РґРѕР»Р¶РµРЅ РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ, С‡С‚Рѕ РґРµР¶СѓСЂСЏС‰РёР№ РІ РїРѕСЂС‚Сѓ Р›Р°СЂРµСЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РµРіРѕ СЃРјРµРЅРёР»Рё.
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_05"); //РҐРѕСЂРѕС€Рѕ. РЇ РїСЂРѕСЃР»РµР¶Сѓ, С‡С‚РѕР±С‹ СЌС‚Рѕ СЃРґРµР»Р°Р»Рё.
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_06"); //РџРѕРЅСЏС‚РЅРѕ.
 	B_GivePlayerXP (XP_Ambient);
 
-	B_LogEntry (TOPIC_Addon_BringRangerToLares,"Бальтрам, торговец на рыночной площади, позаботится, чтобы Лареса заменили на его посту. Ларес может покинуть гавань ПРЯМО СЕЙЧАС."); 
+	B_LogEntry (TOPIC_Addon_BringRangerToLares,"Р‘Р°Р»СЊС‚СЂР°Рј, С‚РѕСЂРіРѕРІРµС† РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё, РїРѕР·Р°Р±РѕС‚РёС‚СЃСЏ, С‡С‚РѕР±С‹ Р›Р°СЂРµСЃР° Р·Р°РјРµРЅРёР»Рё РЅР° РµРіРѕ РїРѕСЃС‚Сѓ. Р›Р°СЂРµСЃ РјРѕР¶РµС‚ РїРѕРєРёРЅСѓС‚СЊ РіР°РІР°РЅСЊ РџР РЇРњРћ РЎР•Р™Р§РђРЎ."); 
 
 	SC_KnowsBaltramAsRanger = TRUE;
 	Baltram_Exchange4Lares = TRUE;
@@ -135,7 +135,7 @@ instance DIA_Baltram_Job		(C_INFO)
 	condition	 = 	DIA_Baltram_Job_Condition;
 	information	 = 	DIA_Baltram_Job_Info;
 	permanent	 =  FALSE;
-	description  =  "У тебя есть работа для меня?";
+	description  =  "РЈ С‚РµР±СЏ РµСЃС‚СЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ?";
 };
 func int DIA_Baltram_Job_Condition ()
 {
@@ -148,8 +148,8 @@ func int DIA_Baltram_Job_Condition ()
 };
 func void DIA_Baltram_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_Job_15_00"); //У тебя есть работа для меня?
-	AI_Output (self, other, "DIA_Baltram_Job_01_01"); //Нет, у меня уже есть мальчик на побегушках. Попробуй поговорить с другими торговцами.
+	AI_Output (other, self, "DIA_Baltram_Job_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Baltram_Job_01_01"); //РќРµС‚, Сѓ РјРµРЅСЏ СѓР¶Рµ РµСЃС‚СЊ РјР°Р»СЊС‡РёРє РЅР° РїРѕР±РµРіСѓС€РєР°С…. РџРѕРїСЂРѕР±СѓР№ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РґСЂСѓРіРёРјРё С‚РѕСЂРіРѕРІС†Р°РјРё.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Trick
@@ -173,20 +173,20 @@ func int DIA_Baltram_Trick_Condition ()
 };
 func void DIA_Baltram_Trick_Info ()
 {
-	AI_Output (self, other, "DIA_Baltram_Trick_01_00"); //Ты ищешь работу?
-	AI_Output (other, self, "DIA_Baltram_Trick_15_01"); //Конечно, а что нужно?
-	AI_Output (self, other, "DIA_Baltram_Trick_01_02"); //Мой мальчик на побегушках не вернулся, а я жду поставку от фермера Акила.
-	AI_Output (other, self, "DIA_Baltram_Trick_15_03"); //И во сколько ты оцениваешь эту работу?
-	AI_Output (self, other, "DIA_Baltram_Trick_01_04"); //Я дам тебе 50 золотых монет.
-	AI_Output (other, self, "DIA_Baltram_Trick_15_05"); //Отлично, я согласен.
-	AI_Output (self, other, "DIA_Baltram_Trick_01_06"); //Хорошо, просто скажи Акилу, что тебя послал я. Он передаст тебе пакет. Принеси его мне.
+	AI_Output (self, other, "DIA_Baltram_Trick_01_00"); //РўС‹ РёС‰РµС€СЊ СЂР°Р±РѕС‚Сѓ?
+	AI_Output (other, self, "DIA_Baltram_Trick_15_01"); //РљРѕРЅРµС‡РЅРѕ, Р° С‡С‚Рѕ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other, "DIA_Baltram_Trick_01_02"); //РњРѕР№ РјР°Р»СЊС‡РёРє РЅР° РїРѕР±РµРіСѓС€РєР°С… РЅРµ РІРµСЂРЅСѓР»СЃСЏ, Р° СЏ Р¶РґСѓ РїРѕСЃС‚Р°РІРєСѓ РѕС‚ С„РµСЂРјРµСЂР° РђРєРёР»Р°.
+	AI_Output (other, self, "DIA_Baltram_Trick_15_03"); //Р РІРѕ СЃРєРѕР»СЊРєРѕ С‚С‹ РѕС†РµРЅРёРІР°РµС€СЊ СЌС‚Сѓ СЂР°Р±РѕС‚Сѓ?
+	AI_Output (self, other, "DIA_Baltram_Trick_01_04"); //РЇ РґР°Рј С‚РµР±Рµ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	AI_Output (other, self, "DIA_Baltram_Trick_15_05"); //РћС‚Р»РёС‡РЅРѕ, СЏ СЃРѕРіР»Р°СЃРµРЅ.
+	AI_Output (self, other, "DIA_Baltram_Trick_01_06"); //РҐРѕСЂРѕС€Рѕ, РїСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё РђРєРёР»Сѓ, С‡С‚Рѕ С‚РµР±СЏ РїРѕСЃР»Р°Р» СЏ. РћРЅ РїРµСЂРµРґР°СЃС‚ С‚РµР±Рµ РїР°РєРµС‚. РџСЂРёРЅРµСЃРё РµРіРѕ РјРЅРµ.
 	
 	MIS_Baltram_ScoutAkil = LOG_RUNNING;
-	B_LogEntry (TOPIC_Nagur,"Бальтрам нанял меня в качестве мальчика на побегушках. Теперь, я должен доставить ему посылку с фермы Акила.");
+	B_LogEntry (TOPIC_Nagur,"Р‘Р°Р»СЊС‚СЂР°Рј РЅР°РЅСЏР» РјРµРЅСЏ РІ РєР°С‡РµСЃС‚РІРµ РјР°Р»СЊС‡РёРєР° РЅР° РїРѕР±РµРіСѓС€РєР°С…. РўРµРїРµСЂСЊ, СЏ РґРѕР»Р¶РµРЅ РґРѕСЃС‚Р°РІРёС‚СЊ РµРјСѓ РїРѕСЃС‹Р»РєСѓ СЃ С„РµСЂРјС‹ РђРєРёР»Р°.");
 	
 	Log_CreateTopic (TOPIC_Baltram,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Baltram,LOG_RUNNING);
-	B_LogEntry (TOPIC_Baltram, "Если я принесу Бальтраму его посылку, он заплатит мне 50 золотых монет.");
+	B_LogEntry (TOPIC_Baltram, "Р•СЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ Р‘Р°Р»СЊС‚СЂР°РјСѓ РµРіРѕ РїРѕСЃС‹Р»РєСѓ, РѕРЅ Р·Р°РїР»Р°С‚РёС‚ РјРЅРµ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WAREZ
@@ -201,7 +201,7 @@ instance DIA_Baltram_WAREZ		(C_INFO)
 	information	 = 	DIA_Baltram_WAREZ_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 
 func int DIA_Baltram_WAREZ_Condition ()
@@ -211,29 +211,29 @@ func int DIA_Baltram_WAREZ_Condition ()
 func void DIA_Baltram_WAREZ_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self,"DIA_Baltram_WAREZ_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self,"DIA_Baltram_WAREZ_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	
 	if (Baltram_TradeLOG == FALSE)
 	{
 		Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-		B_LogEntry (Topic_CityTrader,"Бальтрам торгует продуктами на рыночной площади.");
+		B_LogEntry (Topic_CityTrader,"Р‘Р°Р»СЊС‚СЂР°Рј С‚РѕСЂРіСѓРµС‚ РїСЂРѕРґСѓРєС‚Р°РјРё РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.");
 		Baltram_TradeLOG = TRUE;
 	};
 	
 	if (Kapitel == 3)
 	&& (MIS_RescueBennet != LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_01"); //Им не стоило допускать, чтобы все зашло так далеко. Теперь вот один из наемников убил паладина.
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_02"); //Что-то подобное обязательно должно было случиться!
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_01"); //РРј РЅРµ СЃС‚РѕРёР»Рѕ РґРѕРїСѓСЃРєР°С‚СЊ, С‡С‚РѕР±С‹ РІСЃРµ Р·Р°С€Р»Рѕ С‚Р°Рє РґР°Р»РµРєРѕ. РўРµРїРµСЂСЊ РІРѕС‚ РѕРґРёРЅ РёР· РЅР°РµРјРЅРёРєРѕРІ СѓР±РёР» РїР°Р»Р°РґРёРЅР°.
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_02"); //Р§С‚Рѕ-С‚Рѕ РїРѕРґРѕР±РЅРѕРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РґРѕР»Р¶РЅРѕ Р±С‹Р»Рѕ СЃР»СѓС‡РёС‚СЊСЃСЏ!
 	};
 	if ((MIS_BaltramTrade != LOG_SUCCESS)
 	&& ((hero.guild == GIL_SLD)
 	||  (hero.guild == GIL_DJG)))
 	{
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_03"); //Такие как ты ничего от меня не получат.
-		AI_Output (other, self,"DIA_Baltram_WAREZ_15_04"); //Почему?
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_05"); //Сначала ты сбиваешь фермеров с пути истинного, а затем ведешь себя так, как будто ничего не произошло.
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_06"); //Теперь проваливай, ты распугаешь всех моих клиентов.
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_03"); //РўР°РєРёРµ РєР°Рє С‚С‹ РЅРёС‡РµРіРѕ РѕС‚ РјРµРЅСЏ РЅРµ РїРѕР»СѓС‡Р°С‚.
+		AI_Output (other, self,"DIA_Baltram_WAREZ_15_04"); //РџРѕС‡РµРјСѓ?
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_05"); //РЎРЅР°С‡Р°Р»Р° С‚С‹ СЃР±РёРІР°РµС€СЊ С„РµСЂРјРµСЂРѕРІ СЃ РїСѓС‚Рё РёСЃС‚РёРЅРЅРѕРіРѕ, Р° Р·Р°С‚РµРј РІРµРґРµС€СЊ СЃРµР±СЏ С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ РЅРёС‡РµРіРѕ РЅРµ РїСЂРѕРёР·РѕС€Р»Рѕ.
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_06"); //РўРµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№, С‚С‹ СЂР°СЃРїСѓРіР°РµС€СЊ РІСЃРµС… РјРѕРёС… РєР»РёРµРЅС‚РѕРІ.
 		
 		MIS_BaltramTrade = LOG_FAILED;
 		
@@ -251,7 +251,7 @@ instance DIA_Addon_Baltram_Skip		(C_INFO)
 	condition	 = 	DIA_Addon_Baltram_Skip_Condition;
 	information	 = 	DIA_Addon_Baltram_Skip_Info;
 
-	description	 = 	"Значит, ты торгуешь с пиратами?";
+	description	 = 	"Р—РЅР°С‡РёС‚, С‚С‹ С‚РѕСЂРіСѓРµС€СЊ СЃ РїРёСЂР°С‚Р°РјРё?";
 };
 
 func int DIA_Addon_Baltram_Skip_Condition ()
@@ -264,73 +264,73 @@ func int DIA_Addon_Baltram_Skip_Condition ()
 
 func void DIA_Addon_Baltram_Skip_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_00"); //(мимоходом) Значит, ты торгуешь с пиратами?
-	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_01"); //(испуганно) Что? Кто тебе это сказал?
-	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_02"); //Я говорил с одним из них. Похоже, он ждет тебя в своей бухте.
-	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_03"); //Что же мне было делать? Времена сейчас тяжелые. Каждый выкручивается, как может.
+	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_00"); //(РјРёРјРѕС…РѕРґРѕРј) Р—РЅР°С‡РёС‚, С‚С‹ С‚РѕСЂРіСѓРµС€СЊ СЃ РїРёСЂР°С‚Р°РјРё?
+	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_01"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р§С‚Рѕ? РљС‚Рѕ С‚РµР±Рµ СЌС‚Рѕ СЃРєР°Р·Р°Р»?
+	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_02"); //РЇ РіРѕРІРѕСЂРёР» СЃ РѕРґРЅРёРј РёР· РЅРёС…. РџРѕС…РѕР¶Рµ, РѕРЅ Р¶РґРµС‚ С‚РµР±СЏ РІ СЃРІРѕРµР№ Р±СѓС…С‚Рµ.
+	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_03"); //Р§С‚Рѕ Р¶Рµ РјРЅРµ Р±С‹Р»Рѕ РґРµР»Р°С‚СЊ? Р’СЂРµРјРµРЅР° СЃРµР№С‡Р°СЃ С‚СЏР¶РµР»С‹Рµ. РљР°Р¶РґС‹Р№ РІС‹РєСЂСѓС‡РёРІР°РµС‚СЃСЏ, РєР°Рє РјРѕР¶РµС‚.
 	
 	Info_ClearChoices	(DIA_Addon_Baltram_Skip);
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Ты не боялся, что тебя могут раскрыть?", DIA_Addon_Baltram_Skip_erwischen );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Ты понесешь за это наказание!", DIA_Addon_Baltram_Skip_MIL );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "РўС‹ РЅРµ Р±РѕСЏР»СЃСЏ, С‡С‚Рѕ С‚РµР±СЏ РјРѕРіСѓС‚ СЂР°СЃРєСЂС‹С‚СЊ?", DIA_Addon_Baltram_Skip_erwischen );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "РўС‹ РїРѕРЅРµСЃРµС€СЊ Р·Р° СЌС‚Рѕ РЅР°РєР°Р·Р°РЅРёРµ!", DIA_Addon_Baltram_Skip_MIL );
 };
 func void DIA_Addon_Baltram_Skip_Back ()
 {
-	AI_Output (other, self, "DIA_Addon_Baltram_Skip_Back_15_00"); //Это все, что я хотел узнать.
+	AI_Output (other, self, "DIA_Addon_Baltram_Skip_Back_15_00"); //Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ СЏ С…РѕС‚РµР» СѓР·РЅР°С‚СЊ.
 	Info_ClearChoices	(DIA_Addon_Baltram_Skip);
 };
 
 func void DIA_Addon_Baltram_Skip_MIL ()
 {
-	AI_Output (other, self, "DIA_Addon_Baltram_Skip_MIL_15_00"); //Ты понесешь за это наказание!
-	AI_Output (self, other, "DIA_Addon_Baltram_Skip_MIL_01_01"); //Послушай! Давай я расскажу тебе все, что я знаю, а ты не станешь меня выдавать, хорошо?
+	AI_Output (other, self, "DIA_Addon_Baltram_Skip_MIL_15_00"); //РўС‹ РїРѕРЅРµСЃРµС€СЊ Р·Р° СЌС‚Рѕ РЅР°РєР°Р·Р°РЅРёРµ!
+	AI_Output (self, other, "DIA_Addon_Baltram_Skip_MIL_01_01"); //РџРѕСЃР»СѓС€Р°Р№! Р”Р°РІР°Р№ СЏ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ, Р° С‚С‹ РЅРµ СЃС‚Р°РЅРµС€СЊ РјРµРЅСЏ РІС‹РґР°РІР°С‚СЊ, С…РѕСЂРѕС€Рѕ?
 	
 	Info_ClearChoices (DIA_Addon_Baltram_Skip);
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "И чем же ты торговал?", DIA_Addon_Baltram_Skip_was );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Что ты знаешь о пиратах?", DIA_Addon_Baltram_Skip_pirat );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Р С‡РµРј Р¶Рµ С‚С‹ С‚РѕСЂРіРѕРІР°Р»?", DIA_Addon_Baltram_Skip_was );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРёСЂР°С‚Р°С…?", DIA_Addon_Baltram_Skip_pirat );
 };
 
 func void DIA_Addon_Baltram_Skip_erwischen ()
 {
-	AI_Output (other, self, "DIA_Addon_Baltram_Skip_erwischen_15_00"); //Ты не боялся, что тебя могут раскрыть?
-	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_01"); //Я понимал, что такое возможно. Ты же меня раскрыл, верно?
-	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_02"); //Надеюсь, что ты будешь держать рот на замке.
+	AI_Output (other, self, "DIA_Addon_Baltram_Skip_erwischen_15_00"); //РўС‹ РЅРµ Р±РѕСЏР»СЃСЏ, С‡С‚Рѕ С‚РµР±СЏ РјРѕРіСѓС‚ СЂР°СЃРєСЂС‹С‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_01"); //РЇ РїРѕРЅРёРјР°Р», С‡С‚Рѕ С‚Р°РєРѕРµ РІРѕР·РјРѕР¶РЅРѕ. РўС‹ Р¶Рµ РјРµРЅСЏ СЂР°СЃРєСЂС‹Р», РІРµСЂРЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_02"); //РќР°РґРµСЋСЃСЊ, С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµСЂР¶Р°С‚СЊ СЂРѕС‚ РЅР° Р·Р°РјРєРµ.
 	
 	Info_ClearChoices	(DIA_Addon_Baltram_Skip);
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "И чем же ты торговал?", DIA_Addon_Baltram_Skip_was );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Что ты знаешь о пиратах?", DIA_Addon_Baltram_Skip_pirat );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Р С‡РµРј Р¶Рµ С‚С‹ С‚РѕСЂРіРѕРІР°Р»?", DIA_Addon_Baltram_Skip_was );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРёСЂР°С‚Р°С…?", DIA_Addon_Baltram_Skip_pirat );
 };
 
 func void DIA_Addon_Baltram_Skip_was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_was_15_00"); //И чем же ты торговал?
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_01"); //В основном, я продавал им еду.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_02"); //А за это получал от них лучший ром на Хоринисе.
+	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_was_15_00"); //Р С‡РµРј Р¶Рµ С‚С‹ С‚РѕСЂРіРѕРІР°Р»?
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_01"); //Р’ РѕСЃРЅРѕРІРЅРѕРј, СЏ РїСЂРѕРґР°РІР°Р» РёРј РµРґСѓ.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_02"); //Рђ Р·Р° СЌС‚Рѕ РїРѕР»СѓС‡Р°Р» РѕС‚ РЅРёС… Р»СѓС‡С€РёР№ СЂРѕРј РЅР° РҐРѕСЂРёРЅРёСЃРµ.
 	
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Это все, что я хотел узнать.", DIA_Addon_Baltram_Skip_Back );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Я бы мог совершить сделку вместо тебя.", DIA_Addon_Baltram_Skip_Ich );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ СЏ С…РѕС‚РµР» СѓР·РЅР°С‚СЊ.", DIA_Addon_Baltram_Skip_Back );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "РЇ Р±С‹ РјРѕРі СЃРѕРІРµСЂС€РёС‚СЊ СЃРґРµР»РєСѓ РІРјРµСЃС‚Рѕ С‚РµР±СЏ.", DIA_Addon_Baltram_Skip_Ich );
 };
 
 func void DIA_Addon_Baltram_Skip_Ich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_Ich_15_00"); //(усмехается) Я бы мог совершить сделку вместо тебя.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_01"); //Это было бы замечательно. Я сейчас не могу уходить из города.
+	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_Ich_15_00"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РЇ Р±С‹ РјРѕРі СЃРѕРІРµСЂС€РёС‚СЊ СЃРґРµР»РєСѓ РІРјРµСЃС‚Рѕ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_01"); //Р­С‚Рѕ Р±С‹Р»Рѕ Р±С‹ Р·Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ. РЇ СЃРµР№С‡Р°СЃ РЅРµ РјРѕРіСѓ СѓС…РѕРґРёС‚СЊ РёР· РіРѕСЂРѕРґР°.
 	CreateInvItems (self, ItMi_Packet_Baltram4Skip_Addon, 1);									
 	B_GiveInvItems (self, other, ItMi_Packet_Baltram4Skip_Addon, 1);		
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_02"); //Вот, возьми этот пакет и передай Скипу, что на этот раз мне нужно больше рома.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_03"); //Как минимум три бутылки.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_02"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚РѕС‚ РїР°РєРµС‚ Рё РїРµСЂРµРґР°Р№ РЎРєРёРїСѓ, С‡С‚Рѕ РЅР° СЌС‚РѕС‚ СЂР°Р· РјРЅРµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ СЂРѕРјР°.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_03"); //РљР°Рє РјРёРЅРёРјСѓРј С‚СЂРё Р±СѓС‚С‹Р»РєРё.
 	
-	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,"Бальтрам дал мне пакет. Я должен отнести его Скипу."); 
+	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,"Р‘Р°Р»СЊС‚СЂР°Рј РґР°Р» РјРЅРµ РїР°РєРµС‚. РЇ РґРѕР»Р¶РµРЅ РѕС‚РЅРµСЃС‚Рё РµРіРѕ РЎРєРёРїСѓ."); 
 	
 	MIS_Addon_Baltram_Paket4Skip = LOG_RUNNING;
 };
 
 func void DIA_Addon_Baltram_Skip_pirat ()
 {
-	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_pirat_15_00"); //Что ты знаешь о пиратах?
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_01"); //Они живут в удаленной части острова.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_02"); //Насколько я знаю, попасть туда можно только на корабле. 
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_03"); //Жители Хориниса их боятся. Это и понятно, ведь пираты - отчаянные головорезы.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_04"); //Однако я считаю, что бандиты еще хуже.
+	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_pirat_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРёСЂР°С‚Р°С…?
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_01"); //РћРЅРё Р¶РёРІСѓС‚ РІ СѓРґР°Р»РµРЅРЅРѕР№ С‡Р°СЃС‚Рё РѕСЃС‚СЂРѕРІР°.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_02"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, РїРѕРїР°СЃС‚СЊ С‚СѓРґР° РјРѕР¶РЅРѕ С‚РѕР»СЊРєРѕ РЅР° РєРѕСЂР°Р±Р»Рµ. 
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_03"); //Р–РёС‚РµР»Рё РҐРѕСЂРёРЅРёСЃР° РёС… Р±РѕСЏС‚СЃСЏ. Р­С‚Рѕ Рё РїРѕРЅСЏС‚РЅРѕ, РІРµРґСЊ РїРёСЂР°С‚С‹ - РѕС‚С‡Р°СЏРЅРЅС‹Рµ РіРѕР»РѕРІРѕСЂРµР·С‹.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_04"); //РћРґРЅР°РєРѕ СЏ СЃС‡РёС‚Р°СЋ, С‡С‚Рѕ Р±Р°РЅРґРёС‚С‹ РµС‰Рµ С…СѓР¶Рµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -343,7 +343,7 @@ instance DIA_Addon_Baltram_SkipsRum		(C_INFO)
 	condition	 = 	DIA_Addon_Baltram_SkipsRum_Condition;
 	information	 = 	DIA_Addon_Baltram_SkipsRum_Info;
 
-	description	 = 	"Я принес ром. Но Скип дал мне всего две бутылки.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ СЂРѕРј. РќРѕ РЎРєРёРї РґР°Р» РјРЅРµ РІСЃРµРіРѕ РґРІРµ Р±СѓС‚С‹Р»РєРё.";
 };
 
 func int DIA_Addon_Baltram_SkipsRum_Condition ()
@@ -359,10 +359,10 @@ func int DIA_Addon_Baltram_SkipsRum_Condition ()
 
 func void DIA_Addon_Baltram_SkipsRum_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Baltram_SkipsRum_15_00"); //Я принес ром. Но Скип дал мне всего две бутылки.
-	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_01"); //(сердито) Дороговато получается... Что он о себе возомнил? Ладно, давай их сюда.
+	AI_Output	(other, self, "DIA_Addon_Baltram_SkipsRum_15_00"); //РЇ РїСЂРёРЅРµСЃ СЂРѕРј. РќРѕ РЎРєРёРї РґР°Р» РјРЅРµ РІСЃРµРіРѕ РґРІРµ Р±СѓС‚С‹Р»РєРё.
+	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_01"); //(СЃРµСЂРґРёС‚Рѕ) Р”РѕСЂРѕРіРѕРІР°С‚Рѕ РїРѕР»СѓС‡Р°РµС‚СЃСЏ... Р§С‚Рѕ РѕРЅ Рѕ СЃРµР±Рµ РІРѕР·РѕРјРЅРёР»? Р›Р°РґРЅРѕ, РґР°РІР°Р№ РёС… СЃСЋРґР°.
 	B_GiveInvItems (other, self, ItFo_Addon_Rum,2); 
-	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_02"); //Что ж, много заплатить я тебе не могу. Думаю, этого хватит.
+	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_02"); //Р§С‚Рѕ Р¶, РјРЅРѕРіРѕ Р·Р°РїР»Р°С‚РёС‚СЊ СЏ С‚РµР±Рµ РЅРµ РјРѕРіСѓ. Р”СѓРјР°СЋ, СЌС‚РѕРіРѕ С…РІР°С‚РёС‚.
 	CreateInvItems (self, ItMi_Gold, 10);									
 	B_GiveInvItems (self, other, ItMi_Gold, 10);		
 
@@ -380,7 +380,7 @@ instance DIA_Baltram_AkilsHof		(C_INFO)
 	condition	 = 	DIA_Baltram_AkilsHof_Condition;
 	information	 = 	DIA_Baltram_AkilsHof_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Где мне найти ферму Акила?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ РђРєРёР»Р°?";
 };
 func int DIA_Baltram_AkilsHof_Condition ()
 {
@@ -392,9 +392,9 @@ func int DIA_Baltram_AkilsHof_Condition ()
 
 func void DIA_Baltram_AkilsHof_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_AkilsHof_15_00"); //Где мне найти ферму Акила?
-	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_01"); //Как только выйдешь из восточных ворот, держись дороги, ведущей на юго-восток.
-	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_02"); //Вскоре ты увидишь каменную лестницу. Когда ты поднимешься по ней, то уже сможешь видеть ферму Акила.
+	AI_Output (other, self, "DIA_Baltram_AkilsHof_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ РђРєРёР»Р°?
+	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_01"); //РљР°Рє С‚РѕР»СЊРєРѕ РІС‹Р№РґРµС€СЊ РёР· РІРѕСЃС‚РѕС‡РЅС‹С… РІРѕСЂРѕС‚, РґРµСЂР¶РёСЃСЊ РґРѕСЂРѕРіРё, РІРµРґСѓС‰РµР№ РЅР° СЋРіРѕ-РІРѕСЃС‚РѕРє.
+	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_02"); //Р’СЃРєРѕСЂРµ С‚С‹ СѓРІРёРґРёС€СЊ РєР°РјРµРЅРЅСѓСЋ Р»РµСЃС‚РЅРёС†Сѓ. РљРѕРіРґР° С‚С‹ РїРѕРґРЅРёРјРµС€СЊСЃСЏ РїРѕ РЅРµР№, С‚Рѕ СѓР¶Рµ СЃРјРѕР¶РµС€СЊ РІРёРґРµС‚СЊ С„РµСЂРјСѓ РђРєРёР»Р°.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Lieferung geholt
@@ -406,7 +406,7 @@ instance DIA_Baltram_Lieferung	(C_INFO)
 	condition	 = 	DIA_Baltram_Lieferung_Condition;
 	information	 = 	DIA_Baltram_Lieferung_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Я принес пакет от Акила.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ РїР°РєРµС‚ РѕС‚ РђРєРёР»Р°.";
 };
 
 func int DIA_Baltram_Lieferung_Condition ()
@@ -418,8 +418,8 @@ func int DIA_Baltram_Lieferung_Condition ()
 };
 func void DIA_Baltram_Lieferung_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_Lieferung_15_00"); //Я принес пакет от Акила.
-	AI_Output (self, other, "DIA_Baltram_Lieferung_01_01"); //Превосходно. Теперь я опять смогу торговать свежими продуктами. Вот твои 50 золотых монет.
+	AI_Output (other, self, "DIA_Baltram_Lieferung_15_00"); //РЇ РїСЂРёРЅРµСЃ РїР°РєРµС‚ РѕС‚ РђРєРёР»Р°.
+	AI_Output (self, other, "DIA_Baltram_Lieferung_01_01"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ. РўРµРїРµСЂСЊ СЏ РѕРїСЏС‚СЊ СЃРјРѕРіСѓ С‚РѕСЂРіРѕРІР°С‚СЊ СЃРІРµР¶РёРјРё РїСЂРѕРґСѓРєС‚Р°РјРё. Р’РѕС‚ С‚РІРѕРё 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	
 	B_GiveInvItems (other, self, ItMi_BaltramPaket,1);
 	B_GiveInvItems (self, other, ItMi_Gold,50);
@@ -448,7 +448,7 @@ instance DIA_Baltram_LetUsTrade		(C_INFO)
 	condition	 = 	DIA_Baltram_LetUsTrade_Condition;
 	information	 = 	DIA_Baltram_LetUsTrade_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Может, нам опять поработать вместе?";
+	description	 = 	"РњРѕР¶РµС‚, РЅР°Рј РѕРїСЏС‚СЊ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РІРјРµСЃС‚Рµ?";
 };
 func int DIA_Baltram_LetUsTrade_Condition ()
 {
@@ -460,9 +460,9 @@ func int DIA_Baltram_LetUsTrade_Condition ()
 
 func void DIA_Baltram_LetUsTrade_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_00"); //Может, нам опять поработать вместе?
-	AI_Output (self, other, "DIA_Baltram_LetUsTrade_01_01"); //Послушай, если ты принесешь мне 10 окороков и 10 бутылок вина, тогда я опять готов иметь с тобой дело.
-	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_02"); //Я попробую.
+	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_00"); //РњРѕР¶РµС‚, РЅР°Рј РѕРїСЏС‚СЊ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РІРјРµСЃС‚Рµ?
+	AI_Output (self, other, "DIA_Baltram_LetUsTrade_01_01"); //РџРѕСЃР»СѓС€Р°Р№, РµСЃР»Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ 10 РѕРєРѕСЂРѕРєРѕРІ Рё 10 Р±СѓС‚С‹Р»РѕРє РІРёРЅР°, С‚РѕРіРґР° СЏ РѕРїСЏС‚СЊ РіРѕС‚РѕРІ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РґРµР»Рѕ.
+	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_02"); //РЇ РїРѕРїСЂРѕР±СѓСЋ.
 	
 	MIS_BaltramTrade = LOG_RUNNING;
 };
@@ -480,7 +480,7 @@ instance DIA_Baltram_HaveYourWarez		(C_INFO)
 	condition	 = 	DIA_Baltram_HaveYourWarez_Condition;
 	information	 = 	DIA_Baltram_HaveYourWarez_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Я принес то, что ты просил.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ С‚Рѕ, С‡С‚Рѕ С‚С‹ РїСЂРѕСЃРёР».";
 };
 func int DIA_Baltram_HaveYourWarez_Condition ()
 {
@@ -493,12 +493,12 @@ func int DIA_Baltram_HaveYourWarez_Condition ()
 
 func void DIA_Baltram_HaveYourWarez_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_HaveYourWarez_15_00"); //Я принес то, что ты просил.
-	AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_01"); //Покажи.
+	AI_Output (other, self, "DIA_Baltram_HaveYourWarez_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚Рѕ, С‡С‚Рѕ С‚С‹ РїСЂРѕСЃРёР».
+	AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_01"); //РџРѕРєР°Р¶Рё.
 	
 	if (Npc_HasItems (other,ItFo_Bacon) < 10)
 	{
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_02"); //Мы договорились на 10 окороков. Возвращайся когда добудешь их.
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_02"); //РњС‹ РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ РЅР° 10 РѕРєРѕСЂРѕРєРѕРІ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РєРѕРіРґР° РґРѕР±СѓРґРµС€СЊ РёС….
 		
 		BaltramEnoughBacon = FALSE;
 	}
@@ -508,7 +508,7 @@ func void DIA_Baltram_HaveYourWarez_Info ()
 	};  
 	if (Npc_HasItems (other,ItFo_Wine) < 10)
 	{
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_03"); //А что насчет 10 бутылок вина? Ты что, забыл про них?
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_03"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ 10 Р±СѓС‚С‹Р»РѕРє РІРёРЅР°? РўС‹ С‡С‚Рѕ, Р·Р°Р±С‹Р» РїСЂРѕ РЅРёС…?
 	
 		BaltramEnoughWine = FALSE;
 	}
@@ -520,7 +520,7 @@ func void DIA_Baltram_HaveYourWarez_Info ()
 	if (BaltramEnoughBacon == TRUE
 	&&  BaltramEnoughWine  == TRUE)
 	{
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_04"); //Хммм, товар не самого лучшего качества, но в наше время не приходится привередничать.
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_04"); //РҐРјРјРј, С‚РѕРІР°СЂ РЅРµ СЃР°РјРѕРіРѕ Р»СѓС‡С€РµРіРѕ РєР°С‡РµСЃС‚РІР°, РЅРѕ РІ РЅР°С€Рµ РІСЂРµРјСЏ РЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ РїСЂРёРІРµСЂРµРґРЅРёС‡Р°С‚СЊ.
 		
 		B_GiveInvItems (other,self,ItFo_Bacon,10);
 		B_GiveInvItems (other,self,ItFo_Wine,10);
@@ -529,7 +529,7 @@ func void DIA_Baltram_HaveYourWarez_Info ()
 	
 		B_GivePlayerXP (XP_BaltramTrade);
 		
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_05"); //Теперь ничто не мешает нам вести дела.
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_05"); //РўРµРїРµСЂСЊ РЅРёС‡С‚Рѕ РЅРµ РјРµС€Р°РµС‚ РЅР°Рј РІРµСЃС‚Рё РґРµР»Р°.
 	};	
 };
 

@@ -12,7 +12,7 @@ func int C_RefuseTalk (var C_NPC slf, var C_NPC oth)
 		return TRUE;
 	};
 	
-	// ------ NSCs, die nicht abseits ihres Waypoints zum ersten Mal einen Dialog anfangen dürfen ------
+	// ------ NSCs, die nicht abseits ihres Waypoints zum ersten Mal einen Dialog anfangen dÑŒrfen ------
 	if (slf.aivar[AIV_TalkedToPlayer] == FALSE)
 	&& (Npc_GetDistToWP(slf, slf.wp) > 500)
 	{
@@ -22,7 +22,7 @@ func int C_RefuseTalk (var C_NPC slf, var C_NPC oth)
 		};
 	};
 	
-	//------ Player hat falsche Rüstung an ------
+	//------ Player hat falsche RÑŒstung an ------
 	if C_PlayerHasFakeGuild (slf,oth)
 	&& (self.flags != NPC_FLAG_IMMORTAL)
 	{

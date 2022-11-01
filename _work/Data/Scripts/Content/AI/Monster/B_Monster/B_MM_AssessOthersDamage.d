@@ -2,14 +2,14 @@
 // B_MM_AssessOthersDamage
 // -----------------------
 // wird auch von beschworenen Monstern benutzt,
-// die die Atitüde zum SC auf FRIENDLY gesetzt bekommen
+// die die AtitÑŒde zum SC auf FRIENDLY gesetzt bekommen
 // ****************************************************
 
 func void B_MM_AssessOthersDamage ()
 {
 	//EXIT IF...
 	
-	// ------ wenn ich zu weit weg bin ------	//wichtig für Aufruf über FIGHTSOUND aus ZS_MM_Rtn_Summoned
+	// ------ wenn ich zu weit weg bin ------	//wichtig fÑŒr Aufruf ÑŒber FIGHTSOUND aus ZS_MM_Rtn_Summoned
 	if (Npc_GetDistToNpc(self, victim) > PERC_DIST_INTERMEDIAT)
 	&& (Npc_GetDistToNpc(self, other) > PERC_DIST_INTERMEDIAT)
 	{
@@ -37,7 +37,7 @@ func void B_MM_AssessOthersDamage ()
 		
 		// ------ Player greift an ------
 		if (Npc_IsPlayer (other))
-		&& (!Npc_IsDead (victim)) //Funktion wird auch über AssessMurder angesprungen
+		&& (!Npc_IsDead (victim)) //Funktion wird auch ÑŒber AssessMurder angesprungen
 		{
 			Npc_ClearAIQueue	(self);
 			B_ClearPerceptions	(self);
@@ -86,7 +86,7 @@ func void B_MM_AssessOthersDamage ()
 	// ------ Freund greift an ------
 	if (Wld_GetGuildAttitude(self.guild, other.guild) == ATT_FRIENDLY)
 	&& (Wld_GetGuildAttitude(self.guild, victim.guild) != ATT_FRIENDLY)  //kein Kampf zwischen Freunden
-	&& (!Npc_IsDead (victim)) //Funktion wird auch über AssessMurder angesprungen
+	&& (!Npc_IsDead (victim)) //Funktion wird auch ÑŒber AssessMurder angesprungen
 	{
 		Npc_ClearAIQueue	(self);
 		B_ClearPerceptions	(self);

@@ -1,6 +1,6 @@
 func void B_FollowMe_Wisp ()
 {
-	AI_Output		(other, self, "DIA_Addon_WispDetector_FollowMe_Wisp_15_00"); //Следуй за мной.
+	AI_Output		(other, self, "DIA_Addon_WispDetector_FollowMe_Wisp_15_00"); //РЎР»РµРґСѓР№ Р·Р° РјРЅРѕР№.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info EXIT 
@@ -35,7 +35,7 @@ instance DIA_Addon_WispDetector_DetectItems		(C_INFO)
 	information	 = 	DIA_Addon_WispDetector_DetectItems_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Начинай поиски!";
+	description	 = 	"РќР°С‡РёРЅР°Р№ РїРѕРёСЃРєРё!";
 };
 
 func int DIA_Addon_WispDetector_DetectItems_Condition ()
@@ -45,42 +45,42 @@ func int DIA_Addon_WispDetector_DetectItems_Condition ()
 
 func void DIA_Addon_WispDetector_DetectItems_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_WispDetector_DetectItems_15_00"); //Начинай поиски!
+	AI_Output	(other, self, "DIA_Addon_WispDetector_DetectItems_15_00"); //РќР°С‡РёРЅР°Р№ РїРѕРёСЃРєРё!
 
 	Info_ClearChoices	(DIA_Addon_WispDetector_DetectItems);
 
-	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Следуй за мной.", DIA_Addon_WispDetector_DetectItems_Follow );
+	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РЎР»РµРґСѓР№ Р·Р° РјРЅРѕР№.", DIA_Addon_WispDetector_DetectItems_Follow );
 
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_RUNE] 	== TRUE)	
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Ищи руны и свитки."						, DIA_Addon_WispDetector_DetectItems_RUNE );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РС‰Рё СЂСѓРЅС‹ Рё СЃРІРёС‚РєРё."						, DIA_Addon_WispDetector_DetectItems_RUNE );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NONE] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Ищи золото, ключи и прочую утварь."		, DIA_Addon_WispDetector_DetectItems_NONE );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РС‰Рё Р·РѕР»РѕС‚Рѕ, РєР»СЋС‡Рё Рё РїСЂРѕС‡СѓСЋ СѓС‚РІР°СЂСЊ."		, DIA_Addon_WispDetector_DetectItems_NONE );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FF] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Ищи оружие дальнего боя и боеприпасы."				, DIA_Addon_WispDetector_DetectItems_FF );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РС‰Рё РѕСЂСѓР¶РёРµ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ Рё Р±РѕРµРїСЂРёРїР°СЃС‹."				, DIA_Addon_WispDetector_DetectItems_FF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NF] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Ищи оружие ближнего боя."								, DIA_Addon_WispDetector_DetectItems_NF );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РС‰Рё РѕСЂСѓР¶РёРµ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ."								, DIA_Addon_WispDetector_DetectItems_NF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FOOD] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Ищи еду и растения."							, DIA_Addon_WispDetector_DetectItems_FOOD );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РС‰Рё РµРґСѓ Рё СЂР°СЃС‚РµРЅРёСЏ."							, DIA_Addon_WispDetector_DetectItems_FOOD );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_MAGIC] == TRUE)	
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Ищи кольца и амулеты."							, DIA_Addon_WispDetector_DetectItems_MAGIC );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РС‰Рё РєРѕР»СЊС†Р° Рё Р°РјСѓР»РµС‚С‹."							, DIA_Addon_WispDetector_DetectItems_MAGIC );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_POTIONS] == TRUE)	
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Ищи любые зелья."							, DIA_Addon_WispDetector_DetectItems_POTIONS );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РС‰Рё Р»СЋР±С‹Рµ Р·РµР»СЊСЏ."							, DIA_Addon_WispDetector_DetectItems_POTIONS );
 	};
 
-	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Ищи все, что можешь найти!"				, DIA_Addon_WispDetector_DetectItems_ALL );
+	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "РС‰Рё РІСЃРµ, С‡С‚Рѕ РјРѕР¶РµС€СЊ РЅР°Р№С‚Рё!"				, DIA_Addon_WispDetector_DetectItems_ALL );
 };
 
 func void DIA_Addon_WispDetector_DetectItems_Follow ()
@@ -93,7 +93,7 @@ func void DIA_Addon_WispDetector_DetectItems_Follow ()
 
 func void DIA_Addon_WispDetector_DetectItems_ALL ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_ALL_15_00"); //Ищи все, что можешь найти!
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_ALL_15_00"); //РС‰Рё РІСЃРµ, С‡С‚Рѕ РјРѕР¶РµС€СЊ РЅР°Р№С‚Рё!
 	WispSearching = WispSearch_ALL;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -101,7 +101,7 @@ func void DIA_Addon_WispDetector_DetectItems_ALL ()
 
 func void DIA_Addon_WispDetector_DetectItems_POTIONS ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_POTIONS_15_00"); //Ищи любые зелья.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_POTIONS_15_00"); //РС‰Рё Р»СЋР±С‹Рµ Р·РµР»СЊСЏ.
 	WispSearching = WispSearch_POTIONS;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -109,7 +109,7 @@ func void DIA_Addon_WispDetector_DetectItems_POTIONS ()
 
 func void DIA_Addon_WispDetector_DetectItems_MAGIC ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_MAGIC_15_00"); //Ищи кольца и амулеты.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_MAGIC_15_00"); //РС‰Рё РєРѕР»СЊС†Р° Рё Р°РјСѓР»РµС‚С‹.
 	WispSearching = WispSearch_MAGIC;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -117,7 +117,7 @@ func void DIA_Addon_WispDetector_DetectItems_MAGIC ()
 
 func void DIA_Addon_WispDetector_DetectItems_FOOD ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FOOD_15_00"); //Ищи еду и растения.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FOOD_15_00"); //РС‰Рё РµРґСѓ Рё СЂР°СЃС‚РµРЅРёСЏ.
 	WispSearching = WispSearch_FOOD;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -125,7 +125,7 @@ func void DIA_Addon_WispDetector_DetectItems_FOOD ()
 
 func void DIA_Addon_WispDetector_DetectItems_NF ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NF_15_00"); //Ищи оружие ближнего боя.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NF_15_00"); //РС‰Рё РѕСЂСѓР¶РёРµ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ.
 	WispSearching = WispSearch_NF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -133,7 +133,7 @@ func void DIA_Addon_WispDetector_DetectItems_NF ()
 
 func void DIA_Addon_WispDetector_DetectItems_FF ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FF_15_00"); //Ищи оружие дальнего боя и боеприпасы.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FF_15_00"); //РС‰Рё РѕСЂСѓР¶РёРµ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ Рё Р±РѕРµРїСЂРёРїР°СЃС‹.
 	WispSearching = WispSearch_FF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -141,7 +141,7 @@ func void DIA_Addon_WispDetector_DetectItems_FF ()
 
 func void DIA_Addon_WispDetector_DetectItems_NONE ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NONE_15_00"); //Ищи золото, ключи и прочую утварь.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NONE_15_00"); //РС‰Рё Р·РѕР»РѕС‚Рѕ, РєР»СЋС‡Рё Рё РїСЂРѕС‡СѓСЋ СѓС‚РІР°СЂСЊ.
 	WispSearching = WispSearch_NONE;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -149,7 +149,7 @@ func void DIA_Addon_WispDetector_DetectItems_NONE ()
 
 func void DIA_Addon_WispDetector_DetectItems_RUNE ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_RUNE_15_00"); //Ищи руны и свитки.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_RUNE_15_00"); //РС‰Рё СЂСѓРЅС‹ Рё СЃРІРёС‚РєРё.
 	WispSearching = WispSearch_RUNE;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -166,7 +166,7 @@ instance DIA_Addon_WispDetector_Follow		(C_INFO)
 	information	 = 	DIA_Addon_WispDetector_Follow_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Следуй за мной.";
+	description	 = 	"РЎР»РµРґСѓР№ Р·Р° РјРЅРѕР№.";
 };
 
 func int DIA_Addon_WispDetector_Follow_Condition ()

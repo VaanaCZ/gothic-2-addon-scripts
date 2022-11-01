@@ -2,7 +2,7 @@
 instance VLK_498_Ignaz (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Игнац"; 
+	name 		= "РРіРЅР°С†"; 
 	guild 		= GIL_VLK;
 	id 			= 498;
 	voice 		= 14;

@@ -1,7 +1,7 @@
 instance BDT_10017_Addon_Juan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "’Û‡Ì";
+	name 		= "–•—É–∞–Ω";
 	guild 		= GIL_BDT;
 	id 			= 10017;
 	voice 		= 13;

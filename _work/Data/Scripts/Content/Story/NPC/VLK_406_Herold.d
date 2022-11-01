@@ -2,7 +2,7 @@
 instance VLK_406_Herold (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Герольд";
+	name 		= "Р“РµСЂРѕР»СЊРґ";
 	guild 		= GIL_VLK;
 	id 			= 406;
 	voice 		= 4;

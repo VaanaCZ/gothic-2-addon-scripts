@@ -1,7 +1,7 @@
 INSTANCE VLK_4304_Addon_William (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Вильям";
+	name 		= "Р’РёР»СЊСЏРј";
 	guild 		= GIL_VLK;
 	id 			= 4304;
 	voice 		= 6;

@@ -6,7 +6,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 {	
   	Wld_PlayEffect("spellFX_Teleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
 	Snd_Play ("MFX_TELEPORT_CAST");
-	Npc_ClearAIQueue (hero);	//Joly:wegen Seitwдrts da durch rennen.
+	Npc_ClearAIQueue (hero);	//Joly:wegen SeitwРґrts da durch rennen.
 	
 	SCUsed_TELEPORTER = TRUE;			//SC hat schon mal einen Teleporter benutzt
 	
@@ -20,7 +20,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"Телепорт в пещере к востоку от города ведет к таверне 'Мертвая Гарпия'."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"РўРµР»РµРїРѕСЂС‚ РІ РїРµС‰РµСЂРµ Рє РІРѕСЃС‚РѕРєСѓ РѕС‚ РіРѕСЂРѕРґР° РІРµРґРµС‚ Рє С‚Р°РІРµСЂРЅРµ 'РњРµСЂС‚РІР°СЏ Р“Р°СЂРїРёСЏ'."); 
 			};
 			
 			SCUsed_NW_TELEPORTSTATION_CITY = TRUE; 
@@ -33,7 +33,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"Телепорт у таверны 'Мертвая Гарпия' ведет к порталу таинственных зодчих."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"РўРµР»РµРїРѕСЂС‚ Сѓ С‚Р°РІРµСЂРЅС‹ 'РњРµСЂС‚РІР°СЏ Р“Р°СЂРїРёСЏ' РІРµРґРµС‚ Рє РїРѕСЂС‚Р°Р»Сѓ С‚Р°РёРЅСЃС‚РІРµРЅРЅС‹С… Р·РѕРґС‡РёС…."); 
 			};
 
 			SCUsed_NW_TELEPORTSTATION_TAVERNE = TRUE; 
@@ -46,7 +46,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"Телепорт у портала таинственных зодчих ведет к пещере к востоку от города."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"РўРµР»РµРїРѕСЂС‚ Сѓ РїРѕСЂС‚Р°Р»Р° С‚Р°РёРЅСЃС‚РІРµРЅРЅС‹С… Р·РѕРґС‡РёС… РІРµРґРµС‚ Рє РїРµС‰РµСЂРµ Рє РІРѕСЃС‚РѕРєСѓ РѕС‚ РіРѕСЂРѕРґР°."); 
 			};
 
 			SCUsed_NW_TELEPORTSTATION_MAYA = TRUE;
@@ -76,7 +76,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Я активировал телепорт, который находится рядом с порталом, ведущим в Хоринис."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» С‚РµР»РµРїРѕСЂС‚, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ СЂСЏРґРѕРј СЃ РїРѕСЂС‚Р°Р»РѕРј, РІРµРґСѓС‰РёРј РІ РҐРѕСЂРёРЅРёСЃ."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
@@ -90,7 +90,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Мне удалось активировать телепорт, находящийся в верхней части лагеря бандитов."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"РњРЅРµ СѓРґР°Р»РѕСЃСЊ Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ С‚РµР»РµРїРѕСЂС‚, РЅР°С…РѕРґСЏС‰РёР№СЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё Р»Р°РіРµСЂСЏ Р±Р°РЅРґРёС‚РѕРІ."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -104,7 +104,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Я активировал телепорт, который находится на болоте, к югу от лагеря бандитов."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» С‚РµР»РµРїРѕСЂС‚, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° Р±РѕР»РѕС‚Рµ, Рє СЋРіСѓ РѕС‚ Р»Р°РіРµСЂСЏ Р±Р°РЅРґРёС‚РѕРІ."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -118,7 +118,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Я нашел телепорт на юго-западе."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"РЇ РЅР°С€РµР» С‚РµР»РµРїРѕСЂС‚ РЅР° СЋРіРѕ-Р·Р°РїР°РґРµ."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -132,14 +132,14 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"В небольшой пещере в каньоне есть телепорт. Я активировал его."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Р’ РЅРµР±РѕР»СЊС€РѕР№ РїРµС‰РµСЂРµ РІ РєР°РЅСЊРѕРЅРµ РµСЃС‚СЊ С‚РµР»РµРїРѕСЂС‚. РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» РµРіРѕ."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
 			if (MIS_KrokoJagd == LOG_SUCCESS)
 			&& (SCUsed_ADW_TELEPORTSTATION_PIRATES_JACKSMONSTER == FALSE)
 			{
-				// Monster, die bei der Jagd mit Alligator Jack stцren
+				// Monster, die bei der Jagd mit Alligator Jack stС†ren
 				Wld_InsertNpc  	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Giant_DesertRat,"ADW_CANYON_PATH_TO_MINE1_05");
@@ -160,7 +160,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			};	
 			SCUsed_ADW_TELEPORTSTATION_RAVENTELEPORT_OUT = TRUE;
 		}
-		else	//immer zurьck zum ADW_ENTRANCE fьr alle anderen Teleportstations
+		else	//immer zurСЊck zum ADW_ENTRANCE fСЊr alle anderen Teleportstations
 		{
 			AI_Teleport	(hero, "ADW_ENTRANCE"); 
 		};

@@ -45,14 +45,14 @@ func int DIA_Ulthar_GREET_Condition ()
 };
 func void DIA_Ulthar_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_00"); //Послушай, новый послушник должен предстать перед Высшим Советом. Да пребудет с тобой Иннос, сын мой.
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_01"); //А каковы задачи Высшего Совета?
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_02"); //Это наш долг - провозглашать волю Инноса. Согласно его воле, мы называем избранных послушников, которые должны пройти Испытание Магией.
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_03"); //Хотя мы ведем уединенный образ жизни, мы следим за событиями в миру, так как церковь Инноса представляет собой высший закон на земле.
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_04"); //Ах, так вам интересно, что происходит в миру...
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_05"); //А что вы думаете об этих драконах, что опустошают Долину Рудников со своей армией, что растет день ото дня?
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_06"); //Я понимаю, что сердце твое горит гневом, но мы должны сначала взвесить твои слова, прежде чем предпринять какие-нибудь шаги.
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_07"); //Если мы позволим себе увлечься и начать действовать поспешно, мы ничего не добьемся. Поэтому выполняй свои задачи, а мы пока обсудим, что можно сделать.
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_00"); //РџРѕСЃР»СѓС€Р°Р№, РЅРѕРІС‹Р№ РїРѕСЃР»СѓС€РЅРёРє РґРѕР»Р¶РµРЅ РїСЂРµРґСЃС‚Р°С‚СЊ РїРµСЂРµРґ Р’С‹СЃС€РёРј РЎРѕРІРµС‚РѕРј. Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РРЅРЅРѕСЃ, СЃС‹РЅ РјРѕР№.
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_01"); //Рђ РєР°РєРѕРІС‹ Р·Р°РґР°С‡Рё Р’С‹СЃС€РµРіРѕ РЎРѕРІРµС‚Р°?
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_02"); //Р­С‚Рѕ РЅР°С€ РґРѕР»Рі - РїСЂРѕРІРѕР·РіР»Р°С€Р°С‚СЊ РІРѕР»СЋ РРЅРЅРѕСЃР°. РЎРѕРіР»Р°СЃРЅРѕ РµРіРѕ РІРѕР»Рµ, РјС‹ РЅР°Р·С‹РІР°РµРј РёР·Р±СЂР°РЅРЅС‹С… РїРѕСЃР»СѓС€РЅРёРєРѕРІ, РєРѕС‚РѕСЂС‹Рµ РґРѕР»Р¶РЅС‹ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РњР°РіРёРµР№.
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_03"); //РҐРѕС‚СЏ РјС‹ РІРµРґРµРј СѓРµРґРёРЅРµРЅРЅС‹Р№ РѕР±СЂР°Р· Р¶РёР·РЅРё, РјС‹ СЃР»РµРґРёРј Р·Р° СЃРѕР±С‹С‚РёСЏРјРё РІ РјРёСЂСѓ, С‚Р°Рє РєР°Рє С†РµСЂРєРѕРІСЊ РРЅРЅРѕСЃР° РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ СЃРѕР±РѕР№ РІС‹СЃС€РёР№ Р·Р°РєРѕРЅ РЅР° Р·РµРјР»Рµ.
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_04"); //РђС…, С‚Р°Рє РІР°Рј РёРЅС‚РµСЂРµСЃРЅРѕ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РІ РјРёСЂСѓ...
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_05"); //Рђ С‡С‚Рѕ РІС‹ РґСѓРјР°РµС‚Рµ РѕР± СЌС‚РёС… РґСЂР°РєРѕРЅР°С…, С‡С‚Рѕ РѕРїСѓСЃС‚РѕС€Р°СЋС‚ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ СЃРѕ СЃРІРѕРµР№ Р°СЂРјРёРµР№, С‡С‚Рѕ СЂР°СЃС‚РµС‚ РґРµРЅСЊ РѕС‚Рѕ РґРЅСЏ?
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_06"); //РЇ РїРѕРЅРёРјР°СЋ, С‡С‚Рѕ СЃРµСЂРґС†Рµ С‚РІРѕРµ РіРѕСЂРёС‚ РіРЅРµРІРѕРј, РЅРѕ РјС‹ РґРѕР»Р¶РЅС‹ СЃРЅР°С‡Р°Р»Р° РІР·РІРµСЃРёС‚СЊ С‚РІРѕРё СЃР»РѕРІР°, РїСЂРµР¶РґРµ С‡РµРј РїСЂРµРґРїСЂРёРЅСЏС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ С€Р°РіРё.
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_07"); //Р•СЃР»Рё РјС‹ РїРѕР·РІРѕР»РёРј СЃРµР±Рµ СѓРІР»РµС‡СЊСЃСЏ Рё РЅР°С‡Р°С‚СЊ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РїРѕСЃРїРµС€РЅРѕ, РјС‹ РЅРёС‡РµРіРѕ РЅРµ РґРѕР±СЊРµРјСЃСЏ. РџРѕСЌС‚РѕРјСѓ РІС‹РїРѕР»РЅСЏР№ СЃРІРѕРё Р·Р°РґР°С‡Рё, Р° РјС‹ РїРѕРєР° РѕР±СЃСѓРґРёРј, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEST
@@ -63,7 +63,7 @@ instance DIA_Ulthar_MAGETEST		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Ulthar_MAGETEST_Condition;
 	information	 = 	DIA_Ulthar_MAGETEST_Info;
-	description	 = 	"Расскажи мне об Испытании Магией.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РСЃРїС‹С‚Р°РЅРёРё РњР°РіРёРµР№.";
 };
 func int DIA_Ulthar_MAGETEST_Condition ()
 {	
@@ -74,9 +74,9 @@ func int DIA_Ulthar_MAGETEST_Condition ()
 };
 func void DIA_Ulthar_MAGETEST_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_MAGETEST_15_00"); //Расскажи мне об Испытании Магией.
-	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_01"); //Это шанс для избранного послушника вступить в гильдию магов. Но только один может пройти это испытание.
-	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_02"); //И Иннос один выбирает послушников для него.
+	AI_Output (other, self, "DIA_Ulthar_MAGETEST_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РСЃРїС‹С‚Р°РЅРёРё РњР°РіРёРµР№.
+	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_01"); //Р­С‚Рѕ С€Р°РЅСЃ РґР»СЏ РёР·Р±СЂР°РЅРЅРѕРіРѕ РїРѕСЃР»СѓС€РЅРёРєР° РІСЃС‚СѓРїРёС‚СЊ РІ РіРёР»СЊРґРёСЋ РјР°РіРѕРІ. РќРѕ С‚РѕР»СЊРєРѕ РѕРґРёРЅ РјРѕР¶РµС‚ РїСЂРѕР№С‚Рё СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ.
+	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_02"); //Р РРЅРЅРѕСЃ РѕРґРёРЅ РІС‹Р±РёСЂР°РµС‚ РїРѕСЃР»СѓС€РЅРёРєРѕРІ РґР»СЏ РЅРµРіРѕ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WHEN
@@ -88,7 +88,7 @@ instance DIA_Ulthar_WHEN		(C_INFO)
 	condition	 = 	DIA_Ulthar_WHEN_Condition;
 	information	 = 	DIA_Ulthar_WHEN_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Когда пройдет это испытание?";
+	description	 = 	"РљРѕРіРґР° РїСЂРѕР№РґРµС‚ СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ?";
 };
 func int DIA_Ulthar_WHEN_Condition ()
 {
@@ -100,8 +100,8 @@ func int DIA_Ulthar_WHEN_Condition ()
 };
 func void DIA_Ulthar_WHEN_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_WHEN_15_00"); //Когда пройдет это испытание?
-	AI_Output (self, other, "DIA_Ulthar_WHEN_05_01"); //Как только мы услышим волю Инноса, мы сообщим об этом избранным послушникам и проведем испытание.
+	AI_Output (other, self, "DIA_Ulthar_WHEN_15_00"); //РљРѕРіРґР° РїСЂРѕР№РґРµС‚ СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ?
+	AI_Output (self, other, "DIA_Ulthar_WHEN_05_01"); //РљР°Рє С‚РѕР»СЊРєРѕ РјС‹ СѓСЃР»С‹С€РёРј РІРѕР»СЋ РРЅРЅРѕСЃР°, РјС‹ СЃРѕРѕР±С‰РёРј РѕР± СЌС‚РѕРј РёР·Р±СЂР°РЅРЅС‹Рј РїРѕСЃР»СѓС€РЅРёРєР°Рј Рё РїСЂРѕРІРµРґРµРј РёСЃРїС‹С‚Р°РЅРёРµ.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -114,7 +114,7 @@ instance DIA_Ulthar_TEST		(C_INFO)
 	condition	 = 	DIA_Ulthar_TEST_Condition;
 	information	 = 	DIA_Ulthar_TEST_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Я готов пройти твое испытание, мастер.";
+	description	 = 	"РЇ РіРѕС‚РѕРІ РїСЂРѕР№С‚Рё С‚РІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ, РјР°СЃС‚РµСЂ.";
 };
 func int DIA_Ulthar_TEST_Condition ()
 {	
@@ -125,19 +125,19 @@ func int DIA_Ulthar_TEST_Condition ()
 };
 func void DIA_Ulthar_TEST_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_TEST_15_00"); //Я готов пройти твое испытание, мастер.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_01"); //Я не удивлен, что ты знаешь этот старый закон.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_02"); //Но я подозреваю, что ты не осознаешь, какому риску ты себя подвергаешь. Помни, что нетерпеливый дух не выдержит Испытание Огнем.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_03"); //Уже очень давно никто не подвергался этому испытанию. А пройти его и остаться в живых вообще удалось только одному человеку.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_04"); //Тогда это был молодой и амбициозный послушник, а теперь это давний и постоянный член Высшего Совета - я говорю о Серпентесе.
-	AI_Output (other, self, "DIA_Ulthar_TEST_15_05"); //Недолго ему осталось быть единственным, кто пошел это испытание.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_06"); //Тогда я не буду больше испытывать твое терпение. Вот мое испытание для тебя:
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_07"); //Создай руну 'огненная стрела'. Это все - да поможет тебе Иннос.
+	AI_Output (other, self, "DIA_Ulthar_TEST_15_00"); //РЇ РіРѕС‚РѕРІ РїСЂРѕР№С‚Рё С‚РІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ, РјР°СЃС‚РµСЂ.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_01"); //РЇ РЅРµ СѓРґРёРІР»РµРЅ, С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ СЌС‚РѕС‚ СЃС‚Р°СЂС‹Р№ Р·Р°РєРѕРЅ.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_02"); //РќРѕ СЏ РїРѕРґРѕР·СЂРµРІР°СЋ, С‡С‚Рѕ С‚С‹ РЅРµ РѕСЃРѕР·РЅР°РµС€СЊ, РєР°РєРѕРјСѓ СЂРёСЃРєСѓ С‚С‹ СЃРµР±СЏ РїРѕРґРІРµСЂРіР°РµС€СЊ. РџРѕРјРЅРё, С‡С‚Рѕ РЅРµС‚РµСЂРїРµР»РёРІС‹Р№ РґСѓС… РЅРµ РІС‹РґРµСЂР¶РёС‚ РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_03"); //РЈР¶Рµ РѕС‡РµРЅСЊ РґР°РІРЅРѕ РЅРёРєС‚Рѕ РЅРµ РїРѕРґРІРµСЂРіР°Р»СЃСЏ СЌС‚РѕРјСѓ РёСЃРїС‹С‚Р°РЅРёСЋ. Рђ РїСЂРѕР№С‚Рё РµРіРѕ Рё РѕСЃС‚Р°С‚СЊСЃСЏ РІ Р¶РёРІС‹С… РІРѕРѕР±С‰Рµ СѓРґР°Р»РѕСЃСЊ С‚РѕР»СЊРєРѕ РѕРґРЅРѕРјСѓ С‡РµР»РѕРІРµРєСѓ.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_04"); //РўРѕРіРґР° СЌС‚Рѕ Р±С‹Р» РјРѕР»РѕРґРѕР№ Рё Р°РјР±РёС†РёРѕР·РЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє, Р° С‚РµРїРµСЂСЊ СЌС‚Рѕ РґР°РІРЅРёР№ Рё РїРѕСЃС‚РѕСЏРЅРЅС‹Р№ С‡Р»РµРЅ Р’С‹СЃС€РµРіРѕ РЎРѕРІРµС‚Р° - СЏ РіРѕРІРѕСЂСЋ Рѕ РЎРµСЂРїРµРЅС‚РµСЃРµ.
+	AI_Output (other, self, "DIA_Ulthar_TEST_15_05"); //РќРµРґРѕР»РіРѕ РµРјСѓ РѕСЃС‚Р°Р»РѕСЃСЊ Р±С‹С‚СЊ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Рј, РєС‚Рѕ РїРѕС€РµР» СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_06"); //РўРѕРіРґР° СЏ РЅРµ Р±СѓРґСѓ Р±РѕР»СЊС€Рµ РёСЃРїС‹С‚С‹РІР°С‚СЊ С‚РІРѕРµ С‚РµСЂРїРµРЅРёРµ. Р’РѕС‚ РјРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ РґР»СЏ С‚РµР±СЏ:
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_07"); //РЎРѕР·РґР°Р№ СЂСѓРЅСѓ 'РѕРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°'. Р­С‚Рѕ РІСЃРµ - РґР° РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РРЅРЅРѕСЃ.
 	
 	MIS_RUNE = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_Rune,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Rune,LOG_RUNNING);
-	B_LogEntry (TOPIC_Rune,"Ультар дал мне испытание. Я должен создать руну Огненная стрела.");
+	B_LogEntry (TOPIC_Rune,"РЈР»СЊС‚Р°СЂ РґР°Р» РјРЅРµ РёСЃРїС‹С‚Р°РЅРёРµ. РЇ РґРѕР»Р¶РµРЅ СЃРѕР·РґР°С‚СЊ СЂСѓРЅСѓ РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -164,7 +164,7 @@ func int DIA_Ulthar_RUNNING_Condition ()
 };
 func void DIA_Ulthar_RUNNING_Info ()
 {
-	AI_Output (self, other, "DIA_Ulthar_RUNNING_05_00"); //Ты знаешь свою задачу. Занимайся ей.
+	AI_Output (self, other, "DIA_Ulthar_RUNNING_05_00"); //РўС‹ Р·РЅР°РµС€СЊ СЃРІРѕСЋ Р·Р°РґР°С‡Сѓ. Р—Р°РЅРёРјР°Р№СЃСЏ РµР№.
 	
 	AI_StopProcessInfos (self);
 };
@@ -178,7 +178,7 @@ instance DIA_Ulthar_SUCCESS		(C_INFO)
 	condition	 = 	DIA_Ulthar_SUCCESS_Condition;
 	information	 = 	DIA_Ulthar_SUCCESS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Я создал руну!";
+	description	 = 	"РЇ СЃРѕР·РґР°Р» СЂСѓРЅСѓ!";
 };
 func int DIA_Ulthar_SUCCESS_Condition ()
 {
@@ -190,15 +190,15 @@ func int DIA_Ulthar_SUCCESS_Condition ()
 };
 func void DIA_Ulthar_SUCCESS_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_SUCCESS_15_00"); //Я создал руну!
-	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_01"); //Отлично, послушник. Храни ее - свою первую руну.
-	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_02"); //Когда ты достигнешь первого Круга Огня, ты сможешь использовать ее.
-	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_03"); //Ты прошел это испытание к моему полному удовлетворению.
+	AI_Output (other, self, "DIA_Ulthar_SUCCESS_15_00"); //РЇ СЃРѕР·РґР°Р» СЂСѓРЅСѓ!
+	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_01"); //РћС‚Р»РёС‡РЅРѕ, РїРѕСЃР»СѓС€РЅРёРє. РҐСЂР°РЅРё РµРµ - СЃРІРѕСЋ РїРµСЂРІСѓСЋ СЂСѓРЅСѓ.
+	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_02"); //РљРѕРіРґР° С‚С‹ РґРѕСЃС‚РёРіРЅРµС€СЊ РїРµСЂРІРѕРіРѕ РљСЂСѓРіР° РћРіРЅСЏ, С‚С‹ СЃРјРѕР¶РµС€СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РµРµ.
+	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_03"); //РўС‹ РїСЂРѕС€РµР» СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ Рє РјРѕРµРјСѓ РїРѕР»РЅРѕРјСѓ СѓРґРѕРІР»РµС‚РІРѕСЂРµРЅРёСЋ.
 	
 	if (MIS_GOLEM == LOG_RUNNING)
 	&& ((Npc_IsDead (Magic_Golem)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_04"); //Но опасное испытание, что приготовил Серпентес, еще ожидает тебя!
+		AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_04"); //РќРѕ РѕРїР°СЃРЅРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ, С‡С‚Рѕ РїСЂРёРіРѕС‚РѕРІРёР» РЎРµСЂРїРµРЅС‚РµСЃ, РµС‰Рµ РѕР¶РёРґР°РµС‚ С‚РµР±СЏ!
 	};
 	
 	MIS_RUNE = LOG_SUCCESS;
@@ -248,7 +248,7 @@ instance DIA_Ulthar_PermAbKap3		(C_INFO)
 	condition	 = 	DIA_Ulthar_PermAbKap3_Condition;
 	information	 = 	DIA_Ulthar_PermAbKap3_Info;
 	permanent	 = 	TRUE;
-	description  =  "Есть новости?";
+	description  =  "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };
 func int DIA_Ulthar_PermAbKap3_Condition ()
 {	
@@ -260,15 +260,15 @@ func int DIA_Ulthar_PermAbKap3_Condition ()
 };
 func void DIA_Ulthar_PermAbKap3_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_PermAbKap3_15_00"); //Есть новости?
+	AI_Output (other, self, "DIA_Ulthar_PermAbKap3_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_01"); //Пока нет. Иди и занимайся своими задачами. Тебе еще многое нужно сделать.
+		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_01"); //РџРѕРєР° РЅРµС‚. РРґРё Рё Р·Р°РЅРёРјР°Р№СЃСЏ СЃРІРѕРёРјРё Р·Р°РґР°С‡Р°РјРё. РўРµР±Рµ РµС‰Рµ РјРЅРѕРіРѕРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_02"); //Нет. Ничего такого, чего бы ты еще не знал, брат.
+		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_02"); //РќРµС‚. РќРёС‡РµРіРѕ С‚Р°РєРѕРіРѕ, С‡РµРіРѕ Р±С‹ С‚С‹ РµС‰Рµ РЅРµ Р·РЅР°Р», Р±СЂР°С‚.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -297,43 +297,43 @@ func void DIA_Ulthar_SCHREINEVERGIFTET_Info ()
 {
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_00"); //Еще одно. Некоторые придорожные алтари, посвященные Инносу, были осквернены врагом. Они потеряли свои магические свойства.
-			AI_Output			(other, self, "DIA_Ulthar_SCHREINEVERGIFTET_15_01"); //Понимаю, и что теперь?
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_02"); //Ты должен очистить эти алтари, чтобы ситуация не усугубилась.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_00"); //Р•С‰Рµ РѕРґРЅРѕ. РќРµРєРѕС‚РѕСЂС‹Рµ РїСЂРёРґРѕСЂРѕР¶РЅС‹Рµ Р°Р»С‚Р°СЂРё, РїРѕСЃРІСЏС‰РµРЅРЅС‹Рµ РРЅРЅРѕСЃСѓ, Р±С‹Р»Рё РѕСЃРєРІРµСЂРЅРµРЅС‹ РІСЂР°РіРѕРј. РћРЅРё РїРѕС‚РµСЂСЏР»Рё СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРІРѕР№СЃС‚РІР°.
+			AI_Output			(other, self, "DIA_Ulthar_SCHREINEVERGIFTET_15_01"); //РџРѕРЅРёРјР°СЋ, Рё С‡С‚Рѕ С‚РµРїРµСЂСЊ?
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_02"); //РўС‹ РґРѕР»Р¶РµРЅ РѕС‡РёСЃС‚РёС‚СЊ СЌС‚Рё Р°Р»С‚Р°СЂРё, С‡С‚РѕР±С‹ СЃРёС‚СѓР°С†РёСЏ РЅРµ СѓСЃСѓРіСѓР±РёР»Р°СЃСЊ.
 			CreateInvItems (self, ItMi_UltharsHolyWater_Mis, 1);									
 			B_GiveInvItems (self, other, ItMi_UltharsHolyWater_Mis, 1);	
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_03"); //Возьми эту святую воду и окропи ей основания алтаря.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_04"); //Со святыми словами очищения к алтарю вернется его былая сила.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_03"); //Р’РѕР·СЊРјРё СЌС‚Сѓ СЃРІСЏС‚СѓСЋ РІРѕРґСѓ Рё РѕРєСЂРѕРїРё РµР№ РѕСЃРЅРѕРІР°РЅРёСЏ Р°Р»С‚Р°СЂСЏ.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_04"); //РЎРѕ СЃРІСЏС‚С‹РјРё СЃР»РѕРІР°РјРё РѕС‡РёС‰РµРЅРёСЏ Рє Р°Р»С‚Р°СЂСЋ РІРµСЂРЅРµС‚СЃСЏ РµРіРѕ Р±С‹Р»Р°СЏ СЃРёР»Р°.
 
 			if ((Npc_HasItems (other,ItWr_Map_Shrine_MIS))==FALSE)
 			{
 				if ((Npc_HasItems (Gorax,ItWr_Map_Shrine_MIS)))
 				&& ((Npc_IsDead(Gorax))== FALSE)
 				{
-					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_05"); //Горакс может продать тебе карту, на которой помечены наши алтари.
+					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_05"); //Р“РѕСЂР°РєСЃ РјРѕР¶РµС‚ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ РєР°СЂС‚Сѓ, РЅР° РєРѕС‚РѕСЂРѕР№ РїРѕРјРµС‡РµРЅС‹ РЅР°С€Рё Р°Р»С‚Р°СЂРё.
 				}
 				else
 				{
-					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_06"); //Вот карта. На ней отмечены алтари, построенные нами.
+					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_06"); //Р’РѕС‚ РєР°СЂС‚Р°. РќР° РЅРµР№ РѕС‚РјРµС‡РµРЅС‹ Р°Р»С‚Р°СЂРё, РїРѕСЃС‚СЂРѕРµРЅРЅС‹Рµ РЅР°РјРё.
 					CreateInvItems (self, ItWr_Map_Shrine_MIS, 1);									
 					B_GiveInvItems (self, other, ItWr_Map_Shrine_MIS, 1);					
 				};
 			};
 
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_07"); //Теперь иди и выполняй свои поручения.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_07"); //РўРµРїРµСЂСЊ РёРґРё Рё РІС‹РїРѕР»РЅСЏР№ СЃРІРѕРё РїРѕСЂСѓС‡РµРЅРёСЏ.
 			MIS_Ulthar_HeileSchreine_PAL = LOG_RUNNING;	
 			
 			Log_CreateTopic (TOPIC_Ulthar_HeileSchreine_PAL, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Ulthar_HeileSchreine_PAL, LOG_RUNNING);
-			B_LogEntry (TOPIC_Ulthar_HeileSchreine_PAL,"Ультар дал мне задание очистить при помощи святой воды все алтари, оскверненные врагом."); 
+			B_LogEntry (TOPIC_Ulthar_HeileSchreine_PAL,"РЈР»СЊС‚Р°СЂ РґР°Р» РјРЅРµ Р·Р°РґР°РЅРёРµ РѕС‡РёСЃС‚РёС‚СЊ РїСЂРё РїРѕРјРѕС‰Рё СЃРІСЏС‚РѕР№ РІРѕРґС‹ РІСЃРµ Р°Р»С‚Р°СЂРё, РѕСЃРєРІРµСЂРЅРµРЅРЅС‹Рµ РІСЂР°РіРѕРј."); 
 			
 			AI_StopProcessInfos (self);
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_08"); //Еще одно. Держись подальше от придорожных алтарей. Мы слышали, что некоторые из них были осквернены.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_09"); //Никто не знает, как теперь они действуют.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_10"); //Тебя не должна волновать эта проблема. О ней позаботятся паладины.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_08"); //Р•С‰Рµ РѕРґРЅРѕ. Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РїСЂРёРґРѕСЂРѕР¶РЅС‹С… Р°Р»С‚Р°СЂРµР№. РњС‹ СЃР»С‹С€Р°Р»Рё, С‡С‚Рѕ РЅРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅРёС… Р±С‹Р»Рё РѕСЃРєРІРµСЂРЅРµРЅС‹.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_09"); //РќРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚, РєР°Рє С‚РµРїРµСЂСЊ РѕРЅРё РґРµР№СЃС‚РІСѓСЋС‚.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_10"); //РўРµР±СЏ РЅРµ РґРѕР»Р¶РЅР° РІРѕР»РЅРѕРІР°С‚СЊ СЌС‚Р° РїСЂРѕР±Р»РµРјР°. Рћ РЅРµР№ РїРѕР·Р°Р±РѕС‚СЏС‚СЃСЏ РїР°Р»Р°РґРёРЅС‹.
 			AI_StopProcessInfos (self);
 		};
 };
@@ -348,7 +348,7 @@ instance DIA_Ulthar_SchreineGeheilt		(C_INFO)
 	condition	 = 	DIA_Ulthar_SchreineGeheilt_Condition;
 	information	 = 	DIA_Ulthar_SchreineGeheilt_Info;
 
-	description  = 	"Я очистил все алтари.";
+	description  = 	"РЇ РѕС‡РёСЃС‚РёР» РІСЃРµ Р°Р»С‚Р°СЂРё.";
 };
 
 func int DIA_Ulthar_SchreineGeheilt_Condition ()
@@ -361,9 +361,9 @@ func int DIA_Ulthar_SchreineGeheilt_Condition ()
 
 func void DIA_Ulthar_SchreineGeheilt_Info ()
 {
-	AI_Output			(other, self, "DIA_Ulthar_SchreineGeheilt_15_00"); //Я очистил все алтари.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_01"); //Превосходно, сын мой. Я горжусь тобой. Да не оставит тебя внимание Инноса.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_02"); //Возьми этот Амулет силы, он может пригодиться тебе в твоих сражениях с врагом.
+	AI_Output			(other, self, "DIA_Ulthar_SchreineGeheilt_15_00"); //РЇ РѕС‡РёСЃС‚РёР» РІСЃРµ Р°Р»С‚Р°СЂРё.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_01"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ, СЃС‹РЅ РјРѕР№. РЇ РіРѕСЂР¶СѓСЃСЊ С‚РѕР±РѕР№. Р”Р° РЅРµ РѕСЃС‚Р°РІРёС‚ С‚РµР±СЏ РІРЅРёРјР°РЅРёРµ РРЅРЅРѕСЃР°.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_02"); //Р’РѕР·СЊРјРё СЌС‚РѕС‚ РђРјСѓР»РµС‚ СЃРёР»С‹, РѕРЅ РјРѕР¶РµС‚ РїСЂРёРіРѕРґРёС‚СЊСЃСЏ С‚РµР±Рµ РІ С‚РІРѕРёС… СЃСЂР°Р¶РµРЅРёСЏС… СЃ РІСЂР°РіРѕРј.
 	CreateInvItems (self, ItAm_Dex_Strg_01, 1);									
 	B_GiveInvItems (self, other, ItAm_Dex_Strg_01, 1);
 	B_GivePlayerXP (XP_Ulthar_SchreineGereinigt);
@@ -430,8 +430,8 @@ func int DIA_Ulthar_SchreineGeheiltNoPAL_Condition ()
 
 func void DIA_Ulthar_SchreineGeheiltNoPAL_Info ()
 {
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_00"); //Хорошие новости. Придорожные алтари очищены. Сила Инноса помогла паладинам снять эту проблему.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_01"); //Ты опять можешь приносить дары Инносу без каких либо оговорок или ограничений.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_00"); //РҐРѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё. РџСЂРёРґРѕСЂРѕР¶РЅС‹Рµ Р°Р»С‚Р°СЂРё РѕС‡РёС‰РµРЅС‹. РЎРёР»Р° РРЅРЅРѕСЃР° РїРѕРјРѕРіР»Р° РїР°Р»Р°РґРёРЅР°Рј СЃРЅСЏС‚СЊ СЌС‚Сѓ РїСЂРѕР±Р»РµРјСѓ.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_01"); //РўС‹ РѕРїСЏС‚СЊ РјРѕР¶РµС€СЊ РїСЂРёРЅРѕСЃРёС‚СЊ РґР°СЂС‹ РРЅРЅРѕСЃСѓ Р±РµР· РєР°РєРёС… Р»РёР±Рѕ РѕРіРѕРІРѕСЂРѕРє РёР»Рё РѕРіСЂР°РЅРёС‡РµРЅРёР№.
 	AI_StopProcessInfos (self);
 };
 

@@ -7,7 +7,7 @@
 INSTANCE PC_Thief_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Диего";
+	name 		= "Р”РёРµРіРѕ";
 	guild 		= GIL_NONE;
 	id 			= 21;
 	voice 		= 11;

@@ -13,7 +13,7 @@ func void B_MoveMob ()
 			Npc_ClearAIQueue (self);
 		
 			AI_UseMob (self, door, 1);
-			AI_UseMob (self, door, -1);		//NSC muss sich am Mobsi abmelden, da sonst die Tür wieder zu geht!
+			AI_UseMob (self, door, -1);		//NSC muss sich am Mobsi abmelden, da sonst die TÑŒr wieder zu geht!
 		};
 	}
 	else

@@ -8,11 +8,11 @@
 instance SLD_801_Torlof_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Òîðëîô";
+	name 		= "Ð¢Ð¾Ñ€Ð»Ð¾Ñ„";
 	guild 		= GIL_SLD;
 	id 			= 8010;
 	voice 		= 1;
-	flags       = NPC_FLAG_IMMORTAL;	//Joly:letzter NSC, der stehen bleiben muß -> Letzter Dialog!!				//NPC_FLAG_IMMORTAL oder 0
+	flags       = NPC_FLAG_IMMORTAL;	//Joly:letzter NSC, der stehen bleiben muÐ¯ -> Letzter Dialog!!				//NPC_FLAG_IMMORTAL oder 0
 	npctype		= NPCTYPE_MAIN;
 
 	// ------ aivar ------
@@ -42,8 +42,8 @@ instance SLD_801_Torlof_DI (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 40); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 40); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_8010;

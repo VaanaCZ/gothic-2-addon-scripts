@@ -79,10 +79,10 @@ func int DIA_Halvor_Hallo_Condition ()
 };
 func void DIA_Halvor_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Halvor_Hallo_06_00"); //Эй, тебе нужна рыба? У меня очень хорошая рыба - с самых глубин моря!
+	AI_Output (self, other, "DIA_Halvor_Hallo_06_00"); //Р­Р№, С‚РµР±Рµ РЅСѓР¶РЅР° СЂС‹Р±Р°? РЈ РјРµРЅСЏ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Р°СЏ СЂС‹Р±Р° - СЃ СЃР°РјС‹С… РіР»СѓР±РёРЅ РјРѕСЂСЏ!
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Халвор торгует рыбой в гавани.");
+	B_LogEntry (Topic_CityTrader,"РҐР°Р»РІРѕСЂ С‚РѕСЂРіСѓРµС‚ СЂС‹Р±РѕР№ РІ РіР°РІР°РЅРё.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRADE
@@ -95,7 +95,7 @@ instance DIA_Halvor_TRADE		(C_INFO)
 	information	 = 	DIA_Halvor_TRADE_Info;
 	permanent	 =  TRUE;
 	trade		 =  TRUE;
-	description	 = 	"Покажи мне свою рыбу.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕСЋ СЂС‹Р±Сѓ.";
 };
 
 func int DIA_Halvor_TRADE_Condition ()
@@ -110,7 +110,7 @@ func int DIA_Halvor_TRADE_Condition ()
 func void DIA_Halvor_TRADE_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Halvor_TRADE_15_00"); //Покажи мне свою рыбу.
+	AI_Output (other, self, "DIA_Halvor_TRADE_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕСЋ СЂС‹Р±Сѓ.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -136,7 +136,7 @@ func int DIA_Halvor_Night_Condition ()
 };
 func void DIA_Halvor_Night_Info ()
 {
-	AI_Output (self, other, "DIA_Halvor_Night_06_00"); //Эй, если ты хочешь купить рыбу, заходи ко мне завтра. Хорошо?
+	AI_Output (self, other, "DIA_Halvor_Night_06_00"); //Р­Р№, РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РєСѓРїРёС‚СЊ СЂС‹Р±Сѓ, Р·Р°С…РѕРґРё РєРѕ РјРЅРµ Р·Р°РІС‚СЂР°. РҐРѕСЂРѕС€Рѕ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -149,7 +149,7 @@ instance DIA_Addon_Halvor_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Halvor_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Halvor_MissingPeople_Info;
 
-	description	 = 	"Ты знаешь что-нибудь о пропавших людях?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…?";
 };
 
 func int DIA_Addon_Halvor_MissingPeople_Condition ()
@@ -164,17 +164,17 @@ func int DIA_Addon_Halvor_MissingPeople_Condition ()
 
 func void DIA_Addon_Halvor_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Halvor_MissingPeople_15_00"); //Ты знаешь что-нибудь о пропавших людях?
-	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_01"); //Пропавших людях? Это порт, приятель. Такие события здесь не в диковинку.
-	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_02"); //Море жестоко. Оно нередко забирает человеческие жизни.
-	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_03"); //В крупных портах, таких как Хоринис, капитаны больших кораблей набирают матросов для пополнения команды.
-	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_04"); //А если они не находят добровольцев, людей могут затащить на корабль и против их воли. Так они и исчезают.
+	AI_Output	(other, self, "DIA_Addon_Halvor_MissingPeople_15_00"); //РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…?
+	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_01"); //РџСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…? Р­С‚Рѕ РїРѕСЂС‚, РїСЂРёСЏС‚РµР»СЊ. РўР°РєРёРµ СЃРѕР±С‹С‚РёСЏ Р·РґРµСЃСЊ РЅРµ РІ РґРёРєРѕРІРёРЅРєСѓ.
+	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_02"); //РњРѕСЂРµ Р¶РµСЃС‚РѕРєРѕ. РћРЅРѕ РЅРµСЂРµРґРєРѕ Р·Р°Р±РёСЂР°РµС‚ С‡РµР»РѕРІРµС‡РµСЃРєРёРµ Р¶РёР·РЅРё.
+	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_03"); //Р’ РєСЂСѓРїРЅС‹С… РїРѕСЂС‚Р°С…, С‚Р°РєРёС… РєР°Рє РҐРѕСЂРёРЅРёСЃ, РєР°РїРёС‚Р°РЅС‹ Р±РѕР»СЊС€РёС… РєРѕСЂР°Р±Р»РµР№ РЅР°Р±РёСЂР°СЋС‚ РјР°С‚СЂРѕСЃРѕРІ РґР»СЏ РїРѕРїРѕР»РЅРµРЅРёСЏ РєРѕРјР°РЅРґС‹.
+	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_04"); //Рђ РµСЃР»Рё РѕРЅРё РЅРµ РЅР°С…РѕРґСЏС‚ РґРѕР±СЂРѕРІРѕР»СЊС†РµРІ, Р»СЋРґРµР№ РјРѕРіСѓС‚ Р·Р°С‚Р°С‰РёС‚СЊ РЅР° РєРѕСЂР°Р±Р»СЊ Рё РїСЂРѕС‚РёРІ РёС… РІРѕР»Рё. РўР°Рє РѕРЅРё Рё РёСЃС‡РµР·Р°СЋС‚.
 	
 	Info_ClearChoices	(DIA_Addon_Halvor_MissingPeople);
 	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, DIALOG_BACK, DIA_Addon_Halvor_MissingPeople_Back );
-	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "Но что это мог быть за корабль?", DIA_Addon_Halvor_MissingPeople_schiff );
-	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "Ты знаешь кого-нибудь, кто пропал?", DIA_Addon_Halvor_MissingPeople_wer );
-	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "А у тебя кто-нибудь пропал?", DIA_Addon_Halvor_MissingPeople_you );
+	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "РќРѕ С‡С‚Рѕ СЌС‚Рѕ РјРѕРі Р±С‹С‚СЊ Р·Р° РєРѕСЂР°Р±Р»СЊ?", DIA_Addon_Halvor_MissingPeople_schiff );
+	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "РўС‹ Р·РЅР°РµС€СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ РїСЂРѕРїР°Р»?", DIA_Addon_Halvor_MissingPeople_wer );
+	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "Рђ Сѓ С‚РµР±СЏ РєС‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРїР°Р»?", DIA_Addon_Halvor_MissingPeople_you );
 };
 func void DIA_Addon_Halvor_MissingPeople_Back ()
 {
@@ -182,22 +182,22 @@ func void DIA_Addon_Halvor_MissingPeople_Back ()
 };
 func void DIA_Addon_Halvor_MissingPeople_wer ()
 {
-	AI_Output			(other, self, "DIA_Addon_Halvor_MissingPeople_wer_15_00"); //Ты знаешь кого-нибудь, кто пропал?
-	AI_Output			(self, other, "DIA_Addon_Halvor_MissingPeople_wer_06_01"); //Нет. Попробуй спросить у корабельщиков.
+	AI_Output			(other, self, "DIA_Addon_Halvor_MissingPeople_wer_15_00"); //РўС‹ Р·РЅР°РµС€СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ РїСЂРѕРїР°Р»?
+	AI_Output			(self, other, "DIA_Addon_Halvor_MissingPeople_wer_06_01"); //РќРµС‚. РџРѕРїСЂРѕР±СѓР№ СЃРїСЂРѕСЃРёС‚СЊ Сѓ РєРѕСЂР°Р±РµР»СЊС‰РёРєРѕРІ.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Единственное, что смог мне посоветовать торговец рыбой Халвор - это обратиться к кораблестроителям."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ СЃРјРѕРі РјРЅРµ РїРѕСЃРѕРІРµС‚РѕРІР°С‚СЊ С‚РѕСЂРіРѕРІРµС† СЂС‹Р±РѕР№ РҐР°Р»РІРѕСЂ - СЌС‚Рѕ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє РєРѕСЂР°Р±Р»РµСЃС‚СЂРѕРёС‚РµР»СЏРј."); 
 };
 func void DIA_Addon_Halvor_MissingPeople_schiff ()
 {
-	AI_Output			(other, self, "DIA_Addon_Halvor_MissingPeople_schiff_15_00"); //Но что это мог быть за корабль?
-	AI_Output			(self, other, "DIA_Addon_Halvor_MissingPeople_schiff_06_01"); //Хороший вопрос. Ты прав, в последнее время корабли в Хоринис не заходят.
+	AI_Output			(other, self, "DIA_Addon_Halvor_MissingPeople_schiff_15_00"); //РќРѕ С‡С‚Рѕ СЌС‚Рѕ РјРѕРі Р±С‹С‚СЊ Р·Р° РєРѕСЂР°Р±Р»СЊ?
+	AI_Output			(self, other, "DIA_Addon_Halvor_MissingPeople_schiff_06_01"); //РҐРѕСЂРѕС€РёР№ РІРѕРїСЂРѕСЃ. РўС‹ РїСЂР°РІ, РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РєРѕСЂР°Р±Р»Рё РІ РҐРѕСЂРёРЅРёСЃ РЅРµ Р·Р°С…РѕРґСЏС‚.
 };
 func void DIA_Addon_Halvor_MissingPeople_you ()
 {
-	AI_Output			(other, self, "DIA_Addon_Halvor_MissingPeople_you_15_00"); //А у тебя кто-нибудь пропал?
-	AI_Output			(self, other, "DIA_Addon_Halvor_MissingPeople_you_06_01"); //У меня? Нет.
+	AI_Output			(other, self, "DIA_Addon_Halvor_MissingPeople_you_15_00"); //Рђ Сѓ С‚РµР±СЏ РєС‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРїР°Р»?
+	AI_Output			(self, other, "DIA_Addon_Halvor_MissingPeople_you_06_01"); //РЈ РјРµРЅСЏ? РќРµС‚.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -210,7 +210,7 @@ instance DIA_Halvor_MESSAGE		(C_INFO)
 	condition	 = 	DIA_Halvor_MESSAGE_Condition;
 	information	 = 	DIA_Halvor_MESSAGE_Info;
 	permanent    =  FALSE;
-	description	 = 	"Я думаю, этот клочок бумаги имеет отношение к тебе...";
+	description	 = 	"РЇ РґСѓРјР°СЋ, СЌС‚РѕС‚ РєР»РѕС‡РѕРє Р±СѓРјР°РіРё РёРјРµРµС‚ РѕС‚РЅРѕС€РµРЅРёРµ Рє С‚РµР±Рµ...";
 	trade		 =  FALSE;
 };
 
@@ -223,34 +223,34 @@ func int DIA_Halvor_MESSAGE_Condition ()
 };
 func void DIA_Halvor_MESSAGE_Info ()
 {
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_15_00"); //Я думаю, этот клочок бумаги имеет отношение к тебе...
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_01"); //Что?.. Дай посмотрю.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_15_00"); //РЇ РґСѓРјР°СЋ, СЌС‚РѕС‚ РєР»РѕС‡РѕРє Р±СѓРјР°РіРё РёРјРµРµС‚ РѕС‚РЅРѕС€РµРЅРёРµ Рє С‚РµР±Рµ...
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_01"); //Р§С‚Рѕ?.. Р”Р°Р№ РїРѕСЃРјРѕС‚СЂСЋ.
 	B_UseFakeScroll 	();
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_02"); //(в испарине) Э-э... Хорошо, давай поговорим спокойно об этом - э-э... послушай. Я перепродал товары, полученные от бандитов.
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_03"); //(торопливо) Но нет необходимости сообщать об этом ополчению, правда? Я уверен, мы можем прийти к взаимопониманию, разве нет?
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_02"); //(РІ РёСЃРїР°СЂРёРЅРµ) Р­-СЌ... РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РїРѕРіРѕРІРѕСЂРёРј СЃРїРѕРєРѕР№РЅРѕ РѕР± СЌС‚РѕРј - СЌ-СЌ... РїРѕСЃР»СѓС€Р°Р№. РЇ РїРµСЂРµРїСЂРѕРґР°Р» С‚РѕРІР°СЂС‹, РїРѕР»СѓС‡РµРЅРЅС‹Рµ РѕС‚ Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_03"); //(С‚РѕСЂРѕРїР»РёРІРѕ) РќРѕ РЅРµС‚ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё СЃРѕРѕР±С‰Р°С‚СЊ РѕР± СЌС‚РѕРј РѕРїРѕР»С‡РµРЅРёСЋ, РїСЂР°РІРґР°? РЇ СѓРІРµСЂРµРЅ, РјС‹ РјРѕР¶РµРј РїСЂРёР№С‚Рё Рє РІР·Р°РёРјРѕРїРѕРЅРёРјР°РЅРёСЋ, СЂР°Р·РІРµ РЅРµС‚?
 	
 	Info_ClearChoices (DIA_Halvor_MESSAGE);
-	Info_AddChoice    (DIA_Halvor_MESSAGE,"Ну, попробуй сделать мне предложение.",DIA_Halvor_MESSAGE_OFFER);
-	Info_AddChoice    (DIA_Halvor_MESSAGE,"Похоже, тебе светит тюрьма.",DIA_Halvor_MESSAGE_PRISON);
+	Info_AddChoice    (DIA_Halvor_MESSAGE,"РќСѓ, РїРѕРїСЂРѕР±СѓР№ СЃРґРµР»Р°С‚СЊ РјРЅРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ.",DIA_Halvor_MESSAGE_OFFER);
+	Info_AddChoice    (DIA_Halvor_MESSAGE,"РџРѕС…РѕР¶Рµ, С‚РµР±Рµ СЃРІРµС‚РёС‚ С‚СЋСЂСЊРјР°.",DIA_Halvor_MESSAGE_PRISON);
 
 };
 FUNC VOID DIA_Halvor_MESSAGE_OFFER()
 {
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_OFFER_15_00"); //Ну, попробуй сделать мне предложение.
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_01"); //Хорошо. Послушай меня. Я могу продать тебе не только рыбу.
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_03"); //Если ты отдашь мне этот клочок бумаги, э-э... и забудешь об этом, ты и я можем стать отличными торговыми партнерами.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_OFFER_15_00"); //РќСѓ, РїРѕРїСЂРѕР±СѓР№ СЃРґРµР»Р°С‚СЊ РјРЅРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ.
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_01"); //РҐРѕСЂРѕС€Рѕ. РџРѕСЃР»СѓС€Р°Р№ РјРµРЅСЏ. РЇ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ РЅРµ С‚РѕР»СЊРєРѕ СЂС‹Р±Сѓ.
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_03"); //Р•СЃР»Рё С‚С‹ РѕС‚РґР°С€СЊ РјРЅРµ СЌС‚РѕС‚ РєР»РѕС‡РѕРє Р±СѓРјР°РіРё, СЌ-СЌ... Рё Р·Р°Р±СѓРґРµС€СЊ РѕР± СЌС‚РѕРј, С‚С‹ Рё СЏ РјРѕР¶РµРј СЃС‚Р°С‚СЊ РѕС‚Р»РёС‡РЅС‹РјРё С‚РѕСЂРіРѕРІС‹РјРё РїР°СЂС‚РЅРµСЂР°РјРё.
 	
 	Info_ClearChoices (DIA_Halvor_MESSAGE);
-	Info_AddChoice    (DIA_Halvor_MESSAGE,"Хорошо, договорились.",DIA_Halvor_MESSAGE_Okay);
-	Info_AddChoice    (DIA_Halvor_MESSAGE,"Похоже, тебе светит тюрьма.",DIA_Halvor_MESSAGE_PRISON);
-	Info_AddChoice    (DIA_Halvor_MESSAGE,"Да ну?! И что это за товары?",DIA_Halvor_MESSAGE_DEAL);
+	Info_AddChoice    (DIA_Halvor_MESSAGE,"РҐРѕСЂРѕС€Рѕ, РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ.",DIA_Halvor_MESSAGE_Okay);
+	Info_AddChoice    (DIA_Halvor_MESSAGE,"РџРѕС…РѕР¶Рµ, С‚РµР±Рµ СЃРІРµС‚РёС‚ С‚СЋСЂСЊРјР°.",DIA_Halvor_MESSAGE_PRISON);
+	Info_AddChoice    (DIA_Halvor_MESSAGE,"Р”Р° РЅСѓ?! Р С‡С‚Рѕ СЌС‚Рѕ Р·Р° С‚РѕРІР°СЂС‹?",DIA_Halvor_MESSAGE_DEAL);
 };	
 FUNC VOID DIA_Halvor_MESSAGE_PRISON()
 {
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_PRISON_15_00"); //Похоже, тебе светит тюрьма.
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_PRISON_06_01"); //Нет, подожди, ты е можешь поступить так! Ведь я... я... ты же понимаешь... я мелкая рыбешка.
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_PRISON_15_02"); //Тебе стоило подумать об этом раньше. А теперь я собираюсь сообщить о тебе лорду Андрэ.
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_PRISON_06_03"); //Ты пожалеешь об этом.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_PRISON_15_00"); //РџРѕС…РѕР¶Рµ, С‚РµР±Рµ СЃРІРµС‚РёС‚ С‚СЋСЂСЊРјР°.
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_PRISON_06_01"); //РќРµС‚, РїРѕРґРѕР¶РґРё, С‚С‹ Рµ РјРѕР¶РµС€СЊ РїРѕСЃС‚СѓРїРёС‚СЊ С‚Р°Рє! Р’РµРґСЊ СЏ... СЏ... С‚С‹ Р¶Рµ РїРѕРЅРёРјР°РµС€СЊ... СЏ РјРµР»РєР°СЏ СЂС‹Р±РµС€РєР°.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_PRISON_15_02"); //РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕРґСѓРјР°С‚СЊ РѕР± СЌС‚РѕРј СЂР°РЅСЊС€Рµ. Рђ С‚РµРїРµСЂСЊ СЏ СЃРѕР±РёСЂР°СЋСЃСЊ СЃРѕРѕР±С‰РёС‚СЊ Рѕ С‚РµР±Рµ Р»РѕСЂРґСѓ РђРЅРґСЂСЌ.
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_PRISON_06_03"); //РўС‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	
 	Betrayal_Halvor = TRUE;
 	
@@ -258,16 +258,16 @@ FUNC VOID DIA_Halvor_MESSAGE_PRISON()
 };
 FUNC VOID DIA_Halvor_MESSAGE_DEAL()
 {
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_DEAL_15_00"); //Да ну?! И что это за товары?
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_DEAL_06_01"); //Ну, я мог бы предложить тебе... особенную рыбу, понимаешь? Не простую рыбешку, которая годится только для еды.
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_DEAL_15_02"); //Ты имеешь в виду что-то вроде рыбы, содержащей твое тайное послание?
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_DEAL_06_03"); //Ты все правильно понимаешь. У меня есть несколько таких... рыб.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_DEAL_15_00"); //Р”Р° РЅСѓ?! Р С‡С‚Рѕ СЌС‚Рѕ Р·Р° С‚РѕРІР°СЂС‹?
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_DEAL_06_01"); //РќСѓ, СЏ РјРѕРі Р±С‹ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ... РѕСЃРѕР±РµРЅРЅСѓСЋ СЂС‹Р±Сѓ, РїРѕРЅРёРјР°РµС€СЊ? РќРµ РїСЂРѕСЃС‚СѓСЋ СЂС‹Р±РµС€РєСѓ, РєРѕС‚РѕСЂР°СЏ РіРѕРґРёС‚СЃСЏ С‚РѕР»СЊРєРѕ РґР»СЏ РµРґС‹.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_DEAL_15_02"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ С‡С‚Рѕ-С‚Рѕ РІСЂРѕРґРµ СЂС‹Р±С‹, СЃРѕРґРµСЂР¶Р°С‰РµР№ С‚РІРѕРµ С‚Р°Р№РЅРѕРµ РїРѕСЃР»Р°РЅРёРµ?
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_DEAL_06_03"); //РўС‹ РІСЃРµ РїСЂР°РІРёР»СЊРЅРѕ РїРѕРЅРёРјР°РµС€СЊ. РЈ РјРµРЅСЏ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ С‚Р°РєРёС…... СЂС‹Р±.
 	
 };
 FUNC VOID DIA_Halvor_MESSAGE_Okay()
 {
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_Okay_15_00"); //Хорошо, договорились. Я думаю, мы сохраним все это в тайне.
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_Okay_06_01"); //Спасибо. Заходи, когда опять будешь неподалеку. Я приготовлю очень интересные вещички для тебя.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_Okay_15_00"); //РҐРѕСЂРѕС€Рѕ, РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ. РЇ РґСѓРјР°СЋ, РјС‹ СЃРѕС…СЂР°РЅРёРј РІСЃРµ СЌС‚Рѕ РІ С‚Р°Р№РЅРµ.
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_Okay_06_01"); //РЎРїР°СЃРёР±Рѕ. Р—Р°С…РѕРґРё, РєРѕРіРґР° РѕРїСЏС‚СЊ Р±СѓРґРµС€СЊ РЅРµРїРѕРґР°Р»РµРєСѓ. РЇ РїСЂРёРіРѕС‚РѕРІР»СЋ РѕС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅС‹Рµ РІРµС‰РёС‡РєРё РґР»СЏ С‚РµР±СЏ.
 	
 	B_GiveInvItems 	   (other, self, ItWr_HalvorMessage,1);
 	Npc_RemoveInvItems (self, ItWr_HalvorMessage,1);
@@ -293,7 +293,7 @@ INSTANCE DIA_Halvor_Zeichen   (C_INFO)
 	condition   = DIA_Halvor_Zeichen_Condition;
 	information = DIA_Halvor_Zeichen_Info;
 	permanent   = FALSE;
-	description = "(Показать сигнал воров)";
+	description = "(РџРѕРєР°Р·Р°С‚СЊ СЃРёРіРЅР°Р» РІРѕСЂРѕРІ)";
 };
 
 FUNC INT DIA_Halvor_Zeichen_Condition()
@@ -307,13 +307,13 @@ FUNC INT DIA_Halvor_Zeichen_Condition()
 FUNC VOID DIA_Halvor_Zeichen_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other, "DIA_Halvor_Zeichen_06_00");//Понимаю. Ты пришел не просто купить рыбу.
-	AI_Output (self, other, "DIA_Halvor_Zeichen_06_01");//(тихо) Я готов сделать тебе предложение. Если у тебя есть серебряные тарелки или чаши, я возьму их по хорошей цене.
+	AI_Output (self, other, "DIA_Halvor_Zeichen_06_00");//РџРѕРЅРёРјР°СЋ. РўС‹ РїСЂРёС€РµР» РЅРµ РїСЂРѕСЃС‚Рѕ РєСѓРїРёС‚СЊ СЂС‹Р±Сѓ.
+	AI_Output (self, other, "DIA_Halvor_Zeichen_06_01");//(С‚РёС…Рѕ) РЇ РіРѕС‚РѕРІ СЃРґРµР»Р°С‚СЊ С‚РµР±Рµ РїСЂРµРґР»РѕР¶РµРЅРёРµ. Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ СЃРµСЂРµР±СЂСЏРЅС‹Рµ С‚Р°СЂРµР»РєРё РёР»Рё С‡Р°С€Рё, СЏ РІРѕР·СЊРјСѓ РёС… РїРѕ С…РѕСЂРѕС€РµР№ С†РµРЅРµ.
 	
 	CreateInvItems (self, ItKe_Lockpick, 20);
 	
 	Log_CreateTopic (Topic_Diebesgilde,LOG_NOTE);
-	B_LogEntry (Topic_Diebesgilde,"Халвор купит серебряные тарелки и кубки по очень хорошей цене.");
+	B_LogEntry (Topic_Diebesgilde,"РҐР°Р»РІРѕСЂ РєСѓРїРёС‚ СЃРµСЂРµР±СЂСЏРЅС‹Рµ С‚Р°СЂРµР»РєРё Рё РєСѓР±РєРё РїРѕ РѕС‡РµРЅСЊ С…РѕСЂРѕС€РµР№ С†РµРЅРµ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Diebeszeichen
@@ -325,7 +325,7 @@ INSTANCE DIA_Halvor_Hehlerei   (C_INFO)
 	condition   = DIA_Halvor_Hehlerei_Condition;
 	information = DIA_Halvor_Hehlerei_Info;
 	permanent   = TRUE;
-	description = "(Продать все тарелки и кубки)";
+	description = "(РџСЂРѕРґР°С‚СЊ РІСЃРµ С‚Р°СЂРµР»РєРё Рё РєСѓР±РєРё)";
 };
 
 FUNC INT DIA_Halvor_Hehlerei_Condition()
@@ -350,39 +350,39 @@ FUNC VOID DIA_Halvor_Hehlerei_Info()
 			
 			if (Halvor_Score <=  1000)  //weil sonst kein B_Say_Gold mehr...
 			{
-				AI_Output (self, other, "DIA_Halvor_Zeichen_06_05");//За твои вещички я дам тебе...
+				AI_Output (self, other, "DIA_Halvor_Zeichen_06_05");//Р—Р° С‚РІРѕРё РІРµС‰РёС‡РєРё СЏ РґР°Рј С‚РµР±Рµ...
 				B_Say_Gold (self, other, Halvor_Score);
 			
 				Info_ClearChoices (DIA_Halvor_Hehlerei);
-				Info_AddChoice (DIA_Halvor_Hehlerei,"Хорошо. Продано!",DIA_Halvor_Hehlerei_Annehmen);
-				Info_AddChoice (DIA_Halvor_Hehlerei,"Я подумаю над этим.",DIA_Halvor_Hehlerei_Ablehnen);
+				Info_AddChoice (DIA_Halvor_Hehlerei,"РҐРѕСЂРѕС€Рѕ. РџСЂРѕРґР°РЅРѕ!",DIA_Halvor_Hehlerei_Annehmen);
+				Info_AddChoice (DIA_Halvor_Hehlerei,"РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.",DIA_Halvor_Hehlerei_Ablehnen);
 			}
 			else 
 			{
-				AI_Output (self, other, "DIA_Halvor_Zeichen_06_06");//Ты принес слишком много. У меня нет столько золота сразу.
+				AI_Output (self, other, "DIA_Halvor_Zeichen_06_06");//РўС‹ РїСЂРёРЅРµСЃ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ. РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р° СЃСЂР°Р·Сѓ.
 				Info_ClearChoices (DIA_Halvor_Hehlerei);
 			};
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Halvor_Zeichen_06_02");//Заходи, когда у тебя будут серебряные тарелки или чаши.
+			AI_Output (self, other, "DIA_Halvor_Zeichen_06_02");//Р—Р°С…РѕРґРё, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ СЃРµСЂРµР±СЂСЏРЅС‹Рµ С‚Р°СЂРµР»РєРё РёР»Рё С‡Р°С€Рё.
 			Info_ClearChoices (DIA_Halvor_Hehlerei);
 		};
 	}
 	else if (Wld_GetDay() == 0)
 	{
-		AI_Output (self, other, "DIA_Halvor_Zeichen_06_03");//Ты можешь отдать мне свое серебро завтра. Сегодня слишком рано.
+		AI_Output (self, other, "DIA_Halvor_Zeichen_06_03");//РўС‹ РјРѕР¶РµС€СЊ РѕС‚РґР°С‚СЊ РјРЅРµ СЃРІРѕРµ СЃРµСЂРµР±СЂРѕ Р·Р°РІС‚СЂР°. РЎРµРіРѕРґРЅСЏ СЃР»РёС€РєРѕРј СЂР°РЅРѕ.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Halvor_Zeichen_06_04");//Извини, но сегодня я не готов вести дела. Заходи завтра, хорошо?
+		AI_Output (self, other, "DIA_Halvor_Zeichen_06_04");//РР·РІРёРЅРё, РЅРѕ СЃРµРіРѕРґРЅСЏ СЏ РЅРµ РіРѕС‚РѕРІ РІРµСЃС‚Рё РґРµР»Р°. Р—Р°С…РѕРґРё Р·Р°РІС‚СЂР°, С…РѕСЂРѕС€Рѕ?
 	};
 
 };
 FUNC VOID DIA_Halvor_Hehlerei_Annehmen()
 {
 	/*
-	CreateInvItems (other, ItRW_Arrow,(Npc_HasItems (other, ItMi_SilverPlate)+ Npc_HasItems (other, ItMi_SilverCup)));//Fьr Textausgabe -> ist ziemlich dreckig, aber wie sonst? 
+	CreateInvItems (other, ItRW_Arrow,(Npc_HasItems (other, ItMi_SilverPlate)+ Npc_HasItems (other, ItMi_SilverCup)));//FСЊr Textausgabe -> ist ziemlich dreckig, aber wie sonst? 
 	B_GiveInvItems (other, self, ItRW_Arrow,(Npc_HasItems (other, ItMi_SilverPlate)+ Npc_HasItems (other, ItMi_SilverCup)) ); 
  	*/
  	
@@ -401,8 +401,8 @@ FUNC VOID DIA_Halvor_Hehlerei_Annehmen()
  	
  	B_GiveInvItems (self, other, ItMi_Gold, Halvor_Score);
  	
- 	AI_Output (other, self, "DIA_Halvor_Zeichen_Annehmen_15_00");//Хорошо. Продано!
- 	AI_Output (self, other, "DIA_Halvor_Zeichen_Annehmen_06_01");//Мы заключили несколько хороших сделок сегодня. Лучше не приходи ко мне до завтра, это может вызвать подозрения, понимаешь?
+ 	AI_Output (other, self, "DIA_Halvor_Zeichen_Annehmen_15_00");//РҐРѕСЂРѕС€Рѕ. РџСЂРѕРґР°РЅРѕ!
+ 	AI_Output (self, other, "DIA_Halvor_Zeichen_Annehmen_06_01");//РњС‹ Р·Р°РєР»СЋС‡РёР»Рё РЅРµСЃРєРѕР»СЊРєРѕ С…РѕСЂРѕС€РёС… СЃРґРµР»РѕРє СЃРµРіРѕРґРЅСЏ. Р›СѓС‡С€Рµ РЅРµ РїСЂРёС…РѕРґРё РєРѕ РјРЅРµ РґРѕ Р·Р°РІС‚СЂР°, СЌС‚Рѕ РјРѕР¶РµС‚ РІС‹Р·РІР°С‚СЊ РїРѕРґРѕР·СЂРµРЅРёСЏ, РїРѕРЅРёРјР°РµС€СЊ?
 	
 	Halvor_Day = Wld_GetDay ();
 	Info_ClearChoices (DIA_Halvor_Hehlerei);
@@ -428,7 +428,7 @@ instance DIA_Halvor_Crew		(C_INFO)
 	condition	 = 	DIA_Halvor_Crew_Condition;
 	information	 = 	DIA_Halvor_Crew_Info;
 	permanent    =  FALSE;
-	description	 =  "Я набираю команду.";
+	description	 =  "РЇ РЅР°Р±РёСЂР°СЋ РєРѕРјР°РЅРґСѓ.";
 };
 
 func int DIA_Halvor_Crew_Condition ()
@@ -441,52 +441,52 @@ func int DIA_Halvor_Crew_Condition ()
 };
 func void DIA_Halvor_Crew_Info ()
 {
-	AI_Output (other,self ,"DIA_Halvor_Crew_15_00"); //Я набираю команду.
-	AI_Output (self ,other,"DIA_Halvor_Crew_06_01"); //А как ты планируешь уплыть отсюда?
+	AI_Output (other,self ,"DIA_Halvor_Crew_15_00"); //РЇ РЅР°Р±РёСЂР°СЋ РєРѕРјР°РЅРґСѓ.
+	AI_Output (self ,other,"DIA_Halvor_Crew_06_01"); //Рђ РєР°Рє С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ СѓРїР»С‹С‚СЊ РѕС‚СЃСЋРґР°?
 	
 	Info_ClearChoices (DIA_Halvor_Crew);
-	Info_AddChoice (DIA_Halvor_Crew,"Это мое дело.",DIA_Halvor_Crew_MyThing);
-	Info_AddChoice (DIA_Halvor_Crew,"Здесь есть подходящий корабль.",DIA_Halvor_Crew_StealShip);
+	Info_AddChoice (DIA_Halvor_Crew,"Р­С‚Рѕ РјРѕРµ РґРµР»Рѕ.",DIA_Halvor_Crew_MyThing);
+	Info_AddChoice (DIA_Halvor_Crew,"Р—РґРµСЃСЊ РµСЃС‚СЊ РїРѕРґС…РѕРґСЏС‰РёР№ РєРѕСЂР°Р±Р»СЊ.",DIA_Halvor_Crew_StealShip);
 	
 };
 
 FUNC VOID DIA_Halvor_Crew_MyThing()
 {
-	AI_Output (other,self ,"DIA_Halvor_Crew_MyThing_15_00"); //Это мое дело.
-	AI_Output (self ,other,"DIA_Halvor_Crew_MyThing_06_01"); //Как знаешь. Это действительно не мое дело.
+	AI_Output (other,self ,"DIA_Halvor_Crew_MyThing_15_00"); //Р­С‚Рѕ РјРѕРµ РґРµР»Рѕ.
+	AI_Output (self ,other,"DIA_Halvor_Crew_MyThing_06_01"); //РљР°Рє Р·РЅР°РµС€СЊ. Р­С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРµ РјРѕРµ РґРµР»Рѕ.
 
 	Info_ClearChoices (DIA_Halvor_Crew);
 	Info_AddChoice (DIA_Halvor_Crew,DIALOG_BACK,DIA_Halvor_Crew_BACK);
-	Info_AddChoice (DIA_Halvor_Crew,"Хочешь плыть со мной?",DIA_Halvor_Crew_JoinMe);
-	Info_AddChoice (DIA_Halvor_Crew,"Ты можешь помочь мне?",DIA_Halvor_Crew_HelpMe); 
+	Info_AddChoice (DIA_Halvor_Crew,"РҐРѕС‡РµС€СЊ РїР»С‹С‚СЊ СЃРѕ РјРЅРѕР№?",DIA_Halvor_Crew_JoinMe);
+	Info_AddChoice (DIA_Halvor_Crew,"РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ?",DIA_Halvor_Crew_HelpMe); 
 };
 
 FUNC VOID DIA_Halvor_Crew_StealShip()
 {
-	AI_Output (other,self ,"DIA_Halvor_Crew_StealShip_15_00"); //Здесь есть подходящий корабль.
-	AI_Output (self ,other,"DIA_Halvor_Crew_StealShip_06_01"); //Да, точно. Ты это серьезно? Паладины сделают из тебя котлету, если доберутся до тебя.
-	AI_Output (self ,other,"DIA_Halvor_Crew_StealShip_06_02"); //Поступай как знаешь, но я не собираюсь рисковать своей шкурой.
+	AI_Output (other,self ,"DIA_Halvor_Crew_StealShip_15_00"); //Р—РґРµСЃСЊ РµСЃС‚СЊ РїРѕРґС…РѕРґСЏС‰РёР№ РєРѕСЂР°Р±Р»СЊ.
+	AI_Output (self ,other,"DIA_Halvor_Crew_StealShip_06_01"); //Р”Р°, С‚РѕС‡РЅРѕ. РўС‹ СЌС‚Рѕ СЃРµСЂСЊРµР·РЅРѕ? РџР°Р»Р°РґРёРЅС‹ СЃРґРµР»Р°СЋС‚ РёР· С‚РµР±СЏ РєРѕС‚Р»РµС‚Сѓ, РµСЃР»Рё РґРѕР±РµСЂСѓС‚СЃСЏ РґРѕ С‚РµР±СЏ.
+	AI_Output (self ,other,"DIA_Halvor_Crew_StealShip_06_02"); //РџРѕСЃС‚СѓРїР°Р№ РєР°Рє Р·РЅР°РµС€СЊ, РЅРѕ СЏ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ СЂРёСЃРєРѕРІР°С‚СЊ СЃРІРѕРµР№ С€РєСѓСЂРѕР№.
 	
 	Info_ClearChoices (DIA_Halvor_Crew);
 	Info_AddChoice (DIA_Halvor_Crew,DIALOG_BACK,DIA_Halvor_Crew_BACK);
-	Info_AddChoice (DIA_Halvor_Crew,"Хочешь плыть со мной?",DIA_Halvor_Crew_JoinMe);
+	Info_AddChoice (DIA_Halvor_Crew,"РҐРѕС‡РµС€СЊ РїР»С‹С‚СЊ СЃРѕ РјРЅРѕР№?",DIA_Halvor_Crew_JoinMe);
 	if (Npc_IsDead (JACK) == FALSE)
 	{
-		Info_AddChoice (DIA_Halvor_Crew,"Ты можешь помочь мне?",DIA_Halvor_Crew_HelpMe); 
+		Info_AddChoice (DIA_Halvor_Crew,"РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ?",DIA_Halvor_Crew_HelpMe); 
 	};
 };
 
 FUNC VOID DIA_Halvor_Crew_JoinMe()
 {
-	AI_Output (other,self ,"DIA_Halvor_Crew_JoinMe_15_00"); //Хочешь плыть со мной?
-	AI_Output (self ,other,"DIA_Halvor_Crew_JoinMe_06_01"); //Неет, спасибо. У меня и здесь работы хватает. Кроме того, если честно, я не хочу повстречаться с галерой, полной орков.
-	AI_Output (self ,other,"DIA_Halvor_Crew_JoinMe_06_02"); //Но я все же желаю тебе удачи.
+	AI_Output (other,self ,"DIA_Halvor_Crew_JoinMe_15_00"); //РҐРѕС‡РµС€СЊ РїР»С‹С‚СЊ СЃРѕ РјРЅРѕР№?
+	AI_Output (self ,other,"DIA_Halvor_Crew_JoinMe_06_01"); //РќРµРµС‚, СЃРїР°СЃРёР±Рѕ. РЈ РјРµРЅСЏ Рё Р·РґРµСЃСЊ СЂР°Р±РѕС‚С‹ С…РІР°С‚Р°РµС‚. РљСЂРѕРјРµ С‚РѕРіРѕ, РµСЃР»Рё С‡РµСЃС‚РЅРѕ, СЏ РЅРµ С…РѕС‡Сѓ РїРѕРІСЃС‚СЂРµС‡Р°С‚СЊСЃСЏ СЃ РіР°Р»РµСЂРѕР№, РїРѕР»РЅРѕР№ РѕСЂРєРѕРІ.
+	AI_Output (self ,other,"DIA_Halvor_Crew_JoinMe_06_02"); //РќРѕ СЏ РІСЃРµ Р¶Рµ Р¶РµР»Р°СЋ С‚РµР±Рµ СѓРґР°С‡Рё.
 };
 
 FUNC VOID DIA_Halvor_Crew_HelpMe()
 {
-	AI_Output (other,self ,"DIA_Halvor_Crew_HelpMe_15_00"); //Ты можешь помочь мне?
-	AI_Output (self ,other,"DIA_Halvor_Crew_HelpMe_06_01"); //Я не очень подхожу для этого. Лучше поговори с Джеком, он должен ошиваться где-то здесь, в гавани. Он лучше знает, что тебе нужно для этого путешествия.
+	AI_Output (other,self ,"DIA_Halvor_Crew_HelpMe_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ?
+	AI_Output (self ,other,"DIA_Halvor_Crew_HelpMe_06_01"); //РЇ РЅРµ РѕС‡РµРЅСЊ РїРѕРґС…РѕР¶Сѓ РґР»СЏ СЌС‚РѕРіРѕ. Р›СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРё СЃ Р”Р¶РµРєРѕРј, РѕРЅ РґРѕР»Р¶РµРЅ РѕС€РёРІР°С‚СЊСЃСЏ РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ, РІ РіР°РІР°РЅРё. РћРЅ Р»СѓС‡С€Рµ Р·РЅР°РµС‚, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РґР»СЏ СЌС‚РѕРіРѕ РїСѓС‚РµС€РµСЃС‚РІРёСЏ.
 };
 
 FUNC VOID DIA_Halvor_Crew_Back()

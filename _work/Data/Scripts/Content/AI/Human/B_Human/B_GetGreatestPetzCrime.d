@@ -1,8 +1,8 @@
 // ****************************************************
 // B_GetPetzCrime
 // --------------
-// Liefert Petzcrime in Abhängigkeit von Home-Location
-// wenn NSC keine Home-Location angehört --> CRIME_NONE
+// Liefert Petzcrime in AbhÐ´ngigkeit von Home-Location
+// wenn NSC keine Home-Location angehÑ†rt --> CRIME_NONE
 // ****************************************************
 
 func int B_GetGreatestPetzCrime (var C_NPC slf)

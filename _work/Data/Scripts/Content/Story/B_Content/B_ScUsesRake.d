@@ -22,7 +22,7 @@ FUNC VOID B_SCGetTreasure_S1()
 	//NEWWORLD_ZEN
 				if ((Npc_GetDistToWP(hero,					"NW_BIGFARM_LAKE_CAVE_07"	)< RAKE_BUDDEL_DIST_MIN) && (RAKEPLACE[Greg_FirstSecret]==FALSE))
 				{
-					Wld_InsertItem 		(ItSe_GoldPocket25, "NW_BIGFARM_LAKE_CAVE_07"	); 				 			 RAKEPLACE[Greg_FirstSecret]=TRUE;	//Joly: Auftrag von GREG_NW  RAKEPLACE[1] wird als Abfrage verwendet, nicht ändern.
+					Wld_InsertItem 		(ItSe_GoldPocket25, "NW_BIGFARM_LAKE_CAVE_07"	); 				 			 RAKEPLACE[Greg_FirstSecret]=TRUE;	//Joly: Auftrag von GREG_NW  RAKEPLACE[1] wird als Abfrage verwendet, nicht Ð´ndern.
 					RakeTreasureSuccess (ItSe_GoldPocket25);
 					var C_ITEM GregsArmor;
 					GregsArmor = Npc_GetEquippedArmor(Greg_NW);

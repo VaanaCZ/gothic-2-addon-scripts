@@ -34,7 +34,7 @@ instance DIA_Malak_HALLO		(C_INFO)
 	condition	 = 	DIA_Malak_HALLO_Condition;
 	information	 = 	DIA_Malak_HALLO_Info;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Malak_HALLO_Condition ()
@@ -47,15 +47,15 @@ func int DIA_Malak_HALLO_Condition ()
 
 func void DIA_Malak_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_HALLO_15_00"); //Все в порядке?
+	AI_Output			(other, self, "DIA_Malak_HALLO_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output			(self, other, "DIA_Malak_HALLO_08_01"); //Еще один поденный рабочий, который не знает, чем заняться? Нет проблем. Поговори с нашим фермером Бенгаром.
+			AI_Output			(self, other, "DIA_Malak_HALLO_08_01"); //Р•С‰Рµ РѕРґРёРЅ РїРѕРґРµРЅРЅС‹Р№ СЂР°Р±РѕС‡РёР№, РєРѕС‚РѕСЂС‹Р№ РЅРµ Р·РЅР°РµС‚, С‡РµРј Р·Р°РЅСЏС‚СЊСЃСЏ? РќРµС‚ РїСЂРѕР±Р»РµРј. РџРѕРіРѕРІРѕСЂРё СЃ РЅР°С€РёРј С„РµСЂРјРµСЂРѕРј Р‘РµРЅРіР°СЂРѕРј.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Malak_HALLO_08_02"); //Конечно.
+			AI_Output			(self, other, "DIA_Malak_HALLO_08_02"); //РљРѕРЅРµС‡РЅРѕ.
 		};
 
 };
@@ -71,7 +71,7 @@ instance DIA_Malak_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Malak_WASMACHSTDU_Condition;
 	information	 = 	DIA_Malak_WASMACHSTDU_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Malak_WASMACHSTDU_Condition ()
@@ -85,9 +85,9 @@ func int DIA_Malak_WASMACHSTDU_Condition ()
 
 func void DIA_Malak_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_WASMACHSTDU_15_00"); //Что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_Malak_WASMACHSTDU_08_01"); //Я пасу овец. Это не такая уж тяжелая работа.
-	AI_Output			(self, other, "DIA_Malak_WASMACHSTDU_08_02"); //Но иногда нужно быть очень внимательным. Особенно, если приближаешься к Проходу.
+	AI_Output			(other, self, "DIA_Malak_WASMACHSTDU_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Malak_WASMACHSTDU_08_01"); //РЇ РїР°СЃСѓ РѕРІРµС†. Р­С‚Рѕ РЅРµ С‚Р°РєР°СЏ СѓР¶ С‚СЏР¶РµР»Р°СЏ СЂР°Р±РѕС‚Р°.
+	AI_Output			(self, other, "DIA_Malak_WASMACHSTDU_08_02"); //РќРѕ РёРЅРѕРіРґР° РЅСѓР¶РЅРѕ Р±С‹С‚СЊ РѕС‡РµРЅСЊ РІРЅРёРјР°С‚РµР»СЊРЅС‹Рј. РћСЃРѕР±РµРЅРЅРѕ, РµСЃР»Рё РїСЂРёР±Р»РёР¶Р°РµС€СЊСЃСЏ Рє РџСЂРѕС…РѕРґСѓ.
 
 };
 
@@ -102,7 +102,7 @@ instance DIA_Malak_PASS		(C_INFO)
 	condition	 = 	DIA_Malak_PASS_Condition;
 	information	 = 	DIA_Malak_PASS_Info;
 
-	description	 = 	"Что ты знаешь о Проходе?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РџСЂРѕС…РѕРґРµ?";
 };
 
 func int DIA_Malak_PASS_Condition ()
@@ -116,10 +116,10 @@ func int DIA_Malak_PASS_Condition ()
 
 func void DIA_Malak_PASS_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_PASS_15_00"); //Что ты знаешь о Проходе?
-	AI_Output			(self, other, "DIA_Malak_PASS_08_01"); //Не много. Только то, что он ведет в старую Долину Рудников, которая была окружена Барьером еще несколько недель назад.
-	AI_Output			(self, other, "DIA_Malak_PASS_08_02"); //Тогда единственное, чего нужно было опасаться нам, фермерам, это ежемесячного каравана, доставлявшего различные грузы в Долину Рудников.
-	AI_Output			(self, other, "DIA_Malak_PASS_08_03"); //Эти головорезы сильно усложняли нам жизнь.
+	AI_Output			(other, self, "DIA_Malak_PASS_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РџСЂРѕС…РѕРґРµ?
+	AI_Output			(self, other, "DIA_Malak_PASS_08_01"); //РќРµ РјРЅРѕРіРѕ. РўРѕР»СЊРєРѕ С‚Рѕ, С‡С‚Рѕ РѕРЅ РІРµРґРµС‚ РІ СЃС‚Р°СЂСѓСЋ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ, РєРѕС‚РѕСЂР°СЏ Р±С‹Р»Р° РѕРєСЂСѓР¶РµРЅР° Р‘Р°СЂСЊРµСЂРѕРј РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ РЅР°Р·Р°Рґ.
+	AI_Output			(self, other, "DIA_Malak_PASS_08_02"); //РўРѕРіРґР° РµРґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡РµРіРѕ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РѕРїР°СЃР°С‚СЊСЃСЏ РЅР°Рј, С„РµСЂРјРµСЂР°Рј, СЌС‚Рѕ РµР¶РµРјРµСЃСЏС‡РЅРѕРіРѕ РєР°СЂР°РІР°РЅР°, РґРѕСЃС‚Р°РІР»СЏРІС€РµРіРѕ СЂР°Р·Р»РёС‡РЅС‹Рµ РіСЂСѓР·С‹ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Malak_PASS_08_03"); //Р­С‚Рё РіРѕР»РѕРІРѕСЂРµР·С‹ СЃРёР»СЊРЅРѕ СѓСЃР»РѕР¶РЅСЏР»Рё РЅР°Рј Р¶РёР·РЅСЊ.
 
 };
 
@@ -133,7 +133,7 @@ instance DIA_Malak_WOPASS		(C_INFO)
 	condition	 = 	DIA_Malak_WOPASS_Condition;
 	information	 = 	DIA_Malak_WOPASS_Info;
 
-	description	 = 	"Где мне найти проход в старую Долину Рудников?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РїСЂРѕС…РѕРґ РІ СЃС‚Р°СЂСѓСЋ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ?";
 };
 
 func int DIA_Malak_WOPASS_Condition ()
@@ -147,8 +147,8 @@ func int DIA_Malak_WOPASS_Condition ()
 
 func void DIA_Malak_WOPASS_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_WOPASS_15_00"); //Где мне найти проход в старую Долину Рудников?
-	AI_Output			(self, other, "DIA_Malak_WOPASS_08_01"); //Около двух водопадов на другой стороне этого пастбища.
+	AI_Output			(other, self, "DIA_Malak_WOPASS_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РїСЂРѕС…РѕРґ РІ СЃС‚Р°СЂСѓСЋ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ?
+	AI_Output			(self, other, "DIA_Malak_WOPASS_08_01"); //РћРєРѕР»Рѕ РґРІСѓС… РІРѕРґРѕРїР°РґРѕРІ РЅР° РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅРµ СЌС‚РѕРіРѕ РїР°СЃС‚Р±РёС‰Р°.
 
 };
 
@@ -164,7 +164,7 @@ instance DIA_Malak_MINENTAL		(C_INFO)
 	condition	 = 	DIA_Malak_MINENTAL_Condition;
 	information	 = 	DIA_Malak_MINENTAL_Info;
 
-	description	 = 	"Что говорят о Долине Рудников?";
+	description	 = 	"Р§С‚Рѕ РіРѕРІРѕСЂСЏС‚ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?";
 };
 
 func int DIA_Malak_MINENTAL_Condition ()
@@ -179,9 +179,9 @@ func int DIA_Malak_MINENTAL_Condition ()
 func void DIA_Malak_MINENTAL_Info ()
 {
 
-	AI_Output			(other, self, "DIA_Malak_MINENTAL_15_00"); //Что говорят о Долине Рудников?
-	AI_Output			(self, other, "DIA_Malak_MINENTAL_08_01"); //Разное. Некоторые говорят, что слышали крики по ночам, другие видели странный свет над горами.
-	AI_Output			(self, other, "DIA_Malak_MINENTAL_08_02"); //Но я думаю, что это все пустые сплетни.
+	AI_Output			(other, self, "DIA_Malak_MINENTAL_15_00"); //Р§С‚Рѕ РіРѕРІРѕСЂСЏС‚ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?
+	AI_Output			(self, other, "DIA_Malak_MINENTAL_08_01"); //Р Р°Р·РЅРѕРµ. РќРµРєРѕС‚РѕСЂС‹Рµ РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ СЃР»С‹С€Р°Р»Рё РєСЂРёРєРё РїРѕ РЅРѕС‡Р°Рј, РґСЂСѓРіРёРµ РІРёРґРµР»Рё СЃС‚СЂР°РЅРЅС‹Р№ СЃРІРµС‚ РЅР°Рґ РіРѕСЂР°РјРё.
+	AI_Output			(self, other, "DIA_Malak_MINENTAL_08_02"); //РќРѕ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ СЌС‚Рѕ РІСЃРµ РїСѓСЃС‚С‹Рµ СЃРїР»РµС‚РЅРё.
 
 };
 
@@ -196,7 +196,7 @@ instance DIA_Malak_WARSTDUSCHONDA		(C_INFO)
 	condition	 = 	DIA_Malak_WARSTDUSCHONDA_Condition;
 	information	 = 	DIA_Malak_WARSTDUSCHONDA_Info;
 
-	description	 = 	"А ты был в Долине Рудников?";
+	description	 = 	"Рђ С‚С‹ Р±С‹Р» РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?";
 };
 
 func int DIA_Malak_WARSTDUSCHONDA_Condition ()
@@ -210,10 +210,10 @@ func int DIA_Malak_WARSTDUSCHONDA_Condition ()
 
 func void DIA_Malak_WARSTDUSCHONDA_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_WARSTDUSCHONDA_15_00"); //А ты был в Долине Рудников?
-	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_01"); //Нет. Но иногда я пасу овец рядом с Проходом. И я всегда вижу там двух паладинов, стоящих на страже.
-	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_02"); //Похоже, они там, чтобы никого не выпускать из долины.
-	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_03"); //Раньше Долина Рудников была естественной тюрьмой. Если ты попадал туда, ты уже никогда не мог выбраться назад.
+	AI_Output			(other, self, "DIA_Malak_WARSTDUSCHONDA_15_00"); //Рђ С‚С‹ Р±С‹Р» РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?
+	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_01"); //РќРµС‚. РќРѕ РёРЅРѕРіРґР° СЏ РїР°СЃСѓ РѕРІРµС† СЂСЏРґРѕРј СЃ РџСЂРѕС…РѕРґРѕРј. Р СЏ РІСЃРµРіРґР° РІРёР¶Сѓ С‚Р°Рј РґРІСѓС… РїР°Р»Р°РґРёРЅРѕРІ, СЃС‚РѕСЏС‰РёС… РЅР° СЃС‚СЂР°Р¶Рµ.
+	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_02"); //РџРѕС…РѕР¶Рµ, РѕРЅРё С‚Р°Рј, С‡С‚РѕР±С‹ РЅРёРєРѕРіРѕ РЅРµ РІС‹РїСѓСЃРєР°С‚СЊ РёР· РґРѕР»РёРЅС‹.
+	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_03"); //Р Р°РЅСЊС€Рµ Р”РѕР»РёРЅР° Р СѓРґРЅРёРєРѕРІ Р±С‹Р»Р° РµСЃС‚РµСЃС‚РІРµРЅРЅРѕР№ С‚СЋСЂСЊРјРѕР№. Р•СЃР»Рё С‚С‹ РїРѕРїР°РґР°Р» С‚СѓРґР°, С‚С‹ СѓР¶Рµ РЅРёРєРѕРіРґР° РЅРµ РјРѕРі РІС‹Р±СЂР°С‚СЊСЃСЏ РЅР°Р·Р°Рґ.
 
 };
 
@@ -228,7 +228,7 @@ instance DIA_Malak_PALADINE		(C_INFO)
 	condition	 = 	DIA_Malak_PALADINE_Condition;
 	information	 = 	DIA_Malak_PALADINE_Info;
 
-	description	 = 	"Расскажи мне о паладинах.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РїР°Р»Р°РґРёРЅР°С….";
 };
 
 func int DIA_Malak_PALADINE_Condition ()
@@ -245,9 +245,9 @@ func int DIA_Malak_PALADINE_Condition ()
 
 func void DIA_Malak_PALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_PALADINE_15_00"); //Расскажи мне об этих паладинах. Как давно они стоят здесь?
-	AI_Output			(self, other, "DIA_Malak_PALADINE_08_01"); //Неделю или две, по-моему. Я точно не помню.
-	AI_Output			(self, other, "DIA_Malak_PALADINE_08_02"); //Не так давно тут был даже целый отряд паладинов. Они пошли через Проход. И с тех пор я их больше не видел.
+	AI_Output			(other, self, "DIA_Malak_PALADINE_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РёС… РїР°Р»Р°РґРёРЅР°С…. РљР°Рє РґР°РІРЅРѕ РѕРЅРё СЃС‚РѕСЏС‚ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Malak_PALADINE_08_01"); //РќРµРґРµР»СЋ РёР»Рё РґРІРµ, РїРѕ-РјРѕРµРјСѓ. РЇ С‚РѕС‡РЅРѕ РЅРµ РїРѕРјРЅСЋ.
+	AI_Output			(self, other, "DIA_Malak_PALADINE_08_02"); //РќРµ С‚Р°Рє РґР°РІРЅРѕ С‚СѓС‚ Р±С‹Р» РґР°Р¶Рµ С†РµР»С‹Р№ РѕС‚СЂСЏРґ РїР°Р»Р°РґРёРЅРѕРІ. РћРЅРё РїРѕС€Р»Рё С‡РµСЂРµР· РџСЂРѕС…РѕРґ. Р СЃ С‚РµС… РїРѕСЂ СЏ РёС… Р±РѕР»СЊС€Рµ РЅРµ РІРёРґРµР».
 
 };
 
@@ -261,7 +261,7 @@ instance DIA_Malak_KEINEFRAUEN		(C_INFO)
 	condition	 = 	DIA_Malak_KEINEFRAUEN_Condition;
 	information	 = 	DIA_Malak_KEINEFRAUEN_Info;
 
-	description	 = 	"Я не вижу здесь женщин.";
+	description	 = 	"РЇ РЅРµ РІРёР¶Сѓ Р·РґРµСЃСЊ Р¶РµРЅС‰РёРЅ.";
 };
 
 func int DIA_Malak_KEINEFRAUEN_Condition ()
@@ -275,8 +275,8 @@ func int DIA_Malak_KEINEFRAUEN_Condition ()
 
 func void DIA_Malak_KEINEFRAUEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_KEINEFRAUEN_15_00"); //Я не вижу здесь женщин.
-	AI_Output			(self, other, "DIA_Malak_KEINEFRAUEN_08_01"); //Ты прав. Это мужская ферма, так сказать. И это даже к лучшему, мне кажется.
+	AI_Output			(other, self, "DIA_Malak_KEINEFRAUEN_15_00"); //РЇ РЅРµ РІРёР¶Сѓ Р·РґРµСЃСЊ Р¶РµРЅС‰РёРЅ.
+	AI_Output			(self, other, "DIA_Malak_KEINEFRAUEN_08_01"); //РўС‹ РїСЂР°РІ. Р­С‚Рѕ РјСѓР¶СЃРєР°СЏ С„РµСЂРјР°, С‚Р°Рє СЃРєР°Р·Р°С‚СЊ. Р СЌС‚Рѕ РґР°Р¶Рµ Рє Р»СѓС‡С€РµРјСѓ, РјРЅРµ РєР°Р¶РµС‚СЃСЏ.
 
 };
 
@@ -292,7 +292,7 @@ instance DIA_Malak_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Malak_PERMKAP1_Info;
 	permanent	 =  TRUE;	
 
-	description	 = 	"Смотри, не перетрудись.";
+	description	 = 	"РЎРјРѕС‚СЂРё, РЅРµ РїРµСЂРµС‚СЂСѓРґРёСЃСЊ.";
 };
 
 func int DIA_Malak_PERMKAP1_Condition ()
@@ -314,8 +314,8 @@ func int DIA_Malak_PERMKAP1_Condition ()
 
 func void DIA_Malak_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_PERMKAP1_15_00"); //Смотри, не перетрудись.
-	AI_Output			(self, other, "DIA_Malak_PERMKAP1_08_01"); //Я попробую.
+	AI_Output			(other, self, "DIA_Malak_PERMKAP1_15_00"); //РЎРјРѕС‚СЂРё, РЅРµ РїРµСЂРµС‚СЂСѓРґРёСЃСЊ.
+	AI_Output			(self, other, "DIA_Malak_PERMKAP1_08_01"); //РЇ РїРѕРїСЂРѕР±СѓСЋ.
 
 	AI_StopProcessInfos (self);
 };
@@ -363,7 +363,7 @@ instance DIA_Malak_FLEEFROMPASS		(C_INFO)
 	condition	 = 	DIA_Malak_FLEEFROMPASS_Condition;
 	information	 = 	DIA_Malak_FLEEFROMPASS_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Malak_FLEEFROMPASS_Condition ()
@@ -383,11 +383,11 @@ func void DIA_Malak_FLEEFROMPASS_Info ()
 	}
 	else
 	{
-	AI_Output			(other, self, "DIA_Malak_FLEEFROMPASS_15_00"); //Что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_Malak_FLEEFROMPASS_08_01"); //Я сбежал с фермы Бенгара. Я не хочу, чтобы меня сожрали все эти твари, что толпами валят из Прохода.
-	AI_Output			(self, other, "DIA_Malak_FLEEFROMPASS_08_02"); //Ты представить себе не можешь, какие ужасы повылазили оттуда за последние несколько дней.
-	AI_Output			(other, self, "DIA_Malak_FLEEFROMPASS_15_03"); //Могу.
-	B_LogEntry (TOPIC_BengarALLEIN,"Малак спрятался в укрепленном месте на юге, потому что боится тварей, приходящих на его пастбища из Прохода."); 
+	AI_Output			(other, self, "DIA_Malak_FLEEFROMPASS_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Malak_FLEEFROMPASS_08_01"); //РЇ СЃР±РµР¶Р°Р» СЃ С„РµСЂРјС‹ Р‘РµРЅРіР°СЂР°. РЇ РЅРµ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РјРµРЅСЏ СЃРѕР¶СЂР°Р»Рё РІСЃРµ СЌС‚Рё С‚РІР°СЂРё, С‡С‚Рѕ С‚РѕР»РїР°РјРё РІР°Р»СЏС‚ РёР· РџСЂРѕС…РѕРґР°.
+	AI_Output			(self, other, "DIA_Malak_FLEEFROMPASS_08_02"); //РўС‹ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ СЃРµР±Рµ РЅРµ РјРѕР¶РµС€СЊ, РєР°РєРёРµ СѓР¶Р°СЃС‹ РїРѕРІС‹Р»Р°Р·РёР»Рё РѕС‚С‚СѓРґР° Р·Р° РїРѕСЃР»РµРґРЅРёРµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№.
+	AI_Output			(other, self, "DIA_Malak_FLEEFROMPASS_15_03"); //РњРѕРіСѓ.
+	B_LogEntry (TOPIC_BengarALLEIN,"РњР°Р»Р°Рє СЃРїСЂСЏС‚Р°Р»СЃСЏ РІ СѓРєСЂРµРїР»РµРЅРЅРѕРј РјРµСЃС‚Рµ РЅР° СЋРіРµ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ Р±РѕРёС‚СЃСЏ С‚РІР°СЂРµР№, РїСЂРёС…РѕРґСЏС‰РёС… РЅР° РµРіРѕ РїР°СЃС‚Р±РёС‰Р° РёР· РџСЂРѕС…РѕРґР°."); 
 	B_GivePlayerXP (XP_FoundMalakFLEEFROMPASS);
 	};
 };
@@ -403,7 +403,7 @@ instance DIA_Malak_Heilung		(C_INFO)
 	information	 = 	DIA_Malak_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Тебе нужна помощь.";
+	description	 = 	"РўРµР±Рµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ.";
 };
 
 func int DIA_Malak_Heilung_Condition ()
@@ -418,11 +418,11 @@ func int DIA_Malak_Heilung_Condition ()
 var int DIA_Malak_Heilung_oneTime;
 func void DIA_Malak_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_Heilung_15_00"); //Тебе нужна помощь.
+	AI_Output			(other, self, "DIA_Malak_Heilung_15_00"); //РўРµР±Рµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ.
 
 	if (DIA_Malak_Heilung_oneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Malak_Heilung_08_01"); //(плаксиво) Я просто хочу вернуться домой. Я вернусь к Бенгару. Надеюсь, он еще жив.
+	AI_Output			(self, other, "DIA_Malak_Heilung_08_01"); //(РїР»Р°РєСЃРёРІРѕ) РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РІРµСЂРЅСѓС‚СЊСЃСЏ РґРѕРјРѕР№. РЇ РІРµСЂРЅСѓСЃСЊ Рє Р‘РµРЅРіР°СЂСѓ. РќР°РґРµСЋСЃСЊ, РѕРЅ РµС‰Рµ Р¶РёРІ.
 
 		B_NpcClearObsessionByDMT (self);
 		Npc_ExchangeRoutine	(self,"Start");
@@ -438,7 +438,7 @@ func void DIA_Malak_Heilung_Info ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Malak_Heilung_08_02"); //Оставь меня в покое, маг. Я справлюсь.
+		AI_Output			(self, other, "DIA_Malak_Heilung_08_02"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РјР°Рі. РЇ СЃРїСЂР°РІР»СЋСЃСЊ.
 		B_NpcClearObsessionByDMT (self);
 	};
 };
@@ -454,7 +454,7 @@ instance DIA_Malak_PERMCASTLE		(C_INFO)
 	information	 = 	DIA_Malak_PERMCASTLE_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"А как тебе здесь?";
+	description	 = 	"Рђ РєР°Рє С‚РµР±Рµ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Malak_PERMCASTLE_Condition ()
@@ -472,8 +472,8 @@ func int DIA_Malak_PERMCASTLE_Condition ()
 
 func void DIA_Malak_PERMCASTLE_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_PERMCASTLE_15_00"); //А как тебе здесь?
-	AI_Output			(self, other, "DIA_Malak_PERMCASTLE_08_01"); //Здесь мне приходится иметь дело только с бандитами. Это все же меньшее зло.
+	AI_Output			(other, self, "DIA_Malak_PERMCASTLE_15_00"); //Рђ РєР°Рє С‚РµР±Рµ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Malak_PERMCASTLE_08_01"); //Р—РґРµСЃСЊ РјРЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ РёРјРµС‚СЊ РґРµР»Рѕ С‚РѕР»СЊРєРѕ СЃ Р±Р°РЅРґРёС‚Р°РјРё. Р­С‚Рѕ РІСЃРµ Р¶Рµ РјРµРЅСЊС€РµРµ Р·Р»Рѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -487,7 +487,7 @@ instance DIA_Malak_BACKTOBENGAR		(C_INFO)
 	information	 = 	DIA_Malak_BACKTOBENGAR_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты нужен Бенгару.";
+	description	 = 	"РўС‹ РЅСѓР¶РµРЅ Р‘РµРЅРіР°СЂСѓ.";
 };
 
 func int DIA_Malak_BACKTOBENGAR_Condition ()
@@ -505,26 +505,26 @@ func int DIA_Malak_BACKTOBENGAR_Condition ()
 
 func void DIA_Malak_BACKTOBENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_00"); //Ты нужен Бенгару. Он хочет, чтобы ты вернулся на его ферму.
-	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_01"); //Я не сумасшедший. Пока ферма беззащитна, я ни на шаг отсюда не сойду!
+	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_00"); //РўС‹ РЅСѓР¶РµРЅ Р‘РµРЅРіР°СЂСѓ. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ С‚С‹ РІРµСЂРЅСѓР»СЃСЏ РЅР° РµРіРѕ С„РµСЂРјСѓ.
+	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_01"); //РЇ РЅРµ СЃСѓРјР°СЃС€РµРґС€РёР№. РџРѕРєР° С„РµСЂРјР° Р±РµР·Р·Р°С‰РёС‚РЅР°, СЏ РЅРё РЅР° С€Р°Рі РѕС‚СЃСЋРґР° РЅРµ СЃРѕР№РґСѓ!
 	
-	B_LogEntry (TOPIC_BengarALLEIN,"Малак не вернется на ферму Бенгара, пока она не будет хорошо защищена."); 
+	B_LogEntry (TOPIC_BengarALLEIN,"РњР°Р»Р°Рє РЅРµ РІРµСЂРЅРµС‚СЃСЏ РЅР° С„РµСЂРјСѓ Р‘РµРЅРіР°СЂР°, РїРѕРєР° РѕРЅР° РЅРµ Р±СѓРґРµС‚ С…РѕСЂРѕС€Рѕ Р·Р°С‰РёС‰РµРЅР°."); 
 
 	if (MIS_BengarsHelpingSLD == LOG_SUCCESS)
 	{
-	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_02"); //Я нанял наемника. Он присмотрит за вашей фермой.
-	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_03"); //Ну, это другое дело, конечно же. Но подожди минутку. А кто будет платить этому парню?
-	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_04"); //Это моя проблема.
-	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_05"); //(с любопытством) М-м-м. А может, скажешь, а?
+	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_02"); //РЇ РЅР°РЅСЏР» РЅР°РµРјРЅРёРєР°. РћРЅ РїСЂРёСЃРјРѕС‚СЂРёС‚ Р·Р° РІР°С€РµР№ С„РµСЂРјРѕР№.
+	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_03"); //РќСѓ, СЌС‚Рѕ РґСЂСѓРіРѕРµ РґРµР»Рѕ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ. РќРѕ РїРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ. Рђ РєС‚Рѕ Р±СѓРґРµС‚ РїР»Р°С‚РёС‚СЊ СЌС‚РѕРјСѓ РїР°СЂРЅСЋ?
+	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_04"); //Р­С‚Рѕ РјРѕСЏ РїСЂРѕР±Р»РµРјР°.
+	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_05"); //(СЃ Р»СЋР±РѕРїС‹С‚СЃС‚РІРѕРј) Рњ-Рј-Рј. Рђ РјРѕР¶РµС‚, СЃРєР°Р¶РµС€СЊ, Р°?
 	
-	Info_AddChoice	(DIA_Malak_BACKTOBENGAR, "Нет.", DIA_Malak_BACKTOBENGAR_los );
+	Info_AddChoice	(DIA_Malak_BACKTOBENGAR, "РќРµС‚.", DIA_Malak_BACKTOBENGAR_los );
 	};
 };
 
 func void DIA_Malak_BACKTOBENGAR_los ()
 {
-	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_los_15_00"); //Нет.
-	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_los_08_01"); //Хорошо. Тогда я возвращаюсь. Надеюсь, этот парень знает свое дело.
+	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_los_15_00"); //РќРµС‚.
+	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_los_08_01"); //РҐРѕСЂРѕС€Рѕ. РўРѕРіРґР° СЏ РІРѕР·РІСЂР°С‰Р°СЋСЃСЊ. РќР°РґРµСЋСЃСЊ, СЌС‚РѕС‚ РїР°СЂРµРЅСЊ Р·РЅР°РµС‚ СЃРІРѕРµ РґРµР»Рѕ.
 	MIS_GetMalakBack = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Malak_BACKTOBENGAR);
 	B_NpcClearObsessionByDMT (self);
@@ -549,7 +549,7 @@ instance DIA_Malak_BACK		(C_INFO)
 	information	 = 	DIA_Malak_BACK_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты теперь останешься на ферме Бенгара?";
+	description	 = 	"РўС‹ С‚РµРїРµСЂСЊ РѕСЃС‚Р°РЅРµС€СЊСЃСЏ РЅР° С„РµСЂРјРµ Р‘РµРЅРіР°СЂР°?";
 };
 
 func int DIA_Malak_BACK_Condition ()
@@ -565,8 +565,8 @@ func int DIA_Malak_BACK_Condition ()
 
 func void DIA_Malak_BACK_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_BACK_15_00"); //Ты теперь останешься на ферме Бенгара?
-	AI_Output			(self, other, "DIA_Malak_BACK_08_01"); //Конечно. У меня появилась надежда. Мы как-нибудь справимся.
+	AI_Output			(other, self, "DIA_Malak_BACK_15_00"); //РўС‹ С‚РµРїРµСЂСЊ РѕСЃС‚Р°РЅРµС€СЊСЃСЏ РЅР° С„РµСЂРјРµ Р‘РµРЅРіР°СЂР°?
+	AI_Output			(self, other, "DIA_Malak_BACK_08_01"); //РљРѕРЅРµС‡РЅРѕ. РЈ РјРµРЅСЏ РїРѕСЏРІРёР»Р°СЃСЊ РЅР°РґРµР¶РґР°. РњС‹ РєР°Рє-РЅРёР±СѓРґСЊ СЃРїСЂР°РІРёРјСЃСЏ.
 	B_NpcClearObsessionByDMT (self);
 };
 

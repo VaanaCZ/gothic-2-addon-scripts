@@ -87,7 +87,7 @@ const int BeltBonus_ProtTotal	= 7;
 	on_equip		=	Equip_ItBE_Addon_Leather_01;
 	on_unequip		=	UnEquip_ItBE_Addon_Leather_01;
 
-	description		=  "Кожаный пояс";
+	description		=  "РљРѕР¶Р°РЅС‹Р№ РїРѕСЏСЃ";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -143,7 +143,7 @@ FUNC VOID UnEquip_ItBE_Addon_Leather_01()
 	};
 };
 //------------------------------------------------------------------------------------------
-// Fellgьrtel (SLD) Zweihand
+// FellgСЊrtel (SLD) Zweihand
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_SLD_01 (C_Item)  //Bennet(Kap1)
 {
@@ -161,7 +161,7 @@ FUNC VOID UnEquip_ItBE_Addon_Leather_01()
 	on_equip		=	Equip_ItBE_Addon_SLD_01;
 	on_unequip		=	UnEquip_ItBE_Addon_SLD_01;
 
-	description		=  "Пояс наемника";
+	description		=  "РџРѕСЏСЃ РЅР°РµРјРЅРёРєР°";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -212,7 +212,7 @@ FUNC VOID UnEquip_ItBE_Addon_SLD_01()
 	};
 };
 //------------------------------------------------------------------------------------------
-// Novizenschдrpe (Zweihand)
+// NovizenschРґrpe (Zweihand)
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_NOV_01 (C_Item)  //Gorax (Kap1)
 {
@@ -230,7 +230,7 @@ FUNC VOID UnEquip_ItBE_Addon_SLD_01()
 	on_equip		=	Equip_ItBE_Addon_NOV_01;
 	on_unequip		=	UnEquip_ItBE_Addon_NOV_01;
 
-	description		=  "Кушак готовности";
+	description		=  "РљСѓС€Р°Рє РіРѕС‚РѕРІРЅРѕСЃС‚Рё";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -298,7 +298,7 @@ FUNC VOID UnEquip_ItBE_Addon_NOV_01()
 	on_equip		=	Equip_ItBE_Addon_MIL_01;
 	on_unequip		=	UnEquip_ItBE_Addon_MIL_01;
 
-	description		=  "Пояс ополчения";
+	description		=  "РџРѕСЏСЃ РѕРїРѕР»С‡РµРЅРёСЏ";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -367,7 +367,7 @@ FUNC VOID UnEquip_ItBE_Addon_MIL_01()
 	on_equip		=	Equip_ItBE_Addon_KDF_01;
 	on_unequip		=	UnEquip_ItBE_Addon_KDF_01;
 
-	description		=  "Кушак огня";
+	description		=  "РљСѓС€Р°Рє РѕРіРЅСЏ";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -419,7 +419,7 @@ FUNC VOID UnEquip_ItBE_Addon_KDF_01()
 };
 
 //------------------------------------------------------------------------------------------
-// Minecrawler Gьrtel Zweihand
+// Minecrawler GСЊrtel Zweihand
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_MC (C_Item)  //Bennet(Kap3)
 {
@@ -437,7 +437,7 @@ FUNC VOID UnEquip_ItBE_Addon_KDF_01()
 	on_equip		=	Equip_ItBE_Addon_MC;
 	on_unequip		=	UnEquip_ItBE_Addon_MC;
 
-	description		=  "Пояс из краулера";
+	description		=  "РџРѕСЏСЃ РёР· РєСЂР°СѓР»РµСЂР°";
 	
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -490,7 +490,7 @@ FUNC VOID UnEquip_ItBE_Addon_MC()
 
 
 // *****************************************************
-// 						kleine Gьrtel
+// 						kleine GСЊrtel
 // *****************************************************
 // -----------------------------------------------------
 // STR 5
@@ -511,7 +511,7 @@ INSTANCE  ItBe_Addon_STR_5 (C_Item)		//Spielstart Xardas(Kap1)
 	on_equip		=	Equip_ItBe_Addon_STR_5;
 	on_unequip		=	UnEquip_ItBe_Addon_STR_5;
 
-	description		=  "Пояс силы";
+	description		=  "РџРѕСЏСЃ СЃРёР»С‹";
 	
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= BeltBonus_STR01;
@@ -551,7 +551,7 @@ INSTANCE  ItBe_Addon_STR_10 (C_Item)  	//Jora(Kap4)/Sengrath(4)
 	on_equip		=	Equip_ItBe_Addon_STR_10;
 	on_unequip		=	UnEquip_ItBe_Addon_STR_10;
 
-	description		=  "Пояс силы";
+	description		=  "РџРѕСЏСЃ СЃРёР»С‹";
 	
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= BeltBonus_STR02;
@@ -591,7 +591,7 @@ INSTANCE  ItBe_Addon_DEX_5 (C_Item)  //Bosper(Kap2)/Orlan(2)
 	on_equip		=	Equip_ItBe_Addon_DEX_5;
 	on_unequip		=	UnEquip_ItBe_Addon_DEX_5;
 
-	description		=  "Пояс мастерства";
+	description		=  "РџРѕСЏСЃ РјР°СЃС‚РµСЂСЃС‚РІР°";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= BeltBonus_DEX01;
@@ -631,7 +631,7 @@ INSTANCE  ItBe_Addon_DEX_10 (C_Item)  //Bosper(Kap3)/Lutero(3)
 	on_equip		=	Equip_ItBe_Addon_DEX_10;
 	on_unequip		=	UnEquip_ItBe_Addon_DEX_10;
 
-	description		=  "Пояс ловкости";
+	description		=  "РџРѕСЏСЃ Р»РѕРІРєРѕСЃС‚Рё";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= BeltBonus_DEX02;
@@ -672,7 +672,7 @@ INSTANCE  ItBe_Addon_Prot_EDGE (C_Item)  //Hakon(Kap4)/Khaled(4)
 	on_equip		=	Equip_ItBe_Addon_Prot_EDGE;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_EDGE;
 
-	description		=  "Пояс защиты";
+	description		=  "РџРѕСЏСЃ Р·Р°С‰РёС‚С‹";
 	
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= BeltBonus_ProtEdge;
@@ -713,7 +713,7 @@ INSTANCE  ItBe_Addon_Prot_Point (C_Item)  //Hakon(Kap3)/Khaled(3)
 	on_equip		=	Equip_ItBe_Addon_Prot_Point;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_Point;
 
-	description		=  "Пояс защиты";
+	description		=  "РџРѕСЏСЃ Р·Р°С‰РёС‚С‹";
 	
 	TEXT[2]			= NAME_Prot_Point;
 	COUNT[2]		= BeltBonus_ProtPoint;
@@ -752,7 +752,7 @@ INSTANCE  ItBe_Addon_Prot_MAGIC (C_Item)  //Gorax(Kap3)/Zuris(3)
 	on_equip		=	Equip_ItBe_Addon_Prot_MAGIC;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_MAGIC;
 
-	description		=  "Пояс магической защиты";
+	description		=  "РџРѕСЏСЃ РјР°РіРёС‡РµСЃРєРѕР№ Р·Р°С‰РёС‚С‹";
 	
 	TEXT[2]			= NAME_Prot_MAGIC;
 	COUNT[2]		= BeltBonus_ProtMAGIC;
@@ -791,7 +791,7 @@ INSTANCE  ItBe_Addon_Prot_FIRE (C_Item)  //Constantino(Kap3)/Sengrath(4)
 	on_equip		=	Equip_ItBe_Addon_Prot_FIRE;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_FIRE;
 
-	description		=  "Пояс огненного человека";
+	description		=  "РџРѕСЏСЃ РѕРіРЅРµРЅРЅРѕРіРѕ С‡РµР»РѕРІРµРєР°";
 	
 	TEXT[2]			= NAME_Prot_FIRE;
 	COUNT[2]		= BeltBonus_ProtFIRE;
@@ -814,7 +814,7 @@ FUNC VOID UnEquip_ItBe_Addon_Prot_FIRE()
 // -----------------------------------------------------
 // PROT EdgPoi
 // -----------------------------------------------------
-INSTANCE  ItBe_Addon_Prot_EdgPoi (C_Item)  //Khaled(Kap4)/Orlan(3)	Missionbelohnung von Garett fьr Feuerwarane (Kap2)
+INSTANCE  ItBe_Addon_Prot_EdgPoi (C_Item)  //Khaled(Kap4)/Orlan(3)	Missionbelohnung von Garett fСЊr Feuerwarane (Kap2)
 {
 	name 			=	NAME_Addon_Belt;
 
@@ -830,7 +830,7 @@ INSTANCE  ItBe_Addon_Prot_EdgPoi (C_Item)  //Khaled(Kap4)/Orlan(3)	Missionbelohn
 	on_equip		=	Equip_ItBe_Addon_Prot_EdgPoi;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_EdgPoi;
 
-	description		=  "Пояс защиты";
+	description		=  "РџРѕСЏСЃ Р·Р°С‰РёС‚С‹";
 	
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= BeltBonus_ProtEdgPoi;
@@ -875,7 +875,7 @@ INSTANCE  ItBe_Addon_Prot_TOTAL (C_Item)  //Hakon(Kap4)
 	on_equip		=	Equip_ItBe_Addon_Prot_TOTAL;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_TOTAL;
 
-	description		=  "Пояс протектора";
+	description		=  "РџРѕСЏСЃ РїСЂРѕС‚РµРєС‚РѕСЂР°";
 	
 	TEXT[1]			= NAME_Prot_Edge;
 	COUNT[1]		= BeltBonus_ProtTOTAL;

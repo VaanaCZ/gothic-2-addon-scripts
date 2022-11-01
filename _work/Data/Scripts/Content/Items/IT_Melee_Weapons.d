@@ -19,7 +19,7 @@
 //ItMw_1H_Sword_Short_02	// Bauernwehr
 //ItMw_1H_Sword_Short_01	// Kurzschwert
 
-//ItMw_1H_Poker_01			// Schьrhaken
+//ItMw_1H_Poker_01			// SchСЊrhaken
 
 // *****************************************************
 // Waffen in der Welt (ab Kapitel 1)
@@ -27,11 +27,11 @@
 // Hier alle Waffen, die bei mortal-NSCs 
 // oder in die Welt objektiert zu finden sind
 // Alle haben sehr geringen Wert
-// Alle kцnnen (theoretisch) in Kapitel 1 erlangt werden
+// Alle kС†nnen (theoretisch) in Kapitel 1 erlangt werden
 // *****************************************************
 INSTANCE ItMw_1h_Vlk_Dagger (C_Item)
 {	
-	name 				=	"Кинжал";  
+	name 				=	"РљРёРЅР¶Р°Р»";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -57,7 +57,7 @@ INSTANCE ItMw_1h_Vlk_Dagger (C_Item)
 // *****************************************************
 INSTANCE ItMw_1H_Mace_L_01 (C_Item)
 {	
-	name 				=	"Кочерга";  
+	name 				=	"РљРѕС‡РµСЂРіР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -82,7 +82,7 @@ INSTANCE ItMw_1H_Mace_L_01 (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Bau_Axe (C_Item)
 {	
-	name 				=	"Серп";  
+	name 				=	"РЎРµСЂРї";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -107,7 +107,7 @@ INSTANCE ItMw_1h_Bau_Axe (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Vlk_Mace (C_Item)
 {	
-	name 				=	"Посох";  
+	name 				=	"РџРѕСЃРѕС…";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -132,7 +132,7 @@ INSTANCE ItMw_1h_Vlk_Mace (C_Item)
 // *****************************************************
 INSTANCE ItMw_1H_Mace_L_03 (C_Item)
 {	
-	name 				=	"Дубина";  
+	name 				=	"Р”СѓР±РёРЅР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -157,7 +157,7 @@ INSTANCE ItMw_1H_Mace_L_03 (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Bau_Mace (C_Item)
 {	
-	name 				=	"Тяжелый сук";  
+	name 				=	"РўСЏР¶РµР»С‹Р№ СЃСѓРє";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -182,7 +182,7 @@ INSTANCE ItMw_1h_Bau_Mace (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Vlk_Axe (C_Item)
 {	
-	name 				=	"Топор";  
+	name 				=	"РўРѕРїРѕСЂ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -207,7 +207,7 @@ INSTANCE ItMw_1h_Vlk_Axe (C_Item)
 // *****************************************************
 INSTANCE ItMw_1H_Mace_L_04 (C_Item)
 {	
-	name 				=	"Молот кузнеца";  
+	name 				=	"РњРѕР»РѕС‚ РєСѓР·РЅРµС†Р°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -232,7 +232,7 @@ INSTANCE ItMw_1H_Mace_L_04 (C_Item)
 // *****************************************************
 INSTANCE ItMw_ShortSword1 (C_Item)
 {	
-	name 				=	"Короткий меч ополчения";  
+	name 				=	"РљРѕСЂРѕС‚РєРёР№ РјРµС‡ РѕРїРѕР»С‡РµРЅРёСЏ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -257,7 +257,7 @@ INSTANCE ItMw_ShortSword1 (C_Item)
 // *****************************************************
 INSTANCE ItMw_Nagelknueppel (C_Item)
 {	
-	name 				=	"Палица с шипами";  //fьr Banditen
+	name 				=	"РџР°Р»РёС†Р° СЃ С€РёРїР°РјРё";  //fСЊr Banditen
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -282,7 +282,7 @@ INSTANCE ItMw_Nagelknueppel (C_Item)
 // *****************************************************
 INSTANCE ItMw_1H_Sword_L_03 (C_Item)
 {	
-	name 				=	"Волчий нож";  
+	name 				=	"Р’РѕР»С‡РёР№ РЅРѕР¶";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -307,7 +307,7 @@ INSTANCE ItMw_1H_Sword_L_03 (C_Item)
 // *****************************************************
 INSTANCE ItMw_ShortSword2 (C_Item)
 {	
-	name 				=	"Грубый короткий меч";  
+	name 				=	"Р“СЂСѓР±С‹Р№ РєРѕСЂРѕС‚РєРёР№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -332,7 +332,7 @@ INSTANCE ItMw_ShortSword2 (C_Item)
 // *****************************************************
 INSTANCE ItMw_Sense (C_Item)
 {	
-	name 				=	"Малая коса";  
+	name 				=	"РњР°Р»Р°СЏ РєРѕСЃР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -357,7 +357,7 @@ INSTANCE ItMw_Sense (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Vlk_Sword (C_Item)
 {	
-	name 				=	"Шпага";  
+	name 				=	"РЁРїР°РіР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -385,7 +385,7 @@ INSTANCE ItMw_1h_Vlk_Sword (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Nov_Mace (C_Item)
 {	
-	name 				=	"Боевой посох";  
+	name 				=	"Р‘РѕРµРІРѕР№ РїРѕСЃРѕС…";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -410,7 +410,7 @@ INSTANCE ItMw_1h_Nov_Mace (C_Item)
 // *****************************************************
 INSTANCE ItMw_2h_Bau_Axe (C_Item)
 {	
-	name 				=	"Топор дровосека";  
+	name 				=	"РўРѕРїРѕСЂ РґСЂРѕРІРѕСЃРµРєР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -435,7 +435,7 @@ INSTANCE ItMw_2h_Bau_Axe (C_Item)
 // *****************************************************
 INSTANCE ItMw_2H_Axe_L_01 (C_Item) 
 {	
-	name 				=	"Кирка";
+	name 				=	"РљРёСЂРєР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE | ITEM_NSPLIT;
@@ -460,7 +460,7 @@ INSTANCE ItMw_2H_Axe_L_01 (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_MISC_Sword (C_Item) 
 {	
-	name 				=	"Ржавый меч";  //STANDARDOBJEKTIERUNG
+	name 				=	"Р Р¶Р°РІС‹Р№ РјРµС‡";  //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -485,7 +485,7 @@ INSTANCE ItMw_1h_MISC_Sword (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Misc_Axe (C_Item)
 {	
-	name 				=	"Ржавый топор";  //STANDARDOBJEKTIERUNG
+	name 				=	"Р Р¶Р°РІС‹Р№ С‚РѕРїРѕСЂ";  //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -510,7 +510,7 @@ INSTANCE ItMw_1h_Misc_Axe (C_Item)
 // *****************************************************
 INSTANCE ItMw_2H_Sword_M_01 (C_Item) 
 {	
-	name 				=	"Ржавый двуручный меч"; //STANDARDOBJEKTIERUNG
+	name 				=	"Р Р¶Р°РІС‹Р№ РґРІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡"; //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -535,7 +535,7 @@ INSTANCE ItMw_2H_Sword_M_01 (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Mil_Sword (C_Item)
 {	
-	name 				=	"Грубый палаш";  //NUR MILIZ
+	name 				=	"Р“СЂСѓР±С‹Р№ РїР°Р»Р°С€";  //NUR MILIZ
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -560,7 +560,7 @@ INSTANCE ItMw_1h_Mil_Sword (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Sld_Axe (C_Item)
 {	
-	name 				=	"Грубый тесак";  //SЦLDNER
+	name 				=	"Р“СЂСѓР±С‹Р№ С‚РµСЃР°Рє";  //SР¦LDNER
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -585,7 +585,7 @@ INSTANCE ItMw_1h_Sld_Axe (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Sld_Sword (C_Item)
 {	
-	name 				=	"Грубый меч";  //SЦLDNER
+	name 				=	"Р“СЂСѓР±С‹Р№ РјРµС‡";  //SР¦LDNER
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -608,10 +608,10 @@ INSTANCE ItMw_1h_Sld_Sword (C_Item)
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 // *****************************************************
-// ****** folgende Waffen sind eigentlich zu gut fьr Kapitel 1, NSCs sind aber noch VIEL zu stark ******
+// ****** folgende Waffen sind eigentlich zu gut fСЊr Kapitel 1, NSCs sind aber noch VIEL zu stark ******
 INSTANCE ItMw_2h_Sld_Axe (C_Item)
 {	
-	name 				=	"Грубый боевой топор";  
+	name 				=	"Р“СЂСѓР±С‹Р№ Р±РѕРµРІРѕР№ С‚РѕРїРѕСЂ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -636,7 +636,7 @@ INSTANCE ItMw_2h_Sld_Axe (C_Item)
 // *****************************************************
 INSTANCE ItMw_2h_Sld_Sword (C_Item)
 {	
-	name 				=	"Грубый двуручный меч";  
+	name 				=	"Р“СЂСѓР±С‹Р№ РґРІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -661,7 +661,7 @@ INSTANCE ItMw_2h_Sld_Sword (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Pal_Sword (C_Item)
 {	
-	name 				=	"Меч паладина";  //NUR PALADIN 
+	name 				=	"РњРµС‡ РїР°Р»Р°РґРёРЅР°";  //NUR PALADIN 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -686,7 +686,7 @@ INSTANCE ItMw_1h_Pal_Sword (C_Item)
 // *****************************************************
 INSTANCE ItMw_2h_Pal_Sword (C_Item)
 {	
-	name 				=	"Двуручный меч паладина";  //NUR PALADIN 
+	name 				=	"Р”РІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡ РїР°Р»Р°РґРёРЅР°";  //NUR PALADIN 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -712,12 +712,12 @@ INSTANCE ItMw_2h_Pal_Sword (C_Item)
 // ************************************
 // Ork- und Echsenmenschenwaffen
 // -----------------------------
-// ACHTUNG: Orkwaffen kцnnen auch schon 
+// ACHTUNG: Orkwaffen kС†nnen auch schon 
 // in Kapitel 1 erlangt werden!
 // ************************************
 INSTANCE ItMw_2H_OrcAxe_01 (C_Item)
 {	
-	name 				=	"Легкий топор орков";
+	name 				=	"Р›РµРіРєРёР№ С‚РѕРїРѕСЂ РѕСЂРєРѕРІ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -742,7 +742,7 @@ INSTANCE ItMw_2H_OrcAxe_01 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_OrcAxe_02 (C_Item)
 {	
-	name 				=	"Средний топор орков";
+	name 				=	"РЎСЂРµРґРЅРёР№ С‚РѕРїРѕСЂ РѕСЂРєРѕРІ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -767,7 +767,7 @@ INSTANCE ItMw_2H_OrcAxe_02 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_OrcAxe_03 (C_Item)
 {	
-	name 				=	"Тяжелый топор орков";
+	name 				=	"РўСЏР¶РµР»С‹Р№ С‚РѕРїРѕСЂ РѕСЂРєРѕРІ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -792,7 +792,7 @@ INSTANCE ItMw_2H_OrcAxe_03 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_OrcAxe_04 (C_Item)
 {	
-	name 				=	"Брутальный топор орков";
+	name 				=	"Р‘СЂСѓС‚Р°Р»СЊРЅС‹Р№ С‚РѕРїРѕСЂ РѕСЂРєРѕРІ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -815,9 +815,9 @@ INSTANCE ItMw_2H_OrcAxe_04 (C_Item)
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 /********************************************************************************/
-INSTANCE ItMw_2H_OrcSword_01 (C_Item) // *** fьr Drakonier!!! ***
+INSTANCE ItMw_2H_OrcSword_01 (C_Item) // *** fСЊr Drakonier!!! ***
 {	
-	name 				=	"Меч ящера"; 
+	name 				=	"РњРµС‡ СЏС‰РµСЂР°"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -840,9 +840,9 @@ INSTANCE ItMw_2H_OrcSword_01 (C_Item) // *** fьr Drakonier!!! ***
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 /********************************************************************************/
-INSTANCE ItMw_2H_OrcSword_02 (C_Item) // *** fьr Orcritter!!! ***
+INSTANCE ItMw_2H_OrcSword_02 (C_Item) // *** fСЊr Orcritter!!! ***
 {	
-	name 				=	"Военный меч орков"; 
+	name 				=	"Р’РѕРµРЅРЅС‹Р№ РјРµС‡ РѕСЂРєРѕРІ"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -867,11 +867,11 @@ INSTANCE ItMw_2H_OrcSword_02 (C_Item) // *** fьr Orcritter!!! ***
 /********************************************************************************/
 
 // *******************
-// Kapitel 1 - Hдndler
+// Kapitel 1 - HРґndler
 // *******************
 INSTANCE ItMw_ShortSword3 (C_Item)
 {	
-	name 				=	"Короткий меч";  
+	name 				=	"РљРѕСЂРѕС‚РєРёР№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -896,7 +896,7 @@ INSTANCE ItMw_ShortSword3 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Nagelkeule (C_Item)
 {	
-	name 				=	"Дубина с шипами";  
+	name 				=	"Р”СѓР±РёРЅР° СЃ С€РёРїР°РјРё";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -921,7 +921,7 @@ INSTANCE ItMw_Nagelkeule (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_ShortSword4 (C_Item)
 {	
-	name 				=	"Волчий зуб";  
+	name 				=	"Р’РѕР»С‡РёР№ Р·СѓР±";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -946,7 +946,7 @@ INSTANCE ItMw_ShortSword4 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Kriegskeule (C_Item)
 {	
-	name 				=	"Военная дубина";  
+	name 				=	"Р’РѕРµРЅРЅР°СЏ РґСѓР±РёРЅР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -971,7 +971,7 @@ INSTANCE ItMw_Kriegskeule (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Richtstab (C_Item)
 {	
-	name 				=	"Посох судьи";  
+	name 				=	"РџРѕСЃРѕС… СЃСѓРґСЊРё";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -996,7 +996,7 @@ INSTANCE ItMw_Richtstab (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_ShortSword5 (C_Item)
 {	
-	name 				=	"Изысканный короткий меч";  
+	name 				=	"РР·С‹СЃРєР°РЅРЅС‹Р№ РєРѕСЂРѕС‚РєРёР№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1021,7 +1021,7 @@ INSTANCE ItMw_ShortSword5 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Kriegshammer1 (C_Item) 
 {	
-	name 				=	"Военный молот";
+	name 				=	"Р’РѕРµРЅРЅС‹Р№ РјРѕР»РѕС‚";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1046,7 +1046,7 @@ INSTANCE ItMw_Kriegshammer1 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Hellebarde (C_Item) 
 {	
-	name 				=	"Алебарда";
+	name 				=	"РђР»РµР±Р°СЂРґР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1071,7 +1071,7 @@ INSTANCE ItMw_Hellebarde (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Nagelkeule2 (C_Item)
 {	
-	name 				=	"Тяжелая дубина с шипами";  
+	name 				=	"РўСЏР¶РµР»Р°СЏ РґСѓР±РёРЅР° СЃ С€РёРїР°РјРё";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1096,7 +1096,7 @@ INSTANCE ItMw_Nagelkeule2 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schiffsaxt (C_Item)
 {	
-	name 				=	"Корабельный топор";  
+	name 				=	"РљРѕСЂР°Р±РµР»СЊРЅС‹Р№ С‚РѕРїРѕСЂ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1121,7 +1121,7 @@ INSTANCE ItMw_Schiffsaxt (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Piratensaebel (C_Item)
 {	
-	name 				=	"Пиратская абордажная сабля";  
+	name 				=	"РџРёСЂР°С‚СЃРєР°СЏ Р°Р±РѕСЂРґР°Р¶РЅР°СЏ СЃР°Р±Р»СЏ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1146,7 +1146,7 @@ INSTANCE ItMw_Piratensaebel (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert (C_Item)
 {	
-	name 				=	"Грубый длинный меч";  
+	name 				=	"Р“СЂСѓР±С‹Р№ РґР»РёРЅРЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1201,11 +1201,11 @@ INSTANCE ItMw_1H_Common_01 (C_Item)
 };
 /********************************************************************************/
 // *******************
-// Kapitel 2 - Hдndler
+// Kapitel 2 - HРґndler
 // *******************
 INSTANCE ItMw_Stabkeule (C_Item) 
 {	
-	name 				=	"Палица";
+	name 				=	"РџР°Р»РёС†Р°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1230,7 +1230,7 @@ INSTANCE ItMw_Stabkeule (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Zweihaender1 (C_Item) 
 {	
-	name 				=	"Легкий двуручный меч";
+	name 				=	"Р›РµРіРєРёР№ РґРІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1255,7 +1255,7 @@ INSTANCE ItMw_Zweihaender1 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Steinbrecher (C_Item)
 {	
-	name 				=	"Дробитель камней";  
+	name 				=	"Р”СЂРѕР±РёС‚РµР»СЊ РєР°РјРЅРµР№";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1280,7 +1280,7 @@ INSTANCE ItMw_Steinbrecher (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Spicker (C_Item)
 {	
-	name 				=	"Раскалыватель черепов";  
+	name 				=	"Р Р°СЃРєР°Р»С‹РІР°С‚РµР»СЊ С‡РµСЂРµРїРѕРІ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1289,7 +1289,7 @@ INSTANCE ItMw_Spicker (C_Item)
 	value 				=	Value_Spicker;
 
 	damageTotal  		= 	Damage_Spicker;
-	damagetype 			=	DAM_BLUNT;	//Point Schaden fьhrt direkt zum Tod!!
+	damagetype 			=	DAM_BLUNT;	//Point Schaden fСЊhrt direkt zum Tod!!
 	range    			=  	Range_Spicker;		
 
 	cond_atr[2]   		=	ATR_STRENGTH;
@@ -1305,7 +1305,7 @@ INSTANCE ItMw_Spicker (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Streitaxt1 (C_Item) 
 {	
-	name 				=	"Легкий боевой топор";
+	name 				=	"Р›РµРіРєРёР№ Р±РѕРµРІРѕР№ С‚РѕРїРѕСЂ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1330,7 +1330,7 @@ INSTANCE ItMw_Streitaxt1 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert1 (C_Item)
 {	
-	name 				=	"Изысканный меч";  
+	name 				=	"РР·С‹СЃРєР°РЅРЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1358,7 +1358,7 @@ INSTANCE ItMw_Schwert1 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert2 (C_Item)
 {	
-	name 				=	"Длинный меч";  
+	name 				=	"Р”Р»РёРЅРЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1383,7 +1383,7 @@ INSTANCE ItMw_Schwert2 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Doppelaxt (C_Item) 
 {	
-	name 				=	"Двойной топор";
+	name 				=	"Р”РІРѕР№РЅРѕР№ С‚РѕРїРѕСЂ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1408,7 +1408,7 @@ INSTANCE ItMw_Doppelaxt (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Bartaxt (C_Item) 
 {	
-	name 				=	"Бердыш";
+	name 				=	"Р‘РµСЂРґС‹С€";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1433,7 +1433,7 @@ INSTANCE ItMw_Bartaxt (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Morgenstern (C_Item)
 {	
-	name 				=	"Булава с шипами";  
+	name 				=	"Р‘СѓР»Р°РІР° СЃ С€РёРїР°РјРё";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1458,7 +1458,7 @@ INSTANCE ItMw_Morgenstern (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert3 (C_Item)
 {	
-	name 				=	"Грубый полуторный меч";  
+	name 				=	"Р“СЂСѓР±С‹Р№ РїРѕР»СѓС‚РѕСЂРЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1483,7 +1483,7 @@ INSTANCE ItMw_Schwert3 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert4 (C_Item)
 {	
-	name 				=	"Изысканный длинный меч";  
+	name 				=	"РР·С‹СЃРєР°РЅРЅС‹Р№ РґР»РёРЅРЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1570,11 +1570,11 @@ INSTANCE ItMw_2H_Special_01 (C_Item)
 };
 /********************************************************************************/
 // *******************
-// Kapitel 3 - Hдndler
+// Kapitel 3 - HРґndler
 // *******************
 INSTANCE ItMw_Rapier (C_Item) 
 {	
-	name 				=	"Рапира";
+	name 				=	"Р Р°РїРёСЂР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1602,7 +1602,7 @@ INSTANCE ItMw_Rapier (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Rubinklinge (C_Item) 
 {	
-	name 				=	"Рубиновый клинок";
+	name 				=	"Р СѓР±РёРЅРѕРІС‹Р№ РєР»РёРЅРѕРє";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1630,7 +1630,7 @@ INSTANCE ItMw_Rubinklinge (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Streitkolben (C_Item)
 {	
-	name 				=	"Булава";  
+	name 				=	"Р‘СѓР»Р°РІР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1655,7 +1655,7 @@ INSTANCE ItMw_Streitkolben (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Zweihaender2 (C_Item) 
 {	
-	name 				=	"Двуручный меч";
+	name 				=	"Р”РІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1680,7 +1680,7 @@ INSTANCE ItMw_Zweihaender2 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Runenschwert (C_Item)
 {	
-	name 				=	"Рунный меч";  
+	name 				=	"Р СѓРЅРЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1705,7 +1705,7 @@ INSTANCE ItMw_Runenschwert (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Rabenschnabel (C_Item)
 {	
-	name 				=	"Клюв ворона";  
+	name 				=	"РљР»СЋРІ РІРѕСЂРѕРЅР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1730,7 +1730,7 @@ INSTANCE ItMw_Rabenschnabel (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert5 (C_Item)
 {	
-	name 				=	"Изысканный полуторный меч";  
+	name 				=	"РР·С‹СЃРєР°РЅРЅС‹Р№ РїРѕР»СѓС‚РѕСЂРЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1755,7 +1755,7 @@ INSTANCE ItMw_Schwert5 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Inquisitor (C_Item)
 {	
-	name 				=	"Инквизитор";  
+	name 				=	"РРЅРєРІРёР·РёС‚РѕСЂ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1780,7 +1780,7 @@ INSTANCE ItMw_Inquisitor (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Streitaxt2 (C_Item)
 {	
-	name 				=	"Боевой топор";  
+	name 				=	"Р‘РѕРµРІРѕР№ С‚РѕРїРѕСЂ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1805,7 +1805,7 @@ INSTANCE ItMw_Streitaxt2 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Zweihaender3 (C_Item)
 {	
-	name 				=	"Сила Рун";  
+	name 				=	"РЎРёР»Р° Р СѓРЅ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1889,11 +1889,11 @@ INSTANCE ItMw_2H_Special_02 (C_Item)
 };
 /********************************************************************************/
 // *******************
-// Kapitel 4 - Hдndler
+// Kapitel 4 - HРґndler
 // *******************
 INSTANCE ItMw_ElBastardo (C_Item)
 {	
-	name 				=	"Эль-бастардо";  
+	name 				=	"Р­Р»СЊ-Р±Р°СЃС‚Р°СЂРґРѕ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1921,7 +1921,7 @@ INSTANCE ItMw_ElBastardo (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Kriegshammer2 (C_Item)
 {	
-	name 				=	"Тяжелый военный молот";  
+	name 				=	"РўСЏР¶РµР»С‹Р№ РІРѕРµРЅРЅС‹Р№ РјРѕР»РѕС‚";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1946,7 +1946,7 @@ INSTANCE ItMw_Kriegshammer2 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Meisterdegen (C_Item)
 {	
-	name 				=	"Шпага мастера";  
+	name 				=	"РЁРїР°РіР° РјР°СЃС‚РµСЂР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1974,7 +1974,7 @@ INSTANCE ItMw_Meisterdegen (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Folteraxt (C_Item)
 {	
-	name 				=	"Топор палача";  
+	name 				=	"РўРѕРїРѕСЂ РїР°Р»Р°С‡Р°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1999,7 +1999,7 @@ INSTANCE ItMw_Folteraxt (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Orkschlaechter (C_Item)
 {	
-	name 				=	"Убийца орков";  
+	name 				=	"РЈР±РёР№С†Р° РѕСЂРєРѕРІ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2024,7 +2024,7 @@ INSTANCE ItMw_Orkschlaechter (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Zweihaender4 (C_Item)
 {	
-	name 				=	"Тяжелый двуручный меч";  
+	name 				=	"РўСЏР¶РµР»С‹Р№ РґРІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2049,7 +2049,7 @@ INSTANCE ItMw_Zweihaender4 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schlachtaxt (C_Item)
 {	
-	name 				=	"Военный топор";  
+	name 				=	"Р’РѕРµРЅРЅС‹Р№ С‚РѕРїРѕСЂ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2074,7 +2074,7 @@ INSTANCE ItMw_Schlachtaxt (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Krummschwert (C_Item)
 {	
-	name 				=	"Абордажная сабля";  
+	name 				=	"РђР±РѕСЂРґР°Р¶РЅР°СЏ СЃР°Р±Р»СЏ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2099,7 +2099,7 @@ INSTANCE ItMw_Krummschwert (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Barbarenstreitaxt (C_Item)
 {	
-	name 				=	"Боевой топор варваров";  
+	name 				=	"Р‘РѕРµРІРѕР№ С‚РѕРїРѕСЂ РІР°СЂРІР°СЂРѕРІ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2122,9 +2122,9 @@ INSTANCE ItMw_Barbarenstreitaxt (C_Item)
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 /********************************************************************************/
-INSTANCE ItMw_Sturmbringer (C_Item)		//Joly: trдgt None_101_Mario_DI, aber erst auf der Dracheninsel
+INSTANCE ItMw_Sturmbringer (C_Item)		//Joly: trРґgt None_101_Mario_DI, aber erst auf der Dracheninsel
 {	
-	name 				=	"Несущий бурю";  
+	name 				=	"РќРµСЃСѓС‰РёР№ Р±СѓСЂСЋ";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2209,11 +2209,11 @@ INSTANCE ItMw_2H_Special_03 (C_Item)
 };
 /********************************************************************************/
 // *******************
-// Kapitel 5 - Hдndler
+// Kapitel 5 - HРґndler
 // *******************
 INSTANCE ItMw_Berserkeraxt (C_Item)//Joly:Auf Dracheninsel beim Schwarzmagiernovizen
 {	
-	name 				=	"Топор берсеркера";  
+	name 				=	"РўРѕРїРѕСЂ Р±РµСЂСЃРµСЂРєРµСЂР°";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2238,7 +2238,7 @@ INSTANCE ItMw_Berserkeraxt (C_Item)//Joly:Auf Dracheninsel beim Schwarzmagiernov
 /********************************************************************************/
 INSTANCE ItMw_Drachenschneide (C_Item) 
 {	
-	name 				=	"Гроза драконов";
+	name 				=	"Р“СЂРѕР·Р° РґСЂР°РєРѕРЅРѕРІ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2326,7 +2326,7 @@ INSTANCE ItMw_2H_Special_04  (C_Item)
 // ************************
 INSTANCE ItMw_1H_Blessed_01 (C_Item) 
 {	
-	name 				=	"Грубый рудный клинок";
+	name 				=	"Р“СЂСѓР±С‹Р№ СЂСѓРґРЅС‹Р№ РєР»РёРЅРѕРє";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD | ITEM_MISSION;	
@@ -2351,7 +2351,7 @@ INSTANCE ItMw_1H_Blessed_01 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_1H_Blessed_02 (C_Item) 
 {	
-	name 				=	"Освященный рудный клинок";
+	name 				=	"РћСЃРІСЏС‰РµРЅРЅС‹Р№ СЂСѓРґРЅС‹Р№ РєР»РёРЅРѕРє";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD | ITEM_MISSION;	
@@ -2376,7 +2376,7 @@ INSTANCE ItMw_1H_Blessed_02 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_1H_Blessed_03 (C_Item) 
 {	
-	name 				=	"Гнев Инноса";
+	name 				=	"Р“РЅРµРІ РРЅРЅРѕСЃР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD | ITEM_MISSION;	
@@ -2401,7 +2401,7 @@ INSTANCE ItMw_1H_Blessed_03 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Blessed_01 (C_Item) 
 {	
-	name 				=	"Грубый рудный клинок";
+	name 				=	"Р“СЂСѓР±С‹Р№ СЂСѓРґРЅС‹Р№ РєР»РёРЅРѕРє";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2426,7 +2426,7 @@ INSTANCE ItMw_2H_Blessed_01 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Blessed_02 (C_Item) 
 {	
-	name 				=	"Меч ордена";
+	name 				=	"РњРµС‡ РѕСЂРґРµРЅР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2451,7 +2451,7 @@ INSTANCE ItMw_2H_Blessed_02 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Blessed_03 (C_Item) 
 {	
-	name 				=	"Святой палач";
+	name 				=	"РЎРІСЏС‚РѕР№ РїР°Р»Р°С‡";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2508,7 +2508,7 @@ INSTANCE ItMw_1H_Sword_L_01 (C_Item)
 
 INSTANCE ItMw_1H_Mace_L_02 (C_Item)
 {	
-	name 				=	"Knьppel";  
+	name 				=	"KnСЊppel";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -2892,7 +2892,7 @@ INSTANCE ItMw_1H_Mace_L_07 (C_Item)
 
 INSTANCE ItMw_1H_Sword_L_09 (C_Item)
 {	
-	name 				=	"Piratensдbel";  
+	name 				=	"PiratensРґbel";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3119,7 +3119,7 @@ INSTANCE ItMw_1H_Mace_M_02 (C_Item)
 
 INSTANCE ItMw_1H_Sword_M_02 (C_Item)
 {	
-	name 				=	"Sдbel";  
+	name 				=	"SРґbel";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3396,7 +3396,7 @@ INSTANCE ItMw_1H_Mace_M_07 (C_Item)
 
 INSTANCE ItMw_1H_Sword_M_05 (C_Item)
 {	
-	name 				=	"Schдdelspalter";  
+	name 				=	"SchРґdelspalter";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3650,7 +3650,7 @@ INSTANCE ItMw_1H_Sword_H_05 (C_Item)
 
 INSTANCE ItMw_1H_Axe_H_03 (C_Item)
 {	
-	name 				=	"Sцldneraxt";  
+	name 				=	"SС†ldneraxt";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -3707,7 +3707,7 @@ INSTANCE ItMw_1H_Mace_H_03 (C_Item)
 
 INSTANCE ItMw_2H_Axe_L_02 (C_Item) 
 {	
-	name 				=	"Holzfдlleraxt";
+	name 				=	"HolzfРґlleraxt";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -3834,7 +3834,7 @@ INSTANCE ItMw_2H_Mace_L_02 (C_Item)
 
 INSTANCE ItMw_2H_Mace_L_03 (C_Item) 
 {	
-	name 				=	"Orkschlдger";
+	name 				=	"OrkschlРґger";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -3909,7 +3909,7 @@ INSTANCE ItMw_2H_Axe_L_04 (C_Item)
 
 INSTANCE ItMw_2H_Mace_L_04 (C_Item) 
 {	
-	name 				=	"Trollschlдger";
+	name 				=	"TrollschlРґger";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -4088,7 +4088,7 @@ INSTANCE ItMw_2H_Mace_M_03 (C_Item)
 
 INSTANCE ItMw_2H_Sword_M_03 (C_Item) 
 {	
-	name 				=	"Alter Zweihдnder";
+	name 				=	"Alter ZweihРґnder";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4163,7 +4163,7 @@ INSTANCE ItMw_2H_Mace_M_04 (C_Item)
 
 INSTANCE ItMw_2H_Sword_M_04 (C_Item) 
 {	
-	name 				=	"Orktцter";
+	name 				=	"OrktС†ter";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4190,20 +4190,20 @@ INSTANCE ItMw_2H_Sword_M_04 (C_Item)
 
 INSTANCE ItMw_2H_Sword_M_05 (C_Item) 
 {	
-	name 				=	"GroЯschwert";
+	name 				=	"GroРЇschwert";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
 	material 			=	MAT_METAL;
 
-	value 				=	Value_GroЯschwert;
+	value 				=	Value_GroРЇschwert;
 
-	damageTotal			= 	Damage_GroЯschwert;
+	damageTotal			= 	Damage_GroРЇschwert;
 	damagetype			=	DAM_EDGE;
-	range    			=  	Range_GroЯschwert;		
+	range    			=  	Range_GroРЇschwert;		
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
-	cond_value[2]  		= 	Condition_GroЯschwert;
+	cond_value[2]  		= 	Condition_GroРЇschwert;
 	visual 				=	"ItMw_2H_Sword_M_05.3DS";
 
 	description			= name;
@@ -4215,20 +4215,20 @@ INSTANCE ItMw_2H_Sword_M_05 (C_Item)
 
 INSTANCE ItMw_2H_Axe_M_04 (C_Item) 
 {	
-	name 				=	"GroЯaxt";
+	name 				=	"GroРЇaxt";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
 	material 			=	MAT_METAL;
 
-	value 				=	Value_GroЯaxt;
+	value 				=	Value_GroРЇaxt;
 
-	damageTotal			= 	Damage_GroЯaxt;
+	damageTotal			= 	Damage_GroРЇaxt;
 	damagetype			=	DAM_EDGE;
-	range    			=  	Range_GroЯaxt;		
+	range    			=  	Range_GroРЇaxt;		
 
 	cond_atr[2]   		= 	ATR_STRENGTH;
-	cond_value[2]  		= 	Condition_GroЯaxt;
+	cond_value[2]  		= 	Condition_GroРЇaxt;
 	visual 				=	"ItMw_2H_Axe_M_04.3DS";
 
 	description			= name;
@@ -4240,7 +4240,7 @@ INSTANCE ItMw_2H_Axe_M_04 (C_Item)
 
 INSTANCE ItMw_2H_Sword_M_06 (C_Item) 
 {	
-	name 				=	"Trolltцter";
+	name 				=	"TrolltС†ter";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4265,7 +4265,7 @@ INSTANCE ItMw_2H_Sword_M_06 (C_Item)
 
 INSTANCE ItMw_2H_Sword_M_07 (C_Item) 
 {	
-	name 				=	"Leichter Zweihдnder";
+	name 				=	"Leichter ZweihРґnder";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4592,7 +4592,7 @@ INSTANCE ItMw_2H_Sword_H_04 (C_Item)
 
 INSTANCE ItMw_2H_Sword_H_05 (C_Item) 
 {	
-	name 				=	"Schwerer Zweihдnder";
+	name 				=	"Schwerer ZweihРґnder";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4694,7 +4694,7 @@ INSTANCE ItMw_2H_Sword_H_07 (C_Item)
 
 INSTANCE ItMw_2H_Axe_H_04 (C_Item) 
 {	
-	name 				=	"Drachenjдgeraxt";
+	name 				=	"DrachenjРґgeraxt";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -4772,7 +4772,7 @@ INSTANCE ItMw_1H_Blessed_01 (C_Item)
 
 INSTANCE ItMw_1H_Blessed_02 (C_Item) 
 {	
-	name 				=	"Schwert der BuЯe";
+	name 				=	"Schwert der BuРЇe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4822,7 +4822,7 @@ INSTANCE ItMw_1H_Blessed_03 (C_Item)
 
 INSTANCE ItMw_2H_Blessed_01 (C_Item) 
 {	
-	name 				=	"Verkьnder des Glaubens";
+	name 				=	"VerkСЊnder des Glaubens";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	

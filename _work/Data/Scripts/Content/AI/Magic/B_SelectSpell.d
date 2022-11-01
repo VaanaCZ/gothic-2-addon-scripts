@@ -1,15 +1,15 @@
 // *************************************************************
 // B_SelectSpell
 // -------------
-// Magieauswahl für Menschen und Monster
-// Wenn Auswahlkriterien erfüllt (je nach Gilde unterschiedlich)
+// Magieauswahl fÑŒr Menschen und Monster
+// Wenn Auswahlkriterien erfÑŒllt (je nach Gilde unterschiedlich)
 // --> TRUE, sonst FALSE
 // Humans zaubern nur als KdF, PAL oder DMT
 // *************************************************************
 
 func int B_SelectSpell (var C_NPC slf, var C_NPC oth)
 {	
-	// ------ Npctype_Friend macht höchstens Sleep ------
+	// ------ Npctype_Friend macht hÑ†chstens Sleep ------
 	if (slf.npctype == NPCTYPE_FRIEND)
 	&& (Npc_IsPlayer (oth))
 	&& (oth.guild < GIL_SEPERATOR_HUM) //nicht gegen verwandelten Spieler
@@ -59,7 +59,7 @@ func int B_SelectSpell (var C_NPC slf, var C_NPC oth)
 				return TRUE;	// nichts tun wenn gerade am waffe ziehen
 			};
 		
-			// ------ Random für eine Serie ------
+			// ------ Random fÑŒr eine Serie ------
 			if (slf.aivar[AIV_SelectSpell] <= 0)
 			{
 				var int dK_rnd; dK_rnd = Hlp_Random(10);
@@ -88,7 +88,7 @@ func int B_SelectSpell (var C_NPC slf, var C_NPC oth)
 			};
 		};
 		
-		return TRUE;		// hier immer TRUE zurückgeben, ansonsten wird in B_SelectWeapon die Waffe wieder weggesteckt
+		return TRUE;		// hier immer TRUE zurÑŒckgeben, ansonsten wird in B_SelectWeapon die Waffe wieder weggesteckt
 	};
 
 	// ------ Magier ------

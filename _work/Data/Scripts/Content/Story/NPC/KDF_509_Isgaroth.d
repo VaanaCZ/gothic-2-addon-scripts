@@ -1,7 +1,7 @@
 INSTANCE KDF_509_Isgaroth (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Исгарот";
+	name 		= "РСЃРіР°СЂРѕС‚";
 	guild 		= GIL_KDF;
 	id 			= 509;
 	voice 		= 1;

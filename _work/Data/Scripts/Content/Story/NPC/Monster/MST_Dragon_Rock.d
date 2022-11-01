@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Rock(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Каменный дракон";
+	name							=	"РљР°РјРµРЅРЅС‹Р№ РґСЂР°РєРѕРЅ";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_ROCK;
 	level							=	400;
@@ -34,7 +34,7 @@ PROTOTYPE Mst_Default_Dragon_Rock(C_Npc)
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;
 	damage		[DAM_INDEX_FIRE]	=	139;
-	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fьr Fire+Fly
+	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fСЊr Fire+Fly
 //	damage		[DAM_INDEX_MAGIC]	=	0;
 
 	//------ Kampf-Taktik -----	
@@ -75,7 +75,7 @@ func void B_SetVisuals_Dragon_Rock()
 
 INSTANCE Dragon_Rock	(Mst_Default_Dragon_Rock)
 {
-	name				=	"Педракан";
+	name				=	"РџРµРґСЂР°РєР°РЅ";
 	flags				   			= 	NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Rock();
 	Npc_SetToFistMode(self);

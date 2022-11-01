@@ -27,37 +27,37 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentSmith,"Чтобы выковать оружие, прежде всего мне нужна сырая сталь. Я должен докрасна нагреть ее в огне кузнечного горна, а затем придать форму на наковальне. Особое оружие зачастую требует особых материалов, придающих оружию особые свойства. ");
+	B_LogEntry (TOPIC_TalentSmith,"Р§С‚РѕР±С‹ РІС‹РєРѕРІР°С‚СЊ РѕСЂСѓР¶РёРµ, РїСЂРµР¶РґРµ РІСЃРµРіРѕ РјРЅРµ РЅСѓР¶РЅР° СЃС‹СЂР°СЏ СЃС‚Р°Р»СЊ. РЇ РґРѕР»Р¶РµРЅ РґРѕРєСЂР°СЃРЅР° РЅР°РіСЂРµС‚СЊ РµРµ РІ РѕРіРЅРµ РєСѓР·РЅРµС‡РЅРѕРіРѕ РіРѕСЂРЅР°, Р° Р·Р°С‚РµРј РїСЂРёРґР°С‚СЊ С„РѕСЂРјСѓ РЅР° РЅР°РєРѕРІР°Р»СЊРЅРµ. РћСЃРѕР±РѕРµ РѕСЂСѓР¶РёРµ Р·Р°С‡Р°СЃС‚СѓСЋ С‚СЂРµР±СѓРµС‚ РѕСЃРѕР±С‹С… РјР°С‚РµСЂРёР°Р»РѕРІ, РїСЂРёРґР°СЋС‰РёС… РѕСЂСѓР¶РёСЋ РѕСЃРѕР±С‹Рµ СЃРІРѕР№СЃС‚РІР°. ");
 	
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'кустарного меча' мне не нужно никаких ингредиентов.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'РєСѓСЃС‚Р°СЂРЅРѕРіРѕ РјРµС‡Р°' РјРЅРµ РЅРµ РЅСѓР¶РЅРѕ РЅРёРєР°РєРёС… РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ.");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'длинного рудного меча' мне нужен 1 кусок руды.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'РґР»РёРЅРЅРѕРіРѕ СЂСѓРґРЅРѕРіРѕ РјРµС‡Р°' РјРЅРµ РЅСѓР¶РµРЅ 1 РєСѓСЃРѕРє СЂСѓРґС‹.");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'двуручного рудного меча' мне нужно 2 куска руды.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'РґРІСѓСЂСѓС‡РЅРѕРіРѕ СЂСѓРґРЅРѕРіРѕ РјРµС‡Р°' РјРЅРµ РЅСѓР¶РЅРѕ 2 РєСѓСЃРєР° СЂСѓРґС‹.");};
 	if (waffe == WEAPON_1H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'полуторного рудного меча' мне нужно 2 куска руды.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'РїРѕР»СѓС‚РѕСЂРЅРѕРіРѕ СЂСѓРґРЅРѕРіРѕ РјРµС‡Р°' РјРЅРµ РЅСѓР¶РЅРѕ 2 РєСѓСЃРєР° СЂСѓРґС‹.");};
 	if (waffe == WEAPON_2H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'тяжелого двуручного рудного меча' мне нужно 3 куска руды.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'С‚СЏР¶РµР»РѕРіРѕ РґРІСѓСЂСѓС‡РЅРѕРіРѕ СЂСѓРґРЅРѕРіРѕ РјРµС‡Р°' РјРЅРµ РЅСѓР¶РЅРѕ 3 РєСѓСЃРєР° СЂСѓРґС‹.");};
 	if (waffe == WEAPON_1H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'боевого рудного меча' мне нужно 3 куска руды.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'Р±РѕРµРІРѕРіРѕ СЂСѓРґРЅРѕРіРѕ РјРµС‡Р°' РјРЅРµ РЅСѓР¶РЅРѕ 3 РєСѓСЃРєР° СЂСѓРґС‹.");};
 	if (waffe == WEAPON_2H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'тяжелого боевого рудного меча' мне нужно 4 куска руды.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'С‚СЏР¶РµР»РѕРіРѕ Р±РѕРµРІРѕРіРѕ СЂСѓРґРЅРѕРіРѕ РјРµС‡Р°' РјРЅРµ РЅСѓР¶РЅРѕ 4 РєСѓСЃРєР° СЂСѓРґС‹.");};
 	if (waffe == WEAPON_1H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'рудного убийцы драконов' мне нужно 4 куска руды и 5 флаконов крови дракона.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'СЂСѓРґРЅРѕРіРѕ СѓР±РёР№С†С‹ РґСЂР°РєРѕРЅРѕРІ' РјРЅРµ РЅСѓР¶РЅРѕ 4 РєСѓСЃРєР° СЂСѓРґС‹ Рё 5 С„Р»Р°РєРѕРЅРѕРІ РєСЂРѕРІРё РґСЂР°РєРѕРЅР°.");};
 	if (waffe == WEAPON_2H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Для 'большого рудного убийцы драконов' мне нужно 5 куска руды и 5 флаконов крови дракона.");};
+	B_LogEntry (TOPIC_TalentSmith,"Р”Р»СЏ 'Р±РѕР»СЊС€РѕРіРѕ СЂСѓРґРЅРѕРіРѕ СѓР±РёР№С†С‹ РґСЂР°РєРѕРЅРѕРІ' РјРЅРµ РЅСѓР¶РЅРѕ 5 РєСѓСЃРєР° СЂСѓРґС‹ Рё 5 С„Р»Р°РєРѕРЅРѕРІ РєСЂРѕРІРё РґСЂР°РєРѕРЅР°.");};
 	
 	//Harad - Addon
 	if (waffe == WEAPON_1H_Harad_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Теперь я могу выковать изысканный меч."); };
+	B_LogEntry (TOPIC_TalentSmith,"РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РІС‹РєРѕРІР°С‚СЊ РёР·С‹СЃРєР°РЅРЅС‹Р№ РјРµС‡."); };
 	if (waffe == WEAPON_1H_Harad_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Теперь я могу выковать изысканный длинный меч."); };
+	B_LogEntry (TOPIC_TalentSmith,"РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РІС‹РєРѕРІР°С‚СЊ РёР·С‹СЃРєР°РЅРЅС‹Р№ РґР»РёРЅРЅС‹Р№ РјРµС‡."); };
 	if (waffe == WEAPON_1H_Harad_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Теперь я могу выковать рубиновый клинок."); };
-	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;	B_LogEntry (TOPIC_TalentSmith,"Харад передал мне секрет ковки 'Эль Бастардо' - одного из лучших клинков в мире!"); };
+	B_LogEntry (TOPIC_TalentSmith,"РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РІС‹РєРѕРІР°С‚СЊ СЂСѓР±РёРЅРѕРІС‹Р№ РєР»РёРЅРѕРє."); };
+	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;	B_LogEntry (TOPIC_TalentSmith,"РҐР°СЂР°Рґ РїРµСЂРµРґР°Р» РјРЅРµ СЃРµРєСЂРµС‚ РєРѕРІРєРё 'Р­Р»СЊ Р‘Р°СЃС‚Р°СЂРґРѕ' - РѕРґРЅРѕРіРѕ РёР· Р»СѓС‡С€РёС… РєР»РёРЅРєРѕРІ РІ РјРёСЂРµ!"); };
 	
 	PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 	

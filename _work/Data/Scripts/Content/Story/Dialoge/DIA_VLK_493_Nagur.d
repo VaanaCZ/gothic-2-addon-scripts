@@ -81,12 +81,12 @@ FUNC VOID DIA_Nagur_Hallo_Info()
 {
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Nagur_Hallo_08_00");//Эй, у меня нет времени, чтобы болтать с тобой. Если тебе нужна информация, поговори с Кардифом.
+		AI_Output (self, other, "DIA_Nagur_Hallo_08_00");//Р­Р№, Сѓ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё, С‡С‚РѕР±С‹ Р±РѕР»С‚Р°С‚СЊ СЃ С‚РѕР±РѕР№. Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ, РїРѕРіРѕРІРѕСЂРё СЃ РљР°СЂРґРёС„РѕРј.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Nagur_Hallo_08_01");//Послушай, оставь меня в покое, хорошо?
+		AI_Output (self, other, "DIA_Nagur_Hallo_08_01");//РџРѕСЃР»СѓС€Р°Р№, РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, С…РѕСЂРѕС€Рѕ?
 		AI_StopProcessInfos (self);
 	};
 };
@@ -106,11 +106,11 @@ FUNC VOID DIA_Nagur_Hallo_Info()
 		&& (Hlp_IsItem (heroArmor, ItAr_KDF_L) == FALSE)
 		&& (Hlp_IsItem (heroArmor, ItAr_KDF_H) == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Nagur_Add_08_02"); //Ты думаешь, я не узнаю тебя, раз ты надел другую одежду?!
+			AI_Output (self ,other,"DIA_Nagur_Add_08_02"); //РўС‹ РґСѓРјР°РµС€СЊ, СЏ РЅРµ СѓР·РЅР°СЋ С‚РµР±СЏ, СЂР°Р· С‚С‹ РЅР°РґРµР» РґСЂСѓРіСѓСЋ РѕРґРµР¶РґСѓ?!
 		};
 		
-		AI_Output (self ,other,"DIA_Nagur_Add_08_03"); //(заговорщицки) Не суй нос туда, куда не следует!
-		AI_Output (self ,other,"DIA_Nagur_Add_08_04"); //Проваливай!
+		AI_Output (self ,other,"DIA_Nagur_Add_08_03"); //(Р·Р°РіРѕРІРѕСЂС‰РёС†РєРё) РќРµ СЃСѓР№ РЅРѕСЃ С‚СѓРґР°, РєСѓРґР° РЅРµ СЃР»РµРґСѓРµС‚!
+		AI_Output (self ,other,"DIA_Nagur_Add_08_04"); //РџСЂРѕРІР°Р»РёРІР°Р№!
 		
 		MIS_Nagur_Bote = LOG_SUCCESS; //HACK: Attila kommt bei 3* Success oder 1* suckt --> nur noch die anderen beiden Missionen sind Trigger
 		NagurHack = TRUE;
@@ -124,7 +124,7 @@ INSTANCE DIA_Nagur_Job   (C_INFO)
 	condition   = DIA_Nagur_Job_Condition;
 	information = DIA_Nagur_Job_Info;
 	permanent   = FALSE;
-	description = "Кардиф говорит, что у тебя может быть работа для меня.";
+	description = "РљР°СЂРґРёС„ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ Сѓ С‚РµР±СЏ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ.";
 };
 FUNC INT DIA_Nagur_Job_Condition()
 {	
@@ -135,42 +135,42 @@ FUNC INT DIA_Nagur_Job_Condition()
 };
 FUNC VOID DIA_Nagur_Job_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Job_15_00");//Кардиф говорит, что у тебя может быть работа для меня.
+	AI_Output (other, self, "DIA_Nagur_Job_15_00");//РљР°СЂРґРёС„ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ Сѓ С‚РµР±СЏ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ.
 	if (other.guild == GIL_NOV)
 	|| (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Nagur_Add_08_00"); //Здесь, в гавани НЕТ работы для людей из монастыря! (смеется)
+		AI_Output (self ,other,"DIA_Nagur_Add_08_00"); //Р—РґРµСЃСЊ, РІ РіР°РІР°РЅРё РќР•Рў СЂР°Р±РѕС‚С‹ РґР»СЏ Р»СЋРґРµР№ РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ! (СЃРјРµРµС‚СЃСЏ)
 		B_Nagur_Abfertigen();
 	}
 	else if (other.guild == GIL_MIL)
 	|| 		(other.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Nagur_Add_08_01"); //Здесь, в гавани НЕТ работы для королевских солдат.
+		AI_Output (self ,other,"DIA_Nagur_Add_08_01"); //Р—РґРµСЃСЊ, РІ РіР°РІР°РЅРё РќР•Рў СЂР°Р±РѕС‚С‹ РґР»СЏ РєРѕСЂРѕР»РµРІСЃРєРёС… СЃРѕР»РґР°С‚.
 		B_Nagur_Abfertigen();
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Nagur_Job_08_01");//(оценивающе) Так, так... Ты ищешь особенную работу. Ладно. Но будем играть по моим правилам, понятно?
-		AI_Output (other, self, "DIA_Nagur_Job_15_02");//Что это значит?
-		AI_Output (self, other, "DIA_Nagur_Job_08_03");//Это значит, что ты будешь делать, что я скажу, и будешь получать треть от навара.
-		AI_Output (self, other, "DIA_Nagur_Job_08_04");//Если тебя это не устраивает, то у меня нет работы для тебя.
+		AI_Output (self, other, "DIA_Nagur_Job_08_01");//(РѕС†РµРЅРёРІР°СЋС‰Рµ) РўР°Рє, С‚Р°Рє... РўС‹ РёС‰РµС€СЊ РѕСЃРѕР±РµРЅРЅСѓСЋ СЂР°Р±РѕС‚Сѓ. Р›Р°РґРЅРѕ. РќРѕ Р±СѓРґРµРј РёРіСЂР°С‚СЊ РїРѕ РјРѕРёРј РїСЂР°РІРёР»Р°Рј, РїРѕРЅСЏС‚РЅРѕ?
+		AI_Output (other, self, "DIA_Nagur_Job_15_02");//Р§С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚?
+		AI_Output (self, other, "DIA_Nagur_Job_08_03");//Р­С‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ, С‡С‚Рѕ СЏ СЃРєР°Р¶Сѓ, Рё Р±СѓРґРµС€СЊ РїРѕР»СѓС‡Р°С‚СЊ С‚СЂРµС‚СЊ РѕС‚ РЅР°РІР°СЂР°.
+		AI_Output (self, other, "DIA_Nagur_Job_08_04");//Р•СЃР»Рё С‚РµР±СЏ СЌС‚Рѕ РЅРµ СѓСЃС‚СЂР°РёРІР°РµС‚, С‚Рѕ Сѓ РјРµРЅСЏ РЅРµС‚ СЂР°Р±РѕС‚С‹ РґР»СЏ С‚РµР±СЏ.
 	
 		Info_ClearChoices (DIA_Nagur_Job);
-		Info_AddChoice  (DIA_Nagur_Job,"Мы партнеры. Поэтому пятьдесят на пятьдесят. ",DIA_Nagur_Job_Halbe);
-		Info_AddChoice  (DIA_Nagur_Job,"Хорошо, ты здесь главный.",DIA_Nagur_Job_Klar);
+		Info_AddChoice  (DIA_Nagur_Job,"РњС‹ РїР°СЂС‚РЅРµСЂС‹. РџРѕСЌС‚РѕРјСѓ РїСЏС‚СЊРґРµСЃСЏС‚ РЅР° РїСЏС‚СЊРґРµСЃСЏС‚. ",DIA_Nagur_Job_Halbe);
+		Info_AddChoice  (DIA_Nagur_Job,"РҐРѕСЂРѕС€Рѕ, С‚С‹ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№.",DIA_Nagur_Job_Klar);
 	};
 };
 FUNC VOID DIA_Nagur_Job_Klar()
 {
-	AI_Output (other, self, "DIA_Nagur_Job_Klar_15_00");//Хорошо, ты здесь главный.
-	AI_Output (self, other, "DIA_Nagur_Job_Klar_08_01");//Отлично. Тогда дай мне знать, когда будешь готов заработать кучу золота.
+	AI_Output (other, self, "DIA_Nagur_Job_Klar_15_00");//РҐРѕСЂРѕС€Рѕ, С‚С‹ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№.
+	AI_Output (self, other, "DIA_Nagur_Job_Klar_08_01");//РћС‚Р»РёС‡РЅРѕ. РўРѕРіРґР° РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РєСѓС‡Сѓ Р·РѕР»РѕС‚Р°.
 	Nagur_Deal = 80;
 	Info_ClearChoices (DIA_Nagur_Job);
 };
 FUNC VOID DIA_Nagur_Job_Halbe()
 {
-	AI_Output (other, self, "DIA_Nagur_Job_Halbe_15_00");//Мы партнеры. Поэтому пятьдесят на пятьдесят.
-	AI_Output (self, other, "DIA_Nagur_Job_Halbe_08_01");//Хорошо, это разумно. Конечно же, мы будем делить заработанное честно.
+	AI_Output (other, self, "DIA_Nagur_Job_Halbe_15_00");//РњС‹ РїР°СЂС‚РЅРµСЂС‹. РџРѕСЌС‚РѕРјСѓ РїСЏС‚СЊРґРµСЃСЏС‚ РЅР° РїСЏС‚СЊРґРµСЃСЏС‚.
+	AI_Output (self, other, "DIA_Nagur_Job_Halbe_08_01");//РҐРѕСЂРѕС€Рѕ, СЌС‚Рѕ СЂР°Р·СѓРјРЅРѕ. РљРѕРЅРµС‡РЅРѕ Р¶Рµ, РјС‹ Р±СѓРґРµРј РґРµР»РёС‚СЊ Р·Р°СЂР°Р±РѕС‚Р°РЅРЅРѕРµ С‡РµСЃС‚РЅРѕ.
 	Nagur_Deal = 120;
 	Info_ClearChoices (DIA_Nagur_Job);
 };
@@ -184,7 +184,7 @@ INSTANCE DIA_Nagur_Auftrag   (C_INFO)
 	condition   = DIA_Nagur_Auftrag_Condition;
 	information = DIA_Nagur_Auftrag_Info;
 	permanent   = FALSE;
-	description = "Договорились. Так какой у тебя план?";
+	description = "Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ. РўР°Рє РєР°РєРѕР№ Сѓ С‚РµР±СЏ РїР»Р°РЅ?";
 };
 
 FUNC INT DIA_Nagur_Auftrag_Condition()
@@ -197,53 +197,53 @@ FUNC INT DIA_Nagur_Auftrag_Condition()
 };
 FUNC VOID DIA_Nagur_Auftrag_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_15_00");//Договорились. Так какой у тебя план?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_01");//Ты знаешь торговца Бальтрама, нет? Если нет, пришло время поговорить с ним.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_02");//У этого Бальтрама есть посыльный, доставлявший ему товары с фермы Акила.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_03");//Вернее у него БЫЛ посыльный, пока я не перерезал ему глотку. И теперь Бальтраму придется искать нового мальчика на побегушках. И им будешь ты.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_04");//Ты должен поступить на работу к Бальтраму и взять посылку у Акила.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_05");//Затем ты принесешь ее мне, а я продам ее заинтересованному покупателю. Он даст неплохую цену за нее.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_08_06");//И не пытайся продать эти товары сам. Ты все понял?
+	AI_Output (other, self, "DIA_Nagur_Auftrag_15_00");//Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ. РўР°Рє РєР°РєРѕР№ Сѓ С‚РµР±СЏ РїР»Р°РЅ?
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_01");//РўС‹ Р·РЅР°РµС€СЊ С‚РѕСЂРіРѕРІС†Р° Р‘Р°Р»СЊС‚СЂР°РјР°, РЅРµС‚? Р•СЃР»Рё РЅРµС‚, РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_02");//РЈ СЌС‚РѕРіРѕ Р‘Р°Р»СЊС‚СЂР°РјР° РµСЃС‚СЊ РїРѕСЃС‹Р»СЊРЅС‹Р№, РґРѕСЃС‚Р°РІР»СЏРІС€РёР№ РµРјСѓ С‚РѕРІР°СЂС‹ СЃ С„РµСЂРјС‹ РђРєРёР»Р°.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_03");//Р’РµСЂРЅРµРµ Сѓ РЅРµРіРѕ Р‘Р«Р› РїРѕСЃС‹Р»СЊРЅС‹Р№, РїРѕРєР° СЏ РЅРµ РїРµСЂРµСЂРµР·Р°Р» РµРјСѓ РіР»РѕС‚РєСѓ. Р С‚РµРїРµСЂСЊ Р‘Р°Р»СЊС‚СЂР°РјСѓ РїСЂРёРґРµС‚СЃСЏ РёСЃРєР°С‚СЊ РЅРѕРІРѕРіРѕ РјР°Р»СЊС‡РёРєР° РЅР° РїРѕР±РµРіСѓС€РєР°С…. Р РёРј Р±СѓРґРµС€СЊ С‚С‹.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_04");//РўС‹ РґРѕР»Р¶РµРЅ РїРѕСЃС‚СѓРїРёС‚СЊ РЅР° СЂР°Р±РѕС‚Сѓ Рє Р‘Р°Р»СЊС‚СЂР°РјСѓ Рё РІР·СЏС‚СЊ РїРѕСЃС‹Р»РєСѓ Сѓ РђРєРёР»Р°.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_05");//Р—Р°С‚РµРј С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РµРµ РјРЅРµ, Р° СЏ РїСЂРѕРґР°Рј РµРµ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°РЅРЅРѕРјСѓ РїРѕРєСѓРїР°С‚РµР»СЋ. РћРЅ РґР°СЃС‚ РЅРµРїР»РѕС…СѓСЋ С†РµРЅСѓ Р·Р° РЅРµРµ.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_08_06");//Р РЅРµ РїС‹С‚Р°Р№СЃСЏ РїСЂРѕРґР°С‚СЊ СЌС‚Рё С‚РѕРІР°СЂС‹ СЃР°Рј. РўС‹ РІСЃРµ РїРѕРЅСЏР»?
 	
 	Info_ClearChoices (DIA_Nagur_Auftrag);
-	Info_AddChoice    (DIA_Nagur_Auftrag,"Хорошо, договорились (КОНЕЦ)",DIA_Nagur_Auftrag_Okay);
-	Info_AddChoice    (DIA_Nagur_Auftrag,"Где мне найти Бальтрама?",DIA_Nagur_Auftrag_Baltram);
-	Info_AddChoice    (DIA_Nagur_Auftrag,"Когда мне поговорить с Бальтрамом?",DIA_Nagur_Auftrag_Wann);
-	Info_AddChoice    (DIA_Nagur_Auftrag,"Где ферма Акила?",DIA_Nagur_Auftrag_Akil);
-	Info_AddChoice    (DIA_Nagur_Auftrag,"Какой ожидается навар?",DIA_Nagur_Auftrag_Gewinn);
+	Info_AddChoice    (DIA_Nagur_Auftrag,"РҐРѕСЂРѕС€Рѕ, РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ (РљРћРќР•Р¦)",DIA_Nagur_Auftrag_Okay);
+	Info_AddChoice    (DIA_Nagur_Auftrag,"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р‘Р°Р»СЊС‚СЂР°РјР°?",DIA_Nagur_Auftrag_Baltram);
+	Info_AddChoice    (DIA_Nagur_Auftrag,"РљРѕРіРґР° РјРЅРµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р‘Р°Р»СЊС‚СЂР°РјРѕРј?",DIA_Nagur_Auftrag_Wann);
+	Info_AddChoice    (DIA_Nagur_Auftrag,"Р“РґРµ С„РµСЂРјР° РђРєРёР»Р°?",DIA_Nagur_Auftrag_Akil);
+	Info_AddChoice    (DIA_Nagur_Auftrag,"РљР°РєРѕР№ РѕР¶РёРґР°РµС‚СЃСЏ РЅР°РІР°СЂ?",DIA_Nagur_Auftrag_Gewinn);
 
 };
 FUNC VOID DIA_Nagur_Auftrag_Akil()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_Akil_15_00");//Где ферма Акила?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_01");//Выйдешь из города через восточные ворота, что находятся на рыночной площади.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_02");//Если ты пойдешь по дороге направо, вскоре увидишь лестницу, вырезанную в скале.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_03");//Поднимись по ней и окажешься на ферме Акила.
+	AI_Output (other, self, "DIA_Nagur_Auftrag_Akil_15_00");//Р“РґРµ С„РµСЂРјР° РђРєРёР»Р°?
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_01");//Р’С‹Р№РґРµС€СЊ РёР· РіРѕСЂРѕРґР° С‡РµСЂРµР· РІРѕСЃС‚РѕС‡РЅС‹Рµ РІРѕСЂРѕС‚Р°, С‡С‚Рѕ РЅР°С…РѕРґСЏС‚СЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_02");//Р•СЃР»Рё С‚С‹ РїРѕР№РґРµС€СЊ РїРѕ РґРѕСЂРѕРіРµ РЅР°РїСЂР°РІРѕ, РІСЃРєРѕСЂРµ СѓРІРёРґРёС€СЊ Р»РµСЃС‚РЅРёС†Сѓ, РІС‹СЂРµР·Р°РЅРЅСѓСЋ РІ СЃРєР°Р»Рµ.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Akil_08_03");//РџРѕРґРЅРёРјРёСЃСЊ РїРѕ РЅРµР№ Рё РѕРєР°Р¶РµС€СЊСЃСЏ РЅР° С„РµСЂРјРµ РђРєРёР»Р°.
 };
 FUNC VOID DIA_Nagur_Auftrag_Gewinn()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_Gewinn_15_00");//Какой ожидается навар?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Gewinn_08_01");//Не могу сказать точно. Но, я думаю, не менее 400 монет.
+	AI_Output (other, self, "DIA_Nagur_Auftrag_Gewinn_15_00");//РљР°РєРѕР№ РѕР¶РёРґР°РµС‚СЃСЏ РЅР°РІР°СЂ?
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Gewinn_08_01");//РќРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РѕС‡РЅРѕ. РќРѕ, СЏ РґСѓРјР°СЋ, РЅРµ РјРµРЅРµРµ 400 РјРѕРЅРµС‚.
 };
 FUNC VOID DIA_Nagur_Auftrag_Baltram()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_Baltram_15_00");//Где мне найти Бальтрама?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Baltram_08_01");//Его прилавок находится на рыночной площади.
+	AI_Output (other, self, "DIA_Nagur_Auftrag_Baltram_15_00");//Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р‘Р°Р»СЊС‚СЂР°РјР°?
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Baltram_08_01");//Р•РіРѕ РїСЂРёР»Р°РІРѕРє РЅР°С…РѕРґРёС‚СЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
 };
 FUNC VOID DIA_Nagur_Auftrag_Wann()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_Wann_15_00");//Когда мне поговорить с Бальтрамом?
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Wann_08_01");//Ты можешь сделать это прямо сейчас. Он уже должен понять, что его посыльный никогда уже не появится. (грязный смех)
+	AI_Output (other, self, "DIA_Nagur_Auftrag_Wann_15_00");//РљРѕРіРґР° РјРЅРµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р‘Р°Р»СЊС‚СЂР°РјРѕРј?
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Wann_08_01");//РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ. РћРЅ СѓР¶Рµ РґРѕР»Р¶РµРЅ РїРѕРЅСЏС‚СЊ, С‡С‚Рѕ РµРіРѕ РїРѕСЃС‹Р»СЊРЅС‹Р№ РЅРёРєРѕРіРґР° СѓР¶Рµ РЅРµ РїРѕСЏРІРёС‚СЃСЏ. (РіСЂСЏР·РЅС‹Р№ СЃРјРµС…)
 };
 FUNC VOID DIA_Nagur_Auftrag_Okay()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftrag_Okay_15_00");//Хорошо, договорились.
-	AI_Output (self, other, "DIA_Nagur_Auftrag_Okay_08_01");//Отлично. Тогда за дело - но если ты попытаешься обмануть меня, тебя будет ждать та же судьба, что и этого посыльного! Не забывай об этом!
+	AI_Output (other, self, "DIA_Nagur_Auftrag_Okay_15_00");//РҐРѕСЂРѕС€Рѕ, РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ.
+	AI_Output (self, other, "DIA_Nagur_Auftrag_Okay_08_01");//РћС‚Р»РёС‡РЅРѕ. РўРѕРіРґР° Р·Р° РґРµР»Рѕ - РЅРѕ РµСЃР»Рё С‚С‹ РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ, С‚РµР±СЏ Р±СѓРґРµС‚ Р¶РґР°С‚СЊ С‚Р° Р¶Рµ СЃСѓРґСЊР±Р°, С‡С‚Рѕ Рё СЌС‚РѕРіРѕ РїРѕСЃС‹Р»СЊРЅРѕРіРѕ! РќРµ Р·Р°Р±С‹РІР°Р№ РѕР± СЌС‚РѕРј!
 	MIS_Nagur_Bote = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Nagur,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Nagur,LOG_RUNNING);
-	B_LogEntry (TOPIC_Nagur,"Я должен заставить Бальтрама взять меня в качестве мальчика на побегушках. Затем я должен забрать посылку у фермера Акила и принести ее Нагуру.");
+	B_LogEntry (TOPIC_Nagur,"РЇ РґРѕР»Р¶РµРЅ Р·Р°СЃС‚Р°РІРёС‚СЊ Р‘Р°Р»СЊС‚СЂР°РјР° РІР·СЏС‚СЊ РјРµРЅСЏ РІ РєР°С‡РµСЃС‚РІРµ РјР°Р»СЊС‡РёРєР° РЅР° РїРѕР±РµРіСѓС€РєР°С…. Р—Р°С‚РµРј СЏ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ РїРѕСЃС‹Р»РєСѓ Сѓ С„РµСЂРјРµСЂР° РђРєРёР»Р° Рё РїСЂРёРЅРµСЃС‚Рё РµРµ РќР°РіСѓСЂСѓ.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -257,7 +257,7 @@ INSTANCE DIA_Nagur_Success   (C_INFO)
 	condition   = DIA_Nagur_Success_Condition;
 	information = DIA_Nagur_Success_Info;
 	permanent   = FALSE;
-	description = "Я принес пакет.";
+	description = "РЇ РїСЂРёРЅРµСЃ РїР°РєРµС‚.";
 };
 
 FUNC INT DIA_Nagur_Success_Condition()
@@ -271,10 +271,10 @@ FUNC INT DIA_Nagur_Success_Condition()
 };
 FUNC VOID DIA_Nagur_Success_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Success_15_00");//Я принес пакет.
-	AI_Output (self, other, "DIA_Nagur_Success_08_01");//Отлично. Теперь мне нужно продать его. Заходи завтра.
+	AI_Output (other, self, "DIA_Nagur_Success_15_00");//РЇ РїСЂРёРЅРµСЃ РїР°РєРµС‚.
+	AI_Output (self, other, "DIA_Nagur_Success_08_01");//РћС‚Р»РёС‡РЅРѕ. РўРµРїРµСЂСЊ РјРЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРґР°С‚СЊ РµРіРѕ. Р—Р°С…РѕРґРё Р·Р°РІС‚СЂР°.
 	
-	B_LogEntry (TOPIC_Nagur,   "Нагур получил посылку. Он заплатит мне золотом завтра.");
+	B_LogEntry (TOPIC_Nagur,   "РќР°РіСѓСЂ РїРѕР»СѓС‡РёР» РїРѕСЃС‹Р»РєСѓ. РћРЅ Р·Р°РїР»Р°С‚РёС‚ РјРЅРµ Р·РѕР»РѕС‚РѕРј Р·Р°РІС‚СЂР°.");
 	
 	AI_StopProcessInfos (self);
 	
@@ -294,7 +294,7 @@ INSTANCE DIA_Nagur_Deal   (C_INFO)
 	condition   = DIA_Nagur_Deal_Condition;
 	information = DIA_Nagur_Deal_Info;
 	permanent   = TRUE;
-	description = "Ты уже продал товары?";
+	description = "РўС‹ СѓР¶Рµ РїСЂРѕРґР°Р» С‚РѕРІР°СЂС‹?";
 };
 //---------------------------------
 var int DIA_Nagur_Deal_permanent; 
@@ -311,16 +311,16 @@ FUNC INT DIA_Nagur_Deal_Condition()
 };
 FUNC VOID DIA_Nagur_Deal_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Deal_15_00");//Ты уже продал товары?
+	AI_Output (other, self, "DIA_Nagur_Deal_15_00");//РўС‹ СѓР¶Рµ РїСЂРѕРґР°Р» С‚РѕРІР°СЂС‹?
 	
 	if (B_GetDayPlus() > NagurDay) 
 	{
-		AI_Output (self, other, "DIA_Nagur_Deal_08_01");//Да, но за меньшую сумму, чем рассчитывал. Я получил только 300 монет.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_02");//Часть этой суммы пошла моим хозяевам...
-		AI_Output (self, other, "DIA_Nagur_Deal_08_03");//И Кардиф получил свой обычный процент - плюс золото за то, что он нашел тебя.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_04");//Остается 240 золотых монет. Мы поделим их как договорились. Вот твоя доля.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_05");//Ты хорошо поработал. Я сообщил об этом моим хозяевам.
-		AI_Output (self, other, "DIA_Nagur_Deal_08_06");//Что из этого выйдет - не знаю.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_01");//Р”Р°, РЅРѕ Р·Р° РјРµРЅСЊС€СѓСЋ СЃСѓРјРјСѓ, С‡РµРј СЂР°СЃСЃС‡РёС‚С‹РІР°Р». РЇ РїРѕР»СѓС‡РёР» С‚РѕР»СЊРєРѕ 300 РјРѕРЅРµС‚.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_02");//Р§Р°СЃС‚СЊ СЌС‚РѕР№ СЃСѓРјРјС‹ РїРѕС€Р»Р° РјРѕРёРј С…РѕР·СЏРµРІР°Рј...
+		AI_Output (self, other, "DIA_Nagur_Deal_08_03");//Р РљР°СЂРґРёС„ РїРѕР»СѓС‡РёР» СЃРІРѕР№ РѕР±С‹С‡РЅС‹Р№ РїСЂРѕС†РµРЅС‚ - РїР»СЋСЃ Р·РѕР»РѕС‚Рѕ Р·Р° С‚Рѕ, С‡С‚Рѕ РѕРЅ РЅР°С€РµР» С‚РµР±СЏ.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_04");//РћСЃС‚Р°РµС‚СЃСЏ 240 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. РњС‹ РїРѕРґРµР»РёРј РёС… РєР°Рє РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ. Р’РѕС‚ С‚РІРѕСЏ РґРѕР»СЏ.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_05");//РўС‹ С…РѕСЂРѕС€Рѕ РїРѕСЂР°Р±РѕС‚Р°Р». РЇ СЃРѕРѕР±С‰РёР» РѕР± СЌС‚РѕРј РјРѕРёРј С…РѕР·СЏРµРІР°Рј.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_06");//Р§С‚Рѕ РёР· СЌС‚РѕРіРѕ РІС‹Р№РґРµС‚ - РЅРµ Р·РЅР°СЋ.
 		
 		B_GiveInvItems (self,other,ItMi_Gold,Nagur_Deal);
 		MIS_Nagur_Bote = LOG_SUCCESS;
@@ -332,7 +332,7 @@ FUNC VOID DIA_Nagur_Deal_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Nagur_Deal_08_07");//Пока еще нет. На это нужно время. Я не хочу продешевить.
+		AI_Output (self, other, "DIA_Nagur_Deal_08_07");//РџРѕРєР° РµС‰Рµ РЅРµС‚. РќР° СЌС‚Рѕ РЅСѓР¶РЅРѕ РІСЂРµРјСЏ. РЇ РЅРµ С…РѕС‡Сѓ РїСЂРѕРґРµС€РµРІРёС‚СЊ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -345,7 +345,7 @@ INSTANCE DIA_Nagur_Auftraggeber   (C_INFO)
 	condition   = DIA_Nagur_Auftraggeber_Condition;
 	information = DIA_Nagur_Auftraggeber_Info;
 	permanent   = FALSE;
-	description = "Кто твои хозяева?";
+	description = "РљС‚Рѕ С‚РІРѕРё С…РѕР·СЏРµРІР°?";
 };
 
 FUNC INT DIA_Nagur_Auftraggeber_Condition()
@@ -357,8 +357,8 @@ FUNC INT DIA_Nagur_Auftraggeber_Condition()
 };
 FUNC VOID DIA_Nagur_Auftraggeber_Info()
 {
-	AI_Output (other, self, "DIA_Nagur_Auftraggeber_15_00");//Кто твои хозяева?
-	AI_Output (self, other, "DIA_Nagur_Auftraggeber_08_01");//Ты что, действительно думаешь, что я просто так возьму и скажу тебе?
+	AI_Output (other, self, "DIA_Nagur_Auftraggeber_15_00");//РљС‚Рѕ С‚РІРѕРё С…РѕР·СЏРµРІР°?
+	AI_Output (self, other, "DIA_Nagur_Auftraggeber_08_01");//РўС‹ С‡С‚Рѕ, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє РІРѕР·СЊРјСѓ Рё СЃРєР°Р¶Сѓ С‚РµР±Рµ?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info erneutes ansprechen
@@ -385,7 +385,7 @@ FUNC INT DIA_Nagur_Fazit_Condition()
 };
 FUNC VOID DIA_Nagur_Fazit_Info()
 {	
-	AI_Output (self, other, "DIA_Nagur_Fazit_08_00");//Дело прошло удачно, но я не говорю о своих хозяевах. Так что можешь расслабиться.
+	AI_Output (self, other, "DIA_Nagur_Fazit_08_00");//Р”РµР»Рѕ РїСЂРѕС€Р»Рѕ СѓРґР°С‡РЅРѕ, РЅРѕ СЏ РЅРµ РіРѕРІРѕСЂСЋ Рѕ СЃРІРѕРёС… С…РѕР·СЏРµРІР°С…. РўР°Рє С‡С‚Рѕ РјРѕР¶РµС€СЊ СЂР°СЃСЃР»Р°Р±РёС‚СЊСЃСЏ.
 	AI_StopProcessInfos  (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -412,7 +412,7 @@ FUNC INT DIA_Nagur_Knast_Condition()
 };
 FUNC VOID DIA_Nagur_Knast_Info()
 {	
-	AI_Output (self, other, "DIA_Nagur_Knast_08_00");//Ты предал меня! Это была большая ошибка - а теперь проваливай!
+	AI_Output (self, other, "DIA_Nagur_Knast_08_00");//РўС‹ РїСЂРµРґР°Р» РјРµРЅСЏ! Р­С‚Рѕ Р±С‹Р»Р° Р±РѕР»СЊС€Р°СЏ РѕС€РёР±РєР° - Р° С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -425,7 +425,7 @@ INSTANCE DIA_Nagur_Sign   (C_INFO)
 	condition   = DIA_Nagur_Sign_Condition;
 	information = DIA_Nagur_Sign_Info;
 	permanent   = FALSE;
-	description	= "(Показать сигнал воров)";
+	description	= "(РџРѕРєР°Р·Р°С‚СЊ СЃРёРіРЅР°Р» РІРѕСЂРѕРІ)";
 };
 
 FUNC INT DIA_Nagur_Sign_Condition()
@@ -439,8 +439,8 @@ FUNC INT DIA_Nagur_Sign_Condition()
 FUNC VOID DIA_Nagur_Sign_Info()
 {	
 	AI_PlayAni (other,"T_YES");
-	AI_Output (self, other, "DIA_Nagur_Sign_08_00");//Так тебе удалось это. Теперь ты знаешь, кто мои хозяева.
-	AI_Output (self, other, "DIA_Nagur_Sign_08_01");//Не забывай о том, что Кассия говорит тебе - нам не интересно, кто ты такой. Ты один из нас, и только это имеет значение.
+	AI_Output (self, other, "DIA_Nagur_Sign_08_00");//РўР°Рє С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ СЌС‚Рѕ. РўРµРїРµСЂСЊ С‚С‹ Р·РЅР°РµС€СЊ, РєС‚Рѕ РјРѕРё С…РѕР·СЏРµРІР°.
+	AI_Output (self, other, "DIA_Nagur_Sign_08_01");//РќРµ Р·Р°Р±С‹РІР°Р№ Рѕ С‚РѕРј, С‡С‚Рѕ РљР°СЃСЃРёСЏ РіРѕРІРѕСЂРёС‚ С‚РµР±Рµ - РЅР°Рј РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№. РўС‹ РѕРґРёРЅ РёР· РЅР°СЃ, Рё С‚РѕР»СЊРєРѕ СЌС‚Рѕ РёРјРµРµС‚ Р·РЅР°С‡РµРЅРёРµ.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -467,7 +467,7 @@ FUNC INT DIA_Nagur_Perm_Condition()
 };
 FUNC VOID DIA_Nagur_Perm_Info()
 {	
-	AI_Output (self, other, "DIA_Nagur_Perm_08_00");//Поищи кого-нибудь еще, здесь бродит много народа. А у меня больше ничего нет для тебя.
+	AI_Output (self, other, "DIA_Nagur_Perm_08_00");//РџРѕРёС‰Рё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ, Р·РґРµСЃСЊ Р±СЂРѕРґРёС‚ РјРЅРѕРіРѕ РЅР°СЂРѕРґР°. Рђ Сѓ РјРµРЅСЏ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµС‚ РґР»СЏ С‚РµР±СЏ.
 	AI_StopProcessInfos (self);
 };
 

@@ -32,7 +32,7 @@ instance DIA_Girion_DI_Hallo		(C_INFO)
 	information	 = 	DIA_Girion_DI_Hallo_Info;
 	PERMANENT 	 =  TRUE;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 func int DIA_Girion_DI_Hallo_Condition ()
 {	
@@ -43,20 +43,20 @@ func int DIA_Girion_DI_Hallo_Condition ()
 };
 func void DIA_Girion_DI_Hallo_Info ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_Hallo_15_00"); //Все в порядке?
+	AI_Output			(other, self, "DIA_Girion_DI_Hallo_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 
 	if (ORkSturmDI == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_01"); //У орков хватило мужества, чтобы атаковать меня.
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_02"); //Но им стоило лучше подумать, прежде чем нападать на паладина из королевской стражи.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_01"); //РЈ РѕСЂРєРѕРІ С…РІР°С‚РёР»Рѕ РјСѓР¶РµСЃС‚РІР°, С‡С‚РѕР±С‹ Р°С‚Р°РєРѕРІР°С‚СЊ РјРµРЅСЏ.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_02"); //РќРѕ РёРј СЃС‚РѕРёР»Рѕ Р»СѓС‡С€Рµ РїРѕРґСѓРјР°С‚СЊ, РїСЂРµР¶РґРµ С‡РµРј РЅР°РїР°РґР°С‚СЊ РЅР° РїР°Р»Р°РґРёРЅР° РёР· РєРѕСЂРѕР»РµРІСЃРєРѕР№ СЃС‚СЂР°Р¶Рё.
 		}
 	else if (hero.guild == GIL_PAL)
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_03"); //Думаю, да. Долго ты еще будешь возиться на этом утесе?
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_03"); //Р”СѓРјР°СЋ, РґР°. Р”РѕР»РіРѕ С‚С‹ РµС‰Рµ Р±СѓРґРµС€СЊ РІРѕР·РёС‚СЊСЃСЏ РЅР° СЌС‚РѕРј СѓС‚РµСЃРµ?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_04"); //Не считай меня за идиота. Делай то, что нужно сделать, и побыстрее возвращай корабль мне.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_04"); //РќРµ СЃС‡РёС‚Р°Р№ РјРµРЅСЏ Р·Р° РёРґРёРѕС‚Р°. Р”РµР»Р°Р№ С‚Рѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, Рё РїРѕР±С‹СЃС‚СЂРµРµ РІРѕР·РІСЂР°С‰Р°Р№ РєРѕСЂР°Р±Р»СЊ РјРЅРµ.
 		};
 };
 
@@ -70,7 +70,7 @@ INSTANCE DIA_Girion_DI_Teach(C_INFO)
 	condition	= DIA_Girion_DI_Teach_Condition;
 	information	= DIA_Girion_DI_Teach_Info;
 	permanent	= TRUE;
-	description = "Обучи меня, тогда мы сможем убраться отсюда быстрее!";
+	description = "РћР±СѓС‡Рё РјРµРЅСЏ, С‚РѕРіРґР° РјС‹ СЃРјРѕР¶РµРј СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° Р±С‹СЃС‚СЂРµРµ!";
 };                       
 
 FUNC INT DIA_Girion_DI_Teach_Condition()
@@ -83,8 +83,8 @@ FUNC INT DIA_Girion_DI_Teach_Condition()
  
 FUNC VOID DIA_Girion_DI_Teach_Info()
 {	
-	AI_Output (other,self 	,"DIA_Girion_DI_Teach_15_00"); //Обучи меня, тогда мы сможем быстрее убраться с этого острова.
-	AI_Output (self ,other 	,"DIA_Girion_DI_Teach_08_01"); //Похоже, у меня нет другого выбора.
+	AI_Output (other,self 	,"DIA_Girion_DI_Teach_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ, С‚РѕРіРґР° РјС‹ СЃРјРѕР¶РµРј Р±С‹СЃС‚СЂРµРµ СѓР±СЂР°С‚СЊСЃСЏ СЃ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°.
+	AI_Output (self ,other 	,"DIA_Girion_DI_Teach_08_01"); //РџРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РЅРµС‚ РґСЂСѓРіРѕРіРѕ РІС‹Р±РѕСЂР°.
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -104,7 +104,7 @@ func void DIA_Girion_DI_Teach_CROSSBOW_1()
 {
 	if B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 1, 90)
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_1_08_00"); //При стрельбе никогда не опирайся локтями. Это сделает твою хватку слишком жесткой, и ты неизбежно собьешь прицел.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_1_08_00"); //РџСЂРё СЃС‚СЂРµР»СЊР±Рµ РЅРёРєРѕРіРґР° РЅРµ РѕРїРёСЂР°Р№СЃСЏ Р»РѕРєС‚СЏРјРё. Р­С‚Рѕ СЃРґРµР»Р°РµС‚ С‚РІРѕСЋ С…РІР°С‚РєСѓ СЃР»РёС€РєРѕРј Р¶РµСЃС‚РєРѕР№, Рё С‚С‹ РЅРµРёР·Р±РµР¶РЅРѕ СЃРѕР±СЊРµС€СЊ РїСЂРёС†РµР».
 	};
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
@@ -123,7 +123,7 @@ func void DIA_Girion_DI_Teach_CROSSBOW_5()
 {
 	if B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 5, 90)
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_5_08_00"); //Всегда расслабляй свою левую руку перед выстрелом. Это позволит тебе более точно прицелиться.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_5_08_00"); //Р’СЃРµРіРґР° СЂР°СЃСЃР»Р°Р±Р»СЏР№ СЃРІРѕСЋ Р»РµРІСѓСЋ СЂСѓРєСѓ РїРµСЂРµРґ РІС‹СЃС‚СЂРµР»РѕРј. Р­С‚Рѕ РїРѕР·РІРѕР»РёС‚ С‚РµР±Рµ Р±РѕР»РµРµ С‚РѕС‡РЅРѕ РїСЂРёС†РµР»РёС‚СЊСЃСЏ.
 	};
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
@@ -140,7 +140,7 @@ FUNC VOID DIA_Girion_DI_Teach_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 90))
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_1_08_00"); //Твой клинок должен рассекать воздух как тростник на ветру.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_1_08_00"); //РўРІРѕР№ РєР»РёРЅРѕРє РґРѕР»Р¶РµРЅ СЂР°СЃСЃРµРєР°С‚СЊ РІРѕР·РґСѓС… РєР°Рє С‚СЂРѕСЃС‚РЅРёРє РЅР° РІРµС‚СЂСѓ.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -157,7 +157,7 @@ FUNC VOID DIA_Girion_DI_Teach_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 90))
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_5_08_00"); //Силу нужно применять расчетливо. Если ты слепо будешь бросаться на противника, это не приведет тебя к успеху.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_5_08_00"); //РЎРёР»Сѓ РЅСѓР¶РЅРѕ РїСЂРёРјРµРЅСЏС‚СЊ СЂР°СЃС‡РµС‚Р»РёРІРѕ. Р•СЃР»Рё С‚С‹ СЃР»РµРїРѕ Р±СѓРґРµС€СЊ Р±СЂРѕСЃР°С‚СЊСЃСЏ РЅР° РїСЂРѕС‚РёРІРЅРёРєР°, СЌС‚Рѕ РЅРµ РїСЂРёРІРµРґРµС‚ С‚РµР±СЏ Рє СѓСЃРїРµС…Сѓ.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -174,7 +174,7 @@ FUNC VOID DIA_Girion_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 90))
 	{
-		AI_Output(self,other,"DIA_DIA_Girion_DI_Teach_2H_1_08_00"); //Не сжимай рукоятку слишком сильно, и твой удар точно поразит цель.
+		AI_Output(self,other,"DIA_DIA_Girion_DI_Teach_2H_1_08_00"); //РќРµ СЃР¶РёРјР°Р№ СЂСѓРєРѕСЏС‚РєСѓ СЃР»РёС€РєРѕРј СЃРёР»СЊРЅРѕ, Рё С‚РІРѕР№ СѓРґР°СЂ С‚РѕС‡РЅРѕ РїРѕСЂР°Р·РёС‚ С†РµР»СЊ.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -191,7 +191,7 @@ FUNC VOID DIA_Girion_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 90))
 	{
-		AI_Output(self,other,"DIA_Girion_DI_Teach_2H_5_08_00"); //Не забывай о парировании. Но лучшая оборона - это уклонение от удара врага.
+		AI_Output(self,other,"DIA_Girion_DI_Teach_2H_5_08_00"); //РќРµ Р·Р°Р±С‹РІР°Р№ Рѕ РїР°СЂРёСЂРѕРІР°РЅРёРё. РќРѕ Р»СѓС‡С€Р°СЏ РѕР±РѕСЂРѕРЅР° - СЌС‚Рѕ СѓРєР»РѕРЅРµРЅРёРµ РѕС‚ СѓРґР°СЂР° РІСЂР°РіР°.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -220,7 +220,7 @@ instance DIA_Girion_DI_OrcEliteRing		(C_INFO)
 	information	 = 	DIA_Girion_DI_OrcEliteRing_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"У меня есть кольцо предводителей орков.";
+	description	 = 	"РЈ РјРµРЅСЏ РµСЃС‚СЊ РєРѕР»СЊС†Рѕ РїСЂРµРґРІРѕРґРёС‚РµР»РµР№ РѕСЂРєРѕРІ.";
 };
 
 func int DIA_Girion_DI_OrcEliteRing_Condition ()
@@ -234,24 +234,24 @@ func int DIA_Girion_DI_OrcEliteRing_Condition ()
 var int DIA_Girion_DI_OrcEliteRing_OneTime;
 func void DIA_Girion_DI_OrcEliteRing_Info ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_15_00"); //У меня есть кольцо предводителей орков.
+	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РєРѕР»СЊС†Рѕ РїСЂРµРґРІРѕРґРёС‚РµР»РµР№ РѕСЂРєРѕРІ.
 
 	if (DIA_Girion_DI_OrcEliteRing_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_01"); //Я думаю, лорд Хаген сможет что-нибудь предпринять.
+		AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_01"); //РЇ РґСѓРјР°СЋ, Р»РѕСЂРґ РҐР°РіРµРЅ СЃРјРѕР¶РµС‚ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРµРґРїСЂРёРЅСЏС‚СЊ.
 		DIA_Girion_DI_OrcEliteRing_OneTime = TRUE;
 	};
 
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_02"); //Дай его мне. Я покажу его лорду Хагену.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_02"); //Р”Р°Р№ РµРіРѕ РјРЅРµ. РЇ РїРѕРєР°Р¶Сѓ РµРіРѕ Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ.
 
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
-	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Я лучше оставлю его себе.", DIA_Girion_DI_OrcEliteRing_behalten );
-	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Вот, возьми.", DIA_Girion_DI_OrcEliteRing_geben );
+	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "РЇ Р»СѓС‡С€Рµ РѕСЃС‚Р°РІР»СЋ РµРіРѕ СЃРµР±Рµ.", DIA_Girion_DI_OrcEliteRing_behalten );
+	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Р’РѕС‚, РІРѕР·СЊРјРё.", DIA_Girion_DI_OrcEliteRing_geben );
 };
 func void DIA_Girion_DI_OrcEliteRing_geben ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_geben_15_00"); //Вот, возьми.
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_geben_08_01"); //Спасибо. Все равно я не думаю, что оно может тебе пригодиться.
+	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_geben_15_00"); //Р’РѕС‚, РІРѕР·СЊРјРё.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_geben_08_01"); //РЎРїР°СЃРёР±Рѕ. Р’СЃРµ СЂР°РІРЅРѕ СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ РѕРЅРѕ РјРѕР¶РµС‚ С‚РµР±Рµ РїСЂРёРіРѕРґРёС‚СЊСЃСЏ.
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
 	B_GiveInvItems (other, self, ItRi_OrcEliteRing,1);
 	B_GivePlayerXP (XP_Ambient);
@@ -259,8 +259,8 @@ func void DIA_Girion_DI_OrcEliteRing_geben ()
 
 func void DIA_Girion_DI_OrcEliteRing_behalten ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_behalten_15_00"); //Я лучше оставлю его себе.
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_behalten_08_01"); //Как знаешь. Все равно оно вряд ли тебе пригодится.
+	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_behalten_15_00"); //РЇ Р»СѓС‡С€Рµ РѕСЃС‚Р°РІР»СЋ РµРіРѕ СЃРµР±Рµ.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_behalten_08_01"); //РљР°Рє Р·РЅР°РµС€СЊ. Р’СЃРµ СЂР°РІРЅРѕ РѕРЅРѕ РІСЂСЏРґ Р»Рё С‚РµР±Рµ РїСЂРёРіРѕРґРёС‚СЃСЏ.
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
 };
 
@@ -275,7 +275,7 @@ instance DIA_Girion_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Girion_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Мы готовы к отплытию.";
+	description = 	"РњС‹ РіРѕС‚РѕРІС‹ Рє РѕС‚РїР»С‹С‚РёСЋ.";
 };
 
 func int DIA_Girion_DI_UndeadDragonDead_Condition ()
@@ -289,30 +289,30 @@ func int DIA_Girion_DI_UndeadDragonDead_Condition ()
 var int DIA_Girion_DI_UndeadDragonDead_OneTime;
 func void DIA_Girion_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_00"); //Мы готовы к отплытию.
-	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_01"); //Это хорошо. А то я  уже начал думать, что сгнием здесь на этом утесе.
+	AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_00"); //РњС‹ РіРѕС‚РѕРІС‹ Рє РѕС‚РїР»С‹С‚РёСЋ.
+	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_01"); //Р­С‚Рѕ С…РѕСЂРѕС€Рѕ. Рђ С‚Рѕ СЏ  СѓР¶Рµ РЅР°С‡Р°Р» РґСѓРјР°С‚СЊ, С‡С‚Рѕ СЃРіРЅРёРµРј Р·РґРµСЃСЊ РЅР° СЌС‚РѕРј СѓС‚РµСЃРµ.
 
 	if (DIA_Girion_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_02"); //Теперь немедленно верни корабль мне.
-			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_03"); //Мы еще не в Хоринисе. И, если честно, я не так уж жажду возвращаться назад, на Хоринис.
-			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_04"); //Я и так провел там слишком много времени.
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_05"); //Я так и думал. Но сейчас не место и не время поднимать этот вопрос. Лучше мы обсудим это в открытом море.
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_06"); //Ладно. Я, тем не менее, рад видеть тебя на борту в полном здравии.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_02"); //РўРµРїРµСЂСЊ РЅРµРјРµРґР»РµРЅРЅРѕ РІРµСЂРЅРё РєРѕСЂР°Р±Р»СЊ РјРЅРµ.
+			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_03"); //РњС‹ РµС‰Рµ РЅРµ РІ РҐРѕСЂРёРЅРёСЃРµ. Р, РµСЃР»Рё С‡РµСЃС‚РЅРѕ, СЏ РЅРµ С‚Р°Рє СѓР¶ Р¶Р°Р¶РґСѓ РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РЅР°Р·Р°Рґ, РЅР° РҐРѕСЂРёРЅРёСЃ.
+			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_04"); //РЇ Рё С‚Р°Рє РїСЂРѕРІРµР» С‚Р°Рј СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_05"); //РЇ С‚Р°Рє Рё РґСѓРјР°Р». РќРѕ СЃРµР№С‡Р°СЃ РЅРµ РјРµСЃС‚Рѕ Рё РЅРµ РІСЂРµРјСЏ РїРѕРґРЅРёРјР°С‚СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ. Р›СѓС‡С€Рµ РјС‹ РѕР±СЃСѓРґРёРј СЌС‚Рѕ РІ РѕС‚РєСЂС‹С‚РѕРј РјРѕСЂРµ.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_06"); //Р›Р°РґРЅРѕ. РЇ, С‚РµРј РЅРµ РјРµРЅРµРµ, СЂР°Рґ РІРёРґРµС‚СЊ С‚РµР±СЏ РЅР° Р±РѕСЂС‚Сѓ РІ РїРѕР»РЅРѕРј Р·РґСЂР°РІРёРё.
 			
 			if (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_07"); //Ты настоящий воин Инноса. У меня нет сомнений на этот счет. Я рад, что ты на нашей стороне.
+				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_07"); //РўС‹ РЅР°СЃС‚РѕСЏС‰РёР№ РІРѕРёРЅ РРЅРЅРѕСЃР°. РЈ РјРµРЅСЏ РЅРµС‚ СЃРѕРјРЅРµРЅРёР№ РЅР° СЌС‚РѕС‚ СЃС‡РµС‚. РЇ СЂР°Рґ, С‡С‚Рѕ С‚С‹ РЅР° РЅР°С€РµР№ СЃС‚РѕСЂРѕРЅРµ.
 			}
 			else
 			{
-				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_08"); //Даже хотя ты и мошенник, последнее время ты вел себя как настоящий праведник.
+				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_08"); //Р”Р°Р¶Рµ С…РѕС‚СЏ С‚С‹ Рё РјРѕС€РµРЅРЅРёРє, РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ С‚С‹ РІРµР» СЃРµР±СЏ РєР°Рє РЅР°СЃС‚РѕСЏС‰РёР№ РїСЂР°РІРµРґРЅРёРє.
 			};
 			
 			DIA_Girion_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 
-	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_09"); //Хорошо. Теперь иди к капитану. Пусть он поднимает якорь.
+	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_09"); //РҐРѕСЂРѕС€Рѕ. РўРµРїРµСЂСЊ РёРґРё Рє РєР°РїРёС‚Р°РЅСѓ. РџСѓСЃС‚СЊ РѕРЅ РїРѕРґРЅРёРјР°РµС‚ СЏРєРѕСЂСЊ.
 	AI_StopProcessInfos (self);
 };
 

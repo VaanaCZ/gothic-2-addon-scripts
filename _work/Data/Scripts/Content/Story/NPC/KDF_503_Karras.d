@@ -1,7 +1,7 @@
 INSTANCE KDF_503_Karras (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Каррас";
+	name 		= "РљР°СЂСЂР°СЃ";
 	guild 		= GIL_KDF;
 	id 			= 503;
 	voice 		= 10;

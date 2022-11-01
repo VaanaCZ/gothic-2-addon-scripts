@@ -2,7 +2,7 @@
 instance VLK_443_Arbeiter (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Работник"; 
+	name 		= "Р Р°Р±РѕС‚РЅРёРє"; 
 	guild 		= GIL_VLK;
 	id 			= 443;
 	voice 		= 1;

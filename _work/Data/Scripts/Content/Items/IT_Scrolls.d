@@ -3,7 +3,7 @@
 //*****************************************************************************
 
 // Paladin Scrolls
-const 	string Name_PaladinScroll		=	"Магия Паладинов"; 	
+const 	string Name_PaladinScroll		=	"РњР°РіРёСЏ РџР°Р»Р°РґРёРЅРѕРІ"; 	
 const	int	Value_Sc_PalLight			=	50;
 const	int	Value_Sc_PalLightHeal		=	100;
 const	int	Value_Sc_PalHolyBolt		=	200;

@@ -2,7 +2,7 @@
 instance VLK_4111_Grimes (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Гримс";
+	name 		= "Р“СЂРёРјСЃ";
 	guild 		= GIL_OUT;
 	id 			= 4111;
 	voice 		= 5;

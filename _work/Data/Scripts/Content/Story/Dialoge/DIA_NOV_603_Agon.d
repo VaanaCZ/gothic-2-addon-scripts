@@ -49,7 +49,7 @@ FUNC INT DIA_Agon_Hello_Condition()
 
 FUNC VOID DIA_Agon_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Agon_Hello_07_00"); //(презрительно) Что тебе нужно?
+	AI_Output (self ,other,"DIA_Agon_Hello_07_00"); //(РїСЂРµР·СЂРёС‚РµР»СЊРЅРѕ) Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE DIA_Agon_Wurst(C_INFO)
 	condition	= DIA_Agon_Wurst_Condition;
 	information	= DIA_Agon_Wurst_Info;
 	permanent	= FALSE;
-	description = "Вот, у меня есть баранья колбаса для тебя.";
+	description = "Р’РѕС‚, Сѓ РјРµРЅСЏ РµСЃС‚СЊ Р±Р°СЂР°РЅСЊСЏ РєРѕР»Р±Р°СЃР° РґР»СЏ С‚РµР±СЏ.";
 };                       
 
 FUNC INT DIA_Agon_Wurst_Condition()
@@ -78,10 +78,10 @@ FUNC INT DIA_Agon_Wurst_Condition()
 
 FUNC VOID DIA_Agon_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Agon_Wurst_15_00"); //Вот, у меня есть баранья колбаса для тебя.
-	AI_Output (self, other, "DIA_Agon_Wurst_07_01"); //Овечья колбаса, овечий сыр... овечье молоко... меня уже тошнит от одного их вида.
-	AI_Output (other, self, "DIA_Agon_Wurst_15_02"); //Так ты хочешь колбасу или нет?
-	AI_Output (self, other, "DIA_Agon_Wurst_07_03"); //Ладно, давай ее сюда!
+	AI_Output (other, self, "DIA_Agon_Wurst_15_00"); //Р’РѕС‚, Сѓ РјРµРЅСЏ РµСЃС‚СЊ Р±Р°СЂР°РЅСЊСЏ РєРѕР»Р±Р°СЃР° РґР»СЏ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Agon_Wurst_07_01"); //РћРІРµС‡СЊСЏ РєРѕР»Р±Р°СЃР°, РѕРІРµС‡РёР№ СЃС‹СЂ... РѕРІРµС‡СЊРµ РјРѕР»РѕРєРѕ... РјРµРЅСЏ СѓР¶Рµ С‚РѕС€РЅРёС‚ РѕС‚ РѕРґРЅРѕРіРѕ РёС… РІРёРґР°.
+	AI_Output (other, self, "DIA_Agon_Wurst_15_02"); //РўР°Рє С‚С‹ С…РѕС‡РµС€СЊ РєРѕР»Р±Р°СЃСѓ РёР»Рё РЅРµС‚?
+	AI_Output (self, other, "DIA_Agon_Wurst_07_03"); //Р›Р°РґРЅРѕ, РґР°РІР°Р№ РµРµ СЃСЋРґР°!
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -106,7 +106,7 @@ INSTANCE DIA_Agon_New   (C_INFO)
 	condition   = DIA_Agon_New_Condition;
 	information = DIA_Agon_New_Info;
 	permanent   = FALSE;
-	description = "Я новичок здесь.";
+	description = "РЇ РЅРѕРІРёС‡РѕРє Р·РґРµСЃСЊ.";
 };
 
 FUNC INT DIA_Agon_New_Condition()
@@ -120,9 +120,9 @@ FUNC INT DIA_Agon_New_Condition()
 
 FUNC VOID DIA_Agon_New_Info()
 {
-	AI_Output	(other,self ,"DIA_Agon_New_15_00"); //Я новичок здесь.
-	AI_Output	(self ,other,"DIA_Agon_New_07_01"); //Я вижу.
-	AI_Output	(self ,other,"DIA_Agon_New_07_02"); //Если у тебя еще нет работы, поговори с Парланом. Он поручит тебе что-нибудь.
+	AI_Output	(other,self ,"DIA_Agon_New_15_00"); //РЇ РЅРѕРІРёС‡РѕРє Р·РґРµСЃСЊ.
+	AI_Output	(self ,other,"DIA_Agon_New_07_01"); //РЇ РІРёР¶Сѓ.
+	AI_Output	(self ,other,"DIA_Agon_New_07_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РµС‰Рµ РЅРµС‚ СЂР°Р±РѕС‚С‹, РїРѕРіРѕРІРѕСЂРё СЃ РџР°СЂР»Р°РЅРѕРј. РћРЅ РїРѕСЂСѓС‡РёС‚ С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ.
 };
 //***********************************************************************
 //	Was ist zwischen dir und Babo passiert?
@@ -135,7 +135,7 @@ INSTANCE DIA_Agon_YouAndBabo   (C_INFO)
 	condition   = DIA_Agon_YouAndBabo_Condition;
 	information = DIA_Agon_YouAndBabo_Info;
 	permanent   = FALSE;
-	description = "Что произошло между тобой и Бабо?";
+	description = "Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РјРµР¶РґСѓ С‚РѕР±РѕР№ Рё Р‘Р°Р±Рѕ?";
 };
 
 FUNC INT DIA_Agon_YouAndBabo_Condition()
@@ -150,42 +150,42 @@ FUNC INT DIA_Agon_YouAndBabo_Condition()
 
 FUNC VOID DIA_Agon_YouAndBabo_Info()
 {
-	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_15_00"); //Что произошло между тобой и Бабо?
-	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_01"); //Тебе не стоит верить всему, что ты слышишь.
-	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_02"); //(настойчиво) Давай проясним кое-что: я буду поступать так, как сочту нужным. Так, как предопределил мне Иннос.
-	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_03"); //Я никому не позволю встать у меня на пути, и уж конечно не этому простофиле Бабо.
+	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_15_00"); //Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РјРµР¶РґСѓ С‚РѕР±РѕР№ Рё Р‘Р°Р±Рѕ?
+	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_01"); //РўРµР±Рµ РЅРµ СЃС‚РѕРёС‚ РІРµСЂРёС‚СЊ РІСЃРµРјСѓ, С‡С‚Рѕ С‚С‹ СЃР»С‹С€РёС€СЊ.
+	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_02"); //(РЅР°СЃС‚РѕР№С‡РёРІРѕ) Р”Р°РІР°Р№ РїСЂРѕСЏСЃРЅРёРј РєРѕРµ-С‡С‚Рѕ: СЏ Р±СѓРґСѓ РїРѕСЃС‚СѓРїР°С‚СЊ С‚Р°Рє, РєР°Рє СЃРѕС‡С‚Сѓ РЅСѓР¶РЅС‹Рј. РўР°Рє, РєР°Рє РїСЂРµРґРѕРїСЂРµРґРµР»РёР» РјРЅРµ РРЅРЅРѕСЃ.
+	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_03"); //РЇ РЅРёРєРѕРјСѓ РЅРµ РїРѕР·РІРѕР»СЋ РІСЃС‚Р°С‚СЊ Сѓ РјРµРЅСЏ РЅР° РїСѓС‚Рё, Рё СѓР¶ РєРѕРЅРµС‡РЅРѕ РЅРµ СЌС‚РѕРјСѓ РїСЂРѕСЃС‚РѕС„РёР»Рµ Р‘Р°Р±Рѕ.
 
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
-	Info_AddChoice	(DIA_Agon_YouAndBabo,"Разве мы, послушники, не должны поддерживать друг друга?",DIA_Agon_YouAndBabo_AllTogether);
-	Info_AddChoice	(DIA_Agon_YouAndBabo,"Одному Инносу ведомо, каким путем должны мы идти.",DIA_Agon_YouAndBabo_InnosWay);
-	Info_AddChoice	(DIA_Agon_YouAndBabo,"Я думаю, мы поладим.",DIA_Agon_YouAndBabo_Understand);
+	Info_AddChoice	(DIA_Agon_YouAndBabo,"Р Р°Р·РІРµ РјС‹, РїРѕСЃР»СѓС€РЅРёРєРё, РЅРµ РґРѕР»Р¶РЅС‹ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ РґСЂСѓРі РґСЂСѓРіР°?",DIA_Agon_YouAndBabo_AllTogether);
+	Info_AddChoice	(DIA_Agon_YouAndBabo,"РћРґРЅРѕРјСѓ РРЅРЅРѕСЃСѓ РІРµРґРѕРјРѕ, РєР°РєРёРј РїСѓС‚РµРј РґРѕР»Р¶РЅС‹ РјС‹ РёРґС‚Рё.",DIA_Agon_YouAndBabo_InnosWay);
+	Info_AddChoice	(DIA_Agon_YouAndBabo,"РЇ РґСѓРјР°СЋ, РјС‹ РїРѕР»Р°РґРёРј.",DIA_Agon_YouAndBabo_Understand);
 };
 
 FUNC VOID DIA_Agon_YouAndBabo_AllTogether ()
 {
-	AI_Output (other,self ,"DIA_Agon_YouAndBabo_AllTogether_15_00"); //Разве мы, послушники, не должны поддерживать друг друга?
-	AI_Output (self ,other,"DIA_Agon_YouAndBabo_AllTogether_07_01"); //Вы, остальные, можете поддерживать друг друга сколько хотите.
-	AI_Output (self ,other,"DIA_Agon_YouAndBabo_AllTogether_07_02"); //Но, пожалуйста, не трать мое время. (холодно) Никто не смеет стоять у меня на пути.
+	AI_Output (other,self ,"DIA_Agon_YouAndBabo_AllTogether_15_00"); //Р Р°Р·РІРµ РјС‹, РїРѕСЃР»СѓС€РЅРёРєРё, РЅРµ РґРѕР»Р¶РЅС‹ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ РґСЂСѓРі РґСЂСѓРіР°?
+	AI_Output (self ,other,"DIA_Agon_YouAndBabo_AllTogether_07_01"); //Р’С‹, РѕСЃС‚Р°Р»СЊРЅС‹Рµ, РјРѕР¶РµС‚Рµ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ РґСЂСѓРі РґСЂСѓРіР° СЃРєРѕР»СЊРєРѕ С…РѕС‚РёС‚Рµ.
+	AI_Output (self ,other,"DIA_Agon_YouAndBabo_AllTogether_07_02"); //РќРѕ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµ С‚СЂР°С‚СЊ РјРѕРµ РІСЂРµРјСЏ. (С…РѕР»РѕРґРЅРѕ) РќРёРєС‚Рѕ РЅРµ СЃРјРµРµС‚ СЃС‚РѕСЏС‚СЊ Сѓ РјРµРЅСЏ РЅР° РїСѓС‚Рё.
 	
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 
 FUNC VOID DIA_Agon_YouAndBabo_InnosWay ()
 {
-	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_InnosWay_15_00"); //Одному Инносу ведомо, каким путем должны мы идти.
-	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_InnosWay_07_01"); //Моя семья всегда пользовалась благосклонностью Инноса, и ничто не изменит это.
+	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_InnosWay_15_00"); //РћРґРЅРѕРјСѓ РРЅРЅРѕСЃСѓ РІРµРґРѕРјРѕ, РєР°РєРёРј РїСѓС‚РµРј РґРѕР»Р¶РЅС‹ РјС‹ РёРґС‚Рё.
+	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_InnosWay_07_01"); //РњРѕСЏ СЃРµРјСЊСЏ РІСЃРµРіРґР° РїРѕР»СЊР·РѕРІР°Р»Р°СЃСЊ Р±Р»Р°РіРѕСЃРєР»РѕРЅРЅРѕСЃС‚СЊСЋ РРЅРЅРѕСЃР°, Рё РЅРёС‡С‚Рѕ РЅРµ РёР·РјРµРЅРёС‚ СЌС‚Рѕ.
 	
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 FUNC VOID DIA_Agon_YouAndBabo_Understand ()
 {
-	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_Understand_15_00"); //Я думаю, мы поладим.
-	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_Understand_07_01"); //Надеюсь. Когда я стану магом, я замолвлю за тебя словечко.
+	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_Understand_15_00"); //РЇ РґСѓРјР°СЋ, РјС‹ РїРѕР»Р°РґРёРј.
+	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_Understand_07_01"); //РќР°РґРµСЋСЃСЊ. РљРѕРіРґР° СЏ СЃС‚Р°РЅСѓ РјР°РіРѕРј, СЏ Р·Р°РјРѕР»РІР»СЋ Р·Р° С‚РµР±СЏ СЃР»РѕРІРµС‡РєРѕ.
 	
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 //************************************************************************
-//	Kann ich bei dir Krдuter bekommen?
+//	Kann ich bei dir KrРґuter bekommen?
 //************************************************************************
 
 INSTANCE DIA_Agon_GetHerb   (C_INFO)
@@ -195,7 +195,7 @@ INSTANCE DIA_Agon_GetHerb   (C_INFO)
 	condition   = DIA_Agon_GetHerb_Condition;
 	information = DIA_Agon_GetHerb_Info;
 	permanent   = TRUE;
-	description = "Что ты выращиваешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РІС‹СЂР°С‰РёРІР°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 FUNC INT DIA_Agon_GetHerb_Condition()
@@ -207,11 +207,11 @@ FUNC INT DIA_Agon_GetHerb_Condition()
 };
 FUNC VOID DIA_Agon_GetHerb_Info()
 {
-	AI_Output (other,self ,"DIA_Agon_GetHerb_15_00"); //Что ты выращиваешь здесь?
-	AI_Output (self ,other,"DIA_Agon_GetHerb_07_01"); //Мы пытаемся вырастить лечебные травы, из которых мастер Неорас готовит зелья.
+	AI_Output (other,self ,"DIA_Agon_GetHerb_15_00"); //Р§С‚Рѕ С‚С‹ РІС‹СЂР°С‰РёРІР°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Agon_GetHerb_07_01"); //РњС‹ РїС‹С‚Р°РµРјСЃСЏ РІС‹СЂР°СЃС‚РёС‚СЊ Р»РµС‡РµР±РЅС‹Рµ С‚СЂР°РІС‹, РёР· РєРѕС‚РѕСЂС‹С… РјР°СЃС‚РµСЂ РќРµРѕСЂР°СЃ РіРѕС‚РѕРІРёС‚ Р·РµР»СЊСЏ.
 };
 //************************************************************************
-//	Agon ist in der Hцhle
+//	Agon ist in der HС†hle
 //************************************************************************
 
 INSTANCE DIA_Agon_GolemDead   (C_INFO)
@@ -235,19 +235,19 @@ FUNC INT DIA_Agon_GolemDead_Condition()
 
 FUNC VOID DIA_Agon_GolemDead_Info()
 {
-	AI_Output (self ,other,"DIA_Agon_GolemDead_07_00"); //(торжествующе) Ты опоздал!
-	AI_Output (self ,other,"DIA_Agon_GolemDead_07_01"); //Я был здесь первым! Я победил!
+	AI_Output (self ,other,"DIA_Agon_GolemDead_07_00"); //(С‚РѕСЂР¶РµСЃС‚РІСѓСЋС‰Рµ) РўС‹ РѕРїРѕР·РґР°Р»!
+	AI_Output (self ,other,"DIA_Agon_GolemDead_07_01"); //РЇ Р±С‹Р» Р·РґРµСЃСЊ РїРµСЂРІС‹Рј! РЇ РїРѕР±РµРґРёР»!
 	 
 	Info_ClearChoices (DIA_Agon_GolemDead);
-	Info_AddChoice (DIA_Agon_GolemDead,"(угрожающе) Только если тебе удастся выбраться отсюда живым.",DIA_Agon_GolemDead_NoWay);
-	Info_AddChoice (DIA_Agon_GolemDead,"Заткнись!",DIA_Agon_GolemDead_ShutUp);
-	Info_AddChoice (DIA_Agon_GolemDead,"Поздравляю, ты действительно заслужил это.",DIA_Agon_GolemDead_Congrat);
+	Info_AddChoice (DIA_Agon_GolemDead,"(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РўРѕР»СЊРєРѕ РµСЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° Р¶РёРІС‹Рј.",DIA_Agon_GolemDead_NoWay);
+	Info_AddChoice (DIA_Agon_GolemDead,"Р—Р°С‚РєРЅРёСЃСЊ!",DIA_Agon_GolemDead_ShutUp);
+	Info_AddChoice (DIA_Agon_GolemDead,"РџРѕР·РґСЂР°РІР»СЏСЋ, С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ.",DIA_Agon_GolemDead_Congrat);
 };
 
 FUNC VOID DIA_Agon_GolemDead_NoWay ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_NoWay_15_00"); //(угрожающе) Только если тебе удастся выбраться отсюда живым.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_NoWay_07_01"); //Ты хочешь убить меня? У тебя ничего не получится.
+	AI_Output (other,self ,"DIA_Agon_GolemDead_NoWay_15_00"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РўРѕР»СЊРєРѕ РµСЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° Р¶РёРІС‹Рј.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_NoWay_07_01"); //РўС‹ С…РѕС‡РµС€СЊ СѓР±РёС‚СЊ РјРµРЅСЏ? РЈ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ.
 
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
@@ -255,20 +255,20 @@ FUNC VOID DIA_Agon_GolemDead_NoWay ()
 
 FUNC VOID DIA_Agon_GolemDead_ShutUp ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_15_00"); //Заткнись!
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_01"); //(насмешливо) Это бесполезно, ты проиграл! Смирись с этим.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_02"); //Только мне суждено стать магом.
+	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_15_00"); //Р—Р°С‚РєРЅРёСЃСЊ!
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_01"); //(РЅР°СЃРјРµС€Р»РёРІРѕ) Р­С‚Рѕ Р±РµСЃРїРѕР»РµР·РЅРѕ, С‚С‹ РїСЂРѕРёРіСЂР°Р»! РЎРјРёСЂРёСЃСЊ СЃ СЌС‚РёРј.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_02"); //РўРѕР»СЊРєРѕ РјРЅРµ СЃСѓР¶РґРµРЅРѕ СЃС‚Р°С‚СЊ РјР°РіРѕРј.
 	
 	Info_ClearChoices (DIA_Agon_GolemDead);
-	Info_AddChoice (DIA_Agon_GolemDead,"Черта с два. Этот сундук мой.",DIA_Agon_GolemDead_ShutUp_MyChest);
-	Info_AddChoice (DIA_Agon_GolemDead,"Ты победил.",DIA_Agon_GolemDead_ShutUp_YouWin);
+	Info_AddChoice (DIA_Agon_GolemDead,"Р§РµСЂС‚Р° СЃ РґРІР°. Р­С‚РѕС‚ СЃСѓРЅРґСѓРє РјРѕР№.",DIA_Agon_GolemDead_ShutUp_MyChest);
+	Info_AddChoice (DIA_Agon_GolemDead,"РўС‹ РїРѕР±РµРґРёР».",DIA_Agon_GolemDead_ShutUp_YouWin);
 
 };
 
 FUNC VOID DIA_Agon_GolemDead_ShutUp_MyChest ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_MyChest_15_00"); //Черта с два. Этот сундук мой.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_MyChest_07_01"); //(в ярости) Нет, ты не сделаешь этого. Я убью тебя.
+	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_MyChest_15_00"); //Р§РµСЂС‚Р° СЃ РґРІР°. Р­С‚РѕС‚ СЃСѓРЅРґСѓРє РјРѕР№.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_MyChest_07_01"); //(РІ СЏСЂРѕСЃС‚Рё) РќРµС‚, С‚С‹ РЅРµ СЃРґРµР»Р°РµС€СЊ СЌС‚РѕРіРѕ. РЇ СѓР±СЊСЋ С‚РµР±СЏ.
 	
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
@@ -276,9 +276,9 @@ FUNC VOID DIA_Agon_GolemDead_ShutUp_MyChest ()
 
 FUNC VOID DIA_Agon_GolemDead_ShutUp_YouWin ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_YouWin_15_00"); //Ты победил.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_01"); //(в ярости) Нет, тебе не обмануть меня. Ты пытаешься избавиться от меня.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_02"); //Я не допущу этого!
+	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_YouWin_15_00"); //РўС‹ РїРѕР±РµРґРёР».
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_01"); //(РІ СЏСЂРѕСЃС‚Рё) РќРµС‚, С‚РµР±Рµ РЅРµ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ. РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ РјРµРЅСЏ.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_02"); //РЇ РЅРµ РґРѕРїСѓС‰Сѓ СЌС‚РѕРіРѕ!
 	
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
@@ -286,18 +286,18 @@ FUNC VOID DIA_Agon_GolemDead_ShutUp_YouWin ()
 
 FUNC VOID DIA_Agon_GolemDead_Congrat ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_Congrat_15_00"); //Поздравляю, ты действительно заслужил это.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_01"); //(недоверчиво) Что это значит? Что ты задумал?
-	AI_Output (other,self ,"DIA_Agon_GolemDead_Congrat_15_02"); //Ты о чем это?
-	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_03"); //(нервно) Ты хочешь оспорить мою победу. Ты хочешь убить меня и забрать всю славу себе!
-	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_04"); //У тебя ничего не выйдет!
+	AI_Output (other,self ,"DIA_Agon_GolemDead_Congrat_15_00"); //РџРѕР·РґСЂР°РІР»СЏСЋ, С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_01"); //(РЅРµРґРѕРІРµСЂС‡РёРІРѕ) Р§С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚? Р§С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р»?
+	AI_Output (other,self ,"DIA_Agon_GolemDead_Congrat_15_02"); //РўС‹ Рѕ С‡РµРј СЌС‚Рѕ?
+	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_03"); //(РЅРµСЂРІРЅРѕ) РўС‹ С…РѕС‡РµС€СЊ РѕСЃРїРѕСЂРёС‚СЊ РјРѕСЋ РїРѕР±РµРґСѓ. РўС‹ С…РѕС‡РµС€СЊ СѓР±РёС‚СЊ РјРµРЅСЏ Рё Р·Р°Р±СЂР°С‚СЊ РІСЃСЋ СЃР»Р°РІСѓ СЃРµР±Рµ!
+	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_04"); //РЈ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ РІС‹Р№РґРµС‚!
 	
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
 };
 
 //****************************************
-//	Der Sc war vor Agon in der Hцhle
+//	Der Sc war vor Agon in der HС†hle
 //****************************************
 
 INSTANCE DIA_Agon_GolemLives   (C_INFO)
@@ -321,9 +321,9 @@ FUNC INT DIA_Agon_GolemLives_Condition()
 
 FUNC VOID DIA_Agon_GolemLives_Info()
 {
-	AI_Output (self ,other,"DIA_Agon_GolemLives_07_00"); //(удивленно) Ты нашел это место раньше меня. Этого не может быть...
-	AI_Output (self ,other,"DIA_Agon_GolemLives_07_01"); //(решительно) Этого не может быть! Я не позволю это.
-	AI_Output (self ,other,"DIA_Agon_GolemLives_07_02"); //Твой труп никогда никто не найдет.
+	AI_Output (self ,other,"DIA_Agon_GolemLives_07_00"); //(СѓРґРёРІР»РµРЅРЅРѕ) РўС‹ РЅР°С€РµР» СЌС‚Рѕ РјРµСЃС‚Рѕ СЂР°РЅСЊС€Рµ РјРµРЅСЏ. Р­С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ...
+	AI_Output (self ,other,"DIA_Agon_GolemLives_07_01"); //(СЂРµС€РёС‚РµР»СЊРЅРѕ) Р­С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ! РЇ РЅРµ РїРѕР·РІРѕР»СЋ СЌС‚Рѕ.
+	AI_Output (self ,other,"DIA_Agon_GolemLives_07_02"); //РўРІРѕР№ С‚СЂСѓРї РЅРёРєРѕРіРґР° РЅРёРєС‚Рѕ РЅРµ РЅР°Р№РґРµС‚.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 0);
@@ -355,8 +355,8 @@ FUNC INT DIA_Agon_StillAlive_Condition()
 FUNC VOID DIA_Agon_StillAlive_Info()
 {
 	AI_Output (other,self ,"DIA_Agon_StillAlive_15_00"); //Was machst Du hier? 
-	AI_Output (self ,other,"DIA_Agon_StillAlive_07_01"); //Hдttest Du mich nicht tцten kцnnen? Dann mьsste ich das ganze hier wenigstens nicht mehr ertragen. 
-	AI_Output (self ,other,"DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zurьck ins Kloster!
+	AI_Output (self ,other,"DIA_Agon_StillAlive_07_01"); //HРґttest Du mich nicht tС†ten kС†nnen? Dann mСЊsste ich das ganze hier wenigstens nicht mehr ertragen. 
+	AI_Output (self ,other,"DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zurСЊck ins Kloster!
 	
 	AI_StopProcessInfos (self);
 };
@@ -372,7 +372,7 @@ INSTANCE DIA_Agon_Perm   (C_INFO)
 	condition   = DIA_Agon_Perm_Condition;
 	information = DIA_Agon_Perm_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 
 FUNC INT DIA_Agon_Perm_Condition()
@@ -385,15 +385,15 @@ FUNC INT DIA_Agon_Perm_Condition()
 };
 FUNC VOID DIA_Agon_Perm_Info()
 {
-	AI_Output	(other,self ,"DIA_Agon_Perm_15_00"); //Как дела?
+	AI_Output	(other,self ,"DIA_Agon_Perm_15_00"); //РљР°Рє РґРµР»Р°?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output	(self ,other,"DIA_Agon_Perm_07_01"); //Ох, спасибо за твою заботу, о, паладин. Я наслаждаюсь работой, и я уверен, что скоро меня выберут в маги.
+		AI_Output	(self ,other,"DIA_Agon_Perm_07_01"); //РћС…, СЃРїР°СЃРёР±Рѕ Р·Р° С‚РІРѕСЋ Р·Р°Р±РѕС‚Сѓ, Рѕ, РїР°Р»Р°РґРёРЅ. РЇ РЅР°СЃР»Р°Р¶РґР°СЋСЃСЊ СЂР°Р±РѕС‚РѕР№, Рё СЏ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЃРєРѕСЂРѕ РјРµРЅСЏ РІС‹Р±РµСЂСѓС‚ РІ РјР°РіРё.
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Agon_Perm_07_02"); //(надменно) Ты всего лишь гость здесь, в монастыре Инноса. Поэтому ты должен вести себя соответствующе и не отрывать меня от работы. Прощай.
+		AI_Output	(self ,other,"DIA_Agon_Perm_07_02"); //(РЅР°РґРјРµРЅРЅРѕ) РўС‹ РІСЃРµРіРѕ Р»РёС€СЊ РіРѕСЃС‚СЊ Р·РґРµСЃСЊ, РІ РјРѕРЅР°СЃС‚С‹СЂРµ РРЅРЅРѕСЃР°. РџРѕСЌС‚РѕРјСѓ С‚С‹ РґРѕР»Р¶РµРЅ РІРµСЃС‚Рё СЃРµР±СЏ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰Рµ Рё РЅРµ РѕС‚СЂС‹РІР°С‚СЊ РјРµРЅСЏ РѕС‚ СЂР°Р±РѕС‚С‹. РџСЂРѕС‰Р°Р№.
 	};
 };
 

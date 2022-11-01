@@ -32,7 +32,7 @@ instance DIA_Wolf_DI_HALLO		(C_INFO)
 	information	 = 	DIA_Wolf_DI_HALLO_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Wolf_DI_HALLO_Condition ()
@@ -45,20 +45,20 @@ func int DIA_Wolf_DI_HALLO_Condition ()
 var int DIA_Wolf_DI_HALLO_OneTime;
 func void DIA_Wolf_DI_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_00"); //Как дела?
+	AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_00"); //РљР°Рє РґРµР»Р°?
 
 	if ( Bennet_IsOnBoard == LOG_SUCCESS)
 	&& (Npc_IsDead(Bennet_DI)	==	FALSE)
 		{
-			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Тебе ОЧЕНЬ нужно было брать с собой Беннета?
-			AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_02"); //В чем проблема?
-			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_03"); //А, ничего. Все в порядке. Делай, что считаешь нужным.
+			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_01"); //РўРµР±Рµ РћР§Р•РќР¬ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ Р±СЂР°С‚СЊ СЃ СЃРѕР±РѕР№ Р‘РµРЅРЅРµС‚Р°?
+			AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_02"); //Р’ С‡РµРј РїСЂРѕР±Р»РµРјР°?
+			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_03"); //Рђ, РЅРёС‡РµРіРѕ. Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ. Р”РµР»Р°Р№, С‡С‚Рѕ СЃС‡РёС‚Р°РµС€СЊ РЅСѓР¶РЅС‹Рј.
 		}
 	else
 		{
 			if (DIA_Wolf_DI_HALLO_OneTime == FALSE)
 				{
-					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_04"); //Эта кузница не в самом лучшем состоянии, но я думаю, у меня что-нибудь получится.
+					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_04"); //Р­С‚Р° РєСѓР·РЅРёС†Р° РЅРµ РІ СЃР°РјРѕРј Р»СѓС‡С€РµРј СЃРѕСЃС‚РѕСЏРЅРёРё, РЅРѕ СЏ РґСѓРјР°СЋ, Сѓ РјРµРЅСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕР»СѓС‡РёС‚СЃСЏ.
 					B_GivePlayerXP (XP_Ambient);
 					DIA_Wolf_DI_HALLO_OneTime = TRUE;
 					AI_StopProcessInfos (self);
@@ -66,8 +66,8 @@ func void DIA_Wolf_DI_HALLO_Info ()
 				}
 			else
 				{
-					AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_05"); //Ты можешь изготовить для меня доспехи?
-					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Извини, приятель. Но не с этими инструментами. Придется подождать, пока мы не прибудем на материк.
+					AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_05"); //РўС‹ РјРѕР¶РµС€СЊ РёР·РіРѕС‚РѕРІРёС‚СЊ РґР»СЏ РјРµРЅСЏ РґРѕСЃРїРµС…Рё?
+					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_06"); //РР·РІРёРЅРё, РїСЂРёСЏС‚РµР»СЊ. РќРѕ РЅРµ СЃ СЌС‚РёРјРё РёРЅСЃС‚СЂСѓРјРµРЅС‚Р°РјРё. РџСЂРёРґРµС‚СЃСЏ РїРѕРґРѕР¶РґР°С‚СЊ, РїРѕРєР° РјС‹ РЅРµ РїСЂРёР±СѓРґРµРј РЅР° РјР°С‚РµСЂРёРє.
 				};
 		};
 };
@@ -84,7 +84,7 @@ INSTANCE DIA_Wolf_DI_Training (C_INFO)
 	information	= DIA_Wolf_DI_Training_Info;
 	permanent	 = 	TRUE;
 
-	description = "Обучи меня стрельбе.";
+	description = "РћР±СѓС‡Рё РјРµРЅСЏ СЃС‚СЂРµР»СЊР±Рµ.";
 };                       
 FUNC INT DIA_Wolf_DI_Training_Condition()
 {
@@ -96,8 +96,8 @@ FUNC INT DIA_Wolf_DI_Training_Condition()
 
 FUNC VOID DIA_Wolf_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Wolf_DI_Training_15_00"); //Обучи меня стрельбе.
-	AI_Output (self ,other,"DIA_Wolf_DI_Training_08_01"); //Из чего?
+	AI_Output (other,self ,"DIA_Wolf_DI_Training_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ СЃС‚СЂРµР»СЊР±Рµ.
+	AI_Output (self ,other,"DIA_Wolf_DI_Training_08_01"); //РР· С‡РµРіРѕ?
 	
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -116,7 +116,7 @@ func void DIA_Wolf_DI_Training_BOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 1, 90))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_1_08_00"); //В отличие от арбалета, лук очень громоздкий и требует много места. Не забывай об этом в бою.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_1_08_00"); //Р’ РѕС‚Р»РёС‡РёРµ РѕС‚ Р°СЂР±Р°Р»РµС‚Р°, Р»СѓРє РѕС‡РµРЅСЊ РіСЂРѕРјРѕР·РґРєРёР№ Рё С‚СЂРµР±СѓРµС‚ РјРЅРѕРіРѕ РјРµСЃС‚Р°. РќРµ Р·Р°Р±С‹РІР°Р№ РѕР± СЌС‚РѕРј РІ Р±РѕСЋ.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -133,7 +133,7 @@ func void DIA_Wolf_DI_Training_BOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 5, 90))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_5_08_00"); //Тетива при стрельбе должна свободно скользить по пальцам. Скрюченный палец испортит траекторию стрелы.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_5_08_00"); //РўРµС‚РёРІР° РїСЂРё СЃС‚СЂРµР»СЊР±Рµ РґРѕР»Р¶РЅР° СЃРІРѕР±РѕРґРЅРѕ СЃРєРѕР»СЊР·РёС‚СЊ РїРѕ РїР°Р»СЊС†Р°Рј. РЎРєСЂСЋС‡РµРЅРЅС‹Р№ РїР°Р»РµС† РёСЃРїРѕСЂС‚РёС‚ С‚СЂР°РµРєС‚РѕСЂРёСЋ СЃС‚СЂРµР»С‹.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -154,7 +154,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 1, 100))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //Постарайся, чтобы при выстреле из арбалета у тебя не дрогнула рука. Вот почему спусковой крючок нужно нажимать очень нежно.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //РџРѕСЃС‚Р°СЂР°Р№СЃСЏ, С‡С‚РѕР±С‹ РїСЂРё РІС‹СЃС‚СЂРµР»Рµ РёР· Р°СЂР±Р°Р»РµС‚Р° Сѓ С‚РµР±СЏ РЅРµ РґСЂРѕРіРЅСѓР»Р° СЂСѓРєР°. Р’РѕС‚ РїРѕС‡РµРјСѓ СЃРїСѓСЃРєРѕРІРѕР№ РєСЂСЋС‡РѕРє РЅСѓР¶РЅРѕ РЅР°Р¶РёРјР°С‚СЊ РѕС‡РµРЅСЊ РЅРµР¶РЅРѕ.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -170,7 +170,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 5, 100))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //Опытный стрелок всегда учитывает направление ветра и никогда не стреляет против него.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //РћРїС‹С‚РЅС‹Р№ СЃС‚СЂРµР»РѕРє РІСЃРµРіРґР° СѓС‡РёС‚С‹РІР°РµС‚ РЅР°РїСЂР°РІР»РµРЅРёРµ РІРµС‚СЂР° Рё РЅРёРєРѕРіРґР° РЅРµ СЃС‚СЂРµР»СЏРµС‚ РїСЂРѕС‚РёРІ РЅРµРіРѕ.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -197,7 +197,7 @@ instance DIA_Wolf_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Wolf_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Все в порядке?";
+	description = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Wolf_DI_UndeadDragonDead_Condition ()
@@ -211,14 +211,14 @@ func int DIA_Wolf_DI_UndeadDragonDead_Condition ()
 var int DIA_Wolf_DI_UndeadDragonDead_OneTime;
 func void DIA_Wolf_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Все в порядке?
-	AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //Конечно. А у тебя? Нелегко тебе пришлось, да?
+	AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //РљРѕРЅРµС‡РЅРѕ. Рђ Сѓ С‚РµР±СЏ? РќРµР»РµРіРєРѕ С‚РµР±Рµ РїСЂРёС€Р»РѕСЃСЊ, РґР°?
 
 	if (DIA_Wolf_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //Куда ты теперь?
-			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //Куда угодно, только не назад. Я по горло сыт Хоринисом.
-			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //Мне все равно, куда плыть. Лишь бы подальше отсюда.
+			AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //РљСѓРґР° С‚С‹ С‚РµРїРµСЂСЊ?
+			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //РљСѓРґР° СѓРіРѕРґРЅРѕ, С‚РѕР»СЊРєРѕ РЅРµ РЅР°Р·Р°Рґ. РЇ РїРѕ РіРѕСЂР»Рѕ СЃС‹С‚ РҐРѕСЂРёРЅРёСЃРѕРј.
+			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //РњРЅРµ РІСЃРµ СЂР°РІРЅРѕ, РєСѓРґР° РїР»С‹С‚СЊ. Р›РёС€СЊ Р±С‹ РїРѕРґР°Р»СЊС€Рµ РѕС‚СЃСЋРґР°.
 			DIA_Wolf_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 	AI_StopProcessInfos (self);

@@ -2,7 +2,7 @@ INSTANCE PC_Rockefeller(NPC_DEFAULT)
 // PlayerInstanz
 {
 	//-------- primary data --------
-	name 			= "Ðîêôåëëåð";
+	name 			= "Ð Ð¾ÐºÑ„ÐµÐ»Ð»ÐµÑ€";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_NONE;
 	level			= 100;
@@ -27,11 +27,11 @@ INSTANCE PC_Rockefeller(NPC_DEFAULT)
 	Mdl_SetVisualBody (self,	"hum_body_Naked0", 	BodyTex_Player,	0,			"Hum_Head_Pony", 	FACE_N_Player,	0, 			ITAR_PAL_H);
 	
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 			6);
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //hängt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //hÐ´ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SNEAK, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ACROBAT, 			0);
 	
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//hängt ab von DEX (auf Scriptebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//hÐ´ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SMITH, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_RUNES, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);
@@ -103,7 +103,7 @@ INSTANCE PC_Rockefeller(NPC_DEFAULT)
 	PLAYER_TALENT_RUNES[SPL_ArmyOfDarkness] 		= TRUE;
 	PLAYER_TALENT_RUNES[SPL_Shrink] 				= TRUE;
 	
-	B_SetFightSkills (self, 100); //Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills (self, 100); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 	
 	//-------- inventory --------
 	EquipItem (self, ItMw_2h_Pal_Sword);
@@ -552,7 +552,7 @@ INSTANCE PC_Rockefeller(NPC_DEFAULT)
 	CreateInvItem(self,ItMw_2H_OrcAxe_04);
 	*/
 //-----------------------------------------------------------	
-//Alle neuen Gürtel
+//Alle neuen GÑŒrtel
 //-----------------------------------------------------------	
 	CreateInvItems (self, ItBe_Addon_Leather_01, 1);
 	

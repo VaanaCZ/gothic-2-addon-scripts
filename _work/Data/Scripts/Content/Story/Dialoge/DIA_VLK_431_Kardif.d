@@ -68,7 +68,7 @@ instance DIA_Kardif_Hi		(C_INFO)
 	condition	 = 	DIA_Kardif_Hi_Condition;
 	information	 = 	DIA_Kardif_Hi_Info;
 	permanent    =  FALSE;
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 func int DIA_Kardif_Hi_Condition ()
 {
@@ -79,11 +79,11 @@ func int DIA_Kardif_Hi_Condition ()
 };
 func void DIA_Kardif_Hi_Info ()
 {
-	AI_Output (other, self, "DIA_Kardif_Hi_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Kardif_Hi_14_01"); //Если ты хочешь что-нибудь выпить, заказывай.
+	AI_Output (other, self, "DIA_Kardif_Hi_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Kardif_Hi_14_01"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ, Р·Р°РєР°Р·С‹РІР°Р№.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Кардиф торгует напитками в таверне в гавани.");
+	B_LogEntry (Topic_CityTrader,"РљР°СЂРґРёС„ С‚РѕСЂРіСѓРµС‚ РЅР°РїРёС‚РєР°РјРё РІ С‚Р°РІРµСЂРЅРµ РІ РіР°РІР°РЅРё.");
 };	
 	
 ///////////////////////////////////////////////////////////////////////
@@ -96,7 +96,7 @@ instance DIA_Kardif_Hallo		(C_INFO)
 	condition	 = 	DIA_Kardif_Hallo_Condition;
 	information	 = 	DIA_Kardif_Hallo_Info;
 	permanent    =  FALSE;
-	description	 = 	"Готов побиться об заклад, ты многое здесь слышишь...";
+	description	 = 	"Р“РѕС‚РѕРІ РїРѕР±РёС‚СЊСЃСЏ РѕР± Р·Р°РєР»Р°Рґ, С‚С‹ РјРЅРѕРіРѕРµ Р·РґРµСЃСЊ СЃР»С‹С€РёС€СЊ...";
 };
 func int DIA_Kardif_Hallo_Condition ()
 {	
@@ -108,74 +108,74 @@ func int DIA_Kardif_Hallo_Condition ()
 };
 func void DIA_Kardif_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Kardif_Hallo_15_00"); //Готов побиться об заклад, ты многое здесь слышишь...
-	AI_Output (self, other, "DIA_Kardif_Hallo_14_01"); //А тебе какое до этого дело?
-	AI_Output (other, self, "DIA_Kardif_Hallo_15_02"); //Мои уши всегда открыты для новостей.
-	AI_Output (self, other, "DIA_Kardif_Hallo_14_03"); //А кошелек у тебя тоже открыт?
-	AI_Output (self, other, "DIA_Kardif_Hallo_14_04"); //Каждая информация, которую я сообщу тебе, будет стоить 10 золотых монет.
+	AI_Output (other, self, "DIA_Kardif_Hallo_15_00"); //Р“РѕС‚РѕРІ РїРѕР±РёС‚СЊСЃСЏ РѕР± Р·Р°РєР»Р°Рґ, С‚С‹ РјРЅРѕРіРѕРµ Р·РґРµСЃСЊ СЃР»С‹С€РёС€СЊ...
+	AI_Output (self, other, "DIA_Kardif_Hallo_14_01"); //Рђ С‚РµР±Рµ РєР°РєРѕРµ РґРѕ СЌС‚РѕРіРѕ РґРµР»Рѕ?
+	AI_Output (other, self, "DIA_Kardif_Hallo_15_02"); //РњРѕРё СѓС€Рё РІСЃРµРіРґР° РѕС‚РєСЂС‹С‚С‹ РґР»СЏ РЅРѕРІРѕСЃС‚РµР№.
+	AI_Output (self, other, "DIA_Kardif_Hallo_14_03"); //Рђ РєРѕС€РµР»РµРє Сѓ С‚РµР±СЏ С‚РѕР¶Рµ РѕС‚РєСЂС‹С‚?
+	AI_Output (self, other, "DIA_Kardif_Hallo_14_04"); //РљР°Р¶РґР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ, РєРѕС‚РѕСЂСѓСЋ СЏ СЃРѕРѕР±С‰Сѓ С‚РµР±Рµ, Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ 10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Кардиф, владелец кабака в гавани, приторговывает информацией.");
+	B_LogEntry (Topic_CityTrader,"РљР°СЂРґРёС„, РІР»Р°РґРµР»РµС† РєР°Р±Р°РєР° РІ РіР°РІР°РЅРё, РїСЂРёС‚РѕСЂРіРѕРІС‹РІР°РµС‚ РёРЅС„РѕСЂРјР°С†РёРµР№.");
 	
 	Info_ClearChoices (DIA_Kardif_Hallo);
-	Info_AddChoice 	  (DIA_Kardif_Hallo,"Я не готов платить за информацию больше 5 монет.",DIA_Kardif_Hallo_Angebot);
-	Info_AddChoice 	  (DIA_Kardif_Hallo,"Забудь об этом - я найду нужную мне информацию в другом месте.",DIA_Kardif_Hallo_Hart);
-	Info_AddChoice 	  (DIA_Kardif_Hallo,"Хорошо, договорились.",DIA_Kardif_Hallo_Zehn);	
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"РЇ РЅРµ РіРѕС‚РѕРІ РїР»Р°С‚РёС‚СЊ Р·Р° РёРЅС„РѕСЂРјР°С†РёСЋ Р±РѕР»СЊС€Рµ 5 РјРѕРЅРµС‚.",DIA_Kardif_Hallo_Angebot);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј - СЏ РЅР°Р№РґСѓ РЅСѓР¶РЅСѓСЋ РјРЅРµ РёРЅС„РѕСЂРјР°С†РёСЋ РІ РґСЂСѓРіРѕРј РјРµСЃС‚Рµ.",DIA_Kardif_Hallo_Hart);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"РҐРѕСЂРѕС€Рѕ, РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ.",DIA_Kardif_Hallo_Zehn);	
 };
 FUNC VOID DIA_Kardif_Hallo_Zehn()
 {
-	AI_Output (other, self, "DIA_Kardif_Hallo_Zehn_15_00"); //Хорошо, договорились.
-	AI_Output (self, other, "DIA_Kardif_Hallo_Zehn_14_01"); //Ты заключил выгодную сделку (усмехается). Я всегда к твоим услугам.
+	AI_Output (other, self, "DIA_Kardif_Hallo_Zehn_15_00"); //РҐРѕСЂРѕС€Рѕ, РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Zehn_14_01"); //РўС‹ Р·Р°РєР»СЋС‡РёР» РІС‹РіРѕРґРЅСѓСЋ СЃРґРµР»РєСѓ (СѓСЃРјРµС…Р°РµС‚СЃСЏ). РЇ РІСЃРµРіРґР° Рє С‚РІРѕРёРј СѓСЃР»СѓРіР°Рј.
 	
 	Kardif_Deal = 10;
 	Info_ClearChoices (DIA_Kardif_Hallo);
 };
 FUNC VOID DIA_Kardif_Hallo_Angebot()
 {
-	AI_Output (other, self, "DIA_Kardif_Hallo_Angebot_15_00"); //Я не готов платить за информацию больше 5 монет.
-	AI_Output (self, other, "DIA_Kardif_Hallo_Angebot_14_01"); //Что, 5 золотых монет? Ты хочешь разорить меня? (делает задумчивый вид) - Давай сойдемся на 7.
+	AI_Output (other, self, "DIA_Kardif_Hallo_Angebot_15_00"); //РЇ РЅРµ РіРѕС‚РѕРІ РїР»Р°С‚РёС‚СЊ Р·Р° РёРЅС„РѕСЂРјР°С†РёСЋ Р±РѕР»СЊС€Рµ 5 РјРѕРЅРµС‚.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Angebot_14_01"); //Р§С‚Рѕ, 5 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚? РўС‹ С…РѕС‡РµС€СЊ СЂР°Р·РѕСЂРёС‚СЊ РјРµРЅСЏ? (РґРµР»Р°РµС‚ Р·Р°РґСѓРјС‡РёРІС‹Р№ РІРёРґ) - Р”Р°РІР°Р№ СЃРѕР№РґРµРјСЃСЏ РЅР° 7.
 	
 	Info_ClearChoices (DIA_Kardif_Hallo);
-	Info_AddChoice 	  (DIA_Kardif_Hallo,"Нет, так не пойдет. Давай лучше 6!",DIA_Kardif_Hallo_KeinDeal);
-	Info_AddChoice 	  (DIA_Kardif_Hallo,"Договорились, 7 золотых монет - неплохая цена.",DIA_Kardif_Hallo_Sieben);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"РќРµС‚, С‚Р°Рє РЅРµ РїРѕР№РґРµС‚. Р”Р°РІР°Р№ Р»СѓС‡С€Рµ 6!",DIA_Kardif_Hallo_KeinDeal);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ, 7 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ - РЅРµРїР»РѕС…Р°СЏ С†РµРЅР°.",DIA_Kardif_Hallo_Sieben);
 };
 FUNC VOID DIA_Kardif_Hallo_Hart()
 {
-	AI_Output (other, self, "DIA_Kardif_Hallo_Hart_15_00"); //Забудь об этом - я найду нужную мне информацию в другом месте.
-	AI_Output (self, other, "DIA_Kardif_Hallo_Hart_14_01"); //Хорошо, хорошо... я согласен и на 7.
+	AI_Output (other, self, "DIA_Kardif_Hallo_Hart_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј - СЏ РЅР°Р№РґСѓ РЅСѓР¶РЅСѓСЋ РјРЅРµ РёРЅС„РѕСЂРјР°С†РёСЋ РІ РґСЂСѓРіРѕРј РјРµСЃС‚Рµ.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Hart_14_01"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ... СЏ СЃРѕРіР»Р°СЃРµРЅ Рё РЅР° 7.
 	
 	Info_ClearChoices (DIA_Kardif_Hallo);
-	Info_AddChoice 	  (DIA_Kardif_Hallo,"Договорились, 7 золотых монет - неплохая цена.",DIA_Kardif_Hallo_Sieben);
-	Info_AddChoice 	  (DIA_Kardif_Hallo,"Нет, мне не так уж сильно нужна твоя информация.",DIA_Kardif_Hallo_Ablehnen);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ, 7 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ - РЅРµРїР»РѕС…Р°СЏ С†РµРЅР°.",DIA_Kardif_Hallo_Sieben);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"РќРµС‚, РјРЅРµ РЅРµ С‚Р°Рє СѓР¶ СЃРёР»СЊРЅРѕ РЅСѓР¶РЅР° С‚РІРѕСЏ РёРЅС„РѕСЂРјР°С†РёСЏ.",DIA_Kardif_Hallo_Ablehnen);
 };
 FUNC VOID DIA_Kardif_Hallo_Sieben()
 {
-	AI_Output (other, self, "DIA_Kardif_Hallo_Sieben_15_00"); //Договорились, 7 золотых монет - неплохая цена.
-	AI_Output (self, other, "DIA_Kardif_Hallo_Sieben_14_01"); //(усмехается) Мудрое решение. Ну, если тебе нужно будет что-то узнать, обращайся ко мне.
+	AI_Output (other, self, "DIA_Kardif_Hallo_Sieben_15_00"); //Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ, 7 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ - РЅРµРїР»РѕС…Р°СЏ С†РµРЅР°.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Sieben_14_01"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РњСѓРґСЂРѕРµ СЂРµС€РµРЅРёРµ. РќСѓ, РµСЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ С‡С‚Рѕ-С‚Рѕ СѓР·РЅР°С‚СЊ, РѕР±СЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ.
 	
 	Kardif_Deal = 7;
 	Info_ClearChoices (DIA_Kardif_Hallo);
 };
 FUNC VOID DIA_Kardif_Hallo_Ablehnen()
 {
-	AI_Output (other, self, "DIA_Kardif_Hallo_Ablehnen_15_00"); //Нет, мне не так уж сильно нужна твоя информация.
-	AI_Output (self, other, "DIA_Kardif_Hallo_Ablehnen_14_01"); //Эй, подожди... (вздыхает) - хорошо, 5 золотых монет. Но это моя последняя цена!
+	AI_Output (other, self, "DIA_Kardif_Hallo_Ablehnen_15_00"); //РќРµС‚, РјРЅРµ РЅРµ С‚Р°Рє СѓР¶ СЃРёР»СЊРЅРѕ РЅСѓР¶РЅР° С‚РІРѕСЏ РёРЅС„РѕСЂРјР°С†РёСЏ.
+	AI_Output (self, other, "DIA_Kardif_Hallo_Ablehnen_14_01"); //Р­Р№, РїРѕРґРѕР¶РґРё... (РІР·РґС‹С…Р°РµС‚) - С…РѕСЂРѕС€Рѕ, 5 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. РќРѕ СЌС‚Рѕ РјРѕСЏ РїРѕСЃР»РµРґРЅСЏСЏ С†РµРЅР°!
 	
 	Info_ClearChoices (DIA_Kardif_Hallo);
-	Info_AddChoice 	  (DIA_Kardif_Hallo,"И почему нельзя было сразу сказать об этом?",DIA_Kardif_Hallo_Fuenf);
+	Info_AddChoice 	  (DIA_Kardif_Hallo,"Р РїРѕС‡РµРјСѓ РЅРµР»СЊР·СЏ Р±С‹Р»Рѕ СЃСЂР°Р·Сѓ СЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј?",DIA_Kardif_Hallo_Fuenf);
 
 };
 FUNC VOID DIA_Kardif_Hallo_Fuenf()
 {
-	AI_Output (other, self, "DIA_Kardif_Hallo_Fuenf_15_00"); //И почему нельзя было сразу сказать об этом?
-	AI_Output (self, other, "DIA_Kardif_Hallo_Fuenf_14_01"); //Ох, я просто сейчас не в лучшей форме. Но, как бы то ни было - сделка есть сделка.
+	AI_Output (other, self, "DIA_Kardif_Hallo_Fuenf_15_00"); //Р РїРѕС‡РµРјСѓ РЅРµР»СЊР·СЏ Р±С‹Р»Рѕ СЃСЂР°Р·Сѓ СЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј?
+	AI_Output (self, other, "DIA_Kardif_Hallo_Fuenf_14_01"); //РћС…, СЏ РїСЂРѕСЃС‚Рѕ СЃРµР№С‡Р°СЃ РЅРµ РІ Р»СѓС‡С€РµР№ С„РѕСЂРјРµ. РќРѕ, РєР°Рє Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ - СЃРґРµР»РєР° РµСЃС‚СЊ СЃРґРµР»РєР°.
 	Kardif_Deal = 5;
 	Info_ClearChoices (DIA_Kardif_Hallo);
 };
 FUNC VOID DIA_Kardif_Hallo_KeinDeal()
 {
-	AI_Output (other, self, "DIA_Kardif_Hallo_KeinDeal_15_00"); //Нет, так не пойдет. Давай лучше 6!
-	AI_Output (self, other, "DIA_Kardif_Hallo_KeinDeal_14_01"); //Ты отъявленный негодяй, скажу я тебе. Ну, если ты так настаиваешь, информация тебе обойдется в 6 золотых монет.
+	AI_Output (other, self, "DIA_Kardif_Hallo_KeinDeal_15_00"); //РќРµС‚, С‚Р°Рє РЅРµ РїРѕР№РґРµС‚. Р”Р°РІР°Р№ Р»СѓС‡С€Рµ 6!
+	AI_Output (self, other, "DIA_Kardif_Hallo_KeinDeal_14_01"); //РўС‹ РѕС‚СЉСЏРІР»РµРЅРЅС‹Р№ РЅРµРіРѕРґСЏР№, СЃРєР°Р¶Сѓ СЏ С‚РµР±Рµ. РќСѓ, РµСЃР»Рё С‚С‹ С‚Р°Рє РЅР°СЃС‚Р°РёРІР°РµС€СЊ, РёРЅС„РѕСЂРјР°С†РёСЏ С‚РµР±Рµ РѕР±РѕР№РґРµС‚СЃСЏ РІ 6 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	Kardif_Deal = 6;
 	Info_ClearChoices (DIA_Kardif_Hallo);
 };
@@ -190,7 +190,7 @@ instance DIA_Kardif_TRADE		(C_INFO)
 	information	 = 	DIA_Kardif_TRADE_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Дай мне что-нибудь выпить.";
+	description	 = 	"Р”Р°Р№ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ.";
 };
 
 func int DIA_Kardif_TRADE_Condition ()
@@ -204,7 +204,7 @@ func int DIA_Kardif_TRADE_Condition ()
 func void DIA_Kardif_TRADE_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Kardif_TRADE_15_00"); //Дай мне что-нибудь выпить.
+	AI_Output (other, self, "DIA_Kardif_TRADE_15_00"); //Р”Р°Р№ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info 
@@ -216,7 +216,7 @@ instance DIA_Kardif_TradeInfo		(C_INFO)
 	condition	 = 	DIA_Kardif_TradeInfo_Condition;
 	information	 = 	DIA_Kardif_TradeInfo_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Мне нужна информация.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ.";
 };
 
 func int DIA_Kardif_TradeInfo_Condition ()
@@ -229,7 +229,7 @@ func int DIA_Kardif_TradeInfo_Condition ()
 };
 func void DIA_Kardif_TradeInfo_Info ()
 {
-	AI_Output (other, self, "DIA_Kardif_TradeInfo_15_00"); //Мне нужна информация.
+	AI_Output (other, self, "DIA_Kardif_TradeInfo_15_00"); //РњРЅРµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ.
 
 	Kardif_OneQuestion = TRUE;
 };
@@ -238,7 +238,7 @@ func void DIA_Kardif_TradeInfo_Info ()
 ///////////////////////////////////////////////////////////////////////
 FUNC VOID B_SayKardifZuwenigGold()
 {
-	AI_Output (self,other, "B_SayKardifZuwenigGold_14_00");//Возвращайся, когда у тебя будет достаточно золота.
+	AI_Output (self,other, "B_SayKardifZuwenigGold_14_00");//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°.
 };
 instance DIA_Kardif_Buerger		(C_INFO)
 {
@@ -247,7 +247,7 @@ instance DIA_Kardif_Buerger		(C_INFO)
 	condition	 = 	DIA_Kardif_Buerger_Condition;
 	information	 = 	DIA_Kardif_Buerger_Info;
 	permanent    =  TRUE;
-	description	 = 	"Кто считается влиятельными людьми в этом городе?";
+	description	 = 	"РљС‚Рѕ СЃС‡РёС‚Р°РµС‚СЃСЏ РІР»РёСЏС‚РµР»СЊРЅС‹РјРё Р»СЋРґСЊРјРё РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ?";
 };
 //-------------------------------------------
 var int DIA_Kardif_Buerger_permanent;
@@ -265,10 +265,10 @@ func void DIA_Kardif_Buerger_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Kardif_Buerger_15_00"); //Кто считается влиятельными людьми в этом городе?
-		AI_Output (self, other, "DIA_Kardif_Buerger_14_01"); //Здесь, в порту, ты никого из них не найдешь. Единственный влиятельный человек здесь - это Лемар.
-		AI_Output (self, other, "DIA_Kardif_Buerger_14_02"); //Этот ростовщик не очень популярен, но у него есть золото, и другие влиятельные горожане должны ему деньги.
-		AI_Output (self, other, "DIA_Kardif_Buerger_14_03"); //Торговцы и мастера тоже очень влиятельные люди - и даже слишком, если тебе интересно мое мнение.
+		AI_Output (other, self, "DIA_Kardif_Buerger_15_00"); //РљС‚Рѕ СЃС‡РёС‚Р°РµС‚СЃСЏ РІР»РёСЏС‚РµР»СЊРЅС‹РјРё Р»СЋРґСЊРјРё РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ?
+		AI_Output (self, other, "DIA_Kardif_Buerger_14_01"); //Р—РґРµСЃСЊ, РІ РїРѕСЂС‚Сѓ, С‚С‹ РЅРёРєРѕРіРѕ РёР· РЅРёС… РЅРµ РЅР°Р№РґРµС€СЊ. Р•РґРёРЅСЃС‚РІРµРЅРЅС‹Р№ РІР»РёСЏС‚РµР»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє Р·РґРµСЃСЊ - СЌС‚Рѕ Р›РµРјР°СЂ.
+		AI_Output (self, other, "DIA_Kardif_Buerger_14_02"); //Р­С‚РѕС‚ СЂРѕСЃС‚РѕРІС‰РёРє РЅРµ РѕС‡РµРЅСЊ РїРѕРїСѓР»СЏСЂРµРЅ, РЅРѕ Сѓ РЅРµРіРѕ РµСЃС‚СЊ Р·РѕР»РѕС‚Рѕ, Рё РґСЂСѓРіРёРµ РІР»РёСЏС‚РµР»СЊРЅС‹Рµ РіРѕСЂРѕР¶Р°РЅРµ РґРѕР»Р¶РЅС‹ РµРјСѓ РґРµРЅСЊРіРё.
+		AI_Output (self, other, "DIA_Kardif_Buerger_14_03"); //РўРѕСЂРіРѕРІС†С‹ Рё РјР°СЃС‚РµСЂР° С‚РѕР¶Рµ РѕС‡РµРЅСЊ РІР»РёСЏС‚РµР»СЊРЅС‹Рµ Р»СЋРґРё - Рё РґР°Р¶Рµ СЃР»РёС€РєРѕРј, РµСЃР»Рё С‚РµР±Рµ РёРЅС‚РµСЂРµСЃРЅРѕ РјРѕРµ РјРЅРµРЅРёРµ.
 		
 		
 		DIA_Kardif_Buerger_permanent = TRUE;
@@ -290,7 +290,7 @@ instance DIA_Kardif_Lehmar	(C_INFO)
 	condition	 = 	DIA_Kardif_Lehmar_Condition;
 	information	 = 	DIA_Kardif_Lehmar_Info;
 	permanent    =  TRUE;
-	description	 = 	"Кто должен Лемару?";
+	description	 = 	"РљС‚Рѕ РґРѕР»Р¶РµРЅ Р›РµРјР°СЂСѓ?";
 };
 //-------------------------------------------
 var int DIA_Kardif_Lehmar_permanent;
@@ -309,10 +309,10 @@ func void DIA_Kardif_Lehmar_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Kardif_Add_15_00"); //Кто должен Лемару?
-		AI_Output (self, other, "DIA_Kardif_Add_14_01"); //(смеется) Если ты хочешь узнать это, тебе стоит заглянуть в его гроссбух.
-		AI_Output (self, other, "DIA_Kardif_Add_14_02"); //Только это будет очень непросто сделать незаметно.
-		AI_Output (self, other, "DIA_Kardif_Add_14_03"); //Насколько мне известно, он всегда носит его с собой...
+		AI_Output (other, self, "DIA_Kardif_Add_15_00"); //РљС‚Рѕ РґРѕР»Р¶РµРЅ Р›РµРјР°СЂСѓ?
+		AI_Output (self, other, "DIA_Kardif_Add_14_01"); //(СЃРјРµРµС‚СЃСЏ) Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ СЌС‚Рѕ, С‚РµР±Рµ СЃС‚РѕРёС‚ Р·Р°РіР»СЏРЅСѓС‚СЊ РІ РµРіРѕ РіСЂРѕСЃСЃР±СѓС….
+		AI_Output (self, other, "DIA_Kardif_Add_14_02"); //РўРѕР»СЊРєРѕ СЌС‚Рѕ Р±СѓРґРµС‚ РѕС‡РµРЅСЊ РЅРµРїСЂРѕСЃС‚Рѕ СЃРґРµР»Р°С‚СЊ РЅРµР·Р°РјРµС‚РЅРѕ.
+		AI_Output (self, other, "DIA_Kardif_Add_14_03"); //РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, РѕРЅ РІСЃРµРіРґР° РЅРѕСЃРёС‚ РµРіРѕ СЃ СЃРѕР±РѕР№...
 		
 		DIA_Kardif_Lehmar_permanent = TRUE;
 	}
@@ -334,7 +334,7 @@ instance DIA_Kardif_Arbeit		(C_INFO)
 	condition	 = 	DIA_Kardif_Arbeit_Condition;
 	information	 = 	DIA_Kardif_Arbeit_Info;
 	permanent    =  TRUE;
-	description	 = 	"Где я могу найти работу?";
+	description	 = 	"Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ?";
 };
 //-------------------------------------------
 var int DIA_Kardif_Arbeit_permanent;
@@ -352,9 +352,9 @@ func void DIA_Kardif_Arbeit_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Kardif_Arbeit_15_00"); //Где я могу найти работу?
-		AI_Output (self, other, "DIA_Kardif_Arbeit_14_01"); //Ты вряд ли найдешь работу здесь, в порту. Тебе нужно обратиться к мастерам в нижней части города.
-		AI_Output (self, other, "DIA_Kardif_Arbeit_14_02"); //Но если у тебя есть приличный меч, ты можешь вызвать Альрика на поединок. Ты найдешь его за складом, он сражается за золото.
+		AI_Output (other, self, "DIA_Kardif_Arbeit_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ?
+		AI_Output (self, other, "DIA_Kardif_Arbeit_14_01"); //РўС‹ РІСЂСЏРґ Р»Рё РЅР°Р№РґРµС€СЊ СЂР°Р±РѕС‚Сѓ Р·РґРµСЃСЊ, РІ РїРѕСЂС‚Сѓ. РўРµР±Рµ РЅСѓР¶РЅРѕ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє РјР°СЃС‚РµСЂР°Рј РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+		AI_Output (self, other, "DIA_Kardif_Arbeit_14_02"); //РќРѕ РµСЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РїСЂРёР»РёС‡РЅС‹Р№ РјРµС‡, С‚С‹ РјРѕР¶РµС€СЊ РІС‹Р·РІР°С‚СЊ РђР»СЊСЂРёРєР° РЅР° РїРѕРµРґРёРЅРѕРє. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ Р·Р° СЃРєР»Р°РґРѕРј, РѕРЅ СЃСЂР°Р¶Р°РµС‚СЃСЏ Р·Р° Р·РѕР»РѕС‚Рѕ.
 			
 	DIA_Kardif_Arbeit_permanent = TRUE;
 	}
@@ -374,7 +374,7 @@ instance DIA_Addon_Kardif_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Kardif_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Kardif_MissingPeople_Info;
 	permanent    =  TRUE;
-	description	 = 	"Что ты знаешь о пропавших горожанах?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїСЂРѕРїР°РІС€РёС… РіРѕСЂРѕР¶Р°РЅР°С…?";
 };
 //-------------------------------------------
 var int DIA_Addon_Kardif_MissingPeople_permanent;
@@ -392,17 +392,17 @@ func void DIA_Addon_Kardif_MissingPeople_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Addon_Kardif_MissingPeople_15_00"); //Что ты знаешь о пропавших горожанах?
-		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_01"); //Все, что я знаю, - это то, что за последние дни исчезли несколько людей.
-		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_02"); //Говорят, что больше всего пропавших здесь, в порту. Думаю, тебе стоит расспросить местных.
-		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_03"); //В нижней части города тоже исчезали люди.
-		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_04"); //Если хочешь знать больше, поговори с Корагоном.
-		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_05"); //У него пивная в нижней части города, и думаю, что от его уха не укрываются такие новости.
-		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_06"); //Халвор, торговец рыбой из лавки на пристани, тоже может что-то знать - к нему заходит много людей.
+		AI_Output (other, self, "DIA_Addon_Kardif_MissingPeople_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїСЂРѕРїР°РІС€РёС… РіРѕСЂРѕР¶Р°РЅР°С…?
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_01"); //Р’СЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ, - СЌС‚Рѕ С‚Рѕ, С‡С‚Рѕ Р·Р° РїРѕСЃР»РµРґРЅРёРµ РґРЅРё РёСЃС‡РµР·Р»Рё РЅРµСЃРєРѕР»СЊРєРѕ Р»СЋРґРµР№.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_02"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ Р±РѕР»СЊС€Рµ РІСЃРµРіРѕ РїСЂРѕРїР°РІС€РёС… Р·РґРµСЃСЊ, РІ РїРѕСЂС‚Сѓ. Р”СѓРјР°СЋ, С‚РµР±Рµ СЃС‚РѕРёС‚ СЂР°СЃСЃРїСЂРѕСЃРёС‚СЊ РјРµСЃС‚РЅС‹С….
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_03"); //Р’ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР° С‚РѕР¶Рµ РёСЃС‡РµР·Р°Р»Рё Р»СЋРґРё.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_04"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ Р·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ, РїРѕРіРѕРІРѕСЂРё СЃ РљРѕСЂР°РіРѕРЅРѕРј.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_05"); //РЈ РЅРµРіРѕ РїРёРІРЅР°СЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°, Рё РґСѓРјР°СЋ, С‡С‚Рѕ РѕС‚ РµРіРѕ СѓС…Р° РЅРµ СѓРєСЂС‹РІР°СЋС‚СЃСЏ С‚Р°РєРёРµ РЅРѕРІРѕСЃС‚Рё.
+		AI_Output (self, other, "DIA_Addon_Kardif_MissingPeople_14_06"); //РҐР°Р»РІРѕСЂ, С‚РѕСЂРіРѕРІРµС† СЂС‹Р±РѕР№ РёР· Р»Р°РІРєРё РЅР° РїСЂРёСЃС‚Р°РЅРё, С‚РѕР¶Рµ РјРѕР¶РµС‚ С‡С‚Рѕ-С‚Рѕ Р·РЅР°С‚СЊ - Рє РЅРµРјСѓ Р·Р°С…РѕРґРёС‚ РјРЅРѕРіРѕ Р»СЋРґРµР№.
 		
 	 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_WhoStolePeople,"Кардиф говорит, что мне стоит поговорить о пропавших людях с Корагоном, владельцем трактира в нижней части города, а также с Халвором, торгующим рыбой в гавани."); 
+		B_LogEntry (TOPIC_Addon_WhoStolePeople,"РљР°СЂРґРёС„ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РјРЅРµ СЃС‚РѕРёС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС… СЃ РљРѕСЂР°РіРѕРЅРѕРј, РІР»Р°РґРµР»СЊС†РµРј С‚СЂР°РєС‚РёСЂР° РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°, Р° С‚Р°РєР¶Рµ СЃ РҐР°Р»РІРѕСЂРѕРј, С‚РѕСЂРіСѓСЋС‰РёРј СЂС‹Р±РѕР№ РІ РіР°РІР°РЅРё."); 
 
 		DIA_Addon_Kardif_MissingPeople_permanent = TRUE;
 	}
@@ -422,7 +422,7 @@ instance DIA_Kardif_Lernen		(C_INFO)
 	condition	 = 	DIA_Kardif_Lernen_Condition;
 	information	 = 	DIA_Kardif_Lernen_Info;
 	permanent    =  TRUE;
-	description	 = 	"А у кого здесь можно поучиться чему-нибудь?";
+	description	 = 	"Рђ Сѓ РєРѕРіРѕ Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РїРѕСѓС‡РёС‚СЊСЃСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 //-------------------------------------------
 var int DIA_Kardif_Lernen_permanent;
@@ -440,26 +440,26 @@ func void DIA_Kardif_Lernen_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Kardif_Lernen_15_00"); //А у кого здесь можно поучиться чему-нибудь?
-		AI_Output (self, other, "DIA_Kardif_Lernen_14_01"); //Здесь, в портовом квартале есть несколько знающих людей.
-		AI_Output (self, other, "DIA_Kardif_Lernen_14_02"); //Карл, кузнец, - крепкий парень. Ручаюсь, он сможет помочь тебе стать сильнее.
-		AI_Output (self, other, "DIA_Kardif_Lernen_14_03"); //Альрик опытен в боевых искусствах. А Ларес - мошенник, каких свет не видывал. Он тоже заходит иногда в порт.
-		AI_Output (self, other, "DIA_Kardif_Lernen_14_04"); //А если ты настолько выжил из ума, чтобы пойти к старому Игнацу - он знает толк в алхем... алхим... зельях.
-		AI_Output (other, self, "DIA_Kardif_Lernen_15_05"); //И где мне найти всех этих людей?
-		AI_Output (self, other, "DIA_Kardif_Lernen_14_06"); //(стонет) Боже, король успеет выиграть войну против орков, прежде чем я тебе объясню все это.
-		AI_Output (self, other, "DIA_Kardif_Lernen_14_07"); //Просто осмотрись в портовом квартале, ты обязательно найдешь их. А если ты хочешь лучше ориентироваться здесь, зайди к Ибрагиму и купи у него карту.
-		AI_Output (self, other, "DIA_Kardif_Lernen_14_08"); //Его совсем легко найти. Он живет в соседнем доме направо от моего трактира. (бормочет) Я должен был взять в два раза больше за эту информацию.
+		AI_Output (other, self, "DIA_Kardif_Lernen_15_00"); //Рђ Сѓ РєРѕРіРѕ Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РїРѕСѓС‡РёС‚СЊСЃСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_01"); //Р—РґРµСЃСЊ, РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ Р·РЅР°СЋС‰РёС… Р»СЋРґРµР№.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_02"); //РљР°СЂР», РєСѓР·РЅРµС†, - РєСЂРµРїРєРёР№ РїР°СЂРµРЅСЊ. Р СѓС‡Р°СЋСЃСЊ, РѕРЅ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_03"); //РђР»СЊСЂРёРє РѕРїС‹С‚РµРЅ РІ Р±РѕРµРІС‹С… РёСЃРєСѓСЃСЃС‚РІР°С…. Рђ Р›Р°СЂРµСЃ - РјРѕС€РµРЅРЅРёРє, РєР°РєРёС… СЃРІРµС‚ РЅРµ РІРёРґС‹РІР°Р». РћРЅ С‚РѕР¶Рµ Р·Р°С…РѕРґРёС‚ РёРЅРѕРіРґР° РІ РїРѕСЂС‚.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_04"); //Рђ РµСЃР»Рё С‚С‹ РЅР°СЃС‚РѕР»СЊРєРѕ РІС‹Р¶РёР» РёР· СѓРјР°, С‡С‚РѕР±С‹ РїРѕР№С‚Рё Рє СЃС‚Р°СЂРѕРјСѓ РРіРЅР°С†Сѓ - РѕРЅ Р·РЅР°РµС‚ С‚РѕР»Рє РІ Р°Р»С…РµРј... Р°Р»С…РёРј... Р·РµР»СЊСЏС….
+		AI_Output (other, self, "DIA_Kardif_Lernen_15_05"); //Р РіРґРµ РјРЅРµ РЅР°Р№С‚Рё РІСЃРµС… СЌС‚РёС… Р»СЋРґРµР№?
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_06"); //(СЃС‚РѕРЅРµС‚) Р‘РѕР¶Рµ, РєРѕСЂРѕР»СЊ СѓСЃРїРµРµС‚ РІС‹РёРіСЂР°С‚СЊ РІРѕР№РЅСѓ РїСЂРѕС‚РёРІ РѕСЂРєРѕРІ, РїСЂРµР¶РґРµ С‡РµРј СЏ С‚РµР±Рµ РѕР±СЉСЏСЃРЅСЋ РІСЃРµ СЌС‚Рѕ.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_07"); //РџСЂРѕСЃС‚Рѕ РѕСЃРјРѕС‚СЂРёСЃСЊ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ, С‚С‹ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РЅР°Р№РґРµС€СЊ РёС…. Рђ РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ Р»СѓС‡С€Рµ РѕСЂРёРµРЅС‚РёСЂРѕРІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ, Р·Р°Р№РґРё Рє РР±СЂР°РіРёРјСѓ Рё РєСѓРїРё Сѓ РЅРµРіРѕ РєР°СЂС‚Сѓ.
+		AI_Output (self, other, "DIA_Kardif_Lernen_14_08"); //Р•РіРѕ СЃРѕРІСЃРµРј Р»РµРіРєРѕ РЅР°Р№С‚Рё. РћРЅ Р¶РёРІРµС‚ РІ СЃРѕСЃРµРґРЅРµРј РґРѕРјРµ РЅР°РїСЂР°РІРѕ РѕС‚ РјРѕРµРіРѕ С‚СЂР°РєС‚РёСЂР°. (Р±РѕСЂРјРѕС‡РµС‚) РЇ РґРѕР»Р¶РµРЅ Р±С‹Р» РІР·СЏС‚СЊ РІ РґРІР° СЂР°Р·Р° Р±РѕР»СЊС€Рµ Р·Р° СЌС‚Сѓ РёРЅС„РѕСЂРјР°С†РёСЋ.
 		
 		Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
 		
 		
-		B_LogEntry (Topic_CityTeacher,"Карл, кузнец в портовом квартале, может сделать меня сильнее.");
-		B_LogEntry (Topic_CityTeacher,"Ларес может помочь мне повысить мою ловкость.");
-		B_LogEntry (Topic_CityTeacher,"Альрик может обучить меня искусству владения одноручным оружием. Он ошивается за складом в портовом квартале.");
-		B_LogEntry (Topic_CityTeacher,"Игнац может показать мне рецепты приготовления зелий. Он живет в портовом квартале.");
+		B_LogEntry (Topic_CityTeacher,"РљР°СЂР», РєСѓР·РЅРµС† РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ, РјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ РјРµРЅСЏ СЃРёР»СЊРЅРµРµ.");
+		B_LogEntry (Topic_CityTeacher,"Р›Р°СЂРµСЃ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ Р»РѕРІРєРѕСЃС‚СЊ.");
+		B_LogEntry (Topic_CityTeacher,"РђР»СЊСЂРёРє РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ РІР»Р°РґРµРЅРёСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј. РћРЅ РѕС€РёРІР°РµС‚СЃСЏ Р·Р° СЃРєР»Р°РґРѕРј РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.");
+		B_LogEntry (Topic_CityTeacher,"РРіРЅР°С† РјРѕР¶РµС‚ РїРѕРєР°Р·Р°С‚СЊ РјРЅРµ СЂРµС†РµРїС‚С‹ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ Р·РµР»РёР№. РћРЅ Р¶РёРІРµС‚ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.");
 	
 		Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-		B_LogEntry (Topic_CityTrader,"Ибрагим рисует карты и продает их в гавани.");
+		B_LogEntry (Topic_CityTrader,"РР±СЂР°РіРёРј СЂРёСЃСѓРµС‚ РєР°СЂС‚С‹ Рё РїСЂРѕРґР°РµС‚ РёС… РІ РіР°РІР°РЅРё.");
 		
 		
 	DIA_Kardif_Lernen_permanent = TRUE;
@@ -479,7 +479,7 @@ instance DIA_Kardif_Diebeswerk		(C_INFO)
 	condition	 = 	DIA_Kardif_Diebeswerk_Condition;
 	information	 = 	DIA_Kardif_Diebeswerk_Info;
 	permanent    =  TRUE;
-	description	 = 	"А нет ли здесь какой-нибудь 'особой' работы ...?";
+	description	 = 	"Рђ РЅРµС‚ Р»Рё Р·РґРµСЃСЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ 'РѕСЃРѕР±РѕР№' СЂР°Р±РѕС‚С‹ ...?";
 };
 //-------------------------------------------
 var int DIA_Kardif_Diebeswerk_permanent;
@@ -498,10 +498,10 @@ func void DIA_Kardif_Diebeswerk_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Kardif_Diebeswerk_15_00"); //А нет ли здесь какой-нибудь 'особой' работы, мне бы хотелось побыстрее заработать денег?
-		AI_Output (self, other, "DIA_Kardif_Diebeswerk_14_01"); //Чего-нибудь особого, говоришь? Хмм...
+		AI_Output (other, self, "DIA_Kardif_Diebeswerk_15_00"); //Рђ РЅРµС‚ Р»Рё Р·РґРµСЃСЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ 'РѕСЃРѕР±РѕР№' СЂР°Р±РѕС‚С‹, РјРЅРµ Р±С‹ С…РѕС‚РµР»РѕСЃСЊ РїРѕР±С‹СЃС‚СЂРµРµ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РґРµРЅРµРі?
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk_14_01"); //Р§РµРіРѕ-РЅРёР±СѓРґСЊ РѕСЃРѕР±РѕРіРѕ, РіРѕРІРѕСЂРёС€СЊ? РҐРјРј...
 		AI_PlayAni(self, "T_SEARCH");
-		AI_Output (self, other, "DIA_Kardif_Diebeswerk_14_02"); //...попробуй поговорить с Нагуром. Возможно, он сможет помочь тебе.
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk_14_02"); //...РїРѕРїСЂРѕР±СѓР№ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РќР°РіСѓСЂРѕРј. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
 	
 		DIA_Kardif_Diebeswerk_permanent = TRUE;
 		
@@ -521,7 +521,7 @@ instance DIA_Kardif_Diebeswerk2		(C_INFO)
 	condition	 = 	DIA_Kardif_Diebeswerk2_Condition;
 	information	 = 	DIA_Kardif_Diebeswerk2_Info;
 	permanent    =  TRUE;
-	description	 = 	"Есть что-нибудь 'особенное' для меня?";
+	description	 = 	"Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ 'РѕСЃРѕР±РµРЅРЅРѕРµ' РґР»СЏ РјРµРЅСЏ?";
 };
 //-------------------------------------------
 var int DIA_Kardif_Diebeswerk2_permanent;
@@ -544,13 +544,13 @@ func void DIA_Kardif_Diebeswerk2_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_00"); //Есть что-нибудь 'особенное' для меня?
-		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_01"); //Да, есть кое-что - но это заинтересует тебя, только если ты блещешь разносторонними талантами.
-		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_02"); //Выкладывай, что там у тебя?
-		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_03"); //Ну, у Зуриса, торговца зельями на рынке, сейчас гостит Дарон, Маг Огня.
-		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_04"); //И?
-		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_05"); //При нем есть новый сундучок, сделанный специально для него Торбеном плотником.
-		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_06"); //Говорят, что этот Дарон носит с собой несметные сокровища. Но ты ничего не слышал от меня, понятно?
+		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_00"); //Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ 'РѕСЃРѕР±РµРЅРЅРѕРµ' РґР»СЏ РјРµРЅСЏ?
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_01"); //Р”Р°, РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ - РЅРѕ СЌС‚Рѕ Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚ С‚РµР±СЏ, С‚РѕР»СЊРєРѕ РµСЃР»Рё С‚С‹ Р±Р»РµС‰РµС€СЊ СЂР°Р·РЅРѕСЃС‚РѕСЂРѕРЅРЅРёРјРё С‚Р°Р»Р°РЅС‚Р°РјРё.
+		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_02"); //Р’С‹РєР»Р°РґС‹РІР°Р№, С‡С‚Рѕ С‚Р°Рј Сѓ С‚РµР±СЏ?
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_03"); //РќСѓ, Сѓ Р—СѓСЂРёСЃР°, С‚РѕСЂРіРѕРІС†Р° Р·РµР»СЊСЏРјРё РЅР° СЂС‹РЅРєРµ, СЃРµР№С‡Р°СЃ РіРѕСЃС‚РёС‚ Р”Р°СЂРѕРЅ, РњР°Рі РћРіРЅСЏ.
+		AI_Output (other, self, "DIA_Kardif_Diebeswerk2_15_04"); //Р?
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_05"); //РџСЂРё РЅРµРј РµСЃС‚СЊ РЅРѕРІС‹Р№ СЃСѓРЅРґСѓС‡РѕРє, СЃРґРµР»Р°РЅРЅС‹Р№ СЃРїРµС†РёР°Р»СЊРЅРѕ РґР»СЏ РЅРµРіРѕ РўРѕСЂР±РµРЅРѕРј РїР»РѕС‚РЅРёРєРѕРј.
+		AI_Output (self, other, "DIA_Kardif_Diebeswerk2_14_06"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ СЌС‚РѕС‚ Р”Р°СЂРѕРЅ РЅРѕСЃРёС‚ СЃ СЃРѕР±РѕР№ РЅРµСЃРјРµС‚РЅС‹Рµ СЃРѕРєСЂРѕРІРёС‰Р°. РќРѕ С‚С‹ РЅРёС‡РµРіРѕ РЅРµ СЃР»С‹С€Р°Р» РѕС‚ РјРµРЅСЏ, РїРѕРЅСЏС‚РЅРѕ?
 		
 		DIA_Kardif_Diebeswerk2_permanent = TRUE;
 		
@@ -594,7 +594,7 @@ instance DIA_Kardif_DOPE		(C_INFO)
 	condition	 = 	DIA_Kardif_DOPE_Condition;
 	information	 = 	DIA_Kardif_DOPE_Info;
 	permanent    =  TRUE;
-	description	 = 	"Где мне здесь купить травки?";
+	description	 = 	"Р“РґРµ РјРЅРµ Р·РґРµСЃСЊ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?";
 };
 var int DIA_Kardif_DOPE_perm;
 func int DIA_Kardif_DOPE_Condition ()
@@ -610,17 +610,17 @@ func void DIA_Kardif_DOPE_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Kardif_DOPE_15_01"); //Где мне здесь купить травки?
+	AI_Output (other, self, "DIA_Kardif_DOPE_15_01"); //Р“РґРµ РјРЅРµ Р·РґРµСЃСЊ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Kardif_DOPE_14_00"); //Только не здесь - я не имею дела с подобными вещами.
+		AI_Output (self, other, "DIA_Kardif_DOPE_14_00"); //РўРѕР»СЊРєРѕ РЅРµ Р·РґРµСЃСЊ - СЏ РЅРµ РёРјРµСЋ РґРµР»Р° СЃ РїРѕРґРѕР±РЅС‹РјРё РІРµС‰Р°РјРё.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Kardif_DOPE_14_02"); //Только не здесь.
-		AI_Output (other, self, "DIA_Kardif_DOPE_15_03"); //Ладно, тогда где?
-		AI_Output (self, other, "DIA_Kardif_DOPE_14_04"); //Я бы на твоем месте поговорил с Мелдором - он дымит тут днями напролет.
+		AI_Output (self, other, "DIA_Kardif_DOPE_14_02"); //РўРѕР»СЊРєРѕ РЅРµ Р·РґРµСЃСЊ.
+		AI_Output (other, self, "DIA_Kardif_DOPE_15_03"); //Р›Р°РґРЅРѕ, С‚РѕРіРґР° РіРґРµ?
+		AI_Output (self, other, "DIA_Kardif_DOPE_14_04"); //РЇ Р±С‹ РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ РїРѕРіРѕРІРѕСЂРёР» СЃ РњРµР»РґРѕСЂРѕРј - РѕРЅ РґС‹РјРёС‚ С‚СѓС‚ РґРЅСЏРјРё РЅР°РїСЂРѕР»РµС‚.
 		
 		DIA_Kardif_DOPE_perm = TRUE;
 	};
@@ -636,7 +636,7 @@ instance DIA_Kardif_Paket		(C_INFO)
 	condition	 = 	DIA_Kardif_Paket_Condition;
 	information	 = 	DIA_Kardif_Paket_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Ты что-нибудь слышал о тюке болотной травы?";
+	description	 = 	"РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃР»С‹С€Р°Р» Рѕ С‚СЋРєРµ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹?";
 };
 var int DIA_Kardif_Paket_perm;
 func int DIA_Kardif_Paket_Condition ()
@@ -652,15 +652,15 @@ func void DIA_Kardif_Paket_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Kardif_Paket_15_00"); //Ты что-нибудь слышал о тюке болотной травы?
-		AI_Output (self, other, "DIA_Kardif_Paket_14_01"); //Тот, кто владеет этим тюком - богатый человек. И, возможно, весьма расслабленный также!
-		AI_Output (other, self, "DIA_Kardif_Paket_15_02"); //Не пытайся провести меня. Ты что-то знаешь. Давай, выкладывай!
-		AI_Output (self, other, "DIA_Kardif_Paket_14_03"); //Хорошо, хорошо - этот парень недавно заходил в мой трактир. Он из наемников.
-		AI_Output (self, other, "DIA_Kardif_Paket_14_04"); //Он сказал, что продал тюк болотной травы в гавани, но, конечно же, он был обкуренный в хлам. Это все, что я знаю.
+		AI_Output (other, self, "DIA_Kardif_Paket_15_00"); //РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃР»С‹С€Р°Р» Рѕ С‚СЋРєРµ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹?
+		AI_Output (self, other, "DIA_Kardif_Paket_14_01"); //РўРѕС‚, РєС‚Рѕ РІР»Р°РґРµРµС‚ СЌС‚РёРј С‚СЋРєРѕРј - Р±РѕРіР°С‚С‹Р№ С‡РµР»РѕРІРµРє. Р, РІРѕР·РјРѕР¶РЅРѕ, РІРµСЃСЊРјР° СЂР°СЃСЃР»Р°Р±Р»РµРЅРЅС‹Р№ С‚Р°РєР¶Рµ!
+		AI_Output (other, self, "DIA_Kardif_Paket_15_02"); //РќРµ РїС‹С‚Р°Р№СЃСЏ РїСЂРѕРІРµСЃС‚Рё РјРµРЅСЏ. РўС‹ С‡С‚Рѕ-С‚Рѕ Р·РЅР°РµС€СЊ. Р”Р°РІР°Р№, РІС‹РєР»Р°РґС‹РІР°Р№!
+		AI_Output (self, other, "DIA_Kardif_Paket_14_03"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ - СЌС‚РѕС‚ РїР°СЂРµРЅСЊ РЅРµРґР°РІРЅРѕ Р·Р°С…РѕРґРёР» РІ РјРѕР№ С‚СЂР°РєС‚РёСЂ. РћРЅ РёР· РЅР°РµРјРЅРёРєРѕРІ.
+		AI_Output (self, other, "DIA_Kardif_Paket_14_04"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РїСЂРѕРґР°Р» С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹ РІ РіР°РІР°РЅРё, РЅРѕ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, РѕРЅ Р±С‹Р» РѕР±РєСѓСЂРµРЅРЅС‹Р№ РІ С…Р»Р°Рј. Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ.
 		
 		DIA_Kardif_Paket_perm = TRUE;
 		
-		B_LogEntry (TOPIC_WAREHOUSE,"Кардиф говорил с наемником. У этого парня есть тюк болотной травы, который он хотел продать.");
+		B_LogEntry (TOPIC_WAREHOUSE,"РљР°СЂРґРёС„ РіРѕРІРѕСЂРёР» СЃ РЅР°РµРјРЅРёРєРѕРј. РЈ СЌС‚РѕРіРѕ РїР°СЂРЅСЏ РµСЃС‚СЊ С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹, РєРѕС‚РѕСЂС‹Р№ РѕРЅ С…РѕС‚РµР» РїСЂРѕРґР°С‚СЊ.");
 	}
 	else
 	{
@@ -690,17 +690,17 @@ func int DIA_Kardif_SENDATTILA_Condition ()
 };
 func void DIA_Kardif_SENDATTILA_Info ()
 {
-	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_00"); //Эй, ты, иди сюда. У меня кое-что есть для тебя.
-	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_01"); //Один парень очень хочет поговорить с тобой.
-	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_02"); //Так как он не нашел тебя здесь, он попросил меня передать тебе записку.
-	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_03"); //Он хочет встретиться с тобой. За рыбной лавкой Халвора.
-	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_04"); //Эта информация бесплатна - но это исключение! Цена на все остальное осталась прежней.
-	AI_Output (other, self, "DIA_Kardif_SENDATTILA_15_05"); //Как выглядел этот парень?
-	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_06"); //Я мог бы сказать тебе - но тебе придется заплатить за это, мой друг. (усмехается)
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_00"); //Р­Р№, С‚С‹, РёРґРё СЃСЋРґР°. РЈ РјРµРЅСЏ РєРѕРµ-С‡С‚Рѕ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_01"); //РћРґРёРЅ РїР°СЂРµРЅСЊ РѕС‡РµРЅСЊ С…РѕС‡РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№.
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_02"); //РўР°Рє РєР°Рє РѕРЅ РЅРµ РЅР°С€РµР» С‚РµР±СЏ Р·РґРµСЃСЊ, РѕРЅ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ Р·Р°РїРёСЃРєСѓ.
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_03"); //РћРЅ С…РѕС‡РµС‚ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№. Р—Р° СЂС‹Р±РЅРѕР№ Р»Р°РІРєРѕР№ РҐР°Р»РІРѕСЂР°.
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_04"); //Р­С‚Р° РёРЅС„РѕСЂРјР°С†РёСЏ Р±РµСЃРїР»Р°С‚РЅР° - РЅРѕ СЌС‚Рѕ РёСЃРєР»СЋС‡РµРЅРёРµ! Р¦РµРЅР° РЅР° РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ РѕСЃС‚Р°Р»Р°СЃСЊ РїСЂРµР¶РЅРµР№.
+	AI_Output (other, self, "DIA_Kardif_SENDATTILA_15_05"); //РљР°Рє РІС‹РіР»СЏРґРµР» СЌС‚РѕС‚ РїР°СЂРµРЅСЊ?
+	AI_Output (self, other, "DIA_Kardif_SENDATTILA_14_06"); //РЇ РјРѕРі Р±С‹ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ - РЅРѕ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ, РјРѕР№ РґСЂСѓРі. (СѓСЃРјРµС…Р°РµС‚СЃСЏ)
 	
 	if (Kardif_Deal == 0)
 	{
-		AI_Output (self, other, "DIA_Kardif_Hallo_14_04"); //Каждая информация, которую я сообщу тебе, будет стоить 10 золотых монет.
+		AI_Output (self, other, "DIA_Kardif_Hallo_14_04"); //РљР°Р¶РґР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ, РєРѕС‚РѕСЂСѓСЋ СЏ СЃРѕРѕР±С‰Сѓ С‚РµР±Рµ, Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ 10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 		Kardif_Deal = 10;
 	};
 	Wld_InsertNpc (VLK_494_Attila, "NW_CITY_ENTRANCE_01");
@@ -715,7 +715,7 @@ instance DIA_Kardif_Kerl		(C_INFO)
 	condition	 = 	DIA_Kardif_Kerl_Condition;
 	information	 = 	DIA_Kardif_Kerl_Info;
 	permanent    =  TRUE;
-	description	 = 	"Как выглядел этот парень?";
+	description	 = 	"РљР°Рє РІС‹РіР»СЏРґРµР» СЌС‚РѕС‚ РїР°СЂРµРЅСЊ?";
 };
 //----------------------------------
 var int DIA_Kardif_Kerl_permanent;
@@ -735,12 +735,12 @@ func void DIA_Kardif_Kerl_Info ()
 {
 	if B_GiveInvItems (other,self,ItMi_Gold, Kardif_Deal)
 	{
-		AI_Output (other, self, "DIA_Kardif_Kerl_15_00"); //Как выглядел этот парень?
-		AI_Output (self, other, "DIA_Kardif_Kerl_14_01"); //Ну, он довольно высокий, темнокожий и сильный - но он не носит униформы. Какой-то он... зловещий.
-		AI_Output (other, self, "DIA_Kardif_Kerl_15_02"); //А его лицо?
-		AI_Output (self, other, "DIA_Kardif_Kerl_14_03"); //Его лицо? Когда он глядел на меня, я был рад, что он пришел не за мной.
-		AI_Output (self, other, "DIA_Kardif_Kerl_14_04"); //В его глазах было что-то пугающее - ну, как бы то ни было, я думаю, ты должен пойти, повидаться с ним. Это должно быть интересно.
-		AI_Output (other, self, "DIA_Kardif_Kerl_15_05"); //Да... весь вопрос в том, для кого...
+		AI_Output (other, self, "DIA_Kardif_Kerl_15_00"); //РљР°Рє РІС‹РіР»СЏРґРµР» СЌС‚РѕС‚ РїР°СЂРµРЅСЊ?
+		AI_Output (self, other, "DIA_Kardif_Kerl_14_01"); //РќСѓ, РѕРЅ РґРѕРІРѕР»СЊРЅРѕ РІС‹СЃРѕРєРёР№, С‚РµРјРЅРѕРєРѕР¶РёР№ Рё СЃРёР»СЊРЅС‹Р№ - РЅРѕ РѕРЅ РЅРµ РЅРѕСЃРёС‚ СѓРЅРёС„РѕСЂРјС‹. РљР°РєРѕР№-С‚Рѕ РѕРЅ... Р·Р»РѕРІРµС‰РёР№.
+		AI_Output (other, self, "DIA_Kardif_Kerl_15_02"); //Рђ РµРіРѕ Р»РёС†Рѕ?
+		AI_Output (self, other, "DIA_Kardif_Kerl_14_03"); //Р•РіРѕ Р»РёС†Рѕ? РљРѕРіРґР° РѕРЅ РіР»СЏРґРµР» РЅР° РјРµРЅСЏ, СЏ Р±С‹Р» СЂР°Рґ, С‡С‚Рѕ РѕРЅ РїСЂРёС€РµР» РЅРµ Р·Р° РјРЅРѕР№.
+		AI_Output (self, other, "DIA_Kardif_Kerl_14_04"); //Р’ РµРіРѕ РіР»Р°Р·Р°С… Р±С‹Р»Рѕ С‡С‚Рѕ-С‚Рѕ РїСѓРіР°СЋС‰РµРµ - РЅСѓ, РєР°Рє Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ, СЏ РґСѓРјР°СЋ, С‚С‹ РґРѕР»Р¶РµРЅ РїРѕР№С‚Рё, РїРѕРІРёРґР°С‚СЊСЃСЏ СЃ РЅРёРј. Р­С‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РёРЅС‚РµСЂРµСЃРЅРѕ.
+		AI_Output (other, self, "DIA_Kardif_Kerl_15_05"); //Р”Р°... РІРµСЃСЊ РІРѕРїСЂРѕСЃ РІ С‚РѕРј, РґР»СЏ РєРѕРіРѕ...
 		
 		DIA_Kardif_Kerl_permanent = TRUE;
 	}
@@ -759,7 +759,7 @@ instance DIA_Kardif_DEFEATEDATTILA		(C_INFO)
 	condition	 = 	DIA_Kardif_DEFEATEDATTILA_Condition;
 	information	 = 	DIA_Kardif_DEFEATEDATTILA_Info;
 	permanent    =  FALSE;
-	description	 = 	"Этот ублюдок пытался убить меня!";
+	description	 = 	"Р­С‚РѕС‚ СѓР±Р»СЋРґРѕРє РїС‹С‚Р°Р»СЃСЏ СѓР±РёС‚СЊ РјРµРЅСЏ!";
 };
 
 func int DIA_Kardif_DEFEATEDATTILA_Condition ()
@@ -772,9 +772,9 @@ func int DIA_Kardif_DEFEATEDATTILA_Condition ()
 
 func void DIA_Kardif_DEFEATEDATTILA_Info ()
 {
-	AI_Output (other, self, "DIA_Kardif_DEFEATEDATTILA_15_00"); //Этот ублюдок пытался убить меня!
-	AI_Output (self, other, "DIA_Kardif_DEFEATEDATTILA_14_01"); //Эй, откуда мне было знать? Я просто передал информацию.
-	AI_Output (self, other, "DIA_Kardif_DEFEATEDATTILA_14_02"); //Если кто-то решил насолить тебе, я думаю, у него были веские причины.
+	AI_Output (other, self, "DIA_Kardif_DEFEATEDATTILA_15_00"); //Р­С‚РѕС‚ СѓР±Р»СЋРґРѕРє РїС‹С‚Р°Р»СЃСЏ СѓР±РёС‚СЊ РјРµРЅСЏ!
+	AI_Output (self, other, "DIA_Kardif_DEFEATEDATTILA_14_01"); //Р­Р№, РѕС‚РєСѓРґР° РјРЅРµ Р±С‹Р»Рѕ Р·РЅР°С‚СЊ? РЇ РїСЂРѕСЃС‚Рѕ РїРµСЂРµРґР°Р» РёРЅС„РѕСЂРјР°С†РёСЋ.
+	AI_Output (self, other, "DIA_Kardif_DEFEATEDATTILA_14_02"); //Р•СЃР»Рё РєС‚Рѕ-С‚Рѕ СЂРµС€РёР» РЅР°СЃРѕР»РёС‚СЊ С‚РµР±Рµ, СЏ РґСѓРјР°СЋ, Сѓ РЅРµРіРѕ Р±С‹Р»Рё РІРµСЃРєРёРµ РїСЂРёС‡РёРЅС‹.
 
 	B_GivePlayerXP (XP_Kardif_Blame4Attila);
 	
@@ -791,7 +791,7 @@ INSTANCE DIA_Kardif_Zeichen   (C_INFO)
 	condition   = DIA_Kardif_Zeichen_Condition;
 	information = DIA_Kardif_Zeichen_Info;
 	permanent   = FALSE;
-	description = "(Показать сигнал воров)";
+	description = "(РџРѕРєР°Р·Р°С‚СЊ СЃРёРіРЅР°Р» РІРѕСЂРѕРІ)";
 };
 
 FUNC INT DIA_Kardif_Zeichen_Condition()
@@ -804,8 +804,8 @@ FUNC INT DIA_Kardif_Zeichen_Condition()
 FUNC VOID DIA_Kardif_Zeichen_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other, "DIA_Kardif_Zeichen_14_00");//Ах, ты имеешь дела с бандой. Хорошо. В таком случае, у меня кое-что есть для тебя.
-	AI_Output (self, other, "DIA_Kardif_Zeichen_14_01");//(вкрадчиво) Если тебе понадобятся отмычки, намекни. Я припас несколько на всякий случай. Просто попроси меня налить тебе выпивки.
+	AI_Output (self, other, "DIA_Kardif_Zeichen_14_00");//РђС…, С‚С‹ РёРјРµРµС€СЊ РґРµР»Р° СЃ Р±Р°РЅРґРѕР№. РҐРѕСЂРѕС€Рѕ. Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, Сѓ РјРµРЅСЏ РєРѕРµ-С‡С‚Рѕ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Kardif_Zeichen_14_01");//(РІРєСЂР°РґС‡РёРІРѕ) Р•СЃР»Рё С‚РµР±Рµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ РѕС‚РјС‹С‡РєРё, РЅР°РјРµРєРЅРё. РЇ РїСЂРёРїР°СЃ РЅРµСЃРєРѕР»СЊРєРѕ РЅР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№. РџСЂРѕСЃС‚Рѕ РїРѕРїСЂРѕСЃРё РјРµРЅСЏ РЅР°Р»РёС‚СЊ С‚РµР±Рµ РІС‹РїРёРІРєРё.
 	
 	CreateInvItems (self, ItKe_Lockpick, 20);
 };
@@ -826,7 +826,7 @@ INSTANCE DIA_Kardif_Crew   (C_INFO)
 	condition   = DIA_Kardif_Crew_Condition;
 	information = DIA_Kardif_Crew_Info;
 	permanent   = FALSE;
-	description = "Мне все еще нужны матросы.";
+	description = "РњРЅРµ РІСЃРµ РµС‰Рµ РЅСѓР¶РЅС‹ РјР°С‚СЂРѕСЃС‹.";
 };
 
 FUNC INT DIA_Kardif_Crew_Condition()
@@ -838,20 +838,20 @@ FUNC INT DIA_Kardif_Crew_Condition()
 };
 FUNC VOID DIA_Kardif_Crew_Info()
 {
-	AI_Output (other,self , "DIA_Kardif_Crew_15_00");//Мне все еще нужны матросы.
-	AI_Output (self, other, "DIA_Kardif_Crew_14_01");//Настали плохие времена, дружище. Ты не найдешь матросов во всем Хоринисе. Большинство из них давно покинули город.
-	AI_Output (self, other, "DIA_Kardif_Crew_14_02");//Но с хорошим капитаном будет нетрудно набрать несколько смышленных парней, и довольно быстро сделать из них неплохую команду.
-	AI_Output (other,self , "DIA_Kardif_Crew_15_03");//Где я могу найти капитана?
-	AI_Output (self, other, "DIA_Kardif_Crew_14_04");//Ты обращаешься не по адресу. Я простой трактирщик.
+	AI_Output (other,self , "DIA_Kardif_Crew_15_00");//РњРЅРµ РІСЃРµ РµС‰Рµ РЅСѓР¶РЅС‹ РјР°С‚СЂРѕСЃС‹.
+	AI_Output (self, other, "DIA_Kardif_Crew_14_01");//РќР°СЃС‚Р°Р»Рё РїР»РѕС…РёРµ РІСЂРµРјРµРЅР°, РґСЂСѓР¶РёС‰Рµ. РўС‹ РЅРµ РЅР°Р№РґРµС€СЊ РјР°С‚СЂРѕСЃРѕРІ РІРѕ РІСЃРµРј РҐРѕСЂРёРЅРёСЃРµ. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… РґР°РІРЅРѕ РїРѕРєРёРЅСѓР»Рё РіРѕСЂРѕРґ.
+	AI_Output (self, other, "DIA_Kardif_Crew_14_02");//РќРѕ СЃ С…РѕСЂРѕС€РёРј РєР°РїРёС‚Р°РЅРѕРј Р±СѓРґРµС‚ РЅРµС‚СЂСѓРґРЅРѕ РЅР°Р±СЂР°С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ СЃРјС‹С€Р»РµРЅРЅС‹С… РїР°СЂРЅРµР№, Рё РґРѕРІРѕР»СЊРЅРѕ Р±С‹СЃС‚СЂРѕ СЃРґРµР»Р°С‚СЊ РёР· РЅРёС… РЅРµРїР»РѕС…СѓСЋ РєРѕРјР°РЅРґСѓ.
+	AI_Output (other,self , "DIA_Kardif_Crew_15_03");//Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РєР°РїРёС‚Р°РЅР°?
+	AI_Output (self, other, "DIA_Kardif_Crew_14_04");//РўС‹ РѕР±СЂР°С‰Р°РµС€СЊСЃСЏ РЅРµ РїРѕ Р°РґСЂРµСЃСѓ. РЇ РїСЂРѕСЃС‚РѕР№ С‚СЂР°РєС‚РёСЂС‰РёРє.
 	if (Npc_IsDead (Jack) == FALSE)
 	{
 		if (SCGoTCaptain == FALSE)
 		{
 			Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                           
 			Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                         
-			B_LogEntry (TOPIC_Captain,"Кардиф отправил меня к старому Джеку. Возможно, он сможет помочь мне");
+			B_LogEntry (TOPIC_Captain,"РљР°СЂРґРёС„ РѕС‚РїСЂР°РІРёР» РјРµРЅСЏ Рє СЃС‚Р°СЂРѕРјСѓ Р”Р¶РµРєСѓ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ");
 	    };
-		AI_Output (self, other, "DIA_Kardif_Crew_14_05");//Иди, поговори со Старым Джеком. Он ошивается в этом порту, сколько я себя помню. В том, что касается морского дела, это тот человек, что тебе нужен.
+		AI_Output (self, other, "DIA_Kardif_Crew_14_05");//РРґРё, РїРѕРіРѕРІРѕСЂРё СЃРѕ РЎС‚Р°СЂС‹Рј Р”Р¶РµРєРѕРј. РћРЅ РѕС€РёРІР°РµС‚СЃСЏ РІ СЌС‚РѕРј РїРѕСЂС‚Сѓ, СЃРєРѕР»СЊРєРѕ СЏ СЃРµР±СЏ РїРѕРјРЅСЋ. Р’ С‚РѕРј, С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РјРѕСЂСЃРєРѕРіРѕ РґРµР»Р°, СЌС‚Рѕ С‚РѕС‚ С‡РµР»РѕРІРµРє, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РµРЅ.
 	};
 };
 

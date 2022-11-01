@@ -7,7 +7,7 @@ func void ZS_MM_Flee ()
 	AI_StandUp		(self);
 	AI_SetWalkmode 	(self, NPC_RUN);
 	
-	Npc_SendPassivePerc	(self, PERC_ASSESSWARN, other, self); // Opfer, Täter
+	Npc_SendPassivePerc	(self, PERC_ASSESSWARN, other, self); // Opfer, TÐ´ter
 	
 	B_MM_DeSynchronize();
 };
@@ -20,7 +20,7 @@ func int ZS_MM_Flee_Loop ()
 	{																
 		if (Npc_GetStateTime(self) > 0)
 		{
-			Npc_SendPassivePerc	(self, PERC_ASSESSWARN, other, self); // Opfer, Täter
+			Npc_SendPassivePerc	(self, PERC_ASSESSWARN, other, self); // Opfer, TÐ´ter
 			
 			Npc_SetStateTime(self, 0);
 		};

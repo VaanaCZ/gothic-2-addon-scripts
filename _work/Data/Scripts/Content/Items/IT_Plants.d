@@ -33,7 +33,7 @@ const int	Value_Planeberry		=	10;		const int	HP_Planeberry		=	5;
 
 INSTANCE ItPl_Weed(C_Item)
 {	
-	name 				=	"Сорняки";
+	name 				=	"РЎРѕСЂРЅСЏРєРё";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -55,7 +55,7 @@ INSTANCE ItPl_Weed(C_Item)
 
 INSTANCE ItPl_Beet (C_Item)
 {	
-	name 				=	"Репа";
+	name 				=	"Р РµРїР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -80,7 +80,7 @@ func void Use_Beet ()
 /******************************************************************************************/	
 INSTANCE ItPl_SwampHerb(C_Item)
 {	
-	name 				=	"Болотная трава";
+	name 				=	"Р‘РѕР»РѕС‚РЅР°СЏ С‚СЂР°РІР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -109,7 +109,7 @@ INSTANCE ItPl_SwampHerb(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_01(C_Item)
 {	
-	name 				=	"Огненная крапива";
+	name 				=	"РћРіРЅРµРЅРЅР°СЏ РєСЂР°РїРёРІР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -137,7 +137,7 @@ INSTANCE ItPl_Mana_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_02(C_Item)
 {	
-	name 				=	"Огненная трава";
+	name 				=	"РћРіРЅРµРЅРЅР°СЏ С‚СЂР°РІР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -165,7 +165,7 @@ INSTANCE ItPl_Mana_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_03(C_Item)
 {	
-	name 				=	"Огненный корень";
+	name 				=	"РћРіРЅРµРЅРЅС‹Р№ РєРѕСЂРµРЅСЊ";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -193,7 +193,7 @@ INSTANCE ItPl_Mana_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_01(C_Item)
 {	
-	name 				=	"Лечебная трава";
+	name 				=	"Р›РµС‡РµР±РЅР°СЏ С‚СЂР°РІР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -222,7 +222,7 @@ INSTANCE ItPl_Health_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_02(C_Item)
 {	
-	name 				=	"Лечебное растение";
+	name 				=	"Р›РµС‡РµР±РЅРѕРµ СЂР°СЃС‚РµРЅРёРµ";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -250,7 +250,7 @@ INSTANCE ItPl_Health_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_03(C_Item)
 {	
-	name 				=	"Лечебный корень";
+	name 				=	"Р›РµС‡РµР±РЅС‹Р№ РєРѕСЂРµРЅСЊ";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -276,7 +276,7 @@ INSTANCE ItPl_Health_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Dex_Herb_01(C_Item)
 {	
-	name 				=	"Гоблинские ягоды";
+	name 				=	"Р“РѕР±Р»РёРЅСЃРєРёРµ СЏРіРѕРґС‹";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -304,7 +304,7 @@ INSTANCE ItPl_Dex_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Strength_Herb_01(C_Item)
 {	
-	name 				=	"Драконий корень";
+	name 				=	"Р”СЂР°РєРѕРЅРёР№ РєРѕСЂРµРЅСЊ";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -334,7 +334,7 @@ INSTANCE ItPl_Strength_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Speed_Herb_01(C_Item)
 {	
-	name 				=	"Снеппер-трава";
+	name 				=	"РЎРЅРµРїРїРµСЂ-С‚СЂР°РІР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -366,7 +366,7 @@ INSTANCE ItPl_Speed_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mushroom_01(C_Item)
 {	
-	name 				=	"Черный гриб";
+	name 				=	"Р§РµСЂРЅС‹Р№ РіСЂРёР±";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -407,7 +407,7 @@ INSTANCE ItPl_Mushroom_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mushroom_02(C_Item)
 {	
-	name 				=	"Пища рудокопа";
+	name 				=	"РџРёС‰Р° СЂСѓРґРѕРєРѕРїР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -434,7 +434,7 @@ INSTANCE ItPl_Mushroom_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Blueplant(C_Item)
 {	
-	name 				=	"Синяя бузина";
+	name 				=	"РЎРёРЅСЏСЏ Р±СѓР·РёРЅР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -464,7 +464,7 @@ INSTANCE ItPl_Blueplant(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Forestberry (C_Item)
 {	
-	name 				=	"Лесная ягода";
+	name 				=	"Р›РµСЃРЅР°СЏ СЏРіРѕРґР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -493,7 +493,7 @@ INSTANCE ItPl_Forestberry (C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Planeberry (C_Item)
 {	
-	name 				=	"Луговая ягода";
+	name 				=	"Р›СѓРіРѕРІР°СЏ СЏРіРѕРґР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -523,13 +523,13 @@ INSTANCE ItPl_Planeberry (C_Item)
 
 
 //******************************************************************************************
-//		Pflanze zum brauen von temporдren und permanten Trдnken
+//		Pflanze zum brauen von temporРґren und permanten TrРґnken
 //******************************************************************************************
 
 
 INSTANCE ItPl_Temp_Herb(C_Item)
 {	
-	name 				=	"Луговой горец";
+	name 				=	"Р›СѓРіРѕРІРѕР№ РіРѕСЂРµС†";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	
@@ -557,7 +557,7 @@ INSTANCE ItPl_Temp_Herb(C_Item)
 
 INSTANCE ItPl_Perm_Herb(C_Item)
 {	
-	name 				=	"Царский щавель";
+	name 				=	"Р¦Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	

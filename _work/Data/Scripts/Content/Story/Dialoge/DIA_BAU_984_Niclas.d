@@ -38,9 +38,9 @@ FUNC INT DIA_Niclas_Hello_Condition()
 };
 FUNC VOID DIA_Niclas_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Niclas_Hello_03_00"); //Ты тоже сбежал?
-	AI_Output (other,self ,"DIA_Niclas_Hello_15_01"); //С чего ты взял это?
-	AI_Output (self ,other,"DIA_Niclas_Hello_03_02"); //Зачем ты зашел в такую даль один? Здесь НИЧЕГО нет.
+	AI_Output (self ,other,"DIA_Niclas_Hello_03_00"); //РўС‹ С‚РѕР¶Рµ СЃР±РµР¶Р°Р»?
+	AI_Output (other,self ,"DIA_Niclas_Hello_15_01"); //РЎ С‡РµРіРѕ С‚С‹ РІР·СЏР» СЌС‚Рѕ?
+	AI_Output (self ,other,"DIA_Niclas_Hello_03_02"); //Р—Р°С‡РµРј С‚С‹ Р·Р°С€РµР» РІ С‚Р°РєСѓСЋ РґР°Р»СЊ РѕРґРёРЅ? Р—РґРµСЃСЊ РќРР§Р•Р“Рћ РЅРµС‚.
 };
 
 // ***********************************************************
@@ -53,7 +53,7 @@ INSTANCE DIA_Niclas_HaveALook   (C_INFO)
 	condition   = DIA_Niclas_HaveALook_Condition;
 	information = DIA_Niclas_HaveALook_Info;
 	permanent   = FALSE;
-	description = "Я просто брожу, любуюсь природой.";
+	description = "РЇ РїСЂРѕСЃС‚Рѕ Р±СЂРѕР¶Сѓ, Р»СЋР±СѓСЋСЃСЊ РїСЂРёСЂРѕРґРѕР№.";
 };
 FUNC INT DIA_Niclas_HaveALook_Condition()
 {
@@ -61,20 +61,20 @@ FUNC INT DIA_Niclas_HaveALook_Condition()
 };
 FUNC VOID DIA_Niclas_HaveALook_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_HaveALook_15_00"); //Я просто брожу, любуюсь природой.
-	AI_Output (self ,other,"DIA_Niclas_HaveALook_03_01"); //Хорошо, будь моим гостем. Хочешь кусок мяса?
+	AI_Output (other,self ,"DIA_Niclas_HaveALook_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ Р±СЂРѕР¶Сѓ, Р»СЋР±СѓСЋСЃСЊ РїСЂРёСЂРѕРґРѕР№.
+	AI_Output (self ,other,"DIA_Niclas_HaveALook_03_01"); //РҐРѕСЂРѕС€Рѕ, Р±СѓРґСЊ РјРѕРёРј РіРѕСЃС‚РµРј. РҐРѕС‡РµС€СЊ РєСѓСЃРѕРє РјСЏСЃР°?
 	
 	CreateInvItems (self,ItFoMutton,1);
 	
 	Info_ClearChoices (DIA_Niclas_HaveALook);
-	Info_AddChoice (DIA_Niclas_HaveALook,"Нет, спасибо.",DIA_Niclas_HaveALook_No);
-	Info_AddChoice (DIA_Niclas_HaveALook,"Да, спасибо.",DIA_Niclas_HaveALook_Yes);
+	Info_AddChoice (DIA_Niclas_HaveALook,"РќРµС‚, СЃРїР°СЃРёР±Рѕ.",DIA_Niclas_HaveALook_No);
+	Info_AddChoice (DIA_Niclas_HaveALook,"Р”Р°, СЃРїР°СЃРёР±Рѕ.",DIA_Niclas_HaveALook_Yes);
 };
 
 FUNC VOID DIA_Niclas_HaveALook_No ()
 {
-	AI_Output (other,self ,"DIA_Niclas_HaveALook_No_15_00"); //Нет, спасибо.
-	AI_Output (self ,other,"DIA_Niclas_HaveALook_No_03_01"); //Как хочешь. Надеюсь, ты не будешь против, если я поем.
+	AI_Output (other,self ,"DIA_Niclas_HaveALook_No_15_00"); //РќРµС‚, СЃРїР°СЃРёР±Рѕ.
+	AI_Output (self ,other,"DIA_Niclas_HaveALook_No_03_01"); //РљР°Рє С…РѕС‡РµС€СЊ. РќР°РґРµСЋСЃСЊ, С‚С‹ РЅРµ Р±СѓРґРµС€СЊ РїСЂРѕС‚РёРІ, РµСЃР»Рё СЏ РїРѕРµРј.
 	
 	B_UseItem (self ,ItFoMutton);
 	
@@ -83,8 +83,8 @@ FUNC VOID DIA_Niclas_HaveALook_No ()
 
 FUNC VOID DIA_Niclas_HaveALook_Yes ()
 {
-	AI_Output (other,self ,"DIA_Niclas_HaveALook_Yes_15_00"); //Да, спасибо.
-	AI_Output (self ,other,"DIA_Niclas_HaveALook_Yes_03_01"); //Держи, вкуснейшая нога крысокрота. Приготовлена по моему собственному рецепту.
+	AI_Output (other,self ,"DIA_Niclas_HaveALook_Yes_15_00"); //Р”Р°, СЃРїР°СЃРёР±Рѕ.
+	AI_Output (self ,other,"DIA_Niclas_HaveALook_Yes_03_01"); //Р”РµСЂР¶Рё, РІРєСѓСЃРЅРµР№С€Р°СЏ РЅРѕРіР° РєСЂС‹СЃРѕРєСЂРѕС‚Р°. РџСЂРёРіРѕС‚РѕРІР»РµРЅР° РїРѕ РјРѕРµРјСѓ СЃРѕР±СЃС‚РІРµРЅРЅРѕРјСѓ СЂРµС†РµРїС‚Сѓ.
 	
 	B_GiveInvItems (self ,other,ItFOMutton,1);
 	
@@ -101,7 +101,7 @@ INSTANCE DIA_Niclas_WhyHere   (C_INFO)
 	condition   = DIA_Niclas_WhyHere_Condition;
 	information = DIA_Niclas_WhyHere_Info;
 	permanent   = FALSE;
-	description = "А ты что здесь делаешь?";
+	description = "Рђ С‚С‹ С‡С‚Рѕ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };
 FUNC INT DIA_Niclas_WhyHere_Condition()
 {
@@ -109,8 +109,8 @@ FUNC INT DIA_Niclas_WhyHere_Condition()
 };
 FUNC VOID DIA_Niclas_WhyHere_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_WhyHere_15_00"); //А ты что здесь делаешь?
-	AI_Output (self ,other,"DIA_Niclas_WhyHere_03_01"); //Здесь мне спокойнее. Я всегда чувствую себя неуютно в городе.
+	AI_Output (other,self ,"DIA_Niclas_WhyHere_15_00"); //Рђ С‚С‹ С‡С‚Рѕ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self ,other,"DIA_Niclas_WhyHere_03_01"); //Р—РґРµСЃСЊ РјРЅРµ СЃРїРѕРєРѕР№РЅРµРµ. РЇ РІСЃРµРіРґР° С‡СѓРІСЃС‚РІСѓСЋ СЃРµР±СЏ РЅРµСѓСЋС‚РЅРѕ РІ РіРѕСЂРѕРґРµ.
 };
 
 // ***********************************************************
@@ -123,7 +123,7 @@ INSTANCE DIA_Niclas_ShouldntWork   (C_INFO)
 	condition   = DIA_Niclas_ShouldntWork_Condition;
 	information = DIA_Niclas_ShouldntWork_Info;
 	permanent   = FALSE;
-	description = "Разве тебе не нужно работать?";
+	description = "Р Р°Р·РІРµ С‚РµР±Рµ РЅРµ РЅСѓР¶РЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ?";
 };
 FUNC INT DIA_Niclas_ShouldntWork_Condition()
 {
@@ -134,10 +134,10 @@ FUNC INT DIA_Niclas_ShouldntWork_Condition()
 };
 FUNC VOID DIA_Niclas_ShouldntWork_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_00"); //Разве тебе не нужно работать?
-	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_01"); //Все, что мне нужно, я могу добыть сам. Я сам вырезаю стрелы, а природа снабжает меня мясом.
-	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_02"); //Так ты охотник.
-	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_03"); //Да, если тебе нравится это слово. Но я охочусь только для пропитания, а не чтобы заработать денег.
+	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_00"); //Р Р°Р·РІРµ С‚РµР±Рµ РЅРµ РЅСѓР¶РЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ?
+	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_01"); //Р’СЃРµ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ, СЏ РјРѕРіСѓ РґРѕР±С‹С‚СЊ СЃР°Рј. РЇ СЃР°Рј РІС‹СЂРµР·Р°СЋ СЃС‚СЂРµР»С‹, Р° РїСЂРёСЂРѕРґР° СЃРЅР°Р±Р¶Р°РµС‚ РјРµРЅСЏ РјСЏСЃРѕРј.
+	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_02"); //РўР°Рє С‚С‹ РѕС…РѕС‚РЅРёРє.
+	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_03"); //Р”Р°, РµСЃР»Рё С‚РµР±Рµ РЅСЂР°РІРёС‚СЃСЏ СЌС‚Рѕ СЃР»РѕРІРѕ. РќРѕ СЏ РѕС…РѕС‡СѓСЃСЊ С‚РѕР»СЊРєРѕ РґР»СЏ РїСЂРѕРїРёС‚Р°РЅРёСЏ, Р° РЅРµ С‡С‚РѕР±С‹ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РґРµРЅРµРі.
 };
 
 // ***********************************************************
@@ -150,7 +150,7 @@ INSTANCE DIA_Niclas_CanTeachMe   (C_INFO)
 	condition   = DIA_Niclas_CanTeachMe_Condition;
 	information = DIA_Niclas_CanTeachMe_Info;
 	permanent   = FALSE;
-	description = "В таком случае, я уверен, что ты можешь научить меня чему-нибудь.";
+	description = "Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, СЏ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ.";
 };
 FUNC INT DIA_Niclas_CanTeachMe_Condition()
 {
@@ -161,11 +161,11 @@ FUNC INT DIA_Niclas_CanTeachMe_Condition()
 };
 FUNC VOID DIA_Niclas_CanTeachMe_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_CanTeachMe_15_00"); //В таком случае, я уверен, что ты можешь научить меня чему-нибудь.
-	AI_Output (self ,other,"DIA_Niclas_CanTeachMe_03_01"); //Почему бы и нет. Я могу показать тебе, как правильно держать лук.
+	AI_Output (other,self ,"DIA_Niclas_CanTeachMe_15_00"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, СЏ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ.
+	AI_Output (self ,other,"DIA_Niclas_CanTeachMe_03_01"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚. РЇ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РїСЂР°РІРёР»СЊРЅРѕ РґРµСЂР¶Р°С‚СЊ Р»СѓРє.
 	
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Никлас может обучить меня искусству стрельбы из лука.");
+	B_LogEntry		(TOPIC_Teacher, "РќРёРєР»Р°СЃ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ СЃС‚СЂРµР»СЊР±С‹ РёР· Р»СѓРєР°.");
 };
 		
 // ***********************************************************
@@ -178,7 +178,7 @@ INSTANCE DIA_Niclas_Teach   (C_INFO)
 	condition   = DIA_Niclas_Teach_Condition;
 	information = DIA_Niclas_Teach_Info;
 	permanent   = TRUE;
-	description = "Покажи мне, как правильно держать лук.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє РїСЂР°РІРёР»СЊРЅРѕ РґРµСЂР¶Р°С‚СЊ Р»СѓРє.";
 };
 FUNC INT DIA_Niclas_Teach_Condition()
 {
@@ -189,11 +189,11 @@ FUNC INT DIA_Niclas_Teach_Condition()
 };
 FUNC VOID DIA_Niclas_Teach_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_Teach_15_00"); //Покажи мне, как правильно держать лук.
+	AI_Output (other,self ,"DIA_Niclas_Teach_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє РїСЂР°РІРёР»СЊРЅРѕ РґРµСЂР¶Р°С‚СЊ Р»СѓРє.
 	
 	if (other.HitChance[NPC_TALENT_BOW] >= 60)
 	{
-		AI_Output(self,other,"DIA_Niclas_Teach_03_01"); //Я научил тебя всему, что мог. Теперь тебе лучше поискать другого учителя.
+		AI_Output(self,other,"DIA_Niclas_Teach_03_01"); //РЇ РЅР°СѓС‡РёР» С‚РµР±СЏ РІСЃРµРјСѓ, С‡С‚Рѕ РјРѕРі. РўРµРїРµСЂСЊ С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ РґСЂСѓРіРѕРіРѕ СѓС‡РёС‚РµР»СЏ.
 	}
 	else
 	{
@@ -208,7 +208,7 @@ FUNC VOID DIA_Niclas_Teach_Back()
 {
 	if (other.HitChance[NPC_TALENT_BOW] >= 60)
 	{
-		AI_Output(self,other,"DIA_Niclas_Teach_03_00"); //Мне нечему больше учить тебя.
+		AI_Output(self,other,"DIA_Niclas_Teach_03_00"); //РњРЅРµ РЅРµС‡РµРјСѓ Р±РѕР»СЊС€Рµ СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	};
 	
 	Info_ClearChoices (DIA_Niclas_Teach);

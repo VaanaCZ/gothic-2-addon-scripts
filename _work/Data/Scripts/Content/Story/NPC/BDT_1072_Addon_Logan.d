@@ -1,7 +1,7 @@
 instance BDT_1072_Addon_Logan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Логан";
+	name 		= "Р›РѕРіР°РЅ";
 	guild 		= GIL_BDT;
 	id 			= 1072;
 	voice 		= 10;

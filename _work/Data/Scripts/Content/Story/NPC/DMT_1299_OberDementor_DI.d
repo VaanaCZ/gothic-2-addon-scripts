@@ -2,7 +2,7 @@
 instance DMT_1299_OberDementor_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Черный маг";	
+	name 		= "Р§РµСЂРЅС‹Р№ РјР°Рі";	
 	guild 		= GIL_DMT;
 	id 			= 1299;
 	voice 		= 09;	

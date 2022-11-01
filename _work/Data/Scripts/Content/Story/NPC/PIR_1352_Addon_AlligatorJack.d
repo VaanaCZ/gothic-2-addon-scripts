@@ -1,7 +1,7 @@
 INSTANCE PIR_1352_Addon_AlligatorJack (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Аллигатор Джек";
+	name 		= "РђР»Р»РёРіР°С‚РѕСЂ Р”Р¶РµРє";
 	guild 		= GIL_PIR;
 	id 			= 1352;
 	voice 		= 12;

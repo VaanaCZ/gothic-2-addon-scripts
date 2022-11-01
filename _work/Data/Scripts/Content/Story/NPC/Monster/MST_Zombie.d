@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Zombie(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Зомби";
+	name							=	"Р—РѕРјР±Рё";
 	guild							=	GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ZOMBIE;
 	level							=	20;
@@ -137,7 +137,7 @@ INSTANCE Zombie04	(Mst_Default_Zombie)
 INSTANCE Zombie_Addon_Knecht	(Mst_Default_Zombie)
 {
 	
-	name 			= "Приспешник Ворона";
+	name 			= "РџСЂРёСЃРїРµС€РЅРёРє Р’РѕСЂРѕРЅР°";
 	
 	Mdl_SetVisual			(self,	"Zombie.mds");
 	//								Body-Mesh		Body-Tex	Skin-Color	Head-MMS	Head-Tex	Teeth-Tex	ARMOR
@@ -151,7 +151,7 @@ INSTANCE Zombie_Addon_Knecht	(Mst_Default_Zombie)
 INSTANCE Zombie_Addon_Bloodwyn	(Mst_Default_Zombie)
 {
 	
-	name = "Пробудившийся Бладвин";
+	name = "РџСЂРѕР±СѓРґРёРІС€РёР№СЃСЏ Р‘Р»Р°РґРІРёРЅ";
 	level							=	25;
 	
 	attribute	[ATR_HITPOINTS_MAX]	=	1600;
@@ -341,7 +341,7 @@ INSTANCE MayaZombie04		(Mst_Default_Zombie)
 	Npc_SetToFistMode(self);
 };
 //*************
-//	Einer der Totenwдchter  	
+//	Einer der TotenwРґchter  	
 //*************
 
 INSTANCE MayaZombie04_Totenw	(Mst_Default_Zombie) 

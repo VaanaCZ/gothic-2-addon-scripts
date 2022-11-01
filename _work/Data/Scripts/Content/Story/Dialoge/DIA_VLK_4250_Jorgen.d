@@ -90,22 +90,22 @@ FUNC INT DIA_Jorgen_Hallo_Condition()
 
 FUNC VOID DIA_Jorgen_Hallo_Info()
 {
-	AI_Output (self ,other,"DIA_Jorgen_Hallo_07_00"); //Эй, ты!
+	AI_Output (self ,other,"DIA_Jorgen_Hallo_07_00"); //Р­Р№, С‚С‹!
 
 	if ((hero.guild == GIL_NOV) || (hero.guild == GIL_KDF))
 	{
-		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_01"); //Я вижу, ты из монастыря магов.
-		AI_Output (other,self ,"DIA_Jorgen_Hallo_15_02"); //Да, и что?
-		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_03"); //Вам не нужен еще один работник там?
+		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_01"); //РЇ РІРёР¶Сѓ, С‚С‹ РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ РјР°РіРѕРІ.
+		AI_Output (other,self ,"DIA_Jorgen_Hallo_15_02"); //Р”Р°, Рё С‡С‚Рѕ?
+		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_03"); //Р’Р°Рј РЅРµ РЅСѓР¶РµРЅ РµС‰Рµ РѕРґРёРЅ СЂР°Р±РѕС‚РЅРёРє С‚Р°Рј?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_04"); //Эй, ты когда-нибудь был в монастыре?
-		AI_Output (other,self ,"DIA_Jorgen_Hallo_15_05"); //Может быть, а что?
-		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_06"); //Они все еще набирают людей?
+		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_04"); //Р­Р№, С‚С‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ Р±С‹Р» РІ РјРѕРЅР°СЃС‚С‹СЂРµ?
+		AI_Output (other,self ,"DIA_Jorgen_Hallo_15_05"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, Р° С‡С‚Рѕ?
+		AI_Output (self ,other,"DIA_Jorgen_Hallo_07_06"); //РћРЅРё РІСЃРµ РµС‰Рµ РЅР°Р±РёСЂР°СЋС‚ Р»СЋРґРµР№?
 	};
 
-	AI_Output (self ,other,"DIA_Jorgen_Hallo_07_07"); //Я просто не знаю, куда еще идти.
+	AI_Output (self ,other,"DIA_Jorgen_Hallo_07_07"); //РЇ РїСЂРѕСЃС‚Рѕ РЅРµ Р·РЅР°СЋ, РєСѓРґР° РµС‰Рµ РёРґС‚Рё.
 }; 
 
 //*********************************************************************
@@ -118,7 +118,7 @@ INSTANCE DIA_Jorgen_Novice   (C_INFO)
 	condition   = DIA_Jorgen_Novice_Condition;
 	information = DIA_Jorgen_Novice_Info;
 	permanent   = FALSE;
-	description	= "Мимо тебя не проходил послушник?";
+	description	= "РњРёРјРѕ С‚РµР±СЏ РЅРµ РїСЂРѕС…РѕРґРёР» РїРѕСЃР»СѓС€РЅРёРє?";
 };
 
 FUNC INT DIA_Jorgen_Novice_Condition()
@@ -133,10 +133,10 @@ FUNC INT DIA_Jorgen_Novice_Condition()
 
 FUNC VOID DIA_Jorgen_Novice_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_Novice_15_00"); //Мимо тебя не проходил послушник?
-	AI_Output (self ,other,"DIA_Jorgen_Novice_07_01"); //Да, конечно, он побежал туда.
+	AI_Output (other,self ,"DIA_Jorgen_Novice_15_00"); //РњРёРјРѕ С‚РµР±СЏ РЅРµ РїСЂРѕС…РѕРґРёР» РїРѕСЃР»СѓС€РЅРёРє?
+	AI_Output (self ,other,"DIA_Jorgen_Novice_07_01"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ, РѕРЅ РїРѕР±РµР¶Р°Р» С‚СѓРґР°.
 	AI_PointAt	(self,"NW_TROLLAREA_NOVCHASE_01");
-	AI_Output (self,other,"DIA_Jorgen_Novice_07_02"); //Он прыгнул в воду с моста и поплыл так, как будто за ним гналась акула.
+	AI_Output (self,other,"DIA_Jorgen_Novice_07_02"); //РћРЅ РїСЂС‹РіРЅСѓР» РІ РІРѕРґСѓ СЃ РјРѕСЃС‚Р° Рё РїРѕРїР»С‹Р» С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ Р·Р° РЅРёРј РіРЅР°Р»Р°СЃСЊ Р°РєСѓР»Р°.
 	AI_StopPointAt(self);
 }; 
 
@@ -150,7 +150,7 @@ INSTANCE DIA_Jorgen_Milten   (C_INFO)
 	condition   = DIA_Jorgen_Milten_Condition;
 	information = DIA_Jorgen_Milten_Info;
 	permanent   = FALSE;
-	description	= "Если ты идешь в монастырь, тебе нужно поговорить с Милтеном ...";
+	description	= "Р•СЃР»Рё С‚С‹ РёРґРµС€СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РњРёР»С‚РµРЅРѕРј ...";
 };
 
 FUNC INT DIA_Jorgen_Milten_Condition()
@@ -166,10 +166,10 @@ FUNC INT DIA_Jorgen_Milten_Condition()
 
 FUNC VOID DIA_Jorgen_Milten_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_Milten_15_00"); //Если ты идешь в монастырь, тебе нужно поговорить с Милтеном. Он, наверняка, сможет помочь тебе.
-	AI_Output (self ,other,"DIA_Jorgen_Milten_07_01"); //Как ты думаешь, меня примут туда?
-	AI_Output (other,self ,"DIA_Jorgen_Milten_15_02"); //Возможно. Но мне почему-то тяжело представить тебя в робе послушника.
-	AI_Output (self ,other,"DIA_Jorgen_Milten_07_03"); //Хватит нести чепуху - роба так роба. Мне прежде всего нужна еда, а то мне скоро придется обгладывать кору с деревьев.
+	AI_Output (other,self ,"DIA_Jorgen_Milten_15_00"); //Р•СЃР»Рё С‚С‹ РёРґРµС€СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РњРёР»С‚РµРЅРѕРј. РћРЅ, РЅР°РІРµСЂРЅСЏРєР°, СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_Jorgen_Milten_07_01"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, РјРµРЅСЏ РїСЂРёРјСѓС‚ С‚СѓРґР°?
+	AI_Output (other,self ,"DIA_Jorgen_Milten_15_02"); //Р’РѕР·РјРѕР¶РЅРѕ. РќРѕ РјРЅРµ РїРѕС‡РµРјСѓ-С‚Рѕ С‚СЏР¶РµР»Рѕ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ РІ СЂРѕР±Рµ РїРѕСЃР»СѓС€РЅРёРєР°.
+	AI_Output (self ,other,"DIA_Jorgen_Milten_07_03"); //РҐРІР°С‚РёС‚ РЅРµСЃС‚Рё С‡РµРїСѓС…Сѓ - СЂРѕР±Р° С‚Р°Рє СЂРѕР±Р°. РњРЅРµ РїСЂРµР¶РґРµ РІСЃРµРіРѕ РЅСѓР¶РЅР° РµРґР°, Р° С‚Рѕ РјРЅРµ СЃРєРѕСЂРѕ РїСЂРёРґРµС‚СЃСЏ РѕР±РіР»Р°РґС‹РІР°С‚СЊ РєРѕСЂСѓ СЃ РґРµСЂРµРІСЊРµРІ.
 }; 
 
 //*********************************************************************
@@ -183,7 +183,7 @@ INSTANCE DIA_Jorgen_Home   (C_INFO)
 	condition   = DIA_Jorgen_Home_Condition;
 	information = DIA_Jorgen_Home_Info;
 
-	description	= "Откуда ты?";
+	description	= "РћС‚РєСѓРґР° С‚С‹?";
 };
 
 FUNC INT DIA_Jorgen_Home_Condition()
@@ -196,12 +196,12 @@ FUNC INT DIA_Jorgen_Home_Condition()
 
 FUNC VOID DIA_Jorgen_Home_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_Home_15_00"); //Откуда ты?
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_01"); //Я был капитаном большого китобойного судна, парень. Мой дом - море.
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_02"); //Мой корабль, 'Магдалена', был потоплен пиратами несколько месяцев назад, и вот теперь я на мели здесь.
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_03"); //Я очень хотел поскорее опять выйти в море, но с тех пор как я прибыл сюда, ни одной шхуны не зашло в этот проклятый порт.
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_04"); //Единственный корабль, пришвартовавшийся в Хоринисе, - это чертова военная галера короля, а они никого не берут.
-	AI_Output (self ,other,"DIA_Jorgen_Home_07_05"); //И что мне теперь делать? В городе для меня нет работы. Я пробовал уже все.
+	AI_Output (other,self ,"DIA_Jorgen_Home_15_00"); //РћС‚РєСѓРґР° С‚С‹?
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_01"); //РЇ Р±С‹Р» РєР°РїРёС‚Р°РЅРѕРј Р±РѕР»СЊС€РѕРіРѕ РєРёС‚РѕР±РѕР№РЅРѕРіРѕ СЃСѓРґРЅР°, РїР°СЂРµРЅСЊ. РњРѕР№ РґРѕРј - РјРѕСЂРµ.
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_02"); //РњРѕР№ РєРѕСЂР°Р±Р»СЊ, 'РњР°РіРґР°Р»РµРЅР°', Р±С‹Р» РїРѕС‚РѕРїР»РµРЅ РїРёСЂР°С‚Р°РјРё РЅРµСЃРєРѕР»СЊРєРѕ РјРµСЃСЏС†РµРІ РЅР°Р·Р°Рґ, Рё РІРѕС‚ С‚РµРїРµСЂСЊ СЏ РЅР° РјРµР»Рё Р·РґРµСЃСЊ.
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_03"); //РЇ РѕС‡РµРЅСЊ С…РѕС‚РµР» РїРѕСЃРєРѕСЂРµРµ РѕРїСЏС‚СЊ РІС‹Р№С‚Рё РІ РјРѕСЂРµ, РЅРѕ СЃ С‚РµС… РїРѕСЂ РєР°Рє СЏ РїСЂРёР±С‹Р» СЃСЋРґР°, РЅРё РѕРґРЅРѕР№ С€С…СѓРЅС‹ РЅРµ Р·Р°С€Р»Рѕ РІ СЌС‚РѕС‚ РїСЂРѕРєР»СЏС‚С‹Р№ РїРѕСЂС‚.
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_04"); //Р•РґРёРЅСЃС‚РІРµРЅРЅС‹Р№ РєРѕСЂР°Р±Р»СЊ, РїСЂРёС€РІР°СЂС‚РѕРІР°РІС€РёР№СЃСЏ РІ РҐРѕСЂРёРЅРёСЃРµ, - СЌС‚Рѕ С‡РµСЂС‚РѕРІР° РІРѕРµРЅРЅР°СЏ РіР°Р»РµСЂР° РєРѕСЂРѕР»СЏ, Р° РѕРЅРё РЅРёРєРѕРіРѕ РЅРµ Р±РµСЂСѓС‚.
+	AI_Output (self ,other,"DIA_Jorgen_Home_07_05"); //Р С‡С‚Рѕ РјРЅРµ С‚РµРїРµСЂСЊ РґРµР»Р°С‚СЊ? Р’ РіРѕСЂРѕРґРµ РґР»СЏ РјРµРЅСЏ РЅРµС‚ СЂР°Р±РѕС‚С‹. РЇ РїСЂРѕР±РѕРІР°Р» СѓР¶Рµ РІСЃРµ.
 	
 }; 
 
@@ -215,7 +215,7 @@ INSTANCE DIA_Jorgen_BeCarefull   (C_INFO)
 	condition   = DIA_Jorgen_BeCarefull_Condition;
 	information = DIA_Jorgen_BeCarefull_Info;
 	permanent   = TRUE;
-	description	= "Тебе лучше держаться подальше от дорог.";
+	description	= "РўРµР±Рµ Р»СѓС‡С€Рµ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РґРѕСЂРѕРі.";
 };
 
 FUNC INT DIA_Jorgen_BeCarefull_Condition()
@@ -229,8 +229,8 @@ FUNC INT DIA_Jorgen_BeCarefull_Condition()
 
 FUNC VOID DIA_Jorgen_BeCarefull_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_BeCarefull_15_00"); //Тебе лучше держаться подальше от дорог.
-	AI_Output (self ,other,"DIA_Jorgen_BeCarefull_07_01"); //Не волнуйся. Я уже заметил, что здешние места стали чертовски опасными последние пару дней.
+	AI_Output (other,self ,"DIA_Jorgen_BeCarefull_15_00"); //РўРµР±Рµ Р»СѓС‡С€Рµ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РґРѕСЂРѕРі.
+	AI_Output (self ,other,"DIA_Jorgen_BeCarefull_07_01"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ. РЇ СѓР¶Рµ Р·Р°РјРµС‚РёР», С‡С‚Рѕ Р·РґРµС€РЅРёРµ РјРµСЃС‚Р° СЃС‚Р°Р»Рё С‡РµСЂС‚РѕРІСЃРєРё РѕРїР°СЃРЅС‹РјРё РїРѕСЃР»РµРґРЅРёРµ РїР°СЂСѓ РґРЅРµР№.
 }; 
 
 //#####################################################################
@@ -277,7 +277,7 @@ instance DIA_Jorgen_NEUHIER		(C_INFO)
 	condition	= 	DIA_Jorgen_NEUHIER_Condition;
 	information	= 	DIA_Jorgen_NEUHIER_Info;
 
-	description	= 	"Как жизнь в монастыре?";
+	description	= 	"РљР°Рє Р¶РёР·РЅСЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?";
 };
 
 func int DIA_Jorgen_NEUHIER_Condition ()
@@ -290,22 +290,22 @@ func int DIA_Jorgen_NEUHIER_Condition ()
 
 func void DIA_Jorgen_NEUHIER_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_NEUHIER_15_00"); //Как жизнь в монастыре?
+	AI_Output			(other, self, "DIA_Jorgen_NEUHIER_15_00"); //РљР°Рє Р¶РёР·РЅСЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?
 	
-	AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_01"); //Я сойду здесь с ума!
+	AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_01"); //РЇ СЃРѕР№РґСѓ Р·РґРµСЃСЊ СЃ СѓРјР°!
 
 	if (Npc_KnowsInfo(other, DIA_Jorgen_Milten))
 	{
-		AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_02"); //Но все же, спасибо за совет. Милтен действительно помог мне получить место здесь.
+		AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_02"); //РќРѕ РІСЃРµ Р¶Рµ, СЃРїР°СЃРёР±Рѕ Р·Р° СЃРѕРІРµС‚. РњРёР»С‚РµРЅ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕРјРѕРі РјРЅРµ РїРѕР»СѓС‡РёС‚СЊ РјРµСЃС‚Рѕ Р·РґРµСЃСЊ.
 		B_GivePlayerXP (XP_Ambient);
 	};
 
 	if (hero.guild != GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_03"); //Я чувствую себя идиотом среди этих всегда ворчащих благодетелей.
+		AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_03"); //РЇ С‡СѓРІСЃС‚РІСѓСЋ СЃРµР±СЏ РёРґРёРѕС‚РѕРј СЃСЂРµРґРё СЌС‚РёС… РІСЃРµРіРґР° РІРѕСЂС‡Р°С‰РёС… Р±Р»Р°РіРѕРґРµС‚РµР»РµР№.
 	};
 
-	AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_04"); //Ну. А что еще мне делать? Чем помирать с голоду в городе, лучше уж выполнять работу, которую дают мне послушники.
+	AI_Output			(self, other, "DIA_Jorgen_NEUHIER_07_04"); //РќСѓ. Рђ С‡С‚Рѕ РµС‰Рµ РјРЅРµ РґРµР»Р°С‚СЊ? Р§РµРј РїРѕРјРёСЂР°С‚СЊ СЃ РіРѕР»РѕРґСѓ РІ РіРѕСЂРѕРґРµ, Р»СѓС‡С€Рµ СѓР¶ РІС‹РїРѕР»РЅСЏС‚СЊ СЂР°Р±РѕС‚Сѓ, РєРѕС‚РѕСЂСѓСЋ РґР°СЋС‚ РјРЅРµ РїРѕСЃР»СѓС€РЅРёРєРё.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -319,7 +319,7 @@ instance DIA_Jorgen_PERM4		(C_INFO)
 	information	 = 	DIA_Jorgen_PERM4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я верю, что у тебя все будет в порядке.";
+	description	 = 	"РЇ РІРµСЂСЋ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РІСЃРµ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ.";
 };
 
 func int DIA_Jorgen_PERM4_Condition ()
@@ -335,15 +335,15 @@ func int DIA_Jorgen_PERM4_Condition ()
 var int DIA_Jorgen_PERM4_OneTime;
 func void DIA_Jorgen_PERM4_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_PERM4_15_00"); //Я верю, что у тебя все будет в порядке.
+	AI_Output			(other, self, "DIA_Jorgen_PERM4_15_00"); //РЇ РІРµСЂСЋ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РІСЃРµ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ.
 	if (DIA_Jorgen_PERM4_OneTime == FALSE)
 	&& (hero.guild != GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Jorgen_PERM4_07_01"); //Только представь: я должен пропалывать их огород. Если так будет продолжаться и дальше, я сойду с ума.
+		AI_Output			(self, other, "DIA_Jorgen_PERM4_07_01"); //РўРѕР»СЊРєРѕ РїСЂРµРґСЃС‚Р°РІСЊ: СЏ РґРѕР»Р¶РµРЅ РїСЂРѕРїР°Р»С‹РІР°С‚СЊ РёС… РѕРіРѕСЂРѕРґ. Р•СЃР»Рё С‚Р°Рє Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ Рё РґР°Р»СЊС€Рµ, СЏ СЃРѕР№РґСѓ СЃ СѓРјР°.
 		DIA_Jorgen_PERM4_OneTime = TRUE;
 	};
 	
-	AI_Output			(self, other, "DIA_Jorgen_PERM4_07_02"); //Я так хочу опять почувствовать палубу под моими ногами.
+	AI_Output			(self, other, "DIA_Jorgen_PERM4_07_02"); //РЇ С‚Р°Рє С…РѕС‡Сѓ РѕРїСЏС‚СЊ РїРѕС‡СѓРІСЃС‚РІРѕРІР°С‚СЊ РїР°Р»СѓР±Сѓ РїРѕРґ РјРѕРёРјРё РЅРѕРіР°РјРё.
 };
 
 //#####################################################################
@@ -390,7 +390,7 @@ instance DIA_Jorgen_BEMYCAPTAIN		(C_INFO)
 	information	 = 	DIA_Jorgen_BEMYCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Может быть, я смогу предложить тебе работу капитана.";
+	description	 = 	"РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ СЃРјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ СЂР°Р±РѕС‚Сѓ РєР°РїРёС‚Р°РЅР°.";
 };
 
 func int DIA_Jorgen_BEMYCAPTAIN_Condition ()
@@ -407,19 +407,19 @@ func int DIA_Jorgen_BEMYCAPTAIN_Condition ()
 var int DIA_Jorgen_BEMYCAPTAIN_OneTime;
 func void DIA_Jorgen_BEMYCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN_15_00"); //Может быть, я смогу предложить тебе работу капитана.
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ СЃРјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ СЂР°Р±РѕС‚Сѓ РєР°РїРёС‚Р°РЅР°.
 	if (DIA_Jorgen_BEMYCAPTAIN_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_01"); //Ты не издеваешься надо мной, парень? Если ты скажешь, что это правда, я всегда готов.
-		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_02"); //Эээ... есть только одна маленькая проблема. Я съел половину кладовки послушников.
-		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_03"); //Они чуть не сошли с ума от злости, когда узнали. Я не думаю, что главный маг позволит мне вот так просто уйти.
+		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_01"); //РўС‹ РЅРµ РёР·РґРµРІР°РµС€СЊСЃСЏ РЅР°РґРѕ РјРЅРѕР№, РїР°СЂРµРЅСЊ? Р•СЃР»Рё С‚С‹ СЃРєР°Р¶РµС€СЊ, С‡С‚Рѕ СЌС‚Рѕ РїСЂР°РІРґР°, СЏ РІСЃРµРіРґР° РіРѕС‚РѕРІ.
+		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_02"); //Р­СЌСЌ... РµСЃС‚СЊ С‚РѕР»СЊРєРѕ РѕРґРЅР° РјР°Р»РµРЅСЊРєР°СЏ РїСЂРѕР±Р»РµРјР°. РЇ СЃСЉРµР» РїРѕР»РѕРІРёРЅСѓ РєР»Р°РґРѕРІРєРё РїРѕСЃР»СѓС€РЅРёРєРѕРІ.
+		AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_03"); //РћРЅРё С‡СѓС‚СЊ РЅРµ СЃРѕС€Р»Рё СЃ СѓРјР° РѕС‚ Р·Р»РѕСЃС‚Рё, РєРѕРіРґР° СѓР·РЅР°Р»Рё. РЇ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ РіР»Р°РІРЅС‹Р№ РјР°Рі РїРѕР·РІРѕР»РёС‚ РјРЅРµ РІРѕС‚ С‚Р°Рє РїСЂРѕСЃС‚Рѕ СѓР№С‚Рё.
 		DIA_Jorgen_BEMYCAPTAIN_OneTime = TRUE;
 	};
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_04"); //Сначала мне нужно отработать мой долг перед Пирокаром. Извини.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN_07_04"); //РЎРЅР°С‡Р°Р»Р° РјРЅРµ РЅСѓР¶РЅРѕ РѕС‚СЂР°Р±РѕС‚Р°С‚СЊ РјРѕР№ РґРѕР»Рі РїРµСЂРµРґ РџРёСЂРѕРєР°СЂРѕРј. РР·РІРёРЅРё.
 	
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                                                                                                                                            
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                                                                                                                                          
-    B_LogEntry (TOPIC_Captain,"Йорген готов стать моим капитаном, но я сначала должен оплатить его долг перед монастырем.");
+    B_LogEntry (TOPIC_Captain,"Р™РѕСЂРіРµРЅ РіРѕС‚РѕРІ СЃС‚Р°С‚СЊ РјРѕРёРј РєР°РїРёС‚Р°РЅРѕРј, РЅРѕ СЏ СЃРЅР°С‡Р°Р»Р° РґРѕР»Р¶РµРЅ РѕРїР»Р°С‚РёС‚СЊ РµРіРѕ РґРѕР»Рі РїРµСЂРµРґ РјРѕРЅР°СЃС‚С‹СЂРµРј.");
 
 };
 
@@ -433,7 +433,7 @@ instance DIA_Jorgen_BEMYCAPTAIN2		(C_INFO)
 	condition	 = 	DIA_Jorgen_BEMYCAPTAIN2_Condition;
 	information	 = 	DIA_Jorgen_BEMYCAPTAIN2_Info;
 
-	description	 = 	"Я расплатился с твоими долгами.";
+	description	 = 	"РЇ СЂР°СЃРїР»Р°С‚РёР»СЃСЏ СЃ С‚РІРѕРёРјРё РґРѕР»РіР°РјРё.";
 };
 
 func int DIA_Jorgen_BEMYCAPTAIN2_Condition ()
@@ -446,18 +446,18 @@ func int DIA_Jorgen_BEMYCAPTAIN2_Condition ()
 
 func void DIA_Jorgen_BEMYCAPTAIN2_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN2_15_00"); //Я расплатился с твоими долгами. Ты свободен.
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_01"); //Правда? Как тебе удалось это?
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN2_15_02"); //Тебе лучше не знать.
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_03"); //Ох, ладно. Меня это, действительно, не очень волнует. Тысяча благодарностей!
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN2_15_00"); //РЇ СЂР°СЃРїР»Р°С‚РёР»СЃСЏ СЃ С‚РІРѕРёРјРё РґРѕР»РіР°РјРё. РўС‹ СЃРІРѕР±РѕРґРµРЅ.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_01"); //РџСЂР°РІРґР°? РљР°Рє С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ СЌС‚Рѕ?
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN2_15_02"); //РўРµР±Рµ Р»СѓС‡С€Рµ РЅРµ Р·РЅР°С‚СЊ.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_03"); //РћС…, Р»Р°РґРЅРѕ. РњРµРЅСЏ СЌС‚Рѕ, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ, РЅРµ РѕС‡РµРЅСЊ РІРѕР»РЅСѓРµС‚. РўС‹СЃСЏС‡Р° Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚РµР№!
 
 	if (SCGotCaptain == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_04"); //Как теперь насчет твоего предложения? У тебя еще есть место для меня?
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_04"); //РљР°Рє С‚РµРїРµСЂСЊ РЅР°СЃС‡РµС‚ С‚РІРѕРµРіРѕ РїСЂРµРґР»РѕР¶РµРЅРёСЏ? РЈ С‚РµР±СЏ РµС‰Рµ РµСЃС‚СЊ РјРµСЃС‚Рѕ РґР»СЏ РјРµРЅСЏ?
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_05"); //Отлично. Теперь я могу убраться отсюда!
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN2_07_05"); //РћС‚Р»РёС‡РЅРѕ. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°!
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"RausAusKloster");
 	};
@@ -473,7 +473,7 @@ instance DIA_Jorgen_BEMYCAPTAIN3		(C_INFO)
 	condition	 = 	DIA_Jorgen_BEMYCAPTAIN3_Condition;
 	information	 = 	DIA_Jorgen_BEMYCAPTAIN3_Info;
 
-	description	 = 	"Будь моим капитаном.";
+	description	 = 	"Р‘СѓРґСЊ РјРѕРёРј РєР°РїРёС‚Р°РЅРѕРј.";
 };
 
 func int DIA_Jorgen_BEMYCAPTAIN3_Condition ()
@@ -487,11 +487,11 @@ func int DIA_Jorgen_BEMYCAPTAIN3_Condition ()
 
 func void DIA_Jorgen_BEMYCAPTAIN3_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN3_15_00"); //Будь моим капитаном.
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_01"); //Это большая честь для меня, но у тебя есть корабль и команда?
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_02"); //Должен заметить, нам нужно по крайней мере пять человек.
-	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN3_15_03"); //Хорошо. Я посмотрю, что можно сделать. Жди меня в гавани.
-	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_04"); //Есть, сэр.
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN3_15_00"); //Р‘СѓРґСЊ РјРѕРёРј РєР°РїРёС‚Р°РЅРѕРј.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_01"); //Р­С‚Рѕ Р±РѕР»СЊС€Р°СЏ С‡РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ, РЅРѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РєРѕСЂР°Р±Р»СЊ Рё РєРѕРјР°РЅРґР°?
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_02"); //Р”РѕР»Р¶РµРЅ Р·Р°РјРµС‚РёС‚СЊ, РЅР°Рј РЅСѓР¶РЅРѕ РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ РїСЏС‚СЊ С‡РµР»РѕРІРµРє.
+	AI_Output			(other, self, "DIA_Jorgen_BEMYCAPTAIN3_15_03"); //РҐРѕСЂРѕС€Рѕ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ. Р–РґРё РјРµРЅСЏ РІ РіР°РІР°РЅРё.
+	AI_Output			(self, other, "DIA_Jorgen_BEMYCAPTAIN3_07_04"); //Р•СЃС‚СЊ, СЃСЌСЂ.
 	AI_StopProcessInfos (self);
 	SCGotCaptain = TRUE;
 	JorgenIsCaptain = TRUE;
@@ -511,7 +511,7 @@ instance DIA_Jorgen_LOSFAHREN		(C_INFO)
 	information	 = 	DIA_Jorgen_LOSFAHREN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты готов доставить меня на остров?";
+	description	 = 	"РўС‹ РіРѕС‚РѕРІ РґРѕСЃС‚Р°РІРёС‚СЊ РјРµРЅСЏ РЅР° РѕСЃС‚СЂРѕРІ?";
 };
 
 func int DIA_Jorgen_LOSFAHREN_Condition ()
@@ -525,21 +525,21 @@ func int DIA_Jorgen_LOSFAHREN_Condition ()
 
 func void DIA_Jorgen_LOSFAHREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_LOSFAHREN_15_00"); //Ты готов доставить меня на остров?
+	AI_Output			(other, self, "DIA_Jorgen_LOSFAHREN_15_00"); //РўС‹ РіРѕС‚РѕРІ РґРѕСЃС‚Р°РІРёС‚СЊ РјРµРЅСЏ РЅР° РѕСЃС‚СЂРѕРІ?
 
 	if ((B_CaptainConditions (self)) == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_01"); //Конечно. Дай мне карту.
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_02"); //Отлично. Поднять паруса! Мы отчаливаем!
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_03"); //Тебе лучше сначала проверить свое снаряжение. Когда мы выйдем в море, пути назад уже не будет.
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_04"); //А когда ты закончишь с делами, ты должен поспать. В капитанской каюте для тебя приготовлена кровать. Спокойной ночи.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_01"); //РљРѕРЅРµС‡РЅРѕ. Р”Р°Р№ РјРЅРµ РєР°СЂС‚Сѓ.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_02"); //РћС‚Р»РёС‡РЅРѕ. РџРѕРґРЅСЏС‚СЊ РїР°СЂСѓСЃР°! РњС‹ РѕС‚С‡Р°Р»РёРІР°РµРј!
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_03"); //РўРµР±Рµ Р»СѓС‡С€Рµ СЃРЅР°С‡Р°Р»Р° РїСЂРѕРІРµСЂРёС‚СЊ СЃРІРѕРµ СЃРЅР°СЂСЏР¶РµРЅРёРµ. РљРѕРіРґР° РјС‹ РІС‹Р№РґРµРј РІ РјРѕСЂРµ, РїСѓС‚Рё РЅР°Р·Р°Рґ СѓР¶Рµ РЅРµ Р±СѓРґРµС‚.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_04"); //Рђ РєРѕРіРґР° С‚С‹ Р·Р°РєРѕРЅС‡РёС€СЊ СЃ РґРµР»Р°РјРё, С‚С‹ РґРѕР»Р¶РµРЅ РїРѕСЃРїР°С‚СЊ. Р’ РєР°РїРёС‚Р°РЅСЃРєРѕР№ РєР°СЋС‚Рµ РґР»СЏ С‚РµР±СЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅР° РєСЂРѕРІР°С‚СЊ. РЎРїРѕРєРѕР№РЅРѕР№ РЅРѕС‡Рё.
 	AI_StopProcessInfos (self);
 	B_CaptainCallsAllOnBoard (self);
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_05"); //Тебе нужен корабль, команда из пяти человек и морская карта, чтобы я мог ориентироваться по ней.
-	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_06"); //Мы не сможем поднять паруса, пока у нас не будет всего необходимого.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_05"); //РўРµР±Рµ РЅСѓР¶РµРЅ РєРѕСЂР°Р±Р»СЊ, РєРѕРјР°РЅРґР° РёР· РїСЏС‚Рё С‡РµР»РѕРІРµРє Рё РјРѕСЂСЃРєР°СЏ РєР°СЂС‚Р°, С‡С‚РѕР±С‹ СЏ РјРѕРі РѕСЂРёРµРЅС‚РёСЂРѕРІР°С‚СЊСЃСЏ РїРѕ РЅРµР№.
+	AI_Output			(self, other, "DIA_Jorgen_LOSFAHREN_07_06"); //РњС‹ РЅРµ СЃРјРѕР¶РµРј РїРѕРґРЅСЏС‚СЊ РїР°СЂСѓСЃР°, РїРѕРєР° Сѓ РЅР°СЃ РЅРµ Р±СѓРґРµС‚ РІСЃРµРіРѕ РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ.
 	AI_StopProcessInfos (self);
 	};
 };
@@ -555,7 +555,7 @@ instance DIA_Jorgen_PERM5_NOTCAPTAIN		(C_INFO)
 	information	 = 	DIA_Jorgen_PERM5_NOTCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как ты?";
+	description	 = 	"РљР°Рє С‚С‹?";
 };
 
 func int DIA_Jorgen_PERM5_NOTCAPTAIN_Condition ()
@@ -570,12 +570,12 @@ func int DIA_Jorgen_PERM5_NOTCAPTAIN_Condition ()
 var int DIA_Jorgen_PERM5_NOTCAPTAIN_XPGiven;
 func void DIA_Jorgen_PERM5_NOTCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_PERM5_NOTCAPTAIN_15_00"); //Как ты?
+	AI_Output			(other, self, "DIA_Jorgen_PERM5_NOTCAPTAIN_15_00"); //РљР°Рє С‚С‹?
 
 	if 	(Npc_GetDistToWP(self,"NW_BIGFARM_KITCHEN_OUT_06")<1000)  
 	{
-	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_01"); //Отлично. Это не самое плохое место.
-	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_02"); //Они дают мне идиотские поручения, типа пасти овец, но все же люде здесь далеко не такие ограниченные и тупые, как в монастыре.
+	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_01"); //РћС‚Р»РёС‡РЅРѕ. Р­С‚Рѕ РЅРµ СЃР°РјРѕРµ РїР»РѕС…РѕРµ РјРµСЃС‚Рѕ.
+	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_02"); //РћРЅРё РґР°СЋС‚ РјРЅРµ РёРґРёРѕС‚СЃРєРёРµ РїРѕСЂСѓС‡РµРЅРёСЏ, С‚РёРїР° РїР°СЃС‚Рё РѕРІРµС†, РЅРѕ РІСЃРµ Р¶Рµ Р»СЋРґРµ Р·РґРµСЃСЊ РґР°Р»РµРєРѕ РЅРµ С‚Р°РєРёРµ РѕРіСЂР°РЅРёС‡РµРЅРЅС‹Рµ Рё С‚СѓРїС‹Рµ, РєР°Рє РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 
 		if (DIA_Jorgen_PERM5_NOTCAPTAIN_XPGiven == FALSE)
 		{
@@ -586,7 +586,7 @@ func void DIA_Jorgen_PERM5_NOTCAPTAIN_Info ()
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_03"); //Мне нужно поискать для себя другое место. Посмотрим, куда еще меня занесет попутным ветром.
+	AI_Output			(self, other, "DIA_Jorgen_PERM5_NOTCAPTAIN_07_03"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРёСЃРєР°С‚СЊ РґР»СЏ СЃРµР±СЏ РґСЂСѓРіРѕРµ РјРµСЃС‚Рѕ. РџРѕСЃРјРѕС‚СЂРёРј, РєСѓРґР° РµС‰Рµ РјРµРЅСЏ Р·Р°РЅРµСЃРµС‚ РїРѕРїСѓС‚РЅС‹Рј РІРµС‚СЂРѕРј.
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"RausAusKloster");

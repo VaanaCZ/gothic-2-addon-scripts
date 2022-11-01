@@ -5,14 +5,14 @@
 CLASS C_SVM
 {
 	// ------ B_Say_GuildGreetings ------
-	var string MILGreetings;				//Miliz grьЯt Miliz oer Paladin
-	var string PALGreetings;				//Paladin grьЯt Paladin oder Magier
+	var string MILGreetings;				//Miliz grСЊРЇt Miliz oer Paladin
+	var string PALGreetings;				//Paladin grСЊРЇt Paladin oder Magier
 	var string Weather;						//So ein Mistwetter!
 	
 	// ------ B_Say_AttackReason ------
-	var string IGetYouStill;				//Upset-NSC sieht Spieler wдhrned seiner Angry-Time wieder. Greift mit altem AttackReason an.
+	var string IGetYouStill;				//Upset-NSC sieht Spieler wРґhrned seiner Angry-Time wieder. Greift mit altem AttackReason an.
 	var string DieEnemy;					//Feind wird angegriffen
-	var string DieMonster;					//gefдhrliches Monster wird angegriffen
+	var string DieMonster;					//gefРґhrliches Monster wird angegriffen
 	var string Addon_DieMonster;
 	var string Addon_DieMonster2;
 	var string DirtyThief;					//Dieb wird angegriffen
@@ -20,42 +20,42 @@ CLASS C_SVM
 	var string SheepKiller;					//Mensch greift Schaf an
 	var string SheepKillerMonster;			//Monster greift Schaf an
 	var string YouMurderer;					//Mensch hat Menschen umgebracht (kein Feind)
-	var string DieStupidBeast;				//Torwachen schlagen ungefдhliches Monster tot, das versucht durchs Tor zu gehen	
+	var string DieStupidBeast;				//Torwachen schlagen ungefРґhliches Monster tot, das versucht durchs Tor zu gehen	
 	var string YouDareHitMe;				//SC hat NSC geschlagen
 	var	string YouAskedForIt;				//SC hat trotz Aufforderung seine Waffe NICHT weggesteckt
 	var string ThenIBeatYouOutOfHere;		//SC hat trotz Aufforderung Raum NICHT verlassen 
 	var string WhatDidYouDoInThere;			//Wache sieht SC aus einem verbotenen Raum rauskommen und greift an
-	var string WillYouStopFighting;			//Wache beendet Kampf, greift Tдter an
+	var string WillYouStopFighting;			//Wache beendet Kampf, greift TРґter an
 	
 	// ------ B_Say_AttackEND ------
 	var string KillEnemy;					//Finishing-Move
-	var string EnemyKilled;					//NSC hat Feind getцtet
-	var string MonsterKilled;				//NSC hat gefдhrliches Monster getцtet
+	var string EnemyKilled;					//NSC hat Feind getС†tet
+	var string MonsterKilled;				//NSC hat gefРґhrliches Monster getС†tet
 	var string Addon_MonsterKilled;			
 	var string Addon_MonsterKilled2;	
 	var string ThiefDown;					//NSC hat Item-Dieb niedergeschlagen
 	var string RumfummlerDown;				//NSC hat verbotenes-MOBSI-Benutzer niedergeschlagen
 	var string SheepAttackerDown;			//NSC hat human SheepAttacker oder SheepKiller umgehauen
-	var string KillMurderer;				//Mцrder finishen
-	var string StupidBeastKilled;			//GateGuards tцten neutrales Monster, das vorbeikam
+	var string KillMurderer;				//MС†rder finishen
+	var string StupidBeastKilled;			//GateGuards tС†ten neutrales Monster, das vorbeikam
 	var string NeverHitMeAgain;				//NSC hat jemand niedergeschlagen, der ihn angegriffen hat
 	var string YouBetterShouldHaveListened;	//NSC hat jemed niedergeschlagen, der die Waffe nicht weggesteckt hat
 	var string GetUpAndBeGone;				//NSC hat einen Eindringling im Portalraum niedergeschlagen
 	var string NeverEnterRoomAgain;			//NSC hat Spieler, der aus verbotenem Portalraum kam niedergeschlagen
-	var string ThereIsNoFightingHere;		//Wache hat Tдter einer Schlдgerei (derjenige, der angefangen hat) niedergeschlagen
+	var string ThereIsNoFightingHere;		//Wache hat TРґter einer SchlРґgerei (derjenige, der angefangen hat) niedergeschlagen
 
 	// ------ C_WantToFlee ------ 
 	var string SpareMe;						//Tu mir nichts!
-	var string RunAway;						//ScheiЯe! Nichts wie weg!		
+	var string RunAway;						//ScheiРЇe! Nichts wie weg!		
 
 	// ------ C_WantToCallGuardsForFight ------
 	var	string Alarm;						//Wache ruft Wache
 	var string Guards;						//Harter Bursche ruft Wache
-	var string Help;						//Bьrger ruft Hilfe
+	var string Help;						//BСЊrger ruft Hilfe
 		
 	// ------ B_AssessMurder ------
-	var string GoodMonsterKill;				//Monster getцtet - NSC findet das toll
-	var string GoodKill;					//Mensch getцtet - NSC findet das toll (war sein Feind)
+	var string GoodMonsterKill;				//Monster getС†tet - NSC findet das toll
+	var string GoodKill;					//Mensch getС†tet - NSC findet das toll (war sein Feind)
 	
 	// ------ B_AssessTalk ------
 	var string NOTNOW;						//wenn RefuseTalk Counter aktiv
@@ -66,7 +66,7 @@ CLASS C_SVM
 	// ------ ZS_ClearRoom ------
 	var string GetOutOfHere;				//Spieler in verbotenem Raum. Harter Bursche: Raus hier!
 	var string WhyAreYouInHere;				//Spieler in verbotenem Raum. Weicher Bursche: Was willst du hier?
-	var string YesGoOutOfHere;				//Spieler verlдЯt verboten Raum artig wieder
+	var string YesGoOutOfHere;				//Spieler verlРґРЇt verboten Raum artig wieder
 
 	// ------ ZS_ObservePlayer ------
 	var string WhatsThisSupposedToBe;		//NSC sieht Spieler schleichen
@@ -94,10 +94,10 @@ CLASS C_SVM
 	
 	// ------ ZS_WatchFight ------
 	var	string TheresAFight;				//NSC entdeckt einen Kampf, und findet das toll
-	var string OhMyGodItsAFight;			//NSC entdeckt einen Kampf, und findet das bestьtzend (Bьrger)
+	var string OhMyGodItsAFight;			//NSC entdeckt einen Kampf, und findet das bestСЊtzend (BСЊrger)
 	var string GoodVictory;					//Dem Sieger zujubeln
 	var string NotBad;						//'Nicht schlecht...' - Kampfende - Freund wurde von Nicht-Freund besiegt
-	var string OhMyGodHesDown;				//Bestьrzung ьber brutales Niederschlagen
+	var string OhMyGodHesDown;				//BestСЊrzung СЊber brutales Niederschlagen
 	var string CheerFriend01;				//Freund landet	einen Treffer. 'Immer in die Fresse!'
 	var string CheerFriend02;
 	var string CheerFriend03;
@@ -137,34 +137,34 @@ CLASS C_SVM
 	var string TOUGHGUY_PLAYERATTACK;		//Spieler hat einen ToughGuy angegriffen und den Kampf abgebrochen	
 	
 	// ------ GOLD ------
-	var string GOLD_1000;					//1000 Goldstьcke.
-	var string GOLD_950;					//950 Goldstьcke.
-	var string GOLD_900;					//900 Goldstьcke.
-	var string GOLD_850;					//850 Goldstьcke.
-	var string GOLD_800;					//800 Goldstьcke.
-	var string GOLD_750;					//750 Goldstьcke.
-	var string GOLD_700;					//700 Goldstьcke.
-	var string GOLD_650;					//650 Goldstьcke.
-	var string GOLD_600;					//600 GOldstьcke.
-	var string GOLD_550;					//550 Goldstьcke.
-	var string GOLD_500;					//500 Goldstьcke.
-	var string GOLD_450;					//450 Goldstьcke.
-	var string GOLD_400;					//400 Goldstьcke.
-	var string GOLD_350;					//350 Goldstьcke.
-	var string GOLD_300;					//300 Goldstьcke.
-	var string GOLD_250;					//250 Goldstьcke.
-	var string GOLD_200;					//200 Goldstьcke.
-	var string GOLD_150;					//150 Goldstьcke.
-	var string GOLD_100;					//100 Goldstьcke.
-	var string GOLD_90;						//90 Goldstьcke.
-	var string GOLD_80;						//80 Goldstьcke.
-	var string GOLD_70;						//70 Goldstьcke.
-	var string GOLD_60;						//60 Goldstьcke.
-	var string GOLD_50;						//50 Goldstьcke.
-	var string GOLD_40;						//40 Goldstьcke.
-	var string GOLD_30;						//30 Goldstьcke.
-	var string GOLD_20;						//20 Goldstьcke.
-	var string GOLD_10;						//10 Goldstьcke.
+	var string GOLD_1000;					//1000 GoldstСЊcke.
+	var string GOLD_950;					//950 GoldstСЊcke.
+	var string GOLD_900;					//900 GoldstСЊcke.
+	var string GOLD_850;					//850 GoldstСЊcke.
+	var string GOLD_800;					//800 GoldstСЊcke.
+	var string GOLD_750;					//750 GoldstСЊcke.
+	var string GOLD_700;					//700 GoldstСЊcke.
+	var string GOLD_650;					//650 GoldstСЊcke.
+	var string GOLD_600;					//600 GOldstСЊcke.
+	var string GOLD_550;					//550 GoldstСЊcke.
+	var string GOLD_500;					//500 GoldstСЊcke.
+	var string GOLD_450;					//450 GoldstСЊcke.
+	var string GOLD_400;					//400 GoldstСЊcke.
+	var string GOLD_350;					//350 GoldstСЊcke.
+	var string GOLD_300;					//300 GoldstСЊcke.
+	var string GOLD_250;					//250 GoldstСЊcke.
+	var string GOLD_200;					//200 GoldstСЊcke.
+	var string GOLD_150;					//150 GoldstСЊcke.
+	var string GOLD_100;					//100 GoldstСЊcke.
+	var string GOLD_90;						//90 GoldstСЊcke.
+	var string GOLD_80;						//80 GoldstСЊcke.
+	var string GOLD_70;						//70 GoldstСЊcke.
+	var string GOLD_60;						//60 GoldstСЊcke.
+	var string GOLD_50;						//50 GoldstСЊcke.
+	var string GOLD_40;						//40 GoldstСЊcke.
+	var string GOLD_30;						//30 GoldstСЊcke.
+	var string GOLD_20;						//20 GoldstСЊcke.
+	var string GOLD_10;						//10 GoldstСЊcke.
 	
 	// ------ B_Say_Smalltalk (TA_Smalltalk) ------
 	VAR	string Smalltalk01;				// ...wenn Du meinst...
@@ -172,25 +172,25 @@ CLASS C_SVM
 	VAR	string Smalltalk03;				// ...war nicht besonders schlau....
 	VAR	string Smalltalk04;				// ...ich halt mich da lieber raus...
 	VAR	string Smalltalk05;				// ...das ist wirklich nicht mein Problem...
-	VAR	string Smalltalk06;				// ...war doch klar, daЯ das Дrger gibt...
-	VAR	string Smalltalk07;				// ...aber behalt's fьr Dich, muЯ nicht gleich jeder wissen...
+	VAR	string Smalltalk06;				// ...war doch klar, daРЇ das Р”rger gibt...
+	VAR	string Smalltalk07;				// ...aber behalt's fСЊr Dich, muРЇ nicht gleich jeder wissen...
 	VAR	string Smalltalk08;				// ...das passiert mir nicht nochmal...
-	VAR	string Smalltalk09;				// ...an der Gechichte muЯ wohl doch was dran sein...
-	VAR	string Smalltalk10;				// ...man muЯ eben aufpassen was man rumerzдhlt...
+	VAR	string Smalltalk09;				// ...an der Gechichte muРЇ wohl doch was dran sein...
+	VAR	string Smalltalk10;				// ...man muРЇ eben aufpassen was man rumerzРґhlt...
 	VAR	string Smalltalk11;				// ...solange ich damit nichts zu tun habe...
-	VAR	string Smalltalk12;				// ...man darf auch nicht alles glauben, was man hцrt...
+	VAR	string Smalltalk12;				// ...man darf auch nicht alles glauben, was man hС†rt...
 	VAR	string Smalltalk13;				// ...in seiner Haut will ich trotzdem nicht stecken...
 	VAR	string Smalltalk14;				// ...immer wieder die selbe Leier...
 	VAR	string Smalltalk15;				// ...manche lernen eben garnichts dazu...
-	VAR	string Smalltalk16;				// ...frьher wдre das ganz anders gelaufen...
+	VAR	string Smalltalk16;				// ...frСЊher wРґre das ganz anders gelaufen...
 	VAR	string Smalltalk17;				// ...gequatscht wird viel...
-	VAR	string Smalltalk18;				// ...ich hцr nicht mehr auf das Gefasel...
-	VAR	string Smalltalk19;				// ...verlaЯ Dich auf jemanden und Du bist verlassen, das ist eben so...
-	VAR	string Smalltalk20;				// ...ich glaube kaum, daЯ sich daran was дndern wird...
+	VAR	string Smalltalk18;				// ...ich hС†r nicht mehr auf das Gefasel...
+	VAR	string Smalltalk19;				// ...verlaРЇ Dich auf jemanden und Du bist verlassen, das ist eben so...
+	VAR	string Smalltalk20;				// ...ich glaube kaum, daРЇ sich daran was Рґndern wird...
 	VAR	string Smalltalk21;				// ...wahrscheinlich hast Du recht...
-	VAR	string Smalltalk22;				// ...erstmal abwarten. Es wird nichts so heiЯ gegessen, wie es gekocht wird...
-	VAR	string Smalltalk23;				// ...ich dachte, das wдre schon lange geklдrt, aber das ist wohl nicht so...
-	VAR	string Smalltalk24;				// ...laЯ uns lieber ьber was anderes reden...
+	VAR	string Smalltalk22;				// ...erstmal abwarten. Es wird nichts so heiРЇ gegessen, wie es gekocht wird...
+	VAR	string Smalltalk23;				// ...ich dachte, das wРґre schon lange geklРґrt, aber das ist wohl nicht so...
+	VAR	string Smalltalk24;				// ...laРЇ uns lieber СЊber was anderes reden...
 	//Tough Guy (SLD/MIL/DJG)
 	VAR	string Smalltalk25;				// ...der war doch sturzbetrunken...							
 	VAR	string Smalltalk26;				// ...mit mir kann man sowas nicht machen...			
@@ -198,11 +198,11 @@ CLASS C_SVM
 	//ProInnos (NOV/KDF/PAL)
 	VAR	string Smalltalk28;				// ...so steht es in den heiligen Schriften...							
 	VAR	string Smalltalk29;				// ...ich handle stets in Innos Namen...			
-	VAR	string Smalltalk30;				// ...niemand darf gegen die gцttliche Ordnung verstoЯen...
+	VAR	string Smalltalk30;				// ...niemand darf gegen die gС†ttliche Ordnung verstoРЇen...
 		
 	// ------ Lehrer-Kommentare ------
 	var string NoLearnNoPoints			;	//NSC-Lehrer verbietet Steigerung - keine Lernpunkte!
-	var string NoLearnOverPersonalMAX	;	//NSC-Lehrer verbietet Steigerung ЬBER sein persцnliches Lehrer-Maximum
+	var string NoLearnOverPersonalMAX	;	//NSC-Lehrer verbietet Steigerung Р¬BER sein persС†nliches Lehrer-Maximum
 	var string NoLearnYoureBetter		;   //NSC-Lehrer - MAX ist schlechter als oder gleich wie Spieler
 	var string YouLearnedSomething		;   //SC hat etwas gelernt
 
@@ -235,16 +235,16 @@ CLASS C_SVM
 	var string HAFEN_2_UNTERSTADT		;
 
 	// ------ Kampf ------
-	var	string Dead				;			// Tцdlich verletzt
+	var	string Dead				;			// TС†dlich verletzt
 	VAR	string Aargh_1			;			// Treffer kassiert im Kampf	
 	VAR	string Aargh_2			;			// Treffer kassiert im Kampf	
 	VAR	string Aargh_3			;			// Treffer kassiert im Kampf	
 	
-	var string ADDON_WRONGARMOR;			//Sc hat unangemessene Rьstung an				//Default
-	var string ADDON_WRONGARMOR_SLD;		//Beide SLD/DJG und falsche Rьstung
-	var string ADDON_WRONGARMOR_MIL;		//Beide MIL/PAL	und falsche Rьstung
-	var string ADDON_WRONGARMOR_KDF;		//Beide KDF und falsche Rьstung
-	var string ADDON_NOARMOR_BDT;			//self ist BAndite und SC hat keine Rьstung an.
+	var string ADDON_WRONGARMOR;			//Sc hat unangemessene RСЊstung an				//Default
+	var string ADDON_WRONGARMOR_SLD;		//Beide SLD/DJG und falsche RСЊstung
+	var string ADDON_WRONGARMOR_MIL;		//Beide MIL/PAL	und falsche RСЊstung
+	var string ADDON_WRONGARMOR_KDF;		//Beide KDF und falsche RСЊstung
+	var string ADDON_NOARMOR_BDT;			//self ist BAndite und SC hat keine RСЊstung an.
 	
 	var string ADDON_DIEBANDIT;				//Stirb du dreckiger Bandit
 	var string ADDON_DIRTYPIRATE;			//Piratenpack
@@ -313,7 +313,7 @@ CLASS C_SVM
 // **********************************
 // NSCs
 // ----
-// SVMs mьssen immer "SVM_x" heissen, 
+// SVMs mСЊssen immer "SVM_x" heissen, 
 // wobei x die VoiceNummer ist.	
 // **********************************
 
@@ -326,223 +326,223 @@ instance SVM_0 (C_SVM)
 instance SVM_1 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_1_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_1_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_1_Weather"						;//Какая паршивая погода!
+	MILGreetings				= 	"SVM_1_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_1_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_1_Weather"						;//РљР°РєР°СЏ РїР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_1_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_1_DieEnemy"					;//Сейчас ты получишь!
-	DieMonster					=	"SVM_1_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_1_DirtyThief"					;//Грязный воришка! Ну, подожди!
-	HandsOff					=	"SVM_1_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_1_SheepKiller"					;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_1_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_1_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_1_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_1_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_1_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_1_ThenIBeatYouOutOfHere"		;//Сейчас я вышвырну тебя отсюда!
-	WhatDidYouDoInThere			=	"SVM_1_WhatDidYouDoInThere"			;//Что тебе здесь надо, а?!
-	WillYouStopFighting			=	"SVM_1_WillYouStopFighting"			;//Прекрати немедленно!
+	IGetYouStill				= 	"SVM_1_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_1_DieEnemy"					;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	DieMonster					=	"SVM_1_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_1_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂРёС€РєР°! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_1_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_1_SheepKiller"					;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_1_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_1_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_1_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_1_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_1_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_1_ThenIBeatYouOutOfHere"		;//РЎРµР№С‡Р°СЃ СЏ РІС‹С€РІС‹СЂРЅСѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°!
+	WhatDidYouDoInThere			=	"SVM_1_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅР°РґРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_1_WillYouStopFighting"			;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_1_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_1_EnemyKilled"					;//Получил, подонок?!
-	MonsterKilled				=	"SVM_1_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_1_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_1_rumfummlerDown"				;//Я думаю, это научит тебя держаться подальше от того, что тебе не принадлежит!
-	SheepAttackerDown			=	"SVM_1_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_1_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_1_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_1_NeverHitMeAgain"				;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_1_YouBetterShouldHaveListened"	;//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_1_GetUpAndBeGone"				;//А теперь убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_1_NeverEnterRoomAgain"			;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_1_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_1_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_1_EnemyKilled"					;//РџРѕР»СѓС‡РёР», РїРѕРґРѕРЅРѕРє?!
+	MonsterKilled				=	"SVM_1_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_1_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_1_rumfummlerDown"				;//РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РЅР°СѓС‡РёС‚ С‚РµР±СЏ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚!
+	SheepAttackerDown			=	"SVM_1_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_1_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_1_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_1_NeverHitMeAgain"				;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_1_YouBetterShouldHaveListened"	;//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_1_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_1_NeverEnterRoomAgain"			;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_1_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_1_SpareMe"						;//Оставь меня в покое!
-	RunAway						= 	"SVM_1_RunAway"						;//Черт, я ухожу отсюда!
+	SpareMe						=	"SVM_1_SpareMe"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
+	RunAway						= 	"SVM_1_RunAway"						;//Р§РµСЂС‚, СЏ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_1_Alarm"						;//ТРЕВОГА!
-	Guards						=	"SVM_1_Guards"						;//СТРАЖА!
-	Help						=	"SVM_1_Help"						;//Помогите!
+	Alarm						=	"SVM_1_Alarm"						;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_1_Guards"						;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_1_Help"						;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_1_GoodMonsterKill"				;//Отлично - одной мерзкой тварью меньше!
-	GoodKill					= 	"SVM_1_GoodKill"					;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_1_GoodMonsterKill"				;//РћС‚Р»РёС‡РЅРѕ - РѕРґРЅРѕР№ РјРµСЂР·РєРѕР№ С‚РІР°СЂСЊСЋ РјРµРЅСЊС€Рµ!
+	GoodKill					= 	"SVM_1_GoodKill"					;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_1_NOTNOW"						;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_1_NOTNOW"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_1_RunCoward"					;//Прекрати немедленно, подонок!
+	RunCoward					=	"SVM_1_RunCoward"					;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ, РїРѕРґРѕРЅРѕРє!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_1_GetOutOfHere"				;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_1_WhyAreYouInHere"				;//Что тебе здесь нужно?! Уходи!
-	YesGoOutOfHere				= 	"SVM_1_YesGoOutOfHere"				;//Да, убирайся отсюда!
+	GetOutOfHere				=	"SVM_1_GetOutOfHere"				;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_1_WhyAreYouInHere"				;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?! РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_1_YesGoOutOfHere"				;//Р”Р°, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_1_WhatsThisSupposedToBe"		;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_1_YouDisturbedMySlumber"		;//(просыпается) Черт, в чем дело?
+	WhatsThisSupposedToBe		=	"SVM_1_WhatsThisSupposedToBe"		;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_1_YouDisturbedMySlumber"		;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, РІ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_1_ITookYourGold"				;//Золото! Хм, золото никогда не помешает...
-	ShitNoGold					=	"SVM_1_ShitNoGold"					;//У этого ублюдка нет ни гроша в карманах.
-	ITakeYourWeapon				=	"SVM_1_ITakeYourWeapon"				;//Я, пожалуй, заберу твое оружие, так будет безопаснее для тебя же.
+	ITookYourGold				=	"SVM_1_ITookYourGold"				;//Р—РѕР»РѕС‚Рѕ! РҐРј, Р·РѕР»РѕС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РїРѕРјРµС€Р°РµС‚...
+	ShitNoGold					=	"SVM_1_ShitNoGold"					;//РЈ СЌС‚РѕРіРѕ СѓР±Р»СЋРґРєР° РЅРµС‚ РЅРё РіСЂРѕС€Р° РІ РєР°СЂРјР°РЅР°С….
+	ITakeYourWeapon				=	"SVM_1_ITakeYourWeapon"				;//РЇ, РїРѕР¶Р°Р»СѓР№, Р·Р°Р±РµСЂСѓ С‚РІРѕРµ РѕСЂСѓР¶РёРµ, С‚Р°Рє Р±СѓРґРµС‚ Р±РµР·РѕРїР°СЃРЅРµРµ РґР»СЏ С‚РµР±СЏ Р¶Рµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_1_WhatAreYouDoing"				;//Эй! Осторожно!
+	WhatAreYouDoing				=	"SVM_1_WhatAreYouDoing"				;//Р­Р№! РћСЃС‚РѕСЂРѕР¶РЅРѕ!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_1_LookingForTroubleAgain"		;//(агрессивно) Ты мало получил?
-	StopMagic					=	"SVM_1_StopMagic"					;//Держись подальше от меня с этой магией!
-	ISaidStopMagic				=	"SVM_1_ISaidStopMagic"				;//Убери эту магию! Ты что, оглох?!
-	WeaponDown					=	"SVM_1_WeaponDown"					;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_1_ISaidWeaponDown"				;//Ты что, оглох? Я сказал: Убери оружие!
-	WiseMove					=	"SVM_1_WiseMove"					;//Видишь, это было не так уж сложно.
+	LookingForTroubleAgain		=	"SVM_1_LookingForTroubleAgain"		;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РўС‹ РјР°Р»Рѕ РїРѕР»СѓС‡РёР»?
+	StopMagic					=	"SVM_1_StopMagic"					;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РјРµРЅСЏ СЃ СЌС‚РѕР№ РјР°РіРёРµР№!
+	ISaidStopMagic				=	"SVM_1_ISaidStopMagic"				;//РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ! РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…?!
+	WeaponDown					=	"SVM_1_WeaponDown"					;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_1_ISaidWeaponDown"				;//РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…? РЇ СЃРєР°Р·Р°Р»: РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	WiseMove					=	"SVM_1_WiseMove"					;//Р’РёРґРёС€СЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ.
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_1_NextTimeYoureInForIt"		;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_1_OhMyHead"					;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_1_NextTimeYoureInForIt"		;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_1_OhMyHead"					;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_1_TheresAFight"				;//(страстно) Сейчас повеселимся!
-	OhMyGodItsAFight			=	"SVM_1_OhMyGodItsAFight"			;//(потрясенно) Они лупят друг друга так, что даже страшно...
-	GoodVictory					=	"SVM_1_GoodVictory"					;//(дьявольский смех) Он заслужил это!
-	NotBad						= 	"SVM_1_NotBad"						;//(одобрительно) Совсем не плохо...
-	OhMyGodHesDown				=	"SVM_1_OhMyGodHesDown"				;//(себе под нос) Какой он жестокий...
-	CheerFriend01				=	"SVM_1_CheerFriend01"				;//Да, как раз то, что нужно!
-	CheerFriend02				=	"SVM_1_CheerFriend02"				;//Чего ты ждешь?
-	CheerFriend03				=	"SVM_1_CheerFriend03"				;//Вот так!
-	Ooh01						=	"SVM_1_Ooh01"						;//Не нарушай закон!
-	Ooh02						=	"SVM_1_Ooh02"						;//Покажи ему, кто тут главный!
-	Ooh03						=	"SVM_1_Ooh03"						;//Черт побери!
+	TheresAFight				=	"SVM_1_TheresAFight"				;//(СЃС‚СЂР°СЃС‚РЅРѕ) РЎРµР№С‡Р°СЃ РїРѕРІРµСЃРµР»РёРјСЃСЏ!
+	OhMyGodItsAFight			=	"SVM_1_OhMyGodItsAFight"			;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћРЅРё Р»СѓРїСЏС‚ РґСЂСѓРі РґСЂСѓРіР° С‚Р°Рє, С‡С‚Рѕ РґР°Р¶Рµ СЃС‚СЂР°С€РЅРѕ...
+	GoodVictory					=	"SVM_1_GoodVictory"					;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РћРЅ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ!
+	NotBad						= 	"SVM_1_NotBad"						;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РЎРѕРІСЃРµРј РЅРµ РїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_1_OhMyGodHesDown"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РљР°РєРѕР№ РѕРЅ Р¶РµСЃС‚РѕРєРёР№...
+	CheerFriend01				=	"SVM_1_CheerFriend01"				;//Р”Р°, РєР°Рє СЂР°Р· С‚Рѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ!
+	CheerFriend02				=	"SVM_1_CheerFriend02"				;//Р§РµРіРѕ С‚С‹ Р¶РґРµС€СЊ?
+	CheerFriend03				=	"SVM_1_CheerFriend03"				;//Р’РѕС‚ С‚Р°Рє!
+	Ooh01						=	"SVM_1_Ooh01"						;//РќРµ РЅР°СЂСѓС€Р°Р№ Р·Р°РєРѕРЅ!
+	Ooh02						=	"SVM_1_Ooh02"						;//РџРѕРєР°Р¶Рё РµРјСѓ, РєС‚Рѕ С‚СѓС‚ РіР»Р°РІРЅС‹Р№!
+	Ooh03						=	"SVM_1_Ooh03"						;//Р§РµСЂС‚ РїРѕР±РµСЂРё!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_1_WhatWasThat"					;//(себе под нос, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_1_WhatWasThat"					;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_1_GetOutOfMyBed"					;//Убирайся с моей кровати!
-	Awake						= "SVM_1_Awake"							;//(зевает)
+	GetOutOfMyBed				= "SVM_1_GetOutOfMyBed"					;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_1_Awake"							;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_1_ABS_COMMANDER"					;//Я слышал, ты ходил к командующему и все уладил.
-	ABS_MONASTERY				= "SVM_1_ABS_MONASTERY"					;//Я слышал, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM					= "SVM_1_ABS_FARM"						;//Говорят, ты обратился к Ли и все уладил.
-	ABS_GOOD					= "SVM_1_ABS_GOOD"						;//Это хорошо.
+	ABS_COMMANDER				= "SVM_1_ABS_COMMANDER"					;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY				= "SVM_1_ABS_MONASTERY"					;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM					= "SVM_1_ABS_FARM"						;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD					= "SVM_1_ABS_GOOD"						;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_1_SHEEPKILLER_CRIME"				;//Он убивает наших овец!
-	ATTACK_CRIME				= "SVM_1_ATTACK_CRIME"					;//Я не разговариваю с грязными ворами!
-	THEFT_CRIME					= "SVM_1_THEFT_CRIME"					;//Прочь, с глаз моих, грязный вор!
+	SHEEPKILLER_CRIME			= "SVM_1_SHEEPKILLER_CRIME"				;//РћРЅ СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	ATTACK_CRIME				= "SVM_1_ATTACK_CRIME"					;//РЇ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ СЃ РіСЂСЏР·РЅС‹РјРё РІРѕСЂР°РјРё!
+	THEFT_CRIME					= "SVM_1_THEFT_CRIME"					;//РџСЂРѕС‡СЊ, СЃ РіР»Р°Р· РјРѕРёС…, РіСЂСЏР·РЅС‹Р№ РІРѕСЂ!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_1_PAL_CITY_CRIME"				;//Ты позоришь наш орден! Лорд Хаген будет в ярости!
-	MIL_CITY_CRIME				= "SVM_1_MIL_CITY_CRIME"				;//Ты позоришь городскую стражу! Лорд Андрэ научит тебя хорошим манерам!
-	CITY_CRIME					= "SVM_1_CITY_CRIME"					;//Лорд Андрэ узнает о том, что ты сделал!
+	PAL_CITY_CRIME				= "SVM_1_PAL_CITY_CRIME"				;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РЅР°С€ РѕСЂРґРµРЅ! Р›РѕСЂРґ РҐР°РіРµРЅ Р±СѓРґРµС‚ РІ СЏСЂРѕСЃС‚Рё!
+	MIL_CITY_CRIME				= "SVM_1_MIL_CITY_CRIME"				;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! Р›РѕСЂРґ РђРЅРґСЂСЌ РЅР°СѓС‡РёС‚ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!
+	CITY_CRIME					= "SVM_1_CITY_CRIME"					;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р»!
 	// -------------------------
-	MONA_CRIME					= "SVM_1_MONA_CRIME"					;//Отец Парлан не будет рад, когда узнает об этом кощунстве!
-	FARM_CRIME					= "SVM_1_FARM_CRIME"					;//Ли задаст тебе трепку! Ты плохо кончишь!
-	OC_CRIME					= "SVM_1_OC_CRIME"						;//Командующий Гаронд потребует от тебя объяснений!
+	MONA_CRIME					= "SVM_1_MONA_CRIME"					;//РћС‚РµС† РџР°СЂР»Р°РЅ РЅРµ Р±СѓРґРµС‚ СЂР°Рґ, РєРѕРіРґР° СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј РєРѕС‰СѓРЅСЃС‚РІРµ!
+	FARM_CRIME					= "SVM_1_FARM_CRIME"					;//Р›Рё Р·Р°РґР°СЃС‚ С‚РµР±Рµ С‚СЂРµРїРєСѓ! РўС‹ РїР»РѕС…Рѕ РєРѕРЅС‡РёС€СЊ!
+	OC_CRIME					= "SVM_1_OC_CRIME"						;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РїРѕС‚СЂРµР±СѓРµС‚ РѕС‚ С‚РµР±СЏ РѕР±СЉСЏСЃРЅРµРЅРёР№!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_1_TOUGHGUY_ATTACKLOST"			;//Хорошо, хорошо, ты победил. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_1_TOUGHGUY_ATTACKWON"			;//Тебе еще раз показать, кто тут главный?
-	TOUGHGUY_PLAYERATTACK		= "SVM_1_TOUGHGUY_PLAYERATTACK"			;//Хочешь еще раз сразиться со мной, да?
+	TOUGHGUY_ATTACKLOST			= "SVM_1_TOUGHGUY_ATTACKLOST"			;//РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, С‚С‹ РїРѕР±РµРґРёР». Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_1_TOUGHGUY_ATTACKWON"			;//РўРµР±Рµ РµС‰Рµ СЂР°Р· РїРѕРєР°Р·Р°С‚СЊ, РєС‚Рѕ С‚СѓС‚ РіР»Р°РІРЅС‹Р№?
+	TOUGHGUY_PLAYERATTACK		= "SVM_1_TOUGHGUY_PLAYERATTACK"			;//РҐРѕС‡РµС€СЊ РµС‰Рµ СЂР°Р· СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№, РґР°?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_1_GOLD_1000"						;//1000 золотых монет.
-	GOLD_950					= "SVM_1_GOLD_950"						;//950 золотых монет.
-	GOLD_900					= "SVM_1_GOLD_900"						;//900 золотых монет.
-	GOLD_850					= "SVM_1_GOLD_850"						;//850 золотых монет.
-	GOLD_800					= "SVM_1_GOLD_800"						;//800 золотых монет.
-	GOLD_750					= "SVM_1_GOLD_750"						;//750 золотых монет.
-	GOLD_700					= "SVM_1_GOLD_700"						;//700 золотых монет.
-	GOLD_650					= "SVM_1_GOLD_650"						;//650 золотых монет.
-	GOLD_600					= "SVM_1_GOLD_600"						;//600 золотых монет.
-	GOLD_550					= "SVM_1_GOLD_550"						;//550 золотых монет.
-	GOLD_500					= "SVM_1_GOLD_500"						;//500 золотых монет.
-	GOLD_450					= "SVM_1_GOLD_450"						;//450 золотых монет.
-	GOLD_400					= "SVM_1_GOLD_400"						;//400 золотых монет.
-	GOLD_350					= "SVM_1_GOLD_350"						;//350 золотых монет.
-	GOLD_300					= "SVM_1_GOLD_300"						;//300 золотых монет.
-	GOLD_250					= "SVM_1_GOLD_250"						;//250 золотых монет.
-	GOLD_200					= "SVM_1_GOLD_200"						;//200 золотых монет.
-	GOLD_150					= "SVM_1_GOLD_150"						;//150 золотых монет.
-	GOLD_100					= "SVM_1_GOLD_100"						;//100 золотых монет.
-	GOLD_90						= "SVM_1_GOLD_90"						;//90 золотых монет.
-	GOLD_80						= "SVM_1_GOLD_80"						;//80 золотых монет.
-	GOLD_70						= "SVM_1_GOLD_70"						;//70 золотых монет.
-	GOLD_60						= "SVM_1_GOLD_60"						;//60 золотых монет.
-	GOLD_50						= "SVM_1_GOLD_50"						;//50 золотых монет.
-	GOLD_40						= "SVM_1_GOLD_40"						;//40 золотых монет.
-	GOLD_30						= "SVM_1_GOLD_30"						;//30 золотых монет.
-	GOLD_20						= "SVM_1_GOLD_20"						;//20 золотых монет.
-	GOLD_10						= "SVM_1_GOLD_10"						;//10 золотых монет.
+	GOLD_1000					= "SVM_1_GOLD_1000"						;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_1_GOLD_950"						;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_1_GOLD_900"						;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_1_GOLD_850"						;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_1_GOLD_800"						;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_1_GOLD_750"						;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_1_GOLD_700"						;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_1_GOLD_650"						;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_1_GOLD_600"						;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_1_GOLD_550"						;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_1_GOLD_500"						;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_1_GOLD_450"						;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_1_GOLD_400"						;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_1_GOLD_350"						;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_1_GOLD_300"						;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_1_GOLD_250"						;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_1_GOLD_200"						;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_1_GOLD_150"						;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_1_GOLD_100"						;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_1_GOLD_90"						;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_1_GOLD_80"						;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_1_GOLD_70"						;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_1_GOLD_60"						;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_1_GOLD_50"						;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_1_GOLD_40"						;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_1_GOLD_30"						;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_1_GOLD_20"						;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_1_GOLD_10"						;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_1_Smalltalk01"					;//...ты действительно думаешь...
-	Smalltalk02					= "SVM_1_Smalltalk02"					;//...все возможно...
-	Smalltalk03					= "SVM_1_Smalltalk03"					;//...ему стоило лучше подумать...
-	Smalltalk04					= "SVM_1_Smalltalk04"					;//...как будто у меня без того проблем не хватает...
-	Smalltalk05					= "SVM_1_Smalltalk05"					;//...кто сказал тебе это...
-	Smalltalk06					= "SVM_1_Smalltalk06"					;//...от этого будут одни проблемы...
-	Smalltalk07					= "SVM_1_Smalltalk07"					;//...ходят разные слухи...
-	Smalltalk08					= "SVM_1_Smalltalk08"					;//...На твоем месте я бы этого не делал...
-	Smalltalk09					= "SVM_1_Smalltalk09"					;//...это все слухи...
-	Smalltalk10					= "SVM_1_Smalltalk10"					;//...я бы не доверял тому, кто тебе это сказал...
-	Smalltalk11					= "SVM_1_Smalltalk11"					;//...Возможно, я говорил тебе раньше...
-	Smalltalk12					= "SVM_1_Smalltalk12"					;//...никто никогда не спрашивает меня...
-	Smalltalk13					= "SVM_1_Smalltalk13"					;//...тебе должно быть жаль этого беднягу...
-	Smalltalk14					= "SVM_1_Smalltalk14"					;//...нет ничего нового...
-	Smalltalk15					= "SVM_1_Smalltalk15"					;//...это абсолютно очевидно...
-	Smalltalk16					= "SVM_1_Smalltalk16"					;//...тебе не стоит спрашивать меня об этом...
-	Smalltalk17					= "SVM_1_Smalltalk17"					;//...так может продолжаться вечность...
-	Smalltalk18					= "SVM_1_Smalltalk18"					;//...ты уже знаешь, что я думаю...
-	Smalltalk19					= "SVM_1_Smalltalk19"					;//...это именно так, как я сказал...
-	Smalltalk20					= "SVM_1_Smalltalk20"					;//...ничто не изменит это...
-	Smalltalk21					= "SVM_1_Smalltalk21"					;//...и почему я не слышал об этом раньше...
-	Smalltalk22					= "SVM_1_Smalltalk22"					;//...посмотрим, что будет дальше...
-	Smalltalk23					= "SVM_1_Smalltalk23"					;//...некоторые проблемы решаются сами собой...
-	Smalltalk24					= "SVM_1_Smalltalk24"					;//...Я больше не хочу слышать об этом...
+	Smalltalk01					= "SVM_1_Smalltalk01"					;//...С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ...
+	Smalltalk02					= "SVM_1_Smalltalk02"					;//...РІСЃРµ РІРѕР·РјРѕР¶РЅРѕ...
+	Smalltalk03					= "SVM_1_Smalltalk03"					;//...РµРјСѓ СЃС‚РѕРёР»Рѕ Р»СѓС‡С€Рµ РїРѕРґСѓРјР°С‚СЊ...
+	Smalltalk04					= "SVM_1_Smalltalk04"					;//...РєР°Рє Р±СѓРґС‚Рѕ Сѓ РјРµРЅСЏ Р±РµР· С‚РѕРіРѕ РїСЂРѕР±Р»РµРј РЅРµ С…РІР°С‚Р°РµС‚...
+	Smalltalk05					= "SVM_1_Smalltalk05"					;//...РєС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ...
+	Smalltalk06					= "SVM_1_Smalltalk06"					;//...РѕС‚ СЌС‚РѕРіРѕ Р±СѓРґСѓС‚ РѕРґРЅРё РїСЂРѕР±Р»РµРјС‹...
+	Smalltalk07					= "SVM_1_Smalltalk07"					;//...С…РѕРґСЏС‚ СЂР°Р·РЅС‹Рµ СЃР»СѓС…Рё...
+	Smalltalk08					= "SVM_1_Smalltalk08"					;//...РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ СЌС‚РѕРіРѕ РЅРµ РґРµР»Р°Р»...
+	Smalltalk09					= "SVM_1_Smalltalk09"					;//...СЌС‚Рѕ РІСЃРµ СЃР»СѓС…Рё...
+	Smalltalk10					= "SVM_1_Smalltalk10"					;//...СЏ Р±С‹ РЅРµ РґРѕРІРµСЂСЏР» С‚РѕРјСѓ, РєС‚Рѕ С‚РµР±Рµ СЌС‚Рѕ СЃРєР°Р·Р°Р»...
+	Smalltalk11					= "SVM_1_Smalltalk11"					;//...Р’РѕР·РјРѕР¶РЅРѕ, СЏ РіРѕРІРѕСЂРёР» С‚РµР±Рµ СЂР°РЅСЊС€Рµ...
+	Smalltalk12					= "SVM_1_Smalltalk12"					;//...РЅРёРєС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ СЃРїСЂР°С€РёРІР°РµС‚ РјРµРЅСЏ...
+	Smalltalk13					= "SVM_1_Smalltalk13"					;//...С‚РµР±Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р¶Р°Р»СЊ СЌС‚РѕРіРѕ Р±РµРґРЅСЏРіСѓ...
+	Smalltalk14					= "SVM_1_Smalltalk14"					;//...РЅРµС‚ РЅРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ...
+	Smalltalk15					= "SVM_1_Smalltalk15"					;//...СЌС‚Рѕ Р°Р±СЃРѕР»СЋС‚РЅРѕ РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk16					= "SVM_1_Smalltalk16"					;//...С‚РµР±Рµ РЅРµ СЃС‚РѕРёС‚ СЃРїСЂР°С€РёРІР°С‚СЊ РјРµРЅСЏ РѕР± СЌС‚РѕРј...
+	Smalltalk17					= "SVM_1_Smalltalk17"					;//...С‚Р°Рє РјРѕР¶РµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ РІРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk18					= "SVM_1_Smalltalk18"					;//...С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЏ РґСѓРјР°СЋ...
+	Smalltalk19					= "SVM_1_Smalltalk19"					;//...СЌС‚Рѕ РёРјРµРЅРЅРѕ С‚Р°Рє, РєР°Рє СЏ СЃРєР°Р·Р°Р»...
+	Smalltalk20					= "SVM_1_Smalltalk20"					;//...РЅРёС‡С‚Рѕ РЅРµ РёР·РјРµРЅРёС‚ СЌС‚Рѕ...
+	Smalltalk21					= "SVM_1_Smalltalk21"					;//...Рё РїРѕС‡РµРјСѓ СЏ РЅРµ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј СЂР°РЅСЊС€Рµ...
+	Smalltalk22					= "SVM_1_Smalltalk22"					;//...РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ Р±СѓРґРµС‚ РґР°Р»СЊС€Рµ...
+	Smalltalk23					= "SVM_1_Smalltalk23"					;//...РЅРµРєРѕС‚РѕСЂС‹Рµ РїСЂРѕР±Р»РµРјС‹ СЂРµС€Р°СЋС‚СЃСЏ СЃР°РјРё СЃРѕР±РѕР№...
+	Smalltalk24					= "SVM_1_Smalltalk24"					;//...РЇ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡Сѓ СЃР»С‹С€Р°С‚СЊ РѕР± СЌС‚РѕРј...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_1_Smalltalk25"					;//...он напился в стельку...
-	Smalltalk26					= "SVM_1_Smalltalk26"					;//...Я не позволю так обращаться с собой...
-	Smalltalk27					= "SVM_1_Smalltalk27"					;//...они все разбежались как крысы, и я остался совсем один...
+	Smalltalk25					= "SVM_1_Smalltalk25"					;//...РѕРЅ РЅР°РїРёР»СЃСЏ РІ СЃС‚РµР»СЊРєСѓ...
+	Smalltalk26					= "SVM_1_Smalltalk26"					;//...РЇ РЅРµ РїРѕР·РІРѕР»СЋ С‚Р°Рє РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ СЃРѕР±РѕР№...
+	Smalltalk27					= "SVM_1_Smalltalk27"					;//...РѕРЅРё РІСЃРµ СЂР°Р·Р±РµР¶Р°Р»РёСЃСЊ РєР°Рє РєСЂС‹СЃС‹, Рё СЏ РѕСЃС‚Р°Р»СЃСЏ СЃРѕРІСЃРµРј РѕРґРёРЅ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_1_Smalltalk28"					;//...так говорится в Писании...
-	Smalltalk29					= "SVM_1_Smalltalk29"					;//...Я всегда поступаю так, как завещал Иннос...
-	Smalltalk30					= "SVM_1_Smalltalk30"					;//...никто не смеет нарушать божественный порядок...
+	Smalltalk28					= "SVM_1_Smalltalk28"					;//...С‚Р°Рє РіРѕРІРѕСЂРёС‚СЃСЏ РІ РџРёСЃР°РЅРёРё...
+	Smalltalk29					= "SVM_1_Smalltalk29"					;//...РЇ РІСЃРµРіРґР° РїРѕСЃС‚СѓРїР°СЋ С‚Р°Рє, РєР°Рє Р·Р°РІРµС‰Р°Р» РРЅРЅРѕСЃ...
+	Smalltalk30					= "SVM_1_Smalltalk30"					;//...РЅРёРєС‚Рѕ РЅРµ СЃРјРµРµС‚ РЅР°СЂСѓС€Р°С‚СЊ Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ РїРѕСЂСЏРґРѕРє...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_1_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_1_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_1_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_1_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_1_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_1_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_1_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_1_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_1_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_1_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_1_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_1_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_1_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_1_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_1_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_1_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_1_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_1_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_1_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_1_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_1_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_1_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_1_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_1_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_1_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_1_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_1_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_1_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_1_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_1_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_1_TEMPEL_2_GALGEN"			;//Выйдя из храма и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_1_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_1_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_1_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_1_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_1_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_1_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_1_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_1_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_1_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_1_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_1_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_1_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_1_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_1_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_1_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_1_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР° Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_1_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_1_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_1_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_1_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_1_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_1_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_1_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_1_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_1_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_1_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_1_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_1_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_1_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_1_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_1_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_1_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_1_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_1_Addon_WrongArmor";				//Это не твоя одежда. Я не буду с тобой разговаривать.
-	ADDON_WRONGARMOR_SLD		= "SVM_1_ADDON_WRONGARMOR_SLD";			//Что ты носишь? Надень что-нибудь приличное.
-	ADDON_WRONGARMOR_MIL		= "SVM_1_ADDON_WRONGARMOR_MIL";			//Ты солдат! Ну так одевайся как солдат.
-	ADDON_WRONGARMOR_KDF		= "SVM_1_ADDON_WRONGARMOR_KDF";			//Твоя одежда не соответствует нашему ордену. Пойди и переоденься.
-	ADDON_NOARMOR_BDT			= "SVM_1_ADDON_ADDON_NOARMOR_BDT";		//У тебя нет никаких доспехов. Убирайся!
+	ADDON_WRONGARMOR			= "SVM_1_Addon_WrongArmor";				//Р­С‚Рѕ РЅРµ С‚РІРѕСЏ РѕРґРµР¶РґР°. РЇ РЅРµ Р±СѓРґСѓ СЃ С‚РѕР±РѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ.
+	ADDON_WRONGARMOR_SLD		= "SVM_1_ADDON_WRONGARMOR_SLD";			//Р§С‚Рѕ С‚С‹ РЅРѕСЃРёС€СЊ? РќР°РґРµРЅСЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёР»РёС‡РЅРѕРµ.
+	ADDON_WRONGARMOR_MIL		= "SVM_1_ADDON_WRONGARMOR_MIL";			//РўС‹ СЃРѕР»РґР°С‚! РќСѓ С‚Р°Рє РѕРґРµРІР°Р№СЃСЏ РєР°Рє СЃРѕР»РґР°С‚.
+	ADDON_WRONGARMOR_KDF		= "SVM_1_ADDON_WRONGARMOR_KDF";			//РўРІРѕСЏ РѕРґРµР¶РґР° РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅР°С€РµРјСѓ РѕСЂРґРµРЅСѓ. РџРѕР№РґРё Рё РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_NOARMOR_BDT			= "SVM_1_ADDON_ADDON_NOARMOR_BDT";		//РЈ С‚РµР±СЏ РЅРµС‚ РЅРёРєР°РєРёС… РґРѕСЃРїРµС…РѕРІ. РЈР±РёСЂР°Р№СЃСЏ!
 
-	ADDON_DIEBANDIT				= "SVM_1_ADDON_DIEBANDIT";				//Умри, грязный разбойник!
-	ADDON_DIRTYPIRATE			= "SVM_1_ADDON_DIRTYPIRATE";			//Пиратская мразь!
+	ADDON_DIEBANDIT				= "SVM_1_ADDON_DIEBANDIT";				//РЈРјСЂРё, РіСЂСЏР·РЅС‹Р№ СЂР°Р·Р±РѕР№РЅРёРє!
+	ADDON_DIRTYPIRATE			= "SVM_1_ADDON_DIRTYPIRATE";			//РџРёСЂР°С‚СЃРєР°СЏ РјСЂР°Р·СЊ!
 };
 
 INSTANCE SVM_2	(C_SVM)	
@@ -553,2677 +553,2677 @@ INSTANCE SVM_2	(C_SVM)
 instance SVM_3 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_3_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_3_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_3_Weather"					;//Какая паршивая погода!
+	MILGreetings				= 	"SVM_3_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_3_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_3_Weather"					;//РљР°РєР°СЏ РїР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_3_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_3_DieEnemy"					;//Я разорву тебя на куски!
-	DieMonster					=	"SVM_3_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_3_DirtyThief"					;//Грязный вор! Ну, подожди!
-	HandsOff					=	"SVM_3_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_3_SheepKiller"				;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_3_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_3_YouMurderer"				;//Убийца!
-	DieStupidBeast				=	"SVM_3_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_3_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_3_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_3_ThenIBeatYouOutOfHere"		;//Ты не хочешь идти? Хорошо!
-	WhatDidYouDoInThere			=	"SVM_3_WhatDidYouDoInThere"		;//Что тебе было нужно там?
-	WillYouStopFighting			=	"SVM_3_WillYouStopFighting"		;//Ты прекратишь?!
+	IGetYouStill				= 	"SVM_3_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_3_DieEnemy"					;//РЇ СЂР°Р·РѕСЂРІСѓ С‚РµР±СЏ РЅР° РєСѓСЃРєРё!
+	DieMonster					=	"SVM_3_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_3_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂ! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_3_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_3_SheepKiller"				;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_3_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_3_YouMurderer"				;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_3_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_3_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_3_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_3_ThenIBeatYouOutOfHere"		;//РўС‹ РЅРµ С…РѕС‡РµС€СЊ РёРґС‚Рё? РҐРѕСЂРѕС€Рѕ!
+	WhatDidYouDoInThere			=	"SVM_3_WhatDidYouDoInThere"		;//Р§С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ С‚Р°Рј?
+	WillYouStopFighting			=	"SVM_3_WillYouStopFighting"		;//РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_3_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_3_EnemyKilled"				;//Ты заслужил это, подонок!
-	MonsterKilled				=	"SVM_3_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_3_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_3_rumfummlerDown"				;//Держись подальше от того, что тебе не принадлежит!
-	SheepAttackerDown			=	"SVM_3_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_3_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_3_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_3_NeverHitMeAgain"			;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_3_YouBetterShouldHaveListened";//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_3_GetUpAndBeGone"				;//А теперь, убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_3_NeverEnterRoomAgain"		;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_3_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_3_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_3_EnemyKilled"				;//РўС‹ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ, РїРѕРґРѕРЅРѕРє!
+	MonsterKilled				=	"SVM_3_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_3_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_3_rumfummlerDown"				;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚!
+	SheepAttackerDown			=	"SVM_3_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_3_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_3_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_3_NeverHitMeAgain"			;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_3_YouBetterShouldHaveListened";//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_3_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_3_NeverEnterRoomAgain"		;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_3_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_3_SpareMe"					;//Не трогая меня!
-	RunAway						= 	"SVM_3_RunAway"					;//Ох, черт!!!
+	SpareMe						=	"SVM_3_SpareMe"					;//РќРµ С‚СЂРѕРіР°СЏ РјРµРЅСЏ!
+	RunAway						= 	"SVM_3_RunAway"					;//РћС…, С‡РµСЂС‚!!!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_3_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_3_Guards"					;//СТРАЖА!
-	Help						=	"SVM_3_Help"					;//Помогите!
+	Alarm						=	"SVM_3_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_3_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_3_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_3_GoodMonsterKill"		;//Отлично - одной мерзкой тварью меньше!
-	GoodKill					= 	"SVM_3_GoodKill"				;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_3_GoodMonsterKill"		;//РћС‚Р»РёС‡РЅРѕ - РѕРґРЅРѕР№ РјРµСЂР·РєРѕР№ С‚РІР°СЂСЊСЋ РјРµРЅСЊС€Рµ!
+	GoodKill					= 	"SVM_3_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_3_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_3_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_3_RunCoward"				;//Да! Беги со всех ног!
+	RunCoward					=	"SVM_3_RunCoward"				;//Р”Р°! Р‘РµРіРё СЃРѕ РІСЃРµС… РЅРѕРі!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_3_GetOutOfHere"			;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_3_WhyAreYouInHere"		;//Что тебе здесь нужно?! Уходи!
-	YesGoOutOfHere				= 	"SVM_3_YesGoOutOfHere"			;//Да, убирайся отсюда!
+	GetOutOfHere				=	"SVM_3_GetOutOfHere"			;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_3_WhyAreYouInHere"		;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?! РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_3_YesGoOutOfHere"			;//Р”Р°, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_3_WhatsThisSupposedToBe"	;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_3_YouDisturbedMySlumber"	;//(просыпается) Черт, в чем дело?
+	WhatsThisSupposedToBe		=	"SVM_3_WhatsThisSupposedToBe"	;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_3_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, РІ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_3_ITookYourGold"			;//Спасибо за золото, герой!
-	ShitNoGold					=	"SVM_3_ShitNoGold"				;//Ах ты сосунок, у тебя даже золота с собой нет!
-	ITakeYourWeapon				=	"SVM_3_ITakeYourWeapon"		;//Я думаю, лучше забрать твое оружие.
+	ITookYourGold				=	"SVM_3_ITookYourGold"			;//РЎРїР°СЃРёР±Рѕ Р·Р° Р·РѕР»РѕС‚Рѕ, РіРµСЂРѕР№!
+	ShitNoGold					=	"SVM_3_ShitNoGold"				;//РђС… С‚С‹ СЃРѕСЃСѓРЅРѕРє, Сѓ С‚РµР±СЏ РґР°Р¶Рµ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№ РЅРµС‚!
+	ITakeYourWeapon				=	"SVM_3_ITakeYourWeapon"		;//РЇ РґСѓРјР°СЋ, Р»СѓС‡С€Рµ Р·Р°Р±СЂР°С‚СЊ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_3_WhatAreYouDoing"		;//Смотри! Еще раз - и ты пожалеешь об этом.
+	WhatAreYouDoing				=	"SVM_3_WhatAreYouDoing"		;//РЎРјРѕС‚СЂРё! Р•С‰Рµ СЂР°Р· - Рё С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_3_LookingForTroubleAgain"	;//Тебе все еще мало?
-	StopMagic					=	"SVM_3_StopMagic"				;//Прекрати это магическое дерьмо!
-	ISaidStopMagic				=	"SVM_3_ISaidStopMagic"			;//Хочешь получить? Прекрати немедленно!!!
-	WeaponDown					=	"SVM_3_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_3_ISaidWeaponDown"		;//Ты уберешь это чертово оружие?!
-	WiseMove					=	"SVM_3_WiseMove"				;//Умный мальчик!
+	LookingForTroubleAgain		=	"SVM_3_LookingForTroubleAgain"	;//РўРµР±Рµ РІСЃРµ РµС‰Рµ РјР°Р»Рѕ?
+	StopMagic					=	"SVM_3_StopMagic"				;//РџСЂРµРєСЂР°С‚Рё СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ РґРµСЂСЊРјРѕ!
+	ISaidStopMagic				=	"SVM_3_ISaidStopMagic"			;//РҐРѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ? РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!!!
+	WeaponDown					=	"SVM_3_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_3_ISaidWeaponDown"		;//РўС‹ СѓР±РµСЂРµС€СЊ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РѕСЂСѓР¶РёРµ?!
+	WiseMove					=	"SVM_3_WiseMove"				;//РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_3_NextTimeYoureInForIt"	;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_3_OhMyHead"				;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_3_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_3_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_3_TheresAFight"			;//(страстно) Аах, драка!
-	OhMyGodItsAFight			=	"SVM_3_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой, драка!
-	GoodVictory					=	"SVM_3_GoodVictory"			;//(дьявольский смех) Ты показал ему, кто здесь главный!
-	NotBad						= 	"SVM_3_NotBad"					;//(одобрительно) Неплохо...
-	OhMyGodHesDown				=	"SVM_3_OhMyGodHesDown"			;//(себе под нос) Бог мой! Какая жестокость...
-	CheerFriend01				=	"SVM_3_CheerFriend01"			;//Задай ему!
-	CheerFriend02				=	"SVM_3_CheerFriend02"			;//Прекратите, вы!
-	CheerFriend03				=	"SVM_3_CheerFriend03"			;//Покажи ему!
-	Ooh01						=	"SVM_3_Ooh01"					;//Держись!
-	Ooh02						=	"SVM_3_Ooh02"					;//Осторожно!
-	Ooh03						=	"SVM_3_Ooh03"					;//Ох! Какой удар!
+	TheresAFight				=	"SVM_3_TheresAFight"			;//(СЃС‚СЂР°СЃС‚РЅРѕ) РђР°С…, РґСЂР°РєР°!
+	OhMyGodItsAFight			=	"SVM_3_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№, РґСЂР°РєР°!
+	GoodVictory					=	"SVM_3_GoodVictory"			;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РўС‹ РїРѕРєР°Р·Р°Р» РµРјСѓ, РєС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№!
+	NotBad						= 	"SVM_3_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РќРµРїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_3_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р‘РѕРі РјРѕР№! РљР°РєР°СЏ Р¶РµСЃС‚РѕРєРѕСЃС‚СЊ...
+	CheerFriend01				=	"SVM_3_CheerFriend01"			;//Р—Р°РґР°Р№ РµРјСѓ!
+	CheerFriend02				=	"SVM_3_CheerFriend02"			;//РџСЂРµРєСЂР°С‚РёС‚Рµ, РІС‹!
+	CheerFriend03				=	"SVM_3_CheerFriend03"			;//РџРѕРєР°Р¶Рё РµРјСѓ!
+	Ooh01						=	"SVM_3_Ooh01"					;//Р”РµСЂР¶РёСЃСЊ!
+	Ooh02						=	"SVM_3_Ooh02"					;//РћСЃС‚РѕСЂРѕР¶РЅРѕ!
+	Ooh03						=	"SVM_3_Ooh03"					;//РћС…! РљР°РєРѕР№ СѓРґР°СЂ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_3_WhatWasThat"				;//(себе под нос, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_3_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_3_GetOutOfMyBed"			;//Убирайся с моей кровати!
-	Awake						= "SVM_3_Awake"					;//(зевает)
+	GetOutOfMyBed				= "SVM_3_GetOutOfMyBed"			;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_3_Awake"					;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_3_ABS_COMMANDER"			;//Говорят, ты ходил к командующему и все уладил.
-	ABS_MONASTERY				= "SVM_3_ABS_MONASTERY"			;//Говорят, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM					= "SVM_3_ABS_FARM"					;//Говорят, ты ходил к Ли и все уладил.
-	ABS_GOOD					= "SVM_3_ABS_GOOD"					;//Это хорошо.
+	ABS_COMMANDER				= "SVM_3_ABS_COMMANDER"			;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY				= "SVM_3_ABS_MONASTERY"			;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM					= "SVM_3_ABS_FARM"					;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD					= "SVM_3_ABS_GOOD"					;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_3_SHEEPKILLER_CRIME"		;//Он убивает наших овец!
-	ATTACK_CRIME				= "SVM_3_ATTACK_CRIME"				;//Оставь меня в покое, грязное животное!
-	THEFT_CRIME					= "SVM_3_THEFT_CRIME"				;//Оставь меня в покое, презренный воришка!
+	SHEEPKILLER_CRIME			= "SVM_3_SHEEPKILLER_CRIME"		;//РћРЅ СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	ATTACK_CRIME				= "SVM_3_ATTACK_CRIME"				;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РіСЂСЏР·РЅРѕРµ Р¶РёРІРѕС‚РЅРѕРµ!
+	THEFT_CRIME					= "SVM_3_THEFT_CRIME"				;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РїСЂРµР·СЂРµРЅРЅС‹Р№ РІРѕСЂРёС€РєР°!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_3_PAL_CITY_CRIME"			;//Ты позоришь наш орден! Подожди, лорд Хаген узнает об этом!
-	MIL_CITY_CRIME				= "SVM_3_MIL_CITY_CRIME"			;//Ты позоришь городскую стражу! Подожди, лорд Андрэ узнает об этом!
-	CITY_CRIME					= "SVM_3_CITY_CRIME"				;//Подожди, лорд Андрэ узнает об этом.
+	PAL_CITY_CRIME				= "SVM_3_PAL_CITY_CRIME"			;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РЅР°С€ РѕСЂРґРµРЅ! РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РҐР°РіРµРЅ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	MIL_CITY_CRIME				= "SVM_3_MIL_CITY_CRIME"			;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	CITY_CRIME					= "SVM_3_CITY_CRIME"				;//РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј.
 	// -------------------------
-	MONA_CRIME					= "SVM_3_MONA_CRIME"				;//Подожди, отец Парлан узнает об этом!
-	FARM_CRIME					= "SVM_3_FARM_CRIME"				;//Подожди, Ли узнает об этом...
-	OC_CRIME					= "SVM_3_OC_CRIME"					;//Подожди, командующий Гаронд узнает об этом!
+	MONA_CRIME					= "SVM_3_MONA_CRIME"				;//РџРѕРґРѕР¶РґРё, РѕС‚РµС† РџР°СЂР»Р°РЅ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	FARM_CRIME					= "SVM_3_FARM_CRIME"				;//РџРѕРґРѕР¶РґРё, Р›Рё СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј...
+	OC_CRIME					= "SVM_3_OC_CRIME"					;//РџРѕРґРѕР¶РґРё, РєРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_3_TOUGHGUY_ATTACKLOST"		;//Хорошо, хорошо, ты лучший боец. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_3_TOUGHGUY_ATTACKWON"		;//Я думаю, что теперь ты прекрасно знаешь, кто из нас сильнее... Чего ты хочешь?
-	TOUGHGUY_PLAYERATTACK		= "SVM_3_TOUGHGUY_PLAYERATTACK"	;//Я думал, ты хочешь сразиться со мной. Ты передумал? Ты предпочитаешь БОЛТАТЬ, да? (смеется)
+	TOUGHGUY_ATTACKLOST			= "SVM_3_TOUGHGUY_ATTACKLOST"		;//РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, С‚С‹ Р»СѓС‡С€РёР№ Р±РѕРµС†. Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_3_TOUGHGUY_ATTACKWON"		;//РЇ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµРїРµСЂСЊ С‚С‹ РїСЂРµРєСЂР°СЃРЅРѕ Р·РЅР°РµС€СЊ, РєС‚Рѕ РёР· РЅР°СЃ СЃРёР»СЊРЅРµРµ... Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_PLAYERATTACK		= "SVM_3_TOUGHGUY_PLAYERATTACK"	;//РЇ РґСѓРјР°Р», С‚С‹ С…РѕС‡РµС€СЊ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№. РўС‹ РїРµСЂРµРґСѓРјР°Р»? РўС‹ РїСЂРµРґРїРѕС‡РёС‚Р°РµС€СЊ Р‘РћР›РўРђРўР¬, РґР°? (СЃРјРµРµС‚СЃСЏ)
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_3_GOLD_1000"				;//1000 золотых монет.
-	GOLD_950					= "SVM_3_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_3_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_3_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_3_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_3_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_3_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_3_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_3_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_3_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_3_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_3_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_3_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_3_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_3_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_3_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_3_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_3_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_3_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_3_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_3_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_3_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_3_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_3_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_3_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_3_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_3_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_3_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_3_GOLD_1000"				;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_3_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_3_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_3_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_3_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_3_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_3_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_3_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_3_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_3_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_3_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_3_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_3_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_3_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_3_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_3_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_3_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_3_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_3_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_3_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_3_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_3_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_3_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_3_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_3_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_3_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_3_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_3_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_3_Smalltalk01"				;//...ты действительно думаешь...
-	Smalltalk02					= "SVM_3_Smalltalk02"				;//...все возможно...
-	Smalltalk03					= "SVM_3_Smalltalk03"				;//...ему стоило лучше подумать...
-	Smalltalk04					= "SVM_3_Smalltalk04"				;//...как будто у меня без этого мало проблем...
-	Smalltalk05					= "SVM_3_Smalltalk05"				;//...кто сказал тебе это...
-	Smalltalk06					= "SVM_3_Smalltalk06"				;//...от этого будут одни проблемы...
-	Smalltalk07					= "SVM_3_Smalltalk07"				;//...ходят разные слухи...
-	Smalltalk08					= "SVM_3_Smalltalk08"				;//...никогда бы не подумал...
-	Smalltalk09					= "SVM_3_Smalltalk09"				;//...это все слухи...
-	Smalltalk10					= "SVM_3_Smalltalk10"				;//...с бы не доверял тому, кто сказал тебе это...
-	Smalltalk11					= "SVM_3_Smalltalk11"				;//...Возможно, я говорил тебе раньше...
-	Smalltalk12					= "SVM_3_Smalltalk12"				;//...никто никогда не спрашивает меня...
-	Smalltalk13					= "SVM_3_Smalltalk13"				;//...тебе должно быть жаль этого беднягу...
-	Smalltalk14					= "SVM_3_Smalltalk14"				;//...нет ничего нового...
-	Smalltalk15					= "SVM_3_Smalltalk15"				;//...это абсолютно очевидно...
-	Smalltalk16					= "SVM_3_Smalltalk16"				;//...тебе не стоит спрашивать меня об этом...
-	Smalltalk17					= "SVM_3_Smalltalk17"				;//...так может продолжаться вечность...
-	Smalltalk18					= "SVM_3_Smalltalk18"				;//...ты уже знаешь, что я думаю...
-	Smalltalk19					= "SVM_3_Smalltalk19"				;//...Я так и сказал...
-	Smalltalk20					= "SVM_3_Smalltalk20"				;//...ничто не изменит это...
-	Smalltalk21					= "SVM_3_Smalltalk21"				;//...и почему я не слышал об этом раньше...
-	Smalltalk22					= "SVM_3_Smalltalk22"				;//...посмотрим, что будет дальше...
-	Smalltalk23					= "SVM_3_Smalltalk23"				;//...некоторые проблемы решаются сами собой...
-	Smalltalk24					= "SVM_3_Smalltalk24"				;//...Я больше не хочу слышать об этом...
+	Smalltalk01					= "SVM_3_Smalltalk01"				;//...С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ...
+	Smalltalk02					= "SVM_3_Smalltalk02"				;//...РІСЃРµ РІРѕР·РјРѕР¶РЅРѕ...
+	Smalltalk03					= "SVM_3_Smalltalk03"				;//...РµРјСѓ СЃС‚РѕРёР»Рѕ Р»СѓС‡С€Рµ РїРѕРґСѓРјР°С‚СЊ...
+	Smalltalk04					= "SVM_3_Smalltalk04"				;//...РєР°Рє Р±СѓРґС‚Рѕ Сѓ РјРµРЅСЏ Р±РµР· СЌС‚РѕРіРѕ РјР°Р»Рѕ РїСЂРѕР±Р»РµРј...
+	Smalltalk05					= "SVM_3_Smalltalk05"				;//...РєС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ...
+	Smalltalk06					= "SVM_3_Smalltalk06"				;//...РѕС‚ СЌС‚РѕРіРѕ Р±СѓРґСѓС‚ РѕРґРЅРё РїСЂРѕР±Р»РµРјС‹...
+	Smalltalk07					= "SVM_3_Smalltalk07"				;//...С…РѕРґСЏС‚ СЂР°Р·РЅС‹Рµ СЃР»СѓС…Рё...
+	Smalltalk08					= "SVM_3_Smalltalk08"				;//...РЅРёРєРѕРіРґР° Р±С‹ РЅРµ РїРѕРґСѓРјР°Р»...
+	Smalltalk09					= "SVM_3_Smalltalk09"				;//...СЌС‚Рѕ РІСЃРµ СЃР»СѓС…Рё...
+	Smalltalk10					= "SVM_3_Smalltalk10"				;//...СЃ Р±С‹ РЅРµ РґРѕРІРµСЂСЏР» С‚РѕРјСѓ, РєС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ...
+	Smalltalk11					= "SVM_3_Smalltalk11"				;//...Р’РѕР·РјРѕР¶РЅРѕ, СЏ РіРѕРІРѕСЂРёР» С‚РµР±Рµ СЂР°РЅСЊС€Рµ...
+	Smalltalk12					= "SVM_3_Smalltalk12"				;//...РЅРёРєС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ СЃРїСЂР°С€РёРІР°РµС‚ РјРµРЅСЏ...
+	Smalltalk13					= "SVM_3_Smalltalk13"				;//...С‚РµР±Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р¶Р°Р»СЊ СЌС‚РѕРіРѕ Р±РµРґРЅСЏРіСѓ...
+	Smalltalk14					= "SVM_3_Smalltalk14"				;//...РЅРµС‚ РЅРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ...
+	Smalltalk15					= "SVM_3_Smalltalk15"				;//...СЌС‚Рѕ Р°Р±СЃРѕР»СЋС‚РЅРѕ РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk16					= "SVM_3_Smalltalk16"				;//...С‚РµР±Рµ РЅРµ СЃС‚РѕРёС‚ СЃРїСЂР°С€РёРІР°С‚СЊ РјРµРЅСЏ РѕР± СЌС‚РѕРј...
+	Smalltalk17					= "SVM_3_Smalltalk17"				;//...С‚Р°Рє РјРѕР¶РµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ РІРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk18					= "SVM_3_Smalltalk18"				;//...С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЏ РґСѓРјР°СЋ...
+	Smalltalk19					= "SVM_3_Smalltalk19"				;//...РЇ С‚Р°Рє Рё СЃРєР°Р·Р°Р»...
+	Smalltalk20					= "SVM_3_Smalltalk20"				;//...РЅРёС‡С‚Рѕ РЅРµ РёР·РјРµРЅРёС‚ СЌС‚Рѕ...
+	Smalltalk21					= "SVM_3_Smalltalk21"				;//...Рё РїРѕС‡РµРјСѓ СЏ РЅРµ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј СЂР°РЅСЊС€Рµ...
+	Smalltalk22					= "SVM_3_Smalltalk22"				;//...РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ Р±СѓРґРµС‚ РґР°Р»СЊС€Рµ...
+	Smalltalk23					= "SVM_3_Smalltalk23"				;//...РЅРµРєРѕС‚РѕСЂС‹Рµ РїСЂРѕР±Р»РµРјС‹ СЂРµС€Р°СЋС‚СЃСЏ СЃР°РјРё СЃРѕР±РѕР№...
+	Smalltalk24					= "SVM_3_Smalltalk24"				;//...РЇ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡Сѓ СЃР»С‹С€Р°С‚СЊ РѕР± СЌС‚РѕРј...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                    
-	Smalltalk25					= "SVM_3_Smalltalk25"				;//...он напился в стельку...
-	Smalltalk26					= "SVM_3_Smalltalk26"				;//...Я не позволю так обращаться с собой...
-	Smalltalk27					= "SVM_3_Smalltalk27"				;//...они все разбежались как крысы, и я остался совсем один...
+	Smalltalk25					= "SVM_3_Smalltalk25"				;//...РѕРЅ РЅР°РїРёР»СЃСЏ РІ СЃС‚РµР»СЊРєСѓ...
+	Smalltalk26					= "SVM_3_Smalltalk26"				;//...РЇ РЅРµ РїРѕР·РІРѕР»СЋ С‚Р°Рє РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ СЃРѕР±РѕР№...
+	Smalltalk27					= "SVM_3_Smalltalk27"				;//...РѕРЅРё РІСЃРµ СЂР°Р·Р±РµР¶Р°Р»РёСЃСЊ РєР°Рє РєСЂС‹СЃС‹, Рё СЏ РѕСЃС‚Р°Р»СЃСЏ СЃРѕРІСЃРµРј РѕРґРёРЅ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                    
-	Smalltalk28					= "SVM_3_Smalltalk28"				;//...так говорится в Писании...
-	Smalltalk29					= "SVM_3_Smalltalk29"				;//...Я всегда поступаю так, как завещал Иннос...
-	Smalltalk30					= "SVM_3_Smalltalk30"				;//...никто не смеет нарушать божественный порядок...
+	Smalltalk28					= "SVM_3_Smalltalk28"				;//...С‚Р°Рє РіРѕРІРѕСЂРёС‚СЃСЏ РІ РџРёСЃР°РЅРёРё...
+	Smalltalk29					= "SVM_3_Smalltalk29"				;//...РЇ РІСЃРµРіРґР° РїРѕСЃС‚СѓРїР°СЋ С‚Р°Рє, РєР°Рє Р·Р°РІРµС‰Р°Р» РРЅРЅРѕСЃ...
+	Smalltalk30					= "SVM_3_Smalltalk30"				;//...РЅРёРєС‚Рѕ РЅРµ СЃРјРµРµС‚ РЅР°СЂСѓС€Р°С‚СЊ Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ РїРѕСЂСЏРґРѕРє...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_3_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_3_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_3_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_3_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_3_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_3_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_3_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_3_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_3_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_3_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_3_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_3_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_3_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_3_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_3_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_3_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_3_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_3_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_3_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_3_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_3_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_3_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_3_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_3_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_3_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_3_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_3_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_3_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_3_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_3_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_3_TEMPEL_2_GALGEN"			;//Выйдя из храма и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_3_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_3_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_3_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_3_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_3_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_3_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_3_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_3_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_3_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_3_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_3_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_3_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_3_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_3_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_3_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_3_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР° Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_3_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_3_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_3_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_3_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_3_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_3_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_3_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_3_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_3_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_3_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_3_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_3_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_3_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_3_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_3_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_3_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_3_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_3_Addon_WrongArmor";				//Что это за одежда? Она совершенно тебе не подходит. Оставь меня в покое.
-	ADDON_WRONGARMOR_SLD		= "SVM_3_ADDON_WRONGARMOR_SLD";			//Если ты хочешь, чтобы с тобой говорили, оденься прилично.
-	ADDON_WRONGARMOR_MIL		= "SVM_3_ADDON_WRONGARMOR_MIL";			//Мы, солдаты, носим нашу форму с гордостью. Пойди, переоденься.
-	ADDON_WRONGARMOR_KDF		= "SVM_3_ADDON_WRONGARMOR_KDF";			//В нашем ордене все равны, поэтому мы носим одинаковую форму. Пойди и переоденься!
-	ADDON_NOARMOR_BDT			= "SVM_3_ADDON_ADDON_NOARMOR_BDT";		//Ты, похоже, пришел прямо из камеры. Для начала надень что-нибудь приличное.
+	ADDON_WRONGARMOR			= "SVM_3_Addon_WrongArmor";				//Р§С‚Рѕ СЌС‚Рѕ Р·Р° РѕРґРµР¶РґР°? РћРЅР° СЃРѕРІРµСЂС€РµРЅРЅРѕ С‚РµР±Рµ РЅРµ РїРѕРґС…РѕРґРёС‚. РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
+	ADDON_WRONGARMOR_SLD		= "SVM_3_ADDON_WRONGARMOR_SLD";			//Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЃ С‚РѕР±РѕР№ РіРѕРІРѕСЂРёР»Рё, РѕРґРµРЅСЊСЃСЏ РїСЂРёР»РёС‡РЅРѕ.
+	ADDON_WRONGARMOR_MIL		= "SVM_3_ADDON_WRONGARMOR_MIL";			//РњС‹, СЃРѕР»РґР°С‚С‹, РЅРѕСЃРёРј РЅР°С€Сѓ С„РѕСЂРјСѓ СЃ РіРѕСЂРґРѕСЃС‚СЊСЋ. РџРѕР№РґРё, РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_WRONGARMOR_KDF		= "SVM_3_ADDON_WRONGARMOR_KDF";			//Р’ РЅР°С€РµРј РѕСЂРґРµРЅРµ РІСЃРµ СЂР°РІРЅС‹, РїРѕСЌС‚РѕРјСѓ РјС‹ РЅРѕСЃРёРј РѕРґРёРЅР°РєРѕРІСѓСЋ С„РѕСЂРјСѓ. РџРѕР№РґРё Рё РїРµСЂРµРѕРґРµРЅСЊСЃСЏ!
+	ADDON_NOARMOR_BDT			= "SVM_3_ADDON_ADDON_NOARMOR_BDT";		//РўС‹, РїРѕС…РѕР¶Рµ, РїСЂРёС€РµР» РїСЂСЏРјРѕ РёР· РєР°РјРµСЂС‹. Р”Р»СЏ РЅР°С‡Р°Р»Р° РЅР°РґРµРЅСЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёР»РёС‡РЅРѕРµ.
 
-	ADDON_DIEBANDIT				= "SVM_3_ADDON_DIEBANDIT";				//ПОДОЙДИ СЮДА, РАЗБОЙНИК!
-	ADDON_DIRTYPIRATE			= "SVM_3_ADDON_DIRTYPIRATE";			//ПОДОЙДИ СЮДА, ПИРАТ!
+	ADDON_DIEBANDIT				= "SVM_3_ADDON_DIEBANDIT";				//РџРћР”РћР™Р”Р РЎР®Р”Рђ, Р РђР—Р‘РћР™РќРРљ!
+	ADDON_DIRTYPIRATE			= "SVM_3_ADDON_DIRTYPIRATE";			//РџРћР”РћР™Р”Р РЎР®Р”Рђ, РџРР РђРў!
 };
 
 instance SVM_4 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_4_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_4_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_4_Weather"						;//Какая паршивая погода!
+	MILGreetings				= 	"SVM_4_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_4_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_4_Weather"						;//РљР°РєР°СЏ РїР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_4_IGetYouStill"				;//Опять ТЫ!
-	DieEnemy					=	"SVM_4_DieEnemy"					;//Я разорву тебя на куски!
-	DieMonster					=	"SVM_4_DieMonster"					;//Еще одна тварь!
-	DirtyThief					=	"SVM_4_DirtyThief"					;//Ах ты подлый вор!
-	HandsOff					=	"SVM_4_HandsOff"					;//Руки прочь!
-	SheepKiller					=	"SVM_4_SheepKiller"					;//Эй! Оставь наших овец в покое!
-	SheepKillerMonster			=	"SVM_4_SheepKillerMonster"			;//Этот монстр ворует наших овец!
-	YouMurderer					=	"SVM_4_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_4_DieStupidBeast"				;//Что ЭТА тварь делает здесь?
-	YouDareHitMe				=	"SVM_4_YouDareHitMe"				;//Сейчас ты получишь!
-	YouAskedForIt				=	"SVM_4_YouAskedForIt"				;//Ты сам напросился.
-	ThenIBeatYouOutOfHere		=	"SVM_4_ThenIBeatYouOutOfHere"		;//Иногда слова не доходят...
-	WhatDidYouDoInThere			=	"SVM_4_WhatDidYouDoInThere"			;//Что тебе там было нужно, а?!
-	WillYouStopFighting			=	"SVM_4_WillYouStopFighting"			;//Прекрати немедленно!
+	IGetYouStill				= 	"SVM_4_IGetYouStill"				;//РћРїСЏС‚СЊ РўР«!
+	DieEnemy					=	"SVM_4_DieEnemy"					;//РЇ СЂР°Р·РѕСЂРІСѓ С‚РµР±СЏ РЅР° РєСѓСЃРєРё!
+	DieMonster					=	"SVM_4_DieMonster"					;//Р•С‰Рµ РѕРґРЅР° С‚РІР°СЂСЊ!
+	DirtyThief					=	"SVM_4_DirtyThief"					;//РђС… С‚С‹ РїРѕРґР»С‹Р№ РІРѕСЂ!
+	HandsOff					=	"SVM_4_HandsOff"					;//Р СѓРєРё РїСЂРѕС‡СЊ!
+	SheepKiller					=	"SVM_4_SheepKiller"					;//Р­Р№! РћСЃС‚Р°РІСЊ РЅР°С€РёС… РѕРІРµС† РІ РїРѕРєРѕРµ!
+	SheepKillerMonster			=	"SVM_4_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_4_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_4_DieStupidBeast"				;//Р§С‚Рѕ Р­РўРђ С‚РІР°СЂСЊ РґРµР»Р°РµС‚ Р·РґРµСЃСЊ?
+	YouDareHitMe				=	"SVM_4_YouDareHitMe"				;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	YouAskedForIt				=	"SVM_4_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ.
+	ThenIBeatYouOutOfHere		=	"SVM_4_ThenIBeatYouOutOfHere"		;//РРЅРѕРіРґР° СЃР»РѕРІР° РЅРµ РґРѕС…РѕРґСЏС‚...
+	WhatDidYouDoInThere			=	"SVM_4_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ С‚Р°Рј Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_4_WillYouStopFighting"			;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_4_KillEnemy"					;//Умри!
-	EnemyKilled					=	"SVM_4_EnemyKilled"					;//Тупой ублюдок...
-	MonsterKilled				=	"SVM_4_MonsterKilled"				;//Получай, грязная тварь!
-	ThiefDown					=	"SVM_4_ThiefDown"					;//Держись подальше от моих вещей - понял?
-	rumfummlerDown				=	"SVM_4_rumfummlerDown"				;//Впредь не распускай руки!
-	SheepAttackerDown			=	"SVM_4_SheepAttackerDown"			;//Впредь держись подальше от наших овец!
-	KillMurderer				=	"SVM_4_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_4_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_4_NeverHitMeAgain"				;//Даже и не пытайся!
-	YouBetterShouldHaveListened	=	"SVM_4_YouBetterShouldHaveListened"	;//Пусть это послужит тебе уроком.
-	GetUpAndBeGone				=	"SVM_4_GetUpAndBeGone"				;//Вставай и убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_4_NeverEnterRoomAgain"			;//Чтобы больше я тебя не видел там - понятно?
-	ThereIsNoFightingHere		=	"SVM_4_ThereIsNoFightingHere"		;//Здесь я задаю трепку, понял?
+	KillEnemy					= 	"SVM_4_KillEnemy"					;//РЈРјСЂРё!
+	EnemyKilled					=	"SVM_4_EnemyKilled"					;//РўСѓРїРѕР№ СѓР±Р»СЋРґРѕРє...
+	MonsterKilled				=	"SVM_4_MonsterKilled"				;//РџРѕР»СѓС‡Р°Р№, РіСЂСЏР·РЅР°СЏ С‚РІР°СЂСЊ!
+	ThiefDown					=	"SVM_4_ThiefDown"					;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РјРѕРёС… РІРµС‰РµР№ - РїРѕРЅСЏР»?
+	rumfummlerDown				=	"SVM_4_rumfummlerDown"				;//Р’РїСЂРµРґСЊ РЅРµ СЂР°СЃРїСѓСЃРєР°Р№ СЂСѓРєРё!
+	SheepAttackerDown			=	"SVM_4_SheepAttackerDown"			;//Р’РїСЂРµРґСЊ РґРµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅР°С€РёС… РѕРІРµС†!
+	KillMurderer				=	"SVM_4_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_4_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_4_NeverHitMeAgain"				;//Р”Р°Р¶Рµ Рё РЅРµ РїС‹С‚Р°Р№СЃСЏ!
+	YouBetterShouldHaveListened	=	"SVM_4_YouBetterShouldHaveListened"	;//РџСѓСЃС‚СЊ СЌС‚Рѕ РїРѕСЃР»СѓР¶РёС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј.
+	GetUpAndBeGone				=	"SVM_4_GetUpAndBeGone"				;//Р’СЃС‚Р°РІР°Р№ Рё СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_4_NeverEnterRoomAgain"			;//Р§С‚РѕР±С‹ Р±РѕР»СЊС€Рµ СЏ С‚РµР±СЏ РЅРµ РІРёРґРµР» С‚Р°Рј - РїРѕРЅСЏС‚РЅРѕ?
+	ThereIsNoFightingHere		=	"SVM_4_ThereIsNoFightingHere"		;//Р—РґРµСЃСЊ СЏ Р·Р°РґР°СЋ С‚СЂРµРїРєСѓ, РїРѕРЅСЏР»?
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_4_SpareMe"						;//Оставь меня в покое!
-	RunAway						= 	"SVM_4_RunAway"						;//Черт, я ухожу отсюда!
+	SpareMe						=	"SVM_4_SpareMe"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
+	RunAway						= 	"SVM_4_RunAway"						;//Р§РµСЂС‚, СЏ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_4_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_4_Guards"					;//СТРАЖА!
-	Help						=	"SVM_4_Help"					;//Помогите!
+	Alarm						=	"SVM_4_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_4_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_4_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_4_GoodMonsterKill"			;//Да! Вот как нужно разбираться с этими тварями!
-	GoodKill					= 	"SVM_4_GoodKill"				;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_4_GoodMonsterKill"			;//Р”Р°! Р’РѕС‚ РєР°Рє РЅСѓР¶РЅРѕ СЂР°Р·Р±РёСЂР°С‚СЊСЃСЏ СЃ СЌС‚РёРјРё С‚РІР°СЂСЏРјРё!
+	GoodKill					= 	"SVM_4_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_4_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_4_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_4_RunCoward"				;//Ты еще не знаешь, на что я способен!
+	RunCoward					=	"SVM_4_RunCoward"				;//РўС‹ РµС‰Рµ РЅРµ Р·РЅР°РµС€СЊ, РЅР° С‡С‚Рѕ СЏ СЃРїРѕСЃРѕР±РµРЅ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_4_GetOutOfHere"			;//Прочь!
-	WhyAreYouInHere				=	"SVM_4_WhyAreYouInHere"			;//Что тебе нужно здесь?!
-	YesGoOutOfHere				= 	"SVM_4_YesGoOutOfHere"			;//Прекрати!
+	GetOutOfHere				=	"SVM_4_GetOutOfHere"			;//РџСЂРѕС‡СЊ!
+	WhyAreYouInHere				=	"SVM_4_WhyAreYouInHere"			;//Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?!
+	YesGoOutOfHere				= 	"SVM_4_YesGoOutOfHere"			;//РџСЂРµРєСЂР°С‚Рё!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_4_WhatsThisSupposedToBe"	;//Что ты там ищешь?
-	YouDisturbedMySlumber		=	"SVM_4_YouDisturbedMySlumber"	;//(просыпается) В чем дело?
+	WhatsThisSupposedToBe		=	"SVM_4_WhatsThisSupposedToBe"	;//Р§С‚Рѕ С‚С‹ С‚Р°Рј РёС‰РµС€СЊ?
+	YouDisturbedMySlumber		=	"SVM_4_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р’ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_4_ITookYourGold"			;//Спасибо за золото, герой!
-	ShitNoGold					=	"SVM_4_ShitNoGold"				;//Ах ты сосунок, у тебя даже золота с собой нет!
-	ITakeYourWeapon				=	"SVM_4_ITakeYourWeapon"			;//Я думаю, лучше забрать твое оружие.
+	ITookYourGold				=	"SVM_4_ITookYourGold"			;//РЎРїР°СЃРёР±Рѕ Р·Р° Р·РѕР»РѕС‚Рѕ, РіРµСЂРѕР№!
+	ShitNoGold					=	"SVM_4_ShitNoGold"				;//РђС… С‚С‹ СЃРѕСЃСѓРЅРѕРє, Сѓ С‚РµР±СЏ РґР°Р¶Рµ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№ РЅРµС‚!
+	ITakeYourWeapon				=	"SVM_4_ITakeYourWeapon"			;//РЇ РґСѓРјР°СЋ, Р»СѓС‡С€Рµ Р·Р°Р±СЂР°С‚СЊ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_4_WhatAreYouDoing"			;//Смотри! Еще раз, и ты пожалеешь об этом.
+	WhatAreYouDoing				=	"SVM_4_WhatAreYouDoing"			;//РЎРјРѕС‚СЂРё! Р•С‰Рµ СЂР°Р·, Рё С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_4_LookingForTroubleAgain"	;//(агрессивно) Хочешь еще получить по морде?
+	LookingForTroubleAgain		=	"SVM_4_LookingForTroubleAgain"	;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РҐРѕС‡РµС€СЊ РµС‰Рµ РїРѕР»СѓС‡РёС‚СЊ РїРѕ РјРѕСЂРґРµ?
 																	 
-	StopMagic					=	"SVM_4_StopMagic"				;//Прекрати это магическое дерьмо немедленно!
-	ISaidStopMagic				=	"SVM_4_ISaidStopMagic"			;//Хочешь получить? Прекрати немедленно!!!
-	WeaponDown					=	"SVM_4_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_4_ISaidWeaponDown"			;//Ты уберешь это чертово оружие?!
-	WiseMove					=	"SVM_4_WiseMove"				;//Умный мальчик!
+	StopMagic					=	"SVM_4_StopMagic"				;//РџСЂРµРєСЂР°С‚Рё СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ РґРµСЂСЊРјРѕ РЅРµРјРµРґР»РµРЅРЅРѕ!
+	ISaidStopMagic				=	"SVM_4_ISaidStopMagic"			;//РҐРѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ? РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!!!
+	WeaponDown					=	"SVM_4_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_4_ISaidWeaponDown"			;//РўС‹ СѓР±РµСЂРµС€СЊ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РѕСЂСѓР¶РёРµ?!
+	WiseMove					=	"SVM_4_WiseMove"				;//РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_4_NextTimeYoureInForIt"	;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_4_OhMyHead"				;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_4_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_4_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_4_TheresAFight"			;//(страстно) Ах, драка!
-	OhMyGodItsAFight			=	"SVM_4_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой, драка!
-	GoodVictory					=	"SVM_4_GoodVictory"				;//(дьявольский смех) Ты показал ему, кто здесь главный!
-	NotBad						= 	"SVM_4_NotBad"					;//(одобрительно) Неплохо...
-	OhMyGodHesDown				=	"SVM_4_OhMyGodHesDown"			;//(себе под нос) Бог мой! Какая жестокость...
-	CheerFriend01				=	"SVM_4_CheerFriend01"			;//Да, задай ему!
-	CheerFriend02				=	"SVM_4_CheerFriend02"			;//Покажи ему!
-	CheerFriend03				=	"SVM_4_CheerFriend03"			;//Прикончи его!
-	Ooh01						=	"SVM_4_Ooh01"					;//Защищайся!
-	Ooh02						=	"SVM_4_Ooh02"					;//Вперед, ответь ему!
-	Ooh03						=	"SVM_4_Ooh03"					;//Охх! Это больно!
+	TheresAFight				=	"SVM_4_TheresAFight"			;//(СЃС‚СЂР°СЃС‚РЅРѕ) РђС…, РґСЂР°РєР°!
+	OhMyGodItsAFight			=	"SVM_4_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№, РґСЂР°РєР°!
+	GoodVictory					=	"SVM_4_GoodVictory"				;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РўС‹ РїРѕРєР°Р·Р°Р» РµРјСѓ, РєС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№!
+	NotBad						= 	"SVM_4_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РќРµРїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_4_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р‘РѕРі РјРѕР№! РљР°РєР°СЏ Р¶РµСЃС‚РѕРєРѕСЃС‚СЊ...
+	CheerFriend01				=	"SVM_4_CheerFriend01"			;//Р”Р°, Р·Р°РґР°Р№ РµРјСѓ!
+	CheerFriend02				=	"SVM_4_CheerFriend02"			;//РџРѕРєР°Р¶Рё РµРјСѓ!
+	CheerFriend03				=	"SVM_4_CheerFriend03"			;//РџСЂРёРєРѕРЅС‡Рё РµРіРѕ!
+	Ooh01						=	"SVM_4_Ooh01"					;//Р—Р°С‰РёС‰Р°Р№СЃСЏ!
+	Ooh02						=	"SVM_4_Ooh02"					;//Р’РїРµСЂРµРґ, РѕС‚РІРµС‚СЊ РµРјСѓ!
+	Ooh03						=	"SVM_4_Ooh03"					;//РћС…С…! Р­С‚Рѕ Р±РѕР»СЊРЅРѕ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_4_WhatWasThat"				;//(себе под нос, просыпаясь) Черт, что это было?!
+	WhatWasThat					= "SVM_4_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§РµСЂС‚, С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_4_GetOutOfMyBed"				;//Убирайся с моей кровати!
-	Awake						= "SVM_4_Awake"						;//(зевает)
+	GetOutOfMyBed				= "SVM_4_GetOutOfMyBed"				;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_4_Awake"						;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_4_ABS_COMMANDER"    ;//Я слышал, ты ходил к командующему и все уладил.
-	ABS_MONASTERY    = "SVM_4_ABS_MONASTERY"    ;//Говорят, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM       = "SVM_4_ABS_FARM"        ;//Я слышал, ты обратился к Ли и все уладил.
-	ABS_GOOD       = "SVM_4_ABS_GOOD"       ;//Хорошо.
+	ABS_COMMANDER     = "SVM_4_ABS_COMMANDER"    ;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY    = "SVM_4_ABS_MONASTERY"    ;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM       = "SVM_4_ABS_FARM"        ;//РЇ СЃР»С‹С€Р°Р», С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD       = "SVM_4_ABS_GOOD"       ;//РҐРѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_4_SHEEPKILLER_CRIME"   ;//Убийство овцы - это уже слишком! Проваливай!
-	ATTACK_CRIME     = "SVM_4_ATTACK_CRIME"    ;//Ты бандит - убирайся!
- 	THEFT_CRIME      = "SVM_4_THEFT_CRIME"    ;//Проклятый вор! - я не хочу видеть тебя!
+	SHEEPKILLER_CRIME   = "SVM_4_SHEEPKILLER_CRIME"   ;//РЈР±РёР№СЃС‚РІРѕ РѕРІС†С‹ - СЌС‚Рѕ СѓР¶Рµ СЃР»РёС€РєРѕРј! РџСЂРѕРІР°Р»РёРІР°Р№!
+	ATTACK_CRIME     = "SVM_4_ATTACK_CRIME"    ;//РўС‹ Р±Р°РЅРґРёС‚ - СѓР±РёСЂР°Р№СЃСЏ!
+ 	THEFT_CRIME      = "SVM_4_THEFT_CRIME"    ;//РџСЂРѕРєР»СЏС‚С‹Р№ РІРѕСЂ! - СЏ РЅРµ С…РѕС‡Сѓ РІРёРґРµС‚СЊ С‚РµР±СЏ!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_4_PAL_CITY_CRIME"   ;//Я не ожидал такого от паладина! Лорд Хаген будет недоволен.
- 	MIL_CITY_CRIME     = "SVM_4_MIL_CITY_CRIME"   ;//Как такой как ты вообще мог попасть в городскую стражу? Лорд Андрэ заставит тебя заплатить за это!
- 	CITY_CRIME       = "SVM_4_CITY_CRIME"    ;//Лорд Андрэ узнает о твоем поведении!
+ 	PAL_CITY_CRIME     = "SVM_4_PAL_CITY_CRIME"   ;//РЇ РЅРµ РѕР¶РёРґР°Р» С‚Р°РєРѕРіРѕ РѕС‚ РїР°Р»Р°РґРёРЅР°! Р›РѕСЂРґ РҐР°РіРµРЅ Р±СѓРґРµС‚ РЅРµРґРѕРІРѕР»РµРЅ.
+ 	MIL_CITY_CRIME     = "SVM_4_MIL_CITY_CRIME"   ;//РљР°Рє С‚Р°РєРѕР№ РєР°Рє С‚С‹ РІРѕРѕР±С‰Рµ РјРѕРі РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ? Р›РѕСЂРґ РђРЅРґСЂСЌ Р·Р°СЃС‚Р°РІРёС‚ С‚РµР±СЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ!
+ 	CITY_CRIME       = "SVM_4_CITY_CRIME"    ;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РІРѕРµРј РїРѕРІРµРґРµРЅРёРё!
 	// -------------------------
-	MONA_CRIME       = "SVM_4_MONA_CRIME"    ;//Отец Парлан будет в ярости, узнав о твоем кощунстве!
-	FARM_CRIME       = "SVM_4_FARM_CRIME"    ;//Ли не простит тебе это!
-	OC_CRIME       = "SVM_4_OC_CRIME"     ;//Командующий Гаронд узнает про это - и ты ответишь за все!
+	MONA_CRIME       = "SVM_4_MONA_CRIME"    ;//РћС‚РµС† РџР°СЂР»Р°РЅ Р±СѓРґРµС‚ РІ СЏСЂРѕСЃС‚Рё, СѓР·РЅР°РІ Рѕ С‚РІРѕРµРј РєРѕС‰СѓРЅСЃС‚РІРµ!
+	FARM_CRIME       = "SVM_4_FARM_CRIME"    ;//Р›Рё РЅРµ РїСЂРѕСЃС‚РёС‚ С‚РµР±Рµ СЌС‚Рѕ!
+	OC_CRIME       = "SVM_4_OC_CRIME"     ;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ СѓР·РЅР°РµС‚ РїСЂРѕ СЌС‚Рѕ - Рё С‚С‹ РѕС‚РІРµС‚РёС€СЊ Р·Р° РІСЃРµ!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_4_TOUGHGUY_ATTACKLOST"		;//Ну и удар у тебя... Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_4_TOUGHGUY_ATTACKWON"		;//Есть еще вопросы?
-	TOUGHGUY_PLAYERATTACK		= "SVM_4_TOUGHGUY_PLAYERATTACK"		;//Ты опять!
+	TOUGHGUY_ATTACKLOST			= "SVM_4_TOUGHGUY_ATTACKLOST"		;//РќСѓ Рё СѓРґР°СЂ Сѓ С‚РµР±СЏ... Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_4_TOUGHGUY_ATTACKWON"		;//Р•СЃС‚СЊ РµС‰Рµ РІРѕРїСЂРѕСЃС‹?
+	TOUGHGUY_PLAYERATTACK		= "SVM_4_TOUGHGUY_PLAYERATTACK"		;//РўС‹ РѕРїСЏС‚СЊ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_4_GOLD_1000"					;//1000 золотых монет.
-	GOLD_950					= "SVM_4_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_4_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_4_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_4_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_4_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_4_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_4_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_4_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_4_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_4_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_4_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_4_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_4_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_4_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_4_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_4_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_4_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_4_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_4_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_4_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_4_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_4_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_4_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_4_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_4_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_4_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_4_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_4_GOLD_1000"					;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_4_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_4_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_4_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_4_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_4_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_4_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_4_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_4_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_4_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_4_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_4_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_4_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_4_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_4_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_4_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_4_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_4_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_4_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_4_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_4_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_4_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_4_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_4_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_4_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_4_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_4_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_4_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_4_Smalltalk01"				;//...это действительно правда...
-	Smalltalk02					= "SVM_4_Smalltalk02"				;//...я слышал другое...
-	Smalltalk03					= "SVM_4_Smalltalk03"				;//...не говори, что ты не знал этого...
-	Smalltalk04					= "SVM_4_Smalltalk04"				;//...в наши дни даже и не знаешь, кому верить...
-	Smalltalk05					= "SVM_4_Smalltalk05"				;//...это все сплетни...
-	Smalltalk06					= "SVM_4_Smalltalk06"				;//...Я сам не лучше...
-	Smalltalk07					= "SVM_4_Smalltalk07"				;//...и почему это меня не удивляет...
-	Smalltalk08					= "SVM_4_Smalltalk08"				;//...это не мои проблемы...
-	Smalltalk09					= "SVM_4_Smalltalk09"				;//...ты действительно веришь в это...
-	Smalltalk10					= "SVM_4_Smalltalk10"				;//...никто ничему не учится у меня...
-	Smalltalk11					= "SVM_4_Smalltalk11"				;//...это было всегда очевидно...
-	Smalltalk12					= "SVM_4_Smalltalk12"				;//...он слушал не тех людей...
-	Smalltalk13					= "SVM_4_Smalltalk13"				;//...если он этого не видит, я ничем не могу помочь...
-	Smalltalk14					= "SVM_4_Smalltalk14"				;//...Это не новость...
-	Smalltalk15					= "SVM_4_Smalltalk15"				;//...он сам бы никогда не додумался...
-	Smalltalk16					= "SVM_4_Smalltalk16"				;//...это давно известно...
-	Smalltalk17					= "SVM_4_Smalltalk17"				;//...это плохой бизнес...
-	Smalltalk18					= "SVM_4_Smalltalk18"				;//...Я бы сделал по-другому...
-	Smalltalk19					= "SVM_4_Smalltalk19"				;//...Я полностью с тобой согласен...
-	Smalltalk20					= "SVM_4_Smalltalk20"				;//...если все будет по другому...
-	Smalltalk21					= "SVM_4_Smalltalk21"				;//...Я даже не знал об этом...
-	Smalltalk22					= "SVM_4_Smalltalk22"				;//...с этим ничего не поделать...
-	Smalltalk23					= "SVM_4_Smalltalk23"				;//...это не удивляет меня...
-	Smalltalk24					= "SVM_4_Smalltalk24"				;//...но он настаивал, что ему лучше знать...
+	Smalltalk01					= "SVM_4_Smalltalk01"				;//...СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂР°РІРґР°...
+	Smalltalk02					= "SVM_4_Smalltalk02"				;//...СЏ СЃР»С‹С€Р°Р» РґСЂСѓРіРѕРµ...
+	Smalltalk03					= "SVM_4_Smalltalk03"				;//...РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ РЅРµ Р·РЅР°Р» СЌС‚РѕРіРѕ...
+	Smalltalk04					= "SVM_4_Smalltalk04"				;//...РІ РЅР°С€Рё РґРЅРё РґР°Р¶Рµ Рё РЅРµ Р·РЅР°РµС€СЊ, РєРѕРјСѓ РІРµСЂРёС‚СЊ...
+	Smalltalk05					= "SVM_4_Smalltalk05"				;//...СЌС‚Рѕ РІСЃРµ СЃРїР»РµС‚РЅРё...
+	Smalltalk06					= "SVM_4_Smalltalk06"				;//...РЇ СЃР°Рј РЅРµ Р»СѓС‡С€Рµ...
+	Smalltalk07					= "SVM_4_Smalltalk07"				;//...Рё РїРѕС‡РµРјСѓ СЌС‚Рѕ РјРµРЅСЏ РЅРµ СѓРґРёРІР»СЏРµС‚...
+	Smalltalk08					= "SVM_4_Smalltalk08"				;//...СЌС‚Рѕ РЅРµ РјРѕРё РїСЂРѕР±Р»РµРјС‹...
+	Smalltalk09					= "SVM_4_Smalltalk09"				;//...С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РІРµСЂРёС€СЊ РІ СЌС‚Рѕ...
+	Smalltalk10					= "SVM_4_Smalltalk10"				;//...РЅРёРєС‚Рѕ РЅРёС‡РµРјСѓ РЅРµ СѓС‡РёС‚СЃСЏ Сѓ РјРµРЅСЏ...
+	Smalltalk11					= "SVM_4_Smalltalk11"				;//...СЌС‚Рѕ Р±С‹Р»Рѕ РІСЃРµРіРґР° РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk12					= "SVM_4_Smalltalk12"				;//...РѕРЅ СЃР»СѓС€Р°Р» РЅРµ С‚РµС… Р»СЋРґРµР№...
+	Smalltalk13					= "SVM_4_Smalltalk13"				;//...РµСЃР»Рё РѕРЅ СЌС‚РѕРіРѕ РЅРµ РІРёРґРёС‚, СЏ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ...
+	Smalltalk14					= "SVM_4_Smalltalk14"				;//...Р­С‚Рѕ РЅРµ РЅРѕРІРѕСЃС‚СЊ...
+	Smalltalk15					= "SVM_4_Smalltalk15"				;//...РѕРЅ СЃР°Рј Р±С‹ РЅРёРєРѕРіРґР° РЅРµ РґРѕРґСѓРјР°Р»СЃСЏ...
+	Smalltalk16					= "SVM_4_Smalltalk16"				;//...СЌС‚Рѕ РґР°РІРЅРѕ РёР·РІРµСЃС‚РЅРѕ...
+	Smalltalk17					= "SVM_4_Smalltalk17"				;//...СЌС‚Рѕ РїР»РѕС…РѕР№ Р±РёР·РЅРµСЃ...
+	Smalltalk18					= "SVM_4_Smalltalk18"				;//...РЇ Р±С‹ СЃРґРµР»Р°Р» РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk19					= "SVM_4_Smalltalk19"				;//...РЇ РїРѕР»РЅРѕСЃС‚СЊСЋ СЃ С‚РѕР±РѕР№ СЃРѕРіР»Р°СЃРµРЅ...
+	Smalltalk20					= "SVM_4_Smalltalk20"				;//...РµСЃР»Рё РІСЃРµ Р±СѓРґРµС‚ РїРѕ РґСЂСѓРіРѕРјСѓ...
+	Smalltalk21					= "SVM_4_Smalltalk21"				;//...РЇ РґР°Р¶Рµ РЅРµ Р·РЅР°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk22					= "SVM_4_Smalltalk22"				;//...СЃ СЌС‚РёРј РЅРёС‡РµРіРѕ РЅРµ РїРѕРґРµР»Р°С‚СЊ...
+	Smalltalk23					= "SVM_4_Smalltalk23"				;//...СЌС‚Рѕ РЅРµ СѓРґРёРІР»СЏРµС‚ РјРµРЅСЏ...
+	Smalltalk24					= "SVM_4_Smalltalk24"				;//...РЅРѕ РѕРЅ РЅР°СЃС‚Р°РёРІР°Р», С‡С‚Рѕ РµРјСѓ Р»СѓС‡С€Рµ Р·РЅР°С‚СЊ...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                    
-	Smalltalk25					= "SVM_4_Smalltalk25"				;//...важна только сила, так что не надо...
-	Smalltalk26					= "SVM_4_Smalltalk26"				;//...он даже меч толком держать не умел...
-	Smalltalk27					= "SVM_4_Smalltalk27"				;//...да, он действительно сказал это...
+	Smalltalk25					= "SVM_4_Smalltalk25"				;//...РІР°Р¶РЅР° С‚РѕР»СЊРєРѕ СЃРёР»Р°, С‚Р°Рє С‡С‚Рѕ РЅРµ РЅР°РґРѕ...
+	Smalltalk26					= "SVM_4_Smalltalk26"				;//...РѕРЅ РґР°Р¶Рµ РјРµС‡ С‚РѕР»РєРѕРј РґРµСЂР¶Р°С‚СЊ РЅРµ СѓРјРµР»...
+	Smalltalk27					= "SVM_4_Smalltalk27"				;//...РґР°, РѕРЅ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРєР°Р·Р°Р» СЌС‚Рѕ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                    
-	Smalltalk28					= "SVM_4_Smalltalk28"				;//...кто-то должен заплатить за это...
-	Smalltalk29					= "SVM_4_Smalltalk29"				;//...Иннос просвещает тех, кто признает его мудрость...
-	Smalltalk30					= "SVM_4_Smalltalk30"				;//...правосудие восторжествует...
+	Smalltalk28					= "SVM_4_Smalltalk28"				;//...РєС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ...
+	Smalltalk29					= "SVM_4_Smalltalk29"				;//...РРЅРЅРѕСЃ РїСЂРѕСЃРІРµС‰Р°РµС‚ С‚РµС…, РєС‚Рѕ РїСЂРёР·РЅР°РµС‚ РµРіРѕ РјСѓРґСЂРѕСЃС‚СЊ...
+	Smalltalk30					= "SVM_4_Smalltalk30"				;//...РїСЂР°РІРѕСЃСѓРґРёРµ РІРѕСЃС‚РѕСЂР¶РµСЃС‚РІСѓРµС‚...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_4_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_4_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_4_NoLearnYoureBetter"		;//Мне больше нечему учить тебя. Ты слишком хорош.
-	YouLearnedSomething			= "SVM_4_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_4_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_4_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_4_NoLearnYoureBetter"		;//РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_4_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_4_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_4_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_4_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_4_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_4_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_4_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_4_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_4_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_4_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_4_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_4_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_4_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_4_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_4_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_4_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_4_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_4_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_4_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_4_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_4_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_4_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_4_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_4_TEMPEL_2_GALGEN"			;//Выйдя из храма и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_4_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_4_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_4_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_4_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_4_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_4_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_4_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_4_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_4_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_4_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_4_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_4_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_4_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_4_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_4_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_4_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР° Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_4_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_4_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_4_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_4_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_4_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_4_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_4_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_4_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_4_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_4_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_4_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_4_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_4_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_4_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_4_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_4_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_4_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_4_Addon_WrongArmor";				//Сначала оденься нормально, тогда мы поговорим.
-	ADDON_WRONGARMOR_SLD		= "SVM_4_ADDON_WRONGARMOR_SLD";			//Лучше надень доспехи, если хочешь поговорить со мной.
-	ADDON_WRONGARMOR_MIL		= "SVM_4_ADDON_WRONGARMOR_MIL";			//Тебе что, не выдали доспехи? Тогда пойди и найди их.
-	ADDON_WRONGARMOR_KDF		= "SVM_4_ADDON_WRONGARMOR_KDF";			//Где твоя одежда? Пойди и переоденься. Только тогда я поговорю с тобой.
-	ADDON_NOARMOR_BDT			= "SVM_4_ADDON_ADDON_NOARMOR_BDT";		//Что ты, нищий бродяга, что ли? Возвращайся, когда купишь себе доспехи.
+	ADDON_WRONGARMOR			= "SVM_4_Addon_WrongArmor";				//РЎРЅР°С‡Р°Р»Р° РѕРґРµРЅСЊСЃСЏ РЅРѕСЂРјР°Р»СЊРЅРѕ, С‚РѕРіРґР° РјС‹ РїРѕРіРѕРІРѕСЂРёРј.
+	ADDON_WRONGARMOR_SLD		= "SVM_4_ADDON_WRONGARMOR_SLD";			//Р›СѓС‡С€Рµ РЅР°РґРµРЅСЊ РґРѕСЃРїРµС…Рё, РµСЃР»Рё С…РѕС‡РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№.
+	ADDON_WRONGARMOR_MIL		= "SVM_4_ADDON_WRONGARMOR_MIL";			//РўРµР±Рµ С‡С‚Рѕ, РЅРµ РІС‹РґР°Р»Рё РґРѕСЃРїРµС…Рё? РўРѕРіРґР° РїРѕР№РґРё Рё РЅР°Р№РґРё РёС….
+	ADDON_WRONGARMOR_KDF		= "SVM_4_ADDON_WRONGARMOR_KDF";			//Р“РґРµ С‚РІРѕСЏ РѕРґРµР¶РґР°? РџРѕР№РґРё Рё РїРµСЂРµРѕРґРµРЅСЊСЃСЏ. РўРѕР»СЊРєРѕ С‚РѕРіРґР° СЏ РїРѕРіРѕРІРѕСЂСЋ СЃ С‚РѕР±РѕР№.
+	ADDON_NOARMOR_BDT			= "SVM_4_ADDON_ADDON_NOARMOR_BDT";		//Р§С‚Рѕ С‚С‹, РЅРёС‰РёР№ Р±СЂРѕРґСЏРіР°, С‡С‚Рѕ Р»Рё? Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° РєСѓРїРёС€СЊ СЃРµР±Рµ РґРѕСЃРїРµС…Рё.
 
-	ADDON_DIEBANDIT				= "SVM_4_ADDON_DIEBANDIT";				//Еще один бандит!
-	ADDON_DIRTYPIRATE			= "SVM_4_ADDON_DIRTYPIRATE";			//Ах ты, грязный пират!
+	ADDON_DIEBANDIT				= "SVM_4_ADDON_DIEBANDIT";				//Р•С‰Рµ РѕРґРёРЅ Р±Р°РЅРґРёС‚!
+	ADDON_DIRTYPIRATE			= "SVM_4_ADDON_DIRTYPIRATE";			//РђС… С‚С‹, РіСЂСЏР·РЅС‹Р№ РїРёСЂР°С‚!
 };
 
 instance SVM_5 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_5_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_5_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_5_Weather"						;//Какая мерзкая погода!
+	MILGreetings				= 	"SVM_5_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_5_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_5_Weather"						;//РљР°РєР°СЏ РјРµСЂР·РєР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_5_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_5_DieEnemy"					;//Сейчас ты получишь!
-	DieMonster					=	"SVM_5_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_5_DirtyThief"					;//Грязный воришка! Ну, подожди!
-	HandsOff					=	"SVM_5_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_5_SheepKiller"					;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_5_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_5_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_5_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_5_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_5_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_5_ThenIBeatYouOutOfHere"		;//Сейчас я вышвырну тебя отсюда!
-	WhatDidYouDoInThere			=	"SVM_5_WhatDidYouDoInThere"			;//Что тебе здесь надо, а?!
-	WillYouStopFighting			=	"SVM_5_WillYouStopFighting"			;//Ты прекратишь?!
+	IGetYouStill				= 	"SVM_5_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_5_DieEnemy"					;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	DieMonster					=	"SVM_5_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_5_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂРёС€РєР°! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_5_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_5_SheepKiller"					;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_5_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_5_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_5_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_5_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_5_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_5_ThenIBeatYouOutOfHere"		;//РЎРµР№С‡Р°СЃ СЏ РІС‹С€РІС‹СЂРЅСѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°!
+	WhatDidYouDoInThere			=	"SVM_5_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅР°РґРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_5_WillYouStopFighting"			;//РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_5_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_5_EnemyKilled"					;//Получил, подонок?!
-	MonsterKilled				=	"SVM_5_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_5_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_5_rumfummlerDown"				;//Я думаю, это научит тебя держаться подальше от того, что тебе не принадлежит!
-	SheepAttackerDown			=	"SVM_5_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_5_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_5_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_5_NeverHitMeAgain"				;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_5_YouBetterShouldHaveListened"	;//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_5_GetUpAndBeGone"				;//А теперь убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_5_NeverEnterRoomAgain"			;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_5_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_5_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_5_EnemyKilled"					;//РџРѕР»СѓС‡РёР», РїРѕРґРѕРЅРѕРє?!
+	MonsterKilled				=	"SVM_5_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_5_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_5_rumfummlerDown"				;//РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РЅР°СѓС‡РёС‚ С‚РµР±СЏ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚!
+	SheepAttackerDown			=	"SVM_5_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_5_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_5_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_5_NeverHitMeAgain"				;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_5_YouBetterShouldHaveListened"	;//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_5_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_5_NeverEnterRoomAgain"			;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_5_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_5_SpareMe"						;//Оставь меня в покое!
-	RunAway						= 	"SVM_5_RunAway"						;//Черт, я ухожу отсюда!
+	SpareMe						=	"SVM_5_SpareMe"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
+	RunAway						= 	"SVM_5_RunAway"						;//Р§РµСЂС‚, СЏ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_5_Alarm"						;//ТРЕВОГА!
-	Guards						=	"SVM_5_Guards"						;//СТРАЖА!
-	Help						=	"SVM_5_Help"						;//Помогите!
+	Alarm						=	"SVM_5_Alarm"						;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_5_Guards"						;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_5_Help"						;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_5_GoodMonsterKill"				;//Отлично - одной мерзкой тварью меньше!
-	GoodKill					= 	"SVM_5_GoodKill"					;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_5_GoodMonsterKill"				;//РћС‚Р»РёС‡РЅРѕ - РѕРґРЅРѕР№ РјРµСЂР·РєРѕР№ С‚РІР°СЂСЊСЋ РјРµРЅСЊС€Рµ!
+	GoodKill					= 	"SVM_5_GoodKill"					;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_5_NOTNOW"						;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_5_NOTNOW"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_5_RunCoward"					;//Прекрати немедленно, подонок!
+	RunCoward					=	"SVM_5_RunCoward"					;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ, РїРѕРґРѕРЅРѕРє!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_5_GetOutOfHere"				;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_5_WhyAreYouInHere"				;//Что тебе здесь нужно?! Уходи!
-	YesGoOutOfHere				= 	"SVM_5_YesGoOutOfHere"				;//Да, убирайся отсюда!
+	GetOutOfHere				=	"SVM_5_GetOutOfHere"				;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_5_WhyAreYouInHere"				;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?! РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_5_YesGoOutOfHere"				;//Р”Р°, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_5_WhatsThisSupposedToBe"		;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_5_YouDisturbedMySlumber"		;//(просыпается) Черт, в чем дело?
+	WhatsThisSupposedToBe		=	"SVM_5_WhatsThisSupposedToBe"		;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_5_YouDisturbedMySlumber"		;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, РІ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_5_ITookYourGold"				;//Золото! Хм, золото никогда не помешает...
-	ShitNoGold					=	"SVM_5_ShitNoGold"					;//Да у тебя даже нет золота с собой?
-	ITakeYourWeapon				=	"SVM_5_ITakeYourWeapon"				;//Я, пожалуй, заберу твое оружие, так будет безопаснее для тебя же.
+	ITookYourGold				=	"SVM_5_ITookYourGold"				;//Р—РѕР»РѕС‚Рѕ! РҐРј, Р·РѕР»РѕС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РїРѕРјРµС€Р°РµС‚...
+	ShitNoGold					=	"SVM_5_ShitNoGold"					;//Р”Р° Сѓ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№?
+	ITakeYourWeapon				=	"SVM_5_ITakeYourWeapon"				;//РЇ, РїРѕР¶Р°Р»СѓР№, Р·Р°Р±РµСЂСѓ С‚РІРѕРµ РѕСЂСѓР¶РёРµ, С‚Р°Рє Р±СѓРґРµС‚ Р±РµР·РѕРїР°СЃРЅРµРµ РґР»СЏ С‚РµР±СЏ Р¶Рµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_5_WhatAreYouDoing"				;//Эй! Осторожно!
+	WhatAreYouDoing				=	"SVM_5_WhatAreYouDoing"				;//Р­Р№! РћСЃС‚РѕСЂРѕР¶РЅРѕ!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_5_LookingForTroubleAgain"		;//(агрессивно) Ты мало получил?
-	StopMagic					=	"SVM_5_StopMagic"					;//Держись подальше от меня с этой магией!
-	ISaidStopMagic				=	"SVM_5_ISaidStopMagic"				;//Убери эту магию! Ты что, оглох?!
-	WeaponDown					=	"SVM_5_WeaponDown"					;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_5_ISaidWeaponDown"				;//Ты что, оглох? Я сказал: Убери оружие!
-	WiseMove					=	"SVM_5_WiseMove"					;//Видишь, это было не так уж сложно.
+	LookingForTroubleAgain		=	"SVM_5_LookingForTroubleAgain"		;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РўС‹ РјР°Р»Рѕ РїРѕР»СѓС‡РёР»?
+	StopMagic					=	"SVM_5_StopMagic"					;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РјРµРЅСЏ СЃ СЌС‚РѕР№ РјР°РіРёРµР№!
+	ISaidStopMagic				=	"SVM_5_ISaidStopMagic"				;//РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ! РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…?!
+	WeaponDown					=	"SVM_5_WeaponDown"					;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_5_ISaidWeaponDown"				;//РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…? РЇ СЃРєР°Р·Р°Р»: РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	WiseMove					=	"SVM_5_WiseMove"					;//Р’РёРґРёС€СЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ.
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_5_NextTimeYoureInForIt"		;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_5_OhMyHead"					;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_5_NextTimeYoureInForIt"		;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_5_OhMyHead"					;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_5_TheresAFight"				;//(страстно) Сейчас повеселимся!
-	OhMyGodItsAFight			=	"SVM_5_OhMyGodItsAFight"			;//(потрясенно) Они лупят друг друга так, что даже страшно...
-	GoodVictory					=	"SVM_5_GoodVictory"					;//(дьявольский смех) Он заслужил это!
-	NotBad						= 	"SVM_5_NotBad"						;//(одобрительно) Совсем не плохо...
-	OhMyGodHesDown				=	"SVM_5_OhMyGodHesDown"				;//(себе под нос) Какой он жестокий...
-	CheerFriend01				=	"SVM_5_CheerFriend01"				;//Да, как раз то, что нужно!
-	CheerFriend02				=	"SVM_5_CheerFriend02"				;//Чего ты ждешь?
-	CheerFriend03				=	"SVM_5_CheerFriend03"				;//Вот так!
-	Ooh01						=	"SVM_5_Ooh01"						;//Не нарушай закон!
-	Ooh02						=	"SVM_5_Ooh02"						;//Покажи ему, кто тут главный!
-	Ooh03						=	"SVM_5_Ooh03"						;//Черт побери!
+	TheresAFight				=	"SVM_5_TheresAFight"				;//(СЃС‚СЂР°СЃС‚РЅРѕ) РЎРµР№С‡Р°СЃ РїРѕРІРµСЃРµР»РёРјСЃСЏ!
+	OhMyGodItsAFight			=	"SVM_5_OhMyGodItsAFight"			;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћРЅРё Р»СѓРїСЏС‚ РґСЂСѓРі РґСЂСѓРіР° С‚Р°Рє, С‡С‚Рѕ РґР°Р¶Рµ СЃС‚СЂР°С€РЅРѕ...
+	GoodVictory					=	"SVM_5_GoodVictory"					;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РћРЅ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ!
+	NotBad						= 	"SVM_5_NotBad"						;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РЎРѕРІСЃРµРј РЅРµ РїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_5_OhMyGodHesDown"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РљР°РєРѕР№ РѕРЅ Р¶РµСЃС‚РѕРєРёР№...
+	CheerFriend01				=	"SVM_5_CheerFriend01"				;//Р”Р°, РєР°Рє СЂР°Р· С‚Рѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ!
+	CheerFriend02				=	"SVM_5_CheerFriend02"				;//Р§РµРіРѕ С‚С‹ Р¶РґРµС€СЊ?
+	CheerFriend03				=	"SVM_5_CheerFriend03"				;//Р’РѕС‚ С‚Р°Рє!
+	Ooh01						=	"SVM_5_Ooh01"						;//РќРµ РЅР°СЂСѓС€Р°Р№ Р·Р°РєРѕРЅ!
+	Ooh02						=	"SVM_5_Ooh02"						;//РџРѕРєР°Р¶Рё РµРјСѓ, РєС‚Рѕ С‚СѓС‚ РіР»Р°РІРЅС‹Р№!
+	Ooh03						=	"SVM_5_Ooh03"						;//Р§РµСЂС‚ РїРѕР±РµСЂРё!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_5_WhatWasThat"					;//(себе под нос, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_5_WhatWasThat"					;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_5_GetOutOfMyBed"					;//Убирайся с моей кровати!
-	Awake						= "SVM_5_Awake"							;//(зевает)
+	GetOutOfMyBed				= "SVM_5_GetOutOfMyBed"					;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_5_Awake"							;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_5_ABS_COMMANDER"					;//Я слышал, ты ходил к командующему и все уладил.
-	ABS_MONASTERY				= "SVM_5_ABS_MONASTERY"					;//Я слышал, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM					= "SVM_5_ABS_FARM"						;//Я слышал, ты ходил к Ли и все уладил.
-	ABS_GOOD					= "SVM_5_ABS_GOOD"						;//Это хорошо.
+	ABS_COMMANDER				= "SVM_5_ABS_COMMANDER"					;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY				= "SVM_5_ABS_MONASTERY"					;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM					= "SVM_5_ABS_FARM"						;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD					= "SVM_5_ABS_GOOD"						;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_5_SHEEPKILLER_CRIME"				;//Он убивает наших овец!
-	ATTACK_CRIME				= "SVM_5_ATTACK_CRIME"					;//Я не разговариваю с грязными ворами!
-	THEFT_CRIME					= "SVM_5_THEFT_CRIME"					;//Прочь с глаз моих, грязный вор!
+	SHEEPKILLER_CRIME			= "SVM_5_SHEEPKILLER_CRIME"				;//РћРЅ СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	ATTACK_CRIME				= "SVM_5_ATTACK_CRIME"					;//РЇ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ СЃ РіСЂСЏР·РЅС‹РјРё РІРѕСЂР°РјРё!
+	THEFT_CRIME					= "SVM_5_THEFT_CRIME"					;//РџСЂРѕС‡СЊ СЃ РіР»Р°Р· РјРѕРёС…, РіСЂСЏР·РЅС‹Р№ РІРѕСЂ!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_5_PAL_CITY_CRIME"				;//Ты позоришь наш орден! Лорд Хаген будет в ярости!
-	MIL_CITY_CRIME				= "SVM_5_MIL_CITY_CRIME"				;//Ты позоришь городскую стражу! Лорд Андрэ научит тебя хорошим манерам!
-	CITY_CRIME					= "SVM_5_CITY_CRIME"					;//Лорд Андрэ узнает о том, что ты сделал!
+	PAL_CITY_CRIME				= "SVM_5_PAL_CITY_CRIME"				;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РЅР°С€ РѕСЂРґРµРЅ! Р›РѕСЂРґ РҐР°РіРµРЅ Р±СѓРґРµС‚ РІ СЏСЂРѕСЃС‚Рё!
+	MIL_CITY_CRIME				= "SVM_5_MIL_CITY_CRIME"				;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! Р›РѕСЂРґ РђРЅРґСЂСЌ РЅР°СѓС‡РёС‚ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!
+	CITY_CRIME					= "SVM_5_CITY_CRIME"					;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р»!
 	// -------------------------
-	MONA_CRIME					= "SVM_5_MONA_CRIME"					;//Отец Парлан не будет рад, когда узнает об этом кощунстве!
-	FARM_CRIME					= "SVM_5_FARM_CRIME"					;//Ли задаст тебе трепку! Ты плохо кончишь!
-	OC_CRIME					= "SVM_5_OC_CRIME"						;//Командующий Гаронд потребует от тебя объяснений!
+	MONA_CRIME					= "SVM_5_MONA_CRIME"					;//РћС‚РµС† РџР°СЂР»Р°РЅ РЅРµ Р±СѓРґРµС‚ СЂР°Рґ, РєРѕРіРґР° СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј РєРѕС‰СѓРЅСЃС‚РІРµ!
+	FARM_CRIME					= "SVM_5_FARM_CRIME"					;//Р›Рё Р·Р°РґР°СЃС‚ С‚РµР±Рµ С‚СЂРµРїРєСѓ! РўС‹ РїР»РѕС…Рѕ РєРѕРЅС‡РёС€СЊ!
+	OC_CRIME					= "SVM_5_OC_CRIME"						;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РїРѕС‚СЂРµР±СѓРµС‚ РѕС‚ С‚РµР±СЏ РѕР±СЉСЏСЃРЅРµРЅРёР№!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_5_TOUGHGUY_ATTACKLOST"			;//Хорошо, хорошо, ты победил. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_5_TOUGHGUY_ATTACKWON"			;//Тебе еще раз показать, кто тут главный?
-	TOUGHGUY_PLAYERATTACK		= "SVM_5_TOUGHGUY_PLAYERATTACK"			;//Хочешь еще раз сразиться со мной, да?
+	TOUGHGUY_ATTACKLOST			= "SVM_5_TOUGHGUY_ATTACKLOST"			;//РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, С‚С‹ РїРѕР±РµРґРёР». Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_5_TOUGHGUY_ATTACKWON"			;//РўРµР±Рµ РµС‰Рµ СЂР°Р· РїРѕРєР°Р·Р°С‚СЊ, РєС‚Рѕ С‚СѓС‚ РіР»Р°РІРЅС‹Р№?
+	TOUGHGUY_PLAYERATTACK		= "SVM_5_TOUGHGUY_PLAYERATTACK"			;//РҐРѕС‡РµС€СЊ РµС‰Рµ СЂР°Р· СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№, РґР°?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_5_GOLD_1000"						;//1000 золотых монет.
-	GOLD_950					= "SVM_5_GOLD_950"						;//950 золотых монет.
-	GOLD_900					= "SVM_5_GOLD_900"						;//900 золотых монет.
-	GOLD_850					= "SVM_5_GOLD_850"						;//850 золотых монет.
-	GOLD_800					= "SVM_5_GOLD_800"						;//800 золотых монет.
-	GOLD_750					= "SVM_5_GOLD_750"						;//750 золотых монет.
-	GOLD_700					= "SVM_5_GOLD_700"						;//700 золотых монет.
-	GOLD_650					= "SVM_5_GOLD_650"						;//650 золотых монет.
-	GOLD_600					= "SVM_5_GOLD_600"						;//600 золотых монет.
-	GOLD_550					= "SVM_5_GOLD_550"						;//550 золотых монет.
-	GOLD_500					= "SVM_5_GOLD_500"						;//500 золотых монет.
-	GOLD_450					= "SVM_5_GOLD_450"						;//450 золотых монет.
-	GOLD_400					= "SVM_5_GOLD_400"						;//400 золотых монет.
-	GOLD_350					= "SVM_5_GOLD_350"						;//350 золотых монет.
-	GOLD_300					= "SVM_5_GOLD_300"						;//300 золотых монет.
-	GOLD_250					= "SVM_5_GOLD_250"						;//250 золотых монет.
-	GOLD_200					= "SVM_5_GOLD_200"						;//200 золотых монет.
-	GOLD_150					= "SVM_5_GOLD_150"						;//150 золотых монет.
-	GOLD_100					= "SVM_5_GOLD_100"						;//100 золотых монет.
-	GOLD_90						= "SVM_5_GOLD_90"						;//90 золотых монет.
-	GOLD_80						= "SVM_5_GOLD_80"						;//80 золотых монет.
-	GOLD_70						= "SVM_5_GOLD_70"						;//70 золотых монет.
-	GOLD_60						= "SVM_5_GOLD_60"						;//60 золотых монет.
-	GOLD_50						= "SVM_5_GOLD_50"						;//50 золотых монет.
-	GOLD_40						= "SVM_5_GOLD_40"						;//40 золотых монет.
-	GOLD_30						= "SVM_5_GOLD_30"						;//30 золотых монет.
-	GOLD_20						= "SVM_5_GOLD_20"						;//20 золотых монет.
-	GOLD_10						= "SVM_5_GOLD_10"						;//10 золотых монет.
+	GOLD_1000					= "SVM_5_GOLD_1000"						;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_5_GOLD_950"						;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_5_GOLD_900"						;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_5_GOLD_850"						;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_5_GOLD_800"						;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_5_GOLD_750"						;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_5_GOLD_700"						;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_5_GOLD_650"						;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_5_GOLD_600"						;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_5_GOLD_550"						;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_5_GOLD_500"						;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_5_GOLD_450"						;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_5_GOLD_400"						;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_5_GOLD_350"						;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_5_GOLD_300"						;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_5_GOLD_250"						;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_5_GOLD_200"						;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_5_GOLD_150"						;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_5_GOLD_100"						;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_5_GOLD_90"						;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_5_GOLD_80"						;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_5_GOLD_70"						;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_5_GOLD_60"						;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_5_GOLD_50"						;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_5_GOLD_40"						;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_5_GOLD_30"						;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_5_GOLD_20"						;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_5_GOLD_10"						;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_5_Smalltalk01"					;//...ты действительно думаешь...
-	Smalltalk02					= "SVM_5_Smalltalk02"					;//...все возможно...
-	Smalltalk03					= "SVM_5_Smalltalk03"					;//...ему стоило лучше подумать...
-	Smalltalk04					= "SVM_5_Smalltalk04"					;//...как будто у меня без того проблем не хватает...
-	Smalltalk05					= "SVM_5_Smalltalk05"					;//...кто сказал тебе это...
-	Smalltalk06					= "SVM_5_Smalltalk06"					;//...от этого будут одни проблемы...
-	Smalltalk07					= "SVM_5_Smalltalk07"					;//...ходят разные слухи...
-	Smalltalk08					= "SVM_5_Smalltalk08"					;//...На твоем месте я бы этого не делал...
-	Smalltalk09					= "SVM_5_Smalltalk09"					;//...это все слухи...
-	Smalltalk10					= "SVM_5_Smalltalk10"					;//...я бы не доверял тому,  кто тебе это сказал...
-	Smalltalk11					= "SVM_5_Smalltalk11"					;//...Возможно, я говорил тебе раньше...
-	Smalltalk12					= "SVM_5_Smalltalk12"					;//...никто никогда не спрашивает меня...
-	Smalltalk13					= "SVM_5_Smalltalk13"					;//...тебе должно быть жаль этого беднягу...
-	Smalltalk14					= "SVM_5_Smalltalk14"					;//...нет ничего нового...
-	Smalltalk15					= "SVM_5_Smalltalk15"					;//...это абсолютно очевидно...
-	Smalltalk16					= "SVM_5_Smalltalk16"					;//...тебе не стоит спрашивать меня об этом...
-	Smalltalk17					= "SVM_5_Smalltalk17"					;//...так может продолжаться вечность...
-	Smalltalk18					= "SVM_5_Smalltalk18"					;//...ты уже знаешь, что я думаю...
-	Smalltalk19					= "SVM_5_Smalltalk19"					;//...это именно так, как я сказал...
-	Smalltalk20					= "SVM_5_Smalltalk20"					;//...ничто не изменит это...
-	Smalltalk21					= "SVM_5_Smalltalk21"					;//...и почему я не слышал об этом раньше...
-	Smalltalk22					= "SVM_5_Smalltalk22"					;//...посмотрим, что будет дальше...
-	Smalltalk23					= "SVM_5_Smalltalk23"					;//...некоторые проблемы решаются сами собой...
-	Smalltalk24					= "SVM_5_Smalltalk24"					;//...Я больше не хочу слышать об этом...
+	Smalltalk01					= "SVM_5_Smalltalk01"					;//...С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ...
+	Smalltalk02					= "SVM_5_Smalltalk02"					;//...РІСЃРµ РІРѕР·РјРѕР¶РЅРѕ...
+	Smalltalk03					= "SVM_5_Smalltalk03"					;//...РµРјСѓ СЃС‚РѕРёР»Рѕ Р»СѓС‡С€Рµ РїРѕРґСѓРјР°С‚СЊ...
+	Smalltalk04					= "SVM_5_Smalltalk04"					;//...РєР°Рє Р±СѓРґС‚Рѕ Сѓ РјРµРЅСЏ Р±РµР· С‚РѕРіРѕ РїСЂРѕР±Р»РµРј РЅРµ С…РІР°С‚Р°РµС‚...
+	Smalltalk05					= "SVM_5_Smalltalk05"					;//...РєС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ...
+	Smalltalk06					= "SVM_5_Smalltalk06"					;//...РѕС‚ СЌС‚РѕРіРѕ Р±СѓРґСѓС‚ РѕРґРЅРё РїСЂРѕР±Р»РµРјС‹...
+	Smalltalk07					= "SVM_5_Smalltalk07"					;//...С…РѕРґСЏС‚ СЂР°Р·РЅС‹Рµ СЃР»СѓС…Рё...
+	Smalltalk08					= "SVM_5_Smalltalk08"					;//...РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ СЌС‚РѕРіРѕ РЅРµ РґРµР»Р°Р»...
+	Smalltalk09					= "SVM_5_Smalltalk09"					;//...СЌС‚Рѕ РІСЃРµ СЃР»СѓС…Рё...
+	Smalltalk10					= "SVM_5_Smalltalk10"					;//...СЏ Р±С‹ РЅРµ РґРѕРІРµСЂСЏР» С‚РѕРјСѓ,  РєС‚Рѕ С‚РµР±Рµ СЌС‚Рѕ СЃРєР°Р·Р°Р»...
+	Smalltalk11					= "SVM_5_Smalltalk11"					;//...Р’РѕР·РјРѕР¶РЅРѕ, СЏ РіРѕРІРѕСЂРёР» С‚РµР±Рµ СЂР°РЅСЊС€Рµ...
+	Smalltalk12					= "SVM_5_Smalltalk12"					;//...РЅРёРєС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ СЃРїСЂР°С€РёРІР°РµС‚ РјРµРЅСЏ...
+	Smalltalk13					= "SVM_5_Smalltalk13"					;//...С‚РµР±Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р¶Р°Р»СЊ СЌС‚РѕРіРѕ Р±РµРґРЅСЏРіСѓ...
+	Smalltalk14					= "SVM_5_Smalltalk14"					;//...РЅРµС‚ РЅРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ...
+	Smalltalk15					= "SVM_5_Smalltalk15"					;//...СЌС‚Рѕ Р°Р±СЃРѕР»СЋС‚РЅРѕ РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk16					= "SVM_5_Smalltalk16"					;//...С‚РµР±Рµ РЅРµ СЃС‚РѕРёС‚ СЃРїСЂР°С€РёРІР°С‚СЊ РјРµРЅСЏ РѕР± СЌС‚РѕРј...
+	Smalltalk17					= "SVM_5_Smalltalk17"					;//...С‚Р°Рє РјРѕР¶РµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ РІРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk18					= "SVM_5_Smalltalk18"					;//...С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЏ РґСѓРјР°СЋ...
+	Smalltalk19					= "SVM_5_Smalltalk19"					;//...СЌС‚Рѕ РёРјРµРЅРЅРѕ С‚Р°Рє, РєР°Рє СЏ СЃРєР°Р·Р°Р»...
+	Smalltalk20					= "SVM_5_Smalltalk20"					;//...РЅРёС‡С‚Рѕ РЅРµ РёР·РјРµРЅРёС‚ СЌС‚Рѕ...
+	Smalltalk21					= "SVM_5_Smalltalk21"					;//...Рё РїРѕС‡РµРјСѓ СЏ РЅРµ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј СЂР°РЅСЊС€Рµ...
+	Smalltalk22					= "SVM_5_Smalltalk22"					;//...РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ Р±СѓРґРµС‚ РґР°Р»СЊС€Рµ...
+	Smalltalk23					= "SVM_5_Smalltalk23"					;//...РЅРµРєРѕС‚РѕСЂС‹Рµ РїСЂРѕР±Р»РµРјС‹ СЂРµС€Р°СЋС‚СЃСЏ СЃР°РјРё СЃРѕР±РѕР№...
+	Smalltalk24					= "SVM_5_Smalltalk24"					;//...РЇ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡Сѓ СЃР»С‹С€Р°С‚СЊ РѕР± СЌС‚РѕРј...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_5_Smalltalk25"					;//...он напился в стельку...
-	Smalltalk26					= "SVM_5_Smalltalk26"					;//...Я не позволю так обращаться с собой...
-	Smalltalk27					= "SVM_5_Smalltalk27"					;//...они все разбежались как крысы, и я остался совсем один...
+	Smalltalk25					= "SVM_5_Smalltalk25"					;//...РѕРЅ РЅР°РїРёР»СЃСЏ РІ СЃС‚РµР»СЊРєСѓ...
+	Smalltalk26					= "SVM_5_Smalltalk26"					;//...РЇ РЅРµ РїРѕР·РІРѕР»СЋ С‚Р°Рє РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ СЃРѕР±РѕР№...
+	Smalltalk27					= "SVM_5_Smalltalk27"					;//...РѕРЅРё РІСЃРµ СЂР°Р·Р±РµР¶Р°Р»РёСЃСЊ РєР°Рє РєСЂС‹СЃС‹, Рё СЏ РѕСЃС‚Р°Р»СЃСЏ СЃРѕРІСЃРµРј РѕРґРёРЅ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_5_Smalltalk28"					;//...так говорится в Писании...
-	Smalltalk29					= "SVM_5_Smalltalk29"					;//...Я всегда поступаю так, как завещал Иннос...
-	Smalltalk30					= "SVM_5_Smalltalk30"					;//...никто не смеет нарушать божественный порядок...
+	Smalltalk28					= "SVM_5_Smalltalk28"					;//...С‚Р°Рє РіРѕРІРѕСЂРёС‚СЃСЏ РІ РџРёСЃР°РЅРёРё...
+	Smalltalk29					= "SVM_5_Smalltalk29"					;//...РЇ РІСЃРµРіРґР° РїРѕСЃС‚СѓРїР°СЋ С‚Р°Рє, РєР°Рє Р·Р°РІРµС‰Р°Р» РРЅРЅРѕСЃ...
+	Smalltalk30					= "SVM_5_Smalltalk30"					;//...РЅРёРєС‚Рѕ РЅРµ СЃРјРµРµС‚ РЅР°СЂСѓС€Р°С‚СЊ Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ РїРѕСЂСЏРґРѕРє...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_5_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_5_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_5_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_5_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_5_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_5_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_5_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_5_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_5_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_5_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_5_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_5_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_5_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_5_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_5_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_5_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_5_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_5_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_5_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_5_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_5_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_5_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_5_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_5_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_5_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_5_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_5_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_5_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_5_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_5_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_5_TEMPEL_2_GALGEN"			;//Выйдя из храма и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_5_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_5_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_5_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_5_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_5_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_5_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_5_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_5_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_5_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_5_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_5_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_5_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_5_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_5_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_5_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_5_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР° Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_5_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_5_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_5_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_5_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_5_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_5_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_5_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_5_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_5_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_5_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_5_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_5_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_5_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_5_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_5_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_5_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_5_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_5_Addon_WrongArmor";				//Для начала надень что-нибудь соответствующее.
-	ADDON_WRONGARMOR_SLD		= "SVM_5_ADDON_WRONGARMOR_SLD";			//Что на тебе надето? Ты что, больше не один из нас? Тогда я не буду иметь с тобой дело.
-	ADDON_WRONGARMOR_MIL		= "SVM_5_ADDON_WRONGARMOR_MIL";			//Мы, солдаты, сражаемся за короля, так что лучше бы тебе надеть его доспехи.
-	ADDON_WRONGARMOR_KDF		= "SVM_5_ADDON_WRONGARMOR_KDF";			//Зачем тебе выдали доспехи, если ты их все равно не носишь? Подумай об этом.
-	ADDON_NOARMOR_BDT			= "SVM_5_ADDON_ADDON_NOARMOR_BDT";		//Что ты за простофиля? У тебя даже нет доспехов. Иди прочь.
+	ADDON_WRONGARMOR			= "SVM_5_Addon_WrongArmor";				//Р”Р»СЏ РЅР°С‡Р°Р»Р° РЅР°РґРµРЅСЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРµ.
+	ADDON_WRONGARMOR_SLD		= "SVM_5_ADDON_WRONGARMOR_SLD";			//Р§С‚Рѕ РЅР° С‚РµР±Рµ РЅР°РґРµС‚Рѕ? РўС‹ С‡С‚Рѕ, Р±РѕР»СЊС€Рµ РЅРµ РѕРґРёРЅ РёР· РЅР°СЃ? РўРѕРіРґР° СЏ РЅРµ Р±СѓРґСѓ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РґРµР»Рѕ.
+	ADDON_WRONGARMOR_MIL		= "SVM_5_ADDON_WRONGARMOR_MIL";			//РњС‹, СЃРѕР»РґР°С‚С‹, СЃСЂР°Р¶Р°РµРјСЃСЏ Р·Р° РєРѕСЂРѕР»СЏ, С‚Р°Рє С‡С‚Рѕ Р»СѓС‡С€Рµ Р±С‹ С‚РµР±Рµ РЅР°РґРµС‚СЊ РµРіРѕ РґРѕСЃРїРµС…Рё.
+	ADDON_WRONGARMOR_KDF		= "SVM_5_ADDON_WRONGARMOR_KDF";			//Р—Р°С‡РµРј С‚РµР±Рµ РІС‹РґР°Р»Рё РґРѕСЃРїРµС…Рё, РµСЃР»Рё С‚С‹ РёС… РІСЃРµ СЂР°РІРЅРѕ РЅРµ РЅРѕСЃРёС€СЊ? РџРѕРґСѓРјР°Р№ РѕР± СЌС‚РѕРј.
+	ADDON_NOARMOR_BDT			= "SVM_5_ADDON_ADDON_NOARMOR_BDT";		//Р§С‚Рѕ С‚С‹ Р·Р° РїСЂРѕСЃС‚РѕС„РёР»СЏ? РЈ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ РґРѕСЃРїРµС…РѕРІ. РРґРё РїСЂРѕС‡СЊ.
 
-	ADDON_DIEBANDIT				= "SVM_5_ADDON_DIEBANDIT";				//Ага, бандит!
-	ADDON_DIRTYPIRATE			= "SVM_5_ADDON_DIRTYPIRATE";			//Я порву тебя на части, пират!
+	ADDON_DIEBANDIT				= "SVM_5_ADDON_DIEBANDIT";				//РђРіР°, Р±Р°РЅРґРёС‚!
+	ADDON_DIRTYPIRATE			= "SVM_5_ADDON_DIRTYPIRATE";			//РЇ РїРѕСЂРІСѓ С‚РµР±СЏ РЅР° С‡Р°СЃС‚Рё, РїРёСЂР°С‚!
 };
 
 
 instance SVM_6 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_6_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_6_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_6_Weather"					;//Паршивая погода!
+	MILGreetings				= 	"SVM_6_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_6_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_6_Weather"					;//РџР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_6_IGetYouStill"				;//Сейчас ты у меня получишь!
-	DieEnemy					=	"SVM_6_DieEnemy"					;//Тебе не стоило появляться здесь!
-	DieMonster					=	"SVM_6_DieMonster"					;//Иди сюда, грязная тварь!
-	DirtyThief					=	"SVM_6_DirtyThief"					;//Грязный воришка! Ну, подожди!
-	HandsOff					=	"SVM_6_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_6_SheepKiller"				;//Оставь наших овец в покое!
-	SheepKillerMonster			=	"SVM_6_SheepKillerMonster"			;//Отойди от наших овец, ты, мерзавец !
-	YouMurderer					=	"SVM_6_YouMurderer"				;//Убийца!
-	DieStupidBeast				=	"SVM_6_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_6_YouDareHitMe"				;//Ты пожалеешь об этом!
-	YouAskedForIt				=	"SVM_6_YouAskedForIt"				;//Я предупреждал тебя.
-	ThenIBeatYouOutOfHere		=	"SVM_6_ThenIBeatYouOutOfHere"		;//Эй, убирайся отсюда!
-	WhatDidYouDoInThere			=	"SVM_6_WhatDidYouDoInThere"		;//Эй! Что тебе было нужно там?
-	WillYouStopFighting			=	"SVM_6_WillYouStopFighting"		;//Прекрати! Немедленно!
+	IGetYouStill				= 	"SVM_6_IGetYouStill"				;//РЎРµР№С‡Р°СЃ С‚С‹ Сѓ РјРµРЅСЏ РїРѕР»СѓС‡РёС€СЊ!
+	DieEnemy					=	"SVM_6_DieEnemy"					;//РўРµР±Рµ РЅРµ СЃС‚РѕРёР»Рѕ РїРѕСЏРІР»СЏС‚СЊСЃСЏ Р·РґРµСЃСЊ!
+	DieMonster					=	"SVM_6_DieMonster"					;//РРґРё СЃСЋРґР°, РіСЂСЏР·РЅР°СЏ С‚РІР°СЂСЊ!
+	DirtyThief					=	"SVM_6_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂРёС€РєР°! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_6_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_6_SheepKiller"				;//РћСЃС‚Р°РІСЊ РЅР°С€РёС… РѕРІРµС† РІ РїРѕРєРѕРµ!
+	SheepKillerMonster			=	"SVM_6_SheepKillerMonster"			;//РћС‚РѕР№РґРё РѕС‚ РЅР°С€РёС… РѕРІРµС†, С‚С‹, РјРµСЂР·Р°РІРµС† !
+	YouMurderer					=	"SVM_6_YouMurderer"				;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_6_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_6_YouDareHitMe"				;//РўС‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј!
+	YouAskedForIt				=	"SVM_6_YouAskedForIt"				;//РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ.
+	ThenIBeatYouOutOfHere		=	"SVM_6_ThenIBeatYouOutOfHere"		;//Р­Р№, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhatDidYouDoInThere			=	"SVM_6_WhatDidYouDoInThere"		;//Р­Р№! Р§С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ С‚Р°Рј?
+	WillYouStopFighting			=	"SVM_6_WillYouStopFighting"		;//РџСЂРµРєСЂР°С‚Рё! РќРµРјРµРґР»РµРЅРЅРѕ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_6_KillEnemy"					;//Я выпущу тебе кишки, ублюдок!
-	EnemyKilled					=	"SVM_6_EnemyKilled"				;//Получай...
-	MonsterKilled				=	"SVM_6_MonsterKilled"				;//Эй, я его прикончу!
-	ThiefDown					=	"SVM_6_ThiefDown"					;//Я предупреждаю тебя! Не пытайся повторять это, грязный вор!
-	rumfummlerDown				=	"SVM_6_rumfummlerDown"				;//Я думаю, это научит тебя держаться подальше от того, что тебе не принадлежит!
-	SheepAttackerDown			=	"SVM_6_SheepAttackerDown"			;//И держись подальше от наших овец!
-	KillMurderer				=	"SVM_6_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_6_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_6_NeverHitMeAgain"				;//Даже  не пытайся нападать на меня!
-	YouBetterShouldHaveListened	=	"SVM_6_YouBetterShouldHaveListened"	;//Я предупреждал тебя.
-	GetUpAndBeGone				=	"SVM_6_GetUpAndBeGone"					;//А теперь убирайся!
-	NeverEnterRoomAgain			=	"SVM_6_NeverEnterRoomAgain"			;//Я больше не хочу видеть тебя здесь, понял?!
-	ThereIsNoFightingHere		=	"SVM_6_ThereIsNoFightingHere"			;//Никаких драк здесь. Пусть это послужит тебе уроком.
+	KillEnemy					= 	"SVM_6_KillEnemy"					;//РЇ РІС‹РїСѓС‰Сѓ С‚РµР±Рµ РєРёС€РєРё, СѓР±Р»СЋРґРѕРє!
+	EnemyKilled					=	"SVM_6_EnemyKilled"				;//РџРѕР»СѓС‡Р°Р№...
+	MonsterKilled				=	"SVM_6_MonsterKilled"				;//Р­Р№, СЏ РµРіРѕ РїСЂРёРєРѕРЅС‡Сѓ!
+	ThiefDown					=	"SVM_6_ThiefDown"					;//РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ! РќРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРІС‚РѕСЂСЏС‚СЊ СЌС‚Рѕ, РіСЂСЏР·РЅС‹Р№ РІРѕСЂ!
+	rumfummlerDown				=	"SVM_6_rumfummlerDown"				;//РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РЅР°СѓС‡РёС‚ С‚РµР±СЏ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚!
+	SheepAttackerDown			=	"SVM_6_SheepAttackerDown"			;//Р РґРµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅР°С€РёС… РѕРІРµС†!
+	KillMurderer				=	"SVM_6_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_6_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_6_NeverHitMeAgain"				;//Р”Р°Р¶Рµ  РЅРµ РїС‹С‚Р°Р№СЃСЏ РЅР°РїР°РґР°С‚СЊ РЅР° РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_6_YouBetterShouldHaveListened"	;//РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ.
+	GetUpAndBeGone				=	"SVM_6_GetUpAndBeGone"					;//Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ!
+	NeverEnterRoomAgain			=	"SVM_6_NeverEnterRoomAgain"			;//РЇ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡Сѓ РІРёРґРµС‚СЊ С‚РµР±СЏ Р·РґРµСЃСЊ, РїРѕРЅСЏР»?!
+	ThereIsNoFightingHere		=	"SVM_6_ThereIsNoFightingHere"			;//РќРёРєР°РєРёС… РґСЂР°Рє Р·РґРµСЃСЊ. РџСѓСЃС‚СЊ СЌС‚Рѕ РїРѕСЃР»СѓР¶РёС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј.
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_6_SpareMe"						;//Не пытайся что-нибудь выкинуть!
-	RunAway						= 	"SVM_6_RunAway"						;//Я ухожу отсюда!
+	SpareMe						=	"SVM_6_SpareMe"						;//РќРµ РїС‹С‚Р°Р№СЃСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РєРёРЅСѓС‚СЊ!
+	RunAway						= 	"SVM_6_RunAway"						;//РЇ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_6_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_6_Guards"					;//СТРАЖА!
-	Help						=	"SVM_6_Help"					;//Помогите!
+	Alarm						=	"SVM_6_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_6_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_6_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_6_GoodMonsterKill"		;//Покажи этим тварям, где раки зимуют!
-	GoodKill					= 	"SVM_6_GoodKill"				;//Да, покажи этому ублюдку, где раки зимуют!
+	GoodMonsterKill				=	"SVM_6_GoodMonsterKill"		;//РџРѕРєР°Р¶Рё СЌС‚РёРј С‚РІР°СЂСЏРј, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
+	GoodKill					= 	"SVM_6_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕРјСѓ СѓР±Р»СЋРґРєСѓ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_6_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_6_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_6_RunCoward"				;//Я тебя еще достану!
+	RunCoward					=	"SVM_6_RunCoward"				;//РЇ С‚РµР±СЏ РµС‰Рµ РґРѕСЃС‚Р°РЅСѓ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_6_GetOutOfHere"			;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_6_WhyAreYouInHere"		;//Тебе нечего здесь делать!
-	YesGoOutOfHere				= 	"SVM_6_YesGoOutOfHere"			;//Да, убирайся!
+	GetOutOfHere				=	"SVM_6_GetOutOfHere"			;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_6_WhyAreYouInHere"		;//РўРµР±Рµ РЅРµС‡РµРіРѕ Р·РґРµСЃСЊ РґРµР»Р°С‚СЊ!
+	YesGoOutOfHere				= 	"SVM_6_YesGoOutOfHere"			;//Р”Р°, СѓР±РёСЂР°Р№СЃСЏ!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_6_WhatsThisSupposedToBe"	;//Что ты задумал? Что ты тут ошиваешься?
-	YouDisturbedMySlumber		=	"SVM_6_YouDisturbedMySlumber"	;//(просыпается) Черт, что тебе нужно?
+	WhatsThisSupposedToBe		=	"SVM_6_WhatsThisSupposedToBe"	;//Р§С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р»? Р§С‚Рѕ С‚С‹ С‚СѓС‚ РѕС€РёРІР°РµС€СЊСЃСЏ?
+	YouDisturbedMySlumber		=	"SVM_6_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_6_ITookYourGold"			;//Ну, по крайней мере, у тебя есть золото с собой.
-	ShitNoGold					=	"SVM_6_ShitNoGold"				;//Даже золота нет - пффф...
-	ITakeYourWeapon				=	"SVM_6_ITakeYourWeapon"		;//Пожалуй, я заберу твое оружие.
+	ITookYourGold				=	"SVM_6_ITookYourGold"			;//РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, Сѓ С‚РµР±СЏ РµСЃС‚СЊ Р·РѕР»РѕС‚Рѕ СЃ СЃРѕР±РѕР№.
+	ShitNoGold					=	"SVM_6_ShitNoGold"				;//Р”Р°Р¶Рµ Р·РѕР»РѕС‚Р° РЅРµС‚ - РїС„С„С„...
+	ITakeYourWeapon				=	"SVM_6_ITakeYourWeapon"		;//РџРѕР¶Р°Р»СѓР№, СЏ Р·Р°Р±РµСЂСѓ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_6_WhatAreYouDoing"		;//(предупреждающе) Парень! Не делай этого больше!
+	WhatAreYouDoing				=	"SVM_6_WhatAreYouDoing"		;//(РїСЂРµРґСѓРїСЂРµР¶РґР°СЋС‰Рµ) РџР°СЂРµРЅСЊ! РќРµ РґРµР»Р°Р№ СЌС‚РѕРіРѕ Р±РѕР»СЊС€Рµ!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_6_LookingForTroubleAgain"	;//(агрессивно) Хочешь еще получить?
-	StopMagic					=	"SVM_6_StopMagic"				;//Убери эту магию!
-	ISaidStopMagic				=	"SVM_6_ISaidStopMagic"			;//Последнее предупреждение! Убери эту магию!
-	WeaponDown					=	"SVM_6_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_6_ISaidWeaponDown"		;//Убери это, иди я за себя не отвечаю!
-	WiseMove					=	"SVM_6_WiseMove"				;//Эй, ты не такой тупой, как кажешься!
+	LookingForTroubleAgain		=	"SVM_6_LookingForTroubleAgain"	;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РҐРѕС‡РµС€СЊ РµС‰Рµ РїРѕР»СѓС‡РёС‚СЊ?
+	StopMagic					=	"SVM_6_StopMagic"				;//РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ!
+	ISaidStopMagic				=	"SVM_6_ISaidStopMagic"			;//РџРѕСЃР»РµРґРЅРµРµ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ! РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ!
+	WeaponDown					=	"SVM_6_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_6_ISaidWeaponDown"		;//РЈР±РµСЂРё СЌС‚Рѕ, РёРґРё СЏ Р·Р° СЃРµР±СЏ РЅРµ РѕС‚РІРµС‡Р°СЋ!
+	WiseMove					=	"SVM_6_WiseMove"				;//Р­Р№, С‚С‹ РЅРµ С‚Р°РєРѕР№ С‚СѓРїРѕР№, РєР°Рє РєР°Р¶РµС€СЊСЃСЏ!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_6_NextTimeYoureInForIt"	;//(себе под нос) Только попробуй сделать это опять...
-	OhMyHead					=	"SVM_6_OhMyHead"				;//(себе под нос) Охх! Моя голова...
+	NextTimeYoureInForIt		=	"SVM_6_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РўРѕР»СЊРєРѕ РїРѕРїСЂРѕР±СѓР№ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ РѕРїСЏС‚СЊ...
+	OhMyHead					=	"SVM_6_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…С…! РњРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_6_TheresAFight"			;//(жадно) А теперь пришло время позабавиться...
-	OhMyGodItsAFight			=	"SVM_6_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой...
-	GoodVictory					=	"SVM_6_GoodVictory"			;//(дьявольский смех) Пусть это послужит уроком для него...
-	NotBad						= 	"SVM_6_NotBad"					;//(одобрительно) Как он ему дал!
-	OhMyGodHesDown				=	"SVM_6_OhMyGodHesDown"			;//(себе под нос) Какой он жестокий!
-	CheerFriend01				=	"SVM_6_CheerFriend01"			;//Прикончи его!
-	CheerFriend02				=	"SVM_6_CheerFriend02"			;//Не останавливайся!
-	CheerFriend03				=	"SVM_6_CheerFriend03"			;//Прикончи его!
-	Ooh01						=	"SVM_6_Ooh01"					;//Осторожно!
-	Ooh02						=	"SVM_6_Ooh02"					;//Защищайся же!
-	Ooh03						=	"SVM_6_Ooh03"					;//Ох, как больно!
+	TheresAFight				=	"SVM_6_TheresAFight"			;//(Р¶Р°РґРЅРѕ) Рђ С‚РµРїРµСЂСЊ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїРѕР·Р°Р±Р°РІРёС‚СЊСЃСЏ...
+	OhMyGodItsAFight			=	"SVM_6_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№...
+	GoodVictory					=	"SVM_6_GoodVictory"			;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РџСѓСЃС‚СЊ СЌС‚Рѕ РїРѕСЃР»СѓР¶РёС‚ СѓСЂРѕРєРѕРј РґР»СЏ РЅРµРіРѕ...
+	NotBad						= 	"SVM_6_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РљР°Рє РѕРЅ РµРјСѓ РґР°Р»!
+	OhMyGodHesDown				=	"SVM_6_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РљР°РєРѕР№ РѕРЅ Р¶РµСЃС‚РѕРєРёР№!
+	CheerFriend01				=	"SVM_6_CheerFriend01"			;//РџСЂРёРєРѕРЅС‡Рё РµРіРѕ!
+	CheerFriend02				=	"SVM_6_CheerFriend02"			;//РќРµ РѕСЃС‚Р°РЅР°РІР»РёРІР°Р№СЃСЏ!
+	CheerFriend03				=	"SVM_6_CheerFriend03"			;//РџСЂРёРєРѕРЅС‡Рё РµРіРѕ!
+	Ooh01						=	"SVM_6_Ooh01"					;//РћСЃС‚РѕСЂРѕР¶РЅРѕ!
+	Ooh02						=	"SVM_6_Ooh02"					;//Р—Р°С‰РёС‰Р°Р№СЃСЏ Р¶Рµ!
+	Ooh03						=	"SVM_6_Ooh03"					;//РћС…, РєР°Рє Р±РѕР»СЊРЅРѕ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_6_WhatWasThat"				;//(себе под нос, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_6_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_6_GetOutOfMyBed"			;//Убирайся с моей кровати!
-	Awake						= "SVM_6_Awake"					;//(зевает)
+	GetOutOfMyBed				= "SVM_6_GetOutOfMyBed"			;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_6_Awake"					;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_6_ABS_COMMANDER"    ;//Так значит, ты утряс все проблемы с командующим.
-	ABS_MONASTERY    = "SVM_6_ABS_MONASTERY"    ;//Отец Парлан отпустил тебе твои грехи.
-	ABS_FARM       = "SVM_6_ABS_FARM"        ;//Значит, ты ходил к Ли и утряс все проблемы.
-	ABS_GOOD       = "SVM_6_ABS_GOOD"       ;//Хорошо.
+	ABS_COMMANDER     = "SVM_6_ABS_COMMANDER"    ;//РўР°Рє Р·РЅР°С‡РёС‚, С‚С‹ СѓС‚СЂСЏСЃ РІСЃРµ РїСЂРѕР±Р»РµРјС‹ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј.
+	ABS_MONASTERY    = "SVM_6_ABS_MONASTERY"    ;//РћС‚РµС† РџР°СЂР»Р°РЅ РѕС‚РїСѓСЃС‚РёР» С‚РµР±Рµ С‚РІРѕРё РіСЂРµС…Рё.
+	ABS_FARM       = "SVM_6_ABS_FARM"        ;//Р—РЅР°С‡РёС‚, С‚С‹ С…РѕРґРёР» Рє Р›Рё Рё СѓС‚СЂСЏСЃ РІСЃРµ РїСЂРѕР±Р»РµРјС‹.
+	ABS_GOOD       = "SVM_6_ABS_GOOD"       ;//РҐРѕСЂРѕС€Рѕ.
  	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_6_SHEEPKILLER_CRIME"   ;//Ты нападаешь на овцу? А ты не хочешь выбрать себе еще более беззащитную жертву?
-	ATTACK_CRIME     = "SVM_6_ATTACK_CRIME"    ;//Я не общаюсь с бандитами!
-	THEFT_CRIME      = "SVM_6_THEFT_CRIME"    ;//Я не имею дел с ворами!
+	SHEEPKILLER_CRIME   = "SVM_6_SHEEPKILLER_CRIME"   ;//РўС‹ РЅР°РїР°РґР°РµС€СЊ РЅР° РѕРІС†Сѓ? Рђ С‚С‹ РЅРµ С…РѕС‡РµС€СЊ РІС‹Р±СЂР°С‚СЊ СЃРµР±Рµ РµС‰Рµ Р±РѕР»РµРµ Р±РµР·Р·Р°С‰РёС‚РЅСѓСЋ Р¶РµСЂС‚РІСѓ?
+	ATTACK_CRIME     = "SVM_6_ATTACK_CRIME"    ;//РЇ РЅРµ РѕР±С‰Р°СЋСЃСЊ СЃ Р±Р°РЅРґРёС‚Р°РјРё!
+	THEFT_CRIME      = "SVM_6_THEFT_CRIME"    ;//РЇ РЅРµ РёРјРµСЋ РґРµР» СЃ РІРѕСЂР°РјРё!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_6_PAL_CITY_CRIME"   ;//И ты хочешь стать паладином? Подожди, вот лорд Хаген узнает об этом!
- 	MIL_CITY_CRIME     = "SVM_6_MIL_CITY_CRIME"   ;//Ты действительно состоишь в городской страже? Лорд Андрэ не потерпит такого!
- 	CITY_CRIME       = "SVM_6_CITY_CRIME"    ;//Иди к лорду Андрэ, пока еще не поздно.
+ 	PAL_CITY_CRIME     = "SVM_6_PAL_CITY_CRIME"   ;//Р С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј? РџРѕРґРѕР¶РґРё, РІРѕС‚ Р»РѕСЂРґ РҐР°РіРµРЅ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+ 	MIL_CITY_CRIME     = "SVM_6_MIL_CITY_CRIME"   ;//РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРѕСЃС‚РѕРёС€СЊ РІ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рµ? Р›РѕСЂРґ РђРЅРґСЂСЌ РЅРµ РїРѕС‚РµСЂРїРёС‚ С‚Р°РєРѕРіРѕ!
+ 	CITY_CRIME       = "SVM_6_CITY_CRIME"    ;//РРґРё Рє Р»РѕСЂРґСѓ РђРЅРґСЂСЌ, РїРѕРєР° РµС‰Рµ РЅРµ РїРѕР·РґРЅРѕ.
  	// -------------------------
-	MONA_CRIME       = "SVM_6_MONA_CRIME"    ;//Иди к отцу Парлану. Он отпустит тебе твои грехи!
-	FARM_CRIME       = "SVM_6_FARM_CRIME"    ;//Ли узнает об этом, и тебе придется заплатить.
-	OC_CRIME       = "SVM_6_OC_CRIME"     ;//Командующему Гаронду это не понравится. Тебе лучше поговорить с ним, пока не поздно!
+	MONA_CRIME       = "SVM_6_MONA_CRIME"    ;//РРґРё Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ. РћРЅ РѕС‚РїСѓСЃС‚РёС‚ С‚РµР±Рµ С‚РІРѕРё РіСЂРµС…Рё!
+	FARM_CRIME       = "SVM_6_FARM_CRIME"    ;//Р›Рё СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј, Рё С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ.
+	OC_CRIME       = "SVM_6_OC_CRIME"     ;//РљРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Р“Р°СЂРѕРЅРґСѓ СЌС‚Рѕ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ. РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј, РїРѕРєР° РЅРµ РїРѕР·РґРЅРѕ!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_6_TOUGHGUY_ATTACKLOST"		;//Хорошо, ты победил. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_6_TOUGHGUY_ATTACKWON"		;//Я думаю, теперь ты понимаешь, с кем ты имеешь дело. Чего ты хочешь?
-	TOUGHGUY_PLAYERATTACK		= "SVM_6_TOUGHGUY_PLAYERATTACK"	;//Опять ты? Хочешь еще раз сразиться со мной, да?
+	TOUGHGUY_ATTACKLOST			= "SVM_6_TOUGHGUY_ATTACKLOST"		;//РҐРѕСЂРѕС€Рѕ, С‚С‹ РїРѕР±РµРґРёР». Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_6_TOUGHGUY_ATTACKWON"		;//РЇ РґСѓРјР°СЋ, С‚РµРїРµСЂСЊ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, СЃ РєРµРј С‚С‹ РёРјРµРµС€СЊ РґРµР»Рѕ. Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_PLAYERATTACK		= "SVM_6_TOUGHGUY_PLAYERATTACK"	;//РћРїСЏС‚СЊ С‚С‹? РҐРѕС‡РµС€СЊ РµС‰Рµ СЂР°Р· СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№, РґР°?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_6_GOLD_1000"				;//1000 золотых монет.
-	GOLD_950					= "SVM_6_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_6_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_6_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_6_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_6_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_6_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_6_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_6_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_6_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_6_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_6_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_6_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_6_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_6_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_6_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_6_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_6_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_6_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_6_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_6_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_6_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_6_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_6_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_6_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_6_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_6_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_6_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_6_GOLD_1000"				;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_6_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_6_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_6_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_6_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_6_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_6_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_6_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_6_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_6_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_6_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_6_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_6_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_6_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_6_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_6_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_6_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_6_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_6_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_6_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_6_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_6_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_6_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_6_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_6_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_6_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_6_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_6_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_6_Smalltalk01"				;//...не могу поверить в это...
-	Smalltalk02					= "SVM_6_Smalltalk02"				;//...Я не был бы так уверен...
-	Smalltalk03					= "SVM_6_Smalltalk03"				;//...но он все время знал об этом...
-	Smalltalk04					= "SVM_6_Smalltalk04"				;//...Я теперь даже не знаю, кому верить...
-	Smalltalk05					= "SVM_6_Smalltalk05"				;//...Я не знаю, где его так отделали...
-	Smalltalk06					= "SVM_6_Smalltalk06"				;//...У меня и так хватает проблем...
-	Smalltalk07					= "SVM_6_Smalltalk07"				;//...Я что-то слышал об этом...
-	Smalltalk08					= "SVM_6_Smalltalk08"				;//...Я не хочу иметь к этому никакого отношения...
-	Smalltalk09					= "SVM_6_Smalltalk09"				;//...не нужно верить всему, что говорят...
-	Smalltalk10					= "SVM_6_Smalltalk10"				;//...Он узнал это не от меня...
-	Smalltalk11					= "SVM_6_Smalltalk11"				;//...Я уже подумывал об этом...
-	Smalltalk12					= "SVM_6_Smalltalk12"				;//...никому не интересно мое мнение...
-	Smalltalk13					= "SVM_6_Smalltalk13"				;//...он не заслужил этого...
-	Smalltalk14					= "SVM_6_Smalltalk14"				;//...не говори, что ты не знал этого...
-	Smalltalk15					= "SVM_6_Smalltalk15"				;//...это было очевидно...
-	Smalltalk16					= "SVM_6_Smalltalk16"				;//...где ты это услышал...
-	Smalltalk17					= "SVM_6_Smalltalk17"				;//...так может продолжаться вечность...
-	Smalltalk18					= "SVM_6_Smalltalk18"				;//...У меня собственное мнение на этот счет...
-	Smalltalk19					= "SVM_6_Smalltalk19"				;//...это было так, как ты сказал...
-	Smalltalk20					= "SVM_6_Smalltalk20"				;//...Я не верю, что это что-то изменит...
-	Smalltalk21					= "SVM_6_Smalltalk21"				;//...первый раз слышу об этом...
-	Smalltalk22					= "SVM_6_Smalltalk22"				;//...нам остается только ждать...
-	Smalltalk23					= "SVM_6_Smalltalk23"				;//...Я знал, что это будет проблемой...
-	Smalltalk24					= "SVM_6_Smalltalk24"				;//...почему они не слушают меня...
+	Smalltalk01					= "SVM_6_Smalltalk01"				;//...РЅРµ РјРѕРіСѓ РїРѕРІРµСЂРёС‚СЊ РІ СЌС‚Рѕ...
+	Smalltalk02					= "SVM_6_Smalltalk02"				;//...РЇ РЅРµ Р±С‹Р» Р±С‹ С‚Р°Рє СѓРІРµСЂРµРЅ...
+	Smalltalk03					= "SVM_6_Smalltalk03"				;//...РЅРѕ РѕРЅ РІСЃРµ РІСЂРµРјСЏ Р·РЅР°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk04					= "SVM_6_Smalltalk04"				;//...РЇ С‚РµРїРµСЂСЊ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ, РєРѕРјСѓ РІРµСЂРёС‚СЊ...
+	Smalltalk05					= "SVM_6_Smalltalk05"				;//...РЇ РЅРµ Р·РЅР°СЋ, РіРґРµ РµРіРѕ С‚Р°Рє РѕС‚РґРµР»Р°Р»Рё...
+	Smalltalk06					= "SVM_6_Smalltalk06"				;//...РЈ РјРµРЅСЏ Рё С‚Р°Рє С…РІР°С‚Р°РµС‚ РїСЂРѕР±Р»РµРј...
+	Smalltalk07					= "SVM_6_Smalltalk07"				;//...РЇ С‡С‚Рѕ-С‚Рѕ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk08					= "SVM_6_Smalltalk08"				;//...РЇ РЅРµ С…РѕС‡Сѓ РёРјРµС‚СЊ Рє СЌС‚РѕРјСѓ РЅРёРєР°РєРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ...
+	Smalltalk09					= "SVM_6_Smalltalk09"				;//...РЅРµ РЅСѓР¶РЅРѕ РІРµСЂРёС‚СЊ РІСЃРµРјСѓ, С‡С‚Рѕ РіРѕРІРѕСЂСЏС‚...
+	Smalltalk10					= "SVM_6_Smalltalk10"				;//...РћРЅ СѓР·РЅР°Р» СЌС‚Рѕ РЅРµ РѕС‚ РјРµРЅСЏ...
+	Smalltalk11					= "SVM_6_Smalltalk11"				;//...РЇ СѓР¶Рµ РїРѕРґСѓРјС‹РІР°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk12					= "SVM_6_Smalltalk12"				;//...РЅРёРєРѕРјСѓ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ РјРѕРµ РјРЅРµРЅРёРµ...
+	Smalltalk13					= "SVM_6_Smalltalk13"				;//...РѕРЅ РЅРµ Р·Р°СЃР»СѓР¶РёР» СЌС‚РѕРіРѕ...
+	Smalltalk14					= "SVM_6_Smalltalk14"				;//...РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ РЅРµ Р·РЅР°Р» СЌС‚РѕРіРѕ...
+	Smalltalk15					= "SVM_6_Smalltalk15"				;//...СЌС‚Рѕ Р±С‹Р»Рѕ РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk16					= "SVM_6_Smalltalk16"				;//...РіРґРµ С‚С‹ СЌС‚Рѕ СѓСЃР»С‹С€Р°Р»...
+	Smalltalk17					= "SVM_6_Smalltalk17"				;//...С‚Р°Рє РјРѕР¶РµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ РІРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk18					= "SVM_6_Smalltalk18"				;//...РЈ РјРµРЅСЏ СЃРѕР±СЃС‚РІРµРЅРЅРѕРµ РјРЅРµРЅРёРµ РЅР° СЌС‚РѕС‚ СЃС‡РµС‚...
+	Smalltalk19					= "SVM_6_Smalltalk19"				;//...СЌС‚Рѕ Р±С‹Р»Рѕ С‚Р°Рє, РєР°Рє С‚С‹ СЃРєР°Р·Р°Р»...
+	Smalltalk20					= "SVM_6_Smalltalk20"				;//...РЇ РЅРµ РІРµСЂСЋ, С‡С‚Рѕ СЌС‚Рѕ С‡С‚Рѕ-С‚Рѕ РёР·РјРµРЅРёС‚...
+	Smalltalk21					= "SVM_6_Smalltalk21"				;//...РїРµСЂРІС‹Р№ СЂР°Р· СЃР»С‹С€Сѓ РѕР± СЌС‚РѕРј...
+	Smalltalk22					= "SVM_6_Smalltalk22"				;//...РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р¶РґР°С‚СЊ...
+	Smalltalk23					= "SVM_6_Smalltalk23"				;//...РЇ Р·РЅР°Р», С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ РїСЂРѕР±Р»РµРјРѕР№...
+	Smalltalk24					= "SVM_6_Smalltalk24"				;//...РїРѕС‡РµРјСѓ РѕРЅРё РЅРµ СЃР»СѓС€Р°СЋС‚ РјРµРЅСЏ...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_6_Smalltalk25"				;//...он бежал так, как будто за ним гнался сам Белиар...
-	Smalltalk26					= "SVM_6_Smalltalk26"				;//...конечно, в конце концов, мы его поймали...
-	Smalltalk27					= "SVM_6_Smalltalk27"				;//...ты должен все хорошенько взвесить...
+	Smalltalk25					= "SVM_6_Smalltalk25"				;//...РѕРЅ Р±РµР¶Р°Р» С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ Р·Р° РЅРёРј РіРЅР°Р»СЃСЏ СЃР°Рј Р‘РµР»РёР°СЂ...
+	Smalltalk26					= "SVM_6_Smalltalk26"				;//...РєРѕРЅРµС‡РЅРѕ, РІ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РјС‹ РµРіРѕ РїРѕР№РјР°Р»Рё...
+	Smalltalk27					= "SVM_6_Smalltalk27"				;//...С‚С‹ РґРѕР»Р¶РµРЅ РІСЃРµ С…РѕСЂРѕС€РµРЅСЊРєРѕ РІР·РІРµСЃРёС‚СЊ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_6_Smalltalk28"				;//...некоторые даже не знают, насколько они порочны...
-	Smalltalk29					= "SVM_6_Smalltalk29"				;//...такова воля Инноса...
-	Smalltalk30					= "SVM_6_Smalltalk30"				;//...его дела были праведными...
+	Smalltalk28					= "SVM_6_Smalltalk28"				;//...РЅРµРєРѕС‚РѕСЂС‹Рµ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋС‚, РЅР°СЃРєРѕР»СЊРєРѕ РѕРЅРё РїРѕСЂРѕС‡РЅС‹...
+	Smalltalk29					= "SVM_6_Smalltalk29"				;//...С‚Р°РєРѕРІР° РІРѕР»СЏ РРЅРЅРѕСЃР°...
+	Smalltalk30					= "SVM_6_Smalltalk30"				;//...РµРіРѕ РґРµР»Р° Р±С‹Р»Рё РїСЂР°РІРµРґРЅС‹РјРё...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_6_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_6_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_6_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_6_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_6_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_6_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_6_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_6_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_6_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_6_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_6_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_6_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_6_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_6_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_6_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_6_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_6_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_6_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_6_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_6_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_6_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_6_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_6_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_6_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_6_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_6_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_6_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_6_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_6_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_6_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_6_TEMPEL_2_GALGEN"			;//Выйдя из храма и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_6_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_6_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_6_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_6_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_6_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_6_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_6_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_6_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_6_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_6_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_6_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_6_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_6_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_6_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_6_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_6_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР° Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_6_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_6_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_6_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_6_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_6_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_6_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_6_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_6_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_6_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_6_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_6_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_6_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_6_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_6_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_6_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_6_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_6_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_6_Addon_WrongArmor";				//В этой штуке ты выглядишь смешно. Надень что-нибудь приличное.
-	ADDON_WRONGARMOR_SLD		= "SVM_6_ADDON_WRONGARMOR_SLD";			//Не думаешь ли ты, что я тебя не узнал? Отвали и переоденься.
-	ADDON_WRONGARMOR_MIL		= "SVM_6_ADDON_WRONGARMOR_MIL";			//Солдат! Что на тебе надето? Переоденься. И немедленно!
-	ADDON_WRONGARMOR_KDF		= "SVM_6_ADDON_WRONGARMOR_KDF";			//Слуга Инноса не должен скрываться. Пойди и надень свою робу.
-	ADDON_NOARMOR_BDT			= "SVM_6_ADDON_ADDON_NOARMOR_BDT";		//Ты гуляешь тут, как рудокоп. Тебе стоит надеть что-нибудь.
+	ADDON_WRONGARMOR			= "SVM_6_Addon_WrongArmor";				//Р’ СЌС‚РѕР№ С€С‚СѓРєРµ С‚С‹ РІС‹РіР»СЏРґРёС€СЊ СЃРјРµС€РЅРѕ. РќР°РґРµРЅСЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёР»РёС‡РЅРѕРµ.
+	ADDON_WRONGARMOR_SLD		= "SVM_6_ADDON_WRONGARMOR_SLD";			//РќРµ РґСѓРјР°РµС€СЊ Р»Рё С‚С‹, С‡С‚Рѕ СЏ С‚РµР±СЏ РЅРµ СѓР·РЅР°Р»? РћС‚РІР°Р»Рё Рё РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_WRONGARMOR_MIL		= "SVM_6_ADDON_WRONGARMOR_MIL";			//РЎРѕР»РґР°С‚! Р§С‚Рѕ РЅР° С‚РµР±Рµ РЅР°РґРµС‚Рѕ? РџРµСЂРµРѕРґРµРЅСЊСЃСЏ. Р РЅРµРјРµРґР»РµРЅРЅРѕ!
+	ADDON_WRONGARMOR_KDF		= "SVM_6_ADDON_WRONGARMOR_KDF";			//РЎР»СѓРіР° РРЅРЅРѕСЃР° РЅРµ РґРѕР»Р¶РµРЅ СЃРєСЂС‹РІР°С‚СЊСЃСЏ. РџРѕР№РґРё Рё РЅР°РґРµРЅСЊ СЃРІРѕСЋ СЂРѕР±Сѓ.
+	ADDON_NOARMOR_BDT			= "SVM_6_ADDON_ADDON_NOARMOR_BDT";		//РўС‹ РіСѓР»СЏРµС€СЊ С‚СѓС‚, РєР°Рє СЂСѓРґРѕРєРѕРї. РўРµР±Рµ СЃС‚РѕРёС‚ РЅР°РґРµС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ.
 
-	ADDON_DIEBANDIT				= "SVM_6_ADDON_DIEBANDIT";				//Ты не на того напал, БАНДЮГА!
-	ADDON_DIRTYPIRATE			= "SVM_6_ADDON_DIRTYPIRATE";			//Возвращайся в море, пират!
+	ADDON_DIEBANDIT				= "SVM_6_ADDON_DIEBANDIT";				//РўС‹ РЅРµ РЅР° С‚РѕРіРѕ РЅР°РїР°Р», Р‘РђРќР”Р®Р“Рђ!
+	ADDON_DIRTYPIRATE			= "SVM_6_ADDON_DIRTYPIRATE";			//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РІ РјРѕСЂРµ, РїРёСЂР°С‚!
 };
 
 instance SVM_7 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_7_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_7_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_7_Weather"						;//Какая паршивая погода!
+	MILGreetings				= 	"SVM_7_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_7_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_7_Weather"						;//РљР°РєР°СЏ РїР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_7_IGetYouStill"				;//Опять ТЫ!
-	DieEnemy					=	"SVM_7_DieEnemy"					;//Я разорву тебя на куски!
-	DieMonster					=	"SVM_7_DieMonster"					;//Еще одна тварь!
-	DirtyThief					=	"SVM_7_DirtyThief"					;//Ах ты подлый вор!
-	HandsOff					=	"SVM_7_HandsOff"					;//Руки прочь!
-	SheepKiller					=	"SVM_7_SheepKiller"					;//Эй! оставь наших овец в покое!
-	SheepKillerMonster			=	"SVM_7_SheepKillerMonster"			;//Этот монстр ворует наших овец!
-	YouMurderer					=	"SVM_7_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_7_DieStupidBeast"				;//Что ЭТА тварь делает здесь?
-	YouDareHitMe				=	"SVM_7_YouDareHitMe"				;//Сейчас ты получишь!
-	YouAskedForIt				=	"SVM_7_YouAskedForIt"				;//Ты сам напросился.
-	ThenIBeatYouOutOfHere		=	"SVM_7_ThenIBeatYouOutOfHere"		;//Иногда слова не доходят...
-	WhatDidYouDoInThere			=	"SVM_7_WhatDidYouDoInThere"			;//Что тебе там было нужно, а?!
-	WillYouStopFighting			=	"SVM_7_WillYouStopFighting"			;//Прекрати немедленно!
+	IGetYouStill				= 	"SVM_7_IGetYouStill"				;//РћРїСЏС‚СЊ РўР«!
+	DieEnemy					=	"SVM_7_DieEnemy"					;//РЇ СЂР°Р·РѕСЂРІСѓ С‚РµР±СЏ РЅР° РєСѓСЃРєРё!
+	DieMonster					=	"SVM_7_DieMonster"					;//Р•С‰Рµ РѕРґРЅР° С‚РІР°СЂСЊ!
+	DirtyThief					=	"SVM_7_DirtyThief"					;//РђС… С‚С‹ РїРѕРґР»С‹Р№ РІРѕСЂ!
+	HandsOff					=	"SVM_7_HandsOff"					;//Р СѓРєРё РїСЂРѕС‡СЊ!
+	SheepKiller					=	"SVM_7_SheepKiller"					;//Р­Р№! РѕСЃС‚Р°РІСЊ РЅР°С€РёС… РѕРІРµС† РІ РїРѕРєРѕРµ!
+	SheepKillerMonster			=	"SVM_7_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_7_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_7_DieStupidBeast"				;//Р§С‚Рѕ Р­РўРђ С‚РІР°СЂСЊ РґРµР»Р°РµС‚ Р·РґРµСЃСЊ?
+	YouDareHitMe				=	"SVM_7_YouDareHitMe"				;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	YouAskedForIt				=	"SVM_7_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ.
+	ThenIBeatYouOutOfHere		=	"SVM_7_ThenIBeatYouOutOfHere"		;//РРЅРѕРіРґР° СЃР»РѕРІР° РЅРµ РґРѕС…РѕРґСЏС‚...
+	WhatDidYouDoInThere			=	"SVM_7_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ С‚Р°Рј Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_7_WillYouStopFighting"			;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_7_KillEnemy"					;//Умри!
-	EnemyKilled					=	"SVM_7_EnemyKilled"					;//Тупой ублюдок...
-	MonsterKilled				=	"SVM_7_MonsterKilled"				;//Получай, грязная тварь!
-	ThiefDown					=	"SVM_7_ThiefDown"					;//Держись подальше от моих вещей - понял?
-	rumfummlerDown				=	"SVM_7_rumfummlerDown"				;//Впредь не распускай руки!
-	SheepAttackerDown			=	"SVM_7_SheepAttackerDown"			;//Впредь держись подальше от наших овец!
-	KillMurderer				=	"SVM_7_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_7_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_7_NeverHitMeAgain"				;//Не пытайся повторить это, мальчик!
-	YouBetterShouldHaveListened	=	"SVM_7_YouBetterShouldHaveListened"	;//Пусть это послужит тебе уроком.
-	GetUpAndBeGone				=	"SVM_7_GetUpAndBeGone"				;//Вставай и убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_7_NeverEnterRoomAgain"			;//Чтобы больше я тебя не видел там! Понятно?
-	ThereIsNoFightingHere		=	"SVM_7_ThereIsNoFightingHere"		;//Здесь я задаю трепку, понял?
+	KillEnemy					= 	"SVM_7_KillEnemy"					;//РЈРјСЂРё!
+	EnemyKilled					=	"SVM_7_EnemyKilled"					;//РўСѓРїРѕР№ СѓР±Р»СЋРґРѕРє...
+	MonsterKilled				=	"SVM_7_MonsterKilled"				;//РџРѕР»СѓС‡Р°Р№, РіСЂСЏР·РЅР°СЏ С‚РІР°СЂСЊ!
+	ThiefDown					=	"SVM_7_ThiefDown"					;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РјРѕРёС… РІРµС‰РµР№ - РїРѕРЅСЏР»?
+	rumfummlerDown				=	"SVM_7_rumfummlerDown"				;//Р’РїСЂРµРґСЊ РЅРµ СЂР°СЃРїСѓСЃРєР°Р№ СЂСѓРєРё!
+	SheepAttackerDown			=	"SVM_7_SheepAttackerDown"			;//Р’РїСЂРµРґСЊ РґРµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅР°С€РёС… РѕРІРµС†!
+	KillMurderer				=	"SVM_7_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_7_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_7_NeverHitMeAgain"				;//РќРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРІС‚РѕСЂРёС‚СЊ СЌС‚Рѕ, РјР°Р»СЊС‡РёРє!
+	YouBetterShouldHaveListened	=	"SVM_7_YouBetterShouldHaveListened"	;//РџСѓСЃС‚СЊ СЌС‚Рѕ РїРѕСЃР»СѓР¶РёС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј.
+	GetUpAndBeGone				=	"SVM_7_GetUpAndBeGone"				;//Р’СЃС‚Р°РІР°Р№ Рё СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_7_NeverEnterRoomAgain"			;//Р§С‚РѕР±С‹ Р±РѕР»СЊС€Рµ СЏ С‚РµР±СЏ РЅРµ РІРёРґРµР» С‚Р°Рј! РџРѕРЅСЏС‚РЅРѕ?
+	ThereIsNoFightingHere		=	"SVM_7_ThereIsNoFightingHere"		;//Р—РґРµСЃСЊ СЏ Р·Р°РґР°СЋ С‚СЂРµРїРєСѓ, РїРѕРЅСЏР»?
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_7_SpareMe"						;//Оставь меня в покое!
-	RunAway						= 	"SVM_7_RunAway"						;//Черт, я ухожу отсюда!
+	SpareMe						=	"SVM_7_SpareMe"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
+	RunAway						= 	"SVM_7_RunAway"						;//Р§РµСЂС‚, СЏ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_7_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_7_Guards"					;//СТРАЖА!
-	Help						=	"SVM_7_Help"					;//Помогите!
+	Alarm						=	"SVM_7_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_7_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_7_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_7_GoodMonsterKill"			;//Да! Вот как нужно разбираться с этими тварями!
-	GoodKill					= 	"SVM_7_GoodKill"				;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_7_GoodMonsterKill"			;//Р”Р°! Р’РѕС‚ РєР°Рє РЅСѓР¶РЅРѕ СЂР°Р·Р±РёСЂР°С‚СЊСЃСЏ СЃ СЌС‚РёРјРё С‚РІР°СЂСЏРјРё!
+	GoodKill					= 	"SVM_7_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_7_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_7_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_7_RunCoward"				;//Ты еще не знаешь, на что я способен!
+	RunCoward					=	"SVM_7_RunCoward"				;//РўС‹ РµС‰Рµ РЅРµ Р·РЅР°РµС€СЊ, РЅР° С‡С‚Рѕ СЏ СЃРїРѕСЃРѕР±РµРЅ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_7_GetOutOfHere"			;//Прочь!
-	WhyAreYouInHere				=	"SVM_7_WhyAreYouInHere"			;//Что тебе нужно здесь?!
-	YesGoOutOfHere				= 	"SVM_7_YesGoOutOfHere"			;//Прекрати!
+	GetOutOfHere				=	"SVM_7_GetOutOfHere"			;//РџСЂРѕС‡СЊ!
+	WhyAreYouInHere				=	"SVM_7_WhyAreYouInHere"			;//Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?!
+	YesGoOutOfHere				= 	"SVM_7_YesGoOutOfHere"			;//РџСЂРµРєСЂР°С‚Рё!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_7_WhatsThisSupposedToBe"	;//Что ты там ищешь?
-	YouDisturbedMySlumber		=	"SVM_7_YouDisturbedMySlumber"	;//(просыпается) В чем дело?
+	WhatsThisSupposedToBe		=	"SVM_7_WhatsThisSupposedToBe"	;//Р§С‚Рѕ С‚С‹ С‚Р°Рј РёС‰РµС€СЊ?
+	YouDisturbedMySlumber		=	"SVM_7_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р’ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_7_ITookYourGold"			;//Спасибо за золото, герой!
-	ShitNoGold					=	"SVM_7_ShitNoGold"				;//Ах ты сосунок, у тебя даже золота с собой нет!
-	ITakeYourWeapon				=	"SVM_7_ITakeYourWeapon"			;//Я думаю, лучше забрать твое оружие.
+	ITookYourGold				=	"SVM_7_ITookYourGold"			;//РЎРїР°СЃРёР±Рѕ Р·Р° Р·РѕР»РѕС‚Рѕ, РіРµСЂРѕР№!
+	ShitNoGold					=	"SVM_7_ShitNoGold"				;//РђС… С‚С‹ СЃРѕСЃСѓРЅРѕРє, Сѓ С‚РµР±СЏ РґР°Р¶Рµ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№ РЅРµС‚!
+	ITakeYourWeapon				=	"SVM_7_ITakeYourWeapon"			;//РЇ РґСѓРјР°СЋ, Р»СѓС‡С€Рµ Р·Р°Р±СЂР°С‚СЊ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_7_WhatAreYouDoing"			;//Смотри! Еще раз, и ты пожалеешь об этом.
+	WhatAreYouDoing				=	"SVM_7_WhatAreYouDoing"			;//РЎРјРѕС‚СЂРё! Р•С‰Рµ СЂР°Р·, Рё С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_7_LookingForTroubleAgain"	;//(агрессивно) Хочешь еще получить по морде?
+	LookingForTroubleAgain		=	"SVM_7_LookingForTroubleAgain"	;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РҐРѕС‡РµС€СЊ РµС‰Рµ РїРѕР»СѓС‡РёС‚СЊ РїРѕ РјРѕСЂРґРµ?
 																	 
-	StopMagic					=	"SVM_7_StopMagic"				;//Прекрати это магическое дерьмо немедленно!
-	ISaidStopMagic				=	"SVM_7_ISaidStopMagic"			;//Хочешь получить? Прекрати немедленно!!!
-	WeaponDown					=	"SVM_7_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_7_ISaidWeaponDown"			;//Ты уберешь это чертово оружие?!
-	WiseMove					=	"SVM_7_WiseMove"				;//Умный мальчик!
+	StopMagic					=	"SVM_7_StopMagic"				;//РџСЂРµРєСЂР°С‚Рё СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ РґРµСЂСЊРјРѕ РЅРµРјРµРґР»РµРЅРЅРѕ!
+	ISaidStopMagic				=	"SVM_7_ISaidStopMagic"			;//РҐРѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ? РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!!!
+	WeaponDown					=	"SVM_7_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_7_ISaidWeaponDown"			;//РўС‹ СѓР±РµСЂРµС€СЊ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РѕСЂСѓР¶РёРµ?!
+	WiseMove					=	"SVM_7_WiseMove"				;//РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_7_NextTimeYoureInForIt"	;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_7_OhMyHead"				;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_7_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_7_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_7_TheresAFight"			;//(страстно) Ах, драка!
-	OhMyGodItsAFight			=	"SVM_7_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой, драка!
-	GoodVictory					=	"SVM_7_GoodVictory"				;//(дьявольский смех) Ты показал ему, кто здесь главный!
-	NotBad						= 	"SVM_7_NotBad"					;//(одобрительно) Неплохо...
-	OhMyGodHesDown				=	"SVM_7_OhMyGodHesDown"			;//(себе под нос) Бог мой! Какая жестокость...
-	CheerFriend01				=	"SVM_7_CheerFriend01"			;//Да, задай ему!
-	CheerFriend02				=	"SVM_7_CheerFriend02"			;//Покажи ему!
-	CheerFriend03				=	"SVM_7_CheerFriend03"			;//Задай ему!
-	Ooh01						=	"SVM_7_Ooh01"					;//Защищайся!
-	Ooh02						=	"SVM_7_Ooh02"					;//Вперед, ответь ему!
-	Ooh03						=	"SVM_7_Ooh03"					;//Охх! Это больно!
+	TheresAFight				=	"SVM_7_TheresAFight"			;//(СЃС‚СЂР°СЃС‚РЅРѕ) РђС…, РґСЂР°РєР°!
+	OhMyGodItsAFight			=	"SVM_7_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№, РґСЂР°РєР°!
+	GoodVictory					=	"SVM_7_GoodVictory"				;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РўС‹ РїРѕРєР°Р·Р°Р» РµРјСѓ, РєС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№!
+	NotBad						= 	"SVM_7_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РќРµРїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_7_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р‘РѕРі РјРѕР№! РљР°РєР°СЏ Р¶РµСЃС‚РѕРєРѕСЃС‚СЊ...
+	CheerFriend01				=	"SVM_7_CheerFriend01"			;//Р”Р°, Р·Р°РґР°Р№ РµРјСѓ!
+	CheerFriend02				=	"SVM_7_CheerFriend02"			;//РџРѕРєР°Р¶Рё РµРјСѓ!
+	CheerFriend03				=	"SVM_7_CheerFriend03"			;//Р—Р°РґР°Р№ РµРјСѓ!
+	Ooh01						=	"SVM_7_Ooh01"					;//Р—Р°С‰РёС‰Р°Р№СЃСЏ!
+	Ooh02						=	"SVM_7_Ooh02"					;//Р’РїРµСЂРµРґ, РѕС‚РІРµС‚СЊ РµРјСѓ!
+	Ooh03						=	"SVM_7_Ooh03"					;//РћС…С…! Р­С‚Рѕ Р±РѕР»СЊРЅРѕ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_7_WhatWasThat"				;//(себе под нос, просыпаясь) Черт, что это было?!
+	WhatWasThat					= "SVM_7_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§РµСЂС‚, С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_7_GetOutOfMyBed"				;//Убирайся с моей кровати!
-	Awake						= "SVM_7_Awake"						;//(зевает)
+	GetOutOfMyBed				= "SVM_7_GetOutOfMyBed"				;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_7_Awake"						;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_7_ABS_COMMANDER"    ;//Я слышал, ты ходил к командующему и все уладил.
-	ABS_MONASTERY    = "SVM_7_ABS_MONASTERY"    ;//Говорят, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM       = "SVM_7_ABS_FARM"        ;//Я слышал, ты обратился к Ли и все уладил.
-	ABS_GOOD       = "SVM_7_ABS_GOOD"       ;//Хорошо.
+	ABS_COMMANDER     = "SVM_7_ABS_COMMANDER"    ;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY    = "SVM_7_ABS_MONASTERY"    ;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM       = "SVM_7_ABS_FARM"        ;//РЇ СЃР»С‹С€Р°Р», С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD       = "SVM_7_ABS_GOOD"       ;//РҐРѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_7_SHEEPKILLER_CRIME"   ;//Убийство овцы - это уже слишком! Проваливай!
-	ATTACK_CRIME     = "SVM_7_ATTACK_CRIME"    ;//Ты бандит, убирайся!
- 	THEFT_CRIME      = "SVM_7_THEFT_CRIME"    ;//Проклятый вор! Я не хочу видеть тебя!
+	SHEEPKILLER_CRIME   = "SVM_7_SHEEPKILLER_CRIME"   ;//РЈР±РёР№СЃС‚РІРѕ РѕРІС†С‹ - СЌС‚Рѕ СѓР¶Рµ СЃР»РёС€РєРѕРј! РџСЂРѕРІР°Р»РёРІР°Р№!
+	ATTACK_CRIME     = "SVM_7_ATTACK_CRIME"    ;//РўС‹ Р±Р°РЅРґРёС‚, СѓР±РёСЂР°Р№СЃСЏ!
+ 	THEFT_CRIME      = "SVM_7_THEFT_CRIME"    ;//РџСЂРѕРєР»СЏС‚С‹Р№ РІРѕСЂ! РЇ РЅРµ С…РѕС‡Сѓ РІРёРґРµС‚СЊ С‚РµР±СЏ!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_7_PAL_CITY_CRIME"   ;//Я не ожидал такого от паладина! Лорд Хаген будет недоволен.
- 	MIL_CITY_CRIME     = "SVM_7_MIL_CITY_CRIME"   ;//Как такой, как ты, вообще мог попасть в городскую стражу? Лорд Андрэ заставит тебя заплатить за это!
- 	CITY_CRIME       = "SVM_7_CITY_CRIME"    ;//Лорд Андрэ узнает о твоем поведении!
+ 	PAL_CITY_CRIME     = "SVM_7_PAL_CITY_CRIME"   ;//РЇ РЅРµ РѕР¶РёРґР°Р» С‚Р°РєРѕРіРѕ РѕС‚ РїР°Р»Р°РґРёРЅР°! Р›РѕСЂРґ РҐР°РіРµРЅ Р±СѓРґРµС‚ РЅРµРґРѕРІРѕР»РµРЅ.
+ 	MIL_CITY_CRIME     = "SVM_7_MIL_CITY_CRIME"   ;//РљР°Рє С‚Р°РєРѕР№, РєР°Рє С‚С‹, РІРѕРѕР±С‰Рµ РјРѕРі РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ? Р›РѕСЂРґ РђРЅРґСЂСЌ Р·Р°СЃС‚Р°РІРёС‚ С‚РµР±СЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ!
+ 	CITY_CRIME       = "SVM_7_CITY_CRIME"    ;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РІРѕРµРј РїРѕРІРµРґРµРЅРёРё!
 	// -------------------------
-	MONA_CRIME       = "SVM_7_MONA_CRIME"    ;//Отец Парлан будет в ярости, узнав о твоем кощунстве!
-	FARM_CRIME       = "SVM_7_FARM_CRIME"    ;//Ли не простит тебе это!
-	OC_CRIME       = "SVM_7_OC_CRIME"     ;//Командующий Гаронд узнает про это - и ты ответишь за все!
+	MONA_CRIME       = "SVM_7_MONA_CRIME"    ;//РћС‚РµС† РџР°СЂР»Р°РЅ Р±СѓРґРµС‚ РІ СЏСЂРѕСЃС‚Рё, СѓР·РЅР°РІ Рѕ С‚РІРѕРµРј РєРѕС‰СѓРЅСЃС‚РІРµ!
+	FARM_CRIME       = "SVM_7_FARM_CRIME"    ;//Р›Рё РЅРµ РїСЂРѕСЃС‚РёС‚ С‚РµР±Рµ СЌС‚Рѕ!
+	OC_CRIME       = "SVM_7_OC_CRIME"     ;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ СѓР·РЅР°РµС‚ РїСЂРѕ СЌС‚Рѕ - Рё С‚С‹ РѕС‚РІРµС‚РёС€СЊ Р·Р° РІСЃРµ!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_7_TOUGHGUY_ATTACKLOST"		;//Ну и удар у тебя... Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_7_TOUGHGUY_ATTACKWON"		;//Есть еще вопросы?
-	TOUGHGUY_PLAYERATTACK		= "SVM_7_TOUGHGUY_PLAYERATTACK"		;//Ты опять!
+	TOUGHGUY_ATTACKLOST			= "SVM_7_TOUGHGUY_ATTACKLOST"		;//РќСѓ Рё СѓРґР°СЂ Сѓ С‚РµР±СЏ... Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_7_TOUGHGUY_ATTACKWON"		;//Р•СЃС‚СЊ РµС‰Рµ РІРѕРїСЂРѕСЃС‹?
+	TOUGHGUY_PLAYERATTACK		= "SVM_7_TOUGHGUY_PLAYERATTACK"		;//РўС‹ РѕРїСЏС‚СЊ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_7_GOLD_1000"					;//1000 золотых монет.
-	GOLD_950					= "SVM_7_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_7_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_7_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_7_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_7_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_7_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_7_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_7_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_7_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_7_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_7_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_7_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_7_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_7_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_7_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_7_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_7_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_7_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_7_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_7_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_7_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_7_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_7_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_7_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_7_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_7_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_7_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_7_GOLD_1000"					;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_7_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_7_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_7_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_7_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_7_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_7_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_7_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_7_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_7_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_7_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_7_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_7_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_7_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_7_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_7_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_7_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_7_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_7_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_7_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_7_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_7_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_7_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_7_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_7_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_7_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_7_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_7_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_7_Smalltalk01"				;//...это действительно правда...
-	Smalltalk02					= "SVM_7_Smalltalk02"				;//...я слышал другое...
-	Smalltalk03					= "SVM_7_Smalltalk03"				;//...не говори, что ты не знал этого...
-	Smalltalk04					= "SVM_7_Smalltalk04"				;//...в наши дни даже и не знаешь, кому верить...
-	Smalltalk05					= "SVM_7_Smalltalk05"				;//...это все сплетни...
-	Smalltalk06					= "SVM_7_Smalltalk06"				;//...Я сам не лучше...
-	Smalltalk07					= "SVM_7_Smalltalk07"				;//...и почему это меня не удивляет...
-	Smalltalk08					= "SVM_7_Smalltalk08"				;//...это не мои проблемы...
-	Smalltalk09					= "SVM_7_Smalltalk09"				;//...ты действительно веришь в это...
-	Smalltalk10					= "SVM_7_Smalltalk10"				;//...никто ничему не учится у меня...
-	Smalltalk11					= "SVM_7_Smalltalk11"				;//...это было всегда очевидно...
-	Smalltalk12					= "SVM_7_Smalltalk12"				;//...он слушал не тех людей...
-	Smalltalk13					= "SVM_7_Smalltalk13"				;//...если он этого не видит, я ничем не могу помочь...
-	Smalltalk14					= "SVM_7_Smalltalk14"				;//...Это не новость...
-	Smalltalk15					= "SVM_7_Smalltalk15"				;//...он сам бы никогда не додумался...
-	Smalltalk16					= "SVM_7_Smalltalk16"				;//...это давно известно...
-	Smalltalk17					= "SVM_7_Smalltalk17"				;//...это плохой бизнес...
-	Smalltalk18					= "SVM_7_Smalltalk18"				;//...Я бы подошел к этому по-другому...
-	Smalltalk19					= "SVM_7_Smalltalk19"				;//...Я полностью с тобой согласен...
-	Smalltalk20					= "SVM_7_Smalltalk20"				;//...если все будет по-другому...
-	Smalltalk21					= "SVM_7_Smalltalk21"				;//...Я даже не знал об этом...
-	Smalltalk22					= "SVM_7_Smalltalk22"				;//...с этим ничего не поделать...
-	Smalltalk23					= "SVM_7_Smalltalk23"				;//...это не удивляет меня...
-	Smalltalk24					= "SVM_7_Smalltalk24"				;//...но он настаивал, что ему лучше знать...
+	Smalltalk01					= "SVM_7_Smalltalk01"				;//...СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂР°РІРґР°...
+	Smalltalk02					= "SVM_7_Smalltalk02"				;//...СЏ СЃР»С‹С€Р°Р» РґСЂСѓРіРѕРµ...
+	Smalltalk03					= "SVM_7_Smalltalk03"				;//...РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ РЅРµ Р·РЅР°Р» СЌС‚РѕРіРѕ...
+	Smalltalk04					= "SVM_7_Smalltalk04"				;//...РІ РЅР°С€Рё РґРЅРё РґР°Р¶Рµ Рё РЅРµ Р·РЅР°РµС€СЊ, РєРѕРјСѓ РІРµСЂРёС‚СЊ...
+	Smalltalk05					= "SVM_7_Smalltalk05"				;//...СЌС‚Рѕ РІСЃРµ СЃРїР»РµС‚РЅРё...
+	Smalltalk06					= "SVM_7_Smalltalk06"				;//...РЇ СЃР°Рј РЅРµ Р»СѓС‡С€Рµ...
+	Smalltalk07					= "SVM_7_Smalltalk07"				;//...Рё РїРѕС‡РµРјСѓ СЌС‚Рѕ РјРµРЅСЏ РЅРµ СѓРґРёРІР»СЏРµС‚...
+	Smalltalk08					= "SVM_7_Smalltalk08"				;//...СЌС‚Рѕ РЅРµ РјРѕРё РїСЂРѕР±Р»РµРјС‹...
+	Smalltalk09					= "SVM_7_Smalltalk09"				;//...С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РІРµСЂРёС€СЊ РІ СЌС‚Рѕ...
+	Smalltalk10					= "SVM_7_Smalltalk10"				;//...РЅРёРєС‚Рѕ РЅРёС‡РµРјСѓ РЅРµ СѓС‡РёС‚СЃСЏ Сѓ РјРµРЅСЏ...
+	Smalltalk11					= "SVM_7_Smalltalk11"				;//...СЌС‚Рѕ Р±С‹Р»Рѕ РІСЃРµРіРґР° РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk12					= "SVM_7_Smalltalk12"				;//...РѕРЅ СЃР»СѓС€Р°Р» РЅРµ С‚РµС… Р»СЋРґРµР№...
+	Smalltalk13					= "SVM_7_Smalltalk13"				;//...РµСЃР»Рё РѕРЅ СЌС‚РѕРіРѕ РЅРµ РІРёРґРёС‚, СЏ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ...
+	Smalltalk14					= "SVM_7_Smalltalk14"				;//...Р­С‚Рѕ РЅРµ РЅРѕРІРѕСЃС‚СЊ...
+	Smalltalk15					= "SVM_7_Smalltalk15"				;//...РѕРЅ СЃР°Рј Р±С‹ РЅРёРєРѕРіРґР° РЅРµ РґРѕРґСѓРјР°Р»СЃСЏ...
+	Smalltalk16					= "SVM_7_Smalltalk16"				;//...СЌС‚Рѕ РґР°РІРЅРѕ РёР·РІРµСЃС‚РЅРѕ...
+	Smalltalk17					= "SVM_7_Smalltalk17"				;//...СЌС‚Рѕ РїР»РѕС…РѕР№ Р±РёР·РЅРµСЃ...
+	Smalltalk18					= "SVM_7_Smalltalk18"				;//...РЇ Р±С‹ РїРѕРґРѕС€РµР» Рє СЌС‚РѕРјСѓ РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk19					= "SVM_7_Smalltalk19"				;//...РЇ РїРѕР»РЅРѕСЃС‚СЊСЋ СЃ С‚РѕР±РѕР№ СЃРѕРіР»Р°СЃРµРЅ...
+	Smalltalk20					= "SVM_7_Smalltalk20"				;//...РµСЃР»Рё РІСЃРµ Р±СѓРґРµС‚ РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk21					= "SVM_7_Smalltalk21"				;//...РЇ РґР°Р¶Рµ РЅРµ Р·РЅР°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk22					= "SVM_7_Smalltalk22"				;//...СЃ СЌС‚РёРј РЅРёС‡РµРіРѕ РЅРµ РїРѕРґРµР»Р°С‚СЊ...
+	Smalltalk23					= "SVM_7_Smalltalk23"				;//...СЌС‚Рѕ РЅРµ СѓРґРёРІР»СЏРµС‚ РјРµРЅСЏ...
+	Smalltalk24					= "SVM_7_Smalltalk24"				;//...РЅРѕ РѕРЅ РЅР°СЃС‚Р°РёРІР°Р», С‡С‚Рѕ РµРјСѓ Р»СѓС‡С€Рµ Р·РЅР°С‚СЊ...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                   
-	Smalltalk25					= "SVM_7_Smalltalk25"				;//...важна только сила, так что не надо...
-	Smalltalk26					= "SVM_7_Smalltalk26"				;//...он даже меч толком держать не умел...
-	Smalltalk27					= "SVM_7_Smalltalk27"				;//...да, он действительно сказал это...
+	Smalltalk25					= "SVM_7_Smalltalk25"				;//...РІР°Р¶РЅР° С‚РѕР»СЊРєРѕ СЃРёР»Р°, С‚Р°Рє С‡С‚Рѕ РЅРµ РЅР°РґРѕ...
+	Smalltalk26					= "SVM_7_Smalltalk26"				;//...РѕРЅ РґР°Р¶Рµ РјРµС‡ С‚РѕР»РєРѕРј РґРµСЂР¶Р°С‚СЊ РЅРµ СѓРјРµР»...
+	Smalltalk27					= "SVM_7_Smalltalk27"				;//...РґР°, РѕРЅ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРєР°Р·Р°Р» СЌС‚Рѕ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                   
-	Smalltalk28					= "SVM_7_Smalltalk28"				;//...кто-то должен заплатить за это...
-	Smalltalk29					= "SVM_7_Smalltalk29"				;//...Иннос просвещает тех, кто признает его мудрость...
-	Smalltalk30					= "SVM_7_Smalltalk30"				;//...правосудие восторжествует...
+	Smalltalk28					= "SVM_7_Smalltalk28"				;//...РєС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ...
+	Smalltalk29					= "SVM_7_Smalltalk29"				;//...РРЅРЅРѕСЃ РїСЂРѕСЃРІРµС‰Р°РµС‚ С‚РµС…, РєС‚Рѕ РїСЂРёР·РЅР°РµС‚ РµРіРѕ РјСѓРґСЂРѕСЃС‚СЊ...
+	Smalltalk30					= "SVM_7_Smalltalk30"				;//...РїСЂР°РІРѕСЃСѓРґРёРµ РІРѕСЃС‚РѕСЂР¶РµСЃС‚РІСѓРµС‚...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_7_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_7_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_7_NoLearnYoureBetter"		;//Мне больше нечему учить тебя. Ты слишком хорош.
-	YouLearnedSomething			= "SVM_7_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_7_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_7_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_7_NoLearnYoureBetter"		;//РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_7_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_7_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_7_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_7_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_7_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_7_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_7_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_7_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_7_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_7_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_7_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_7_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_7_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_7_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_7_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_7_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_7_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_7_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_7_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_7_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_7_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_7_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_7_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_7_TEMPEL_2_GALGEN"			;//Выйдя из храма и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_7_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_7_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_7_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_7_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_7_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_7_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_7_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_7_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_7_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_7_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_7_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_7_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_7_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_7_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_7_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_7_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР° Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_7_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_7_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_7_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_7_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_7_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_7_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_7_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_7_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_7_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_7_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_7_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_7_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_7_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_7_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_7_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_7_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_7_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_7_Addon_WrongArmor";				//Зачем этот маскарад? Так я не буду с тобой разговаривать.
-	ADDON_WRONGARMOR_SLD		= "SVM_7_ADDON_WRONGARMOR_SLD";			//Что ты надел? Где твои доспехи? Надень немедленно!
-	ADDON_WRONGARMOR_MIL		= "SVM_7_ADDON_WRONGARMOR_MIL";			//Это нарушение армейской униформы. Переоденься! Сейчас же!
-	ADDON_WRONGARMOR_KDF		= "SVM_7_ADDON_WRONGARMOR_KDF";			//Советую тебе надеть робу. А пока я не могу разговаривать с тобой и буду лишь молиться за тебя.
-	ADDON_NOARMOR_BDT			= "SVM_7_ADDON_ADDON_NOARMOR_BDT";		//Что ты хочешь? Ты не из наших, ты даже не носишь наши доспехи.
+	ADDON_WRONGARMOR			= "SVM_7_Addon_WrongArmor";				//Р—Р°С‡РµРј СЌС‚РѕС‚ РјР°СЃРєР°СЂР°Рґ? РўР°Рє СЏ РЅРµ Р±СѓРґСѓ СЃ С‚РѕР±РѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ.
+	ADDON_WRONGARMOR_SLD		= "SVM_7_ADDON_WRONGARMOR_SLD";			//Р§С‚Рѕ С‚С‹ РЅР°РґРµР»? Р“РґРµ С‚РІРѕРё РґРѕСЃРїРµС…Рё? РќР°РґРµРЅСЊ РЅРµРјРµРґР»РµРЅРЅРѕ!
+	ADDON_WRONGARMOR_MIL		= "SVM_7_ADDON_WRONGARMOR_MIL";			//Р­С‚Рѕ РЅР°СЂСѓС€РµРЅРёРµ Р°СЂРјРµР№СЃРєРѕР№ СѓРЅРёС„РѕСЂРјС‹. РџРµСЂРµРѕРґРµРЅСЊСЃСЏ! РЎРµР№С‡Р°СЃ Р¶Рµ!
+	ADDON_WRONGARMOR_KDF		= "SVM_7_ADDON_WRONGARMOR_KDF";			//РЎРѕРІРµС‚СѓСЋ С‚РµР±Рµ РЅР°РґРµС‚СЊ СЂРѕР±Сѓ. Рђ РїРѕРєР° СЏ РЅРµ РјРѕРіСѓ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ С‚РѕР±РѕР№ Рё Р±СѓРґСѓ Р»РёС€СЊ РјРѕР»РёС‚СЊСЃСЏ Р·Р° С‚РµР±СЏ.
+	ADDON_NOARMOR_BDT			= "SVM_7_ADDON_ADDON_NOARMOR_BDT";		//Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ? РўС‹ РЅРµ РёР· РЅР°С€РёС…, С‚С‹ РґР°Р¶Рµ РЅРµ РЅРѕСЃРёС€СЊ РЅР°С€Рё РґРѕСЃРїРµС…Рё.
 
-	ADDON_DIEBANDIT				= "SVM_7_ADDON_DIEBANDIT";				//Умри, жалкий разбойник!
-	ADDON_DIRTYPIRATE			= "SVM_7_ADDON_DIRTYPIRATE";			//Умри, презренный пират!
+	ADDON_DIEBANDIT				= "SVM_7_ADDON_DIEBANDIT";				//РЈРјСЂРё, Р¶Р°Р»РєРёР№ СЂР°Р·Р±РѕР№РЅРёРє!
+	ADDON_DIRTYPIRATE			= "SVM_7_ADDON_DIRTYPIRATE";			//РЈРјСЂРё, РїСЂРµР·СЂРµРЅРЅС‹Р№ РїРёСЂР°С‚!
 };
 
 instance SVM_8 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_8_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_8_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_8_Weather"					;//Какая паршивая погода!
+	MILGreetings				= 	"SVM_8_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_8_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_8_Weather"					;//РљР°РєР°СЏ РїР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_8_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_8_DieEnemy"					;//Я разорву тебя на куски!
-	DieMonster					=	"SVM_8_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_8_DirtyThief"					;//Грязный вор! Ну, подожди!
-	HandsOff					=	"SVM_8_HandsOff"					;//Убери свои грязные лапы!
-	SheepKiller					=	"SVM_8_SheepKiller"				;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_8_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_8_YouMurderer"				;//Убийца!
-	DieStupidBeast				=	"SVM_8_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_8_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_8_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_8_ThenIBeatYouOutOfHere"		;//Ты не хочешь идти? Хорошо!
-	WhatDidYouDoInThere			=	"SVM_8_WhatDidYouDoInThere"		;//Что тебе было нужно там?
-	WillYouStopFighting			=	"SVM_8_WillYouStopFighting"		;//Ты прекратишь?!
+	IGetYouStill				= 	"SVM_8_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_8_DieEnemy"					;//РЇ СЂР°Р·РѕСЂРІСѓ С‚РµР±СЏ РЅР° РєСѓСЃРєРё!
+	DieMonster					=	"SVM_8_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_8_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂ! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_8_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ Р»Р°РїС‹!
+	SheepKiller					=	"SVM_8_SheepKiller"				;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_8_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_8_YouMurderer"				;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_8_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_8_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_8_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_8_ThenIBeatYouOutOfHere"		;//РўС‹ РЅРµ С…РѕС‡РµС€СЊ РёРґС‚Рё? РҐРѕСЂРѕС€Рѕ!
+	WhatDidYouDoInThere			=	"SVM_8_WhatDidYouDoInThere"		;//Р§С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ С‚Р°Рј?
+	WillYouStopFighting			=	"SVM_8_WillYouStopFighting"		;//РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_8_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_8_EnemyKilled"				;//Ты заслужил это, подонок!
-	MonsterKilled				=	"SVM_8_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_8_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_8_rumfummlerDown"				;//Держись подальше от того, что тебе не принадлежит!
-	SheepAttackerDown			=	"SVM_8_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_8_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_8_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_8_NeverHitMeAgain"			;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_8_YouBetterShouldHaveListened";//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_8_GetUpAndBeGone"				;//А теперь убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_8_NeverEnterRoomAgain"		;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_8_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_8_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_8_EnemyKilled"				;//РўС‹ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ, РїРѕРґРѕРЅРѕРє!
+	MonsterKilled				=	"SVM_8_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_8_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_8_rumfummlerDown"				;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚!
+	SheepAttackerDown			=	"SVM_8_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_8_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_8_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_8_NeverHitMeAgain"			;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_8_YouBetterShouldHaveListened";//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_8_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_8_NeverEnterRoomAgain"		;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_8_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_8_SpareMe"					;//Не трогай меня!
-	RunAway						= 	"SVM_8_RunAway"					;//Ох, черт!
+	SpareMe						=	"SVM_8_SpareMe"					;//РќРµ С‚СЂРѕРіР°Р№ РјРµРЅСЏ!
+	RunAway						= 	"SVM_8_RunAway"					;//РћС…, С‡РµСЂС‚!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_8_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_8_Guards"					;//СТРАЖА!
-	Help						=	"SVM_8_Help"					;//Помогите!
+	Alarm						=	"SVM_8_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_8_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_8_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_8_GoodMonsterKill"		;//Отлично - одной мерзкой тварью меньше!
-	GoodKill					= 	"SVM_8_GoodKill"				;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_8_GoodMonsterKill"		;//РћС‚Р»РёС‡РЅРѕ - РѕРґРЅРѕР№ РјРµСЂР·РєРѕР№ С‚РІР°СЂСЊСЋ РјРµРЅСЊС€Рµ!
+	GoodKill					= 	"SVM_8_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_8_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_8_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_8_RunCoward"				;//Да! Беги, пока можешь!
+	RunCoward					=	"SVM_8_RunCoward"				;//Р”Р°! Р‘РµРіРё, РїРѕРєР° РјРѕР¶РµС€СЊ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_8_GetOutOfHere"			;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_8_WhyAreYouInHere"		;//Что тебе здесь нужно?! Уходи!
-	YesGoOutOfHere				= 	"SVM_8_YesGoOutOfHere"			;//Да, убирайся отсюда!
+	GetOutOfHere				=	"SVM_8_GetOutOfHere"			;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_8_WhyAreYouInHere"		;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?! РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_8_YesGoOutOfHere"			;//Р”Р°, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_8_WhatsThisSupposedToBe"	;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_8_YouDisturbedMySlumber"	;//(просыпается) Черт, в чем дело?
+	WhatsThisSupposedToBe		=	"SVM_8_WhatsThisSupposedToBe"	;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_8_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, РІ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_8_ITookYourGold"			;//Спасибо за золото, герой!
-	ShitNoGold					=	"SVM_8_ShitNoGold"				;//Ах ты, сосунок, у тебя даже золота с собой нет!
-	ITakeYourWeapon				=	"SVM_8_ITakeYourWeapon"		;//Я думаю, лучше забрать твое оружие.
+	ITookYourGold				=	"SVM_8_ITookYourGold"			;//РЎРїР°СЃРёР±Рѕ Р·Р° Р·РѕР»РѕС‚Рѕ, РіРµСЂРѕР№!
+	ShitNoGold					=	"SVM_8_ShitNoGold"				;//РђС… С‚С‹, СЃРѕСЃСѓРЅРѕРє, Сѓ С‚РµР±СЏ РґР°Р¶Рµ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№ РЅРµС‚!
+	ITakeYourWeapon				=	"SVM_8_ITakeYourWeapon"		;//РЇ РґСѓРјР°СЋ, Р»СѓС‡С€Рµ Р·Р°Р±СЂР°С‚СЊ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_8_WhatAreYouDoing"		;//Смотри! Еще раз, и ты пожалеешь об этом.
+	WhatAreYouDoing				=	"SVM_8_WhatAreYouDoing"		;//РЎРјРѕС‚СЂРё! Р•С‰Рµ СЂР°Р·, Рё С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_8_LookingForTroubleAgain"	;//Тебе все еще мало?
-	StopMagic					=	"SVM_8_StopMagic"				;//Прекрати это магическое дерьмо!
-	ISaidStopMagic				=	"SVM_8_ISaidStopMagic"			;//Хочешь получить? Прекрати немедленно!!!
-	WeaponDown					=	"SVM_8_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_8_ISaidWeaponDown"		;//Ты уберешь это чертово оружие?!
-	WiseMove					=	"SVM_8_WiseMove"				;//Умный мальчик!
+	LookingForTroubleAgain		=	"SVM_8_LookingForTroubleAgain"	;//РўРµР±Рµ РІСЃРµ РµС‰Рµ РјР°Р»Рѕ?
+	StopMagic					=	"SVM_8_StopMagic"				;//РџСЂРµРєСЂР°С‚Рё СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ РґРµСЂСЊРјРѕ!
+	ISaidStopMagic				=	"SVM_8_ISaidStopMagic"			;//РҐРѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ? РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!!!
+	WeaponDown					=	"SVM_8_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_8_ISaidWeaponDown"		;//РўС‹ СѓР±РµСЂРµС€СЊ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РѕСЂСѓР¶РёРµ?!
+	WiseMove					=	"SVM_8_WiseMove"				;//РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_8_NextTimeYoureInForIt"	;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_8_OhMyHead"				;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_8_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_8_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_8_TheresAFight"			;//(страстно) А-ах, драка!
-	OhMyGodItsAFight			=	"SVM_8_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой, драка!
-	GoodVictory					=	"SVM_8_GoodVictory"			;//(дьявольский смех) Ты показал ему!
-	NotBad						= 	"SVM_8_NotBad"					;//(одобрительно) Неплохо...
-	OhMyGodHesDown				=	"SVM_8_OhMyGodHesDown"			;//(себе под нос) Бог мой! Какая жестокость...
-	CheerFriend01				=	"SVM_8_CheerFriend01"			;//Задай ему!
-	CheerFriend02				=	"SVM_8_CheerFriend02"			;//Прекратите, вы!
-	CheerFriend03				=	"SVM_8_CheerFriend03"			;//Покажи ему!
-	Ooh01						=	"SVM_8_Ooh01"					;//Держись!
-	Ooh02						=	"SVM_8_Ooh02"					;//Осторожно!
-	Ooh03						=	"SVM_8_Ooh03"					;//О! Как он ему дал!
+	TheresAFight				=	"SVM_8_TheresAFight"			;//(СЃС‚СЂР°СЃС‚РЅРѕ) Рђ-Р°С…, РґСЂР°РєР°!
+	OhMyGodItsAFight			=	"SVM_8_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№, РґСЂР°РєР°!
+	GoodVictory					=	"SVM_8_GoodVictory"			;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РўС‹ РїРѕРєР°Р·Р°Р» РµРјСѓ!
+	NotBad						= 	"SVM_8_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РќРµРїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_8_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р‘РѕРі РјРѕР№! РљР°РєР°СЏ Р¶РµСЃС‚РѕРєРѕСЃС‚СЊ...
+	CheerFriend01				=	"SVM_8_CheerFriend01"			;//Р—Р°РґР°Р№ РµРјСѓ!
+	CheerFriend02				=	"SVM_8_CheerFriend02"			;//РџСЂРµРєСЂР°С‚РёС‚Рµ, РІС‹!
+	CheerFriend03				=	"SVM_8_CheerFriend03"			;//РџРѕРєР°Р¶Рё РµРјСѓ!
+	Ooh01						=	"SVM_8_Ooh01"					;//Р”РµСЂР¶РёСЃСЊ!
+	Ooh02						=	"SVM_8_Ooh02"					;//РћСЃС‚РѕСЂРѕР¶РЅРѕ!
+	Ooh03						=	"SVM_8_Ooh03"					;//Рћ! РљР°Рє РѕРЅ РµРјСѓ РґР°Р»!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_8_WhatWasThat"				;//(себе под нос, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_8_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_8_GetOutOfMyBed"			;//Убирайся с моей кровати!
-	Awake						= "SVM_8_Awake"					;//(зевает)
+	GetOutOfMyBed				= "SVM_8_GetOutOfMyBed"			;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_8_Awake"					;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_8_ABS_COMMANDER"			;//Говорят, ты ходил к командующему и все уладил.
-	ABS_MONASTERY				= "SVM_8_ABS_MONASTERY"			;//Говорят, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM					= "SVM_8_ABS_FARM"					;//Говорят, ты обратился к Ли и все уладил.
-	ABS_GOOD					= "SVM_8_ABS_GOOD"					;//Это хорошо.
+	ABS_COMMANDER				= "SVM_8_ABS_COMMANDER"			;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY				= "SVM_8_ABS_MONASTERY"			;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM					= "SVM_8_ABS_FARM"					;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD					= "SVM_8_ABS_GOOD"					;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_8_SHEEPKILLER_CRIME"		;//Он убивает наших овец!
-	ATTACK_CRIME				= "SVM_8_ATTACK_CRIME"				;//Оставь меня в покое, грязное животное!
-	THEFT_CRIME					= "SVM_8_THEFT_CRIME"				;//Оставь меня в покое, презренный воришка!
+	SHEEPKILLER_CRIME			= "SVM_8_SHEEPKILLER_CRIME"		;//РћРЅ СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	ATTACK_CRIME				= "SVM_8_ATTACK_CRIME"				;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РіСЂСЏР·РЅРѕРµ Р¶РёРІРѕС‚РЅРѕРµ!
+	THEFT_CRIME					= "SVM_8_THEFT_CRIME"				;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РїСЂРµР·СЂРµРЅРЅС‹Р№ РІРѕСЂРёС€РєР°!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_8_PAL_CITY_CRIME"			;//Ты позоришь наш орден! Подожди, лорд Хаген узнает об этом!
-	MIL_CITY_CRIME				= "SVM_8_MIL_CITY_CRIME"			;//Ты позоришь городскую стражу! Подожди, лорд Андрэ узнает об этом!
-	CITY_CRIME					= "SVM_8_CITY_CRIME"				;//Подожди, лорд Андрэ узнает об этом.
+	PAL_CITY_CRIME				= "SVM_8_PAL_CITY_CRIME"			;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РЅР°С€ РѕСЂРґРµРЅ! РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РҐР°РіРµРЅ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	MIL_CITY_CRIME				= "SVM_8_MIL_CITY_CRIME"			;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	CITY_CRIME					= "SVM_8_CITY_CRIME"				;//РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј.
 	// -------------------------
-	MONA_CRIME					= "SVM_8_MONA_CRIME"				;//Подожди, отец Парлан узнает об этом!
-	FARM_CRIME					= "SVM_8_FARM_CRIME"				;//Подожди, Ли узнает об этом...
-	OC_CRIME					= "SVM_8_OC_CRIME"					;//Подожди, командующий Гаронд узнает об этом!
+	MONA_CRIME					= "SVM_8_MONA_CRIME"				;//РџРѕРґРѕР¶РґРё, РѕС‚РµС† РџР°СЂР»Р°РЅ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	FARM_CRIME					= "SVM_8_FARM_CRIME"				;//РџРѕРґРѕР¶РґРё, Р›Рё СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј...
+	OC_CRIME					= "SVM_8_OC_CRIME"					;//РџРѕРґРѕР¶РґРё, РєРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_8_TOUGHGUY_ATTACKLOST"		;//Хорошо, хорошо, ты лучший боец. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_8_TOUGHGUY_ATTACKWON"		;//Я думаю, что теперь ты прекрасно знаешь, кто из нас сильнее... Чего ты хочешь?
-	TOUGHGUY_PLAYERATTACK		= "SVM_8_TOUGHGUY_PLAYERATTACK"	;//Я думал, ты хочешь сразиться со мной. Ты передумал? Ты предпочитаешь БОЛТАТЬ, да? (смеется)
+	TOUGHGUY_ATTACKLOST			= "SVM_8_TOUGHGUY_ATTACKLOST"		;//РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, С‚С‹ Р»СѓС‡С€РёР№ Р±РѕРµС†. Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_8_TOUGHGUY_ATTACKWON"		;//РЇ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµРїРµСЂСЊ С‚С‹ РїСЂРµРєСЂР°СЃРЅРѕ Р·РЅР°РµС€СЊ, РєС‚Рѕ РёР· РЅР°СЃ СЃРёР»СЊРЅРµРµ... Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_PLAYERATTACK		= "SVM_8_TOUGHGUY_PLAYERATTACK"	;//РЇ РґСѓРјР°Р», С‚С‹ С…РѕС‡РµС€СЊ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№. РўС‹ РїРµСЂРµРґСѓРјР°Р»? РўС‹ РїСЂРµРґРїРѕС‡РёС‚Р°РµС€СЊ Р‘РћР›РўРђРўР¬, РґР°? (СЃРјРµРµС‚СЃСЏ)
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_8_GOLD_1000"				;//1000 золотых монет.
-	GOLD_950					= "SVM_8_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_8_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_8_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_8_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_8_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_8_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_8_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_8_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_8_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_8_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_8_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_8_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_8_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_8_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_8_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_8_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_8_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_8_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_8_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_8_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_8_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_8_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_8_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_8_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_8_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_8_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_8_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_8_GOLD_1000"				;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_8_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_8_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_8_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_8_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_8_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_8_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_8_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_8_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_8_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_8_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_8_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_8_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_8_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_8_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_8_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_8_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_8_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_8_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_8_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_8_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_8_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_8_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_8_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_8_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_8_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_8_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_8_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_8_Smalltalk01"				;//...это действительно правда...
-	Smalltalk02					= "SVM_8_Smalltalk02"				;//...я слышал другое...
-	Smalltalk03					= "SVM_8_Smalltalk03"				;//...не говори, что ты не знал этого...
-	Smalltalk04					= "SVM_8_Smalltalk04"				;//...в наши дни даже и не знаешь, кому верить...
-	Smalltalk05					= "SVM_8_Smalltalk05"				;//...это все сплетни...
-	Smalltalk06					= "SVM_8_Smalltalk06"				;//...я сам не лучше...
-	Smalltalk07					= "SVM_8_Smalltalk07"				;//...меня больше ничего не удивляет...
-	Smalltalk08					= "SVM_8_Smalltalk08"				;//...это не мои проблемы...
-	Smalltalk09					= "SVM_8_Smalltalk09"				;//...ты действительно веришь в это?..
-	Smalltalk10					= "SVM_8_Smalltalk10"				;//...никто ничему не учится у меня...
-	Smalltalk11					= "SVM_8_Smalltalk11"				;//...это было всегда очевидно...
-	Smalltalk12					= "SVM_8_Smalltalk12"				;//...он слушал не тех людей...
-	Smalltalk13					= "SVM_8_Smalltalk13"				;//...если он этого не видит, я ничем не могу помочь...
-	Smalltalk14					= "SVM_8_Smalltalk14"				;//...это не новость...
-	Smalltalk15					= "SVM_8_Smalltalk15"				;//...он сам бы никогда не додумался...
-	Smalltalk16					= "SVM_8_Smalltalk16"				;//...это давно известно...
-	Smalltalk17					= "SVM_8_Smalltalk17"				;//...это плохой бизнес...
-	Smalltalk18					= "SVM_8_Smalltalk18"				;//...я бы сделал это по-другому...
-	Smalltalk19					= "SVM_8_Smalltalk19"				;//...я полностью с тобой согласен...
-	Smalltalk20					= "SVM_8_Smalltalk20"				;//...если все будет по-другому...
-	Smalltalk21					= "SVM_8_Smalltalk21"				;//...я даже не знал об этом...
-	Smalltalk22					= "SVM_8_Smalltalk22"				;//...с этим уже ничего не поделать...
-	Smalltalk23					= "SVM_8_Smalltalk23"				;//...это не удивляет меня...
-	Smalltalk24					= "SVM_8_Smalltalk24"				;//...но он настаивал, что ему лучше знать...
+	Smalltalk01					= "SVM_8_Smalltalk01"				;//...СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂР°РІРґР°...
+	Smalltalk02					= "SVM_8_Smalltalk02"				;//...СЏ СЃР»С‹С€Р°Р» РґСЂСѓРіРѕРµ...
+	Smalltalk03					= "SVM_8_Smalltalk03"				;//...РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ РЅРµ Р·РЅР°Р» СЌС‚РѕРіРѕ...
+	Smalltalk04					= "SVM_8_Smalltalk04"				;//...РІ РЅР°С€Рё РґРЅРё РґР°Р¶Рµ Рё РЅРµ Р·РЅР°РµС€СЊ, РєРѕРјСѓ РІРµСЂРёС‚СЊ...
+	Smalltalk05					= "SVM_8_Smalltalk05"				;//...СЌС‚Рѕ РІСЃРµ СЃРїР»РµС‚РЅРё...
+	Smalltalk06					= "SVM_8_Smalltalk06"				;//...СЏ СЃР°Рј РЅРµ Р»СѓС‡С€Рµ...
+	Smalltalk07					= "SVM_8_Smalltalk07"				;//...РјРµРЅСЏ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµ СѓРґРёРІР»СЏРµС‚...
+	Smalltalk08					= "SVM_8_Smalltalk08"				;//...СЌС‚Рѕ РЅРµ РјРѕРё РїСЂРѕР±Р»РµРјС‹...
+	Smalltalk09					= "SVM_8_Smalltalk09"				;//...С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РІРµСЂРёС€СЊ РІ СЌС‚Рѕ?..
+	Smalltalk10					= "SVM_8_Smalltalk10"				;//...РЅРёРєС‚Рѕ РЅРёС‡РµРјСѓ РЅРµ СѓС‡РёС‚СЃСЏ Сѓ РјРµРЅСЏ...
+	Smalltalk11					= "SVM_8_Smalltalk11"				;//...СЌС‚Рѕ Р±С‹Р»Рѕ РІСЃРµРіРґР° РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk12					= "SVM_8_Smalltalk12"				;//...РѕРЅ СЃР»СѓС€Р°Р» РЅРµ С‚РµС… Р»СЋРґРµР№...
+	Smalltalk13					= "SVM_8_Smalltalk13"				;//...РµСЃР»Рё РѕРЅ СЌС‚РѕРіРѕ РЅРµ РІРёРґРёС‚, СЏ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ...
+	Smalltalk14					= "SVM_8_Smalltalk14"				;//...СЌС‚Рѕ РЅРµ РЅРѕРІРѕСЃС‚СЊ...
+	Smalltalk15					= "SVM_8_Smalltalk15"				;//...РѕРЅ СЃР°Рј Р±С‹ РЅРёРєРѕРіРґР° РЅРµ РґРѕРґСѓРјР°Р»СЃСЏ...
+	Smalltalk16					= "SVM_8_Smalltalk16"				;//...СЌС‚Рѕ РґР°РІРЅРѕ РёР·РІРµСЃС‚РЅРѕ...
+	Smalltalk17					= "SVM_8_Smalltalk17"				;//...СЌС‚Рѕ РїР»РѕС…РѕР№ Р±РёР·РЅРµСЃ...
+	Smalltalk18					= "SVM_8_Smalltalk18"				;//...СЏ Р±С‹ СЃРґРµР»Р°Р» СЌС‚Рѕ РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk19					= "SVM_8_Smalltalk19"				;//...СЏ РїРѕР»РЅРѕСЃС‚СЊСЋ СЃ С‚РѕР±РѕР№ СЃРѕРіР»Р°СЃРµРЅ...
+	Smalltalk20					= "SVM_8_Smalltalk20"				;//...РµСЃР»Рё РІСЃРµ Р±СѓРґРµС‚ РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk21					= "SVM_8_Smalltalk21"				;//...СЏ РґР°Р¶Рµ РЅРµ Р·РЅР°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk22					= "SVM_8_Smalltalk22"				;//...СЃ СЌС‚РёРј СѓР¶Рµ РЅРёС‡РµРіРѕ РЅРµ РїРѕРґРµР»Р°С‚СЊ...
+	Smalltalk23					= "SVM_8_Smalltalk23"				;//...СЌС‚Рѕ РЅРµ СѓРґРёРІР»СЏРµС‚ РјРµРЅСЏ...
+	Smalltalk24					= "SVM_8_Smalltalk24"				;//...РЅРѕ РѕРЅ РЅР°СЃС‚Р°РёРІР°Р», С‡С‚Рѕ РµРјСѓ Р»СѓС‡С€Рµ Р·РЅР°С‚СЊ...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                  
-	Smalltalk25					= "SVM_8_Smalltalk25"				;//...важна только сила, так что не надо...
-	Smalltalk26					= "SVM_8_Smalltalk26"				;//...он даже меч толком держать не умел...
-	Smalltalk27					= "SVM_8_Smalltalk27"				;//...да, он действительно сказал это...
+	Smalltalk25					= "SVM_8_Smalltalk25"				;//...РІР°Р¶РЅР° С‚РѕР»СЊРєРѕ СЃРёР»Р°, С‚Р°Рє С‡С‚Рѕ РЅРµ РЅР°РґРѕ...
+	Smalltalk26					= "SVM_8_Smalltalk26"				;//...РѕРЅ РґР°Р¶Рµ РјРµС‡ С‚РѕР»РєРѕРј РґРµСЂР¶Р°С‚СЊ РЅРµ СѓРјРµР»...
+	Smalltalk27					= "SVM_8_Smalltalk27"				;//...РґР°, РѕРЅ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРєР°Р·Р°Р» СЌС‚Рѕ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                  
-	Smalltalk28					= "SVM_8_Smalltalk28"				;//...кто-то должен заплатить за это...
-	Smalltalk29					= "SVM_8_Smalltalk29"				;//...Иннос просвещает тех, кто признает его мудрость...
-	Smalltalk30					= "SVM_8_Smalltalk30"				;//...правосудие восторжествует...
+	Smalltalk28					= "SVM_8_Smalltalk28"				;//...РєС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ...
+	Smalltalk29					= "SVM_8_Smalltalk29"				;//...РРЅРЅРѕСЃ РїСЂРѕСЃРІРµС‰Р°РµС‚ С‚РµС…, РєС‚Рѕ РїСЂРёР·РЅР°РµС‚ РµРіРѕ РјСѓРґСЂРѕСЃС‚СЊ...
+	Smalltalk30					= "SVM_8_Smalltalk30"				;//...РїСЂР°РІРѕСЃСѓРґРёРµ РІРѕСЃС‚РѕСЂР¶РµСЃС‚РІСѓРµС‚...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_8_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_8_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_8_NoLearnYoureBetter"		;//Мне больше нечему учить тебя. Ты слишком хорош.
-	YouLearnedSomething			= "SVM_8_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_8_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_8_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_8_NoLearnYoureBetter"		;//РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_8_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_8_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_8_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_8_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_8_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_8_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_8_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_8_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_8_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_8_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_8_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_8_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_8_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_8_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_8_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_8_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_8_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_8_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_8_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_8_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_8_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_8_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_8_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_8_TEMPEL_2_GALGEN"			;//Выйдя из храма, и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_8_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_8_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_8_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_8_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_8_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_8_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_8_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_8_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_8_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_8_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_8_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_8_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_8_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_8_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_8_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_8_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР°, Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_8_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_8_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_8_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_8_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_8_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_8_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_8_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_8_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_8_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_8_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_8_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_8_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_8_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_8_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_8_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_8_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_8_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_8_Addon_WrongArmor";				//Я тебе не верю. Ты как-то не так выглядишь, может быть, дело в одежде.
-	ADDON_WRONGARMOR_SLD		= "SVM_8_ADDON_WRONGARMOR_SLD";			//Судя по тому, как ты выглядишь, ты не из наших. Не буду иметь с тобой дело.
-	ADDON_WRONGARMOR_MIL		= "SVM_8_ADDON_WRONGARMOR_MIL";			//Нам нужно быть заметными. Так что пойди и надень доспехи.
-	ADDON_WRONGARMOR_KDF		= "SVM_8_ADDON_WRONGARMOR_KDF";			//Иннос велит носить его робы с гордостью. Пойди, переоденься.
-	ADDON_NOARMOR_BDT			= "SVM_8_ADDON_ADDON_NOARMOR_BDT";		//Я с рудокопами не разговариваю. У тебя даже доспехов нет.
+	ADDON_WRONGARMOR			= "SVM_8_Addon_WrongArmor";				//РЇ С‚РµР±Рµ РЅРµ РІРµСЂСЋ. РўС‹ РєР°Рє-С‚Рѕ РЅРµ С‚Р°Рє РІС‹РіР»СЏРґРёС€СЊ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, РґРµР»Рѕ РІ РѕРґРµР¶РґРµ.
+	ADDON_WRONGARMOR_SLD		= "SVM_8_ADDON_WRONGARMOR_SLD";			//РЎСѓРґСЏ РїРѕ С‚РѕРјСѓ, РєР°Рє С‚С‹ РІС‹РіР»СЏРґРёС€СЊ, С‚С‹ РЅРµ РёР· РЅР°С€РёС…. РќРµ Р±СѓРґСѓ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РґРµР»Рѕ.
+	ADDON_WRONGARMOR_MIL		= "SVM_8_ADDON_WRONGARMOR_MIL";			//РќР°Рј РЅСѓР¶РЅРѕ Р±С‹С‚СЊ Р·Р°РјРµС‚РЅС‹РјРё. РўР°Рє С‡С‚Рѕ РїРѕР№РґРё Рё РЅР°РґРµРЅСЊ РґРѕСЃРїРµС…Рё.
+	ADDON_WRONGARMOR_KDF		= "SVM_8_ADDON_WRONGARMOR_KDF";			//РРЅРЅРѕСЃ РІРµР»РёС‚ РЅРѕСЃРёС‚СЊ РµРіРѕ СЂРѕР±С‹ СЃ РіРѕСЂРґРѕСЃС‚СЊСЋ. РџРѕР№РґРё, РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_NOARMOR_BDT			= "SVM_8_ADDON_ADDON_NOARMOR_BDT";		//РЇ СЃ СЂСѓРґРѕРєРѕРїР°РјРё РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ. РЈ С‚РµР±СЏ РґР°Р¶Рµ РґРѕСЃРїРµС…РѕРІ РЅРµС‚.
 
-	ADDON_DIEBANDIT				= "SVM_8_ADDON_DIEBANDIT";				//Ты, грязный разбойник!
-	ADDON_DIRTYPIRATE			= "SVM_8_ADDON_DIRTYPIRATE";			//ПИРАТЫ!
+	ADDON_DIEBANDIT				= "SVM_8_ADDON_DIEBANDIT";				//РўС‹, РіСЂСЏР·РЅС‹Р№ СЂР°Р·Р±РѕР№РЅРёРє!
+	ADDON_DIRTYPIRATE			= "SVM_8_ADDON_DIRTYPIRATE";			//РџРР РђРўР«!
 };
 
 instance SVM_9 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_9_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_9_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_9_Weather"						;//Паршивая погода!
+	MILGreetings				= 	"SVM_9_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_9_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_9_Weather"						;//РџР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_9_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_9_DieEnemy"					;//Тебе не стоило появляться здесь!
-	DieMonster					=	"SVM_9_DieMonster"					;//Иди сюда, подлая тварь!
-	Addon_DieMonster			=	"SVM_9_Addon_DieMonster"			;//Еще одна тварь!
-	Addon_DieMonster2			=	"SVM_9_Addon_DieMonster2"			;//Там еще одна грязная скотина!
-	DirtyThief					=	"SVM_9_DirtyThief"					;//Грязный вор! Ну, подожди!
-	HandsOff					=	"SVM_9_HandsOff"					;//Убери свои лапы!
-	SheepKiller					=	"SVM_9_SheepKiller"				;//Оставь наших овец в покое!
-	SheepKillerMonster			=	"SVM_9_SheepKillerMonster"			;//Держись подальше от наших овец!
-	YouMurderer					=	"SVM_9_YouMurderer"				;//Убийца!
-	DieStupidBeast				=	"SVM_9_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_9_YouDareHitMe"				;//Ты пожалеешь об этом!
-	YouAskedForIt				=	"SVM_9_YouAskedForIt"				;//Я предупреждал тебя!
-	ThenIBeatYouOutOfHere		=	"SVM_9_ThenIBeatYouOutOfHere"		;//Я сказал, пошел прочь!
-	WhatDidYouDoInThere			=	"SVM_9_WhatDidYouDoInThere"		;//Эй, что ты там делаешь?
-	WillYouStopFighting			=	"SVM_9_WillYouStopFighting"		;//Прекрати немедленно!
+	IGetYouStill				= 	"SVM_9_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_9_DieEnemy"					;//РўРµР±Рµ РЅРµ СЃС‚РѕРёР»Рѕ РїРѕСЏРІР»СЏС‚СЊСЃСЏ Р·РґРµСЃСЊ!
+	DieMonster					=	"SVM_9_DieMonster"					;//РРґРё СЃСЋРґР°, РїРѕРґР»Р°СЏ С‚РІР°СЂСЊ!
+	Addon_DieMonster			=	"SVM_9_Addon_DieMonster"			;//Р•С‰Рµ РѕРґРЅР° С‚РІР°СЂСЊ!
+	Addon_DieMonster2			=	"SVM_9_Addon_DieMonster2"			;//РўР°Рј РµС‰Рµ РѕРґРЅР° РіСЂСЏР·РЅР°СЏ СЃРєРѕС‚РёРЅР°!
+	DirtyThief					=	"SVM_9_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂ! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_9_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё Р»Р°РїС‹!
+	SheepKiller					=	"SVM_9_SheepKiller"				;//РћСЃС‚Р°РІСЊ РЅР°С€РёС… РѕРІРµС† РІ РїРѕРєРѕРµ!
+	SheepKillerMonster			=	"SVM_9_SheepKillerMonster"			;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_9_YouMurderer"				;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_9_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_9_YouDareHitMe"				;//РўС‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј!
+	YouAskedForIt				=	"SVM_9_YouAskedForIt"				;//РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_9_ThenIBeatYouOutOfHere"		;//РЇ СЃРєР°Р·Р°Р», РїРѕС€РµР» РїСЂРѕС‡СЊ!
+	WhatDidYouDoInThere			=	"SVM_9_WhatDidYouDoInThere"		;//Р­Р№, С‡С‚Рѕ С‚С‹ С‚Р°Рј РґРµР»Р°РµС€СЊ?
+	WillYouStopFighting			=	"SVM_9_WillYouStopFighting"		;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_9_KillEnemy"					;//Я проучу тебя, подонок!
-	EnemyKilled					=	"SVM_9_EnemyKilled"					;//Вот тебе...
-	//MonsterKilled				=	"SVM_9_MonsterKilled"				;//Ich steh' auf diese ganze ScheiЯe!
-	Addon_MonsterKilled			=	"SVM_9_Addon_MonsterKilled"			;//С тобой покончено, мерзкая тварь!
-	Addon_MonsterKilled2		=	"SVM_9_Addon_MonsterKilled2"		;//ЕЩЕ одним монстром меньше!
-	ThiefDown					=	"SVM_9_ThiefDown"					;//Предупреждаю тебя! Держись отсюда подальше, грязный вор!
-	rumfummlerDown				=	"SVM_9_rumfummlerDown"				;//Я думаю, это научит тебя держаться подальше от того, что тебе не принадлежит!
-	SheepAttackerDown			=	"SVM_9_SheepAttackerDown"			;//И держись подальше от наших овец!
-	KillMurderer				=	"SVM_9_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_9_StupidBeastKilled"			;//Что за тупая тварь!
-	NeverHitMeAgain				=	"SVM_9_NeverHitMeAgain"				;//Даже  не пытайся нападать на меня!
-	YouBetterShouldHaveListened	=	"SVM_9_YouBetterShouldHaveListened"	;//Я предупреждал тебя!
-	GetUpAndBeGone				=	"SVM_9_GetUpAndBeGone"					;//А теперь убирайся!
-	NeverEnterRoomAgain			=	"SVM_9_NeverEnterRoomAgain"			;//Я не хочу видеть тебя здесь, понял?
-	ThereIsNoFightingHere		=	"SVM_9_ThereIsNoFightingHere"			;//Драки здесь запрещены. Не забывай об этом!
+	KillEnemy					= 	"SVM_9_KillEnemy"					;//РЇ РїСЂРѕСѓС‡Сѓ С‚РµР±СЏ, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_9_EnemyKilled"					;//Р’РѕС‚ С‚РµР±Рµ...
+	//MonsterKilled				=	"SVM_9_MonsterKilled"				;//Ich steh' auf diese ganze ScheiРЇe!
+	Addon_MonsterKilled			=	"SVM_9_Addon_MonsterKilled"			;//РЎ С‚РѕР±РѕР№ РїРѕРєРѕРЅС‡РµРЅРѕ, РјРµСЂР·РєР°СЏ С‚РІР°СЂСЊ!
+	Addon_MonsterKilled2		=	"SVM_9_Addon_MonsterKilled2"		;//Р•Р©Р• РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_9_ThiefDown"					;//РџСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ! Р”РµСЂР¶РёСЃСЊ РѕС‚СЃСЋРґР° РїРѕРґР°Р»СЊС€Рµ, РіСЂСЏР·РЅС‹Р№ РІРѕСЂ!
+	rumfummlerDown				=	"SVM_9_rumfummlerDown"				;//РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РЅР°СѓС‡РёС‚ С‚РµР±СЏ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚!
+	SheepAttackerDown			=	"SVM_9_SheepAttackerDown"			;//Р РґРµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅР°С€РёС… РѕРІРµС†!
+	KillMurderer				=	"SVM_9_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_9_StupidBeastKilled"			;//Р§С‚Рѕ Р·Р° С‚СѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_9_NeverHitMeAgain"				;//Р”Р°Р¶Рµ  РЅРµ РїС‹С‚Р°Р№СЃСЏ РЅР°РїР°РґР°С‚СЊ РЅР° РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_9_YouBetterShouldHaveListened"	;//РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ!
+	GetUpAndBeGone				=	"SVM_9_GetUpAndBeGone"					;//Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ!
+	NeverEnterRoomAgain			=	"SVM_9_NeverEnterRoomAgain"			;//РЇ РЅРµ С…РѕС‡Сѓ РІРёРґРµС‚СЊ С‚РµР±СЏ Р·РґРµСЃСЊ, РїРѕРЅСЏР»?
+	ThereIsNoFightingHere		=	"SVM_9_ThereIsNoFightingHere"			;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹. РќРµ Р·Р°Р±С‹РІР°Р№ РѕР± СЌС‚РѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_9_SpareMe"						;//Не делай глупостей!
-	RunAway						= 	"SVM_9_RunAway"						;//Я ухожу отсюда!
+	SpareMe						=	"SVM_9_SpareMe"						;//РќРµ РґРµР»Р°Р№ РіР»СѓРїРѕСЃС‚РµР№!
+	RunAway						= 	"SVM_9_RunAway"						;//РЇ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_9_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_9_Guards"					;//СТРАЖА!
-	Help						=	"SVM_9_Help"					;//Помогите!
+	Alarm						=	"SVM_9_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_9_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_9_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_9_GoodMonsterKill"		;//Покажи этим тварям, где раки зимуют!
-	GoodKill					= 	"SVM_9_GoodKill"				;//Да, покажи этому ублюдку!
+	GoodMonsterKill				=	"SVM_9_GoodMonsterKill"		;//РџРѕРєР°Р¶Рё СЌС‚РёРј С‚РІР°СЂСЏРј, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
+	GoodKill					= 	"SVM_9_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕРјСѓ СѓР±Р»СЋРґРєСѓ!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_9_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_9_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_9_RunCoward"				;//Я тебя достану!
+	RunCoward					=	"SVM_9_RunCoward"				;//РЇ С‚РµР±СЏ РґРѕСЃС‚Р°РЅСѓ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_9_GetOutOfHere"			;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_9_WhyAreYouInHere"		;//Тебе нечего делать здесь!
-	YesGoOutOfHere				= 	"SVM_9_YesGoOutOfHere"			;//Да, проваливай отсюда!
+	GetOutOfHere				=	"SVM_9_GetOutOfHere"			;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_9_WhyAreYouInHere"		;//РўРµР±Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ Р·РґРµСЃСЊ!
+	YesGoOutOfHere				= 	"SVM_9_YesGoOutOfHere"			;//Р”Р°, РїСЂРѕРІР°Р»РёРІР°Р№ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_9_WhatsThisSupposedToBe"	;//Что ты задумал? Что ты тут ошиваешься?
-	YouDisturbedMySlumber		=	"SVM_9_YouDisturbedMySlumber"	;//(просыпается) Черт, что тебе нужно?
+	WhatsThisSupposedToBe		=	"SVM_9_WhatsThisSupposedToBe"	;//Р§С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р»? Р§С‚Рѕ С‚С‹ С‚СѓС‚ РѕС€РёРІР°РµС€СЊСЃСЏ?
+	YouDisturbedMySlumber		=	"SVM_9_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_9_ITookYourGold"			;//Ну, по крайней мере, у тебя есть золото с собой.
-	ShitNoGold					=	"SVM_9_ShitNoGold"				;//Даже золота нет - пф-ф-ф.
-	ITakeYourWeapon				=	"SVM_9_ITakeYourWeapon"		;//Пожалуй, я заберу твое оружие.
+	ITookYourGold				=	"SVM_9_ITookYourGold"			;//РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, Сѓ С‚РµР±СЏ РµСЃС‚СЊ Р·РѕР»РѕС‚Рѕ СЃ СЃРѕР±РѕР№.
+	ShitNoGold					=	"SVM_9_ShitNoGold"				;//Р”Р°Р¶Рµ Р·РѕР»РѕС‚Р° РЅРµС‚ - РїС„-С„-С„.
+	ITakeYourWeapon				=	"SVM_9_ITakeYourWeapon"		;//РџРѕР¶Р°Р»СѓР№, СЏ Р·Р°Р±РµСЂСѓ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_9_WhatAreYouDoing"		;//(предупреждающе) Парень! Не делай этого больше!
+	WhatAreYouDoing				=	"SVM_9_WhatAreYouDoing"		;//(РїСЂРµРґСѓРїСЂРµР¶РґР°СЋС‰Рµ) РџР°СЂРµРЅСЊ! РќРµ РґРµР»Р°Р№ СЌС‚РѕРіРѕ Р±РѕР»СЊС€Рµ!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_9_LookingForTroubleAgain"	;//(агрессивно) Хочешь получить еще?
-	StopMagic					=	"SVM_9_StopMagic"				;//Убери эту магию!
-	ISaidStopMagic				=	"SVM_9_ISaidStopMagic"			;//Последнее предупреждение! Убери эту магию!
-	WeaponDown					=	"SVM_9_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_9_ISaidWeaponDown"		;//Убери это, или я за себя не отвечаю!
-	WiseMove					=	"SVM_9_WiseMove"				;//Эй, ты не такой тупой, как кажешься!
+	LookingForTroubleAgain		=	"SVM_9_LookingForTroubleAgain"	;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РҐРѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РµС‰Рµ?
+	StopMagic					=	"SVM_9_StopMagic"				;//РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ!
+	ISaidStopMagic				=	"SVM_9_ISaidStopMagic"			;//РџРѕСЃР»РµРґРЅРµРµ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ! РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ!
+	WeaponDown					=	"SVM_9_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_9_ISaidWeaponDown"		;//РЈР±РµСЂРё СЌС‚Рѕ, РёР»Рё СЏ Р·Р° СЃРµР±СЏ РЅРµ РѕС‚РІРµС‡Р°СЋ!
+	WiseMove					=	"SVM_9_WiseMove"				;//Р­Р№, С‚С‹ РЅРµ С‚Р°РєРѕР№ С‚СѓРїРѕР№, РєР°Рє РєР°Р¶РµС€СЊСЃСЏ!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_9_NextTimeYoureInForIt"	;//(себе под нос) Только еще попробуй...
-	OhMyHead					=	"SVM_9_OhMyHead"				;//(себе под нос) Ох! Моя голова...
+	NextTimeYoureInForIt		=	"SVM_9_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РўРѕР»СЊРєРѕ РµС‰Рµ РїРѕРїСЂРѕР±СѓР№...
+	OhMyHead					=	"SVM_9_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…! РњРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_9_TheresAFight"			;//(жадно) А теперь пришло время позабавиться...
-	OhMyGodItsAFight			=	"SVM_9_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой...
-	GoodVictory					=	"SVM_9_GoodVictory"			;//(дьявольский смех) Пусть это послужит уроком для него...
-	NotBad						= 	"SVM_9_NotBad"					;//(одобрительно) Как он ему дал!
-	OhMyGodHesDown				=	"SVM_9_OhMyGodHesDown"			;//(себе под нос) Какой он жестокий!
-	CheerFriend01				=	"SVM_9_CheerFriend01"			;//Прикончи его!
-	CheerFriend02				=	"SVM_9_CheerFriend02"			;//Не останавливайся!
-	CheerFriend03				=	"SVM_9_CheerFriend03"			;//Прикончи его!
-	Ooh01						=	"SVM_9_Ooh01"					;//Осторожно!
-	Ooh02						=	"SVM_9_Ooh02"					;//Защищайся же!
-	Ooh03						=	"SVM_9_Ooh03"					;//Ох, как больно!
+	TheresAFight				=	"SVM_9_TheresAFight"			;//(Р¶Р°РґРЅРѕ) Рђ С‚РµРїРµСЂСЊ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїРѕР·Р°Р±Р°РІРёС‚СЊСЃСЏ...
+	OhMyGodItsAFight			=	"SVM_9_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№...
+	GoodVictory					=	"SVM_9_GoodVictory"			;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РџСѓСЃС‚СЊ СЌС‚Рѕ РїРѕСЃР»СѓР¶РёС‚ СѓСЂРѕРєРѕРј РґР»СЏ РЅРµРіРѕ...
+	NotBad						= 	"SVM_9_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РљР°Рє РѕРЅ РµРјСѓ РґР°Р»!
+	OhMyGodHesDown				=	"SVM_9_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РљР°РєРѕР№ РѕРЅ Р¶РµСЃС‚РѕРєРёР№!
+	CheerFriend01				=	"SVM_9_CheerFriend01"			;//РџСЂРёРєРѕРЅС‡Рё РµРіРѕ!
+	CheerFriend02				=	"SVM_9_CheerFriend02"			;//РќРµ РѕСЃС‚Р°РЅР°РІР»РёРІР°Р№СЃСЏ!
+	CheerFriend03				=	"SVM_9_CheerFriend03"			;//РџСЂРёРєРѕРЅС‡Рё РµРіРѕ!
+	Ooh01						=	"SVM_9_Ooh01"					;//РћСЃС‚РѕСЂРѕР¶РЅРѕ!
+	Ooh02						=	"SVM_9_Ooh02"					;//Р—Р°С‰РёС‰Р°Р№СЃСЏ Р¶Рµ!
+	Ooh03						=	"SVM_9_Ooh03"					;//РћС…, РєР°Рє Р±РѕР»СЊРЅРѕ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_9_WhatWasThat"				;//(себе под нос, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_9_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_9_GetOutOfMyBed"			;//Убирайся с моей кровати!
-	Awake						= "SVM_9_Awake"					;//(зевает)
+	GetOutOfMyBed				= "SVM_9_GetOutOfMyBed"			;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_9_Awake"					;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_9_ABS_COMMANDER"    ;//Так значит, ты утряс все проблемы с командующим.
-	ABS_MONASTERY    = "SVM_9_ABS_MONASTERY"    ;//Отец Парлан отпустил тебе твои грехи.
-	ABS_FARM       = "SVM_9_ABS_FARM"        ;//Так ты ходил к Ли и все уладил.
-	ABS_GOOD       = "SVM_9_ABS_GOOD"       ;//Хорошо.
+	ABS_COMMANDER     = "SVM_9_ABS_COMMANDER"    ;//РўР°Рє Р·РЅР°С‡РёС‚, С‚С‹ СѓС‚СЂСЏСЃ РІСЃРµ РїСЂРѕР±Р»РµРјС‹ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј.
+	ABS_MONASTERY    = "SVM_9_ABS_MONASTERY"    ;//РћС‚РµС† РџР°СЂР»Р°РЅ РѕС‚РїСѓСЃС‚РёР» С‚РµР±Рµ С‚РІРѕРё РіСЂРµС…Рё.
+	ABS_FARM       = "SVM_9_ABS_FARM"        ;//РўР°Рє С‚С‹ С…РѕРґРёР» Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD       = "SVM_9_ABS_GOOD"       ;//РҐРѕСЂРѕС€Рѕ.
  	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_9_SHEEPKILLER_CRIME"   ;//Ты нападаешь на овцу? А ты не хочешь выбрать себе еще более беззащитную жертву?
-	ATTACK_CRIME     = "SVM_9_ATTACK_CRIME"    ;//Я не общаюсь с бандитами!
-	THEFT_CRIME      = "SVM_9_THEFT_CRIME"    ;//Я не имею дел с ворами!
+	SHEEPKILLER_CRIME   = "SVM_9_SHEEPKILLER_CRIME"   ;//РўС‹ РЅР°РїР°РґР°РµС€СЊ РЅР° РѕРІС†Сѓ? Рђ С‚С‹ РЅРµ С…РѕС‡РµС€СЊ РІС‹Р±СЂР°С‚СЊ СЃРµР±Рµ РµС‰Рµ Р±РѕР»РµРµ Р±РµР·Р·Р°С‰РёС‚РЅСѓСЋ Р¶РµСЂС‚РІСѓ?
+	ATTACK_CRIME     = "SVM_9_ATTACK_CRIME"    ;//РЇ РЅРµ РѕР±С‰Р°СЋСЃСЊ СЃ Р±Р°РЅРґРёС‚Р°РјРё!
+	THEFT_CRIME      = "SVM_9_THEFT_CRIME"    ;//РЇ РЅРµ РёРјРµСЋ РґРµР» СЃ РІРѕСЂР°РјРё!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_9_PAL_CITY_CRIME"   ;//Так ты хочешь стать паладином? Ну, подожди, вот лорд Хаген узнает о твоих делах!
- 	MIL_CITY_CRIME     = "SVM_9_MIL_CITY_CRIME"   ;//Ты действительно состоишь в городской страже? Лорд Андрэ не потерпит такого!
- 	CITY_CRIME       = "SVM_9_CITY_CRIME"    ;//Иди к лорду Андрэ, пока еще не поздно.
+ 	PAL_CITY_CRIME     = "SVM_9_PAL_CITY_CRIME"   ;//РўР°Рє С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј? РќСѓ, РїРѕРґРѕР¶РґРё, РІРѕС‚ Р»РѕСЂРґ РҐР°РіРµРЅ СѓР·РЅР°РµС‚ Рѕ С‚РІРѕРёС… РґРµР»Р°С…!
+ 	MIL_CITY_CRIME     = "SVM_9_MIL_CITY_CRIME"   ;//РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРѕСЃС‚РѕРёС€СЊ РІ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рµ? Р›РѕСЂРґ РђРЅРґСЂСЌ РЅРµ РїРѕС‚РµСЂРїРёС‚ С‚Р°РєРѕРіРѕ!
+ 	CITY_CRIME       = "SVM_9_CITY_CRIME"    ;//РРґРё Рє Р»РѕСЂРґСѓ РђРЅРґСЂСЌ, РїРѕРєР° РµС‰Рµ РЅРµ РїРѕР·РґРЅРѕ.
  	// -------------------------
-	MONA_CRIME       = "SVM_9_MONA_CRIME"    ;//Иди к отцу Парлану. Он отпустит тебе твои грехи!
-	FARM_CRIME       = "SVM_9_FARM_CRIME"    ;//Ли узнает об этом и тебе придется заплатить.
-	OC_CRIME       = "SVM_9_OC_CRIME"     ;//Командующему Гаронду это не понравится. Тебе лучше поговорить с ним, пока не поздно!
+	MONA_CRIME       = "SVM_9_MONA_CRIME"    ;//РРґРё Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ. РћРЅ РѕС‚РїСѓСЃС‚РёС‚ С‚РµР±Рµ С‚РІРѕРё РіСЂРµС…Рё!
+	FARM_CRIME       = "SVM_9_FARM_CRIME"    ;//Р›Рё СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј Рё С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ.
+	OC_CRIME       = "SVM_9_OC_CRIME"     ;//РљРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Р“Р°СЂРѕРЅРґСѓ СЌС‚Рѕ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ. РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј, РїРѕРєР° РЅРµ РїРѕР·РґРЅРѕ!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_9_TOUGHGUY_ATTACKLOST"		;//Хорошо, ты победил. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_9_TOUGHGUY_ATTACKWON"		;//Я думаю, теперь ты понимаешь, с кем ты имеешь дело. Чего ты хочешь?
-	TOUGHGUY_PLAYERATTACK		= "SVM_9_TOUGHGUY_PLAYERATTACK"	;//Опять ты? Хочешь еще раз сразиться со мной, да?
+	TOUGHGUY_ATTACKLOST			= "SVM_9_TOUGHGUY_ATTACKLOST"		;//РҐРѕСЂРѕС€Рѕ, С‚С‹ РїРѕР±РµРґРёР». Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_9_TOUGHGUY_ATTACKWON"		;//РЇ РґСѓРјР°СЋ, С‚РµРїРµСЂСЊ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, СЃ РєРµРј С‚С‹ РёРјРµРµС€СЊ РґРµР»Рѕ. Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_PLAYERATTACK		= "SVM_9_TOUGHGUY_PLAYERATTACK"	;//РћРїСЏС‚СЊ С‚С‹? РҐРѕС‡РµС€СЊ РµС‰Рµ СЂР°Р· СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№, РґР°?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_9_GOLD_1000"				;//1000 золотых монет.
-	GOLD_950					= "SVM_9_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_9_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_9_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_9_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_9_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_9_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_9_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_9_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_9_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_9_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_9_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_9_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_9_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_9_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_9_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_9_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_9_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_9_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_9_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_9_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_9_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_9_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_9_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_9_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_9_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_9_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_9_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_9_GOLD_1000"				;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_9_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_9_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_9_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_9_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_9_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_9_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_9_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_9_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_9_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_9_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_9_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_9_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_9_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_9_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_9_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_9_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_9_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_9_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_9_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_9_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_9_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_9_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_9_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_9_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_9_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_9_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_9_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_9_Smalltalk01"				;//...не могу поверить в это...
-	Smalltalk02					= "SVM_9_Smalltalk02"				;//...я не был бы так уверен...
-	Smalltalk03					= "SVM_9_Smalltalk03"				;//...но он все время знал об этом ...
-	Smalltalk04					= "SVM_9_Smalltalk04"				;//...я теперь даже не знаю, кому верить...
-	Smalltalk05					= "SVM_9_Smalltalk05"				;//...я не знаю, где его так отделали...
-	Smalltalk06					= "SVM_9_Smalltalk06"				;//...у меня и так хватает проблем...
-	Smalltalk07					= "SVM_9_Smalltalk07"				;//...я что-то слышал об этом...
-	Smalltalk08					= "SVM_9_Smalltalk08"				;//...я не хочу иметь к этому никакого отношения...
-	Smalltalk09					= "SVM_9_Smalltalk09"				;//...не нужно верить всему, что говорят...
-	Smalltalk10					= "SVM_9_Smalltalk10"				;//...он узнал это не от меня...
-	Smalltalk11					= "SVM_9_Smalltalk11"				;//...я уже подумывал об этом...
-	Smalltalk12					= "SVM_9_Smalltalk12"				;//...никому не интересно мое мнение...
-	Smalltalk13					= "SVM_9_Smalltalk13"				;//...он не заслужил этого...
-	Smalltalk14					= "SVM_9_Smalltalk14"				;//...не говори, что ты не знал этого...
-	Smalltalk15					= "SVM_9_Smalltalk15"				;//...это было очевидно...
-	Smalltalk16					= "SVM_9_Smalltalk16"				;//...где ты это услышал?..
-	Smalltalk17					= "SVM_9_Smalltalk17"				;//...так может продолжаться вечность...
-	Smalltalk18					= "SVM_9_Smalltalk18"				;//...у меня собственное мнение на этот счет...
-	Smalltalk19					= "SVM_9_Smalltalk19"				;//...это было так, как ты сказал...
-	Smalltalk20					= "SVM_9_Smalltalk20"				;//...я не верю, что это что-то изменит...
-	Smalltalk21					= "SVM_9_Smalltalk21"				;//...первый раз слышу об этом...
-	Smalltalk22					= "SVM_9_Smalltalk22"				;//...нам остается только ждать...
-	Smalltalk23					= "SVM_9_Smalltalk23"				;//...я знал, что это будет проблемой...
-	Smalltalk24					= "SVM_9_Smalltalk24"				;//...почему они не слушают меня?..
+	Smalltalk01					= "SVM_9_Smalltalk01"				;//...РЅРµ РјРѕРіСѓ РїРѕРІРµСЂРёС‚СЊ РІ СЌС‚Рѕ...
+	Smalltalk02					= "SVM_9_Smalltalk02"				;//...СЏ РЅРµ Р±С‹Р» Р±С‹ С‚Р°Рє СѓРІРµСЂРµРЅ...
+	Smalltalk03					= "SVM_9_Smalltalk03"				;//...РЅРѕ РѕРЅ РІСЃРµ РІСЂРµРјСЏ Р·РЅР°Р» РѕР± СЌС‚РѕРј ...
+	Smalltalk04					= "SVM_9_Smalltalk04"				;//...СЏ С‚РµРїРµСЂСЊ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ, РєРѕРјСѓ РІРµСЂРёС‚СЊ...
+	Smalltalk05					= "SVM_9_Smalltalk05"				;//...СЏ РЅРµ Р·РЅР°СЋ, РіРґРµ РµРіРѕ С‚Р°Рє РѕС‚РґРµР»Р°Р»Рё...
+	Smalltalk06					= "SVM_9_Smalltalk06"				;//...Сѓ РјРµРЅСЏ Рё С‚Р°Рє С…РІР°С‚Р°РµС‚ РїСЂРѕР±Р»РµРј...
+	Smalltalk07					= "SVM_9_Smalltalk07"				;//...СЏ С‡С‚Рѕ-С‚Рѕ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk08					= "SVM_9_Smalltalk08"				;//...СЏ РЅРµ С…РѕС‡Сѓ РёРјРµС‚СЊ Рє СЌС‚РѕРјСѓ РЅРёРєР°РєРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ...
+	Smalltalk09					= "SVM_9_Smalltalk09"				;//...РЅРµ РЅСѓР¶РЅРѕ РІРµСЂРёС‚СЊ РІСЃРµРјСѓ, С‡С‚Рѕ РіРѕРІРѕСЂСЏС‚...
+	Smalltalk10					= "SVM_9_Smalltalk10"				;//...РѕРЅ СѓР·РЅР°Р» СЌС‚Рѕ РЅРµ РѕС‚ РјРµРЅСЏ...
+	Smalltalk11					= "SVM_9_Smalltalk11"				;//...СЏ СѓР¶Рµ РїРѕРґСѓРјС‹РІР°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk12					= "SVM_9_Smalltalk12"				;//...РЅРёРєРѕРјСѓ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ РјРѕРµ РјРЅРµРЅРёРµ...
+	Smalltalk13					= "SVM_9_Smalltalk13"				;//...РѕРЅ РЅРµ Р·Р°СЃР»СѓР¶РёР» СЌС‚РѕРіРѕ...
+	Smalltalk14					= "SVM_9_Smalltalk14"				;//...РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ РЅРµ Р·РЅР°Р» СЌС‚РѕРіРѕ...
+	Smalltalk15					= "SVM_9_Smalltalk15"				;//...СЌС‚Рѕ Р±С‹Р»Рѕ РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk16					= "SVM_9_Smalltalk16"				;//...РіРґРµ С‚С‹ СЌС‚Рѕ СѓСЃР»С‹С€Р°Р»?..
+	Smalltalk17					= "SVM_9_Smalltalk17"				;//...С‚Р°Рє РјРѕР¶РµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ РІРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk18					= "SVM_9_Smalltalk18"				;//...Сѓ РјРµРЅСЏ СЃРѕР±СЃС‚РІРµРЅРЅРѕРµ РјРЅРµРЅРёРµ РЅР° СЌС‚РѕС‚ СЃС‡РµС‚...
+	Smalltalk19					= "SVM_9_Smalltalk19"				;//...СЌС‚Рѕ Р±С‹Р»Рѕ С‚Р°Рє, РєР°Рє С‚С‹ СЃРєР°Р·Р°Р»...
+	Smalltalk20					= "SVM_9_Smalltalk20"				;//...СЏ РЅРµ РІРµСЂСЋ, С‡С‚Рѕ СЌС‚Рѕ С‡С‚Рѕ-С‚Рѕ РёР·РјРµРЅРёС‚...
+	Smalltalk21					= "SVM_9_Smalltalk21"				;//...РїРµСЂРІС‹Р№ СЂР°Р· СЃР»С‹С€Сѓ РѕР± СЌС‚РѕРј...
+	Smalltalk22					= "SVM_9_Smalltalk22"				;//...РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р¶РґР°С‚СЊ...
+	Smalltalk23					= "SVM_9_Smalltalk23"				;//...СЏ Р·РЅР°Р», С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ РїСЂРѕР±Р»РµРјРѕР№...
+	Smalltalk24					= "SVM_9_Smalltalk24"				;//...РїРѕС‡РµРјСѓ РѕРЅРё РЅРµ СЃР»СѓС€Р°СЋС‚ РјРµРЅСЏ?..
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_9_Smalltalk25"				;//...он бежал так, как будто за ним гнался сам Белиар...
-	Smalltalk26					= "SVM_9_Smalltalk26"				;//...конечно, в конце концов, мы его поймали...
-	Smalltalk27					= "SVM_9_Smalltalk27"				;//...ты должен все хорошенько взвесить...
+	Smalltalk25					= "SVM_9_Smalltalk25"				;//...РѕРЅ Р±РµР¶Р°Р» С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ Р·Р° РЅРёРј РіРЅР°Р»СЃСЏ СЃР°Рј Р‘РµР»РёР°СЂ...
+	Smalltalk26					= "SVM_9_Smalltalk26"				;//...РєРѕРЅРµС‡РЅРѕ, РІ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РјС‹ РµРіРѕ РїРѕР№РјР°Р»Рё...
+	Smalltalk27					= "SVM_9_Smalltalk27"				;//...С‚С‹ РґРѕР»Р¶РµРЅ РІСЃРµ С…РѕСЂРѕС€РµРЅСЊРєРѕ РІР·РІРµСЃРёС‚СЊ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_9_Smalltalk28"				;//...некоторые даже не знают, насколько они порочны...
-	Smalltalk29					= "SVM_9_Smalltalk29"				;//...такова воля Инноса...
-	Smalltalk30					= "SVM_9_Smalltalk30"				;//...его дела были праведными...
+	Smalltalk28					= "SVM_9_Smalltalk28"				;//...РЅРµРєРѕС‚РѕСЂС‹Рµ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋС‚, РЅР°СЃРєРѕР»СЊРєРѕ РѕРЅРё РїРѕСЂРѕС‡РЅС‹...
+	Smalltalk29					= "SVM_9_Smalltalk29"				;//...С‚Р°РєРѕРІР° РІРѕР»СЏ РРЅРЅРѕСЃР°...
+	Smalltalk30					= "SVM_9_Smalltalk30"				;//...РµРіРѕ РґРµР»Р° Р±С‹Р»Рё РїСЂР°РІРµРґРЅС‹РјРё...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_9_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_9_NoLearnOverPersonalMAX"	;//Ты хочешь больше, чем я могу научить тебя.
-	NoLearnYoureBetter			= "SVM_9_NoLearnYoureBetter"		;//Мне больше нечему учить тебя. Ты уже слишком хорош.
-	YouLearnedSomething			= "SVM_9_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_9_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_9_NoLearnOverPersonalMAX"	;//РўС‹ С…РѕС‡РµС€СЊ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_9_NoLearnYoureBetter"		;//РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СѓР¶Рµ СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_9_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_9_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_9_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_9_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_9_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_9_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_9_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_9_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_9_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_9_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_9_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_9_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_9_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_9_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_9_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_9_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_9_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_9_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_9_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_9_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_9_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_9_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_9_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_9_TEMPEL_2_GALGEN"			;//Выйдя из храма и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_9_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_9_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_9_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_9_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_9_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_9_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_9_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_9_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_9_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_9_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_9_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_9_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_9_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_9_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_9_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_9_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР° Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_9_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_9_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_9_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_9_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_9_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_9_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_9_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_9_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_9_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_9_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_9_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_9_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_9_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_9_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_9_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_9_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_9_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_9_Addon_WrongArmor";				//Что это за одеяние? Надень что-нибудь, что тебе подходит.
-	ADDON_WRONGARMOR_SLD		= "SVM_9_ADDON_WRONGARMOR_SLD";			//Что на тебе надето? Ты должен носить свои доспехи!
-	ADDON_WRONGARMOR_MIL		= "SVM_9_ADDON_WRONGARMOR_MIL";			//Ты работаешь на короля, так что тебе следует носить доспехи королевской гвардии. Переоденься.
-	ADDON_WRONGARMOR_KDF		= "SVM_9_ADDON_WRONGARMOR_KDF";			//Твоя одежда не подходит члену нашего ордена. Пойди и переоденься.
-	ADDON_NOARMOR_BDT			= "SVM_9_ADDON_ADDON_NOARMOR_BDT";		//У тебя даже нет доспехов. Отвали!
+	ADDON_WRONGARMOR			= "SVM_9_Addon_WrongArmor";				//Р§С‚Рѕ СЌС‚Рѕ Р·Р° РѕРґРµСЏРЅРёРµ? РќР°РґРµРЅСЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡С‚Рѕ С‚РµР±Рµ РїРѕРґС…РѕРґРёС‚.
+	ADDON_WRONGARMOR_SLD		= "SVM_9_ADDON_WRONGARMOR_SLD";			//Р§С‚Рѕ РЅР° С‚РµР±Рµ РЅР°РґРµС‚Рѕ? РўС‹ РґРѕР»Р¶РµРЅ РЅРѕСЃРёС‚СЊ СЃРІРѕРё РґРѕСЃРїРµС…Рё!
+	ADDON_WRONGARMOR_MIL		= "SVM_9_ADDON_WRONGARMOR_MIL";			//РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РєРѕСЂРѕР»СЏ, С‚Р°Рє С‡С‚Рѕ С‚РµР±Рµ СЃР»РµРґСѓРµС‚ РЅРѕСЃРёС‚СЊ РґРѕСЃРїРµС…Рё РєРѕСЂРѕР»РµРІСЃРєРѕР№ РіРІР°СЂРґРёРё. РџРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_WRONGARMOR_KDF		= "SVM_9_ADDON_WRONGARMOR_KDF";			//РўРІРѕСЏ РѕРґРµР¶РґР° РЅРµ РїРѕРґС…РѕРґРёС‚ С‡Р»РµРЅСѓ РЅР°С€РµРіРѕ РѕСЂРґРµРЅР°. РџРѕР№РґРё Рё РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_NOARMOR_BDT			= "SVM_9_ADDON_ADDON_NOARMOR_BDT";		//РЈ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ РґРѕСЃРїРµС…РѕРІ. РћС‚РІР°Р»Рё!
 
-	ADDON_DIEBANDIT				= "SVM_9_ADDON_DIEBANDIT";				//Теперь твоя очередь, разбойник!
-	ADDON_DIRTYPIRATE			= "SVM_9_ADDON_DIRTYPIRATE";			//Тебе не следовало показываться здесь, пират!
+	ADDON_DIEBANDIT				= "SVM_9_ADDON_DIEBANDIT";				//РўРµРїРµСЂСЊ С‚РІРѕСЏ РѕС‡РµСЂРµРґСЊ, СЂР°Р·Р±РѕР№РЅРёРє!
+	ADDON_DIRTYPIRATE			= "SVM_9_ADDON_DIRTYPIRATE";			//РўРµР±Рµ РЅРµ СЃР»РµРґРѕРІР°Р»Рѕ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ, РїРёСЂР°С‚!
 };
 
 instance SVM_10 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_10_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_10_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_10_Weather"						;//Какая паршивая погода!
+	MILGreetings				= 	"SVM_10_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_10_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_10_Weather"						;//РљР°РєР°СЏ РїР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_10_IGetYouStill"				;//Опять ТЫ!
-	DieEnemy					=	"SVM_10_DieEnemy"					;//Я разорву тебя на куски!
-	DieMonster					=	"SVM_10_DieMonster"					;//Еще одна тварь!
-	DirtyThief					=	"SVM_10_DirtyThief"					;//Ах ты, подлый вор!
-	HandsOff					=	"SVM_10_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_10_SheepKiller"					;//Эй! оставь наших овец в покое!
-	SheepKillerMonster			=	"SVM_10_SheepKillerMonster"			;//Этот монстр ворует наших овец!
-	YouMurderer					=	"SVM_10_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_10_DieStupidBeast"				;//Что ЭТА тварь делает здесь?
-	YouDareHitMe				=	"SVM_10_YouDareHitMe"				;//Сейчас ты получишь!
-	YouAskedForIt				=	"SVM_10_YouAskedForIt"				;//Ты сам напросился.
-	ThenIBeatYouOutOfHere		=	"SVM_10_ThenIBeatYouOutOfHere"		;//Иногда слова не доходят...
-	WhatDidYouDoInThere			=	"SVM_10_WhatDidYouDoInThere"			;//Что тебе там было нужно, а?!
-	WillYouStopFighting			=	"SVM_10_WillYouStopFighting"			;//Прекрати немедленно!
+	IGetYouStill				= 	"SVM_10_IGetYouStill"				;//РћРїСЏС‚СЊ РўР«!
+	DieEnemy					=	"SVM_10_DieEnemy"					;//РЇ СЂР°Р·РѕСЂРІСѓ С‚РµР±СЏ РЅР° РєСѓСЃРєРё!
+	DieMonster					=	"SVM_10_DieMonster"					;//Р•С‰Рµ РѕРґРЅР° С‚РІР°СЂСЊ!
+	DirtyThief					=	"SVM_10_DirtyThief"					;//РђС… С‚С‹, РїРѕРґР»С‹Р№ РІРѕСЂ!
+	HandsOff					=	"SVM_10_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_10_SheepKiller"					;//Р­Р№! РѕСЃС‚Р°РІСЊ РЅР°С€РёС… РѕРІРµС† РІ РїРѕРєРѕРµ!
+	SheepKillerMonster			=	"SVM_10_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_10_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_10_DieStupidBeast"				;//Р§С‚Рѕ Р­РўРђ С‚РІР°СЂСЊ РґРµР»Р°РµС‚ Р·РґРµСЃСЊ?
+	YouDareHitMe				=	"SVM_10_YouDareHitMe"				;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	YouAskedForIt				=	"SVM_10_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ.
+	ThenIBeatYouOutOfHere		=	"SVM_10_ThenIBeatYouOutOfHere"		;//РРЅРѕРіРґР° СЃР»РѕРІР° РЅРµ РґРѕС…РѕРґСЏС‚...
+	WhatDidYouDoInThere			=	"SVM_10_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ С‚Р°Рј Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_10_WillYouStopFighting"			;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_10_KillEnemy"					;//Умри!
-	EnemyKilled					=	"SVM_10_EnemyKilled"					;//Тупой ублюдок...
-	MonsterKilled				=	"SVM_10_MonsterKilled"				;//Получай, грязная тварь!
-	ThiefDown					=	"SVM_10_ThiefDown"					;//В будущем держи свои руки подальше от моих вещей - понял?
-	rumfummlerDown				=	"SVM_10_rumfummlerDown"				;//Впредь не распускай руки!
-	SheepAttackerDown			=	"SVM_10_SheepAttackerDown"			;//Впредь держись подальше от наших овец!
-	KillMurderer				=	"SVM_10_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_10_StupidBeastKilled"			;//Что за тупая тварь!
-	NeverHitMeAgain				=	"SVM_10_NeverHitMeAgain"				;//Даже и не пытайся!
-	YouBetterShouldHaveListened	=	"SVM_10_YouBetterShouldHaveListened"	;//Пусть это послужит тебе уроком.
-	GetUpAndBeGone				=	"SVM_10_GetUpAndBeGone"				;//Вставай и убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_10_NeverEnterRoomAgain"			;//Чтобы больше я тебя не видел там - понятно?
-	ThereIsNoFightingHere		=	"SVM_10_ThereIsNoFightingHere"		;//Здесь я задаю трепку, понял?
+	KillEnemy					= 	"SVM_10_KillEnemy"					;//РЈРјСЂРё!
+	EnemyKilled					=	"SVM_10_EnemyKilled"					;//РўСѓРїРѕР№ СѓР±Р»СЋРґРѕРє...
+	MonsterKilled				=	"SVM_10_MonsterKilled"				;//РџРѕР»СѓС‡Р°Р№, РіСЂСЏР·РЅР°СЏ С‚РІР°СЂСЊ!
+	ThiefDown					=	"SVM_10_ThiefDown"					;//Р’ Р±СѓРґСѓС‰РµРј РґРµСЂР¶Рё СЃРІРѕРё СЂСѓРєРё РїРѕРґР°Р»СЊС€Рµ РѕС‚ РјРѕРёС… РІРµС‰РµР№ - РїРѕРЅСЏР»?
+	rumfummlerDown				=	"SVM_10_rumfummlerDown"				;//Р’РїСЂРµРґСЊ РЅРµ СЂР°СЃРїСѓСЃРєР°Р№ СЂСѓРєРё!
+	SheepAttackerDown			=	"SVM_10_SheepAttackerDown"			;//Р’РїСЂРµРґСЊ РґРµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅР°С€РёС… РѕРІРµС†!
+	KillMurderer				=	"SVM_10_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_10_StupidBeastKilled"			;//Р§С‚Рѕ Р·Р° С‚СѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_10_NeverHitMeAgain"				;//Р”Р°Р¶Рµ Рё РЅРµ РїС‹С‚Р°Р№СЃСЏ!
+	YouBetterShouldHaveListened	=	"SVM_10_YouBetterShouldHaveListened"	;//РџСѓСЃС‚СЊ СЌС‚Рѕ РїРѕСЃР»СѓР¶РёС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј.
+	GetUpAndBeGone				=	"SVM_10_GetUpAndBeGone"				;//Р’СЃС‚Р°РІР°Р№ Рё СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_10_NeverEnterRoomAgain"			;//Р§С‚РѕР±С‹ Р±РѕР»СЊС€Рµ СЏ С‚РµР±СЏ РЅРµ РІРёРґРµР» С‚Р°Рј - РїРѕРЅСЏС‚РЅРѕ?
+	ThereIsNoFightingHere		=	"SVM_10_ThereIsNoFightingHere"		;//Р—РґРµСЃСЊ СЏ Р·Р°РґР°СЋ С‚СЂРµРїРєСѓ, РїРѕРЅСЏР»?
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_10_SpareMe"						;//Оставь меня в покое!
-	RunAway						= 	"SVM_10_RunAway"						;//Черт, я ухожу отсюда!
+	SpareMe						=	"SVM_10_SpareMe"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
+	RunAway						= 	"SVM_10_RunAway"						;//Р§РµСЂС‚, СЏ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_10_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_10_Guards"					;//СТРАЖА!
-	Help						=	"SVM_10_Help"					;//Помогите!
+	Alarm						=	"SVM_10_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_10_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_10_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_10_GoodMonsterKill"			;//Да! Вот как нужно разбираться с этими тварями!
-	GoodKill					= 	"SVM_10_GoodKill"				;//Эта свинья получила по заслугам!
+	GoodMonsterKill				=	"SVM_10_GoodMonsterKill"			;//Р”Р°! Р’РѕС‚ РєР°Рє РЅСѓР¶РЅРѕ СЂР°Р·Р±РёСЂР°С‚СЊСЃСЏ СЃ СЌС‚РёРјРё С‚РІР°СЂСЏРјРё!
+	GoodKill					= 	"SVM_10_GoodKill"				;//Р­С‚Р° СЃРІРёРЅСЊСЏ РїРѕР»СѓС‡РёР»Р° РїРѕ Р·Р°СЃР»СѓРіР°Рј!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_10_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_10_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_10_RunCoward"				;//Ты еще не знаешь, на что я способен!
+	RunCoward					=	"SVM_10_RunCoward"				;//РўС‹ РµС‰Рµ РЅРµ Р·РЅР°РµС€СЊ, РЅР° С‡С‚Рѕ СЏ СЃРїРѕСЃРѕР±РµРЅ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_10_GetOutOfHere"			;//Прочь!
-	WhyAreYouInHere				=	"SVM_10_WhyAreYouInHere"			;//Что тебе нужно здесь?!
-	YesGoOutOfHere				= 	"SVM_10_YesGoOutOfHere"			;//Да, проваливай!
+	GetOutOfHere				=	"SVM_10_GetOutOfHere"			;//РџСЂРѕС‡СЊ!
+	WhyAreYouInHere				=	"SVM_10_WhyAreYouInHere"			;//Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?!
+	YesGoOutOfHere				= 	"SVM_10_YesGoOutOfHere"			;//Р”Р°, РїСЂРѕРІР°Р»РёРІР°Р№!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_10_WhatsThisSupposedToBe"	;//Что ты там ищешь?
-	YouDisturbedMySlumber		=	"SVM_10_YouDisturbedMySlumber"	;//(просыпается) В чем дело?
+	WhatsThisSupposedToBe		=	"SVM_10_WhatsThisSupposedToBe"	;//Р§С‚Рѕ С‚С‹ С‚Р°Рј РёС‰РµС€СЊ?
+	YouDisturbedMySlumber		=	"SVM_10_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р’ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_10_ITookYourGold"			;//Спасибо за золото, герой!
-	ShitNoGold					=	"SVM_10_ShitNoGold"				;//Да у тебя даже нет золота с собой!
-	ITakeYourWeapon				=	"SVM_10_ITakeYourWeapon"			;//Я, пожалуй, заберу твое оружие.
+	ITookYourGold				=	"SVM_10_ITookYourGold"			;//РЎРїР°СЃРёР±Рѕ Р·Р° Р·РѕР»РѕС‚Рѕ, РіРµСЂРѕР№!
+	ShitNoGold					=	"SVM_10_ShitNoGold"				;//Р”Р° Сѓ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№!
+	ITakeYourWeapon				=	"SVM_10_ITakeYourWeapon"			;//РЇ, РїРѕР¶Р°Р»СѓР№, Р·Р°Р±РµСЂСѓ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_10_WhatAreYouDoing"			;//(предупреждающе) Осторожно! Еще раз, и ты поплатишься за это.
+	WhatAreYouDoing				=	"SVM_10_WhatAreYouDoing"			;//(РїСЂРµРґСѓРїСЂРµР¶РґР°СЋС‰Рµ) РћСЃС‚РѕСЂРѕР¶РЅРѕ! Р•С‰Рµ СЂР°Р·, Рё С‚С‹ РїРѕРїР»Р°С‚РёС€СЊСЃСЏ Р·Р° СЌС‚Рѕ.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_10_LookingForTroubleAgain"	;//(агрессивно) Хочешь еще раз получить по морде?
+	LookingForTroubleAgain		=	"SVM_10_LookingForTroubleAgain"	;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РҐРѕС‡РµС€СЊ РµС‰Рµ СЂР°Р· РїРѕР»СѓС‡РёС‚СЊ РїРѕ РјРѕСЂРґРµ?
 																	 
-	StopMagic					=	"SVM_10_StopMagic"				;//Прекрати это магическое дерьмо немедленно!
-	ISaidStopMagic				=	"SVM_10_ISaidStopMagic"			;//Ты напрашиваешься! Прекрати немедленно!!!
-	WeaponDown					=	"SVM_10_WeaponDown"				;//Убери это оружие!
-	ISaidWeaponDown				=	"SVM_10_ISaidWeaponDown"			;//Да убери же это!
-	WiseMove					=	"SVM_10_WiseMove"				;//Умный мальчик!
+	StopMagic					=	"SVM_10_StopMagic"				;//РџСЂРµРєСЂР°С‚Рё СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ РґРµСЂСЊРјРѕ РЅРµРјРµРґР»РµРЅРЅРѕ!
+	ISaidStopMagic				=	"SVM_10_ISaidStopMagic"			;//РўС‹ РЅР°РїСЂР°С€РёРІР°РµС€СЊСЃСЏ! РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!!!
+	WeaponDown					=	"SVM_10_WeaponDown"				;//РЈР±РµСЂРё СЌС‚Рѕ РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_10_ISaidWeaponDown"			;//Р”Р° СѓР±РµСЂРё Р¶Рµ СЌС‚Рѕ!
+	WiseMove					=	"SVM_10_WiseMove"				;//РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_10_NextTimeYoureInForIt"	;//(себе под нос) Ну, мы еще посмотрим...
-	OhMyHead					=	"SVM_10_OhMyHead"				;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_10_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РќСѓ, РјС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_10_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_10_TheresAFight"			;//(страстно) А-ах, драка!
-	OhMyGodItsAFight			=	"SVM_10_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой, драка!
-	GoodVictory					=	"SVM_10_GoodVictory"				;//(с дьявольским смехом) Ты показал ему!
-	NotBad						= 	"SVM_10_NotBad"					;//Неплохо...
-	OhMyGodHesDown				=	"SVM_10_OhMyGodHesDown"			;//(себе под нос) Бог мой! Какая жестокость...
-	CheerFriend01				=	"SVM_10_CheerFriend01"			;//Да, задай ему!
-	CheerFriend02				=	"SVM_10_CheerFriend02"			;//Покажи ему!
-	CheerFriend03				=	"SVM_10_CheerFriend03"			;//Прикончи его!
-	Ooh01						=	"SVM_10_Ooh01"					;//Защищайся!
-	Ooh02						=	"SVM_10_Ooh02"					;//Давай же, отвечай!
-	Ooh03						=	"SVM_10_Ooh03"					;//Ох-х! Это больно!
+	TheresAFight				=	"SVM_10_TheresAFight"			;//(СЃС‚СЂР°СЃС‚РЅРѕ) Рђ-Р°С…, РґСЂР°РєР°!
+	OhMyGodItsAFight			=	"SVM_10_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№, РґСЂР°РєР°!
+	GoodVictory					=	"SVM_10_GoodVictory"				;//(СЃ РґСЊСЏРІРѕР»СЊСЃРєРёРј СЃРјРµС…РѕРј) РўС‹ РїРѕРєР°Р·Р°Р» РµРјСѓ!
+	NotBad						= 	"SVM_10_NotBad"					;//РќРµРїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_10_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р‘РѕРі РјРѕР№! РљР°РєР°СЏ Р¶РµСЃС‚РѕРєРѕСЃС‚СЊ...
+	CheerFriend01				=	"SVM_10_CheerFriend01"			;//Р”Р°, Р·Р°РґР°Р№ РµРјСѓ!
+	CheerFriend02				=	"SVM_10_CheerFriend02"			;//РџРѕРєР°Р¶Рё РµРјСѓ!
+	CheerFriend03				=	"SVM_10_CheerFriend03"			;//РџСЂРёРєРѕРЅС‡Рё РµРіРѕ!
+	Ooh01						=	"SVM_10_Ooh01"					;//Р—Р°С‰РёС‰Р°Р№СЃСЏ!
+	Ooh02						=	"SVM_10_Ooh02"					;//Р”Р°РІР°Р№ Р¶Рµ, РѕС‚РІРµС‡Р°Р№!
+	Ooh03						=	"SVM_10_Ooh03"					;//РћС…-С…! Р­С‚Рѕ Р±РѕР»СЊРЅРѕ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_10_WhatWasThat"				;//(себе под нос, просыпаясь) Черт, что это было?!
+	WhatWasThat					= "SVM_10_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§РµСЂС‚, С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_10_GetOutOfMyBed"				;//Убирайся с моей кровати!
-	Awake						= "SVM_10_Awake"						;//(зевает)
+	GetOutOfMyBed				= "SVM_10_GetOutOfMyBed"				;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_10_Awake"						;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_10_ABS_COMMANDER"    ;//Я слышал, ты ходил к командующему и все уладил.
-	ABS_MONASTERY    = "SVM_10_ABS_MONASTERY"    ;//Говорят, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM       = "SVM_10_ABS_FARM"        ;//Я слышал, ты обратился к Ли и все уладил.
-	ABS_GOOD       = "SVM_10_ABS_GOOD"       ;//Это честно.
+	ABS_COMMANDER     = "SVM_10_ABS_COMMANDER"    ;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY    = "SVM_10_ABS_MONASTERY"    ;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM       = "SVM_10_ABS_FARM"        ;//РЇ СЃР»С‹С€Р°Р», С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD       = "SVM_10_ABS_GOOD"       ;//Р­С‚Рѕ С‡РµСЃС‚РЅРѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_10_SHEEPKILLER_CRIME"   ;//Убийство овцы - это уже слишком! Проваливай!
-	ATTACK_CRIME     = "SVM_10_ATTACK_CRIME"    ;//Ты бандит - убирайся!
- 	THEFT_CRIME      = "SVM_10_THEFT_CRIME"    ;//Проклятый вор! - я не хочу видеть тебя!
+	SHEEPKILLER_CRIME   = "SVM_10_SHEEPKILLER_CRIME"   ;//РЈР±РёР№СЃС‚РІРѕ РѕРІС†С‹ - СЌС‚Рѕ СѓР¶Рµ СЃР»РёС€РєРѕРј! РџСЂРѕРІР°Р»РёРІР°Р№!
+	ATTACK_CRIME     = "SVM_10_ATTACK_CRIME"    ;//РўС‹ Р±Р°РЅРґРёС‚ - СѓР±РёСЂР°Р№СЃСЏ!
+ 	THEFT_CRIME      = "SVM_10_THEFT_CRIME"    ;//РџСЂРѕРєР»СЏС‚С‹Р№ РІРѕСЂ! - СЏ РЅРµ С…РѕС‡Сѓ РІРёРґРµС‚СЊ С‚РµР±СЏ!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_10_PAL_CITY_CRIME"   ;//Я не ожидал такого от паладина! Лорд Хаген будет недоволен.
- 	MIL_CITY_CRIME     = "SVM_10_MIL_CITY_CRIME"   ;//Как такой, как ты, вообще мог попасть в городскую стражу? Лорд Андрэ заставит тебя заплатить за это!
- 	CITY_CRIME       = "SVM_10_CITY_CRIME"    ;//Лорд Андрэ узнает о твоем поведении!
+ 	PAL_CITY_CRIME     = "SVM_10_PAL_CITY_CRIME"   ;//РЇ РЅРµ РѕР¶РёРґР°Р» С‚Р°РєРѕРіРѕ РѕС‚ РїР°Р»Р°РґРёРЅР°! Р›РѕСЂРґ РҐР°РіРµРЅ Р±СѓРґРµС‚ РЅРµРґРѕРІРѕР»РµРЅ.
+ 	MIL_CITY_CRIME     = "SVM_10_MIL_CITY_CRIME"   ;//РљР°Рє С‚Р°РєРѕР№, РєР°Рє С‚С‹, РІРѕРѕР±С‰Рµ РјРѕРі РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ? Р›РѕСЂРґ РђРЅРґСЂСЌ Р·Р°СЃС‚Р°РІРёС‚ С‚РµР±СЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ!
+ 	CITY_CRIME       = "SVM_10_CITY_CRIME"    ;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РІРѕРµРј РїРѕРІРµРґРµРЅРёРё!
 	// -------------------------
-	MONA_CRIME       = "SVM_10_MONA_CRIME"    ;//Отец Парлан будет в ярости, узнав о твоем кощунстве!
-	FARM_CRIME       = "SVM_10_FARM_CRIME"    ;//Ли не простит тебе это!
-	OC_CRIME       = "SVM_10_OC_CRIME"     ;//Командующий Гаронд узнает про это - и ты ответишь за все!
+	MONA_CRIME       = "SVM_10_MONA_CRIME"    ;//РћС‚РµС† РџР°СЂР»Р°РЅ Р±СѓРґРµС‚ РІ СЏСЂРѕСЃС‚Рё, СѓР·РЅР°РІ Рѕ С‚РІРѕРµРј РєРѕС‰СѓРЅСЃС‚РІРµ!
+	FARM_CRIME       = "SVM_10_FARM_CRIME"    ;//Р›Рё РЅРµ РїСЂРѕСЃС‚РёС‚ С‚РµР±Рµ СЌС‚Рѕ!
+	OC_CRIME       = "SVM_10_OC_CRIME"     ;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ СѓР·РЅР°РµС‚ РїСЂРѕ СЌС‚Рѕ - Рё С‚С‹ РѕС‚РІРµС‚РёС€СЊ Р·Р° РІСЃРµ!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_10_TOUGHGUY_ATTACKLOST"		;//Ну и удар у тебя... Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_10_TOUGHGUY_ATTACKWON"		;//Есть еще вопросы?
-	TOUGHGUY_PLAYERATTACK		= "SVM_10_TOUGHGUY_PLAYERATTACK"		;//Ты опять!
+	TOUGHGUY_ATTACKLOST			= "SVM_10_TOUGHGUY_ATTACKLOST"		;//РќСѓ Рё СѓРґР°СЂ Сѓ С‚РµР±СЏ... Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_10_TOUGHGUY_ATTACKWON"		;//Р•СЃС‚СЊ РµС‰Рµ РІРѕРїСЂРѕСЃС‹?
+	TOUGHGUY_PLAYERATTACK		= "SVM_10_TOUGHGUY_PLAYERATTACK"		;//РўС‹ РѕРїСЏС‚СЊ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_10_GOLD_1000"					;//1000 золотых монет.
-	GOLD_950					= "SVM_10_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_10_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_10_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_10_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_10_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_10_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_10_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_10_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_10_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_10_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_10_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_10_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_10_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_10_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_10_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_10_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_10_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_10_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_10_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_10_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_10_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_10_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_10_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_10_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_10_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_10_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_10_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_10_GOLD_1000"					;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_10_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_10_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_10_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_10_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_10_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_10_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_10_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_10_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_10_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_10_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_10_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_10_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_10_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_10_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_10_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_10_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_10_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_10_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_10_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_10_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_10_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_10_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_10_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_10_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_10_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_10_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_10_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_10_Smalltalk01"				;//...какая беспечность...
-	Smalltalk02					= "SVM_10_Smalltalk02"				;//...никто ничего не хочет знать...
-	Smalltalk03					= "SVM_10_Smalltalk03"				;//...он сам так решил...
-	Smalltalk04					= "SVM_10_Smalltalk04"				;//...понятия не имею, скажи мне...
-	Smalltalk05					= "SVM_10_Smalltalk05"				;//...я лучше не буду вмешиваться...
-	Smalltalk06					= "SVM_10_Smalltalk06"				;//...у меня нет времени на это...
-	Smalltalk07					= "SVM_10_Smalltalk07"				;//...я бы так не смог...
-	Smalltalk08					= "SVM_10_Smalltalk08"				;//...лучше не говори, не надо...
-	Smalltalk09					= "SVM_10_Smalltalk09"				;//...пойди туда, сделай это...
-	Smalltalk10					= "SVM_10_Smalltalk10"				;//...этого я тебе сказать не могу...
-	Smalltalk11					= "SVM_10_Smalltalk11"				;//...на это не стоит надеяться...
-	Smalltalk12					= "SVM_10_Smalltalk12"				;//...я тоже так считаю...
-	Smalltalk13					= "SVM_10_Smalltalk13"				;//...и это еще не все, поверь мне...
-	Smalltalk14					= "SVM_10_Smalltalk14"				;//...опять то же самое...
-	Smalltalk15					= "SVM_10_Smalltalk15"				;//...скажи мне, что это не так...
-	Smalltalk16					= "SVM_10_Smalltalk16"				;//...рано или поздно это должно было случиться...
-	Smalltalk17					= "SVM_10_Smalltalk17"				;//...ему стоило сто раз подумать...
-	Smalltalk18					= "SVM_10_Smalltalk18"				;//...ничего не изменится...
-	Smalltalk19					= "SVM_10_Smalltalk19"				;//...это не секрет...
-	Smalltalk20					= "SVM_10_Smalltalk20"				;//...тоже мне, большое дело...
-	Smalltalk21					= "SVM_10_Smalltalk21"				;//...он думает, это так просто...
-	Smalltalk22					= "SVM_10_Smalltalk22"				;//...никому это не интересно ...
-	Smalltalk23					= "SVM_10_Smalltalk23"				;//...и это правда...
-	Smalltalk24					= "SVM_10_Smalltalk24"				;//...просто послушай, что он говорит...
+	Smalltalk01					= "SVM_10_Smalltalk01"				;//...РєР°РєР°СЏ Р±РµСЃРїРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk02					= "SVM_10_Smalltalk02"				;//...РЅРёРєС‚Рѕ РЅРёС‡РµРіРѕ РЅРµ С…РѕС‡РµС‚ Р·РЅР°С‚СЊ...
+	Smalltalk03					= "SVM_10_Smalltalk03"				;//...РѕРЅ СЃР°Рј С‚Р°Рє СЂРµС€РёР»...
+	Smalltalk04					= "SVM_10_Smalltalk04"				;//...РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, СЃРєР°Р¶Рё РјРЅРµ...
+	Smalltalk05					= "SVM_10_Smalltalk05"				;//...СЏ Р»СѓС‡С€Рµ РЅРµ Р±СѓРґСѓ РІРјРµС€РёРІР°С‚СЊСЃСЏ...
+	Smalltalk06					= "SVM_10_Smalltalk06"				;//...Сѓ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ...
+	Smalltalk07					= "SVM_10_Smalltalk07"				;//...СЏ Р±С‹ С‚Р°Рє РЅРµ СЃРјРѕРі...
+	Smalltalk08					= "SVM_10_Smalltalk08"				;//...Р»СѓС‡С€Рµ РЅРµ РіРѕРІРѕСЂРё, РЅРµ РЅР°РґРѕ...
+	Smalltalk09					= "SVM_10_Smalltalk09"				;//...РїРѕР№РґРё С‚СѓРґР°, СЃРґРµР»Р°Р№ СЌС‚Рѕ...
+	Smalltalk10					= "SVM_10_Smalltalk10"				;//...СЌС‚РѕРіРѕ СЏ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ РЅРµ РјРѕРіСѓ...
+	Smalltalk11					= "SVM_10_Smalltalk11"				;//...РЅР° СЌС‚Рѕ РЅРµ СЃС‚РѕРёС‚ РЅР°РґРµСЏС‚СЊСЃСЏ...
+	Smalltalk12					= "SVM_10_Smalltalk12"				;//...СЏ С‚РѕР¶Рµ С‚Р°Рє СЃС‡РёС‚Р°СЋ...
+	Smalltalk13					= "SVM_10_Smalltalk13"				;//...Рё СЌС‚Рѕ РµС‰Рµ РЅРµ РІСЃРµ, РїРѕРІРµСЂСЊ РјРЅРµ...
+	Smalltalk14					= "SVM_10_Smalltalk14"				;//...РѕРїСЏС‚СЊ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ...
+	Smalltalk15					= "SVM_10_Smalltalk15"				;//...СЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ С‚Р°Рє...
+	Smalltalk16					= "SVM_10_Smalltalk16"				;//...СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ СЌС‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹Р»Рѕ СЃР»СѓС‡РёС‚СЊСЃСЏ...
+	Smalltalk17					= "SVM_10_Smalltalk17"				;//...РµРјСѓ СЃС‚РѕРёР»Рѕ СЃС‚Рѕ СЂР°Р· РїРѕРґСѓРјР°С‚СЊ...
+	Smalltalk18					= "SVM_10_Smalltalk18"				;//...РЅРёС‡РµРіРѕ РЅРµ РёР·РјРµРЅРёС‚СЃСЏ...
+	Smalltalk19					= "SVM_10_Smalltalk19"				;//...СЌС‚Рѕ РЅРµ СЃРµРєСЂРµС‚...
+	Smalltalk20					= "SVM_10_Smalltalk20"				;//...С‚РѕР¶Рµ РјРЅРµ, Р±РѕР»СЊС€РѕРµ РґРµР»Рѕ...
+	Smalltalk21					= "SVM_10_Smalltalk21"				;//...РѕРЅ РґСѓРјР°РµС‚, СЌС‚Рѕ С‚Р°Рє РїСЂРѕСЃС‚Рѕ...
+	Smalltalk22					= "SVM_10_Smalltalk22"				;//...РЅРёРєРѕРјСѓ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ ...
+	Smalltalk23					= "SVM_10_Smalltalk23"				;//...Рё СЌС‚Рѕ РїСЂР°РІРґР°...
+	Smalltalk24					= "SVM_10_Smalltalk24"				;//...РїСЂРѕСЃС‚Рѕ РїРѕСЃР»СѓС€Р°Р№, С‡С‚Рѕ РѕРЅ РіРѕРІРѕСЂРёС‚...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                      
-	Smalltalk25					= "SVM_10_Smalltalk25"				;//...если бы он был с нами, все было бы по-другому...
-	Smalltalk26					= "SVM_10_Smalltalk26"				;//...ему нужно больше тренироваться...
-	Smalltalk27					= "SVM_10_Smalltalk27"				;//...да что он об этом знает...
+	Smalltalk25					= "SVM_10_Smalltalk25"				;//...РµСЃР»Рё Р±С‹ РѕРЅ Р±С‹Р» СЃ РЅР°РјРё, РІСЃРµ Р±С‹Р»Рѕ Р±С‹ РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk26					= "SVM_10_Smalltalk26"				;//...РµРјСѓ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ...
+	Smalltalk27					= "SVM_10_Smalltalk27"				;//...РґР° С‡С‚Рѕ РѕРЅ РѕР± СЌС‚РѕРј Р·РЅР°РµС‚...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                      
-	Smalltalk28					= "SVM_10_Smalltalk28"				;//...Иннос все видит...
-	Smalltalk29					= "SVM_10_Smalltalk29"				;//...путь добродетели труден и тернист...
-	Smalltalk30					= "SVM_10_Smalltalk30"				;//...только Иннос знает, что правильно, а что нет...
+	Smalltalk28					= "SVM_10_Smalltalk28"				;//...РРЅРЅРѕСЃ РІСЃРµ РІРёРґРёС‚...
+	Smalltalk29					= "SVM_10_Smalltalk29"				;//...РїСѓС‚СЊ РґРѕР±СЂРѕРґРµС‚РµР»Рё С‚СЂСѓРґРµРЅ Рё С‚РµСЂРЅРёСЃС‚...
+	Smalltalk30					= "SVM_10_Smalltalk30"				;//...С‚РѕР»СЊРєРѕ РРЅРЅРѕСЃ Р·РЅР°РµС‚, С‡С‚Рѕ РїСЂР°РІРёР»СЊРЅРѕ, Р° С‡С‚Рѕ РЅРµС‚...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_10_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_10_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_10_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_10_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_10_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_10_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_10_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_10_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_10_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_10_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_10_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_10_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_10_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_10_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_10_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_10_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_10_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_10_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_10_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_10_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_10_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_10_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_10_WHERETO"					;//Куда ты направляешься?
+	WHERETO						= "SVM_10_WHERETO"					;//РљСѓРґР° С‚С‹ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_10_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_10_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_10_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_10_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_10_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_10_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_10_TEMPEL_2_GALGEN"			;//Выйдя из храма, и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_10_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_10_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть туда, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_10_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_10_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_10_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_10_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_10_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_10_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_10_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_10_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_10_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_10_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_10_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_10_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_10_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_10_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР°, Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_10_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_10_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ С‚СѓРґР°, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_10_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_10_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_10_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_10_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_10_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_10_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_10_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_10_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_10_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_10_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_10_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_10_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_10_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_10_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_10_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_10_Addon_WrongArmor";			//Что на тебе за хлам? Эта одежда тебе не подходит. Оставь меня в покое.
-	ADDON_WRONGARMOR_SLD		= "SVM_10_ADDON_WRONGARMOR_SLD";		//Если ты один из нас, то должен носить нашу форму. Так что пойди и надень ее.
-	ADDON_WRONGARMOR_MIL		= "SVM_10_ADDON_WRONGARMOR_MIL";		//Если уж тебе выданы доспехи королевской гвардии, тебе следует их носить.
-	ADDON_WRONGARMOR_KDF		= "SVM_10_ADDON_WRONGARMOR_KDF";		//Если ты отказываешься от робы, ты отказываешься и от Инноса. Тебе следует задуматься об этом.
-	ADDON_NOARMOR_BDT			= "SVM_10_ADDON_ADDON_NOARMOR_BDT";		//Если ты даже не можешь позволить себе доспехи, зачем мне разговаривать с тобой?
+	ADDON_WRONGARMOR			= "SVM_10_Addon_WrongArmor";			//Р§С‚Рѕ РЅР° С‚РµР±Рµ Р·Р° С…Р»Р°Рј? Р­С‚Р° РѕРґРµР¶РґР° С‚РµР±Рµ РЅРµ РїРѕРґС…РѕРґРёС‚. РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
+	ADDON_WRONGARMOR_SLD		= "SVM_10_ADDON_WRONGARMOR_SLD";		//Р•СЃР»Рё С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ, С‚Рѕ РґРѕР»Р¶РµРЅ РЅРѕСЃРёС‚СЊ РЅР°С€Сѓ С„РѕСЂРјСѓ. РўР°Рє С‡С‚Рѕ РїРѕР№РґРё Рё РЅР°РґРµРЅСЊ РµРµ.
+	ADDON_WRONGARMOR_MIL		= "SVM_10_ADDON_WRONGARMOR_MIL";		//Р•СЃР»Рё СѓР¶ С‚РµР±Рµ РІС‹РґР°РЅС‹ РґРѕСЃРїРµС…Рё РєРѕСЂРѕР»РµРІСЃРєРѕР№ РіРІР°СЂРґРёРё, С‚РµР±Рµ СЃР»РµРґСѓРµС‚ РёС… РЅРѕСЃРёС‚СЊ.
+	ADDON_WRONGARMOR_KDF		= "SVM_10_ADDON_WRONGARMOR_KDF";		//Р•СЃР»Рё С‚С‹ РѕС‚РєР°Р·С‹РІР°РµС€СЊСЃСЏ РѕС‚ СЂРѕР±С‹, С‚С‹ РѕС‚РєР°Р·С‹РІР°РµС€СЊСЃСЏ Рё РѕС‚ РРЅРЅРѕСЃР°. РўРµР±Рµ СЃР»РµРґСѓРµС‚ Р·Р°РґСѓРјР°С‚СЊСЃСЏ РѕР± СЌС‚РѕРј.
+	ADDON_NOARMOR_BDT			= "SVM_10_ADDON_ADDON_NOARMOR_BDT";		//Р•СЃР»Рё С‚С‹ РґР°Р¶Рµ РЅРµ РјРѕР¶РµС€СЊ РїРѕР·РІРѕР»РёС‚СЊ СЃРµР±Рµ РґРѕСЃРїРµС…Рё, Р·Р°С‡РµРј РјРЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ С‚РѕР±РѕР№?
 
-	ADDON_DIEBANDIT				= "SVM_10_ADDON_DIEBANDIT";				//Ты, грязный разбойник!
-	ADDON_DIRTYPIRATE			= "SVM_10_ADDON_DIRTYPIRATE";			//Ты, мерзкий пират!
+	ADDON_DIEBANDIT				= "SVM_10_ADDON_DIEBANDIT";				//РўС‹, РіСЂСЏР·РЅС‹Р№ СЂР°Р·Р±РѕР№РЅРёРє!
+	ADDON_DIRTYPIRATE			= "SVM_10_ADDON_DIRTYPIRATE";			//РўС‹, РјРµСЂР·РєРёР№ РїРёСЂР°С‚!
 };
 
 instance SVM_11 (C_SVM)
 {
-	SC_HeyWaitASecond			= 	"SVM_11_Addon_HeyWaitASecond"			;//(кричит) Подожди!
+	SC_HeyWaitASecond			= 	"SVM_11_Addon_HeyWaitASecond"			;//(РєСЂРёС‡РёС‚) РџРѕРґРѕР¶РґРё!
 	
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_11_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_11_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_11_Weather"						;//Какая паршивая погода!
+	MILGreetings				= 	"SVM_11_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_11_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_11_Weather"						;//РљР°РєР°СЏ РїР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_11_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_11_DieEnemy"					;//Сейчас ты получишь!
-	DieMonster					=	"SVM_11_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_11_DirtyThief"					;//Грязный воришка! Ну, подожди!
-	HandsOff					=	"SVM_11_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_11_SheepKiller"					;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_11_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_11_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_11_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_11_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_11_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_11_ThenIBeatYouOutOfHere"		;//Сейчас я вышвырну тебя отсюда!
-	WhatDidYouDoInThere			=	"SVM_11_WhatDidYouDoInThere"			;//Что тебе здесь надо, а?!
-	WillYouStopFighting			=	"SVM_11_WillYouStopFighting"			;//Ты прекратишь?!
+	IGetYouStill				= 	"SVM_11_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_11_DieEnemy"					;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	DieMonster					=	"SVM_11_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_11_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂРёС€РєР°! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_11_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_11_SheepKiller"					;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_11_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_11_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_11_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_11_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_11_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_11_ThenIBeatYouOutOfHere"		;//РЎРµР№С‡Р°СЃ СЏ РІС‹С€РІС‹СЂРЅСѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°!
+	WhatDidYouDoInThere			=	"SVM_11_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅР°РґРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_11_WillYouStopFighting"			;//РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_11_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_11_EnemyKilled"					;//Получил, подонок?!
-	MonsterKilled				=	"SVM_11_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_11_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_11_rumfummlerDown"				;//В будущем, держи свои руки подальше от чужих вещей!
-	SheepAttackerDown			=	"SVM_11_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_11_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_11_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_11_NeverHitMeAgain"				;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_11_YouBetterShouldHaveListened"	;//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_11_GetUpAndBeGone"				;//А теперь, убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_11_NeverEnterRoomAgain"			;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_11_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_11_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_11_EnemyKilled"					;//РџРѕР»СѓС‡РёР», РїРѕРґРѕРЅРѕРє?!
+	MonsterKilled				=	"SVM_11_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_11_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_11_rumfummlerDown"				;//Р’ Р±СѓРґСѓС‰РµРј, РґРµСЂР¶Рё СЃРІРѕРё СЂСѓРєРё РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‡СѓР¶РёС… РІРµС‰РµР№!
+	SheepAttackerDown			=	"SVM_11_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_11_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_11_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_11_NeverHitMeAgain"				;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_11_YouBetterShouldHaveListened"	;//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_11_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_11_NeverEnterRoomAgain"			;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_11_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_11_SpareMe"						;//Уходи с миром!
-	RunAway						= 	"SVM_11_RunAway"						;//Черт, я ухожу отсюда!
+	SpareMe						=	"SVM_11_SpareMe"						;//РЈС…РѕРґРё СЃ РјРёСЂРѕРј!
+	RunAway						= 	"SVM_11_RunAway"						;//Р§РµСЂС‚, СЏ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_11_Alarm"						;//ТРЕВОГА!
-	Guards						=	"SVM_11_Guards"						;//СТРАЖА!
-	Help						=	"SVM_11_Help"						;//Помогите!
+	Alarm						=	"SVM_11_Alarm"						;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_11_Guards"						;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_11_Help"						;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_11_GoodMonsterKill"				;//Отлично - одной грязной тварью меньше!
-	GoodKill					= 	"SVM_11_GoodKill"					;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_11_GoodMonsterKill"				;//РћС‚Р»РёС‡РЅРѕ - РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂСЊСЋ РјРµРЅСЊС€Рµ!
+	GoodKill					= 	"SVM_11_GoodKill"					;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_11_NOTNOW"						;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_11_NOTNOW"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_11_RunCoward"					;//Прекрати немедленно, подонок!
+	RunCoward					=	"SVM_11_RunCoward"					;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ, РїРѕРґРѕРЅРѕРє!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_11_GetOutOfHere"				;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_11_WhyAreYouInHere"				;//Что тебе здесь нужно!? Уходи!
-	YesGoOutOfHere				= 	"SVM_11_YesGoOutOfHere"				;//Да, проваливай отсюда!
+	GetOutOfHere				=	"SVM_11_GetOutOfHere"				;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_11_WhyAreYouInHere"				;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ!? РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_11_YesGoOutOfHere"				;//Р”Р°, РїСЂРѕРІР°Р»РёРІР°Р№ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_11_WhatsThisSupposedToBe"		;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_11_YouDisturbedMySlumber"		;//(просыпается) Черт, в чем дело?
+	WhatsThisSupposedToBe		=	"SVM_11_WhatsThisSupposedToBe"		;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_11_YouDisturbedMySlumber"		;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, РІ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_11_ITookYourGold"				;//Золото! Хм, золото никогда не помешает...
-	ShitNoGold					=	"SVM_11_ShitNoGold"					;//Да у тебя даже нет золота с собой?
-	ITakeYourWeapon				=	"SVM_11_ITakeYourWeapon"				;//Я, пожалуй, заберу твое оружие, так будет безопаснее для тебя же.
+	ITookYourGold				=	"SVM_11_ITookYourGold"				;//Р—РѕР»РѕС‚Рѕ! РҐРј, Р·РѕР»РѕС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РїРѕРјРµС€Р°РµС‚...
+	ShitNoGold					=	"SVM_11_ShitNoGold"					;//Р”Р° Сѓ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№?
+	ITakeYourWeapon				=	"SVM_11_ITakeYourWeapon"				;//РЇ, РїРѕР¶Р°Р»СѓР№, Р·Р°Р±РµСЂСѓ С‚РІРѕРµ РѕСЂСѓР¶РёРµ, С‚Р°Рє Р±СѓРґРµС‚ Р±РµР·РѕРїР°СЃРЅРµРµ РґР»СЏ С‚РµР±СЏ Р¶Рµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_11_WhatAreYouDoing"				;//Эй! Осторожно!
+	WhatAreYouDoing				=	"SVM_11_WhatAreYouDoing"				;//Р­Р№! РћСЃС‚РѕСЂРѕР¶РЅРѕ!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_11_LookingForTroubleAgain"		;//(агрессивно) Ты мало получил?
-	StopMagic					=	"SVM_11_StopMagic"					;//Держись подальше от меня с этой магией!
-	ISaidStopMagic				=	"SVM_11_ISaidStopMagic"				;//Убери эту магию! Ты что, оглох!?
-	WeaponDown					=	"SVM_11_WeaponDown"					;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_11_ISaidWeaponDown"				;//Ты что, оглох? Я сказал: убери оружие!
-	WiseMove					=	"SVM_11_WiseMove"					;//Видишь, это было не так уж сложно.
+	LookingForTroubleAgain		=	"SVM_11_LookingForTroubleAgain"		;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РўС‹ РјР°Р»Рѕ РїРѕР»СѓС‡РёР»?
+	StopMagic					=	"SVM_11_StopMagic"					;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РјРµРЅСЏ СЃ СЌС‚РѕР№ РјР°РіРёРµР№!
+	ISaidStopMagic				=	"SVM_11_ISaidStopMagic"				;//РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ! РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…!?
+	WeaponDown					=	"SVM_11_WeaponDown"					;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_11_ISaidWeaponDown"				;//РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…? РЇ СЃРєР°Р·Р°Р»: СѓР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	WiseMove					=	"SVM_11_WiseMove"					;//Р’РёРґРёС€СЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ.
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_11_NextTimeYoureInForIt"		;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_11_OhMyHead"					;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_11_NextTimeYoureInForIt"		;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_11_OhMyHead"					;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_11_TheresAFight"				;//(страстно) Сейчас повеселимся!
-	OhMyGodItsAFight			=	"SVM_11_OhMyGodItsAFight"			;//(потрясенно) Они лупят друг друга так, что даже страшно...
-	GoodVictory					=	"SVM_11_GoodVictory"					;//(дьявольский смех) Он заслужил это!
-	NotBad						= 	"SVM_11_NotBad"						;//(одобрительно) Совсем не плохо...
-	OhMyGodHesDown				=	"SVM_11_OhMyGodHesDown"				;//(себе под нос) Какой он жестокий...
-	CheerFriend01				=	"SVM_11_CheerFriend01"				;//Да, как раз то, что нужно!
-	CheerFriend02				=	"SVM_11_CheerFriend02"				;//Чего ты ждешь?
-	CheerFriend03				=	"SVM_11_CheerFriend03"				;//Вот так!
-	Ooh01						=	"SVM_11_Ooh01"						;//Не нарушай закон!
-	Ooh02						=	"SVM_11_Ooh02"						;//Покажи ему, кто тут главный!
-	Ooh03						=	"SVM_11_Ooh03"						;//Черт побери!
+	TheresAFight				=	"SVM_11_TheresAFight"				;//(СЃС‚СЂР°СЃС‚РЅРѕ) РЎРµР№С‡Р°СЃ РїРѕРІРµСЃРµР»РёРјСЃСЏ!
+	OhMyGodItsAFight			=	"SVM_11_OhMyGodItsAFight"			;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћРЅРё Р»СѓРїСЏС‚ РґСЂСѓРі РґСЂСѓРіР° С‚Р°Рє, С‡С‚Рѕ РґР°Р¶Рµ СЃС‚СЂР°С€РЅРѕ...
+	GoodVictory					=	"SVM_11_GoodVictory"					;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РћРЅ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ!
+	NotBad						= 	"SVM_11_NotBad"						;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РЎРѕРІСЃРµРј РЅРµ РїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_11_OhMyGodHesDown"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РљР°РєРѕР№ РѕРЅ Р¶РµСЃС‚РѕРєРёР№...
+	CheerFriend01				=	"SVM_11_CheerFriend01"				;//Р”Р°, РєР°Рє СЂР°Р· С‚Рѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ!
+	CheerFriend02				=	"SVM_11_CheerFriend02"				;//Р§РµРіРѕ С‚С‹ Р¶РґРµС€СЊ?
+	CheerFriend03				=	"SVM_11_CheerFriend03"				;//Р’РѕС‚ С‚Р°Рє!
+	Ooh01						=	"SVM_11_Ooh01"						;//РќРµ РЅР°СЂСѓС€Р°Р№ Р·Р°РєРѕРЅ!
+	Ooh02						=	"SVM_11_Ooh02"						;//РџРѕРєР°Р¶Рё РµРјСѓ, РєС‚Рѕ С‚СѓС‚ РіР»Р°РІРЅС‹Р№!
+	Ooh03						=	"SVM_11_Ooh03"						;//Р§РµСЂС‚ РїРѕР±РµСЂРё!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_11_WhatWasThat"					;//(себе под нос, просыпаясь) Что это было!?
+	WhatWasThat					= "SVM_11_WhatWasThat"					;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_11_GetOutOfMyBed"					;//Убирайся с моей кровати!
-	Awake						= "SVM_11_Awake"							;//(зевает)
+	GetOutOfMyBed				= "SVM_11_GetOutOfMyBed"					;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_11_Awake"							;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_11_ABS_COMMANDER"					;//Я слышал, ты ходил к командующему и все уладил.
-	ABS_MONASTERY				= "SVM_11_ABS_MONASTERY"					;//Я слышал, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM					= "SVM_11_ABS_FARM"						;//Говорят, ты обратился к Ли и все уладил.
-	ABS_GOOD					= "SVM_11_ABS_GOOD"						;//Это хорошо.
+	ABS_COMMANDER				= "SVM_11_ABS_COMMANDER"					;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY				= "SVM_11_ABS_MONASTERY"					;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM					= "SVM_11_ABS_FARM"						;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD					= "SVM_11_ABS_GOOD"						;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_11_SHEEPKILLER_CRIME"				;//Он убивает наших овец!
-	ATTACK_CRIME				= "SVM_11_ATTACK_CRIME"					;//Я не разговариваю с грязными ворами!
-	THEFT_CRIME					= "SVM_11_THEFT_CRIME"					;//Прочь, с глаз моих, грязный вор!
+	SHEEPKILLER_CRIME			= "SVM_11_SHEEPKILLER_CRIME"				;//РћРЅ СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	ATTACK_CRIME				= "SVM_11_ATTACK_CRIME"					;//РЇ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ СЃ РіСЂСЏР·РЅС‹РјРё РІРѕСЂР°РјРё!
+	THEFT_CRIME					= "SVM_11_THEFT_CRIME"					;//РџСЂРѕС‡СЊ, СЃ РіР»Р°Р· РјРѕРёС…, РіСЂСЏР·РЅС‹Р№ РІРѕСЂ!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_11_PAL_CITY_CRIME"				;//Ты позоришь наш орден! Лорд Хаген будет в ярости!
-	MIL_CITY_CRIME				= "SVM_11_MIL_CITY_CRIME"				;//Ты позоришь городскую стражу! Лорд Андрэ научит тебя хорошим манерам!
-	CITY_CRIME					= "SVM_11_CITY_CRIME"					;//Лорд Андрэ узнает о том, что ты сделал!
+	PAL_CITY_CRIME				= "SVM_11_PAL_CITY_CRIME"				;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РЅР°С€ РѕСЂРґРµРЅ! Р›РѕСЂРґ РҐР°РіРµРЅ Р±СѓРґРµС‚ РІ СЏСЂРѕСЃС‚Рё!
+	MIL_CITY_CRIME				= "SVM_11_MIL_CITY_CRIME"				;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! Р›РѕСЂРґ РђРЅРґСЂСЌ РЅР°СѓС‡РёС‚ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!
+	CITY_CRIME					= "SVM_11_CITY_CRIME"					;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р»!
 	// -------------------------
-	MONA_CRIME					= "SVM_11_MONA_CRIME"					;//Отец Парлан будет недоволен, когда узнает об этом!
-	FARM_CRIME					= "SVM_11_FARM_CRIME"					;//Ли задаст тебе трепку! Ты плохо кончишь!
-	OC_CRIME					= "SVM_11_OC_CRIME"						;//Командующий Гаронд потребует от тебя объяснений!
+	MONA_CRIME					= "SVM_11_MONA_CRIME"					;//РћС‚РµС† РџР°СЂР»Р°РЅ Р±СѓРґРµС‚ РЅРµРґРѕРІРѕР»РµРЅ, РєРѕРіРґР° СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	FARM_CRIME					= "SVM_11_FARM_CRIME"					;//Р›Рё Р·Р°РґР°СЃС‚ С‚РµР±Рµ С‚СЂРµРїРєСѓ! РўС‹ РїР»РѕС…Рѕ РєРѕРЅС‡РёС€СЊ!
+	OC_CRIME					= "SVM_11_OC_CRIME"						;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РїРѕС‚СЂРµР±СѓРµС‚ РѕС‚ С‚РµР±СЏ РѕР±СЉСЏСЃРЅРµРЅРёР№!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_11_TOUGHGUY_ATTACKLOST"			;//Хорошо, хорошо, ты победил. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_11_TOUGHGUY_ATTACKWON"			;//Тебе еще раз показать, кто тут главный?
-	TOUGHGUY_PLAYERATTACK		= "SVM_11_TOUGHGUY_PLAYERATTACK"			;//Хочешь еще раз сразиться со мной, да?
+	TOUGHGUY_ATTACKLOST			= "SVM_11_TOUGHGUY_ATTACKLOST"			;//РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, С‚С‹ РїРѕР±РµРґРёР». Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_11_TOUGHGUY_ATTACKWON"			;//РўРµР±Рµ РµС‰Рµ СЂР°Р· РїРѕРєР°Р·Р°С‚СЊ, РєС‚Рѕ С‚СѓС‚ РіР»Р°РІРЅС‹Р№?
+	TOUGHGUY_PLAYERATTACK		= "SVM_11_TOUGHGUY_PLAYERATTACK"			;//РҐРѕС‡РµС€СЊ РµС‰Рµ СЂР°Р· СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№, РґР°?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_11_GOLD_1000"						;//1000 золотых монет.
-	GOLD_950					= "SVM_11_GOLD_950"						;//950 золотых монет.
-	GOLD_900					= "SVM_11_GOLD_900"						;//900 золотых монет.
-	GOLD_850					= "SVM_11_GOLD_850"						;//850 золотых монет.
-	GOLD_800					= "SVM_11_GOLD_800"						;//800 золотых монет.
-	GOLD_750					= "SVM_11_GOLD_750"						;//750 золотых монет.
-	GOLD_700					= "SVM_11_GOLD_700"						;//700 золотых монет.
-	GOLD_650					= "SVM_11_GOLD_650"						;//650 золотых монет.
-	GOLD_600					= "SVM_11_GOLD_600"						;//600 золотых монет.
-	GOLD_550					= "SVM_11_GOLD_550"						;//550 золотых монет.
-	GOLD_500					= "SVM_11_GOLD_500"						;//500 золотых монет.
-	GOLD_450					= "SVM_11_GOLD_450"						;//450 золотых монет.
-	GOLD_400					= "SVM_11_GOLD_400"						;//400 золотых монет.
-	GOLD_350					= "SVM_11_GOLD_350"						;//350 золотых монет.
-	GOLD_300					= "SVM_11_GOLD_300"						;//300 золотых монет.
-	GOLD_250					= "SVM_11_GOLD_250"						;//250 золотых монет.
-	GOLD_200					= "SVM_11_GOLD_200"						;//200 золотых монет.
-	GOLD_150					= "SVM_11_GOLD_150"						;//150 золотых монет.
-	GOLD_100					= "SVM_11_GOLD_100"						;//100 золотых монет.
-	GOLD_90						= "SVM_11_GOLD_90"						;//90 золотых монет.
-	GOLD_80						= "SVM_11_GOLD_80"						;//80 золотых монет.
-	GOLD_70						= "SVM_11_GOLD_70"						;//70 золотых монет.
-	GOLD_60						= "SVM_11_GOLD_60"						;//60 золотых монет.
-	GOLD_50						= "SVM_11_GOLD_50"						;//50 золотых монет.
-	GOLD_40						= "SVM_11_GOLD_40"						;//40 золотых монет.
-	GOLD_30						= "SVM_11_GOLD_30"						;//30 золотых монет.
-	GOLD_20						= "SVM_11_GOLD_20"						;//20 золотых монет.
-	GOLD_10						= "SVM_11_GOLD_10"						;//10 золотых монет.
+	GOLD_1000					= "SVM_11_GOLD_1000"						;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_11_GOLD_950"						;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_11_GOLD_900"						;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_11_GOLD_850"						;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_11_GOLD_800"						;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_11_GOLD_750"						;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_11_GOLD_700"						;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_11_GOLD_650"						;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_11_GOLD_600"						;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_11_GOLD_550"						;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_11_GOLD_500"						;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_11_GOLD_450"						;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_11_GOLD_400"						;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_11_GOLD_350"						;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_11_GOLD_300"						;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_11_GOLD_250"						;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_11_GOLD_200"						;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_11_GOLD_150"						;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_11_GOLD_100"						;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_11_GOLD_90"						;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_11_GOLD_80"						;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_11_GOLD_70"						;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_11_GOLD_60"						;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_11_GOLD_50"						;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_11_GOLD_40"						;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_11_GOLD_30"						;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_11_GOLD_20"						;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_11_GOLD_10"						;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_11_Smalltalk01"					;//... ты действительно думаешь...
-	Smalltalk02					= "SVM_11_Smalltalk02"					;//... все возможно...
-	Smalltalk03					= "SVM_11_Smalltalk03"					;//... ему стоило лучше подумать...
-	Smalltalk04					= "SVM_11_Smalltalk04"					;//... как будто у меня без того проблем не хватает...
-	Smalltalk05					= "SVM_11_Smalltalk05"					;//... кто сказал тебе это...
-	Smalltalk06					= "SVM_11_Smalltalk06"					;//... от этого будут одни проблемы...
-	Smalltalk07					= "SVM_11_Smalltalk07"					;//... ходят разные слухи...
-	Smalltalk08					= "SVM_11_Smalltalk08"					;//... На твоем месте я бы этого не делал...
-	Smalltalk09					= "SVM_11_Smalltalk09"					;//... это все слухи...
-	Smalltalk10					= "SVM_11_Smalltalk10"					;//... я бы не доверял тому,  кто тебе это сказал...
-	Smalltalk11					= "SVM_11_Smalltalk11"					;//... Возможно, я говорил тебе раньше...
-	Smalltalk12					= "SVM_11_Smalltalk12"					;//... никто никогда не спрашивает меня...
-	Smalltalk13					= "SVM_11_Smalltalk13"					;//... тебе должно быть жаль этого беднягу...
-	Smalltalk14					= "SVM_11_Smalltalk14"					;//... нет ничего нового...
-	Smalltalk15					= "SVM_11_Smalltalk15"					;//... это абсолютно очевидно...
-	Smalltalk16					= "SVM_11_Smalltalk16"					;//... тебе не стоит спрашивать меня об этом...
-	Smalltalk17					= "SVM_11_Smalltalk17"					;//... так может продолжаться вечность...
-	Smalltalk18					= "SVM_11_Smalltalk18"					;//... ты уже знаешь, что я думаю...
-	Smalltalk19					= "SVM_11_Smalltalk19"					;//... это именно так, как я сказал...
-	Smalltalk20					= "SVM_11_Smalltalk20"					;//... это ничего не изменит...
-	Smalltalk21					= "SVM_11_Smalltalk21"					;//... и почему я не слышал об этом раньше...
-	Smalltalk22					= "SVM_11_Smalltalk22"					;//... посмотрим, что будет дальше...
-	Smalltalk23					= "SVM_11_Smalltalk23"					;//... некоторые проблемы решаются сами собой...
-	Smalltalk24					= "SVM_11_Smalltalk24"					;//... Я больше не хочу слышать об этом...
+	Smalltalk01					= "SVM_11_Smalltalk01"					;//... С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ...
+	Smalltalk02					= "SVM_11_Smalltalk02"					;//... РІСЃРµ РІРѕР·РјРѕР¶РЅРѕ...
+	Smalltalk03					= "SVM_11_Smalltalk03"					;//... РµРјСѓ СЃС‚РѕРёР»Рѕ Р»СѓС‡С€Рµ РїРѕРґСѓРјР°С‚СЊ...
+	Smalltalk04					= "SVM_11_Smalltalk04"					;//... РєР°Рє Р±СѓРґС‚Рѕ Сѓ РјРµРЅСЏ Р±РµР· С‚РѕРіРѕ РїСЂРѕР±Р»РµРј РЅРµ С…РІР°С‚Р°РµС‚...
+	Smalltalk05					= "SVM_11_Smalltalk05"					;//... РєС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ...
+	Smalltalk06					= "SVM_11_Smalltalk06"					;//... РѕС‚ СЌС‚РѕРіРѕ Р±СѓРґСѓС‚ РѕРґРЅРё РїСЂРѕР±Р»РµРјС‹...
+	Smalltalk07					= "SVM_11_Smalltalk07"					;//... С…РѕРґСЏС‚ СЂР°Р·РЅС‹Рµ СЃР»СѓС…Рё...
+	Smalltalk08					= "SVM_11_Smalltalk08"					;//... РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ СЌС‚РѕРіРѕ РЅРµ РґРµР»Р°Р»...
+	Smalltalk09					= "SVM_11_Smalltalk09"					;//... СЌС‚Рѕ РІСЃРµ СЃР»СѓС…Рё...
+	Smalltalk10					= "SVM_11_Smalltalk10"					;//... СЏ Р±С‹ РЅРµ РґРѕРІРµСЂСЏР» С‚РѕРјСѓ,  РєС‚Рѕ С‚РµР±Рµ СЌС‚Рѕ СЃРєР°Р·Р°Р»...
+	Smalltalk11					= "SVM_11_Smalltalk11"					;//... Р’РѕР·РјРѕР¶РЅРѕ, СЏ РіРѕРІРѕСЂРёР» С‚РµР±Рµ СЂР°РЅСЊС€Рµ...
+	Smalltalk12					= "SVM_11_Smalltalk12"					;//... РЅРёРєС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ СЃРїСЂР°С€РёРІР°РµС‚ РјРµРЅСЏ...
+	Smalltalk13					= "SVM_11_Smalltalk13"					;//... С‚РµР±Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р¶Р°Р»СЊ СЌС‚РѕРіРѕ Р±РµРґРЅСЏРіСѓ...
+	Smalltalk14					= "SVM_11_Smalltalk14"					;//... РЅРµС‚ РЅРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ...
+	Smalltalk15					= "SVM_11_Smalltalk15"					;//... СЌС‚Рѕ Р°Р±СЃРѕР»СЋС‚РЅРѕ РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk16					= "SVM_11_Smalltalk16"					;//... С‚РµР±Рµ РЅРµ СЃС‚РѕРёС‚ СЃРїСЂР°С€РёРІР°С‚СЊ РјРµРЅСЏ РѕР± СЌС‚РѕРј...
+	Smalltalk17					= "SVM_11_Smalltalk17"					;//... С‚Р°Рє РјРѕР¶РµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ РІРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk18					= "SVM_11_Smalltalk18"					;//... С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЏ РґСѓРјР°СЋ...
+	Smalltalk19					= "SVM_11_Smalltalk19"					;//... СЌС‚Рѕ РёРјРµРЅРЅРѕ С‚Р°Рє, РєР°Рє СЏ СЃРєР°Р·Р°Р»...
+	Smalltalk20					= "SVM_11_Smalltalk20"					;//... СЌС‚Рѕ РЅРёС‡РµРіРѕ РЅРµ РёР·РјРµРЅРёС‚...
+	Smalltalk21					= "SVM_11_Smalltalk21"					;//... Рё РїРѕС‡РµРјСѓ СЏ РЅРµ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј СЂР°РЅСЊС€Рµ...
+	Smalltalk22					= "SVM_11_Smalltalk22"					;//... РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ Р±СѓРґРµС‚ РґР°Р»СЊС€Рµ...
+	Smalltalk23					= "SVM_11_Smalltalk23"					;//... РЅРµРєРѕС‚РѕСЂС‹Рµ РїСЂРѕР±Р»РµРјС‹ СЂРµС€Р°СЋС‚СЃСЏ СЃР°РјРё СЃРѕР±РѕР№...
+	Smalltalk24					= "SVM_11_Smalltalk24"					;//... РЇ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡Сѓ СЃР»С‹С€Р°С‚СЊ РѕР± СЌС‚РѕРј...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                        
-	Smalltalk25					= "SVM_11_Smalltalk25"					;//... он напился в стельку...
-	Smalltalk26					= "SVM_11_Smalltalk26"					;//... Я не позволю так обращаться с собой...
-	Smalltalk27					= "SVM_11_Smalltalk27"					;//... они все разбежались как крысы, и я остался совсем один...
+	Smalltalk25					= "SVM_11_Smalltalk25"					;//... РѕРЅ РЅР°РїРёР»СЃСЏ РІ СЃС‚РµР»СЊРєСѓ...
+	Smalltalk26					= "SVM_11_Smalltalk26"					;//... РЇ РЅРµ РїРѕР·РІРѕР»СЋ С‚Р°Рє РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ СЃРѕР±РѕР№...
+	Smalltalk27					= "SVM_11_Smalltalk27"					;//... РѕРЅРё РІСЃРµ СЂР°Р·Р±РµР¶Р°Р»РёСЃСЊ РєР°Рє РєСЂС‹СЃС‹, Рё СЏ РѕСЃС‚Р°Р»СЃСЏ СЃРѕРІСЃРµРј РѕРґРёРЅ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                        
-	Smalltalk28					= "SVM_11_Smalltalk28"					;//... так говорится в писании...
-	Smalltalk29					= "SVM_11_Smalltalk29"					;//... Я всегда поступаю так, как завещал Иннос...
-	Smalltalk30					= "SVM_11_Smalltalk30"					;//... никто не смеет нарушать божественный порядок...
+	Smalltalk28					= "SVM_11_Smalltalk28"					;//... С‚Р°Рє РіРѕРІРѕСЂРёС‚СЃСЏ РІ РїРёСЃР°РЅРёРё...
+	Smalltalk29					= "SVM_11_Smalltalk29"					;//... РЇ РІСЃРµРіРґР° РїРѕСЃС‚СѓРїР°СЋ С‚Р°Рє, РєР°Рє Р·Р°РІРµС‰Р°Р» РРЅРЅРѕСЃ...
+	Smalltalk30					= "SVM_11_Smalltalk30"					;//... РЅРёРєС‚Рѕ РЅРµ СЃРјРµРµС‚ РЅР°СЂСѓС€Р°С‚СЊ Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ РїРѕСЂСЏРґРѕРє...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_11_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_11_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_11_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_11_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_11_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_11_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_11_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_11_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_11_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_11_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_11_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_11_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_11_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_11_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_11_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_11_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_11_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_11_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_11_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_11_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_11_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_11_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_11_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_11_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_11_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_11_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_11_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_11_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_11_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_11_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_11_TEMPEL_2_GALGEN"			;//Выйдя из храма, и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_11_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_11_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_11_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_11_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_11_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_11_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_11_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_11_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_11_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_11_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_11_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_11_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_11_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_11_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_11_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_11_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР°, Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_11_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_11_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_11_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_11_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_11_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_11_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_11_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_11_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_11_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_11_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_11_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_11_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_11_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_11_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_11_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_11_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_11_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_11_Addon_WrongArmor";				//Что на тебе за одежда? Она тебе не подходит. Оставь меня в покое.
-	ADDON_WRONGARMOR_SLD		= "SVM_11_ADDON_WRONGARMOR_SLD";			//Будь добр надевать свои доспехи, когда я говорю с тобой. Давай, бегом.
-	ADDON_WRONGARMOR_MIL		= "SVM_11_ADDON_WRONGARMOR_MIL";			//Тебе следует надеть доспехи королевской гвардии. Иди же.
-	ADDON_WRONGARMOR_KDF		= "SVM_11_ADDON_WRONGARMOR_KDF";			//Твоя одежда не соответствует нашему ордену. Пойди и переоденься.
-	ADDON_NOARMOR_BDT			= "SVM_11_ADDON_ADDON_NOARMOR_BDT";			//У тебя даже нет доспехов. Отвали!
+	ADDON_WRONGARMOR			= "SVM_11_Addon_WrongArmor";				//Р§С‚Рѕ РЅР° С‚РµР±Рµ Р·Р° РѕРґРµР¶РґР°? РћРЅР° С‚РµР±Рµ РЅРµ РїРѕРґС…РѕРґРёС‚. РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
+	ADDON_WRONGARMOR_SLD		= "SVM_11_ADDON_WRONGARMOR_SLD";			//Р‘СѓРґСЊ РґРѕР±СЂ РЅР°РґРµРІР°С‚СЊ СЃРІРѕРё РґРѕСЃРїРµС…Рё, РєРѕРіРґР° СЏ РіРѕРІРѕСЂСЋ СЃ С‚РѕР±РѕР№. Р”Р°РІР°Р№, Р±РµРіРѕРј.
+	ADDON_WRONGARMOR_MIL		= "SVM_11_ADDON_WRONGARMOR_MIL";			//РўРµР±Рµ СЃР»РµРґСѓРµС‚ РЅР°РґРµС‚СЊ РґРѕСЃРїРµС…Рё РєРѕСЂРѕР»РµРІСЃРєРѕР№ РіРІР°СЂРґРёРё. РРґРё Р¶Рµ.
+	ADDON_WRONGARMOR_KDF		= "SVM_11_ADDON_WRONGARMOR_KDF";			//РўРІРѕСЏ РѕРґРµР¶РґР° РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅР°С€РµРјСѓ РѕСЂРґРµРЅСѓ. РџРѕР№РґРё Рё РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_NOARMOR_BDT			= "SVM_11_ADDON_ADDON_NOARMOR_BDT";			//РЈ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ РґРѕСЃРїРµС…РѕРІ. РћС‚РІР°Р»Рё!
 
-	ADDON_DIEBANDIT				= "SVM_11_ADDON_DIEBANDIT";				//Еще один бандит.
-	ADDON_DIRTYPIRATE			= "SVM_11_ADDON_DIRTYPIRATE";			//ПИРАТЫ!
+	ADDON_DIEBANDIT				= "SVM_11_ADDON_DIEBANDIT";				//Р•С‰Рµ РѕРґРёРЅ Р±Р°РЅРґРёС‚.
+	ADDON_DIRTYPIRATE			= "SVM_11_ADDON_DIRTYPIRATE";			//РџРР РђРўР«!
 };
 
 instance SVM_12 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_12_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_12_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_12_Weather"					;//Паршивая погода!
+	MILGreetings				= 	"SVM_12_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_12_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_12_Weather"					;//РџР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_12_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_12_DieEnemy"					;//Тебе не стоило появляться здесь!
-	DieMonster					=	"SVM_12_DieMonster"					;//Иди сюда, подлая тварь!
-	DirtyThief					=	"SVM_12_DirtyThief"					;//Грязный вор! Ну подожди!
-	HandsOff					=	"SVM_12_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_12_SheepKiller"				;//Оставь наших овец в покое!
-	SheepKillerMonster			=	"SVM_12_SheepKillerMonster"			;//Держись подальше от наших овец!!
-	YouMurderer					=	"SVM_12_YouMurderer"				;//Убийца!
-	DieStupidBeast				=	"SVM_12_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_12_YouDareHitMe"				;//Ты пожалеешь об этом!
-	YouAskedForIt				=	"SVM_12_YouAskedForIt"				;//Я предупреждал тебя!
-	ThenIBeatYouOutOfHere		=	"SVM_12_ThenIBeatYouOutOfHere"		;//Я сказал, пошел прочь!
-	WhatDidYouDoInThere			=	"SVM_12_WhatDidYouDoInThere"		;//Эй, что ты там делаешь?
-	WillYouStopFighting			=	"SVM_12_WillYouStopFighting"		;//Прекрати немедленно!
+	IGetYouStill				= 	"SVM_12_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_12_DieEnemy"					;//РўРµР±Рµ РЅРµ СЃС‚РѕРёР»Рѕ РїРѕСЏРІР»СЏС‚СЊСЃСЏ Р·РґРµСЃСЊ!
+	DieMonster					=	"SVM_12_DieMonster"					;//РРґРё СЃСЋРґР°, РїРѕРґР»Р°СЏ С‚РІР°СЂСЊ!
+	DirtyThief					=	"SVM_12_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂ! РќСѓ РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_12_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_12_SheepKiller"				;//РћСЃС‚Р°РІСЊ РЅР°С€РёС… РѕРІРµС† РІ РїРѕРєРѕРµ!
+	SheepKillerMonster			=	"SVM_12_SheepKillerMonster"			;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅР°С€РёС… РѕРІРµС†!!
+	YouMurderer					=	"SVM_12_YouMurderer"				;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_12_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_12_YouDareHitMe"				;//РўС‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј!
+	YouAskedForIt				=	"SVM_12_YouAskedForIt"				;//РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_12_ThenIBeatYouOutOfHere"		;//РЇ СЃРєР°Р·Р°Р», РїРѕС€РµР» РїСЂРѕС‡СЊ!
+	WhatDidYouDoInThere			=	"SVM_12_WhatDidYouDoInThere"		;//Р­Р№, С‡С‚Рѕ С‚С‹ С‚Р°Рј РґРµР»Р°РµС€СЊ?
+	WillYouStopFighting			=	"SVM_12_WillYouStopFighting"		;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_12_KillEnemy"					;//Я проучу тебя, подонок!
-	EnemyKilled					=	"SVM_12_EnemyKilled"				;//Вот тебе...
-	MonsterKilled				=	"SVM_12_MonsterKilled"				;//Мне это даже нравится!
-	Addon_MonsterKilled			=	"SVM_12_Addon_MonsterKilled"		;//ЕЩЕ одним монстром меньше!
-	ThiefDown					=	"SVM_12_ThiefDown"					;//Предупреждаю тебя! Держись отсюда подальше, грязный вор!
-	rumfummlerDown				=	"SVM_12_rumfummlerDown"				;//Я думаю, это научит тебя держаться подальше от того, что тебе не принадлежит!
-	SheepAttackerDown			=	"SVM_12_SheepAttackerDown"			;//И держись подальше от наших овец!
-	KillMurderer				=	"SVM_12_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_12_StupidBeastKilled"			;//Что за тупая тварь!
-	NeverHitMeAgain				=	"SVM_12_NeverHitMeAgain"				;//Даже  не пытайся нападать на меня!
-	YouBetterShouldHaveListened	=	"SVM_12_YouBetterShouldHaveListened"	;//Я предупреждал тебя!
-	GetUpAndBeGone				=	"SVM_12_GetUpAndBeGone"					;//А теперь убирайся!
-	NeverEnterRoomAgain			=	"SVM_12_NeverEnterRoomAgain"			;//Я не хочу больше здесь тебя видеть, понял?
-	ThereIsNoFightingHere		=	"SVM_12_ThereIsNoFightingHere"			;//Драки здесь запрещены. Не забывай об этом!
+	KillEnemy					= 	"SVM_12_KillEnemy"					;//РЇ РїСЂРѕСѓС‡Сѓ С‚РµР±СЏ, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_12_EnemyKilled"				;//Р’РѕС‚ С‚РµР±Рµ...
+	MonsterKilled				=	"SVM_12_MonsterKilled"				;//РњРЅРµ СЌС‚Рѕ РґР°Р¶Рµ РЅСЂР°РІРёС‚СЃСЏ!
+	Addon_MonsterKilled			=	"SVM_12_Addon_MonsterKilled"		;//Р•Р©Р• РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_12_ThiefDown"					;//РџСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ! Р”РµСЂР¶РёСЃСЊ РѕС‚СЃСЋРґР° РїРѕРґР°Р»СЊС€Рµ, РіСЂСЏР·РЅС‹Р№ РІРѕСЂ!
+	rumfummlerDown				=	"SVM_12_rumfummlerDown"				;//РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РЅР°СѓС‡РёС‚ С‚РµР±СЏ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚!
+	SheepAttackerDown			=	"SVM_12_SheepAttackerDown"			;//Р РґРµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅР°С€РёС… РѕРІРµС†!
+	KillMurderer				=	"SVM_12_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_12_StupidBeastKilled"			;//Р§С‚Рѕ Р·Р° С‚СѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_12_NeverHitMeAgain"				;//Р”Р°Р¶Рµ  РЅРµ РїС‹С‚Р°Р№СЃСЏ РЅР°РїР°РґР°С‚СЊ РЅР° РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_12_YouBetterShouldHaveListened"	;//РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ!
+	GetUpAndBeGone				=	"SVM_12_GetUpAndBeGone"					;//Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ!
+	NeverEnterRoomAgain			=	"SVM_12_NeverEnterRoomAgain"			;//РЇ РЅРµ С…РѕС‡Сѓ Р±РѕР»СЊС€Рµ Р·РґРµСЃСЊ С‚РµР±СЏ РІРёРґРµС‚СЊ, РїРѕРЅСЏР»?
+	ThereIsNoFightingHere		=	"SVM_12_ThereIsNoFightingHere"			;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹. РќРµ Р·Р°Р±С‹РІР°Р№ РѕР± СЌС‚РѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_12_SpareMe"						;//Не делай глупостей!
-	RunAway						= 	"SVM_12_RunAway"						;//Я ухожу отсюда!
+	SpareMe						=	"SVM_12_SpareMe"						;//РќРµ РґРµР»Р°Р№ РіР»СѓРїРѕСЃС‚РµР№!
+	RunAway						= 	"SVM_12_RunAway"						;//РЇ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_12_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_12_Guards"					;//СТРАЖА!
-	Help						=	"SVM_12_Help"					;//Помогите!
+	Alarm						=	"SVM_12_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_12_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_12_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_12_GoodMonsterKill"		;//Покажи этим тварям, где раки зимуют!
-	GoodKill					= 	"SVM_12_GoodKill"				;//Да, покажи этому ублюдку!
+	GoodMonsterKill				=	"SVM_12_GoodMonsterKill"		;//РџРѕРєР°Р¶Рё СЌС‚РёРј С‚РІР°СЂСЏРј, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
+	GoodKill					= 	"SVM_12_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕРјСѓ СѓР±Р»СЋРґРєСѓ!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_12_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_12_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_12_RunCoward"				;//Я тебя достану!
+	RunCoward					=	"SVM_12_RunCoward"				;//РЇ С‚РµР±СЏ РґРѕСЃС‚Р°РЅСѓ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_12_GetOutOfHere"			;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_12_WhyAreYouInHere"		;//Тебе нечего делать здесь!
-	YesGoOutOfHere				= 	"SVM_12_YesGoOutOfHere"			;//Да, проваливай отсюда!
+	GetOutOfHere				=	"SVM_12_GetOutOfHere"			;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_12_WhyAreYouInHere"		;//РўРµР±Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ Р·РґРµСЃСЊ!
+	YesGoOutOfHere				= 	"SVM_12_YesGoOutOfHere"			;//Р”Р°, РїСЂРѕРІР°Р»РёРІР°Р№ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_12_WhatsThisSupposedToBe"	;//Что ты задумал? Что ты тут ошиваешься?
-	YouDisturbedMySlumber		=	"SVM_12_YouDisturbedMySlumber"	;//(просыпается) Черт, что тебе нужно?
+	WhatsThisSupposedToBe		=	"SVM_12_WhatsThisSupposedToBe"	;//Р§С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р»? Р§С‚Рѕ С‚С‹ С‚СѓС‚ РѕС€РёРІР°РµС€СЊСЃСЏ?
+	YouDisturbedMySlumber		=	"SVM_12_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_12_ITookYourGold"			;//Ну, по крайней мере, у тебя есть золото с собой.
-	ShitNoGold					=	"SVM_12_ShitNoGold"				;//Даже золота нет - пффф.
-	ITakeYourWeapon				=	"SVM_12_ITakeYourWeapon"		;//Пожалуй, я заберу твое оружие.
+	ITookYourGold				=	"SVM_12_ITookYourGold"			;//РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, Сѓ С‚РµР±СЏ РµСЃС‚СЊ Р·РѕР»РѕС‚Рѕ СЃ СЃРѕР±РѕР№.
+	ShitNoGold					=	"SVM_12_ShitNoGold"				;//Р”Р°Р¶Рµ Р·РѕР»РѕС‚Р° РЅРµС‚ - РїС„С„С„.
+	ITakeYourWeapon				=	"SVM_12_ITakeYourWeapon"		;//РџРѕР¶Р°Р»СѓР№, СЏ Р·Р°Р±РµСЂСѓ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_12_WhatAreYouDoing"		;//(предупреждающе) Парень! Не делай этого больше!
+	WhatAreYouDoing				=	"SVM_12_WhatAreYouDoing"		;//(РїСЂРµРґСѓРїСЂРµР¶РґР°СЋС‰Рµ) РџР°СЂРµРЅСЊ! РќРµ РґРµР»Р°Р№ СЌС‚РѕРіРѕ Р±РѕР»СЊС€Рµ!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_12_LookingForTroubleAgain"	;//(агрессивно) Хочешь получить еще?
-	StopMagic					=	"SVM_12_StopMagic"				;//Убери эту магию!
-	ISaidStopMagic				=	"SVM_12_ISaidStopMagic"			;//Последнее предупреждение! Убери эту магию!
-	WeaponDown					=	"SVM_12_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_12_ISaidWeaponDown"		;//Убери это, иди я за себя не отвечаю!
-	WiseMove					=	"SVM_12_WiseMove"				;//Эй, ты не такой тупой, как кажешься!
+	LookingForTroubleAgain		=	"SVM_12_LookingForTroubleAgain"	;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РҐРѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РµС‰Рµ?
+	StopMagic					=	"SVM_12_StopMagic"				;//РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ!
+	ISaidStopMagic				=	"SVM_12_ISaidStopMagic"			;//РџРѕСЃР»РµРґРЅРµРµ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ! РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ!
+	WeaponDown					=	"SVM_12_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_12_ISaidWeaponDown"		;//РЈР±РµСЂРё СЌС‚Рѕ, РёРґРё СЏ Р·Р° СЃРµР±СЏ РЅРµ РѕС‚РІРµС‡Р°СЋ!
+	WiseMove					=	"SVM_12_WiseMove"				;//Р­Р№, С‚С‹ РЅРµ С‚Р°РєРѕР№ С‚СѓРїРѕР№, РєР°Рє РєР°Р¶РµС€СЊСЃСЏ!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_12_NextTimeYoureInForIt"	;//(себе под нос) Только еще попробуй ...
-	OhMyHead					=	"SVM_12_OhMyHead"				;//(себе под нос) Охх! Моя голова ...
+	NextTimeYoureInForIt		=	"SVM_12_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РўРѕР»СЊРєРѕ РµС‰Рµ РїРѕРїСЂРѕР±СѓР№ ...
+	OhMyHead					=	"SVM_12_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…С…! РњРѕСЏ РіРѕР»РѕРІР° ...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_12_TheresAFight"			;//(жадно) А теперь, пришло время позабавиться ...
-	OhMyGodItsAFight			=	"SVM_12_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой ...
-	GoodVictory					=	"SVM_12_GoodVictory"			;//(дьявольский смех) Пусть это послужит уроком для него...
-	NotBad						= 	"SVM_12_NotBad"					;//(одобрительно) Как он ему дал!
-	OhMyGodHesDown				=	"SVM_12_OhMyGodHesDown"			;//(себе под нос) Какой он жестокий!
-	CheerFriend01				=	"SVM_12_CheerFriend01"			;//Прикончи его!
-	CheerFriend02				=	"SVM_12_CheerFriend02"			;//Не останавливайся!
-	CheerFriend03				=	"SVM_12_CheerFriend03"			;//Прикончи его!
-	Ooh01						=	"SVM_12_Ooh01"					;//Осторожно!
-	Ooh02						=	"SVM_12_Ooh02"					;//Защищайся же!
-	Ooh03						=	"SVM_12_Ooh03"					;//Ох, как больно!
+	TheresAFight				=	"SVM_12_TheresAFight"			;//(Р¶Р°РґРЅРѕ) Рђ С‚РµРїРµСЂСЊ, РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїРѕР·Р°Р±Р°РІРёС‚СЊСЃСЏ ...
+	OhMyGodItsAFight			=	"SVM_12_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№ ...
+	GoodVictory					=	"SVM_12_GoodVictory"			;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РџСѓСЃС‚СЊ СЌС‚Рѕ РїРѕСЃР»СѓР¶РёС‚ СѓСЂРѕРєРѕРј РґР»СЏ РЅРµРіРѕ...
+	NotBad						= 	"SVM_12_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РљР°Рє РѕРЅ РµРјСѓ РґР°Р»!
+	OhMyGodHesDown				=	"SVM_12_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РљР°РєРѕР№ РѕРЅ Р¶РµСЃС‚РѕРєРёР№!
+	CheerFriend01				=	"SVM_12_CheerFriend01"			;//РџСЂРёРєРѕРЅС‡Рё РµРіРѕ!
+	CheerFriend02				=	"SVM_12_CheerFriend02"			;//РќРµ РѕСЃС‚Р°РЅР°РІР»РёРІР°Р№СЃСЏ!
+	CheerFriend03				=	"SVM_12_CheerFriend03"			;//РџСЂРёРєРѕРЅС‡Рё РµРіРѕ!
+	Ooh01						=	"SVM_12_Ooh01"					;//РћСЃС‚РѕСЂРѕР¶РЅРѕ!
+	Ooh02						=	"SVM_12_Ooh02"					;//Р—Р°С‰РёС‰Р°Р№СЃСЏ Р¶Рµ!
+	Ooh03						=	"SVM_12_Ooh03"					;//РћС…, РєР°Рє Р±РѕР»СЊРЅРѕ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_12_WhatWasThat"				;//(себе под нос, просыпаясь) Что это было!?
+	WhatWasThat					= "SVM_12_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ!?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_12_GetOutOfMyBed"			;//Убирайся с моей кровати!
-	Awake						= "SVM_12_Awake"					;//(зевает)
+	GetOutOfMyBed				= "SVM_12_GetOutOfMyBed"			;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_12_Awake"					;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     = "SVM_12_ABS_COMMANDER"    ;//Так значит, ты утряс все проблемы с командующим.
-	ABS_MONASTERY    = "SVM_12_ABS_MONASTERY"    ;//Отец Парлан отпустил тебе твои грехи.
-	ABS_FARM       = "SVM_12_ABS_FARM"        ;//Так ты ходил к Ли и все уладил.
-	ABS_GOOD       = "SVM_12_ABS_GOOD"       ;//Хорошо.
+	ABS_COMMANDER     = "SVM_12_ABS_COMMANDER"    ;//РўР°Рє Р·РЅР°С‡РёС‚, С‚С‹ СѓС‚СЂСЏСЃ РІСЃРµ РїСЂРѕР±Р»РµРјС‹ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј.
+	ABS_MONASTERY    = "SVM_12_ABS_MONASTERY"    ;//РћС‚РµС† РџР°СЂР»Р°РЅ РѕС‚РїСѓСЃС‚РёР» С‚РµР±Рµ С‚РІРѕРё РіСЂРµС…Рё.
+	ABS_FARM       = "SVM_12_ABS_FARM"        ;//РўР°Рє С‚С‹ С…РѕРґРёР» Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD       = "SVM_12_ABS_GOOD"       ;//РҐРѕСЂРѕС€Рѕ.
  	// -------------------------
-	SHEEPKILLER_CRIME   = "SVM_12_SHEEPKILLER_CRIME"   ;//Ты нападаешь на овцу? А ты не хочешь выбрать себе еще более беззащитную жертву?
-	ATTACK_CRIME     = "SVM_12_ATTACK_CRIME"    ;//Я не общаюсь с бандитами!
-	THEFT_CRIME      = "SVM_12_THEFT_CRIME"    ;//Я не имею дел с ворами!
+	SHEEPKILLER_CRIME   = "SVM_12_SHEEPKILLER_CRIME"   ;//РўС‹ РЅР°РїР°РґР°РµС€СЊ РЅР° РѕРІС†Сѓ? Рђ С‚С‹ РЅРµ С…РѕС‡РµС€СЊ РІС‹Р±СЂР°С‚СЊ СЃРµР±Рµ РµС‰Рµ Р±РѕР»РµРµ Р±РµР·Р·Р°С‰РёС‚РЅСѓСЋ Р¶РµСЂС‚РІСѓ?
+	ATTACK_CRIME     = "SVM_12_ATTACK_CRIME"    ;//РЇ РЅРµ РѕР±С‰Р°СЋСЃСЊ СЃ Р±Р°РЅРґРёС‚Р°РјРё!
+	THEFT_CRIME      = "SVM_12_THEFT_CRIME"    ;//РЇ РЅРµ РёРјРµСЋ РґРµР» СЃ РІРѕСЂР°РјРё!
  	// -------------------------
- 	PAL_CITY_CRIME     = "SVM_12_PAL_CITY_CRIME"   ;//Так ты хочешь стать паладином? Ну подожди, вот лорд Хаген узнает о твоих делах!
- 	MIL_CITY_CRIME     = "SVM_12_MIL_CITY_CRIME"   ;//Ты действительно состоишь в городской страже? Лорд Андрэ не потерпит такого!
- 	CITY_CRIME       = "SVM_12_CITY_CRIME"    ;//Иди к лорду Андрэ, пока еще не поздно.
+ 	PAL_CITY_CRIME     = "SVM_12_PAL_CITY_CRIME"   ;//РўР°Рє С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј? РќСѓ РїРѕРґРѕР¶РґРё, РІРѕС‚ Р»РѕСЂРґ РҐР°РіРµРЅ СѓР·РЅР°РµС‚ Рѕ С‚РІРѕРёС… РґРµР»Р°С…!
+ 	MIL_CITY_CRIME     = "SVM_12_MIL_CITY_CRIME"   ;//РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРѕСЃС‚РѕРёС€СЊ РІ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рµ? Р›РѕСЂРґ РђРЅРґСЂСЌ РЅРµ РїРѕС‚РµСЂРїРёС‚ С‚Р°РєРѕРіРѕ!
+ 	CITY_CRIME       = "SVM_12_CITY_CRIME"    ;//РРґРё Рє Р»РѕСЂРґСѓ РђРЅРґСЂСЌ, РїРѕРєР° РµС‰Рµ РЅРµ РїРѕР·РґРЅРѕ.
  	// -------------------------
-	MONA_CRIME       = "SVM_12_MONA_CRIME"    ;//Иди к отцу Парлану. Он отпустит тебе твои грехи!
-	FARM_CRIME       = "SVM_12_FARM_CRIME"    ;//Ли узнает об этом и тебе придется заплатить.
-	OC_CRIME       = "SVM_12_OC_CRIME"     ;//Командующему Гаронду это не понравится. Тебе лучше поговорить с ним, пока не поздно!
+	MONA_CRIME       = "SVM_12_MONA_CRIME"    ;//РРґРё Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ. РћРЅ РѕС‚РїСѓСЃС‚РёС‚ С‚РµР±Рµ С‚РІРѕРё РіСЂРµС…Рё!
+	FARM_CRIME       = "SVM_12_FARM_CRIME"    ;//Р›Рё СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј Рё С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ.
+	OC_CRIME       = "SVM_12_OC_CRIME"     ;//РљРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Р“Р°СЂРѕРЅРґСѓ СЌС‚Рѕ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ. РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј, РїРѕРєР° РЅРµ РїРѕР·РґРЅРѕ!
  	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_12_TOUGHGUY_ATTACKLOST"		;//Хорошо - ты победил. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_12_TOUGHGUY_ATTACKWON"		;//Я думаю, теперь ты понимаешь, с кем ты имеешь дело. Чего ты хочешь?
-	TOUGHGUY_PLAYERATTACK		= "SVM_12_TOUGHGUY_PLAYERATTACK"	;//Опять ты? Хочешь еще раз сразиться со мной, да?
+	TOUGHGUY_ATTACKLOST			= "SVM_12_TOUGHGUY_ATTACKLOST"		;//РҐРѕСЂРѕС€Рѕ - С‚С‹ РїРѕР±РµРґРёР». Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_12_TOUGHGUY_ATTACKWON"		;//РЇ РґСѓРјР°СЋ, С‚РµРїРµСЂСЊ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, СЃ РєРµРј С‚С‹ РёРјРµРµС€СЊ РґРµР»Рѕ. Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_PLAYERATTACK		= "SVM_12_TOUGHGUY_PLAYERATTACK"	;//РћРїСЏС‚СЊ С‚С‹? РҐРѕС‡РµС€СЊ РµС‰Рµ СЂР°Р· СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№, РґР°?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_12_GOLD_1000"				;//1000 золотых монет.
-	GOLD_950					= "SVM_12_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_12_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_12_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_12_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_12_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_12_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_12_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_12_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_12_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_12_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_12_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_12_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_12_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_12_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_12_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_12_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_12_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_12_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_12_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_12_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_12_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_12_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_12_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_12_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_12_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_12_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_12_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_12_GOLD_1000"				;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_12_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_12_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_12_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_12_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_12_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_12_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_12_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_12_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_12_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_12_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_12_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_12_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_12_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_12_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_12_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_12_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_12_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_12_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_12_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_12_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_12_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_12_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_12_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_12_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_12_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_12_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_12_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_12_Smalltalk01"				;//... Какая беспечность ...
-	Smalltalk02					= "SVM_12_Smalltalk02"				;//... никто ничего не хочет знать ...
-	Smalltalk03					= "SVM_12_Smalltalk03"				;//... он сам так решил ...
-	Smalltalk04					= "SVM_12_Smalltalk04"				;//... понятия не имею, скажи мне ...
-	Smalltalk05					= "SVM_12_Smalltalk05"				;//... Я лучше не буду вмешиваться ...
-	Smalltalk06					= "SVM_12_Smalltalk06"				;//... У меня нет времени на это ...
-	Smalltalk07					= "SVM_12_Smalltalk07"				;//... Я бы так не смог ...
-	Smalltalk08					= "SVM_12_Smalltalk08"				;//... лучше не говори, не надо ...
-	Smalltalk09					= "SVM_12_Smalltalk09"				;//... пойди туда, сделай это ...
-	Smalltalk10					= "SVM_12_Smalltalk10"				;//... этого я тебе сказать не могу ...
-	Smalltalk11					= "SVM_12_Smalltalk11"				;//... на это не стоит надеяться ...
-	Smalltalk12					= "SVM_12_Smalltalk12"				;//... Я тоже так считаю ...
-	Smalltalk13					= "SVM_12_Smalltalk13"				;//... и это еще не все, поверь мне ...
-	Smalltalk14					= "SVM_12_Smalltalk14"				;//... опять то же самое ...
-	Smalltalk15					= "SVM_12_Smalltalk15"				;//... скажи мне, что это не так ...
-	Smalltalk16					= "SVM_12_Smalltalk16"				;//... рано или поздно это должно было случиться ...
-	Smalltalk17					= "SVM_12_Smalltalk17"				;//... ему стоило подумать об этом заранее ...
-	Smalltalk18					= "SVM_12_Smalltalk18"				;//... ничего не изменится ...
-	Smalltalk19					= "SVM_12_Smalltalk19"				;//... это не секрет ...
-	Smalltalk20					= "SVM_12_Smalltalk20"				;//... тоже мне большое дело ...
-	Smalltalk21					= "SVM_12_Smalltalk21"				;//... он думает, это так просто ...
-	Smalltalk22					= "SVM_12_Smalltalk22"				;//... никому это не интересно  ...
-	Smalltalk23					= "SVM_12_Smalltalk23"				;//... и это правда ...
-	Smalltalk24					= "SVM_12_Smalltalk24"				;//...ты просто послушай ...
+	Smalltalk01					= "SVM_12_Smalltalk01"				;//... РљР°РєР°СЏ Р±РµСЃРїРµС‡РЅРѕСЃС‚СЊ ...
+	Smalltalk02					= "SVM_12_Smalltalk02"				;//... РЅРёРєС‚Рѕ РЅРёС‡РµРіРѕ РЅРµ С…РѕС‡РµС‚ Р·РЅР°С‚СЊ ...
+	Smalltalk03					= "SVM_12_Smalltalk03"				;//... РѕРЅ СЃР°Рј С‚Р°Рє СЂРµС€РёР» ...
+	Smalltalk04					= "SVM_12_Smalltalk04"				;//... РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, СЃРєР°Р¶Рё РјРЅРµ ...
+	Smalltalk05					= "SVM_12_Smalltalk05"				;//... РЇ Р»СѓС‡С€Рµ РЅРµ Р±СѓРґСѓ РІРјРµС€РёРІР°С‚СЊСЃСЏ ...
+	Smalltalk06					= "SVM_12_Smalltalk06"				;//... РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ ...
+	Smalltalk07					= "SVM_12_Smalltalk07"				;//... РЇ Р±С‹ С‚Р°Рє РЅРµ СЃРјРѕРі ...
+	Smalltalk08					= "SVM_12_Smalltalk08"				;//... Р»СѓС‡С€Рµ РЅРµ РіРѕРІРѕСЂРё, РЅРµ РЅР°РґРѕ ...
+	Smalltalk09					= "SVM_12_Smalltalk09"				;//... РїРѕР№РґРё С‚СѓРґР°, СЃРґРµР»Р°Р№ СЌС‚Рѕ ...
+	Smalltalk10					= "SVM_12_Smalltalk10"				;//... СЌС‚РѕРіРѕ СЏ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ РЅРµ РјРѕРіСѓ ...
+	Smalltalk11					= "SVM_12_Smalltalk11"				;//... РЅР° СЌС‚Рѕ РЅРµ СЃС‚РѕРёС‚ РЅР°РґРµСЏС‚СЊСЃСЏ ...
+	Smalltalk12					= "SVM_12_Smalltalk12"				;//... РЇ С‚РѕР¶Рµ С‚Р°Рє СЃС‡РёС‚Р°СЋ ...
+	Smalltalk13					= "SVM_12_Smalltalk13"				;//... Рё СЌС‚Рѕ РµС‰Рµ РЅРµ РІСЃРµ, РїРѕРІРµСЂСЊ РјРЅРµ ...
+	Smalltalk14					= "SVM_12_Smalltalk14"				;//... РѕРїСЏС‚СЊ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ ...
+	Smalltalk15					= "SVM_12_Smalltalk15"				;//... СЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ С‚Р°Рє ...
+	Smalltalk16					= "SVM_12_Smalltalk16"				;//... СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ СЌС‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹Р»Рѕ СЃР»СѓС‡РёС‚СЊСЃСЏ ...
+	Smalltalk17					= "SVM_12_Smalltalk17"				;//... РµРјСѓ СЃС‚РѕРёР»Рѕ РїРѕРґСѓРјР°С‚СЊ РѕР± СЌС‚РѕРј Р·Р°СЂР°РЅРµРµ ...
+	Smalltalk18					= "SVM_12_Smalltalk18"				;//... РЅРёС‡РµРіРѕ РЅРµ РёР·РјРµРЅРёС‚СЃСЏ ...
+	Smalltalk19					= "SVM_12_Smalltalk19"				;//... СЌС‚Рѕ РЅРµ СЃРµРєСЂРµС‚ ...
+	Smalltalk20					= "SVM_12_Smalltalk20"				;//... С‚РѕР¶Рµ РјРЅРµ Р±РѕР»СЊС€РѕРµ РґРµР»Рѕ ...
+	Smalltalk21					= "SVM_12_Smalltalk21"				;//... РѕРЅ РґСѓРјР°РµС‚, СЌС‚Рѕ С‚Р°Рє РїСЂРѕСЃС‚Рѕ ...
+	Smalltalk22					= "SVM_12_Smalltalk22"				;//... РЅРёРєРѕРјСѓ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ  ...
+	Smalltalk23					= "SVM_12_Smalltalk23"				;//... Рё СЌС‚Рѕ РїСЂР°РІРґР° ...
+	Smalltalk24					= "SVM_12_Smalltalk24"				;//...С‚С‹ РїСЂРѕСЃС‚Рѕ РїРѕСЃР»СѓС€Р°Р№ ...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                      
-	Smalltalk25					= "SVM_12_Smalltalk25"				;//... если бы он был с нами, все было бы по-другому ...
-	Smalltalk26					= "SVM_12_Smalltalk26"				;//... ему нужно больше тренироваться ...
-	Smalltalk27					= "SVM_12_Smalltalk27"				;//... да что он об этом знает ...
+	Smalltalk25					= "SVM_12_Smalltalk25"				;//... РµСЃР»Рё Р±С‹ РѕРЅ Р±С‹Р» СЃ РЅР°РјРё, РІСЃРµ Р±С‹Р»Рѕ Р±С‹ РїРѕ-РґСЂСѓРіРѕРјСѓ ...
+	Smalltalk26					= "SVM_12_Smalltalk26"				;//... РµРјСѓ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ ...
+	Smalltalk27					= "SVM_12_Smalltalk27"				;//... РґР° С‡С‚Рѕ РѕРЅ РѕР± СЌС‚РѕРј Р·РЅР°РµС‚ ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                      
-	Smalltalk28					= "SVM_12_Smalltalk28"				;//... Иннос все видит ...
-	Smalltalk29					= "SVM_12_Smalltalk29"				;//... путь добродетели труден и тернист ...
-	Smalltalk30					= "SVM_12_Smalltalk30"				;//... только Иннос знает, что правильно, а что нет ...
+	Smalltalk28					= "SVM_12_Smalltalk28"				;//... РРЅРЅРѕСЃ РІСЃРµ РІРёРґРёС‚ ...
+	Smalltalk29					= "SVM_12_Smalltalk29"				;//... РїСѓС‚СЊ РґРѕР±СЂРѕРґРµС‚РµР»Рё С‚СЂСѓРґРµРЅ Рё С‚РµСЂРЅРёСЃС‚ ...
+	Smalltalk30					= "SVM_12_Smalltalk30"				;//... С‚РѕР»СЊРєРѕ РРЅРЅРѕСЃ Р·РЅР°РµС‚, С‡С‚Рѕ РїСЂР°РІРёР»СЊРЅРѕ, Р° С‡С‚Рѕ РЅРµС‚ ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_12_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_12_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_12_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_12_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня ...
+	NoLearnNoPoints				= "SVM_12_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_12_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_12_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_12_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_12_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_12_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_12_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_12_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_12_GALGEN"					;//Сейчас ты находишься на площади правосудия перед казармами.
-	KASERNE						= "SVM_12_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_12_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_12_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_12_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_12_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_12_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_12_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РїР»РѕС‰Р°РґРё РїСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_12_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_12_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_12_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_12_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_12_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_12_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_12_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_12_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_12_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_12_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_12_TEMPEL_2_GALGEN"			;//Выйдя из храма, и пройдя мимо таверны слева, ты попадешь на площадь правосудия.
-	MARKT_2_TEMPEL				= "SVM_12_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_12_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_12_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на площадь правосудия.
-	GALGEN_2_TEMPEL				= "SVM_12_GALGEN_2_TEMPEL"			;//Пройди по переулку от площади правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_12_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_12_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_12_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_12_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на площадь правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_12_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_12_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_12_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_12_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_12_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_12_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_12_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_12_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР°, Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РїР»РѕС‰Р°РґСЊ РїСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_12_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_12_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_12_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РїР»РѕС‰Р°РґСЊ РїСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_12_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РїР»РѕС‰Р°РґРё РїСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_12_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_12_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_12_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_12_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РїР»РѕС‰Р°РґСЊ РїСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_12_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_12_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_12_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_12_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_12_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_12_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_12_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_12_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_12_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_12_Addon_WrongArmor";				//Твоя одежда просто не подходит тебе. Для начала переоденься.
-	ADDON_WRONGARMOR_SLD		= "SVM_12_ADDON_WRONGARMOR_SLD";			//Надень свои доспехи, если хочешь разговаривать со мной.
-	ADDON_WRONGARMOR_MIL		= "SVM_12_ADDON_WRONGARMOR_MIL";			//Солдат должен носить доспехи королевской гвардии, а не что попало! Так что тебе следует переодеться.
-	ADDON_WRONGARMOR_KDF		= "SVM_12_ADDON_WRONGARMOR_KDF";			//Твоя одежда не соответствует нашему ордену. Пойди и переоденься.
-	ADDON_NOARMOR_BDT			= "SVM_12_ADDON_ADDON_NOARMOR_BDT";			//Ты даже не можешь купить себе доспехи. Я не разговариваю со слабаками.
+	ADDON_WRONGARMOR			= "SVM_12_Addon_WrongArmor";				//РўРІРѕСЏ РѕРґРµР¶РґР° РїСЂРѕСЃС‚Рѕ РЅРµ РїРѕРґС…РѕРґРёС‚ С‚РµР±Рµ. Р”Р»СЏ РЅР°С‡Р°Р»Р° РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_WRONGARMOR_SLD		= "SVM_12_ADDON_WRONGARMOR_SLD";			//РќР°РґРµРЅСЊ СЃРІРѕРё РґРѕСЃРїРµС…Рё, РµСЃР»Рё С…РѕС‡РµС€СЊ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃРѕ РјРЅРѕР№.
+	ADDON_WRONGARMOR_MIL		= "SVM_12_ADDON_WRONGARMOR_MIL";			//РЎРѕР»РґР°С‚ РґРѕР»Р¶РµРЅ РЅРѕСЃРёС‚СЊ РґРѕСЃРїРµС…Рё РєРѕСЂРѕР»РµРІСЃРєРѕР№ РіРІР°СЂРґРёРё, Р° РЅРµ С‡С‚Рѕ РїРѕРїР°Р»Рѕ! РўР°Рє С‡С‚Рѕ С‚РµР±Рµ СЃР»РµРґСѓРµС‚ РїРµСЂРµРѕРґРµС‚СЊСЃСЏ.
+	ADDON_WRONGARMOR_KDF		= "SVM_12_ADDON_WRONGARMOR_KDF";			//РўРІРѕСЏ РѕРґРµР¶РґР° РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅР°С€РµРјСѓ РѕСЂРґРµРЅСѓ. РџРѕР№РґРё Рё РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_NOARMOR_BDT			= "SVM_12_ADDON_ADDON_NOARMOR_BDT";			//РўС‹ РґР°Р¶Рµ РЅРµ РјРѕР¶РµС€СЊ РєСѓРїРёС‚СЊ СЃРµР±Рµ РґРѕСЃРїРµС…Рё. РЇ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ СЃРѕ СЃР»Р°Р±Р°РєР°РјРё.
 
-	ADDON_DIEBANDIT				= "SVM_12_ADDON_DIEBANDIT";				//Я порву тебе на части, бандюга!
-	ADDON_DIRTYPIRATE			= "SVM_12_ADDON_DIRTYPIRATE";			//Я порву тебе на части, пират!
+	ADDON_DIEBANDIT				= "SVM_12_ADDON_DIEBANDIT";				//РЇ РїРѕСЂРІСѓ С‚РµР±Рµ РЅР° С‡Р°СЃС‚Рё, Р±Р°РЅРґСЋРіР°!
+	ADDON_DIRTYPIRATE			= "SVM_12_ADDON_DIRTYPIRATE";			//РЇ РїРѕСЂРІСѓ С‚РµР±Рµ РЅР° С‡Р°СЃС‚Рё, РїРёСЂР°С‚!
 };
 
 instance SVM_13 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_13_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_13_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_13_Weather"					;//Какая паршивая погода!
+	MILGreetings				= 	"SVM_13_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_13_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_13_Weather"					;//РљР°РєР°СЏ РїР°СЂС€РёРІР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_13_IGetYouStill"				;//Сейчас ты у меня получишь!
-	DieEnemy					=	"SVM_13_DieEnemy"					;//Я разорву тебя на куски!
-	DieMonster					=	"SVM_13_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_13_DirtyThief"					;//Грязный воришка! Ну, подожди!
-	HandsOff					=	"SVM_13_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_13_SheepKiller"				;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_13_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_13_YouMurderer"				;//Убийца!
-	DieStupidBeast				=	"SVM_13_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_13_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_13_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_13_ThenIBeatYouOutOfHere"		;//Ты не хочешь уходить? Хорошо!
-	WhatDidYouDoInThere			=	"SVM_13_WhatDidYouDoInThere"		;//Что тебе было нужно там?
-	WillYouStopFighting			=	"SVM_13_WillYouStopFighting"		;//Ты прекратишь?!
+	IGetYouStill				= 	"SVM_13_IGetYouStill"				;//РЎРµР№С‡Р°СЃ С‚С‹ Сѓ РјРµРЅСЏ РїРѕР»СѓС‡РёС€СЊ!
+	DieEnemy					=	"SVM_13_DieEnemy"					;//РЇ СЂР°Р·РѕСЂРІСѓ С‚РµР±СЏ РЅР° РєСѓСЃРєРё!
+	DieMonster					=	"SVM_13_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_13_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂРёС€РєР°! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_13_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_13_SheepKiller"				;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_13_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_13_YouMurderer"				;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_13_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_13_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_13_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_13_ThenIBeatYouOutOfHere"		;//РўС‹ РЅРµ С…РѕС‡РµС€СЊ СѓС…РѕРґРёС‚СЊ? РҐРѕСЂРѕС€Рѕ!
+	WhatDidYouDoInThere			=	"SVM_13_WhatDidYouDoInThere"		;//Р§С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ С‚Р°Рј?
+	WillYouStopFighting			=	"SVM_13_WillYouStopFighting"		;//РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_13_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_13_EnemyKilled"				;//Ты заслужил это, подонок!
-	MonsterKilled				=	"SVM_13_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_13_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_13_rumfummlerDown"				;//Я думаю, это научит тебя держаться подальше от того, что тебе не принадлежит!
-	SheepAttackerDown			=	"SVM_13_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_13_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_13_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_13_NeverHitMeAgain"			;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_13_YouBetterShouldHaveListened";//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_13_GetUpAndBeGone"				;//А теперь убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_13_NeverEnterRoomAgain"		;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_13_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_13_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_13_EnemyKilled"				;//РўС‹ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ, РїРѕРґРѕРЅРѕРє!
+	MonsterKilled				=	"SVM_13_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_13_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_13_rumfummlerDown"				;//РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РЅР°СѓС‡РёС‚ С‚РµР±СЏ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚!
+	SheepAttackerDown			=	"SVM_13_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_13_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_13_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_13_NeverHitMeAgain"			;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_13_YouBetterShouldHaveListened";//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_13_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_13_NeverEnterRoomAgain"		;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_13_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_13_SpareMe"					;//Не трогай меня!
-	RunAway						= 	"SVM_13_RunAway"					;//Ох, черт!!
+	SpareMe						=	"SVM_13_SpareMe"					;//РќРµ С‚СЂРѕРіР°Р№ РјРµРЅСЏ!
+	RunAway						= 	"SVM_13_RunAway"					;//РћС…, С‡РµСЂС‚!!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_13_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_13_Guards"					;//СТРАЖА!
-	Help						=	"SVM_13_Help"					;//Помогите!
+	Alarm						=	"SVM_13_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_13_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_13_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_13_GoodMonsterKill"		;//Отлично - одной мерзкой тварью меньше!
-	GoodKill					= 	"SVM_13_GoodKill"				;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_13_GoodMonsterKill"		;//РћС‚Р»РёС‡РЅРѕ - РѕРґРЅРѕР№ РјРµСЂР·РєРѕР№ С‚РІР°СЂСЊСЋ РјРµРЅСЊС€Рµ!
+	GoodKill					= 	"SVM_13_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_13_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_13_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_13_RunCoward"				;//Да! Беги со всех ног!
+	RunCoward					=	"SVM_13_RunCoward"				;//Р”Р°! Р‘РµРіРё СЃРѕ РІСЃРµС… РЅРѕРі!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_13_GetOutOfHere"			;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_13_WhyAreYouInHere"		;//Что тебе здесь нужно?! Уходи!
-	YesGoOutOfHere				= 	"SVM_13_YesGoOutOfHere"			;//Да, убирайся отсюда!
+	GetOutOfHere				=	"SVM_13_GetOutOfHere"			;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_13_WhyAreYouInHere"		;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?! РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_13_YesGoOutOfHere"			;//Р”Р°, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_13_WhatsThisSupposedToBe"	;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_13_YouDisturbedMySlumber"	;//(просыпается) Черт, в чем дело?
+	WhatsThisSupposedToBe		=	"SVM_13_WhatsThisSupposedToBe"	;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_13_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, РІ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_13_ITookYourGold"			;//Спасибо за золото, герой!
-	ShitNoGold					=	"SVM_13_ShitNoGold"				;//Ах ты, сосунок, у тебя даже золота с собой нет!
-	ITakeYourWeapon				=	"SVM_13_ITakeYourWeapon"		;//Я думаю, лучше забрать твое оружие.
+	ITookYourGold				=	"SVM_13_ITookYourGold"			;//РЎРїР°СЃРёР±Рѕ Р·Р° Р·РѕР»РѕС‚Рѕ, РіРµСЂРѕР№!
+	ShitNoGold					=	"SVM_13_ShitNoGold"				;//РђС… С‚С‹, СЃРѕСЃСѓРЅРѕРє, Сѓ С‚РµР±СЏ РґР°Р¶Рµ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№ РЅРµС‚!
+	ITakeYourWeapon				=	"SVM_13_ITakeYourWeapon"		;//РЇ РґСѓРјР°СЋ, Р»СѓС‡С€Рµ Р·Р°Р±СЂР°С‚СЊ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_13_WhatAreYouDoing"		;//Смотри! Еще раз, и ты пожалеешь об этом.
+	WhatAreYouDoing				=	"SVM_13_WhatAreYouDoing"		;//РЎРјРѕС‚СЂРё! Р•С‰Рµ СЂР°Р·, Рё С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_13_LookingForTroubleAgain"	;//Тебе все еще мало?
-	StopMagic					=	"SVM_13_StopMagic"				;//Прекрати это магическое дерьмо!
-	ISaidStopMagic				=	"SVM_13_ISaidStopMagic"			;//Хочешь получить? Прекрати немедленно!!!
-	WeaponDown					=	"SVM_13_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_13_ISaidWeaponDown"		;//Ты уберешь это чертово оружие?!
-	WiseMove					=	"SVM_13_WiseMove"				;//Умный мальчик!
+	LookingForTroubleAgain		=	"SVM_13_LookingForTroubleAgain"	;//РўРµР±Рµ РІСЃРµ РµС‰Рµ РјР°Р»Рѕ?
+	StopMagic					=	"SVM_13_StopMagic"				;//РџСЂРµРєСЂР°С‚Рё СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ РґРµСЂСЊРјРѕ!
+	ISaidStopMagic				=	"SVM_13_ISaidStopMagic"			;//РҐРѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ? РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!!!
+	WeaponDown					=	"SVM_13_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_13_ISaidWeaponDown"		;//РўС‹ СѓР±РµСЂРµС€СЊ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РѕСЂСѓР¶РёРµ?!
+	WiseMove					=	"SVM_13_WiseMove"				;//РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_13_NextTimeYoureInForIt"	;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_13_OhMyHead"				;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_13_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_13_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_13_TheresAFight"			;//(страстно) Ах, драка!
-	OhMyGodItsAFight			=	"SVM_13_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой, драка!
-	GoodVictory					=	"SVM_13_GoodVictory"			;//(дьявольский смех) Ты показал ему, кто здесь главный!
-	NotBad						= 	"SVM_13_NotBad"					;//(одобрительно) Неплохо...
-	OhMyGodHesDown				=	"SVM_13_OhMyGodHesDown"			;//(себе под нос) Бог мой! Какая жестокость...
-	CheerFriend01				=	"SVM_13_CheerFriend01"			;//Задай ему!
-	CheerFriend02				=	"SVM_13_CheerFriend02"			;//Прекратите, вы!
-	CheerFriend03				=	"SVM_13_CheerFriend03"			;//Покажи ему!
-	Ooh01						=	"SVM_13_Ooh01"					;//Держись!
-	Ooh02						=	"SVM_13_Ooh02"					;//Осторожно!
-	Ooh03						=	"SVM_13_Ooh03"					;//Ох! Какой удар!
+	TheresAFight				=	"SVM_13_TheresAFight"			;//(СЃС‚СЂР°СЃС‚РЅРѕ) РђС…, РґСЂР°РєР°!
+	OhMyGodItsAFight			=	"SVM_13_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№, РґСЂР°РєР°!
+	GoodVictory					=	"SVM_13_GoodVictory"			;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РўС‹ РїРѕРєР°Р·Р°Р» РµРјСѓ, РєС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№!
+	NotBad						= 	"SVM_13_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РќРµРїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_13_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р‘РѕРі РјРѕР№! РљР°РєР°СЏ Р¶РµСЃС‚РѕРєРѕСЃС‚СЊ...
+	CheerFriend01				=	"SVM_13_CheerFriend01"			;//Р—Р°РґР°Р№ РµРјСѓ!
+	CheerFriend02				=	"SVM_13_CheerFriend02"			;//РџСЂРµРєСЂР°С‚РёС‚Рµ, РІС‹!
+	CheerFriend03				=	"SVM_13_CheerFriend03"			;//РџРѕРєР°Р¶Рё РµРјСѓ!
+	Ooh01						=	"SVM_13_Ooh01"					;//Р”РµСЂР¶РёСЃСЊ!
+	Ooh02						=	"SVM_13_Ooh02"					;//РћСЃС‚РѕСЂРѕР¶РЅРѕ!
+	Ooh03						=	"SVM_13_Ooh03"					;//РћС…! РљР°РєРѕР№ СѓРґР°СЂ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_13_WhatWasThat"				;//(себе под нос, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_13_WhatWasThat"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_13_GetOutOfMyBed"			;//Убирайся с моей кровати!
-	Awake						= "SVM_13_Awake"					;//(зевает)
+	GetOutOfMyBed				= "SVM_13_GetOutOfMyBed"			;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_13_Awake"					;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_13_ABS_COMMANDER"			;//Говорят, ты ходил к командующему и все уладил.
-	ABS_MONASTERY				= "SVM_13_ABS_MONASTERY"			;//Говорят, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM					= "SVM_13_ABS_FARM"					;//Говорят, ты обратился к Ли и все уладил.
-	ABS_GOOD					= "SVM_13_ABS_GOOD"					;//Это хорошо.
+	ABS_COMMANDER				= "SVM_13_ABS_COMMANDER"			;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY				= "SVM_13_ABS_MONASTERY"			;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM					= "SVM_13_ABS_FARM"					;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD					= "SVM_13_ABS_GOOD"					;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_13_SHEEPKILLER_CRIME"		;//Он убивает наших овец!
-	ATTACK_CRIME				= "SVM_13_ATTACK_CRIME"				;//Оставь меня в покое, грязное животное!
-	THEFT_CRIME					= "SVM_13_THEFT_CRIME"				;//Оставь меня в покое, презренный воришка!
+	SHEEPKILLER_CRIME			= "SVM_13_SHEEPKILLER_CRIME"		;//РћРЅ СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	ATTACK_CRIME				= "SVM_13_ATTACK_CRIME"				;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РіСЂСЏР·РЅРѕРµ Р¶РёРІРѕС‚РЅРѕРµ!
+	THEFT_CRIME					= "SVM_13_THEFT_CRIME"				;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РїСЂРµР·СЂРµРЅРЅС‹Р№ РІРѕСЂРёС€РєР°!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_13_PAL_CITY_CRIME"			;//Ты позоришь наш орден! Подожди, лорд Хаген узнает об этом!
-	MIL_CITY_CRIME				= "SVM_13_MIL_CITY_CRIME"			;//Ты позоришь городскую стражу! Подожди, лорд Андрэ узнает об этом!
-	CITY_CRIME					= "SVM_13_CITY_CRIME"				;//Подожди, лорд Андрэ узнает об этом.
+	PAL_CITY_CRIME				= "SVM_13_PAL_CITY_CRIME"			;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РЅР°С€ РѕСЂРґРµРЅ! РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РҐР°РіРµРЅ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	MIL_CITY_CRIME				= "SVM_13_MIL_CITY_CRIME"			;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	CITY_CRIME					= "SVM_13_CITY_CRIME"				;//РџРѕРґРѕР¶РґРё, Р»РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј.
 	// -------------------------
-	MONA_CRIME					= "SVM_13_MONA_CRIME"				;//Подожди, отец Парлан узнает об этом!
-	FARM_CRIME					= "SVM_13_FARM_CRIME"				;//Подожди, Ли узнает об этом...
-	OC_CRIME					= "SVM_13_OC_CRIME"					;//Подожди, командующий Гаронд узнает об этом!
+	MONA_CRIME					= "SVM_13_MONA_CRIME"				;//РџРѕРґРѕР¶РґРё, РѕС‚РµС† РџР°СЂР»Р°РЅ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	FARM_CRIME					= "SVM_13_FARM_CRIME"				;//РџРѕРґРѕР¶РґРё, Р›Рё СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј...
+	OC_CRIME					= "SVM_13_OC_CRIME"					;//РџРѕРґРѕР¶РґРё, РєРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_13_TOUGHGUY_ATTACKLOST"		;//Хорошо, хорошо, ты лучший боец. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_13_TOUGHGUY_ATTACKWON"		;//Я думаю, что теперь ты прекрасно знаешь, кто из нас сильнее... Чего ты хочешь?
-	TOUGHGUY_PLAYERATTACK		= "SVM_13_TOUGHGUY_PLAYERATTACK"	;//Я думал, ты хочешь сразиться со мной. Ты передумал? Ты предпочитаешь БОЛТАТЬ, да? (смеется)
+	TOUGHGUY_ATTACKLOST			= "SVM_13_TOUGHGUY_ATTACKLOST"		;//РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, С‚С‹ Р»СѓС‡С€РёР№ Р±РѕРµС†. Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_13_TOUGHGUY_ATTACKWON"		;//РЇ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµРїРµСЂСЊ С‚С‹ РїСЂРµРєСЂР°СЃРЅРѕ Р·РЅР°РµС€СЊ, РєС‚Рѕ РёР· РЅР°СЃ СЃРёР»СЊРЅРµРµ... Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_PLAYERATTACK		= "SVM_13_TOUGHGUY_PLAYERATTACK"	;//РЇ РґСѓРјР°Р», С‚С‹ С…РѕС‡РµС€СЊ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№. РўС‹ РїРµСЂРµРґСѓРјР°Р»? РўС‹ РїСЂРµРґРїРѕС‡РёС‚Р°РµС€СЊ Р‘РћР›РўРђРўР¬, РґР°? (СЃРјРµРµС‚СЃСЏ)
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_13_GOLD_1000"				;//1000 золотых монет.
-	GOLD_950					= "SVM_13_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_13_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_13_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_13_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_13_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_13_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_13_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_13_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_13_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_13_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_13_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_13_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_13_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_13_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_13_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_13_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_13_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_13_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_13_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_13_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_13_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_13_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_13_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_13_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_13_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_13_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_13_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_13_GOLD_1000"				;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_13_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_13_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_13_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_13_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_13_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_13_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_13_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_13_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_13_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_13_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_13_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_13_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_13_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_13_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_13_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_13_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_13_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_13_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_13_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_13_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_13_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_13_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_13_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_13_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_13_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_13_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_13_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_13_Smalltalk01"				;//...какая беспечность...
-	Smalltalk02					= "SVM_13_Smalltalk02"				;//...никто ничего не хочет знать...
-	Smalltalk03					= "SVM_13_Smalltalk03"				;//...он сам так решил...
-	Smalltalk04					= "SVM_13_Smalltalk04"				;//...понятия не имею, скажи мне...
-	Smalltalk05					= "SVM_13_Smalltalk05"				;//...я лучше не буду вмешиваться...
-	Smalltalk06					= "SVM_13_Smalltalk06"				;//...у меня нет времени на это...
-	Smalltalk07					= "SVM_13_Smalltalk07"				;//...я бы так не смог...
-	Smalltalk08					= "SVM_13_Smalltalk08"				;//...лучше не говори, не надо...
-	Smalltalk09					= "SVM_13_Smalltalk09"				;//...пойди туда, сделай это...
-	Smalltalk10					= "SVM_13_Smalltalk10"				;//...этого я тебе сказать не могу...
-	Smalltalk11					= "SVM_13_Smalltalk11"				;//...на это не стоит надеяться...
-	Smalltalk12					= "SVM_13_Smalltalk12"				;//...я тоже так считаю...
-	Smalltalk13					= "SVM_13_Smalltalk13"				;//...и это еще не все, поверь мне...
-	Smalltalk14					= "SVM_13_Smalltalk14"				;//...опять то же самое...
-	Smalltalk15					= "SVM_13_Smalltalk15"				;//...скажи мне, что это не так...
-	Smalltalk16					= "SVM_13_Smalltalk16"				;//...рано или поздно это должно было случиться...
-	Smalltalk17					= "SVM_13_Smalltalk17"				;//...ему стоило сто раз подумать...
-	Smalltalk18					= "SVM_13_Smalltalk18"				;//...ничего не изменится...
-	Smalltalk19					= "SVM_13_Smalltalk19"				;//...это не секрет...
-	Smalltalk20					= "SVM_13_Smalltalk20"				;//...тоже мне, большое дело...
-	Smalltalk21					= "SVM_13_Smalltalk21"				;//...он думает, это так просто...
-	Smalltalk22					= "SVM_13_Smalltalk22"				;//...никому это не интересно ...
-	Smalltalk23					= "SVM_13_Smalltalk23"				;//...и это правда...
-	Smalltalk24					= "SVM_13_Smalltalk24"				;//...ты просто послушай...
+	Smalltalk01					= "SVM_13_Smalltalk01"				;//...РєР°РєР°СЏ Р±РµСЃРїРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk02					= "SVM_13_Smalltalk02"				;//...РЅРёРєС‚Рѕ РЅРёС‡РµРіРѕ РЅРµ С…РѕС‡РµС‚ Р·РЅР°С‚СЊ...
+	Smalltalk03					= "SVM_13_Smalltalk03"				;//...РѕРЅ СЃР°Рј С‚Р°Рє СЂРµС€РёР»...
+	Smalltalk04					= "SVM_13_Smalltalk04"				;//...РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, СЃРєР°Р¶Рё РјРЅРµ...
+	Smalltalk05					= "SVM_13_Smalltalk05"				;//...СЏ Р»СѓС‡С€Рµ РЅРµ Р±СѓРґСѓ РІРјРµС€РёРІР°С‚СЊСЃСЏ...
+	Smalltalk06					= "SVM_13_Smalltalk06"				;//...Сѓ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ...
+	Smalltalk07					= "SVM_13_Smalltalk07"				;//...СЏ Р±С‹ С‚Р°Рє РЅРµ СЃРјРѕРі...
+	Smalltalk08					= "SVM_13_Smalltalk08"				;//...Р»СѓС‡С€Рµ РЅРµ РіРѕРІРѕСЂРё, РЅРµ РЅР°РґРѕ...
+	Smalltalk09					= "SVM_13_Smalltalk09"				;//...РїРѕР№РґРё С‚СѓРґР°, СЃРґРµР»Р°Р№ СЌС‚Рѕ...
+	Smalltalk10					= "SVM_13_Smalltalk10"				;//...СЌС‚РѕРіРѕ СЏ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ РЅРµ РјРѕРіСѓ...
+	Smalltalk11					= "SVM_13_Smalltalk11"				;//...РЅР° СЌС‚Рѕ РЅРµ СЃС‚РѕРёС‚ РЅР°РґРµСЏС‚СЊСЃСЏ...
+	Smalltalk12					= "SVM_13_Smalltalk12"				;//...СЏ С‚РѕР¶Рµ С‚Р°Рє СЃС‡РёС‚Р°СЋ...
+	Smalltalk13					= "SVM_13_Smalltalk13"				;//...Рё СЌС‚Рѕ РµС‰Рµ РЅРµ РІСЃРµ, РїРѕРІРµСЂСЊ РјРЅРµ...
+	Smalltalk14					= "SVM_13_Smalltalk14"				;//...РѕРїСЏС‚СЊ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ...
+	Smalltalk15					= "SVM_13_Smalltalk15"				;//...СЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ С‚Р°Рє...
+	Smalltalk16					= "SVM_13_Smalltalk16"				;//...СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ СЌС‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹Р»Рѕ СЃР»СѓС‡РёС‚СЊСЃСЏ...
+	Smalltalk17					= "SVM_13_Smalltalk17"				;//...РµРјСѓ СЃС‚РѕРёР»Рѕ СЃС‚Рѕ СЂР°Р· РїРѕРґСѓРјР°С‚СЊ...
+	Smalltalk18					= "SVM_13_Smalltalk18"				;//...РЅРёС‡РµРіРѕ РЅРµ РёР·РјРµРЅРёС‚СЃСЏ...
+	Smalltalk19					= "SVM_13_Smalltalk19"				;//...СЌС‚Рѕ РЅРµ СЃРµРєСЂРµС‚...
+	Smalltalk20					= "SVM_13_Smalltalk20"				;//...С‚РѕР¶Рµ РјРЅРµ, Р±РѕР»СЊС€РѕРµ РґРµР»Рѕ...
+	Smalltalk21					= "SVM_13_Smalltalk21"				;//...РѕРЅ РґСѓРјР°РµС‚, СЌС‚Рѕ С‚Р°Рє РїСЂРѕСЃС‚Рѕ...
+	Smalltalk22					= "SVM_13_Smalltalk22"				;//...РЅРёРєРѕРјСѓ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ ...
+	Smalltalk23					= "SVM_13_Smalltalk23"				;//...Рё СЌС‚Рѕ РїСЂР°РІРґР°...
+	Smalltalk24					= "SVM_13_Smalltalk24"				;//...С‚С‹ РїСЂРѕСЃС‚Рѕ РїРѕСЃР»СѓС€Р°Р№...
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                      
-	Smalltalk25					= "SVM_13_Smalltalk25"				;//...если бы он был с нами, все было бы по-другому...
-	Smalltalk26					= "SVM_13_Smalltalk26"				;//...ему нужно больше тренироваться...
-	Smalltalk27					= "SVM_13_Smalltalk27"				;//...да что он об этом знает?..
+	Smalltalk25					= "SVM_13_Smalltalk25"				;//...РµСЃР»Рё Р±С‹ РѕРЅ Р±С‹Р» СЃ РЅР°РјРё, РІСЃРµ Р±С‹Р»Рѕ Р±С‹ РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk26					= "SVM_13_Smalltalk26"				;//...РµРјСѓ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ...
+	Smalltalk27					= "SVM_13_Smalltalk27"				;//...РґР° С‡С‚Рѕ РѕРЅ РѕР± СЌС‚РѕРј Р·РЅР°РµС‚?..
 	//ProInnos (NOV/KDF/PAL)                                                                                                                      
-	Smalltalk28					= "SVM_13_Smalltalk28"				;//...Иннос все видит...
-	Smalltalk29					= "SVM_13_Smalltalk29"				;//...путь добродетели труден и тернист...
-	Smalltalk30					= "SVM_13_Smalltalk30"				;//...только Иннос знает, что правильно, а что нет...
+	Smalltalk28					= "SVM_13_Smalltalk28"				;//...РРЅРЅРѕСЃ РІСЃРµ РІРёРґРёС‚...
+	Smalltalk29					= "SVM_13_Smalltalk29"				;//...РїСѓС‚СЊ РґРѕР±СЂРѕРґРµС‚РµР»Рё С‚СЂСѓРґРµРЅ Рё С‚РµСЂРЅРёСЃС‚...
+	Smalltalk30					= "SVM_13_Smalltalk30"				;//...С‚РѕР»СЊРєРѕ РРЅРЅРѕСЃ Р·РЅР°РµС‚, С‡С‚Рѕ РїСЂР°РІРёР»СЊРЅРѕ, Р° С‡С‚Рѕ РЅРµС‚...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_13_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_13_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_13_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_13_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_13_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_13_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_13_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_13_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_13_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_13_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_13_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_13_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_13_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_13_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_13_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_13_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_13_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_13_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_13_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_13_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_13_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_13_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_13_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_13_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_13_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_13_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_13_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_13_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_13_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_13_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_13_TEMPEL_2_GALGEN"			;//Выйдя из храма, и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_13_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_13_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_13_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_13_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_13_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_13_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_13_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_13_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_13_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_13_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_13_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_13_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_13_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_13_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_13_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_13_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР°, Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_13_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_13_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_13_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_13_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_13_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_13_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_13_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_13_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_13_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_13_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_13_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_13_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_13_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_13_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_13_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_13_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_13_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_13_Addon_WrongArmor";			//Что на тебе надето? Это тебе совсем не подходит. Оставь меня в покое.
-	ADDON_WRONGARMOR_SLD		= "SVM_13_ADDON_WRONGARMOR_SLD";		//Ты не носишь свои доспехи... пойди и надень их.
-	ADDON_WRONGARMOR_MIL		= "SVM_13_ADDON_WRONGARMOR_MIL";		//Ты должен гордиться, что можешь носить доспехи королевской гвардии, а ты бегаешь в этих лохмотьях. Иди же!
-	ADDON_WRONGARMOR_KDF		= "SVM_13_ADDON_WRONGARMOR_KDF";		//Почему ты не носишь одежду, соответствующую нашему ордену? Пойди и подумай об этом.
-	ADDON_NOARMOR_BDT			= "SVM_13_ADDON_ADDON_NOARMOR_BDT";		//Да у тебя даже нет доспехов! Вали отсюда!
+	ADDON_WRONGARMOR			= "SVM_13_Addon_WrongArmor";			//Р§С‚Рѕ РЅР° С‚РµР±Рµ РЅР°РґРµС‚Рѕ? Р­С‚Рѕ С‚РµР±Рµ СЃРѕРІСЃРµРј РЅРµ РїРѕРґС…РѕРґРёС‚. РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
+	ADDON_WRONGARMOR_SLD		= "SVM_13_ADDON_WRONGARMOR_SLD";		//РўС‹ РЅРµ РЅРѕСЃРёС€СЊ СЃРІРѕРё РґРѕСЃРїРµС…Рё... РїРѕР№РґРё Рё РЅР°РґРµРЅСЊ РёС….
+	ADDON_WRONGARMOR_MIL		= "SVM_13_ADDON_WRONGARMOR_MIL";		//РўС‹ РґРѕР»Р¶РµРЅ РіРѕСЂРґРёС‚СЊСЃСЏ, С‡С‚Рѕ РјРѕР¶РµС€СЊ РЅРѕСЃРёС‚СЊ РґРѕСЃРїРµС…Рё РєРѕСЂРѕР»РµРІСЃРєРѕР№ РіРІР°СЂРґРёРё, Р° С‚С‹ Р±РµРіР°РµС€СЊ РІ СЌС‚РёС… Р»РѕС…РјРѕС‚СЊСЏС…. РРґРё Р¶Рµ!
+	ADDON_WRONGARMOR_KDF		= "SVM_13_ADDON_WRONGARMOR_KDF";		//РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РЅРѕСЃРёС€СЊ РѕРґРµР¶РґСѓ, СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰СѓСЋ РЅР°С€РµРјСѓ РѕСЂРґРµРЅСѓ? РџРѕР№РґРё Рё РїРѕРґСѓРјР°Р№ РѕР± СЌС‚РѕРј.
+	ADDON_NOARMOR_BDT			= "SVM_13_ADDON_ADDON_NOARMOR_BDT";		//Р”Р° Сѓ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ РґРѕСЃРїРµС…РѕРІ! Р’Р°Р»Рё РѕС‚СЃСЋРґР°!
 
-	ADDON_DIEBANDIT				= "SVM_13_ADDON_DIEBANDIT";				//Ты, мерзкий разбойник!
-	ADDON_DIRTYPIRATE			= "SVM_13_ADDON_DIRTYPIRATE";			//Ты, презренный пират!
+	ADDON_DIEBANDIT				= "SVM_13_ADDON_DIEBANDIT";				//РўС‹, РјРµСЂР·РєРёР№ СЂР°Р·Р±РѕР№РЅРёРє!
+	ADDON_DIRTYPIRATE			= "SVM_13_ADDON_DIRTYPIRATE";			//РўС‹, РїСЂРµР·СЂРµРЅРЅС‹Р№ РїРёСЂР°С‚!
 };
 
 
 instance SVM_14 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_14_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_14_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_14_Weather"						;//Какая мерзкая погода!
+	MILGreetings				= 	"SVM_14_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_14_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_14_Weather"						;//РљР°РєР°СЏ РјРµСЂР·РєР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_14_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_14_DieEnemy"					;//Сейчас ты получишь!
-	DieMonster					=	"SVM_14_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_14_DirtyThief"					;//Грязный воришка! Ну, подожди!
-	HandsOff					=	"SVM_14_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_14_SheepKiller"					;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_14_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_14_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_14_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_14_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_14_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_14_ThenIBeatYouOutOfHere"		;//Сейчас я вышвырну тебя отсюда!
-	WhatDidYouDoInThere			=	"SVM_14_WhatDidYouDoInThere"			;//Что тебе здесь надо, а?!
-	WillYouStopFighting			=	"SVM_14_WillYouStopFighting"			;//Ты прекратишь?!
+	IGetYouStill				= 	"SVM_14_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_14_DieEnemy"					;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	DieMonster					=	"SVM_14_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_14_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂРёС€РєР°! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_14_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_14_SheepKiller"					;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_14_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_14_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_14_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_14_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_14_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_14_ThenIBeatYouOutOfHere"		;//РЎРµР№С‡Р°СЃ СЏ РІС‹С€РІС‹СЂРЅСѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°!
+	WhatDidYouDoInThere			=	"SVM_14_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅР°РґРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_14_WillYouStopFighting"			;//РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_14_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_14_EnemyKilled"					;//Получил, подонок?!
-	MonsterKilled				=	"SVM_14_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_14_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_14_rumfummlerDown"				;//В будущем, держи свои руки подальше от чужих вещей!
-	SheepAttackerDown			=	"SVM_14_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_14_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_14_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_14_NeverHitMeAgain"				;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_14_YouBetterShouldHaveListened"	;//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_14_GetUpAndBeGone"				;//А теперь, убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_14_NeverEnterRoomAgain"			;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_14_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_14_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_14_EnemyKilled"					;//РџРѕР»СѓС‡РёР», РїРѕРґРѕРЅРѕРє?!
+	MonsterKilled				=	"SVM_14_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_14_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_14_rumfummlerDown"				;//Р’ Р±СѓРґСѓС‰РµРј, РґРµСЂР¶Рё СЃРІРѕРё СЂСѓРєРё РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‡СѓР¶РёС… РІРµС‰РµР№!
+	SheepAttackerDown			=	"SVM_14_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_14_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_14_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_14_NeverHitMeAgain"				;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_14_YouBetterShouldHaveListened"	;//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_14_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_14_NeverEnterRoomAgain"			;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_14_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_14_SpareMe"						;//Уходи с миром!
-	RunAway						= 	"SVM_14_RunAway"						;//Черт, я ухожу отсюда!
+	SpareMe						=	"SVM_14_SpareMe"						;//РЈС…РѕРґРё СЃ РјРёСЂРѕРј!
+	RunAway						= 	"SVM_14_RunAway"						;//Р§РµСЂС‚, СЏ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_14_Alarm"						;//ТРЕВОГА!
-	Guards						=	"SVM_14_Guards"						;//СТРАЖА!
-	Help						=	"SVM_14_Help"						;//Помогите!
+	Alarm						=	"SVM_14_Alarm"						;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_14_Guards"						;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_14_Help"						;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_14_GoodMonsterKill"				;//Отлично - одной мерзкой тварью меньше!
-	GoodKill					= 	"SVM_14_GoodKill"					;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_14_GoodMonsterKill"				;//РћС‚Р»РёС‡РЅРѕ - РѕРґРЅРѕР№ РјРµСЂР·РєРѕР№ С‚РІР°СЂСЊСЋ РјРµРЅСЊС€Рµ!
+	GoodKill					= 	"SVM_14_GoodKill"					;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_14_NOTNOW"						;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_14_NOTNOW"						;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_14_RunCoward"					;//Прекрати немедленно, подонок!
+	RunCoward					=	"SVM_14_RunCoward"					;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ, РїРѕРґРѕРЅРѕРє!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_14_GetOutOfHere"				;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_14_WhyAreYouInHere"				;//Что тебе здесь нужно!? Уходи!
-	YesGoOutOfHere				= 	"SVM_14_YesGoOutOfHere"				;//Да, проваливай отсюда!
+	GetOutOfHere				=	"SVM_14_GetOutOfHere"				;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_14_WhyAreYouInHere"				;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ!? РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_14_YesGoOutOfHere"				;//Р”Р°, РїСЂРѕРІР°Р»РёРІР°Р№ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_14_WhatsThisSupposedToBe"		;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_14_YouDisturbedMySlumber"		;//(просыпается) Черт, в чем дело?
+	WhatsThisSupposedToBe		=	"SVM_14_WhatsThisSupposedToBe"		;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_14_YouDisturbedMySlumber"		;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р§РµСЂС‚, РІ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_14_ITookYourGold"				;//Золото! Хм, золото никогда не помешает...
-	ShitNoGold					=	"SVM_14_ShitNoGold"					;//Да у тебя даже нет золота с собой?
-	ITakeYourWeapon				=	"SVM_14_ITakeYourWeapon"				;//Я, пожалуй, заберу твое оружие, так будет безопаснее для тебя же.
+	ITookYourGold				=	"SVM_14_ITookYourGold"				;//Р—РѕР»РѕС‚Рѕ! РҐРј, Р·РѕР»РѕС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РїРѕРјРµС€Р°РµС‚...
+	ShitNoGold					=	"SVM_14_ShitNoGold"					;//Р”Р° Сѓ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№?
+	ITakeYourWeapon				=	"SVM_14_ITakeYourWeapon"				;//РЇ, РїРѕР¶Р°Р»СѓР№, Р·Р°Р±РµСЂСѓ С‚РІРѕРµ РѕСЂСѓР¶РёРµ, С‚Р°Рє Р±СѓРґРµС‚ Р±РµР·РѕРїР°СЃРЅРµРµ РґР»СЏ С‚РµР±СЏ Р¶Рµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_14_WhatAreYouDoing"				;//Эй! Осторожно!
+	WhatAreYouDoing				=	"SVM_14_WhatAreYouDoing"				;//Р­Р№! РћСЃС‚РѕСЂРѕР¶РЅРѕ!
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_14_LookingForTroubleAgain"		;//(агрессивно) Ты мало получил?
-	StopMagic					=	"SVM_14_StopMagic"					;//Держись подальше от меня с этой магией!
-	ISaidStopMagic				=	"SVM_14_ISaidStopMagic"				;//Убери эту магию! Ты что, оглох?!
-	WeaponDown					=	"SVM_14_WeaponDown"					;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_14_ISaidWeaponDown"				;//Ты слышишь меня? Я сказал: Убери оружие!
-	WiseMove					=	"SVM_14_WiseMove"					;//Видишь, это было не так уж сложно.
+	LookingForTroubleAgain		=	"SVM_14_LookingForTroubleAgain"		;//(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РўС‹ РјР°Р»Рѕ РїРѕР»СѓС‡РёР»?
+	StopMagic					=	"SVM_14_StopMagic"					;//Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РјРµРЅСЏ СЃ СЌС‚РѕР№ РјР°РіРёРµР№!
+	ISaidStopMagic				=	"SVM_14_ISaidStopMagic"				;//РЈР±РµСЂРё СЌС‚Сѓ РјР°РіРёСЋ! РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…?!
+	WeaponDown					=	"SVM_14_WeaponDown"					;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_14_ISaidWeaponDown"				;//РўС‹ СЃР»С‹С€РёС€СЊ РјРµРЅСЏ? РЇ СЃРєР°Р·Р°Р»: РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	WiseMove					=	"SVM_14_WiseMove"					;//Р’РёРґРёС€СЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ.
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_14_NextTimeYoureInForIt"		;//(себе под нос) Мы еще поговорим об этом...
-	OhMyHead					=	"SVM_14_OhMyHead"					;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_14_NextTimeYoureInForIt"		;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕРіРѕРІРѕСЂРёРј РѕР± СЌС‚РѕРј...
+	OhMyHead					=	"SVM_14_OhMyHead"					;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_14_TheresAFight"				;//(страстно) Сейчас повеселимся!
-	OhMyGodItsAFight			=	"SVM_14_OhMyGodItsAFight"			;//(потрясенно) Они лупят друг друга так, что даже страшно...
-	GoodVictory					=	"SVM_14_GoodVictory"					;//(дьявольский смех) Он заслужил это!
-	NotBad						= 	"SVM_14_NotBad"						;//(одобрительно) Совсем не плохо...
-	OhMyGodHesDown				=	"SVM_14_OhMyGodHesDown"				;//(себе под нос) Какой он жестокий...
-	CheerFriend01				=	"SVM_14_CheerFriend01"				;//Да, как раз то, что нужно!
-	CheerFriend02				=	"SVM_14_CheerFriend02"				;//Чего ты ждешь?
-	CheerFriend03				=	"SVM_14_CheerFriend03"				;//Вот так!
-	Ooh01						=	"SVM_14_Ooh01"						;//Не нарушай закон!
-	Ooh02						=	"SVM_14_Ooh02"						;//Покажи ему, кто тут главный!
-	Ooh03						=	"SVM_14_Ooh03"						;//Черт побери!
+	TheresAFight				=	"SVM_14_TheresAFight"				;//(СЃС‚СЂР°СЃС‚РЅРѕ) РЎРµР№С‡Р°СЃ РїРѕРІРµСЃРµР»РёРјСЃСЏ!
+	OhMyGodItsAFight			=	"SVM_14_OhMyGodItsAFight"			;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћРЅРё Р»СѓРїСЏС‚ РґСЂСѓРі РґСЂСѓРіР° С‚Р°Рє, С‡С‚Рѕ РґР°Р¶Рµ СЃС‚СЂР°С€РЅРѕ...
+	GoodVictory					=	"SVM_14_GoodVictory"					;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РћРЅ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ!
+	NotBad						= 	"SVM_14_NotBad"						;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РЎРѕРІСЃРµРј РЅРµ РїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_14_OhMyGodHesDown"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РљР°РєРѕР№ РѕРЅ Р¶РµСЃС‚РѕРєРёР№...
+	CheerFriend01				=	"SVM_14_CheerFriend01"				;//Р”Р°, РєР°Рє СЂР°Р· С‚Рѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ!
+	CheerFriend02				=	"SVM_14_CheerFriend02"				;//Р§РµРіРѕ С‚С‹ Р¶РґРµС€СЊ?
+	CheerFriend03				=	"SVM_14_CheerFriend03"				;//Р’РѕС‚ С‚Р°Рє!
+	Ooh01						=	"SVM_14_Ooh01"						;//РќРµ РЅР°СЂСѓС€Р°Р№ Р·Р°РєРѕРЅ!
+	Ooh02						=	"SVM_14_Ooh02"						;//РџРѕРєР°Р¶Рё РµРјСѓ, РєС‚Рѕ С‚СѓС‚ РіР»Р°РІРЅС‹Р№!
+	Ooh03						=	"SVM_14_Ooh03"						;//Р§РµСЂС‚ РїРѕР±РµСЂРё!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_14_WhatWasThat"					;//(себе под нос, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_14_WhatWasThat"					;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_14_GetOutOfMyBed"					;//Убирайся с моей кровати!
-	Awake						= "SVM_14_Awake"							;//(зевает)
+	GetOutOfMyBed				= "SVM_14_GetOutOfMyBed"					;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_14_Awake"							;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER				= "SVM_14_ABS_COMMANDER"					;//Я слышал, ты ходил к командующему и все уладил.
-	ABS_MONASTERY				= "SVM_14_ABS_MONASTERY"					;//Я слышал, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM					= "SVM_14_ABS_FARM"						;//Говорят, ты обратился к Ли и все уладил.
-	ABS_GOOD					= "SVM_14_ABS_GOOD"						;//Это хорошо.
+	ABS_COMMANDER				= "SVM_14_ABS_COMMANDER"					;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY				= "SVM_14_ABS_MONASTERY"					;//РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM					= "SVM_14_ABS_FARM"						;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD					= "SVM_14_ABS_GOOD"						;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
 	// -------------------------
-	SHEEPKILLER_CRIME			= "SVM_14_SHEEPKILLER_CRIME"				;//Он убивает наших овец!
-	ATTACK_CRIME				= "SVM_14_ATTACK_CRIME"					;//Я не разговариваю с грязными ворами!
-	THEFT_CRIME					= "SVM_14_THEFT_CRIME"					;//Прочь с глаз моих, грязный вор!
+	SHEEPKILLER_CRIME			= "SVM_14_SHEEPKILLER_CRIME"				;//РћРЅ СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	ATTACK_CRIME				= "SVM_14_ATTACK_CRIME"					;//РЇ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ СЃ РіСЂСЏР·РЅС‹РјРё РІРѕСЂР°РјРё!
+	THEFT_CRIME					= "SVM_14_THEFT_CRIME"					;//РџСЂРѕС‡СЊ СЃ РіР»Р°Р· РјРѕРёС…, РіСЂСЏР·РЅС‹Р№ РІРѕСЂ!
 	// -------------------------
-	PAL_CITY_CRIME				= "SVM_14_PAL_CITY_CRIME"				;//Ты позоришь наш орден! Лорд Хаген будет в ярости!
-	MIL_CITY_CRIME				= "SVM_14_MIL_CITY_CRIME"				;//Ты позоришь городскую стражу! Лорд Андрэ научит тебя хорошим манерам!
-	CITY_CRIME					= "SVM_14_CITY_CRIME"					;//Лорд Андрэ узнает о том, что ты сделал!
+	PAL_CITY_CRIME				= "SVM_14_PAL_CITY_CRIME"				;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РЅР°С€ РѕСЂРґРµРЅ! Р›РѕСЂРґ РҐР°РіРµРЅ Р±СѓРґРµС‚ РІ СЏСЂРѕСЃС‚Рё!
+	MIL_CITY_CRIME				= "SVM_14_MIL_CITY_CRIME"				;//РўС‹ РїРѕР·РѕСЂРёС€СЊ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! Р›РѕСЂРґ РђРЅРґСЂСЌ РЅР°СѓС‡РёС‚ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!
+	CITY_CRIME					= "SVM_14_CITY_CRIME"					;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р»!
 	// -------------------------
-	MONA_CRIME					= "SVM_14_MONA_CRIME"					;//Отец Парлан будет недоволен, когда узнает об этом!
-	FARM_CRIME					= "SVM_14_FARM_CRIME"					;//Ли задаст тебе трепку! Ты плохо кончишь!
-	OC_CRIME					= "SVM_14_OC_CRIME"						;//Командующий Гаронд потребует от тебя объяснений!
+	MONA_CRIME					= "SVM_14_MONA_CRIME"					;//РћС‚РµС† РџР°СЂР»Р°РЅ Р±СѓРґРµС‚ РЅРµРґРѕРІРѕР»РµРЅ, РєРѕРіРґР° СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј!
+	FARM_CRIME					= "SVM_14_FARM_CRIME"					;//Р›Рё Р·Р°РґР°СЃС‚ С‚РµР±Рµ С‚СЂРµРїРєСѓ! РўС‹ РїР»РѕС…Рѕ РєРѕРЅС‡РёС€СЊ!
+	OC_CRIME					= "SVM_14_OC_CRIME"						;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РїРѕС‚СЂРµР±СѓРµС‚ РѕС‚ С‚РµР±СЏ РѕР±СЉСЏСЃРЅРµРЅРёР№!
 	// ----------------------------------------------------------------------------------------------------------------------
-	TOUGHGUY_ATTACKLOST			= "SVM_14_TOUGHGUY_ATTACKLOST"			;//Хорошо-хорошо, ты победил. Чего ты хочешь?
-	TOUGHGUY_ATTACKWON			= "SVM_14_TOUGHGUY_ATTACKWON"			;//Тебе еще раз показать, кто тут главный?
-	TOUGHGUY_PLAYERATTACK		= "SVM_14_TOUGHGUY_PLAYERATTACK"			;//Хочешь еще раз сразиться со мной, да?
+	TOUGHGUY_ATTACKLOST			= "SVM_14_TOUGHGUY_ATTACKLOST"			;//РҐРѕСЂРѕС€Рѕ-С…РѕСЂРѕС€Рѕ, С‚С‹ РїРѕР±РµРґРёР». Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	TOUGHGUY_ATTACKWON			= "SVM_14_TOUGHGUY_ATTACKWON"			;//РўРµР±Рµ РµС‰Рµ СЂР°Р· РїРѕРєР°Р·Р°С‚СЊ, РєС‚Рѕ С‚СѓС‚ РіР»Р°РІРЅС‹Р№?
+	TOUGHGUY_PLAYERATTACK		= "SVM_14_TOUGHGUY_PLAYERATTACK"			;//РҐРѕС‡РµС€СЊ РµС‰Рµ СЂР°Р· СЃСЂР°Р·РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№, РґР°?
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_14_GOLD_1000"						;//1000 золотых монет.
-	GOLD_950					= "SVM_14_GOLD_950"						;//950 золотых монет.
-	GOLD_900					= "SVM_14_GOLD_900"						;//900 золотых монет.
-	GOLD_850					= "SVM_14_GOLD_850"						;//850 золотых монет.
-	GOLD_800					= "SVM_14_GOLD_800"						;//800 золотых монет.
-	GOLD_750					= "SVM_14_GOLD_750"						;//750 золотых монет.
-	GOLD_700					= "SVM_14_GOLD_700"						;//700 золотых монет.
-	GOLD_650					= "SVM_14_GOLD_650"						;//650 золотых монет.
-	GOLD_600					= "SVM_14_GOLD_600"						;//600 золотых монет.
-	GOLD_550					= "SVM_14_GOLD_550"						;//550 золотых монет.
-	GOLD_500					= "SVM_14_GOLD_500"						;//500 золотых монет.
-	GOLD_450					= "SVM_14_GOLD_450"						;//450 золотых монет.
-	GOLD_400					= "SVM_14_GOLD_400"						;//400 золотых монет.
-	GOLD_350					= "SVM_14_GOLD_350"						;//350 золотых монет.
-	GOLD_300					= "SVM_14_GOLD_300"						;//300 золотых монет.
-	GOLD_250					= "SVM_14_GOLD_250"						;//250 золотых монет.
-	GOLD_200					= "SVM_14_GOLD_200"						;//200 золотых монет.
-	GOLD_150					= "SVM_14_GOLD_150"						;//150 золотых монет.
-	GOLD_100					= "SVM_14_GOLD_100"						;//100 золотых монет.
-	GOLD_90						= "SVM_14_GOLD_90"						;//90 золотых монет.
-	GOLD_80						= "SVM_14_GOLD_80"						;//80 золотых монет.
-	GOLD_70						= "SVM_14_GOLD_70"						;//70 золотых монет.
-	GOLD_60						= "SVM_14_GOLD_60"						;//60 золотых монет.
-	GOLD_50						= "SVM_14_GOLD_50"						;//50 золотых монет.
-	GOLD_40						= "SVM_14_GOLD_40"						;//40 золотых монет.
-	GOLD_30						= "SVM_14_GOLD_30"						;//30 золотых монет.
-	GOLD_20						= "SVM_14_GOLD_20"						;//20 золотых монет.
-	GOLD_10						= "SVM_14_GOLD_10"						;//10 золотых монет.
+	GOLD_1000					= "SVM_14_GOLD_1000"						;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_14_GOLD_950"						;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_14_GOLD_900"						;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_14_GOLD_850"						;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_14_GOLD_800"						;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_14_GOLD_750"						;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_14_GOLD_700"						;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_14_GOLD_650"						;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_14_GOLD_600"						;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_14_GOLD_550"						;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_14_GOLD_500"						;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_14_GOLD_450"						;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_14_GOLD_400"						;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_14_GOLD_350"						;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_14_GOLD_300"						;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_14_GOLD_250"						;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_14_GOLD_200"						;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_14_GOLD_150"						;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_14_GOLD_100"						;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_14_GOLD_90"						;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_14_GOLD_80"						;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_14_GOLD_70"						;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_14_GOLD_60"						;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_14_GOLD_50"						;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_14_GOLD_40"						;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_14_GOLD_30"						;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_14_GOLD_20"						;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_14_GOLD_10"						;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_14_Smalltalk01"					;//...я не верю в это...
-	Smalltalk02					= "SVM_14_Smalltalk02"					;//...я не был бы так уверен...
-	Smalltalk03					= "SVM_14_Smalltalk03"					;//...но он все время знал об этом...
-	Smalltalk04					= "SVM_14_Smalltalk04"					;//...я теперь даже не знаю, кому верить...
-	Smalltalk05					= "SVM_14_Smalltalk05"					;//...я не знаю, где его так отделали...
-	Smalltalk06					= "SVM_14_Smalltalk06"					;//...у меня и так хватает проблем...
-	Smalltalk07					= "SVM_14_Smalltalk07"					;//...я что-то слышал об этом...
-	Smalltalk08					= "SVM_14_Smalltalk08"					;//...я не хочу иметь к этому никакого отношения...
-	Smalltalk09					= "SVM_14_Smalltalk09"					;//...не нужно верить всему, что говорят...
-	Smalltalk10					= "SVM_14_Smalltalk10"					;//...он узнал это не от меня...
-	Smalltalk11					= "SVM_14_Smalltalk11"					;//...я уже подумывал об этом...
-	Smalltalk12					= "SVM_14_Smalltalk12"					;//...никому не интересно мое мнение...
-	Smalltalk13					= "SVM_14_Smalltalk13"					;//...он не заслужил этого...
-	Smalltalk14					= "SVM_14_Smalltalk14"					;//...не говори, что ты не знал этого...
-	Smalltalk15					= "SVM_14_Smalltalk15"					;//...это было очевидно...
-	Smalltalk16					= "SVM_14_Smalltalk16"					;//...где ты это услышал?..
-	Smalltalk17					= "SVM_14_Smalltalk17"					;//...так может продолжаться вечность...
-	Smalltalk18					= "SVM_14_Smalltalk18"					;//...у меня собственное мнение на этот счет...
-	Smalltalk19					= "SVM_14_Smalltalk19"					;//...это было так, как ты сказал...
-	Smalltalk20					= "SVM_14_Smalltalk20"					;//...я не верю, что это что-то изменит...
-	Smalltalk21					= "SVM_14_Smalltalk21"					;//...я первый раз слышу об этом...
-	Smalltalk22					= "SVM_14_Smalltalk22"					;//...нам остается только ждать...
-	Smalltalk23					= "SVM_14_Smalltalk23"					;//...я знал, что это будет проблемой...
-	Smalltalk24					= "SVM_14_Smalltalk24"					;//...почему они не слушают меня?..
+	Smalltalk01					= "SVM_14_Smalltalk01"					;//...СЏ РЅРµ РІРµСЂСЋ РІ СЌС‚Рѕ...
+	Smalltalk02					= "SVM_14_Smalltalk02"					;//...СЏ РЅРµ Р±С‹Р» Р±С‹ С‚Р°Рє СѓРІРµСЂРµРЅ...
+	Smalltalk03					= "SVM_14_Smalltalk03"					;//...РЅРѕ РѕРЅ РІСЃРµ РІСЂРµРјСЏ Р·РЅР°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk04					= "SVM_14_Smalltalk04"					;//...СЏ С‚РµРїРµСЂСЊ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ, РєРѕРјСѓ РІРµСЂРёС‚СЊ...
+	Smalltalk05					= "SVM_14_Smalltalk05"					;//...СЏ РЅРµ Р·РЅР°СЋ, РіРґРµ РµРіРѕ С‚Р°Рє РѕС‚РґРµР»Р°Р»Рё...
+	Smalltalk06					= "SVM_14_Smalltalk06"					;//...Сѓ РјРµРЅСЏ Рё С‚Р°Рє С…РІР°С‚Р°РµС‚ РїСЂРѕР±Р»РµРј...
+	Smalltalk07					= "SVM_14_Smalltalk07"					;//...СЏ С‡С‚Рѕ-С‚Рѕ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk08					= "SVM_14_Smalltalk08"					;//...СЏ РЅРµ С…РѕС‡Сѓ РёРјРµС‚СЊ Рє СЌС‚РѕРјСѓ РЅРёРєР°РєРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ...
+	Smalltalk09					= "SVM_14_Smalltalk09"					;//...РЅРµ РЅСѓР¶РЅРѕ РІРµСЂРёС‚СЊ РІСЃРµРјСѓ, С‡С‚Рѕ РіРѕРІРѕСЂСЏС‚...
+	Smalltalk10					= "SVM_14_Smalltalk10"					;//...РѕРЅ СѓР·РЅР°Р» СЌС‚Рѕ РЅРµ РѕС‚ РјРµРЅСЏ...
+	Smalltalk11					= "SVM_14_Smalltalk11"					;//...СЏ СѓР¶Рµ РїРѕРґСѓРјС‹РІР°Р» РѕР± СЌС‚РѕРј...
+	Smalltalk12					= "SVM_14_Smalltalk12"					;//...РЅРёРєРѕРјСѓ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ РјРѕРµ РјРЅРµРЅРёРµ...
+	Smalltalk13					= "SVM_14_Smalltalk13"					;//...РѕРЅ РЅРµ Р·Р°СЃР»СѓР¶РёР» СЌС‚РѕРіРѕ...
+	Smalltalk14					= "SVM_14_Smalltalk14"					;//...РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ РЅРµ Р·РЅР°Р» СЌС‚РѕРіРѕ...
+	Smalltalk15					= "SVM_14_Smalltalk15"					;//...СЌС‚Рѕ Р±С‹Р»Рѕ РѕС‡РµРІРёРґРЅРѕ...
+	Smalltalk16					= "SVM_14_Smalltalk16"					;//...РіРґРµ С‚С‹ СЌС‚Рѕ СѓСЃР»С‹С€Р°Р»?..
+	Smalltalk17					= "SVM_14_Smalltalk17"					;//...С‚Р°Рє РјРѕР¶РµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ РІРµС‡РЅРѕСЃС‚СЊ...
+	Smalltalk18					= "SVM_14_Smalltalk18"					;//...Сѓ РјРµРЅСЏ СЃРѕР±СЃС‚РІРµРЅРЅРѕРµ РјРЅРµРЅРёРµ РЅР° СЌС‚РѕС‚ СЃС‡РµС‚...
+	Smalltalk19					= "SVM_14_Smalltalk19"					;//...СЌС‚Рѕ Р±С‹Р»Рѕ С‚Р°Рє, РєР°Рє С‚С‹ СЃРєР°Р·Р°Р»...
+	Smalltalk20					= "SVM_14_Smalltalk20"					;//...СЏ РЅРµ РІРµСЂСЋ, С‡С‚Рѕ СЌС‚Рѕ С‡С‚Рѕ-С‚Рѕ РёР·РјРµРЅРёС‚...
+	Smalltalk21					= "SVM_14_Smalltalk21"					;//...СЏ РїРµСЂРІС‹Р№ СЂР°Р· СЃР»С‹С€Сѓ РѕР± СЌС‚РѕРј...
+	Smalltalk22					= "SVM_14_Smalltalk22"					;//...РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р¶РґР°С‚СЊ...
+	Smalltalk23					= "SVM_14_Smalltalk23"					;//...СЏ Р·РЅР°Р», С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ РїСЂРѕР±Р»РµРјРѕР№...
+	Smalltalk24					= "SVM_14_Smalltalk24"					;//...РїРѕС‡РµРјСѓ РѕРЅРё РЅРµ СЃР»СѓС€Р°СЋС‚ РјРµРЅСЏ?..
 	//ToughGuy (SLD/MIL/DJG)                                                                                                                           
-	Smalltalk25					= "SVM_14_Smalltalk25"					;//...он бежал так, как будто за ним гнался сам Белиар...
-	Smalltalk26					= "SVM_14_Smalltalk26"					;//...конечно, мы его потом поймали...
-	Smalltalk27					= "SVM_14_Smalltalk27"					;//...ты должен все хорошенько взвесить...
+	Smalltalk25					= "SVM_14_Smalltalk25"					;//...РѕРЅ Р±РµР¶Р°Р» С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ Р·Р° РЅРёРј РіРЅР°Р»СЃСЏ СЃР°Рј Р‘РµР»РёР°СЂ...
+	Smalltalk26					= "SVM_14_Smalltalk26"					;//...РєРѕРЅРµС‡РЅРѕ, РјС‹ РµРіРѕ РїРѕС‚РѕРј РїРѕР№РјР°Р»Рё...
+	Smalltalk27					= "SVM_14_Smalltalk27"					;//...С‚С‹ РґРѕР»Р¶РµРЅ РІСЃРµ С…РѕСЂРѕС€РµРЅСЊРєРѕ РІР·РІРµСЃРёС‚СЊ...
 	//ProInnos (NOV/KDF/PAL)                                                                                                                           
-	Smalltalk28					= "SVM_14_Smalltalk28"					;//...некоторые даже не знают, насколько они порочны...
-	Smalltalk29					= "SVM_14_Smalltalk29"					;//...такова воля Инноса...
-	Smalltalk30					= "SVM_14_Smalltalk30"					;//...его дела были праведными...
+	Smalltalk28					= "SVM_14_Smalltalk28"					;//...РЅРµРєРѕС‚РѕСЂС‹Рµ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋС‚, РЅР°СЃРєРѕР»СЊРєРѕ РѕРЅРё РїРѕСЂРѕС‡РЅС‹...
+	Smalltalk29					= "SVM_14_Smalltalk29"					;//...С‚Р°РєРѕРІР° РІРѕР»СЏ РРЅРЅРѕСЃР°...
+	Smalltalk30					= "SVM_14_Smalltalk30"					;//...РµРіРѕ РґРµР»Р° Р±С‹Р»Рё РїСЂР°РІРµРґРЅС‹РјРё...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_14_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_14_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_14_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_14_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_14_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_14_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_14_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_14_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_14_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_14_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_14_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_14_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_14_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_14_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_14_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_14_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_14_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_14_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_14_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_14_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_14_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_14_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_14_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_14_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_14_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_14_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_14_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_14_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_14_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_14_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_14_TEMPEL_2_GALGEN"			;//Выйдя из храма, и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_14_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_14_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_14_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_14_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_14_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_14_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_14_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_14_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_14_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_14_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_14_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_14_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_14_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_14_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_14_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_14_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР°, Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_14_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_14_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_14_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_14_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_14_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_14_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_14_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_14_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_14_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_14_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_14_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_14_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_14_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_14_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_14_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_14_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_14_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_14_Addon_WrongArmor";			//Твоя одежда выглядит на тебе странно. Должно быть, ты что-то скрываешь. Оставь меня в покое.
-	ADDON_WRONGARMOR_SLD		= "SVM_14_ADDON_WRONGARMOR_SLD";		//Если ты хочешь, чтобы я с тобой говорил, тебе следует надеть наши доспехи.
-	ADDON_WRONGARMOR_MIL		= "SVM_14_ADDON_WRONGARMOR_MIL";		//Гордись тем, что ты в армии, и не бегай в этих лохмотьях. Пойди, переоденься.
-	ADDON_WRONGARMOR_KDF		= "SVM_14_ADDON_WRONGARMOR_KDF";		//Твоя одежда не соответствует нашему ордену. Пойди и переоденься.
-	ADDON_NOARMOR_BDT			= "SVM_14_ADDON_ADDON_NOARMOR_BDT";		//У тебя даже нет доспехов. Вали отсюда!
+	ADDON_WRONGARMOR			= "SVM_14_Addon_WrongArmor";			//РўРІРѕСЏ РѕРґРµР¶РґР° РІС‹РіР»СЏРґРёС‚ РЅР° С‚РµР±Рµ СЃС‚СЂР°РЅРЅРѕ. Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С‚С‹ С‡С‚Рѕ-С‚Рѕ СЃРєСЂС‹РІР°РµС€СЊ. РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
+	ADDON_WRONGARMOR_SLD		= "SVM_14_ADDON_WRONGARMOR_SLD";		//Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СЃ С‚РѕР±РѕР№ РіРѕРІРѕСЂРёР», С‚РµР±Рµ СЃР»РµРґСѓРµС‚ РЅР°РґРµС‚СЊ РЅР°С€Рё РґРѕСЃРїРµС…Рё.
+	ADDON_WRONGARMOR_MIL		= "SVM_14_ADDON_WRONGARMOR_MIL";		//Р“РѕСЂРґРёСЃСЊ С‚РµРј, С‡С‚Рѕ С‚С‹ РІ Р°СЂРјРёРё, Рё РЅРµ Р±РµРіР°Р№ РІ СЌС‚РёС… Р»РѕС…РјРѕС‚СЊСЏС…. РџРѕР№РґРё, РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_WRONGARMOR_KDF		= "SVM_14_ADDON_WRONGARMOR_KDF";		//РўРІРѕСЏ РѕРґРµР¶РґР° РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅР°С€РµРјСѓ РѕСЂРґРµРЅСѓ. РџРѕР№РґРё Рё РїРµСЂРµРѕРґРµРЅСЊСЃСЏ.
+	ADDON_NOARMOR_BDT			= "SVM_14_ADDON_ADDON_NOARMOR_BDT";		//РЈ С‚РµР±СЏ РґР°Р¶Рµ РЅРµС‚ РґРѕСЃРїРµС…РѕРІ. Р’Р°Р»Рё РѕС‚СЃСЋРґР°!
 
-	ADDON_DIEBANDIT				= "SVM_14_ADDON_DIEBANDIT";				//Умри, разбойник.
-	ADDON_DIRTYPIRATE			= "SVM_14_ADDON_DIRTYPIRATE";			//Умри, пират.
+	ADDON_DIEBANDIT				= "SVM_14_ADDON_DIEBANDIT";				//РЈРјСЂРё, СЂР°Р·Р±РѕР№РЅРёРє.
+	ADDON_DIRTYPIRATE			= "SVM_14_ADDON_DIRTYPIRATE";			//РЈРјСЂРё, РїРёСЂР°С‚.
 };
 
 // ****************
@@ -3233,74 +3233,74 @@ instance SVM_14 (C_SVM)
 INSTANCE SVM_15	(C_SVM)		//	PLAYER	trocken,ernst
 {
 	// ------ Player-Only SVMs ---------------------------------------------------------------------
-	SC_HeyTurnAround		= 	"SVM_15_SC_HeyTurnAround"			;//Эй, ты!
-	SC_HeyTurnAround02		= 	"SVM_15_SC_HeyTurnAround02"			;//Эй, ты!
-	SC_HeyTurnAround03		= 	"SVM_15_SC_HeyTurnAround03"			;//Эй!
-	SC_HeyTurnAround04		= 	"SVM_15_SC_HeyTurnAround04"			;//Эй!
+	SC_HeyTurnAround		= 	"SVM_15_SC_HeyTurnAround"			;//Р­Р№, С‚С‹!
+	SC_HeyTurnAround02		= 	"SVM_15_SC_HeyTurnAround02"			;//Р­Р№, С‚С‹!
+	SC_HeyTurnAround03		= 	"SVM_15_SC_HeyTurnAround03"			;//Р­Р№!
+	SC_HeyTurnAround04		= 	"SVM_15_SC_HeyTurnAround04"			;//Р­Р№!
 	
-	SC_HeyWaitASecond		= 	"SVM_15_SC_HeyWaitASecond"			;//Подожди минутку!
+	SC_HeyWaitASecond		= 	"SVM_15_SC_HeyWaitASecond"			;//РџРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ!
 
-	DoesntWork				= 	"SVM_15_DoesntWork"					;//Не получается.
-	PickBroke				= 	"SVM_15_PickBroke"					;//Хм, сломано.
-	NeedKey					= 	"SVM_15_NeedKey"					;//Здесь мне нужен ключ ...
-	NoMorePicks				= 	"SVM_15_NoMorePicks"				;//У меня больше нет отмычек ...
-	NoPickLockTalent		= 	"SVM_15_NoPickLockTalent"			;//Я не умею открывать замки отмычкой.
-	NoSweeping				= 	"SVM_15_NoSweeping"					;//На подметание этих келий у меня уйдет целая вечность!
+	DoesntWork				= 	"SVM_15_DoesntWork"					;//РќРµ РїРѕР»СѓС‡Р°РµС‚СЃСЏ.
+	PickBroke				= 	"SVM_15_PickBroke"					;//РҐРј, СЃР»РѕРјР°РЅРѕ.
+	NeedKey					= 	"SVM_15_NeedKey"					;//Р—РґРµСЃСЊ РјРЅРµ РЅСѓР¶РµРЅ РєР»СЋС‡ ...
+	NoMorePicks				= 	"SVM_15_NoMorePicks"				;//РЈ РјРµРЅСЏ Р±РѕР»СЊС€Рµ РЅРµС‚ РѕС‚РјС‹С‡РµРє ...
+	NoPickLockTalent		= 	"SVM_15_NoPickLockTalent"			;//РЇ РЅРµ СѓРјРµСЋ РѕС‚РєСЂС‹РІР°С‚СЊ Р·Р°РјРєРё РѕС‚РјС‹С‡РєРѕР№.
+	NoSweeping				= 	"SVM_15_NoSweeping"					;//РќР° РїРѕРґРјРµС‚Р°РЅРёРµ СЌС‚РёС… РєРµР»РёР№ Сѓ РјРµРЅСЏ СѓР№РґРµС‚ С†РµР»Р°СЏ РІРµС‡РЅРѕСЃС‚СЊ!
 	
-	PICKLOCKORKEYMISSING	= 	"SVM_15_PICKLOCKORKEYMISSING"		;//Хм... у меня нет отмычки или ключа.
-	KEYMISSING				= 	"SVM_15_KEYMISSING"					;//Мне никогда не открыть это без правильного ключа!
-	PICKLOCKMISSING			= 	"SVM_15_PICKLOCKMISSING"			;//Здесь бы пригодилась отмычка!
-	NEVEROPEN				= 	"SVM_15_NEVEROPEN"					;//Я никогда не смогу открыть этот замок!
-	MISSINGITEM				= 	"SVM_15_MISSINGITEM"				;//И как я это сделаю?
-	DONTKNOW				= 	"SVM_15_DONTKNOW"					;//Хм... Нет ...
-	NOTHINGTOGET			= 	"SVM_15_NOTHINGTOGET"				;//Там ничего нет ...
-	NOTHINGTOGET02			= 	"SVM_15_NOTHINGTOGET02"				;//Там ничего нет...
-	NOTHINGTOGET03			= 	"SVM_15_NOTHINGTOGET03"				;//Нечего взять...
+	PICKLOCKORKEYMISSING	= 	"SVM_15_PICKLOCKORKEYMISSING"		;//РҐРј... Сѓ РјРµРЅСЏ РЅРµС‚ РѕС‚РјС‹С‡РєРё РёР»Рё РєР»СЋС‡Р°.
+	KEYMISSING				= 	"SVM_15_KEYMISSING"					;//РњРЅРµ РЅРёРєРѕРіРґР° РЅРµ РѕС‚РєСЂС‹С‚СЊ СЌС‚Рѕ Р±РµР· РїСЂР°РІРёР»СЊРЅРѕРіРѕ РєР»СЋС‡Р°!
+	PICKLOCKMISSING			= 	"SVM_15_PICKLOCKMISSING"			;//Р—РґРµСЃСЊ Р±С‹ РїСЂРёРіРѕРґРёР»Р°СЃСЊ РѕС‚РјС‹С‡РєР°!
+	NEVEROPEN				= 	"SVM_15_NEVEROPEN"					;//РЇ РЅРёРєРѕРіРґР° РЅРµ СЃРјРѕРіСѓ РѕС‚РєСЂС‹С‚СЊ СЌС‚РѕС‚ Р·Р°РјРѕРє!
+	MISSINGITEM				= 	"SVM_15_MISSINGITEM"				;//Р РєР°Рє СЏ СЌС‚Рѕ СЃРґРµР»Р°СЋ?
+	DONTKNOW				= 	"SVM_15_DONTKNOW"					;//РҐРј... РќРµС‚ ...
+	NOTHINGTOGET			= 	"SVM_15_NOTHINGTOGET"				;//РўР°Рј РЅРёС‡РµРіРѕ РЅРµС‚ ...
+	NOTHINGTOGET02			= 	"SVM_15_NOTHINGTOGET02"				;//РўР°Рј РЅРёС‡РµРіРѕ РЅРµС‚...
+	NOTHINGTOGET03			= 	"SVM_15_NOTHINGTOGET03"				;//РќРµС‡РµРіРѕ РІР·СЏС‚СЊ...
 	
 	// ------ sonstige SVMs -------------------------------------------------------------------------
-	Aargh_1					=	"SVM_15_Aargh_1"					;//Аааааа!
-	Aargh_2					=	"SVM_15_Aargh_2"					;//Аааааа!
-	Aargh_3					=	"SVM_15_Aargh_3"					;//Аааааа!
-	Dead					=	"SVM_15_Dead"						;//Аааааа!
-	Awake					=	"SVM_15_Awake"						;//(просыпается)
+	Aargh_1					=	"SVM_15_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2					=	"SVM_15_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3					=	"SVM_15_Aargh_3"					;//РђР°Р°Р°Р°Р°!
+	Dead					=	"SVM_15_Dead"						;//РђР°Р°Р°Р°Р°!
+	Awake					=	"SVM_15_Awake"						;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ)
 	
 	// ------ Story SVMs ----------------------------------------------------------------------------
 	
-	IRDORATHTHEREYOUARE		= 	"SVM_15_IRDORATHTHEREYOUARE"		;//Ммм. Так вот ты где скрываешься. Чертовски далеко. Ммм. Чтобы добраться туда, мне понадобится корабль.
-	HEALSHRINE				= 	"SVM_15_HEALSHRINE"					;//Иннос, даруй мне свою помощь и очисти этот алтарь.
-	HEALLASTSHRINE			= 	"SVM_15_HEALLASTSHRINE"				;//Иннос, даруй мне свою помощь и все такое ... Вот так. Надеюсь, это было последний раз.
-	SCOPENSIRDORATHBOOK		= 	"SVM_15_SCOPENSIRDORATHBOOK"		;//ХАРАК БЕНДАРО! Ох. Книга открылась. Там внутри лежит письмо и ключ.
-	SCOPENSLASTDOOR			= 	"SVM_15_SCOPENSLASTDOOR"			;//КАДОШ ЭМЕМ КАДАР! Откройся!
+	IRDORATHTHEREYOUARE		= 	"SVM_15_IRDORATHTHEREYOUARE"		;//РњРјРј. РўР°Рє РІРѕС‚ С‚С‹ РіРґРµ СЃРєСЂС‹РІР°РµС€СЊСЃСЏ. Р§РµСЂС‚РѕРІСЃРєРё РґР°Р»РµРєРѕ. РњРјРј. Р§С‚РѕР±С‹ РґРѕР±СЂР°С‚СЊСЃСЏ С‚СѓРґР°, РјРЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РєРѕСЂР°Р±Р»СЊ.
+	HEALSHRINE				= 	"SVM_15_HEALSHRINE"					;//РРЅРЅРѕСЃ, РґР°СЂСѓР№ РјРЅРµ СЃРІРѕСЋ РїРѕРјРѕС‰СЊ Рё РѕС‡РёСЃС‚Рё СЌС‚РѕС‚ Р°Р»С‚Р°СЂСЊ.
+	HEALLASTSHRINE			= 	"SVM_15_HEALLASTSHRINE"				;//РРЅРЅРѕСЃ, РґР°СЂСѓР№ РјРЅРµ СЃРІРѕСЋ РїРѕРјРѕС‰СЊ Рё РІСЃРµ С‚Р°РєРѕРµ ... Р’РѕС‚ С‚Р°Рє. РќР°РґРµСЋСЃСЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·.
+	SCOPENSIRDORATHBOOK		= 	"SVM_15_SCOPENSIRDORATHBOOK"		;//РҐРђР РђРљ Р‘Р•РќР”РђР Рћ! РћС…. РљРЅРёРіР° РѕС‚РєСЂС‹Р»Р°СЃСЊ. РўР°Рј РІРЅСѓС‚СЂРё Р»РµР¶РёС‚ РїРёСЃСЊРјРѕ Рё РєР»СЋС‡.
+	SCOPENSLASTDOOR			= 	"SVM_15_SCOPENSLASTDOOR"			;//РљРђР”РћРЁ Р­РњР•Рњ РљРђР”РђР ! РћС‚РєСЂРѕР№СЃСЏ!
 
 	//---------Addon SVMs----------------------------------------------------------------------------
 	//ADDON>
-	TRADE_1					= 	"SVM_15_Addon_TRADE_1"					;//Давай займемся делом.
-	TRADE_2					= 	"SVM_15_Addon_TRADE_2"					;//Покажи мне товары.
-	TRADE_3					=	"SVM_15_Addon_TRADE_3"					;//Покажи мне, что у тебя есть.
+	TRADE_1					= 	"SVM_15_Addon_TRADE_1"					;//Р”Р°РІР°Р№ Р·Р°Р№РјРµРјСЃСЏ РґРµР»РѕРј.
+	TRADE_2					= 	"SVM_15_Addon_TRADE_2"					;//РџРѕРєР°Р¶Рё РјРЅРµ С‚РѕРІР°СЂС‹.
+	TRADE_3					=	"SVM_15_Addon_TRADE_3"					;//РџРѕРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.
 	
-	VERSTEHE				=   "SVM_15_Addon_VERSTEHE"					;//Ага.
-	FOUNDTREASURE			=   "SVM_15_Addon_FOUNDTREASURE"			;//Ага. Кажется, я кое-что нашел.
-	CANTUNDERSTANDTHIS		=   "SVM_15_Addon_CANTUNDERSTANDTHIS"		;//Я не понимаю...
-	CANTREADTHIS			= 	"SVM_15_Addon_CANTREADTHIS"				;//Я не могу этого прочесть!
-	STONEPLATE_1			= 	"SVM_15_Addon_STONEPLATE_1"				;//АХАНТАР!
-	STONEPLATE_2			= 	"SVM_15_Addon_STONEPLATE_2"				;//ДЖЕР-ЭДРА!
-	STONEPLATE_3			= 	"SVM_15_Addon_STONEPLATE_3"				;//УРИЗЕЛЬ РАТИС!
+	VERSTEHE				=   "SVM_15_Addon_VERSTEHE"					;//РђРіР°.
+	FOUNDTREASURE			=   "SVM_15_Addon_FOUNDTREASURE"			;//РђРіР°. РљР°Р¶РµС‚СЃСЏ, СЏ РєРѕРµ-С‡С‚Рѕ РЅР°С€РµР».
+	CANTUNDERSTANDTHIS		=   "SVM_15_Addon_CANTUNDERSTANDTHIS"		;//РЇ РЅРµ РїРѕРЅРёРјР°СЋ...
+	CANTREADTHIS			= 	"SVM_15_Addon_CANTREADTHIS"				;//РЇ РЅРµ РјРѕРіСѓ СЌС‚РѕРіРѕ РїСЂРѕС‡РµСЃС‚СЊ!
+	STONEPLATE_1			= 	"SVM_15_Addon_STONEPLATE_1"				;//РђРҐРђРќРўРђР !
+	STONEPLATE_2			= 	"SVM_15_Addon_STONEPLATE_2"				;//Р”Р–Р•Р -Р­Р”Р Рђ!
+	STONEPLATE_3			= 	"SVM_15_Addon_STONEPLATE_3"				;//РЈР РР—Р•Р›Р¬ Р РђРўРРЎ!
 		
-	COUGH					=   "SVM_15_Addon_COUGH"					;//(кашляет) О, черт. Брр...
-	HUI						=	"SVM_15_Addon_HUI"						;//Ой-ой-ой!
+	COUGH					=   "SVM_15_Addon_COUGH"					;//(РєР°С€Р»СЏРµС‚) Рћ, С‡РµСЂС‚. Р‘СЂСЂ...
+	HUI						=	"SVM_15_Addon_HUI"						;//РћР№-РѕР№-РѕР№!
 	
-	ATTENTAT_ADDON_DESCRIPTION	=	"SVM_15_ATTENTAT_ADDON_DESCRIPTION"		;//Что ты знаешь о покушении на Эстебана?
-	ATTENTAT_ADDON_DESCRIPTION2 = 	"SVM_15_ATTENTAT_ADDON_DESCRIPTION2"	;//По поводу нападения на Эстебана...
-	ATTENTAT_ADDON_PRO			=	"SVM_15_ATTENTAT_ADDON_PRO"				;//Я убью этих предателей.
-	ATTENTAT_ADDON_CONTRA		=	"SVM_15_ATTENTAT_ADDON_CONTRA"			;//Я ищу этих ребят, чтобы выступить против Эстебана.
+	ATTENTAT_ADDON_DESCRIPTION	=	"SVM_15_ATTENTAT_ADDON_DESCRIPTION"		;//Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕРєСѓС€РµРЅРёРё РЅР° Р­СЃС‚РµР±Р°РЅР°?
+	ATTENTAT_ADDON_DESCRIPTION2 = 	"SVM_15_ATTENTAT_ADDON_DESCRIPTION2"	;//РџРѕ РїРѕРІРѕРґСѓ РЅР°РїР°РґРµРЅРёСЏ РЅР° Р­СЃС‚РµР±Р°РЅР°...
+	ATTENTAT_ADDON_PRO			=	"SVM_15_ATTENTAT_ADDON_PRO"				;//РЇ СѓР±СЊСЋ СЌС‚РёС… РїСЂРµРґР°С‚РµР»РµР№.
+	ATTENTAT_ADDON_CONTRA		=	"SVM_15_ATTENTAT_ADDON_CONTRA"			;//РЇ РёС‰Сѓ СЌС‚РёС… СЂРµР±СЏС‚, С‡С‚РѕР±С‹ РІС‹СЃС‚СѓРїРёС‚СЊ РїСЂРѕС‚РёРІ Р­СЃС‚РµР±Р°РЅР°.
 	
-	MINE_ADDON_DESCRIPTION		=	"SVM_15_MINE_ADDON_DESCRIPTION"		;//Ты нужен в шахте.
-	ADDON_SUMMONANCIENTGHOST	=	"SVM_15_ADDON_SUMMONANCIENTGHOST"	;//Игориат Торул! Явись ко мне, Куарходрон, древний предводитель касты воинов!
-	ADDON_ANCIENTGHOST_NOTNEAR	=	"SVM_15_ADDON_ANCIENTGHOST_NOTNEAR"	;//Хм-м... Кажется, здесь это не работает.
-	ADDON_GOLD_DESCRIPTION		=	"SVM_15_ADDON_GOLD_DESCRIPTION"		;//Что мне следует знать о добыче золота?
+	MINE_ADDON_DESCRIPTION		=	"SVM_15_MINE_ADDON_DESCRIPTION"		;//РўС‹ РЅСѓР¶РµРЅ РІ С€Р°С…С‚Рµ.
+	ADDON_SUMMONANCIENTGHOST	=	"SVM_15_ADDON_SUMMONANCIENTGHOST"	;//РРіРѕСЂРёР°С‚ РўРѕСЂСѓР»! РЇРІРёСЃСЊ РєРѕ РјРЅРµ, РљСѓР°СЂС…РѕРґСЂРѕРЅ, РґСЂРµРІРЅРёР№ РїСЂРµРґРІРѕРґРёС‚РµР»СЊ РєР°СЃС‚С‹ РІРѕРёРЅРѕРІ!
+	ADDON_ANCIENTGHOST_NOTNEAR	=	"SVM_15_ADDON_ANCIENTGHOST_NOTNEAR"	;//РҐРј-Рј... РљР°Р¶РµС‚СЃСЏ, Р·РґРµСЃСЊ СЌС‚Рѕ РЅРµ СЂР°Р±РѕС‚Р°РµС‚.
+	ADDON_GOLD_DESCRIPTION		=	"SVM_15_ADDON_GOLD_DESCRIPTION"		;//Р§С‚Рѕ РјРЅРµ СЃР»РµРґСѓРµС‚ Р·РЅР°С‚СЊ Рѕ РґРѕР±С‹С‡Рµ Р·РѕР»РѕС‚Р°?
 	
-	ADDON_THISLITTLEBASTARD		=   "SVM_15_Addon_ThisLittleBastard";		//Ага. Учетная книга Фрэнсиса. Похоже, этот парень прикарманил много золота.
-	ADDON_OPENADANOSTEMPLE		=   "SVM_15_Addon_OPENADANOSTEMPLE";		//ДЖЕР-ЭДРА АХАНТАР!
+	ADDON_THISLITTLEBASTARD		=   "SVM_15_Addon_ThisLittleBastard";		//РђРіР°. РЈС‡РµС‚РЅР°СЏ РєРЅРёРіР° Р¤СЂСЌРЅСЃРёСЃР°. РџРѕС…РѕР¶Рµ, СЌС‚РѕС‚ РїР°СЂРµРЅСЊ РїСЂРёРєР°СЂРјР°РЅРёР» РјРЅРѕРіРѕ Р·РѕР»РѕС‚Р°.
+	ADDON_OPENADANOSTEMPLE		=   "SVM_15_Addon_OPENADANOSTEMPLE";		//Р”Р–Р•Р -Р­Р”Р Рђ РђРҐРђРќРўРђР !
 
 	//ADDON<
 };
@@ -3312,406 +3312,406 @@ INSTANCE SVM_15	(C_SVM)		//	PLAYER	trocken,ernst
 instance SVM_16 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_16_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_16_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_16_Weather"						;//Какая мерзкая погода!
+	MILGreetings				= 	"SVM_16_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_16_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_16_Weather"						;//РљР°РєР°СЏ РјРµСЂР·РєР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_16_IGetYouStill"				;//Я все-таки достала тебя!
-	DieEnemy					=	"SVM_16_DieEnemy"					;//Сейчас ты получишь!
-	DieMonster					=	"SVM_16_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_16_DirtyThief"					;//Грязный воришка! Ну, подожди!
-	HandsOff					=	"SVM_16_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_16_SheepKiller"					;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_16_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_16_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_16_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_16_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_16_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_16_ThenIBeatYouOutOfHere"		;//Сейчас я вышвырну тебя отсюда!
-	WhatDidYouDoInThere			=	"SVM_16_WhatDidYouDoInThere"			;//Что тебе здесь надо, а?!
-	WillYouStopFighting			=	"SVM_16_WillYouStopFighting"			;//Ты прекратишь?!
+	IGetYouStill				= 	"SVM_16_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р»Р° С‚РµР±СЏ!
+	DieEnemy					=	"SVM_16_DieEnemy"					;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	DieMonster					=	"SVM_16_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_16_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂРёС€РєР°! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_16_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_16_SheepKiller"					;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_16_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_16_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_16_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_16_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_16_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_16_ThenIBeatYouOutOfHere"		;//РЎРµР№С‡Р°СЃ СЏ РІС‹С€РІС‹СЂРЅСѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°!
+	WhatDidYouDoInThere			=	"SVM_16_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅР°РґРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_16_WillYouStopFighting"			;//РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_16_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_16_EnemyKilled"				;//Получил, подонок?!
-	MonsterKilled				=	"SVM_16_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_16_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_16_rumfummlerDown"				;//В будущем, держи свои руки подальше от чужих вещей!
-	SheepAttackerDown			=	"SVM_16_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_16_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_16_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_16_NeverHitMeAgain"				;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_16_YouBetterShouldHaveListened"	;//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_16_GetUpAndBeGone"				;//А теперь, убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_16_NeverEnterRoomAgain"			;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_16_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_16_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_16_EnemyKilled"				;//РџРѕР»СѓС‡РёР», РїРѕРґРѕРЅРѕРє?!
+	MonsterKilled				=	"SVM_16_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_16_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_16_rumfummlerDown"				;//Р’ Р±СѓРґСѓС‰РµРј, РґРµСЂР¶Рё СЃРІРѕРё СЂСѓРєРё РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‡СѓР¶РёС… РІРµС‰РµР№!
+	SheepAttackerDown			=	"SVM_16_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_16_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_16_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_16_NeverHitMeAgain"				;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_16_YouBetterShouldHaveListened"	;//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_16_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ, СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_16_NeverEnterRoomAgain"			;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_16_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_16_SpareMe"						;//Не трогай меня!
-	RunAway						= 	"SVM_16_RunAway"						;//Я ухожу отсюда!
+	SpareMe						=	"SVM_16_SpareMe"						;//РќРµ С‚СЂРѕРіР°Р№ РјРµРЅСЏ!
+	RunAway						= 	"SVM_16_RunAway"						;//РЇ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_16_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_16_Guards"					;//СТРАЖА!
-	Help						=	"SVM_16_Help"					;//Помогите!
+	Alarm						=	"SVM_16_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_16_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_16_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_16_GoodMonsterKill"			;//Отлично!
-	GoodKill					= 	"SVM_16_GoodKill"				;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_16_GoodMonsterKill"			;//РћС‚Р»РёС‡РЅРѕ!
+	GoodKill					= 	"SVM_16_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_16_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_16_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_16_RunCoward"				;//Прекрати немедленно! Трус!
+	RunCoward					=	"SVM_16_RunCoward"				;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ! РўСЂСѓСЃ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_16_GetOutOfHere"			;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_16_WhyAreYouInHere"		;//Что тебе здесь нужно!? Уходи!
-	YesGoOutOfHere				= 	"SVM_16_YesGoOutOfHere"			;//Да, проваливай отсюда!
+	GetOutOfHere				=	"SVM_16_GetOutOfHere"			;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_16_WhyAreYouInHere"		;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ!? РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_16_YesGoOutOfHere"			;//Р”Р°, РїСЂРѕРІР°Р»РёРІР°Р№ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_16_WhatsThisSupposedToBe"	;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_16_YouDisturbedMySlumber"	;//(просыпается) В чем дело?
+	WhatsThisSupposedToBe		=	"SVM_16_WhatsThisSupposedToBe"	;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_16_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р’ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_16_ITookYourGold"			;//Спасибо за золото, герой!
-	ShitNoGold					=	"SVM_16_ShitNoGold"				;//Ах ты, сосунок, у тебя даже золота с собой нет!
-	ITakeYourWeapon				=	"SVM_16_ITakeYourWeapon"			;//Я думаю, лучше забрать твое оружие.
+	ITookYourGold				=	"SVM_16_ITookYourGold"			;//РЎРїР°СЃРёР±Рѕ Р·Р° Р·РѕР»РѕС‚Рѕ, РіРµСЂРѕР№!
+	ShitNoGold					=	"SVM_16_ShitNoGold"				;//РђС… С‚С‹, СЃРѕСЃСѓРЅРѕРє, Сѓ С‚РµР±СЏ РґР°Р¶Рµ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№ РЅРµС‚!
+	ITakeYourWeapon				=	"SVM_16_ITakeYourWeapon"			;//РЇ РґСѓРјР°СЋ, Р»СѓС‡С€Рµ Р·Р°Р±СЂР°С‚СЊ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_16_WhatAreYouDoing"			;//Смотри! Еще раз, и ты пожалеешь об этом.
+	WhatAreYouDoing				=	"SVM_16_WhatAreYouDoing"			;//РЎРјРѕС‚СЂРё! Р•С‰Рµ СЂР°Р·, Рё С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_16_LookingForTroubleAgain"	;//Тебе все еще мало?
-	StopMagic					=	"SVM_16_StopMagic"				;//Прекрати это магическое дерьмо!
-	ISaidStopMagic				=	"SVM_16_ISaidStopMagic"			;//Прекрати немедленно!!!
-	WeaponDown					=	"SVM_16_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_16_ISaidWeaponDown"		;//Ты уберешь это чертово оружие?!
-	WiseMove					=	"SVM_16_WiseMove"				;//Умный мальчик!
+	LookingForTroubleAgain		=	"SVM_16_LookingForTroubleAgain"	;//РўРµР±Рµ РІСЃРµ РµС‰Рµ РјР°Р»Рѕ?
+	StopMagic					=	"SVM_16_StopMagic"				;//РџСЂРµРєСЂР°С‚Рё СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ РґРµСЂСЊРјРѕ!
+	ISaidStopMagic				=	"SVM_16_ISaidStopMagic"			;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!!!
+	WeaponDown					=	"SVM_16_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_16_ISaidWeaponDown"		;//РўС‹ СѓР±РµСЂРµС€СЊ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РѕСЂСѓР¶РёРµ?!
+	WiseMove					=	"SVM_16_WiseMove"				;//РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_16_NextTimeYoureInForIt"	;//(про себя) Мы еще посмотрим...
-	OhMyHead					=	"SVM_16_OhMyHead"				;//(про себя) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_16_NextTimeYoureInForIt"	;//(РїСЂРѕ СЃРµР±СЏ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_16_OhMyHead"				;//(РїСЂРѕ СЃРµР±СЏ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_16_TheresAFight"			;//(страстно) А-ах, драка!
-	OhMyGodItsAFight			=	"SVM_16_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой, драка!
-	GoodVictory					=	"SVM_16_GoodVictory"			;//(дьявольский смех) Ты показал ему, кто здесь главный!
-	NotBad						= 	"SVM_16_NotBad"					;//(одобрительно) Неплохо...
-	OhMyGodHesDown				=	"SVM_16_OhMyGodHesDown"			;//(по себя) Бог мой! Какая жестокость...
-	CheerFriend01				=	"SVM_16_CheerFriend01"			;//Убей его!
-	CheerFriend02				=	"SVM_16_CheerFriend02"			;//Покажи ему, где раки зимуют!
-	CheerFriend03				=	"SVM_16_CheerFriend03"			;//Да, задай ему!
-	Ooh01						=	"SVM_16_Ooh01"					;//Обороняйся!
-	Ooh02						=	"SVM_16_Ooh02"					;//Осторожно!
-	Ooh03						=	"SVM_16_Ooh03"					;//Ох! Это, наверное, больно!
+	TheresAFight				=	"SVM_16_TheresAFight"			;//(СЃС‚СЂР°СЃС‚РЅРѕ) Рђ-Р°С…, РґСЂР°РєР°!
+	OhMyGodItsAFight			=	"SVM_16_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№, РґСЂР°РєР°!
+	GoodVictory					=	"SVM_16_GoodVictory"			;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РўС‹ РїРѕРєР°Р·Р°Р» РµРјСѓ, РєС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№!
+	NotBad						= 	"SVM_16_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РќРµРїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_16_OhMyGodHesDown"			;//(РїРѕ СЃРµР±СЏ) Р‘РѕРі РјРѕР№! РљР°РєР°СЏ Р¶РµСЃС‚РѕРєРѕСЃС‚СЊ...
+	CheerFriend01				=	"SVM_16_CheerFriend01"			;//РЈР±РµР№ РµРіРѕ!
+	CheerFriend02				=	"SVM_16_CheerFriend02"			;//РџРѕРєР°Р¶Рё РµРјСѓ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
+	CheerFriend03				=	"SVM_16_CheerFriend03"			;//Р”Р°, Р·Р°РґР°Р№ РµРјСѓ!
+	Ooh01						=	"SVM_16_Ooh01"					;//РћР±РѕСЂРѕРЅСЏР№СЃСЏ!
+	Ooh02						=	"SVM_16_Ooh02"					;//РћСЃС‚РѕСЂРѕР¶РЅРѕ!
+	Ooh03						=	"SVM_16_Ooh03"					;//РћС…! Р­С‚Рѕ, РЅР°РІРµСЂРЅРѕРµ, Р±РѕР»СЊРЅРѕ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_16_WhatWasThat"				;//(про себя, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_16_WhatWasThat"				;//(РїСЂРѕ СЃРµР±СЏ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_16_GetOutOfMyBed"			;//Убирайся с моей кровати!
-	Awake						= "SVM_16_Awake"					;//(зевает)
+	GetOutOfMyBed				= "SVM_16_GetOutOfMyBed"			;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_16_Awake"					;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     			= "SVM_16_ABS_COMMANDER"    		;//Говорят, ты ходил к командующему и все уладил.
-	ABS_MONASTERY    			= "SVM_16_ABS_MONASTERY"    		;//Говорят, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM       				= "SVM_16_ABS_FARM"        			;//Говорят, ты ходил к Ли и все уладил.
-	ABS_GOOD       				= "SVM_16_ABS_GOOD"        			;//Это хорошо.
+	ABS_COMMANDER     			= "SVM_16_ABS_COMMANDER"    		;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY    			= "SVM_16_ABS_MONASTERY"    		;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM       				= "SVM_16_ABS_FARM"        			;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD       				= "SVM_16_ABS_GOOD"        			;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
  	// -------------------------
-	SHEEPKILLER_CRIME   		= "SVM_16_SHEEPKILLER_CRIME"   		;//Ты убивал наших овец! Убирайся!
-	ATTACK_CRIME     			= "SVM_16_ATTACK_CRIME"    			;//Ты грубое животное, я не хочу иметь с тобой никаких дел!
-	THEFT_CRIME      			= "SVM_16_THEFT_CRIME"    			;//Я не разговариваю с ворами - уходи!
+	SHEEPKILLER_CRIME   		= "SVM_16_SHEEPKILLER_CRIME"   		;//РўС‹ СѓР±РёРІР°Р» РЅР°С€РёС… РѕРІРµС†! РЈР±РёСЂР°Р№СЃСЏ!
+	ATTACK_CRIME     			= "SVM_16_ATTACK_CRIME"    			;//РўС‹ РіСЂСѓР±РѕРµ Р¶РёРІРѕС‚РЅРѕРµ, СЏ РЅРµ С…РѕС‡Сѓ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РЅРёРєР°РєРёС… РґРµР»!
+	THEFT_CRIME      			= "SVM_16_THEFT_CRIME"    			;//РЇ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ СЃ РІРѕСЂР°РјРё - СѓС…РѕРґРё!
 	// -------------------------
-	PAL_CITY_CRIME     			= "SVM_16_PAL_CITY_CRIME"   		;//Ты опозорил себя своим поведением. Лорду Хагену это не понравится!
-	MIL_CITY_CRIME     			= "SVM_16_MIL_CITY_CRIME"   		;//Ты позоришь своим поведением городскую стражу! Лорд Андрэ потребует от тебя объяснений!
-	CITY_CRIME       			= "SVM_16_CITY_CRIME"    			;//Лорд Андрэ узнает о том, что ты сделал!
+	PAL_CITY_CRIME     			= "SVM_16_PAL_CITY_CRIME"   		;//РўС‹ РѕРїРѕР·РѕСЂРёР» СЃРµР±СЏ СЃРІРѕРёРј РїРѕРІРµРґРµРЅРёРµРј. Р›РѕСЂРґСѓ РҐР°РіРµРЅСѓ СЌС‚Рѕ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ!
+	MIL_CITY_CRIME     			= "SVM_16_MIL_CITY_CRIME"   		;//РўС‹ РїРѕР·РѕСЂРёС€СЊ СЃРІРѕРёРј РїРѕРІРµРґРµРЅРёРµРј РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! Р›РѕСЂРґ РђРЅРґСЂСЌ РїРѕС‚СЂРµР±СѓРµС‚ РѕС‚ С‚РµР±СЏ РѕР±СЉСЏСЃРЅРµРЅРёР№!
+	CITY_CRIME       			= "SVM_16_CITY_CRIME"    			;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р»!
 	// -------------------------
- 	MONA_CRIME       			= "SVM_16_MONA_CRIME"    			;//Ты неправильно вел себя. Иди к отцу Парлану и покайся.
-	FARM_CRIME      			= "SVM_16_FARM_CRIME"    			;//Ли узнает о том, что ты сделал и накажет тебя!
- 	OC_CRIME       				= "SVM_16_OC_CRIME"     			;//Командующий Гаронд потребует от тебя объяснений!
+ 	MONA_CRIME       			= "SVM_16_MONA_CRIME"    			;//РўС‹ РЅРµРїСЂР°РІРёР»СЊРЅРѕ РІРµР» СЃРµР±СЏ. РРґРё Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РїРѕРєР°Р№СЃСЏ.
+	FARM_CRIME      			= "SVM_16_FARM_CRIME"    			;//Р›Рё СѓР·РЅР°РµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» Рё РЅР°РєР°Р¶РµС‚ С‚РµР±СЏ!
+ 	OC_CRIME       				= "SVM_16_OC_CRIME"     			;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РїРѕС‚СЂРµР±СѓРµС‚ РѕС‚ С‚РµР±СЏ РѕР±СЉСЏСЃРЅРµРЅРёР№!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_16_GOLD_1000"					;//1000 золотых монет.
-	GOLD_950					= "SVM_16_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_16_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_16_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_16_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_16_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_16_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_16_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_16_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_16_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_16_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_16_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_16_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_16_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_16_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_16_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_16_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_16_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_16_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_16_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_16_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_16_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_16_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_16_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_16_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_16_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_16_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_16_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_16_GOLD_1000"					;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_16_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_16_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_16_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_16_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_16_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_16_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_16_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_16_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_16_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_16_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_16_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_16_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_16_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_16_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_16_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_16_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_16_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_16_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_16_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_16_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_16_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_16_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_16_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_16_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_16_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_16_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_16_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_16_Smalltalk01"				;//...правда? Как интересно...
-	Smalltalk02					= "SVM_16_Smalltalk02"				;//...я не верю в это...
-	Smalltalk03					= "SVM_16_Smalltalk03"				;//...мой муж думает по-другому...
-	Smalltalk04					= "SVM_16_Smalltalk04"				;//...ладно, не говори мне об этом...
-	Smalltalk05					= "SVM_16_Smalltalk05"				;//...я видела это сама...
-	Smalltalk06					= "SVM_16_Smalltalk06"				;//...ты хочешь сказать...
-	Smalltalk07					= "SVM_16_Smalltalk07"				;//...не говори об этом никому...
-	Smalltalk08					= "SVM_16_Smalltalk08"				;//...совсем жизни не стало...
-	Smalltalk09					= "SVM_16_Smalltalk09"				;//...кто это сказал?..
-	Smalltalk10					= "SVM_16_Smalltalk10"				;//...если бы я не видела это собственными глазами...
-	Smalltalk11					= "SVM_16_Smalltalk11"				;//...кто-то должен делать это...
-	Smalltalk12					= "SVM_16_Smalltalk12"				;//...я слышала другое...
-	Smalltalk13					= "SVM_16_Smalltalk13"				;//...как это типично для него, правда?..
-	Smalltalk14					= "SVM_16_Smalltalk14"				;//...ему нельзя доверять...
-	Smalltalk15					= "SVM_16_Smalltalk15"				;//...ему лучше заткнуться...
-	Smalltalk16					= "SVM_16_Smalltalk16"				;//...он почти не отдыхает...
-	Smalltalk17					= "SVM_16_Smalltalk17"				;//...он не может угодить всем...
-	Smalltalk18					= "SVM_16_Smalltalk18"				;//...он слишком много болтает...
-	Smalltalk19					= "SVM_16_Smalltalk19"				;//...это секрет...
-	Smalltalk20					= "SVM_16_Smalltalk20"				;//...все об этом знают...
-	Smalltalk21					= "SVM_16_Smalltalk21"				;//...я ей больше ничего не скажу...
-	Smalltalk22					= "SVM_16_Smalltalk22"				;//...все будет только хуже...
-	Smalltalk23					= "SVM_16_Smalltalk23"				;//...но это ужасно...
-	Smalltalk24					= "SVM_16_Smalltalk24"				;//...я всегда это говорила...
+	Smalltalk01					= "SVM_16_Smalltalk01"				;//...РїСЂР°РІРґР°? РљР°Рє РёРЅС‚РµСЂРµСЃРЅРѕ...
+	Smalltalk02					= "SVM_16_Smalltalk02"				;//...СЏ РЅРµ РІРµСЂСЋ РІ СЌС‚Рѕ...
+	Smalltalk03					= "SVM_16_Smalltalk03"				;//...РјРѕР№ РјСѓР¶ РґСѓРјР°РµС‚ РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk04					= "SVM_16_Smalltalk04"				;//...Р»Р°РґРЅРѕ, РЅРµ РіРѕРІРѕСЂРё РјРЅРµ РѕР± СЌС‚РѕРј...
+	Smalltalk05					= "SVM_16_Smalltalk05"				;//...СЏ РІРёРґРµР»Р° СЌС‚Рѕ СЃР°РјР°...
+	Smalltalk06					= "SVM_16_Smalltalk06"				;//...С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ...
+	Smalltalk07					= "SVM_16_Smalltalk07"				;//...РЅРµ РіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј РЅРёРєРѕРјСѓ...
+	Smalltalk08					= "SVM_16_Smalltalk08"				;//...СЃРѕРІСЃРµРј Р¶РёР·РЅРё РЅРµ СЃС‚Р°Р»Рѕ...
+	Smalltalk09					= "SVM_16_Smalltalk09"				;//...РєС‚Рѕ СЌС‚Рѕ СЃРєР°Р·Р°Р»?..
+	Smalltalk10					= "SVM_16_Smalltalk10"				;//...РµСЃР»Рё Р±С‹ СЏ РЅРµ РІРёРґРµР»Р° СЌС‚Рѕ СЃРѕР±СЃС‚РІРµРЅРЅС‹РјРё РіР»Р°Р·Р°РјРё...
+	Smalltalk11					= "SVM_16_Smalltalk11"				;//...РєС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ СЌС‚Рѕ...
+	Smalltalk12					= "SVM_16_Smalltalk12"				;//...СЏ СЃР»С‹С€Р°Р»Р° РґСЂСѓРіРѕРµ...
+	Smalltalk13					= "SVM_16_Smalltalk13"				;//...РєР°Рє СЌС‚Рѕ С‚РёРїРёС‡РЅРѕ РґР»СЏ РЅРµРіРѕ, РїСЂР°РІРґР°?..
+	Smalltalk14					= "SVM_16_Smalltalk14"				;//...РµРјСѓ РЅРµР»СЊР·СЏ РґРѕРІРµСЂСЏС‚СЊ...
+	Smalltalk15					= "SVM_16_Smalltalk15"				;//...РµРјСѓ Р»СѓС‡С€Рµ Р·Р°С‚РєРЅСѓС‚СЊСЃСЏ...
+	Smalltalk16					= "SVM_16_Smalltalk16"				;//...РѕРЅ РїРѕС‡С‚Рё РЅРµ РѕС‚РґС‹С…Р°РµС‚...
+	Smalltalk17					= "SVM_16_Smalltalk17"				;//...РѕРЅ РЅРµ РјРѕР¶РµС‚ СѓРіРѕРґРёС‚СЊ РІСЃРµРј...
+	Smalltalk18					= "SVM_16_Smalltalk18"				;//...РѕРЅ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ Р±РѕР»С‚Р°РµС‚...
+	Smalltalk19					= "SVM_16_Smalltalk19"				;//...СЌС‚Рѕ СЃРµРєСЂРµС‚...
+	Smalltalk20					= "SVM_16_Smalltalk20"				;//...РІСЃРµ РѕР± СЌС‚РѕРј Р·РЅР°СЋС‚...
+	Smalltalk21					= "SVM_16_Smalltalk21"				;//...СЏ РµР№ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµ СЃРєР°Р¶Сѓ...
+	Smalltalk22					= "SVM_16_Smalltalk22"				;//...РІСЃРµ Р±СѓРґРµС‚ С‚РѕР»СЊРєРѕ С…СѓР¶Рµ...
+	Smalltalk23					= "SVM_16_Smalltalk23"				;//...РЅРѕ СЌС‚Рѕ СѓР¶Р°СЃРЅРѕ...
+	Smalltalk24					= "SVM_16_Smalltalk24"				;//...СЏ РІСЃРµРіРґР° СЌС‚Рѕ РіРѕРІРѕСЂРёР»Р°...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_16_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_16_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_16_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_16_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_16_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_16_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_16_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_16_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_16_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_16_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_16_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_16_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_16_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_16_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_16_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_16_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_16_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_16_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_16_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_16_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_16_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_16_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_16_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_16_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_16_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_16_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_16_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_16_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_16_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_16_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_16_TEMPEL_2_GALGEN"			;//Выйдя из храма, и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_16_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_16_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_16_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_16_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_16_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_16_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_16_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_16_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_16_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_16_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_16_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_16_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_16_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_16_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_16_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_16_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР°, Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_16_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_16_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_16_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_16_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_16_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_16_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_16_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_16_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_16_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_16_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_16_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_16_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_16_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_16_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_16_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_16_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_16_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 	
-	ADDON_WRONGARMOR			= "SVM_16_Addon_WrongArmor";				//Надень что-нибудь приличное. Мне просто неприятно видеть тебя в таком хламе.
+	ADDON_WRONGARMOR			= "SVM_16_Addon_WrongArmor";				//РќР°РґРµРЅСЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёР»РёС‡РЅРѕРµ. РњРЅРµ РїСЂРѕСЃС‚Рѕ РЅРµРїСЂРёСЏС‚РЅРѕ РІРёРґРµС‚СЊ С‚РµР±СЏ РІ С‚Р°РєРѕРј С…Р»Р°РјРµ.
 	
-	ADDON_DIEBANDIT				= "SVM_16_ADDON_DIEBANDIT";				//БАНДИТ!
-	ADDON_DIRTYPIRATE			= "SVM_16_ADDON_DIRTYPIRATE";			//ПИРАТ!
+	ADDON_DIEBANDIT				= "SVM_16_ADDON_DIEBANDIT";				//Р‘РђРќР”РРў!
+	ADDON_DIRTYPIRATE			= "SVM_16_ADDON_DIRTYPIRATE";			//РџРР РђРў!
 };
 
 instance SVM_17 (C_SVM)
 {
 	// ------ B_Say_GuildGreetings ---------------------------------------------------------------------------------------
-	MILGreetings				= 	"SVM_17_MILGreetings"				;//За короля!
-	PALGreetings				=	"SVM_17_PALGreetings"				;//За Инноса!
-	Weather						= 	"SVM_17_Weather"						;//Какая мерзкая погода!
+	MILGreetings				= 	"SVM_17_MILGreetings"				;//Р—Р° РєРѕСЂРѕР»СЏ!
+	PALGreetings				=	"SVM_17_PALGreetings"				;//Р—Р° РРЅРЅРѕСЃР°!
+	Weather						= 	"SVM_17_Weather"						;//РљР°РєР°СЏ РјРµСЂР·РєР°СЏ РїРѕРіРѕРґР°!
 	// ------ B_Say_AttackReason -----------------------------------------------------------------------------------------
-	IGetYouStill				= 	"SVM_17_IGetYouStill"				;//Я все-таки достал тебя!
-	DieEnemy					=	"SVM_17_DieEnemy"					;//Сейчас ты получишь!
-	DieMonster					=	"SVM_17_DieMonster"					;//Еще одной грязной твари настал конец!
-	DirtyThief					=	"SVM_17_DirtyThief"					;//Грязный воришка! Ну, подожди!
-	HandsOff					=	"SVM_17_HandsOff"					;//Убери свои грязные руки!
-	SheepKiller					=	"SVM_17_SheepKiller"					;//Этот кусок дерьма убивает наших овец!
-	SheepKillerMonster			=	"SVM_17_SheepKillerMonster"			;//Этот мерзкий монстр ворует наших овец!
-	YouMurderer					=	"SVM_17_YouMurderer"					;//Убийца!
-	DieStupidBeast				=	"SVM_17_DieStupidBeast"				;//Зверям здесь не место!
-	YouDareHitMe				=	"SVM_17_YouDareHitMe"				;//Ну, подожди, сукин сын!
-	YouAskedForIt				=	"SVM_17_YouAskedForIt"				;//Ты сам напросился!
-	ThenIBeatYouOutOfHere		=	"SVM_17_ThenIBeatYouOutOfHere"		;//Сейчас я вышвырну тебя отсюда!
-	WhatDidYouDoInThere			=	"SVM_17_WhatDidYouDoInThere"			;//Что тебе здесь надо, а?!
-	WillYouStopFighting			=	"SVM_17_WillYouStopFighting"			;//Ты прекратишь?!
+	IGetYouStill				= 	"SVM_17_IGetYouStill"				;//РЇ РІСЃРµ-С‚Р°РєРё РґРѕСЃС‚Р°Р» С‚РµР±СЏ!
+	DieEnemy					=	"SVM_17_DieEnemy"					;//РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ!
+	DieMonster					=	"SVM_17_DieMonster"					;//Р•С‰Рµ РѕРґРЅРѕР№ РіСЂСЏР·РЅРѕР№ С‚РІР°СЂРё РЅР°СЃС‚Р°Р» РєРѕРЅРµС†!
+	DirtyThief					=	"SVM_17_DirtyThief"					;//Р“СЂСЏР·РЅС‹Р№ РІРѕСЂРёС€РєР°! РќСѓ, РїРѕРґРѕР¶РґРё!
+	HandsOff					=	"SVM_17_HandsOff"					;//РЈР±РµСЂРё СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	SheepKiller					=	"SVM_17_SheepKiller"					;//Р­С‚РѕС‚ РєСѓСЃРѕРє РґРµСЂСЊРјР° СѓР±РёРІР°РµС‚ РЅР°С€РёС… РѕРІРµС†!
+	SheepKillerMonster			=	"SVM_17_SheepKillerMonster"			;//Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РјРѕРЅСЃС‚СЂ РІРѕСЂСѓРµС‚ РЅР°С€РёС… РѕРІРµС†!
+	YouMurderer					=	"SVM_17_YouMurderer"					;//РЈР±РёР№С†Р°!
+	DieStupidBeast				=	"SVM_17_DieStupidBeast"				;//Р—РІРµСЂСЏРј Р·РґРµСЃСЊ РЅРµ РјРµСЃС‚Рѕ!
+	YouDareHitMe				=	"SVM_17_YouDareHitMe"				;//РќСѓ, РїРѕРґРѕР¶РґРё, СЃСѓРєРёРЅ СЃС‹РЅ!
+	YouAskedForIt				=	"SVM_17_YouAskedForIt"				;//РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ!
+	ThenIBeatYouOutOfHere		=	"SVM_17_ThenIBeatYouOutOfHere"		;//РЎРµР№С‡Р°СЃ СЏ РІС‹С€РІС‹СЂРЅСѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°!
+	WhatDidYouDoInThere			=	"SVM_17_WhatDidYouDoInThere"			;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅР°РґРѕ, Р°?!
+	WillYouStopFighting			=	"SVM_17_WillYouStopFighting"			;//РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ?!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	KillEnemy					= 	"SVM_17_KillEnemy"					;//Умри, подонок!
-	EnemyKilled					=	"SVM_17_EnemyKilled"				;//Получил, подонок?!
-	MonsterKilled				=	"SVM_17_MonsterKilled"				;//Еще одним монстром стало меньше!
-	ThiefDown					=	"SVM_17_ThiefDown"					;//Даже не пытайся воровать у меня!
-	rumfummlerDown				=	"SVM_17_rumfummlerDown"				;//В будущем, держи свои руки подальше от чужих вещей!
-	SheepAttackerDown			=	"SVM_17_SheepAttackerDown"			;//Никогда больше так не делай! Это наши овцы!
-	KillMurderer				=	"SVM_17_KillMurderer"				;//Умри, убийца!
-	StupidBeastKilled			=	"SVM_17_StupidBeastKilled"			;//Тупая тварь!
-	NeverHitMeAgain				=	"SVM_17_NeverHitMeAgain"				;//Даже не пытайся поднимать оружие против меня!
-	YouBetterShouldHaveListened	=	"SVM_17_YouBetterShouldHaveListened"	;//Тебе стоило послушать меня!
-	GetUpAndBeGone				=	"SVM_17_GetUpAndBeGone"				;//А теперь убирайся отсюда!
-	NeverEnterRoomAgain			=	"SVM_17_NeverEnterRoomAgain"			;//И больше не попадайся мне на глаза!
-	ThereIsNoFightingHere		=	"SVM_17_ThereIsNoFightingHere"		;//Драки здесь запрещены, понятно? Пусть это будет тебе уроком!
+	KillEnemy					= 	"SVM_17_KillEnemy"					;//РЈРјСЂРё, РїРѕРґРѕРЅРѕРє!
+	EnemyKilled					=	"SVM_17_EnemyKilled"				;//РџРѕР»СѓС‡РёР», РїРѕРґРѕРЅРѕРє?!
+	MonsterKilled				=	"SVM_17_MonsterKilled"				;//Р•С‰Рµ РѕРґРЅРёРј РјРѕРЅСЃС‚СЂРѕРј СЃС‚Р°Р»Рѕ РјРµРЅСЊС€Рµ!
+	ThiefDown					=	"SVM_17_ThiefDown"					;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РІРѕСЂРѕРІР°С‚СЊ Сѓ РјРµРЅСЏ!
+	rumfummlerDown				=	"SVM_17_rumfummlerDown"				;//Р’ Р±СѓРґСѓС‰РµРј, РґРµСЂР¶Рё СЃРІРѕРё СЂСѓРєРё РїРѕРґР°Р»СЊС€Рµ РѕС‚ С‡СѓР¶РёС… РІРµС‰РµР№!
+	SheepAttackerDown			=	"SVM_17_SheepAttackerDown"			;//РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ С‚Р°Рє РЅРµ РґРµР»Р°Р№! Р­С‚Рѕ РЅР°С€Рё РѕРІС†С‹!
+	KillMurderer				=	"SVM_17_KillMurderer"				;//РЈРјСЂРё, СѓР±РёР№С†Р°!
+	StupidBeastKilled			=	"SVM_17_StupidBeastKilled"			;//РўСѓРїР°СЏ С‚РІР°СЂСЊ!
+	NeverHitMeAgain				=	"SVM_17_NeverHitMeAgain"				;//Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРґРЅРёРјР°С‚СЊ РѕСЂСѓР¶РёРµ РїСЂРѕС‚РёРІ РјРµРЅСЏ!
+	YouBetterShouldHaveListened	=	"SVM_17_YouBetterShouldHaveListened"	;//РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ!
+	GetUpAndBeGone				=	"SVM_17_GetUpAndBeGone"				;//Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	NeverEnterRoomAgain			=	"SVM_17_NeverEnterRoomAgain"			;//Р Р±РѕР»СЊС€Рµ РЅРµ РїРѕРїР°РґР°Р№СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	ThereIsNoFightingHere		=	"SVM_17_ThereIsNoFightingHere"		;//Р”СЂР°РєРё Р·РґРµСЃСЊ Р·Р°РїСЂРµС‰РµРЅС‹, РїРѕРЅСЏС‚РЅРѕ? РџСѓСЃС‚СЊ СЌС‚Рѕ Р±СѓРґРµС‚ С‚РµР±Рµ СѓСЂРѕРєРѕРј!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	SpareMe						=	"SVM_17_SpareMe"						;//Не трогай меня!
-	RunAway						= 	"SVM_17_RunAway"						;//Я ухожу отсюда!
+	SpareMe						=	"SVM_17_SpareMe"						;//РќРµ С‚СЂРѕРіР°Р№ РјРµРЅСЏ!
+	RunAway						= 	"SVM_17_RunAway"						;//РЇ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
-	Alarm						=	"SVM_17_Alarm"					;//ТРЕВОГА!
-	Guards						=	"SVM_17_Guards"					;//СТРАЖА!
-	Help						=	"SVM_17_Help"					;//Помогите!
+	Alarm						=	"SVM_17_Alarm"					;//РўР Р•Р’РћР“Рђ!
+	Guards						=	"SVM_17_Guards"					;//РЎРўР РђР–Рђ!
+	Help						=	"SVM_17_Help"					;//РџРѕРјРѕРіРёС‚Рµ!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
-	GoodMonsterKill				=	"SVM_17_GoodMonsterKill"			;//Отлично!
-	GoodKill					= 	"SVM_17_GoodKill"				;//Да, покажи этой свинье, где раки зимуют!
+	GoodMonsterKill				=	"SVM_17_GoodMonsterKill"			;//РћС‚Р»РёС‡РЅРѕ!
+	GoodKill					= 	"SVM_17_GoodKill"				;//Р”Р°, РїРѕРєР°Р¶Рё СЌС‚РѕР№ СЃРІРёРЅСЊРµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 	// ------ B_AssessTalk -----------------------------------------------------------------------------------------------
-	NOTNOW						= 	"SVM_17_NOTNOW"					;//Оставь меня в покое!
+	NOTNOW						= 	"SVM_17_NOTNOW"					;//РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	// ------ ZS_Attack ----------------------------------------------------------------------------------------------------
-	RunCoward					=	"SVM_17_RunCoward"				;//Прекрати! Трус!
+	RunCoward					=	"SVM_17_RunCoward"				;//РџСЂРµРєСЂР°С‚Рё! РўСЂСѓСЃ!
 	// ------ ZS_ClearRoom -------------------------------------------------------------------------------------------------
-	GetOutOfHere				=	"SVM_17_GetOutOfHere"			;//Убирайся отсюда!
-	WhyAreYouInHere				=	"SVM_17_WhyAreYouInHere"		;//Что тебе здесь нужно!? Уходи!
-	YesGoOutOfHere				= 	"SVM_17_YesGoOutOfHere"			;//Да, проваливай отсюда!
+	GetOutOfHere				=	"SVM_17_GetOutOfHere"			;//РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	WhyAreYouInHere				=	"SVM_17_WhyAreYouInHere"		;//Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ!? РЈС…РѕРґРё!
+	YesGoOutOfHere				= 	"SVM_17_YesGoOutOfHere"			;//Р”Р°, РїСЂРѕРІР°Р»РёРІР°Р№ РѕС‚СЃСЋРґР°!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
-	WhatsThisSupposedToBe		=	"SVM_17_WhatsThisSupposedToBe"	;//Эй, ты, что тебе здесь нужно?
-	YouDisturbedMySlumber		=	"SVM_17_YouDisturbedMySlumber"	;//(просыпается) В чем дело?
+	WhatsThisSupposedToBe		=	"SVM_17_WhatsThisSupposedToBe"	;//Р­Р№, С‚С‹, С‡С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	YouDisturbedMySlumber		=	"SVM_17_YouDisturbedMySlumber"	;//(РїСЂРѕСЃС‹РїР°РµС‚СЃСЏ) Р’ С‡РµРј РґРµР»Рѕ?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
-	ITookYourGold				=	"SVM_17_ITookYourGold"			;//Спасибо за золото, герой!
-	ShitNoGold					=	"SVM_17_ShitNoGold"				;//Ах ты, сосунок, у тебя даже золота с собой нет!
-	ITakeYourWeapon				=	"SVM_17_ITakeYourWeapon"			;//Я думаю, лучше забрать твое оружие.
+	ITookYourGold				=	"SVM_17_ITookYourGold"			;//РЎРїР°СЃРёР±Рѕ Р·Р° Р·РѕР»РѕС‚Рѕ, РіРµСЂРѕР№!
+	ShitNoGold					=	"SVM_17_ShitNoGold"				;//РђС… С‚С‹, СЃРѕСЃСѓРЅРѕРє, Сѓ С‚РµР±СЏ РґР°Р¶Рµ Р·РѕР»РѕС‚Р° СЃ СЃРѕР±РѕР№ РЅРµС‚!
+	ITakeYourWeapon				=	"SVM_17_ITakeYourWeapon"			;//РЇ РґСѓРјР°СЋ, Р»СѓС‡С€Рµ Р·Р°Р±СЂР°С‚СЊ С‚РІРѕРµ РѕСЂСѓР¶РёРµ.
 	// ------ ZS_ReactToDamage ---------------------------------------------------------------------------------------------
-	WhatAreYouDoing				=	"SVM_17_WhatAreYouDoing"			;//Смотри! Еще раз, и ты пожалеешь об этом.
+	WhatAreYouDoing				=	"SVM_17_WhatAreYouDoing"			;//РЎРјРѕС‚СЂРё! Р•С‰Рµ СЂР°Р·, Рё С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	// ------ ZS_ReactToWeapon ---------------------------------------------------------------------------------------------
-	LookingForTroubleAgain		=	"SVM_17_LookingForTroubleAgain"	;//Тебе все еще мало?
-	StopMagic					=	"SVM_17_StopMagic"				;//Прекрати это магическое дерьмо!
-	ISaidStopMagic				=	"SVM_17_ISaidStopMagic"			;//Прекрати немедленно!!!
-	WeaponDown					=	"SVM_17_WeaponDown"				;//Убери оружие!
-	ISaidWeaponDown				=	"SVM_17_ISaidWeaponDown"		;//Ты уберешь это чертово оружие?!
-	WiseMove					=	"SVM_17_WiseMove"				;//Умный мальчик!
+	LookingForTroubleAgain		=	"SVM_17_LookingForTroubleAgain"	;//РўРµР±Рµ РІСЃРµ РµС‰Рµ РјР°Р»Рѕ?
+	StopMagic					=	"SVM_17_StopMagic"				;//РџСЂРµРєСЂР°С‚Рё СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ РґРµСЂСЊРјРѕ!
+	ISaidStopMagic				=	"SVM_17_ISaidStopMagic"			;//РџСЂРµРєСЂР°С‚Рё РЅРµРјРµРґР»РµРЅРЅРѕ!!!
+	WeaponDown					=	"SVM_17_WeaponDown"				;//РЈР±РµСЂРё РѕСЂСѓР¶РёРµ!
+	ISaidWeaponDown				=	"SVM_17_ISaidWeaponDown"		;//РўС‹ СѓР±РµСЂРµС€СЊ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РѕСЂСѓР¶РёРµ?!
+	WiseMove					=	"SVM_17_WiseMove"				;//РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє!
 	// ------ ZS_Unconscious ------------------------------------------------------------------------------------------------
-	NextTimeYoureInForIt		=	"SVM_17_NextTimeYoureInForIt"	;//(себе под нос) Мы еще посмотрим...
-	OhMyHead					=	"SVM_17_OhMyHead"				;//(себе под нос) Ох, моя голова...
+	NextTimeYoureInForIt		=	"SVM_17_NextTimeYoureInForIt"	;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РњС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј...
+	OhMyHead					=	"SVM_17_OhMyHead"				;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РћС…, РјРѕСЏ РіРѕР»РѕРІР°...
 	// ------ ZS_WatchFight -------------------------------------------------------------------------------------------------
-	TheresAFight				=	"SVM_17_TheresAFight"			;//(страстно) А-ах, драка!
-	OhMyGodItsAFight			=	"SVM_17_OhMyGodItsAFight"		;//(потрясенно) Ох, бог мой, драка!
-	GoodVictory					=	"SVM_17_GoodVictory"			;//(дьявольский смех) Ты показал ему, кто здесь главный!
-	NotBad						= 	"SVM_17_NotBad"					;//(одобрительно) Неплохо...
-	OhMyGodHesDown				=	"SVM_17_OhMyGodHesDown"			;//(себе под нос) Бог мой! Какая жестокость...
-	CheerFriend01				=	"SVM_17_CheerFriend01"			;//Задай ему!
-	CheerFriend02				=	"SVM_17_CheerFriend02"			;//Покажи ему, где раки зимуют!
-	CheerFriend03				=	"SVM_17_CheerFriend03"			;//Да, задай ему!
-	Ooh01						=	"SVM_17_Ooh01"					;//Обороняйся!
-	Ooh02						=	"SVM_17_Ooh02"					;//Осторожно!
-	Ooh03						=	"SVM_17_Ooh03"					;//Ох! Это, наверное, больно!
+	TheresAFight				=	"SVM_17_TheresAFight"			;//(СЃС‚СЂР°СЃС‚РЅРѕ) Рђ-Р°С…, РґСЂР°РєР°!
+	OhMyGodItsAFight			=	"SVM_17_OhMyGodItsAFight"		;//(РїРѕС‚СЂСЏСЃРµРЅРЅРѕ) РћС…, Р±РѕРі РјРѕР№, РґСЂР°РєР°!
+	GoodVictory					=	"SVM_17_GoodVictory"			;//(РґСЊСЏРІРѕР»СЊСЃРєРёР№ СЃРјРµС…) РўС‹ РїРѕРєР°Р·Р°Р» РµРјСѓ, РєС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№!
+	NotBad						= 	"SVM_17_NotBad"					;//(РѕРґРѕР±СЂРёС‚РµР»СЊРЅРѕ) РќРµРїР»РѕС…Рѕ...
+	OhMyGodHesDown				=	"SVM_17_OhMyGodHesDown"			;//(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р‘РѕРі РјРѕР№! РљР°РєР°СЏ Р¶РµСЃС‚РѕРєРѕСЃС‚СЊ...
+	CheerFriend01				=	"SVM_17_CheerFriend01"			;//Р—Р°РґР°Р№ РµРјСѓ!
+	CheerFriend02				=	"SVM_17_CheerFriend02"			;//РџРѕРєР°Р¶Рё РµРјСѓ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
+	CheerFriend03				=	"SVM_17_CheerFriend03"			;//Р”Р°, Р·Р°РґР°Р№ РµРјСѓ!
+	Ooh01						=	"SVM_17_Ooh01"					;//РћР±РѕСЂРѕРЅСЏР№СЃСЏ!
+	Ooh02						=	"SVM_17_Ooh02"					;//РћСЃС‚РѕСЂРѕР¶РЅРѕ!
+	Ooh03						=	"SVM_17_Ooh03"					;//РћС…! Р­С‚Рѕ, РЅР°РІРµСЂРЅРѕРµ, Р±РѕР»СЊРЅРѕ!
 	// ----------------------------------------------------------------------------------------------------------------------
-	WhatWasThat					= "SVM_17_WhatWasThat"				;//(про себя, просыпаясь) Что это было?!
+	WhatWasThat					= "SVM_17_WhatWasThat"				;//(РїСЂРѕ СЃРµР±СЏ, РїСЂРѕСЃС‹РїР°СЏСЃСЊ) Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ?!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GetOutOfMyBed				= "SVM_17_GetOutOfMyBed"			;//Убирайся с моей кровати!
-	Awake						= "SVM_17_Awake"					;//(зевает)
+	GetOutOfMyBed				= "SVM_17_GetOutOfMyBed"			;//РЈР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ РєСЂРѕРІР°С‚Рё!
+	Awake						= "SVM_17_Awake"					;//(Р·РµРІР°РµС‚)
 	// ----------------------------------------------------------------------------------------------------------------------
-	ABS_COMMANDER     			= "SVM_17_ABS_COMMANDER"    		;//Говорят, ты ходил к командующему и все уладил.
-	ABS_MONASTERY    			= "SVM_17_ABS_MONASTERY"    		;//Говорят, ты ходил к отцу Парлану и искупил свои грехи.
-	ABS_FARM       				= "SVM_17_ABS_FARM"        			;//Говорят, ты ходил к Ли и все уладил.
-	ABS_GOOD       				= "SVM_17_ABS_GOOD"        			;//Это хорошо.
+	ABS_COMMANDER     			= "SVM_17_ABS_COMMANDER"    		;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_MONASTERY    			= "SVM_17_ABS_MONASTERY"    		;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РёСЃРєСѓРїРёР» СЃРІРѕРё РіСЂРµС…Рё.
+	ABS_FARM       				= "SVM_17_ABS_FARM"        			;//Р“РѕРІРѕСЂСЏС‚, С‚С‹ С…РѕРґРёР» Рє Р›Рё Рё РІСЃРµ СѓР»Р°РґРёР».
+	ABS_GOOD       				= "SVM_17_ABS_GOOD"        			;//Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
  	// -------------------------
-	SHEEPKILLER_CRIME   		= "SVM_17_SHEEPKILLER_CRIME"   		;//Ты убивал наших овец! Убирайся!
-	ATTACK_CRIME     			= "SVM_17_ATTACK_CRIME"    			;//Ты грубое животное, я не хочу иметь с тобой никаких дел.
-	THEFT_CRIME      			= "SVM_17_THEFT_CRIME"    			;//Я не разговариваю с ворами - уходи!
+	SHEEPKILLER_CRIME   		= "SVM_17_SHEEPKILLER_CRIME"   		;//РўС‹ СѓР±РёРІР°Р» РЅР°С€РёС… РѕРІРµС†! РЈР±РёСЂР°Р№СЃСЏ!
+	ATTACK_CRIME     			= "SVM_17_ATTACK_CRIME"    			;//РўС‹ РіСЂСѓР±РѕРµ Р¶РёРІРѕС‚РЅРѕРµ, СЏ РЅРµ С…РѕС‡Сѓ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РЅРёРєР°РєРёС… РґРµР».
+	THEFT_CRIME      			= "SVM_17_THEFT_CRIME"    			;//РЇ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ СЃ РІРѕСЂР°РјРё - СѓС…РѕРґРё!
 	// -------------------------
-	PAL_CITY_CRIME     			= "SVM_17_PAL_CITY_CRIME"   		;//Ты опозорил себя своим поведением. Лорду Хагену это не понравится!
-	MIL_CITY_CRIME     			= "SVM_17_MIL_CITY_CRIME"   		;//Ты позоришь своим поведением городскую стражу! Лорд Андрэ потребует от тебя объяснений!
-	CITY_CRIME       			= "SVM_17_CITY_CRIME"    			;//Лорд Андрэ узнает о том, что ты сделал!
+	PAL_CITY_CRIME     			= "SVM_17_PAL_CITY_CRIME"   		;//РўС‹ РѕРїРѕР·РѕСЂРёР» СЃРµР±СЏ СЃРІРѕРёРј РїРѕРІРµРґРµРЅРёРµРј. Р›РѕСЂРґСѓ РҐР°РіРµРЅСѓ СЌС‚Рѕ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ!
+	MIL_CITY_CRIME     			= "SVM_17_MIL_CITY_CRIME"   		;//РўС‹ РїРѕР·РѕСЂРёС€СЊ СЃРІРѕРёРј РїРѕРІРµРґРµРЅРёРµРј РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ! Р›РѕСЂРґ РђРЅРґСЂСЌ РїРѕС‚СЂРµР±СѓРµС‚ РѕС‚ С‚РµР±СЏ РѕР±СЉСЏСЃРЅРµРЅРёР№!
+	CITY_CRIME       			= "SVM_17_CITY_CRIME"    			;//Р›РѕСЂРґ РђРЅРґСЂСЌ СѓР·РЅР°РµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р»!
 	// -------------------------
- 	MONA_CRIME       			= "SVM_17_MONA_CRIME"    			;//Ты неправильно вел себя. Иди к отцу Парлану и покайся.
-	FARM_CRIME      			= "SVM_17_FARM_CRIME"    			;//Ли узнает о том, что ты сделал и накажет тебя!
- 	OC_CRIME       				= "SVM_17_OC_CRIME"     			;//Командующий Гаронд потребует от тебя объяснений!
+ 	MONA_CRIME       			= "SVM_17_MONA_CRIME"    			;//РўС‹ РЅРµРїСЂР°РІРёР»СЊРЅРѕ РІРµР» СЃРµР±СЏ. РРґРё Рє РѕС‚С†Сѓ РџР°СЂР»Р°РЅСѓ Рё РїРѕРєР°Р№СЃСЏ.
+	FARM_CRIME      			= "SVM_17_FARM_CRIME"    			;//Р›Рё СѓР·РЅР°РµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» Рё РЅР°РєР°Р¶РµС‚ С‚РµР±СЏ!
+ 	OC_CRIME       				= "SVM_17_OC_CRIME"     			;//РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РїРѕС‚СЂРµР±СѓРµС‚ РѕС‚ С‚РµР±СЏ РѕР±СЉСЏСЃРЅРµРЅРёР№!
 	// ----------------------------------------------------------------------------------------------------------------------
-	GOLD_1000					= "SVM_17_GOLD_1000"					;//1000 золотых монет.
-	GOLD_950					= "SVM_17_GOLD_950"					;//950 золотых монет.
-	GOLD_900					= "SVM_17_GOLD_900"					;//900 золотых монет.
-	GOLD_850					= "SVM_17_GOLD_850"					;//850 золотых монет.
-	GOLD_800					= "SVM_17_GOLD_800"					;//800 золотых монет.
-	GOLD_750					= "SVM_17_GOLD_750"					;//750 золотых монет.
-	GOLD_700					= "SVM_17_GOLD_700"					;//700 золотых монет.
-	GOLD_650					= "SVM_17_GOLD_650"					;//650 золотых монет.
-	GOLD_600					= "SVM_17_GOLD_600"					;//600 золотых монет.
-	GOLD_550					= "SVM_17_GOLD_550"					;//550 золотых монет.
-	GOLD_500					= "SVM_17_GOLD_500"					;//500 золотых монет.
-	GOLD_450					= "SVM_17_GOLD_450"					;//450 золотых монет.
-	GOLD_400					= "SVM_17_GOLD_400"					;//400 золотых монет.
-	GOLD_350					= "SVM_17_GOLD_350"					;//350 золотых монет.
-	GOLD_300					= "SVM_17_GOLD_300"					;//300 золотых монет.
-	GOLD_250					= "SVM_17_GOLD_250"					;//250 золотых монет.
-	GOLD_200					= "SVM_17_GOLD_200"					;//200 золотых монет.
-	GOLD_150					= "SVM_17_GOLD_150"					;//150 золотых монет.
-	GOLD_100					= "SVM_17_GOLD_100"					;//100 золотых монет.
-	GOLD_90						= "SVM_17_GOLD_90"					;//90 золотых монет.
-	GOLD_80						= "SVM_17_GOLD_80"					;//80 золотых монет.
-	GOLD_70						= "SVM_17_GOLD_70"					;//70 золотых монет.
-	GOLD_60						= "SVM_17_GOLD_60"					;//60 золотых монет.
-	GOLD_50						= "SVM_17_GOLD_50"					;//50 золотых монет.
-	GOLD_40						= "SVM_17_GOLD_40"					;//40 золотых монет.
-	GOLD_30						= "SVM_17_GOLD_30"					;//30 золотых монет.
-	GOLD_20						= "SVM_17_GOLD_20"					;//20 золотых монет.
-	GOLD_10						= "SVM_17_GOLD_10"					;//10 золотых монет.
+	GOLD_1000					= "SVM_17_GOLD_1000"					;//1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_950					= "SVM_17_GOLD_950"					;//950 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_900					= "SVM_17_GOLD_900"					;//900 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_850					= "SVM_17_GOLD_850"					;//850 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_800					= "SVM_17_GOLD_800"					;//800 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_750					= "SVM_17_GOLD_750"					;//750 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_700					= "SVM_17_GOLD_700"					;//700 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_650					= "SVM_17_GOLD_650"					;//650 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_600					= "SVM_17_GOLD_600"					;//600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_550					= "SVM_17_GOLD_550"					;//550 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_500					= "SVM_17_GOLD_500"					;//500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_450					= "SVM_17_GOLD_450"					;//450 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_400					= "SVM_17_GOLD_400"					;//400 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_350					= "SVM_17_GOLD_350"					;//350 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_300					= "SVM_17_GOLD_300"					;//300 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_250					= "SVM_17_GOLD_250"					;//250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_200					= "SVM_17_GOLD_200"					;//200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_150					= "SVM_17_GOLD_150"					;//150 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_100					= "SVM_17_GOLD_100"					;//100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_90						= "SVM_17_GOLD_90"					;//90 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_80						= "SVM_17_GOLD_80"					;//80 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_70						= "SVM_17_GOLD_70"					;//70 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_60						= "SVM_17_GOLD_60"					;//60 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_50						= "SVM_17_GOLD_50"					;//50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_40						= "SVM_17_GOLD_40"					;//40 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_30						= "SVM_17_GOLD_30"					;//30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_20						= "SVM_17_GOLD_20"					;//20 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	GOLD_10						= "SVM_17_GOLD_10"					;//10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	// -----------------------------------------------------------------------------------------------------------------------
-	Smalltalk01					= "SVM_17_Smalltalk01"				;//...правда? Как интересно...
-	Smalltalk02					= "SVM_17_Smalltalk02"				;//...я не верю в это...
-	Smalltalk03					= "SVM_17_Smalltalk03"				;//...мой муж думает по-другому...
-	Smalltalk04					= "SVM_17_Smalltalk04"				;//...ладно, не говори мне об этом...
-	Smalltalk05					= "SVM_17_Smalltalk05"				;//...я видела это сама...
-	Smalltalk06					= "SVM_17_Smalltalk06"				;//...ты хочешь сказать...
-	Smalltalk07					= "SVM_17_Smalltalk07"				;//...не говори об этом никому...
-	Smalltalk08					= "SVM_17_Smalltalk08"				;//...совсем жизни не стало...
-	Smalltalk09					= "SVM_17_Smalltalk09"				;//...кто это сказал?..
-	Smalltalk10					= "SVM_17_Smalltalk10"				;//...если бы я не видела это собственными глазами...
-	Smalltalk11					= "SVM_17_Smalltalk11"				;//...кто-то должен делать это...
-	Smalltalk12					= "SVM_17_Smalltalk12"				;//...я слышала другое...
-	Smalltalk13					= "SVM_17_Smalltalk13"				;//...как это типично для него, правда?..
-	Smalltalk14					= "SVM_17_Smalltalk14"				;//...ему нельзя доверять...
-	Smalltalk15					= "SVM_17_Smalltalk15"				;//...ему лучше заткнуться...
-	Smalltalk16					= "SVM_17_Smalltalk16"				;//...он почти не отдыхает...
-	Smalltalk17					= "SVM_17_Smalltalk17"				;//...он не может угодить всем...
-	Smalltalk18					= "SVM_17_Smalltalk18"				;//...он слишком много болтает...
-	Smalltalk19					= "SVM_17_Smalltalk19"				;//...это секрет...
-	Smalltalk20					= "SVM_17_Smalltalk20"				;//...все об этом знают...
-	Smalltalk21					= "SVM_17_Smalltalk21"				;//...я ей больше ничего не скажу...
-	Smalltalk22					= "SVM_17_Smalltalk22"				;//...все будет только хуже...
-	Smalltalk23					= "SVM_17_Smalltalk23"				;//...но это ужасно...
-	Smalltalk24					= "SVM_17_Smalltalk24"				;//...я всегда это говорила...
+	Smalltalk01					= "SVM_17_Smalltalk01"				;//...РїСЂР°РІРґР°? РљР°Рє РёРЅС‚РµСЂРµСЃРЅРѕ...
+	Smalltalk02					= "SVM_17_Smalltalk02"				;//...СЏ РЅРµ РІРµСЂСЋ РІ СЌС‚Рѕ...
+	Smalltalk03					= "SVM_17_Smalltalk03"				;//...РјРѕР№ РјСѓР¶ РґСѓРјР°РµС‚ РїРѕ-РґСЂСѓРіРѕРјСѓ...
+	Smalltalk04					= "SVM_17_Smalltalk04"				;//...Р»Р°РґРЅРѕ, РЅРµ РіРѕРІРѕСЂРё РјРЅРµ РѕР± СЌС‚РѕРј...
+	Smalltalk05					= "SVM_17_Smalltalk05"				;//...СЏ РІРёРґРµР»Р° СЌС‚Рѕ СЃР°РјР°...
+	Smalltalk06					= "SVM_17_Smalltalk06"				;//...С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ...
+	Smalltalk07					= "SVM_17_Smalltalk07"				;//...РЅРµ РіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј РЅРёРєРѕРјСѓ...
+	Smalltalk08					= "SVM_17_Smalltalk08"				;//...СЃРѕРІСЃРµРј Р¶РёР·РЅРё РЅРµ СЃС‚Р°Р»Рѕ...
+	Smalltalk09					= "SVM_17_Smalltalk09"				;//...РєС‚Рѕ СЌС‚Рѕ СЃРєР°Р·Р°Р»?..
+	Smalltalk10					= "SVM_17_Smalltalk10"				;//...РµСЃР»Рё Р±С‹ СЏ РЅРµ РІРёРґРµР»Р° СЌС‚Рѕ СЃРѕР±СЃС‚РІРµРЅРЅС‹РјРё РіР»Р°Р·Р°РјРё...
+	Smalltalk11					= "SVM_17_Smalltalk11"				;//...РєС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ СЌС‚Рѕ...
+	Smalltalk12					= "SVM_17_Smalltalk12"				;//...СЏ СЃР»С‹С€Р°Р»Р° РґСЂСѓРіРѕРµ...
+	Smalltalk13					= "SVM_17_Smalltalk13"				;//...РєР°Рє СЌС‚Рѕ С‚РёРїРёС‡РЅРѕ РґР»СЏ РЅРµРіРѕ, РїСЂР°РІРґР°?..
+	Smalltalk14					= "SVM_17_Smalltalk14"				;//...РµРјСѓ РЅРµР»СЊР·СЏ РґРѕРІРµСЂСЏС‚СЊ...
+	Smalltalk15					= "SVM_17_Smalltalk15"				;//...РµРјСѓ Р»СѓС‡С€Рµ Р·Р°С‚РєРЅСѓС‚СЊСЃСЏ...
+	Smalltalk16					= "SVM_17_Smalltalk16"				;//...РѕРЅ РїРѕС‡С‚Рё РЅРµ РѕС‚РґС‹С…Р°РµС‚...
+	Smalltalk17					= "SVM_17_Smalltalk17"				;//...РѕРЅ РЅРµ РјРѕР¶РµС‚ СѓРіРѕРґРёС‚СЊ РІСЃРµРј...
+	Smalltalk18					= "SVM_17_Smalltalk18"				;//...РѕРЅ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ Р±РѕР»С‚Р°РµС‚...
+	Smalltalk19					= "SVM_17_Smalltalk19"				;//...СЌС‚Рѕ СЃРµРєСЂРµС‚...
+	Smalltalk20					= "SVM_17_Smalltalk20"				;//...РІСЃРµ РѕР± СЌС‚РѕРј Р·РЅР°СЋС‚...
+	Smalltalk21					= "SVM_17_Smalltalk21"				;//...СЏ РµР№ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµ СЃРєР°Р¶Сѓ...
+	Smalltalk22					= "SVM_17_Smalltalk22"				;//...РІСЃРµ Р±СѓРґРµС‚ С‚РѕР»СЊРєРѕ С…СѓР¶Рµ...
+	Smalltalk23					= "SVM_17_Smalltalk23"				;//...РЅРѕ СЌС‚Рѕ СѓР¶Р°СЃРЅРѕ...
+	Smalltalk24					= "SVM_17_Smalltalk24"				;//...СЏ РІСЃРµРіРґР° СЌС‚Рѕ РіРѕРІРѕСЂРёР»Р°...
 	// ----------------------------------------------------------------------------------------------------------------------
-	NoLearnNoPoints				= "SVM_17_NoLearnNoPoints"			;//Возвращайся, когда у тебя будет больше опыта.
-	NoLearnOverPersonalMAX		= "SVM_17_NoLearnOverPersonalMAX"	;//Тебе нужно больше, чем я в состоянии научить тебя.
-	NoLearnYoureBetter			= "SVM_17_NoLearnYoureBetter"		;//Я больше ничему не могу научить тебя. Ты стал слишком хорош.
-	YouLearnedSomething			= "SVM_17_YouLearnedSomething"		;//Понимаешь, ты уже лучше меня...
+	NoLearnNoPoints				= "SVM_17_NoLearnNoPoints"			;//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+	NoLearnOverPersonalMAX		= "SVM_17_NoLearnOverPersonalMAX"	;//РўРµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
+	NoLearnYoureBetter			= "SVM_17_NoLearnYoureBetter"		;//РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ. РўС‹ СЃС‚Р°Р» СЃР»РёС€РєРѕРј С…РѕСЂРѕС€.
+	YouLearnedSomething			= "SVM_17_YouLearnedSomething"		;//РџРѕРЅРёРјР°РµС€СЊ, С‚С‹ СѓР¶Рµ Р»СѓС‡С€Рµ РјРµРЅСЏ...
 	// ----------------------------------------------------------------------------------------------------------------------
-	UNTERSTADT					= "SVM_17_UNTERSTADT"				;//Сейчас ты находишься в нижней части города.
-	OBERSTADT					= "SVM_17_OBERSTADT"					;//Сейчас ты находишься в верхней части города.
-	TEMPEL						= "SVM_17_TEMPEL"					;//Сейчас ты находишься в храме.
-	MARKT						= "SVM_17_MARKT"						;//Сейчас ты находишься на рыночной площади.
-	GALGEN						= "SVM_17_GALGEN"					;//Сейчас ты находишься на Площади Правосудия перед казармами.
-	KASERNE						= "SVM_17_KASERNE"					;//Это казармы.
-	HAFEN						= "SVM_17_HAFEN"						;//Сейчас ты находишься в портовом квартале.
+	UNTERSTADT					= "SVM_17_UNTERSTADT"				;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	OBERSTADT					= "SVM_17_OBERSTADT"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	TEMPEL						= "SVM_17_TEMPEL"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ С…СЂР°РјРµ.
+	MARKT						= "SVM_17_MARKT"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	GALGEN						= "SVM_17_GALGEN"					;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	KASERNE						= "SVM_17_KASERNE"					;//Р­С‚Рѕ РєР°Р·Р°СЂРјС‹.
+	HAFEN						= "SVM_17_HAFEN"						;//РЎРµР№С‡Р°СЃ С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 	// -----------------------
-	WHERETO						= "SVM_17_WHERETO"					;//Куда ты хочешь попасть?
+	WHERETO						= "SVM_17_WHERETO"					;//РљСѓРґР° С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ?
 	// -----------------------
-	OBERSTADT_2_UNTERSTADT		= "SVM_17_OBERSTADT_2_UNTERSTADT"	;//Пройди через внутренние ворота, и ты окажешься в нижней части города.
-	UNTERSTADT_2_OBERSTADT		= "SVM_17_UNTERSTADT_2_OBERSTADT"	;//От южных ворот города начинается лестница, ведущая к внутренним городским воротам. Там и начинается верхний квартал.
-	UNTERSTADT_2_TEMPEL			= "SVM_17_UNTERSTADT_2_TEMPEL"		;//Пройди через проход у кузницы, и ты попадешь на храмовую площадь.
-	UNTERSTADT_2_HAFEN			= "SVM_17_UNTERSTADT_2_HAFEN"		;//Иди по дороге от кузницы вниз, и ты попадешь в порт.
-	TEMPEL_2_UNTERSTADT			= "SVM_17_TEMPEL_2_UNTERSTADT"		;//От храмовой площади в нижнюю часть города ведет проход.
-	TEMPEL_2_MARKT				= "SVM_17_TEMPEL_2_MARKT"			;//Встань лицом к храму, а затем иди влево, вдоль городской стены. Так ты попадешь на рынок.
-	TEMPEL_2_GALGEN				= "SVM_17_TEMPEL_2_GALGEN"			;//Выйдя из храма, и пройдя мимо таверны слева, ты попадешь на Площадь Правосудия.
-	MARKT_2_TEMPEL				= "SVM_17_MARKT_2_TEMPEL"			;//Пройдя вдоль высокой городской стены от рынка, ты попадешь в храм.
-	MARKT_2_KASERNE				= "SVM_17_MARKT_2_KASERNE"			;//Это огромное здание - казармы. Чтобы попасть в них, просто поднимись по лестнице от отеля.
-	MARKT_2_GALGEN				= "SVM_17_MARKT_2_GALGEN"			;//Просто пройди мимо казарм, и ты попадешь на Площадь Правосудия.
-	GALGEN_2_TEMPEL				= "SVM_17_GALGEN_2_TEMPEL"			;//Пройди по переулку от Площади Правосудия, и ты попадешь на храмовую площадь.
-	GALGEN_2_MARKT				= "SVM_17_GALGEN_2_MARKT"			;//Просто пройди мимо казарм, и ты попадешь на рыночную площадь.
-	GALGEN_2_KASERNE			= "SVM_17_GALGEN_2_KASERNE"			;//Это огромное здание - казармы. Просто поднимись по лестнице.
-	KASERNE_2_MARKT				= "SVM_17_KASERNE_2_MARKT"			;//Просто спустись по лестнице слева от главного входа, и ты попадешь на рыночную площадь.
-	KASERNE_2_GALGEN			= "SVM_17_KASERNE_2_GALGEN"			;//Просто спустись по лестнице справа от главного входа, и ты попадешь на Площадь Правосудия.
-	HAFEN_2_UNTERSTADT			= "SVM_17_HAFEN_2_UNTERSTADT"		;//Иди вверх по дороге от гавани, и ты попадешь в нижнюю часть города.
+	OBERSTADT_2_UNTERSTADT		= "SVM_17_OBERSTADT_2_UNTERSTADT"	;//РџСЂРѕР№РґРё С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёРµ РІРѕСЂРѕС‚Р°, Рё С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	UNTERSTADT_2_OBERSTADT		= "SVM_17_UNTERSTADT_2_OBERSTADT"	;//РћС‚ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂРѕРґР° РЅР°С‡РёРЅР°РµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ Рє РІРЅСѓС‚СЂРµРЅРЅРёРј РіРѕСЂРѕРґСЃРєРёРј РІРѕСЂРѕС‚Р°Рј. РўР°Рј Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	UNTERSTADT_2_TEMPEL			= "SVM_17_UNTERSTADT_2_TEMPEL"		;//РџСЂРѕР№РґРё С‡РµСЂРµР· РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	UNTERSTADT_2_HAFEN			= "SVM_17_UNTERSTADT_2_HAFEN"		;//РРґРё РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РєСѓР·РЅРёС†С‹ РІРЅРёР·, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РїРѕСЂС‚.
+	TEMPEL_2_UNTERSTADT			= "SVM_17_TEMPEL_2_UNTERSTADT"		;//РћС‚ С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° РІРµРґРµС‚ РїСЂРѕС…РѕРґ.
+	TEMPEL_2_MARKT				= "SVM_17_TEMPEL_2_MARKT"			;//Р’СЃС‚Р°РЅСЊ Р»РёС†РѕРј Рє С…СЂР°РјСѓ, Р° Р·Р°С‚РµРј РёРґРё РІР»РµРІРѕ, РІРґРѕР»СЊ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹. РўР°Рє С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕРє.
+	TEMPEL_2_GALGEN				= "SVM_17_TEMPEL_2_GALGEN"			;//Р’С‹Р№РґСЏ РёР· С…СЂР°РјР°, Рё РїСЂРѕР№РґСЏ РјРёРјРѕ С‚Р°РІРµСЂРЅС‹ СЃР»РµРІР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	MARKT_2_TEMPEL				= "SVM_17_MARKT_2_TEMPEL"			;//РџСЂРѕР№РґСЏ РІРґРѕР»СЊ РІС‹СЃРѕРєРѕР№ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚РµРЅС‹ РѕС‚ СЂС‹РЅРєР°, С‚С‹ РїРѕРїР°РґРµС€СЊ РІ С…СЂР°Рј.
+	MARKT_2_KASERNE				= "SVM_17_MARKT_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РЅРёС…, РїСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РѕС‚ РѕС‚РµР»СЏ.
+	MARKT_2_GALGEN				= "SVM_17_MARKT_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	GALGEN_2_TEMPEL				= "SVM_17_GALGEN_2_TEMPEL"			;//РџСЂРѕР№РґРё РїРѕ РїРµСЂРµСѓР»РєСѓ РѕС‚ РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° С…СЂР°РјРѕРІСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_MARKT				= "SVM_17_GALGEN_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РјРёРјРѕ РєР°Р·Р°СЂРј, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	GALGEN_2_KASERNE			= "SVM_17_GALGEN_2_KASERNE"			;//Р­С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р·РґР°РЅРёРµ - РєР°Р·Р°СЂРјС‹. РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	KASERNE_2_MARKT				= "SVM_17_KASERNE_2_MARKT"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° СЂС‹РЅРѕС‡РЅСѓСЋ РїР»РѕС‰Р°РґСЊ.
+	KASERNE_2_GALGEN			= "SVM_17_KASERNE_2_GALGEN"			;//РџСЂРѕСЃС‚Рѕ СЃРїСѓСЃС‚РёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ СЃРїСЂР°РІР° РѕС‚ РіР»Р°РІРЅРѕРіРѕ РІС…РѕРґР°, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РЅР° РџР»РѕС‰Р°РґСЊ РџСЂР°РІРѕСЃСѓРґРёСЏ.
+	HAFEN_2_UNTERSTADT			= "SVM_17_HAFEN_2_UNTERSTADT"		;//РРґРё РІРІРµСЂС… РїРѕ РґРѕСЂРѕРіРµ РѕС‚ РіР°РІР°РЅРё, Рё С‚С‹ РїРѕРїР°РґРµС€СЊ РІ РЅРёР¶РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
 	// -------------------------------------------------------------------------------------
-	Dead						= "SVM_17_Dead"						;//Аааааа!
-	Aargh_1						= "SVM_17_Aargh_1"					;//Аааааа!
-	Aargh_2						= "SVM_17_Aargh_2"					;//Аааааа!
-	Aargh_3						= "SVM_17_Aargh_3"					;//Аааааа!
+	Dead						= "SVM_17_Dead"						;//РђР°Р°Р°Р°Р°!
+	Aargh_1						= "SVM_17_Aargh_1"					;//РђР°Р°Р°Р°Р°!
+	Aargh_2						= "SVM_17_Aargh_2"					;//РђР°Р°Р°Р°Р°!
+	Aargh_3						= "SVM_17_Aargh_3"					;//РђР°Р°Р°Р°Р°!
 	
 	//-------------------------------- Addon ------------------------------------------------
 
@@ -3733,12 +3733,12 @@ INSTANCE SVM_18	(C_SVM)
 
 INSTANCE SVM_19	(C_SVM)
 {
-	DieEnemy     	= "SVM_19_DieEnemy"     	;//(шипит) Вот он!
-	RunCoward    	= "SVM_19_RunCoward"    	;//(шипит) Мы до тебя доберемся!
-	Dead      		= "SVM_19_Dead"      	;//Аааааа!
-	Aargh_1      	= "SVM_19_Aargh_1"     	;//Аааааа!
-	Aargh_2      	= "SVM_19_Aargh_2"     	;//Аааааа!
-	Aargh_3      	= "SVM_19_Aargh_3"     	;//Аааааа!
+	DieEnemy     	= "SVM_19_DieEnemy"     	;//(С€РёРїРёС‚) Р’РѕС‚ РѕРЅ!
+	RunCoward    	= "SVM_19_RunCoward"    	;//(С€РёРїРёС‚) РњС‹ РґРѕ С‚РµР±СЏ РґРѕР±РµСЂРµРјСЃСЏ!
+	Dead      		= "SVM_19_Dead"      	;//РђР°Р°Р°Р°Р°!
+	Aargh_1      	= "SVM_19_Aargh_1"     	;//РђР°Р°Р°Р°Р°!
+	Aargh_2      	= "SVM_19_Aargh_2"     	;//РђР°Р°Р°Р°Р°!
+	Aargh_3      	= "SVM_19_Aargh_3"     	;//РђР°Р°Р°Р°Р°!
 };
  
 

@@ -41,11 +41,11 @@ FUNC INT DIA_Sengrath_Hello_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //Я знал! Я знал, что кому-нибудь это удастся!
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Ты прошел через Проход? Наш посланник смог пробиться, да?
-	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //Нет, ваш посланник не смог пересечь Проход. Я пришел по приказу лорда Хагена.
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(рычит) Проклятые орки...
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Ну, командующий Гаронд наверняка захочет поговорить с тобой. Ты найдешь его в этом большом здании, охраняемом двумя рыцарями.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //РЇ Р·РЅР°Р»! РЇ Р·РЅР°Р», С‡С‚Рѕ РєРѕРјСѓ-РЅРёР±СѓРґСЊ СЌС‚Рѕ СѓРґР°СЃС‚СЃСЏ!
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //РўС‹ РїСЂРѕС€РµР» С‡РµСЂРµР· РџСЂРѕС…РѕРґ? РќР°С€ РїРѕСЃР»Р°РЅРЅРёРє СЃРјРѕРі РїСЂРѕР±РёС‚СЊСЃСЏ, РґР°?
+	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //РќРµС‚, РІР°С€ РїРѕСЃР»Р°РЅРЅРёРє РЅРµ СЃРјРѕРі РїРµСЂРµСЃРµС‡СЊ РџСЂРѕС…РѕРґ. РЇ РїСЂРёС€РµР» РїРѕ РїСЂРёРєР°Р·Сѓ Р»РѕСЂРґР° РҐР°РіРµРЅР°.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(СЂС‹С‡РёС‚) РџСЂРѕРєР»СЏС‚С‹Рµ РѕСЂРєРё...
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //РќСѓ, РєРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РЅР°РІРµСЂРЅСЏРєР° Р·Р°С…РѕС‡РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ СЌС‚РѕРј Р±РѕР»СЊС€РѕРј Р·РґР°РЅРёРё, РѕС…СЂР°РЅСЏРµРјРѕРј РґРІСѓРјСЏ СЂС‹С†Р°СЂСЏРјРё.
 };
 // ************************************************************
 // 			  	Equipment 
@@ -57,7 +57,7 @@ INSTANCE DIA_Sengrath_Equipment (C_INFO)
 	condition	= DIA_Sengrath_Equipment_Condition;
 	information	= DIA_Sengrath_Equipment_Info;
 	permanent	= FALSE;
-	description = "Где я могу найти снаряжение здесь?";
+	description = "Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЃРЅР°СЂСЏР¶РµРЅРёРµ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Sengrath_Equipment_Condition()
@@ -66,13 +66,13 @@ FUNC INT DIA_Sengrath_Equipment_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Equipment_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Где я могу найти снаряжение здесь?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //Тандор распоряжается оружием. Управляющий Энгор отвечает за все остальное.
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //А что насчет магии?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //У нас есть свитки с заклинаниями. Если тебе понадобится один из них, дай мне знать.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЃРЅР°СЂСЏР¶РµРЅРёРµ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //РўР°РЅРґРѕСЂ СЂР°СЃРїРѕСЂСЏР¶Р°РµС‚СЃСЏ РѕСЂСѓР¶РёРµРј. РЈРїСЂР°РІР»СЏСЋС‰РёР№ Р­РЅРіРѕСЂ РѕС‚РІРµС‡Р°РµС‚ Р·Р° РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РјР°РіРёРё?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //РЈ РЅР°СЃ РµСЃС‚СЊ СЃРІРёС‚РєРё СЃ Р·Р°РєР»РёРЅР°РЅРёСЏРјРё. Р•СЃР»Рё С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РѕРґРёРЅ РёР· РЅРёС…, РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Сенграт продает свитки в замке.");
+	B_LogEntry (TOPIC_Trader_OC,"РЎРµРЅРіСЂР°С‚ РїСЂРѕРґР°РµС‚ СЃРІРёС‚РєРё РІ Р·Р°РјРєРµ.");
 };
 // ************************************************************
 // 			  	Lehrer
@@ -84,7 +84,7 @@ INSTANCE DIA_Sengrath_Perm (C_INFO)
 	condition	= DIA_Sengrath_Perm_Condition;
 	information	= DIA_Sengrath_Perm_Info;
 	permanent	= FALSE;
-	description = "А у кого здесь можно поучиться чему-нибудь?";
+	description = "Рђ Сѓ РєРѕРіРѕ Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РїРѕСѓС‡РёС‚СЊСЃСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };                       
 
 FUNC INT DIA_Sengrath_Perm_Condition()
@@ -93,19 +93,19 @@ FUNC INT DIA_Sengrath_Perm_Condition()
 };
 FUNC VOID DIA_Sengrath_Perm_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //Кто здесь может научить меня чему-нибудь?
+	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
 	
 	if (other.guild == GIL_KDF)
 	&& (Kapitel == 2)
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_01"); //Поговори с Милтеном - он здесь единственный маг.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_01"); //РџРѕРіРѕРІРѕСЂРё СЃ РњРёР»С‚РµРЅРѕРј - РѕРЅ Р·РґРµСЃСЊ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ РјР°Рі.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Спроси Керолота. Он обучает парней обращению с мечом. Может, и тебя он сможет чему-нибудь научить.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //РЎРїСЂРѕСЃРё РљРµСЂРѕР»РѕС‚Р°. РћРЅ РѕР±СѓС‡Р°РµС‚ РїР°СЂРЅРµР№ РѕР±СЂР°С‰РµРЅРёСЋ СЃ РјРµС‡РѕРј. РњРѕР¶РµС‚, Рё С‚РµР±СЏ РѕРЅ СЃРјРѕР¶РµС‚ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ.
 		
 		Log_CreateTopic (TOPIC_Teacher_OC,LOG_NOTE);
-		B_LogEntry (TOPIC_Teacher_OC,"Керолот тренирует мечников в замке.");
+		B_LogEntry (TOPIC_Teacher_OC,"РљРµСЂРѕР»РѕС‚ С‚СЂРµРЅРёСЂСѓРµС‚ РјРµС‡РЅРёРєРѕРІ РІ Р·Р°РјРєРµ.");
 	};
 };
 // ************************************************************
@@ -119,7 +119,7 @@ INSTANCE DIA_Sengrath_Scrolls (C_INFO)
 	information	= DIA_Sengrath_Scrolls_Info;
 	permanent	= TRUE;
 	trade		= TRUE;
-	description = "Покажи мне свои свитки.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё СЃРІРёС‚РєРё.";
 
 };                       
 
@@ -133,7 +133,7 @@ FUNC INT DIA_Sengrath_Scrolls_Condition()
 FUNC VOID DIA_Sengrath_Scrolls_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Sengrath_Scrolls_15_00"); //Покажи мне свои свитки.
+	AI_Output (other ,self,"DIA_Sengrath_Scrolls_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё СЃРІРёС‚РєРё.
 };
 
 // ************************************************************

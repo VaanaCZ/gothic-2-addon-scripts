@@ -1,7 +1,7 @@
 instance BDT_1085_Addon_Bloodwyn (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Бладвин";
+	name 		= "Р‘Р»Р°РґРІРёРЅ";
 	guild 		= GIL_BDT;
 	id 			= 1085;
 	voice 		= 4;//Stimme Lee

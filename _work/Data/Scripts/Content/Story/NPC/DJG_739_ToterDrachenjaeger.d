@@ -30,8 +30,8 @@ instance DJG_739_ToterDrachenjaeger (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 65); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 65); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_739;
@@ -39,7 +39,7 @@ instance DJG_739_ToterDrachenjaeger (Npc_Default)
 
 FUNC VOID Rtn_Start_739 ()
 {
-	TA_Sit_Bench						(08,00,23,00,"OW_ORC_LOOKOUT_05");	//Joly: Turm in Nähe der Newmine
+	TA_Sit_Bench						(08,00,23,00,"OW_ORC_LOOKOUT_05");	//Joly: Turm in NÐ´he der Newmine
     TA_Sit_Bench						(23,00,08,00,"OW_ORC_LOOKOUT_05");		
 };
 

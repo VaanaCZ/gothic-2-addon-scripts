@@ -30,7 +30,7 @@ instance DIA_Lehmar_ENTSCHULDIGUNG		(C_INFO)
 	condition	 = 	DIA_Lehmar_ENTSCHULDIGUNG_Condition;
 	information	 = 	DIA_Lehmar_ENTSCHULDIGUNG_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Lehmar_ENTSCHULDIGUNG_Condition ()
@@ -40,10 +40,10 @@ func int DIA_Lehmar_ENTSCHULDIGUNG_Condition ()
 
 func void DIA_Lehmar_ENTSCHULDIGUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Lehmar_ENTSCHULDIGUNG_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Lehmar_ENTSCHULDIGUNG_09_01"); //(скучая) Сколько ты хочешь?
-	AI_Output (other, self, "DIA_Lehmar_ENTSCHULDIGUNG_15_02"); //Что значит 'сколько'?
-	AI_Output (self, other, "DIA_Lehmar_ENTSCHULDIGUNG_09_03"); //Я ростовщик и ты пришел ко мне. Что тебе еще может быть нужно от меня? Деньги, конечно.
+	AI_Output (other, self, "DIA_Lehmar_ENTSCHULDIGUNG_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Lehmar_ENTSCHULDIGUNG_09_01"); //(СЃРєСѓС‡Р°СЏ) РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (other, self, "DIA_Lehmar_ENTSCHULDIGUNG_15_02"); //Р§С‚Рѕ Р·РЅР°С‡РёС‚ 'СЃРєРѕР»СЊРєРѕ'?
+	AI_Output (self, other, "DIA_Lehmar_ENTSCHULDIGUNG_09_03"); //РЇ СЂРѕСЃС‚РѕРІС‰РёРє Рё С‚С‹ РїСЂРёС€РµР» РєРѕ РјРЅРµ. Р§С‚Рѕ С‚РµР±Рµ РµС‰Рµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ? Р”РµРЅСЊРіРё, РєРѕРЅРµС‡РЅРѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -56,7 +56,7 @@ instance DIA_Lehmar_GELDLEIHEN		(C_INFO)
 	condition	 = 	DIA_Lehmar_GELDLEIHEN_Condition;
 	information	 = 	DIA_Lehmar_GELDLEIHEN_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Одолжи мне денег!";
+	description	 = 	"РћРґРѕР»Р¶Рё РјРЅРµ РґРµРЅРµРі!";
 };
 //----------------------------------------
 var int DIA_Lehmar_GELDLEIHEN_noPerm;
@@ -72,30 +72,30 @@ func int DIA_Lehmar_GELDLEIHEN_Condition ()
 
 func void DIA_Lehmar_GELDLEIHEN_Info ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_15_00"); //Одолжи мне денег!
-	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_09_01"); //Конечно! Сколько ты хочешь? Я беру 20 процентов!
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_15_00"); //РћРґРѕР»Р¶Рё РјРЅРµ РґРµРЅРµРі!
+	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_09_01"); //РљРѕРЅРµС‡РЅРѕ! РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ? РЇ Р±РµСЂСѓ 20 РїСЂРѕС†РµРЅС‚РѕРІ!
 
 	Info_ClearChoices	(DIA_Lehmar_GELDLEIHEN);
 
-	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "Я подумаю над этим.", DIA_Lehmar_GELDLEIHEN_back );
-	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "1000 золотых.", DIA_Lehmar_GELDLEIHEN_1000 );
-	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, " 200 золотых.", DIA_Lehmar_GELDLEIHEN_200 );
-	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "   50 золотых.", DIA_Lehmar_GELDLEIHEN_50 );
+	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.", DIA_Lehmar_GELDLEIHEN_back );
+	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "1000 Р·РѕР»РѕС‚С‹С….", DIA_Lehmar_GELDLEIHEN_1000 );
+	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, " 200 Р·РѕР»РѕС‚С‹С….", DIA_Lehmar_GELDLEIHEN_200 );
+	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "   50 Р·РѕР»РѕС‚С‹С….", DIA_Lehmar_GELDLEIHEN_50 );
 	
 	
 };
 func void DIA_Lehmar_GELDLEIHEN_back ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_back_15_00"); //Я подумаю над этим.
-	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_back_09_01"); //Думай же быстрее! Не трать мое время попусту!
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_back_15_00"); //РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
+	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_back_09_01"); //Р”СѓРјР°Р№ Р¶Рµ Р±С‹СЃС‚СЂРµРµ! РќРµ С‚СЂР°С‚СЊ РјРѕРµ РІСЂРµРјСЏ РїРѕРїСѓСЃС‚Сѓ!
 
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Lehmar_GELDLEIHEN_50 ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_50_15_00"); //50 золотых.
-	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_50_09_01"); //Мелочь, да? Я хочу, чтобы ты вернул их завтра, понятно?
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_50_15_00"); //50 Р·РѕР»РѕС‚С‹С….
+	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_50_09_01"); //РњРµР»РѕС‡СЊ, РґР°? РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РІРµСЂРЅСѓР» РёС… Р·Р°РІС‚СЂР°, РїРѕРЅСЏС‚РЅРѕ?
 
 	CreateInvItems (self, ItMi_Gold, 50);
 	B_GiveInvItems (self, other, ItMi_Gold, 50);
@@ -110,8 +110,8 @@ func void DIA_Lehmar_GELDLEIHEN_50 ()
 
 func void DIA_Lehmar_GELDLEIHEN_200 ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_200_15_00"); //200 золотых.
-	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_200_09_01"); //Это большая сумма денег. Я хочу видеть тебя завтра, и деньги тоже, понятно?
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_200_15_00"); //200 Р·РѕР»РѕС‚С‹С….
+	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_200_09_01"); //Р­С‚Рѕ Р±РѕР»СЊС€Р°СЏ СЃСѓРјРјР° РґРµРЅРµРі. РЇ С…РѕС‡Сѓ РІРёРґРµС‚СЊ С‚РµР±СЏ Р·Р°РІС‚СЂР°, Рё РґРµРЅСЊРіРё С‚РѕР¶Рµ, РїРѕРЅСЏС‚РЅРѕ?
 	
 
 	CreateInvItems (self, ItMi_Gold, 200);
@@ -127,9 +127,9 @@ func void DIA_Lehmar_GELDLEIHEN_200 ()
 
 func void DIA_Lehmar_GELDLEIHEN_1000 ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_1000_15_00"); //1000 золотых.
-	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_1000_09_01"); //У тебя с головой все в порядке?
-	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_1000_09_02"); //Я дам тебе 100. И не забудь вернуть их завтра!
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_1000_15_00"); //1000 Р·РѕР»РѕС‚С‹С….
+	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_1000_09_01"); //РЈ С‚РµР±СЏ СЃ РіРѕР»РѕРІРѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_1000_09_02"); //РЇ РґР°Рј С‚РµР±Рµ 100. Р РЅРµ Р·Р°Р±СѓРґСЊ РІРµСЂРЅСѓС‚СЊ РёС… Р·Р°РІС‚СЂР°!
 	
 
 	CreateInvItems (self, ItMi_Gold, 100);
@@ -153,7 +153,7 @@ instance DIA_Lehmar_WARUMGELD		(C_INFO)
 	condition	 = 	DIA_Lehmar_WARUMGELD_Condition;
 	information	 = 	DIA_Lehmar_WARUMGELD_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Ты всегда так легко раздаешь деньги?";
+	description	 = 	"РўС‹ РІСЃРµРіРґР° С‚Р°Рє Р»РµРіРєРѕ СЂР°Р·РґР°РµС€СЊ РґРµРЅСЊРіРё?";
 };
 
 func int DIA_Lehmar_WARUMGELD_Condition ()
@@ -166,10 +166,10 @@ func int DIA_Lehmar_WARUMGELD_Condition ()
 
 func void DIA_Lehmar_WARUMGELD_Info ()
 {
-	AI_Output (other, self, "DIA_Lehmar_WARUMGELD_15_00"); //Ты всегда так легко раздаешь деньги?
-	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_01"); //Не волнуйся. Ты вернешься. Или я найду тебя и убью. Все просто.
-	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_02"); //У тебя такая запоминающаяся внешность, что мне не составит труда найти тебя.
-	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_03"); //Так что даже не думай обмануть меня.
+	AI_Output (other, self, "DIA_Lehmar_WARUMGELD_15_00"); //РўС‹ РІСЃРµРіРґР° С‚Р°Рє Р»РµРіРєРѕ СЂР°Р·РґР°РµС€СЊ РґРµРЅСЊРіРё?
+	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_01"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ. РўС‹ РІРµСЂРЅРµС€СЊСЃСЏ. РР»Рё СЏ РЅР°Р№РґСѓ С‚РµР±СЏ Рё СѓР±СЊСЋ. Р’СЃРµ РїСЂРѕСЃС‚Рѕ.
+	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_02"); //РЈ С‚РµР±СЏ С‚Р°РєР°СЏ Р·Р°РїРѕРјРёРЅР°СЋС‰Р°СЏСЃСЏ РІРЅРµС€РЅРѕСЃС‚СЊ, С‡С‚Рѕ РјРЅРµ РЅРµ СЃРѕСЃС‚Р°РІРёС‚ С‚СЂСѓРґР° РЅР°Р№С‚Рё С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_03"); //РўР°Рє С‡С‚Рѕ РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info geldeintreiben
@@ -198,18 +198,18 @@ func int DIA_Lehmar_GELDEINTREIBEN_Condition ()
 
 func void DIA_Lehmar_GELDEINTREIBEN_Info ()
 {
-	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_09_00"); //Ты не вернул долг, ублюдок! Верни мне мои деньги! А так как мне пришлось напоминать тебе об этом, процент возрастает.
-	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_09_01"); //Теперь это обойдется тебе в 30 процентов вместо обычных 20.
+	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_09_00"); //РўС‹ РЅРµ РІРµСЂРЅСѓР» РґРѕР»Рі, СѓР±Р»СЋРґРѕРє! Р’РµСЂРЅРё РјРЅРµ РјРѕРё РґРµРЅСЊРіРё! Рђ С‚Р°Рє РєР°Рє РјРЅРµ РїСЂРёС€Р»РѕСЃСЊ РЅР°РїРѕРјРёРЅР°С‚СЊ С‚РµР±Рµ РѕР± СЌС‚РѕРј, РїСЂРѕС†РµРЅС‚ РІРѕР·СЂР°СЃС‚Р°РµС‚.
+	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_09_01"); //РўРµРїРµСЂСЊ СЌС‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ 30 РїСЂРѕС†РµРЅС‚РѕРІ РІРјРµСЃС‚Рѕ РѕР±С‹С‡РЅС‹С… 20.
 
 
 	Info_ClearChoices	(DIA_Lehmar_GELDEINTREIBEN);
-	Info_AddChoice	(DIA_Lehmar_GELDEINTREIBEN, "Я верну свой долг.", DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen );
-	Info_AddChoice	(DIA_Lehmar_GELDEINTREIBEN, "Я ничего тебе не дам.", DIA_Lehmar_GELDEINTREIBEN_kannstmich );
+	Info_AddChoice	(DIA_Lehmar_GELDEINTREIBEN, "РЇ РІРµСЂРЅСѓ СЃРІРѕР№ РґРѕР»Рі.", DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen );
+	Info_AddChoice	(DIA_Lehmar_GELDEINTREIBEN, "РЇ РЅРёС‡РµРіРѕ С‚РµР±Рµ РЅРµ РґР°Рј.", DIA_Lehmar_GELDEINTREIBEN_kannstmich );
 };
 func void DIA_Lehmar_GELDEINTREIBEN_kannstmich ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDEINTREIBEN_kannstmich_15_00"); //Я ничего тебе не дам.
-	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_kannstmich_09_01"); //Ох, нет, дашь!
+	AI_Output (other, self, "DIA_Lehmar_GELDEINTREIBEN_kannstmich_15_00"); //РЇ РЅРёС‡РµРіРѕ С‚РµР±Рµ РЅРµ РґР°Рј.
+	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_kannstmich_09_01"); //РћС…, РЅРµС‚, РґР°С€СЊ!
 	Lehmar_vorbei = TRUE;
 	AI_StopProcessInfos (self);		
 	
@@ -218,7 +218,7 @@ func void DIA_Lehmar_GELDEINTREIBEN_kannstmich ()
 
 func void DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_15_00"); //Я верну свой долг.
+	AI_Output (other, self, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_15_00"); //РЇ РІРµСЂРЅСѓ СЃРІРѕР№ РґРѕР»Рі.
 
 				 	///////////////////////////////////////////////////////////////////////	
 		 	
@@ -242,14 +242,14 @@ func void DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen ()
 	{
 		B_GiveInvItems (other, self, ItMi_Gold, Lehmar_GeldGeliehen_MitZinsen);
 		
-		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_01"); //Тебе повезло! А теперь проваливай!
+		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_01"); //РўРµР±Рµ РїРѕРІРµР·Р»Рѕ! Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№!
 		Lehmar_GeldGeliehen = 0;
 		AI_StopProcessInfos (self);		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_02"); //У тебя с собой нет столько денег! Ладно. Похоже, мне придется преподать тебе урок.
-		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_03"); //Ничего личного - мне просто нужно поддерживать свою репутацию.
+		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_02"); //РЈ С‚РµР±СЏ СЃ СЃРѕР±РѕР№ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ РґРµРЅРµРі! Р›Р°РґРЅРѕ. РџРѕС…РѕР¶Рµ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїСЂРµРїРѕРґР°С‚СЊ С‚РµР±Рµ СѓСЂРѕРє.
+		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_03"); //РќРёС‡РµРіРѕ Р»РёС‡РЅРѕРіРѕ - РјРЅРµ РїСЂРѕСЃС‚Рѕ РЅСѓР¶РЅРѕ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ СЃРІРѕСЋ СЂРµРїСѓС‚Р°С†РёСЋ.
 		Lehmar_vorbei = TRUE;
 		
 		AI_StopProcessInfos (self);		
@@ -258,7 +258,7 @@ func void DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen ()
 	};
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Geldzurьck
+//	Info GeldzurСЊck
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lehmar_GELDZURUECK		(C_INFO)
 {
@@ -267,7 +267,7 @@ instance DIA_Lehmar_GELDZURUECK		(C_INFO)
 	condition	 = 	DIA_Lehmar_GELDZURUECK_Condition;
 	information	 = 	DIA_Lehmar_GELDZURUECK_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Вот твои деньги!";
+	description	 = 	"Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё!";
 };
 func int DIA_Lehmar_GELDZURUECK_Condition ()
 {
@@ -280,13 +280,13 @@ func int DIA_Lehmar_GELDZURUECK_Condition ()
 
 func void DIA_Lehmar_GELDZURUECK_Info ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDZURUECK_15_00"); //Вот твои деньги!
+	AI_Output (other, self, "DIA_Lehmar_GELDZURUECK_15_00"); //Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё!
 
 	if  (RangerHelp_LehmarKohle == TRUE)
 	&& (Lehmar_GeldGeliehen_Day<=(Wld_GetDay()-2))
 	{
-		AI_Output (self, other, "DIA_Addon_Lehmar_GELDZURUECK_09_00"); //Оставь их. Ларес уже обо всем позаботился.
-		AI_Output (self, other, "DIA_Addon_Lehmar_GELDZURUECK_09_01"); //Похоже, вы с этим мошенником приятели, а? Ладно, это не мое дело. Удачи.
+		AI_Output (self, other, "DIA_Addon_Lehmar_GELDZURUECK_09_00"); //РћСЃС‚Р°РІСЊ РёС…. Р›Р°СЂРµСЃ СѓР¶Рµ РѕР±Рѕ РІСЃРµРј РїРѕР·Р°Р±РѕС‚РёР»СЃСЏ.
+		AI_Output (self, other, "DIA_Addon_Lehmar_GELDZURUECK_09_01"); //РџРѕС…РѕР¶Рµ, РІС‹ СЃ СЌС‚РёРј РјРѕС€РµРЅРЅРёРєРѕРј РїСЂРёСЏС‚РµР»Рё, Р°? Р›Р°РґРЅРѕ, СЌС‚Рѕ РЅРµ РјРѕРµ РґРµР»Рѕ. РЈРґР°С‡Рё.
 		Lehmar_GeldGeliehen = 0;
 		AI_StopProcessInfos (self);		
 	}
@@ -313,14 +313,14 @@ func void DIA_Lehmar_GELDZURUECK_Info ()
 		{
 			B_GiveInvItems (other, self, ItMi_Gold, Lehmar_GeldGeliehen_MitZinsen);
 				
-			AI_Output (self, other, "DIA_Lehmar_GELDZURUECK_09_01"); //Превосходно! Приятно иметь с тобой дело.
+			AI_Output (self, other, "DIA_Lehmar_GELDZURUECK_09_01"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ! РџСЂРёСЏС‚РЅРѕ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РґРµР»Рѕ.
 				
 			Lehmar_GeldGeliehen = 0;
 			AI_StopProcessInfos (self);		
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lehmar_GELDZURUECK_09_02"); //Здесь недостаточно! Возвращайся, когда у тебя будет вся сумма. У тебя еще есть время. Помни, 20 процентов!
+			AI_Output (self, other, "DIA_Lehmar_GELDZURUECK_09_02"); //Р—РґРµСЃСЊ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ! Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РІСЃСЏ СЃСѓРјРјР°. РЈ С‚РµР±СЏ РµС‰Рµ РµСЃС‚СЊ РІСЂРµРјСЏ. РџРѕРјРЅРё, 20 РїСЂРѕС†РµРЅС‚РѕРІ!
 			AI_StopProcessInfos (self);		
 		};
 	};
@@ -336,7 +336,7 @@ instance DIA_Lehmar_NOCHMALGELD		(C_INFO)
 	condition	 = 	DIA_Lehmar_NOCHMALGELD_Condition;
 	information	 = 	DIA_Lehmar_NOCHMALGELD_Info;
 	permanent	 =	TRUE;	//Joly: letzte Info die im KAPITEL 1 Stehen bleibt
-	description	 = 	"Могу я занять у тебя денег?";
+	description	 = 	"РњРѕРіСѓ СЏ Р·Р°РЅСЏС‚СЊ Сѓ С‚РµР±СЏ РґРµРЅРµРі?";
 };
 func int DIA_Lehmar_NOCHMALGELD_Condition ()
 {
@@ -348,17 +348,17 @@ func int DIA_Lehmar_NOCHMALGELD_Condition ()
 };
 func void DIA_Lehmar_NOCHMALGELD_Info ()
 {
-	AI_Output (other, self, "DIA_Lehmar_NOCHMALGELD_15_00"); //Могу я занять у тебя денег?
+	AI_Output (other, self, "DIA_Lehmar_NOCHMALGELD_15_00"); //РњРѕРіСѓ СЏ Р·Р°РЅСЏС‚СЊ Сѓ С‚РµР±СЏ РґРµРЅРµРі?
 
-	if (Npc_KnowsInfo(other, DIA_Lehmar_GELDEINTREIBEN))//Joly: SC hat Schulden nicht ordnungsgemдЯ zurьck gezahlt!
+	if (Npc_KnowsInfo(other, DIA_Lehmar_GELDEINTREIBEN))//Joly: SC hat Schulden nicht ordnungsgemРґРЇ zurСЊck gezahlt!
 	|| (Npc_KnowsInfo (other, DIA_Lehmar_BuchWeg))
 	{
-		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_01"); //Ты думаешь, я идиот? Проваливай!
+		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_01"); //РўС‹ РґСѓРјР°РµС€СЊ, СЏ РёРґРёРѕС‚? РџСЂРѕРІР°Р»РёРІР°Р№!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_02"); //Больше не можешь! Я понес большие издержки и теперь у меня на счету каждый цент.
-		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_03"); //Заходи через несколько дней!
+		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_02"); //Р‘РѕР»СЊС€Рµ РЅРµ РјРѕР¶РµС€СЊ! РЇ РїРѕРЅРµСЃ Р±РѕР»СЊС€РёРµ РёР·РґРµСЂР¶РєРё Рё С‚РµРїРµСЂСЊ Сѓ РјРµРЅСЏ РЅР° СЃС‡РµС‚Сѓ РєР°Р¶РґС‹Р№ С†РµРЅС‚.
+		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_03"); //Р—Р°С…РѕРґРё С‡РµСЂРµР· РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№!
 	};
 };
 
@@ -373,7 +373,7 @@ INSTANCE DIA_Lehmar_PICKPOCKET (C_INFO)
 	condition	= DIA_Lehmar_PICKPOCKET_Condition;
 	information	= DIA_Lehmar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть ее книгу будет легче легкого)";
+	description = "(РЈРєСЂР°СЃС‚СЊ РµРµ РєРЅРёРіСѓ Р±СѓРґРµС‚ Р»РµРіС‡Рµ Р»РµРіРєРѕРіРѕ)";
 };                       
 
 FUNC INT DIA_Lehmar_PICKPOCKET_Condition()
@@ -441,10 +441,10 @@ FUNC INT DIA_Lehmar_BuchWeg_Condition()
  
 FUNC VOID DIA_Lehmar_BuchWeg_Info()
 {	
-	AI_Output (self, other, "DIA_Lehmar_Add_09_00"); //(с сожалением) Какой-то гнусный вор украл мой гроссбух...
-	AI_Output (self, other, "DIA_Lehmar_Add_09_01"); //Ты случайно не имеешь к этому отношения, нет?
-	AI_Output (other, self, "DIA_Addon_Lehmar_Add_15_02"); //(усмехается) Я? Нет.
-	AI_Output (self, other, "DIA_Lehmar_Add_09_03"); //Да-да, хорошо. Уходи отсюда...
+	AI_Output (self, other, "DIA_Lehmar_Add_09_00"); //(СЃ СЃРѕР¶Р°Р»РµРЅРёРµРј) РљР°РєРѕР№-С‚Рѕ РіРЅСѓСЃРЅС‹Р№ РІРѕСЂ СѓРєСЂР°Р» РјРѕР№ РіСЂРѕСЃСЃР±СѓС…...
+	AI_Output (self, other, "DIA_Lehmar_Add_09_01"); //РўС‹ СЃР»СѓС‡Р°Р№РЅРѕ РЅРµ РёРјРµРµС€СЊ Рє СЌС‚РѕРјСѓ РѕС‚РЅРѕС€РµРЅРёСЏ, РЅРµС‚?
+	AI_Output (other, self, "DIA_Addon_Lehmar_Add_15_02"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РЇ? РќРµС‚.
+	AI_Output (self, other, "DIA_Lehmar_Add_09_03"); //Р”Р°-РґР°, С…РѕСЂРѕС€Рѕ. РЈС…РѕРґРё РѕС‚СЃСЋРґР°...
 	AI_StopProcessInfos (self);
 };
 

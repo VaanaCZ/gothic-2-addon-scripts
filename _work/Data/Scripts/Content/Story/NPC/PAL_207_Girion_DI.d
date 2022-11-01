@@ -2,7 +2,7 @@
 instance Pal_207_Girion_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Гирион";
+	name 		= "Р“РёСЂРёРѕРЅ";
 	guild 		= GIL_PAL;
 	id 			= 2070;
 	voice 		= 8;

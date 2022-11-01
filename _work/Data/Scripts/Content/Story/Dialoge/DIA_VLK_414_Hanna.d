@@ -46,7 +46,7 @@ FUNC INT DIA_Hanna_Hello_Condition()
  
 FUNC VOID DIA_Hanna_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Hanna_Hello_17_00"); //Ах, клиент - что я могу сделать для тебя?
+	AI_Output (self ,other,"DIA_Hanna_Hello_17_00"); //РђС…, РєР»РёРµРЅС‚ - С‡С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 };	
 
 //*****************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_Hanna_Room(C_INFO)
 	condition	= DIA_Hanna_Room_Condition;
 	information	= DIA_Hanna_Room_Info;
 	permanent	= FALSE;
-	description	= "Я хочу снять комнату.";
+	description	= "РЇ С…РѕС‡Сѓ СЃРЅСЏС‚СЊ РєРѕРјРЅР°С‚Сѓ.";
 };                       
 
 FUNC INT DIA_Hanna_Room_Condition()
@@ -69,23 +69,23 @@ FUNC INT DIA_Hanna_Room_Condition()
  
 FUNC VOID DIA_Hanna_Room_Info()
 {	
-	AI_Output (other,self ,"DIA_Hanna_Room_15_00"); //Я хочу снять комнату.
-	AI_Output (self ,other,"DIA_Hanna_Room_17_01"); //Ты обратился как раз по адресу.
+	AI_Output (other,self ,"DIA_Hanna_Room_15_00"); //РЇ С…РѕС‡Сѓ СЃРЅСЏС‚СЊ РєРѕРјРЅР°С‚Сѓ.
+	AI_Output (self ,other,"DIA_Hanna_Room_17_01"); //РўС‹ РѕР±СЂР°С‚РёР»СЃСЏ РєР°Рє СЂР°Р· РїРѕ Р°РґСЂРµСЃСѓ.
 	if (Npc_KnowsInfo (other, DIA_Lothar_Schlafen))
 	{
-		AI_Output (other, self, "DIA_Hanna_Add_15_03"); //Один из паладинов сказал мне, что я могу провести ночь здесь бесплатно...
+		AI_Output (other, self, "DIA_Hanna_Add_15_03"); //РћРґРёРЅ РёР· РїР°Р»Р°РґРёРЅРѕРІ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ РїСЂРѕРІРµСЃС‚Рё РЅРѕС‡СЊ Р·РґРµСЃСЊ Р±РµСЃРїР»Р°С‚РЅРѕ...
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Hanna_Add_15_00"); //Сколько стоит комната на ночь?
-		AI_Output (self, other, "DIA_Hanna_Add_17_01"); //Эта услуга абсолютно бесплатна.
-		AI_Output (self, other, "DIA_Hanna_Add_17_02"); //Паладины оплачивают ночлег всех путешественников.
-		AI_Output (other, self, "DIA_Hanna_Add_15_04"); //То есть, я могу остановиться здесь на ночь бесплатно?!
+		AI_Output (other, self, "DIA_Hanna_Add_15_00"); //РЎРєРѕР»СЊРєРѕ СЃС‚РѕРёС‚ РєРѕРјРЅР°С‚Р° РЅР° РЅРѕС‡СЊ?
+		AI_Output (self, other, "DIA_Hanna_Add_17_01"); //Р­С‚Р° СѓСЃР»СѓРіР° Р°Р±СЃРѕР»СЋС‚РЅРѕ Р±РµСЃРїР»Р°С‚РЅР°.
+		AI_Output (self, other, "DIA_Hanna_Add_17_02"); //РџР°Р»Р°РґРёРЅС‹ РѕРїР»Р°С‡РёРІР°СЋС‚ РЅРѕС‡Р»РµРі РІСЃРµС… РїСѓС‚РµС€РµСЃС‚РІРµРЅРЅРёРєРѕРІ.
+		AI_Output (other, self, "DIA_Hanna_Add_15_04"); //РўРѕ РµСЃС‚СЊ, СЏ РјРѕРіСѓ РѕСЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ Р·РґРµСЃСЊ РЅР° РЅРѕС‡СЊ Р±РµСЃРїР»Р°С‚РЅРѕ?!
 	};
 	
-	AI_Output (self, other, "DIA_Hanna_Add_17_05"); //Да, да.
-	AI_Output (self, other, "DIA_Hanna_Add_17_06"); //Просто поднимись вверх по лестнице.
-	AI_Output (self, other, "DIA_Hanna_Add_17_07"); //Пара коек там еще свободна.
+	AI_Output (self, other, "DIA_Hanna_Add_17_05"); //Р”Р°, РґР°.
+	AI_Output (self, other, "DIA_Hanna_Add_17_06"); //РџСЂРѕСЃС‚Рѕ РїРѕРґРЅРёРјРёСЃСЊ РІРІРµСЂС… РїРѕ Р»РµСЃС‚РЅРёС†Рµ.
+	AI_Output (self, other, "DIA_Hanna_Add_17_07"); //РџР°СЂР° РєРѕРµРє С‚Р°Рј РµС‰Рµ СЃРІРѕР±РѕРґРЅР°.
 	//AI_Output (self ,other,"DIA_Hanna_Room_17_02"); //Geh einfach nach oben und suche dir ein Bett.
 };
 
@@ -99,7 +99,7 @@ INSTANCE DIA_Hanna_WhyPay(C_INFO)
 	condition	= DIA_Hanna_WhyPay_Condition;
 	information	= DIA_Hanna_WhyPay_Info;
 	permanent	= FALSE;
-	description	= "А почему паладины платят за все?";
+	description	= "Рђ РїРѕС‡РµРјСѓ РїР°Р»Р°РґРёРЅС‹ РїР»Р°С‚СЏС‚ Р·Р° РІСЃРµ?";
 };                       
 
 FUNC INT DIA_Hanna_WhyPay_Condition()
@@ -112,13 +112,13 @@ FUNC INT DIA_Hanna_WhyPay_Condition()
  
 FUNC VOID DIA_Hanna_WhyPay_Info()
 {	
-	AI_Output (other, self, "DIA_Hanna_Add_15_12"); //А почему паладины платят за все?
-	AI_Output (self, other, "DIA_Hanna_Add_17_13"); //Я не знаю точно, с чем это связано.
-	AI_Output (self, other, "DIA_Hanna_Add_17_14"); //С одной стороны я думаю, они хотят, чтобы нищие не ошивались ночью на улицах. Так безопаснее для всех.
-	AI_Output (self, other, "DIA_Hanna_Add_17_15"); //Ну а с другой - они хотят завоевать расположение странствующих торговцев.
-	AI_Output (self, other, "DIA_Hanna_Add_17_16"); //Сейчас, когда фермеры подняли восстание, нам остается полагаться только на торговцев в вопросах обеспечения города продовольствием.
-	AI_Output (self, other, "DIA_Hanna_Add_17_17"); //Кроме того, я думаю, они хотят поднять немного моральный дух в городе.
-	AI_Output (self, other, "DIA_Hanna_Add_17_18"); //Лорд Андрэ даже приказал раздавать бесплатное пиво на Площади Правосудия.
+	AI_Output (other, self, "DIA_Hanna_Add_15_12"); //Рђ РїРѕС‡РµРјСѓ РїР°Р»Р°РґРёРЅС‹ РїР»Р°С‚СЏС‚ Р·Р° РІСЃРµ?
+	AI_Output (self, other, "DIA_Hanna_Add_17_13"); //РЇ РЅРµ Р·РЅР°СЋ С‚РѕС‡РЅРѕ, СЃ С‡РµРј СЌС‚Рѕ СЃРІСЏР·Р°РЅРѕ.
+	AI_Output (self, other, "DIA_Hanna_Add_17_14"); //РЎ РѕРґРЅРѕР№ СЃС‚РѕСЂРѕРЅС‹ СЏ РґСѓРјР°СЋ, РѕРЅРё С…РѕС‚СЏС‚, С‡С‚РѕР±С‹ РЅРёС‰РёРµ РЅРµ РѕС€РёРІР°Р»РёСЃСЊ РЅРѕС‡СЊСЋ РЅР° СѓР»РёС†Р°С…. РўР°Рє Р±РµР·РѕРїР°СЃРЅРµРµ РґР»СЏ РІСЃРµС….
+	AI_Output (self, other, "DIA_Hanna_Add_17_15"); //РќСѓ Р° СЃ РґСЂСѓРіРѕР№ - РѕРЅРё С…РѕС‚СЏС‚ Р·Р°РІРѕРµРІР°С‚СЊ СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ СЃС‚СЂР°РЅСЃС‚РІСѓСЋС‰РёС… С‚РѕСЂРіРѕРІС†РµРІ.
+	AI_Output (self, other, "DIA_Hanna_Add_17_16"); //РЎРµР№С‡Р°СЃ, РєРѕРіРґР° С„РµСЂРјРµСЂС‹ РїРѕРґРЅСЏР»Рё РІРѕСЃСЃС‚Р°РЅРёРµ, РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ РїРѕР»Р°РіР°С‚СЊСЃСЏ С‚РѕР»СЊРєРѕ РЅР° С‚РѕСЂРіРѕРІС†РµРІ РІ РІРѕРїСЂРѕСЃР°С… РѕР±РµСЃРїРµС‡РµРЅРёСЏ РіРѕСЂРѕРґР° РїСЂРѕРґРѕРІРѕР»СЊСЃС‚РІРёРµРј.
+	AI_Output (self, other, "DIA_Hanna_Add_17_17"); //РљСЂРѕРјРµ С‚РѕРіРѕ, СЏ РґСѓРјР°СЋ, РѕРЅРё С…РѕС‚СЏС‚ РїРѕРґРЅСЏС‚СЊ РЅРµРјРЅРѕРіРѕ РјРѕСЂР°Р»СЊРЅС‹Р№ РґСѓС… РІ РіРѕСЂРѕРґРµ.
+	AI_Output (self, other, "DIA_Hanna_Add_17_18"); //Р›РѕСЂРґ РђРЅРґСЂСЌ РґР°Р¶Рµ РїСЂРёРєР°Р·Р°Р» СЂР°Р·РґР°РІР°С‚СЊ Р±РµСЃРїР»Р°С‚РЅРѕРµ РїРёРІРѕ РЅР° РџР»РѕС‰Р°РґРё РџСЂР°РІРѕСЃСѓРґРёСЏ.
 };
 
 //*****************************************
@@ -131,7 +131,7 @@ INSTANCE DIA_Hanna_WerHier(C_INFO)
 	condition	= DIA_Hanna_WerHier_Condition;
 	information	= DIA_Hanna_WerHier_Info;
 	permanent	= TRUE;
-	description	= "Кто здесь живет сейчас?";
+	description	= "РљС‚Рѕ Р·РґРµСЃСЊ Р¶РёРІРµС‚ СЃРµР№С‡Р°СЃ?";
 };                       
 
 FUNC INT DIA_Hanna_WerHier_Condition()
@@ -144,10 +144,10 @@ FUNC INT DIA_Hanna_WerHier_Condition()
  
 FUNC VOID DIA_Hanna_WerHier_Info()
 {	
-	AI_Output (other, self, "DIA_Hanna_Add_15_08"); //Кто здесь живет сейчас?
-	AI_Output (self, other, "DIA_Hanna_Add_17_09"); //В основном странствующие торговцы с рынка.
-	AI_Output (other, self, "DIA_Hanna_Add_15_10"); //Ага.
-	AI_Output (self, other, "DIA_Hanna_Add_17_11"); //Даже не думай, чтобы пошарить в их пожитках! Мне не нужны здесь проблемы!
+	AI_Output (other, self, "DIA_Hanna_Add_15_08"); //РљС‚Рѕ Р·РґРµСЃСЊ Р¶РёРІРµС‚ СЃРµР№С‡Р°СЃ?
+	AI_Output (self, other, "DIA_Hanna_Add_17_09"); //Р’ РѕСЃРЅРѕРІРЅРѕРј СЃС‚СЂР°РЅСЃС‚РІСѓСЋС‰РёРµ С‚РѕСЂРіРѕРІС†С‹ СЃ СЂС‹РЅРєР°.
+	AI_Output (other, self, "DIA_Hanna_Add_15_10"); //РђРіР°.
+	AI_Output (self, other, "DIA_Hanna_Add_17_11"); //Р”Р°Р¶Рµ РЅРµ РґСѓРјР°Р№, С‡С‚РѕР±С‹ РїРѕС€Р°СЂРёС‚СЊ РІ РёС… РїРѕР¶РёС‚РєР°С…! РњРЅРµ РЅРµ РЅСѓР¶РЅС‹ Р·РґРµСЃСЊ РїСЂРѕР±Р»РµРјС‹!
 };
 
 //**********************************************
@@ -161,7 +161,7 @@ INSTANCE DIA_Hanna_City(C_INFO)
 	condition	= DIA_Hanna_City_Condition;
 	information	= DIA_Hanna_City_Info;
 	permanent	= TRUE;
-	description	= "Несколько вопросов о городе...";
+	description	= "РќРµСЃРєРѕР»СЊРєРѕ РІРѕРїСЂРѕСЃРѕРІ Рѕ РіРѕСЂРѕРґРµ...";
 };                       
 
 FUNC INT DIA_Hanna_City_Condition()
@@ -171,12 +171,12 @@ FUNC INT DIA_Hanna_City_Condition()
  
 FUNC VOID DIA_Hanna_City_Info()
 {	
-	AI_Output (other,self ,"DIA_Hanna_City_15_00"); //Несколько вопросов о городе...
+	AI_Output (other,self ,"DIA_Hanna_City_15_00"); //РќРµСЃРєРѕР»СЊРєРѕ РІРѕРїСЂРѕСЃРѕРІ Рѕ РіРѕСЂРѕРґРµ...
 	
 	Info_ClearChoices (DIA_Hanna_City);
 	Info_AddChoice (DIA_Hanna_City,DIALOG_BACK,DIA_Hanna_City_Back);
-	Info_AddChoice (DIA_Hanna_City,"Где я могу купить что-нибудь здесь?",DIA_Hanna_City_Buy);
-	Info_AddChoice (DIA_Hanna_City,"Расскажи мне о городе.",DIA_Hanna_City_City);
+	Info_AddChoice (DIA_Hanna_City,"Р“РґРµ СЏ РјРѕРіСѓ РєСѓРїРёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ?",DIA_Hanna_City_Buy);
+	Info_AddChoice (DIA_Hanna_City,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РіРѕСЂРѕРґРµ.",DIA_Hanna_City_City);
 };
 
 FUNC VOID DIA_Hanna_City_Back ()
@@ -186,19 +186,19 @@ FUNC VOID DIA_Hanna_City_Back ()
 
 FUNC VOID DIA_Hanna_City_Buy ()
 {
-	AI_Output (other,self ,"DIA_Hanna_City_Buy_15_00"); //Где я могу купить что-нибудь здесь?
-	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_01"); //Рынок находится прямо перед парадным входом  в отель. Я думаю, ты найдешь там все, что тебе нужно.
-	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_02"); //Также есть несколько лавок ремесленников в другой части города. Большинство из них находятся недалеко от городских ворот.
-	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_03"); //Также в порту ты найдешь торговца рыбой. Его лавка смотрит прямо на гавань.
+	AI_Output (other,self ,"DIA_Hanna_City_Buy_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РєСѓРїРёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_01"); //Р С‹РЅРѕРє РЅР°С…РѕРґРёС‚СЃСЏ РїСЂСЏРјРѕ РїРµСЂРµРґ РїР°СЂР°РґРЅС‹Рј РІС…РѕРґРѕРј  РІ РѕС‚РµР»СЊ. РЇ РґСѓРјР°СЋ, С‚С‹ РЅР°Р№РґРµС€СЊ С‚Р°Рј РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ.
+	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_02"); //РўР°РєР¶Рµ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ Р»Р°РІРѕРє СЂРµРјРµСЃР»РµРЅРЅРёРєРѕРІ РІ РґСЂСѓРіРѕР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… РЅР°С…РѕРґСЏС‚СЃСЏ РЅРµРґР°Р»РµРєРѕ РѕС‚ РіРѕСЂРѕРґСЃРєРёС… РІРѕСЂРѕС‚.
+	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_03"); //РўР°РєР¶Рµ РІ РїРѕСЂС‚Сѓ С‚С‹ РЅР°Р№РґРµС€СЊ С‚РѕСЂРіРѕРІС†Р° СЂС‹Р±РѕР№. Р•РіРѕ Р»Р°РІРєР° СЃРјРѕС‚СЂРёС‚ РїСЂСЏРјРѕ РЅР° РіР°РІР°РЅСЊ.
 };
 
 FUNC VOID DIA_Hanna_City_City ()
 {
-	AI_Output (other,self ,"DIA_Hanna_City_City_15_00"); //Расскажи мне о городе.
-	AI_Output (self ,other,"DIA_Hanna_City_City_17_01"); //Хоринис - один из самых богатых городов королевства, даже несмотря на то, что сейчас он совсем не кажется таким.
-	AI_Output (self ,other,"DIA_Hanna_City_City_17_02"); //Но с тех пор, как началась война с орками, всяческая торговля практически умерла. Король реквизировал весь торговый флот для нужд армии,
-	AI_Output (self ,other,"DIA_Hanna_City_City_17_03"); //и теперь в наш порт корабли практически не заходят. Поэтому поставки товаров очень ограничены, и многие горожане очень обеспокоены этим.
-	AI_Output (self ,other,"DIA_Hanna_City_City_17_04"); //Никто не знает, что принесет нам будущее. Нам ничего не остается, кроме как ждать и надеяться на лучшее. Вряд ли в наших силах хоть что-то изменить.
+	AI_Output (other,self ,"DIA_Hanna_City_City_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РіРѕСЂРѕРґРµ.
+	AI_Output (self ,other,"DIA_Hanna_City_City_17_01"); //РҐРѕСЂРёРЅРёСЃ - РѕРґРёРЅ РёР· СЃР°РјС‹С… Р±РѕРіР°С‚С‹С… РіРѕСЂРѕРґРѕРІ РєРѕСЂРѕР»РµРІСЃС‚РІР°, РґР°Р¶Рµ РЅРµСЃРјРѕС‚СЂСЏ РЅР° С‚Рѕ, С‡С‚Рѕ СЃРµР№С‡Р°СЃ РѕРЅ СЃРѕРІСЃРµРј РЅРµ РєР°Р¶РµС‚СЃСЏ С‚Р°РєРёРј.
+	AI_Output (self ,other,"DIA_Hanna_City_City_17_02"); //РќРѕ СЃ С‚РµС… РїРѕСЂ, РєР°Рє РЅР°С‡Р°Р»Р°СЃСЊ РІРѕР№РЅР° СЃ РѕСЂРєР°РјРё, РІСЃСЏС‡РµСЃРєР°СЏ С‚РѕСЂРіРѕРІР»СЏ РїСЂР°РєС‚РёС‡РµСЃРєРё СѓРјРµСЂР»Р°. РљРѕСЂРѕР»СЊ СЂРµРєРІРёР·РёСЂРѕРІР°Р» РІРµСЃСЊ С‚РѕСЂРіРѕРІС‹Р№ С„Р»РѕС‚ РґР»СЏ РЅСѓР¶Рґ Р°СЂРјРёРё,
+	AI_Output (self ,other,"DIA_Hanna_City_City_17_03"); //Рё С‚РµРїРµСЂСЊ РІ РЅР°С€ РїРѕСЂС‚ РєРѕСЂР°Р±Р»Рё РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµ Р·Р°С…РѕРґСЏС‚. РџРѕСЌС‚РѕРјСѓ РїРѕСЃС‚Р°РІРєРё С‚РѕРІР°СЂРѕРІ РѕС‡РµРЅСЊ РѕРіСЂР°РЅРёС‡РµРЅС‹, Рё РјРЅРѕРіРёРµ РіРѕСЂРѕР¶Р°РЅРµ РѕС‡РµРЅСЊ РѕР±РµСЃРїРѕРєРѕРµРЅС‹ СЌС‚РёРј.
+	AI_Output (self ,other,"DIA_Hanna_City_City_17_04"); //РќРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚, С‡С‚Рѕ РїСЂРёРЅРµСЃРµС‚ РЅР°Рј Р±СѓРґСѓС‰РµРµ. РќР°Рј РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°РµС‚СЃСЏ, РєСЂРѕРјРµ РєР°Рє Р¶РґР°С‚СЊ Рё РЅР°РґРµСЏС‚СЊСЃСЏ РЅР° Р»СѓС‡С€РµРµ. Р’СЂСЏРґ Р»Рё РІ РЅР°С€РёС… СЃРёР»Р°С… С…РѕС‚СЊ С‡С‚Рѕ-С‚Рѕ РёР·РјРµРЅРёС‚СЊ.
 };
 
 
@@ -236,7 +236,7 @@ FUNC VOID DIA_Hanna_Kap3_EXIT_Info()
 var int Hanna_PriceForLetter;
 
 // ************************************************************
-// 		Wie siehtґs aus?
+// 		Wie siehtТ‘s aus?
 // ************************************************************
 INSTANCE DIA_Hanna_AnyNews(C_INFO)
 {
@@ -245,7 +245,7 @@ INSTANCE DIA_Hanna_AnyNews(C_INFO)
 	condition	= DIA_Hanna_AnyNews_Condition;
 	information	= DIA_Hanna_AnyNews_Info;
 	permanent	= FALSE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 FUNC INT DIA_Hanna_AnyNews_Condition()
 {
@@ -256,19 +256,19 @@ FUNC INT DIA_Hanna_AnyNews_Condition()
 };
 FUNC VOID DIA_Hanna_AnyNews_Info()
 {	
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_15_00"); //Как дела?
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_17_01"); //Мне почему-то кажется, что тебя не особо-то волнуют проблемы других людей.
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_17_01"); //РњРЅРµ РїРѕС‡РµРјСѓ-С‚Рѕ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ С‚РµР±СЏ РЅРµ РѕСЃРѕР±Рѕ-С‚Рѕ РІРѕР»РЅСѓСЋС‚ РїСЂРѕР±Р»РµРјС‹ РґСЂСѓРіРёС… Р»СЋРґРµР№.
 	
 	Info_ClearChoices (DIA_Hanna_AnyNews);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Ты ошибаешься.",DIA_Hanna_AnyNews_Yes);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Ну, как сказать...",DIA_Hanna_AnyNews_Depends);
-	Info_AddChoice (DIA_Hanna_AnyNews,"В общем-то, нет.",DIA_Hanna_AnyNews_No);
+	Info_AddChoice (DIA_Hanna_AnyNews,"РўС‹ РѕС€РёР±Р°РµС€СЊСЃСЏ.",DIA_Hanna_AnyNews_Yes);
+	Info_AddChoice (DIA_Hanna_AnyNews,"РќСѓ, РєР°Рє СЃРєР°Р·Р°С‚СЊ...",DIA_Hanna_AnyNews_Depends);
+	Info_AddChoice (DIA_Hanna_AnyNews,"Р’ РѕР±С‰РµРј-С‚Рѕ, РЅРµС‚.",DIA_Hanna_AnyNews_No);
 };
 
 FUNC VOID DIA_Hanna_AnyNews_No ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_No_15_00"); //В общем, да.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_No_17_01"); //Ну, значит я права. Сейчас все думают только о себе. Так что тебе нужно?
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_No_15_00"); //Р’ РѕР±С‰РµРј, РґР°.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_No_17_01"); //РќСѓ, Р·РЅР°С‡РёС‚ СЏ РїСЂР°РІР°. РЎРµР№С‡Р°СЃ РІСЃРµ РґСѓРјР°СЋС‚ С‚РѕР»СЊРєРѕ Рѕ СЃРµР±Рµ. РўР°Рє С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 
 	MIS_HannaRetrieveLetter = LOG_FAILED;
 
@@ -277,9 +277,9 @@ FUNC VOID DIA_Hanna_AnyNews_No ()
 
 FUNC VOID DIA_Hanna_AnyNews_Depends ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Depends_15_00"); //Ну, как сказать...
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Depends_17_01"); //Это зависит от того, сколько на этом можно заработать, ты хочешь сказать?
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Depends_17_02"); //Я не люблю таких, как ты.
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Depends_15_00"); //РќСѓ, РєР°Рє СЃРєР°Р·Р°С‚СЊ...
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Depends_17_01"); //Р­С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, СЃРєРѕР»СЊРєРѕ РЅР° СЌС‚РѕРј РјРѕР¶РЅРѕ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ, С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ?
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Depends_17_02"); //РЇ РЅРµ Р»СЋР±Р»СЋ С‚Р°РєРёС…, РєР°Рє С‚С‹.
 
 
 	MIS_HannaRetrieveLetter = LOG_FAILED;
@@ -289,49 +289,49 @@ FUNC VOID DIA_Hanna_AnyNews_Depends ()
 
 FUNC VOID DIA_Hanna_AnyNews_Yes ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_15_00"); //Ты ошибаешься.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_01"); //Ох, понимаешь какое дело... Я разбирала недавно у себя всякий хлам и продала пачку старых карт Ибрагиму, картографу в гавани.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_02"); //Но потом я заметила, что у меня не хватает одного документа.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_03"); //Я думаю, он мог случайно оказаться в стопке этих карт.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_04"); //Ты не мог бы вернуть его мне?
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_15_00"); //РўС‹ РѕС€РёР±Р°РµС€СЊСЃСЏ.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_01"); //РћС…, РїРѕРЅРёРјР°РµС€СЊ РєР°РєРѕРµ РґРµР»Рѕ... РЇ СЂР°Р·Р±РёСЂР°Р»Р° РЅРµРґР°РІРЅРѕ Сѓ СЃРµР±СЏ РІСЃСЏРєРёР№ С…Р»Р°Рј Рё РїСЂРѕРґР°Р»Р° РїР°С‡РєСѓ СЃС‚Р°СЂС‹С… РєР°СЂС‚ РР±СЂР°РіРёРјСѓ, РєР°СЂС‚РѕРіСЂР°С„Сѓ РІ РіР°РІР°РЅРё.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_02"); //РќРѕ РїРѕС‚РѕРј СЏ Р·Р°РјРµС‚РёР»Р°, С‡С‚Рѕ Сѓ РјРµРЅСЏ РЅРµ С…РІР°С‚Р°РµС‚ РѕРґРЅРѕРіРѕ РґРѕРєСѓРјРµРЅС‚Р°.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_03"); //РЇ РґСѓРјР°СЋ, РѕРЅ РјРѕРі СЃР»СѓС‡Р°Р№РЅРѕ РѕРєР°Р·Р°С‚СЊСЃСЏ РІ СЃС‚РѕРїРєРµ СЌС‚РёС… РєР°СЂС‚.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_04"); //РўС‹ РЅРµ РјРѕРі Р±С‹ РІРµСЂРЅСѓС‚СЊ РµРіРѕ РјРЅРµ?
 	
 	MIS_HannaRetrieveLetter = LOG_RUNNING;
 
 	Log_CreateTopic (TOPIC_HannaRetrieveLetter, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HannaRetrieveLetter, LOG_RUNNING);
-	B_LogEntry (TOPIC_HannaRetrieveLetter,"У Ханны пропал документ. Похоже, он пропал в гавани, там, где живет картограф Ибрагим."); 
+	B_LogEntry (TOPIC_HannaRetrieveLetter,"РЈ РҐР°РЅРЅС‹ РїСЂРѕРїР°Р» РґРѕРєСѓРјРµРЅС‚. РџРѕС…РѕР¶Рµ, РѕРЅ РїСЂРѕРїР°Р» РІ РіР°РІР°РЅРё, С‚Р°Рј, РіРґРµ Р¶РёРІРµС‚ РєР°СЂС‚РѕРіСЂР°С„ РР±СЂР°РіРёРј."); 
 
 
 	Info_ClearChoices (DIA_Hanna_AnyNews);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Я тебе не мальчик на побегушках.",DIA_Hanna_AnyNews_Yes_Footboy);
-	Info_AddChoice (DIA_Hanna_AnyNews,"А что мне с этого будет?",DIA_Hanna_AnyNews_Yes_Reward);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Я попробую.",DIA_Hanna_AnyNews_Yes_WillSee);
+	Info_AddChoice (DIA_Hanna_AnyNews,"РЇ С‚РµР±Рµ РЅРµ РјР°Р»СЊС‡РёРє РЅР° РїРѕР±РµРіСѓС€РєР°С….",DIA_Hanna_AnyNews_Yes_Footboy);
+	Info_AddChoice (DIA_Hanna_AnyNews,"Рђ С‡С‚Рѕ РјРЅРµ СЃ СЌС‚РѕРіРѕ Р±СѓРґРµС‚?",DIA_Hanna_AnyNews_Yes_Reward);
+	Info_AddChoice (DIA_Hanna_AnyNews,"РЇ РїРѕРїСЂРѕР±СѓСЋ.",DIA_Hanna_AnyNews_Yes_WillSee);
 };
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_Footboy ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Footboy_15_00"); //Я тебе не мальчик на побегушках.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Footboy_17_01"); //Понимаю - проблемы простой женщины слишком ничтожны для тебя. Значит, тебе придется заняться этим самой.
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Footboy_15_00"); //РЇ С‚РµР±Рµ РЅРµ РјР°Р»СЊС‡РёРє РЅР° РїРѕР±РµРіСѓС€РєР°С….
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Footboy_17_01"); //РџРѕРЅРёРјР°СЋ - РїСЂРѕР±Р»РµРјС‹ РїСЂРѕСЃС‚РѕР№ Р¶РµРЅС‰РёРЅС‹ СЃР»РёС€РєРѕРј РЅРёС‡С‚РѕР¶РЅС‹ РґР»СЏ С‚РµР±СЏ. Р—РЅР°С‡РёС‚, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РЅСЏС‚СЊСЃСЏ СЌС‚РёРј СЃР°РјРѕР№.
 
 	Info_ClearChoices (DIA_Hanna_AnyNews);
 };
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_Reward ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_15_00"); //Что я за это получу?
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_17_01"); //Ага, я знала - ты не лучше, чем весь этот остальной портовый сброд.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_17_02"); //Так что ты хочешь получить с бедной женщины?
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_15_00"); //Р§С‚Рѕ СЏ Р·Р° СЌС‚Рѕ РїРѕР»СѓС‡Сѓ?
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_17_01"); //РђРіР°, СЏ Р·РЅР°Р»Р° - С‚С‹ РЅРµ Р»СѓС‡С€Рµ, С‡РµРј РІРµСЃСЊ СЌС‚РѕС‚ РѕСЃС‚Р°Р»СЊРЅРѕР№ РїРѕСЂС‚РѕРІС‹Р№ СЃР±СЂРѕРґ.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_17_02"); //РўР°Рє С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ СЃ Р±РµРґРЅРѕР№ Р¶РµРЅС‰РёРЅС‹?
 	
 	Info_ClearChoices (DIA_Hanna_AnyNews);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Ладно, забудь.",DIA_Hanna_AnyNews_Yes_Reward_OK);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Ну, ты могла бы быть немного поласковее со мной... Как женщина...",DIA_Hanna_AnyNews_Yes_Reward_BeNice);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Золото.",DIA_Hanna_AnyNews_Yes_Reward_Gold);
+	Info_AddChoice (DIA_Hanna_AnyNews,"Р›Р°РґРЅРѕ, Р·Р°Р±СѓРґСЊ.",DIA_Hanna_AnyNews_Yes_Reward_OK);
+	Info_AddChoice (DIA_Hanna_AnyNews,"РќСѓ, С‚С‹ РјРѕРіР»Р° Р±С‹ Р±С‹С‚СЊ РЅРµРјРЅРѕРіРѕ РїРѕР»Р°СЃРєРѕРІРµРµ СЃРѕ РјРЅРѕР№... РљР°Рє Р¶РµРЅС‰РёРЅР°...",DIA_Hanna_AnyNews_Yes_Reward_BeNice);
+	Info_AddChoice (DIA_Hanna_AnyNews,"Р—РѕР»РѕС‚Рѕ.",DIA_Hanna_AnyNews_Yes_Reward_Gold);
 };
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_OK ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_OK_15_00"); //Ладно, забудь.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_OK_17_01"); //Ну, хоть остатки совести у тебя еще есть. Если ты принесешь мне этот документ, я дам тебе 75 золотых.
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_OK_15_00"); //Р›Р°РґРЅРѕ, Р·Р°Р±СѓРґСЊ.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_OK_17_01"); //РќСѓ, С…РѕС‚СЊ РѕСЃС‚Р°С‚РєРё СЃРѕРІРµСЃС‚Рё Сѓ С‚РµР±СЏ РµС‰Рµ РµСЃС‚СЊ. Р•СЃР»Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ СЌС‚РѕС‚ РґРѕРєСѓРјРµРЅС‚, СЏ РґР°Рј С‚РµР±Рµ 75 Р·РѕР»РѕС‚С‹С….
 
 	Hanna_PriceForLetter = 75;
 	
@@ -340,8 +340,8 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_OK ()
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_BeNice ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_BeNice_15_00"); //Ну, ты могла бы быть немного поласковее со мной... Как женщина...
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_BeNice_17_01"); //Ну, ты хам! Я... убирайся отсюда! Неотесанный мужлан!
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_BeNice_15_00"); //РќСѓ, С‚С‹ РјРѕРіР»Р° Р±С‹ Р±С‹С‚СЊ РЅРµРјРЅРѕРіРѕ РїРѕР»Р°СЃРєРѕРІРµРµ СЃРѕ РјРЅРѕР№... РљР°Рє Р¶РµРЅС‰РёРЅР°...
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_BeNice_17_01"); //РќСѓ, С‚С‹ С…Р°Рј! РЇ... СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°! РќРµРѕС‚РµСЃР°РЅРЅС‹Р№ РјСѓР¶Р»Р°РЅ!
 	
 	MIS_HannaRetrieveLetter = LOG_FAILED;
 	
@@ -350,9 +350,9 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_BeNice ()
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_Gold ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_Gold_15_00"); //Золото.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_Gold_17_01"); //Тебе нужен этот презренный металл? Ладно - я оцениваю этот документ в 50 золотых.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_Gold_17_02"); //Если ты сможешь вернуть мне этот документ, я дам тебе 50 золотых монет.
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_Gold_15_00"); //Р—РѕР»РѕС‚Рѕ.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_Gold_17_01"); //РўРµР±Рµ РЅСѓР¶РµРЅ СЌС‚РѕС‚ РїСЂРµР·СЂРµРЅРЅС‹Р№ РјРµС‚Р°Р»Р»? Р›Р°РґРЅРѕ - СЏ РѕС†РµРЅРёРІР°СЋ СЌС‚РѕС‚ РґРѕРєСѓРјРµРЅС‚ РІ 50 Р·РѕР»РѕС‚С‹С….
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_Gold_17_02"); //Р•СЃР»Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РІРµСЂРЅСѓС‚СЊ РјРЅРµ СЌС‚РѕС‚ РґРѕРєСѓРјРµРЅС‚, СЏ РґР°Рј С‚РµР±Рµ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 
 	Hanna_PriceForLetter = 50;
 
@@ -361,9 +361,9 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_Gold ()
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_WillSee ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_WillSee_15_00"); //Я попробую.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_WillSee_17_01"); //Ты такой любезный. Я желаю тебе удачи!
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_WillSee_17_02"); //Если ты принесешь мне эту бумагу, тебя ждет награда.
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_WillSee_15_00"); //РЇ РїРѕРїСЂРѕР±СѓСЋ.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_WillSee_17_01"); //РўС‹ С‚Р°РєРѕР№ Р»СЋР±РµР·РЅС‹Р№. РЇ Р¶РµР»Р°СЋ С‚РµР±Рµ СѓРґР°С‡Рё!
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_WillSee_17_02"); //Р•СЃР»Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ СЌС‚Сѓ Р±СѓРјР°РіСѓ, С‚РµР±СЏ Р¶РґРµС‚ РЅР°РіСЂР°РґР°.
 	
 	Hanna_PriceForLetter = 200;
 	
@@ -372,7 +372,7 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_WillSee ()
 
 
 // ************************************************************
-//		Meinst du dieses Schriftstьck?
+//		Meinst du dieses SchriftstСЊck?
 // ************************************************************
 INSTANCE DIA_Hanna_ThisLetter(C_INFO)
 {
@@ -381,7 +381,7 @@ INSTANCE DIA_Hanna_ThisLetter(C_INFO)
 	condition	= DIA_Hanna_ThisLetter_Condition;
 	information	= DIA_Hanna_ThisLetter_Info;
 	permanent	= FALSE;
-	description = "Ты этот документ имела в виду?";
+	description = "РўС‹ СЌС‚РѕС‚ РґРѕРєСѓРјРµРЅС‚ РёРјРµР»Р° РІ РІРёРґСѓ?";
 };                       
 FUNC INT DIA_Hanna_ThisLetter_Condition()
 {
@@ -393,10 +393,10 @@ FUNC INT DIA_Hanna_ThisLetter_Condition()
 };
 FUNC VOID DIA_Hanna_ThisLetter_Info()
 {	
-	AI_Output (other,self ,"DIA_Hanna_ThisLetter_15_00"); //Ты этот документ имела в виду?
-	AI_Output (self ,other,"DIA_Hanna_ThisLetter_17_01"); //Да, именно его. Спасибо.
-	AI_Output (other,self ,"DIA_Hanna_ThisLetter_15_02"); //Как насчет моей награды?
-	AI_Output (self ,other,"DIA_Hanna_ThisLetter_17_03"); //Не так быстро. Вот твои деньги.
+	AI_Output (other,self ,"DIA_Hanna_ThisLetter_15_00"); //РўС‹ СЌС‚РѕС‚ РґРѕРєСѓРјРµРЅС‚ РёРјРµР»Р° РІ РІРёРґСѓ?
+	AI_Output (self ,other,"DIA_Hanna_ThisLetter_17_01"); //Р”Р°, РёРјРµРЅРЅРѕ РµРіРѕ. РЎРїР°СЃРёР±Рѕ.
+	AI_Output (other,self ,"DIA_Hanna_ThisLetter_15_02"); //РљР°Рє РЅР°СЃС‡РµС‚ РјРѕРµР№ РЅР°РіСЂР°РґС‹?
+	AI_Output (self ,other,"DIA_Hanna_ThisLetter_17_03"); //РќРµ С‚Р°Рє Р±С‹СЃС‚СЂРѕ. Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё.
 		
 	CreateInvItems (self,ItMi_Gold,Hanna_PriceForLetter);
 	B_GiveInvItems (self,other,ItMi_Gold,Hanna_PriceForLetter);
@@ -469,20 +469,20 @@ FUNC VOID DIA_Hanna_AusKeller_Info()
 	|| (Jesper.aivar[AIV_KilledByPlayer] == TRUE)
 	|| (Ramirez.aivar[AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Hanna_Add_17_27"); //Откуда... ты пришел?
-		AI_Output (other, self, "DIA_Hanna_Add_15_28"); //Я нашел кое-что интересное в твоем подвале...
-		AI_Output (self, other, "DIA_Hanna_Add_17_29"); //Что ты делал в моем подвале?!
-		AI_Output (other, self, "DIA_Hanna_Add_15_30"); //Ты прекрасно знаешь это!
-		AI_Output (self, other, "DIA_Hanna_Add_17_31"); //(холодно) Я не знаю, чем ты говоришь...
+		AI_Output (self, other, "DIA_Hanna_Add_17_27"); //РћС‚РєСѓРґР°... С‚С‹ РїСЂРёС€РµР»?
+		AI_Output (other, self, "DIA_Hanna_Add_15_28"); //РЇ РЅР°С€РµР» РєРѕРµ-С‡С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРµ РІ С‚РІРѕРµРј РїРѕРґРІР°Р»Рµ...
+		AI_Output (self, other, "DIA_Hanna_Add_17_29"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°Р» РІ РјРѕРµРј РїРѕРґРІР°Р»Рµ?!
+		AI_Output (other, self, "DIA_Hanna_Add_15_30"); //РўС‹ РїСЂРµРєСЂР°СЃРЅРѕ Р·РЅР°РµС€СЊ СЌС‚Рѕ!
+		AI_Output (self, other, "DIA_Hanna_Add_17_31"); //(С…РѕР»РѕРґРЅРѕ) РЇ РЅРµ Р·РЅР°СЋ, С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ...
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Hanna_Add_17_19"); //(недоверчиво) Посмотри на себя! Ты откуда такой взялся? А?
-		AI_Output (other, self, "DIA_Hanna_Add_15_20"); //(смущенно) Я...
-		AI_Output (self, other, "DIA_Hanna_Add_17_21"); //(смеется) Я знаю!
-		AI_Output (self, other, "DIA_Hanna_Add_17_22"); //(заговорщицки) Не говори мне. Я все знаю.
-		AI_Output (self, other, "DIA_Hanna_Add_17_23"); //Даже и не думай, чтобы украсть что-нибудь здесь, понял?
-		AI_Output (self, other, "DIA_Hanna_Add_17_24"); //Мы не можем себе позволить привлекать внимание к отелю.
+		AI_Output (self, other, "DIA_Hanna_Add_17_19"); //(РЅРµРґРѕРІРµСЂС‡РёРІРѕ) РџРѕСЃРјРѕС‚СЂРё РЅР° СЃРµР±СЏ! РўС‹ РѕС‚РєСѓРґР° С‚Р°РєРѕР№ РІР·СЏР»СЃСЏ? Рђ?
+		AI_Output (other, self, "DIA_Hanna_Add_15_20"); //(СЃРјСѓС‰РµРЅРЅРѕ) РЇ...
+		AI_Output (self, other, "DIA_Hanna_Add_17_21"); //(СЃРјРµРµС‚СЃСЏ) РЇ Р·РЅР°СЋ!
+		AI_Output (self, other, "DIA_Hanna_Add_17_22"); //(Р·Р°РіРѕРІРѕСЂС‰РёС†РєРё) РќРµ РіРѕРІРѕСЂРё РјРЅРµ. РЇ РІСЃРµ Р·РЅР°СЋ.
+		AI_Output (self, other, "DIA_Hanna_Add_17_23"); //Р”Р°Р¶Рµ Рё РЅРµ РґСѓРјР°Р№, С‡С‚РѕР±С‹ СѓРєСЂР°СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ, РїРѕРЅСЏР»?
+		AI_Output (self, other, "DIA_Hanna_Add_17_24"); //РњС‹ РЅРµ РјРѕР¶РµРј СЃРµР±Рµ РїРѕР·РІРѕР»РёС‚СЊ РїСЂРёРІР»РµРєР°С‚СЊ РІРЅРёРјР°РЅРёРµ Рє РѕС‚РµР»СЋ.
 	};	
 	
 	AI_StopProcessInfos (self);
@@ -499,7 +499,7 @@ INSTANCE DIA_Hanna_Schuldenbuch(C_INFO)
 	condition	= DIA_Hanna_Schuldenbuch_Condition;
 	information	= DIA_Hanna_Schuldenbuch_Info;
 	permanent	= FALSE;
-	description	= "Посмотри, какая у меня есть книга!";
+	description	= "РџРѕСЃРјРѕС‚СЂРё, РєР°РєР°СЏ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєРЅРёРіР°!";
 };                       
 FUNC INT DIA_Hanna_Schuldenbuch_Condition()
 {
@@ -510,10 +510,10 @@ FUNC INT DIA_Hanna_Schuldenbuch_Condition()
 };
 FUNC VOID DIA_Hanna_Schuldenbuch_Info()
 {	
-	AI_Output (other, self, "DIA_Hanna_Add_15_41"); //Посмотри, какая у меня есть книга!
-	AI_Output (self, other, "DIA_Hanna_Add_17_42"); //Гроссбух Лемара. Как тебе это удалось?
-	AI_Output (other, self, "DIA_Hanna_Add_15_43"); //Ну...
-	AI_Output (self, other, "DIA_Hanna_Add_17_44"); //То, что Лемар лишился своего гроссбуха - это хорошо. Но лучше, если он будет у меня...
+	AI_Output (other, self, "DIA_Hanna_Add_15_41"); //РџРѕСЃРјРѕС‚СЂРё, РєР°РєР°СЏ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєРЅРёРіР°!
+	AI_Output (self, other, "DIA_Hanna_Add_17_42"); //Р“СЂРѕСЃСЃР±СѓС… Р›РµРјР°СЂР°. РљР°Рє С‚РµР±Рµ СЌС‚Рѕ СѓРґР°Р»РѕСЃСЊ?
+	AI_Output (other, self, "DIA_Hanna_Add_15_43"); //РќСѓ...
+	AI_Output (self, other, "DIA_Hanna_Add_17_44"); //РўРѕ, С‡С‚Рѕ Р›РµРјР°СЂ Р»РёС€РёР»СЃСЏ СЃРІРѕРµРіРѕ РіСЂРѕСЃСЃР±СѓС…Р° - СЌС‚Рѕ С…РѕСЂРѕС€Рѕ. РќРѕ Р»СѓС‡С€Рµ, РµСЃР»Рё РѕРЅ Р±СѓРґРµС‚ Сѓ РјРµРЅСЏ...
 };
 
 // ************************************************************
@@ -526,7 +526,7 @@ instance DIA_Hanna_GiveSchuldenbuch(C_INFO)
 	condition	= DIA_Hanna_GiveSchuldenbuch_Condition;
 	information	= DIA_Hanna_GiveSchuldenbuch_Info;
 	permanent	= FALSE;
-	description = "Вот - возьми эту книгу.";
+	description = "Р’РѕС‚ - РІРѕР·СЊРјРё СЌС‚Сѓ РєРЅРёРіСѓ.";
 };                       
 FUNC INT DIA_Hanna_GiveSchuldenbuch_Condition()
 {
@@ -538,14 +538,14 @@ FUNC INT DIA_Hanna_GiveSchuldenbuch_Condition()
 };
 FUNC VOID DIA_Hanna_GiveSchuldenbuch_Info()
 {	
-	AI_Output (other, self, "DIA_Hanna_Add_15_45"); //Вот - возьми эту книгу.
+	AI_Output (other, self, "DIA_Hanna_Add_15_45"); //Р’РѕС‚ - РІРѕР·СЊРјРё СЌС‚Сѓ РєРЅРёРіСѓ.
 	B_GiveInvItems (other, self, ItWr_Schuldenbuch, 1);
-	AI_Output (self, other, "DIA_Hanna_Add_17_46"); //Спасибо.
-	AI_Output (self, other, "DIA_Hanna_Add_17_47"); //Возьми это в качестве награды.
+	AI_Output (self, other, "DIA_Hanna_Add_17_46"); //РЎРїР°СЃРёР±Рѕ.
+	AI_Output (self, other, "DIA_Hanna_Add_17_47"); //Р’РѕР·СЊРјРё СЌС‚Рѕ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РіСЂР°РґС‹.
 	B_GiveInvItems (self, other, ItSe_HannasBeutel, 1);
 	B_GivePlayerXP (XP_Schuldenbuch);
-	AI_Output (other, self, "DIA_Hanna_Add_15_49"); //Что это такое ты дала мне?
-	AI_Output (self, other, "DIA_Hanna_Add_17_48"); //Это ключ от врат, ведущих к богатству.
+	AI_Output (other, self, "DIA_Hanna_Add_15_49"); //Р§С‚Рѕ СЌС‚Рѕ С‚Р°РєРѕРµ С‚С‹ РґР°Р»Р° РјРЅРµ?
+	AI_Output (self, other, "DIA_Hanna_Add_17_48"); //Р­С‚Рѕ РєР»СЋС‡ РѕС‚ РІСЂР°С‚, РІРµРґСѓС‰РёС… Рє Р±РѕРіР°С‚СЃС‚РІСѓ.
 };
 
 
@@ -554,19 +554,19 @@ FUNC VOID DIA_Hanna_GiveSchuldenbuch_Info()
 // ************************************************************
 func void Hanna_Blubb()
 {
-	AI_Output (other, self, "DIA_Hanna_Add_15_37"); //В логове все в порядке?
-	AI_Output (self, other, "DIA_Hanna_Add_17_39"); //Я давно уже не видела их.
-	AI_Output (self, other, "DIA_Hanna_Add_17_40"); //Я, пожалуй, схожу туда, когда у меня будет время и проверю, как у них дела.
-	AI_Output (self, other, "DIA_Hanna_Add_17_38"); //Да. Но тебе лучше не говорить об этом...
+	AI_Output (other, self, "DIA_Hanna_Add_15_37"); //Р’ Р»РѕРіРѕРІРµ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other, "DIA_Hanna_Add_17_39"); //РЇ РґР°РІРЅРѕ СѓР¶Рµ РЅРµ РІРёРґРµР»Р° РёС….
+	AI_Output (self, other, "DIA_Hanna_Add_17_40"); //РЇ, РїРѕР¶Р°Р»СѓР№, СЃС…РѕР¶Сѓ С‚СѓРґР°, РєРѕРіРґР° Сѓ РјРµРЅСЏ Р±СѓРґРµС‚ РІСЂРµРјСЏ Рё РїСЂРѕРІРµСЂСЋ, РєР°Рє Сѓ РЅРёС… РґРµР»Р°.
+	AI_Output (self, other, "DIA_Hanna_Add_17_38"); //Р”Р°. РќРѕ С‚РµР±Рµ Р»СѓС‡С€Рµ РЅРµ РіРѕРІРѕСЂРёС‚СЊ РѕР± СЌС‚РѕРј...
 	//-------------------
-	AI_Output (other, self, "DIA_Hanna_Add_15_25"); //Ты знала о логове воров?
-	AI_Output (self, other, "DIA_Hanna_Add_17_26"); //(глупо улыбается) Я не понимаю, о чем ты говоришь...
+	AI_Output (other, self, "DIA_Hanna_Add_15_25"); //РўС‹ Р·РЅР°Р»Р° Рѕ Р»РѕРіРѕРІРµ РІРѕСЂРѕРІ?
+	AI_Output (self, other, "DIA_Hanna_Add_17_26"); //(РіР»СѓРїРѕ СѓР»С‹Р±Р°РµС‚СЃСЏ) РЇ РЅРµ РїРѕРЅРёРјР°СЋ, Рѕ С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ...
 	//-------------------
-	AI_Output (self, other, "DIA_Hanna_Add_17_32"); //Здесь было ополчение... Кто-то предал наше убежище!
-	AI_Output (self, other, "DIA_Hanna_Add_17_33"); //Мне они ничего не смогли предъявить, но Кассия и ее люди мертвы!
-	AI_Output (self, other, "DIA_Hanna_Add_17_34"); //Я уверена, что это ТЫ...
-	AI_Output (self, other, "DIA_Hanna_Add_17_35"); //Я купила это специально для тебя.
-	AI_Output (self, other, "DIA_Hanna_Add_17_36"); //Это обошлось мне в кругленькую сумму. Но для тебя ничего не жалко, свинья...
+	AI_Output (self, other, "DIA_Hanna_Add_17_32"); //Р—РґРµСЃСЊ Р±С‹Р»Рѕ РѕРїРѕР»С‡РµРЅРёРµ... РљС‚Рѕ-С‚Рѕ РїСЂРµРґР°Р» РЅР°С€Рµ СѓР±РµР¶РёС‰Рµ!
+	AI_Output (self, other, "DIA_Hanna_Add_17_33"); //РњРЅРµ РѕРЅРё РЅРёС‡РµРіРѕ РЅРµ СЃРјРѕРіР»Рё РїСЂРµРґСЉСЏРІРёС‚СЊ, РЅРѕ РљР°СЃСЃРёСЏ Рё РµРµ Р»СЋРґРё РјРµСЂС‚РІС‹!
+	AI_Output (self, other, "DIA_Hanna_Add_17_34"); //РЇ СѓРІРµСЂРµРЅР°, С‡С‚Рѕ СЌС‚Рѕ РўР«...
+	AI_Output (self, other, "DIA_Hanna_Add_17_35"); //РЇ РєСѓРїРёР»Р° СЌС‚Рѕ СЃРїРµС†РёР°Р»СЊРЅРѕ РґР»СЏ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Hanna_Add_17_36"); //Р­С‚Рѕ РѕР±РѕС€Р»РѕСЃСЊ РјРЅРµ РІ РєСЂСѓРіР»РµРЅСЊРєСѓСЋ СЃСѓРјРјСѓ. РќРѕ РґР»СЏ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ Р¶Р°Р»РєРѕ, СЃРІРёРЅСЊСЏ...
 };	
 
 	

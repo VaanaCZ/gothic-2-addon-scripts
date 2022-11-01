@@ -1,7 +1,7 @@
 INSTANCE NOV_603_Agon (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Агон";
+	name 		= "РђРіРѕРЅ";
 	guild 		= GIL_NOV;
 	id 			= 603;
 	voice 		= 7;

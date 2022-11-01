@@ -1,7 +1,7 @@
 INSTANCE NONE_100_Xardas (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ксардас";
+	name 		= "РљСЃР°СЂРґР°СЃ";
 	guild 		= GIL_NONE;
 	id 			= 100;
 	voice 		= 14;

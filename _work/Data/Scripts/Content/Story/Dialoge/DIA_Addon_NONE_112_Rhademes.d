@@ -9,7 +9,7 @@ instance DIA_Addon_Rhademes_EXIT   (C_INFO)
 	condition   = DIA_Addon_Rhademes_EXIT_Condition;
 	information = DIA_Addon_Rhademes_EXIT_Info;
 	permanent   = TRUE;
-	description = "Я сам найду путь туда! (КОНЕЦ)";
+	description = "РЇ СЃР°Рј РЅР°Р№РґСѓ РїСѓС‚СЊ С‚СѓРґР°! (РљРћРќР•Р¦)";
 };
 FUNC INT DIA_Addon_Rhademes_EXIT_Condition()
 {
@@ -17,8 +17,8 @@ FUNC INT DIA_Addon_Rhademes_EXIT_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_EXIT_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_EXIT_15_00"); //Я сам найду путь!
-	AI_Output (self, other, "DIA_Addon_Rhademes_EXIT_03_01"); //Как пожелаешь...
+	AI_Output (other, self, "DIA_Addon_Rhademes_EXIT_15_00"); //РЇ СЃР°Рј РЅР°Р№РґСѓ РїСѓС‚СЊ!
+	AI_Output (self, other, "DIA_Addon_Rhademes_EXIT_03_01"); //РљР°Рє РїРѕР¶РµР»Р°РµС€СЊ...
 	
 	AI_StopProcessInfos (self);
 };
@@ -50,21 +50,21 @@ FUNC VOID DIA_Addon_Rhademes_First_Info()
 {
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_00"); //Мой дух был заперт здесь целую вечность.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_01"); //Теперь я наконец-то свободен. У меча новый хозяин!
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_02"); //Проход в последний зал открыт.
-		AI_Output (other, self, "DIA_Addon_Rhademes_First_15_03"); //Но ворота закрыты!
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_04"); //Эти ворота не ведут в последний зал.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_05"); //Они ведут в небольшой вестибюль.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_06"); //Владелец меча... закрыл их за собой.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_00"); //РњРѕР№ РґСѓС… Р±С‹Р» Р·Р°РїРµСЂС‚ Р·РґРµСЃСЊ С†РµР»СѓСЋ РІРµС‡РЅРѕСЃС‚СЊ.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_01"); //РўРµРїРµСЂСЊ СЏ РЅР°РєРѕРЅРµС†-С‚Рѕ СЃРІРѕР±РѕРґРµРЅ. РЈ РјРµС‡Р° РЅРѕРІС‹Р№ С…РѕР·СЏРёРЅ!
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_02"); //РџСЂРѕС…РѕРґ РІ РїРѕСЃР»РµРґРЅРёР№ Р·Р°Р» РѕС‚РєСЂС‹С‚.
+		AI_Output (other, self, "DIA_Addon_Rhademes_First_15_03"); //РќРѕ РІРѕСЂРѕС‚Р° Р·Р°РєСЂС‹С‚С‹!
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_04"); //Р­С‚Рё РІРѕСЂРѕС‚Р° РЅРµ РІРµРґСѓС‚ РІ РїРѕСЃР»РµРґРЅРёР№ Р·Р°Р».
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_05"); //РћРЅРё РІРµРґСѓС‚ РІ РЅРµР±РѕР»СЊС€РѕР№ РІРµСЃС‚РёР±СЋР»СЊ.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_06"); //Р’Р»Р°РґРµР»РµС† РјРµС‡Р°... Р·Р°РєСЂС‹Р» РёС… Р·Р° СЃРѕР±РѕР№.
 		
 		Rhademes_Understood = TRUE;
 	}
 	else //Spieler spricht Sprache nicht
 	{
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_07"); //Ганима эн кандра Аданос?
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_07"); //Р“Р°РЅРёРјР° СЌРЅ РєР°РЅРґСЂР° РђРґР°РЅРѕСЃ?
 		B_Say (other, self, "$CANTUNDERSTANDTHIS");	
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_08"); //Бенгла антани!
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_08"); //Р‘РµРЅРіР»Р° Р°РЅС‚Р°РЅРё!
 		
 		AI_StopProcessInfos (self);
 	};
@@ -81,7 +81,7 @@ instance DIA_Addon_Rhademes_Pforte (C_INFO)
 	condition   = DIA_Addon_Rhademes_Pforte_Condition;
 	information = DIA_Addon_Rhademes_Pforte_Info;
 	permanent   = FALSE;
-	description	= "Как открыть ворота?";
+	description	= "РљР°Рє РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°?";
 };
 FUNC INT DIA_Addon_Rhademes_Pforte_Condition()
 {
@@ -89,10 +89,10 @@ FUNC INT DIA_Addon_Rhademes_Pforte_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_Pforte_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_00"); //Как открыть ворота?
-	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_01"); //Потяни... за один из рычагов.
-	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_02"); //Любой?
-	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_03"); //Да. Любой из них открывает ворота.
+	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_00"); //РљР°Рє РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°?
+	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_01"); //РџРѕС‚СЏРЅРё... Р·Р° РѕРґРёРЅ РёР· СЂС‹С‡Р°РіРѕРІ.
+	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_02"); //Р›СЋР±РѕР№?
+	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_03"); //Р”Р°. Р›СЋР±РѕР№ РёР· РЅРёС… РѕС‚РєСЂС‹РІР°РµС‚ РІРѕСЂРѕС‚Р°.
 };
 
 // ***********************************************************
@@ -106,7 +106,7 @@ instance DIA_Addon_Rhademes_Hebel (C_INFO)
 	condition   = DIA_Addon_Rhademes_Hebel_Condition;
 	information = DIA_Addon_Rhademes_Hebel_Info;
 	permanent   = FALSE;
-	description	= "Но не все активируют ловушку, верно?";
+	description	= "РќРѕ РЅРµ РІСЃРµ Р°РєС‚РёРІРёСЂСѓСЋС‚ Р»РѕРІСѓС€РєСѓ, РІРµСЂРЅРѕ?";
 };
 FUNC INT DIA_Addon_Rhademes_Hebel_Condition()
 {
@@ -118,8 +118,8 @@ FUNC INT DIA_Addon_Rhademes_Hebel_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_Hebel_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_Hebel_15_00"); //Но не все активируют ловушку, верно?
-	AI_Output (self, other, "DIA_Addon_Rhademes_Hebel_03_01"); //Все!
+	AI_Output (other, self, "DIA_Addon_Rhademes_Hebel_15_00"); //РќРѕ РЅРµ РІСЃРµ Р°РєС‚РёРІРёСЂСѓСЋС‚ Р»РѕРІСѓС€РєСѓ, РІРµСЂРЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Rhademes_Hebel_03_01"); //Р’СЃРµ!
 };
 
 // ***********************************************************
@@ -133,7 +133,7 @@ instance DIA_Addon_Rhademes_DontBelieve (C_INFO)
 	condition   = DIA_Addon_Rhademes_DontBelieve_Condition;
 	information = DIA_Addon_Rhademes_DontBelieve_Info;
 	permanent   = FALSE;
-	description	= "Я не верю тебе!";
+	description	= "РЇ РЅРµ РІРµСЂСЋ С‚РµР±Рµ!";
 };
 FUNC INT DIA_Addon_Rhademes_DontBelieve_Condition()
 {
@@ -145,8 +145,8 @@ FUNC INT DIA_Addon_Rhademes_DontBelieve_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_DontBelieve_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DontBelieve_15_00"); //Я не верю тебе!
-	AI_Output (self, other, "DIA_Addon_Rhademes_DontBelieve_03_01"); //И все же я говорю правду.
+	AI_Output (other, self, "DIA_Addon_Rhademes_DontBelieve_15_00"); //РЇ РЅРµ РІРµСЂСЋ С‚РµР±Рµ!
+	AI_Output (self, other, "DIA_Addon_Rhademes_DontBelieve_03_01"); //Р РІСЃРµ Р¶Рµ СЏ РіРѕРІРѕСЂСЋ РїСЂР°РІРґСѓ.
 };
 
 // ***********************************************************
@@ -160,7 +160,7 @@ instance DIA_Addon_Rhademes_DeinVater (C_INFO)
 	condition   = DIA_Addon_Rhademes_DeinVater_Condition;
 	information = DIA_Addon_Rhademes_DeinVater_Info;
 	permanent   = FALSE;
-	description	= "Твой отец создал эту ловушку. Откуда тебе знать, как она работает?!";
+	description	= "РўРІРѕР№ РѕС‚РµС† СЃРѕР·РґР°Р» СЌС‚Сѓ Р»РѕРІСѓС€РєСѓ. РћС‚РєСѓРґР° С‚РµР±Рµ Р·РЅР°С‚СЊ, РєР°Рє РѕРЅР° СЂР°Р±РѕС‚Р°РµС‚?!";
 };
 FUNC INT DIA_Addon_Rhademes_DeinVater_Condition()
 {
@@ -172,16 +172,16 @@ FUNC INT DIA_Addon_Rhademes_DeinVater_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_DeinVater_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_00"); //Твой отец создал эту ловушку. Откуда тебе знать, как она работает?!
-	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_01"); //Куарходрон! Я все еще помню стук молотков... на другой стороне ворот... спустя столько времени...
-	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_02"); //Меч... отомстил мне... за то, что я не справился...
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_03"); //Ты помнишь, какой из рычагов - правильный?
-	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_04"); //Я давно все забыл.
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_00"); //РўРІРѕР№ РѕС‚РµС† СЃРѕР·РґР°Р» СЌС‚Сѓ Р»РѕРІСѓС€РєСѓ. РћС‚РєСѓРґР° С‚РµР±Рµ Р·РЅР°С‚СЊ, РєР°Рє РѕРЅР° СЂР°Р±РѕС‚Р°РµС‚?!
+	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_01"); //РљСѓР°СЂС…РѕРґСЂРѕРЅ! РЇ РІСЃРµ РµС‰Рµ РїРѕРјРЅСЋ СЃС‚СѓРє РјРѕР»РѕС‚РєРѕРІ... РЅР° РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅРµ РІРѕСЂРѕС‚... СЃРїСѓСЃС‚СЏ СЃС‚РѕР»СЊРєРѕ РІСЂРµРјРµРЅРё...
+	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_02"); //РњРµС‡... РѕС‚РѕРјСЃС‚РёР» РјРЅРµ... Р·Р° С‚Рѕ, С‡С‚Рѕ СЏ РЅРµ СЃРїСЂР°РІРёР»СЃСЏ...
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_03"); //РўС‹ РїРѕРјРЅРёС€СЊ, РєР°РєРѕР№ РёР· СЂС‹С‡Р°РіРѕРІ - РїСЂР°РІРёР»СЊРЅС‹Р№?
+	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_04"); //РЇ РґР°РІРЅРѕ РІСЃРµ Р·Р°Р±С‹Р».
 	
 	Info_ClearChoices (DIA_Addon_Rhademes_DeinVater);
-	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "Тогда попробуй догадаться!", DIA_Addon_Rhademes_DeinVater_Guess);
-	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "Вспоминай!", DIA_Addon_Rhademes_DeinVater_Remember);
-	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "Думай!", DIA_Addon_Rhademes_DeinVater_Think);
+	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "РўРѕРіРґР° РїРѕРїСЂРѕР±СѓР№ РґРѕРіР°РґР°С‚СЊСЃСЏ!", DIA_Addon_Rhademes_DeinVater_Guess);
+	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "Р’СЃРїРѕРјРёРЅР°Р№!", DIA_Addon_Rhademes_DeinVater_Remember);
+	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "Р”СѓРјР°Р№!", DIA_Addon_Rhademes_DeinVater_Think);
 };
 	
 	// ------------------------
@@ -190,7 +190,7 @@ FUNC VOID DIA_Addon_Rhademes_DeinVater_Info()
 	// ------ zieh dran! ------
 	func void B_Addon_Rhademes_Lever(var int choice)
 	{
-		AI_Output (self, other, "DIA_Addon_Rhademes_Lever_03_00"); //Это было так давно...
+		AI_Output (self, other, "DIA_Addon_Rhademes_Lever_03_00"); //Р­С‚Рѕ Р±С‹Р»Рѕ С‚Р°Рє РґР°РІРЅРѕ...
 		AI_StopProcessInfos (self);
 		
 		if (choice <= 1)
@@ -213,19 +213,19 @@ FUNC VOID DIA_Addon_Rhademes_DeinVater_Info()
 	
 func void DIA_Addon_Rhademes_DeinVater_Think()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Think_15_00"); //Думай!
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Think_15_00"); //Р”СѓРјР°Р№!
 	B_Addon_Rhademes_Lever(1);
 };
 
 func void DIA_Addon_Rhademes_DeinVater_Remember()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Remember_15_00"); //Вспоминай!
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Remember_15_00"); //Р’СЃРїРѕРјРёРЅР°Р№!
 	B_Addon_Rhademes_Lever(2);
 };
 
 func void DIA_Addon_Rhademes_DeinVater_Guess()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Guess_15_00"); //Тогда попробуй догадаться!
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Guess_15_00"); //РўРѕРіРґР° РїРѕРїСЂРѕР±СѓР№ РґРѕРіР°РґР°С‚СЊСЃСЏ!
 	B_Addon_Rhademes_Lever(3);
 };
 
@@ -252,7 +252,7 @@ FUNC INT DIA_Addon_Rhademes_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_PERM_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Rhademes_PERM_03_00"); //Если ты обладаешь силой... утопи ее... в глубинах моря...
+	AI_Output (self, other, "DIA_Addon_Rhademes_PERM_03_00"); //Р•СЃР»Рё С‚С‹ РѕР±Р»Р°РґР°РµС€СЊ СЃРёР»РѕР№... СѓС‚РѕРїРё РµРµ... РІ РіР»СѓР±РёРЅР°С… РјРѕСЂСЏ...
 	SC_TookRhademesTrap = TRUE;
 	SC_TalkedToRhademAfter = TRUE;
 	AI_StopProcessInfos (self);

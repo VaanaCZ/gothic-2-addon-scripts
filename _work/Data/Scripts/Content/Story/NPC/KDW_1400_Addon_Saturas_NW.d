@@ -1,7 +1,7 @@
 INSTANCE KDW_1400_Addon_Saturas_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Сатурас";
+	name 		= "РЎР°С‚СѓСЂР°СЃ";
 	guild 		= GIL_KDW; 
 	id 			= 1400;
 	voice 		= 14;

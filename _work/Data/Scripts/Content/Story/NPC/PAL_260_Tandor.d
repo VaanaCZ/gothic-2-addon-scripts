@@ -2,7 +2,7 @@
 instance PAL_260_Tandor  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "“‡Ì‰Ó";
+	name 		= "–¢–∞–Ω–¥–æ—Ä";
 	guild 		= GIL_PAL;
 	id 			= 260;
 	voice 		= 8;
@@ -32,8 +32,8 @@ instance PAL_260_Tandor  (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen f—år Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_260;

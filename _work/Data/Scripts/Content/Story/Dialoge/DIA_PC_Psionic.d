@@ -48,48 +48,48 @@ FUNC VOID DIA_Lester_Hello_Info()
 		AI_StandUp (self);
 		B_TurnToNpc (self,other);
 	};
-	AI_Output	(self ,other,"DIA_Lester_Hello_13_00");	//Это ТЫ? - Точно! Ох, как я рад видеть тебя!
+	AI_Output	(self ,other,"DIA_Lester_Hello_13_00");	//Р­С‚Рѕ РўР«? - РўРѕС‡РЅРѕ! РћС…, РєР°Рє СЏ СЂР°Рґ РІРёРґРµС‚СЊ С‚РµР±СЏ!
 
 	Info_ClearChoices	(DIA_Lester_Hello);
 
-	Info_AddChoice		(DIA_Lester_Hello, "Я что, знаю тебя?" 					,DIA_Lester_Hello_YouKnowMe);
-	Info_AddChoice		(DIA_Lester_Hello, "Лестер! Как ты оказался здесь?"		,DIA_Lester_Hello_Lester);
+	Info_AddChoice		(DIA_Lester_Hello, "РЇ С‡С‚Рѕ, Р·РЅР°СЋ С‚РµР±СЏ?" 					,DIA_Lester_Hello_YouKnowMe);
+	Info_AddChoice		(DIA_Lester_Hello, "Р›РµСЃС‚РµСЂ! РљР°Рє С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ Р·РґРµСЃСЊ?"		,DIA_Lester_Hello_Lester);
 };
 FUNC VOID DIA_Lester_Hello_Lester()
 {
 	Info_ClearChoices	(DIA_Lester_Hello);
-	AI_Output	(other,self ,"DIA_Lester_Hello_Lester_15_00");	//Лестер! Как ты оказался здесь?
-	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_01");	//Это был безумный побег. После того, как барьер рухнул, я бродил там некоторое время в полном смятении.
-	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_02");	//Потом я потратил несколько дней, пробираясь через все эти леса, пока, наконец, не оказался в этой долине.
-	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_03");	//Диего, Милтен и Горн все еще в Долине Рудников. По крайней мере, я так думаю.
+	AI_Output	(other,self ,"DIA_Lester_Hello_Lester_15_00");	//Р›РµСЃС‚РµСЂ! РљР°Рє С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ Р·РґРµСЃСЊ?
+	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_01");	//Р­С‚Рѕ Р±С‹Р» Р±РµР·СѓРјРЅС‹Р№ РїРѕР±РµРі. РџРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє Р±Р°СЂСЊРµСЂ СЂСѓС…РЅСѓР», СЏ Р±СЂРѕРґРёР» С‚Р°Рј РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РІ РїРѕР»РЅРѕРј СЃРјСЏС‚РµРЅРёРё.
+	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_02");	//РџРѕС‚РѕРј СЏ РїРѕС‚СЂР°С‚РёР» РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№, РїСЂРѕР±РёСЂР°СЏСЃСЊ С‡РµСЂРµР· РІСЃРµ СЌС‚Рё Р»РµСЃР°, РїРѕРєР°, РЅР°РєРѕРЅРµС†, РЅРµ РѕРєР°Р·Р°Р»СЃСЏ РІ СЌС‚РѕР№ РґРѕР»РёРЅРµ.
+	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_03");	//Р”РёРµРіРѕ, РњРёР»С‚РµРЅ Рё Р“РѕСЂРЅ РІСЃРµ РµС‰Рµ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, СЏ С‚Р°Рє РґСѓРјР°СЋ.
 };
 FUNC VOID DIA_Lester_Hello_YouKnowMe()
 {
 	Info_ClearChoices	(DIA_Lester_Hello);
-	AI_Output	(other,self ,"DIA_Lester_Hello_YouKnowMe_15_00");	//Я что, знаю тебя?
-	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_01");	//Эй? У тебя все дома? Я рисковал своей шеей, чтобы ты мог заполучить этот чертов камень.
-	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_02");	//За тобой должок... Ну, уж это-то ты должен помнить.
-	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_03"); 	//А ты помнишь Диего, Милтена и Горна?
+	AI_Output	(other,self ,"DIA_Lester_Hello_YouKnowMe_15_00");	//РЇ С‡С‚Рѕ, Р·РЅР°СЋ С‚РµР±СЏ?
+	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_01");	//Р­Р№? РЈ С‚РµР±СЏ РІСЃРµ РґРѕРјР°? РЇ СЂРёСЃРєРѕРІР°Р» СЃРІРѕРµР№ С€РµРµР№, С‡С‚РѕР±С‹ С‚С‹ РјРѕРі Р·Р°РїРѕР»СѓС‡РёС‚СЊ СЌС‚РѕС‚ С‡РµСЂС‚РѕРІ РєР°РјРµРЅСЊ.
+	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_02");	//Р—Р° С‚РѕР±РѕР№ РґРѕР»Р¶РѕРє... РќСѓ, СѓР¶ СЌС‚Рѕ-С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРјРЅРёС‚СЊ.
+	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_03"); 	//Рђ С‚С‹ РїРѕРјРЅРёС€СЊ Р”РёРµРіРѕ, РњРёР»С‚РµРЅР° Рё Р“РѕСЂРЅР°?
 
-	Info_AddChoice		(DIA_Lester_Hello, "Диего, Милтен и КТО?" 	,DIA_Lester_Hello_WhoFourFriends);
-	Info_AddChoice		(DIA_Lester_Hello, "Конечно. Как они?"	,DIA_Lester_Hello_KnowFourFriends);
+	Info_AddChoice		(DIA_Lester_Hello, "Р”РёРµРіРѕ, РњРёР»С‚РµРЅ Рё РљРўРћ?" 	,DIA_Lester_Hello_WhoFourFriends);
+	Info_AddChoice		(DIA_Lester_Hello, "РљРѕРЅРµС‡РЅРѕ. РљР°Рє РѕРЅРё?"	,DIA_Lester_Hello_KnowFourFriends);
 
 };
 FUNC VOID DIA_Lester_Hello_KnowFourFriends()
 {
     Info_ClearChoices	(DIA_Lester_Hello);
-	AI_Output	(other,self ,"DIA_Lester_Hello_KnowFourFriends_15_00");	//Конечно. Как они?
-	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_01");	//Насколько я знаю, они выжили при разрушении барьера.
-	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_02");	//Но я понятия не имею, где они сейчас - эта троица, вероятно, все еще ошивается в Долине Рудников.
-	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_03");	//Если ты наткнешься на них, дай мне знать.
+	AI_Output	(other,self ,"DIA_Lester_Hello_KnowFourFriends_15_00");	//РљРѕРЅРµС‡РЅРѕ. РљР°Рє РѕРЅРё?
+	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_01");	//РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, РѕРЅРё РІС‹Р¶РёР»Рё РїСЂРё СЂР°Р·СЂСѓС€РµРЅРёРё Р±Р°СЂСЊРµСЂР°.
+	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_02");	//РќРѕ СЏ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РіРґРµ РѕРЅРё СЃРµР№С‡Р°СЃ - СЌС‚Р° С‚СЂРѕРёС†Р°, РІРµСЂРѕСЏС‚РЅРѕ, РІСЃРµ РµС‰Рµ РѕС€РёРІР°РµС‚СЃСЏ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output	(self ,other,"DIA_Lester_Hello_KnowFourFriends_13_03");	//Р•СЃР»Рё С‚С‹ РЅР°С‚РєРЅРµС€СЊСЃСЏ РЅР° РЅРёС…, РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ.
 };
 FUNC VOID DIA_Lester_Hello_WhoFourFriends()
 {
     Info_ClearChoices	(DIA_Lester_Hello);
-	AI_Output	(other,self ,"DIA_Lester_Hello_WhoFourFriends_15_00");	//Диего, Милтен и КТО?
-	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_01");	//Только не говори мне, что ты ничего этого не помнишь. Фокусирующие камни - тролль - огромная куча руды, принадлежащая магам воды?
-	AI_Output	(other, self,"DIA_Lester_Hello_WhoFourFriends_15_02");	//Я не знаю...
-	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_03");	//Память к тебе еще вернется. Мне тоже понадобилось некоторое время, чтобы привести свою голову в порядок.
+	AI_Output	(other,self ,"DIA_Lester_Hello_WhoFourFriends_15_00");	//Р”РёРµРіРѕ, РњРёР»С‚РµРЅ Рё РљРўРћ?
+	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_01");	//РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё РјРЅРµ, С‡С‚Рѕ С‚С‹ РЅРёС‡РµРіРѕ СЌС‚РѕРіРѕ РЅРµ РїРѕРјРЅРёС€СЊ. Р¤РѕРєСѓСЃРёСЂСѓСЋС‰РёРµ РєР°РјРЅРё - С‚СЂРѕР»Р»СЊ - РѕРіСЂРѕРјРЅР°СЏ РєСѓС‡Р° СЂСѓРґС‹, РїСЂРёРЅР°РґР»РµР¶Р°С‰Р°СЏ РјР°РіР°Рј РІРѕРґС‹?
+	AI_Output	(other, self,"DIA_Lester_Hello_WhoFourFriends_15_02");	//РЇ РЅРµ Р·РЅР°СЋ...
+	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_03");	//РџР°РјСЏС‚СЊ Рє С‚РµР±Рµ РµС‰Рµ РІРµСЂРЅРµС‚СЃСЏ. РњРЅРµ С‚РѕР¶Рµ РїРѕРЅР°РґРѕР±РёР»РѕСЃСЊ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ, С‡С‚РѕР±С‹ РїСЂРёРІРµСЃС‚Рё СЃРІРѕСЋ РіРѕР»РѕРІСѓ РІ РїРѕСЂСЏРґРѕРє.
 };
 // ************************************************************
 // 		  				  Was ist passiert?		//E1
@@ -101,7 +101,7 @@ INSTANCE DIA_Lester_WhatHappened (C_INFO)
 	condition	= DIA_Lester_WhatHappened_Condition;
 	information	= DIA_Lester_WhatHappened_Info;
 	permanent	= FALSE;
-	description = "Что произошло?";
+	description = "Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ?";
 };                       
 FUNC INT DIA_Lester_WhatHappened_Condition()
 {
@@ -113,15 +113,15 @@ FUNC INT DIA_Lester_WhatHappened_Condition()
 };
 FUNC VOID DIA_Lester_WhatHappened_Info()
 {	
-	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_00");	//Что произошло?
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_01");	//После того, как Спящий был повержен, все Братство как будто сошло с ума.
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_02");	//Без своего хозяина они стали напоминать пустые оболочки.
-	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_03");	//А ты? Что насчет тебя?
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_04");	//Со мной тоже не все было ладно. У меня были кошмары, и даже галлюцинации. Но когда в моей голове более-менее прояснилось, я побежал оттуда.
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_05");	//Как-то мне показалось, что я видел, как огромная черная тень налетела на группу беглецов и сожгла их в пепел, накрыв гигантским облаком огня.
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_06");	//Тогда я даже подумал, что это прилетел дракон, чтобы убить меня.
-	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_07");	//Ты видел что-нибудь еще?
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_08");	//Нет - я вскочил и побежал!
+	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_00");	//Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ?
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_01");	//РџРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє РЎРїСЏС‰РёР№ Р±С‹Р» РїРѕРІРµСЂР¶РµРЅ, РІСЃРµ Р‘СЂР°С‚СЃС‚РІРѕ РєР°Рє Р±СѓРґС‚Рѕ СЃРѕС€Р»Рѕ СЃ СѓРјР°.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_02");	//Р‘РµР· СЃРІРѕРµРіРѕ С…РѕР·СЏРёРЅР° РѕРЅРё СЃС‚Р°Р»Рё РЅР°РїРѕРјРёРЅР°С‚СЊ РїСѓСЃС‚С‹Рµ РѕР±РѕР»РѕС‡РєРё.
+	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_03");	//Рђ С‚С‹? Р§С‚Рѕ РЅР°СЃС‡РµС‚ С‚РµР±СЏ?
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_04");	//РЎРѕ РјРЅРѕР№ С‚РѕР¶Рµ РЅРµ РІСЃРµ Р±С‹Р»Рѕ Р»Р°РґРЅРѕ. РЈ РјРµРЅСЏ Р±С‹Р»Рё РєРѕС€РјР°СЂС‹, Рё РґР°Р¶Рµ РіР°Р»Р»СЋС†РёРЅР°С†РёРё. РќРѕ РєРѕРіРґР° РІ РјРѕРµР№ РіРѕР»РѕРІРµ Р±РѕР»РµРµ-РјРµРЅРµРµ РїСЂРѕСЏСЃРЅРёР»РѕСЃСЊ, СЏ РїРѕР±РµР¶Р°Р» РѕС‚С‚СѓРґР°.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_05");	//РљР°Рє-С‚Рѕ РјРЅРµ РїРѕРєР°Р·Р°Р»РѕСЃСЊ, С‡С‚Рѕ СЏ РІРёРґРµР», РєР°Рє РѕРіСЂРѕРјРЅР°СЏ С‡РµСЂРЅР°СЏ С‚РµРЅСЊ РЅР°Р»РµС‚РµР»Р° РЅР° РіСЂСѓРїРїСѓ Р±РµРіР»РµС†РѕРІ Рё СЃРѕР¶РіР»Р° РёС… РІ РїРµРїРµР», РЅР°РєСЂС‹РІ РіРёРіР°РЅС‚СЃРєРёРј РѕР±Р»Р°РєРѕРј РѕРіРЅСЏ.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_06");	//РўРѕРіРґР° СЏ РґР°Р¶Рµ РїРѕРґСѓРјР°Р», С‡С‚Рѕ СЌС‚Рѕ РїСЂРёР»РµС‚РµР» РґСЂР°РєРѕРЅ, С‡С‚РѕР±С‹ СѓР±РёС‚СЊ РјРµРЅСЏ.
+	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_07");	//РўС‹ РІРёРґРµР» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_08");	//РќРµС‚ - СЏ РІСЃРєРѕС‡РёР» Рё РїРѕР±РµР¶Р°Р»!
 };
 // ************************************************************
 // 		  				   Minental		 		//E1 
@@ -133,7 +133,7 @@ INSTANCE DIA_Lester_MineColony (C_INFO)
 	condition	= DIA_Lester_MineColony_Condition;
 	information	= DIA_Lester_MineColony_Info;
 	permanent	= FALSE;
-	description = "Сколько ты уже скрываешься в этой долине?";
+	description = "РЎРєРѕР»СЊРєРѕ С‚С‹ СѓР¶Рµ СЃРєСЂС‹РІР°РµС€СЊСЃСЏ РІ СЌС‚РѕР№ РґРѕР»РёРЅРµ?";
 };                       
 FUNC INT DIA_Lester_MineColony_Condition()
 {
@@ -145,13 +145,13 @@ FUNC INT DIA_Lester_MineColony_Condition()
 };
 FUNC VOID DIA_Lester_MineColony_Info()
 {	
-	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_00");	//Сколько ты уже скрываешься в этой долине?
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_01");	//Точно не знаю. Может, неделю. Но есть еще кое-что:
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_02");	//Когда я пришел сюда вечером, я взглянул на эту гору - там стояло всего несколько деревьев.
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_03");	//А когда я посмотрел туда же на следующее утро, там уже стояла эта башня. Я готов поклясться, что раньше ее там не было. И с тех пор я не покидал эту долину.
-	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_04");	//Ты имеешь в виду башню Ксардаса? Я знал, что он на многое способен, но создать башню вот так запросто...
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_05");	//Ксардас, некромант? Он живет в этой башне? Мне это не нравится...
-	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_06");	//Не волнуйся, это он спас меня из храма Спящего. Он на нашей стороне.
+	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_00");	//РЎРєРѕР»СЊРєРѕ С‚С‹ СѓР¶Рµ СЃРєСЂС‹РІР°РµС€СЊСЃСЏ РІ СЌС‚РѕР№ РґРѕР»РёРЅРµ?
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_01");	//РўРѕС‡РЅРѕ РЅРµ Р·РЅР°СЋ. РњРѕР¶РµС‚, РЅРµРґРµР»СЋ. РќРѕ РµСЃС‚СЊ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ:
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_02");	//РљРѕРіРґР° СЏ РїСЂРёС€РµР» СЃСЋРґР° РІРµС‡РµСЂРѕРј, СЏ РІР·РіР»СЏРЅСѓР» РЅР° СЌС‚Сѓ РіРѕСЂСѓ - С‚Р°Рј СЃС‚РѕСЏР»Рѕ РІСЃРµРіРѕ РЅРµСЃРєРѕР»СЊРєРѕ РґРµСЂРµРІСЊРµРІ.
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_03");	//Рђ РєРѕРіРґР° СЏ РїРѕСЃРјРѕС‚СЂРµР» С‚СѓРґР° Р¶Рµ РЅР° СЃР»РµРґСѓСЋС‰РµРµ СѓС‚СЂРѕ, С‚Р°Рј СѓР¶Рµ СЃС‚РѕСЏР»Р° СЌС‚Р° Р±Р°С€РЅСЏ. РЇ РіРѕС‚РѕРІ РїРѕРєР»СЏСЃС‚СЊСЃСЏ, С‡С‚Рѕ СЂР°РЅСЊС€Рµ РµРµ С‚Р°Рј РЅРµ Р±С‹Р»Рѕ. Р СЃ С‚РµС… РїРѕСЂ СЏ РЅРµ РїРѕРєРёРґР°Р» СЌС‚Сѓ РґРѕР»РёРЅСѓ.
+	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_04");	//РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ Р±Р°С€РЅСЋ РљСЃР°СЂРґР°СЃР°? РЇ Р·РЅР°Р», С‡С‚Рѕ РѕРЅ РЅР° РјРЅРѕРіРѕРµ СЃРїРѕСЃРѕР±РµРЅ, РЅРѕ СЃРѕР·РґР°С‚СЊ Р±Р°С€РЅСЋ РІРѕС‚ С‚Р°Рє Р·Р°РїСЂРѕСЃС‚Рѕ...
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_05");	//РљСЃР°СЂРґР°СЃ, РЅРµРєСЂРѕРјР°РЅС‚? РћРЅ Р¶РёРІРµС‚ РІ СЌС‚РѕР№ Р±Р°С€РЅРµ? РњРЅРµ СЌС‚Рѕ РЅРµ РЅСЂР°РІРёС‚СЃСЏ...
+	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_06");	//РќРµ РІРѕР»РЅСѓР№СЃСЏ, СЌС‚Рѕ РѕРЅ СЃРїР°СЃ РјРµРЅСЏ РёР· С…СЂР°РјР° РЎРїСЏС‰РµРіРѕ. РћРЅ РЅР° РЅР°С€РµР№ СЃС‚РѕСЂРѕРЅРµ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SEND_XARDAS
@@ -163,7 +163,7 @@ instance DIA_Lester_SEND_XARDAS		(C_INFO)
 	condition	 = 	DIA_Lester_SEND_XARDAS_Condition;
 	information	 = 	DIA_Lester_SEND_XARDAS_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты должен рассказать Ксардасу об этой тени ...";
+	description	 = 	"РўС‹ РґРѕР»Р¶РµРЅ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РљСЃР°СЂРґР°СЃСѓ РѕР± СЌС‚РѕР№ С‚РµРЅРё ...";
 };
 func int DIA_Lester_SEND_XARDAS_Condition ()
 {	
@@ -176,14 +176,14 @@ func int DIA_Lester_SEND_XARDAS_Condition ()
 };
 func void DIA_Lester_SEND_XARDAS_Info ()
 {
-	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_00"); //Ты должен рассказать Ксардасу об этой тени. Это может быть важно.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_01"); //Ты не думаешь, что мне показалось? Ты хочешь сказать, что это действительно был...
-	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_02"); //... дракон. Да.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_03"); //Ты опять лезешь в самое пекло. Я прав?
-	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_04"); //Не сказал бы, что в самое... пока...
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_05"); //(вздыхает) Хорошо, если это так важно, то я зайду к нему - но не сейчас.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_06"); //Сейчас я собираюсь отдохнуть. Я все еще измотан после этого бегства из колонии.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_07"); //Мне кажется, у тебя большие планы. Увидимся позже у Ксардаса.
+	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_00"); //РўС‹ РґРѕР»Р¶РµРЅ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РљСЃР°СЂРґР°СЃСѓ РѕР± СЌС‚РѕР№ С‚РµРЅРё. Р­С‚Рѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІР°Р¶РЅРѕ.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_01"); //РўС‹ РЅРµ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ РјРЅРµ РїРѕРєР°Р·Р°Р»РѕСЃСЊ? РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р±С‹Р»...
+	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_02"); //... РґСЂР°РєРѕРЅ. Р”Р°.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_03"); //РўС‹ РѕРїСЏС‚СЊ Р»РµР·РµС€СЊ РІ СЃР°РјРѕРµ РїРµРєР»Рѕ. РЇ РїСЂР°РІ?
+	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_04"); //РќРµ СЃРєР°Р·Р°Р» Р±С‹, С‡С‚Рѕ РІ СЃР°РјРѕРµ... РїРѕРєР°...
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_05"); //(РІР·РґС‹С…Р°РµС‚) РҐРѕСЂРѕС€Рѕ, РµСЃР»Рё СЌС‚Рѕ С‚Р°Рє РІР°Р¶РЅРѕ, С‚Рѕ СЏ Р·Р°Р№РґСѓ Рє РЅРµРјСѓ - РЅРѕ РЅРµ СЃРµР№С‡Р°СЃ.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_06"); //РЎРµР№С‡Р°СЃ СЏ СЃРѕР±РёСЂР°СЋСЃСЊ РѕС‚РґРѕС…РЅСѓС‚СЊ. РЇ РІСЃРµ РµС‰Рµ РёР·РјРѕС‚Р°РЅ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ Р±РµРіСЃС‚РІР° РёР· РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_07"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, Сѓ С‚РµР±СЏ Р±РѕР»СЊС€РёРµ РїР»Р°РЅС‹. РЈРІРёРґРёРјСЃСЏ РїРѕР·Р¶Рµ Сѓ РљСЃР°СЂРґР°СЃР°.
 	
 	AI_StopProcessInfos (self);
 	
@@ -200,7 +200,7 @@ instance DIA_Addon_Lester_STADT		(C_INFO)
 	condition	 = 	DIA_Addon_Lester_STADT_Condition;
 	information	 = 	DIA_Addon_Lester_STADT_Info;
 
-	description	 = 	"Я направляюсь в Хоринис. Что ты знаешь об этом городе?";
+	description	 = 	"РЇ РЅР°РїСЂР°РІР»СЏСЋСЃСЊ РІ РҐРѕСЂРёРЅРёСЃ. Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј РіРѕСЂРѕРґРµ?";
 };
 
 func int DIA_Addon_Lester_STADT_Condition ()
@@ -215,11 +215,11 @@ func int DIA_Addon_Lester_STADT_Condition ()
 
 func void DIA_Addon_Lester_STADT_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_00"); //Я направляюсь в Хоринис. Что ты знаешь об этом городе?
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_01"); //Хоринис? Ну, это довольно большой морской порт.
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_02"); //А почему ты спрашиваешь?
-	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_03"); //Я должен поговорить с паладинами, которые обосновались в городе.
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_04"); //(смеется) Неужели? Ха, да тебя не пустят даже в сам город, не то, что к паладинам.
+	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_00"); //РЇ РЅР°РїСЂР°РІР»СЏСЋСЃСЊ РІ РҐРѕСЂРёРЅРёСЃ. Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј РіРѕСЂРѕРґРµ?
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_01"); //РҐРѕСЂРёРЅРёСЃ? РќСѓ, СЌС‚Рѕ РґРѕРІРѕР»СЊРЅРѕ Р±РѕР»СЊС€РѕР№ РјРѕСЂСЃРєРѕР№ РїРѕСЂС‚.
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_02"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ СЃРїСЂР°С€РёРІР°РµС€СЊ?
+	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_03"); //РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РїР°Р»Р°РґРёРЅР°РјРё, РєРѕС‚РѕСЂС‹Рµ РѕР±РѕСЃРЅРѕРІР°Р»РёСЃСЊ РІ РіРѕСЂРѕРґРµ.
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_04"); //(СЃРјРµРµС‚СЃСЏ) РќРµСѓР¶РµР»Рё? РҐР°, РґР° С‚РµР±СЏ РЅРµ РїСѓСЃС‚СЏС‚ РґР°Р¶Рµ РІ СЃР°Рј РіРѕСЂРѕРґ, РЅРµ С‚Рѕ, С‡С‚Рѕ Рє РїР°Р»Р°РґРёРЅР°Рј.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -232,7 +232,7 @@ instance DIA_Addon_Lester_Vorschlag		(C_INFO)
 	condition	 = 	DIA_Addon_Lester_Vorschlag_Condition;
 	information	 = 	DIA_Addon_Lester_Vorschlag_Info;
 
-	description	 = 	"Может быть, ты знаешь способ, который поможет мне попасть в Хоринис?";
+	description	 = 	"РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ Р·РЅР°РµС€СЊ СЃРїРѕСЃРѕР±, РєРѕС‚РѕСЂС‹Р№ РїРѕРјРѕР¶РµС‚ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РҐРѕСЂРёРЅРёСЃ?";
 };
 
 func int DIA_Addon_Lester_Vorschlag_Condition ()
@@ -247,18 +247,18 @@ func int DIA_Addon_Lester_Vorschlag_Condition ()
 
 func void DIA_Addon_Lester_Vorschlag_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_00"); //Может быть, ты знаешь способ, который поможет мне попасть в Хоринис?
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_01"); //Знаю. Некоторое время назад я работал на старого алхимика по имени Константино.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_02"); //Он - довольно влиятельное лицо в городе. Ему удалось добиться того, чтобы стражники пропускали в город каждого, кто приносит ему редкие травы.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_03"); //Так что на самом деле все довольно просто. Тебе нужно собрать большую охапку растущих здесь повсюду растений, а затем сказать стражникам, что ты несешь их Константино.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_04"); //Но ты не должен собирать разные травы. Стражники не слишком сообразительны и в алхимии не разбираются.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_05"); //Чтобы они тебя пропустили, твоя охапка трав должна им понравиться.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_06"); //Думаю, десяти одинаковых растений будет достаточно.
-	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_07"); //Спасибо за совет.
+	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ Р·РЅР°РµС€СЊ СЃРїРѕСЃРѕР±, РєРѕС‚РѕСЂС‹Р№ РїРѕРјРѕР¶РµС‚ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РҐРѕСЂРёРЅРёСЃ?
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_01"); //Р—РЅР°СЋ. РќРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РЅР°Р·Р°Рґ СЏ СЂР°Р±РѕС‚Р°Р» РЅР° СЃС‚Р°СЂРѕРіРѕ Р°Р»С…РёРјРёРєР° РїРѕ РёРјРµРЅРё РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_02"); //РћРЅ - РґРѕРІРѕР»СЊРЅРѕ РІР»РёСЏС‚РµР»СЊРЅРѕРµ Р»РёС†Рѕ РІ РіРѕСЂРѕРґРµ. Р•РјСѓ СѓРґР°Р»РѕСЃСЊ РґРѕР±РёС‚СЊСЃСЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ СЃС‚СЂР°Р¶РЅРёРєРё РїСЂРѕРїСѓСЃРєР°Р»Рё РІ РіРѕСЂРѕРґ РєР°Р¶РґРѕРіРѕ, РєС‚Рѕ РїСЂРёРЅРѕСЃРёС‚ РµРјСѓ СЂРµРґРєРёРµ С‚СЂР°РІС‹.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_03"); //РўР°Рє С‡С‚Рѕ РЅР° СЃР°РјРѕРј РґРµР»Рµ РІСЃРµ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ. РўРµР±Рµ РЅСѓР¶РЅРѕ СЃРѕР±СЂР°С‚СЊ Р±РѕР»СЊС€СѓСЋ РѕС…Р°РїРєСѓ СЂР°СЃС‚СѓС‰РёС… Р·РґРµСЃСЊ РїРѕРІСЃСЋРґСѓ СЂР°СЃС‚РµРЅРёР№, Р° Р·Р°С‚РµРј СЃРєР°Р·Р°С‚СЊ СЃС‚СЂР°Р¶РЅРёРєР°Рј, С‡С‚Рѕ С‚С‹ РЅРµСЃРµС€СЊ РёС… РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_04"); //РќРѕ С‚С‹ РЅРµ РґРѕР»Р¶РµРЅ СЃРѕР±РёСЂР°С‚СЊ СЂР°Р·РЅС‹Рµ С‚СЂР°РІС‹. РЎС‚СЂР°Р¶РЅРёРєРё РЅРµ СЃР»РёС€РєРѕРј СЃРѕРѕР±СЂР°Р·РёС‚РµР»СЊРЅС‹ Рё РІ Р°Р»С…РёРјРёРё РЅРµ СЂР°Р·Р±РёСЂР°СЋС‚СЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_05"); //Р§С‚РѕР±С‹ РѕРЅРё С‚РµР±СЏ РїСЂРѕРїСѓСЃС‚РёР»Рё, С‚РІРѕСЏ РѕС…Р°РїРєР° С‚СЂР°РІ РґРѕР»Р¶РЅР° РёРј РїРѕРЅСЂР°РІРёС‚СЊСЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_06"); //Р”СѓРјР°СЋ, РґРµСЃСЏС‚Рё РѕРґРёРЅР°РєРѕРІС‹С… СЂР°СЃС‚РµРЅРёР№ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_07"); //РЎРїР°СЃРёР±Рѕ Р·Р° СЃРѕРІРµС‚.
 	
 	Log_CreateTopic (TOPIC_Addon_PickForConstantino, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_PickForConstantino, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_PickForConstantino,"Лестер говорит, что я могу пройти мимо городской стражи, если у меня будет 10 растений одного вида, и если я скажу им, что они предназначены для алхимика Константино."); 
+	B_LogEntry (TOPIC_Addon_PickForConstantino,"Р›РµСЃС‚РµСЂ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ СЏ РјРѕРіСѓ РїСЂРѕР№С‚Рё РјРёРјРѕ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё, РµСЃР»Рё Сѓ РјРµРЅСЏ Р±СѓРґРµС‚ 10 СЂР°СЃС‚РµРЅРёР№ РѕРґРЅРѕРіРѕ РІРёРґР°, Рё РµСЃР»Рё СЏ СЃРєР°Р¶Сѓ РёРј, С‡С‚Рѕ РѕРЅРё РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅС‹ РґР»СЏ Р°Р»С…РёРјРёРєР° РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ."); 
 	
 	MIS_Addon_Lester_PickForConstantino = LOG_RUNNING;
 };
@@ -273,7 +273,7 @@ instance DIA_Addon_Lester_PASSAGEPLANTSSUCCESS		(C_INFO)
 	condition	 = 	DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Condition;
 	information	 = 	DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Info;
 
-	description	 = 	"Все сработало замечательно.";
+	description	 = 	"Р’СЃРµ СЃСЂР°Р±РѕС‚Р°Р»Рѕ Р·Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ.";
 };
 
 func int DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Condition ()
@@ -286,8 +286,8 @@ func int DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Condition ()
 
 func void DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_15_00"); //Все сработало замечательно. Когда я сказал, что принес травы для Константино, стражники сразу же пропустили меня.
-	AI_Output	(self, other, "DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_13_01"); //Как я и говорил. Я плохого не посоветую, друг мой.
+	AI_Output	(other, self, "DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_15_00"); //Р’СЃРµ СЃСЂР°Р±РѕС‚Р°Р»Рѕ Р·Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ. РљРѕРіРґР° СЏ СЃРєР°Р·Р°Р», С‡С‚Рѕ РїСЂРёРЅРµСЃ С‚СЂР°РІС‹ РґР»СЏ РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ, СЃС‚СЂР°Р¶РЅРёРєРё СЃСЂР°Р·Сѓ Р¶Рµ РїСЂРѕРїСѓСЃС‚РёР»Рё РјРµРЅСЏ.
+	AI_Output	(self, other, "DIA_Addon_Lester_PASSAGEPLANTSSUCCESS_13_01"); //РљР°Рє СЏ Рё РіРѕРІРѕСЂРёР». РЇ РїР»РѕС…РѕРіРѕ РЅРµ РїРѕСЃРѕРІРµС‚СѓСЋ, РґСЂСѓРі РјРѕР№.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -301,7 +301,7 @@ INSTANCE DIA_Lester_Perm (C_INFO)
 	condition	= DIA_Lester_Perm_Condition;
 	information	= DIA_Lester_Perm_Info;
 	permanent	= TRUE;
-	description = "Что ты знаешь об этой местности?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё?";
 };                       
 FUNC INT DIA_Lester_Perm_Condition()
 {
@@ -314,9 +314,9 @@ FUNC INT DIA_Lester_Perm_Condition()
 };
 FUNC VOID DIA_Lester_Perm_Info()
 {	
-	AI_Output	(other, self,"DIA_Lester_Perm_15_00");	//Что ты знаешь об этой местности?
-	AI_Output	(self, other,"DIA_Lester_Perm_13_01");	//Если ты пойдешь по этой тропинке, то попадешь на ферму. А еще чуть дальше начинается город.
-	AI_Output	(self, other,"DIA_Lester_Perm_13_02");	//Но будь осторожен, по дороге тебе могут встретиться не только волки и крысы, но также гоблины и бандиты!
+	AI_Output	(other, self,"DIA_Lester_Perm_15_00");	//Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё?
+	AI_Output	(self, other,"DIA_Lester_Perm_13_01");	//Р•СЃР»Рё С‚С‹ РїРѕР№РґРµС€СЊ РїРѕ СЌС‚РѕР№ С‚СЂРѕРїРёРЅРєРµ, С‚Рѕ РїРѕРїР°РґРµС€СЊ РЅР° С„РµСЂРјСѓ. Рђ РµС‰Рµ С‡СѓС‚СЊ РґР°Р»СЊС€Рµ РЅР°С‡РёРЅР°РµС‚СЃСЏ РіРѕСЂРѕРґ.
+	AI_Output	(self, other,"DIA_Lester_Perm_13_02");	//РќРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, РїРѕ РґРѕСЂРѕРіРµ С‚РµР±Рµ РјРѕРіСѓС‚ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ РЅРµ С‚РѕР»СЊРєРѕ РІРѕР»РєРё Рё РєСЂС‹СЃС‹, РЅРѕ С‚Р°РєР¶Рµ РіРѕР±Р»РёРЅС‹ Рё Р±Р°РЅРґРёС‚С‹!
 };
 // ************************************************************
 // 		  		Sleep
@@ -328,7 +328,7 @@ INSTANCE DIA_Lester_Sleep (C_INFO)
 	condition	= DIA_Lester_Sleep_Condition;
 	information	= DIA_Lester_Sleep_Info;
 	permanent	= TRUE;
-	description = "Ты все еще чувствуешь себя измотанным?";
+	description = "РўС‹ РІСЃРµ РµС‰Рµ С‡СѓРІСЃС‚РІСѓРµС€СЊ СЃРµР±СЏ РёР·РјРѕС‚Р°РЅРЅС‹Рј?";
 };                       
 FUNC INT DIA_Lester_Sleep_Condition()
 {
@@ -340,9 +340,9 @@ FUNC INT DIA_Lester_Sleep_Condition()
 };
 FUNC VOID DIA_Lester_Sleep_Info()
 {	
-	AI_Output	(other, self,"DIA_Lester_Sleep_15_00");	//Ты все еще чувствуешь себя измотанным?
-	AI_Output	(self, other,"DIA_Lester_Sleep_13_01");	//Еще как. (зевает) Я рассказал Ксардасу все. А теперь я посплю немного. Денек...
-	AI_Output	(self, other,"DIA_Lester_Sleep_13_02");	//...другой... или даже больше.
+	AI_Output	(other, self,"DIA_Lester_Sleep_15_00");	//РўС‹ РІСЃРµ РµС‰Рµ С‡СѓРІСЃС‚РІСѓРµС€СЊ СЃРµР±СЏ РёР·РјРѕС‚Р°РЅРЅС‹Рј?
+	AI_Output	(self, other,"DIA_Lester_Sleep_13_01");	//Р•С‰Рµ РєР°Рє. (Р·РµРІР°РµС‚) РЇ СЂР°СЃСЃРєР°Р·Р°Р» РљСЃР°СЂРґР°СЃСѓ РІСЃРµ. Рђ С‚РµРїРµСЂСЊ СЏ РїРѕСЃРїР»СЋ РЅРµРјРЅРѕРіРѕ. Р”РµРЅРµРє...
+	AI_Output	(self, other,"DIA_Lester_Sleep_13_02");	//...РґСЂСѓРіРѕР№... РёР»Рё РґР°Р¶Рµ Р±РѕР»СЊС€Рµ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -400,17 +400,17 @@ func int DIA_Lester_BACKINTOWN_Condition ()
 };
 func void DIA_Lester_BACKINTOWN_Info ()
 {
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_00"); //Эй, ты вернулся, наконец! Ты должен немедленно увидеться с Ксардасом. Возникли проблемы.
-	AI_Output			(other, self, "DIA_Lester_BACKINTOWN_15_01"); //В это я готов поверить.
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_02"); //После того, как ты ушел, здесь начался ад кромешный.
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_03"); //Поговори с Ксардасом, он ждет тебя!
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_04"); //Передал мне эту руну для тебя. Она поможет тебе добраться до него побыстрее. Увидимся там.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_00"); //Р­Р№, С‚С‹ РІРµСЂРЅСѓР»СЃСЏ, РЅР°РєРѕРЅРµС†! РўС‹ РґРѕР»Р¶РµРЅ РЅРµРјРµРґР»РµРЅРЅРѕ СѓРІРёРґРµС‚СЊСЃСЏ СЃ РљСЃР°СЂРґР°СЃРѕРј. Р’РѕР·РЅРёРєР»Рё РїСЂРѕР±Р»РµРјС‹.
+	AI_Output			(other, self, "DIA_Lester_BACKINTOWN_15_01"); //Р’ СЌС‚Рѕ СЏ РіРѕС‚РѕРІ РїРѕРІРµСЂРёС‚СЊ.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_02"); //РџРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє С‚С‹ СѓС€РµР», Р·РґРµСЃСЊ РЅР°С‡Р°Р»СЃСЏ Р°Рґ РєСЂРѕРјРµС€РЅС‹Р№.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_03"); //РџРѕРіРѕРІРѕСЂРё СЃ РљСЃР°СЂРґР°СЃРѕРј, РѕРЅ Р¶РґРµС‚ С‚РµР±СЏ!
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_04"); //РџРµСЂРµРґР°Р» РјРЅРµ СЌС‚Сѓ СЂСѓРЅСѓ РґР»СЏ С‚РµР±СЏ. РћРЅР° РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РЅРµРіРѕ РїРѕР±С‹СЃС‚СЂРµРµ. РЈРІРёРґРёРјСЃСЏ С‚Р°Рј.
 	
 	CreateInvItems 		(self,ItRu_TeleportXardas,1);
 	B_GiveInvItems 		(self,other,ItRu_TeleportXardas,1);
 	
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine (self,"START");	//Joly: Lester geht wieder zurьck in sein Tal!
+	Npc_ExchangeRoutine (self,"START");	//Joly: Lester geht wieder zurСЊck in sein Tal!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -424,7 +424,7 @@ instance DIA_Lester_PERM3		(C_INFO)
 	information	 = 	DIA_Lester_PERM3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты не очень-то хорошо выглядишь.";
+	description	 = 	"РўС‹ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ С…РѕСЂРѕС€Рѕ РІС‹РіР»СЏРґРёС€СЊ.";
 };
 
 func int DIA_Lester_PERM3_Condition ()
@@ -439,27 +439,27 @@ func int DIA_Lester_PERM3_Condition ()
 var int DIA_Lester_PERM3_OneTime;
 func void DIA_Lester_PERM3_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_PERM3_15_00"); //Ты не очень-то хорошо выглядишь.
+	AI_Output			(other, self, "DIA_Lester_PERM3_15_00"); //РўС‹ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ С…РѕСЂРѕС€Рѕ РІС‹РіР»СЏРґРёС€СЊ.
 	
 	if (hero.guild == GIL_KDF)
 	{
 		if (DIA_Lester_PERM3_OneTime == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_01"); //Я и чувствую себя не очень хорошо. Я совершенно обессилен, и еще эти постоянные головные боли...
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_02"); //Каждый раз, когда один из этих парней в черных рясах появляется здесь, они только усиливаются.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_01"); //РЇ Рё С‡СѓРІСЃС‚РІСѓСЋ СЃРµР±СЏ РЅРµ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РЇ СЃРѕРІРµСЂС€РµРЅРЅРѕ РѕР±РµСЃСЃРёР»РµРЅ, Рё РµС‰Рµ СЌС‚Рё РїРѕСЃС‚РѕСЏРЅРЅС‹Рµ РіРѕР»РѕРІРЅС‹Рµ Р±РѕР»Рё...
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_02"); //РљР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° РѕРґРёРЅ РёР· СЌС‚РёС… РїР°СЂРЅРµР№ РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… РїРѕСЏРІР»СЏРµС‚СЃСЏ Р·РґРµСЃСЊ, РѕРЅРё С‚РѕР»СЊРєРѕ СѓСЃРёР»РёРІР°СЋС‚СЃСЏ.
 			
 			if (SC_KnowsMadPsi == TRUE)
 				{
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_03"); //И я могу сказать тебе почему.
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_04"); //Да? Боюсь, я не хочу этого знать.
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_05"); //Люди в черных рясах - или Ищущие, как мы, маги, называем их - были последователями сильного архидемона. Тебе это ни о чем не говорит?
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_06"); //Ммм. Нет. Если только ты не хочешь сказать мне, что...
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_07"); //Да, именно. Ищущие были последователями Спящего. Безумцы из секты отступников из Болотного Лагеря.
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_08"); //Это твои люди, Лестер. Бывшее Братство Спящего. Теперь они просто бездушные приспешники зла.
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_09"); //У меня были подозрения, но я надеялся, что это не так. Ты хочешь сказать, он вернулся? Спящий опять здесь?
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_10"); //Хороший вопрос. Я знаю наверняка, только что я должен остановить Ищущих до того, как они станут слишком сильны.
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_11"); //Мне это не нравится, но я думаю, ты прав. Мне очень жаль, но с моей головой творится такое...
-					B_LogEntry (TOPIC_DEMENTOREN,"Мои подозрения подтвердились. Даже у Лестера нет сомнений, что Ищущие - это последователи Спящего из старого лагеря в болотах."); 
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_03"); //Р СЏ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ РїРѕС‡РµРјСѓ.
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_04"); //Р”Р°? Р‘РѕСЋСЃСЊ, СЏ РЅРµ С…РѕС‡Сѓ СЌС‚РѕРіРѕ Р·РЅР°С‚СЊ.
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_05"); //Р›СЋРґРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… - РёР»Рё РС‰СѓС‰РёРµ, РєР°Рє РјС‹, РјР°РіРё, РЅР°Р·С‹РІР°РµРј РёС… - Р±С‹Р»Рё РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЏРјРё СЃРёР»СЊРЅРѕРіРѕ Р°СЂС…РёРґРµРјРѕРЅР°. РўРµР±Рµ СЌС‚Рѕ РЅРё Рѕ С‡РµРј РЅРµ РіРѕРІРѕСЂРёС‚?
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_06"); //РњРјРј. РќРµС‚. Р•СЃР»Рё С‚РѕР»СЊРєРѕ С‚С‹ РЅРµ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ, С‡С‚Рѕ...
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_07"); //Р”Р°, РёРјРµРЅРЅРѕ. РС‰СѓС‰РёРµ Р±С‹Р»Рё РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЏРјРё РЎРїСЏС‰РµРіРѕ. Р‘РµР·СѓРјС†С‹ РёР· СЃРµРєС‚С‹ РѕС‚СЃС‚СѓРїРЅРёРєРѕРІ РёР· Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ.
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_08"); //Р­С‚Рѕ С‚РІРѕРё Р»СЋРґРё, Р›РµСЃС‚РµСЂ. Р‘С‹РІС€РµРµ Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ. РўРµРїРµСЂСЊ РѕРЅРё РїСЂРѕСЃС‚Рѕ Р±РµР·РґСѓС€РЅС‹Рµ РїСЂРёСЃРїРµС€РЅРёРєРё Р·Р»Р°.
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_09"); //РЈ РјРµРЅСЏ Р±С‹Р»Рё РїРѕРґРѕР·СЂРµРЅРёСЏ, РЅРѕ СЏ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ С‚Р°Рє. РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, РѕРЅ РІРµСЂРЅСѓР»СЃСЏ? РЎРїСЏС‰РёР№ РѕРїСЏС‚СЊ Р·РґРµСЃСЊ?
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_10"); //РҐРѕСЂРѕС€РёР№ РІРѕРїСЂРѕСЃ. РЇ Р·РЅР°СЋ РЅР°РІРµСЂРЅСЏРєР°, С‚РѕР»СЊРєРѕ С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РС‰СѓС‰РёС… РґРѕ С‚РѕРіРѕ, РєР°Рє РѕРЅРё СЃС‚Р°РЅСѓС‚ СЃР»РёС€РєРѕРј СЃРёР»СЊРЅС‹.
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_11"); //РњРЅРµ СЌС‚Рѕ РЅРµ РЅСЂР°РІРёС‚СЃСЏ, РЅРѕ СЏ РґСѓРјР°СЋ, С‚С‹ РїСЂР°РІ. РњРЅРµ РѕС‡РµРЅСЊ Р¶Р°Р»СЊ, РЅРѕ СЃ РјРѕРµР№ РіРѕР»РѕРІРѕР№ С‚РІРѕСЂРёС‚СЃСЏ С‚Р°РєРѕРµ...
+					B_LogEntry (TOPIC_DEMENTOREN,"РњРѕРё РїРѕРґРѕР·СЂРµРЅРёСЏ РїРѕРґС‚РІРµСЂРґРёР»РёСЃСЊ. Р”Р°Р¶Рµ Сѓ Р›РµСЃС‚РµСЂР° РЅРµС‚ СЃРѕРјРЅРµРЅРёР№, С‡С‚Рѕ РС‰СѓС‰РёРµ - СЌС‚Рѕ РїРѕСЃР»РµРґРѕРІР°С‚РµР»Рё РЎРїСЏС‰РµРіРѕ РёР· СЃС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ РІ Р±РѕР»РѕС‚Р°С…."); 
 					B_GivePlayerXP (XP_Lester_KnowsMadPsi);
 					DIA_Lester_PERM3_OneTime = TRUE;
 				};
@@ -469,19 +469,19 @@ func void DIA_Lester_PERM3_Info ()
 	{
 		if (Lester_IsOnBOard == LOG_SUCCESS)
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_12"); //Головные боли все еще мучают меня, но я надеюсь, эта проблема скоро будет решена.
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_13"); //Так или иначе.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_12"); //Р“РѕР»РѕРІРЅС‹Рµ Р±РѕР»Рё РІСЃРµ РµС‰Рµ РјСѓС‡Р°СЋС‚ РјРµРЅСЏ, РЅРѕ СЏ РЅР°РґРµСЋСЃСЊ, СЌС‚Р° РїСЂРѕР±Р»РµРјР° СЃРєРѕСЂРѕ Р±СѓРґРµС‚ СЂРµС€РµРЅР°.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_13"); //РўР°Рє РёР»Рё РёРЅР°С‡Рµ.
 		}
 		else if (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_14"); //Мои головные боли стали просто невыносимыми. А теперь еще эти люди-ящеры постоянно нападают на меня. Я задаю себе вопрос - откуда они все взялись.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_14"); //РњРѕРё РіРѕР»РѕРІРЅС‹Рµ Р±РѕР»Рё СЃС‚Р°Р»Рё РїСЂРѕСЃС‚Рѕ РЅРµРІС‹РЅРѕСЃРёРјС‹РјРё. Рђ С‚РµРїРµСЂСЊ РµС‰Рµ СЌС‚Рё Р»СЋРґРё-СЏС‰РµСЂС‹ РїРѕСЃС‚РѕСЏРЅРЅРѕ РЅР°РїР°РґР°СЋС‚ РЅР° РјРµРЅСЏ. РЇ Р·Р°РґР°СЋ СЃРµР±Рµ РІРѕРїСЂРѕСЃ - РѕС‚РєСѓРґР° РѕРЅРё РІСЃРµ РІР·СЏР»РёСЃСЊ.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_15"); //Эти головные боли все не прекращаются. Грядет что-то ужасное.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_15"); //Р­С‚Рё РіРѕР»РѕРІРЅС‹Рµ Р±РѕР»Рё РІСЃРµ РЅРµ РїСЂРµРєСЂР°С‰Р°СЋС‚СЃСЏ. Р“СЂСЏРґРµС‚ С‡С‚Рѕ-С‚Рѕ СѓР¶Р°СЃРЅРѕРµ.
 		};
 	};
-	AI_Output			(self, other, "DIA_Lester_PERM3_13_16"); //(вздыхает) Я думаю, мне лучше отдохнуть.
+	AI_Output			(self, other, "DIA_Lester_PERM3_13_16"); //(РІР·РґС‹С…Р°РµС‚) РЇ РґСѓРјР°СЋ, РјРЅРµ Р»СѓС‡С€Рµ РѕС‚РґРѕС…РЅСѓС‚СЊ.
 };
 
 //#####################################################################
@@ -564,7 +564,7 @@ instance DIA_Lester_XARDASWEG		(C_INFO)
 	condition	 = 	DIA_Lester_XARDASWEG_Condition;
 	information	 = 	DIA_Lester_XARDASWEG_Info;
 
-	description	 = 	"Где Ксардас?";
+	description	 = 	"Р“РґРµ РљСЃР°СЂРґР°СЃ?";
 };
 
 func int DIA_Lester_XARDASWEG_Condition ()
@@ -577,20 +577,20 @@ func int DIA_Lester_XARDASWEG_Condition ()
 
 func void DIA_Lester_XARDASWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_00"); //Где Ксардас?
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_01"); //Он ушел, а его башню заняли эти демонические создания.
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_02"); //Я думаю, он просто не хочет, чтобы кто-нибудь шарил в башне в его отсутствие.
-	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_03"); //Куда он отправился?
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_04"); //Он не сказал. Он только попросил меня передать тебе это письмо.
+	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_00"); //Р“РґРµ РљСЃР°СЂРґР°СЃ?
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_01"); //РћРЅ СѓС€РµР», Р° РµРіРѕ Р±Р°С€РЅСЋ Р·Р°РЅСЏР»Рё СЌС‚Рё РґРµРјРѕРЅРёС‡РµСЃРєРёРµ СЃРѕР·РґР°РЅРёСЏ.
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_02"); //РЇ РґСѓРјР°СЋ, РѕРЅ РїСЂРѕСЃС‚Рѕ РЅРµ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РєС‚Рѕ-РЅРёР±СѓРґСЊ С€Р°СЂРёР» РІ Р±Р°С€РЅРµ РІ РµРіРѕ РѕС‚СЃСѓС‚СЃС‚РІРёРµ.
+	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_03"); //РљСѓРґР° РѕРЅ РѕС‚РїСЂР°РІРёР»СЃСЏ?
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_04"); //РћРЅ РЅРµ СЃРєР°Р·Р°Р». РћРЅ С‚РѕР»СЊРєРѕ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ СЌС‚Рѕ РїРёСЃСЊРјРѕ.
 	
 	CreateInvItems 		(self, ItWr_XardasLetterToOpenBook_MIS, 1);					
 	B_GiveInvItems 		(self, other, ItWr_XardasLetterToOpenBook_MIS,1);
 	
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_05"); //Я прочел его. Извини. Мне просто было любопытно.
-	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_06"); //И?
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_07"); //Не знаю, я ничего не понял. Но мне ясно одно: Ксардаса мы теперь увидим нескоро.
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_08"); //Я думаю, здесь стало слишком жарко для него, и он направился в горы.
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Ксардас исчез. Лестер передал мне письмо, оставленное Ксардасом для меня."); 
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_05"); //РЇ РїСЂРѕС‡РµР» РµРіРѕ. РР·РІРёРЅРё. РњРЅРµ РїСЂРѕСЃС‚Рѕ Р±С‹Р»Рѕ Р»СЋР±РѕРїС‹С‚РЅРѕ.
+	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_06"); //Р?
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_07"); //РќРµ Р·РЅР°СЋ, СЏ РЅРёС‡РµРіРѕ РЅРµ РїРѕРЅСЏР». РќРѕ РјРЅРµ СЏСЃРЅРѕ РѕРґРЅРѕ: РљСЃР°СЂРґР°СЃР° РјС‹ С‚РµРїРµСЂСЊ СѓРІРёРґРёРј РЅРµСЃРєРѕСЂРѕ.
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_08"); //РЇ РґСѓРјР°СЋ, Р·РґРµСЃСЊ СЃС‚Р°Р»Рѕ СЃР»РёС€РєРѕРј Р¶Р°СЂРєРѕ РґР»СЏ РЅРµРіРѕ, Рё РѕРЅ РЅР°РїСЂР°РІРёР»СЃСЏ РІ РіРѕСЂС‹.
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"РљСЃР°СЂРґР°СЃ РёСЃС‡РµР·. Р›РµСЃС‚РµСЂ РїРµСЂРµРґР°Р» РјРЅРµ РїРёСЃСЊРјРѕ, РѕСЃС‚Р°РІР»РµРЅРЅРѕРµ РљСЃР°СЂРґР°СЃРѕРј РґР»СЏ РјРµРЅСЏ."); 
 };
 
 
@@ -604,7 +604,7 @@ instance DIA_Lester_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Lester_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Lester_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я узнал, где скрывается враг.";
+	description	 = 	"РЇ СѓР·РЅР°Р», РіРґРµ СЃРєСЂС‹РІР°РµС‚СЃСЏ РІСЂР°Рі.";
 };
 func int DIA_Lester_KnowWhereEnemy_Condition ()
 {	
@@ -616,31 +616,31 @@ func int DIA_Lester_KnowWhereEnemy_Condition ()
 };
 func void DIA_Lester_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_00"); //Я узнал, где скрывается враг.
-	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_01"); //Не спрашивай меня, почему я так думаю, но мне кажется, я должен отправиться с тобой.
-	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_02"); //Что ты хочешь этим сказать?
-	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_03"); //Я не могу объяснить этого, но я знаю, что смогу получить ответ, только если отправлюсь с тобой.
+	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_00"); //РЇ СѓР·РЅР°Р», РіРґРµ СЃРєСЂС‹РІР°РµС‚СЃСЏ РІСЂР°Рі.
+	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_01"); //РќРµ СЃРїСЂР°С€РёРІР°Р№ РјРµРЅСЏ, РїРѕС‡РµРјСѓ СЏ С‚Р°Рє РґСѓРјР°СЋ, РЅРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, СЏ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№.
+	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_02"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЌС‚РёРј СЃРєР°Р·Р°С‚СЊ?
+	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_03"); //РЇ РЅРµ РјРѕРіСѓ РѕР±СЉСЏСЃРЅРёС‚СЊ СЌС‚РѕРіРѕ, РЅРѕ СЏ Р·РЅР°СЋ, С‡С‚Рѕ СЃРјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ РѕС‚РІРµС‚, С‚РѕР»СЊРєРѕ РµСЃР»Рё РѕС‚РїСЂР°РІР»СЋСЃСЊ СЃ С‚РѕР±РѕР№.
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Lester_KnowWhereEnemy_15_04"); //Извини, но корабль уже полон.
-		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_05"); //Может так и нужно. Может, моя судьба ничего не значит по сравнению с событиями, что ждут нас впереди.
-		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_06"); //Ты знаешь, что тебе нужно делать. Сражайся со злом - а обо мне не волнуйся.
-		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_07"); //Моя судьба не важна.
+		AI_Output			(other,self , "DIA_Lester_KnowWhereEnemy_15_04"); //РР·РІРёРЅРё, РЅРѕ РєРѕСЂР°Р±Р»СЊ СѓР¶Рµ РїРѕР»РѕРЅ.
+		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_05"); //РњРѕР¶РµС‚ С‚Р°Рє Рё РЅСѓР¶РЅРѕ. РњРѕР¶РµС‚, РјРѕСЏ СЃСѓРґСЊР±Р° РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°С‡РёС‚ РїРѕ СЃСЂР°РІРЅРµРЅРёСЋ СЃ СЃРѕР±С‹С‚РёСЏРјРё, С‡С‚Рѕ Р¶РґСѓС‚ РЅР°СЃ РІРїРµСЂРµРґРё.
+		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_06"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РґРµР»Р°С‚СЊ. РЎСЂР°Р¶Р°Р№СЃСЏ СЃРѕ Р·Р»РѕРј - Р° РѕР±Рѕ РјРЅРµ РЅРµ РІРѕР»РЅСѓР№СЃСЏ.
+		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_07"); //РњРѕСЏ СЃСѓРґСЊР±Р° РЅРµ РІР°Р¶РЅР°.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Lester_KnowWhereEnemy);
-		Info_AddChoice (DIA_Lester_KnowWhereEnemy,"Я не могу взять тебя с собой.",DIA_Lester_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Lester_KnowWhereEnemy,"Тогда пойдем со мной, и получишь ответы на свои вопросы!",DIA_Lester_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Lester_KnowWhereEnemy,"РЇ РЅРµ РјРѕРіСѓ РІР·СЏС‚СЊ С‚РµР±СЏ СЃ СЃРѕР±РѕР№.",DIA_Lester_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Lester_KnowWhereEnemy,"РўРѕРіРґР° РїРѕР№РґРµРј СЃРѕ РјРЅРѕР№, Рё РїРѕР»СѓС‡РёС€СЊ РѕС‚РІРµС‚С‹ РЅР° СЃРІРѕРё РІРѕРїСЂРѕСЃС‹!",DIA_Lester_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Lester_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_00"); //Тогда пойдем со мной, и получишь ответы на свои вопросы!
-	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_01"); //Встретимся в гавани. Я приду туда, когда буду готов.
-	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_Yes_13_02"); //Поторопись. Времени у нас мало.
+	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_00"); //РўРѕРіРґР° РїРѕР№РґРµРј СЃРѕ РјРЅРѕР№, Рё РїРѕР»СѓС‡РёС€СЊ РѕС‚РІРµС‚С‹ РЅР° СЃРІРѕРё РІРѕРїСЂРѕСЃС‹!
+	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_01"); //Р’СЃС‚СЂРµС‚РёРјСЃСЏ РІ РіР°РІР°РЅРё. РЇ РїСЂРёРґСѓ С‚СѓРґР°, РєРѕРіРґР° Р±СѓРґСѓ РіРѕС‚РѕРІ.
+	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_Yes_13_02"); //РџРѕС‚РѕСЂРѕРїРёСЃСЊ. Р’СЂРµРјРµРЅРё Сѓ РЅР°СЃ РјР°Р»Рѕ.
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Lester_IsOnBoard	 = LOG_SUCCESS;
@@ -660,10 +660,10 @@ FUNC VOID DIA_Lester_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Lester_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_No_15_00"); //Я не могу взять тебя с собой.
-	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_01"); //Понимаю. Я, вероятно, действительно мало чем смогу помочь тебе.
-	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_02"); //Не важно, кого ты возьмешь с собой - главное, чтобы ты доверял им.
-	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_03"); //И береги себя.
+	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_No_15_00"); //РЇ РЅРµ РјРѕРіСѓ РІР·СЏС‚СЊ С‚РµР±СЏ СЃ СЃРѕР±РѕР№.
+	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_01"); //РџРѕРЅРёРјР°СЋ. РЇ, РІРµСЂРѕСЏС‚РЅРѕ, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РјР°Р»Рѕ С‡РµРј СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_02"); //РќРµ РІР°Р¶РЅРѕ, РєРѕРіРѕ С‚С‹ РІРѕР·СЊРјРµС€СЊ СЃ СЃРѕР±РѕР№ - РіР»Р°РІРЅРѕРµ, С‡С‚РѕР±С‹ С‚С‹ РґРѕРІРµСЂСЏР» РёРј.
+	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_No_13_03"); //Р Р±РµСЂРµРіРё СЃРµР±СЏ.
 
 	Lester_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Lester_KnowWhereEnemy);
@@ -680,7 +680,7 @@ instance DIA_Lester_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Lester_LeaveMyShip_Condition;
 	information	 = 	DIA_Lester_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"У меня все же нет места для тебя.";
+	description	 = 	"РЈ РјРµРЅСЏ РІСЃРµ Р¶Рµ РЅРµС‚ РјРµСЃС‚Р° РґР»СЏ С‚РµР±СЏ.";
 };
 func int DIA_Lester_LeaveMyShip_Condition ()
 {	
@@ -692,9 +692,9 @@ func int DIA_Lester_LeaveMyShip_Condition ()
 };
 func void DIA_Lester_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_LeaveMyShip_15_00"); //У меня все же нет места для тебя.
-	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_01"); //Понимаю. Я, вероятно, сделал бы то же самое на твоем месте.
-	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_02"); //Но если я понадоблюсь тебе, я буду рад помочь. Ты знаешь, где найти меня.
+	AI_Output			(other, self, "DIA_Lester_LeaveMyShip_15_00"); //РЈ РјРµРЅСЏ РІСЃРµ Р¶Рµ РЅРµС‚ РјРµСЃС‚Р° РґР»СЏ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_01"); //РџРѕРЅРёРјР°СЋ. РЇ, РІРµСЂРѕСЏС‚РЅРѕ, СЃРґРµР»Р°Р» Р±С‹ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ.
+	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_02"); //РќРѕ РµСЃР»Рё СЏ РїРѕРЅР°РґРѕР±Р»СЋСЃСЊ С‚РµР±Рµ, СЏ Р±СѓРґСѓ СЂР°Рґ РїРѕРјРѕС‡СЊ. РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РЅР°Р№С‚Рё РјРµРЅСЏ.
 	
 	Lester_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -703,7 +703,7 @@ func void DIA_Lester_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ьberlegt!
+//	Ich habs mir СЊberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lester_StillNeedYou		(C_INFO)
 {
@@ -712,11 +712,11 @@ instance DIA_Lester_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Lester_StillNeedYou_Condition;
 	information	 = 	DIA_Lester_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Мне нужен друг, всегда готовый помочь.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РµРЅ РґСЂСѓРі, РІСЃРµРіРґР° РіРѕС‚РѕРІС‹Р№ РїРѕРјРѕС‡СЊ.";
 };
 func int DIA_Lester_StillNeedYou_Condition ()
 {	
-	if ((Lester_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natьrlich nur eine variable abfragen
+	if ((Lester_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natСЊrlich nur eine variable abfragen
 	|| (Lester_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{
@@ -725,12 +725,12 @@ func int DIA_Lester_StillNeedYou_Condition ()
 };
 func void DIA_Lester_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_StillNeedYou_15_00"); //Мне нужен друг, всегда готовый помочь.
+	AI_Output			(other, self, "DIA_Lester_StillNeedYou_15_00"); //РњРЅРµ РЅСѓР¶РµРЅ РґСЂСѓРі, РІСЃРµРіРґР° РіРѕС‚РѕРІС‹Р№ РїРѕРјРѕС‡СЊ.
 	
 	if (Lester_IsOnBoard == LOG_OBSOLETE)
 	{
-		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_01"); //Я знал это! Мы будем сражаться рука об руку. Как в старые времена!
-		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_02"); //Берегись, Зло! Мы свернем тебе шею!
+		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_01"); //РЇ Р·РЅР°Р» СЌС‚Рѕ! РњС‹ Р±СѓРґРµРј СЃСЂР°Р¶Р°С‚СЊСЃСЏ СЂСѓРєР° РѕР± СЂСѓРєСѓ. РљР°Рє РІ СЃС‚Р°СЂС‹Рµ РІСЂРµРјРµРЅР°!
+		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_02"); //Р‘РµСЂРµРіРёСЃСЊ, Р—Р»Рѕ! РњС‹ СЃРІРµСЂРЅРµРј С‚РµР±Рµ С€РµСЋ!
 		
 		self.flags 		 = NPC_FLAG_IMMORTAL;
 		Lester_IsOnBoard	 = LOG_SUCCESS;
@@ -747,7 +747,7 @@ func void DIA_Lester_StillNeedYou_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_03"); //Я думаю, будет лучше, если я все же останусь здесь. Удачи.
+		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_03"); //РЇ РґСѓРјР°СЋ, Р±СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё СЏ РІСЃРµ Р¶Рµ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ. РЈРґР°С‡Рё.
 	
 		AI_StopProcessInfos (self);
 	};	

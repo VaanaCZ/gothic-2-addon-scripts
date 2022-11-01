@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Pardos_Hi   (C_INFO)
 	condition   = DIA_Addon_Pardos_Hi_Condition;
 	information = DIA_Addon_Pardos_Hi_Info;
 	permanent   = FALSE;
-	description = "Как ты себя чувствуешь?";
+	description = "РљР°Рє С‚С‹ СЃРµР±СЏ С‡СѓРІСЃС‚РІСѓРµС€СЊ?";
 };
 FUNC INT DIA_Addon_Pardos_Hi_Condition()
 {	
@@ -39,10 +39,10 @@ FUNC INT DIA_Addon_Pardos_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_00");//Как ты?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(устало) Я устал... Я совершенно изможден. Скажи, сейчас солнечный день или ясная ночь, и тысячи звезд мерцают на небосклоне?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(еще более устало) Я не знаю, идет ли теплый летний дождь... или дует прохладный вечерний ветер... Я больше ничего не чувствую...
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(покорно) Первыми здесь отказывают глаза...
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_00");//РљР°Рє С‚С‹?
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(СѓСЃС‚Р°Р»Рѕ) РЇ СѓСЃС‚Р°Р»... РЇ СЃРѕРІРµСЂС€РµРЅРЅРѕ РёР·РјРѕР¶РґРµРЅ. РЎРєР°Р¶Рё, СЃРµР№С‡Р°СЃ СЃРѕР»РЅРµС‡РЅС‹Р№ РґРµРЅСЊ РёР»Рё СЏСЃРЅР°СЏ РЅРѕС‡СЊ, Рё С‚С‹СЃСЏС‡Рё Р·РІРµР·Рґ РјРµСЂС†Р°СЋС‚ РЅР° РЅРµР±РѕСЃРєР»РѕРЅРµ?
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(РµС‰Рµ Р±РѕР»РµРµ СѓСЃС‚Р°Р»Рѕ) РЇ РЅРµ Р·РЅР°СЋ, РёРґРµС‚ Р»Рё С‚РµРїР»С‹Р№ Р»РµС‚РЅРёР№ РґРѕР¶РґСЊ... РёР»Рё РґСѓРµС‚ РїСЂРѕС…Р»Р°РґРЅС‹Р№ РІРµС‡РµСЂРЅРёР№ РІРµС‚РµСЂ... РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµ С‡СѓРІСЃС‚РІСѓСЋ...
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(РїРѕРєРѕСЂРЅРѕ) РџРµСЂРІС‹РјРё Р·РґРµСЃСЊ РѕС‚РєР°Р·С‹РІР°СЋС‚ РіР»Р°Р·Р°...
 };
 //---------------------------------------------------------------------
 //	Info save
@@ -54,7 +54,7 @@ INSTANCE DIA_Addon_Pardos_save   (C_INFO)
 	condition   = DIA_Addon_Pardos_save_Condition;
 	information = DIA_Addon_Pardos_save_Info;
 	permanent   = FALSE;
-	description = "Держись. Помощь скоро придет.";
+	description = "Р”РµСЂР¶РёСЃСЊ. РџРѕРјРѕС‰СЊ СЃРєРѕСЂРѕ РїСЂРёРґРµС‚.";
 };
 FUNC INT DIA_Addon_Pardos_save_Condition()
 {	
@@ -66,8 +66,8 @@ FUNC INT DIA_Addon_Pardos_save_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_save_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_save_15_00");//Держись. Помощь скоро придет.
-	AI_Output (self, other, "DIA_Addon_Pardos_save_03_01");//(устало) Спасибо. Спасибо за добрые слова.
+	AI_Output (other, self, "DIA_Addon_Pardos_save_15_00");//Р”РµСЂР¶РёСЃСЊ. РџРѕРјРѕС‰СЊ СЃРєРѕСЂРѕ РїСЂРёРґРµС‚.
+	AI_Output (self, other, "DIA_Addon_Pardos_save_03_01");//(СѓСЃС‚Р°Р»Рѕ) РЎРїР°СЃРёР±Рѕ. РЎРїР°СЃРёР±Рѕ Р·Р° РґРѕР±СЂС‹Рµ СЃР»РѕРІР°.
 	//Falsche Stimm Nummer M.F.//AI_Output (self, other, "DIA_Addon_Pardos_save_03_02");//Hey, du wirst doch jetzt nicht schlappmachen, oder? Gib jetzt nicht auf - klar?!
 };
 //---------------------------------------------------------------------
@@ -82,7 +82,7 @@ INSTANCE DIA_Addon_Pardos_trank   (C_INFO)
 	condition   = DIA_Addon_Pardos_trank_Condition;
 	information = DIA_Addon_Pardos_trank_Info;
 	permanent   = FALSE;
-	description = "Вот, выпей. (дать зелье)";
+	description = "Р’РѕС‚, РІС‹РїРµР№. (РґР°С‚СЊ Р·РµР»СЊРµ)";
 };
 FUNC INT DIA_Addon_Pardos_trank_Condition()
 {	
@@ -94,7 +94,7 @@ FUNC INT DIA_Addon_Pardos_trank_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_trank_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_trank_15_00");//Вот, выпей.
+	AI_Output (other, self, "DIA_Addon_Pardos_trank_15_00");//Р’РѕС‚, РІС‹РїРµР№.
 	AI_StandUpQuick	(self);	
 	
 	Info_ClearChoices (DIA_Addon_Pardos_trank);
@@ -103,26 +103,26 @@ FUNC VOID DIA_Addon_Pardos_trank_Info()
 	
 	if Npc_HasItems (other, ItPo_Health_01)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"Дать лечебную эссенцию",DIA_Addon_Pardos_trank_01);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"Р”Р°С‚СЊ Р»РµС‡РµР±РЅСѓСЋ СЌСЃСЃРµРЅС†РёСЋ",DIA_Addon_Pardos_trank_01);
 	};
 	if Npc_HasItems (other, ItPo_Health_02)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"Дать лечебный экстракт",DIA_Addon_Pardos_trank_02);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"Р”Р°С‚СЊ Р»РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚",DIA_Addon_Pardos_trank_02);
 	};
 	if Npc_HasItems (other, ItPo_Health_03)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"Дать лечебный эликсир",DIA_Addon_Pardos_trank_03);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"Р”Р°С‚СЊ Р»РµС‡РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ",DIA_Addon_Pardos_trank_03);
 	};
 	if Npc_HasItems (other, ItFo_Addon_Meatsoup)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"Дать мясную похлебку",DIA_Addon_Pardos_trank_Soup);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"Р”Р°С‚СЊ РјСЏСЃРЅСѓСЋ РїРѕС…Р»РµР±РєСѓ",DIA_Addon_Pardos_trank_Soup);
 	};
 	
 	
 };
 FUNC VOID B_SayPardosThanks()
 {
-	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_00");//Спасибо. Мне уже лучше.
+	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_00");//РЎРїР°СЃРёР±Рѕ. РњРЅРµ СѓР¶Рµ Р»СѓС‡С€Рµ.
 };
 FUNC VOID DIA_Addon_Pardos_trank_BACK()
 {
@@ -170,13 +170,13 @@ FUNC VOID DIA_Addon_Pardos_trank_03()
 //---------------------------------------------------------------------
 FUNC VOID DIA_Addon_Pardos_trank_Soup()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_trank_soup_15_00");//Вот, поешь мяса.
+	AI_Output (other, self, "DIA_Addon_Pardos_trank_soup_15_00");//Р’РѕС‚, РїРѕРµС€СЊ РјСЏСЃР°.
 	
 	if B_GiveInvItems (other, self, ItFo_Addon_Meatsoup,1)
 	{
 		B_UseItem 	(self,ItFo_Addon_Meatsoup);
 	};	
-	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_01");//Спасибо. Я уже не так слаб.
+	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_01");//РЎРїР°СЃРёР±Рѕ. РЇ СѓР¶Рµ РЅРµ С‚Р°Рє СЃР»Р°Р±.
 	B_GivePlayerXP (XP_Ambient *3);
 };
 //---------------------------------------------------------------------
@@ -189,7 +189,7 @@ INSTANCE DIA_Addon_Pardos_perm   (C_INFO)
 	condition   = DIA_Addon_Pardos_perm_Condition;
 	information = DIA_Addon_Pardos_perm_Info;
 	permanent   = TRUE;
-	description = "Как ты?";
+	description = "РљР°Рє С‚С‹?";
 };
 FUNC INT DIA_Addon_Pardos_perm_Condition()
 {	
@@ -200,8 +200,8 @@ FUNC INT DIA_Addon_Pardos_perm_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_perm_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_perm_15_00");//Как ты себя чувствуешь?
-	AI_Output (self, other, "DIA_Addon_Pardos_perm_03_01");//Спасибо, лучше. Ко мне возвращаются силы.
+	AI_Output (other, self, "DIA_Addon_Pardos_perm_15_00");//РљР°Рє С‚С‹ СЃРµР±СЏ С‡СѓРІСЃС‚РІСѓРµС€СЊ?
+	AI_Output (self, other, "DIA_Addon_Pardos_perm_03_01");//РЎРїР°СЃРёР±Рѕ, Р»СѓС‡С€Рµ. РљРѕ РјРЅРµ РІРѕР·РІСЂР°С‰Р°СЋС‚СЃСЏ СЃРёР»С‹.
 };
 
 

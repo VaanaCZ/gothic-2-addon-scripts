@@ -1,7 +1,7 @@
 instance BDT_1074_Addon_Edgor (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ýäãîð";
+	name 		= "Ð­Ð´Ð³Ð¾Ñ€";
 	guild 		= GIL_BDT;
 	id 			= 1074;
 	voice 		= 6;

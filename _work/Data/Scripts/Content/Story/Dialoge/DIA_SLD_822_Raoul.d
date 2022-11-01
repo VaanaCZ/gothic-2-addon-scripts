@@ -48,21 +48,21 @@ FUNC INT DIA_Raoul_NoSentenza_Condition()
  
 FUNC VOID DIA_Raoul_NoSentenza_Info()
 {	
-	AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_00"); //Минутку, приятель!
-	AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_01"); //Я не видел, чтобы Сентенза обыскивал тебя.
+	AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_00"); //РњРёРЅСѓС‚РєСѓ, РїСЂРёСЏС‚РµР»СЊ!
+	AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_01"); //РЇ РЅРµ РІРёРґРµР», С‡С‚РѕР±С‹ РЎРµРЅС‚РµРЅР·Р° РѕР±С‹СЃРєРёРІР°Р» С‚РµР±СЏ.
 	
 	if (Hlp_IsValidNpc(Sentenza))
 	&& (!C_NpcIsDown(Sentenza))
 	{
-		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_02"); //СЕНТЕНЗА! Иди сюда!
-		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_03"); //(фальшиво вежливо) Подожди секундочку, сейчас он подойдет!
-		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_04"); //И тогда тебя ждет неприятный сюрприз!
+		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_02"); //РЎР•РќРўР•РќР—Рђ! РРґРё СЃСЋРґР°!
+		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_03"); //(С„Р°Р»СЊС€РёРІРѕ РІРµР¶Р»РёРІРѕ) РџРѕРґРѕР¶РґРё СЃРµРєСѓРЅРґРѕС‡РєСѓ, СЃРµР№С‡Р°СЃ РѕРЅ РїРѕРґРѕР№РґРµС‚!
+		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_04"); //Р С‚РѕРіРґР° С‚РµР±СЏ Р¶РґРµС‚ РЅРµРїСЂРёСЏС‚РЅС‹Р№ СЃСЋСЂРїСЂРёР·!
 		
 		B_Attack (Sentenza, other, AR_NONE, 0);
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_05"); //Где же он? А, ладно, не важно, тебе повезло...
+		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_05"); //Р“РґРµ Р¶Рµ РѕРЅ? Рђ, Р»Р°РґРЅРѕ, РЅРµ РІР°Р¶РЅРѕ, С‚РµР±Рµ РїРѕРІРµР·Р»Рѕ...
 	};
 	
 	AI_StopProcessInfos (self);
@@ -95,11 +95,11 @@ FUNC VOID DIA_Raoul_Hello_Info()
 {	
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Raoul_Hello_01_00"); //(скучающе) Чего тебе нужно?
+		AI_Output (self ,other,"DIA_Raoul_Hello_01_00"); //(СЃРєСѓС‡Р°СЋС‰Рµ) Р§РµРіРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Raoul_Hello_01_01"); //(раздраженно) Что тебе нужно на этот раз?
+		AI_Output (self ,other,"DIA_Raoul_Hello_01_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РЅР° СЌС‚РѕС‚ СЂР°Р·?
 	};
 };
 
@@ -116,7 +116,7 @@ instance DIA_Raoul_PERMNone (C_INFO)
 	condition	= DIA_Raoul_PERMNone_Condition;
 	information	= DIA_Raoul_PERMNone_Info;
 	permanent	= TRUE;
-	description = "Я хочу осмотреться на этой ферме!"; 
+	description = "РЇ С…РѕС‡Сѓ РѕСЃРјРѕС‚СЂРµС‚СЊСЃСЏ РЅР° СЌС‚РѕР№ С„РµСЂРјРµ!"; 
 };                       
 
 FUNC INT DIA_Raoul_PERMNone_Condition()
@@ -131,14 +131,14 @@ FUNC VOID DIA_Raoul_PERMNone_Info()
 {	
 	if (Raoul_gesagt == FALSE)
 	{
-		AI_Output (other, self, "DIA_Raoul_PERMNone_15_00"); //Я хочу осмотреться на этой ферме!
-		AI_Output (self, other, "DIA_Raoul_PERMNone_01_01"); //Не заходи в здание слева. Там Сильвио. Он сейчас не в самом лучшем расположении духа.
-		AI_Output (self, other, "DIA_Raoul_PERMNone_01_02"); //Если он увидит слабака, не работающего на этой ферме, он может решить выместить на нем свою злобу.
+		AI_Output (other, self, "DIA_Raoul_PERMNone_15_00"); //РЇ С…РѕС‡Сѓ РѕСЃРјРѕС‚СЂРµС‚СЊСЃСЏ РЅР° СЌС‚РѕР№ С„РµСЂРјРµ!
+		AI_Output (self, other, "DIA_Raoul_PERMNone_01_01"); //РќРµ Р·Р°С…РѕРґРё РІ Р·РґР°РЅРёРµ СЃР»РµРІР°. РўР°Рј РЎРёР»СЊРІРёРѕ. РћРЅ СЃРµР№С‡Р°СЃ РЅРµ РІ СЃР°РјРѕРј Р»СѓС‡С€РµРј СЂР°СЃРїРѕР»РѕР¶РµРЅРёРё РґСѓС…Р°.
+		AI_Output (self, other, "DIA_Raoul_PERMNone_01_02"); //Р•СЃР»Рё РѕРЅ СѓРІРёРґРёС‚ СЃР»Р°Р±Р°РєР°, РЅРµ СЂР°Р±РѕС‚Р°СЋС‰РµРіРѕ РЅР° СЌС‚РѕР№ С„РµСЂРјРµ, РѕРЅ РјРѕР¶РµС‚ СЂРµС€РёС‚СЊ РІС‹РјРµСЃС‚РёС‚СЊ РЅР° РЅРµРј СЃРІРѕСЋ Р·Р»РѕР±Сѓ.
 		Raoul_gesagt = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Raoul_PERMNone_01_03"); //Удачи!
+		AI_Output (self, other, "DIA_Raoul_PERMNone_01_03"); //РЈРґР°С‡Рё!
 		AI_StopProcessInfos (self);
 	};
 };
@@ -153,7 +153,7 @@ instance DIA_Raoul_WannaJoin (C_INFO)
 	condition	= DIA_Raoul_WannaJoin_Condition;
 	information	= DIA_Raoul_WannaJoin_Info;
 	permanent	= FALSE;
-	description = "Я хочу присоединиться к Ли!"; 
+	description = "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р›Рё!"; 
 };                       
 
 FUNC INT DIA_Raoul_WannaJoin_Condition()
@@ -166,11 +166,11 @@ FUNC INT DIA_Raoul_WannaJoin_Condition()
  
 FUNC VOID DIA_Raoul_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Raoul_WannaJoin_15_00"); //Я хочу присоединиться к Ли!
-	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_01"); //Если Ли будет продолжать в том же духе, ему скоро некем будет командовать!
-	AI_Output (other, self, "DIA_Raoul_WannaJoin_15_02"); //Что ты хочешь этим сказать?
-	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_03"); //Он хочет, чтобы мы сидели здесь и били баклуши. Иногда приходится задавать взбучку фермерам - и это все.
-	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_04"); //Сильвио всегда говорил, что нападение - это лучшая оборона, и, черт возьми, он прав.
+	AI_Output (other, self, "DIA_Raoul_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р›Рё!
+	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_01"); //Р•СЃР»Рё Р›Рё Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РІ С‚РѕРј Р¶Рµ РґСѓС…Рµ, РµРјСѓ СЃРєРѕСЂРѕ РЅРµРєРµРј Р±СѓРґРµС‚ РєРѕРјР°РЅРґРѕРІР°С‚СЊ!
+	AI_Output (other, self, "DIA_Raoul_WannaJoin_15_02"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЌС‚РёРј СЃРєР°Р·Р°С‚СЊ?
+	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_03"); //РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РјС‹ СЃРёРґРµР»Рё Р·РґРµСЃСЊ Рё Р±РёР»Рё Р±Р°РєР»СѓС€Рё. РРЅРѕРіРґР° РїСЂРёС…РѕРґРёС‚СЃСЏ Р·Р°РґР°РІР°С‚СЊ РІР·Р±СѓС‡РєСѓ С„РµСЂРјРµСЂР°Рј - Рё СЌС‚Рѕ РІСЃРµ.
+	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_04"); //РЎРёР»СЊРІРёРѕ РІСЃРµРіРґР° РіРѕРІРѕСЂРёР», С‡С‚Рѕ РЅР°РїР°РґРµРЅРёРµ - СЌС‚Рѕ Р»СѓС‡С€Р°СЏ РѕР±РѕСЂРѕРЅР°, Рё, С‡РµСЂС‚ РІРѕР·СЊРјРё, РѕРЅ РїСЂР°РІ.
 };
 	
 // ************************************************************
@@ -183,7 +183,7 @@ instance DIA_Raoul_AboutSylvio (C_INFO)
 	condition	= DIA_Raoul_AboutSylvio_Condition;
 	information	= DIA_Raoul_AboutSylvio_Info;
 	permanent	= FALSE;
-	description = "Кто такой Сильвио?"; 
+	description = "РљС‚Рѕ С‚Р°РєРѕР№ РЎРёР»СЊРІРёРѕ?"; 
 };                       
 
 FUNC INT DIA_Raoul_AboutSylvio_Condition()
@@ -197,9 +197,9 @@ FUNC INT DIA_Raoul_AboutSylvio_Condition()
  
 FUNC VOID DIA_Raoul_AboutSylvio_Info()
 {	
-	AI_Output (other, self, "DIA_Raoul_AboutSylvio_15_00"); //Кто такой Сильвио?
-	AI_Output (self, other, "DIA_Raoul_AboutSylvio_01_01"); //Наш следующий предводитель, если тебе интересно мое мнение. Если ты собираешься просить его, чтобы он позволил тебе присоединиться к нашим рядам, забудь об этом!
-	AI_Output (self, other, "DIA_Raoul_AboutSylvio_01_02"); //Судя по твоему виду, ты не подходишь даже для того, чтобы пасти овец.
+	AI_Output (other, self, "DIA_Raoul_AboutSylvio_15_00"); //РљС‚Рѕ С‚Р°РєРѕР№ РЎРёР»СЊРІРёРѕ?
+	AI_Output (self, other, "DIA_Raoul_AboutSylvio_01_01"); //РќР°С€ СЃР»РµРґСѓСЋС‰РёР№ РїСЂРµРґРІРѕРґРёС‚РµР»СЊ, РµСЃР»Рё С‚РµР±Рµ РёРЅС‚РµСЂРµСЃРЅРѕ РјРѕРµ РјРЅРµРЅРёРµ. Р•СЃР»Рё С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РїСЂРѕСЃРёС‚СЊ РµРіРѕ, С‡С‚РѕР±С‹ РѕРЅ РїРѕР·РІРѕР»РёР» С‚РµР±Рµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°С€РёРј СЂСЏРґР°Рј, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
+	AI_Output (self, other, "DIA_Raoul_AboutSylvio_01_02"); //РЎСѓРґСЏ РїРѕ С‚РІРѕРµРјСѓ РІРёРґСѓ, С‚С‹ РЅРµ РїРѕРґС…РѕРґРёС€СЊ РґР°Р¶Рµ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїР°СЃС‚Рё РѕРІРµС†.
 };
 
 // ************************************************************
@@ -212,7 +212,7 @@ instance DIA_Raoul_Stimme (C_INFO)
 	condition	= DIA_Raoul_Stimme_Condition;
 	information	= DIA_Raoul_Stimme_Info;
 	permanent	= FALSE;
-	description = "Я бы хотел стать наемником. Ты не возражаешь?"; 
+	description = "РЇ Р±С‹ С…РѕС‚РµР» СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј. РўС‹ РЅРµ РІРѕР·СЂР°Р¶Р°РµС€СЊ?"; 
 };                       
 
 FUNC INT DIA_Raoul_Stimme_Condition()
@@ -225,12 +225,12 @@ FUNC INT DIA_Raoul_Stimme_Condition()
  
 FUNC VOID DIA_Raoul_Stimme_Info()
 {	
-	AI_Output (other, self, "DIA_Raoul_Stimme_15_00"); //Я бы хотел стать наемником. Ты не возражаешь?
-	AI_Output (self, other, "DIA_Raoul_Stimme_01_01"); //Ааа, делай, что хочешь...
+	AI_Output (other, self, "DIA_Raoul_Stimme_15_00"); //РЇ Р±С‹ С…РѕС‚РµР» СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј. РўС‹ РЅРµ РІРѕР·СЂР°Р¶Р°РµС€СЊ?
+	AI_Output (self, other, "DIA_Raoul_Stimme_01_01"); //РђР°Р°, РґРµР»Р°Р№, С‡С‚Рѕ С…РѕС‡РµС€СЊ...
 	
 	Log_CreateTopic (TOPIC_SLDRespekt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_SLDRespekt,LOG_RUNNING);
-	B_LogEntry (TOPIC_SLDRespekt,"Рауль не возражает против моего вступления в ряды наемников.");
+	B_LogEntry (TOPIC_SLDRespekt,"Р Р°СѓР»СЊ РЅРµ РІРѕР·СЂР°Р¶Р°РµС‚ РїСЂРѕС‚РёРІ РјРѕРµРіРѕ РІСЃС‚СѓРїР»РµРЅРёСЏ РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ.");
 };
 
 // ************************************************************
@@ -243,7 +243,7 @@ instance DIA_Raoul_Duell (C_INFO)
 	condition	= DIA_Raoul_Duell_Condition;
 	information	= DIA_Raoul_Duell_Info;
 	permanent	= TRUE;
-	description = "Я думаю, тебе стоит дать по морде..."; 
+	description = "РЇ РґСѓРјР°СЋ, С‚РµР±Рµ СЃС‚РѕРёС‚ РґР°С‚СЊ РїРѕ РјРѕСЂРґРµ..."; 
 };                       
 
 FUNC INT DIA_Raoul_Duell_Condition()
@@ -258,10 +258,10 @@ FUNC INT DIA_Raoul_Duell_Condition()
  
 FUNC VOID DIA_Raoul_Duell_Info()
 {	
-	AI_Output (other, self, "DIA_Raoul_Duell_15_00"); //Я думаю, тебе стоит дать по морде...
-	AI_Output (self, other, "DIA_Raoul_Duell_01_01"); //Что?
-	AI_Output (other, self, "DIA_Raoul_Duell_15_02"); //Это именно то, что тебе сейчас нужно...
-	AI_Output (self, other, "DIA_Raoul_Duell_01_03"); //По-моему, я был с тобой слишком вежлив!
+	AI_Output (other, self, "DIA_Raoul_Duell_15_00"); //РЇ РґСѓРјР°СЋ, С‚РµР±Рµ СЃС‚РѕРёС‚ РґР°С‚СЊ РїРѕ РјРѕСЂРґРµ...
+	AI_Output (self, other, "DIA_Raoul_Duell_01_01"); //Р§С‚Рѕ?
+	AI_Output (other, self, "DIA_Raoul_Duell_15_02"); //Р­С‚Рѕ РёРјРµРЅРЅРѕ С‚Рѕ, С‡С‚Рѕ С‚РµР±Рµ СЃРµР№С‡Р°СЃ РЅСѓР¶РЅРѕ...
+	AI_Output (self, other, "DIA_Raoul_Duell_01_03"); //РџРѕ-РјРѕРµРјСѓ, СЏ Р±С‹Р» СЃ С‚РѕР±РѕР№ СЃР»РёС€РєРѕРј РІРµР¶Р»РёРІ!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -283,7 +283,7 @@ instance DIA_Raoul_PERM		(C_INFO)
 	condition	= DIA_Raoul_PERM_Condition;
 	information	= DIA_Raoul_PERM_Info;
 	permanent	= TRUE;
-	description	= "Все в порядке?";
+	description	= "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Raoul_PERM_Condition ()
@@ -296,19 +296,19 @@ func int DIA_Raoul_PERM_Condition ()
 
 func void DIA_Raoul_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Raoul_PERM_15_00"); //Все в порядке?
+	AI_Output			(other, self, "DIA_Raoul_PERM_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 
 	if (MIS_Raoul_KillTrollBlack == LOG_RUNNING)
 	{
-		AI_Output			(self, other, "DIA_Raoul_PERM_01_01"); //Не болтай попусту. Или и принеси шкуру черного тролля.
+		AI_Output			(self, other, "DIA_Raoul_PERM_01_01"); //РќРµ Р±РѕР»С‚Р°Р№ РїРѕРїСѓСЃС‚Сѓ. РР»Рё Рё РїСЂРёРЅРµСЃРё С€РєСѓСЂСѓ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.
 	}
 	else 
 	{
-		AI_Output			(self, other, "DIA_Raoul_PERM_01_02"); //Ты пытаешься подлизаться ко мне? Забудь об этом!
+		AI_Output			(self, other, "DIA_Raoul_PERM_01_02"); //РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РїРѕРґР»РёР·Р°С‚СЊСЃСЏ РєРѕ РјРЅРµ? Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
 
 		 if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 		{
-			AI_Output			(self, other, "DIA_Raoul_PERM_01_03"); //Я не забыл, что ты сделал со мной.
+			AI_Output			(self, other, "DIA_Raoul_PERM_01_03"); //РЇ РЅРµ Р·Р°Р±С‹Р», С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» СЃРѕ РјРЅРѕР№.
 		};
 	};
 };
@@ -337,77 +337,77 @@ func int DIA_Raoul_TROLL_Condition ()
 
 func void DIA_Raoul_TROLL_Info ()
 {
-	AI_Output			(self, other, "DIA_Raoul_TROLL_01_00"); //(цинично) Только посмотрите на это!
-	AI_Output			(other, self, "DIA_Raoul_TROLL_15_01"); //Чего тебе нужно?
+	AI_Output			(self, other, "DIA_Raoul_TROLL_01_00"); //(С†РёРЅРёС‡РЅРѕ) РўРѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРёС‚Рµ РЅР° СЌС‚Рѕ!
+	AI_Output			(other, self, "DIA_Raoul_TROLL_15_01"); //Р§РµРіРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Raoul_TROLL_01_02"); //Ты присоединился к городским нищим? Похоже на то.
+			AI_Output			(self, other, "DIA_Raoul_TROLL_01_02"); //РўС‹ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РіРѕСЂРѕРґСЃРєРёРј РЅРёС‰РёРј? РџРѕС…РѕР¶Рµ РЅР° С‚Рѕ.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Raoul_TROLL_01_03"); //Не думай, что я стану уважать тебя только за то, что ты стал одним из нас.
+			AI_Output			(self, other, "DIA_Raoul_TROLL_01_03"); //РќРµ РґСѓРјР°Р№, С‡С‚Рѕ СЏ СЃС‚Р°РЅСѓ СѓРІР°Р¶Р°С‚СЊ С‚РµР±СЏ С‚РѕР»СЊРєРѕ Р·Р° С‚Рѕ, С‡С‚Рѕ С‚С‹ СЃС‚Р°Р» РѕРґРЅРёРј РёР· РЅР°СЃ.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Raoul_TROLL_01_04"); //Разыгрываешь из себя великого мага, ха?
+			AI_Output			(self, other, "DIA_Raoul_TROLL_01_04"); //Р Р°Р·С‹РіСЂС‹РІР°РµС€СЊ РёР· СЃРµР±СЏ РІРµР»РёРєРѕРіРѕ РјР°РіР°, С…Р°?
 		};
 	
-	AI_Output			(self, other, "DIA_Raoul_TROLL_01_05"); //Я скажу тебе одну вещь. Не важно, что ты носишь, я вижу тебя насквозь.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_01_06"); //По мне, так ты просто скользкий маленький бездельник и ничего больше.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_01_05"); //РЇ СЃРєР°Р¶Сѓ С‚РµР±Рµ РѕРґРЅСѓ РІРµС‰СЊ. РќРµ РІР°Р¶РЅРѕ, С‡С‚Рѕ С‚С‹ РЅРѕСЃРёС€СЊ, СЏ РІРёР¶Сѓ С‚РµР±СЏ РЅР°СЃРєРІРѕР·СЊ.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_01_06"); //РџРѕ РјРЅРµ, С‚Р°Рє С‚С‹ РїСЂРѕСЃС‚Рѕ СЃРєРѕР»СЊР·РєРёР№ РјР°Р»РµРЅСЊРєРёР№ Р±РµР·РґРµР»СЊРЅРёРє Рё РЅРёС‡РµРіРѕ Р±РѕР»СЊС€Рµ.
 
 	Info_ClearChoices	(DIA_Raoul_TROLL);
-	Info_AddChoice	(DIA_Raoul_TROLL, "Я должен идти.", DIA_Raoul_TROLL_weg );
-	Info_AddChoice	(DIA_Raoul_TROLL, "В чем твоя проблема?", DIA_Raoul_TROLL_rechnung );
+	Info_AddChoice	(DIA_Raoul_TROLL, "РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.", DIA_Raoul_TROLL_weg );
+	Info_AddChoice	(DIA_Raoul_TROLL, "Р’ С‡РµРј С‚РІРѕСЏ РїСЂРѕР±Р»РµРјР°?", DIA_Raoul_TROLL_rechnung );
 };
 
 func void DIA_Raoul_TROLL_weg ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLL_weg_15_00"); //Я должен идти.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_weg_01_01"); //Да, проваливай.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_weg_15_00"); //РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_weg_01_01"); //Р”Р°, РїСЂРѕРІР°Р»РёРІР°Р№.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Raoul_TROLL_rechnung ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_15_00"); //В чем твоя проблема?
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_01"); //Я вижу таких людей, как ты, насквозь. Способны только на слова, а когда доходит до дела - в кусты.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_02"); //Я ненавижу тех, кто одевается как вельможа и повсюду хвастает своими героическими делами.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_03"); //Не далее как вчера я набил морду одному такому. Он утверждал, что может завалить черного тролля одной левой.
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_15_04"); //И что?
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_05"); //(язвительно) Что ты хочешь сказать этим 'и что'?
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_06"); //Ты хоть раз в своей жизни видел черного тролля, болтун? Ты хотя бы представляешь себе, насколько велики эти монстры?
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_07"); //Если ты подойдешь к ним слишком близко, они разорвут тебя на куски.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_15_00"); //Р’ С‡РµРј С‚РІРѕСЏ РїСЂРѕР±Р»РµРјР°?
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_01"); //РЇ РІРёР¶Сѓ С‚Р°РєРёС… Р»СЋРґРµР№, РєР°Рє С‚С‹, РЅР°СЃРєРІРѕР·СЊ. РЎРїРѕСЃРѕР±РЅС‹ С‚РѕР»СЊРєРѕ РЅР° СЃР»РѕРІР°, Р° РєРѕРіРґР° РґРѕС…РѕРґРёС‚ РґРѕ РґРµР»Р° - РІ РєСѓСЃС‚С‹.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_02"); //РЇ РЅРµРЅР°РІРёР¶Сѓ С‚РµС…, РєС‚Рѕ РѕРґРµРІР°РµС‚СЃСЏ РєР°Рє РІРµР»СЊРјРѕР¶Р° Рё РїРѕРІСЃСЋРґСѓ С…РІР°СЃС‚Р°РµС‚ СЃРІРѕРёРјРё РіРµСЂРѕРёС‡РµСЃРєРёРјРё РґРµР»Р°РјРё.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_03"); //РќРµ РґР°Р»РµРµ РєР°Рє РІС‡РµСЂР° СЏ РЅР°Р±РёР» РјРѕСЂРґСѓ РѕРґРЅРѕРјСѓ С‚Р°РєРѕРјСѓ. РћРЅ СѓС‚РІРµСЂР¶РґР°Р», С‡С‚Рѕ РјРѕР¶РµС‚ Р·Р°РІР°Р»РёС‚СЊ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ РѕРґРЅРѕР№ Р»РµРІРѕР№.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_15_04"); //Р С‡С‚Рѕ?
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_05"); //(СЏР·РІРёС‚РµР»СЊРЅРѕ) Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ СЌС‚РёРј 'Рё С‡С‚Рѕ'?
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_06"); //РўС‹ С…РѕС‚СЊ СЂР°Р· РІ СЃРІРѕРµР№ Р¶РёР·РЅРё РІРёРґРµР» С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ, Р±РѕР»С‚СѓРЅ? РўС‹ С…РѕС‚СЏ Р±С‹ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ СЃРµР±Рµ, РЅР°СЃРєРѕР»СЊРєРѕ РІРµР»РёРєРё СЌС‚Рё РјРѕРЅСЃС‚СЂС‹?
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_07"); //Р•СЃР»Рё С‚С‹ РїРѕРґРѕР№РґРµС€СЊ Рє РЅРёРј СЃР»РёС€РєРѕРј Р±Р»РёР·РєРѕ, РѕРЅРё СЂР°Р·РѕСЂРІСѓС‚ С‚РµР±СЏ РЅР° РєСѓСЃРєРё.
 
 	Info_ClearChoices	(DIA_Raoul_TROLL);
-	Info_AddChoice	(DIA_Raoul_TROLL, "Мне это не интересно.", DIA_Raoul_TROLL_rechnung_hastrecht );
+	Info_AddChoice	(DIA_Raoul_TROLL, "РњРЅРµ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ.", DIA_Raoul_TROLL_rechnung_hastrecht );
 
 	if (Npc_IsDead(Troll_Black))
 	{
-		Info_AddChoice	(DIA_Raoul_TROLL, "Я уже убил черного тролля.", DIA_Raoul_TROLL_rechnung_ich );
+		Info_AddChoice	(DIA_Raoul_TROLL, "РЇ СѓР¶Рµ СѓР±РёР» С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.", DIA_Raoul_TROLL_rechnung_ich );
 	}
 	else
 	{
-		Info_AddChoice	(DIA_Raoul_TROLL, "Черного тролля? Нет проблем.", DIA_Raoul_TROLL_rechnung_noProb );
+		Info_AddChoice	(DIA_Raoul_TROLL, "Р§РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ? РќРµС‚ РїСЂРѕР±Р»РµРј.", DIA_Raoul_TROLL_rechnung_noProb );
 	};
 };
 
 func void B_Raoul_Blame ()
 {
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_00"); //Ты напрашиваешься, да? Я должен был уже оторвать тебе голову. Но у меня есть идея получше.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_01"); //Если ты такой великий боец, докажи это.
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_02"); //А что мне с этого будет?
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_03"); //Глупый вопрос. Почет, и твоя челюсть останется не сломанной.
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_04"); //Не так уж много.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_05"); //Ммм. Скажем, я заплачу тебе целую кучу денег, если ты принесешь мне шкуру черного тролля. Как тебе?
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_06"); //Уже лучше.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_07"); //Тогда чего ты ждешь?
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_00"); //РўС‹ РЅР°РїСЂР°С€РёРІР°РµС€СЊСЃСЏ, РґР°? РЇ РґРѕР»Р¶РµРЅ Р±С‹Р» СѓР¶Рµ РѕС‚РѕСЂРІР°С‚СЊ С‚РµР±Рµ РіРѕР»РѕРІСѓ. РќРѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РёРґРµСЏ РїРѕР»СѓС‡С€Рµ.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_01"); //Р•СЃР»Рё С‚С‹ С‚Р°РєРѕР№ РІРµР»РёРєРёР№ Р±РѕРµС†, РґРѕРєР°Р¶Рё СЌС‚Рѕ.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_02"); //Рђ С‡С‚Рѕ РјРЅРµ СЃ СЌС‚РѕРіРѕ Р±СѓРґРµС‚?
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_03"); //Р“Р»СѓРїС‹Р№ РІРѕРїСЂРѕСЃ. РџРѕС‡РµС‚, Рё С‚РІРѕСЏ С‡РµР»СЋСЃС‚СЊ РѕСЃС‚Р°РЅРµС‚СЃСЏ РЅРµ СЃР»РѕРјР°РЅРЅРѕР№.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_04"); //РќРµ С‚Р°Рє СѓР¶ РјРЅРѕРіРѕ.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_05"); //РњРјРј. РЎРєР°Р¶РµРј, СЏ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ С†РµР»СѓСЋ РєСѓС‡Сѓ РґРµРЅРµРі, РµСЃР»Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ С€РєСѓСЂСѓ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ. РљР°Рє С‚РµР±Рµ?
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_06"); //РЈР¶Рµ Р»СѓС‡С€Рµ.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_07"); //РўРѕРіРґР° С‡РµРіРѕ С‚С‹ Р¶РґРµС€СЊ?
 	
 	Log_CreateTopic (TOPIC_KillTrollBlack, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_KillTrollBlack, LOG_RUNNING);
-	B_LogEntry (TOPIC_KillTrollBlack,"Рауль чтобы я принес ему шкуру черного тролля."); 
+	B_LogEntry (TOPIC_KillTrollBlack,"Р Р°СѓР»СЊ С‡С‚РѕР±С‹ СЏ РїСЂРёРЅРµСЃ РµРјСѓ С€РєСѓСЂСѓ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ."); 
 	
 	MIS_Raoul_KillTrollBlack = LOG_RUNNING;
 
@@ -416,19 +416,19 @@ func void B_Raoul_Blame ()
 
 func void DIA_Raoul_TROLL_rechnung_hastrecht ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_hastrecht_15_00"); //Мне это не интересно.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_hastrecht_01_01"); //Ну, как знаешь.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_hastrecht_15_00"); //РњРЅРµ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_hastrecht_01_01"); //РќСѓ, РєР°Рє Р·РЅР°РµС€СЊ.
 	Info_ClearChoices	(DIA_Raoul_TROLL);
 };
 
 func void DIA_Raoul_TROLL_rechnung_ich ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_ich_15_00"); //Я уже убил черного тролля.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_ich_15_00"); //РЇ СѓР¶Рµ СѓР±РёР» С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.
 	B_Raoul_Blame ();
 };
 func void DIA_Raoul_TROLL_rechnung_noProb ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_noProb_15_00"); //Черного тролля? Нет проблем.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_noProb_15_00"); //Р§РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ? РќРµС‚ РїСЂРѕР±Р»РµРј.
 	B_Raoul_Blame ();
 };
 	
@@ -444,7 +444,7 @@ instance DIA_Raoul_TrophyFur		(C_INFO)
 	information	 = 	DIA_Raoul_TrophyFur_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Сначала скажи мне, как снять шкуру с черного тролля.";
+	description	 = 	"РЎРЅР°С‡Р°Р»Р° СЃРєР°Р¶Рё РјРЅРµ, РєР°Рє СЃРЅСЏС‚СЊ С€РєСѓСЂСѓ СЃ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.";
 };
 
 func int DIA_Raoul_TrophyFur_Condition ()
@@ -458,13 +458,13 @@ func int DIA_Raoul_TrophyFur_Condition ()
 
 func void DIA_Raoul_TrophyFur_Info ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TrophyFur_15_00"); //Сначала скажи мне, как снять шкуру с черного тролля.
+	AI_Output			(other, self, "DIA_Raoul_TrophyFur_15_00"); //РЎРЅР°С‡Р°Р»Р° СЃРєР°Р¶Рё РјРЅРµ, РєР°Рє СЃРЅСЏС‚СЊ С€РєСѓСЂСѓ СЃ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 	{
-		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_01"); //Тогда прочисть свои уши. Этот совет бесплатный.
-		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_02"); //Ты хватаешь этого зверя и делаешь надрез на каждой из его лап.
-		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_03"); //Затем снимаешь с него шкуру через голову. Разве это так сложно?
+		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_01"); //РўРѕРіРґР° РїСЂРѕС‡РёСЃС‚СЊ СЃРІРѕРё СѓС€Рё. Р­С‚РѕС‚ СЃРѕРІРµС‚ Р±РµСЃРїР»Р°С‚РЅС‹Р№.
+		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_02"); //РўС‹ С…РІР°С‚Р°РµС€СЊ СЌС‚РѕРіРѕ Р·РІРµСЂСЏ Рё РґРµР»Р°РµС€СЊ РЅР°РґСЂРµР· РЅР° РєР°Р¶РґРѕР№ РёР· РµРіРѕ Р»Р°Рї.
+		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_03"); //Р—Р°С‚РµРј СЃРЅРёРјР°РµС€СЊ СЃ РЅРµРіРѕ С€РєСѓСЂСѓ С‡РµСЂРµР· РіРѕР»РѕРІСѓ. Р Р°Р·РІРµ СЌС‚Рѕ С‚Р°Рє СЃР»РѕР¶РЅРѕ?
 	};	
 };
 
@@ -479,7 +479,7 @@ instance DIA_Raoul_TROLLFELL		(C_INFO)
 	condition	 = 	DIA_Raoul_TROLLFELL_Condition;
 	information	 = 	DIA_Raoul_TROLLFELL_Info;
 
-	description	 = 	"Я принес шкуру черного тролля.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ С€РєСѓСЂСѓ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.";
 };
 
 func int DIA_Raoul_TROLLFELL_Condition ()
@@ -493,16 +493,16 @@ func int DIA_Raoul_TROLLFELL_Condition ()
 
 func void DIA_Raoul_TROLLFELL_Info ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_15_00"); //Я принес шкуру черного тролля.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_01"); //Невероятно. Покажи.
+	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_15_00"); //РЇ РїСЂРёРЅРµСЃ С€РєСѓСЂСѓ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_01"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ. РџРѕРєР°Р¶Рё.
 	B_GiveInvItems 		(other, self, ItAt_TrollBlackFur,1);
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_02"); //Невероятно. Что ты хочешь за нее?
-	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_15_03"); //Отдай мне все, что у тебя есть.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_04"); //Хорошо. Я дам тебе 500 золотых монет и три сильных лечебных зелья. Что скажешь?
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_02"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ. Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° РЅРµРµ?
+	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_15_03"); //РћС‚РґР°Р№ РјРЅРµ РІСЃРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_04"); //РҐРѕСЂРѕС€Рѕ. РЇ РґР°Рј С‚РµР±Рµ 500 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Рё С‚СЂРё СЃРёР»СЊРЅС‹С… Р»РµС‡РµР±РЅС‹С… Р·РµР»СЊСЏ. Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 	
 	Info_ClearChoices	(DIA_Raoul_TROLLFELL);
-	Info_AddChoice	(DIA_Raoul_TROLLFELL, "Этого недостаточно.", DIA_Raoul_TROLLFELL_nein );
-	Info_AddChoice	(DIA_Raoul_TROLLFELL, "Готово.", DIA_Raoul_TROLLFELL_ja );
+	Info_AddChoice	(DIA_Raoul_TROLLFELL, "Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.", DIA_Raoul_TROLLFELL_nein );
+	Info_AddChoice	(DIA_Raoul_TROLLFELL, "Р“РѕС‚РѕРІРѕ.", DIA_Raoul_TROLLFELL_ja );
 
 	MIS_Raoul_KillTrollBlack = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Raoul_KillTrollBlack);
@@ -510,8 +510,8 @@ func void DIA_Raoul_TROLLFELL_Info ()
 
 func void DIA_Raoul_TROLLFELL_ja ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_ja_15_00"); //Продано.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_ja_01_01"); //Отличная сделка.
+	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_ja_15_00"); //РџСЂРѕРґР°РЅРѕ.
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_ja_01_01"); //РћС‚Р»РёС‡РЅР°СЏ СЃРґРµР»РєР°.
 	CreateInvItems (self, ItPo_Health_03, 3);									
 	B_GiveInvItems (self, other, ItPo_Health_03, 3);					
 	CreateInvItems (self, ItMi_Gold, 500);									
@@ -522,9 +522,9 @@ func void DIA_Raoul_TROLLFELL_ja ()
 
 func void DIA_Raoul_TROLLFELL_nein ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_nein_15_00"); //Этого недостаточно.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_nein_01_01"); //Как знаешь. Я все равно заберу эту шкуру.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_nein_01_02"); //Я не прощу себе, если упущу такую возможность.
+	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_nein_15_00"); //Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_nein_01_01"); //РљР°Рє Р·РЅР°РµС€СЊ. РЇ РІСЃРµ СЂР°РІРЅРѕ Р·Р°Р±РµСЂСѓ СЌС‚Сѓ С€РєСѓСЂСѓ.
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_nein_01_02"); //РЇ РЅРµ РїСЂРѕС‰Сѓ СЃРµР±Рµ, РµСЃР»Рё СѓРїСѓС‰Сѓ С‚Р°РєСѓСЋ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ.
 	MIS_Raoul_DoesntPayTrollFur = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 };
@@ -540,7 +540,7 @@ instance DIA_Raoul_FELLZURUECK		(C_INFO)
 	information	 = 	DIA_Raoul_FELLZURUECK_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Верни мне мою шкуру черного тролля.";
+	description	 = 	"Р’РµСЂРЅРё РјРЅРµ РјРѕСЋ С€РєСѓСЂСѓ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.";
 };
 
 func int DIA_Raoul_FELLZURUECK_Condition ()
@@ -554,8 +554,8 @@ func int DIA_Raoul_FELLZURUECK_Condition ()
 
 func void DIA_Raoul_FELLZURUECK_Info ()
 {
-	AI_Output			(other, self, "DIA_Raoul_FELLZURUECK_15_00"); //Верни мне мою шкуру черного тролля.
-	AI_Output			(self, other, "DIA_Raoul_FELLZURUECK_01_01"); //Нет.
+	AI_Output			(other, self, "DIA_Raoul_FELLZURUECK_15_00"); //Р’РµСЂРЅРё РјРЅРµ РјРѕСЋ С€РєСѓСЂСѓ С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.
+	AI_Output			(self, other, "DIA_Raoul_FELLZURUECK_01_01"); //РќРµС‚.
 	AI_StopProcessInfos (self);
 };
 
@@ -569,7 +569,7 @@ instance DIA_Raoul_GotTrollFurBack		(C_INFO)
 	condition	 = 	DIA_Raoul_GotTrollFurBack_Condition;
 	information	 = 	DIA_Raoul_GotTrollFurBack_Info;
 
-	description	 = 	"Никогда больше не пытайся обмануть меня, понятно?";
+	description	 = 	"РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ, РїРѕРЅСЏС‚РЅРѕ?";
 };
 
 func int DIA_Raoul_GotTrollFurBack_Condition ()
@@ -584,8 +584,8 @@ func int DIA_Raoul_GotTrollFurBack_Condition ()
 
 func void DIA_Raoul_GotTrollFurBack_Info ()
 {
-	AI_Output			(other, self, "DIA_Raoul_GotTrollFurBack_15_00"); //Никогда больше не пытайся обмануть меня, понятно?
-	AI_Output			(self, other, "DIA_Raoul_GotTrollFurBack_01_01"); //Хорошо. Ты знаешь здешние законы. Так что успокойся.
+	AI_Output			(other, self, "DIA_Raoul_GotTrollFurBack_15_00"); //РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ, РїРѕРЅСЏС‚РЅРѕ?
+	AI_Output			(self, other, "DIA_Raoul_GotTrollFurBack_01_01"); //РҐРѕСЂРѕС€Рѕ. РўС‹ Р·РЅР°РµС€СЊ Р·РґРµС€РЅРёРµ Р·Р°РєРѕРЅС‹. РўР°Рє С‡С‚Рѕ СѓСЃРїРѕРєРѕР№СЃСЏ.
 	MIS_Raoul_DoesntPayTrollFur = LOG_SUCCESS;
 	AI_StopProcessInfos (self);
 };
@@ -701,7 +701,7 @@ instance DIA_Raoul_Ship		(C_INFO)
 	condition	 = 	DIA_Raoul_Ship_Condition;
 	information	 = 	DIA_Raoul_Ship_Info;
 
-	description	 = 	"Ты не отказался бы от океанского круиза?";
+	description	 = 	"РўС‹ РЅРµ РѕС‚РєР°Р·Р°Р»СЃСЏ Р±С‹ РѕС‚ РѕРєРµР°РЅСЃРєРѕРіРѕ РєСЂСѓРёР·Р°?";
 };
 
 func int DIA_Raoul_Ship_Condition ()
@@ -715,16 +715,16 @@ func int DIA_Raoul_Ship_Condition ()
 
 func void DIA_Raoul_Ship_Info ()
 {
-	AI_Output			(other, self, "DIA_Raoul_Ship_15_00"); //Ты не отказался бы от океанского круиза?
-	AI_Output			(self, other, "DIA_Raoul_Ship_01_01"); //Что ты замышляешь? Ты хочешь захватить корабль паладинов? (смеется)
-	AI_Output			(other, self, "DIA_Raoul_Ship_15_02"); //А что если и так?
-	AI_Output			(self, other, "DIA_Raoul_Ship_01_03"); //(серьезно) У тебя совсем крыша поехала. Нет, спасибо. Это не для меня.
-	AI_Output			(self, other, "DIA_Raoul_Ship_01_04"); //Я не вижу причин покидать Хоринис. Мне все равно, где зарабатывать деньги, здесь или на материке.
-	AI_Output			(self, other, "DIA_Raoul_Ship_01_05"); //Найди кого-нибудь еще.
+	AI_Output			(other, self, "DIA_Raoul_Ship_15_00"); //РўС‹ РЅРµ РѕС‚РєР°Р·Р°Р»СЃСЏ Р±С‹ РѕС‚ РѕРєРµР°РЅСЃРєРѕРіРѕ РєСЂСѓРёР·Р°?
+	AI_Output			(self, other, "DIA_Raoul_Ship_01_01"); //Р§С‚Рѕ С‚С‹ Р·Р°РјС‹С€Р»СЏРµС€СЊ? РўС‹ С…РѕС‡РµС€СЊ Р·Р°С…РІР°С‚РёС‚СЊ РєРѕСЂР°Р±Р»СЊ РїР°Р»Р°РґРёРЅРѕРІ? (СЃРјРµРµС‚СЃСЏ)
+	AI_Output			(other, self, "DIA_Raoul_Ship_15_02"); //Рђ С‡С‚Рѕ РµСЃР»Рё Рё С‚Р°Рє?
+	AI_Output			(self, other, "DIA_Raoul_Ship_01_03"); //(СЃРµСЂСЊРµР·РЅРѕ) РЈ С‚РµР±СЏ СЃРѕРІСЃРµРј РєСЂС‹С€Р° РїРѕРµС…Р°Р»Р°. РќРµС‚, СЃРїР°СЃРёР±Рѕ. Р­С‚Рѕ РЅРµ РґР»СЏ РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Raoul_Ship_01_04"); //РЇ РЅРµ РІРёР¶Сѓ РїСЂРёС‡РёРЅ РїРѕРєРёРґР°С‚СЊ РҐРѕСЂРёРЅРёСЃ. РњРЅРµ РІСЃРµ СЂР°РІРЅРѕ, РіРґРµ Р·Р°СЂР°Р±Р°С‚С‹РІР°С‚СЊ РґРµРЅСЊРіРё, Р·РґРµСЃСЊ РёР»Рё РЅР° РјР°С‚РµСЂРёРєРµ.
+	AI_Output			(self, other, "DIA_Raoul_Ship_01_05"); //РќР°Р№РґРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.
 
 	if ((Npc_IsDead(Torlof))== FALSE)
 	{
-		AI_Output			(self, other, "DIA_Raoul_Ship_01_06"); //Спроси Торлофа. Он ходил по морям, насколько я знаю.
+		AI_Output			(self, other, "DIA_Raoul_Ship_01_06"); //РЎРїСЂРѕСЃРё РўРѕСЂР»РѕС„Р°. РћРЅ С…РѕРґРёР» РїРѕ РјРѕСЂСЏРј, РЅР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ.
 	};
 };
 

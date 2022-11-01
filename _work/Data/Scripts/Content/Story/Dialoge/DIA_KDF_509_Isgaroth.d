@@ -19,11 +19,11 @@ FUNC INT DIA_Isgaroth_EXIT_Condition()
 
 FUNC VOID DIA_Isgaroth_EXIT_Info()
 {
-	AI_Output	(self ,other,"DIA_Isgaroth_EXIT_01_00"); //Пусть Иннос всегда освещает твой путь.
+	AI_Output	(self ,other,"DIA_Isgaroth_EXIT_01_00"); //РџСѓСЃС‚СЊ РРЅРЅРѕСЃ РІСЃРµРіРґР° РѕСЃРІРµС‰Р°РµС‚ С‚РІРѕР№ РїСѓС‚СЊ.
 	AI_StopProcessInfos (self);
 };
 //****************************************************************************
-//	Begrьssung
+//	BegrСЊssung
 //****************************************************************************
 
 INSTANCE DIA_Isgaroth_Hello   (C_INFO)
@@ -44,7 +44,7 @@ FUNC INT DIA_Isgaroth_Hello_Condition()
 };
 FUNC VOID DIA_Isgaroth_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Isgaroth_Hello_01_00"); //Да пребудет с тобой Иннос. Что я могу сделать для тебя, странник?
+	AI_Output (self ,other,"DIA_Isgaroth_Hello_01_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РРЅРЅРѕСЃ. Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ, СЃС‚СЂР°РЅРЅРёРє?
 }; 
 //****************************************************************************
 //	Segen
@@ -56,7 +56,7 @@ INSTANCE DIA_Isgaroth_Segen   (C_INFO)
 	condition   = DIA_Isgaroth_Segen_Condition;
 	information = DIA_Isgaroth_Segen_Info;
 	permanent   = TRUE;
-	description	= "Благослови меня!";
+	description	= "Р‘Р»Р°РіРѕСЃР»РѕРІРё РјРµРЅСЏ!";
 };
 FUNC INT DIA_Isgaroth_Segen_Condition()
 {
@@ -64,8 +64,8 @@ FUNC INT DIA_Isgaroth_Segen_Condition()
 };
 FUNC VOID DIA_Isgaroth_Segen_Info()
 {
-	AI_Output (other ,self,"DIA_Isgaroth_Segen_15_00"); //Благослови меня!
-	AI_Output (self ,other,"DIA_Isgaroth_Segen_01_01"); //Благословляю тебя во имя Инноса. Пусть огонь Всевышнего горит в твоем сердце и дает тебе силы жить согласно его заветам.
+	AI_Output (other ,self,"DIA_Isgaroth_Segen_15_00"); //Р‘Р»Р°РіРѕСЃР»РѕРІРё РјРµРЅСЏ!
+	AI_Output (self ,other,"DIA_Isgaroth_Segen_01_01"); //Р‘Р»Р°РіРѕСЃР»РѕРІР»СЏСЋ С‚РµР±СЏ РІРѕ РёРјСЏ РРЅРЅРѕСЃР°. РџСѓСЃС‚СЊ РѕРіРѕРЅСЊ Р’СЃРµРІС‹С€РЅРµРіРѕ РіРѕСЂРёС‚ РІ С‚РІРѕРµРј СЃРµСЂРґС†Рµ Рё РґР°РµС‚ С‚РµР±Рµ СЃРёР»С‹ Р¶РёС‚СЊ СЃРѕРіР»Р°СЃРЅРѕ РµРіРѕ Р·Р°РІРµС‚Р°Рј.
 	
 	Isgaroth_Segen = TRUE;
 }; 
@@ -79,7 +79,7 @@ INSTANCE DIA_Isgaroth_Wolf   (C_INFO)
 	condition   = DIA_Isgaroth_Wolf_Condition;
 	information = DIA_Isgaroth_Wolf_Info;
 	permanent   = FALSE;
-	description	= "Меня послал Сержио ...";
+	description	= "РњРµРЅСЏ РїРѕСЃР»Р°Р» РЎРµСЂР¶РёРѕ ...";
 };
 FUNC INT DIA_Isgaroth_Wolf_Condition()
 {	
@@ -92,11 +92,11 @@ FUNC INT DIA_Isgaroth_Wolf_Condition()
 };
 FUNC VOID DIA_Isgaroth_Wolf_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_Wolf_15_00"); //Меня послал Сержио. Он поручил мне свои обязанности. Что нужно сделать?
-	AI_Output (self ,other,"DIA_Isgaroth_Wolf_01_01"); //Здесь недавно появился черный волк. Найди его и убей.
+	AI_Output (other,self ,"DIA_Isgaroth_Wolf_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» РЎРµСЂР¶РёРѕ. РћРЅ РїРѕСЂСѓС‡РёР» РјРЅРµ СЃРІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё. Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self ,other,"DIA_Isgaroth_Wolf_01_01"); //Р—РґРµСЃСЊ РЅРµРґР°РІРЅРѕ РїРѕСЏРІРёР»СЃСЏ С‡РµСЂРЅС‹Р№ РІРѕР»Рє. РќР°Р№РґРё РµРіРѕ Рё СѓР±РµР№.
 
 	MIS_IsgarothWolf = LOG_RUNNING;
-	B_LogEntry (Topic_IsgarothWolf,"Около алтаря бродит черный волк. Я должен найти его и убить.");
+	B_LogEntry (Topic_IsgarothWolf,"РћРєРѕР»Рѕ Р°Р»С‚Р°СЂСЏ Р±СЂРѕРґРёС‚ С‡РµСЂРЅС‹Р№ РІРѕР»Рє. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РµРіРѕ Рё СѓР±РёС‚СЊ.");
 	
 };
 //********************************************************************************
@@ -109,7 +109,7 @@ INSTANCE DIA_Isgaroth_tot   (C_INFO)
 	condition   = DIA_Isgaroth_tot_Condition;
 	information = DIA_Isgaroth_tot_Info;
 	permanent   = TRUE;
-	description	= "Я убил волка.";
+	description	= "РЇ СѓР±РёР» РІРѕР»РєР°.";
 };
 FUNC INT DIA_Isgaroth_tot_Condition()
 {	
@@ -123,8 +123,8 @@ FUNC INT DIA_Isgaroth_tot_Condition()
 };
 FUNC VOID DIA_Isgaroth_tot_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_tot_15_00"); //Я убил волка.
-	AI_Output (self ,other,"DIA_Isgaroth_tot_01_01"); //Хорошая работа, послушник. Ты мужественный человек. А теперь возвращайся в монастырь и принимайся за свои обязанности.
+	AI_Output (other,self ,"DIA_Isgaroth_tot_15_00"); //РЇ СѓР±РёР» РІРѕР»РєР°.
+	AI_Output (self ,other,"DIA_Isgaroth_tot_01_01"); //РҐРѕСЂРѕС€Р°СЏ СЂР°Р±РѕС‚Р°, РїРѕСЃР»СѓС€РЅРёРє. РўС‹ РјСѓР¶РµСЃС‚РІРµРЅРЅС‹Р№ С‡РµР»РѕРІРµРє. Рђ С‚РµРїРµСЂСЊ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ Рё РїСЂРёРЅРёРјР°Р№СЃСЏ Р·Р° СЃРІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё.
 	
 	MIS_IsgarothWolf = LOG_SUCCESS;
 	B_GivePlayerXP (XP_IsgarothWolf);
@@ -142,7 +142,7 @@ INSTANCE DIA_Isgaroth_Job   (C_INFO)
 	condition   = DIA_Isgaroth_Job_Condition;
 	information = DIA_Isgaroth_Job_Info;
 	permanent   = FALSE;
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 FUNC INT DIA_Isgaroth_Job_Condition()
 {
@@ -153,14 +153,14 @@ FUNC INT DIA_Isgaroth_Job_Condition()
 };
 FUNC VOID DIA_Isgaroth_Job_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_Job_15_00"); //Что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_01"); //Я Маг Огня. Жрец нашего бога Инноса.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_02"); //Этот алтарь посвящен ЕМУ, высшему богу, создателю огня и верховному судье.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_03"); //Ко мне приходят люди, чтобы помолиться Инносу и получить благословение.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_04"); //А за небольшое пожертвование ты можешь получить от меня много полезного.
+	AI_Output (other,self ,"DIA_Isgaroth_Job_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_01"); //РЇ РњР°Рі РћРіРЅСЏ. Р–СЂРµС† РЅР°С€РµРіРѕ Р±РѕРіР° РРЅРЅРѕСЃР°.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_02"); //Р­С‚РѕС‚ Р°Р»С‚Р°СЂСЊ РїРѕСЃРІСЏС‰РµРЅ Р•РњРЈ, РІС‹СЃС€РµРјСѓ Р±РѕРіСѓ, СЃРѕР·РґР°С‚РµР»СЋ РѕРіРЅСЏ Рё РІРµСЂС…РѕРІРЅРѕРјСѓ СЃСѓРґСЊРµ.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_03"); //РљРѕ РјРЅРµ РїСЂРёС…РѕРґСЏС‚ Р»СЋРґРё, С‡С‚РѕР±С‹ РїРѕРјРѕР»РёС‚СЊСЃСЏ РРЅРЅРѕСЃСѓ Рё РїРѕР»СѓС‡РёС‚СЊ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_04"); //Рђ Р·Р° РЅРµР±РѕР»СЊС€РѕРµ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ С‚С‹ РјРѕР¶РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РѕС‚ РјРµРЅСЏ РјРЅРѕРіРѕ РїРѕР»РµР·РЅРѕРіРѕ.
 	
 	Log_CreateTopic (Topic_KlosterTrader,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTrader,"Мастер Исгарот продает полезные магические предметы в часовне неподалеку от монастыря.");
+	B_LogEntry (Topic_KlosterTrader,"РњР°СЃС‚РµСЂ РСЃРіР°СЂРѕС‚ РїСЂРѕРґР°РµС‚ РїРѕР»РµР·РЅС‹Рµ РјР°РіРёС‡РµСЃРєРёРµ РїСЂРµРґРјРµС‚С‹ РІ С‡Р°СЃРѕРІРЅРµ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РјРѕРЅР°СЃС‚С‹СЂСЏ.");
 };
 //****************************************************************************
 //	Trade
@@ -173,7 +173,7 @@ INSTANCE DIA_Isgaroth_Trade   (C_INFO)
 	information = DIA_Isgaroth_Trade_Info;
 	permanent   = TRUE;
 	trade		= TRUE;
-	description	= "Покажи мне свои товары.";
+	description	= "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 FUNC INT DIA_Isgaroth_Trade_Condition()
 {	
@@ -185,7 +185,7 @@ FUNC INT DIA_Isgaroth_Trade_Condition()
 FUNC VOID DIA_Isgaroth_Trade_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Isgaroth_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other ,self,"DIA_Isgaroth_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 //********************************************************************************
 //	Kloster
@@ -197,7 +197,7 @@ INSTANCE DIA_Isgaroth_Kloster   (C_INFO)
 	condition   = DIA_Isgaroth_Kloster_Condition;
 	information = DIA_Isgaroth_Kloster_Info;
 	permanent   = FALSE;
-	description	= "Куда ведет эта дорога?";
+	description	= "РљСѓРґР° РІРµРґРµС‚ СЌС‚Р° РґРѕСЂРѕРіР°?";
 };
 FUNC INT DIA_Isgaroth_Kloster_Condition()
 {	
@@ -209,21 +209,21 @@ FUNC INT DIA_Isgaroth_Kloster_Condition()
 };
 FUNC VOID DIA_Isgaroth_Kloster_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_Kloster_15_00"); //Куда ведет эта дорога?
-	AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_01"); //Эта дорога ведет в монастырь Магов Огня. Однако вход в него разрешен только слугам Инноса.
+	AI_Output (other,self ,"DIA_Isgaroth_Kloster_15_00"); //РљСѓРґР° РІРµРґРµС‚ СЌС‚Р° РґРѕСЂРѕРіР°?
+	AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_01"); //Р­С‚Р° РґРѕСЂРѕРіР° РІРµРґРµС‚ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РњР°РіРѕРІ РћРіРЅСЏ. РћРґРЅР°РєРѕ РІС…РѕРґ РІ РЅРµРіРѕ СЂР°Р·СЂРµС€РµРЅ С‚РѕР»СЊРєРѕ СЃР»СѓРіР°Рј РРЅРЅРѕСЃР°.
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_02"); //Если ты хочешь стать послушником монастыря, ты должен принести овцу и...
+		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РїРѕСЃР»СѓС€РЅРёРєРѕРј РјРѕРЅР°СЃС‚С‹СЂСЏ, С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё РѕРІС†Сѓ Рё...
 		B_Say_Gold (self, other,Summe_Kloster);
 		
 		Log_CreateTopic (Topic_Kloster,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Kloster,LOG_RUNNING);
-		B_LogEntry (Topic_Kloster,"Чтобы стать послушником монастыря Инноса, мне нужна овца и 1000 золотых монет.");
+		B_LogEntry (Topic_Kloster,"Р§С‚РѕР±С‹ СЃС‚Р°С‚СЊ РїРѕСЃР»СѓС€РЅРёРєРѕРј РјРѕРЅР°СЃС‚С‹СЂСЏ РРЅРЅРѕСЃР°, РјРЅРµ РЅСѓР¶РЅР° РѕРІС†Р° Рё 1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.");
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_03"); //Так как ты уже решил присоединиться к другой группе, вход для тебя закрыт.
+		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_03"); //РўР°Рє РєР°Рє С‚С‹ СѓР¶Рµ СЂРµС€РёР» РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РґСЂСѓРіРѕР№ РіСЂСѓРїРїРµ, РІС…РѕРґ РґР»СЏ С‚РµР±СЏ Р·Р°РєСЂС‹С‚.
 	};
 };
 
@@ -239,7 +239,7 @@ INSTANCE DIA_Isgaroth_Vatras   (C_INFO)
 	condition   = DIA_Isgaroth_Vatras_Condition;
 	information = DIA_Isgaroth_Vatras_Info;
 	permanent   = TRUE;
-	description	= "Я несу сообщение от Ватраса.";
+	description	= "РЇ РЅРµСЃСѓ СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚ Р’Р°С‚СЂР°СЃР°.";
 };
 FUNC INT DIA_Isgaroth_Vatras_Condition()
 {
@@ -252,9 +252,9 @@ FUNC INT DIA_Isgaroth_Vatras_Condition()
 };
 FUNC VOID DIA_Isgaroth_Vatras_Info()
 {
-	AI_Output (other,self ,"DIA_ISgaroth_Vatras_15_00"); //Я несу сообщение от Ватраса.
-	AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_01"); //Что это за сообщение?
-	AI_Output (other,self ,"DIA_Isgaroth_Vatras_15_02"); //Это письмо, вот.
+	AI_Output (other,self ,"DIA_ISgaroth_Vatras_15_00"); //РЇ РЅРµСЃСѓ СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚ Р’Р°С‚СЂР°СЃР°.
+	AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_01"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃРѕРѕР±С‰РµРЅРёРµ?
+	AI_Output (other,self ,"DIA_Isgaroth_Vatras_15_02"); //Р­С‚Рѕ РїРёСЃСЊРјРѕ, РІРѕС‚.
 	
 	if (Npc_HasItems (other,ItWr_VatrasMessage) == 1)
 	{
@@ -264,8 +264,8 @@ FUNC VOID DIA_Isgaroth_Vatras_Info()
 		};
 		B_UseFakeScroll();
 	
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_03"); //Хорошо, ты можешь сказать Ватрасу, что я получил его сообщение.
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_04"); //Возьми эти зелья в качестве награды за свое служение, они наверняка пригодятся тебе.
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_03"); //РҐРѕСЂРѕС€Рѕ, С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ Р’Р°С‚СЂР°СЃСѓ, С‡С‚Рѕ СЏ РїРѕР»СѓС‡РёР» РµРіРѕ СЃРѕРѕР±С‰РµРЅРёРµ.
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_04"); //Р’РѕР·СЊРјРё СЌС‚Рё Р·РµР»СЊСЏ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РіСЂР°РґС‹ Р·Р° СЃРІРѕРµ СЃР»СѓР¶РµРЅРёРµ, РѕРЅРё РЅР°РІРµСЂРЅСЏРєР° РїСЂРёРіРѕРґСЏС‚СЃСЏ С‚РµР±Рµ.
 		
 		CreateInvItems (self, ItPo_Health_02,2);
 		B_GiveInvItems (self,other,ItPo_Health_02,2);
@@ -281,8 +281,8 @@ FUNC VOID DIA_Isgaroth_Vatras_Info()
 		};
 		B_UseFakeScroll ();
 	
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_05"); //Печать сломана. О чем ты думал, идиот!
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_06"); //Иди и скажи Ватрасу, что я получил его сообщение.
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_05"); //РџРµС‡Р°С‚СЊ СЃР»РѕРјР°РЅР°. Рћ С‡РµРј С‚С‹ РґСѓРјР°Р», РёРґРёРѕС‚!
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_06"); //РРґРё Рё СЃРєР°Р¶Рё Р’Р°С‚СЂР°СЃСѓ, С‡С‚Рѕ СЏ РїРѕР»СѓС‡РёР» РµРіРѕ СЃРѕРѕР±С‰РµРЅРёРµ.
 		AI_StopProcessInfos (self);
 	};	
 	Vatras_Return = TRUE;

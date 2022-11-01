@@ -41,8 +41,8 @@ FUNC INT DIA_Addon_Samuel_Hello_Condition()
 
 FUNC VOID DIA_Addon_Samuel_Hello_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_00"); //А, новичок!
-	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_01"); //Итак, чего ты хочешь? Рому или чего-нибудь покрепче?
+	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_00"); //Рђ, РЅРѕРІРёС‡РѕРє!
+	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_01"); //РС‚Р°Рє, С‡РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ? Р РѕРјСѓ РёР»Рё С‡РµРіРѕ-РЅРёР±СѓРґСЊ РїРѕРєСЂРµРїС‡Рµ?
 	
 	Log_CreateTopic (Topic_Addon_PIR_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_SamuelTrade);
@@ -58,7 +58,7 @@ instance DIA_Addon_Samuel_Francis(C_INFO)
 	condition	= DIA_Addon_Samuel_Francis_Condition;
 	information	= DIA_Addon_Samuel_Francis_Info;
 
-	description	= "Я хочу поговорить с тобой о Фрэнсисе.";
+	description	= "РЇ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ.";
 };                       
 FUNC INT DIA_Addon_Samuel_Francis_Condition()
 {
@@ -74,15 +74,15 @@ FUNC INT DIA_Addon_Samuel_Francis_Condition()
 
 FUNC VOID DIA_Addon_Samuel_Francis_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_00"); //Я хочу поговорить с тобой о Фрэнсисе.
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_01"); //Не упоминай при мне эту жалкую пародию на капитана! 
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_02"); //Он целыми днями сидит на своей жирной заднице с важным видом.
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_03"); //Никто из нас не может понять, о чем, черт возьми, думал капитан, когда оставлял ЕГО за главного!
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_04"); //Что тебе нужно от этого идиота?
+	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ.
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_01"); //РќРµ СѓРїРѕРјРёРЅР°Р№ РїСЂРё РјРЅРµ СЌС‚Сѓ Р¶Р°Р»РєСѓСЋ РїР°СЂРѕРґРёСЋ РЅР° РєР°РїРёС‚Р°РЅР°! 
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_02"); //РћРЅ С†РµР»С‹РјРё РґРЅСЏРјРё СЃРёРґРёС‚ РЅР° СЃРІРѕРµР№ Р¶РёСЂРЅРѕР№ Р·Р°РґРЅРёС†Рµ СЃ РІР°Р¶РЅС‹Рј РІРёРґРѕРј.
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_03"); //РќРёРєС‚Рѕ РёР· РЅР°СЃ РЅРµ РјРѕР¶РµС‚ РїРѕРЅСЏС‚СЊ, Рѕ С‡РµРј, С‡РµСЂС‚ РІРѕР·СЊРјРё, РґСѓРјР°Р» РєР°РїРёС‚Р°РЅ, РєРѕРіРґР° РѕСЃС‚Р°РІР»СЏР» Р•Р“Рћ Р·Р° РіР»Р°РІРЅРѕРіРѕ!
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_04"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ СЌС‚РѕРіРѕ РёРґРёРѕС‚Р°?
 };
 
 // ************************************************************
-// 			  		In Gregs Hьtte (Versteck)
+// 			  		In Gregs HСЊtte (Versteck)
 // ************************************************************
 instance DIA_Addon_Samuel_Versteck(C_INFO)
 {
@@ -91,7 +91,7 @@ instance DIA_Addon_Samuel_Versteck(C_INFO)
 	condition	= DIA_Addon_Samuel_Versteck_Condition;
 	information	= DIA_Addon_Samuel_Versteck_Info;
 
-	description	= "Я должен попасть в хижину Грега.";
+	description	= "РЇ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ РІ С…РёР¶РёРЅСѓ Р“СЂРµРіР°.";
 };                       
 FUNC INT DIA_Addon_Samuel_Versteck_Condition()
 {
@@ -104,19 +104,19 @@ FUNC INT DIA_Addon_Samuel_Versteck_Condition()
 };
 func VOID DIA_Addon_Samuel_Versteck_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_02"); //Я должен попасть в хижину Грега.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_05"); //Неужели? А зачем, интересно?
-	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_01"); //Мне нужны бандитские доспехи.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_06"); //(смеется) Фрэнсис ни за что не пустит тебя в хижину, чтобы ты мог покопаться в вещах Грега.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_07"); //Если только...
-	AI_Output (other, self,	"DIA_Addon_Samuel_Francis_15_03"); //Что?
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_08"); //...Если только у тебя не будет что-то, что действительно нужно Фрэнсису.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_09"); //Я знаю, что Фрэнсис что-то спрятал в заброшенной шахте в каньоне.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_10"); //Однажды мы вместе стояли в карауле, и он как всегда заснул. Я услышал, как он бормочет об этом во сне.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_11"); //Не знаю, что он там зарыл, но возможно, что это настолько для него важно, что за этот предмет он пропустит тебя в хижину...
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_12"); //(радостно) Когда капитан вернется и увидит, что что-то из его вещей пропало, он спустит с Фрэнсиса шкуру!
+	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_02"); //РЇ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ РІ С…РёР¶РёРЅСѓ Р“СЂРµРіР°.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_05"); //РќРµСѓР¶РµР»Рё? Рђ Р·Р°С‡РµРј, РёРЅС‚РµСЂРµСЃРЅРѕ?
+	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ Р±Р°РЅРґРёС‚СЃРєРёРµ РґРѕСЃРїРµС…Рё.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_06"); //(СЃРјРµРµС‚СЃСЏ) Р¤СЂСЌРЅСЃРёСЃ РЅРё Р·Р° С‡С‚Рѕ РЅРµ РїСѓСЃС‚РёС‚ С‚РµР±СЏ РІ С…РёР¶РёРЅСѓ, С‡С‚РѕР±С‹ С‚С‹ РјРѕРі РїРѕРєРѕРїР°С‚СЊСЃСЏ РІ РІРµС‰Р°С… Р“СЂРµРіР°.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_07"); //Р•СЃР»Рё С‚РѕР»СЊРєРѕ...
+	AI_Output (other, self,	"DIA_Addon_Samuel_Francis_15_03"); //Р§С‚Рѕ?
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_08"); //...Р•СЃР»Рё С‚РѕР»СЊРєРѕ Сѓ С‚РµР±СЏ РЅРµ Р±СѓРґРµС‚ С‡С‚Рѕ-С‚Рѕ, С‡С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅСѓР¶РЅРѕ Р¤СЂСЌРЅСЃРёСЃСѓ.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_09"); //РЇ Р·РЅР°СЋ, С‡С‚Рѕ Р¤СЂСЌРЅСЃРёСЃ С‡С‚Рѕ-С‚Рѕ СЃРїСЂСЏС‚Р°Р» РІ Р·Р°Р±СЂРѕС€РµРЅРЅРѕР№ С€Р°С…С‚Рµ РІ РєР°РЅСЊРѕРЅРµ.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_10"); //РћРґРЅР°Р¶РґС‹ РјС‹ РІРјРµСЃС‚Рµ СЃС‚РѕСЏР»Рё РІ РєР°СЂР°СѓР»Рµ, Рё РѕРЅ РєР°Рє РІСЃРµРіРґР° Р·Р°СЃРЅСѓР». РЇ СѓСЃР»С‹С€Р°Р», РєР°Рє РѕРЅ Р±РѕСЂРјРѕС‡РµС‚ РѕР± СЌС‚РѕРј РІРѕ СЃРЅРµ.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_11"); //РќРµ Р·РЅР°СЋ, С‡С‚Рѕ РѕРЅ С‚Р°Рј Р·Р°СЂС‹Р», РЅРѕ РІРѕР·РјРѕР¶РЅРѕ, С‡С‚Рѕ СЌС‚Рѕ РЅР°СЃС‚РѕР»СЊРєРѕ РґР»СЏ РЅРµРіРѕ РІР°Р¶РЅРѕ, С‡С‚Рѕ Р·Р° СЌС‚РѕС‚ РїСЂРµРґРјРµС‚ РѕРЅ РїСЂРѕРїСѓСЃС‚РёС‚ С‚РµР±СЏ РІ С…РёР¶РёРЅСѓ...
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_12"); //(СЂР°РґРѕСЃС‚РЅРѕ) РљРѕРіРґР° РєР°РїРёС‚Р°РЅ РІРµСЂРЅРµС‚СЃСЏ Рё СѓРІРёРґРёС‚, С‡С‚Рѕ С‡С‚Рѕ-С‚Рѕ РёР· РµРіРѕ РІРµС‰РµР№ РїСЂРѕРїР°Р»Рѕ, РѕРЅ СЃРїСѓСЃС‚РёС‚ СЃ Р¤СЂСЌРЅСЃРёСЃР° С€РєСѓСЂСѓ!
 
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Самогонщик Сэмюэль упомянул тайник Фрэнсиса, который находится в одной из пещер каньона. Возможно, я найду там что-либо, что поможет мне попасть в хижину."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"РЎР°РјРѕРіРѕРЅС‰РёРє РЎСЌРјСЋСЌР»СЊ СѓРїРѕРјСЏРЅСѓР» С‚Р°Р№РЅРёРє Р¤СЂСЌРЅСЃРёСЃР°, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ РІ РѕРґРЅРѕР№ РёР· РїРµС‰РµСЂ РєР°РЅСЊРѕРЅР°. Р’РѕР·РјРѕР¶РЅРѕ, СЏ РЅР°Р№РґСѓ С‚Р°Рј С‡С‚Рѕ-Р»РёР±Рѕ, С‡С‚Рѕ РїРѕРјРѕР¶РµС‚ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ С…РёР¶РёРЅСѓ."); 
 };
 
 // ************************************************************
@@ -132,7 +132,7 @@ instance DIA_Addon_Samuel_Recipe(C_INFO)
 	condition	= DIA_Addon_Samuel_Recipe_Condition;
 	information	= DIA_Addon_Samuel_Recipe_Info;
 	permanent	= TRUE;
-	description = "У меня есть для тебя рецепт!";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ СЂРµС†РµРїС‚!";
 };
 func INT DIA_Addon_Samuel_Recipe_Condition()
 {
@@ -144,19 +144,19 @@ func INT DIA_Addon_Samuel_Recipe_Condition()
 };
 func VOID DIA_Addon_Samuel_Recipe_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_15_00"); //У меня есть для тебя рецепт!
-	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_14_01"); //Отлично, показывай. Что это за рецепт?
+	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ СЂРµС†РµРїС‚!
+	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_14_01"); //РћС‚Р»РёС‡РЅРѕ, РїРѕРєР°Р·С‹РІР°Р№. Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЂРµС†РµРїС‚?
 	
 	Info_ClearChoices (DIA_Addon_Samuel_Recipe);
 	if (Samuel_Knows_LousHammer == FALSE) 
 	&& (Npc_HasItems (other, ITWr_Addon_Lou_Rezept) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Recipe,"Молот Лу",DIA_Addon_Samuel_Recipe_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Recipe,"РњРѕР»РѕС‚ Р›Сѓ",DIA_Addon_Samuel_Recipe_LousHammer);
 	};
 	if (Samuel_Knows_SchlafHammer == FALSE)
 	&& (Npc_HasItems (other, ITWr_Addon_Lou_Rezept2) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Recipe,"Двойной молот Лу",DIA_Addon_Samuel_Recipe_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Recipe,"Р”РІРѕР№РЅРѕР№ РјРѕР»РѕС‚ Р›Сѓ",DIA_Addon_Samuel_Recipe_LousDoubleHammer);
 	};
 };
 func VOID DIA_Addon_Samuel_Recipe_Back()
@@ -165,20 +165,20 @@ func VOID DIA_Addon_Samuel_Recipe_Back()
 };
 func VOID DIA_Addon_Samuel_Recipe_LousHammer ()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousHammer_15_00"); //Это от Снафа.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousHammer_15_00"); //Р­С‚Рѕ РѕС‚ РЎРЅР°С„Р°.
 	B_GiveInvItems (other, self, ITWr_Addon_Lou_Rezept, 1);
 	B_UseFakeScroll();
-	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousHammer_14_04"); //Но это же ужасно! Я должен немедленно попробовать...
+	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousHammer_14_04"); //РќРѕ СЌС‚Рѕ Р¶Рµ СѓР¶Р°СЃРЅРѕ! РЇ РґРѕР»Р¶РµРЅ РЅРµРјРµРґР»РµРЅРЅРѕ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ...
 	
 	B_GivePlayerXP (XP_Ambient);
 	Samuel_Knows_LousHammer = TRUE;
 };
 func VOID DIA_Addon_Samuel_Recipe_LousDoubleHammer ()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_15_00"); //Будь осторожен. Это опасная штука!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_15_00"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ. Р­С‚Рѕ РѕРїР°СЃРЅР°СЏ С€С‚СѓРєР°!
 	B_GiveInvItems (other, self, ITWr_Addon_Lou_Rezept2, 1);
 	B_UseFakeScroll();
-	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_14_04"); //Ты меня пугаешь. Но я все равно попробую.
+	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_14_04"); //РўС‹ РјРµРЅСЏ РїСѓРіР°РµС€СЊ. РќРѕ СЏ РІСЃРµ СЂР°РІРЅРѕ РїРѕРїСЂРѕР±СѓСЋ.
 	
 	B_GivePlayerXP (XP_Ambient);
 	Samuel_Knows_SchlafHammer = TRUE;
@@ -196,7 +196,7 @@ instance DIA_Addon_Samuel_Grog(C_INFO)
 	condition	= DIA_Addon_Samuel_Grog_Condition;
 	information	= DIA_Addon_Samuel_Grog_Info;
 	permanent	= TRUE;
-	description = "Я пришел за своей порцией грога! (10 золотых)";
+	description = "РЇ РїСЂРёС€РµР» Р·Р° СЃРІРѕРµР№ РїРѕСЂС†РёРµР№ РіСЂРѕРіР°! (10 Р·РѕР»РѕС‚С‹С…)";
 };                       
 FUNC INT DIA_Addon_Samuel_Grog_Condition()
 {
@@ -205,29 +205,29 @@ FUNC INT DIA_Addon_Samuel_Grog_Condition()
 
 FUNC VOID DIA_Addon_Samuel_Grog_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_Grog_15_00"); //Я пришел за своей порцией грога.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Grog_15_00"); //РЇ РїСЂРёС€РµР» Р·Р° СЃРІРѕРµР№ РїРѕСЂС†РёРµР№ РіСЂРѕРіР°.
 	if (B_GiveInvItems(other, self, itmi_gold, 10))
 	{	
 		if (Samuel_Grog_Varianz == 0)
 		{
-			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_01"); //Да, без грога вы палец о палец ударить не можете. Вот, забирай.
+			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_01"); //Р”Р°, Р±РµР· РіСЂРѕРіР° РІС‹ РїР°Р»РµС† Рѕ РїР°Р»РµС† СѓРґР°СЂРёС‚СЊ РЅРµ РјРѕР¶РµС‚Рµ. Р’РѕС‚, Р·Р°Р±РёСЂР°Р№.
 			Samuel_Grog_Varianz = 1;
 		}
 		else if (Samuel_Grog_Varianz == 1)
 		{
-			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_02"); //Надеюсь, пить его можно. У меня кончилась пресная вода. Но немного морской воды еще никому не повредило, верно?
+			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_02"); //РќР°РґРµСЋСЃСЊ, РїРёС‚СЊ РµРіРѕ РјРѕР¶РЅРѕ. РЈ РјРµРЅСЏ РєРѕРЅС‡РёР»Р°СЃСЊ РїСЂРµСЃРЅР°СЏ РІРѕРґР°. РќРѕ РЅРµРјРЅРѕРіРѕ РјРѕСЂСЃРєРѕР№ РІРѕРґС‹ РµС‰Рµ РЅРёРєРѕРјСѓ РЅРµ РїРѕРІСЂРµРґРёР»Рѕ, РІРµСЂРЅРѕ?
 			Samuel_Grog_Varianz = 2;
 		}
 		else // (Samuel_Grog_Varianz == 2)
 		{
-			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_03"); //Ты можешь получить столько грога, сколько захочешь!
+			AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_03"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ СЃС‚РѕР»СЊРєРѕ РіСЂРѕРіР°, СЃРєРѕР»СЊРєРѕ Р·Р°С…РѕС‡РµС€СЊ!
 		};
 		
 		B_GiveInvItems (self,other,ItFo_Addon_Grog,1);
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_04"); //Продаю я грог дешево, но не бесплатно! Раздобудь немного золота, приятель.
+		AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_04"); //РџСЂРѕРґР°СЋ СЏ РіСЂРѕРі РґРµС€РµРІРѕ, РЅРѕ РЅРµ Р±РµСЃРїР»Р°С‚РЅРѕ! Р Р°Р·РґРѕР±СѓРґСЊ РЅРµРјРЅРѕРіРѕ Р·РѕР»РѕС‚Р°, РїСЂРёСЏС‚РµР»СЊ.
 	};
 };
 
@@ -243,7 +243,7 @@ instance DIA_Addon_Samuel_Rum(C_INFO)
 	condition	= DIA_Addon_Samuel_Rum_Condition;
 	information	= DIA_Addon_Samuel_Rum_Info;
 	permanent	= TRUE;
-	description = "Дай мне рома! (30 золотых)";
+	description = "Р”Р°Р№ РјРЅРµ СЂРѕРјР°! (30 Р·РѕР»РѕС‚С‹С…)";
 };                       
 FUNC INT DIA_Addon_Samuel_Rum_Condition()
 {
@@ -251,35 +251,35 @@ FUNC INT DIA_Addon_Samuel_Rum_Condition()
 };
 func VOID DIA_Addon_Samuel_Rum_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_Rum_15_00"); //Дай мне рома!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Rum_15_00"); //Р”Р°Р№ РјРЅРµ СЂРѕРјР°!
 	
 	if (B_GiveInvItems (other,self, ItMi_Gold, 30))
 	{
 		if (Samuel_Rum_Varianz == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_01"); //А-а, ром для моряка - все равно что молоко матери! Вот, бери!
+			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_01"); //Рђ-Р°, СЂРѕРј РґР»СЏ РјРѕСЂСЏРєР° - РІСЃРµ СЂР°РІРЅРѕ С‡С‚Рѕ РјРѕР»РѕРєРѕ РјР°С‚РµСЂРё! Р’РѕС‚, Р±РµСЂРё!
 			Samuel_Rum_Varianz = 1;
 		}
 		else if (Samuel_Rum_Varianz == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_02"); //У рома может быть небольшой привкус рыбы. У меня остались только бочки из-под селедки. Но ром остается ромом. Твое здоровье!
+			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_02"); //РЈ СЂРѕРјР° РјРѕР¶РµС‚ Р±С‹С‚СЊ РЅРµР±РѕР»СЊС€РѕР№ РїСЂРёРІРєСѓСЃ СЂС‹Р±С‹. РЈ РјРµРЅСЏ РѕСЃС‚Р°Р»РёСЃСЊ С‚РѕР»СЊРєРѕ Р±РѕС‡РєРё РёР·-РїРѕРґ СЃРµР»РµРґРєРё. РќРѕ СЂРѕРј РѕСЃС‚Р°РµС‚СЃСЏ СЂРѕРјРѕРј. РўРІРѕРµ Р·РґРѕСЂРѕРІСЊРµ!
 			Samuel_Rum_Varianz = 2;
 		}
 		else // (Samuel_Rum_Varianz == 2)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_03"); //Вот, бери.
+			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_03"); //Р’РѕС‚, Р±РµСЂРё.
 		};
 				
 		B_GiveInvItems (self,other,ItFo_Addon_rum,1);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_04"); //У тебя недостаточно золота, приятель! Как насчет грога?
+		AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_04"); //РЈ С‚РµР±СЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°, РїСЂРёСЏС‚РµР»СЊ! РљР°Рє РЅР°СЃС‡РµС‚ РіСЂРѕРіР°?
 	};		
 };
 
 // ************************************************************
-// 			  	  			Was Stдrkeres
+// 			  	  			Was StРґrkeres
 // ************************************************************
 var int Samuel_Stronger_Varianz;
 var int Samuel_DoppelHammer_Varianz;
@@ -291,7 +291,7 @@ instance DIA_Addon_Samuel_Stronger(C_INFO)
 	condition	= DIA_Addon_Samuel_Stronger_Condition;
 	information	= DIA_Addon_Samuel_Stronger_Info;
 	permanent	= TRUE;
-	description = "Я хочу чего-нибудь покрепче!";
+	description = "РЇ С…РѕС‡Сѓ С‡РµРіРѕ-РЅРёР±СѓРґСЊ РїРѕРєСЂРµРїС‡Рµ!";
 };
                        
 FUNC INT DIA_Addon_Samuel_Stronger_Condition()
@@ -301,43 +301,43 @@ FUNC INT DIA_Addon_Samuel_Stronger_Condition()
 
 func VOID DIA_Addon_Samuel_Stronger_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_00"); //Я хочу чего-нибудь покрепче!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_00"); //РЇ С…РѕС‡Сѓ С‡РµРіРѕ-РЅРёР±СѓРґСЊ РїРѕРєСЂРµРїС‡Рµ!
 	
 	if (Samuel_Stronger_Varianz == 0)
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_01"); //А, вижу родственную душу! Я и сам люблю экспериментировать.
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_02"); //Хорошая выпивка должна быть чистой, крепкой, а глотку продирать, как жидкий огонь.
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_03"); //Такое нечасто встречается. Но я слишком много болтаю, а ты хочешь выпить.
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_04"); //Вот. Мой собственный рецепт. Тебе понравится. Я называю этот напиток 'Быстрая селедка'.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_01"); //Рђ, РІРёР¶Сѓ СЂРѕРґСЃС‚РІРµРЅРЅСѓСЋ РґСѓС€Сѓ! РЇ Рё СЃР°Рј Р»СЋР±Р»СЋ СЌРєСЃРїРµСЂРёРјРµРЅС‚РёСЂРѕРІР°С‚СЊ.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_02"); //РҐРѕСЂРѕС€Р°СЏ РІС‹РїРёРІРєР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ С‡РёСЃС‚РѕР№, РєСЂРµРїРєРѕР№, Р° РіР»РѕС‚РєСѓ РїСЂРѕРґРёСЂР°С‚СЊ, РєР°Рє Р¶РёРґРєРёР№ РѕРіРѕРЅСЊ.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_03"); //РўР°РєРѕРµ РЅРµС‡Р°СЃС‚Рѕ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ. РќРѕ СЏ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ Р±РѕР»С‚Р°СЋ, Р° С‚С‹ С…РѕС‡РµС€СЊ РІС‹РїРёС‚СЊ.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_04"); //Р’РѕС‚. РњРѕР№ СЃРѕР±СЃС‚РІРµРЅРЅС‹Р№ СЂРµС†РµРїС‚. РўРµР±Рµ РїРѕРЅСЂР°РІРёС‚СЃСЏ. РЇ РЅР°Р·С‹РІР°СЋ СЌС‚РѕС‚ РЅР°РїРёС‚РѕРє 'Р‘С‹СЃС‚СЂР°СЏ СЃРµР»РµРґРєР°'.
 		B_GiveInvItems (self,other,ItFo_Addon_Schnellerhering,1);
 		B_UseItem (other, ItFo_Addon_Schnellerhering);
-		AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_05"); //Впечатляет!
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_06"); //(смеется) Это точно! 
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_07"); //А тебе не встречались рецепты напитков? Если встретятся, обязательно расскажи мне.
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_08"); //Хочешь еще?
+		AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_05"); //Р’РїРµС‡Р°С‚Р»СЏРµС‚!
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_06"); //(СЃРјРµРµС‚СЃСЏ) Р­С‚Рѕ С‚РѕС‡РЅРѕ! 
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_07"); //Рђ С‚РµР±Рµ РЅРµ РІСЃС‚СЂРµС‡Р°Р»РёСЃСЊ СЂРµС†РµРїС‚С‹ РЅР°РїРёС‚РєРѕРІ? Р•СЃР»Рё РІСЃС‚СЂРµС‚СЏС‚СЃСЏ, РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_08"); //РҐРѕС‡РµС€СЊ РµС‰Рµ?
 		Samuel_Stronger_Varianz = 1;
 	}
 	else // (Samuel_Stronger_Varianz == 1)
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_09"); //Что тебе приготовить.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_09"); //Р§С‚Рѕ С‚РµР±Рµ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ.
 	};
 	
 	Info_ClearChoices (DIA_Addon_Samuel_Stronger);
 	Info_AddChoice (DIA_Addon_Samuel_Stronger, DIALOG_BACK, DIA_Addon_Samuel_Stronger_Back);
 	if (Samuel_Knows_SchlafHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Двойной Молот Лу (60 золотых)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Р”РІРѕР№РЅРѕР№ РњРѕР»РѕС‚ Р›Сѓ (60 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
 	};		
 	if (Samuel_Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Молот Лу (30 золотых)", DIA_Addon_Samuel_Stronger_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "РњРѕР»РѕС‚ Р›Сѓ (30 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_LousHammer);
 	};
-	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Быстрая селедка (30 золотых)", DIA_Addon_Samuel_Stronger_SchnellerHering);
+	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Р‘С‹СЃС‚СЂР°СЏ СЃРµР»РµРґРєР° (30 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_SchnellerHering);
 };
 // ------------------------------------------------------------
 func void B_Addon_Samuel_NoGold()
 {
-	AI_Output (self, other, "DIA_Addon_Samuel_NoGold_14_00"); //Нет золота - нет выпивки!
+	AI_Output (self, other, "DIA_Addon_Samuel_NoGold_14_00"); //РќРµС‚ Р·РѕР»РѕС‚Р° - РЅРµС‚ РІС‹РїРёРІРєРё!
 };
 // ------------------------------------------------------------
 
@@ -347,10 +347,10 @@ func VOID DIA_Addon_Samuel_Stronger_Back()
 };
 func VOID DIA_Addon_Samuel_Stronger_SchnellerHering()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_SchnellerHering_15_00"); //Дай мне 'Быструю селедку'.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_SchnellerHering_15_00"); //Р”Р°Р№ РјРЅРµ 'Р‘С‹СЃС‚СЂСѓСЋ СЃРµР»РµРґРєСѓ'.
 	if (B_GiveInvItems (other,self, ItMi_Gold, 30))
 	{
-		AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_SchnellerHering_14_01"); //Злой напиток. Но эффективный!
+		AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_SchnellerHering_14_01"); //Р—Р»РѕР№ РЅР°РїРёС‚РѕРє. РќРѕ СЌС„С„РµРєС‚РёРІРЅС‹Р№!
 		B_GiveInvItems (self, other, ItFo_Addon_SchnellerHering, 1);
 	}
 	else
@@ -362,20 +362,20 @@ func VOID DIA_Addon_Samuel_Stronger_SchnellerHering()
 	Info_AddChoice (DIA_Addon_Samuel_Stronger, DIALOG_BACK, DIA_Addon_Samuel_Stronger_Back);
 	if (Samuel_Knows_SchlafHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Двойной Молот Лу (60 золотых)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Р”РІРѕР№РЅРѕР№ РњРѕР»РѕС‚ Р›Сѓ (60 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
 	};		
 	if (Samuel_Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Молот Лу (30 золотых)", DIA_Addon_Samuel_Stronger_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "РњРѕР»РѕС‚ Р›Сѓ (30 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_LousHammer);
 	};
-	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Быстрая селедка (30 золотых)", DIA_Addon_Samuel_Stronger_SchnellerHering);
+	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Р‘С‹СЃС‚СЂР°СЏ СЃРµР»РµРґРєР° (30 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_SchnellerHering);
 };
 func VOID DIA_Addon_Samuel_Stronger_LousHammer()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousHammer_15_00"); //Я хочу 'Молоток Лу'!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousHammer_15_00"); //РЇ С…РѕС‡Сѓ 'РњРѕР»РѕС‚РѕРє Р›Сѓ'!
 	if (B_GiveInvItems (other, self, ItMi_Gold, 30))
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousHammer_14_01"); //Отличное пойло! Наслаждайся!
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousHammer_14_01"); //РћС‚Р»РёС‡РЅРѕРµ РїРѕР№Р»Рѕ! РќР°СЃР»Р°Р¶РґР°Р№СЃСЏ!
 		B_GiveInvItems (self,other,ItFo_Addon_LousHammer,1);
 	}
 	else
@@ -387,26 +387,26 @@ func VOID DIA_Addon_Samuel_Stronger_LousHammer()
 	Info_AddChoice (DIA_Addon_Samuel_Stronger, DIALOG_BACK, DIA_Addon_Samuel_Stronger_Back);
 	if (Samuel_Knows_SchlafHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Двойной Молот Лу (60 золотых)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Р”РІРѕР№РЅРѕР№ РњРѕР»РѕС‚ Р›Сѓ (60 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
 	};		
 	if (Samuel_Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Молот Лу (30 золотых)", DIA_Addon_Samuel_Stronger_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "РњРѕР»РѕС‚ Р›Сѓ (30 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_LousHammer);
 	};
-	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Быстрая селедка (30 золотых)", DIA_Addon_Samuel_Stronger_SchnellerHering);
+	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Р‘С‹СЃС‚СЂР°СЏ СЃРµР»РµРґРєР° (30 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_SchnellerHering);
 };
 func VOID DIA_Addon_Samuel_Stronger_LousDoubleHammer()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousDoubleHammer_15_00"); //(спокойно) Сделай мне двойной 'Молот'.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousDoubleHammer_15_00"); //(СЃРїРѕРєРѕР№РЅРѕ) РЎРґРµР»Р°Р№ РјРЅРµ РґРІРѕР№РЅРѕР№ 'РњРѕР»РѕС‚'.
 	if (B_GiveInvItems (other,self,ItMi_Gold,Value_SchlafHammer))
 	{
 		if (Samuel_DoppelHammer_Varianz == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousDoubleHammer_14_01"); //Не делай глупостей, сынок. Очень надеюсь, что ты берешь это не для себя.
+			AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousDoubleHammer_14_01"); //РќРµ РґРµР»Р°Р№ РіР»СѓРїРѕСЃС‚РµР№, СЃС‹РЅРѕРє. РћС‡РµРЅСЊ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ С‚С‹ Р±РµСЂРµС€СЊ СЌС‚Рѕ РЅРµ РґР»СЏ СЃРµР±СЏ.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_LousDoubleHammer_14_02"); //Да! Ничто так не укрепляет дух!
+			AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_LousDoubleHammer_14_02"); //Р”Р°! РќРёС‡С‚Рѕ С‚Р°Рє РЅРµ СѓРєСЂРµРїР»СЏРµС‚ РґСѓС…!
 		};
 
 		B_GiveInvItems (self,other,ItFo_Addon_SchlafHammer,1);
@@ -420,13 +420,13 @@ func VOID DIA_Addon_Samuel_Stronger_LousDoubleHammer()
 	Info_AddChoice (DIA_Addon_Samuel_Stronger, DIALOG_BACK, DIA_Addon_Samuel_Stronger_Back);
 	if (Samuel_Knows_SchlafHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Двойной Молот Лу (60 золотых)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Р”РІРѕР№РЅРѕР№ РњРѕР»РѕС‚ Р›Сѓ (60 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_LousDoubleHammer);
 	};		
 	if (Samuel_Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Samuel_Stronger, "Молот Лу (30 золотых)", DIA_Addon_Samuel_Stronger_LousHammer);
+		Info_AddChoice (DIA_Addon_Samuel_Stronger, "РњРѕР»РѕС‚ Р›Сѓ (30 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_LousHammer);
 	};
-	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Быстрая селедка (30 золотых)", DIA_Addon_Samuel_Stronger_SchnellerHering);	
+	Info_AddChoice (DIA_Addon_Samuel_Stronger, "Р‘С‹СЃС‚СЂР°СЏ СЃРµР»РµРґРєР° (30 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Samuel_Stronger_SchnellerHering);	
 };
 
 // ************************************************************
@@ -439,7 +439,7 @@ instance DIA_Addon_Samuel_Trade(C_INFO)
 	condition	= DIA_Addon_Samuel_Trade_Condition;
 	information	= DIA_Addon_Samuel_Trade_Info;
 	permanent	= TRUE;
-	description	= "Что у тебя еще есть?";
+	description	= "Р§С‚Рѕ Сѓ С‚РµР±СЏ РµС‰Рµ РµСЃС‚СЊ?";
 	Trade		= TRUE;
 };                       
 FUNC INT DIA_Addon_Samuel_Trade_Condition()
@@ -453,8 +453,8 @@ FUNC VOID DIA_Addon_Samuel_Trade_Info()
 	Npc_RemoveInvItems	(self, ItFo_Addon_Grog, Npc_HasItems (self,ItFo_Addon_Grog) );
 	CreateInvItems 	(self, ItFo_Addon_Grog, 15);
 	
-	AI_Output (other,self ,"DIA_Addon_Samuel_Trade_15_00"); //Что у тебя еще есть?
-	AI_Output (self ,other,"DIA_Addon_Samuel_Trade_14_01"); //Я могу продать тебе все, что нужно пирату для жизни.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Trade_15_00"); //Р§С‚Рѕ Сѓ С‚РµР±СЏ РµС‰Рµ РµСЃС‚СЊ?
+	AI_Output (self ,other,"DIA_Addon_Samuel_Trade_14_01"); //РЇ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ РїРёСЂР°С‚Сѓ РґР»СЏ Р¶РёР·РЅРё.
 };
 
 // ************************************************************
@@ -467,7 +467,7 @@ instance DIA_Addon_Samuel_News(C_INFO)
 	condition	= DIA_Addon_Samuel_News_Condition;
 	information	= DIA_Addon_Samuel_News_Info;
 	permanent	= TRUE;
-	description	= "Что нового в лагере?";
+	description	= "Р§С‚Рѕ РЅРѕРІРѕРіРѕ РІ Р»Р°РіРµСЂРµ?";
 };                       
 FUNC INT DIA_Addon_Samuel_News_Condition()
 {
@@ -475,28 +475,28 @@ FUNC INT DIA_Addon_Samuel_News_Condition()
 };
 func VOID DIA_Addon_Samuel_News_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_News_15_00"); //Что нового в лагере?
+	AI_Output (other,self ,"DIA_Addon_Samuel_News_15_00"); //Р§С‚Рѕ РЅРѕРІРѕРіРѕ РІ Р»Р°РіРµСЂРµ?
 	
 	if (Npc_IsDead (Francis))
 	|| (Francis_ausgeschissen == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Samuel_News_14_01"); //Фрэнсис получил по заслугам! Не могу даже описать, как это меня радует.
-		AI_Output (self, other, "DIA_Addon_Samuel_News_14_02"); //А ты нормальный парень. Давай выпьем - я угощаю!
+		AI_Output (self, other, "DIA_Addon_Samuel_News_14_01"); //Р¤СЂСЌРЅСЃРёСЃ РїРѕР»СѓС‡РёР» РїРѕ Р·Р°СЃР»СѓРіР°Рј! РќРµ РјРѕРіСѓ РґР°Р¶Рµ РѕРїРёСЃР°С‚СЊ, РєР°Рє СЌС‚Рѕ РјРµРЅСЏ СЂР°РґСѓРµС‚.
+		AI_Output (self, other, "DIA_Addon_Samuel_News_14_02"); //Рђ С‚С‹ РЅРѕСЂРјР°Р»СЊРЅС‹Р№ РїР°СЂРµРЅСЊ. Р”Р°РІР°Р№ РІС‹РїСЊРµРј - СЏ СѓРіРѕС‰Р°СЋ!
 		if (GregIsBack == TRUE)
 		{
-			AI_Output (self, other, "DIA_Addon_Samuel_News_14_03"); //И Грег наконец-то вернулся. Он потерял корабль, но, по крайней мере, восстановил порядок в лагере.
+			AI_Output (self, other, "DIA_Addon_Samuel_News_14_03"); //Р Р“СЂРµРі РЅР°РєРѕРЅРµС†-С‚Рѕ РІРµСЂРЅСѓР»СЃСЏ. РћРЅ РїРѕС‚РµСЂСЏР» РєРѕСЂР°Р±Р»СЊ, РЅРѕ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РІРѕСЃСЃС‚Р°РЅРѕРІРёР» РїРѕСЂСЏРґРѕРє РІ Р»Р°РіРµСЂРµ.
 		};
 	}
 	else //Greg noch weg UND Francis lebt noch
 	{
 		if (!Npc_IsDead (Morgan))
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_04"); //С тех пор как Грег уехал, ничего интересного не происходило. Морган и большинство парней целыми днями пьянствуют.
+			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_04"); //РЎ С‚РµС… РїРѕСЂ РєР°Рє Р“СЂРµРі СѓРµС…Р°Р», РЅРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РЅРµ РїСЂРѕРёСЃС…РѕРґРёР»Рѕ. РњРѕСЂРіР°РЅ Рё Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РїР°СЂРЅРµР№ С†РµР»С‹РјРё РґРЅСЏРјРё РїСЊСЏРЅСЃС‚РІСѓСЋС‚.
 		};
 		if (!Npc_IsDead (Henry))
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_05"); //Только Генри занимается делом. Он со своими людьми строит частокол.
+			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_05"); //РўРѕР»СЊРєРѕ Р“РµРЅСЂРё Р·Р°РЅРёРјР°РµС‚СЃСЏ РґРµР»РѕРј. РћРЅ СЃРѕ СЃРІРѕРёРјРё Р»СЋРґСЊРјРё СЃС‚СЂРѕРёС‚ С‡Р°СЃС‚РѕРєРѕР».
 		};
-		AI_Output (self ,other,"DIA_Addon_Samuel_News_14_06"); //Пора бы уже капитану вернуться и дать Фрэнсису хорошего пинка под зад!
+		AI_Output (self ,other,"DIA_Addon_Samuel_News_14_06"); //РџРѕСЂР° Р±С‹ СѓР¶Рµ РєР°РїРёС‚Р°РЅСѓ РІРµСЂРЅСѓС‚СЊСЃСЏ Рё РґР°С‚СЊ Р¤СЂСЌРЅСЃРёСЃСѓ С…РѕСЂРѕС€РµРіРѕ РїРёРЅРєР° РїРѕРґ Р·Р°Рґ!
 	};
 };

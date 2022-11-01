@@ -4,7 +4,7 @@
 
 func int C_WantToRansack (var C_NPC slf)
 {
-	// ------ NPCTYPE_FRIEND plündert den Spieler nicht ------
+	// ------ NPCTYPE_FRIEND plÑŒndert den Spieler nicht ------
 	if (slf.npctype == NPCTYPE_FRIEND) && (Npc_IsPlayer(other))
 	{
 		return FALSE;

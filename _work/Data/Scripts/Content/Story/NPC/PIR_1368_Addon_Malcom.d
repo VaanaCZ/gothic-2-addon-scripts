@@ -1,7 +1,7 @@
 INSTANCE PIR_1368_Addon_Malcom (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Мальком";
+	name 		= "РњР°Р»СЊРєРѕРј";
 	guild 		= GIL_PIR;
 	id 			= 1368;
 	voice 		= 4;

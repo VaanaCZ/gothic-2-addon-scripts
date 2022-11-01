@@ -45,9 +45,9 @@ FUNC INT DIA_Jarvis_Hello_Condition()
  
 FUNC VOID DIA_Jarvis_Hello_Info()
 {	
-	AI_Output (self, other, "DIA_Jarvis_Hello_04_00"); //Эй! Я тебя откуда-то знаю?
-	AI_Output (other, self, "DIA_Jarvis_Hello_15_01"); //Может быть. Я тоже был в колонии.
-	AI_Output (self, other, "DIA_Jarvis_Hello_04_02"); //Точно... что тебе нужно?
+	AI_Output (self, other, "DIA_Jarvis_Hello_04_00"); //Р­Р№! РЇ С‚РµР±СЏ РѕС‚РєСѓРґР°-С‚Рѕ Р·РЅР°СЋ?
+	AI_Output (other, self, "DIA_Jarvis_Hello_15_01"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ. РЇ С‚РѕР¶Рµ Р±С‹Р» РІ РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other, "DIA_Jarvis_Hello_04_02"); //РўРѕС‡РЅРѕ... С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 	
 // ************************************************************
@@ -60,7 +60,7 @@ instance DIA_Jarvis_DieLage (C_INFO)
 	condition	= DIA_Jarvis_DieLage_Condition;
 	information	= DIA_Jarvis_DieLage_Info;
 	permanent	= FALSE;
-	description = "Как ситуация?";
+	description = "РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };                       
 
 FUNC INT DIA_Jarvis_DieLage_Condition()
@@ -70,9 +70,9 @@ FUNC INT DIA_Jarvis_DieLage_Condition()
  
 FUNC VOID DIA_Jarvis_DieLage_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_DieLage_15_00"); //Как ситуация?
-	AI_Output (self, other, "DIA_Jarvis_DieLage_04_01"); //Назревают большие проблемы. Наемники раскалываются на две фракции.
-	AI_Output (self, other, "DIA_Jarvis_DieLage_04_02"); //Сильвио и его люди сомневаются, что Ли выбрал правильный путь.
+	AI_Output (other, self, "DIA_Jarvis_DieLage_15_00"); //РљР°Рє СЃРёС‚СѓР°С†РёСЏ?
+	AI_Output (self, other, "DIA_Jarvis_DieLage_04_01"); //РќР°Р·СЂРµРІР°СЋС‚ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹. РќР°РµРјРЅРёРєРё СЂР°СЃРєР°Р»С‹РІР°СЋС‚СЃСЏ РЅР° РґРІРµ С„СЂР°РєС†РёРё.
+	AI_Output (self, other, "DIA_Jarvis_DieLage_04_02"); //РЎРёР»СЊРІРёРѕ Рё РµРіРѕ Р»СЋРґРё СЃРѕРјРЅРµРІР°СЋС‚СЃСЏ, С‡С‚Рѕ Р›Рё РІС‹Р±СЂР°Р» РїСЂР°РІРёР»СЊРЅС‹Р№ РїСѓС‚СЊ.
 };
 	
 // ************************************************************
@@ -85,7 +85,7 @@ instance DIA_Jarvis_TwoFronts (C_INFO)
 	condition	= DIA_Jarvis_TwoFronts_Condition;
 	information	= DIA_Jarvis_TwoFronts_Info;
 	permanent	= FALSE;
-	description = "А как случилось, что появились две фракции?";
+	description = "Рђ РєР°Рє СЃР»СѓС‡РёР»РѕСЃСЊ, С‡С‚Рѕ РїРѕСЏРІРёР»РёСЃСЊ РґРІРµ С„СЂР°РєС†РёРё?";
 };                       
 
 FUNC INT DIA_Jarvis_TwoFronts_Condition()
@@ -98,14 +98,14 @@ FUNC INT DIA_Jarvis_TwoFronts_Condition()
  
 FUNC VOID DIA_Jarvis_TwoFronts_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_TwoFronts_15_00"); //А как случилось, что появились две фракции?
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_01"); //Большинство из нас пришло из колонии вместе с Ли.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_02"); //Но некоторые наемники присоединились к нам позже.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_03"); //Они не из колонии, они были южнее и сражались с орками.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_04"); //Они как-то прослышали, что Ли нужны люди. Их лидером был Сильвио.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_05"); //Он согласился, что командовать будет Ли, но теперь он пытается подбить наемников против Ли и его плана.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_06"); //Большинство из людей Ли не принимает эту проблему всерьез. Но я хорошо знаю таких парней, как Сильвио.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_07"); //Он способен дойти до экстремизма, чтобы реализовать свои идеи.
+	AI_Output (other, self, "DIA_Jarvis_TwoFronts_15_00"); //Рђ РєР°Рє СЃР»СѓС‡РёР»РѕСЃСЊ, С‡С‚Рѕ РїРѕСЏРІРёР»РёСЃСЊ РґРІРµ С„СЂР°РєС†РёРё?
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_01"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅР°СЃ РїСЂРёС€Р»Рѕ РёР· РєРѕР»РѕРЅРёРё РІРјРµСЃС‚Рµ СЃ Р›Рё.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_02"); //РќРѕ РЅРµРєРѕС‚РѕСЂС‹Рµ РЅР°РµРјРЅРёРєРё РїСЂРёСЃРѕРµРґРёРЅРёР»РёСЃСЊ Рє РЅР°Рј РїРѕР·Р¶Рµ.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_03"); //РћРЅРё РЅРµ РёР· РєРѕР»РѕРЅРёРё, РѕРЅРё Р±С‹Р»Рё СЋР¶РЅРµРµ Рё СЃСЂР°Р¶Р°Р»РёСЃСЊ СЃ РѕСЂРєР°РјРё.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_04"); //РћРЅРё РєР°Рє-С‚Рѕ РїСЂРѕСЃР»С‹С€Р°Р»Рё, С‡С‚Рѕ Р›Рё РЅСѓР¶РЅС‹ Р»СЋРґРё. РС… Р»РёРґРµСЂРѕРј Р±С‹Р» РЎРёР»СЊРІРёРѕ.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_05"); //РћРЅ СЃРѕРіР»Р°СЃРёР»СЃСЏ, С‡С‚Рѕ РєРѕРјР°РЅРґРѕРІР°С‚СЊ Р±СѓРґРµС‚ Р›Рё, РЅРѕ С‚РµРїРµСЂСЊ РѕРЅ РїС‹С‚Р°РµС‚СЃСЏ РїРѕРґР±РёС‚СЊ РЅР°РµРјРЅРёРєРѕРІ РїСЂРѕС‚РёРІ Р›Рё Рё РµРіРѕ РїР»Р°РЅР°.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_06"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· Р»СЋРґРµР№ Р›Рё РЅРµ РїСЂРёРЅРёРјР°РµС‚ СЌС‚Сѓ РїСЂРѕР±Р»РµРјСѓ РІСЃРµСЂСЊРµР·. РќРѕ СЏ С…РѕСЂРѕС€Рѕ Р·РЅР°СЋ С‚Р°РєРёС… РїР°СЂРЅРµР№, РєР°Рє РЎРёР»СЊРІРёРѕ.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_07"); //РћРЅ СЃРїРѕСЃРѕР±РµРЅ РґРѕР№С‚Рё РґРѕ СЌРєСЃС‚СЂРµРјРёР·РјР°, С‡С‚РѕР±С‹ СЂРµР°Р»РёР·РѕРІР°С‚СЊ СЃРІРѕРё РёРґРµРё.
 };
 	
 // ************************************************************
@@ -118,7 +118,7 @@ instance DIA_Jarvis_LeesPlan (C_INFO)
 	condition	= DIA_Jarvis_LeesPlan_Condition;
 	information	= DIA_Jarvis_LeesPlan_Info;
 	permanent	= FALSE;
-	description = "Ты знаешь, что собирается делать Ли?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЃРѕР±РёСЂР°РµС‚СЃСЏ РґРµР»Р°С‚СЊ Р›Рё?";
 };                       
 
 FUNC INT DIA_Jarvis_LeesPlan_Condition()
@@ -131,13 +131,13 @@ FUNC INT DIA_Jarvis_LeesPlan_Condition()
  
 FUNC VOID DIA_Jarvis_LeesPlan_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_LeesPlan_15_00"); //Ты знаешь, что собирается делать Ли?
+	AI_Output (other, self, "DIA_Jarvis_LeesPlan_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ СЃРѕР±РёСЂР°РµС‚СЃСЏ РґРµР»Р°С‚СЊ Р›Рё?
 	if ((hero.guild != GIL_MIL) && (hero.guild != GIL_PAL))
 	{
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_01"); //Ли хочет, чтобы мы выжидали и морили голодом паладинов в городе.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_01"); //Р›Рё С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РјС‹ РІС‹Р¶РёРґР°Р»Рё Рё РјРѕСЂРёР»Рё РіРѕР»РѕРґРѕРј РїР°Р»Р°РґРёРЅРѕРІ РІ РіРѕСЂРѕРґРµ.
 	};
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_02"); //Он планирует вытащить нас всех с этого острова. Иннос свидетель, я не имею ничего против того, чтобы убраться отсюда.
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_03"); //Я не знаю, как Ли собирается провернуть это, но я доверяю ему. Он всегда был хорошим вожаком.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_02"); //РћРЅ РїР»Р°РЅРёСЂСѓРµС‚ РІС‹С‚Р°С‰РёС‚СЊ РЅР°СЃ РІСЃРµС… СЃ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°. РРЅРЅРѕСЃ СЃРІРёРґРµС‚РµР»СЊ, СЏ РЅРµ РёРјРµСЋ РЅРёС‡РµРіРѕ РїСЂРѕС‚РёРІ С‚РѕРіРѕ, С‡С‚РѕР±С‹ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_03"); //РЇ РЅРµ Р·РЅР°СЋ, РєР°Рє Р›Рё СЃРѕР±РёСЂР°РµС‚СЃСЏ РїСЂРѕРІРµСЂРЅСѓС‚СЊ СЌС‚Рѕ, РЅРѕ СЏ РґРѕРІРµСЂСЏСЋ РµРјСѓ. РћРЅ РІСЃРµРіРґР° Р±С‹Р» С…РѕСЂРѕС€РёРј РІРѕР¶Р°РєРѕРј.
 };
 
 // ************************************************************
@@ -150,7 +150,7 @@ instance DIA_Jarvis_SylviosPlan (C_INFO)
 	condition	= DIA_Jarvis_SylviosPlan_Condition;
 	information	= DIA_Jarvis_SylviosPlan_Info;
 	permanent	= FALSE;
-	description = "Ты знаешь, что планирует Сильвио?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РїР»Р°РЅРёСЂСѓРµС‚ РЎРёР»СЊРІРёРѕ?";
 };                       
 
 FUNC INT DIA_Jarvis_SylviosPlan_Condition()
@@ -163,11 +163,11 @@ FUNC INT DIA_Jarvis_SylviosPlan_Condition()
  
 FUNC VOID DIA_Jarvis_SylviosPlan_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_SylviosPlan_15_00"); //Ты знаешь, что планирует Сильвио?
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_01"); //Сильвио выяснил, что часть паладинов направилась в бывшую колонию.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_02"); //Он говорит, что оставшиеся паладины не осмелятся атаковать нас здесь и хочет воспользоваться этой ситуацией.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_03"); //Грабить мелкие фермы, устраивать засады на патрули ополчения у города, потрошить путешественников, ну и все такое.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_04"); //Но Ли полагает, что это худшее из того, что можно придумать в этой ситуации.
+	AI_Output (other, self, "DIA_Jarvis_SylviosPlan_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РїР»Р°РЅРёСЂСѓРµС‚ РЎРёР»СЊРІРёРѕ?
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_01"); //РЎРёР»СЊРІРёРѕ РІС‹СЏСЃРЅРёР», С‡С‚Рѕ С‡Р°СЃС‚СЊ РїР°Р»Р°РґРёРЅРѕРІ РЅР°РїСЂР°РІРёР»Р°СЃСЊ РІ Р±С‹РІС€СѓСЋ РєРѕР»РѕРЅРёСЋ.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_02"); //РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РѕСЃС‚Р°РІС€РёРµСЃСЏ РїР°Р»Р°РґРёРЅС‹ РЅРµ РѕСЃРјРµР»СЏС‚СЃСЏ Р°С‚Р°РєРѕРІР°С‚СЊ РЅР°СЃ Р·РґРµСЃСЊ Рё С…РѕС‡РµС‚ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ СЌС‚РѕР№ СЃРёС‚СѓР°С†РёРµР№.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_03"); //Р“СЂР°Р±РёС‚СЊ РјРµР»РєРёРµ С„РµСЂРјС‹, СѓСЃС‚СЂР°РёРІР°С‚СЊ Р·Р°СЃР°РґС‹ РЅР° РїР°С‚СЂСѓР»Рё РѕРїРѕР»С‡РµРЅРёСЏ Сѓ РіРѕСЂРѕРґР°, РїРѕС‚СЂРѕС€РёС‚СЊ РїСѓС‚РµС€РµСЃС‚РІРµРЅРЅРёРєРѕРІ, РЅСѓ Рё РІСЃРµ С‚Р°РєРѕРµ.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_04"); //РќРѕ Р›Рё РїРѕР»Р°РіР°РµС‚, С‡С‚Рѕ СЌС‚Рѕ С…СѓРґС€РµРµ РёР· С‚РѕРіРѕ, С‡С‚Рѕ РјРѕР¶РЅРѕ РїСЂРёРґСѓРјР°С‚СЊ РІ СЌС‚РѕР№ СЃРёС‚СѓР°С†РёРё.
 };
 
 // ************************************************************
@@ -180,7 +180,7 @@ instance DIA_Jarvis_WannaJoin (C_INFO)
 	condition	= DIA_Jarvis_WannaJoin_Condition;
 	information	= DIA_Jarvis_WannaJoin_Info;
 	permanent	= FALSE;
-	description = "Я хочу стать наемником!";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј!";
 };                       
 
 FUNC INT DIA_Jarvis_WannaJoin_Condition()
@@ -193,11 +193,11 @@ FUNC INT DIA_Jarvis_WannaJoin_Condition()
  
 FUNC VOID DIA_Jarvis_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_WannaJoin_15_00"); //Я хочу стать наемником!
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_01"); //Я не уверен, что это хорошая идея...
-	AI_Output (other,self , "DIA_Jarvis_WannaJoin_15_02"); //В чем проблема?
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_03"); //Ну, я должен голосовать либо за тебя, либо против.
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_04"); //А учитывая ситуацию, я проголосую за тебя, только если буду уверен, что ты на стороне Ли!
+	AI_Output (other, self, "DIA_Jarvis_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј!
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_01"); //РЇ РЅРµ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЌС‚Рѕ С…РѕСЂРѕС€Р°СЏ РёРґРµСЏ...
+	AI_Output (other,self , "DIA_Jarvis_WannaJoin_15_02"); //Р’ С‡РµРј РїСЂРѕР±Р»РµРјР°?
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_03"); //РќСѓ, СЏ РґРѕР»Р¶РµРЅ РіРѕР»РѕСЃРѕРІР°С‚СЊ Р»РёР±Рѕ Р·Р° С‚РµР±СЏ, Р»РёР±Рѕ РїСЂРѕС‚РёРІ.
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_04"); //Рђ СѓС‡РёС‚С‹РІР°СЏ СЃРёС‚СѓР°С†РёСЋ, СЏ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚РµР±СЏ, С‚РѕР»СЊРєРѕ РµСЃР»Рё Р±СѓРґСѓ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ РЅР° СЃС‚РѕСЂРѕРЅРµ Р›Рё!
 };
 
 // ************************************************************
@@ -210,7 +210,7 @@ instance DIA_Jarvis_MissionKO (C_INFO)
 	condition	= DIA_Jarvis_MissionKO_Condition;
 	information	= DIA_Jarvis_MissionKO_Info;
 	permanent	= FALSE;
-	description = "И что я должен сделать?";
+	description = "Р С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?";
 };                       
 
 FUNC INT DIA_Jarvis_MissionKO_Condition()
@@ -224,15 +224,15 @@ FUNC INT DIA_Jarvis_MissionKO_Condition()
  
 FUNC VOID DIA_Jarvis_MissionKO_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_MissionKO_15_00"); //И что я должен сделать?
-	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_01"); //Это просто. Отдубась нескольких парней Сильвио! Так обе стороны сразу поймут, с кем ты.
-	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_02"); //А если ты будешь придерживаться правил дуэли, ты даже сможешь завоевать уважение остальных.
+	AI_Output (other, self, "DIA_Jarvis_MissionKO_15_00"); //Р С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_01"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ. РћС‚РґСѓР±Р°СЃСЊ РЅРµСЃРєРѕР»СЊРєРёС… РїР°СЂРЅРµР№ РЎРёР»СЊРІРёРѕ! РўР°Рє РѕР±Рµ СЃС‚РѕСЂРѕРЅС‹ СЃСЂР°Р·Сѓ РїРѕР№РјСѓС‚, СЃ РєРµРј С‚С‹.
+	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_02"); //Рђ РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РїСЂРёРґРµСЂР¶РёРІР°С‚СЊСЃСЏ РїСЂР°РІРёР» РґСѓСЌР»Рё, С‚С‹ РґР°Р¶Рµ СЃРјРѕР¶РµС€СЊ Р·Р°РІРѕРµРІР°С‚СЊ СѓРІР°Р¶РµРЅРёРµ РѕСЃС‚Р°Р»СЊРЅС‹С….
 	
 	MIS_Jarvis_SldKO = LOG_RUNNING;
 	self.aivar[AIV_IGNORE_Murder] = TRUE;
 	Log_CreateTopic (TOPIC_JarvisSLDKo,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_JarvisSLDKo,LOG_RUNNING);
-	B_LogEntry (TOPIC_JarvisSLDKo,"Джарвис хочет, чтобы я вырубил парочку парней Сильвио, тогда он отдаст свой голос за меня.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Р”Р¶Р°СЂРІРёСЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РІС‹СЂСѓР±РёР» РїР°СЂРѕС‡РєСѓ РїР°СЂРЅРµР№ РЎРёР»СЊРІРёРѕ, С‚РѕРіРґР° РѕРЅ РѕС‚РґР°СЃС‚ СЃРІРѕР№ РіРѕР»РѕСЃ Р·Р° РјРµРЅСЏ.");
 };
 
 // ************************************************************
@@ -245,7 +245,7 @@ instance DIA_Jarvis_DuellRegeln (C_INFO)
 	condition	= DIA_Jarvis_DuellRegeln_Condition;
 	information	= DIA_Jarvis_DuellRegeln_Info;
 	permanent	= FALSE;
-	description = "Что за правила дуэлей?";
+	description = "Р§С‚Рѕ Р·Р° РїСЂР°РІРёР»Р° РґСѓСЌР»РµР№?";
 };                       
 
 FUNC INT DIA_Jarvis_DuellRegeln_Condition()
@@ -258,11 +258,11 @@ FUNC INT DIA_Jarvis_DuellRegeln_Condition()
  
 FUNC VOID DIA_Jarvis_DuellRegeln_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_DuellRegeln_15_00"); //Что за правила дуэлей?
-	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_01"); //Поговори с Торлофом, он все объяснит, если тебе это интересно.
-	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_02"); //Я хочу, чтобы между нами не было недопонимания: меня не волнует, будешь ты придерживаться этих правил или нет. Если только тебе удастся извалять этих парней в грязи!
+	AI_Output (other, self, "DIA_Jarvis_DuellRegeln_15_00"); //Р§С‚Рѕ Р·Р° РїСЂР°РІРёР»Р° РґСѓСЌР»РµР№?
+	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_01"); //РџРѕРіРѕРІРѕСЂРё СЃ РўРѕСЂР»РѕС„РѕРј, РѕРЅ РІСЃРµ РѕР±СЉСЏСЃРЅРёС‚, РµСЃР»Рё С‚РµР±Рµ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ.
+	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_02"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РјРµР¶РґСѓ РЅР°РјРё РЅРµ Р±С‹Р»Рѕ РЅРµРґРѕРїРѕРЅРёРјР°РЅРёСЏ: РјРµРЅСЏ РЅРµ РІРѕР»РЅСѓРµС‚, Р±СѓРґРµС€СЊ С‚С‹ РїСЂРёРґРµСЂР¶РёРІР°С‚СЊСЃСЏ СЌС‚РёС… РїСЂР°РІРёР» РёР»Рё РЅРµС‚. Р•СЃР»Рё С‚РѕР»СЊРєРѕ С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РёР·РІР°Р»СЏС‚СЊ СЌС‚РёС… РїР°СЂРЅРµР№ РІ РіСЂСЏР·Рё!
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"И мне даже не нужно придерживаться этих дурацких правил дуэли...");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Р РјРЅРµ РґР°Р¶Рµ РЅРµ РЅСѓР¶РЅРѕ РїСЂРёРґРµСЂР¶РёРІР°С‚СЊСЃСЏ СЌС‚РёС… РґСѓСЂР°С†РєРёС… РїСЂР°РІРёР» РґСѓСЌР»Рё...");
 };
 
 // ************************************************************
@@ -275,7 +275,7 @@ instance DIA_Jarvis_SylviosMen (C_INFO)
 	condition	= DIA_Jarvis_SylviosMen_Condition;
 	information	= DIA_Jarvis_SylviosMen_Info;
 	permanent	= FALSE;
-	description = "Кто из наемников люди Сильвио?";
+	description = "РљС‚Рѕ РёР· РЅР°РµРјРЅРёРєРѕРІ Р»СЋРґРё РЎРёР»СЊРІРёРѕ?";
 };                       
 
 FUNC INT DIA_Jarvis_SylviosMen_Condition()
@@ -288,12 +288,12 @@ FUNC INT DIA_Jarvis_SylviosMen_Condition()
  
 FUNC VOID DIA_Jarvis_SylviosMen_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_SylviosMen_15_00"); //Кто из наемников люди Сильвио?
-	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_01"); //Их шестеро. Прежде всего, сам Сильвио и его правая рука Булко.
-	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_02"); //Также есть Род, Сентенза, Фестер и Рауль.
-	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_03"); //Остальные занимают либо нейтральную позицию, либо на стороне Ли.
+	AI_Output (other, self, "DIA_Jarvis_SylviosMen_15_00"); //РљС‚Рѕ РёР· РЅР°РµРјРЅРёРєРѕРІ Р»СЋРґРё РЎРёР»СЊРІРёРѕ?
+	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_01"); //РС… С€РµСЃС‚РµСЂРѕ. РџСЂРµР¶РґРµ РІСЃРµРіРѕ, СЃР°Рј РЎРёР»СЊРІРёРѕ Рё РµРіРѕ РїСЂР°РІР°СЏ СЂСѓРєР° Р‘СѓР»РєРѕ.
+	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_02"); //РўР°РєР¶Рµ РµСЃС‚СЊ Р РѕРґ, РЎРµРЅС‚РµРЅР·Р°, Р¤РµСЃС‚РµСЂ Рё Р Р°СѓР»СЊ.
+	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_03"); //РћСЃС‚Р°Р»СЊРЅС‹Рµ Р·Р°РЅРёРјР°СЋС‚ Р»РёР±Рѕ РЅРµР№С‚СЂР°Р»СЊРЅСѓСЋ РїРѕР·РёС†РёСЋ, Р»РёР±Рѕ РЅР° СЃС‚РѕСЂРѕРЅРµ Р›Рё.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Люди Сильвио - это сам Сильвио, его правая рука Булко, Род, Сентенза, Фестер и Рауль.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Р›СЋРґРё РЎРёР»СЊРІРёРѕ - СЌС‚Рѕ СЃР°Рј РЎРёР»СЊРІРёРѕ, РµРіРѕ РїСЂР°РІР°СЏ СЂСѓРєР° Р‘СѓР»РєРѕ, Р РѕРґ, РЎРµРЅС‚РµРЅР·Р°, Р¤РµСЃС‚РµСЂ Рё Р Р°СѓР»СЊ.");
 };
 
 // ************************************************************
@@ -306,7 +306,7 @@ instance DIA_Jarvis_HowMany (C_INFO)
 	condition	= DIA_Jarvis_HowMany_Condition;
 	information	= DIA_Jarvis_HowMany_Info;
 	permanent	= FALSE;
-	description = "Сколько людей Сильвио я должен победить?";
+	description = "РЎРєРѕР»СЊРєРѕ Р»СЋРґРµР№ РЎРёР»СЊРІРёРѕ СЏ РґРѕР»Р¶РµРЅ РїРѕР±РµРґРёС‚СЊ?";
 };                       
 
 FUNC INT DIA_Jarvis_HowMany_Condition()
@@ -319,12 +319,12 @@ FUNC INT DIA_Jarvis_HowMany_Condition()
  
 FUNC VOID DIA_Jarvis_HowMany_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_HowMany_15_00"); //Сколько людей Сильвио я должен победить?
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_01"); //Если ты вырубишь троих из них, ты докажешь, на чьей ты стороне.
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_02"); //Кого ты выберешь - это твое дело.
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_03"); //Дам одну подсказку: Не стоит пытаться проявить мужество. Не выступай против самого Сильвио - он сделает из тебя котлету.
+	AI_Output (other, self, "DIA_Jarvis_HowMany_15_00"); //РЎРєРѕР»СЊРєРѕ Р»СЋРґРµР№ РЎРёР»СЊРІРёРѕ СЏ РґРѕР»Р¶РµРЅ РїРѕР±РµРґРёС‚СЊ?
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_01"); //Р•СЃР»Рё С‚С‹ РІС‹СЂСѓР±РёС€СЊ С‚СЂРѕРёС… РёР· РЅРёС…, С‚С‹ РґРѕРєР°Р¶РµС€СЊ, РЅР° С‡СЊРµР№ С‚С‹ СЃС‚РѕСЂРѕРЅРµ.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_02"); //РљРѕРіРѕ С‚С‹ РІС‹Р±РµСЂРµС€СЊ - СЌС‚Рѕ С‚РІРѕРµ РґРµР»Рѕ.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_03"); //Р”Р°Рј РѕРґРЅСѓ РїРѕРґСЃРєР°Р·РєСѓ: РќРµ СЃС‚РѕРёС‚ РїС‹С‚Р°С‚СЊСЃСЏ РїСЂРѕСЏРІРёС‚СЊ РјСѓР¶РµСЃС‚РІРѕ. РќРµ РІС‹СЃС‚СѓРїР°Р№ РїСЂРѕС‚РёРІ СЃР°РјРѕРіРѕ РЎРёР»СЊРІРёРѕ - РѕРЅ СЃРґРµР»Р°РµС‚ РёР· С‚РµР±СЏ РєРѕС‚Р»РµС‚Сѓ.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Вполне достаточно, если я вырублю троих людей Сильвио. Впрочем, с самим Сильвио мне лучше пока не связываться.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Р’РїРѕР»РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, РµСЃР»Рё СЏ РІС‹СЂСѓР±Р»СЋ С‚СЂРѕРёС… Р»СЋРґРµР№ РЎРёР»СЊРІРёРѕ. Р’РїСЂРѕС‡РµРј, СЃ СЃР°РјРёРј РЎРёР»СЊРІРёРѕ РјРЅРµ Р»СѓС‡С€Рµ РїРѕРєР° РЅРµ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ.");
 };
 
 // ************************************************************
@@ -337,7 +337,7 @@ instance DIA_Jarvis_HowManyLeft (C_INFO)
 	condition	= DIA_Jarvis_HowManyLeft_Condition;
 	information	= DIA_Jarvis_HowManyLeft_Info;
 	permanent	= TRUE;
-	description = "Сколько людей Сильвио мне еще нужно уложить?";
+	description = "РЎРєРѕР»СЊРєРѕ Р»СЋРґРµР№ РЎРёР»СЊРІРёРѕ РјРЅРµ РµС‰Рµ РЅСѓР¶РЅРѕ СѓР»РѕР¶РёС‚СЊ?";
 };                       
 
 FUNC INT DIA_Jarvis_HowManyLeft_Condition()
@@ -351,7 +351,7 @@ FUNC INT DIA_Jarvis_HowManyLeft_Condition()
  
 FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_00"); //Сколько людей Сильвио мне еще нужно уложить?
+	AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_00"); //РЎРєРѕР»СЊРєРѕ Р»СЋРґРµР№ РЎРёР»СЊРІРёРѕ РјРЅРµ РµС‰Рµ РЅСѓР¶РЅРѕ СѓР»РѕР¶РёС‚СЊ?
 	
 	var int victories;
 	victories = 0;
@@ -359,15 +359,15 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	if (Bullco.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| (Bullco.aivar[AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_01"); //Я отдубасил Булко.
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_02"); //Я слышал. Неплохо.
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_01"); //РЇ РѕС‚РґСѓР±Р°СЃРёР» Р‘СѓР»РєРѕ.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_02"); //РЇ СЃР»С‹С€Р°Р». РќРµРїР»РѕС…Рѕ.
 		victories = victories + 1; 
 
 	};
 	if (Rod.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| (Rod.aivar[AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_03"); //Род теперь ходит сильно потрепанным.
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_03"); //Р РѕРґ С‚РµРїРµСЂСЊ С…РѕРґРёС‚ СЃРёР»СЊРЅРѕ РїРѕС‚СЂРµРїР°РЅРЅС‹Рј.
 		victories = victories + 1;
 	};
 	if (Sentenza.aivar[AIV_DefeatedByPlayer] == TRUE)
@@ -375,11 +375,11 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (Npc_KnowsInfo (other, DIA_Sentenza_Hello))
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_04"); //Сентенза пытался вытрясти из меня золото - не самая лучшая идея.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_04"); //РЎРµРЅС‚РµРЅР·Р° РїС‹С‚Р°Р»СЃСЏ РІС‹С‚СЂСЏСЃС‚Рё РёР· РјРµРЅСЏ Р·РѕР»РѕС‚Рѕ - РЅРµ СЃР°РјР°СЏ Р»СѓС‡С€Р°СЏ РёРґРµСЏ.
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_05"); //Я вырубил Сентензу.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_05"); //РЇ РІС‹СЂСѓР±РёР» РЎРµРЅС‚РµРЅР·Сѓ.
 		};
 
 		victories = victories + 1;
@@ -390,11 +390,11 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (MIS_Fester_KillBugs == LOG_OBSOLETE)
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_06"); //Фестер пытался провести меня - это была его ошибка.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_06"); //Р¤РµСЃС‚РµСЂ РїС‹С‚Р°Р»СЃСЏ РїСЂРѕРІРµСЃС‚Рё РјРµРЅСЏ - СЌС‚Рѕ Р±С‹Р»Р° РµРіРѕ РѕС€РёР±РєР°.
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_07"); //Фестер получил по заслугам.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_07"); //Р¤РµСЃС‚РµСЂ РїРѕР»СѓС‡РёР» РїРѕ Р·Р°СЃР»СѓРіР°Рј.
 		};
 		victories = victories + 1;
 	};
@@ -404,15 +404,15 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (victories == 0)
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_08"); //Что касается Рауля...
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_08"); //Р§С‚Рѕ РєР°СЃР°РµС‚СЃСЏ Р Р°СѓР»СЏ...
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_09"); //Я пошел поговорить с Раулем...
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_09"); //РЇ РїРѕС€РµР» РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р Р°СѓР»РµРј...
 		};
 	
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_10"); //И?
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_11"); //Оказалось, что ему крайне необходима взбучка.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_10"); //Р?
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_11"); //РћРєР°Р·Р°Р»РѕСЃСЊ, С‡С‚Рѕ РµРјСѓ РєСЂР°Р№РЅРµ РЅРµРѕР±С…РѕРґРёРјР° РІР·Р±СѓС‡РєР°.
 		victories = victories + 1;
 	};
 	
@@ -422,36 +422,36 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{	
 		if (victories == 0)
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_12"); //Ты пока не вырубил ни одного из людей Сильвио.
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_12"); //РўС‹ РїРѕРєР° РЅРµ РІС‹СЂСѓР±РёР» РЅРё РѕРґРЅРѕРіРѕ РёР· Р»СЋРґРµР№ РЎРёР»СЊРІРёРѕ.
 		}
 		else // 1-2
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_13"); //Хорошо, продолжай в том же духе.
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_13"); //РҐРѕСЂРѕС€Рѕ, РїСЂРѕРґРѕР»Р¶Р°Р№ РІ С‚РѕРј Р¶Рµ РґСѓС…Рµ.
 		};
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_14"); //Я хочу, чтобы ты вырубил как минимум троих из них.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_14"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РІС‹СЂСѓР±РёР» РєР°Рє РјРёРЅРёРјСѓРј С‚СЂРѕРёС… РёР· РЅРёС….
 	}
 	else // 3 oder mehr
 	{	
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_15"); //Этого достаточно, вполне достаточно.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_15"); //Р­С‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, РІРїРѕР»РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 		if (victories == 6)
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_16"); //Ты им всем начистил физиономию, Да?
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_16"); //РўС‹ РёРј РІСЃРµРј РЅР°С‡РёСЃС‚РёР» С„РёР·РёРѕРЅРѕРјРёСЋ, Р”Р°?
 		};
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_17"); //Я поражен - если Ли спросит мое мнение, я проголосую за тебя без колебаний.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_17"); //РЇ РїРѕСЂР°Р¶РµРЅ - РµСЃР»Рё Р›Рё СЃРїСЂРѕСЃРёС‚ РјРѕРµ РјРЅРµРЅРёРµ, СЏ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚РµР±СЏ Р±РµР· РєРѕР»РµР±Р°РЅРёР№.
 		
 		MIS_Jarvis_SldKO = LOG_SUCCESS;
 		
 		self.aivar[AIV_IGNORE_Murder] = FALSE;
 		
 		B_GivePlayerXP ((XP_Ambient)*victories);
-		B_LogEntry (TOPIC_SLDRespekt,"Джарвис проголосует за меня, если я решу присоединиться к наемникам.");
+		B_LogEntry (TOPIC_SLDRespekt,"Р”Р¶Р°СЂРІРёСЃ РїСЂРѕРіРѕР»РѕСЃСѓРµС‚ Р·Р° РјРµРЅСЏ, РµСЃР»Рё СЏ СЂРµС€Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј.");
 	};
 };
 
 
 // ###############################
 // ##							##
-// 			Hцhere Gilden
+// 			HС†here Gilden
 // ##							##
 // ###############################
 
@@ -469,7 +469,7 @@ instance DIA_Jarvis_PERM (C_INFO)
 	condition	= DIA_Jarvis_PERM_Condition;
 	information	= DIA_Jarvis_PERM_Info;
 	permanent	= FALSE;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };                       
 
 FUNC INT DIA_Jarvis_PERM_Condition()
@@ -482,7 +482,7 @@ FUNC INT DIA_Jarvis_PERM_Condition()
  
 FUNC VOID DIA_Jarvis_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_PERM_15_00"); //Есть новости?
+	AI_Output (other, self, "DIA_Jarvis_PERM_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
 	
 	if (Kapitel <= 3)
 	{
@@ -491,18 +491,18 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 			if (other.guild == GIL_SLD)
 			|| (other.guild == GIL_DJG)
 			{
-				AI_Output (self, other, "DIA_Jarvis_PERM_04_01"); //Теперь ты один из нас. Это хорошо.
+				AI_Output (self, other, "DIA_Jarvis_PERM_04_01"); //РўРµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ. Р­С‚Рѕ С…РѕСЂРѕС€Рѕ.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Jarvis_PERM_04_02"); //Ты сделал неверный выбор, ты мог бы стать одним из нас.
+				AI_Output (self, other, "DIA_Jarvis_PERM_04_02"); //РўС‹ СЃРґРµР»Р°Р» РЅРµРІРµСЂРЅС‹Р№ РІС‹Р±РѕСЂ, С‚С‹ РјРѕРі Р±С‹ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РЅР°СЃ.
 			};
 		
 			Jarvis_GuildComment = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_03"); //Последнее время, люди Сильвио ходят какие-то подавленные. (грязный смешок)
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_03"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ, Р»СЋРґРё РЎРёР»СЊРІРёРѕ С…РѕРґСЏС‚ РєР°РєРёРµ-С‚Рѕ РїРѕРґР°РІР»РµРЅРЅС‹Рµ. (РіСЂСЏР·РЅС‹Р№ СЃРјРµС€РѕРє)
 		};
 	};
 	
@@ -510,13 +510,13 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 	{
 		if (Jarvis_SylvioComment == FALSE)
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_04"); //Сильвио наконец-то свалил. После того, как он услышал о драконах, он со своими парнями отправился в колонию.
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_05"); //Он, вероятно, думает, что там будет лучше.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_04"); //РЎРёР»СЊРІРёРѕ РЅР°РєРѕРЅРµС†-С‚Рѕ СЃРІР°Р»РёР». РџРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє РѕРЅ СѓСЃР»С‹С€Р°Р» Рѕ РґСЂР°РєРѕРЅР°С…, РѕРЅ СЃРѕ СЃРІРѕРёРјРё РїР°СЂРЅСЏРјРё РѕС‚РїСЂР°РІРёР»СЃСЏ РІ РєРѕР»РѕРЅРёСЋ.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_05"); //РћРЅ, РІРµСЂРѕСЏС‚РЅРѕ, РґСѓРјР°РµС‚, С‡С‚Рѕ С‚Р°Рј Р±СѓРґРµС‚ Р»СѓС‡С€Рµ.
 			Jarvis_SylvioComment = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_06"); //Нет, пока все спокойно. Мне очень интересно, чем все это кончится.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_06"); //РќРµС‚, РїРѕРєР° РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ. РњРЅРµ РѕС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅРѕ, С‡РµРј РІСЃРµ СЌС‚Рѕ РєРѕРЅС‡РёС‚СЃСЏ.
 		};
 	};
 };

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Troll_Black(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Черный тролль";
+	name							=	"Р§РµСЂРЅС‹Р№ С‚СЂРѕР»Р»СЊ";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_BLACK;
 	level							=	100; //40

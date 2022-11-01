@@ -33,7 +33,7 @@ INSTANCE DIA_Richter_Hello(C_INFO)
 	condition	= DIA_Richter_Hello_Condition;
 	information	= DIA_Richter_Hello_Info;
 	permanent	= FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Richter_Hello_Condition()
@@ -46,29 +46,29 @@ FUNC INT DIA_Richter_Hello_Condition()
 
 FUNC VOID DIA_Richter_Hello_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_Hello_15_00"); //Что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_Richter_Hello_10_01"); //Что тебе от меня нужно? Кто ты вообще такой?
-	AI_Output (other,self ,"DIA_Richter_Hello_15_02"); //Я, э-э...
-	AI_Output (self ,other,"DIA_Richter_Hello_10_03"); //Скажи, мы раньше нигде не встречались?
+	AI_Output (other,self ,"DIA_Richter_Hello_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Richter_Hello_10_01"); //Р§С‚Рѕ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅСѓР¶РЅРѕ? РљС‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ С‚Р°РєРѕР№?
+	AI_Output (other,self ,"DIA_Richter_Hello_15_02"); //РЇ, СЌ-СЌ...
+	AI_Output (self ,other,"DIA_Richter_Hello_10_03"); //РЎРєР°Р¶Рё, РјС‹ СЂР°РЅСЊС€Рµ РЅРёРіРґРµ РЅРµ РІСЃС‚СЂРµС‡Р°Р»РёСЃСЊ?
 	
 	Info_ClearChoices (DIA_Richter_Hello);
-	Info_AddChoice (DIA_Richter_Hello,"Я такого не помню.",DIA_Richter_Hello_DontThinkSo);
-	Info_AddChoice (DIA_Richter_Hello,"Может и так.",DIA_Richter_Hello_MayBe);
+	Info_AddChoice (DIA_Richter_Hello,"РЇ С‚Р°РєРѕРіРѕ РЅРµ РїРѕРјРЅСЋ.",DIA_Richter_Hello_DontThinkSo);
+	Info_AddChoice (DIA_Richter_Hello,"РњРѕР¶РµС‚ Рё С‚Р°Рє.",DIA_Richter_Hello_MayBe);
 };
 
 FUNC VOID DIA_Richter_Hello_DontThinkSo ()
 {
-	AI_Output (other,self ,"DIA_Richter_Hello_DontThinkSo_15_00"); //Я такого не помню.
-	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_01"); //Забавно. Готов поклясться, что где-то видел тебя раньше.
-	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_02"); //Ладно, все вы, отбросы общества, похожи друг на друга.
+	AI_Output (other,self ,"DIA_Richter_Hello_DontThinkSo_15_00"); //РЇ С‚Р°РєРѕРіРѕ РЅРµ РїРѕРјРЅСЋ.
+	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_01"); //Р—Р°Р±Р°РІРЅРѕ. Р“РѕС‚РѕРІ РїРѕРєР»СЏСЃС‚СЊСЃСЏ, С‡С‚Рѕ РіРґРµ-С‚Рѕ РІРёРґРµР» С‚РµР±СЏ СЂР°РЅСЊС€Рµ.
+	AI_Output (self ,other,"DIA_Richter_Hello_DontThinkSo_10_02"); //Р›Р°РґРЅРѕ, РІСЃРµ РІС‹, РѕС‚Р±СЂРѕСЃС‹ РѕР±С‰РµСЃС‚РІР°, РїРѕС…РѕР¶Рё РґСЂСѓРі РЅР° РґСЂСѓРіР°.
 };
 
 FUNC VOID DIA_Richter_Hello_MayBe ()
 {
-	AI_Output (other,self ,"DIA_Richter_Hello_MayBe_15_00"); //Может и так.
-	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_01"); //Ты совсем обнаглел?! Ты хоть знаешь, с кем ты разговариваешь?
-	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_02"); //По крайней мере, ты мог бы обращаться ко мне более почтительно.
-	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_03"); //А теперь убирайся с глаз моих!
+	AI_Output (other,self ,"DIA_Richter_Hello_MayBe_15_00"); //РњРѕР¶РµС‚ Рё С‚Р°Рє.
+	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_01"); //РўС‹ СЃРѕРІСЃРµРј РѕР±РЅР°РіР»РµР»?! РўС‹ С…РѕС‚СЊ Р·РЅР°РµС€СЊ, СЃ РєРµРј С‚С‹ СЂР°Р·РіРѕРІР°СЂРёРІР°РµС€СЊ?
+	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_02"); //РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‚С‹ РјРѕРі Р±С‹ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ РєРѕ РјРЅРµ Р±РѕР»РµРµ РїРѕС‡С‚РёС‚РµР»СЊРЅРѕ.
+	AI_Output (self ,other,"DIA_Richter_Hello_MayBe_10_03"); //Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС…!
 	
 	AI_StopProcessInfos (self);
 };
@@ -84,7 +84,7 @@ INSTANCE DIA_Richter_Perm(C_INFO)
 	condition	= DIA_Richter_Perm_Condition;
 	information	= DIA_Richter_Perm_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Richter_Perm_Condition()
@@ -98,22 +98,22 @@ FUNC INT DIA_Richter_Perm_Condition()
 
 FUNC VOID DIA_Richter_Perm_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_Perm_15_00"); //Как дела?
+	AI_Output (other,self ,"DIA_Richter_Perm_15_00"); //РљР°Рє РґРµР»Р°?
 
 	if (MIS_Lee_JudgeRichter == LOG_RUNNING)
 	&& ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG ))
 	{
-		AI_Output (self ,other,"DIA_Richter_Perm_10_01"); //Тебе лучше убраться отсюда, грязный наемник, пока я не позвал стражу.
-		AI_Output (other,self ,"DIA_Richter_Perm_15_02"); //Расслабься. Я здесь не для того, чтобы обокрасть тебя. Я ищу работу.
-		AI_Output (self ,other,"DIA_Richter_Perm_10_03"); //Ах. Так ты хочешь работать на меня. Хмм. Это, конечно, меняет дело.
-		AI_Output (self ,other,"DIA_Richter_Perm_10_04"); //Да, у меня есть небольшая проблема. Но я не знаю, могу ли я доверять тебе. Сначала ты должен доказать, что на тебя можно положиться.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_01"); //РўРµР±Рµ Р»СѓС‡С€Рµ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°, РіСЂСЏР·РЅС‹Р№ РЅР°РµРјРЅРёРє, РїРѕРєР° СЏ РЅРµ РїРѕР·РІР°Р» СЃС‚СЂР°Р¶Сѓ.
+		AI_Output (other,self ,"DIA_Richter_Perm_15_02"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. РЇ Р·РґРµСЃСЊ РЅРµ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РѕР±РѕРєСЂР°СЃС‚СЊ С‚РµР±СЏ. РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_03"); //РђС…. РўР°Рє С‚С‹ С…РѕС‡РµС€СЊ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РјРµРЅСЏ. РҐРјРј. Р­С‚Рѕ, РєРѕРЅРµС‡РЅРѕ, РјРµРЅСЏРµС‚ РґРµР»Рѕ.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_04"); //Р”Р°, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РЅРµР±РѕР»СЊС€Р°СЏ РїСЂРѕР±Р»РµРјР°. РќРѕ СЏ РЅРµ Р·РЅР°СЋ, РјРѕРіСѓ Р»Рё СЏ РґРѕРІРµСЂСЏС‚СЊ С‚РµР±Рµ. РЎРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РЅР° С‚РµР±СЏ РјРѕР¶РЅРѕ РїРѕР»РѕР¶РёС‚СЊСЃСЏ.
 		SCIstRichtersLakai = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Richter_Perm_10_05"); //Разве я уже не сказал, что не хочу иметь с тобой никаких дел?
-		AI_Output (other,self ,"DIA_Richter_Perm_15_06"); //Нет, по крайней мере, не так подробно.
-		AI_Output (self ,other,"DIA_Richter_Perm_10_07"); //Но теперь, я надеюсь, до тебя, наконец, это дошло.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_05"); //Р Р°Р·РІРµ СЏ СѓР¶Рµ РЅРµ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅРµ С…РѕС‡Сѓ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РЅРёРєР°РєРёС… РґРµР»?
+		AI_Output (other,self ,"DIA_Richter_Perm_15_06"); //РќРµС‚, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РЅРµ С‚Р°Рє РїРѕРґСЂРѕР±РЅРѕ.
+		AI_Output (self ,other,"DIA_Richter_Perm_10_07"); //РќРѕ С‚РµРїРµСЂСЊ, СЏ РЅР°РґРµСЋСЃСЊ, РґРѕ С‚РµР±СЏ, РЅР°РєРѕРЅРµС†, СЌС‚Рѕ РґРѕС€Р»Рѕ.
 	};
 };
 
@@ -128,7 +128,7 @@ INSTANCE DIA_Richter_RichtersLakai (C_INFO)
 	condition	= DIA_Richter_RichtersLakai_Condition;
 	information	= DIA_Richter_RichtersLakai_Info;
 
-	description = "Испытай меня.";
+	description = "РСЃРїС‹С‚Р°Р№ РјРµРЅСЏ.";
 };                       
 
 FUNC INT DIA_Richter_RichtersLakai_Condition()
@@ -142,29 +142,29 @@ FUNC INT DIA_Richter_RichtersLakai_Condition()
 
 FUNC VOID DIA_Richter_RichtersLakai_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_RichtersLakai_15_00"); //Испытай меня.
-	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_01"); //М-м-м. Хорошо. Слушай. Принеси мне священный молот Магов Огня. Они хранят его где-то в подвалах монастыря.
-	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_02"); //Если тебе удастся это, я подумаю насчет того, чтобы принять тебя в телохранители.
+	AI_Output (other,self ,"DIA_Richter_RichtersLakai_15_00"); //РСЃРїС‹С‚Р°Р№ РјРµРЅСЏ.
+	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_01"); //Рњ-Рј-Рј. РҐРѕСЂРѕС€Рѕ. РЎР»СѓС€Р°Р№. РџСЂРёРЅРµСЃРё РјРЅРµ СЃРІСЏС‰РµРЅРЅС‹Р№ РјРѕР»РѕС‚ РњР°РіРѕРІ РћРіРЅСЏ. РћРЅРё С…СЂР°РЅСЏС‚ РµРіРѕ РіРґРµ-С‚Рѕ РІ РїРѕРґРІР°Р»Р°С… РјРѕРЅР°СЃС‚С‹СЂСЏ.
+	AI_Output (self ,other,"DIA_Richter_RichtersLakai_10_02"); //Р•СЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ СЌС‚Рѕ, СЏ РїРѕРґСѓРјР°СЋ РЅР°СЃС‡РµС‚ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїСЂРёРЅСЏС‚СЊ С‚РµР±СЏ РІ С‚РµР»РѕС…СЂР°РЅРёС‚РµР»Рё.
 	
 	Info_ClearChoices	(DIA_Richter_RichtersLakai);
-	Info_AddChoice	(DIA_Richter_RichtersLakai, "Я должен украсть у магов? Да у тебя крыша поехала.", DIA_Richter_RichtersLakai_nein );
-	Info_AddChoice	(DIA_Richter_RichtersLakai, "Хорошо.", DIA_Richter_RichtersLakai_ja );
+	Info_AddChoice	(DIA_Richter_RichtersLakai, "РЇ РґРѕР»Р¶РµРЅ СѓРєСЂР°СЃС‚СЊ Сѓ РјР°РіРѕРІ? Р”Р° Сѓ С‚РµР±СЏ РєСЂС‹С€Р° РїРѕРµС…Р°Р»Р°.", DIA_Richter_RichtersLakai_nein );
+	Info_AddChoice	(DIA_Richter_RichtersLakai, "РҐРѕСЂРѕС€Рѕ.", DIA_Richter_RichtersLakai_ja );
 	
-	B_LogEntry (TOPIC_RichterLakai,"Судья не доверяет мне. Я должен доказать свою верность ему. Я должен украсть священный молот из подвала монастыря магов огня и принести молот ему."); 
+	B_LogEntry (TOPIC_RichterLakai,"РЎСѓРґСЊСЏ РЅРµ РґРѕРІРµСЂСЏРµС‚ РјРЅРµ. РЇ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ СЃРІРѕСЋ РІРµСЂРЅРѕСЃС‚СЊ РµРјСѓ. РЇ РґРѕР»Р¶РµРЅ СѓРєСЂР°СЃС‚СЊ СЃРІСЏС‰РµРЅРЅС‹Р№ РјРѕР»РѕС‚ РёР· РїРѕРґРІР°Р»Р° РјРѕРЅР°СЃС‚С‹СЂСЏ РјР°РіРѕРІ РѕРіРЅСЏ Рё РїСЂРёРЅРµСЃС‚Рё РјРѕР»РѕС‚ РµРјСѓ."); 
 
 	MIS_Richter_BringHolyHammer = LOG_RUNNING;
 };
 func void DIA_Richter_RichtersLakai_nein ()
 {
-	AI_Output			(other, self, "DIA_Richter_RichtersLakai_nein_15_00"); //Я должен украсть у магов? Да у тебя крыша поехала.
-	AI_Output			(self, other, "DIA_Richter_RichtersLakai_nein_10_01"); //Тогда проваливай к черту. Хватит тратить мое время попусту.
+	AI_Output			(other, self, "DIA_Richter_RichtersLakai_nein_15_00"); //РЇ РґРѕР»Р¶РµРЅ СѓРєСЂР°СЃС‚СЊ Сѓ РјР°РіРѕРІ? Р”Р° Сѓ С‚РµР±СЏ РєСЂС‹С€Р° РїРѕРµС…Р°Р»Р°.
+	AI_Output			(self, other, "DIA_Richter_RichtersLakai_nein_10_01"); //РўРѕРіРґР° РїСЂРѕРІР°Р»РёРІР°Р№ Рє С‡РµСЂС‚Сѓ. РҐРІР°С‚РёС‚ С‚СЂР°С‚РёС‚СЊ РјРѕРµ РІСЂРµРјСЏ РїРѕРїСѓСЃС‚Сѓ.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Richter_RichtersLakai_ja ()
 {
-	AI_Output			(other, self, "DIA_Richter_RichtersLakai_ja_15_00"); //Хорошо.
-	AI_Output			(self, other, "DIA_Richter_RichtersLakai_ja_10_01"); //Отлично. Но помни - если тебя поймают, я никогда не слышал о тебе.
+	AI_Output			(other, self, "DIA_Richter_RichtersLakai_ja_15_00"); //РҐРѕСЂРѕС€Рѕ.
+	AI_Output			(self, other, "DIA_Richter_RichtersLakai_ja_10_01"); //РћС‚Р»РёС‡РЅРѕ. РќРѕ РїРѕРјРЅРё - РµСЃР»Рё С‚РµР±СЏ РїРѕР№РјР°СЋС‚, СЏ РЅРёРєРѕРіРґР° РЅРµ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ.
 	AI_StopProcessInfos (self);
 };
 
@@ -180,7 +180,7 @@ INSTANCE DIA_Richter_KillMorgahard (C_INFO)
 	condition	= DIA_Richter_KillMorgahard_Condition;
 	information	= DIA_Richter_KillMorgahard_Info;
 
-	description =	"Вот священный молот магов.";
+	description =	"Р’РѕС‚ СЃРІСЏС‰РµРЅРЅС‹Р№ РјРѕР»РѕС‚ РјР°РіРѕРІ.";
 };                       
 
 FUNC INT DIA_Richter_KillMorgahard_Condition()
@@ -194,16 +194,16 @@ FUNC INT DIA_Richter_KillMorgahard_Condition()
 
 FUNC VOID DIA_Richter_KillMorgahard_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_KillMorgahard_15_00"); //Вот священный молот магов.
+	AI_Output (other,self ,"DIA_Richter_KillMorgahard_15_00"); //Р’РѕС‚ СЃРІСЏС‰РµРЅРЅС‹Р№ РјРѕР»РѕС‚ РјР°РіРѕРІ.
 	B_GiveInvItems (other, self, Holy_Hammer_MIS,1);
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_01"); //Я поражен. Похоже, у тебя действительно серьезные намерения. Вот твое вознаграждение.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_01"); //РЇ РїРѕСЂР°Р¶РµРЅ. РџРѕС…РѕР¶Рµ, Сѓ С‚РµР±СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРµСЂСЊРµР·РЅС‹Рµ РЅР°РјРµСЂРµРЅРёСЏ. Р’РѕС‚ С‚РІРѕРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ.
 	CreateInvItems (self, ItMi_Gold, 300);									
 	B_GiveInvItems (self, other, ItMi_Gold, 300);					
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_02"); //Отлично. Так как все прошло хорошо, у меня есть для тебя еще одно задание.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_03"); //Несколько дней назад, из местной тюрьмы сбежали несколько заключенных.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_04"); //Эти сукины дети отправились в горы. Скорее всего, по направлению к новой башне Ксардаса.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_05"); //Их главаря зовут Моргахард. Я хочу, чтобы ты убил его.
-	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_06"); //Поторопись, пока они не исчезли куда-нибудь еще.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_02"); //РћС‚Р»РёС‡РЅРѕ. РўР°Рє РєР°Рє РІСЃРµ РїСЂРѕС€Р»Рѕ С…РѕСЂРѕС€Рѕ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РµС‰Рµ РѕРґРЅРѕ Р·Р°РґР°РЅРёРµ.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_03"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ, РёР· РјРµСЃС‚РЅРѕР№ С‚СЋСЂСЊРјС‹ СЃР±РµР¶Р°Р»Рё РЅРµСЃРєРѕР»СЊРєРѕ Р·Р°РєР»СЋС‡РµРЅРЅС‹С….
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_04"); //Р­С‚Рё СЃСѓРєРёРЅС‹ РґРµС‚Рё РѕС‚РїСЂР°РІРёР»РёСЃСЊ РІ РіРѕСЂС‹. РЎРєРѕСЂРµРµ РІСЃРµРіРѕ, РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ Рє РЅРѕРІРѕР№ Р±Р°С€РЅРµ РљСЃР°СЂРґР°СЃР°.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_05"); //РС… РіР»Р°РІР°СЂСЏ Р·РѕРІСѓС‚ РњРѕСЂРіР°С…Р°СЂРґ. РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ СѓР±РёР» РµРіРѕ.
+	AI_Output (self ,other,"DIA_Richter_KillMorgahard_10_06"); //РџРѕС‚РѕСЂРѕРїРёСЃСЊ, РїРѕРєР° РѕРЅРё РЅРµ РёСЃС‡РµР·Р»Рё РєСѓРґР°-РЅРёР±СѓРґСЊ РµС‰Рµ.
 	
 	Wld_InsertNpc	(BDT_1030_Morgahard,"REICH"); 
 	Wld_InsertNpc	(BDT_1031_Fluechtling,"REICH"); 
@@ -216,7 +216,7 @@ FUNC VOID DIA_Richter_KillMorgahard_Info()
 
 	B_GivePlayerXP (XP_BringHolyHammer);
 	MIS_Richter_BringHolyHammer = LOG_SUCCESS;
-	B_LogEntry (TOPIC_RichterLakai,"Несколько заключенных сбежали от судьи. Я должен найти их и прикончить, а также прикончить их главаря - МОРГАХАРДА. Они, предположительно, скрываются в горах, где-то по направлению к новой башне Ксардаса."); 
+	B_LogEntry (TOPIC_RichterLakai,"РќРµСЃРєРѕР»СЊРєРѕ Р·Р°РєР»СЋС‡РµРЅРЅС‹С… СЃР±РµР¶Р°Р»Рё РѕС‚ СЃСѓРґСЊРё. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РёС… Рё РїСЂРёРєРѕРЅС‡РёС‚СЊ, Р° С‚Р°РєР¶Рµ РїСЂРёРєРѕРЅС‡РёС‚СЊ РёС… РіР»Р°РІР°СЂСЏ - РњРћР Р“РђРҐРђР Р”Рђ. РћРЅРё, РїСЂРµРґРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ, СЃРєСЂС‹РІР°СЋС‚СЃСЏ РІ РіРѕСЂР°С…, РіРґРµ-С‚Рѕ РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ Рє РЅРѕРІРѕР№ Р±Р°С€РЅРµ РљСЃР°СЂРґР°СЃР°."); 
 	MIS_Richter_KillMorgahard = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 };	
@@ -232,7 +232,7 @@ INSTANCE DIA_Richter_KilledMorgahard (C_INFO)
 	condition	= DIA_Richter_KilledMorgahard_Condition;
 	information	= DIA_Richter_KilledMorgahard_Info;
 
-	description =	"Моргахард мертв.";
+	description =	"РњРѕСЂРіР°С…Р°СЂРґ РјРµСЂС‚РІ.";
 };                       
 
 FUNC INT DIA_Richter_KilledMorgahard_Condition()
@@ -246,12 +246,12 @@ FUNC INT DIA_Richter_KilledMorgahard_Condition()
 
 FUNC VOID DIA_Richter_KilledMorgahard_Info()
 {	
-	AI_Output (other,self ,"DIA_Richter_KilledMorgahard_15_00"); //Моргахард мертв.
-	AI_Output (self ,other,"DIA_Richter_KilledMorgahard_10_01"); //Ах! Ты отличный парень. Вот твоя награда.
+	AI_Output (other,self ,"DIA_Richter_KilledMorgahard_15_00"); //РњРѕСЂРіР°С…Р°СЂРґ РјРµСЂС‚РІ.
+	AI_Output (self ,other,"DIA_Richter_KilledMorgahard_10_01"); //РђС…! РўС‹ РѕС‚Р»РёС‡РЅС‹Р№ РїР°СЂРµРЅСЊ. Р’РѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР°.
 	CreateInvItems (self, ItMi_Gold, 400);									
 	B_GiveInvItems (self, other, ItMi_Gold, 400);					
 	B_GivePlayerXP (XP_KillMorgahard);
-	B_LogEntry (TOPIC_RichterLakai,"Судью, похоже, огорчила новость о смерти Моргахарда. А, ладно, мне до этого нет дела. Моя основная цель - выполнение задания Ли."); 
+	B_LogEntry (TOPIC_RichterLakai,"РЎСѓРґСЊСЋ, РїРѕС…РѕР¶Рµ, РѕРіРѕСЂС‡РёР»Р° РЅРѕРІРѕСЃС‚СЊ Рѕ СЃРјРµСЂС‚Рё РњРѕСЂРіР°С…Р°СЂРґР°. Рђ, Р»Р°РґРЅРѕ, РјРЅРµ РґРѕ СЌС‚РѕРіРѕ РЅРµС‚ РґРµР»Р°. РњРѕСЏ РѕСЃРЅРѕРІРЅР°СЏ С†РµР»СЊ - РІС‹РїРѕР»РЅРµРЅРёРµ Р·Р°РґР°РЅРёСЏ Р›Рё."); 
 	MIS_Richter_KillMorgahard = LOG_SUCCESS;
 };
 
@@ -267,7 +267,7 @@ INSTANCE DIA_Richter_KilledMorgahardPERM (C_INFO)
 	information	= DIA_Richter_KilledMorgahardPERM_Info;
 	permanent	 = 	TRUE;
 
-	description =	"Могу я еще что-нибудь сделать для тебя?";
+	description =	"РњРѕРіСѓ СЏ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?";
 };                       
 
 FUNC INT DIA_Richter_KilledMorgahardPERM_Condition()
@@ -281,8 +281,8 @@ FUNC INT DIA_Richter_KilledMorgahardPERM_Condition()
 
 FUNC VOID DIA_Richter_KilledMorgahardPERM_Info ()
 {	
-	AI_Output (other,self ,"DIA_Richter_KilledMorgahardPERM_15_00"); //Могу я еще что-нибудь сделать для тебя?
-	AI_Output (self ,other,"DIA_Richter_KilledMorgahardPERM_10_01"); //Пока нет. Возможно, позже.
+	AI_Output (other,self ,"DIA_Richter_KilledMorgahardPERM_15_00"); //РњРѕРіСѓ СЏ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
+	AI_Output (self ,other,"DIA_Richter_KilledMorgahardPERM_10_01"); //РџРѕРєР° РЅРµС‚. Р’РѕР·РјРѕР¶РЅРѕ, РїРѕР·Р¶Рµ.
 };
 
 // ************************************************************
@@ -296,7 +296,7 @@ INSTANCE DIA_Richter_PermissionForShip (C_INFO)
 	condition	= DIA_Richter_PermissionForShip_Condition;
 	information	= DIA_Richter_PermissionForShip_Info;
 
-	description =	"Дай мне письменное подтверждение полномочий распоряжаться кораблем паладинов.";
+	description =	"Р”Р°Р№ РјРЅРµ РїРёСЃСЊРјРµРЅРЅРѕРµ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ РїРѕР»РЅРѕРјРѕС‡РёР№ СЂР°СЃРїРѕСЂСЏР¶Р°С‚СЊСЃСЏ РєРѕСЂР°Р±Р»РµРј РїР°Р»Р°РґРёРЅРѕРІ.";
 };                       
 
 FUNC INT DIA_Richter_PermissionForShip_Condition()
@@ -309,17 +309,17 @@ FUNC INT DIA_Richter_PermissionForShip_Condition()
 
 FUNC VOID DIA_Richter_PermissionForShip_Info ()
 {	
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_00"); //Дай мне письменное подтверждение полномочий распоряжаться кораблем паладинов.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_01"); //(смеется) Ты, должно быть, тронулся рассудком. Что ты хочешь, чтобы я сделал?
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_02"); //Ты уже слышал. Либо ты дашь мне эту бумагу, либо я сдам тебя ополчению.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_03"); //(рычит) Никто не смеет меня шантажировать! Тем более ты! Я скормлю тебя волкам, презренный кусок дерьма!
-	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_04"); //Моргахард убил губернатора по твоему приказу. У меня есть документ, подтверждающий это.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_05"); //(Рычит) Ах-х.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_06"); //Ты пожалеешь об этом. Этот шантаж не сойдет тебе с рук просто так.
-	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_07"); //Вот твоя бумага. А теперь проваливай. Я разберусь с тобой позже.
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_00"); //Р”Р°Р№ РјРЅРµ РїРёСЃСЊРјРµРЅРЅРѕРµ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ РїРѕР»РЅРѕРјРѕС‡РёР№ СЂР°СЃРїРѕСЂСЏР¶Р°С‚СЊСЃСЏ РєРѕСЂР°Р±Р»РµРј РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_01"); //(СЃРјРµРµС‚СЃСЏ) РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С‚СЂРѕРЅСѓР»СЃСЏ СЂР°СЃСЃСѓРґРєРѕРј. Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СЃРґРµР»Р°Р»?
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_02"); //РўС‹ СѓР¶Рµ СЃР»С‹С€Р°Р». Р›РёР±Рѕ С‚С‹ РґР°С€СЊ РјРЅРµ СЌС‚Сѓ Р±СѓРјР°РіСѓ, Р»РёР±Рѕ СЏ СЃРґР°Рј С‚РµР±СЏ РѕРїРѕР»С‡РµРЅРёСЋ.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_03"); //(СЂС‹С‡РёС‚) РќРёРєС‚Рѕ РЅРµ СЃРјРµРµС‚ РјРµРЅСЏ С€Р°РЅС‚Р°Р¶РёСЂРѕРІР°С‚СЊ! РўРµРј Р±РѕР»РµРµ С‚С‹! РЇ СЃРєРѕСЂРјР»СЋ С‚РµР±СЏ РІРѕР»РєР°Рј, РїСЂРµР·СЂРµРЅРЅС‹Р№ РєСѓСЃРѕРє РґРµСЂСЊРјР°!
+	AI_Output (other,self ,"DIA_Richter_PermissionForShip_15_04"); //РњРѕСЂРіР°С…Р°СЂРґ СѓР±РёР» РіСѓР±РµСЂРЅР°С‚РѕСЂР° РїРѕ С‚РІРѕРµРјСѓ РїСЂРёРєР°Р·Сѓ. РЈ РјРµРЅСЏ РµСЃС‚СЊ РґРѕРєСѓРјРµРЅС‚, РїРѕРґС‚РІРµСЂР¶РґР°СЋС‰РёР№ СЌС‚Рѕ.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_05"); //(Р С‹С‡РёС‚) РђС…-С….
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_06"); //РўС‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј. Р­С‚РѕС‚ С€Р°РЅС‚Р°Р¶ РЅРµ СЃРѕР№РґРµС‚ С‚РµР±Рµ СЃ СЂСѓРє РїСЂРѕСЃС‚Рѕ С‚Р°Рє.
+	AI_Output (self ,other,"DIA_Richter_PermissionForShip_10_07"); //Р’РѕС‚ С‚РІРѕСЏ Р±СѓРјР°РіР°. Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№. РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ С‚РѕР±РѕР№ РїРѕР·Р¶Рµ.
 	CreateInvItems (self,ItWr_ForgedShipLetter_Mis,1);
 	B_GiveInvItems (self,other,ItWr_ForgedShipLetter_Mis,1);
-	B_LogEntry (TOPIC_Ship,"Письмо о подтверждении полномочий должно позволить без проблем завладеть кораблем. Интересно, что скажет на это Ли."); 
+	B_LogEntry (TOPIC_Ship,"РџРёСЃСЊРјРѕ Рѕ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРё РїРѕР»РЅРѕРјРѕС‡РёР№ РґРѕР»Р¶РЅРѕ РїРѕР·РІРѕР»РёС‚СЊ Р±РµР· РїСЂРѕР±Р»РµРј Р·Р°РІР»Р°РґРµС‚СЊ РєРѕСЂР°Р±Р»РµРј. РРЅС‚РµСЂРµСЃРЅРѕ, С‡С‚Рѕ СЃРєР°Р¶РµС‚ РЅР° СЌС‚Рѕ Р›Рё."); 
 	MIS_RichtersPermissionForShip = LOG_SUCCESS;
 	B_GivePlayerXP (XP_RichtersPermissionForShip);
 };
@@ -350,7 +350,7 @@ FUNC INT DIA_Richter_perm2_Condition()
 
 FUNC VOID DIA_Richter_perm2_Info ()
 {	
-	AI_Output (self ,other,"DIA_Richter_perm2_10_00"); //Убирайся с глаз моих.
+	AI_Output (self ,other,"DIA_Richter_perm2_10_00"); //РЈР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС….
 	AI_StopProcessInfos (self);
 };
 
@@ -366,7 +366,7 @@ INSTANCE DIA_Richter_PICKPOCKET (C_INFO)
 	condition	= DIA_Richter_PICKPOCKET_Condition;
 	information	= DIA_Richter_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот ключ будет легко)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ Р±СѓРґРµС‚ Р»РµРіРєРѕ)";
 };                       
 
 FUNC INT DIA_Richter_PICKPOCKET_Condition()

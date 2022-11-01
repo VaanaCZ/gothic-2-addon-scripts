@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Patrick_Hi   (C_INFO)
 	condition   = DIA_Addon_Patrick_Hi_Condition;
 	information = DIA_Addon_Patrick_Hi_Info;
 	permanent   = FALSE;
-	description = "Меня послали маги воды. Я пришел, чтобы освободить вас.";
+	description = "РњРµРЅСЏ РїРѕСЃР»Р°Р»Рё РјР°РіРё РІРѕРґС‹. РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РѕСЃРІРѕР±РѕРґРёС‚СЊ РІР°СЃ.";
 };
 FUNC INT DIA_Addon_Patrick_Hi_Condition()
 {	
@@ -36,40 +36,40 @@ FUNC INT DIA_Addon_Patrick_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_00");//Меня послали маги воды. Я пришел, чтобы освободить вас.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_01");//Правда? А почему я должен тебе верить?
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_02");//Ты хочешь отсюда выбраться или нет?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_03");//Конечно, хочу, но...
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_04");//Меня послал Ватрас. Если и это тебя не убедит, можешь оставаться гнить в этой дыре.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_05");//Хорошо, хорошо, я тебе верю.
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_06");//Неужели? Надо же, это случилось быстрее, чем я думал. Хорошо, а теперь нам нужен план.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_07");//Попытка побега будет слишком рискованной. Вильям уже попытался. Теперь он мертв...
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_08");//Пленники - в основном крестьяне. Они мне доверяют, но на побег не осмелятся.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_00");//РњРµРЅСЏ РїРѕСЃР»Р°Р»Рё РјР°РіРё РІРѕРґС‹. РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РѕСЃРІРѕР±РѕРґРёС‚СЊ РІР°СЃ.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_01");//РџСЂР°РІРґР°? Рђ РїРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ С‚РµР±Рµ РІРµСЂРёС‚СЊ?
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_02");//РўС‹ С…РѕС‡РµС€СЊ РѕС‚СЃСЋРґР° РІС‹Р±СЂР°С‚СЊСЃСЏ РёР»Рё РЅРµС‚?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_03");//РљРѕРЅРµС‡РЅРѕ, С…РѕС‡Сѓ, РЅРѕ...
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_04");//РњРµРЅСЏ РїРѕСЃР»Р°Р» Р’Р°С‚СЂР°СЃ. Р•СЃР»Рё Рё СЌС‚Рѕ С‚РµР±СЏ РЅРµ СѓР±РµРґРёС‚, РјРѕР¶РµС€СЊ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ РіРЅРёС‚СЊ РІ СЌС‚РѕР№ РґС‹СЂРµ.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_05");//РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, СЏ С‚РµР±Рµ РІРµСЂСЋ.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_06");//РќРµСѓР¶РµР»Рё? РќР°РґРѕ Р¶Рµ, СЌС‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ Р±С‹СЃС‚СЂРµРµ, С‡РµРј СЏ РґСѓРјР°Р». РҐРѕСЂРѕС€Рѕ, Р° С‚РµРїРµСЂСЊ РЅР°Рј РЅСѓР¶РµРЅ РїР»Р°РЅ.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_07");//РџРѕРїС‹С‚РєР° РїРѕР±РµРіР° Р±СѓРґРµС‚ СЃР»РёС€РєРѕРј СЂРёСЃРєРѕРІР°РЅРЅРѕР№. Р’РёР»СЊСЏРј СѓР¶Рµ РїРѕРїС‹С‚Р°Р»СЃСЏ. РўРµРїРµСЂСЊ РѕРЅ РјРµСЂС‚РІ...
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_08");//РџР»РµРЅРЅРёРєРё - РІ РѕСЃРЅРѕРІРЅРѕРј РєСЂРµСЃС‚СЊСЏРЅРµ. РћРЅРё РјРЅРµ РґРѕРІРµСЂСЏСЋС‚, РЅРѕ РЅР° РїРѕР±РµРі РЅРµ РѕСЃРјРµР»СЏС‚СЃСЏ.
 		
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
-	Info_AddChoice (DIA_Addon_Patrick_Hi,"Как ты себе это представляешь? Я должен убедить Ворона освободить вас?",DIA_Addon_Patrick_Hi_Raven);
-	Info_AddChoice (DIA_Addon_Patrick_Hi,"Мне нужно перебить всех бандитов до единого?",DIA_Addon_Patrick_Hi_Kill);
+	Info_AddChoice (DIA_Addon_Patrick_Hi,"РљР°Рє С‚С‹ СЃРµР±Рµ СЌС‚Рѕ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ? РЇ РґРѕР»Р¶РµРЅ СѓР±РµРґРёС‚СЊ Р’РѕСЂРѕРЅР° РѕСЃРІРѕР±РѕРґРёС‚СЊ РІР°СЃ?",DIA_Addon_Patrick_Hi_Raven);
+	Info_AddChoice (DIA_Addon_Patrick_Hi,"РњРЅРµ РЅСѓР¶РЅРѕ РїРµСЂРµР±РёС‚СЊ РІСЃРµС… Р±Р°РЅРґРёС‚РѕРІ РґРѕ РµРґРёРЅРѕРіРѕ?",DIA_Addon_Patrick_Hi_Kill);
 };
 FUNC VOID B_Say_Patrick_Plan()
 {
-	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_00");//Так что выход у нас один.
-	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_01");//Ты должен сделать так, чтобы стражники пропустили нас. Тогда мы уйдем.
-	AI_Output (other, self, "DIA_Addon_Patrick_Plan_15_02");//Ладно, я позабочусь об этом. Скажи остальным, чтобы они готовились.
+	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_00");//РўР°Рє С‡С‚Рѕ РІС‹С…РѕРґ Сѓ РЅР°СЃ РѕРґРёРЅ.
+	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_01");//РўС‹ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ С‚Р°Рє, С‡С‚РѕР±С‹ СЃС‚СЂР°Р¶РЅРёРєРё РїСЂРѕРїСѓСЃС‚РёР»Рё РЅР°СЃ. РўРѕРіРґР° РјС‹ СѓР№РґРµРј.
+	AI_Output (other, self, "DIA_Addon_Patrick_Plan_15_02");//Р›Р°РґРЅРѕ, СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР± СЌС‚РѕРј. РЎРєР°Р¶Рё РѕСЃС‚Р°Р»СЊРЅС‹Рј, С‡С‚РѕР±С‹ РѕРЅРё РіРѕС‚РѕРІРёР»РёСЃСЊ.
 	
 	
-	B_LogEntry (Topic_Addon_Sklaven,"Рабы не осмелятся на побег. Я должен найти мирный способ вывести их из лагеря.");
+	B_LogEntry (Topic_Addon_Sklaven,"Р Р°Р±С‹ РЅРµ РѕСЃРјРµР»СЏС‚СЃСЏ РЅР° РїРѕР±РµРі. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РјРёСЂРЅС‹Р№ СЃРїРѕСЃРѕР± РІС‹РІРµСЃС‚Рё РёС… РёР· Р»Р°РіРµСЂСЏ.");
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Raven()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Raven_15_00");//Как ты себе это представляешь? Я должен убедить Ворона освободить вас?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Raven_07_01");//(усмехается) Неплохая мысль.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Raven_15_00");//РљР°Рє С‚С‹ СЃРµР±Рµ СЌС‚Рѕ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ? РЇ РґРѕР»Р¶РµРЅ СѓР±РµРґРёС‚СЊ Р’РѕСЂРѕРЅР° РѕСЃРІРѕР±РѕРґРёС‚СЊ РІР°СЃ?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Raven_07_01");//(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РќРµРїР»РѕС…Р°СЏ РјС‹СЃР»СЊ.
 	B_Say_Patrick_Plan();
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Kill()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Kill_15_00");//Мне нужно перебить всех бандитов до единого?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Kill_07_01");//(испуганно) Это было бы безумием!
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Kill_15_00");//РњРЅРµ РЅСѓР¶РЅРѕ РїРµСЂРµР±РёС‚СЊ РІСЃРµС… Р±Р°РЅРґРёС‚РѕРІ РґРѕ РµРґРёРЅРѕРіРѕ?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Kill_07_01");//(РёСЃРїСѓРіР°РЅРЅРѕ) Р­С‚Рѕ Р±С‹Р»Рѕ Р±С‹ Р±РµР·СѓРјРёРµРј!
 	B_Say_Patrick_Plan();
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
 };
@@ -84,7 +84,7 @@ INSTANCE DIA_Addon_Patrick_ready   (C_INFO)
 	condition   = DIA_Addon_Patrick_ready_Condition;
 	information = DIA_Addon_Patrick_ready_Info;
 	permanent   = FALSE;
-	description = "Все хорошо. Вы можете идти.";
+	description = "Р’СЃРµ С…РѕСЂРѕС€Рѕ. Р’С‹ РјРѕР¶РµС‚Рµ РёРґС‚Рё.";
 };
 FUNC INT DIA_Addon_Patrick_ready_Condition()
 {	
@@ -104,12 +104,12 @@ FUNC INT DIA_Addon_Patrick_ready_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_ready_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_00");//Все хорошо. Вы можете идти.
-	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_01");//Отлично! Я знаю на болоте одну пещеру, где мы можем укрыться. Но что нам делать дальше?
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_02");//Идите на юго-запад. Покинув болото, вы найдете развалины древнего храма. Там устроили лагерь маги воды.
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_03");//Они расскажут вам, как выбраться из этой долины.
-	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_04");//Спасибо, спасибо большое. Мы все перед тобой в долгу... 
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_05");//Не за что.
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_00");//Р’СЃРµ С…РѕСЂРѕС€Рѕ. Р’С‹ РјРѕР¶РµС‚Рµ РёРґС‚Рё.
+	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_01");//РћС‚Р»РёС‡РЅРѕ! РЇ Р·РЅР°СЋ РЅР° Р±РѕР»РѕС‚Рµ РѕРґРЅСѓ РїРµС‰РµСЂСѓ, РіРґРµ РјС‹ РјРѕР¶РµРј СѓРєСЂС‹С‚СЊСЃСЏ. РќРѕ С‡С‚Рѕ РЅР°Рј РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_02");//РРґРёС‚Рµ РЅР° СЋРіРѕ-Р·Р°РїР°Рґ. РџРѕРєРёРЅСѓРІ Р±РѕР»РѕС‚Рѕ, РІС‹ РЅР°Р№РґРµС‚Рµ СЂР°Р·РІР°Р»РёРЅС‹ РґСЂРµРІРЅРµРіРѕ С…СЂР°РјР°. РўР°Рј СѓСЃС‚СЂРѕРёР»Рё Р»Р°РіРµСЂСЊ РјР°РіРё РІРѕРґС‹.
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_03");//РћРЅРё СЂР°СЃСЃРєР°Р¶СѓС‚ РІР°Рј, РєР°Рє РІС‹Р±СЂР°С‚СЊСЃСЏ РёР· СЌС‚РѕР№ РґРѕР»РёРЅС‹.
+	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_04");//РЎРїР°СЃРёР±Рѕ, СЃРїР°СЃРёР±Рѕ Р±РѕР»СЊС€РѕРµ. РњС‹ РІСЃРµ РїРµСЂРµРґ С‚РѕР±РѕР№ РІ РґРѕР»РіСѓ... 
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_05");//РќРµ Р·Р° С‡С‚Рѕ.
 	
 	Sklaven_Flucht = TRUE; 
 	B_GivePlayerXP (XP_Addon_Flucht);
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Patrick_Killer   (C_INFO)
 	condition   = DIA_Addon_Patrick_Killer_Condition;
 	information = DIA_Addon_Patrick_Killer_Info;
 	permanent   = FALSE;
-	description = "Я разобрался с охранником. Вы можете идти.";
+	description = "РЇ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ РѕС…СЂР°РЅРЅРёРєРѕРј. Р’С‹ РјРѕР¶РµС‚Рµ РёРґС‚Рё.";
 };
 FUNC INT DIA_Addon_Patrick_Killer_Condition()
 {	
@@ -164,8 +164,8 @@ FUNC INT DIA_Addon_Patrick_Killer_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Killer_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Killer_15_00");//Я разобрался с охранником. Вы можете идти.
-	AI_Output (self, other, "DIA_Addon_Patrick_Killer_07_01");//А что с нами будет, когда мы покинем шахту? Оставшиеся охранники нас перебьют. Нет, это слишком рискованно.
+	AI_Output (other, self, "DIA_Addon_Patrick_Killer_15_00");//РЇ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ РѕС…СЂР°РЅРЅРёРєРѕРј. Р’С‹ РјРѕР¶РµС‚Рµ РёРґС‚Рё.
+	AI_Output (self, other, "DIA_Addon_Patrick_Killer_07_01");//Рђ С‡С‚Рѕ СЃ РЅР°РјРё Р±СѓРґРµС‚, РєРѕРіРґР° РјС‹ РїРѕРєРёРЅРµРј С€Р°С…С‚Сѓ? РћСЃС‚Р°РІС€РёРµСЃСЏ РѕС…СЂР°РЅРЅРёРєРё РЅР°СЃ РїРµСЂРµР±СЊСЋС‚. РќРµС‚, СЌС‚Рѕ СЃР»РёС€РєРѕРј СЂРёСЃРєРѕРІР°РЅРЅРѕ.
 };
 //---------------------------------------------------------------------
 //	Hoehle
@@ -177,7 +177,7 @@ INSTANCE DIA_Addon_Patrick_Hoehle   (C_INFO)
 	condition   = DIA_Addon_Patrick_Hoehle_Condition;
 	information = DIA_Addon_Patrick_Hoehle_Info;
 	permanent   = TRUE;
-	description = "Вы не хотите уйти отсюда?";
+	description = "Р’С‹ РЅРµ С…РѕС‚РёС‚Рµ СѓР№С‚Рё РѕС‚СЃСЋРґР°?";
 };
 FUNC INT DIA_Addon_Patrick_Hoehle_Condition()
 {	
@@ -188,8 +188,8 @@ FUNC INT DIA_Addon_Patrick_Hoehle_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Hoehle_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hoehle_15_00");//Вы не хотите уйти отсюда?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hoehle_07_01");//Конечно, хотим. Но мы ждем подходящего момента.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hoehle_15_00");//Р’С‹ РЅРµ С…РѕС‚РёС‚Рµ СѓР№С‚Рё РѕС‚СЃСЋРґР°?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hoehle_07_01");//РљРѕРЅРµС‡РЅРѕ, С…РѕС‚РёРј. РќРѕ РјС‹ Р¶РґРµРј РїРѕРґС…РѕРґСЏС‰РµРіРѕ РјРѕРјРµРЅС‚Р°.
 };
 
 

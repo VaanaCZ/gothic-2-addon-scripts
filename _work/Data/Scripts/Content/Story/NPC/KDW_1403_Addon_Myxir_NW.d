@@ -1,7 +1,7 @@
 INSTANCE KDW_1403_Addon_Myxir_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Миксир";
+	name 		= "РњРёРєСЃРёСЂ";
 	guild 		= GIL_KDW; 
 	id 			= 1403;
 	voice 		= 12;

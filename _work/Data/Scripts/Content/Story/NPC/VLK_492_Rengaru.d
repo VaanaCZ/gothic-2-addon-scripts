@@ -2,7 +2,7 @@
 instance VLK_492_Rengaru (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ренгару"; 
+	name 		= "Р РµРЅРіР°СЂСѓ"; 
 	guild 		= GIL_VLK;
 	id 			= 492;
 	voice 		= 7;

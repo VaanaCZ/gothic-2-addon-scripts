@@ -49,45 +49,45 @@ func int DIA_Lobart_STOLENCLOTHS_Condition ()
 
 func void DIA_Lobart_STOLENCLOTHS_Info ()
 {
-	// ------ SC hat Rьstung an ------
+	// ------ SC hat RСЊstung an ------
 	
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
 	if (Hlp_IsItem (heroArmor, ItAr_BAU_L) == TRUE)
 	{
-		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_00"); //Я не могу поверить своим глазам! Этот ублюдок расхаживает в МОЕЙ одежде!
+		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_00"); //РЇ РЅРµ РјРѕРіСѓ РїРѕРІРµСЂРёС‚СЊ СЃРІРѕРёРј РіР»Р°Р·Р°Рј! Р­С‚РѕС‚ СѓР±Р»СЋРґРѕРє СЂР°СЃС…Р°Р¶РёРІР°РµС‚ РІ РњРћР•Р™ РѕРґРµР¶РґРµ!
 	}	
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_01"); //Эй, ты!
-		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_02"); //Когда ты тут был последний раз, из моего сундука пропали вещи!
+		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_01"); //Р­Р№, С‚С‹!
+		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_02"); //РљРѕРіРґР° С‚С‹ С‚СѓС‚ Р±С‹Р» РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·, РёР· РјРѕРµРіРѕ СЃСѓРЅРґСѓРєР° РїСЂРѕРїР°Р»Рё РІРµС‰Рё!
 	};
 	
 	// ------ SC hat nach Arbeit gefragt -------
 	if (Npc_KnowsInfo (other, DIA_Lobart_WorkNOW))
 	{
-		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_03"); //Ты мог бы поработать здесь вместо того, чтобы шарить в моем доме, ленивый бездельник!
+		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_03"); //РўС‹ РјРѕРі Р±С‹ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ РІРјРµСЃС‚Рѕ С‚РѕРіРѕ, С‡С‚РѕР±С‹ С€Р°СЂРёС‚СЊ РІ РјРѕРµРј РґРѕРјРµ, Р»РµРЅРёРІС‹Р№ Р±РµР·РґРµР»СЊРЅРёРє!
 	};
 	
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_04"); //Отдай немедленно мою одежду!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_04"); //РћС‚РґР°Р№ РЅРµРјРµРґР»РµРЅРЅРѕ РјРѕСЋ РѕРґРµР¶РґСѓ!
 	
 	Info_ClearChoices	(DIA_Lobart_STOLENCLOTHS);
-	Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Забудь об этом!", 				DIA_Lobart_STOLENCLOTHS_ForgetIt );
+	Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!", 				DIA_Lobart_STOLENCLOTHS_ForgetIt );
 	if (Npc_HasItems (other, ItAr_BAU_L) > 0)
 	{
-		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Ладно, можешь забрать ее назад.", 	DIA_Lobart_STOLENCLOTHS_HereYouGo );
+		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Р›Р°РґРЅРѕ, РјРѕР¶РµС€СЊ Р·Р°Р±СЂР°С‚СЊ РµРµ РЅР°Р·Р°Рґ.", 	DIA_Lobart_STOLENCLOTHS_HereYouGo );
 	}
 	else
 	{
-		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "У меня ее нет.", 	DIA_Lobart_STOLENCLOTHS_DontHaveIt );
+		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "РЈ РјРµРЅСЏ РµРµ РЅРµС‚.", 	DIA_Lobart_STOLENCLOTHS_DontHaveIt );
 	};
 };
 	
 func void DIA_Lobart_STOLENCLOTHS_HereYouGo ()
 {
-	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_HereYouGo_15_00"); //Ладно, можешь забрать ее назад.
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_01"); //Если она тебе нужна, ты можешь ЗАПЛАТИТЬ за нее!
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_02"); //(отрывисто) А теперь иди работай!
+	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_HereYouGo_15_00"); //Р›Р°РґРЅРѕ, РјРѕР¶РµС€СЊ Р·Р°Р±СЂР°С‚СЊ РµРµ РЅР°Р·Р°Рґ.
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_01"); //Р•СЃР»Рё РѕРЅР° С‚РµР±Рµ РЅСѓР¶РЅР°, С‚С‹ РјРѕР¶РµС€СЊ Р—РђРџР›РђРўРРўР¬ Р·Р° РЅРµРµ!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_02"); //(РѕС‚СЂС‹РІРёСЃС‚Рѕ) Рђ С‚РµРїРµСЂСЊ РёРґРё СЂР°Р±РѕС‚Р°Р№!
 	
 	B_GiveInvItems (other, self, ItAr_BAU_L, 1);
 	
@@ -96,8 +96,8 @@ func void DIA_Lobart_STOLENCLOTHS_HereYouGo ()
 
 func void DIA_Lobart_STOLENCLOTHS_DontHaveIt ()
 {
-	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_15_00"); //У меня ее нет.
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_05_01"); //Ты уже продал ее, да? (зло) Я проучу тебя, парень!
+	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_15_00"); //РЈ РјРµРЅСЏ РµРµ РЅРµС‚.
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_05_01"); //РўС‹ СѓР¶Рµ РїСЂРѕРґР°Р» РµРµ, РґР°? (Р·Р»Рѕ) РЇ РїСЂРѕСѓС‡Сѓ С‚РµР±СЏ, РїР°СЂРµРЅСЊ!
 	
 	Lobart_Kleidung_gestohlen = TRUE;
 	AI_StopProcessInfos (self);	
@@ -106,8 +106,8 @@ func void DIA_Lobart_STOLENCLOTHS_DontHaveIt ()
 	
 func void DIA_Lobart_STOLENCLOTHS_ForgetIt ()
 {
-	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_ForgetIt_15_00"); //Забудь об этом!
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_ForgetIt_05_01"); //(зло) Я проучу тебя, парень!
+	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_ForgetIt_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_ForgetIt_05_01"); //(Р·Р»Рѕ) РЇ РїСЂРѕСѓС‡Сѓ С‚РµР±СЏ, РїР°СЂРµРЅСЊ!
 	
 	Lobart_Kleidung_gestohlen = TRUE;
 	AI_StopProcessInfos (self);	
@@ -142,26 +142,26 @@ func void DIA_Lobart_Hallo_Info ()
 {
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_Hallo_05_00"); //Что ты тут ошиваешься на моей ферме?
-		AI_Output (self, other, "DIA_Lobart_Hallo_05_01"); //Ты на чьей стороне? На стороне восставших фермеров или на стороне короля?
+		AI_Output (self, other, "DIA_Lobart_Hallo_05_00"); //Р§С‚Рѕ С‚С‹ С‚СѓС‚ РѕС€РёРІР°РµС€СЊСЃСЏ РЅР° РјРѕРµР№ С„РµСЂРјРµ?
+		AI_Output (self, other, "DIA_Lobart_Hallo_05_01"); //РўС‹ РЅР° С‡СЊРµР№ СЃС‚РѕСЂРѕРЅРµ? РќР° СЃС‚РѕСЂРѕРЅРµ РІРѕСЃСЃС‚Р°РІС€РёС… С„РµСЂРјРµСЂРѕРІ РёР»Рё РЅР° СЃС‚РѕСЂРѕРЅРµ РєРѕСЂРѕР»СЏ?
 	
 		Info_ClearChoices	(DIA_Lobart_Hallo);
-		Info_AddChoice		(DIA_Lobart_Hallo, "Я не понимаю...", DIA_Lobart_Hallo_What );
-		Info_AddChoice		(DIA_Lobart_Hallo, "Я за короля!", 		DIA_Lobart_Hallo_ForTheKing );
-		Info_AddChoice		(DIA_Lobart_Hallo, "Я с крестьянами!",		DIA_Lobart_Hallo_ForThePeasants );
+		Info_AddChoice		(DIA_Lobart_Hallo, "РЇ РЅРµ РїРѕРЅРёРјР°СЋ...", DIA_Lobart_Hallo_What );
+		Info_AddChoice		(DIA_Lobart_Hallo, "РЇ Р·Р° РєРѕСЂРѕР»СЏ!", 		DIA_Lobart_Hallo_ForTheKing );
+		Info_AddChoice		(DIA_Lobart_Hallo, "РЇ СЃ РєСЂРµСЃС‚СЊСЏРЅР°РјРё!",		DIA_Lobart_Hallo_ForThePeasants );
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_Hallo_05_02"); //Чем могу быть полезен?
+		AI_Output (self, other, "DIA_Lobart_Hallo_05_02"); //Р§РµРј РјРѕРіСѓ Р±С‹С‚СЊ РїРѕР»РµР·РµРЅ?
 	};
 };
 
 func void DIA_Lobart_Hallo_ForThePeasants()
 {
-	AI_Output (other, self, "DIA_Lobart_Hallo_ForThePeasants_15_00"); //Я с крестьянами!
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_01"); //Ха! Этот чертов смутьян Онар сведет нас всех в могилу!
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_02"); //Как ты думаешь, как долго еще здесь будут паладины?
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_03"); //После того, что сделал Онар, весь город гудит, как улей.
+	AI_Output (other, self, "DIA_Lobart_Hallo_ForThePeasants_15_00"); //РЇ СЃ РєСЂРµСЃС‚СЊСЏРЅР°РјРё!
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_01"); //РҐР°! Р­С‚РѕС‚ С‡РµСЂС‚РѕРІ СЃРјСѓС‚СЊСЏРЅ РћРЅР°СЂ СЃРІРµРґРµС‚ РЅР°СЃ РІСЃРµС… РІ РјРѕРіРёР»Сѓ!
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_02"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, РєР°Рє РґРѕР»РіРѕ РµС‰Рµ Р·РґРµСЃСЊ Р±СѓРґСѓС‚ РїР°Р»Р°РґРёРЅС‹?
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_03"); //РџРѕСЃР»Рµ С‚РѕРіРѕ, С‡С‚Рѕ СЃРґРµР»Р°Р» РћРЅР°СЂ, РІРµСЃСЊ РіРѕСЂРѕРґ РіСѓРґРёС‚, РєР°Рє СѓР»РµР№.
 
 	Lobart_AgainstKing = TRUE;
 	Info_ClearChoices	(DIA_Lobart_Hallo);
@@ -169,11 +169,11 @@ func void DIA_Lobart_Hallo_ForThePeasants()
 
 func void DIA_Lobart_Hallo_ForTheKing()
 {
-	AI_Output (other, self, "DIA_Lobart_Hallo_ForTheKing_15_00"); //Я за короля!
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_01"); //(презрительно) 'За короля!' Также говорили и городские стражники, когда забрали половину моих овец.
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_02"); //Но где же, спрашивается, эти ублюдки, когда нужно защищать нас от бандитов? А где они попрячутся, когда сюда вторгнутся орки?
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_03"); //Я скажу тебе: в городе, за толстыми городскими стенами.
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_04"); //Так что оставь меня в покое, вместе со своим королем.
+	AI_Output (other, self, "DIA_Lobart_Hallo_ForTheKing_15_00"); //РЇ Р·Р° РєРѕСЂРѕР»СЏ!
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_01"); //(РїСЂРµР·СЂРёС‚РµР»СЊРЅРѕ) 'Р—Р° РєРѕСЂРѕР»СЏ!' РўР°РєР¶Рµ РіРѕРІРѕСЂРёР»Рё Рё РіРѕСЂРѕРґСЃРєРёРµ СЃС‚СЂР°Р¶РЅРёРєРё, РєРѕРіРґР° Р·Р°Р±СЂР°Р»Рё РїРѕР»РѕРІРёРЅСѓ РјРѕРёС… РѕРІРµС†.
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_02"); //РќРѕ РіРґРµ Р¶Рµ, СЃРїСЂР°С€РёРІР°РµС‚СЃСЏ, СЌС‚Рё СѓР±Р»СЋРґРєРё, РєРѕРіРґР° РЅСѓР¶РЅРѕ Р·Р°С‰РёС‰Р°С‚СЊ РЅР°СЃ РѕС‚ Р±Р°РЅРґРёС‚РѕРІ? Рђ РіРґРµ РѕРЅРё РїРѕРїСЂСЏС‡СѓС‚СЃСЏ, РєРѕРіРґР° СЃСЋРґР° РІС‚РѕСЂРіРЅСѓС‚СЃСЏ РѕСЂРєРё?
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_03"); //РЇ СЃРєР°Р¶Сѓ С‚РµР±Рµ: РІ РіРѕСЂРѕРґРµ, Р·Р° С‚РѕР»СЃС‚С‹РјРё РіРѕСЂРѕРґСЃРєРёРјРё СЃС‚РµРЅР°РјРё.
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_04"); //РўР°Рє С‡С‚Рѕ РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РІРјРµСЃС‚Рµ СЃРѕ СЃРІРѕРёРј РєРѕСЂРѕР»РµРј.
 	
 	Lobart_AgainstKing = FALSE;
 	Info_ClearChoices	(DIA_Lobart_Hallo);
@@ -181,8 +181,8 @@ func void DIA_Lobart_Hallo_ForTheKing()
 
 func void DIA_Lobart_Hallo_What()
 {
-	AI_Output (other, self, "DIA_Lobart_Hallo_What_15_00"); //Я не понимаю...
-	AI_Output (self, other, "DIA_Lobart_Hallo_What_05_01"); //Что?! Не пытайся меня провести, мальчик! Я хочу знать, на чьей ты стороне! Так на чьей же?!
+	AI_Output (other, self, "DIA_Lobart_Hallo_What_15_00"); //РЇ РЅРµ РїРѕРЅРёРјР°СЋ...
+	AI_Output (self, other, "DIA_Lobart_Hallo_What_05_01"); //Р§С‚Рѕ?! РќРµ РїС‹С‚Р°Р№СЃСЏ РјРµРЅСЏ РїСЂРѕРІРµСЃС‚Рё, РјР°Р»СЊС‡РёРє! РЇ С…РѕС‡Сѓ Р·РЅР°С‚СЊ, РЅР° С‡СЊРµР№ С‚С‹ СЃС‚РѕСЂРѕРЅРµ! РўР°Рє РЅР° С‡СЊРµР№ Р¶Рµ?!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -195,7 +195,7 @@ instance DIA_Lobart_KLEIDUNG		(C_INFO)
 	condition	= DIA_Lobart_KLEIDUNG_Condition;
 	information	= DIA_Lobart_KLEIDUNG_Info;
 	permanent 	= FALSE;
-	description	= "Мне нужна приличная одежда!";
+	description	= "РњРЅРµ РЅСѓР¶РЅР° РїСЂРёР»РёС‡РЅР°СЏ РѕРґРµР¶РґР°!";
 };
 
 func int DIA_Lobart_KLEIDUNG_Condition ()
@@ -208,19 +208,19 @@ func int DIA_Lobart_KLEIDUNG_Condition ()
 };
 func void DIA_Lobart_KLEIDUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_KLEIDUNG_15_00"); //Мне нужна приличная одежда!
-	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_01"); //Я могу дать тебе приличную крестьянскую рабочую одежду.
-	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_02"); //Ты можешь заплатить за нее?
+	AI_Output (other, self, "DIA_Lobart_KLEIDUNG_15_00"); //РњРЅРµ РЅСѓР¶РЅР° РїСЂРёР»РёС‡РЅР°СЏ РѕРґРµР¶РґР°!
+	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_01"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РїСЂРёР»РёС‡РЅСѓСЋ РєСЂРµСЃС‚СЊСЏРЅСЃРєСѓСЋ СЂР°Р±РѕС‡СѓСЋ РѕРґРµР¶РґСѓ.
+	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_02"); //РўС‹ РјРѕР¶РµС€СЊ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° РЅРµРµ?
 	
 			Log_CreateTopic (TOPIC_Kleidung,LOG_MISSION);  
 			Log_SetTopicStatus  (TOPIC_Kleidung,LOG_RUNNING);  
-			B_LogEntry (TOPIC_Kleidung,"Фермер Лобарт готов продать мне рабочую одежду.");
+			B_LogEntry (TOPIC_Kleidung,"Р¤РµСЂРјРµСЂ Р›РѕР±Р°СЂС‚ РіРѕС‚РѕРІ РїСЂРѕРґР°С‚СЊ РјРЅРµ СЂР°Р±РѕС‡СѓСЋ РѕРґРµР¶РґСѓ.");
 			  
 		
 	if (! Npc_KnowsInfo(other, 	DIA_Lobart_WorkNOW))
 	{
-		AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_03"); //Ты мог бы отработать часть ее стоимости... если ты один из тех, кто ИЩЕТ работу.
-		B_LogEntry (TOPIC_Kleidung,"Лобарт может снизить цену за одежду, если я поработаю на его ферме. Чем больше я сделаю, тем дешевле обойдется мне одежда.");
+		AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_03"); //РўС‹ РјРѕРі Р±С‹ РѕС‚СЂР°Р±РѕС‚Р°С‚СЊ С‡Р°СЃС‚СЊ РµРµ СЃС‚РѕРёРјРѕСЃС‚Рё... РµСЃР»Рё С‚С‹ РѕРґРёРЅ РёР· С‚РµС…, РєС‚Рѕ РР©Р•Рў СЂР°Р±РѕС‚Сѓ.
+		B_LogEntry (TOPIC_Kleidung,"Р›РѕР±Р°СЂС‚ РјРѕР¶РµС‚ СЃРЅРёР·РёС‚СЊ С†РµРЅСѓ Р·Р° РѕРґРµР¶РґСѓ, РµСЃР»Рё СЏ РїРѕСЂР°Р±РѕС‚Р°СЋ РЅР° РµРіРѕ С„РµСЂРјРµ. Р§РµРј Р±РѕР»СЊС€Рµ СЏ СЃРґРµР»Р°СЋ, С‚РµРј РґРµС€РµРІР»Рµ РѕР±РѕР№РґРµС‚СЃСЏ РјРЅРµ РѕРґРµР¶РґР°.");
 
 	};
 };
@@ -236,7 +236,7 @@ instance DIA_Lobart_BuyClothes (C_INFO)
 	condition	= DIA_Lobart_BuyClothes_Condition;
 	information	= DIA_Lobart_BuyClothes_Info;
 	permanent 	= TRUE;
-	description	= "Сколько стоит эта рабочая одежда?";
+	description	= "РЎРєРѕР»СЊРєРѕ СЃС‚РѕРёС‚ СЌС‚Р° СЂР°Р±РѕС‡Р°СЏ РѕРґРµР¶РґР°?";
 };
 
 func int DIA_Lobart_BuyClothes_Condition ()
@@ -253,8 +253,8 @@ func void DIA_Lobart_BuyClothes_Info ()
 {
 	Wert_LobartsRuestung = 80; //initialisieren
 	
-	AI_Output (other, self, "DIA_Lobart_BuyClothes_15_00"); //Сколько стоит эта рабочая одежда?
-	AI_Output (self, other, "DIA_Lobart_BuyClothes_05_01"); //Так. Посморим...
+	AI_Output (other, self, "DIA_Lobart_BuyClothes_15_00"); //РЎРєРѕР»СЊРєРѕ СЃС‚РѕРёС‚ СЌС‚Р° СЂР°Р±РѕС‡Р°СЏ РѕРґРµР¶РґР°?
+	AI_Output (self, other, "DIA_Lobart_BuyClothes_05_01"); //РўР°Рє. РџРѕСЃРјРѕСЂРёРј...
 	
 	if (Lobart_AgainstKing == TRUE)
 	{
@@ -264,60 +264,60 @@ func void DIA_Lobart_BuyClothes_Info ()
 	
 	if (MIS_Lobart_Rueben == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_02"); //Ты работал для меня на поле.
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_02"); //РўС‹ СЂР°Р±РѕС‚Р°Р» РґР»СЏ РјРµРЅСЏ РЅР° РїРѕР»Рµ.
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 	
 	if (MIS_Hilda_PfanneKaufen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_03"); //Ты помог моей жене.
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_03"); //РўС‹ РїРѕРјРѕРі РјРѕРµР№ Р¶РµРЅРµ.
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 	
 	if (MIS_Vino_Wein == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_04"); //Вино говорит, что ты очень помог ему. А это кое-что да значит - обычно он не очень-то ладит с поденными работниками.
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_04"); //Р’РёРЅРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РѕС‡РµРЅСЊ РїРѕРјРѕРі РµРјСѓ. Рђ СЌС‚Рѕ РєРѕРµ-С‡С‚Рѕ РґР° Р·РЅР°С‡РёС‚ - РѕР±С‹С‡РЅРѕ РѕРЅ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ Р»Р°РґРёС‚ СЃ РїРѕРґРµРЅРЅС‹РјРё СЂР°Р±РѕС‚РЅРёРєР°РјРё.
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 	
 	if (MIS_Maleth_Bandits == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_05"); //Малет говорит, что ты прогнал бандитов. Эти ублюдки доставляли нам много проблем. Спасибо, что избавил нас от них!
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_05"); //РњР°Р»РµС‚ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РїСЂРѕРіРЅР°Р» Р±Р°РЅРґРёС‚РѕРІ. Р­С‚Рё СѓР±Р»СЋРґРєРё РґРѕСЃС‚Р°РІР»СЏР»Рё РЅР°Рј РјРЅРѕРіРѕ РїСЂРѕР±Р»РµРј. РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РёР·Р±Р°РІРёР» РЅР°СЃ РѕС‚ РЅРёС…!
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 
 	// ------------------------------
-	// ------ Wert der Rьstung ------
+	// ------ Wert der RСЊstung ------
 	// ------------------------------
 		B_Say_Gold (self, other, Wert_LobartsRuestung);
 		
 		if (Wert_LobartsRuestung == 30) 
 		{
-			AI_Output (self, other, "DIA_Lobart_GOLD_05_06"); //И дешевле я ее не отдам.
-			B_LogEntry (TOPIC_Kleidung,"Но он не продаст е мне меньше, чем за 30 золотых монет.");
+			AI_Output (self, other, "DIA_Lobart_GOLD_05_06"); //Р РґРµС€РµРІР»Рµ СЏ РµРµ РЅРµ РѕС‚РґР°Рј.
+			B_LogEntry (TOPIC_Kleidung,"РќРѕ РѕРЅ РЅРµ РїСЂРѕРґР°СЃС‚ Рµ РјРЅРµ РјРµРЅСЊС€Рµ, С‡РµРј Р·Р° 30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.");
 		};
 
 	Info_ClearChoices	(DIA_Lobart_BuyClothes);
-	Info_AddChoice		(DIA_Lobart_BuyClothes, "Это все еще слишком дорого для меня.", DIA_Lobart_BuyClothes_NotYet );
-	Info_AddChoice		(DIA_Lobart_BuyClothes, "Давай тогда сюда эту рабочую одежду (Защита: оружие - 15, стрелы - 15)", DIA_Lobart_BuyClothes_BUY );
+	Info_AddChoice		(DIA_Lobart_BuyClothes, "Р­С‚Рѕ РІСЃРµ РµС‰Рµ СЃР»РёС€РєРѕРј РґРѕСЂРѕРіРѕ РґР»СЏ РјРµРЅСЏ.", DIA_Lobart_BuyClothes_NotYet );
+	Info_AddChoice		(DIA_Lobart_BuyClothes, "Р”Р°РІР°Р№ С‚РѕРіРґР° СЃСЋРґР° СЌС‚Сѓ СЂР°Р±РѕС‡СѓСЋ РѕРґРµР¶РґСѓ (Р—Р°С‰РёС‚Р°: РѕСЂСѓР¶РёРµ - 15, СЃС‚СЂРµР»С‹ - 15)", DIA_Lobart_BuyClothes_BUY );
 };
 
 func void DIA_Lobart_BuyClothes_BUY()
 {
-	AI_Output (other, self, "DIA_Lobart_BuyClothes_BUY_15_00"); //Давай тогда сюда эту рабочую одежду.
+	AI_Output (other, self, "DIA_Lobart_BuyClothes_BUY_15_00"); //Р”Р°РІР°Р№ С‚РѕРіРґР° СЃСЋРґР° СЌС‚Сѓ СЂР°Р±РѕС‡СѓСЋ РѕРґРµР¶РґСѓ.
 	
 	if (B_GiveInvItems (other, self, ItMi_gold, Wert_LobartsRuestung))
 	{
 		if (Npc_HasItems(self,ItAr_BAU_L) > 0)
 		{
-			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_01"); //Хорошо, мой мальчик. Превыше всего я ценю честность. Вот, держи!
+			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_01"); //РҐРѕСЂРѕС€Рѕ, РјРѕР№ РјР°Р»СЊС‡РёРє. РџСЂРµРІС‹С€Рµ РІСЃРµРіРѕ СЏ С†РµРЅСЋ С‡РµСЃС‚РЅРѕСЃС‚СЊ. Р’РѕС‚, РґРµСЂР¶Рё!
 			
 			B_GiveInvItems (self, other, ItAr_BAU_L, 1);
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_02"); //В моем доме есть сундук, где ты найдешь постиранные вещи.
-			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_03"); //Но даже не думай взять что-нибудь там без разрешения!
+			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_02"); //Р’ РјРѕРµРј РґРѕРјРµ РµСЃС‚СЊ СЃСѓРЅРґСѓРє, РіРґРµ С‚С‹ РЅР°Р№РґРµС€СЊ РїРѕСЃС‚РёСЂР°РЅРЅС‹Рµ РІРµС‰Рё.
+			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_03"); //РќРѕ РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№ РІР·СЏС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ С‚Р°Рј Р±РµР· СЂР°Р·СЂРµС€РµРЅРёСЏ!
 		};
 		
 		Lobart_Kleidung_Verkauft = TRUE;
@@ -327,7 +327,7 @@ func void DIA_Lobart_BuyClothes_BUY()
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_04"); //У тебя недостаточно золота!
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_04"); //РЈ С‚РµР±СЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°!
 	};
 	
 	Info_ClearChoices	(DIA_Lobart_BuyClothes);
@@ -335,8 +335,8 @@ func void DIA_Lobart_BuyClothes_BUY()
 
 func void DIA_Lobart_BuyClothes_NotYet()
 {
-	AI_Output (other, self, "DIA_Lobart_BuyClothes_NotYet_15_00"); //Это все еще слишком дорого для меня.
-	AI_Output (self, other, "DIA_Lobart_BuyClothes_NotYet_05_01"); //Как знаешь...
+	AI_Output (other, self, "DIA_Lobart_BuyClothes_NotYet_15_00"); //Р­С‚Рѕ РІСЃРµ РµС‰Рµ СЃР»РёС€РєРѕРј РґРѕСЂРѕРіРѕ РґР»СЏ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Lobart_BuyClothes_NotYet_05_01"); //РљР°Рє Р·РЅР°РµС€СЊ...
 	
 	Info_ClearChoices	(DIA_Lobart_BuyClothes);
 };
@@ -351,7 +351,7 @@ instance DIA_Lobart_AufstandInfo (C_INFO)
 	condition	= DIA_Lobart_AufstandInfo_Condition;
 	information	= DIA_Lobart_AufstandInfo_Info;
 	permanent 	= FALSE;
-	description	= "Как идут здесь дела?";
+	description	= "РљР°Рє РёРґСѓС‚ Р·РґРµСЃСЊ РґРµР»Р°?";
 };
 
 func int DIA_Lobart_AufstandInfo_Condition ()
@@ -365,21 +365,21 @@ func int DIA_Lobart_AufstandInfo_Condition ()
 
 func void DIA_Lobart_AufstandInfo_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_AufstandInfo_15_00"); //Как идут здесь дела?
-	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_01"); //Ты не знаешь как здесь дела? Мальчик, ты вообще откуда свалился? Мы на пороге гражданской войны!
+	AI_Output (other, self, "DIA_Lobart_AufstandInfo_15_00"); //РљР°Рє РёРґСѓС‚ Р·РґРµСЃСЊ РґРµР»Р°?
+	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_01"); //РўС‹ РЅРµ Р·РЅР°РµС€СЊ РєР°Рє Р·РґРµСЃСЊ РґРµР»Р°? РњР°Р»СЊС‡РёРє, С‚С‹ РІРѕРѕР±С‰Рµ РѕС‚РєСѓРґР° СЃРІР°Р»РёР»СЃСЏ? РњС‹ РЅР° РїРѕСЂРѕРіРµ РіСЂР°Р¶РґР°РЅСЃРєРѕР№ РІРѕР№РЅС‹!
 
 	if 	(hero.guild == GIL_NONE)
 	 {
-		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_02"); //До последнего времени фермеры считали долю, отдаваемую городу, вполне справедливой.
-		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_03"); //Но с тех пор, как в Хоринис пришли паладины, городская стража наведывается к нам все чаще и чаще - они так скоро заберут все, что у нас есть.
-		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_04"); //Если так будет продолжаться и дальше, у нас ничего не останется для самих себя.
+		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_02"); //Р”Рѕ РїРѕСЃР»РµРґРЅРµРіРѕ РІСЂРµРјРµРЅРё С„РµСЂРјРµСЂС‹ СЃС‡РёС‚Р°Р»Рё РґРѕР»СЋ, РѕС‚РґР°РІР°РµРјСѓСЋ РіРѕСЂРѕРґСѓ, РІРїРѕР»РЅРµ СЃРїСЂР°РІРµРґР»РёРІРѕР№.
+		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_03"); //РќРѕ СЃ С‚РµС… РїРѕСЂ, РєР°Рє РІ РҐРѕСЂРёРЅРёСЃ РїСЂРёС€Р»Рё РїР°Р»Р°РґРёРЅС‹, РіРѕСЂРѕРґСЃРєР°СЏ СЃС‚СЂР°Р¶Р° РЅР°РІРµРґС‹РІР°РµС‚СЃСЏ Рє РЅР°Рј РІСЃРµ С‡Р°С‰Рµ Рё С‡Р°С‰Рµ - РѕРЅРё С‚Р°Рє СЃРєРѕСЂРѕ Р·Р°Р±РµСЂСѓС‚ РІСЃРµ, С‡С‚Рѕ Сѓ РЅР°СЃ РµСЃС‚СЊ.
+		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_04"); //Р•СЃР»Рё С‚Р°Рє Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ Рё РґР°Р»СЊС€Рµ, Сѓ РЅР°СЃ РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°РЅРµС‚СЃСЏ РґР»СЏ СЃР°РјРёС… СЃРµР±СЏ.
 	 };
 
-	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_05"); //Некоторые фермеры стали бунтовать! Онар был первым из них!
+	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_05"); //РќРµРєРѕС‚РѕСЂС‹Рµ С„РµСЂРјРµСЂС‹ СЃС‚Р°Р»Рё Р±СѓРЅС‚РѕРІР°С‚СЊ! РћРЅР°СЂ Р±С‹Р» РїРµСЂРІС‹Рј РёР· РЅРёС…!
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Mehr ьber Onar
+//	Mehr СЊber Onar
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_OnarStory (C_INFO)
 {
@@ -388,7 +388,7 @@ instance DIA_Lobart_OnarStory (C_INFO)
 	condition	= DIA_Lobart_OnarStory_Condition;
 	information	= DIA_Lobart_OnarStory_Info;
 	permanent 	= FALSE;
-	description	= "Расскажи мне подробнее об этом Онаре...";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ РѕР± СЌС‚РѕРј РћРЅР°СЂРµ...";
 };
 
 func int DIA_Lobart_OnarStory_Condition ()
@@ -402,23 +402,23 @@ func int DIA_Lobart_OnarStory_Condition ()
 
 func void DIA_Lobart_OnarStory_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_OnarStory_15_00"); //Расскажи мне подробнее об этом Онаре...
+	AI_Output (other, self, "DIA_Lobart_OnarStory_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ РѕР± СЌС‚РѕРј РћРЅР°СЂРµ...
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_01"); //Ты ведь наемник, разве нет? Что такого я могу рассказать тебе о твоем боссе, что ты не знаешь?
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_01"); //РўС‹ РІРµРґСЊ РЅР°РµРјРЅРёРє, СЂР°Р·РІРµ РЅРµС‚? Р§С‚Рѕ С‚Р°РєРѕРіРѕ СЏ РјРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ Рѕ С‚РІРѕРµРј Р±РѕСЃСЃРµ, С‡С‚Рѕ С‚С‹ РЅРµ Р·РЅР°РµС€СЊ?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_02"); //Онар - самый крупный фермер в этой местности. Он порвал отношения с городом.
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_03"); //Говорят, он нанял наемников, чтобы те не пускали на его земли городскую стражу!
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_04"); //Не могу винить его за это.
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_05"); //Как бы то ни было, больше ни один королевский солдат не осмеливается ступить на его землю.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_02"); //РћРЅР°СЂ - СЃР°РјС‹Р№ РєСЂСѓРїРЅС‹Р№ С„РµСЂРјРµСЂ РІ СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё. РћРЅ РїРѕСЂРІР°Р» РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РіРѕСЂРѕРґРѕРј.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_03"); //Р“РѕРІРѕСЂСЏС‚, РѕРЅ РЅР°РЅСЏР» РЅР°РµРјРЅРёРєРѕРІ, С‡С‚РѕР±С‹ С‚Рµ РЅРµ РїСѓСЃРєР°Р»Рё РЅР° РµРіРѕ Р·РµРјР»Рё РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ!
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_04"); //РќРµ РјРѕРіСѓ РІРёРЅРёС‚СЊ РµРіРѕ Р·Р° СЌС‚Рѕ.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_05"); //РљР°Рє Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ, Р±РѕР»СЊС€Рµ РЅРё РѕРґРёРЅ РєРѕСЂРѕР»РµРІСЃРєРёР№ СЃРѕР»РґР°С‚ РЅРµ РѕСЃРјРµР»РёРІР°РµС‚СЃСЏ СЃС‚СѓРїРёС‚СЊ РЅР° РµРіРѕ Р·РµРјР»СЋ.
 		};
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Mehr ьber Sцldner
+//	Mehr СЊber SС†ldner
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_SldInfo (C_INFO)
 {
@@ -427,7 +427,7 @@ instance DIA_Lobart_SldInfo (C_INFO)
 	condition	= DIA_Lobart_SldInfo_Condition;
 	information	= DIA_Lobart_SldInfo_Info;
 	permanent 	= FALSE;
-	description	= "А кто эти наемники, которых нанял Онар?";
+	description	= "Рђ РєС‚Рѕ СЌС‚Рё РЅР°РµРјРЅРёРєРё, РєРѕС‚РѕСЂС‹С… РЅР°РЅСЏР» РћРЅР°СЂ?";
 };
 
 func int DIA_Lobart_SldInfo_Condition ()
@@ -442,13 +442,13 @@ func int DIA_Lobart_SldInfo_Condition ()
 
 func void DIA_Lobart_SldInfo_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_SldInfo_15_00"); //А кто эти наемники, которых нанял Онар?
-	AI_Output (self, other, "DIA_Lobart_SldInfo_05_01"); //Я мало что знаю об этих парнях. Предположительно, большинство из них - бывшие каторжники из колонии.
-	AI_Output (self, other, "DIA_Lobart_SldInfo_05_02"); //(презрительно) И чего, спрашивается, от них можно ожидать...
+	AI_Output (other, self, "DIA_Lobart_SldInfo_15_00"); //Рђ РєС‚Рѕ СЌС‚Рё РЅР°РµРјРЅРёРєРё, РєРѕС‚РѕСЂС‹С… РЅР°РЅСЏР» РћРЅР°СЂ?
+	AI_Output (self, other, "DIA_Lobart_SldInfo_05_01"); //РЇ РјР°Р»Рѕ С‡С‚Рѕ Р·РЅР°СЋ РѕР± СЌС‚РёС… РїР°СЂРЅСЏС…. РџСЂРµРґРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ, Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… - Р±С‹РІС€РёРµ РєР°С‚РѕСЂР¶РЅРёРєРё РёР· РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other, "DIA_Lobart_SldInfo_05_02"); //(РїСЂРµР·СЂРёС‚РµР»СЊРЅРѕ) Р С‡РµРіРѕ, СЃРїСЂР°С€РёРІР°РµС‚СЃСЏ, РѕС‚ РЅРёС… РјРѕР¶РЅРѕ РѕР¶РёРґР°С‚СЊ...
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Fьr wen bist du?
+//	FСЊr wen bist du?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_WhichSide (C_INFO)
 {
@@ -457,7 +457,7 @@ instance DIA_Lobart_WhichSide (C_INFO)
 	condition	= DIA_Lobart_WhichSide_Condition;
 	information	= DIA_Lobart_WhichSide_Info;
 	permanent 	= FALSE;
-	description	= "А что насчет тебя? Ты-то на чьей стороне? Крестьян или короля?";
+	description	= "Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ С‚РµР±СЏ? РўС‹-С‚Рѕ РЅР° С‡СЊРµР№ СЃС‚РѕСЂРѕРЅРµ? РљСЂРµСЃС‚СЊСЏРЅ РёР»Рё РєРѕСЂРѕР»СЏ?";
 };
 
 func int DIA_Lobart_WhichSide_Condition ()
@@ -471,20 +471,20 @@ func int DIA_Lobart_WhichSide_Condition ()
 
 func void DIA_Lobart_WhichSide_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_WhichSide_15_00"); //А что насчет тебя? Ты-то на чьей стороне? Крестьян или короля?
-	AI_Output (self, other, "DIA_Lobart_WhichSide_05_01"); //Я слишком близок к городу, чтобы у меня была возможность выбирать.
-	AI_Output (self, other, "DIA_Lobart_WhichSide_05_02"); //Но я даже рад этому. Я бы все равно не знал, что решить.
+	AI_Output (other, self, "DIA_Lobart_WhichSide_15_00"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ С‚РµР±СЏ? РўС‹-С‚Рѕ РЅР° С‡СЊРµР№ СЃС‚РѕСЂРѕРЅРµ? РљСЂРµСЃС‚СЊСЏРЅ РёР»Рё РєРѕСЂРѕР»СЏ?
+	AI_Output (self, other, "DIA_Lobart_WhichSide_05_01"); //РЇ СЃР»РёС€РєРѕРј Р±Р»РёР·РѕРє Рє РіРѕСЂРѕРґСѓ, С‡С‚РѕР±С‹ Сѓ РјРµРЅСЏ Р±С‹Р»Р° РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РІС‹Р±РёСЂР°С‚СЊ.
+	AI_Output (self, other, "DIA_Lobart_WhichSide_05_02"); //РќРѕ СЏ РґР°Р¶Рµ СЂР°Рґ СЌС‚РѕРјСѓ. РЇ Р±С‹ РІСЃРµ СЂР°РІРЅРѕ РЅРµ Р·РЅР°Р», С‡С‚Рѕ СЂРµС€РёС‚СЊ.
 	
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WhichSide_05_03"); //Король пьет нашу кровь, а Онар направляет своих наемников против всех, кто не хочет присоединиться к нему.
-		AI_Output (self, other, "DIA_Lobart_WhichSide_05_04"); //Вот почему большинство фермеров все еще не определились, но рано или поздно им ПРИДЕТСЯ выбрать одну сторону или другую.
+		AI_Output (self, other, "DIA_Lobart_WhichSide_05_03"); //РљРѕСЂРѕР»СЊ РїСЊРµС‚ РЅР°С€Сѓ РєСЂРѕРІСЊ, Р° РћРЅР°СЂ РЅР°РїСЂР°РІР»СЏРµС‚ СЃРІРѕРёС… РЅР°РµРјРЅРёРєРѕРІ РїСЂРѕС‚РёРІ РІСЃРµС…, РєС‚Рѕ РЅРµ С…РѕС‡РµС‚ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅРµРјСѓ.
+		AI_Output (self, other, "DIA_Lobart_WhichSide_05_04"); //Р’РѕС‚ РїРѕС‡РµРјСѓ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ С„РµСЂРјРµСЂРѕРІ РІСЃРµ РµС‰Рµ РЅРµ РѕРїСЂРµРґРµР»РёР»РёСЃСЊ, РЅРѕ СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ РёРј РџР РР”Р•РўРЎРЇ РІС‹Р±СЂР°С‚СЊ РѕРґРЅСѓ СЃС‚РѕСЂРѕРЅСѓ РёР»Рё РґСЂСѓРіСѓСЋ.
 	};
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//	*** MISSION: Rьben ziehen ***
+//	*** MISSION: RСЊben ziehen ***
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_WorkNOW (C_INFO)
 {
@@ -493,7 +493,7 @@ instance DIA_Lobart_WorkNOW (C_INFO)
 	condition	= DIA_Lobart_WorkNOW_Condition;
 	information	= DIA_Lobart_WorkNOW_Info;
 	permanent 	= FALSE;
-	description	= "Я ищу работу.";
+	description	= "РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.";
 };
 
 func int DIA_Lobart_WorkNOW_Condition ()
@@ -511,48 +511,48 @@ func int DIA_Lobart_WorkNOW_Condition ()
 
 func void DIA_Lobart_WorkNOW_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_WorkNOW_15_00"); //Я ищу работу.
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_01"); //Мне не нужен еще один постоянный работник. Но я могу предложить тебе поденную работу.
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_02"); //Я хочу сказать, ты можешь помочь на поле. Также здесь еще наверняка найдется кое-какая работенка для тебя.
+	AI_Output (other, self, "DIA_Lobart_WorkNOW_15_00"); //РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_01"); //РњРЅРµ РЅРµ РЅСѓР¶РµРЅ РµС‰Рµ РѕРґРёРЅ РїРѕСЃС‚РѕСЏРЅРЅС‹Р№ СЂР°Р±РѕС‚РЅРёРє. РќРѕ СЏ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ РїРѕРґРµРЅРЅСѓСЋ СЂР°Р±РѕС‚Сѓ.
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_02"); //РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, С‚С‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РЅР° РїРѕР»Рµ. РўР°РєР¶Рµ Р·РґРµСЃСЊ РµС‰Рµ РЅР°РІРµСЂРЅСЏРєР° РЅР°Р№РґРµС‚СЃСЏ РєРѕРµ-РєР°РєР°СЏ СЂР°Р±РѕС‚РµРЅРєР° РґР»СЏ С‚РµР±СЏ.
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_03"); //Я могу заплатить тебе золотом. Или дать тебе приличную одежду.
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_04"); //Эта одежда стоит довольно дорого. Я не могу отдать тебе ее просто так, но я могу продать тебе ее дешевле, если ты поработаешь на меня.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_03"); //РЇ РјРѕРіСѓ Р·Р°РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ Р·РѕР»РѕС‚РѕРј. РР»Рё РґР°С‚СЊ С‚РµР±Рµ РїСЂРёР»РёС‡РЅСѓСЋ РѕРґРµР¶РґСѓ.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_04"); //Р­С‚Р° РѕРґРµР¶РґР° СЃС‚РѕРёС‚ РґРѕРІРѕР»СЊРЅРѕ РґРѕСЂРѕРіРѕ. РЇ РЅРµ РјРѕРіСѓ РѕС‚РґР°С‚СЊ С‚РµР±Рµ РµРµ РїСЂРѕСЃС‚Рѕ С‚Р°Рє, РЅРѕ СЏ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ РµРµ РґРµС€РµРІР»Рµ, РµСЃР»Рё С‚С‹ РїРѕСЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РјРµРЅСЏ.
 			
 		Log_CreateTopic (TOPIC_Kleidung,LOG_MISSION);  
 		Log_SetTopicStatus  (TOPIC_Kleidung,LOG_RUNNING);  
-		B_LogEntry (TOPIC_Kleidung,"Фермер Лобарт готов продать мне рабочую одежду. Он может снизить цену за одежду, если я поработаю на его ферме. Чем больше я сделаю, тем дешевле обойдется мне одежда.");
+		B_LogEntry (TOPIC_Kleidung,"Р¤РµСЂРјРµСЂ Р›РѕР±Р°СЂС‚ РіРѕС‚РѕРІ РїСЂРѕРґР°С‚СЊ РјРЅРµ СЂР°Р±РѕС‡СѓСЋ РѕРґРµР¶РґСѓ. РћРЅ РјРѕР¶РµС‚ СЃРЅРёР·РёС‚СЊ С†РµРЅСѓ Р·Р° РѕРґРµР¶РґСѓ, РµСЃР»Рё СЏ РїРѕСЂР°Р±РѕС‚Р°СЋ РЅР° РµРіРѕ С„РµСЂРјРµ. Р§РµРј Р±РѕР»СЊС€Рµ СЏ СЃРґРµР»Р°СЋ, С‚РµРј РґРµС€РµРІР»Рµ РѕР±РѕР№РґРµС‚СЃСЏ РјРЅРµ РѕРґРµР¶РґР°.");
 			
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		|| (Lobart_Kleidung_Verkauft == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_05"); //Судя по тому, как ты выглядишь, я бы сказал: бери одежду.
+			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_05"); //РЎСѓРґСЏ РїРѕ С‚РѕРјСѓ, РєР°Рє С‚С‹ РІС‹РіР»СЏРґРёС€СЊ, СЏ Р±С‹ СЃРєР°Р·Р°Р»: Р±РµСЂРё РѕРґРµР¶РґСѓ.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_06"); //Но у тебя уже есть одежда, так что ты, вероятно, захочешь золото.
+			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_06"); //РќРѕ Сѓ С‚РµР±СЏ СѓР¶Рµ РµСЃС‚СЊ РѕРґРµР¶РґР°, С‚Р°Рє С‡С‚Рѕ С‚С‹, РІРµСЂРѕСЏС‚РЅРѕ, Р·Р°С…РѕС‡РµС€СЊ Р·РѕР»РѕС‚Рѕ.
 		};
 	};
 
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_07"); //Работа следующая - небольшое поле репы за амбаром нужно собрать.
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_07"); //Р Р°Р±РѕС‚Р° СЃР»РµРґСѓСЋС‰Р°СЏ - РЅРµР±РѕР»СЊС€РѕРµ РїРѕР»Рµ СЂРµРїС‹ Р·Р° Р°РјР±Р°СЂРѕРј РЅСѓР¶РЅРѕ СЃРѕР±СЂР°С‚СЊ.
 	
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
-	Info_AddChoice		(DIA_Lobart_WorkNOW, "Я должен дергать репу? Ты, должно быть, шутишь!", DIA_Lobart_WorkNOW_WannaFoolMe );
-	Info_AddChoice		(DIA_Lobart_WorkNOW, "Хорошо...", DIA_Lobart_WorkNOW_Ok );
+	Info_AddChoice		(DIA_Lobart_WorkNOW, "РЇ РґРѕР»Р¶РµРЅ РґРµСЂРіР°С‚СЊ СЂРµРїСѓ? РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С€СѓС‚РёС€СЊ!", DIA_Lobart_WorkNOW_WannaFoolMe );
+	Info_AddChoice		(DIA_Lobart_WorkNOW, "РҐРѕСЂРѕС€Рѕ...", DIA_Lobart_WorkNOW_Ok );
 };
 
 func void DIA_Lobart_WorkNOW_Ok()
 {
-	AI_Output (other, self, "DIA_Lobart_WorkNOW_Ok_15_00"); //Хорошо...
+	AI_Output (other, self, "DIA_Lobart_WorkNOW_Ok_15_00"); //РҐРѕСЂРѕС€Рѕ...
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_Ok_05_01"); //Тогда поторопись, пока я не передумал.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_Ok_05_01"); //РўРѕРіРґР° РїРѕС‚РѕСЂРѕРїРёСЃСЊ, РїРѕРєР° СЏ РЅРµ РїРµСЂРµРґСѓРјР°Р».
 	};
 	Log_CreateTopic (TOPIC_Rueben,LOG_MISSION);  
 	Log_SetTopicStatus  (TOPIC_Rueben,LOG_RUNNING);  
-	B_LogEntry (TOPIC_Rueben,"Фермер Лобарт хочет, чтобы я собрал репу на поле. За это он заплатит мне золотом или продаст мне одежду по значительно сниженной цене.");
+	B_LogEntry (TOPIC_Rueben,"Р¤РµСЂРјРµСЂ Р›РѕР±Р°СЂС‚ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЃРѕР±СЂР°Р» СЂРµРїСѓ РЅР° РїРѕР»Рµ. Р—Р° СЌС‚Рѕ РѕРЅ Р·Р°РїР»Р°С‚РёС‚ РјРЅРµ Р·РѕР»РѕС‚РѕРј РёР»Рё РїСЂРѕРґР°СЃС‚ РјРЅРµ РѕРґРµР¶РґСѓ РїРѕ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ СЃРЅРёР¶РµРЅРЅРѕР№ С†РµРЅРµ.");
 	
 	MIS_Lobart_Rueben = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
@@ -560,21 +560,21 @@ func void DIA_Lobart_WorkNOW_Ok()
 
 func void DIA_Lobart_WorkNOW_WannaFoolMe()
 {
-	AI_Output (other, self, "DIA_Lobart_WorkNOW_WannaFoolMe_15_00"); //Я должен дергать репу? Ты, должно быть, шутишь!
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_01"); //Настоящая мужская работа не для 'утонченного джентльмена', да?
+	AI_Output (other, self, "DIA_Lobart_WorkNOW_WannaFoolMe_15_00"); //РЇ РґРѕР»Р¶РµРЅ РґРµСЂРіР°С‚СЊ СЂРµРїСѓ? РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С€СѓС‚РёС€СЊ!
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_01"); //РќР°СЃС‚РѕСЏС‰Р°СЏ РјСѓР¶СЃРєР°СЏ СЂР°Р±РѕС‚Р° РЅРµ РґР»СЏ 'СѓС‚РѕРЅС‡РµРЅРЅРѕРіРѕ РґР¶РµРЅС‚Р»СЊРјРµРЅР°', РґР°?
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_02"); //Топай на поле или убирайся с моей фермы!
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_02"); //РўРѕРїР°Р№ РЅР° РїРѕР»Рµ РёР»Рё СѓР±РёСЂР°Р№СЃСЏ СЃ РјРѕРµР№ С„РµСЂРјС‹!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_03"); //Сейчас у меня нет другой работы для тебя.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_03"); //РЎРµР№С‡Р°СЃ Сѓ РјРµРЅСЏ РЅРµС‚ РґСЂСѓРіРѕР№ СЂР°Р±РѕС‚С‹ РґР»СЏ С‚РµР±СЏ.
 	};
 	
 	Log_CreateTopic (TOPIC_Rueben,LOG_MISSION);  
 	Log_SetTopicStatus  (TOPIC_Rueben,LOG_RUNNING);  
-	B_LogEntry (TOPIC_Rueben,"Фермер Лобарт хочет, чтобы я собрал репу на поле. За это он продаст мне одежду по значительно сниженной цене.");
+	B_LogEntry (TOPIC_Rueben,"Р¤РµСЂРјРµСЂ Р›РѕР±Р°СЂС‚ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЃРѕР±СЂР°Р» СЂРµРїСѓ РЅР° РїРѕР»Рµ. Р—Р° СЌС‚Рѕ РѕРЅ РїСЂРѕРґР°СЃС‚ РјРЅРµ РѕРґРµР¶РґСѓ РїРѕ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ СЃРЅРёР¶РµРЅРЅРѕР№ С†РµРЅРµ.");
 	
 	MIS_Lobart_Rueben = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
@@ -591,7 +591,7 @@ instance DIA_Lobart_RuebenRunning		(C_INFO)
 	condition	 = 	DIA_Lobart_RuebenRunning_Condition;
 	information	 = 	DIA_Lobart_RuebenRunning_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Вот твоя репа!";
+	description	 = 	"Р’РѕС‚ С‚РІРѕСЏ СЂРµРїР°!";
 };
 
 func int DIA_Lobart_RuebenRunning_Condition ()
@@ -606,57 +606,57 @@ func int DIA_Lobart_RuebenRunning_Condition ()
 
 func void DIA_Lobart_RuebenRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_00"); //Вот твоя репа!
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_00"); //Р’РѕС‚ С‚РІРѕСЏ СЂРµРїР°!
 
 	if (Npc_HasItems (other,ItPl_Beet) >= 20)
 	{
 		if (hero.guild == GIL_NONE)
 			{
-				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_01"); //Да, похоже, ты не такой уж бездельник, как кажешься.
+				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_01"); //Р”Р°, РїРѕС…РѕР¶Рµ, С‚С‹ РЅРµ С‚Р°РєРѕР№ СѓР¶ Р±РµР·РґРµР»СЊРЅРёРє, РєР°Рє РєР°Р¶РµС€СЊСЃСЏ.
 			};
 
 		if ((Npc_IsDead(Hilda))== FALSE)
 		{
-			AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_02"); //Отнеси ее моей жене в дом и скажи ей, чтобы она приготовила ее.
+			AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_02"); //РћС‚РЅРµСЃРё РµРµ РјРѕРµР№ Р¶РµРЅРµ РІ РґРѕРј Рё СЃРєР°Р¶Рё РµР№, С‡С‚РѕР±С‹ РѕРЅР° РїСЂРёРіРѕС‚РѕРІРёР»Р° РµРµ.
 	
 			MIS_Lobart_RuebenToHilda = LOG_RUNNING;
 			Log_CreateTopic (TOPIC_Ruebenbringen,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_Ruebenbringen,LOG_RUNNING);
-			B_LogEntry (TOPIC_Ruebenbringen,"Я должен отнести собранную репу жене Лобарта, находящейся в доме.");
+			B_LogEntry (TOPIC_Ruebenbringen,"РЇ РґРѕР»Р¶РµРЅ РѕС‚РЅРµСЃС‚Рё СЃРѕР±СЂР°РЅРЅСѓСЋ СЂРµРїСѓ Р¶РµРЅРµ Р›РѕР±Р°СЂС‚Р°, РЅР°С…РѕРґСЏС‰РµР№СЃСЏ РІ РґРѕРјРµ.");
 		};
 		
 		MIS_Lobart_Rueben = LOG_SUCCESS;
 		B_GivePlayerXP (XP_LobartHolRueben);
 		 
 	//	Log_SetTopicStatus(TOPIC_BauerLobart, LOG_SUCCESS); ALT
-	//	Log_AddEntry (TOPIC_BauerLobart,"Ich habe Lobart seine Rьben gebracht, er hat mich dafьr entlohnt."); 
+	//	Log_AddEntry (TOPIC_BauerLobart,"Ich habe Lobart seine RСЊben gebracht, er hat mich dafСЊr entlohnt."); 
 		
-		AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_03"); //Что насчет моей платы?
-		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_04"); //Я могу дат тебе 5 золотых монет.
+		AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_03"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РјРѕРµР№ РїР»Р°С‚С‹?
+		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_04"); //РЇ РјРѕРіСѓ РґР°С‚ С‚РµР±Рµ 5 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 		
 		if (hero.guild == GIL_NONE)
 			{
-				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_05"); //...или продать тебе одежду дешевле. Что ты выбираешь?
+				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_05"); //...РёР»Рё РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ РѕРґРµР¶РґСѓ РґРµС€РµРІР»Рµ. Р§С‚Рѕ С‚С‹ РІС‹Р±РёСЂР°РµС€СЊ?
 			};
 	
 		Info_ClearChoices 	(DIA_Lobart_RuebenRunning);
 
 		if (hero.guild == GIL_NONE)
 			{
-				Info_AddChoice		(DIA_Lobart_RuebenRunning, "Лучше продай одежду дешевле!",	DIA_Lobart_RuebenRunning_Billiger );
+				Info_AddChoice		(DIA_Lobart_RuebenRunning, "Р›СѓС‡С€Рµ РїСЂРѕРґР°Р№ РѕРґРµР¶РґСѓ РґРµС€РµРІР»Рµ!",	DIA_Lobart_RuebenRunning_Billiger );
 			};
 
-		Info_AddChoice		(DIA_Lobart_RuebenRunning, "Дай мне 5 золотых монет!", 		DIA_Lobart_RuebenRunning_Gold );
+		Info_AddChoice		(DIA_Lobart_RuebenRunning, "Р”Р°Р№ РјРЅРµ 5 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚!", 		DIA_Lobart_RuebenRunning_Gold );
 
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_06"); //Но ты не собрал и двадцати!
+		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_06"); //РќРѕ С‚С‹ РЅРµ СЃРѕР±СЂР°Р» Рё РґРІР°РґС†Р°С‚Рё!
 		
 		if (hero.guild == GIL_NONE)
 			{
-				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_07"); //Ты что, съел остальное?! Надеюсь, мой мальчик, что все же нет, иначе тебе придется забыть о своем жаловании!
-				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_08"); //Возвращайся на поле и принеси больше! Работай или я покажу тебе, где раки зимуют!
+				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_07"); //РўС‹ С‡С‚Рѕ, СЃСЉРµР» РѕСЃС‚Р°Р»СЊРЅРѕРµ?! РќР°РґРµСЋСЃСЊ, РјРѕР№ РјР°Р»СЊС‡РёРє, С‡С‚Рѕ РІСЃРµ Р¶Рµ РЅРµС‚, РёРЅР°С‡Рµ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°Р±С‹С‚СЊ Рѕ СЃРІРѕРµРј Р¶Р°Р»РѕРІР°РЅРёРё!
+				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_08"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РЅР° РїРѕР»Рµ Рё РїСЂРёРЅРµСЃРё Р±РѕР»СЊС€Рµ! Р Р°Р±РѕС‚Р°Р№ РёР»Рё СЏ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚!
 			};
 		
 		AI_StopProcessInfos (self);
@@ -665,14 +665,14 @@ func void DIA_Lobart_RuebenRunning_Info ()
 
 func void DIA_Lobart_RuebenRunning_Gold ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Gold_15_00"); //Дай мне 5 золотых монет!
-	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Gold_05_01"); //Держи.
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Gold_15_00"); //Р”Р°Р№ РјРЅРµ 5 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚!
+	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Gold_05_01"); //Р”РµСЂР¶Рё.
 
 	B_GiveInvItems (self, other, ItMi_Gold, 5);
 
 		if (hero.guild == GIL_NONE)
 			{
-					AI_Output (self, other, "DIA_Lobart_RuebenRunning_Gold_05_02"); //Только не пропей их все разом.
+					AI_Output (self, other, "DIA_Lobart_RuebenRunning_Gold_05_02"); //РўРѕР»СЊРєРѕ РЅРµ РїСЂРѕРїРµР№ РёС… РІСЃРµ СЂР°Р·РѕРј.
 			};
 			
 
@@ -681,8 +681,8 @@ func void DIA_Lobart_RuebenRunning_Gold ()
 
 func void DIA_Lobart_RuebenRunning_Billiger ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Billiger_15_00"); //Лучше продай одежду дешевле!
-	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Billiger_05_01"); //Хорошо! Я отдам тебе ее на 10 золотых дешевле.
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Billiger_15_00"); //Р›СѓС‡С€Рµ РїСЂРѕРґР°Р№ РѕРґРµР¶РґСѓ РґРµС€РµРІР»Рµ!
+	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Billiger_05_01"); //РҐРѕСЂРѕС€Рѕ! РЇ РѕС‚РґР°Рј С‚РµР±Рµ РµРµ РЅР° 10 Р·РѕР»РѕС‚С‹С… РґРµС€РµРІР»Рµ.
 	
 	Info_ClearChoices 	(DIA_Lobart_RuebenRunning);
 };
@@ -697,7 +697,7 @@ instance DIA_Lobart_MoreWork (C_INFO)
 	condition	= DIA_Lobart_MoreWork_Condition;
 	information	= DIA_Lobart_MoreWork_Info;
 	permanent 	= TRUE;
-	description	= "У тебя есть еще какая-нибудь работа для меня?";
+	description	= "РЈ С‚РµР±СЏ РµСЃС‚СЊ РµС‰Рµ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ?";
 };
 
 func int DIA_Lobart_MoreWork_Condition ()
@@ -712,15 +712,15 @@ func int DIA_Lobart_MoreWork_Condition ()
 
 func void DIA_Lobart_MoreWork_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_MoreWork_15_00"); //У тебя есть еще какая-нибудь работа для меня?
+	AI_Output (other, self, "DIA_Lobart_MoreWork_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РµС‰Рµ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Р° РґР»СЏ РјРµРЅСЏ?
 	
 	if (MIS_Lobart_Rueben == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Lobart_MoreWork_05_01"); //Сначала собери репу с поля. А там,посмотрим.
+		AI_Output (self, other, "DIA_Lobart_MoreWork_05_01"); //РЎРЅР°С‡Р°Р»Р° СЃРѕР±РµСЂРё СЂРµРїСѓ СЃ РїРѕР»СЏ. Рђ С‚Р°Рј,РїРѕСЃРјРѕС‚СЂРёРј.
 	}
 	else //SUCCESS
 	{
-		AI_Output (self, other, "DIA_Lobart_MoreWork_05_02"); //Нет, но ты можешь спросить у моей жены или парней на поле. Возможно, им нужна помощь.
+		AI_Output (self, other, "DIA_Lobart_MoreWork_05_02"); //РќРµС‚, РЅРѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРїСЂРѕСЃРёС‚СЊ Сѓ РјРѕРµР№ Р¶РµРЅС‹ РёР»Рё РїР°СЂРЅРµР№ РЅР° РїРѕР»Рµ. Р’РѕР·РјРѕР¶РЅРѕ, РёРј РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ.
 	};
 };
 
@@ -742,7 +742,7 @@ instance DIA_Lobart_ANDREHELPLOBART		(C_INFO)
 	npc			 = 	BAU_950_Lobart;
 	condition	 = 	DIA_Lobart_ANDREHELPLOBART_Condition;
 	information	 = 	DIA_Lobart_ANDREHELPLOBART_Info;
-	description	 = 	"Меня направил к тебе Андрэ.";
+	description	 = 	"РњРµРЅСЏ РЅР°РїСЂР°РІРёР» Рє С‚РµР±Рµ РђРЅРґСЂСЌ.";
 };
 
 func int DIA_Lobart_ANDREHELPLOBART_Condition ()
@@ -755,11 +755,11 @@ func int DIA_Lobart_ANDREHELPLOBART_Condition ()
 
 func void DIA_Lobart_ANDREHELPLOBART_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_ANDREHELPLOBART_15_00"); //Меня направил к тебе Андрэ. Я могу чем-нибудь помочь тебе?
-	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_01"); //Да, конечно. Меня уже тошнит от этих проклятых полевых хищников.
-	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_02"); //Прикончи их всех. Меня не волнует, как!
+	AI_Output			(other, self, "DIA_Lobart_ANDREHELPLOBART_15_00"); //РњРµРЅСЏ РЅР°РїСЂР°РІРёР» Рє С‚РµР±Рµ РђРЅРґСЂСЌ. РЇ РјРѕРіСѓ С‡РµРј-РЅРёР±СѓРґСЊ РїРѕРјРѕС‡СЊ С‚РµР±Рµ?
+	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_01"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РњРµРЅСЏ СѓР¶Рµ С‚РѕС€РЅРёС‚ РѕС‚ СЌС‚РёС… РїСЂРѕРєР»СЏС‚С‹С… РїРѕР»РµРІС‹С… С…РёС‰РЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_02"); //РџСЂРёРєРѕРЅС‡Рё РёС… РІСЃРµС…. РњРµРЅСЏ РЅРµ РІРѕР»РЅСѓРµС‚, РєР°Рє!
 
-	Log_AddEntry (TOPIC_BecomeMIL,"Поля Лобарта наводнены полевыми хищниками. Он хочет, чтобы я прогнал их."); 
+	Log_AddEntry (TOPIC_BecomeMIL,"РџРѕР»СЏ Р›РѕР±Р°СЂС‚Р° РЅР°РІРѕРґРЅРµРЅС‹ РїРѕР»РµРІС‹РјРё С…РёС‰РЅРёРєР°РјРё. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРѕРіРЅР°Р» РёС…."); 
 	MIS_LobartKillBugs = LOG_RUNNING;
 	
 	AI_StopProcessInfos (self);
@@ -773,7 +773,7 @@ instance DIA_Lobart_BUGDEAD		(C_INFO)
 	condition	 = 	DIA_Lobart_BUGDEAD_Condition;
 	information	 = 	DIA_Lobart_BUGDEAD_Info;
 	permanent 	 = 	TRUE;
-	description	 = 	"Я разделался с этими тварями!";
+	description	 = 	"РЇ СЂР°Р·РґРµР»Р°Р»СЃСЏ СЃ СЌС‚РёРјРё С‚РІР°СЂСЏРјРё!";
 };
 
 var int DIA_Lobart_BUGDEAD_noPerm;
@@ -800,8 +800,8 @@ func void DIA_Lobart_BUGDEAD_Info ()
 		)
 
 		{
-			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_00"); //Я разделался с этими тварями!
-			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_01"); //Отлично. Ты не такой уж плохой ликвидатор. Я порекомендую тебя соседям. Вот, держи заработанное.
+			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_00"); //РЇ СЂР°Р·РґРµР»Р°Р»СЃСЏ СЃ СЌС‚РёРјРё С‚РІР°СЂСЏРјРё!
+			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_01"); //РћС‚Р»РёС‡РЅРѕ. РўС‹ РЅРµ С‚Р°РєРѕР№ СѓР¶ РїР»РѕС…РѕР№ Р»РёРєРІРёРґР°С‚РѕСЂ. РЇ РїРѕСЂРµРєРѕРјРµРЅРґСѓСЋ С‚РµР±СЏ СЃРѕСЃРµРґСЏРј. Р’РѕС‚, РґРµСЂР¶Рё Р·Р°СЂР°Р±РѕС‚Р°РЅРЅРѕРµ.
 			
 			B_StartOtherRoutine	(Vino,"Start");
 			B_StartOtherRoutine	(LobartsBauer1,"Start");
@@ -812,13 +812,13 @@ func void DIA_Lobart_BUGDEAD_Info ()
 
 			MIS_LobartKillBugs 	= LOG_SUCCESS;
 			MIS_AndreHelpLobart = LOG_SUCCESS;
-			Log_AddEntry (TOPIC_BecomeMIL,"Поля Лобарта очищены от полевых хищников. Я уничтожил их всех."); 
+			Log_AddEntry (TOPIC_BecomeMIL,"РџРѕР»СЏ Р›РѕР±Р°СЂС‚Р° РѕС‡РёС‰РµРЅС‹ РѕС‚ РїРѕР»РµРІС‹С… С…РёС‰РЅРёРєРѕРІ. РЇ СѓРЅРёС‡С‚РѕР¶РёР» РёС… РІСЃРµС…."); 
 			DIA_Lobart_BUGDEAD_noPerm = TRUE;
 		}
 		else  
 		{
-			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_02"); //Я думаю, я разделался со всеми тварями!
-			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_03"); //Не пытайся надуть меня. Я все еще вижу их. Либо ты убьешь этих тварей, либо можешь забыть о деньгах.
+			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_02"); //РЇ РґСѓРјР°СЋ, СЏ СЂР°Р·РґРµР»Р°Р»СЃСЏ СЃРѕ РІСЃРµРјРё С‚РІР°СЂСЏРјРё!
+			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_03"); //РќРµ РїС‹С‚Р°Р№СЃСЏ РЅР°РґСѓС‚СЊ РјРµРЅСЏ. РЇ РІСЃРµ РµС‰Рµ РІРёР¶Сѓ РёС…. Р›РёР±Рѕ С‚С‹ СѓР±СЊРµС€СЊ СЌС‚РёС… С‚РІР°СЂРµР№, Р»РёР±Рѕ РјРѕР¶РµС€СЊ Р·Р°Р±С‹С‚СЊ Рѕ РґРµРЅСЊРіР°С….
 			AI_StopProcessInfos (self);
 		};
 };
@@ -866,7 +866,7 @@ instance DIA_Lobart_DMT		(C_INFO)
 	condition	 = 	DIA_Lobart_DMT_Condition;
 	information	 = 	DIA_Lobart_DMT_Info;
 
-	description	 = 	"Как твоя ферма?";
+	description	 = 	"РљР°Рє С‚РІРѕСЏ С„РµСЂРјР°?";
 };
 
 func int DIA_Lobart_DMT_Condition ()
@@ -879,9 +879,9 @@ func int DIA_Lobart_DMT_Condition ()
 
 func void DIA_Lobart_DMT_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_15_00"); //Как твоя ферма?
-	AI_Output			(self, other, "DIA_Lobart_DMT_05_01"); //Это все невыносимо.
-	AI_Output			(self, other, "DIA_Lobart_DMT_05_02"); //Неожиданно появились эти парни в черных рясах и расположились на дороге и на моей ферме.
+	AI_Output			(other, self, "DIA_Lobart_DMT_15_00"); //РљР°Рє С‚РІРѕСЏ С„РµСЂРјР°?
+	AI_Output			(self, other, "DIA_Lobart_DMT_05_01"); //Р­С‚Рѕ РІСЃРµ РЅРµРІС‹РЅРѕСЃРёРјРѕ.
+	AI_Output			(self, other, "DIA_Lobart_DMT_05_02"); //РќРµРѕР¶РёРґР°РЅРЅРѕ РїРѕСЏРІРёР»РёСЃСЊ СЌС‚Рё РїР°СЂРЅРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… Рё СЂР°СЃРїРѕР»РѕР¶РёР»РёСЃСЊ РЅР° РґРѕСЂРѕРіРµ Рё РЅР° РјРѕРµР№ С„РµСЂРјРµ.
 
 
 	Info_ClearChoices	(DIA_Lobart_DMT);
@@ -891,42 +891,42 @@ func void DIA_Lobart_DMT_Info ()
 	if (hero.guild == GIL_KDF)
 	&& (Vino_isAlive_Kap3 == TRUE)
 		{
-		AI_Output			(self, other, "DIA_Lobart_DMT_05_03"); //Они долго беседовали о чем-то с Вино, а затем скрылись вместе с ним.
+		AI_Output			(self, other, "DIA_Lobart_DMT_05_03"); //РћРЅРё РґРѕР»РіРѕ Р±РµСЃРµРґРѕРІР°Р»Рё Рѕ С‡РµРј-С‚Рѕ СЃ Р’РёРЅРѕ, Р° Р·Р°С‚РµРј СЃРєСЂС‹Р»РёСЃСЊ РІРјРµСЃС‚Рµ СЃ РЅРёРј.
 
 			if (NpcObsessedByDMT_Vino == FALSE)
 			{
-			Info_AddChoice	(DIA_Lobart_DMT, "Куда они потащили Вино?", DIA_Lobart_DMT_VinoWohin );
+			Info_AddChoice	(DIA_Lobart_DMT, "РљСѓРґР° РѕРЅРё РїРѕС‚Р°С‰РёР»Рё Р’РёРЅРѕ?", DIA_Lobart_DMT_VinoWohin );
 			};
-			Info_AddChoice	(DIA_Lobart_DMT, "Какие у них дела с Вино?", DIA_Lobart_DMT_VinoWas );
+			Info_AddChoice	(DIA_Lobart_DMT, "РљР°РєРёРµ Сѓ РЅРёС… РґРµР»Р° СЃ Р’РёРЅРѕ?", DIA_Lobart_DMT_VinoWas );
 		};
 
 	if ((Npc_IsDead(Hilda))== FALSE)
 	&& ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL)	||	(hero.guild == GIL_KDF))
 	{
-		AI_Output			(self, other, "DIA_Lobart_DMT_05_04"); //Вскоре после этого моя жена опять тяжело заболела. Она почти не встает с постели. С ней часто бывает такое.
+		AI_Output			(self, other, "DIA_Lobart_DMT_05_04"); //Р’СЃРєРѕСЂРµ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РјРѕСЏ Р¶РµРЅР° РѕРїСЏС‚СЊ С‚СЏР¶РµР»Рѕ Р·Р°Р±РѕР»РµР»Р°. РћРЅР° РїРѕС‡С‚Рё РЅРµ РІСЃС‚Р°РµС‚ СЃ РїРѕСЃС‚РµР»Рё. РЎ РЅРµР№ С‡Р°СЃС‚Рѕ Р±С‹РІР°РµС‚ С‚Р°РєРѕРµ.
 	};
 
-	AI_Output			(self, other, "DIA_Lobart_DMT_05_05"); //Все пошло наперекосяк!
+	AI_Output			(self, other, "DIA_Lobart_DMT_05_05"); //Р’СЃРµ РїРѕС€Р»Рѕ РЅР°РїРµСЂРµРєРѕСЃСЏРє!
 
 	if (MIS_HealHilda != LOG_SUCCESS)
 	&& ((Npc_IsDead(Hilda)) == FALSE)
 	&& ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL)	||	(hero.guild == GIL_KDF))
 	{
-		Info_AddChoice	(DIA_Lobart_DMT, "Почему ты не отведешь жену к лекарю?", DIA_Lobart_DMT_FrauHeilen );
+		Info_AddChoice	(DIA_Lobart_DMT, "РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РѕС‚РІРµРґРµС€СЊ Р¶РµРЅСѓ Рє Р»РµРєР°СЂСЋ?", DIA_Lobart_DMT_FrauHeilen );
 	};
 
-	Info_AddChoice	(DIA_Lobart_DMT, "Почему ты ничего е сделаешь с этими людьми в черном?", DIA_Lobart_DMT_hof );
-	Info_AddChoice	(DIA_Lobart_DMT, "Ты говорил с людьми в черном?", DIA_Lobart_DMT_spokeToThem );
+	Info_AddChoice	(DIA_Lobart_DMT, "РџРѕС‡РµРјСѓ С‚С‹ РЅРёС‡РµРіРѕ Рµ СЃРґРµР»Р°РµС€СЊ СЃ СЌС‚РёРјРё Р»СЋРґСЊРјРё РІ С‡РµСЂРЅРѕРј?", DIA_Lobart_DMT_hof );
+	Info_AddChoice	(DIA_Lobart_DMT, "РўС‹ РіРѕРІРѕСЂРёР» СЃ Р»СЋРґСЊРјРё РІ С‡РµСЂРЅРѕРј?", DIA_Lobart_DMT_spokeToThem );
 	
 };
 func void DIA_Lobart_DMT_FrauHeilen ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_FrauHeilen_15_00"); //Почему ты не отведешь жену к лекарю?
-	AI_Output			(self, other, "DIA_Lobart_DMT_FrauHeilen_05_01"); //Мы должны бы сходить в город к Ватрасу, но я с места не сойду, пока на моей ферме царит такой хаос.
+	AI_Output			(other, self, "DIA_Lobart_DMT_FrauHeilen_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РѕС‚РІРµРґРµС€СЊ Р¶РµРЅСѓ Рє Р»РµРєР°СЂСЋ?
+	AI_Output			(self, other, "DIA_Lobart_DMT_FrauHeilen_05_01"); //РњС‹ РґРѕР»Р¶РЅС‹ Р±С‹ СЃС…РѕРґРёС‚СЊ РІ РіРѕСЂРѕРґ Рє Р’Р°С‚СЂР°СЃСѓ, РЅРѕ СЏ СЃ РјРµСЃС‚Р° РЅРµ СЃРѕР№РґСѓ, РїРѕРєР° РЅР° РјРѕРµР№ С„РµСЂРјРµ С†Р°СЂРёС‚ С‚Р°РєРѕР№ С…Р°РѕСЃ.
 	
 	Log_CreateTopic (TOPIC_HealHilda, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HealHilda, LOG_RUNNING);
-	B_LogEntry (TOPIC_HealHilda,"Жена Лобарта Хильда больна, но у Ватраса есть лекарство, которое может вылечить ее."); 
+	B_LogEntry (TOPIC_HealHilda,"Р–РµРЅР° Р›РѕР±Р°СЂС‚Р° РҐРёР»СЊРґР° Р±РѕР»СЊРЅР°, РЅРѕ Сѓ Р’Р°С‚СЂР°СЃР° РµСЃС‚СЊ Р»РµРєР°СЂСЃС‚РІРѕ, РєРѕС‚РѕСЂРѕРµ РјРѕР¶РµС‚ РІС‹Р»РµС‡РёС‚СЊ РµРµ."); 
 
 	MIS_HealHilda = LOG_RUNNING;	
 };
@@ -939,28 +939,28 @@ func void DIA_Lobart_DMT_BACK ()
 
 func void DIA_Lobart_DMT_spokeToThem ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_spokeToThem_15_00"); //Ты говорил с людьми в черном?
-	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_01"); //Конечно. Но они не хотят ничего слушать.
-	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_02"); //Я думаю, они кого-то ищут.
+	AI_Output			(other, self, "DIA_Lobart_DMT_spokeToThem_15_00"); //РўС‹ РіРѕРІРѕСЂРёР» СЃ Р»СЋРґСЊРјРё РІ С‡РµСЂРЅРѕРј?
+	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_01"); //РљРѕРЅРµС‡РЅРѕ. РќРѕ РѕРЅРё РЅРµ С…РѕС‚СЏС‚ РЅРёС‡РµРіРѕ СЃР»СѓС€Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_02"); //РЇ РґСѓРјР°СЋ, РѕРЅРё РєРѕРіРѕ-С‚Рѕ РёС‰СѓС‚.
 };
 
 func void DIA_Lobart_DMT_hof ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_hof_15_00"); //Почему ты ничего е сделаешь с этими людьми в черном?
-	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_01"); //Я бы очень хотел. Но я видел, как они заживо сожгли одного горожанина. Нет уж, спасибо.
-	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_02"); //Не хочется что-то рисковать жизнью!
+	AI_Output			(other, self, "DIA_Lobart_DMT_hof_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРёС‡РµРіРѕ Рµ СЃРґРµР»Р°РµС€СЊ СЃ СЌС‚РёРјРё Р»СЋРґСЊРјРё РІ С‡РµСЂРЅРѕРј?
+	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_01"); //РЇ Р±С‹ РѕС‡РµРЅСЊ С…РѕС‚РµР». РќРѕ СЏ РІРёРґРµР», РєР°Рє РѕРЅРё Р·Р°Р¶РёРІРѕ СЃРѕР¶РіР»Рё РѕРґРЅРѕРіРѕ РіРѕСЂРѕР¶Р°РЅРёРЅР°. РќРµС‚ СѓР¶, СЃРїР°СЃРёР±Рѕ.
+	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_02"); //РќРµ С…РѕС‡РµС‚СЃСЏ С‡С‚Рѕ-С‚Рѕ СЂРёСЃРєРѕРІР°С‚СЊ Р¶РёР·РЅСЊСЋ!
 };
 
 func void DIA_Lobart_DMT_VinoWas ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_VinoWas_15_00"); //Какие у них дела с Вино?
-	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWas_05_01"); //Они не сказали. Они просто увели его с собой.
+	AI_Output			(other, self, "DIA_Lobart_DMT_VinoWas_15_00"); //РљР°РєРёРµ Сѓ РЅРёС… РґРµР»Р° СЃ Р’РёРЅРѕ?
+	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWas_05_01"); //РћРЅРё РЅРµ СЃРєР°Р·Р°Р»Рё. РћРЅРё РїСЂРѕСЃС‚Рѕ СѓРІРµР»Рё РµРіРѕ СЃ СЃРѕР±РѕР№.
 };
 
 func void DIA_Lobart_DMT_VinoWohin ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_VinoWohin_15_00"); //Куда они потащили Вино?
-	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWohin_05_01"); //Они пошли вверх, на этот холм.
+	AI_Output			(other, self, "DIA_Lobart_DMT_VinoWohin_15_00"); //РљСѓРґР° РѕРЅРё РїРѕС‚Р°С‰РёР»Рё Р’РёРЅРѕ?
+	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWohin_05_01"); //РћРЅРё РїРѕС€Р»Рё РІРІРµСЂС…, РЅР° СЌС‚РѕС‚ С…РѕР»Рј.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -973,7 +973,7 @@ instance DIA_Lobart_VINOTOT		(C_INFO)
 	condition	 = 	DIA_Lobart_VINOTOT_Condition;
 	information	 = 	DIA_Lobart_VINOTOT_Info;
 
-	description	 = 	"Вино не вернется.";
+	description	 = 	"Р’РёРЅРѕ РЅРµ РІРµСЂРЅРµС‚СЃСЏ.";
 };
 
 func int DIA_Lobart_VINOTOT_Condition ()
@@ -988,18 +988,18 @@ func int DIA_Lobart_VINOTOT_Condition ()
 
 func void DIA_Lobart_VINOTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_00"); //Вино не вернется.
+	AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_00"); //Р’РёРЅРѕ РЅРµ РІРµСЂРЅРµС‚СЃСЏ.
 
 	if (Npc_IsDead(Vino))	
 	{
-		AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_01"); //Он мертв.
+		AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_01"); //РћРЅ РјРµСЂС‚РІ.
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_02"); //Они свели его с ума.
+		AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_02"); //РћРЅРё СЃРІРµР»Рё РµРіРѕ СЃ СѓРјР°.
 	};
 	
-	AI_Output			(self, other, "DIA_Lobart_VINOTOT_05_03"); //О, Иннос. Надеюсь, весь этот кошмар скоро закончится.
+	AI_Output			(self, other, "DIA_Lobart_VINOTOT_05_03"); //Рћ, РРЅРЅРѕСЃ. РќР°РґРµСЋСЃСЊ, РІРµСЃСЊ СЌС‚РѕС‚ РєРѕС€РјР°СЂ СЃРєРѕСЂРѕ Р·Р°РєРѕРЅС‡РёС‚СЃСЏ.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -1015,7 +1015,7 @@ instance DIA_Lobart_PERM		(C_INFO)
 	information	 = 	DIA_Lobart_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Береги свою ферму!";
+	description	 = 	"Р‘РµСЂРµРіРё СЃРІРѕСЋ С„РµСЂРјСѓ!";
 };
 
 func int DIA_Lobart_PERM_Condition ()
@@ -1035,8 +1035,8 @@ func int DIA_Lobart_PERM_Condition ()
 
 func void DIA_Lobart_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_PERM_15_00"); //Береги свою ферму!
-	AI_Output			(self, other, "DIA_Lobart_PERM_05_01"); //Я попытаюсь.
+	AI_Output			(other, self, "DIA_Lobart_PERM_15_00"); //Р‘РµСЂРµРіРё СЃРІРѕСЋ С„РµСЂРјСѓ!
+	AI_Output			(self, other, "DIA_Lobart_PERM_05_01"); //РЇ РїРѕРїС‹С‚Р°СЋСЃСЊ.
 };
 
 
@@ -1085,7 +1085,7 @@ instance DIA_Lobart_ORKPROBLEM		(C_INFO)
 	condition	 = 	DIA_Lobart_ORKPROBLEM_Condition;
 	information	 = 	DIA_Lobart_ORKPROBLEM_Info;
 
-	description	 = 	"У тебя проблемы с орками.";
+	description	 = 	"РЈ С‚РµР±СЏ РїСЂРѕР±Р»РµРјС‹ СЃ РѕСЂРєР°РјРё.";
 };
 
 func int DIA_Lobart_ORKPROBLEM_Condition ()
@@ -1106,13 +1106,13 @@ func int DIA_Lobart_ORKPROBLEM_Condition ()
 
 func void DIA_Lobart_ORKPROBLEM_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_ORKPROBLEM_15_00"); //У тебя проблемы с орками.
-	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_01"); //(зло) Черт. Ну когда-нибудь все это кончится?!
-	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_02"); //Если так будет продолжаться, моя ферма не будет стоить и 3-х золотых монет.
+	AI_Output			(other, self, "DIA_Lobart_ORKPROBLEM_15_00"); //РЈ С‚РµР±СЏ РїСЂРѕР±Р»РµРјС‹ СЃ РѕСЂРєР°РјРё.
+	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_01"); //(Р·Р»Рѕ) Р§РµСЂС‚. РќСѓ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РІСЃРµ СЌС‚Рѕ РєРѕРЅС‡РёС‚СЃСЏ?!
+	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_02"); //Р•СЃР»Рё С‚Р°Рє Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ, РјРѕСЏ С„РµСЂРјР° РЅРµ Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ Рё 3-С… Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	
 	Log_CreateTopic (TOPIC_LobartsOrKProblem, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_LobartsOrKProblem, LOG_RUNNING);
-	B_LogEntry (TOPIC_LobartsOrKProblem,"На ферме Лобарта поселились орки. Он хочет, чтобы я избавил его от них."); 
+	B_LogEntry (TOPIC_LobartsOrKProblem,"РќР° С„РµСЂРјРµ Р›РѕР±Р°СЂС‚Р° РїРѕСЃРµР»РёР»РёСЃСЊ РѕСЂРєРё. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РёР·Р±Р°РІРёР» РµРіРѕ РѕС‚ РЅРёС…."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -1127,7 +1127,7 @@ instance DIA_Lobart_ORKSWEG		(C_INFO)
 	condition	 = 	DIA_Lobart_ORKSWEG_Condition;
 	information	 = 	DIA_Lobart_ORKSWEG_Info;
 
-	description	 = 	"Я избавил твои земли от орков.";
+	description	 = 	"РЇ РёР·Р±Р°РІРёР» С‚РІРѕРё Р·РµРјР»Рё РѕС‚ РѕСЂРєРѕРІ.";
 };
 
 func int DIA_Lobart_ORKSWEG_Condition ()
@@ -1147,12 +1147,12 @@ func int DIA_Lobart_ORKSWEG_Condition ()
 
 func void DIA_Lobart_ORKSWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_ORKSWEG_15_00"); //Я избавил твои земли от орков.
+	AI_Output			(other, self, "DIA_Lobart_ORKSWEG_15_00"); //РЇ РёР·Р±Р°РІРёР» С‚РІРѕРё Р·РµРјР»Рё РѕС‚ РѕСЂРєРѕРІ.
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_01"); //Никому не позволю говорить, что паладины ничего не делают для нас, простых фермеров.
+		AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_01"); //РќРёРєРѕРјСѓ РЅРµ РїРѕР·РІРѕР»СЋ РіРѕРІРѕСЂРёС‚СЊ, С‡С‚Рѕ РїР°Р»Р°РґРёРЅС‹ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°СЋС‚ РґР»СЏ РЅР°СЃ, РїСЂРѕСЃС‚С‹С… С„РµСЂРјРµСЂРѕРІ.
 	};
-	AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_02"); //Слава Инносу. Я не могу дать тебе за это много, но я надеюсь, ты оценишь мой жест благодарности.
+	AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_02"); //РЎР»Р°РІР° РРЅРЅРѕСЃСѓ. РЇ РЅРµ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ Р·Р° СЌС‚Рѕ РјРЅРѕРіРѕ, РЅРѕ СЏ РЅР°РґРµСЋСЃСЊ, С‚С‹ РѕС†РµРЅРёС€СЊ РјРѕР№ Р¶РµСЃС‚ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё.
 	
 	B_StartOtherRoutine	(Vino,"Start");
 	B_StartOtherRoutine	(LobartsBauer1,"Start");

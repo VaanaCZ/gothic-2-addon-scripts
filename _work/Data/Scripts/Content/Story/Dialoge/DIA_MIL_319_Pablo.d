@@ -31,7 +31,7 @@ INSTANCE DIA_Pablo_PICKPOCKET (C_INFO)
 	condition	= DIA_Pablo_PICKPOCKET_Condition;
 	information	= DIA_Pablo_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот ключ легче легкого)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ Р»РµРіС‡Рµ Р»РµРіРєРѕРіРѕ)";
 };                       
 
 FUNC INT DIA_Pablo_PICKPOCKET_Condition()
@@ -98,41 +98,41 @@ func int DIA_Pablo_WANTED_Condition ()
 };
 func void DIA_Pablo_WANTED_Info ()
 {
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_00"); //Эй, ты, подожди - мне кажется, я тебя знаю.
-	AI_Output (other, self, "DIA_Pablo_WANTED_15_01"); //Что тебе нужно?
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_02"); //Я где-то уже видел твое лицо ... ах - точно!
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_00"); //Р­Р№, С‚С‹, РїРѕРґРѕР¶РґРё - РјРЅРµ РєР°Р¶РµС‚СЃСЏ, СЏ С‚РµР±СЏ Р·РЅР°СЋ.
+	AI_Output (other, self, "DIA_Pablo_WANTED_15_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_02"); //РЇ РіРґРµ-С‚Рѕ СѓР¶Рµ РІРёРґРµР» С‚РІРѕРµ Р»РёС†Рѕ ... Р°С… - С‚РѕС‡РЅРѕ!
 	B_UseFakeScroll ();
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_03"); //Вот - мы нашли этот листок у одного из бандитов, на которых наткнулись несколько дней назад - рисунок очень похож на тебя.
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_03"); //Р’РѕС‚ - РјС‹ РЅР°С€Р»Рё СЌС‚РѕС‚ Р»РёСЃС‚РѕРє Сѓ РѕРґРЅРѕРіРѕ РёР· Р±Р°РЅРґРёС‚РѕРІ, РЅР° РєРѕС‚РѕСЂС‹С… РЅР°С‚РєРЅСѓР»РёСЃСЊ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ - СЂРёСЃСѓРЅРѕРє РѕС‡РµРЅСЊ РїРѕС…РѕР¶ РЅР° С‚РµР±СЏ.
 	B_GiveInvItems (self, other, ItWr_Poster_MIS,1);
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_04"); //По-видимому, эти парни искали тебя.
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_04"); //РџРѕ-РІРёРґРёРјРѕРјСѓ, СЌС‚Рё РїР°СЂРЅРё РёСЃРєР°Р»Рё С‚РµР±СЏ.
 	
 	
 	Info_ClearChoices (DIA_Pablo_WANTED);
 	
-	Info_AddChoice  (DIA_Pablo_WANTED,"Нет, боюсь, что ты ошибаешься.",DIA_Pablo_WANTED_NOTHING);
-	Info_AddChoice 	(DIA_Pablo_WANTED,"Хм, я сам бы об этом никогда не догадался.",DIA_Pablo_WANTED_IRONY);
+	Info_AddChoice  (DIA_Pablo_WANTED,"РќРµС‚, Р±РѕСЋСЃСЊ, С‡С‚Рѕ С‚С‹ РѕС€РёР±Р°РµС€СЊСЃСЏ.",DIA_Pablo_WANTED_NOTHING);
+	Info_AddChoice 	(DIA_Pablo_WANTED,"РҐРј, СЏ СЃР°Рј Р±С‹ РѕР± СЌС‚РѕРј РЅРёРєРѕРіРґР° РЅРµ РґРѕРіР°РґР°Р»СЃСЏ.",DIA_Pablo_WANTED_IRONY);
 };
 FUNC VOID DIA_Pablo_WANTED_NOTHING()
 {
-	AI_Output (other, self, "DIA_Pablo_WANTED_NOTHING_15_00"); //Нет, боюсь, что ты ошибаешься. Со мной все в порядке ...
-	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_01"); //Как скажешь, чужеземец.
-	//AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); //Aber wenn du Probleme hast - dann lass sie auЯerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_00"); //Но если это все же ТВОЯ физиономия - и если у тебя возникнут проблемы - постарайся решать их за городом. Здесь и без того трудностей хватает.
-	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //А чужаки, которые приносят в город проблемы, долго здесь не задерживаются - надеюсь, я ясно выразился.
+	AI_Output (other, self, "DIA_Pablo_WANTED_NOTHING_15_00"); //РќРµС‚, Р±РѕСЋСЃСЊ, С‡С‚Рѕ С‚С‹ РѕС€РёР±Р°РµС€СЊСЃСЏ. РЎРѕ РјРЅРѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ ...
+	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_01"); //РљР°Рє СЃРєР°Р¶РµС€СЊ, С‡СѓР¶РµР·РµРјРµС†.
+	//AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); //Aber wenn du Probleme hast - dann lass sie auРЇerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_00"); //РќРѕ РµСЃР»Рё СЌС‚Рѕ РІСЃРµ Р¶Рµ РўР’РћРЇ С„РёР·РёРѕРЅРѕРјРёСЏ - Рё РµСЃР»Рё Сѓ С‚РµР±СЏ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹ - РїРѕСЃС‚Р°СЂР°Р№СЃСЏ СЂРµС€Р°С‚СЊ РёС… Р·Р° РіРѕСЂРѕРґРѕРј. Р—РґРµСЃСЊ Рё Р±РµР· С‚РѕРіРѕ С‚СЂСѓРґРЅРѕСЃС‚РµР№ С…РІР°С‚Р°РµС‚.
+	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //Рђ С‡СѓР¶Р°РєРё, РєРѕС‚РѕСЂС‹Рµ РїСЂРёРЅРѕСЃСЏС‚ РІ РіРѕСЂРѕРґ РїСЂРѕР±Р»РµРјС‹, РґРѕР»РіРѕ Р·РґРµСЃСЊ РЅРµ Р·Р°РґРµСЂР¶РёРІР°СЋС‚СЃСЏ - РЅР°РґРµСЋСЃСЊ, СЏ СЏСЃРЅРѕ РІС‹СЂР°Р·РёР»СЃСЏ.
 	Pablo_belogen = TRUE;
 	
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Pablo_WANTED_IRONY()
 {
-	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_00"); //Хм, я сам бы об этом никогда не догадался.
-	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_01"); //Очень смешно ... что этим парням было нужно от тебя?
+	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_00"); //РҐРј, СЏ СЃР°Рј Р±С‹ РѕР± СЌС‚РѕРј РЅРёРєРѕРіРґР° РЅРµ РґРѕРіР°РґР°Р»СЃСЏ.
+	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_01"); //РћС‡РµРЅСЊ СЃРјРµС€РЅРѕ ... С‡С‚Рѕ СЌС‚РёРј РїР°СЂРЅСЏРј Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ РѕС‚ С‚РµР±СЏ?
 	//AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_02"); //Ich werde sie fragen, wenn ich sie sehe. Ihr habt doch die Kerle eingelocht, die den Wisch dabei hatten, oder?
-	AI_Output (other, self,"DIA_Pablo_Add_15_01"); //Спроси их сам. Они ведь сидят у вас за решеткой, разве нет?
-	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_03"); //Нет - они мертвы.
-	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_04"); //Ну, тогда мы никогда этого не узнаем.
-	//AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_05"); //Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. Schцnen Tag noch.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_02"); //Если у тебя какие-то проблемы - иди и поговори с лордом Андрэ. Возможно, он сможет помочь. Ты найдешь его в казармах.
+	AI_Output (other, self,"DIA_Pablo_Add_15_01"); //РЎРїСЂРѕСЃРё РёС… СЃР°Рј. РћРЅРё РІРµРґСЊ СЃРёРґСЏС‚ Сѓ РІР°СЃ Р·Р° СЂРµС€РµС‚РєРѕР№, СЂР°Р·РІРµ РЅРµС‚?
+	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_03"); //РќРµС‚ - РѕРЅРё РјРµСЂС‚РІС‹.
+	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_04"); //РќСѓ, С‚РѕРіРґР° РјС‹ РЅРёРєРѕРіРґР° СЌС‚РѕРіРѕ РЅРµ СѓР·РЅР°РµРј.
+	//AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_05"); //Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. SchС†nen Tag noch.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РєР°РєРёРµ-С‚Рѕ РїСЂРѕР±Р»РµРјС‹ - РёРґРё Рё РїРѕРіРѕРІРѕСЂРё СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂСЌ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РєР°Р·Р°СЂРјР°С….
 	
 	AI_StopProcessInfos (self);
 };
@@ -147,7 +147,7 @@ INSTANCE DIA_Pablo_Banditen   (C_INFO)
 	condition   = DIA_Pablo_Banditen_Condition;
 	information = DIA_Pablo_Banditen_Info;
 	permanent   = FALSE;
-	description = "Что ты знаешь об этих бандитах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РёС… Р±Р°РЅРґРёС‚Р°С…?";
 };
 FUNC INT DIA_Pablo_Banditen_Condition()
 {	
@@ -155,12 +155,12 @@ FUNC INT DIA_Pablo_Banditen_Condition()
 };
 FUNC VOID DIA_Pablo_Banditen_Info()
 {
-	AI_Output (other, self,"DIA_Pablo_Add_15_03"); //Что ты знаешь об этих бандитах?
-	//AI_Output (other, self, "DIA_Pablo_Banditen_15_00"); //Was weiЯt du ьber die Banditen, die vor der Stadt ihr Unwesen treiben?
-	AI_Output (self ,other,"DIA_Pablo_Add_12_04"); //Все они пришли из этой чертовой колонии. Но затем разделились на несколько групп.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_05"); //Часть из них устроила себе логово в горах, а другие присоединились к Онару, лендлорду.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_06"); //Но больше всего проблем доставляют бандиты около города.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_07"); //Вот почему ни один из торговцев даже носа не высовывает за городские ворота.
+	AI_Output (other, self,"DIA_Pablo_Add_15_03"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РёС… Р±Р°РЅРґРёС‚Р°С…?
+	//AI_Output (other, self, "DIA_Pablo_Banditen_15_00"); //Was weiРЇt du СЊber die Banditen, die vor der Stadt ihr Unwesen treiben?
+	AI_Output (self ,other,"DIA_Pablo_Add_12_04"); //Р’СЃРµ РѕРЅРё РїСЂРёС€Р»Рё РёР· СЌС‚РѕР№ С‡РµСЂС‚РѕРІРѕР№ РєРѕР»РѕРЅРёРё. РќРѕ Р·Р°С‚РµРј СЂР°Р·РґРµР»РёР»РёСЃСЊ РЅР° РЅРµСЃРєРѕР»СЊРєРѕ РіСЂСѓРїРї.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_05"); //Р§Р°СЃС‚СЊ РёР· РЅРёС… СѓСЃС‚СЂРѕРёР»Р° СЃРµР±Рµ Р»РѕРіРѕРІРѕ РІ РіРѕСЂР°С…, Р° РґСЂСѓРіРёРµ РїСЂРёСЃРѕРµРґРёРЅРёР»РёСЃСЊ Рє РћРЅР°СЂСѓ, Р»РµРЅРґР»РѕСЂРґСѓ.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_06"); //РќРѕ Р±РѕР»СЊС€Рµ РІСЃРµРіРѕ РїСЂРѕР±Р»РµРј РґРѕСЃС‚Р°РІР»СЏСЋС‚ Р±Р°РЅРґРёС‚С‹ РѕРєРѕР»Рѕ РіРѕСЂРѕРґР°.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_07"); //Р’РѕС‚ РїРѕС‡РµРјСѓ РЅРё РѕРґРёРЅ РёР· С‚РѕСЂРіРѕРІС†РµРІ РґР°Р¶Рµ РЅРѕСЃР° РЅРµ РІС‹СЃРѕРІС‹РІР°РµС‚ Р·Р° РіРѕСЂРѕРґСЃРєРёРµ РІРѕСЂРѕС‚Р°.
 };
 
 // *************************************************************
@@ -173,7 +173,7 @@ INSTANCE DIA_Pablo_HakonBandits   (C_INFO)
 	condition   = DIA_Pablo_HakonBandits_Condition;
 	information = DIA_Pablo_HakonBandits_Info;
 	permanent   = FALSE;
-	description = "Что ты знаешь о бандитах, ограбивших торговца Хакона?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р±Р°РЅРґРёС‚Р°С…, РѕРіСЂР°Р±РёРІС€РёС… С‚РѕСЂРіРѕРІС†Р° РҐР°РєРѕРЅР°?";
 };
 FUNC INT DIA_Pablo_HakonBandits_Condition()
 {	
@@ -185,25 +185,25 @@ FUNC INT DIA_Pablo_HakonBandits_Condition()
 };
 FUNC VOID DIA_Pablo_HakonBandits_Info()
 {
-	AI_Output (other, self,"DIA_Pablo_Add_15_20"); //Что ты знаешь о бандитах, ограбивших торговца Хакона?
-	AI_Output (self ,other,"DIA_Pablo_Add_12_21"); //Ох, ЭТО дело... Не напоминай мне ...
-	AI_Output (self ,other,"DIA_Pablo_Add_12_22"); //Насколько я знаю, именно они ответственны за большинство нападений на торговцев.
+	AI_Output (other, self,"DIA_Pablo_Add_15_20"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р±Р°РЅРґРёС‚Р°С…, РѕРіСЂР°Р±РёРІС€РёС… С‚РѕСЂРіРѕРІС†Р° РҐР°РєРѕРЅР°?
+	AI_Output (self ,other,"DIA_Pablo_Add_12_21"); //РћС…, Р­РўРћ РґРµР»Рѕ... РќРµ РЅР°РїРѕРјРёРЅР°Р№ РјРЅРµ ...
+	AI_Output (self ,other,"DIA_Pablo_Add_12_22"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, РёРјРµРЅРЅРѕ РѕРЅРё РѕС‚РІРµС‚СЃС‚РІРµРЅРЅС‹ Р·Р° Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РЅР°РїР°РґРµРЅРёР№ РЅР° С‚РѕСЂРіРѕРІС†РµРІ.
 	
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_01"); //Эти крысы уползли в свою нору и больше не высовываются оттуда.
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_02"); //Как-то, нам даже удалось выследить их и погнаться за ними. Но нам пришлось прервать погоню в лесу у города.
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_03"); //Там бродит слишком много всяких зверей и это слишком опасно.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_01"); //Р­С‚Рё РєСЂС‹СЃС‹ СѓРїРѕР»Р·Р»Рё РІ СЃРІРѕСЋ РЅРѕСЂСѓ Рё Р±РѕР»СЊС€Рµ РЅРµ РІС‹СЃРѕРІС‹РІР°СЋС‚СЃСЏ РѕС‚С‚СѓРґР°.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_02"); //РљР°Рє-С‚Рѕ, РЅР°Рј РґР°Р¶Рµ СѓРґР°Р»РѕСЃСЊ РІС‹СЃР»РµРґРёС‚СЊ РёС… Рё РїРѕРіРЅР°С‚СЊСЃСЏ Р·Р° РЅРёРјРё. РќРѕ РЅР°Рј РїСЂРёС€Р»РѕСЃСЊ РїСЂРµСЂРІР°С‚СЊ РїРѕРіРѕРЅСЋ РІ Р»РµСЃСѓ Сѓ РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_03"); //РўР°Рј Р±СЂРѕРґРёС‚ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РІСЃСЏРєРёС… Р·РІРµСЂРµР№ Рё СЌС‚Рѕ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ.
 	
-	B_LogEntry(TOPIC_HakonBanditen,"Бандиты, ограбившие Хакона, скрываются где-то в лесу неподалеку от города." );
+	B_LogEntry(TOPIC_HakonBanditen,"Р‘Р°РЅРґРёС‚С‹, РѕРіСЂР°Р±РёРІС€РёРµ РҐР°РєРѕРЅР°, СЃРєСЂС‹РІР°СЋС‚СЃСЏ РіРґРµ-С‚Рѕ РІ Р»РµСЃСѓ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РіРѕСЂРѕРґР°." );
 	
 	if (Pablo_AndreMelden == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Pablo_Add_12_23"); //Но есть еще кое-что ...
-		AI_Output (self, other, "DIA_Pablo_Banditen_12_04"); //Часть украденных товаров всплыла в Хоринисе.
-		AI_Output (other, self, "DIA_Pablo_Banditen_15_05"); //Это означает, что они имеют возможность контрабандой доставлять товары в город и продавать их ...
-		AI_Output (self, other, "DIA_Pablo_Banditen_12_06"); //Да, мы подозреваем, что у них есть свой человек в городе. Но нам пока не удалось поймать его.
-		AI_Output (self, other, "DIA_Pablo_Banditen_12_07"); //Если тебе удастся выяснить что-нибудь об этом деле, помни, что Лорд Андрэ назначил награду за голову этого скупщика краденного.
+		AI_Output (self ,other,"DIA_Pablo_Add_12_23"); //РќРѕ РµСЃС‚СЊ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ ...
+		AI_Output (self, other, "DIA_Pablo_Banditen_12_04"); //Р§Р°СЃС‚СЊ СѓРєСЂР°РґРµРЅРЅС‹С… С‚РѕРІР°СЂРѕРІ РІСЃРїР»С‹Р»Р° РІ РҐРѕСЂРёРЅРёСЃРµ.
+		AI_Output (other, self, "DIA_Pablo_Banditen_15_05"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ РѕРЅРё РёРјРµСЋС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РєРѕРЅС‚СЂР°Р±Р°РЅРґРѕР№ РґРѕСЃС‚Р°РІР»СЏС‚СЊ С‚РѕРІР°СЂС‹ РІ РіРѕСЂРѕРґ Рё РїСЂРѕРґР°РІР°С‚СЊ РёС… ...
+		AI_Output (self, other, "DIA_Pablo_Banditen_12_06"); //Р”Р°, РјС‹ РїРѕРґРѕР·СЂРµРІР°РµРј, С‡С‚Рѕ Сѓ РЅРёС… РµСЃС‚СЊ СЃРІРѕР№ С‡РµР»РѕРІРµРє РІ РіРѕСЂРѕРґРµ. РќРѕ РЅР°Рј РїРѕРєР° РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР№РјР°С‚СЊ РµРіРѕ.
+		AI_Output (self, other, "DIA_Pablo_Banditen_12_07"); //Р•СЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РІС‹СЏСЃРЅРёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РѕР± СЌС‚РѕРј РґРµР»Рµ, РїРѕРјРЅРё, С‡С‚Рѕ Р›РѕСЂРґ РђРЅРґСЂСЌ РЅР°Р·РЅР°С‡РёР» РЅР°РіСЂР°РґСѓ Р·Р° РіРѕР»РѕРІСѓ СЌС‚РѕРіРѕ СЃРєСѓРїС‰РёРєР° РєСЂР°РґРµРЅРЅРѕРіРѕ.
 	
-		B_LogEntry(TOPIC_HakonBanditen,"Эти бандиты, вероятно, состоят в сговоре с кем-то из городских дельцов. Лорд Андре назначил награду за голову этого дельца." );
+		B_LogEntry(TOPIC_HakonBanditen,"Р­С‚Рё Р±Р°РЅРґРёС‚С‹, РІРµСЂРѕСЏС‚РЅРѕ, СЃРѕСЃС‚РѕСЏС‚ РІ СЃРіРѕРІРѕСЂРµ СЃ РєРµРј-С‚Рѕ РёР· РіРѕСЂРѕРґСЃРєРёС… РґРµР»СЊС†РѕРІ. Р›РѕСЂРґ РђРЅРґСЂРµ РЅР°Р·РЅР°С‡РёР» РЅР°РіСЂР°РґСѓ Р·Р° РіРѕР»РѕРІСѓ СЌС‚РѕРіРѕ РґРµР»СЊС†Р°." );
 	};
 }; 
 
@@ -217,7 +217,7 @@ INSTANCE DIA_Pablo_MyBandits   (C_INFO)
 	condition   = DIA_Pablo_MyBandits_Condition;
 	information = DIA_Pablo_MyBandits_Info;
 	permanent   = FALSE;
-	description = "А откуда пришли бандиты, у которых нашли листок с моим изображением?";
+	description = "Рђ РѕС‚РєСѓРґР° РїСЂРёС€Р»Рё Р±Р°РЅРґРёС‚С‹, Сѓ РєРѕС‚РѕСЂС‹С… РЅР°С€Р»Рё Р»РёСЃС‚РѕРє СЃ РјРѕРёРј РёР·РѕР±СЂР°Р¶РµРЅРёРµРј?";
 };
 FUNC INT DIA_Pablo_MyBandits_Condition()
 {	
@@ -229,23 +229,23 @@ FUNC INT DIA_Pablo_MyBandits_Condition()
 };
 FUNC VOID DIA_Pablo_MyBandits_Info()
 {
-	AI_Output (other, self,"DIA_Pablo_Add_15_08"); //А откуда пришли бандиты, у которых нашли листок с моим изображением?
+	AI_Output (other, self,"DIA_Pablo_Add_15_08"); //Рђ РѕС‚РєСѓРґР° РїСЂРёС€Р»Рё Р±Р°РЅРґРёС‚С‹, Сѓ РєРѕС‚РѕСЂС‹С… РЅР°С€Р»Рё Р»РёСЃС‚РѕРє СЃ РјРѕРёРј РёР·РѕР±СЂР°Р¶РµРЅРёРµРј?
 	if (Pablo_belogen == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Pablo_Add_12_09"); //А-ГА! Так это все же ТВОЯ физиономия там. А почему ты сразу это не признал, а?
-		AI_Output (self ,other,"DIA_Pablo_Add_12_10"); //(требовательно) За что тебя разыскивают?
-		AI_Output (other, self,"DIA_Pablo_Add_15_11"); //Я не знаю - честно!
-		AI_Output (self ,other,"DIA_Pablo_Add_12_12"); //Да, да. Конечно. Я хочу, чтобы ты кое-что понял. Если бы я думал, что ты был сообщником этих бандитов, ты бы уже отдыхал за решеткой.
-		AI_Output (self ,other,"DIA_Pablo_Add_12_13"); //Но се же, мне лучше доложить об этом инциденте лорду Андрэ ...
+		AI_Output (self ,other,"DIA_Pablo_Add_12_09"); //Рђ-Р“Рђ! РўР°Рє СЌС‚Рѕ РІСЃРµ Р¶Рµ РўР’РћРЇ С„РёР·РёРѕРЅРѕРјРёСЏ С‚Р°Рј. Рђ РїРѕС‡РµРјСѓ С‚С‹ СЃСЂР°Р·Сѓ СЌС‚Рѕ РЅРµ РїСЂРёР·РЅР°Р», Р°?
+		AI_Output (self ,other,"DIA_Pablo_Add_12_10"); //(С‚СЂРµР±РѕРІР°С‚РµР»СЊРЅРѕ) Р—Р° С‡С‚Рѕ С‚РµР±СЏ СЂР°Р·С‹СЃРєРёРІР°СЋС‚?
+		AI_Output (other, self,"DIA_Pablo_Add_15_11"); //РЇ РЅРµ Р·РЅР°СЋ - С‡РµСЃС‚РЅРѕ!
+		AI_Output (self ,other,"DIA_Pablo_Add_12_12"); //Р”Р°, РґР°. РљРѕРЅРµС‡РЅРѕ. РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РєРѕРµ-С‡С‚Рѕ РїРѕРЅСЏР». Р•СЃР»Рё Р±С‹ СЏ РґСѓРјР°Р», С‡С‚Рѕ С‚С‹ Р±С‹Р» СЃРѕРѕР±С‰РЅРёРєРѕРј СЌС‚РёС… Р±Р°РЅРґРёС‚РѕРІ, С‚С‹ Р±С‹ СѓР¶Рµ РѕС‚РґС‹С…Р°Р» Р·Р° СЂРµС€РµС‚РєРѕР№.
+		AI_Output (self ,other,"DIA_Pablo_Add_12_13"); //РќРѕ СЃРµ Р¶Рµ, РјРЅРµ Р»СѓС‡С€Рµ РґРѕР»РѕР¶РёС‚СЊ РѕР± СЌС‚РѕРј РёРЅС†РёРґРµРЅС‚Рµ Р»РѕСЂРґСѓ РђРЅРґСЂСЌ ...
 		Pablo_AndreMelden = TRUE;
-		AI_Output (self ,other,"DIA_Pablo_Add_12_14"); //Но - отвечая на твой вопрос ...
+		AI_Output (self ,other,"DIA_Pablo_Add_12_14"); //РќРѕ - РѕС‚РІРµС‡Р°СЏ РЅР° С‚РІРѕР№ РІРѕРїСЂРѕСЃ ...
 	};
 
-	AI_Output (self ,other,"DIA_Pablo_Add_12_15"); //Мы нашли их неподалеку от поместья лендлорда.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_16"); //Но они были не похожи на людей Онара.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_17"); //Я думаю, они были частью банды, которая засела в горах около фермы Онара.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_18"); //Но если ты захочешь отправиться туда, позволь мне тебя предупредить. Эти головорезы могут сделать котлету из кого угодно!
-	AI_Output (other, self,"DIA_Pablo_Add_15_19"); //Я запомню это.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_15"); //РњС‹ РЅР°С€Р»Рё РёС… РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РїРѕРјРµСЃС‚СЊСЏ Р»РµРЅРґР»РѕСЂРґР°.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_16"); //РќРѕ РѕРЅРё Р±С‹Р»Рё РЅРµ РїРѕС…РѕР¶Рё РЅР° Р»СЋРґРµР№ РћРЅР°СЂР°.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_17"); //РЇ РґСѓРјР°СЋ, РѕРЅРё Р±С‹Р»Рё С‡Р°СЃС‚СЊСЋ Р±Р°РЅРґС‹, РєРѕС‚РѕСЂР°СЏ Р·Р°СЃРµР»Р° РІ РіРѕСЂР°С… РѕРєРѕР»Рѕ С„РµСЂРјС‹ РћРЅР°СЂР°.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_18"); //РќРѕ РµСЃР»Рё С‚С‹ Р·Р°С…РѕС‡РµС€СЊ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ С‚СѓРґР°, РїРѕР·РІРѕР»СЊ РјРЅРµ С‚РµР±СЏ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ. Р­С‚Рё РіРѕР»РѕРІРѕСЂРµР·С‹ РјРѕРіСѓС‚ СЃРґРµР»Р°С‚СЊ РєРѕС‚Р»РµС‚Сѓ РёР· РєРѕРіРѕ СѓРіРѕРґРЅРѕ!
+	AI_Output (other, self,"DIA_Pablo_Add_15_19"); //РЇ Р·Р°РїРѕРјРЅСЋ СЌС‚Рѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -258,7 +258,7 @@ INSTANCE DIA_Pablo_Perm   (C_INFO)
 	condition   = DIA_Pablo_Perm_Condition;
 	information = DIA_Pablo_Perm_Info;
 	permanent   = TRUE;
-	description = "Как ситуация?";
+	description = "РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };
 FUNC INT DIA_Pablo_Perm_Condition()
 {	
@@ -266,7 +266,7 @@ FUNC INT DIA_Pablo_Perm_Condition()
 };
 FUNC VOID DIA_Pablo_Perm_Info()
 {
-	AI_Output (other, self, "DIA_Pablo_Perm_15_00"); //Как обстановка?
+	AI_Output (other, self, "DIA_Pablo_Perm_15_00"); //РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
 	
 	if (Kapitel == 3)
 	{
@@ -275,41 +275,41 @@ FUNC VOID DIA_Pablo_Perm_Info()
 			if (hero.guild == GIL_MIL)
 			|| (hero.guild == GIL_PAL)
 			{
-				AI_Output (self, other, "DIA_Pablo_Perm_12_01"); //Я всегда говорил, что этим наемникам нельзя доверять.
-				AI_Output (self, other, "DIA_Pablo_Perm_12_02"); //Пришло время преподать этому сброду урок. Беннет не мог провернуть все это в одиночку.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_01"); //РЇ РІСЃРµРіРґР° РіРѕРІРѕСЂРёР», С‡С‚Рѕ СЌС‚РёРј РЅР°РµРјРЅРёРєР°Рј РЅРµР»СЊР·СЏ РґРѕРІРµСЂСЏС‚СЊ.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_02"); //РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїСЂРµРїРѕРґР°С‚СЊ СЌС‚РѕРјСѓ СЃР±СЂРѕРґСѓ СѓСЂРѕРє. Р‘РµРЅРЅРµС‚ РЅРµ РјРѕРі РїСЂРѕРІРµСЂРЅСѓС‚СЊ РІСЃРµ СЌС‚Рѕ РІ РѕРґРёРЅРѕС‡РєСѓ.
 			}
 			else if (hero.guild == GIL_KDF)
 			{
-				AI_Output (self, other, "DIA_Pablo_Perm_12_03"); //Я глубоко потрясен убийством достопочтенного паладина Лотара.
-				AI_Output (self, other, "DIA_Pablo_Perm_12_04"); //Но я знаю, что церковь подберет справедливое наказание для этого злодей.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_03"); //РЇ РіР»СѓР±РѕРєРѕ РїРѕС‚СЂСЏСЃРµРЅ СѓР±РёР№СЃС‚РІРѕРј РґРѕСЃС‚РѕРїРѕС‡С‚РµРЅРЅРѕРіРѕ РїР°Р»Р°РґРёРЅР° Р›РѕС‚Р°СЂР°.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_04"); //РќРѕ СЏ Р·РЅР°СЋ, С‡С‚Рѕ С†РµСЂРєРѕРІСЊ РїРѕРґР±РµСЂРµС‚ СЃРїСЂР°РІРµРґР»РёРІРѕРµ РЅР°РєР°Р·Р°РЅРёРµ РґР»СЏ СЌС‚РѕРіРѕ Р·Р»РѕРґРµР№.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Pablo_Perm_12_05"); //Что ты тут ошиваешься? Если ты собираешься освободить своего дружка наемника, лучше тебе забыть об этом.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_05"); //Р§С‚Рѕ С‚С‹ С‚СѓС‚ РѕС€РёРІР°РµС€СЊСЃСЏ? Р•СЃР»Рё С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РѕСЃРІРѕР±РѕРґРёС‚СЊ СЃРІРѕРµРіРѕ РґСЂСѓР¶РєР° РЅР°РµРјРЅРёРєР°, Р»СѓС‡С€Рµ С‚РµР±Рµ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕРј.
 			};
 		}
 		else //Bennet ist unschuldig
 		{
-			AI_Output (self, other, "DIA_Pablo_Perm_12_06"); //Это тревожит меня. Теперь они пытаются стравить нас друг с другом.
-			AI_Output (self, other, "DIA_Pablo_Perm_12_07"); //Если бы тебе не удалось найти настоящего убийцу, оркам даже не пришлось бы ничего делать.
+			AI_Output (self, other, "DIA_Pablo_Perm_12_06"); //Р­С‚Рѕ С‚СЂРµРІРѕР¶РёС‚ РјРµРЅСЏ. РўРµРїРµСЂСЊ РѕРЅРё РїС‹С‚Р°СЋС‚СЃСЏ СЃС‚СЂР°РІРёС‚СЊ РЅР°СЃ РґСЂСѓРі СЃ РґСЂСѓРіРѕРј.
+			AI_Output (self, other, "DIA_Pablo_Perm_12_07"); //Р•СЃР»Рё Р±С‹ С‚РµР±Рµ РЅРµ СѓРґР°Р»РѕСЃСЊ РЅР°Р№С‚Рё РЅР°СЃС‚РѕСЏС‰РµРіРѕ СѓР±РёР№С†Сѓ, РѕСЂРєР°Рј РґР°Р¶Рµ РЅРµ РїСЂРёС€Р»РѕСЃСЊ Р±С‹ РЅРёС‡РµРіРѕ РґРµР»Р°С‚СЊ.
 		};
 	}
 	else if (Kapitel == 5)
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_08"); //Я не знаю, что будет с нами, если паладины уйдут отсюда.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_08"); //РЇ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ Р±СѓРґРµС‚ СЃ РЅР°РјРё, РµСЃР»Рё РїР°Р»Р°РґРёРЅС‹ СѓР№РґСѓС‚ РѕС‚СЃСЋРґР°.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_09"); //Ты можешь рассчитывать на нас, мы сделаем все возможное, чтобы этот город не превратился в притон для бандитов.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_09"); //РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РЅР°СЃ, РјС‹ СЃРґРµР»Р°РµРј РІСЃРµ РІРѕР·РјРѕР¶РЅРѕРµ, С‡С‚РѕР±С‹ СЌС‚РѕС‚ РіРѕСЂРѕРґ РЅРµ РїСЂРµРІСЂР°С‚РёР»СЃСЏ РІ РїСЂРёС‚РѕРЅ РґР»СЏ Р±Р°РЅРґРёС‚РѕРІ.
 	}
 	else if (hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_10"); //Постарайся вести себя как подобает. Мы глаз не спускаем с таких как ты.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_10"); //РџРѕСЃС‚Р°СЂР°Р№СЃСЏ РІРµСЃС‚Рё СЃРµР±СЏ РєР°Рє РїРѕРґРѕР±Р°РµС‚. РњС‹ РіР»Р°Р· РЅРµ СЃРїСѓСЃРєР°РµРј СЃ С‚Р°РєРёС… РєР°Рє С‚С‹.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_11"); //Пока все спокойно. Только бандиты у города доставляют нам небольшие проблемы.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_11"); //РџРѕРєР° РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ. РўРѕР»СЊРєРѕ Р±Р°РЅРґРёС‚С‹ Сѓ РіРѕСЂРѕРґР° РґРѕСЃС‚Р°РІР»СЏСЋС‚ РЅР°Рј РЅРµР±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹.
 	};	
 
 }; 

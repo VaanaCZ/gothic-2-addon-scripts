@@ -2,7 +2,7 @@
 instance VLK_476_Fenia (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Τενÿ";	//Halvors Frau
+	name 		= "Π¤ΠµΠ½Ρ";	//Halvors Frau
 	guild 		= GIL_VLK;
 	id 			= 476;
 	voice 		= 17;

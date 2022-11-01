@@ -21,7 +21,7 @@ FUNC INT DIA_Herold_Info_Condition()
 
 FUNC VOID DIA_Herold_Info_Info()
 {
-	AI_Output (self ,other,"DIA_Herold_Info_04_00"); //Отстань от меня, я на работе.
+	AI_Output (self ,other,"DIA_Herold_Info_04_00"); //РћС‚СЃС‚Р°РЅСЊ РѕС‚ РјРµРЅСЏ, СЏ РЅР° СЂР°Р±РѕС‚Рµ.
 	
 	AI_StopProcessInfos (self);
 };

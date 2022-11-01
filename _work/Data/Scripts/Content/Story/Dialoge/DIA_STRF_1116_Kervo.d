@@ -32,7 +32,7 @@ instance DIA_Kervo_WASIST		(C_INFO)
 	condition	 = 	DIA_Kervo_WASIST_Condition;
 	information	 = 	DIA_Kervo_WASIST_Info;
 
-	description	 = 	"Да что с тобой?";
+	description	 = 	"Р”Р° С‡С‚Рѕ СЃ С‚РѕР±РѕР№?";
 };
 
 func int DIA_Kervo_WASIST_Condition ()
@@ -42,11 +42,11 @@ func int DIA_Kervo_WASIST_Condition ()
 
 func void DIA_Kervo_WASIST_Info ()
 {
-	AI_Output			(other, self, "DIA_Kervo_WASIST_15_00"); //Да что с тобой?
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_01"); //Ты еще спрашиваешь? Ты только вокруг посмотри!
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_02"); //Эти чертовы луркеры заняли всю реку с тех пор, как я пришел сюда.
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_03"); //Сначала их было всего двое. Но вчера я насчитал уже пять.
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_04"); //Теперь я не знаю, как мне удастся выбраться отсюда.
+	AI_Output			(other, self, "DIA_Kervo_WASIST_15_00"); //Р”Р° С‡С‚Рѕ СЃ С‚РѕР±РѕР№?
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_01"); //РўС‹ РµС‰Рµ СЃРїСЂР°С€РёРІР°РµС€СЊ? РўС‹ С‚РѕР»СЊРєРѕ РІРѕРєСЂСѓРі РїРѕСЃРјРѕС‚СЂРё!
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_02"); //Р­С‚Рё С‡РµСЂС‚РѕРІС‹ Р»СѓСЂРєРµСЂС‹ Р·Р°РЅСЏР»Рё РІСЃСЋ СЂРµРєСѓ СЃ С‚РµС… РїРѕСЂ, РєР°Рє СЏ РїСЂРёС€РµР» СЃСЋРґР°.
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_03"); //РЎРЅР°С‡Р°Р»Р° РёС… Р±С‹Р»Рѕ РІСЃРµРіРѕ РґРІРѕРµ. РќРѕ РІС‡РµСЂР° СЏ РЅР°СЃС‡РёС‚Р°Р» СѓР¶Рµ РїСЏС‚СЊ.
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_04"); //РўРµРїРµСЂСЊ СЏ РЅРµ Р·РЅР°СЋ, РєР°Рє РјРЅРµ СѓРґР°СЃС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
 };
 
 
@@ -60,7 +60,7 @@ instance DIA_Kervo_HILFE		(C_INFO)
 	condition	 = 	DIA_Kervo_HILFE_Condition;
 	information	 = 	DIA_Kervo_HILFE_Info;
 
-	description	 = 	"Ты пытался пробраться через Проход?";
+	description	 = 	"РўС‹ РїС‹С‚Р°Р»СЃСЏ РїСЂРѕР±СЂР°С‚СЊСЃСЏ С‡РµСЂРµР· РџСЂРѕС…РѕРґ?";
 };
 
 func int DIA_Kervo_HILFE_Condition ()
@@ -72,51 +72,51 @@ func int DIA_Kervo_HILFE_Condition ()
 };
 func void DIA_Kervo_HILFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Kervo_HILFE_15_00"); //Ты пытался пробраться через Проход?
-	AI_Output			(self, other, "DIA_Kervo_HILFE_13_01"); //Я что, по-твоему, из ума выжил? Даже 20 солдат не вытащат меня отсюда, пока эти твари бродят там. Ненавижу их.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_13_02"); //Стоит мне почувствовать их запах, и я покрываюсь холодным потом. А от их похрюкивания кровь стынет в моих венах.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_13_03"); //Если тебе так хочется, чтобы с тебя содрали шкуру заживо, можешь рискнуть.
+	AI_Output			(other, self, "DIA_Kervo_HILFE_15_00"); //РўС‹ РїС‹С‚Р°Р»СЃСЏ РїСЂРѕР±СЂР°С‚СЊСЃСЏ С‡РµСЂРµР· РџСЂРѕС…РѕРґ?
+	AI_Output			(self, other, "DIA_Kervo_HILFE_13_01"); //РЇ С‡С‚Рѕ, РїРѕ-С‚РІРѕРµРјСѓ, РёР· СѓРјР° РІС‹Р¶РёР»? Р”Р°Р¶Рµ 20 СЃРѕР»РґР°С‚ РЅРµ РІС‹С‚Р°С‰Р°С‚ РјРµРЅСЏ РѕС‚СЃСЋРґР°, РїРѕРєР° СЌС‚Рё С‚РІР°СЂРё Р±СЂРѕРґСЏС‚ С‚Р°Рј. РќРµРЅР°РІРёР¶Сѓ РёС….
+	AI_Output			(self, other, "DIA_Kervo_HILFE_13_02"); //РЎС‚РѕРёС‚ РјРЅРµ РїРѕС‡СѓРІСЃС‚РІРѕРІР°С‚СЊ РёС… Р·Р°РїР°С…, Рё СЏ РїРѕРєСЂС‹РІР°СЋСЃСЊ С…РѕР»РѕРґРЅС‹Рј РїРѕС‚РѕРј. Рђ РѕС‚ РёС… РїРѕС…СЂСЋРєРёРІР°РЅРёСЏ РєСЂРѕРІСЊ СЃС‚С‹РЅРµС‚ РІ РјРѕРёС… РІРµРЅР°С….
+	AI_Output			(self, other, "DIA_Kervo_HILFE_13_03"); //Р•СЃР»Рё С‚РµР±Рµ С‚Р°Рє С…РѕС‡РµС‚СЃСЏ, С‡С‚РѕР±С‹ СЃ С‚РµР±СЏ СЃРѕРґСЂР°Р»Рё С€РєСѓСЂСѓ Р·Р°Р¶РёРІРѕ, РјРѕР¶РµС€СЊ СЂРёСЃРєРЅСѓС‚СЊ.
 
 	Info_ClearChoices	(DIA_Kervo_HILFE);
-	Info_AddChoice	(DIA_Kervo_HILFE, "Ладно. Я ухожу.", DIA_Kervo_HILFE_tschau );
-	Info_AddChoice	(DIA_Kervo_HILFE, "Но ты же не можешь оставаться здесь вечно.", DIA_Kervo_HILFE_ewig );
+	Info_AddChoice	(DIA_Kervo_HILFE, "Р›Р°РґРЅРѕ. РЇ СѓС…РѕР¶Сѓ.", DIA_Kervo_HILFE_tschau );
+	Info_AddChoice	(DIA_Kervo_HILFE, "РќРѕ С‚С‹ Р¶Рµ РЅРµ РјРѕР¶РµС€СЊ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ РІРµС‡РЅРѕ.", DIA_Kervo_HILFE_ewig );
 
 	if (Kervo_GotStuff == TRUE)
 	{
-		Info_AddChoice	(DIA_Kervo_HILFE, "Что ты мне дашь, если я убью этих тварей?", DIA_Kervo_HILFE_Problem );
+		Info_AddChoice	(DIA_Kervo_HILFE, "Р§С‚Рѕ С‚С‹ РјРЅРµ РґР°С€СЊ, РµСЃР»Рё СЏ СѓР±СЊСЋ СЌС‚РёС… С‚РІР°СЂРµР№?", DIA_Kervo_HILFE_Problem );
 	};
 
 	MIS_Kervo_KillLurker = LOG_RUNNING;
 };
 func void DIA_Kervo_HILFE_ewig ()
 {
-	AI_Output			(other, self, "DIA_Kervo_HILFE_ewig_15_00"); //Но ты же не можешь оставаться здесь вечно.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_ewig_13_01"); //Я не знаю, что тебе нужно от меня, но я могу сказать тебе одно: ты не заставишь меня уйти отсюда.
+	AI_Output			(other, self, "DIA_Kervo_HILFE_ewig_15_00"); //РќРѕ С‚С‹ Р¶Рµ РЅРµ РјРѕР¶РµС€СЊ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ РІРµС‡РЅРѕ.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_ewig_13_01"); //РЇ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ, РЅРѕ СЏ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ РѕРґРЅРѕ: С‚С‹ РЅРµ Р·Р°СЃС‚Р°РІРёС€СЊ РјРµРЅСЏ СѓР№С‚Рё РѕС‚СЃСЋРґР°.
 };
 var int Kervo_PromiseNugget;
 func void DIA_Kervo_HILFE_Problem ()
 {
-	AI_Output			(other, self, "DIA_Kervo_HILFE_Problem_15_00"); //Что ты мне дашь, если я убью этих тварей?
-	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_01"); //Ммм. Ну. Я был бы не прочь, чтобы эти луркеры, что бродят перед пещерой, исчезли.
+	AI_Output			(other, self, "DIA_Kervo_HILFE_Problem_15_00"); //Р§С‚Рѕ С‚С‹ РјРЅРµ РґР°С€СЊ, РµСЃР»Рё СЏ СѓР±СЊСЋ СЌС‚РёС… С‚РІР°СЂРµР№?
+	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_01"); //РњРјРј. РќСѓ. РЇ Р±С‹Р» Р±С‹ РЅРµ РїСЂРѕС‡СЊ, С‡С‚РѕР±С‹ СЌС‚Рё Р»СѓСЂРєРµСЂС‹, С‡С‚Рѕ Р±СЂРѕРґСЏС‚ РїРµСЂРµРґ РїРµС‰РµСЂРѕР№, РёСЃС‡РµР·Р»Рё.
 	
 	if (hero.guild == GIL_KDF)
 	{	
-		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_02"); //Я нашел чистый рунный камень. Ты ведь маг. Я уверен, ты найдешь применение ему.
+		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_02"); //РЇ РЅР°С€РµР» С‡РёСЃС‚С‹Р№ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ. РўС‹ РІРµРґСЊ РјР°Рі. РЇ СѓРІРµСЂРµРЅ, С‚С‹ РЅР°Р№РґРµС€СЊ РїСЂРёРјРµРЅРµРЅРёРµ РµРјСѓ.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_03"); //Я нашел кусок руды.
+		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_03"); //РЇ РЅР°С€РµР» РєСѓСЃРѕРє СЂСѓРґС‹.
 	};
 
-	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_04"); //Я отдам тебе его.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_04"); //РЇ РѕС‚РґР°Рј С‚РµР±Рµ РµРіРѕ.
 	Kervo_PromiseNugget = TRUE;
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Kervo_HILFE_tschau ()
 {
-	AI_Output			(other, self, "DIA_Kervo_HILFE_tschau_15_00"); //Ладно. Я ухожу.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_tschau_13_01"); //Как знаешь. Я тебя удерживать не буду.
+	AI_Output			(other, self, "DIA_Kervo_HILFE_tschau_15_00"); //Р›Р°РґРЅРѕ. РЇ СѓС…РѕР¶Сѓ.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_tschau_13_01"); //РљР°Рє Р·РЅР°РµС€СЊ. РЇ С‚РµР±СЏ СѓРґРµСЂР¶РёРІР°С‚СЊ РЅРµ Р±СѓРґСѓ.
 
 	AI_StopProcessInfos (self);
 };
@@ -130,7 +130,7 @@ instance DIA_Kervo_LurkerPlatt		(C_INFO)
 	condition	 = 	DIA_Kervo_LurkerPlatt_Condition;
 	information	 = 	DIA_Kervo_LurkerPlatt_Info;
 
-	description = 	"Луркеров больше нет.";	
+	description = 	"Р›СѓСЂРєРµСЂРѕРІ Р±РѕР»СЊС€Рµ РЅРµС‚.";	
 };
 
 func int DIA_Kervo_LurkerPlatt_Condition ()
@@ -149,12 +149,12 @@ func int DIA_Kervo_LurkerPlatt_Condition ()
 
 func void DIA_Kervo_LurkerPlatt_Info ()
 {
-	AI_Output			(other, self, "DIA_Kervo_LurkerPlatt_15_00"); //Луркеров больше нет.
-	AI_Output			(self, other, "DIA_Kervo_LurkerPlatt_13_01"); //Отлично. Теперь я опять смогу спать спокойно.
+	AI_Output			(other, self, "DIA_Kervo_LurkerPlatt_15_00"); //Р›СѓСЂРєРµСЂРѕРІ Р±РѕР»СЊС€Рµ РЅРµС‚.
+	AI_Output			(self, other, "DIA_Kervo_LurkerPlatt_13_01"); //РћС‚Р»РёС‡РЅРѕ. РўРµРїРµСЂСЊ СЏ РѕРїСЏС‚СЊ СЃРјРѕРіСѓ СЃРїР°С‚СЊ СЃРїРѕРєРѕР№РЅРѕ.
 
 	if (Kervo_PromiseNugget == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Kervo_LurkerPlatt_13_02"); //Вот то, что я обещал тебе.
+		AI_Output			(self, other, "DIA_Kervo_LurkerPlatt_13_02"); //Р’РѕС‚ С‚Рѕ, С‡С‚Рѕ СЏ РѕР±РµС‰Р°Р» С‚РµР±Рµ.
 	
 		if (hero.guild == GIL_KDF)
 		{
@@ -179,7 +179,7 @@ instance DIA_Kervo_VERGISSES		(C_INFO)
 	information	 = 	DIA_Kervo_VERGISSES_Info;
 	permanent	 = 	TRUE;
 
-	description = 	"Ты теперь пойдешь к Проходу?";	
+	description = 	"РўС‹ С‚РµРїРµСЂСЊ РїРѕР№РґРµС€СЊ Рє РџСЂРѕС…РѕРґСѓ?";	
 };
 
 func int DIA_Kervo_VERGISSES_Condition ()
@@ -192,8 +192,8 @@ func int DIA_Kervo_VERGISSES_Condition ()
 
 func void DIA_Kervo_VERGISSES_Info ()
 {
-	AI_Output			(other, self, "DIA_Kervo_VERGISSES_15_00"); //Ты теперь пойдешь к Проходу?
-	AI_Output			(self, other, "DIA_Kervo_VERGISSES_13_01"); //Забудь об этом, парень. Если меня поймают, то опять заставят работать в шахте. Я останусь здесь.
+	AI_Output			(other, self, "DIA_Kervo_VERGISSES_15_00"); //РўС‹ С‚РµРїРµСЂСЊ РїРѕР№РґРµС€СЊ Рє РџСЂРѕС…РѕРґСѓ?
+	AI_Output			(self, other, "DIA_Kervo_VERGISSES_13_01"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, РїР°СЂРµРЅСЊ. Р•СЃР»Рё РјРµРЅСЏ РїРѕР№РјР°СЋС‚, С‚Рѕ РѕРїСЏС‚СЊ Р·Р°СЃС‚Р°РІСЏС‚ СЂР°Р±РѕС‚Р°С‚СЊ РІ С€Р°С…С‚Рµ. РЇ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ.
 	AI_StopProcessInfos (self);
 };
 

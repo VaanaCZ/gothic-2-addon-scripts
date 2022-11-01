@@ -1,7 +1,7 @@
 instance BDT_1099_Addon_Huno (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Хуно";
+	name 		= "РҐСѓРЅРѕ";
 	guild 		= GIL_BDT;
 	id 			= 1099;
 	voice 		= 6;

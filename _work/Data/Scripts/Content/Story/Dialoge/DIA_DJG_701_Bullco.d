@@ -42,7 +42,7 @@ instance DIA_BullcoDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_BullcoDJG_HALLO_Condition;
 	information	 = 	DIA_BullcoDJG_HALLO_Info;
 
-	description	 = 	"В чем дело?";
+	description	 = 	"Р’ С‡РµРј РґРµР»Рѕ?";
 };
 
 func int DIA_BullcoDJG_HALLO_Condition ()
@@ -55,9 +55,9 @@ func int DIA_BullcoDJG_HALLO_Condition ()
 
 func void DIA_BullcoDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_BullcoDJG_HALLO_15_00"); //В чем дело???
-	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_01"); //Здесь так холодно! Не понимаю, почему Сильвио настоял, чтобы мы шли именно сюда.
-	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_02"); //Здесь есть множество других мест, где можно было бы поискать!
+	AI_Output			(other, self, "DIA_BullcoDJG_HALLO_15_00"); //Р’ С‡РµРј РґРµР»Рѕ???
+	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_01"); //Р—РґРµСЃСЊ С‚Р°Рє С…РѕР»РѕРґРЅРѕ! РќРµ РїРѕРЅРёРјР°СЋ, РїРѕС‡РµРјСѓ РЎРёР»СЊРІРёРѕ РЅР°СЃС‚РѕСЏР», С‡С‚РѕР±С‹ РјС‹ С€Р»Рё РёРјРµРЅРЅРѕ СЃСЋРґР°.
+	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_02"); //Р—РґРµСЃСЊ РµСЃС‚СЊ РјРЅРѕР¶РµСЃС‚РІРѕ РґСЂСѓРіРёС… РјРµСЃС‚, РіРґРµ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ Р±С‹ РїРѕРёСЃРєР°С‚СЊ!
 	AI_StopProcessInfos (self);
 };
 
@@ -73,7 +73,7 @@ instance DIA_BullcoDJG_WARTEMAL		(C_INFO)
 
 	permanent	 = 	TRUE;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_BullcoDJG_WARTEMAL_Condition ()
@@ -87,15 +87,15 @@ func int DIA_BullcoDJG_WARTEMAL_Condition ()
 
 func void DIA_BullcoDJG_WARTEMAL_Info ()
 {
-	AI_Output			(other, self, "DIA_BullcoDJG_WARTEMAL_15_00"); //А все остальное в порядке?
+	AI_Output			(other, self, "DIA_BullcoDJG_WARTEMAL_15_00"); //Рђ РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ РІ РїРѕСЂСЏРґРєРµ?
 
 	if (Npc_KnowsInfo(other, DIA_Bullco_WASNUN))
 		{
-		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_01"); //Не играй у меня на нервах.
+		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_01"); //РќРµ РёРіСЂР°Р№ Сѓ РјРµРЅСЏ РЅР° РЅРµСЂРІР°С….
 		}
 	else
 		{
-		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_02"); //Только не сейчас! Я замерзаю! Я хочу выбраться отсюда как можно быстрее.
+		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_02"); //РўРѕР»СЊРєРѕ РЅРµ СЃРµР№С‡Р°СЃ! РЇ Р·Р°РјРµСЂР·Р°СЋ! РЇ С…РѕС‡Сѓ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ.
 		};
 
 	AI_StopProcessInfos (self);
@@ -124,7 +124,7 @@ func int DIA_Bullco_SYLVIODEAD_Condition ()
 
 func void DIA_Bullco_SYLVIODEAD_Info ()
 {
-	AI_Output			(self, other, "DIA_Bullco_SYLVIODEAD_06_00"); //Черт. Сильвио мертв.
+	AI_Output			(self, other, "DIA_Bullco_SYLVIODEAD_06_00"); //Р§РµСЂС‚. РЎРёР»СЊРІРёРѕ РјРµСЂС‚РІ.
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -140,7 +140,7 @@ instance DIA_Bullco_WASNUN		(C_INFO)
 	condition	 = 	DIA_Bullco_WASNUN_Condition;
 	information	 = 	DIA_Bullco_WASNUN_Info;
 
-	description	 = 	"Что ты планируешь делать дальше?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?";
 };
 
 func int DIA_Bullco_WASNUN_Condition ()
@@ -154,63 +154,63 @@ func int DIA_Bullco_WASNUN_Condition ()
 
 func void DIA_Bullco_WASNUN_Info ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_15_00"); //Что ты будешь делать теперь, когда Сильвио мертв?
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_06_01"); //Понятия не имею. Думаю, нужно найти других охотников на драконов, если я еще им нужен.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_15_00"); //Р§С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ, РєРѕРіРґР° РЎРёР»СЊРІРёРѕ РјРµСЂС‚РІ?
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_06_01"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. Р”СѓРјР°СЋ, РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё РґСЂСѓРіРёС… РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ, РµСЃР»Рё СЏ РµС‰Рµ РёРј РЅСѓР¶РµРЅ.
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Мне бы стоило оторвать твою голову.", DIA_Bullco_WASNUN_kopfab );
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Ты знаешь, где остальные?", DIA_Bullco_WASNUN_woandere );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "РњРЅРµ Р±С‹ СЃС‚РѕРёР»Рѕ РѕС‚РѕСЂРІР°С‚СЊ С‚РІРѕСЋ РіРѕР»РѕРІСѓ.", DIA_Bullco_WASNUN_kopfab );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ?", DIA_Bullco_WASNUN_woandere );
 
 };
 
 func void DIA_Bullco_WASNUN_woandere ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_15_00"); //Ты знаешь, где остальные?
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_06_01"); //Думаю, да. По крайней мере, я видел одного из них у реки вон там.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ?
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_06_01"); //Р”СѓРјР°СЋ, РґР°. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, СЏ РІРёРґРµР» РѕРґРЅРѕРіРѕ РёР· РЅРёС… Сѓ СЂРµРєРё РІРѕРЅ С‚Р°Рј.
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Отведи меня к другим охотникам на драконов.", DIA_Bullco_WASNUN_woandere_zuihnen );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "РћС‚РІРµРґРё РјРµРЅСЏ Рє РґСЂСѓРіРёРј РѕС…РѕС‚РЅРёРєР°Рј РЅР° РґСЂР°РєРѕРЅРѕРІ.", DIA_Bullco_WASNUN_woandere_zuihnen );
 };
 func void DIA_Bullco_WASNUN_woandere_zuihnen ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_15_00"); //Отведи меня к другим охотникам на драконов.
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_06_01"); //Эй, я не твой лакей.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_15_00"); //РћС‚РІРµРґРё РјРµРЅСЏ Рє РґСЂСѓРіРёРј РѕС…РѕС‚РЅРёРєР°Рј РЅР° РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_06_01"); //Р­Р№, СЏ РЅРµ С‚РІРѕР№ Р»Р°РєРµР№.
 
 	Info_ClearChoices	(DIA_Bullco_WASNUN);
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Как знаешь.", DIA_Bullco_WASNUN_woandere_zuihnen_alleine );
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Радуйся, если я оставлю тебя в живых.", DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen );
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Я заплачу тебе 50 золотых за это.", DIA_Bullco_WASNUN_woandere_zuihnen_Geld );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "РљР°Рє Р·РЅР°РµС€СЊ.", DIA_Bullco_WASNUN_woandere_zuihnen_alleine );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Р Р°РґСѓР№СЃСЏ, РµСЃР»Рё СЏ РѕСЃС‚Р°РІР»СЋ С‚РµР±СЏ РІ Р¶РёРІС‹С….", DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "РЇ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ 50 Р·РѕР»РѕС‚С‹С… Р·Р° СЌС‚Рѕ.", DIA_Bullco_WASNUN_woandere_zuihnen_Geld );
 
 
 };
 func void DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen_15_00"); //Радуйся, если я оставлю тебя в живых.
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen_06_01"); //Отстань от меня!
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen_15_00"); //Р Р°РґСѓР№СЃСЏ, РµСЃР»Рё СЏ РѕСЃС‚Р°РІР»СЋ С‚РµР±СЏ РІ Р¶РёРІС‹С….
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen_06_01"); //РћС‚СЃС‚Р°РЅСЊ РѕС‚ РјРµРЅСЏ!
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Bullco_WASNUN_woandere_zuihnen_Geld ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_15_00"); //Я заплачу тебе 50 золотых за это.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_15_00"); //РЇ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ 50 Р·РѕР»РѕС‚С‹С… Р·Р° СЌС‚Рѕ.
 	
 	if (B_GiveInvItems (other, self, ItMi_Gold,50))
 		{
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_01"); //Хорошо. Давай их сюда.
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_02"); //Иди за мной. Я отведу тебя туда, где я последний раз видел других охотников на драконов.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_01"); //РҐРѕСЂРѕС€Рѕ. Р”Р°РІР°Р№ РёС… СЃСЋРґР°.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_02"); //РРґРё Р·Р° РјРЅРѕР№. РЇ РѕС‚РІРµРґСѓ С‚РµР±СЏ С‚СѓРґР°, РіРґРµ СЏ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р· РІРёРґРµР» РґСЂСѓРіРёС… РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ.
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"DJGVorposten");
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_03"); //У тебя нет 50 золотых, и я не куплюсь на эту чушь. Проваливай.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_03"); //РЈ С‚РµР±СЏ РЅРµС‚ 50 Р·РѕР»РѕС‚С‹С…, Рё СЏ РЅРµ РєСѓРїР»СЋСЃСЊ РЅР° СЌС‚Сѓ С‡СѓС€СЊ. РџСЂРѕРІР°Р»РёРІР°Р№.
 			AI_StopProcessInfos (self);
 		};
 };
 
 func void DIA_Bullco_WASNUN_woandere_zuihnen_alleine ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_15_00"); //Как знаешь. Я сам их найду.
-	AI_Output			(self ,other, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_06_01"); //Только не заблудись.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_15_00"); //РљР°Рє Р·РЅР°РµС€СЊ. РЇ СЃР°Рј РёС… РЅР°Р№РґСѓ.
+	AI_Output			(self ,other, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_06_01"); //РўРѕР»СЊРєРѕ РЅРµ Р·Р°Р±Р»СѓРґРёСЃСЊ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -218,17 +218,17 @@ func void DIA_Bullco_WASNUN_woandere_zuihnen_alleine ()
 
 func void DIA_Bullco_WASNUN_kopfab ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_15_00"); //Мне бы стоило оторвать твою голову.
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_06_01"); //Заткни свою пасть.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_15_00"); //РњРЅРµ Р±С‹ СЃС‚РѕРёР»Рѕ РѕС‚РѕСЂРІР°С‚СЊ С‚РІРѕСЋ РіРѕР»РѕРІСѓ.
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_06_01"); //Р—Р°С‚РєРЅРё СЃРІРѕСЋ РїР°СЃС‚СЊ.
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Вынимай оружие. Мы положим конец этому здесь и сейчас.", DIA_Bullco_WASNUN_kopfab_angriff );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Р’С‹РЅРёРјР°Р№ РѕСЂСѓР¶РёРµ. РњС‹ РїРѕР»РѕР¶РёРј РєРѕРЅРµС† СЌС‚РѕРјСѓ Р·РґРµСЃСЊ Рё СЃРµР№С‡Р°СЃ.", DIA_Bullco_WASNUN_kopfab_angriff );
 
 
 };
 func void DIA_Bullco_WASNUN_kopfab_angriff ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_angriff_15_00"); //Вынимай оружие. Мы положим конец этому здесь и сейчас.
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_angriff_06_01"); //Так тому и быть.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_angriff_15_00"); //Р’С‹РЅРёРјР°Р№ РѕСЂСѓР¶РёРµ. РњС‹ РїРѕР»РѕР¶РёРј РєРѕРЅРµС† СЌС‚РѕРјСѓ Р·РґРµСЃСЊ Рё СЃРµР№С‡Р°СЃ.
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_angriff_06_01"); //РўР°Рє С‚РѕРјСѓ Рё Р±С‹С‚СЊ.
 
 	AI_StopProcessInfos (self);
 

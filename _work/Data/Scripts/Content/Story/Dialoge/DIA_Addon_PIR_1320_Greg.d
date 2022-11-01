@@ -73,34 +73,34 @@ FUNC INT DIA_Addon_Greg_ImNew_Condition()
 
 FUNC VOID DIA_Addon_Greg_ImNew_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_00"); //(угрожающе) Эй, ты! Что ты делаешь в моей хижине?
-	AI_Output (other,self,"DIA_Addon_Greg_Hello_15_01"); //Я...
-	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_02"); //(в ярости) Стоит уехать на несколько дней, и вот уже каждый проходимец норовит похозяйничать в моем жилище.
+	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_00"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Р­Р№, С‚С‹! Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ РІ РјРѕРµР№ С…РёР¶РёРЅРµ?
+	AI_Output (other,self,"DIA_Addon_Greg_Hello_15_01"); //РЇ...
+	AI_Output (self,other,"DIA_Addon_Greg_Hello_01_02"); //(РІ СЏСЂРѕСЃС‚Рё) РЎС‚РѕРёС‚ СѓРµС…Р°С‚СЊ РЅР° РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№, Рё РІРѕС‚ СѓР¶Рµ РєР°Р¶РґС‹Р№ РїСЂРѕС…РѕРґРёРјРµС† РЅРѕСЂРѕРІРёС‚ РїРѕС…РѕР·СЏР№РЅРёС‡Р°С‚СЊ РІ РјРѕРµРј Р¶РёР»РёС‰Рµ.
 	//AI_Output (other,self,"DIA_Addon_Greg_ImNew_15_00"); //Ich bin der Neue.
 	//AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_01"); //(zynisch) So so, du bist der Neue.
 	//AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_02"); //Hier entscheide immer noch ICH, wer bei uns mitmacht.
-	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_03"); //Какого черта, что здесь происходит?
-	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_04"); //Частокол еще не закончен! Каньон просто кишит зверьем, а все только и делают, что слоняются вокруг.
+	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_03"); //РљР°РєРѕРіРѕ С‡РµСЂС‚Р°, С‡С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёСЃС…РѕРґРёС‚?
+	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_04"); //Р§Р°СЃС‚РѕРєРѕР» РµС‰Рµ РЅРµ Р·Р°РєРѕРЅС‡РµРЅ! РљР°РЅСЊРѕРЅ РїСЂРѕСЃС‚Рѕ РєРёС€РёС‚ Р·РІРµСЂСЊРµРј, Р° РІСЃРµ С‚РѕР»СЊРєРѕ Рё РґРµР»Р°СЋС‚, С‡С‚Рѕ СЃР»РѕРЅСЏСЋС‚СЃСЏ РІРѕРєСЂСѓРі.
 		
 	GregIsBack = TRUE;
 	
 	if (!Npc_IsDead (Francis))
 	{
 		AI_TurnToNpc (self, Francis);
-		AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_05"); //(кричит) И это все, что ты сделал, Фрэнсис?
+		AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_05"); //(РєСЂРёС‡РёС‚) Р СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р», Р¤СЂСЌРЅСЃРёСЃ?
 		
 		if (C_BodyStateContains (Francis, BS_SIT))
 		{
-			AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_06"); //(кричит) Немедленно слезь с моей скамейки!
+			AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_06"); //(РєСЂРёС‡РёС‚) РќРµРјРµРґР»РµРЅРЅРѕ СЃР»РµР·СЊ СЃ РјРѕРµР№ СЃРєР°РјРµР№РєРё!
 		};
 	};
 	
 	Npc_ExchangeRoutine	(self,"HOME");
 	AI_TurnToNpc (self, other);
-	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_07"); //А ТЫ? Что ТЫ сделал?
+	AI_Output (self,other,"DIA_Addon_Greg_ImNew_01_07"); //Рђ РўР«? Р§С‚Рѕ РўР« СЃРґРµР»Р°Р»?
 	
 	Info_ClearChoices	(DIA_Addon_Greg_ImNew);
-	Info_AddChoice	(DIA_Addon_Greg_ImNew, "Пока не так много.", DIA_Addon_Greg_ImNew_nich );
+	Info_AddChoice	(DIA_Addon_Greg_ImNew, "РџРѕРєР° РЅРµ С‚Р°Рє РјРЅРѕРіРѕ.", DIA_Addon_Greg_ImNew_nich );
 	if (
 			(Npc_IsDead(BeachLurker1))
 			&& (Npc_IsDead(BeachLurker2))
@@ -113,7 +113,7 @@ FUNC VOID DIA_Addon_Greg_ImNew_Info()
 		)
 		|| (C_TowerBanditsDead() == TRUE)
 			{
-				Info_AddChoice	(DIA_Addon_Greg_ImNew, "Я работал.", DIA_Addon_Greg_ImNew_turm );
+				Info_AddChoice	(DIA_Addon_Greg_ImNew, "РЇ СЂР°Р±РѕС‚Р°Р».", DIA_Addon_Greg_ImNew_turm );
 			};
 
 	};
@@ -123,14 +123,14 @@ func void B_UseRakeBilanz ()
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_00"); //И не думай, что я забыл, что ты мой должник.
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_01"); //В различных местах Хориниса я зарыл несколько сотен золотых монет.
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_02"); //Ты их прикарманил, не так ли?
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_03"); //Я заставлю тебя отработать все до последнего медяка.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_00"); //Р РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ СЏ Р·Р°Р±С‹Р», С‡С‚Рѕ С‚С‹ РјРѕР№ РґРѕР»Р¶РЅРёРє.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_01"); //Р’ СЂР°Р·Р»РёС‡РЅС‹С… РјРµСЃС‚Р°С… РҐРѕСЂРёРЅРёСЃР° СЏ Р·Р°СЂС‹Р» РЅРµСЃРєРѕР»СЊРєРѕ СЃРѕС‚РµРЅ Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_02"); //РўС‹ РёС… РїСЂРёРєР°СЂРјР°РЅРёР», РЅРµ С‚Р°Рє Р»Рё?
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_03"); //РЇ Р·Р°СЃС‚Р°РІР»СЋ С‚РµР±СЏ РѕС‚СЂР°Р±РѕС‚Р°С‚СЊ РІСЃРµ РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ РјРµРґСЏРєР°.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_04"); //Я покажу тебе, что значит вкалывать по-черному.
+		AI_Output (self, other, "DIA_Addon_Greg_UseRakeBilanz_01_04"); //РЇ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ, С‡С‚Рѕ Р·РЅР°С‡РёС‚ РІРєР°Р»С‹РІР°С‚СЊ РїРѕ-С‡РµСЂРЅРѕРјСѓ.
 	};
 	
 	if (!Npc_IsDead (Francis))
@@ -145,18 +145,18 @@ func void B_UseRakeBilanz ()
 // --------------------------------------------------------------------
 func void DIA_Addon_Greg_ImNew_nich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_ImNew_nich_15_00"); //Пока не так много.
-	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_nich_01_01"); //Неважно. Я что-нибудь подберу тебе, дружище.
+	AI_Output			(other, self, "DIA_Addon_Greg_ImNew_nich_15_00"); //РџРѕРєР° РЅРµ С‚Р°Рє РјРЅРѕРіРѕ.
+	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_nich_01_01"); //РќРµРІР°Р¶РЅРѕ. РЇ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРґР±РµСЂСѓ С‚РµР±Рµ, РґСЂСѓР¶РёС‰Рµ.
 	B_UseRakeBilanz ();
 };
 func void DIA_Addon_Greg_ImNew_turm ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_00"); //Я работал.
-	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_turm_01_01"); //Правда? И что?
+	AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_00"); //РЇ СЂР°Р±РѕС‚Р°Р».
+	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_turm_01_01"); //РџСЂР°РІРґР°? Р С‡С‚Рѕ?
 
 	if (C_TowerBanditsDead() == TRUE)
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_02"); //Я разобрался с бандитами из башни.
+		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_02"); //РЇ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё РёР· Р±Р°С€РЅРё.
 	};
 
 	if (Npc_IsDead(BeachLurker1))
@@ -167,10 +167,10 @@ func void DIA_Addon_Greg_ImNew_turm ()
 	&& (Npc_IsDead(BeachShadowbeast1))
 	&& (MIS_Addon_MorganLurker != 0)
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_03"); //На побережье к северу больше нет диких зверей.
+		AI_Output			(other, self, "DIA_Addon_Greg_ImNew_turm_15_03"); //РќР° РїРѕР±РµСЂРµР¶СЊРµ Рє СЃРµРІРµСЂСѓ Р±РѕР»СЊС€Рµ РЅРµС‚ РґРёРєРёС… Р·РІРµСЂРµР№.
 	};
 
-	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_turm_01_04"); //Ну что ж. Полагаю, хорошее начало.
+	AI_Output			(self, other, "DIA_Addon_Greg_ImNew_turm_01_04"); //РќСѓ С‡С‚Рѕ Р¶. РџРѕР»Р°РіР°СЋ, С…РѕСЂРѕС€РµРµ РЅР°С‡Р°Р»Рѕ.
 	
 	B_UseRakeBilanz ();
 };
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Greg_JoinPirates(C_INFO)
 	condition	= DIA_Addon_Greg_JoinPirates_Condition;
 	information	= DIA_Addon_Greg_JoinPirates_Info;
 	permanent	= FALSE;
-	description = "Что нужно сделать?";
+	description = "Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?";
 };                       
 FUNC INT DIA_Addon_Greg_JoinPirates_Condition()
 {
@@ -197,44 +197,44 @@ FUNC INT DIA_Addon_Greg_JoinPirates_Condition()
 
 FUNC VOID DIA_Addon_Greg_JoinPirates_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_15_00"); //Что нужно сделать?
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_01"); //Прежде всего необходимо разобраться с делами здесь.
+	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_15_00"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_01"); //РџСЂРµР¶РґРµ РІСЃРµРіРѕ РЅРµРѕР±С…РѕРґРёРјРѕ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РґРµР»Р°РјРё Р·РґРµСЃСЊ.
 
 	if ((Npc_IsDead(Morgan))== FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_02"); //Эта ленивая свинья Морган будет пилить древесину.
+		AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_02"); //Р­С‚Р° Р»РµРЅРёРІР°СЏ СЃРІРёРЅСЊСЏ РњРѕСЂРіР°РЅ Р±СѓРґРµС‚ РїРёР»РёС‚СЊ РґСЂРµРІРµСЃРёРЅСѓ.
 	};
 	
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_03"); //А ты займешься работой Моргана и очистишь каньон от этих проклятых зверей.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_01_03"); //Рђ С‚С‹ Р·Р°Р№РјРµС€СЊСЃСЏ СЂР°Р±РѕС‚РѕР№ РњРѕСЂРіР°РЅР° Рё РѕС‡РёСЃС‚РёС€СЊ РєР°РЅСЊРѕРЅ РѕС‚ СЌС‚РёС… РїСЂРѕРєР»СЏС‚С‹С… Р·РІРµСЂРµР№.
 	
 	MIS_Addon_Greg_ClearCanyon = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_ClearCanyon,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_ClearCanyon,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Грег хочет, чтобы я взял на себя работу Моргана и очистил каньон от зверей.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Р“СЂРµРі С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РІР·СЏР» РЅР° СЃРµР±СЏ СЂР°Р±РѕС‚Сѓ РњРѕСЂРіР°РЅР° Рё РѕС‡РёСЃС‚РёР» РєР°РЅСЊРѕРЅ РѕС‚ Р·РІРµСЂРµР№.");
 
 	Info_ClearChoices (DIA_Addon_Greg_JoinPirates);
-	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"В таком случае мне пора.",DIA_Addon_Greg_JoinPirates_Leave);
+	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ РјРЅРµ РїРѕСЂР°.",DIA_Addon_Greg_JoinPirates_Leave);
 
 	if (((Npc_IsDead(Brandon))== FALSE)
 	|| ((Npc_IsDead(Matt))== FALSE))
 	{
-		Info_AddChoice (DIA_Addon_Greg_JoinPirates,"Я что, должен делать это в одиночку?",DIA_Addon_Greg_JoinPirates_Compadres);
+		Info_AddChoice (DIA_Addon_Greg_JoinPirates,"РЇ С‡С‚Рѕ, РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ СЌС‚Рѕ РІ РѕРґРёРЅРѕС‡РєСѓ?",DIA_Addon_Greg_JoinPirates_Compadres);
 	};
 
-	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"Что это за звери?",DIA_Addon_Greg_JoinPirates_ClearCanyon);
+	Info_AddChoice (DIA_Addon_Greg_JoinPirates,"Р§С‚Рѕ СЌС‚Рѕ Р·Р° Р·РІРµСЂРё?",DIA_Addon_Greg_JoinPirates_ClearCanyon);
 };
 
 FUNC VOID DIA_Addon_Greg_JoinPirates_Leave()
 {
-	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_Leave_15_00"); //В таком случае мне пора.
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_01"); //И еще кое-что. Теперь ты один из нас.
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_02"); //Поэтому сначала найди себе нормальную одежду охотника.
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_03"); //Вот, надень это. Надеюсь, тебе это снаряжение придется впору.
+	AI_Output (other,self,"DIA_Addon_Greg_JoinPirates_Leave_15_00"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ РјРЅРµ РїРѕСЂР°.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_01"); //Р РµС‰Рµ РєРѕРµ-С‡С‚Рѕ. РўРµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_02"); //РџРѕСЌС‚РѕРјСѓ СЃРЅР°С‡Р°Р»Р° РЅР°Р№РґРё СЃРµР±Рµ РЅРѕСЂРјР°Р»СЊРЅСѓСЋ РѕРґРµР¶РґСѓ РѕС…РѕС‚РЅРёРєР°.
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_03"); //Р’РѕС‚, РЅР°РґРµРЅСЊ СЌС‚Рѕ. РќР°РґРµСЋСЃСЊ, С‚РµР±Рµ СЌС‚Рѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ РїСЂРёРґРµС‚СЃСЏ РІРїРѕСЂСѓ.
 	CreateInvItems (self, ItAr_Pir_M_Addon, 1);									
 	B_GiveInvItems (self, other, ItAr_Pir_M_Addon, 1);		
 	AI_EquipArmor(hero,ItAr_Pir_M_Addon);
-	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_04"); //И не мешкай, скорее принимайся за дело!
+	AI_Output (self,other,"DIA_Addon_Greg_JoinPirates_Leave_01_04"); //Р РЅРµ РјРµС€РєР°Р№, СЃРєРѕСЂРµРµ РїСЂРёРЅРёРјР°Р№СЃСЏ Р·Р° РґРµР»Рѕ!
 	
 
 	Info_ClearChoices (DIA_Addon_Greg_JoinPirates);
@@ -242,20 +242,20 @@ FUNC VOID DIA_Addon_Greg_JoinPirates_Leave()
 
 FUNC VOID DIA_Addon_Greg_JoinPirates_Compadres()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_Compadres_15_00"); //Я что, должен делать это в одиночку?
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_Compadres_01_01"); //Можешь захватить с собой парней.
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_Compadres_01_02"); //Пусть отрабатывают свою зарплату.
+	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_Compadres_15_00"); //РЇ С‡С‚Рѕ, РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ СЌС‚Рѕ РІ РѕРґРёРЅРѕС‡РєСѓ?
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_Compadres_01_01"); //РњРѕР¶РµС€СЊ Р·Р°С…РІР°С‚РёС‚СЊ СЃ СЃРѕР±РѕР№ РїР°СЂРЅРµР№.
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_Compadres_01_02"); //РџСѓСЃС‚СЊ РѕС‚СЂР°Р±Р°С‚С‹РІР°СЋС‚ СЃРІРѕСЋ Р·Р°СЂРїР»Р°С‚Сѓ.
 
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Грег сказал, что я могу взять с собой нескольких ребят.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Р“СЂРµРі СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РјРѕРіСѓ РІР·СЏС‚СЊ СЃ СЃРѕР±РѕР№ РЅРµСЃРєРѕР»СЊРєРёС… СЂРµР±СЏС‚.");
 };
 
 FUNC VOID DIA_Addon_Greg_JoinPirates_ClearCanyon()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_ClearCanyon_15_00"); //Что это за звери?
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_01"); //Бритвозубы в каньоне все ближе подбираются к нашему лагерю.
-	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_02"); //Я не собираюсь ждать, пока они сожрут кого-нибудь из моих людей.
+	AI_Output (other,self ,"DIA_Addon_Greg_JoinPirates_ClearCanyon_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° Р·РІРµСЂРё?
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_01"); //Р‘СЂРёС‚РІРѕР·СѓР±С‹ РІ РєР°РЅСЊРѕРЅРµ РІСЃРµ Р±Р»РёР¶Рµ РїРѕРґР±РёСЂР°СЋС‚СЃСЏ Рє РЅР°С€РµРјСѓ Р»Р°РіРµСЂСЋ.
+	AI_Output (self ,other,"DIA_Addon_Greg_JoinPirates_ClearCanyon_01_02"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ Р¶РґР°С‚СЊ, РїРѕРєР° РѕРЅРё СЃРѕР¶СЂСѓС‚ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РёР· РјРѕРёС… Р»СЋРґРµР№.
 
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Охотиться я должен на бритвозубов.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"РћС…РѕС‚РёС‚СЊСЃСЏ СЏ РґРѕР»Р¶РµРЅ РЅР° Р±СЂРёС‚РІРѕР·СѓР±РѕРІ.");
 };
 
 // ************************************************************
@@ -268,7 +268,7 @@ INSTANCE DIA_Addon_Greg_AboutCanyon(C_INFO)
 	condition	= DIA_Addon_Greg_AboutCanyon_Condition;
 	information	= DIA_Addon_Greg_AboutCanyon_Info;
 	permanent	= TRUE;
-	description = "Насчет каньона...";
+	description = "РќР°СЃС‡РµС‚ РєР°РЅСЊРѕРЅР°...";
 };                       
 FUNC INT DIA_Addon_Greg_AboutCanyon_Condition()
 {
@@ -280,8 +280,8 @@ FUNC INT DIA_Addon_Greg_AboutCanyon_Condition()
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_15_00"); //Насчет каньона...
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_01_01"); //Да, что там?
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_15_00"); //РќР°СЃС‡РµС‚ РєР°РЅСЊРѕРЅР°...
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_01_01"); //Р”Р°, С‡С‚Рѕ С‚Р°Рј?
 	
 	Info_ClearChoices (DIA_Addon_Greg_AboutCanyon);
 	if (C_AllCanyonRazorDead() == FALSE)
@@ -290,13 +290,13 @@ FUNC VOID DIA_Addon_Greg_AboutCanyon_Info()
 		if (((Npc_IsDead(Brandon))== FALSE)
 		|| ((Npc_IsDead(Matt))== FALSE))
 		{
-			Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Мне кто-нибудь может помочь?",DIA_Addon_Greg_AboutCanyon_Compadres);
+			Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"РњРЅРµ РєС‚Рѕ-РЅРёР±СѓРґСЊ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ?",DIA_Addon_Greg_AboutCanyon_Compadres);
 		};
-		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"А что это за звери, которых я должен убить?",DIA_Addon_Greg_AboutCanyon_Job);
+		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° Р·РІРµСЂРё, РєРѕС‚РѕСЂС‹С… СЏ РґРѕР»Р¶РµРЅ СѓР±РёС‚СЊ?",DIA_Addon_Greg_AboutCanyon_Job);
 	}
 	else 
 	{
-		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"Я уничтожил всех бритвозубов.",DIA_Addon_Greg_AboutCanyon_RazorsDead);
+		Info_AddChoice (DIA_Addon_Greg_AboutCanyon,"РЇ СѓРЅРёС‡С‚РѕР¶РёР» РІСЃРµС… Р±СЂРёС‚РІРѕР·СѓР±РѕРІ.",DIA_Addon_Greg_AboutCanyon_RazorsDead);
 	};
 };
 
@@ -307,25 +307,25 @@ FUNC VOID DIA_Addon_Greg_AboutCanyon_Back()
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_Compadres()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Compadres_15_00"); //Мне кто-нибудь может помочь?
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_01"); //Захвати с собой пару ребят.
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_02"); //Они все равно болтаются без дела.
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Compadres_15_00"); //РњРЅРµ РєС‚Рѕ-РЅРёР±СѓРґСЊ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ?
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_01"); //Р—Р°С…РІР°С‚Рё СЃ СЃРѕР±РѕР№ РїР°СЂСѓ СЂРµР±СЏС‚.
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Compadres_01_02"); //РћРЅРё РІСЃРµ СЂР°РІРЅРѕ Р±РѕР»С‚Р°СЋС‚СЃСЏ Р±РµР· РґРµР»Р°.
 	Info_ClearChoices (DIA_Addon_Greg_AboutCanyon);
 };
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_Job()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Job_15_00"); //А что это за звери, которых я должен убить?
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Job_01_01"); //Избавься от бритвозубов! Другие существа неопасны.
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_Job_15_00"); //Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° Р·РІРµСЂРё, РєРѕС‚РѕСЂС‹С… СЏ РґРѕР»Р¶РµРЅ СѓР±РёС‚СЊ?
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_Job_01_01"); //РР·Р±Р°РІСЊСЃСЏ РѕС‚ Р±СЂРёС‚РІРѕР·СѓР±РѕРІ! Р”СЂСѓРіРёРµ СЃСѓС‰РµСЃС‚РІР° РЅРµРѕРїР°СЃРЅС‹.
 	Info_ClearChoices (DIA_Addon_Greg_AboutCanyon);
 };
 
 FUNC VOID DIA_Addon_Greg_AboutCanyon_RazorsDead()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_RazorsDead_15_00"); //Я уничтожил всех бритвозубов.
-	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_RazorsDead_01_01"); //Хорошо. Похоже, от тебя есть польза.
+	AI_Output (other,self ,"DIA_Addon_Greg_AboutCanyon_RazorsDead_15_00"); //РЇ СѓРЅРёС‡С‚РѕР¶РёР» РІСЃРµС… Р±СЂРёС‚РІРѕР·СѓР±РѕРІ.
+	AI_Output (self ,other,"DIA_Addon_Greg_AboutCanyon_RazorsDead_01_01"); //РҐРѕСЂРѕС€Рѕ. РџРѕС…РѕР¶Рµ, РѕС‚ С‚РµР±СЏ РµСЃС‚СЊ РїРѕР»СЊР·Р°.
 	
-	B_LogEntry (TOPIC_Addon_ClearCanyon,"Грег был впечатлен, когда я сообщил ему, что убил всех бритвозубов в каньоне.");
+	B_LogEntry (TOPIC_Addon_ClearCanyon,"Р“СЂРµРі Р±С‹Р» РІРїРµС‡Р°С‚Р»РµРЅ, РєРѕРіРґР° СЏ СЃРѕРѕР±С‰РёР» РµРјСѓ, С‡С‚Рѕ СѓР±РёР» РІСЃРµС… Р±СЂРёС‚РІРѕР·СѓР±РѕРІ РІ РєР°РЅСЊРѕРЅРµ.");
 	
 	MIS_Addon_Greg_ClearCanyon = LOG_SUCCESS;
 	B_Addon_PiratesGoHome();
@@ -344,7 +344,7 @@ INSTANCE DIA_Addon_Greg_BanditArmor(C_INFO)
 	condition	= DIA_Addon_Greg_BanditArmor_Condition;
 	information	= DIA_Addon_Greg_BanditArmor_Info;
 	permanent	= TRUE;
-	description = "Мне нужны бандитские доспехи.";
+	description = "РњРЅРµ РЅСѓР¶РЅС‹ Р±Р°РЅРґРёС‚СЃРєРёРµ РґРѕСЃРїРµС…Рё.";
 };                       
 FUNC INT DIA_Addon_Greg_BanditArmor_Condition()
 {
@@ -356,32 +356,32 @@ FUNC INT DIA_Addon_Greg_BanditArmor_Condition()
 
 FUNC VOID DIA_Addon_Greg_BanditArmor_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_00"); //Мне нужны бандитские доспехи.
+	AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_00"); //РњРЅРµ РЅСѓР¶РЅС‹ Р±Р°РЅРґРёС‚СЃРєРёРµ РґРѕСЃРїРµС…Рё.
 	if (MIS_Addon_Greg_ClearCanyon != LOG_SUCCESS)
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_01"); //Сначала покажи, на что ты способен. После этого поговорим.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_01"); //РЎРЅР°С‡Р°Р»Р° РїРѕРєР°Р¶Рё, РЅР° С‡С‚Рѕ С‚С‹ СЃРїРѕСЃРѕР±РµРЅ. РџРѕСЃР»Рµ СЌС‚РѕРіРѕ РїРѕРіРѕРІРѕСЂРёРј.
 		if (MIS_Addon_Greg_ClearCanyon == LOG_RUNNING)
 		{
-			AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_02"); //Сначала ты должен убить всех бритвозубов!
+			AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_02"); //РЎРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ СѓР±РёС‚СЊ РІСЃРµС… Р±СЂРёС‚РІРѕР·СѓР±РѕРІ!
 		};
 		
-		B_LogEntry (TOPIC_Addon_BDTRuestung,"Грег хочет, чтобы я помог ему навести порядок в лагере. После этого я смогу поговорить с ним о доспехах."); 
+		B_LogEntry (TOPIC_Addon_BDTRuestung,"Р“СЂРµРі С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕРјРѕРі РµРјСѓ РЅР°РІРµСЃС‚Рё РїРѕСЂСЏРґРѕРє РІ Р»Р°РіРµСЂРµ. РџРѕСЃР»Рµ СЌС‚РѕРіРѕ СЏ СЃРјРѕРіСѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј Рѕ РґРѕСЃРїРµС…Р°С…."); 
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_03"); //А ты молодец!
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_04"); //Следить за бандитами должен был Бонес. Для него и предназначались эти доспехи.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_05"); //Но, быть может, для этой работы больше подойдет ТВОЯ кандидатура.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_06"); //Возможно, у тебя даже получится выбраться оттуда живым.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_07"); //Поговори с Бонесом, чтобы он дал тебе броню. Потом надевай ее и отправляйся в лагерь бандитов.
-		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_08"); //Я хочу узнать, почему эти ублюдки приперлись в нашу долину.
-		AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_09"); //Будет сделано, капитан!
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_03"); //Рђ С‚С‹ РјРѕР»РѕРґРµС†!
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_04"); //РЎР»РµРґРёС‚СЊ Р·Р° Р±Р°РЅРґРёС‚Р°РјРё РґРѕР»Р¶РµРЅ Р±С‹Р» Р‘РѕРЅРµСЃ. Р”Р»СЏ РЅРµРіРѕ Рё РїСЂРµРґРЅР°Р·РЅР°С‡Р°Р»РёСЃСЊ СЌС‚Рё РґРѕСЃРїРµС…Рё.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_05"); //РќРѕ, Р±С‹С‚СЊ РјРѕР¶РµС‚, РґР»СЏ СЌС‚РѕР№ СЂР°Р±РѕС‚С‹ Р±РѕР»СЊС€Рµ РїРѕРґРѕР№РґРµС‚ РўР’РћРЇ РєР°РЅРґРёРґР°С‚СѓСЂР°.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_06"); //Р’РѕР·РјРѕР¶РЅРѕ, Сѓ С‚РµР±СЏ РґР°Р¶Рµ РїРѕР»СѓС‡РёС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚С‚СѓРґР° Р¶РёРІС‹Рј.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_07"); //РџРѕРіРѕРІРѕСЂРё СЃ Р‘РѕРЅРµСЃРѕРј, С‡С‚РѕР±С‹ РѕРЅ РґР°Р» С‚РµР±Рµ Р±СЂРѕРЅСЋ. РџРѕС‚РѕРј РЅР°РґРµРІР°Р№ РµРµ Рё РѕС‚РїСЂР°РІР»СЏР№СЃСЏ РІ Р»Р°РіРµСЂСЊ Р±Р°РЅРґРёС‚РѕРІ.
+		AI_Output (self,other,"DIA_Addon_Greg_BanditArmor_01_08"); //РЇ С…РѕС‡Сѓ СѓР·РЅР°С‚СЊ, РїРѕС‡РµРјСѓ СЌС‚Рё СѓР±Р»СЋРґРєРё РїСЂРёРїРµСЂР»РёСЃСЊ РІ РЅР°С€Сѓ РґРѕР»РёРЅСѓ.
+		AI_Output (other,self,"DIA_Addon_Greg_BanditArmor_15_09"); //Р‘СѓРґРµС‚ СЃРґРµР»Р°РЅРѕ, РєР°РїРёС‚Р°РЅ!
 	
-		B_LogEntry (TOPIC_Addon_BDTRuestung,"После того как я закончу, я смогу забрать доспехи у Бонеса."); 
+		B_LogEntry (TOPIC_Addon_BDTRuestung,"РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє СЏ Р·Р°РєРѕРЅС‡Сѓ, СЏ СЃРјРѕРіСѓ Р·Р°Р±СЂР°С‚СЊ РґРѕСЃРїРµС…Рё Сѓ Р‘РѕРЅРµСЃР°."); 
 	
 		Log_CreateTopic (TOPIC_Addon_ScoutBandits,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_ScoutBandits,LOG_RUNNING);
-		B_LogEntry	(TOPIC_Addon_ScoutBandits,"Я должен узнать, для чего бандиты пришли в долину, и сообщить Грегу.");
+		B_LogEntry	(TOPIC_Addon_ScoutBandits,"РЇ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ, РґР»СЏ С‡РµРіРѕ Р±Р°РЅРґРёС‚С‹ РїСЂРёС€Р»Рё РІ РґРѕР»РёРЅСѓ, Рё СЃРѕРѕР±С‰РёС‚СЊ Р“СЂРµРіСѓ.");
 	
 		MIS_Greg_ScoutBandits = LOG_RUNNING;
 	};
@@ -397,7 +397,7 @@ instance DIA_Addon_Greg_Auftraege2		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_Auftraege2_Condition;
 	information	 = 	DIA_Addon_Greg_Auftraege2_Info;
 
-	description	 = 	"Есть для меня еще работа?";
+	description	 = 	"Р•СЃС‚СЊ РґР»СЏ РјРµРЅСЏ РµС‰Рµ СЂР°Р±РѕС‚Р°?";
 };
 
 func int DIA_Addon_Greg_Auftraege2_Condition ()
@@ -421,7 +421,7 @@ func int DIA_Addon_Greg_Auftraege2_Condition ()
 
 func void DIA_Addon_Greg_Auftraege2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_Auftraege2_15_00"); //Есть для меня еще работа?
+	AI_Output	(other, self, "DIA_Addon_Greg_Auftraege2_15_00"); //Р•СЃС‚СЊ РґР»СЏ РјРµРЅСЏ РµС‰Рµ СЂР°Р±РѕС‚Р°?
 
 	if (Npc_IsDead(BeachLurker1)== FALSE)
 	&& (Npc_IsDead(BeachLurker2)== FALSE)
@@ -430,30 +430,30 @@ func void DIA_Addon_Greg_Auftraege2_Info ()
 	&& (Npc_IsDead(BeachWaran2)== FALSE)
 	&& (Npc_IsDead(BeachShadowbeast1)== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_01"); //Северное побережье все еще населяют звери.
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_02"); //Похоже, Морган ничего не сделал.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_01"); //РЎРµРІРµСЂРЅРѕРµ РїРѕР±РµСЂРµР¶СЊРµ РІСЃРµ РµС‰Рµ РЅР°СЃРµР»СЏСЋС‚ Р·РІРµСЂРё.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_02"); //РџРѕС…РѕР¶Рµ, РњРѕСЂРіР°РЅ РЅРёС‡РµРіРѕ РЅРµ СЃРґРµР»Р°Р».
 		
 		Log_CreateTopic (TOPIC_Addon_MorganBeach,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_MorganBeach,LOG_RUNNING);
-		B_LogEntry	(TOPIC_Addon_MorganBeach,"Грег хочет, чтобы я очистил кишащий монстрами пляж.");
+		B_LogEntry	(TOPIC_Addon_MorganBeach,"Р“СЂРµРі С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РѕС‡РёСЃС‚РёР» РєРёС€Р°С‰РёР№ РјРѕРЅСЃС‚СЂР°РјРё РїР»СЏР¶.");
 		
 		MIS_Addon_MorganLurker = LOG_RUNNING;
 	};
 	
 	if	(C_TowerBanditsDead() == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_03"); //В южной башне все еще есть бандиты.
-		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_04"); //Фрэнсис должен был уже давно с ними разобраться, но ничего не сделал.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_03"); //Р’ СЋР¶РЅРѕР№ Р±Р°С€РЅРµ РІСЃРµ РµС‰Рµ РµСЃС‚СЊ Р±Р°РЅРґРёС‚С‹.
+		AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_04"); //Р¤СЂСЌРЅСЃРёСЃ РґРѕР»Р¶РµРЅ Р±С‹Р» СѓР¶Рµ РґР°РІРЅРѕ СЃ РЅРёРјРё СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ, РЅРѕ РЅРёС‡РµРіРѕ РЅРµ СЃРґРµР»Р°Р».
 	
 		Log_CreateTopic (TOPIC_Addon_BanditsTower,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_Addon_BanditsTower,LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_BanditsTower,"Грег попросил меня разобраться с бандитами, занявшими башню к югу от лагеря.");
+		B_LogEntry (TOPIC_Addon_BanditsTower,"Р“СЂРµРі РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё, Р·Р°РЅСЏРІС€РёРјРё Р±Р°С€РЅСЋ Рє СЋРіСѓ РѕС‚ Р»Р°РіРµСЂСЏ.");
 		
 		MIS_Henry_FreeBDTTower = LOG_RUNNING; 
 	
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_05"); //Думаю, ты можешь этим заняться.
+	AI_Output	(self, other, "DIA_Addon_Greg_Auftraege2_01_05"); //Р”СѓРјР°СЋ, С‚С‹ РјРѕР¶РµС€СЊ СЌС‚РёРј Р·Р°РЅСЏС‚СЊСЃСЏ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -466,7 +466,7 @@ instance DIA_Addon_Greg_Sauber2		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_Sauber2_Condition;
 	information	 = 	DIA_Addon_Greg_Sauber2_Info;
 
-	description	 = 	"На северном пляже теперь безопасно.";
+	description	 = 	"РќР° СЃРµРІРµСЂРЅРѕРј РїР»СЏР¶Рµ С‚РµРїРµСЂСЊ Р±РµР·РѕРїР°СЃРЅРѕ.";
 };
 
 func int DIA_Addon_Greg_Sauber2_Condition ()
@@ -485,12 +485,12 @@ func int DIA_Addon_Greg_Sauber2_Condition ()
 
 func void DIA_Addon_Greg_Sauber2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_Sauber2_15_00"); //На северном побережье теперь безопасно.
-	AI_Output	(self, other, "DIA_Addon_Greg_Sauber2_01_01"); //Отлично. Держи свою награду.
+	AI_Output	(other, self, "DIA_Addon_Greg_Sauber2_15_00"); //РќР° СЃРµРІРµСЂРЅРѕРј РїРѕР±РµСЂРµР¶СЊРµ С‚РµРїРµСЂСЊ Р±РµР·РѕРїР°СЃРЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Greg_Sauber2_01_01"); //РћС‚Р»РёС‡РЅРѕ. Р”РµСЂР¶Рё СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ.
 	CreateInvItems (self, ItMi_Gold, 200);									
 	B_GiveInvItems (self, other, ItMi_Gold, 200);
 	
-	B_LogEntry	(TOPIC_Addon_MorganBeach,"Я доложил Грегу, что пляж на севере очищен от монстров.");
+	B_LogEntry	(TOPIC_Addon_MorganBeach,"РЇ РґРѕР»РѕР¶РёР» Р“СЂРµРіСѓ, С‡С‚Рѕ РїР»СЏР¶ РЅР° СЃРµРІРµСЂРµ РѕС‡РёС‰РµРЅ РѕС‚ РјРѕРЅСЃС‚СЂРѕРІ.");
 	
 	MIS_Addon_MorganLurker = LOG_SUCCESS;	
 	B_GivePlayerXP (XP_Addon_Morgan_LurkerPlatt);	
@@ -506,7 +506,7 @@ instance DIA_Addon_Greg_BanditPlatt2		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_BanditPlatt2_Condition;
 	information	 = 	DIA_Addon_Greg_BanditPlatt2_Info;
 
-	description	 = 	"Бандиты в башне уничтожены.";
+	description	 = 	"Р‘Р°РЅРґРёС‚С‹ РІ Р±Р°С€РЅРµ СѓРЅРёС‡С‚РѕР¶РµРЅС‹.";
 };
 
 func int DIA_Addon_Greg_BanditPlatt2_Condition ()
@@ -520,12 +520,12 @@ func int DIA_Addon_Greg_BanditPlatt2_Condition ()
 
 func void DIA_Addon_Greg_BanditPlatt2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_BanditPlatt2_15_00"); //Бандиты в башне уничтожены.
-	AI_Output	(self, other, "DIA_Addon_Greg_BanditPlatt2_01_01"); //Прекрасно. Хорошая работа. Вот твоя награда.
+	AI_Output	(other, self, "DIA_Addon_Greg_BanditPlatt2_15_00"); //Р‘Р°РЅРґРёС‚С‹ РІ Р±Р°С€РЅРµ СѓРЅРёС‡С‚РѕР¶РµРЅС‹.
+	AI_Output	(self, other, "DIA_Addon_Greg_BanditPlatt2_01_01"); //РџСЂРµРєСЂР°СЃРЅРѕ. РҐРѕСЂРѕС€Р°СЏ СЂР°Р±РѕС‚Р°. Р’РѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР°.
 	CreateInvItems (self, ItMi_Gold, 200);									
 	B_GiveInvItems (self, other, ItMi_Gold, 200);	
 	
-	B_LogEntry (TOPIC_Addon_BanditsTower,"Бандиты из башни мертвы. Грег очень доволен.");
+	B_LogEntry (TOPIC_Addon_BanditsTower,"Р‘Р°РЅРґРёС‚С‹ РёР· Р±Р°С€РЅРё РјРµСЂС‚РІС‹. Р“СЂРµРі РѕС‡РµРЅСЊ РґРѕРІРѕР»РµРЅ.");
 	
 	MIS_Henry_FreeBDTTower = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Henry_FreeBDTTower);	
@@ -543,7 +543,7 @@ INSTANCE DIA_Addon_Greg_BanditGoldmine(C_INFO)
 	condition	= DIA_Addon_Greg_BanditGoldmine_Condition;
 	information	= DIA_Addon_Greg_BanditGoldmine_Info;
 	permanent	= TRUE;
-	description = "Бандиты нашли шахту с золотом.";
+	description = "Р‘Р°РЅРґРёС‚С‹ РЅР°С€Р»Рё С€Р°С…С‚Сѓ СЃ Р·РѕР»РѕС‚РѕРј.";
 };                       
 FUNC INT DIA_Addon_Greg_BanditGoldmine_Condition()
 {
@@ -556,14 +556,14 @@ FUNC INT DIA_Addon_Greg_BanditGoldmine_Condition()
 
 FUNC VOID DIA_Addon_Greg_BanditGoldmine_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Greg_BanditGoldmine_15_00"); //Бандиты нашли шахту с золотом.
-	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_01"); //Я так и знал! Вот почему они приперлись сюда.
-	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_02"); //Никто не захочет жить в этой дыре.
-	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_03"); //Хорошая работа. Вот, держи, у меня для тебя награда.
+	AI_Output (other,self,"DIA_Addon_Greg_BanditGoldmine_15_00"); //Р‘Р°РЅРґРёС‚С‹ РЅР°С€Р»Рё С€Р°С…С‚Сѓ СЃ Р·РѕР»РѕС‚РѕРј.
+	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_01"); //РЇ С‚Р°Рє Рё Р·РЅР°Р»! Р’РѕС‚ РїРѕС‡РµРјСѓ РѕРЅРё РїСЂРёРїРµСЂР»РёСЃСЊ СЃСЋРґР°.
+	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_02"); //РќРёРєС‚Рѕ РЅРµ Р·Р°С…РѕС‡РµС‚ Р¶РёС‚СЊ РІ СЌС‚РѕР№ РґС‹СЂРµ.
+	AI_Output (self,other,"DIA_Addon_Greg_BanditGoldmine_01_03"); //РҐРѕСЂРѕС€Р°СЏ СЂР°Р±РѕС‚Р°. Р’РѕС‚, РґРµСЂР¶Рё, Сѓ РјРµРЅСЏ РґР»СЏ С‚РµР±СЏ РЅР°РіСЂР°РґР°.
 	
 	B_GiveInvItems (self,other,ItRi_Addon_STR_01,1);
 	
-	B_LogEntry (TOPIC_Addon_ScoutBandits,"Я рассказал Грегу о золотой шахте.");	
+	B_LogEntry (TOPIC_Addon_ScoutBandits,"РЇ СЂР°СЃСЃРєР°Р·Р°Р» Р“СЂРµРіСѓ Рѕ Р·РѕР»РѕС‚РѕР№ С€Р°С…С‚Рµ.");	
 	
 	MIS_Greg_ScoutBandits = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Greg_ScoutBandits);
@@ -580,7 +580,7 @@ INSTANCE DIA_Addon_Greg_WhoAreYou(C_INFO)
 	condition	= DIA_Addon_Greg_WhoAreYou_Condition;
 	information	= DIA_Addon_Greg_WhoAreYou_Info;
 	permanent	= FALSE;
-	description = "Кто ты?";
+	description = "РљС‚Рѕ С‚С‹?";
 };                       
 FUNC INT DIA_Addon_Greg_WhoAreYou_Condition()
 {
@@ -593,9 +593,9 @@ FUNC INT DIA_Addon_Greg_WhoAreYou_Condition()
 
 FUNC VOID DIA_Addon_Greg_WhoAreYou_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Greg_WhoAreYou_15_00"); //Кто ты?
-	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_01"); //Я Грег, предводитель этой ленивой своры.
-	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_02"); //Тебя устраивает такой ответ?
+	AI_Output (other,self ,"DIA_Addon_Greg_WhoAreYou_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_01"); //РЇ Р“СЂРµРі, РїСЂРµРґРІРѕРґРёС‚РµР»СЊ СЌС‚РѕР№ Р»РµРЅРёРІРѕР№ СЃРІРѕСЂС‹.
+	AI_Output (self ,other,"DIA_Addon_Greg_WhoAreYou_01_02"); //РўРµР±СЏ СѓСЃС‚СЂР°РёРІР°РµС‚ С‚Р°РєРѕР№ РѕС‚РІРµС‚?
 };
 
 // ************************************************************
@@ -608,7 +608,7 @@ INSTANCE DIA_Addon_Greg_NiceToSeeYou(C_INFO)
 	condition	= DIA_Addon_Greg_NiceToSeeYou_Condition;
 	information	= DIA_Addon_Greg_NiceToSeeYou_Info;
 	permanent	= FALSE;
-	description = "А как ты сюда попал?";
+	description = "Рђ РєР°Рє С‚С‹ СЃСЋРґР° РїРѕРїР°Р»?";
 };                       
 FUNC INT DIA_Addon_Greg_NiceToSeeYou_Condition()
 {
@@ -621,10 +621,10 @@ FUNC INT DIA_Addon_Greg_NiceToSeeYou_Condition()
 
 FUNC VOID DIA_Addon_Greg_NiceToSeeYou_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Greg_NiceToSeeYou_15_00"); //А как ты сюда попал?
-	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_01"); //Не ожидал увидеть меня здесь, да?
-	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_02"); //Давай сразу расставим точки над i. Я Грег, и это мой лагерь.
-	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_03"); //Тебя устраивает такой ответ?
+	AI_Output (other,self ,"DIA_Addon_Greg_NiceToSeeYou_15_00"); //Рђ РєР°Рє С‚С‹ СЃСЋРґР° РїРѕРїР°Р»?
+	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_01"); //РќРµ РѕР¶РёРґР°Р» СѓРІРёРґРµС‚СЊ РјРµРЅСЏ Р·РґРµСЃСЊ, РґР°?
+	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_02"); //Р”Р°РІР°Р№ СЃСЂР°Р·Сѓ СЂР°СЃСЃС‚Р°РІРёРј С‚РѕС‡РєРё РЅР°Рґ i. РЇ Р“СЂРµРі, Рё СЌС‚Рѕ РјРѕР№ Р»Р°РіРµСЂСЊ.
+	AI_Output (self ,other,"DIA_Addon_Greg_NiceToSeeYou_01_03"); //РўРµР±СЏ СѓСЃС‚СЂР°РёРІР°РµС‚ С‚Р°РєРѕР№ РѕС‚РІРµС‚?
 };
 	
 // ************************************************************
@@ -637,7 +637,7 @@ INSTANCE DIA_Addon_Greg_Story(C_INFO)
 	condition	= DIA_Addon_Greg_Story_Condition;
 	information	= DIA_Addon_Greg_Story_Info;
 	permanent	= TRUE;
-	description = "Я хотел бы знать еще кое-что.";
+	description = "РЇ С…РѕС‚РµР» Р±С‹ Р·РЅР°С‚СЊ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ.";
 };                       
 FUNC INT DIA_Addon_Greg_Story_Condition()
 {
@@ -651,17 +651,17 @@ FUNC INT DIA_Addon_Greg_Story_Condition()
 
 FUNC VOID DIA_Addon_Greg_Story_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_15_00"); //Я хотел бы знать еще кое-что.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_01_01"); //Что именно?
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_15_00"); //РЇ С…РѕС‚РµР» Р±С‹ Р·РЅР°С‚СЊ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_01_01"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ?
 	
 	Info_ClearChoices (DIA_Addon_Greg_Story);
 	Info_AddChoice (DIA_Addon_Greg_Story,DIALOG_BACK,DIA_Addon_Greg_Story_Back);
-	Info_AddChoice (DIA_Addon_Greg_Story,"Как ты сюда попал?",DIA_Addon_Greg_Story_Way);
-	Info_AddChoice (DIA_Addon_Greg_Story,"А где твой корабль?",DIA_Addon_Greg_Story_Ship);
+	Info_AddChoice (DIA_Addon_Greg_Story,"РљР°Рє С‚С‹ СЃСЋРґР° РїРѕРїР°Р»?",DIA_Addon_Greg_Story_Way);
+	Info_AddChoice (DIA_Addon_Greg_Story,"Рђ РіРґРµ С‚РІРѕР№ РєРѕСЂР°Р±Р»СЊ?",DIA_Addon_Greg_Story_Ship);
 
 	if (RavenIsDead == FALSE)
 	{
-		Info_AddChoice (DIA_Addon_Greg_Story,"Что ты знаешь о Вороне?",DIA_Addon_Greg_Story_Raven);
+		Info_AddChoice (DIA_Addon_Greg_Story,"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р’РѕСЂРѕРЅРµ?",DIA_Addon_Greg_Story_Raven);
 	};
 };	
 
@@ -672,29 +672,29 @@ FUNC VOID DIA_Addon_Greg_Story_Back()
 
 FUNC VOID DIA_Addon_Greg_Story_Way()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_Way_15_00"); //Как ты сюда попал?
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_01"); //Я обнаружил вход в тоннель возле древней пирамиды, которую охраняли несколько магов.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_02"); //Мне удалось незаметно проскользнуть мимо этих слепцов.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_03"); //Сначала я принял это место за древний склеп и решил проверить, чем там можно поживиться.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_04"); //Представь мое удивление, когда я оказался в этой чудесной долине.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_05"); //И это произошло как раз в тот момент, когда я уже решил, что весь остаток жизни мне придется скрываться от ополчения.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_Way_15_00"); //РљР°Рє С‚С‹ СЃСЋРґР° РїРѕРїР°Р»?
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_01"); //РЇ РѕР±РЅР°СЂСѓР¶РёР» РІС…РѕРґ РІ С‚РѕРЅРЅРµР»СЊ РІРѕР·Р»Рµ РґСЂРµРІРЅРµР№ РїРёСЂР°РјРёРґС‹, РєРѕС‚РѕСЂСѓСЋ РѕС…СЂР°РЅСЏР»Рё РЅРµСЃРєРѕР»СЊРєРѕ РјР°РіРѕРІ.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_02"); //РњРЅРµ СѓРґР°Р»РѕСЃСЊ РЅРµР·Р°РјРµС‚РЅРѕ РїСЂРѕСЃРєРѕР»СЊР·РЅСѓС‚СЊ РјРёРјРѕ СЌС‚РёС… СЃР»РµРїС†РѕРІ.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_03"); //РЎРЅР°С‡Р°Р»Р° СЏ РїСЂРёРЅСЏР» СЌС‚Рѕ РјРµСЃС‚Рѕ Р·Р° РґСЂРµРІРЅРёР№ СЃРєР»РµРї Рё СЂРµС€РёР» РїСЂРѕРІРµСЂРёС‚СЊ, С‡РµРј С‚Р°Рј РјРѕР¶РЅРѕ РїРѕР¶РёРІРёС‚СЊСЃСЏ.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_04"); //РџСЂРµРґСЃС‚Р°РІСЊ РјРѕРµ СѓРґРёРІР»РµРЅРёРµ, РєРѕРіРґР° СЏ РѕРєР°Р·Р°Р»СЃСЏ РІ СЌС‚РѕР№ С‡СѓРґРµСЃРЅРѕР№ РґРѕР»РёРЅРµ.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Way_01_05"); //Р СЌС‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РєР°Рє СЂР°Р· РІ С‚РѕС‚ РјРѕРјРµРЅС‚, РєРѕРіРґР° СЏ СѓР¶Рµ СЂРµС€РёР», С‡С‚Рѕ РІРµСЃСЊ РѕСЃС‚Р°С‚РѕРє Р¶РёР·РЅРё РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЃРєСЂС‹РІР°С‚СЊСЃСЏ РѕС‚ РѕРїРѕР»С‡РµРЅРёСЏ.
 };
 
 FUNC VOID DIA_Addon_Greg_Story_Ship()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_00"); //А где твой корабль?
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_01"); //(с сарказмом) Я чертовски удачливый человек. Уже несколько месяцев сюда не приплывали корабли. 
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_02"); //Несколько месяцев! И первый корабль, который мне после этого встречается, оказывается боевым кораблем, принадлежащим королю.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_03"); //Он был битком набит паладинами.
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_04"); //Да уж, не повезло тебе.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_05"); //Вот именно. Они тут же потопили нас. Я единственный, кто добрался до берега. 
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_00"); //Рђ РіРґРµ С‚РІРѕР№ РєРѕСЂР°Р±Р»СЊ?
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_01"); //(СЃ СЃР°СЂРєР°Р·РјРѕРј) РЇ С‡РµСЂС‚РѕРІСЃРєРё СѓРґР°С‡Р»РёРІС‹Р№ С‡РµР»РѕРІРµРє. РЈР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РјРµСЃСЏС†РµРІ СЃСЋРґР° РЅРµ РїСЂРёРїР»С‹РІР°Р»Рё РєРѕСЂР°Р±Р»Рё. 
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_02"); //РќРµСЃРєРѕР»СЊРєРѕ РјРµСЃСЏС†РµРІ! Р РїРµСЂРІС‹Р№ РєРѕСЂР°Р±Р»СЊ, РєРѕС‚РѕСЂС‹Р№ РјРЅРµ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ, РѕРєР°Р·С‹РІР°РµС‚СЃСЏ Р±РѕРµРІС‹Рј РєРѕСЂР°Р±Р»РµРј, РїСЂРёРЅР°РґР»РµР¶Р°С‰РёРј РєРѕСЂРѕР»СЋ.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_03"); //РћРЅ Р±С‹Р» Р±РёС‚РєРѕРј РЅР°Р±РёС‚ РїР°Р»Р°РґРёРЅР°РјРё.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_Ship_15_04"); //Р”Р° СѓР¶, РЅРµ РїРѕРІРµР·Р»Рѕ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Ship_01_05"); //Р’РѕС‚ РёРјРµРЅРЅРѕ. РћРЅРё С‚СѓС‚ Р¶Рµ РїРѕС‚РѕРїРёР»Рё РЅР°СЃ. РЇ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ РґРѕР±СЂР°Р»СЃСЏ РґРѕ Р±РµСЂРµРіР°. 
 };
 FUNC VOID DIA_Addon_Greg_Story_Raven()
 {
-	AI_Output (other,self ,"DIA_Addon_Greg_Story_Raven_15_00"); //Что ты знаешь о Вороне?
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_01"); //Он торговал рудой. Довольно крупная шишка в колонии.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_02"); //Я не имею ни малейшего представления, где он может быть сейчас и почему люди все еще следуют за ним.
-	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_03"); //Но он явно что-то замышляет. Он-то уж точно не будет отсиживаться в укромном месте.
+	AI_Output (other,self ,"DIA_Addon_Greg_Story_Raven_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р’РѕСЂРѕРЅРµ?
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_01"); //РћРЅ С‚РѕСЂРіРѕРІР°Р» СЂСѓРґРѕР№. Р”РѕРІРѕР»СЊРЅРѕ РєСЂСѓРїРЅР°СЏ С€РёС€РєР° РІ РєРѕР»РѕРЅРёРё.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_02"); //РЇ РЅРµ РёРјРµСЋ РЅРё РјР°Р»РµР№С€РµРіРѕ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ, РіРґРµ РѕРЅ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃРµР№С‡Р°СЃ Рё РїРѕС‡РµРјСѓ Р»СЋРґРё РІСЃРµ РµС‰Рµ СЃР»РµРґСѓСЋС‚ Р·Р° РЅРёРј.
+	AI_Output (self ,other,"DIA_Addon_Greg_Story_Raven_01_03"); //РќРѕ РѕРЅ СЏРІРЅРѕ С‡С‚Рѕ-С‚Рѕ Р·Р°РјС‹С€Р»СЏРµС‚. РћРЅ-С‚Рѕ СѓР¶ С‚РѕС‡РЅРѕ РЅРµ Р±СѓРґРµС‚ РѕС‚СЃРёР¶РёРІР°С‚СЊСЃСЏ РІ СѓРєСЂРѕРјРЅРѕРј РјРµСЃС‚Рµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -707,7 +707,7 @@ instance DIA_Addon_Greg_RavenDead		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_RavenDead_Condition;
 	information	 = 	DIA_Addon_Greg_RavenDead_Info;
 
-	description	 = 	"С Вороном покончено...";
+	description	 = 	"РЎ Р’РѕСЂРѕРЅРѕРј РїРѕРєРѕРЅС‡РµРЅРѕ...";
 };
 
 func int DIA_Addon_Greg_RavenDead_Condition ()
@@ -720,12 +720,12 @@ func int DIA_Addon_Greg_RavenDead_Condition ()
 
 func void DIA_Addon_Greg_RavenDead_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_RavenDead_15_00"); //С Вороном покончено...
-	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_01"); //Чтоб меня... Не ожидал я этого... Застал его врасплох, да?
-	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_02"); //Ну, на мой взгляд, это стоит пятиста золотых монет.
+	AI_Output	(other, self, "DIA_Addon_Greg_RavenDead_15_00"); //РЎ Р’РѕСЂРѕРЅРѕРј РїРѕРєРѕРЅС‡РµРЅРѕ...
+	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_01"); //Р§С‚РѕР± РјРµРЅСЏ... РќРµ РѕР¶РёРґР°Р» СЏ СЌС‚РѕРіРѕ... Р—Р°СЃС‚Р°Р» РµРіРѕ РІСЂР°СЃРїР»РѕС…, РґР°?
+	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_02"); //РќСѓ, РЅР° РјРѕР№ РІР·РіР»СЏРґ, СЌС‚Рѕ СЃС‚РѕРёС‚ РїСЏС‚РёСЃС‚Р° Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	CreateInvItems (self, ItMi_Gold, 500);									
 	B_GiveInvItems (self, other, ItMi_Gold, 500);		
-	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_03"); //А ты смелый. Продолжай в том же духе.
+	AI_Output	(self, other, "DIA_Addon_Greg_RavenDead_01_03"); //Рђ С‚С‹ СЃРјРµР»С‹Р№. РџСЂРѕРґРѕР»Р¶Р°Р№ РІ С‚РѕРј Р¶Рµ РґСѓС…Рµ.
 	B_GivePlayerXP (XP_ADDON_GregRavenLohn);
 };
 

@@ -35,7 +35,7 @@ instance DIA_Sagitta_HALLO		(C_INFO)
 	condition	 = 	DIA_Sagitta_HALLO_Condition;
 	information	 = 	DIA_Sagitta_HALLO_Info;
 
-	description	 = 	"Ты здесь совсем одна?";
+	description	 = 	"РўС‹ Р·РґРµСЃСЊ СЃРѕРІСЃРµРј РѕРґРЅР°?";
 };
 
 func int DIA_Sagitta_HALLO_Condition ()
@@ -45,41 +45,41 @@ func int DIA_Sagitta_HALLO_Condition ()
 
 func void DIA_Sagitta_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HALLO_15_00"); //Ты здесь совсем одна?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_17_01"); //Говори, что тебе нужно от меня, и уходи. Я занята.
+	AI_Output			(other, self, "DIA_Sagitta_HALLO_15_00"); //РўС‹ Р·РґРµСЃСЊ СЃРѕРІСЃРµРј РѕРґРЅР°?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_17_01"); //Р“РѕРІРѕСЂРё, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ, Рё СѓС…РѕРґРё. РЇ Р·Р°РЅСЏС‚Р°.
 
 	Info_ClearChoices	(DIA_Sagitta_HALLO);
 	Info_AddChoice	(DIA_Sagitta_HALLO, DIALOG_BACK, DIA_Sagitta_HALLO_ende );
-	Info_AddChoice	(DIA_Sagitta_HALLO, "Ты можешь вылечить меня?", DIA_Sagitta_HALLO_Heil );
-	Info_AddChoice	(DIA_Sagitta_HALLO, "Что ты делаешь здесь?", DIA_Sagitta_HALLO_was );
-	Info_AddChoice	(DIA_Sagitta_HALLO, "Кто ты?", DIA_Sagitta_HALLO_wer );
+	Info_AddChoice	(DIA_Sagitta_HALLO, "РўС‹ РјРѕР¶РµС€СЊ РІС‹Р»РµС‡РёС‚СЊ РјРµРЅСЏ?", DIA_Sagitta_HALLO_Heil );
+	Info_AddChoice	(DIA_Sagitta_HALLO, "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?", DIA_Sagitta_HALLO_was );
+	Info_AddChoice	(DIA_Sagitta_HALLO, "РљС‚Рѕ С‚С‹?", DIA_Sagitta_HALLO_wer );
 
 };
 
 func void DIA_Sagitta_HALLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HALLO_wer_15_00"); //Кто ты?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_01"); //Ты что, никогда не слышал обо мне?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_02"); //Меня называют ведьмой-целительницей. А еще шаманкой.
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_03"); //Но когда им плохо, все они неожиданно вспоминают старую добрую Сагитту и ее целебные травы.
+	AI_Output			(other, self, "DIA_Sagitta_HALLO_wer_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_01"); //РўС‹ С‡С‚Рѕ, РЅРёРєРѕРіРґР° РЅРµ СЃР»С‹С€Р°Р» РѕР±Рѕ РјРЅРµ?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_02"); //РњРµРЅСЏ РЅР°Р·С‹РІР°СЋС‚ РІРµРґСЊРјРѕР№-С†РµР»РёС‚РµР»СЊРЅРёС†РµР№. Рђ РµС‰Рµ С€Р°РјР°РЅРєРѕР№.
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_wer_17_03"); //РќРѕ РєРѕРіРґР° РёРј РїР»РѕС…Рѕ, РІСЃРµ РѕРЅРё РЅРµРѕР¶РёРґР°РЅРЅРѕ РІСЃРїРѕРјРёРЅР°СЋС‚ СЃС‚Р°СЂСѓСЋ РґРѕР±СЂСѓСЋ РЎР°РіРёС‚С‚Сѓ Рё РµРµ С†РµР»РµР±РЅС‹Рµ С‚СЂР°РІС‹.
 
 };
 
 func void DIA_Sagitta_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HALLO_was_15_00"); //Что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_was_17_01"); //Я живу здесь, сколько себя помню, и занимаюсь травами.
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_was_17_02"); //Лес - мой друг. Он дает мне то, что мне нужно.
+	AI_Output			(other, self, "DIA_Sagitta_HALLO_was_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_was_17_01"); //РЇ Р¶РёРІСѓ Р·РґРµСЃСЊ, СЃРєРѕР»СЊРєРѕ СЃРµР±СЏ РїРѕРјРЅСЋ, Рё Р·Р°РЅРёРјР°СЋСЃСЊ С‚СЂР°РІР°РјРё.
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_was_17_02"); //Р›РµСЃ - РјРѕР№ РґСЂСѓРі. РћРЅ РґР°РµС‚ РјРЅРµ С‚Рѕ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ.
 
 };
 
 func void DIA_Sagitta_HALLO_Heil ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HALLO_Heil_15_00"); //Ты можешь вылечить меня?
-	AI_Output			(self, other, "DIA_Sagitta_HALLO_Heil_17_01"); //Ты за этим пришел, да? Дай мне знать, если с тобой будет что-то не в порядке.
+	AI_Output			(other, self, "DIA_Sagitta_HALLO_Heil_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РІС‹Р»РµС‡РёС‚СЊ РјРµРЅСЏ?
+	AI_Output			(self, other, "DIA_Sagitta_HALLO_Heil_17_01"); //РўС‹ Р·Р° СЌС‚РёРј РїСЂРёС€РµР», РґР°? Р”Р°Р№ РјРЅРµ Р·РЅР°С‚СЊ, РµСЃР»Рё СЃ С‚РѕР±РѕР№ Р±СѓРґРµС‚ С‡С‚Рѕ-С‚Рѕ РЅРµ РІ РїРѕСЂСЏРґРєРµ.
 	
 	Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTrader,"У Саггиты, живущей за фермой Секоба, можно купить различные товары.");
+	B_LogEntry (Topic_SoldierTrader,"РЈ РЎР°РіРіРёС‚С‹, Р¶РёРІСѓС‰РµР№ Р·Р° С„РµСЂРјРѕР№ РЎРµРєРѕР±Р°, РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ СЂР°Р·Р»РёС‡РЅС‹Рµ С‚РѕРІР°СЂС‹.");
 };
 
 func void DIA_Sagitta_HALLO_ende ()
@@ -98,7 +98,7 @@ instance DIA_Sagitta_TeachAlchemyRequest		(C_INFO)
 	information	 = 	DIA_Sagitta_TeachAlchemyRequest_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты можешь научить меня готовить зелья?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РіРѕС‚РѕРІРёС‚СЊ Р·РµР»СЊСЏ?";
 };
 
 func int DIA_Sagitta_TeachAlchemyRequest_Condition ()
@@ -112,60 +112,60 @@ func int DIA_Sagitta_TeachAlchemyRequest_Condition ()
 var int DIA_Sagitta_TeachAlchemyRequest_OneTime;
 func void DIA_Sagitta_TeachAlchemyRequest_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_15_00"); //Ты можешь научить меня готовить зелья?
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РіРѕС‚РѕРІРёС‚СЊ Р·РµР»СЊСЏ?
 
 	if (DIA_Sagitta_TeachAlchemyRequest_OneTime ==FALSE)
 	{
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_01"); //Как интересно. Меня нечасто о таком просят.
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_02"); //Так ты хочешь быть моим учеником? Тогда тебе сначала нужно доказать, что твои намерения серьезны.
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_03"); //Я сейчас работаю над очень редким зельем, которое готовится из весьма специфических трав и растений.
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_04"); //Если бы ты принес мне один ингредиент - очень редкое растение, которого у меня нет - я обучу тебя.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_01"); //РљР°Рє РёРЅС‚РµСЂРµСЃРЅРѕ. РњРµРЅСЏ РЅРµС‡Р°СЃС‚Рѕ Рѕ С‚Р°РєРѕРј РїСЂРѕСЃСЏС‚.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_02"); //РўР°Рє С‚С‹ С…РѕС‡РµС€СЊ Р±С‹С‚СЊ РјРѕРёРј СѓС‡РµРЅРёРєРѕРј? РўРѕРіРґР° С‚РµР±Рµ СЃРЅР°С‡Р°Р»Р° РЅСѓР¶РЅРѕ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚РІРѕРё РЅР°РјРµСЂРµРЅРёСЏ СЃРµСЂСЊРµР·РЅС‹.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_03"); //РЇ СЃРµР№С‡Р°СЃ СЂР°Р±РѕС‚Р°СЋ РЅР°Рґ РѕС‡РµРЅСЊ СЂРµРґРєРёРј Р·РµР»СЊРµРј, РєРѕС‚РѕСЂРѕРµ РіРѕС‚РѕРІРёС‚СЃСЏ РёР· РІРµСЃСЊРјР° СЃРїРµС†РёС„РёС‡РµСЃРєРёС… С‚СЂР°РІ Рё СЂР°СЃС‚РµРЅРёР№.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_04"); //Р•СЃР»Рё Р±С‹ С‚С‹ РїСЂРёРЅРµСЃ РјРЅРµ РѕРґРёРЅ РёРЅРіСЂРµРґРёРµРЅС‚ - РѕС‡РµРЅСЊ СЂРµРґРєРѕРµ СЂР°СЃС‚РµРЅРёРµ, РєРѕС‚РѕСЂРѕРіРѕ Сѓ РјРµРЅСЏ РЅРµС‚ - СЏ РѕР±СѓС‡Сѓ С‚РµР±СЏ.
 		DIA_Sagitta_TeachAlchemyRequest_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_05"); //Я уже сказала тебе: да, после того, как ты принесешь мне этот редкий ингредиент, что я просила.
+		AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_05"); //РЇ СѓР¶Рµ СЃРєР°Р·Р°Р»Р° С‚РµР±Рµ: РґР°, РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ СЌС‚РѕС‚ СЂРµРґРєРёР№ РёРЅРіСЂРµРґРёРµРЅС‚, С‡С‚Рѕ СЏ РїСЂРѕСЃРёР»Р°.
 	};
 	
 	Info_ClearChoices	(DIA_Sagitta_TeachAlchemyRequest);
-	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "Извини, но мне это не интересно.", DIA_Sagitta_TeachAlchemyRequest_nein );
-	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "Где можно найти этот ингредиент?", DIA_Sagitta_TeachAlchemyRequest_wo );
-	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "Что это за ингредиент?", DIA_Sagitta_TeachAlchemyRequest_was );
+	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "РР·РІРёРЅРё, РЅРѕ РјРЅРµ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ.", DIA_Sagitta_TeachAlchemyRequest_nein );
+	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "Р“РґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё СЌС‚РѕС‚ РёРЅРіСЂРµРґРёРµРЅС‚?", DIA_Sagitta_TeachAlchemyRequest_wo );
+	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "Р§С‚Рѕ СЌС‚Рѕ Р·Р° РёРЅРіСЂРµРґРёРµРЅС‚?", DIA_Sagitta_TeachAlchemyRequest_was );
 	
 };
 func void DIA_Sagitta_TeachAlchemyRequest_was ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_was_15_00"); //Что это за ингредиент?
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_was_17_01"); //Это очень редкое растение - трава, называемая солнечное алоэ. Ты узнаешь его по сильному миндальному аромату.
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_was_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° РёРЅРіСЂРµРґРёРµРЅС‚?
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_was_17_01"); //Р­С‚Рѕ РѕС‡РµРЅСЊ СЂРµРґРєРѕРµ СЂР°СЃС‚РµРЅРёРµ - С‚СЂР°РІР°, РЅР°Р·С‹РІР°РµРјР°СЏ СЃРѕР»РЅРµС‡РЅРѕРµ Р°Р»РѕСЌ. РўС‹ СѓР·РЅР°РµС€СЊ РµРіРѕ РїРѕ СЃРёР»СЊРЅРѕРјСѓ РјРёРЅРґР°Р»СЊРЅРѕРјСѓ Р°СЂРѕРјР°С‚Сѓ.
 	
 };
 
 func void DIA_Sagitta_TeachAlchemyRequest_wo ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_15_00"); //Где можно найти этот ингредиент?
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_01"); //Трава, необходимая мне, произрастает только в местах, где есть все питательные вещества, необходимые для ее роста.
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_02"); //Обычно она встречается на экскрементах черного тролля.
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_03"); //Вот почему мне так сложно достать эту траву, понимаешь?
-	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "Посмотрим, может, мне удастся найти ее где-нибудь.", DIA_Sagitta_TeachAlchemyRequest_wo_ja );
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_15_00"); //Р“РґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё СЌС‚РѕС‚ РёРЅРіСЂРµРґРёРµРЅС‚?
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_01"); //РўСЂР°РІР°, РЅРµРѕР±С…РѕРґРёРјР°СЏ РјРЅРµ, РїСЂРѕРёР·СЂР°СЃС‚Р°РµС‚ С‚РѕР»СЊРєРѕ РІ РјРµСЃС‚Р°С…, РіРґРµ РµСЃС‚СЊ РІСЃРµ РїРёС‚Р°С‚РµР»СЊРЅС‹Рµ РІРµС‰РµСЃС‚РІР°, РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ РµРµ СЂРѕСЃС‚Р°.
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_02"); //РћР±С‹С‡РЅРѕ РѕРЅР° РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ РЅР° СЌРєСЃРєСЂРµРјРµРЅС‚Р°С… С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_03"); //Р’РѕС‚ РїРѕС‡РµРјСѓ РјРЅРµ С‚Р°Рє СЃР»РѕР¶РЅРѕ РґРѕСЃС‚Р°С‚СЊ СЌС‚Сѓ С‚СЂР°РІСѓ, РїРѕРЅРёРјР°РµС€СЊ?
+	Info_AddChoice	(DIA_Sagitta_TeachAlchemyRequest, "РџРѕСЃРјРѕС‚СЂРёРј, РјРѕР¶РµС‚, РјРЅРµ СѓРґР°СЃС‚СЃСЏ РЅР°Р№С‚Рё РµРµ РіРґРµ-РЅРёР±СѓРґСЊ.", DIA_Sagitta_TeachAlchemyRequest_wo_ja );
 };
 func void DIA_Sagitta_TeachAlchemyRequest_wo_ja ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_15_00"); //Посмотрим, может, мне удастся найти ее где-нибудь.
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_17_01"); //Удачи тебе в твоих поисках.
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_15_00"); //РџРѕСЃРјРѕС‚СЂРёРј, РјРѕР¶РµС‚, РјРЅРµ СѓРґР°СЃС‚СЃСЏ РЅР°Р№С‚Рё РµРµ РіРґРµ-РЅРёР±СѓРґСЊ.
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_17_01"); //РЈРґР°С‡Рё С‚РµР±Рµ РІ С‚РІРѕРёС… РїРѕРёСЃРєР°С….
 	Info_ClearChoices	(DIA_Sagitta_TeachAlchemyRequest);
 	MIS_Sagitta_Herb = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_SagittaHerb,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_SagittaHerb,LOG_RUNNING);
-	B_LogEntry (TOPIC_SagittaHerb,"Саггите нужно очень странное растение. Это солнечное алоэ, оно растет только на экскрементах черного тролля.");
+	B_LogEntry (TOPIC_SagittaHerb,"РЎР°РіРіРёС‚Рµ РЅСѓР¶РЅРѕ РѕС‡РµРЅСЊ СЃС‚СЂР°РЅРЅРѕРµ СЂР°СЃС‚РµРЅРёРµ. Р­С‚Рѕ СЃРѕР»РЅРµС‡РЅРѕРµ Р°Р»РѕСЌ, РѕРЅРѕ СЂР°СЃС‚РµС‚ С‚РѕР»СЊРєРѕ РЅР° СЌРєСЃРєСЂРµРјРµРЅС‚Р°С… С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ.");
 
 };
 
 
 func void DIA_Sagitta_TeachAlchemyRequest_nein ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_nein_15_00"); //Извини, но мне это не интересно.
-	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_nein_17_01"); //Тогда хватит тратить мое время на всякую чепуху.
+	AI_Output			(other, self, "DIA_Sagitta_TeachAlchemyRequest_nein_15_00"); //РР·РІРёРЅРё, РЅРѕ РјРЅРµ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ.
+	AI_Output			(self, other, "DIA_Sagitta_TeachAlchemyRequest_nein_17_01"); //РўРѕРіРґР° С…РІР°С‚РёС‚ С‚СЂР°С‚РёС‚СЊ РјРѕРµ РІСЂРµРјСЏ РЅР° РІСЃСЏРєСѓСЋ С‡РµРїСѓС…Сѓ.
 	Info_ClearChoices	(DIA_Sagitta_TeachAlchemyRequest);
 };
 
@@ -179,7 +179,7 @@ instance DIA_Sagitta_Sagitta_Herb		(C_INFO)
 	condition	 = 	DIA_Sagitta_Sagitta_Herb_Condition;
 	information	 = 	DIA_Sagitta_Sagitta_Herb_Info;
 
-	description	 = 	"Я нашел солнечное алоэ.";
+	description	 = 	"РЇ РЅР°С€РµР» СЃРѕР»РЅРµС‡РЅРѕРµ Р°Р»РѕСЌ.";
 };
 
 func int DIA_Sagitta_Sagitta_Herb_Condition ()
@@ -193,8 +193,8 @@ func int DIA_Sagitta_Sagitta_Herb_Condition ()
 };
 func void DIA_Sagitta_Sagitta_Herb_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_Sagitta_Herb_15_00"); //Я нашел солнечное алоэ.
-	AI_Output			(self, other, "DIA_Sagitta_Sagitta_Herb_17_01"); //Спасибо. Теперь ты можешь спрашивать меня обо всем, что хочешь узнать о приготовлении зелий.
+	AI_Output			(other, self, "DIA_Sagitta_Sagitta_Herb_15_00"); //РЇ РЅР°С€РµР» СЃРѕР»РЅРµС‡РЅРѕРµ Р°Р»РѕСЌ.
+	AI_Output			(self, other, "DIA_Sagitta_Sagitta_Herb_17_01"); //РЎРїР°СЃРёР±Рѕ. РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ СЃРїСЂР°С€РёРІР°С‚СЊ РјРµРЅСЏ РѕР±Рѕ РІСЃРµРј, С‡С‚Рѕ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ Рѕ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёРё Р·РµР»РёР№.
 	B_GiveInvItems (other,self,ItPl_Sagitta_Herb_MIS,1);
 	Sagitta_TeachAlchemy = TRUE;	
 	MIS_Sagitta_Herb = LOG_SUCCESS;
@@ -212,7 +212,7 @@ INSTANCE DIA_Sagitta_Teach   (C_INFO)
 	condition   = DIA_Sagitta_Teach_Condition;
 	information = DIA_Sagitta_Teach_Info;
 	permanent   = TRUE;
-	description = "Какие зелья можешь ты научить меня варить?";
+	description = "РљР°РєРёРµ Р·РµР»СЊСЏ РјРѕР¶РµС€СЊ С‚С‹ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РІР°СЂРёС‚СЊ?";
 };
 //----------------------------------------
 var int DIA_Sagitta_Teach_permanent;
@@ -231,7 +231,7 @@ FUNC VOID DIA_Sagitta_Teach_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Sagitta_Teach_15_00");//Какие зелья можешь ты научить меня варить?
+	AI_Output (other, self,"DIA_Sagitta_Teach_15_00");//РљР°РєРёРµ Р·РµР»СЊСЏ РјРѕР¶РµС€СЊ С‚С‹ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РІР°СЂРёС‚СЊ?
 
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	|| ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
@@ -248,47 +248,47 @@ FUNC VOID DIA_Sagitta_Teach_Info()
 	};
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Лечебная эссенция", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)),DIA_Sagitta_Teach_Health_01);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Р›РµС‡РµР±РЅР°СЏ СЌСЃСЃРµРЅС†РёСЏ", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)),DIA_Sagitta_Teach_Health_01);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Лечебный экстракт", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Sagitta_Teach_Health_02);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Р›РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Sagitta_Teach_Health_02);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Эссенция маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Sagitta_Teach_Mana_01);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Р­СЃСЃРµРЅС†РёСЏ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Sagitta_Teach_Mana_01);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Экстракт маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)),DIA_Sagitta_Teach_Mana_02);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Р­РєСЃС‚СЂР°РєС‚ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)),DIA_Sagitta_Teach_Mana_02);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Эликсир маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)),DIA_Sagitta_Teach_Mana_03);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)),DIA_Sagitta_Teach_Mana_03);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Эликсир духа", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Sagitta_Teach_Perm_Mana);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ РґСѓС…Р°", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Sagitta_Teach_Perm_Mana);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Эликсир ловкости", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)),DIA_Sagitta_Teach_Perm_DEX);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ Р»РѕРІРєРѕСЃС‚Рё", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)),DIA_Sagitta_Teach_Perm_DEX);
 		talente = (talente + 1);
 	};
 
@@ -296,20 +296,20 @@ FUNC VOID DIA_Sagitta_Teach_Info()
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_01"); //Прежде чем приступить к обучению тебя алхимии, я сначала расскажу, что необходимо иметь для приготовления зелий.
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_02"); //Все зелья готовятся на алхимическом столе. Тебе также понадобится пустая мензурка, в которой будет храниться приготовленное зелье.
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_03"); //Тебе нужно смешать необходимые ингредиенты и все - зелье готово.
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_04"); //Ну а дополнительные подробности ты всегда можешь узнать у меня, если захочешь.
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_01"); //РџСЂРµР¶РґРµ С‡РµРј РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє РѕР±СѓС‡РµРЅРёСЋ С‚РµР±СЏ Р°Р»С…РёРјРёРё, СЏ СЃРЅР°С‡Р°Р»Р° СЂР°СЃСЃРєР°Р¶Сѓ, С‡С‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ РёРјРµС‚СЊ РґР»СЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ Р·РµР»РёР№.
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_02"); //Р’СЃРµ Р·РµР»СЊСЏ РіРѕС‚РѕРІСЏС‚СЃСЏ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ. РўРµР±Рµ С‚Р°РєР¶Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РїСѓСЃС‚Р°СЏ РјРµРЅР·СѓСЂРєР°, РІ РєРѕС‚РѕСЂРѕР№ Р±СѓРґРµС‚ С…СЂР°РЅРёС‚СЊСЃСЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅРЅРѕРµ Р·РµР»СЊРµ.
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_03"); //РўРµР±Рµ РЅСѓР¶РЅРѕ СЃРјРµС€Р°С‚СЊ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РёРЅРіСЂРµРґРёРµРЅС‚С‹ Рё РІСЃРµ - Р·РµР»СЊРµ РіРѕС‚РѕРІРѕ.
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_04"); //РќСѓ Р° РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕРґСЂРѕР±РЅРѕСЃС‚Рё С‚С‹ РІСЃРµРіРґР° РјРѕР¶РµС€СЊ СѓР·РЅР°С‚СЊ Сѓ РјРµРЅСЏ, РµСЃР»Рё Р·Р°С…РѕС‡РµС€СЊ.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Sagitta_Teach_17_05"); //Так какое зелье тебя интересует?
+			AI_Output (self, other,"DIA_Sagitta_Teach_17_05"); //РўР°Рє РєР°РєРѕРµ Р·РµР»СЊРµ С‚РµР±СЏ РёРЅС‚РµСЂРµСЃСѓРµС‚?
 		};
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Sagitta_Teach_17_06"); //Ты уже знаешь все, чему я могла научить тебя.
+		AI_Output (self, other,"DIA_Sagitta_Teach_17_06"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РІСЃРµ, С‡РµРјСѓ СЏ РјРѕРіР»Р° РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
 		DIA_Sagitta_Teach_permanent = TRUE;
 	};
 };
@@ -366,11 +366,11 @@ FUNC VOID DIA_Sagitta_Teach_Perm_Dex ()
 instance DIA_Sagitta_HEAL		(C_INFO)
 {
 	npc			 = 	BAU_980_Sagitta;
-	nr          = 	99;	//Joly: braucht ne hohe Nummer, denn wird in den spдteren Kapiteln auch verwendet.
+	nr          = 	99;	//Joly: braucht ne hohe Nummer, denn wird in den spРґteren Kapiteln auch verwendet.
 	condition	 = 	DIA_Sagitta_HEAL_Condition;
 	information	 = 	DIA_Sagitta_HEAL_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Вылечи меня.";
+	description	 = 	"Р’С‹Р»РµС‡Рё РјРµРЅСЏ.";
 };
 
 func int DIA_Sagitta_HEAL_Condition ()
@@ -382,17 +382,17 @@ func int DIA_Sagitta_HEAL_Condition ()
 };
 func void DIA_Sagitta_HEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HEAL_15_00"); //Вылечи меня.
+	AI_Output			(other, self, "DIA_Sagitta_HEAL_15_00"); //Р’С‹Р»РµС‡Рё РјРµРЅСЏ.
 	
 	if hero.attribute [ATR_HITPOINTS] < hero.attribute[ATR_HITPOINTS_MAX]
 	{
-		AI_Output			(self, other, "DIA_Sagitta_HEAL_17_01"); //Давай посмотрим, что там у тебя. Ммм. Моя мазь в момент заживит все твои раны.
+		AI_Output			(self, other, "DIA_Sagitta_HEAL_17_01"); //Р”Р°РІР°Р№ РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ С‚Р°Рј Сѓ С‚РµР±СЏ. РњРјРј. РњРѕСЏ РјР°Р·СЊ РІ РјРѕРјРµРЅС‚ Р·Р°Р¶РёРІРёС‚ РІСЃРµ С‚РІРѕРё СЂР°РЅС‹.
 		hero.attribute [ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 		PrintScreen (PRINT_FullyHealed, - 1, - 1, FONT_Screen, 2);   
 	}
 	else 
 	{	
-		AI_Output			(self, other, "DIA_Sagitta_HEAL_17_02"); //В настоящий момент тебе ненужно лечение.
+		AI_Output			(self, other, "DIA_Sagitta_HEAL_17_02"); //Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚ С‚РµР±Рµ РЅРµРЅСѓР¶РЅРѕ Р»РµС‡РµРЅРёРµ.
 	};	
 };
 
@@ -407,7 +407,7 @@ instance DIA_Sagitta_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Какие товары ты предлагаешь?";
+	description	 = 	"РљР°РєРёРµ С‚РѕРІР°СЂС‹ С‚С‹ РїСЂРµРґР»Р°РіР°РµС€СЊ?";
 };
 
 func int DIA_Sagitta_TRADE_Condition ()
@@ -420,9 +420,9 @@ func int DIA_Sagitta_TRADE_Condition ()
 
 func void DIA_Sagitta_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_TRADE_15_00"); //Какие товары ты можешь предложить мне?
+	AI_Output			(other, self, "DIA_Sagitta_TRADE_15_00"); //РљР°РєРёРµ С‚РѕРІР°СЂС‹ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Sagitta_TRADE_17_01"); //Выбирай.
+	AI_Output			(self, other, "DIA_Sagitta_TRADE_17_01"); //Р’С‹Р±РёСЂР°Р№.
 };
 
 //#####################################################################
@@ -468,7 +468,7 @@ instance DIA_Sagitta_OBSESSION		(C_INFO)
 	condition	 = 	DIA_Sagitta_OBSESSION_Condition;
 	information	 = 	DIA_Sagitta_OBSESSION_Info;
 
-	description	 = 	"Я ощущаю внутреннюю тревогу.";
+	description	 = 	"РЇ РѕС‰СѓС‰Р°СЋ РІРЅСѓС‚СЂРµРЅРЅСЋСЋ С‚СЂРµРІРѕРіСѓ.";
 };
 
 func int DIA_Sagitta_OBSESSION_Condition ()
@@ -483,9 +483,9 @@ func int DIA_Sagitta_OBSESSION_Condition ()
 
 func void DIA_Sagitta_OBSESSION_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_OBSESSION_15_00"); //Я ощущаю какую-то сильную внутреннюю тревогу. Мне нужна помощь.
-	AI_Output			(self, other, "DIA_Sagitta_OBSESSION_17_01"); //Я вижу, сна тебе не достаточно, чтобы восстановиться. Ты попал под воздействие черного взгляда Ищущих.
-	AI_Output			(self, other, "DIA_Sagitta_OBSESSION_17_02"); //Иди к Пирокару, высшему магу монастыря. Моих скромных знаний здесь недостаточно.
+	AI_Output			(other, self, "DIA_Sagitta_OBSESSION_15_00"); //РЇ РѕС‰СѓС‰Р°СЋ РєР°РєСѓСЋ-С‚Рѕ СЃРёР»СЊРЅСѓСЋ РІРЅСѓС‚СЂРµРЅРЅСЋСЋ С‚СЂРµРІРѕРіСѓ. РњРЅРµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ.
+	AI_Output			(self, other, "DIA_Sagitta_OBSESSION_17_01"); //РЇ РІРёР¶Сѓ, СЃРЅР° С‚РµР±Рµ РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ. РўС‹ РїРѕРїР°Р» РїРѕРґ РІРѕР·РґРµР№СЃС‚РІРёРµ С‡РµСЂРЅРѕРіРѕ РІР·РіР»СЏРґР° РС‰СѓС‰РёС….
+	AI_Output			(self, other, "DIA_Sagitta_OBSESSION_17_02"); //РРґРё Рє РџРёСЂРѕРєР°СЂСѓ, РІС‹СЃС€РµРјСѓ РјР°РіСѓ РјРѕРЅР°СЃС‚С‹СЂСЏ. РњРѕРёС… СЃРєСЂРѕРјРЅС‹С… Р·РЅР°РЅРёР№ Р·РґРµСЃСЊ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -498,7 +498,7 @@ instance DIA_Sagitta_Thekla		(C_INFO)
 	condition	 = 	DIA_Sagitta_Thekla_Condition;
 	information	 = 	DIA_Sagitta_Thekla_Info;
 
-	description	 = 	"Текла послала меня к тебе за травами.";
+	description	 = 	"РўРµРєР»Р° РїРѕСЃР»Р°Р»Р° РјРµРЅСЏ Рє С‚РµР±Рµ Р·Р° С‚СЂР°РІР°РјРё.";
 };
 
 func int DIA_Sagitta_Thekla_Condition ()
@@ -512,9 +512,9 @@ func int DIA_Sagitta_Thekla_Condition ()
 
 func void DIA_Sagitta_Thekla_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_Thekla_15_00"); //Текла послала меня к тебе за травами.
-	AI_Output			(self, other, "DIA_Sagitta_Thekla_17_01"); //Ах, да. Вообще-то я ожидала ее еще несколько дней назад.
-	AI_Output			(self, other, "DIA_Sagitta_Thekla_17_02"); //Вот, держи пакет. И поосторожнее с ним!
+	AI_Output			(other, self, "DIA_Sagitta_Thekla_15_00"); //РўРµРєР»Р° РїРѕСЃР»Р°Р»Р° РјРµРЅСЏ Рє С‚РµР±Рµ Р·Р° С‚СЂР°РІР°РјРё.
+	AI_Output			(self, other, "DIA_Sagitta_Thekla_17_01"); //РђС…, РґР°. Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ РѕР¶РёРґР°Р»Р° РµРµ РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ.
+	AI_Output			(self, other, "DIA_Sagitta_Thekla_17_02"); //Р’РѕС‚, РґРµСЂР¶Рё РїР°РєРµС‚. Р РїРѕРѕСЃС‚РѕСЂРѕР¶РЅРµРµ СЃ РЅРёРј!
 	B_GivePlayerXP (XP_AmbientKap3);								
 	B_GiveInvItems (self, other, ItMi_TheklasPaket, 1);					
 };
@@ -564,7 +564,7 @@ instance DIA_Sagitta_HEALRANDOLPH		(C_INFO)
 	information	 = 	DIA_Sagitta_HEALRANDOLPH_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"У Рендольфа похмельный синдром.";
+	description	 = 	"РЈ Р РµРЅРґРѕР»СЊС„Р° РїРѕС…РјРµР»СЊРЅС‹Р№ СЃРёРЅРґСЂРѕРј.";
 };
 
 var int DIA_Sagitta_HEALRANDOLPH_GotOne;
@@ -582,51 +582,51 @@ func int DIA_Sagitta_HEALRANDOLPH_Condition ()
 
 func void DIA_Sagitta_HEALRANDOLPH_Info ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_15_00"); //У Рендольфа похмельный синдром.
+	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_15_00"); //РЈ Р РµРЅРґРѕР»СЊС„Р° РїРѕС…РјРµР»СЊРЅС‹Р№ СЃРёРЅРґСЂРѕРј.
 
 	if (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_01"); //И когда этот парень образумится?!
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_01"); //Р РєРѕРіРґР° СЌС‚РѕС‚ РїР°СЂРµРЅСЊ РѕР±СЂР°Р·СѓРјРёС‚СЃСЏ?!
 			DIA_Sagitta_HEALRANDOLPH_KnowsPrice = TRUE;
 		};
 	
 	if(DIA_Sagitta_HEALRANDOLPH_GotOne == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_02"); //Я уже давала ему лекарство. Не связывался бы ты с ним.
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_02"); //РЇ СѓР¶Рµ РґР°РІР°Р»Р° РµРјСѓ Р»РµРєР°СЂСЃС‚РІРѕ. РќРµ СЃРІСЏР·С‹РІР°Р»СЃСЏ Р±С‹ С‚С‹ СЃ РЅРёРј.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_03"); //Я дам тебе лекарство для него. Оно поставит его на  ноги за пару дней.
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_03"); //РЇ РґР°Рј С‚РµР±Рµ Р»РµРєР°СЂСЃС‚РІРѕ РґР»СЏ РЅРµРіРѕ. РћРЅРѕ РїРѕСЃС‚Р°РІРёС‚ РµРіРѕ РЅР°  РЅРѕРіРё Р·Р° РїР°СЂСѓ РґРЅРµР№.
 		};
 
-	AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_04"); //Но это обойдется тебе в 300 золотых.
+	AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_04"); //РќРѕ СЌС‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ 300 Р·РѕР»РѕС‚С‹С….
 
 	if (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_15_05"); //Что?
-		AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_06"); //Единственное, что ты можешь получить здесь бесплатно - это смерть, малыш.
+		AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_15_05"); //Р§С‚Рѕ?
+		AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_17_06"); //Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ Р·РґРµСЃСЊ Р±РµСЃРїР»Р°С‚РЅРѕ - СЌС‚Рѕ СЃРјРµСЂС‚СЊ, РјР°Р»С‹С€.
 	};	
 
 	Info_ClearChoices	(DIA_Sagitta_HEALRANDOLPH);
-	Info_AddChoice	(DIA_Sagitta_HEALRANDOLPH, "Нет. Столько золота за такую ерунду?!"	, DIA_Sagitta_HEALRANDOLPH_no );
-	Info_AddChoice	(DIA_Sagitta_HEALRANDOLPH, "Вот твои деньги."				, DIA_Sagitta_HEALRANDOLPH_geld );
+	Info_AddChoice	(DIA_Sagitta_HEALRANDOLPH, "РќРµС‚. РЎС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р° Р·Р° С‚Р°РєСѓСЋ РµСЂСѓРЅРґСѓ?!"	, DIA_Sagitta_HEALRANDOLPH_no );
+	Info_AddChoice	(DIA_Sagitta_HEALRANDOLPH, "Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё."				, DIA_Sagitta_HEALRANDOLPH_geld );
 };
 
 func void DIA_Sagitta_HEALRANDOLPH_geld ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_geld_15_00"); //Вот твои деньги.
+	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_geld_15_00"); //Р’РѕС‚ С‚РІРѕРё РґРµРЅСЊРіРё.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,300))
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_01"); //Очень хорошо. Ты всегда можешь потребовать от него компенсировать тебе расходы.
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РўС‹ РІСЃРµРіРґР° РјРѕР¶РµС€СЊ РїРѕС‚СЂРµР±РѕРІР°С‚СЊ РѕС‚ РЅРµРіРѕ РєРѕРјРїРµРЅСЃРёСЂРѕРІР°С‚СЊ С‚РµР±Рµ СЂР°СЃС…РѕРґС‹.
 			CreateInvItems 		(self, ItPo_HealRandolph_MIS, 1);									
 			B_GiveInvItems 		(self, other, ItPo_HealRandolph_MIS, 1);					
 			DIA_Sagitta_HEALRANDOLPH_GotOne = TRUE;
-		B_LogEntry (TOPIC_HealRandolph,"Саггита дала мне лекарство для Рендольфа."); 
+		B_LogEntry (TOPIC_HealRandolph,"РЎР°РіРіРёС‚Р° РґР°Р»Р° РјРЅРµ Р»РµРєР°СЂСЃС‚РІРѕ РґР»СЏ Р РµРЅРґРѕР»СЊС„Р°."); 
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_02"); //Пока у тебя не будет всей суммы, я даже разговаривать об этом не буду.
+			AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_02"); //РџРѕРєР° Сѓ С‚РµР±СЏ РЅРµ Р±СѓРґРµС‚ РІСЃРµР№ СЃСѓРјРјС‹, СЏ РґР°Р¶Рµ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ РѕР± СЌС‚РѕРј РЅРµ Р±СѓРґСѓ.
 		};
 
 	Info_ClearChoices	(DIA_Sagitta_HEALRANDOLPH);
@@ -634,8 +634,8 @@ func void DIA_Sagitta_HEALRANDOLPH_geld ()
 
 func void DIA_Sagitta_HEALRANDOLPH_no ()
 {
-	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_no_15_00"); //Нет. Столько золота за такую ерунду?!
-	AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_no_17_01"); //(смеется) Он не дал тебе денег? Это на него похоже!
+	AI_Output			(other, self, "DIA_Sagitta_HEALRANDOLPH_no_15_00"); //РќРµС‚. РЎС‚РѕР»СЊРєРѕ Р·РѕР»РѕС‚Р° Р·Р° С‚Р°РєСѓСЋ РµСЂСѓРЅРґСѓ?!
+	AI_Output			(self, other, "DIA_Sagitta_HEALRANDOLPH_no_17_01"); //(СЃРјРµРµС‚СЃСЏ) РћРЅ РЅРµ РґР°Р» С‚РµР±Рµ РґРµРЅРµРі? Р­С‚Рѕ РЅР° РЅРµРіРѕ РїРѕС…РѕР¶Рµ!
 	Info_ClearChoices	(DIA_Sagitta_HEALRANDOLPH);
 };
 

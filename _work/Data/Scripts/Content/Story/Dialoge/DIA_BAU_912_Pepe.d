@@ -29,7 +29,7 @@ instance DIA_Pepe_Hallo (C_INFO)
 	condition	= DIA_Pepe_Hallo_Condition;
 	information	= DIA_Pepe_Hallo_Info;
 	permanent	= FALSE;
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 func int DIA_Pepe_Hallo_Condition ()
 {
@@ -37,13 +37,13 @@ func int DIA_Pepe_Hallo_Condition ()
 };
 func void DIA_Pepe_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Hallo_15_00"); //Что ты делаешь здесь?
-	AI_Output (self, other, "DIA_Pepe_Hallo_03_01"); //(скучая) Стерегу овец! (вздыхает) И, по возможности, стараюсь держаться подальше от неприятностей.
+	AI_Output (other, self, "DIA_Pepe_Hallo_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Pepe_Hallo_03_01"); //(СЃРєСѓС‡Р°СЏ) РЎС‚РµСЂРµРіСѓ РѕРІРµС†! (РІР·РґС‹С…Р°РµС‚) Р, РїРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё, СЃС‚Р°СЂР°СЋСЃСЊ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№.
 	
 	if ((hero.guild != GIL_SLD)&&(hero.guild != GIL_DJG))
 	{
-		AI_Output (other, self, "DIA_Pepe_Hallo_15_02"); //Это не всегда возможно, да?
-		AI_Output (self, other, "DIA_Pepe_Hallo_03_03"); //Да уж, особенно когда дело касается наемников. Я очень рад, что работаю здесь, на пастбище, подальше от них. Хотя и здесь не совсем безопасно.
+		AI_Output (other, self, "DIA_Pepe_Hallo_15_02"); //Р­С‚Рѕ РЅРµ РІСЃРµРіРґР° РІРѕР·РјРѕР¶РЅРѕ, РґР°?
+		AI_Output (self, other, "DIA_Pepe_Hallo_03_03"); //Р”Р° СѓР¶, РѕСЃРѕР±РµРЅРЅРѕ РєРѕРіРґР° РґРµР»Рѕ РєР°СЃР°РµС‚СЃСЏ РЅР°РµРјРЅРёРєРѕРІ. РЇ РѕС‡РµРЅСЊ СЂР°Рґ, С‡С‚Рѕ СЂР°Р±РѕС‚Р°СЋ Р·РґРµСЃСЊ, РЅР° РїР°СЃС‚Р±РёС‰Рµ, РїРѕРґР°Р»СЊС€Рµ РѕС‚ РЅРёС…. РҐРѕС‚СЏ Рё Р·РґРµСЃСЊ РЅРµ СЃРѕРІСЃРµРј Р±РµР·РѕРїР°СЃРЅРѕ.
 	};
 };
 
@@ -57,7 +57,7 @@ instance DIA_Pepe_Danger (C_INFO)
 	condition	= DIA_Pepe_Danger_Condition;
 	information	= DIA_Pepe_Danger_Info;
 	permanent 	= FALSE;
-	description	= "А что опасного на пастбище?";
+	description	= "Рђ С‡С‚Рѕ РѕРїР°СЃРЅРѕРіРѕ РЅР° РїР°СЃС‚Р±РёС‰Рµ?";
 };
 func int DIA_Pepe_Danger_Condition ()
 {
@@ -68,9 +68,9 @@ func int DIA_Pepe_Danger_Condition ()
 };
 func void DIA_Pepe_Danger_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Danger_15_00"); //А что опасного на пастбище?
-	AI_Output (self, other, "DIA_Pepe_Danger_03_01"); //Неподалеку бродит небольшая стая волков. Эти проклятые твари почти каждый день утаскивают одну из моих овец.
-	AI_Output (self, other, "DIA_Pepe_Danger_03_02"); //Несколько дней назад у меня было в два раза больше овец. Мне не хочется даже думать, что Онар сделает со мной, когда узнает об этом.
+	AI_Output (other, self, "DIA_Pepe_Danger_15_00"); //Рђ С‡С‚Рѕ РѕРїР°СЃРЅРѕРіРѕ РЅР° РїР°СЃС‚Р±РёС‰Рµ?
+	AI_Output (self, other, "DIA_Pepe_Danger_03_01"); //РќРµРїРѕРґР°Р»РµРєСѓ Р±СЂРѕРґРёС‚ РЅРµР±РѕР»СЊС€Р°СЏ СЃС‚Р°СЏ РІРѕР»РєРѕРІ. Р­С‚Рё РїСЂРѕРєР»СЏС‚С‹Рµ С‚РІР°СЂРё РїРѕС‡С‚Рё РєР°Р¶РґС‹Р№ РґРµРЅСЊ СѓС‚Р°СЃРєРёРІР°СЋС‚ РѕРґРЅСѓ РёР· РјРѕРёС… РѕРІРµС†.
+	AI_Output (self, other, "DIA_Pepe_Danger_03_02"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ Сѓ РјРµРЅСЏ Р±С‹Р»Рѕ РІ РґРІР° СЂР°Р·Р° Р±РѕР»СЊС€Рµ РѕРІРµС†. РњРЅРµ РЅРµ С…РѕС‡РµС‚СЃСЏ РґР°Р¶Рµ РґСѓРјР°С‚СЊ, С‡С‚Рѕ РћРЅР°СЂ СЃРґРµР»Р°РµС‚ СЃРѕ РјРЅРѕР№, РєРѕРіРґР° СѓР·РЅР°РµС‚ РѕР± СЌС‚РѕРј.
 };
 
 // ************************************************************
@@ -83,7 +83,7 @@ instance DIA_Pepe_WhyNotSLD	(C_INFO)
 	condition	= DIA_Pepe_WhyNotSLD_Condition;
 	information	= DIA_Pepe_WhyNotSLD_Info;
 	PERMANENT 	= FALSE;
-	description	= "Почему ты не скажешь наемникам о волках? Мне казалось, это их работа.";
+	description	= "РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЃРєР°Р¶РµС€СЊ РЅР°РµРјРЅРёРєР°Рј Рѕ РІРѕР»РєР°С…? РњРЅРµ РєР°Р·Р°Р»РѕСЃСЊ, СЌС‚Рѕ РёС… СЂР°Р±РѕС‚Р°.";
 };
 func int DIA_Pepe_WhyNotSLD_Condition ()
 {
@@ -95,11 +95,11 @@ func int DIA_Pepe_WhyNotSLD_Condition ()
 };
 func void DIA_Pepe_WhyNotSLD_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_00"); //Почему ты не скажешь наемникам о волках? Мне казалось, это их работа.
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_01"); //Да, я знаю. Я должен был сделать это. Но не сделал, черт!
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_02"); //А теперь, когда столько овец пропало, я боюсь кому-нибудь говорить об этом.
-	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_03"); //Но ты только что сказал МНЕ...
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_04"); //(сердито) Я уже пожалел об этом.
+	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЃРєР°Р¶РµС€СЊ РЅР°РµРјРЅРёРєР°Рј Рѕ РІРѕР»РєР°С…? РњРЅРµ РєР°Р·Р°Р»РѕСЃСЊ, СЌС‚Рѕ РёС… СЂР°Р±РѕС‚Р°.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_01"); //Р”Р°, СЏ Р·РЅР°СЋ. РЇ РґРѕР»Р¶РµРЅ Р±С‹Р» СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ. РќРѕ РЅРµ СЃРґРµР»Р°Р», С‡РµСЂС‚!
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_02"); //Рђ С‚РµРїРµСЂСЊ, РєРѕРіРґР° СЃС‚РѕР»СЊРєРѕ РѕРІРµС† РїСЂРѕРїР°Р»Рѕ, СЏ Р±РѕСЋСЃСЊ РєРѕРјСѓ-РЅРёР±СѓРґСЊ РіРѕРІРѕСЂРёС‚СЊ РѕР± СЌС‚РѕРј.
+	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_03"); //РќРѕ С‚С‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ СЃРєР°Р·Р°Р» РњРќР•...
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_04"); //(СЃРµСЂРґРёС‚Рѕ) РЇ СѓР¶Рµ РїРѕР¶Р°Р»РµР» РѕР± СЌС‚РѕРј.
 };
 
 // ************************************************************
@@ -112,7 +112,7 @@ instance DIA_Pepe_KillWolves (C_INFO)
 	condition	= DIA_Pepe_KillWolves_Condition;
 	information	= DIA_Pepe_KillWolves_Info;
 	permanent 	= FALSE;
-	description	= "Что если я убью этих волков?";
+	description	= "Р§С‚Рѕ РµСЃР»Рё СЏ СѓР±СЊСЋ СЌС‚РёС… РІРѕР»РєРѕРІ?";
 };
 func int DIA_Pepe_KillWolves_Condition ()
 {
@@ -123,11 +123,11 @@ func int DIA_Pepe_KillWolves_Condition ()
 };
 func void DIA_Pepe_KillWolves_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_KillWolves_15_00"); //Что если я убью этих волков?
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_01"); //(насмешливо) Ты, сам? Ха ха. Я не верю в это. Я скорее поверю, что мой баран-вожак расправится с ними.
-	AI_Output (other, self, "DIA_Pepe_KillWolves_15_02"); //Забудь об этом. Это было всего лишь предположение. Я пойду к парням, и посмотрим, что ОНИ скажут насчет этого...
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_03"); //(испуганно) Подожди минутку. Хорошо, хорошо! Эээ... ты величайший воин, и ты можешь уложить сотню волков одной левой. Нет проблем!
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_04"); //Обычно они шныряют в лесу около пастбища. (как бы между прочим) Я думаю, их всего четверо...
+	AI_Output (other, self, "DIA_Pepe_KillWolves_15_00"); //Р§С‚Рѕ РµСЃР»Рё СЏ СѓР±СЊСЋ СЌС‚РёС… РІРѕР»РєРѕРІ?
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_01"); //(РЅР°СЃРјРµС€Р»РёРІРѕ) РўС‹, СЃР°Рј? РҐР° С…Р°. РЇ РЅРµ РІРµСЂСЋ РІ СЌС‚Рѕ. РЇ СЃРєРѕСЂРµРµ РїРѕРІРµСЂСЋ, С‡С‚Рѕ РјРѕР№ Р±Р°СЂР°РЅ-РІРѕР¶Р°Рє СЂР°СЃРїСЂР°РІРёС‚СЃСЏ СЃ РЅРёРјРё.
+	AI_Output (other, self, "DIA_Pepe_KillWolves_15_02"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. Р­С‚Рѕ Р±С‹Р»Рѕ РІСЃРµРіРѕ Р»РёС€СЊ РїСЂРµРґРїРѕР»РѕР¶РµРЅРёРµ. РЇ РїРѕР№РґСѓ Рє РїР°СЂРЅСЏРј, Рё РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ РћРќР СЃРєР°Р¶СѓС‚ РЅР°СЃС‡РµС‚ СЌС‚РѕРіРѕ...
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_03"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РџРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ. РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ! Р­СЌСЌ... С‚С‹ РІРµР»РёС‡Р°Р№С€РёР№ РІРѕРёРЅ, Рё С‚С‹ РјРѕР¶РµС€СЊ СѓР»РѕР¶РёС‚СЊ СЃРѕС‚РЅСЋ РІРѕР»РєРѕРІ РѕРґРЅРѕР№ Р»РµРІРѕР№. РќРµС‚ РїСЂРѕР±Р»РµРј!
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_04"); //РћР±С‹С‡РЅРѕ РѕРЅРё С€РЅС‹СЂСЏСЋС‚ РІ Р»РµСЃСѓ РѕРєРѕР»Рѕ РїР°СЃС‚Р±РёС‰Р°. (РєР°Рє Р±С‹ РјРµР¶РґСѓ РїСЂРѕС‡РёРј) РЇ РґСѓРјР°СЋ, РёС… РІСЃРµРіРѕ С‡РµС‚РІРµСЂРѕ...
 	
 	AI_StopProcessInfos (self);
 	
@@ -140,7 +140,7 @@ func void DIA_Pepe_KillWolves_Info ()
 	
 	Log_CreateTopic (TOPIC_PepeWolves,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_PepeWolves,LOG_RUNNING);
-	B_LogEntry (TOPIC_PepeWolves,"Овцы Пепе страдают от волков. Я должен прогнать их.");
+	B_LogEntry (TOPIC_PepeWolves,"РћРІС†С‹ РџРµРїРµ СЃС‚СЂР°РґР°СЋС‚ РѕС‚ РІРѕР»РєРѕРІ. РЇ РґРѕР»Р¶РµРЅ РїСЂРѕРіРЅР°С‚СЊ РёС….");
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ instance DIA_Pepe_KilledWolves		(C_INFO)
 	condition	 = 	DIA_Pepe_KilledWolves_Condition;
 	information	 = 	DIA_Pepe_KilledWolves_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я расправился с волками.";
+	description	 = 	"РЇ СЂР°СЃРїСЂР°РІРёР»СЃСЏ СЃ РІРѕР»РєР°РјРё.";
 };
 func int DIA_Pepe_KilledWolves_Condition ()
 {
@@ -164,28 +164,28 @@ func int DIA_Pepe_KilledWolves_Condition ()
 };
 func void DIA_Pepe_KilledWolves_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_KilledWolves_15_00"); //Я расправился с волками.
+	AI_Output (other, self, "DIA_Pepe_KilledWolves_15_00"); //РЇ СЂР°СЃРїСЂР°РІРёР»СЃСЏ СЃ РІРѕР»РєР°РјРё.
 
 	if (Npc_IsDead(PEPES_YWolf1))
 	&& (Npc_IsDead(PEPES_YWolf2))
 	&& (Npc_IsDead(PEPES_YWolf3))
 	&& (Npc_IsDead(PEPES_YWolf4))
 	{
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_01"); //(пораженно) Ты сделал это! Слава Инносу!
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_02"); //Но я все равно не знаю, как сказать Онару, что его овцы пропали.
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_03"); //(себе под нос) Это все этот чертов Булко виноват!
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_01"); //(РїРѕСЂР°Р¶РµРЅРЅРѕ) РўС‹ СЃРґРµР»Р°Р» СЌС‚Рѕ! РЎР»Р°РІР° РРЅРЅРѕСЃСѓ!
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_02"); //РќРѕ СЏ РІСЃРµ СЂР°РІРЅРѕ РЅРµ Р·РЅР°СЋ, РєР°Рє СЃРєР°Р·Р°С‚СЊ РћРЅР°СЂСѓ, С‡С‚Рѕ РµРіРѕ РѕРІС†С‹ РїСЂРѕРїР°Р»Рё.
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_03"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р­С‚Рѕ РІСЃРµ СЌС‚РѕС‚ С‡РµСЂС‚РѕРІ Р‘СѓР»РєРѕ РІРёРЅРѕРІР°С‚!
 
 		MIS_Pepe_KillWolves = LOG_SUCCESS;
 		B_GivePlayerXP (XP_PepeWolves);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_04"); //ты меня считаешь за идиота? Эти звери еще не все мертвы.
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_04"); //С‚С‹ РјРµРЅСЏ СЃС‡РёС‚Р°РµС€СЊ Р·Р° РёРґРёРѕС‚Р°? Р­С‚Рё Р·РІРµСЂРё РµС‰Рµ РЅРµ РІСЃРµ РјРµСЂС‚РІС‹.
 	};
 };
 
 // ************************************************************
-// 					Was hast du ьber Bullco gesagt?
+// 					Was hast du СЊber Bullco gesagt?
 // ************************************************************
 instance DIA_Pepe_Bullco (C_INFO)
 {
@@ -194,7 +194,7 @@ instance DIA_Pepe_Bullco (C_INFO)
 	condition	 = 	DIA_Pepe_Bullco_Condition;
 	information	 = 	DIA_Pepe_Bullco_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Что ты сказал насчет Булко?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ СЃРєР°Р·Р°Р» РЅР°СЃС‡РµС‚ Р‘СѓР»РєРѕ?";
 };
 func int DIA_Pepe_Bullco_Condition ()
 {
@@ -207,17 +207,17 @@ func int DIA_Pepe_Bullco_Condition ()
 };
 func void DIA_Pepe_Bullco_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Bullco_15_00"); //Что ты сказал насчет Булко?
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_01"); //Это один из наемников. Это его работа охранять пастбище.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_02"); //Но вместо этого он и его приятель Сильвио день напролет ошиваются в кухне у Теклы.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_03"); //Это этот ублюдок будет виноват, если мне не заплатят за многие недели работы из-за потери овец.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_04"); //Как я хотел бы набить ему морду. Но никому это не по силам. Этот парень - убийца.
+	AI_Output (other, self, "DIA_Pepe_Bullco_15_00"); //Р§С‚Рѕ С‚С‹ СЃРєР°Р·Р°Р» РЅР°СЃС‡РµС‚ Р‘СѓР»РєРѕ?
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_01"); //Р­С‚Рѕ РѕРґРёРЅ РёР· РЅР°РµРјРЅРёРєРѕРІ. Р­С‚Рѕ РµРіРѕ СЂР°Р±РѕС‚Р° РѕС…СЂР°РЅСЏС‚СЊ РїР°СЃС‚Р±РёС‰Рµ.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_02"); //РќРѕ РІРјРµСЃС‚Рѕ СЌС‚РѕРіРѕ РѕРЅ Рё РµРіРѕ РїСЂРёСЏС‚РµР»СЊ РЎРёР»СЊРІРёРѕ РґРµРЅСЊ РЅР°РїСЂРѕР»РµС‚ РѕС€РёРІР°СЋС‚СЃСЏ РІ РєСѓС…РЅРµ Сѓ РўРµРєР»С‹.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_03"); //Р­С‚Рѕ СЌС‚РѕС‚ СѓР±Р»СЋРґРѕРє Р±СѓРґРµС‚ РІРёРЅРѕРІР°С‚, РµСЃР»Рё РјРЅРµ РЅРµ Р·Р°РїР»Р°С‚СЏС‚ Р·Р° РјРЅРѕРіРёРµ РЅРµРґРµР»Рё СЂР°Р±РѕС‚С‹ РёР·-Р·Р° РїРѕС‚РµСЂРё РѕРІРµС†.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_04"); //РљР°Рє СЏ С…РѕС‚РµР» Р±С‹ РЅР°Р±РёС‚СЊ РµРјСѓ РјРѕСЂРґСѓ. РќРѕ РЅРёРєРѕРјСѓ СЌС‚Рѕ РЅРµ РїРѕ СЃРёР»Р°Рј. Р­С‚РѕС‚ РїР°СЂРµРЅСЊ - СѓР±РёР№С†Р°.
 
 	MIS_Pepe_KickBullco = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_KickBullco,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_KickBullco,LOG_RUNNING);
-	B_LogEntry (TOPIC_KickBullco,"Булко плохо охраняет овец Пепе. Пепе хочет, чтобы кто-нибудь проучил его.");
+	B_LogEntry (TOPIC_KickBullco,"Р‘СѓР»РєРѕ РїР»РѕС…Рѕ РѕС…СЂР°РЅСЏРµС‚ РѕРІРµС† РџРµРїРµ. РџРµРїРµ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РєС‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕСѓС‡РёР» РµРіРѕ.");
 };
 
 // ************************************************************
@@ -230,7 +230,7 @@ instance DIA_Pepe_BullcoDefeated (C_INFO)
 	condition	 = 	DIA_Pepe_BullcoDefeated_Condition;
 	information	 = 	DIA_Pepe_BullcoDefeated_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Булко получил по заслугам.";
+	description	 = 	"Р‘СѓР»РєРѕ РїРѕР»СѓС‡РёР» РїРѕ Р·Р°СЃР»СѓРіР°Рј.";
 };
 func int DIA_Pepe_BullcoDefeated_Condition ()
 {
@@ -245,8 +245,8 @@ func int DIA_Pepe_BullcoDefeated_Condition ()
 };
 func void DIA_Pepe_BullcoDefeated_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_BullcoDefeated_15_00"); //Булко получил по заслугам. Я преподал ему урок.
-	AI_Output (self, other, "DIA_Pepe_BullcoDefeated_03_01"); //Эта свинья заслужила это.
+	AI_Output (other, self, "DIA_Pepe_BullcoDefeated_15_00"); //Р‘СѓР»РєРѕ РїРѕР»СѓС‡РёР» РїРѕ Р·Р°СЃР»СѓРіР°Рј. РЇ РїСЂРµРїРѕРґР°Р» РµРјСѓ СѓСЂРѕРє.
+	AI_Output (self, other, "DIA_Pepe_BullcoDefeated_03_01"); //Р­С‚Р° СЃРІРёРЅСЊСЏ Р·Р°СЃР»СѓР¶РёР»Р° СЌС‚Рѕ.
 
 	MIS_Pepe_KickBullco = LOG_SUCCESS;
 	B_GivePlayerXP (XP_KickBullco);
@@ -262,7 +262,7 @@ instance DIA_Pepe_PERM		(C_INFO)
 	condition	= DIA_Pepe_PERM_Condition;
 	information	= DIA_Pepe_PERM_Info;
 	permanent	= TRUE;
-	description	= "Как дела, как твои овцы?";
+	description	= "РљР°Рє РґРµР»Р°, РєР°Рє С‚РІРѕРё РѕРІС†С‹?";
 };
 
 func int DIA_Pepe_PERM_Condition ()
@@ -275,26 +275,26 @@ func int DIA_Pepe_PERM_Condition ()
 
 func void DIA_Pepe_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_PERM_15_00"); //Как дела, как твои овцы?
+	AI_Output (other, self, "DIA_Pepe_PERM_15_00"); //РљР°Рє РґРµР»Р°, РєР°Рє С‚РІРѕРё РѕРІС†С‹?
 
 	if (kapitel <= 1)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_01"); //Прекрасно. И с овцами все в порядке. Ну, с теми, что еще остались у меня, все в порядке.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_01"); //РџСЂРµРєСЂР°СЃРЅРѕ. Р СЃ РѕРІС†Р°РјРё РІСЃРµ РІ РїРѕСЂСЏРґРєРµ. РќСѓ, СЃ С‚РµРјРё, С‡С‚Рѕ РµС‰Рµ РѕСЃС‚Р°Р»РёСЃСЊ Сѓ РјРµРЅСЏ, РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.
 	};
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_02"); //Хорошо. Но могут придти другие волки. И, возможно, в большем количестве!
+		AI_Output (self, other, "DIA_Pepe_PERM_03_02"); //РҐРѕСЂРѕС€Рѕ. РќРѕ РјРѕРіСѓС‚ РїСЂРёРґС‚Рё РґСЂСѓРіРёРµ РІРѕР»РєРё. Р, РІРѕР·РјРѕР¶РЅРѕ, РІ Р±РѕР»СЊС€РµРј РєРѕР»РёС‡РµСЃС‚РІРµ!
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_03"); //Я слышал странные вещи. Говорят, что на ферме Секоба появились страшные личности. Они заняли его дом.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_03"); //РЇ СЃР»С‹С€Р°Р» СЃС‚СЂР°РЅРЅС‹Рµ РІРµС‰Рё. Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РЅР° С„РµСЂРјРµ РЎРµРєРѕР±Р° РїРѕСЏРІРёР»РёСЃСЊ СЃС‚СЂР°С€РЅС‹Рµ Р»РёС‡РЅРѕСЃС‚Рё. РћРЅРё Р·Р°РЅСЏР»Рё РµРіРѕ РґРѕРј.
 	}
 	
 	if (kapitel >= 4)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_04"); //Я слышал, что какие-то бандиты поселились на ферме Лобарта. Кто-нибудь должен помочь ему.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_04"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ РєР°РєРёРµ-С‚Рѕ Р±Р°РЅРґРёС‚С‹ РїРѕСЃРµР»РёР»РёСЃСЊ РЅР° С„РµСЂРјРµ Р›РѕР±Р°СЂС‚Р°. РљС‚Рѕ-РЅРёР±СѓРґСЊ РґРѕР»Р¶РµРЅ РїРѕРјРѕС‡СЊ РµРјСѓ.
 	};
 };
 
@@ -308,7 +308,7 @@ instance DIA_Pepe_Liesel		(C_INFO)
 	condition	 = 	DIA_Pepe_Liesel_Condition;
 	information	 = 	DIA_Pepe_Liesel_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Могу я купить овцу?";
+	description	 = 	"РњРѕРіСѓ СЏ РєСѓРїРёС‚СЊ РѕРІС†Сѓ?";
 };
 func int DIA_Pepe_Liesel_Condition ()
 {
@@ -319,9 +319,9 @@ func int DIA_Pepe_Liesel_Condition ()
 };
 func void DIA_Pepe_Liesel_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Liesel_15_00"); //Могу я купить овцу?
-	AI_Output (self, other, "DIA_Pepe_Liesel_03_01"); //Когда захочешь, если у тебя есть деньги. Овца стоит 100 золотых монет.
-	AI_Output (self, other, "DIA_Pepe_Liesel_03_02"); //Если ты заплатишь, можешь выбрать себе овцу. Но ты должен пообещать хорошо с ней обращаться.
+	AI_Output (other, self, "DIA_Pepe_Liesel_15_00"); //РњРѕРіСѓ СЏ РєСѓРїРёС‚СЊ РѕРІС†Сѓ?
+	AI_Output (self, other, "DIA_Pepe_Liesel_03_01"); //РљРѕРіРґР° Р·Р°С…РѕС‡РµС€СЊ, РµСЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґРµРЅСЊРіРё. РћРІС†Р° СЃС‚РѕРёС‚ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	AI_Output (self, other, "DIA_Pepe_Liesel_03_02"); //Р•СЃР»Рё С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ, РјРѕР¶РµС€СЊ РІС‹Р±СЂР°С‚СЊ СЃРµР±Рµ РѕРІС†Сѓ. РќРѕ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРѕР±РµС‰Р°С‚СЊ С…РѕСЂРѕС€Рѕ СЃ РЅРµР№ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ.
 };
 
 // ************************************************************
@@ -336,7 +336,7 @@ instance DIA_Pepe_BuyLiesel	(C_INFO)
 	condition	 = 	DIA_Pepe_BuyLiesel_Condition;
 	information	 = 	DIA_Pepe_BuyLiesel_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Вот 100 золотых монет. Давай мне овцу.";
+	description	 = 	"Р’РѕС‚ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р”Р°РІР°Р№ РјРЅРµ РѕРІС†Сѓ.";
 };
 func int DIA_Pepe_BuyLiesel_Condition ()
 {	
@@ -347,25 +347,25 @@ func int DIA_Pepe_BuyLiesel_Condition ()
 };
 func void DIA_Pepe_BuyLiesel_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_00"); //Вот 100 золотых монет. Давай мне овцу.
+	AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_00"); //Р’РѕС‚ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р”Р°РІР°Р№ РјРЅРµ РѕРІС†Сѓ.
 	
 	if (B_GiveInvItems  (other, self, ItMi_Gold, 100))
 	{
 		if (Pepe_SchafGekauft == 0)
 		{
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_01"); //Хорошо. Возьми Бетси - ты найдешь ее на пастбище.
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_02"); //Просто скажи ей, что она должна идти за тобой. Она очень умна для овцы. Не обижай ее!
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_01"); //РҐРѕСЂРѕС€Рѕ. Р’РѕР·СЊРјРё Р‘РµС‚СЃРё - С‚С‹ РЅР°Р№РґРµС€СЊ РµРµ РЅР° РїР°СЃС‚Р±РёС‰Рµ.
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_02"); //РџСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё РµР№, С‡С‚Рѕ РѕРЅР° РґРѕР»Р¶РЅР° РёРґС‚Рё Р·Р° С‚РѕР±РѕР№. РћРЅР° РѕС‡РµРЅСЊ СѓРјРЅР° РґР»СЏ РѕРІС†С‹. РќРµ РѕР±РёР¶Р°Р№ РµРµ!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_03"); //Опять? Хорошо. Возьми Бетси.
-			AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_04"); //Бетси? Но последнюю овцу, что я взял у тебя, тоже звали Бетси...
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_05"); //Всех овец зовут Бетси.
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_03"); //РћРїСЏС‚СЊ? РҐРѕСЂРѕС€Рѕ. Р’РѕР·СЊРјРё Р‘РµС‚СЃРё.
+			AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_04"); //Р‘РµС‚СЃРё? РќРѕ РїРѕСЃР»РµРґРЅСЋСЋ РѕРІС†Сѓ, С‡С‚Рѕ СЏ РІР·СЏР» Сѓ С‚РµР±СЏ, С‚РѕР¶Рµ Р·РІР°Р»Рё Р‘РµС‚СЃРё...
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_05"); //Р’СЃРµС… РѕРІРµС† Р·РѕРІСѓС‚ Р‘РµС‚СЃРё.
 			if (Pepe_SchafGekauft == 3)
 			{
-				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_06"); //За исключением баранов, конечно же.
-				AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_07"); //А как их зовут?
-				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_08"); //Брюс.
+				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_06"); //Р—Р° РёСЃРєР»СЋС‡РµРЅРёРµРј Р±Р°СЂР°РЅРѕРІ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ.
+				AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_07"); //Рђ РєР°Рє РёС… Р·РѕРІСѓС‚?
+				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_08"); //Р‘СЂСЋСЃ.
 			};
 		};
 		
@@ -376,7 +376,7 @@ func void DIA_Pepe_BuyLiesel_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_09"); //У тебя недостаточно золота. А я не могу продать овцу дешевле.
+		AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_09"); //РЈ С‚РµР±СЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°. Рђ СЏ РЅРµ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ РѕРІС†Сѓ РґРµС€РµРІР»Рµ.
 	};
 };
 

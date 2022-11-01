@@ -2,7 +2,7 @@
 // B_GetCurrentAbsolutionLevel
 // ---------------------------
 // liefert Absolution Level der Location
-// wenn NSC keiner Location angehört --> 0
+// wenn NSC keiner Location angehÑ†rt --> 0
 // ***************************************
 
 func int B_GetCurrentAbsolutionLevel (var C_NPC slf)

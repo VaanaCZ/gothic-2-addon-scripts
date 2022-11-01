@@ -2,7 +2,7 @@
 // Spell_ProcessMana
 // -----------------
 // wird pro investiertem Mana aufgerufen 
-// wieviele Mana bisher investiert wurden kann über manaInvested abgefragt werden
+// wieviele Mana bisher investiert wurden kann ÑŒber manaInvested abgefragt werden
 // diese Methode wird immer vom Caster aufgerufen
 // self 	= Der Caster
 // other 	= Das Opfer (kann auch leer sein)

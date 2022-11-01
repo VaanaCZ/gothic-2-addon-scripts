@@ -45,9 +45,9 @@ func int DIA_Meldor_Hallo_Condition ()
 
 func void DIA_Meldor_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Meldor_Hallo_07_00"); //Что тебе нужно?
-	AI_Output (other, self, "DIA_Meldor_Hallo_15_01"); //Я просто любуюсь окрестностями...
-	AI_Output (self, other, "DIA_Meldor_Hallo_07_02"); //А куда именно ты направляешься?
+	AI_Output (self, other, "DIA_Meldor_Hallo_07_00"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (other, self, "DIA_Meldor_Hallo_15_01"); //РЇ РїСЂРѕСЃС‚Рѕ Р»СЋР±СѓСЋСЃСЊ РѕРєСЂРµСЃС‚РЅРѕСЃС‚СЏРјРё...
+	AI_Output (self, other, "DIA_Meldor_Hallo_07_02"); //Рђ РєСѓРґР° РёРјРµРЅРЅРѕ С‚С‹ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ?
 };
 
 // ***********************************************************
@@ -60,7 +60,7 @@ instance DIA_Meldor_Interessantes		(C_INFO)
 	condition	= DIA_Meldor_Interessantes_Condition;
 	information	= DIA_Meldor_Interessantes_Info;
 	permanent 	= FALSE;
-	description	= "Что здесь интересного?";
+	description	= "Р§С‚Рѕ Р·РґРµСЃСЊ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ?";
 };
 
 func int DIA_Meldor_Interessantes_Condition ()
@@ -70,12 +70,12 @@ func int DIA_Meldor_Interessantes_Condition ()
 
 func void DIA_Meldor_Interessantes_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Interessantes_15_00"); //Что здесь интересного?
-	AI_Output (self, other, "DIA_Meldor_Interessantes_07_01"); //Здесь есть бордель и кабак. Хозяина кабака зовут Кардиф. Если тебе нужна информация, я советую проговорить именно с ним.
-	AI_Output (self, other, "DIA_Meldor_Interessantes_07_02"); //Тебе, кстати, не нужны деньги?
+	AI_Output (other, self, "DIA_Meldor_Interessantes_15_00"); //Р§С‚Рѕ Р·РґРµСЃСЊ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ?
+	AI_Output (self, other, "DIA_Meldor_Interessantes_07_01"); //Р—РґРµСЃСЊ РµСЃС‚СЊ Р±РѕСЂРґРµР»СЊ Рё РєР°Р±Р°Рє. РҐРѕР·СЏРёРЅР° РєР°Р±Р°РєР° Р·РѕРІСѓС‚ РљР°СЂРґРёС„. Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ, СЏ СЃРѕРІРµС‚СѓСЋ РїСЂРѕРіРѕРІРѕСЂРёС‚СЊ РёРјРµРЅРЅРѕ СЃ РЅРёРј.
+	AI_Output (self, other, "DIA_Meldor_Interessantes_07_02"); //РўРµР±Рµ, РєСЃС‚Р°С‚Рё, РЅРµ РЅСѓР¶РЅС‹ РґРµРЅСЊРіРё?
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Кардиф, владелец таверны в гавани, приторговывает информацией.");
+	B_LogEntry (Topic_CityTrader,"РљР°СЂРґРёС„, РІР»Р°РґРµР»РµС† С‚Р°РІРµСЂРЅС‹ РІ РіР°РІР°РЅРё, РїСЂРёС‚РѕСЂРіРѕРІС‹РІР°РµС‚ РёРЅС„РѕСЂРјР°С†РёРµР№.");
 };
 
 // ***********************************************************
@@ -88,7 +88,7 @@ instance DIA_Meldor_Lehmar		(C_INFO)
 	condition	= DIA_Meldor_Lehmar_Condition;
 	information	= DIA_Meldor_Lehmar_Info;
 	permanent 	= FALSE;
-	description	= "А ты даешь их?";
+	description	= "Рђ С‚С‹ РґР°РµС€СЊ РёС…?";
 };
 
 func int DIA_Meldor_Lehmar_Condition ()
@@ -101,9 +101,9 @@ func int DIA_Meldor_Lehmar_Condition ()
 
 func void DIA_Meldor_Lehmar_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Lehmar_15_00"); //А ты даешь их?
-	AI_Output (self, other, "DIA_Meldor_Lehmar_07_01"); //(скучая) Нет. Но прямо через улицу находится дом Лемара, ростовщика.
-	AI_Output (self, other, "DIA_Meldor_Lehmar_07_02"); //Я уверен, что он сможет одолжить тебе несколько золотых.
+	AI_Output (other, self, "DIA_Meldor_Lehmar_15_00"); //Рђ С‚С‹ РґР°РµС€СЊ РёС…?
+	AI_Output (self, other, "DIA_Meldor_Lehmar_07_01"); //(СЃРєСѓС‡Р°СЏ) РќРµС‚. РќРѕ РїСЂСЏРјРѕ С‡РµСЂРµР· СѓР»РёС†Сѓ РЅР°С…РѕРґРёС‚СЃСЏ РґРѕРј Р›РµРјР°СЂР°, СЂРѕСЃС‚РѕРІС‰РёРєР°.
+	AI_Output (self, other, "DIA_Meldor_Lehmar_07_02"); //РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РѕРЅ СЃРјРѕР¶РµС‚ РѕРґРѕР»Р¶РёС‚СЊ С‚РµР±Рµ РЅРµСЃРєРѕР»СЊРєРѕ Р·РѕР»РѕС‚С‹С….
 	Npc_ExchangeRoutine (self, "START");
 };
 
@@ -118,7 +118,7 @@ instance DIA_Meldor_Arbeitest		(C_INFO)
 	condition	= DIA_Meldor_Arbeitest_Condition;
 	information	= DIA_Meldor_Arbeitest_Info;
 	permanent 	= FALSE;
-	description	= "Ты работаешь на Лемара?";
+	description	= "РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° Р›РµРјР°СЂР°?";
 };
 
 func int DIA_Meldor_Arbeitest_Condition ()
@@ -131,8 +131,8 @@ func int DIA_Meldor_Arbeitest_Condition ()
 
 func void DIA_Meldor_Arbeitest_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Arbeitest_15_00"); //Ты работаешь на Лемара?
-	AI_Output (self, other, "DIA_Meldor_Arbeitest_07_01"); //Умный мальчик.
+	AI_Output (other, self, "DIA_Meldor_Arbeitest_15_00"); //РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° Р›РµРјР°СЂР°?
+	AI_Output (self, other, "DIA_Meldor_Arbeitest_07_01"); //РЈРјРЅС‹Р№ РјР°Р»СЊС‡РёРє.
 };
 
 // ***********************************************************
@@ -145,7 +145,7 @@ instance DIA_Meldor_InsOV		(C_INFO)
 	condition	= DIA_Meldor_InsOV_Condition;
 	information	= DIA_Meldor_InsOV_Info;
 	permanent 	= FALSE;
-	description	= "Вообще-то я направлялся в верхний квартал...";
+	description	= "Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ РЅР°РїСЂР°РІР»СЏР»СЃСЏ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»...";
 };
 
 func int DIA_Meldor_InsOV_Condition ()
@@ -155,9 +155,9 @@ func int DIA_Meldor_InsOV_Condition ()
 
 func void DIA_Meldor_InsOV_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_InsOV_15_00"); //Вообще-то я направлялся в верхний квартал...
-	AI_Output (self, other, "DIA_Meldor_InsOV_07_01"); //(саркастично) Да, конечно. А я собирался сесть на корабль и нанести визит королю.
-	AI_Output (self, other, "DIA_Meldor_InsOV_07_02"); //Людям вроде тебя и меня доступ в верхний квартал закрыт с тех пор, как в город прибыли паладины.
+	AI_Output (other, self, "DIA_Meldor_InsOV_15_00"); //Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ РЅР°РїСЂР°РІР»СЏР»СЃСЏ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»...
+	AI_Output (self, other, "DIA_Meldor_InsOV_07_01"); //(СЃР°СЂРєР°СЃС‚РёС‡РЅРѕ) Р”Р°, РєРѕРЅРµС‡РЅРѕ. Рђ СЏ СЃРѕР±РёСЂР°Р»СЃСЏ СЃРµСЃС‚СЊ РЅР° РєРѕСЂР°Р±Р»СЊ Рё РЅР°РЅРµСЃС‚Рё РІРёР·РёС‚ РєРѕСЂРѕР»СЋ.
+	AI_Output (self, other, "DIA_Meldor_InsOV_07_02"); //Р›СЋРґСЏРј РІСЂРѕРґРµ С‚РµР±СЏ Рё РјРµРЅСЏ РґРѕСЃС‚СѓРї РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р» Р·Р°РєСЂС‹С‚ СЃ С‚РµС… РїРѕСЂ, РєР°Рє РІ РіРѕСЂРѕРґ РїСЂРёР±С‹Р»Рё РїР°Р»Р°РґРёРЅС‹.
 };
 
 // ***********************************************************
@@ -170,7 +170,7 @@ instance DIA_Meldor_Citizen		(C_INFO)
 	condition	= DIA_Meldor_Citizen_Condition;
 	information	= DIA_Meldor_Citizen_Info;
 	permanent 	= FALSE;
-	description	= "Ты гражданин этого города?";
+	description	= "РўС‹ РіСЂР°Р¶РґР°РЅРёРЅ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°?";
 };
 
 func int DIA_Meldor_Citizen_Condition ()
@@ -183,10 +183,10 @@ func int DIA_Meldor_Citizen_Condition ()
 
 func void DIA_Meldor_Citizen_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Citizen_15_00"); //Ты гражданин этого города?
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_01"); //Если ты имеешь в виду, живу ли я здесь, то да. Но меня все равно не пустят в верхний квартал.
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_02"); //Туда могут попасть только сливки общества, ну, или торговцы и ремесленники из нижней части города.
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_03"); //Жители портового квартала не имеют особого веса в Хоринисе. Сюда даже патрули ополчения почти никогда не заглядывают.
+	AI_Output (other, self, "DIA_Meldor_Citizen_15_00"); //РўС‹ РіСЂР°Р¶РґР°РЅРёРЅ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°?
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_01"); //Р•СЃР»Рё С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ, Р¶РёРІСѓ Р»Рё СЏ Р·РґРµСЃСЊ, С‚Рѕ РґР°. РќРѕ РјРµРЅСЏ РІСЃРµ СЂР°РІРЅРѕ РЅРµ РїСѓСЃС‚СЏС‚ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_02"); //РўСѓРґР° РјРѕРіСѓС‚ РїРѕРїР°СЃС‚СЊ С‚РѕР»СЊРєРѕ СЃР»РёРІРєРё РѕР±С‰РµСЃС‚РІР°, РЅСѓ, РёР»Рё С‚РѕСЂРіРѕРІС†С‹ Рё СЂРµРјРµСЃР»РµРЅРЅРёРєРё РёР· РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_03"); //Р–РёС‚РµР»Рё РїРѕСЂС‚РѕРІРѕРіРѕ РєРІР°СЂС‚Р°Р»Р° РЅРµ РёРјРµСЋС‚ РѕСЃРѕР±РѕРіРѕ РІРµСЃР° РІ РҐРѕСЂРёРЅРёСЃРµ. РЎСЋРґР° РґР°Р¶Рµ РїР°С‚СЂСѓР»Рё РѕРїРѕР»С‡РµРЅРёСЏ РїРѕС‡С‚Рё РЅРёРєРѕРіРґР° РЅРµ Р·Р°РіР»СЏРґС‹РІР°СЋС‚.
 
 };
 // ***********************************************************
@@ -199,7 +199,7 @@ instance DIA_Meldor_Smoke		(C_INFO)
 	condition	= DIA_Meldor_Smoke_Condition;
 	information	= DIA_Meldor_Smoke_Info;
 	permanent 	= FALSE;
-	description	= "Ты не знаешь, где мне купить травки?";
+	description	= "РўС‹ РЅРµ Р·РЅР°РµС€СЊ, РіРґРµ РјРЅРµ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?";
 };
 
 func int DIA_Meldor_Smoke_Condition ()
@@ -213,15 +213,15 @@ func void DIA_Meldor_Smoke_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Meldor_Smoke_15_00"); //Ты не знаешь, где мне купить травки?
+	AI_Output (other, self, "DIA_Meldor_Smoke_15_00"); //РўС‹ РЅРµ Р·РЅР°РµС€СЊ, РіРґРµ РјРЅРµ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Meldor_Smoke_07_01"); //(оценивающе) Нет, понятия не имею.
+		AI_Output (self, other, "DIA_Meldor_Smoke_07_01"); //(РѕС†РµРЅРёРІР°СЋС‰Рµ) РќРµС‚, РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Meldor_Smoke_07_02"); //На твоем месте, я бы попытал счастья в 'Красном Фонаре'.
+		AI_Output (self, other, "DIA_Meldor_Smoke_07_02"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ, СЏ Р±С‹ РїРѕРїС‹С‚Р°Р» СЃС‡Р°СЃС‚СЊСЏ РІ 'РљСЂР°СЃРЅРѕРј Р¤РѕРЅР°СЂРµ'.
 	};
 };
 
@@ -238,7 +238,7 @@ instance DIA_Meldor_PERM		(C_INFO)
 	condition	= DIA_Meldor_PERM_Condition;
 	information	= DIA_Meldor_PERM_Info;
 	permanent 	= TRUE;
-	description	= "Ничего интересного не было?";
+	description	= "РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РЅРµ Р±С‹Р»Рѕ?";
 };
 
 func int DIA_Meldor_PERM_Condition ()
@@ -248,31 +248,31 @@ func int DIA_Meldor_PERM_Condition ()
 
 func void DIA_Meldor_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_PERM_15_00"); //Ничего интересного не было последнее время?
+	AI_Output (other, self, "DIA_Meldor_PERM_15_00"); //РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РЅРµ Р±С‹Р»Рѕ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ?
 	
 	if (Kapitel <= 1)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_01"); //Недавно, городская стража перевернула вверх дном весть портовый квартал.
-		AI_Output (self, other, "DIA_Meldor_PERM_07_02"); //Они искали украденное. Последнее время развелось уж больно много воров. Особенно в зажиточных кварталах.
-		AI_Output (self, other, "DIA_Meldor_PERM_07_03"); //Они пытались во всем обвинить бедняков из портового квартала.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_01"); //РќРµРґР°РІРЅРѕ, РіРѕСЂРѕРґСЃРєР°СЏ СЃС‚СЂР°Р¶Р° РїРµСЂРµРІРµСЂРЅСѓР»Р° РІРІРµСЂС… РґРЅРѕРј РІРµСЃС‚СЊ РїРѕСЂС‚РѕРІС‹Р№ РєРІР°СЂС‚Р°Р».
+		AI_Output (self, other, "DIA_Meldor_PERM_07_02"); //РћРЅРё РёСЃРєР°Р»Рё СѓРєСЂР°РґРµРЅРЅРѕРµ. РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ СЂР°Р·РІРµР»РѕСЃСЊ СѓР¶ Р±РѕР»СЊРЅРѕ РјРЅРѕРіРѕ РІРѕСЂРѕРІ. РћСЃРѕР±РµРЅРЅРѕ РІ Р·Р°Р¶РёС‚РѕС‡РЅС‹С… РєРІР°СЂС‚Р°Р»Р°С….
+		AI_Output (self, other, "DIA_Meldor_PERM_07_03"); //РћРЅРё РїС‹С‚Р°Р»РёСЃСЊ РІРѕ РІСЃРµРј РѕР±РІРёРЅРёС‚СЊ Р±РµРґРЅСЏРєРѕРІ РёР· РїРѕСЂС‚РѕРІРѕРіРѕ РєРІР°СЂС‚Р°Р»Р°.
 	}
 	else if (Andre_Diebesgilde_aufgeraeumt == TRUE)
 	&&		(Meldor_DGNews == FALSE)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_04"); //Я слышал, в канализации поймали банду воров. Все воры были убиты.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_04"); //РЇ СЃР»С‹С€Р°Р», РІ РєР°РЅР°Р»РёР·Р°С†РёРё РїРѕР№РјР°Р»Рё Р±Р°РЅРґСѓ РІРѕСЂРѕРІ. Р’СЃРµ РІРѕСЂС‹ Р±С‹Р»Рё СѓР±РёС‚С‹.
 		Meldor_DGNews = TRUE;
 	}
 	else if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_05"); //Говорят, что в Долине Рудников появились драконы. Интересно, когда паладины уйдут отсюда, чтобы сражаться с драконами.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_05"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РїРѕСЏРІРёР»РёСЃСЊ РґСЂР°РєРѕРЅС‹. РРЅС‚РµСЂРµСЃРЅРѕ, РєРѕРіРґР° РїР°Р»Р°РґРёРЅС‹ СѓР№РґСѓС‚ РѕС‚СЃСЋРґР°, С‡С‚РѕР±С‹ СЃСЂР°Р¶Р°С‚СЊСЃСЏ СЃ РґСЂР°РєРѕРЅР°РјРё.
 	}
 	else if (Kapitel == 5)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_06"); //Предположительно, все драконы мертвы. Кто-то вымел их железной метлой.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_06"); //РџСЂРµРґРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ, РІСЃРµ РґСЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹. РљС‚Рѕ-С‚Рѕ РІС‹РјРµР» РёС… Р¶РµР»РµР·РЅРѕР№ РјРµС‚Р»РѕР№.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_07"); //Нет.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_07"); //РќРµС‚.
 	};
 };
 
@@ -301,8 +301,8 @@ func int DIA_Meldor_VonLehmar_Condition ()
 };
 func void DIA_Meldor_VonLehmar_Info ()
 {
-	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_00"); //Эй, подожди...
-	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_01"); //У меня есть для тебя сообщение от Лемара...
+	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_00"); //Р­Р№, РїРѕРґРѕР¶РґРё...
+	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚ Р›РµРјР°СЂР°...
 
 	AI_StopProcessInfos (self);
 

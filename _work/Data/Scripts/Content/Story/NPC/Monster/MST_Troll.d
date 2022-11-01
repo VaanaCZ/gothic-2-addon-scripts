@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Troll(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Тролль";
+	name							=	"РўСЂРѕР»Р»СЊ";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	50; //30
@@ -102,11 +102,11 @@ INSTANCE Maya_Troll	(Mst_Default_Troll)
 };
 
 //*********************************
-//	Hцhlentroll bei Orks auf der DI    
+//	HС†hlentroll bei Orks auf der DI    
 //*********************************
 INSTANCE Troll_DI	(Mst_Default_Troll)
 {
-	name		=	"Пещерный тролль";
+	name		=	"РџРµС‰РµСЂРЅС‹Р№ С‚СЂРѕР»Р»СЊ";
 
 	aivar[AIV_MaxDistToWp]			= 300;
 	aivar[AIV_OriginalFightTactic] 	= FAI_TROLL;

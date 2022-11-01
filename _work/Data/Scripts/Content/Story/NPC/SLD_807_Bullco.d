@@ -3,7 +3,7 @@
 instance SLD_807_Bullco (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "¡ÛÎÍÓ";
+	name 		= "–ë—É–ª–∫–æ";
 	guild 		= GIL_SLD;
 	id 			= 807;
 	voice 		= 6;
@@ -35,8 +35,8 @@ instance SLD_807_Bullco (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 50); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 50); //Grenzen f—år Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_807;

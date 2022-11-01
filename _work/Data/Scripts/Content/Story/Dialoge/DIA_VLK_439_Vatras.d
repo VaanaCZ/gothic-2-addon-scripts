@@ -31,11 +31,11 @@ func int DIA_Addon_Vatras_KillerWarning_Condition ()
 
 func void DIA_Addon_Vatras_KillerWarning_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_00"); //Я слышал про тебя.
-	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_01"); //Говорят, что ты замешан в убийстве невинных людей.
-	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_02"); //Если это так, то я должен предупредить тебя, сынок. 
-	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_03"); //Не стоит нарушать баланс сил, ибо в противном случае тебе придется столкнуться с последствиями своих поступков.
-	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_04"); //Чем я могу помочь тебе?
+	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_00"); //РЇ СЃР»С‹С€Р°Р» РїСЂРѕ С‚РµР±СЏ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_01"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ С‚С‹ Р·Р°РјРµС€Р°РЅ РІ СѓР±РёР№СЃС‚РІРµ РЅРµРІРёРЅРЅС‹С… Р»СЋРґРµР№.
+	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_02"); //Р•СЃР»Рё СЌС‚Рѕ С‚Р°Рє, С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ С‚РµР±СЏ, СЃС‹РЅРѕРє. 
+	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_03"); //РќРµ СЃС‚РѕРёС‚ РЅР°СЂСѓС€Р°С‚СЊ Р±Р°Р»Р°РЅСЃ СЃРёР», РёР±Рѕ РІ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ СЃС‚РѕР»РєРЅСѓС‚СЊСЃСЏ СЃ РїРѕСЃР»РµРґСЃС‚РІРёСЏРјРё СЃРІРѕРёС… РїРѕСЃС‚СѓРїРєРѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_04"); //Р§РµРј СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -63,26 +63,26 @@ func int DIA_Addon_Vatras_LastWarning_Condition ()
 func void DIA_Addon_Vatras_LastWarning_Info ()
 {
 	B_LastWarningVatras ();
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_06"); //Что ты можешь сказать в свое оправдание?
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_06"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РІ СЃРІРѕРµ РѕРїСЂР°РІРґР°РЅРёРµ?
 
 	Info_ClearChoices	(DIA_Addon_Vatras_LastWarning);
-	Info_AddChoice	(DIA_Addon_Vatras_LastWarning, "Отвали.", DIA_Addon_Vatras_LastWarning_Arsch );	 
-	Info_AddChoice	(DIA_Addon_Vatras_LastWarning, "Мне очень жаль. Я не понимал, что делаю.", DIA_Addon_Vatras_LastWarning_Reue );	 
+	Info_AddChoice	(DIA_Addon_Vatras_LastWarning, "РћС‚РІР°Р»Рё.", DIA_Addon_Vatras_LastWarning_Arsch );	 
+	Info_AddChoice	(DIA_Addon_Vatras_LastWarning, "РњРЅРµ РѕС‡РµРЅСЊ Р¶Р°Р»СЊ. РЇ РЅРµ РїРѕРЅРёРјР°Р», С‡С‚Рѕ РґРµР»Р°СЋ.", DIA_Addon_Vatras_LastWarning_Reue );	 
 };
 func void DIA_Addon_Vatras_LastWarning_Arsch ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_15_00"); //Отвали.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_05_00"); //Я не слышу в твоих словах ни тени раскаяния.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_05_01"); //Ты не оставляешь мне другого выбора.
+	AI_Output	(other, self, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_15_00"); //РћС‚РІР°Р»Рё.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_05_00"); //РЇ РЅРµ СЃР»С‹С€Сѓ РІ С‚РІРѕРёС… СЃР»РѕРІР°С… РЅРё С‚РµРЅРё СЂР°СЃРєР°СЏРЅРёСЏ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_05_01"); //РўС‹ РЅРµ РѕСЃС‚Р°РІР»СЏРµС€СЊ РјРЅРµ РґСЂСѓРіРѕРіРѕ РІС‹Р±РѕСЂР°.
 	Info_ClearChoices	(DIA_Addon_Vatras_LastWarning);
 	B_VatrasPissedOff ();
 };
 
 func void DIA_Addon_Vatras_LastWarning_Reue ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_LastWarning_Reue_ADD_15_00"); //Мне очень жаль. Я не понимал, что делаю.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Reue_ADD_05_00"); //Я буду молиться за тебя и просить богов, чтобы они вернули тебе рассудок.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Reue_ADD_05_01"); //Горе тебе, если я услышу хотя бы об одном убийстве, к которому ты приложил руку.
+	AI_Output	(other, self, "DIA_Addon_Vatras_LastWarning_Reue_ADD_15_00"); //РњРЅРµ РѕС‡РµРЅСЊ Р¶Р°Р»СЊ. РЇ РЅРµ РїРѕРЅРёРјР°Р», С‡С‚Рѕ РґРµР»Р°СЋ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Reue_ADD_05_00"); //РЇ Р±СѓРґСѓ РјРѕР»РёС‚СЊСЃСЏ Р·Р° С‚РµР±СЏ Рё РїСЂРѕСЃРёС‚СЊ Р±РѕРіРѕРІ, С‡С‚РѕР±С‹ РѕРЅРё РІРµСЂРЅСѓР»Рё С‚РµР±Рµ СЂР°СЃСЃСѓРґРѕРє.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Reue_ADD_05_01"); //Р“РѕСЂРµ С‚РµР±Рµ, РµСЃР»Рё СЏ СѓСЃР»С‹С€Сѓ С…РѕС‚СЏ Р±С‹ РѕР± РѕРґРЅРѕРј СѓР±РёР№СЃС‚РІРµ, Рє РєРѕС‚РѕСЂРѕРјСѓ С‚С‹ РїСЂРёР»РѕР¶РёР» СЂСѓРєСѓ.
 	Info_ClearChoices	(DIA_Addon_Vatras_LastWarning);
 	VatrasMadKillerCount = MadKillerCount;
 };
@@ -111,9 +111,9 @@ func int DIA_Addon_Vatras_PissedOff_Condition ()
 
 func void DIA_Addon_Vatras_PissedOff_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOff_ADD_05_00"); //Твои слова так же лживы, как и твои деяния.
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOff_ADD_05_01"); //Ты никак не хочешь прекращать бездумные убийства.
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOff_ADD_05_02"); //Ты не оставляешь мне другого выбора... 
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOff_ADD_05_00"); //РўРІРѕРё СЃР»РѕРІР° С‚Р°Рє Р¶Рµ Р»Р¶РёРІС‹, РєР°Рє Рё С‚РІРѕРё РґРµСЏРЅРёСЏ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOff_ADD_05_01"); //РўС‹ РЅРёРєР°Рє РЅРµ С…РѕС‡РµС€СЊ РїСЂРµРєСЂР°С‰Р°С‚СЊ Р±РµР·РґСѓРјРЅС‹Рµ СѓР±РёР№СЃС‚РІР°.
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOff_ADD_05_02"); //РўС‹ РЅРµ РѕСЃС‚Р°РІР»СЏРµС€СЊ РјРЅРµ РґСЂСѓРіРѕРіРѕ РІС‹Р±РѕСЂР°... 
 	B_VatrasPissedOff ();
 };
 
@@ -136,19 +136,19 @@ FUNC VOID DIA_Vatras_EXIT_Info()
 	if (Npc_KnowsInfo (other, DIA_Addon_Vatras_HowToJoin))
 	&& (Vatras_LaresExit == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_00"); //Подожди!
+		AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_00"); //РџРѕРґРѕР¶РґРё!
 		if (Vatras_GehZuLares == TRUE) 
 		{
-			AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_01"); //Если увидишь Лареса...
+			AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_01"); //Р•СЃР»Рё СѓРІРёРґРёС€СЊ Р›Р°СЂРµСЃР°...
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_02"); //Я хочу, чтобы ты оказал мне небольшую услугу.
-			AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_03"); //Отправляйся в порт. Там ты найдешь человека по имени Ларес.
+			AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_02"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕРєР°Р·Р°Р» РјРЅРµ РЅРµР±РѕР»СЊС€СѓСЋ СѓСЃР»СѓРіСѓ.
+			AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_03"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ РІ РїРѕСЂС‚. РўР°Рј С‚С‹ РЅР°Р№РґРµС€СЊ С‡РµР»РѕРІРµРєР° РїРѕ РёРјРµРЅРё Р›Р°СЂРµСЃ.
 			Vatras_GehZuLares = TRUE;
 		};	
 			
-		AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_04"); //Передай ему этот орнамент и скажи, что его нужно вернуть. Он знает, что делать.
+		AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_04"); //РџРµСЂРµРґР°Р№ РµРјСѓ СЌС‚РѕС‚ РѕСЂРЅР°РјРµРЅС‚ Рё СЃРєР°Р¶Рё, С‡С‚Рѕ РµРіРѕ РЅСѓР¶РЅРѕ РІРµСЂРЅСѓС‚СЊ. РћРЅ Р·РЅР°РµС‚, С‡С‚Рѕ РґРµР»Р°С‚СЊ.
 		CreateInvItems (self, ItMi_Ornament_Addon_Vatras, 1);									
 		B_GiveInvItems (self, other, ItMi_Ornament_Addon_Vatras, 1);	
 		
@@ -228,10 +228,10 @@ func int DIA_Vatras_GREET_Condition ()
 };
 func void DIA_Vatras_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Vatras_GREET_05_00"); //Да пребудет с тобой Аданос.
-	AI_Output (other, self, "DIA_Vatras_GREET_15_01"); //Кто ты?
-	AI_Output (self, other, "DIA_Vatras_GREET_05_02"); //Я Ватрас, слуга Аданоса, стража равновесия божественного и земного.
-	AI_Output (self, other, "DIA_Vatras_GREET_05_03"); //Что я могу сделать для тебя?
+	AI_Output (self, other, "DIA_Vatras_GREET_05_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РђРґР°РЅРѕСЃ.
+	AI_Output (other, self, "DIA_Vatras_GREET_15_01"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other, "DIA_Vatras_GREET_05_02"); //РЇ Р’Р°С‚СЂР°СЃ, СЃР»СѓРіР° РђРґР°РЅРѕСЃР°, СЃС‚СЂР°Р¶Р° СЂР°РІРЅРѕРІРµСЃРёСЏ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕРіРѕ Рё Р·РµРјРЅРѕРіРѕ.
+	AI_Output (self, other, "DIA_Vatras_GREET_05_03"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 };
 
 
@@ -246,7 +246,7 @@ instance DIA_Addon_Vatras_Cavalorn		(C_INFO)
 	condition	= DIA_Addon_Vatras_Cavalorn_Condition;
 	information	= DIA_Addon_Vatras_Cavalorn_Info;
 
-	description	= "У меня для тебя письмо.";
+	description	= "РЈ РјРµРЅСЏ РґР»СЏ С‚РµР±СЏ РїРёСЃСЊРјРѕ.";
 };
 func int DIA_Addon_Vatras_Cavalorn_Condition ()
 {
@@ -261,8 +261,8 @@ func int DIA_Addon_Vatras_Cavalorn_Condition ()
 };
 func void DIA_Addon_Vatras_Cavalorn_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_Cavalorn_15_00"); //У меня для тебя письмо.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_01"); //Для меня?
+	AI_Output	(other, self, "DIA_Addon_Vatras_Cavalorn_15_00"); //РЈ РјРµРЅСЏ РґР»СЏ С‚РµР±СЏ РїРёСЃСЊРјРѕ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_01"); //Р”Р»СЏ РјРµРЅСЏ?
 	
 	if (SaturasFirstMessageOpened == FALSE)
 	{
@@ -273,38 +273,38 @@ func void DIA_Addon_Vatras_Cavalorn_Info ()
 	{
 		B_GivePlayerXP (XP_Addon_Cavalorn_Letter2Vatras_Opened);
 		B_GiveInvItems (other, self, ItWr_SaturasFirstMessage_Addon,1);
-		AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_02"); //Да, но... оно вскрыто. Я надеюсь, оно не попало в чужие руки?
+		AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_02"); //Р”Р°, РЅРѕ... РѕРЅРѕ РІСЃРєСЂС‹С‚Рѕ. РЇ РЅР°РґРµСЋСЃСЊ, РѕРЅРѕ РЅРµ РїРѕРїР°Р»Рѕ РІ С‡СѓР¶РёРµ СЂСѓРєРё?
 	};
 
 	B_UseFakeScroll();
 	
-	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_03"); //Да. Это очень важное известие.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_04"); //Интересно как к тебе попало это письмо?
+	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_03"); //Р”Р°. Р­С‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕРµ РёР·РІРµСЃС‚РёРµ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_04"); //РРЅС‚РµСЂРµСЃРЅРѕ РєР°Рє Рє С‚РµР±Рµ РїРѕРїР°Р»Рѕ СЌС‚Рѕ РїРёСЃСЊРјРѕ?
 	
 	Info_ClearChoices	(DIA_Addon_Vatras_Cavalorn);
-	Info_AddChoice	(DIA_Addon_Vatras_Cavalorn, "Я забрал его у бандитов.", DIA_Addon_Vatras_Cavalorn_Bandit );
+	Info_AddChoice	(DIA_Addon_Vatras_Cavalorn, "РЇ Р·Р°Р±СЂР°Р» РµРіРѕ Сѓ Р±Р°РЅРґРёС‚РѕРІ.", DIA_Addon_Vatras_Cavalorn_Bandit );
 
 	if (MIS_Addon_Cavalorn_KillBrago == LOG_SUCCESS)
 	{
-		Info_AddChoice	(DIA_Addon_Vatras_Cavalorn, "Я получил его у Кавалорна, охотника.", DIA_Addon_Vatras_Cavalorn_Cavalorn );
+		Info_AddChoice	(DIA_Addon_Vatras_Cavalorn, "РЇ РїРѕР»СѓС‡РёР» РµРіРѕ Сѓ РљР°РІР°Р»РѕСЂРЅР°, РѕС…РѕС‚РЅРёРєР°.", DIA_Addon_Vatras_Cavalorn_Cavalorn );
 	};
 
 	MIS_Addon_Cavalorn_Letter2Vatras = LOG_SUCCESS;
 };
 func void DIA_Addon_Vatras_Cavalorn_Bandit ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Bandit_15_00"); //Я забрал его у бандитов.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_01"); //(обеспокоено) О Аданос! Это плохо. Это очень плохо.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_02"); //Если то, что ты говоришь правда, то у нас огромная проблема.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_03"); //Я должен как можно скорее разобраться с этим.
+	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Bandit_15_00"); //РЇ Р·Р°Р±СЂР°Р» РµРіРѕ Сѓ Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_01"); //(РѕР±РµСЃРїРѕРєРѕРµРЅРѕ) Рћ РђРґР°РЅРѕСЃ! Р­С‚Рѕ РїР»РѕС…Рѕ. Р­С‚Рѕ РѕС‡РµРЅСЊ РїР»РѕС…Рѕ.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_02"); //Р•СЃР»Рё С‚Рѕ, С‡С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ РїСЂР°РІРґР°, С‚Рѕ Сѓ РЅР°СЃ РѕРіСЂРѕРјРЅР°СЏ РїСЂРѕР±Р»РµРјР°.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_03"); //РЇ РґРѕР»Р¶РµРЅ РєР°Рє РјРѕР¶РЅРѕ СЃРєРѕСЂРµРµ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ СЌС‚РёРј.
 	Info_ClearChoices	(DIA_Addon_Vatras_Cavalorn);
 };
 func void DIA_Addon_Vatras_Cavalorn_Cavalorn ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Cavalorn_15_00"); //Я получил его у Кавалорна, охотника.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Cavalorn_05_01"); //(с удивлением) Кавалорн? А где он?
-	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Cavalorn_15_02"); //Он просил передать тебе, что не успевает и сразу направился к месту встречи. Что бы это ни значило.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Cavalorn_05_03"); //Я смотрю, ты завоевал доверие Кавалорна. Это говорит в твою пользу.
+	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Cavalorn_15_00"); //РЇ РїРѕР»СѓС‡РёР» РµРіРѕ Сѓ РљР°РІР°Р»РѕСЂРЅР°, РѕС…РѕС‚РЅРёРєР°.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Cavalorn_05_01"); //(СЃ СѓРґРёРІР»РµРЅРёРµРј) РљР°РІР°Р»РѕСЂРЅ? Рђ РіРґРµ РѕРЅ?
+	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Cavalorn_15_02"); //РћРЅ РїСЂРѕСЃРёР» РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ, С‡С‚Рѕ РЅРµ СѓСЃРїРµРІР°РµС‚ Рё СЃСЂР°Р·Сѓ РЅР°РїСЂР°РІРёР»СЃСЏ Рє РјРµСЃС‚Сѓ РІСЃС‚СЂРµС‡Рё. Р§С‚Рѕ Р±С‹ СЌС‚Рѕ РЅРё Р·РЅР°С‡РёР»Рѕ.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Cavalorn_05_03"); //РЇ СЃРјРѕС‚СЂСЋ, С‚С‹ Р·Р°РІРѕРµРІР°Р» РґРѕРІРµСЂРёРµ РљР°РІР°Р»РѕСЂРЅР°. Р­С‚Рѕ РіРѕРІРѕСЂРёС‚ РІ С‚РІРѕСЋ РїРѕР»СЊР·Сѓ.
 	
 	B_GivePlayerXP (XP_Addon_CavalornTrust);
 	Info_ClearChoices	(DIA_Addon_Vatras_Cavalorn);
@@ -322,7 +322,7 @@ instance DIA_Addon_Vatras_CavalornSentMe (C_INFO)
 	condition	= DIA_Addon_Vatras_CavalornSentMe_Condition;
 	information	= DIA_Addon_Vatras_CavalornSentMe_Info;
 	permanent	= FALSE;
-	description	= "Меня прислал к тебе Кавалорн!";
+	description	= "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Рє С‚РµР±Рµ РљР°РІР°Р»РѕСЂРЅ!";
 };
 func int DIA_Addon_Vatras_CavalornSentMe_Condition ()
 {
@@ -336,14 +336,14 @@ func int DIA_Addon_Vatras_CavalornSentMe_Condition ()
 };
 func void DIA_Addon_Vatras_CavalornSentMe_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Add_15_00"); //Меня прислал к тебе Кавалорн!
-	AI_Output (self, other, "DIA_Addon_Vatras_Add_05_01"); //И что же он тебе сказал?
-	AI_Output (other, self, "DIA_Addon_Vatras_Add_15_02"); //Он сказал, что ты ищешь верных людей.
-	AI_Output (self, other, "DIA_Addon_Vatras_Add_05_03"); //(улыбается) Ага... Значит, ты хочешь присоединиться к нам, сынок?
+	AI_Output (other, self, "DIA_Addon_Vatras_Add_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Рє С‚РµР±Рµ РљР°РІР°Р»РѕСЂРЅ!
+	AI_Output (self, other, "DIA_Addon_Vatras_Add_05_01"); //Р С‡С‚Рѕ Р¶Рµ РѕРЅ С‚РµР±Рµ СЃРєР°Р·Р°Р»?
+	AI_Output (other, self, "DIA_Addon_Vatras_Add_15_02"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РёС‰РµС€СЊ РІРµСЂРЅС‹С… Р»СЋРґРµР№.
+	AI_Output (self, other, "DIA_Addon_Vatras_Add_05_03"); //(СѓР»С‹Р±Р°РµС‚СЃСЏ) РђРіР°... Р—РЅР°С‡РёС‚, С‚С‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј, СЃС‹РЅРѕРє?
 };
 
 // ************************************************************
-// 		Tell Me About RING 		(Trigger fьr MIS_Waffenhдndler)
+// 		Tell Me About RING 		(Trigger fСЊr MIS_WaffenhРґndler)
 // ************************************************************
 instance DIA_Addon_Vatras_TellMe (C_INFO)
 {
@@ -353,7 +353,7 @@ instance DIA_Addon_Vatras_TellMe (C_INFO)
 	information	= DIA_Addon_Vatras_TellMe_Info;
 	permanent	= TRUE;
 
-	description	= "Расскажи мне о Кольце Воды.";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РљРѕР»СЊС†Рµ Р’РѕРґС‹.";
 };
 func int DIA_Addon_Vatras_TellMe_Condition ()
 {
@@ -365,23 +365,23 @@ func int DIA_Addon_Vatras_TellMe_Condition ()
 };
 func void DIA_Addon_Vatras_TellMe_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_15_00"); //Расскажи мне о Кольце Воды.
+	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РљРѕР»СЊС†Рµ Р’РѕРґС‹.
 
 	if (!Npc_KnowsInfo (other, DIA_Addon_Vatras_WannaBeRanger))
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_01"); //(выжидающе) И зачем мне это делать?
+		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_01"); //(РІС‹Р¶РёРґР°СЋС‰Рµ) Р Р·Р°С‡РµРј РјРЅРµ СЌС‚Рѕ РґРµР»Р°С‚СЊ?
 		Vatras_Why = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_02"); //Так как ты пока не являешься членом нашего сообщества, я не смогу рассказать тебе ВСЕ.
-		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_03"); //Но я расскажу тебе то, что тебе можно услышать.
+		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_02"); //РўР°Рє РєР°Рє С‚С‹ РїРѕРєР° РЅРµ СЏРІР»СЏРµС€СЊСЃСЏ С‡Р»РµРЅРѕРј РЅР°С€РµРіРѕ СЃРѕРѕР±С‰РµСЃС‚РІР°, СЏ РЅРµ СЃРјРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ Р’РЎР•.
+		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_03"); //РќРѕ СЏ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ С‚Рѕ, С‡С‚Рѕ С‚РµР±Рµ РјРѕР¶РЅРѕ СѓСЃР»С‹С€Р°С‚СЊ.
 		
 		Info_ClearChoices (DIA_Addon_Vatras_TellMe);
 		Info_AddChoice (DIA_Addon_Vatras_TellMe, DIALOG_BACK, DIA_Addon_Vatras_TellMe_BACK);
-		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Чем именно вы занимаетесь?", DIA_Addon_Vatras_TellMe_Philo);
-		Info_AddChoice (DIA_Addon_Vatras_TellMe, "А где остальные маги воды?", DIA_Addon_Vatras_TellMe_OtherKdW);
-		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Кто является членом Кольца Воды?", DIA_Addon_Vatras_TellMe_WerNoch);
+		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Р§РµРј РёРјРµРЅРЅРѕ РІС‹ Р·Р°РЅРёРјР°РµС‚РµСЃСЊ?", DIA_Addon_Vatras_TellMe_Philo);
+		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Рђ РіРґРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ РјР°РіРё РІРѕРґС‹?", DIA_Addon_Vatras_TellMe_OtherKdW);
+		Info_AddChoice (DIA_Addon_Vatras_TellMe, "РљС‚Рѕ СЏРІР»СЏРµС‚СЃСЏ С‡Р»РµРЅРѕРј РљРѕР»СЊС†Р° Р’РѕРґС‹?", DIA_Addon_Vatras_TellMe_WerNoch);
 	};
 };
 func void DIA_Addon_Vatras_TellMe_BACK()
@@ -390,59 +390,59 @@ func void DIA_Addon_Vatras_TellMe_BACK()
 };
 func void DIA_Addon_Vatras_TellMe_Philo()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Philo_15_00"); //Чем именно вы занимаетесь?
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_01"); //Мы стоим на пути порядка Инноса и хаоса Белиара.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_02"); //Если одна из сторон одержит верх, то это будет означать либо полный хаос либо окончательную потерю свободы.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_03"); //Поэтому мы поддерживаем баланс двух сил. Благодаря нам существует все живое. 
+	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Philo_15_00"); //Р§РµРј РёРјРµРЅРЅРѕ РІС‹ Р·Р°РЅРёРјР°РµС‚РµСЃСЊ?
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_01"); //РњС‹ СЃС‚РѕРёРј РЅР° РїСѓС‚Рё РїРѕСЂСЏРґРєР° РРЅРЅРѕСЃР° Рё С…Р°РѕСЃР° Р‘РµР»РёР°СЂР°.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_02"); //Р•СЃР»Рё РѕРґРЅР° РёР· СЃС‚РѕСЂРѕРЅ РѕРґРµСЂР¶РёС‚ РІРµСЂС…, С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ РѕР·РЅР°С‡Р°С‚СЊ Р»РёР±Рѕ РїРѕР»РЅС‹Р№ С…Р°РѕСЃ Р»РёР±Рѕ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅСѓСЋ РїРѕС‚РµСЂСЋ СЃРІРѕР±РѕРґС‹.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_03"); //РџРѕСЌС‚РѕРјСѓ РјС‹ РїРѕРґРґРµСЂР¶РёРІР°РµРј Р±Р°Р»Р°РЅСЃ РґРІСѓС… СЃРёР». Р‘Р»Р°РіРѕРґР°СЂСЏ РЅР°Рј СЃСѓС‰РµСЃС‚РІСѓРµС‚ РІСЃРµ Р¶РёРІРѕРµ. 
 	
 	if (MIS_Vatras_FindTheBanditTrader == 0)
 	{
-		Info_AddChoice (DIA_Addon_Vatras_TellMe, "И что это значит для меня?", DIA_Addon_Vatras_TellMe_Konkret);
+		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Р С‡С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚ РґР»СЏ РјРµРЅСЏ?", DIA_Addon_Vatras_TellMe_Konkret);
 	};
 };
 func void DIA_Addon_Vatras_TellMe_Konkret()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Konkret_15_00"); //(хмуро) И что это значит для меня?
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_01"); //Падение Барьера стало причиной возникновения многих опасностей.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_02"); //Бандиты, наверное, самая очевидная их них.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_03"); //И дело не только в том, что теперь нельзя путешествовать в безопасности...
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_04"); //В городе есть кто-то, кто помогает бандитам!
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Add_05_00"); //Мы узнали, что бандиты получают регулярные поставки от торговца оружием в Хоринисе. 
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_05"); //Сейчас мы пытаемся всеми силами помешать этому.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_06"); //Если что-нибудь узнаешь об этом, дай мне знать.
+	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Konkret_15_00"); //(С…РјСѓСЂРѕ) Р С‡С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_01"); //РџР°РґРµРЅРёРµ Р‘Р°СЂСЊРµСЂР° СЃС‚Р°Р»Рѕ РїСЂРёС‡РёРЅРѕР№ РІРѕР·РЅРёРєРЅРѕРІРµРЅРёСЏ РјРЅРѕРіРёС… РѕРїР°СЃРЅРѕСЃС‚РµР№.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_02"); //Р‘Р°РЅРґРёС‚С‹, РЅР°РІРµСЂРЅРѕРµ, СЃР°РјР°СЏ РѕС‡РµРІРёРґРЅР°СЏ РёС… РЅРёС….
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_03"); //Р РґРµР»Рѕ РЅРµ С‚РѕР»СЊРєРѕ РІ С‚РѕРј, С‡С‚Рѕ С‚РµРїРµСЂСЊ РЅРµР»СЊР·СЏ РїСѓС‚РµС€РµСЃС‚РІРѕРІР°С‚СЊ РІ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё...
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_04"); //Р’ РіРѕСЂРѕРґРµ РµСЃС‚СЊ РєС‚Рѕ-С‚Рѕ, РєС‚Рѕ РїРѕРјРѕРіР°РµС‚ Р±Р°РЅРґРёС‚Р°Рј!
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Add_05_00"); //РњС‹ СѓР·РЅР°Р»Рё, С‡С‚Рѕ Р±Р°РЅРґРёС‚С‹ РїРѕР»СѓС‡Р°СЋС‚ СЂРµРіСѓР»СЏСЂРЅС‹Рµ РїРѕСЃС‚Р°РІРєРё РѕС‚ С‚РѕСЂРіРѕРІС†Р° РѕСЂСѓР¶РёРµРј РІ РҐРѕСЂРёРЅРёСЃРµ. 
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_05"); //РЎРµР№С‡Р°СЃ РјС‹ РїС‹С‚Р°РµРјСЃСЏ РІСЃРµРјРё СЃРёР»Р°РјРё РїРѕРјРµС€Р°С‚СЊ СЌС‚РѕРјСѓ.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_06"); //Р•СЃР»Рё С‡С‚Рѕ-РЅРёР±СѓРґСЊ СѓР·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј, РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ.
 	MIS_Vatras_FindTheBanditTrader = LOG_RUNNING;
 	Vatras_ToMartin = TRUE;
 	Log_CreateTopic (TOPIC_Addon_BanditTrader, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BanditTrader, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Некий торговец из Хориниса поставляет бандитам оружие. Ватрас хочет, чтобы я вывел его на чистую воду."); 
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Интендант паладинов Мартин также занимается поставкой оружия. Я могу найти его в гавани, где паладины хранят свои запасы."); 
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Кольцо Воды занимается проблемой бандитов в Хоринисе."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"РќРµРєРёР№ С‚РѕСЂРіРѕРІРµС† РёР· РҐРѕСЂРёРЅРёСЃР° РїРѕСЃС‚Р°РІР»СЏРµС‚ Р±Р°РЅРґРёС‚Р°Рј РѕСЂСѓР¶РёРµ. Р’Р°С‚СЂР°СЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РІС‹РІРµР» РµРіРѕ РЅР° С‡РёСЃС‚СѓСЋ РІРѕРґСѓ."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"РРЅС‚РµРЅРґР°РЅС‚ РїР°Р»Р°РґРёРЅРѕРІ РњР°СЂС‚РёРЅ С‚Р°РєР¶Рµ Р·Р°РЅРёРјР°РµС‚СЃСЏ РїРѕСЃС‚Р°РІРєРѕР№ РѕСЂСѓР¶РёСЏ. РЇ РјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ РІ РіР°РІР°РЅРё, РіРґРµ РїР°Р»Р°РґРёРЅС‹ С…СЂР°РЅСЏС‚ СЃРІРѕРё Р·Р°РїР°СЃС‹."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"РљРѕР»СЊС†Рѕ Р’РѕРґС‹ Р·Р°РЅРёРјР°РµС‚СЃСЏ РїСЂРѕР±Р»РµРјРѕР№ Р±Р°РЅРґРёС‚РѕРІ РІ РҐРѕСЂРёРЅРёСЃРµ."); 
 };
 func void DIA_Addon_Vatras_TellMe_OtherKdW()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_OtherKdW_15_00"); //А где остальные маги воды?
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_OtherKdW_05_01"); //Они исследуют постройки древней цивилизации к северо-востоку от Хориниса.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_OtherKdW_05_02"); //Мы подозреваем, что в этих руинах может скрываться проход к той части острова, которая еще не отмечена на карте.
+	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_OtherKdW_15_00"); //Рђ РіРґРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ РјР°РіРё РІРѕРґС‹?
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_OtherKdW_05_01"); //РћРЅРё РёСЃСЃР»РµРґСѓСЋС‚ РїРѕСЃС‚СЂРѕР№РєРё РґСЂРµРІРЅРµР№ С†РёРІРёР»РёР·Р°С†РёРё Рє СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕРєСѓ РѕС‚ РҐРѕСЂРёРЅРёСЃР°.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_OtherKdW_05_02"); //РњС‹ РїРѕРґРѕР·СЂРµРІР°РµРј, С‡С‚Рѕ РІ СЌС‚РёС… СЂСѓРёРЅР°С… РјРѕР¶РµС‚ СЃРєСЂС‹РІР°С‚СЊСЃСЏ РїСЂРѕС…РѕРґ Рє С‚РѕР№ С‡Р°СЃС‚Рё РѕСЃС‚СЂРѕРІР°, РєРѕС‚РѕСЂР°СЏ РµС‰Рµ РЅРµ РѕС‚РјРµС‡РµРЅР° РЅР° РєР°СЂС‚Рµ.
 	
 	Log_CreateTopic (TOPIC_Addon_KDW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_KDW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_KDW,"Маги воды исследуют руины построек древней культуры, которые находятся на северо-востоке от Хориниса. Возможно, там находится проход в неисследованную часть острова."); 
+	B_LogEntry (TOPIC_Addon_KDW,"РњР°РіРё РІРѕРґС‹ РёСЃСЃР»РµРґСѓСЋС‚ СЂСѓРёРЅС‹ РїРѕСЃС‚СЂРѕРµРє РґСЂРµРІРЅРµР№ РєСѓР»СЊС‚СѓСЂС‹, РєРѕС‚РѕСЂС‹Рµ РЅР°С…РѕРґСЏС‚СЃСЏ РЅР° СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕРєРµ РѕС‚ РҐРѕСЂРёРЅРёСЃР°. Р’РѕР·РјРѕР¶РЅРѕ, С‚Р°Рј РЅР°С…РѕРґРёС‚СЃСЏ РїСЂРѕС…РѕРґ РІ РЅРµРёСЃСЃР»РµРґРѕРІР°РЅРЅСѓСЋ С‡Р°СЃС‚СЊ РѕСЃС‚СЂРѕРІР°."); 
 
-	Info_AddChoice (DIA_Addon_Vatras_TellMe, "Расскажи мне об этом.", DIA_Addon_Vatras_TellMe_Unexplored);
+	Info_AddChoice (DIA_Addon_Vatras_TellMe, "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј.", DIA_Addon_Vatras_TellMe_Unexplored);
 };
 func void DIA_Addon_Vatras_TellMe_Unexplored()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Unexplored_15_00"); //Расскажи мне об этом.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Unexplored_05_01"); //Если хочешь присоединиться к экспедиции, я могу передать с тобой письмо, которое ты отнесешь Сатурасу.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Unexplored_05_02"); //Ты можешь пойти с ними только в том случае, если ты будешь одним из нас.
-	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Unexplored_15_03"); //Безусловно.
-	B_LogEntry (TOPIC_Addon_KDW,"Прежде чем допустить меня до участия в экспедиции, Ватрас требует, чтобы я присоединился к Кольцу Воды."); 
+	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Unexplored_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Unexplored_05_01"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌРєСЃРїРµРґРёС†РёРё, СЏ РјРѕРіСѓ РїРµСЂРµРґР°С‚СЊ СЃ С‚РѕР±РѕР№ РїРёСЃСЊРјРѕ, РєРѕС‚РѕСЂРѕРµ С‚С‹ РѕС‚РЅРµСЃРµС€СЊ РЎР°С‚СѓСЂР°СЃСѓ.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Unexplored_05_02"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕР№С‚Рё СЃ РЅРёРјРё С‚РѕР»СЊРєРѕ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РѕРґРЅРёРј РёР· РЅР°СЃ.
+	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Unexplored_15_03"); //Р‘РµР·СѓСЃР»РѕРІРЅРѕ.
+	B_LogEntry (TOPIC_Addon_KDW,"РџСЂРµР¶РґРµ С‡РµРј РґРѕРїСѓСЃС‚РёС‚СЊ РјРµРЅСЏ РґРѕ СѓС‡Р°СЃС‚РёСЏ РІ СЌРєСЃРїРµРґРёС†РёРё, Р’Р°С‚СЂР°СЃ С‚СЂРµР±СѓРµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹."); 
 };
 func void DIA_Addon_Vatras_TellMe_WerNoch()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_WerNoch_15_00"); //Кто является членом Кольца Воды?
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_WerNoch_05_01"); //Пока ты не вступишь в наше братство, я не могу сообщать тебе подробности.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_WerNoch_05_02"); //Но ты наверняка уже встречался с ними.
+	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_WerNoch_15_00"); //РљС‚Рѕ СЏРІР»СЏРµС‚СЃСЏ С‡Р»РµРЅРѕРј РљРѕР»СЊС†Р° Р’РѕРґС‹?
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_WerNoch_05_01"); //РџРѕРєР° С‚С‹ РЅРµ РІСЃС‚СѓРїРёС€СЊ РІ РЅР°С€Рµ Р±СЂР°С‚СЃС‚РІРѕ, СЏ РЅРµ РјРѕРіСѓ СЃРѕРѕР±С‰Р°С‚СЊ С‚РµР±Рµ РїРѕРґСЂРѕР±РЅРѕСЃС‚Рё.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_WerNoch_05_02"); //РќРѕ С‚С‹ РЅР°РІРµСЂРЅСЏРєР° СѓР¶Рµ РІСЃС‚СЂРµС‡Р°Р»СЃСЏ СЃ РЅРёРјРё.
 };
 
 // *********************************************************
@@ -455,7 +455,7 @@ instance DIA_Addon_Vatras_WannaBeRanger		(C_INFO)
 	condition	= DIA_Addon_Vatras_WannaBeRanger_Condition;
 	information	= DIA_Addon_Vatras_WannaBeRanger_Info;
 
-	description	= "Я хочу присоединиться к братству Кольца Воды!";
+	description	= "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р±СЂР°С‚СЃС‚РІСѓ РљРѕР»СЊС†Р° Р’РѕРґС‹!";
 };
 func int DIA_Addon_Vatras_WannaBeRanger_Condition ()
 {
@@ -466,95 +466,95 @@ func int DIA_Addon_Vatras_WannaBeRanger_Condition ()
 };
 func void DIA_Addon_Vatras_WannaBeRanger_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_WannaBeRanger_15_00"); //Я хочу присоединиться к братству Кольца Воды!
+	AI_Output (other, self, "DIA_Addon_Vatras_WannaBeRanger_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р±СЂР°С‚СЃС‚РІСѓ РљРѕР»СЊС†Р° Р’РѕРґС‹!
 	
 	if (Npc_KnowsInfo (other, DIA_Addon_Cavalorn_Ring))
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_01"); //Правда? Значит ты уже выполнил первое требование.
-		AI_Output (other, self, "DIA_Addon_Vatras_WannaBeRanger_15_02"); //Что ты хочешь этим сказать?
-		AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_03"); //Должно быть, среди нас есть кто-то, кто доверяет тебе. В противном случае ты бы просто ничего не узнал.
+		AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_01"); //РџСЂР°РІРґР°? Р—РЅР°С‡РёС‚ С‚С‹ СѓР¶Рµ РІС‹РїРѕР»РЅРёР» РїРµСЂРІРѕРµ С‚СЂРµР±РѕРІР°РЅРёРµ.
+		AI_Output (other, self, "DIA_Addon_Vatras_WannaBeRanger_15_02"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЌС‚РёРј СЃРєР°Р·Р°С‚СЊ?
+		AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_03"); //Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, СЃСЂРµРґРё РЅР°СЃ РµСЃС‚СЊ РєС‚Рѕ-С‚Рѕ, РєС‚Рѕ РґРѕРІРµСЂСЏРµС‚ С‚РµР±Рµ. Р’ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ С‚С‹ Р±С‹ РїСЂРѕСЃС‚Рѕ РЅРёС‡РµРіРѕ РЅРµ СѓР·РЅР°Р».
 	};
 	
-	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_04"); //Но я совсем ничего не знаю про вас...
-	//AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_03"); //Ich will dich wohl segnen, Fremder, aber ich kenne dich nicht. Erzдhle mir was ьber dich.
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_04"); //Что ты хочешь знать?
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_05"); //Ну, ты можешь рассказать мне, откуда ты пришел и зачем ты пришел в этот город.
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_06"); //У меня важное сообщение для главы паладинов.
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_07"); //Что за сообщение?
+	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_04"); //РќРѕ СЏ СЃРѕРІСЃРµРј РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ РїСЂРѕ РІР°СЃ...
+	//AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_03"); //Ich will dich wohl segnen, Fremder, aber ich kenne dich nicht. ErzРґhle mir was СЊber dich.
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_04"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·РЅР°С‚СЊ?
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_05"); //РќСѓ, С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ, РѕС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР» Рё Р·Р°С‡РµРј С‚С‹ РїСЂРёС€РµР» РІ СЌС‚РѕС‚ РіРѕСЂРѕРґ.
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_06"); //РЈ РјРµРЅСЏ РІР°Р¶РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ РіР»Р°РІС‹ РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_07"); //Р§С‚Рѕ Р·Р° СЃРѕРѕР±С‰РµРЅРёРµ?
 		
 	Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Пришли драконы ...",DIA_Vatras_INFLUENCE_FIRST_TRUTH);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Скоро произойдут ужасные вещи!",DIA_Vatras_INFLUENCE_FIRST_LIE);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РџСЂРёС€Р»Рё РґСЂР°РєРѕРЅС‹ ...",DIA_Vatras_INFLUENCE_FIRST_TRUTH);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РЎРєРѕСЂРѕ РїСЂРѕРёР·РѕР№РґСѓС‚ СѓР¶Р°СЃРЅС‹Рµ РІРµС‰Рё!",DIA_Vatras_INFLUENCE_FIRST_LIE);
 };
 FUNC VOID DIA_Vatras_INFLUENCE_FIRST_TRUTH()
 {
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_FIRST_TRUTH_15_00"); //Пока мы разговариваем, собирается огромная армия, ведомая драконами. Эта армия намеревается завоевать нашу страну.
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_FIRST_TRUTH_15_00"); //РџРѕРєР° РјС‹ СЂР°Р·РіРѕРІР°СЂРёРІР°РµРј, СЃРѕР±РёСЂР°РµС‚СЃСЏ РѕРіСЂРѕРјРЅР°СЏ Р°СЂРјРёСЏ, РІРµРґРѕРјР°СЏ РґСЂР°РєРѕРЅР°РјРё. Р­С‚Р° Р°СЂРјРёСЏ РЅР°РјРµСЂРµРІР°РµС‚СЃСЏ Р·Р°РІРѕРµРІР°С‚СЊ РЅР°С€Сѓ СЃС‚СЂР°РЅСѓ.
 	
 	if (Vatras_First == TRUE)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_TRUTH_05_01"); //Если это действительно правда, баланс на земле будет нарушен. Кто сказал тебе это?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_TRUTH_05_01"); //Р•СЃР»Рё СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂР°РІРґР°, Р±Р°Р»Р°РЅСЃ РЅР° Р·РµРјР»Рµ Р±СѓРґРµС‚ РЅР°СЂСѓС€РµРЅ. РљС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_TRUTH_05_02"); //(задумчиво) Драконы? Ты говоришь о существах, которые до последнего времени упоминались только в легендах. Откуда ты знаешь это?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_TRUTH_05_02"); //(Р·Р°РґСѓРјС‡РёРІРѕ) Р”СЂР°РєРѕРЅС‹? РўС‹ РіРѕРІРѕСЂРёС€СЊ Рѕ СЃСѓС‰РµСЃС‚РІР°С…, РєРѕС‚РѕСЂС‹Рµ РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ РІСЂРµРјРµРЅРё СѓРїРѕРјРёРЅР°Р»РёСЃСЊ С‚РѕР»СЊРєРѕ РІ Р»РµРіРµРЅРґР°С…. РћС‚РєСѓРґР° С‚С‹ Р·РЅР°РµС€СЊ СЌС‚Рѕ?
 	};
 	Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Ох, я где-то слышал об этом...",DIA_Vatras_INFLUENCE_SECOND_LIE);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Мне сказал об этом маг Ксардас ...",DIA_Vatras_INFLUENCE_SECOND_TRUTH);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РћС…, СЏ РіРґРµ-С‚Рѕ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј...",DIA_Vatras_INFLUENCE_SECOND_LIE);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РњРЅРµ СЃРєР°Р·Р°Р» РѕР± СЌС‚РѕРј РјР°Рі РљСЃР°СЂРґР°СЃ ...",DIA_Vatras_INFLUENCE_SECOND_TRUTH);
 	
 	Vatras_First = TRUE;
 };
 FUNC VOID DIA_Vatras_INFLUENCE_FIRST_LIE()
 {
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_FIRST_LIE_15_00"); //Скоро произойдут ужасные вещи!
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_FIRST_LIE_15_00"); //РЎРєРѕСЂРѕ РїСЂРѕРёР·РѕР№РґСѓС‚ СѓР¶Р°СЃРЅС‹Рµ РІРµС‰Рё!
 	
 	if (Vatras_First == 2)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_LIE_05_01"); //(сердито) Ага. И кто сказал тебе это?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_LIE_05_01"); //(СЃРµСЂРґРёС‚Рѕ) РђРіР°. Р РєС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ?
 	}
 	else 
  	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_LIE_05_02"); //Ужасные вещи, хм... откуда ты знаешь это?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_LIE_05_02"); //РЈР¶Р°СЃРЅС‹Рµ РІРµС‰Рё, С…Рј... РѕС‚РєСѓРґР° С‚С‹ Р·РЅР°РµС€СЊ СЌС‚Рѕ?
 	};
 	Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Ох, я где-то слышал об этом...",DIA_Vatras_INFLUENCE_SECOND_LIE);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Мне сказал об этом маг Ксардас ...",DIA_Vatras_INFLUENCE_SECOND_TRUTH);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РћС…, СЏ РіРґРµ-С‚Рѕ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј...",DIA_Vatras_INFLUENCE_SECOND_LIE);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РњРЅРµ СЃРєР°Р·Р°Р» РѕР± СЌС‚РѕРј РјР°Рі РљСЃР°СЂРґР°СЃ ...",DIA_Vatras_INFLUENCE_SECOND_TRUTH);
 	
 	Vatras_First = 2;
 };
 FUNC VOID DIA_Vatras_INFLUENCE_SECOND_TRUTH()
 {
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_SECOND_TRUTH_15_00"); //Мне сказал об этом маг Ксардас. Он послал меня предупредить паладинов.
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_SECOND_TRUTH_15_00"); //РњРЅРµ СЃРєР°Р·Р°Р» РѕР± СЌС‚РѕРј РјР°Рі РљСЃР°СЂРґР°СЃ. РћРЅ РїРѕСЃР»Р°Р» РјРµРЅСЏ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ РїР°Р»Р°РґРёРЅРѕРІ.
 	
 	if (Vatras_Second == TRUE)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_TRUTH_05_01"); //Я знаю этого человека как мудрого и могущественного мастера магии. А ты откуда пришел?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_TRUTH_05_01"); //РЇ Р·РЅР°СЋ СЌС‚РѕРіРѕ С‡РµР»РѕРІРµРєР° РєР°Рє РјСѓРґСЂРѕРіРѕ Рё РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅРѕРіРѕ РјР°СЃС‚РµСЂР° РјР°РіРёРё. Рђ С‚С‹ РѕС‚РєСѓРґР° РїСЂРёС€РµР»?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_TRUTH_05_02"); //Некромант... Так он жив... (задумчиво) И он послал тебя? А кто же ты тогда такой?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_TRUTH_05_02"); //РќРµРєСЂРѕРјР°РЅС‚... РўР°Рє РѕРЅ Р¶РёРІ... (Р·Р°РґСѓРјС‡РёРІРѕ) Р РѕРЅ РїРѕСЃР»Р°Р» С‚РµР±СЏ? Рђ РєС‚Рѕ Р¶Рµ С‚С‹ С‚РѕРіРґР° С‚Р°РєРѕР№?
 	};
 	Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Я искатель приключений с юга ...",DIA_Vatras_INFLUENCE_THIRD_LIE);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Я бывший заключенный ...",DIA_Vatras_INFLUENCE_THIRD_TRUTH);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РЇ РёСЃРєР°С‚РµР»СЊ РїСЂРёРєР»СЋС‡РµРЅРёР№ СЃ СЋРіР° ...",DIA_Vatras_INFLUENCE_THIRD_LIE);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РЇ Р±С‹РІС€РёР№ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№ ...",DIA_Vatras_INFLUENCE_THIRD_TRUTH);
 	
 	Vatras_Second = TRUE;
 };
 FUNC VOID DIA_Vatras_INFLUENCE_SECOND_LIE()
 {
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_SECOND_LIE_15_00"); //Ох, я где-то слышал об этом...
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_SECOND_LIE_15_00"); //РћС…, СЏ РіРґРµ-С‚Рѕ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј...
 	
 	if (Vatras_Second == 2)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_LIE_05_01"); //(раздраженно) Ты хотя бы помнишь, откуда ты пришел?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_LIE_05_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) РўС‹ С…РѕС‚СЏ Р±С‹ РїРѕРјРЅРёС€СЊ, РѕС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР»?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_LIE_05_02"); //Ага. И поэтому ты поделал весь этот долгий путь. Кто ты такой вообще?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_LIE_05_02"); //РђРіР°. Р РїРѕСЌС‚РѕРјСѓ С‚С‹ РїРѕРґРµР»Р°Р» РІРµСЃСЊ СЌС‚РѕС‚ РґРѕР»РіРёР№ РїСѓС‚СЊ. РљС‚Рѕ С‚С‹ С‚Р°РєРѕР№ РІРѕРѕР±С‰Рµ?
 	};
 	Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Я искатель приключений с юга...",DIA_Vatras_INFLUENCE_THIRD_LIE);
-	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Я бывший заключенный ...",DIA_Vatras_INFLUENCE_THIRD_TRUTH);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РЇ РёСЃРєР°С‚РµР»СЊ РїСЂРёРєР»СЋС‡РµРЅРёР№ СЃ СЋРіР°...",DIA_Vatras_INFLUENCE_THIRD_LIE);
+	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РЇ Р±С‹РІС€РёР№ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№ ...",DIA_Vatras_INFLUENCE_THIRD_TRUTH);
 	
 	Vatras_Second = 2;
 };
@@ -563,62 +563,62 @@ func VOID B_Vatras_INFLUENCE_REPEAT()
 	//RAUS wegen ADDON
 	//AI_Output (other, self, "DIA_Vatras_INFLUENCE_REPEAT_15_00"); //Und, gibst du mir jetzt deinen Segen?	
 	
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_01"); //Хорошо, давай подытожим:
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_01"); //РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РїРѕРґС‹С‚РѕР¶РёРј:
 	
 	if (Vatras_Third == TRUE)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_02"); //Ты бывший заключенный...
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_02"); //РўС‹ Р±С‹РІС€РёР№ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_03"); //Ты искатель приключений с юга...
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_03"); //РўС‹ РёСЃРєР°С‚РµР»СЊ РїСЂРёРєР»СЋС‡РµРЅРёР№ СЃ СЋРіР°...
 	};
 	if (Vatras_Second  == TRUE)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_04"); //...которому сказал некромант Ксардас...
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_04"); //...РєРѕС‚РѕСЂРѕРјСѓ СЃРєР°Р·Р°Р» РЅРµРєСЂРѕРјР°РЅС‚ РљСЃР°СЂРґР°СЃ...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_05"); //...который слышал слухи...
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_05"); //...РєРѕС‚РѕСЂС‹Р№ СЃР»С‹С€Р°Р» СЃР»СѓС…Рё...
 	};
 	if (Vatras_First  == TRUE)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_06"); //...о том, что пришли драконы, чтобы завоевать страну.
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_06"); //...Рѕ С‚РѕРј, С‡С‚Рѕ РїСЂРёС€Р»Рё РґСЂР°РєРѕРЅС‹, С‡С‚РѕР±С‹ Р·Р°РІРѕРµРІР°С‚СЊ СЃС‚СЂР°РЅСѓ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_07"); //...что скоро произойдут ужасные вещи.
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_07"); //...С‡С‚Рѕ СЃРєРѕСЂРѕ РїСЂРѕРёР·РѕР№РґСѓС‚ СѓР¶Р°СЃРЅС‹Рµ РІРµС‰Рё.
 	};
 		
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_08"); //И ты пришел, чтобы сообщить это паладинам...
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_08"); //Р С‚С‹ РїСЂРёС€РµР», С‡С‚РѕР±С‹ СЃРѕРѕР±С‰РёС‚СЊ СЌС‚Рѕ РїР°Р»Р°РґРёРЅР°Рј...
 	if (Vatras_First   == TRUE)
 	&& (Vatras_Second  == TRUE)
 	&& (Vatras_Third   == TRUE)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_09"); //Это все звучит довольно фантастически, но я не думаю, что ты солгал мне.
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_10"); //Поэтому я вынужден предположить, что твои мотивы благородны.
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_09"); //Р­С‚Рѕ РІСЃРµ Р·РІСѓС‡РёС‚ РґРѕРІРѕР»СЊРЅРѕ С„Р°РЅС‚Р°СЃС‚РёС‡РµСЃРєРё, РЅРѕ СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ С‚С‹ СЃРѕР»РіР°Р» РјРЅРµ.
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_10"); //РџРѕСЌС‚РѕРјСѓ СЏ РІС‹РЅСѓР¶РґРµРЅ РїСЂРµРґРїРѕР»РѕР¶РёС‚СЊ, С‡С‚Рѕ С‚РІРѕРё РјРѕС‚РёРІС‹ Р±Р»Р°РіРѕСЂРѕРґРЅС‹.
 		
-		AI_Output (self, other, "DIA_ADDON_Vatras_INFLUENCE_REPEAT_05_11"); //Я хочу дать тебе шанс присоединиться к Кольцу Воды.
+		AI_Output (self, other, "DIA_ADDON_Vatras_INFLUENCE_REPEAT_05_11"); //РЇ С…РѕС‡Сѓ РґР°С‚СЊ С‚РµР±Рµ С€Р°РЅСЃ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹.
 		
 		Info_ClearChoices  (DIA_Addon_Vatras_WannaBeRanger);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Vatras_Add_05_00"); //Мне кажется, что ты не все говоришь мне.
-		AI_Output (self, other, "DIA_Vatras_Add_05_01"); //Если ты опасаешься, что я расскажу кому-нибудь о том, что ты поведаешь мне, то позволь мне уверить тебя.
-		AI_Output (self, other, "DIA_Vatras_Add_05_02"); //Я поклялся хранить все секреты, которые доверяют мне, как свои собственные.
+		AI_Output (self, other, "DIA_Vatras_Add_05_00"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ С‚С‹ РЅРµ РІСЃРµ РіРѕРІРѕСЂРёС€СЊ РјРЅРµ.
+		AI_Output (self, other, "DIA_Vatras_Add_05_01"); //Р•СЃР»Рё С‚С‹ РѕРїР°СЃР°РµС€СЊСЃСЏ, С‡С‚Рѕ СЏ СЂР°СЃСЃРєР°Р¶Сѓ РєРѕРјСѓ-РЅРёР±СѓРґСЊ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ РїРѕРІРµРґР°РµС€СЊ РјРЅРµ, С‚Рѕ РїРѕР·РІРѕР»СЊ РјРЅРµ СѓРІРµСЂРёС‚СЊ С‚РµР±СЏ.
+		AI_Output (self, other, "DIA_Vatras_Add_05_02"); //РЇ РїРѕРєР»СЏР»СЃСЏ С…СЂР°РЅРёС‚СЊ РІСЃРµ СЃРµРєСЂРµС‚С‹, РєРѕС‚РѕСЂС‹Рµ РґРѕРІРµСЂСЏСЋС‚ РјРЅРµ, РєР°Рє СЃРІРѕРё СЃРѕР±СЃС‚РІРµРЅРЅС‹Рµ.
 		if (Wld_IsTime(05,05,20,10))
 		{
-			AI_Output (other, self, "DIA_Vatras_Add_15_03"); //А что насчет людей, стоящих здесь?
-			AI_Output (self, other, "DIA_Vatras_Add_05_04"); //Они понимают только половину того, что я ПРОПОВЕДУЮ им. Так что не беспокойся.
+			AI_Output (other, self, "DIA_Vatras_Add_15_03"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ Р»СЋРґРµР№, СЃС‚РѕСЏС‰РёС… Р·РґРµСЃСЊ?
+			AI_Output (self, other, "DIA_Vatras_Add_05_04"); //РћРЅРё РїРѕРЅРёРјР°СЋС‚ С‚РѕР»СЊРєРѕ РїРѕР»РѕРІРёРЅСѓ С‚РѕРіРѕ, С‡С‚Рѕ СЏ РџР РћРџРћР’Р•Р”РЈР® РёРј. РўР°Рє С‡С‚Рѕ РЅРµ Р±РµСЃРїРѕРєРѕР№СЃСЏ.
 		};
-		AI_Output (self, other, "DIA_Vatras_Add_05_05"); //Начнем с начала. Что это за сообщение?
+		AI_Output (self, other, "DIA_Vatras_Add_05_05"); //РќР°С‡РЅРµРј СЃ РЅР°С‡Р°Р»Р°. Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃРѕРѕР±С‰РµРЅРёРµ?
 		
 		//ADDON - SC kann nicht mehr versagen!
 		//Vatras_Chance = TRUE; 
 		Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
-		Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Пришли драконы ...",DIA_Vatras_INFLUENCE_FIRST_TRUTH);
-		Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Скоро произойдут ужасные вещи!",DIA_Vatras_INFLUENCE_FIRST_LIE);
+		Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РџСЂРёС€Р»Рё РґСЂР°РєРѕРЅС‹ ...",DIA_Vatras_INFLUENCE_FIRST_TRUTH);
+		Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"РЎРєРѕСЂРѕ РїСЂРѕРёР·РѕР№РґСѓС‚ СѓР¶Р°СЃРЅС‹Рµ РІРµС‰Рё!",DIA_Vatras_INFLUENCE_FIRST_LIE);
 	};
 	
 	//else-Fall raus - Addon
@@ -626,14 +626,14 @@ func VOID B_Vatras_INFLUENCE_REPEAT()
 };
 FUNC VOID DIA_Vatras_INFLUENCE_THIRD_TRUTH()
 {
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_THIRD_TRUTH_15_00"); //Я бывший заключенный колонии Хориниса.
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_THIRD_TRUTH_15_00"); //РЇ Р±С‹РІС€РёР№ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№ РєРѕР»РѕРЅРёРё РҐРѕСЂРёРЅРёСЃР°.
 	Vatras_Third = TRUE;
 	
 	B_Vatras_INFLUENCE_REPEAT();
 };
 FUNC VOID DIA_Vatras_INFLUENCE_THIRD_LIE()
 {
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_THIRD_LIE_15_00"); //Я искатель приключений с юга...
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_THIRD_LIE_15_00"); //РЇ РёСЃРєР°С‚РµР»СЊ РїСЂРёРєР»СЋС‡РµРЅРёР№ СЃ СЋРіР°...
 	Vatras_Third = FALSE;
 		
 	B_Vatras_INFLUENCE_REPEAT();
@@ -642,7 +642,7 @@ FUNC VOID DIA_Vatras_INFLUENCE_THIRD_LIE()
 // 			  			How to JOIN
 // ************************************************************
 // ------------------------------------------------------------
-// Was muЯ ich tun?
+// Was muРЇ ich tun?
 // ------------------------------------------------------------
 instance DIA_Addon_Vatras_HowToJoin	(C_INFO)
 {
@@ -651,7 +651,7 @@ instance DIA_Addon_Vatras_HowToJoin	(C_INFO)
 	condition	= DIA_Addon_Vatras_HowToJoin_Condition;
 	information	= DIA_Addon_Vatras_HowToJoin_Info;
 
-	description	= "Что я должен делать?";
+	description	= "Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ?";
 };
 func int DIA_Addon_Vatras_HowToJoin_Condition ()
 {
@@ -662,46 +662,46 @@ func int DIA_Addon_Vatras_HowToJoin_Condition ()
 };
 func void DIA_Addon_Vatras_HowToJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_15_00"); //Что я должен делать?
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_01"); //Ты должен понимать, какую ответственность берешь на себя, вступая в наше общество.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_02"); //Мы не принимаем кого попало.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_03"); //Если хочешь присоединиться к обществу, ты должен доказать, что готов действовать как один из нас.
-	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_15_04"); //Что это значит?
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_05"); //Перед тем как новый воин вступит в наши ряды, он должен совершить во благо Кольца великое деяние.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_06"); //И только после этого мы решаем, можно ли доверить ему великое дело по сохранению баланса сил на этом острове.
+	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_15_00"); //Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_01"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРЅРёРјР°С‚СЊ, РєР°РєСѓСЋ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚СЊ Р±РµСЂРµС€СЊ РЅР° СЃРµР±СЏ, РІСЃС‚СѓРїР°СЏ РІ РЅР°С€Рµ РѕР±С‰РµСЃС‚РІРѕ.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_02"); //РњС‹ РЅРµ РїСЂРёРЅРёРјР°РµРј РєРѕРіРѕ РїРѕРїР°Р»Рѕ.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_03"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РѕР±С‰РµСЃС‚РІСѓ, С‚С‹ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РіРѕС‚РѕРІ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РєР°Рє РѕРґРёРЅ РёР· РЅР°СЃ.
+	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_15_04"); //Р§С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚?
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_05"); //РџРµСЂРµРґ С‚РµРј РєР°Рє РЅРѕРІС‹Р№ РІРѕРёРЅ РІСЃС‚СѓРїРёС‚ РІ РЅР°С€Рё СЂСЏРґС‹, РѕРЅ РґРѕР»Р¶РµРЅ СЃРѕРІРµСЂС€РёС‚СЊ РІРѕ Р±Р»Р°РіРѕ РљРѕР»СЊС†Р° РІРµР»РёРєРѕРµ РґРµСЏРЅРёРµ.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_06"); //Р С‚РѕР»СЊРєРѕ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РјС‹ СЂРµС€Р°РµРј, РјРѕР¶РЅРѕ Р»Рё РґРѕРІРµСЂРёС‚СЊ РµРјСѓ РІРµР»РёРєРѕРµ РґРµР»Рѕ РїРѕ СЃРѕС…СЂР°РЅРµРЅРёСЋ Р±Р°Р»Р°РЅСЃР° СЃРёР» РЅР° СЌС‚РѕРј РѕСЃС‚СЂРѕРІРµ.
 	
 	Info_ClearChoices	(DIA_Addon_Vatras_HowToJoin);	
-	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "И что же мне нужно сделать, чтобы убедить тебя?", DIA_Addon_Vatras_HowToJoin_WhatsGreat);
-	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "Я освободил многих людей. Барьера больше нет.", DIA_Addon_Vatras_HowToJoin_FreedMen );
-	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "Я уничтожил Спящего. Мне кажется, это достаточно великое деяние.", DIA_Addon_Vatras_HowToJoin_Sleeper );
+	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "Р С‡С‚Рѕ Р¶Рµ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊ С‚РµР±СЏ?", DIA_Addon_Vatras_HowToJoin_WhatsGreat);
+	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "РЇ РѕСЃРІРѕР±РѕРґРёР» РјРЅРѕРіРёС… Р»СЋРґРµР№. Р‘Р°СЂСЊРµСЂР° Р±РѕР»СЊС€Рµ РЅРµС‚.", DIA_Addon_Vatras_HowToJoin_FreedMen );
+	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "РЇ СѓРЅРёС‡С‚РѕР¶РёР» РЎРїСЏС‰РµРіРѕ. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЌС‚Рѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РІРµР»РёРєРѕРµ РґРµСЏРЅРёРµ.", DIA_Addon_Vatras_HowToJoin_Sleeper );
 };
 func void DIA_Addon_Vatras_HowToJoin_Sleeper ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_Sleeper_15_00"); //Я уничтожил Спящего. Мне кажется, это достаточно великое деяние.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_01"); //В последнее время я слышал много невероятных историй.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_02"); //Включая историю про уничтожение зверя, которого называют Спящим.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_03"); //Я не слышал, чтобы это было совершено одним человеком, хотя в твоих глазах нет лжи.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_04"); //Меня это немного смущает, но мои чувства иногда играют со мной злые шутки.
+	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_Sleeper_15_00"); //РЇ СѓРЅРёС‡С‚РѕР¶РёР» РЎРїСЏС‰РµРіРѕ. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЌС‚Рѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РІРµР»РёРєРѕРµ РґРµСЏРЅРёРµ.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_01"); //Р’ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ СЏ СЃР»С‹С€Р°Р» РјРЅРѕРіРѕ РЅРµРІРµСЂРѕСЏС‚РЅС‹С… РёСЃС‚РѕСЂРёР№.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_02"); //Р’РєР»СЋС‡Р°СЏ РёСЃС‚РѕСЂРёСЋ РїСЂРѕ СѓРЅРёС‡С‚РѕР¶РµРЅРёРµ Р·РІРµСЂСЏ, РєРѕС‚РѕСЂРѕРіРѕ РЅР°Р·С‹РІР°СЋС‚ РЎРїСЏС‰РёРј.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_03"); //РЇ РЅРµ СЃР»С‹С€Р°Р», С‡С‚РѕР±С‹ СЌС‚Рѕ Р±С‹Р»Рѕ СЃРѕРІРµСЂС€РµРЅРѕ РѕРґРЅРёРј С‡РµР»РѕРІРµРєРѕРј, С…РѕС‚СЏ РІ С‚РІРѕРёС… РіР»Р°Р·Р°С… РЅРµС‚ Р»Р¶Рё.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_04"); //РњРµРЅСЏ СЌС‚Рѕ РЅРµРјРЅРѕРіРѕ СЃРјСѓС‰Р°РµС‚, РЅРѕ РјРѕРё С‡СѓРІСЃС‚РІР° РёРЅРѕРіРґР° РёРіСЂР°СЋС‚ СЃРѕ РјРЅРѕР№ Р·Р»С‹Рµ С€СѓС‚РєРё.
 };
 func void DIA_Addon_Vatras_HowToJoin_FreedMen ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_15_00"); //Я освободил многих людей. Барьера больше нет.
-	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_01"); //Даже если это ДЕЙСТВИТЕЛЬНО твоя работа...
-	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_02"); //Великое событие в Долине Рудников стало причиной освобождения не только магов воды, но и многих заключенных.
-	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_03"); //Преступники со всей страны рыщут в окрестностях Хориниса, угрожая местному населению.
-	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_04"); //Бандиты уже захватили огромные территории земель за пределами города. Теперь практически невозможно выйти за пределы города и вернуться обратно целым и невредимым.
+	AI_Output (other, self, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_15_00"); //РЇ РѕСЃРІРѕР±РѕРґРёР» РјРЅРѕРіРёС… Р»СЋРґРµР№. Р‘Р°СЂСЊРµСЂР° Р±РѕР»СЊС€Рµ РЅРµС‚.
+	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_01"); //Р”Р°Р¶Рµ РµСЃР»Рё СЌС‚Рѕ Р”Р•Р™РЎРўР’РРўР•Р›Р¬РќРћ С‚РІРѕСЏ СЂР°Р±РѕС‚Р°...
+	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_02"); //Р’РµР»РёРєРѕРµ СЃРѕР±С‹С‚РёРµ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ СЃС‚Р°Р»Рѕ РїСЂРёС‡РёРЅРѕР№ РѕСЃРІРѕР±РѕР¶РґРµРЅРёСЏ РЅРµ С‚РѕР»СЊРєРѕ РјР°РіРѕРІ РІРѕРґС‹, РЅРѕ Рё РјРЅРѕРіРёС… Р·Р°РєР»СЋС‡РµРЅРЅС‹С….
+	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_03"); //РџСЂРµСЃС‚СѓРїРЅРёРєРё СЃРѕ РІСЃРµР№ СЃС‚СЂР°РЅС‹ СЂС‹С‰СѓС‚ РІ РѕРєСЂРµСЃС‚РЅРѕСЃС‚СЏС… РҐРѕСЂРёРЅРёСЃР°, СѓРіСЂРѕР¶Р°СЏ РјРµСЃС‚РЅРѕРјСѓ РЅР°СЃРµР»РµРЅРёСЋ.
+	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_04"); //Р‘Р°РЅРґРёС‚С‹ СѓР¶Рµ Р·Р°С…РІР°С‚РёР»Рё РѕРіСЂРѕРјРЅС‹Рµ С‚РµСЂСЂРёС‚РѕСЂРёРё Р·РµРјРµР»СЊ Р·Р° РїСЂРµРґРµР»Р°РјРё РіРѕСЂРѕРґР°. РўРµРїРµСЂСЊ РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµРІРѕР·РјРѕР¶РЅРѕ РІС‹Р№С‚Рё Р·Р° РїСЂРµРґРµР»С‹ РіРѕСЂРѕРґР° Рё РІРµСЂРЅСѓС‚СЊСЃСЏ РѕР±СЂР°С‚РЅРѕ С†РµР»С‹Рј Рё РЅРµРІСЂРµРґРёРјС‹Рј.
 };
 func void DIA_Addon_Vatras_HowToJoin_WhatsGreat()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_15_00"); //И что же мне нужно сделать, чтобы убедить тебя?
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_01"); //Хоринис столкнулся с великой загадкой.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_02"); //Число людей, пропавших без вести, увеличивается с каждой минутой.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_03"); //Если сумеешь объяснить мне причину их исчезновения, то займешь достойное место среди нас.
+	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_15_00"); //Р С‡С‚Рѕ Р¶Рµ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊ С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_01"); //РҐРѕСЂРёРЅРёСЃ СЃС‚РѕР»РєРЅСѓР»СЃСЏ СЃ РІРµР»РёРєРѕР№ Р·Р°РіР°РґРєРѕР№.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_02"); //Р§РёСЃР»Рѕ Р»СЋРґРµР№, РїСЂРѕРїР°РІС€РёС… Р±РµР· РІРµСЃС‚Рё, СѓРІРµР»РёС‡РёРІР°РµС‚СЃСЏ СЃ РєР°Р¶РґРѕР№ РјРёРЅСѓС‚РѕР№.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_03"); //Р•СЃР»Рё СЃСѓРјРµРµС€СЊ РѕР±СЉСЏСЃРЅРёС‚СЊ РјРЅРµ РїСЂРёС‡РёРЅСѓ РёС… РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏ, С‚Рѕ Р·Р°Р№РјРµС€СЊ РґРѕСЃС‚РѕР№РЅРѕРµ РјРµСЃС‚Рѕ СЃСЂРµРґРё РЅР°СЃ.
 	
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
 	B_LogEntry (TOPIC_Addon_RingOfWater, LogText_Addon_KDWRight); 
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Ватрас примет меня в Кольцо Воды только в том случае, если я найду пропавших людей."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Р’Р°С‚СЂР°СЃ РїСЂРёРјРµС‚ РјРµРЅСЏ РІ РљРѕР»СЊС†Рѕ Р’РѕРґС‹ С‚РѕР»СЊРєРѕ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РµСЃР»Рё СЏ РЅР°Р№РґСѓ РїСЂРѕРїР°РІС€РёС… Р»СЋРґРµР№."); 
 
 	if (SC_HearedAboutMissingPeople == FALSE)
 	{
@@ -713,13 +713,13 @@ func void DIA_Addon_Vatras_HowToJoin_WhatsGreat()
 	MIS_Addon_Vatras_WhereAreMissingPeople = LOG_RUNNING;
 	SC_HearedAboutMissingPeople = TRUE;
 
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_04"); //Однако...
-	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_15_05"); //Что еще?
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_06"); //...сначала ты должен доставить сообщение паладинам.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_07"); //Это дело первостепенной важности!
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_08"); //Поговори с лордом Хагеном.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_04"); //РћРґРЅР°РєРѕ...
+	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_15_05"); //Р§С‚Рѕ РµС‰Рµ?
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_06"); //...СЃРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ РґРѕСЃС‚Р°РІРёС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ РїР°Р»Р°РґРёРЅР°Рј.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_07"); //Р­С‚Рѕ РґРµР»Рѕ РїРµСЂРІРѕСЃС‚РµРїРµРЅРЅРѕР№ РІР°Р¶РЅРѕСЃС‚Рё!
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_08"); //РџРѕРіРѕРІРѕСЂРё СЃ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј.
 	
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Ватрас хочет, чтобы я передал лорду Хагену важное сообщение."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Р’Р°С‚СЂР°СЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРµСЂРµРґР°Р» Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ РІР°Р¶РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ."); 
 
 	Info_ClearChoices	(DIA_Addon_Vatras_HowToJoin);	
 };
@@ -733,7 +733,7 @@ instance DIA_Addon_Vatras_GuildBypass (C_INFO)
 	condition	= DIA_Addon_Vatras_GuildBypass_Condition;
 	information	= DIA_Addon_Vatras_GuildBypass_Info;
 
-	description	= "Но лорд Хаген не станет меня принимать!";
+	description	= "РќРѕ Р»РѕСЂРґ РҐР°РіРµРЅ РЅРµ СЃС‚Р°РЅРµС‚ РјРµРЅСЏ РїСЂРёРЅРёРјР°С‚СЊ!";
 };
 func int DIA_Addon_Vatras_GuildBypass_Condition ()
 {
@@ -745,38 +745,38 @@ func int DIA_Addon_Vatras_GuildBypass_Condition ()
 };
 func void DIA_Addon_Vatras_GuildBypass_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_15_00"); //Но лорд Хаген не станет меня принимать!
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_01"); //Нет, примет, можешь не сомневаться. При условии, что сначала ты станешь членом влиятельного общества.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_02"); //У Кольца свои связи.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_03"); //Мы поможем тебе передать сообщение как можно скорее.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_04"); //Ты должен поговорить с Ларесом, ему я доверяю. Он поможет тебе.
+	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_15_00"); //РќРѕ Р»РѕСЂРґ РҐР°РіРµРЅ РЅРµ СЃС‚Р°РЅРµС‚ РјРµРЅСЏ РїСЂРёРЅРёРјР°С‚СЊ!
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_01"); //РќРµС‚, РїСЂРёРјРµС‚, РјРѕР¶РµС€СЊ РЅРµ СЃРѕРјРЅРµРІР°С‚СЊСЃСЏ. РџСЂРё СѓСЃР»РѕРІРёРё, С‡С‚Рѕ СЃРЅР°С‡Р°Р»Р° С‚С‹ СЃС‚Р°РЅРµС€СЊ С‡Р»РµРЅРѕРј РІР»РёСЏС‚РµР»СЊРЅРѕРіРѕ РѕР±С‰РµСЃС‚РІР°.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_02"); //РЈ РљРѕР»СЊС†Р° СЃРІРѕРё СЃРІСЏР·Рё.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_03"); //РњС‹ РїРѕРјРѕР¶РµРј С‚РµР±Рµ РїРµСЂРµРґР°С‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ РєР°Рє РјРѕР¶РЅРѕ СЃРєРѕСЂРµРµ.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_04"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р›Р°СЂРµСЃРѕРј, РµРјСѓ СЏ РґРѕРІРµСЂСЏСЋ. РћРЅ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ.
 
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Чтобы встретиться с лордом Хагеном, я должен вступить в одно из влиятельных сообществ Хориниса."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Р§С‚РѕР±С‹ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј, СЏ РґРѕР»Р¶РµРЅ РІСЃС‚СѓРїРёС‚СЊ РІ РѕРґРЅРѕ РёР· РІР»РёСЏС‚РµР»СЊРЅС‹С… СЃРѕРѕР±С‰РµСЃС‚РІ РҐРѕСЂРёРЅРёСЃР°."); 
 	
 
 	Info_ClearChoices (DIA_Addon_Vatras_GuildBypass);
-	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "Так и сделаем.", DIA_Addon_Vatras_GuildBypass_BACK );
-	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "В какое сообщество я должен вступить?", DIA_Addon_Vatras_GuildBypass_WhichGuild);
+	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "РўР°Рє Рё СЃРґРµР»Р°РµРј.", DIA_Addon_Vatras_GuildBypass_BACK );
+	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "Р’ РєР°РєРѕРµ СЃРѕРѕР±С‰РµСЃС‚РІРѕ СЏ РґРѕР»Р¶РµРЅ РІСЃС‚СѓРїРёС‚СЊ?", DIA_Addon_Vatras_GuildBypass_WhichGuild);
 };
 func void DIA_Addon_Vatras_GuildBypass_BACK()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_BACK_15_00"); //Так и сделаем.
+	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_BACK_15_00"); //РўР°Рє Рё СЃРґРµР»Р°РµРј.
 	Vatras_GehZuLares = TRUE;
 	
 	Info_ClearChoices (DIA_Addon_Vatras_GuildBypass);
 };
 func void DIA_Addon_Vatras_GuildBypass_WhichGuild()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_WhichGuild_15_00"); //В какое сообщество я должен вступить?
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_01"); //Есть только три сообщества, которые обладают достаточной властью.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_02"); //А именно: городское ополчение, монастырь магов огня и отряд наемников на ферме землевладельца.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_03"); //Выбор за тобой, сын мой.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_04"); //Ларес поможет тебе принять это непростое решение. Поговори с ним.
+	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_WhichGuild_15_00"); //Р’ РєР°РєРѕРµ СЃРѕРѕР±С‰РµСЃС‚РІРѕ СЏ РґРѕР»Р¶РµРЅ РІСЃС‚СѓРїРёС‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_01"); //Р•СЃС‚СЊ С‚РѕР»СЊРєРѕ С‚СЂРё СЃРѕРѕР±С‰РµСЃС‚РІР°, РєРѕС‚РѕСЂС‹Рµ РѕР±Р»Р°РґР°СЋС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕР№ РІР»Р°СЃС‚СЊСЋ.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_02"); //Рђ РёРјРµРЅРЅРѕ: РіРѕСЂРѕРґСЃРєРѕРµ РѕРїРѕР»С‡РµРЅРёРµ, РјРѕРЅР°СЃС‚С‹СЂСЊ РјР°РіРѕРІ РѕРіРЅСЏ Рё РѕС‚СЂСЏРґ РЅР°РµРјРЅРёРєРѕРІ РЅР° С„РµСЂРјРµ Р·РµРјР»РµРІР»Р°РґРµР»СЊС†Р°.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_03"); //Р’С‹Р±РѕСЂ Р·Р° С‚РѕР±РѕР№, СЃС‹РЅ РјРѕР№.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_04"); //Р›Р°СЂРµСЃ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РїСЂРёРЅСЏС‚СЊ СЌС‚Рѕ РЅРµРїСЂРѕСЃС‚РѕРµ СЂРµС€РµРЅРёРµ. РџРѕРіРѕРІРѕСЂРё СЃ РЅРёРј.
 
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Я могу присоединиться к ОПОЛЧЕНИЮ, МАГАМ ОГНЯ или НАЕМНИКАМ, живущим на ферме крупного землевладельца."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"РЇ РјРѕРіСѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РћРџРћР›Р§Р•РќРР®, РњРђР“РђРњ РћР“РќРЇ РёР»Рё РќРђР•РњРќРРљРђРњ, Р¶РёРІСѓС‰РёРј РЅР° С„РµСЂРјРµ РєСЂСѓРїРЅРѕРіРѕ Р·РµРјР»РµРІР»Р°РґРµР»СЊС†Р°."); 
 	
 	Info_ClearChoices (DIA_Addon_Vatras_GuildBypass);
-	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "Так и сделаем.", DIA_Addon_Vatras_GuildBypass_BACK );
+	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "РўР°Рє Рё СЃРґРµР»Р°РµРј.", DIA_Addon_Vatras_GuildBypass_BACK );
 };
 // ------------------------------------------------------------
 // Ranger NOW 	(MissingPeople ist hier schon Succes!!!)
@@ -789,7 +789,7 @@ instance DIA_Addon_Vatras_NowRanger		(C_INFO)
 	information	= DIA_Addon_Vatras_NowRanger_Info;
 	permanent	= TRUE;
 
-	description	= "Я готов вступить в общество Кольца Воды!";
+	description	= "РЇ РіРѕС‚РѕРІ РІСЃС‚СѓРїРёС‚СЊ РІ РѕР±С‰РµСЃС‚РІРѕ РљРѕР»СЊС†Р° Р’РѕРґС‹!";
 };
 func int DIA_Addon_Vatras_NowRanger_Condition ()
 {
@@ -802,38 +802,38 @@ func int DIA_Addon_Vatras_NowRanger_Condition ()
 };
 func void DIA_Addon_Vatras_NowRanger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_00"); //Я готов вступить в общество Кольца Воды!
-	AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_01"); //Значит, ты доставил сообщение лорду Хагену?
+	AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_00"); //РЇ РіРѕС‚РѕРІ РІСЃС‚СѓРїРёС‚СЊ РІ РѕР±С‰РµСЃС‚РІРѕ РљРѕР»СЊС†Р° Р’РѕРґС‹!
+	AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_01"); //Р—РЅР°С‡РёС‚, С‚С‹ РґРѕСЃС‚Р°РІРёР» СЃРѕРѕР±С‰РµРЅРёРµ Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ?
 	
-	if (Kapitel >= 2) //Pass-Schlьssel von Hagen
+	if (Kapitel >= 2) //Pass-SchlСЊssel von Hagen
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_02"); //Да.
+		AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_02"); //Р”Р°.
 		if (MIS_OLDWORLD != LOG_SUCCESS)
 		{
-			AI_Output (other, self, "DIA_Addon_Vatras_NowRanger_15_03"); //Но он отправил меня в Долину Рудников, чтобы я добыл ему доказательства своих слов!
-			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_04"); //ТЕБЕ решать, что делать дальше.
-			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_05"); //Мне было важно, чтобы он получил сообщение. Теперь ему решать, действовать самому или ждать твоих доказательств.
-			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_06"); //Если ты заинтересован...
+			AI_Output (other, self, "DIA_Addon_Vatras_NowRanger_15_03"); //РќРѕ РѕРЅ РѕС‚РїСЂР°РІРёР» РјРµРЅСЏ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ, С‡С‚РѕР±С‹ СЏ РґРѕР±С‹Р» РµРјСѓ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° СЃРІРѕРёС… СЃР»РѕРІ!
+			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_04"); //РўР•Р‘Р• СЂРµС€Р°С‚СЊ, С‡С‚Рѕ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ.
+			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_05"); //РњРЅРµ Р±С‹Р»Рѕ РІР°Р¶РЅРѕ, С‡С‚РѕР±С‹ РѕРЅ РїРѕР»СѓС‡РёР» СЃРѕРѕР±С‰РµРЅРёРµ. РўРµРїРµСЂСЊ РµРјСѓ СЂРµС€Р°С‚СЊ, РґРµР№СЃС‚РІРѕРІР°С‚СЊ СЃР°РјРѕРјСѓ РёР»Рё Р¶РґР°С‚СЊ С‚РІРѕРёС… РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІ.
+			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_06"); //Р•СЃР»Рё С‚С‹ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°РЅ...
 		}
 		else
 		{
-			AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_07"); //Хорошо.
+			AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_07"); //РҐРѕСЂРѕС€Рѕ.
 		};
 		
-		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_08"); //Ты доказал, что нужен нам. Ты станешь одним из нас и будешь служить на благо Аданоса.
-		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_09"); //Я вручаю тебе это кольцо. Пусть оно поможет тебе найти твоих собратьев и вместе с ними хранить баланс сил в этом мире.
+		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_08"); //РўС‹ РґРѕРєР°Р·Р°Р», С‡С‚Рѕ РЅСѓР¶РµРЅ РЅР°Рј. РўС‹ СЃС‚Р°РЅРµС€СЊ РѕРґРЅРёРј РёР· РЅР°СЃ Рё Р±СѓРґРµС€СЊ СЃР»СѓР¶РёС‚СЊ РЅР° Р±Р»Р°РіРѕ РђРґР°РЅРѕСЃР°.
+		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_09"); //РЇ РІСЂСѓС‡Р°СЋ С‚РµР±Рµ СЌС‚Рѕ РєРѕР»СЊС†Рѕ. РџСѓСЃС‚СЊ РѕРЅРѕ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РЅР°Р№С‚Рё С‚РІРѕРёС… СЃРѕР±СЂР°С‚СЊРµРІ Рё РІРјРµСЃС‚Рµ СЃ РЅРёРјРё С…СЂР°РЅРёС‚СЊ Р±Р°Р»Р°РЅСЃ СЃРёР» РІ СЌС‚РѕРј РјРёСЂРµ.
 		CreateInvItems (self, ItRi_Ranger_Addon, 1);									
 		B_GiveInvItems (self, other, ItRi_Ranger_Addon, 1);		
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_10"); //Ты первый маг огня среди нас. Я очень рад этому факту.
+			AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_10"); //РўС‹ РїРµСЂРІС‹Р№ РјР°Рі РѕРіРЅСЏ СЃСЂРµРґРё РЅР°СЃ. РЇ РѕС‡РµРЅСЊ СЂР°Рґ СЌС‚РѕРјСѓ С„Р°РєС‚Сѓ.
 		};
-		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_11"); //Да хранит тебя Аданос. А теперь иди и познакомься со своими братьями.
-		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_12"); //Они будут ждать тебя в таверне 'Мертвая Гарпия'. Братья готовы принять тебя в наше общество.
-		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_13"); //Ты наверняка знаешь эту таверну. Она находится по пути к ферме Онара.
-		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_14"); //Не забудь надеть кольцо, чтобы братья узнали тебя.
+		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_11"); //Р”Р° С…СЂР°РЅРёС‚ С‚РµР±СЏ РђРґР°РЅРѕСЃ. Рђ С‚РµРїРµСЂСЊ РёРґРё Рё РїРѕР·РЅР°РєРѕРјСЊСЃСЏ СЃРѕ СЃРІРѕРёРјРё Р±СЂР°С‚СЊСЏРјРё.
+		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_12"); //РћРЅРё Р±СѓРґСѓС‚ Р¶РґР°С‚СЊ С‚РµР±СЏ РІ С‚Р°РІРµСЂРЅРµ 'РњРµСЂС‚РІР°СЏ Р“Р°СЂРїРёСЏ'. Р‘СЂР°С‚СЊСЏ РіРѕС‚РѕРІС‹ РїСЂРёРЅСЏС‚СЊ С‚РµР±СЏ РІ РЅР°С€Рµ РѕР±С‰РµСЃС‚РІРѕ.
+		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_13"); //РўС‹ РЅР°РІРµСЂРЅСЏРєР° Р·РЅР°РµС€СЊ СЌС‚Сѓ С‚Р°РІРµСЂРЅСѓ. РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РїРѕ РїСѓС‚Рё Рє С„РµСЂРјРµ РћРЅР°СЂР°.
+		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_14"); //РќРµ Р·Р°Р±СѓРґСЊ РЅР°РґРµС‚СЊ РєРѕР»СЊС†Рѕ, С‡С‚РѕР±С‹ Р±СЂР°С‚СЊСЏ СѓР·РЅР°Р»Рё С‚РµР±СЏ.
 		
-		B_LogEntry (TOPIC_Addon_RingOfWater,"Я стал членом Кольца Воды. Мои новые братья ждут меня в таверне 'Мертвая Гарпия'."); 
+		B_LogEntry (TOPIC_Addon_RingOfWater,"РЇ СЃС‚Р°Р» С‡Р»РµРЅРѕРј РљРѕР»СЊС†Р° Р’РѕРґС‹. РњРѕРё РЅРѕРІС‹Рµ Р±СЂР°С‚СЊСЏ Р¶РґСѓС‚ РјРµРЅСЏ РІ С‚Р°РІРµСЂРЅРµ 'РњРµСЂС‚РІР°СЏ Р“Р°СЂРїРёСЏ'."); 
 
 		SC_IsRanger = TRUE;
 		Lares_CanBringScToPlaces = TRUE;
@@ -842,8 +842,8 @@ func void DIA_Addon_Vatras_NowRanger_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_15"); //Нет. Пока нет.
-		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_16"); //В таком случае поспеши. Отправляйся к нему. Это сообщение очень важное!
+		AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_15"); //РќРµС‚. РџРѕРєР° РЅРµС‚.
+		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_16"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ РїРѕСЃРїРµС€Рё. РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РЅРµРјСѓ. Р­С‚Рѕ СЃРѕРѕР±С‰РµРЅРёРµ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕРµ!
 	};
 };
 // ------------------------------------------------------------
@@ -855,7 +855,7 @@ instance DIA_Addon_Vatras_CloseMeeting		(C_INFO)
 	nr		 	= 5;
 	condition	= DIA_Addon_Vatras_CloseMeeting_Condition;
 	information	= DIA_Addon_Vatras_CloseMeeting_Info;
-	description = "Братья Кольца послали меня к тебе.";
+	description = "Р‘СЂР°С‚СЊСЏ РљРѕР»СЊС†Р° РїРѕСЃР»Р°Р»Рё РјРµРЅСЏ Рє С‚РµР±Рµ.";
 };
 func int DIA_Addon_Vatras_CloseMeeting_Condition ()
 {
@@ -866,25 +866,25 @@ func int DIA_Addon_Vatras_CloseMeeting_Condition ()
 };
 func void DIA_Addon_Vatras_CloseMeeting_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_CloseMeeting_15_00"); //Братья Кольца послали меня к тебе.
-	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_01"); //Хорошо! Я ждал тебя!
-	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_02"); //Я отправлю тебя через портал, чтобы ты присоединился к остальным магам воды.
-	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_03"); //Ты должен выследить бывшего рудного барона Ворона и узнать, с какой целью он похищает жителей города.
-	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_04"); //А мы останемся здесь и попытаемся разобраться с бандитами.
-	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_05"); //Передай это письмо Сатурасу. Отныне он будет давать тебе задания.
+	AI_Output (other, self, "DIA_Addon_Vatras_CloseMeeting_15_00"); //Р‘СЂР°С‚СЊСЏ РљРѕР»СЊС†Р° РїРѕСЃР»Р°Р»Рё РјРµРЅСЏ Рє С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_01"); //РҐРѕСЂРѕС€Рѕ! РЇ Р¶РґР°Р» С‚РµР±СЏ!
+	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_02"); //РЇ РѕС‚РїСЂР°РІР»СЋ С‚РµР±СЏ С‡РµСЂРµР· РїРѕСЂС‚Р°Р», С‡С‚РѕР±С‹ С‚С‹ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РѕСЃС‚Р°Р»СЊРЅС‹Рј РјР°РіР°Рј РІРѕРґС‹.
+	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_03"); //РўС‹ РґРѕР»Р¶РµРЅ РІС‹СЃР»РµРґРёС‚СЊ Р±С‹РІС€РµРіРѕ СЂСѓРґРЅРѕРіРѕ Р±Р°СЂРѕРЅР° Р’РѕСЂРѕРЅР° Рё СѓР·РЅР°С‚СЊ, СЃ РєР°РєРѕР№ С†РµР»СЊСЋ РѕРЅ РїРѕС…РёС‰Р°РµС‚ Р¶РёС‚РµР»РµР№ РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_04"); //Рђ РјС‹ РѕСЃС‚Р°РЅРµРјСЃСЏ Р·РґРµСЃСЊ Рё РїРѕРїС‹С‚Р°РµРјСЃСЏ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё.
+	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_05"); //РџРµСЂРµРґР°Р№ СЌС‚Рѕ РїРёСЃСЊРјРѕ РЎР°С‚СѓСЂР°СЃСѓ. РћС‚РЅС‹РЅРµ РѕРЅ Р±СѓРґРµС‚ РґР°РІР°С‚СЊ С‚РµР±Рµ Р·Р°РґР°РЅРёСЏ.
 	if (MIS_Addon_Lares_Ornament2Saturas != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Vatras_CloseMeeting_05_08"); //Ларес отведет тебя к нему, если он еще не получил орнамент.
+		AI_Output	(self, other, "DIA_Addon_Vatras_CloseMeeting_05_08"); //Р›Р°СЂРµСЃ РѕС‚РІРµРґРµС‚ С‚РµР±СЏ Рє РЅРµРјСѓ, РµСЃР»Рё РѕРЅ РµС‰Рµ РЅРµ РїРѕР»СѓС‡РёР» РѕСЂРЅР°РјРµРЅС‚.
 	};
 	CreateInvItems (self, ItWr_Vatras2Saturas_FindRaven, 1);									
 	B_GiveInvItems (self, other, ItWr_Vatras2Saturas_FindRaven, 1);	
-	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_06"); //Да пребудет с тобой Аданос.
+	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_06"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РђРґР°РЅРѕСЃ.
 		
-	B_LogEntry (TOPIC_Addon_KDW,"Ватрас дал мне письмо для Сатураса. Я должен присоединиться к магам воды и пройти через портал, чтобы найти бывшего рудного барона Ворона."); 
+	B_LogEntry (TOPIC_Addon_KDW,"Р’Р°С‚СЂР°СЃ РґР°Р» РјРЅРµ РїРёСЃСЊРјРѕ РґР»СЏ РЎР°С‚СѓСЂР°СЃР°. РЇ РґРѕР»Р¶РµРЅ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РјР°РіР°Рј РІРѕРґС‹ Рё РїСЂРѕР№С‚Рё С‡РµСЂРµР· РїРѕСЂС‚Р°Р», С‡С‚РѕР±С‹ РЅР°Р№С‚Рё Р±С‹РІС€РµРіРѕ СЂСѓРґРЅРѕРіРѕ Р±Р°СЂРѕРЅР° Р’РѕСЂРѕРЅР°."); 
 
 	Log_CreateTopic (TOPIC_Addon_Sklaven, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Sklaven, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Sklaven,"Я должен узнать, с какой целью Ворон похищает жителей Хориниса."); 
+	B_LogEntry (TOPIC_Addon_Sklaven,"РЇ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ, СЃ РєР°РєРѕР№ С†РµР»СЊСЋ Р’РѕСЂРѕРЅ РїРѕС…РёС‰Р°РµС‚ Р¶РёС‚РµР»РµР№ РҐРѕСЂРёРЅРёСЃР°."); 
 
 
 	RangerMeetingRunning = LOG_SUCCESS; //Joly:Muss hier stehen!Sonst Chaos mit Rangern! -> Meeting
@@ -908,7 +908,7 @@ instance DIA_Addon_Vatras_MissingPeople (C_INFO)
 	condition	= DIA_Addon_Vatras_MissingPeople_Condition;
 	information	= DIA_Addon_Vatras_MissingPeople_Info;
 	permanent	= TRUE;
-	description	= "Насчет людей, пропавших без вести...";
+	description	= "РќР°СЃС‡РµС‚ Р»СЋРґРµР№, РїСЂРѕРїР°РІС€РёС… Р±РµР· РІРµСЃС‚Рё...";
 };
 func int DIA_Addon_Vatras_MissingPeople_Condition ()
 {
@@ -920,23 +920,23 @@ func int DIA_Addon_Vatras_MissingPeople_Condition ()
 var int DIA_Addon_Vatras_MissingPeople_Wo_NoPerm;
 func void DIA_Addon_Vatras_MissingPeople_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_MissingPeople_15_00"); //Насчет людей, пропавших без вести...
-	AI_Output (self, other, "DIA_Addon_Vatras_MissingPeople_05_01"); //Да?
+	AI_Output (other, self, "DIA_Addon_Vatras_MissingPeople_15_00"); //РќР°СЃС‡РµС‚ Р»СЋРґРµР№, РїСЂРѕРїР°РІС€РёС… Р±РµР· РІРµСЃС‚Рё...
+	AI_Output (self, other, "DIA_Addon_Vatras_MissingPeople_05_01"); //Р”Р°?
 	
 	Info_ClearChoices (DIA_Addon_Vatras_MissingPeople);
 	Info_AddChoice (DIA_Addon_Vatras_MissingPeople, DIALOG_BACK, DIA_Addon_Vatras_MissingPeople_BACK);
 	if (SCKnowsMissingPeopleAreInAddonWorld == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "Я знаю, где находятся пропавшие люди.", DIA_Addon_Vatras_MissingPeople_Success);
+		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "РЇ Р·РЅР°СЋ, РіРґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РїСЂРѕРїР°РІС€РёРµ Р»СЋРґРё.", DIA_Addon_Vatras_MissingPeople_Success);
 	}
 	else
 	{
-		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "Позволь рассказать тебе то, что я знаю...", DIA_Addon_Vatras_MissingPeople_Report);
+		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "РџРѕР·РІРѕР»СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ С‚Рѕ, С‡С‚Рѕ СЏ Р·РЅР°СЋ...", DIA_Addon_Vatras_MissingPeople_Report);
 	};
 	
 	if (DIA_Addon_Vatras_MissingPeople_Wo_NoPerm == FALSE)
 	{
-		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "Где мне их искать?", DIA_Addon_Vatras_MissingPeople_Wo);
+		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "Р“РґРµ РјРЅРµ РёС… РёСЃРєР°С‚СЊ?", DIA_Addon_Vatras_MissingPeople_Wo);
 	};
 };
 func void DIA_Addon_Vatras_MissingPeople_BACK()
@@ -945,12 +945,12 @@ func void DIA_Addon_Vatras_MissingPeople_BACK()
 };
 func void DIA_Addon_Vatras_MissingPeople_Wo()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_HintMissingPeople_Wo_15_00"); //Где мне их искать?
-	AI_Output (self, other, "DIA_Addon_Vatras_HintMissingPeople_Wo_05_01"); //Большинство людей исчезли у гавани. Тебе следует начинать свои поиски именно там.
+	AI_Output (other, self, "DIA_Addon_Vatras_HintMissingPeople_Wo_15_00"); //Р“РґРµ РјРЅРµ РёС… РёСЃРєР°С‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Vatras_HintMissingPeople_Wo_05_01"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ Р»СЋРґРµР№ РёСЃС‡РµР·Р»Рё Сѓ РіР°РІР°РЅРё. РўРµР±Рµ СЃР»РµРґСѓРµС‚ РЅР°С‡РёРЅР°С‚СЊ СЃРІРѕРё РїРѕРёСЃРєРё РёРјРµРЅРЅРѕ С‚Р°Рј.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Большинство из людей пропало в окрестностях порта. Лучше всего начать поиски именно там."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· Р»СЋРґРµР№ РїСЂРѕРїР°Р»Рѕ РІ РѕРєСЂРµСЃС‚РЅРѕСЃС‚СЏС… РїРѕСЂС‚Р°. Р›СѓС‡С€Рµ РІСЃРµРіРѕ РЅР°С‡Р°С‚СЊ РїРѕРёСЃРєРё РёРјРµРЅРЅРѕ С‚Р°Рј."); 
 	
 	DIA_Addon_Vatras_MissingPeople_Wo_NoPerm = TRUE;
 };
@@ -958,13 +958,13 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 {
 	var int Vatras_MissingPeopleReports;
 	Vatras_MissingPeopleReports = 0;
-	AI_Output (other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_00"); //Позволь рассказать тебе то, что я знаю...
+	AI_Output (other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_00"); //РџРѕР·РІРѕР»СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ С‚Рѕ, С‡С‚Рѕ СЏ Р·РЅР°СЋ...
 	
 	 if ((MIS_Akil_BringMissPeopleBack != 0)
 	 || (MIS_Bengar_BringMissPeopleBack != 0))
 	 &&	(MISSINGPEOPLEINFO[1] == FALSE)
 	 {
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_01"); //Фермеры тоже потеряли своих близких.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_01"); //Р¤РµСЂРјРµСЂС‹ С‚РѕР¶Рµ РїРѕС‚РµСЂСЏР»Рё СЃРІРѕРёС… Р±Р»РёР·РєРёС….
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[1] = TRUE;
 	 };
@@ -974,7 +974,7 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	|| (SC_KnowsDexterAsKidnapper == TRUE))
 	&& (MISSINGPEOPLEINFO[2] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_02"); //Я узнал, что ответственность за эти исчезновения лежит на бандитах.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_02"); //РЇ СѓР·РЅР°Р», С‡С‚Рѕ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚СЊ Р·Р° СЌС‚Рё РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏ Р»РµР¶РёС‚ РЅР° Р±Р°РЅРґРёС‚Р°С….
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[2] = TRUE;
 	};
@@ -982,7 +982,7 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	if (Elvrich_SCKnowsPirats == TRUE)
 	&& (MISSINGPEOPLEINFO[3] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_03"); //Элврих, ученик мастера Торбена, рассказал мне, что бандиты вывозят похищенных людей по морю.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_03"); //Р­Р»РІСЂРёС…, СѓС‡РµРЅРёРє РјР°СЃС‚РµСЂР° РўРѕСЂР±РµРЅР°, СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Р±Р°РЅРґРёС‚С‹ РІС‹РІРѕР·СЏС‚ РїРѕС…РёС‰РµРЅРЅС‹С… Р»СЋРґРµР№ РїРѕ РјРѕСЂСЋ.
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[3] = TRUE;
 	};
@@ -990,7 +990,7 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	if (Elvrich_SCKnowsPirats == TRUE)
 	&& (MISSINGPEOPLEINFO[4] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_04"); //С этим как-то связаны пираты. Я пока не до конца понял их роль в этом мероприятии.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_04"); //РЎ СЌС‚РёРј РєР°Рє-С‚Рѕ СЃРІСЏР·Р°РЅС‹ РїРёСЂР°С‚С‹. РЇ РїРѕРєР° РЅРµ РґРѕ РєРѕРЅС†Р° РїРѕРЅСЏР» РёС… СЂРѕР»СЊ РІ СЌС‚РѕРј РјРµСЂРѕРїСЂРёСЏС‚РёРё.
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[4] = TRUE;
 	};	
@@ -998,7 +998,7 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	if (Elvrich_GoesBack2Thorben == TRUE)
 	&& (MISSINGPEOPLEINFO[5] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_05"); //Я спас Элвриха от бандитов.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_05"); //РЇ СЃРїР°СЃ Р­Р»РІСЂРёС…Р° РѕС‚ Р±Р°РЅРґРёС‚РѕРІ.
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[5] = TRUE;
 	};
@@ -1006,7 +1006,7 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	if (SC_KnowsLuciaCaughtByBandits == TRUE)
 	&& (MISSINGPEOPLEINFO[6] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_06"); //Бандиты захватили девушку по имени Люсия.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_06"); //Р‘Р°РЅРґРёС‚С‹ Р·Р°С…РІР°С‚РёР»Рё РґРµРІСѓС€РєСѓ РїРѕ РёРјРµРЅРё Р›СЋСЃРёСЏ.
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[6] = TRUE;
 	};
@@ -1015,10 +1015,10 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	|| (MIS_LuciasLetter == LOG_SUCCESS))
 	&& (MISSINGPEOPLEINFO[7] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_07"); //Люсия, девушка, похищенная бандитами, решила присоединиться к ним.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_07"); //Р›СЋСЃРёСЏ, РґРµРІСѓС€РєР°, РїРѕС…РёС‰РµРЅРЅР°СЏ Р±Р°РЅРґРёС‚Р°РјРё, СЂРµС€РёР»Р° РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅРёРј.
 		if (MIS_LuciasLetter == LOG_SUCCESS)
 		{
-			AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_08"); //По всей видимости, она присоединилась к ним по доброй воле.
+			AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_08"); //РџРѕ РІСЃРµР№ РІРёРґРёРјРѕСЃС‚Рё, РѕРЅР° РїСЂРёСЃРѕРµРґРёРЅРёР»Р°СЃСЊ Рє РЅРёРј РїРѕ РґРѕР±СЂРѕР№ РІРѕР»Рµ.
 		};
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[7] = TRUE;
@@ -1027,39 +1027,39 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	if (SC_KnowsDexterAsKidnapper == TRUE)
 	&& (MISSINGPEOPLEINFO[8] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_09"); //Главаря бандитов зовут Декстер. Он несет ответственность за все эти похищения.
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_10"); //Я познакомился с Декстером на каторге. Тогда он работал на торговца рудой Гомеса.
-		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_11"); //Он наверняка узнает тебя. Будь осторожен.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_09"); //Р“Р»Р°РІР°СЂСЏ Р±Р°РЅРґРёС‚РѕРІ Р·РѕРІСѓС‚ Р”РµРєСЃС‚РµСЂ. РћРЅ РЅРµСЃРµС‚ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚СЊ Р·Р° РІСЃРµ СЌС‚Рё РїРѕС…РёС‰РµРЅРёСЏ.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_10"); //РЇ РїРѕР·РЅР°РєРѕРјРёР»СЃСЏ СЃ Р”РµРєСЃС‚РµСЂРѕРј РЅР° РєР°С‚РѕСЂРіРµ. РўРѕРіРґР° РѕРЅ СЂР°Р±РѕС‚Р°Р» РЅР° С‚РѕСЂРіРѕРІС†Р° СЂСѓРґРѕР№ Р“РѕРјРµСЃР°.
+		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_11"); //РћРЅ РЅР°РІРµСЂРЅСЏРєР° СѓР·РЅР°РµС‚ С‚РµР±СЏ. Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[8] = TRUE;
 	};
 
 	if (Vatras_MissingPeopleReports != 0)
 	{
-		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_12"); //Мне кажется, ты на верном пути. Продолжай.
+		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_12"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ РЅР° РІРµСЂРЅРѕРј РїСѓС‚Рё. РџСЂРѕРґРѕР»Р¶Р°Р№.
 		var int XP_Vatras_MissingPeopleReports;
 		XP_Vatras_MissingPeopleReports = (XP_Addon_Vatras_MissingPeopleReport * Vatras_MissingPeopleReports );
 		B_GivePlayerXP (XP_Vatras_MissingPeopleReports);
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_13"); //Что ты узнал?
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_14"); //Пока ничего важного.
+		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_13"); //Р§С‚Рѕ С‚С‹ СѓР·РЅР°Р»?
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_14"); //РџРѕРєР° РЅРёС‡РµРіРѕ РІР°Р¶РЅРѕРіРѕ.
 	};
 };
 func void DIA_Addon_Vatras_MissingPeople_Success()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_00"); //Я знаю, где находятся пропавшие люди.
-	AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Success_05_01"); //Что ты узнал?
-	AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_02"); //Человек по прозвищу Ворон спрятал их в удаленной части Хориниса.
-	AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Success_05_03"); //Почему ты так уверен в этом?
-	AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_04"); //Я читал его приказы. На него работают местные бандиты.
+	AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_00"); //РЇ Р·РЅР°СЋ, РіРґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РїСЂРѕРїР°РІС€РёРµ Р»СЋРґРё.
+	AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Success_05_01"); //Р§С‚Рѕ С‚С‹ СѓР·РЅР°Р»?
+	AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_02"); //Р§РµР»РѕРІРµРє РїРѕ РїСЂРѕР·РІРёС‰Сѓ Р’РѕСЂРѕРЅ СЃРїСЂСЏС‚Р°Р» РёС… РІ СѓРґР°Р»РµРЅРЅРѕР№ С‡Р°СЃС‚Рё РҐРѕСЂРёРЅРёСЃР°.
+	AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Success_05_03"); //РџРѕС‡РµРјСѓ С‚С‹ С‚Р°Рє СѓРІРµСЂРµРЅ РІ СЌС‚РѕРј?
+	AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_04"); //РЇ С‡РёС‚Р°Р» РµРіРѕ РїСЂРёРєР°Р·С‹. РќР° РЅРµРіРѕ СЂР°Р±РѕС‚Р°СЋС‚ РјРµСЃС‚РЅС‹Рµ Р±Р°РЅРґРёС‚С‹.
 	if (Npc_HasItems (other,ItWr_RavensKidnapperMission_Addon))
 	{	
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_05"); //Вот.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_05"); //Р’РѕС‚.
 		B_UseFakeScroll ();
 	};
-	AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Success_05_06"); //Отличная работа. Я боялся, что мы никогда не узнаем ответа на эту загадку.
+	AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Success_05_06"); //РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°. РЇ Р±РѕСЏР»СЃСЏ, С‡С‚Рѕ РјС‹ РЅРёРєРѕРіРґР° РЅРµ СѓР·РЅР°РµРј РѕС‚РІРµС‚Р° РЅР° СЌС‚Сѓ Р·Р°РіР°РґРєСѓ.
 	MIS_Addon_Vatras_WhereAreMissingPeople = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Vatras_WhereAreMissingPeople);
 };
@@ -1073,7 +1073,7 @@ instance DIA_Addon_Vatras_Free (C_INFO)
 	condition	 = 	DIA_Addon_Vatras_Free_Condition;
 	information	 = 	DIA_Addon_Vatras_Free_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Пропавшие люди вернулись в свои дома.";
+	description	 = 	"РџСЂРѕРїР°РІС€РёРµ Р»СЋРґРё РІРµСЂРЅСѓР»РёСЃСЊ РІ СЃРІРѕРё РґРѕРјР°.";
 };
 func int DIA_Addon_Vatras_Free_Condition ()
 {
@@ -1084,10 +1084,10 @@ func int DIA_Addon_Vatras_Free_Condition ()
 };
 func void DIA_Addon_Vatras_Free_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_Free_15_00"); //Пропавшие люди вернулись в свои дома.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_01"); //Хорошая работа, сын мой.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_02"); //Но ты должен продолжать свой путь. Да благословит тебя Аданос.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_03"); //(молится) Аданос, благослови этого воина. Освети его путь и даруй ему силу противостоять любым опасностям.
+	AI_Output	(other, self, "DIA_Addon_Vatras_Free_15_00"); //РџСЂРѕРїР°РІС€РёРµ Р»СЋРґРё РІРµСЂРЅСѓР»РёСЃСЊ РІ СЃРІРѕРё РґРѕРјР°.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_01"); //РҐРѕСЂРѕС€Р°СЏ СЂР°Р±РѕС‚Р°, СЃС‹РЅ РјРѕР№.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_02"); //РќРѕ С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЃРІРѕР№ РїСѓС‚СЊ. Р”Р° Р±Р»Р°РіРѕСЃР»РѕРІРёС‚ С‚РµР±СЏ РђРґР°РЅРѕСЃ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_03"); //(РјРѕР»РёС‚СЃСЏ) РђРґР°РЅРѕСЃ, Р±Р»Р°РіРѕСЃР»РѕРІРё СЌС‚РѕРіРѕ РІРѕРёРЅР°. РћСЃРІРµС‚Рё РµРіРѕ РїСѓС‚СЊ Рё РґР°СЂСѓР№ РµРјСѓ СЃРёР»Сѓ РїСЂРѕС‚РёРІРѕСЃС‚РѕСЏС‚СЊ Р»СЋР±С‹Рј РѕРїР°СЃРЅРѕСЃС‚СЏРј.
 	
 	B_RaiseAttribute (other, ATR_MANA_MAX, 3);
 	other.attribute[ATR_MANA]	   = other.attribute[ATR_MANA_MAX];
@@ -1095,14 +1095,14 @@ func void DIA_Addon_Vatras_Free_Info ()
 	
 	Snd_Play ("Levelup");
 	
-	// ***Mike** Auskommentiert, weil FALSCHE funktion - bitte Rьcksprache, bevor du's wieder дnderst
+	// ***Mike** Auskommentiert, weil FALSCHE funktion - bitte RСЊcksprache, bevor du's wieder Рґnderst
 	//var string concatText;
 	//concatText = ConcatStrings (NAME_Bonus_ManaMax,IntToString (4));
 	//PrintScreen (concatText, -1,-1,FONT_ScreenSmall,2); 
 };
 
 // ************************************************************
-// 			  				Waffenhдndler
+// 			  				WaffenhРґndler
 // ************************************************************
 instance DIA_Addon_Vatras_Waffen (C_INFO)
 {
@@ -1111,7 +1111,7 @@ instance DIA_Addon_Vatras_Waffen (C_INFO)
 	condition	= DIA_Addon_Vatras_Waffen_Condition;
 	information	= DIA_Addon_Vatras_Waffen_Info;
 	permanent 	= TRUE;
-	description = "Насчет этого торговца оружием...";
+	description = "РќР°СЃС‡РµС‚ СЌС‚РѕРіРѕ С‚РѕСЂРіРѕРІС†Р° РѕСЂСѓР¶РёРµРј...";
 };
 func int DIA_Addon_Vatras_Waffen_Condition ()
 {
@@ -1122,18 +1122,18 @@ func int DIA_Addon_Vatras_Waffen_Condition ()
 };
 func void DIA_Addon_Vatras_Waffen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_15_00"); //Насчет этого торговца оружием...
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_15_00"); //РќР°СЃС‡РµС‚ СЌС‚РѕРіРѕ С‚РѕСЂРіРѕРІС†Р° РѕСЂСѓР¶РёРµРј...
 	
 	Info_ClearChoices (DIA_Addon_Vatras_Waffen);
 	Info_AddChoice (DIA_Addon_Vatras_Waffen, DIALOG_BACK, DIA_Addon_Vatras_Waffen_BACK);
 	if (Fernando_ImKnast == TRUE)
 	|| (Fernando_HatsZugegeben == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Vatras_Waffen, "Я знаю торговца, который продает оружие бандитам!", DIA_Addon_Vatras_Waffen_Success);
+		Info_AddChoice (DIA_Addon_Vatras_Waffen, "РЇ Р·РЅР°СЋ С‚РѕСЂРіРѕРІС†Р°, РєРѕС‚РѕСЂС‹Р№ РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ Р±Р°РЅРґРёС‚Р°Рј!", DIA_Addon_Vatras_Waffen_Success);
 	}
 	else
 	{
-		Info_AddChoice (DIA_Addon_Vatras_Waffen, "Как много ты знаешь про этого торговца?", DIA_Addon_Vatras_Waffen_ToMartin);
+		Info_AddChoice (DIA_Addon_Vatras_Waffen, "РљР°Рє РјРЅРѕРіРѕ С‚С‹ Р·РЅР°РµС€СЊ РїСЂРѕ СЌС‚РѕРіРѕ С‚РѕСЂРіРѕРІС†Р°?", DIA_Addon_Vatras_Waffen_ToMartin);
 	};
 };
 func void DIA_Addon_Vatras_Waffen_BACK()
@@ -1142,45 +1142,45 @@ func void DIA_Addon_Vatras_Waffen_BACK()
 };
 func void DIA_Addon_Vatras_Waffen_ToMartin()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_ToMartin_15_00"); //Как много ты знаешь про этого торговца?
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_01"); //Спроси Мартина, интенданта паладинов. Он сможет рассказать тебе больше.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_02"); //Он должен вывести торговца оружием на чистую воду.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_03"); //Ты найдешь Мартина в портовом районе. Когда увидишь кучу ящиков и множество паладинов, то знай: Мартин неподалеку.
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_ToMartin_15_00"); //РљР°Рє РјРЅРѕРіРѕ С‚С‹ Р·РЅР°РµС€СЊ РїСЂРѕ СЌС‚РѕРіРѕ С‚РѕСЂРіРѕРІС†Р°?
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_01"); //РЎРїСЂРѕСЃРё РњР°СЂС‚РёРЅР°, РёРЅС‚РµРЅРґР°РЅС‚Р° РїР°Р»Р°РґРёРЅРѕРІ. РћРЅ СЃРјРѕР¶РµС‚ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ Р±РѕР»СЊС€Рµ.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_02"); //РћРЅ РґРѕР»Р¶РµРЅ РІС‹РІРµСЃС‚Рё С‚РѕСЂРіРѕРІС†Р° РѕСЂСѓР¶РёРµРј РЅР° С‡РёСЃС‚СѓСЋ РІРѕРґСѓ.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_03"); //РўС‹ РЅР°Р№РґРµС€СЊ РњР°СЂС‚РёРЅР° РІ РїРѕСЂС‚РѕРІРѕРј СЂР°Р№РѕРЅРµ. РљРѕРіРґР° СѓРІРёРґРёС€СЊ РєСѓС‡Сѓ СЏС‰РёРєРѕРІ Рё РјРЅРѕР¶РµСЃС‚РІРѕ РїР°Р»Р°РґРёРЅРѕРІ, С‚Рѕ Р·РЅР°Р№: РњР°СЂС‚РёРЅ РЅРµРїРѕРґР°Р»РµРєСѓ.
 		
 	Vatras_ToMartin = TRUE;
 };
 
 func void DIA_Addon_Vatras_Waffen_Success ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_00"); //Я знаю торговца, который продает оружие бандитам!
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_01"); //Его зовут Фернандо.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_Success_05_02"); //Отлично. Мартин предпринял необходимые меры, чтобы остановить его?
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_00"); //РЇ Р·РЅР°СЋ С‚РѕСЂРіРѕРІС†Р°, РєРѕС‚РѕСЂС‹Р№ РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ Р±Р°РЅРґРёС‚Р°Рј!
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_01"); //Р•РіРѕ Р·РѕРІСѓС‚ Р¤РµСЂРЅР°РЅРґРѕ.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_Success_05_02"); //РћС‚Р»РёС‡РЅРѕ. РњР°СЂС‚РёРЅ РїСЂРµРґРїСЂРёРЅСЏР» РЅРµРѕР±С…РѕРґРёРјС‹Рµ РјРµСЂС‹, С‡С‚РѕР±С‹ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РµРіРѕ?
 	if (Fernando_ImKnast == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_Waffen_Success_15_03"); //Да. Мартин проследит за тем, чтобы он нескоро вышел из тюрьмы.
-		AI_Output	(self, other, "DIA_Addon_Vatras_Waffen_Success_05_04"); //Хорошая работа, сын мой.
+		AI_Output	(other, self, "DIA_Addon_Vatras_Waffen_Success_15_03"); //Р”Р°. РњР°СЂС‚РёРЅ РїСЂРѕСЃР»РµРґРёС‚ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РѕРЅ РЅРµСЃРєРѕСЂРѕ РІС‹С€РµР» РёР· С‚СЋСЂСЊРјС‹.
+		AI_Output	(self, other, "DIA_Addon_Vatras_Waffen_Success_05_04"); //РҐРѕСЂРѕС€Р°СЏ СЂР°Р±РѕС‚Р°, СЃС‹РЅ РјРѕР№.
 
 		if (Npc_KnowsInfo (other, DIA_ADDON_Vatras_WannaBeRanger))
 		&& (SC_IsRanger == FALSE)
 		{
-			AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_05"); //(с надеждой) А теперь вы примете меня в Кольцо Воды?
-			AI_Output (self, other, "DIA_Addon_Vatras_Waffen_Success_05_06"); //(улыбается) Мы не об ЭТОМ договаривались, и ты это знаешь.
+			AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_05"); //(СЃ РЅР°РґРµР¶РґРѕР№) Рђ С‚РµРїРµСЂСЊ РІС‹ РїСЂРёРјРµС‚Рµ РјРµРЅСЏ РІ РљРѕР»СЊС†Рѕ Р’РѕРґС‹?
+			AI_Output (self, other, "DIA_Addon_Vatras_Waffen_Success_05_06"); //(СѓР»С‹Р±Р°РµС‚СЃСЏ) РњС‹ РЅРµ РѕР± Р­РўРћРњ РґРѕРіРѕРІР°СЂРёРІР°Р»РёСЃСЊ, Рё С‚С‹ СЌС‚Рѕ Р·РЅР°РµС€СЊ.
 		};
 		
-		AI_Output (self, other, "DIA_Addon_Vatras_Waffen_Success_05_07"); //Да осветит твой путь Аданос.
+		AI_Output (self, other, "DIA_Addon_Vatras_Waffen_Success_05_07"); //Р”Р° РѕСЃРІРµС‚РёС‚ С‚РІРѕР№ РїСѓС‚СЊ РђРґР°РЅРѕСЃ.
 		
 		MIS_Vatras_FindTheBanditTrader = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Addon_Vatras_FindTheBanditTrader);
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_CaughtFernando_15_09"); //Пока нет.
-		AI_Output	(self, other, "DIA_Addon_Vatras_CaughtFernando_05_10"); //Тогда поспеши и как можно скорее отправляйся к нему. Это безобразие необходимо немедленно остановить.
+		AI_Output	(other, self, "DIA_Addon_Vatras_CaughtFernando_15_09"); //РџРѕРєР° РЅРµС‚.
+		AI_Output	(self, other, "DIA_Addon_Vatras_CaughtFernando_05_10"); //РўРѕРіРґР° РїРѕСЃРїРµС€Рё Рё РєР°Рє РјРѕР¶РЅРѕ СЃРєРѕСЂРµРµ РѕС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РЅРµРјСѓ. Р­С‚Рѕ Р±РµР·РѕР±СЂР°Р·РёРµ РЅРµРѕР±С…РѕРґРёРјРѕ РЅРµРјРµРґР»РµРЅРЅРѕ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ.
 	};
 };
 
 // ************************************************************
-// 			  				Waffenhдndler
+// 			  				WaffenhРґndler
 // ************************************************************
 instance DIA_Addon_Vatras_WISP (C_INFO)
 {
@@ -1189,7 +1189,7 @@ instance DIA_Addon_Vatras_WISP (C_INFO)
 	condition	= DIA_Addon_Vatras_WISP_Condition;
 	information	= DIA_Addon_Vatras_WISP_Info;
 
-	description = "Ты можешь помочь мне в моих поисках?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РІ РјРѕРёС… РїРѕРёСЃРєР°С…?";
 };
 func int DIA_Addon_Vatras_WISP_Condition ()
 {
@@ -1200,62 +1200,62 @@ func int DIA_Addon_Vatras_WISP_Condition ()
 };
 func void DIA_Addon_Vatras_WISP_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_WISP_15_00"); //Ты можешь помочь мне в моих поисках?
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_01"); //Ты очень настойчивый юноша. Но я действительно могу кое-что тебе дать, чтобы облегчить тебе задачу.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_02"); //Я дам тебе этот амулет. Тебе он пригодится.
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_WISP_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РІ РјРѕРёС… РїРѕРёСЃРєР°С…?
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_01"); //РўС‹ РѕС‡РµРЅСЊ РЅР°СЃС‚РѕР№С‡РёРІС‹Р№ СЋРЅРѕС€Р°. РќРѕ СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РјРѕРіСѓ РєРѕРµ-С‡С‚Рѕ С‚РµР±Рµ РґР°С‚СЊ, С‡С‚РѕР±С‹ РѕР±Р»РµРіС‡РёС‚СЊ С‚РµР±Рµ Р·Р°РґР°С‡Сѓ.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_02"); //РЇ РґР°Рј С‚РµР±Рµ СЌС‚РѕС‚ Р°РјСѓР»РµС‚. РўРµР±Рµ РѕРЅ РїСЂРёРіРѕРґРёС‚СЃСЏ.
 	CreateInvItems (self, ItAm_Addon_WispDetector, 1);									
 	B_GiveInvItems (self, other, ItAm_Addon_WispDetector, 1);
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_03"); //Это амулет ищущего огонька.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_04"); //Очень редкая вещь. Ищущий огонек, который живет в этом амулете, обладает особыми свойствами.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_05"); //Он будет помогать тебе искать предметы, которые без него ты мог бы и не найти.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_06"); //Чтобы вызвать огонька, просто надень амулет.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_07"); //Если огонек потеряет свою силу или потеряется, сними амулет и надень его снова, и огонек вернется.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_03"); //Р­С‚Рѕ Р°РјСѓР»РµС‚ РёС‰СѓС‰РµРіРѕ РѕРіРѕРЅСЊРєР°.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_04"); //РћС‡РµРЅСЊ СЂРµРґРєР°СЏ РІРµС‰СЊ. РС‰СѓС‰РёР№ РѕРіРѕРЅРµРє, РєРѕС‚РѕСЂС‹Р№ Р¶РёРІРµС‚ РІ СЌС‚РѕРј Р°РјСѓР»РµС‚Рµ, РѕР±Р»Р°РґР°РµС‚ РѕСЃРѕР±С‹РјРё СЃРІРѕР№СЃС‚РІР°РјРё.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_05"); //РћРЅ Р±СѓРґРµС‚ РїРѕРјРѕРіР°С‚СЊ С‚РµР±Рµ РёСЃРєР°С‚СЊ РїСЂРµРґРјРµС‚С‹, РєРѕС‚РѕСЂС‹Рµ Р±РµР· РЅРµРіРѕ С‚С‹ РјРѕРі Р±С‹ Рё РЅРµ РЅР°Р№С‚Рё.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_06"); //Р§С‚РѕР±С‹ РІС‹Р·РІР°С‚СЊ РѕРіРѕРЅСЊРєР°, РїСЂРѕСЃС‚Рѕ РЅР°РґРµРЅСЊ Р°РјСѓР»РµС‚.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_07"); //Р•СЃР»Рё РѕРіРѕРЅРµРє РїРѕС‚РµСЂСЏРµС‚ СЃРІРѕСЋ СЃРёР»Сѓ РёР»Рё РїРѕС‚РµСЂСЏРµС‚СЃСЏ, СЃРЅРёРјРё Р°РјСѓР»РµС‚ Рё РЅР°РґРµРЅСЊ РµРіРѕ СЃРЅРѕРІР°, Рё РѕРіРѕРЅРµРє РІРµСЂРЅРµС‚СЃСЏ.
 	
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Ватрас дал мне амулет ищущего блуждающего огонька, который поможет мне в поисках торговца оружием."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"Р’Р°С‚СЂР°СЃ РґР°Р» РјРЅРµ Р°РјСѓР»РµС‚ РёС‰СѓС‰РµРіРѕ Р±Р»СѓР¶РґР°СЋС‰РµРіРѕ РѕРіРѕРЅСЊРєР°, РєРѕС‚РѕСЂС‹Р№ РїРѕРјРѕР¶РµС‚ РјРЅРµ РІ РїРѕРёСЃРєР°С… С‚РѕСЂРіРѕРІС†Р° РѕСЂСѓР¶РёРµРј."); 
 	Log_CreateTopic (TOPIC_WispDetector,LOG_NOTE);
 	B_LogEntry (TOPIC_WispDetector,LogText_Addon_WispLearned); 
 	B_LogEntry (TOPIC_WispDetector,LogText_Addon_WispLearned_NF); 
 
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_08"); //Ищущий огонек поможет тебе искать оружие.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_08"); //РС‰СѓС‰РёР№ РѕРіРѕРЅРµРє РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РёСЃРєР°С‚СЊ РѕСЂСѓР¶РёРµ.
 
 	if (MIS_Vatras_FindTheBanditTrader == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_09"); //С его помощью ты сможешь узнать, какими путями оружие попадает к бандитам.
+		AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_09"); //РЎ РµРіРѕ РїРѕРјРѕС‰СЊСЋ С‚С‹ СЃРјРѕР¶РµС€СЊ СѓР·РЅР°С‚СЊ, РєР°РєРёРјРё РїСѓС‚СЏРјРё РѕСЂСѓР¶РёРµ РїРѕРїР°РґР°РµС‚ Рє Р±Р°РЅРґРёС‚Р°Рј.
 	};
 
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_10"); //Храни его, и он никогда не подведет тебя.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_10"); //РҐСЂР°РЅРё РµРіРѕ, Рё РѕРЅ РЅРёРєРѕРіРґР° РЅРµ РїРѕРґРІРµРґРµС‚ С‚РµР±СЏ.
 
 	Info_ClearChoices (DIA_Addon_Vatras_WISP);
-	Info_AddChoice (DIA_Addon_Vatras_WISP, "Спасибо! Я обязательно воспользуюсь им.", DIA_Addon_Vatras_WISP_Thanks);
-	Info_AddChoice (DIA_Addon_Vatras_WISP, "А что еще может делать ищущий огонек?", DIA_Addon_Vatras_WISP_MoreWISP);
-	Info_AddChoice (DIA_Addon_Vatras_WISP, "Ищущий огонек в амулете?", DIA_Addon_Vatras_WISP_Amulett);
+	Info_AddChoice (DIA_Addon_Vatras_WISP, "РЎРїР°СЃРёР±Рѕ! РЇ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РІРѕСЃРїРѕР»СЊР·СѓСЋСЃСЊ РёРј.", DIA_Addon_Vatras_WISP_Thanks);
+	Info_AddChoice (DIA_Addon_Vatras_WISP, "Рђ С‡С‚Рѕ РµС‰Рµ РјРѕР¶РµС‚ РґРµР»Р°С‚СЊ РёС‰СѓС‰РёР№ РѕРіРѕРЅРµРє?", DIA_Addon_Vatras_WISP_MoreWISP);
+	Info_AddChoice (DIA_Addon_Vatras_WISP, "РС‰СѓС‰РёР№ РѕРіРѕРЅРµРє РІ Р°РјСѓР»РµС‚Рµ?", DIA_Addon_Vatras_WISP_Amulett);
 	SC_GotWisp = TRUE;	
 };
 func void DIA_Addon_Vatras_WISP_Thanks()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Thanks_15_00"); //Спасибо! Я обязательно воспользуюсь им.
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Thanks_15_00"); //РЎРїР°СЃРёР±Рѕ! РЇ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РІРѕСЃРїРѕР»СЊР·СѓСЋСЃСЊ РёРј.
 	Info_ClearChoices (DIA_Addon_Vatras_WISP);
 };
 func void DIA_Addon_Vatras_WISP_MoreWISP()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_MoreWISP_15_00"); //А что еще может делать ищущий огонек?
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_01"); //Что еще, кроме поиска оружия? Больше ничего, если только ты его не научишь.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_02"); //Мне кажется, Риордан знает, как обучать эти штуки. Он один из нас, и в данный момент он путешествует вместе с Сатурасом.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_03"); //Возможно, он сможет рассказать тебе больше.
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_MoreWISP_15_00"); //Рђ С‡С‚Рѕ РµС‰Рµ РјРѕР¶РµС‚ РґРµР»Р°С‚СЊ РёС‰СѓС‰РёР№ РѕРіРѕРЅРµРє?
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_01"); //Р§С‚Рѕ РµС‰Рµ, РєСЂРѕРјРµ РїРѕРёСЃРєР° РѕСЂСѓР¶РёСЏ? Р‘РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ, РµСЃР»Рё С‚РѕР»СЊРєРѕ С‚С‹ РµРіРѕ РЅРµ РЅР°СѓС‡РёС€СЊ.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_02"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, Р РёРѕСЂРґР°РЅ Р·РЅР°РµС‚, РєР°Рє РѕР±СѓС‡Р°С‚СЊ СЌС‚Рё С€С‚СѓРєРё. РћРЅ РѕРґРёРЅ РёР· РЅР°СЃ, Рё РІ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РѕРЅ РїСѓС‚РµС€РµСЃС‚РІСѓРµС‚ РІРјРµСЃС‚Рµ СЃ РЎР°С‚СѓСЂР°СЃРѕРј.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_03"); //Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ СЃРјРѕР¶РµС‚ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ Р±РѕР»СЊС€Рµ.
 
 	if (MIS_Vatras_FindTheBanditTrader == LOG_RUNNING)
 	{
-		B_LogEntry (TOPIC_Addon_BanditTrader,"Мой блуждающий огонек может искать не только оружие ближнего боя. Научить его искать другие предметы может маг воды Риордан."); 
+		B_LogEntry (TOPIC_Addon_BanditTrader,"РњРѕР№ Р±Р»СѓР¶РґР°СЋС‰РёР№ РѕРіРѕРЅРµРє РјРѕР¶РµС‚ РёСЃРєР°С‚СЊ РЅРµ С‚РѕР»СЊРєРѕ РѕСЂСѓР¶РёРµ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ. РќР°СѓС‡РёС‚СЊ РµРіРѕ РёСЃРєР°С‚СЊ РґСЂСѓРіРёРµ РїСЂРµРґРјРµС‚С‹ РјРѕР¶РµС‚ РјР°Рі РІРѕРґС‹ Р РёРѕСЂРґР°РЅ."); 
 	};
 };
 func void DIA_Addon_Vatras_WISP_Amulett()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_WISPDETECTOR_was_15_00"); //Ищущий огонек в амулете?
-	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_01"); //Ищущие огоньки - это удивительные существа. Они полностью состоят из магической энергии.
-	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_02"); //Они связаны с магической рудой этого мира. Она дает им силу.
-	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_03"); //Меня не удивляет, что ты никогда не слышал о них. Они являются только людям, у которых при себе есть их родная руда.
-	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_04"); //Ищущие огоньки были насильно изгнаны со своих земель.
-	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_05"); //Мы никак не можем помочь этим несчастным созданиям. Тебе лучше держаться от них подальше.
+	AI_Output (other, self, "DIA_Addon_Vatras_WISPDETECTOR_was_15_00"); //РС‰СѓС‰РёР№ РѕРіРѕРЅРµРє РІ Р°РјСѓР»РµС‚Рµ?
+	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_01"); //РС‰СѓС‰РёРµ РѕРіРѕРЅСЊРєРё - СЌС‚Рѕ СѓРґРёРІРёС‚РµР»СЊРЅС‹Рµ СЃСѓС‰РµСЃС‚РІР°. РћРЅРё РїРѕР»РЅРѕСЃС‚СЊСЋ СЃРѕСЃС‚РѕСЏС‚ РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё.
+	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_02"); //РћРЅРё СЃРІСЏР·Р°РЅС‹ СЃ РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґРѕР№ СЌС‚РѕРіРѕ РјРёСЂР°. РћРЅР° РґР°РµС‚ РёРј СЃРёР»Сѓ.
+	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_03"); //РњРµРЅСЏ РЅРµ СѓРґРёРІР»СЏРµС‚, С‡С‚Рѕ С‚С‹ РЅРёРєРѕРіРґР° РЅРµ СЃР»С‹С€Р°Р» Рѕ РЅРёС…. РћРЅРё СЏРІР»СЏСЋС‚СЃСЏ С‚РѕР»СЊРєРѕ Р»СЋРґСЏРј, Сѓ РєРѕС‚РѕСЂС‹С… РїСЂРё СЃРµР±Рµ РµСЃС‚СЊ РёС… СЂРѕРґРЅР°СЏ СЂСѓРґР°.
+	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_04"); //РС‰СѓС‰РёРµ РѕРіРѕРЅСЊРєРё Р±С‹Р»Рё РЅР°СЃРёР»СЊРЅРѕ РёР·РіРЅР°РЅС‹ СЃРѕ СЃРІРѕРёС… Р·РµРјРµР»СЊ.
+	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_05"); //РњС‹ РЅРёРєР°Рє РЅРµ РјРѕР¶РµРј РїРѕРјРѕС‡СЊ СЌС‚РёРј РЅРµСЃС‡Р°СЃС‚РЅС‹Рј СЃРѕР·РґР°РЅРёСЏРј. РўРµР±Рµ Р»СѓС‡С€Рµ РґРµСЂР¶Р°С‚СЊСЃСЏ РѕС‚ РЅРёС… РїРѕРґР°Р»СЊС€Рµ.
 };
 
 // ********************************************************
@@ -1271,7 +1271,7 @@ instance DIA_Addon_Vatras_Stoneplate (C_INFO)
 	condition	= DIA_Addon_Vatras_Stoneplate_Condition;
 	information	= DIA_Addon_Vatras_Stoneplate_Info;
 
-	description	= "У меня с собой есть каменная табличка.";
+	description	= "РЈ РјРµРЅСЏ СЃ СЃРѕР±РѕР№ РµСЃС‚СЊ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°.";
 };
 
 func int DIA_Addon_Vatras_Stoneplate_Condition ()
@@ -1285,11 +1285,11 @@ func int DIA_Addon_Vatras_Stoneplate_Condition ()
 
 func void DIA_Addon_Vatras_Stoneplate_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_Stoneplate_15_00"); //У меня с собой есть каменная табличка. Не мог бы ты мне рассказать о ней что-нибудь?
-	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_01"); //Это артефакт древней культуры, которую мы давно исследуем.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_02"); //Существует несколько разновидностей таких табличек. В некоторых из них содержится информация по истории древних народов.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_03"); //Меня интересуют именно они. Принеси мне все, какие сможешь найти.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_04"); //Тебя будет ждать достойная награда.
+	AI_Output	(other, self, "DIA_Addon_Vatras_Stoneplate_15_00"); //РЈ РјРµРЅСЏ СЃ СЃРѕР±РѕР№ РµСЃС‚СЊ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°. РќРµ РјРѕРі Р±С‹ С‚С‹ РјРЅРµ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ РЅРµР№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
+	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_01"); //Р­С‚Рѕ Р°СЂС‚РµС„Р°РєС‚ РґСЂРµРІРЅРµР№ РєСѓР»СЊС‚СѓСЂС‹, РєРѕС‚РѕСЂСѓСЋ РјС‹ РґР°РІРЅРѕ РёСЃСЃР»РµРґСѓРµРј.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_02"); //РЎСѓС‰РµСЃС‚РІСѓРµС‚ РЅРµСЃРєРѕР»СЊРєРѕ СЂР°Р·РЅРѕРІРёРґРЅРѕСЃС‚РµР№ С‚Р°РєРёС… С‚Р°Р±Р»РёС‡РµРє. Р’ РЅРµРєРѕС‚РѕСЂС‹С… РёР· РЅРёС… СЃРѕРґРµСЂР¶РёС‚СЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ РїРѕ РёСЃС‚РѕСЂРёРё РґСЂРµРІРЅРёС… РЅР°СЂРѕРґРѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_03"); //РњРµРЅСЏ РёРЅС‚РµСЂРµСЃСѓСЋС‚ РёРјРµРЅРЅРѕ РѕРЅРё. РџСЂРёРЅРµСЃРё РјРЅРµ РІСЃРµ, РєР°РєРёРµ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_04"); //РўРµР±СЏ Р±СѓРґРµС‚ Р¶РґР°С‚СЊ РґРѕСЃС‚РѕР№РЅР°СЏ РЅР°РіСЂР°РґР°.
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
@@ -1309,7 +1309,7 @@ instance DIA_Addon_Vatras_SellStonplate		(C_INFO)
 	condition	= DIA_Addon_Vatras_SellStonplate_Condition;
 	information	= DIA_Addon_Vatras_SellStonplate_Info;
 	permanent 	= TRUE;
-	description	= "Я принес тебе еще таблички...";
+	description	= "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РµС‰Рµ С‚Р°Р±Р»РёС‡РєРё...";
 };
 func int DIA_Addon_Vatras_SellStonplate_Condition ()
 {
@@ -1325,31 +1325,31 @@ func void DIA_Addon_Vatras_SellStonplate_Info ()
 	
 	if (anzahl == 1)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_SellStonplate_15_00"); //Я принес тебе еще таблички...
+		AI_Output	(other, self, "DIA_Addon_Vatras_SellStonplate_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РµС‰Рµ С‚Р°Р±Р»РёС‡РєРё...
 	}
 	else 
 	{
-		//Fixme Joly --> Hier SC-output "Hier.." oder дhnliche --Mike
+		//Fixme Joly --> Hier SC-output "Hier.." oder Рґhnliche --Mike
 	};
 	
 	B_GiveInvItems (other, self, ItWr_StonePlateCommon_Addon, anzahl);
 		
-	AI_Output	(self, other, "DIA_Addon_Vatras_SellStonplate_05_01"); //Отлично!
+	AI_Output	(self, other, "DIA_Addon_Vatras_SellStonplate_05_01"); //РћС‚Р»РёС‡РЅРѕ!
 	
 	if (anzahl >= 10)
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_02"); //За это я повышу твои магические способности!
+		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_02"); //Р—Р° СЌС‚Рѕ СЏ РїРѕРІС‹С€Сѓ С‚РІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё!
 		B_RaiseAttribute	(other, ATR_MANA_MAX, anzahl);
 		Npc_ChangeAttribute	(other, ATR_MANA, anzahl);
 	}
 	else if (anzahl >= 5)
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_04"); //Вот, возьми в награду несколько магических свитков...
+		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_04"); //Р’РѕС‚, РІРѕР·СЊРјРё РІ РЅР°РіСЂР°РґСѓ РЅРµСЃРєРѕР»СЊРєРѕ РјР°РіРёС‡РµСЃРєРёС… СЃРІРёС‚РєРѕРІ...
 		B_GiveInvItems (self, other, ItSc_InstantFireball, anzahl);
 	}
-	else // 1-4 Plates --> 2-5 Trдnke
+	else // 1-4 Plates --> 2-5 TrРґnke
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_03"); //Вот, возьми в награду несколько зелий...
+		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_03"); //Р’РѕС‚, РІРѕР·СЊРјРё РІ РЅР°РіСЂР°РґСѓ РЅРµСЃРєРѕР»СЊРєРѕ Р·РµР»РёР№...
 		B_GiveInvItems (self, other, ItPo_Health_03, anzahl+1);
 	};
 	
@@ -1368,7 +1368,7 @@ instance DIA_Addon_Vatras_GuildHelp		(C_INFO)
 	condition	 = 	DIA_Addon_Vatras_GuildHelp_Condition;
 	information	 = 	DIA_Addon_Vatras_GuildHelp_Info;
 
-	description	 = 	"Ларес сказал, что ты можешь помочь мне попасть в монастырь магов огня.";
+	description	 = 	"Р›Р°СЂРµСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РјР°РіРѕРІ РѕРіРЅСЏ.";
 };
 
 func int DIA_Addon_Vatras_GuildHelp_Condition ()
@@ -1381,33 +1381,33 @@ func int DIA_Addon_Vatras_GuildHelp_Condition ()
 
 func void DIA_Addon_Vatras_GuildHelp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_00"); //Ларес сказал, что ты можешь помочь мне попасть в монастырь магов огня.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_01"); //Это твой выбор? Идти по пути огня?
-	AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_02"); //Да. Я хочу стать магом огня.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_03"); //Насколько мне известно, они с радостью принимают послушников. Так зачем тебе нужна моя помощь?
+	AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_00"); //Р›Р°СЂРµСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РјР°РіРѕРІ РѕРіРЅСЏ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_01"); //Р­С‚Рѕ С‚РІРѕР№ РІС‹Р±РѕСЂ? РРґС‚Рё РїРѕ РїСѓС‚Рё РѕРіРЅСЏ?
+	AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_02"); //Р”Р°. РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°РіРѕРј РѕРіРЅСЏ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_03"); //РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, РѕРЅРё СЃ СЂР°РґРѕСЃС‚СЊСЋ РїСЂРёРЅРёРјР°СЋС‚ РїРѕСЃР»СѓС€РЅРёРєРѕРІ. РўР°Рє Р·Р°С‡РµРј С‚РµР±Рµ РЅСѓР¶РЅР° РјРѕСЏ РїРѕРјРѕС‰СЊ?
 
 	if (SC_KnowsKlosterTribut == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_04"); //Послушник перед воротам монастыря требует, чтобы я заплатил за вход. Он требует овцу и золото.
+		AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_04"); //РџРѕСЃР»СѓС€РЅРёРє РїРµСЂРµРґ РІРѕСЂРѕС‚Р°Рј РјРѕРЅР°СЃС‚С‹СЂСЏ С‚СЂРµР±СѓРµС‚, С‡С‚РѕР±С‹ СЏ Р·Р°РїР»Р°С‚РёР» Р·Р° РІС…РѕРґ. РћРЅ С‚СЂРµР±СѓРµС‚ РѕРІС†Сѓ Рё Р·РѕР»РѕС‚Рѕ.
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_05"); //Ларес упомянул, что они требуют плату за вход в монастырь.
+		AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_05"); //Р›Р°СЂРµСЃ СѓРїРѕРјСЏРЅСѓР», С‡С‚Рѕ РѕРЅРё С‚СЂРµР±СѓСЋС‚ РїР»Р°С‚Сѓ Р·Р° РІС…РѕРґ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.
 	};	
 	
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_06"); //Я не смогу провести тебя в монастырь. Я все-таки маг воды, знаешь ли. Но я очень хорошо знаю мага огня Дарона.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_07"); //Большую часть времени он проводит на рыночной площади, собирая пожертвования.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_06"); //РЇ РЅРµ СЃРјРѕРіСѓ РїСЂРѕРІРµСЃС‚Рё С‚РµР±СЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. РЇ РІСЃРµ-С‚Р°РєРё РјР°Рі РІРѕРґС‹, Р·РЅР°РµС€СЊ Р»Рё. РќРѕ СЏ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ Р·РЅР°СЋ РјР°РіР° РѕРіРЅСЏ Р”Р°СЂРѕРЅР°.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_07"); //Р‘РѕР»СЊС€СѓСЋ С‡Р°СЃС‚СЊ РІСЂРµРјРµРЅРё РѕРЅ РїСЂРѕРІРѕРґРёС‚ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё, СЃРѕР±РёСЂР°СЏ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёСЏ.
 	Vatras_SentToDaron = TRUE;
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_08"); //Но я слышал, что иногда он отлучается из города.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_09"); //Он рассказал мне о статуэтке, которую у него украли.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_10"); //Эта вещица очень много значит для него. Если ты сумеешь вернуть статуэтку, он обязательно проведет тебя в монастырь.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_11"); //Помни, что даже если ты вступишь в круг огня, ты все еще сможешь присоединиться к нам.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_12"); //Если, конечно, докажешь свою полезность.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_08"); //РќРѕ СЏ СЃР»С‹С€Р°Р», С‡С‚Рѕ РёРЅРѕРіРґР° РѕРЅ РѕС‚Р»СѓС‡Р°РµС‚СЃСЏ РёР· РіРѕСЂРѕРґР°.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_09"); //РћРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ СЃС‚Р°С‚СѓСЌС‚РєРµ, РєРѕС‚РѕСЂСѓСЋ Сѓ РЅРµРіРѕ СѓРєСЂР°Р»Рё.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_10"); //Р­С‚Р° РІРµС‰РёС†Р° РѕС‡РµРЅСЊ РјРЅРѕРіРѕ Р·РЅР°С‡РёС‚ РґР»СЏ РЅРµРіРѕ. Р•СЃР»Рё С‚С‹ СЃСѓРјРµРµС€СЊ РІРµСЂРЅСѓС‚СЊ СЃС‚Р°С‚СѓСЌС‚РєСѓ, РѕРЅ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїСЂРѕРІРµРґРµС‚ С‚РµР±СЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_11"); //РџРѕРјРЅРё, С‡С‚Рѕ РґР°Р¶Рµ РµСЃР»Рё С‚С‹ РІСЃС‚СѓРїРёС€СЊ РІ РєСЂСѓРі РѕРіРЅСЏ, С‚С‹ РІСЃРµ РµС‰Рµ СЃРјРѕР¶РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_12"); //Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, РґРѕРєР°Р¶РµС€СЊ СЃРІРѕСЋ РїРѕР»РµР·РЅРѕСЃС‚СЊ.
 	MIS_Addon_Vatras_Go2Daron = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Маг огня Дарон поможет мне попасть в монастырь, если я найду его похищенную статуэтку."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"РњР°Рі РѕРіРЅСЏ Р”Р°СЂРѕРЅ РїРѕРјРѕР¶РµС‚ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, РµСЃР»Рё СЏ РЅР°Р№РґСѓ РµРіРѕ РїРѕС…РёС‰РµРЅРЅСѓСЋ СЃС‚Р°С‚СѓСЌС‚РєСѓ."); 
 };
 
 
@@ -1418,7 +1418,7 @@ func void DIA_Addon_Vatras_GuildHelp_Info ()
 // ************************************************************
 
 // ============================================================
-// MORE 	(Wegen der alten ScheiЯe...)
+// MORE 	(Wegen der alten ScheiРЇe...)
 // ============================================================
 instance DIA_Vatras_MORE		(C_INFO)
 {
@@ -1427,7 +1427,7 @@ instance DIA_Vatras_MORE		(C_INFO)
 	condition	 = 	DIA_Vatras_MORE_Condition;
 	information	 = 	DIA_Vatras_MORE_Info;
 	permanent    =  TRUE;
-	description	 = 	"(еще)";
+	description	 = 	"(РµС‰Рµ)";
 };
 func int DIA_Vatras_MORE_Condition ()
 {
@@ -1451,7 +1451,7 @@ instance DIA_Vatras_INFLUENCE		(C_INFO)
 	condition	 = 	DIA_Vatras_INFLUENCE_Condition;
 	information	 = 	DIA_Vatras_INFLUENCE_Info;
 	permanent    =  FALSE;
-	description	 = 	"Я прошу твоего благословения.";
+	description	 = 	"РЇ РїСЂРѕС€Сѓ С‚РІРѕРµРіРѕ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёСЏ.";
 };
 func int DIA_Vatras_INFLUENCE_Condition ()
 {
@@ -1465,14 +1465,14 @@ func int DIA_Vatras_INFLUENCE_Condition ()
 };
 func void DIA_Vatras_INFLUENCE_Info ()
 {
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_00"); //Я прошу твоего благословения.
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_01"); //Почему я должен дать тебе мое благословение, чужеземец?
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_02"); //Я хочу стать учеником одного из мастеров в нижней части города.
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_11"); //Ступай с благословением Аданоса, сын мой!
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_00"); //РЇ РїСЂРѕС€Сѓ С‚РІРѕРµРіРѕ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_01"); //РџРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ РґР°С‚СЊ С‚РµР±Рµ РјРѕРµ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ, С‡СѓР¶РµР·РµРјРµС†?
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_02"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_11"); //РЎС‚СѓРїР°Р№ СЃ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµРј РђРґР°РЅРѕСЃР°, СЃС‹РЅ РјРѕР№!
 	Snd_Play ("LevelUp");
 	B_GivePlayerXP (XP_VatrasTruth);
 	Vatras_Segen = TRUE;
-	B_LogEntry (TOPIC_Thorben,"Маг воды Ватрас благословил меня.");
+	B_LogEntry (TOPIC_Thorben,"РњР°Рі РІРѕРґС‹ Р’Р°С‚СЂР°СЃ Р±Р»Р°РіРѕСЃР»РѕРІРёР» РјРµРЅСЏ.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1485,7 +1485,7 @@ instance DIA_Vatras_WoKdF (C_INFO)
 	condition	 = 	DIA_Vatras_WoKdF_Condition;
 	information	 = 	DIA_Vatras_WoKdF_Info;
 	permanent    =  FALSE;
-	description	 = 	"Где мне найти жреца Инноса?";		
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р¶СЂРµС†Р° РРЅРЅРѕСЃР°?";		
 };
 
 func int DIA_Vatras_WoKdF_Condition ()
@@ -1501,8 +1501,8 @@ func int DIA_Vatras_WoKdF_Condition ()
 };
 func void DIA_Vatras_WoKdF_Info ()
 {
-	AI_Output (other, self, "DIA_Vatras_WoKdF_15_00"); //Где мне найти жреца Инноса?
-	AI_Output (self, other, "DIA_Vatras_WoKdF_05_01"); //Попробуй поискать его на рыночной площади. Ты найдешь там представителя монастыря.
+	AI_Output (other, self, "DIA_Vatras_WoKdF_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р¶СЂРµС†Р° РРЅРЅРѕСЃР°?
+	AI_Output (self, other, "DIA_Vatras_WoKdF_05_01"); //РџРѕРїСЂРѕР±СѓР№ РїРѕРёСЃРєР°С‚СЊ РµРіРѕ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё. РўС‹ РЅР°Р№РґРµС€СЊ С‚Р°Рј РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЏ РјРѕРЅР°СЃС‚С‹СЂСЏ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1515,7 +1515,7 @@ instance DIA_Vatras_Spende (C_INFO)
 	condition	 = 	DIA_Vatras_Spende_Condition;
 	information	 = 	DIA_Vatras_Spende_Info;
 	permanent    =  TRUE;
-	description	 = 	"Я хочу сделать пожертвование Аданосу!";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЃРґРµР»Р°С‚СЊ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ РђРґР°РЅРѕСЃСѓ!";
 };
 
 func int DIA_Vatras_Spende_Condition ()
@@ -1528,49 +1528,49 @@ func int DIA_Vatras_Spende_Condition ()
 };
 func void DIA_Vatras_Spende_Info ()
 {
-	AI_Output (other, self, "DIA_Vatras_Spende_15_00"); //Я хочу сделать пожертвование Аданосу!
-	AI_Output (self, other, "DIA_Vatras_Spende_05_01"); //Пожертвование церкви Аданоса снимет часть грехов, которые ты мог совершить, сын мой.
-	AI_Output (self, other, "DIA_Vatras_Spende_05_02"); //Сколько ты можешь пожертвовать?
+	AI_Output (other, self, "DIA_Vatras_Spende_15_00"); //РЇ С…РѕС‡Сѓ СЃРґРµР»Р°С‚СЊ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ РђРґР°РЅРѕСЃСѓ!
+	AI_Output (self, other, "DIA_Vatras_Spende_05_01"); //РџРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ С†РµСЂРєРІРё РђРґР°РЅРѕСЃР° СЃРЅРёРјРµС‚ С‡Р°СЃС‚СЊ РіСЂРµС…РѕРІ, РєРѕС‚РѕСЂС‹Рµ С‚С‹ РјРѕРі СЃРѕРІРµСЂС€РёС‚СЊ, СЃС‹РЅ РјРѕР№.
+	AI_Output (self, other, "DIA_Vatras_Spende_05_02"); //РЎРєРѕР»СЊРєРѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ?
 	
 	Info_ClearChoices   (DIA_Vatras_Spende);
-	Info_AddChoice 		(DIA_Vatras_Spende, "Мне сейчас нечем поделиться...", DIA_Vatras_Spende_BACK);
+	Info_AddChoice 		(DIA_Vatras_Spende, "РњРЅРµ СЃРµР№С‡Р°СЃ РЅРµС‡РµРј РїРѕРґРµР»РёС‚СЊСЃСЏ...", DIA_Vatras_Spende_BACK);
 	if (Npc_HasItems(other,itmi_gold) >= 50)
 	{
-		Info_AddChoice 		(DIA_Vatras_Spende, "У меня есть 50 золотых монет...", DIA_Vatras_Spende_50);
+		Info_AddChoice 		(DIA_Vatras_Spende, "РЈ РјРµРЅСЏ РµСЃС‚СЊ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚...", DIA_Vatras_Spende_50);
 	};
 	if (Npc_HasItems(other,itmi_gold) >= 100)
 	{
-		Info_AddChoice 		(DIA_Vatras_Spende, "У меня есть 100 золотых монет...",	DIA_Vatras_Spende_100);
+		Info_AddChoice 		(DIA_Vatras_Spende, "РЈ РјРµРЅСЏ РµСЃС‚СЊ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚...",	DIA_Vatras_Spende_100);
 	};
 };
 
 func void DIA_Vatras_Spende_BACK()
 {
-	AI_Output (other, self, "DIA_Vatras_Spende_BACK_15_00"); //Мне сейчас нечем поделиться...
-	AI_Output (self, other, "DIA_Vatras_Spende_BACK_05_01"); //Это не проблема, ты можешь выразить свои добрые намерения позже, сын мой.
+	AI_Output (other, self, "DIA_Vatras_Spende_BACK_15_00"); //РњРЅРµ СЃРµР№С‡Р°СЃ РЅРµС‡РµРј РїРѕРґРµР»РёС‚СЊСЃСЏ...
+	AI_Output (self, other, "DIA_Vatras_Spende_BACK_05_01"); //Р­С‚Рѕ РЅРµ РїСЂРѕР±Р»РµРјР°, С‚С‹ РјРѕР¶РµС€СЊ РІС‹СЂР°Р·РёС‚СЊ СЃРІРѕРё РґРѕР±СЂС‹Рµ РЅР°РјРµСЂРµРЅРёСЏ РїРѕР·Р¶Рµ, СЃС‹РЅ РјРѕР№.
 	Info_ClearChoices   (DIA_Vatras_Spende);
 };
 
 func void DIA_Vatras_Spende_50()
 {
-	AI_Output (other, self, "DIA_Vatras_Spende_50_15_00"); //У меня есть 50 золотых монет...
-	AI_Output (self, other, "DIA_Vatras_Spende_50_05_01"); //Я благодарю тебя от имени Аданоса, сын мой. Твое золото будет роздано нуждающимся.
+	AI_Output (other, self, "DIA_Vatras_Spende_50_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚...
+	AI_Output (self, other, "DIA_Vatras_Spende_50_05_01"); //РЇ Р±Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ РѕС‚ РёРјРµРЅРё РђРґР°РЅРѕСЃР°, СЃС‹РЅ РјРѕР№. РўРІРѕРµ Р·РѕР»РѕС‚Рѕ Р±СѓРґРµС‚ СЂРѕР·РґР°РЅРѕ РЅСѓР¶РґР°СЋС‰РёРјСЃСЏ.
 	B_GiveInvItems (other, self, Itmi_Gold, 50);
 	Info_ClearChoices   (DIA_Vatras_Spende);
 };
 	
 func void DIA_Vatras_Spende_100()
 {
-	AI_Output (other, self, "DIA_Vatras_Spende_100_15_00"); //У меня есть 100 золотых монет...
-	AI_Output (self, other, "DIA_Vatras_Spende_100_05_01"); //Я благословляю тебя от имени Аданоса за этот великодушный дар!
+	AI_Output (other, self, "DIA_Vatras_Spende_100_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚...
+	AI_Output (self, other, "DIA_Vatras_Spende_100_05_01"); //РЇ Р±Р»Р°РіРѕСЃР»РѕРІР»СЏСЋ С‚РµР±СЏ РѕС‚ РёРјРµРЅРё РђРґР°РЅРѕСЃР° Р·Р° СЌС‚РѕС‚ РІРµР»РёРєРѕРґСѓС€РЅС‹Р№ РґР°СЂ!
 	Snd_Play ("LevelUp");
-	AI_Output (self, other, "DIA_Vatras_Spende_100_05_02"); //Да будет путь, по которому ты идешь, благословлен Аданосом!
+	AI_Output (self, other, "DIA_Vatras_Spende_100_05_02"); //Р”Р° Р±СѓРґРµС‚ РїСѓС‚СЊ, РїРѕ РєРѕС‚РѕСЂРѕРјСѓ С‚С‹ РёРґРµС€СЊ, Р±Р»Р°РіРѕСЃР»РѕРІР»РµРЅ РђРґР°РЅРѕСЃРѕРј!
 	B_GiveInvItems (other, self, ITmi_Gold, 100);
 	Vatras_Segen = TRUE;
 	Info_ClearChoices   (DIA_Vatras_Spende);
 	if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 	{
-		B_LogEntry (TOPIC_Thorben,"Маг воды Ватрас благословил меня.");
+		B_LogEntry (TOPIC_Thorben,"РњР°Рі РІРѕРґС‹ Р’Р°С‚СЂР°СЃ Р±Р»Р°РіРѕСЃР»РѕРІРёР» РјРµРЅСЏ.");
 	};
 };
 
@@ -1584,7 +1584,7 @@ instance DIA_Vatras_CanTeach		(C_INFO)
 	condition	 = 	DIA_Vatras_CanTeach_Condition;
 	information	 = 	DIA_Vatras_CanTeach_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ты можешь научить меня чему-нибудь из области магии?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РёР· РѕР±Р»Р°СЃС‚Рё РјР°РіРёРё?";
 };
 
 func int DIA_Vatras_CanTeach_Condition ()
@@ -1597,14 +1597,14 @@ func int DIA_Vatras_CanTeach_Condition ()
 };
 func void DIA_Vatras_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Vatras_CanTeach_15_00"); //Ты можешь научить меня чему-нибудь из области магии?
-	AI_Output (self, other, "DIA_Vatras_CanTeach_05_01"); //Только Избранным Инноса и Избранным Аданоса позволено пользоваться магией рун.
-	AI_Output (self, other, "DIA_Vatras_CanTeach_05_02"); //Но обычные смертные также могут пользоваться магией при помощи свитков.
-	AI_Output (self, other, "DIA_Vatras_CanTeach_05_03"); //Я могу показать тебе, как направлять и усиливать свои магические способности.
+	AI_Output (other, self, "DIA_Vatras_CanTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РёР· РѕР±Р»Р°СЃС‚Рё РјР°РіРёРё?
+	AI_Output (self, other, "DIA_Vatras_CanTeach_05_01"); //РўРѕР»СЊРєРѕ РР·Р±СЂР°РЅРЅС‹Рј РРЅРЅРѕСЃР° Рё РР·Р±СЂР°РЅРЅС‹Рј РђРґР°РЅРѕСЃР° РїРѕР·РІРѕР»РµРЅРѕ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РјР°РіРёРµР№ СЂСѓРЅ.
+	AI_Output (self, other, "DIA_Vatras_CanTeach_05_02"); //РќРѕ РѕР±С‹С‡РЅС‹Рµ СЃРјРµСЂС‚РЅС‹Рµ С‚Р°РєР¶Рµ РјРѕРіСѓС‚ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РјР°РіРёРµР№ РїСЂРё РїРѕРјРѕС‰Рё СЃРІРёС‚РєРѕРІ.
+	AI_Output (self, other, "DIA_Vatras_CanTeach_05_03"); //РЇ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РЅР°РїСЂР°РІР»СЏС‚СЊ Рё СѓСЃРёР»РёРІР°С‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 	
 	Vatras_TeachMANA = TRUE;
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Маг воды Ватрас может помочь мне повысить мои магические способности.");
+	B_LogEntry (Topic_CityTeacher,"РњР°Рі РІРѕРґС‹ Р’Р°С‚СЂР°СЃ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -1616,7 +1616,7 @@ instance DIA_Vatras_Teach		(C_INFO)
 	condition	 = 	DIA_Vatras_Teach_Condition;
 	information	 = 	DIA_Vatras_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу повысить мои магические способности.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 };
 func int DIA_Vatras_Teach_Condition ()
 {	
@@ -1629,7 +1629,7 @@ func int DIA_Vatras_Teach_Condition ()
 };
 func void DIA_Vatras_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Vatras_Teach_15_00"); //Я хочу повысить мои магические способности.
+	AI_Output (other, self, "DIA_Vatras_Teach_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 	
 	Info_ClearChoices   (DIA_Vatras_Teach);
 	Info_AddChoice 		(DIA_Vatras_Teach, DIALOG_BACK, DIA_Vatras_Teach_BACK);
@@ -1641,7 +1641,7 @@ func void DIA_Vatras_Teach_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_HIGH)
 	{
-		AI_Output (self, other, "DIA_Vatras_Teach_05_00"); //Твоя магическая энергия стала слишком велика, чтобы я мог еще повысить ее.
+		AI_Output (self, other, "DIA_Vatras_Teach_05_00"); //РўРІРѕСЏ РјР°РіРёС‡РµСЃРєР°СЏ СЌРЅРµСЂРіРёСЏ СЃС‚Р°Р»Р° СЃР»РёС€РєРѕРј РІРµР»РёРєР°, С‡С‚РѕР±С‹ СЏ РјРѕРі РµС‰Рµ РїРѕРІС‹СЃРёС‚СЊ РµРµ.
 	};
 	Info_ClearChoices (DIA_Vatras_TEACH);
 };
@@ -1675,11 +1675,11 @@ func void DIA_Vatras_Teach_5()
 instance DIA_Vatras_GODS		(C_INFO)
 {
 	npc			 = 	VLK_439_Vatras;
-	nr          = 	98;	//Joly: bracuht ne hohe Nummer, denn wird in den spдteren Kapiteln auch verwendet.
+	nr          = 	98;	//Joly: bracuht ne hohe Nummer, denn wird in den spРґteren Kapiteln auch verwendet.
 	condition	 = 	DIA_Vatras_GODS_Condition;
 	information	 = 	DIA_Vatras_GODS_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Расскажи мне о богах.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±РѕРіР°С….";
 };
 
 func int DIA_Vatras_GODS_Condition ()
@@ -1692,14 +1692,14 @@ func int DIA_Vatras_GODS_Condition ()
 };
 func void DIA_Vatras_GODS_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_GODS_15_00"); //Расскажи мне о богах.
-	AI_Output			(self, other, "DIA_Vatras_GODS_05_01"); //Что именно ты хочешь знать?
+	AI_Output			(other, self, "DIA_Vatras_GODS_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±РѕРіР°С….
+	AI_Output			(self, other, "DIA_Vatras_GODS_05_01"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚С‹ С…РѕС‡РµС€СЊ Р·РЅР°С‚СЊ?
 	
 	Info_ClearChoices (DIA_Vatras_GODS); 
 	Info_AddChoice	  (DIA_Vatras_GODS,DIALOG_BACK             ,DIA_Vatras_GODS_BACK);
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне об Инносе.",DIA_Vatras_GODS_INNOS); 		 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне об Аданосе.",DIA_Vatras_GODS_ADANOS); 		 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне о Белиаре.",DIA_Vatras_GODS_BELIAR); 		 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РРЅРЅРѕСЃРµ.",DIA_Vatras_GODS_INNOS); 		 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РђРґР°РЅРѕСЃРµ.",DIA_Vatras_GODS_ADANOS); 		 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р‘РµР»РёР°СЂРµ.",DIA_Vatras_GODS_BELIAR); 		 
 	 		 
 };
 FUNC VOID DIA_Vatras_GODS_BACK()
@@ -1708,44 +1708,44 @@ FUNC VOID DIA_Vatras_GODS_BACK()
 };
 FUNC VOID DIA_Vatras_GODS_INNOS()
 {
-	AI_Output			(other, self, "DIA_Vatras_GODS_INNOS_15_00"); //Расскажи мне об Инносе.
-	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_01"); //Хорошо. (проповедует) Иннос - первый и величайший из богов. Он создал солнце и мир.
-	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_02"); //Он повелевает светом и огнем - его даром человечеству. Он суть закон и правосудие.
-	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_03"); //Его жрецы - маги Огня, а паладины - его воины.
+	AI_Output			(other, self, "DIA_Vatras_GODS_INNOS_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РРЅРЅРѕСЃРµ.
+	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_01"); //РҐРѕСЂРѕС€Рѕ. (РїСЂРѕРїРѕРІРµРґСѓРµС‚) РРЅРЅРѕСЃ - РїРµСЂРІС‹Р№ Рё РІРµР»РёС‡Р°Р№С€РёР№ РёР· Р±РѕРіРѕРІ. РћРЅ СЃРѕР·РґР°Р» СЃРѕР»РЅС†Рµ Рё РјРёСЂ.
+	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_02"); //РћРЅ РїРѕРІРµР»РµРІР°РµС‚ СЃРІРµС‚РѕРј Рё РѕРіРЅРµРј - РµРіРѕ РґР°СЂРѕРј С‡РµР»РѕРІРµС‡РµСЃС‚РІСѓ. РћРЅ СЃСѓС‚СЊ Р·Р°РєРѕРЅ Рё РїСЂР°РІРѕСЃСѓРґРёРµ.
+	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_03"); //Р•РіРѕ Р¶СЂРµС†С‹ - РјР°РіРё РћРіРЅСЏ, Р° РїР°Р»Р°РґРёРЅС‹ - РµРіРѕ РІРѕРёРЅС‹.
 	
 	Info_ClearChoices (DIA_Vatras_GODS); 
 	Info_AddChoice	  (DIA_Vatras_GODS,DIALOG_BACK             ,DIA_Vatras_GODS_BACK); 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне об Инносе.",DIA_Vatras_GODS_INNOS); 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне об Аданосе.",DIA_Vatras_GODS_ADANOS); 		 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне о Белиаре.",DIA_Vatras_GODS_BELIAR); 	
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РРЅРЅРѕСЃРµ.",DIA_Vatras_GODS_INNOS); 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РђРґР°РЅРѕСЃРµ.",DIA_Vatras_GODS_ADANOS); 		 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р‘РµР»РёР°СЂРµ.",DIA_Vatras_GODS_BELIAR); 	
 	
 };
 FUNC VOID DIA_Vatras_GODS_ADANOS()
 {
-	AI_Output			(other, self, "DIA_Vatras_GODS_ADANOS_15_00"); //Расскажи мне об Аданосе.
-	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_01"); //Аданос - бог центра. Он - весы правосудия, страж равновесия между Инносом и Белиаром.
-	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_02"); //Он повелевает силой изменения. Его дар - вода во всех океанах, реках и озерах.
-	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_03"); //Его жрецы - маги Воды. Я тоже слуга и жрец Аданоса.
+	AI_Output			(other, self, "DIA_Vatras_GODS_ADANOS_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РђРґР°РЅРѕСЃРµ.
+	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_01"); //РђРґР°РЅРѕСЃ - Р±РѕРі С†РµРЅС‚СЂР°. РћРЅ - РІРµСЃС‹ РїСЂР°РІРѕСЃСѓРґРёСЏ, СЃС‚СЂР°Р¶ СЂР°РІРЅРѕРІРµСЃРёСЏ РјРµР¶РґСѓ РРЅРЅРѕСЃРѕРј Рё Р‘РµР»РёР°СЂРѕРј.
+	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_02"); //РћРЅ РїРѕРІРµР»РµРІР°РµС‚ СЃРёР»РѕР№ РёР·РјРµРЅРµРЅРёСЏ. Р•РіРѕ РґР°СЂ - РІРѕРґР° РІРѕ РІСЃРµС… РѕРєРµР°РЅР°С…, СЂРµРєР°С… Рё РѕР·РµСЂР°С….
+	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_03"); //Р•РіРѕ Р¶СЂРµС†С‹ - РјР°РіРё Р’РѕРґС‹. РЇ С‚РѕР¶Рµ СЃР»СѓРіР° Рё Р¶СЂРµС† РђРґР°РЅРѕСЃР°.
 	
 	Info_ClearChoices (DIA_Vatras_GODS); 
 	Info_AddChoice	  (DIA_Vatras_GODS,DIALOG_BACK             ,DIA_Vatras_GODS_BACK); 	
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне об Инносе.",DIA_Vatras_GODS_INNOS); 		 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне об Аданосе.",DIA_Vatras_GODS_ADANOS);
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне о Белиаре.",DIA_Vatras_GODS_BELIAR); 	
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РРЅРЅРѕСЃРµ.",DIA_Vatras_GODS_INNOS); 		 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РђРґР°РЅРѕСЃРµ.",DIA_Vatras_GODS_ADANOS);
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р‘РµР»РёР°СЂРµ.",DIA_Vatras_GODS_BELIAR); 	
 
 };
 FUNC VOID DIA_Vatras_GODS_BELIAR()
 {
-	AI_Output			(other, self, "DIA_Vatras_GODS_BELIAR_15_00"); //Расскажи мне о Белиаре.
-	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_01"); //Белиар - это темный бог смерти, разрушения и всего неестественного.
-	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_02"); //Он ведет вечную битву с Инносом, но Аданос стоит на страже баланса между этими двумя.
-	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_03"); //Только немногие люди следуют зову Белиара, однако он дарует огромную силу своим слугам.
+	AI_Output			(other, self, "DIA_Vatras_GODS_BELIAR_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р‘РµР»РёР°СЂРµ.
+	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_01"); //Р‘РµР»РёР°СЂ - СЌС‚Рѕ С‚РµРјРЅС‹Р№ Р±РѕРі СЃРјРµСЂС‚Рё, СЂР°Р·СЂСѓС€РµРЅРёСЏ Рё РІСЃРµРіРѕ РЅРµРµСЃС‚РµСЃС‚РІРµРЅРЅРѕРіРѕ.
+	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_02"); //РћРЅ РІРµРґРµС‚ РІРµС‡РЅСѓСЋ Р±РёС‚РІСѓ СЃ РРЅРЅРѕСЃРѕРј, РЅРѕ РђРґР°РЅРѕСЃ СЃС‚РѕРёС‚ РЅР° СЃС‚СЂР°Р¶Рµ Р±Р°Р»Р°РЅСЃР° РјРµР¶РґСѓ СЌС‚РёРјРё РґРІСѓРјСЏ.
+	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_03"); //РўРѕР»СЊРєРѕ РЅРµРјРЅРѕРіРёРµ Р»СЋРґРё СЃР»РµРґСѓСЋС‚ Р·РѕРІСѓ Р‘РµР»РёР°СЂР°, РѕРґРЅР°РєРѕ РѕРЅ РґР°СЂСѓРµС‚ РѕРіСЂРѕРјРЅСѓСЋ СЃРёР»Сѓ СЃРІРѕРёРј СЃР»СѓРіР°Рј.
 	
 	Info_ClearChoices (DIA_Vatras_GODS); 
 	Info_AddChoice	  (DIA_Vatras_GODS,DIALOG_BACK             ,DIA_Vatras_GODS_BACK); 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне об Инносе.",DIA_Vatras_GODS_INNOS); 		 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне об Аданосе.",DIA_Vatras_GODS_ADANOS); 
-	Info_AddChoice	  (DIA_Vatras_GODS,"Расскажи мне о Белиаре.",DIA_Vatras_GODS_BELIAR); 			 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РРЅРЅРѕСЃРµ.",DIA_Vatras_GODS_INNOS); 		 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± РђРґР°РЅРѕСЃРµ.",DIA_Vatras_GODS_ADANOS); 
+	Info_AddChoice	  (DIA_Vatras_GODS,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р‘РµР»РёР°СЂРµ.",DIA_Vatras_GODS_BELIAR); 			 
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -1754,11 +1754,11 @@ FUNC VOID DIA_Vatras_GODS_BELIAR()
 instance DIA_Vatras_HEAL		(C_INFO)
 {
 	npc			 = 	VLK_439_Vatras;
-	nr          = 	99;	//Joly: bracuht ne hohe Nummer, denn wird in den spдteren Kapiteln auch verwendet.
+	nr          = 	99;	//Joly: bracuht ne hohe Nummer, denn wird in den spРґteren Kapiteln auch verwendet.
 	condition	 = 	DIA_Vatras_HEAL_Condition;
 	information	 = 	DIA_Vatras_HEAL_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Ты можешь вылечить меня?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РІС‹Р»РµС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 
 func int DIA_Vatras_HEAL_Condition ()
@@ -1771,17 +1771,17 @@ func int DIA_Vatras_HEAL_Condition ()
 };
 func void DIA_Vatras_HEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_HEAL_15_00"); //Ты можешь вылечить меня?
+	AI_Output			(other, self, "DIA_Vatras_HEAL_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РІС‹Р»РµС‡РёС‚СЊ РјРµРЅСЏ?
 	
 	if hero.attribute [ATR_HITPOINTS] < hero.attribute[ATR_HITPOINTS_MAX]
 	{
-		AI_Output			(self, other, "DIA_Vatras_HEAL_05_01"); //(благочестиво) Аданос, благослови это тело. Освободи его от ран и вдохни в него силу новой жизни.
+		AI_Output			(self, other, "DIA_Vatras_HEAL_05_01"); //(Р±Р»Р°РіРѕС‡РµСЃС‚РёРІРѕ) РђРґР°РЅРѕСЃ, Р±Р»Р°РіРѕСЃР»РѕРІРё СЌС‚Рѕ С‚РµР»Рѕ. РћСЃРІРѕР±РѕРґРё РµРіРѕ РѕС‚ СЂР°РЅ Рё РІРґРѕС…РЅРё РІ РЅРµРіРѕ СЃРёР»Сѓ РЅРѕРІРѕР№ Р¶РёР·РЅРё.
 		hero.attribute [ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 		PrintScreen (PRINT_FullyHealed, - 1, - 1, FONT_Screen, 2);   
 	}
 	else 
 	{	
-		AI_Output			(self, other, "DIA_Vatras_HEAL_05_02"); //Сейчас ты не нуждаешься в магии исцеления.
+		AI_Output			(self, other, "DIA_Vatras_HEAL_05_02"); //РЎРµР№С‡Р°СЃ С‚С‹ РЅРµ РЅСѓР¶РґР°РµС€СЊСЃСЏ РІ РјР°РіРёРё РёСЃС†РµР»РµРЅРёСЏ.
 	};	
 };
 
@@ -1811,46 +1811,46 @@ func int DIA_Vatras_MISSION_Condition ()
 };
 func void DIA_Vatras_MISSION_Info ()
 {
-	AI_Output (self, other, "DIA_Vatras_Add_05_10"); //У меня есть сообщение для мастера Исгарота. Он охраняет часовню перед монастырем.
-	AI_Output (self, other, "DIA_Vatras_MISSION_05_01"); //Если ты выполнишь это задание для меня, ты можешь выбрать вознаграждение.
+	AI_Output (self, other, "DIA_Vatras_Add_05_10"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ РјР°СЃС‚РµСЂР° РСЃРіР°СЂРѕС‚Р°. РћРЅ РѕС…СЂР°РЅСЏРµС‚ С‡Р°СЃРѕРІРЅСЋ РїРµСЂРµРґ РјРѕРЅР°СЃС‚С‹СЂРµРј.
+	AI_Output (self, other, "DIA_Vatras_MISSION_05_01"); //Р•СЃР»Рё С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ СЌС‚Рѕ Р·Р°РґР°РЅРёРµ РґР»СЏ РјРµРЅСЏ, С‚С‹ РјРѕР¶РµС€СЊ РІС‹Р±СЂР°С‚СЊ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ.
 	
 	Info_ClearChoices   (DIA_Vatras_MISSION);
-	Info_AddChoice 		(DIA_Vatras_MISSION,"Пока нет!",DIA_Vatras_MISSION_NO);
-	Info_AddChoice 		(DIA_Vatras_MISSION,"Конечно.",DIA_Vatras_MISSION_YES);
+	Info_AddChoice 		(DIA_Vatras_MISSION,"РџРѕРєР° РЅРµС‚!",DIA_Vatras_MISSION_NO);
+	Info_AddChoice 		(DIA_Vatras_MISSION,"РљРѕРЅРµС‡РЅРѕ.",DIA_Vatras_MISSION_YES);
 };
 FUNC VOID B_SayVatrasGo()
 {
-	AI_Output (self, other, "DIA_Vatras_Add_05_13"); //Хорошо. Так иди же к мастеру Исгароту.
+	AI_Output (self, other, "DIA_Vatras_Add_05_13"); //РҐРѕСЂРѕС€Рѕ. РўР°Рє РёРґРё Р¶Рµ Рє РјР°СЃС‚РµСЂСѓ РСЃРіР°СЂРѕС‚Сѓ.
 };
 func VOID DIA_Vatras_MISSION_YES()
 {
-	AI_Output (other, self, "DIA_Vatras_MISSION_YES_15_00"); //Я сделаю это.
-	AI_Output (self, other, "DIA_Vatras_Add_05_11"); //Хорошо, тогда доставь это сообщение и выбери один из этих свитков с заклинаниями.
-	AI_Output (self, other, "DIA_Vatras_Add_05_12"); //А когда ты доставишь сообщение, я вознагражу тебя соответствующим образом.
+	AI_Output (other, self, "DIA_Vatras_MISSION_YES_15_00"); //РЇ СЃРґРµР»Р°СЋ СЌС‚Рѕ.
+	AI_Output (self, other, "DIA_Vatras_Add_05_11"); //РҐРѕСЂРѕС€Рѕ, С‚РѕРіРґР° РґРѕСЃС‚Р°РІСЊ СЌС‚Рѕ СЃРѕРѕР±С‰РµРЅРёРµ Рё РІС‹Р±РµСЂРё РѕРґРёРЅ РёР· СЌС‚РёС… СЃРІРёС‚РєРѕРІ СЃ Р·Р°РєР»РёРЅР°РЅРёСЏРјРё.
+	AI_Output (self, other, "DIA_Vatras_Add_05_12"); //Рђ РєРѕРіРґР° С‚С‹ РґРѕСЃС‚Р°РІРёС€СЊ СЃРѕРѕР±С‰РµРЅРёРµ, СЏ РІРѕР·РЅР°РіСЂР°Р¶Сѓ С‚РµР±СЏ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРј РѕР±СЂР°Р·РѕРј.
 	
 	B_GiveInvItems (self, hero, ItWr_VatrasMessage,1); 
 	MIS_Vatras_Message = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Botschaft,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Botschaft,LOG_RUNNING);
-	B_LogEntry (TOPIC_Botschaft,"Ватрас дал мне записку для мастера Исгарота. Он находится в часовне неподалеку от монастыря.");
+	B_LogEntry (TOPIC_Botschaft,"Р’Р°С‚СЂР°СЃ РґР°Р» РјРЅРµ Р·Р°РїРёСЃРєСѓ РґР»СЏ РјР°СЃС‚РµСЂР° РСЃРіР°СЂРѕС‚Р°. РћРЅ РЅР°С…РѕРґРёС‚СЃСЏ РІ С‡Р°СЃРѕРІРЅРµ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РјРѕРЅР°СЃС‚С‹СЂСЏ.");
 	
 	Info_ClearChoices 	(DIA_Vatras_MISSION);
-	Info_AddChoice 		(DIA_Vatras_MISSION,"Я возьму заклинание света.",DIA_Vatras_MISSION_LIGHT);
-	Info_AddChoice 		(DIA_Vatras_MISSION,"Я выбираю лечебное заклинание.",DIA_Vatras_MISSION_HEAL);	
-	Info_AddChoice 		(DIA_Vatras_MISSION,"Дай мне Ледяную стрелу.",DIA_Vatras_MISSION_ICE);	
+	Info_AddChoice 		(DIA_Vatras_MISSION,"РЇ РІРѕР·СЊРјСѓ Р·Р°РєР»РёРЅР°РЅРёРµ СЃРІРµС‚Р°.",DIA_Vatras_MISSION_LIGHT);
+	Info_AddChoice 		(DIA_Vatras_MISSION,"РЇ РІС‹Р±РёСЂР°СЋ Р»РµС‡РµР±РЅРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ.",DIA_Vatras_MISSION_HEAL);	
+	Info_AddChoice 		(DIA_Vatras_MISSION,"Р”Р°Р№ РјРЅРµ Р›РµРґСЏРЅСѓСЋ СЃС‚СЂРµР»Сѓ.",DIA_Vatras_MISSION_ICE);	
 };
 FUNC VOID DIA_Vatras_MISSION_NO ()
 {	
 	//AI_Output	(other, self, "DIA_Vatras_MISSION_NO_15_00"); //Such dir einen anderen Laufburschen, alter Mann!
-	AI_Output (other, self, "DIA_ADDON_Vatras_MISSION_NO_15_00"); //Пока нет!
-	AI_Output (self, other, "DIA_ADDON_Vatras_MISSION_NO_05_01"); //Нет проблем. Я отправлю кого-нибудь другого.
+	AI_Output (other, self, "DIA_ADDON_Vatras_MISSION_NO_15_00"); //РџРѕРєР° РЅРµС‚!
+	AI_Output (self, other, "DIA_ADDON_Vatras_MISSION_NO_05_01"); //РќРµС‚ РїСЂРѕР±Р»РµРј. РЇ РѕС‚РїСЂР°РІР»СЋ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РґСЂСѓРіРѕРіРѕ.
 	MIS_Vatras_Message = LOG_OBSOLETE;
 	Info_ClearChoices 	(DIA_Vatras_MISSION);
 };
 FUNC VOID DIA_Vatras_MISSION_HEAL()
 {
-	AI_Output			(other, self, "DIA_Vatras_MISSION_HEAL_15_00"); //Я выбираю лечебное заклинание.
+	AI_Output			(other, self, "DIA_Vatras_MISSION_HEAL_15_00"); //РЇ РІС‹Р±РёСЂР°СЋ Р»РµС‡РµР±РЅРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ.
 	 B_SayVatrasGo();
 	 
 	B_GiveInvItems (self, hero,ItSc_LightHeal ,1);
@@ -1858,7 +1858,7 @@ FUNC VOID DIA_Vatras_MISSION_HEAL()
 };
 FUNC VOID DIA_Vatras_MISSION_ICE()
 {
-	AI_Output			(other, self, "DIA_Vatras_MISSION_ICE_15_00"); //Дай мне Ледяную стрелу.
+	AI_Output			(other, self, "DIA_Vatras_MISSION_ICE_15_00"); //Р”Р°Р№ РјРЅРµ Р›РµРґСЏРЅСѓСЋ СЃС‚СЂРµР»Сѓ.
 	B_SayVatrasGo();
 	
 	B_GiveInvItems (self, hero,ItSc_Icebolt ,1);
@@ -1866,7 +1866,7 @@ FUNC VOID DIA_Vatras_MISSION_ICE()
 };
 FUNC VOID DIA_Vatras_MISSION_LIGHT()
 {
-	AI_Output			(other, self, "DIA_Vatras_MISSION_LIGHT_15_00"); //Я возьму заклинание света.
+	AI_Output			(other, self, "DIA_Vatras_MISSION_LIGHT_15_00"); //РЇ РІРѕР·СЊРјСѓ Р·Р°РєР»РёРЅР°РЅРёРµ СЃРІРµС‚Р°.
 	B_SayVatrasGo();
 	
 	B_GiveInvItems (self, hero,ItSc_Light ,1);
@@ -1882,7 +1882,7 @@ instance DIA_Vatras_MESSAGE_SUCCESS		(C_INFO)
 	condition	= DIA_Vatras_MESSAGE_SUCCESS_Condition;
 	information	= DIA_Vatras_MESSAGE_SUCCESS_Info;
 	
-	description	= "Я доставил твое сообщение.";
+	description	= "РЇ РґРѕСЃС‚Р°РІРёР» С‚РІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ.";
 };
 
 func int DIA_Vatras_MESSAGE_SUCCESS_Condition ()
@@ -1895,16 +1895,16 @@ func int DIA_Vatras_MESSAGE_SUCCESS_Condition ()
 };
 func void DIA_Vatras_MESSAGE_SUCCESS_Info ()
 {
-	AI_Output (other, self, "DIA_Vatras_MESSAGE_SUCCESS_15_00"); //Я доставил твое сообщение.
-	AI_Output (self, other, "DIA_Vatras_Add_05_14"); //Прими мою благодарность. И свою награду.
+	AI_Output (other, self, "DIA_Vatras_MESSAGE_SUCCESS_15_00"); //РЇ РґРѕСЃС‚Р°РІРёР» С‚РІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ.
+	AI_Output (self, other, "DIA_Vatras_Add_05_14"); //РџСЂРёРјРё РјРѕСЋ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚СЊ. Р СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ.
 	
 	MIS_Vatras_Message = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Vatras_Message);
 	
 	Info_ClearChoices (DIA_Vatras_MESSAGE_SUCCESS);
-	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"1 царский щавель",DIA_Vatras_MESSAGE_SUCCESS_Plant);
-	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"Кольцо мастерства",DIA_Vatras_MESSAGE_SUCCESS_Ring);	
-	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"1 кусок руды",DIA_Vatras_MESSAGE_SUCCESS_Ore);
+	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ",DIA_Vatras_MESSAGE_SUCCESS_Plant);
+	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"РљРѕР»СЊС†Рѕ РјР°СЃС‚РµСЂСЃС‚РІР°",DIA_Vatras_MESSAGE_SUCCESS_Ring);	
+	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"1 РєСѓСЃРѕРє СЂСѓРґС‹",DIA_Vatras_MESSAGE_SUCCESS_Ore);
 };
 FUNC VOID DIA_Vatras_MESSAGE_SUCCESS_Plant()
 {
@@ -1955,18 +1955,18 @@ func void B_Vatras_GeheWeg (var int dauer)
 		B_StopLookAt(self);
 		AI_AlignToWP (self);
 		
-		AI_Output (self, other, "DIA_Vatras_Add_05_06"); //Послушайте меня люди! Я нужен в другом месте.
+		AI_Output (self, other, "DIA_Vatras_Add_05_06"); //РџРѕСЃР»СѓС€Р°Р№С‚Рµ РјРµРЅСЏ Р»СЋРґРё! РЇ РЅСѓР¶РµРЅ РІ РґСЂСѓРіРѕРј РјРµСЃС‚Рµ.
 		if (dauer == kurz)
 		{
-			AI_Output (self, other, "DIA_Vatras_Add_05_07"); //Это не займет много времени. А когда я вернусь, я расскажу вам окончание этой истории.
+			AI_Output (self, other, "DIA_Vatras_Add_05_07"); //Р­С‚Рѕ РЅРµ Р·Р°Р№РјРµС‚ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё. Рђ РєРѕРіРґР° СЏ РІРµСЂРЅСѓСЃСЊ, СЏ СЂР°СЃСЃРєР°Р¶Сѓ РІР°Рј РѕРєРѕРЅС‡Р°РЅРёРµ СЌС‚РѕР№ РёСЃС‚РѕСЂРёРё.
 		}
 		else //lang
 		{
-			AI_Output (self, other, "DIA_Vatras_Add_05_08"); //Я не знаю, вернусь ли я. Если же вы хотите знать окончание, прочтите эту историю в писаниях.
+			AI_Output (self, other, "DIA_Vatras_Add_05_08"); //РЇ РЅРµ Р·РЅР°СЋ, РІРµСЂРЅСѓСЃСЊ Р»Рё СЏ. Р•СЃР»Рё Р¶Рµ РІС‹ С…РѕС‚РёС‚Рµ Р·РЅР°С‚СЊ РѕРєРѕРЅС‡Р°РЅРёРµ, РїСЂРѕС‡С‚РёС‚Рµ СЌС‚Сѓ РёСЃС‚РѕСЂРёСЋ РІ РїРёСЃР°РЅРёСЏС….
 			
 			Vatras_einmalLangWeg = TRUE;
 		};
-		AI_Output (self, other, "DIA_Vatras_Add_05_09"); //Да пребудет с вами Аданос!
+		AI_Output (self, other, "DIA_Vatras_Add_05_09"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ РІР°РјРё РђРґР°РЅРѕСЃ!
 		
 		B_TurnToNpc (self, other);
 	};
@@ -1984,7 +1984,7 @@ instance DIA_Addon_Vatras_AbloesePre		(C_INFO)
 	condition	 = 	DIA_Addon_Vatras_AbloesePre_Condition;
 	information	 = 	DIA_Addon_Vatras_AbloesePre_Info;
 
-	description	 = 	"У меня сложности в связи с Глазом Инноса.";
+	description	 = 	"РЈ РјРµРЅСЏ СЃР»РѕР¶РЅРѕСЃС‚Рё РІ СЃРІСЏР·Рё СЃ Р“Р»Р°Р·РѕРј РРЅРЅРѕСЃР°.";
 };
 
 func int DIA_Addon_Vatras_AbloesePre_Condition ()
@@ -2000,16 +2000,16 @@ func int DIA_Addon_Vatras_AbloesePre_Condition ()
 
 func void DIA_Addon_Vatras_AbloesePre_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_AbloesePre_15_00"); //У меня сложности в связи с Глазом Инноса. Я хотел попросить о помощи.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_01"); //И из-за твоей проблемы мне придется покинуть город?
-	AI_Output	(other, self, "DIA_Addon_Vatras_AbloesePre_15_02"); //Я не знаю, возможно.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_03"); //Я уже много дней жду, чтобы меня сменили. Остальные маги воды должны были уже вернуться в Хоринис.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_04"); //Если ты сделаешь так, чтобы хотя бы один из них сменил меня, я смогу помочь тебе.
+	AI_Output	(other, self, "DIA_Addon_Vatras_AbloesePre_15_00"); //РЈ РјРµРЅСЏ СЃР»РѕР¶РЅРѕСЃС‚Рё РІ СЃРІСЏР·Рё СЃ Р“Р»Р°Р·РѕРј РРЅРЅРѕСЃР°. РЇ С…РѕС‚РµР» РїРѕРїСЂРѕСЃРёС‚СЊ Рѕ РїРѕРјРѕС‰Рё.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_01"); //Р РёР·-Р·Р° С‚РІРѕРµР№ РїСЂРѕР±Р»РµРјС‹ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїРѕРєРёРЅСѓС‚СЊ РіРѕСЂРѕРґ?
+	AI_Output	(other, self, "DIA_Addon_Vatras_AbloesePre_15_02"); //РЇ РЅРµ Р·РЅР°СЋ, РІРѕР·РјРѕР¶РЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_03"); //РЇ СѓР¶Рµ РјРЅРѕРіРѕ РґРЅРµР№ Р¶РґСѓ, С‡С‚РѕР±С‹ РјРµРЅСЏ СЃРјРµРЅРёР»Рё. РћСЃС‚Р°Р»СЊРЅС‹Рµ РјР°РіРё РІРѕРґС‹ РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё СѓР¶Рµ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РҐРѕСЂРёРЅРёСЃ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_04"); //Р•СЃР»Рё С‚С‹ СЃРґРµР»Р°РµС€СЊ С‚Р°Рє, С‡С‚РѕР±С‹ С…РѕС‚СЏ Р±С‹ РѕРґРёРЅ РёР· РЅРёС… СЃРјРµРЅРёР» РјРµРЅСЏ, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
 	MIS_SCKnowsInnosEyeIsBroken = TRUE;
 	
 	Log_CreateTopic (TOPIC_Addon_VatrasAbloesung, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_VatrasAbloesung, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_VatrasAbloesung,"Ватрас не может помочь мне решить проблему с 'Глазом Инноса' пока не найдется еще одного Мага Воды, готового заменить его в городе."); 
+	B_LogEntry (TOPIC_Addon_VatrasAbloesung,"Р’Р°С‚СЂР°СЃ РЅРµ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЂРµС€РёС‚СЊ РїСЂРѕР±Р»РµРјСѓ СЃ 'Р“Р»Р°Р·РѕРј РРЅРЅРѕСЃР°' РїРѕРєР° РЅРµ РЅР°Р№РґРµС‚СЃСЏ РµС‰Рµ РѕРґРЅРѕРіРѕ РњР°РіР° Р’РѕРґС‹, РіРѕС‚РѕРІРѕРіРѕ Р·Р°РјРµРЅРёС‚СЊ РµРіРѕ РІ РіРѕСЂРѕРґРµ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -2022,7 +2022,7 @@ instance DIA_Addon_Vatras_AddonSolved		(C_INFO)
 	condition	 = 	DIA_Addon_Vatras_AddonSolved_Condition;
 	information	 = 	DIA_Addon_Vatras_AddonSolved_Info;
 
-	description	 = 	"Я нашел тебе смену.";
+	description	 = 	"РЇ РЅР°С€РµР» С‚РµР±Рµ СЃРјРµРЅСѓ.";
 };
 
 func int DIA_Addon_Vatras_AddonSolved_Condition ()
@@ -2035,15 +2035,15 @@ func int DIA_Addon_Vatras_AddonSolved_Condition ()
 
 func void DIA_Addon_Vatras_AddonSolved_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_AddonSolved_15_00"); //Я нашел тебе смену.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_01"); //Как обстоит дело с проблемой в северо-восточных горах?
-	AI_Output	(other, self, "DIA_Addon_Vatras_AddonSolved_15_02"); //Нормально. Ворон мертв, угроза устранена.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_03"); //Это очень хорошая новость. Будем надеяться, что ничего страшного больше не случится.
+	AI_Output	(other, self, "DIA_Addon_Vatras_AddonSolved_15_00"); //РЇ РЅР°С€РµР» С‚РµР±Рµ СЃРјРµРЅСѓ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_01"); //РљР°Рє РѕР±СЃС‚РѕРёС‚ РґРµР»Рѕ СЃ РїСЂРѕР±Р»РµРјРѕР№ РІ СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕС‡РЅС‹С… РіРѕСЂР°С…?
+	AI_Output	(other, self, "DIA_Addon_Vatras_AddonSolved_15_02"); //РќРѕСЂРјР°Р»СЊРЅРѕ. Р’РѕСЂРѕРЅ РјРµСЂС‚РІ, СѓРіСЂРѕР·Р° СѓСЃС‚СЂР°РЅРµРЅР°.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_03"); //Р­С‚Рѕ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Р°СЏ РЅРѕРІРѕСЃС‚СЊ. Р‘СѓРґРµРј РЅР°РґРµСЏС‚СЊСЃСЏ, С‡С‚Рѕ РЅРёС‡РµРіРѕ СЃС‚СЂР°С€РЅРѕРіРѕ Р±РѕР»СЊС€Рµ РЅРµ СЃР»СѓС‡РёС‚СЃСЏ.
 
 	if (Npc_KnowsInfo (other, DIA_Addon_Vatras_AbloesePre))
 	{
-		AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_04"); //ТЕПЕРЬ я могу помочь тебе.
-		AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_05"); //Кажется дело касается Глаза Инноса, не так ли?
+		AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_04"); //РўР•РџР•Р Р¬ СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+		AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_05"); //РљР°Р¶РµС‚СЃСЏ РґРµР»Рѕ РєР°СЃР°РµС‚СЃСЏ Р“Р»Р°Р·Р° РРЅРЅРѕСЃР°, РЅРµ С‚Р°Рє Р»Рё?
 	};
 	VatrasCanLeaveTown_Kap3 = TRUE;
 	B_GivePlayerXP (XP_Ambient);
@@ -2059,7 +2059,7 @@ instance DIA_Vatras_INNOSEYEKAPUTT		(C_INFO)
 	condition	 = 	DIA_Vatras_INNOSEYEKAPUTT_Condition;
 	information	 = 	DIA_Vatras_INNOSEYEKAPUTT_Info;
 
-	description	 = 	"Глаз Инноса поврежден.";
+	description	 = 	"Р“Р»Р°Р· РРЅРЅРѕСЃР° РїРѕРІСЂРµР¶РґРµРЅ.";
 };
 
 func int DIA_Vatras_INNOSEYEKAPUTT_Condition ()
@@ -2076,127 +2076,127 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Info ()
 {
 	if (MIS_Pyrokar_GoToVatrasInnoseye == LOG_RUNNING)
 	{
-		AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_15_00"); //Меня прислал Пирокар.
+		AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РџРёСЂРѕРєР°СЂ.
 	}
 	else if (MIS_Xardas_GoToVatrasInnoseye == LOG_RUNNING)
 	{
-		AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_15_01"); //Меня прислал Ксардас.
+		AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_15_01"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РљСЃР°СЂРґР°СЃ.
 	};
 
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_15_02"); //Глаз Инноса поврежден.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_03"); //Я знаю. Я уже узнал об этом от одного очень огорченного послушника.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_04"); //Ищущие использовали Круг Солнца магов Огня, чтобы уничтожить Глаз.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_05"); //Я бы назвал это вынужденным шагом врага.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_15_02"); //Р“Р»Р°Р· РРЅРЅРѕСЃР° РїРѕРІСЂРµР¶РґРµРЅ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_03"); //РЇ Р·РЅР°СЋ. РЇ СѓР¶Рµ СѓР·РЅР°Р» РѕР± СЌС‚РѕРј РѕС‚ РѕРґРЅРѕРіРѕ РѕС‡РµРЅСЊ РѕРіРѕСЂС‡РµРЅРЅРѕРіРѕ РїРѕСЃР»СѓС€РЅРёРєР°.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_04"); //РС‰СѓС‰РёРµ РёСЃРїРѕР»СЊР·РѕРІР°Р»Рё РљСЂСѓРі РЎРѕР»РЅС†Р° РјР°РіРѕРІ РћРіРЅСЏ, С‡С‚РѕР±С‹ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Р“Р»Р°Р·.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_05"); //РЇ Р±С‹ РЅР°Р·РІР°Р» СЌС‚Рѕ РІС‹РЅСѓР¶РґРµРЅРЅС‹Рј С€Р°РіРѕРј РІСЂР°РіР°.
 
 	Info_ClearChoices	(DIA_Vatras_INNOSEYEKAPUTT);
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "В этом городе новости распространяются быстро.", DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Р’ СЌС‚РѕРј РіРѕСЂРѕРґРµ РЅРѕРІРѕСЃС‚Рё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏСЋС‚СЃСЏ Р±С‹СЃС‚СЂРѕ.", DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten );
 
 	if (hero.guild == GIL_KDF)
 	&& (MIS_Pyrokar_GoToVatrasInnoseye == LOG_RUNNING)
 	{
-		Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Почему Пирокар послал меня именно к тебе?", DIA_Vatras_INNOSEYEKAPUTT_warumdu );
+		Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "РџРѕС‡РµРјСѓ РџРёСЂРѕРєР°СЂ РїРѕСЃР»Р°Р» РјРµРЅСЏ РёРјРµРЅРЅРѕ Рє С‚РµР±Рµ?", DIA_Vatras_INNOSEYEKAPUTT_warumdu );
 	};
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Что теперь будет с Глазом?", DIA_Vatras_INNOSEYEKAPUTT_Auge );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Р§С‚Рѕ С‚РµРїРµСЂСЊ Р±СѓРґРµС‚ СЃ Р“Р»Р°Р·РѕРј?", DIA_Vatras_INNOSEYEKAPUTT_Auge );
 
 };
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_15_00"); //Что теперь будет с Глазом?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_01"); //Мы должны восстановить его. Но это, боюсь, будет непростой задачей.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_02"); //Оправа разбита на две части. Искусный кузнец должен быть способен починить ее.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_03"); //Но проблема не в этом. Меня больше волнует драгоценный камень.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_04"); //Он тускл и безжизнен. Враг, похоже, хорошо знал, как ослабить его.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_15_00"); //Р§С‚Рѕ С‚РµРїРµСЂСЊ Р±СѓРґРµС‚ СЃ Р“Р»Р°Р·РѕРј?
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_01"); //РњС‹ РґРѕР»Р¶РЅС‹ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ РµРіРѕ. РќРѕ СЌС‚Рѕ, Р±РѕСЋСЃСЊ, Р±СѓРґРµС‚ РЅРµРїСЂРѕСЃС‚РѕР№ Р·Р°РґР°С‡РµР№.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_02"); //РћРїСЂР°РІР° СЂР°Р·Р±РёС‚Р° РЅР° РґРІРµ С‡Р°СЃС‚Рё. РСЃРєСѓСЃРЅС‹Р№ РєСѓР·РЅРµС† РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СЃРїРѕСЃРѕР±РµРЅ РїРѕС‡РёРЅРёС‚СЊ РµРµ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_03"); //РќРѕ РїСЂРѕР±Р»РµРјР° РЅРµ РІ СЌС‚РѕРј. РњРµРЅСЏ Р±РѕР»СЊС€Рµ РІРѕР»РЅСѓРµС‚ РґСЂР°РіРѕС†РµРЅРЅС‹Р№ РєР°РјРµРЅСЊ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_04"); //РћРЅ С‚СѓСЃРєР» Рё Р±РµР·Р¶РёР·РЅРµРЅ. Р’СЂР°Рі, РїРѕС…РѕР¶Рµ, С…РѕСЂРѕС€Рѕ Р·РЅР°Р», РєР°Рє РѕСЃР»Р°Р±РёС‚СЊ РµРіРѕ.
 
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Где мне найти кузнеца, способного починить оправу?", DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied );
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Как можно восстановить силу камня?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєСѓР·РЅРµС†Р°, СЃРїРѕСЃРѕР±РЅРѕРіРѕ РїРѕС‡РёРЅРёС‚СЊ РѕРїСЂР°РІСѓ?", DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "РљР°Рє РјРѕР¶РЅРѕ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ СЃРёР»Сѓ РєР°РјРЅСЏ?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein );
 };
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_15_00"); //Как можно восстановить силу камня?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_01"); //Я вижу только один способ. Союз трех правящих божеств должен дать желаемый эффект.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_02"); //Хорошо подготовленный ритуал обращения в месте уничтожения камня вернет ему его огонь.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_03"); //Однако проблема состоит в том, что ты должен привести в это место земных представителей каждого их этих троих богов.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_04"); //Кроме того, для этого ритуала необходимо много болотной травы. Я думаю, необходимо не менее 3-х растений.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_15_00"); //РљР°Рє РјРѕР¶РЅРѕ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ СЃРёР»Сѓ РєР°РјРЅСЏ?
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_01"); //РЇ РІРёР¶Сѓ С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЃРїРѕСЃРѕР±. РЎРѕСЋР· С‚СЂРµС… РїСЂР°РІСЏС‰РёС… Р±РѕР¶РµСЃС‚РІ РґРѕР»Р¶РµРЅ РґР°С‚СЊ Р¶РµР»Р°РµРјС‹Р№ СЌС„С„РµРєС‚.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_02"); //РҐРѕСЂРѕС€Рѕ РїРѕРґРіРѕС‚РѕРІР»РµРЅРЅС‹Р№ СЂРёС‚СѓР°Р» РѕР±СЂР°С‰РµРЅРёСЏ РІ РјРµСЃС‚Рµ СѓРЅРёС‡С‚РѕР¶РµРЅРёСЏ РєР°РјРЅСЏ РІРµСЂРЅРµС‚ РµРјСѓ РµРіРѕ РѕРіРѕРЅСЊ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_03"); //РћРґРЅР°РєРѕ РїСЂРѕР±Р»РµРјР° СЃРѕСЃС‚РѕРёС‚ РІ С‚РѕРј, С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРёРІРµСЃС‚Рё РІ СЌС‚Рѕ РјРµСЃС‚Рѕ Р·РµРјРЅС‹С… РїСЂРµРґСЃС‚Р°РІРёС‚РµР»РµР№ РєР°Р¶РґРѕРіРѕ РёС… СЌС‚РёС… С‚СЂРѕРёС… Р±РѕРіРѕРІ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_04"); //РљСЂРѕРјРµ С‚РѕРіРѕ, РґР»СЏ СЌС‚РѕРіРѕ СЂРёС‚СѓР°Р»Р° РЅРµРѕР±С…РѕРґРёРјРѕ РјРЅРѕРіРѕ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹. РЇ РґСѓРјР°СЋ, РЅРµРѕР±С…РѕРґРёРјРѕ РЅРµ РјРµРЅРµРµ 3-С… СЂР°СЃС‚РµРЅРёР№.
 
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Кто может быть этими тремя земными представителями богов?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer );
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Где мне найти болотную траву?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "РљС‚Рѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЌС‚РёРјРё С‚СЂРµРјСЏ Р·РµРјРЅС‹РјРё РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЏРјРё Р±РѕРіРѕРІ?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut );
 };
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_15_00"); //Где мне найти болотную траву?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_05_01"); //Я слышал о старой шаманке Сагитте, живущей в лесу. Предположительно, она продает такие травы.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_05_02"); //Но также ты можешь попытать счастья в местной гавани.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ?
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_05_01"); //РЇ СЃР»С‹С€Р°Р» Рѕ СЃС‚Р°СЂРѕР№ С€Р°РјР°РЅРєРµ РЎР°РіРёС‚С‚Рµ, Р¶РёРІСѓС‰РµР№ РІ Р»РµСЃСѓ. РџСЂРµРґРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ, РѕРЅР° РїСЂРѕРґР°РµС‚ С‚Р°РєРёРµ С‚СЂР°РІС‹.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_05_02"); //РќРѕ С‚Р°РєР¶Рµ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРїС‹С‚Р°С‚СЊ СЃС‡Р°СЃС‚СЊСЏ РІ РјРµСЃС‚РЅРѕР№ РіР°РІР°РЅРё.
 	
 
 };
 
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_15_00"); //Кто может быть этими тремя земными представителями богов?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_01"); //Я буду представлять бога Аданоса лично.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_02"); //Пирокар, высший маг Огня, был бы подходящей кандидатурой на представителя бога Инноса.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_03"); //Но для Белиара, мне не приходит в голову подходящий кандидат. Это должен быть кто-то, кто владеет черной магией.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_15_00"); //РљС‚Рѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЌС‚РёРјРё С‚СЂРµРјСЏ Р·РµРјРЅС‹РјРё РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЏРјРё Р±РѕРіРѕРІ?
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_01"); //РЇ Р±СѓРґСѓ РїСЂРµРґСЃС‚Р°РІР»СЏС‚СЊ Р±РѕРіР° РђРґР°РЅРѕСЃР° Р»РёС‡РЅРѕ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_02"); //РџРёСЂРѕРєР°СЂ, РІС‹СЃС€РёР№ РјР°Рі РћРіРЅСЏ, Р±С‹Р» Р±С‹ РїРѕРґС…РѕРґСЏС‰РµР№ РєР°РЅРґРёРґР°С‚СѓСЂРѕР№ РЅР° РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЏ Р±РѕРіР° РРЅРЅРѕСЃР°.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_03"); //РќРѕ РґР»СЏ Р‘РµР»РёР°СЂР°, РјРЅРµ РЅРµ РїСЂРёС…РѕРґРёС‚ РІ РіРѕР»РѕРІСѓ РїРѕРґС…РѕРґСЏС‰РёР№ РєР°РЅРґРёРґР°С‚. Р­С‚Рѕ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РєС‚Рѕ-С‚Рѕ, РєС‚Рѕ РІР»Р°РґРµРµС‚ С‡РµСЂРЅРѕР№ РјР°РіРёРµР№.
 
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Черной магией? А что насчет Ксардаса?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Р§РµСЂРЅРѕР№ РјР°РіРёРµР№? Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РљСЃР°СЂРґР°СЃР°?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas );
 
 };
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_15_00"); //Черной магией? А что насчет Ксардаса?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_05_01"); //Точно. Это может сработать.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_05_02"); //Но я задаю себе вопрос - как ты приведешь нас троих в одно место.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_05_03"); //Представляю выражение лица Пирокара, когда он услышит, что должен работать рука об руку с Ксардасом.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_15_00"); //Р§РµСЂРЅРѕР№ РјР°РіРёРµР№? Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РљСЃР°СЂРґР°СЃР°?
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_05_01"); //РўРѕС‡РЅРѕ. Р­С‚Рѕ РјРѕР¶РµС‚ СЃСЂР°Р±РѕС‚Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_05_02"); //РќРѕ СЏ Р·Р°РґР°СЋ СЃРµР±Рµ РІРѕРїСЂРѕСЃ - РєР°Рє С‚С‹ РїСЂРёРІРµРґРµС€СЊ РЅР°СЃ С‚СЂРѕРёС… РІ РѕРґРЅРѕ РјРµСЃС‚Рѕ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_05_03"); //РџСЂРµРґСЃС‚Р°РІР»СЏСЋ РІС‹СЂР°Р¶РµРЅРёРµ Р»РёС†Р° РџРёСЂРѕРєР°СЂР°, РєРѕРіРґР° РѕРЅ СѓСЃР»С‹С€РёС‚, С‡С‚Рѕ РґРѕР»Р¶РµРЅ СЂР°Р±РѕС‚Р°С‚СЊ СЂСѓРєР° РѕР± СЂСѓРєСѓ СЃ РљСЃР°СЂРґР°СЃРѕРј.
 
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Я должен идти.", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_weiter );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_weiter );
 };
 
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied_15_00"); //Где мне найти кузнеца, способного починить оправу Глаза?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied_05_01"); //Поспрашивай вокруг о том, кто может ремонтировать драгоценности.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєСѓР·РЅРµС†Р°, СЃРїРѕСЃРѕР±РЅРѕРіРѕ РїРѕС‡РёРЅРёС‚СЊ РѕРїСЂР°РІСѓ Р“Р»Р°Р·Р°?
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied_05_01"); //РџРѕСЃРїСЂР°С€РёРІР°Р№ РІРѕРєСЂСѓРі Рѕ С‚РѕРј, РєС‚Рѕ РјРѕР¶РµС‚ СЂРµРјРѕРЅС‚РёСЂРѕРІР°С‚СЊ РґСЂР°РіРѕС†РµРЅРЅРѕСЃС‚Рё.
 };
 
 func void DIA_Vatras_INNOSEYEKAPUTT_warumdu ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_15_00"); //Почему Пирокар послал меня именно к тебе?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_01"); //Я подозревал, что рано или поздно что-то подобное должно было случиться.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_02"); //Пирокар всегда считал себя таким неуязвимым и непревзойденным, что это почти граничило с беспечностью.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_03"); //Так, его меры предосторожности по защите Глаза были тоже беспечными.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_04"); //Я просто думаю, что он подсознательно полагается на способности, которые Аданос даровал мне.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_05"); //Невыносимо думать, что могло бы произойти, если бы я сейчас был недоступен.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_15_00"); //РџРѕС‡РµРјСѓ РџРёСЂРѕРєР°СЂ РїРѕСЃР»Р°Р» РјРµРЅСЏ РёРјРµРЅРЅРѕ Рє С‚РµР±Рµ?
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_01"); //РЇ РїРѕРґРѕР·СЂРµРІР°Р», С‡С‚Рѕ СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ С‡С‚Рѕ-С‚Рѕ РїРѕРґРѕР±РЅРѕРµ РґРѕР»Р¶РЅРѕ Р±С‹Р»Рѕ СЃР»СѓС‡РёС‚СЊСЃСЏ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_02"); //РџРёСЂРѕРєР°СЂ РІСЃРµРіРґР° СЃС‡РёС‚Р°Р» СЃРµР±СЏ С‚Р°РєРёРј РЅРµСѓСЏР·РІРёРјС‹Рј Рё РЅРµРїСЂРµРІР·РѕР№РґРµРЅРЅС‹Рј, С‡С‚Рѕ СЌС‚Рѕ РїРѕС‡С‚Рё РіСЂР°РЅРёС‡РёР»Рѕ СЃ Р±РµСЃРїРµС‡РЅРѕСЃС‚СЊСЋ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_03"); //РўР°Рє, РµРіРѕ РјРµСЂС‹ РїСЂРµРґРѕСЃС‚РѕСЂРѕР¶РЅРѕСЃС‚Рё РїРѕ Р·Р°С‰РёС‚Рµ Р“Р»Р°Р·Р° Р±С‹Р»Рё С‚РѕР¶Рµ Р±РµСЃРїРµС‡РЅС‹РјРё.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_04"); //РЇ РїСЂРѕСЃС‚Рѕ РґСѓРјР°СЋ, С‡С‚Рѕ РѕРЅ РїРѕРґСЃРѕР·РЅР°С‚РµР»СЊРЅРѕ РїРѕР»Р°РіР°РµС‚СЃСЏ РЅР° СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё, РєРѕС‚РѕСЂС‹Рµ РђРґР°РЅРѕСЃ РґР°СЂРѕРІР°Р» РјРЅРµ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_05"); //РќРµРІС‹РЅРѕСЃРёРјРѕ РґСѓРјР°С‚СЊ, С‡С‚Рѕ РјРѕРіР»Рѕ Р±С‹ РїСЂРѕРёР·РѕР№С‚Рё, РµСЃР»Рё Р±С‹ СЏ СЃРµР№С‡Р°СЃ Р±С‹Р» РЅРµРґРѕСЃС‚СѓРїРµРЅ.
 
 };
 
 func void DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten_15_00"); //В этом городе новости распространяются быстро.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten_05_01"); //Это конечно хорошо, но враг тоже не будет спать.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten_15_00"); //Р’ СЌС‚РѕРј РіРѕСЂРѕРґРµ РЅРѕРІРѕСЃС‚Рё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏСЋС‚СЃСЏ Р±С‹СЃС‚СЂРѕ.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten_05_01"); //Р­С‚Рѕ РєРѕРЅРµС‡РЅРѕ С…РѕСЂРѕС€Рѕ, РЅРѕ РІСЂР°Рі С‚РѕР¶Рµ РЅРµ Р±СѓРґРµС‚ СЃРїР°С‚СЊ.
 
 };
 
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_weiter ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_weiter_15_00"); //Я должен идти.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_weiter_05_01"); //Я тоже должен отправляться в путь, чтобы подготовить церемонию в Круге Солнца.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_weiter_05_02"); //Пошли Ксардаса и Пирокара туда. И не забудь принести болотную траву. Я полагаюсь на тебя.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_weiter_15_00"); //РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_weiter_05_01"); //РЇ С‚РѕР¶Рµ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ РІ РїСѓС‚СЊ, С‡С‚РѕР±С‹ РїРѕРґРіРѕС‚РѕРІРёС‚СЊ С†РµСЂРµРјРѕРЅРёСЋ РІ РљСЂСѓРіРµ РЎРѕР»РЅС†Р°.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_weiter_05_02"); //РџРѕС€Р»Рё РљСЃР°СЂРґР°СЃР° Рё РџРёСЂРѕРєР°СЂР° С‚СѓРґР°. Р РЅРµ Р·Р°Р±СѓРґСЊ РїСЂРёРЅРµСЃС‚Рё Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ. РЇ РїРѕР»Р°РіР°СЋСЃСЊ РЅР° С‚РµР±СЏ.
 	
-	B_LogEntry (TOPIC_INNOSEYE, "Ватрас хочет провести ритуал в Круге Солнца, чтобы восстановить Глаз. Я должен убедить Ксардаса и Пирокара принять в нем участие. Также, я должен найти кузнеца, который может починить поврежденную оправу амулета.");
+	B_LogEntry (TOPIC_INNOSEYE, "Р’Р°С‚СЂР°СЃ С…РѕС‡РµС‚ РїСЂРѕРІРµСЃС‚Рё СЂРёС‚СѓР°Р» РІ РљСЂСѓРіРµ РЎРѕР»РЅС†Р°, С‡С‚РѕР±С‹ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ Р“Р»Р°Р·. РЇ РґРѕР»Р¶РµРЅ СѓР±РµРґРёС‚СЊ РљСЃР°СЂРґР°СЃР° Рё РџРёСЂРѕРєР°СЂР° РїСЂРёРЅСЏС‚СЊ РІ РЅРµРј СѓС‡Р°СЃС‚РёРµ. РўР°РєР¶Рµ, СЏ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РєСѓР·РЅРµС†Р°, РєРѕС‚РѕСЂС‹Р№ РјРѕР¶РµС‚ РїРѕС‡РёРЅРёС‚СЊ РїРѕРІСЂРµР¶РґРµРЅРЅСѓСЋ РѕРїСЂР°РІСѓ Р°РјСѓР»РµС‚Р°.");
 
 	MIS_RitualInnosEyeRepair = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Vatras_INNOSEYEKAPUTT);
 	Npc_ExchangeRoutine	(self,"RITUALINNOSEYEREPAIR");
 
 	
-	// ------ Zuhцrer weg -------
+	// ------ ZuhС†rer weg -------
 		B_Vatras_Geheweg (kurz);
 	// --------------------------
 	
 	//Joly: Weg mit den Ritualdementoren!!!!!
 
-	DMT_1201.aivar[AIV_EnemyOverride] = TRUE;	//Joly: Damit sie erstmal nicht die Welt entvцlkern, ohne Zutun des Spielers!!!!!
+	DMT_1201.aivar[AIV_EnemyOverride] = TRUE;	//Joly: Damit sie erstmal nicht die Welt entvС†lkern, ohne Zutun des Spielers!!!!!
 	DMT_1202.aivar[AIV_EnemyOverride] = TRUE;
 	DMT_1203.aivar[AIV_EnemyOverride] = TRUE;
 	DMT_1204.aivar[AIV_EnemyOverride] = TRUE;
@@ -2231,7 +2231,7 @@ instance DIA_Vatras_RitualInnosEyeRepair		(C_INFO)
 	information	 = 	DIA_Vatras_RitualInnosEyeRepair_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как обстоят дела с Глазом Инноса?";
+	description	 = 	"РљР°Рє РѕР±СЃС‚РѕСЏС‚ РґРµР»Р° СЃ Р“Р»Р°Р·РѕРј РРЅРЅРѕСЃР°?";
 };
 
 func int DIA_Vatras_RitualInnosEyeRepair_Condition ()
@@ -2245,9 +2245,9 @@ func int DIA_Vatras_RitualInnosEyeRepair_Condition ()
 
 func void DIA_Vatras_RitualInnosEyeRepair_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_RitualInnosEyeRepair_15_00"); //Как обстоят дела с Глазом Инноса?
-	AI_Output			(self, other, "DIA_Vatras_RitualInnosEyeRepair_05_01"); //Помни: только ритуал обращения в Круге Солнца вместе с Ксардасом и Пирокаром восстановит Глаз.
-	AI_Output			(self, other, "DIA_Vatras_RitualInnosEyeRepair_05_02"); //И не забудь принести Глаз с отремонтированной оправой.
+	AI_Output			(other, self, "DIA_Vatras_RitualInnosEyeRepair_15_00"); //РљР°Рє РѕР±СЃС‚РѕСЏС‚ РґРµР»Р° СЃ Р“Р»Р°Р·РѕРј РРЅРЅРѕСЃР°?
+	AI_Output			(self, other, "DIA_Vatras_RitualInnosEyeRepair_05_01"); //РџРѕРјРЅРё: С‚РѕР»СЊРєРѕ СЂРёС‚СѓР°Р» РѕР±СЂР°С‰РµРЅРёСЏ РІ РљСЂСѓРіРµ РЎРѕР»РЅС†Р° РІРјРµСЃС‚Рµ СЃ РљСЃР°СЂРґР°СЃРѕРј Рё РџРёСЂРѕРєР°СЂРѕРј РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚ Р“Р»Р°Р·.
+	AI_Output			(self, other, "DIA_Vatras_RitualInnosEyeRepair_05_02"); //Р РЅРµ Р·Р°Р±СѓРґСЊ РїСЂРёРЅРµСЃС‚Рё Р“Р»Р°Р· СЃ РѕС‚СЂРµРјРѕРЅС‚РёСЂРѕРІР°РЅРЅРѕР№ РѕРїСЂР°РІРѕР№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -2260,7 +2260,7 @@ instance DIA_Vatras_BEGINN		(C_INFO)
 	condition	 = 	DIA_Vatras_BEGINN_Condition;
 	information	 = 	DIA_Vatras_BEGINN_Info;
 
-	description	 = 	"Я сделал все, как ты сказал мне.";
+	description	 = 	"РЇ СЃРґРµР»Р°Р» РІСЃРµ, РєР°Рє С‚С‹ СЃРєР°Р·Р°Р» РјРЅРµ.";
 };
 
 func int DIA_Vatras_BEGINN_Condition ()
@@ -2278,30 +2278,30 @@ func int DIA_Vatras_BEGINN_Condition ()
 
 func void DIA_Vatras_BEGINN_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_BEGINN_15_00"); //Я сделал все, как ты сказал мне. Вот починенный Глаз.
+	AI_Output			(other, self, "DIA_Vatras_BEGINN_15_00"); //РЇ СЃРґРµР»Р°Р» РІСЃРµ, РєР°Рє С‚С‹ СЃРєР°Р·Р°Р» РјРЅРµ. Р’РѕС‚ РїРѕС‡РёРЅРµРЅРЅС‹Р№ Р“Р»Р°Р·.
 	B_GivePlayerXP (XP_RitualInnosEyeRuns);
 
 	B_GiveInvItems 		(other, self, ItMi_InnosEye_Broken_MIS, 1);
 	Npc_RemoveInvItem 	(self, ItMi_InnosEye_Broken_MIS);
 
-	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_01"); //Да, теперь все готово для проведения ритуала.
-	AI_Output			(other, self, "DIA_Vatras_BEGINN_15_02"); //Что насчет болотной травы?
+	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_01"); //Р”Р°, С‚РµРїРµСЂСЊ РІСЃРµ РіРѕС‚РѕРІРѕ РґР»СЏ РїСЂРѕРІРµРґРµРЅРёСЏ СЂРёС‚СѓР°Р»Р°.
+	AI_Output			(other, self, "DIA_Vatras_BEGINN_15_02"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹?
 	
-	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_03"); //Ах, да. Ты принес 3 стебля болотной травы?
+	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_03"); //РђС…, РґР°. РўС‹ РїСЂРёРЅРµСЃ 3 СЃС‚РµР±Р»СЏ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹?
 	
 	if (B_GiveInvItems (other, self, ItPL_SwampHerb,3))
 	{
-		AI_Output			(other, self, "DIA_Vatras_BEGINN_15_04"); //Гм. Да. Вот 3 растения.
-		AI_Output			(self, other, "DIA_Vatras_BEGINN_05_05"); //Превосходно.
+		AI_Output			(other, self, "DIA_Vatras_BEGINN_15_04"); //Р“Рј. Р”Р°. Р’РѕС‚ 3 СЂР°СЃС‚РµРЅРёСЏ.
+		AI_Output			(self, other, "DIA_Vatras_BEGINN_05_05"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ.
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Vatras_BEGINN_15_06"); //Нет, боже мой, нет!
-		AI_Output			(self, other, "DIA_Vatras_BEGINN_05_07"); //Хорошо. Тогда нам придется обойтись без нее.
+		AI_Output			(other, self, "DIA_Vatras_BEGINN_15_06"); //РќРµС‚, Р±РѕР¶Рµ РјРѕР№, РЅРµС‚!
+		AI_Output			(self, other, "DIA_Vatras_BEGINN_05_07"); //РҐРѕСЂРѕС€Рѕ. РўРѕРіРґР° РЅР°Рј РїСЂРёРґРµС‚СЃСЏ РѕР±РѕР№С‚РёСЃСЊ Р±РµР· РЅРµРµ.
 	};
 	
-	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_08"); //Ты хорошо поработал, но теперь отойди в сторону, чтобы мы могли начать церемонию. Да объединятся наши души!
+	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_08"); //РўС‹ С…РѕСЂРѕС€Рѕ РїРѕСЂР°Р±РѕС‚Р°Р», РЅРѕ С‚РµРїРµСЂСЊ РѕС‚РѕР№РґРё РІ СЃС‚РѕСЂРѕРЅСѓ, С‡С‚РѕР±С‹ РјС‹ РјРѕРіР»Рё РЅР°С‡Р°С‚СЊ С†РµСЂРµРјРѕРЅРёСЋ. Р”Р° РѕР±СЉРµРґРёРЅСЏС‚СЃСЏ РЅР°С€Рё РґСѓС€Рё!
  	
 	Info_ClearChoices	(DIA_Vatras_BEGINN);
 	Info_AddChoice	(DIA_Vatras_BEGINN, DIALOG_ENDE, DIA_Vatras_BEGINN_los );
@@ -2344,11 +2344,11 @@ func int DIA_Vatras_AUGEGEHEILT_Condition ()
 
 func void DIA_Vatras_AUGEGEHEILT_Info ()
 {
-	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_00"); //Мы закончили. Нам удалось разрушить план врага и восстановить Глаз.
-	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_01"); //Пусть Пирокар объяснит тебе, как пользоваться его силой.
-	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_02"); //Надеюсь, я еще увижу тебя, когда ты выполнишь свою миссию. Прощай.
+	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_00"); //РњС‹ Р·Р°РєРѕРЅС‡РёР»Рё. РќР°Рј СѓРґР°Р»РѕСЃСЊ СЂР°Р·СЂСѓС€РёС‚СЊ РїР»Р°РЅ РІСЂР°РіР° Рё РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ Р“Р»Р°Р·.
+	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_01"); //РџСѓСЃС‚СЊ РџРёСЂРѕРєР°СЂ РѕР±СЉСЏСЃРЅРёС‚ С‚РµР±Рµ, РєР°Рє РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РµРіРѕ СЃРёР»РѕР№.
+	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_02"); //РќР°РґРµСЋСЃСЊ, СЏ РµС‰Рµ СѓРІРёР¶Сѓ С‚РµР±СЏ, РєРѕРіРґР° С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ СЃРІРѕСЋ РјРёСЃСЃРёСЋ. РџСЂРѕС‰Р°Р№.
  	
- 	B_LogEntry (TOPIC_INNOSEYE, "Глаз был восстановлен. Пирокар отдает его мне, и начинается охота на драконов.");
+ 	B_LogEntry (TOPIC_INNOSEYE, "Р“Р»Р°Р· Р±С‹Р» РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅ. РџРёСЂРѕРєР°СЂ РѕС‚РґР°РµС‚ РµРіРѕ РјРЅРµ, Рё РЅР°С‡РёРЅР°РµС‚СЃСЏ РѕС…РѕС‚Р° РЅР° РґСЂР°РєРѕРЅРѕРІ.");
 	AI_StopProcessInfos (self); Vatras_MORE = FALSE;
  
  	RitualInnosEyeRuns = LOG_SUCCESS;
@@ -2377,7 +2377,7 @@ instance DIA_Vatras_PERMKAP3		(C_INFO)
 	condition	 = 	DIA_Vatras_PERMKAP3_Condition;
 	information	 = 	DIA_Vatras_PERMKAP3_Info;
 
-	description	 = 	"Спасибо, что помог восстановить Глаз Инноса.";
+	description	 = 	"РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РїРѕРјРѕРі РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°.";
 };
 
 func int DIA_Vatras_PERMKAP3_Condition ()
@@ -2390,15 +2390,15 @@ func int DIA_Vatras_PERMKAP3_Condition ()
 
 func void DIA_Vatras_PERMKAP3_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_PERMKAP3_15_00"); //Спасибо, что помог восстановить Глаз Инноса.
-	AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_01"); //Оставь пустые слова благодарности. Самое тяжелое еще ждет тебя впереди.
+	AI_Output			(other, self, "DIA_Vatras_PERMKAP3_15_00"); //РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РїРѕРјРѕРі РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°.
+	AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_01"); //РћСЃС‚Р°РІСЊ РїСѓСЃС‚С‹Рµ СЃР»РѕРІР° Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё. РЎР°РјРѕРµ С‚СЏР¶РµР»РѕРµ РµС‰Рµ Р¶РґРµС‚ С‚РµР±СЏ РІРїРµСЂРµРґРё.
 
 	if (MIS_ReadyforChapter4 == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_02"); //Поговори с Пирокаром, он объяснит все, что тебе нужно знать.
+		AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_02"); //РџРѕРіРѕРІРѕСЂРё СЃ РџРёСЂРѕРєР°СЂРѕРј, РѕРЅ РѕР±СЉСЏСЃРЅРёС‚ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ.
 	};
 
-	AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_03"); //Надеюсь, увидеть тебя опять целым и невредимым, сын мой.
+	AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_03"); //РќР°РґРµСЋСЃСЊ, СѓРІРёРґРµС‚СЊ С‚РµР±СЏ РѕРїСЏС‚СЊ С†РµР»С‹Рј Рё РЅРµРІСЂРµРґРёРјС‹Рј, СЃС‹РЅ РјРѕР№.
 
 };
 
@@ -2412,7 +2412,7 @@ instance DIA_Vatras_HILDAKRANK		(C_INFO)
 	condition	 = 	DIA_Vatras_HILDAKRANK_Condition;
 	information	 = 	DIA_Vatras_HILDAKRANK_Info;
 
-	description	 = 	"Жена Лобарта, Хильда, больна.";
+	description	 = 	"Р–РµРЅР° Р›РѕР±Р°СЂС‚Р°, РҐРёР»СЊРґР°, Р±РѕР»СЊРЅР°.";
 };
 
 func int DIA_Vatras_HILDAKRANK_Condition ()
@@ -2426,10 +2426,10 @@ func int DIA_Vatras_HILDAKRANK_Condition ()
 
 func void DIA_Vatras_HILDAKRANK_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_HILDAKRANK_15_00"); //Жена Лобарта, Хильда, больна.
-	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_01"); //Что? Опять? Эта добрая женщина должна больше заботиться о себе.
-	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_02"); //Еще одна тяжелая зима, и ее с нами больше не будет. Хорошо, я дам ей лекарство, которое облегчит лихорадку.
-	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_03"); //Ох, знаешь, раз все равно ты здесь, ты мог бы занести ей его.
+	AI_Output			(other, self, "DIA_Vatras_HILDAKRANK_15_00"); //Р–РµРЅР° Р›РѕР±Р°СЂС‚Р°, РҐРёР»СЊРґР°, Р±РѕР»СЊРЅР°.
+	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_01"); //Р§С‚Рѕ? РћРїСЏС‚СЊ? Р­С‚Р° РґРѕР±СЂР°СЏ Р¶РµРЅС‰РёРЅР° РґРѕР»Р¶РЅР° Р±РѕР»СЊС€Рµ Р·Р°Р±РѕС‚РёС‚СЊСЃСЏ Рѕ СЃРµР±Рµ.
+	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_02"); //Р•С‰Рµ РѕРґРЅР° С‚СЏР¶РµР»Р°СЏ Р·РёРјР°, Рё РµРµ СЃ РЅР°РјРё Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґРµС‚. РҐРѕСЂРѕС€Рѕ, СЏ РґР°Рј РµР№ Р»РµРєР°СЂСЃС‚РІРѕ, РєРѕС‚РѕСЂРѕРµ РѕР±Р»РµРіС‡РёС‚ Р»РёС…РѕСЂР°РґРєСѓ.
+	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_03"); //РћС…, Р·РЅР°РµС€СЊ, СЂР°Р· РІСЃРµ СЂР°РІРЅРѕ С‚С‹ Р·РґРµСЃСЊ, С‚С‹ РјРѕРі Р±С‹ Р·Р°РЅРµСЃС‚Рё РµР№ РµРіРѕ.
 	CreateInvItems (self, ItPo_HealHilda_MIS, 1);									
 	B_GiveInvItems (self, other, ItPo_HealHilda_MIS, 1);					
 };
@@ -2444,7 +2444,7 @@ instance DIA_Vatras_OBSESSION		(C_INFO)
 	condition	 = 	DIA_Vatras_OBSESSION_Condition;
 	information	 = 	DIA_Vatras_OBSESSION_Info;
 
-	description	 = 	"Я ощущаю внутреннюю тревогу.";
+	description	 = 	"РЇ РѕС‰СѓС‰Р°СЋ РІРЅСѓС‚СЂРµРЅРЅСЋСЋ С‚СЂРµРІРѕРіСѓ.";
 };
 
 func int DIA_Vatras_OBSESSION_Condition ()
@@ -2458,9 +2458,9 @@ func int DIA_Vatras_OBSESSION_Condition ()
 
 func void DIA_Vatras_OBSESSION_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_OBSESSION_15_00"); //Я ощущаю внутреннюю тревогу.
-	AI_Output			(self, other, "DIA_Vatras_OBSESSION_05_01"); //Да, и выглядишь ты бледно. Ты слишком долго подвергался воздействию черного взгляда Ищущих.
-	AI_Output			(self, other, "DIA_Vatras_OBSESSION_05_02"); //Все, что я могу - это вылечить твое тело, но только монастырь может очистить твою душу. Поговори с Пирокаром. Он поможет тебе.
+	AI_Output			(other, self, "DIA_Vatras_OBSESSION_15_00"); //РЇ РѕС‰СѓС‰Р°СЋ РІРЅСѓС‚СЂРµРЅРЅСЋСЋ С‚СЂРµРІРѕРіСѓ.
+	AI_Output			(self, other, "DIA_Vatras_OBSESSION_05_01"); //Р”Р°, Рё РІС‹РіР»СЏРґРёС€СЊ С‚С‹ Р±Р»РµРґРЅРѕ. РўС‹ СЃР»РёС€РєРѕРј РґРѕР»РіРѕ РїРѕРґРІРµСЂРіР°Р»СЃСЏ РІРѕР·РґРµР№СЃС‚РІРёСЋ С‡РµСЂРЅРѕРіРѕ РІР·РіР»СЏРґР° РС‰СѓС‰РёС….
+	AI_Output			(self, other, "DIA_Vatras_OBSESSION_05_02"); //Р’СЃРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ - СЌС‚Рѕ РІС‹Р»РµС‡РёС‚СЊ С‚РІРѕРµ С‚РµР»Рѕ, РЅРѕ С‚РѕР»СЊРєРѕ РјРѕРЅР°СЃС‚С‹СЂСЊ РјРѕР¶РµС‚ РѕС‡РёСЃС‚РёС‚СЊ С‚РІРѕСЋ РґСѓС€Сѓ. РџРѕРіРѕРІРѕСЂРё СЃ РџРёСЂРѕРєР°СЂРѕРј. РћРЅ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ.
 };
 
 
@@ -2474,7 +2474,7 @@ func void DIA_Vatras_OBSESSION_Info ()
 
 
 // ************************************************************
-// 	  				   Ich habe alle Drachen getцtet. (Perm Kap 5)
+// 	  				   Ich habe alle Drachen getС†tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_Vatras_AllDragonsDead(C_INFO)
@@ -2483,7 +2483,7 @@ INSTANCE DIA_Vatras_AllDragonsDead(C_INFO)
 	nr			= 59;
 	condition	= DIA_Vatras_AllDragonsDead_Condition;
 	information	= DIA_Vatras_AllDragonsDead_Info;
-	description = "Драконы больше не будут сеять хаос.";
+	description = "Р”СЂР°РєРѕРЅС‹ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ СЃРµСЏС‚СЊ С…Р°РѕСЃ.";
 };                       
 FUNC INT DIA_Vatras_AllDragonsDead_Condition()
 {
@@ -2494,10 +2494,10 @@ FUNC INT DIA_Vatras_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_Vatras_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_Vatras_AllDragonsDead_15_00"); //Драконы больше не будут сеять хаос.
-	AI_Output (self ,other,"DIA_Vatras_AllDragonsDead_05_01"); //Я знал, что ты вернешься в добром здравии. Однако самое суровое испытание еще ждет тебя впереди.
-	AI_Output (other,self ,"DIA_Vatras_AllDragonsDead_15_02"); //Я знаю.
-	AI_Output (self ,other,"DIA_Vatras_AllDragonsDead_05_03"); //Тогда найди себе снаряжение получше и приходи ко мне, если тебе нужна помощь. И всегда носи с собой Глаз Инноса, слышишь? Аданос благословляет тебя.
+	AI_Output (other,self ,"DIA_Vatras_AllDragonsDead_15_00"); //Р”СЂР°РєРѕРЅС‹ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ СЃРµСЏС‚СЊ С…Р°РѕСЃ.
+	AI_Output (self ,other,"DIA_Vatras_AllDragonsDead_05_01"); //РЇ Р·РЅР°Р», С‡С‚Рѕ С‚С‹ РІРµСЂРЅРµС€СЊСЃСЏ РІ РґРѕР±СЂРѕРј Р·РґСЂР°РІРёРё. РћРґРЅР°РєРѕ СЃР°РјРѕРµ СЃСѓСЂРѕРІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ РµС‰Рµ Р¶РґРµС‚ С‚РµР±СЏ РІРїРµСЂРµРґРё.
+	AI_Output (other,self ,"DIA_Vatras_AllDragonsDead_15_02"); //РЇ Р·РЅР°СЋ.
+	AI_Output (self ,other,"DIA_Vatras_AllDragonsDead_05_03"); //РўРѕРіРґР° РЅР°Р№РґРё СЃРµР±Рµ СЃРЅР°СЂСЏР¶РµРЅРёРµ РїРѕР»СѓС‡С€Рµ Рё РїСЂРёС…РѕРґРё РєРѕ РјРЅРµ, РµСЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ. Р РІСЃРµРіРґР° РЅРѕСЃРё СЃ СЃРѕР±РѕР№ Р“Р»Р°Р· РРЅРЅРѕСЃР°, СЃР»С‹С€РёС€СЊ? РђРґР°РЅРѕСЃ Р±Р»Р°РіРѕСЃР»РѕРІР»СЏРµС‚ С‚РµР±СЏ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -2510,7 +2510,7 @@ instance DIA_Vatras_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Vatras_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Vatras_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я знаю, где находится наш враг.";
+	description	 = 	"РЇ Р·РЅР°СЋ, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РЅР°С€ РІСЂР°Рі.";
 };
 func int DIA_Vatras_KnowWhereEnemy_Condition ()
 {	
@@ -2522,32 +2522,32 @@ func int DIA_Vatras_KnowWhereEnemy_Condition ()
 };
 func void DIA_Vatras_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_KnowWhereEnemy_15_00"); //Я знаю, где находится наш враг.
-	AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_01"); //Тогда не будем терять времени и найдем его в его логове, пока он сам не пришел к нам.
-	AI_Output			(other, self, "DIA_Vatras_KnowWhereEnemy_15_02"); //Ты хочешь сопровождать меня?
-	AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_03"); //Я много думал об этом. Да, я никогда не был так уверен в своем выборе, мой друг.
+	AI_Output			(other, self, "DIA_Vatras_KnowWhereEnemy_15_00"); //РЇ Р·РЅР°СЋ, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РЅР°С€ РІСЂР°Рі.
+	AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_01"); //РўРѕРіРґР° РЅРµ Р±СѓРґРµРј С‚РµСЂСЏС‚СЊ РІСЂРµРјРµРЅРё Рё РЅР°Р№РґРµРј РµРіРѕ РІ РµРіРѕ Р»РѕРіРѕРІРµ, РїРѕРєР° РѕРЅ СЃР°Рј РЅРµ РїСЂРёС€РµР» Рє РЅР°Рј.
+	AI_Output			(other, self, "DIA_Vatras_KnowWhereEnemy_15_02"); //РўС‹ С…РѕС‡РµС€СЊ СЃРѕРїСЂРѕРІРѕР¶РґР°С‚СЊ РјРµРЅСЏ?
+	AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_03"); //РЇ РјРЅРѕРіРѕ РґСѓРјР°Р» РѕР± СЌС‚РѕРј. Р”Р°, СЏ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р» С‚Р°Рє СѓРІРµСЂРµРЅ РІ СЃРІРѕРµРј РІС‹Р±РѕСЂРµ, РјРѕР№ РґСЂСѓРі.
 		
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	                    	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	                    	
-	B_LogEntry (TOPIC_Crew,"Как это ни странно, Ватрас предложил мне сопровождать меня в моем путешествии. Человек, обладающий его навыками и опытом, может оказаться очень полезным для меня.");	
+	B_LogEntry (TOPIC_Crew,"РљР°Рє СЌС‚Рѕ РЅРё СЃС‚СЂР°РЅРЅРѕ, Р’Р°С‚СЂР°СЃ РїСЂРµРґР»РѕР¶РёР» РјРЅРµ СЃРѕРїСЂРѕРІРѕР¶РґР°С‚СЊ РјРµРЅСЏ РІ РјРѕРµРј РїСѓС‚РµС€РµСЃС‚РІРёРё. Р§РµР»РѕРІРµРє, РѕР±Р»Р°РґР°СЋС‰РёР№ РµРіРѕ РЅР°РІС‹РєР°РјРё Рё РѕРїС‹С‚РѕРј, РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РѕС‡РµРЅСЊ РїРѕР»РµР·РЅС‹Рј РґР»СЏ РјРµРЅСЏ.");	
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Vatras_KnowWhereEnemy_15_04"); //В моем списке и так уже слишком много народа. Боюсь, там не найдется места для тебя.
-		AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_05"); //Так освободи место. Я тебе понадоблюсь.
+		AI_Output			(other,self , "DIA_Vatras_KnowWhereEnemy_15_04"); //Р’ РјРѕРµРј СЃРїРёСЃРєРµ Рё С‚Р°Рє СѓР¶Рµ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РЅР°СЂРѕРґР°. Р‘РѕСЋСЃСЊ, С‚Р°Рј РЅРµ РЅР°Р№РґРµС‚СЃСЏ РјРµСЃС‚Р° РґР»СЏ С‚РµР±СЏ.
+		AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_05"); //РўР°Рє РѕСЃРІРѕР±РѕРґРё РјРµСЃС‚Рѕ. РЇ С‚РµР±Рµ РїРѕРЅР°РґРѕР±Р»СЋСЃСЊ.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Vatras_KnowWhereEnemy);
-		Info_AddChoice (DIA_Vatras_KnowWhereEnemy,"Мне нужно еще подумать об этом.",DIA_Vatras_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Vatras_KnowWhereEnemy,"Я сочту за честь, что ты будешь на моей стороне.",DIA_Vatras_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Vatras_KnowWhereEnemy,"РњРЅРµ РЅСѓР¶РЅРѕ РµС‰Рµ РїРѕРґСѓРјР°С‚СЊ РѕР± СЌС‚РѕРј.",DIA_Vatras_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Vatras_KnowWhereEnemy,"РЇ СЃРѕС‡С‚Сѓ Р·Р° С‡РµСЃС‚СЊ, С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РЅР° РјРѕРµР№ СЃС‚РѕСЂРѕРЅРµ.",DIA_Vatras_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Vatras_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Vatras_KnowWhereEnemy_Yes_15_00"); //Я сочту за честь, что ты будешь на моей стороне. Встретимся в гавани.
-	AI_Output (self ,other,"DIA_Vatras_KnowWhereEnemy_Yes_05_01"); //Только не трать время понапрасну. Помни, друг мой, враг не дремлет.
+	AI_Output (other,self ,"DIA_Vatras_KnowWhereEnemy_Yes_15_00"); //РЇ СЃРѕС‡С‚Сѓ Р·Р° С‡РµСЃС‚СЊ, С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РЅР° РјРѕРµР№ СЃС‚РѕСЂРѕРЅРµ. Р’СЃС‚СЂРµС‚РёРјСЃСЏ РІ РіР°РІР°РЅРё.
+	AI_Output (self ,other,"DIA_Vatras_KnowWhereEnemy_Yes_05_01"); //РўРѕР»СЊРєРѕ РЅРµ С‚СЂР°С‚СЊ РІСЂРµРјСЏ РїРѕРЅР°РїСЂР°СЃРЅСѓ. РџРѕРјРЅРё, РґСЂСѓРі РјРѕР№, РІСЂР°Рі РЅРµ РґСЂРµРјР»РµС‚.
 	
 	B_GivePlayerXP (XP_Crewmember_Success);                                                                    
 	                                                                                                           
@@ -2565,7 +2565,7 @@ FUNC VOID DIA_Vatras_KnowWhereEnemy_Yes ()
 			Npc_ExchangeRoutine (self,"WAITFORSHIP"); 
 		};
 
-	// ------ Zuhцrer weg -------
+	// ------ ZuhС†rer weg -------
 	B_Vatras_GeheWeg (lang);
 	
 	Info_ClearChoices (DIA_Vatras_KnowWhereEnemy);
@@ -2573,8 +2573,8 @@ FUNC VOID DIA_Vatras_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Vatras_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Vatras_KnowWhereEnemy_No_15_00"); //Мне нужно еще подумать об этом.
-	AI_Output (self ,other,"DIA_Vatras_KnowWhereEnemy_No_05_01"); //Как знаешь. Возвращайся ко мне, если передумаешь.
+	AI_Output (other,self ,"DIA_Vatras_KnowWhereEnemy_No_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РµС‰Рµ РїРѕРґСѓРјР°С‚СЊ РѕР± СЌС‚РѕРј.
+	AI_Output (self ,other,"DIA_Vatras_KnowWhereEnemy_No_05_01"); //РљР°Рє Р·РЅР°РµС€СЊ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ, РµСЃР»Рё РїРµСЂРµРґСѓРјР°РµС€СЊ.
 
 	Vatras_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Vatras_KnowWhereEnemy);
@@ -2590,7 +2590,7 @@ instance DIA_Vatras_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Vatras_LeaveMyShip_Condition;
 	information	 = 	DIA_Vatras_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Тебе лучше остаться здесь. Ты нужен городу.";
+	description	 = 	"РўРµР±Рµ Р»СѓС‡С€Рµ РѕСЃС‚Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ. РўС‹ РЅСѓР¶РµРЅ РіРѕСЂРѕРґСѓ.";
 };
 func int DIA_Vatras_LeaveMyShip_Condition ()
 {	
@@ -2602,8 +2602,8 @@ func int DIA_Vatras_LeaveMyShip_Condition ()
 };
 func void DIA_Vatras_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_LeaveMyShip_15_00"); //Тебе лучше остаться здесь. Ты нужен городу.
-	AI_Output			(self, other, "DIA_Vatras_LeaveMyShip_05_01"); //Возможно, ты прав. И все же я готов сопровождать тебя, если ты этого захочешь. Ты знаешь это.
+	AI_Output			(other, self, "DIA_Vatras_LeaveMyShip_15_00"); //РўРµР±Рµ Р»СѓС‡С€Рµ РѕСЃС‚Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ. РўС‹ РЅСѓР¶РµРЅ РіРѕСЂРѕРґСѓ.
+	AI_Output			(self, other, "DIA_Vatras_LeaveMyShip_05_01"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚С‹ РїСЂР°РІ. Р РІСЃРµ Р¶Рµ СЏ РіРѕС‚РѕРІ СЃРѕРїСЂРѕРІРѕР¶РґР°С‚СЊ С‚РµР±СЏ, РµСЃР»Рё С‚С‹ СЌС‚РѕРіРѕ Р·Р°С…РѕС‡РµС€СЊ. РўС‹ Р·РЅР°РµС€СЊ СЌС‚Рѕ.
 	
 	Vatras_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -2612,7 +2612,7 @@ func void DIA_Vatras_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ьberlegt!
+//	Ich habs mir СЊberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Vatras_StillNeedYou		(C_INFO)
 {
@@ -2621,7 +2621,7 @@ instance DIA_Vatras_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Vatras_StillNeedYou_Condition;
 	information	 = 	DIA_Vatras_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Поплывем вместе на вражеский остров.";
+	description	 = 	"РџРѕРїР»С‹РІРµРј РІРјРµСЃС‚Рµ РЅР° РІСЂР°Р¶РµСЃРєРёР№ РѕСЃС‚СЂРѕРІ.";
 };
 
 func int DIA_Vatras_StillNeedYou_Condition ()
@@ -2636,14 +2636,14 @@ func int DIA_Vatras_StillNeedYou_Condition ()
 
 func void DIA_Vatras_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Vatras_StillNeedYou_15_00"); //Поплывем вместе на вражеский остров.
-	AI_Output	(self, other, "DIA_Vatras_StillNeedYou_05_01"); //Мудрое решение. Надеюсь, ты больше его не переменишь.
+	AI_Output	(other, self, "DIA_Vatras_StillNeedYou_15_00"); //РџРѕРїР»С‹РІРµРј РІРјРµСЃС‚Рµ РЅР° РІСЂР°Р¶РµСЃРєРёР№ РѕСЃС‚СЂРѕРІ.
+	AI_Output	(self, other, "DIA_Vatras_StillNeedYou_05_01"); //РњСѓРґСЂРѕРµ СЂРµС€РµРЅРёРµ. РќР°РґРµСЋСЃСЊ, С‚С‹ Р±РѕР»СЊС€Рµ РµРіРѕ РЅРµ РїРµСЂРµРјРµРЅРёС€СЊ.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Vatras_IsOnBoard	 = LOG_SUCCESS;
 	crewmember_Count = (Crewmember_Count +1);
 
-	// ------ Zuhцrer weg -------
+	// ------ ZuhС†rer weg -------
 	B_Vatras_GeheWeg (lang);
 	
 	AI_StopProcessInfos (self); Vatras_MORE = FALSE;

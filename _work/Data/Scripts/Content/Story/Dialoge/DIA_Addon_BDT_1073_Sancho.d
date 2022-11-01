@@ -71,11 +71,11 @@ FUNC INT DIA_Addon_Sancho_HI_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_HI_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_00"); //Черт, еще один новичок. (смеется) Тоже за золотом, да?
-	AI_Output (other,self,"DIA_Addon_Sancho_HI_15_01"); //За золотом?
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_02"); //(смеется) Не пытайся обдурить меня!
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_03"); //Все, кто приходят сюда, хотят попасть в шахту.
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_04"); //Но не думай, что это будет легко!
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_00"); //Р§РµСЂС‚, РµС‰Рµ РѕРґРёРЅ РЅРѕРІРёС‡РѕРє. (СЃРјРµРµС‚СЃСЏ) РўРѕР¶Рµ Р·Р° Р·РѕР»РѕС‚РѕРј, РґР°?
+	AI_Output (other,self,"DIA_Addon_Sancho_HI_15_01"); //Р—Р° Р·РѕР»РѕС‚РѕРј?
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_02"); //(СЃРјРµРµС‚СЃСЏ) РќРµ РїС‹С‚Р°Р№СЃСЏ РѕР±РґСѓСЂРёС‚СЊ РјРµРЅСЏ!
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_03"); //Р’СЃРµ, РєС‚Рѕ РїСЂРёС…РѕРґСЏС‚ СЃСЋРґР°, С…РѕС‚СЏС‚ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ.
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_04"); //РќРѕ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ Р»РµРіРєРѕ!
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -98,7 +98,7 @@ INSTANCE DIA_Addon_Sancho_Lager   (C_INFO)
 	condition   = DIA_Addon_Sancho_Lager_Condition;
 	information = DIA_Addon_Sancho_Lager_Info;
 	permanent   = FALSE;
-	description = "Как мне попасть в лагерь?";
+	description = "РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ?";
 };
 FUNC INT DIA_Addon_Sancho_Lager_Condition()
 {	
@@ -106,17 +106,17 @@ FUNC INT DIA_Addon_Sancho_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Lager_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Lager_15_00"); //Как мне попасть в лагерь?
-	AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_01"); //Просто иди по настилу!
+	AI_Output (other,self,"DIA_Addon_Sancho_Lager_15_00"); //РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ?
+	AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_01"); //РџСЂРѕСЃС‚Рѕ РёРґРё РїРѕ РЅР°СЃС‚РёР»Сѓ!
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_02"); //Но если ты захочешь попасть в шахту, тебе придется иметь дело с Франко.
-		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_03"); //Он считает, что все новички должны сначала немного поработать снаружи!
+		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_02"); //РќРѕ РµСЃР»Рё С‚С‹ Р·Р°С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РёРјРµС‚СЊ РґРµР»Рѕ СЃ Р¤СЂР°РЅРєРѕ.
+		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_03"); //РћРЅ СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ РІСЃРµ РЅРѕРІРёС‡РєРё РґРѕР»Р¶РЅС‹ СЃРЅР°С‡Р°Р»Р° РЅРµРјРЅРѕРіРѕ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ СЃРЅР°СЂСѓР¶Рё!
 	};
 	
 	Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Franco,"Прежде чем попасть в шахту, все новички должны поработать на болоте.");
+	B_LogEntry (Topic_Addon_Franco,"РџСЂРµР¶РґРµ С‡РµРј РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ, РІСЃРµ РЅРѕРІРёС‡РєРё РґРѕР»Р¶РЅС‹ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РЅР° Р±РѕР»РѕС‚Рµ.");
 };
 
 //---------------------------------------------------------------------
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Sancho_Mine   (C_INFO)
 	condition   = DIA_Addon_Sancho_Mine_Condition;
 	information = DIA_Addon_Sancho_Mine_Info;
 	permanent   = FALSE;
-	description = "Расскажи мне про шахту...";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїСЂРѕ С€Р°С…С‚Сѓ...";
 };
 FUNC INT DIA_Addon_Sancho_Mine_Condition()
 {	
@@ -140,13 +140,13 @@ FUNC INT DIA_Addon_Sancho_Mine_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Mine_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Расскажи мне про шахту...
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //Я дам тебе совет: если ты хочешь попасть туда, ты должен понравиться Франко. Он тут главный.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //Он решает, кто пойдет туда следующим.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //И он пустит тебя туда, только если ты не будешь тут лодырничать.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_04"); //Так что пойди к нему и попроси у него какую-нибудь работу!
+	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїСЂРѕ С€Р°С…С‚Сѓ...
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //РЇ РґР°Рј С‚РµР±Рµ СЃРѕРІРµС‚: РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ С‚СѓРґР°, С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРЅСЂР°РІРёС‚СЊСЃСЏ Р¤СЂР°РЅРєРѕ. РћРЅ С‚СѓС‚ РіР»Р°РІРЅС‹Р№.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //РћРЅ СЂРµС€Р°РµС‚, РєС‚Рѕ РїРѕР№РґРµС‚ С‚СѓРґР° СЃР»РµРґСѓСЋС‰РёРј.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Р РѕРЅ РїСѓСЃС‚РёС‚ С‚РµР±СЏ С‚СѓРґР°, С‚РѕР»СЊРєРѕ РµСЃР»Рё С‚С‹ РЅРµ Р±СѓРґРµС€СЊ С‚СѓС‚ Р»РѕРґС‹СЂРЅРёС‡Р°С‚СЊ.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_04"); //РўР°Рє С‡С‚Рѕ РїРѕР№РґРё Рє РЅРµРјСѓ Рё РїРѕРїСЂРѕСЃРё Сѓ РЅРµРіРѕ РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Сѓ!
 	
-	B_LogEntry (Topic_Addon_Franco,"Франко решает, кто попадет в лагерь. Также он занимается распределением заданий.");
+	B_LogEntry (Topic_Addon_Franco,"Р¤СЂР°РЅРєРѕ СЂРµС€Р°РµС‚, РєС‚Рѕ РїРѕРїР°РґРµС‚ РІ Р»Р°РіРµСЂСЊ. РўР°РєР¶Рµ РѕРЅ Р·Р°РЅРёРјР°РµС‚СЃСЏ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµРј Р·Р°РґР°РЅРёР№.");
 };
 
 //---------------------------------------------------------------------
@@ -159,7 +159,7 @@ INSTANCE DIA_Addon_Sancho_Franco (C_INFO)
 	condition   = DIA_Addon_Sancho_Franco_Condition;
 	information = DIA_Addon_Sancho_Franco_Info;
 	permanent   = FALSE;
-	description = "Где я могу найти Франко?";
+	description = "Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р¤СЂР°РЅРєРѕ?";
 };
 FUNC INT DIA_Addon_Sancho_Franco_Condition()
 {	
@@ -171,11 +171,11 @@ FUNC INT DIA_Addon_Sancho_Franco_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Franco_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Franco_15_00"); //Где я могу найти Франко?
-	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_01"); //Обычно он торчит во дворе перед лагерем.
-	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_02"); //Будь с ним в хороших отношениях  - и ты получишь какую-нибудь работу получше той, что делаю я!
+	AI_Output (other,self,"DIA_Addon_Sancho_Franco_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р¤СЂР°РЅРєРѕ?
+	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_01"); //РћР±С‹С‡РЅРѕ РѕРЅ С‚РѕСЂС‡РёС‚ РІРѕ РґРІРѕСЂРµ РїРµСЂРµРґ Р»Р°РіРµСЂРµРј.
+	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_02"); //Р‘СѓРґСЊ СЃ РЅРёРј РІ С…РѕСЂРѕС€РёС… РѕС‚РЅРѕС€РµРЅРёСЏС…  - Рё С‚С‹ РїРѕР»СѓС‡РёС€СЊ РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Сѓ РїРѕР»СѓС‡С€Рµ С‚РѕР№, С‡С‚Рѕ РґРµР»Р°СЋ СЏ!
 	
-	B_LogEntry (Topic_Addon_Franco,"Франко можно найти перед лагерем.");
+	B_LogEntry (Topic_Addon_Franco,"Р¤СЂР°РЅРєРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РїРµСЂРµРґ Р»Р°РіРµСЂРµРј.");
 };
 
 //---------------------------------------------------------------------
@@ -188,7 +188,7 @@ INSTANCE DIA_Addon_Sancho_Spitzel (C_INFO)
 	condition   = DIA_Addon_Sancho_Spitzel_Condition;
 	information = DIA_Addon_Sancho_Spitzel_Info;
 	permanent   = FALSE;
-	description = "Ты должен все время здесь сидеть?";
+	description = "РўС‹ РґРѕР»Р¶РµРЅ РІСЃРµ РІСЂРµРјСЏ Р·РґРµСЃСЊ СЃРёРґРµС‚СЊ?";
 };
 FUNC INT DIA_Addon_Sancho_Spitzel_Condition()
 {	
@@ -200,10 +200,10 @@ FUNC INT DIA_Addon_Sancho_Spitzel_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Spitzel_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//Ты должен все время здесь сидеть?
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_01");//Я должен встречать всех новичков, чтобы убедиться, что к нам не пробрались шпионы.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//Но об этом можно забыть. Я хочу сказать, что мы здесь на краю света - в середине болота.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Никто не может найти нас, и никто нас не найдет. Потому что кому нужно посылать сюда шпионов?
+	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//РўС‹ РґРѕР»Р¶РµРЅ РІСЃРµ РІСЂРµРјСЏ Р·РґРµСЃСЊ СЃРёРґРµС‚СЊ?
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_01");//РЇ РґРѕР»Р¶РµРЅ РІСЃС‚СЂРµС‡Р°С‚СЊ РІСЃРµС… РЅРѕРІРёС‡РєРѕРІ, С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ Рє РЅР°Рј РЅРµ РїСЂРѕР±СЂР°Р»РёСЃСЊ С€РїРёРѕРЅС‹.
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//РќРѕ РѕР± СЌС‚РѕРј РјРѕР¶РЅРѕ Р·Р°Р±С‹С‚СЊ. РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РјС‹ Р·РґРµСЃСЊ РЅР° РєСЂР°СЋ СЃРІРµС‚Р° - РІ СЃРµСЂРµРґРёРЅРµ Р±РѕР»РѕС‚Р°.
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//РќРёРєС‚Рѕ РЅРµ РјРѕР¶РµС‚ РЅР°Р№С‚Рё РЅР°СЃ, Рё РЅРёРєС‚Рѕ РЅР°СЃ РЅРµ РЅР°Р№РґРµС‚. РџРѕС‚РѕРјСѓ С‡С‚Рѕ РєРѕРјСѓ РЅСѓР¶РЅРѕ РїРѕСЃС‹Р»Р°С‚СЊ СЃСЋРґР° С€РїРёРѕРЅРѕРІ?
 };
 
 //---------------------------------------------------------------------
@@ -216,7 +216,7 @@ INSTANCE DIA_Addon_Sancho_Perm   (C_INFO)
 	condition   = DIA_Addon_Sancho_Perm_Condition;
 	information = DIA_Addon_Sancho_Perm_Info;
 	permanent   = TRUE;
-	description = "Какие новости?";
+	description = "РљР°РєРёРµ РЅРѕРІРѕСЃС‚Рё?";
 };
 FUNC INT DIA_Addon_Sancho_Perm_Condition()
 {	
@@ -229,20 +229,20 @@ var int Comment_Franco;
 var int Comment_Esteban;
 FUNC VOID DIA_Addon_Sancho_Perm_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Perm_15_00");//Какие новости?
+	AI_Output (other,self,"DIA_Addon_Sancho_Perm_15_00");//РљР°РєРёРµ РЅРѕРІРѕСЃС‚Рё?
 	
 	if Npc_IsDead (Franco)
 	&& (Comment_Franco == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_01");//Я слышал, ты убил Франко. Хорошая работа...
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_01");//РЇ СЃР»С‹С€Р°Р», С‚С‹ СѓР±РёР» Р¤СЂР°РЅРєРѕ. РҐРѕСЂРѕС€Р°СЏ СЂР°Р±РѕС‚Р°...
 		
 		if !Npc_IsDead (Carlos)
 		{
-			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_02");//...но теперь нам на шею сел этот Карлос. С ним шутки плохи...
+			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_02");//...РЅРѕ С‚РµРїРµСЂСЊ РЅР°Рј РЅР° С€РµСЋ СЃРµР» СЌС‚РѕС‚ РљР°СЂР»РѕСЃ. РЎ РЅРёРј С€СѓС‚РєРё РїР»РѕС…Рё...
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_03");//Ты покончил и с Карлосом? Приятель, ты и правда опасный убийца, не так ли? Оставь меня в покое.
+			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_03");//РўС‹ РїРѕРєРѕРЅС‡РёР» Рё СЃ РљР°СЂР»РѕСЃРѕРј? РџСЂРёСЏС‚РµР»СЊ, С‚С‹ Рё РїСЂР°РІРґР° РѕРїР°СЃРЅС‹Р№ СѓР±РёР№С†Р°, РЅРµ С‚Р°Рє Р»Рё? РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
 		};
 		
 		Comment_Franco = TRUE;
@@ -250,13 +250,13 @@ FUNC VOID DIA_Addon_Sancho_Perm_Info()
 	else if Npc_IsDead (Esteban)
 	&& (Comment_Esteban == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_04");//Говорят, ты убил Эстебана. Приятель, ты явно что-то затеваешь, да?
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_04");//Р“РѕРІРѕСЂСЏС‚, С‚С‹ СѓР±РёР» Р­СЃС‚РµР±Р°РЅР°. РџСЂРёСЏС‚РµР»СЊ, С‚С‹ СЏРІРЅРѕ С‡С‚Рѕ-С‚Рѕ Р·Р°С‚РµРІР°РµС€СЊ, РґР°?
 		
 		Comment_Esteban = TRUE;
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_05");//Да нет ничего нового.
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_05");//Р”Р° РЅРµС‚ РЅРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ.
 	};
 	
 };

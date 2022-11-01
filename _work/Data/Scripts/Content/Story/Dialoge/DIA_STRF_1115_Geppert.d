@@ -54,38 +54,38 @@ func void DIA_Geppert_HALLO_Info ()
 		Kervo_GotStuff = TRUE;
 	};	
 	
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_00"); //Стой! Кто идет?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_01"); //Ты пришел не за тем, чтобы отправить меня назад, в шахту? Нет?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_02"); //Я должен разочаровать тебя. Я ни за что не вернусь назад.
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_00"); //РЎС‚РѕР№! РљС‚Рѕ РёРґРµС‚?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_01"); //РўС‹ РїСЂРёС€РµР» РЅРµ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РѕС‚РїСЂР°РІРёС‚СЊ РјРµРЅСЏ РЅР°Р·Р°Рґ, РІ С€Р°С…С‚Сѓ? РќРµС‚?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_02"); //РЇ РґРѕР»Р¶РµРЅ СЂР°Р·РѕС‡Р°СЂРѕРІР°С‚СЊ С‚РµР±СЏ. РЇ РЅРё Р·Р° С‡С‚Рѕ РЅРµ РІРµСЂРЅСѓСЃСЊ РЅР°Р·Р°Рґ.
 	
 
 	Info_ClearChoices	(DIA_Geppert_HALLO);
-	Info_AddChoice	(DIA_Geppert_HALLO, "Что ты делаешь здесь?", DIA_Geppert_HALLO_Wasmachtihr );
-	Info_AddChoice	(DIA_Geppert_HALLO, "Ты сбежавший каторжник, правильно?", DIA_Geppert_HALLO_Flucht );
+	Info_AddChoice	(DIA_Geppert_HALLO, "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?", DIA_Geppert_HALLO_Wasmachtihr );
+	Info_AddChoice	(DIA_Geppert_HALLO, "РўС‹ СЃР±РµР¶Р°РІС€РёР№ РєР°С‚РѕСЂР¶РЅРёРє, РїСЂР°РІРёР»СЊРЅРѕ?", DIA_Geppert_HALLO_Flucht );
 };
 
 func void DIA_Geppert_HALLO_Flucht ()
 {
-	AI_Output			(other, self, "DIA_Geppert_HALLO_Flucht_15_00"); //Ты сбежавший каторжник, правильно?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_Flucht_10_01"); //Какой ты проницательный. А почему еще, по-твоему, я забился в эту грязную дыру?
+	AI_Output			(other, self, "DIA_Geppert_HALLO_Flucht_15_00"); //РўС‹ СЃР±РµР¶Р°РІС€РёР№ РєР°С‚РѕСЂР¶РЅРёРє, РїСЂР°РІРёР»СЊРЅРѕ?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_Flucht_10_01"); //РљР°РєРѕР№ С‚С‹ РїСЂРѕРЅРёС†Р°С‚РµР»СЊРЅС‹Р№. Рђ РїРѕС‡РµРјСѓ РµС‰Рµ, РїРѕ-С‚РІРѕРµРјСѓ, СЏ Р·Р°Р±РёР»СЃСЏ РІ СЌС‚Сѓ РіСЂСЏР·РЅСѓСЋ РґС‹СЂСѓ?
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 };
 
 func void DIA_Geppert_HALLO_Wasmachtihr ()
 {
-	AI_Output			(other, self, "DIA_Geppert_HALLO_Wasmachtihr_15_00"); //Что ты делаешь здесь?
+	AI_Output			(other, self, "DIA_Geppert_HALLO_Wasmachtihr_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
 	
 	if 	((other.guild == GIL_MIL) || (other.guild == GIL_PAL))
 			{
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_01"); //Что за идиотский вопрос? Я скрываюсь здесь от ваших солдат.
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_02"); //Хватит ходить вокруг да около. Либо убей меня, либо проваливай.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_01"); //Р§С‚Рѕ Р·Р° РёРґРёРѕС‚СЃРєРёР№ РІРѕРїСЂРѕСЃ? РЇ СЃРєСЂС‹РІР°СЋСЃСЊ Р·РґРµСЃСЊ РѕС‚ РІР°С€РёС… СЃРѕР»РґР°С‚.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_02"); //РҐРІР°С‚РёС‚ С…РѕРґРёС‚СЊ РІРѕРєСЂСѓРі РґР° РѕРєРѕР»Рѕ. Р›РёР±Рѕ СѓР±РµР№ РјРµРЅСЏ, Р»РёР±Рѕ РїСЂРѕРІР°Р»РёРІР°Р№.
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_03"); //Идиотский вопрос. Скрываюсь! Что же еще? У этих свиней из ополчения шпионы есть повсюду.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_03"); //РРґРёРѕС‚СЃРєРёР№ РІРѕРїСЂРѕСЃ. РЎРєСЂС‹РІР°СЋСЃСЊ! Р§С‚Рѕ Р¶Рµ РµС‰Рµ? РЈ СЌС‚РёС… СЃРІРёРЅРµР№ РёР· РѕРїРѕР»С‡РµРЅРёСЏ С€РїРёРѕРЅС‹ РµСЃС‚СЊ РїРѕРІСЃСЋРґСѓ.
 			};
 
-	AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_04"); //Я не вернусь назад, в шахту. И точка.
+	AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_04"); //РЇ РЅРµ РІРµСЂРЅСѓСЃСЊ РЅР°Р·Р°Рґ, РІ С€Р°С…С‚Сѓ. Р С‚РѕС‡РєР°.
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 };
 
@@ -100,7 +100,7 @@ instance DIA_Geppert_BRATEN		(C_INFO)
 	information	 = 	DIA_Geppert_BRATEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Твое жаркое так аппетитно пахнет.";
+	description	 = 	"РўРІРѕРµ Р¶Р°СЂРєРѕРµ С‚Р°Рє Р°РїРїРµС‚РёС‚РЅРѕ РїР°С…РЅРµС‚.";
 };
 
 func int DIA_Geppert_BRATEN_Condition ()
@@ -113,8 +113,8 @@ func int DIA_Geppert_BRATEN_Condition ()
 
 func void DIA_Geppert_BRATEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Geppert_BRATEN_15_00"); //Твое жаркое так аппетитно пахнет.
-	AI_Output			(self, other, "DIA_Geppert_BRATEN_10_01"); //Не трогай!
+	AI_Output			(other, self, "DIA_Geppert_BRATEN_15_00"); //РўРІРѕРµ Р¶Р°СЂРєРѕРµ С‚Р°Рє Р°РїРїРµС‚РёС‚РЅРѕ РїР°С…РЅРµС‚.
+	AI_Output			(self, other, "DIA_Geppert_BRATEN_10_01"); //РќРµ С‚СЂРѕРіР°Р№!
 	AI_StopProcessInfos (self);
 };
 

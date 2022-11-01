@@ -30,7 +30,7 @@ instance DIA_Vatras_DI_HEAL		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_HEAL_Condition;
 	information	 = 	DIA_Vatras_DI_HEAL_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Вылечи меня.";
+	description	 = 	"Р’С‹Р»РµС‡Рё РјРµРЅСЏ.";
 };
 
 func int DIA_Vatras_DI_HEAL_Condition ()
@@ -43,17 +43,17 @@ func int DIA_Vatras_DI_HEAL_Condition ()
 
 func void DIA_Vatras_DI_HEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_HEAL_15_00"); //Вылечи меня.
+	AI_Output			(other, self, "DIA_Vatras_DI_HEAL_15_00"); //Р’С‹Р»РµС‡Рё РјРµРЅСЏ.
 	
 	if hero.attribute [ATR_HITPOINTS] < hero.attribute[ATR_HITPOINTS_MAX]
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_01"); //(благоговейно) Аданос, благослови это тело. Ему предназначено восстановить баланс мира.
+		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_01"); //(Р±Р»Р°РіРѕРіРѕРІРµР№РЅРѕ) РђРґР°РЅРѕСЃ, Р±Р»Р°РіРѕСЃР»РѕРІРё СЌС‚Рѕ С‚РµР»Рѕ. Р•РјСѓ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРѕ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ Р±Р°Р»Р°РЅСЃ РјРёСЂР°.
 		hero.attribute [ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 		PrintScreen (PRINT_FullyHealed, - 1, - 1, FONT_Screen, 2);   
 	}
 	else 
 	{	
-		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_02"); //Твое тело сейчас не нуждается в лечении.
+		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_02"); //РўРІРѕРµ С‚РµР»Рѕ СЃРµР№С‡Р°СЃ РЅРµ РЅСѓР¶РґР°РµС‚СЃСЏ РІ Р»РµС‡РµРЅРёРё.
 	};	
 };
  
@@ -69,7 +69,7 @@ instance DIA_Vatras_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Ты можешь продать мне что-нибудь?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?";
 };
 
 func int DIA_Vatras_DI_TRADE_Condition ()
@@ -82,9 +82,9 @@ func int DIA_Vatras_DI_TRADE_Condition ()
 
 func void DIA_Vatras_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_TRADE_15_00"); //Ты можешь продать мне что-нибудь?
+	AI_Output			(other, self, "DIA_Vatras_DI_TRADE_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Vatras_DI_TRADE_05_01"); //В чем ты нуждаешься?
+	AI_Output			(self, other, "DIA_Vatras_DI_TRADE_05_01"); //Р’ С‡РµРј С‚С‹ РЅСѓР¶РґР°РµС€СЊСЃСЏ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -98,7 +98,7 @@ instance DIA_Vatras_DI_OBSESSION		(C_INFO)
 	information	 = 	DIA_Vatras_DI_OBSESSION_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Помоги мне. Я одержим!";
+	description	 = 	"РџРѕРјРѕРіРё РјРЅРµ. РЇ РѕРґРµСЂР¶РёРј!";
 };
 
 func int DIA_Vatras_DI_OBSESSION_Condition ()
@@ -112,7 +112,7 @@ func int DIA_Vatras_DI_OBSESSION_Condition ()
 var int DIA_Vatras_DI_OBSESSION_Info_OneTime;
 func void DIA_Vatras_DI_OBSESSION_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_OBSESSION_15_00"); //Помоги мне. Я одержим!
+	AI_Output			(other, self, "DIA_Vatras_DI_OBSESSION_15_00"); //РџРѕРјРѕРіРё РјРЅРµ. РЇ РѕРґРµСЂР¶РёРј!
 
 	if (Got_HealObsession_Day<=(Wld_GetDay()-2))  
 		{
@@ -124,19 +124,19 @@ func void DIA_Vatras_DI_OBSESSION_Info ()
 		
 			if (Npc_HasItems (self,ItPo_HealObsession_MIS))
 			{
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_01"); //Возьми это Зелье Освобождения. Пирокар дал мне несколько этих лечебных эликсиров по моей просьбе.
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_02"); //Однако помни: мои возможности по избавлению тебя от ночных кошмаров ограничены.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_01"); //Р’РѕР·СЊРјРё СЌС‚Рѕ Р—РµР»СЊРµ РћСЃРІРѕР±РѕР¶РґРµРЅРёСЏ. РџРёСЂРѕРєР°СЂ РґР°Р» РјРЅРµ РЅРµСЃРєРѕР»СЊРєРѕ СЌС‚РёС… Р»РµС‡РµР±РЅС‹С… СЌР»РёРєСЃРёСЂРѕРІ РїРѕ РјРѕРµР№ РїСЂРѕСЃСЊР±Рµ.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_02"); //РћРґРЅР°РєРѕ РїРѕРјРЅРё: РјРѕРё РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РїРѕ РёР·Р±Р°РІР»РµРЅРёСЋ С‚РµР±СЏ РѕС‚ РЅРѕС‡РЅС‹С… РєРѕС€РјР°СЂРѕРІ РѕРіСЂР°РЅРёС‡РµРЅС‹.
 				B_GiveInvItems (self, other, ItPo_HealObsession_MIS, 1);
 				Got_HealObsession_Day = Wld_GetDay(); 
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_03"); //Запасы Пирокара истощены. Мне очень жаль, друг мой. Я больше ничем не могу помочь тебе.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_03"); //Р—Р°РїР°СЃС‹ РџРёСЂРѕРєР°СЂР° РёСЃС‚РѕС‰РµРЅС‹. РњРЅРµ РѕС‡РµРЅСЊ Р¶Р°Р»СЊ, РґСЂСѓРі РјРѕР№. РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_04"); //Я не возьму на себя риск дать тебе еще одну бутылку в столь короткое время. Возвращайся позже, друг мой.
+			AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_04"); //РЇ РЅРµ РІРѕР·СЊРјСѓ РЅР° СЃРµР±СЏ СЂРёСЃРє РґР°С‚СЊ С‚РµР±Рµ РµС‰Рµ РѕРґРЅСѓ Р±СѓС‚С‹Р»РєСѓ РІ СЃС‚РѕР»СЊ РєРѕСЂРѕС‚РєРѕРµ РІСЂРµРјСЏ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РїРѕР·Р¶Рµ, РґСЂСѓРі РјРѕР№.
 		};
 };
 
@@ -150,7 +150,7 @@ instance DIA_Vatras_DI_RAT		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_RAT_Condition;
 	information	 = 	DIA_Vatras_DI_RAT_Info;
 
-	description	 = 	"Какой совет ты можешь дать мне?";
+	description	 = 	"РљР°РєРѕР№ СЃРѕРІРµС‚ С‚С‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ?";
 };
 
 func int DIA_Vatras_DI_RAT_Condition ()
@@ -163,15 +163,15 @@ func int DIA_Vatras_DI_RAT_Condition ()
 };
 func void DIA_Vatras_DI_RAT_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_00"); //Какой совет ты можешь дать мне?
-	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_01"); //Держись подальше от Ищущих. Помни, что их черный взгляд может нанести тебе серьезный урон здесь, вдали от монастыря.
+	AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_00"); //РљР°РєРѕР№ СЃРѕРІРµС‚ С‚С‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ?
+	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_01"); //Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РС‰СѓС‰РёС…. РџРѕРјРЅРё, С‡С‚Рѕ РёС… С‡РµСЂРЅС‹Р№ РІР·РіР»СЏРґ РјРѕР¶РµС‚ РЅР°РЅРµСЃС‚Рё С‚РµР±Рµ СЃРµСЂСЊРµР·РЅС‹Р№ СѓСЂРѕРЅ Р·РґРµСЃСЊ, РІРґР°Р»Рё РѕС‚ РјРѕРЅР°СЃС‚С‹СЂСЏ.
 
 	if (Npc_HasItems (other,ItAm_Prot_BlackEye_Mis))
 	{
-		AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_02"); //Не волнуйся, у меня есть амулет вызова душ.
+		AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_02"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ Р°РјСѓР»РµС‚ РІС‹Р·РѕРІР° РґСѓС€.
 	};
 
-	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_03"); //Если все же что-то произойдет с тобой, приходи ко мне. Я посмотрю, что можно сделать.
+	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_03"); //Р•СЃР»Рё РІСЃРµ Р¶Рµ С‡С‚Рѕ-С‚Рѕ РїСЂРѕРёР·РѕР№РґРµС‚ СЃ С‚РѕР±РѕР№, РїСЂРёС…РѕРґРё РєРѕ РјРЅРµ. РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -184,7 +184,7 @@ instance DIA_Vatras_DI_PEDROTOT		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_PEDROTOT_Condition;
 	information	 = 	DIA_Vatras_DI_PEDROTOT_Info;
 
-	description	 = 	"Я нашел предателя Педро.";
+	description	 = 	"РЇ РЅР°С€РµР» РїСЂРµРґР°С‚РµР»СЏ РџРµРґСЂРѕ.";
 };
 
 func int DIA_Vatras_DI_PEDROTOT_Condition ()
@@ -198,27 +198,27 @@ func int DIA_Vatras_DI_PEDROTOT_Condition ()
 var int DIA_Vatras_DI_PEDROTOT_VatrasSucked;
 func void DIA_Vatras_DI_PEDROTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_00"); //Я нашел предателя Педро.
+	AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_00"); //РЇ РЅР°С€РµР» РїСЂРµРґР°С‚РµР»СЏ РџРµРґСЂРѕ.
 	B_GivePlayerXP (XP_Ambient);
 	
 	if (MIS_Gorax_KillPedro == LOG_SUCCESS)
 	&& (Npc_IsDead(Pedro_DI)) 
 	{
-		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_01"); //Он мертв.
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_02"); //Я крайне разочарован. Я не ожидал этого от тебя.
-		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_03"); //Что ты имеешь в виду?
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_04"); //Я знаю о твоем отвратительном соглашении с Серпентесом. Я глубоко потрясен тем, что так ошибался в тебе.
+		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_01"); //РћРЅ РјРµСЂС‚РІ.
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_02"); //РЇ РєСЂР°Р№РЅРµ СЂР°Р·РѕС‡Р°СЂРѕРІР°РЅ. РЇ РЅРµ РѕР¶РёРґР°Р» СЌС‚РѕРіРѕ РѕС‚ С‚РµР±СЏ.
+		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_03"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_04"); //РЇ Р·РЅР°СЋ Рѕ С‚РІРѕРµРј РѕС‚РІСЂР°С‚РёС‚РµР»СЊРЅРѕРј СЃРѕРіР»Р°С€РµРЅРёРё СЃ РЎРµСЂРїРµРЅС‚РµСЃРѕРј. РЇ РіР»СѓР±РѕРєРѕ РїРѕС‚СЂСЏСЃРµРЅ С‚РµРј, С‡С‚Рѕ С‚Р°Рє РѕС€РёР±Р°Р»СЃСЏ РІ С‚РµР±Рµ.
 		DIA_Vatras_DI_PEDROTOT_VatrasSucked = TRUE;
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_05"); //Тогда приведи его сюда, на корабль. Мы передадим его властям Хориниса.
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_05"); //РўРѕРіРґР° РїСЂРёРІРµРґРё РµРіРѕ СЃСЋРґР°, РЅР° РєРѕСЂР°Р±Р»СЊ. РњС‹ РїРµСЂРµРґР°РґРёРј РµРіРѕ РІР»Р°СЃС‚СЏРј РҐРѕСЂРёРЅРёСЃР°.
 
 		if (Npc_IsDead(Pedro_DI)) 
 		{
-			AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_06"); //Для этого немного поздно. Он мертв.
-			AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_07"); //(удивленно) Ох. Какая жалость. Я буду молиться за его бедную душу.
+			AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_06"); //Р”Р»СЏ СЌС‚РѕРіРѕ РЅРµРјРЅРѕРіРѕ РїРѕР·РґРЅРѕ. РћРЅ РјРµСЂС‚РІ.
+			AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_07"); //(СѓРґРёРІР»РµРЅРЅРѕ) РћС…. РљР°РєР°СЏ Р¶Р°Р»РѕСЃС‚СЊ. РЇ Р±СѓРґСѓ РјРѕР»РёС‚СЊСЃСЏ Р·Р° РµРіРѕ Р±РµРґРЅСѓСЋ РґСѓС€Сѓ.
 		}
 		else
 		{
@@ -254,7 +254,7 @@ func int DIA_Vatras_DI_VatrasSucked_Condition ()
 
 func void DIA_Vatras_DI_VatrasSucked_Info ()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_VatrasSucked_05_00"); //Убирайся с глаз моих, убийца. Ты больше можешь не рассчитывать на мою помощь.
+	AI_Output			(self, other, "DIA_Vatras_DI_VatrasSucked_05_00"); //РЈР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС…, СѓР±РёР№С†Р°. РўС‹ Р±РѕР»СЊС€Рµ РјРѕР¶РµС€СЊ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РјРѕСЋ РїРѕРјРѕС‰СЊ.
 	AI_StopProcessInfos (self);
 };
 
@@ -269,7 +269,7 @@ INSTANCE DIA_Vatras_DI_Talente (C_INFO)
 	information		= DIA_Vatras_DI_Talente_Info;
 	permanent		= TRUE;
 
-	description		= "Научи меня тому, что знаешь сам."; 
+	description		= "РќР°СѓС‡Рё РјРµРЅСЏ С‚РѕРјСѓ, С‡С‚Рѕ Р·РЅР°РµС€СЊ СЃР°Рј."; 
 };
 
 FUNC INT DIA_Vatras_DI_Talente_Condition()
@@ -281,17 +281,17 @@ FUNC INT DIA_Vatras_DI_Talente_Condition()
 };
 FUNC VOID DIA_Vatras_DI_Talente_Info ()
 {	
-	AI_Output			(other, self, "DIA_Vatras_DI_Talente_15_00"); //Научи меня магии.
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_05_01"); //Я сделаю все, что в моих силах.
+	AI_Output			(other, self, "DIA_Vatras_DI_Talente_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РјР°РіРёРё.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_05_01"); //РЇ СЃРґРµР»Р°СЋ РІСЃРµ, С‡С‚Рѕ РІ РјРѕРёС… СЃРёР»Р°С….
 	
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	Info_AddChoice	  (DIA_Vatras_DI_Talente, DIALOG_BACK, DIA_Vatras_DI_Talente_BACK);
 
 	if (hero.guild == GIL_KDF) 
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, "Круги магии", DIA_Vatras_DI_Talente_CIRCLES);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, "РљСЂСѓРіРё РјР°РіРёРё", DIA_Vatras_DI_Talente_CIRCLES);
 	};
-	Info_AddChoice	  (DIA_Vatras_DI_Talente, "Алхимия - искусство приготовления зелий", DIA_Vatras_DI_Talente_ALCHIMIE);
+	Info_AddChoice	  (DIA_Vatras_DI_Talente, "РђР»С…РёРјРёСЏ - РёСЃРєСѓСЃСЃС‚РІРѕ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ Р·РµР»РёР№", DIA_Vatras_DI_Talente_ALCHIMIE);
 };
 
 //**********************************************************
@@ -305,27 +305,27 @@ FUNC VOID DIA_Vatras_DI_Talente_CIRCLES()
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) < 1) 
 	{ 
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("1-й круг магии"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 1))			,DIA_Vatras_DI_Talente_Circle_1);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("1-Р№ РєСЂСѓРі РјР°РіРёРё"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 1))			,DIA_Vatras_DI_Talente_Circle_1);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 1)
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("2-й круг магии"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 2))			,DIA_Vatras_DI_Talente_Circle_2);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("2-Р№ РєСЂСѓРі РјР°РіРёРё"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 2))			,DIA_Vatras_DI_Talente_Circle_2);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 2)
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("3-й круг магии"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 3))			,DIA_Vatras_DI_Talente_Circle_3);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("3-Р№ РєСЂСѓРі РјР°РіРёРё"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 3))			,DIA_Vatras_DI_Talente_Circle_3);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 3)
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("4-й круг магии"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 4))			,DIA_Vatras_DI_Talente_Circle_4);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("4-Р№ РєСЂСѓРі РјР°РіРёРё"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 4))			,DIA_Vatras_DI_Talente_Circle_4);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 4)	
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("5-й круг магии"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 5))			,DIA_Vatras_DI_Talente_Circle_5);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("5-Р№ РєСЂСѓРі РјР°РіРёРё"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 5))			,DIA_Vatras_DI_Talente_Circle_5);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 5)
 	{
-		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("6-й круг магии"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 6))			,DIA_Vatras_DI_Talente_Circle_6);
+		Info_AddChoice		(DIA_Vatras_DI_Talente, B_BuildLearnString("6-Р№ РєСЂСѓРі РјР°РіРёРё"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 6))			,DIA_Vatras_DI_Talente_Circle_6);
 	};
 };
 
@@ -340,53 +340,53 @@ FUNC VOID DIA_Vatras_DI_Talente_ALCHIMIE ()
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Лечебная эссенция", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Vatras_DI_Talente_POTION_Health_01);	  
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р›РµС‡РµР±РЅР°СЏ СЌСЃСЃРµРЅС†РёСЏ", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Vatras_DI_Talente_POTION_Health_01);	  
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Лечебный экстракт", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), DIA_Vatras_DI_Talente_POTION_Health_02);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р›РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), DIA_Vatras_DI_Talente_POTION_Health_02);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Лечебный эликсир", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), DIA_Vatras_DI_Talente_POTION_Health_03);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р›РµС‡РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), DIA_Vatras_DI_Talente_POTION_Health_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Эссенция маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), DIA_Vatras_DI_Talente_POTION_Mana_01);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р­СЃСЃРµРЅС†РёСЏ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), DIA_Vatras_DI_Talente_POTION_Mana_01);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Экстракт маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), DIA_Vatras_DI_Talente_POTION_Mana_02);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р­РєСЃС‚СЂР°РєС‚ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), DIA_Vatras_DI_Talente_POTION_Mana_02);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Эликсир маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), DIA_Vatras_DI_Talente_POTION_Mana_03);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), DIA_Vatras_DI_Talente_POTION_Mana_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Зелье ускорения"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)), DIA_Vatras_DI_Talente_POTION_Speed);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р—РµР»СЊРµ СѓСЃРєРѕСЂРµРЅРёСЏ"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)), DIA_Vatras_DI_Talente_POTION_Speed);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Эликсир силы"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), DIA_Vatras_DI_Talente_POTION_Perm_STR);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ СЃРёР»С‹"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), DIA_Vatras_DI_Talente_POTION_Perm_STR);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Эликсир ловкости"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), DIA_Vatras_DI_Talente_POTION_Perm_DEX);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ Р»РѕРІРєРѕСЃС‚Рё"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), DIA_Vatras_DI_Talente_POTION_Perm_DEX);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Эликсир духа"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), DIA_Vatras_DI_Talente_POTION_Perm_Mana);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ РґСѓС…Р°"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), DIA_Vatras_DI_Talente_POTION_Perm_Mana);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Эликсир жизни", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), DIA_Vatras_DI_Talente_POTION_Perm_Health);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ Р¶РёР·РЅРё", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), DIA_Vatras_DI_Talente_POTION_Perm_Health);
 	};
 };
 //***************************************************************************
@@ -416,14 +416,14 @@ FUNC VOID DIA_Vatras_DI_Talente_Circle_4()
 };
 FUNC VOID DIA_Vatras_DI_Talente_Circle_5()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_5_05_00"); //Теперь ты маг пятого Круга. Используй заклинания, изученные тобой, во благо.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_5_05_00"); //РўРµРїРµСЂСЊ С‚С‹ РјР°Рі РїСЏС‚РѕРіРѕ РљСЂСѓРіР°. РСЃРїРѕР»СЊР·СѓР№ Р·Р°РєР»РёРЅР°РЅРёСЏ, РёР·СѓС‡РµРЅРЅС‹Рµ С‚РѕР±РѕР№, РІРѕ Р±Р»Р°РіРѕ.
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	B_TeachMagicCircle (self, other, 5);
 };
 FUNC VOID DIA_Vatras_DI_Talente_Circle_6()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_00"); //Ты достиг самых высоких вершин в магии.
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_01"); //Пусть руку твою направляет разум, а твои человеческие слабости будут под глубоким контролем. Они не смогут затмить твой взор.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_00"); //РўС‹ РґРѕСЃС‚РёРі СЃР°РјС‹С… РІС‹СЃРѕРєРёС… РІРµСЂС€РёРЅ РІ РјР°РіРёРё.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_01"); //РџСѓСЃС‚СЊ СЂСѓРєСѓ С‚РІРѕСЋ РЅР°РїСЂР°РІР»СЏРµС‚ СЂР°Р·СѓРј, Р° С‚РІРѕРё С‡РµР»РѕРІРµС‡РµСЃРєРёРµ СЃР»Р°Р±РѕСЃС‚Рё Р±СѓРґСѓС‚ РїРѕРґ РіР»СѓР±РѕРєРёРј РєРѕРЅС‚СЂРѕР»РµРј. РћРЅРё РЅРµ СЃРјРѕРіСѓС‚ Р·Р°С‚РјРёС‚СЊ С‚РІРѕР№ РІР·РѕСЂ.
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	B_TeachMagicCircle (self, other, 6);
 };
@@ -494,7 +494,7 @@ instance DIA_Vatras_DI_DementorObsessionBook		(C_INFO)
 	information	 = 	DIA_Vatras_DI_DementorObsessionBook_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я принес Альманах Одержимых.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ РђР»СЊРјР°РЅР°С… РћРґРµСЂР¶РёРјС‹С….";
 };
 
 func int DIA_Vatras_DI_DementorObsessionBook_Condition ()
@@ -508,16 +508,16 @@ func int DIA_Vatras_DI_DementorObsessionBook_Condition ()
 var int DIA_Vatras_DI_DementorObsessionBook_OneTime;
 func void DIA_Vatras_DI_DementorObsessionBook_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_DementorObsessionBook_15_00"); //Я принес Альманах Одержимых.
+	AI_Output			(other, self, "DIA_Vatras_DI_DementorObsessionBook_15_00"); //РЇ РїСЂРёРЅРµСЃ РђР»СЊРјР°РЅР°С… РћРґРµСЂР¶РёРјС‹С….
 	if (DIA_Vatras_DI_DementorObsessionBook_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_01"); //Хм. Я думаю, будет лучше всего, если я отнесу его в монастырь к Пирокару. Если, конечно, нам удастся выбраться отсюда.
+		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_01"); //РҐРј. РЇ РґСѓРјР°СЋ, Р±СѓРґРµС‚ Р»СѓС‡С€Рµ РІСЃРµРіРѕ, РµСЃР»Рё СЏ РѕС‚РЅРµСЃСѓ РµРіРѕ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ Рє РџРёСЂРѕРєР°СЂСѓ. Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, РЅР°Рј СѓРґР°СЃС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
 		
 		DIA_Vatras_DI_DementorObsessionBook_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_02"); //У тебя есть еще? Принеси мне все, что найдешь.
+		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_02"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РµС‰Рµ? РџСЂРёРЅРµСЃРё РјРЅРµ РІСЃРµ, С‡С‚Рѕ РЅР°Р№РґРµС€СЊ.
 	};
 	B_GiveInvItems (other, self, ITWR_DementorObsessionBook_MIS,1);
 	B_GivePlayerXP (XP_Ambient);
@@ -533,7 +533,7 @@ instance DIA_Vatras_DI_UndeadDragonDead		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_UndeadDragonDead_Condition;
 	information	 = 	DIA_Vatras_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я сделал это.";
+	description	 = 	"РЇ СЃРґРµР»Р°Р» СЌС‚Рѕ.";
 };
 
 func int DIA_Vatras_DI_UndeadDragonDead_Condition ()
@@ -547,37 +547,37 @@ func int DIA_Vatras_DI_UndeadDragonDead_Condition ()
 var int DIA_Vatras_DI_UndeadDragonDead_OneTime;
 func void DIA_Vatras_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_UndeadDragonDead_15_00"); //Я сделал это.
+	AI_Output			(other, self, "DIA_Vatras_DI_UndeadDragonDead_15_00"); //РЇ СЃРґРµР»Р°Р» СЌС‚Рѕ.
 
 	if (DIA_Vatras_DI_UndeadDragonDead_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_01"); //Я знаю, я чувствую это.
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_02"); //Ты нанес удар Белиару, от которого он не скоро оправится.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_01"); //РЇ Р·РЅР°СЋ, СЏ С‡СѓРІСЃС‚РІСѓСЋ СЌС‚Рѕ.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_02"); //РўС‹ РЅР°РЅРµСЃ СѓРґР°СЂ Р‘РµР»РёР°СЂСѓ, РѕС‚ РєРѕС‚РѕСЂРѕРіРѕ РѕРЅ РЅРµ СЃРєРѕСЂРѕ РѕРїСЂР°РІРёС‚СЃСЏ.
 	
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (other, self, "DIA_Vatras_DI_UndeadDragonDead_15_03"); //Могу я теперь успокоиться, или у вас, у магов, есть еще один скелет в шкафу, которого нужно изгнать из этого мира?
+			AI_Output (other, self, "DIA_Vatras_DI_UndeadDragonDead_15_03"); //РњРѕРіСѓ СЏ С‚РµРїРµСЂСЊ СѓСЃРїРѕРєРѕРёС‚СЊСЃСЏ, РёР»Рё Сѓ РІР°СЃ, Сѓ РјР°РіРѕРІ, РµСЃС‚СЊ РµС‰Рµ РѕРґРёРЅ СЃРєРµР»РµС‚ РІ С€РєР°С„Сѓ, РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ РёР·РіРЅР°С‚СЊ РёР· СЌС‚РѕРіРѕ РјРёСЂР°?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_04"); //Помни, что это был всего лишь эпизод в вечной битве Добра со Злом.
+			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_04"); //РџРѕРјРЅРё, С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р» РІСЃРµРіРѕ Р»РёС€СЊ СЌРїРёР·РѕРґ РІ РІРµС‡РЅРѕР№ Р±РёС‚РІРµ Р”РѕР±СЂР° СЃРѕ Р—Р»РѕРј.
 		};
 		
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_05"); //Зло всегда находит способ проникнуть в этот мир. Эта война никогда не кончится.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_05"); //Р—Р»Рѕ РІСЃРµРіРґР° РЅР°С…РѕРґРёС‚ СЃРїРѕСЃРѕР± РїСЂРѕРЅРёРєРЅСѓС‚СЊ РІ СЌС‚РѕС‚ РјРёСЂ. Р­С‚Р° РІРѕР№РЅР° РЅРёРєРѕРіРґР° РЅРµ РєРѕРЅС‡РёС‚СЃСЏ.
 		
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_06"); //Как воин Добра ты должен понимать это.
+			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_06"); //РљР°Рє РІРѕРёРЅ Р”РѕР±СЂР° С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРЅРёРјР°С‚СЊ СЌС‚Рѕ.
 		};
 			
-		AI_Output (self, other, "DIA_Vatras_Add_05_15"); //Только один Аданос стоит между воюющими богами и хранит хрупкий баланс!
-		AI_Output (other, self, "DIA_Vatras_Add_15_16"); //Лучше бы он помог мне.
-		AI_Output (self, other, "DIA_Vatras_Add_05_17"); //(озорно) Он так и сделал - будь уверен.
+		AI_Output (self, other, "DIA_Vatras_Add_05_15"); //РўРѕР»СЊРєРѕ РѕРґРёРЅ РђРґР°РЅРѕСЃ СЃС‚РѕРёС‚ РјРµР¶РґСѓ РІРѕСЋСЋС‰РёРјРё Р±РѕРіР°РјРё Рё С…СЂР°РЅРёС‚ С…СЂСѓРїРєРёР№ Р±Р°Р»Р°РЅСЃ!
+		AI_Output (other, self, "DIA_Vatras_Add_15_16"); //Р›СѓС‡С€Рµ Р±С‹ РѕРЅ РїРѕРјРѕРі РјРЅРµ.
+		AI_Output (self, other, "DIA_Vatras_Add_05_17"); //(РѕР·РѕСЂРЅРѕ) РћРЅ С‚Р°Рє Рё СЃРґРµР»Р°Р» - Р±СѓРґСЊ СѓРІРµСЂРµРЅ.
 					
 		DIA_Vatras_DI_UndeadDragonDead_OneTime = TRUE;
 	};	
 
-	AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_09"); //Скажи капитану, чтобы он поднимал якорь как можно быстрее. Кратковременный мир может быть обманом.
+	AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_09"); //РЎРєР°Р¶Рё РєР°РїРёС‚Р°РЅСѓ, С‡С‚РѕР±С‹ РѕРЅ РїРѕРґРЅРёРјР°Р» СЏРєРѕСЂСЊ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ. РљСЂР°С‚РєРѕРІСЂРµРјРµРЅРЅС‹Р№ РјРёСЂ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕР±РјР°РЅРѕРј.
 };
  
 ///////////////////////////////////////////////////////////////////////

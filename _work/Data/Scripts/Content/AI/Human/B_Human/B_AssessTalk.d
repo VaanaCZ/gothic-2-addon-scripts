@@ -3,7 +3,7 @@
 // ------------
 // aufgerufen durch Ansprechen (Wahrnehmung ASSESSTALK)
 // oder durch B_AssessPlayer (NSC hat Important-Info)
-// GILT AUCH FÜR MONSTER
+// GILT AUCH FÐ¬R MONSTER
 // ****************************************************
 
 func void B_AssessTalk ()
@@ -59,7 +59,7 @@ func void B_AssessTalk ()
 		return;
 	};
 	
-	// ------ Exit-Conditions NUR für Monster
+	// ------ Exit-Conditions NUR fÑŒr Monster
 	if (self.guild > GIL_SEPERATOR_HUM)
 	{
 		// ------ Monster hat keine Info ------
@@ -72,7 +72,7 @@ func void B_AssessTalk ()
 		};
 	};
 		
-	// ------ Exit-Conditions NUR für Humans ------
+	// ------ Exit-Conditions NUR fÑŒr Humans ------
 	if (self.guild < GIL_SEPERATOR_HUM)
 	{
 		
@@ -82,7 +82,7 @@ func void B_AssessTalk ()
 			return;
 		};
 	
-		// ------ Spieler ist Mörder ------
+		// ------ Spieler ist MÑ†rder ------
 		if (B_GetPlayerCrime(self) == CRIME_MURDER)
 		&& (C_WantToAttackMurder(self, other))
 		{
@@ -155,7 +155,7 @@ func void B_AssessTalk ()
 		}	
 		else //nicht sehen
 		{
-			//HACK: Im ObservePlayer kann ein NSC sitzen, ohne daß in der END-Routine des ZS sauber aufgestanden wird (klar, denn ZS_ObservePlayer_End hat kein StandUp o.ä. - darf dies auch nicht haben)
+			//HACK: Im ObservePlayer kann ein NSC sitzen, ohne daÐ¯ in der END-Routine des ZS sauber aufgestanden wird (klar, denn ZS_ObservePlayer_End hat kein StandUp o.Ð´. - darf dies auch nicht haben)
 			if (Npc_IsInState (self, ZS_ObservePlayer))
 			{
 				AI_StandUp 		(self);

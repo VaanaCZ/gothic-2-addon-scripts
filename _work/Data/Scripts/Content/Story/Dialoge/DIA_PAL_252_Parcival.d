@@ -24,7 +24,7 @@ FUNC VOID DIA_Parcival_EXIT_Info()
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Schьrfer
+//	Info SchСЊrfer
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Parcival_Schurfer		(C_INFO)
 {
@@ -33,7 +33,7 @@ instance DIA_Parcival_Schurfer		(C_INFO)
 	condition	 = 	DIA_Parcival_Schurfer_Condition;
 	information	 = 	DIA_Parcival_Schurfer_Info;
 	permanent 	 =  FALSE;
-	description	 =	"Что ты можешь рассказать мне о старателях?";
+	description	 =	"Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ СЃС‚Р°СЂР°С‚РµР»СЏС…?";
 };
 func int DIA_Parcival_Schurfer_Condition ()	
 {	
@@ -44,20 +44,20 @@ func int DIA_Parcival_Schurfer_Condition ()
 };
 func void DIA_Parcival_Schurfer_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Schurfer_15_00"); //Что ты можешь рассказать мне о старателях?
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_01"); //Я отправлял все три отряда.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_02"); //Их возглавили Маркос, Фаджет и Сильвестро.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_03"); //Группа Маркоса пошла по направлению к старой шахте - ее ведет старый рудокоп Гримс.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_04"); //Другие две группы вышли вместе.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_05"); //Джерган, один из наших разведчиков, доложил, что они разбили лагерь неподалеку от большой башни.
+	AI_Output (other, self, "DIA_Parcival_Schurfer_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ СЃС‚Р°СЂР°С‚РµР»СЏС…?
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_01"); //РЇ РѕС‚РїСЂР°РІР»СЏР» РІСЃРµ С‚СЂРё РѕС‚СЂСЏРґР°.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_02"); //РС… РІРѕР·РіР»Р°РІРёР»Рё РњР°СЂРєРѕСЃ, Р¤Р°РґР¶РµС‚ Рё РЎРёР»СЊРІРµСЃС‚СЂРѕ.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_03"); //Р“СЂСѓРїРїР° РњР°СЂРєРѕСЃР° РїРѕС€Р»Р° РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ Рє СЃС‚Р°СЂРѕР№ С€Р°С…С‚Рµ - РµРµ РІРµРґРµС‚ СЃС‚Р°СЂС‹Р№ СЂСѓРґРѕРєРѕРї Р“СЂРёРјСЃ.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_04"); //Р”СЂСѓРіРёРµ РґРІРµ РіСЂСѓРїРїС‹ РІС‹С€Р»Рё РІРјРµСЃС‚Рµ.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_05"); //Р”Р¶РµСЂРіР°РЅ, РѕРґРёРЅ РёР· РЅР°С€РёС… СЂР°Р·РІРµРґС‡РёРєРѕРІ, РґРѕР»РѕР¶РёР», С‡С‚Рѕ РѕРЅРё СЂР°Р·Р±РёР»Рё Р»Р°РіРµСЂСЊ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ Р±РѕР»СЊС€РѕР№ Р±Р°С€РЅРё.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Отряды старателей возглавляли паладины. Маркос, Фаджет и Сильвестро.");
-	B_LogEntry (TOPIC_ScoutMine,"Группа Маркоса пошла по направлению к старой шахте. Их разведчиком был рудокоп Гримс."); 
-	B_LogEntry (TOPIC_ScoutMine,"Другие две группы вышли вместе. Они разбили лагерь неподалеку от большой башни."); 
+	B_LogEntry (TOPIC_ScoutMine,"РћС‚СЂСЏРґС‹ СЃС‚Р°СЂР°С‚РµР»РµР№ РІРѕР·РіР»Р°РІР»СЏР»Рё РїР°Р»Р°РґРёРЅС‹. РњР°СЂРєРѕСЃ, Р¤Р°РґР¶РµС‚ Рё РЎРёР»СЊРІРµСЃС‚СЂРѕ.");
+	B_LogEntry (TOPIC_ScoutMine,"Р“СЂСѓРїРїР° РњР°СЂРєРѕСЃР° РїРѕС€Р»Р° РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ Рє СЃС‚Р°СЂРѕР№ С€Р°С…С‚Рµ. РС… СЂР°Р·РІРµРґС‡РёРєРѕРј Р±С‹Р» СЂСѓРґРѕРєРѕРї Р“СЂРёРјСЃ."); 
+	B_LogEntry (TOPIC_ScoutMine,"Р”СЂСѓРіРёРµ РґРІРµ РіСЂСѓРїРїС‹ РІС‹С€Р»Рё РІРјРµСЃС‚Рµ. РћРЅРё СЂР°Р·Р±РёР»Рё Р»Р°РіРµСЂСЊ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ Р±РѕР»СЊС€РѕР№ Р±Р°С€РЅРё."); 
 	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Schьrfer
+//	Info SchСЊrfer
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Parcival_Diego		(C_INFO)
 {
@@ -66,7 +66,7 @@ instance DIA_Parcival_Diego		(C_INFO)
 	condition	 = 	DIA_Parcival_Diego_Condition;
 	information	 = 	DIA_Parcival_Diego_Info;
 	permanent 	 =  FALSE;
-	description	 =	"А с какой группой старателей пошел Диего?";
+	description	 =	"Рђ СЃ РєР°РєРѕР№ РіСЂСѓРїРїРѕР№ СЃС‚Р°СЂР°С‚РµР»РµР№ РїРѕС€РµР» Р”РёРµРіРѕ?";
 };
 func int DIA_Parcival_Diego_Condition ()	
 {	
@@ -78,10 +78,10 @@ func int DIA_Parcival_Diego_Condition ()
 };
 func void DIA_Parcival_Diego_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Diego_15_00"); //А с какой группой старателей пошел Диего?
-	AI_Output (self, other, "DIA_Parcival_Diego_13_01"); //Этот каторжник - Диего? Он с группой паладина Сильвестро.
+	AI_Output (other, self, "DIA_Parcival_Diego_15_00"); //Рђ СЃ РєР°РєРѕР№ РіСЂСѓРїРїРѕР№ СЃС‚Р°СЂР°С‚РµР»РµР№ РїРѕС€РµР» Р”РёРµРіРѕ?
+	AI_Output (self, other, "DIA_Parcival_Diego_13_01"); //Р­С‚РѕС‚ РєР°С‚РѕСЂР¶РЅРёРє - Р”РёРµРіРѕ? РћРЅ СЃ РіСЂСѓРїРїРѕР№ РїР°Р»Р°РґРёРЅР° РЎРёР»СЊРІРµСЃС‚СЂРѕ.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Диего пошел со старателями, возглавляемыми паладином Сильвестро."); 
+	B_LogEntry (TOPIC_ScoutMine,"Р”РёРµРіРѕ РїРѕС€РµР» СЃРѕ СЃС‚Р°СЂР°С‚РµР»СЏРјРё, РІРѕР·РіР»Р°РІР»СЏРµРјС‹РјРё РїР°Р»Р°РґРёРЅРѕРј РЎРёР»СЊРІРµСЃС‚СЂРѕ."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Weg
@@ -93,7 +93,7 @@ instance DIA_Parcival_Weg		(C_INFO)
 	condition	 = 	DIA_Parcival_Weg_Condition;
 	information	 = 	DIA_Parcival_Weg_Info;
 	permanent 	 =  FALSE;
-	description	 =	"Ты знаешь, как добраться до этих шахт?";
+	description	 =	"РўС‹ Р·РЅР°РµС€СЊ, РєР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЌС‚РёС… С€Р°С…С‚?";
 };
 func int DIA_Parcival_Weg_Condition ()	
 {	
@@ -104,11 +104,11 @@ func int DIA_Parcival_Weg_Condition ()
 };
 func void DIA_Parcival_Weg_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Weg_15_00"); //Ты знаешь, как добраться до этих шахт?
-	AI_Output (self, other, "DIA_Parcival_Weg_13_01"); //Через долину вообще нет безопасного пути. Но мне все же кажется, что будет лучше избегать прямой дороги.
-	AI_Output (self, other, "DIA_Parcival_Weg_13_02"); //Держись подальше от орков и лесов - и да хранит тебя Иннос.
+	AI_Output (other, self, "DIA_Parcival_Weg_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РєР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЌС‚РёС… С€Р°С…С‚?
+	AI_Output (self, other, "DIA_Parcival_Weg_13_01"); //Р§РµСЂРµР· РґРѕР»РёРЅСѓ РІРѕРѕР±С‰Рµ РЅРµС‚ Р±РµР·РѕРїР°СЃРЅРѕРіРѕ РїСѓС‚Рё. РќРѕ РјРЅРµ РІСЃРµ Р¶Рµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ Р±СѓРґРµС‚ Р»СѓС‡С€Рµ РёР·Р±РµРіР°С‚СЊ РїСЂСЏРјРѕР№ РґРѕСЂРѕРіРё.
+	AI_Output (self, other, "DIA_Parcival_Weg_13_02"); //Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РѕСЂРєРѕРІ Рё Р»РµСЃРѕРІ - Рё РґР° С…СЂР°РЅРёС‚ С‚РµР±СЏ РРЅРЅРѕСЃ.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Похоже, прямой путь к старателям может оказаться не лучшим выбором. Мне лучше обходить стороной леса и лагеря орков."); 
+	B_LogEntry (TOPIC_ScoutMine,"РџРѕС…РѕР¶Рµ, РїСЂСЏРјРѕР№ РїСѓС‚СЊ Рє СЃС‚Р°СЂР°С‚РµР»СЏРј РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РЅРµ Р»СѓС‡С€РёРј РІС‹Р±РѕСЂРѕРј. РњРЅРµ Р»СѓС‡С€Рµ РѕР±С…РѕРґРёС‚СЊ СЃС‚РѕСЂРѕРЅРѕР№ Р»РµСЃР° Рё Р»Р°РіРµСЂСЏ РѕСЂРєРѕРІ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -120,7 +120,7 @@ instance DIA_Parcival_DRAGON		(C_INFO)
 	nr			 =  2;
 	condition	 = 	DIA_Parcival_DRAGON_Condition;
 	information	 = 	DIA_Parcival_DRAGON_Info;
-	description	 =	"Как ситуация?";
+	description	 =	"РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };
 func int DIA_Parcival_DRAGON_Condition ()	
 {
@@ -128,10 +128,10 @@ func int DIA_Parcival_DRAGON_Condition ()
 };
 func void DIA_Parcival_DRAGON_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_DRAGON_15_00"); //Как обстановка?
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_01"); //Мы окружены орками. Похоже, они здесь надолго.
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_02"); //Но значительно больше меня тревожат нападения драконов. Они уже уничтожили весь внешний круг.
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_03"); //Еще одно нападение драконов, и мы понесем большие потери.
+	AI_Output (other, self, "DIA_Parcival_DRAGON_15_00"); //РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_01"); //РњС‹ РѕРєСЂСѓР¶РµРЅС‹ РѕСЂРєР°РјРё. РџРѕС…РѕР¶Рµ, РѕРЅРё Р·РґРµСЃСЊ РЅР°РґРѕР»РіРѕ.
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_02"); //РќРѕ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ Р±РѕР»СЊС€Рµ РјРµРЅСЏ С‚СЂРµРІРѕР¶Р°С‚ РЅР°РїР°РґРµРЅРёСЏ РґСЂР°РєРѕРЅРѕРІ. РћРЅРё СѓР¶Рµ СѓРЅРёС‡С‚РѕР¶РёР»Рё РІРµСЃСЊ РІРЅРµС€РЅРёР№ РєСЂСѓРі.
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_03"); //Р•С‰Рµ РѕРґРЅРѕ РЅР°РїР°РґРµРЅРёРµ РґСЂР°РєРѕРЅРѕРІ, Рё РјС‹ РїРѕРЅРµСЃРµРј Р±РѕР»СЊС€РёРµ РїРѕС‚РµСЂРё.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info DRAGONS
@@ -142,7 +142,7 @@ instance DIA_Parcival_DRAGONS		(C_INFO)
 	nr		 	 = 	2;
 	condition	 = 	DIA_Parcival_DRAGONS_Condition;
 	information	 = 	DIA_Parcival_DRAGONS_Info;
-	description	 = 	"Сколько всего драконов?";
+	description	 = 	"РЎРєРѕР»СЊРєРѕ РІСЃРµРіРѕ РґСЂР°РєРѕРЅРѕРІ?";
 };
 
 func int DIA_Parcival_DRAGONS_Condition ()
@@ -155,10 +155,10 @@ func int DIA_Parcival_DRAGONS_Condition ()
 };
 func void DIA_Parcival_DRAGONS_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_DRAGONS_15_00"); //Сколько всего драконов?
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_01"); //Мы не знаем, сколько их всего, но больше одного, это точно.
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_02"); //Но и это еще не все. Вся Долина Рудников кишит дьявольскими созданиями, поддерживающими драконов.
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_03"); //Не стоит обманывать себя - без подкрепления извне наши шансы выбраться отсюда живыми ничтожны.
+	AI_Output (other, self, "DIA_Parcival_DRAGONS_15_00"); //РЎРєРѕР»СЊРєРѕ РІСЃРµРіРѕ РґСЂР°РєРѕРЅРѕРІ?
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_01"); //РњС‹ РЅРµ Р·РЅР°РµРј, СЃРєРѕР»СЊРєРѕ РёС… РІСЃРµРіРѕ, РЅРѕ Р±РѕР»СЊС€Рµ РѕРґРЅРѕРіРѕ, СЌС‚Рѕ С‚РѕС‡РЅРѕ.
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_02"); //РќРѕ Рё СЌС‚Рѕ РµС‰Рµ РЅРµ РІСЃРµ. Р’СЃСЏ Р”РѕР»РёРЅР° Р СѓРґРЅРёРєРѕРІ РєРёС€РёС‚ РґСЊСЏРІРѕР»СЊСЃРєРёРјРё СЃРѕР·РґР°РЅРёСЏРјРё, РїРѕРґРґРµСЂР¶РёРІР°СЋС‰РёРјРё РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_03"); //РќРµ СЃС‚РѕРёС‚ РѕР±РјР°РЅС‹РІР°С‚СЊ СЃРµР±СЏ - Р±РµР· РїРѕРґРєСЂРµРїР»РµРЅРёСЏ РёР·РІРЅРµ РЅР°С€Рё С€Р°РЅСЃС‹ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° Р¶РёРІС‹РјРё РЅРёС‡С‚РѕР¶РЅС‹.
 	 
 	AI_StopProcessInfos (self); 
 };
@@ -196,21 +196,21 @@ func void DIA_Parcival_BRAVE_Info ()
 		
 		if randy == 0
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_00"); //Пока все спокойно. Но все может быстро перемениться.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_00"); //РџРѕРєР° РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ. РќРѕ РІСЃРµ РјРѕР¶РµС‚ Р±С‹СЃС‚СЂРѕ РїРµСЂРµРјРµРЅРёС‚СЊСЃСЏ.
 		};
 		if randy == 1
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_01"); //Мы будем держаться, сколько сможем.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_01"); //РњС‹ Р±СѓРґРµРј РґРµСЂР¶Р°С‚СЊСЃСЏ, СЃРєРѕР»СЊРєРѕ СЃРјРѕР¶РµРј.
 		};
 		if randy == 2
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_02"); //Иннос поможет нам. Его свет озаряет наши сердца!
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_02"); //РРЅРЅРѕСЃ РїРѕРјРѕР¶РµС‚ РЅР°Рј. Р•РіРѕ СЃРІРµС‚ РѕР·Р°СЂСЏРµС‚ РЅР°С€Рё СЃРµСЂРґС†Р°!
 		};
 	
 	}
 	else 
 	{
-	AI_Output			(self, other, "DIA_Parcival_BRAVE_13_03"); //Эй! Тебе что,  нечего больше делать, как болтать со мной? Проваливай!
+	AI_Output			(self, other, "DIA_Parcival_BRAVE_13_03"); //Р­Р№! РўРµР±Рµ С‡С‚Рѕ,  РЅРµС‡РµРіРѕ Р±РѕР»СЊС€Рµ РґРµР»Р°С‚СЊ, РєР°Рє Р±РѕР»С‚Р°С‚СЊ СЃРѕ РјРЅРѕР№? РџСЂРѕРІР°Р»РёРІР°Р№!
 	B_GivePlayerXP (XP_Ambient);
 	};
 	
@@ -262,7 +262,7 @@ instance DIA_Parcival_ALLESKLAR		(C_INFO)
 	information	 = 	DIA_Parcival_ALLESKLAR_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Parcival_ALLESKLAR_Condition ()
@@ -277,23 +277,23 @@ func int DIA_Parcival_ALLESKLAR_Condition ()
 var int DIA_Parcival_ALLESKLAR_NervCounter;
 func void DIA_Parcival_ALLESKLAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Parcival_ALLESKLAR_15_00"); //Все в порядке?
+	AI_Output			(other, self, "DIA_Parcival_ALLESKLAR_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 
 	if (DIA_Parcival_ALLESKLAR_NervCounter == 0)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_01"); //Пока да!
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_01"); //РџРѕРєР° РґР°!
 	}	
 	else if (DIA_Parcival_ALLESKLAR_NervCounter == 1)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_02"); //Да, черт тебя побери.
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_02"); //Р”Р°, С‡РµСЂС‚ С‚РµР±СЏ РїРѕР±РµСЂРё.
 	}	
 	else if (Parcival_BRAVE_LaberCount > 6)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_03"); //(смеется) Ах. Теперь я понимаю, что ты задумал. Нет, дружок. Не на этот раз.
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_03"); //(СЃРјРµРµС‚СЃСЏ) РђС…. РўРµРїРµСЂСЊ СЏ РїРѕРЅРёРјР°СЋ, С‡С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р». РќРµС‚, РґСЂСѓР¶РѕРє. РќРµ РЅР° СЌС‚РѕС‚ СЂР°Р·.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_04"); //Не отвлекай меня.
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_04"); //РќРµ РѕС‚РІР»РµРєР°Р№ РјРµРЅСЏ.
 	};
 
 	DIA_Parcival_ALLESKLAR_NervCounter = DIA_Parcival_ALLESKLAR_NervCounter + 1;
@@ -344,7 +344,7 @@ instance DIA_Parcival_AnyNews		(C_INFO)
 	condition	 = 	DIA_Parcival_AnyNews_Condition;
 	information	 = 	DIA_Parcival_AnyNews_Info;
 
-	description  =	"Ничего важного не произошло?";		
+	description  =	"РќРёС‡РµРіРѕ РІР°Р¶РЅРѕРіРѕ РЅРµ РїСЂРѕРёР·РѕС€Р»Рѕ?";		
 };
 
 func int DIA_Parcival_AnyNews_Condition ()
@@ -357,58 +357,58 @@ func int DIA_Parcival_AnyNews_Condition ()
 };
 func void DIA_Parcival_AnyNews_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_AnyNews_15_00"); //Ничего важного не произошло?
+	AI_Output	(other,self ,"DIA_Parcival_AnyNews_15_00"); //РќРёС‡РµРіРѕ РІР°Р¶РЅРѕРіРѕ РЅРµ РїСЂРѕРёР·РѕС€Р»Рѕ?
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_01"); //Ты один из этих отбросов общества, что называют себя охотниками на драконов?
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_02"); //Вообще-то, я полагал, что у тебя хватит ума не связываться с этими недоумками.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_01"); //РўС‹ РѕРґРёРЅ РёР· СЌС‚РёС… РѕС‚Р±СЂРѕСЃРѕРІ РѕР±С‰РµСЃС‚РІР°, С‡С‚Рѕ РЅР°Р·С‹РІР°СЋС‚ СЃРµР±СЏ РѕС…РѕС‚РЅРёРєР°РјРё РЅР° РґСЂР°РєРѕРЅРѕРІ?
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_02"); //Р’РѕРѕР±С‰Рµ-С‚Рѕ, СЏ РїРѕР»Р°РіР°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ С…РІР°С‚РёС‚ СѓРјР° РЅРµ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ СЌС‚РёРјРё РЅРµРґРѕСѓРјРєР°РјРё.
 	
 	}
 	else
 	{
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_03"); //Я обеспокоен. Очень сильно обеспокоен.
-		AI_Output 	(other,self ,"DIA_Parcival_AnyNews_15_04"); //Чем?
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_05"); //Недавно здесь появились эти люди. Они называют себя охотниками на драконов.
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_06"); //С моей точки зрения все они бездельники и преступники.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_03"); //РЇ РѕР±РµСЃРїРѕРєРѕРµРЅ. РћС‡РµРЅСЊ СЃРёР»СЊРЅРѕ РѕР±РµСЃРїРѕРєРѕРµРЅ.
+		AI_Output 	(other,self ,"DIA_Parcival_AnyNews_15_04"); //Р§РµРј?
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_05"); //РќРµРґР°РІРЅРѕ Р·РґРµСЃСЊ РїРѕСЏРІРёР»РёСЃСЊ СЌС‚Рё Р»СЋРґРё. РћРЅРё РЅР°Р·С‹РІР°СЋС‚ СЃРµР±СЏ РѕС…РѕС‚РЅРёРєР°РјРё РЅР° РґСЂР°РєРѕРЅРѕРІ.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_06"); //РЎ РјРѕРµР№ С‚РѕС‡РєРё Р·СЂРµРЅРёСЏ РІСЃРµ РѕРЅРё Р±РµР·РґРµР»СЊРЅРёРєРё Рё РїСЂРµСЃС‚СѓРїРЅРёРєРё.
 	};
-	AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_07"); //Если бы это было в моей власти, я бы выгнал их всех из замка. Пусть орки позаботятся о них.
+	AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_07"); //Р•СЃР»Рё Р±С‹ СЌС‚Рѕ Р±С‹Р»Рѕ РІ РјРѕРµР№ РІР»Р°СЃС‚Рё, СЏ Р±С‹ РІС‹РіРЅР°Р» РёС… РІСЃРµС… РёР· Р·Р°РјРєР°. РџСѓСЃС‚СЊ РѕСЂРєРё РїРѕР·Р°Р±РѕС‚СЏС‚СЃСЏ Рѕ РЅРёС….
 
 	Info_ClearChoices (DIA_Parcival_AnyNews);
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Но в отличие от лорда Хагена, они все же здесь.",DIA_Parcival_AnyNews_LordHagen); 
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Ты должен дать им шанс.",DIA_Parcival_AnyNews_Chance);
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Тебе не кажется, что ты преувеличиваешь?",DIA_Parcival_AnyNews_Overact);
+	Info_AddChoice	(DIA_Parcival_AnyNews,"РќРѕ РІ РѕС‚Р»РёС‡РёРµ РѕС‚ Р»РѕСЂРґР° РҐР°РіРµРЅР°, РѕРЅРё РІСЃРµ Р¶Рµ Р·РґРµСЃСЊ.",DIA_Parcival_AnyNews_LordHagen); 
+	Info_AddChoice	(DIA_Parcival_AnyNews,"РўС‹ РґРѕР»Р¶РµРЅ РґР°С‚СЊ РёРј С€Р°РЅСЃ.",DIA_Parcival_AnyNews_Chance);
+	Info_AddChoice	(DIA_Parcival_AnyNews,"РўРµР±Рµ РЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ С‚С‹ РїСЂРµСѓРІРµР»РёС‡РёРІР°РµС€СЊ?",DIA_Parcival_AnyNews_Overact);
 	
 };
 
 FUNC VOID DIA_Parcival_AnyNews_LordHagen ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_LordHagen_15_00"); //Но в отличие от лорда Хагена, они все же здесь.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_01"); //(горько смеется) Да, к сожалению, они все, что у нас есть.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_02"); //Воистину Иннос подвергает нас суровому испытанию.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_LordHagen_15_00"); //РќРѕ РІ РѕС‚Р»РёС‡РёРµ РѕС‚ Р»РѕСЂРґР° РҐР°РіРµРЅР°, РѕРЅРё РІСЃРµ Р¶Рµ Р·РґРµСЃСЊ.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_01"); //(РіРѕСЂСЊРєРѕ СЃРјРµРµС‚СЃСЏ) Р”Р°, Рє СЃРѕР¶Р°Р»РµРЅРёСЋ, РѕРЅРё РІСЃРµ, С‡С‚Рѕ Сѓ РЅР°СЃ РµСЃС‚СЊ.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_02"); //Р’РѕРёСЃС‚РёРЅСѓ РРЅРЅРѕСЃ РїРѕРґРІРµСЂРіР°РµС‚ РЅР°СЃ СЃСѓСЂРѕРІРѕРјСѓ РёСЃРїС‹С‚Р°РЅРёСЋ.
 	
 	Info_ClearChoices (DIA_Parcival_AnyNews);
 };
 
 FUNC VOID DIA_Parcival_AnyNews_Chance ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_Chance_15_00"); //Ты должен дать им шанс.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_01"); //И они его получат. К сожалению.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_02"); //Гаронд убежден, что они могут помочь нам.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_03"); //Но я глаз с них не спущу. У нас и так хватает проблем с орками. И дополнительные неприятности нам совсем ни к чему.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_Chance_15_00"); //РўС‹ РґРѕР»Р¶РµРЅ РґР°С‚СЊ РёРј С€Р°РЅСЃ.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_01"); //Р РѕРЅРё РµРіРѕ РїРѕР»СѓС‡Р°С‚. Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_02"); //Р“Р°СЂРѕРЅРґ СѓР±РµР¶РґРµРЅ, С‡С‚Рѕ РѕРЅРё РјРѕРіСѓС‚ РїРѕРјРѕС‡СЊ РЅР°Рј.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_03"); //РќРѕ СЏ РіР»Р°Р· СЃ РЅРёС… РЅРµ СЃРїСѓС‰Сѓ. РЈ РЅР°СЃ Рё С‚Р°Рє С…РІР°С‚Р°РµС‚ РїСЂРѕР±Р»РµРј СЃ РѕСЂРєР°РјРё. Р РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё РЅР°Рј СЃРѕРІСЃРµРј РЅРё Рє С‡РµРјСѓ.
 	
 	Info_ClearChoices (DIA_Parcival_AnyNews);  
 };
 
 FUNC VOID DIA_Parcival_AnyNews_Overact ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_Overact_15_00"); //Тебе не кажется, что ты преувеличиваешь?
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_01"); //Абсолютно нет. В нашей ситуации нам нужны люди, являющие собой пример героизма.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_02"); //Воины, которые пробудят огонь Инноса в сердцах наших бойцов.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_03"); //А вместо этого эти проходимцы разлагают боевой дух моих солдат.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_Overact_15_00"); //РўРµР±Рµ РЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ С‚С‹ РїСЂРµСѓРІРµР»РёС‡РёРІР°РµС€СЊ?
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_01"); //РђР±СЃРѕР»СЋС‚РЅРѕ РЅРµС‚. Р’ РЅР°С€РµР№ СЃРёС‚СѓР°С†РёРё РЅР°Рј РЅСѓР¶РЅС‹ Р»СЋРґРё, СЏРІР»СЏСЋС‰РёРµ СЃРѕР±РѕР№ РїСЂРёРјРµСЂ РіРµСЂРѕРёР·РјР°.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_02"); //Р’РѕРёРЅС‹, РєРѕС‚РѕСЂС‹Рµ РїСЂРѕР±СѓРґСЏС‚ РѕРіРѕРЅСЊ РРЅРЅРѕСЃР° РІ СЃРµСЂРґС†Р°С… РЅР°С€РёС… Р±РѕР№С†РѕРІ.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_03"); //Рђ РІРјРµСЃС‚Рѕ СЌС‚РѕРіРѕ СЌС‚Рё РїСЂРѕС…РѕРґРёРјС†С‹ СЂР°Р·Р»Р°РіР°СЋС‚ Р±РѕРµРІРѕР№ РґСѓС… РјРѕРёС… СЃРѕР»РґР°С‚.
 };
  
 ///////////////////////////////////////////////////////////////////////
-//	Ich muss mit dir ьber Jan reden
+//	Ich muss mit dir СЊber Jan reden
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_Jan		(C_INFO)
@@ -418,7 +418,7 @@ instance DIA_Parcival_Jan		(C_INFO)
 	condition	 = 	DIA_Parcival_Jan_Condition;
 	information	 = 	DIA_Parcival_Jan_Info;
 	permanent	 = 	FALSE;
-	description  =	"Мне нужно поговорить с тобой о Яне.";		
+	description  =	"РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ РЇРЅРµ.";		
 };
 
 func int DIA_Parcival_Jan_Condition ()
@@ -431,16 +431,16 @@ func int DIA_Parcival_Jan_Condition ()
 };
 func void DIA_Parcival_Jan_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_00"); //Мне нужно поговорить с тобой о Яне.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_01"); //Яне? Кто это?
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_02"); //Охотник на драконов. Он кузнец.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_03"); //Ох, да. Я помню. Что насчет него?
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_04"); //Он хочет работать в кузнице.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_05"); //Это даже не обсуждается. Он не наш человек и я не доверяю ему.
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ РЇРЅРµ.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_01"); //РЇРЅРµ? РљС‚Рѕ СЌС‚Рѕ?
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_02"); //РћС…РѕС‚РЅРёРє РЅР° РґСЂР°РєРѕРЅРѕРІ. РћРЅ РєСѓР·РЅРµС†.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_03"); //РћС…, РґР°. РЇ РїРѕРјРЅСЋ. Р§С‚Рѕ РЅР°СЃС‡РµС‚ РЅРµРіРѕ?
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_04"); //РћРЅ С…РѕС‡РµС‚ СЂР°Р±РѕС‚Р°С‚СЊ РІ РєСѓР·РЅРёС†Рµ.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_05"); //Р­С‚Рѕ РґР°Р¶Рµ РЅРµ РѕР±СЃСѓР¶РґР°РµС‚СЃСЏ. РћРЅ РЅРµ РЅР°С€ С‡РµР»РѕРІРµРє Рё СЏ РЅРµ РґРѕРІРµСЂСЏСЋ РµРјСѓ.
 }; 
  
 ///////////////////////////////////////////////////////////////////////
-//	Kannst du das mit Jan noch mal ьberdenken?
+//	Kannst du das mit Jan noch mal СЊberdenken?
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_ThinkAgain		(C_INFO)
@@ -450,7 +450,7 @@ instance DIA_Parcival_ThinkAgain		(C_INFO)
 	condition	 = 	DIA_Parcival_ThinkAgain_Condition;
 	information	 = 	DIA_Parcival_ThinkAgain_Info;
 	permanent	 = 	TRUE;
-	description  =	"Ты не мог бы пересмотреть свое мнение насчет Яна?";		
+	description  =	"РўС‹ РЅРµ РјРѕРі Р±С‹ РїРµСЂРµСЃРјРѕС‚СЂРµС‚СЊ СЃРІРѕРµ РјРЅРµРЅРёРµ РЅР°СЃС‡РµС‚ РЇРЅР°?";		
 };
 
 func int DIA_Parcival_ThinkAgain_Condition ()
@@ -463,12 +463,12 @@ func int DIA_Parcival_ThinkAgain_Condition ()
 };
 func void DIA_Parcival_ThinkAgain_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_ThinkAgain_15_00"); //Ты не мог бы пересмотреть свое мнение насчет Яна?
-	AI_Output 	(self ,other,"DIA_Parcival_ThinkAgain_13_01"); //Нет, мое решение окончательно.
+	AI_Output	(other,self ,"DIA_Parcival_ThinkAgain_15_00"); //РўС‹ РЅРµ РјРѕРі Р±С‹ РїРµСЂРµСЃРјРѕС‚СЂРµС‚СЊ СЃРІРѕРµ РјРЅРµРЅРёРµ РЅР°СЃС‡РµС‚ РЇРЅР°?
+	AI_Output 	(self ,other,"DIA_Parcival_ThinkAgain_13_01"); //РќРµС‚, РјРѕРµ СЂРµС€РµРЅРёРµ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕ.
 }; 
  
 ///////////////////////////////////////////////////////////////////////
-//	Garond will, dass Jan die Schmiede ьbernimmt.
+//	Garond will, dass Jan die Schmiede СЊbernimmt.
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_TalkedGarond		(C_INFO)
@@ -478,7 +478,7 @@ instance DIA_Parcival_TalkedGarond		(C_INFO)
 	condition	 = 	DIA_Parcival_TalkedGarond_Condition;
 	information	 = 	DIA_Parcival_TalkedGarond_Info;
 
-	description  =	"Гаронд хочет, чтобы Ян работал в кузнице.";		
+	description  =	"Р“Р°СЂРѕРЅРґ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РЇРЅ СЂР°Р±РѕС‚Р°Р» РІ РєСѓР·РЅРёС†Рµ.";		
 };
 
 func int DIA_Parcival_TalkedGarond_Condition ()
@@ -492,9 +492,9 @@ func int DIA_Parcival_TalkedGarond_Condition ()
 };
 func void DIA_Parcival_TalkedGarond_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_TalkedGarond_15_00"); //Гаронд хочет, чтобы Ян работал в кузнице.
-	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_01"); //Ммм. Если это действительно так, то я не имею ничего против этого.
-	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_02"); //Хотя я и считаю ошибкой доверять этому Яну.
+	AI_Output	(other,self ,"DIA_Parcival_TalkedGarond_15_00"); //Р“Р°СЂРѕРЅРґ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РЇРЅ СЂР°Р±РѕС‚Р°Р» РІ РєСѓР·РЅРёС†Рµ.
+	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_01"); //РњРјРј. Р•СЃР»Рё СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С‚Р°Рє, С‚Рѕ СЏ РЅРµ РёРјРµСЋ РЅРёС‡РµРіРѕ РїСЂРѕС‚РёРІ СЌС‚РѕРіРѕ.
+	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_02"); //РҐРѕС‚СЏ СЏ Рё СЃС‡РёС‚Р°СЋ РѕС€РёР±РєРѕР№ РґРѕРІРµСЂСЏС‚СЊ СЌС‚РѕРјСѓ РЇРЅСѓ.
 };  
 
 ///////////////////////////////////////////////////////////////////////
@@ -508,7 +508,7 @@ instance DIA_Parcival_PERMKAP4		(C_INFO)
 	information	 = 	DIA_Parcival_PERMKAP4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"А кроме этого?";
+	description	 = 	"Рђ РєСЂРѕРјРµ СЌС‚РѕРіРѕ?";
 };
 
 func int DIA_Parcival_PERMKAP4_Condition ()
@@ -522,8 +522,8 @@ func int DIA_Parcival_PERMKAP4_Condition ()
 
 func void DIA_Parcival_PERMKAP4_Info ()
 {
-	AI_Output			(other, self, "DIA_Parcival_PERMKAP4_15_00"); //А кроме этого?
-	AI_Output			(self, other, "DIA_Parcival_PERMKAP4_13_01"); //Ах, оставь меня в покое!
+	AI_Output			(other, self, "DIA_Parcival_PERMKAP4_15_00"); //Рђ РєСЂРѕРјРµ СЌС‚РѕРіРѕ?
+	AI_Output			(self, other, "DIA_Parcival_PERMKAP4_13_01"); //РђС…, РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 
 };
 
@@ -584,8 +584,8 @@ func int DIA_Parcival_VERRAETER_Condition ()
 func void DIA_Parcival_VERRAETER_Info ()
 {
 	
-	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_00"); //Предатель! Я точно знаю, что это ТЫ открыл ворота.
-	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_01"); //Ты заплатишь за это.
+	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_00"); //РџСЂРµРґР°С‚РµР»СЊ! РЇ С‚РѕС‡РЅРѕ Р·РЅР°СЋ, С‡С‚Рѕ СЌС‚Рѕ РўР« РѕС‚РєСЂС‹Р» РІРѕСЂРѕС‚Р°.
+	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_01"); //РўС‹ Р·Р°РїР»Р°С‚РёС€СЊ Р·Р° СЌС‚Рѕ.
 	
 	Npc_SetRefuseTalk (self,30);
 	AI_StopProcessInfos (self);

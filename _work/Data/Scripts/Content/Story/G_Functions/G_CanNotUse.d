@@ -2,7 +2,7 @@
 // G_CanNotUse
 // -----------
 // Funktion wir vom Programm aufgerufen, 
-// wenn SC oder NSC etwas equippt, für das ihm 
+// wenn SC oder NSC etwas equippt, fÑŒr das ihm 
 // die Attributs-Voraussetzung fehlt
 // ------------------------------------------------
 // self = der NSC, der das Item nicht equippen kann

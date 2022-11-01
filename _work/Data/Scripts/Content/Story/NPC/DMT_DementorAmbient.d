@@ -646,13 +646,13 @@ instance CastlemineDMT (Default_AmbientDementor)	//Joly: spricht den SC mit sein
 
 INSTANCE DragonIsle_Keymaster	(Default_AmbientDementor)
 {
-	name		=	"Êëþ÷íèê";
+	name		=	"ÐšÐ»ÑŽÑ‡Ð½Ð¸Ðº";
 	id 			= 	1236;
 
 	// ------ Aivars ------
 	aivar[AIV_EnemyOverride] = TRUE;
 
-	CreateInvItem	(self,ItKe_EVT_UNDEAD_02);	//der Schlüssel ist wichtig für die Türen zu den Zuggittern
+	CreateInvItem	(self,ItKe_EVT_UNDEAD_02);	//der SchlÑŒssel ist wichtig fÑŒr die TÑŒren zu den Zuggittern
 
 	// ------ TA anmelden ------
 	start_aistate = ZS_Stand_Dementor;

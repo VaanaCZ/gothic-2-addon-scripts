@@ -41,9 +41,9 @@ FUNC INT DIA_Addon_Brandon_Hello_Condition()
 };
 FUNC VOID DIA_Addon_Brandon_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_00"); //Вы только посмотрите! Новичок.
-	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_01"); //И к тому же, сухопутная крыса!
-	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_02"); //До настоящего пирата тебе еще далеко.
+	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_00"); //Р’С‹ С‚РѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРёС‚Рµ! РќРѕРІРёС‡РѕРє.
+	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_01"); //Р Рє С‚РѕРјСѓ Р¶Рµ, СЃСѓС…РѕРїСѓС‚РЅР°СЏ РєСЂС‹СЃР°!
+	AI_Output (self ,other,"DIA_Addon_Brandon_Hello_04_02"); //Р”Рѕ РЅР°СЃС‚РѕСЏС‰РµРіРѕ РїРёСЂР°С‚Р° С‚РµР±Рµ РµС‰Рµ РґР°Р»РµРєРѕ.
 };
 
 // ************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_Addon_Brandon_AnyNews(C_INFO)
 	condition	= DIA_Addon_Brandon_AnyNews_Condition;
 	information	= DIA_Addon_Brandon_AnyNews_Info;
 	permanent	= TRUE;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };                       
 FUNC INT DIA_Addon_Brandon_AnyNews_Condition()
 {
@@ -64,23 +64,23 @@ FUNC INT DIA_Addon_Brandon_AnyNews_Condition()
 };
 FUNC VOID DIA_Addon_Brandon_AnyNews_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Brandon_AnyNews_15_00"); //Есть что-нибудь новое?
+	AI_Output (other,self ,"DIA_Addon_Brandon_AnyNews_15_00"); //Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРѕРµ?
 	
 	if (self.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
 		if (self.attribute[ATR_HITPOINTS] < 100)
 		{
-			AI_Output (self ,other,"DIA_Addon_Brandon_Alright_04_01"); //Пожалуй. Например, я ранен. У тебя не найдется лечебного эликсира?
+			AI_Output (self ,other,"DIA_Addon_Brandon_Alright_04_01"); //РџРѕР¶Р°Р»СѓР№. РќР°РїСЂРёРјРµСЂ, СЏ СЂР°РЅРµРЅ. РЈ С‚РµР±СЏ РЅРµ РЅР°Р№РґРµС‚СЃСЏ Р»РµС‡РµР±РЅРѕРіРѕ СЌР»РёРєСЃРёСЂР°?
 		}
 		else
 		{
 			if (C_AllCanyonRazorDead() == FALSE)
 			{
-				AI_Output (self ,other,"DIA_Addon_Brandon_Alright_04_02"); //Что еще? Мы будем, наконец, охотиться или нет?
+				AI_Output (self ,other,"DIA_Addon_Brandon_Alright_04_02"); //Р§С‚Рѕ РµС‰Рµ? РњС‹ Р±СѓРґРµРј, РЅР°РєРѕРЅРµС†, РѕС…РѕС‚РёС‚СЊСЃСЏ РёР»Рё РЅРµС‚?
 			}
 			else //alle platt
 			{
-				AI_Output (self ,other,"DIA_Addon_Brandon_Alright_04_03"); //Что за вопросы?! Не думаю, что во всем чертовом каньоне остался еще хоть один бритвозуб.
+				AI_Output (self ,other,"DIA_Addon_Brandon_Alright_04_03"); //Р§С‚Рѕ Р·Р° РІРѕРїСЂРѕСЃС‹?! РќРµ РґСѓРјР°СЋ, С‡С‚Рѕ РІРѕ РІСЃРµРј С‡РµСЂС‚РѕРІРѕРј РєР°РЅСЊРѕРЅРµ РѕСЃС‚Р°Р»СЃСЏ РµС‰Рµ С…РѕС‚СЊ РѕРґРёРЅ Р±СЂРёС‚РІРѕР·СѓР±.
 			};
 		};
 	}
@@ -88,13 +88,13 @@ FUNC VOID DIA_Addon_Brandon_AnyNews_Info()
 	&& (!Npc_IsDead(Greg))
 	&& (MIS_Addon_Greg_ClearCanyon != LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_04"); //Грег вернулся. Теперь все должно измениться.
+		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_04"); //Р“СЂРµРі РІРµСЂРЅСѓР»СЃСЏ. РўРµРїРµСЂСЊ РІСЃРµ РґРѕР»Р¶РЅРѕ РёР·РјРµРЅРёС‚СЊСЃСЏ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_06"); //(заговорщицки) Погоди секунду...
+		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_06"); //(Р·Р°РіРѕРІРѕСЂС‰РёС†РєРё) РџРѕРіРѕРґРё СЃРµРєСѓРЅРґСѓ...
 		AI_PlayAni (self, "T_SEARCH");
-		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_07"); //(смеется) Насколько я вижу, нет! Все по-старому.
+		AI_Output (self ,other,"DIA_Addon_Brandon_AnyNews_04_07"); //(СЃРјРµРµС‚СЃСЏ) РќР°СЃРєРѕР»СЊРєРѕ СЏ РІРёР¶Сѓ, РЅРµС‚! Р’СЃРµ РїРѕ-СЃС‚Р°СЂРѕРјСѓ.
 	};
 };
 
@@ -115,7 +115,7 @@ INSTANCE DIA_Addon_Brandon_WannaLearn (C_INFO)
 	condition	= DIA_Addon_Brandon_WannaLearn_Condition;
 	information	= DIA_Addon_Brandon_WannaLearn_Info;
 
-	description = "Ты можешь научить меня чему-нибудь?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };                       
 FUNC INT DIA_Addon_Brandon_WannaLearn_Condition()
 {
@@ -123,12 +123,12 @@ FUNC INT DIA_Addon_Brandon_WannaLearn_Condition()
 };
 func void DIA_Addon_Brandon_WannaLearn_Info()
 {
-	AI_Output (other, self,"DIA_Addon_Brandon_WannaLearn_15_00"); //Ты можешь научить меня чему-нибудь?
-	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_01"); //Научить тебя? Конечно, могу! Я могу сделать тебя более сильным и ловким.
-	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_02"); //Но зачем мне это делать?
-	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_OfferDrink_15_00"); //Затем, что я угощу тебя выпивкой?
-	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_03"); //(усмехается) Неплохо, сынок! Угадал с первой попытки.
-	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_04"); //Но не вздумай подсовывать мне какое-нибудь дешевое пойло.
+	AI_Output (other, self,"DIA_Addon_Brandon_WannaLearn_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_01"); //РќР°СѓС‡РёС‚СЊ С‚РµР±СЏ? РљРѕРЅРµС‡РЅРѕ, РјРѕРіСѓ! РЇ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ С‚РµР±СЏ Р±РѕР»РµРµ СЃРёР»СЊРЅС‹Рј Рё Р»РѕРІРєРёРј.
+	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_02"); //РќРѕ Р·Р°С‡РµРј РјРЅРµ СЌС‚Рѕ РґРµР»Р°С‚СЊ?
+	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_OfferDrink_15_00"); //Р—Р°С‚РµРј, С‡С‚Рѕ СЏ СѓРіРѕС‰Сѓ С‚РµР±СЏ РІС‹РїРёРІРєРѕР№?
+	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_03"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РќРµРїР»РѕС…Рѕ, СЃС‹РЅРѕРє! РЈРіР°РґР°Р» СЃ РїРµСЂРІРѕР№ РїРѕРїС‹С‚РєРё.
+	AI_Output (self ,other,"DIA_Addon_Brandon_WannaLearn_04_04"); //РќРѕ РЅРµ РІР·РґСѓРјР°Р№ РїРѕРґСЃРѕРІС‹РІР°С‚СЊ РјРЅРµ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ РґРµС€РµРІРѕРµ РїРѕР№Р»Рѕ.
 	MIS_Brandon_BringHering = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
@@ -136,7 +136,7 @@ func void DIA_Addon_Brandon_WannaLearn_Info()
 	
 	Log_CreateTopic (TOPIC_Addon_BrandonBooze,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_BrandonBooze,LOG_RUNNING);
-	Log_AddEntry (TOPIC_Addon_BrandonBooze,"Я должен принести Брэндону выпивку. Тогда он согласится учить меня.");
+	Log_AddEntry (TOPIC_Addon_BrandonBooze,"РЇ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё Р‘СЂСЌРЅРґРѕРЅСѓ РІС‹РїРёРІРєСѓ. РўРѕРіРґР° РѕРЅ СЃРѕРіР»Р°СЃРёС‚СЃСЏ СѓС‡РёС‚СЊ РјРµРЅСЏ.");
 };
 
 // ------------------------------------------------------------
@@ -149,7 +149,7 @@ INSTANCE DIA_Addon_Brandon_HoleGrog (C_INFO)
 	condition	= DIA_Addon_Brandon_HoleGrog_Condition;
 	information	= DIA_Addon_Brandon_HoleGrog_Info;
 
-	description = "Я принесу тебе грога.";
+	description = "РЇ РїСЂРёРЅРµСЃСѓ С‚РµР±Рµ РіСЂРѕРіР°.";
 };                       
 FUNC INT DIA_Addon_Brandon_HoleGrog_Condition()
 {
@@ -160,24 +160,24 @@ FUNC INT DIA_Addon_Brandon_HoleGrog_Condition()
 };
 func void DIA_Addon_Brandon_HoleGrog_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_BringGrog_15_00"); //Я принесу тебе грога.
-	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_01"); //Ты что, хочешь меня отравить???
-	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_02"); //Я не дотронусь до этой бурды. Ты хоть представляешь, из ЧЕГО ее делают?!
-	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_03"); //Нет, хорошую выпивку можно достать только у Сэмюэля!
+	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_BringGrog_15_00"); //РЇ РїСЂРёРЅРµСЃСѓ С‚РµР±Рµ РіСЂРѕРіР°.
+	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_01"); //РўС‹ С‡С‚Рѕ, С…РѕС‡РµС€СЊ РјРµРЅСЏ РѕС‚СЂР°РІРёС‚СЊ???
+	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_02"); //РЇ РЅРµ РґРѕС‚СЂРѕРЅСѓСЃСЊ РґРѕ СЌС‚РѕР№ Р±СѓСЂРґС‹. РўС‹ С…РѕС‚СЊ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ, РёР· Р§Р•Р“Рћ РµРµ РґРµР»Р°СЋС‚?!
+	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_03"); //РќРµС‚, С…РѕСЂРѕС€СѓСЋ РІС‹РїРёРІРєСѓ РјРѕР¶РЅРѕ РґРѕСЃС‚Р°С‚СЊ С‚РѕР»СЊРєРѕ Сѓ РЎСЌРјСЋСЌР»СЏ!
 	if (Player_KnowsSchnellerHering == TRUE)
 	{
-		AI_Output (other,self ,"DIA_Addon_Brandon_Hello_15_05"); //Ты говоришь о его 'Быстрой селедке'?
-		AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_04"); //Да, именно ее я и имею в виду.
+		AI_Output (other,self ,"DIA_Addon_Brandon_Hello_15_05"); //РўС‹ РіРѕРІРѕСЂРёС€СЊ Рѕ РµРіРѕ 'Р‘С‹СЃС‚СЂРѕР№ СЃРµР»РµРґРєРµ'?
+		AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_04"); //Р”Р°, РёРјРµРЅРЅРѕ РµРµ СЏ Рё РёРјРµСЋ РІ РІРёРґСѓ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_05"); //Ты уже пробовал особый напиток Сэмюэля?
-		AI_Output (other,self ,"DIA_Addon_Brandon_Hello_15_07"); //Еще нет.
-		AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_06"); //Так чего же ты ждешь? Эту штуку надо попробовать обязательно!
+		AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_05"); //РўС‹ СѓР¶Рµ РїСЂРѕР±РѕРІР°Р» РѕСЃРѕР±С‹Р№ РЅР°РїРёС‚РѕРє РЎСЌРјСЋСЌР»СЏ?
+		AI_Output (other,self ,"DIA_Addon_Brandon_Hello_15_07"); //Р•С‰Рµ РЅРµС‚.
+		AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_06"); //РўР°Рє С‡РµРіРѕ Р¶Рµ С‚С‹ Р¶РґРµС€СЊ? Р­С‚Сѓ С€С‚СѓРєСѓ РЅР°РґРѕ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ!
 	};
-	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_08"); //Я просто обожаю эту смесь!
+	AI_Output (self ,other,"DIA_Addon_Brandon_HoleGrog_04_08"); //РЇ РїСЂРѕСЃС‚Рѕ РѕР±РѕР¶Р°СЋ СЌС‚Сѓ СЃРјРµСЃСЊ!
 	
-	B_LogEntry (TOPIC_Addon_BrandonBooze,"Грога Брэндону недостаточно. Он хочет 'Быструю селедку'. Этот напиток есть только у Сэмюэля.");
+	B_LogEntry (TOPIC_Addon_BrandonBooze,"Р“СЂРѕРіР° Р‘СЂСЌРЅРґРѕРЅСѓ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РћРЅ С…РѕС‡РµС‚ 'Р‘С‹СЃС‚СЂСѓСЋ СЃРµР»РµРґРєСѓ'. Р­С‚РѕС‚ РЅР°РїРёС‚РѕРє РµСЃС‚СЊ С‚РѕР»СЊРєРѕ Сѓ РЎСЌРјСЋСЌР»СЏ.");
 };
 // ------------------------------------------------------------
 // 					Schnellen Hering geben
@@ -189,7 +189,7 @@ INSTANCE DIA_Addon_Brandon_SchnellerHering (C_INFO)
 	condition	= DIA_Addon_Brandon_SchnellerHering_Condition;
 	information	= DIA_Addon_Brandon_SchnellerHering_Info;
 
-	description = "Возьми эту 'Быструю селедку'.";
+	description = "Р’РѕР·СЊРјРё СЌС‚Сѓ 'Р‘С‹СЃС‚СЂСѓСЋ СЃРµР»РµРґРєСѓ'.";
 };                       
 FUNC INT DIA_Addon_Brandon_SchnellerHering_Condition()
 {
@@ -201,12 +201,12 @@ FUNC INT DIA_Addon_Brandon_SchnellerHering_Condition()
 };
 func void DIA_Addon_Brandon_SchnellerHering_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_GiveGrog_15_00"); //Получай.
+	AI_Output (other,self ,"DIA_Addon_Pir_7_HenrysCrew_GiveGrog_15_00"); //РџРѕР»СѓС‡Р°Р№.
 	B_GiveInvItems (other, self, ItFo_Addon_Schnellerhering, 1);
 	B_UseItem (self, ItFo_Addon_Schnellerhering);
-	AI_Output (self ,other,"DIA_Addon_Brandon_GiveGrog_04_01"); //Ах-х! Словно жидкий огонь!
+	AI_Output (self ,other,"DIA_Addon_Brandon_GiveGrog_04_01"); //РђС…-С…! РЎР»РѕРІРЅРѕ Р¶РёРґРєРёР№ РѕРіРѕРЅСЊ!
 	
-	B_LogEntry (TOPIC_Addon_BrandonBooze,"Я отдал Брэндону его ужасное пойло. Теперь он готов учить меня.");
+	B_LogEntry (TOPIC_Addon_BrandonBooze,"РЇ РѕС‚РґР°Р» Р‘СЂСЌРЅРґРѕРЅСѓ РµРіРѕ СѓР¶Р°СЃРЅРѕРµ РїРѕР№Р»Рѕ. РўРµРїРµСЂСЊ РѕРЅ РіРѕС‚РѕРІ СѓС‡РёС‚СЊ РјРµРЅСЏ.");
 	
 	MIS_Brandon_BringHering = LOG_SUCCESS;
 	B_GivePlayerXP (XP_AMBIENT);
@@ -226,7 +226,7 @@ INSTANCE DIA_Addon_Brandon_TeachPlayer(C_INFO)
 	condition	= DIA_Addon_Brandon_TeachPlayer_Condition;
 	information	= DIA_Addon_Brandon_TeachPlayer_Info;
 	permanent	= TRUE;
-	description = "Я готов учиться!";
+	description = "РЇ РіРѕС‚РѕРІ СѓС‡РёС‚СЊСЃСЏ!";
 };                       
 FUNC INT DIA_Addon_Brandon_TeachPlayer_Condition()
 {
@@ -237,7 +237,7 @@ FUNC INT DIA_Addon_Brandon_TeachPlayer_Condition()
 };
 func VOID DIA_Addon_Brandon_TeachPlayer_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Francis_TeachPlayer_15_00"); //Я готов учиться!
+	AI_Output (other,self ,"DIA_Addon_Francis_TeachPlayer_15_00"); //РЇ РіРѕС‚РѕРІ СѓС‡РёС‚СЊСЃСЏ!
 	
 	Brandon_Merke_Str = other.attribute[ATR_STRENGTH];
 	Brandon_Merke_Dex = other.attribute[ATR_DEXTERITY];
@@ -253,7 +253,7 @@ func VOID DIA_Addon_Brandon_TeachPlayer_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_04_01"); //Сначала ты должен принести мне достойную выпивку, сынок!
+		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_04_01"); //РЎРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё РјРЅРµ РґРѕСЃС‚РѕР№РЅСѓСЋ РІС‹РїРёРІРєСѓ, СЃС‹РЅРѕРє!
 	};
 };
 // ------------------------------------------------------------
@@ -261,12 +261,12 @@ FUNC VOID DIA_Addon_Brandon_TeachPlayer_Back()
 {
 	if other.attribute[ATR_STRENGTH] > Brandon_Merke_Str
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_Back_04_00"); //Прекрасно, сынок! Ты уже стал сильнее.
+		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_Back_04_00"); //РџСЂРµРєСЂР°СЃРЅРѕ, СЃС‹РЅРѕРє! РўС‹ СѓР¶Рµ СЃС‚Р°Р» СЃРёР»СЊРЅРµРµ.
 	};
 	
 	if other.attribute[ATR_DEXTERITY] > Brandon_Merke_Dex
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_Back_04_01"); //Чем выше твоя ловкость, тем чаще ты будешь попадать по врагу.
+		AI_Output (self ,other,"DIA_Addon_Brandon_TeachPlayer_Back_04_01"); //Р§РµРј РІС‹С€Рµ С‚РІРѕСЏ Р»РѕРІРєРѕСЃС‚СЊ, С‚РµРј С‡Р°С‰Рµ С‚С‹ Р±СѓРґРµС€СЊ РїРѕРїР°РґР°С‚СЊ РїРѕ РІСЂР°РіСѓ.
 	};
 	Info_ClearChoices (DIA_Addon_Brandon_TeachPlayer);
 };
@@ -336,7 +336,7 @@ instance DIA_Addon_Brandon_Anheuern(C_INFO)
 	condition	= DIA_Addon_Brandon_Anheuern_Condition;
 	information	= DIA_Addon_Brandon_Anheuern_Info;
 	permanent	= FALSE;
-	description = "Ты должен мне помочь.";
+	description = "РўС‹ РґРѕР»Р¶РµРЅ РјРЅРµ РїРѕРјРѕС‡СЊ.";
 };                       
 FUNC INT DIA_Addon_Brandon_Anheuern_Condition()
 {
@@ -347,11 +347,11 @@ FUNC INT DIA_Addon_Brandon_Anheuern_Condition()
 };
 func VOID DIA_Addon_Brandon_Anheuern_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Brandon_FollowMe_15_00"); //Ты должен мне помочь.
-	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_01"); //Это для меня новость. И кто так решил?
-	AI_Output (other,self ,"DIA_Addon_Brandon_FollowMe_15_02"); //Так решил Грег. Мы должны истребить бритвозубов в каньоне.
-	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_03"); //(усмехается) Наконец-то здесь хоть что-нибудь происходит!
-	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_04"); //Что ж, пойдем. Чем скорее мы разделаемся с ними, тем скорее можно будет вернуться.
+	AI_Output (other,self ,"DIA_Addon_Brandon_FollowMe_15_00"); //РўС‹ РґРѕР»Р¶РµРЅ РјРЅРµ РїРѕРјРѕС‡СЊ.
+	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_01"); //Р­С‚Рѕ РґР»СЏ РјРµРЅСЏ РЅРѕРІРѕСЃС‚СЊ. Р РєС‚Рѕ С‚Р°Рє СЂРµС€РёР»?
+	AI_Output (other,self ,"DIA_Addon_Brandon_FollowMe_15_02"); //РўР°Рє СЂРµС€РёР» Р“СЂРµРі. РњС‹ РґРѕР»Р¶РЅС‹ РёСЃС‚СЂРµР±РёС‚СЊ Р±СЂРёС‚РІРѕР·СѓР±РѕРІ РІ РєР°РЅСЊРѕРЅРµ.
+	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_03"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РќР°РєРѕРЅРµС†-С‚Рѕ Р·РґРµСЃСЊ С…РѕС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРёСЃС…РѕРґРёС‚!
+	AI_Output (self ,other,"DIA_Addon_Brandon_Anheuern_04_04"); //Р§С‚Рѕ Р¶, РїРѕР№РґРµРј. Р§РµРј СЃРєРѕСЂРµРµ РјС‹ СЂР°Р·РґРµР»Р°РµРјСЃСЏ СЃ РЅРёРјРё, С‚РµРј СЃРєРѕСЂРµРµ РјРѕР¶РЅРѕ Р±СѓРґРµС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ.
 };
 
 // ------------------------------------------------------------
@@ -364,7 +364,7 @@ instance DIA_Addon_Brandon_ComeOn(C_INFO)
 	condition	= 	DIA_Addon_Brandon_ComeOn_Condition;
 	information	= 	DIA_Addon_Brandon_ComeOn_Info;
 	permanent	= 	TRUE;
-	description	= 	"Пойдем со мной.";
+	description	= 	"РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.";
 };
 func int DIA_Addon_Brandon_ComeOn_Condition ()
 {
@@ -377,15 +377,15 @@ func int DIA_Addon_Brandon_ComeOn_Condition ()
 };
 func void DIA_Addon_Brandon_ComeOn_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Brandon_Weiter_15_00"); //Пойдем со мной.
+	AI_Output	(other, self, "DIA_Addon_Brandon_Weiter_15_00"); //РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_ComeOn_04_02"); //Давай сначала вернемся немного назад.
+		AI_Output (self ,other,"DIA_Addon_Brandon_ComeOn_04_02"); //Р”Р°РІР°Р№ СЃРЅР°С‡Р°Р»Р° РІРµСЂРЅРµРјСЃСЏ РЅРµРјРЅРѕРіРѕ РЅР°Р·Р°Рґ.
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_ComeOn_04_01"); //Иду!
+		AI_Output (self ,other,"DIA_Addon_Brandon_ComeOn_04_01"); //РРґСѓ!
 		AI_StopProcessInfos (self);
 		B_Addon_PiratesFollowAgain();
 		Npc_ExchangeRoutine	(self,"FOLLOW");
@@ -403,7 +403,7 @@ INSTANCE DIA_Addon_Brandon_GoHome(C_INFO)
 	condition	= DIA_Addon_Brandon_GoHome_Condition;
 	information	= DIA_Addon_Brandon_GoHome_Info;
 	permanent	= TRUE;
-	description = "Ты мне больше не нужен.";
+	description = "РўС‹ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.";
 };                       
 FUNC INT DIA_Addon_Brandon_GoHome_Condition()
 {
@@ -415,9 +415,9 @@ FUNC INT DIA_Addon_Brandon_GoHome_Condition()
 
 FUNC VOID DIA_Addon_Brandon_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Brandon_DontNeedYou_15_00"); //Ты мне больше не нужен.
-	AI_Output (self ,other,"DIA_Addon_Brandon_GoHome_04_01"); //Хорошо.
-	AI_Output (self ,other,"DIA_Addon_Brandon_GoHome_04_02"); //Может быть, мы как-нибудь с тобой выпьем.
+	AI_Output (other,self ,"DIA_Addon_Brandon_DontNeedYou_15_00"); //РўС‹ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.
+	AI_Output (self ,other,"DIA_Addon_Brandon_GoHome_04_01"); //РҐРѕСЂРѕС€Рѕ.
+	AI_Output (self ,other,"DIA_Addon_Brandon_GoHome_04_02"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РјС‹ РєР°Рє-РЅРёР±СѓРґСЊ СЃ С‚РѕР±РѕР№ РІС‹РїСЊРµРј.
 
 	AI_StopProcessInfos (self); 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -447,14 +447,14 @@ FUNC INT DIA_Addon_Brandon_TooFar_Condition()
 
 FUNC VOID DIA_Addon_Brandon_TooFar_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_00"); //Достаточно! Ты что, хочешь истребить всех зверей на острове?
+	AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_00"); //Р”РѕСЃС‚Р°С‚РѕС‡РЅРѕ! РўС‹ С‡С‚Рѕ, С…РѕС‡РµС€СЊ РёСЃС‚СЂРµР±РёС‚СЊ РІСЃРµС… Р·РІРµСЂРµР№ РЅР° РѕСЃС‚СЂРѕРІРµ?
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_01"); //Мы возвращаемся в лагерь.
+		AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_01"); //РњС‹ РІРѕР·РІСЂР°С‰Р°РµРјСЃСЏ РІ Р»Р°РіРµСЂСЊ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_02"); //Я возвращаюсь в лагерь.	
+		AI_Output (self ,other,"DIA_Addon_Brandon_TooFar_04_02"); //РЇ РІРѕР·РІСЂР°С‰Р°СЋСЃСЊ РІ Р»Р°РіРµСЂСЊ.	
 	};
 	
 	B_Addon_PiratesGoHome();

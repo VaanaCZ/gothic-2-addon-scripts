@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Gobbo_Warrior (C_NPC)			
 {
 	//----- Monster ----
-	name							=	"Ãîáëèí-âîèí";
+	name							=	"Ð“Ð¾Ð±Ð»Ð¸Ð½-Ð²Ð¾Ð¸Ð½";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_BLACK;
 	level							=	15;
@@ -84,7 +84,7 @@ INSTANCE Gobbo_Warrior (Mst_Default_Gobbo_Warrior)
 {
 	B_SetVisuals_Gobbo_Warrior();
 	
-	Npc_SetToFightMode (self, ItMw_1h_Misc_Sword); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1h_Misc_Sword); //Waffe ist nur Optik - Schaden wird NUR ÑŒber STR bestimmt (Gobbo ist als Monster im Fistmode)
 	Mdl_SetModelScale(self, 1.15, 1.15, 1.15);
 };
 // ***********
@@ -95,7 +95,7 @@ INSTANCE Gobbo_Warrior_Visir (Mst_Default_Gobbo_Warrior)
 {
 	B_SetVisuals_Gobbo_Warrior_Visir();
 	
-	Npc_SetToFightMode (self, ItMw_1h_Misc_Axe); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1h_Misc_Axe); //Waffe ist nur Optik - Schaden wird NUR ÑŒber STR bestimmt (Gobbo ist als Monster im Fistmode)
 	Mdl_SetModelScale(self, 1.15, 1.15, 1.15);
 };
 

@@ -44,7 +44,7 @@ func int DIA_Mortis_Hallo_Condition ()
 };
 func void DIA_Mortis_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Mortis_Hallo_13_00"); //Что тебе нужно? Пека здесь нет. А без него ты ничего не получишь. Заходи позже.
+	AI_Output (self, other, "DIA_Mortis_Hallo_13_00"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РџРµРєР° Р·РґРµСЃСЊ РЅРµС‚. Рђ Р±РµР· РЅРµРіРѕ С‚С‹ РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС€СЊ. Р—Р°С…РѕРґРё РїРѕР·Р¶Рµ.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -57,7 +57,7 @@ instance DIA_Mortis_Waffe		(C_INFO)
 	condition	 = 	DIA_Mortis_Waffe_Condition;
 	information	 = 	DIA_Mortis_Waffe_Info;
 	permanent    =  FALSE;
-	description  =  "А где Пек?";
+	description  =  "Рђ РіРґРµ РџРµРє?";
 };
 
 func int DIA_Mortis_Waffe_Condition ()
@@ -71,9 +71,9 @@ func int DIA_Mortis_Waffe_Condition ()
 };
 func void DIA_Mortis_Waffe_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Waffe_15_00"); //А где Пек?
-	AI_Output (self, other, "DIA_Mortis_Waffe_13_01"); //Ты только что вступил в наши ряды? Ну, тогда добро пожаловать.
-	AI_Output (self, other, "DIA_Mortis_Waffe_13_02"); //Пек ушел в город уже давно. Готов поспорить, что он обхаживает Ваню в Красном Фонаре.
+	AI_Output (other, self, "DIA_Mortis_Waffe_15_00"); //Рђ РіРґРµ РџРµРє?
+	AI_Output (self, other, "DIA_Mortis_Waffe_13_01"); //РўС‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РІСЃС‚СѓРїРёР» РІ РЅР°С€Рё СЂСЏРґС‹? РќСѓ, С‚РѕРіРґР° РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ.
+	AI_Output (self, other, "DIA_Mortis_Waffe_13_02"); //РџРµРє СѓС€РµР» РІ РіРѕСЂРѕРґ СѓР¶Рµ РґР°РІРЅРѕ. Р“РѕС‚РѕРІ РїРѕСЃРїРѕСЂРёС‚СЊ, С‡С‚Рѕ РѕРЅ РѕР±С…Р°Р¶РёРІР°РµС‚ Р’Р°РЅСЋ РІ РљСЂР°СЃРЅРѕРј Р¤РѕРЅР°СЂРµ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Paket
@@ -85,7 +85,7 @@ instance DIA_Mortis_Paket		(C_INFO)
 	condition	 = 	DIA_Mortis_Paket_Condition;
 	information	 = 	DIA_Mortis_Paket_Info;
 	permanent    =  FALSE;
-	description  =  "Ты что-нибудь знаешь о тюке травки?";
+	description  =  "РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС€СЊ Рѕ С‚СЋРєРµ С‚СЂР°РІРєРё?";
 };
 
 func int DIA_Mortis_Paket_Condition ()
@@ -97,12 +97,12 @@ func int DIA_Mortis_Paket_Condition ()
 };
 func void DIA_Mortis_Paket_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Paket_15_00"); //Ты что-нибудь знаешь о тюке травки?
-	AI_Output (self, other, "DIA_Mortis_Paket_13_01"); //Хм... последний раз, когда я был в портовом кабаке, я слышал, как Кардиф говорил об этом с каким-то парнем.
-	AI_Output (other, self, "DIA_Mortis_Paket_15_02"); //Что это за парень?
-	AI_Output (self, other, "DIA_Mortis_Paket_13_03"); //Понятия не имею. Но он сказал, что нашел отличное место для хранения травы - а затем они долго ржали как пьяные орки.
+	AI_Output (other, self, "DIA_Mortis_Paket_15_00"); //РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС€СЊ Рѕ С‚СЋРєРµ С‚СЂР°РІРєРё?
+	AI_Output (self, other, "DIA_Mortis_Paket_13_01"); //РҐРј... РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·, РєРѕРіРґР° СЏ Р±С‹Р» РІ РїРѕСЂС‚РѕРІРѕРј РєР°Р±Р°РєРµ, СЏ СЃР»С‹С€Р°Р», РєР°Рє РљР°СЂРґРёС„ РіРѕРІРѕСЂРёР» РѕР± СЌС‚РѕРј СЃ РєР°РєРёРј-С‚Рѕ РїР°СЂРЅРµРј.
+	AI_Output (other, self, "DIA_Mortis_Paket_15_02"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° РїР°СЂРµРЅСЊ?
+	AI_Output (self, other, "DIA_Mortis_Paket_13_03"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РќРѕ РѕРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅР°С€РµР» РѕС‚Р»РёС‡РЅРѕРµ РјРµСЃС‚Рѕ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ С‚СЂР°РІС‹ - Р° Р·Р°С‚РµРј РѕРЅРё РґРѕР»РіРѕ СЂР¶Р°Р»Рё РєР°Рє РїСЊСЏРЅС‹Рµ РѕСЂРєРё.
 	
-	B_LogEntry (TOPIC_WAREHOUSE,"Мортис слышал, как трактирщик Кардиф и кто-то еще разговаривали о тюке в портовой таверне. Они обсуждали, где лучше хранить его.");
+	B_LogEntry (TOPIC_WAREHOUSE,"РњРѕСЂС‚РёСЃ СЃР»С‹С€Р°Р», РєР°Рє С‚СЂР°РєС‚РёСЂС‰РёРє РљР°СЂРґРёС„ Рё РєС‚Рѕ-С‚Рѕ РµС‰Рµ СЂР°Р·РіРѕРІР°СЂРёРІР°Р»Рё Рѕ С‚СЋРєРµ РІ РїРѕСЂС‚РѕРІРѕР№ С‚Р°РІРµСЂРЅРµ. РћРЅРё РѕР±СЃСѓР¶РґР°Р»Рё, РіРґРµ Р»СѓС‡С€Рµ С…СЂР°РЅРёС‚СЊ РµРіРѕ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Redlight
@@ -114,7 +114,7 @@ instance DIA_Mortis_Redlight		(C_INFO)
 	condition	 = 	DIA_Mortis_Redlight_Condition;
 	information	 = 	DIA_Mortis_Redlight_Info;
 	permanent    =  FALSE;
-	description  =  "Ты хорошо знаешь портовый квартал?";
+	description  =  "РўС‹ С…РѕСЂРѕС€Рѕ Р·РЅР°РµС€СЊ РїРѕСЂС‚РѕРІС‹Р№ РєРІР°СЂС‚Р°Р»?";
 };
 
 func int DIA_Mortis_Redlight_Condition ()
@@ -126,13 +126,13 @@ func int DIA_Mortis_Redlight_Condition ()
 };
 func void DIA_Mortis_Redlight_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Redlight_15_00"); //Ты хорошо знаешь портовый квартал? Я хочу найти того, кто продает болотную траву.
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_01"); //Ну-у... Народ там не особенно разговорчивый, и они уж точно ничего не скажут городскому стражнику.
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_02"); //Если ты хочешь разузнать что-либо там, тебе лучше... нет, ты ДОЛЖЕН снять свои доспехи.
-	AI_Output (other, self, "DIA_Mortis_Redlight_15_03"); //Хорошо, а что дальше?
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_04"); //Кабак и бордель - вероятно, самые лучшие места для поисков. Если тебе вообще удастся что-либо узнать, то ты узнаешь это там.
+	AI_Output (other, self, "DIA_Mortis_Redlight_15_00"); //РўС‹ С…РѕСЂРѕС€Рѕ Р·РЅР°РµС€СЊ РїРѕСЂС‚РѕРІС‹Р№ РєРІР°СЂС‚Р°Р»? РЇ С…РѕС‡Сѓ РЅР°Р№С‚Рё С‚РѕРіРѕ, РєС‚Рѕ РїСЂРѕРґР°РµС‚ Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ.
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_01"); //РќСѓ-Сѓ... РќР°СЂРѕРґ С‚Р°Рј РЅРµ РѕСЃРѕР±РµРЅРЅРѕ СЂР°Р·РіРѕРІРѕСЂС‡РёРІС‹Р№, Рё РѕРЅРё СѓР¶ С‚РѕС‡РЅРѕ РЅРёС‡РµРіРѕ РЅРµ СЃРєР°Р¶СѓС‚ РіРѕСЂРѕРґСЃРєРѕРјСѓ СЃС‚СЂР°Р¶РЅРёРєСѓ.
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЂР°Р·СѓР·РЅР°С‚СЊ С‡С‚Рѕ-Р»РёР±Рѕ С‚Р°Рј, С‚РµР±Рµ Р»СѓС‡С€Рµ... РЅРµС‚, С‚С‹ Р”РћР›Р–Р•Рќ СЃРЅСЏС‚СЊ СЃРІРѕРё РґРѕСЃРїРµС…Рё.
+	AI_Output (other, self, "DIA_Mortis_Redlight_15_03"); //РҐРѕСЂРѕС€Рѕ, Р° С‡С‚Рѕ РґР°Р»СЊС€Рµ?
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_04"); //РљР°Р±Р°Рє Рё Р±РѕСЂРґРµР»СЊ - РІРµСЂРѕСЏС‚РЅРѕ, СЃР°РјС‹Рµ Р»СѓС‡С€РёРµ РјРµСЃС‚Р° РґР»СЏ РїРѕРёСЃРєРѕРІ. Р•СЃР»Рё С‚РµР±Рµ РІРѕРѕР±С‰Рµ СѓРґР°СЃС‚СЃСЏ С‡С‚Рѕ-Р»РёР±Рѕ СѓР·РЅР°С‚СЊ, С‚Рѕ С‚С‹ СѓР·РЅР°РµС€СЊ СЌС‚Рѕ С‚Р°Рј.
 	
-	B_LogEntry (TOPIC_REDLIGHT,"Мортис полагает, что если я хочу купить болотную траву в портовом квартале, мне лучше снять все доспехи. Лучше всего попытать счасться в таверне или борделе.");
+	B_LogEntry (TOPIC_REDLIGHT,"РњРѕСЂС‚РёСЃ РїРѕР»Р°РіР°РµС‚, С‡С‚Рѕ РµСЃР»Рё СЏ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ, РјРЅРµ Р»СѓС‡С€Рµ СЃРЅСЏС‚СЊ РІСЃРµ РґРѕСЃРїРµС…Рё. Р›СѓС‡С€Рµ РІСЃРµРіРѕ РїРѕРїС‹С‚Р°С‚СЊ СЃС‡Р°СЃС‚СЊСЃСЏ РІ С‚Р°РІРµСЂРЅРµ РёР»Рё Р±РѕСЂРґРµР»Рµ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach
@@ -144,7 +144,7 @@ instance DIA_Mortis_CanTeach		(C_INFO)
 	condition	 = 	DIA_Mortis_CanTeach_Condition;
 	information	 = 	DIA_Mortis_CanTeach_Info;
 	permanent    =  TRUE;
-	description	 = 	"Я хочу стать сильнее.";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.";
 };
 
 func int DIA_Mortis_CanTeach_Condition ()
@@ -156,20 +156,20 @@ func int DIA_Mortis_CanTeach_Condition ()
 };
 func void DIA_Mortis_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_CanTeach_15_00"); //Я хочу стать сильнее.
+	AI_Output (other, self, "DIA_Mortis_CanTeach_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 	
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Mortis_CanTeach_13_01"); //Понятно. Если у тебя достаточно опыта, я могу потренировать тебя.
+		AI_Output (self, other, "DIA_Mortis_CanTeach_13_01"); //РџРѕРЅСЏС‚РЅРѕ. Р•СЃР»Рё Сѓ С‚РµР±СЏ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕРїС‹С‚Р°, СЏ РјРѕРіСѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊ С‚РµР±СЏ.
 		Mortis_TeachSTR = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Mortis_CanTeach_13_02"); //Конечно, хочешь. Но пока ты не станешь одним из нас или паладином, я не буду помогать тебе.
+		AI_Output (self, other, "DIA_Mortis_CanTeach_13_02"); //РљРѕРЅРµС‡РЅРѕ, С…РѕС‡РµС€СЊ. РќРѕ РїРѕРєР° С‚С‹ РЅРµ СЃС‚Р°РЅРµС€СЊ РѕРґРЅРёРј РёР· РЅР°СЃ РёР»Рё РїР°Р»Р°РґРёРЅРѕРј, СЏ РЅРµ Р±СѓРґСѓ РїРѕРјРѕРіР°С‚СЊ С‚РµР±Рµ.
 	};
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Мортис, городской гвардеец, может помочь мне повысить мою силу.");
+	B_LogEntry (Topic_CityTeacher, "РњРѕСЂС‚РёСЃ, РіРѕСЂРѕРґСЃРєРѕР№ РіРІР°СЂРґРµРµС†, РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ СЃРёР»Сѓ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -181,7 +181,7 @@ instance DIA_Mortis_Teach		(C_INFO)
 	condition	 = 	DIA_Mortis_Teach_Condition;
 	information	 = 	DIA_Mortis_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу стать сильнее.";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.";
 };
 func int DIA_Mortis_Teach_Condition ()
 {	
@@ -192,7 +192,7 @@ func int DIA_Mortis_Teach_Condition ()
 };
 func void DIA_Mortis_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Teach_15_00"); //Я хочу стать сильнее.
+	AI_Output (other, self, "DIA_Mortis_Teach_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 	
 	Info_ClearChoices   (DIA_Mortis_Teach);
 	Info_AddChoice 		(DIA_Mortis_Teach, DIALOG_BACK, DIA_Mortis_Teach_BACK);
@@ -204,7 +204,7 @@ func void DIA_Mortis_Teach_BACK()
 {
 	if (other.attribute[ATR_STRENGTH] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Mortis_Teach_13_00"); //Ты и так достаточно силен. Если же ты стремишься к большему, найди себе другого учителя.
+		AI_Output (self, other, "DIA_Mortis_Teach_13_00"); //РўС‹ Рё С‚Р°Рє РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ. Р•СЃР»Рё Р¶Рµ С‚С‹ СЃС‚СЂРµРјРёС€СЊСЃСЏ Рє Р±РѕР»СЊС€РµРјСѓ, РЅР°Р№РґРё СЃРµР±Рµ РґСЂСѓРіРѕРіРѕ СѓС‡РёС‚РµР»СЏ.
 	};
 	Info_ClearChoices (DIA_Mortis_TEACH);
 };

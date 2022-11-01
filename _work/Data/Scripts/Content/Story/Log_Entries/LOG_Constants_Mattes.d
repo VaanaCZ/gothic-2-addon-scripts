@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants fьr Missionen
+// LOG_Constants fСЊr Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -8,134 +8,134 @@
 //--------Addon-----------
 
 //-------Banditen----------------
-const string Topic_Addon_Logan		= "Охота на болотных акул";	
-const string Topic_Addon_Stoneplate	= "Каменная табличка в болотах";
-const string Topic_Addon_Franco		= "Вперед (в лагерь бандитов)";
+const string Topic_Addon_Logan		= "РћС…РѕС‚Р° РЅР° Р±РѕР»РѕС‚РЅС‹С… Р°РєСѓР»";	
+const string Topic_Addon_Stoneplate	= "РљР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР° РІ Р±РѕР»РѕС‚Р°С…";
+const string Topic_Addon_Franco		= "Р’РїРµСЂРµРґ (РІ Р»Р°РіРµСЂСЊ Р±Р°РЅРґРёС‚РѕРІ)";
 
-const string Topic_Addon_Senyan		= "Смертельная ситуация";
-const string Topic_Addon_Esteban	= "Покушение на убийство";
-const string Topic_Addon_Huno		= "Сталь для Хуно";
-const string Topic_Addon_Fisk		= "Пакет с отмычками";
-const string Topic_Addon_Buddler	= "Три камня - три рудокопа";
-const string Topic_Addon_Tempel		= "Доступ в храм";
+const string Topic_Addon_Senyan		= "РЎРјРµСЂС‚РµР»СЊРЅР°СЏ СЃРёС‚СѓР°С†РёСЏ";
+const string Topic_Addon_Esteban	= "РџРѕРєСѓС€РµРЅРёРµ РЅР° СѓР±РёР№СЃС‚РІРѕ";
+const string Topic_Addon_Huno		= "РЎС‚Р°Р»СЊ РґР»СЏ РҐСѓРЅРѕ";
+const string Topic_Addon_Fisk		= "РџР°РєРµС‚ СЃ РѕС‚РјС‹С‡РєР°РјРё";
+const string Topic_Addon_Buddler	= "РўСЂРё РєР°РјРЅСЏ - С‚СЂРё СЂСѓРґРѕРєРѕРїР°";
+const string Topic_Addon_Tempel		= "Р”РѕСЃС‚СѓРї РІ С…СЂР°Рј";
 
-const string Topic_Addon_Fortuno	= "Изменение сознания";
-const string Topic_Addon_Hammer		= "Напиток Молот";	
+const string Topic_Addon_Fortuno	= "РР·РјРµРЅРµРЅРёРµ СЃРѕР·РЅР°РЅРёСЏ";
+const string Topic_Addon_Hammer		= "РќР°РїРёС‚РѕРє РњРѕР»РѕС‚";	
 
 
 
-const string Topic_Addon_BDT_Trader  = "Торговля с бандитами";	
-const string Topic_Addon_BDT_Teacher = "Обучение у бандитов";	
+const string Topic_Addon_BDT_Trader  = "РўРѕСЂРіРѕРІР»СЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё";	
+const string Topic_Addon_BDT_Teacher = "РћР±СѓС‡РµРЅРёРµ Сѓ Р±Р°РЅРґРёС‚РѕРІ";	
 
 // ------ Kapitel 1 ------
-CONST string 	Topic_Bandits				=	"Объявления о розыске и бандиты"; 
+CONST string 	Topic_Bandits				=	"РћР±СЉСЏРІР»РµРЅРёСЏ Рѕ СЂРѕР·С‹СЃРєРµ Рё Р±Р°РЅРґРёС‚С‹"; 
 
-// ------ Der Rьbenbauer ------
-const string	TOPIC_Kleidung				=	"Рабочая одежда Лобарта";
-const string	TOPIC_Rueben				=	"Убрать поле репы";
-const string	TOPIC_Ruebenbringen			=	"Отнести репу Хильде";
-const string	TOPIC_Vino					=	"Бутылка вина";
-const string	TOPIC_Maleth				=	"Бандиты на ферме Лобарта";
-const string	TOPIC_Hilda					=	"Сковорода для Хильды";
+// ------ Der RСЊbenbauer ------
+const string	TOPIC_Kleidung				=	"Р Р°Р±РѕС‡Р°СЏ РѕРґРµР¶РґР° Р›РѕР±Р°СЂС‚Р°";
+const string	TOPIC_Rueben				=	"РЈР±СЂР°С‚СЊ РїРѕР»Рµ СЂРµРїС‹";
+const string	TOPIC_Ruebenbringen			=	"РћС‚РЅРµСЃС‚Рё СЂРµРїСѓ РҐРёР»СЊРґРµ";
+const string	TOPIC_Vino					=	"Р‘СѓС‚С‹Р»РєР° РІРёРЅР°";
+const string	TOPIC_Maleth				=	"Р‘Р°РЅРґРёС‚С‹ РЅР° С„РµСЂРјРµ Р›РѕР±Р°СЂС‚Р°";
+const string	TOPIC_Hilda					=	"РЎРєРѕРІРѕСЂРѕРґР° РґР»СЏ РҐРёР»СЊРґС‹";
 
 //-----Der Weg in die Stadt-------------
-const string	TOPIC_City					=	"Как попасть в город Хоринис";
+const string	TOPIC_City					=	"РљР°Рє РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ РҐРѕСЂРёРЅРёСЃ";
 
 //-----In Khorinis Lehrling werden --------- 
-const string	TOPIC_BecomeMIL				=	"Член городской стражи";
+const string	TOPIC_BecomeMIL				=	"Р§Р»РµРЅ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё";
 
-const string	TOPIC_Lehrling				=   "Ученики в Хоринисе";
-const string	TOPIC_OV					=   "Попасть в верхний квартал";
+const string	TOPIC_Lehrling				=   "РЈС‡РµРЅРёРєРё РІ РҐРѕСЂРёРЅРёСЃРµ";
+const string	TOPIC_OV					=   "РџРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»";
 
-const string	TOPIC_Matteo				=   "Маттео и Гритта";
-const string	TOPIC_Thorben				=   "Благословение богов";
-const string	TOPIC_HaradOrk				=   "Великий вызов";
-const string	TOPIC_BosperBogen			=   "Лук Боспера";
-const string	TOPIC_BosperWolf			=   "Меха для Боспера";
-const string	TOPIC_ConstantinoPlants		=   "Травы для Константино";
+const string	TOPIC_Matteo				=   "РњР°С‚С‚РµРѕ Рё Р“СЂРёС‚С‚Р°";
+const string	TOPIC_Thorben				=   "Р‘Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ Р±РѕРіРѕРІ";
+const string	TOPIC_HaradOrk				=   "Р’РµР»РёРєРёР№ РІС‹Р·РѕРІ";
+const string	TOPIC_BosperBogen			=   "Р›СѓРє Р‘РѕСЃРїРµСЂР°";
+const string	TOPIC_BosperWolf			=   "РњРµС…Р° РґР»СЏ Р‘РѕСЃРїРµСЂР°";
+const string	TOPIC_ConstantinoPlants		=   "РўСЂР°РІС‹ РґР»СЏ РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ";
 
-//-------------Hдndler und Diebe---------------------------
-const string	TOPIC_Canthar				=	"Услуга Кантару";
-const string	TOPIC_HakonBanditen			=   "Нападения бандитов";
-const string	TOPIC_Jora					=	"Золото торговца";
-const string	TOPIC_JoraDieb				=	"Наглый вор";
-const string	TOPIC_Nagur					=	"Фальшивый посыльный";
-const string	TOPIC_Baltram				=	"Посылка Бальтрама";
+//-------------HРґndler und Diebe---------------------------
+const string	TOPIC_Canthar				=	"РЈСЃР»СѓРіР° РљР°РЅС‚Р°СЂСѓ";
+const string	TOPIC_HakonBanditen			=   "РќР°РїР°РґРµРЅРёСЏ Р±Р°РЅРґРёС‚РѕРІ";
+const string	TOPIC_Jora					=	"Р—РѕР»РѕС‚Рѕ С‚РѕСЂРіРѕРІС†Р°";
+const string	TOPIC_JoraDieb				=	"РќР°РіР»С‹Р№ РІРѕСЂ";
+const string	TOPIC_Nagur					=	"Р¤Р°Р»СЊС€РёРІС‹Р№ РїРѕСЃС‹Р»СЊРЅС‹Р№";
+const string	TOPIC_Baltram				=	"РџРѕСЃС‹Р»РєР° Р‘Р°Р»СЊС‚СЂР°РјР°";
 
-const string 	Topic_CassiaRing			= 	"Кольцо Константино";
-const string 	Topic_CassiaKelche			= 	"Кровавые кубки";
-const string 	Topic_RamirezSextant		= 	"Секстант";
+const string 	Topic_CassiaRing			= 	"РљРѕР»СЊС†Рѕ РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ";
+const string 	Topic_CassiaKelche			= 	"РљСЂРѕРІР°РІС‹Рµ РєСѓР±РєРё";
+const string 	Topic_RamirezSextant		= 	"РЎРµРєСЃС‚Р°РЅС‚";
 
 //------------Hafenviertel und Sonstiges------------------
-const string 	TOPIC_Alwin					= 	"Безумный Феллан";
-const string 	TOPIC_Ignaz					= 	"Эксперимент";
-const string 	TOPIC_AlrikSchwert			= 	"Меч Альрика";
-const string 	TOPIC_Garvell				= 	"Информация для Гарвелла";
+const string 	TOPIC_Alwin					= 	"Р‘РµР·СѓРјРЅС‹Р№ Р¤РµР»Р»Р°РЅ";
+const string 	TOPIC_Ignaz					= 	"Р­РєСЃРїРµСЂРёРјРµРЅС‚";
+const string 	TOPIC_AlrikSchwert			= 	"РњРµС‡ РђР»СЊСЂРёРєР°";
+const string 	TOPIC_Garvell				= 	"РРЅС„РѕСЂРјР°С†РёСЏ РґР»СЏ Р“Р°СЂРІРµР»Р»Р°";
 
 
 
-//---------Milizauftrдge-------------------------------
-const string	TOPIC_Peck					= 	"Где Пек?";
-const string	TOPIC_Warehouse				= 	"Тюк травы";
-const string	TOPIC_Redlight				= 	"Торговля травой";
-const string	TOPIC_Feldraeuber			= 	"Проблемы на ферме Лобарта";
+//---------MilizauftrРґge-------------------------------
+const string	TOPIC_Peck					= 	"Р“РґРµ РџРµРє?";
+const string	TOPIC_Warehouse				= 	"РўСЋРє С‚СЂР°РІС‹";
+const string	TOPIC_Redlight				= 	"РўРѕСЂРіРѕРІР»СЏ С‚СЂР°РІРѕР№";
+const string	TOPIC_Feldraeuber			= 	"РџСЂРѕР±Р»РµРјС‹ РЅР° С„РµСЂРјРµ Р›РѕР±Р°СЂС‚Р°";
 
 
 
 //---------Kloster-----------------------------
-const string	TOPIC_BecomeKdF				=	"Маг огня"; 
+const string	TOPIC_BecomeKdF				=	"РњР°Рі РѕРіРЅСЏ"; 
 
-const string	Topic_Kloster				=	"Как попасть в монастырь";
-const string    Topic_Gemeinschaft			=	"Служение общине";
+const string	Topic_Kloster				=	"РљР°Рє РїРѕРїР°СЃС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ";
+const string    Topic_Gemeinschaft			=	"РЎР»СѓР¶РµРЅРёРµ РѕР±С‰РёРЅРµ";
 
-//---------Arbeiten fьr die Gemeinschaft-----------------------------
-const string    Topic_Neorasrezept  		=	"Потерянный рецепт";
-const string    Topic_NeorasPflanzen		=	"Семь трав";
-const string    Topic_IsgarothWolf			=	"Проблема Исгарота";
-const string    Topic_ParlanFegen			=	"Кельи послушников";
-const string    Topic_GoraxEssen 			=	"Баранья колбаса";
-const string    Topic_GoraxWein 			=	"Доставка вина";
-const string    Topic_MardukBeten 			=	"Молитва за паладинов";
+//---------Arbeiten fСЊr die Gemeinschaft-----------------------------
+const string    Topic_Neorasrezept  		=	"РџРѕС‚РµСЂСЏРЅРЅС‹Р№ СЂРµС†РµРїС‚";
+const string    Topic_NeorasPflanzen		=	"РЎРµРјСЊ С‚СЂР°РІ";
+const string    Topic_IsgarothWolf			=	"РџСЂРѕР±Р»РµРјР° РСЃРіР°СЂРѕС‚Р°";
+const string    Topic_ParlanFegen			=	"РљРµР»СЊРё РїРѕСЃР»СѓС€РЅРёРєРѕРІ";
+const string    Topic_GoraxEssen 			=	"Р‘Р°СЂР°РЅСЊСЏ РєРѕР»Р±Р°СЃР°";
+const string    Topic_GoraxWein 			=	"Р”РѕСЃС‚Р°РІРєР° РІРёРЅР°";
+const string    Topic_MardukBeten 			=	"РњРѕР»РёС‚РІР° Р·Р° РїР°Р»Р°РґРёРЅРѕРІ";
 
 //---------Sonstiges -----------------------------
-const string	Topic_OpolosRezept			=	"Ополос и рецепт";
-const string	Topic_BaboTrain				=	"Тренировки для Бабо";
-const string	Topic_KarrasCharm			=	"Короткий вояж в город";
+const string	Topic_OpolosRezept			=	"РћРїРѕР»РѕСЃ Рё СЂРµС†РµРїС‚";
+const string	Topic_BaboTrain				=	"РўСЂРµРЅРёСЂРѕРІРєРё РґР»СЏ Р‘Р°Р±Рѕ";
+const string	Topic_KarrasCharm			=	"РљРѕСЂРѕС‚РєРёР№ РІРѕСЏР¶ РІ РіРѕСЂРѕРґ";
 
-//---------Prьfung des Feuers---------------------
-const string	TOPIC_FireContest			=	"Испытание огнем";
-const string	TOPIC_Golem					=	"Живая скала";
-const string	TOPIC_Rune					=	"Создание руны";
-const string	TOPIC_Schnitzeljagd			=	"Путь верующих"; 
+//---------PrСЊfung des Feuers---------------------
+const string	TOPIC_FireContest			=	"РСЃРїС‹С‚Р°РЅРёРµ РѕРіРЅРµРј";
+const string	TOPIC_Golem					=	"Р–РёРІР°СЏ СЃРєР°Р»Р°";
+const string	TOPIC_Rune					=	"РЎРѕР·РґР°РЅРёРµ СЂСѓРЅС‹";
+const string	TOPIC_Schnitzeljagd			=	"РџСѓС‚СЊ РІРµСЂСѓСЋС‰РёС…"; 
 
-//---------Hilfe fьr Novizen-----------------------
-const string 	Topic_BaboGaertner			=   "Бабо и сад";
-const string 	Topic_DyrianDrin			=   "Преступление Дуриана";
-const string 	Topic_OpolosStudy			=   "Ополос и библиотека";
+//---------Hilfe fСЊr Novizen-----------------------
+const string 	Topic_BaboGaertner			=   "Р‘Р°Р±Рѕ Рё СЃР°Рґ";
+const string 	Topic_DyrianDrin			=   "РџСЂРµСЃС‚СѓРїР»РµРЅРёРµ Р”СѓСЂРёР°РЅР°";
+const string 	Topic_OpolosStudy			=   "РћРїРѕР»РѕСЃ Рё Р±РёР±Р»РёРѕС‚РµРєР°";
 
 //---------LOG_NOTE-----------
-const string	Topic_KlosterTrader			=	"Торговля в монастыре";
-const string	Topic_KlosterTeacher		=	"Обучение в монастыре";
+const string	Topic_KlosterTrader			=	"РўРѕСЂРіРѕРІР»СЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ";
+const string	Topic_KlosterTeacher		=	"РћР±СѓС‡РµРЅРёРµ РІ РјРѕРЅР°СЃС‚С‹СЂРµ";
 
 
-//---------Sцldner----------------------------------
-const string	TOPIC_BecomeSLD				=	"Стать наемником"; 
-const string	TOPIC_TorlofPacht			=	"Собрать ренту";
-const string	TOPIC_TorlofMiliz			=	"Прогнать ополчение";
-const string	TOPIC_SLDRespekt			=	"Уважение";  
+//---------SС†ldner----------------------------------
+const string	TOPIC_BecomeSLD				=	"РЎС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј"; 
+const string	TOPIC_TorlofPacht			=	"РЎРѕР±СЂР°С‚СЊ СЂРµРЅС‚Сѓ";
+const string	TOPIC_TorlofMiliz			=	"РџСЂРѕРіРЅР°С‚СЊ РѕРїРѕР»С‡РµРЅРёРµ";
+const string	TOPIC_SLDRespekt			=	"РЈРІР°Р¶РµРЅРёРµ";  
  
-const string 	TOPIC_JarvisSLDKo			=	"Вызов Джарвиса";  
-const string 	TOPIC_CordProve				=	"Хороший боец";   
-const string 	Topic_CipherHerb			=	"Пригоршня трав";    
-const string 	Topic_CipherPaket			=	"Тюк травы";    
-const string 	Topic_RodWette				=	"Меч Рода";    
-const string 	TOPIC_FesterRauber			=	"Полевые хищники";   
-const string 	TOPIC_TheklaEintopf			=	"Похлебка";    
-const string 	TOPIC_SagittaHerb			=	"Солнечное алоэ";    
-const string 	TOPIC_PepeWolves			=	"Четверо волков для Пепе";    
-const string 	TOPIC_KickBullco			=	"Надрать задницу Булко"; 
+const string 	TOPIC_JarvisSLDKo			=	"Р’С‹Р·РѕРІ Р”Р¶Р°СЂРІРёСЃР°";  
+const string 	TOPIC_CordProve				=	"РҐРѕСЂРѕС€РёР№ Р±РѕРµС†";   
+const string 	Topic_CipherHerb			=	"РџСЂРёРіРѕСЂС€РЅСЏ С‚СЂР°РІ";    
+const string 	Topic_CipherPaket			=	"РўСЋРє С‚СЂР°РІС‹";    
+const string 	Topic_RodWette				=	"РњРµС‡ Р РѕРґР°";    
+const string 	TOPIC_FesterRauber			=	"РџРѕР»РµРІС‹Рµ С…РёС‰РЅРёРєРё";   
+const string 	TOPIC_TheklaEintopf			=	"РџРѕС…Р»РµР±РєР°";    
+const string 	TOPIC_SagittaHerb			=	"РЎРѕР»РЅРµС‡РЅРѕРµ Р°Р»РѕСЌ";    
+const string 	TOPIC_PepeWolves			=	"Р§РµС‚РІРµСЂРѕ РІРѕР»РєРѕРІ РґР»СЏ РџРµРїРµ";    
+const string 	TOPIC_KickBullco			=	"РќР°РґСЂР°С‚СЊ Р·Р°РґРЅРёС†Сѓ Р‘СѓР»РєРѕ"; 
  
-const string 	TOPIC_Frieden				=	"Предложение мира";  
+const string 	TOPIC_Frieden				=	"РџСЂРµРґР»РѕР¶РµРЅРёРµ РјРёСЂР°";  
  
 //const string 	TOPIC_WolfJob				=	"Wolf";  
 
@@ -145,29 +145,29 @@ const string 	TOPIC_Frieden				=	"Предложение мира";
 
 //-------------------------------------------------------------------------------------
 
-const string	TOPIC_MISOLDWORLD			=	"Доказательство";
-const string	TOPIC_ScoutMine				=	"Рудокопы и руда";
+const string	TOPIC_MISOLDWORLD			=	"Р”РѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ";
+const string	TOPIC_ScoutMine				=	"Р СѓРґРѕРєРѕРїС‹ Рё СЂСѓРґР°";
 
-const string	Topic_MarcosJungs			=	"Помощь Маркосу";
-const string	TOPIC_RescueGorn			=	"Спасение Горна";
-const string	TOPIC_FajethKillSnapper		=	"Охота на снепперов";
-const string	TOPIC_BringMeat				=	"Мясо";
-const string	TopicBrutusKasse			=	"Золото для Брутуса";
+const string	Topic_MarcosJungs			=	"РџРѕРјРѕС‰СЊ РњР°СЂРєРѕСЃСѓ";
+const string	TOPIC_RescueGorn			=	"РЎРїР°СЃРµРЅРёРµ Р“РѕСЂРЅР°";
+const string	TOPIC_FajethKillSnapper		=	"РћС…РѕС‚Р° РЅР° СЃРЅРµРїРїРµСЂРѕРІ";
+const string	TOPIC_BringMeat				=	"РњСЏСЃРѕ";
+const string	TopicBrutusKasse			=	"Р—РѕР»РѕС‚Рѕ РґР»СЏ Р‘СЂСѓС‚СѓСЃР°";
 
-const string	Topic_TengronRing			=	"Кольцо Тенгрона";
-const string	Topic_OricBruder			=	"Плохие новости";
+const string	Topic_TengronRing			=	"РљРѕР»СЊС†Рѕ РўРµРЅРіСЂРѕРЅР°";
+const string	Topic_OricBruder			=	"РџР»РѕС…РёРµ РЅРѕРІРѕСЃС‚Рё";
 
-const string	TOPIC_BilgotEscort			=	"Проклятие Билгота";
+const string	TOPIC_BilgotEscort			=	"РџСЂРѕРєР»СЏС‚РёРµ Р‘РёР»РіРѕС‚Р°";
 
-const string	TOPIC_Botschaft				=	"Сообщение";
-const string	TOPIC_Lutero				=	"Когти снепперов";
-const string	TOPIC_Fernando				=	"Бизнес Фернандо";
+const string	TOPIC_Botschaft				=	"РЎРѕРѕР±С‰РµРЅРёРµ";
+const string	TOPIC_Lutero				=	"РљРѕРіС‚Рё СЃРЅРµРїРїРµСЂРѕРІ";
+const string	TOPIC_Fernando				=	"Р‘РёР·РЅРµСЃ Р¤РµСЂРЅР°РЅРґРѕ";
 
 //-------------------------------------------------------------------------------------
-const string	TOPIC_PyrokarClearDemonTower	 = "Возвращение в башню";
-const string	TOPIC_HyglasBringBook			 = "Сила звезд";
+const string	TOPIC_PyrokarClearDemonTower	 = "Р’РѕР·РІСЂР°С‰РµРЅРёРµ РІ Р±Р°С€РЅСЋ";
+const string	TOPIC_HyglasBringBook			 = "РЎРёР»Р° Р·РІРµР·Рґ";
 
-const string	Topic_BabosDocs		 			 = "Документы";
-const string	TOPIC_Wolf_BringCrawlerPlates	 = "Доспехи из панцирей краулеров";
-const string	TOPIC_HelpDiegoNW		 		 = "Золото Диего";
-const string	TOPIC_DiegosResidence		 	 = "Бизнес Диего";
+const string	Topic_BabosDocs		 			 = "Р”РѕРєСѓРјРµРЅС‚С‹";
+const string	TOPIC_Wolf_BringCrawlerPlates	 = "Р”РѕСЃРїРµС…Рё РёР· РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ";
+const string	TOPIC_HelpDiegoNW		 		 = "Р—РѕР»РѕС‚Рѕ Р”РёРµРіРѕ";
+const string	TOPIC_DiegosResidence		 	 = "Р‘РёР·РЅРµСЃ Р”РёРµРіРѕ";

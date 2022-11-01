@@ -28,7 +28,7 @@ instance DIA_Addon_TAL_BDT_1_Hi(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Hi_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Hi_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Hi_Condition()
@@ -38,15 +38,15 @@ FUNC INT DIA_Addon_TAL_BDT_1_Hi_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00");//Как дела?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//Я жду, пока они им не понадобится кто-нибудь новый и не придет моя очередь.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00");//РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//РЇ Р¶РґСѓ, РїРѕРєР° РѕРЅРё РёРј РЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РєС‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІС‹Р№ Рё РЅРµ РїСЂРёРґРµС‚ РјРѕСЏ РѕС‡РµСЂРµРґСЊ.
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Из всех людей, кто снаружи, только Франко мог войти сюда.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//РР· РІСЃРµС… Р»СЋРґРµР№, РєС‚Рѕ СЃРЅР°СЂСѓР¶Рё, С‚РѕР»СЊРєРѕ Р¤СЂР°РЅРєРѕ РјРѕРі РІРѕР№С‚Рё СЃСЋРґР°.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//А теперь Франко мертв, и, может быть, у меня появится шанс.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//Рђ С‚РµРїРµСЂСЊ Р¤СЂР°РЅРєРѕ РјРµСЂС‚РІ, Рё, РјРѕР¶РµС‚ Р±С‹С‚СЊ, Сѓ РјРµРЅСЏ РїРѕСЏРІРёС‚СЃСЏ С€Р°РЅСЃ.
 	};
 };
 // *************************************************************************
@@ -58,7 +58,7 @@ instance DIA_Addon_TAL_BDT_1_Lager(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Lager_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Lager_Info;
 	permanent	= TRUE;
-	description = "Можешь рассказать мне что-нибудь о лагере.";
+	description = "РњРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ Р»Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
@@ -68,9 +68,9 @@ FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//Можешь рассказать мне что-нибудь о лагере.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//Смотри, с кем связываешься! Если ты начнешь драться без причины, они все очень быстро набросятся на тебя!
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//Большинство из них чересчур пекутся о своем золоте и некоторые внимательно следят за другими.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//РњРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ Р»Р°РіРµСЂРµ.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//РЎРјРѕС‚СЂРё, СЃ РєРµРј СЃРІСЏР·С‹РІР°РµС€СЊСЃСЏ! Р•СЃР»Рё С‚С‹ РЅР°С‡РЅРµС€СЊ РґСЂР°С‚СЊСЃСЏ Р±РµР· РїСЂРёС‡РёРЅС‹, РѕРЅРё РІСЃРµ РѕС‡РµРЅСЊ Р±С‹СЃС‚СЂРѕ РЅР°Р±СЂРѕСЃСЏС‚СЃСЏ РЅР° С‚РµР±СЏ!
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… С‡РµСЂРµСЃС‡СѓСЂ РїРµРєСѓС‚СЃСЏ Рѕ СЃРІРѕРµРј Р·РѕР»РѕС‚Рµ Рё РЅРµРєРѕС‚РѕСЂС‹Рµ РІРЅРёРјР°С‚РµР»СЊРЅРѕ СЃР»РµРґСЏС‚ Р·Р° РґСЂСѓРіРёРјРё.
 };
 // *************************************************************************
 // 							News
@@ -81,7 +81,7 @@ instance DIA_Addon_TAL_BDT_1_Raven(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Raven_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Raven_Info;
 	permanent	= TRUE;
-	description = "Что тебе известно про Ворона?";
+	description = "Р§С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ РїСЂРѕ Р’РѕСЂРѕРЅР°?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
@@ -91,10 +91,10 @@ FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Raven_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Что тебе известно про Ворона?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//Этот человек первым оказался здесь со своими ребятами.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//Он - командир лагеря. Я тебе советую не крутиться вокруг него.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Однажды им потребовались пять новых бойцов, потому что он сорвал свою злость на своих же людях.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Р§С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ РїСЂРѕ Р’РѕСЂРѕРЅР°?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//Р­С‚РѕС‚ С‡РµР»РѕРІРµРє РїРµСЂРІС‹Рј РѕРєР°Р·Р°Р»СЃСЏ Р·РґРµСЃСЊ СЃРѕ СЃРІРѕРёРјРё СЂРµР±СЏС‚Р°РјРё.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//РћРЅ - РєРѕРјР°РЅРґРёСЂ Р»Р°РіРµСЂСЏ. РЇ С‚РµР±Рµ СЃРѕРІРµС‚СѓСЋ РЅРµ РєСЂСѓС‚РёС‚СЊСЃСЏ РІРѕРєСЂСѓРі РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//РћРґРЅР°Р¶РґС‹ РёРј РїРѕС‚СЂРµР±РѕРІР°Р»РёСЃСЊ РїСЏС‚СЊ РЅРѕРІС‹С… Р±РѕР№С†РѕРІ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РѕРЅ СЃРѕСЂРІР°Р» СЃРІРѕСЋ Р·Р»РѕСЃС‚СЊ РЅР° СЃРІРѕРёС… Р¶Рµ Р»СЋРґСЏС….
 };
 FUNC VOID B_AssignAmbientInfos_Addon_TAL_BDT_1(var C_NPC slf)
 {

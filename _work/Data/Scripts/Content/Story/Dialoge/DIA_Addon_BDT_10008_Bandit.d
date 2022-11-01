@@ -77,11 +77,11 @@ FUNC INT DIA_Addon_10008_Bandit_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//НЕ НАДО его будить!
-	AI_Output (other, self, "DIA_Addon_10008_Bandit_Hi_15_01");//Что???
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Если ты не хочешь создавать себе проблем, не связывайся со Скиннером.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Это парень непредсказуем. Прошлый раз, когда один парень разбудил Скиннера, тот его убил.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Пусть он спит, для общего блага.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//РќР• РќРђР”Рћ РµРіРѕ Р±СѓРґРёС‚СЊ!
+	AI_Output (other, self, "DIA_Addon_10008_Bandit_Hi_15_01");//Р§С‚Рѕ???
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Р•СЃР»Рё С‚С‹ РЅРµ С…РѕС‡РµС€СЊ СЃРѕР·РґР°РІР°С‚СЊ СЃРµР±Рµ РїСЂРѕР±Р»РµРј, РЅРµ СЃРІСЏР·С‹РІР°Р№СЃСЏ СЃРѕ РЎРєРёРЅРЅРµСЂРѕРј.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Р­С‚Рѕ РїР°СЂРµРЅСЊ РЅРµРїСЂРµРґСЃРєР°Р·СѓРµРј. РџСЂРѕС€Р»С‹Р№ СЂР°Р·, РєРѕРіРґР° РѕРґРёРЅ РїР°СЂРµРЅСЊ СЂР°Р·Р±СѓРґРёР» РЎРєРёРЅРЅРµСЂР°, С‚РѕС‚ РµРіРѕ СѓР±РёР».
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//РџСѓСЃС‚СЊ РѕРЅ СЃРїРёС‚, РґР»СЏ РѕР±С‰РµРіРѕ Р±Р»Р°РіР°.
 };
 //--------------------------------------------------------------------
 //	Info soup
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_10008_Bandit_soup   (C_INFO)
 	condition   = DIA_Addon_10008_Bandit_soup_Condition;
 	information = DIA_Addon_10008_Bandit_soup_Info;
 	permanent   = FALSE;
-	description = "Ты рудокоп?";
+	description = "РўС‹ СЂСѓРґРѕРєРѕРї?";
 };
 FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 {	
@@ -101,15 +101,15 @@ FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_soup_Info()
 {
-	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//Ты рудокоп?
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//Ты по штанам так решил? Нет, я ношу их просто потому, что это удобно.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Все, что я здесь делаю, - готовлю тушеное мясо. Вот, попробуй - оно придаст тебе сил.
+	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//РўС‹ СЂСѓРґРѕРєРѕРї?
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//РўС‹ РїРѕ С€С‚Р°РЅР°Рј С‚Р°Рє СЂРµС€РёР»? РќРµС‚, СЏ РЅРѕС€Сѓ РёС… РїСЂРѕСЃС‚Рѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ СЌС‚Рѕ СѓРґРѕР±РЅРѕ.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Р’СЃРµ, С‡С‚Рѕ СЏ Р·РґРµСЃСЊ РґРµР»Р°СЋ, - РіРѕС‚РѕРІР»СЋ С‚СѓС€РµРЅРѕРµ РјСЏСЃРѕ. Р’РѕС‚, РїРѕРїСЂРѕР±СѓР№ - РѕРЅРѕ РїСЂРёРґР°СЃС‚ С‚РµР±Рµ СЃРёР».
 	B_GiveInvItems (self, other, ItFo_Addon_Meatsoup,1);
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Это очень важно - тренировать свою силу. Вокруг столько опасностей.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Если хочешь, я готов помочь тебе стать сильнее.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Р­С‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ - С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ СЃРІРѕСЋ СЃРёР»Сѓ. Р’РѕРєСЂСѓРі СЃС‚РѕР»СЊРєРѕ РѕРїР°СЃРЅРѕСЃС‚РµР№.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Р•СЃР»Рё С…РѕС‡РµС€СЊ, СЏ РіРѕС‚РѕРІ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Бандит у котелка может помочь мне стать сильнее.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Р‘Р°РЅРґРёС‚ Сѓ РєРѕС‚РµР»РєР° РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.");	
 };
 //*******************************************
 //	TechPlayer
@@ -122,7 +122,7 @@ INSTANCE DIA_Addon_10008_Bandit_Teach(C_INFO)
 	condition	= DIA_Addon_10008_Bandit_Teach_Condition;
 	information	= DIA_Addon_10008_Bandit_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу быть сильнее.";
+	description = "РЇ С…РѕС‡Сѓ Р±С‹С‚СЊ СЃРёР»СЊРЅРµРµ.";
 };                       
 
 FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
@@ -134,7 +134,7 @@ FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //Я хочу быть сильнее.
+	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //РЇ С…РѕС‡Сѓ Р±С‹С‚СЊ СЃРёР»СЊРЅРµРµ.
 
 	Info_ClearChoices 	(DIA_Addon_10008_Bandit_Teach);
 	Info_AddChoice		(DIA_Addon_10008_Bandit_Teach, DIALOG_BACK, DIA_Addon_10008_Bandit_Teach_Back);

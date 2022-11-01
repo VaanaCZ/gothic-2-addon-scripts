@@ -2,7 +2,7 @@
 instance BDT_1030_Morgahard (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Моргахард"; 
+	name 		= "РњРѕСЂРіР°С…Р°СЂРґ"; 
 	guild 		= GIL_OUT;
 	id 			= 1030;
 	voice 		= 7;

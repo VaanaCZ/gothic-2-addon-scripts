@@ -1,7 +1,7 @@
 INSTANCE KDF_500_Pyrokar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Пирокар";
+	name 		= "РџРёСЂРѕРєР°СЂ";
 	guild 		= GIL_KDF;
 	id 			= 500;
 	voice 		= 11;
